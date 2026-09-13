@@ -1,13 +1,8 @@
+import { workspaceRegistry } from "./workspace-contract.mjs";
 import fs from "node:fs";
 import path from "node:path";
 
-export const platformDefinitions = [
-  { id: "data-center", label: "观澜数据中心", scope: "事实资产、采集与质量", url: "data-center.html", versionKey: "DATA-CENTER" },
-  { id: "funding", label: "观澜融资情报站", scope: "融资内容、访问与转化", url: "https://www.zkdlj.vip/", versionKey: "FUNDING" },
-  { id: "miniprogram", label: "观澜小程序", scope: "微信原生应用、内容与权益", url: "", versionKey: "MINIPROGRAM" },
-  { id: "h5", label: "融资 H5", scope: "移动端融资产品原型", url: "", versionKey: "H5" },
-  { id: "community", label: "社群与会员", scope: "会员服务、申请页与分享内容", url: "https://members.zkdlj.vip/", versionKey: "MEMBERS" },
-];
+export const platformDefinitions = workspaceRegistry.platforms;
 
 export const publicVersionSources = [
   { id: "funding", url: "https://www.zkdlj.vip/version.json", fields: ["version", "data_version", "release_date"] },

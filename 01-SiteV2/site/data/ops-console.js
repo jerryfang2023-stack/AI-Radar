@@ -120,7 +120,7 @@ window.WaveSightOpsConsole = {
       {
         "key": "OPS",
         "label": "整体运营后台",
-        "value": "OPS-V3.7.1-china-funding-history",
+        "value": "OPS-V3.8.0-engineering-integration",
         "category": "运营与规则",
         "source": "context/version-ledger.md",
         "status": "仓库基线",
@@ -357,8 +357,8 @@ window.WaveSightOpsConsole = {
       }
     ],
     "skills": {
-      "total": 289,
-      "generatedAt": "2026-09-12 21:33:49",
+      "total": 290,
+      "generatedAt": "2026-09-13 10:45:08",
       "sources": [
         {
           "id": "AIP/.agents/skills",
@@ -504,8 +504,8 @@ window.WaveSightOpsConsole = {
         {
           "id": "shared",
           "label": "通用 / 未分配",
-          "count": 246,
-          "sharedCount": 246,
+          "count": 247,
+          "sharedCount": 247,
           "projectCount": 0,
           "sources": []
         }
@@ -518,8 +518,8 @@ window.WaveSightOpsConsole = {
     "sourceBaseline": "SITE-V4.6.1-research-retirement"
   },
   "meta": {
-    "version": "OPS-V3.7.1-china-funding-history",
-    "generatedAt": "2026-09-13T01:57:09.156Z",
+    "version": "OPS-V3.8.0-engineering-integration",
+    "generatedAt": "2026-09-13T07:35:54.980Z",
     "date": "2026-09-13",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
@@ -539,20 +539,20 @@ window.WaveSightOpsConsole = {
       "label": "运营统计"
     },
     {
+      "id": "membership",
+      "label": "会员与权益"
+    },
+    {
       "id": "quality",
       "label": "数据质量"
     },
     {
       "id": "governance",
-      "label": "版本治理"
+      "label": "系统管理"
     },
     {
       "id": "skills",
       "label": "Skill Store"
-    },
-    {
-      "id": "settings",
-      "label": "系统设置"
     }
   ],
   "daily": {
@@ -1716,7 +1716,7 @@ window.WaveSightOpsConsole = {
       }
     ],
     "sourceQuality": {
-      "updatedAt": "2026-09-13T01:57:09.147Z",
+      "updatedAt": "2026-09-13T07:35:54.962Z",
       "sampleNote": "按最新 V4 RawDocument 的 acquisition_channel 聚合；样本量为已落盘 Raw 文档数。",
       "metricNote": "诊断分由可用率、全文率、高质提取率、可读性和事实命中率组成，仅用于运营观察，不参与来源准入、排序或事实门禁。",
       "rows": [
@@ -23158,7 +23158,7 @@ window.WaveSightOpsConsole = {
       {
         "key": "OPS",
         "label": "整体运营后台",
-        "value": "OPS-V3.7.1-china-funding-history",
+        "value": "OPS-V3.8.0-engineering-integration",
         "category": "运营与规则",
         "source": "context/version-ledger.md",
         "status": "仓库基线",
@@ -23400,5 +23400,4574 @@ window.WaveSightOpsConsole = {
       "Skill 统一登记来源与摘要，原文归所属项目；登记不等于安装或认证",
       "运营后台由 VPS 会话门禁保护；会员、账号与管理写操作继续使用服务端鉴权与审计"
     ]
+  },
+  "shared": {
+    "schema": 1,
+    "registry": {
+      "schema": 1,
+      "operationsUrl": "https://www.zkdlj.vip/ops/",
+      "platforms": [
+        {
+          "id": "data-center",
+          "label": "观澜数据中心",
+          "scope": "事实资产、采集与质量",
+          "url": "data-center.html",
+          "versionKey": "DATA-CENTER"
+        },
+        {
+          "id": "funding",
+          "label": "观澜融资情报站",
+          "scope": "融资内容、访问与转化",
+          "url": "https://www.zkdlj.vip/",
+          "versionKey": "FUNDING"
+        },
+        {
+          "id": "miniprogram",
+          "label": "观澜小程序",
+          "scope": "微信原生应用、内容与权益",
+          "url": "",
+          "versionKey": "MINIPROGRAM"
+        },
+        {
+          "id": "h5",
+          "label": "融资 H5",
+          "scope": "移动端融资产品原型",
+          "url": "",
+          "versionKey": "H5"
+        },
+        {
+          "id": "community",
+          "label": "社群与会员",
+          "scope": "会员服务、申请页与分享内容",
+          "url": "https://members.zkdlj.vip/",
+          "versionKey": "MEMBERS"
+        }
+      ],
+      "projects": [
+        {
+          "id": "data-center",
+          "label": "观澜数据中心",
+          "managerModuleId": "data-center",
+          "workspace": "engineering"
+        },
+        {
+          "id": "ops",
+          "label": "统一运营后台",
+          "managerModuleId": "ops",
+          "workspace": "operations"
+        },
+        {
+          "id": "funding",
+          "label": "观澜融资情报站",
+          "managerModuleId": "portal",
+          "workspace": "operations"
+        },
+        {
+          "id": "miniprogram",
+          "label": "观澜小程序",
+          "managerModuleId": "mini",
+          "workspace": "operations"
+        },
+        {
+          "id": "account",
+          "label": "账户、支付与权益服务",
+          "managerModuleId": "account",
+          "workspace": "operations"
+        },
+        {
+          "id": "community",
+          "label": "社群与会员",
+          "managerModuleId": "members",
+          "workspace": "operations"
+        },
+        {
+          "id": "lake",
+          "label": "数据湖 / DuckDB",
+          "managerModuleId": "lake",
+          "workspace": "engineering"
+        },
+        {
+          "id": "evidence",
+          "label": "私有原文证据仓",
+          "managerModuleId": "evidence",
+          "workspace": "engineering"
+        },
+        {
+          "id": "vault",
+          "label": "观澜知识库与工作区",
+          "managerModuleId": "vault",
+          "workspace": "engineering"
+        },
+        {
+          "id": "skills",
+          "label": "Skill 与算法规则",
+          "managerModuleId": "skills",
+          "workspace": "engineering"
+        },
+        {
+          "id": "automation",
+          "label": "自动化、故障与运行任务",
+          "managerModuleId": "automation",
+          "workspace": "engineering"
+        },
+        {
+          "id": "aip",
+          "label": "AIP 内容协作",
+          "managerModuleId": "aip",
+          "workspace": "engineering"
+        },
+        {
+          "id": "h5",
+          "label": "融资 H5",
+          "managerModuleId": "h5",
+          "workspace": "engineering"
+        }
+      ],
+      "sources": {
+        "skills": "01-SiteV2/site/data/local-skill-store-data.js",
+        "versions": "01-SiteV2/site/data/ops-console.json",
+        "batches": "01-SiteV2/site/data/ops-console.json"
+      },
+      "scope": {
+        "engineering": [
+          "项目与文件",
+          "Harness 与算法",
+          "Git 与本机调度",
+          "治理任务与清理"
+        ],
+        "operations": [
+          "业务与生产结果",
+          "运营统计",
+          "会员与权益",
+          "数据质量"
+        ]
+      }
+    },
+    "skills": [
+      {
+        "id": "skill:0ecce4a1099e29ccfd57dbc6",
+        "name": "follow-builders",
+        "sourceKind": "project",
+        "sourcePath": "agent-workflow/skills/follow-builders",
+        "sourceDigest": "d097bc07af6d0789dfd21e22eeabf1fc56da22c190e966e9dd3ca649f2f86da8",
+        "platformIds": [
+          "data-center"
+        ],
+        "version": "2.1.1",
+        "status": "supporting skill",
+        "lifecycle": "supporting",
+        "syncState": "synced"
+      },
+      {
+        "id": "skill:cb108c1a52e5258cf75e4e3c",
+        "name": "guanlan-ai-hardware-data-projection",
+        "sourceKind": "project",
+        "sourcePath": "agent-workflow/skills/guanlan-ai-hardware-data-projection",
+        "sourceDigest": "9759b32c178daaa9f257ca9dd466af604d0d789f29c8e23383b21136f6a7c71c",
+        "platformIds": [
+          "data-center"
+        ],
+        "version": "1.2.0",
+        "status": "current sub-skill",
+        "lifecycle": "current",
+        "syncState": "synced"
+      },
+      {
+        "id": "skill:5e88f401ccc16198315c94fa",
+        "name": "guanlan-china-funding-monitor",
+        "sourceKind": "project",
+        "sourcePath": "agent-workflow/skills/guanlan-china-funding-monitor",
+        "sourceDigest": "139bc630dd25359ff7c81c5017d71a8c49d6fac44a93731e869cb3f19829e7ad",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.1.0",
+        "status": "current",
+        "lifecycle": "candidate",
+        "syncState": "project-only"
+      },
+      {
+        "id": "skill:0f0cc922aa117f545164fc57",
+        "name": "guanlan-code-rule-auditor",
+        "sourceKind": "project",
+        "sourcePath": "agent-workflow/skills/guanlan-code-rule-auditor",
+        "sourceDigest": "8d237d540cdda5b3f445bb9ec16a02185790fb59a8986321cf11c516e906541b",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.2.1",
+        "status": "governance",
+        "lifecycle": "governance",
+        "syncState": "synced"
+      },
+      {
+        "id": "skill:c0b1515004b7c64a13bbf5f5",
+        "name": "guanlan-community-intelligence-monitor",
+        "sourceKind": "project",
+        "sourcePath": "agent-workflow/skills/guanlan-community-intelligence-monitor",
+        "sourceDigest": "902216adeda4c926331b16b01609fb6c2bb350f7a91ef19538fab8c27fa6ba14",
+        "platformIds": [
+          "data-center"
+        ],
+        "version": "1.1.0",
+        "status": "current lane owner",
+        "lifecycle": "current",
+        "syncState": "synced"
+      },
+      {
+        "id": "skill:df99204cd2d2fdf0623e0598",
+        "name": "guanlan-daily-monitor",
+        "sourceKind": "project",
+        "sourcePath": "agent-workflow/skills/guanlan-daily-monitor",
+        "sourceDigest": "7def24badcf7370daebb178d57a237cb36e3b34a4fd594d7be2f6f6b09192d4b",
+        "platformIds": [
+          "data-center"
+        ],
+        "version": "1.3.0",
+        "status": "current sub-skill",
+        "lifecycle": "current",
+        "syncState": "synced"
+      },
+      {
+        "id": "skill:6c1ce7c7385828c453fa2490",
+        "name": "guanlan-daily-monitor-qc",
+        "sourceKind": "project",
+        "sourcePath": "agent-workflow/skills/guanlan-daily-monitor-qc",
+        "sourceDigest": "9d5cc8795275744df1859a6d9377afcffd55f199c1185c7349c917d93bef3134",
+        "platformIds": [
+          "data-center"
+        ],
+        "version": "1.3.0",
+        "status": "current diagnostic sub-skill",
+        "lifecycle": "candidate",
+        "syncState": "synced"
+      },
+      {
+        "id": "skill:17450002eb2603135bd37b83",
+        "name": "guanlan-data-center-supervisor",
+        "sourceKind": "project",
+        "sourcePath": "agent-workflow/skills/guanlan-data-center-supervisor",
+        "sourceDigest": "5c5047678256ed26320c5b2503a63f1e831da141857c20d7d0bbe4d264d46cbb",
+        "platformIds": [
+          "data-center"
+        ],
+        "version": "1.3.1",
+        "status": "current lane owner",
+        "lifecycle": "current",
+        "syncState": "synced"
+      },
+      {
+        "id": "skill:ea7dd05aa81cd119b992b5ff",
+        "name": "guanlan-data-integrity-gate",
+        "sourceKind": "project",
+        "sourcePath": "agent-workflow/skills/guanlan-data-integrity-gate",
+        "sourceDigest": "e85272433b51913100f0a2eaf2f6b5b1f2ea3365be05467a663dc33a66293e70",
+        "platformIds": [
+          "data-center"
+        ],
+        "version": "1.1.0",
+        "status": "current sub-skill",
+        "lifecycle": "current",
+        "syncState": "synced"
+      },
+      {
+        "id": "skill:50cb3b35fc923fe2075a5d3c",
+        "name": "guanlan-event-normalizer",
+        "sourceKind": "project",
+        "sourcePath": "agent-workflow/skills/guanlan-event-normalizer",
+        "sourceDigest": "76c7d03ae8714d01b4f05a6550f46284e50e1995923866496dd1b1aefb1712aa",
+        "platformIds": [
+          "data-center"
+        ],
+        "version": "1.2.0",
+        "status": "current sub-skill",
+        "lifecycle": "current",
+        "syncState": "synced"
+      },
+      {
+        "id": "skill:2567cf5b24ca5a6b56e9b155",
+        "name": "guanlan-fde-data-projection",
+        "sourceKind": "project",
+        "sourcePath": "agent-workflow/skills/guanlan-fde-data-projection",
+        "sourceDigest": "7edb0d31018232c32f7cf4008c4c537f584170873f29b194c335c7d39996c9e5",
+        "platformIds": [
+          "data-center"
+        ],
+        "version": "1.2.0",
+        "status": "current sub-skill",
+        "lifecycle": "current",
+        "syncState": "synced"
+      },
+      {
+        "id": "skill:e9104b00e60679db30a1f6ee",
+        "name": "guanlan-first-line-viewpoints-monitor",
+        "sourceKind": "project",
+        "sourcePath": "agent-workflow/skills/guanlan-first-line-viewpoints-monitor",
+        "sourceDigest": "e892aa8088f8117803640e205359b0849e3b1072a723fcac042fdf154e39c6b9",
+        "platformIds": [
+          "data-center"
+        ],
+        "version": "1.2.1",
+        "status": "current lane owner",
+        "lifecycle": "current",
+        "syncState": "synced"
+      },
+      {
+        "id": "skill:389228625accb254312a6dc1",
+        "name": "guanlan-funding-insight-generator",
+        "sourceKind": "project",
+        "sourcePath": "agent-workflow/skills/guanlan-funding-insight-generator",
+        "sourceDigest": "8c4637317347795a0574a6e8a3ede043feeccf687215d3d6f2ead275efc1b95b",
+        "platformIds": [
+          "funding"
+        ],
+        "version": "1.6.1",
+        "status": "current downstream application",
+        "lifecycle": "candidate",
+        "syncState": "synced"
+      },
+      {
+        "id": "skill:8a8a1b29716d76e5693b21ca",
+        "name": "guanlan-monitor-quality-gate",
+        "sourceKind": "project",
+        "sourcePath": "agent-workflow/skills/guanlan-monitor-quality-gate",
+        "sourceDigest": "71fcd2abc00dfd3b1df28e374c11f728907b2d2cb589a41f4c8ffce5b1e45de0",
+        "platformIds": [
+          "data-center"
+        ],
+        "version": "1.3.0",
+        "status": "current sub-skill",
+        "lifecycle": "current",
+        "syncState": "synced"
+      },
+      {
+        "id": "skill:cb03bba7452e710fa276551f",
+        "name": "guanlan-monthly-report-page-generator",
+        "sourceKind": "project",
+        "sourcePath": "agent-workflow/skills/guanlan-monthly-report-page-generator",
+        "sourceDigest": "61f82e29bb70e1bceddc7b629da5ae5f44026b1dfd959698abfac564965e30af",
+        "platformIds": [
+          "funding"
+        ],
+        "version": "1.3.0",
+        "status": "current sub-skill",
+        "lifecycle": "current",
+        "syncState": "synced"
+      },
+      {
+        "id": "skill:463ca8283a21899802f5a9ee",
+        "name": "guanlan-skill-editor",
+        "sourceKind": "project",
+        "sourcePath": "agent-workflow/skills/guanlan-skill-editor",
+        "sourceDigest": "527fa7c7f91bb65a953b0767ccacee6b5ba2b5147ac9e0e025f1a630d6627561",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "2.1.0",
+        "status": "governance",
+        "lifecycle": "governance",
+        "syncState": "synced"
+      },
+      {
+        "id": "skill:4b772b80ecb2e031ddbfe188",
+        "name": "guanlan-source-ingestion",
+        "sourceKind": "project",
+        "sourcePath": "agent-workflow/skills/guanlan-source-ingestion",
+        "sourceDigest": "13d098e581563e110d55e66080da963f40ce98e015021229f8f4b0d3ffd6f95f",
+        "platformIds": [
+          "data-center"
+        ],
+        "version": "1.3.0",
+        "status": "current sub-skill",
+        "lifecycle": "current",
+        "syncState": "synced"
+      },
+      {
+        "id": "skill:40493d83612367a9695fee46",
+        "name": "guanlan-taxonomy-governor",
+        "sourceKind": "project",
+        "sourcePath": "agent-workflow/skills/guanlan-taxonomy-governor",
+        "sourceDigest": "da838130b2963f46bbce90db5b1adcd54c93cd8bf1e7f2bc386e53876d457772",
+        "platformIds": [
+          "data-center"
+        ],
+        "version": "2.4.0",
+        "status": "current sub-skill",
+        "lifecycle": "current",
+        "syncState": "synced"
+      },
+      {
+        "id": "skill:6dce1fcbfdf680bce19f10ea",
+        "name": "guanlan-typography-qc",
+        "sourceKind": "project",
+        "sourcePath": "agent-workflow/skills/guanlan-typography-qc",
+        "sourceDigest": "8e395a136a4a4723bcb536e0d99a8d7bfc5a034903afdba0114616623a8ab5ed",
+        "platformIds": [
+          "miniprogram",
+          "h5"
+        ],
+        "version": "1.1.0",
+        "status": "supporting skill",
+        "lifecycle": "supporting",
+        "syncState": "synced"
+      },
+      {
+        "id": "skill:b37f57624e67fc627a6d304a",
+        "name": "guanlan-weekly-report-page-generator",
+        "sourceKind": "project",
+        "sourcePath": "agent-workflow/skills/guanlan-weekly-report-page-generator",
+        "sourceDigest": "6baed1659725fd01a583d243797c06f814cc7dc8a086e1660d134753649fa0cb",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.3.0",
+        "status": "current sub-skill",
+        "lifecycle": "current",
+        "syncState": "synced"
+      },
+      {
+        "id": "skill:603df144076d1242f8eac075",
+        "name": "guanlan-community-essay-writer",
+        "sourceKind": "external-project",
+        "sourcePath": "AIP/.agents/skills/guanlan-community-essay-writer",
+        "sourceDigest": "860423c6961ba6a3fe8f336da6d5a603a91f6ea6b9d836ae0e223a2fa254fa54",
+        "platformIds": [
+          "aip"
+        ],
+        "version": "",
+        "status": "项目来源 / 未全局安装",
+        "lifecycle": "external",
+        "syncState": "external-project"
+      },
+      {
+        "id": "skill:35275b5c62da1636dc22c5e7",
+        "name": "guanlan-community-monitor",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/guanlan-community-monitor",
+        "sourceDigest": "3ae86741ef1113f0cbc4a8bc2652f77502c1437eaf79b0b670ba8b993b6f268e",
+        "platformIds": [
+          "community"
+        ],
+        "version": "",
+        "status": "内容登记 / 非认证",
+        "lifecycle": "registered",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:17fc8f213a1d0688cdff7faf",
+        "name": "guanlan-monthly-business-structure-report",
+        "sourceKind": "project",
+        "sourcePath": "agent-workflow/skills/guanlan-monthly-business-structure-report",
+        "sourceDigest": "37c62102c8ec10ae66b3461a03d482a925f16f5b23ed30706e4529cb6b12a012",
+        "platformIds": [
+          "funding"
+        ],
+        "version": "1.0.0",
+        "status": "downstream application",
+        "lifecycle": "candidate",
+        "syncState": "synced"
+      },
+      {
+        "id": "skill:71d60f8dbd47d8b7cb5532d8",
+        "name": "guanlan-opportunity-radar-updater",
+        "sourceKind": "project",
+        "sourcePath": "agent-workflow/skills/guanlan-opportunity-radar-updater",
+        "sourceDigest": "90b6d0df233ee1fd65cd390d2d3e3dff9eac11c7eaf448bb3d29e1f5aeb83c00",
+        "platformIds": [
+          "data-center"
+        ],
+        "version": "1.5.0",
+        "status": "downstream application",
+        "lifecycle": "candidate",
+        "syncState": "synced"
+      },
+      {
+        "id": "skill:e55bd28022cebbcb5ef790a6",
+        "name": "guanlan-season-recap-profile-card-maker",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/guanlan-season-recap-profile-card-maker",
+        "sourceDigest": "49f40e49e73779e34f3a07af9bab04934fe227431a42c02dd4505f5b95a28980",
+        "platformIds": [
+          "community"
+        ],
+        "version": "",
+        "status": "内容登记 / 非认证",
+        "lifecycle": "registered",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:d82c95a12b62afe9fb95ccc1",
+        "name": "guanlan-sharing-archive",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/guanlan-sharing-archive",
+        "sourceDigest": "bec12119c4d06cdbf0b4896366e4d31f900679a78294902a06f565d9220eca66",
+        "platformIds": [
+          "community"
+        ],
+        "version": "",
+        "status": "内容登记 / 非认证",
+        "lifecycle": "registered",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:a24f9758a9ec7155431526b6",
+        "name": "guanlan-trend-radar-updater",
+        "sourceKind": "project",
+        "sourcePath": "agent-workflow/skills/guanlan-trend-radar-updater",
+        "sourceDigest": "effd754c24a0a84c12e8fb0693ce100868c72c4dbc2c570fd60b566b5fc09aad",
+        "platformIds": [
+          "data-center"
+        ],
+        "version": "1.1.0",
+        "status": "downstream factual application",
+        "lifecycle": "candidate",
+        "syncState": "synced"
+      },
+      {
+        "id": "skill:2e69271528ec858ba51cc2a0",
+        "name": "guanlan-wechat-cover-maker",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/guanlan-wechat-cover-maker",
+        "sourceDigest": "befbc2b22e762eadfad1178f604f1fc0ca735e6361dc08dc1a29f0e94dc1823a",
+        "platformIds": [
+          "funding",
+          "community"
+        ],
+        "version": "",
+        "status": "内容登记 / 非认证",
+        "lifecycle": "registered",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:0d0bd4952486b920825a5e20",
+        "name": "guanlan-weekly-business-change-radar",
+        "sourceKind": "project",
+        "sourcePath": "agent-workflow/skills/guanlan-weekly-business-change-radar",
+        "sourceDigest": "cef4ff939d1cad75d9bebee5c8093c24fcb8ff5348890fcabf40a91fa0548cfe",
+        "platformIds": [
+          "funding"
+        ],
+        "version": "1.3.0",
+        "status": "downstream application",
+        "lifecycle": "candidate",
+        "syncState": "synced"
+      },
+      {
+        "id": "skill:afb20051f85760547f36db29",
+        "name": "guanlan-zaolang-card-maker",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/guanlan-zaolang-card-maker",
+        "sourceDigest": "2acd28deff6dfb2256071436b280e0d973da6f54552ebc50f20031ea4f6225ee",
+        "platformIds": [
+          "community"
+        ],
+        "version": "",
+        "status": "内容登记 / 非认证",
+        "lifecycle": "registered",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:e3fb13a62c0e67394e5b8bc3",
+        "name": "guanlan-zaolang-profile-writer",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/guanlan-zaolang-profile-writer",
+        "sourceDigest": "012c3a6dc35ef79d6d54ccc90804624d1f5f8f551b0fc4a504bc95e4526b365b",
+        "platformIds": [
+          "miniprogram",
+          "community"
+        ],
+        "version": "",
+        "status": "内容登记 / 非认证",
+        "lifecycle": "registered",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:e909c08c0c04b2ef964becd6",
+        "name": "admapix",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/admapix",
+        "sourceDigest": "9d377db445b0de425617573d73d31c552bd5d677ef3eb041585b436780f9d8bd",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:43f1a660bfe48e2aa0b1cf6e",
+        "name": "agent-mail",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/agent-mail",
+        "sourceDigest": "aa0133b63d438d4f76c9af77123e96e0fd043242e3a5ca16ca951055b7cd7c03",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:d2b918f5e3ab31136c9270e9",
+        "name": "aihot",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/aihot",
+        "sourceDigest": "c79ba9179998f2ad2443bb9d729d0975a65175db0d43e51c1dfa67a414e7e670",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "candidate",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:57ebab34e38ee965cb1f186e",
+        "name": "article-writer",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/article-writer",
+        "sourceDigest": "c38077a9eec6a0e7353455dbf613e10a7ac6a9e7e7918fb9adf33de6026823b6",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:bc515ea8074dc9ab476c141e",
+        "name": "arxiv-reader",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/arxiv-reader",
+        "sourceDigest": "704781b453d37a4b9a655d62b0f040d8b0fed53d9870f44a4f153574da04c55a",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.3",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:2e0b6a09805b9b8a34f715eb",
+        "name": "arxiv-watcher",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/arxiv-watcher",
+        "sourceDigest": "9c64d10ea6990437802de956d2c481e754928c055aebd4eb94d95249f512bcb8",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:b8afdc5f0959425e490a73b2",
+        "name": "autoresearch",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/autoresearch",
+        "sourceDigest": "7d73b0f107169e184eedc93723f1316b27d2b49abef7eb6ecbccbd34d393c46c",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:cdee711da75e72a02bd0b848",
+        "name": "awesome-design-md",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/awesome-design-md",
+        "sourceDigest": "678df235bcf70d0bedde270efe4a64cf6c4c59a1a8c19b280a06912241c69008",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:0de33fea10f1a80d43ac1fa5",
+        "name": "baoyu-article-illustrator",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/baoyu-article-illustrator",
+        "sourceDigest": "88c0a437b352fb734f969f3c4ad02a48abc64f62214d621027538e59fea89be6",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.57.1",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:97625ee7f04eda26d536f05e",
+        "name": "baoyu-comic",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/baoyu-comic",
+        "sourceDigest": "a2349597607a922ab8d3b5f8ef3342c7143facab8d0b359dc6363364c6a72f30",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.56.1",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:790023fa71af0bdd5832e48e",
+        "name": "baoyu-compress-image",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/baoyu-compress-image",
+        "sourceDigest": "afce8f4d1a3d80f11ee6b786779e4bff4bf95e83a19e330acf6e6ad4277f4913",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.56.1",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:641fe052676e46952b6bb391",
+        "name": "baoyu-cover-image",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/baoyu-cover-image",
+        "sourceDigest": "28d97270d2bf53fc13e513b0e08e8f3cb876ec35ef9f972fbcbeba7ed5a4e529",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.56.2",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:303b7d081ea8091dd63c6345",
+        "name": "baoyu-danger-gemini-web",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/baoyu-danger-gemini-web",
+        "sourceDigest": "95dfe64e446c2078ad59895eaf18a1a3651765dd8678ed964cd8ec9793bcb47a",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.56.1",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:aee527d188d4071e8c68478e",
+        "name": "baoyu-danger-x-to-markdown",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/baoyu-danger-x-to-markdown",
+        "sourceDigest": "e406a671ba51faa9bff2736932425d07b25584dccb486a3b800efc900c91231e",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.56.1",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:c1a408c2896c22e9021d6226",
+        "name": "baoyu-diagram",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/baoyu-diagram",
+        "sourceDigest": "b14a33bedc567b1ec2ea699c1108ad5bbf00e91eacf096f6e6d2aeae74f8ca08",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:9d74e1501eac88cdc745ad87",
+        "name": "baoyu-format-markdown",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/baoyu-format-markdown",
+        "sourceDigest": "648a7d0fe5ff31137c0f2449e616d0be613d859971a6759dbce338f4993fcea4",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.57.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:52ee2d78eb7cb969f30b849e",
+        "name": "baoyu-image-cards",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/baoyu-image-cards",
+        "sourceDigest": "c4c33cb9f98cccefee75d30a78d4d8c8d7f84e432708a91c6644feecceaa3c99",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.56.2",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:3b2c099fa0d51a09d8f423c0",
+        "name": "baoyu-image-gen",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/baoyu-image-gen",
+        "sourceDigest": "c495e8454bfa0a965f58bb7efb995bd0169a2d086313ad2754aec351a1a6143c",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.56.4",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:e5b2ed08500dee1800085707",
+        "name": "baoyu-imagine",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/baoyu-imagine",
+        "sourceDigest": "dc65cf25000b145c371a79f93cde886c334ecbdf946f23d7c6d264e4e861a1d1",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.58.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:4738e509fd4b8d5082604867",
+        "name": "baoyu-infographic",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/baoyu-infographic",
+        "sourceDigest": "928c5179201454e7d846b39c6a7047a5b0d07611edaa97b0fee4a296b98173d0",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.57.1",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:5f2ff580dc5647a137560676",
+        "name": "baoyu-markdown-to-html",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/baoyu-markdown-to-html",
+        "sourceDigest": "e97cf2b5c02ed913cfbece033cd4b226526928a8de7453502e8bfc3713dc7c83",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.56.1",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:e224c57fc25b163900f19d99",
+        "name": "baoyu-post-to-wechat",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/baoyu-post-to-wechat",
+        "sourceDigest": "589a4e5509aeb32521a49736b61d7b1cdb604d45032af7b2e332dc7c6176d39a",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.56.1",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:8de7aa4400846c94270ad43a",
+        "name": "baoyu-post-to-weibo",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/baoyu-post-to-weibo",
+        "sourceDigest": "22b3499a4aaf8f9e133d26a5bda7858a891a7aede9d3d5c3b152c9d2a23eacd4",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.56.1",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:a16c3383441783d1f34af7fa",
+        "name": "baoyu-post-to-x",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/baoyu-post-to-x",
+        "sourceDigest": "c49a3424312584e894ac311eaafb29729d176a61ba0cfdeaf4ba3049278ad889",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.56.1",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:9a48e64d2e0ab9af759007ec",
+        "name": "baoyu-slide-deck",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/baoyu-slide-deck",
+        "sourceDigest": "801ef1d13d5f6f3ab762a67ce54050452d1e5ad3fe343f858ec02c302cea2d23",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.56.2",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:6d17f92875162e46e4e2326e",
+        "name": "baoyu-translate",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/baoyu-translate",
+        "sourceDigest": "21e404a43d6f68359af1afb003c1e460c86ce174e9a4db2673940e1d70ea2b8b",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.59.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:a8406d6bce02660cad9fef2c",
+        "name": "baoyu-url-to-markdown",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/baoyu-url-to-markdown",
+        "sourceDigest": "900eaad9416dfbf168fc8c2c2726eb38b0a817021e1b30587558ed229fa38336",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.61.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:39dbe3242e859210ea7bebc2",
+        "name": "baoyu-xhs-images",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/baoyu-xhs-images",
+        "sourceDigest": "504edeeebbe4eacd534779bdfff1838d642324f9023ffdc4f4fc55458220d1f0",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.56.2",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:5b70f9de90a11dfa52256305",
+        "name": "baoyu-youtube-transcript",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/baoyu-youtube-transcript",
+        "sourceDigest": "b9b88fceb1617632aa8abfa6f749ae1757cad984405b5e6c3b38a10426488d95",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.1.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:b6dc22e9a05d31c8a0a237d2",
+        "name": "brand-guidelines",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/brand-guidelines",
+        "sourceDigest": "8ac5ddaf1c999cc0df996c720b1cf4409fce985afa93de768052b36f85e937c4",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:a01ea96b6872c9063969e903",
+        "name": "brandkit",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/brandkit",
+        "sourceDigest": "66c068d44001b4e6354c09e4b799f908ed1a7003211c7e7295331c122bea9f02",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:e55ccd5e0ed87932934a217b",
+        "name": "browser-act",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/browser-act",
+        "sourceDigest": "3c5bf1cd4777e8dfd3d07cd5960ea3b31cde7b41fcb93c476f3ce73fbaa388c2",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "2.0.2",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:b192a8c6dffe9c5645f4fbe3",
+        "name": "browser-use",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/browser-use",
+        "sourceDigest": "9b74b686a120c0b34bb2e82d849dbd51fd350273be8783a537d642ca2bfe7e80",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "2.0.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:35821eb231b8cd47889aff46",
+        "name": "brutalist-skill",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/brutalist-skill",
+        "sourceDigest": "d915c228e1fd8ff18f9f417ddfff605f045a15acb85e15906dcb347ba6e2c941",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:a515842ae829e65af8f0be72",
+        "name": "canva@openai-curated-remote:canva-brand-check",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/canva/15.0.0/skills/canva-brand-check",
+        "sourceDigest": "9582d9349cfc6bcb29cce086a4034e4c4bce7033902e3c2e0f5e149403b4f841",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:ac5a7057b083c6e534c8f9b2",
+        "name": "canva@openai-curated-remote:canva-branded-presentation",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/canva/15.0.0/skills/canva-branded-presentation",
+        "sourceDigest": "c48862315b4122909b610f03c09856674348a4eef09176e6e496019921b38653",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:0c9a40fd1a82fee73b6e6427",
+        "name": "canva@openai-curated-remote:canva-bulk-create",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/canva/15.0.0/skills/canva-bulk-create",
+        "sourceDigest": "ee0d4c5d1db82a0697efb813dbbd62f5b8be8b2ddde749bf571d413eea7c082b",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:1c2eccda630de06343c32a24",
+        "name": "canva@openai-curated-remote:canva-design-feedback",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/canva/15.0.0/skills/canva-design-feedback",
+        "sourceDigest": "4e7f5b9a94a76c130709a5bff1f70f599efac59d348763ef0286f1e792409b7e",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:f5e80f8fa8b6c07c411fa1d8",
+        "name": "canva@openai-curated-remote:canva-edit-design",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/canva/15.0.0/skills/canva-edit-design",
+        "sourceDigest": "0183256731389e3b6a228884c71191d74f35052fd067c69df770d3a2a0945d5e",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:ee347b2e7ae11070782f36e6",
+        "name": "canva@openai-curated-remote:canva-implement-feedback",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/canva/15.0.0/skills/canva-implement-feedback",
+        "sourceDigest": "b76a24db5f8f03bc01f1f5d1b3c66bb9e11701f855ddbace86a6f822cb3cbbd5",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:4842867f26e0608ad29b9f2e",
+        "name": "canva@openai-curated-remote:canva-resize-for-social-media",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/canva/15.0.0/skills/canva-resize-for-social-media",
+        "sourceDigest": "a59eb5b28db7f57151c99603e1ec45d934eb6b7dcecfecb6d70c89ea862aa18f",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:f88221534580c69ea2dbab09",
+        "name": "canva@openai-curated-remote:canva-translate-design",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/canva/15.0.0/skills/canva-translate-design",
+        "sourceDigest": "bfe338800d514536c2662e5d8b550f0a70756ab635913c001577fa034ab6e1c4",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:c6399c674ed8ac38d4f8732e",
+        "name": "canvas-design",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/canvas-design",
+        "sourceDigest": "4c548edcfc47e2b8da08dbab1498ed443b124100cdacd3e680f509883dcfb8ed",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:deea46153df087d99b6ea016",
+        "name": "caveman",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/caveman",
+        "sourceDigest": "7e2fa5f052ed8572bbe892d4c1baeea80ba8659d0b72e6432bfd7e8fb98abc0c",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:2ae50d79a62477a5245575d7",
+        "name": "citation-manager",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/citation-manager",
+        "sourceDigest": "1737766bdcd7e0caa615f085a8f3b63e222eec0ea03086067a85169f659a4a54",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:00cdcbbf3333ace64de48bbf",
+        "name": "code-review",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/code-review",
+        "sourceDigest": "d45f786768d013c1e387aa5b3d067f7a2540c9350b1ef116d0245d9881a61bde",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "candidate",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:a4ba57eec6473a915c664bdc",
+        "name": "codex-security@openai-curated-remote:assess-patch-risk",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/codex-security/0.1.24/skills/assess-patch-risk",
+        "sourceDigest": "705623d10ae4bfdccd2946d79eff528d87faf18f93a823b6611bf2b241e5f8a8",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:cf8b84b5e11ce17ee0162dc7",
+        "name": "codex-security@openai-curated-remote:attack-path-analysis",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/codex-security/0.1.24/skills/attack-path-analysis",
+        "sourceDigest": "8f91f1299ba22228699774419b2e223e7609511629af90edb3653341ab6dc68b",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:629979975a23cea171dcd965",
+        "name": "codex-security@openai-curated-remote:deep-security-scan",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/codex-security/0.1.24/skills/deep-security-scan",
+        "sourceDigest": "511b18d810fcc3d04237ddde0de26115caa18da1226535a6a0b66758a0b579ac",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:31a1b8ac04bbe0caf51c61af",
+        "name": "codex-security@openai-curated-remote:define-security-policy",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/codex-security/0.1.24/skills/define-security-policy",
+        "sourceDigest": "529c0b7a0ccc7f7745acfea32cf72577351219b49744cca8c2b1a1d2a6b284c0",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:98cdbad11e4d912e58aa7604",
+        "name": "codex-security@openai-curated-remote:finding-discovery",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/codex-security/0.1.24/skills/finding-discovery",
+        "sourceDigest": "c18715da92f47d3dc88d0f478125dc853d4d2908376511974ffea118d15c33f2",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:919607244b6aa006950b9b05",
+        "name": "codex-security@openai-curated-remote:fix-finding",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/codex-security/0.1.24/skills/fix-finding",
+        "sourceDigest": "d524a27f17f1681e9d934fc3b13b0cab918594e58c625f91bccfd37f6ffbcd65",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:face420d6bb4719b8cbcdd4a",
+        "name": "codex-security@openai-curated-remote:propose-security-hardening",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/codex-security/0.1.24/skills/propose-security-hardening",
+        "sourceDigest": "75fc14ae80de3c308ece64ece63f5e49fd44395aee10ea9ebc21362347939ee1",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:87e647cd56bff6e2c411cdc8",
+        "name": "codex-security@openai-curated-remote:security-diff-scan",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/codex-security/0.1.24/skills/security-diff-scan",
+        "sourceDigest": "d64be4f6bd5b5c9dd707a32c1cef5aa8e7b4e67410d30ab9e857906720d6d8a1",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:c35e7c688e6e177b3c354cd3",
+        "name": "codex-security@openai-curated-remote:security-scan",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/codex-security/0.1.24/skills/security-scan",
+        "sourceDigest": "e661ae57684045f3cdab3841ebb2c299d866a3cd7ece77fb5c2f52ae36027e68",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:c542da62afc8b00f3fe58f21",
+        "name": "codex-security@openai-curated-remote:threat-model",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/codex-security/0.1.24/skills/threat-model",
+        "sourceDigest": "cc2e011fafc61675992237dcc69c9441905d7d4aed1b94e98a19230f3db7b80c",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:f3928f9377923a28aac07ffe",
+        "name": "codex-security@openai-curated-remote:track-findings",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/codex-security/0.1.24/skills/track-findings",
+        "sourceDigest": "c45ea010858b83e6dfd1f5579dbd974f9658eb09046e3b6b2e5ac519e0687399",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:ad9052301a02763676dc4c1c",
+        "name": "codex-security@openai-curated-remote:triage-finding",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/codex-security/0.1.24/skills/triage-finding",
+        "sourceDigest": "7625d37196bbdc5f481cee121dad5105f6bda3ecedcdd5e428495b6a0fdd661f",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:1a6bb9a8e8d130c86a604da3",
+        "name": "codex-security@openai-curated-remote:validation",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/codex-security/0.1.24/skills/validation",
+        "sourceDigest": "20a6a2d153265a937599fd2027ff6f793faa813a58a346da5620407ad37f5528",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:1f805f8442c411cb52fa6d17",
+        "name": "codex-security@openai-curated-remote:verify-fix",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/codex-security/0.1.24/skills/verify-fix",
+        "sourceDigest": "20ebcff86f1e7556f8d925b631ac8875f80708fe034a0345592dc77133343de4",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:94c02243d5547e19097c566c",
+        "name": "codex-security@openai-curated-remote:vulnerability-writeup",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/codex-security/0.1.24/skills/vulnerability-writeup",
+        "sourceDigest": "e3ee4744026b06be7b445fbe5a6ca3dcc5d4af473ffbf446b837ab7a0ee4840f",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:3c8fd644d72f60c163516ad1",
+        "name": "computer-use@openai-bundled:computer-use",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-bundled/computer-use/26.908.40834/skills/computer-use",
+        "sourceDigest": "0ab2667b4006d3e43e7a96b41568b5c8c74dd208b0657ba0ccc063bd68673a1b",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:8c89a78cc0daa591581a1279",
+        "name": "content-factory",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/content-factory",
+        "sourceDigest": "a2dd2250179ed20b5cecd4860ea5259881383f2f5e02dacd2e6a7530ddb55fe6",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:6cf5f2ebb1272adc0e52fe25",
+        "name": "content-ops",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/content-ops",
+        "sourceDigest": "2a48b385e61ad916c01180db333345d546a62586f186cdb0528da6249d893f85",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:518fa59c45abc6d7baca21f2",
+        "name": "content-repurposer",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/content-repurposer",
+        "sourceDigest": "8d93d1a2113981035769bb6c76627bb8504b4f2c8b6023b153b1c47e48b4c298",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.1.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:6cd30d27dae96d8aee39551c",
+        "name": "creative-production@openai-curated-remote:intake",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/creative-production/0.1.25/skills/intake",
+        "sourceDigest": "ae6599a9de47eba4402a58971ba3a024f3c4acb63128b3cc00249cbd496aa6c7",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:ad37d6cdf0609fd6d5d0af3b",
+        "name": "creative-production@openai-curated-remote:produce",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/creative-production/0.1.25/skills/produce",
+        "sourceDigest": "973b3e40b7bd7aeb66a38e87e09601c3710be6dd2fac5e90d86036517e28c65d",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:934cd2794d5e6d4af25c0b93",
+        "name": "deep-research",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/deep-research",
+        "sourceDigest": "54638831f9903f020ffdf8e1ae98e5e210f7eae1f7097f9bb1bc8e6ce2ab0f7a",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:b7887c6da45d426f514df43c",
+        "name": "deep-research-work@openai-curated-remote:deep-research",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/deep-research-work/0.1.15/skills/deep-research",
+        "sourceDigest": "47e03e6bb94472e1d8840e216c2716c2f49d04d0e279be673c02c1e5c77c74b7",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:d08eaf7cff176a5bac96aba2",
+        "name": "diagnose",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/diagnose",
+        "sourceDigest": "c8bafba01efc7a2c67e4f83e7f657a4fa55c5578b1d75c50764ff0f11db4ff6c",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "candidate",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:83d20992ebb82c31ad746b54",
+        "name": "documents@openai-primary-runtime:documents",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-primary-runtime/documents/26.909.12148/skills/documents",
+        "sourceDigest": "2651eb35cecfcd58d9871a561d8be1fe379b358d5a56eae62ae0acd722083b57",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:874527c3e7ddd2a9395d9920",
+        "name": "edit-article",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/edit-article",
+        "sourceDigest": "85cd22a5a8c7dab3725dad281f3264cb86ac1fe33b5137de624763db10fe9951",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:d40dfb54ddd62f4dbfd853cc",
+        "name": "email-skill",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/email-skill",
+        "sourceDigest": "ff51a7439e98f804c3e5b085a4389963051ea04ebbfceab71a056e4b13c8a2b7",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "0.1.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:4dc2f09e6ff82eada9829178",
+        "name": "external-project:laofang-title-writer",
+        "sourceKind": "external-project",
+        "sourcePath": "AIP/.agents/skills/laofang-title-writer",
+        "sourceDigest": "ac4eaf7de184fedace0491592f1a033a5d5b68ec3d483b573dc6a491d76fa795",
+        "platformIds": [
+          "aip"
+        ],
+        "version": "",
+        "status": "项目来源 / 未全局安装",
+        "lifecycle": "external",
+        "syncState": "external-project"
+      },
+      {
+        "id": "skill:5e1774241ca0ea0c980b12bf",
+        "name": "fbs-bookwriter",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/fbs-bookwriter",
+        "sourceDigest": "92758c4d28114b1210749ac9ff3d943c6542c5c63ca09591e024979ca88d85a6",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "2.1.2",
+        "status": "内容登记 / 非认证",
+        "lifecycle": "registered",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:755396593cf59ae1ec0dd4ec",
+        "name": "financial-analyst-master",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/financial-analyst-master",
+        "sourceDigest": "ffd6ae545520cacc1d4bc7e10164101133956606f0af12a50bddbef7bf0abaf4",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:2d2b0c1f0a7e4a19358b5c2d",
+        "name": "find-skills",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/find-skills",
+        "sourceDigest": "b7ce6ffacc33135e1d111c7385f8eb91436d8222de3461e86a6e5c90ac7455aa",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "0.1.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:b9ddf70cdf2c7ef92573d9d4",
+        "name": "frontend-design",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/frontend-design",
+        "sourceDigest": "59edaee47554f214edc7f85110876959372bc21e37c6e3f11835cbd041f21e7d",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:054c7579ccb422c6977d9a3b",
+        "name": "frontend-dev",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/frontend-dev",
+        "sourceDigest": "d8c4723ada15015973e69ec227f518ceb955c6109218cdd6601827ac4d4b9dee",
+        "platformIds": [
+          "h5"
+        ],
+        "version": "0.1.1",
+        "status": "",
+        "lifecycle": "candidate",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:60baa43abfad46224a860589",
+        "name": "fullstack-dev",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/fullstack-dev",
+        "sourceDigest": "5a8609adf29e99f6e8f3aa3a4e6509009baf8fb56eb7e8994be12c614c62be68",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:c125a0ed5821d4723971e50a",
+        "name": "git-guardrails-claude-code",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/git-guardrails-claude-code",
+        "sourceDigest": "74051eeef393b5adce74d9c1f22428093bc3cc3094ad1ff72c1dd648f39d021c",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:fd08e28f5efbe36c9d3ef664",
+        "name": "github",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/github",
+        "sourceDigest": "ebdac0af47494608bf5a57600c9ac034dbefc08821c20159ab2f197ae637c1ba",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.0",
+        "status": "",
+        "lifecycle": "candidate",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:6e877a130975e065feee5d2a",
+        "name": "github-ai-trends",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/github-ai-trends",
+        "sourceDigest": "e158eb40052a760380bc718bb27893652485adaf114e117530b0d659416a9ee6",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.1.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:5213a28e03653687bdaa4d18",
+        "name": "github-trending-cn",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/github-trending-cn",
+        "sourceDigest": "df557f1e01fffd1c5f92025ad9a58314161f2e855eb2a6234a281175e99e74e2",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "2.0.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:3dbd8d77ec6ece0855d863f7",
+        "name": "google-drive@openai-curated-remote:google-docs",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/google-drive/0.1.16/skills/google-docs",
+        "sourceDigest": "e78bb592ecd9db7887a01034e669d7780d94a8439a4ab19a4db4a001ae015b0f",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:b885a191a80a63368f6e10a7",
+        "name": "google-drive@openai-curated-remote:google-drive",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/google-drive/0.1.16/skills/google-drive",
+        "sourceDigest": "6b81db9e0d4c9244a33b2b815e68dfb3d5b03f656c7ed0380a37eff78e3255e7",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:caba80ccedce616fc3f11e97",
+        "name": "google-drive@openai-curated-remote:google-drive-comments",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/google-drive/0.1.16/skills/google-drive-comments",
+        "sourceDigest": "b91f8d4d8e6bcf7a895a4461277b1551f6ee63a20f1e48def65b54a1a0bfad70",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:9697a0f8167536a6bfa65340",
+        "name": "google-drive@openai-curated-remote:google-sheets",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/google-drive/0.1.16/skills/google-sheets",
+        "sourceDigest": "32cf9841e10ebf05d20ddbb350bf1fcdde719e152c93e89dbeec812069426f02",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:1866d1752ecafc52476a2427",
+        "name": "google-drive@openai-curated-remote:google-slides",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/google-drive/0.1.16/skills/google-slides",
+        "sourceDigest": "d1299cd6a0716c3e102efd9ea42d6f820d290afbebda61160d71af3f953300c6",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:bda6d2ef209dc23e32625418",
+        "name": "gpt-tasteskill",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/gpt-tasteskill",
+        "sourceDigest": "2699f333a4cf2c43ef49b7cdf66674b5a19d05c1ca6a9a848dd4ec0acc41984d",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:d40c363304ba8489dd709e0b",
+        "name": "grill-me",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/grill-me",
+        "sourceDigest": "0fe30e2291a6f990a5414f85205535bc06519622bf604980511d7c11dad327e0",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:ea5d7495fee5b596c9743bc7",
+        "name": "grill-with-docs",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/grill-with-docs",
+        "sourceDigest": "f360e734f99c74d9dacd62f0968d336e01e94947b114a605719058a03f4607f7",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:fedbb2475fb1792dfbf58230",
+        "name": "growth-engine",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/growth-engine",
+        "sourceDigest": "240016a05b4f7652b7c7cd650ad3c4eade1c8459d40014c8d27b70ed9fe7462f",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:532dd185276238a2af50d489",
+        "name": "handoff",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/handoff",
+        "sourceDigest": "dd07215fc3994f8c4ca06fd7e47d5f0ff50f6e624e6b45458745aec93f722c1c",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "candidate",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:0389e12886376a689defa8fb",
+        "name": "hardcore-tech-writer",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/hardcore-tech-writer",
+        "sourceDigest": "aae8b57f6f09ba7583ad8ee299159256f9321e7d0d949ffff5f0855057299694",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:55512feb2c39f99183456861",
+        "name": "humanizer",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/humanizer",
+        "sourceDigest": "f4ab5d6cf0e28ad7b2bb73b712610ab2e1204c8c2bfcce31910830b4ab3c1549",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "2.1.1",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:af9311a4386d6ebbd1fc8e51",
+        "name": "ima-skills",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/ima-skills",
+        "sourceDigest": "6040ff11ef71a11fe5b8946fbac9790452f73f5835b9d9aa26b50b362b6e2c9e",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.1.2",
+        "status": "",
+        "lifecycle": "candidate",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:56fdd29daa97d12999ce6773",
+        "name": "image-to-code-skill",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/image-to-code-skill",
+        "sourceDigest": "ce9e7282b05e6cf247352c0f68953b943755899eb14a2198d72c97c6e5ffa807",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:6c492ef206baf156bc687fbe",
+        "name": "imagegen-frontend-mobile",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/imagegen-frontend-mobile",
+        "sourceDigest": "9d08a2fd4f71d9fa9f6808506fed4a8231ab451e2016570ab80514074571c64a",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:c4ca3ec1b6cab082d6e297ca",
+        "name": "imagegen-frontend-web",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/imagegen-frontend-web",
+        "sourceDigest": "d5215faecc59120b499726e2c0d6fd802d47f7f69c9243e328120b4759ed8f60",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:c33595b2d94aa4a1d5772d4a",
+        "name": "improve-codebase-architecture",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/improve-codebase-architecture",
+        "sourceDigest": "a81f800019e1d727987d0cc0ee0e2de95168ed5ab2ebcc2b43d17fe7780738c5",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:11cd2c73ccc39b696760519e",
+        "name": "infographic-maker",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/infographic-maker",
+        "sourceDigest": "9e583ebd6f3ade4ffd5fbabfcb117d5de1d0a4c7768454f4096ac9cb224e3d3f",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:4f4ba541d304ce5bc5b24dea",
+        "name": "interview-prep",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/interview-prep",
+        "sourceDigest": "ee51ef04e6fef0e799c0fc890c6083350e33b5b937db29484f6f79823defdb55",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:f35dd865b3f5ff9e47d8e297",
+        "name": "laofang-article-writer",
+        "sourceKind": "external-project",
+        "sourcePath": "AIP/.agents/skills/laofang-article-writer",
+        "sourceDigest": "541d574fa904521c48aea265e92ae4aa1ee2a7ac88aa6df458128edf74d5f6c2",
+        "platformIds": [
+          "aip"
+        ],
+        "version": "",
+        "status": "项目来源 / 未全局安装",
+        "lifecycle": "external",
+        "syncState": "external-project"
+      },
+      {
+        "id": "skill:cbd0f79b4e5df0afb5357ea4",
+        "name": "laofang-content-router",
+        "sourceKind": "external-project",
+        "sourcePath": "AIP/.agents/skills/laofang-content-router",
+        "sourceDigest": "3be4ca3daa9ef44ae1965480e95db5cfc808b2c6800285cb80304cab66758532",
+        "platformIds": [
+          "aip"
+        ],
+        "version": "",
+        "status": "项目来源 / 未全局安装",
+        "lifecycle": "external",
+        "syncState": "external-project"
+      },
+      {
+        "id": "skill:a95cf45eb367f60aa40b3aa9",
+        "name": "laofang-editorial-qc",
+        "sourceKind": "external-project",
+        "sourcePath": "AIP/.agents/skills/laofang-editorial-qc",
+        "sourceDigest": "67f3c1f2036228dc82310cf907d7067a3469c445c94d6d85626c8f415ee51578",
+        "platformIds": [
+          "aip"
+        ],
+        "version": "",
+        "status": "项目来源 / 未全局安装",
+        "lifecycle": "external",
+        "syncState": "external-project"
+      },
+      {
+        "id": "skill:eb2a0e33f9cbc44a9c952068",
+        "name": "laofang-founder-reflection",
+        "sourceKind": "external-project",
+        "sourcePath": "AIP/.agents/skills/laofang-founder-reflection",
+        "sourceDigest": "abbe0e950fb2a55776dd4c58e05254c3256226355a3a2e0a97a1b811a9f6ec72",
+        "platformIds": [
+          "aip"
+        ],
+        "version": "",
+        "status": "项目来源 / 未全局安装",
+        "lifecycle": "external",
+        "syncState": "external-project"
+      },
+      {
+        "id": "skill:d7e1c8ae2b83b8d7769649c6",
+        "name": "laofang-funding-daily",
+        "sourceKind": "external-project",
+        "sourcePath": "AIP/.agents/skills/laofang-funding-daily",
+        "sourceDigest": "8d3e0d9e9b067f6a43b6bc2754b32a9537d4a74e64343571c5966bdfb1e0ce49",
+        "platformIds": [
+          "aip"
+        ],
+        "version": "",
+        "status": "项目来源 / 未全局安装",
+        "lifecycle": "external",
+        "syncState": "external-project"
+      },
+      {
+        "id": "skill:2c9f77a2691cf37567159950",
+        "name": "laofang-funding-periodic",
+        "sourceKind": "external-project",
+        "sourcePath": "AIP/.agents/skills/laofang-funding-periodic",
+        "sourceDigest": "f4d5a5fed5d8dd868c678ae19e676ff3694083c37970ad64c3a0f80d0fb9b3d2",
+        "platformIds": [
+          "aip"
+        ],
+        "version": "",
+        "status": "项目来源 / 未全局安装",
+        "lifecycle": "external",
+        "syncState": "external-project"
+      },
+      {
+        "id": "skill:45788fc8aa00d44832325131",
+        "name": "laofang-hot-commentary",
+        "sourceKind": "external-project",
+        "sourcePath": "AIP/.agents/skills/laofang-hot-commentary",
+        "sourceDigest": "321db785ccbb450768b7d91d3be25ce6484a4324a64aedaac6a305618c2327e4",
+        "platformIds": [
+          "aip"
+        ],
+        "version": "",
+        "status": "项目来源 / 未全局安装",
+        "lifecycle": "external",
+        "syncState": "external-project"
+      },
+      {
+        "id": "skill:6fab25b2a3b759fc1aea6f49",
+        "name": "laofang-hot-commentary-topic-selector",
+        "sourceKind": "external-project",
+        "sourcePath": "AIP/.agents/skills/laofang-hot-commentary-topic-selector",
+        "sourceDigest": "e8e92bccdf67fb58e6e3702f369e094f89a1bf2119c9833e6a1ecf7db6645598",
+        "platformIds": [
+          "aip"
+        ],
+        "version": "",
+        "status": "项目来源 / 未全局安装",
+        "lifecycle": "external",
+        "syncState": "external-project"
+      },
+      {
+        "id": "skill:1e09bdc0f26b3b6648c5202a",
+        "name": "laofang-hot-topic-radar",
+        "sourceKind": "external-project",
+        "sourcePath": "AIP/.agents/skills/laofang-hot-topic-radar",
+        "sourceDigest": "70b589de4b8241c1b1848b3cb6c8fe246dad9ade0ade21336b7646e60f141506",
+        "platformIds": [
+          "aip"
+        ],
+        "version": "",
+        "status": "项目来源 / 未全局安装",
+        "lifecycle": "external",
+        "syncState": "external-project"
+      },
+      {
+        "id": "skill:fe1ca5365ade7ffd64031c60",
+        "name": "laofang-industry-judgment",
+        "sourceKind": "external-project",
+        "sourcePath": "AIP/.agents/skills/laofang-industry-judgment",
+        "sourceDigest": "e8163fbca3c72f47de2b9df9a99390f9208f2e8df4ce2a65f669b6609076a130",
+        "platformIds": [
+          "aip"
+        ],
+        "version": "",
+        "status": "项目来源 / 未全局安装",
+        "lifecycle": "external",
+        "syncState": "external-project"
+      },
+      {
+        "id": "skill:e9ba28190a701746e908b465",
+        "name": "laofang-ip-knowledge",
+        "sourceKind": "external-project",
+        "sourcePath": "AIP/.agents/skills/laofang-ip-knowledge",
+        "sourceDigest": "e1bc22dcc077441ebfb02b2c05b348f11a6a0a9d7e948450c5388c2455b42025",
+        "platformIds": [
+          "aip"
+        ],
+        "version": "",
+        "status": "项目来源 / 未全局安装",
+        "lifecycle": "external",
+        "syncState": "external-project"
+      },
+      {
+        "id": "skill:e4427a1628b95d1cfbe53073",
+        "name": "laofang-opportunity-analysis",
+        "sourceKind": "external-project",
+        "sourcePath": "AIP/.agents/skills/laofang-opportunity-analysis",
+        "sourceDigest": "74c2662b95dd47f8c32272ac1186a546d2c480367d189f851b3dda8b5510f1fa",
+        "platformIds": [
+          "aip"
+        ],
+        "version": "",
+        "status": "项目来源 / 未全局安装",
+        "lifecycle": "external",
+        "syncState": "external-project"
+      },
+      {
+        "id": "skill:f7b7e032cd9bdcd94763c368",
+        "name": "laofang-style-calibrator",
+        "sourceKind": "external-project",
+        "sourcePath": "AIP/.agents/skills/laofang-style-calibrator",
+        "sourceDigest": "ffed4440f7a9bd010ca21a2e9f6b43cdf3990feb1bfd5e83fcf6ba8b57ad2792",
+        "platformIds": [
+          "aip"
+        ],
+        "version": "",
+        "status": "项目来源 / 未全局安装",
+        "lifecycle": "external",
+        "syncState": "external-project"
+      },
+      {
+        "id": "skill:a72bd6fed49df3ca912a0f2f",
+        "name": "laofang-title-writer",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/laofang-title-writer",
+        "sourceDigest": "88c04f518d4dc2cc4d4ea214f4a0752ddc169ad750db41bc73db95335103aa71",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:268e998b90e8177976f76de4",
+        "name": "laofang-topic-selector",
+        "sourceKind": "external-project",
+        "sourcePath": "AIP/.agents/skills/laofang-topic-selector",
+        "sourceDigest": "458c0f33f702d912015aba42224154f4ad5284effa015508c1bee4f0c0292d3d",
+        "platformIds": [
+          "aip"
+        ],
+        "version": "",
+        "status": "项目来源 / 未全局安装",
+        "lifecycle": "external",
+        "syncState": "external-project"
+      },
+      {
+        "id": "skill:23348ee5de24e9c236b49b6b",
+        "name": "lark-unified",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/lark-unified",
+        "sourceDigest": "f3bd19995333457d068f68aa5cc4c85dc67ca3ffee12c17ba457666998dbe10d",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:484084e498a6100cc34b4e29",
+        "name": "llm-wiki",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/llm-wiki",
+        "sourceDigest": "4f11ab635e402d41f33a680ed69dbc90ac80bffa4791a930e64fc2d0534a9a1f",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "3.3.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:f524137514f92a6e58f389fb",
+        "name": "llm-wiki-upgrade",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/llm-wiki-upgrade",
+        "sourceDigest": "74fb456dabc0d0c23825cfebcb1c9faead3d16f0350ab1dc19c48ded84a42198",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.1.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:4a5466c6c718d55f93a4a89c",
+        "name": "macro-monitor",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/macro-monitor",
+        "sourceDigest": "96c4a59c4d165b4f1b956a273dc22f32d0a50d338fc7d8c2554e5bdf5e7f1a86",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.2",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:35a62455593a9e296a22d60c",
+        "name": "market-researcher",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/market-researcher",
+        "sourceDigest": "f5269ec304bbb2d8724d0d396f0cb7c04ff58433e96bb988cf5244f0442d5198",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:db1e76ed1c8f8130bb6e0107",
+        "name": "marketing-skills",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/marketing-skills",
+        "sourceDigest": "347a3cf395b0864d19d96bdc762ceab8cd6678453d9d63c77ea9defb3e559c8b",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:4b07b613d2c8b7635e264ef9",
+        "name": "md2wechat",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/md2wechat",
+        "sourceDigest": "cc5adb21de4d8ed7bc285c62a925ee9d0aa2fcf7ce6f3e1fbcd83b2eaf0490f5",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:d8d86baa4a03d45e9558e07a",
+        "name": "migrate-to-shoehorn",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/migrate-to-shoehorn",
+        "sourceDigest": "b41d9a3748a8bdb90ce3b91de8f56bc2b2354d2dd943571bf5ccecf81b28a762",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:787b62b6e48f65d2786027fc",
+        "name": "minimalist-skill",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/minimalist-skill",
+        "sourceDigest": "0b63afb03f68657b51042d075b0a7f8c2362bdb5bb1f77caab99693e90c91e21",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:2312d7e91e057271cc40ac98",
+        "name": "minimax-docx",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/minimax-docx",
+        "sourceDigest": "9c79fa5a035b8a00a94c788669305edb30a36b815b5a8a1e566458a65d11f958",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:2f05562943b3f0f671e0c555",
+        "name": "minimax-pdf",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/minimax-pdf",
+        "sourceDigest": "d7cd4cebf36fd0b1509858b8488469af9110abaa0bef17c9b46415d2ad02bc68",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:35b314b4452ca380c2d6c0aa",
+        "name": "minimax-xlsx",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/minimax-xlsx",
+        "sourceDigest": "1a320f3b5206df61616f042ef84d609c3ef724d69fe4083bd29b38f8a5f27f29",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:cdc241779635690373705216",
+        "name": "multi-search-engine",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/multi-search-engine",
+        "sourceDigest": "5f871797e97c3b8799d1c6083ac35460b76155a6720e85ad5d215541d57cb4a5",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "2.1.3",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:73cc0e0430e8560e506efcb6",
+        "name": "nano-pdf",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/nano-pdf",
+        "sourceDigest": "f061efda3e14f3ce7bd0f58dd3ea3a0019853f549341fc800aa15d51aee6cfe5",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:d50925fb531a483e646b2597",
+        "name": "neat-freak",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/neat-freak",
+        "sourceDigest": "296a86cd89fa722067dc32a81413585743938eef19e644e78076228d46ecf1ec",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "candidate",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:535c1b8a3dc154b8191abb05",
+        "name": "netlify@openai-curated-remote:netlify-ai-gateway",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/netlify/1.0.0/skills/netlify-ai-gateway",
+        "sourceDigest": "8693d7d23a0d6c2088d684de8c53fefdfb2484680ca80496f1489cd352dccc0f",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:c809342817d62111b41aa854",
+        "name": "netlify@openai-curated-remote:netlify-blobs",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/netlify/1.0.0/skills/netlify-blobs",
+        "sourceDigest": "65accd9dfd4b6d16d5f98b61f573fc272423c1e630b05f8afa19f0d0a9a7a85f",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:4781a068b7faa3115e2230b9",
+        "name": "netlify@openai-curated-remote:netlify-caching",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/netlify/1.0.0/skills/netlify-caching",
+        "sourceDigest": "1c927b78c04b4d6362fa27a09fe7c194bc274a88928b86129e56ff122502c258",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:e993475a869636c602189386",
+        "name": "netlify@openai-curated-remote:netlify-cli-and-deploy",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/netlify/1.0.0/skills/netlify-cli-and-deploy",
+        "sourceDigest": "f9ce2a14268822e4a59d7d297b1c207862e7c12b6760990a0c428d998e8d2cf7",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:54b83a4640b519468d94e2ea",
+        "name": "netlify@openai-curated-remote:netlify-config",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/netlify/1.0.0/skills/netlify-config",
+        "sourceDigest": "a47dc029442f16fd1b9e0a1992da29c8d2985f4f29d7630599894668c9280ac8",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:eb97aa792adaf6347bc69d22",
+        "name": "netlify@openai-curated-remote:netlify-deploy",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/netlify/1.0.0/skills/netlify-deploy",
+        "sourceDigest": "7804a5c4fccabb61e8c8c307c2febf530f09b692efcad664c2c5f7c37b2f67f4",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:1e96c384c89a37ebe9e9ac82",
+        "name": "netlify@openai-curated-remote:netlify-edge-functions",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/netlify/1.0.0/skills/netlify-edge-functions",
+        "sourceDigest": "643e0c31cf2d4263713f126770c047b229849a082cd5aecfbb9eb9c3ece81b30",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:094ee010058d9f9319629629",
+        "name": "netlify@openai-curated-remote:netlify-forms",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/netlify/1.0.0/skills/netlify-forms",
+        "sourceDigest": "e211b214abc2171385b7595cf273c017b1e1097f50552bdcfd6496bd766e1e42",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:9644eb9ca670c1f39248431f",
+        "name": "netlify@openai-curated-remote:netlify-frameworks",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/netlify/1.0.0/skills/netlify-frameworks",
+        "sourceDigest": "6d7ad2841151ec3dbd1479945ed129f43347134fc4fbbf6564983c3241075852",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:50a54819f7e3e7cafc6ac06c",
+        "name": "netlify@openai-curated-remote:netlify-functions",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/netlify/1.0.0/skills/netlify-functions",
+        "sourceDigest": "4811c00055a11464cd57bd7302592d4cf7448afb9c4b7e62a3ae205343594cba",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:6c702453c0f7ae990e637ed1",
+        "name": "netlify@openai-curated-remote:netlify-identity",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/netlify/1.0.0/skills/netlify-identity",
+        "sourceDigest": "5c340020393eb58af744f07a964722ddd36e24042332cd5bb5750546ae94caad",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:c6a0eec9a54f7828b55669a0",
+        "name": "netlify@openai-curated-remote:netlify-image-cdn",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/netlify/1.0.0/skills/netlify-image-cdn",
+        "sourceDigest": "dc62c9365cf4be89bf67efb0df718a48cbc8de397bae6736a8bb1f453fd8331d",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:2d44a4ec9d060b6d1ce89445",
+        "name": "news-summary",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/news-summary",
+        "sourceDigest": "5b539d5f4ac62a32ee3a11f52f4d7e84a059e40e6d2de968101809ed0cf2760f",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.1",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:66b3dcf119d27c5a5a898171",
+        "name": "newsroom-style",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/newsroom-style",
+        "sourceDigest": "558b23f64dbcbd7d2b161371d906904e4c4503e13e91008d0f6ed244dc0302d4",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:f224a1199a99ee34a8bda6c3",
+        "name": "note-organizer",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/note-organizer",
+        "sourceDigest": "bde2b3e6dfe62551b7dca821fcf0b3a80cfce16efefc05fad1e063083cf6f0b9",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:a90470b8d2becb1b53feac4f",
+        "name": "notebooklm",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/notebooklm",
+        "sourceDigest": "1d229162dff38d4dbd0951275ec2eaf1a60df5c360a4dfafd3d25da49e9cd3ac",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:33680bb4ea60a5599b93a755",
+        "name": "notebooklm-studio",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/notebooklm-studio",
+        "sourceDigest": "fa797657b4b63c2bc3d07ce1070751adefb9038e1dd85874445b4647bdf52914",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "2.1.3",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:21a58de2c848cc9ffd4ab9e7",
+        "name": "obsidian",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/obsidian",
+        "sourceDigest": "35c2bc13aff6fc9b3dbc8916cb42382b21cc573c5cf6c3c11f70fa9eabafee6b",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.0",
+        "status": "",
+        "lifecycle": "candidate",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:2a605da9c47ed1a0f63dcf05",
+        "name": "obsidian-vault",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/obsidian-vault",
+        "sourceDigest": "1e34caaa182c3e70be80aad679952bd0850e76c257a3f24bd7118bebfbec6c72",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:3a02ff4a4a744c501286828b",
+        "name": "openai-developers@openai-curated-remote:agents",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/openai-developers/1.3.0/skills/agents",
+        "sourceDigest": "40ec5d948646cd6c9146db69b017d6aa967f210966e944cdeb3a086f10ede32b",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:65754f0576d82087a6294bfa",
+        "name": "openai-developers@openai-curated-remote:build-chatgpt-app",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/openai-developers/1.3.0/skills/build-chatgpt-app",
+        "sourceDigest": "d38e829e7c70a25bbf693ebf7c452725ecfd8c14aed02fe5ca2a13094b1f0e7e",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:76340c885b4327d78ee5175a",
+        "name": "openai-developers@openai-curated-remote:chatgpt-app-submission",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/openai-developers/1.3.0/skills/chatgpt-app-submission",
+        "sourceDigest": "1ee72d9c88eae8494e1f1f07f57b5889f4ca5d0d48d8da10db766046d9b734a1",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:de5a1e72b862f1056350c416",
+        "name": "openai-developers@openai-curated-remote:openai-api-troubleshooting",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/openai-developers/1.3.0/skills/openai-api-troubleshooting",
+        "sourceDigest": "1da6bd091b3989a2ce1931d9a32fa5f8c3e667081ae70c21fc63928a73bcb2d2",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:62ce91383e5f3c9068dfc321",
+        "name": "openai-developers@openai-curated-remote:openai-platform-api-key",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/openai-developers/1.3.0/skills/openai-platform-api-key",
+        "sourceDigest": "5dfa70d7aef7fd395fc527bcbf723899ec338710f1e867740bfd71ebc1c798f9",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:01f68d4f9657d6d66e1cb217",
+        "name": "openai-image-gen",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/openai-image-gen",
+        "sourceDigest": "6b5b556088ee1de1b441b95ba5b8188df6b9056aa520b81aae939e8007aed7eb",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.1",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:0863393f7da7b7f37bafef35",
+        "name": "openai-templates@openai-curated-remote:artifact-template-analytics-dashboard",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-analytics-dashboard",
+        "sourceDigest": "f943fba42e7a98e7e1fad472997250ae903ed9e96d21a079a3f67b3f8c99bbef",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:97898bc035290a721659d040",
+        "name": "openai-templates@openai-curated-remote:artifact-template-business-review",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-business-review",
+        "sourceDigest": "2e85a831fde96af61d3e55bc02d324d39f223fea5a2d89498ee37003ee1bdb2d",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:aebc1819a529aee52ae7a1fc",
+        "name": "openai-templates@openai-curated-remote:artifact-template-design-report",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-design-report",
+        "sourceDigest": "8ddfe8015786579e96c3184c14c1e2ee4ca1ee237c798b442629fe02f6c3f00c",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:9e8cf53a273169303b24a780",
+        "name": "openai-templates@openai-curated-remote:artifact-template-experiment-analysis",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-experiment-analysis",
+        "sourceDigest": "ad4557a1b635fb2985679009b457b69a7c588572cb8abc4b3e1fd5d1bed6d4c4",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:094ec360d9a1642264631747",
+        "name": "openai-templates@openai-curated-remote:artifact-template-financial-budget",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-financial-budget",
+        "sourceDigest": "e93a88bdf1c20582e4e18ddbcabdc3e226b607e74a0873a6132792f8439db883",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:bbb48420c7df461a2e6db8c5",
+        "name": "openai-templates@openai-curated-remote:artifact-template-investment-committee-memo",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-investment-committee-memo",
+        "sourceDigest": "f9fedc4126aebd7f01f57450a042260f7274eb94d6b3a81b816a0b8ae0f73f39",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:289fb884881c9b4d78f55448",
+        "name": "openai-templates@openai-curated-remote:artifact-template-legal-memorandum",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-legal-memorandum",
+        "sourceDigest": "9b308ce1fa9018750ef3d3ba041827dda1d4a7dc00c2670d35682c4fa6e62ee4",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:116fe5a5f7bb86358ab5866d",
+        "name": "openai-templates@openai-curated-remote:artifact-template-market-trends-report",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-market-trends-report",
+        "sourceDigest": "e374a21d851c77bed55692e78da90d532b3f7d353a8010c3a15667496920a8ae",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:7093d13b5237a51b18e530ea",
+        "name": "openai-templates@openai-curated-remote:artifact-template-minimal-letterhead",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-minimal-letterhead",
+        "sourceDigest": "0ce84a89d5daee74f0a7c0d13ccbd16563a23d1473a250b5c3d7b51d7face8dd",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:949747264418e00566337c43",
+        "name": "openai-templates@openai-curated-remote:artifact-template-operating-calendar",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-calendar",
+        "sourceDigest": "20fdefc97e29fea889665c0d4b08fb6aa391ba29deba51da9ca9438d7461ab33",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:6b2ebfd1e78850c73300a911",
+        "name": "openai-templates@openai-curated-remote:artifact-template-operating-review",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-review",
+        "sourceDigest": "b376bbc2e5f7d901977d58bf080c192c56d8e7b5f06c97c40b5adb46092c12a9",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:27b0bac23061a9d138061255",
+        "name": "openai-templates@openai-curated-remote:artifact-template-project-kickoff",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-kickoff",
+        "sourceDigest": "9fff7c45d148d1c4fb6c6cd996ffee1ad872a1b27a3acf90e4e371b87cace893",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:c0ef4ddb4c057d9d96aa3253",
+        "name": "openai-templates@openai-curated-remote:artifact-template-project-tracker",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-tracker",
+        "sourceDigest": "866fb8c6588aab0f8c2d5b7641d13daa18cc53cfd544327d331d71daaa0e0f00",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:82d5390fb56e6d038c8615fe",
+        "name": "openai-templates@openai-curated-remote:artifact-template-sales-pipeline",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-sales-pipeline",
+        "sourceDigest": "06410f91f63c7261529a75e7ec94152fadec42bd9edbfcee13a0db440cfef792",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:d3d2e5c934e68fde020da358",
+        "name": "openai-templates@openai-curated-remote:artifact-template-simple-dark-mode",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-dark-mode",
+        "sourceDigest": "c38a71f66f21c13c886422291784a464fe397faae9484a6bd418e0a024e707e6",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:dcae7b0fedc42a20c97a14d6",
+        "name": "openai-templates@openai-curated-remote:artifact-template-simple-light-mode",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-light-mode",
+        "sourceDigest": "52871aad0ce3e4e6aef7682e7ba184bb9c4f4e47adda6749df4636d81889f255",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:0d3d8b879df320e068363131",
+        "name": "openai-templates@openai-curated-remote:artifact-template-strategy-memorandum",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-strategy-memorandum",
+        "sourceDigest": "7b872c2d7ae9a4a5d2f7dc00f96a334ed50d9dccd02647817c95b28d71610c20",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:eb82b573d9af80775aff4daf",
+        "name": "openai-templates@openai-curated-remote:artifact-template-system-design",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-system-design",
+        "sourceDigest": "76eba16205cd54787477038e04c072e1daf7e5e3c30447f36c3b93fdfdfe0f38",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:77b3352a4aaf0a9680293094",
+        "name": "openai-templates@openai-curated-remote:artifact-template-team-alignment",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-team-alignment",
+        "sourceDigest": "5019b60d6a73add4357d02e8cd6601aeb677ac94e05bbba6157de238b1054b66",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:640cd9aa877d35427a480b70",
+        "name": "openai-templates@openai-curated-remote:artifact-template-three-statement-forecast",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-three-statement-forecast",
+        "sourceDigest": "83fb829be3bf727cdb8dd728901ad65b7b48181d98c09b8b9238b17f76f8c965",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:8c9fe0760aad51376020557e",
+        "name": "openai-whisper",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/openai-whisper",
+        "sourceDigest": "ca25de574c9e1970d82aa27653dceed2f354ba7f35aea0e9aeb4fabc9e7dacc0",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:0636fde8613aa293b6737b18",
+        "name": "openai-whisper-api",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/openai-whisper-api",
+        "sourceDigest": "03f046fbfcede2d07bcb8babe9f077d7ccbca6150f0dd323975117ed5b706b2f",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:0c66d393aed9698b745433c9",
+        "name": "output-skill",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/output-skill",
+        "sourceDigest": "933b89da884015e2a4189417fd2dad62610c9aeb1c80d0166567354594836b1c",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:e3256e68cc298f604182465b",
+        "name": "pdf@openai-primary-runtime:pdf",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-primary-runtime/pdf/26.909.12148/skills/pdf",
+        "sourceDigest": "b590137e1b82416a2a0645ad81029b5169cc683b646efd2700b5ae2ba12c2f1e",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:a7b5391e781bd2587bef6da4",
+        "name": "pengyouquan-copywriting",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/pengyouquan-copywriting",
+        "sourceDigest": "7c874cc46437bfecdcd8c5f5472469e2d7c3e1db78cdd5888c881a615d4dc2d1",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "内容登记 / 非认证",
+        "lifecycle": "registered",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:b8f5bece50690be09c0cb03d",
+        "name": "playwright-browser-automation",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/playwright-browser-automation",
+        "sourceDigest": "9aade2b391299751ae422eea9ba1ef03f6a3c88ebc10739df5453ea373b98453",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "2.0.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:37c11302fcca3569a00e20cf",
+        "name": "playwright-scraper-skill",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/playwright-scraper-skill",
+        "sourceDigest": "b64476f73b70d84ab44423712c6905167e2fb8c348b696fcbbe675f810b8f1bd",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.2.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:d68c45c5f918b3b552950711",
+        "name": "plugin-management@openai-curated-remote:plugin-management",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/plugin-management/0.1.0/skills/plugin-management",
+        "sourceDigest": "372bd4d9e307291d203ff7010d04874318875a490cc97fe80faf940f5812a1b8",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:9156ac2848997785e15b2996",
+        "name": "podcast-ops",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/podcast-ops",
+        "sourceDigest": "30d2f1d8c5c2c83647cec39a2829c96d6f6f710cd93747e55f2be4b5df0ac612",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:993527c153d559e00ce0d6d1",
+        "name": "ppt-slideshow",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/ppt-slideshow",
+        "sourceDigest": "76d87c58700c9a3f5417a73a77ff08011572d7ba7932b8b0c3e4b56fb925539a",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.0",
+        "status": "",
+        "lifecycle": "candidate",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:9ca5c265b4fe3f00b5c9651c",
+        "name": "pptx-generator",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/pptx-generator",
+        "sourceDigest": "46a2902230ccd7ea3d185e7687187996a8224a49aa25ea50f894a6ce3674470f",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.2",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:be85c15fc3baf36a71a9fc29",
+        "name": "presentations@openai-primary-runtime:Presentations",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-primary-runtime/presentations/26.909.12148/skills/presentations",
+        "sourceDigest": "8f866c60928b94ba1d0e91a66315a30ef0e7b5ee4958517986d4c160ba695bf1",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:2f5ae562ffa73494d0045451",
+        "name": "product-design@openai-curated-remote:audit",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/product-design/0.1.55/skills/audit",
+        "sourceDigest": "dc41f2671668cdb5d29beec37ef6aae35edcd7528554761d0873793a8346afd1",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:c7b92bfa640e362f2981c934",
+        "name": "product-design@openai-curated-remote:design-qa",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/product-design/0.1.55/skills/design-qa",
+        "sourceDigest": "de4b1d1c67c6f6fa5ef3fad553d80cdac663e7aecc33598580316a01ad2be805",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:7925c3d20c6a28c2c39cab11",
+        "name": "product-design@openai-curated-remote:get-context",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/product-design/0.1.55/skills/get-context",
+        "sourceDigest": "9787d461900f6c644706497b28dd9b735b313902f099f7a1a565b5386e163192",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:0b98cab2d9c22dcb9aeae98a",
+        "name": "product-design@openai-curated-remote:ideate",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/product-design/0.1.55/skills/ideate",
+        "sourceDigest": "7f960c1b151f2813e1b7316ffd5793fed0a713f4b5647d6e7e2a3fd59801c2c0",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:0e192d92f84aeae6ecbf4339",
+        "name": "product-design@openai-curated-remote:image-to-code",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/product-design/0.1.55/skills/image-to-code",
+        "sourceDigest": "f0be6be18128e05beb77f8344886cae3d0fa747581e418bf3ef70a113f114374",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:e82fd5bedac00c33f3e3bffa",
+        "name": "product-design@openai-curated-remote:index",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/product-design/0.1.55/skills/index",
+        "sourceDigest": "55efecfc968dc5583e1b148b208b1f3dae2e78ffcea8043d3ea013acc567c90d",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:320e0091c3e6ed546a5fb845",
+        "name": "product-design@openai-curated-remote:research",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/product-design/0.1.55/skills/research",
+        "sourceDigest": "f310e3cdaad308629c878954ca13833d510d251d1a7f9b166795391e7be0b4a2",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:3492dfa3924c027abe3fb305",
+        "name": "product-design@openai-curated-remote:share",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/product-design/0.1.55/skills/share",
+        "sourceDigest": "8e1e0da62a4f8e8db8f2844a3bc138aa66155b084de4c8d4636dd7253150d4c0",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:51e98fa6e3694b75e8baa7df",
+        "name": "product-design@openai-curated-remote:url-to-code",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/product-design/0.1.55/skills/url-to-code",
+        "sourceDigest": "4a0f51a2b8a0fbe6625f3f00509138f975ea355b481a22ce196fdebc574b6a16",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:47be3912bb3c69b654f886ca",
+        "name": "product-design@openai-curated-remote:user-context",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/product-design/0.1.55/skills/user-context",
+        "sourceDigest": "7729f3454ca0b8db59560a7d0a5c989420fb68abe31a7e02d63a11f234675907",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:e22a8b5dbdc4dc5f6f0924ee",
+        "name": "prompt-engineering-expert",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/prompt-engineering-expert",
+        "sourceDigest": "d34abf5dd80a9039d3b57d1251c1bdd24a67b889dea80b854d07465499886469",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:9d977a411c8fc8917c3fa35f",
+        "name": "prototype",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/prototype",
+        "sourceDigest": "f2a9d586d9a095fa69bc450638b6d56c792aaa124881152e5292e52871c278b0",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:cb9e122782067563920cccec",
+        "name": "recording-processing",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/recording-processing",
+        "sourceDigest": "b31a3217009984cd234aea8497c605d8498b17c1c5ccac49ca09264ee68912b0",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "内容登记 / 非认证",
+        "lifecycle": "registered",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:f1034b53f36d950a4ab30d95",
+        "name": "redesign-skill",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/redesign-skill",
+        "sourceDigest": "f6b0637adf3481f0fbd23a365a8e0773ed82b322c1df78a40d7a8b4cda65c9e3",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:1580113ae0cc9b0045ada0e0",
+        "name": "remotion-video-toolkit",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/remotion-video-toolkit",
+        "sourceDigest": "718c2b64c6bacf5c331e4bd8def3c9a8f7d22e6309ca8e6f976a0857859cedc4",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:40ba19901d4b72ce8fdce6b4",
+        "name": "remotion@openai-curated-remote:remotion-best-practices",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/remotion/1.0.7/skills/remotion-best-practices",
+        "sourceDigest": "4805421c3789690d94ee3a220e42e17b98e05235ef1d11c186ec3b910c17c377",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "4.0.506",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:49df62b02009d798f8a0a2e6",
+        "name": "remotion@openai-curated-remote:remotion-captions",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/remotion/1.0.7/skills/remotion-captions",
+        "sourceDigest": "f9e21ccc6ea6f7d04895992674213ec372d6ddc64b18a72e1e89414002a52e49",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "4.0.506",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:bf145d3321fe1b39b34fcd93",
+        "name": "remotion@openai-curated-remote:remotion-create",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/remotion/1.0.7/skills/remotion-create",
+        "sourceDigest": "67f06ef24145ce4b55798b7c550546b1f6436168a6c5bbf32bcd7bfbb71eef77",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "4.0.506",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:84a4502f9dd2e2cf2427a611",
+        "name": "remotion@openai-curated-remote:remotion-docs",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/remotion/1.0.7/skills/remotion-docs",
+        "sourceDigest": "4e6874efe52909cc63acfe76dce46a63b0f20715412be80679f2f902d31798c7",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "4.0.506",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:f65e6e0ea6936302d784fb0b",
+        "name": "remotion@openai-curated-remote:remotion-interactivity",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/remotion/1.0.7/skills/remotion-interactivity",
+        "sourceDigest": "1503c8b314184db803d099b312595c685ebaa8fb13b2e25c7e09a4ea49172438",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "4.0.506",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:2108fefb0ee2d65f372c20de",
+        "name": "remotion@openai-curated-remote:remotion-maps",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/remotion/1.0.7/skills/remotion-maps",
+        "sourceDigest": "be9a08005e7173530c3b76bd0b1970d24cefb2b2507c28a5d32f91db1a5d9e7b",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "4.0.506",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:1b2e2d018770268c980a14a4",
+        "name": "remotion@openai-curated-remote:remotion-markup",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/remotion/1.0.7/skills/remotion-markup",
+        "sourceDigest": "b62301fe488d534272ef27eda91e78a559e2583739a4deef71452eae112362a7",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "4.0.506",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:172b30b8914f372416ef2e4a",
+        "name": "remotion@openai-curated-remote:remotion-multimedia",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/remotion/1.0.7/skills/remotion-multimedia",
+        "sourceDigest": "ac18073f91c3fb7dc00b3d0a7917794645cc1253f7e06b87e72f3537266880f0",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "4.0.506",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:c4666148a3027c1d2a160745",
+        "name": "remotion@openai-curated-remote:remotion-render",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/remotion/1.0.7/skills/remotion-render",
+        "sourceDigest": "c3837f6a20b4eeb4c6bf7696ad487889585857861cd89a5a4db5f9dab1b584ed",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "4.0.506",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:cf6896f082877cae49d23ec5",
+        "name": "remotion@openai-curated-remote:remotion-saas",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/remotion/1.0.7/skills/remotion-saas",
+        "sourceDigest": "515f6d3f74cf8f7a94476e6a604cdc8ec9b2fa2c64d4a859df28ea56ae77562b",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "4.0.506",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:ab1c1d993ab0f7cbff9892cf",
+        "name": "remotion@openai-curated-remote:remotion-studio",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/remotion/1.0.7/skills/remotion-studio",
+        "sourceDigest": "57862275094658d1cf9efcb253aadcd95f9c0238ed082a77599a5b59c5eab17e",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "4.0.506",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:c69eea65aa50fb39f65da619",
+        "name": "remotion@openai-curated-remote:remotion-upgrade",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/remotion/1.0.7/skills/remotion-upgrade",
+        "sourceDigest": "84618a23af9e6b19c3424a5ca5dfbc4aa4c5181f4262590c609ab7d3418c72b3",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "4.0.506",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:056199442e56b8d57b0f85ae",
+        "name": "sales-pipeline",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/sales-pipeline",
+        "sourceDigest": "12826724c5547d76b5552aa32d6642f3183fba4844617d88c51fa1b0962f60f0",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:663dc861a984db17a0c7b507",
+        "name": "sales-playbook",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/sales-playbook",
+        "sourceDigest": "c097a87808b74d4a1416cbde98681bf7cdfdd82c897bd3a36ed0c02db39f5951",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:7e91906333846103e471e8ce",
+        "name": "sanjin-interview",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/sanjin-interview",
+        "sourceDigest": "4ae59f591cf2ed5d7927e16b90514c45aae1ba0101007f5440e33198ccdd7856",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "内容登记 / 非认证",
+        "lifecycle": "registered",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:4cfea4f031e17e12f587df93",
+        "name": "scaffold-exercises",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/scaffold-exercises",
+        "sourceDigest": "be30d12029fe1dbe2a6144f8542ef87d5bcd7fd68e9f04f5ae09a129387cc0ea",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:7ee8208bf5b9b7070d9a12be",
+        "name": "seo-ops",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/seo-ops",
+        "sourceDigest": "f8bb964d0fa24b0539dd21bbc78afade0acbfa8f1d43afe71081f9e84feb56d0",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:eeffbf4f007897aa483b8ab0",
+        "name": "setup-matt-pocock-skills",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/setup-matt-pocock-skills",
+        "sourceDigest": "59e4a8bd27f3abbe24495d1f15a4404e63443c529c9c26200889b68a43a25f31",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:2e9673ed68ec59f658369026",
+        "name": "setup-pre-commit",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/setup-pre-commit",
+        "sourceDigest": "39df5538137477d3788152ef92ba1264b675157cd038794f82141edcebfddb96",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:d5e7120b65619223aadf07fd",
+        "name": "sites@openai-bundled:sites-building",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-bundled/sites/0.1.66/skills/sites-building",
+        "sourceDigest": "cdc0f3c11ef5a93b7c0aa6182b0017706b8922c9eb4f8a6a144a902e6ec805f8",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:05a12c84b8ed08885f7873f6",
+        "name": "sites@openai-bundled:sites-hosting",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-bundled/sites/0.1.66/skills/sites-hosting",
+        "sourceDigest": "b5f6e27c0be79b5755985ada81b6a6988d1824a5a28d3b87a5815df790b4597e",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:e64d3443bf47941e1ee3b7bd",
+        "name": "sites@openai-curated-remote:sites-building",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/sites/0.1.62/skills/sites-building",
+        "sourceDigest": "ecd528814854ab22f7cbc20395b87759d6ec40d115d28eddaa3844b7515c1052",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:eb8e9c472541241c03171be5",
+        "name": "sites@openai-curated-remote:sites-hosting",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/sites/0.1.62/skills/sites-hosting",
+        "sourceDigest": "72c664cbc4cb909cfb37198a6e2c9d16db020872be5ec9a5bf0dccd1c0a50606",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:459963718f1610a9628efba9",
+        "name": "sites@openai-curated-remote:sites-preview-troubleshooting",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-curated-remote/sites/0.1.62/skills/sites-preview-troubleshooting",
+        "sourceDigest": "18df157dd4d122d4571a74e2d2aa59f490ca88afceb2ea64452f33c8aad5c3fd",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:b0e52da50215cb88caf9c866",
+        "name": "skill-creator",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/skill-creator",
+        "sourceDigest": "f2731d8e8dd88a2177b32bbcddc22886f44cd5ced99300a4801b354de9690d4c",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "0.1.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:96e6018db6bdb976f9d69872",
+        "name": "skill-scanner",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/skill-scanner",
+        "sourceDigest": "53ff416184b771009ad49fa14845e12434dac92ea182fcea1ac5d418c55556ed",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:14f4edfcdab9c98203b4ee7b",
+        "name": "skill-vetter",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/skill-vetter",
+        "sourceDigest": "ad4fd6a906d226828c0c1e1e6e141b52b3ef37759f3e508aceeb8f62c3faf017",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:ca238845489312df28d3d343",
+        "name": "skills-security-check",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/skills-security-check",
+        "sourceDigest": "56c4653197df76f0c58428bdc6dc18c025fedc21614467a19444bffc0a7623af",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:209df96e890044fe5ad5cf55",
+        "name": "social-auto-upload",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/social-auto-upload",
+        "sourceDigest": "97c9d08c716cc0dad3f5a8021d759bf185d3ce7327f95485f03f6b6fcc58d446",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:8d8047af4611b04c833753c9",
+        "name": "soft-skill",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/soft-skill",
+        "sourceDigest": "49c7b83a53374522fc0603e5b0d8bd2eadc1ad819356f4b56f08f5e73d91ee2d",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:89ee12c53df9ce25d80fe3c5",
+        "name": "source-verification",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/source-verification",
+        "sourceDigest": "bba32b5f8955a9f31ef80c6beea5b57e3f04e600c575abb42baba6f48a451834",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:9df2898e61fb5d24872a0993",
+        "name": "spreadsheets@openai-primary-runtime:excel-live-control",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-primary-runtime/spreadsheets/26.909.12148/skills/excel-live-control",
+        "sourceDigest": "ec87e7108ee974cebc1611e47811ee6f1c32eb5d818fbfb260c89a19686b924a",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:d2ce9d43f244f04702db8e32",
+        "name": "spreadsheets@openai-primary-runtime:Spreadsheets",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-primary-runtime/spreadsheets/26.909.12148/skills/spreadsheets",
+        "sourceDigest": "67d6915419218eb3558646524d832f617085895ce12991065d688c3664ee0eff",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:ea084c6caf64a5edc4acd4fd",
+        "name": "stitch-skill",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/stitch-skill",
+        "sourceDigest": "0df674ab287dac937a44727a257b241f9b0c4ea62eb1a947224366211a266ca2",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:c26c322d9e3259c549ec513f",
+        "name": "story-pitch",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/story-pitch",
+        "sourceDigest": "31a3167c3be653ae1d4e4c26a53cedaebf66fe8f1fd7933c190b7477201deb65",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:8f53015a2b038aa1f8a2afb8",
+        "name": "summarize",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/summarize",
+        "sourceDigest": "c0d58e75f99f3b5ff82aacbee58801b9c15e1060a6e6ee706e428480c7ffd106",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:a312813d87652659bd658674",
+        "name": "taste-skill",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/taste-skill",
+        "sourceDigest": "b22aec648128a27c2646cf8847259073d939e7c7a28761a8ce39e84a082416dc",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:843b5044d74548f3c08c957e",
+        "name": "tdd",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/tdd",
+        "sourceDigest": "c864f040b555c4d0ec464daa38fef8e1f4f142b26bc11191b978775bff868372",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "candidate",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:3f852310943686e19525489d",
+        "name": "template-creator@openai-primary-runtime:template-creator",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-primary-runtime/template-creator/26.909.12148/skills/template-creator",
+        "sourceDigest": "978ddabb22208d8763501dba5705a195497a74d152dad77d0e13eda98f2db239",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:b871ff9cba30b5bebec7d906",
+        "name": "the-entrepreneurship-handbook",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/the-entrepreneurship-handbook",
+        "sourceDigest": "bcd3172136a868b6bf12408f79c00351b7d71ad6ee99569dbabe66f4a02d00c2",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:3c247df656943146d1412eef",
+        "name": "to-issues",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/to-issues",
+        "sourceDigest": "3fc7c307251c4f08a50326236e7e70faffe1dadb99ee35a3d854b1b7a0b79418",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:9a60bad9232dab413ec4192a",
+        "name": "to-prd",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/to-prd",
+        "sourceDigest": "a9a42e82d98fc26a289ee525b29af933b81a5b937f58284bda69128c88e49b3d",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:2501e0abf5a3910e24263756",
+        "name": "triage",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/triage",
+        "sourceDigest": "670cfb7cbc2d946813c687b2b9a25d22b304e7af46ed30c48ae1d5544b31d41e",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:f156cc59b3ea334126315c52",
+        "name": "visualize@openai-bundled:visualize",
+        "sourceKind": "plugin-cache",
+        "sourcePath": "plugin-cache/openai-bundled/visualize/1.0.37/skills/visualize",
+        "sourceDigest": "fcd2c0fb35889baaea86af0b88b93f8a56ffa5afcd7b1b4cd1fdaeab95386fa0",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "缓存 / 启用待核验",
+        "lifecycle": "external",
+        "syncState": "plugin-cache"
+      },
+      {
+        "id": "skill:f5c30f6f395fb1ddee171b4d",
+        "name": "weather",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/weather",
+        "sourceDigest": "8ba2ca8a199d25610fd2705b4470647fe31e8a9419b84ad62fb524a90a602a9a",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:952b1b387b21d484e5abfb82",
+        "name": "web-search-exa",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/web-search-exa",
+        "sourceDigest": "2042d5275c38c5b3f62fecbb17e6e56fecfeb2d366073b2e3da1f1f14147beae",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:01046973b99b9ae81d7e3291",
+        "name": "wechat-article-search",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/wechat-article-search",
+        "sourceDigest": "91022079aace35d74b5b832304e39381bf7abfa0750461129e981060379dd9db",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "0.1.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:127e27d9438c12cee527dac4",
+        "name": "wechat-topic-radar",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/wechat-topic-radar",
+        "sourceDigest": "4ac159049bce14b43f7f93e859212a95fe4a82d232bde158824d116650386313",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:67e798f4f897eaa8bb39fe32",
+        "name": "write-a-skill",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/write-a-skill",
+        "sourceDigest": "03840258378476cbefa13fd3f7bf70db93ec1c3cdd7d0dc4edb9431e71a2a24d",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:4967229589a65411bd424c7f",
+        "name": "x-longform-post",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/x-longform-post",
+        "sourceDigest": "80118868cf5c66bd541f96221cb1fa35fc76b1ebf096955fdea35d7a8e364d12",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:8cd82e5e6b7f3422ed45271e",
+        "name": "xxoo",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/xxoo",
+        "sourceDigest": "d905ad96a6227bef150682785650bbd4bd86003c5ee0137b3ca755aec39aeea2",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:01e5a494d2c37a8f33feb30b",
+        "name": "youtube-transcript",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/youtube-transcript",
+        "sourceDigest": "a9a52f93cc648a54d785a7ebe8873f4b2bb895f28587d72273927d996e83dcb0",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:75fd33c7d33ff09dd32b4ba7",
+        "name": "yt-competitive-analysis",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/yt-competitive-analysis",
+        "sourceDigest": "e560b52ee900653a1475afb56637f75a8cec0a321ae9c52a7992c2244ad2195e",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "1.0.0",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      },
+      {
+        "id": "skill:8f211c4b8a226df08e57ed8f",
+        "name": "zoom-out",
+        "sourceKind": "skill-store",
+        "sourcePath": ".skill-store/zoom-out",
+        "sourceDigest": "34f4bab271b9b9bbad01e08413d5a096ec84d1ee983d747de9219f77afc5e897",
+        "platformIds": [
+          "shared"
+        ],
+        "version": "",
+        "status": "",
+        "lifecycle": "dormant",
+        "syncState": "store-only"
+      }
+    ],
+    "versions": [
+      {
+        "key": "DATA-CENTER",
+        "label": "数据中心 Git 基线",
+        "value": "GUANLAN-DATA-CENTER-V4.8.1-internal-foundation",
+        "category": "数据中心",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": "",
+        "id": "version:source:DATA-CENTER"
+      },
+      {
+        "key": "SITE",
+        "label": "兼容站点外壳",
+        "value": "SITE-V4.6.1-research-retirement",
+        "category": "数据中心",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": "",
+        "id": "version:source:SITE"
+      },
+      {
+        "key": "OPS",
+        "label": "整体运营后台",
+        "value": "OPS-V3.8.0-engineering-integration",
+        "category": "运营与规则",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": "",
+        "id": "version:source:OPS"
+      },
+      {
+        "key": "BSIG",
+        "label": "商业信号生产链路",
+        "value": "BSIG-V2.2.0-pipeline-stage-ownership",
+        "category": "数据中心",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": "",
+        "id": "version:source:BSIG"
+      },
+      {
+        "key": "TAG",
+        "label": "分类与标签",
+        "value": "TAG-V4.1",
+        "category": "数据契约",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": "",
+        "id": "version:source:TAG"
+      },
+      {
+        "key": "FLV",
+        "label": "一线观点",
+        "value": "FLV-V1.1.0-history-backfill",
+        "category": "数据中心",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": "",
+        "id": "version:source:FLV"
+      },
+      {
+        "key": "CINT",
+        "label": "社群情报",
+        "value": "CINT-V1.4.2-vi-alignment",
+        "category": "数据中心",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": "",
+        "id": "version:source:CINT"
+      },
+      {
+        "key": "FDE",
+        "label": "企业 AI / FDE 数据",
+        "value": "FDE-V2.0",
+        "category": "数据中心",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": "",
+        "id": "version:source:FDE"
+      },
+      {
+        "key": "HARDWARE",
+        "label": "AI 硬件数据",
+        "value": "HARDWARE-V1.0",
+        "category": "数据中心",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": "",
+        "id": "version:source:HARDWARE"
+      },
+      {
+        "key": "REPORTS",
+        "label": "融资报告发布",
+        "value": "REPORTS-V1.3.0-funding-portal",
+        "category": "融资产品",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": "",
+        "id": "version:source:REPORTS"
+      },
+      {
+        "key": "OMAP",
+        "label": "机会地图",
+        "value": "OMAP-V2.0.0-v4-evidence",
+        "category": "数据中心",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": "",
+        "id": "version:source:OMAP"
+      },
+      {
+        "key": "TRADAR",
+        "label": "变化雷达",
+        "value": "TRADAR-V1.1.0-tag-v4-1",
+        "category": "数据中心",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": "",
+        "id": "version:source:TRADAR"
+      },
+      {
+        "key": "RAW",
+        "label": "原始数据契约",
+        "value": "RAW-V4.0",
+        "category": "数据契约",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": "",
+        "id": "version:source:RAW"
+      },
+      {
+        "key": "EVENT",
+        "label": "规范事件契约",
+        "value": "EVENT-V1.1",
+        "category": "数据契约",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": "",
+        "id": "version:source:EVENT"
+      },
+      {
+        "key": "ENTITY",
+        "label": "实体历史契约",
+        "value": "ENTITY-V1.0",
+        "category": "数据契约",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": "",
+        "id": "version:source:ENTITY"
+      },
+      {
+        "key": "PERSON",
+        "label": "人物审核契约",
+        "value": "PERSON-REVIEW-V1.1",
+        "category": "数据契约",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": "",
+        "id": "version:source:PERSON"
+      },
+      {
+        "key": "RELATION",
+        "label": "事实关系契约",
+        "value": "RELATION-V2.1",
+        "category": "数据契约",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": "",
+        "id": "version:source:RELATION"
+      },
+      {
+        "key": "BACKFILL",
+        "label": "历史采集契约",
+        "value": "BACKFILL-V1.0",
+        "category": "数据契约",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": "",
+        "id": "version:source:BACKFILL"
+      },
+      {
+        "key": "SKILL",
+        "label": "Skill Store",
+        "value": "v2.4.0 Astra execution and cross-platform Skill catalog",
+        "category": "运营与规则",
+        "source": "context/version-ledger.md",
+        "status": "仓库基线",
+        "kind": "source",
+        "checkedAt": "",
+        "id": "version:source:SKILL"
+      },
+      {
+        "key": "FUNDING",
+        "label": "AI 融资站",
+        "category": "融资产品",
+        "value": "FUNDING-PORTAL-V2.8.4",
+        "source": "https://www.zkdlj.vip/version.json",
+        "status": "公开端点已核验",
+        "kind": "deployed",
+        "checkedAt": "2026-09-04T05:25:04.951Z",
+        "attemptedAt": "2026-09-04T05:25:04.951Z",
+        "verified": true,
+        "id": "version:deployed:FUNDING"
+      },
+      {
+        "key": "FUNDING-DATA",
+        "label": "融资数据",
+        "category": "融资产品",
+        "value": "FUNDING-INSIGHT-V1.5.0-china-market",
+        "source": "https://www.zkdlj.vip/version.json",
+        "status": "公开端点已核验",
+        "kind": "deployed",
+        "checkedAt": "2026-09-04T05:25:04.951Z",
+        "attemptedAt": "2026-09-04T05:25:04.951Z",
+        "verified": true,
+        "id": "version:deployed:FUNDING-DATA"
+      },
+      {
+        "key": "MINIPROGRAM",
+        "label": "微信小程序",
+        "category": "融资产品",
+        "value": "1.0.1",
+        "source": "02-Miniprogram/package.json",
+        "status": "源码版本 · 微信线上待核验",
+        "kind": "source",
+        "checkedAt": "",
+        "id": "version:source:MINIPROGRAM"
+      },
+      {
+        "key": "H5",
+        "label": "融资 H5 原型",
+        "category": "融资产品",
+        "value": "0.2.0",
+        "source": "03-H5/package.json",
+        "status": "源码版本 · 部署待接入",
+        "kind": "source",
+        "checkedAt": "",
+        "id": "version:source:H5"
+      },
+      {
+        "key": "MEMBERS",
+        "label": "社群会员服务",
+        "category": "社群与会员",
+        "value": "1.8.2",
+        "source": "https://members.zkdlj.vip/healthz",
+        "status": "公开端点已核验",
+        "kind": "deployed",
+        "checkedAt": "2026-09-04T05:25:05.004Z",
+        "attemptedAt": "2026-09-04T05:25:05.004Z",
+        "verified": true,
+        "id": "version:deployed:MEMBERS"
+      },
+      {
+        "key": "MEMBERS-H5",
+        "label": "社群申请 H5 / PC",
+        "category": "社群与会员",
+        "value": "4.6.1",
+        "source": "https://members.zkdlj.vip/healthz",
+        "status": "公开端点已核验",
+        "kind": "deployed",
+        "checkedAt": "2026-09-04T05:25:05.004Z",
+        "attemptedAt": "2026-09-04T05:25:05.004Z",
+        "verified": true,
+        "id": "version:deployed:MEMBERS-H5"
+      }
+    ],
+    "batches": [
+      {
+        "id": "data-center:2026-09-13",
+        "observedAt": "2026-09-13T01:57:08.982Z",
+        "sourceSnapshot": "98ee0b728f137528a6d92d45b9f8787223636dbcc82c449192e31e6d0fce2e9f",
+        "stages": [
+          {
+            "id": "data-center:2026-09-13:collection",
+            "label": "采集",
+            "status": "partial",
+            "counts": {
+              "discovered": 290,
+              "capture_succeeded": 297,
+              "capture_failed": 8,
+              "recovered_source_failures": 8,
+              "raw_documents": 297
+            },
+            "evidence": [
+              "01-SiteV2/content/11-databases/data-center-v4/2026-09-13/manifest.json",
+              "agent-workflow/reports/2026-09-13-guanlan-daily-monitor-log.md",
+              "agent-workflow/reports/2026-09-13-guanlan-monitor-quality-gate.md"
+            ]
+          },
+          {
+            "id": "data-center:2026-09-13:fact_build",
+            "label": "事实构建",
+            "status": "passed",
+            "counts": {
+              "accepted_claims": 67,
+              "rejected_claims": 0,
+              "accepted": 67,
+              "rejected": 0,
+              "pending_claims": 6,
+              "canonical_events": 32,
+              "entities": 56,
+              "relationships": 73,
+              "conflicts": 1,
+              "qa_queue": 263
+            },
+            "evidence": [
+              "01-SiteV2/content/11-databases/data-center-v4/2026-09-13/manifest.json",
+              "agent-workflow/reports/2026-09-13-data-center-v4-integrity-gate.json"
+            ]
+          },
+          {
+            "id": "data-center:2026-09-13:application_projection",
+            "label": "应用投影",
+            "status": "passed",
+            "counts": {
+              "opportunity_map": "passed",
+              "trend_radar": "passed",
+              "funding_insights": "passed",
+              "fde_hardware_sync": "passed"
+            },
+            "evidence": [
+              "agent-workflow/reports/2026-09-13-persistent-asset-manifest.json"
+            ]
+          },
+          {
+            "id": "data-center:2026-09-13:publication",
+            "label": "发布",
+            "status": "waiting",
+            "counts": {
+              "v4_bundle_ready": true,
+              "snapshot_phase": "pre_deploy_snapshot",
+              "authoritative": false
+            },
+            "evidence": [
+              "agent-workflow/reports/2026-09-13-persistent-asset-manifest.json"
+            ]
+          }
+        ]
+      }
+    ],
+    "catalogGeneratedAt": "2026-09-13 10:45:08",
+    "snapshotGeneratedAt": "2026-09-13T07:35:54.980Z"
   }
 };

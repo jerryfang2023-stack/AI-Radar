@@ -45,7 +45,7 @@ const expected = {
   dataCenterGitTag: "data-center-v4.8.1-internal-foundation",
   site: "SITE-V4.6.1-research-retirement",
   community: "CINT-V1.4.2-vi-alignment",
-  ops: "OPS-V3.7.1-china-funding-history",
+  ops: "OPS-V3.8.0-engineering-integration",
   reports: "REPORTS-V1.3.0-funding-portal",
   opportunity: "OMAP-V2.0.0-v4-evidence",
   trendRadar: "TRADAR-V1.1.0-tag-v4-1",
