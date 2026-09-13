@@ -147,6 +147,11 @@ Community Intelligence validates the complete in-memory candidate before writing
 the current snapshot, dated snapshot, or frontstage file. A collector error,
 fewer than 12 accepted items, or fewer than three document links fails closed and
 preserves the last-good tracked data for a later logged-in retry.
+Recovery checks the freshly fetched `origin/main` snapshot with
+`assert-community-intelligence-data.mjs --source-ref=origin/main`, recording its
+exact commit while still verifying local private originals. A stale or dirty
+local checkout is not a collection failure. Fetch/ref failures remain inspection
+failures; the collector's default gate still validates its working-tree candidate.
 
 Vault refresh uses an isolated `origin/main` worktree. Resolve broken manual-note
 links at the referenced file and archive retired duplicate repository copies

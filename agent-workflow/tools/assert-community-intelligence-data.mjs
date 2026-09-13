@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { spawnSync } from "node:child_process";
 import { sourceTextHash } from "./deepseek-translation-client.mjs";
 import { documentKey, mergeDocumentLinks } from "../../01-SiteV2/site/scripts/community-document-links.mjs";
 import { loadPrivateEvidenceRecord } from "./lib/private-evidence-store.mjs";
@@ -18,6 +19,20 @@ const args = new Map(process.argv.slice(2).map((arg) => {
   return [key, rest.join("=") || "true"];
 }));
 const reportsDir = path.resolve(root, args.get("reports-dir") || path.join("agent-workflow", "reports"));
+const sourceRef = args.get("source-ref") || "";
+let sourceCommit = "";
+
+function readSnapshot() {
+  if (!sourceRef) return readJson(dataFile);
+  if (!/^[A-Za-z0-9][A-Za-z0-9._/-]*$/u.test(sourceRef)) throw new Error("Invalid community source ref");
+  const git = (values) => {
+    const result = spawnSync("git", values, { cwd: root, encoding: "utf8", windowsHide: true, timeout: 30_000, maxBuffer: 32 * 1024 * 1024 });
+    if (result.error || result.status !== 0) throw new Error(`Cannot read community source ref: ${result.stderr || result.error?.message || sourceRef}`);
+    return result.stdout.trim();
+  };
+  sourceCommit = git(["rev-parse", "--verify", `${sourceRef}^{commit}`]);
+  return JSON.parse(git(["show", `${sourceCommit}:01-SiteV2/site/data/community-intelligence.json`]));
+}
 
 function beijingDate(value = new Date()) {
   const date = value instanceof Date ? value : new Date(value);
@@ -32,10 +47,6 @@ function beijingDate(value = new Date()) {
 
 function readJson(file) {
   return JSON.parse(fs.readFileSync(file, "utf8"));
-}
-
-function exists(file) {
-  return fs.existsSync(file);
 }
 
 function needsChineseTranslation(value = "") {
@@ -69,6 +80,8 @@ function writeReport(date, status, checks, details) {
     `- status: ${status}`,
     `- generated_at: ${new Date().toISOString()}`,
     `- data_file: ${path.relative(root, dataFile).replace(/\\/g, "/")}`,
+    `- source_ref: ${sourceRef || "working-tree"}`,
+    `- source_commit: ${sourceCommit || "not-applicable"}`,
     `- items: ${details.itemsCount}`,
     `- links: ${details.linksCount}`,
     `- selected_keywords: ${details.selectedKeywordsCount}`,
@@ -97,8 +110,11 @@ function main() {
 
   const add = (ok, label, detail = "") => checks.push({ ok, label, detail });
 
-  add(exists(dataFile), "community intelligence data exists");
-  if (!exists(dataFile)) {
+  let payload;
+  let snapshotError = "";
+  try { payload = readSnapshot(); } catch (error) { snapshotError = error.message; }
+  add(Boolean(payload), "community intelligence data exists", snapshotError);
+  if (!payload) {
     const reportFile = writeReport(date, "failed", checks, {
       itemsCount: 0,
       linksCount: 0,
@@ -109,7 +125,6 @@ function main() {
     process.exit(1);
   }
 
-  const payload = readJson(dataFile);
   const generatedAt = payload?.meta?.generatedAt || "";
   const generatedDate = beijingDate(generatedAt);
   const items = Array.isArray(payload.items) ? payload.items : [];

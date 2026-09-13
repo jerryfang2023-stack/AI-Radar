@@ -204,15 +204,21 @@ function firstLineRecovery() {
 }
 
 function communityRecovery() {
+  const refresh = run("Refresh accepted community publication ref", "git", ["fetch", "origin", "main"]);
+  if (!refresh.ok) return {
+    ok: false, status: "inspection_failed", actions: [refresh],
+    note: "Cannot inspect accepted community publication; do not infer a collection failure.",
+  };
   const gate = run("Community Intelligence gate", process.execPath, [
     "agent-workflow/tools/assert-community-intelligence-data.mjs",
     `--date=${date}`,
+    "--source-ref=origin/main",
     `--reports-dir=${reportsDir}`,
   ]);
   return {
     ok: gate.ok,
     status: gate.ok ? "healthy" : "local_repair_required",
-    actions: [gate],
+    actions: [refresh, gate],
     note: gate.ok ? "" : "GitHub cannot replace the local logged-in collector; repair the local collection stage only.",
   };
 }
