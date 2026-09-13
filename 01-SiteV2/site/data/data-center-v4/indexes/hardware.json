@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T10:24:27.269Z",
-    "latestDataDate": "2026-09-12",
-    "currentDate": "2026-09-12",
-    "eventCount": 3193,
+    "generatedAt": "2026-09-13T00:34:15.748Z",
+    "latestDataDate": "2026-09-13",
+    "currentDate": "2026-09-13",
+    "eventCount": 3197,
     "quarantinedEventCount": 33,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -4688,7 +4688,7 @@
       ],
       "capexFacts": [],
       "tags": [],
-      "sourceUrl": "https://163.com/dy/article/L6E0VC7A05198CJN.html?f=post2020_dy_recommends",
+      "sourceUrl": "https://cls.cn/detail/2478685",
       "entityIds": [
         "EN-a5e5f031b6f878cf",
         "EN-6535648b340d6536"
@@ -16599,45 +16599,32 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-09-12",
-      "funnel_id": "LF-36e27da04c2e31cb",
+      "data_date": "2026-09-13",
+      "funnel_id": "LF-11e81190ca216192",
       "lens": "hardware",
-      "date": "2026-09-12",
-      "monitoring_paths": [
-        "hardware_capacity_fab",
-        "hardware_capex",
-        "hardware_oem_odm",
-        "hardware_product_specs",
-        "hardware_supply_agreement"
-      ],
-      "raw_documents": 253,
-      "original_sources": 248,
-      "valid_claims": 75,
-      "observations": 23,
-      "canonical_events": 53,
+      "date": "2026-09-13",
+      "monitoring_paths": [],
+      "raw_documents": 19,
+      "original_sources": 19,
+      "valid_claims": 4,
+      "observations": 0,
+      "canonical_events": 3,
       "blocker_counts": {
-        "domestic_publication_date_unverified": 32,
-        "historical_terra_extraction_not_accepted": 61,
-        "source_outside_funding_backfill_window": 15,
-        "rumor_requires_primary_confirmation": 3,
-        "event_not_ai_relevant": 9,
-        "non_event_or_index_title": 12,
-        "multiple_funding_recipients_require_separate_sources": 1,
-        "multi_event_roundup_not_single_event_source": 2,
-        "roundup_or_body_fragment_not_event_title": 1,
-        "reaction_or_commentary_not_new_event": 2,
-        "raw_source_quality_block": 10,
-        "event_outside_ai_industry_scope": 1,
-        "source_outside_daily_window": 8,
-        "no_source_bounded_event": 1
+        "rumor_requires_primary_confirmation": 2,
+        "no_source_bounded_claim": 2,
+        "source_outside_daily_window": 1,
+        "domestic_publication_date_unverified": 3,
+        "event_not_ai_relevant": 5,
+        "source_outside_funding_backfill_window": 1,
+        "raw_source_quality_block": 2
       },
       "rates": {
-        "original_source_rate": 0.9802371541501976,
-        "valid_claim_rate": 0.2964426877470356,
-        "observation_rate": 0.30666666666666664,
-        "event_conversion_rate": 0.7066666666666667
+        "original_source_rate": 1,
+        "valid_claim_rate": 0.21052631578947367,
+        "observation_rate": 0,
+        "event_conversion_rate": 0.75
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-12/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-13/monitoring-funnel.json"
     }
   ]
 }

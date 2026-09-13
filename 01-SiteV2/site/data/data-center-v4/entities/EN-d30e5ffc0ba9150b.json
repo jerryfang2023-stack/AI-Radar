@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T10:24:27.269Z",
-    "latestDataDate": "2026-09-12",
-    "currentDate": "2026-09-12",
-    "eventCount": 3193,
+    "generatedAt": "2026-09-13T00:34:15.748Z",
+    "latestDataDate": "2026-09-13",
+    "currentDate": "2026-09-13",
+    "eventCount": 3197,
     "quarantinedEventCount": 33,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -59,6 +59,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-c2718ea152dde192",
       "EV-775bae399bcf79d2",
       "EV-88a984b765bb54f1",
       "EV-af345a9a68d25d91",
@@ -80,13 +81,14 @@
       "EN-8989aada6eb4a4c3"
     ],
     "firstSeen": "2026-01-20",
-    "lastSeen": "2026-09-12",
+    "lastSeen": "2026-09-13",
     "relationIds": [
       "REL2-dcc3f6e959d6073a",
       "REL2-e1d65aab90a4ab28"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-c2718ea152dde192",
         "EV-775bae399bcf79d2",
         "EV-af345a9a68d25d91",
         "EV-c09fcc4176cba844",
@@ -109,6 +111,46 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-c2718ea152dde192",
+        "dataDate": "2026-09-13",
+        "date": "2026-09-11",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "烨知心完成Pre A轮融资 由深创投、和利资本、TCL创投、中科创星联合领投，艾为电子（688798.SH）、国开科创、朝晖资本等机构跟投，老股东连续多轮持续超额追投。 投中网 · 1天前",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "on_device",
+            "name": "端侧",
+            "entityIds": [
+              "EN-10b106d9b0a27a4c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-10b106d9b0a27a4c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-10b106d9b0a27a4c",
+          "EN-5427fca83c89c1c8",
+          "EN-d30e5ffc0ba9150b"
+        ]
+      },
       {
         "id": "EV-775bae399bcf79d2",
         "dataDate": "2026-09-12",
