@@ -2,6 +2,8 @@
 
 This file is the default routing entry. It is a router, not a full wiki.
 
+Cross-module rules, design, execution and delivery mappings: [Guanlan Harness](agent-workflow/harness/README.md). Read the matching module only; the registry is an index, not an additional source of business rules.
+
 Do not scan all Markdown at task start. Read only this file, the required `context/` files, and directly relevant task files.
 
 ## Current Version

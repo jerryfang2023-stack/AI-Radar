@@ -1,7 +1,7 @@
 ---
 status: current
 scope: v4-execution-harness
-last_updated: 2026-07-31
+last_updated: 2026-09-13
 priority: current
 ---
 
@@ -9,6 +9,11 @@ priority: current
 
 Use this harness for production, repair, deployment, and no-compatibility
 validation.
+
+This is the V4 production-specific flow. Cross-module rules, designs, tools,
+checks and evidence requirements are indexed in [Guanlan Harness](../agent-workflow/harness/README.md).
+For narrow edits, run the applicable checks; a documentation or index repair
+does not require recollection or a complete business production pipeline.
 
 ## Production order
 
@@ -21,6 +26,11 @@ validation.
 5. Write `COLLECTION-TELEMETRY-V1.0` and OPS-only supervision records.
 6. Pass `assert:no-active-v3` and the V4 production-readiness gate.
 7. Stage only current V4/source/application/OPS assets.
+8. Commit accepted changes and publish to the applicable destination: internal
+   Pages, the independent Funding Portal, protected OPS, or local Vault.
+   Pages success alone does not complete public financing publication.
+9. Verify the deployed commit/release and live contracts; record unresolved
+   checks separately. Mini Program data refresh is not a new client release.
 
 ## Evidence namespaces
 

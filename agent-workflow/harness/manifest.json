@@ -1,0 +1,1099 @@
+{
+  "schemaVersion": 1,
+  "rootIds": [
+    "wavesight",
+    "portal",
+    "members",
+    "vault",
+    "aip",
+    "skill-store",
+    "runtime",
+    "backups"
+  ],
+  "moduleCatalog": {
+    "root": "vault",
+    "path": "90-工作区/00-统一管理/registry.json"
+  },
+  "policy": "这是关联索引；模块名称/责任归 registry，规则正文归所属事实源。引用存在不等于检查通过。命令只展示，不自动执行。",
+  "entries": [
+    {
+      "id": "H-data-center",
+      "moduleId": "data-center",
+      "title": "事实生产与数据中台",
+      "lifecycle": "current",
+      "refs": [
+        {
+          "root": "wavesight",
+          "path": "context/12-data-center-v4.md",
+          "layer": "rules",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/product/data-center-v4-contract.md",
+          "layer": "design",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/tools/build-data-center-v4.mjs",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/tools/tests/data-center-v4.test.mjs",
+          "layer": "closure",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "context/project-memory.md",
+          "layer": "rules",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/product/data-center-v4.schema.json",
+          "layer": "design",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/product/entity-history-v1-contract.md",
+          "layer": "design",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/tools/assert-data-center-v4.mjs",
+          "layer": "closure",
+          "kind": "source"
+        }
+      ],
+      "check": {
+        "command": "npm run assert:data-center",
+        "cwd": "wavesight:.",
+        "mode": "explicit-only"
+      },
+      "acceptance": "原文、Claim、Event、实体及投影可追溯，相关数据质量门通过。",
+      "recovery": "保留已接受原文和事实批次，从首次失败阶段恢复。",
+      "tracking": [
+        "GOV-007"
+      ],
+      "evidenceRequirement": "验收记录需包含检查时间、对应源码提交/文件哈希、执行结果、未验证项；发布另附 release 与线上回读。"
+    },
+    {
+      "id": "H-china-funding",
+      "moduleId": "data-center",
+      "title": "国内融资流程",
+      "lifecycle": "current",
+      "refs": [
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/skills/guanlan-china-funding-monitor/SKILL.md",
+          "layer": "rules",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "docs/china-funding-monitor.md",
+          "layer": "design",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": ".github/workflows/china-funding-pr.yml",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/tools/tests/china-funding-lane.test.mjs",
+          "layer": "closure",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/skills/guanlan-china-funding-monitor/SKILL.md",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/product/funding-insight-v1.schema.json",
+          "layer": "design",
+          "kind": "source"
+        }
+      ],
+      "check": {
+        "command": "npm run test:china-funding",
+        "cwd": "wavesight:.",
+        "mode": "explicit-only"
+      },
+      "acceptance": "按公司市场及具体事件轮次核验；采集、卡片、公众发布分别有证据。",
+      "recovery": "复用已验收采集与卡片检查点，按失败阶段续跑。",
+      "tracking": [
+        "GOV-007"
+      ],
+      "evidenceRequirement": "验收记录需包含检查时间、对应源码提交/文件哈希、执行结果、未验证项；发布另附 release 与线上回读。"
+    },
+    {
+      "id": "H-ops",
+      "moduleId": "ops",
+      "title": "运营后台",
+      "lifecycle": "current",
+      "refs": [
+        {
+          "root": "wavesight",
+          "path": "AGENTS.md",
+          "layer": "rules",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "docs/operations-console.md",
+          "layer": "design",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/tools/publish-ops-console.mjs",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/tools/tests/ops-unified.test.mjs",
+          "layer": "closure",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "01-SiteV2/site/operations-console.html",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/tools/tests/operations-auth.test.mjs",
+          "layer": "closure",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/tools/tests/member-operations.test.mjs",
+          "layer": "closure",
+          "kind": "source"
+        }
+      ],
+      "check": {
+        "command": "npm run test:ops-unified",
+        "cwd": "wavesight:.",
+        "mode": "explicit-only"
+      },
+      "acceptance": "权限、空态、失败重试与会话隔离通过；已提交文件哈希、登录保护、健康接口核验。",
+      "recovery": "依据发布回执定位前一不可变 release；修复后只恢复发布阶段。",
+      "tracking": [],
+      "evidenceRequirement": "验收记录需包含检查时间、对应源码提交/文件哈希、执行结果、未验证项；发布另附 release 与线上回读。"
+    },
+    {
+      "id": "H-portal",
+      "moduleId": "portal",
+      "title": "融资独立站",
+      "lifecycle": "current",
+      "refs": [
+        {
+          "root": "portal",
+          "path": "README.md",
+          "layer": "rules",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/product/funding-insight-v1.schema.json",
+          "layer": "design",
+          "kind": "source"
+        },
+        {
+          "root": "portal",
+          "path": "scripts/publish-from-wavesight.mjs",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "portal",
+          "path": "scripts/publish-from-wavesight.test.mjs",
+          "layer": "closure",
+          "kind": "source"
+        },
+        {
+          "root": "portal",
+          "path": "deploy/nginx-www.zkdlj.vip.conf",
+          "layer": "design",
+          "kind": "source"
+        },
+        {
+          "root": "portal",
+          "path": "scripts/validate-funding-data.mjs",
+          "layer": "closure",
+          "kind": "source"
+        },
+        {
+          "root": "portal",
+          "path": "scripts/validate-report-data.mjs",
+          "layer": "closure",
+          "kind": "source"
+        }
+      ],
+      "check": {
+        "command": "node --test scripts/publish-from-wavesight.test.mjs",
+        "cwd": "portal:.",
+        "mode": "explicit-only"
+      },
+      "acceptance": "融资、报告和权限检查通过；VPS 发布回执与线上日期、内容版本一致。",
+      "recovery": "复用已推送且验收的数据，仅重发当前提交并核验公开及受保护回执。",
+      "tracking": [],
+      "evidenceRequirement": "验收记录需包含检查时间、对应源码提交/文件哈希、执行结果、未验证项；发布另附 release 与线上回读。"
+    },
+    {
+      "id": "H-mini",
+      "moduleId": "mini",
+      "title": "微信小程序",
+      "lifecycle": "current",
+      "refs": [
+        {
+          "root": "wavesight",
+          "path": "02-Miniprogram/AGENTS.md",
+          "layer": "rules",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "02-Miniprogram/docs/REVIEW-1.0.1.md",
+          "layer": "design",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "02-Miniprogram/package.json",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "02-Miniprogram/package.json",
+          "layer": "closure",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "02-Miniprogram/miniprogram",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "02-Miniprogram/docs/releases/1.0.0/README.md",
+          "layer": "closure",
+          "kind": "evidence"
+        }
+      ],
+      "check": {
+        "command": "npm run verify",
+        "cwd": "wavesight:02-Miniprogram",
+        "mode": "explicit-only"
+      },
+      "acceptance": "地区与展示政策、异步身份、加载/空态/错误/重试验收；上传、审核、线上版本分别记录。",
+      "recovery": "按确切发布版本恢复客户端；数据故障先修复服务端已验收投影。",
+      "tracking": [],
+      "evidenceRequirement": "验收记录需包含检查时间、对应源码提交/文件哈希、执行结果、未验证项；发布另附 release 与线上回读。"
+    },
+    {
+      "id": "H-account",
+      "moduleId": "account",
+      "title": "账户支付与权益",
+      "lifecycle": "current",
+      "refs": [
+        {
+          "root": "wavesight",
+          "path": "04-Payment-Service/AGENTS.md",
+          "layer": "rules",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "04-Payment-Service/docs/community-integration.md",
+          "layer": "design",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "04-Payment-Service/payment_service/unified_account.py",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "04-Payment-Service/tests/test_app.py",
+          "layer": "closure",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "04-Payment-Service/deploy/wavesight-payment-service.service",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "04-Payment-Service/tests/test_wechatpay.py",
+          "layer": "closure",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "04-Payment-Service/tests/test_database_startup.py",
+          "layer": "closure",
+          "kind": "source"
+        }
+      ],
+      "check": {
+        "command": "python -m pytest tests",
+        "cwd": "wavesight:04-Payment-Service",
+        "mode": "explicit-only"
+      },
+      "acceptance": "权限、支付回调、幂等、身份合并和数据库恢复验证；真实交易不能作为随意冒烟。",
+      "recovery": "先备份并核验一致性；按服务部署及迁移契约恢复，保留业务审计。",
+      "tracking": [],
+      "evidenceRequirement": "验收记录需包含检查时间、对应源码提交/文件哈希、执行结果、未验证项；发布另附 release 与线上回读。"
+    },
+    {
+      "id": "H-members",
+      "moduleId": "members",
+      "title": "会员积分与活动",
+      "lifecycle": "current",
+      "refs": [
+        {
+          "root": "members",
+          "path": "README.md",
+          "layer": "rules",
+          "kind": "source"
+        },
+        {
+          "root": "members",
+          "path": "docs/MEMBER_OPERATIONS.md",
+          "layer": "design",
+          "kind": "source"
+        },
+        {
+          "root": "members",
+          "path": "member_operations.py",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "members",
+          "path": "tests/test_member_operations.py",
+          "layer": "closure",
+          "kind": "source"
+        },
+        {
+          "root": "members",
+          "path": "docs/SEASON_REWARDS.md",
+          "layer": "design",
+          "kind": "source"
+        },
+        {
+          "root": "members",
+          "path": "docs/MINIPROGRAM_INTEGRATION.md",
+          "layer": "design",
+          "kind": "source"
+        },
+        {
+          "root": "members",
+          "path": "tests/test_season_rewards.py",
+          "layer": "closure",
+          "kind": "source"
+        },
+        {
+          "root": "members",
+          "path": "deploy/guanlan-founding-members.service",
+          "layer": "execution",
+          "kind": "source"
+        }
+      ],
+      "check": {
+        "command": "python -m pytest tests",
+        "cwd": "members:.",
+        "mode": "explicit-only"
+      },
+      "acceptance": "身份确认、权限、重复操作、积分与奖励规则及错误状态通过相应测试。",
+      "recovery": "使用经过验证的一致性备份；保留会员/运营审计，不以同名自动合并。",
+      "tracking": [],
+      "evidenceRequirement": "验收记录需包含检查时间、对应源码提交/文件哈希、执行结果、未验证项；发布另附 release 与线上回读。"
+    },
+    {
+      "id": "H-lake",
+      "moduleId": "lake",
+      "title": "数据湖与物化",
+      "lifecycle": "current",
+      "refs": [
+        {
+          "root": "wavesight",
+          "path": "data-lake/README.md",
+          "layer": "rules",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/tools/lib/data-lake-v4-contract.mjs",
+          "layer": "design",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/tools/sync-light-data-lake.mjs",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/tools/tests/data-lake-v4-convergence.test.mjs",
+          "layer": "closure",
+          "kind": "source"
+        }
+      ],
+      "check": {
+        "command": "node --test agent-workflow/tools/tests/data-lake-v4-convergence.test.mjs",
+        "cwd": "wavesight:.",
+        "mode": "explicit-only"
+      },
+      "acceptance": "JSONL 与 DuckDB 分别验证表契约、来源版本和可恢复性。",
+      "recovery": "从同一已验收事实提交重新物化，不能用旧投影替代正式事实。",
+      "tracking": [
+        "GOV-007"
+      ],
+      "evidenceRequirement": "验收记录需包含检查时间、对应源码提交/文件哈希、执行结果、未验证项；发布另附 release 与线上回读。"
+    },
+    {
+      "id": "H-evidence",
+      "moduleId": "evidence",
+      "title": "私有原文与备份",
+      "lifecycle": "current",
+      "refs": [
+        {
+          "root": "wavesight",
+          "path": "context/12-data-center-v4.md",
+          "layer": "rules",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/tools/assert-private-evidence-backup.mjs",
+          "layer": "design",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/tools/publish-private-evidence-backup.mjs",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/tools/tests/private-evidence-backup.test.mjs",
+          "layer": "closure",
+          "kind": "source"
+        }
+      ],
+      "check": {
+        "command": "node --test agent-workflow/tools/tests/private-evidence-backup.test.mjs",
+        "cwd": "wavesight:.",
+        "mode": "explicit-only"
+      },
+      "acceptance": "私有原文哈希、完整性、远端持久化和恢复验证；公共仓只含定位信息。",
+      "recovery": "按私有证据备份契约恢复；保留原文，索引不等于原文备份。",
+      "tracking": [],
+      "evidenceRequirement": "验收记录需包含检查时间、对应源码提交/文件哈希、执行结果、未验证项；发布另附 release 与线上回读。"
+    },
+    {
+      "id": "H-vault",
+      "moduleId": "vault",
+      "title": "知识库投影与工作区",
+      "lifecycle": "current",
+      "refs": [
+        {
+          "root": "wavesight",
+          "path": "context/local-sync.md",
+          "layer": "rules",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/tools/guanlan-vault-paths.mjs",
+          "layer": "design",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/tools/sync-guanlan-vault-from-main.mjs",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/tools/tests/guanlan-evidence-projection.test.mjs",
+          "layer": "closure",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/tools/assert-guanlan-vault.mjs",
+          "layer": "closure",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/tools/build-guanlan-vault.mjs",
+          "layer": "execution",
+          "kind": "source"
+        }
+      ],
+      "check": {
+        "command": "npm run assert:guanlan-vault",
+        "cwd": "wavesight:.",
+        "mode": "explicit-only"
+      },
+      "acceptance": "生成页来源与证据关系完整，人工工作区未被覆盖；文件存在不代表引用已补齐。",
+      "recovery": "从已验收 main 仅重建投影；人工资料保留并走个人备份恢复。",
+      "tracking": [
+        "GOV-002"
+      ],
+      "evidenceRequirement": "验收记录需包含检查时间、对应源码提交/文件哈希、执行结果、未验证项；发布另附 release 与线上回读。"
+    },
+    {
+      "id": "H-skills",
+      "moduleId": "skills",
+      "title": "Skill 与模型路由",
+      "lifecycle": "current",
+      "refs": [
+        {
+          "root": "wavesight",
+          "path": "context/10-experience-automation.md",
+          "layer": "rules",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/model-evals/model-routing-v1.md",
+          "layer": "design",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/tools/sync-repo-skills.mjs",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/tools/tests/model-routing-score.test.mjs",
+          "layer": "closure",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/skills/skill-registry.md",
+          "layer": "design",
+          "kind": "generated"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/tools/assert-skill-store-dashboard.mjs",
+          "layer": "closure",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/tools/validate-guanlan-skills.mjs",
+          "layer": "closure",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/skills/follow-builders/SKILL.md",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/skills/guanlan-ai-hardware-data-projection/SKILL.md",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/skills/guanlan-china-funding-monitor/SKILL.md",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/skills/guanlan-code-rule-auditor/SKILL.md",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/skills/guanlan-community-intelligence-monitor/SKILL.md",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/skills/guanlan-daily-monitor/SKILL.md",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/skills/guanlan-daily-monitor-qc/SKILL.md",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/skills/guanlan-data-center-supervisor/SKILL.md",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/skills/guanlan-data-integrity-gate/SKILL.md",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/skills/guanlan-event-normalizer/SKILL.md",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/skills/guanlan-fde-data-projection/SKILL.md",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/skills/guanlan-first-line-viewpoints-monitor/SKILL.md",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/skills/guanlan-funding-insight-generator/SKILL.md",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/skills/guanlan-monitor-quality-gate/SKILL.md",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/skills/guanlan-monthly-business-structure-report/SKILL.md",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/skills/guanlan-monthly-report-page-generator/SKILL.md",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/skills/guanlan-opportunity-radar-updater/SKILL.md",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/skills/guanlan-skill-editor/SKILL.md",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/skills/guanlan-source-ingestion/SKILL.md",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/skills/guanlan-taxonomy-governor/SKILL.md",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/skills/guanlan-trend-radar-updater/SKILL.md",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/skills/guanlan-typography-qc/SKILL.md",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/skills/guanlan-weekly-business-change-radar/SKILL.md",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/skills/guanlan-weekly-report-page-generator/SKILL.md",
+          "layer": "execution",
+          "kind": "source"
+        }
+      ],
+      "check": {
+        "command": "npm run audit:skills",
+        "cwd": "wavesight:.",
+        "mode": "explicit-only"
+      },
+      "acceptance": "源与运行镜像一致，触发评测清单完整；实际模型质量需另附真实运行证据。",
+      "recovery": "修改所属 Skill 源后同步运行镜像、重建看板；不手改生成快照。",
+      "tracking": [
+        "GOV-007"
+      ],
+      "evidenceRequirement": "验收记录需包含检查时间、对应源码提交/文件哈希、执行结果、未验证项；发布另附 release 与线上回读。"
+    },
+    {
+      "id": "H-automation",
+      "moduleId": "automation",
+      "title": "调度与失败恢复",
+      "lifecycle": "current",
+      "refs": [
+        {
+          "root": "wavesight",
+          "path": "context/08-automation.md",
+          "layer": "rules",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "docs/daily-production-recovery.md",
+          "layer": "design",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/tools/run-daily-automation-controller.mjs",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/tools/tests/four-task-morning-routing.test.mjs",
+          "layer": "closure",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "AGENTS.md",
+          "layer": "rules",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "context/version-ledger.md",
+          "layer": "rules",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/agents/agent-registry.json",
+          "layer": "design",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": ".codex/config.toml",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": ".codex/agents/quality-reviewer.toml",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": ".codex/agents/experience-reviewer.toml",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": ".codex/agents/evidence-explorer.toml",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": ".github/workflows/github-pages.yml",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/tools/assert-version-consistency.mjs",
+          "layer": "closure",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/tools/assert-windows-automation-tasks.ps1",
+          "layer": "closure",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/tools/assert-harness.mjs",
+          "layer": "closure",
+          "kind": "source"
+        }
+      ],
+      "check": {
+        "command": "node --test agent-workflow/tools/tests/four-task-morning-routing.test.mjs",
+        "cwd": "wavesight:.",
+        "mode": "explicit-only"
+      },
+      "acceptance": "四项本机任务路径与时间正确；按日期核对阶段、业务结果和发布回执。",
+      "recovery": "先读既有 incident 与已验收上游，人工从失败阶段继续。",
+      "tracking": [
+        "GOV-001"
+      ],
+      "evidenceRequirement": "验收记录需包含检查时间、对应源码提交/文件哈希、执行结果、未验证项；发布另附 release 与线上回读。"
+    },
+    {
+      "id": "H-first-line",
+      "moduleId": "automation",
+      "title": "一线观点与 Builder RSS",
+      "lifecycle": "current",
+      "refs": [
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/skills/guanlan-first-line-viewpoints-monitor/SKILL.md",
+          "layer": "rules",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "context/08-automation.md",
+          "layer": "design",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": ".github/workflows/daily-first-line-viewpoints-pr.yml",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/tools/tests/four-task-morning-routing.test.mjs",
+          "layer": "closure",
+          "kind": "source"
+        }
+      ],
+      "check": {
+        "command": "node --test agent-workflow/tools/tests/four-task-morning-routing.test.mjs",
+        "cwd": "wavesight:.",
+        "mode": "explicit-only"
+      },
+      "acceptance": "观点保持 O 证据边界，早间 RSS 与下午发布不重复；有各自验收产物。",
+      "recovery": "复用当日已接纳产物；检查活跃工作流后再决定补触发。",
+      "tracking": [
+        "GOV-001"
+      ],
+      "evidenceRequirement": "验收记录需包含检查时间、对应源码提交/文件哈希、执行结果、未验证项；发布另附 release 与线上回读。"
+    },
+    {
+      "id": "H-community",
+      "moduleId": "automation",
+      "title": "社群情报生产",
+      "lifecycle": "current",
+      "refs": [
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/skills/guanlan-community-intelligence-monitor/SKILL.md",
+          "layer": "rules",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "context/08-automation.md",
+          "layer": "design",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/tools/run-community-intelligence.ps1",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/tools/tests/community-evidence-gate.test.mjs",
+          "layer": "closure",
+          "kind": "source"
+        }
+      ],
+      "check": {
+        "command": "npm run test:community-intelligence",
+        "cwd": "wavesight:.",
+        "mode": "explicit-only"
+      },
+      "acceptance": "登录态采集、C 证据边界和发布门分别验收；失败与过期登录显式展示。",
+      "recovery": "保留已采集材料，登录异常先修复会话，从失败步骤继续。",
+      "tracking": [
+        "GOV-001"
+      ],
+      "evidenceRequirement": "验收记录需包含检查时间、对应源码提交/文件哈希、执行结果、未验证项；发布另附 release 与线上回读。"
+    },
+    {
+      "id": "H-aip",
+      "moduleId": "aip",
+      "title": "AIP 内容协作边界",
+      "lifecycle": "current",
+      "refs": [
+        {
+          "root": "aip",
+          "path": "AGENTS.md",
+          "layer": "rules",
+          "kind": "source"
+        },
+        {
+          "root": "aip",
+          "path": "00-内容OS/aip-paths.json",
+          "layer": "design",
+          "kind": "source"
+        },
+        {
+          "root": "aip",
+          "path": ".agents/skills",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "aip",
+          "path": "AGENTS.md",
+          "layer": "closure",
+          "kind": "source"
+        }
+      ],
+      "check": {
+        "command": "所属内容 Skill 的终审；不自动执行",
+        "cwd": "wavesight:.",
+        "mode": "manual-review"
+      },
+      "acceptance": "只引用已确认事实或个人原稿；按目标平台终审，外部协作不等于观澜认证 Skill。",
+      "recovery": "按 AIP 自身源和版本恢复；观澜只维护关联入口。",
+      "tracking": [],
+      "evidenceRequirement": "验收记录需包含检查时间、对应源码提交/文件哈希、执行结果、未验证项；发布另附 release 与线上回读。"
+    },
+    {
+      "id": "H-content",
+      "moduleId": "vault",
+      "title": "观澜内容与分享制作",
+      "lifecycle": "current",
+      "refs": [
+        {
+          "root": "skill-store",
+          "path": "guanlan-sharing-archive/SKILL.md",
+          "layer": "rules",
+          "kind": "source"
+        },
+        {
+          "root": "skill-store",
+          "path": "guanlan-community-monitor/references/points-contract.md",
+          "layer": "design",
+          "kind": "source"
+        },
+        {
+          "root": "skill-store",
+          "path": "guanlan-sharing-archive/SKILL.md",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "skill-store",
+          "path": "guanlan-sharing-archive/SKILL.md",
+          "layer": "closure",
+          "kind": "source"
+        }
+      ],
+      "check": {
+        "command": "按所属 Skill 的原文、引用、积分与发布验收；不自动执行",
+        "cwd": "wavesight:.",
+        "mode": "manual-review"
+      },
+      "acceptance": "原稿、编辑判断、图片/文章成稿、积分证据及发布状态分别留痕。",
+      "recovery": "从人工工作区原稿和私有归档恢复；生成图片不替代唯一原稿。",
+      "tracking": [],
+      "evidenceRequirement": "验收记录需包含检查时间、对应源码提交/文件哈希、执行结果、未验证项；发布另附 release 与线上回读。"
+    },
+    {
+      "id": "H-h5",
+      "moduleId": "h5",
+      "title": "H5 历史视觉基线",
+      "lifecycle": "historical",
+      "refs": [
+        {
+          "root": "wavesight",
+          "path": "02-Miniprogram/AGENTS.md",
+          "layer": "rules",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "03-H5/package.json",
+          "layer": "design",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "03-H5/package.json",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "02-Miniprogram/AGENTS.md",
+          "layer": "closure",
+          "kind": "source"
+        }
+      ],
+      "check": {
+        "command": "用途与调用者人工核验；不默认发布",
+        "cwd": "wavesight:.",
+        "mode": "manual-review"
+      },
+      "acceptance": "仅供当前规则允许的历史视觉参考；不得替代原生小程序契约。",
+      "recovery": "需要历史方案时按确切 Git 版本恢复到隔离工作树。",
+      "tracking": [],
+      "evidenceRequirement": "验收记录需包含检查时间、对应源码提交/文件哈希、执行结果、未验证项；发布另附 release 与线上回读。"
+    }
+  ]
+}

@@ -4,6 +4,7 @@
 
 | 文件 | 用途 |
 |---|---|
+| `../harness/README.md` | 跨模块约束、设计、执行与交付证据的关联入口 |
 | `window-dispatch-hub.md` | 调度窗口规则 |
 | `quality-gates.md` | 质量门统一说明 |
 | `../../context/06-execution-harness.md` | 高风险流程执行外壳：V4 来源采集、事实构建、应用投影、页面 / 文案 / Typography |
