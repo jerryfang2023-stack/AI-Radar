@@ -1,11 +1,11 @@
 {
   "meta": {
     "schema_version": "INVESTMENT-INSTITUTION-V1.0",
-    "generated_at": "2026-09-12T09:34:04.426Z",
+    "generated_at": "2026-09-13T00:33:34.329Z",
     "source_contract": "FUNDING-INSIGHT-V1.3",
-    "institution_count": 1844,
-    "evidence_backed_count": 1844,
-    "current_round_activity_count": 2136,
+    "institution_count": 1846,
+    "evidence_backed_count": 1846,
+    "current_round_activity_count": 2140,
     "individual_investor_count": 184,
     "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
   },
@@ -16682,6 +16682,306 @@
       ]
     },
     {
+      "id": "INV-d44c7e56fc72a8",
+      "name": "星连资本",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 5,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 4,
+      "market_regions": [
+        "CN",
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 4,
+      "china_market_company_count": 3,
+      "first_disclosed_at": "2026-02-05",
+      "latest_disclosed_at": "2026-09-10",
+      "role_counts": {
+        "co_lead": 2,
+        "lead": 1,
+        "participant": 2
+      },
+      "round_codes": [
+        "pre_series_a",
+        "seed",
+        "series_a_plus",
+        "series_b",
+        "strategic"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-a01847b090a53c6e",
+          "canonical_entity_id": "",
+          "name": "北京九章智电科技有限公司"
+        },
+        {
+          "entity_id": "EN-aef5bb4e898f303c",
+          "canonical_entity_id": "EN-aef5bb4e898f303c",
+          "name": "奇点逃逸"
+        },
+        {
+          "entity_id": "EN-0355fdd77dae437b",
+          "canonical_entity_id": "EN-0355fdd77dae437b",
+          "name": "趋境科技"
+        },
+        {
+          "entity_id": "EN-9b21c9bf3305c0d6",
+          "canonical_entity_id": "EN-9b21c9bf3305c0d6",
+          "name": "生数科技"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-0176062df004a3eb",
+          "funding_insight_id": "FI-5797999d683fac6b",
+          "event_ids": [
+            "EV-65d274d4277815dc"
+          ],
+          "company_entity_id": "EN-a01847b090a53c6e",
+          "company_canonical_entity_id": "",
+          "company_name": "北京九章智电科技有限公司",
+          "round": "战略融资",
+          "round_code": "strategic",
+          "round_original": "战略融资",
+          "amount_original": "数千万",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 20000000,
+            "max_value": 90000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "2000 万元–9000 万元"
+          },
+          "announced_at": "2026-09-10",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-75f2758fb9aa9e2d",
+              "source_url": "https://news.pedaily.cn/202609/568814.shtml",
+              "source_title": "九章智电完成首轮数千万战略融资，深耕AI+电力交易赛道",
+              "source_content_hash": "8d613e8630b21904",
+              "quote": "本轮由 中金资本旗下基金 领投， 星连资本、京成燕北 共同跟投。",
+              "quote_hash": "cf6a2ae7b72f7486fc9eec0f77f5eb7d3abf93e13129d33fd983728af2fd81dd"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-e7be87e5889b109b",
+          "funding_insight_id": "FI-72a762e01ac47812",
+          "event_ids": [
+            "EV-dc35d54f273196f0"
+          ],
+          "company_entity_id": "EN-aef5bb4e898f303c",
+          "company_canonical_entity_id": "EN-aef5bb4e898f303c",
+          "company_name": "奇点逃逸",
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "千万级",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 10000000,
+            "max_value": 100000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "1000 万元–1 亿元"
+          },
+          "announced_at": "2026-08-03",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-8f70de35939e4c3c",
+              "source_url": "https://36kr.com/p/3919025939246727?f=rss",
+              "source_title": "让Agent在协作中自进化，清华00后博士获千万元融资 | 36氪首发",
+              "source_content_hash": "ef1aa49772b166b7",
+              "quote": "由星连资本与水木创投联合领投",
+              "quote_hash": "ff1f4783d3bc8be27fc116fc21e2151f37466eb523e6f47974ecf93878c3cab5"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-15a94fb0dade5329",
+          "funding_insight_id": "FI-3734798e9a7f3c5c",
+          "event_ids": [
+            "EV-d94bcfdf64509513"
+          ],
+          "company_entity_id": "EN-0355fdd77dae437b",
+          "company_canonical_entity_id": "EN-0355fdd77dae437b",
+          "company_name": "趋境科技",
+          "round": "Pre-A轮",
+          "round_code": "pre_series_a",
+          "round_original": "Pre-A轮",
+          "amount_original": "数亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 200000000,
+            "max_value": 900000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "2 亿元–9 亿元"
+          },
+          "announced_at": "2026-05-20",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-0a40102abd985684",
+              "source_url": "https://news.pedaily.cn/202605/564126.shtml",
+              "source_title": "趋境科技完成数亿元Pre-A轮融资，加速建设高品质AI Token生产基础设施_投资界",
+              "source_content_hash": "0ed32dd4d2b1a439",
+              "quote": "本轮融资由 星连资本与华控科技联合领投，弘晖资本、天壕能源、尚势资本、天津仁爱弘盛、杭州福成 等机构跟投，老股东 高瓴创投（GL Ventures） 持续加注。",
+              "quote_hash": "7f3312a250a9bb0429e31afd20808ce3652b5d3b5cd8c9724ddf67ed16fad278"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-072ebd6c4760a3ca",
+          "funding_insight_id": "FI-7108544d47292865",
+          "event_ids": [
+            "EV-5575555340c04c5a"
+          ],
+          "company_entity_id": "EN-9b21c9bf3305c0d6",
+          "company_canonical_entity_id": "EN-9b21c9bf3305c0d6",
+          "company_name": "生数科技",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "20亿元人民币",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 2000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "20 亿元"
+          },
+          "announced_at": "2026-04-10",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-fd865802af815ab3",
+              "source_url": "https://news.pedaily.cn/202604/562614.shtml",
+              "source_title": "生数科技完成近20亿元B轮融资，阿里云领投",
+              "source_content_hash": "a281cc701a9028fb",
+              "quote": "星连资本、达泰资本、建发新兴投资、BV百度风投、卓源亚洲等原有股东持续追加投资",
+              "quote_hash": "f35899115b693a02a891df90bd23087e3313109be82ae0066df26adecfb5827b"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-a314fb07a28e3106",
+          "funding_insight_id": "FI-474a441598e62f93",
+          "event_ids": [
+            "EV-622ebdad1e1fad2d",
+            "EV-535c2f4fb851332d"
+          ],
+          "company_entity_id": "EN-9b21c9bf3305c0d6",
+          "company_canonical_entity_id": "EN-9b21c9bf3305c0d6",
+          "company_name": "生数科技",
+          "round": "A+轮",
+          "round_code": "series_a_plus",
+          "round_original": "A+轮",
+          "amount_original": "6亿元人民币",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 600000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "6 亿元"
+          },
+          "announced_at": "2026-02-05",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮领投",
+          "role_code": "lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-4177e5ca07c921a5",
+              "source_url": "https://news.pedaily.cn/202602/560802.shtml",
+              "source_title": "重构AI在数字和物理世界的生产力，生数科技完成超6亿元A+轮融资",
+              "source_content_hash": "22fd0b6b2709ea7b",
+              "quote": "本轮融资由 中关村科学城公司和星连资本 领投",
+              "quote_hash": "6d1cbcf2aa8a47a0b5abc4725a927f5a4880b7092a67ef2a1056257ceed9d578"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-75f2758fb9aa9e2d",
+          "source_url": "https://news.pedaily.cn/202609/568814.shtml",
+          "source_title": "九章智电完成首轮数千万战略融资，深耕AI+电力交易赛道",
+          "source_content_hash": "8d613e8630b21904",
+          "quote": "本轮由 中金资本旗下基金 领投， 星连资本、京成燕北 共同跟投。",
+          "quote_hash": "cf6a2ae7b72f7486fc9eec0f77f5eb7d3abf93e13129d33fd983728af2fd81dd"
+        },
+        {
+          "source_id": "FISRC-8f70de35939e4c3c",
+          "source_url": "https://36kr.com/p/3919025939246727?f=rss",
+          "source_title": "让Agent在协作中自进化，清华00后博士获千万元融资 | 36氪首发",
+          "source_content_hash": "ef1aa49772b166b7",
+          "quote": "由星连资本与水木创投联合领投",
+          "quote_hash": "ff1f4783d3bc8be27fc116fc21e2151f37466eb523e6f47974ecf93878c3cab5"
+        },
+        {
+          "source_id": "FISRC-0a40102abd985684",
+          "source_url": "https://news.pedaily.cn/202605/564126.shtml",
+          "source_title": "趋境科技完成数亿元Pre-A轮融资，加速建设高品质AI Token生产基础设施_投资界",
+          "source_content_hash": "0ed32dd4d2b1a439",
+          "quote": "本轮融资由 星连资本与华控科技联合领投，弘晖资本、天壕能源、尚势资本、天津仁爱弘盛、杭州福成 等机构跟投，老股东 高瓴创投（GL Ventures） 持续加注。",
+          "quote_hash": "7f3312a250a9bb0429e31afd20808ce3652b5d3b5cd8c9724ddf67ed16fad278"
+        },
+        {
+          "source_id": "FISRC-fd865802af815ab3",
+          "source_url": "https://news.pedaily.cn/202604/562614.shtml",
+          "source_title": "生数科技完成近20亿元B轮融资，阿里云领投",
+          "source_content_hash": "a281cc701a9028fb",
+          "quote": "星连资本、达泰资本、建发新兴投资、BV百度风投、卓源亚洲等原有股东持续追加投资",
+          "quote_hash": "f35899115b693a02a891df90bd23087e3313109be82ae0066df26adecfb5827b"
+        },
+        {
+          "source_id": "FISRC-4177e5ca07c921a5",
+          "source_url": "https://news.pedaily.cn/202602/560802.shtml",
+          "source_title": "重构AI在数字和物理世界的生产力，生数科技完成超6亿元A+轮融资",
+          "source_content_hash": "22fd0b6b2709ea7b",
+          "quote": "本轮融资由 中关村科学城公司和星连资本 领投",
+          "quote_hash": "6d1cbcf2aa8a47a0b5abc4725a927f5a4880b7092a67ef2a1056257ceed9d578"
+        }
+      ]
+    },
+    {
       "id": "INV-1ca8e15d91cea9",
       "name": "普华资本",
       "aliases": [],
@@ -26551,251 +26851,6 @@
       ]
     },
     {
-      "id": "INV-d44c7e56fc72a8",
-      "name": "星连资本",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "unverified_investor",
-      "investor_kind_label": "投资方（类型待核验）",
-      "classification_confidence": "unverified",
-      "collection_status": "evidence_backed",
-      "current_round_count": 4,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 3,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 4,
-      "china_market_company_count": 3,
-      "first_disclosed_at": "2026-02-05",
-      "latest_disclosed_at": "2026-08-03",
-      "role_counts": {
-        "co_lead": 2,
-        "lead": 1,
-        "participant": 1
-      },
-      "round_codes": [
-        "pre_series_a",
-        "seed",
-        "series_a_plus",
-        "series_b"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-aef5bb4e898f303c",
-          "canonical_entity_id": "EN-aef5bb4e898f303c",
-          "name": "奇点逃逸"
-        },
-        {
-          "entity_id": "EN-0355fdd77dae437b",
-          "canonical_entity_id": "EN-0355fdd77dae437b",
-          "name": "趋境科技"
-        },
-        {
-          "entity_id": "EN-9b21c9bf3305c0d6",
-          "canonical_entity_id": "EN-9b21c9bf3305c0d6",
-          "name": "生数科技"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-e7be87e5889b109b",
-          "funding_insight_id": "FI-72a762e01ac47812",
-          "event_ids": [
-            "EV-dc35d54f273196f0"
-          ],
-          "company_entity_id": "EN-aef5bb4e898f303c",
-          "company_canonical_entity_id": "EN-aef5bb4e898f303c",
-          "company_name": "奇点逃逸",
-          "round": "种子轮",
-          "round_code": "seed",
-          "round_original": "种子轮",
-          "amount_original": "千万级",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": null,
-            "min_value": 10000000,
-            "max_value": 100000000,
-            "unit": "base",
-            "status": "range",
-            "display_zh": "1000 万元–1 亿元"
-          },
-          "announced_at": "2026-08-03",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮联合领投",
-          "role_code": "co_lead",
-          "evidence": [
-            {
-              "source_id": "FISRC-8f70de35939e4c3c",
-              "source_url": "https://36kr.com/p/3919025939246727?f=rss",
-              "source_title": "让Agent在协作中自进化，清华00后博士获千万元融资 | 36氪首发",
-              "source_content_hash": "ef1aa49772b166b7",
-              "quote": "由星连资本与水木创投联合领投",
-              "quote_hash": "ff1f4783d3bc8be27fc116fc21e2151f37466eb523e6f47974ecf93878c3cab5"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-15a94fb0dade5329",
-          "funding_insight_id": "FI-3734798e9a7f3c5c",
-          "event_ids": [
-            "EV-d94bcfdf64509513"
-          ],
-          "company_entity_id": "EN-0355fdd77dae437b",
-          "company_canonical_entity_id": "EN-0355fdd77dae437b",
-          "company_name": "趋境科技",
-          "round": "Pre-A轮",
-          "round_code": "pre_series_a",
-          "round_original": "Pre-A轮",
-          "amount_original": "数亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": null,
-            "min_value": 200000000,
-            "max_value": 900000000,
-            "unit": "base",
-            "status": "range",
-            "display_zh": "2 亿元–9 亿元"
-          },
-          "announced_at": "2026-05-20",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮联合领投",
-          "role_code": "co_lead",
-          "evidence": [
-            {
-              "source_id": "FISRC-0a40102abd985684",
-              "source_url": "https://news.pedaily.cn/202605/564126.shtml",
-              "source_title": "趋境科技完成数亿元Pre-A轮融资，加速建设高品质AI Token生产基础设施_投资界",
-              "source_content_hash": "0ed32dd4d2b1a439",
-              "quote": "本轮融资由 星连资本与华控科技联合领投，弘晖资本、天壕能源、尚势资本、天津仁爱弘盛、杭州福成 等机构跟投，老股东 高瓴创投（GL Ventures） 持续加注。",
-              "quote_hash": "7f3312a250a9bb0429e31afd20808ce3652b5d3b5cd8c9724ddf67ed16fad278"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-072ebd6c4760a3ca",
-          "funding_insight_id": "FI-7108544d47292865",
-          "event_ids": [
-            "EV-5575555340c04c5a"
-          ],
-          "company_entity_id": "EN-9b21c9bf3305c0d6",
-          "company_canonical_entity_id": "EN-9b21c9bf3305c0d6",
-          "company_name": "生数科技",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "B轮",
-          "amount_original": "20亿元人民币",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 2000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "20 亿元"
-          },
-          "announced_at": "2026-04-10",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-fd865802af815ab3",
-              "source_url": "https://news.pedaily.cn/202604/562614.shtml",
-              "source_title": "生数科技完成近20亿元B轮融资，阿里云领投",
-              "source_content_hash": "a281cc701a9028fb",
-              "quote": "星连资本、达泰资本、建发新兴投资、BV百度风投、卓源亚洲等原有股东持续追加投资",
-              "quote_hash": "f35899115b693a02a891df90bd23087e3313109be82ae0066df26adecfb5827b"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-a314fb07a28e3106",
-          "funding_insight_id": "FI-474a441598e62f93",
-          "event_ids": [
-            "EV-622ebdad1e1fad2d",
-            "EV-535c2f4fb851332d"
-          ],
-          "company_entity_id": "EN-9b21c9bf3305c0d6",
-          "company_canonical_entity_id": "EN-9b21c9bf3305c0d6",
-          "company_name": "生数科技",
-          "round": "A+轮",
-          "round_code": "series_a_plus",
-          "round_original": "A+轮",
-          "amount_original": "6亿元人民币",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 600000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "6 亿元"
-          },
-          "announced_at": "2026-02-05",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮领投",
-          "role_code": "lead",
-          "evidence": [
-            {
-              "source_id": "FISRC-4177e5ca07c921a5",
-              "source_url": "https://news.pedaily.cn/202602/560802.shtml",
-              "source_title": "重构AI在数字和物理世界的生产力，生数科技完成超6亿元A+轮融资",
-              "source_content_hash": "22fd0b6b2709ea7b",
-              "quote": "本轮融资由 中关村科学城公司和星连资本 领投",
-              "quote_hash": "6d1cbcf2aa8a47a0b5abc4725a927f5a4880b7092a67ef2a1056257ceed9d578"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-8f70de35939e4c3c",
-          "source_url": "https://36kr.com/p/3919025939246727?f=rss",
-          "source_title": "让Agent在协作中自进化，清华00后博士获千万元融资 | 36氪首发",
-          "source_content_hash": "ef1aa49772b166b7",
-          "quote": "由星连资本与水木创投联合领投",
-          "quote_hash": "ff1f4783d3bc8be27fc116fc21e2151f37466eb523e6f47974ecf93878c3cab5"
-        },
-        {
-          "source_id": "FISRC-0a40102abd985684",
-          "source_url": "https://news.pedaily.cn/202605/564126.shtml",
-          "source_title": "趋境科技完成数亿元Pre-A轮融资，加速建设高品质AI Token生产基础设施_投资界",
-          "source_content_hash": "0ed32dd4d2b1a439",
-          "quote": "本轮融资由 星连资本与华控科技联合领投，弘晖资本、天壕能源、尚势资本、天津仁爱弘盛、杭州福成 等机构跟投，老股东 高瓴创投（GL Ventures） 持续加注。",
-          "quote_hash": "7f3312a250a9bb0429e31afd20808ce3652b5d3b5cd8c9724ddf67ed16fad278"
-        },
-        {
-          "source_id": "FISRC-fd865802af815ab3",
-          "source_url": "https://news.pedaily.cn/202604/562614.shtml",
-          "source_title": "生数科技完成近20亿元B轮融资，阿里云领投",
-          "source_content_hash": "a281cc701a9028fb",
-          "quote": "星连资本、达泰资本、建发新兴投资、BV百度风投、卓源亚洲等原有股东持续追加投资",
-          "quote_hash": "f35899115b693a02a891df90bd23087e3313109be82ae0066df26adecfb5827b"
-        },
-        {
-          "source_id": "FISRC-4177e5ca07c921a5",
-          "source_url": "https://news.pedaily.cn/202602/560802.shtml",
-          "source_title": "重构AI在数字和物理世界的生产力，生数科技完成超6亿元A+轮融资",
-          "source_content_hash": "22fd0b6b2709ea7b",
-          "quote": "本轮融资由 中关村科学城公司和星连资本 领投",
-          "quote_hash": "6d1cbcf2aa8a47a0b5abc4725a927f5a4880b7092a67ef2a1056257ceed9d578"
-        }
-      ]
-    },
-    {
       "id": "INV-05bec9b13864bf",
       "name": "Hetz Ventures",
       "aliases": [],
@@ -29853,6 +29908,202 @@
           "source_content_hash": "adc0cc9ffe3c9dd0",
           "quote": "co-led by Cathay Innovation, Greycroft, Hiro Capital, HV Capital, and Bezos Expeditions",
           "quote_hash": "6a9f71b006329253881732e65a1aab8292cb41280260354b36196bdebd59dc54"
+        }
+      ]
+    },
+    {
+      "id": "INV-ef88a7392cc02c",
+      "name": "中金资本旗下基金",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 3,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 3,
+      "market_regions": [
+        "CN",
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 2,
+      "china_market_company_count": 2,
+      "first_disclosed_at": "2026-02-14",
+      "latest_disclosed_at": "2026-09-10",
+      "role_counts": {
+        "lead": 1,
+        "participant": 2
+      },
+      "round_codes": [
+        "angel",
+        "series_b_plus",
+        "strategic"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-a01847b090a53c6e",
+          "canonical_entity_id": "",
+          "name": "北京九章智电科技有限公司"
+        },
+        {
+          "entity_id": "EN-4731aa5b66658c7f",
+          "canonical_entity_id": "EN-4731aa5b66658c7f",
+          "name": "无界动力"
+        },
+        {
+          "entity_id": "EN-a6e5382c05dd0d16",
+          "canonical_entity_id": "EN-a6e5382c05dd0d16",
+          "name": "星海图"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-bf01229a95ca4a90",
+          "funding_insight_id": "FI-5797999d683fac6b",
+          "event_ids": [
+            "EV-65d274d4277815dc"
+          ],
+          "company_entity_id": "EN-a01847b090a53c6e",
+          "company_canonical_entity_id": "",
+          "company_name": "北京九章智电科技有限公司",
+          "round": "战略融资",
+          "round_code": "strategic",
+          "round_original": "战略融资",
+          "amount_original": "数千万",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 20000000,
+            "max_value": 90000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "2000 万元–9000 万元"
+          },
+          "announced_at": "2026-09-10",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮领投",
+          "role_code": "lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-75f2758fb9aa9e2d",
+              "source_url": "https://news.pedaily.cn/202609/568814.shtml",
+              "source_title": "九章智电完成首轮数千万战略融资，深耕AI+电力交易赛道",
+              "source_content_hash": "8d613e8630b21904",
+              "quote": "本轮由 中金资本旗下基金 领投， 星连资本、京成燕北 共同跟投。",
+              "quote_hash": "cf6a2ae7b72f7486fc9eec0f77f5eb7d3abf93e13129d33fd983728af2fd81dd"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-0f32afda190c5347",
+          "funding_insight_id": "FI-66e7dd713fc6bab5",
+          "event_ids": [
+            "EV-0ff10475efa53e6c",
+            "EV-435d7e7878b0c326"
+          ],
+          "company_entity_id": "EN-a6e5382c05dd0d16",
+          "company_canonical_entity_id": "EN-a6e5382c05dd0d16",
+          "company_name": "星海图",
+          "round": "B+轮",
+          "round_code": "series_b_plus",
+          "round_original": "B+轮",
+          "amount_original": "20亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 2000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "20 亿元"
+          },
+          "announced_at": "2026-04-02",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-7a614400d44a7041",
+              "source_url": "https://news.pedaily.cn/202604/562366.shtml",
+              "source_title": "星海图又融资20亿，估值200亿",
+              "source_content_hash": "05d5afb79601a323",
+              "quote": "还有中金资本旗下基金、普华资本、洪泰基金、广发乾和等PE基金",
+              "quote_hash": "099a646a87fd528b3ab1d27c6205599c0515fdfb1ca0127615f5f0499b20d120"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-547dc91b1aed71e3",
+          "funding_insight_id": "FI-6763b86fb1d41259",
+          "event_ids": [
+            "EV-876baa523eb93c4f"
+          ],
+          "company_entity_id": "EN-4731aa5b66658c7f",
+          "company_canonical_entity_id": "EN-4731aa5b66658c7f",
+          "company_name": "无界动力",
+          "round": "天使轮",
+          "round_code": "angel",
+          "round_original": "天使轮",
+          "amount_original": "超2亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 200000000,
+            "min_value": 200000000,
+            "max_value": null,
+            "unit": "base",
+            "status": "lower_bound",
+            "display_zh": "超过 2 亿元"
+          },
+          "announced_at": "2026-02-14",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-daccbed46498e19c",
+              "source_url": "https://jnzstatic.cs.com.cn/zzb/htmlInfo/115989.html",
+              "source_title": "无界动力宣布完成超2亿元天使+轮融资",
+              "source_content_hash": "f71a5fef7a18be7527726ba9b5eb5bd4aa7c2be242317d45634cf5ad0538d012",
+              "quote": "老股东红杉中国、线性资本、高瓴创投、华业天成、中金资本旗下基金、BV百度风投持续追投，新增深创投、创新工场、普华资本、钧山资本、雅瑞资本等加入。",
+              "quote_hash": "6867781360a245cd66582a24953eac9acacbc9a62098ae37517f6597e7475aec"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-75f2758fb9aa9e2d",
+          "source_url": "https://news.pedaily.cn/202609/568814.shtml",
+          "source_title": "九章智电完成首轮数千万战略融资，深耕AI+电力交易赛道",
+          "source_content_hash": "8d613e8630b21904",
+          "quote": "本轮由 中金资本旗下基金 领投， 星连资本、京成燕北 共同跟投。",
+          "quote_hash": "cf6a2ae7b72f7486fc9eec0f77f5eb7d3abf93e13129d33fd983728af2fd81dd"
+        },
+        {
+          "source_id": "FISRC-7a614400d44a7041",
+          "source_url": "https://news.pedaily.cn/202604/562366.shtml",
+          "source_title": "星海图又融资20亿，估值200亿",
+          "source_content_hash": "05d5afb79601a323",
+          "quote": "还有中金资本旗下基金、普华资本、洪泰基金、广发乾和等PE基金",
+          "quote_hash": "099a646a87fd528b3ab1d27c6205599c0515fdfb1ca0127615f5f0499b20d120"
+        },
+        {
+          "source_id": "FISRC-daccbed46498e19c",
+          "source_url": "https://jnzstatic.cs.com.cn/zzb/htmlInfo/115989.html",
+          "source_title": "无界动力宣布完成超2亿元天使+轮融资",
+          "source_content_hash": "f71a5fef7a18be7527726ba9b5eb5bd4aa7c2be242317d45634cf5ad0538d012",
+          "quote": "老股东红杉中国、线性资本、高瓴创投、华业天成、中金资本旗下基金、BV百度风投持续追投，新增深创投、创新工场、普华资本、钧山资本、雅瑞资本等加入。",
+          "quote_hash": "6867781360a245cd66582a24953eac9acacbc9a62098ae37517f6597e7475aec"
         }
       ]
     },
@@ -76251,146 +76502,6 @@
       ]
     },
     {
-      "id": "INV-ef88a7392cc02c",
-      "name": "中金资本旗下基金",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 2,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 2,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 2,
-      "china_market_company_count": 2,
-      "first_disclosed_at": "2026-02-14",
-      "latest_disclosed_at": "2026-04-02",
-      "role_counts": {
-        "participant": 2
-      },
-      "round_codes": [
-        "angel",
-        "series_b_plus"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-4731aa5b66658c7f",
-          "canonical_entity_id": "EN-4731aa5b66658c7f",
-          "name": "无界动力"
-        },
-        {
-          "entity_id": "EN-a6e5382c05dd0d16",
-          "canonical_entity_id": "EN-a6e5382c05dd0d16",
-          "name": "星海图"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-0f32afda190c5347",
-          "funding_insight_id": "FI-66e7dd713fc6bab5",
-          "event_ids": [
-            "EV-0ff10475efa53e6c",
-            "EV-435d7e7878b0c326"
-          ],
-          "company_entity_id": "EN-a6e5382c05dd0d16",
-          "company_canonical_entity_id": "EN-a6e5382c05dd0d16",
-          "company_name": "星海图",
-          "round": "B+轮",
-          "round_code": "series_b_plus",
-          "round_original": "B+轮",
-          "amount_original": "20亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 2000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "20 亿元"
-          },
-          "announced_at": "2026-04-02",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-7a614400d44a7041",
-              "source_url": "https://news.pedaily.cn/202604/562366.shtml",
-              "source_title": "星海图又融资20亿，估值200亿",
-              "source_content_hash": "05d5afb79601a323",
-              "quote": "还有中金资本旗下基金、普华资本、洪泰基金、广发乾和等PE基金",
-              "quote_hash": "099a646a87fd528b3ab1d27c6205599c0515fdfb1ca0127615f5f0499b20d120"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-547dc91b1aed71e3",
-          "funding_insight_id": "FI-6763b86fb1d41259",
-          "event_ids": [
-            "EV-876baa523eb93c4f"
-          ],
-          "company_entity_id": "EN-4731aa5b66658c7f",
-          "company_canonical_entity_id": "EN-4731aa5b66658c7f",
-          "company_name": "无界动力",
-          "round": "天使轮",
-          "round_code": "angel",
-          "round_original": "天使轮",
-          "amount_original": "超2亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 200000000,
-            "min_value": 200000000,
-            "max_value": null,
-            "unit": "base",
-            "status": "lower_bound",
-            "display_zh": "超过 2 亿元"
-          },
-          "announced_at": "2026-02-14",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-daccbed46498e19c",
-              "source_url": "https://jnzstatic.cs.com.cn/zzb/htmlInfo/115989.html",
-              "source_title": "无界动力宣布完成超2亿元天使+轮融资",
-              "source_content_hash": "f71a5fef7a18be7527726ba9b5eb5bd4aa7c2be242317d45634cf5ad0538d012",
-              "quote": "老股东红杉中国、线性资本、高瓴创投、华业天成、中金资本旗下基金、BV百度风投持续追投，新增深创投、创新工场、普华资本、钧山资本、雅瑞资本等加入。",
-              "quote_hash": "6867781360a245cd66582a24953eac9acacbc9a62098ae37517f6597e7475aec"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-7a614400d44a7041",
-          "source_url": "https://news.pedaily.cn/202604/562366.shtml",
-          "source_title": "星海图又融资20亿，估值200亿",
-          "source_content_hash": "05d5afb79601a323",
-          "quote": "还有中金资本旗下基金、普华资本、洪泰基金、广发乾和等PE基金",
-          "quote_hash": "099a646a87fd528b3ab1d27c6205599c0515fdfb1ca0127615f5f0499b20d120"
-        },
-        {
-          "source_id": "FISRC-daccbed46498e19c",
-          "source_url": "https://jnzstatic.cs.com.cn/zzb/htmlInfo/115989.html",
-          "source_title": "无界动力宣布完成超2亿元天使+轮融资",
-          "source_content_hash": "f71a5fef7a18be7527726ba9b5eb5bd4aa7c2be242317d45634cf5ad0538d012",
-          "quote": "老股东红杉中国、线性资本、高瓴创投、华业天成、中金资本旗下基金、BV百度风投持续追投，新增深创投、创新工场、普华资本、钧山资本、雅瑞资本等加入。",
-          "quote_hash": "6867781360a245cd66582a24953eac9acacbc9a62098ae37517f6597e7475aec"
-        }
-      ]
-    },
-    {
       "id": "INV-bde7dbb822eb89",
       "name": "Dragoneer",
       "aliases": [],
@@ -78337,6 +78448,176 @@
           "source_content_hash": "b7e65ecd355afe39",
           "quote": "A2轮由 C资本（C Capital） 领投。",
           "quote_hash": "92af83f6aa18e53578d8da7cd27e2588e33c9b290dc7e5ff7043d87378c9859d"
+        }
+      ]
+    },
+    {
+      "id": "INV-65666cadc7dd99",
+      "name": "京成燕北",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "2026-09-10",
+      "latest_disclosed_at": "2026-09-10",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "strategic"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-a01847b090a53c6e",
+          "canonical_entity_id": "",
+          "name": "北京九章智电科技有限公司"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-33b4f0471317e70f",
+          "funding_insight_id": "FI-5797999d683fac6b",
+          "event_ids": [
+            "EV-65d274d4277815dc"
+          ],
+          "company_entity_id": "EN-a01847b090a53c6e",
+          "company_canonical_entity_id": "",
+          "company_name": "北京九章智电科技有限公司",
+          "round": "战略融资",
+          "round_code": "strategic",
+          "round_original": "战略融资",
+          "amount_original": "数千万",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 20000000,
+            "max_value": 90000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "2000 万元–9000 万元"
+          },
+          "announced_at": "2026-09-10",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-75f2758fb9aa9e2d",
+              "source_url": "https://news.pedaily.cn/202609/568814.shtml",
+              "source_title": "九章智电完成首轮数千万战略融资，深耕AI+电力交易赛道",
+              "source_content_hash": "8d613e8630b21904",
+              "quote": "本轮由 中金资本旗下基金 领投， 星连资本、京成燕北 共同跟投。",
+              "quote_hash": "cf6a2ae7b72f7486fc9eec0f77f5eb7d3abf93e13129d33fd983728af2fd81dd"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-75f2758fb9aa9e2d",
+          "source_url": "https://news.pedaily.cn/202609/568814.shtml",
+          "source_title": "九章智电完成首轮数千万战略融资，深耕AI+电力交易赛道",
+          "source_content_hash": "8d613e8630b21904",
+          "quote": "本轮由 中金资本旗下基金 领投， 星连资本、京成燕北 共同跟投。",
+          "quote_hash": "cf6a2ae7b72f7486fc9eec0f77f5eb7d3abf93e13129d33fd983728af2fd81dd"
+        }
+      ]
+    },
+    {
+      "id": "INV-97ea54b0435b72",
+      "name": "同鑫资本",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 1,
+      "china_market_company_count": 1,
+      "first_disclosed_at": "2026-09-10",
+      "latest_disclosed_at": "2026-09-10",
+      "role_counts": {
+        "lead": 1
+      },
+      "round_codes": [
+        "pre_series_b"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-b466ed43b4605e2b",
+          "canonical_entity_id": "",
+          "name": "大鱼智行"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-41960803d96a5d5b",
+          "funding_insight_id": "FI-8013fa3a930fc8df",
+          "event_ids": [
+            "EV-6e22ce671a8a4d82"
+          ],
+          "company_entity_id": "EN-b466ed43b4605e2b",
+          "company_canonical_entity_id": "",
+          "company_name": "大鱼智行",
+          "round": "Pre-B轮",
+          "round_code": "pre_series_b",
+          "round_original": "Pre-B轮",
+          "amount_original": "亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 100000000,
+            "max_value": 1000000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "1 亿元–10 亿元"
+          },
+          "announced_at": "2026-09-10",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮领投",
+          "role_code": "lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-5a1765ed854566bc",
+              "source_url": "https://news.pedaily.cn/202609/568805.shtml",
+              "source_title": "大鱼智行完成近亿元Pre-B轮融资，加速构建AI智能轻出行平台",
+              "source_content_hash": "d812ce3da84243e4",
+              "quote": "本轮融资由 同鑫资本 领投， 多家机构跟投 本轮",
+              "quote_hash": "cd88e04c41f716bb92934a38cb0cdd6a560d08e787b1b5e899678c09533e7a2b"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-5a1765ed854566bc",
+          "source_url": "https://news.pedaily.cn/202609/568805.shtml",
+          "source_title": "大鱼智行完成近亿元Pre-B轮融资，加速构建AI智能轻出行平台",
+          "source_content_hash": "d812ce3da84243e4",
+          "quote": "本轮融资由 同鑫资本 领投， 多家机构跟投 本轮",
+          "quote_hash": "cd88e04c41f716bb92934a38cb0cdd6a560d08e787b1b5e899678c09533e7a2b"
         }
       ]
     },

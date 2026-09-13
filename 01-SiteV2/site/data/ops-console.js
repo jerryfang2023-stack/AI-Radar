@@ -519,7 +519,7 @@ window.WaveSightOpsConsole = {
   },
   "meta": {
     "version": "OPS-V3.7.1-china-funding-history",
-    "generatedAt": "2026-09-12T13:34:32.701Z",
+    "generatedAt": "2026-09-13T00:34:38.229Z",
     "date": "2026-09-12",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
@@ -1716,7 +1716,7 @@ window.WaveSightOpsConsole = {
       }
     ],
     "sourceQuality": {
-      "updatedAt": "2026-09-12T13:34:32.677Z",
+      "updatedAt": "2026-09-13T00:34:38.221Z",
       "sampleNote": "按最新 V4 RawDocument 的 acquisition_channel 聚合；样本量为已落盘 Raw 文档数。",
       "metricNote": "诊断分由可用率、全文率、高质提取率、可读性和事实命中率组成，仅用于运营观察，不参与来源准入、排序或事实门禁。",
       "rows": [
@@ -1808,30 +1808,29 @@ window.WaveSightOpsConsole = {
     },
     "chinaFunding": {
       "schema_version": "CHINA-FUNDING-HEALTH-V1.0",
-      "date": "2026-09-12",
-      "generated_at": "2026-09-12T04:36:05.044Z",
+      "date": "2026-09-13",
+      "generated_at": "2026-09-13T00:34:38.119Z",
       "status": "partial",
-      "last_collection_at": "2026-09-12T03:41:42.764Z",
+      "last_collection_at": "2026-09-13T00:13:36.121Z",
       "failed_stage": null,
       "stages": [
         {
           "id": "capture",
           "status": "passed",
-          "started_at": "2026-09-12T04:34:29.960Z",
-          "reused": true,
-          "finished_at": "2026-09-12T04:34:36.542Z"
+          "started_at": "2026-09-13T00:31:04.121Z",
+          "finished_at": "2026-09-13T00:31:23.546Z"
         },
         {
           "id": "facts",
           "status": "passed",
-          "started_at": "2026-09-12T04:34:36.542Z",
-          "finished_at": "2026-09-12T04:35:15.565Z"
+          "started_at": "2026-09-13T00:31:23.546Z",
+          "finished_at": "2026-09-13T00:32:34.907Z"
         },
         {
           "id": "projections",
           "status": "passed",
-          "started_at": "2026-09-12T04:35:15.566Z",
-          "finished_at": "2026-09-12T04:36:04.967Z"
+          "started_at": "2026-09-13T00:32:34.908Z",
+          "finished_at": "2026-09-13T00:34:37.994Z"
         }
       ],
       "sources": [
@@ -1839,7 +1838,7 @@ window.WaveSightOpsConsole = {
           "source_id": "pedaily",
           "registry_id": "cn-pedaily",
           "name": "投资界",
-          "attempted_at": "2026-09-12T03:40:23.381Z",
+          "attempted_at": "2026-09-13T00:12:29.221Z",
           "query_count": 2,
           "successful_queries": 2,
           "list_pages_ok": 2,
@@ -1849,73 +1848,92 @@ window.WaveSightOpsConsole = {
             "https://m.pedaily.cn/",
             "https://www.pedaily.cn/vcpeevent/"
           ],
-          "discovered": 30,
-          "capped": 6,
+          "discovered": 25,
+          "capped": 1,
           "status": "collected",
-          "response_ms": 8012,
-          "completed_at": "2026-09-12T03:40:31.393Z",
-          "raw_count": 7,
-          "readable_count": 7,
-          "accepted_claims": 7,
+          "response_ms": 7397,
+          "completed_at": "2026-09-13T00:12:36.618Z",
+          "raw_count": 24,
+          "readable_count": 24,
+          "accepted_claims": 5,
           "verified_event_ids": [
+            "EV-65d274d4277815dc",
+            "EV-6e22ce671a8a4d82",
+            "EV-6e528ee3314dce6a",
             "EV-77d410f38eb44c18"
           ],
           "funding_event_ids": [
+            "EV-65d274d4277815dc",
+            "EV-6e22ce671a8a4d82",
+            "EV-6e528ee3314dce6a",
             "EV-77d410f38eb44c18"
           ],
-          "china_funding_event_ids": [],
-          "card_ids": [],
-          "latest_disclosure": "2026-09-11T11:17:00+08:00"
+          "china_funding_event_ids": [
+            "EV-6e22ce671a8a4d82",
+            "EV-6e528ee3314dce6a"
+          ],
+          "card_ids": [
+            "FI-8013fa3a930fc8df",
+            "FI-5797999d683fac6b",
+            "FI-489d15d001722d8d"
+          ],
+          "latest_disclosure": "2026-09-12T07:29:00.000Z"
         },
         {
           "source_id": "chinaventure",
           "registry_id": "cn-chinaventure",
           "name": "投中网",
-          "attempted_at": "2026-09-12T03:40:31.393Z",
+          "attempted_at": "2026-09-13T00:12:36.618Z",
           "query_count": 2,
           "successful_queries": 2,
           "list_pages_ok": 1,
-          "candidates": 10,
+          "candidates": 11,
           "failures": [],
           "entry_urls": [
             "https://www.chinaventure.com.cn/"
           ],
-          "discovered": 10,
+          "discovered": 11,
           "capped": 0,
           "status": "collected",
-          "response_ms": 16117,
-          "completed_at": "2026-09-12T03:40:47.510Z",
-          "raw_count": 3,
-          "readable_count": 3,
-          "accepted_claims": 0,
-          "verified_event_ids": [],
-          "funding_event_ids": [],
+          "response_ms": 7964,
+          "completed_at": "2026-09-13T00:12:44.582Z",
+          "raw_count": 11,
+          "readable_count": 11,
+          "accepted_claims": 3,
+          "verified_event_ids": [
+            "EV-bb577e3f486cca34",
+            "EV-c2718ea152dde192"
+          ],
+          "funding_event_ids": [
+            "EV-bb577e3f486cca34",
+            "EV-c2718ea152dde192"
+          ],
           "china_funding_event_ids": [],
           "card_ids": [],
-          "latest_disclosure": null
+          "latest_disclosure": "2026-09-12T01:59:00.000Z"
         },
         {
           "source_id": "36kr",
           "registry_id": "cn-36kr-rss",
           "name": "36氪",
-          "attempted_at": "2026-09-12T03:40:47.510Z",
+          "attempted_at": "2026-09-13T00:12:44.582Z",
           "query_count": 2,
           "successful_queries": 2,
           "list_pages_ok": 0,
-          "candidates": 4,
+          "candidates": 2,
           "failures": [
             "list https://pitchhub.36kr.com/: no readable funding article links"
           ],
           "entry_urls": [
             "https://pitchhub.36kr.com/"
           ],
-          "discovered": 4,
+          "discovered": 2,
           "capped": 0,
           "status": "partial",
-          "response_ms": 13631,
-          "completed_at": "2026-09-12T03:41:01.141Z",
-          "raw_count": 3,
-          "readable_count": 3,
+          "response_ms": 7734,
+          "completed_at": "2026-09-13T00:12:52.316Z",
+          "raw_count": 2,
+          "readable_count": 2,
           "accepted_claims": 0,
           "verified_event_ids": [],
           "funding_event_ids": [],
@@ -1927,67 +1945,66 @@ window.WaveSightOpsConsole = {
           "source_id": "cyzone",
           "registry_id": "cn-cyzone",
           "name": "创业邦",
-          "attempted_at": "2026-09-12T03:41:01.141Z",
+          "attempted_at": "2026-09-13T00:12:52.317Z",
           "query_count": 2,
           "successful_queries": 2,
           "list_pages_ok": 1,
-          "candidates": 20,
+          "candidates": 15,
           "failures": [],
           "entry_urls": [
             "https://www.cyzone.cn/"
           ],
-          "discovered": 20,
+          "discovered": 15,
           "capped": 0,
           "status": "collected",
-          "response_ms": 7374,
-          "completed_at": "2026-09-12T03:41:08.515Z",
-          "raw_count": 9,
-          "readable_count": 9,
-          "accepted_claims": 7,
-          "verified_event_ids": [
-            "EV-b91024c06d8762a4"
-          ],
-          "funding_event_ids": [
-            "EV-b91024c06d8762a4"
-          ],
+          "response_ms": 9208,
+          "completed_at": "2026-09-13T00:13:01.525Z",
+          "raw_count": 15,
+          "readable_count": 15,
+          "accepted_claims": 0,
+          "verified_event_ids": [],
+          "funding_event_ids": [],
           "china_funding_event_ids": [],
-          "card_ids": [],
+          "card_ids": [
+            "FI-2966dffba3eb470e",
+            "FI-5a53c657c45faf9b"
+          ],
           "latest_disclosure": "2026-09-11T00:00:00+08:00"
         },
         {
           "source_id": "cls",
           "registry_id": "cn-cls",
           "name": "财联社／科创板日报",
-          "attempted_at": "2026-09-12T03:41:08.515Z",
+          "attempted_at": "2026-09-13T00:13:01.525Z",
           "query_count": 2,
           "successful_queries": 2,
           "list_pages_ok": 0,
-          "candidates": 7,
+          "candidates": 10,
           "failures": [
             "list https://www.cls.cn/: no readable funding article links"
           ],
           "entry_urls": [
             "https://www.cls.cn/"
           ],
-          "discovered": 7,
+          "discovered": 10,
           "capped": 0,
           "status": "partial",
-          "response_ms": 17870,
-          "completed_at": "2026-09-12T03:41:26.385Z",
-          "raw_count": 4,
-          "readable_count": 4,
-          "accepted_claims": 0,
+          "response_ms": 8226,
+          "completed_at": "2026-09-13T00:13:09.751Z",
+          "raw_count": 10,
+          "readable_count": 10,
+          "accepted_claims": 1,
           "verified_event_ids": [],
           "funding_event_ids": [],
           "china_funding_event_ids": [],
           "card_ids": [],
-          "latest_disclosure": null
+          "latest_disclosure": "2026-09-09T15:14:00.000Z"
         },
         {
           "source_id": "qbitai",
           "registry_id": "cn-qbitai-rss",
           "name": "量子位",
-          "attempted_at": "2026-09-12T03:41:26.385Z",
+          "attempted_at": "2026-09-13T00:13:09.751Z",
           "query_count": 2,
           "successful_queries": 2,
           "list_pages_ok": 0,
@@ -2001,22 +2018,24 @@ window.WaveSightOpsConsole = {
           "discovered": 7,
           "capped": 0,
           "status": "partial",
-          "response_ms": 8910,
-          "completed_at": "2026-09-12T03:41:35.295Z",
-          "raw_count": 6,
-          "readable_count": 6,
+          "response_ms": 7740,
+          "completed_at": "2026-09-13T00:13:17.491Z",
+          "raw_count": 7,
+          "readable_count": 7,
           "accepted_claims": 0,
           "verified_event_ids": [],
           "funding_event_ids": [],
           "china_funding_event_ids": [],
-          "card_ids": [],
+          "card_ids": [
+            "FI-111c093076dbcf41"
+          ],
           "latest_disclosure": "2026-09-07T00:00:00+08:00"
         },
         {
           "source_id": "jiqizhixin",
           "registry_id": "cn-jiqizhixin",
           "name": "机器之心",
-          "attempted_at": "2026-09-12T03:41:35.295Z",
+          "attempted_at": "2026-09-13T00:13:17.491Z",
           "query_count": 2,
           "successful_queries": 2,
           "list_pages_ok": 0,
@@ -2030,8 +2049,8 @@ window.WaveSightOpsConsole = {
           "discovered": 0,
           "capped": 0,
           "status": "partial",
-          "response_ms": 7417,
-          "completed_at": "2026-09-12T03:41:42.712Z",
+          "response_ms": 18578,
+          "completed_at": "2026-09-13T00:13:36.069Z",
           "raw_count": 0,
           "readable_count": 0,
           "accepted_claims": 0,
@@ -2045,15 +2064,15 @@ window.WaveSightOpsConsole = {
       "totals": {
         "sources_attempted": 7,
         "sources_failed": 0,
-        "candidates": 72,
-        "readable_documents": 32,
-        "accepted_claims": 14,
-        "verified_events": 2,
-        "funding_events": 2,
-        "china_funding_events": 0,
-        "linked_organizations": 3,
+        "candidates": 69,
+        "readable_documents": 69,
+        "accepted_claims": 9,
+        "verified_events": 6,
+        "funding_events": 6,
+        "china_funding_events": 2,
+        "linked_organizations": 7,
         "linked_products": 0,
-        "published_card_matches": 0
+        "published_card_matches": 6
       },
       "publication": {
         "status": "awaiting_publication_receipt"

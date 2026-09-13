@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T10:24:27.269Z",
-    "latestDataDate": "2026-09-12",
-    "currentDate": "2026-09-12",
-    "eventCount": 3193,
+    "generatedAt": "2026-09-13T00:34:15.748Z",
+    "latestDataDate": "2026-09-13",
+    "currentDate": "2026-09-13",
+    "eventCount": 3197,
     "quarantinedEventCount": 33,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -67,13 +67,13 @@
       "TX-ai_market_category-industry_applications",
       "TX-target_user-consumer",
       "TX-target_user-business_user",
+      "TX-ai_market_subcategory-financial_services",
       "TX-use_case-data_analysis",
       "TX-product_form-end_user_application",
       "TX-use_case-knowledge_search",
       "TX-industry-financial_services",
       "TX-technology-agentic_execution",
-      "TX-use_case-research_discovery",
-      "TX-ai_market_subcategory-financial_services"
+      "TX-use_case-research_discovery"
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-05-28",
@@ -826,6 +826,7 @@
       "valueId": "industry_applications",
       "eventIds": [
         "EV-0cc745a319a25f6e",
+        "EV-65d274d4277815dc",
         "EV-43c9b851bd2a46c7",
         "EV-ac5e79d96a009ee1",
         "EV-862a2c0eabc234f0",
@@ -898,6 +899,7 @@
       ],
       "entityIds": [
         "EN-ecf226574e481ea7",
+        "EN-a01847b090a53c6e",
         "EN-4d916dc8b25421d2",
         "EN-4e781f6e9e5a49bc",
         "EN-75cc2d1e57d451bf",
@@ -966,7 +968,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2025-09-10",
-      "lastSeen": "2026-09-12"
+      "lastSeen": "2026-09-13"
     },
     {
       "id": "TX-target_user-consumer",
@@ -976,6 +978,7 @@
       "valueId": "consumer",
       "eventIds": [
         "EV-0cc745a319a25f6e",
+        "EV-6e22ce671a8a4d82",
         "EV-cbec329253108e80",
         "EV-2dff88f85e3bce86",
         "EV-29e6561ca7c005d0",
@@ -1049,6 +1052,7 @@
       ],
       "entityIds": [
         "EN-ecf226574e481ea7",
+        "EN-b466ed43b4605e2b",
         "EN-ee2dce6ecf9a1bab",
         "EN-770ef1d2b6e24172",
         "EN-11f245a21211face",
@@ -1117,7 +1121,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-09-12"
+      "lastSeen": "2026-09-13"
     },
     {
       "id": "TX-target_user-business_user",
@@ -1127,9 +1131,10 @@
       "valueId": "business_user",
       "eventIds": [
         "EV-b91024c06d8762a4",
+        "EV-65d274d4277815dc",
+        "EV-e0a31302688c81ec",
         "EV-43c9b851bd2a46c7",
         "EV-d0dd835f3abb3163",
-        "EV-e0a31302688c81ec",
         "EV-b9d8b3582f12bdc7",
         "EV-3bbd2ab8ebda9871",
         "EV-ac5e79d96a009ee1",
@@ -1473,9 +1478,10 @@
       ],
       "entityIds": [
         "EN-3b07d7518a8133fa",
+        "EN-a01847b090a53c6e",
+        "EN-a5e5f031b6f878cf",
         "EN-4d916dc8b25421d2",
         "EN-f56780cc13476293",
-        "EN-a5e5f031b6f878cf",
         "EN-9fe430e5274621be",
         "EN-eb9a5a696c7fe158",
         "EN-4e781f6e9e5a49bc",
@@ -1764,7 +1770,42 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-12"
+      "lastSeen": "2026-09-13"
+    },
+    {
+      "id": "TX-ai_market_subcategory-financial_services",
+      "name": "金融服务",
+      "nodeType": "ai_market_subcategory",
+      "typeLabel": "AI 市场子类",
+      "valueId": "financial_services",
+      "eventIds": [
+        "EV-65d274d4277815dc",
+        "EV-13e08bc37724e276",
+        "EV-bffc68e7bb4d598b",
+        "EV-34a077ec20c91cea",
+        "EV-e61effb7ada8508f",
+        "EV-917a390341b9fce6",
+        "EV-c0d19b8641a7a36c",
+        "EV-e4b3a19529576778",
+        "EV-f4b72708c66aa752",
+        "EV-986ac3a819d23388"
+      ],
+      "entityIds": [
+        "EN-a01847b090a53c6e",
+        "EN-77a82bb9aafc81d9",
+        "EN-7f67f2f8692510cf",
+        "EN-e5dcb6b25180d1d6",
+        "EN-612370f44fcdeae0",
+        "EN-e781481ff5ffe530",
+        "EN-a972bc1b3220493e",
+        "EN-eaa1c24270a0d057",
+        "EN-b6292f967fa84b03",
+        "EN-c189daf477a2d4ca"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2025-09-10",
+      "lastSeen": "2026-09-13"
     },
     {
       "id": "TX-use_case-data_analysis",
@@ -1773,6 +1814,7 @@
       "typeLabel": "应用场景",
       "valueId": "data_analysis",
       "eventIds": [
+        "EV-65d274d4277815dc",
         "EV-03bc82f6d6c169d7",
         "EV-ac5e79d96a009ee1",
         "EV-5ea74d357e73366b",
@@ -1848,6 +1890,7 @@
         "EV-e81f3b979f169cfa"
       ],
       "entityIds": [
+        "EN-a01847b090a53c6e",
         "EN-48b85dc3fd54f74d",
         "EN-4e781f6e9e5a49bc",
         "EN-c04bd5ebd10ab696",
@@ -1917,7 +1960,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-12"
+      "lastSeen": "2026-09-13"
     },
     {
       "id": "TX-product_form-end_user_application",
@@ -3504,39 +3547,6 @@
         "HW-7889eb510b9d4210"
       ],
       "firstSeen": "2026-03-10",
-      "lastSeen": "2026-09-12"
-    },
-    {
-      "id": "TX-ai_market_subcategory-financial_services",
-      "name": "金融服务",
-      "nodeType": "ai_market_subcategory",
-      "typeLabel": "AI 市场子类",
-      "valueId": "financial_services",
-      "eventIds": [
-        "EV-13e08bc37724e276",
-        "EV-bffc68e7bb4d598b",
-        "EV-34a077ec20c91cea",
-        "EV-e61effb7ada8508f",
-        "EV-917a390341b9fce6",
-        "EV-c0d19b8641a7a36c",
-        "EV-e4b3a19529576778",
-        "EV-f4b72708c66aa752",
-        "EV-986ac3a819d23388"
-      ],
-      "entityIds": [
-        "EN-77a82bb9aafc81d9",
-        "EN-7f67f2f8692510cf",
-        "EN-e5dcb6b25180d1d6",
-        "EN-612370f44fcdeae0",
-        "EN-e781481ff5ffe530",
-        "EN-a972bc1b3220493e",
-        "EN-eaa1c24270a0d057",
-        "EN-b6292f967fa84b03",
-        "EN-c189daf477a2d4ca"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2025-09-10",
       "lastSeen": "2026-09-12"
     }
   ],

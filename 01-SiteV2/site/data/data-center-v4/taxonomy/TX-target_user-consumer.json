@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-12T10:24:27.269Z",
-    "latestDataDate": "2026-09-12",
-    "currentDate": "2026-09-12",
-    "eventCount": 3193,
+    "generatedAt": "2026-09-13T00:34:15.748Z",
+    "latestDataDate": "2026-09-13",
+    "currentDate": "2026-09-13",
+    "eventCount": 3197,
     "quarantinedEventCount": 33,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -54,6 +54,7 @@
     "valueId": "consumer",
     "eventIds": [
       "EV-0cc745a319a25f6e",
+      "EV-6e22ce671a8a4d82",
       "EV-cbec329253108e80",
       "EV-2dff88f85e3bce86",
       "EV-29e6561ca7c005d0",
@@ -127,6 +128,7 @@
     ],
     "entityIds": [
       "EN-ecf226574e481ea7",
+      "EN-b466ed43b4605e2b",
       "EN-ee2dce6ecf9a1bab",
       "EN-770ef1d2b6e24172",
       "EN-11f245a21211face",
@@ -195,7 +197,7 @@
     ],
     "hardwareIds": [],
     "firstSeen": "2025-10-09",
-    "lastSeen": "2026-09-12"
+    "lastSeen": "2026-09-13"
   },
   "events": [
     {
@@ -483,6 +485,250 @@
       "products": [],
       "sourceUrl": "https://cyzone.cn/article/846160.html",
       "publisher": "创业邦"
+    },
+    {
+      "id": "EV-6e22ce671a8a4d82",
+      "dataDate": "2026-09-13",
+      "date": "2026-09-10",
+      "updatedDate": "2026-09-13",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "大鱼智行完成近亿元Pre-B轮融资，加速构建AI智能轻出行平台",
+      "originalTitle": "",
+      "subject": "大鱼智行",
+      "action": "完成近亿元Pre-B轮融资",
+      "object": "，加速构建AI智能轻出行平台",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
+        "source_registry_ids": [
+          "cn-pedaily"
+        ],
+        "claim_refs": [
+          "CL-eaa41f77e164a365"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "physical_ai",
+            "name": "Physical AI",
+            "entityIds": [
+              "EN-b466ed43b4605e2b"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a50e48bb1c6f7d53",
+            "fundingInsightId": "FI-0ac8e90389dd1de3"
+          }
+        ],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "robotic_system",
+            "name": "机器人系统",
+            "entityIds": [
+              "EN-b466ed43b4605e2b"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-02244f8c79e20de8",
+            "fundingInsightId": "FI-0ac8e90389dd1de3"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-b466ed43b4605e2b"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f3a9e1ae6d73ac00",
+            "fundingInsightId": "FI-0ac8e90389dd1de3"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "automotive_transportation",
+            "name": "汽车与交通",
+            "entityIds": [
+              "EN-b466ed43b4605e2b"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-e4a924d43374c9b7",
+            "fundingInsightId": "FI-0ac8e90389dd1de3"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "consumer",
+            "name": "个人用户",
+            "entityIds": [
+              "EN-b466ed43b4605e2b"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-3db568e6db65c821",
+            "fundingInsightId": "FI-0ac8e90389dd1de3"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "physical_ai",
+          "name": "Physical AI",
+          "entityIds": [
+            "EN-b466ed43b4605e2b"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-a50e48bb1c6f7d53",
+          "fundingInsightId": "FI-0ac8e90389dd1de3"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "automotive_transportation",
+          "name": "汽车与交通",
+          "entityIds": [
+            "EN-b466ed43b4605e2b"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-e4a924d43374c9b7",
+          "fundingInsightId": "FI-0ac8e90389dd1de3"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "robotic_system",
+          "name": "机器人系统",
+          "entityIds": [
+            "EN-b466ed43b4605e2b"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-02244f8c79e20de8",
+          "fundingInsightId": "FI-0ac8e90389dd1de3"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "consumer",
+          "name": "个人用户",
+          "entityIds": [
+            "EN-b466ed43b4605e2b"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-3db568e6db65c821",
+          "fundingInsightId": "FI-0ac8e90389dd1de3"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-b466ed43b4605e2b"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f3a9e1ae6d73ac00",
+          "fundingInsightId": "FI-0ac8e90389dd1de3"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "physical_ai",
+          "name": "Physical AI",
+          "entityIds": [
+            "EN-b466ed43b4605e2b"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-a50e48bb1c6f7d53",
+          "fundingInsightId": "FI-0ac8e90389dd1de3"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "robotic_system",
+          "name": "机器人系统",
+          "entityIds": [
+            "EN-b466ed43b4605e2b"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-02244f8c79e20de8",
+          "fundingInsightId": "FI-0ac8e90389dd1de3"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-b466ed43b4605e2b"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f3a9e1ae6d73ac00",
+          "fundingInsightId": "FI-0ac8e90389dd1de3"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "automotive_transportation",
+          "name": "汽车与交通",
+          "entityIds": [
+            "EN-b466ed43b4605e2b"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-e4a924d43374c9b7",
+          "fundingInsightId": "FI-0ac8e90389dd1de3"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "consumer",
+          "name": "个人用户",
+          "entityIds": [
+            "EN-b466ed43b4605e2b"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-3db568e6db65c821",
+          "fundingInsightId": "FI-0ac8e90389dd1de3"
+        }
+      ],
+      "entityIds": [
+        "EN-b466ed43b4605e2b"
+      ],
+      "entityNames": [
+        "大鱼智行"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.pedaily.cn/202609/568805.shtml",
+      "publisher": "投资界"
     },
     {
       "id": "EV-cbec329253108e80",
@@ -19936,6 +20182,31 @@
       "lastSeen": "2026-09-12"
     },
     {
+      "id": "EN-b466ed43b4605e2b",
+      "name": "大鱼智行",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6e22ce671a8a4d82"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-ai_market_category-physical_ai",
+        "TX-product_form-robotic_system",
+        "TX-use_case-physical_automation",
+        "TX-target_user-consumer",
+        "TX-industry-automotive_transportation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-10",
+      "lastSeen": "2026-09-13"
+    },
+    {
       "id": "EN-ee2dce6ecf9a1bab",
       "name": "深朴智能",
       "entityType": "organization_candidate",
@@ -19954,11 +20225,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
         "TX-target_user-consumer",
-        "TX-technology-embodied_ai",
         "TX-target_user-business_user",
         "TX-industry-food_hospitality"
       ],
@@ -20092,11 +20363,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
         "TX-target_user-consumer",
-        "TX-technology-embodied_ai",
         "TX-target_user-business_user"
       ],
       "relatedEntityIds": [],
@@ -20123,8 +20394,8 @@
         "TX-product_form-model",
         "TX-target_user-consumer",
         "TX-target_user-business_user",
-        "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
         "TX-industry-media_entertainment",
         "TX-use_case-content_creation",
@@ -20239,8 +20510,8 @@
         "TX-product_form-model",
         "TX-target_user-consumer",
         "TX-target_user-business_user",
-        "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
         "TX-industry-media_entertainment",
         "TX-use_case-content_creation"
@@ -20274,8 +20545,8 @@
         "TX-target_user-consumer",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-target_user-business_user",
-        "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
         "TX-industry-media_entertainment",
         "TX-use_case-content_creation",
@@ -20342,8 +20613,8 @@
         "TX-use_case-productivity_enterprise_workflows",
         "TX-use_case-software_development",
         "TX-target_user-business_user",
-        "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
         "TX-use_case-content_creation",
         "TX-use_case-knowledge_search",
@@ -20651,8 +20922,8 @@
         "TX-use_case-productivity_enterprise_workflows",
         "TX-use_case-software_development",
         "TX-target_user-business_user",
-        "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
         "TX-use_case-content_creation",
         "TX-ai_market_subcategory-data",
@@ -20681,11 +20952,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
         "TX-target_user-consumer",
-        "TX-technology-embodied_ai",
         "TX-industry-logistics_supply_chain",
         "TX-industry-manufacturing",
         "TX-target_user-business_user",
@@ -20737,12 +21008,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
         "TX-industry-healthcare_life_sciences",
         "TX-target_user-consumer",
-        "TX-technology-embodied_ai",
         "TX-target_user-business_user"
       ],
       "relatedEntityIds": [],
@@ -20766,11 +21037,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
-        "TX-target_user-consumer",
-        "TX-technology-embodied_ai"
+        "TX-target_user-consumer"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-02",
@@ -20795,8 +21066,8 @@
         "TX-target_user-consumer",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-target_user-business_user",
-        "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
         "TX-industry-media_entertainment",
         "TX-use_case-content_creation",
@@ -21324,13 +21595,13 @@
         "TX-use_case-productivity_enterprise_workflows",
         "TX-use_case-software_development",
         "TX-target_user-business_user",
+        "TX-product_form-enterprise_software_platform",
+        "TX-use_case-data_analysis",
+        "TX-product_form-chip_accelerator",
         "TX-industry-media_entertainment",
         "TX-use_case-content_creation",
-        "TX-product_form-chip_accelerator",
         "TX-use_case-security_operations",
         "TX-industry-aerospace_defense",
-        "TX-use_case-data_analysis",
-        "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
         "TX-product_form-end_user_application",
         "TX-industry-financial_services",
@@ -21402,12 +21673,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system",
         "TX-target_user-developer",
         "TX-use_case-physical_automation",
         "TX-target_user-consumer",
-        "TX-technology-embodied_ai",
         "TX-use_case-education_learning"
       ],
       "relatedEntityIds": [],
@@ -21500,8 +21771,8 @@
         "TX-product_form-ai_device",
         "TX-target_user-consumer",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
@@ -21683,13 +21954,13 @@
         "TX-ai_market_category-industry_applications",
         "TX-target_user-consumer",
         "TX-target_user-business_user",
+        "TX-ai_market_subcategory-financial_services",
         "TX-use_case-data_analysis",
         "TX-product_form-end_user_application",
         "TX-use_case-knowledge_search",
         "TX-industry-financial_services",
         "TX-technology-agentic_execution",
-        "TX-use_case-research_discovery",
-        "TX-ai_market_subcategory-financial_services"
+        "TX-use_case-research_discovery"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-28",
@@ -21719,8 +21990,8 @@
         "TX-target_user-consumer",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-target_user-business_user",
-        "TX-use_case-data_analysis",
         "TX-product_form-enterprise_software_platform",
+        "TX-use_case-data_analysis",
         "TX-use_case-knowledge_search",
         "TX-use_case-research_discovery"
       ],
@@ -21783,8 +22054,8 @@
         "TX-product_form-model",
         "TX-target_user-consumer",
         "TX-target_user-business_user",
-        "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
         "TX-industry-media_entertainment",
         "TX-use_case-content_creation",
@@ -21822,8 +22093,8 @@
         "TX-target_user-consumer",
         "TX-use_case-software_development",
         "TX-target_user-business_user",
-        "TX-ai_market_application-models",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
         "TX-industry-media_entertainment",
         "TX-use_case-content_creation",
@@ -21977,11 +22248,11 @@
         "TX-product_form-model",
         "TX-target_user-consumer",
         "TX-industry-manufacturing",
-        "TX-ai_market_application-models",
-        "TX-ai_market_category-infrastructure_compute",
-        "TX-ai_market_subcategory-development_deployment",
         "TX-industry-automotive_transportation",
+        "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-chip_accelerator",
+        "TX-ai_market_application-models",
+        "TX-ai_market_subcategory-development_deployment",
         "TX-use_case-research_discovery"
       ],
       "relatedEntityIds": [
@@ -22208,8 +22479,8 @@
         "TX-target_user-consumer",
         "TX-industry-manufacturing",
         "TX-target_user-business_user",
-        "TX-use_case-security_operations",
         "TX-use_case-data_analysis",
+        "TX-use_case-security_operations",
         "TX-technology-agentic_execution",
         "TX-technology-image_generation",
         "TX-technology-mixture_of_experts",
@@ -22767,6 +23038,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-embodied_ai",
         "TX-target_user-developer",
         "TX-target_user-educator",
         "TX-target_user-researcher",
@@ -22774,18 +23046,17 @@
         "TX-industry-healthcare_life_sciences",
         "TX-target_user-consumer",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-technology-embodied_ai",
         "TX-use_case-software_development",
         "TX-target_user-business_user",
-        "TX-ai_market_application-models",
+        "TX-product_form-enterprise_software_platform",
+        "TX-use_case-data_analysis",
         "TX-ai_market_category-infrastructure_compute",
+        "TX-product_form-chip_accelerator",
+        "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
         "TX-industry-media_entertainment",
-        "TX-product_form-chip_accelerator",
         "TX-use_case-security_operations",
         "TX-industry-aerospace_defense",
-        "TX-use_case-data_analysis",
-        "TX-product_form-enterprise_software_platform",
         "TX-industry-financial_services",
         "TX-industry-government_public_sector",
         "TX-industry-professional_services",
