@@ -152,6 +152,10 @@ the dispatch-time event SHA can already be stale when a queued job starts.
 Checkpoint restoration unions same-date accepted main intake with the restored
 input and recovers already-published cards from HEAD. Restoring an older overseas
 checkpoint must not erase a completed domestic lane or trigger duplicate research.
+Merged intake retains `collection_batches` with exact Raw IDs and eligible IDs.
+The pre-commit gate reconciles all batch identities before comparing the original
+lane log; never rewrite a 228-document collection log to claim it collected a
+297-document composite. Missing or inconsistent batch coverage remains blocking.
 First-Line Viewpoints also translates newly projected person descriptions, rebuilds
 the adapter and gates public Chinese fields before staging the translation registry.
 

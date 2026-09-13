@@ -1,10 +1,10 @@
 window.WaveSightPipelineDashboard = {
   "meta": {
-    "version": "OPS-V3.6.3-astra-session-isolation",
-    "generatedAt": "2026-09-12T01:39:08.812Z",
+    "version": "OPS-V3.7.1-china-funding-history",
+    "generatedAt": "2026-09-13T01:57:09.066Z",
     "dateRange": {
-      "start": "2026-09-06",
-      "end": "2026-09-12"
+      "start": "2026-09-07",
+      "end": "2026-09-13"
     },
     "source": "Data Center V4 manifest + collection-telemetry-v1",
     "telemetryVersion": "COLLECTION-TELEMETRY-V1.0"
@@ -16,15 +16,15 @@ window.WaveSightPipelineDashboard = {
       "status": "partial",
       "counts": {
         "discovered": 290,
-        "capture_succeeded": 237,
-        "capture_failed": 5,
-        "recovered_source_failures": 7,
-        "raw_documents": 237
+        "capture_succeeded": 297,
+        "capture_failed": 8,
+        "recovered_source_failures": 8,
+        "raw_documents": 297
       },
       "evidence": [
-        "01-SiteV2/content/11-databases/data-center-v4/2026-09-12/manifest.json",
-        "agent-workflow/reports/2026-09-12-guanlan-daily-monitor-log.md",
-        "agent-workflow/reports/2026-09-12-guanlan-monitor-quality-gate.md"
+        "01-SiteV2/content/11-databases/data-center-v4/2026-09-13/manifest.json",
+        "agent-workflow/reports/2026-09-13-guanlan-daily-monitor-log.md",
+        "agent-workflow/reports/2026-09-13-guanlan-monitor-quality-gate.md"
       ]
     },
     {
@@ -32,20 +32,20 @@ window.WaveSightPipelineDashboard = {
       "label": "事实构建",
       "status": "passed",
       "counts": {
-        "accepted_claims": 74,
+        "accepted_claims": 67,
         "rejected_claims": 0,
-        "accepted": 74,
+        "accepted": 67,
         "rejected": 0,
-        "pending_claims": 3,
-        "canonical_events": 35,
-        "entities": 58,
-        "relationships": 77,
-        "conflicts": 0,
-        "qa_queue": 203
+        "pending_claims": 6,
+        "canonical_events": 32,
+        "entities": 56,
+        "relationships": 73,
+        "conflicts": 1,
+        "qa_queue": 263
       },
       "evidence": [
-        "01-SiteV2/content/11-databases/data-center-v4/2026-09-12/manifest.json",
-        "agent-workflow/reports/2026-09-12-data-center-v4-integrity-gate.json"
+        "01-SiteV2/content/11-databases/data-center-v4/2026-09-13/manifest.json",
+        "agent-workflow/reports/2026-09-13-data-center-v4-integrity-gate.json"
       ]
     },
     {
@@ -59,7 +59,7 @@ window.WaveSightPipelineDashboard = {
         "fde_hardware_sync": "passed"
       },
       "evidence": [
-        "agent-workflow/reports/2026-09-12-persistent-asset-manifest.json"
+        "agent-workflow/reports/2026-09-13-persistent-asset-manifest.json"
       ]
     },
     {
@@ -72,43 +72,43 @@ window.WaveSightPipelineDashboard = {
         "authoritative": false
       },
       "evidence": [
-        "agent-workflow/reports/2026-09-12-persistent-asset-manifest.json"
+        "agent-workflow/reports/2026-09-13-persistent-asset-manifest.json"
       ]
     }
   ],
   "latest": {
-    "date": "2026-09-12",
-    "label": "2026.09.12",
-    "shortLabel": "09.12",
-    "discovered": 237,
-    "captured": 237,
-    "claims": 77,
-    "events": 35,
-    "entities": 58,
-    "relationships": 77,
-    "conflicts": 0,
-    "qaQueue": 203,
-    "telemetryDate": "2026-09-12",
+    "date": "2026-09-13",
+    "label": "2026.09.13",
+    "shortLabel": "09.13",
+    "discovered": 297,
+    "captured": 297,
+    "claims": 73,
+    "events": 32,
+    "entities": 56,
+    "relationships": 73,
+    "conflicts": 1,
+    "qaQueue": 263,
+    "telemetryDate": "2026-09-13",
     "collection": {
       "discovered": 290,
-      "capture_succeeded": 237,
-      "capture_failed": 5,
-      "recovered_source_failures": 7,
-      "raw_documents": 237
+      "capture_succeeded": 297,
+      "capture_failed": 8,
+      "recovered_source_failures": 8,
+      "raw_documents": 297
     },
     "factBuild": {
-      "accepted_claims": 74,
+      "accepted_claims": 67,
       "rejected_claims": 0,
-      "accepted": 74,
+      "accepted": 67,
       "rejected": 0,
-      "pending_claims": 3,
-      "canonical_events": 35,
-      "entities": 58,
-      "relationships": 77,
-      "conflicts": 0,
-      "qa_queue": 203,
+      "pending_claims": 6,
+      "canonical_events": 32,
+      "entities": 56,
+      "relationships": 73,
+      "conflicts": 1,
+      "qa_queue": 263,
       "qa_by_status": {
-        "review_optional": 193,
+        "review_optional": 253,
         "open": 10
       }
     },
@@ -127,17 +127,30 @@ window.WaveSightPipelineDashboard = {
   },
   "days": [
     {
+      "date": "2026-09-13",
+      "label": "2026.09.13",
+      "shortLabel": "09.13",
+      "discovered": 297,
+      "captured": 297,
+      "claims": 73,
+      "events": 32,
+      "entities": 56,
+      "relationships": 73,
+      "conflicts": 1,
+      "qaQueue": 263
+    },
+    {
       "date": "2026-09-12",
       "label": "2026.09.12",
       "shortLabel": "09.12",
-      "discovered": 237,
-      "captured": 237,
-      "claims": 77,
-      "events": 35,
-      "entities": 58,
-      "relationships": 77,
-      "conflicts": 0,
-      "qaQueue": 203
+      "discovered": 1677,
+      "captured": 1677,
+      "claims": 581,
+      "events": 393,
+      "entities": 475,
+      "relationships": 581,
+      "conflicts": 7,
+      "qaQueue": 1206
     },
     {
       "date": "2026-09-11",
@@ -203,35 +216,22 @@ window.WaveSightPipelineDashboard = {
       "relationships": 109,
       "conflicts": 0,
       "qaQueue": 205
-    },
-    {
-      "date": "2026-09-06",
-      "label": "2026.09.06",
-      "shortLabel": "09.06",
-      "discovered": 248,
-      "captured": 248,
-      "claims": 108,
-      "events": 37,
-      "entities": 65,
-      "relationships": 108,
-      "conflicts": 0,
-      "qaQueue": 211
     }
   ],
   "totals": {
-    "discovered": 1672,
-    "captured": 1672,
-    "claims": 719,
-    "events": 273,
-    "entities": 454,
-    "relationships": 719,
-    "conflicts": 0,
-    "qaQueue": 1401
+    "discovered": 3161,
+    "captured": 3161,
+    "claims": 1188,
+    "events": 626,
+    "entities": 862,
+    "relationships": 1188,
+    "conflicts": 8,
+    "qaQueue": 2456
   },
   "v4Gate": {
     "status": "passed",
-    "manifest_date": "2026-09-12",
-    "gate_date": "2026-09-12",
+    "manifest_date": "2026-09-13",
+    "gate_date": "2026-09-13",
     "failures": [],
     "warnings": [
       "No source-bounded hardware projection was produced."

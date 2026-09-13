@@ -5,9 +5,23 @@ import test from "node:test";
 import {
   isCollectionTelemetryReady,
   isV4ManifestReady,
+  matchesCollectionCounts,
 } from "../lib/daily-production-chain-state.mjs";
 
 const date = "2026-07-30";
+
+test("resumed collection counts require complete, valid composite provenance", () => {
+  const intake = { raw_documents: ["a", "b", "c"].map((raw_id) => ({ raw_id, intake_diagnostics: { eligible_for_v4_extraction: raw_id !== "b" } })), collection_batches: [
+    { raw_ids: ["a", "b"], eligible_raw_ids: ["a"] },
+    { raw_ids: ["c"], eligible_raw_ids: ["c"] },
+  ] };
+  assert.equal(matchesCollectionCounts(intake, 2, 1), true);
+  assert.equal(matchesCollectionCounts(intake, 3, 2), true);
+  assert.equal(matchesCollectionCounts(intake, 2, 2), false);
+  assert.equal(matchesCollectionCounts({ ...intake, collection_batches: intake.collection_batches.slice(0, 1) }, 2, 1), false);
+  assert.equal(matchesCollectionCounts({ ...intake, collection_batches: [{ raw_ids: ["a", "missing", "c"], eligible_raw_ids: ["a", "c"] }] }, 2, 1), false);
+  assert.equal(matchesCollectionCounts({ ...intake, collection_batches: undefined }, 2, 1), false);
+});
 
 test("bulk generated-data PRs cannot suppress production checks through path filters", () => {
   const workflow = fs.readFileSync(path.join(process.cwd(), ".github/workflows/production-code-checks.yml"), "utf8");

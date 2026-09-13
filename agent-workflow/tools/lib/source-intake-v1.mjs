@@ -231,10 +231,16 @@ export function mergeSourceIntakes(...payloads) {
   const dataDate = clean(intakes[0].data_date);
   const sourceArtifacts = new Map();
   const rawDocuments = new Map();
+  const collectionBatches = new Map();
   for (const intake of intakes) {
     if (intake.schema_version !== SOURCE_INTAKE_VERSION || clean(intake.data_date) !== dataDate) {
       throw new Error("Structured source intakes must share the same version and data_date");
     }
+    const batches = intake.collection_batches || [{
+      raw_ids: (intake.raw_documents || []).map((row) => row.raw_id).sort(),
+      eligible_raw_ids: (intake.raw_documents || []).filter((row) => row.intake_diagnostics?.eligible_for_v4_extraction).map((row) => row.raw_id).sort(),
+    }];
+    for (const batch of batches) collectionBatches.set(JSON.stringify(batch), batch);
     for (const artifact of intake.source_artifacts || []) {
       sourceArtifacts.set(artifact.source_artifact_id, artifact);
     }
@@ -253,6 +259,7 @@ export function mergeSourceIntakes(...payloads) {
     schema_version: SOURCE_INTAKE_VERSION,
     data_date: dataDate,
     generated_at: intakes.at(-1).generated_at || new Date().toISOString(),
+    collection_batches: [...collectionBatches.values()],
     source_artifacts: mergedArtifacts,
     raw_documents: mergedDocuments,
     counts: {
