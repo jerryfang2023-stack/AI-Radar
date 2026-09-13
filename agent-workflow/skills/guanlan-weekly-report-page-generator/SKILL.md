@@ -3,7 +3,7 @@ name: guanlan-weekly-report-page-generator
 description: Use when publishing, updating, or repairing an accepted WaveSight weekly report after `guanlan-weekly-business-change-radar`. Generates the stable WaveSight compatibility redirect and verifies publication to the independent AI financing site. Do not use to write the weekly judgment itself or to recreate Guanlan Research/report HTML.
 metadata:
   guanlan:
-    version: "1.3.0"
+    version: "1.4.0"
     column_version: "REPORTS-V1.3.0-funding-portal"
     lane: "AI financing-site reports"
     status: "current sub-skill"
@@ -37,14 +37,14 @@ The periodic controller invokes this Skill only after the weekly content gate pa
 ## Workflow
 
 1. Confirm the canonical source is named `YYYY-MM-DD--weekly-report--ai-business-change-radar.md`, has `content_type: weekly-report`, a valid `week`, `date`, `title`, `window`, and `status: published` after acceptance.
-2. Run the weekly content gate before any publication write.
+2. Run the current five-section content gate for new or regenerated reports. For user-authorized module removal from historical reports, verify the exact removed headings, unchanged remaining prose and stable metadata; do not force old reports through new writing requirements.
 3. Run `node agent-workflow/tools/render-periodic-report-pages.mjs --kind=weekly --date=YYYY-MM-DD`. The writer must produce:
    - dated compatibility route → `https://www.zkdlj.vip/#report/weekly-YYYY-wNN`;
    - latest undated weekly alias when applicable;
    - `intelligence-map.html` redirect → `https://www.zkdlj.vip/#reports`.
 4. Never hand-maintain report metadata or a report list. Final Closure dynamically scans every `status: published` report from WaveSight `origin/main` and generates portal `reports.json` plus `report-bodies.json`.
 5. Verify the publication gate blocks report removal, newest-date regression, duplicate IDs, invalid type/date, missing title/summary, missing body, and metadata/body ID mismatch.
-6. Verify live report metadata, newest ID, report count, and body count after the portal deploy. A failed live check must restore the previous VPS release.
+6. Verify live metadata, newest ID, report count, body count and absence of removed modules in both website and protected Mini Program bodies. A failed live check must restore the previous VPS release.
 7. Run the periodic renderer tests, frontstage regression, version consistency, and the portal publisher dry run.
 
 ## Hard Rules

@@ -3,7 +3,7 @@ name: guanlan-weekly-business-change-radar
 description: Use when writing, revising, or auditing the WaveSight weekly AI business change report from accepted V4 CanonicalEvents plus separately namespaced First-Line Viewpoints and Community Intelligence. The report may make downstream judgments, but every factual statement must cite accepted V4 evidence. Do not use for canonical fact creation, Opportunity Map generation, or HTML rendering.
 metadata:
   guanlan:
-    version: "1.3.0"
+    version: "1.4.0"
     lane: "AI financing-site reports"
     status: "downstream application"
     order: 90
@@ -26,7 +26,7 @@ This is a downstream judgment report. It cannot write Data Center V4 canonical f
 2. `context/00-current-state.md`
 3. `context/12-data-center-v4.md`
 4. `context/08-automation.md`
-5. `01-SiteV2/content/12-applications/industry-reports/`
+5. The current window's evidence manifest, without historical report prose.
 6. `agent-workflow/tools/generate-periodic-report-deepseek.mjs`
 7. `agent-workflow/tools/assert-periodic-report-content.mjs`
 
@@ -54,7 +54,7 @@ V3 Desk, Signal Cards, old graph data, legacy mappings, and historical weekly HT
 
 1. Resolve the previous complete Monday-Sunday window and build the bounded E/O/C manifest.
 2. Verify counts, IDs, factual E provenance, and O/C namespace separation before drafting.
-3. Draft the nine-section report with evidence-bounded judgments and explicit unknowns.
+3. Draft the five-section report with evidence-bounded judgments and explicit unknowns.
 4. Run the content gate; repair unsupported statements in Markdown without mutating canonical inputs.
 5. Hand accepted Markdown to the page generator. Keep rendering and deployment outside this skill.
 
@@ -69,17 +69,17 @@ V3 Desk, Signal Cards, old graph data, legacy mappings, and historical weekly HT
 
 ## Report shape
 
-Produce nine numbered sections:
+Produce five numbered sections (1–5):
 
-0. Data boundary and exact counts
 1. One-sentence conclusion
 2. Top-five change heatmap with direction
 3. Three evidence-backed trend chains
 4. Industry / role / workflow impact
 5. Two or three downstream opportunity hypotheses
-6. Contrarian judgment
-7. Next-week verification list
-8. Role-specific actions
+
+Do not produce 数据边界、反共识判断、观察清单 or 分角色行动结论, including renamed versions. Exact counts and evidence provenance belong in frontmatter and the internal generation record. Preserve uncertainty beside the relevant claim without adding a separate checklist.
+
+Use the full current-window evidence; do not truncate to the earliest records or reuse historical report conclusions. Final titles use `laofang-title-writer` with DeepSeek Flash.
 
 Opportunity scores and actions are downstream research judgments. Label them as such and never write them into V4 canonical tables.
 
@@ -114,4 +114,4 @@ Confirm the current report pipeline contains no V3 dataset path and does not mod
 
 ## Done When
 
-Finish when the exact weekly window and counts are disclosed, every concrete statement resolves to the bounded manifest, O/C remain contextual, the required structure and verification list are complete, and the report content gate passes before rendering.
+Finish when the exact weekly window and counts are recorded, every concrete statement resolves to the bounded manifest, O/C remain contextual, all five sections are complete, and the report content gate passes before rendering.

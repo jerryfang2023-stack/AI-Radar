@@ -24,16 +24,6 @@ industry_ids: []
 
 # 企业开始把 AI 预算从买工具转向重做业务流程
 
-## 0. 数据口径
-
-- 时间窗口：2026-06-09 至 2026-06-15，按最近 7 天滚动。
-- Signals：`01-SiteV2/site/data/v3-data-observation-desk.json`，窗口内 101 张 Business Signal Cards，其中案例 44、产品 38、融资 19。
-- Opinions：`01-SiteV2/site/data/follow-builders-daily.json`，窗口内 44 条 First-Line Viewpoints，其中产品与创业 33、AI 基础设施 6、AI 编程 5。
-- Community：`01-SiteV2/site/data/community-intelligence-daily/*.json`，窗口内按 URL 优先、标题辅助粗去重后约 44 条，其中 opportunity 30、tool_tip 7、industry_case 7。
-- 边界：Opinions 和 Community 只用于解释权与需求互证，不作为 Business Signal Card 的事实证据。
-
----
-
 ## 1. 本周一句话结论
 
 本周 AI 商业变化的主线是：**AI 正在从「单点工具试用」转向「嵌入业务流程的 Agent / 工作流系统」**，同时市场机会从「做一个更强模型或通用工具」转向「帮企业、个人工作室和垂直行业把 AI 接进真实交付、获客、知识沉淀和治理体系」。
@@ -216,43 +206,3 @@ industry_ids: []
 | 风险扣分 | -20 | -3 | 平台依赖和同质化竞争 |
 
 ---
-
-## 6. 反共识判断
-
-> **模型治理和多模型路由看起来离普通用户远，但它可能比「再做一个 AI 内容工具」更早进入企业采购清单。**
-
-内容工具在社区很热——但供给已经拥挤，差异化弱。而模型限制（Anthropic/Fable）、幻觉责任（毕马威 AI 报告翻车）、成本差异、供应商锁定和合规审计，已经在 Signals 与 Opinions 侧同时升温。
-
-普通社群还没有强烈感知，只是因为问题尚未以「服务不可用、账单失控、客户投诉、合规问责」的形式落到他们头上。一旦有一个知名企业因为 AI 幻觉或模型供应商锁定出了合规事故，这个需求会瞬间爆发。
-
-应用层创业不应只看用户今天喊得最响的需求，也要提前布局企业明天一定会遇到的风控问题。
-
----
-
-## 7. 下周观察清单
-
-**公司 / 产品**：Anthropic、Claude Code、Cursor、GitHub Enterprise、LangChain / LangSmith、Mem0、Jedify、Dataiku、Sandstone、Structured AI。
-
-**技术方向**：多模型路由、Agent 记忆层、企业上下文注入、AI Coding 工作流、模型治理、AI 客服 / 销售 Agent。
-
-**垂直行业**：法务、金融、教育 / 留学、本地生活、内容电商、企业知识管理。
-
-**社区问题**：新手 AI 基建配置、Codex / Claude Code 上手、飞书 + Obsidian 知识库、AI 商单视频、内容获客闭环、微信 AI 小程序生态。
-
-**需要验证的信号**：社区赚钱案例是否有连续复购；AI Coding 模板是否能从一次性服务变成订阅；模型治理需求是否开始从观点讨论进入企业预算。
-
----
-
-## 8. 本周可执行结论
-
-1. **对企业老板**：先选一个高频、低合规风险、可人工复核的流程做 AI 试点，不要全公司铺工具。
-2. **对创业者**：优先做「服务 + 模板 + 培训 + 维护」的组合，不要一上来做泛 SaaS。
-3. **对内容团队**：把内容生产从「发更多」升级为「获客、成交、交付、复购」的闭环系统。
-4. **对技术团队**：把 AI Coding 纳入工程流程，而不是只比较哪个模型写代码更强。
-5. **对观澜 AI**：下周继续用 Signals 看硬变化，用 Opinions 看解释权，用 Community 看真实需求；重点追踪企业工作流 Agent、AI Coding 工作流、模型治理路由、AI 商业服务四条主线。同时监控 Opinions 管道是否恢复产出。
-
----
-
-*报告版本：v3.3-merged*
-*方法论：S×O×C 三方交叉 + 趋势链五步法 + 100 分机会评分*
-*下期：2026-06-22*

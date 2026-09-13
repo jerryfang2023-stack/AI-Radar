@@ -1,122 +1,29 @@
 # Monthly Report Template
 
-Use this template for WaveSight AI monthly reports.
+Use only the current full-month E/O/C manifest. Record counts and provenance in frontmatter, not a data-boundary module.
 
-```md
----
-title: <一个带认知张力和商业后果的核心结构判断>
-date: YYYY-MM-DD
-month: "YYYY-MM"
-window: YYYY-MM-01 to YYYY-MM-DD
-content_type: monthly-report
-slug: ai-business-structure-opportunity-monthly-YYYY-MM
-scope: Business Signals + Weekly Reports + Community Intelligence + First-Line Viewpoints + Opportunity Map
-status: draft
-version: v0.1
-method: 产业结构变化诊断 + 趋势裁决 + 机会地图
----
+## 1. 本月核心结论
 
-# <一个带认知张力和商业后果的核心结构判断>
+Develop the strongest supported judgment, concrete examples and commercial implication. Minimum 450 visible characters.
 
-> 月报不回答“这个月 AI 发生了什么”，而回答“这个月之后，AI 商业系统的结构哪里变了，哪些趋势被证据增强或削弱，哪些机会因此变得可以行动”。
+## 2. 结构判断
 
-## 0. 数据边界
+Analyze value chain, buyers, supply form, costs and governance. Develop examples, mechanisms, consequences and limitations for each. Minimum 1,700 visible characters; a summary table is insufficient.
 
-- Business Signals:
-- Weekly Reports:
-- Community Intelligence:
-- First-Line Viewpoints:
-- Opportunity Map / internal Trend Candidates:
+## 3. 趋势裁决
 
-证据边界：
+Adjudicate at least three trends using multiple events across the month. Explain upgrade, continued observation or downgrade. Keep at least one weak trend under observation or downgrade it. Minimum 1,300 visible characters.
 
-- Business Signals 是事实底座。
-- Community Intelligence 是需求侧温度计。
-- First-Line Viewpoints 是预期和分歧材料。
-- 无法在当前数据链中复核的外部数字标记为待复核或移出核心论证。
+## 4. 证据完整性
 
-## 1. 本月结构判断
+Explain which links in the business argument are supported and which remain unproven, without repeating collection counts or source categories. Minimum 300 visible characters.
 
-### 1.1 最重要的产业结构变化
+## 5. 下游机会假设与机会地图
 
-### 1.2 最确定的趋势
+Develop two or three cards headed **机会卡一：名称**, **机会卡二：名称**, optionally a third. Each covers buyer, demand, current substitute, supply gap, minimum product, commercialization, risks and a reasoned editorial score out of 100. Minimum 1,500 visible characters combined.
 
-### 1.3 最值得看的机会
+## 6. 结论
 
-## 2. 产业结构变化图
+Synthesize the month's changes, affected actors and applicable conditions. Minimum 350 visible characters.
 
-| 结构维度 | 本月变化 | 支撑证据 | 商业含义 | 不确定性 |
-|---|---|---|---|---|
-| 价值链 |  |  |  |  |
-| 买方 |  |  |  |  |
-| 供给形态 |  |  |  |  |
-| 渠道生态 |  |  |  |  |
-| 成本结构 |  |  |  |  |
-
-## 3. 趋势裁决表
-
-| 趋势 | 本月状态 | 对应结构变化 | 证据基础 | 反证 / 限制 | 下月验证条件 |
-|---|---|---|---|---|---|
-|  | 升级 / 新增 / 继续观察 / 降级 / 淘汰 |  |  |  |  |
-
-## 4. 趋势链完整性判断
-
-| 趋势链 | 完整性 | 判断 |
-|---|---|---|
-|  | 完整 / 基本完整 / 半完整 / 不成立 |  |
-
-## 5. 机会地图
-
-### 5.1 机会分布
-
-| 机会 | 类型 | 本月判断 |
-|---|---|---|
-|  | 高确定 / 早期 / 拥挤 / 观察 / 边缘观察 |  |
-
-### 5.2 机会卡
-
-#### 机会 1：<名称>
-
-| 字段 | 内容 |
-|---|---|
-| 类型 |  |
-| 对应结构变化 |  |
-| 支撑趋势 |  |
-| 目标买方 |  |
-| 具体痛点 |  |
-| 供给缺口 |  |
-| 为什么现在出现 |  |
-| 商业化路径 |  |
-| 主要风险 |  |
-| 下月验证信号 |  |
-
-## 6. 关键矛盾
-
-### 矛盾一：
-
-### 矛盾二：
-
-### 矛盾三：
-
-## 7. 下月验证清单
-
-### 7.1 趋势升级 / 降级触发条件
-
-| 趋势 | 升级条件 | 降级条件 |
-|---|---|---|
-|  |  |  |
-
-### 7.2 重点追踪对象
-
-| 类别 | 对象 | 追踪什么 |
-|---|---|---|
-|  |  |  |
-
-### 7.3 机会地图维护
-
-| 机会 | 维护动作 |
-|---|---|
-|  |  |
-
-## 8. 月度结论
-```
+The whole report must exceed 6,000 visible characters; aim for 7,000–8,500 without repetition. Internal citations, URLs and metadata do not count. Do not add data-boundary, contradiction/counterevidence or next-month checklist modules.

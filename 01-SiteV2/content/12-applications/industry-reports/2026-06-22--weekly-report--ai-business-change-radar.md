@@ -24,14 +24,6 @@ industry_ids: []
 
 # Agent 已经能跑通 demo，为什么企业还是落不了地？
 
-## 0. 数据口径
-
-- 时间窗口：2026-06-15 至 2026-06-21，按上一自然周统计。
-- Signals：`01-SiteV2/site/data/v3-data-observation-desk.json`，窗口内 129 张 Business Signal Cards，其中 case 62、product-service 49、funding 18。
-- Opinions：`01-SiteV2/site/data/follow-builders-daily.json`，窗口内 51 条 First-Line Viewpoints，覆盖 17 个 builders；其中产品与创业 40、AI 编程 7、Agent 4。
-- Community：`01-SiteV2/site/data/community-intelligence-daily/2026-06-15.json` 至 `2026-06-21.json`，原始 427 条，按 URL / 标题优先去重后 41 条。
-- 边界：Opinions 和 Community 只用于解释权与需求互证，不作为 Business Signal Card 的事实证据。
-
 ## 1. 一句话结论
 
 上周 AI 商业变化的主线是：企业 Agent 已经从“买工具和试 demo”推进到“部署、治理、成本、上下文和交付服务”的系统问题，未来 1-3 个月真正有商业价值的机会不在通用工具，而在把 AI 接进企业流程并负责结果。
@@ -149,52 +141,3 @@ industry_ids: []
 | Score | 78 / 100：痛点 20，付费 15，供给缺口 16，时机 13，获客 8，团队可行性 8，风险扣 2。 |
 
 判断：Watch。需求真实，但需要用行业场景和交付结果区分，而不是只卖“Codex 教程”。
-
-## 6. 反共识判断
-
-主流叙事是：AI Coding 和内容生成最热，模型治理、路由、权限和 FDE 只是企业后端配套。
-
-反共识判断：上周更值得提前下注的是治理、路由和部署服务，而不是再做一个内容生成工具。
-
-反证据来自两侧：
-
-- Signals 侧，Salesforce / Harvey / ellamind / BCG / AllCloud / Tigera / OpenRouter / Cloudflare / Arcade / Dataiku 同时指向“企业部署、治理、成本、权限和服务化”。
-- Opinions 侧，Dataiku 反复讨论 governance、orchestration、enterprise-grade agentic tools；Aaron Levie 认为开放模型会增加应用层通过编排和成本优化创造价值的空间。
-- Community 侧，虽然赚钱案例仍集中在内容和工具落地，但“AI 企业服务”“Codex + 飞书 CLI”“知识库 + Agent 工作流”“AI 基建门槛”已经在实践者中出现。
-
-对决策者的含义：内容工具是显性需求，治理和部署服务是预算需求。显性需求能带来流量，预算需求更可能带来高客单价。
-
-## 7. 下周观察清单
-
-**公司 / 产品**
-
-- Salesforce / Agentforce、Harvey、BCG、Dataiku、Tigera Lynx、OpenRouter、Portkey、LiteLLM、Cloudflare AI agents、GitHub Qubot、Claude Code、Jedify、Arcade、Baseten、Convey。
-
-**技术方向**
-
-- Forward Deployed Engineer for AI、Agent governance、模型路由、AI 成本审计、temporary accounts、context graph、enterprise AI orchestration、AI Coding artifacts、内部数据查询 Agent。
-
-**垂直行业**
-
-- 法律、金融、客户服务、零售、技术服务、内容电商、企业知识管理、教育培训。
-
-**社区问题**
-
-- Codex / Claude Code 是否从一次性教程变成模板订阅。
-- 飞书 / Obsidian / RPA 工作流是否有复购和企业团队采用。
-- AI 企业服务是否开始出现明确项目报价和交付边界。
-- 内容获客案例是否能连接后端交付，而不是只停留在流量。
-
-**待验证信号**
-
-- FDE 案例是否披露部署周期、团队结构、收费模式和客户留存。
-- 模型路由 / 治理工具是否进入企业采购清单，而不只是技术博客讨论。
-- AI Coding 工作台是否能显著降低非技术用户的交付失败率。
-
-## 8. 可执行结论
-
-1. 对企业老板：本周不要新增零散工具订阅，先选一个高频流程做 Agent 试点，并同步定义权限、成本、复核和负责人。
-2. 对创业者：优先验证 FDE 式服务、模型路由轻咨询、Codex / Claude Code 工作台三个方向；不要从泛 SaaS 起步。
-3. 对内容团队：把 AI 内容从“发更多”升级为“前端获客 + 线索承接 + 交付资产 + 复购触发”的闭环。
-4. 对技术团队：把模型路由、成本审计、权限隔离和日志留存作为 AI 应用默认层，不要等事故后补。
-5. 对观澜 AI：下周重点追踪企业 Agent 部署服务、治理/路由基础设施、AI Coding 工作台和社区 AI 企业服务四条链；同时记录 FDE 案例的收费、周期和角色配置。

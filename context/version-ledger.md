@@ -60,8 +60,8 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Local Windows automation | WINDOWS-AUTOMATION-V1.1-four-task-manual-supervision |
 | Weekly Report content source | `01-SiteV2/content/12-applications/industry-reports/` |
 | Monthly Report content source | `01-SiteV2/content/12-applications/industry-reports/monthly/` |
-| Weekly report page-generator Skill | guanlan-weekly-report-page-generator v1.3.0 |
-| Monthly report page-generator Skill | guanlan-monthly-report-page-generator v1.3.0 |
+| Weekly report page-generator Skill | guanlan-weekly-report-page-generator v1.4.0 |
+| Monthly report page-generator Skill | guanlan-monthly-report-page-generator v1.4.0 |
 | Data Center supervisor Skill | guanlan-data-center-supervisor v1.3.1 |
 | Opportunity Map updater Skill | guanlan-opportunity-radar-updater v1.5.0 |
 | Trend Radar updater Skill | guanlan-trend-radar-updater v1.1.0 |
@@ -69,8 +69,8 @@ This file is the current version baseline. Closeout files prove what happened; t
 | First-Line Viewpoints monitor Skill | guanlan-first-line-viewpoints-monitor v1.2.1 |
 | Community Intelligence monitor Skill | guanlan-community-intelligence-monitor v1.1.0 |
 | Follow-builders support Skill | follow-builders v2.1.1 |
-| Weekly business-change content Skill | guanlan-weekly-business-change-radar v1.3.0 |
-| Monthly business-structure content Skill | guanlan-monthly-business-structure-report v1.0.0 |
+| Weekly business-change content Skill | guanlan-weekly-business-change-radar v1.4.0 |
+| Monthly business-structure content Skill | guanlan-monthly-business-structure-report v1.1.0 |
 | Daily source monitor Skill | guanlan-daily-monitor v1.3.1 |
 | Source-intake quality gate Skill | guanlan-monitor-quality-gate v1.3.0 |
 | Source-intake QC Skill | guanlan-daily-monitor-qc v1.3.0 |
