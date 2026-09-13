@@ -1,0 +1,97 @@
+{
+  "schema_version": "PERIODIC-REPORT-REWRITE-V1.0",
+  "kind": "monthly",
+  "date": "2026-08-31",
+  "window": {
+    "start": "2026-08-01",
+    "end": "2026-08-31"
+  },
+  "provider": "deepseek",
+  "model": "deepseek-v4-pro",
+  "generated_at": "2026-09-13T08:56:03.944Z",
+  "part_generation": [
+    {
+      "model": "deepseek-v4-pro",
+      "generatedAt": "2026-09-13T08:55:38.770Z"
+    },
+    {
+      "model": "deepseek-v4-pro",
+      "generatedAt": "2026-09-13T08:55:44.682Z"
+    },
+    {
+      "model": "deepseek-v4-pro",
+      "generatedAt": "2026-09-13T08:56:03.942Z"
+    }
+  ],
+  "counts": {
+    "Signals": 756,
+    "Opinions": 341,
+    "Community": 478
+  },
+  "evidence_ids": [
+    "E:EV-b27f2e417d779e5f",
+    "E:EV-f3a29cb561809daf",
+    "E:EV-b8fbfa3405d10bb4",
+    "E:EV-6993e6a7df339e59",
+    "E:EV-f0d54da5bf0d7399",
+    "E:EV-41e229cb248b8418",
+    "E:EV-5c87fffc3534e990",
+    "E:EV-2c08a493d3c8b9c7",
+    "E:EV-278745d4aa7a4b3a",
+    "O:2091671326897713424",
+    "O:2089921630650925170",
+    "E:EV-54a4809c304587e6",
+    "E:EV-ff924015298048ba",
+    "E:EV-8654d13ff4cf8a08",
+    "O:2086559201053294909",
+    "E:EV-234c2011ecf08ffd",
+    "E:EV-fabb3080e5263d33",
+    "E:EV-d93dd19a481307ec",
+    "E:EV-9ed6a759555d7e77",
+    "E:EV-24823de8fb76ac31",
+    "E:EV-c1295b8f58024ff6",
+    "C:2c2a134c1e8931",
+    "C:562617357d5c10",
+    "C:7460addde9d8d4"
+  ],
+  "title": {
+    "value": "Claude Code新增受限模式，企业采购该比较什么？",
+    "provider": "deepseek",
+    "model": "deepseek-v4-flash",
+    "generated_at": "2026-09-13T09:03:45.612Z",
+    "selection_mode": "delegated",
+    "authorization": "重写，并更新",
+    "reference_ids": [
+      "P07-R01",
+      "P05-R01"
+    ],
+    "expression": "original_expression",
+    "review": "Selected factual action/question candidate. Rejected unsupported claims that company bills failed to decrease or enterprises have already changed procurement."
+  },
+  "editorial_review": {
+    "reviewedAt": "2026-09-13T09:07:09.432Z",
+    "method": "Primary-agent factual scope and attribution corrections, removal of repeated examples; substantive drafts by DeepSeek Pro",
+    "scope": "bounded_analysis",
+    "ownerConfirmation": false
+  },
+  "checks": {
+    "complete_month_input": true,
+    "no_removed_modules": true,
+    "funding_not_revenue": true,
+    "preview_status_preserved": true,
+    "opinions_and_community_attributed": true,
+    "no_claim_of_marketwide_budget_shift": true
+  },
+  "source_file": "01-SiteV2/content/12-applications/industry-reports/monthly/2026-08-31--monthly-report--ai-business-structure-and-opportunity.md",
+  "visible_body_characters": 10803,
+  "section_visible_characters": [
+    830,
+    2117,
+    2698,
+    750,
+    3641,
+    723
+  ],
+  "unique_citation_count": 24,
+  "counts_basis": "Full August accepted input; events deduplicated by event ID, published viewpoints within window, community records deduplicated by ID."
+}

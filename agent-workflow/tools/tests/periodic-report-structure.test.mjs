@@ -5,6 +5,19 @@ import os from "node:os";
 import path from "node:path";
 import { REPORT_SECTIONS, parseNumberedReportSections, reportStructureProblems, visibleReportText } from "../lib/periodic-report-structure.mjs";
 import { evidenceManifest } from "../generate-periodic-report-deepseek.mjs";
+import { discoverPublishedReports, parseFrontmatter } from "../render-periodic-report-pages.mjs";
+
+test("accepted concise monthly rewrites retain complete reader-visible content after publication", () => {
+  const reports = discoverPublishedReports(process.cwd(), "monthly");
+  for (const report of reports) {
+    const text = fs.readFileSync(path.join(process.cwd(), report.source), "utf8");
+    const { values, body } = parseFrontmatter(text);
+    if (values.report_structure !== "concise-v2") continue;
+    assert.deepEqual(reportStructureProblems("monthly", parseNumberedReportSections(body)), [], report.source);
+    assert.equal(values.title_model, "deepseek-v4-flash", report.source);
+    assert.ok(values.generation_record && fs.existsSync(path.join(process.cwd(), values.generation_record)), report.source);
+  }
+});
 
 test("reader-visible length excludes metadata, citations and link URLs", () => {
   const text = "---\ntitle: 内部标题\n---\nSignals: 200 | Opinions: 10 | Community: 30\n## 1. 判断\n客户使用[来源](https://example.com/very-long-url) [E:EV-1234567890]";
