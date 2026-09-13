@@ -39,6 +39,7 @@ import {
   verifiedFundingSourceUrls,
 } from "../build-funding-source-health-v1.mjs";
 import { resolveReviewedCompany } from "../project-funding-taxonomy-to-events-v4-1.mjs";
+import { fundingCompanyChinaEvidence } from "../../../01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs";
 import { classificationEntityAggregationProblems, sourceTitleQuarantinesProjection, fundingCardsByTrigger } from "../assert-taxonomy-consistency-v4-1.mjs";
 
 test("taxonomy validates the event's own card before a repost's cross-reference", () => {
@@ -47,6 +48,34 @@ test("taxonomy validates the event's own card before a repost's cross-reference"
   const cards = fundingCardsByTrigger([repost, original]);
   assert.equal(cards.get("JAN"), original);
   assert.equal(cards.get("SEPT"), repost);
+});
+
+test("implicit near-100-million-yuan wording retains its approximate qualifier during canonical reuse", () => {
+  const event = { display_title_zh: "大鱼智行完成近亿元Pre-B轮融资，加速构建AI智能轻出行平台", metrics: [], claim_refs: [] };
+  assert.equal(canonicalFundingEventAmount(event), "近亿元");
+  assert.deepEqual(normalizeFundingAmount("近亿元"), {
+    currency: "CNY", value: 100000000, min_value: null, max_value: null,
+    unit: "base", status: "approximate", display_zh: "约 1 亿元",
+  });
+  const payload = { financing: { amount: "亿元", evidence_refs: [] } };
+  ensureCanonicalFundingEvidence(payload, { claims: [] }, event, []);
+  assert.equal(payload.financing.amount, "近亿元");
+  assert.equal(canonicalFundingEventAmount({ display_title_zh: "公司估值近亿元", metrics: ["亿元"] }), "");
+});
+
+test("China application scope uses funded-company evidence, not publisher, headquarters text or an investor", () => {
+  const card = {
+    company: { name: "九章智电", full_name: "北京九章智电科技有限公司", headquarters: "北京", evidence_refs: [
+      { source_id: "S", source_content_hash: "hash", quote_hash: "quote", quote: "北京九章智电科技有限公司（以下简称：九章智电）是一家专注AI+电力交易领域的科技公司。" },
+    ] }, research_sources: [{ source_id: "S", publisher: "投资界" }],
+  };
+  assert.equal(fundingCompanyChinaEvidence(card).matched, true);
+  assert.equal(fundingCompanyChinaEvidence({ ...card, company: { ...card.company, name: "Foreign AI", full_name: "Foreign AI" } }).matched, false);
+  assert.equal(fundingCompanyChinaEvidence({ ...card, research_sources: [] }).matched, false);
+  assert.equal(fundingCompanyChinaEvidence({ ...card, company: { ...card.company, evidence_refs: [] } }).matched, false);
+  const provincial = { ...card, company: { name: "浙江无问智行科技有限公司", evidence_refs: [{ ...card.company.evidence_refs[0], quote: "无问智科成立于2022年，总部位于浙江省湖州市德清县，是一家物理AI数据基础设施企业" }] } };
+  assert.equal(fundingCompanyChinaEvidence(provincial).matched, false);
+  assert.equal(fundingCompanyChinaEvidence(provincial, ["无问智科"]).matched, true);
 });
 
 test("only an explicitly quarantined source title excludes the catalog projection", () => {

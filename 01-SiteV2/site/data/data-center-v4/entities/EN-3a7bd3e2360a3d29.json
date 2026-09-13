@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-13T01:22:32.676Z",
+    "generatedAt": "2026-09-13T01:56:17.541Z",
     "latestDataDate": "2026-09-13",
     "currentDate": "2026-09-13",
-    "eventCount": 3197,
+    "eventCount": 3212,
     "quarantinedEventCount": 33,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -72,6 +72,7 @@
       "EV-d116b0aa5bb292e2",
       "EV-e857f9d1c1478c70",
       "EV-fd21441fb6e143c3",
+      "EV-297e614ca04dc8cb",
       "EV-34716e17c87611bf",
       "EV-75128ed56637850b",
       "EV-57545fd96b45cb87",
@@ -180,7 +181,7 @@
       "EN-45b5216872656eb3"
     ],
     "firstSeen": "2026-06-04",
-    "lastSeen": "2026-09-10",
+    "lastSeen": "2026-09-13",
     "relationIds": [
       "REL2-a3bd8b736cbfac80",
       "REL2-2c82bf25c532a4e1",
@@ -220,6 +221,7 @@
         "EV-fd21441fb6e143c3"
       ],
       "productsServices": [
+        "EV-297e614ca04dc8cb",
         "EV-34716e17c87611bf",
         "EV-75128ed56637850b",
         "EV-57545fd96b45cb87",
@@ -317,6 +319,22 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-297e614ca04dc8cb",
+        "dataDate": "2026-09-13",
+        "date": "2026-09-12",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "苹果公布 SimpleDesign 蛋白质设计模型，可联合生成序列与三维结构",
+        "displayTags": [],
+        "entityIds": [
+          "EN-3a7bd3e2360a3d29",
+          "EN-f426aa404fdfcce0"
+        ]
+      },
       {
         "id": "EV-34716e17c87611bf",
         "dataDate": "2026-09-10",
@@ -2960,6 +2978,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-c04784e49047a2ff",
         "EV-157047393912dde3",
         "EV-327ecd23437d5fda",
         "EV-1938f1caa0e15759",
@@ -3318,18 +3337,19 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-multimodal",
+        "TX-product_form-chip_accelerator",
+        "TX-target_user-business_user",
         "TX-target_user-developer",
+        "TX-technology-code_generation",
+        "TX-technology-multimodal",
         "TX-target_user-researcher",
         "TX-product_form-model",
         "TX-industry-healthcare_life_sciences",
         "TX-target_user-consumer",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-use_case-software_development",
-        "TX-target_user-business_user",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-data_analysis",
-        "TX-product_form-chip_accelerator",
         "TX-industry-media_entertainment",
         "TX-use_case-content_creation",
         "TX-use_case-security_operations",
@@ -3342,7 +3362,6 @@
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-product_form-model_api_service",
         "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
         "TX-product_form-developer_tool",
         "TX-technology-open_weights",
         "TX-industry-retail_ecommerce",
@@ -3386,7 +3405,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-12"
+      "lastSeen": "2026-09-13"
     },
     {
       "id": "EN-e463d05a14e8697f",
@@ -4253,6 +4272,7 @@
         "EV-01df8e489a34893b",
         "EV-afd0332ad8f5f05b",
         "EV-cab03fca079f62e6",
+        "EV-2e8512bbfea3a76a",
         "EV-b67a95250d1aae8b",
         "EV-52f4f9d31fae9c44",
         "EV-3ad9a2bb87c407dd",
@@ -4604,6 +4624,7 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-e272541b76d00306",
         "EV-84bd528b36f55b00",
         "EV-fdc3211527e41bf6",
         "EV-7a24f8d94f5eede7",
@@ -4961,9 +4982,9 @@
         "EN-b7bea343b08cce2c",
         "EN-fdb2cc367267ac57",
         "EN-4a639cb888a15d75",
-        "EN-89d01c9ba73cb5c4",
         "EN-0616a267820d2c78",
         "EN-286a3c612017ad1d",
+        "EN-89d01c9ba73cb5c4",
         "EN-11507a0e2f5e69d5",
         "EN-16478186eeecf696",
         "EN-f90aec90acf3dc85",

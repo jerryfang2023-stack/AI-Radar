@@ -31,6 +31,7 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v6
         with:
+          ref: ${{ github.ref }}
           fetch-depth: 0
 
       - name: Set up Node.js
@@ -170,6 +171,9 @@ jobs:
           node agent-workflow/tools/assert-data-lake-v4.mjs --duckdb=skip
           node agent-workflow/tools/refresh-data-center-viewpoints-adapter.mjs \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-first-line-viewpoints-adapter.log"
+          npm run translate:public-structured-fields
+          node agent-workflow/tools/refresh-data-center-viewpoints-adapter.mjs
+          node --test agent-workflow/tools/tests/public-zh-translation-v1.test.mjs
 
       - name: Write first-line manifest
         if: always()
@@ -250,6 +254,7 @@ jobs:
           stage_if_exists "01-SiteV2/site/data/data-center-v4"
           stage_if_exists "01-SiteV2/content/11-databases/builder-blog-feed.json"
           stage_if_exists "01-SiteV2/content/11-databases/builder-podcast-feed.json"
+          stage_if_exists "01-SiteV2/content/11-databases/public-zh-translations-v1.json"
 
           if git diff --cached --quiet; then
             echo "No first-line viewpoints changes to commit."

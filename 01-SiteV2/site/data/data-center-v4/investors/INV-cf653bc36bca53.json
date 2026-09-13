@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-13T01:22:32.676Z",
+    "generatedAt": "2026-09-13T01:56:17.541Z",
     "latestDataDate": "2026-09-13",
     "currentDate": "2026-09-13",
-    "eventCount": 3197,
+    "eventCount": 3212,
     "quarantinedEventCount": 33,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -56,7 +56,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 2,
+    "historical_or_ambiguous_count": 3,
     "portfolio_company_count": 1,
     "market_regions": [
       "CN"
@@ -64,9 +64,9 @@
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
     "first_disclosed_at": "2024-09-12",
-    "latest_disclosed_at": "2026-06-23",
+    "latest_disclosed_at": "2026-07-08",
     "role_counts": {
-      "historical_or_ambiguous": 2,
+      "historical_or_ambiguous": 3,
       "participant": 1
     },
     "round_codes": [
@@ -80,6 +80,47 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-f66464fb587d1341",
+        "funding_insight_id": "FI-3290a302d01a731c",
+        "event_ids": [
+          "EV-a52dd9e9cac23694",
+          "EV-7532c5a950295e97"
+        ],
+        "company_entity_id": "EN-ed8ff30f2dcaf9d6",
+        "company_canonical_entity_id": "EN-ed8ff30f2dcaf9d6",
+        "company_name": "德睿智药",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "5200万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 52000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5200 万美元"
+        },
+        "announced_at": "2026-07-08",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A轮联合领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-c8803e2f7419599f",
+            "source_url": "https://www.vcbeathealth.com/article/59793",
+            "source_title": "MindRank Secures $52M Series B Funding to Advance AI-Driven Oral GLP-1RA into Phase III Clinical Trials-VCBeat",
+            "source_content_hash": "674418393ee4156c",
+            "quote": "in December 2021, it secured a tens-of-millions-of-US-dollars Series A round co-led by Huagai Capital and Sinopharm Capital (Songhe Capital)",
+            "quote_hash": "436917467eb2c63eaa6f8d044a7875eeb2e3fdedd86b477e1a27c054a83cfa13"
+          }
+        ]
+      },
       {
         "activity_id": "IA-ab409ec2c67c5c80",
         "funding_insight_id": "FI-a3033e661b23b30e",
@@ -202,6 +243,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-c8803e2f7419599f",
+        "source_url": "https://www.vcbeathealth.com/article/59793",
+        "source_title": "MindRank Secures $52M Series B Funding to Advance AI-Driven Oral GLP-1RA into Phase III Clinical Trials-VCBeat",
+        "source_content_hash": "674418393ee4156c",
+        "quote": "in December 2021, it secured a tens-of-millions-of-US-dollars Series A round co-led by Huagai Capital and Sinopharm Capital (Songhe Capital)",
+        "quote_hash": "436917467eb2c63eaa6f8d044a7875eeb2e3fdedd86b477e1a27c054a83cfa13"
+      },
       {
         "source_id": "FISRC-31d9f2f1a48dfdc8",
         "source_url": "https://finance.sina.com.cn/wm/2026-04-27/doc-inhvxtre9075192.shtml",

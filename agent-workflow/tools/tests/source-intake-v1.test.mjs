@@ -371,6 +371,11 @@ test("structured source intakes merge supplemental market sources without changi
     eligible_documents: 1,
   });
   assert.equal(merged.generated_at, supplemental.generated_at);
+  assert.deepEqual(merged.collection_batches, [
+    { raw_ids: ["RAW-global"], eligible_raw_ids: ["RAW-global"] },
+    { raw_ids: ["RAW-cn"], eligible_raw_ids: [] },
+  ]);
+  assert.deepEqual(mergeSourceIntakes(merged, supplemental).collection_batches, merged.collection_batches);
 });
 
 test("source snapshots are reused immutably and content changes get a stable versioned path", () => {

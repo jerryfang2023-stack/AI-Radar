@@ -5,6 +5,7 @@ import { spawnSync } from "node:child_process";
 import {
   isCollectionTelemetryReady,
   isV4ManifestReady,
+  matchesCollectionCounts,
 } from "./lib/daily-production-chain-state.mjs";
 import { hasActiveHistoricalDuplicate, readSourceIntake } from "./lib/source-intake-v1.mjs";
 import { loadPrivateEvidenceRecord } from "./lib/private-evidence-store.mjs";
@@ -49,7 +50,9 @@ function parseLineValue(text = "", key) {
 }
 
 function parseNumber(text = "", key) {
-  const value = Number(String(parseLineValue(text, key)).replace(/[^\d.-]/gu, ""));
+  const line = parseLineValue(text, key);
+  if (!line) return null;
+  const value = Number(String(line).replace(/[^\d.-]/gu, ""));
   return Number.isFinite(value) ? value : null;
 }
 
@@ -162,8 +165,9 @@ if (
   problems.push("missing both ephemeral source snapshots and the public evidence locator index");
 }
 if (!rawCount) problems.push("structured source intake has no RawDocuments");
-if (loggedRawCount !== null && loggedRawCount !== rawCount) problems.push(`logged raw_count ${loggedRawCount} does not match structured intake ${rawCount}`);
-if (loggedPoolCount !== null && loggedPoolCount !== eligibleDocumentCount) problems.push(`logged pool_count ${loggedPoolCount} does not match structured intake eligible_documents ${eligibleDocumentCount}`);
+if (loggedRawCount !== null && loggedPoolCount !== null && !matchesCollectionCounts(intake?.payload, loggedRawCount, loggedPoolCount)) {
+  problems.push(`logged collection counts ${loggedRawCount}/${loggedPoolCount} do not match intake ${rawCount}/${eligibleDocumentCount} or a fully reconciled collection batch`);
+}
 if (activeDuplicateCount) problems.push(`structured intake contains ${activeDuplicateCount} active historical duplicate marker(s)`);
 if (gateText && qualityStatus && qualityStatus !== "passed") problems.push(`monitor quality gate status is ${qualityStatus}`);
 if (stage !== "post-monitor" && finalQcText && /^block/u.test(finalQcDecision)) problems.push(`final monitor QC decision is ${finalQcDecision}`);

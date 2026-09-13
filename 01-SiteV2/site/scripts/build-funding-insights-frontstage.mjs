@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import crypto from "node:crypto";
 import { fundingCompanyDisplayName } from "../../../agent-workflow/tools/funding-company-display-v1.mjs";
+import { chinaFundingActorEvidence } from "../../../agent-workflow/tools/lib/china-market-v1.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -22,6 +23,20 @@ import {
 } from "../../../agent-workflow/tools/public-zh-translation-v1.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../..");
+
+// Application research can establish the funded company's location without
+// manufacturing a canonical entity or treating a Chinese publisher as China scope.
+export function fundingCompanyChinaEvidence(card, acceptedSubjectNames = []) {
+  const sources = new Set((card.research_sources || []).map((source) => source.source_id));
+  const evidence = (card.company?.evidence_refs || [])
+    .filter((ref) => sources.has(ref.source_id) && ref.source_content_hash && ref.quote_hash)
+    .map((ref) => ref.quote).join("\n");
+  for (const name of [card.company?.name, card.company?.full_name, ...acceptedSubjectNames]) {
+    const match = chinaFundingActorEvidence(name, evidence);
+    if (match.matched) return match;
+  }
+  return { matched: false, basis: "" };
+}
 
 export function fundingProductFormDecision(card) {
   const explicitId = String(card.analysis?.product_form_id || "").trim();
@@ -55,6 +70,7 @@ function fundingEventMarketScopes(projectRoot) {
   if (!fs.existsSync(databaseRoot)) return scopes;
   for (const date of fs.readdirSync(databaseRoot).filter((name) => /^\d{4}-\d{2}-\d{2}$/u.test(name)).sort()) {
     const events = readJson(path.join(databaseRoot, date, "canonical-events.json"), []);
+    const claims = new Map(readJson(path.join(databaseRoot, date, "claims.json"), []).map((claim) => [claim.claim_id, claim]));
     for (const event of events) {
       if (event.event_type !== "funding") continue;
       scopes.set(event.event_id, {
@@ -62,6 +78,9 @@ function fundingEventMarketScopes(projectRoot) {
         china_market_match: event.market_scope?.china_market_match === true,
         china_market_basis: event.market_scope?.china_market_basis || [],
         source_registry_ids: event.market_scope?.source_registry_ids || [],
+        subject_names: (event.claim_refs || []).map((id) => claims.get(id))
+          .filter((claim) => claim?.claim_type === "funding" && claim.verification_status === "accepted")
+          .map((claim) => claim.subject),
       });
     }
   }
@@ -465,7 +484,8 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
       const chinaAlias = [card.company?.name, card.company?.full_name]
         .map((name) => chinaAliases.get(normalizedListKey(name)))
         .find(Boolean) || "";
-      const chinaMarket = Boolean(chinaAlias)
+      const companyEvidence = fundingCompanyChinaEvidence(card, sourceScopes.flatMap((scope) => scope.subject_names || []));
+      const chinaMarket = Boolean(chinaAlias) || companyEvidence.matched
         || sourceScopes.some((scope) => scope.market_region === "CN" && scope.china_market_match);
       const marketScope = {
         market_region: chinaMarket ? "CN" : "GLOBAL",
@@ -473,6 +493,7 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
         china_market_basis: [...new Set([
           ...sourceScopes.flatMap((scope) => scope.china_market_basis || []),
           ...(chinaAlias ? [`china_entity_alias:${chinaAlias}`] : []),
+          ...(companyEvidence.matched ? [`funding_company_evidence:${companyEvidence.basis}`] : []),
         ])],
         source_registry_ids: [...new Set(sourceScopes.flatMap((scope) => scope.source_registry_ids || []))],
       };

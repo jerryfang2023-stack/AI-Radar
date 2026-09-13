@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-13T01:22:32.676Z",
+    "generatedAt": "2026-09-13T01:56:17.541Z",
     "latestDataDate": "2026-09-13",
     "currentDate": "2026-09-13",
-    "eventCount": 3197,
+    "eventCount": 3212,
     "quarantinedEventCount": 33,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -16603,26 +16603,33 @@
       "funnel_id": "LF-11e81190ca216192",
       "lens": "hardware",
       "date": "2026-09-13",
-      "monitoring_paths": [],
-      "raw_documents": 19,
-      "original_sources": 19,
-      "valid_claims": 4,
+      "monitoring_paths": [
+        "hardware_capacity_fab",
+        "hardware_product_specs",
+        "hardware_shipment_deployment",
+        "hardware_supply_agreement"
+      ],
+      "raw_documents": 35,
+      "original_sources": 30,
+      "valid_claims": 9,
       "observations": 0,
-      "canonical_events": 3,
+      "canonical_events": 5,
       "blocker_counts": {
         "rumor_requires_primary_confirmation": 2,
-        "no_source_bounded_claim": 2,
-        "source_outside_daily_window": 1,
+        "no_source_bounded_claim": 3,
+        "source_outside_daily_window": 6,
         "domestic_publication_date_unverified": 3,
-        "event_not_ai_relevant": 5,
+        "event_not_ai_relevant": 4,
         "source_outside_funding_backfill_window": 1,
-        "raw_source_quality_block": 2
+        "raw_source_quality_block": 8,
+        "non_event_or_index_title": 1,
+        "no_source_bounded_event": 1
       },
       "rates": {
-        "original_source_rate": 1,
-        "valid_claim_rate": 0.21052631578947367,
+        "original_source_rate": 0.8571428571428571,
+        "valid_claim_rate": 0.2571428571428571,
         "observation_rate": 0,
-        "event_conversion_rate": 0.75
+        "event_conversion_rate": 0.5555555555555556
       },
       "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-13/monitoring-funnel.json"
     }

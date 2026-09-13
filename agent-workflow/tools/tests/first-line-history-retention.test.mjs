@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import test from "node:test";
 import { mergeApprovedHistory } from "../backfill-first-line-viewpoints-history.mjs";
+import { unionPublishedRows } from "../preserve-published-checkpoint-state.mjs";
 
 function remark(id, date) {
   const text = "AI 编程工具需要在真实工作任务中验证模型能力，并保留可核查的原始证据。";
@@ -40,6 +41,29 @@ test("daily publication archives accepted morning history before gating and stag
     < workflow.indexOf("node agent-workflow/tools/refresh-data-center-viewpoints-adapter.mjs"));
   const adapter = fs.readFileSync("agent-workflow/tools/refresh-data-center-viewpoints-adapter.mjs", "utf8");
   assert.match(adapter, /writeFrontstageData\(root\)/u);
+  assert.match(workflow, /refresh-data-center-viewpoints-adapter\.mjs[\s\S]+npm run translate:public-structured-fields\s+node agent-workflow\/tools\/refresh-data-center-viewpoints-adapter\.mjs\s+node --test agent-workflow\/tools\/tests\/public-zh-translation-v1\.test\.mjs/u);
+  assert.match(workflow, /stage_if_exists "01-SiteV2\/content\/11-databases\/public-zh-translations-v1\.json"/u);
+});
+
+test("serialized publication lanes resolve their branch after acquiring the shared lock", () => {
+  for (const file of ["daily-first-line-viewpoints-pr.yml", "daily-persistent-assets-pr.yml"]) {
+    const workflow = fs.readFileSync(`.github/workflows/${file}`, "utf8");
+    assert.match(workflow, /name: Check out repository\s+uses: actions\/checkout@v6\s+with:[\s\S]*?ref: \$\{\{ github\.ref \}\}\s+fetch-depth: 0/u);
+  }
+  const business = fs.readFileSync(".github/workflows/daily-persistent-assets-pr.yml", "utf8");
+  assert.match(business, /cp -a "\$resume_dir\/artifact\/\." \.[\s\S]+merge-source-intake-v1\.mjs --date="\$\{RUN_DATE\}" --git-ref=HEAD/u);
+  assert.match(business, /generate-funding-insights-deepseek\.mjs \\\s+--recover-from-git-ref=HEAD/u);
+  assert.match(business, /preserve-published-checkpoint-state\.mjs --git-ref=HEAD/u);
+});
+
+test("checkpoint ledger union retains both lanes and preserves the published review on collisions", () => {
+  const old = [{ id: "shared", value: "checkpoint" }, { id: "overseas", value: "accepted" }];
+  const published = [{ id: "shared", value: "published" }, { id: "domestic", value: "accepted" }];
+  const result = unionPublishedRows(old, published, (row) => row.id);
+  assert.deepEqual(result, [published[0], old[1], published[1]]);
+  assert.deepEqual(unionPublishedRows(result, published, (row) => row.id), result);
+  assert.equal(old[0].value, "checkpoint");
+  assert.throws(() => unionPublishedRows([{}], [], (row) => row.id), /stable identity/u);
 });
 
 test("recovered September viewpoint remains in history and the person's dated profile", () => {

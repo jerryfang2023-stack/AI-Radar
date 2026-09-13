@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-13T01:22:32.676Z",
+    "generatedAt": "2026-09-13T01:56:17.541Z",
     "latestDataDate": "2026-09-13",
     "currentDate": "2026-09-13",
-    "eventCount": 3197,
+    "eventCount": 3212,
     "quarantinedEventCount": 33,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -57,6 +57,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-3897af7586867f99",
       "EV-a1a60daa9b0cd597",
       "EV-c3e1670e2cd84200"
     ],
@@ -66,11 +67,12 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-08",
-    "lastSeen": "2026-09-09",
+    "lastSeen": "2026-09-13",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [
+        "EV-3897af7586867f99",
         "EV-a1a60daa9b0cd597",
         "EV-c3e1670e2cd84200"
       ],
@@ -81,6 +83,21 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-3897af7586867f99",
+        "dataDate": "2026-09-13",
+        "date": "2026-09-08",
+        "eventType": "procurement_contract",
+        "eventTypeLabel": "采购合同",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "TCS赢得₹122.6 Crore奥里萨邦AI治理合同，为50,000用户构建OSWAS 3.0",
+        "displayTags": [],
+        "entityIds": [
+          "EN-5fa790f3630f4914"
+        ]
+      },
       {
         "id": "EV-a1a60daa9b0cd597",
         "dataDate": "2026-09-09",
@@ -411,10 +428,45 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-12"
+      "lastSeen": "2026-09-13"
     }
   ],
   "fde": [
+    {
+      "id": "FDE-e47eee9791ea0875",
+      "eventId": "EV-3897af7586867f99",
+      "dataDate": "2026-09-13",
+      "date": "2026-09-08",
+      "title": "TCS赢得₹122.6 Crore奥里萨邦AI治理合同，为50,000用户构建OSWAS 3.0",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Government of Odisha",
+      "vendor": "Tata Consultancy Services (TCS)",
+      "industry": "Government",
+      "useCase": "Government of Odisha",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://infotechlead.com/software/tcs-wins-%E2%82%B9122-6-crore-odisha-ai-governance-deal-to-build-oswas-3-0-for-50000-users-98216",
+      "entityIds": [
+        "EN-5fa790f3630f4914",
+        "EN-4a354bbc9b70a6e6"
+      ]
+    },
     {
       "id": "FDE-506df8e185ad61de",
       "eventId": "EV-c3e1670e2cd84200",
@@ -489,6 +541,53 @@
   ],
   "hardware": [],
   "fdeDossiers": [
+    {
+      "id": "FDED-6d981a88620c7827",
+      "implementationKey": "6d981a88620c7827",
+      "eventId": "EV-3897af7586867f99",
+      "eventIds": [
+        "EV-3897af7586867f99"
+      ],
+      "dataDate": "2026-09-13",
+      "date": "2026-09-08",
+      "title": "Government of Odisha × Tata Consultancy Services (TCS)：Government of Odisha",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Government of Odisha",
+      "vendor": "Tata Consultancy Services (TCS)",
+      "industry": "Government",
+      "useCase": "Government of Odisha",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.625,
+      "completenessPercent": 63,
+      "missingFields": [
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-d81238fdd4b06a50",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-09-08",
+          "dataDate": "2026-09-13",
+          "eventId": "EV-3897af7586867f99",
+          "eventTitle": "TCS赢得₹122.6 Crore奥里萨邦AI治理合同，为50,000用户构建OSWAS 3.0",
+          "claimCount": 1,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://infotechlead.com/software/tcs-wins-%E2%82%B9122-6-crore-odisha-ai-governance-deal-to-build-oswas-3-0-for-50000-users-98216",
+      "entityIds": [
+        "EN-5fa790f3630f4914",
+        "EN-4a354bbc9b70a6e6"
+      ]
+    },
     {
       "id": "FDED-08a61f365c82517d",
       "implementationKey": "08a61f365c82517d",

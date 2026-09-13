@@ -5,13 +5,13 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-09-13T00:33:56.907Z",
+    "generated_at": "2026-09-13T01:28:44.469Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 444,
-    "input_hash": "d82f68eab4e7a7e3",
+    "decision_count": 447,
+    "input_hash": "1daaae706a96f787",
     "override_count": 18,
     "needs_review_count": 49,
     "low_confidence_count": 63
@@ -8823,6 +8823,70 @@
       "confidence": 0.85,
       "needs_review": false,
       "rationale": "公司提供AI驱动的计算加速基础设施，核心产品KernelCAT用于国产芯片自动化适配和算力性能释放，属于为AI构建者提供硬件/计算基础设施，因此归入infrastructure_compute > hardware_computing > computing_infrastructure。"
+    },
+    {
+      "event_id": "EV-a52dd9e9cac23694",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "healthcare_life_sciences",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "research_discovery",
+        "data_analysis"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "researcher",
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "公司核心产品MAP是覆盖靶点研究、分子设计、实验验证及临床数据分析的AI制药平台，围绕制药行业专业数据与研发流程构建，属于行业应用而非通用企业应用或物理AI。"
+    },
+    {
+      "event_id": "EV-10b007d20ad2794e",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "chips",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "automotive_transportation",
+        "logistics_supply_chain"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "公司专注于全栈自研AI推理GPU芯片，产品包括面向云端及边缘端视觉推理的S1、兼容CUDA生态的S2，以及针对Agent推理的S3。芯片属于基础设施计算硬件，产品形态为芯片加速器。主要应用场景为物理自动化（视觉推理、边缘端推理），目标用户包括开发者和企业用户。"
+    },
+    {
+      "event_id": "EV-798081a4ec056f8c",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "data",
+      "market_application_id": "synthetic_data",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "physical_automation",
+        "design_engineering"
+      ],
+      "industry_ids": [
+        "automotive_transportation",
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.8,
+      "needs_review": false,
+      "rationale": "公司自述为物理AI数据基础设施企业，产品包括世界模拟器和多模态数据采集硬件，为机器人等物理AI构建者提供仿真与数据，属于基础设施计算中的数据合成，而非直接部署物理AI。"
     },
     {
       "event_id": "EV-65d274d4277815dc",
