@@ -1,3 +1,14 @@
+// Shared dated V4 assets can be published by China Funding before the general
+// collector runs. A healthy projection alone is not proof that this lane ran.
+export function isBusinessSignalsProductionReady(manifest = {}, date = "") {
+  const outcomes = manifest?.outcomes || {};
+  return Boolean(date) && manifest?.date === date
+    && manifest.workflow_mode === "business_signals_pr"
+    && ["success", "restored"].includes(outcomes.monitor)
+    && ["structured_intake_gate", "data_center_v4_build", "data_center_v4_gate", "data_center_v4_materialize"]
+      .every((stage) => outcomes[stage] === "success");
+}
+
 export function isV4ManifestReady(manifest = {}, date = "") {
   return manifest.product_version === "SITE-V4.0-data-center"
     && manifest.date === date

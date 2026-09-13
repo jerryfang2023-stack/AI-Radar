@@ -325,7 +325,8 @@ jobs:
         run: |
           set -euo pipefail
           pr_number="${{ steps.pr.outputs.pr_number }}"
-          if gh pr merge "$pr_number" \
+          merge_head="$(node agent-workflow/tools/wait-for-production-code-checks.mjs --pr="$pr_number")"
+          if gh pr merge "$pr_number" --match-head-commit "$merge_head" \
             --squash \
             --auto \
             --delete-branch \
@@ -337,7 +338,7 @@ jobs:
           fi
           cat auto-merge-error.log >&2
           if grep -Eqi "auto-merge.*disabled|not enabled for this repository|GraphQL:.*auto.?merge" auto-merge-error.log; then
-            gh pr merge "$pr_number" \
+            gh pr merge "$pr_number" --match-head-commit "$merge_head" \
               --squash \
               --delete-branch \
               --subject "Update Funding Insights for ${RUN_DATE}" \

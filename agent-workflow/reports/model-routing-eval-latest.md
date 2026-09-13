@@ -1,12 +1,12 @@
 # Codex Model Routing Eval - Latest
 
-Generated: 2026-09-11T15:52:07.894Z
+Generated: 2026-09-13T07:40:40.251Z
 
 Protocol: `agent-workflow/model-evals/model-routing-v1.md`
 
 | Profile | Model | Effort | Status | Score | Decisions | Evidence | Duration |
 |---|---|---|---|---:|---:|---:|---:|
-| astra-high | gpt-6-astra | high | completed | 46/46 | 23/23 | 23/23 | 155.4s |
+| astra-high | gpt-6-astra | high | completed | 48/48 | 24/24 | 24/24 | 137.6s |
 
 ## Mismatches
 

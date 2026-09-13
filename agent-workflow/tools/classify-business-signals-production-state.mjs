@@ -29,7 +29,13 @@ export function classifyBusinessSignalsProduction(input = {}) {
 
   const v4Stages = [
     ["evidence_supply", [["monitor", "Daily Monitor"], ["evidenceGate", "evidence-supply gate"]]],
-    ["data_center_v4", [["dataCenterBuild", "Data Center V4 build"], ["dataCenterGate", "Data Center V4 integrity gate"], ["dataCenterMaterialize", "Data Center V4 materialization"]]],
+    ...(Object.hasOwn(input, "evidenceBoundary") ? [["private_evidence", [["evidenceBoundary", "private evidence persistence/public boundary"]]]] : []),
+    ["data_center_v4", [["dataCenterBuild", "Data Center V4 build"]]],
+    // The optional model-assisted rebuild may legitimately be skipped. Its
+    // explicit failure must not be blamed on the later skipped integrity gate.
+    ...(value(input, "modelRebuild") === "failure" ? [["model_rebuild", [["modelRebuild", "accepted model-candidate rebuild"]]]] : []),
+    ...(Object.hasOwn(input, "sourceTitleRepair") ? [["source_title_translation", [["sourceTitleRepair", "required source-title translation"]]]] : []),
+    ["data_center_v4", [["dataCenterGate", "Data Center V4 integrity gate"], ["dataCenterMaterialize", "Data Center V4 materialization"]]],
     ["operations", [["operations", "operations data sync"], ["freshness", "V4 pre-commit gate"]]],
   ];
 
@@ -65,6 +71,10 @@ export function classifyBusinessSignalsProduction(input = {}) {
 function runFixtures() {
   const passedStages = { monitor: "success", evidenceGate: "success", dataCenterBuild: "success", dataCenterGate: "success", dataCenterMaterialize: "success", opportunity: "success", trend: "success", funding: "success", operations: "success", freshness: "success", compatibilityRetired: "true", commit: "success" };
   assert.equal(classifyBusinessSignalsProduction({ ...passedStages, dataCenterGate: "failure" }).stage, "data_center_v4");
+  assert.equal(classifyBusinessSignalsProduction({ ...passedStages, sourceTitleRepair: "failure", dataCenterGate: "skipped" }).stage, "source_title_translation");
+  assert.equal(classifyBusinessSignalsProduction({ ...passedStages, evidenceBoundary: "failure", dataCenterBuild: "skipped" }).stage, "private_evidence");
+  assert.equal(classifyBusinessSignalsProduction({ ...passedStages, modelRebuild: "failure", sourceTitleRepair: "skipped" }).stage, "model_rebuild");
+  assert.equal(classifyBusinessSignalsProduction({ ...passedStages, modelRebuild: "skipped", sourceTitleRepair: "success" }).ok, true);
   const optionalFailure = classifyBusinessSignalsProduction({ ...passedStages, opportunity: "failure", changed: "false" });
   assert.equal(optionalFailure.ok, true);
   assert.equal(optionalFailure.status, "passed");

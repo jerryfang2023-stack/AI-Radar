@@ -282,7 +282,8 @@ jobs:
         run: |
           set -euo pipefail
           pr_number="${{ steps.pr.outputs.pr_number }}"
-          if gh pr merge "$pr_number" \
+          merge_head="$(node agent-workflow/tools/wait-for-production-code-checks.mjs --pr="$pr_number")"
+          if gh pr merge "$pr_number" --match-head-commit "$merge_head" \
             --squash \
             --auto \
             --delete-branch \
@@ -296,7 +297,7 @@ jobs:
           cat auto-merge-error.log >&2
           if grep -Eqi "auto.?merge|Auto merge is not allowed|enablePullRequestAutoMerge" auto-merge-error.log; then
             echo "Repository auto-merge is not available; attempting immediate merge after gates passed."
-            gh pr merge "$pr_number" \
+            gh pr merge "$pr_number" --match-head-commit "$merge_head" \
               --squash \
               --delete-branch \
               --subject "Update community intelligence for ${RUN_DATE}" \

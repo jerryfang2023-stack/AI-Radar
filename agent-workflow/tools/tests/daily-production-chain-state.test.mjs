@@ -2,13 +2,52 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
+import { inspectProductionChecks, requiredChecks } from "../wait-for-production-code-checks.mjs";
 import {
   isCollectionTelemetryReady,
   isV4ManifestReady,
   matchesCollectionCounts,
+  isBusinessSignalsProductionReady,
 } from "../lib/daily-production-chain-state.mjs";
 
 const date = "2026-07-30";
+
+test("automatic publication requires both current-head CI results, not an empty check list", () => {
+  const checks = requiredChecks.map((name, id) => ({ id, name, head_sha: "head", app: { slug: "github-actions" }, status: "completed", conclusion: "success" }));
+  assert.equal(inspectProductionChecks([], "head").status, "waiting");
+  assert.equal(inspectProductionChecks(checks.slice(0, 1), "head").status, "waiting");
+  assert.equal(inspectProductionChecks(checks, "other-head").status, "waiting");
+  assert.equal(inspectProductionChecks(checks.map((check) => ({ ...check, app: { slug: "other-app" } })), "head").status, "waiting");
+  assert.equal(inspectProductionChecks(checks, "head").status, "passed");
+  for (const conclusion of ["failure", "cancelled", "skipped", "neutral", "timed_out"]) {
+    assert.equal(inspectProductionChecks([...checks, { ...checks[0], id: 100, conclusion }], "head").status, "failed");
+  }
+  assert.equal(inspectProductionChecks([...checks, { ...checks[0], id: 100, status: "in_progress", conclusion: null }], "head").status, "waiting");
+  for (const workflow of ["daily-persistent-assets-pr.yml", "daily-funding-insights-pr.yml", "daily-first-line-viewpoints-pr.yml", "daily-community-intelligence-pr.yml", "china-funding-pr.yml"]) {
+    const text = fs.readFileSync(path.join(process.cwd(), ".github/workflows", workflow), "utf8");
+    assert.ok(text.includes("wait-for-production-code-checks.mjs --pr="), workflow);
+    for (const line of text.split("\n").filter((line) => line.includes("gh pr merge"))) {
+      assert.ok(line.includes('--match-head-commit "$merge_head"'), `${workflow}: unpinned merge`);
+    }
+  }
+});
+
+test("shared same-date China assets cannot suppress general Business Signals collection", () => {
+  const manifest = { date, workflow_mode: "business_signals_pr", outcomes: {
+    monitor: "success", structured_intake_gate: "success", data_center_v4_build: "success",
+    data_center_v4_gate: "success", data_center_v4_materialize: "success",
+  } };
+  assert.equal(isBusinessSignalsProductionReady(manifest, date), true);
+  assert.equal(isBusinessSignalsProductionReady({ ...manifest, outcomes: { ...manifest.outcomes, monitor: "restored" } }, date), true);
+  for (const invalid of [null, {}, { ...manifest, date: "2026-07-29" },
+    { ...manifest, workflow_mode: "china_funding_pr" },
+    ...["monitor", "structured_intake_gate", "data_center_v4_build", "data_center_v4_gate", "data_center_v4_materialize"]
+      .map((key) => ({ ...manifest, outcomes: { ...manifest.outcomes, [key]: "skipped" } })),
+  ]) assert.equal(isBusinessSignalsProductionReady(invalid, date), false);
+  const workflow = fs.readFileSync(path.join(process.cwd(), ".github/workflows/daily-persistent-assets-pr.yml"), "utf8");
+  assert.match(workflow, /assert-business-signals-completion\.mjs --date=/u);
+  for (const key of ["evidenceBoundary", "modelRebuild", "sourceTitleRepair"]) assert.ok(workflow.includes(`--${key}=`));
+});
 
 test("resumed collection counts require complete, valid composite provenance", () => {
   const intake = { raw_documents: ["a", "b", "c"].map((raw_id) => ({ raw_id, intake_diagnostics: { eligible_for_v4_extraction: raw_id !== "b" } })), collection_batches: [

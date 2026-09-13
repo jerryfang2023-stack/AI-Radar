@@ -139,6 +139,20 @@ Production Code Checks run for every pull request without path filters. Atomic
 split-data publications can exceed GitHub's filtered diff limit and previously
 left code changes unchecked. Verify both Windows and Linux results for the exact
 head commit before merging; an empty check list is not a passing check.
+The five daily cloud PR publishers enforce this with
+`wait-for-production-code-checks.mjs --pr=<number-or-url>` and merge only with
+its returned `--match-head-commit`. Missing, failed or changed-head checks leave
+the accepted branch available for targeted publication repair; they must not
+restart source capture.
+
+Same-date shared V4 data alone cannot suppress the general Business Signals
+collector: its dated `business_signals_pr` completion receipt must also prove
+accepted collection/restoration and factual materialization. China Funding can
+publish that shared date first without completing the general lane.
+Production summaries preserve private-evidence, model-rebuild and required-title
+outcomes so a later skipped gate does not conceal the earliest failed owner.
+Final Closure accepts a supervision report only when generated during its current
+child invocation; an older same-date report cannot certify a crashed invocation.
 
 First-Line Viewpoints archives approved morning records by original URL on each
 publication. Offline rebuilds merge the existing approved history before adding
