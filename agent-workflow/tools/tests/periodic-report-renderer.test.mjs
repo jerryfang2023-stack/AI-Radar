@@ -93,7 +93,7 @@ test("periodic renderer escapes model-supplied HTML", () => {
   assert.doesNotMatch(renderBody("## 1. <img src=x onerror=alert(1)>"), /<img/u);
 });
 
-test("recent weekly reports render as editorial modules with evidence last", () => {
+test("historical weekly reports retain analysis modules after requested module removal", () => {
   for (const date of ["2026-07-13", "2026-07-20"]) {
     const source = fs.readFileSync(path.join(process.cwd(), REPOSITORY_CONTENT_PATHS.industryReportsRoot, `${date}--weekly-report--ai-business-change-radar.md`), "utf8");
     const html = renderBody(parseFrontmatter(source).body);
@@ -102,12 +102,27 @@ test("recent weekly reports render as editorial modules with evidence last", () 
       "weekly-chain-list",
       "weekly-impact-grid",
       "weekly-opportunity-list",
-      "weekly-watch-grid",
-      "weekly-action-grid",
-      "weekly-report-method",
     ]) assert.match(html, new RegExp(`class="[^"]*${moduleClass}`, "u"), `${date} must render ${moduleClass}`);
-    assert.ok(html.indexOf('id="section-0"') > html.indexOf('id="section-8"'), `${date} evidence section must render last`);
+    assert.doesNotMatch(html, /weekly-watch-grid|weekly-action-grid|weekly-report-method|id="section-[0678]"/u);
     assert.doesNotMatch(html, /<table|^\|[-:| ]+\|/mu);
+  }
+});
+
+test("published reports exclude user-removed modules while retaining stable identity and body", () => {
+  for (const kind of ["weekly", "monthly"]) {
+    const reports = discoverPublishedReports(process.cwd(), kind);
+    assert.ok(reports.length > 0);
+    for (const report of reports) {
+      const source = fs.readFileSync(path.join(process.cwd(), report.source), "utf8");
+      const { values, body } = parseFrontmatter(source);
+      assert.equal(values.status, "published");
+      assert.ok(values.title && (values.week || values.month));
+      const headings = body.split("\n").filter(line => /^#{1,6}\s/u.test(line)).join("\n");
+      assert.doesNotMatch(headings, kind === "weekly"
+        ? /数据边界|反共识判断|观察清单|分角色行动结论|可执行结论/u
+        : /数据边界|矛盾与反证|关键矛盾|下月验证清单/u, report.source);
+      assert.ok(body.length > 500, report.source);
+    }
   }
 });
 

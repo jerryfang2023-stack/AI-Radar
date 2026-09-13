@@ -21,15 +21,6 @@ industry_ids: []
 
 # Bun 用 Claude 重写百万行代码，账单先成了新边界
 
-## 0. 数据口径与边界
-
-- 时间窗口：2026-07-06 至 2026-07-12，按上周自然周统计。
-- Signals：`01-SiteV2/site/data/v3-data-observation-desk.json`，窗口内 91 张 Business Signal Cards，其中案例 42、融资 26、产品 23。
-- Signals 高频标签：客户采用 41、Agentic AI 32、企业工作流 24、产品发布 22、AI Coding 19、AI 基础设施 17、企业数据智能 12、AI 客服 9、定价与成本 8、客户结果指标 7。
-- Opinions：`01-SiteV2/site/data/follow-builders-daily.json`，窗口内 20 条 First-Line Viewpoints，其中产品与创业 14、Agent 3、AI 基础设施 2、AI 编程 1；本期体育和闲聊噪音较高，使用时只取与 Agent、AI Coding、成本和需求弹性相关的观点。
-- Community：`01-SiteV2/site/data/community-intelligence-daily/*.json`，窗口内原始 427 条，按 URL 优先、标题辅助粗去重后 41 条；高频工具包括飞书 24、Codex 15、Claude 7、Obsidian 6、Claude Code 5。
-- 边界：Opinions 和 Community 只用于解释权与需求互证，不作为 Business Signal Card 的事实证据。
-
 ## 1. 一句话结论
 
 上周 AI 商业变化的主线是：**Agentic AI 正从行业流程验证进入可交付落地，软件工程和企业流程成为最先承压的场景；与此同时，推理算力、模型价格、可靠性、权限和信任治理从后台问题变成采购前置条件。**
@@ -130,24 +121,3 @@ ActionAI 完成 1000 万美元种子轮融资，明确指向“Fix AI's Trust Pr
 - MVP：AI 使用资产清单、模型调用账单、敏感数据路径、权限边界、日志留存和 5 个高风险流程治理模板。
 - 变现：诊断费、月度巡检、模型路由选型和治理文档订阅。
 - 风险：需要懂业务流程和技术栈，不能只做合规清单。
-
-## 6. 反共识判断
-
-主流叙事容易说“AI 会减少软件和知识工作岗位”，但本周更值得跟踪的是相反方向：当单位知识工作的成本下降，组织会启动更多软件和流程改造项目。Swyx 用 Jevons paradox 解释 agentic engineering，Aaron Levie 也指出软件岗位需求可能因为生产成本下降而扩张。Signals 侧的 Bun 重构、企业 Agent 部署和社区工作站案例，都支持“需求扩张而不是简单替代”的判断。
-
-因此，本周不应把 AI Coding 理解为“替代程序员”，而应理解为“释放更多软件和流程需求”。真正稀缺的是能判断做什么、如何接入系统、如何维护长期结果的人。
-
-## 7. 下周观察清单
-
-- 公司 / 产品：Anthropic / UST、KTern.AI、Amazon Bedrock AgentCore、IBM、Capita / Amazon Connect、L&T Finance、Bun、Claude Code、Kimi Code、Google LiteRT.js、Upscale AI、TensorWave、Etched、OXMIQ、SK Hynix、Sunrun、ActionAI、Manus / Tencent、Apple / OpenAI。
-- 技术方向：企业上下文层、Agent 审计日志、AI Coding 回滚机制、模型路由、推理 ASIC、分布式算力、端侧模型、可靠性评估、AI 成本上限。
-- 垂直行业：SAP 转型、客服联络中心、金融信贷、采购、制造质检、医疗沟通、生命科学研发、内容电商、AI 企培。
-- 待验证信号：企业是否愿意为成本治理单独付费；AI Coding 项目是否能披露稳定 ROI；推理 ASIC 合同是否转化为生产使用；社区 AI 工作站能否从模板销售升级为月度服务。
-
-## 8. 可执行结论
-
-1. 企业老板：不要继续堆工具账号，先选一条业务流程，用 30 天验证 Agent 是否能降低交付周期或提升结果质量。
-2. 技术团队：把模型路由、权限、日志、成本和回滚写进 AI 项目的默认上线清单。
-3. 创业者 / 服务商：优先验证行业流程 Agent、AI Coding 成本治理和推理信任审计三类服务。
-4. 内容和社区团队：把内容生产能力升级为线索承接、知识库、交付 SOP 和复购触发。
-5. 观澜 AI：下周重点追踪企业流程 Agent、AI Coding 成本、推理基础设施、信任治理和社区工作站复购。

@@ -1,30 +1,8 @@
-# Monthly Report Page Generator Memory
+# Monthly Report Publication Memory
 
-## 2026-08-10
-
-- Complete monthly reports publish to the independent AI financing site. WaveSight retains canonical Markdown, evidence, generation records, and stable redirects only; Guanlan Research and duplicate monthly HTML must not return.
-- Dynamic report discovery and metadata/body parity replace the old hand-maintained archive list. Report removal, date regression, or incomplete bodies fail closed.
-
-## 2026-07-27
-
-- Public report prose must never expose internal evidence IDs such as `[E:...]`, `[O:...]`, or `[C:...]`. Resolve them to understated, reader-facing source links with understandable labels; suppress a marker entirely when no safe public URL can be resolved.
-- Evidence-presentation changes are cross-report contract changes: audit all published weekly and monthly pages and rebuild only the dated pages that actually contain obsolete markers.
-
-## 2026-07-21
-
-- Every weekly or monthly renderer run must rebuild both Guanlan Research feature cards from the latest `status: published` canonical report sources. The monthly title, reporting window, and route must never be maintained as independent static HTML fields.
-- Guanlan Research validation must derive the expected latest monthly issue from source frontmatter, so the next accepted month automatically replaces the first-screen monthly card even when the current run was triggered by a weekly report.
-
-## 2026-07-17
-
-- Monthly detail pages are part of the unified V4 frontstage and must use the V4 logo header, Data Center / Application Center sidebar, `data-center-v4.css`, and `v4-report-shell.js`.
-- `intelligence-map.html` is the only Guanlan Research entrance; `reports.html` is only a compatibility redirect.
-
-## 2026-06-30
-
-- User preference: monthly detail pages must present the full report content, not a short overview. Use multiple forms such as trend charts, radar/bar charts, matrices, designed tables, longform blocks, and cards.
-- User preference: nonessential fields such as data boundary, source scope, method notes, and evidence boundary should be compressed into a final appendix unless they are necessary for first-screen judgment.
-- User preference: monthly report body needs comfortable reading design: clear hierarchy, title ornaments, symbols, side numbering, paragraph rhythm, and visual distinction between primary judgment and supporting detail.
-- User preference: all tables need editorial styling with better color, font weight, row bands, first-column emphasis, and mobile readability. Raw dense table grids are not acceptable.
-- User preference: report center should contain weekly and monthly as separate subcolumns; avoid redundant `报告中心` buttons when the section already represents reports.
-- User preference: monthly detail hero should not contain small explanatory deck copy or report-type helper subtitles when the title and core statement already carry the context. Desktop titles should use enough width and tuned typography to stay on one line when practical; mobile can wrap naturally.
+- The independent AI financing site owns report reading and navigation. WaveSight retains canonical Markdown, generation evidence and stable redirects.
+- Discover published reports dynamically. Preserve IDs, dates, titles and complete remaining bodies during historical module removal; never remove report records as a side effect.
+- New monthly reports follow the current six-section writing contract. Removed modules must not return through old templates, memories, appendices or generated navigation.
+- Public prose strips internal E/O/C IDs and collection metadata. Website and Mini Program receive the same full body through the protected content bundle.
+- Verify publication receipt parity, both canonical and Mini Program date-alias bodies, and reader-visible completeness after deployment.
+- Runtime report updates do not require a new Mini Program client upload.

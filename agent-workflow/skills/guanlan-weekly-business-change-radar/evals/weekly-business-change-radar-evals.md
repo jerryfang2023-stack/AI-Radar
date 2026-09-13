@@ -11,7 +11,7 @@
    - Pass when `[O:]` and `[C:]` support interpretation or demand context only and never establish event facts.
 
 4. `exact_counts`
-   - Pass when the data-boundary section reports exact manifest counts.
+   - Pass when frontmatter and generation provenance record exact manifest counts.
 
 5. `trend_chain_evidence`
    - Pass when each trend chain cites at least two Events, one viewpoint, and one community item.
@@ -30,3 +30,6 @@
 
 10. `headline_judgment`
     - Pass when the title contains one evidence-bounded judgment and a concrete business consequence.
+
+11. `five_sections`
+    - Pass when only the five current sections are produced; removed modules cannot return under another heading.

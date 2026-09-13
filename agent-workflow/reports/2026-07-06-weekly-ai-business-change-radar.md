@@ -13,17 +13,6 @@ method: SxOxC cross-check + trend-chain five-step method + 100-point opportunity
 
 # Agent 已进入科研、采购和支付，企业却先追问成本与责任
 
-## 0. 数据口径
-
-- 时间窗口：2026-06-29 至 2026-07-05，按上周自然周统计。
-- Signals：`01-SiteV2/site/data/v3-data-observation-desk.json`，窗口内 112 张 Business Signal Cards，其中 case 62、product-service 30、funding 20。
-- Signals 日期分布：2026-06-29 36 张，06-30 10 张，07-01 5 张，07-02 16 张，07-03 14 张，07-04 15 张，07-05 16 张。
-- Signals 高频标签：企业工作流 64、AI Coding 35、AI 基础设施 30、客户采用 27、企业数据智能 19、融资证据 15、AI 治理 7。
-- Opinions：`01-SiteV2/site/data/follow-builders-daily.json`，窗口内 41 条 First-Line Viewpoints，其中 产品与创业 33 条、Agent 4 条、AI 编程 3 条、AI 基础设施 1 条；本期一线观点噪音较高，只采用与 Agent SDK、token 消耗、Codex 可靠性有关的弱互证。
-- Community：`01-SiteV2/site/data/community-intelligence-daily/2026-06-29.json` 至 `2026-07-05.json`，原始 427 条，按 URL 优先、标题辅助粗去重后 44 条；其中 opportunity 27、tool_tip 14、industry_case 3。
-- Community 需求分布：获客营销与转化 29、交付与服务自动化 7、内容生产与 IP 运营 6；高频工具为 飞书 28、Claude 7、Codex 7、Claude Code 4、Cursor 3、Obsidian 3；高频痛点为 内容生产与账号增长 24、交付标准化与复购 21、知识沉淀与效率 15、获客成本与精准线索 14、工具配置与 AI 基建门槛 10。
-- 边界：Signals 是商业事实主证据；Opinions 和 Community 只用于解释权与需求互证，不作为 Business Signal Card 的事实证据。
-
 ## 1. 一句话结论
 
 上周 AI 商业变化的主线是：企业 Agent 正从组织级工作流试点继续推进到科研、采购、支付、质检、医疗和药物发现等具名行业流程验证；与此同时，推理成本、数据中心资源、安全漏洞、模型路由和权限治理开始成为企业采购前的硬条件。
@@ -144,45 +133,3 @@ method: SxOxC cross-check + trend-chain five-step method + 100-point opportunity
 - MVP：10 个工作流模板：选题、脚本、SEO 页、客户 FAQ、知识库、数据表、交付复盘和线索承接。
 - 变现：模板包、训练营、私有部署、陪跑项目和月度复盘。
 - Score：78 / 100（痛点强度 20，付费意愿 15，供给缺口 16，时机 14，获客 8，可行性 8）。
-
-## 6. 反共识判断
-
-主流叙事会继续追逐更强模型、视频生成、开源模型和 AI Coding 工具。但本周更值得提前下注的是“行业流程 Agent + 成本治理 + 部署服务”这组组合，因为正式预算更接近可审计流程、业务结果和成本解释，而不是单点能力演示。
-
-反证据来自三侧：Signals 中最强案例已经进入 Claude Science、Bristol Myers、Visa、Tesla、Takeda / Insilico 和微软企业部署服务；Opinions 虽噪音较高，但少数有效观点集中在 SDK 标准、token 消耗和 Codex 稳定性；Community 最强痛点仍是交付标准化、知识沉淀和获客承接，而不是“看更多 AI 新闻”。
-
-## 7. 下周观察清单
-
-**公司 / 产品**
-
-- Claude Science、Adobe Agentic Workflow、Microsoft Frontier、QoderWork / 悟空 / MuleRun、Visa Agentic Commerce、Bristol Myers、Takeda / Insilico、NVIDIA Nemotron、Wafer MI355X、GitHub Copilot x Kimi、Vercel AI SDK 7、Thoughtworks Agent/works、Tigera、Engram、Trase、Together、Venice AI、Kling。
-
-**技术方向**
-
-- 多智能体科研工作台、企业上下文层、Agent SDK 标准化、模型路由、推理成本、数据中心水耗与冷却、AI 漏洞发现、本地优先浏览器 Agent、AI Coding 可靠性、智能体商业交易。
-
-**垂直行业**
-
-- 医疗、制药、采购、支付 / 银行、制造质检、企业知识管理、销售运营、内容电商、本地服务、AI 培训。
-
-**社区问题**
-
-- AI 工作站是否从一次性项目变成持续服务。
-- 飞书 / Obsidian / Codex / Claude Code SOP 是否出现团队复购。
-- 线下 AI 项目社群是否能转成标准交付和客单价。
-- Token 成本是否开始影响社区产品定价。
-
-**待验证信号**
-
-- Claude Science 是否披露更多真实科研团队留存、部署周期和审计结果。
-- Bristol Myers、Visa、Tesla 等案例是否出现可复用指标，而不只是单点宣传。
-- 企业是否愿意为成本治理和模型路由单独付费。
-- 社区 AI 工作站是否能从模板包升级为月度运营服务。
-
-## 8. 可执行结论
-
-1. 对企业老板：先选一条高频、低合规风险、有明确指标的流程做 Agent 试点；同时定义数据边界、权限、成本、复核人和业务结果。
-2. 对创业者 / 服务商：优先验证行业流程 Agent 落地包、AI 成本 / 治理审计、科研 / 医疗 AI 工作台实施、一人公司 AI 工作站四个方向。
-3. 对技术团队：把模型路由、权限隔离、日志留存、成本上限、本地 / 云端边界做成默认上线条件，不要等事故后补。
-4. 对内容和社区团队：把 AI 内容从“发更多”升级为“线索承接 + 交付 SOP + 知识库 + 复购触发”的闭环。
-5. 对观澜 AI：下周重点追踪行业流程 Agent、成本和治理、AI Coding 可靠性、社区 AI 工作站复购四条链路，并记录每个案例的客户、流程、指标、周期和付费方式。

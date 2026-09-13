@@ -3,7 +3,7 @@ name: guanlan-monthly-report-page-generator
 description: Use when publishing, updating, or repairing an accepted WaveSight monthly report after `guanlan-monthly-business-structure-report`. Generates the stable WaveSight compatibility redirect and verifies complete publication to the independent AI financing site. Do not use for writing the monthly judgment, recreating Guanlan Research, or generating duplicate monthly HTML.
 metadata:
   guanlan:
-    version: "1.3.0"
+    version: "1.4.0"
     column_version: "REPORTS-V1.3.0-funding-portal"
     lane: "AI financing-site reports"
     status: "current sub-skill"
@@ -37,11 +37,11 @@ The periodic controller invokes this Skill only after the monthly content gate p
 ## Workflow
 
 1. Confirm the canonical source is named `YYYY-MM-DD--monthly-report--ai-business-structure-and-opportunity.md`, has `content_type: monthly-report`, a valid `month`, `date`, `title`, `window`, and `status: published` after acceptance.
-2. Run the monthly content gate before any publication write.
+2. Run the current six-section content gate for new or regenerated reports. For user-authorized module removal from historical reports, verify the exact removed headings, unchanged remaining prose and stable metadata; do not force old reports through new writing requirements.
 3. Run `node agent-workflow/tools/render-periodic-report-pages.mjs --kind=monthly --date=YYYY-MM-DD`. The writer must map the route to `https://www.zkdlj.vip/#report/monthly-YYYY-MM` and keep the archive compatibility redirect at `#reports`.
 4. Preserve the full report argument in Markdown. Final Closure dynamically scans published reports and generates portal metadata plus complete bodies; never shorten the body to a local summary or hand-maintain report inventory.
 5. Verify duplicate IDs, date regression, report removal, invalid title/summary, missing body, and metadata/body mismatch fail closed.
-6. Verify live newest ID, report count, and body count after atomic VPS deployment. Restore the prior release if readback fails.
+6. Verify live newest ID, report count, complete visible body and absence of removed modules in both website and protected Mini Program bodies after atomic VPS deployment. Restore the prior release if readback fails.
 7. Run the monthly content tests, periodic redirect tests, frontstage regression, version consistency, and portal publisher dry run.
 
 ## Hard Rules

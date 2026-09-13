@@ -24,17 +24,6 @@ industry_ids: []
 
 # 企业 AI 的主战场正在从聊天框搬进组织工作流
 
-## 0. 数据口径
-
-- 时间窗口：2026-06-22 至 2026-06-28，按上周自然周统计。
-- Signals：`01-SiteV2/site/data/v3-data-observation-desk.json`，窗口内 97 张 Business Signal Cards，其中 case 36、product-service 54、funding 7。
-- Signals 日期分布：2026-06-22 8 张，06-23 15 张，06-24 16 张，06-25 17 张，06-26 6 张，06-27 16 张，06-28 19 张。
-- Signals 高频标签：AI Agent 97 张，企业工作流 79 张，大中型企业 79 张，产品发布 54 张，AI Coding 42 张，AI 基础设施 34 张，企业数据智能 14 张，AI 治理 / Agent 权限治理各 6 张。
-- Opinions：`01-SiteV2/site/data/follow-builders-daily.json`，窗口内 38 条 First-Line Viewpoints，覆盖 16 位 builders；其中产品与创业 30 条、AI 编程 5 条、Agent 2 条、AI 基础设施 1 条。
-- Community：`01-SiteV2/site/data/community-intelligence-daily/2026-06-22.json` 至 `2026-06-28.json`，原始 397 条，按 URL 优先去重后 54 条；其中 opportunity 35、tool_tip 15、industry_case 4。
-- Community 需求分布：获客营销与转化 35 条、交付与服务自动化 10 条、内容生产与 IP 运营 5 条；高频痛点为内容生产与账号增长 30、交付标准化与复购 29、知识沉淀与效率 28、获客成本与精准线索 23、工具配置与 AI 基建门槛 12。
-- 边界：Opinions 和 Community 只用于解释权与需求互证，不作为 Business Signal Card 的事实证据。
-
 ## 1. 一句话结论
 
 上周 AI 商业变化的主线是：企业 AI 正从“能不能让 Agent 完成任务”的能力演示，转向“能不能把 Agent 放进真实组织工作流、权限边界、上下文系统、销售客服闭环和工程交付链路”的流程接管问题；未来 1-3 个月更有价值的机会会从通用工具转向垂直工作流部署、企业上下文基础设施、Agent 治理和可复购交付包。
@@ -152,53 +141,3 @@ industry_ids: []
 | Score | 79 / 100：痛点 20，付费 15，供给缺口 17，时机 14，获客 8，团队可行性 8，风险扣 3。 |
 
 判断：Watch / Validate 边界。需求真实，但要避免只卖“Codex 教程”，必须绑定行业场景和交付结果。
-
-## 6. 反共识判断
-
-主流叙事是：上周最热的是模型、芯片和 AI Coding 工具，因此机会应优先押注更强模型、更好 IDE 或内容生成工具。
-
-反共识判断：更值得提前下注的是“企业上下文 + Agent 治理 + 工作流落地服务”，因为它们更接近正式预算和复购，而不是只接近试用热度。
-
-反证据来自两侧：
-
-- Signals 侧，AWS Context / Continuum、Claude Tag、Notion x Cursor SDK、PayPal x Agentforce、Petrobras 税务节省、Lemvigh-Muller 订单确认、Tigera 治理原则都不是单纯模型能力展示，而是把 AI 放进组织流程。
-- Opinions 侧，Aaron Levie 强调应用层必须理解 workflow、context 和 business process；Dataiku 关注金融 AI 可解释性和 AI 成功差距；Simon Willison 的提示注入与 AI 助手事故内容提醒，Agent 的边界和责任同样是产品问题。
-- Community 侧，最强痛点不是“想看更多 AI 新闻”，而是内容增长、交付标准化、知识沉淀、获客线索和工具配置门槛。
-
-对决策者的含义：显性流量在 AI Coding 和内容工具，预算需求在流程接管、治理、成本优化和交付服务。前者适合获客，后者更适合形成高客单价。
-
-## 7. 下周观察清单
-
-**公司 / 产品**
-
-- AWS Context / Continuum、Anthropic Claude Tag、Notion x Cursor SDK、Google ADK / A2A、Tigera、Dataiku、GitHub Copilot、Cursor、Vercel AI SDK、OpenAI / Broadcom Jalapeno、Anthropic / Micron、Agentforce、Databricks Agent Bricks、Runlayer、Orthogonal。
-
-**技术方向**
-
-- 企业上下文图谱、Agent 身份和权限、模型路由、AI 成本审计、AI Coding 工作台、长周期自主任务、客服 / 销售 Agent、订单处理 Agent、AI 芯片与内存协同、可解释 AI。
-
-**垂直行业**
-
-- 金融、法律、保险、销售与客户成功、客服与工单、制造和订单处理、企业知识管理、内容电商、AI 培训与企业服务。
-
-**社区问题**
-
-- Codex / Claude Code 是否从一次性教程变成模板订阅。
-- 飞书 / Obsidian / RPA 工作流是否出现明确复购和团队采用。
-- AI 企业服务是否开始出现标准项目报价、交付边界和结果指标。
-- 内容获客案例是否能连接后端交付，而不只是停留在流量。
-
-**待验证信号**
-
-- Claude Tag / Notion x Cursor / AWS Context 是否披露真实客户留存、部署周期和权限治理细节。
-- Agentforce、GitHub 客服、Lemvigh-Muller 订单确认等案例是否出现可复用指标，而不是单点宣传。
-- 模型路由 / 成本治理是否从观点讨论进入采购清单。
-- 社区 AI 工作站是否能从模板包变成持续服务。
-
-## 8. 可执行结论
-
-1. 对企业老板：不要继续堆工具账号，先选一条高频流程做 Agent 试点，并同步定义数据边界、权限、成本、复核人和业务指标。
-2. 对创业者：优先验证企业 Agent 工作流落地包、Agent 治理轻咨询、非技术团队 AI 工作站三个方向；不要从泛 SaaS 或泛课程起步。
-3. 对内容团队：把 AI 内容从“发更多”升级为“前端获客 + 线索承接 + 交付资产 + 复购触发”的闭环。
-4. 对技术团队：把模型路由、上下文管理、权限隔离、日志留存和成本上限作为 AI 应用默认层，不要等事故后补。
-5. 对观澜 AI：下周重点追踪组织级 Agent 工作流、Agent 治理 / 上下文基础设施、AI Coding 工作台和社区 AI 企业服务四条链；同时记录每个案例的客户、流程、指标、周期和付费方式。
