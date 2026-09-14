@@ -5,13 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-13T01:56:17.541Z",
-    "latestDataDate": "2026-09-13",
-    "currentDate": "2026-09-13",
-    "eventCount": 3212,
-    "quarantinedEventCount": 33,
+    "generatedAt": "2026-09-14T02:58:32.864Z",
+    "latestDataDate": "2026-09-14",
+    "currentDate": "2026-09-14",
+    "eventCount": 3229,
+    "quarantinedEventCount": 34,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
       "EV-1fc7578ab4f32166",
@@ -59,6 +60,7 @@
       "EV-0121f0a9e9a975ec",
       "EV-d2a623e8eef1f61d",
       "EV-f55d16df5b5fecb2",
+      "EV-1eb30888d3550a34",
       "EV-50e7de294816f918",
       "EV-f71726063c6e1615",
       "EV-b1b396e6ba2fe208",
@@ -98,6 +100,7 @@
       "EN-cd3509f4e1fbec99",
       "EN-29b9f0cae32e7a8a",
       "EN-bd6769fe78d0971a",
+      "EN-62c5b390b6bbacec",
       "EN-bbdefa2950f49882",
       "EN-ea3bd73e2b506e00",
       "EN-7d3194f79e645c42",
@@ -127,7 +130,7 @@
       "HW-304c6370cc157449"
     ],
     "firstSeen": "2026-05-23",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-14"
   },
   "events": [
     {
@@ -1493,6 +1496,108 @@
       "products": [],
       "sourceUrl": "https://theverge.com/ai-artificial-intelligence/971281/nvidia-open-secure-ai-alliance-cybersecurity",
       "publisher": "The Verge AI"
+    },
+    {
+      "id": "EV-1eb30888d3550a34",
+      "dataDate": "2026-09-14",
+      "date": "2026-09-13",
+      "updatedDate": "2026-09-14",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Iris-mini 和 Iris-pro 是同类中最强的开放权重搜索智能体",
+      "originalTitle": "Iris-mini and Iris-pro are the strongest open-weight search agents in their class",
+      "subject": "AllSpark team",
+      "action": "model_release",
+      "object": "Iris-mini and Iris-pro",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-62c5b390b6bbacec"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-62c5b390b6bbacec"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-62c5b390b6bbacec"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-62c5b390b6bbacec",
+        "EN-8cebb3a78e88d0a3",
+        "EN-6872a5bbde8d8f04",
+        "EN-70b2a0663b5cd369"
+      ],
+      "entityNames": [
+        "AllSpark team",
+        "Iris-mini",
+        "Iris-pro",
+        "Iris-mini and Iris-pro"
+      ],
+      "productName": "Iris-mini",
+      "products": [
+        {
+          "name": "Iris-mini",
+          "type": "模型",
+          "ownerNames": []
+        },
+        {
+          "name": "Iris-pro",
+          "type": "模型",
+          "ownerNames": []
+        },
+        {
+          "name": "Iris-mini and Iris-pro",
+          "type": "模型",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/iris-mini-and-iris-pro-are-the-strongest-open-weight-search-agents-in-their-class",
+      "publisher": "The Decoder AI News"
     },
     {
       "id": "EV-50e7de294816f918",
@@ -6866,7 +6971,6 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-6b668e4655192209",
         "EV-532031a0c390a2e3",
         "EV-4f6e481c90ff0e3c",
         "EV-c32dd87e1f72b09a",
@@ -7122,12 +7226,12 @@
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-physical_automation",
+        "TX-product_form-model",
         "TX-technology-code_generation",
         "TX-technology-embodied_ai",
         "TX-technology-multimodal",
         "TX-product_form-robotic_system",
         "TX-target_user-researcher",
-        "TX-product_form-model",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-industry-healthcare_life_sciences",
@@ -7194,7 +7298,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-13"
+      "lastSeen": "2026-09-14"
     },
     {
       "id": "EN-cd3509f4e1fbec99",
@@ -7236,8 +7340,8 @@
         "TX-product_form-chip_accelerator",
         "TX-target_user-business_user",
         "TX-target_user-developer",
-        "TX-target_user-researcher",
         "TX-product_form-model",
+        "TX-target_user-researcher",
         "TX-product_form-ai_infrastructure_software",
         "TX-product_form-ai_compute_system",
         "TX-technology-agentic_execution",
@@ -7271,6 +7375,27 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-08-03",
       "lastSeen": "2026-08-09"
+    },
+    {
+      "id": "EN-62c5b390b6bbacec",
+      "name": "AllSpark team",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-1eb30888d3550a34"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-open_weights"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-13",
+      "lastSeen": "2026-09-14"
     },
     {
       "id": "EN-bbdefa2950f49882",
@@ -7500,6 +7625,7 @@
         "EV-a4f052325d0ef230",
         "EV-cb3cb11ff13f6069",
         "EV-8115dd18f2812a29",
+        "EV-09029303144c5e67",
         "EV-621b257277382475",
         "EV-51548a69e952646b",
         "EV-60490a50c8acd139",
@@ -7541,10 +7667,10 @@
         "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-target_user-developer",
+        "TX-product_form-model",
         "TX-technology-code_generation",
         "TX-technology-embodied_ai",
         "TX-technology-multimodal",
-        "TX-product_form-model",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-industry-healthcare_life_sciences",
@@ -7591,7 +7717,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-09-13"
+      "lastSeen": "2026-09-14"
     },
     {
       "id": "EN-ea3bd73e2b506e00",
@@ -7631,6 +7757,7 @@
         "EV-9efcf6480f6c6f48",
         "EV-cf76f090a1a20a36",
         "EV-43301de739fe560e",
+        "EV-358643eefe0a5df5",
         "EV-fd0acf0718a27961",
         "EV-73c29838fbb3b394",
         "EV-66561ec28d8b1fec",
@@ -7718,9 +7845,9 @@
         "TX-industry-manufacturing",
         "TX-product_form-chip_accelerator",
         "TX-target_user-business_user",
+        "TX-product_form-model",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
-        "TX-product_form-model",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-software_development",
         "TX-product_form-enterprise_software_platform",
@@ -7754,7 +7881,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-12",
-      "lastSeen": "2026-09-12"
+      "lastSeen": "2026-09-14"
     },
     {
       "id": "EN-7d3194f79e645c42",
@@ -7877,6 +8004,9 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-358643eefe0a5df5",
+        "EV-ffa46f84468cffd9",
+        "EV-606d3928fcd6a078",
         "EV-c04784e49047a2ff",
         "EV-157047393912dde3",
         "EV-327ecd23437d5fda",
@@ -7897,11 +8027,9 @@
         "EV-54451ee210a0d0d4",
         "EV-39abdf174aa3aeec",
         "EV-cb1bc28f78888566",
-        "EV-358643eefe0a5df5",
         "EV-4e31149f2cd129f7",
         "EV-7a7a5267ca73e44c",
         "EV-293d6feac5b8efab",
-        "EV-ffa46f84468cffd9",
         "EV-a474530ccf6cd872",
         "EV-1f88bfaf77dcfca3",
         "EV-2954a6f0220f5b18",
@@ -8239,10 +8367,10 @@
         "TX-product_form-chip_accelerator",
         "TX-target_user-business_user",
         "TX-target_user-developer",
+        "TX-product_form-model",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-target_user-researcher",
-        "TX-product_form-model",
         "TX-industry-healthcare_life_sciences",
         "TX-target_user-consumer",
         "TX-use_case-productivity_enterprise_workflows",
@@ -8304,7 +8432,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-13"
+      "lastSeen": "2026-09-14"
     },
     {
       "id": "EN-1ea953e1dbed6788",
@@ -8580,6 +8708,7 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-606d3928fcd6a078",
         "EV-8232ad0075a77b7a",
         "EV-77da2ce9b815b9f8",
         "EV-c74cc1e3155a00c9",
@@ -8792,6 +8921,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-98d17a188b67f023",
         "EV-2258d4e39a99c186",
         "EV-d4c42c125b98b97e",
         "EV-6a79628f726695a3",
@@ -8898,10 +9028,10 @@
         "TX-product_form-chip_accelerator",
         "TX-target_user-business_user",
         "TX-target_user-developer",
+        "TX-product_form-model",
         "TX-technology-embodied_ai",
         "TX-target_user-educator",
         "TX-target_user-researcher",
-        "TX-product_form-model",
         "TX-industry-healthcare_life_sciences",
         "TX-target_user-consumer",
         "TX-use_case-productivity_enterprise_workflows",
@@ -8959,7 +9089,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-09-13"
+      "lastSeen": "2026-09-14"
     },
     {
       "id": "EN-6b61eab266a42eb0",

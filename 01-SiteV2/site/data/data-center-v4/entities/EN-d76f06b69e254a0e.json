@@ -1,0 +1,198 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-14T02:58:32.864Z",
+    "latestDataDate": "2026-09-14",
+    "currentDate": "2026-09-14",
+    "eventCount": 3229,
+    "quarantinedEventCount": 34,
+    "quarantinedEventIds": [
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "entity": {
+    "id": "EN-d76f06b69e254a0e",
+    "name": "Failures Index",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-b1b321fda18cc329"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-14",
+    "lastSeen": "2026-09-14",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": [
+        "EV-b1b321fda18cc329"
+      ]
+    },
+    "timeline": [
+      {
+        "id": "EV-b1b321fda18cc329",
+        "dataDate": "2026-09-14",
+        "date": "2026-09-14",
+        "eventType": "research_result",
+        "eventTypeLabel": "研究结果",
+        "eventGroup": "研究结果",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "智能体失败指数——AI 智能体在生产环境中如何失败",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-d4f0bc5a29de06b5"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-d4f0bc5a29de06b5",
+          "EN-d76f06b69e254a0e"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-18e8bc577678cd79",
+      "snapshotKey": "18e8bc577678cd79",
+      "snapshotId": "HWS-3162c3a6ccbf63e1",
+      "eventId": "EV-b1b321fda18cc329",
+      "eventIds": [
+        "EV-b1b321fda18cc329"
+      ],
+      "dataDate": "2026-09-14",
+      "date": "2026-09-14",
+      "title": "Failures Index",
+      "subject": "Agent",
+      "productNames": [
+        "Failures Index"
+      ],
+      "hardwareType": "server",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-6e9b65229519bac0"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-09-14",
+          "hardware_fact_id": "HWF-6e9b65229519bac0",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-09-14T02:55:07.506Z",
+          "subject_entity_id": "EN-d4f0bc5a29de06b5",
+          "subject_name": "Agent",
+          "product_entity_ids": [
+            "EN-d76f06b69e254a0e"
+          ],
+          "product_names": [
+            "Failures Index"
+          ],
+          "component_type": "server",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "19 Production incident An agent running in a real organisation did real damage — data destroyed, an unauthorised action taken, something sent that should not have been. 29 Security exploit The agent was turned against its owner: prompt injection, sandbox escape, poisoned memory or tools, malicious skills and MCP servers. 7 Tool defect The agent tooling itself broke — a regression, an outage, a destructive bug, a release rolled back. 5 Programme failure The deployment failed rather than the agent: pilots abandoned, rollouts halted, agents banned internally.",
+          "event_refs": [
+            "EV-b1b321fda18cc329"
+          ],
+          "claim_ref": "CL-f00f9c2bd084c006",
+          "source_refs": [
+            "SA-8d6aab71aa33ee27"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-14/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-d4f0bc5a29de06b5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://getreadyforagents.com/agentfailures",
+      "entityIds": [
+        "EN-d4f0bc5a29de06b5",
+        "EN-d76f06b69e254a0e"
+      ]
+    }
+  ]
+}

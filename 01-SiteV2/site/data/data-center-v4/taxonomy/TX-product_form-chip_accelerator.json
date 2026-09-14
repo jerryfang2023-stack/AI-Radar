@@ -5,13 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-13T01:56:17.541Z",
-    "latestDataDate": "2026-09-13",
-    "currentDate": "2026-09-13",
-    "eventCount": 3212,
-    "quarantinedEventCount": 33,
+    "generatedAt": "2026-09-14T02:58:32.864Z",
+    "latestDataDate": "2026-09-14",
+    "currentDate": "2026-09-14",
+    "eventCount": 3229,
+    "quarantinedEventCount": 34,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
       "EV-1fc7578ab4f32166",
@@ -169,6 +170,7 @@
       "EV-657837763764c869",
       "EV-8993e021ac17df4a",
       "EV-34929bdd016dc8d6",
+      "EV-09029303144c5e67",
       "EV-89bdda008227fb6b",
       "EV-bca0d9aca07bcb4a"
     ],
@@ -258,7 +260,8 @@
       "EN-16f9e91ad20e6467",
       "EN-d5c876a36e02b120",
       "EN-cbc62794911ff31b",
-      "EN-4a639cb888a15d75"
+      "EN-4a639cb888a15d75",
+      "EN-070c562765b9ff05"
     ],
     "fdeIds": [
       "FDE-47e3588e130d86f6",
@@ -298,14 +301,14 @@
       "HW-4c176e4c40871adc"
     ],
     "firstSeen": "2025-03-18",
-    "lastSeen": "2026-09-13"
+    "lastSeen": "2026-09-14"
   },
   "events": [
     {
       "id": "EV-10b007d20ad2794e",
-      "dataDate": "2026-09-13",
-      "date": "2026-09-13",
-      "updatedDate": "2026-09-13",
+      "dataDate": "2026-09-14",
+      "date": "2026-09-14",
+      "updatedDate": "2026-09-14",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
@@ -24664,6 +24667,121 @@
       "publisher": "supermicro.com"
     },
     {
+      "id": "EV-09029303144c5e67",
+      "dataDate": "2026-09-14",
+      "date": "2026-09-14",
+      "updatedDate": "2026-09-14",
+      "eventType": "financial_performance",
+      "eventTypeLabel": "财务表现",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "谷歌云 CEO：AI 服务器投资不到两年回本，自研芯片回收期仅为 GPU 一半",
+      "originalTitle": "",
+      "subject": "谷歌云",
+      "action": "financial_performance",
+      "object": "AI 服务器投资",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_compute_system",
+            "name": "AI 计算系统",
+            "entityIds": [
+              "EN-070c562765b9ff05"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-070c562765b9ff05"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_compute_system",
+          "name": "AI 计算系统",
+          "entityIds": [
+            "EN-070c562765b9ff05"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-070c562765b9ff05"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_compute_system",
+          "name": "AI 计算系统",
+          "entityIds": [
+            "EN-070c562765b9ff05"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-070c562765b9ff05"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-070c562765b9ff05",
+        "EN-bbdefa2950f49882"
+      ],
+      "entityNames": [
+        "谷歌云",
+        "Google"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/1/001/923.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-89bdda008227fb6b",
       "dataDate": "2026-07-23",
       "date": "2026-07-22",
@@ -24894,8 +25012,8 @@
         "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [],
-      "firstSeen": "2026-09-13",
-      "lastSeen": "2026-09-13"
+      "firstSeen": "2026-09-14",
+      "lastSeen": "2026-09-14"
     },
     {
       "id": "EN-a5e5f031b6f878cf",
@@ -25034,7 +25152,6 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-6b668e4655192209",
         "EV-532031a0c390a2e3",
         "EV-4f6e481c90ff0e3c",
         "EV-c32dd87e1f72b09a",
@@ -25290,12 +25407,12 @@
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-physical_automation",
+        "TX-product_form-model",
         "TX-technology-code_generation",
         "TX-technology-embodied_ai",
         "TX-technology-multimodal",
         "TX-product_form-robotic_system",
         "TX-target_user-researcher",
-        "TX-product_form-model",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-industry-healthcare_life_sciences",
@@ -25362,7 +25479,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-13"
+      "lastSeen": "2026-09-14"
     },
     {
       "id": "EN-240389f4b730bad4",
@@ -26145,8 +26262,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-chip_accelerator",
-        "TX-technology-multimodal",
         "TX-product_form-model",
+        "TX-technology-multimodal",
         "TX-technology-vision_language",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device"
@@ -26253,6 +26370,7 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-606d3928fcd6a078",
         "EV-8232ad0075a77b7a",
         "EV-77da2ce9b815b9f8",
         "EV-c74cc1e3155a00c9",
@@ -26465,6 +26583,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-98d17a188b67f023",
         "EV-2258d4e39a99c186",
         "EV-d4c42c125b98b97e",
         "EV-6a79628f726695a3",
@@ -26571,10 +26690,10 @@
         "TX-product_form-chip_accelerator",
         "TX-target_user-business_user",
         "TX-target_user-developer",
+        "TX-product_form-model",
         "TX-technology-embodied_ai",
         "TX-target_user-educator",
         "TX-target_user-researcher",
-        "TX-product_form-model",
         "TX-industry-healthcare_life_sciences",
         "TX-target_user-consumer",
         "TX-use_case-productivity_enterprise_workflows",
@@ -26632,7 +26751,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-09-13"
+      "lastSeen": "2026-09-14"
     },
     {
       "id": "EN-b81c8201acfc7639",
@@ -26668,7 +26787,6 @@
         "EV-bf23c87d0aa1f205",
         "EV-cbe5cc267353560e",
         "EV-bc24f0b939f2dfa2",
-        "EV-358643eefe0a5df5",
         "EV-63948deaec161736",
         "EV-6360fcef17b43087",
         "EV-fbe519268ddce396",
@@ -26687,9 +26805,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-chip_accelerator",
+        "TX-product_form-model",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
-        "TX-product_form-model",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-ai_device",
         "TX-use_case-software_development",
@@ -26767,8 +26885,8 @@
         "TX-product_form-chip_accelerator",
         "TX-target_user-business_user",
         "TX-target_user-developer",
-        "TX-target_user-researcher",
         "TX-product_form-model",
+        "TX-target_user-researcher",
         "TX-product_form-ai_infrastructure_software",
         "TX-product_form-ai_compute_system",
         "TX-technology-agentic_execution",
@@ -26820,7 +26938,6 @@
         "EV-0121f0a9e9a975ec",
         "EV-522c339dded54be5",
         "EV-c74cc1e3155a00c9",
-        "EV-358643eefe0a5df5",
         "EV-a6dc310224542dcf",
         "EV-2fa6949af5b36fb0",
         "EV-63858d9b5ef92175",
@@ -27237,6 +27354,7 @@
         "EV-9efcf6480f6c6f48",
         "EV-cf76f090a1a20a36",
         "EV-43301de739fe560e",
+        "EV-358643eefe0a5df5",
         "EV-fd0acf0718a27961",
         "EV-73c29838fbb3b394",
         "EV-66561ec28d8b1fec",
@@ -27324,9 +27442,9 @@
         "TX-industry-manufacturing",
         "TX-product_form-chip_accelerator",
         "TX-target_user-business_user",
+        "TX-product_form-model",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
-        "TX-product_form-model",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-software_development",
         "TX-product_form-enterprise_software_platform",
@@ -27360,7 +27478,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-12",
-      "lastSeen": "2026-09-12"
+      "lastSeen": "2026-09-14"
     },
     {
       "id": "EN-74be4cbf48e647b2",
@@ -27548,8 +27666,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-chip_accelerator",
-        "TX-technology-multimodal",
         "TX-product_form-model",
+        "TX-technology-multimodal",
         "TX-industry-legal_services"
       ],
       "relatedEntityIds": [
@@ -27864,6 +27982,9 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-358643eefe0a5df5",
+        "EV-ffa46f84468cffd9",
+        "EV-606d3928fcd6a078",
         "EV-c04784e49047a2ff",
         "EV-157047393912dde3",
         "EV-327ecd23437d5fda",
@@ -27884,11 +28005,9 @@
         "EV-54451ee210a0d0d4",
         "EV-39abdf174aa3aeec",
         "EV-cb1bc28f78888566",
-        "EV-358643eefe0a5df5",
         "EV-4e31149f2cd129f7",
         "EV-7a7a5267ca73e44c",
         "EV-293d6feac5b8efab",
-        "EV-ffa46f84468cffd9",
         "EV-a474530ccf6cd872",
         "EV-1f88bfaf77dcfca3",
         "EV-2954a6f0220f5b18",
@@ -28226,10 +28345,10 @@
         "TX-product_form-chip_accelerator",
         "TX-target_user-business_user",
         "TX-target_user-developer",
+        "TX-product_form-model",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-target_user-researcher",
-        "TX-product_form-model",
         "TX-industry-healthcare_life_sciences",
         "TX-target_user-consumer",
         "TX-use_case-productivity_enterprise_workflows",
@@ -28291,7 +28410,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-13"
+      "lastSeen": "2026-09-14"
     },
     {
       "id": "EN-b3e3bce83d29e787",
@@ -28415,7 +28534,8 @@
       "typeLabel": "公司与机构",
       "aliases": [
         "DeepMind",
-        "谷歌 DeepMind"
+        "谷歌 DeepMind",
+        "Deepmind"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -28431,6 +28551,7 @@
         "EV-67ef7accd26a07a0",
         "EV-a7e1ecd212474e00",
         "EV-d961d3ad02f6ae14",
+        "EV-606d3928fcd6a078",
         "EV-6661b03751e8e855",
         "EV-7276adae84f96c44",
         "EV-afb33cbf65290212",
@@ -28479,10 +28600,10 @@
       "classificationRefs": [
         "TX-product_form-chip_accelerator",
         "TX-use_case-physical_automation",
+        "TX-product_form-model",
         "TX-technology-code_generation",
         "TX-technology-embodied_ai",
         "TX-technology-multimodal",
-        "TX-product_form-model",
         "TX-technology-vision_language",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
@@ -28506,7 +28627,7 @@
         "EN-a3c3b987b09fc1bb"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-09-09"
+      "lastSeen": "2026-09-14"
     },
     {
       "id": "EN-412b57e712039032",
@@ -28524,8 +28645,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-chip_accelerator",
-        "TX-technology-code_generation",
         "TX-product_form-model",
+        "TX-technology-code_generation",
         "TX-use_case-software_development"
       ],
       "relatedEntityIds": [
@@ -28626,8 +28747,8 @@
         "TX-industry-manufacturing",
         "TX-product_form-chip_accelerator",
         "TX-target_user-developer",
-        "TX-target_user-researcher",
         "TX-product_form-model",
+        "TX-target_user-researcher",
         "TX-target_user-consumer",
         "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
@@ -28672,6 +28793,29 @@
       ],
       "firstSeen": "2025-03-18",
       "lastSeen": "2026-07-23"
+    },
+    {
+      "id": "EN-070c562765b9ff05",
+      "name": "谷歌云",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-d1a3f5c8045e548d",
+        "EV-09029303144c5e67"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-chip_accelerator",
+        "TX-product_form-ai_compute_system"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-22",
+      "lastSeen": "2026-09-14"
     }
   ],
   "fde": [

@@ -5,13 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-13T01:56:17.541Z",
-    "latestDataDate": "2026-09-13",
-    "currentDate": "2026-09-13",
-    "eventCount": 3212,
-    "quarantinedEventCount": 33,
+    "generatedAt": "2026-09-14T02:58:32.864Z",
+    "latestDataDate": "2026-09-14",
+    "currentDate": "2026-09-14",
+    "eventCount": 3229,
+    "quarantinedEventCount": 34,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
       "EV-1fc7578ab4f32166",
@@ -57,6 +58,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-f274928972170045",
       "EV-d633676a4a7d89a3"
     ],
     "viewpointIds": [],
@@ -68,8 +70,9 @@
       "EN-7a3ecc54829211df"
     ],
     "firstSeen": "2026-07-09",
-    "lastSeen": "2026-07-10",
+    "lastSeen": "2026-09-14",
     "relationIds": [
+      "REL2-3e5f73b7e12f9938",
       "REL2-858caeaed3f475f7"
     ],
     "groupedEventIds": {
@@ -77,6 +80,7 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-f274928972170045",
         "EV-d633676a4a7d89a3"
       ],
       "hardware": [],
@@ -84,6 +88,23 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-f274928972170045",
+        "dataDate": "2026-09-14",
+        "date": "2026-09-13",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "蚂蚁灵波开源三款 LingBot-World 2.0 世界模型：Small 参数 1.3B 面向消费级单卡 GPU 设计",
+        "displayTags": [],
+        "entityIds": [
+          "EN-754c490bd199c21a",
+          "EN-7a3ecc54829211df",
+          "EN-edbfa295a8461803"
+        ]
+      },
       {
         "id": "EV-d633676a4a7d89a3",
         "dataDate": "2026-07-10",
@@ -138,6 +159,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-f274928972170045",
         "EV-d633676a4a7d89a3"
       ],
       "viewpointIds": [],
@@ -146,10 +168,31 @@
         "EN-754c490bd199c21a"
       ],
       "firstSeen": "2026-07-09",
-      "lastSeen": "2026-07-10"
+      "lastSeen": "2026-09-14"
     }
   ],
   "relationships": [
+    {
+      "relationship_id": "REL2-3e5f73b7e12f9938",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-754c490bd199c21a",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-7a3ecc54829211df",
+      "object_type": "entity",
+      "event_id": "EV-f274928972170045",
+      "claim_refs": [
+        "CL-0f6c15e9ac408f09",
+        "CL-4317c2b2ac1d2450",
+        "CL-cd655831b4c569c7",
+        "CL-58c740a1332de19c"
+      ],
+      "source_refs": [
+        "SA-934c663177cd6c96"
+      ],
+      "data_date": "2026-09-14",
+      "status": "verified"
+    },
     {
       "relationship_id": "REL2-858caeaed3f475f7",
       "relationship_version": "RELATION-V2.1",
@@ -187,6 +230,7 @@
         "EV-66293f3c35760fef",
         "EV-96bb5917e4ca0554",
         "EV-4d46806b1522d5f4",
+        "EV-c3b295b1a939dabd",
         "EV-c17a6102aab72f4f",
         "EV-d67dd793fe1f2c04",
         "EV-47f16317cc2d62e2",
@@ -249,7 +293,6 @@
         "EV-6415a58637893b34",
         "EV-4faa2bcf2e42e60c",
         "EV-d32e50951ff7f9a1",
-        "EV-358643eefe0a5df5",
         "EV-85ba013c379a9d3d",
         "EV-db87eda4a39de22a",
         "EV-8b288f548fd59a91",
@@ -287,6 +330,7 @@
         "EN-a696e7db10a33c4c",
         "EN-eae58817702c93b5",
         "EN-5c822c71e6e4db70",
+        "EN-cb1041ddf6123c37",
         "EN-d47eb2cee65d0687",
         "EN-09ba34a4ad1ed4af",
         "EN-5f03b37d8cca57e1",
@@ -343,7 +387,6 @@
         "EN-85f0c155e340fb63",
         "EN-240389f4b730bad4",
         "EN-1a6d6ea981e8688c",
-        "EN-32e83e92d45d71f6",
         "EN-39ba5f9dcab4e98a",
         "EN-c70eca6b0f88f44d",
         "EN-e3ce9cc5efa9354c",
@@ -380,7 +423,7 @@
         "HW-1450585d9cd5879f"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-09-13"
+      "lastSeen": "2026-09-14"
     },
     {
       "id": "TX-industry-media_entertainment",

@@ -5,13 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-13T01:56:17.541Z",
-    "latestDataDate": "2026-09-13",
-    "currentDate": "2026-09-13",
-    "eventCount": 3212,
-    "quarantinedEventCount": 33,
+    "generatedAt": "2026-09-14T02:58:32.864Z",
+    "latestDataDate": "2026-09-14",
+    "currentDate": "2026-09-14",
+    "eventCount": 3229,
+    "quarantinedEventCount": 34,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
       "EV-1fc7578ab4f32166",
@@ -3438,6 +3439,85 @@
   ],
   "hardwareCatalog": [
     {
+      "id": "HWC-18e8bc577678cd79",
+      "snapshotKey": "18e8bc577678cd79",
+      "snapshotId": "HWS-3162c3a6ccbf63e1",
+      "eventId": "EV-b1b321fda18cc329",
+      "eventIds": [
+        "EV-b1b321fda18cc329"
+      ],
+      "dataDate": "2026-09-14",
+      "date": "2026-09-14",
+      "title": "Failures Index",
+      "subject": "Agent",
+      "productNames": [
+        "Failures Index"
+      ],
+      "hardwareType": "server",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-6e9b65229519bac0"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-09-14",
+          "hardware_fact_id": "HWF-6e9b65229519bac0",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-09-14T02:55:07.506Z",
+          "subject_entity_id": "EN-d4f0bc5a29de06b5",
+          "subject_name": "Agent",
+          "product_entity_ids": [
+            "EN-d76f06b69e254a0e"
+          ],
+          "product_names": [
+            "Failures Index"
+          ],
+          "component_type": "server",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "19 Production incident An agent running in a real organisation did real damage — data destroyed, an unauthorised action taken, something sent that should not have been. 29 Security exploit The agent was turned against its owner: prompt injection, sandbox escape, poisoned memory or tools, malicious skills and MCP servers. 7 Tool defect The agent tooling itself broke — a regression, an outage, a destructive bug, a release rolled back. 5 Programme failure The deployment failed rather than the agent: pilots abandoned, rollouts halted, agents banned internally.",
+          "event_refs": [
+            "EV-b1b321fda18cc329"
+          ],
+          "claim_ref": "CL-f00f9c2bd084c006",
+          "source_refs": [
+            "SA-8d6aab71aa33ee27"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-14/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-d4f0bc5a29de06b5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://getreadyforagents.com/agentfailures",
+      "entityIds": [
+        "EN-d4f0bc5a29de06b5",
+        "EN-d76f06b69e254a0e"
+      ]
+    },
+    {
       "id": "HWC-4e36092f626befd3",
       "snapshotKey": "4e36092f626befd3",
       "snapshotId": "HWS-89646843f6cb8881",
@@ -5895,8 +5975,19 @@
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
-          "id": "embodied_ai",
-          "name": "具身智能",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-32e83e92d45d71f6"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
           "entityIds": [
             "EN-32e83e92d45d71f6"
           ],
@@ -5907,9 +5998,7 @@
       "sourceUrl": "https://daily.ai225.com",
       "entityIds": [
         "EN-32e83e92d45d71f6",
-        "EN-6f7ac1823da81d2e",
-        "EN-b81c8201acfc7639",
-        "EN-e1517be14d06cdb7",
+        "EN-ea3bd73e2b506e00",
         "EN-7d3194f79e645c42"
       ]
     },
@@ -16599,39 +16688,37 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-09-13",
-      "funnel_id": "LF-11e81190ca216192",
+      "data_date": "2026-09-14",
+      "funnel_id": "LF-2cb11529c072ae25",
       "lens": "hardware",
-      "date": "2026-09-13",
+      "date": "2026-09-14",
       "monitoring_paths": [
         "hardware_capacity_fab",
+        "hardware_capex",
         "hardware_product_specs",
         "hardware_shipment_deployment",
         "hardware_supply_agreement"
       ],
-      "raw_documents": 35,
-      "original_sources": 30,
-      "valid_claims": 9,
-      "observations": 0,
+      "raw_documents": 21,
+      "original_sources": 19,
+      "valid_claims": 12,
+      "observations": 1,
       "canonical_events": 5,
       "blocker_counts": {
-        "rumor_requires_primary_confirmation": 2,
-        "no_source_bounded_claim": 3,
-        "source_outside_daily_window": 6,
-        "domestic_publication_date_unverified": 3,
-        "event_not_ai_relevant": 4,
-        "source_outside_funding_backfill_window": 1,
-        "raw_source_quality_block": 8,
+        "no_source_bounded_event": 3,
+        "source_outside_daily_window": 7,
+        "event_not_ai_relevant": 1,
+        "multi_event_roundup_not_single_event_source": 1,
         "non_event_or_index_title": 1,
-        "no_source_bounded_event": 1
+        "raw_source_quality_block": 3
       },
       "rates": {
-        "original_source_rate": 0.8571428571428571,
-        "valid_claim_rate": 0.2571428571428571,
-        "observation_rate": 0,
-        "event_conversion_rate": 0.5555555555555556
+        "original_source_rate": 0.9047619047619048,
+        "valid_claim_rate": 0.5714285714285714,
+        "observation_rate": 0.08333333333333333,
+        "event_conversion_rate": 0.4166666666666667
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-13/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-14/monitoring-funnel.json"
     }
   ]
 }

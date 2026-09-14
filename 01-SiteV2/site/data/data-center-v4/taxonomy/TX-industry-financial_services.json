@@ -5,13 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-13T01:56:17.541Z",
-    "latestDataDate": "2026-09-13",
-    "currentDate": "2026-09-13",
-    "eventCount": 3212,
-    "quarantinedEventCount": 33,
+    "generatedAt": "2026-09-14T02:58:32.864Z",
+    "latestDataDate": "2026-09-14",
+    "currentDate": "2026-09-14",
+    "eventCount": 3229,
+    "quarantinedEventCount": 34,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
       "EV-1fc7578ab4f32166",
@@ -236,7 +237,7 @@
       "HW-a033b945449628d5"
     ],
     "firstSeen": "2025-08-27",
-    "lastSeen": "2026-09-12"
+    "lastSeen": "2026-09-14"
   },
   "events": [
     {
@@ -6422,17 +6423,17 @@
     },
     {
       "id": "EV-57cf8e14d6994c1b",
-      "dataDate": "2026-08-10",
+      "dataDate": "2026-09-14",
       "date": "2026-07-29",
-      "updatedDate": "2026-08-10",
+      "updatedDate": "2026-09-14",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "Encore AI 融资 3000 万美元，打造从客户通话中学习的 AI 智能体",
-      "originalTitle": "Encore AI raises $30M to build AI agents that learn from customer calls | TechCrunch",
+      "title": "Encore AI 融资 3000 万美元，打造能从客户通话中学习的 AI 智能体",
+      "originalTitle": "Encore AI raises $30M to build AI agents that learn from customer calls",
       "subject": "Encore AI",
       "action": "raises",
       "object": "$30M to build AI agents that learn from customer calls",
@@ -6444,17 +6445,6 @@
       "missingFields": [],
       "conflicts": [],
       "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-556c337c4f0b031e"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
@@ -32974,8 +32964,8 @@
         "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-target_user-developer",
-        "TX-technology-multimodal",
         "TX-product_form-model",
+        "TX-technology-multimodal",
         "TX-ai_market_category-industry_applications",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-use_case-software_development",
@@ -33016,7 +33006,6 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-6b668e4655192209",
         "EV-532031a0c390a2e3",
         "EV-4f6e481c90ff0e3c",
         "EV-c32dd87e1f72b09a",
@@ -33272,12 +33261,12 @@
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-physical_automation",
+        "TX-product_form-model",
         "TX-technology-code_generation",
         "TX-technology-embodied_ai",
         "TX-technology-multimodal",
         "TX-product_form-robotic_system",
         "TX-target_user-researcher",
-        "TX-product_form-model",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-industry-healthcare_life_sciences",
@@ -33344,7 +33333,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-13"
+      "lastSeen": "2026-09-14"
     },
     {
       "id": "EN-e4a72fa4f054e9be",
@@ -33477,6 +33466,7 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-606d3928fcd6a078",
         "EV-8232ad0075a77b7a",
         "EV-77da2ce9b815b9f8",
         "EV-c74cc1e3155a00c9",
@@ -33689,6 +33679,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-98d17a188b67f023",
         "EV-2258d4e39a99c186",
         "EV-d4c42c125b98b97e",
         "EV-6a79628f726695a3",
@@ -33795,10 +33786,10 @@
         "TX-product_form-chip_accelerator",
         "TX-target_user-business_user",
         "TX-target_user-developer",
+        "TX-product_form-model",
         "TX-technology-embodied_ai",
         "TX-target_user-educator",
         "TX-target_user-researcher",
-        "TX-product_form-model",
         "TX-industry-healthcare_life_sciences",
         "TX-target_user-consumer",
         "TX-use_case-productivity_enterprise_workflows",
@@ -33856,7 +33847,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-09-13"
+      "lastSeen": "2026-09-14"
     },
     {
       "id": "EN-22f5eb5f2bfabefd",
@@ -34058,7 +34049,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-29",
-      "lastSeen": "2026-08-10"
+      "lastSeen": "2026-09-14"
     },
     {
       "id": "EN-7f67f2f8692510cf",
@@ -34806,8 +34797,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-multimodal",
         "TX-product_form-model",
+        "TX-technology-multimodal",
         "TX-technology-vision_language",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
@@ -35309,7 +35300,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-22",
-      "lastSeen": "2026-09-13"
+      "lastSeen": "2026-09-14"
     },
     {
       "id": "EN-eafe895eb8119e6e",
@@ -35536,6 +35527,9 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-358643eefe0a5df5",
+        "EV-ffa46f84468cffd9",
+        "EV-606d3928fcd6a078",
         "EV-c04784e49047a2ff",
         "EV-157047393912dde3",
         "EV-327ecd23437d5fda",
@@ -35556,11 +35550,9 @@
         "EV-54451ee210a0d0d4",
         "EV-39abdf174aa3aeec",
         "EV-cb1bc28f78888566",
-        "EV-358643eefe0a5df5",
         "EV-4e31149f2cd129f7",
         "EV-7a7a5267ca73e44c",
         "EV-293d6feac5b8efab",
-        "EV-ffa46f84468cffd9",
         "EV-a474530ccf6cd872",
         "EV-1f88bfaf77dcfca3",
         "EV-2954a6f0220f5b18",
@@ -35898,10 +35890,10 @@
         "TX-product_form-chip_accelerator",
         "TX-target_user-business_user",
         "TX-target_user-developer",
+        "TX-product_form-model",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-target_user-researcher",
-        "TX-product_form-model",
         "TX-industry-healthcare_life_sciences",
         "TX-target_user-consumer",
         "TX-use_case-productivity_enterprise_workflows",
@@ -35963,7 +35955,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-13"
+      "lastSeen": "2026-09-14"
     },
     {
       "id": "EN-376967c5f350003c",
@@ -36541,6 +36533,7 @@
         "EV-a4f052325d0ef230",
         "EV-cb3cb11ff13f6069",
         "EV-8115dd18f2812a29",
+        "EV-09029303144c5e67",
         "EV-621b257277382475",
         "EV-51548a69e952646b",
         "EV-60490a50c8acd139",
@@ -36582,10 +36575,10 @@
         "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-target_user-developer",
+        "TX-product_form-model",
         "TX-technology-code_generation",
         "TX-technology-embodied_ai",
         "TX-technology-multimodal",
-        "TX-product_form-model",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-industry-healthcare_life_sciences",
@@ -36632,7 +36625,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-09-13"
+      "lastSeen": "2026-09-14"
     },
     {
       "id": "EN-06b5472c16feae4c",
@@ -36834,8 +36827,8 @@
       "eventIds": [
         "EV-6808f7d1be84c23c",
         "EV-30d7f1c5dc8ea464",
-        "EV-c5e9220424a3e463",
         "EV-358643eefe0a5df5",
+        "EV-c5e9220424a3e463",
         "EV-f29c0c51a5cbfd84",
         "EV-497344d95d593cf6",
         "EV-8f0c63ed7bb153dc",
@@ -36845,15 +36838,15 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-physical_automation",
-        "TX-technology-embodied_ai",
         "TX-product_form-model",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device",
         "TX-industry-financial_services",
         "TX-technology-agentic_execution"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2023-03-21",
-      "lastSeen": "2026-09-09"
+      "lastSeen": "2026-09-14"
     }
   ],
   "fde": [
