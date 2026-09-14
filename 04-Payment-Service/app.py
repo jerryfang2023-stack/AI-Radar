@@ -1164,7 +1164,7 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
                             "missing": missing,
                         }), 409
                 display_name = str((community_member or {}).get("name") or nickname or "观澜用户")[:20]
-                community_status = str((community_member or {}).get("status") or "none")
+                community_status = remote_community_status(community_member or {}, "none")
                 try:
                     conn.execute(
                         """INSERT INTO users(

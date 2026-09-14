@@ -1108,6 +1108,27 @@ def test_approved_without_join_date_is_not_reported_as_joined(client):
     data = client.get('/api/v1/member/me', headers=auth(token)).get_json()
     assert data['community']['status'] == 'not_joined'
 
+@pytest.mark.parametrize("state", ["joined", "not_joined", "eliminated"])
+def test_registration_syncs_community_state_and_grants_once(client, state):
+    client.application.community_client.member_state = state
+    response = client.post('/api/v1/auth/wechat', json={'code': 'season-two', 'phoneCode': 'phone-code'})
+    assert response.status_code == 200
+    data = response.get_json()
+    assert data['community']['memberId'] == 42
+    assert data['community']['status'] == state
+    assert data['community']['points'] == (860 if state == 'joined' else 0)
+    initial_membership = data['membership']
+    initial_wallet = data['wallet']
+    for _ in range(2):
+        refreshed = client.get('/api/v1/member/me', headers=auth(data['token'])).get_json()
+        assert refreshed['community'] == data['community']
+        assert refreshed['membership'] == initial_membership
+        assert refreshed['wallet'] == initial_wallet
+    with sqlite3.connect(client.application.config['DATABASE_PATH']) as conn:
+        grants = conn.execute("SELECT COUNT(*) FROM membership_ledger WHERE source_id='community-welcome:42'").fetchone()[0]
+        assert grants == (1 if state == 'joined' else 0)
+
+
 def test_phone_relogin_preserves_saved_nickname(client):
     result = client.post('/api/v1/auth/wechat', json={'code': 'returning-member', 'phoneCode': 'phone-code'}).get_json()
     assert client.put('/api/v1/member/profile', json={'nickname': '自定义昵称'}, headers=auth(result['token'])).status_code == 200
