@@ -959,6 +959,17 @@ test("a bilingual organization subject resolves to one canonical company", () =>
   assert.equal(mentions.some((item) => item.canonicalName === "沐曦股份"), false);
 });
 
+test("Chinese funding announcement verbs stay out of the funded Claim subject", () => {
+  const title = "智谱宣布完成约 50 亿美元融资，用于下一代 GLM 基础模型研发";
+  const bundle = buildBundle([entry("zhipu-announcement", title, title + "。智谱是一家基础大模型公司。", { language: "zh" })], taxonomy, date, "2026-07-16T00:00:00.000Z");
+  const claims = bundle.claims.filter((claim) => claim.claim_type === "funding");
+  assert.ok(claims.length > 0);
+  assert.ok(claims.every((claim) => claim.subject === "智谱"));
+  assert.ok(claims.every((claim) => claim.source_quote.includes("智谱宣布完成约 50 亿美元融资")));
+  assert.equal(bundle.entities.some((entity) => entity.canonical_name === "智谱宣布"), false);
+  assert.ok(bundle.entities.some((entity) => entity.canonical_name === "智谱AI"));
+});
+
 test("current funding, public-sector, and hardware titles resolve named organizations", () => {
   const bundle = buildBundle([
     entry(

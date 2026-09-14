@@ -1950,6 +1950,12 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
       const parsed = deterministicRule
         ? actionMatch(title, rule.pattern)
         : { subject: cleanString(proposedModelClaim.subject), action: proposedModelClaim.event_type, object: cleanString(proposedModelClaim.object) };
+      if (deterministicRule && rule.eventType === "funding" && /宣布$/u.test(parsed.subject)) {
+        // The announcement verb precedes the matched funding action, not part
+        // of the company name. Keep source quotes/spans unchanged.
+        parsed.subject = parsed.subject.replace(/宣布$/u, "").trim();
+        parsed.action = `宣布${parsed.action}`;
+      }
       if (rule.eventType === "deployment" && /\bThe Home Depot\b/iu.test(title)) {
         parsed.object = "Gemini Enterprise store phone support";
       }
