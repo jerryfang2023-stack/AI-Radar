@@ -38,6 +38,12 @@ function recoverPrivateIntake(root, date, discovery, allDates = false) {
   return selectChinaFundingIntake(intake, discovery);
 }
 
+export function restoreAcceptedChinaFundingEvidence(date, command) {
+  command(["agent-workflow/tools/migrate-private-evidence-source.mjs", "--delete-public-originals=true", `--date=${date}`]);
+  command(["agent-workflow/tools/assert-public-evidence-boundary.mjs"]);
+  command(["agent-workflow/tools/assert-private-evidence-backup.mjs", `--date=${date}`]);
+}
+
 export function chinaFundingPlan(date, sourceDir, { rawLimit = 168 } = {}) {
   const tool = (name, ...args) => [`agent-workflow/tools/${name}.mjs`, ...args];
   const site = (name) => [`01-SiteV2/site/scripts/${name}.mjs`];
@@ -138,6 +144,9 @@ function main() {
             if (args.get("stop-after") === stage.id) break;
             continue;
           }
+          // Diagnostic-only publication rolls back the locator index even when capture passed.
+          // Restore and validate it offline before any checkpoint can skip the capture stage.
+          restoreAcceptedChinaFundingEvidence(date, command);
           const capturePassed = previous.stages.some((item) => item.id === "capture" && item.status === "passed") && fs.existsSync(path.resolve(root, acceptedFile));
           if (capturePassed) {
             state.reused_accepted_capture = true;
@@ -145,10 +154,6 @@ function main() {
             if (args.get("stop-after") === stage.id) break;
             continue;
           }
-          // Last-good rollback also restores the public locator index. Rebuild it offline.
-          command(["agent-workflow/tools/migrate-private-evidence-source.mjs", "--delete-public-originals=true", ...(historyFrom ? [`--date=${date}`] : [])]);
-          command(["agent-workflow/tools/assert-public-evidence-boundary.mjs"]);
-          command(["agent-workflow/tools/assert-private-evidence-backup.mjs", `--date=${date}`]);
           write(acceptedFile, selectChinaFundingIntake(accepted, discovery));
         } else {
           for (const args of stage.commands) command(args);

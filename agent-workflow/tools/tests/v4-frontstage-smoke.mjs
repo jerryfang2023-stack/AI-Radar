@@ -21,7 +21,8 @@ const cases = [
   ["data-center.html?view=events&theme=hardware", "data-center.html?view=events"],
   ["data-center.html?view=events&theme=fde", "data-center.html?view=events&theme=fde"],
   ["data-center.html?view=hardware", "data-center.html?view=hardware"],
-  ["data-center.html?view=community", "data-center.html?view=community"],
+  ["data-center.html?view=community", "community-scys.html"],
+  ["data-center.html?view=community&source=aipoju", "community-aipoju.html"],
   ["data-center.html?view=viewpoints", "data-center.html?view=viewpoints"],
   ["data-center.html?view=index", "data-center.html?view=index"],
   ["data-center.html?view=relations", "data-center.html?view=relations"],
@@ -135,13 +136,28 @@ async function main() {
             const more = document.querySelector(".dc-toolbar > .dc-more");
             const widths = Object.fromEntries(Object.entries({ button, theme, type, tag, more })
               .map(([key, element]) => [key, Math.round(element?.getBoundingClientRect().width || 0)]));
+            const canvas = document.createElement("canvas");
+            const context = canvas.getContext("2d");
+            const controls = [...document.querySelectorAll(".dc-toolbar > .dc-select, .dc-toolbar > .dc-button")];
+            const controlMetrics = controls.map((element) => {
+              const style = getComputedStyle(element);
+              const rect = element.getBoundingClientRect();
+              context.font = style.font;
+              const label = element.tagName === "SELECT" ? element.selectedOptions[0]?.textContent : element.textContent;
+              // Select right padding already reserves the native arrow; do not count it twice.
+              const padding = parseFloat(style.paddingLeft) + Math.max(parseFloat(style.paddingRight), element.tagName === "SELECT" ? 16 : 0);
+              const borders = parseFloat(style.borderLeftWidth) + parseFloat(style.borderRightWidth);
+              const requiredWidth = Math.max(44, context.measureText((label || "").trim()).width + padding + borders - 1);
+              return { name: element.name || "search", label: (label || "").trim(), width: rect.width, height: rect.height, requiredWidth,
+                ok: rect.width >= requiredWidth && rect.height >= 36 };
+            });
+            const controlsFit = controlMetrics.length === 6 && controlMetrics.every((item) => item.ok);
             return {
               ...widths,
               buttonWhiteSpace: button ? getComputedStyle(button).whiteSpace : "",
-              ok: widths.button >= 104
-                && widths.theme >= 200
-                && widths.type >= 330
-                && widths.tag >= 330
+              controlsFit,
+              controlMetrics,
+              ok: controlsFit
                 && widths.more >= 104
                 && getComputedStyle(button).whiteSpace === "nowrap",
             };

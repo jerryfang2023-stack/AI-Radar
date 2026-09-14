@@ -4,12 +4,36 @@ import fs from "node:fs";
 import path from "node:path";
 import { collectChinaFunding, normalizeChinaFundingLead, articleUrl } from "../lib/china-funding-collector.mjs";
 import { buildChinaFundingHealth } from "../lib/china-funding-health.mjs";
-import { chinaFundingPlan, selectChinaFundingIntake } from "../run-china-funding-pipeline.mjs";
+import { chinaFundingPlan, selectChinaFundingIntake, restoreAcceptedChinaFundingEvidence } from "../run-china-funding-pipeline.mjs";
 import { mergeSourceIntakes } from "../lib/source-intake-v1.mjs";
 import { chinaFundingSourceDate } from "../lib/china-funding-source-date.mjs";
 import { eventSourceEligibility } from "../build-data-center-v4.mjs";
 
 const root = process.cwd();
+test("financing commentary and multi-event headlines cannot become company financing facts", () => {
+  const source = { published_at: "2026-09-14", acquisition_channel: "china-funding" };
+  const artifact = { source_url: "https://www.chinaventure.com.cn/news/2026/123456.html" };
+  for (const title of [
+    "今年具身智能的融资已基本“结束”了｜Frontline - 投中网",
+    "AI芯片融资狂潮来袭机构预计未来两年将新增5000亿美元债务 - 财联社",
+    "谁拥有DeepSeek？所有权、控制权与中国持股",
+    "Who owns DeepSeek? Ownership, control and China stake",
+  ]) assert.equal(eventSourceEligibility(source, artifact, title, "2026-09-14", { eventType: "funding" }).accepted, false, title);
+  assert.equal(eventSourceEligibility(source, artifact, "智谱约50亿美元融资落定Anthropic敲定纳斯达克上市计划南京最大国资平台揭牌", "2026-09-14", { eventType: "funding" }).reason, "multi_event_roundup_not_single_event_source");
+  assert.equal(eventSourceEligibility(source, artifact, "智谱宣布完成约50亿美元融资，用于下一代GLM基础模型研发", "2026-09-14", { eventType: "funding" }).accepted, true);
+});
+test("accepted capture recovery restores date-scoped locators offline and fails closed", () => {
+  const calls = [];
+  restoreAcceptedChinaFundingEvidence("2026-09-14", (args) => calls.push(args));
+  assert.deepEqual(calls, [
+    ["agent-workflow/tools/migrate-private-evidence-source.mjs", "--delete-public-originals=true", "--date=2026-09-14"],
+    ["agent-workflow/tools/assert-public-evidence-boundary.mjs"],
+    ["agent-workflow/tools/assert-private-evidence-backup.mjs", "--date=2026-09-14"],
+  ]);
+  assert.throws(() => restoreAcceptedChinaFundingEvidence("2026-09-14", () => { throw new Error("missing original"); }), /missing original/u);
+  const pipeline = fs.readFileSync("agent-workflow/tools/run-china-funding-pipeline.mjs", "utf8");
+  assert.match(pipeline, /restoreAcceptedChinaFundingEvidence\(date, command\);\s+const capturePassed/u);
+});
 test("domestic dates come from explicit original publication stamps, never capture time", () => {
   const source = { acquisition_channel: "china-funding" };
   assert.equal(chinaFundingSourceDate({ ...source, full_text: "导航\n2026/09 11\n11:17\n超维动力完成融资" }), "2026-09-11T11:17:00+08:00");

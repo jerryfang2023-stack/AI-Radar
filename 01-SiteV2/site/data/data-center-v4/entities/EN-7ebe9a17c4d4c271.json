@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-14T03:22:45.625Z",
+    "generatedAt": "2026-09-14T04:55:12.862Z",
     "latestDataDate": "2026-09-14",
     "currentDate": "2026-09-14",
-    "eventCount": 3229,
+    "eventCount": 3230,
     "quarantinedEventCount": 34,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -65,10 +65,10 @@
       "TX-ai_market_category-infrastructure_compute",
       "TX-target_user-developer",
       "TX-use_case-software_development",
+      "TX-ai_market_application-data_preparation_curation",
       "TX-ai_market_subcategory-data",
       "TX-product_form-ai_infrastructure_software",
-      "TX-technology-agentic_execution",
-      "TX-ai_market_application-data_preparation_curation"
+      "TX-technology-agentic_execution"
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-06",
@@ -201,6 +201,9 @@
       "valueId": "infrastructure_compute",
       "eventIds": [
         "EV-10b007d20ad2794e",
+        "EV-7eead74c2baae511",
+        "EV-ef669a52c9a3f94f",
+        "EV-08612741cfce0bcf",
         "EV-798081a4ec056f8c",
         "EV-e0a31302688c81ec",
         "EV-d0dd835f3abb3163",
@@ -413,6 +416,8 @@
       ],
       "entityIds": [
         "EN-ce232f0155cad088",
+        "EN-1d79127e9d90e89b",
+        "EN-fba6bdd504fa7aff",
         "EN-08e7b67a300e585f",
         "EN-a5e5f031b6f878cf",
         "EN-f56780cc13476293",
@@ -602,6 +607,9 @@
       "valueId": "developer",
       "eventIds": [
         "EV-10b007d20ad2794e",
+        "EV-7eead74c2baae511",
+        "EV-ef669a52c9a3f94f",
+        "EV-08612741cfce0bcf",
         "EV-41c54c428d84cc1e",
         "EV-798081a4ec056f8c",
         "EV-e0a31302688c81ec",
@@ -849,6 +857,8 @@
       ],
       "entityIds": [
         "EN-ce232f0155cad088",
+        "EN-1d79127e9d90e89b",
+        "EN-fba6bdd504fa7aff",
         "EN-8dc72a4672894e0f",
         "EN-08e7b67a300e585f",
         "EN-a5e5f031b6f878cf",
@@ -1068,6 +1078,7 @@
       "typeLabel": "应用场景",
       "valueId": "software_development",
       "eventIds": [
+        "EV-ef669a52c9a3f94f",
         "EV-720e85c1cbe74bea",
         "EV-e0a31302688c81ec",
         "EV-6d6715223e80e7a6",
@@ -1207,6 +1218,7 @@
         "EV-79d4cce8950d7639"
       ],
       "entityIds": [
+        "EN-1d79127e9d90e89b",
         "EN-a47b7e6b22395632",
         "EN-a5e5f031b6f878cf",
         "EN-4b6cef91ffb05303",
@@ -1301,7 +1313,6 @@
         "EN-0b9ca57f53ba758b",
         "EN-76a9a8a6e2f1a47b",
         "EN-240389f4b730bad4",
-        "EN-1d79127e9d90e89b",
         "EN-4adc2faea521b1f1",
         "EN-c857d09db23e6822",
         "EN-2d87f3d38782aa14",
@@ -1324,7 +1335,53 @@
         "HW-033a5b73cdc3f4be"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-09-13"
+      "lastSeen": "2026-09-14"
+    },
+    {
+      "id": "TX-ai_market_application-data_preparation_curation",
+      "name": "数据准备与整理",
+      "nodeType": "ai_market_application",
+      "typeLabel": "AI 市场细分",
+      "valueId": "data_preparation_curation",
+      "eventIds": [
+        "EV-08612741cfce0bcf",
+        "EV-d67dd793fe1f2c04",
+        "EV-bdcb22b1a53358f5",
+        "EV-1bc31f98fa3e34cc",
+        "EV-1765fd690cff1cac",
+        "EV-cfbfc6c80338aa12",
+        "EV-60f219702a66bf38",
+        "EV-74967394aed730ce",
+        "EV-4da1a7c4d527eb69",
+        "EV-e54bfac94961f4d2",
+        "EV-2bb63a3015195f9b",
+        "EV-f54ec32c67e9447c",
+        "EV-30466ebe86779a64",
+        "EV-e8d1de5c77f32b9c",
+        "EV-e579af588ad8cf64",
+        "EV-1a6fbd73eb4eb133"
+      ],
+      "entityIds": [
+        "EN-fba6bdd504fa7aff",
+        "EN-5f03b37d8cca57e1",
+        "EN-67e8c106650aa683",
+        "EN-e4a72fa4f054e9be",
+        "EN-2505fe8a9e908e04",
+        "EN-7ebe9a17c4d4c271",
+        "EN-6861f63c27eb0ada",
+        "EN-18be231103e4649b",
+        "EN-ae1eae1d76e5b7c8",
+        "EN-d361e2fd6b342245",
+        "EN-e23228440ca5340f",
+        "EN-a9aff9e0737a5d4a",
+        "EN-67e05af6c6502566",
+        "EN-2b81d85809794782",
+        "EN-3ee57b807d91aa43"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-09-14"
     },
     {
       "id": "TX-ai_market_subcategory-data",
@@ -1333,6 +1390,7 @@
       "typeLabel": "AI 市场子类",
       "valueId": "data",
       "eventIds": [
+        "EV-08612741cfce0bcf",
         "EV-798081a4ec056f8c",
         "EV-d9e018b58da30912",
         "EV-c17a6102aab72f4f",
@@ -1356,6 +1414,7 @@
         "EV-3632f9193a3f3f28"
       ],
       "entityIds": [
+        "EN-fba6bdd504fa7aff",
         "EN-08e7b67a300e585f",
         "EN-187bf23c29af5e43",
         "EN-d47eb2cee65d0687",
@@ -1379,7 +1438,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-03-11",
-      "lastSeen": "2026-09-13"
+      "lastSeen": "2026-09-14"
     },
     {
       "id": "TX-product_form-ai_infrastructure_software",
@@ -2505,50 +2564,6 @@
       ],
       "firstSeen": "2024-09-05",
       "lastSeen": "2027-09-30"
-    },
-    {
-      "id": "TX-ai_market_application-data_preparation_curation",
-      "name": "数据准备与整理",
-      "nodeType": "ai_market_application",
-      "typeLabel": "AI 市场细分",
-      "valueId": "data_preparation_curation",
-      "eventIds": [
-        "EV-d67dd793fe1f2c04",
-        "EV-bdcb22b1a53358f5",
-        "EV-1bc31f98fa3e34cc",
-        "EV-1765fd690cff1cac",
-        "EV-cfbfc6c80338aa12",
-        "EV-60f219702a66bf38",
-        "EV-74967394aed730ce",
-        "EV-4da1a7c4d527eb69",
-        "EV-e54bfac94961f4d2",
-        "EV-2bb63a3015195f9b",
-        "EV-f54ec32c67e9447c",
-        "EV-30466ebe86779a64",
-        "EV-e8d1de5c77f32b9c",
-        "EV-e579af588ad8cf64",
-        "EV-1a6fbd73eb4eb133"
-      ],
-      "entityIds": [
-        "EN-5f03b37d8cca57e1",
-        "EN-67e8c106650aa683",
-        "EN-e4a72fa4f054e9be",
-        "EN-2505fe8a9e908e04",
-        "EN-7ebe9a17c4d4c271",
-        "EN-6861f63c27eb0ada",
-        "EN-18be231103e4649b",
-        "EN-ae1eae1d76e5b7c8",
-        "EN-d361e2fd6b342245",
-        "EN-e23228440ca5340f",
-        "EN-a9aff9e0737a5d4a",
-        "EN-67e05af6c6502566",
-        "EN-2b81d85809794782",
-        "EN-3ee57b807d91aa43"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-05-27",
-      "lastSeen": "2026-09-12"
     }
   ],
   "fde": [],

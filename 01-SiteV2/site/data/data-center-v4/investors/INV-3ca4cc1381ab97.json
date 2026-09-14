@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-14T03:22:45.625Z",
+    "generatedAt": "2026-09-14T04:55:12.862Z",
     "latestDataDate": "2026-09-14",
     "currentDate": "2026-09-14",
-    "eventCount": 3229,
+    "eventCount": 3230,
     "quarantinedEventCount": 34,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -56,22 +56,23 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 2,
-    "china_market_company_count": 2,
+    "china_market_activity_count": 3,
+    "china_market_company_count": 3,
     "first_disclosed_at": "2026-02-14",
-    "latest_disclosed_at": "2026-09-04",
+    "latest_disclosed_at": "2026-09-12",
     "role_counts": {
       "historical_or_ambiguous": 2,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "angel",
+      "angel_plus",
       "undisclosed"
     ],
     "portfolio_companies": [
@@ -81,12 +82,57 @@
         "name": "无界动力"
       },
       {
+        "entity_id": "EN-fba6bdd504fa7aff",
+        "canonical_entity_id": "",
+        "name": "斜跃"
+      },
+      {
         "entity_id": "EN-09afdeb63bb109fc",
         "canonical_entity_id": "",
         "name": "智子芯元(深圳)科技有限公司"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-6cbda073ccd3f99a",
+        "funding_insight_id": "FI-6cb88e1aa2901cbb",
+        "event_ids": [
+          "EV-08612741cfce0bcf"
+        ],
+        "company_entity_id": "EN-fba6bdd504fa7aff",
+        "company_canonical_entity_id": "",
+        "company_name": "斜跃",
+        "round": "天使+轮",
+        "round_code": "angel_plus",
+        "round_original": "天使+轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-09-12",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-02a843e0049125fa",
+            "source_url": "https://news.pedaily.cn/202609/568914.shtml",
+            "source_title": "斜跃智能完成数亿元天使+轮融资，加速推进Duplex Reasoning全新范式具身基础模型",
+            "source_content_hash": "0a4a2e441433729d",
+            "quote": "线性资本、钧山资本、弘颐资本、隐山资本 等机构参与投资",
+            "quote_hash": "7887793bea5e88b2f273d8cdfc053010b057e75a9143c6cf5bc796c2a44317a2"
+          }
+        ]
+      },
       {
         "activity_id": "IA-982ca0114aaa4f46",
         "funding_insight_id": "FI-3e97f5e30e99ff0b",
@@ -249,6 +295,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-02a843e0049125fa",
+        "source_url": "https://news.pedaily.cn/202609/568914.shtml",
+        "source_title": "斜跃智能完成数亿元天使+轮融资，加速推进Duplex Reasoning全新范式具身基础模型",
+        "source_content_hash": "0a4a2e441433729d",
+        "quote": "线性资本、钧山资本、弘颐资本、隐山资本 等机构参与投资",
+        "quote_hash": "7887793bea5e88b2f273d8cdfc053010b057e75a9143c6cf5bc796c2a44317a2"
+      },
       {
         "source_id": "FISRC-a52d8da56bf15229",
         "source_url": "https://news.qq.com/rain/a/20260410A03B5200",

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-14T03:22:45.625Z",
+    "generatedAt": "2026-09-14T04:55:12.862Z",
     "latestDataDate": "2026-09-14",
     "currentDate": "2026-09-14",
-    "eventCount": 3229,
+    "eventCount": 3230,
     "quarantinedEventCount": 34,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -16699,24 +16699,27 @@
         "hardware_shipment_deployment",
         "hardware_supply_agreement"
       ],
-      "raw_documents": 21,
-      "original_sources": 19,
-      "valid_claims": 12,
+      "raw_documents": 36,
+      "original_sources": 34,
+      "valid_claims": 15,
       "observations": 1,
-      "canonical_events": 5,
+      "canonical_events": 7,
       "blocker_counts": {
+        "source_outside_daily_window": 9,
+        "event_not_ai_relevant": 7,
+        "rumor_requires_primary_confirmation": 1,
+        "market_commentary_not_company_funding_source": 1,
+        "domestic_publication_date_unverified": 2,
+        "raw_source_quality_block": 4,
         "no_source_bounded_event": 3,
-        "source_outside_daily_window": 7,
-        "event_not_ai_relevant": 1,
         "multi_event_roundup_not_single_event_source": 1,
-        "non_event_or_index_title": 1,
-        "raw_source_quality_block": 3
+        "non_event_or_index_title": 1
       },
       "rates": {
-        "original_source_rate": 0.9047619047619048,
-        "valid_claim_rate": 0.5714285714285714,
-        "observation_rate": 0.08333333333333333,
-        "event_conversion_rate": 0.4166666666666667
+        "original_source_rate": 0.9444444444444444,
+        "valid_claim_rate": 0.4166666666666667,
+        "observation_rate": 0.06666666666666667,
+        "event_conversion_rate": 0.4666666666666667
       },
       "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-14/monitoring-funnel.json"
     }

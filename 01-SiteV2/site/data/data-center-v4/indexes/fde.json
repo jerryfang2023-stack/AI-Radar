@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-14T03:22:45.625Z",
+    "generatedAt": "2026-09-14T04:55:12.862Z",
     "latestDataDate": "2026-09-14",
     "currentDate": "2026-09-14",
-    "eventCount": 3229,
+    "eventCount": 3230,
     "quarantinedEventCount": 34,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -9969,23 +9969,25 @@
         "fde_procurement_contract",
         "fde_production_rollout"
       ],
-      "raw_documents": 101,
-      "original_sources": 88,
+      "raw_documents": 102,
+      "original_sources": 89,
       "valid_claims": 34,
       "observations": 1,
       "canonical_events": 13,
       "blocker_counts": {
+        "no_source_bounded_claim": 1,
         "opinion_without_source_bounded_event": 3,
-        "no_source_bounded_event": 15,
+        "no_source_bounded_event": 13,
         "source_outside_daily_window": 45,
+        "multiple_funding_recipients_require_separate_sources": 2,
         "non_event_or_index_title": 9,
         "event_entity_unresolved": 1,
         "community_source_requires_original_event_source": 1,
         "raw_source_quality_block": 13
       },
       "rates": {
-        "original_source_rate": 0.8712871287128713,
-        "valid_claim_rate": 0.33663366336633666,
+        "original_source_rate": 0.8725490196078431,
+        "valid_claim_rate": 0.3333333333333333,
         "observation_rate": 0.029411764705882353,
         "event_conversion_rate": 0.38235294117647056
       },

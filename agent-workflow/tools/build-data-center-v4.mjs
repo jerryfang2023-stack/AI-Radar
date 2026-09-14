@@ -267,9 +267,20 @@ function eventSourceEligibility(raw, artifact, title, dataDate = "", options = {
       && cleanString(raw.source_level).toLocaleLowerCase() !== "official") {
     return { accepted: false, reason: "funding_amount_semantics_replaced_by_official_source" };
   }
-  if (/^IT早报/iu.test(title)) {
+  if (/融资.{0,50}上市.{0,50}揭牌/u.test(title)) {
     return { accepted: false, reason: "multi_event_roundup_not_single_event_source" };
   }
+  if (options.eventType === "funding" && (
+    /(?:今年|全行业|行业整体).{0,30}(?:的)?融资.{0,16}[“"']?(?:结束|退潮)/u.test(title)
+    || /融资狂潮.{0,50}(?:预计|新增).{0,30}债务/u.test(title)
+    || /^谁拥有.{0,60}[？?].{0,30}(?:所有权|控制权|持股)/u.test(title)
+    || /^Who owns\b.{0,80}(?:ownership|control|stake)/iu.test(title)
+  )) {
+    return { accepted: false, reason: "market_commentary_not_company_funding_source" };
+  }
+  if (/^IT早报/iu.test(title)) {
+      return { accepted: false, reason: "multi_event_roundup_not_single_event_source" };
+    }
   if (/\bresearch fund\b/iu.test(`${title}\n${sourceLead}`)
       && /\b(?:external research|research agenda|research grants?|academic research)\b/iu.test(`${title}\n${sourceLead}`)) {
     return { accepted: false, reason: "research_fund_commitment_not_company_financing" };
