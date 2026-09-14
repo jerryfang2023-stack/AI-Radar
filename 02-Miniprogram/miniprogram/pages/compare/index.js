@@ -1,3 +1,4 @@
+const { contentLockReason, requestLockedContent } = require("../../utils/metered-access.js");
 const { getFundingData } = require("../../utils/live-data.js");
 const { removeCompare } = require("../../utils/storage.js");
 const { fetchProtectedContent } = require("../../utils/payment.js");
@@ -16,7 +17,7 @@ function compareText(cards) {
 }
 
 Page({
-  data: { cards: [], contentLocked: false, registrationOpen: false },
+  data: { cards: [], contentLocked: false, lockReason: "", registrationOpen: false },
   onLoad(options) {
     this.ids = decodeURIComponent(options.ids || "").split(",").filter(Boolean).slice(0, 3);
     this.renderPreview();
@@ -31,7 +32,8 @@ Page({
       const cards = await Promise.all(this.ids.map((id) => fetchProtectedContent("funding", id)));
       this.setData({ cards: cards.filter(Boolean), contentLocked: false });
     } catch (error) {
-      if (error.statusCode === 401 || error.statusCode === 403 || error.code === "MEMBERSHIP_REQUIRED" || error.code === "AUTH_INVALID") this.setData({ contentLocked: true });
+      if (error.code === "AUTH_CHANGED") return;
+      if (error.accessState || error.statusCode === 401 || error.statusCode === 403 || error.code === "MEMBERSHIP_REQUIRED" || error.code === "AUTH_INVALID") this.setData({ contentLocked: true, lockReason: contentLockReason(error) });
     }
   },
   copyComparison() {
@@ -48,7 +50,7 @@ Page({
   },
   backToFunding() { wx.switchTab({ url: "/pages/terminal/index" }); },
   openCard(event) { wx.navigateTo({ url: `/pages/detail/index?id=${event.currentTarget.dataset.id}` }); },
-  openRegistration() { this.setData({ registrationOpen: true }); },
+  openRegistration() { return requestLockedContent(this); },
   closeRegistration() { this.setData({ registrationOpen: false }); },
   continueAfterRegistration() { this.setData({ registrationOpen: false }); this.loadProtectedCards(); },
 });

@@ -1,6 +1,8 @@
 # Guanlan Funding Mini Program
 
-Current source: 1.1.0 replaces 行业观察 with 生态名录 beside the retained 生态图谱. Directory contains companies, products, investors and people, market/category search and server-owned entity follows. See `docs/REVIEW-1.1.0.md`. Upload is not review submission or production publication.
+Current source: 1.1.1 removes the bounty page, share route and bundled workflow. Registered-session renewal requires both a signed previous token and fresh WeChat proof for the same resolved account. Membership expiry routes to the membership center; session recovery never opens registration automatically. See `docs/REVIEW-1.1.1.md`. Upload is not review submission or publication.
+
+Previous source: 1.1.0 replaces 行业观察 with 生态名录 beside the retained 生态图谱. Directory contains companies, products, investors and people, market/category search and server-owned entity follows. See `docs/REVIEW-1.1.0.md`. Upload is not review submission or production publication.
 
 Previous source: 1.0.0 fixes delayed cross-identity responses, old-token expiry handling, and community cache isolation. Release evidence is tracked in `docs/releases/1.0.0/README.md`. The interim 0.9.10 development upload is superseded by 1.0.0 at the user's request.
 

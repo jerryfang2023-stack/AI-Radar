@@ -2,7 +2,7 @@ const { getFundingData } = require("../../utils/live-data.js");
 const { buildSector } = require("../../utils/ecosystem-insights.js");
 const { getFollowIds, toggleFollow } = require("../../utils/member.js");
 const { getAccessState, openMembership } = require("../../utils/access.js");
-const { resolveDetailAccess, requestLockedContent, protectedResourceId } = require("../../utils/metered-access.js");
+const { resolveDetailAccess, contentLockReason, requestLockedContent, protectedResourceId } = require("../../utils/metered-access.js");
 const { fetchProtectedContent } = require("../../utils/payment.js");
 
 Page({
@@ -22,7 +22,8 @@ Page({
       if (snapshot) this.setData({ snapshot });
       this.setData({ contentLocked: false, lockReason: "server" });
     } catch (error) {
-      if (error.statusCode === 401 || error.statusCode === 403 || error.code === "MEMBERSHIP_REQUIRED" || error.code === "AUTH_INVALID") this.setData({ contentLocked: true, lockReason: getAccessState() === "expired" ? "expired" : "unregistered" });
+      if (error.code === "AUTH_CHANGED") return;
+      if (error.accessState || error.statusCode === 401 || error.statusCode === 403 || error.code === "MEMBERSHIP_REQUIRED" || error.code === "AUTH_INVALID") this.setData({ contentLocked: true, lockReason: contentLockReason(error) });
     }
   },
   onShow() { this.setData({ following: getFollowIds().includes(this.followId) }); },
@@ -51,7 +52,8 @@ Page({
     const shouldFollow = this.pendingFollow;
     this.pendingFollow = false;
     this.pendingAction = "";
-    this.setData({ registrationOpen: false, contentLocked: false, lockReason: "active" });
+    this.setData({ registrationOpen: false });
+    this.verifyServerAccess();
     if (shouldFollow) this.applyFollow();
   },
   onShareAppMessage() { return { title: `${this.sector}｜生态赛道｜观澜 AI`, path: `/pages/sector-detail/index?sector=${encodeURIComponent(this.sector)}&market=${this.marketRegion}` }; },

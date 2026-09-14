@@ -30,3 +30,18 @@ test("keeps registered access open and routes expired access to membership", () 
     lockReason: "expired",
   });
 });
+
+
+test("registered denial routes to membership even when the local entitlement is stale", async () => {
+  const { contentLockReason, requestLockedContent } = require("../miniprogram/utils/metered-access.js");
+  const navigations = [];
+  globalThis.wx = { getStorageSync: (key) => key === "guanlan_api_token_v1" ? "registered" : { trialEndsAt: "2099-01-01" }, navigateTo: (value) => navigations.push(value.url) };
+  try {
+    const reason = contentLockReason({ statusCode: 403, code: "MEMBERSHIP_REQUIRED" });
+    assert.equal(reason, "expired");
+    await requestLockedContent({ data: { lockReason: reason }, setData() { throw new Error("must not register again"); } });
+    assert.deepEqual(navigations, ["/pages/membership/index"]);
+    assert.equal(contentLockReason({ accessState: "session" }), "session");
+    assert.equal(contentLockReason({ accessState: "unregistered" }), "session");
+  } finally { delete globalThis.wx; }
+});

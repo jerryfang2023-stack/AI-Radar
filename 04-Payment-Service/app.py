@@ -1282,6 +1282,31 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
                 inviteCode=own_invite_code,
             )
 
+    @app.post("/api/v1/auth/wechat/refresh")
+    def refresh_wechat_session():
+        # Expiry may be ignored only after checking the signature AND proving
+        # ownership again with a fresh WeChat code for the same resolved account.
+        header = request.headers.get("Authorization", "")
+        try:
+            if not header.startswith("Bearer "):
+                raise ValueError("missing bearer")
+            previous = serializer.loads(header[7:])
+        except Exception:
+            return jsonify(error={"code": "AUTH_INVALID", "message": "请重新登录"}), 401
+        code = str((request.get_json(silent=True) or {}).get("code") or "").strip()
+        if not code or len(code) > 128:
+            return jsonify(error={"code": "INVALID_CODE", "message": "微信登录凭证无效"}), 400
+        identity = app.pay_client.exchange_code(code)
+        with closing(db()) as conn:
+            original = user_by_id(conn, previous.get("user_id"))
+            matched = conn.execute("SELECT id FROM users WHERE openid=?", (identity["openid"],)).fetchone()
+            current = user_by_id(conn, matched["id"]) if matched else None
+            if not original or not current or original["id"] != current["id"]:
+                return jsonify(error={"code": "AUTH_CHANGED", "message": "微信账号已变化，请重新登录"}), 409
+            response = jsonify(token=token_for(current["id"]))
+            response.headers["Cache-Control"] = "private, no-store"
+            return response
+
     @app.get("/api/v1/member/me")
     @auth_required
     def member_me():

@@ -7,6 +7,9 @@ const communityPending = new Map();
 const COMMUNITY_FRESH_MS = 30000;
 const COMMUNITY_HOME_KEY = "guanlan_public_community_home_v2";
 let communityIdentity;
+const renewedTokens = new Map();
+const sessionRoots = new Map();
+let sessionRefresh;
 let communityGeneration = 0;
 
 function clearCommunityCache() {
@@ -16,7 +19,8 @@ function clearCommunityCache() {
 }
 
 function communityScope() {
-  const identity = wx.getStorageSync(TOKEN_KEY) || "";
+  const stored = wx.getStorageSync(TOKEN_KEY) || "";
+  const identity = sessionRoots.get(stored) || stored;
   if (identity !== communityIdentity) {
     clearCommunityCache();
     communityIdentity = identity;
@@ -41,6 +45,7 @@ function apiRequest(path, options = {}) {
         const error = new Error(response.data?.error?.message || `请求失败（${response.statusCode}）`);
         error.code = response.data?.error?.code || "API_ERROR";
         error.statusCode = response.statusCode;
+        error.accessState = response.data?.error?.accessState;
         reject(error);
       },
       fail(error) {
@@ -68,6 +73,7 @@ function wxLogin() {
 }
 
 async function login(options = {}) {
+  const previousToken = wx.getStorageSync(TOKEN_KEY) || "";
   const code = await wxLogin();
   const result = await apiRequest("/auth/wechat", {
     method: "POST",
@@ -80,6 +86,10 @@ async function login(options = {}) {
     },
   });
   if (!result.token) throw new Error("登录状态获取失败，请重试");
+  assertIdentity(previousToken);
+  renewedTokens.clear();
+  sessionRoots.clear();
+  clearCommunityCache();
   wx.setStorageSync(TOKEN_KEY, result.token);
   analytics.flush();
   return result;
@@ -102,39 +112,67 @@ function expireToken(token) {
   clearCommunityCache();
 }
 
-async function withExistingToken(fn) {
-  const token = wx.getStorageSync(TOKEN_KEY);
-  if (!token) {
-    const error = new Error("请先完成注册");
-    error.code = "AUTH_REQUIRED";
-    throw error;
+function sessionToken(original) {
+  let token = original;
+  const seen = new Set();
+  while (renewedTokens.has(token) && !seen.has(token)) {
+    seen.add(token);
+    token = renewedTokens.get(token);
   }
-  try {
-    const result = await fn(token);
-    assertIdentity(token);
-    return result;
-  } catch (error) {
-    if (error.statusCode === 401 || error.code === "AUTH_EXPIRED" || error.code === "AUTH_INVALID") {
-      expireToken(token);
+  assertIdentity(token);
+  return token;
+}
+
+async function refreshSession(original) {
+  const current = sessionToken(original);
+  if (current !== original) return current;
+  if (sessionRefresh?.token === original) return sessionRefresh.promise;
+  const pending = { token: original };
+  pending.promise = (async () => {
+    const code = await wxLogin();
+    assertIdentity(original);
+    const result = await apiRequest("/auth/wechat/refresh", { method: "POST", token: original, data: { code } });
+    assertIdentity(original);
+    if (!result.token) throw new Error("登录状态获取失败，请重试");
+    if (result.token !== original) renewedTokens.set(original, result.token);
+    sessionRoots.set(result.token, sessionRoots.get(original) || original);
+    wx.setStorageSync(TOKEN_KEY, result.token);
+    return result.token;
+  })().finally(() => { if (sessionRefresh === pending) sessionRefresh = null; });
+  sessionRefresh = pending;
+  return pending.promise;
+}
+
+async function withExistingToken(fn) {
+  const original = wx.getStorageSync(TOKEN_KEY);
+  if (!original) throw Object.assign(new Error("请先登录"), { code: "AUTH_REQUIRED" });
+  let token = original;
+  for (let attempt = 0; attempt < 2; attempt += 1) {
+    try {
+      const result = await fn(token);
+      sessionToken(token);
+      return result;
+    } catch (error) {
+      // Even a failed response must not act on a later, unrelated login.
+      sessionToken(token);
+      if (error.statusCode !== 401 && error.code !== "AUTH_EXPIRED" && error.code !== "AUTH_INVALID") throw error;
+      if (attempt === 1) {
+        expireToken(sessionToken(token));
+        throw Object.assign(error, { accessState: "session" });
+      }
+      try { token = await refreshSession(token); }
+      catch (refreshError) {
+        sessionToken(token);
+        if (refreshError.code === "AUTH_CHANGED") refreshError.code = "SESSION_CHANGED";
+        throw Object.assign(refreshError, { accessState: "session" });
+      }
     }
-    throw error;
   }
 }
 
-async function withToken(fn, retry = true) {
-  let token = wx.getStorageSync(TOKEN_KEY);
-  if (!token) token = (await login()).token;
-  try {
-    const result = await fn(token);
-    assertIdentity(token);
-    return result;
-  } catch (error) {
-    if (error.statusCode === 401 || error.code === "AUTH_EXPIRED" || error.code === "AUTH_INVALID") {
-      expireToken(token);
-      if (retry) return withToken(fn, false);
-    }
-    throw error;
-  }
+async function withToken(fn) {
+  if (!hasAuthToken()) await login();
+  return withExistingToken(fn);
 }
 
 function requestVirtualPayment(payment) {
@@ -317,13 +355,25 @@ function contentVisitorId() {
 }
 
 async function fetchProtectedContent(kind, id) {
-  const token = wx.getStorageSync(TOKEN_KEY) || "";
-  const result = await apiRequest(`/content/${encodeURIComponent(kind)}/${encodeURIComponent(id)}`, {
-    token,
-    visitorId: contentVisitorId(),
+  const original = wx.getStorageSync(TOKEN_KEY) || "";
+  const request = (token) => apiRequest(`/content/${encodeURIComponent(kind)}/${encodeURIComponent(id)}`, {
+    token, visitorId: contentVisitorId(),
   });
-  assertIdentity(token);
-  return result.content?.mini || result.content;
+  try {
+    const result = original ? await withExistingToken(request) : await request("");
+    if (!original) assertIdentity("");
+    return result.content?.mini || result.content;
+  } catch (error) {
+    if (error.code === "AUTH_CHANGED") throw error;
+    if (error.accessState !== "session") {
+      if (original) sessionToken(original);
+      else assertIdentity("");
+    }
+    if (error.statusCode === 403 && error.code === "MEMBERSHIP_REQUIRED") {
+      error.accessState = original ? "expired" : "unregistered";
+    }
+    throw error;
+  }
 }
 
 function entityFollows(method='GET',resourceId='') {

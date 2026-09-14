@@ -1143,3 +1143,36 @@ def test_entity_follows_are_scoped_and_only_full_funding_reads_clear_updates(cli
     assert rows()[0]["unreadCount"] == 0
     assert client.delete("/api/v1/member/entity-follows",headers=auth(token),json={"resourceId":"r-follow-test"}).status_code == 200
     assert rows() == []
+
+
+def test_wechat_refresh_requires_signed_token_and_same_wechat_account(client):
+    token = login(client, "refresh-owner")
+    serializer = client.application.extensions["user_token_serializer"]
+    from unittest.mock import patch
+    # An expired but authentic token is sufficient only together with fresh
+    # WeChat identity proof. Renewal never creates a user or grants a trial.
+    payload = serializer.loads(token)
+    with patch("itsdangerous.timed.TimestampSigner.get_timestamp", return_value=1):
+        expired = serializer.dumps(payload)
+    assert client.get("/api/v1/member/me", headers=auth(expired)).status_code == 401
+    restored = client.post("/api/v1/auth/wechat/refresh", headers=auth(expired), json={"code": "refresh-owner"})
+    assert restored.status_code == 200
+    assert serializer.loads(restored.json["token"]) == payload
+    assert "no-store" in restored.headers["Cache-Control"]
+    assert client.get("/api/v1/member/me", headers=auth(restored.json["token"])).status_code == 200
+    assert client.post("/api/v1/auth/wechat/refresh", headers=auth(expired), json={"code": "another-account"}).status_code == 409
+    assert client.post("/api/v1/auth/wechat/refresh", headers=auth(expired + "tampered"), json={"code": "refresh-owner"}).status_code == 401
+    assert client.post("/api/v1/auth/wechat/refresh", json={"code": "refresh-owner"}).status_code == 401
+
+
+def test_content_denial_distinguishes_registered_expiry_from_visitor(client):
+    client.get("/api/v1/content/funding/round-a")
+    visitor = client.get("/api/v1/content/funding/round-b")
+    assert visitor.json["error"]["accessState"] == "unregistered"
+    token = login(client, "expired-reader")
+    with sqlite3.connect(client.application.config["DATABASE_PATH"]) as conn:
+        conn.execute("UPDATE users SET trial_ends_at='2000-01-01T00:00:00+00:00', member_ends_at=NULL")
+    registered = client.get("/api/v1/content/funding/round-b", headers=auth(token))
+    assert registered.status_code == 403
+    assert registered.json["error"]["accessState"] == "expired"
+    assert "注册" not in registered.json["error"]["message"]

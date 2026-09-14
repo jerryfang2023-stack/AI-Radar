@@ -12,11 +12,11 @@
     <view class="entity-actions"><button bindtap="toggleEntityFollow" loading="{{followBusy}}" disabled="{{followBusy}}">{{following?'已关注':'关注'}}</button><button wx:if="{{type==='companies' && entity.rounds.length}}" bindtap="compareCompany">加入对比</button><button wx:if="{{entity.website}}" bindtap="copyWebsite">复制官网</button></view>
     <button wx:if="{{contentError && !contentLocked}}" class="plain-copy" bindtap="verifyServerAccess">{{contentError}}</button>
     <view wx:if="{{contentLocked}}" class="content-access-gate">
-      <text class="gate-kicker">游客试读已完成</text>
-      <text class="gate-title serif">{{lockReason === 'expired' ? '开通会员查看完整档案' : '注册后查看完整档案'}}</text>
-      <text class="gate-copy">主体名称和简介可见，企业关系、投资活动与融资历史需登录后查看。</text>
-      <button bindtap="unlockContent">{{lockReason === 'expired' ? '查看会员权益' : '注册并继续'}}</button>
-      <text class="gate-note">是否登录由你选择，可随时返回生态栏目。</text>
+      <text class="gate-kicker">{{lockReason === 'expired' ? '浏览权益已到期' : lockReason === 'session' ? '登录状态待恢复' : '游客试读已完成'}}</text>
+      <text class="gate-title serif">{{lockReason === 'session' ? '重新登录后继续浏览' : lockReason === 'expired' ? '开通会员查看完整档案' : '注册后查看完整档案'}}</text>
+      <text class="gate-copy">主体名称和简介可见，企业关系、投资活动与融资历史需有效浏览权益。</text>
+      <button bindtap="unlockContent">{{lockReason === 'session' ? '重新登录' : lockReason === 'expired' ? '查看会员权益' : '注册并继续'}}</button>
+      <text class="gate-note">可随时返回生态栏目。</text>
     </view>
 
     <block wx:else>

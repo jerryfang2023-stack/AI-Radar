@@ -138,7 +138,7 @@ test("first slow read has a skeleton and failed protected refresh clears prior d
   assert.equal(page.data.secret, null);
   assert.equal(page.data.loaded, false);
   assert.equal(page.data.showLoading, false);
-  for (const name of ["community", "community-points", "community-bounty", "community-program", "community-graph"]) {
+  for (const name of ["community", "community-points", "community-program", "community-graph"]) {
     const markup = fs.readFileSync(`miniprogram/pages/${name}/index.wxml`, "utf8");
     assert.doesNotMatch(markup, /正在加载|正在处理/);
     assert.match(markup, /community-skeleton/);

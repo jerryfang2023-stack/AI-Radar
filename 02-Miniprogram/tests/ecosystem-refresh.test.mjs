@@ -66,7 +66,7 @@ test("report reader rejects empty server bodies, retains preview, retries and re
     "../../utils/live-data.js": { getReportData: () => ({ index: reports }) },
     "../../utils/community-essays.js": { getCommunityEssays: () => ({ details: {} }) },
     "../../utils/access.js": { getAccessState: () => "active" },
-    "../../utils/metered-access.js": { resolveDetailAccess: () => ({}), requestLockedContent() {} },
+    "../../utils/metered-access.js": { resolveDetailAccess: () => ({}), contentLockReason: () => "session", requestLockedContent() {} },
     "../../utils/payment.js": { fetchProtectedContent: async () => { calls++; if (response instanceof Error) throw response; return response; } },
   });
   page.reportId = "monthly-2026-08-29";

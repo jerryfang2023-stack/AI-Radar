@@ -4,7 +4,7 @@ const { recordBrowse } = require("../../utils/member.js");
 const { getFundingData } = require("../../utils/live-data.js");
 const { companyEntityKey, investorEntityKey, personEntityKey } = require("../../utils/entity-library.js");
 const { getAccessState, openMembership } = require("../../utils/access.js");
-const { resolveDetailAccess, requestLockedContent } = require("../../utils/metered-access.js");
+const { resolveDetailAccess, contentLockReason, requestLockedContent } = require("../../utils/metered-access.js");
 const { fetchProtectedContent } = require("../../utils/payment.js");
 
 function normalizedCard(card) {
@@ -46,8 +46,9 @@ Page({
       if (detail) this.renderCard(normalizedCard(detail));
       this.setData({ contentLocked: false, lockReason: "server" });
     } catch (error) {
-      if (error.statusCode === 401 || error.statusCode === 403 || error.code === "MEMBERSHIP_REQUIRED" || error.code === "AUTH_INVALID") {
-        this.setData({ contentLocked: true, lockReason: getAccessState() === "expired" ? "expired" : "unregistered" });
+      if (error.code === "AUTH_CHANGED") return;
+      if (error.accessState || error.statusCode === 401 || error.statusCode === 403 || error.code === "MEMBERSHIP_REQUIRED" || error.code === "AUTH_INVALID") {
+        this.setData({ contentLocked: true, lockReason: contentLockReason(error) });
       } else if (!this.data.card) {
         wx.showToast({ title: "融资记录暂时无法读取", icon: "none" });
       }
@@ -84,9 +85,7 @@ Page({
     this.pendingUrl = "";
     this.setData({ registrationOpen: false });
     if (action === "content") {
-      this.setData({ contentLocked: false, lockReason: "active" });
-      this.recordView(this.data.card);
-      return;
+      return this.verifyServerAccess();
     }
     this.recordView(this.data.card);
     if (action === "watch") this.applyWatch();

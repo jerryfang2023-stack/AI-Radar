@@ -2,9 +2,9 @@
   <app-header title="融资比较" show-back right-label="复制摘要" bind:righttap="copyComparison" />
   <view wx:if="{{cards.length}}" class="compare-content">
     <view wx:if="{{contentLocked}}" class="content-access-gate">
-      <text class="gate-kicker">会员功能</text><text class="gate-title serif">登录后使用完整融资比较</text>
-      <text class="gate-copy">基础融资信息可见，累计融资、机构关系与观澜判断需登录后查看。</text>
-      <button bindtap="openRegistration">注册并继续</button>
+      <text class="gate-kicker">会员功能</text><text class="gate-title serif">{{lockReason === 'expired' ? '开通会员使用完整融资比较' : lockReason === 'session' ? '重新登录后继续比较' : '注册后使用完整融资比较'}}</text>
+      <text class="gate-copy">基础融资信息可见，累计融资、机构关系与观澜判断需有效浏览权益。</text>
+      <button bindtap="openRegistration">{{lockReason === 'expired' ? '查看会员权益' : lockReason === 'session' ? '重新登录' : '注册并继续'}}</button>
     </view>
     <scroll-view class="compare-scroll" scroll-x enhanced show-scrollbar="false">
       <view class="compare-track">

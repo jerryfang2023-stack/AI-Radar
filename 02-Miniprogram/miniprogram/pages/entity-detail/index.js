@@ -1,7 +1,7 @@
 const {isCompared,toggleCompare}=require('../../utils/storage.js');
 const { getFundingData } = require("../../utils/live-data.js");
 const { buildEntityLibrary, findEntity, companyEntityKey } = require("../../utils/entity-library.js");
-const { resolveDetailAccess, requestLockedContent, protectedResourceId } = require("../../utils/metered-access.js");
+const { resolveDetailAccess, contentLockReason, requestLockedContent, protectedResourceId } = require("../../utils/metered-access.js");
 const { getAccessState, openMembership } = require("../../utils/access.js");
 const { fetchProtectedContent, entityFollows, hasAuthToken } = require("../../utils/payment.js");
 
@@ -41,7 +41,7 @@ Page({
     } catch (error) {
       if(this.disposed||error.code==='AUTH_CHANGED')return;
       this.setData({contentError:error.statusCode===404?'资料暂不可用':'资料加载失败，点击重试'});
-      if (error.statusCode === 401 || error.statusCode === 403 || error.code === "MEMBERSHIP_REQUIRED" || error.code === "AUTH_INVALID") this.setData({ contentLocked: true, lockReason: "unregistered" });
+      if (error.accessState || error.statusCode === 401 || error.statusCode === 403 || error.code === "MEMBERSHIP_REQUIRED" || error.code === "AUTH_INVALID") this.setData({ contentLocked: true, lockReason: contentLockReason(error) });
     }
   },
 

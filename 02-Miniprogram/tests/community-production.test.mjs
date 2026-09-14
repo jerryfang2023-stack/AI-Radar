@@ -103,7 +103,7 @@ test("production homepage never substitutes demo archives on API failure", async
   const { page } = pageFor("community", async () => { throw new Error("Unavailable"); });
   await page.refresh();
   assert.equal(page.data.featuredArchive, null);
-  assert.equal(page.data.bounty, null);
+  assert.equal(page.data.bounty, undefined);
   assert.equal(page.data.error, "Unavailable");
 });
 
@@ -125,17 +125,17 @@ test("homepage renders one recommendation and four distinct full-width archive r
   assert.match(style, /\.community-archive-list button\s*\{[^}]*width: 100%/);
 });
 
-test("homepage hides bounty entry and cards while retaining historical service data", async () => {
+test("homepage ignores retired bounty fields from historical service responses", async () => {
   let bounty = null;
   const { page } = pageFor("community", async () => ({ archives: [], bounty, featuredMembers: [], memberCount: 0 }));
   await page.refresh();
-  assert.equal(page.data.bounty, null);
+  assert.equal(page.data.bounty, undefined);
   bounty = { id: "published-case", question: "A reviewed question", points: 20 };
   await page.refresh();
-  assert.equal(page.data.bounty.id, "published-case");
+  assert.equal(page.data.bounty, undefined);
   bounty = null;
   await page.refresh();
-  assert.equal(page.data.bounty, null);
+  assert.equal(page.data.bounty, undefined);
   const template = fs.readFileSync("miniprogram/pages/community/index.wxml", "utf8");
   assert.doesNotMatch(template, /bounty-feature|community-bounty/);
   assert.doesNotMatch(template, /发起问题，与成员一起寻找答案/);
@@ -213,16 +213,6 @@ test("role map sorts actual counts and preserves supply meanings after reorderin
   assert.equal(page.data.activeRoleData.name, selected);
 });
 
-test("bounty answer waits for server acknowledgement and cannot report success on failure", async () => {
-  const { page, events } = pageFor("community-bounty", async () => { throw Object.assign(new Error("Access revoked"), { statusCode: 403 }); });
-  page.caseId = "a".repeat(24);
-  page.data.item = { question: "Protected question" };
-  page.submitAnswer();
-  await new Promise(setImmediate);
-  assert.equal(page.data.item, null);
-  assert.equal(events.filter(([type, data]) => type === "showToast" && data.title.includes("已提交")).length, 0);
-  assert.equal(page.data.error, "Access revoked");
-});
 
 test("community consistently names the member navigation as role map", () => {
   for (const page of ["community", "community-graph"]) {

@@ -10,6 +10,8 @@
       <text class="text-link">设置</text>
     </view>
 
+    <button wx:if="{{accountError}}" class="account-sync-state" bindtap="retryAccount">{{accountError}}</button>
+
     <view class="growth-card" bindtap="openGrowth">
       <view class="growth-top">
         <view>

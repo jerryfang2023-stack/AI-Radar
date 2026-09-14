@@ -2,7 +2,7 @@ const { recordBehavior } = require("../../utils/member.js");
 const { getReportData, getCommunityDetail } = require("../../utils/live-data.js");
 const { getCommunityEssays } = require("../../utils/community-essays.js");
 const { getAccessState } = require("../../utils/access.js");
-const { resolveDetailAccess, requestLockedContent } = require("../../utils/metered-access.js");
+const { resolveDetailAccess, contentLockReason, requestLockedContent } = require("../../utils/metered-access.js");
 const { fetchProtectedContent } = require("../../utils/payment.js");
 
 const { presentReport } = require("../../utils/report-reader.js");
@@ -38,8 +38,9 @@ Page({
       this.render(report);
       this.setData({ contentLocked: false, lockReason: this.isCommunityEssay ? "public" : "server" });
     } catch (error) {
-      if (error.statusCode === 401 || error.statusCode === 403 || error.code === "MEMBERSHIP_REQUIRED" || error.code === "AUTH_INVALID") {
-        this.setData({ contentLocked: true, lockReason: getAccessState() === "expired" ? "expired" : "unregistered" });
+      if (error.code === "AUTH_CHANGED") return;
+      if (error.accessState || error.statusCode === 401 || error.statusCode === 403 || error.code === "MEMBERSHIP_REQUIRED" || error.code === "AUTH_INVALID") {
+        this.setData({ contentLocked: true, lockReason: contentLockReason(error) });
       } else {
         this.setData({ loadError: "正文暂时无法读取" });
       }

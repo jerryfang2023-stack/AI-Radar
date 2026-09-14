@@ -17,7 +17,7 @@ const data = require("../miniprogram/utils/community-data.js");
 test("registers the confirmed native community hub as the third tab", () => {
   assert.equal(app.tabBar.list[2].pagePath, "pages/community/index");
   assert.equal(app.tabBar.list[2].text, "社群");
-  for (const page of ["community", "community-program", "community-bounty", "community-points", "community-graph"]) {
+  for (const page of ["community", "community-program", "community-points", "community-graph"]) {
     assert.ok(app.pages.includes(`pages/${page}/index`));
   }
 });

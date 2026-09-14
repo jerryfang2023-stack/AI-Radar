@@ -15,11 +15,11 @@
     </view>
 
     <view wx:if="{{contentLocked}}" class="content-access-gate">
-      <text class="gate-kicker">游客试读已完成</text>
-      <text class="gate-title serif">{{lockReason === 'expired' ? '开通会员继续阅读' : '注册后继续阅读'}}</text>
-      <text class="gate-copy">本页已展示融资主体与基础事实，完整分析、机构信息和历史记录需登录后查看。</text>
-      <button bindtap="unlockContent">{{lockReason === 'expired' ? '查看会员权益' : '注册并继续'}}</button>
-      <text class="gate-note">是否登录由你选择，可随时返回融资列表。</text>
+      <text class="gate-kicker">{{lockReason === 'expired' ? '浏览权益已到期' : lockReason === 'session' ? '登录状态待恢复' : '游客试读已完成'}}</text>
+      <text class="gate-title serif">{{lockReason === 'session' ? '重新登录后继续浏览' : lockReason === 'expired' ? '开通会员继续阅读' : '注册后继续阅读'}}</text>
+      <text class="gate-copy">本页已展示融资主体与基础事实，完整分析、机构信息和历史记录需有效浏览权益。</text>
+      <button bindtap="unlockContent">{{lockReason === 'session' ? '重新登录' : lockReason === 'expired' ? '查看会员权益' : '注册并继续'}}</button>
+      <text class="gate-note">可随时返回融资列表。</text>
     </view>
 
     <block wx:else>

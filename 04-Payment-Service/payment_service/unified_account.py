@@ -1015,7 +1015,7 @@ def register_routes(app, *, db, membership, user_by_id, fulfill_order, complete_
             response = make_response(jsonify(error={"code": reason, "message": "访问较频繁，请稍后再试"}), 429)
         elif decision != "ALLOW":
             response = make_response(jsonify(
-                error={"code": "MEMBERSHIP_REQUIRED", "message": "注册后可继续浏览，会员可查看全部内容"},
+                error={"code": "MEMBERSHIP_REQUIRED", "message": "浏览权益已到期，请前往会员中心查看" if user else "注册后可继续浏览，会员可查看全部内容", "accessState": "expired" if user else "unregistered"},
                 preview={"resourceType": kind, "resourceId": resource_id},
                 requiredCapability=CAPABILITIES[kind],
             ), 403)

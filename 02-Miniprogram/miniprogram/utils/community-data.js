@@ -36,12 +36,6 @@ const archives = [
   },
 ];
 
-const bounties = [
-  { id: "FC-260825-01", founder: "Fisher", role: "AI SaaS · 企业落地", status: "进行中", mode: "社群共创", category: "产品战略", points: 30, question: "未来 6 个月，我们应该继续做 FDE 项目制收入，还是把高频需求产品化？", summary: "已有 3 个企业客户，项目收入稳定，但交付高度依赖创始团队。现在需要在现金流和可复制性之间做一次明确选择。", time: "今天 20:00 截止", answers: 2, participants: 6 },
-  { id: "FC-260824-03", founder: "Kevin", role: "AI SaaS 出海 · 增长", status: "进行中", mode: "线上回答", category: "增长", points: 20, question: "已有 100 个付费用户，下一阶段应优先建设销售团队，还是继续投入 PLG？", summary: "产品已有初步付费验证，需要在销售扩张和产品驱动增长之间确定下一阶段的资源配置。", time: "剩余 18 小时", answers: 3, participants: 3 },
-  { id: "FC-260823-02", founder: "Harry Yu", role: "日本市场 · ToB 销售", status: "待结案", mode: "混合解题", category: "出海", points: 30, question: "进入日本市场第一年，应该自建本地销售，还是与渠道伙伴联合交付？", summary: "团队正在验证日本 ToB 市场，希望结合交付控制、获客速度和本地信任成本确定进入方式。", time: "等待 Founder 确认", answers: 5, participants: 8 },
-  { id: "FC-260821-06", founder: "Echo", role: "RAG SaaS · 商业化", status: "已结案", mode: "线上回答", category: "定价", points: 10, question: "首批企业客户应该按席位收费，还是按可验证的业务结果收费？", summary: "产品已完成两家客户试用，需要在易理解的席位价格和更贴近价值的结果定价之间选择首个标准方案。", time: "已分配 10 积分", answers: 4, participants: 4 },
-];
 
 const members = [
   { id: "yangxu", name: "杨旭", avatar: "杨", city: "北京", company: "个人实践", role: "投资 / 研究", industry: "新媒体 MCN、金融投资、AI 职场培训", ai: ["Agent", "AI 产品", "AI 应用"], project: "用 CodeBuddy 搭建缠论半自动交易系统，并持续实践 AI 内容生产。", ability: "互联网与新媒体运营、AI 培训、股票与 ETF 交易、个人媒体。", need: "继续完善 AI 辅助交易系统，并交流金融 Agent 与 AI 内容创作。" },
@@ -90,7 +84,6 @@ const pointRules = {
 };
 
 function getArchive(id) { return archives.find((item) => item.id === id) || archives[0]; }
-function getBounty(id) { return bounties.find((item) => item.id === id) || bounties[0]; }
 function getMember(id) { return members.find((item) => item.id === id) || members[0]; }
 
-module.exports = { schedules, archives, bounties, members, roles, leaderboard, pointRules, getArchive, getBounty, getMember };
+module.exports = { schedules, archives, members, roles, leaderboard, pointRules, getArchive, getMember };

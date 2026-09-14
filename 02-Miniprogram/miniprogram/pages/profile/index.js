@@ -13,7 +13,7 @@ const {
   syncWallet,
   syncMembership,
 } = require("../../utils/member.js");
-const { fetchMembership, linkCommunityPhone } = require("../../utils/payment.js");
+const { fetchMembership, linkCommunityPhone, hasAuthToken, login } = require("../../utils/payment.js");
 const { syncTabBar } = require("../../utils/tab-bar.js");
 
 Page({
@@ -24,6 +24,7 @@ Page({
     growth: { wallet: { balance: 0 }, level: { level: 1, name: "初识者", progress: 0 }, tasks: [], benefits: [], weeklyCompleted: 0 },
     community: { status: "none", statusLabel: "未入群", points: 0 },
     linkingCommunity: false,
+    accountError: "",
   },
 
   onShow() {
@@ -54,8 +55,17 @@ Page({
     if (this.data.community.status === "joined") wx.navigateTo({ url: "/pages/growth/index" });
     else wx.navigateTo({ url: "/pages/community-apply/index" });
   },
+  async retryAccount() {
+    try {
+      if (!hasAuthToken() || this.sessionUnavailable) await login();
+      await this.refreshAccount();
+    } catch (error) {
+      wx.showToast({ title: error.message || "登录未完成，请重试", icon: "none" });
+    }
+  },
   async refreshAccount() {
     try {
+      this.setData({ accountError: "" });
       await syncBehaviorQueue();
       const result = await fetchMembership();
       if (result.profile?.nickname) saveProfile({ nickname: result.profile.nickname });
@@ -63,9 +73,13 @@ Page({
       if (result.membership) syncMembership(result.membership);
       if (result.wallet) syncWallet(result.wallet);
       if (result.community) syncCommunity(result.community);
-      this.setData({ growth: getGrowthSnapshot(), community: getCommunity() });
-    } catch (_) {
-      // Keep the last confirmed snapshot when the account service is unavailable.
+      this.sessionUnavailable = false;
+      this.setData({ growth: getGrowthSnapshot(), community: getCommunity(), accountError: "" });
+    } catch (error) {
+      if (error.code === "AUTH_CHANGED") return;
+      this.sessionUnavailable = error.accessState === "session" || error.code === "AUTH_REQUIRED";
+      // Cached profile fields do not imply that the current session was verified.
+      if (getGrowthSnapshot().membership.registered) this.setData({ accountError: this.sessionUnavailable ? "登录状态待恢复 · 点击重新登录" : "账号状态暂未同步 · 点击重试" });
     }
   },
   async linkCommunity(event) {
