@@ -101,19 +101,27 @@ function publishedFundingCards(projectRoot, excludedOutput = "") {
     .flatMap((file) => readJson(path.join(bundleRoot, file), { cards: [] }).cards || []);
 }
 
-function recoveryCardsFromGit(ref, outputFile) {
+export function recoveryCardsFromGit(ref, outputFile, projectRoot = root) {
   if (!ref) return [];
-  const repositoryPath = path.relative(root, outputFile).replace(/\\/gu, "/");
+  const repositoryPath = path.relative(projectRoot, outputFile).replace(/\\/gu, "/");
   if (repositoryPath.startsWith("../") || path.isAbsolute(repositoryPath)) {
     throw new Error(`funding_recovery_output_outside_repository:${repositoryPath}`);
   }
   try {
-    const payload = execFileSync("git", ["show", `${ref}:${repositoryPath}`], {
-      cwd: root,
+    const options = {
+      cwd: projectRoot,
       encoding: "utf8",
       maxBuffer: 64 * 1024 * 1024,
-    });
-    return JSON.parse(payload).cards || [];
+      stdio: ["ignore", "pipe", "pipe"],
+    };
+    const commit = execFileSync("git", ["rev-parse", "--verify", "--end-of-options", `${ref}^{commit}`], options).trim();
+    // First production of a date has no previous card bundle. Only absence in a
+    // verified commit is optional; invalid refs, I/O and corrupt data still fail.
+    const entry = execFileSync("git", ["ls-tree", "--name-only", commit, "--", repositoryPath], options).trim();
+    if (!entry) return [];
+    const payload = JSON.parse(execFileSync("git", ["show", `${commit}:${repositoryPath}`], options));
+    if (!Array.isArray(payload.cards)) throw new Error("funding_recovery_cards_invalid");
+    return payload.cards;
   } catch (error) {
     throw new Error(`funding_recovery_ref_unavailable:${ref}:${error.message}`);
   }

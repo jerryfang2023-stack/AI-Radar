@@ -32,7 +32,7 @@ import {
   subjectCompanyForEvent,
   verifiedFundingEventCardCoverageProblems,
 } from "../funding-insight-v1-utils.mjs";
-import { canonicalSources, fundingHistory } from "../generate-funding-insights-deepseek.mjs";
+import { canonicalSources, fundingHistory, recoveryCardsFromGit } from "../generate-funding-insights-deepseek.mjs";
 import {
   preserveFundingSourceChannels,
   verifiedFundingEventCount,
@@ -1459,6 +1459,31 @@ test("withdrawal recovery removes the old card and retains its blocked reason on
       assert.equal(result.meta.counts.funding_events, 1);
       assert.equal(result.meta.counts.blocked, 1);
       assert.deepEqual(result.queue, [{ event_id: "EV-1", status: "blocked", problems: ["funding_event_not_completed"] }]);
+    }
+  } finally {
+    fs.rmSync(projectRoot, { recursive: true, force: true });
+  }
+});
+
+test("Git card recovery allows a first daily file but fails closed on invalid refs and corrupt bundles", () => {
+  const projectRoot = fs.mkdtempSync(path.join(os.tmpdir(), "funding-git-recovery-"));
+  const git = (...args) => childProcess.execFileSync("git", args, { cwd: projectRoot, stdio: "pipe", encoding: "utf8" });
+  const output = path.join(projectRoot, "daily.json");
+  try {
+    git("init");
+    git("-c", "user.name=Test", "-c", "user.email=test@example.com", "commit", "--allow-empty", "-m", "initial");
+    assert.deepEqual(recoveryCardsFromGit("HEAD", output, projectRoot), []);
+    assert.throws(() => recoveryCardsFromGit("missing-ref", output, projectRoot), /funding_recovery_ref_unavailable/);
+    assert.throws(() => recoveryCardsFromGit("HEAD", path.join(projectRoot, "../outside.json"), projectRoot), /outside_repository/);
+    fs.writeFileSync(output, JSON.stringify({ cards: [{ triggered_by_event_id: "EV-existing" }] }));
+    git("add", "daily.json");
+    git("-c", "user.name=Test", "-c", "user.email=test@example.com", "commit", "-m", "accepted");
+    assert.deepEqual(recoveryCardsFromGit("HEAD", output, projectRoot), [{ triggered_by_event_id: "EV-existing" }]);
+    for (const invalid of ["{broken", '{"cards":{}}']) {
+      fs.writeFileSync(output, invalid);
+      git("add", "daily.json");
+      git("-c", "user.name=Test", "-c", "user.email=test@example.com", "commit", "-m", "invalid");
+      assert.throws(() => recoveryCardsFromGit("HEAD", output, projectRoot), /funding_recovery_ref_unavailable/);
     }
   } finally {
     fs.rmSync(projectRoot, { recursive: true, force: true });
