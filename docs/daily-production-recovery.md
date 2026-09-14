@@ -53,6 +53,12 @@ despite a failed outcome.
 
 ## Evidence and publication acceptance
 
+Chinese financing headlines such as “智谱宣布完成…” must split “宣布” into the
+action, not the funded company's Claim subject. Repair the deterministic factual
+builder and rebuild from the same accepted intake; do not rename a generated
+card to hide a malformed Claim subject. Exact source quotes and spans remain
+unchanged, and existing organization aliases retain their evidence requirements.
+
 Funding generation with `--recover-from-git-ref=HEAD` first resolves an exact
 commit and checks whether that date's prior card bundle exists. A missing bundle
 in a valid commit is a normal first run, not failed recovery. Invalid references,
