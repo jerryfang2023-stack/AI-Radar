@@ -28,6 +28,7 @@ Component({
   data: {
     avatarUrl: "/assets/brand/app-icon-light.svg",
     avatarSelected: false,
+    avatarPickerOpen: false,
     nickname: "",
     canSubmit: false,
     registering: false,
@@ -69,16 +70,11 @@ Component({
       this.triggerEvent("close");
     },
 
-    chooseAvatar(event) {
-      const tempFilePath = event.detail.avatarUrl;
-      if (!tempFilePath) return;
-      wx.getFileSystemManager().saveFile({
-        tempFilePath,
-        success: ({ savedFilePath }) => {
-          this.setData({ avatarUrl: savedFilePath, avatarSelected: true }, () => this.updateSubmitState());
-        },
-        fail: () => wx.showToast({ title: "头像保存失败，请重新选择", icon: "none" }),
-      });
+    openAvatarPicker() { this.setData({ avatarPickerOpen: true }); },
+    closeAvatarPicker() { this.setData({ avatarPickerOpen: false }); },
+    selectAvatar(event) {
+      if (!event.detail?.avatarUrl) return;
+      this.setData({ avatarUrl: event.detail.avatarUrl, avatarSelected: true, avatarPickerOpen: false }, () => this.updateSubmitState());
     },
 
     inputNickname(event) {

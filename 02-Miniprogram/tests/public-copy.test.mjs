@@ -95,7 +95,8 @@ test("requires phone, avatar and nickname before the server starts a seven-day t
   for (const copy of ["开启 7 天完整体验", "头像", "昵称", "授权手机号并开启体验", "不自动续费"]) {
     assert.match(registrationSource, new RegExp(copy, "u"));
   }
-  assert.match(registrationSource, /open-type="chooseAvatar"/u);
+  assert.match(registrationSource, /<avatar-picker/u);
+  assert.match(fs.readFileSync("miniprogram/components/avatar-picker/index.wxml", "utf8"), /chooseAvatar/u);
   assert.match(registrationSource, /type="nickname"/u);
   assert.match(registrationSource, /open-type="getPhoneNumber"/u);
   assert.match(registrationLogic, /phoneCode/u);

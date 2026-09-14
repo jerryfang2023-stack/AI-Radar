@@ -2,7 +2,7 @@ const { getProfile, saveProfile, getProfileCompletion, syncCommunity } = require
 const { bindPhoneNumber, fetchMembership, updateProfile } = require("../../utils/payment.js");
 
 Page({
-  data: { profile: {}, nickname: "", profileCompletion: 0, bindingPhone: false, saving: false },
+  data: { profile: {}, nickname: "", profileCompletion: 0, bindingPhone: false, saving: false, avatarPickerOpen: false },
 
   onShow() {
     this.refreshProfile();
@@ -28,17 +28,16 @@ Page({
     }
   },
 
-  chooseAvatar(event) {
-    const tempFilePath = event.detail.avatarUrl;
-    if (!tempFilePath) return;
-    wx.getFileSystemManager().saveFile({
-      tempFilePath,
-      success: ({ savedFilePath }) => {
-        saveProfile({ avatarUrl: savedFilePath });
-        this.refreshProfile();
-      },
-      fail: () => wx.showToast({ title: "头像保存失败，请重试", icon: "none" }),
-    });
+  openAvatarPicker() { this.setData({ avatarPickerOpen: true }); },
+  closeAvatarPicker() { this.setData({ avatarPickerOpen: false }); },
+  selectAvatar(event) {
+    if (!event.detail?.avatarUrl) return;
+    try {
+      saveProfile({ avatarUrl: event.detail.avatarUrl });
+      this.refreshProfile();
+      this.setData({ avatarPickerOpen: false });
+      wx.showToast({ title: "头像已更新", icon: "success" });
+    } catch (_) { wx.showToast({ title: "头像未保存，请重试", icon: "none" }); }
   },
 
   inputNickname(event) { this._nicknameDirty = true; this.setData({ nickname: event.detail.value }); },

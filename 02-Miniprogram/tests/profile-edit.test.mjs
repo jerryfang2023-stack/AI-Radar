@@ -16,10 +16,10 @@ test('late profile reads and avatar saves preserve nickname draft; form value pe
  const h=harness();h.page.onShow();h.page.inputNickname({detail:{value:'输入中的昵称'}});
  h.resolveRead({profile:{nickname:'服务器旧昵称',phoneMasked:'138****0000'}});await new Promise(setImmediate);
  assert.equal(h.page.data.nickname,'输入中的昵称');
- h.page.chooseAvatar({detail:{avatarUrl:'temp'}});assert.equal(h.page.data.nickname,'输入中的昵称');
+ h.page.selectAvatar({detail:{avatarUrl:'new-avatar'}});assert.equal(h.page.data.nickname,'输入中的昵称');
  await h.page.saveNickname({detail:{value:{nickname:'微信昵称选择结果'}}});
  assert.equal(h.profile().nickname,'微信昵称选择结果');assert.deepEqual(h.writes,['微信昵称选择结果']);
- h.page._nicknameDirty=false;h.page.refreshProfile();assert.equal(h.page.data.nickname,'微信昵称选择结果');
+ h.page._nicknameDirty=false;h.page.refreshProfile();assert.equal(h.page.data.nickname,'微信昵称选择结果');assert.equal(h.page.data.profile.avatarUrl,'new-avatar');
 });
 test('failed remote save keeps draft and never reports success or overwrites persisted nickname',async()=>{
  const h=harness();h.page.refreshProfile();h.reject();await h.page.saveNickname({detail:{value:{nickname:'新昵称'}}});

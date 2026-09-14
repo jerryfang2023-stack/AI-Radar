@@ -14,13 +14,13 @@
       <button class="registration-existing" loading="{{linkingExisting}}" disabled="{{linkingExisting || registering}}" open-type="getPhoneNumber" bindgetphonenumber="linkExistingMember">已有社群成员，直接同步</button>
 
       <view class="registration-form">
-        <view class="profile-input-row">
-          <view><text class="field-title">头像</text><text class="field-note">使用微信头像</text></view>
-          <button class="registration-avatar {{avatarSelected ? 'selected' : ''}}" open-type="chooseAvatar" bindchooseavatar="chooseAvatar">
+        <button class="profile-input-row avatar-field" bindtap="openAvatarPicker" aria-label="选择头像">
+          <view><text class="field-title">头像</text><text class="field-note">点击选择头像</text></view>
+          <view class="registration-avatar {{avatarSelected ? 'selected' : ''}}">
             <image src="{{avatarUrl}}" mode="aspectFill" />
             <text>{{avatarSelected ? '更换' : '选择'}}</text>
-          </button>
-        </view>
+          </view>
+        </button>
         <view class="profile-input-row nickname-row">
           <view><text class="field-title">昵称</text><text class="field-note">使用微信昵称</text></view>
           <input type="nickname" maxlength="20" value="{{nickname}}" placeholder="选择微信昵称" bindinput="inputNickname" />
@@ -40,3 +40,5 @@
     </block>
   </view>
 </view>
+
+<avatar-picker visible="{{visible && avatarPickerOpen}}" bindclose="closeAvatarPicker" bindselected="selectAvatar" />

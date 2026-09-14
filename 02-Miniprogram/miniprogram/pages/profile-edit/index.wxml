@@ -12,10 +12,10 @@
     <view class="section-title serif">资料设置</view>
     <form bindsubmit="saveNickname">
     <view class="form-card paper-card">
-      <view class="profile-row avatar-field">
+      <button class="profile-row avatar-field" bindtap="openAvatarPicker" aria-label="更换头像">
         <view class="field-copy"><text class="field-label">头像</text><text class="field-note">点击头像更换</text></view>
-        <button class="avatar-button" open-type="chooseAvatar" bindchooseavatar="chooseAvatar"><image src="{{profile.avatarUrl}}" mode="aspectFill" /></button>
-      </view>
+        <view class="avatar-button"><image src="{{profile.avatarUrl}}" mode="aspectFill" /></view>
+      </button>
 
       <view class="profile-row nickname-field">
         <text class="field-label">昵称</text>
@@ -32,3 +32,5 @@
     </form>
   </view>
 </view>
+
+<avatar-picker visible="{{avatarPickerOpen}}" bindclose="closeAvatarPicker" bindselected="selectAvatar" />

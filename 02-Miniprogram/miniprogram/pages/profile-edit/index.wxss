@@ -23,3 +23,6 @@
 .outline-button { min-width: 112rpx; min-height: 62rpx; margin: 0; padding: 0 20rpx; border: 1rpx solid rgba(200,167,102,.72); border-radius: 31rpx; background: #fffaf0; color: #8b6423; font-size: 22rpx; font-weight: 600; line-height: 62rpx; }
 .outline-button[disabled] { opacity: .62; }
 .save-button { margin-top: 28rpx; border-radius: 18rpx; box-shadow: 0 14rpx 30rpx rgba(7,24,39,.13); }
+
+button.avatar-field { width: 100%; margin: 0; border-radius: 0; background: #fff; text-align: left; line-height: normal; }
+button.avatar-field::after { border: 0; }

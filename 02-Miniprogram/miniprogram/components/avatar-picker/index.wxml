@@ -1,0 +1,12 @@
+<view wx:if="{{visible}}" class="avatar-overlay" catchtap="close">
+  <view class="avatar-panel" catchtap="noop">
+    <view class="avatar-heading"><text>选择头像</text><button bindtap="close" disabled="{{saving}}" aria-label="关闭头像选择">关闭</button></view>
+    <button class="wechat-avatar" open-type="{{nativeSupported ? 'chooseAvatar' : ''}}" bindtap="nativeTap" bindchooseavatar="chooseAvatar" loading="{{saving}}" disabled="{{saving}}">使用微信头像</button>
+    <text class="system-heading">或选择系统头像</text>
+    <view class="system-avatars">
+      <button wx:for="{{avatars}}" wx:key="id" data-id="{{item.id}}" bindtap="selectSystemAvatar" disabled="{{saving}}" aria-label="{{item.name}}"><image src="{{item.url}}" mode="aspectFill" /><text>{{item.name}}</text></button>
+    </view>
+    <text wx:if="{{message}}" class="avatar-message">{{message}}</text>
+    <button class="avatar-cancel" bindtap="close" disabled="{{saving}}">取消</button>
+  </view>
+</view>
