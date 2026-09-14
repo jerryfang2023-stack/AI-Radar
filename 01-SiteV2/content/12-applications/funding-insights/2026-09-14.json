@@ -1,0 +1,2146 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "date": "2026-09-14",
+    "generated_at": "2026-09-14T04:54:13.120Z",
+    "trigger": "verified_funding_events_with_three_month_backfill",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
+    "counts": {
+      "funding_events": 12,
+      "auto_published": 3,
+      "blocked": 0,
+      "pending": 0,
+      "deduplicated": 9
+    },
+    "taxonomy_version": "TAG-V4.1"
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-6107eabb9245ddb8",
+      "triggered_by_event_id": "EV-7eead74c2baae511",
+      "as_of_date": "2026-09-14",
+      "company": {
+        "entity_id": "EN-1d79127e9d90e89b",
+        "name": "智谱AI",
+        "full_name": "智谱AI",
+        "website": "",
+        "summary": "智谱AI成立于2019年，由清华大学计算机系知识工程实验室技术成果转化而来，是国内最早开启大语言模型研发的公司之一，以GLM系列模型为核心，构建了从基础模型到应用产品的完整体系。",
+        "headquarters": "",
+        "founders": [
+          {
+            "name": "张鹏",
+            "role": "CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e930be8aa5120588",
+                "quote": "CEO张鹏本硕博均毕业于清华",
+                "source_content_hash": "6039a35df79b1076",
+                "quote_hash": "c6bfd85ebadfed3f665f3aab71cc8ca84338ee3673acec9011cc7f09ef638163"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "刘德兵",
+            "role": "董事长",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e930be8aa5120588",
+                "quote": "董事长刘德兵、总裁王绍兰同为清华校友",
+                "source_content_hash": "6039a35df79b1076",
+                "quote_hash": "a5fa979ffd532e4f58fc49d53c5b4c7b98886396bbc73305972d361c0b924472"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "王绍兰",
+            "role": "总裁",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e930be8aa5120588",
+                "quote": "董事长刘德兵、总裁王绍兰同为清华校友",
+                "source_content_hash": "6039a35df79b1076",
+                "quote_hash": "a5fa979ffd532e4f58fc49d53c5b4c7b98886396bbc73305972d361c0b924472"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-e930be8aa5120588",
+            "quote": "成立于2019年的智谱AI，背后站着一群清华大牛",
+            "source_content_hash": "6039a35df79b1076",
+            "quote_hash": "7a783ee103c44353ff05cc9fc0e832bb020055d117848c792079465c100b7267"
+          }
+        ],
+        "application_entity_id": "EN-1d79127e9d90e89b",
+        "canonical_entity_consistent": true
+      },
+      "financing": {
+        "round": "其他融资",
+        "amount": "50 亿美元",
+        "total_raised": "",
+        "announced_at": "2026-09-13",
+        "investor_disclosure_status": "not_disclosed",
+        "investors": [],
+        "other_round_investors": [
+          {
+            "name": "中关村科学城公司",
+            "role": "领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4b5b536102d7731e",
+                "quote": "智谱AI以200亿元的投前估值，完成了由中关村科学城公司领投的新一轮融资",
+                "source_content_hash": "ca9f54b39d2a0ec7",
+                "quote_hash": "2e55bdd92f87e0896aeff4abb35ca48afd15b8f7824e215a3cf23ac2a5f555d2"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "君联资本",
+            "role": "老股东跟投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e930be8aa5120588",
+                "quote": "君联资本等老股东继续跟投",
+                "source_content_hash": "6039a35df79b1076",
+                "quote_hash": "09135137d26f26bd28b50094f83073165e1fc63f7387c73121997236f599dfa2"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Prosperity7",
+            "role": "投资",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4b5b536102d7731e",
+                "quote": "中东石油巨头沙特阿美（Aramco）旗下风险投资部门管理的基金Prosperity7对智谱AI进行了投资，投资金额为4亿美元",
+                "source_content_hash": "ca9f54b39d2a0ec7",
+                "quote_hash": "4c5196c549165535e6906f6ef24e7056ff4330c2f18db17d9de3a6dd5e2df430"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-fab27694293e7a3f",
+            "quote": "智谱宣布完成约 50 亿美元融资，用于下一代 GLM 基础模型研发等 - IT之家",
+            "source_content_hash": "aee2cd5827facf12",
+            "quote_hash": "b19e5879ca955d25274428de9a84442fe27980ff8f06c422398e60c605763dff"
+          }
+        ],
+        "round_code": "other",
+        "round_original": "约50亿美元融资",
+        "amount_original": "50 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 5000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "50 亿美元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [
+          "investors_missing"
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-7eead74c2baae511",
+            "round_original": "约50亿美元融资",
+            "amount": "50 亿美元",
+            "announced_at": "2026-09-13",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fab27694293e7a3f",
+                "quote": "智谱宣布完成约 50 亿美元融资，用于下一代 GLM 基础模型研发等 - IT之家",
+                "source_content_hash": "aee2cd5827facf12",
+                "quote_hash": "b19e5879ca955d25274428de9a84442fe27980ff8f06c422398e60c605763dff"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "partially_disclosed"
+      },
+      "products": [
+        {
+          "name": "智谱清言",
+          "description": "C端Chatbot类产品，面向个人用户提供AI对话服务。",
+          "target_customers": "个人用户",
+          "features": [
+            "AI对话"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e930be8aa5120588",
+              "quote": "C端产品智谱清言则拥有超过2500万用户",
+              "source_content_hash": "6039a35df79b1076",
+              "quote_hash": "c7f248b034a6fc9943d83d2d559c25a1092aa8b518a60805f123762d1e21315d"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "AutoGLM",
+          "description": "全球首个可自主操作手机的智能体，用户可通过语音指令完成点餐、订票、查房、预约、撰写文稿、生成视频等跨应用任务。",
+          "target_customers": "个人用户和硬件厂商",
+          "features": [
+            "自主操作手机",
+            "跨应用任务执行",
+            "接入AI眼镜、手表、家电等硬件"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d037a9d6c1b7494",
+              "quote": "AutoGLM是全球首个可自主操作手机的智能体，用户不必手动操作，就能通过语音指令完成点餐、订票、查房、预约、撰写文稿、生成视频等跨应用任务",
+              "source_content_hash": "621653e0f656f70c",
+              "quote_hash": "0ce70fffd3ac72d475440eab7ced08b4979cdfa20014024ee4c01aa3351572cf"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "OpenAI",
+          "product": "GPT系列模型",
+          "scenario": "通用大模型研发与商业化",
+          "target_customer": "企业客户和开发者",
+          "funding_summary": "OpenAI宣布最新一轮融资66亿美元，投后估值达到1570亿美元",
+          "core_difference": "智谱AI的GLM-4整体性能相比上一代大幅提升60%，号称比肩GPT-4，但实际上也只是达到GPT-4约90%左右的水平；OpenAI的o1系列模型在国际奥数考试中得分83.3%，而GPT-4o得分13.4%。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4b5b536102d7731e",
+              "quote": "虽然GLM-4整体性能相比上一代大幅提升60%，号称“比肩GPT-4”，但实际上也只是达到GPT-4约90%左右的水平",
+              "source_content_hash": "ca9f54b39d2a0ec7",
+              "quote_hash": "6b82e92ab88d94bd7b2c6450be8983065188d87562a0ab164eaf77a52dd2465b"
+            },
+            {
+              "source_id": "FISRC-e930be8aa5120588",
+              "quote": "OpenAI宣布最新一轮融资66亿美元，投后估值达到1570亿美元",
+              "source_content_hash": "6039a35df79b1076",
+              "quote_hash": "7e9e5e53b299a9e6c434071554a721d4aa372e8a40459ed5585e117aaafd94bc"
+            }
+          ],
+          "entity_id": "EN-7d3194f79e645c42"
+        },
+        {
+          "name": "月之暗面",
+          "product": "大模型产品",
+          "scenario": "国产大模型融资与商业化",
+          "target_customer": "",
+          "funding_summary": "",
+          "core_difference": "月之暗面与智谱AI同属国产AI超级独角兽阵营，但来源未提供月之暗面具体产品、客户或融资金额的直接比较信息。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e930be8aa5120588",
+              "quote": "诞生了一批AI超级独角兽：月之暗面、百川智能、Minimax、零一万物",
+              "source_content_hash": "6039a35df79b1076",
+              "quote_hash": "6de7125be024d88ea218d962ddf1df34b2d843a546bf7d2ccf12c1d29795c0cc"
+            }
+          ],
+          "entity_id": "EN-b5251b35f15bedc4"
+        }
+      ],
+      "metrics": [
+        {
+          "label": "智谱清言用户数",
+          "value": "超过2500万",
+          "observed_at": "2024-12-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e930be8aa5120588",
+              "quote": "C端产品智谱清言则拥有超过2500万用户",
+              "source_content_hash": "6039a35df79b1076",
+              "quote_hash": "c7f248b034a6fc9943d83d2d559c25a1092aa8b518a60805f123762d1e21315d"
+            }
+          ]
+        },
+        {
+          "label": "2024年营业收入",
+          "value": "3.124亿元",
+          "observed_at": "2025-12-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d037a9d6c1b7494",
+              "quote": "2022年、2023年、2024年，智谱的营业收入分别为为5740万元、1.245亿元、3.124亿元",
+              "source_content_hash": "621653e0f656f70c",
+              "quote_hash": "7a19457a3da303dcc40b31201389ae9aa92c109fdf2c2029075e454d98003b6f"
+            }
+          ]
+        },
+        {
+          "label": "2022-2024年营收复合年增长率",
+          "value": "130%",
+          "observed_at": "2025-12-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d037a9d6c1b7494",
+              "quote": "复合年增长率达到130%",
+              "source_content_hash": "621653e0f656f70c",
+              "quote_hash": "e6a3545dff0ee030316da842d34ae28dd64fa67232be003ae4db57062993168d"
+            }
+          ]
+        },
+        {
+          "label": "日均云端token调用量",
+          "value": "超过4.2万亿次",
+          "observed_at": "2025-11",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d037a9d6c1b7494",
+              "quote": "今年11月，智谱的日均云端token调用量超过4.2万亿次",
+              "source_content_hash": "621653e0f656f70c",
+              "quote_hash": "06e669fd87ab80a2174db2c19839a555379c8293a0c74187808434835d34859d"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "张鹏",
+          "quote": "我们的目标永远是让‘机器像人一样思考’，并且让机器服务人类。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e930be8aa5120588",
+              "quote": "我们的目标永远是让‘机器像人一样思考’，并且让机器服务人类。",
+              "source_content_hash": "6039a35df79b1076",
+              "quote_hash": "477fe1229af6b0025233f8c1c2fb5056e7cf430d2abd17b7627348a9f1ef531c"
+            }
+          ]
+        },
+        {
+          "speaker": "张鹏",
+          "quote": "我们一边做核心的技术，一边拓展市场。从第一天开始，我们就有收入。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e930be8aa5120588",
+              "quote": "我们一边做核心的技术，一边拓展市场。从第一天开始，我们就有收入。",
+              "source_content_hash": "6039a35df79b1076",
+              "quote_hash": "d152a1c0d661b1c19d3b43f6dbc2c8a30a056fbef2441b431bbfc332967eec10"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是智谱AI在完全自训练体系上的研发投入能否形成递归式自我改进循环，从而在模型能力和算力效率两个维度同时建立壁垒。本轮约50亿美元融资由约20亿美元股份配售和约30亿美元可转债发行构成，但来源未披露具体投资方名称，因此无法确认机构背书。已验证信号包括：智谱MaaS平台已吸引270万+企业及应用开发者，2024年营收3.124亿元且复合年增长率达130%，日均云端token调用量超过4.2万亿次，中国前10大互联网公司中有9家使用GLM大模型。证据边界在于：来源未提供本轮融资的估值、投资方名单或机构投资逻辑，资本判断仅能基于公司披露的研发方向和既有业务数据。",
+        "validated_signals": [
+          "MaaS平台已吸引270万+企业及应用开发者",
+          "2024年营收3.124亿元，复合年增长率130%",
+          "日均云端token调用量超过4.2万亿次",
+          "中国前10大互联网公司中有9家使用GLM大模型"
+        ],
+        "risks": [
+          "本轮融资未披露具体投资方，无法确认机构背书质量",
+          "完全自训练体系仍处于探索阶段，递归式自我改进循环的实际效果尚未被验证",
+          "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "models",
+        "use_case_ids": [
+          "content_creation",
+          "knowledge_search",
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer",
+          "business_user",
+          "consumer"
+        ],
+        "sector": "人工智能基础模型",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是智谱AI在完全自训练体系上的研发投入能否形成递归式自我改进循环，从而在模型能力和算力效率两个维度同时建立壁垒。本轮约50亿美元融资由约20亿美元股份配售和约30亿美元可转债发行构成，但来源未披露具体投资方名称，因此无法确认机构背书。已验证信号包括：智谱MaaS平台已吸引270万+企业及应用开发者，2024年营收3.124亿元且复合年增长率达130%，日均云端token调用量超过4.2万亿次，中国前10大互联网公司中有9家使用GLM大模型。证据边界在于：来源未提供本轮融资的估值、投资方名单或机构投资逻辑，资本判断仅能基于公司披露的研发方向和既有业务数据。",
+          "evidence_signals": [
+            "MaaS平台已吸引270万+企业及应用开发者",
+            "2024年营收3.124亿元，复合年增长率130%",
+            "日均云端token调用量超过4.2万亿次",
+            "中国前10大互联网公司中有9家使用GLM大模型"
+          ],
+          "risks": [
+            "本轮融资未披露具体投资方，无法确认机构背书质量",
+            "完全自训练体系仍处于探索阶段，递归式自我改进循环的实际效果尚未被验证"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "智谱清言",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "AutoGLM",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "张鹏",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "刘德兵",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "王绍兰",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "中关村科学城公司",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "君联资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Prosperity7",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "OpenAI",
+          "canonical_entity_id": "EN-7d3194f79e645c42",
+          "canonical_name": "OpenAI"
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "月之暗面",
+          "canonical_entity_id": "EN-b5251b35f15bedc4",
+          "canonical_name": "Moonshot AI"
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-ef669a52c9a3f94f",
+          "date": "2026-09-13",
+          "title": "AI 新闻日报·今日人工智能资讯热点汇总 · 读懂AI时代 2026年9月13日",
+          "amount": "50亿美元",
+          "source_refs": [
+            "SA-d393714c8031dfe9"
+          ]
+        },
+        {
+          "event_id": "EV-7eead74c2baae511",
+          "date": "2026-09-13",
+          "title": "智谱宣布完成约 50 亿美元融资，用于下一代 GLM 基础模型研发",
+          "amount": "50 亿美元",
+          "source_refs": [
+            "SA-3c7b3c2e7bf47e19"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-fab27694293e7a3f",
+          "source_url": "https://www.ithome.com/1/001/833.htm",
+          "title": "智谱宣布完成约 50 亿美元融资，用于下一代 GLM 基础模型研发",
+          "publisher": "IT之家（RSS）",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-14T02:55:38.387Z",
+          "content_hash": "aee2cd5827facf12",
+          "source_artifact_id": "SA-3c7b3c2e7bf47e19",
+          "raw_id": "RAW-f08f552afda05a3e"
+        },
+        {
+          "source_id": "FISRC-e930be8aa5120588",
+          "source_url": "https://www.jiemian.com/article/12128930.html",
+          "title": "刚刚，智谱AI完成融资30亿|界面新闻 · JMedia",
+          "publisher": "jiemian.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-14T04:53:48.475Z",
+          "content_hash": "6039a35df79b1076",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-4b5b536102d7731e",
+          "source_url": "https://finance.sina.com.cn/tech/roll/2024-09-18/doc-incpqqsn4446116.shtml",
+          "title": "疯狂对标OpenAI，智谱AI要背水一战|AI_新浪科技_新浪网",
+          "publisher": "finance.sina.com.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-14T04:53:48.614Z",
+          "content_hash": "ca9f54b39d2a0ec7",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-5d037a9d6c1b7494",
+          "source_url": "https://www.qbitai.com/2025/12/362256.html",
+          "title": "火线解析智谱AI招股书：年营收3亿增速130%，率先冲刺全球大模型第一股 – 量子位",
+          "publisher": "qbitai.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-14T04:53:49.985Z",
+          "content_hash": "621653e0f656f70c",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-14T04:54:12.876Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-7eead74c2baae511",
+          "confidence": 0.75,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-14T04:54:12.876Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "AutoGLM",
+            "智谱清言"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "刘德兵",
+            "张鹏",
+            "王绍兰"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-7eead74c2baae511"
+      ],
+      "aggregation": {
+        "key": "EN-1d79127e9d90e89b|other",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-d36d8b879b6b969c",
+      "triggered_by_event_id": "EV-08612741cfce0bcf",
+      "as_of_date": "2026-09-14",
+      "company": {
+        "entity_id": "EN-fba6bdd504fa7aff",
+        "name": "杭州斜跃智能科技有限公司",
+        "full_name": "杭州斜跃智能科技有限公司",
+        "website": "",
+        "summary": "斜跃智能成立于2026年2月，是一家以家庭为第一落地场景的具身基础模型公司，正在构建面向真实物理世界的通用具身模型，以自研模型驱动通用家庭机器人落地。",
+        "headquarters": "杭州",
+        "founders": [
+          {
+            "name": "陈伟",
+            "role": "创始人，理想前AI首席科学家、基座模型部门负责人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-02a843e0049125fa",
+                "quote": "斜跃由理想前AI首席科学家、基座模型部门负责人陈伟，以及理想前产品线总裁张骁联合创立",
+                "source_content_hash": "0a4a2e441433729d",
+                "quote_hash": "1bca997f12a8e47b91a3006ae4a7988152b1f59e2bdc8a813559c628df1e2c5f"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "张骁",
+            "role": "创始人，理想前产品线总裁",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-02a843e0049125fa",
+                "quote": "斜跃由理想前AI首席科学家、基座模型部门负责人陈伟，以及理想前产品线总裁张骁联合创立",
+                "source_content_hash": "0a4a2e441433729d",
+                "quote_hash": "1bca997f12a8e47b91a3006ae4a7988152b1f59e2bdc8a813559c628df1e2c5f"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-02a843e0049125fa",
+            "quote": "杭州斜跃智能科技有限公司（以下简称“ 斜跃 ”） 成立于2026年2月，是一家以家庭为第一落地场景的具身基础模型公司",
+            "source_content_hash": "0a4a2e441433729d",
+            "quote_hash": "eb3d0171b40384d814c5139b60bdc8326e3be4417baed559532e8db69bc5066b"
+          }
+        ],
+        "application_entity_id": "EN-fba6bdd504fa7aff",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "天使+轮",
+        "amount": "数亿元",
+        "total_raised": "",
+        "announced_at": "2026-09-12",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "线性资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-02a843e0049125fa",
+                "quote": "线性资本、钧山资本、弘颐资本、隐山资本 等机构参与投资",
+                "source_content_hash": "0a4a2e441433729d",
+                "quote_hash": "7887793bea5e88b2f273d8cdfc053010b057e75a9143c6cf5bc796c2a44317a2"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "钧山资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-02a843e0049125fa",
+                "quote": "线性资本、钧山资本、弘颐资本、隐山资本 等机构参与投资",
+                "source_content_hash": "0a4a2e441433729d",
+                "quote_hash": "7887793bea5e88b2f273d8cdfc053010b057e75a9143c6cf5bc796c2a44317a2"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "弘颐资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-02a843e0049125fa",
+                "quote": "线性资本、钧山资本、弘颐资本、隐山资本 等机构参与投资",
+                "source_content_hash": "0a4a2e441433729d",
+                "quote_hash": "7887793bea5e88b2f273d8cdfc053010b057e75a9143c6cf5bc796c2a44317a2"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "隐山资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-02a843e0049125fa",
+                "quote": "线性资本、钧山资本、弘颐资本、隐山资本 等机构参与投资",
+                "source_content_hash": "0a4a2e441433729d",
+                "quote_hash": "7887793bea5e88b2f273d8cdfc053010b057e75a9143c6cf5bc796c2a44317a2"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "元璟资本",
+            "role": "首轮联合投资",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c721ebc5120776a7",
+                "quote": "目前，斜跃智能已完成首轮融资工商变更，由元璟资本和理想汽车联合投资",
+                "source_content_hash": "e7a27a430ad91a6f",
+                "quote_hash": "b1fc62e98c15024da7f2b11650756ea68a07d130572e63a8c0bc38eb0b08329f"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "理想汽车",
+            "role": "首轮联合投资",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c721ebc5120776a7",
+                "quote": "目前，斜跃智能已完成首轮融资工商变更，由元璟资本和理想汽车联合投资",
+                "source_content_hash": "e7a27a430ad91a6f",
+                "quote_hash": "b1fc62e98c15024da7f2b11650756ea68a07d130572e63a8c0bc38eb0b08329f"
+              }
+            ],
+            "entity_id": "EN-d3c20bd565303d39"
+          },
+          {
+            "name": "华建函数投资",
+            "role": "天使+轮参与投资",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c819301c98746ad",
+                "quote": "参与投资的机构包括华建函数投资，隐山资本，线性资本",
+                "source_content_hash": "7097837e19f59c4b",
+                "quote_hash": "bf418993b9c8adc6fc9e8483977e00fdd6a7772fbd0bf7be4a660fa92c2101b4"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-02a843e0049125fa",
+            "quote": "近日，斜跃智能完成 数亿元天使+轮融资 ， 线性资本、钧山资本、弘颐资本、隐山资本 等机构参与投资。",
+            "source_content_hash": "0a4a2e441433729d",
+            "quote_hash": "cbc07785de0500d9494d01770e4afbb59eb07f53914ffd70704ca7f346a0a29e"
+          },
+          {
+            "source_id": "FISRC-02a843e0049125fa",
+            "quote": "近日，斜跃智能完成 数亿元天使+轮融资 ， 线性资本、钧山资本、弘颐资本、隐山资本 等机构参与投资",
+            "source_content_hash": "0a4a2e441433729d",
+            "quote_hash": "615a791f699d2d1b22d56a5e9810400001af4e35a4b6c319e562684914ff4504"
+          }
+        ],
+        "round_code": "angel_plus",
+        "round_original": "天使+轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-08612741cfce0bcf",
+            "round_original": "天使+轮",
+            "amount": "数亿元",
+            "announced_at": "2026-09-12",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-02a843e0049125fa",
+                "quote": "近日，斜跃智能完成 数亿元天使+轮融资 ， 线性资本、钧山资本、弘颐资本、隐山资本 等机构参与投资。",
+                "source_content_hash": "0a4a2e441433729d",
+                "quote_hash": "cbc07785de0500d9494d01770e4afbb59eb07f53914ffd70704ca7f346a0a29e"
+              },
+              {
+                "source_id": "FISRC-02a843e0049125fa",
+                "quote": "近日，斜跃智能完成 数亿元天使+轮融资 ， 线性资本、钧山资本、弘颐资本、隐山资本 等机构参与投资",
+                "source_content_hash": "0a4a2e441433729d",
+                "quote_hash": "615a791f699d2d1b22d56a5e9810400001af4e35a4b6c319e562684914ff4504"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Duplex Reasoning范式驱动的具身基础模型",
+          "description": "以VLA为主干，打通与世界模型预测的协同，实现交互与行动在数据、模型结构与训练流程中一体化建模的具身基础模型，旨在打造可打断、可修正、可接管、可持续进化的通用家庭行动智能。",
+          "target_customers": "面向家庭场景的C端用户，以及酒店、养老院等半结构化场景的先行验证客户",
+          "features": [
+            "Duplex Reasoning双向通道，对话信息可随时被打断和修正",
+            "以VLA为主干，与世界模型预测协同",
+            "交互与行动一体化建模",
+            "可打断、可修正、可接管、可持续进化"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-02a843e0049125fa",
+              "quote": "斜跃提出了Duplex Reasoning 范式驱动的具身基础模型",
+              "source_content_hash": "0a4a2e441433729d",
+              "quote_hash": "79c268faf540897d22d170ff86ccdbaa093af2e54a871a02178b6986a0c600fd"
+            },
+            {
+              "source_id": "FISRC-02a843e0049125fa",
+              "quote": "以 VLA 为主干，打通与世界模型预测的协同",
+              "source_content_hash": "0a4a2e441433729d",
+              "quote_hash": "93fbfbd2e41b5c74401d409e2863efa075dbd5e7c8d052096f3e96da07ad6972"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "自研Ego数据采集设备及数据平台",
+          "description": "围绕第一视角、无本体数据和与本体相关的高质量数据，搭建分层数据体系的数据采集设备与平台。",
+          "target_customers": "内部研发使用",
+          "features": [
+            "第一视角数据采集",
+            "无本体数据采集",
+            "分层数据体系"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-02a843e0049125fa",
+              "quote": "斜跃已初步完成自研Ego数据采集设备及数据平台建设，围绕第一视角、无本体数据和与本体相关的高质量数据，逐步搭建分层数据体系",
+              "source_content_hash": "0a4a2e441433729d",
+              "quote_hash": "450ca8933a8dffe8b68825679f55502e12fdb56eb7c2e1bf56b9c042b9dbe4c8"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "至简动力",
+          "product": "工业B端具身智能",
+          "scenario": "工业场景，场景可控、投入产出可核算",
+          "target_customer": "工业B端客户",
+          "funding_summary": "半年内连续完成5轮融资，累计融资金额达20亿人民币",
+          "core_difference": "至简动力做工业B端，场景可控、投入产出可核算；斜跃做家庭C端，难度更高，天花板也更高。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cdd5a12196625097",
+              "quote": "区别在于，至简动力做工业B端，场景可控、投入产出可核算；斜跃做家庭C端，难度更高，天花板也更高。",
+              "source_content_hash": "0348ae0a2787ec50",
+              "quote_hash": "e769d9be9d0f3ba890691800d5a2a0f83a8e77f65fa0b42896adab4ac337bd78"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "自变量机器人",
+          "product": "保洁服务机器人",
+          "scenario": "通过与58到家合作把保洁服务送进真实家庭",
+          "target_customer": "家庭用户",
+          "funding_summary": "",
+          "core_difference": "自变量机器人已通过与58到家合作把保洁服务送进真实家庭；斜跃从半结构化场景绕行，把“进家”当作结果，而不是起点。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cdd5a12196625097",
+              "quote": "自变量机器人已通过与58到家合作把保洁服务送进真实家庭。斜跃从半结构化场景绕行，是把“进家”当作结果，而不是起点。",
+              "source_content_hash": "0348ae0a2787ec50",
+              "quote_hash": "15f7be2a692edd37c8766ebe8d03c14df2f34713d508f6e296d26944b518ce0c"
+            }
+          ],
+          "entity_id": "EN-8dc72a4672894e0f"
+        }
+      ],
+      "metrics": [
+        {
+          "label": "成立时间",
+          "value": "2026年2月",
+          "observed_at": "2026-09-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-02a843e0049125fa",
+              "quote": "成立于2026年2月",
+              "source_content_hash": "0a4a2e441433729d",
+              "quote_hash": "f3b21c2887619d76383898d27345e9c202e0573eea2b37e8e77f3f1f8756391f"
+            }
+          ]
+        },
+        {
+          "label": "本轮融资金额",
+          "value": "数亿元",
+          "observed_at": "2026-09-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-02a843e0049125fa",
+              "quote": "斜跃智能完成 数亿元天使+轮融资",
+              "source_content_hash": "0a4a2e441433729d",
+              "quote_hash": "a99543b94fbde166bb458a2fb34977017e2cfdb16a8477f19fd7d6f10db4dfde"
+            }
+          ]
+        },
+        {
+          "label": "首轮融资金额",
+          "value": "数千万元",
+          "observed_at": "2026-07-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7c819301c98746ad",
+              "quote": "公司成立初期获得数千万元天使投资，投资方包括元璟资本和理想汽车",
+              "source_content_hash": "7097837e19f59c4b",
+              "quote_hash": "bc2b57e6a8c86e4d2f1ec87cc78b9e39f2121280e357e7b9fb8479924f77587c"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "陈伟",
+          "quote": "感谢各位投资人的信任与支持。斜跃创立半年来，我们愈发坚信，做具身基础模型是一件难而正确的事。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-02a843e0049125fa",
+              "quote": "感谢各位投资人的信任与支持。斜跃创立半年来，我们愈发坚信，做具身基础模型是一件难而正确的事。",
+              "source_content_hash": "0a4a2e441433729d",
+              "quote_hash": "09ab0a60f778b16c88b3c1d815a344123e3348b4661fb8698f586b94d3ff600d"
+            }
+          ]
+        },
+        {
+          "speaker": "陈伟",
+          "quote": "做模型在某种意义上就是 “结硬寨、打呆仗”—— 扎扎实实把算力、数据、评估的全链路管线建好，把底层基建打牢。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-02a843e0049125fa",
+              "quote": "做模型在某种意义上就是 “结硬寨、打呆仗”—— 扎扎实实把算力、数据、评估的全链路管线建好，把底层基建打牢。",
+              "source_content_hash": "0a4a2e441433729d",
+              "quote_hash": "de91940fb5d10643a3500dcc36a71c8a02a8e1884a17db5ec42ac1cf34c6aa44"
+            }
+          ]
+        },
+        {
+          "speaker": "陈伟",
+          "quote": "我们坚持用大模型的范式解决具身问题，并以阶段性成果向投资人证明斜跃的价值：模型性能持续领先、任务泛化高效可靠、Duplex Reasoning 范式在家庭场景已形成迭代闭环。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-02a843e0049125fa",
+              "quote": "我们坚持用大模型的范式解决具身问题，并以阶段性成果向投资人证明斜跃的价值：模型性能持续领先、任务泛化高效可靠、Duplex Reasoning 范式在家庭场景已形成迭代闭环。",
+              "source_content_hash": "0a4a2e441433729d",
+              "quote_hash": "d964a773d4e1ebe9c519d3a1e1b871829cb9e999bab363a753079342a93a551c"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是斜跃智能能否以Duplex Reasoning范式在家庭场景建立具身基础模型的迭代闭环，并以高质量数据与系统化基建形成壁垒。本轮数亿元天使+轮融资的验证信号包括：创始团队具备万卡大模型训练与C端产品量产交付的全链路经验，已初步完成自研Ego数据采集设备及数据平台建设，且Duplex Reasoning范式在家庭场景已形成迭代闭环。但来源未披露估值，且商业化尚未进入家庭，仅在酒店、养老院等半结构化场景规划验证，证据边界限于公司自述与融资披露。",
+        "validated_signals": [
+          "创始团队具备万卡大模型训练、数字与物理大模型及智能体开发、C端产品从定义到量产交付全链路经验",
+          "已初步完成自研Ego数据采集设备及数据平台建设",
+          "Duplex Reasoning范式在家庭场景已形成迭代闭环（公司自述）"
+        ],
+        "risks": [
+          "家庭场景对泛化能力的要求远高于B端，数据采集与模型迭代是长跑，工程化验证周期决定商业化真实节奏",
+          "商业化尚未进入家庭，仅计划在酒店、养老院等半结构化场景先行验证，家庭落地时间表存在不确定性"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "data",
+        "market_application_id": "data_preparation_curation",
+        "use_case_ids": [
+          "physical_automation"
+        ],
+        "industry_ids": [
+          "manufacturing"
+        ],
+        "target_user_ids": [
+          "developer"
+        ],
+        "sector": "具身智能基础模型",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是斜跃智能能否以Duplex Reasoning范式在家庭场景建立具身基础模型的迭代闭环，并以高质量数据与系统化基建形成壁垒。本轮数亿元天使+轮融资的验证信号包括：创始团队具备万卡大模型训练与C端产品量产交付的全链路经验，已初步完成自研Ego数据采集设备及数据平台建设，且Duplex Reasoning范式在家庭场景已形成迭代闭环。但来源未披露估值，且商业化尚未进入家庭，仅在酒店、养老院等半结构化场景规划验证，证据边界限于公司自述与融资披露。",
+          "evidence_signals": [
+            "创始团队具备万卡大模型训练、数字与物理大模型及智能体开发、C端产品从定义到量产交付全链路经验",
+            "已初步完成自研Ego数据采集设备及数据平台建设",
+            "Duplex Reasoning范式在家庭场景已形成迭代闭环（公司自述）"
+          ],
+          "risks": [
+            "家庭场景对泛化能力的要求远高于B端，数据采集与模型迭代是长跑，工程化验证周期决定商业化真实节奏",
+            "商业化尚未进入家庭，仅计划在酒店、养老院等半结构化场景先行验证，家庭落地时间表存在不确定性"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Duplex Reasoning范式驱动的具身基础模型",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "自研Ego数据采集设备及数据平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "陈伟",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "张骁",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "线性资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "钧山资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "弘颐资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "隐山资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "元璟资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "理想汽车",
+          "canonical_entity_id": "EN-d3c20bd565303d39",
+          "canonical_name": "理想汽车"
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "华建函数投资",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "至简动力",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "自变量机器人",
+          "canonical_entity_id": "EN-8dc72a4672894e0f",
+          "canonical_name": "自变量机器人"
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-08612741cfce0bcf",
+          "date": "2026-09-12",
+          "title": "斜跃智能完成数亿元天使+轮融资，加速推进Duplex Reasoning全新范式具身基础模型",
+          "amount": "数亿元",
+          "source_refs": [
+            "SA-8b562b5a03481711"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-02a843e0049125fa",
+          "source_url": "https://news.pedaily.cn/202609/568914.shtml",
+          "title": "斜跃智能完成数亿元天使+轮融资，加速推进Duplex Reasoning全新范式具身基础模型",
+          "publisher": "投资界",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-14T03:05:08.554Z",
+          "content_hash": "0a4a2e441433729d",
+          "source_artifact_id": "SA-8b562b5a03481711",
+          "raw_id": "RAW-dd865c626c3f4bdf"
+        },
+        {
+          "source_id": "FISRC-cdd5a12196625097",
+          "source_url": "https://news.10jqka.com.cn/20260912/c679847726.shtml",
+          "title": "数亿元天使+轮落袋，斜跃智能想把“全双工”做成具身基础模型的新范式",
+          "publisher": "news.10jqka.com.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-14T04:53:47.463Z",
+          "content_hash": "0348ae0a2787ec50",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-7c819301c98746ad",
+          "source_url": "https://www.toutiao.com/article/7662344009267855881/",
+          "title": "投融资动态斜跃智能天使+融资，投资方为华建函数投资、隐山资本等 - 今日头条",
+          "publisher": "toutiao.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-09-14T04:53:47.327Z",
+          "content_hash": "7097837e19f59c4b",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-c721ebc5120776a7",
+          "source_url": "https://www.zidonghua.com.cn/m/news/Finance/83627.html",
+          "title": "斜跃智能获元璟与理想汽车投资，聚焦家庭具身智能机器人 | 元璟family - 金融滋东化 - 自动化网 ZiDongHua.com.cn ，自动化科技展示平台、“自动化者”人文交流平台。",
+          "publisher": "zidonghua.com.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-14T04:53:48.064Z",
+          "content_hash": "e7a27a430ad91a6f",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-14T04:54:09.499Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-08612741cfce0bcf",
+          "confidence": 0.7,
+          "needs_review": true
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-14T04:54:09.499Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Duplex Reasoning范式驱动的具身基础模型",
+            "自研Ego数据采集设备及数据平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "张骁",
+            "陈伟"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-08612741cfce0bcf"
+      ],
+      "aggregation": {
+        "key": "EN-fba6bdd504fa7aff|angel_plus",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-738a56ebba636757",
+      "triggered_by_event_id": "EV-ef669a52c9a3f94f",
+      "as_of_date": "2026-09-14",
+      "company": {
+        "entity_id": "EN-1d79127e9d90e89b",
+        "name": "智谱AI",
+        "full_name": "智谱AI",
+        "website": "",
+        "summary": "智谱AI成立于2019年，由清华大学知识工程实验室（KEG）技术成果转化而来，是国内最早开启大语言模型研发的公司之一，被视为“中国版OpenAI”，聚焦AGI研发，构建了从基础模型到应用产品的完整体系。",
+        "headquarters": "",
+        "founders": [
+          {
+            "name": "张鹏",
+            "role": "CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e930be8aa5120588",
+                "quote": "成立于2019年的智谱AI，背后站着一群清华大牛——CEO张鹏本硕博均毕业于清华",
+                "source_content_hash": "6039a35df79b1076",
+                "quote_hash": "54d83525801464b8f056490a29a11957a4ac262e839b0335fd7b47570abea14b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "刘德兵",
+            "role": "董事长",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e930be8aa5120588",
+                "quote": "董事长刘德兵、总裁王绍兰同为清华校友",
+                "source_content_hash": "6039a35df79b1076",
+                "quote_hash": "a5fa979ffd532e4f58fc49d53c5b4c7b98886396bbc73305972d361c0b924472"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "王绍兰",
+            "role": "总裁",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e930be8aa5120588",
+                "quote": "董事长刘德兵、总裁王绍兰同为清华校友",
+                "source_content_hash": "6039a35df79b1076",
+                "quote_hash": "a5fa979ffd532e4f58fc49d53c5b4c7b98886396bbc73305972d361c0b924472"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-e930be8aa5120588",
+            "quote": "成立于2019年的智谱AI，背后站着一群清华大牛——CEO张鹏本硕博均毕业于清华，董事长刘德兵、总裁王绍兰同为清华校友。",
+            "source_content_hash": "6039a35df79b1076",
+            "quote_hash": "6438144f64e72942e95e8dc8e154a4db425c5173f34bf6f4b0da099645c21544"
+          }
+        ],
+        "application_entity_id": "EN-1d79127e9d90e89b",
+        "canonical_entity_consistent": true
+      },
+      "financing": {
+        "round": "其他融资",
+        "amount": "50亿美元",
+        "total_raised": "",
+        "announced_at": "2026-09-13",
+        "investor_disclosure_status": "not_disclosed",
+        "investors": [],
+        "other_round_investors": [
+          {
+            "name": "中关村科学城公司",
+            "role": "领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4b5b536102d7731e",
+                "quote": "智谱AI以200亿元的投前估值，完成了由中关村科学城公司领投的新一轮融资",
+                "source_content_hash": "ca9f54b39d2a0ec7",
+                "quote_hash": "2e55bdd92f87e0896aeff4abb35ca48afd15b8f7824e215a3cf23ac2a5f555d2"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "君联资本",
+            "role": "老股东跟投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e930be8aa5120588",
+                "quote": "此次新进投资方包括多家战投及国资机构，而君联资本等老股东继续跟投",
+                "source_content_hash": "6039a35df79b1076",
+                "quote_hash": "a5588363a83b31a9d8cc26aeabc79a86fb2e17a8aeb256764c3449237c9c94d1"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-d02d56e7a5fd6dbc",
+            "quote": "智谱 9月13日公告完成约50亿美元（约335亿元人民币）融资，由约20亿美元股份配售与约30亿美元零息可转债构成",
+            "source_content_hash": "a15eb737d3d49dfc",
+            "quote_hash": "82f7a05745549654dcb11968b011424d50338bbb1c06c801e060e76bce56721b"
+          }
+        ],
+        "round_code": "other",
+        "round_original": "约50亿美元融资",
+        "amount_original": "50亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 5000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "50 亿美元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [
+          "investors_missing"
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-ef669a52c9a3f94f",
+            "round_original": "约50亿美元融资",
+            "amount": "50亿美元",
+            "announced_at": "2026-09-13",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d02d56e7a5fd6dbc",
+                "quote": "智谱 9月13日公告完成约50亿美元（约335亿元人民币）融资，由约20亿美元股份配售与约30亿美元零息可转债构成",
+                "source_content_hash": "a15eb737d3d49dfc",
+                "quote_hash": "82f7a05745549654dcb11968b011424d50338bbb1c06c801e060e76bce56721b"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "partially_disclosed"
+      },
+      "products": [
+        {
+          "name": "GLM系列模型",
+          "description": "智谱自主开发的自回归填空架构大模型系列，支持文本、图像、语音、视频等多模态输入输出，具备通用理解与生成能力。",
+          "target_customers": "科技互联网和企业服务市场",
+          "features": [
+            "多模态输入输出",
+            "推理、编码和智能体能力原生融合"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d037a9d6c1b7494",
+              "quote": "智谱的“GLM”系列模型采用 自回归填空架构 ，具备强大的通用理解与生成能力，支持文本、图像、语音、视频等多模态输入输出",
+              "source_content_hash": "bc2c111262c784b2",
+              "quote_hash": "36e532a26642680542fd50dea77f3ffee260b3713f1bd5fb1033a3c01186ca50"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "MaaS平台",
+          "description": "智谱从2021年开始布局的大模型API调用商业模式，交付通用智能而非定制项目，是国内最活跃的大模型API平台之一。",
+          "target_customers": "企业及应用开发者",
+          "features": [
+            "大模型API调用",
+            "高度灵活且可扩展"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d037a9d6c1b7494",
+              "quote": "智谱起步较早，从2021年就开始布局 MaaS （即大模型API调用）的商业模式",
+              "source_content_hash": "bc2c111262c784b2",
+              "quote_hash": "c525324cc8de5e068bd89f04d6a98875c9431fe5ef1b03d1a3697ca745dbe4d4"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "AutoGLM",
+          "description": "全球首个可自主操作手机的智能体，用户通过语音指令即可完成点餐、订票、查房、预约、撰写文稿、生成视频等跨应用任务。",
+          "target_customers": "C端用户及硬件厂商",
+          "features": [
+            "自主操作手机",
+            "跨应用任务执行",
+            "支持接入AI眼镜、手表、家电等硬件"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d037a9d6c1b7494",
+              "quote": "AutoGLM是全球首个可自主操作手机的智能体，用户不必手动操作，就能通过语音指令完成点餐、订票、查房、预约、撰写文稿、生成视频等跨应用任务。",
+              "source_content_hash": "bc2c111262c784b2",
+              "quote_hash": "24eb250d5788d3c391545d12da56fb102d41a627ce2186f4418d43c39a589729"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "OpenAI",
+          "product": "GPT系列模型",
+          "scenario": "通用大模型能力对标与商业化竞争",
+          "target_customer": "全球开发者和企业客户",
+          "funding_summary": "OpenAI宣布最新一轮融资66亿美元，投后估值达到1570亿美元",
+          "core_difference": "智谱AI的GLM-4整体性能相比上一代大幅提升60%，号称“比肩GPT-4”，但实际上也只是达到GPT-4约90%左右的水平；OpenAI的o1系列模型在国际奥数考试中得分83.3%，而GPT-4o得分13.4%。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4b5b536102d7731e",
+              "quote": "虽然GLM-4整体性能相比上一代大幅提升60%，号称“比肩GPT-4”，但实际上也只是达到GPT-4约90%左右的水平。",
+              "source_content_hash": "ca9f54b39d2a0ec7",
+              "quote_hash": "6d92a919efc2034e10dee7c70d006c66eb9d124d1d47399af230330a95853252"
+            },
+            {
+              "source_id": "FISRC-e930be8aa5120588",
+              "quote": "不久前，OpenAI宣布最新一轮融资66亿美元，投后估值达到1570亿美元（超11000亿元人民币）",
+              "source_content_hash": "6039a35df79b1076",
+              "quote_hash": "976aa64864fb31d5178539cbcc4aba121e889777424da76e92d2bfe8980803c5"
+            }
+          ],
+          "entity_id": "EN-7d3194f79e645c42"
+        },
+        {
+          "name": "月之暗面",
+          "product": "大模型产品",
+          "scenario": "国产大模型超级独角兽竞争",
+          "target_customer": "企业及开发者",
+          "funding_summary": "",
+          "core_difference": "月之暗面与智谱AI同属国产AI超级独角兽阵营，但来源未提供月之暗面具体产品、融资或商业路径的细节比较。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e930be8aa5120588",
+              "quote": "诞生了一批AI超级独角兽：月之暗面、百川智能、Minimax、零一万物……这无疑是中国AI时代最生动的一抹写照。",
+              "source_content_hash": "6039a35df79b1076",
+              "quote_hash": "4271611cd4763f6dedf4ee5f1b980ba3e46cf2148ec1c8c8eb2cf429fb0570f1"
+            }
+          ],
+          "entity_id": "EN-b5251b35f15bedc4"
+        }
+      ],
+      "metrics": [
+        {
+          "label": "MaaS平台企业及开发者用户数",
+          "value": "70万",
+          "observed_at": "2024-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e930be8aa5120588",
+              "quote": "智谱推出的MaaS平台，已吸引70 万企业和开发者用户。",
+              "source_content_hash": "6039a35df79b1076",
+              "quote_hash": "f53a56ccedf86d5e211ab02bf3915300bacdfbc2880b0fc6bb59e9b9596838ec"
+            }
+          ]
+        },
+        {
+          "label": "智谱清言用户数",
+          "value": "超过2500万",
+          "observed_at": "2024-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e930be8aa5120588",
+              "quote": "而C端产品智谱清言则拥有超过2500万用户",
+              "source_content_hash": "6039a35df79b1076",
+              "quote_hash": "5838547b65ea68f194c96866c27899ebf49fbbcff35917783982c34a5bcd7ab7"
+            }
+          ]
+        },
+        {
+          "label": "开放平台API年收入同比增长",
+          "value": "超过30倍",
+          "observed_at": "2024-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e930be8aa5120588",
+              "quote": "开放平台API年收入同比增长超过 30 倍",
+              "source_content_hash": "6039a35df79b1076",
+              "quote_hash": "ec4f37075958d0851d24fc5f65f58f19efcb37b7bd6355cc583b78831a34a0c8"
+            }
+          ]
+        },
+        {
+          "label": "日均Tokens消耗量增长",
+          "value": "150倍",
+          "observed_at": "2024-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e930be8aa5120588",
+              "quote": "日均Tokens消耗量增长 150 倍",
+              "source_content_hash": "6039a35df79b1076",
+              "quote_hash": "f6512da092de1ce93469f2f3f76de1ac8b9981293f7df025cdde1f144709fd00"
+            }
+          ]
+        },
+        {
+          "label": "2024年营业收入",
+          "value": "3.124亿元",
+          "observed_at": "2025-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d037a9d6c1b7494",
+              "quote": "2022年、2023年、2024年，智谱的营业收入分别为为5740万元、1.245亿元、3.124亿元，复合年增长率达到130%。",
+              "source_content_hash": "bc2c111262c784b2",
+              "quote_hash": "38bc435b10ad1c29e9006611c84fc72f632c3fb04a90f26faefc88301ed39567"
+            }
+          ]
+        },
+        {
+          "label": "累计融资额",
+          "value": "超83亿元",
+          "observed_at": "2025-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d037a9d6c1b7494",
+              "quote": "成立6年间，智谱AI融资8轮，累计筹资超83亿元",
+              "source_content_hash": "bc2c111262c784b2",
+              "quote_hash": "4901f734f2c930b40d40d6000ca0efad0602e280e62efe78ff8c9a2b084ae81e"
+            }
+          ]
+        },
+        {
+          "label": "IPO前投后估值",
+          "value": "243.8亿元",
+          "observed_at": "2025-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d037a9d6c1b7494",
+              "quote": "截至IPO前，智谱的最新 投后估值 已达243.8亿元。",
+              "source_content_hash": "bc2c111262c784b2",
+              "quote_hash": "40bbd795bff23ee01f7b3e7aff14eba44b66148793f4924384dcef54abb82bc4"
+            }
+          ]
+        },
+        {
+          "label": "MaaS开放平台企业及应用开发者数",
+          "value": "270万+",
+          "observed_at": "2025-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d037a9d6c1b7494",
+              "quote": "智谱MaaS开放平台上有 270万+ 企业及应用开发者",
+              "source_content_hash": "bc2c111262c784b2",
+              "quote_hash": "78bd367275c1128c5c7ee2c765ab1a12a193ffd8ae097ab05e3b2d74b03ab2ef"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "张鹏",
+          "quote": "我们一边做核心的技术，一边拓展市场。从第一天开始，我们就有收入。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e930be8aa5120588",
+              "quote": "我们一边做核心的技术，一边拓展市场。从第一天开始，我们就有收入。",
+              "source_content_hash": "6039a35df79b1076",
+              "quote_hash": "d152a1c0d661b1c19d3b43f6dbc2c8a30a056fbef2441b431bbfc332967eec10"
+            }
+          ]
+        },
+        {
+          "speaker": "张鹏",
+          "quote": "我们的目标永远是让‘机器像人一样思考’，并且让机器服务人类。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e930be8aa5120588",
+              "quote": "我们的目标永远是让‘机器像人一样思考’，并且让机器服务人类。",
+              "source_content_hash": "6039a35df79b1076",
+              "quote_hash": "477fe1229af6b0025233f8c1c2fb5056e7cf430d2abd17b7627348a9f1ef531c"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是智谱AI作为国产独立大模型厂商的基座模型能力上限突破与规模化商业化能力。本次约50亿美元融资由约20亿美元股份配售与约30亿美元零息可转债构成，来源未披露具体投资方名称，无法确认机构背书。已验证信号包括：智谱MaaS平台已吸引270万+企业及应用开发者，2024年营收3.124亿元、复合年增长率130%，日均云端token调用量超过4.2万亿次，且GLM-4.5/4.6在OpenRouter付费流量收入超过所有国产模型之和。但本次融资的投资方身份、估值依据及资金具体投向均未在来源中披露，资本判断的证据边界受限于来源仅提供融资结构而缺乏投资方与交易条款细节。",
+        "validated_signals": [
+          "MaaS平台已吸引270万+企业及应用开发者",
+          "2024年营业收入3.124亿元，复合年增长率130%",
+          "日均云端token调用量超过4.2万亿次",
+          "GLM-4.5/4.6在OpenRouter付费流量收入超过所有国产模型之和"
+        ],
+        "risks": [
+          "本次约50亿美元融资未披露具体投资方名称，无法确认资金来源与机构背书质量",
+          "大模型行业价格战持续，API价格大幅普惠可能压缩毛利空间",
+          "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "models",
+        "use_case_ids": [
+          "content_creation",
+          "knowledge_search",
+          "data_analysis",
+          "research_discovery",
+          "education_learning",
+          "productivity_enterprise_workflows",
+          "software_development"
+        ],
+        "industry_ids": [
+          "financial_services",
+          "healthcare_life_sciences",
+          "retail_ecommerce",
+          "manufacturing",
+          "media_entertainment",
+          "education",
+          "government_public_sector",
+          "energy_utilities",
+          "telecommunications",
+          "automotive_transportation",
+          "professional_services",
+          "construction_real_estate",
+          "food_hospitality",
+          "aerospace_defense",
+          "agriculture",
+          "logistics_supply_chain",
+          "legal_services"
+        ],
+        "target_user_ids": [
+          "developer",
+          "business_user",
+          "researcher",
+          "educator",
+          "student"
+        ],
+        "sector": "大模型",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是智谱AI作为国产独立大模型厂商的基座模型能力上限突破与规模化商业化能力。本次约50亿美元融资由约20亿美元股份配售与约30亿美元零息可转债构成，来源未披露具体投资方名称，无法确认机构背书。已验证信号包括：智谱MaaS平台已吸引270万+企业及应用开发者，2024年营收3.124亿元、复合年增长率130%，日均云端token调用量超过4.2万亿次，且GLM-4.5/4.6在OpenRouter付费流量收入超过所有国产模型之和。但本次融资的投资方身份、估值依据及资金具体投向均未在来源中披露，资本判断的证据边界受限于来源仅提供融资结构而缺乏投资方与交易条款细节。",
+          "evidence_signals": [
+            "MaaS平台已吸引270万+企业及应用开发者",
+            "2024年营业收入3.124亿元，复合年增长率130%",
+            "日均云端token调用量超过4.2万亿次",
+            "GLM-4.5/4.6在OpenRouter付费流量收入超过所有国产模型之和"
+          ],
+          "risks": [
+            "本次约50亿美元融资未披露具体投资方名称，无法确认资金来源与机构背书质量",
+            "大模型行业价格战持续，API价格大幅普惠可能压缩毛利空间",
+            "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "GLM系列模型",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "MaaS平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "AutoGLM",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "张鹏",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "刘德兵",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "王绍兰",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "中关村科学城公司",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "君联资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "OpenAI",
+          "canonical_entity_id": "EN-7d3194f79e645c42",
+          "canonical_name": "OpenAI"
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "月之暗面",
+          "canonical_entity_id": "EN-b5251b35f15bedc4",
+          "canonical_name": "Moonshot AI"
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-ef669a52c9a3f94f",
+          "date": "2026-09-13",
+          "title": "AI 新闻日报·今日人工智能资讯热点汇总 · 读懂AI时代 2026年9月13日",
+          "amount": "50亿美元",
+          "source_refs": [
+            "SA-d393714c8031dfe9"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-d02d56e7a5fd6dbc",
+          "source_url": "https://www.readaitime.com/digests/2026-09-13",
+          "title": "AI 新闻日报·今日人工智能资讯热点汇总 · 读懂AI时代 2026年9月13日",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-14T02:55:12.138Z",
+          "content_hash": "a15eb737d3d49dfc",
+          "source_artifact_id": "SA-d393714c8031dfe9",
+          "raw_id": "RAW-2391dc8390878894"
+        },
+        {
+          "source_id": "FISRC-e930be8aa5120588",
+          "source_url": "https://www.jiemian.com/article/12128930.html",
+          "title": "刚刚，智谱AI完成融资30亿|界面新闻 · JMedia",
+          "publisher": "jiemian.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-14T03:06:05.240Z",
+          "content_hash": "6039a35df79b1076",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-4b5b536102d7731e",
+          "source_url": "https://finance.sina.com.cn/tech/roll/2024-09-18/doc-incpqqsn4446116.shtml",
+          "title": "疯狂对标OpenAI，智谱AI要背水一战|AI_新浪科技_新浪网",
+          "publisher": "finance.sina.com.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-14T03:06:06.832Z",
+          "content_hash": "ca9f54b39d2a0ec7",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-5d037a9d6c1b7494",
+          "source_url": "https://www.qbitai.com/2025/12/362256.html",
+          "title": "火线解析智谱AI招股书：年营收3亿增速130%，率先冲刺全球大模型第一股 – 量子位",
+          "publisher": "qbitai.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-14T03:06:07.905Z",
+          "content_hash": "bc2c111262c784b2",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-14T03:06:40.217Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-ef669a52c9a3f94f",
+          "confidence": 0.85,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-14T03:06:40.217Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "AutoGLM",
+            "GLM系列模型",
+            "MaaS平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "刘德兵",
+            "张鹏",
+            "王绍兰"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-ef669a52c9a3f94f"
+      ],
+      "aggregation": {
+        "key": "EN-1d79127e9d90e89b|other",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-08612741cfce0bcf",
+      "company_name": "斜跃智能",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"斜跃智能\" 2026 融资 轮次 金额 投资方",
+        "\"斜跃智能\" \"数亿元\" 本轮融资 领投 跟投",
+        "\"斜跃智能\" 产品 服务 创始人 总部",
+        "\"斜跃智能\" 投资机构 投资原因 融资用途"
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"斜跃智能\" 2026 融资 轮次 金额 投资方",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"斜跃智能\" 2026 融资 轮次 金额 投资方",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"斜跃智能\" \"数亿元\" 本轮融资 领投 跟投",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"斜跃智能\" \"数亿元\" 本轮融资 领投 跟投",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"斜跃智能\" 产品 服务 创始人 总部",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"斜跃智能\" 产品 服务 创始人 总部",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"斜跃智能\" 投资机构 投资原因 融资用途",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"斜跃智能\" 投资机构 投资原因 融资用途",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-09-14T04:54:13.120Z"
+    },
+    {
+      "event_id": "EV-65d274d4277815dc",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-14T04:54:13.120Z"
+    },
+    {
+      "event_id": "EV-6e22ce671a8a4d82",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-14T04:54:13.120Z"
+    },
+    {
+      "event_id": "EV-ef669a52c9a3f94f",
+      "company_name": "智谱AI",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"智谱AI\" 2026 融资 轮次 金额 投资方",
+        "\"智谱AI\" \"50亿美元\" 本轮融资 领投 跟投",
+        "\"智谱AI\" 产品 服务 创始人 总部",
+        "\"智谱AI\" 投资机构 投资原因 融资用途"
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"智谱AI\" 2026 融资 轮次 金额 投资方",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"智谱AI\" 2026 融资 轮次 金额 投资方",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"智谱AI\" \"50亿美元\" 本轮融资 领投 跟投",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"智谱AI\" \"50亿美元\" 本轮融资 领投 跟投",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"智谱AI\" 产品 服务 创始人 总部",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"智谱AI\" 产品 服务 创始人 总部",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"智谱AI\" 投资机构 投资原因 融资用途",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"智谱AI\" 投资机构 投资原因 融资用途",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-09-14T04:54:13.120Z"
+    },
+    {
+      "event_id": "EV-81bbaaec2965864a",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-14T04:54:13.120Z"
+    },
+    {
+      "event_id": "EV-cbeb33594e06678b",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-14T04:54:13.120Z"
+    },
+    {
+      "event_id": "EV-a52dd9e9cac23694",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-14T04:54:13.120Z"
+    },
+    {
+      "event_id": "EV-7eead74c2baae511",
+      "company_name": "智谱AI",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"智谱AI\" 2026 融资 轮次 金额 投资方",
+        "\"智谱AI\" \"50 亿美元\" 本轮融资 领投 跟投",
+        "\"智谱AI\" 产品 服务 创始人 总部",
+        "\"智谱AI\" 投资机构 投资原因 融资用途"
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"智谱AI\" 2026 融资 轮次 金额 投资方",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"智谱AI\" 2026 融资 轮次 金额 投资方",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"智谱AI\" \"50 亿美元\" 本轮融资 领投 跟投",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"智谱AI\" \"50 亿美元\" 本轮融资 领投 跟投",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"智谱AI\" 产品 服务 创始人 总部",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"智谱AI\" 产品 服务 创始人 总部",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"智谱AI\" 投资机构 投资原因 融资用途",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"智谱AI\" 投资机构 投资原因 融资用途",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-09-14T04:54:13.120Z"
+    },
+    {
+      "event_id": "EV-47f16317cc2d62e2",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-14T04:54:13.120Z"
+    },
+    {
+      "event_id": "EV-10b007d20ad2794e",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-14T04:54:13.120Z"
+    },
+    {
+      "event_id": "EV-57cf8e14d6994c1b",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-14T04:54:13.120Z"
+    },
+    {
+      "event_id": "EV-c3b295b1a939dabd",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-14T04:54:13.120Z"
+    }
+  ]
+}

@@ -49,7 +49,7 @@ window.WaveSightOpsConsole = {
           "key": "MINIPROGRAM",
           "label": "微信小程序",
           "category": "融资产品",
-          "value": "1.1.0",
+          "value": "1.1.1",
           "source": "02-Miniprogram/package.json",
           "status": "源码版本 · 微信线上待核验",
           "kind": "source",
@@ -315,7 +315,7 @@ window.WaveSightOpsConsole = {
         "key": "MINIPROGRAM",
         "label": "微信小程序",
         "category": "融资产品",
-        "value": "1.1.0",
+        "value": "1.1.1",
         "source": "02-Miniprogram/package.json",
         "status": "源码版本 · 微信线上待核验",
         "kind": "source",
@@ -519,7 +519,7 @@ window.WaveSightOpsConsole = {
   },
   "meta": {
     "version": "OPS-V3.8.0-engineering-integration",
-    "generatedAt": "2026-09-14T03:09:44.524Z",
+    "generatedAt": "2026-09-14T04:56:30.490Z",
     "date": "2026-09-14",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
@@ -1296,15 +1296,15 @@ window.WaveSightOpsConsole = {
           },
           {
             "label": "Claims",
-            "value": 75
+            "value": 82
           },
           {
             "label": "Events",
-            "value": 34
+            "value": 40
           },
           {
             "label": "QA",
-            "value": 198
+            "value": 260
           }
         ]
       },
@@ -1348,10 +1348,10 @@ window.WaveSightOpsConsole = {
         "status": "partial",
         "counts": {
           "discovered": 290,
-          "capture_succeeded": 232,
+          "capture_succeeded": 300,
           "capture_failed": 4,
           "recovered_source_failures": 9,
-          "raw_documents": 232
+          "raw_documents": 300
         },
         "evidence": [
           "01-SiteV2/content/11-databases/data-center-v4/2026-09-14/manifest.json",
@@ -1364,16 +1364,16 @@ window.WaveSightOpsConsole = {
         "label": "事实构建",
         "status": "passed",
         "counts": {
-          "accepted_claims": 75,
+          "accepted_claims": 82,
           "rejected_claims": 0,
-          "accepted": 75,
+          "accepted": 82,
           "rejected": 0,
           "pending_claims": 2,
-          "canonical_events": 34,
-          "entities": 60,
-          "relationships": 77,
+          "canonical_events": 40,
+          "entities": 66,
+          "relationships": 84,
           "conflicts": 0,
-          "qa_queue": 198
+          "qa_queue": 260
         },
         "evidence": [
           "01-SiteV2/content/11-databases/data-center-v4/2026-09-14/manifest.json",
@@ -1387,8 +1387,8 @@ window.WaveSightOpsConsole = {
         "counts": {
           "opportunity_map": "passed",
           "trend_radar": "passed",
-          "funding_insights": "failed",
-          "fde_hardware_sync": "passed"
+          "funding_insights": "passed",
+          "fde_hardware_sync": "unknown"
         },
         "evidence": [
           "agent-workflow/reports/2026-09-14-persistent-asset-manifest.json"
@@ -1410,12 +1410,12 @@ window.WaveSightOpsConsole = {
     ],
     "latestProduction": {
       "date": "2026-09-14",
-      "discovered": 232,
-      "captured": 232,
-      "claims": 77,
-      "events": 34,
-      "entities": 60,
-      "relationships": 77
+      "discovered": 300,
+      "captured": 300,
+      "claims": 84,
+      "events": 40,
+      "entities": 66,
+      "relationships": 84
     },
     "sync": [
       {
@@ -1436,7 +1436,7 @@ window.WaveSightOpsConsole = {
       {
         "label": "Pipeline Dashboard",
         "status": "passed",
-        "detail": "2026-09-14T02:58:55.659Z"
+        "detail": "2026-09-14T04:56:30.371Z"
       },
       {
         "label": "Daily Supervision",
@@ -1451,32 +1451,32 @@ window.WaveSightOpsConsole = {
         "version": "COLLECTION-TELEMETRY-V1.0",
         "ops_version": "OPS-V3.8.0-engineering-integration",
         "data_date": "2026-09-14",
-        "generated_at": "2026-09-14T02:58:55.619Z",
-        "source_snapshot": "12be9dd4feba47bde82ed24af4b2d0e8073a1833f9cf4e0946e771fc500379c9",
+        "generated_at": "2026-09-14T04:56:30.234Z",
+        "source_snapshot": "4b8381f7df38c6a597a76a9de4fdf826ff810d21006d7b934a543d29454cbf7b",
         "scope": "OPS",
         "canonical_writeback": false,
         "source_of_truth": "Data Center V4 manifest and integrity gate"
       },
       "collection": {
         "discovered": 290,
-        "capture_succeeded": 232,
+        "capture_succeeded": 300,
         "capture_failed": 4,
         "recovered_source_failures": 9,
-        "raw_documents": 232
+        "raw_documents": 300
       },
       "factBuild": {
-        "accepted_claims": 75,
+        "accepted_claims": 82,
         "rejected_claims": 0,
-        "accepted": 75,
+        "accepted": 82,
         "rejected": 0,
         "pending_claims": 2,
-        "canonical_events": 34,
-        "entities": 60,
-        "relationships": 77,
+        "canonical_events": 40,
+        "entities": 66,
+        "relationships": 84,
         "conflicts": 0,
-        "qa_queue": 198,
+        "qa_queue": 260,
         "qa_by_status": {
-          "review_optional": 190,
+          "review_optional": 252,
           "open": 8
         }
       },
@@ -1492,8 +1492,8 @@ window.WaveSightOpsConsole = {
       "applicationProjection": {
         "opportunity_map": "passed",
         "trend_radar": "passed",
-        "funding_insights": "failed",
-        "fde_hardware_sync": "passed"
+        "funding_insights": "passed",
+        "fde_hardware_sync": "unknown"
       },
       "publication": {
         "status": "waiting",
@@ -1511,7 +1511,7 @@ window.WaveSightOpsConsole = {
     },
     "pipelineMeta": {
       "version": "OPS-V3.8.0-engineering-integration",
-      "generatedAt": "2026-09-14T02:58:55.659Z",
+      "generatedAt": "2026-09-14T04:56:30.371Z",
       "dateRange": {
         "start": "2026-09-08",
         "end": "2026-09-14"
@@ -1523,43 +1523,43 @@ window.WaveSightOpsConsole = {
       "date": "2026-09-14",
       "label": "2026.09.14",
       "shortLabel": "09.14",
-      "discovered": 232,
-      "captured": 232,
-      "claims": 77,
-      "events": 34,
-      "entities": 60,
-      "relationships": 77,
+      "discovered": 300,
+      "captured": 300,
+      "claims": 84,
+      "events": 40,
+      "entities": 66,
+      "relationships": 84,
       "conflicts": 0,
-      "qaQueue": 198,
+      "qaQueue": 260,
       "telemetryDate": "2026-09-14",
       "collection": {
         "discovered": 290,
-        "capture_succeeded": 232,
+        "capture_succeeded": 300,
         "capture_failed": 4,
         "recovered_source_failures": 9,
-        "raw_documents": 232
+        "raw_documents": 300
       },
       "factBuild": {
-        "accepted_claims": 75,
+        "accepted_claims": 82,
         "rejected_claims": 0,
-        "accepted": 75,
+        "accepted": 82,
         "rejected": 0,
         "pending_claims": 2,
-        "canonical_events": 34,
-        "entities": 60,
-        "relationships": 77,
+        "canonical_events": 40,
+        "entities": 66,
+        "relationships": 84,
         "conflicts": 0,
-        "qa_queue": 198,
+        "qa_queue": 260,
         "qa_by_status": {
-          "review_optional": 190,
+          "review_optional": 252,
           "open": 8
         }
       },
       "applicationProjection": {
         "opportunity_map": "passed",
         "trend_radar": "passed",
-        "funding_insights": "failed",
-        "fde_hardware_sync": "passed"
+        "funding_insights": "passed",
+        "fde_hardware_sync": "unknown"
       },
       "publication": {
         "status": "waiting",
@@ -1569,28 +1569,28 @@ window.WaveSightOpsConsole = {
       }
     },
     "totals": {
-      "discovered": 3150,
-      "captured": 3150,
-      "claims": 1156,
-      "events": 620,
-      "entities": 853,
-      "relationships": 1156,
+      "discovered": 3218,
+      "captured": 3218,
+      "claims": 1163,
+      "events": 626,
+      "entities": 859,
+      "relationships": 1163,
       "conflicts": 8,
-      "qaQueue": 2449
+      "qaQueue": 2511
     },
     "days": [
       {
         "date": "2026-09-14",
         "label": "2026.09.14",
         "shortLabel": "09.14",
-        "discovered": 232,
-        "captured": 232,
-        "claims": 77,
-        "events": 34,
-        "entities": 60,
-        "relationships": 77,
+        "discovered": 300,
+        "captured": 300,
+        "claims": 84,
+        "events": 40,
+        "entities": 66,
+        "relationships": 84,
         "conflicts": 0,
-        "qaQueue": 198
+        "qaQueue": 260
       },
       {
         "date": "2026-09-13",
@@ -1672,7 +1672,7 @@ window.WaveSightOpsConsole = {
       }
     ],
     "sourceQuality": {
-      "updatedAt": "2026-09-14T03:09:44.516Z",
+      "updatedAt": "2026-09-14T04:56:30.478Z",
       "sampleNote": "按最新 V4 RawDocument 的 acquisition_channel 聚合；样本量为已落盘 Raw 文档数。",
       "metricNote": "诊断分由可用率、全文率、高质提取率、可读性和事实命中率组成，仅用于运营观察，不参与来源准入、排序或事实门禁。",
       "rows": [
@@ -1698,9 +1698,9 @@ window.WaveSightOpsConsole = {
           "fullTextRate": 94,
           "highQualityRate": 85,
           "readabilityScore": 82,
-          "factHitRate": 10,
-          "acceptedClaims": 16,
-          "canonicalEvents": 9,
+          "factHitRate": 9,
+          "acceptedClaims": 15,
+          "canonicalEvents": 8,
           "score": 77,
           "grade": "中"
         },
@@ -1731,35 +1731,50 @@ window.WaveSightOpsConsole = {
           "canonicalEvents": 6,
           "score": 59,
           "grade": "待改善"
+        },
+        {
+          "id": "china-funding",
+          "label": "china-funding",
+          "total": 68,
+          "eligibleRate": 100,
+          "fullTextRate": 79,
+          "highQualityRate": 24,
+          "readabilityScore": 55,
+          "factHitRate": 10,
+          "acceptedClaims": 8,
+          "canonicalEvents": 7,
+          "score": 60,
+          "grade": "中"
         }
       ]
     },
     "chinaFunding": {
       "schema_version": "CHINA-FUNDING-HEALTH-V1.0",
       "date": "2026-09-14",
-      "generated_at": "2026-09-14T03:09:37.165Z",
-      "status": "failed",
+      "generated_at": "2026-09-14T04:55:51.706Z",
+      "status": "partial",
       "last_collection_at": "2026-09-14T02:43:16.933Z",
-      "failed_stage": "projections",
+      "failed_stage": null,
       "stages": [
         {
           "id": "capture",
           "status": "passed",
-          "started_at": "2026-09-14T03:04:57.926Z",
-          "finished_at": "2026-09-14T03:05:17.864Z"
+          "started_at": "2026-09-14T04:41:08.932Z",
+          "reused": true,
+          "reused_accepted_capture": true,
+          "finished_at": "2026-09-14T04:52:03.704Z"
         },
         {
           "id": "facts",
           "status": "passed",
-          "started_at": "2026-09-14T03:05:17.864Z",
-          "finished_at": "2026-09-14T03:08:18.557Z"
+          "started_at": "2026-09-14T04:52:03.705Z",
+          "finished_at": "2026-09-14T04:53:14.678Z"
         },
         {
           "id": "projections",
-          "status": "failed",
-          "started_at": "2026-09-14T03:08:18.557Z",
-          "error": "Command failed: agent-workflow/tools/assert-funding-insights-v1.mjs (1)",
-          "finished_at": "2026-09-14T03:09:37.048Z"
+          "status": "passed",
+          "started_at": "2026-09-14T04:53:14.679Z",
+          "finished_at": "2026-09-14T04:55:51.597Z"
         }
       ],
       "sources": [
@@ -1784,9 +1799,8 @@ window.WaveSightOpsConsole = {
           "completed_at": "2026-09-14T02:42:30.873Z",
           "raw_count": 24,
           "readable_count": 24,
-          "accepted_claims": 8,
+          "accepted_claims": 6,
           "verified_event_ids": [
-            "EV-ef669a52c9a3f94f",
             "EV-08612741cfce0bcf",
             "EV-65d274d4277815dc",
             "EV-6e22ce671a8a4d82",
@@ -1794,7 +1808,6 @@ window.WaveSightOpsConsole = {
             "EV-77d410f38eb44c18"
           ],
           "funding_event_ids": [
-            "EV-ef669a52c9a3f94f",
             "EV-08612741cfce0bcf",
             "EV-65d274d4277815dc",
             "EV-6e22ce671a8a4d82",
@@ -1802,11 +1815,11 @@ window.WaveSightOpsConsole = {
             "EV-77d410f38eb44c18"
           ],
           "china_funding_event_ids": [
-            "EV-ef669a52c9a3f94f",
             "EV-6e22ce671a8a4d82",
             "EV-6e528ee3314dce6a"
           ],
           "card_ids": [
+            "FI-6cb88e1aa2901cbb",
             "FI-a5d53b1f53d5c231",
             "FI-5797999d683fac6b",
             "FI-489d15d001722d8d"
@@ -1833,13 +1846,11 @@ window.WaveSightOpsConsole = {
           "completed_at": "2026-09-14T02:42:37.187Z",
           "raw_count": 14,
           "readable_count": 14,
-          "accepted_claims": 3,
+          "accepted_claims": 2,
           "verified_event_ids": [
-            "EV-bb577e3f486cca34",
             "EV-c2718ea152dde192"
           ],
           "funding_event_ids": [
-            "EV-bb577e3f486cca34",
             "EV-c2718ea152dde192"
           ],
           "china_funding_event_ids": [],
@@ -1997,13 +2008,13 @@ window.WaveSightOpsConsole = {
         "sources_failed": 0,
         "candidates": 68,
         "readable_documents": 68,
-        "accepted_claims": 11,
-        "verified_events": 8,
-        "funding_events": 8,
-        "china_funding_events": 3,
-        "linked_organizations": 11,
+        "accepted_claims": 8,
+        "verified_events": 6,
+        "funding_events": 6,
+        "china_funding_events": 2,
+        "linked_organizations": 7,
         "linked_products": 0,
-        "published_card_matches": 5
+        "published_card_matches": 6
       },
       "publication": {
         "status": "awaiting_publication_receipt"
@@ -23298,7 +23309,7 @@ window.WaveSightOpsConsole = {
         "key": "MINIPROGRAM",
         "label": "微信小程序",
         "category": "融资产品",
-        "value": "1.1.0",
+        "value": "1.1.1",
         "source": "02-Miniprogram/package.json",
         "status": "源码版本 · 微信线上待核验",
         "kind": "source",
@@ -27793,7 +27804,7 @@ window.WaveSightOpsConsole = {
         "key": "MINIPROGRAM",
         "label": "微信小程序",
         "category": "融资产品",
-        "value": "1.1.0",
+        "value": "1.1.1",
         "source": "02-Miniprogram/package.json",
         "status": "源码版本 · 微信线上待核验",
         "kind": "source",
@@ -27841,8 +27852,8 @@ window.WaveSightOpsConsole = {
     "batches": [
       {
         "id": "data-center:2026-09-14",
-        "observedAt": "2026-09-14T02:58:55.619Z",
-        "sourceSnapshot": "12be9dd4feba47bde82ed24af4b2d0e8073a1833f9cf4e0946e771fc500379c9",
+        "observedAt": "2026-09-14T04:56:30.234Z",
+        "sourceSnapshot": "4b8381f7df38c6a597a76a9de4fdf826ff810d21006d7b934a543d29454cbf7b",
         "stages": [
           {
             "id": "data-center:2026-09-14:collection",
@@ -27850,10 +27861,10 @@ window.WaveSightOpsConsole = {
             "status": "partial",
             "counts": {
               "discovered": 290,
-              "capture_succeeded": 232,
+              "capture_succeeded": 300,
               "capture_failed": 4,
               "recovered_source_failures": 9,
-              "raw_documents": 232
+              "raw_documents": 300
             },
             "evidence": [
               "01-SiteV2/content/11-databases/data-center-v4/2026-09-14/manifest.json",
@@ -27866,16 +27877,16 @@ window.WaveSightOpsConsole = {
             "label": "事实构建",
             "status": "passed",
             "counts": {
-              "accepted_claims": 75,
+              "accepted_claims": 82,
               "rejected_claims": 0,
-              "accepted": 75,
+              "accepted": 82,
               "rejected": 0,
               "pending_claims": 2,
-              "canonical_events": 34,
-              "entities": 60,
-              "relationships": 77,
+              "canonical_events": 40,
+              "entities": 66,
+              "relationships": 84,
               "conflicts": 0,
-              "qa_queue": 198
+              "qa_queue": 260
             },
             "evidence": [
               "01-SiteV2/content/11-databases/data-center-v4/2026-09-14/manifest.json",
@@ -27889,8 +27900,8 @@ window.WaveSightOpsConsole = {
             "counts": {
               "opportunity_map": "passed",
               "trend_radar": "passed",
-              "funding_insights": "failed",
-              "fde_hardware_sync": "passed"
+              "funding_insights": "passed",
+              "fde_hardware_sync": "unknown"
             },
             "evidence": [
               "agent-workflow/reports/2026-09-14-persistent-asset-manifest.json"
@@ -27913,6 +27924,6 @@ window.WaveSightOpsConsole = {
       }
     ],
     "catalogGeneratedAt": "2026-09-13 16:21:58",
-    "snapshotGeneratedAt": "2026-09-14T03:09:44.524Z"
+    "snapshotGeneratedAt": "2026-09-14T04:56:30.490Z"
   }
 };

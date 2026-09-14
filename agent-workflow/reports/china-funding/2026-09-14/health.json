@@ -1,29 +1,30 @@
 {
   "schema_version": "CHINA-FUNDING-HEALTH-V1.0",
   "date": "2026-09-14",
-  "generated_at": "2026-09-14T03:09:37.165Z",
-  "status": "failed",
+  "generated_at": "2026-09-14T04:55:51.706Z",
+  "status": "partial",
   "last_collection_at": "2026-09-14T02:43:16.933Z",
-  "failed_stage": "projections",
+  "failed_stage": null,
   "stages": [
     {
       "id": "capture",
       "status": "passed",
-      "started_at": "2026-09-14T03:04:57.926Z",
-      "finished_at": "2026-09-14T03:05:17.864Z"
+      "started_at": "2026-09-14T04:41:08.932Z",
+      "reused": true,
+      "reused_accepted_capture": true,
+      "finished_at": "2026-09-14T04:52:03.704Z"
     },
     {
       "id": "facts",
       "status": "passed",
-      "started_at": "2026-09-14T03:05:17.864Z",
-      "finished_at": "2026-09-14T03:08:18.557Z"
+      "started_at": "2026-09-14T04:52:03.705Z",
+      "finished_at": "2026-09-14T04:53:14.678Z"
     },
     {
       "id": "projections",
-      "status": "failed",
-      "started_at": "2026-09-14T03:08:18.557Z",
-      "error": "Command failed: agent-workflow/tools/assert-funding-insights-v1.mjs (1)",
-      "finished_at": "2026-09-14T03:09:37.048Z"
+      "status": "passed",
+      "started_at": "2026-09-14T04:53:14.679Z",
+      "finished_at": "2026-09-14T04:55:51.597Z"
     }
   ],
   "sources": [
@@ -48,9 +49,8 @@
       "completed_at": "2026-09-14T02:42:30.873Z",
       "raw_count": 24,
       "readable_count": 24,
-      "accepted_claims": 8,
+      "accepted_claims": 6,
       "verified_event_ids": [
-        "EV-ef669a52c9a3f94f",
         "EV-08612741cfce0bcf",
         "EV-65d274d4277815dc",
         "EV-6e22ce671a8a4d82",
@@ -58,7 +58,6 @@
         "EV-77d410f38eb44c18"
       ],
       "funding_event_ids": [
-        "EV-ef669a52c9a3f94f",
         "EV-08612741cfce0bcf",
         "EV-65d274d4277815dc",
         "EV-6e22ce671a8a4d82",
@@ -66,11 +65,11 @@
         "EV-77d410f38eb44c18"
       ],
       "china_funding_event_ids": [
-        "EV-ef669a52c9a3f94f",
         "EV-6e22ce671a8a4d82",
         "EV-6e528ee3314dce6a"
       ],
       "card_ids": [
+        "FI-6cb88e1aa2901cbb",
         "FI-a5d53b1f53d5c231",
         "FI-5797999d683fac6b",
         "FI-489d15d001722d8d"
@@ -97,13 +96,11 @@
       "completed_at": "2026-09-14T02:42:37.187Z",
       "raw_count": 14,
       "readable_count": 14,
-      "accepted_claims": 3,
+      "accepted_claims": 2,
       "verified_event_ids": [
-        "EV-bb577e3f486cca34",
         "EV-c2718ea152dde192"
       ],
       "funding_event_ids": [
-        "EV-bb577e3f486cca34",
         "EV-c2718ea152dde192"
       ],
       "china_funding_event_ids": [],
@@ -261,13 +258,13 @@
     "sources_failed": 0,
     "candidates": 68,
     "readable_documents": 68,
-    "accepted_claims": 11,
-    "verified_events": 8,
-    "funding_events": 8,
-    "china_funding_events": 3,
-    "linked_organizations": 11,
+    "accepted_claims": 8,
+    "verified_events": 6,
+    "funding_events": 6,
+    "china_funding_events": 2,
+    "linked_organizations": 7,
     "linked_products": 0,
-    "published_card_matches": 5
+    "published_card_matches": 6
   },
   "publication": {
     "status": "awaiting_publication_receipt"

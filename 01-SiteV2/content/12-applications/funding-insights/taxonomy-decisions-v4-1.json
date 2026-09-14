@@ -5,16 +5,16 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-09-13T01:28:44.469Z",
+    "generated_at": "2026-09-14T04:54:48.872Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 447,
-    "input_hash": "1daaae706a96f787",
+    "decision_count": 450,
+    "input_hash": "a082777049007589",
     "override_count": 18,
-    "needs_review_count": 49,
-    "low_confidence_count": 63
+    "needs_review_count": 50,
+    "low_confidence_count": 65
   },
   "decisions": [
     {
@@ -8926,6 +8926,91 @@
       "confidence": 0.75,
       "needs_review": true,
       "rationale": "大鱼智行 focuses on smart lithium e-bikes and is exploring AI E-Wagon with autonomous assistance, environmental perception, obstacle avoidance, and human-machine interaction. The current e-bike is an AI device, but the AI E-Wagon represents a future physical AI product. Since the card emphasizes the AI E-Wagon as a new product direction with autonomous capabilities, it is classified as physical_ai with robotic_system product form. However, the current product is an e-bike, so confidence is moderate and review is recommended."
+    },
+    {
+      "event_id": "EV-08612741cfce0bcf",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "data",
+      "market_application_id": "data_preparation_curation",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.7,
+      "needs_review": true,
+      "rationale": "公司专注于具身智能基础模型，属于基础设施计算领域，产品为模型。其数据采集设备及数据平台属于数据准备与整理，因此市场层级选择 infrastructure_compute > data > data_preparation_curation。产品形式为模型，用例为物理自动化，行业为制造业，目标用户为开发者。由于公司成立时间较晚且信息有限，需要人工复核。"
+    },
+    {
+      "event_id": "EV-7eead74c2baae511",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "content_creation",
+        "knowledge_search",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "business_user",
+        "consumer"
+      ],
+      "confidence": 0.75,
+      "needs_review": false,
+      "rationale": "智谱AI is a foundation model company. Its products include a consumer-facing assistant (智谱清言) and AutoGLM, an agent that operates phones. The core offering is the underlying model, so the hierarchy tuple infrastructure_compute > development_deployment > models is appropriate. Product form is model. Use cases reflect content creation, knowledge search, and productivity workflows from the described capabilities. Target users include developers, business users, and consumers based on the C-end product and agent use."
+    },
+    {
+      "event_id": "EV-ef669a52c9a3f94f",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "content_creation",
+        "knowledge_search",
+        "data_analysis",
+        "research_discovery",
+        "education_learning",
+        "productivity_enterprise_workflows",
+        "software_development"
+      ],
+      "industry_ids": [
+        "financial_services",
+        "healthcare_life_sciences",
+        "retail_ecommerce",
+        "manufacturing",
+        "media_entertainment",
+        "education",
+        "government_public_sector",
+        "energy_utilities",
+        "telecommunications",
+        "automotive_transportation",
+        "professional_services",
+        "construction_real_estate",
+        "food_hospitality",
+        "aerospace_defense",
+        "agriculture",
+        "logistics_supply_chain",
+        "legal_services"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user",
+        "researcher",
+        "educator",
+        "student"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "智谱AI is a large model company offering GLM series models and MaaS API services. The core offering is a foundation model and model API, fitting infrastructure_compute > development_deployment > models. Product form is model (with model_api_service also relevant, but model is the primary classification). Use cases are broad due to general-purpose LLM capabilities. Industries are broad as the model is horizontal. Target users include developers, business users, researchers, educators, and students. No physical AI or AI device evidence."
     }
   ]
 }

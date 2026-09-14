@@ -3,32 +3,32 @@
     "version": "COLLECTION-TELEMETRY-V1.0",
     "ops_version": "OPS-V3.8.0-engineering-integration",
     "data_date": "2026-09-14",
-    "generated_at": "2026-09-14T02:58:55.619Z",
-    "source_snapshot": "12be9dd4feba47bde82ed24af4b2d0e8073a1833f9cf4e0946e771fc500379c9",
+    "generated_at": "2026-09-14T04:56:30.234Z",
+    "source_snapshot": "4b8381f7df38c6a597a76a9de4fdf826ff810d21006d7b934a543d29454cbf7b",
     "scope": "OPS",
     "canonical_writeback": false,
     "source_of_truth": "Data Center V4 manifest and integrity gate"
   },
   "collection": {
     "discovered": 290,
-    "capture_succeeded": 232,
+    "capture_succeeded": 300,
     "capture_failed": 4,
     "recovered_source_failures": 9,
-    "raw_documents": 232
+    "raw_documents": 300
   },
   "fact_build": {
-    "accepted_claims": 75,
+    "accepted_claims": 82,
     "rejected_claims": 0,
-    "accepted": 75,
+    "accepted": 82,
     "rejected": 0,
     "pending_claims": 2,
-    "canonical_events": 34,
-    "entities": 60,
-    "relationships": 77,
+    "canonical_events": 40,
+    "entities": 66,
+    "relationships": 84,
     "conflicts": 0,
-    "qa_queue": 198,
+    "qa_queue": 260,
     "qa_by_status": {
-      "review_optional": 190,
+      "review_optional": 252,
       "open": 8
     }
   },
@@ -44,8 +44,8 @@
   "application_projection": {
     "opportunity_map": "passed",
     "trend_radar": "passed",
-    "funding_insights": "failed",
-    "fde_hardware_sync": "passed"
+    "funding_insights": "passed",
+    "fde_hardware_sync": "unknown"
   },
   "publication": {
     "status": "waiting",
@@ -60,10 +60,10 @@
       "status": "partial",
       "counts": {
         "discovered": 290,
-        "capture_succeeded": 232,
+        "capture_succeeded": 300,
         "capture_failed": 4,
         "recovered_source_failures": 9,
-        "raw_documents": 232
+        "raw_documents": 300
       },
       "evidence": [
         "01-SiteV2/content/11-databases/data-center-v4/2026-09-14/manifest.json",
@@ -76,16 +76,16 @@
       "label": "事实构建",
       "status": "passed",
       "counts": {
-        "accepted_claims": 75,
+        "accepted_claims": 82,
         "rejected_claims": 0,
-        "accepted": 75,
+        "accepted": 82,
         "rejected": 0,
         "pending_claims": 2,
-        "canonical_events": 34,
-        "entities": 60,
-        "relationships": 77,
+        "canonical_events": 40,
+        "entities": 66,
+        "relationships": 84,
         "conflicts": 0,
-        "qa_queue": 198
+        "qa_queue": 260
       },
       "evidence": [
         "01-SiteV2/content/11-databases/data-center-v4/2026-09-14/manifest.json",
@@ -99,8 +99,8 @@
       "counts": {
         "opportunity_map": "passed",
         "trend_radar": "passed",
-        "funding_insights": "failed",
-        "fde_hardware_sync": "passed"
+        "funding_insights": "passed",
+        "fde_hardware_sync": "unknown"
       },
       "evidence": [
         "agent-workflow/reports/2026-09-14-persistent-asset-manifest.json"

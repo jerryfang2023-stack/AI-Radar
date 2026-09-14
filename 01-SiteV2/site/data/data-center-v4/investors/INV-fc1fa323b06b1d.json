@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-14T03:22:45.625Z",
+    "generatedAt": "2026-09-14T04:55:12.862Z",
     "latestDataDate": "2026-09-14",
     "currentDate": "2026-09-14",
-    "eventCount": 3229,
+    "eventCount": 3230,
     "quarantinedEventCount": 34,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -57,7 +57,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 4,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 4,
     "market_regions": [
       "CN"
@@ -65,9 +65,9 @@
     "china_market_activity_count": 4,
     "china_market_company_count": 4,
     "first_disclosed_at": "2026-01-12",
-    "latest_disclosed_at": "2026-08-19",
+    "latest_disclosed_at": "2026-09-13",
     "role_counts": {
-      "historical_or_ambiguous": 1,
+      "historical_or_ambiguous": 2,
       "lead": 1,
       "participant": 3
     },
@@ -99,6 +99,47 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-c5241f9002656c92",
+        "funding_insight_id": "FI-63374eeafcdd0df6",
+        "event_ids": [
+          "EV-7eead74c2baae511",
+          "EV-ef669a52c9a3f94f"
+        ],
+        "company_entity_id": "EN-1d79127e9d90e89b",
+        "company_canonical_entity_id": "EN-1d79127e9d90e89b",
+        "company_name": "智谱AI",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "约50亿美元融资",
+        "amount_original": "50 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 5000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "50 亿美元"
+        },
+        "announced_at": "2026-09-13",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "老股东跟投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-e930be8aa5120588",
+            "source_url": "https://www.jiemian.com/article/12128930.html",
+            "source_title": "刚刚，智谱AI完成融资30亿|界面新闻 · JMedia",
+            "source_content_hash": "6039a35df79b1076",
+            "quote": "君联资本等老股东继续跟投",
+            "quote_hash": "09135137d26f26bd28b50094f83073165e1fc63f7387c73121997236f599dfa2"
+          }
+        ]
+      },
       {
         "activity_id": "IA-a4a764911bd537e4",
         "funding_insight_id": "FI-dc9e5d11c96e1760",
@@ -305,6 +346,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-e930be8aa5120588",
+        "source_url": "https://www.jiemian.com/article/12128930.html",
+        "source_title": "刚刚，智谱AI完成融资30亿|界面新闻 · JMedia",
+        "source_content_hash": "6039a35df79b1076",
+        "quote": "君联资本等老股东继续跟投",
+        "quote_hash": "09135137d26f26bd28b50094f83073165e1fc63f7387c73121997236f599dfa2"
+      },
+      {
         "source_id": "FISRC-b7725acf292395aa",
         "source_url": "https://finance.sina.com.cn/tech/roll/2026-08-19/doc-ininvmyx9448955.shtml",
         "source_title": "清雁科技完成数亿元A轮融资",
@@ -347,7 +396,7 @@
     ],
     "translations": {
       "zh-CN": {
-        "activities[4].role": {
+        "activities[5].role": {
           "text": "Pre-A++轮领投",
           "source_hash": "c17edb52e19a80f769b3d7eaff613c94c5bc182eadef3ef691dfcf2d817465cd",
           "provider": "deepseek",
