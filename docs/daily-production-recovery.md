@@ -53,6 +53,12 @@ despite a failed outcome.
 
 ## Evidence and publication acceptance
 
+Funding generation with `--recover-from-git-ref=HEAD` first resolves an exact
+commit and checks whether that date's prior card bundle exists. A missing bundle
+in a valid commit is a normal first run, not failed recovery. Invalid references,
+Git errors, malformed JSON and invalid card arrays still fail closed. Existing
+cards continue through the normal evidence and canonical-consistency gates.
+
 Public company/product indexes require an accepted catalog decision with an
 attributed reviewer. Coverage and frontstage construction share that admission
 set and merge resolution. Unreviewed entities remain pending, with counts and
