@@ -4,12 +4,24 @@ import fs from "node:fs";
 import path from "node:path";
 import { collectChinaFunding, normalizeChinaFundingLead, articleUrl } from "../lib/china-funding-collector.mjs";
 import { buildChinaFundingHealth } from "../lib/china-funding-health.mjs";
-import { chinaFundingPlan, selectChinaFundingIntake } from "../run-china-funding-pipeline.mjs";
+import { chinaFundingPlan, selectChinaFundingIntake, restoreAcceptedChinaFundingEvidence } from "../run-china-funding-pipeline.mjs";
 import { mergeSourceIntakes } from "../lib/source-intake-v1.mjs";
 import { chinaFundingSourceDate } from "../lib/china-funding-source-date.mjs";
 import { eventSourceEligibility } from "../build-data-center-v4.mjs";
 
 const root = process.cwd();
+test("accepted capture recovery restores date-scoped locators offline and fails closed", () => {
+  const calls = [];
+  restoreAcceptedChinaFundingEvidence("2026-09-14", (args) => calls.push(args));
+  assert.deepEqual(calls, [
+    ["agent-workflow/tools/migrate-private-evidence-source.mjs", "--delete-public-originals=true", "--date=2026-09-14"],
+    ["agent-workflow/tools/assert-public-evidence-boundary.mjs"],
+    ["agent-workflow/tools/assert-private-evidence-backup.mjs", "--date=2026-09-14"],
+  ]);
+  assert.throws(() => restoreAcceptedChinaFundingEvidence("2026-09-14", () => { throw new Error("missing original"); }), /missing original/u);
+  const pipeline = fs.readFileSync("agent-workflow/tools/run-china-funding-pipeline.mjs", "utf8");
+  assert.match(pipeline, /restoreAcceptedChinaFundingEvidence\(date, command\);\s+const capturePassed/u);
+});
 test("domestic dates come from explicit original publication stamps, never capture time", () => {
   const source = { acquisition_channel: "china-funding" };
   assert.equal(chinaFundingSourceDate({ ...source, full_text: "导航\n2026/09 11\n11:17\n超维动力完成融资" }), "2026-09-11T11:17:00+08:00");

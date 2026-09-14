@@ -186,6 +186,10 @@ Checkpoint restoration unions same-date accepted main intake with the restored
 input and recovers already-published cards from HEAD. Restoring an older overseas
 checkpoint must not erase a completed domestic lane or trigger duplicate research.
 Merged intake retains `collection_batches` with exact Raw IDs and eligible IDs.
+China checkpoint recovery also rebuilds the date-scoped public evidence locator
+index from private originals and reruns both evidence boundary gates, even when
+capture previously passed. Diagnostic-only publication can roll back that index
+independently of the accepted intake; capture success alone cannot skip hydration.
 The pre-commit gate reconciles all batch identities before comparing the original
 lane log; never rewrite a 228-document collection log to claim it collected a
 297-document composite. Missing or inconsistent batch coverage remains blocking.
