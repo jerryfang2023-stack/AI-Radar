@@ -35,7 +35,7 @@ def register_routes(app, *, db, auth_required, user_by_id):
     @app.get("/api/v1/community/archives/<slug>")
     @auth_required
     def community_archive(slug):
-        if not re.fullmatch(r"issue-\d{2,4}", slug):
+        if not re.fullmatch(r"(?:issue-\d{2,4}|season-\d{2}-issue-\d{2,4})", slug):
             return jsonify(error={"message": "实录不存在"}), 404
         return request_hub("archives/" + slug)
 

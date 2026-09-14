@@ -28,6 +28,21 @@ def test_unlinked_user_cannot_read_full_archive(client):
     assert result.status_code == 403
 
 
+def test_gateway_accepts_season_scoped_archive_slug(client):
+    calls = []
+    client.application.community_client.hub = lambda path, **options: calls.append((path, options)) or {"item": {"id": "season-02-issue-01"}}
+    token = linked(client)
+    result = client.get("/api/v1/community/archives/season-02-issue-01", headers=auth(token))
+    assert result.status_code == 200
+    assert result.json["item"]["id"] == "season-02-issue-01"
+    assert calls[-1][0] == "archives/season-02-issue-01"
+
+
+def test_gateway_rejects_invalid_archive_slug(client):
+    token = linked(client)
+    assert client.get("/api/v1/community/archives/season-2-issue-1", headers=auth(token)).status_code == 404
+
+
 def test_gateway_fail_closed_on_remote_revocation_and_outage(client):
     token = linked(client)
     def revoked(*args, **kwargs):
