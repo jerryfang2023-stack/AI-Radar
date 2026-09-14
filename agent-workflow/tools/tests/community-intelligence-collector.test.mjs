@@ -6,9 +6,26 @@ import { fileURLToPath } from "node:url";
 
 import {
   communityCollectionProblems,
+  communityCollectionFailure,
 } from "../../../01-SiteV2/site/scripts/collect-community-intelligence.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../..");
+
+test("community rejection preserves source, stage and login marker for recovery", () => {
+  const error = communityCollectionFailure({
+    meta: { errors: [{ source: "aipoju", mode: "home", message: "COMMUNITY_LOGIN_REQUIRED: AI破局 login expired" }] },
+  }, ["1 blocking collector error(s)"]);
+  assert.match(error.message, /COMMUNITY_COLLECTION_REJECTED/);
+  assert.match(error.message, /aipoju\/home: COMMUNITY_LOGIN_REQUIRED/);
+  assert.match(communityCollectionFailure({ meta: { errors: [{ source: "scys", mode: "home", message: "navigation timeout" }] } }, ["failed"]).message, /scys\/home: navigation timeout/);
+});
+
+test("all shared production writers retain multiple pending lanes", () => {
+  for (const file of ["daily-persistent-assets-pr.yml", "daily-first-line-viewpoints-pr.yml", "china-funding-pr.yml", "china-funding-history-pr.yml"]) {
+    const workflow = fs.readFileSync(path.join(root, ".github/workflows", file), "utf8");
+    assert.match(workflow, /group: wavesight-data-center-publication\s+cancel-in-progress: false\s+queue: max/u, file);
+  }
+});
 
 test("community collector accepts a complete candidate before publication", () => {
   const payload = {

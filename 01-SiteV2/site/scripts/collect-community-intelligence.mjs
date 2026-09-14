@@ -68,6 +68,12 @@ export function communityCollectionProblems(payload, { minItems = 12, minLinks =
   return problems;
 }
 
+export function communityCollectionFailure(payload, problems) {
+  const details = (payload?.meta?.errors || []).map((issue) =>
+    `${issue.source || "unknown"}/${issue.mode || "collection"}: ${issue.message || "collector failed"}`);
+  return new Error(`COMMUNITY_COLLECTION_REJECTED: ${[...problems, ...details].join("; ")}`);
+}
+
 function idFor(parts) {
   return crypto.createHash("sha1").update(parts.filter(Boolean).join("|")).digest("hex").slice(0, 14);
 }
@@ -761,7 +767,7 @@ async function main() {
   });
   problems.push(...documentRetentionProblems(unique, previous.items || []));
   if (problems.length > 0) {
-    throw new Error(`COMMUNITY_COLLECTION_REJECTED: ${problems.join("; ")}`);
+    throw communityCollectionFailure(payload, problems);
   }
 
   if (scysOriginals.length) {
