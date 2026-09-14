@@ -5,13 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-13T01:56:17.541Z",
-    "latestDataDate": "2026-09-13",
-    "currentDate": "2026-09-13",
-    "eventCount": 3212,
-    "quarantinedEventCount": 33,
+    "generatedAt": "2026-09-14T02:58:32.864Z",
+    "latestDataDate": "2026-09-14",
+    "currentDate": "2026-09-14",
+    "eventCount": 3229,
+    "quarantinedEventCount": 34,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
       "EV-1fc7578ab4f32166",
@@ -60,6 +61,8 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-10f70a36ab44e974",
+      "EV-ef669a52c9a3f94f",
       "EV-3f1410e4fc5aed40",
       "EV-783866f9782691b6",
       "EV-40f14150d6f622f5",
@@ -89,13 +92,15 @@
       "EN-993599624a199fe0"
     ],
     "firstSeen": "2026-03-30",
-    "lastSeen": "2026-09-12",
+    "lastSeen": "2026-09-14",
     "relationIds": [
       "REL2-09dd97666e545a2c",
       "REL2-ff240950e3bb7f5e"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-10f70a36ab44e974",
+        "EV-ef669a52c9a3f94f",
         "EV-3f1410e4fc5aed40"
       ],
       "deployments": [
@@ -124,6 +129,49 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-10f70a36ab44e974",
+        "dataDate": "2026-09-14",
+        "date": "2026-09-13",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "智谱宣布完成约 50 亿美元融资，用于下一代 GLM 基础模型研发",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-124323a7cb8a6d3f"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-124323a7cb8a6d3f",
+          "EN-1d79127e9d90e89b"
+        ]
+      },
+      {
+        "id": "EV-ef669a52c9a3f94f",
+        "dataDate": "2026-09-14",
+        "date": "2026-09-13",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "AI 新闻日报·今日人工智能资讯热点汇总 · 读懂AI时代 2026年9月13日",
+        "displayTags": [],
+        "entityIds": [
+          "EN-1d79127e9d90e89b"
+        ]
+      },
       {
         "id": "EV-3f1410e4fc5aed40",
         "dataDate": "2026-09-12",
@@ -704,6 +752,7 @@
       "typeLabel": "产品形态",
       "valueId": "model",
       "eventIds": [
+        "EV-10f70a36ab44e974",
         "EV-6ab69a243cd45e3f",
         "EV-d42d6250b5dcd65c",
         "EV-3742960ce1f814d6",
@@ -1046,6 +1095,7 @@
         "EV-5208aa6dcd06cecb"
       ],
       "entityIds": [
+        "EN-124323a7cb8a6d3f",
         "EN-a1fb5521655e55c3",
         "EN-30961cffc5902d30",
         "EN-4880db48cba8a4d7",
@@ -1272,7 +1322,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-13"
+      "lastSeen": "2026-09-14"
     },
     {
       "id": "TX-use_case-software_development",

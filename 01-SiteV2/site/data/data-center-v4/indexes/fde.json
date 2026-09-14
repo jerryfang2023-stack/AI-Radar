@@ -5,13 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-13T01:56:17.541Z",
-    "latestDataDate": "2026-09-13",
-    "currentDate": "2026-09-13",
-    "eventCount": 3212,
-    "quarantinedEventCount": 33,
+    "generatedAt": "2026-09-14T02:58:32.864Z",
+    "latestDataDate": "2026-09-14",
+    "currentDate": "2026-09-14",
+    "eventCount": 3229,
+    "quarantinedEventCount": 34,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
       "EV-1fc7578ab4f32166",
@@ -47,6 +48,46 @@
     ]
   },
   "fde": [
+    {
+      "id": "FDE-0f03226fc6456408",
+      "eventId": "EV-1f2ae42c8834ae04",
+      "dataDate": "2026-09-14",
+      "date": "2026-09-14",
+      "title": "【2026最新】AI新物种FDE（前沿部署工程师）落地实战与面试指南-北京尧图网络科技有限公司 ×",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "工程师）落地实战与面试指南-北京尧图网络科技有限公司 ×",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "【2026最新】AI新物种FDE（前沿部署工程师）落地实战与面试指南-北京尧图网络科技有限公司 ×",
+        "【2026最新】AI新物种FDE（前沿部署工程师）落地实战与面试指南",
+        "01 ARTICLE 【2026最新】AI新物种FDE（前沿部署工程师）落地实战与面试指南"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "http://lsln.cn/news/22194",
+      "entityIds": [
+        "EN-665abf6e5c05d800"
+      ]
+    },
     {
       "id": "FDE-e47eee9791ea0875",
       "eventId": "EV-3897af7586867f99",
@@ -7001,6 +7042,55 @@
   ],
   "fdeDossiers": [
     {
+      "id": "FDED-0b31b0d51b303319",
+      "implementationKey": "0b31b0d51b303319",
+      "eventId": "EV-1f2ae42c8834ae04",
+      "eventIds": [
+        "EV-1f2ae42c8834ae04"
+      ],
+      "dataDate": "2026-09-14",
+      "date": "2026-09-14",
+      "title": "未披露 × 未披露：工程师）落地实战与面试指南-北京尧图网络科技有限公司 ×",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "工程师）落地实战与面试指南-北京尧图网络科技有限公司 ×",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.25,
+      "completenessPercent": 25,
+      "missingFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-3c1967df0b3f36a4",
+          "type": "implementation_update",
+          "stage": "completed",
+          "date": "2026-09-14",
+          "dataDate": "2026-09-14",
+          "eventId": "EV-1f2ae42c8834ae04",
+          "eventTitle": "【2026最新】AI新物种FDE（前沿部署工程师）落地实战与面试指南-北京尧图网络科技有限公司 ×",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "http://lsln.cn/news/22194",
+      "entityIds": [
+        "EN-665abf6e5c05d800"
+      ]
+    },
+    {
       "id": "FDED-6d981a88620c7827",
       "implementationKey": "6d981a88620c7827",
       "eventId": "EV-3897af7586867f99",
@@ -9869,39 +9959,37 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-09-13",
-      "funnel_id": "LF-bb74c01878fac356",
+      "data_date": "2026-09-14",
+      "funnel_id": "LF-915384ab40ba6b23",
       "lens": "fde",
-      "date": "2026-09-13",
+      "date": "2026-09-14",
       "monitoring_paths": [
         "fde_customer_case",
         "fde_earnings_disclosure",
         "fde_procurement_contract",
         "fde_production_rollout"
       ],
-      "raw_documents": 96,
-      "original_sources": 85,
-      "valid_claims": 25,
+      "raw_documents": 101,
+      "original_sources": 88,
+      "valid_claims": 34,
       "observations": 1,
-      "canonical_events": 9,
+      "canonical_events": 13,
       "blocker_counts": {
-        "event_not_ai_relevant": 2,
+        "opinion_without_source_bounded_event": 3,
+        "no_source_bounded_event": 15,
         "source_outside_daily_window": 45,
-        "non_event_or_index_title": 11,
-        "no_source_bounded_event": 12,
-        "multiple_funding_recipients_require_separate_sources": 1,
-        "opinion_without_source_bounded_event": 2,
+        "non_event_or_index_title": 9,
         "event_entity_unresolved": 1,
         "community_source_requires_original_event_source": 1,
-        "raw_source_quality_block": 11
+        "raw_source_quality_block": 13
       },
       "rates": {
-        "original_source_rate": 0.8854166666666666,
-        "valid_claim_rate": 0.2604166666666667,
-        "observation_rate": 0.04,
-        "event_conversion_rate": 0.36
+        "original_source_rate": 0.8712871287128713,
+        "valid_claim_rate": 0.33663366336633666,
+        "observation_rate": 0.029411764705882353,
+        "event_conversion_rate": 0.38235294117647056
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-13/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-14/monitoring-funnel.json"
     }
   ]
 }

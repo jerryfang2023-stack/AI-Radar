@@ -5,13 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-13T01:56:17.541Z",
-    "latestDataDate": "2026-09-13",
-    "currentDate": "2026-09-13",
-    "eventCount": 3212,
-    "quarantinedEventCount": 33,
+    "generatedAt": "2026-09-14T02:58:32.864Z",
+    "latestDataDate": "2026-09-14",
+    "currentDate": "2026-09-14",
+    "eventCount": 3229,
+    "quarantinedEventCount": 34,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
       "EV-1fc7578ab4f32166",
@@ -47,6 +48,76 @@
     ]
   },
   "relationships": [
+    {
+      "relationship_id": "REL2-3e5f73b7e12f9938",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-754c490bd199c21a",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-7a3ecc54829211df",
+      "object_type": "entity",
+      "event_id": "EV-f274928972170045",
+      "claim_refs": [
+        "CL-0f6c15e9ac408f09",
+        "CL-4317c2b2ac1d2450",
+        "CL-cd655831b4c569c7",
+        "CL-58c740a1332de19c"
+      ],
+      "source_refs": [
+        "SA-934c663177cd6c96"
+      ],
+      "data_date": "2026-09-14",
+      "status": "verified",
+      "subjectName": "蚂蚁灵波",
+      "objectName": "LingBot-World 2.0",
+      "predicateLabel": "发布",
+      "title": "蚂蚁灵波 发布 LingBot-World 2.0",
+      "eventTitle": "蚂蚁灵波开源三款 LingBot-World 2.0 世界模型：Small 参数 1.3B 面向消费级单卡 GPU 设计",
+      "eventDate": "2026-09-13",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-0f6c15e9ac408f09",
+          "subject": "蚂蚁灵波",
+          "object": "：Small 参数 1.3B 面向消费级单卡 GPU 设计",
+          "quote": "IT之家 9 月 13 日消息，继今年 7 月开源 LingBot-World 2.0 14B 模型后，蚂蚁灵波科技本周进一步开源三款模型：LingBot-World 2.0 Small（1.3B）、LingBot-World 2.0 Bidirectional 和 LingBot-World 2.0 Causal Pretrain。"
+        },
+        {
+          "id": "CL-4317c2b2ac1d2450",
+          "subject": "蚂蚁灵波",
+          "object": "：Small 参数 1.3B 面向消费级单卡 GPU 设计",
+          "quote": "据介绍，LingBot-World 2.0 是一个实时交互世界模型。"
+        },
+        {
+          "id": "CL-cd655831b4c569c7",
+          "subject": "蚂蚁灵波",
+          "object": "：Small 参数 1.3B 面向消费级单卡 GPU 设计",
+          "quote": "模型支持小时级连续生成，并可以响应攻击、射箭、施法、射击等角色动作，以及下雪、下雨等环境事件。"
+        },
+        {
+          "id": "CL-58c740a1332de19c",
+          "subject": "蚂蚁灵波",
+          "object": "：Small 参数 1.3B 面向消费级单卡 GPU 设计",
+          "quote": "在更高算力与相应推理配置下，LingBot-World 2.0 可进一步达到 720P / 60FPS 的高清实时体验。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-934c663177cd6c96",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/1/001/863.htm"
+        }
+      ],
+      "sourceExcerpt": "IT之家 9 月 13 日消息，继今年 7 月开源 LingBot-World 2.0 14B 模型后，蚂蚁灵波科技本周进一步开源三款模型：LingBot-World 2.0 Small（1.3B）、LingBot-World 2.0 Bidirectional 和 LingBot-World 2.0 Causal Pretrain。",
+      "event": {
+        "id": "EV-f274928972170045",
+        "title": "蚂蚁灵波开源三款 LingBot-World 2.0 世界模型：Small 参数 1.3B 面向消费级单卡 GPU 设计",
+        "originalTitle": "",
+        "date": "2026-09-13",
+        "dataDate": "2026-09-14",
+        "eventTypeLabel": "模型发布"
+      }
+    },
     {
       "relationship_id": "REL2-e99568fa8c6340dd",
       "relationship_version": "RELATION-V2.1",

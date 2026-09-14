@@ -5,13 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-13T01:56:17.541Z",
-    "latestDataDate": "2026-09-13",
-    "currentDate": "2026-09-13",
-    "eventCount": 3212,
-    "quarantinedEventCount": 33,
+    "generatedAt": "2026-09-14T02:58:32.864Z",
+    "latestDataDate": "2026-09-14",
+    "currentDate": "2026-09-14",
+    "eventCount": 3229,
+    "quarantinedEventCount": 34,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
       "EV-1fc7578ab4f32166",
@@ -59,6 +60,7 @@
     "eventIds": [
       "EV-b93b6abf31662339",
       "EV-22f0d8caaa65a6a2",
+      "EV-615ca31845cfc570",
       "EV-69a82f50c60d4a64",
       "EV-0d862d59b05361cc",
       "EV-4e55361d8324dd49",
@@ -72,6 +74,7 @@
       "TX-target_user-business_user",
       "TX-technology-agentic_execution",
       "TX-use_case-customer_support",
+      "TX-deployment_model-on_premise",
       "TX-technology-model_context_protocol"
     ],
     "relatedEntityIds": [
@@ -81,7 +84,7 @@
       "EN-761a66c29a55bc53"
     ],
     "firstSeen": "2026-06-02",
-    "lastSeen": "2026-08-28",
+    "lastSeen": "2026-09-14",
     "relationIds": [
       "REL2-f2a574345a7b8fa5",
       "REL2-4c6be3fd3d25d6c2",
@@ -98,6 +101,7 @@
         "EV-22f0d8caaa65a6a2"
       ],
       "productsServices": [
+        "EV-615ca31845cfc570",
         "EV-69a82f50c60d4a64",
         "EV-0d862d59b05361cc",
         "EV-4e55361d8324dd49",
@@ -111,6 +115,34 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-615ca31845cfc570",
+        "dataDate": "2026-09-14",
+        "date": "2026-09-13",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "AWS 开源 Pizza Bot：面向后台 AI 智能体的自托管收件箱应用",
+        "displayTags": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "on_premise",
+            "name": "本地部署",
+            "entityIds": [
+              "EN-7d1507284a5757ca"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-7d1507284a5757ca",
+          "EN-bc0cf37c390bb0b6"
+        ]
+      },
       {
         "id": "EV-b93b6abf31662339",
         "dataDate": "2026-08-28",
@@ -476,7 +508,6 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-6b668e4655192209",
         "EV-532031a0c390a2e3",
         "EV-4f6e481c90ff0e3c",
         "EV-c32dd87e1f72b09a",
@@ -732,12 +763,12 @@
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-physical_automation",
+        "TX-product_form-model",
         "TX-technology-code_generation",
         "TX-technology-embodied_ai",
         "TX-technology-multimodal",
         "TX-product_form-robotic_system",
         "TX-target_user-researcher",
-        "TX-product_form-model",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-industry-healthcare_life_sciences",
@@ -804,7 +835,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-13"
+      "lastSeen": "2026-09-14"
     },
     {
       "id": "EN-cbc62794911ff31b",
@@ -874,8 +905,8 @@
         "TX-industry-manufacturing",
         "TX-product_form-chip_accelerator",
         "TX-target_user-developer",
-        "TX-target_user-researcher",
         "TX-product_form-model",
+        "TX-target_user-researcher",
         "TX-target_user-consumer",
         "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
@@ -1690,7 +1721,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-13"
+      "lastSeen": "2026-09-14"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -1715,8 +1746,8 @@
         "EV-9ed6a759555d7e77",
         "EV-13e08bc37724e276",
         "EV-53253b5e23970958",
-        "EV-58a0983e0b45135b",
         "EV-57cf8e14d6994c1b",
+        "EV-58a0983e0b45135b",
         "EV-2a78dd5feb40a78a",
         "EV-9490bae84e7b4707",
         "EV-136b2edc9b9f3be8",
@@ -1920,6 +1951,7 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-358643eefe0a5df5",
         "EV-1938f1caa0e15759",
         "EV-b2573b146a89c48a",
         "EV-ec55003461ff34b0",
@@ -1932,7 +1964,6 @@
         "EV-4ecc308baf04ff02",
         "EV-50e7de294816f918",
         "EV-8e0c25aebb1d4f5f",
-        "EV-358643eefe0a5df5",
         "EV-7d0144597aa9b489",
         "EV-36a9af9b98a66be3",
         "EV-4809eb76696a9e61",
@@ -2231,6 +2262,7 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-b1b321fda18cc329",
         "EV-e272541b76d00306",
         "EV-84bd528b36f55b00",
         "EV-fdc3211527e41bf6",
@@ -2280,8 +2312,8 @@
         "EN-2be663431f007250",
         "EN-77a82bb9aafc81d9",
         "EN-65819e198c32566a",
-        "EN-09737a1a465af642",
         "EN-556c337c4f0b031e",
+        "EN-09737a1a465af642",
         "EN-382635c9325bf327",
         "EN-45e648a56b09477d",
         "EN-7f67f2f8692510cf",
@@ -2432,11 +2464,11 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-32e83e92d45d71f6",
         "EN-bbdefa2950f49882",
         "EN-72ba63650f4fbeee",
         "EN-39485c329d1abd9e",
         "EN-72fcf35a691c9bc5",
-        "EN-32e83e92d45d71f6",
         "EN-8ff5e729cd4089df",
         "EN-2b6e51bec93e86c1",
         "EN-c70eca6b0f88f44d",
@@ -2589,6 +2621,7 @@
         "EN-b7bea343b08cce2c",
         "EN-fdb2cc367267ac57",
         "EN-4a639cb888a15d75",
+        "EN-d4f0bc5a29de06b5",
         "EN-0616a267820d2c78",
         "EN-286a3c612017ad1d",
         "EN-89d01c9ba73cb5c4",
@@ -2769,7 +2802,54 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-09-10"
+      "lastSeen": "2026-09-14"
+    },
+    {
+      "id": "TX-deployment_model-on_premise",
+      "name": "本地部署",
+      "nodeType": "deployment_model",
+      "typeLabel": "部署形态",
+      "valueId": "on_premise",
+      "eventIds": [
+        "EV-0e84a2f49d765ce3",
+        "EV-3632f9193a3f3f28",
+        "EV-1a75b3a3a8bff860",
+        "EV-73c7062edbdf5d08",
+        "EV-0fc718ab409cdcf5",
+        "EV-7263caa45bbf168e",
+        "EV-615ca31845cfc570",
+        "EV-f71726063c6e1615",
+        "EV-5c87fffc3534e990",
+        "EV-c3ac03a8a0cc3a0e",
+        "EV-7164fc80b7526930",
+        "EV-6fc9c1eab4501ce9",
+        "EV-c0d8138d8cab5135",
+        "EV-3011ea85c51a3ee0",
+        "EV-7309586168387ad8",
+        "EV-a06011da69abcc3d",
+        "EV-f1912ab7c46288f3"
+      ],
+      "entityIds": [
+        "EN-634561e92b7593c3",
+        "EN-8b332ded81dc8d3a",
+        "EN-25465dbbb180e21b",
+        "EN-7d1507284a5757ca",
+        "EN-bbdefa2950f49882",
+        "EN-cb4754c48f8023d0",
+        "EN-842fcb5e60989a03",
+        "EN-754b113d548b4469",
+        "EN-9fbf261b62c1d7c0",
+        "EN-b3e3bce83d29e787",
+        "EN-f4bec299df3f4f27"
+      ],
+      "fdeIds": [
+        "FDE-b093649016ddce0b"
+      ],
+      "hardwareIds": [
+        "HW-ecc6755da7bbbbcd"
+      ],
+      "firstSeen": "2025-09-26",
+      "lastSeen": "2026-09-14"
     },
     {
       "id": "TX-technology-model_context_protocol",

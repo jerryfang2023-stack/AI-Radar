@@ -5,13 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-13T01:56:17.541Z",
-    "latestDataDate": "2026-09-13",
-    "currentDate": "2026-09-13",
-    "eventCount": 3212,
-    "quarantinedEventCount": 33,
+    "generatedAt": "2026-09-14T02:58:32.864Z",
+    "latestDataDate": "2026-09-14",
+    "currentDate": "2026-09-14",
+    "eventCount": 3229,
+    "quarantinedEventCount": 34,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
       "EV-1fc7578ab4f32166",
@@ -56,19 +57,15 @@
     "datasetScopes": [
       "canonical"
     ],
-    "eventIds": [
-      "EV-cbeb33594e06678b"
-    ],
+    "eventIds": [],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "2026-09-07",
-    "lastSeen": "2026-09-13",
+    "firstSeen": "",
+    "lastSeen": "",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [
-        "EV-cbeb33594e06678b"
-      ],
+      "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [],
@@ -76,136 +73,7 @@
       "organizationPeople": [],
       "other": []
     },
-    "timeline": [
-      {
-        "id": "EV-cbeb33594e06678b",
-        "dataDate": "2026-09-13",
-        "date": "2026-09-07",
-        "eventType": "funding",
-        "eventTypeLabel": "融资",
-        "eventGroup": "融资与并购",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "米兰初创公司Cato融资600万欧元，用AI帮助企业寻找并赢得公开招标",
-        "displayTags": [
-          {
-            "dimensionId": "ai_market_category",
-            "dimensionName": "AI 市场类别",
-            "id": "enterprise_applications",
-            "name": "企业级应用",
-            "entityIds": [
-              "EN-2cfe6f50f129c9c3"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-734e45bb1b80eef8",
-            "fundingInsightId": "FI-dd42680851449b4e"
-          },
-          {
-            "dimensionId": "ai_market_subcategory",
-            "dimensionName": "AI 市场子类",
-            "id": "productivity_enterprise_workflows",
-            "name": "生产力与企业工作流",
-            "entityIds": [
-              "EN-2cfe6f50f129c9c3"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-396224c4119b07c5",
-            "fundingInsightId": "FI-dd42680851449b4e"
-          },
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "enterprise_software_platform",
-            "name": "企业软件平台",
-            "entityIds": [
-              "EN-2cfe6f50f129c9c3"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-7ce06aeb6da20d74",
-            "fundingInsightId": "FI-dd42680851449b4e"
-          },
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "data_analysis",
-            "name": "数据分析",
-            "entityIds": [
-              "EN-2cfe6f50f129c9c3"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-75240a5009d97ec4",
-            "fundingInsightId": "FI-dd42680851449b4e"
-          },
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "procurement_supply_chain",
-            "name": "采购与供应链",
-            "entityIds": [
-              "EN-2cfe6f50f129c9c3"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-4c6f5091ca30fa0d",
-            "fundingInsightId": "FI-dd42680851449b4e"
-          },
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "productivity_enterprise_workflows",
-            "name": "生产力与企业工作流",
-            "entityIds": [
-              "EN-2cfe6f50f129c9c3"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-c8a78ef15b2c782d",
-            "fundingInsightId": "FI-dd42680851449b4e"
-          },
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "government_public_sector",
-            "name": "政府与公共部门",
-            "entityIds": [
-              "EN-2cfe6f50f129c9c3"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-520c2904c2d414f8",
-            "fundingInsightId": "FI-dd42680851449b4e"
-          },
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "professional_services",
-            "name": "专业服务",
-            "entityIds": [
-              "EN-2cfe6f50f129c9c3"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-f1d5319b17874de3",
-            "fundingInsightId": "FI-dd42680851449b4e"
-          },
-          {
-            "dimensionId": "target_user",
-            "dimensionName": "目标用户",
-            "id": "business_user",
-            "name": "企业用户",
-            "entityIds": [
-              "EN-2cfe6f50f129c9c3"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-c39d1dbdcf2e435b",
-            "fundingInsightId": "FI-dd42680851449b4e"
-          }
-        ],
-        "entityIds": [
-          "EN-e169eb4ccb80a9d3",
-          "EN-2cfe6f50f129c9c3",
-          "EN-2c80d630bb72a519",
-          "EN-079f4552c894ad5b",
-          "EN-f70cdbf8ae9090b7"
-        ]
-      }
-    ],
+    "timeline": [],
     "viewpoints": []
   },
   "relatedEntities": [],

@@ -5,13 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-13T01:56:17.541Z",
-    "latestDataDate": "2026-09-13",
-    "currentDate": "2026-09-13",
-    "eventCount": 3212,
-    "quarantinedEventCount": 33,
+    "generatedAt": "2026-09-14T02:58:32.864Z",
+    "latestDataDate": "2026-09-14",
+    "currentDate": "2026-09-14",
+    "eventCount": 3229,
+    "quarantinedEventCount": 34,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
       "EV-1fc7578ab4f32166",
@@ -47,6 +48,34 @@
     ]
   },
   "relationships": [
+    {
+      "relationship_id": "REL2-3e5f73b7e12f9938",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-754c490bd199c21a",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-7a3ecc54829211df",
+      "object_type": "entity",
+      "event_id": "EV-f274928972170045",
+      "claim_refs": [
+        "CL-0f6c15e9ac408f09",
+        "CL-4317c2b2ac1d2450",
+        "CL-cd655831b4c569c7",
+        "CL-58c740a1332de19c"
+      ],
+      "source_refs": [
+        "SA-934c663177cd6c96"
+      ],
+      "data_date": "2026-09-14",
+      "status": "verified",
+      "subjectName": "蚂蚁灵波",
+      "objectName": "LingBot-World 2.0",
+      "predicateLabel": "发布",
+      "title": "蚂蚁灵波 发布 LingBot-World 2.0",
+      "eventTitle": "蚂蚁灵波开源三款 LingBot-World 2.0 世界模型：Small 参数 1.3B 面向消费级单卡 GPU 设计",
+      "eventDate": "2026-09-13",
+      "sourceCount": 1
+    },
     {
       "relationship_id": "REL2-e99568fa8c6340dd",
       "relationship_version": "RELATION-V2.1",
