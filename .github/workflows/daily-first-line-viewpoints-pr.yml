@@ -15,6 +15,7 @@ permissions:
 concurrency:
   group: wavesight-data-center-publication
   cancel-in-progress: false
+  queue: max
 
 jobs:
   first-line-viewpoints-pr:

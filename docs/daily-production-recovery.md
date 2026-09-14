@@ -163,6 +163,11 @@ Business Signals and First-Line Viewpoints retain separate PR boundaries, but
 their workflows share the `wavesight-data-center-publication` concurrency group
 because both rebuild tracked Data Center projections. They must serialize rather
 than create same-day generated-file merge conflicts.
+All shared publication-lock users set `queue: max` as well as
+`cancel-in-progress: false`. GitHub's default single pending slot can otherwise
+cancel Builder RSS when China publication enters the queue while Business
+Signals is running. Recover a cancelled, never-started RSS run only after the
+existing accepted/active lanes are accounted for; do not displace their queue slot.
 The checkout resolves the requested branch only after acquiring that lock;
 the dispatch-time event SHA can already be stale when a queued job starts.
 Checkpoint restoration unions same-date accepted main intake with the restored
@@ -179,6 +184,10 @@ Community Intelligence validates the complete in-memory candidate before writing
 the current snapshot, dated snapshot, or frontstage file. A collector error,
 fewer than 12 accepted items, or fewer than three document links fails closed and
 preserves the last-good tracked data for a later logged-in retry.
+Collector rejection errors retain their source, stage and original error marker.
+In particular, `COMMUNITY_LOGIN_REQUIRED` must reach the Windows wrapper so it
+stops unattended retries and asks for manual authentication instead of reporting
+only an aggregate collector-error count.
 Recovery checks the freshly fetched `origin/main` snapshot with
 `assert-community-intelligence-data.mjs --source-ref=origin/main`, recording its
 exact commit while still verifying local private originals. A stale or dirty
