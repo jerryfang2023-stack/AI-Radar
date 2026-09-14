@@ -190,6 +190,10 @@ China checkpoint recovery also rebuilds the date-scoped public evidence locator
 index from private originals and reruns both evidence boundary gates, even when
 capture previously passed. Diagnostic-only publication can roll back that index
 independently of the accepted intake; capture success alone cannot skip hydration.
+Financing market commentary, ownership explainers and mixed financing/listing/news
+headlines are discovery material, not single-company financing evidence. Keep their
+originals and diagnostic reasons, but do not promote the headline subject into a
+funded company or generate cards from that non-event.
 The pre-commit gate reconciles all batch identities before comparing the original
 lane log; never rewrite a 228-document collection log to claim it collected a
 297-document composite. Missing or inconsistent batch coverage remains blocking.
