@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-15T07:33:29.824Z",
+    "generatedAt": "2026-09-15T07:57:02.631Z",
     "latestDataDate": "2026-09-15",
     "currentDate": "2026-09-15",
-    "eventCount": 3259,
+    "eventCount": 3271,
     "quarantinedEventCount": 34,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -16930,22 +16930,24 @@
         "hardware_shipment_deployment",
         "hardware_supply_agreement"
       ],
-      "raw_documents": 15,
-      "original_sources": 9,
-      "valid_claims": 3,
+      "raw_documents": 30,
+      "original_sources": 24,
+      "valid_claims": 8,
       "observations": 4,
-      "canonical_events": 2,
+      "canonical_events": 6,
       "blocker_counts": {
+        "domestic_publication_date_unverified": 6,
+        "event_not_ai_relevant": 4,
+        "raw_source_quality_block": 6,
         "source_outside_daily_window": 4,
         "non_event_or_index_title": 2,
-        "no_source_bounded_claim": 2,
-        "raw_source_quality_block": 5
+        "no_source_bounded_claim": 2
       },
       "rates": {
-        "original_source_rate": 0.6,
-        "valid_claim_rate": 0.2,
-        "observation_rate": 1,
-        "event_conversion_rate": 0.6666666666666666
+        "original_source_rate": 0.8,
+        "valid_claim_rate": 0.26666666666666666,
+        "observation_rate": 0.5,
+        "event_conversion_rate": 0.75
       },
       "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-15/monitoring-funnel.json"
     }

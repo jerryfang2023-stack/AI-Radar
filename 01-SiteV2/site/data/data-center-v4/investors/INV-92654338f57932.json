@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-15T07:33:29.824Z",
+    "generatedAt": "2026-09-15T07:57:02.631Z",
     "latestDataDate": "2026-09-15",
     "currentDate": "2026-09-15",
-    "eventCount": 3259,
+    "eventCount": 3271,
     "quarantinedEventCount": 34,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -58,21 +58,22 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 6,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
-    "china_market_activity_count": 4,
-    "china_market_company_count": 4,
+    "china_market_activity_count": 5,
+    "china_market_company_count": 5,
     "first_disclosed_at": "2026-03-24",
-    "latest_disclosed_at": "2026-08-12",
+    "latest_disclosed_at": "2026-09-15",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 3,
       "lead": 1,
-      "participant": 2
+      "participant": 4
     },
     "round_codes": [
       "angel",
@@ -91,6 +92,16 @@
         "name": "开物纪"
       },
       {
+        "entity_id": "EN-4149d125ad47155a",
+        "canonical_entity_id": "",
+        "name": "深度内核（DeepKernel）"
+      },
+      {
+        "entity_id": "EN-619245256126c075",
+        "canonical_entity_id": "",
+        "name": "深度内核（DeepKernel）"
+      },
+      {
         "entity_id": "EN-4eec97c17bca1de2",
         "canonical_entity_id": "EN-4eec97c17bca1de2",
         "name": "星熠智能"
@@ -102,6 +113,86 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-f062e4ab3401e01c",
+        "funding_insight_id": "FI-9c0da6bf63d90fd1",
+        "event_ids": [
+          "EV-4238c51fcdad7bd4"
+        ],
+        "company_entity_id": "EN-4149d125ad47155a",
+        "company_canonical_entity_id": "",
+        "company_name": "深度内核（DeepKernel）",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-09-15",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-9eb697a746e19a88",
+            "source_url": "https://news.pedaily.cn/202609/568997.shtml",
+            "source_title": "首发|深度内核（DeepKernel）完成数千万元种子轮融资，定义AI时代的主权智能",
+            "source_content_hash": "4d4f7417581fed42",
+            "quote": "由顺为资本领投， L2F光源创业者基金跟投",
+            "quote_hash": "7c0a452061bc6289441586c201662d2e9549f4cc18441dbb159a96b49ebecb1f"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-2c80af2cfd313e71",
+        "funding_insight_id": "FI-fdc3c8cfd69218fd",
+        "event_ids": [
+          "EV-b137470f59491f6a"
+        ],
+        "company_entity_id": "EN-619245256126c075",
+        "company_canonical_entity_id": "",
+        "company_name": "深度内核（DeepKernel）",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "数千万人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-09-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-8b2a4bf3c4b5e7a7",
+            "source_url": "https://www.chinaventure.com.cn/news/113-20260915-393256.html",
+            "source_title": "深度内核（DeepKernel）完成种子轮融资 本轮融资由顺为资本领投， L2F 光源创业者基金跟投。 投中网 · 5小时前",
+            "source_content_hash": "32b432c926b6d1c0",
+            "quote": "本轮融资由顺为资本领投， L2F 光源创业者基金跟投。",
+            "quote_hash": "c51fdd6496b7dbd0e4bf3f2c2750d89e93bcb7ff382f9a3b36ee34641b1919cf"
+          }
+        ]
+      },
       {
         "activity_id": "IA-00b57783c0376577",
         "funding_insight_id": "FI-42815b3fc014db68",
@@ -385,6 +476,22 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-9eb697a746e19a88",
+        "source_url": "https://news.pedaily.cn/202609/568997.shtml",
+        "source_title": "首发|深度内核（DeepKernel）完成数千万元种子轮融资，定义AI时代的主权智能",
+        "source_content_hash": "4d4f7417581fed42",
+        "quote": "由顺为资本领投， L2F光源创业者基金跟投",
+        "quote_hash": "7c0a452061bc6289441586c201662d2e9549f4cc18441dbb159a96b49ebecb1f"
+      },
+      {
+        "source_id": "FISRC-8b2a4bf3c4b5e7a7",
+        "source_url": "https://www.chinaventure.com.cn/news/113-20260915-393256.html",
+        "source_title": "深度内核（DeepKernel）完成种子轮融资 本轮融资由顺为资本领投， L2F 光源创业者基金跟投。 投中网 · 5小时前",
+        "source_content_hash": "32b432c926b6d1c0",
+        "quote": "本轮融资由顺为资本领投， L2F 光源创业者基金跟投。",
+        "quote_hash": "c51fdd6496b7dbd0e4bf3f2c2750d89e93bcb7ff382f9a3b36ee34641b1919cf"
+      },
       {
         "source_id": "FISRC-853986351b6d68d9",
         "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-28/doc-inhvzfsh8584344.shtml",

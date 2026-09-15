@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-15T07:33:29.824Z",
+    "generatedAt": "2026-09-15T07:57:02.631Z",
     "latestDataDate": "2026-09-15",
     "currentDate": "2026-09-15",
-    "eventCount": 3259,
+    "eventCount": 3271,
     "quarantinedEventCount": 34,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -57,7 +57,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 5,
-    "historical_or_ambiguous_count": 6,
+    "historical_or_ambiguous_count": 7,
     "portfolio_company_count": 4,
     "market_regions": [
       "CN"
@@ -65,9 +65,9 @@
     "china_market_activity_count": 5,
     "china_market_company_count": 4,
     "first_disclosed_at": "2026-02-14",
-    "latest_disclosed_at": "2026-09-09",
+    "latest_disclosed_at": "2026-09-15",
     "role_counts": {
-      "historical_or_ambiguous": 6,
+      "historical_or_ambiguous": 7,
       "participant": 5
     },
     "round_codes": [
@@ -99,6 +99,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-c923a1c2d228dc1d",
+        "funding_insight_id": "FI-cb4015ec6509d947",
+        "event_ids": [
+          "EV-6aaa17d9c372e513"
+        ],
+        "company_entity_id": "EN-24dd6fa3e1cbba97",
+        "company_canonical_entity_id": "",
+        "company_name": "因克斯",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "3亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 300000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3 亿元"
+        },
+        "announced_at": "2026-09-15",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "老股东持续多轮追投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-d0c3dca85d845330",
+            "source_url": "https://news.pedaily.cn/202609/569015.shtml",
+            "source_title": "「因克斯ENCOS」完成3亿元B轮融资，深耕具身智能关节模组",
+            "source_content_hash": "e86bd6fffaf894b4",
+            "quote": "同时 复星创富、深创投、华控基金、锦秋基金、普华资本作为老股东持续多轮追投。",
+            "quote_hash": "0553874275a9d1405d1a0f8e1cc88e61b74f557cf7f1adcb9fac56dd7353f161"
+          }
+        ]
+      },
       {
         "activity_id": "IA-11b4574187f6ef5f",
         "funding_insight_id": "FI-0e108e32ef8a5b27",
@@ -546,6 +586,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-d0c3dca85d845330",
+        "source_url": "https://news.pedaily.cn/202609/569015.shtml",
+        "source_title": "「因克斯ENCOS」完成3亿元B轮融资，深耕具身智能关节模组",
+        "source_content_hash": "e86bd6fffaf894b4",
+        "quote": "同时 复星创富、深创投、华控基金、锦秋基金、普华资本作为老股东持续多轮追投。",
+        "quote_hash": "0553874275a9d1405d1a0f8e1cc88e61b74f557cf7f1adcb9fac56dd7353f161"
+      },
+      {
         "source_id": "FISRC-6aea6a18fe712b45",
         "source_url": "https://m.pedaily.cn/news/566841",
         "source_title": "词元无限完成天使++轮融资，卡位企业级AI Agent基础设施赛道|投资界",
@@ -636,7 +684,7 @@
     ],
     "translations": {
       "zh-CN": {
-        "activities[3].role": {
+        "activities[4].role": {
           "text": "Pre-A轮跟投",
           "source_hash": "9306282e5fd3ce623e009065f8fbf0fd8c2acd50b228ea756806f4b558632a17",
           "provider": "deepseek",

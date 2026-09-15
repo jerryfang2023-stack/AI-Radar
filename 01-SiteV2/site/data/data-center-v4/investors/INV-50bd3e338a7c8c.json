@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-15T07:33:29.824Z",
+    "generatedAt": "2026-09-15T07:57:02.631Z",
     "latestDataDate": "2026-09-15",
     "currentDate": "2026-09-15",
-    "eventCount": 3259,
+    "eventCount": 3271,
     "quarantinedEventCount": 34,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -57,7 +57,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 0,
     "market_regions": [
       "CN"
@@ -65,13 +65,53 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-06-03",
-    "latest_disclosed_at": "2026-06-03",
+    "latest_disclosed_at": "2026-09-15",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 2
     },
     "round_codes": [],
     "portfolio_companies": [],
     "activities": [
+      {
+        "activity_id": "IA-0948001dbea7d7e3",
+        "funding_insight_id": "FI-cb4015ec6509d947",
+        "event_ids": [
+          "EV-6aaa17d9c372e513"
+        ],
+        "company_entity_id": "EN-24dd6fa3e1cbba97",
+        "company_canonical_entity_id": "",
+        "company_name": "因克斯",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "3亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 300000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3 亿元"
+        },
+        "announced_at": "2026-09-15",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-27fa748719e248c8",
+            "source_url": "https://news.pedaily.cn/202410/541758.shtml",
+            "source_title": "因克斯ENCOS完成数千万元天使轮融资，专注高性能机器人一体化关节模组_投资界",
+            "source_content_hash": "94d63e8c9767f958",
+            "quote": "2024-10-22 10:47 · 投资界讯 投资界（ID：pedaily2012）消息， 2024年9月，南京因克斯智能科技有限公司（以下简称“因克斯”）宣布完成 数千万元天使轮融资 ，由 绿洲资本领投、水木创投与拉尔夫创投跟投 。",
+            "quote_hash": "9b057e47ffd9f07a2728b237cc629e06d23738b100aa68985a095e8b0b066ab8"
+          }
+        ]
+      },
       {
         "activity_id": "IA-3cad341c55121f99",
         "funding_insight_id": "FI-db7372c6419b5ac0",
@@ -114,6 +154,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-27fa748719e248c8",
+        "source_url": "https://news.pedaily.cn/202410/541758.shtml",
+        "source_title": "因克斯ENCOS完成数千万元天使轮融资，专注高性能机器人一体化关节模组_投资界",
+        "source_content_hash": "94d63e8c9767f958",
+        "quote": "2024-10-22 10:47 · 投资界讯 投资界（ID：pedaily2012）消息， 2024年9月，南京因克斯智能科技有限公司（以下简称“因克斯”）宣布完成 数千万元天使轮融资 ，由 绿洲资本领投、水木创投与拉尔夫创投跟投 。",
+        "quote_hash": "9b057e47ffd9f07a2728b237cc629e06d23738b100aa68985a095e8b0b066ab8"
+      },
       {
         "source_id": "FISRC-b8b7d456eceee943",
         "source_url": "https://news.pedaily.cn/202606/564786.shtml",

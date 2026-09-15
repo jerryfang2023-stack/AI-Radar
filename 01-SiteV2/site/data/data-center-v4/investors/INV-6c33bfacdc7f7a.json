@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-15T07:33:29.824Z",
+    "generatedAt": "2026-09-15T07:57:02.631Z",
     "latestDataDate": "2026-09-15",
     "currentDate": "2026-09-15",
-    "eventCount": 3259,
+    "eventCount": 3271,
     "quarantinedEventCount": 34,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -56,23 +56,29 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-05-06",
-    "latest_disclosed_at": "2026-05-06",
+    "latest_disclosed_at": "2026-09-15",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "angel"
+      "angel",
+      "series_b"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-24dd6fa3e1cbba97",
+        "canonical_entity_id": "",
+        "name": "因克斯"
+      },
       {
         "entity_id": "EN-69c5804b91710f4d",
         "canonical_entity_id": "EN-69c5804b91710f4d",
@@ -80,6 +86,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-8b51c99fe0887348",
+        "funding_insight_id": "FI-cb4015ec6509d947",
+        "event_ids": [
+          "EV-6aaa17d9c372e513"
+        ],
+        "company_entity_id": "EN-24dd6fa3e1cbba97",
+        "company_canonical_entity_id": "",
+        "company_name": "因克斯",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "3亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 300000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3 亿元"
+        },
+        "announced_at": "2026-09-15",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-d0c3dca85d845330",
+            "source_url": "https://news.pedaily.cn/202609/569015.shtml",
+            "source_title": "「因克斯ENCOS」完成3亿元B轮融资，深耕具身智能关节模组",
+            "source_content_hash": "e86bd6fffaf894b4",
+            "quote": "本轮投资方包括中信金石、纳爱斯、苏创投、华睿投资、南京交控、华瑞创投。",
+            "quote_hash": "6c4c7e786af8f1c6a645b416c03de78fe56dc7c68a3fec952cdda6d739fdd0b4"
+          }
+        ]
+      },
       {
         "activity_id": "IA-f999bc6ca256cb94",
         "funding_insight_id": "FI-c8619868a1e3b914",
@@ -122,6 +168,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-d0c3dca85d845330",
+        "source_url": "https://news.pedaily.cn/202609/569015.shtml",
+        "source_title": "「因克斯ENCOS」完成3亿元B轮融资，深耕具身智能关节模组",
+        "source_content_hash": "e86bd6fffaf894b4",
+        "quote": "本轮投资方包括中信金石、纳爱斯、苏创投、华睿投资、南京交控、华瑞创投。",
+        "quote_hash": "6c4c7e786af8f1c6a645b416c03de78fe56dc7c68a3fec952cdda6d739fdd0b4"
+      },
       {
         "source_id": "FISRC-de96c365c469f319",
         "source_url": "https://news.pedaily.cn/202605/563449.shtml",
