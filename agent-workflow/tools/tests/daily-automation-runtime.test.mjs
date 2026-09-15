@@ -267,7 +267,7 @@ test("network preflight removes only unavailable loopback proxies", async () => 
     HTTP_PROXY: "http://127.0.0.1:8889",
     HTTPS_PROXY: "https://proxy.example.com:443",
     NO_PROXY: "internal.example.com",
-  }, { canConnect: async () => false });
+  }, { canConnect: async () => false, readGitProxyConfig: () => [] });
   assert.equal(fallback.mode, "direct_fallback");
   assert.equal(fallback.env.HTTP_PROXY, undefined);
   assert.equal(fallback.env.HTTPS_PROXY, "https://proxy.example.com:443");
@@ -276,9 +276,49 @@ test("network preflight removes only unavailable loopback proxies", async () => 
 
   const configured = await resolveAutomationNetworkEnv({
     ALL_PROXY: "socks5://localhost:8889",
-  }, { canConnect: async () => true });
+  }, { canConnect: async () => true, readGitProxyConfig: () => [] });
   assert.equal(configured.mode, "configured");
   assert.equal(configured.env.ALL_PROXY, "socks5://localhost:8889");
+});
+
+test("network preflight overrides dead Git proxies without changing user config or existing overrides", async () => {
+  const base = { GIT_CONFIG_COUNT: "1", GIT_CONFIG_KEY_0: "user.name", GIT_CONFIG_VALUE_0: "Fixture" };
+  const result = await resolveAutomationNetworkEnv(base, {
+    canConnect: async ({ port }) => port === 8890,
+    readGitProxyConfig: () => [
+      ["http.proxy", "http://127.0.0.1:8889"],
+      ["http.https://github.com.proxy", "http://[::1]:8889"],
+      ["http.https://example.com.proxy", "http://localhost:8890"],
+      ["https.proxy", "https://proxy.example.com"],
+    ],
+  });
+  assert.equal(result.mode, "direct_fallback");
+  assert.equal(result.env.GIT_CONFIG_COUNT, "3");
+  assert.equal(result.env.GIT_CONFIG_KEY_0, "user.name");
+  assert.equal(result.env.GIT_CONFIG_KEY_1, "http.proxy");
+  assert.equal(result.env.GIT_CONFIG_VALUE_1, "");
+  assert.equal(result.env.GIT_CONFIG_KEY_2, "http.https://github.com.proxy");
+  assert.equal(result.env.GIT_CONFIG_VALUE_2, "");
+  assert.equal(base.GIT_CONFIG_COUNT, "1");
+  assert.equal(base.GIT_CONFIG_KEY_1, undefined);
+});
+
+test("real Git reads process-only dead-proxy overrides", async () => {
+  const base = { ...process.env, GIT_CONFIG_COUNT: "2", GIT_CONFIG_KEY_0: "http.proxy",
+    GIT_CONFIG_VALUE_0: "http://127.0.0.1:1", GIT_CONFIG_KEY_1: "user.name", GIT_CONFIG_VALUE_1: "NetworkFixture" };
+  delete base.GIT_CONFIG_PARAMETERS;
+  const result = await resolveAutomationNetworkEnv(base, { canConnect: async () => false });
+  const proxy = spawnSync("git", ["config", "--get", "http.proxy"], { env: result.env, encoding: "utf8" });
+  assert.equal(proxy.status, 0);
+  assert.equal(proxy.stdout.trim(), "");
+  const user = spawnSync("git", ["config", "--get", "user.name"], { env: result.env, encoding: "utf8" });
+  assert.equal(user.stdout.trim(), "NetworkFixture");
+  if (process.platform === "win32") {
+    const ps = spawnSync("powershell.exe", ["-NoProfile", "-Command",
+      ". ./agent-workflow/tools/Set-WaveSightAutomationNetwork.ps1; $v = git config --get http.proxy; if ($LASTEXITCODE -ne 0 -or $v) { exit 9 }; if ((git config --get user.name) -ne 'NetworkFixture') { exit 10 }"],
+    { env: base, encoding: "utf8" });
+    assert.equal(ps.status, 0, ps.stderr + ps.stdout);
+  }
 });
 
 test("follow-builders generation and publication run from an isolated worktree", () => {

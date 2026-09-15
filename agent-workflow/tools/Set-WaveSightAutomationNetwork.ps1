@@ -36,6 +36,30 @@ foreach ($name in $proxyNames) {
   }
 }
 
+# Git's own proxy settings override the environment. Keep overrides confined to
+# this process and its children, including the sibling financing publisher.
+$gitProxyRows = @(& git config --get-regexp '^https?\..*proxy$' 2>$null)
+if ($LASTEXITCODE -notin @(0, 1)) { throw "Cannot inspect Git proxy configuration" }
+$gitProxySettings = @{}
+foreach ($row in $gitProxyRows) {
+  if ($row -match '^(\S+)\s+(.*)$') { $gitProxySettings[$Matches[1]] = $Matches[2] }
+}
+foreach ($key in $gitProxySettings.Keys) {
+  try { $uri = [Uri]$gitProxySettings[$key] } catch { continue }
+  if ($uri.Host.Trim('[', ']') -notin @("127.0.0.1", "localhost", "::1")) { continue }
+  $identity = "$($uri.Host):$($uri.Port)"
+  if (-not $proxyReachability.ContainsKey($identity)) {
+    $proxyReachability[$identity] = Test-WaveSightProxyEndpoint -Uri $uri
+  }
+  if ($proxyReachability[$identity]) { continue }
+  # Quoted parameters preserve an empty value on Windows PowerShell 5.1, where
+  # assigning an empty GIT_CONFIG_VALUE_n would remove that environment variable.
+  $quote = [string][char]39
+  $escapedKey = $key.Replace($quote, $quote + [char]92 + $quote + $quote)
+  $env:GIT_CONFIG_PARAMETERS = ($env:GIT_CONFIG_PARAMETERS + " " + $quote + $escapedKey + "=" + $quote).Trim()
+  $disabledProxyNames += "git:$key"
+}
+
 if ($disabledProxyNames.Count -gt 0) {
   Write-Host "WaveSight network preflight: local proxy unavailable; using direct fallback for this run."
 }
