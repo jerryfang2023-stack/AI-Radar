@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-15T07:11:14.845Z",
-    "latestDataDate": "2026-09-14",
-    "currentDate": "2026-09-14",
-    "eventCount": 3230,
+    "generatedAt": "2026-09-15T07:33:29.824Z",
+    "latestDataDate": "2026-09-15",
+    "currentDate": "2026-09-15",
+    "eventCount": 3259,
     "quarantinedEventCount": 34,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -48,6 +48,46 @@
     ]
   },
   "hardware": [
+    {
+      "id": "HW-833c523a4ed85286",
+      "eventId": "EV-5a90068e9e762f94",
+      "dataDate": "2026-09-15",
+      "date": "2026-09-14",
+      "title": "蓝虫具身发布模块化人形机器人 Mantis Standard\"小白\"，0.98 万元起",
+      "hardwareType": "robot",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "蓝虫具身",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "0.98 万元起",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-69abd664ab1011d3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/1/002/166.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-09-14",
+      "entityIds": [
+        "EN-69abd664ab1011d3",
+        "EN-234d215e1413c04a"
+      ]
+    },
     {
       "id": "HW-7bbd1b502f091b20",
       "eventId": "EV-acc612910c52d6e6",
@@ -3438,6 +3478,197 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-91a0ae33ca21aa09",
+      "snapshotKey": "91a0ae33ca21aa09",
+      "snapshotId": "HWS-b5ef0fb770341cac",
+      "eventId": "EV-5a90068e9e762f94",
+      "eventIds": [
+        "EV-5a90068e9e762f94"
+      ],
+      "dataDate": "2026-09-15",
+      "date": "2026-09-15",
+      "title": "Mantis Standard",
+      "subject": "蓝虫具身",
+      "productNames": [
+        "Mantis Standard"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "0.98",
+          "unit": "万",
+          "fact_ref": "HWF-5983a3568e105f2b"
+        }
+      },
+      "factCount": 3,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-15",
+          "hardware_fact_id": "HWF-cf7be1b2ce3c321d",
+          "fact_type": "product",
+          "observed_at": "2026-09-14T08:45:16.000Z",
+          "subject_entity_id": "EN-69abd664ab1011d3",
+          "subject_name": "蓝虫具身",
+          "product_entity_ids": [
+            "EN-234d215e1413c04a"
+          ],
+          "product_names": [
+            "Mantis Standard"
+          ],
+          "component_type": "robot",
+          "metric_value": "0.98",
+          "unit": "万",
+          "source_quote": "蓝虫具身发布模块化人形机器人 Mantis Standard“小白”，0.98 万元起 - IT之家",
+          "event_refs": [
+            "EV-5a90068e9e762f94"
+          ],
+          "claim_ref": "CL-a07aee4a294e9b54",
+          "source_refs": [
+            "SA-5c3066c58de838e6"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-15/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-09-15",
+          "hardware_fact_id": "HWF-596edf9631d34432",
+          "fact_type": "product",
+          "observed_at": "2026-09-14T08:45:16.000Z",
+          "subject_entity_id": "EN-69abd664ab1011d3",
+          "subject_name": "蓝虫具身",
+          "product_entity_ids": [
+            "EN-234d215e1413c04a"
+          ],
+          "product_names": [
+            "Mantis Standard"
+          ],
+          "component_type": "robot",
+          "metric_value": "0.98",
+          "unit": "万",
+          "source_quote": "蓝虫具身发布模块化人形机器人 Mantis Standard“小白”，0.98 万元起",
+          "event_refs": [
+            "EV-5a90068e9e762f94"
+          ],
+          "claim_ref": "CL-acd3eee01c688ca6",
+          "source_refs": [
+            "SA-5c3066c58de838e6"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-15/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-09-15",
+          "hardware_fact_id": "HWF-5983a3568e105f2b",
+          "fact_type": "product",
+          "observed_at": "2026-09-14T08:45:16.000Z",
+          "subject_entity_id": "EN-69abd664ab1011d3",
+          "subject_name": "蓝虫具身",
+          "product_entity_ids": [
+            "EN-234d215e1413c04a"
+          ],
+          "product_names": [
+            "Mantis Standard"
+          ],
+          "component_type": "robot",
+          "metric_value": "0.98",
+          "unit": "万",
+          "source_quote": "IT之家 9 月 14 日消息，西安交通大学科技成果转化企业蓝虫具身今日发布新一代模块化人形机器人 Mantis Standard “小白”， 售价 0.98 万起 。",
+          "event_refs": [
+            "EV-5a90068e9e762f94"
+          ],
+          "claim_ref": "CL-599095750e01f426",
+          "source_refs": [
+            "SA-5c3066c58de838e6"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-15/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-69abd664ab1011d3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/1/002/166.htm",
+      "entityIds": [
+        "EN-69abd664ab1011d3",
+        "EN-234d215e1413c04a"
+      ]
+    },
+    {
+      "id": "HWC-c8ca80b2b3e71738",
+      "snapshotKey": "c8ca80b2b3e71738",
+      "snapshotId": "HWS-7210c32f8ac1785e",
+      "eventId": "EV-863dd511b1a190cc",
+      "eventIds": [
+        "EV-863dd511b1a190cc"
+      ],
+      "dataDate": "2026-09-15",
+      "date": "2026-09-15",
+      "title": "President Trump",
+      "subject": "President Trump",
+      "productNames": [],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-2b5a04c84cb3bbdf"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-15",
+          "hardware_fact_id": "HWF-2b5a04c84cb3bbdf",
+          "fact_type": "product",
+          "observed_at": "2026-09-14T00:00:00.000Z",
+          "subject_entity_id": "EN-5f909e77e4673324",
+          "subject_name": "President Trump",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "During the call, the president launched into his take on recent fears about AI development, which he called a “hoax,” and told the crowd that “the robots will not be taking over.”",
+          "event_refs": [
+            "EV-863dd511b1a190cc"
+          ],
+          "claim_ref": "CL-f7487512dcd3d09e",
+          "source_refs": [
+            "SA-ad0b1fc8f4ec908e"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-15/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://theverge.com/tech/995079/president-donald-trump-calls-nvidia-ceo-jensen-huang-all-in-summit",
+      "entityIds": [
+        "EN-5f909e77e4673324"
+      ]
+    },
     {
       "id": "HWC-18e8bc577678cd79",
       "snapshotKey": "18e8bc577678cd79",
@@ -16688,10 +16919,10 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-09-14",
-      "funnel_id": "LF-2cb11529c072ae25",
+      "data_date": "2026-09-15",
+      "funnel_id": "LF-4e2af9c184b0f5f3",
       "lens": "hardware",
-      "date": "2026-09-14",
+      "date": "2026-09-15",
       "monitoring_paths": [
         "hardware_capacity_fab",
         "hardware_capex",
@@ -16699,29 +16930,24 @@
         "hardware_shipment_deployment",
         "hardware_supply_agreement"
       ],
-      "raw_documents": 36,
-      "original_sources": 34,
-      "valid_claims": 15,
-      "observations": 1,
-      "canonical_events": 7,
+      "raw_documents": 15,
+      "original_sources": 9,
+      "valid_claims": 3,
+      "observations": 4,
+      "canonical_events": 2,
       "blocker_counts": {
-        "source_outside_daily_window": 9,
-        "event_not_ai_relevant": 7,
-        "rumor_requires_primary_confirmation": 1,
-        "market_commentary_not_company_funding_source": 1,
-        "domestic_publication_date_unverified": 2,
-        "raw_source_quality_block": 4,
-        "no_source_bounded_event": 3,
-        "multi_event_roundup_not_single_event_source": 1,
-        "non_event_or_index_title": 1
+        "source_outside_daily_window": 4,
+        "non_event_or_index_title": 2,
+        "no_source_bounded_claim": 2,
+        "raw_source_quality_block": 5
       },
       "rates": {
-        "original_source_rate": 0.9444444444444444,
-        "valid_claim_rate": 0.4166666666666667,
-        "observation_rate": 0.06666666666666667,
-        "event_conversion_rate": 0.4666666666666667
+        "original_source_rate": 0.6,
+        "valid_claim_rate": 0.2,
+        "observation_rate": 1,
+        "event_conversion_rate": 0.6666666666666666
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-14/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-15/monitoring-funnel.json"
     }
   ]
 }

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-15T07:11:14.845Z",
-    "latestDataDate": "2026-09-14",
-    "currentDate": "2026-09-14",
-    "eventCount": 3230,
+    "generatedAt": "2026-09-15T07:33:29.824Z",
+    "latestDataDate": "2026-09-15",
+    "currentDate": "2026-09-15",
+    "eventCount": 3259,
     "quarantinedEventCount": 34,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -60,6 +60,7 @@
     "eventIds": [
       "EV-640c5ea9f4fa2780",
       "EV-bbab0dff2f55a4f6",
+      "EV-172660367138131c",
       "EV-eb282b4658bbdd7e",
       "EV-e7e2dfbc41a639d2",
       "EV-eb2b4ee2c8cb0daa",
@@ -79,7 +80,7 @@
       "EN-7d3194f79e645c42"
     ],
     "firstSeen": "2026-05-06",
-    "lastSeen": "2026-09-10",
+    "lastSeen": "2026-09-15",
     "relationIds": [
       "REL2-047306f993a722b4",
       "REL2-c0c6b4cd2b1abacd",
@@ -91,6 +92,7 @@
         "EV-bbab0dff2f55a4f6"
       ],
       "deployments": [
+        "EV-172660367138131c",
         "EV-eb282b4658bbdd7e",
         "EV-e7e2dfbc41a639d2",
         "EV-01df8e489a34893b",
@@ -109,6 +111,22 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-172660367138131c",
+        "dataDate": "2026-09-15",
+        "date": "2026-09-14",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Anthropic 与 Accenture 发布指南：如何把 AI 从试点推进到生产",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-4d748ebd71af03a7"
+        ]
+      },
       {
         "id": "EV-b67a95250d1aae8b",
         "dataDate": "2026-09-10",
@@ -498,6 +516,7 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-52fed56118708e35",
         "EV-c04784e49047a2ff",
         "EV-fddb8698d1778844",
         "EV-9ddf337c75157076",
@@ -657,6 +676,7 @@
         "EV-a4f052325d0ef230",
         "EV-cb3cb11ff13f6069",
         "EV-8115dd18f2812a29",
+        "EV-7c4ce5576d1d691b",
         "EV-09029303144c5e67",
         "EV-621b257277382475",
         "EV-51548a69e952646b",
@@ -694,18 +714,20 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
+        "TX-product_form-end_user_application",
+        "TX-target_user-business_user",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-use_case-research_discovery",
+        "TX-technology-agentic_execution",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-manufacturing",
-        "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-product_form-model",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-aerospace_defense",
-        "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-retail_ecommerce",
-        "TX-use_case-research_discovery",
         "TX-use_case-software_development",
         "TX-technology-code_generation",
         "TX-technology-embodied_ai",
@@ -716,8 +738,6 @@
         "TX-use_case-security_operations",
         "TX-ai_market_application-computing_infrastructure",
         "TX-product_form-ai_compute_system",
-        "TX-product_form-end_user_application",
-        "TX-technology-agentic_execution",
         "TX-technology-open_weights",
         "TX-technology-video_generation",
         "TX-technology-image_generation",
@@ -749,7 +769,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-09-14"
+      "lastSeen": "2026-09-15"
     },
     {
       "id": "EN-7d3194f79e645c42",
@@ -762,6 +782,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-56c0d1d5b0c07971",
         "EV-8665fc3a9e8b6b16",
         "EV-bce46f2e5cc68d5d",
         "EV-8ed7d4e02cc5c2ab",
@@ -812,6 +833,8 @@
         "EV-ef1de880e4ef9f75",
         "EV-acdeebead5324344",
         "EV-68d5a02e5213b43c",
+        "EV-96b70ec91c60db68",
+        "EV-da26b43d3924136e",
         "EV-2bb9ea947e9541c3",
         "EV-87f31c71f040785a",
         "EV-4965305d57edf6dd",
@@ -872,9 +895,11 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-b76e38f3fd483ef1",
         "EV-358643eefe0a5df5",
         "EV-ffa46f84468cffd9",
         "EV-606d3928fcd6a078",
+        "EV-45850ff01e177304",
         "EV-c04784e49047a2ff",
         "EV-157047393912dde3",
         "EV-327ecd23437d5fda",
@@ -1125,6 +1150,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-e50dd2bea0180d59",
         "EV-4a01ebf3eb0b612d",
         "EV-cd94cdad9b5c8089",
         "EV-2838858a4f49478f",
@@ -1232,15 +1258,19 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-chip_accelerator",
+        "TX-industry-financial_services",
+        "TX-product_form-end_user_application",
         "TX-target_user-business_user",
+        "TX-use_case-data_analysis",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-use_case-research_discovery",
+        "TX-technology-agentic_execution",
+        "TX-product_form-chip_accelerator",
         "TX-target_user-developer",
         "TX-product_form-model",
         "TX-target_user-consumer",
         "TX-use_case-content_creation",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-aerospace_defense",
-        "TX-industry-financial_services",
         "TX-industry-government_public_sector",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-legal_services",
@@ -1248,18 +1278,14 @@
         "TX-industry-professional_services",
         "TX-industry-retail_ecommerce",
         "TX-target_user-researcher",
-        "TX-use_case-data_analysis",
-        "TX-use_case-research_discovery",
         "TX-use_case-software_development",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-security_operations",
         "TX-ai_market_category-enterprise_applications",
-        "TX-product_form-end_user_application",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-product_form-model_api_service",
-        "TX-technology-agentic_execution",
         "TX-product_form-developer_tool",
         "TX-technology-open_weights",
         "TX-use_case-customer_support",
@@ -1300,7 +1326,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-14"
+      "lastSeen": "2026-09-15"
     }
   ],
   "relationships": [
@@ -1367,6 +1393,7 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
+        "EV-904068439ac5b9a5",
         "EV-6cfa72f00022d66a",
         "EV-b3d47ecc5b08def7",
         "EV-89ec502a1340079a",
@@ -1492,6 +1519,7 @@
         "EV-23ae55daa341be06",
         "EV-6bb83280a2116f24",
         "EV-d10684a6f16afe10",
+        "EV-ff598b54d248fce0",
         "EV-b67bbfcebd513ac6",
         "EV-8ae771f26c02f7c4",
         "EV-8ea4e403a1024ad2",
@@ -1588,6 +1616,8 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-ea6688f289974d51",
+        "EV-a65c5ce73c055710",
         "EV-358643eefe0a5df5",
         "EV-1938f1caa0e15759",
         "EV-b2573b146a89c48a",
@@ -1933,6 +1963,7 @@
         "EV-c17f5a364ed6a3ac"
       ],
       "entityIds": [
+        "EN-ed0f45e26b04d335",
         "EN-55c37c5c0b75471a",
         "EN-b0a61df9bfe99f72",
         "EN-071f3eca285403f1",
@@ -2046,6 +2077,7 @@
         "EN-50e2a4156631df49",
         "EN-f531c4e9f8555dcc",
         "EN-df30a48992da7fe8",
+        "EN-75267e233f93671b",
         "EN-c13e2f4a44bb01ed",
         "EN-03ecbdd9b68f40a0",
         "EN-1701cfb023a18b15",
@@ -2101,6 +2133,8 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-ce9408431e3d5934",
+        "EN-45d780f82c9247fc",
         "EN-32e83e92d45d71f6",
         "EN-bbdefa2950f49882",
         "EN-72ba63650f4fbeee",
@@ -2148,7 +2182,6 @@
         "EN-d0cdc9650aa64450",
         "EN-30397d0cfc1b0e29",
         "EN-07035a20899a7cd7",
-        "EN-45d780f82c9247fc",
         "EN-e9b7b590a01726a5",
         "EN-24f5eb8d2e667579",
         "EN-d2997fd4735a8795",
@@ -2275,6 +2308,7 @@
         "EN-e72901462ebe4458"
       ],
       "fdeIds": [
+        "FDE-c77877b7a2447017",
         "FDE-8dd7a8bc8f9d8666",
         "FDE-6b6d74f3b3bbf5a5",
         "FDE-98c63fdef8a7d160",
@@ -2338,6 +2372,49 @@
     }
   ],
   "fde": [
+    {
+      "id": "FDE-7065b4f0440e7dba",
+      "eventId": "EV-172660367138131c",
+      "dataDate": "2026-09-15",
+      "date": "2026-09-14",
+      "title": "Anthropic 与 Accenture 发布指南：如何把 AI 从试点推进到生产",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "推进到生产",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Deploying AI from pilot to production",
+        "Copy link https://claude.com/blog/deploying-ai-from-pilot-to-production",
+        "A successful AI pilot doesn’t guarantee successful deployment to the rest of an organization. According to Accenture’s Pulse of Change report (July 2026), only 23% of C-suite leaders report having achieved sustained, enterprise-wide impact with AI initiatives."
+      ],
+      "outcomes": [
+        "A successful AI pilot doesn’t guarantee successful deployment to the rest of an organization. According to Accenture’s Pulse of Change report (July 2026), only 23% of C-suite leaders report having achieved sustained, enterprise-wide impact with AI initiatives."
+      ],
+      "metrics": [
+        "23%"
+      ],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls"
+      ],
+      "tags": [],
+      "sourceUrl": "https://claude.com/blog/deploying-ai-from-pilot-to-production",
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-4d748ebd71af03a7"
+      ]
+    },
     {
       "id": "FDE-c7967ee65dfe629b",
       "eventId": "EV-b67a95250d1aae8b",
@@ -2703,6 +2780,57 @@
   ],
   "hardware": [],
   "fdeDossiers": [
+    {
+      "id": "FDED-a67029996ffc20dc",
+      "implementationKey": "a67029996ffc20dc",
+      "eventId": "EV-172660367138131c",
+      "eventIds": [
+        "EV-172660367138131c"
+      ],
+      "dataDate": "2026-09-15",
+      "date": "2026-09-13",
+      "title": "Accenture × 未披露：推进到生产",
+      "stage": "pilot",
+      "stageLabel": "试点",
+      "customer": "Accenture",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "推进到生产",
+      "workflow": "未披露",
+      "systems": [
+        "Claude"
+      ],
+      "outcomes": [
+        "A successful AI pilot doesn’t guarantee successful deployment to the rest of an organization. According to Accenture’s Pulse of Change report (July 2026), only 23% of C-suite leaders report having achieved sustained, enterprise-wide impact with AI initiatives."
+      ],
+      "observationCount": 1,
+      "completeness": 0.625,
+      "completenessPercent": 63,
+      "missingFields": [
+        "vendor",
+        "industry",
+        "workflow"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-5b87161405d02945",
+          "type": "implementation_update",
+          "stage": "pilot",
+          "date": "2026-09-13",
+          "dataDate": "2026-09-15",
+          "eventId": "EV-172660367138131c",
+          "eventTitle": "Anthropic 与 Accenture 发布指南：如何把 AI 从试点推进到生产",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://claude.com/blog/deploying-ai-from-pilot-to-production",
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-4d748ebd71af03a7"
+      ]
+    },
     {
       "id": "FDED-d4810aad53ad9974",
       "implementationKey": "d4810aad53ad9974",

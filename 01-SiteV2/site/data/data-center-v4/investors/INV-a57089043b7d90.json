@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-15T07:11:14.845Z",
-    "latestDataDate": "2026-09-14",
-    "currentDate": "2026-09-14",
-    "eventCount": 3230,
+    "generatedAt": "2026-09-15T07:33:29.824Z",
+    "latestDataDate": "2026-09-15",
+    "currentDate": "2026-09-15",
+    "eventCount": 3259,
     "quarantinedEventCount": 34,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -57,7 +57,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 5,
-    "historical_or_ambiguous_count": 8,
+    "historical_or_ambiguous_count": 9,
     "portfolio_company_count": 5,
     "market_regions": [
       "CN"
@@ -65,10 +65,10 @@
     "china_market_activity_count": 5,
     "china_market_company_count": 5,
     "first_disclosed_at": "2024-09-12",
-    "latest_disclosed_at": "2026-06-26",
+    "latest_disclosed_at": "2026-09-14",
     "role_counts": {
       "co_lead": 2,
-      "historical_or_ambiguous": 8,
+      "historical_or_ambiguous": 9,
       "participant": 3
     },
     "round_codes": [
@@ -106,6 +106,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-4361061f68667f33",
+        "funding_insight_id": "FI-bda539a7d011ea24",
+        "event_ids": [
+          "EV-04bcb24d608a931c"
+        ],
+        "company_entity_id": "EN-63d1760c240e7a7c",
+        "company_canonical_entity_id": "",
+        "company_name": "讯兔科技",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "3亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 300000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3 亿元"
+        },
+        "announced_at": "2026-09-14",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-2c25a3f85e50dca4",
+            "source_url": "http://m.ce.cn/bwzg/202603/t20260327_2861529.shtml",
+            "source_title": "讯兔科技完成近2亿元A轮融资 启明创投、红杉中国、高瓴创投领投_中国经济网",
+            "source_content_hash": "4caf487fdd937f88",
+            "quote": "本轮融资由启明创投、红杉中国、高瓴创投共同领投",
+            "quote_hash": "c47fdcb51a78c01b2c10c5717642ea359daa9ef076990c13267548fdf08215f5"
+          }
+        ]
+      },
       {
         "activity_id": "IA-71a34f289df74067",
         "funding_insight_id": "FI-2a47fffabd6bfe6b",
@@ -632,6 +672,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-2c25a3f85e50dca4",
+        "source_url": "http://m.ce.cn/bwzg/202603/t20260327_2861529.shtml",
+        "source_title": "讯兔科技完成近2亿元A轮融资 启明创投、红杉中国、高瓴创投领投_中国经济网",
+        "source_content_hash": "4caf487fdd937f88",
+        "quote": "本轮融资由启明创投、红杉中国、高瓴创投共同领投",
+        "quote_hash": "c47fdcb51a78c01b2c10c5717642ea359daa9ef076990c13267548fdf08215f5"
+      },
+      {
         "source_id": "FISRC-aad97c1f07ceb5c6",
         "source_url": "https://www.sohu.com/a/1041806074_120109837",
         "source_title": "成立3个月家庭具身智能企业欧拉万象获第三轮融资",
@@ -738,7 +786,7 @@
     ],
     "translations": {
       "zh-CN": {
-        "activities[11].role": {
+        "activities[12].role": {
           "text": "Pre-A轮领投",
           "source_hash": "c61fa44ebf092b66526cb4a8de607b70e57d3e5006aa179d3a2b39fd8925f719",
           "provider": "deepseek",
@@ -746,7 +794,7 @@
           "translated_at": "2026-08-14T07:17:18.959Z",
           "status": "translated"
         },
-        "activities[12].role": {
+        "activities[13].role": {
           "text": "Pre-B轮领投",
           "source_hash": "aebf442c5143e180f2950bcaa72a692c16eb3617aebf8ba3bb3eb5171f29e2d6",
           "provider": "deepseek",

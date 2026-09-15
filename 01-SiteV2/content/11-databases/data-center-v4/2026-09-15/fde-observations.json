@@ -1,0 +1,80 @@
+[
+  {
+    "observation_id": "FDEO-5b87161405d02945",
+    "implementation_key": "a67029996ffc20dc",
+    "observation_type": "implementation_update",
+    "observed_at": "2026-09-13T16:00:00.000Z",
+    "customer": "Accenture",
+    "vendor": "",
+    "industry": "",
+    "use_case": "推进到生产",
+    "workflow": "",
+    "systems_integrated": [
+      "Claude"
+    ],
+    "lifecycle_stage": "pilot",
+    "reported_outcomes": [
+      "A successful AI pilot doesn’t guarantee successful deployment to the rest of an organization. According to Accenture’s Pulse of Change report (July 2026), only 23% of C-suite leaders report having achieved sustained, enterprise-wide impact with AI initiatives."
+    ],
+    "event_refs": [
+      "EV-172660367138131c"
+    ],
+    "claim_refs": [
+      "CL-101e3ed565d716c3",
+      "CL-f4cb5ce24fd30563",
+      "CL-cb2860af8fb041ae",
+      "CL-e7b41354adb2422c"
+    ],
+    "source_refs": [
+      "SA-3cf34487789f9f03"
+    ],
+    "completeness": {
+      "resolved_fields": 5,
+      "total_fields": 8,
+      "ratio": 0.625,
+      "missing_fields": [
+        "vendor",
+        "industry",
+        "workflow"
+      ]
+    }
+  },
+  {
+    "observation_id": "FDEO-0a5074e08e6a80a1",
+    "implementation_key": "b3a9ad08230849d6",
+    "observation_type": "implementation_update",
+    "observed_at": "2026-09-14T00:00:00.000Z",
+    "customer": "",
+    "vendor": "Crunch-IS",
+    "industry": "",
+    "use_case": "无法走向生产部署",
+    "workflow": "",
+    "systems_integrated": [],
+    "lifecycle_stage": "pilot",
+    "reported_outcomes": [],
+    "event_refs": [
+      "EV-ff598b54d248fce0"
+    ],
+    "claim_refs": [
+      "CL-0309a8036619fa06",
+      "CL-c65911f3c2dd50f0",
+      "CL-5a17974d5d95822b",
+      "CL-aa9677cd54b3a5fe"
+    ],
+    "source_refs": [
+      "SA-6810185ce4d83fce"
+    ],
+    "completeness": {
+      "resolved_fields": 3,
+      "total_fields": 8,
+      "ratio": 0.375,
+      "missing_fields": [
+        "customer",
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ]
+    }
+  }
+]

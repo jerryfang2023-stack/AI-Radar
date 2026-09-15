@@ -1,0 +1,313 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-15T07:33:29.824Z",
+    "latestDataDate": "2026-09-15",
+    "currentDate": "2026-09-15",
+    "eventCount": 3259,
+    "quarantinedEventCount": 34,
+    "quarantinedEventIds": [
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "entity": {
+    "id": "EN-234d215e1413c04a",
+    "name": "Mantis Standard",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-5a90068e9e762f94"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-14",
+    "lastSeen": "2026-09-15",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [
+        "EV-5a90068e9e762f94"
+      ],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-5a90068e9e762f94",
+        "dataDate": "2026-09-15",
+        "date": "2026-09-14",
+        "eventType": "hardware_product",
+        "eventTypeLabel": "硬件产品",
+        "eventGroup": "AI 硬件",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "蓝虫具身发布模块化人形机器人 Mantis Standard\"小白\"，0.98 万元起",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "robotic_system",
+            "name": "机器人系统",
+            "entityIds": [
+              "EN-69abd664ab1011d3"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-69abd664ab1011d3"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "embodied_ai",
+            "name": "具身智能",
+            "entityIds": [
+              "EN-69abd664ab1011d3"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-69abd664ab1011d3",
+          "EN-234d215e1413c04a"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [
+    {
+      "id": "HW-833c523a4ed85286",
+      "eventId": "EV-5a90068e9e762f94",
+      "dataDate": "2026-09-15",
+      "date": "2026-09-14",
+      "title": "蓝虫具身发布模块化人形机器人 Mantis Standard\"小白\"，0.98 万元起",
+      "hardwareType": "robot",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "蓝虫具身",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "0.98 万元起",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-69abd664ab1011d3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/1/002/166.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-09-14",
+      "entityIds": [
+        "EN-69abd664ab1011d3",
+        "EN-234d215e1413c04a"
+      ]
+    }
+  ],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-91a0ae33ca21aa09",
+      "snapshotKey": "91a0ae33ca21aa09",
+      "snapshotId": "HWS-b5ef0fb770341cac",
+      "eventId": "EV-5a90068e9e762f94",
+      "eventIds": [
+        "EV-5a90068e9e762f94"
+      ],
+      "dataDate": "2026-09-15",
+      "date": "2026-09-15",
+      "title": "Mantis Standard",
+      "subject": "蓝虫具身",
+      "productNames": [
+        "Mantis Standard"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "0.98",
+          "unit": "万",
+          "fact_ref": "HWF-5983a3568e105f2b"
+        }
+      },
+      "factCount": 3,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-15",
+          "hardware_fact_id": "HWF-cf7be1b2ce3c321d",
+          "fact_type": "product",
+          "observed_at": "2026-09-14T08:45:16.000Z",
+          "subject_entity_id": "EN-69abd664ab1011d3",
+          "subject_name": "蓝虫具身",
+          "product_entity_ids": [
+            "EN-234d215e1413c04a"
+          ],
+          "product_names": [
+            "Mantis Standard"
+          ],
+          "component_type": "robot",
+          "metric_value": "0.98",
+          "unit": "万",
+          "source_quote": "蓝虫具身发布模块化人形机器人 Mantis Standard“小白”，0.98 万元起 - IT之家",
+          "event_refs": [
+            "EV-5a90068e9e762f94"
+          ],
+          "claim_ref": "CL-a07aee4a294e9b54",
+          "source_refs": [
+            "SA-5c3066c58de838e6"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-15/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-09-15",
+          "hardware_fact_id": "HWF-596edf9631d34432",
+          "fact_type": "product",
+          "observed_at": "2026-09-14T08:45:16.000Z",
+          "subject_entity_id": "EN-69abd664ab1011d3",
+          "subject_name": "蓝虫具身",
+          "product_entity_ids": [
+            "EN-234d215e1413c04a"
+          ],
+          "product_names": [
+            "Mantis Standard"
+          ],
+          "component_type": "robot",
+          "metric_value": "0.98",
+          "unit": "万",
+          "source_quote": "蓝虫具身发布模块化人形机器人 Mantis Standard“小白”，0.98 万元起",
+          "event_refs": [
+            "EV-5a90068e9e762f94"
+          ],
+          "claim_ref": "CL-acd3eee01c688ca6",
+          "source_refs": [
+            "SA-5c3066c58de838e6"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-15/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-09-15",
+          "hardware_fact_id": "HWF-5983a3568e105f2b",
+          "fact_type": "product",
+          "observed_at": "2026-09-14T08:45:16.000Z",
+          "subject_entity_id": "EN-69abd664ab1011d3",
+          "subject_name": "蓝虫具身",
+          "product_entity_ids": [
+            "EN-234d215e1413c04a"
+          ],
+          "product_names": [
+            "Mantis Standard"
+          ],
+          "component_type": "robot",
+          "metric_value": "0.98",
+          "unit": "万",
+          "source_quote": "IT之家 9 月 14 日消息，西安交通大学科技成果转化企业蓝虫具身今日发布新一代模块化人形机器人 Mantis Standard “小白”， 售价 0.98 万起 。",
+          "event_refs": [
+            "EV-5a90068e9e762f94"
+          ],
+          "claim_ref": "CL-599095750e01f426",
+          "source_refs": [
+            "SA-5c3066c58de838e6"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-15/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-69abd664ab1011d3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/1/002/166.htm",
+      "entityIds": [
+        "EN-69abd664ab1011d3",
+        "EN-234d215e1413c04a"
+      ]
+    }
+  ]
+}
