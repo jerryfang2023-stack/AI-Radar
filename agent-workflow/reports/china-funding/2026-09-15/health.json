@@ -1,29 +1,30 @@
 {
   "schema_version": "CHINA-FUNDING-HEALTH-V1.0",
   "date": "2026-09-15",
-  "generated_at": "2026-09-15T07:23:33.189Z",
-  "status": "failed",
+  "generated_at": "2026-09-15T07:57:24.319Z",
+  "status": "partial",
   "last_collection_at": "2026-09-15T06:50:02.788Z",
-  "failed_stage": "projections",
+  "failed_stage": null,
   "stages": [
     {
       "id": "capture",
       "status": "passed",
-      "started_at": "2026-09-15T07:17:21.005Z",
-      "finished_at": "2026-09-15T07:17:40.978Z"
+      "started_at": "2026-09-15T07:49:37.882Z",
+      "reused": true,
+      "reused_accepted_capture": true,
+      "finished_at": "2026-09-15T07:49:43.024Z"
     },
     {
       "id": "facts",
       "status": "passed",
-      "started_at": "2026-09-15T07:17:40.978Z",
-      "finished_at": "2026-09-15T07:19:24.218Z"
+      "started_at": "2026-09-15T07:49:43.024Z",
+      "finished_at": "2026-09-15T07:51:51.242Z"
     },
     {
       "id": "projections",
-      "status": "failed",
-      "started_at": "2026-09-15T07:19:24.218Z",
-      "error": "Command failed: agent-workflow/tools/assert-funding-insights-v1.mjs (1)",
-      "finished_at": "2026-09-15T07:23:33.091Z"
+      "status": "passed",
+      "started_at": "2026-09-15T07:51:51.242Z",
+      "finished_at": "2026-09-15T07:57:24.199Z"
     }
   ],
   "sources": [
@@ -76,6 +77,12 @@
         "EV-3fdc9ad98818c36b"
       ],
       "card_ids": [
+        "FI-cb4015ec6509d947",
+        "FI-f9e6d5e2e86d80a8",
+        "FI-54e748b1e6abf463",
+        "FI-9c0da6bf63d90fd1",
+        "FI-0393ae3bd2089ea6",
+        "FI-d7991ae6537597c7",
         "FI-6cb88e1aa2901cbb"
       ],
       "latest_disclosure": "2026-09-15T02:19:00.000Z"
@@ -114,7 +121,11 @@
         "EV-a38a33003b0d6d08"
       ],
       "china_funding_event_ids": [],
-      "card_ids": [],
+      "card_ids": [
+        "FI-9d60cecb77545277",
+        "FI-f9e6d5e2e86d80a8",
+        "FI-fdc3c8cfd69218fd"
+      ],
       "latest_disclosure": "2026-09-15T06:29:00.000Z"
     },
     {
@@ -274,7 +285,7 @@
     "china_funding_events": 2,
     "linked_organizations": 16,
     "linked_products": 0,
-    "published_card_matches": 2
+    "published_card_matches": 10
   },
   "publication": {
     "status": "awaiting_publication_receipt"

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-15T07:33:29.824Z",
+    "generatedAt": "2026-09-15T07:57:02.631Z",
     "latestDataDate": "2026-09-15",
     "currentDate": "2026-09-15",
-    "eventCount": 3259,
+    "eventCount": 3271,
     "quarantinedEventCount": 34,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -56,22 +56,111 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 1,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 0,
-    "china_market_company_count": 0,
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
     "first_disclosed_at": "2026-08-10",
-    "latest_disclosed_at": "2026-08-10",
+    "latest_disclosed_at": "2026-09-15",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 2,
+      "other_current_round": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "infrastructure"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-d5857f6222f45275",
+        "canonical_entity_id": "",
+        "name": "亿格云"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-c1b97d6491c8e50c",
+        "funding_insight_id": "FI-54e748b1e6abf463",
+        "event_ids": [
+          "EV-d98c10d4cba51686"
+        ],
+        "company_entity_id": "EN-2777b5a794959a7d",
+        "company_canonical_entity_id": "",
+        "company_name": "上海宇道生物技术有限公司",
+        "round": "C1轮",
+        "round_code": "series_c1",
+        "round_original": "C1轮",
+        "amount_original": "数千万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "数千万美元"
+        },
+        "announced_at": "2026-09-15",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A+轮老股东持续加码",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-163d5b5325339f27",
+            "source_url": "https://www.vbdata.cn/54325",
+            "source_title": "【首发】宇道生物宣布完成4000万美金A+轮融资，全面推进基于蛋白构象调节的药物研发平台及创新管线-动脉网",
+            "source_content_hash": "cd3cadd497747101",
+            "quote": "老股东昆仑资本，源码资本，北极光创投，经纬创投持续加码",
+            "quote_hash": "580844b4428583dd997e9b444d0af1853fb745851c2aaafb7e737d58c10c62d0"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-16f91334b92733f1",
+        "funding_insight_id": "FI-0393ae3bd2089ea6",
+        "event_ids": [
+          "EV-3fdc9ad98818c36b"
+        ],
+        "company_entity_id": "EN-d5857f6222f45275",
+        "company_canonical_entity_id": "",
+        "company_name": "亿格云",
+        "round": "基础设施融资",
+        "round_code": "infrastructure",
+        "round_original": "基础设施融资",
+        "amount_original": "近亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1 亿元"
+        },
+        "announced_at": "2026-09-14",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合投资",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-dace02c08d5e872a",
+            "source_url": "https://news.pedaily.cn/202609/568948.shtml",
+            "source_title": "亿格云完成近亿元B+轮融资，加速构建企业AI治理基础设施",
+            "source_content_hash": "aedae76347873519",
+            "quote": "本轮由MTR Lab与北极光创投联合投资",
+            "quote_hash": "897e8816cf42b51e40c6025ddc2fadca6a0def4816301850dd27ca223ad20a3a"
+          }
+        ]
+      },
       {
         "activity_id": "IA-9bf4f039705d2f21",
         "funding_insight_id": "FI-5bed699d9869e066",
@@ -114,6 +203,22 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-163d5b5325339f27",
+        "source_url": "https://www.vbdata.cn/54325",
+        "source_title": "【首发】宇道生物宣布完成4000万美金A+轮融资，全面推进基于蛋白构象调节的药物研发平台及创新管线-动脉网",
+        "source_content_hash": "cd3cadd497747101",
+        "quote": "老股东昆仑资本，源码资本，北极光创投，经纬创投持续加码",
+        "quote_hash": "580844b4428583dd997e9b444d0af1853fb745851c2aaafb7e737d58c10c62d0"
+      },
+      {
+        "source_id": "FISRC-dace02c08d5e872a",
+        "source_url": "https://news.pedaily.cn/202609/568948.shtml",
+        "source_title": "亿格云完成近亿元B+轮融资，加速构建企业AI治理基础设施",
+        "source_content_hash": "aedae76347873519",
+        "quote": "本轮由MTR Lab与北极光创投联合投资",
+        "quote_hash": "897e8816cf42b51e40c6025ddc2fadca6a0def4816301850dd27ca223ad20a3a"
+      },
       {
         "source_id": "FISRC-4dbba5d9789ac616",
         "source_url": "https://news.pedaily.cn/202608/567481.shtml",

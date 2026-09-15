@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-15T07:33:29.824Z",
+    "generatedAt": "2026-09-15T07:57:02.631Z",
     "latestDataDate": "2026-09-15",
     "currentDate": "2026-09-15",
-    "eventCount": 3259,
+    "eventCount": 3271,
     "quarantinedEventCount": 34,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -57,7 +57,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 3,
-    "historical_or_ambiguous_count": 5,
+    "historical_or_ambiguous_count": 6,
     "portfolio_company_count": 3,
     "market_regions": [
       "CN"
@@ -65,9 +65,9 @@
     "china_market_activity_count": 3,
     "china_market_company_count": 3,
     "first_disclosed_at": "2026-02-11",
-    "latest_disclosed_at": "2026-09-04",
+    "latest_disclosed_at": "2026-09-15",
     "role_counts": {
-      "historical_or_ambiguous": 5,
+      "historical_or_ambiguous": 6,
       "participant": 3
     },
     "round_codes": [
@@ -93,6 +93,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-85e44204d4ad4e66",
+        "funding_insight_id": "FI-54e748b1e6abf463",
+        "event_ids": [
+          "EV-d98c10d4cba51686"
+        ],
+        "company_entity_id": "EN-2777b5a794959a7d",
+        "company_canonical_entity_id": "",
+        "company_name": "上海宇道生物技术有限公司",
+        "round": "C1轮",
+        "round_code": "series_c1",
+        "round_original": "C1轮",
+        "amount_original": "数千万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "数千万美元"
+        },
+        "announced_at": "2026-09-15",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A轮共同领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ad78c308ef4022ae",
+            "source_url": "https://news.pedaily.cn/202106/472864.shtml",
+            "source_title": "宇道生物完成2000万美元A轮融资，经纬中国领投_投资界",
+            "source_content_hash": "6252d8b33f3b6c2a",
+            "quote": "2020年12月，宇道生物完成近亿元Pre-A轮融资，由北极光创投、BV百度风投共同领投",
+            "quote_hash": "6ffd60b00f1b4f5cb0fe0c1818b8506e7336ce9f664e6e76e73187a5c3938b84"
+          }
+        ]
+      },
       {
         "activity_id": "IA-e53f223eb614d00a",
         "funding_insight_id": "FI-3e97f5e30e99ff0b",
@@ -417,6 +457,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-ad78c308ef4022ae",
+        "source_url": "https://news.pedaily.cn/202106/472864.shtml",
+        "source_title": "宇道生物完成2000万美元A轮融资，经纬中国领投_投资界",
+        "source_content_hash": "6252d8b33f3b6c2a",
+        "quote": "2020年12月，宇道生物完成近亿元Pre-A轮融资，由北极光创投、BV百度风投共同领投",
+        "quote_hash": "6ffd60b00f1b4f5cb0fe0c1818b8506e7336ce9f664e6e76e73187a5c3938b84"
+      },
       {
         "source_id": "FISRC-d3ed2da5812586ea",
         "source_url": "https://caifuhao.eastmoney.com/news/20260906090920742991760",

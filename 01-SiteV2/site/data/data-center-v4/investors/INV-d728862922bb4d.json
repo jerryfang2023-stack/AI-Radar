@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-15T07:33:29.824Z",
+    "generatedAt": "2026-09-15T07:57:02.631Z",
     "latestDataDate": "2026-09-15",
     "currentDate": "2026-09-15",
-    "eventCount": 3259,
+    "eventCount": 3271,
     "quarantinedEventCount": 34,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -56,25 +56,26 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 8,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 4,
-    "china_market_company_count": 2,
+    "china_market_activity_count": 5,
+    "china_market_company_count": 3,
     "first_disclosed_at": "2026-02-23",
-    "latest_disclosed_at": "2026-09-11",
+    "latest_disclosed_at": "2026-09-15",
     "role_counts": {
       "historical_or_ambiguous": 8,
-      "participant": 4
+      "participant": 5
     },
     "round_codes": [
       "multi_round",
       "other",
       "series_a_plus",
-      "series_b2"
+      "series_b2",
+      "series_c1"
     ],
     "portfolio_companies": [
       {
@@ -86,9 +87,54 @@
         "entity_id": "EN-1032f7a4df33f629",
         "canonical_entity_id": "EN-1032f7a4df33f629",
         "name": "千寻智能"
+      },
+      {
+        "entity_id": "EN-2777b5a794959a7d",
+        "canonical_entity_id": "",
+        "name": "上海宇道生物技术有限公司"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-d9f0e8ed96ed3f1e",
+        "funding_insight_id": "FI-54e748b1e6abf463",
+        "event_ids": [
+          "EV-d98c10d4cba51686"
+        ],
+        "company_entity_id": "EN-2777b5a794959a7d",
+        "company_canonical_entity_id": "",
+        "company_name": "上海宇道生物技术有限公司",
+        "round": "C1轮",
+        "round_code": "series_c1",
+        "round_original": "C1轮",
+        "amount_original": "数千万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "数千万美元"
+        },
+        "announced_at": "2026-09-15",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-e5567e9a53d1316c",
+            "source_url": "https://news.pedaily.cn/202609/569003.shtml",
+            "source_title": "宇道生物完成数千万美元C1轮融资,专攻难成药靶标的AI原生Biotech",
+            "source_content_hash": "b9905ba18c6eb0ad",
+            "quote": "达 晨财智 及 中生 锡创鼎祺 基金 联合参投",
+            "quote_hash": "abbb9361e2f91297caf9e4ea15542106144556c8a9afa3b5873d1f6bdcf610d1"
+          }
+        ]
+      },
       {
         "activity_id": "IA-46fab6ee59506815",
         "funding_insight_id": "FI-2966dffba3eb470e",
@@ -573,6 +619,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-e5567e9a53d1316c",
+        "source_url": "https://news.pedaily.cn/202609/569003.shtml",
+        "source_title": "宇道生物完成数千万美元C1轮融资,专攻难成药靶标的AI原生Biotech",
+        "source_content_hash": "b9905ba18c6eb0ad",
+        "quote": "达 晨财智 及 中生 锡创鼎祺 基金 联合参投",
+        "quote_hash": "abbb9361e2f91297caf9e4ea15542106144556c8a9afa3b5873d1f6bdcf610d1"
+      },
       {
         "source_id": "FISRC-af6450eccd94a9e8",
         "source_url": "https://www.baijing.cn/article/55915",

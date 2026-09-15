@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-15T07:33:29.824Z",
+    "generatedAt": "2026-09-15T07:57:02.631Z",
     "latestDataDate": "2026-09-15",
     "currentDate": "2026-09-15",
-    "eventCount": 3259,
+    "eventCount": 3271,
     "quarantinedEventCount": 34,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -57,21 +57,62 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 3,
     "portfolio_company_count": 0,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-09-14",
-    "latest_disclosed_at": "2026-09-14",
+    "latest_disclosed_at": "2026-09-15",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 3
     },
     "round_codes": [],
     "portfolio_companies": [],
     "activities": [
+      {
+        "activity_id": "IA-b00815b47de4683e",
+        "funding_insight_id": "FI-9d60cecb77545277",
+        "event_ids": [
+          "EV-a38a33003b0d6d08"
+        ],
+        "company_entity_id": "EN-1540430ef01214f1",
+        "company_canonical_entity_id": "",
+        "company_name": "讯兔科技（Alpha派）",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "3亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 300000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3 亿元"
+        },
+        "announced_at": "2026-09-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A轮跟投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-5a92715d1392fa36",
+            "source_url": "https://finance.sina.com.cn/wm/2026-03-26/doc-inhsiqkn0105281.shtml",
+            "source_title": "讯兔科技（Alpha派）完成近2亿元A轮融资：金融行业是AI垂直落地的最优赛道|AI_新浪财经_新浪网",
+            "source_content_hash": "788675d51c86fa8d",
+            "quote": "广发乾和、信宸资本（中信资本旗下私募股权投资业务）、清科控股跟投并赋能产业协同",
+            "quote_hash": "ad797fb27f2844c7ce3129a4889d312f976c874c9e9bafcf38fe6f63f94574e5"
+          }
+        ]
+      },
       {
         "activity_id": "IA-36ac15cb6afef1ad",
         "funding_insight_id": "FI-bda539a7d011ea24",
@@ -111,9 +152,57 @@
             "quote_hash": "ad797fb27f2844c7ce3129a4889d312f976c874c9e9bafcf38fe6f63f94574e5"
           }
         ]
+      },
+      {
+        "activity_id": "IA-0b64dc970e01771f",
+        "funding_insight_id": "FI-d7991ae6537597c7",
+        "event_ids": [
+          "EV-63a4b6ce48e14829"
+        ],
+        "company_entity_id": "EN-c087cefd343cb488",
+        "company_canonical_entity_id": "",
+        "company_name": "讯兔科技（上海）有限公司",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "3亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 300000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3 亿元"
+        },
+        "announced_at": "2026-09-14",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A轮跟投方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ccfbdf5e58155781",
+            "source_url": "https://news.pedaily.cn/202609/568978.shtml",
+            "source_title": "首发|讯兔科技完成超3亿元B轮融资，一年连融三轮 - 投资界",
+            "source_content_hash": "f949b5adc6d7fa3c",
+            "quote": "至2026年3月，正式完成近2亿元A轮融资，启明创投、红杉中国、高瓴创投共同领投，广发乾和、信宸资本、清科控股跟投并赋能产业协同",
+            "quote_hash": "1441d7e3a765892d8bcd9f5de6fe6e8e0bd813b87b0ee715239cfe9975999095"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-5a92715d1392fa36",
+        "source_url": "https://finance.sina.com.cn/wm/2026-03-26/doc-inhsiqkn0105281.shtml",
+        "source_title": "讯兔科技（Alpha派）完成近2亿元A轮融资：金融行业是AI垂直落地的最优赛道|AI_新浪财经_新浪网",
+        "source_content_hash": "788675d51c86fa8d",
+        "quote": "广发乾和、信宸资本（中信资本旗下私募股权投资业务）、清科控股跟投并赋能产业协同",
+        "quote_hash": "ad797fb27f2844c7ce3129a4889d312f976c874c9e9bafcf38fe6f63f94574e5"
+      },
       {
         "source_id": "FISRC-2c25a3f85e50dca4",
         "source_url": "http://m.ce.cn/bwzg/202603/t20260327_2861529.shtml",
@@ -121,6 +210,14 @@
         "source_content_hash": "4caf487fdd937f88",
         "quote": "广发乾和、信宸资本（中信资本旗下私募股权投资业务）、清科控股跟投并赋能产业协同",
         "quote_hash": "ad797fb27f2844c7ce3129a4889d312f976c874c9e9bafcf38fe6f63f94574e5"
+      },
+      {
+        "source_id": "FISRC-ccfbdf5e58155781",
+        "source_url": "https://news.pedaily.cn/202609/568978.shtml",
+        "source_title": "首发|讯兔科技完成超3亿元B轮融资，一年连融三轮 - 投资界",
+        "source_content_hash": "f949b5adc6d7fa3c",
+        "quote": "至2026年3月，正式完成近2亿元A轮融资，启明创投、红杉中国、高瓴创投共同领投，广发乾和、信宸资本、清科控股跟投并赋能产业协同",
+        "quote_hash": "1441d7e3a765892d8bcd9f5de6fe6e8e0bd813b87b0ee715239cfe9975999095"
       }
     ]
   }

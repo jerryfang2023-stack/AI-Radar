@@ -5,16 +5,16 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-09-15T07:33:12.864Z",
+    "generated_at": "2026-09-15T07:56:43.988Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 451,
-    "input_hash": "06cedeaa8715b1ea",
+    "decision_count": 460,
+    "input_hash": "aded2439cea551a4",
     "override_count": 18,
-    "needs_review_count": 50,
-    "low_confidence_count": 65
+    "needs_review_count": 51,
+    "low_confidence_count": 67
   },
   "decisions": [
     {
@@ -9033,6 +9033,192 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "证据显示讯兔科技专注于为公募、私募、券商研究所、保险及一级市场投资机构提供金融数据服务与智能化投研工具，产品围绕金融行业专业数据与投研工作流构建，符合行业应用分类。"
+    },
+    {
+      "event_id": "EV-d98c10d4cba51686",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "healthcare_life_sciences",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "research_discovery",
+        "data_analysis"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "researcher"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "公司核心产品是AI+物理的变构药物研发平台，围绕制药行业的专业数据、调控机制和难成药靶标工作流构建，属于行业应用而非通用基础设施或物理AI。"
+    },
+    {
+      "event_id": "EV-6aaa17d9c372e513",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "公司专注于机器人动力系统、关节模组、灵巧手等核心零部件，直接服务于机器人的物理感知、决策与执行，属于物理AI范畴。"
+    },
+    {
+      "event_id": "EV-0ac10579ff64fe74",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "logistics_supply_chain"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "公司推出端到端大模型驱动的分拣机器人，在物流场景中自主感知、决策并执行分拣动作，属于物理AI。"
+    },
+    {
+      "event_id": "EV-7326768782ff1e4e",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "logistics_supply_chain"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "公司产品为通用拣选机器人，具备感知、决策与物理执行能力，直接作用于物理世界，符合Physical AI定义；客户为物流企业，故行业为物流供应链。"
+    },
+    {
+      "event_id": "EV-3fdc9ad98818c36b",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "observability_evaluation",
+      "market_application_id": "ai_observability_governance",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "security_operations",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "financial_services",
+        "manufacturing",
+        "retail_ecommerce",
+        "media_entertainment",
+        "professional_services"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "developer"
+      ],
+      "confidence": 0.82,
+      "needs_review": false,
+      "rationale": "亿格云提供零信任SASE、XDR、XDLP等企业安全与治理基础设施，明确面向AI时代的人与Agent统一治理，属于基础设施计算中的模型/智能体安全与AI可观测治理，而非单一行业应用或物理AI。"
+    },
+    {
+      "event_id": "EV-4238c51fcdad7bd4",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "security_operations",
+        "data_analysis"
+      ],
+      "industry_ids": [
+        "government_public_sector",
+        "professional_services"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "developer"
+      ],
+      "confidence": 0.75,
+      "needs_review": false,
+      "rationale": "深度内核提供主权AI基础设施，重点在可信计算边界、机密计算、远程证明等，属于基础设施计算中的硬件计算/计算基础设施。产品形态为AI基础设施软件，主要面向企业和开发者，用于安全运营和数据分析场景。"
+    },
+    {
+      "event_id": "EV-b137470f59491f6a",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "observability_evaluation",
+      "market_application_id": "model_agent_security",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "security_operations"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.72,
+      "needs_review": true,
+      "rationale": "证据显示公司提供可信AI基础设施，包括机密计算、远程证明、执行管控与审计留痕，属于为AI训练和推理构建可信域的安全基础设施，归入基础设施计算下的可观测/安全子类。但证据未明确其产品是面向模型/智能体安全还是更广义的AI安全治理，故标记需复核。"
+    },
+    {
+      "event_id": "EV-a38a33003b0d6d08",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "financial_services",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "research_discovery",
+        "data_analysis",
+        "knowledge_search",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "financial_services"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "产品围绕金融投研工作流，整合金融数据、研究工具、办公套件和知识库，属于金融行业专用应用，而非跨行业企业应用或基础设施。"
+    },
+    {
+      "event_id": "EV-63a4b6ce48e14829",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "financial_services",
+      "market_application_id": "",
+      "product_form_id": "end_user_application",
+      "use_case_ids": [
+        "research_discovery",
+        "data_analysis",
+        "knowledge_search",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "financial_services"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.88,
+      "needs_review": false,
+      "rationale": "核心产品Alpha派是AI投研助理，从会议纪要切入投研工作流，属于金融行业专用应用；PaiWork为投研工作台，整体围绕金融投研场景。"
     }
   ]
 }

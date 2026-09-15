@@ -2,12 +2,12 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-ENTITY-REVIEW-V1.0",
     "funding_insight_version": "FUNDING-INSIGHT-V1.3",
-    "candidate_count": 1210,
-    "product_candidates": 706,
-    "person_candidates": 504,
-    "china_market_candidates": 366,
-    "china_market_product_candidates": 337,
-    "china_market_person_candidates": 29,
+    "candidate_count": 1229,
+    "product_candidates": 719,
+    "person_candidates": 510,
+    "china_market_candidates": 381,
+    "china_market_product_candidates": 348,
+    "china_market_person_candidates": 33,
     "rule": "Application evidence never mutates canonical V4 entities automatically."
   },
   "candidates": [
@@ -14368,6 +14368,34 @@
       "china_market_match": true
     },
     {
+      "candidate_id": "FIER-31fc34ed90c064cf",
+      "candidate_kind": "person",
+      "research_name": "喻春燕",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-c087cefd343cb488"
+      ],
+      "funding_insight_ids": [
+        "FI-f9ecc33ddac65f14"
+      ],
+      "source_event_ids": [
+        "EV-63a4b6ce48e14829"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-8f59221246fca9ca",
+          "quote": "喻春燕 联合创始人&CMO",
+          "source_content_hash": "8f9a137d6a238579",
+          "quote_hash": "23d01f382ed663b1bb193a32ce2476a657f15f1cec5ad0d36d7d5041c6964ec4"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-ab24f5dc18971196",
       "candidate_kind": "person",
       "research_name": "宋亚宸",
@@ -14388,6 +14416,62 @@
           "quote": "宋亚宸，上海瓦嘶特科技有限公司创始人&CEO。本科毕业于约翰霍普⾦斯⼤学，曾在商汤科技落地了多个从零到⼀的⼈⼯智能项⽬",
           "source_content_hash": "a49b3ebda62699ec",
           "quote_hash": "276a4f66df0ba9109cf364121d7327300b54588af5b7fca2aaa4eab35af7eb0b"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-b62458b25b6082d1",
+      "candidate_kind": "person",
+      "research_name": "崔予淳",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-c087cefd343cb488"
+      ],
+      "funding_insight_ids": [
+        "FI-f9ecc33ddac65f14"
+      ],
+      "source_event_ids": [
+        "EV-63a4b6ce48e14829"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-8f59221246fca9ca",
+          "quote": "崔予淳 联合创始人&首席数据官",
+          "source_content_hash": "8f9a137d6a238579",
+          "quote_hash": "5e7052fbff24ed866bd0ef493dda7555672d0037b3f4b69b92c719ae5babc1aa"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-508fbb891261a345",
+      "candidate_kind": "person",
+      "research_name": "张健",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-2777b5a794959a7d"
+      ],
+      "funding_insight_ids": [
+        "FI-55397cb9c404e73a"
+      ],
+      "source_event_ids": [
+        "EV-d98c10d4cba51686"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-745c53609b9cc82a",
+          "quote": "宇道生物由变构领域全球顶级科学家张健教授创立",
+          "source_content_hash": "0b619315576504eb",
+          "quote_hash": "e42f5c4d72755468a60b4032f50f6486fd08576b4972acf7bc6d7a9cbbba3703"
         }
       ],
       "market_regions": [
@@ -14719,30 +14803,43 @@
       "status": "pending_canonical_review",
       "reason": "canonical_exact_match_missing",
       "company_entity_ids": [
-        "EN-63d1760c240e7a7c"
+        "EN-1540430ef01214f1",
+        "EN-63d1760c240e7a7c",
+        "EN-c087cefd343cb488"
       ],
       "funding_insight_ids": [
-        "FI-1dd4f2d097b05964"
+        "FI-1dd4f2d097b05964",
+        "FI-4ba12f222da5c88a",
+        "FI-f9ecc33ddac65f14"
       ],
       "source_event_ids": [
-        "EV-04bcb24d608a931c"
+        "EV-04bcb24d608a931c",
+        "EV-63a4b6ce48e14829",
+        "EV-a38a33003b0d6d08"
       ],
       "evidence_refs": [
+        {
+          "source_id": "FISRC-63bd3d357e376fa3",
+          "quote": "讯兔科技 创始人兼CEO 李罗丹",
+          "source_content_hash": "a070261af12660cf",
+          "quote_hash": "fdaf3ccf3663376baa361483d00af3c03bc1d23d088cdd89bb1df62e4611a717"
+        },
+        {
+          "source_id": "FISRC-8f59221246fca9ca",
+          "quote": "李罗丹 创始人&CEO",
+          "source_content_hash": "8f9a137d6a238579",
+          "quote_hash": "558a950c27c144a9c7890da3a922aa48785e151d487c71d04260db3f13e19212"
+        },
         {
           "source_id": "FISRC-3e63ec136b8700e5",
           "quote": "在讯兔科技创始人李罗丹看来，严肃场景中的AI更接近高端制造业",
           "source_content_hash": "ffb85beb1df15c99",
           "quote_hash": "e172bbf1d25436bf0a5ff5d9b3714983ac607d72d9bf5aae27e3a18d8f539878"
-        },
-        {
-          "source_id": "FISRC-cffd7b0fc97d8956",
-          "quote": "讯兔科技创始人、CEO李罗丹以《人机协同的投研新范式》为题发表主旨演讲",
-          "source_content_hash": "355d84467085c5e6",
-          "quote_hash": "59db91cbdd0d87a3b969534a4c53feeb911f6e188d3663a3f2672c66c5f44f87"
         }
       ],
       "market_regions": [
-        "CN"
+        "CN",
+        "GLOBAL"
       ],
       "china_market_match": true
     },
@@ -14811,6 +14908,34 @@
       "china_market_match": true
     },
     {
+      "candidate_id": "FIER-29646a38d3b259e4",
+      "candidate_kind": "person",
+      "research_name": "沈倩诚",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-2777b5a794959a7d"
+      ],
+      "funding_insight_ids": [
+        "FI-55397cb9c404e73a"
+      ],
+      "source_event_ids": [
+        "EV-d98c10d4cba51686"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-745c53609b9cc82a",
+          "quote": "沈倩诚博士，宇道生物CEO，联合创始人。",
+          "source_content_hash": "0b619315576504eb",
+          "quote_hash": "1d85158bf5c47db446d375e26c77541036c1361eedba9a4ed0643a65a436fc63"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
       "candidate_id": "FIER-8001ac7b6e094a18",
       "candidate_kind": "person",
       "research_name": "王绍兰",
@@ -14869,6 +14994,34 @@
       "china_market_match": true
     },
     {
+      "candidate_id": "FIER-08d4f972df0597e0",
+      "candidate_kind": "person",
+      "research_name": "祝宗煌",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-24dd6fa3e1cbba97"
+      ],
+      "funding_insight_ids": [
+        "FI-93997daa66cf0e5b"
+      ],
+      "source_event_ids": [
+        "EV-6aaa17d9c372e513"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-27fa748719e248c8",
+          "quote": "创始人兼CEO祝宗煌在大学期间便有过多次创业经历，自2018年开始在机器人关节模组方向深耕",
+          "source_content_hash": "94d63e8c9767f958",
+          "quote_hash": "81960ffb2a1f78eeccd0dbef23013a092a087b36f20ab285dad542c94a83eacb"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
       "candidate_id": "FIER-ed1dd2524793e125",
       "candidate_kind": "person",
       "research_name": "罗毅",
@@ -14917,6 +15070,34 @@
           "quote": "聂凯旋，松应科技创始人兼 CEO，TGO 鲲鹏会（上海）学员。原华为云鲲鹏解决方案副总指挥，华为云互动与云游戏总经理",
           "source_content_hash": "f48624d7d77ac534",
           "quote_hash": "035074a766dd1342851f7189f89bdbe7fa431c5a7ca16bd123617b677cece204"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-54a05d439cecfd0d",
+      "candidate_kind": "person",
+      "research_name": "胡闽",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-d5857f6222f45275"
+      ],
+      "funding_insight_ids": [
+        "FI-814db3f53a8fd2aa"
+      ],
+      "source_event_ids": [
+        "EV-3fdc9ad98818c36b"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-dace02c08d5e872a",
+          "quote": "亿格云创始人兼CEO胡闽表示",
+          "source_content_hash": "aedae76347873519",
+          "quote_hash": "27ad2754a95ec96c985bddec3f6468fd758d707ed9cb4b663869da0be45865a1"
         }
       ],
       "market_regions": [
@@ -17218,6 +17399,68 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-d979535468bf0658",
+      "candidate_kind": "product",
+      "research_name": "AlloMatrix",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-2777b5a794959a7d"
+      ],
+      "funding_insight_ids": [
+        "FI-55397cb9c404e73a"
+      ],
+      "source_event_ids": [
+        "EV-d98c10d4cba51686"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-e5567e9a53d1316c",
+          "quote": "公司在蛋白构象调控领域搭建起全球规模领先、源于湿实验的 标准化 数据库",
+          "source_content_hash": "b9905ba18c6eb0ad",
+          "quote_hash": "388038d0924617f18236b1688bfde1a1b0d257f8cbecc4a8f2270a2fdf1804c3"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-40ec812a66908ed9",
+      "candidate_kind": "product",
+      "research_name": "AlloStar™",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-2777b5a794959a7d"
+      ],
+      "funding_insight_ids": [
+        "FI-55397cb9c404e73a"
+      ],
+      "source_event_ids": [
+        "EV-d98c10d4cba51686"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-e5567e9a53d1316c",
+          "quote": "公司 基于蛋白构象调控核心 科技 搭建的 干湿结合 研发平台 AlloStar TM ，可系统性攻克 不同 疾病领域的难成药靶 标",
+          "source_content_hash": "b9905ba18c6eb0ad",
+          "quote_hash": "4a0db64ed7746c078e765362469a63eba2d8e77e7c8cd1569e34c60045b8c57c"
+        },
+        {
+          "source_id": "FISRC-e5567e9a53d1316c",
+          "quote": "AlloStar ™平台内置 AlloWaves 模块，融合物理模型与 AI 算法完成蛋白隐藏功能位点的识别与表征； AlloLig 模块则基于 Diffusion Model、Flow Model 等前沿生成式 AI 模型",
+          "source_content_hash": "b9905ba18c6eb0ad",
+          "quote_hash": "bbbd4aff7a2fc9b8c5ba72df3592ac62557c08b12e4211c62c9e84175d5636ca"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
       "candidate_id": "FIER-77cab7912265a7e1",
       "candidate_kind": "product",
       "research_name": "AlphaBot 2（爱宝2）",
@@ -17302,30 +17545,43 @@
       "status": "pending_canonical_review",
       "reason": "canonical_exact_match_missing",
       "company_entity_ids": [
-        "EN-63d1760c240e7a7c"
+        "EN-1540430ef01214f1",
+        "EN-63d1760c240e7a7c",
+        "EN-c087cefd343cb488"
       ],
       "funding_insight_ids": [
-        "FI-1dd4f2d097b05964"
+        "FI-1dd4f2d097b05964",
+        "FI-4ba12f222da5c88a",
+        "FI-f9ecc33ddac65f14"
       ],
       "source_event_ids": [
-        "EV-04bcb24d608a931c"
+        "EV-04bcb24d608a931c",
+        "EV-63a4b6ce48e14829",
+        "EV-a38a33003b0d6d08"
       ],
       "evidence_refs": [
         {
-          "source_id": "FISRC-3e63ec136b8700e5",
+          "source_id": "FISRC-9cb02e3c79eee3a9",
           "quote": "讯兔科技旗下AI投研助理Alpha派从会议与信息处理等高频入口切入，逐步深入研究、分析与知识沉淀等核心投研工作流",
-          "source_content_hash": "ffb85beb1df15c99",
+          "source_content_hash": "8fe6314513f8ae80",
           "quote_hash": "7a4d7441c61550316ac4ee507261fe55ada49db42e3e7017f47998fca070e68e"
         },
         {
-          "source_id": "FISRC-2c82376af2ff1629",
-          "quote": "专注于为公募基金、私募基金、证券公司研究所、保险公司及一级市场投资机构提供高质量金融数据服务与智能化投研工具",
-          "source_content_hash": "5f761966833b5be4",
-          "quote_hash": "c3cc8d81b7b99a2c596534b696af331a5aa4c31165c96c52dd765985b07fcdde"
+          "source_id": "FISRC-ccfbdf5e58155781",
+          "quote": "成立最初，讯兔科技通过旗下AI投研助理Alpha派从会议与信息处理等高频入口切入，后逐步深入研究、分析与知识沉淀等核心投研工作流",
+          "source_content_hash": "f949b5adc6d7fa3c",
+          "quote_hash": "a9cbd5f736f1a8daff98ae98ffa7666877e1ac996c963fb36f5d591b7369f602"
+        },
+        {
+          "source_id": "FISRC-8f59221246fca9ca",
+          "quote": "讯兔科技的核心产品「Alpha派」从会议这一核心痛点切入，凭借AI纪要助理迅速赢得了用户青睐",
+          "source_content_hash": "8f9a137d6a238579",
+          "quote_hash": "ba1d5da69ec6e65154b6bca2dcf2986deee9f8dc1e67b5a5947635797765c278"
         }
       ],
       "market_regions": [
-        "CN"
+        "CN",
+        "GLOBAL"
       ],
       "china_market_match": true
     },
@@ -19768,6 +20024,34 @@
         "GLOBAL"
       ],
       "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-3087327aed24391d",
+      "candidate_kind": "product",
+      "research_name": "Dalretapopt（NTS071）",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-2777b5a794959a7d"
+      ],
+      "funding_insight_ids": [
+        "FI-55397cb9c404e73a"
+      ],
+      "source_event_ids": [
+        "EV-d98c10d4cba51686"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-e5567e9a53d1316c",
+          "quote": "宇道生物 p53 Y220C 小分子重激活剂项目依托 AlloWaves 模块完成变构位点表征，设计得到具备皮 摩尔级 变构激动活性的临床候选化合物 Dalretapopt （NTS071）。",
+          "source_content_hash": "b9905ba18c6eb0ad",
+          "quote_hash": "5559f10b4f75e673da32a579b9405bea6ad98902cca435e90df193a8f7775286"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
     },
     {
       "candidate_id": "FIER-4931ed38f0724cbc",
@@ -23060,15 +23344,24 @@
       "status": "pending_canonical_review",
       "reason": "canonical_exact_match_missing",
       "company_entity_ids": [
-        "EN-63d1760c240e7a7c"
+        "EN-63d1760c240e7a7c",
+        "EN-c087cefd343cb488"
       ],
       "funding_insight_ids": [
-        "FI-1dd4f2d097b05964"
+        "FI-1dd4f2d097b05964",
+        "FI-f9ecc33ddac65f14"
       ],
       "source_event_ids": [
-        "EV-04bcb24d608a931c"
+        "EV-04bcb24d608a931c",
+        "EV-63a4b6ce48e14829"
       ],
       "evidence_refs": [
+        {
+          "source_id": "FISRC-ccfbdf5e58155781",
+          "quote": "再到6月，继续推出iRaB投研实战评测体系和启动了ORE投研生态合作伙伴计划",
+          "source_content_hash": "f949b5adc6d7fa3c",
+          "quote_hash": "5f902b4e9c209c5606cba2aadb27ce6c325db1f22a9bad81f8c25ffc0f6d3b41"
+        },
         {
           "source_id": "FISRC-3e63ec136b8700e5",
           "quote": "2026年6月，公司推出 iRaB投研实战评测体系 ，以真实投研任务检验AI对任务的理解、分析与专业交付能力",
@@ -23077,7 +23370,8 @@
         }
       ],
       "market_regions": [
-        "CN"
+        "CN",
+        "GLOBAL"
       ],
       "china_market_match": true
     },
@@ -25561,10 +25855,12 @@
         "EN-60910505210bd6f1"
       ],
       "funding_insight_ids": [
+        "FI-471dcb46f9c8ee90",
         "FI-75f46cfc16c70475"
       ],
       "source_event_ids": [
-        "EV-6ff97d32bdcc8586"
+        "EV-6ff97d32bdcc8586",
+        "EV-7326768782ff1e4e"
       ],
       "evidence_refs": [
         {
@@ -25572,10 +25868,17 @@
           "quote": "公司自主研发的NECESSI具身智能端到端大模型，让机器人能像人一样“看懂”不同物品、自主判断如何抓取与放置，彻底摆脱了传统设备需要逐一“手把手”教导的繁琐模式。",
           "source_content_hash": "b305b6f8f03a0db3",
           "quote_hash": "c5c88e690ebeae1c701b761c79908e660b766e5d85148a1927f2948f7f16b108"
+        },
+        {
+          "source_id": "FISRC-9426343cef2025ec",
+          "quote": "公司自主研发的NECESSI具身智能端到端大模型，让机器人能像人一样“看懂”不同物品、自主判断如何抓取与放置",
+          "source_content_hash": "b522f271a993364a",
+          "quote_hash": "98181d8358273058523cc66ca5806e0fa0b67862c8e3be75f55e74931bd87a13"
         }
       ],
       "market_regions": [
-        "CN"
+        "CN",
+        "GLOBAL"
       ],
       "china_market_match": true
     },
@@ -26858,15 +27161,33 @@
       "status": "pending_canonical_review",
       "reason": "canonical_exact_match_missing",
       "company_entity_ids": [
-        "EN-63d1760c240e7a7c"
+        "EN-1540430ef01214f1",
+        "EN-63d1760c240e7a7c",
+        "EN-c087cefd343cb488"
       ],
       "funding_insight_ids": [
-        "FI-1dd4f2d097b05964"
+        "FI-1dd4f2d097b05964",
+        "FI-4ba12f222da5c88a",
+        "FI-f9ecc33ddac65f14"
       ],
       "source_event_ids": [
-        "EV-04bcb24d608a931c"
+        "EV-04bcb24d608a931c",
+        "EV-63a4b6ce48e14829",
+        "EV-a38a33003b0d6d08"
       ],
       "evidence_refs": [
+        {
+          "source_id": "FISRC-9cb02e3c79eee3a9",
+          "quote": "2026年4月，讯兔科技推出行业首个AI投研工作台PaiWork，将金融数据、研究工具、办公套件、知识库整合进统一工作环境",
+          "source_content_hash": "8fe6314513f8ae80",
+          "quote_hash": "79b9f149085b28d838127d17ef2be745a21b961a9cdd2a5f8cde8e9074c0a64e"
+        },
+        {
+          "source_id": "FISRC-ccfbdf5e58155781",
+          "quote": "今年4月，讯兔科技推出行业首 个AI投研工作台PaiWork",
+          "source_content_hash": "f949b5adc6d7fa3c",
+          "quote_hash": "b990d4d70a1901ddef9f478b83e719603f1b5e4812284045904b0ed386774fc5"
+        },
         {
           "source_id": "FISRC-3e63ec136b8700e5",
           "quote": "2026年4月，讯兔科技推出行业首个 AI投研工作台PaiWork ，将金融数据、研究工具、办公套件、知识库整合进统一工作环境",
@@ -26875,7 +27196,8 @@
         }
       ],
       "market_regions": [
-        "CN"
+        "CN",
+        "GLOBAL"
       ],
       "china_market_match": true
     },
@@ -29765,6 +30087,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-0a989d83334a305d",
+      "candidate_kind": "product",
+      "research_name": "Starborn",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-60910505210bd6f1"
+      ],
+      "funding_insight_ids": [
+        "FI-8109d72b6e9a6aa4"
+      ],
+      "source_event_ids": [
+        "EV-0ac10579ff64fe74"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-0d37e004ad816c7c",
+          "quote": "寅成智能推出 L2级高性能分拣机器人“Starborn” ，凭借自研的NECESSI端到端大模型，分拣速度实现1800件/小时，单台设备可替代2-3名人工，投资回报周期仅需1-1.5年。",
+          "source_content_hash": "98326089b58880e2",
+          "quote_hash": "2f640d06841aa611e72a4913184a55619b7d15b8e9dca36abc03e23320ff1b68"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-a3be976b747a1640",
       "candidate_kind": "product",
       "research_name": "Starchild-1",
@@ -32436,6 +32786,46 @@
       "china_market_match": true
     },
     {
+      "candidate_id": "FIER-e14036f1d30dd455",
+      "candidate_kind": "product",
+      "research_name": "主权AI三层架构",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-4149d125ad47155a"
+      ],
+      "funding_insight_ids": [
+        "FI-c18ef00b96197827"
+      ],
+      "source_event_ids": [
+        "EV-4238c51fcdad7bd4"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-9eb697a746e19a88",
+          "quote": "深度内核将主权AI的构建拆解为三层",
+          "source_content_hash": "4d4f7417581fed42",
+          "quote_hash": "3290921b2663a46c83484861ae54af71f40a91bea0641645e71ab95509c2661c"
+        },
+        {
+          "source_id": "FISRC-9eb697a746e19a88",
+          "quote": "在第 一层计算层，深度内核破解了企业AI部署的两难困境。团队基于密码学、可信芯片与分布式系统，为AI训练和推理基础设施建立明确且可强制执行的信任边界（Trusted Computing Boundary）",
+          "source_content_hash": "4d4f7417581fed42",
+          "quote_hash": "29434fe4f2ded7bc92cfcd7394b2c155ab27378dd0f85c52eb12d78297029082"
+        },
+        {
+          "source_id": "FISRC-9eb697a746e19a88",
+          "quote": "在第二层学习层，深度内核解决了“AI越用、平台越懂自己，企业越被动”的行业死结。他们构建了覆盖执行、评估、学习与编排的 Agentic Learning Infrastructure",
+          "source_content_hash": "4d4f7417581fed42",
+          "quote_hash": "9bc953efa1ddbf2210294b542cf99fa14a1617dba689b6208d2865bf97278196"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
       "candidate_id": "FIER-1fea2cf90ec8f27d",
       "candidate_kind": "product",
       "research_name": "九畴工业大模型",
@@ -32456,6 +32846,34 @@
           "quote": "硕橙科技打造国内首 个面向设备智能运维与工业安全的端到端九畴工业大模型，采用“大模型+小模型”混合架构，深度覆盖智能运维、产品质检、安全监测、智能排产等工业全流程，将AI从单点工具升级为体系化的工业数字底座。",
           "source_content_hash": "8e0d7f0dfdd827ca",
           "quote_hash": "6f9e0bd33ab38b055cb07029460882b384580ab996d21b4bf8c752532a74f540"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-9bd36977b4859200",
+      "candidate_kind": "product",
+      "research_name": "云枢",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-d5857f6222f45275"
+      ],
+      "funding_insight_ids": [
+        "FI-814db3f53a8fd2aa"
+      ],
+      "source_event_ids": [
+        "EV-3fdc9ad98818c36b"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-dace02c08d5e872a",
+          "quote": "亿格云依托自研一体化平台“云枢”，践行智能生产力治理原则：管好企业里每一个行动主体，实现人与Agent统一治理。",
+          "source_content_hash": "aedae76347873519",
+          "quote_hash": "64b8fb37f600af025174ea42070a8647bd1de8bbf471828687ad9df237c1c3cb"
         }
       ],
       "market_regions": [
@@ -32540,6 +32958,62 @@
           "quote": "华深智药的人工智能药物开发平台是基于大量公开及私有蛋白质结构及复合体结构数据，使用大规模几何深度学习算法驱动的新一代大分子结构建模计算平台。此平台包括蛋白质结构预测、蛋白质及抗体功能预测、大分子药关键区域建模，以及蛋白质序列设计等一系列算法及应用场景。",
           "source_content_hash": "7a65faa719f4d72b",
           "quote_hash": "122480cc6b174d562bb06279aec0e68f85fa159263950d1d1753cfd477a721e7"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-93f9a69d6a96e073",
+      "candidate_kind": "product",
+      "research_name": "亿格云XDR",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-d5857f6222f45275"
+      ],
+      "funding_insight_ids": [
+        "FI-814db3f53a8fd2aa"
+      ],
+      "source_event_ids": [
+        "EV-3fdc9ad98818c36b"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-6bb4cd1d1f924cb5",
+          "quote": "亿格云 XDR 构建本地引擎 + 云端协同 + 行为分析的三层检测体系，依托全球 300 万+ 终端威胁情报，实现从已知威胁拦截到未知攻击发现的能力跃升。",
+          "source_content_hash": "f3e141b6b991fe9d",
+          "quote_hash": "4c9aaeae93eb83feb5c8c9e7bf7f1b92ca279857d8c2032c3ce62b9eed6e1f9b"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-639f4770317dfdeb",
+      "candidate_kind": "product",
+      "research_name": "亿格云枢平台",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-d5857f6222f45275"
+      ],
+      "funding_insight_ids": [
+        "FI-814db3f53a8fd2aa"
+      ],
+      "source_event_ids": [
+        "EV-3fdc9ad98818c36b"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-4259d3afb5aa9b0e",
+          "quote": "亿格云自主研发的零信任SASE产品亿格云枢平台，提供零信任安全访问、终端安全防护(XDR)、数据安全防护(XDLP)、全球应用加速的一站式办公安全解决方案",
+          "source_content_hash": "0c2eaffdbf01453f",
+          "quote_hash": "75d02ed0df61614fce2f8cd2a70c5d1fbb8d5b9b50597ccd2cf9b9ab47196256"
         }
       ],
       "market_regions": [
@@ -32798,6 +33272,34 @@
         "GLOBAL"
       ],
       "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-0918d3650d92cb51",
+      "candidate_kind": "product",
+      "research_name": "关节模组",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-24dd6fa3e1cbba97"
+      ],
+      "funding_insight_ids": [
+        "FI-93997daa66cf0e5b"
+      ],
+      "source_event_ids": [
+        "EV-6aaa17d9c372e513"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d0c3dca85d845330",
+          "quote": "因克斯已推出第二代关节模组产品。二代关节不仅实现了性能的进一步迭代升级，还带来一项关键性革新——模块化快拆设计。",
+          "source_content_hash": "e86bd6fffaf894b4",
+          "quote_hash": "4ba0711833f4db5583cf99a03062893be01d9d6fd75ea86c2c96991b4299299b"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
     },
     {
       "candidate_id": "FIER-dca05f867167422b",
@@ -33124,6 +33626,34 @@
       "china_market_match": true
     },
     {
+      "candidate_id": "FIER-3aea933b8344a6a3",
+      "candidate_kind": "product",
+      "research_name": "动力系统解决方案",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-24dd6fa3e1cbba97"
+      ],
+      "funding_insight_ids": [
+        "FI-93997daa66cf0e5b"
+      ],
+      "source_event_ids": [
+        "EV-6aaa17d9c372e513"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d0c3dca85d845330",
+          "quote": "运动控制能力，对应由“关节模组 + 智能电池 + 通信模块”组成的动力系统解决方案",
+          "source_content_hash": "e86bd6fffaf894b4",
+          "quote_hash": "eef31ecaf239b5129ea5dd091d858dbc068817321b62a0f84150e34d9b381489"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
       "candidate_id": "FIER-c9d4131e21905007",
       "candidate_kind": "product",
       "research_name": "半导体及电子制造黑灯工厂",
@@ -33234,6 +33764,40 @@
         "CN"
       ],
       "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-1414dbc6538d434b",
+      "candidate_kind": "product",
+      "research_name": "可信AI基础设施",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-619245256126c075"
+      ],
+      "funding_insight_ids": [
+        "FI-c8dd7f42bf3132f2"
+      ],
+      "source_event_ids": [
+        "EV-b137470f59491f6a"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-fffa9fbb649ef7d5",
+          "quote": "下层由深度内核提供执行与验证能力，包括机密计算、远程证明、执行管控与审计留痕。",
+          "source_content_hash": "0dff0a7b167d4518",
+          "quote_hash": "6170b6e5d5470024324d89b413f331d1a57fa62f43c9074e6b62c389b83a5ae6"
+        },
+        {
+          "source_id": "FISRC-fffa9fbb649ef7d5",
+          "quote": "基于可信芯片、密码学和分布式系统，为AI训练和推理构建端到端可信域，实现AI Trusted Computing（AITC）",
+          "source_content_hash": "0dff0a7b167d4518",
+          "quote_hash": "350731aa2eb2d45e716c63f9491e50458acbf11a1e05a06bee7236aec1f5b19b"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
     },
     {
       "candidate_id": "FIER-ca78ea8689d29793",
@@ -34484,6 +35048,40 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-b3807e92fc2af8f3",
+      "candidate_kind": "product",
+      "research_name": "数据空间可信AI基础设施解决方案",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-4149d125ad47155a"
+      ],
+      "funding_insight_ids": [
+        "FI-c18ef00b96197827"
+      ],
+      "source_event_ids": [
+        "EV-4238c51fcdad7bd4"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-fffa9fbb649ef7d5",
+          "quote": "联合宣布达成战略合作，共同发布数据空间可信AI基础设施解决方案",
+          "source_content_hash": "bb0d5c1c9b638282",
+          "quote_hash": "6d30cd9942b2d6ce8baaebb95edef6c4ec0b0dbb3299a484df2ee6998872868f"
+        },
+        {
+          "source_id": "FISRC-fffa9fbb649ef7d5",
+          "quote": "上层继续由清雁科技提供数据空间已有的业务能力，包括数字合约/签约、数据分级、出域审批工作流和管理控制台；下层由深度内核提供执行与验证能力，包括机密计算、远程证明、执行管控与审计留痕。",
+          "source_content_hash": "bb0d5c1c9b638282",
+          "quote_hash": "e7db2cccb4a9a99bf53f5b2813b590951a528a7d5d6f896729a7208920d33d3c"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
       "candidate_id": "FIER-3002f5be0783f1e1",
       "candidate_kind": "product",
       "research_name": "文本转 3D 模型应用",
@@ -35344,6 +35942,34 @@
           "quote": "S2 ：7nm工艺的GPGPU，兼容英伟达CUDA生态，性能对标A100，实现指令集、IP架构、算子及编译器全自研。",
           "source_content_hash": "7b7aea00e8c0d894",
           "quote_hash": "e0f3d12b5dbbb67fe324427e9f5663fdad92509d672354a32a24a5863ab652d9"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-ac3a8ca277696dfb",
+      "candidate_kind": "product",
+      "research_name": "末端执行系统解决方案",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-24dd6fa3e1cbba97"
+      ],
+      "funding_insight_ids": [
+        "FI-93997daa66cf0e5b"
+      ],
+      "source_event_ids": [
+        "EV-6aaa17d9c372e513"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d0c3dca85d845330",
+          "quote": "智能操作能力，对应由“灵巧手 + 数采手套”组成的末端执行系统解决方案",
+          "source_content_hash": "e86bd6fffaf894b4",
+          "quote_hash": "a7bef198d84c09a9dffd7d50ac838508a3ec072eff8087b73a8cb27d8bc91f67"
         }
       ],
       "market_regions": [

@@ -519,7 +519,7 @@
   },
   "meta": {
     "version": "OPS-V3.8.0-engineering-integration",
-    "generatedAt": "2026-09-15T07:33:44.523Z",
+    "generatedAt": "2026-09-15T07:57:24.381Z",
     "date": "2026-09-15",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
@@ -1670,7 +1670,7 @@
       }
     ],
     "sourceQuality": {
-      "updatedAt": "2026-09-15T07:33:44.515Z",
+      "updatedAt": "2026-09-15T07:57:24.373Z",
       "sampleNote": "按最新 V4 RawDocument 的 acquisition_channel 聚合；样本量为已落盘 Raw 文档数。",
       "metricNote": "诊断分由可用率、全文率、高质提取率、可读性和事实命中率组成，仅用于运营观察，不参与来源准入、排序或事实门禁。",
       "rows": [
@@ -1710,10 +1710,24 @@
           "fullTextRate": 73,
           "highQualityRate": 69,
           "readabilityScore": 67,
-          "factHitRate": 7,
-          "acceptedClaims": 15,
-          "canonicalEvents": 7,
+          "factHitRate": 9,
+          "acceptedClaims": 17,
+          "canonicalEvents": 8,
           "score": 64,
+          "grade": "中"
+        },
+        {
+          "id": "china-funding",
+          "label": "china-funding",
+          "total": 66,
+          "eligibleRate": 100,
+          "fullTextRate": 74,
+          "highQualityRate": 27,
+          "readabilityScore": 55,
+          "factHitRate": 23,
+          "acceptedClaims": 21,
+          "canonicalEvents": 15,
+          "score": 62,
           "grade": "中"
         }
       ]
@@ -1721,29 +1735,30 @@
     "chinaFunding": {
       "schema_version": "CHINA-FUNDING-HEALTH-V1.0",
       "date": "2026-09-15",
-      "generated_at": "2026-09-15T07:23:33.189Z",
-      "status": "failed",
+      "generated_at": "2026-09-15T07:57:24.319Z",
+      "status": "partial",
       "last_collection_at": "2026-09-15T06:50:02.788Z",
-      "failed_stage": "projections",
+      "failed_stage": null,
       "stages": [
         {
           "id": "capture",
           "status": "passed",
-          "started_at": "2026-09-15T07:17:21.005Z",
-          "finished_at": "2026-09-15T07:17:40.978Z"
+          "started_at": "2026-09-15T07:49:37.882Z",
+          "reused": true,
+          "reused_accepted_capture": true,
+          "finished_at": "2026-09-15T07:49:43.024Z"
         },
         {
           "id": "facts",
           "status": "passed",
-          "started_at": "2026-09-15T07:17:40.978Z",
-          "finished_at": "2026-09-15T07:19:24.218Z"
+          "started_at": "2026-09-15T07:49:43.024Z",
+          "finished_at": "2026-09-15T07:51:51.242Z"
         },
         {
           "id": "projections",
-          "status": "failed",
-          "started_at": "2026-09-15T07:19:24.218Z",
-          "error": "Command failed: agent-workflow/tools/assert-funding-insights-v1.mjs (1)",
-          "finished_at": "2026-09-15T07:23:33.091Z"
+          "status": "passed",
+          "started_at": "2026-09-15T07:51:51.242Z",
+          "finished_at": "2026-09-15T07:57:24.199Z"
         }
       ],
       "sources": [
@@ -1796,6 +1811,12 @@
             "EV-3fdc9ad98818c36b"
           ],
           "card_ids": [
+            "FI-cb4015ec6509d947",
+            "FI-f9e6d5e2e86d80a8",
+            "FI-54e748b1e6abf463",
+            "FI-9c0da6bf63d90fd1",
+            "FI-0393ae3bd2089ea6",
+            "FI-d7991ae6537597c7",
             "FI-6cb88e1aa2901cbb"
           ],
           "latest_disclosure": "2026-09-15T02:19:00.000Z"
@@ -1834,7 +1855,11 @@
             "EV-a38a33003b0d6d08"
           ],
           "china_funding_event_ids": [],
-          "card_ids": [],
+          "card_ids": [
+            "FI-9d60cecb77545277",
+            "FI-f9e6d5e2e86d80a8",
+            "FI-fdc3c8cfd69218fd"
+          ],
           "latest_disclosure": "2026-09-15T06:29:00.000Z"
         },
         {
@@ -1994,7 +2019,7 @@
         "china_funding_events": 2,
         "linked_organizations": 16,
         "linked_products": 0,
-        "published_card_matches": 2
+        "published_card_matches": 10
       },
       "publication": {
         "status": "awaiting_publication_receipt"
@@ -27904,6 +27929,6 @@
       }
     ],
     "catalogGeneratedAt": "2026-09-13 16:21:58",
-    "snapshotGeneratedAt": "2026-09-15T07:33:44.523Z"
+    "snapshotGeneratedAt": "2026-09-15T07:57:24.381Z"
   }
 }

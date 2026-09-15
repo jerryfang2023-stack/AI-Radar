@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-15T07:33:29.824Z",
+    "generatedAt": "2026-09-15T07:57:02.631Z",
     "latestDataDate": "2026-09-15",
     "currentDate": "2026-09-15",
-    "eventCount": 3259,
+    "eventCount": 3271,
     "quarantinedEventCount": 34,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -57,7 +57,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 0,
     "market_regions": [
       "CN"
@@ -65,13 +65,53 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-09-03",
-    "latest_disclosed_at": "2026-09-03",
+    "latest_disclosed_at": "2026-09-14",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 2
     },
     "round_codes": [],
     "portfolio_companies": [],
     "activities": [
+      {
+        "activity_id": "IA-594fa3a1b84f4248",
+        "funding_insight_id": "FI-0393ae3bd2089ea6",
+        "event_ids": [
+          "EV-3fdc9ad98818c36b"
+        ],
+        "company_entity_id": "EN-d5857f6222f45275",
+        "company_canonical_entity_id": "",
+        "company_name": "亿格云",
+        "round": "基础设施融资",
+        "round_code": "infrastructure",
+        "round_original": "基础设施融资",
+        "amount_original": "近亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1 亿元"
+        },
+        "announced_at": "2026-09-14",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-7ad6f6d8fd34d53e",
+            "source_url": "http://www.bowangcaijing.cn/news/1387110.html",
+            "source_title": "加码'人+AI'统一安全治理,亿格云完成数亿元B轮融资_资讯_博望财经",
+            "source_content_hash": "1ea7611f77ca0560",
+            "quote": "先后获得红杉中国、元璟资本、靖亚资本、未来启创基金等一线机构不断加持",
+            "quote_hash": "6cdf5ff16b88ec5f662c968eee6a791fca8f947e6a5a9bf1eaace63b3139d8a5"
+          }
+        ]
+      },
       {
         "activity_id": "IA-49e2d610098662be",
         "funding_insight_id": "FI-d35963e9e0598dc5",
@@ -114,6 +154,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-7ad6f6d8fd34d53e",
+        "source_url": "http://www.bowangcaijing.cn/news/1387110.html",
+        "source_title": "加码'人+AI'统一安全治理,亿格云完成数亿元B轮融资_资讯_博望财经",
+        "source_content_hash": "1ea7611f77ca0560",
+        "quote": "先后获得红杉中国、元璟资本、靖亚资本、未来启创基金等一线机构不断加持",
+        "quote_hash": "6cdf5ff16b88ec5f662c968eee6a791fca8f947e6a5a9bf1eaace63b3139d8a5"
+      },
       {
         "source_id": "FISRC-4c6320de89936c7b",
         "source_url": "https://news.pedaily.cn/202609/568487.shtml",

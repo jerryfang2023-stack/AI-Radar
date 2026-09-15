@@ -1,0 +1,214 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-15T07:57:02.631Z",
+    "latestDataDate": "2026-09-15",
+    "currentDate": "2026-09-15",
+    "eventCount": 3271,
+    "quarantinedEventCount": 34,
+    "quarantinedEventIds": [
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "entity": {
+    "id": "EN-4522c2f4a5ee9b72",
+    "name": "在过去一年内已连续",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-a38a33003b0d6d08"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-15",
+    "lastSeen": "2026-09-15",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-a38a33003b0d6d08"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-a38a33003b0d6d08",
+        "dataDate": "2026-09-15",
+        "date": "2026-09-15",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "讯兔科技（Alpha派）完成超3亿元B轮融资 - 投中网",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "industry_applications",
+            "name": "行业应用",
+            "entityIds": [
+              "EN-1540430ef01214f1"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-683753f98730ab00",
+            "fundingInsightId": "FI-4ba12f222da5c88a"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-1540430ef01214f1"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-08df56d9f3ad1266",
+            "fundingInsightId": "FI-4ba12f222da5c88a"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-1540430ef01214f1"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-119a550c32418bab",
+            "fundingInsightId": "FI-4ba12f222da5c88a"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "data_analysis",
+            "name": "数据分析",
+            "entityIds": [
+              "EN-1540430ef01214f1"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-56f8e894b4f227a8",
+            "fundingInsightId": "FI-4ba12f222da5c88a"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "knowledge_search",
+            "name": "知识与搜索",
+            "entityIds": [
+              "EN-1540430ef01214f1"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-01abde9c2b4189a3",
+            "fundingInsightId": "FI-4ba12f222da5c88a"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-1540430ef01214f1"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-671a6be40ee53d5a",
+            "fundingInsightId": "FI-4ba12f222da5c88a"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "research_discovery",
+            "name": "科研与发现",
+            "entityIds": [
+              "EN-1540430ef01214f1"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-30cb123d1c6441d4",
+            "fundingInsightId": "FI-4ba12f222da5c88a"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-1540430ef01214f1"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-262429b76be754f3",
+            "fundingInsightId": "FI-4ba12f222da5c88a"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-1540430ef01214f1"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-e4b5ee63ba1475e7",
+            "fundingInsightId": "FI-4ba12f222da5c88a"
+          }
+        ],
+        "entityIds": [
+          "EN-1540430ef01214f1",
+          "EN-4522c2f4a5ee9b72"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

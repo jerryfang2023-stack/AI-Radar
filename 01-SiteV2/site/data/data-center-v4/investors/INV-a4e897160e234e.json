@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-15T07:33:29.824Z",
+    "generatedAt": "2026-09-15T07:57:02.631Z",
     "latestDataDate": "2026-09-15",
     "currentDate": "2026-09-15",
-    "eventCount": 3259,
+    "eventCount": 3271,
     "quarantinedEventCount": 34,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -56,23 +56,31 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
     "first_disclosed_at": "2026-08-28",
-    "latest_disclosed_at": "2026-08-28",
+    "latest_disclosed_at": "2026-09-15",
     "role_counts": {
+      "co_lead": 1,
       "participant": 1
     },
     "round_codes": [
-      "angel_plus"
+      "angel_plus",
+      "series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-60910505210bd6f1",
+        "canonical_entity_id": "EN-60910505210bd6f1",
+        "name": "寅成智能"
+      },
       {
         "entity_id": "EN-086c739ca6223458",
         "canonical_entity_id": "EN-086c739ca6223458",
@@ -80,6 +88,47 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-dbbdbf5b33d6fef1",
+        "funding_insight_id": "FI-f9e6d5e2e86d80a8",
+        "event_ids": [
+          "EV-7326768782ff1e4e",
+          "EV-0ac10579ff64fe74"
+        ],
+        "company_entity_id": "EN-60910505210bd6f1",
+        "company_canonical_entity_id": "EN-60910505210bd6f1",
+        "company_name": "寅成智能",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "近亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1 亿元"
+        },
+        "announced_at": "2026-09-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-0d37e004ad816c7c",
+            "source_url": "https://news.pedaily.cn/202609/568996.shtml",
+            "source_title": "寅成智能完成近亿元A轮融资，复旦学姐浦群妍做物流机器人",
+            "source_content_hash": "98326089b58880e2",
+            "quote": "寅成智能完成近亿元A轮融资，由华民投与上海半导体产投联合领投",
+            "quote_hash": "a314c014409c948b5fdc330ced5b69c2b815abb60dd60a07d206de80814cd1de"
+          }
+        ]
+      },
       {
         "activity_id": "IA-1ead3ea47e05117b",
         "funding_insight_id": "FI-1b4327c7d35c5dad",
@@ -122,6 +171,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-0d37e004ad816c7c",
+        "source_url": "https://news.pedaily.cn/202609/568996.shtml",
+        "source_title": "寅成智能完成近亿元A轮融资，复旦学姐浦群妍做物流机器人",
+        "source_content_hash": "98326089b58880e2",
+        "quote": "寅成智能完成近亿元A轮融资，由华民投与上海半导体产投联合领投",
+        "quote_hash": "a314c014409c948b5fdc330ced5b69c2b815abb60dd60a07d206de80814cd1de"
+      },
       {
         "source_id": "FISRC-8972e9b03b93424b",
         "source_url": "https://news.pedaily.cn/202608/568235.shtml",
