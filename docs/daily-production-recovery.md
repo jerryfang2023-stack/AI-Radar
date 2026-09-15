@@ -106,6 +106,11 @@ Funding amounts require proceeds-specific evidence, not merely a number in a
 valid quoted source. Chinese post-amount financing and valuation-rise wording
 must remain covered by regressions. A valuation may remain a labelled metric,
 but cannot populate financing amount, disclosure amount or funding history.
+Preserve source qualifiers such as `超`/`近` when
+extracting proceeds; a numerically equal exact metric cannot replace a lower
+bound or approximate disclosure. Repair accepted cards with the generator's
+`--reuse-only=true --write=true` mode, then rebuild and gate the application
+projections without repeating research.
 Funding-claim extraction must also bind a candidate sentence to the funded
 subject, source title, or the title's normalized financing metric. A financing
 teaser for another company near the article lead is not evidence for the active
