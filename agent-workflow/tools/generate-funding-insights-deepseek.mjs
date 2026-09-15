@@ -301,6 +301,20 @@ export function canonicalSources(bundle, event) {
   }).filter(Boolean);
 }
 
+export function fundingResearchNameMatches(text, companyName) {
+  const normalize = (value) => clean(value).normalize("NFKC").toLowerCase().replace(/\s+/gu, "");
+  const name = normalize(companyName);
+  const names = [name];
+  // A source-bound bilingual name may be shortened in discovery results. This
+  // admits a research candidate only, never an entity alias or financing fact.
+  if (/\p{Script=Han}/u.test(name) && /\([a-z][a-z0-9 ._-]*\)/iu.test(name)) {
+    const chineseName = name.replace(/\([a-z][a-z0-9 ._-]*\)/giu, "");
+    if ((chineseName.match(/\p{Script=Han}/gu) || []).length >= 2) names.push(chineseName);
+  }
+  const lead = normalize(text);
+  return names.some((candidate) => candidate.length >= 2 && lead.includes(candidate));
+}
+
 function scoreCandidate(result, companyName, identitySubject = "") {
   const text = clean(`${result.title} ${result.url}`).toLowerCase();
   const body = clean(result.provider_body).toLowerCase();
@@ -308,7 +322,7 @@ function scoreCandidate(result, companyName, identitySubject = "") {
   const identityKey = clean(identitySubject).toLowerCase().replace(/[^\p{L}\p{N}]+/gu, "");
   const resultKey = `${text} ${body}`.replace(/[^\p{L}\p{N}]+/gu, "");
   let score = result.source_class === "official_candidate" ? 10 : result.source_class === "secondary" ? 4 : 6;
-  if (text.includes(name)) score += 4;
+  if (fundingResearchNameMatches(text, name)) score += 4;
   if (identityKey && resultKey.includes(identityKey)) score += 6;
   if (/\b(?:funding|raises|series|seed|investor|product|customer|case study|about|team|pricing)\b/iu.test(text)) score += 3;
   if (result.intent === "investor_rationale" && body.includes(name) && /\b(?:invest|investment|portfolio)\b/iu.test(body)) score += 5;
@@ -495,7 +509,7 @@ async function researchSources(bundle, event, company) {
     const isCanonicalHost = officialHosts.some((host) => sameHostFamily(candidateHost, host));
     const companyName = clean(company.canonical_name).toLowerCase();
     const resultLead = clean(`${result.title} ${result.provider_body}`).toLowerCase();
-    const companyInLead = resultLead.includes(companyName);
+    const companyInLead = fundingResearchNameMatches(resultLead, companyName);
     const identityKey = identitySubject.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, "");
     const identityInLead = identityKey && resultLead.replace(/[^\p{L}\p{N}]+/gu, "").includes(identityKey);
     const isRelevantIndependent = result.source_class === "independent"

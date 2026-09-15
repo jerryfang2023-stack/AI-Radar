@@ -47,11 +47,17 @@ export function restoreAcceptedChinaFundingEvidence(date, command) {
 export function chinaFundingPlan(date, sourceDir, { rawLimit = 168 } = {}) {
   const tool = (name, ...args) => [`agent-workflow/tools/${name}.mjs`, ...args];
   const site = (name) => [`01-SiteV2/site/scripts/${name}.mjs`];
-  return [
+  const plan = [
     { id: "capture", commands: [tool("run-guanlan-daily-monitor", `--date=${date}`, `--source-artifact-dir=${sourceDir}`, "--use-source-artifacts=true", "--targeted-source-artifacts=true", "--merge-existing-intake=true", "--raw-min=1", `--raw-max=${rawLimit}`, `--raw-target=${rawLimit}`), tool("backup-private-evidence"), tool("migrate-private-evidence-source", "--delete-public-originals=true"), tool("assert-public-evidence-boundary"), tool("assert-private-evidence-backup", `--date=${date}`)] },
     { id: "facts", commands: [tool("build-data-center-v4", `--date=${date}`), tool("generate-data-center-model-assist", `--date=${date}`, "--write=true", "--concurrency=2", "--reuse-existing=true"), tool("assert-data-center-model-assist", `--date=${date}`), tool("backfill-source-title-translations", `--date=${date}`, "--write=true", "--concurrency=3"), tool("build-data-center-v4", `--date=${date}`), tool("assert-data-center-v4", `--date=${date}`), tool("assert-china-market-v1", `--date=${date}`, "--stage=bundle")] },
     { id: "projections", commands: [tool("sync-light-data-lake", "--v4-only=true", "--duckdb=skip"), tool("assert-data-lake-v4", "--duckdb=skip"), site("build-data-center-v4-frontstage"), tool("materialize-entity-history-v1"), tool("assert-entity-history-v1"), tool("generate-funding-insights-deepseek", `--date=${date}`, "--write=true"), tool("assert-funding-insights-v1", `--date=${date}`), site("build-funding-insights-frontstage"), tool("translate-public-structured-fields-deepseek", "--write=true"), tool("classify-funding-taxonomy-v4-1", "--write=true", "--apply=true"), tool("project-funding-taxonomy-to-events-v4-1"), tool("sync-light-data-lake", "--v4-only=true", "--duckdb=skip"), tool("assert-data-lake-v4", "--duckdb=skip"), site("build-funding-insights-frontstage"), tool("build-investment-institutions-v1"), tool("assert-investment-institutions-v1"), site("build-data-center-v4-frontstage"), tool("materialize-entity-history-v1"), tool("assert-entity-history-v1"), site("build-trend-radar-frontstage"), tool("assert-trend-radar-v1"), site("build-industry-reports-frontstage"), tool("sync-light-data-lake", "--v4-only=true", "--duckdb=skip"), tool("assert-data-lake-v4", "--duckdb=skip"), tool("assert-funding-insights-v1", "--all=true", "--frontstage=true"), tool("assert-taxonomy-consistency-v4-1"), tool("assert-public-evidence-boundary")] },
   ];
+  for (const command of plan.flatMap((stage) => stage.commands)) {
+    if (command[0].endsWith("/generate-funding-insights-deepseek.mjs")) {
+      command.push(`--checkpoint-dir=${sourceDir}/card-checkpoints`);
+    }
+  }
+  return plan;
 }
 
 function main() {

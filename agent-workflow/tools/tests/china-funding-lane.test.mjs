@@ -10,6 +10,13 @@ import { chinaFundingSourceDate } from "../lib/china-funding-source-date.mjs";
 import { eventSourceEligibility } from "../build-data-center-v4.mjs";
 
 const root = process.cwd();
+test("daily financing preserves individual card results inside the restored lane checkpoint", () => {
+  const sourceDir = "agent-workflow/reports/china-funding/2026-09-15";
+  const commands = chinaFundingPlan("2026-09-15", sourceDir).flatMap((stage) => stage.commands);
+  const generator = commands.find((args) => args[0].endsWith("/generate-funding-insights-deepseek.mjs"));
+  assert.ok(generator.includes(`--checkpoint-dir=${sourceDir}/card-checkpoints`));
+  assert.ok(commands.some((args) => args[0].endsWith("/assert-funding-insights-v1.mjs")));
+});
 test("financing commentary and multi-event headlines cannot become company financing facts", () => {
   const source = { published_at: "2026-09-14", acquisition_channel: "china-funding" };
   const artifact = { source_url: "https://www.chinaventure.com.cn/news/2026/123456.html" };

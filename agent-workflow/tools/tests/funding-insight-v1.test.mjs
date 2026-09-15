@@ -32,7 +32,17 @@ import {
   subjectCompanyForEvent,
   verifiedFundingEventCardCoverageProblems,
 } from "../funding-insight-v1-utils.mjs";
-import { canonicalSources, fundingHistory, recoveryCardsFromGit } from "../generate-funding-insights-deepseek.mjs";
+import { canonicalSources, fundingHistory, recoveryCardsFromGit, fundingResearchNameMatches } from "../generate-funding-insights-deepseek.mjs";
+
+test("research discovery accepts source-bound bilingual Chinese short names without inventing identities", () => {
+  const company = "深度内核（DeepKernel）";
+  assert.equal(fundingResearchNameMatches("深度内核完成数千万元种子轮融资", company), true);
+  assert.equal(fundingResearchNameMatches("深度内核 (DeepKernel) 完成融资", company), true);
+  assert.equal(fundingResearchNameMatches("DeepKernel software in Europe", company), false);
+  assert.equal(fundingResearchNameMatches("顺为资本投资另一家公司", company), false);
+  assert.equal(fundingResearchNameMatches("上海完成融资", "上海科技有限公司"), false);
+  assert.equal(fundingResearchNameMatches("任何公司", ""), false);
+});
 import {
   preserveFundingSourceChannels,
   verifiedFundingEventCount,
