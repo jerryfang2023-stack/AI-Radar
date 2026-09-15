@@ -35,6 +35,12 @@ despite a failed outcome.
 
 ## Preserve operational state
 
+- Network preflight checks both proxy environment variables and Git proxy
+  configuration. A dead loopback Git proxy receives an empty process-scoped
+  override inherited by Vault, OPS and the sibling financing publisher. User
+  configuration is never rewritten; reachable and remote proxies stay intact.
+  Windows PowerShell uses quoted Git parameters to preserve empty values.
+
 - Repair logs, supervision, gates, telemetry and incident drafts belong in the
   runtime directory. Commit only reviewed source/data changes and audit evidence.
   Controller and repair entrypoints default there, including manual npm calls.
