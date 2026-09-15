@@ -203,6 +203,10 @@ Daily China financing also writes body-free per-event card checkpoints under its
 dated lane directory, covered by the existing checkpoint artifact. A later failed
 card or projection must not discard successful research. Restored cards are still
 revalidated against current canonical evidence; blocked results never publish.
+Research discovery accepts a Chinese subject with an explicitly parenthesized
+English name when a result uses only its Chinese name. It must not require the
+literal bilingual display label in every secondary page. This affects candidate
+discovery only, not canonical aliases or exact-quote/card publication gates.
 Financing market commentary, ownership explainers and mixed financing/listing/news
 headlines are discovery material, not single-company financing evidence. Keep their
 originals and diagnostic reasons, but do not promote the headline subject into a
