@@ -32,6 +32,9 @@ despite a failed outcome.
    restored verbatim afterwards. Validate the restored title against the
    original amount and currency; neither repeated model arithmetic nor a
    relaxed numeric gate is a repair for a tenfold conversion error.
+   Calendar equivalence accepts spaces between a Chinese month number and 月;
+   translated months, days and years remain protected. A correct spaced Chinese
+   date must not force repeated model calls or source recollection.
 
 ## Preserve operational state
 

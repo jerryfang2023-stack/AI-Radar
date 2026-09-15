@@ -194,7 +194,7 @@ function normalizeDateTokens(value) {
       return ` QUARTER_${["ONE", "TWO", "THREE", "FOUR"][index]} `;
     })
     .replace(/\b(January|February|March|April|May|June|July|August|September|October|November|December)\b/giu, (_, month) => ` MONTH_${month.slice(0, 3).toUpperCase()} `)
-    .replace(/(?:^|\D)(1[0-2]|[1-9])月/gu, (match, month) => `${match.startsWith(month) ? "" : match[0]} MONTH_${["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"][Number(month) - 1]} `);
+    .replace(/(?:^|\D)(1[0-2]|[1-9])\s*月/gu, (match, month) => `${match.startsWith(month) ? "" : match[0]} MONTH_${["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"][Number(month) - 1]} `);
 }
 
 function normalizeChineseQuantifiers(value) {
@@ -245,6 +245,9 @@ export function comparableNumericFacts(value = "", spans = []) {
 export function sourceTitleFactsPreserved(sourceTitle = "", translation = "") {
   const source = stripGeneratorNoise(sourceTitle);
   const target = stripGeneratorNoise(translation);
+  const months = (value) => (normalizeDateTokens(value).match(/MONTH_[A-Z]{3}/gu) || []).sort();
+  const datedMonth = /\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d|\d\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\b|\d\s*月/iu;
+  if (datedMonth.test(source) && JSON.stringify(months(source)) !== JSON.stringify(months(target))) return false;
   const sourceAmounts = extractMoneyAmounts(source);
   const targetAmounts = extractMoneyAmounts(target);
   if (sourceAmounts.length !== targetAmounts.length) return false;
