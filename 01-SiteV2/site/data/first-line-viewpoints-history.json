@@ -1,24 +1,24 @@
 {
   "meta": {
-    "generatedAt": "2026-09-14T03:22:19.015Z",
+    "generatedAt": "2026-09-15T07:10:48.763Z",
     "sourceFile": "01-SiteV2/site/data/follow-builders-daily.json",
-    "sourceCommits": 149,
-    "sourceSnapshots": 150,
+    "sourceCommits": 150,
+    "sourceSnapshots": 151,
     "earliestDate": "2026-06-01",
-    "latestDate": "2026-09-13",
+    "latestDate": "2026-09-15",
     "dedupeKey": "original_url",
     "sourcePolicy": "Historical records are reconstructed from committed morning-lane snapshots and retain their original URL and source snapshot.",
     "translationPolicy": "Only complete approved Chinese translations with matching source hashes are published."
   },
   "stats": {
-    "discovered": 2734,
-    "aiRelevant": 1517,
-    "alreadyApproved": 710,
+    "discovered": 2756,
+    "aiRelevant": 1528,
+    "alreadyApproved": 720,
     "translatedThisRun": 0,
-    "pendingTranslation": 807,
-    "published": 1307,
+    "pendingTranslation": 808,
+    "published": 1317,
     "pendingReasons": {
-      "translation_gate_failed": 148,
+      "translation_gate_failed": 149,
       "mymemory": 634,
       "static_blog_title": 14,
       "none": 4,
@@ -26,6 +26,446 @@
     }
   },
   "remarks": [
+    {
+      "id": "2099589199104033031",
+      "source": "x",
+      "name": "Matt Turck",
+      "handle": "mattturck",
+      "role": "VC at FirstMarkCap. Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD Landscape.",
+      "text": "Ok, this was a fun weekend, but we all understand AI progress is not going to slow down, right? Too many players, too many economic incentives and too much prisoner's dilemma, both domestically and globally.",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "好吧，这个周末确实挺有意思，但我们都明白，AI的进步不会因此放缓，对吧？参与者太多，经济激励太大，无论是国内还是全球，都面临着太多的囚徒困境。",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "d37cfae46aa78a8f",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-14T20:00:48.000Z",
+      "date": "2026-09-15",
+      "url": "https://x.com/mattturck/status/2099589199104033031",
+      "likes": 34,
+      "retweets": 3,
+      "replies": 11,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2099571935495827761",
+      "source": "x",
+      "name": "Peter Steinberger",
+      "handle": "steipete",
+      "role": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world.",
+      "text": "This is so useful. pushing to add this to codex as well. https://t.co/Pqs53SlKM7",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "这太有用了。正在推动把这也加到codex里。https://t.co/Pqs53SlKM7",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "ead51da63824ab4b",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-14T18:52:12.000Z",
+      "date": "2026-09-15",
+      "url": "https://x.com/steipete/status/2099571935495827761",
+      "likes": 655,
+      "retweets": 19,
+      "replies": 53,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2099551291601248485",
+      "source": "x",
+      "name": "Boris Cherny",
+      "handle": "bcherny",
+      "role": "Claude Code anthropicai",
+      "text": "Claude Mods are landing now. Someone already built a Tetris-in-Claude mod 🤯 See issue for the latest community update, technical details, and more cool demos https://t.co/A15qGUZ6nx https://t.co/EbE2s7FZqK",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "Claude Mods 现已上线。已经有人做出了 Claude 里的俄罗斯方块 mod 🤯 查看 issue 了解最新的社区动态、技术细节以及更多酷炫演示 https://t.co/A15qGUZ6nx https://t.co/EbE2s7FZqK",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "b15eb161b0e6c934",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-14T17:30:10.000Z",
+      "date": "2026-09-15",
+      "url": "https://x.com/bcherny/status/2099551291601248485",
+      "likes": 2169,
+      "retweets": 140,
+      "replies": 243,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2099551141621329994",
+      "source": "x",
+      "name": "Thariq",
+      "handle": "trq212",
+      "role": "Claude Code anthropicai. prev YC W20, spc, medialab",
+      "text": "I talked to Sid & Robert about building Claude Code: how much things have changed, how hard it's been to keep up with model capabilities and also what we miss about software engineering before AI. https://t.co/vLDFRaXawS",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "我和Sid与Robert聊了聊构建Claude Code的事：变化有多大，跟上模型能力有多难，以及我们怀念AI之前软件工程的哪些方面。https://t.co/vLDFRaXawS",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "1665cea4d307c207",
+      "topic": "AI 编程",
+      "columnTags": [
+        {
+          "id": "opinion-ai-coding",
+          "name": "AI Coding 观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-coding",
+          "name": "AI Coding",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 AI 编程工具、设计到代码流程和软件生产方式的变化；需要结合产品发布或文档再做事实判断。",
+      "createdAt": "2026-09-14T17:29:34.000Z",
+      "date": "2026-09-15",
+      "url": "https://x.com/trq212/status/2099551141621329994",
+      "likes": 381,
+      "retweets": 39,
+      "replies": 48,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2099540886409695346",
+      "source": "x",
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "role": "vercel CEO",
+      "text": "Agents are only as good as the proof-checkers, compilers, type systems, and linters you give them. 𝚜𝚑𝚊𝚍𝚌𝚗/𝚕𝚒𝚗𝚝 helps agents stay on track with the rules of your design system. Meta: verifiers + skills are the new 'frameworks'! https://t.co/eHygdAWFrg",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "智能体的表现取决于你给它们的证明检查器、编译器、类型系统和代码检查工具。𝚜𝚑𝚊𝚍𝚌𝚗/𝚕𝚒𝚗𝚝帮助智能体遵循你的设计系统规则，保持正轨。Meta：验证器+技能就是新的“框架”！https://t.co/eHygdAWFrg",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "7094968f17553826",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-09-14T16:48:49.000Z",
+      "date": "2026-09-15",
+      "url": "https://x.com/rauchg/status/2099540886409695346",
+      "likes": 1182,
+      "retweets": 37,
+      "replies": 71,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2099536440006955445",
+      "source": "x",
+      "name": "Nikunj Kothari",
+      "handle": "nikunj",
+      "role": "partner fpvventures - investing in seed/A. previous: early hire meter, opendoor, atlassian & others. love shimoleejhaveri + 👦👧",
+      "text": "PSA to the new Dreamforce visitors.. Lyft bike is way way faster for your intra city commutes than spending hours stuck in a Waymo / Uber. The dedicated bike lanes in SOMA make this a breeze. Just like open source models you get 90% of the value for 10% of the time!",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "给新来参加Dreamforce的人提个醒……在市区通勤，骑Lyft自行车比堵在Waymo/Uber里耗上几个小时要快得多得多。SOMA的专用自行车道让这件事轻而易举。就像开源模型一样，你用10%的时间就能获得90%的价值！",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "aeb3e180eaad8f77",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-14T16:31:09.000Z",
+      "date": "2026-09-15",
+      "url": "https://x.com/nikunj/status/2099536440006955445",
+      "likes": 54,
+      "retweets": 0,
+      "replies": 7,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2099529959262019887",
+      "source": "x",
+      "name": "Aditya Agarwal",
+      "handle": "adityaag",
+      "role": "General Partner SPC, Co-Founder Bevel_Health",
+      "text": "This is an incredible demo. AI can be human. That is the ultimate goal. So proud to have been their earliest partner. As always, a lot more to build. https://t.co/4mDkza2Nd4",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "这是一次令人难以置信的演示。AI可以变得像人一样。这是终极目标。非常自豪能成为他们最早的合作伙伴。一如既往，还有更多要构建的。https://t.co/4mDkza2Nd4",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "cd528d6088113046",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-14T16:05:24.000Z",
+      "date": "2026-09-15",
+      "url": "https://x.com/adityaag/status/2099529959262019887",
+      "likes": 118,
+      "retweets": 6,
+      "replies": 7,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "https://tldr.tech/ai/2026-09-14",
+      "source": "blog",
+      "name": "TLDR AI Newsletter",
+      "handle": "tldr.tech",
+      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
+      "text": "Amodei slows frontier 🛑, ARC-AGI-4 🧠, Cursor Projects 👨‍💻",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "Amodei放缓前沿🛑，ARC-AGI-4 🧠，Cursor Projects 👨‍💻",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "e7ea5dd11da65d5c",
+      "topic": "AI 编程",
+      "columnTags": [
+        {
+          "id": "opinion-ai-coding",
+          "name": "AI Coding 观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-coding",
+          "name": "AI Coding",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 AI 编程工具、设计到代码流程和软件生产方式的变化；需要结合产品发布或文档再做事实判断。",
+      "createdAt": "Mon, 14 Sep 2026 00:00:00 GMT",
+      "date": "2026-09-14",
+      "url": "https://tldr.tech/ai/2026-09-14",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2099514906366328902",
+      "source": "x",
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "role": "vercel CEO",
+      "text": "Welcoming Steren, creator of Google Cloud Run, to Vercel. He will lead the Fluid family of compute products (Functions, Containers, Sandbox, Builds). Serverless was the last chapter of the cloud, and Steren helped define the paradigm at Google. Agents are the next frontier, and they require new compute primitives designed for them. Excited for Steren to lead this transition once again.",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "欢迎Steren——Google Cloud Run的创造者——加入Vercel。他将领导Fluid系列计算产品（Functions、Containers、Sandbox、Builds）。无服务器是云计算的上一篇章，而Steren曾在Google帮助定义了这一范式。智能体是下一个前沿，它们需要专为其设计的新计算原语。很高兴Steren能再次引领这一转变。",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "b536495d3ea60ee6",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-09-14T15:05:35.000Z",
+      "date": "2026-09-14",
+      "url": "https://x.com/rauchg/status/2099514906366328902",
+      "likes": 1935,
+      "retweets": 41,
+      "replies": 83,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2099393115241300166",
+      "source": "x",
+      "name": "Thibault Sottiaux",
+      "handle": "thsottiaux",
+      "role": "Codex & ChatGPT OpenAI",
+      "text": "What’s a feature we should remove from Codex that isn’t useful anymore?",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "我们应该从Codex中移除哪个不再有用的功能？",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "b549b822f7b54a15",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-14T07:01:38.000Z",
+      "date": "2026-09-14",
+      "url": "https://x.com/thsottiaux/status/2099393115241300166",
+      "likes": 8017,
+      "retweets": 148,
+      "replies": 8897,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
     {
       "id": "2098931686042210381",
       "source": "x",
@@ -68,7 +508,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "a5207e3024833c3ba9edc7d35699e13da8e99d1b"
     },
     {
       "id": "2098860941391872132",
@@ -112,7 +552,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "a5207e3024833c3ba9edc7d35699e13da8e99d1b"
     },
     {
       "id": "2098847298335687132",
@@ -156,7 +596,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "a5207e3024833c3ba9edc7d35699e13da8e99d1b"
     },
     {
       "id": "2098846399949627553",
@@ -200,7 +640,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "a5207e3024833c3ba9edc7d35699e13da8e99d1b"
     },
     {
       "id": "2098843136328171540",
@@ -244,7 +684,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "a5207e3024833c3ba9edc7d35699e13da8e99d1b"
     },
     {
       "id": "2098833404707922239",
@@ -288,7 +728,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "a5207e3024833c3ba9edc7d35699e13da8e99d1b"
     },
     {
       "id": "2098828265800835310",
@@ -332,7 +772,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "a5207e3024833c3ba9edc7d35699e13da8e99d1b"
     },
     {
       "id": "2098814342443761909",
@@ -376,7 +816,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "a5207e3024833c3ba9edc7d35699e13da8e99d1b"
     },
     {
       "id": "2098811563415150910",
@@ -420,7 +860,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "a5207e3024833c3ba9edc7d35699e13da8e99d1b"
     },
     {
       "id": "2098803717432860987",
@@ -464,7 +904,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "a5207e3024833c3ba9edc7d35699e13da8e99d1b"
     },
     {
       "id": "2098803573861621778",
@@ -508,7 +948,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "a5207e3024833c3ba9edc7d35699e13da8e99d1b"
     },
     {
       "id": "2098787667030712757",
@@ -552,7 +992,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "a5207e3024833c3ba9edc7d35699e13da8e99d1b"
     },
     {
       "id": "2098785357307539882",
@@ -596,7 +1036,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "a5207e3024833c3ba9edc7d35699e13da8e99d1b"
     },
     {
       "id": "2098639827084480864",
