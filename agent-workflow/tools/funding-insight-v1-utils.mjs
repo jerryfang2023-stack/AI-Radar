@@ -258,7 +258,8 @@ function fundingAmountMentions(value = "") {
       /(?:融资|筹集|募资|raises?|raised|raising|secured|funding\s+round|round\s+of)[^，,：:；;。！？.!?]{0,48}$/iu.test(before)
       || /^\s*(?:(?:的\s*)?(?:(?:(?:Pre[-\s]?)?[A-Z](?:\d+|\+)?|天使|种子|战略)\s*轮\s*)?融资|(?:funding\s+round|round)\b)/iu.test(after)
     );
-    return { raw: clean(match[0]), valuation, round };
+    const qualifier = before.match(/(?:超过|超|逾|至少|接近|将近|近|约|\b(?:just over|over|more than|at least|about|approximately|nearly))\s*$/iu)?.[0] || "";
+    return { raw: clean(`${qualifier}${match[0]}`), valuation, round };
   });
 }
 
@@ -304,7 +305,8 @@ function fundingEventAmountSemantics(event = {}, claims = []) {
   const roundMention = mentions.find((mention) => mention.round);
   const metrics = (event.metrics || []).map(clean).filter(Boolean);
   const roundAmount = roundMention
-    ? metrics.find((metric) => fundingAmountsEquivalent(metric, roundMention.raw)) || roundMention.raw
+    ? metrics.find((metric) => fundingAmountsEquivalent(metric, roundMention.raw)
+      && normalizeFundingAmount(metric).status === normalizeFundingAmount(roundMention.raw).status) || roundMention.raw
     : "";
   return {
     excluded: preliminary || (!roundAmount && mentions.some((mention) => mention.valuation)),

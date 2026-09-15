@@ -2727,3 +2727,38 @@ test("explicit same-disclosure links join legal-name and rounded-amount variants
   assert.equal(result[0].financing.announced_at, "2026-04-16");
   assert.equal(first.financing.amount, "4.55亿美元");
 });
+
+test("canonical funding proceeds preserve source qualifiers instead of metric precision", () => {
+  for (const [quote, expected] of [
+    ["讯兔科技正式完成超3亿元人民币B轮融资。", "lower_bound"],
+    ["公司完成近3亿元人民币B轮融资。", "approximate"],
+    ["公司完成3亿元人民币B轮融资。", "exact"],
+  ]) {
+    const event = { claim_refs: ["CL-amount"], metrics: ["3亿元人民币"] };
+    const claims = [{ claim_id: "CL-amount", claim_type: "funding", verification_status: "accepted", source_quote: quote }];
+    const amount = normalizeFundingAmount(canonicalFundingEventAmount(event, claims));
+    assert.equal(amount.value, 300000000);
+    assert.equal(amount.status, expected);
+  }
+});
+
+test("Sep15 reviewed domestic identities aggregate duplicate disclosures without losing source events", () => {
+  const bundle = JSON.parse(fs.readFileSync(path.join(root,
+    "01-SiteV2/content/12-applications/funding-insights/2026-09-15.json"), "utf8"));
+  const review = JSON.parse(fs.readFileSync(path.join(root,
+    "01-SiteV2/content/12-applications/funding-insights/company-identity-decisions.json"), "utf8"));
+  const cards = bundle.cards.filter((card) => /讯兔|深度内核/u.test(card.company.name));
+  assert.equal(cards.length, 5);
+  const unreviewed = cards.map((card, index) => ({ ...card,
+    company: { ...card.company, entity_id: `EN-unreviewed-${index}`, application_entity_id: `EN-unreviewed-${index}` },
+  }));
+  assert.equal(aggregateFundingRoundCards(unreviewed).length, 5, "names alone must not merge unreviewed identities");
+  const result = aggregateFundingRoundCards(cards, {}, {}, review);
+  assert.equal(result.length, 2);
+  assert.deepEqual(new Set(result.map((card) => card.company.application_entity_id)),
+    new Set(["FICO-rabyte", "FICO-deepkernel"]));
+  assert.deepEqual(new Set(result.flatMap((card) => card.source_event_ids)),
+    new Set(cards.map((card) => card.triggered_by_event_id)));
+  assert.ok(result.every((card) => !card.company.canonical_entity_consistent),
+    "application review must not promote canonical company identity");
+});
