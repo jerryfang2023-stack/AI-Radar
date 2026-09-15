@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-15T07:11:14.845Z",
-    "latestDataDate": "2026-09-14",
-    "currentDate": "2026-09-14",
-    "eventCount": 3230,
+    "generatedAt": "2026-09-15T07:33:29.824Z",
+    "latestDataDate": "2026-09-15",
+    "currentDate": "2026-09-15",
+    "eventCount": 3259,
     "quarantinedEventCount": 34,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -48,6 +48,62 @@
     ]
   },
   "relationships": [
+    {
+      "relationship_id": "REL2-8cc3dea2f3024fc2",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-d1ad14d4ad57d207",
+      "object_type": "entity",
+      "event_id": "EV-45850ff01e177304",
+      "claim_refs": [
+        "CL-854d54cfc084a39d",
+        "CL-adc25d6976c961a1"
+      ],
+      "source_refs": [
+        "SA-fd4f36f272e1900c"
+      ],
+      "data_date": "2026-09-15",
+      "status": "verified",
+      "subjectName": "OpenAI",
+      "objectName": "ChatGPT",
+      "predicateLabel": "发布",
+      "title": "OpenAI 发布 ChatGPT",
+      "eventTitle": "欧盟 AI 法案：AI 简报，2026 年 9 月 11 日",
+      "eventDate": "2026-09-12",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-854d54cfc084a39d",
+          "subject": "OpenAI",
+          "object": "ChatGPT for Financial Services",
+          "quote": "OpenAI has announced ChatGPT for Financial Services , integrating dedicated market data feeds and GPT-6 Astra for financial research, modeling, and client deliverables."
+        },
+        {
+          "id": "CL-adc25d6976c961a1",
+          "subject": "OpenAI",
+          "object": "Data agent within ChatGPT Work",
+          "quote": "OpenAI rolled out its Data agent within ChatGPT Work , enabling enterprise employees to connect internal databases and generate dynamic dashboards using natural language prompts."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-fd4f36f272e1900c",
+          "publisher": "isystem.ai",
+          "url": "https://isystem.ai/blog/ai-brief-2026-09-11"
+        }
+      ],
+      "sourceExcerpt": "OpenAI has announced ChatGPT for Financial Services , integrating dedicated market data feeds and GPT-6 Astra for financial research, modeling, and client deliverables.",
+      "event": {
+        "id": "EV-45850ff01e177304",
+        "title": "欧盟 AI 法案：AI 简报，2026 年 9 月 11 日",
+        "originalTitle": "eu ai act: AI Brief, 11 September 2026 - iSystem.ai",
+        "date": "2026-09-12",
+        "dataDate": "2026-09-15",
+        "eventTypeLabel": "产品发布"
+      }
+    },
     {
       "relationship_id": "REL2-3e5f73b7e12f9938",
       "relationship_version": "RELATION-V2.1",

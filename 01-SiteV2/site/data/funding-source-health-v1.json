@@ -1,28 +1,28 @@
 {
   "schema_version": "FUNDING-SOURCE-HEALTH-V1.0",
-  "generated_at": "2026-09-14T02:58:55.556Z",
-  "date": "2026-09-14",
-  "status": "degraded",
-  "state": "candidate_evidence_insufficient",
-  "last_checked_date": "2026-09-14",
-  "latest_financing_date": "2026-09-11",
+  "generated_at": "2026-09-15T07:33:44.387Z",
+  "date": "2026-09-15",
+  "status": "passed",
+  "state": "healthy",
+  "last_checked_date": "2026-09-15",
+  "latest_financing_date": "2026-09-14",
   "totals": {
-    "fetched": 475,
-    "funding_candidates": 119,
-    "verified_events": 0
+    "fetched": 590,
+    "funding_candidates": 106,
+    "verified_events": 3
   },
   "channels": [
     {
       "id": "aihot",
       "status": "collected",
-      "last_success_at": "2026-09-14T02:43:11.762Z",
+      "last_success_at": "2026-09-15T06:49:52.288Z",
       "response_ms": null,
       "http_status": "200",
-      "fetched_count": 136,
+      "fetched_count": 269,
       "latest_content_date": "2026-09-14",
       "duplicate_rate": 0,
-      "stale_rate": 0.75,
-      "funding_candidate_count": 4,
+      "stale_rate": 1,
+      "funding_candidate_count": 8,
       "verified_event_count": 0,
       "failures": [],
       "fallback_used": false
@@ -30,14 +30,14 @@
     {
       "id": "funding",
       "status": "collected",
-      "last_success_at": "2026-09-14T02:43:31.048Z",
+      "last_success_at": "2026-09-15T06:50:02.961Z",
       "response_ms": null,
       "http_status": "429",
-      "fetched_count": 44,
-      "latest_content_date": "2026-09-11",
+      "fetched_count": 46,
+      "latest_content_date": "2026-09-14",
       "duplicate_rate": 0,
       "stale_rate": 1,
-      "funding_candidate_count": 44,
+      "funding_candidate_count": 46,
       "verified_event_count": 0,
       "failures": [
         "RSS venturebeat-ai: HTTP 429"
@@ -46,52 +46,54 @@
     },
     {
       "id": "gdelt",
-      "status": "collected",
-      "last_success_at": "2026-09-14T02:54:12.114Z",
+      "status": "failed",
+      "last_success_at": "",
       "response_ms": null,
-      "http_status": "200",
-      "fetched_count": 56,
-      "latest_content_date": "2026-09-11",
-      "duplicate_rate": 0.1,
-      "stale_rate": 1,
-      "funding_candidate_count": 20,
+      "http_status": "",
+      "fetched_count": 0,
+      "latest_content_date": "",
+      "duplicate_rate": 0,
+      "stale_rate": 0,
+      "funding_candidate_count": 0,
       "verified_event_count": 0,
-      "failures": [],
+      "failures": [
+        "source collection command failed; see gdelt-source-run.log"
+      ],
       "fallback_used": false
     },
     {
       "id": "keyword",
       "status": "collected",
-      "last_success_at": "2026-09-14T02:50:50.807Z",
+      "last_success_at": "2026-09-15T06:58:30.811Z",
       "response_ms": null,
       "http_status": "200",
-      "fetched_count": 122,
-      "latest_content_date": "2026-09-07",
-      "duplicate_rate": 0.05,
-      "stale_rate": 1,
-      "funding_candidate_count": 40,
-      "verified_event_count": 0,
+      "fetched_count": 149,
+      "latest_content_date": "2026-09-15",
+      "duplicate_rate": 0.0244,
+      "stale_rate": 0.9756,
+      "funding_candidate_count": 41,
+      "verified_event_count": 2,
       "failures": [
-        "keyword-search pre-gate filtered 97 result(s): missing_ai_anchor_in_result=46; social_or_profile_source=34; broad_list_or_market_report=12; noise_term:hiring=2; noise_term:meme=2; noise_term:translation=1",
-        "Anysearch fallback for query \"AI procurement startup funding enterprise workflow announced September 2026 (AI procurement OR tender OR \"contract awarded\" OR \"purchasing agreement\") (official OR government OR newsroom)\": Anysearch returned 0 usable results"
+        "keyword-search pre-gate filtered 75 result(s): missing_ai_anchor_in_result=34; social_or_profile_source=24; broad_list_or_market_report=14; directory_or_search_page=1; noise_term:definition=1; noise_term:hiring=1",
+        "Anysearch fallback for query \"AI agent startup raises procurement workflow announced September 2026 (AI procurement OR tender OR \"contract awarded\" OR \"purchasing agreement\") (official OR government OR newsroom)\": Anysearch returned 0 usable results",
+        "Anysearch fallback for query \"AI accelerator supply agreement data center announced September 2026 (GPU OR accelerator OR HBM OR AI server) (\"supply agreement\" OR \"supply contract\" OR supplier OR \"purchasing agreement\") (official OR newsroom)\": Anysearch returned 0 usable results"
       ],
       "fallback_used": true
     },
     {
       "id": "rss",
       "status": "collected",
-      "last_success_at": "2026-09-14T02:43:19.356Z",
+      "last_success_at": "2026-09-15T06:49:50.202Z",
       "response_ms": null,
       "http_status": "429",
-      "fetched_count": 117,
-      "latest_content_date": "2026-09-11",
+      "fetched_count": 126,
+      "latest_content_date": "2026-09-14",
       "duplicate_rate": 0,
       "stale_rate": 1,
       "funding_candidate_count": 11,
-      "verified_event_count": 0,
+      "verified_event_count": 1,
       "failures": [
-        "RSS venturebeat-ai: HTTP 429",
-        "RSS tldr-ai-newsletter: HTTP 429"
+        "RSS venturebeat-ai: HTTP 429"
       ],
       "fallback_used": false
     }

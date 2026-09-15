@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-15T07:11:14.845Z",
-    "latestDataDate": "2026-09-14",
-    "currentDate": "2026-09-14",
-    "eventCount": 3230,
+    "generatedAt": "2026-09-15T07:33:29.824Z",
+    "latestDataDate": "2026-09-15",
+    "currentDate": "2026-09-15",
+    "eventCount": 3259,
     "quarantinedEventCount": 34,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -58,7 +58,8 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-4eaf3aabecae6016"
+      "EV-4eaf3aabecae6016",
+      "EV-0044c8acb4733273"
     ],
     "viewpointIds": [],
     "classificationRefs": [
@@ -71,7 +72,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-16",
-    "lastSeen": "2026-07-17",
+    "lastSeen": "2026-09-15",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
@@ -79,12 +80,31 @@
       ],
       "deployments": [],
       "partnerships": [],
-      "productsServices": [],
+      "productsServices": [
+        "EV-0044c8acb4733273"
+      ],
       "hardware": [],
       "organizationPeople": [],
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-0044c8acb4733273",
+        "dataDate": "2026-09-15",
+        "date": "2026-09-14",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Fireworks 评测 DeepSeek-V4.1-Flash：DeepSWE 达 GPT-6 Astra 水准、成本仅 1/15",
+        "displayTags": [],
+        "entityIds": [
+          "EN-0caee180da9d0f3f",
+          "EN-6f7ac1823da81d2e",
+          "EN-ab03dea2d9bd6432"
+        ]
+      },
       {
         "id": "EV-4eaf3aabecae6016",
         "dataDate": "2026-07-17",

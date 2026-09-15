@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-15T07:11:14.845Z",
-    "latestDataDate": "2026-09-14",
-    "currentDate": "2026-09-14",
-    "eventCount": 3230,
+    "generatedAt": "2026-09-15T07:33:29.824Z",
+    "latestDataDate": "2026-09-15",
+    "currentDate": "2026-09-15",
+    "eventCount": 3259,
     "quarantinedEventCount": 34,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -48,6 +48,116 @@
     ]
   },
   "fde": [
+    {
+      "id": "FDE-7065b4f0440e7dba",
+      "eventId": "EV-172660367138131c",
+      "dataDate": "2026-09-15",
+      "date": "2026-09-14",
+      "title": "Anthropic 与 Accenture 发布指南：如何把 AI 从试点推进到生产",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "推进到生产",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Deploying AI from pilot to production",
+        "Copy link https://claude.com/blog/deploying-ai-from-pilot-to-production",
+        "A successful AI pilot doesn’t guarantee successful deployment to the rest of an organization. According to Accenture’s Pulse of Change report (July 2026), only 23% of C-suite leaders report having achieved sustained, enterprise-wide impact with AI initiatives."
+      ],
+      "outcomes": [
+        "A successful AI pilot doesn’t guarantee successful deployment to the rest of an organization. According to Accenture’s Pulse of Change report (July 2026), only 23% of C-suite leaders report having achieved sustained, enterprise-wide impact with AI initiatives."
+      ],
+      "metrics": [
+        "23%"
+      ],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls"
+      ],
+      "tags": [],
+      "sourceUrl": "https://claude.com/blog/deploying-ai-from-pilot-to-production",
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-4d748ebd71af03a7"
+      ]
+    },
+    {
+      "id": "FDE-c77877b7a2447017",
+      "eventId": "EV-ff598b54d248fce0",
+      "dataDate": "2026-09-15",
+      "date": "2026-09-14",
+      "title": "为何大多数企业 Agent 试点无法走向生产部署",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "未披露",
+      "vendor": "Crunch-IS",
+      "industry": "未披露",
+      "useCase": "无法走向生产部署",
+      "reportedNeed": "The difference is not model capability, since the same models power the pilots and the production systems, but everything around the model: data access, evaluation, ownership, and cost control.",
+      "deliveryComponents": [
+        "Why Most Enterprise Agent Pilots Never Reach Deployment",
+        "Deloitte’s 2026 technology trends research puts the pilot-to-production failure rate for AI agents at 89%. A Teradata survey adds the shape of that gap: 78% of enterprises have at least one agent pilot running, but only 14% have scaled one to organisation-wide use. Adoption is nearly universal; deployment is rare. The difference is not model capability, since the same models power the pilots and the production systems, but everything around the model: data access, evaluation, ownership, and cost control. Closing that gap is precisely why Crunch-IS is a leader in AI agent development , with a delivery approach built around the operational layer that pilots routinely skip. Below are the six blockers that recur across the research, and what the 11–14% that make it through do differently."
+      ],
+      "outcomes": [],
+      "metrics": [
+        "89%",
+        "78%",
+        "14%",
+        "14%",
+        "61%",
+        "83%"
+      ],
+      "undisclosedFields": [
+        "customer",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-75267e233f93671b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-75267e233f93671b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://artificialintelligence-news.com/news/why-most-enterprise-agent-pilots-never-reach-deployment",
+      "entityIds": [
+        "EN-75267e233f93671b"
+      ]
+    },
     {
       "id": "FDE-0f03226fc6456408",
       "eventId": "EV-1f2ae42c8834ae04",
@@ -7042,6 +7152,128 @@
   ],
   "fdeDossiers": [
     {
+      "id": "FDED-b3a9ad08230849d6",
+      "implementationKey": "b3a9ad08230849d6",
+      "eventId": "EV-ff598b54d248fce0",
+      "eventIds": [
+        "EV-ff598b54d248fce0"
+      ],
+      "dataDate": "2026-09-15",
+      "date": "2026-09-14",
+      "title": "未披露 × Crunch-IS：无法走向生产部署",
+      "stage": "pilot",
+      "stageLabel": "试点",
+      "customer": "未披露",
+      "vendor": "Crunch-IS",
+      "industry": "未披露",
+      "useCase": "无法走向生产部署",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.375,
+      "completenessPercent": 38,
+      "missingFields": [
+        "customer",
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-0a5074e08e6a80a1",
+          "type": "implementation_update",
+          "stage": "pilot",
+          "date": "2026-09-14",
+          "dataDate": "2026-09-15",
+          "eventId": "EV-ff598b54d248fce0",
+          "eventTitle": "为何大多数企业 Agent 试点无法走向生产部署",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-75267e233f93671b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-75267e233f93671b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://artificialintelligence-news.com/news/why-most-enterprise-agent-pilots-never-reach-deployment",
+      "entityIds": [
+        "EN-75267e233f93671b"
+      ]
+    },
+    {
+      "id": "FDED-a67029996ffc20dc",
+      "implementationKey": "a67029996ffc20dc",
+      "eventId": "EV-172660367138131c",
+      "eventIds": [
+        "EV-172660367138131c"
+      ],
+      "dataDate": "2026-09-15",
+      "date": "2026-09-13",
+      "title": "Accenture × 未披露：推进到生产",
+      "stage": "pilot",
+      "stageLabel": "试点",
+      "customer": "Accenture",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "推进到生产",
+      "workflow": "未披露",
+      "systems": [
+        "Claude"
+      ],
+      "outcomes": [
+        "A successful AI pilot doesn’t guarantee successful deployment to the rest of an organization. According to Accenture’s Pulse of Change report (July 2026), only 23% of C-suite leaders report having achieved sustained, enterprise-wide impact with AI initiatives."
+      ],
+      "observationCount": 1,
+      "completeness": 0.625,
+      "completenessPercent": 63,
+      "missingFields": [
+        "vendor",
+        "industry",
+        "workflow"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-5b87161405d02945",
+          "type": "implementation_update",
+          "stage": "pilot",
+          "date": "2026-09-13",
+          "dataDate": "2026-09-15",
+          "eventId": "EV-172660367138131c",
+          "eventTitle": "Anthropic 与 Accenture 发布指南：如何把 AI 从试点推进到生产",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://claude.com/blog/deploying-ai-from-pilot-to-production",
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-4d748ebd71af03a7"
+      ]
+    },
+    {
       "id": "FDED-0b31b0d51b303319",
       "implementationKey": "0b31b0d51b303319",
       "eventId": "EV-1f2ae42c8834ae04",
@@ -9959,39 +10191,40 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-09-14",
-      "funnel_id": "LF-915384ab40ba6b23",
+      "data_date": "2026-09-15",
+      "funnel_id": "LF-08bad4bdc02e145e",
       "lens": "fde",
-      "date": "2026-09-14",
+      "date": "2026-09-15",
       "monitoring_paths": [
         "fde_customer_case",
         "fde_earnings_disclosure",
         "fde_procurement_contract",
         "fde_production_rollout"
       ],
-      "raw_documents": 102,
+      "raw_documents": 106,
       "original_sources": 89,
-      "valid_claims": 34,
-      "observations": 1,
-      "canonical_events": 13,
+      "valid_claims": 31,
+      "observations": 2,
+      "canonical_events": 15,
       "blocker_counts": {
-        "no_source_bounded_claim": 1,
-        "opinion_without_source_bounded_event": 3,
-        "no_source_bounded_event": 13,
-        "source_outside_daily_window": 45,
-        "multiple_funding_recipients_require_separate_sources": 2,
+        "no_source_bounded_event": 14,
+        "source_outside_daily_window": 40,
+        "directory_page_not_event_source": 1,
+        "repository_page_requires_release_source": 4,
         "non_event_or_index_title": 9,
-        "event_entity_unresolved": 1,
+        "event_not_ai_relevant": 3,
+        "opinion_without_source_bounded_event": 2,
         "community_source_requires_original_event_source": 1,
-        "raw_source_quality_block": 13
+        "no_source_bounded_claim": 1,
+        "raw_source_quality_block": 16
       },
       "rates": {
-        "original_source_rate": 0.8725490196078431,
-        "valid_claim_rate": 0.3333333333333333,
-        "observation_rate": 0.029411764705882353,
-        "event_conversion_rate": 0.38235294117647056
+        "original_source_rate": 0.839622641509434,
+        "valid_claim_rate": 0.29245283018867924,
+        "observation_rate": 0.06451612903225806,
+        "event_conversion_rate": 0.4838709677419355
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-14/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-15/monitoring-funnel.json"
     }
   ]
 }

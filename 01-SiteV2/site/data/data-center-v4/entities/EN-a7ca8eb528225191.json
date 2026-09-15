@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-15T07:11:14.845Z",
-    "latestDataDate": "2026-09-14",
-    "currentDate": "2026-09-14",
-    "eventCount": 3230,
+    "generatedAt": "2026-09-15T07:33:29.824Z",
+    "latestDataDate": "2026-09-15",
+    "currentDate": "2026-09-15",
+    "eventCount": 3259,
     "quarantinedEventCount": 34,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -58,6 +58,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-2e485512093088da",
       "EV-4809eb76696a9e61",
       "EV-84bd528b36f55b00"
     ],
@@ -65,13 +66,14 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-04",
-    "lastSeen": "2026-09-11",
+    "lastSeen": "2026-09-15",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-2e485512093088da",
         "EV-4809eb76696a9e61"
       ],
       "hardware": [],
@@ -81,6 +83,22 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-2e485512093088da",
+        "dataDate": "2026-09-15",
+        "date": "2026-09-15",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "AI 智能体新闻 — 2026年9月15日当周（每日更新）AI 智能体新闻 — 2026年9月15日当周",
+        "displayTags": [],
+        "entityIds": [
+          "EN-3ccbd9105a45d8fc",
+          "EN-a7ca8eb528225191"
+        ]
+      },
       {
         "id": "EV-84bd528b36f55b00",
         "dataDate": "2026-09-11",

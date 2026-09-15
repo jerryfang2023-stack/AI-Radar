@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-15T07:11:14.845Z",
-    "latestDataDate": "2026-09-14",
-    "currentDate": "2026-09-14",
-    "eventCount": 3230,
+    "generatedAt": "2026-09-15T07:33:29.824Z",
+    "latestDataDate": "2026-09-15",
+    "currentDate": "2026-09-15",
+    "eventCount": 3259,
     "quarantinedEventCount": 34,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -124,6 +124,7 @@
       "EV-acb2087779a8ea3c",
       "EV-6415a58637893b34",
       "EV-4faa2bcf2e42e60c",
+      "EV-5a90068e9e762f94",
       "EV-d32e50951ff7f9a1",
       "EV-85ba013c379a9d3d",
       "EV-db87eda4a39de22a",
@@ -218,6 +219,7 @@
       "EN-8d4321d936320802",
       "EN-85f0c155e340fb63",
       "EN-240389f4b730bad4",
+      "EN-69abd664ab1011d3",
       "EN-1a6d6ea981e8688c",
       "EN-39ba5f9dcab4e98a",
       "EN-c70eca6b0f88f44d",
@@ -246,6 +248,7 @@
     "hardwareIds": [
       "HW-7889eb510b9d4210",
       "HW-ceb55d9bc637c1d3",
+      "HW-833c523a4ed85286",
       "HW-44106c4f7e18a2d3",
       "HW-f05a371d8e0599b0",
       "HW-506bfd2ae2c40c2b",
@@ -255,7 +258,7 @@
       "HW-1450585d9cd5879f"
     ],
     "firstSeen": "2026-01-12",
-    "lastSeen": "2026-09-14"
+    "lastSeen": "2026-09-15"
   },
   "events": [
     {
@@ -17618,6 +17621,164 @@
       "publisher": "NVIDIA AI Blog"
     },
     {
+      "id": "EV-5a90068e9e762f94",
+      "dataDate": "2026-09-15",
+      "date": "2026-09-14",
+      "updatedDate": "2026-09-15",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "eventGroup": "AI 硬件",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "蓝虫具身发布模块化人形机器人 Mantis Standard\"小白\"，0.98 万元起",
+      "originalTitle": "",
+      "subject": "蓝虫具身",
+      "action": "发布模块化人形机器人",
+      "object": "Mantis Standard\"小白\"，0.98 万元起",
+      "metrics": [
+        "0.98 万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-69abd664ab1011d3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "robotic_system",
+            "name": "机器人系统",
+            "entityIds": [
+              "EN-69abd664ab1011d3"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-69abd664ab1011d3"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-69abd664ab1011d3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "robotic_system",
+          "name": "机器人系统",
+          "entityIds": [
+            "EN-69abd664ab1011d3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-69abd664ab1011d3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "robotic_system",
+          "name": "机器人系统",
+          "entityIds": [
+            "EN-69abd664ab1011d3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-69abd664ab1011d3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-69abd664ab1011d3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-69abd664ab1011d3",
+        "EN-234d215e1413c04a"
+      ],
+      "entityNames": [
+        "蓝虫具身",
+        "Mantis Standard"
+      ],
+      "productName": "Mantis Standard",
+      "products": [
+        {
+          "name": "Mantis Standard",
+          "type": "AI 硬件",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/1/002/166.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-d32e50951ff7f9a1",
       "dataDate": "2026-09-08",
       "date": "2026-09-07",
@@ -17989,9 +18150,7 @@
         {
           "name": "MHS",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/995/514.htm",
@@ -22220,8 +22379,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-target_user-business_user",
+        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-industry-construction_real_estate",
         "TX-technology-embodied_ai",
@@ -22358,9 +22517,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-target_user-business_user",
         "TX-industry-logistics_supply_chain",
         "TX-industry-manufacturing",
-        "TX-target_user-business_user",
         "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-ai_market_category-physical_ai",
@@ -22387,13 +22546,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-target_user-business_user",
+        "TX-use_case-data_analysis",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-manufacturing",
-        "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-physical_automation",
         "TX-industry-energy_utilities",
-        "TX-use_case-data_analysis",
         "TX-ai_market_subcategory-data",
         "TX-technology-embodied_ai",
         "TX-ai_market_application-synthetic_data",
@@ -22445,14 +22604,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-target_user-business_user",
+        "TX-use_case-data_analysis",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-manufacturing",
-        "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-physical_automation",
         "TX-industry-retail_ecommerce",
         "TX-target_user-researcher",
-        "TX-use_case-data_analysis",
         "TX-ai_market_application-data_preparation_curation",
         "TX-ai_market_subcategory-data",
         "TX-technology-embodied_ai",
@@ -22531,10 +22690,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-manufacturing",
-        "TX-target_user-business_user",
         "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-ai_market_category-physical_ai",
@@ -22564,8 +22723,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-target_user-business_user",
+        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-ai_market_category-physical_ai",
@@ -22662,11 +22821,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-media_entertainment",
         "TX-technology-embodied_ai",
-        "TX-technology-multimodal",
-        "TX-technology-agentic_execution"
+        "TX-technology-multimodal"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-23",
@@ -22746,9 +22905,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
         "TX-target_user-business_user",
         "TX-use_case-physical_automation",
-        "TX-industry-financial_services",
         "TX-industry-food_hospitality",
         "TX-industry-retail_ecommerce",
         "TX-technology-embodied_ai",
@@ -22817,9 +22976,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-target_user-business_user",
         "TX-industry-logistics_supply_chain",
         "TX-industry-manufacturing",
-        "TX-target_user-business_user",
         "TX-use_case-physical_automation",
         "TX-target_user-consumer",
         "TX-industry-retail_ecommerce",
@@ -23154,6 +23313,7 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-52fed56118708e35",
         "EV-c04784e49047a2ff",
         "EV-fddb8698d1778844",
         "EV-9ddf337c75157076",
@@ -23313,6 +23473,7 @@
         "EV-a4f052325d0ef230",
         "EV-cb3cb11ff13f6069",
         "EV-8115dd18f2812a29",
+        "EV-7c4ce5576d1d691b",
         "EV-09029303144c5e67",
         "EV-621b257277382475",
         "EV-51548a69e952646b",
@@ -23350,18 +23511,20 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
+        "TX-product_form-end_user_application",
+        "TX-target_user-business_user",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-use_case-research_discovery",
+        "TX-technology-agentic_execution",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-manufacturing",
-        "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-product_form-model",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-aerospace_defense",
-        "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-retail_ecommerce",
-        "TX-use_case-research_discovery",
         "TX-use_case-software_development",
         "TX-technology-code_generation",
         "TX-technology-embodied_ai",
@@ -23372,8 +23535,6 @@
         "TX-use_case-security_operations",
         "TX-ai_market_application-computing_infrastructure",
         "TX-product_form-ai_compute_system",
-        "TX-product_form-end_user_application",
-        "TX-technology-agentic_execution",
         "TX-technology-open_weights",
         "TX-technology-video_generation",
         "TX-technology-image_generation",
@@ -23405,7 +23566,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-09-14"
+      "lastSeen": "2026-09-15"
     },
     {
       "id": "EN-998255d915da8953",
@@ -23447,8 +23608,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-target_user-business_user",
+        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-industry-retail_ecommerce",
         "TX-technology-embodied_ai",
@@ -23520,8 +23681,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-target_user-business_user",
+        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-ai_market_category-physical_ai",
@@ -23546,8 +23707,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-logistics_supply_chain",
         "TX-target_user-business_user",
+        "TX-industry-logistics_supply_chain",
         "TX-use_case-physical_automation",
         "TX-product_form-model",
         "TX-technology-embodied_ai",
@@ -23664,8 +23825,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-target_user-business_user",
+        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-industry-retail_ecommerce",
         "TX-technology-embodied_ai",
@@ -23714,12 +23875,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-target_user-business_user",
+        "TX-use_case-research_discovery",
+        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-industry-healthcare_life_sciences",
         "TX-target_user-researcher",
-        "TX-use_case-research_discovery",
         "TX-technology-embodied_ai",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system"
@@ -23745,6 +23906,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-data_analysis",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-automotive_transportation",
         "TX-industry-logistics_supply_chain",
@@ -23752,7 +23914,6 @@
         "TX-target_user-developer",
         "TX-use_case-physical_automation",
         "TX-target_user-researcher",
-        "TX-use_case-data_analysis",
         "TX-ai_market_subcategory-data",
         "TX-technology-embodied_ai",
         "TX-ai_market_application-synthetic_data",
@@ -24054,6 +24215,8 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-96114d2f1e3abdfd",
+        "EV-a65c5ce73c055710",
         "EV-f01a13953fa7aaaa",
         "EV-354ff4bc2d0327b4",
         "EV-41df51972f9b3a4a",
@@ -24197,6 +24360,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
+        "TX-target_user-business_user",
+        "TX-use_case-data_analysis",
+        "TX-use_case-research_discovery",
+        "TX-technology-agentic_execution",
         "TX-ai_market_application-chips",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
@@ -24204,7 +24372,6 @@
         "TX-industry-logistics_supply_chain",
         "TX-industry-manufacturing",
         "TX-product_form-chip_accelerator",
-        "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-physical_automation",
         "TX-ai_market_application-models",
@@ -24215,7 +24382,6 @@
         "TX-industry-construction_real_estate",
         "TX-industry-education",
         "TX-industry-energy_utilities",
-        "TX-industry-financial_services",
         "TX-industry-food_hospitality",
         "TX-industry-government_public_sector",
         "TX-industry-healthcare_life_sciences",
@@ -24225,8 +24391,6 @@
         "TX-industry-retail_ecommerce",
         "TX-industry-telecommunications",
         "TX-target_user-researcher",
-        "TX-use_case-data_analysis",
-        "TX-use_case-research_discovery",
         "TX-use_case-software_development",
         "TX-technology-code_generation",
         "TX-technology-embodied_ai",
@@ -24240,7 +24404,6 @@
         "TX-ai_market_application-computing_infrastructure",
         "TX-product_form-ai_compute_system",
         "TX-product_form-model_api_service",
-        "TX-technology-agentic_execution",
         "TX-technology-open_weights",
         "TX-use_case-customer_support",
         "TX-technology-speech_audio",
@@ -24279,7 +24442,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-14"
+      "lastSeen": "2026-09-15"
     },
     {
       "id": "EN-85f0c155e340fb63",
@@ -24351,6 +24514,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
         "TX-product_form-chip_accelerator",
         "TX-use_case-physical_automation",
@@ -24359,7 +24523,6 @@
         "TX-product_form-robotic_system",
         "TX-product_form-enterprise_software_platform",
         "TX-product_form-ai_compute_system",
-        "TX-technology-agentic_execution",
         "TX-product_form-developer_tool",
         "TX-technology-human_in_loop"
       ],
@@ -24372,6 +24535,29 @@
       ],
       "firstSeen": "2026-05-23",
       "lastSeen": "2026-09-12"
+    },
+    {
+      "id": "EN-69abd664ab1011d3",
+      "name": "蓝虫具身",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-5a90068e9e762f94"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-physical_automation",
+        "TX-technology-embodied_ai",
+        "TX-product_form-robotic_system"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-14",
+      "lastSeen": "2026-09-15"
     },
     {
       "id": "EN-1a6d6ea981e8688c",
@@ -24412,10 +24598,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-target_user-business_user",
         "TX-industry-automotive_transportation",
         "TX-industry-logistics_supply_chain",
         "TX-industry-manufacturing",
-        "TX-target_user-business_user",
         "TX-use_case-physical_automation",
         "TX-product_form-model",
         "TX-technology-embodied_ai",
@@ -24469,6 +24655,8 @@
         "EV-f247eff115e840af",
         "EV-ed8260ee9a7a80af",
         "EV-df88363737beb880",
+        "EV-172660367138131c",
+        "EV-da26b43d3924136e",
         "EV-f1cfc5004f3115bc",
         "EV-4965305d57edf6dd",
         "EV-b02d4c02ede22ebe",
@@ -24524,8 +24712,10 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
-        "EV-606d3928fcd6a078",
         "EV-8232ad0075a77b7a",
+        "EV-b76e38f3fd483ef1",
+        "EV-d04ec50db3735d89",
+        "EV-606d3928fcd6a078",
         "EV-77da2ce9b815b9f8",
         "EV-c74cc1e3155a00c9",
         "EV-aa5114540046f2c0",
@@ -24737,6 +24927,8 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-7c4ce5576d1d691b",
+        "EV-829ccab2c29c897c",
         "EV-98d17a188b67f023",
         "EV-2258d4e39a99c186",
         "EV-d4c42c125b98b97e",
@@ -24840,18 +25032,21 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-financial_services",
+        "TX-target_user-business_user",
+        "TX-use_case-data_analysis",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-use_case-research_discovery",
+        "TX-technology-agentic_execution",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-chip_accelerator",
-        "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
         "TX-product_form-model",
         "TX-target_user-consumer",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-aerospace_defense",
         "TX-industry-education",
-        "TX-industry-financial_services",
         "TX-industry-government_public_sector",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-legal_services",
@@ -24860,14 +25055,11 @@
         "TX-industry-retail_ecommerce",
         "TX-target_user-educator",
         "TX-target_user-researcher",
-        "TX-use_case-data_analysis",
-        "TX-use_case-research_discovery",
         "TX-use_case-software_development",
         "TX-technology-embodied_ai",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-security_operations",
         "TX-product_form-model_api_service",
-        "TX-technology-agentic_execution",
         "TX-technology-open_weights",
         "TX-use_case-customer_support",
         "TX-product_form-compute_cloud_service",
@@ -24905,7 +25097,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-09-14"
+      "lastSeen": "2026-09-15"
     },
     {
       "id": "EN-e3ce9cc5efa9354c",
@@ -24926,12 +25118,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-end_user_application",
+        "TX-technology-agentic_execution",
         "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-technology-on_device",
-        "TX-deployment_model-edge_device",
-        "TX-product_form-end_user_application",
-        "TX-technology-agentic_execution"
+        "TX-deployment_model-edge_device"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-06",
@@ -24960,10 +25152,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-target_user-business_user",
         "TX-industry-automotive_transportation",
         "TX-industry-logistics_supply_chain",
         "TX-industry-manufacturing",
-        "TX-target_user-business_user",
         "TX-use_case-physical_automation",
         "TX-industry-education",
         "TX-target_user-educator",
@@ -25096,12 +25288,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-research_discovery",
+        "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
         "TX-use_case-physical_automation",
         "TX-product_form-model",
         "TX-industry-aerospace_defense",
         "TX-industry-media_entertainment",
-        "TX-use_case-research_discovery",
         "TX-use_case-software_development",
         "TX-technology-code_generation",
         "TX-technology-embodied_ai",
@@ -25111,7 +25304,6 @@
         "TX-deployment_model-edge_device",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-security_operations",
-        "TX-technology-agentic_execution",
         "TX-technology-video_generation",
         "TX-technology-image_generation",
         "TX-technology-speech_audio",
@@ -25184,8 +25376,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-embodied_ai",
-        "TX-technology-agentic_execution"
+        "TX-technology-agentic_execution",
+        "TX-technology-embodied_ai"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-18",
@@ -25642,6 +25834,46 @@
     }
   ],
   "hardware": [
+    {
+      "id": "HW-833c523a4ed85286",
+      "eventId": "EV-5a90068e9e762f94",
+      "dataDate": "2026-09-15",
+      "date": "2026-09-14",
+      "title": "蓝虫具身发布模块化人形机器人 Mantis Standard\"小白\"，0.98 万元起",
+      "hardwareType": "robot",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "蓝虫具身",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "0.98 万元起",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-69abd664ab1011d3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/1/002/166.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-09-14",
+      "entityIds": [
+        "EN-69abd664ab1011d3",
+        "EN-234d215e1413c04a"
+      ]
+    },
     {
       "id": "HW-44106c4f7e18a2d3",
       "eventId": "EV-8b288f548fd59a91",
@@ -26219,6 +26451,137 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-91a0ae33ca21aa09",
+      "snapshotKey": "91a0ae33ca21aa09",
+      "snapshotId": "HWS-b5ef0fb770341cac",
+      "eventId": "EV-5a90068e9e762f94",
+      "eventIds": [
+        "EV-5a90068e9e762f94"
+      ],
+      "dataDate": "2026-09-15",
+      "date": "2026-09-15",
+      "title": "Mantis Standard",
+      "subject": "蓝虫具身",
+      "productNames": [
+        "Mantis Standard"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "0.98",
+          "unit": "万",
+          "fact_ref": "HWF-5983a3568e105f2b"
+        }
+      },
+      "factCount": 3,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-15",
+          "hardware_fact_id": "HWF-cf7be1b2ce3c321d",
+          "fact_type": "product",
+          "observed_at": "2026-09-14T08:45:16.000Z",
+          "subject_entity_id": "EN-69abd664ab1011d3",
+          "subject_name": "蓝虫具身",
+          "product_entity_ids": [
+            "EN-234d215e1413c04a"
+          ],
+          "product_names": [
+            "Mantis Standard"
+          ],
+          "component_type": "robot",
+          "metric_value": "0.98",
+          "unit": "万",
+          "source_quote": "蓝虫具身发布模块化人形机器人 Mantis Standard“小白”，0.98 万元起 - IT之家",
+          "event_refs": [
+            "EV-5a90068e9e762f94"
+          ],
+          "claim_ref": "CL-a07aee4a294e9b54",
+          "source_refs": [
+            "SA-5c3066c58de838e6"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-15/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-09-15",
+          "hardware_fact_id": "HWF-596edf9631d34432",
+          "fact_type": "product",
+          "observed_at": "2026-09-14T08:45:16.000Z",
+          "subject_entity_id": "EN-69abd664ab1011d3",
+          "subject_name": "蓝虫具身",
+          "product_entity_ids": [
+            "EN-234d215e1413c04a"
+          ],
+          "product_names": [
+            "Mantis Standard"
+          ],
+          "component_type": "robot",
+          "metric_value": "0.98",
+          "unit": "万",
+          "source_quote": "蓝虫具身发布模块化人形机器人 Mantis Standard“小白”，0.98 万元起",
+          "event_refs": [
+            "EV-5a90068e9e762f94"
+          ],
+          "claim_ref": "CL-acd3eee01c688ca6",
+          "source_refs": [
+            "SA-5c3066c58de838e6"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-15/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-09-15",
+          "hardware_fact_id": "HWF-5983a3568e105f2b",
+          "fact_type": "product",
+          "observed_at": "2026-09-14T08:45:16.000Z",
+          "subject_entity_id": "EN-69abd664ab1011d3",
+          "subject_name": "蓝虫具身",
+          "product_entity_ids": [
+            "EN-234d215e1413c04a"
+          ],
+          "product_names": [
+            "Mantis Standard"
+          ],
+          "component_type": "robot",
+          "metric_value": "0.98",
+          "unit": "万",
+          "source_quote": "IT之家 9 月 14 日消息，西安交通大学科技成果转化企业蓝虫具身今日发布新一代模块化人形机器人 Mantis Standard “小白”， 售价 0.98 万起 。",
+          "event_refs": [
+            "EV-5a90068e9e762f94"
+          ],
+          "claim_ref": "CL-599095750e01f426",
+          "source_refs": [
+            "SA-5c3066c58de838e6"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-15/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-69abd664ab1011d3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/1/002/166.htm",
+      "entityIds": [
+        "EN-69abd664ab1011d3",
+        "EN-234d215e1413c04a"
+      ]
+    },
     {
       "id": "HWC-4e36092f626befd3",
       "snapshotKey": "4e36092f626befd3",

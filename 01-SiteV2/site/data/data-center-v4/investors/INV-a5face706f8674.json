@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-15T07:11:14.845Z",
-    "latestDataDate": "2026-09-14",
-    "currentDate": "2026-09-14",
-    "eventCount": 3230,
+    "generatedAt": "2026-09-15T07:33:29.824Z",
+    "latestDataDate": "2026-09-15",
+    "currentDate": "2026-09-15",
+    "eventCount": 3259,
     "quarantinedEventCount": 34,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -56,23 +56,24 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 3,
-    "china_market_company_count": 3,
+    "china_market_activity_count": 4,
+    "china_market_company_count": 4,
     "first_disclosed_at": "2026-02-24",
-    "latest_disclosed_at": "2026-09-08",
+    "latest_disclosed_at": "2026-09-14",
     "role_counts": {
       "historical_or_ambiguous": 2,
       "lead": 1,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "other",
+      "series_b",
       "series_b_plus"
     ],
     "portfolio_companies": [
@@ -90,9 +91,54 @@
         "entity_id": "EN-37ad0de3969166fa",
         "canonical_entity_id": "EN-37ad0de3969166fa",
         "name": "西湖心辰"
+      },
+      {
+        "entity_id": "EN-63d1760c240e7a7c",
+        "canonical_entity_id": "",
+        "name": "讯兔科技"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-1f62ce2f5872a41c",
+        "funding_insight_id": "FI-bda539a7d011ea24",
+        "event_ids": [
+          "EV-04bcb24d608a931c"
+        ],
+        "company_entity_id": "EN-63d1760c240e7a7c",
+        "company_canonical_entity_id": "",
+        "company_name": "讯兔科技",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "3亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 300000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3 亿元"
+        },
+        "announced_at": "2026-09-14",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3e63ec136b8700e5",
+            "source_url": "https://www.qbitai.com/2026/09/488912.html",
+            "source_title": "一年连融三轮，这家金融AI公司又拿下超3亿B轮",
+            "source_content_hash": "ffb85beb1df15c99",
+            "quote": "保险业国家级投资平台中保投资、头部券商系私募基金子公司广发信德共同参与",
+            "quote_hash": "216a4f79a0ca8e2e6a0300af0096f9d110e752becf6e856443096ac681108f5a"
+          }
+        ]
+      },
       {
         "activity_id": "IA-e24ce2afc687ff0a",
         "funding_insight_id": "FI-fae9478ac0e65316",
@@ -296,6 +342,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-3e63ec136b8700e5",
+        "source_url": "https://www.qbitai.com/2026/09/488912.html",
+        "source_title": "一年连融三轮，这家金融AI公司又拿下超3亿B轮",
+        "source_content_hash": "ffb85beb1df15c99",
+        "quote": "保险业国家级投资平台中保投资、头部券商系私募基金子公司广发信德共同参与",
+        "quote_hash": "216a4f79a0ca8e2e6a0300af0096f9d110e752becf6e856443096ac681108f5a"
+      },
       {
         "source_id": "FISRC-ac5a938b8fdef1a9",
         "source_url": "https://news.pedaily.cn/202609/568645.shtml",
