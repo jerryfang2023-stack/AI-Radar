@@ -7,6 +7,7 @@ test("source-title dates accept Chinese spacing but reject changed calendar fact
   for (const wrong of ["2026 年 10 月 11 日", "2026 年 9 月 12 日", "2025 年 9 月 11 日"]) {
     assert.equal(sourceTitleFactsPreserved(source, `欧盟 AI 法案：AI 简报，${wrong}`), false);
   }
+  assert.equal(sourceTitleFactsPreserved("Trump may be forced to reveal secret rules feds use for AI safety testing", "特朗普或被迫公开联邦政府AI安全测试的秘密规则"), true);
 });
 import test from "node:test";
 import {

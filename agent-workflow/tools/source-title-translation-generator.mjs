@@ -246,7 +246,8 @@ export function sourceTitleFactsPreserved(sourceTitle = "", translation = "") {
   const source = stripGeneratorNoise(sourceTitle);
   const target = stripGeneratorNoise(translation);
   const months = (value) => (normalizeDateTokens(value).match(/MONTH_[A-Z]{3}/gu) || []).sort();
-  if (JSON.stringify(months(source)) !== JSON.stringify(months(target))) return false;
+  const datedMonth = /\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d|\d\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\b|\d\s*月/iu;
+  if (datedMonth.test(source) && JSON.stringify(months(source)) !== JSON.stringify(months(target))) return false;
   const sourceAmounts = extractMoneyAmounts(source);
   const targetAmounts = extractMoneyAmounts(target);
   if (sourceAmounts.length !== targetAmounts.length) return false;
