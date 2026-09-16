@@ -5,14 +5,15 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-15T07:57:02.631Z",
-    "latestDataDate": "2026-09-15",
-    "currentDate": "2026-09-15",
-    "eventCount": 3271,
-    "quarantinedEventCount": 34,
+    "generatedAt": "2026-09-16T04:08:34.638Z",
+    "latestDataDate": "2026-09-16",
+    "currentDate": "2026-09-16",
+    "eventCount": 3311,
+    "quarantinedEventCount": 35,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
       "EV-1fc7578ab4f32166",
@@ -185,7 +186,7 @@
       "EN-d65d81c60c0c47c4"
     ],
     "firstSeen": "2026-01-12",
-    "lastSeen": "2026-09-14",
+    "lastSeen": "2026-09-16",
     "organizationFamilyId": "EN-047364b9be67f665",
     "organizationRole": "group",
     "organizationFamilyEntityIds": [
@@ -314,6 +315,36 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-ec55003461ff34b0",
+        "dataDate": "2026-09-16",
+        "date": "2026-09-16",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "研判2026！中国AI AGENT（人工智能体）行业核心特征、产业链",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-3f726694f178ed7a",
+          "EN-28be1fc3808080ef",
+          "EN-4dbe391b8fcf977a",
+          "EN-047364b9be67f665",
+          "EN-9c8ae69b84f21a2e",
+          "EN-da6ed1e6ee3b0489"
+        ]
+      },
       {
         "id": "EV-47f16317cc2d62e2",
         "dataDate": "2026-09-14",
@@ -718,36 +749,6 @@
         "entityIds": [
           "EN-047364b9be67f665",
           "EN-182d6e390bb76151"
-        ]
-      },
-      {
-        "id": "EV-ec55003461ff34b0",
-        "dataDate": "2026-09-11",
-        "date": "2026-09-11",
-        "eventType": "product_release",
-        "eventTypeLabel": "产品发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "研判2026！中国AI AGENT（人工智能体）行业核心特征、产业链",
-        "displayTags": [
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "agentic_execution",
-            "name": "智能体",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "entityIds": [
-          "EN-3f726694f178ed7a",
-          "EN-28be1fc3808080ef",
-          "EN-4dbe391b8fcf977a",
-          "EN-047364b9be67f665",
-          "EN-9c8ae69b84f21a2e",
-          "EN-da6ed1e6ee3b0489"
         ]
       },
       {
@@ -3976,6 +3977,8 @@
       "typeLabel": "目标用户",
       "valueId": "business_user",
       "eventIds": [
+        "EV-05b635c3958e4591",
+        "EV-e5763ba54217d88a",
         "EV-0ac10579ff64fe74",
         "EV-4238c51fcdad7bd4",
         "EV-6aaa17d9c372e513",
@@ -4336,6 +4339,8 @@
         "EV-caf5d85e980c86fd"
       ],
       "entityIds": [
+        "FICO-d750f652e8f2dd92",
+        "EN-456d7aad12e82e0e",
         "EN-60910505210bd6f1",
         "EN-4149d125ad47155a",
         "EN-24dd6fa3e1cbba97",
@@ -4638,7 +4643,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-15"
+      "lastSeen": "2026-09-16"
     },
     {
       "id": "TX-use_case-data_analysis",
@@ -4647,6 +4652,8 @@
       "typeLabel": "应用场景",
       "valueId": "data_analysis",
       "eventIds": [
+        "EV-05b635c3958e4591",
+        "EV-e5763ba54217d88a",
         "EV-4238c51fcdad7bd4",
         "EV-a38a33003b0d6d08",
         "EV-d98c10d4cba51686",
@@ -4730,6 +4737,8 @@
         "EV-e81f3b979f169cfa"
       ],
       "entityIds": [
+        "FICO-d750f652e8f2dd92",
+        "EN-456d7aad12e82e0e",
         "EN-4149d125ad47155a",
         "EN-1540430ef01214f1",
         "EN-2777b5a794959a7d",
@@ -4806,7 +4815,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-15"
+      "lastSeen": "2026-09-16"
     },
     {
       "id": "TX-use_case-productivity_enterprise_workflows",
@@ -4815,13 +4824,16 @@
       "typeLabel": "应用场景",
       "valueId": "productivity_enterprise_workflows",
       "eventIds": [
+        "EV-e5763ba54217d88a",
         "EV-a38a33003b0d6d08",
+        "EV-37cc66ca2e29a78c",
         "EV-04bcb24d608a931c",
         "EV-3fdc9ad98818c36b",
         "EV-63a4b6ce48e14829",
         "EV-7eead74c2baae511",
         "EV-ef669a52c9a3f94f",
         "EV-0cc745a319a25f6e",
+        "EV-4e00ddcb0bc4f2bb",
         "EV-85506f9f86779a6d",
         "EV-cbeb33594e06678b",
         "EV-862a2c0eabc234f0",
@@ -4960,12 +4972,15 @@
         "EV-f5aec01f1466f6bb"
       ],
       "entityIds": [
+        "EN-456d7aad12e82e0e",
         "EN-1540430ef01214f1",
+        "EN-caffca3284100caa",
         "EN-63d1760c240e7a7c",
         "EN-d5857f6222f45275",
         "EN-c087cefd343cb488",
         "EN-1d79127e9d90e89b",
         "EN-ecf226574e481ea7",
+        "EN-897502f225e38bf5",
         "EN-c04bd5ebd10ab696",
         "EN-2cfe6f50f129c9c3",
         "EN-75cc2d1e57d451bf",
@@ -5101,7 +5116,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-15"
+      "lastSeen": "2026-09-16"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -5333,12 +5348,16 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-5e20c319d2ad9a67",
+        "EV-ec55003461ff34b0",
+        "EV-fa05797bb54f4bbe",
+        "EV-89f05daef84e79af",
+        "EV-c69591582a468bd5",
         "EV-ea6688f289974d51",
         "EV-a65c5ce73c055710",
         "EV-358643eefe0a5df5",
         "EV-1938f1caa0e15759",
         "EV-b2573b146a89c48a",
-        "EV-ec55003461ff34b0",
         "EV-73c29838fbb3b394",
         "EV-9ddf337c75157076",
         "EV-2432c3f2376280a5",
@@ -5850,6 +5869,10 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-69337578b2468a88",
+        "EN-c70eca6b0f88f44d",
+        "EN-e473f24d4325d51a",
+        "EN-36408e3a0e094a6f",
         "EN-ce9408431e3d5934",
         "EN-45d780f82c9247fc",
         "EN-32e83e92d45d71f6",
@@ -5859,7 +5882,6 @@
         "EN-72fcf35a691c9bc5",
         "EN-8ff5e729cd4089df",
         "EN-2b6e51bec93e86c1",
-        "EN-c70eca6b0f88f44d",
         "EN-373ac021a2c0bb2c",
         "EN-0d47d3f0783749a8",
         "EN-f8e930daaadf36ec",
@@ -5958,7 +5980,6 @@
         "EN-c31a277efac23f52",
         "EN-96a4bc2602655473",
         "EN-4adc2faea521b1f1",
-        "EN-e473f24d4325d51a",
         "EN-1dc7e9837d60c55d",
         "EN-2dc010636b9dce91",
         "EN-042e9398f2cc8902",
@@ -6100,6 +6121,7 @@
         "EV-6ab69a243cd45e3f",
         "EV-d42d6250b5dcd65c",
         "EV-3742960ce1f814d6",
+        "EV-4e00ddcb0bc4f2bb",
         "EV-3175368fb5a45219",
         "EV-43c9b851bd2a46c7",
         "EV-d0dd835f3abb3163",
@@ -6239,6 +6261,7 @@
         "EV-2ffc3377977da114",
         "EV-2fd730d0ad452334",
         "EV-fd21441fb6e143c3",
+        "EV-1c44b030ec78ace8",
         "EV-3634cdde2f0152ec",
         "EV-4e95de1c574a3553",
         "EV-5d0f3f6556749dc5",
@@ -6446,6 +6469,7 @@
         "EN-a1fb5521655e55c3",
         "EN-30961cffc5902d30",
         "EN-4880db48cba8a4d7",
+        "EN-897502f225e38bf5",
         "EN-08e7b67a300e585f",
         "EN-4d916dc8b25421d2",
         "EN-f56780cc13476293",
@@ -6545,6 +6569,7 @@
         "EN-88e2cce43eeadb36",
         "EN-c890cfa67d1da908",
         "EN-7df09a7717ef2feb",
+        "EN-69337578b2468a88",
         "EN-3a7bd3e2360a3d29",
         "EN-f01c4f48151c3468",
         "EN-c608c4787821de1b",
@@ -6669,7 +6694,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-15"
+      "lastSeen": "2026-09-16"
     },
     {
       "id": "TX-technology-code_generation",
@@ -7216,6 +7241,7 @@
       "eventIds": [
         "EV-b817d2fd49515a5f",
         "EV-b95539d17772a4ce",
+        "EV-684428c2905ab07c",
         "EV-291060fb79c45357",
         "EV-5afbe3c786191728",
         "EV-85ea6e0ef8bda162",
@@ -7235,6 +7261,7 @@
       ],
       "entityIds": [
         "EN-a244384ccfb8ec48",
+        "EN-3ccbd9105a45d8fc",
         "EN-7d3194f79e645c42",
         "EN-0b01f10e87d13e75",
         "EN-3ebe8498fb071652",
@@ -7254,7 +7281,7 @@
         "HW-94ca08e08e6e52fe"
       ],
       "firstSeen": "2026-06-01",
-      "lastSeen": "2026-09-12"
+      "lastSeen": "2026-09-16"
     }
   ],
   "fde": [],

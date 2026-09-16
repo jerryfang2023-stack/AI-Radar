@@ -5,14 +5,15 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-15T07:57:02.631Z",
-    "latestDataDate": "2026-09-15",
-    "currentDate": "2026-09-15",
-    "eventCount": 3271,
-    "quarantinedEventCount": 34,
+    "generatedAt": "2026-09-16T04:08:34.638Z",
+    "latestDataDate": "2026-09-16",
+    "currentDate": "2026-09-16",
+    "eventCount": 3311,
+    "quarantinedEventCount": 35,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
       "EV-1fc7578ab4f32166",
@@ -49,7 +50,7 @@
   },
   "entity": {
     "id": "EN-77242fb4d6f2ca68",
-    "name": "RTX PRO Server",
+    "name": "RTX Pro Server",
     "entityType": "product_candidate",
     "typeLabel": "产品、模型与服务",
     "aliases": [],
@@ -58,19 +59,21 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-d27707a663d29ade",
       "EV-82fcff365b154465"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-08",
-    "lastSeen": "2026-08-08",
+    "lastSeen": "2026-09-16",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-d27707a663d29ade",
         "EV-82fcff365b154465"
       ],
       "hardware": [],
@@ -78,6 +81,37 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-d27707a663d29ade",
+        "dataDate": "2026-09-16",
+        "date": "2026-09-15",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "夏普开始在日本接受AI服务器订单",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_compute_system",
+            "name": "AI 计算系统",
+            "entityIds": [
+              "EN-c07d4b946fe20ecf"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-c07d4b946fe20ecf",
+          "EN-8d4321d936320802",
+          "EN-7221448735e5f688",
+          "EN-77242fb4d6f2ca68",
+          "EN-fde292a132c95e14"
+        ]
+      },
       {
         "id": "EV-82fcff365b154465",
         "dataDate": "2026-08-08",

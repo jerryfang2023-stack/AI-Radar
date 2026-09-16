@@ -5,16 +5,16 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-09-15T07:56:43.988Z",
+    "generated_at": "2026-09-16T04:08:14.935Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 460,
-    "input_hash": "aded2439cea551a4",
+    "decision_count": 464,
+    "input_hash": "7042d9734d15f974",
     "override_count": 18,
-    "needs_review_count": 51,
-    "low_confidence_count": 67
+    "needs_review_count": 52,
+    "low_confidence_count": 68
   },
   "decisions": [
     {
@@ -9219,6 +9219,87 @@
       "confidence": 0.88,
       "needs_review": false,
       "rationale": "核心产品Alpha派是AI投研助理，从会议纪要切入投研工作流，属于金融行业专用应用；PaiWork为投研工作台，整体围绕金融投研场景。"
+    },
+    {
+      "event_id": "EV-e5763ba54217d88a",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "industrials",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "data_analysis",
+        "physical_automation",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Arch Systems 的产品围绕制造业的机器连接、数据管理和缺陷/停机事件处理，属于单一行业专业数据与工作流，因此归为行业应用而非通用企业应用。"
+    },
+    {
+      "event_id": "EV-37cc66ca2e29a78c",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "telecommunications"
+      ],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.75,
+      "needs_review": true,
+      "rationale": "Cornelis 提供 AI 芯片间高性能网络解决方案，属于基础设施计算，但证据未明确其产品是纯软件还是包含硬件，且缺少客户与使用场景细节，故标记需复核。"
+    },
+    {
+      "event_id": "EV-4e00ddcb0bc4f2bb",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "chips",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "telecommunications"
+      ],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Positron AI 明确为 AI 推理硬件公司，开发芯片与系统，属于基础设施计算中的芯片硬件。"
+    },
+    {
+      "event_id": "EV-05b635c3958e4591",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "marketing",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "marketing",
+        "content_creation",
+        "data_analysis"
+      ],
+      "industry_ids": [
+        "retail_ecommerce",
+        "media_entertainment"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Profound 提供跨行业营销软件，帮助品牌优化 AI 搜索结果，属于企业应用中的营销子类。"
     }
   ]
 }

@@ -1,0 +1,113 @@
+[
+  {
+    "observation_id": "FDEO-533a062fe935642f",
+    "implementation_key": "147e347a6175a1b5",
+    "observation_type": "implementation_update",
+    "observed_at": "2026-09-14T16:00:00.000Z",
+    "customer": "",
+    "vendor": "",
+    "industry": "",
+    "use_case": "路径",
+    "workflow": "",
+    "systems_integrated": [
+      "Claude"
+    ],
+    "lifecycle_stage": "completed",
+    "reported_outcomes": [],
+    "event_refs": [
+      "EV-0b7dcbb44344e389"
+    ],
+    "claim_refs": [
+      "CL-686eee4b9f106d48",
+      "CL-4bcf784c670146b0",
+      "CL-8ed7416b538f38b8"
+    ],
+    "source_refs": [
+      "SA-cd066c65531f18ef"
+    ],
+    "completeness": {
+      "resolved_fields": 3,
+      "total_fields": 8,
+      "ratio": 0.375,
+      "missing_fields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow",
+        "reported_outcomes"
+      ]
+    }
+  },
+  {
+    "observation_id": "FDEO-73c587851606bbd7",
+    "implementation_key": "1b7778eb4474c341",
+    "observation_type": "implementation_update",
+    "observed_at": "2026-09-15T00:00:00.000Z",
+    "customer": "a global AI developer",
+    "vendor": "Vertical Data",
+    "industry": "AI infrastructure",
+    "use_case": "$192 Million AI Infrastructure Commitment for Global AI Developer | Newswire",
+    "workflow": "",
+    "systems_integrated": [],
+    "lifecycle_stage": "production",
+    "reported_outcomes": [
+      "aggregate contract value of approximately $192.1 million over a five-year initial term on a take-or-pay basis"
+    ],
+    "event_refs": [
+      "EV-ad6c755f7cf588c4"
+    ],
+    "claim_refs": [
+      "CL-6192791997ad5b4e",
+      "CL-284c9ca50ddc6729",
+      "CL-e3bbd067e2b5dfef",
+      "CL-aa64ad44782bb38e"
+    ],
+    "source_refs": [
+      "SA-6ab1b8edc7f669e0"
+    ],
+    "completeness": {
+      "resolved_fields": 6,
+      "total_fields": 8,
+      "ratio": 0.75,
+      "missing_fields": [
+        "workflow",
+        "systems_integrated"
+      ]
+    }
+  },
+  {
+    "observation_id": "FDEO-006543ce71af47e4",
+    "implementation_key": "e8887bcbea609bc2",
+    "observation_type": "implementation_update",
+    "observed_at": "2026-09-15T00:00:00.000Z",
+    "customer": "",
+    "vendor": "Levio",
+    "industry": "",
+    "use_case": "Cohere",
+    "workflow": "",
+    "systems_integrated": [],
+    "lifecycle_stage": "announced",
+    "reported_outcomes": [],
+    "event_refs": [
+      "EV-cc8775744a9362c4"
+    ],
+    "claim_refs": [
+      "CL-016c3b27e79e2507"
+    ],
+    "source_refs": [
+      "SA-6ea54825bccb6e4c"
+    ],
+    "completeness": {
+      "resolved_fields": 3,
+      "total_fields": 8,
+      "ratio": 0.375,
+      "missing_fields": [
+        "customer",
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ]
+    }
+  }
+]

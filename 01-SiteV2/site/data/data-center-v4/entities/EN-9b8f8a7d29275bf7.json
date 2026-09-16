@@ -1,0 +1,182 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-16T04:08:34.638Z",
+    "latestDataDate": "2026-09-16",
+    "currentDate": "2026-09-16",
+    "eventCount": 3311,
+    "quarantinedEventCount": 35,
+    "quarantinedEventIds": [
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "entity": {
+    "id": "EN-9b8f8a7d29275bf7",
+    "name": "Mozilla",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-8dfe5703fea93b67"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-long_context"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-15",
+    "lastSeen": "2026-09-16",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": [
+        "EV-8dfe5703fea93b67"
+      ]
+    },
+    "timeline": [
+      {
+        "id": "EV-8dfe5703fea93b67",
+        "dataDate": "2026-09-16",
+        "date": "2026-09-15",
+        "eventType": "research_result",
+        "eventTypeLabel": "研究结果",
+        "eventGroup": "研究结果",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Mozilla 报告称中国开源模型与硅谷前沿模型差距缩至 4.4 个月",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "long_context",
+            "name": "长上下文",
+            "entityIds": [
+              "EN-9b8f8a7d29275bf7"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-9b8f8a7d29275bf7",
+          "EN-b5251b35f15bedc4",
+          "EN-c70eca6b0f88f44d",
+          "EN-7d3194f79e645c42",
+          "EN-63420714dd10a242"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-long_context",
+      "name": "长上下文",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "long_context",
+      "eventIds": [
+        "EV-80e54c9a390da293",
+        "EV-fd21441fb6e143c3",
+        "EV-d60335a12d394f65",
+        "EV-eb3b431d4ce98ec5",
+        "EV-5890a74f1a62940e",
+        "EV-a6dc310224542dcf",
+        "EV-eedd370fd9cfdbb2",
+        "EV-58e18eab1b072c9a",
+        "EV-29c0d969abde2020",
+        "EV-3dc8d5c373ddd1f3",
+        "EV-7a4d1e871dcd3b1f",
+        "EV-653cbce2ccc79f8b",
+        "EV-0e616f9e775a77dc",
+        "EV-fe519605ebb69aaf",
+        "EV-2fea1664807824ce",
+        "EV-86ab9c2f1416e9d8",
+        "EV-a5efa57f3f744425",
+        "EV-70e3f88cb06a856c",
+        "EV-70cbf25f7ec2cc3a",
+        "EV-70efbfcaadcdb259",
+        "EV-0c06df62702d26ab",
+        "EV-534dc9add1c0cc35",
+        "EV-57f083a39393d841",
+        "EV-8dfe5703fea93b67",
+        "EV-86537be17d50ff20"
+      ],
+      "entityIds": [
+        "EN-7df09a7717ef2feb",
+        "EN-a625159d18da5718",
+        "EN-f7a386a451b79627",
+        "EN-8d4321d936320802",
+        "EN-ea3bd73e2b506e00",
+        "EN-74be4cbf48e647b2",
+        "EN-c70eca6b0f88f44d",
+        "EN-bc1fc5140040180e",
+        "EN-0d1e478de2157d48",
+        "EN-9c8ae69b84f21a2e",
+        "EN-3309b3b14807f39a",
+        "EN-4b078b39d2fcacc7",
+        "EN-7dd7122ad9bf240f",
+        "EN-1d79127e9d90e89b",
+        "EN-7d3194f79e645c42",
+        "EN-3153ebda601cdb79",
+        "EN-9b8f8a7d29275bf7",
+        "EN-6ac6ad44bb9995ca"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-12",
+      "lastSeen": "2026-09-16"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

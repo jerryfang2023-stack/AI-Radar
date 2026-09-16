@@ -5,14 +5,15 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-15T07:57:02.631Z",
-    "latestDataDate": "2026-09-15",
-    "currentDate": "2026-09-15",
-    "eventCount": 3271,
-    "quarantinedEventCount": 34,
+    "generatedAt": "2026-09-16T04:08:34.638Z",
+    "latestDataDate": "2026-09-16",
+    "currentDate": "2026-09-16",
+    "eventCount": 3311,
+    "quarantinedEventCount": 35,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
       "EV-1fc7578ab4f32166",
@@ -58,6 +59,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-47363108bf292d94",
       "EV-0d574d60e8add6dc",
       "EV-37b8aab7efececce",
       "EV-ffe99cf8446a9d14",
@@ -76,7 +78,7 @@
       "EN-3a7bd3e2360a3d29"
     ],
     "firstSeen": "2026-06-09",
-    "lastSeen": "2026-09-14",
+    "lastSeen": "2026-09-16",
     "relationIds": [
       "REL2-04014818e378c5b2",
       "REL2-1f4fedf249db5eac",
@@ -90,6 +92,7 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-47363108bf292d94",
         "EV-0d574d60e8add6dc",
         "EV-37b8aab7efececce",
         "EV-ffe99cf8446a9d14",
@@ -107,6 +110,23 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-47363108bf292d94",
+        "dataDate": "2026-09-16",
+        "date": "2026-09-15",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "苹果推出基于谷歌 Gemini 全面改版的 Siri，但不在欧盟上线",
+        "displayTags": [],
+        "entityIds": [
+          "EN-3a7bd3e2360a3d29",
+          "EN-bbdefa2950f49882",
+          "EN-af3ceabbe048a291"
+        ]
+      },
       {
         "id": "EV-0d574d60e8add6dc",
         "dataDate": "2026-09-14",
@@ -342,6 +362,8 @@
         "EV-d116b0aa5bb292e2",
         "EV-e857f9d1c1478c70",
         "EV-fd21441fb6e143c3",
+        "EV-c12e5e4c3bc203b5",
+        "EV-47363108bf292d94",
         "EV-3634cdde2f0152ec",
         "EV-52fed56118708e35",
         "EV-e2d901881325c424",
@@ -440,11 +462,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device",
         "TX-technology-agentic_execution",
         "TX-product_form-model",
-        "TX-industry-food_hospitality",
-        "TX-technology-on_device",
-        "TX-deployment_model-edge_device"
+        "TX-industry-food_hospitality"
       ],
       "relatedEntityIds": [
         "EN-7d3194f79e645c42",
@@ -457,7 +479,7 @@
         "EN-45b5216872656eb3"
       ],
       "firstSeen": "2026-06-04",
-      "lastSeen": "2026-09-15"
+      "lastSeen": "2026-09-16"
     }
   ],
   "relationships": [

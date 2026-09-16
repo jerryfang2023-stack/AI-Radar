@@ -5,14 +5,15 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-15T07:57:02.631Z",
-    "latestDataDate": "2026-09-15",
-    "currentDate": "2026-09-15",
-    "eventCount": 3271,
-    "quarantinedEventCount": 34,
+    "generatedAt": "2026-09-16T04:08:34.638Z",
+    "latestDataDate": "2026-09-16",
+    "currentDate": "2026-09-16",
+    "eventCount": 3311,
+    "quarantinedEventCount": 35,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
       "EV-1fc7578ab4f32166",
@@ -77,11 +78,17 @@
       "EV-8b73e88ffd3569b2",
       "EV-30d7f1c5dc8ea464",
       "EV-6272444f30281858",
+      "EV-684428c2905ab07c",
+      "EV-a78cbbfb8413644b",
+      "EV-af09904030ac3c22",
+      "EV-b29f516694140945",
       "EV-2e485512093088da",
+      "EV-b7f3d754629649e0",
       "EV-5da4e98f83b40872",
       "EV-91eccd583f77528f",
       "EV-9009adaed650ddde",
       "EV-11a8e196deb21300",
+      "EV-46803ffdc054ae6d",
       "EV-0094ff6922e9d570",
       "EV-42b3196bf09fe88d",
       "EV-f7aa6d43b75238fb"
@@ -91,11 +98,12 @@
       "TX-target_user-business_user",
       "TX-technology-agentic_execution",
       "TX-technology-code_generation",
-      "TX-use_case-customer_support"
+      "TX-use_case-customer_support",
+      "TX-technology-reasoning"
     ],
     "relatedEntityIds": [],
     "firstSeen": "2023-03-21",
-    "lastSeen": "2026-09-15",
+    "lastSeen": "2026-09-16",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
@@ -125,6 +133,11 @@
         "EV-6272444f30281858"
       ],
       "productsServices": [
+        "EV-684428c2905ab07c",
+        "EV-a78cbbfb8413644b",
+        "EV-af09904030ac3c22",
+        "EV-b29f516694140945",
+        "EV-b7f3d754629649e0",
         "EV-2e485512093088da",
         "EV-5da4e98f83b40872",
         "EV-91eccd583f77528f",
@@ -134,11 +147,124 @@
       ],
       "hardware": [],
       "organizationPeople": [
+        "EV-46803ffdc054ae6d",
         "EV-0094ff6922e9d570"
       ],
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-684428c2905ab07c",
+        "dataDate": "2026-09-16",
+        "date": "2026-09-16",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "黄仁勋亮相 Dreamforce：Salesforce 首个 CRM 推理模型 Koa 基于 NVIDIA Nemotron 3 Super 打造",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "reasoning",
+            "name": "推理能力",
+            "entityIds": [
+              "EN-3ccbd9105a45d8fc"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-3ccbd9105a45d8fc",
+          "EN-8d4321d936320802"
+        ]
+      },
+      {
+        "id": "EV-a78cbbfb8413644b",
+        "dataDate": "2026-09-16",
+        "date": "2026-09-15",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Anthropic 推出 Salesforce in Claude 测试版插件",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-3ccbd9105a45d8fc"
+        ]
+      },
+      {
+        "id": "EV-af09904030ac3c22",
+        "dataDate": "2026-09-16",
+        "date": "2026-09-15",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "rumored",
+        "statusLabel": "rumored",
+        "title": "Salesforce 联合英伟达推出推理大模型 Koa",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7b1fb52a412381b1",
+          "EN-3ccbd9105a45d8fc",
+          "EN-8d4321d936320802"
+        ]
+      },
+      {
+        "id": "EV-b29f516694140945",
+        "dataDate": "2026-09-16",
+        "date": "2026-09-15",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "rumored",
+        "statusLabel": "rumored",
+        "title": "Salesforce 联合 Nvidia 发布首个推理模型 Koa，基于开源 Nemotron 面向销售与客服任务",
+        "displayTags": [],
+        "entityIds": [
+          "EN-3ccbd9105a45d8fc",
+          "EN-8d4321d936320802",
+          "EN-8395dc051feafc4c"
+        ]
+      },
+      {
+        "id": "EV-b7f3d754629649e0",
+        "dataDate": "2026-09-16",
+        "date": "2026-09-13",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Salesforce 推出可信企业 AI 框架",
+        "displayTags": [],
+        "entityIds": [
+          "EN-3ccbd9105a45d8fc",
+          "EN-99604b67218f70a7",
+          "EN-fdc1eadb42e394d8"
+        ]
+      },
+      {
+        "id": "EV-46803ffdc054ae6d",
+        "dataDate": "2026-09-16",
+        "date": "2026-09-15",
+        "eventType": "organization_people",
+        "eventTypeLabel": "组织与人员",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "我们不需要AI监管——把安全交给我们，英伟达的黄仁勋表示",
+        "displayTags": [],
+        "entityIds": [
+          "EN-8d4321d936320802",
+          "EN-3ccbd9105a45d8fc",
+          "EN-7d3194f79e645c42"
+        ]
+      },
       {
         "id": "EV-2e485512093088da",
         "dataDate": "2026-09-15",
@@ -1334,6 +1460,8 @@
       "typeLabel": "目标用户",
       "valueId": "business_user",
       "eventIds": [
+        "EV-05b635c3958e4591",
+        "EV-e5763ba54217d88a",
         "EV-0ac10579ff64fe74",
         "EV-4238c51fcdad7bd4",
         "EV-6aaa17d9c372e513",
@@ -1694,6 +1822,8 @@
         "EV-caf5d85e980c86fd"
       ],
       "entityIds": [
+        "FICO-d750f652e8f2dd92",
+        "EN-456d7aad12e82e0e",
         "EN-60910505210bd6f1",
         "EN-4149d125ad47155a",
         "EN-24dd6fa3e1cbba97",
@@ -1996,7 +2126,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-15"
+      "lastSeen": "2026-09-16"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -2228,12 +2358,16 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-5e20c319d2ad9a67",
+        "EV-ec55003461ff34b0",
+        "EV-fa05797bb54f4bbe",
+        "EV-89f05daef84e79af",
+        "EV-c69591582a468bd5",
         "EV-ea6688f289974d51",
         "EV-a65c5ce73c055710",
         "EV-358643eefe0a5df5",
         "EV-1938f1caa0e15759",
         "EV-b2573b146a89c48a",
-        "EV-ec55003461ff34b0",
         "EV-73c29838fbb3b394",
         "EV-9ddf337c75157076",
         "EV-2432c3f2376280a5",
@@ -2745,6 +2879,10 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-69337578b2468a88",
+        "EN-c70eca6b0f88f44d",
+        "EN-e473f24d4325d51a",
+        "EN-36408e3a0e094a6f",
         "EN-ce9408431e3d5934",
         "EN-45d780f82c9247fc",
         "EN-32e83e92d45d71f6",
@@ -2754,7 +2892,6 @@
         "EN-72fcf35a691c9bc5",
         "EN-8ff5e729cd4089df",
         "EN-2b6e51bec93e86c1",
-        "EN-c70eca6b0f88f44d",
         "EN-373ac021a2c0bb2c",
         "EN-0d47d3f0783749a8",
         "EN-f8e930daaadf36ec",
@@ -2853,7 +2990,6 @@
         "EN-c31a277efac23f52",
         "EN-96a4bc2602655473",
         "EN-4adc2faea521b1f1",
-        "EN-e473f24d4325d51a",
         "EN-1dc7e9837d60c55d",
         "EN-2dc010636b9dce91",
         "EN-042e9398f2cc8902",
@@ -3202,6 +3338,57 @@
       "hardwareIds": [],
       "firstSeen": "2019-03-11",
       "lastSeen": "2026-09-14"
+    },
+    {
+      "id": "TX-technology-reasoning",
+      "name": "推理能力",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "reasoning",
+      "eventIds": [
+        "EV-b817d2fd49515a5f",
+        "EV-b95539d17772a4ce",
+        "EV-684428c2905ab07c",
+        "EV-291060fb79c45357",
+        "EV-5afbe3c786191728",
+        "EV-85ea6e0ef8bda162",
+        "EV-afd50641f48c5e98",
+        "EV-58e18eab1b072c9a",
+        "EV-72dc9ab86e08fbab",
+        "EV-60110525440fac47",
+        "EV-6f1729f6968b72c9",
+        "EV-314b1d80bc4aa50d",
+        "EV-9496f90f3e808992",
+        "EV-e42e55d1e11a2ba2",
+        "EV-d07906b648eec63f",
+        "EV-3f23ddb47fc652a4",
+        "EV-ae89898e7aa4a4d6",
+        "EV-aa63303570154a9b",
+        "EV-c44f8fbab9e200ca"
+      ],
+      "entityIds": [
+        "EN-a244384ccfb8ec48",
+        "EN-3ccbd9105a45d8fc",
+        "EN-7d3194f79e645c42",
+        "EN-0b01f10e87d13e75",
+        "EN-3ebe8498fb071652",
+        "EN-8d4321d936320802",
+        "EN-b7ff6c95ddfdac24",
+        "EN-d30e5ffc0ba9150b",
+        "EN-a8100d425f663eac",
+        "EN-ea3bd73e2b506e00",
+        "EN-1cd41545564777ce",
+        "EN-9bc22dcabf7f45b3",
+        "EN-047364b9be67f665"
+      ],
+      "fdeIds": [
+        "FDE-a1c35f8b9ea1d489"
+      ],
+      "hardwareIds": [
+        "HW-94ca08e08e6e52fe"
+      ],
+      "firstSeen": "2026-06-01",
+      "lastSeen": "2026-09-16"
     }
   ],
   "fde": [

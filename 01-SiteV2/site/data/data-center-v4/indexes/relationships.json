@@ -5,14 +5,15 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-15T07:57:02.631Z",
-    "latestDataDate": "2026-09-15",
-    "currentDate": "2026-09-15",
-    "eventCount": 3271,
-    "quarantinedEventCount": 34,
+    "generatedAt": "2026-09-16T04:08:34.638Z",
+    "latestDataDate": "2026-09-16",
+    "currentDate": "2026-09-16",
+    "eventCount": 3311,
+    "quarantinedEventCount": 35,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
       "EV-1fc7578ab4f32166",
@@ -48,6 +49,34 @@
     ]
   },
   "relationships": [
+    {
+      "relationship_id": "REL2-39c721b66f466667",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-968e2d5b08687bf4",
+      "object_type": "entity",
+      "event_id": "EV-09172b686d2b49de",
+      "claim_refs": [
+        "CL-436f9d986a42a5f1",
+        "CL-8c8de147344d35d2",
+        "CL-9cce65df4140da59",
+        "CL-53afc214cf52646c"
+      ],
+      "source_refs": [
+        "SA-9237004f9dd41c02"
+      ],
+      "data_date": "2026-09-16",
+      "status": "verified",
+      "subjectName": "OpenAI",
+      "objectName": "Samsung",
+      "predicateLabel": "合作",
+      "title": "OpenAI 合作 Samsung",
+      "eventTitle": "三星与 OpenAI 宣布战略合作，加速全球 AI 基础设施进步",
+      "eventDate": "2026-09-16",
+      "sourceCount": 1
+    },
     {
       "relationship_id": "REL2-8cc3dea2f3024fc2",
       "relationship_version": "RELATION-V2.1",

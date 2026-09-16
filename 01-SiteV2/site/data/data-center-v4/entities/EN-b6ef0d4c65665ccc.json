@@ -1,0 +1,220 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-16T04:08:34.638Z",
+    "latestDataDate": "2026-09-16",
+    "currentDate": "2026-09-16",
+    "eventCount": 3311,
+    "quarantinedEventCount": 35,
+    "quarantinedEventIds": [
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "entity": {
+    "id": "EN-b6ef0d4c65665ccc",
+    "name": "Scale Resilient AI Clusters",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-c69591582a468bd5"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-15",
+    "lastSeen": "2026-09-16",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-c69591582a468bd5"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-c69591582a468bd5",
+        "dataDate": "2026-09-16",
+        "date": "2026-09-15",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Delos Data 推出 Nonstop AI™，用于构建和扩展弹性 AI 集群，以提供 Nonstop Tokens",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-36408e3a0e094a6f"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-36408e3a0e094a6f",
+          "EN-2942608b16ddfe8d",
+          "EN-4337af294bc79998",
+          "EN-b6ef0d4c65665ccc"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-ec83310e0bcadc0c",
+      "snapshotKey": "ec83310e0bcadc0c",
+      "snapshotId": "HWS-3c2108f805634ebf",
+      "eventId": "EV-c69591582a468bd5",
+      "eventIds": [
+        "EV-c69591582a468bd5"
+      ],
+      "dataDate": "2026-09-16",
+      "date": "2026-09-16",
+      "title": "AI Clusters / Nonstop AI / Scale Resilient AI Clusters",
+      "subject": "Delos Data",
+      "productNames": [
+        "AI Clusters",
+        "Nonstop AI",
+        "Scale Resilient AI Clusters"
+      ],
+      "hardwareType": "data_center",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-c4279c35c6c88513"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-16",
+          "hardware_fact_id": "HWF-c4279c35c6c88513",
+          "fact_type": "product",
+          "observed_at": "2026-09-15T00:00:00.000Z",
+          "subject_entity_id": "EN-36408e3a0e094a6f",
+          "subject_name": "Delos Data",
+          "product_entity_ids": [
+            "EN-2942608b16ddfe8d",
+            "EN-4337af294bc79998",
+            "EN-b6ef0d4c65665ccc"
+          ],
+          "product_names": [
+            "AI Clusters",
+            "Nonstop AI",
+            "Scale Resilient AI Clusters"
+          ],
+          "component_type": "data_center",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Delos Nonstop AI™ Reference Architecture. A system-level blueprint for agentic AI infrastructure organized around quicker data movement between endpoints, larger scale to the order of hundreds of thousands of devices rather than one rack or a handful and higher resiliency to endpoint, network, software, and link failures. The architecture introduces a data interface between every endpoint in the data domain, so that heterogeneous compute, acceleration, memory, and storage can be composed to the workload to deliver Nonstop Tokens.",
+          "event_refs": [
+            "EV-c69591582a468bd5"
+          ],
+          "claim_ref": "CL-820411a4cdf3f5b4",
+          "source_refs": [
+            "SA-441803828219c3ab"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-16/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-36408e3a0e094a6f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-36408e3a0e094a6f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://prnewswire.com/news-releases/delos-data-unveils-nonstop-ai-to-build-and-scale-resilient-ai-clusters-to-deliver-nonstop-tokens-302878474.html",
+      "entityIds": [
+        "EN-36408e3a0e094a6f",
+        "EN-2942608b16ddfe8d",
+        "EN-4337af294bc79998",
+        "EN-b6ef0d4c65665ccc"
+      ]
+    }
+  ]
+}
