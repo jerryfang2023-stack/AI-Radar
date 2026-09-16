@@ -87,7 +87,10 @@
     "workflow": "",
     "systems_integrated": [],
     "lifecycle_stage": "announced",
-    "reported_outcomes": [],
+    "reported_outcomes": [
+      "move AI from experimentation to production and scale",
+      "maintaining control over sensitive data"
+    ],
     "event_refs": [
       "EV-cc8775744a9362c4"
     ],
@@ -98,15 +101,14 @@
       "SA-6ea54825bccb6e4c"
     ],
     "completeness": {
-      "resolved_fields": 3,
+      "resolved_fields": 4,
       "total_fields": 8,
-      "ratio": 0.375,
+      "ratio": 0.5,
       "missing_fields": [
         "customer",
         "industry",
         "workflow",
-        "systems_integrated",
-        "reported_outcomes"
+        "systems_integrated"
       ]
     }
   }
