@@ -1088,6 +1088,12 @@ function fundingAmountsEquivalent(left = "", right = "") {
   );
 }
 
+export function fundingCombinedRoundsNeedReview(event = {}, claims = []) {
+  return claims.some((claim) => (event.claim_refs || []).includes(claim.claim_id)
+    && claim.claim_type === "funding" && claim.verification_status === "accepted"
+    && /天使轮(?:及|和|与)天使\+轮融资[，,、\s]*(?:累计|合计)融资金额/u.test(claim.source_quote || ""));
+}
+
 export function fundingTrancheDisclosureNeedsReview(event = {}, claims = []) {
   return claims.some((claim) => (event.claim_refs || []).includes(claim.claim_id)
     && claim.claim_type === "funding" && claim.verification_status === "accepted"
@@ -1098,6 +1104,7 @@ export function fundingTrancheDisclosureNeedsReview(event = {}, claims = []) {
 export function fundingEventCardConsistencyProblems(card = {}, event = {}, claims = [], entities = []) {
   if (!card?.company?.entity_id || !event?.event_id) return [];
   if (fundingTrancheDisclosureNeedsReview(event, claims)) return ["funding_capped_tranche_requires_review"];
+  if (fundingCombinedRoundsNeedReview(event, claims)) return ["funding_combined_rounds_requires_review"];
   // Recheck persisted/recovered cards, not only fresh generation eligibility.
   if ((event.event_status && !["announced", "completed"].includes(event.event_status))
     || ["withdrawn", "disputed", "quarantined", "partial"].includes(event.publication_status)
@@ -1423,6 +1430,7 @@ export function isEligibleFundingInsightEvent(event = {}, claims = []) {
     && Boolean(event.display_title_zh)
     && !isWithdrawnFundingTitle(event.display_title_zh)
     && !fundingTrancheDisclosureNeedsReview(event, claims)
+    && !fundingCombinedRoundsNeedReview(event, claims)
     && Boolean(normalizeFundingAmount(canonicalFundingEventAmount(event, claims)).currency);
 }
 

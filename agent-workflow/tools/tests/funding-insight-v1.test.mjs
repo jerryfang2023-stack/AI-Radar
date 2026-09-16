@@ -1002,6 +1002,17 @@ test("capped multi-tranche announcements stay review-only without changing factu
   assert.equal(isEligibleFundingInsightEvent(event, [{ ...claims[0], source_quote: claims[0].source_quote.replace("up to ", "") }]), true);
 });
 
+test("combined angel rounds with cumulative amount remain review-only", () => {
+  const event = { event_id: "EV-C", event_type: "funding", publication_status: "verified", event_status: "completed", display_title_zh: "公司融资近4亿元", metrics: ["近4亿元"], claim_refs: ["CL-C"] };
+  const claims = [{ claim_id: "CL-C", claim_type: "funding", verification_status: "accepted", source_quote: "公司完成天使轮及天使+轮融资，累计融资金额近4亿人民币。" }];
+  const original = structuredClone(event);
+  assert.equal(isEligibleFundingInsightEvent(event, claims), false);
+  assert.deepEqual(fundingEventCardConsistencyProblems({ company: { entity_id: "EN-C" } }, event, claims), ["funding_combined_rounds_requires_review"]);
+  assert.deepEqual(event, original);
+  assert.equal(isEligibleFundingInsightEvent(event, [{ ...claims[0], verification_status: "rejected" }]), true);
+  assert.equal(isEligibleFundingInsightEvent(event, [{ ...claims[0], source_quote: "公司完成天使+轮融资近4亿元。" }]), true);
+});
+
 test("创始人常见英文职位统一为中文公开展示", () => {
   assert.equal(normalizeFounderRole("Founder"), "创始人");
   assert.equal(normalizeFounderRole("Co-Founder"), "联合创始人");
