@@ -5,14 +5,15 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-15T07:57:02.631Z",
-    "latestDataDate": "2026-09-15",
-    "currentDate": "2026-09-15",
-    "eventCount": 3271,
-    "quarantinedEventCount": 34,
+    "generatedAt": "2026-09-16T04:08:34.638Z",
+    "latestDataDate": "2026-09-16",
+    "currentDate": "2026-09-16",
+    "eventCount": 3311,
+    "quarantinedEventCount": 35,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
       "EV-1fc7578ab4f32166",
@@ -56,28 +57,29 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 12,
+    "current_round_count": 13,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 12,
+    "portfolio_company_count": 13,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2023-04-27",
-    "latest_disclosed_at": "2026-08-05",
+    "latest_disclosed_at": "2026-09-15",
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 3,
       "lead": 7,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "seed",
       "series_a",
       "series_b",
       "series_b_extension",
-      "series_c"
+      "series_c",
+      "series_d7"
     ],
     "portfolio_companies": [
       {
@@ -121,6 +123,11 @@
         "name": "Onyx"
       },
       {
+        "entity_id": "FICO-d750f652e8f2dd92",
+        "canonical_entity_id": "",
+        "name": "Profound"
+      },
+      {
         "entity_id": "EN-53b69ef92c836777",
         "canonical_entity_id": "",
         "name": "Replit"
@@ -142,6 +149,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-c687d34d75d55c5f",
+        "funding_insight_id": "FI-06c111145d62f576",
+        "event_ids": [
+          "EV-05b635c3958e4591"
+        ],
+        "company_entity_id": "FICO-d750f652e8f2dd92",
+        "company_canonical_entity_id": "",
+        "company_name": "Profound",
+        "round": "D7轮",
+        "round_code": "series_d7",
+        "round_original": "D7轮",
+        "amount_original": "$180M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 180000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.8 亿美元"
+        },
+        "announced_at": "2026-09-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-bed55d4f5e02a374",
+            "source_url": "https://techcrunch.com/2026/09/15/aeo-startup-profound-hits-unicorn-valuation-raises-180m-series-d-7-months-after-last-round",
+            "source_title": "AEO 创业公司 Profound 融资 1.8 亿美元，估值达 18 亿美元",
+            "source_content_hash": "8c26f4447adaeabc",
+            "quote": "existing investors — including Lightspeed Venture Partners, Khosla Ventures, and South Park Commons — also participated",
+            "quote_hash": "abf17d3c7cc04d6ab46460f8938409589705dc5e1d6d0e56712e07b6a2ea602b"
+          }
+        ]
+      },
       {
         "activity_id": "IA-ddeee51e4ab6119a",
         "funding_insight_id": "FI-db2bd30618100f0d",
@@ -768,6 +815,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-bed55d4f5e02a374",
+        "source_url": "https://techcrunch.com/2026/09/15/aeo-startup-profound-hits-unicorn-valuation-raises-180m-series-d-7-months-after-last-round",
+        "source_title": "AEO 创业公司 Profound 融资 1.8 亿美元，估值达 18 亿美元",
+        "source_content_hash": "8c26f4447adaeabc",
+        "quote": "existing investors — including Lightspeed Venture Partners, Khosla Ventures, and South Park Commons — also participated",
+        "quote_hash": "abf17d3c7cc04d6ab46460f8938409589705dc5e1d6d0e56712e07b6a2ea602b"
+      },
       {
         "source_id": "FISRC-2daabe6c0da09480",
         "source_url": "https://techcrunch.com/2026/08/05/ai-makes-weather-prediction-better-can-windborne-make-it-lucrative",

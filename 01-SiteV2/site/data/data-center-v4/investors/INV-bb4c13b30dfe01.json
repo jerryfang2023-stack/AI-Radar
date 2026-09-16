@@ -5,14 +5,15 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-15T07:57:02.631Z",
-    "latestDataDate": "2026-09-15",
-    "currentDate": "2026-09-15",
-    "eventCount": 3271,
-    "quarantinedEventCount": 34,
+    "generatedAt": "2026-09-16T04:08:34.638Z",
+    "latestDataDate": "2026-09-16",
+    "currentDate": "2026-09-16",
+    "eventCount": 3311,
+    "quarantinedEventCount": 35,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
       "EV-1fc7578ab4f32166",
@@ -56,30 +57,76 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-08-17",
-    "latest_disclosed_at": "2026-08-17",
+    "latest_disclosed_at": "2026-09-10",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "series_b"
+      "series_b",
+      "series_c"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-50b2676afbe30c83",
         "canonical_entity_id": "EN-50b2676afbe30c83",
         "name": "Higgsfield"
+      },
+      {
+        "entity_id": "EN-897502f225e38bf5",
+        "canonical_entity_id": "",
+        "name": "Positron AI"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-20c2d52b5f21f69f",
+        "funding_insight_id": "FI-1adbb5f80063337e",
+        "event_ids": [
+          "EV-4e00ddcb0bc4f2bb"
+        ],
+        "company_entity_id": "EN-897502f225e38bf5",
+        "company_canonical_entity_id": "",
+        "company_name": "Positron AI",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "amount_original": "$875 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 875000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "8.75 亿美元"
+        },
+        "announced_at": "2026-09-10",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1029fa42a9437905",
+            "source_url": "https://www.libertyglobal.com/liberty-global-tech-ventures-invests-in-ai-inference-hardware-and-software-company-positron-ai/",
+            "source_title": "Liberty Global Tech Ventures Invests in AI Inference Hardware and Software Company, Positron AI - Liberty Global",
+            "source_content_hash": "4c1808f69caea175",
+            "quote": "Liberty Global Tech Ventures, the technology investment arm of Liberty Global, today announced an investment in Positron AI",
+            "quote_hash": "fa8e0a5e816a31cdbced711d1aaf4cfe27c36012c87d899a0c2bffa9a8a658e8"
+          }
+        ]
+      },
       {
         "activity_id": "IA-f74b7a0944a75b0a",
         "funding_insight_id": "FI-94c0eaa68ec2b037",
@@ -122,6 +169,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-1029fa42a9437905",
+        "source_url": "https://www.libertyglobal.com/liberty-global-tech-ventures-invests-in-ai-inference-hardware-and-software-company-positron-ai/",
+        "source_title": "Liberty Global Tech Ventures Invests in AI Inference Hardware and Software Company, Positron AI - Liberty Global",
+        "source_content_hash": "4c1808f69caea175",
+        "quote": "Liberty Global Tech Ventures, the technology investment arm of Liberty Global, today announced an investment in Positron AI",
+        "quote_hash": "fa8e0a5e816a31cdbced711d1aaf4cfe27c36012c87d899a0c2bffa9a8a658e8"
+      },
       {
         "source_id": "FISRC-7c15ac15bf3d0b1a",
         "source_url": "https://www.finsmes.com/2026/08/higgsfield-raises-400m-in-series-b-funding.html",

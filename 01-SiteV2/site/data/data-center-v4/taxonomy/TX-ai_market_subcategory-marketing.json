@@ -5,14 +5,15 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-15T07:57:02.631Z",
-    "latestDataDate": "2026-09-15",
-    "currentDate": "2026-09-15",
-    "eventCount": 3271,
-    "quarantinedEventCount": 34,
+    "generatedAt": "2026-09-16T04:08:34.638Z",
+    "latestDataDate": "2026-09-16",
+    "currentDate": "2026-09-16",
+    "eventCount": 3311,
+    "quarantinedEventCount": 35,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
       "EV-1fc7578ab4f32166",
@@ -54,6 +55,7 @@
     "typeLabel": "AI 市场子类",
     "valueId": "marketing",
     "eventIds": [
+      "EV-05b635c3958e4591",
       "EV-3c89b467fbcfc498",
       "EV-f6c882e143c0d634",
       "EV-1dba157815d84342",
@@ -66,6 +68,7 @@
       "EV-26624896fdc6c867"
     ],
     "entityIds": [
+      "FICO-d750f652e8f2dd92",
       "EN-062efa2ab5561309",
       "EN-086c739ca6223458",
       "EN-50b2676afbe30c83",
@@ -80,9 +83,392 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-04-16",
-    "lastSeen": "2026-09-12"
+    "lastSeen": "2026-09-16"
   },
   "events": [
+    {
+      "id": "EV-05b635c3958e4591",
+      "dataDate": "2026-09-16",
+      "date": "2026-09-15",
+      "updatedDate": "2026-09-16",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "AEO 创业公司 Profound 融资 1.8 亿美元，估值达 18 亿美元",
+      "originalTitle": "",
+      "subject": "AEO 创业公司 Profound",
+      "action": "融资",
+      "object": "1.8 亿美元，估值达 18 亿美元",
+      "metrics": [
+        "$180M",
+        "$180 million",
+        "$1.8 billion",
+        "$96 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "enterprise_applications",
+            "name": "企业级应用",
+            "entityIds": [
+              "FICO-d750f652e8f2dd92"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-2d42a0dedc6cc0c5",
+            "fundingInsightId": "FI-68743806bef12fca"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "marketing",
+            "name": "营销",
+            "entityIds": [
+              "FICO-d750f652e8f2dd92"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-d074949e549ded73",
+            "fundingInsightId": "FI-68743806bef12fca"
+          }
+        ],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "FICO-d750f652e8f2dd92"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b3f6a9b3c823cc3c",
+            "fundingInsightId": "FI-68743806bef12fca"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "content_creation",
+            "name": "内容创作",
+            "entityIds": [
+              "FICO-d750f652e8f2dd92"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-7fc0d377f6bda9f1",
+            "fundingInsightId": "FI-68743806bef12fca"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "data_analysis",
+            "name": "数据分析",
+            "entityIds": [
+              "FICO-d750f652e8f2dd92"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-fdaa2c6fa6ca1b15",
+            "fundingInsightId": "FI-68743806bef12fca"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "marketing",
+            "name": "营销",
+            "entityIds": [
+              "FICO-d750f652e8f2dd92"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-596ffd0d674c5949",
+            "fundingInsightId": "FI-68743806bef12fca"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "media_entertainment",
+            "name": "媒体与娱乐",
+            "entityIds": [
+              "FICO-d750f652e8f2dd92"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-9cd28e03a47c5a00",
+            "fundingInsightId": "FI-68743806bef12fca"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "retail_ecommerce",
+            "name": "零售与电商",
+            "entityIds": [
+              "FICO-d750f652e8f2dd92"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f754066dd1b77fa7",
+            "fundingInsightId": "FI-68743806bef12fca"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "FICO-d750f652e8f2dd92"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4b8cd9cca3035722",
+            "fundingInsightId": "FI-68743806bef12fca"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "enterprise_applications",
+          "name": "企业级应用",
+          "entityIds": [
+            "FICO-d750f652e8f2dd92"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-2d42a0dedc6cc0c5",
+          "fundingInsightId": "FI-68743806bef12fca"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "marketing",
+          "name": "营销",
+          "entityIds": [
+            "FICO-d750f652e8f2dd92"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-d074949e549ded73",
+          "fundingInsightId": "FI-68743806bef12fca"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "media_entertainment",
+          "name": "媒体与娱乐",
+          "entityIds": [
+            "FICO-d750f652e8f2dd92"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-9cd28e03a47c5a00",
+          "fundingInsightId": "FI-68743806bef12fca"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "FICO-d750f652e8f2dd92"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f754066dd1b77fa7",
+          "fundingInsightId": "FI-68743806bef12fca"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "FICO-d750f652e8f2dd92"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b3f6a9b3c823cc3c",
+          "fundingInsightId": "FI-68743806bef12fca"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "FICO-d750f652e8f2dd92"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4b8cd9cca3035722",
+          "fundingInsightId": "FI-68743806bef12fca"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "content_creation",
+          "name": "内容创作",
+          "entityIds": [
+            "FICO-d750f652e8f2dd92"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-7fc0d377f6bda9f1",
+          "fundingInsightId": "FI-68743806bef12fca"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "data_analysis",
+          "name": "数据分析",
+          "entityIds": [
+            "FICO-d750f652e8f2dd92"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-fdaa2c6fa6ca1b15",
+          "fundingInsightId": "FI-68743806bef12fca"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "marketing",
+          "name": "营销",
+          "entityIds": [
+            "FICO-d750f652e8f2dd92"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-596ffd0d674c5949",
+          "fundingInsightId": "FI-68743806bef12fca"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "enterprise_applications",
+          "name": "企业级应用",
+          "entityIds": [
+            "FICO-d750f652e8f2dd92"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-2d42a0dedc6cc0c5",
+          "fundingInsightId": "FI-68743806bef12fca"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "marketing",
+          "name": "营销",
+          "entityIds": [
+            "FICO-d750f652e8f2dd92"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-d074949e549ded73",
+          "fundingInsightId": "FI-68743806bef12fca"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "FICO-d750f652e8f2dd92"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b3f6a9b3c823cc3c",
+          "fundingInsightId": "FI-68743806bef12fca"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "content_creation",
+          "name": "内容创作",
+          "entityIds": [
+            "FICO-d750f652e8f2dd92"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-7fc0d377f6bda9f1",
+          "fundingInsightId": "FI-68743806bef12fca"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "data_analysis",
+          "name": "数据分析",
+          "entityIds": [
+            "FICO-d750f652e8f2dd92"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-fdaa2c6fa6ca1b15",
+          "fundingInsightId": "FI-68743806bef12fca"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "marketing",
+          "name": "营销",
+          "entityIds": [
+            "FICO-d750f652e8f2dd92"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-596ffd0d674c5949",
+          "fundingInsightId": "FI-68743806bef12fca"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "media_entertainment",
+          "name": "媒体与娱乐",
+          "entityIds": [
+            "FICO-d750f652e8f2dd92"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-9cd28e03a47c5a00",
+          "fundingInsightId": "FI-68743806bef12fca"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "FICO-d750f652e8f2dd92"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f754066dd1b77fa7",
+          "fundingInsightId": "FI-68743806bef12fca"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "FICO-d750f652e8f2dd92"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4b8cd9cca3035722",
+          "fundingInsightId": "FI-68743806bef12fca"
+        }
+      ],
+      "entityIds": [
+        "EN-d750f652e8f2dd92",
+        "FICO-d750f652e8f2dd92"
+      ],
+      "entityNames": [
+        "Profound",
+        "Profound"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/09/15/aeo-startup-profound-hits-unicorn-valuation-raises-180m-series-d-7-months-after-last-round",
+      "publisher": "TechCrunch：AI（RSS）"
+    },
     {
       "id": "EV-3c89b467fbcfc498",
       "dataDate": "2026-09-12",
@@ -3900,14 +4286,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
-        "TX-use_case-data_analysis",
-        "TX-product_form-enterprise_software_platform",
-        "TX-technology-agentic_execution",
-        "TX-use_case-content_creation",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-marketing",
-        "TX-use_case-marketing"
+        "TX-product_form-enterprise_software_platform",
+        "TX-target_user-business_user",
+        "TX-use_case-content_creation",
+        "TX-use_case-data_analysis",
+        "TX-use_case-marketing",
+        "TX-technology-agentic_execution"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-01-15",
@@ -3931,12 +4317,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
-        "TX-use_case-data_analysis",
-        "TX-product_form-enterprise_software_platform",
-        "TX-use_case-content_creation",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-marketing",
+        "TX-product_form-enterprise_software_platform",
+        "TX-target_user-business_user",
+        "TX-use_case-content_creation",
+        "TX-use_case-data_analysis",
         "TX-use_case-marketing"
       ],
       "relatedEntityIds": [],
@@ -3960,14 +4346,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
-        "TX-product_form-end_user_application",
-        "TX-industry-media_entertainment",
-        "TX-target_user-consumer",
-        "TX-use_case-content_creation",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-marketing",
+        "TX-industry-media_entertainment",
+        "TX-target_user-business_user",
+        "TX-use_case-content_creation",
         "TX-use_case-marketing",
+        "TX-product_form-end_user_application",
+        "TX-target_user-consumer",
         "TX-technology-video_generation"
       ],
       "relatedEntityIds": [],
@@ -3989,13 +4375,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
-        "TX-use_case-data_analysis",
-        "TX-product_form-enterprise_software_platform",
-        "TX-industry-retail_ecommerce",
-        "TX-use_case-content_creation",
         "TX-ai_market_category-enterprise_applications",
-        "TX-ai_market_subcategory-marketing"
+        "TX-ai_market_subcategory-marketing",
+        "TX-industry-retail_ecommerce",
+        "TX-product_form-enterprise_software_platform",
+        "TX-target_user-business_user",
+        "TX-use_case-content_creation",
+        "TX-use_case-data_analysis"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-06",
@@ -4016,19 +4402,19 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_category-enterprise_applications",
+        "TX-ai_market_subcategory-marketing",
+        "TX-industry-retail_ecommerce",
+        "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-use_case-data_analysis",
+        "TX-use_case-marketing",
         "TX-industry-manufacturing",
-        "TX-industry-financial_services",
-        "TX-product_form-enterprise_software_platform",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-industry-retail_ecommerce",
+        "TX-industry-financial_services",
         "TX-industry-automotive_transportation",
         "TX-product_form-model",
         "TX-industry-food_hospitality",
-        "TX-ai_market_category-enterprise_applications",
-        "TX-ai_market_subcategory-marketing",
-        "TX-use_case-marketing",
         "TX-use_case-sales"
       ],
       "relatedEntityIds": [],
@@ -4052,12 +4438,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
-        "TX-use_case-data_analysis",
-        "TX-product_form-enterprise_software_platform",
-        "TX-use_case-content_creation",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-marketing",
+        "TX-product_form-enterprise_software_platform",
+        "TX-target_user-business_user",
+        "TX-use_case-content_creation",
+        "TX-use_case-data_analysis",
         "TX-use_case-marketing"
       ],
       "relatedEntityIds": [],
@@ -4079,15 +4465,15 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
-        "TX-use_case-data_analysis",
-        "TX-product_form-end_user_application",
-        "TX-industry-retail_ecommerce",
-        "TX-technology-agentic_execution",
-        "TX-use_case-content_creation",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-marketing",
-        "TX-use_case-marketing"
+        "TX-industry-retail_ecommerce",
+        "TX-target_user-business_user",
+        "TX-use_case-content_creation",
+        "TX-use_case-data_analysis",
+        "TX-use_case-marketing",
+        "TX-product_form-end_user_application",
+        "TX-technology-agentic_execution"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-24",
@@ -4108,13 +4494,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
-        "TX-product_form-end_user_application",
-        "TX-industry-media_entertainment",
-        "TX-use_case-content_creation",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-marketing",
-        "TX-use_case-marketing"
+        "TX-industry-media_entertainment",
+        "TX-target_user-business_user",
+        "TX-use_case-content_creation",
+        "TX-use_case-marketing",
+        "TX-product_form-end_user_application"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-02",
@@ -4137,17 +4523,17 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
-        "TX-use_case-data_analysis",
-        "TX-industry-financial_services",
-        "TX-product_form-enterprise_software_platform",
-        "TX-industry-healthcare_life_sciences",
-        "TX-industry-retail_ecommerce",
-        "TX-industry-automotive_transportation",
-        "TX-use_case-content_creation",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-marketing",
-        "TX-use_case-marketing"
+        "TX-industry-retail_ecommerce",
+        "TX-product_form-enterprise_software_platform",
+        "TX-target_user-business_user",
+        "TX-use_case-content_creation",
+        "TX-use_case-data_analysis",
+        "TX-use_case-marketing",
+        "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-automotive_transportation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-28",
@@ -4176,21 +4562,21 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_category-enterprise_applications",
+        "TX-ai_market_subcategory-marketing",
+        "TX-industry-media_entertainment",
+        "TX-industry-retail_ecommerce",
         "TX-target_user-business_user",
+        "TX-use_case-content_creation",
+        "TX-use_case-marketing",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-product_form-end_user_application",
-        "TX-industry-media_entertainment",
-        "TX-industry-retail_ecommerce",
         "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
         "TX-product_form-model",
         "TX-target_user-consumer",
-        "TX-use_case-content_creation",
-        "TX-technology-multimodal",
-        "TX-ai_market_category-enterprise_applications",
-        "TX-ai_market_subcategory-marketing",
-        "TX-use_case-marketing"
+        "TX-technology-multimodal"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-04-15",

@@ -5,14 +5,15 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-15T07:57:02.631Z",
-    "latestDataDate": "2026-09-15",
-    "currentDate": "2026-09-15",
-    "eventCount": 3271,
-    "quarantinedEventCount": 34,
+    "generatedAt": "2026-09-16T04:08:34.638Z",
+    "latestDataDate": "2026-09-16",
+    "currentDate": "2026-09-16",
+    "eventCount": 3311,
+    "quarantinedEventCount": 35,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
       "EV-1fc7578ab4f32166",
@@ -56,67 +57,58 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 1,
     "market_regions": [
-      "CN",
-      "GLOBAL"
+      "CN"
     ],
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
     "first_disclosed_at": "2026-09-14",
-    "latest_disclosed_at": "2026-09-15",
+    "latest_disclosed_at": "2026-09-14",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 3
+      "participant": 1
     },
     "round_codes": [
       "series_b"
     ],
     "portfolio_companies": [
       {
-        "entity_id": "EN-63d1760c240e7a7c",
+        "entity_id": "FICO-rabyte",
         "canonical_entity_id": "",
         "name": "讯兔科技"
-      },
-      {
-        "entity_id": "EN-c087cefd343cb488",
-        "canonical_entity_id": "",
-        "name": "讯兔科技（上海）有限公司"
-      },
-      {
-        "entity_id": "EN-1540430ef01214f1",
-        "canonical_entity_id": "",
-        "name": "讯兔科技（Alpha派）"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-9e75d2ebe1ba6d9c",
-        "funding_insight_id": "FI-9d60cecb77545277",
+        "activity_id": "IA-248cd6d697fc9ff1",
+        "funding_insight_id": "FI-257e4f42c36415ea",
         "event_ids": [
-          "EV-a38a33003b0d6d08"
+          "EV-a38a33003b0d6d08",
+          "EV-63a4b6ce48e14829",
+          "EV-04bcb24d608a931c"
         ],
-        "company_entity_id": "EN-1540430ef01214f1",
+        "company_entity_id": "FICO-rabyte",
         "company_canonical_entity_id": "",
-        "company_name": "讯兔科技（Alpha派）",
+        "company_name": "讯兔科技",
         "round": "B轮",
         "round_code": "series_b",
         "round_original": "B轮",
-        "amount_original": "3亿元人民币",
+        "amount_original": "超3亿元人民币",
         "amount_normalized": {
           "currency": "CNY",
           "value": 300000000,
-          "min_value": null,
+          "min_value": 300000000,
           "max_value": null,
           "unit": "base",
-          "status": "exact",
-          "display_zh": "3 亿元"
+          "status": "lower_bound",
+          "display_zh": "超过 3 亿元"
         },
-        "announced_at": "2026-09-15",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
+        "announced_at": "2026-09-14",
+        "market_region": "CN",
+        "china_market_match": true,
         "disclosure_status": "disclosed",
         "scope": "current_round",
         "role": "本轮参投",
@@ -133,30 +125,32 @@
         ]
       },
       {
-        "activity_id": "IA-eaae9b562288a303",
-        "funding_insight_id": "FI-9d60cecb77545277",
+        "activity_id": "IA-eeac2950e59354d4",
+        "funding_insight_id": "FI-257e4f42c36415ea",
         "event_ids": [
-          "EV-a38a33003b0d6d08"
+          "EV-a38a33003b0d6d08",
+          "EV-63a4b6ce48e14829",
+          "EV-04bcb24d608a931c"
         ],
-        "company_entity_id": "EN-1540430ef01214f1",
+        "company_entity_id": "FICO-rabyte",
         "company_canonical_entity_id": "",
-        "company_name": "讯兔科技（Alpha派）",
+        "company_name": "讯兔科技",
         "round": "B轮",
         "round_code": "series_b",
         "round_original": "B轮",
-        "amount_original": "3亿元人民币",
+        "amount_original": "超3亿元人民币",
         "amount_normalized": {
           "currency": "CNY",
           "value": 300000000,
-          "min_value": null,
+          "min_value": 300000000,
           "max_value": null,
           "unit": "base",
-          "status": "exact",
-          "display_zh": "3 亿元"
+          "status": "lower_bound",
+          "display_zh": "超过 3 亿元"
         },
-        "announced_at": "2026-09-15",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
+        "announced_at": "2026-09-14",
+        "market_region": "CN",
+        "china_market_match": true,
         "disclosure_status": "disclosed",
         "scope": "historical_or_ambiguous",
         "role": "A轮老股东持续追加",
@@ -169,86 +163,6 @@
             "source_content_hash": "788675d51c86fa8d",
             "quote": "老股东钟鼎资本和嘉程资本持续追加",
             "quote_hash": "932a4b5d9831c8152243bbf4f8aff0e190480024b66a391e1e88ceffd573048f"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-95bacda93d27dd09",
-        "funding_insight_id": "FI-bda539a7d011ea24",
-        "event_ids": [
-          "EV-04bcb24d608a931c"
-        ],
-        "company_entity_id": "EN-63d1760c240e7a7c",
-        "company_canonical_entity_id": "",
-        "company_name": "讯兔科技",
-        "round": "B轮",
-        "round_code": "series_b",
-        "round_original": "B轮",
-        "amount_original": "3亿元人民币",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 300000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "3 亿元"
-        },
-        "announced_at": "2026-09-14",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-3e63ec136b8700e5",
-            "source_url": "https://www.qbitai.com/2026/09/488912.html",
-            "source_title": "一年连融三轮，这家金融AI公司又拿下超3亿B轮",
-            "source_content_hash": "ffb85beb1df15c99",
-            "quote": "同时，讯兔科技获得启明创投、琥珀资本、嘉程资本、信宸资本、钟鼎资本等头部创投机构和老股东的鼎力支持。",
-            "quote_hash": "7d1d6fef22757abeb80325ebb8a6e176c256d4b347018c69218dcf72266170ad"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-00b4874e64db74cb",
-        "funding_insight_id": "FI-d7991ae6537597c7",
-        "event_ids": [
-          "EV-63a4b6ce48e14829"
-        ],
-        "company_entity_id": "EN-c087cefd343cb488",
-        "company_canonical_entity_id": "",
-        "company_name": "讯兔科技（上海）有限公司",
-        "round": "B轮",
-        "round_code": "series_b",
-        "round_original": "B轮",
-        "amount_original": "3亿元人民币",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 300000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "3 亿元"
-        },
-        "announced_at": "2026-09-14",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-ccfbdf5e58155781",
-            "source_url": "https://news.pedaily.cn/202609/568978.shtml",
-            "source_title": "首发|讯兔科技完成超3亿元B轮融资，一年连融三轮 - 投资界",
-            "source_content_hash": "f949b5adc6d7fa3c",
-            "quote": "同时获得启明创投、琥珀资本、嘉程资本、信宸资本、钟鼎资本等头部创投机构和老股东的鼎力支持",
-            "quote_hash": "db5e32d83abedcacbabe42e3ee871d53fea69c69999e4bd80ec5ac41246f55ad"
           }
         ]
       }
@@ -269,22 +183,6 @@
         "source_content_hash": "788675d51c86fa8d",
         "quote": "老股东钟鼎资本和嘉程资本持续追加",
         "quote_hash": "932a4b5d9831c8152243bbf4f8aff0e190480024b66a391e1e88ceffd573048f"
-      },
-      {
-        "source_id": "FISRC-3e63ec136b8700e5",
-        "source_url": "https://www.qbitai.com/2026/09/488912.html",
-        "source_title": "一年连融三轮，这家金融AI公司又拿下超3亿B轮",
-        "source_content_hash": "ffb85beb1df15c99",
-        "quote": "同时，讯兔科技获得启明创投、琥珀资本、嘉程资本、信宸资本、钟鼎资本等头部创投机构和老股东的鼎力支持。",
-        "quote_hash": "7d1d6fef22757abeb80325ebb8a6e176c256d4b347018c69218dcf72266170ad"
-      },
-      {
-        "source_id": "FISRC-ccfbdf5e58155781",
-        "source_url": "https://news.pedaily.cn/202609/568978.shtml",
-        "source_title": "首发|讯兔科技完成超3亿元B轮融资，一年连融三轮 - 投资界",
-        "source_content_hash": "f949b5adc6d7fa3c",
-        "quote": "同时获得启明创投、琥珀资本、嘉程资本、信宸资本、钟鼎资本等头部创投机构和老股东的鼎力支持",
-        "quote_hash": "db5e32d83abedcacbabe42e3ee871d53fea69c69999e4bd80ec5ac41246f55ad"
       }
     ]
   }

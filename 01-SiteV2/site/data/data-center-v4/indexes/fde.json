@@ -5,14 +5,15 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-15T07:57:02.631Z",
-    "latestDataDate": "2026-09-15",
-    "currentDate": "2026-09-15",
-    "eventCount": 3271,
-    "quarantinedEventCount": 34,
+    "generatedAt": "2026-09-16T04:08:34.638Z",
+    "latestDataDate": "2026-09-16",
+    "currentDate": "2026-09-16",
+    "eventCount": 3311,
+    "quarantinedEventCount": 35,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
       "EV-1fc7578ab4f32166",
@@ -48,6 +49,118 @@
     ]
   },
   "fde": [
+    {
+      "id": "FDE-089c1a8365c0c882",
+      "eventId": "EV-0b7dcbb44344e389",
+      "dataDate": "2026-09-16",
+      "date": "2026-09-15",
+      "title": "Anthropic 发布《构建 AI 原生营收组织》指南，详解 Claude 在销售团队的落地路径",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "路径",
+      "reportedNeed": "half the team barely touches the AI it already has, the best sellers build skills and prompts that no one else uses, and leadership has no visibility into usage and spend",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://claude.com/blog/building-an-ai-native-revenue-organization",
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-43e07e2f011d8bf3",
+        "EN-4c68db89690cd99b"
+      ]
+    },
+    {
+      "id": "FDE-98d93530f049c8a1",
+      "eventId": "EV-ad6c755f7cf588c4",
+      "dataDate": "2026-09-16",
+      "date": "2026-09-15",
+      "title": "Vertical Data 获得 1.92 亿美元 AI 基础设施承诺，用于全球 AI 开发者",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "a global AI developer",
+      "vendor": "Vertical Data",
+      "industry": "AI infrastructure",
+      "useCase": "$192 Million AI Infrastructure Commitment for Global AI Developer | Newswire",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Vertical Data Inc. (OTCQB:VDTA) (\"Vertical Data\" or the \"Company\"), a vertically integrated AI infrastructure company providing GPU financing, AI hardware, sovereign cloud and edge data center solutions, today announced it has signed a Letter of Intent (\"LOI\") with a global AI developer (the \"Customer\") for the deployment of a dedicated, single-tenant NVIDIA B300 Blackwell Ultra GPU cluster to be deployed at an AI ready data center in Western Europe. The LOI contemplates an aggregate contract value of approximately $192.1 million over a five-year initial term on a take-or-pay basis, with initial service commencement targeted for the first quarter of 2027."
+      ],
+      "outcomes": [
+        "aggregate contract value of approximately $192.1 million over a five-year initial term on a take-or-pay basis"
+      ],
+      "metrics": [
+        "$192 Million",
+        "$192 Million",
+        "$192.1 million"
+      ],
+      "undisclosedFields": [
+        "workflow_before",
+        "workflow_after",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls"
+      ],
+      "tags": [],
+      "sourceUrl": "https://newswire.com/news/vertical-data-secures-192-million-ai-infrastructure-commitment-for-global-ai",
+      "entityIds": [
+        "EN-984a4161f72f4121",
+        "EN-8d4321d936320802"
+      ]
+    },
+    {
+      "id": "FDE-a76741977671a39d",
+      "eventId": "EV-cc8775744a9362c4",
+      "dataDate": "2026-09-16",
+      "date": "2026-09-15",
+      "title": "Levio 与 Cohere 合作，为加拿大政府和企业提供主权 AI",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "Levio",
+      "industry": "未披露",
+      "useCase": "Cohere",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://newswire.ca/news-releases/levio-and-cohere-partner-to-deliver-sovereign-ai-to-canadian-governments-and-enterprises-882778326.html",
+      "entityIds": [
+        "EN-2818734581326891"
+      ]
+    },
     {
       "id": "FDE-7065b4f0440e7dba",
       "eventId": "EV-172660367138131c",
@@ -7152,6 +7265,154 @@
   ],
   "fdeDossiers": [
     {
+      "id": "FDED-1b7778eb4474c341",
+      "implementationKey": "1b7778eb4474c341",
+      "eventId": "EV-ad6c755f7cf588c4",
+      "eventIds": [
+        "EV-ad6c755f7cf588c4"
+      ],
+      "dataDate": "2026-09-16",
+      "date": "2026-09-15",
+      "title": "a global AI developer × Vertical Data：$192 Million AI Infrastructure Commitment for Global AI Developer | Newswire",
+      "stage": "production",
+      "stageLabel": "production",
+      "customer": "a global AI developer",
+      "vendor": "Vertical Data",
+      "industry": "AI infrastructure",
+      "useCase": "$192 Million AI Infrastructure Commitment for Global AI Developer | Newswire",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [
+        "aggregate contract value of approximately $192.1 million over a five-year initial term on a take-or-pay basis"
+      ],
+      "observationCount": 1,
+      "completeness": 0.75,
+      "completenessPercent": 75,
+      "missingFields": [
+        "workflow",
+        "systems_integrated"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-73c587851606bbd7",
+          "type": "implementation_update",
+          "stage": "production",
+          "date": "2026-09-15",
+          "dataDate": "2026-09-16",
+          "eventId": "EV-ad6c755f7cf588c4",
+          "eventTitle": "Vertical Data 获得 1.92 亿美元 AI 基础设施承诺，用于全球 AI 开发者",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://newswire.com/news/vertical-data-secures-192-million-ai-infrastructure-commitment-for-global-ai",
+      "entityIds": [
+        "EN-984a4161f72f4121",
+        "EN-8d4321d936320802"
+      ]
+    },
+    {
+      "id": "FDED-e8887bcbea609bc2",
+      "implementationKey": "e8887bcbea609bc2",
+      "eventId": "EV-cc8775744a9362c4",
+      "eventIds": [
+        "EV-cc8775744a9362c4"
+      ],
+      "dataDate": "2026-09-16",
+      "date": "2026-09-15",
+      "title": "未披露 × Levio：Cohere",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "Levio",
+      "industry": "未披露",
+      "useCase": "Cohere",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.375,
+      "completenessPercent": 38,
+      "missingFields": [
+        "customer",
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-006543ce71af47e4",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-09-15",
+          "dataDate": "2026-09-16",
+          "eventId": "EV-cc8775744a9362c4",
+          "eventTitle": "Levio 与 Cohere 合作，为加拿大政府和企业提供主权 AI",
+          "claimCount": 1,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://newswire.ca/news-releases/levio-and-cohere-partner-to-deliver-sovereign-ai-to-canadian-governments-and-enterprises-882778326.html",
+      "entityIds": [
+        "EN-2818734581326891"
+      ]
+    },
+    {
+      "id": "FDED-147e347a6175a1b5",
+      "implementationKey": "147e347a6175a1b5",
+      "eventId": "EV-0b7dcbb44344e389",
+      "eventIds": [
+        "EV-0b7dcbb44344e389"
+      ],
+      "dataDate": "2026-09-16",
+      "date": "2026-09-14",
+      "title": "未披露 × 未披露：路径",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "路径",
+      "workflow": "未披露",
+      "systems": [
+        "Claude"
+      ],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.375,
+      "completenessPercent": 38,
+      "missingFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-533a062fe935642f",
+          "type": "implementation_update",
+          "stage": "completed",
+          "date": "2026-09-14",
+          "dataDate": "2026-09-16",
+          "eventId": "EV-0b7dcbb44344e389",
+          "eventTitle": "Anthropic 发布《构建 AI 原生营收组织》指南，详解 Claude 在销售团队的落地路径",
+          "claimCount": 3,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://claude.com/blog/building-an-ai-native-revenue-organization",
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-43e07e2f011d8bf3",
+        "EN-4c68db89690cd99b"
+      ]
+    },
+    {
       "id": "FDED-b3a9ad08230849d6",
       "implementationKey": "b3a9ad08230849d6",
       "eventId": "EV-ff598b54d248fce0",
@@ -10191,40 +10452,40 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-09-15",
-      "funnel_id": "LF-08bad4bdc02e145e",
+      "data_date": "2026-09-16",
+      "funnel_id": "LF-64502b44d078f50b",
       "lens": "fde",
-      "date": "2026-09-15",
+      "date": "2026-09-16",
       "monitoring_paths": [
         "fde_customer_case",
         "fde_earnings_disclosure",
         "fde_procurement_contract",
         "fde_production_rollout"
       ],
-      "raw_documents": 108,
-      "original_sources": 91,
-      "valid_claims": 34,
-      "observations": 2,
-      "canonical_events": 17,
+      "raw_documents": 91,
+      "original_sources": 78,
+      "valid_claims": 40,
+      "observations": 3,
+      "canonical_events": 15,
       "blocker_counts": {
-        "no_source_bounded_claim": 2,
-        "no_source_bounded_event": 13,
-        "source_outside_daily_window": 40,
-        "directory_page_not_event_source": 1,
-        "repository_page_requires_release_source": 4,
-        "non_event_or_index_title": 9,
+        "event_entity_unresolved": 1,
+        "no_source_bounded_event": 15,
+        "non_event_or_index_title": 6,
+        "source_outside_daily_window": 32,
         "event_not_ai_relevant": 3,
-        "opinion_without_source_bounded_event": 2,
+        "source_published_after_data_date": 1,
+        "opinion_without_source_bounded_event": 1,
         "community_source_requires_original_event_source": 1,
-        "raw_source_quality_block": 16
+        "no_source_bounded_claim": 1,
+        "raw_source_quality_block": 13
       },
       "rates": {
-        "original_source_rate": 0.8425925925925926,
-        "valid_claim_rate": 0.3148148148148148,
-        "observation_rate": 0.058823529411764705,
-        "event_conversion_rate": 0.5
+        "original_source_rate": 0.8571428571428571,
+        "valid_claim_rate": 0.43956043956043955,
+        "observation_rate": 0.075,
+        "event_conversion_rate": 0.375
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-15/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-16/monitoring-funnel.json"
     }
   ]
 }

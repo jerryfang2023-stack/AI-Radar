@@ -5,14 +5,15 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-15T07:57:02.631Z",
-    "latestDataDate": "2026-09-15",
-    "currentDate": "2026-09-15",
-    "eventCount": 3271,
-    "quarantinedEventCount": 34,
+    "generatedAt": "2026-09-16T04:08:34.638Z",
+    "latestDataDate": "2026-09-16",
+    "currentDate": "2026-09-16",
+    "eventCount": 3311,
+    "quarantinedEventCount": 35,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
       "EV-1fc7578ab4f32166",
@@ -58,6 +59,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-da957eedfad908b6",
       "EV-b2573b146a89c48a",
       "EV-c7da4a53cf54f922"
     ],
@@ -65,13 +67,14 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-11",
-    "lastSeen": "2026-09-11",
+    "lastSeen": "2026-09-16",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-da957eedfad908b6",
         "EV-b2573b146a89c48a",
         "EV-c7da4a53cf54f922"
       ],
@@ -80,6 +83,37 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-da957eedfad908b6",
+        "dataDate": "2026-09-16",
+        "date": "2026-09-16",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "谷歌推出 Gemini 3.8 Live，以远低于 OpenAI GPT-Live-1 的成本与之竞争",
+        "displayTags": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-bbdefa2950f49882"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-bbdefa2950f49882",
+          "EN-7d3194f79e645c42",
+          "EN-2b6e51bec93e86c1",
+          "EN-14310b997b3ca06d",
+          "EN-dfa0b001befb3fbd"
+        ]
+      },
       {
         "id": "EV-b2573b146a89c48a",
         "dataDate": "2026-09-11",

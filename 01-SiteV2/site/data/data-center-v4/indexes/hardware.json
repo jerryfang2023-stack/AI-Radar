@@ -5,14 +5,15 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-15T07:57:02.631Z",
-    "latestDataDate": "2026-09-15",
-    "currentDate": "2026-09-15",
-    "eventCount": 3271,
-    "quarantinedEventCount": 34,
+    "generatedAt": "2026-09-16T04:08:34.638Z",
+    "latestDataDate": "2026-09-16",
+    "currentDate": "2026-09-16",
+    "eventCount": 3311,
+    "quarantinedEventCount": 35,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
       "EV-1fc7578ab4f32166",
@@ -48,6 +49,33 @@
     ]
   },
   "hardware": [
+    {
+      "id": "HW-5aa85a1a004480c8",
+      "eventId": "EV-cbc988c78b987642",
+      "dataDate": "2026-09-16",
+      "date": "2026-09-14",
+      "title": "富士通推出日本制造的下一代CPU FUJITSU-MONAKA及面向主权AI基础设施的富士通MONAKA服务器",
+      "hardwareType": "semiconductor",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "data_center",
+      "supplier": "Fujitsu",
+      "customer": "data center operators, enterprises, and the academic and HPC sectors in Japan and Europe, as well as the defense sector",
+      "processNode": "2nm",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "Europe",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://voasg.com/jcn-newswire/fujitsu-launches-made-in-japan-next-generation-cpu-fujitsu-monaka-and-fujitsu-monaka-server-for-sovereign-ai-infrastructure",
+      "sourceName": "voasg.com",
+      "sourceDate": "2026-09-14",
+      "entityIds": [
+        "EN-4742b2b6563b92ed"
+      ]
+    },
     {
       "id": "HW-833c523a4ed85286",
       "eventId": "EV-5a90068e9e762f94",
@@ -3478,6 +3506,464 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-ec83310e0bcadc0c",
+      "snapshotKey": "ec83310e0bcadc0c",
+      "snapshotId": "HWS-3c2108f805634ebf",
+      "eventId": "EV-c69591582a468bd5",
+      "eventIds": [
+        "EV-c69591582a468bd5"
+      ],
+      "dataDate": "2026-09-16",
+      "date": "2026-09-16",
+      "title": "AI Clusters / Nonstop AI / Scale Resilient AI Clusters",
+      "subject": "Delos Data",
+      "productNames": [
+        "AI Clusters",
+        "Nonstop AI",
+        "Scale Resilient AI Clusters"
+      ],
+      "hardwareType": "data_center",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-c4279c35c6c88513"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-16",
+          "hardware_fact_id": "HWF-c4279c35c6c88513",
+          "fact_type": "product",
+          "observed_at": "2026-09-15T00:00:00.000Z",
+          "subject_entity_id": "EN-36408e3a0e094a6f",
+          "subject_name": "Delos Data",
+          "product_entity_ids": [
+            "EN-2942608b16ddfe8d",
+            "EN-4337af294bc79998",
+            "EN-b6ef0d4c65665ccc"
+          ],
+          "product_names": [
+            "AI Clusters",
+            "Nonstop AI",
+            "Scale Resilient AI Clusters"
+          ],
+          "component_type": "data_center",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Delos Nonstop AI™ Reference Architecture. A system-level blueprint for agentic AI infrastructure organized around quicker data movement between endpoints, larger scale to the order of hundreds of thousands of devices rather than one rack or a handful and higher resiliency to endpoint, network, software, and link failures. The architecture introduces a data interface between every endpoint in the data domain, so that heterogeneous compute, acceleration, memory, and storage can be composed to the workload to deliver Nonstop Tokens.",
+          "event_refs": [
+            "EV-c69591582a468bd5"
+          ],
+          "claim_ref": "CL-820411a4cdf3f5b4",
+          "source_refs": [
+            "SA-441803828219c3ab"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-16/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-36408e3a0e094a6f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-36408e3a0e094a6f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://prnewswire.com/news-releases/delos-data-unveils-nonstop-ai-to-build-and-scale-resilient-ai-clusters-to-deliver-nonstop-tokens-302878474.html",
+      "entityIds": [
+        "EN-36408e3a0e094a6f",
+        "EN-2942608b16ddfe8d",
+        "EN-4337af294bc79998",
+        "EN-b6ef0d4c65665ccc"
+      ]
+    },
+    {
+      "id": "HWC-c57d8a28ca8e466d",
+      "snapshotKey": "c57d8a28ca8e466d",
+      "snapshotId": "HWS-256a384ef03055b0",
+      "eventId": "EV-cbc988c78b987642",
+      "eventIds": [
+        "EV-cbc988c78b987642"
+      ],
+      "dataDate": "2026-09-16",
+      "date": "2026-09-16",
+      "title": "Fujitsu",
+      "subject": "Fujitsu",
+      "productNames": [],
+      "hardwareType": "server",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-fae38fd304d41a9e"
+        }
+      },
+      "factCount": 3,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-09-16",
+          "hardware_fact_id": "HWF-afe203c1048393cd",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-09-14T00:00:00.000Z",
+          "subject_entity_id": "EN-4742b2b6563b92ed",
+          "subject_name": "Fujitsu",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "server",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Fujitsu MONAKA Server, powered by the FUJITSU-MONAKA CPU, enhances sovereign capabilities through domestic manufacturing, contributing to traceability and supply chain transparency. Furthermore, at a time when power and installation space are significant challenges for AI infrastructure expansion, this CPU server alone can build an AI inference platform. Its space-saving and power-efficient design allows for deployment in air-cooled data centers, significantly increasing customers’ capacity for AI infrastructure expansion. Fujitsu MONAKA Server also supports future scalability through resource pooling technology and reduces cooling energy consumption with Fujitsu’s long-cultivated cooling technologies.",
+          "event_refs": [
+            "EV-cbc988c78b987642"
+          ],
+          "claim_ref": "CL-689e55520a812b14",
+          "source_refs": [
+            "SA-6215e671db42357f",
+            "SA-10464455faba2bcf",
+            "SA-42103ffeb7d660ed"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-16/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-09-16",
+          "hardware_fact_id": "HWF-24469e6e7d07f75a",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-09-14T00:00:00.000Z",
+          "subject_entity_id": "EN-4742b2b6563b92ed",
+          "subject_name": "Fujitsu",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "server",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Fujitsu MONAKA Server, powered by the FUJITSU-MONAKA CPU, enhances sovereign capabilities through domestic manufacturing, contributing to traceability and supply chain transparency. Furthermore, at a time when power and installation space are significant challenges for AI infrastructure expansion, this CPU server alone can build an AI inference platform. Its space-saving and power-efficient design allows for deployment in air-cooled data centers, significantly increasing customers' capacity for AI infrastructure expansion. Fujitsu MONAKA Server also supports future scalability through resource pooling technology and reduces cooling energy consumption with Fujitsu's long-cultivated cooling technologies.",
+          "event_refs": [
+            "EV-cbc988c78b987642"
+          ],
+          "claim_ref": "CL-3669802f8d651b61",
+          "source_refs": [
+            "SA-6215e671db42357f",
+            "SA-10464455faba2bcf",
+            "SA-42103ffeb7d660ed"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-16/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-09-16",
+          "hardware_fact_id": "HWF-fae38fd304d41a9e",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-09-14T00:00:00.000Z",
+          "subject_entity_id": "EN-4742b2b6563b92ed",
+          "subject_name": "Fujitsu",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "server",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Fujitsu MONAKA Server, powered by the FUJITSU-MONAKA CPU, enhances sovereign capabilities through domestic manufacturing, contributing to traceability and supply chain transparency. Furthermore, at a time when power and installation space are significant challenges for AI infrastructure expansion, this CPU server alone can build an AI inference platform. Its space-saving and power-efficient design allows for deployment in air-cooled data centers, significantly increasing customers' capacity for AI infrastructure expansion. Fujitsu MONAKA Server also supports future scalability through resource pooling technology and reduces cooling energy consumption with Fujitsu's long-cultivated cooling technologies.",
+          "event_refs": [
+            "EV-cbc988c78b987642"
+          ],
+          "claim_ref": "CL-0cd890e93561bf88",
+          "source_refs": [
+            "SA-6215e671db42357f",
+            "SA-10464455faba2bcf",
+            "SA-42103ffeb7d660ed"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-16/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://voasg.com/jcn-newswire/fujitsu-launches-made-in-japan-next-generation-cpu-fujitsu-monaka-and-fujitsu-monaka-server-for-sovereign-ai-infrastructure",
+      "entityIds": [
+        "EN-4742b2b6563b92ed"
+      ]
+    },
+    {
+      "id": "HWC-df312593e6339689",
+      "snapshotKey": "df312593e6339689",
+      "snapshotId": "HWS-d36af5ed79bba073",
+      "eventId": "EV-cbc988c78b987642",
+      "eventIds": [
+        "EV-cbc988c78b987642"
+      ],
+      "dataDate": "2026-09-16",
+      "date": "2026-09-16",
+      "title": "Fujitsu",
+      "subject": "Fujitsu",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product",
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-1c7e306334a59fea"
+        },
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-ea6661c1bd4f85e6"
+        }
+      },
+      "factCount": 6,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-09-16",
+          "hardware_fact_id": "HWF-dac7c33760002891",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-09-14T00:00:00.000Z",
+          "subject_entity_id": "EN-4742b2b6563b92ed",
+          "subject_name": "Fujitsu",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "The FUJITSU-MONAKA CPU integrates Fujitsu’s extensive expertise in processor and server development, achieving world-class computational performance and data supply capabilities with a maximum operating frequency of 3.8GHz and memory transfer speed of 8800MT/s. It delivers twice the AI inference throughput and superior power efficiency compared to other CPUs, effectively halving the number of servers and power consumption required for equivalent processing loads.",
+          "event_refs": [
+            "EV-cbc988c78b987642"
+          ],
+          "claim_ref": "CL-e4ef19507b939ab9",
+          "source_refs": [
+            "SA-6215e671db42357f",
+            "SA-10464455faba2bcf",
+            "SA-42103ffeb7d660ed"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-16/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-09-16",
+          "hardware_fact_id": "HWF-d1d7bb97ff1ac74b",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-09-14T00:00:00.000Z",
+          "subject_entity_id": "EN-4742b2b6563b92ed",
+          "subject_name": "Fujitsu",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "The FUJITSU-MONAKA CPU integrates Fujitsu's extensive expertise in processor and server development, achieving world-class computational performance and data supply capabilities with a maximum operating frequency of 3.8GHz and memory transfer speed of 8800MT/s. It delivers twice the AI inference throughput and superior power efficiency compared to other CPUs, effectively halving the number of servers and power consumption required for equivalent processing loads.",
+          "event_refs": [
+            "EV-cbc988c78b987642"
+          ],
+          "claim_ref": "CL-9c0a0e2c00a4d0d6",
+          "source_refs": [
+            "SA-6215e671db42357f",
+            "SA-10464455faba2bcf",
+            "SA-42103ffeb7d660ed"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-16/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-09-16",
+          "hardware_fact_id": "HWF-ea6661c1bd4f85e6",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-09-14T00:00:00.000Z",
+          "subject_entity_id": "EN-4742b2b6563b92ed",
+          "subject_name": "Fujitsu",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "The FUJITSU-MONAKA CPU integrates Fujitsu's extensive expertise in processor and server development, achieving world-class computational performance and data supply capabilities with a maximum operating frequency of 3.8GHz and memory transfer speed of 8800MT/s. It delivers twice the AI inference throughput and superior power efficiency compared to other CPUs, effectively halving the number of servers and power consumption required for equivalent processing loads.",
+          "event_refs": [
+            "EV-cbc988c78b987642"
+          ],
+          "claim_ref": "CL-30283b50f7b17256",
+          "source_refs": [
+            "SA-6215e671db42357f",
+            "SA-10464455faba2bcf",
+            "SA-42103ffeb7d660ed"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-16/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-16",
+          "hardware_fact_id": "HWF-5cc135ed28063281",
+          "fact_type": "product",
+          "observed_at": "2026-09-14T00:00:00.000Z",
+          "subject_entity_id": "EN-4742b2b6563b92ed",
+          "subject_name": "Fujitsu",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "KAWASAKI, Japan, September 14, 2026 – (JCN Newswire via SeaPRwire.com) – Fujitsu Limited today announced that it will begin global sales of its next-generation CPU, FUJITSU-MONAKA [1], designed and developed in Japan, starting November 2026. This will include sales of the processor as a standalone product to cloud and data center operators and server vendors. Additionally, the company will launch the made-in-Japan Fujitsu MONAKA Server equipped with the FUJITSU-MONAKA CPU, offering high reliability and power efficiency as a sovereign AI infrastructure. Fujitsu MONAKA Server will be made broadly available from November 2026 to data center operators, enterprises, and the academic and HPC sectors in Japan and Europe, as well as to the defense sector, contributing to national security.",
+          "event_refs": [
+            "EV-cbc988c78b987642"
+          ],
+          "claim_ref": "CL-c517fd353bf0698e",
+          "source_refs": [
+            "SA-6215e671db42357f",
+            "SA-10464455faba2bcf",
+            "SA-42103ffeb7d660ed"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-16/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-09-16",
+          "hardware_fact_id": "HWF-48ff399574c929ed",
+          "fact_type": "product",
+          "observed_at": "2026-09-14T00:00:00.000Z",
+          "subject_entity_id": "EN-4742b2b6563b92ed",
+          "subject_name": "Fujitsu",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "KAWASAKI, Japan , Sept. 14, 2026 /PRNewswire/ -- Fujitsu Limited today announced that it will begin global sales of its next-generation CPU, FUJITSU-MONAKA [1] , designed and developed in Japan, starting November 2026. This will include sales of the processor as a standalone product to cloud and data center operators and server vendors. Additionally, the company will launch the made-in-Japan Fujitsu MONAKA Server equipped with the FUJITSU-MONAKA CPU, offering high reliability and power efficiency as a sovereign AI infrastructure. Fujitsu MONAKA Server will be made broadly available from November 2026 to data center operators, enterprises, and the academic and HPC sectors in Japan and Europe, contributing to national security.",
+          "event_refs": [
+            "EV-cbc988c78b987642"
+          ],
+          "claim_ref": "CL-ca842173a064b2d4",
+          "source_refs": [
+            "SA-6215e671db42357f",
+            "SA-10464455faba2bcf",
+            "SA-42103ffeb7d660ed"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-16/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-09-16",
+          "hardware_fact_id": "HWF-1c7e306334a59fea",
+          "fact_type": "product",
+          "observed_at": "2026-09-14T00:00:00.000Z",
+          "subject_entity_id": "EN-4742b2b6563b92ed",
+          "subject_name": "Fujitsu",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "KAWASAKI, Japan , Sept. 14, 2026 /PRNewswire/ -- Fujitsu Limited today announced that it will begin global sales of its next-generation CPU, FUJITSU-MONAKA [1] , designed and developed in Japan, starting November 2026. This will include sales of the processor as a standalone product to cloud and data center operators and server vendors. Additionally, the company will launch the made-in-Japan Fujitsu MONAKA Server equipped with the FUJITSU-MONAKA CPU, offering high reliability and power efficiency as a sovereign AI infrastructure. Fujitsu MONAKA Server will be made broadly available from November 2026 to data center operators, enterprises, and the academic and HPC sectors in Japan and Europe, contributing to national security.",
+          "event_refs": [
+            "EV-cbc988c78b987642"
+          ],
+          "claim_ref": "CL-640e0952365d4fa6",
+          "source_refs": [
+            "SA-6215e671db42357f",
+            "SA-10464455faba2bcf",
+            "SA-42103ffeb7d660ed"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-16/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://voasg.com/jcn-newswire/fujitsu-launches-made-in-japan-next-generation-cpu-fujitsu-monaka-and-fujitsu-monaka-server-for-sovereign-ai-infrastructure",
+      "entityIds": [
+        "EN-4742b2b6563b92ed"
+      ]
+    },
+    {
+      "id": "HWC-a2c7435a695d0e0a",
+      "snapshotKey": "a2c7435a695d0e0a",
+      "snapshotId": "HWS-3690d7f3d273dde6",
+      "eventId": "EV-ad6c755f7cf588c4",
+      "eventIds": [
+        "EV-ad6c755f7cf588c4"
+      ],
+      "dataDate": "2026-09-16",
+      "date": "2026-09-16",
+      "title": "Vertical Data",
+      "subject": "Vertical Data",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "192.1",
+          "unit": "$million",
+          "fact_ref": "HWF-d91aed363e6df0a6"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-09-16",
+          "hardware_fact_id": "HWF-d91aed363e6df0a6",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-09-15T00:00:00.000Z",
+          "subject_entity_id": "EN-984a4161f72f4121",
+          "subject_name": "Vertical Data",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "192.1",
+          "unit": "$million",
+          "source_quote": "Vertical Data Inc. (OTCQB:VDTA) (\"Vertical Data\" or the \"Company\"), a vertically integrated AI infrastructure company providing GPU financing, AI hardware, sovereign cloud and edge data center solutions, today announced it has signed a Letter of Intent (\"LOI\") with a global AI developer (the \"Customer\") for the deployment of a dedicated, single-tenant NVIDIA B300 Blackwell Ultra GPU cluster to be deployed at an AI ready data center in Western Europe. The LOI contemplates an aggregate contract value of approximately $192.1 million over a five-year initial term on a take-or-pay basis, with initial service commencement targeted for the first quarter of 2027.",
+          "event_refs": [
+            "EV-ad6c755f7cf588c4"
+          ],
+          "claim_ref": "CL-e3bbd067e2b5dfef",
+          "source_refs": [
+            "SA-6ab1b8edc7f669e0"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-16/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://newswire.com/news/vertical-data-secures-192-million-ai-infrastructure-commitment-for-global-ai",
+      "entityIds": [
+        "EN-984a4161f72f4121",
+        "EN-8d4321d936320802"
+      ]
+    },
     {
       "id": "HWC-91a0ae33ca21aa09",
       "snapshotKey": "91a0ae33ca21aa09",
@@ -16919,37 +17405,37 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-09-15",
-      "funnel_id": "LF-4e2af9c184b0f5f3",
+      "data_date": "2026-09-16",
+      "funnel_id": "LF-7321638daebc50a2",
       "lens": "hardware",
-      "date": "2026-09-15",
+      "date": "2026-09-16",
       "monitoring_paths": [
         "hardware_capacity_fab",
-        "hardware_capex",
+        "hardware_oem_odm",
         "hardware_product_specs",
         "hardware_shipment_deployment",
         "hardware_supply_agreement"
       ],
-      "raw_documents": 30,
-      "original_sources": 24,
-      "valid_claims": 8,
-      "observations": 4,
-      "canonical_events": 6,
+      "raw_documents": 24,
+      "original_sources": 21,
+      "valid_claims": 25,
+      "observations": 11,
+      "canonical_events": 11,
       "blocker_counts": {
-        "domestic_publication_date_unverified": 6,
-        "event_not_ai_relevant": 4,
-        "raw_source_quality_block": 6,
         "source_outside_daily_window": 4,
-        "non_event_or_index_title": 2,
-        "no_source_bounded_claim": 2
+        "no_source_bounded_claim": 1,
+        "event_not_ai_relevant": 2,
+        "source_outside_funding_backfill_window": 1,
+        "no_source_bounded_event": 2,
+        "raw_source_quality_block": 3
       },
       "rates": {
-        "original_source_rate": 0.8,
-        "valid_claim_rate": 0.26666666666666666,
-        "observation_rate": 0.5,
-        "event_conversion_rate": 0.75
+        "original_source_rate": 0.875,
+        "valid_claim_rate": 1,
+        "observation_rate": 0.44,
+        "event_conversion_rate": 0.44
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-15/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-16/monitoring-funnel.json"
     }
   ]
 }
