@@ -14,6 +14,7 @@ import {
 import { selectImmutableSourceSnapshot } from "./lib/immutable-source-snapshot-v1.mjs";
 import { collectChinaFunding } from "./lib/china-funding-collector.mjs";
 import { chinaFundingArticleHtml } from "./lib/china-funding-html.mjs";
+import { sourceDiagnosticMarkdown } from "./lib/source-diagnostic-markdown.mjs";
 import {
   chinaMarketLaneQueries,
   loadChinaMarketConfig,
@@ -4865,7 +4866,7 @@ function writeSourceOnlyRun(sourceId, sourceLabel, sourceResult, normalizedItems
     "",
     "## Diagnostics",
     "",
-    payload.diagnostics.map((diagnostic) => `- ${diagnostic}`).join("\n") || "- none",
+    payload.diagnostics.map(sourceDiagnosticMarkdown).join("\n\n") || "- none",
     "",
     "## Top Candidates",
     "",
