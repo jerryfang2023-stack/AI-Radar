@@ -7,7 +7,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-16T04:08:37.048Z",
+    "generatedAt": "2026-09-16T04:18:57.884Z",
     "latestDataDate": "2026-09-16",
     "timezone": "Asia/Shanghai",
     "dateBasis": "dataDate",
@@ -3719,90 +3719,6 @@
       ],
       "productNames": [],
       "classifications": [
-        {
-          "dimensionId": "ai_market_application",
-          "dimensionName": "AI 市场细分",
-          "id": "chips",
-          "name": "芯片",
-          "entityIds": [
-            "EN-897502f225e38bf5"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-e15758c258b7dc14",
-          "fundingInsightId": "FI-9fc87c99a98d17af"
-        },
-        {
-          "dimensionId": "ai_market_category",
-          "dimensionName": "AI 市场类别",
-          "id": "infrastructure_compute",
-          "name": "基础设施与算力",
-          "entityIds": [
-            "EN-897502f225e38bf5"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-c4fee80a1a96c28a",
-          "fundingInsightId": "FI-9fc87c99a98d17af"
-        },
-        {
-          "dimensionId": "ai_market_subcategory",
-          "dimensionName": "AI 市场子类",
-          "id": "hardware_computing",
-          "name": "硬件与算力",
-          "entityIds": [
-            "EN-897502f225e38bf5"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-e746725ebf5d7970",
-          "fundingInsightId": "FI-9fc87c99a98d17af"
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "telecommunications",
-          "name": "电信",
-          "entityIds": [
-            "EN-897502f225e38bf5"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-2e0233bb72afd0b8",
-          "fundingInsightId": "FI-9fc87c99a98d17af"
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "chip_accelerator",
-          "name": "芯片与加速器",
-          "entityIds": [
-            "EN-897502f225e38bf5"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-c1043d13e3d0a186",
-          "fundingInsightId": "FI-9fc87c99a98d17af"
-        },
-        {
-          "dimensionId": "target_user",
-          "dimensionName": "目标用户",
-          "id": "developer",
-          "name": "开发者",
-          "entityIds": [
-            "EN-897502f225e38bf5"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-c52a030c6084e6e0",
-          "fundingInsightId": "FI-9fc87c99a98d17af"
-        },
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "productivity_enterprise_workflows",
-          "name": "生产力与企业工作流",
-          "entityIds": [
-            "EN-897502f225e38bf5"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-6457d965b2198bce",
-          "fundingInsightId": "FI-9fc87c99a98d17af"
-        },
         {
           "dimensionId": "product_form",
           "dimensionName": "产品形态",
@@ -231363,7 +231279,6 @@
                 "name": "基础设施与算力",
                 "eventIds": [
                   "EV-37cc66ca2e29a78c",
-                  "EV-4e00ddcb0bc4f2bb",
                   "EV-08612741cfce0bcf",
                   "EV-3fdc9ad98818c36b",
                   "EV-4238c51fcdad7bd4",
@@ -231438,7 +231353,7 @@
                   "EV-f0a666f5416e049f",
                   "EV-a40e5e8c638e323d"
                 ],
-                "count": 75
+                "count": 74
               },
               {
                 "id": "physical_ai",
@@ -231617,7 +231532,6 @@
                 "name": "硬件与算力",
                 "eventIds": [
                   "EV-37cc66ca2e29a78c",
-                  "EV-4e00ddcb0bc4f2bb",
                   "EV-4238c51fcdad7bd4",
                   "EV-10b007d20ad2794e",
                   "EV-012b1ccfe1d48f51",
@@ -231633,7 +231547,7 @@
                   "EV-ae87e20ab0c5d06a",
                   "EV-fd2ff833db684e40"
                 ],
-                "count": 16
+                "count": 15
               },
               {
                 "id": "healthcare_life_sciences",
@@ -231876,19 +231790,6 @@
                 "count": 7
               },
               {
-                "id": "chips",
-                "name": "芯片",
-                "eventIds": [
-                  "EV-4e00ddcb0bc4f2bb",
-                  "EV-10b007d20ad2794e",
-                  "EV-012b1ccfe1d48f51",
-                  "EV-2a2f79242a9479e7",
-                  "EV-ae87e20ab0c5d06a",
-                  "EV-fd2ff833db684e40"
-                ],
-                "count": 6
-              },
-              {
                 "id": "synthetic_data",
                 "name": "合成数据",
                 "eventIds": [
@@ -231909,6 +231810,18 @@
                   "EV-6928501584326746",
                   "EV-d535e126615182f0",
                   "EV-f0a666f5416e049f"
+                ],
+                "count": 5
+              },
+              {
+                "id": "chips",
+                "name": "芯片",
+                "eventIds": [
+                  "EV-10b007d20ad2794e",
+                  "EV-012b1ccfe1d48f51",
+                  "EV-2a2f79242a9479e7",
+                  "EV-ae87e20ab0c5d06a",
+                  "EV-fd2ff833db684e40"
                 ],
                 "count": 5
               },
@@ -232207,7 +232120,6 @@
                 "id": "chip_accelerator",
                 "name": "芯片与加速器",
                 "eventIds": [
-                  "EV-4e00ddcb0bc4f2bb",
                   "EV-ad6c755f7cf588c4",
                   "EV-10b007d20ad2794e",
                   "EV-012b1ccfe1d48f51",
@@ -232221,7 +232133,7 @@
                   "EV-bf7ced1008b5cbc6",
                   "EV-fec0251eafea1a20"
                 ],
-                "count": 13
+                "count": 12
               },
               {
                 "id": "ai_device",
@@ -232754,7 +232666,6 @@
                 "name": "生产力与企业工作流",
                 "eventIds": [
                   "EV-37cc66ca2e29a78c",
-                  "EV-4e00ddcb0bc4f2bb",
                   "EV-81bbaaec2965864a",
                   "EV-cbeb33594e06678b",
                   "EV-e5763ba54217d88a",
@@ -232792,7 +232703,7 @@
                   "EV-89ec502a1340079a",
                   "EV-a40e5e8c638e323d"
                 ],
-                "count": 38
+                "count": 37
               },
               {
                 "id": "software_development",
@@ -233404,7 +233315,6 @@
                 "name": "电信",
                 "eventIds": [
                   "EV-37cc66ca2e29a78c",
-                  "EV-4e00ddcb0bc4f2bb",
                   "EV-ef669a52c9a3f94f",
                   "EV-03bc82f6d6c169d7",
                   "EV-07d112b2a4c980d2",
@@ -233415,7 +233325,7 @@
                   "EV-df37e9341b5c7f04",
                   "EV-fd2ff833db684e40"
                 ],
-                "count": 11
+                "count": 10
               },
               {
                 "id": "aerospace_defense",
@@ -233635,7 +233545,6 @@
                 "name": "开发者",
                 "eventIds": [
                   "EV-37cc66ca2e29a78c",
-                  "EV-4e00ddcb0bc4f2bb",
                   "EV-da957eedfad908b6",
                   "EV-08612741cfce0bcf",
                   "EV-3fdc9ad98818c36b",
@@ -233717,7 +233626,7 @@
                   "EV-f0a666f5416e049f",
                   "EV-a40e5e8c638e323d"
                 ],
-                "count": 82
+                "count": 81
               },
               {
                 "id": "consumer",
