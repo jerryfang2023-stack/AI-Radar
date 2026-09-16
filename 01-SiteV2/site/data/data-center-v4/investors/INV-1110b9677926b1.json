@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-16T04:25:45.654Z",
+    "generatedAt": "2026-09-16T04:41:27.652Z",
     "latestDataDate": "2026-09-16",
     "currentDate": "2026-09-16",
-    "eventCount": 3311,
+    "eventCount": 3315,
     "quarantinedEventCount": 35,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -58,7 +58,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 0,
     "market_regions": [
       "CN"
@@ -66,13 +66,53 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-06-18",
-    "latest_disclosed_at": "2026-06-18",
+    "latest_disclosed_at": "2026-09-16",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 2
     },
     "round_codes": [],
     "portfolio_companies": [],
     "activities": [
+      {
+        "activity_id": "IA-0f395379de795cbd",
+        "funding_insight_id": "FI-e13168ad5b994879",
+        "event_ids": [
+          "EV-1c399d2db39c05a3"
+        ],
+        "company_entity_id": "EN-caff75902fc3743e",
+        "company_canonical_entity_id": "",
+        "company_name": "上海造父智能科技有限公司",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮融资",
+        "amount_original": "约1亿美金",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1 亿美元"
+        },
+        "announced_at": "2026-09-16",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "战略投资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-fd74bfb93ef77cfc",
+            "source_url": "https://news.pedaily.cn/202609/569083.shtml",
+            "source_title": "首发|哈啰Robotaxi完成1亿美元新一轮融资，投后估值近30亿美元",
+            "source_content_hash": "d2ea27041b7714fd",
+            "quote": "去年9月，哈啰宣布Robotaxi业务获得阿里巴巴集团战略投资",
+            "quote_hash": "f493f6541cdc6d166423c99c96f3d5eb8ad523cb65912ced84f263bbd6913de1"
+          }
+        ]
+      },
       {
         "activity_id": "IA-6262c543f60fd861",
         "funding_insight_id": "FI-ec1ed99dffac2fd0",
@@ -115,6 +155,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-fd74bfb93ef77cfc",
+        "source_url": "https://news.pedaily.cn/202609/569083.shtml",
+        "source_title": "首发|哈啰Robotaxi完成1亿美元新一轮融资，投后估值近30亿美元",
+        "source_content_hash": "d2ea27041b7714fd",
+        "quote": "去年9月，哈啰宣布Robotaxi业务获得阿里巴巴集团战略投资",
+        "quote_hash": "f493f6541cdc6d166423c99c96f3d5eb8ad523cb65912ced84f263bbd6913de1"
+      },
       {
         "source_id": "FISRC-e3b51be471b79167",
         "source_url": "https://www.wuxicapital.com.cn/news_59/575.html",

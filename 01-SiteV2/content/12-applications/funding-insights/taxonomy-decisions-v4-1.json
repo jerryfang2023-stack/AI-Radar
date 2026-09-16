@@ -5,13 +5,13 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-09-16T04:23:54.571Z",
+    "generated_at": "2026-09-16T04:40:30.103Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 463,
-    "input_hash": "db9df5128bac85d0",
+    "decision_count": 464,
+    "input_hash": "497ec2b526d1950c",
     "override_count": 18,
     "needs_review_count": 52,
     "low_confidence_count": 68
@@ -9281,6 +9281,25 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "Profound 提供跨行业营销软件，帮助品牌优化 AI 搜索结果，属于企业应用中的营销子类。"
+    },
+    {
+      "event_id": "EV-1c399d2db39c05a3",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "automotive_transportation"
+      ],
+      "target_user_ids": [
+        "consumer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "产品为L4级Robotaxi量产车型，具备多传感器感知、计算决策并直接执行自动驾驶，属于在物理世界中感知、决策和行动的物理AI，而非仅提供基础设施或行业应用。"
     }
   ]
 }

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-16T04:25:45.654Z",
+    "generatedAt": "2026-09-16T04:41:27.652Z",
     "latestDataDate": "2026-09-16",
     "currentDate": "2026-09-16",
-    "eventCount": 3311,
+    "eventCount": 3315,
     "quarantinedEventCount": 35,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -59,16 +59,18 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-9c427c0985b3b252",
       "EV-43c9b851bd2a46c7"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-09",
-    "lastSeen": "2026-09-12",
+    "lastSeen": "2026-09-16",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-9c427c0985b3b252",
         "EV-43c9b851bd2a46c7"
       ],
       "deployments": [],
@@ -79,6 +81,23 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-9c427c0985b3b252",
+        "dataDate": "2026-09-16",
+        "date": "2026-09-09",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "比特无限完成数千万元Pre-A轮融资老股东超额追投 - 财联社",
+        "displayTags": [],
+        "entityIds": [
+          "EN-4d916dc8b25421d2",
+          "EN-f56780cc13476293",
+          "EN-811a6ab3593f221b"
+        ]
+      },
       {
         "id": "EV-43c9b851bd2a46c7",
         "dataDate": "2026-09-12",

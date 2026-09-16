@@ -1,11 +1,11 @@
 {
   "meta": {
     "schema_version": "INVESTMENT-INSTITUTION-V1.0",
-    "generated_at": "2026-09-16T04:16:33.308Z",
+    "generated_at": "2026-09-16T04:40:29.884Z",
     "source_contract": "FUNDING-INSIGHT-V1.3",
-    "institution_count": 1881,
-    "evidence_backed_count": 1881,
-    "current_round_activity_count": 2186,
+    "institution_count": 1883,
+    "evidence_backed_count": 1883,
+    "current_round_activity_count": 2189,
     "individual_investor_count": 184,
     "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
   },
@@ -81546,6 +81546,310 @@
           "source_content_hash": "1d7bff75e7129429",
           "quote": "Abhishek Goyal, a co-founder of Tracxn, have also contributed.",
           "quote_hash": "d427d45ab2395b9dc8245a626f5417341df4042e5e309f6c485424b6b668e14e"
+        }
+      ]
+    },
+    {
+      "id": "INV-097110c3be02c1",
+      "name": "创世伙伴创投",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 1,
+      "china_market_company_count": 1,
+      "first_disclosed_at": "2026-09-04",
+      "latest_disclosed_at": "2026-09-16",
+      "role_counts": {
+        "historical_or_ambiguous": 1,
+        "participant": 1
+      },
+      "round_codes": [
+        "undisclosed"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-caff75902fc3743e",
+          "canonical_entity_id": "",
+          "name": "上海造父智能科技有限公司"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-1fb20ebb807f416b",
+          "funding_insight_id": "FI-e13168ad5b994879",
+          "event_ids": [
+            "EV-1c399d2db39c05a3"
+          ],
+          "company_entity_id": "EN-caff75902fc3743e",
+          "company_canonical_entity_id": "",
+          "company_name": "上海造父智能科技有限公司",
+          "round": "轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "新一轮融资",
+          "amount_original": "约1亿美金",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 100000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 1 亿美元"
+          },
+          "announced_at": "2026-09-16",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "partially_disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-fd74bfb93ef77cfc",
+              "source_url": "https://news.pedaily.cn/202609/569083.shtml",
+              "source_title": "首发|哈啰Robotaxi完成1亿美元新一轮融资，投后估值近30亿美元",
+              "source_content_hash": "d2ea27041b7714fd",
+              "quote": "本轮由 上海国投先导基金领投，闵金投、创世伙伴创投 跟投",
+              "quote_hash": "238afc74132d3b656d7ef7a1b4926377062634f0c36c6aa2dfcec3581ab55f67"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-17b1dee23e0f2d36",
+          "funding_insight_id": "FI-3e97f5e30e99ff0b",
+          "event_ids": [
+            "EV-cbec329253108e80"
+          ],
+          "company_entity_id": "EN-ee2dce6ecf9a1bab",
+          "company_canonical_entity_id": "EN-ee2dce6ecf9a1bab",
+          "company_name": "深朴智能",
+          "round": "Pre-A+轮",
+          "round_code": "pre_series_a_plus",
+          "round_original": "Pre-A+轮",
+          "amount_original": "数亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 200000000,
+            "max_value": 900000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "2 亿元–9 亿元"
+          },
+          "announced_at": "2026-09-04",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "Pre-A轮老股东持续加码",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-3bc1b2f58c3d4a86",
+              "source_url": "https://news.pedaily.cn/202606/565268.shtml",
+              "source_title": "滴滴领投，深朴智能完成数亿元 Pre-A 轮融资_投资界",
+              "source_content_hash": "892b3be292e8e3e6",
+              "quote": "本轮融资由滴滴领投，梅花创投、柯力传感跟投，老股东创世伙伴创投、线性资本、普华资本持续加码",
+              "quote_hash": "6da2e6bd296ea8bf4a4b957b1f4808313ae6cda9109e9ec26e841ba0efd2192f"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-fd74bfb93ef77cfc",
+          "source_url": "https://news.pedaily.cn/202609/569083.shtml",
+          "source_title": "首发|哈啰Robotaxi完成1亿美元新一轮融资，投后估值近30亿美元",
+          "source_content_hash": "d2ea27041b7714fd",
+          "quote": "本轮由 上海国投先导基金领投，闵金投、创世伙伴创投 跟投",
+          "quote_hash": "238afc74132d3b656d7ef7a1b4926377062634f0c36c6aa2dfcec3581ab55f67"
+        },
+        {
+          "source_id": "FISRC-3bc1b2f58c3d4a86",
+          "source_url": "https://news.pedaily.cn/202606/565268.shtml",
+          "source_title": "滴滴领投，深朴智能完成数亿元 Pre-A 轮融资_投资界",
+          "source_content_hash": "892b3be292e8e3e6",
+          "quote": "本轮融资由滴滴领投，梅花创投、柯力传感跟投，老股东创世伙伴创投、线性资本、普华资本持续加码",
+          "quote_hash": "6da2e6bd296ea8bf4a4b957b1f4808313ae6cda9109e9ec26e841ba0efd2192f"
+        }
+      ]
+    },
+    {
+      "id": "INV-96d40aefa8e7ab",
+      "name": "闵金投",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 1,
+      "china_market_company_count": 1,
+      "first_disclosed_at": "2026-09-16",
+      "latest_disclosed_at": "2026-09-16",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "undisclosed"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-caff75902fc3743e",
+          "canonical_entity_id": "",
+          "name": "上海造父智能科技有限公司"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-db8625ab1048cb25",
+          "funding_insight_id": "FI-e13168ad5b994879",
+          "event_ids": [
+            "EV-1c399d2db39c05a3"
+          ],
+          "company_entity_id": "EN-caff75902fc3743e",
+          "company_canonical_entity_id": "",
+          "company_name": "上海造父智能科技有限公司",
+          "round": "轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "新一轮融资",
+          "amount_original": "约1亿美金",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 100000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 1 亿美元"
+          },
+          "announced_at": "2026-09-16",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "partially_disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-fd74bfb93ef77cfc",
+              "source_url": "https://news.pedaily.cn/202609/569083.shtml",
+              "source_title": "首发|哈啰Robotaxi完成1亿美元新一轮融资，投后估值近30亿美元",
+              "source_content_hash": "d2ea27041b7714fd",
+              "quote": "本轮由 上海国投先导基金领投，闵金投、创世伙伴创投 跟投",
+              "quote_hash": "238afc74132d3b656d7ef7a1b4926377062634f0c36c6aa2dfcec3581ab55f67"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-fd74bfb93ef77cfc",
+          "source_url": "https://news.pedaily.cn/202609/569083.shtml",
+          "source_title": "首发|哈啰Robotaxi完成1亿美元新一轮融资，投后估值近30亿美元",
+          "source_content_hash": "d2ea27041b7714fd",
+          "quote": "本轮由 上海国投先导基金领投，闵金投、创世伙伴创投 跟投",
+          "quote_hash": "238afc74132d3b656d7ef7a1b4926377062634f0c36c6aa2dfcec3581ab55f67"
+        }
+      ]
+    },
+    {
+      "id": "INV-fa919bb94e0892",
+      "name": "上海国投先导基金",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 1,
+      "china_market_company_count": 1,
+      "first_disclosed_at": "2026-09-16",
+      "latest_disclosed_at": "2026-09-16",
+      "role_counts": {
+        "lead": 1
+      },
+      "round_codes": [
+        "undisclosed"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-caff75902fc3743e",
+          "canonical_entity_id": "",
+          "name": "上海造父智能科技有限公司"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-f68883ccd197ef4e",
+          "funding_insight_id": "FI-e13168ad5b994879",
+          "event_ids": [
+            "EV-1c399d2db39c05a3"
+          ],
+          "company_entity_id": "EN-caff75902fc3743e",
+          "company_canonical_entity_id": "",
+          "company_name": "上海造父智能科技有限公司",
+          "round": "轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "新一轮融资",
+          "amount_original": "约1亿美金",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 100000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 1 亿美元"
+          },
+          "announced_at": "2026-09-16",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "partially_disclosed",
+          "scope": "current_round",
+          "role": "本轮领投",
+          "role_code": "lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-fd74bfb93ef77cfc",
+              "source_url": "https://news.pedaily.cn/202609/569083.shtml",
+              "source_title": "首发|哈啰Robotaxi完成1亿美元新一轮融资，投后估值近30亿美元",
+              "source_content_hash": "d2ea27041b7714fd",
+              "quote": "本轮由 上海国投先导基金领投，闵金投、创世伙伴创投 跟投",
+              "quote_hash": "238afc74132d3b656d7ef7a1b4926377062634f0c36c6aa2dfcec3581ab55f67"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-fd74bfb93ef77cfc",
+          "source_url": "https://news.pedaily.cn/202609/569083.shtml",
+          "source_title": "首发|哈啰Robotaxi完成1亿美元新一轮融资，投后估值近30亿美元",
+          "source_content_hash": "d2ea27041b7714fd",
+          "quote": "本轮由 上海国投先导基金领投，闵金投、创世伙伴创投 跟投",
+          "quote_hash": "238afc74132d3b656d7ef7a1b4926377062634f0c36c6aa2dfcec3581ab55f67"
         }
       ]
     },
@@ -190009,6 +190313,131 @@
       ]
     },
     {
+      "id": "INV-1110b9677926b1",
+      "name": "阿里巴巴集团",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "corporate_investor",
+      "investor_kind_label": "企业投资方",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 2,
+      "portfolio_company_count": 0,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "2026-06-18",
+      "latest_disclosed_at": "2026-09-16",
+      "role_counts": {
+        "historical_or_ambiguous": 2
+      },
+      "round_codes": [],
+      "portfolio_companies": [],
+      "activities": [
+        {
+          "activity_id": "IA-0f395379de795cbd",
+          "funding_insight_id": "FI-e13168ad5b994879",
+          "event_ids": [
+            "EV-1c399d2db39c05a3"
+          ],
+          "company_entity_id": "EN-caff75902fc3743e",
+          "company_canonical_entity_id": "",
+          "company_name": "上海造父智能科技有限公司",
+          "round": "轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "新一轮融资",
+          "amount_original": "约1亿美金",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 100000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 1 亿美元"
+          },
+          "announced_at": "2026-09-16",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "partially_disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "战略投资",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-fd74bfb93ef77cfc",
+              "source_url": "https://news.pedaily.cn/202609/569083.shtml",
+              "source_title": "首发|哈啰Robotaxi完成1亿美元新一轮融资，投后估值近30亿美元",
+              "source_content_hash": "d2ea27041b7714fd",
+              "quote": "去年9月，哈啰宣布Robotaxi业务获得阿里巴巴集团战略投资",
+              "quote_hash": "f493f6541cdc6d166423c99c96f3d5eb8ad523cb65912ced84f263bbd6913de1"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-6262c543f60fd861",
+          "funding_insight_id": "FI-ec1ed99dffac2fd0",
+          "event_ids": [
+            "EV-56da7cceeebc8bcf"
+          ],
+          "company_entity_id": "EN-5aacd10b5dbfa7b7",
+          "company_canonical_entity_id": "EN-5aacd10b5dbfa7b7",
+          "company_name": "穹彻智能",
+          "round": "轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "新一轮融资",
+          "amount_original": "数亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 200000000,
+            "max_value": 900000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "2 亿元–9 亿元"
+          },
+          "announced_at": "2026-06-18",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "partially_disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "历史投资方",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-e3b51be471b79167",
+              "source_url": "https://www.wuxicapital.com.cn/news_59/575.html",
+              "source_title": "锡创动态 | 穹彻智能完成新一轮融资，锡创投加码人工智能“大脑”赛道",
+              "source_content_hash": "6b768055188f3cb9061ad40773e551b420975d25beb5d6a0dfe2e06bbe6f89c0",
+              "quote": "历史投资方包括沙特阿美P7、红杉资本、阿里、360战投等",
+              "quote_hash": "51972a2bcdf7e26966adf9b94b89d74fbbcd82502e3fb422b66d9c4d7f848b3c"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-fd74bfb93ef77cfc",
+          "source_url": "https://news.pedaily.cn/202609/569083.shtml",
+          "source_title": "首发|哈啰Robotaxi完成1亿美元新一轮融资，投后估值近30亿美元",
+          "source_content_hash": "d2ea27041b7714fd",
+          "quote": "去年9月，哈啰宣布Robotaxi业务获得阿里巴巴集团战略投资",
+          "quote_hash": "f493f6541cdc6d166423c99c96f3d5eb8ad523cb65912ced84f263bbd6913de1"
+        },
+        {
+          "source_id": "FISRC-e3b51be471b79167",
+          "source_url": "https://www.wuxicapital.com.cn/news_59/575.html",
+          "source_title": "锡创动态 | 穹彻智能完成新一轮融资，锡创投加码人工智能“大脑”赛道",
+          "source_content_hash": "6b768055188f3cb9061ad40773e551b420975d25beb5d6a0dfe2e06bbe6f89c0",
+          "quote": "历史投资方包括沙特阿美P7、红杉资本、阿里、360战投等",
+          "quote_hash": "51972a2bcdf7e26966adf9b94b89d74fbbcd82502e3fb422b66d9c4d7f848b3c"
+        }
+      ]
+    },
+    {
       "id": "INV-6f5af0bd115224",
       "name": "德石投资",
       "aliases": [],
@@ -193004,83 +193433,6 @@
           "source_content_hash": "172b52b0715adcdc",
           "quote": "A+轮 2021-08 未透露 东方富海 ， 华柏基金 ， 中融盈通",
           "quote_hash": "6e6989cb22afb0fa6cc996e466e9e903be7d909193bd7c48fd02ccf9ee5ec9b2"
-        }
-      ]
-    },
-    {
-      "id": "INV-097110c3be02c1",
-      "name": "创世伙伴创投",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 0,
-      "historical_or_ambiguous_count": 1,
-      "portfolio_company_count": 0,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 0,
-      "china_market_company_count": 0,
-      "first_disclosed_at": "2026-09-04",
-      "latest_disclosed_at": "2026-09-04",
-      "role_counts": {
-        "historical_or_ambiguous": 1
-      },
-      "round_codes": [],
-      "portfolio_companies": [],
-      "activities": [
-        {
-          "activity_id": "IA-17b1dee23e0f2d36",
-          "funding_insight_id": "FI-3e97f5e30e99ff0b",
-          "event_ids": [
-            "EV-cbec329253108e80"
-          ],
-          "company_entity_id": "EN-ee2dce6ecf9a1bab",
-          "company_canonical_entity_id": "EN-ee2dce6ecf9a1bab",
-          "company_name": "深朴智能",
-          "round": "Pre-A+轮",
-          "round_code": "pre_series_a_plus",
-          "round_original": "Pre-A+轮",
-          "amount_original": "数亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": null,
-            "min_value": 200000000,
-            "max_value": 900000000,
-            "unit": "base",
-            "status": "range",
-            "display_zh": "2 亿元–9 亿元"
-          },
-          "announced_at": "2026-09-04",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "Pre-A轮老股东持续加码",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-3bc1b2f58c3d4a86",
-              "source_url": "https://news.pedaily.cn/202606/565268.shtml",
-              "source_title": "滴滴领投，深朴智能完成数亿元 Pre-A 轮融资_投资界",
-              "source_content_hash": "892b3be292e8e3e6",
-              "quote": "本轮融资由滴滴领投，梅花创投、柯力传感跟投，老股东创世伙伴创投、线性资本、普华资本持续加码",
-              "quote_hash": "6da2e6bd296ea8bf4a4b957b1f4808313ae6cda9109e9ec26e841ba0efd2192f"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-3bc1b2f58c3d4a86",
-          "source_url": "https://news.pedaily.cn/202606/565268.shtml",
-          "source_title": "滴滴领投，深朴智能完成数亿元 Pre-A 轮融资_投资界",
-          "source_content_hash": "892b3be292e8e3e6",
-          "quote": "本轮融资由滴滴领投，梅花创投、柯力传感跟投，老股东创世伙伴创投、线性资本、普华资本持续加码",
-          "quote_hash": "6da2e6bd296ea8bf4a4b957b1f4808313ae6cda9109e9ec26e841ba0efd2192f"
         }
       ]
     },
@@ -206648,83 +207000,6 @@
       "activities": [
         {
           "activity_id": "IA-d85078440cb8e5b3",
-          "funding_insight_id": "FI-ec1ed99dffac2fd0",
-          "event_ids": [
-            "EV-56da7cceeebc8bcf"
-          ],
-          "company_entity_id": "EN-5aacd10b5dbfa7b7",
-          "company_canonical_entity_id": "EN-5aacd10b5dbfa7b7",
-          "company_name": "穹彻智能",
-          "round": "轮次未披露",
-          "round_code": "undisclosed",
-          "round_original": "新一轮融资",
-          "amount_original": "数亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": null,
-            "min_value": 200000000,
-            "max_value": 900000000,
-            "unit": "base",
-            "status": "range",
-            "display_zh": "2 亿元–9 亿元"
-          },
-          "announced_at": "2026-06-18",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "partially_disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "历史投资方",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-e3b51be471b79167",
-              "source_url": "https://www.wuxicapital.com.cn/news_59/575.html",
-              "source_title": "锡创动态 | 穹彻智能完成新一轮融资，锡创投加码人工智能“大脑”赛道",
-              "source_content_hash": "6b768055188f3cb9061ad40773e551b420975d25beb5d6a0dfe2e06bbe6f89c0",
-              "quote": "历史投资方包括沙特阿美P7、红杉资本、阿里、360战投等",
-              "quote_hash": "51972a2bcdf7e26966adf9b94b89d74fbbcd82502e3fb422b66d9c4d7f848b3c"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-e3b51be471b79167",
-          "source_url": "https://www.wuxicapital.com.cn/news_59/575.html",
-          "source_title": "锡创动态 | 穹彻智能完成新一轮融资，锡创投加码人工智能“大脑”赛道",
-          "source_content_hash": "6b768055188f3cb9061ad40773e551b420975d25beb5d6a0dfe2e06bbe6f89c0",
-          "quote": "历史投资方包括沙特阿美P7、红杉资本、阿里、360战投等",
-          "quote_hash": "51972a2bcdf7e26966adf9b94b89d74fbbcd82502e3fb422b66d9c4d7f848b3c"
-        }
-      ]
-    },
-    {
-      "id": "INV-1110b9677926b1",
-      "name": "阿里巴巴集团",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "corporate_investor",
-      "investor_kind_label": "企业投资方",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 0,
-      "historical_or_ambiguous_count": 1,
-      "portfolio_company_count": 0,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 0,
-      "china_market_company_count": 0,
-      "first_disclosed_at": "2026-06-18",
-      "latest_disclosed_at": "2026-06-18",
-      "role_counts": {
-        "historical_or_ambiguous": 1
-      },
-      "round_codes": [],
-      "portfolio_companies": [],
-      "activities": [
-        {
-          "activity_id": "IA-6262c543f60fd861",
           "funding_insight_id": "FI-ec1ed99dffac2fd0",
           "event_ids": [
             "EV-56da7cceeebc8bcf"
