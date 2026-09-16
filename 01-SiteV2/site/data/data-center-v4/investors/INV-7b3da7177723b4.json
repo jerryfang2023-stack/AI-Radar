@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-16T04:31:17.797Z",
+    "latestDataDate": "2026-09-16",
+    "currentDate": "2026-09-16",
+    "eventCount": 3315,
+    "quarantinedEventCount": 35,
+    "quarantinedEventIds": [
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "institution": {
+    "id": "INV-7b3da7177723b4",
+    "name": "上海未来产业基金",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-09-16",
+    "latest_disclosed_at": "2026-09-16",
+    "role_counts": {
+      "co_lead": 1
+    },
+    "round_codes": [
+      "angel_plus"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-d817dfb0312f7af0",
+        "canonical_entity_id": "",
+        "name": "超衍智能"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-cc7ff4acf2cf95f6",
+        "funding_insight_id": "FI-1dc1b9eef411e165",
+        "event_ids": [
+          "EV-f70e34d7f7d5769a"
+        ],
+        "company_entity_id": "EN-d817dfb0312f7af0",
+        "company_canonical_entity_id": "",
+        "company_name": "超衍智能",
+        "round": "天使+轮",
+        "round_code": "angel_plus",
+        "round_original": "天使+轮",
+        "amount_original": "近4亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 400000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 4 亿元"
+        },
+        "announced_at": "2026-09-16",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-55d8269584f9e05b",
+            "source_url": "https://news.pedaily.cn/202609/569092.shtml",
+            "source_title": "超衍智能完成近4亿元天使系列融资，构建自进化基础大模型",
+            "source_content_hash": "c56b4d99a50bca6f",
+            "quote": "天使+轮由中关村科学城基金、深创投及上海未来产业基金联合领投",
+            "quote_hash": "9171ab30e12b9f8b285d42e80dbf26f51055f23b1b52b1221ae1c1667530c70d"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-55d8269584f9e05b",
+        "source_url": "https://news.pedaily.cn/202609/569092.shtml",
+        "source_title": "超衍智能完成近4亿元天使系列融资，构建自进化基础大模型",
+        "source_content_hash": "c56b4d99a50bca6f",
+        "quote": "天使+轮由中关村科学城基金、深创投及上海未来产业基金联合领投",
+        "quote_hash": "9171ab30e12b9f8b285d42e80dbf26f51055f23b1b52b1221ae1c1667530c70d"
+      }
+    ]
+  }
+}

@@ -1,11 +1,11 @@
 {
   "meta": {
     "schema_version": "INVESTMENT-INSTITUTION-V1.0",
-    "generated_at": "2026-09-16T04:07:40.706Z",
+    "generated_at": "2026-09-16T04:30:33.053Z",
     "source_contract": "FUNDING-INSIGHT-V1.3",
-    "institution_count": 1890,
-    "evidence_backed_count": 1890,
-    "current_round_activity_count": 2210,
+    "institution_count": 1895,
+    "evidence_backed_count": 1895,
+    "current_round_activity_count": 2223,
     "individual_investor_count": 184,
     "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
   },
@@ -14157,6 +14157,1007 @@
       ]
     },
     {
+      "id": "INV-901b0ed7b5c1cb",
+      "name": "深创投",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 6,
+      "historical_or_ambiguous_count": 6,
+      "portfolio_company_count": 6,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 6,
+      "china_market_company_count": 6,
+      "first_disclosed_at": "2026-01-12",
+      "latest_disclosed_at": "2026-09-16",
+      "role_counts": {
+        "co_lead": 2,
+        "historical_or_ambiguous": 6,
+        "participant": 4
+      },
+      "round_codes": [
+        "angel",
+        "angel_plus",
+        "multi_round",
+        "series_a_plus_plus",
+        "series_c",
+        "undisclosed"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-d817dfb0312f7af0",
+          "canonical_entity_id": "",
+          "name": "超衍智能"
+        },
+        {
+          "entity_id": "EN-3309b3b14807f39a",
+          "canonical_entity_id": "EN-3309b3b14807f39a",
+          "name": "面壁智能"
+        },
+        {
+          "entity_id": "EN-085578b03da7d660",
+          "canonical_entity_id": "EN-085578b03da7d660",
+          "name": "墨芯人工智能"
+        },
+        {
+          "entity_id": "EN-a5e5f031b6f878cf",
+          "canonical_entity_id": "EN-a5e5f031b6f878cf",
+          "name": "微纳核芯"
+        },
+        {
+          "entity_id": "EN-4731aa5b66658c7f",
+          "canonical_entity_id": "EN-4731aa5b66658c7f",
+          "name": "无界动力"
+        },
+        {
+          "entity_id": "EN-8dc72a4672894e0f",
+          "canonical_entity_id": "EN-8dc72a4672894e0f",
+          "name": "自变量机器人"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-5851875b6958c756",
+          "funding_insight_id": "FI-1dc1b9eef411e165",
+          "event_ids": [
+            "EV-f70e34d7f7d5769a"
+          ],
+          "company_entity_id": "EN-d817dfb0312f7af0",
+          "company_canonical_entity_id": "",
+          "company_name": "超衍智能",
+          "round": "天使+轮",
+          "round_code": "angel_plus",
+          "round_original": "天使+轮",
+          "amount_original": "近4亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 400000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 4 亿元"
+          },
+          "announced_at": "2026-09-16",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-55d8269584f9e05b",
+              "source_url": "https://news.pedaily.cn/202609/569092.shtml",
+              "source_title": "超衍智能完成近4亿元天使系列融资，构建自进化基础大模型",
+              "source_content_hash": "c56b4d99a50bca6f",
+              "quote": "天使+轮由中关村科学城基金、深创投及上海未来产业基金联合领投",
+              "quote_hash": "9171ab30e12b9f8b285d42e80dbf26f51055f23b1b52b1221ae1c1667530c70d"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-407beca7082789fe",
+          "funding_insight_id": "FI-8acd5314a46c6068",
+          "event_ids": [
+            "EV-6aaa17d9c372e513"
+          ],
+          "company_entity_id": "EN-24dd6fa3e1cbba97",
+          "company_canonical_entity_id": "",
+          "company_name": "因克斯",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "超3亿元人民币",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 300000000,
+            "min_value": 300000000,
+            "max_value": null,
+            "unit": "base",
+            "status": "lower_bound",
+            "display_zh": "超过 3 亿元"
+          },
+          "announced_at": "2026-09-15",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "老股东持续多轮追投",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-d0c3dca85d845330",
+              "source_url": "https://news.pedaily.cn/202609/569015.shtml",
+              "source_title": "「因克斯ENCOS」完成3亿元B轮融资，深耕具身智能关节模组",
+              "source_content_hash": "e86bd6fffaf894b4",
+              "quote": "同时 复星创富、深创投、华控基金、锦秋基金、普华资本作为老股东持续多轮追投。",
+              "quote_hash": "0553874275a9d1405d1a0f8e1cc88e61b74f557cf7f1adcb9fac56dd7353f161"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-a4e87b4fe931075e",
+          "funding_insight_id": "FI-124b4efd0f2fa1d9",
+          "event_ids": [
+            "EV-12f331aaf7d4cca6"
+          ],
+          "company_entity_id": "EN-964f260c9a904091",
+          "company_canonical_entity_id": "EN-964f260c9a904091",
+          "company_name": "爱诗科技",
+          "round": "C轮",
+          "round_code": "series_c",
+          "round_original": "C轮",
+          "amount_original": "29.8亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 2980000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "29.8 亿元"
+          },
+          "announced_at": "2026-07-14",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "B轮跟投",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-09c3ca37737a71ce",
+              "source_url": "https://stcn.com/article/detail/3386786.html",
+              "source_title": "爱诗科技完成B+轮融资 ARR突破4000万美金",
+              "source_content_hash": "edea92990a31710b",
+              "quote": "该轮融资由阿里巴巴领投，达晨财智、深创投、北京市AI基金、湖南电广传媒、巨人网络和Antler跟投。",
+              "quote_hash": "3e1964c5d30ce70d2f0eb1a20d63918f13352c60a9351bd4858c52ac3f5ff015"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-71e6c903c931cab3",
+          "funding_insight_id": "FI-23cabede97d0111d",
+          "event_ids": [
+            "EV-c6437ac13cb07531"
+          ],
+          "company_entity_id": "EN-4e781f6e9e5a49bc",
+          "company_canonical_entity_id": "EN-4e781f6e9e5a49bc",
+          "company_name": "深度智控",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "数亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 200000000,
+            "max_value": 900000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "2 亿元–9 亿元"
+          },
+          "announced_at": "2026-07-09",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "A+轮投资方",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-67ccadc4294defd6",
+              "source_url": "https://pitchhub.36kr.com/project/1958573801870344",
+              "source_title": "深度智控 | 项目信息-36氪",
+              "source_content_hash": "ed75aafa3d8feb1d",
+              "quote": "A+轮 2023-05 数亿人民币 深创投 ， 招商局创投 ， Forebright Capital ， HongShan红杉中国 ， 源码资本",
+              "quote_hash": "01231602863d5c406a1b7918938ddc5c99d1a6768495ed555c9506928ed11ad4"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-3f745375652313b7",
+          "funding_insight_id": "FI-6ada8d4502daa530",
+          "event_ids": [
+            "EV-e0a31302688c81ec"
+          ],
+          "company_entity_id": "EN-a5e5f031b6f878cf",
+          "company_canonical_entity_id": "EN-a5e5f031b6f878cf",
+          "company_name": "微纳核芯",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "多轮融资",
+          "amount_original": "超10亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 1000000000,
+            "min_value": 1000000000,
+            "max_value": null,
+            "unit": "base",
+            "status": "lower_bound",
+            "display_zh": "超过 10 亿元"
+          },
+          "announced_at": "2026-06-15",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-b96684face6f5223",
+              "source_url": "https://finance.sina.com.cn/jjxw/2026-06-15/doc-inicnckx8338155.shtml",
+              "source_title": "微纳核芯完成超10亿元B轮系列融资",
+              "source_content_hash": "3001d7761836998ad785b02a8753e10abd430afc8267dd715a690f318b1cff60",
+              "quote": "深创投 等头部国资机构",
+              "quote_hash": "8586436a7425cb34d3740db319b9fef2aacc30d178978b54ab1a1d3b46c0a11c"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-e562d41de639cfc5",
+          "funding_insight_id": "FI-f617b97f0b35118f",
+          "event_ids": [
+            "EV-794f921515af8e8b"
+          ],
+          "company_entity_id": "EN-085578b03da7d660",
+          "company_canonical_entity_id": "EN-085578b03da7d660",
+          "company_name": "墨芯人工智能",
+          "round": "C轮",
+          "round_code": "series_c",
+          "round_original": "C轮",
+          "amount_original": "近10亿人民币",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 1000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 10 亿元"
+          },
+          "announced_at": "2026-05-29",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-6202f2642c216aa5",
+              "source_url": "https://finance.sina.com.cn/roll/2026-05-29/doc-inhzqccm9474762.shtml",
+              "source_title": "墨芯人工智能完成近10亿元C轮融资",
+              "source_content_hash": "acb7f98eff8e5a18cafd8588c7b7e359b5aeab6222f18d676e54328e28236b61",
+              "quote": "本轮投资方包括深创投、 岩山科技 、大湾区共同家园、 我会会员单位力鼎资本 、蕴盛资本等",
+              "quote_hash": "23b6cdc1274fabc3b892f5e1360779d1ec84cbeaf39e60791428fd74ed5f14b8"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-8426b7a2581246fc",
+          "funding_insight_id": "FI-0421ad5a685ba3b0",
+          "event_ids": [
+            "EV-7620153f4892a0af"
+          ],
+          "company_entity_id": "EN-ce22f929f4a17467",
+          "company_canonical_entity_id": "EN-ce22f929f4a17467",
+          "company_name": "智平方",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "10亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 1000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "10 亿元"
+          },
+          "announced_at": "2026-04-11",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "历史轮次投资方",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-ad8ba39594cec38c",
+              "source_url": "https://www.cls.cn/detail/2341170",
+              "source_title": "智平方完成股改百亿具身智能独角兽加速冲刺IPO - 财联社",
+              "source_content_hash": "0df608927ef662b2",
+              "quote": "当前股东矩阵涵盖深创投、百度、国泰海通、中车资本等",
+              "quote_hash": "7f5e550c58a550b26cc49c6e8c95023f5f67b4dbd608c6c1588c1f866670f36e"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-286e1b798d1341dd",
+          "funding_insight_id": "FI-a7e1a675674f1a0b",
+          "event_ids": [
+            "EV-314db5cbf5010d41"
+          ],
+          "company_entity_id": "EN-3309b3b14807f39a",
+          "company_canonical_entity_id": "EN-3309b3b14807f39a",
+          "company_name": "面壁智能",
+          "round": "轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "新一轮数亿元人民币融资",
+          "amount_original": "数亿元人民币",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 200000000,
+            "max_value": 900000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "2 亿元–9 亿元"
+          },
+          "announced_at": "2026-04-09",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "partially_disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-5e868b9dacd5325c",
+              "source_url": "https://finance.sina.com.cn/stock/t/2026-04-09/doc-inhtwhrc8925749.shtml",
+              "source_title": "大模型公司面壁智能完成数亿元融资投后估值迈入独角兽门槛",
+              "source_content_hash": "21fcbff02b369abf",
+              "quote": "本轮融资由深创投、 汇川技术 旗下汇川产投联合领投，道禾长期投资、 国泰海通 创新投、武岳峰科创等多家头部机构跟投。",
+              "quote_hash": "fb602ee1614b7b09ce81c869fec6e3b8bc3c018cf8eac9dbd6b43120689450de"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-95611ac411cbcb87",
+          "funding_insight_id": "FI-d64fecfe9cecf228",
+          "event_ids": [
+            "EV-d2409770301edc83"
+          ],
+          "company_entity_id": "EN-c5456c9421743002",
+          "company_canonical_entity_id": "EN-c5456c9421743002",
+          "company_name": "银河通用",
+          "round": "轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "新一轮",
+          "amount_original": "25亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 2500000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "25 亿元"
+          },
+          "announced_at": "2026-03-02",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "partially_disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "老股东持续加码",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-adaac360139469bd",
+              "source_url": "https://www.cls.cn/detail/2300238",
+              "source_title": "开年最大融资诞生！银河通用再融25亿 国家大基金首投具身智能",
+              "source_content_hash": "b2eacae148179fb9ea2302fcd22d73b4b29b0f56ffb1c8400c5764c9a8cdbdcd",
+              "quote": "老股东深创投、上海人工智能基金等持续加码",
+              "quote_hash": "8b03b2eb258a2c20e883545d8291754ece6ec15611e4865efacc00d3b25b23f5"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-c6b2bf2fcb4a94ce",
+          "funding_insight_id": "FI-3dead88500d2a761",
+          "event_ids": [
+            "EV-565b6c1b10b3cf83",
+            "EV-af8e95dbe06ac083"
+          ],
+          "company_entity_id": "EN-ce22f929f4a17467",
+          "company_canonical_entity_id": "EN-ce22f929f4a17467",
+          "company_name": "智平方",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "10亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 1000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "10 亿元"
+          },
+          "announced_at": "2026-02-23",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "A系列融资领投",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-b78c44b13620e61a",
+              "source_url": "https://news.pedaily.cn/202602/561111.shtml",
+              "source_title": "首发｜深圳开年首个百亿独角兽，智平方又融资了 - 投资界",
+              "source_content_hash": "36eeadfe3f6c3f89",
+              "quote": "公司完成由深创投领投的新一轮A系列融资，其中深创投押注超过亿元",
+              "quote_hash": "27e3c42e22edbcb94335fafe80b015db3ddafaff7770300de1b1af150e3694c2"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-c951e42d3a3cb0e1",
+          "funding_insight_id": "FI-6763b86fb1d41259",
+          "event_ids": [
+            "EV-876baa523eb93c4f"
+          ],
+          "company_entity_id": "EN-4731aa5b66658c7f",
+          "company_canonical_entity_id": "EN-4731aa5b66658c7f",
+          "company_name": "无界动力",
+          "round": "天使轮",
+          "round_code": "angel",
+          "round_original": "天使轮",
+          "amount_original": "超2亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 200000000,
+            "min_value": 200000000,
+            "max_value": null,
+            "unit": "base",
+            "status": "lower_bound",
+            "display_zh": "超过 2 亿元"
+          },
+          "announced_at": "2026-02-14",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-daccbed46498e19c",
+              "source_url": "https://jnzstatic.cs.com.cn/zzb/htmlInfo/115989.html",
+              "source_title": "无界动力宣布完成超2亿元天使+轮融资",
+              "source_content_hash": "f71a5fef7a18be7527726ba9b5eb5bd4aa7c2be242317d45634cf5ad0538d012",
+              "quote": "新增深创投、创新工场、普华资本、钧山资本、雅瑞资本等加入。",
+              "quote_hash": "8e9d10663fe3e1560634117b6891dc37bab1b356161cbcf0e51af36273fc4061"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-8df215ff3f25247c",
+          "funding_insight_id": "FI-e9bdd4e9374b04ca",
+          "event_ids": [
+            "EV-41c54c428d84cc1e",
+            "EV-26439e34295a0519",
+            "EV-cec68369662236fd"
+          ],
+          "company_entity_id": "EN-8dc72a4672894e0f",
+          "company_canonical_entity_id": "EN-8dc72a4672894e0f",
+          "company_name": "自变量机器人",
+          "round": "A++轮",
+          "round_code": "series_a_plus_plus",
+          "round_original": "A++轮",
+          "amount_original": "10亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 1000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "10 亿元"
+          },
+          "announced_at": "2026-01-12",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-449b969616ed1e95",
+              "source_url": "https://www.36kr.com/p/3636080421586182",
+              "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
+              "source_content_hash": "abef77aff9b6b68f",
+              "quote": "这轮融资由字节跳动、红杉中国领投，北京信息产业发展基金、深创投、南山战新投、锡创投等顶级机构与多元地方平台联合参与。",
+              "quote_hash": "2e2b6fbe0aae04e97855fa8f931a0f401d0a69c53851e388313a7896ddefb23e"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-55d8269584f9e05b",
+          "source_url": "https://news.pedaily.cn/202609/569092.shtml",
+          "source_title": "超衍智能完成近4亿元天使系列融资，构建自进化基础大模型",
+          "source_content_hash": "c56b4d99a50bca6f",
+          "quote": "天使+轮由中关村科学城基金、深创投及上海未来产业基金联合领投",
+          "quote_hash": "9171ab30e12b9f8b285d42e80dbf26f51055f23b1b52b1221ae1c1667530c70d"
+        },
+        {
+          "source_id": "FISRC-d0c3dca85d845330",
+          "source_url": "https://news.pedaily.cn/202609/569015.shtml",
+          "source_title": "「因克斯ENCOS」完成3亿元B轮融资，深耕具身智能关节模组",
+          "source_content_hash": "e86bd6fffaf894b4",
+          "quote": "同时 复星创富、深创投、华控基金、锦秋基金、普华资本作为老股东持续多轮追投。",
+          "quote_hash": "0553874275a9d1405d1a0f8e1cc88e61b74f557cf7f1adcb9fac56dd7353f161"
+        },
+        {
+          "source_id": "FISRC-09c3ca37737a71ce",
+          "source_url": "https://stcn.com/article/detail/3386786.html",
+          "source_title": "爱诗科技完成B+轮融资 ARR突破4000万美金",
+          "source_content_hash": "edea92990a31710b",
+          "quote": "该轮融资由阿里巴巴领投，达晨财智、深创投、北京市AI基金、湖南电广传媒、巨人网络和Antler跟投。",
+          "quote_hash": "3e1964c5d30ce70d2f0eb1a20d63918f13352c60a9351bd4858c52ac3f5ff015"
+        },
+        {
+          "source_id": "FISRC-67ccadc4294defd6",
+          "source_url": "https://pitchhub.36kr.com/project/1958573801870344",
+          "source_title": "深度智控 | 项目信息-36氪",
+          "source_content_hash": "ed75aafa3d8feb1d",
+          "quote": "A+轮 2023-05 数亿人民币 深创投 ， 招商局创投 ， Forebright Capital ， HongShan红杉中国 ， 源码资本",
+          "quote_hash": "01231602863d5c406a1b7918938ddc5c99d1a6768495ed555c9506928ed11ad4"
+        },
+        {
+          "source_id": "FISRC-b96684face6f5223",
+          "source_url": "https://finance.sina.com.cn/jjxw/2026-06-15/doc-inicnckx8338155.shtml",
+          "source_title": "微纳核芯完成超10亿元B轮系列融资",
+          "source_content_hash": "3001d7761836998ad785b02a8753e10abd430afc8267dd715a690f318b1cff60",
+          "quote": "深创投 等头部国资机构",
+          "quote_hash": "8586436a7425cb34d3740db319b9fef2aacc30d178978b54ab1a1d3b46c0a11c"
+        },
+        {
+          "source_id": "FISRC-6202f2642c216aa5",
+          "source_url": "https://finance.sina.com.cn/roll/2026-05-29/doc-inhzqccm9474762.shtml",
+          "source_title": "墨芯人工智能完成近10亿元C轮融资",
+          "source_content_hash": "acb7f98eff8e5a18cafd8588c7b7e359b5aeab6222f18d676e54328e28236b61",
+          "quote": "本轮投资方包括深创投、 岩山科技 、大湾区共同家园、 我会会员单位力鼎资本 、蕴盛资本等",
+          "quote_hash": "23b6cdc1274fabc3b892f5e1360779d1ec84cbeaf39e60791428fd74ed5f14b8"
+        },
+        {
+          "source_id": "FISRC-ad8ba39594cec38c",
+          "source_url": "https://www.cls.cn/detail/2341170",
+          "source_title": "智平方完成股改百亿具身智能独角兽加速冲刺IPO - 财联社",
+          "source_content_hash": "0df608927ef662b2",
+          "quote": "当前股东矩阵涵盖深创投、百度、国泰海通、中车资本等",
+          "quote_hash": "7f5e550c58a550b26cc49c6e8c95023f5f67b4dbd608c6c1588c1f866670f36e"
+        },
+        {
+          "source_id": "FISRC-5e868b9dacd5325c",
+          "source_url": "https://finance.sina.com.cn/stock/t/2026-04-09/doc-inhtwhrc8925749.shtml",
+          "source_title": "大模型公司面壁智能完成数亿元融资投后估值迈入独角兽门槛",
+          "source_content_hash": "21fcbff02b369abf",
+          "quote": "本轮融资由深创投、 汇川技术 旗下汇川产投联合领投，道禾长期投资、 国泰海通 创新投、武岳峰科创等多家头部机构跟投。",
+          "quote_hash": "fb602ee1614b7b09ce81c869fec6e3b8bc3c018cf8eac9dbd6b43120689450de"
+        },
+        {
+          "source_id": "FISRC-adaac360139469bd",
+          "source_url": "https://www.cls.cn/detail/2300238",
+          "source_title": "开年最大融资诞生！银河通用再融25亿 国家大基金首投具身智能",
+          "source_content_hash": "b2eacae148179fb9ea2302fcd22d73b4b29b0f56ffb1c8400c5764c9a8cdbdcd",
+          "quote": "老股东深创投、上海人工智能基金等持续加码",
+          "quote_hash": "8b03b2eb258a2c20e883545d8291754ece6ec15611e4865efacc00d3b25b23f5"
+        },
+        {
+          "source_id": "FISRC-b78c44b13620e61a",
+          "source_url": "https://news.pedaily.cn/202602/561111.shtml",
+          "source_title": "首发｜深圳开年首个百亿独角兽，智平方又融资了 - 投资界",
+          "source_content_hash": "36eeadfe3f6c3f89",
+          "quote": "公司完成由深创投领投的新一轮A系列融资，其中深创投押注超过亿元",
+          "quote_hash": "27e3c42e22edbcb94335fafe80b015db3ddafaff7770300de1b1af150e3694c2"
+        },
+        {
+          "source_id": "FISRC-daccbed46498e19c",
+          "source_url": "https://jnzstatic.cs.com.cn/zzb/htmlInfo/115989.html",
+          "source_title": "无界动力宣布完成超2亿元天使+轮融资",
+          "source_content_hash": "f71a5fef7a18be7527726ba9b5eb5bd4aa7c2be242317d45634cf5ad0538d012",
+          "quote": "新增深创投、创新工场、普华资本、钧山资本、雅瑞资本等加入。",
+          "quote_hash": "8e9d10663fe3e1560634117b6891dc37bab1b356161cbcf0e51af36273fc4061"
+        },
+        {
+          "source_id": "FISRC-449b969616ed1e95",
+          "source_url": "https://www.36kr.com/p/3636080421586182",
+          "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
+          "source_content_hash": "abef77aff9b6b68f",
+          "quote": "这轮融资由字节跳动、红杉中国领投，北京信息产业发展基金、深创投、南山战新投、锡创投等顶级机构与多元地方平台联合参与。",
+          "quote_hash": "2e2b6fbe0aae04e97855fa8f931a0f401d0a69c53851e388313a7896ddefb23e"
+        }
+      ]
+    },
+    {
+      "id": "INV-d44c7e56fc72a8",
+      "name": "星连资本",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 6,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 5,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 6,
+      "china_market_company_count": 5,
+      "first_disclosed_at": "2026-02-05",
+      "latest_disclosed_at": "2026-09-16",
+      "role_counts": {
+        "co_lead": 3,
+        "lead": 1,
+        "participant": 2
+      },
+      "round_codes": [
+        "angel_plus",
+        "pre_series_a",
+        "seed",
+        "series_a_plus",
+        "series_b",
+        "strategic"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-d817dfb0312f7af0",
+          "canonical_entity_id": "",
+          "name": "超衍智能"
+        },
+        {
+          "entity_id": "EN-a01847b090a53c6e",
+          "canonical_entity_id": "",
+          "name": "九章智电"
+        },
+        {
+          "entity_id": "EN-aef5bb4e898f303c",
+          "canonical_entity_id": "EN-aef5bb4e898f303c",
+          "name": "奇点逃逸"
+        },
+        {
+          "entity_id": "EN-0355fdd77dae437b",
+          "canonical_entity_id": "EN-0355fdd77dae437b",
+          "name": "趋境科技"
+        },
+        {
+          "entity_id": "EN-9b21c9bf3305c0d6",
+          "canonical_entity_id": "EN-9b21c9bf3305c0d6",
+          "name": "生数科技"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-1a9a6733199c6842",
+          "funding_insight_id": "FI-1dc1b9eef411e165",
+          "event_ids": [
+            "EV-f70e34d7f7d5769a"
+          ],
+          "company_entity_id": "EN-d817dfb0312f7af0",
+          "company_canonical_entity_id": "",
+          "company_name": "超衍智能",
+          "round": "天使+轮",
+          "round_code": "angel_plus",
+          "round_original": "天使+轮",
+          "amount_original": "近4亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 400000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 4 亿元"
+          },
+          "announced_at": "2026-09-16",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-55d8269584f9e05b",
+              "source_url": "https://news.pedaily.cn/202609/569092.shtml",
+              "source_title": "超衍智能完成近4亿元天使系列融资，构建自进化基础大模型",
+              "source_content_hash": "c56b4d99a50bca6f",
+              "quote": "天使轮由 IDG 资本、星连资本、晶泰科技联合领投",
+              "quote_hash": "12bcaabed611233e823f1962f4230bec1881ab50d9829cf88fb059a0a4e4e661"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-4e5fc138f48d5df0",
+          "funding_insight_id": "FI-5797999d683fac6b",
+          "event_ids": [
+            "EV-65d274d4277815dc"
+          ],
+          "company_entity_id": "EN-a01847b090a53c6e",
+          "company_canonical_entity_id": "",
+          "company_name": "九章智电",
+          "round": "战略融资",
+          "round_code": "strategic",
+          "round_original": "战略融资",
+          "amount_original": "数千万",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 20000000,
+            "max_value": 90000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "2000 万元–9000 万元"
+          },
+          "announced_at": "2026-09-10",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-75f2758fb9aa9e2d",
+              "source_url": "https://news.pedaily.cn/202609/568814.shtml",
+              "source_title": "九章智电完成首轮数千万战略融资，深耕AI+电力交易赛道",
+              "source_content_hash": "8d613e8630b21904",
+              "quote": "本轮由 中金资本旗下基金 领投， 星连资本、京成燕北 共同跟投。",
+              "quote_hash": "cf6a2ae7b72f7486fc9eec0f77f5eb7d3abf93e13129d33fd983728af2fd81dd"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-e7be87e5889b109b",
+          "funding_insight_id": "FI-72a762e01ac47812",
+          "event_ids": [
+            "EV-dc35d54f273196f0"
+          ],
+          "company_entity_id": "EN-aef5bb4e898f303c",
+          "company_canonical_entity_id": "EN-aef5bb4e898f303c",
+          "company_name": "奇点逃逸",
+          "round": "种子轮",
+          "round_code": "seed",
+          "round_original": "种子轮",
+          "amount_original": "千万级",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 10000000,
+            "max_value": 100000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "1000 万元–1 亿元"
+          },
+          "announced_at": "2026-08-03",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-8f70de35939e4c3c",
+              "source_url": "https://36kr.com/p/3919025939246727?f=rss",
+              "source_title": "让Agent在协作中自进化，清华00后博士获千万元融资 | 36氪首发",
+              "source_content_hash": "ef1aa49772b166b7",
+              "quote": "由星连资本与水木创投联合领投",
+              "quote_hash": "ff1f4783d3bc8be27fc116fc21e2151f37466eb523e6f47974ecf93878c3cab5"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-15a94fb0dade5329",
+          "funding_insight_id": "FI-3734798e9a7f3c5c",
+          "event_ids": [
+            "EV-d94bcfdf64509513"
+          ],
+          "company_entity_id": "EN-0355fdd77dae437b",
+          "company_canonical_entity_id": "EN-0355fdd77dae437b",
+          "company_name": "趋境科技",
+          "round": "Pre-A轮",
+          "round_code": "pre_series_a",
+          "round_original": "Pre-A轮",
+          "amount_original": "数亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 200000000,
+            "max_value": 900000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "2 亿元–9 亿元"
+          },
+          "announced_at": "2026-05-20",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-0a40102abd985684",
+              "source_url": "https://news.pedaily.cn/202605/564126.shtml",
+              "source_title": "趋境科技完成数亿元Pre-A轮融资，加速建设高品质AI Token生产基础设施_投资界",
+              "source_content_hash": "0ed32dd4d2b1a439",
+              "quote": "本轮融资由 星连资本与华控科技联合领投，弘晖资本、天壕能源、尚势资本、天津仁爱弘盛、杭州福成 等机构跟投，老股东 高瓴创投（GL Ventures） 持续加注。",
+              "quote_hash": "7f3312a250a9bb0429e31afd20808ce3652b5d3b5cd8c9724ddf67ed16fad278"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-072ebd6c4760a3ca",
+          "funding_insight_id": "FI-7108544d47292865",
+          "event_ids": [
+            "EV-5575555340c04c5a"
+          ],
+          "company_entity_id": "EN-9b21c9bf3305c0d6",
+          "company_canonical_entity_id": "EN-9b21c9bf3305c0d6",
+          "company_name": "生数科技",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "20亿元人民币",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 2000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "20 亿元"
+          },
+          "announced_at": "2026-04-10",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-fd865802af815ab3",
+              "source_url": "https://news.pedaily.cn/202604/562614.shtml",
+              "source_title": "生数科技完成近20亿元B轮融资，阿里云领投",
+              "source_content_hash": "a281cc701a9028fb",
+              "quote": "星连资本、达泰资本、建发新兴投资、BV百度风投、卓源亚洲等原有股东持续追加投资",
+              "quote_hash": "f35899115b693a02a891df90bd23087e3313109be82ae0066df26adecfb5827b"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-a314fb07a28e3106",
+          "funding_insight_id": "FI-474a441598e62f93",
+          "event_ids": [
+            "EV-622ebdad1e1fad2d",
+            "EV-535c2f4fb851332d"
+          ],
+          "company_entity_id": "EN-9b21c9bf3305c0d6",
+          "company_canonical_entity_id": "EN-9b21c9bf3305c0d6",
+          "company_name": "生数科技",
+          "round": "A+轮",
+          "round_code": "series_a_plus",
+          "round_original": "A+轮",
+          "amount_original": "6亿元人民币",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 600000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "6 亿元"
+          },
+          "announced_at": "2026-02-05",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮领投",
+          "role_code": "lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-4177e5ca07c921a5",
+              "source_url": "https://news.pedaily.cn/202602/560802.shtml",
+              "source_title": "重构AI在数字和物理世界的生产力，生数科技完成超6亿元A+轮融资",
+              "source_content_hash": "22fd0b6b2709ea7b",
+              "quote": "本轮融资由 中关村科学城公司和星连资本 领投",
+              "quote_hash": "6d1cbcf2aa8a47a0b5abc4725a927f5a4880b7092a67ef2a1056257ceed9d578"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-55d8269584f9e05b",
+          "source_url": "https://news.pedaily.cn/202609/569092.shtml",
+          "source_title": "超衍智能完成近4亿元天使系列融资，构建自进化基础大模型",
+          "source_content_hash": "c56b4d99a50bca6f",
+          "quote": "天使轮由 IDG 资本、星连资本、晶泰科技联合领投",
+          "quote_hash": "12bcaabed611233e823f1962f4230bec1881ab50d9829cf88fb059a0a4e4e661"
+        },
+        {
+          "source_id": "FISRC-75f2758fb9aa9e2d",
+          "source_url": "https://news.pedaily.cn/202609/568814.shtml",
+          "source_title": "九章智电完成首轮数千万战略融资，深耕AI+电力交易赛道",
+          "source_content_hash": "8d613e8630b21904",
+          "quote": "本轮由 中金资本旗下基金 领投， 星连资本、京成燕北 共同跟投。",
+          "quote_hash": "cf6a2ae7b72f7486fc9eec0f77f5eb7d3abf93e13129d33fd983728af2fd81dd"
+        },
+        {
+          "source_id": "FISRC-8f70de35939e4c3c",
+          "source_url": "https://36kr.com/p/3919025939246727?f=rss",
+          "source_title": "让Agent在协作中自进化，清华00后博士获千万元融资 | 36氪首发",
+          "source_content_hash": "ef1aa49772b166b7",
+          "quote": "由星连资本与水木创投联合领投",
+          "quote_hash": "ff1f4783d3bc8be27fc116fc21e2151f37466eb523e6f47974ecf93878c3cab5"
+        },
+        {
+          "source_id": "FISRC-0a40102abd985684",
+          "source_url": "https://news.pedaily.cn/202605/564126.shtml",
+          "source_title": "趋境科技完成数亿元Pre-A轮融资，加速建设高品质AI Token生产基础设施_投资界",
+          "source_content_hash": "0ed32dd4d2b1a439",
+          "quote": "本轮融资由 星连资本与华控科技联合领投，弘晖资本、天壕能源、尚势资本、天津仁爱弘盛、杭州福成 等机构跟投，老股东 高瓴创投（GL Ventures） 持续加注。",
+          "quote_hash": "7f3312a250a9bb0429e31afd20808ce3652b5d3b5cd8c9724ddf67ed16fad278"
+        },
+        {
+          "source_id": "FISRC-fd865802af815ab3",
+          "source_url": "https://news.pedaily.cn/202604/562614.shtml",
+          "source_title": "生数科技完成近20亿元B轮融资，阿里云领投",
+          "source_content_hash": "a281cc701a9028fb",
+          "quote": "星连资本、达泰资本、建发新兴投资、BV百度风投、卓源亚洲等原有股东持续追加投资",
+          "quote_hash": "f35899115b693a02a891df90bd23087e3313109be82ae0066df26adecfb5827b"
+        },
+        {
+          "source_id": "FISRC-4177e5ca07c921a5",
+          "source_url": "https://news.pedaily.cn/202602/560802.shtml",
+          "source_title": "重构AI在数字和物理世界的生产力，生数科技完成超6亿元A+轮融资",
+          "source_content_hash": "22fd0b6b2709ea7b",
+          "quote": "本轮融资由 中关村科学城公司和星连资本 领投",
+          "quote_hash": "6d1cbcf2aa8a47a0b5abc4725a927f5a4880b7092a67ef2a1056257ceed9d578"
+        }
+      ]
+    },
+    {
       "id": "INV-a83f8b9c272b41",
       "name": "BlackRock",
       "aliases": [],
@@ -18296,600 +19297,6 @@
       ]
     },
     {
-      "id": "INV-901b0ed7b5c1cb",
-      "name": "深创投",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 5,
-      "historical_or_ambiguous_count": 6,
-      "portfolio_company_count": 5,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 5,
-      "china_market_company_count": 5,
-      "first_disclosed_at": "2026-01-12",
-      "latest_disclosed_at": "2026-09-15",
-      "role_counts": {
-        "co_lead": 1,
-        "historical_or_ambiguous": 6,
-        "participant": 4
-      },
-      "round_codes": [
-        "angel",
-        "multi_round",
-        "series_a_plus_plus",
-        "series_c",
-        "undisclosed"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-3309b3b14807f39a",
-          "canonical_entity_id": "EN-3309b3b14807f39a",
-          "name": "面壁智能"
-        },
-        {
-          "entity_id": "EN-085578b03da7d660",
-          "canonical_entity_id": "EN-085578b03da7d660",
-          "name": "墨芯人工智能"
-        },
-        {
-          "entity_id": "EN-a5e5f031b6f878cf",
-          "canonical_entity_id": "EN-a5e5f031b6f878cf",
-          "name": "微纳核芯"
-        },
-        {
-          "entity_id": "EN-4731aa5b66658c7f",
-          "canonical_entity_id": "EN-4731aa5b66658c7f",
-          "name": "无界动力"
-        },
-        {
-          "entity_id": "EN-8dc72a4672894e0f",
-          "canonical_entity_id": "EN-8dc72a4672894e0f",
-          "name": "自变量机器人"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-407beca7082789fe",
-          "funding_insight_id": "FI-8acd5314a46c6068",
-          "event_ids": [
-            "EV-6aaa17d9c372e513"
-          ],
-          "company_entity_id": "EN-24dd6fa3e1cbba97",
-          "company_canonical_entity_id": "",
-          "company_name": "因克斯",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "B轮",
-          "amount_original": "超3亿元人民币",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 300000000,
-            "min_value": 300000000,
-            "max_value": null,
-            "unit": "base",
-            "status": "lower_bound",
-            "display_zh": "超过 3 亿元"
-          },
-          "announced_at": "2026-09-15",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "老股东持续多轮追投",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-d0c3dca85d845330",
-              "source_url": "https://news.pedaily.cn/202609/569015.shtml",
-              "source_title": "「因克斯ENCOS」完成3亿元B轮融资，深耕具身智能关节模组",
-              "source_content_hash": "e86bd6fffaf894b4",
-              "quote": "同时 复星创富、深创投、华控基金、锦秋基金、普华资本作为老股东持续多轮追投。",
-              "quote_hash": "0553874275a9d1405d1a0f8e1cc88e61b74f557cf7f1adcb9fac56dd7353f161"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-a4e87b4fe931075e",
-          "funding_insight_id": "FI-124b4efd0f2fa1d9",
-          "event_ids": [
-            "EV-12f331aaf7d4cca6"
-          ],
-          "company_entity_id": "EN-964f260c9a904091",
-          "company_canonical_entity_id": "EN-964f260c9a904091",
-          "company_name": "爱诗科技",
-          "round": "C轮",
-          "round_code": "series_c",
-          "round_original": "C轮",
-          "amount_original": "29.8亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 2980000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "29.8 亿元"
-          },
-          "announced_at": "2026-07-14",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "B轮跟投",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-09c3ca37737a71ce",
-              "source_url": "https://stcn.com/article/detail/3386786.html",
-              "source_title": "爱诗科技完成B+轮融资 ARR突破4000万美金",
-              "source_content_hash": "edea92990a31710b",
-              "quote": "该轮融资由阿里巴巴领投，达晨财智、深创投、北京市AI基金、湖南电广传媒、巨人网络和Antler跟投。",
-              "quote_hash": "3e1964c5d30ce70d2f0eb1a20d63918f13352c60a9351bd4858c52ac3f5ff015"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-71e6c903c931cab3",
-          "funding_insight_id": "FI-23cabede97d0111d",
-          "event_ids": [
-            "EV-c6437ac13cb07531"
-          ],
-          "company_entity_id": "EN-4e781f6e9e5a49bc",
-          "company_canonical_entity_id": "EN-4e781f6e9e5a49bc",
-          "company_name": "深度智控",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "B轮",
-          "amount_original": "数亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": null,
-            "min_value": 200000000,
-            "max_value": 900000000,
-            "unit": "base",
-            "status": "range",
-            "display_zh": "2 亿元–9 亿元"
-          },
-          "announced_at": "2026-07-09",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "A+轮投资方",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-67ccadc4294defd6",
-              "source_url": "https://pitchhub.36kr.com/project/1958573801870344",
-              "source_title": "深度智控 | 项目信息-36氪",
-              "source_content_hash": "ed75aafa3d8feb1d",
-              "quote": "A+轮 2023-05 数亿人民币 深创投 ， 招商局创投 ， Forebright Capital ， HongShan红杉中国 ， 源码资本",
-              "quote_hash": "01231602863d5c406a1b7918938ddc5c99d1a6768495ed555c9506928ed11ad4"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-3f745375652313b7",
-          "funding_insight_id": "FI-6ada8d4502daa530",
-          "event_ids": [
-            "EV-e0a31302688c81ec"
-          ],
-          "company_entity_id": "EN-a5e5f031b6f878cf",
-          "company_canonical_entity_id": "EN-a5e5f031b6f878cf",
-          "company_name": "微纳核芯",
-          "round": "多轮融资",
-          "round_code": "multi_round",
-          "round_original": "多轮融资",
-          "amount_original": "超10亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 1000000000,
-            "min_value": 1000000000,
-            "max_value": null,
-            "unit": "base",
-            "status": "lower_bound",
-            "display_zh": "超过 10 亿元"
-          },
-          "announced_at": "2026-06-15",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-b96684face6f5223",
-              "source_url": "https://finance.sina.com.cn/jjxw/2026-06-15/doc-inicnckx8338155.shtml",
-              "source_title": "微纳核芯完成超10亿元B轮系列融资",
-              "source_content_hash": "3001d7761836998ad785b02a8753e10abd430afc8267dd715a690f318b1cff60",
-              "quote": "深创投 等头部国资机构",
-              "quote_hash": "8586436a7425cb34d3740db319b9fef2aacc30d178978b54ab1a1d3b46c0a11c"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-e562d41de639cfc5",
-          "funding_insight_id": "FI-f617b97f0b35118f",
-          "event_ids": [
-            "EV-794f921515af8e8b"
-          ],
-          "company_entity_id": "EN-085578b03da7d660",
-          "company_canonical_entity_id": "EN-085578b03da7d660",
-          "company_name": "墨芯人工智能",
-          "round": "C轮",
-          "round_code": "series_c",
-          "round_original": "C轮",
-          "amount_original": "近10亿人民币",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 1000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "approximate",
-            "display_zh": "约 10 亿元"
-          },
-          "announced_at": "2026-05-29",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-6202f2642c216aa5",
-              "source_url": "https://finance.sina.com.cn/roll/2026-05-29/doc-inhzqccm9474762.shtml",
-              "source_title": "墨芯人工智能完成近10亿元C轮融资",
-              "source_content_hash": "acb7f98eff8e5a18cafd8588c7b7e359b5aeab6222f18d676e54328e28236b61",
-              "quote": "本轮投资方包括深创投、 岩山科技 、大湾区共同家园、 我会会员单位力鼎资本 、蕴盛资本等",
-              "quote_hash": "23b6cdc1274fabc3b892f5e1360779d1ec84cbeaf39e60791428fd74ed5f14b8"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-8426b7a2581246fc",
-          "funding_insight_id": "FI-0421ad5a685ba3b0",
-          "event_ids": [
-            "EV-7620153f4892a0af"
-          ],
-          "company_entity_id": "EN-ce22f929f4a17467",
-          "company_canonical_entity_id": "EN-ce22f929f4a17467",
-          "company_name": "智平方",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "B轮",
-          "amount_original": "10亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 1000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "10 亿元"
-          },
-          "announced_at": "2026-04-11",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "历史轮次投资方",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-ad8ba39594cec38c",
-              "source_url": "https://www.cls.cn/detail/2341170",
-              "source_title": "智平方完成股改百亿具身智能独角兽加速冲刺IPO - 财联社",
-              "source_content_hash": "0df608927ef662b2",
-              "quote": "当前股东矩阵涵盖深创投、百度、国泰海通、中车资本等",
-              "quote_hash": "7f5e550c58a550b26cc49c6e8c95023f5f67b4dbd608c6c1588c1f866670f36e"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-286e1b798d1341dd",
-          "funding_insight_id": "FI-a7e1a675674f1a0b",
-          "event_ids": [
-            "EV-314db5cbf5010d41"
-          ],
-          "company_entity_id": "EN-3309b3b14807f39a",
-          "company_canonical_entity_id": "EN-3309b3b14807f39a",
-          "company_name": "面壁智能",
-          "round": "轮次未披露",
-          "round_code": "undisclosed",
-          "round_original": "新一轮数亿元人民币融资",
-          "amount_original": "数亿元人民币",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": null,
-            "min_value": 200000000,
-            "max_value": 900000000,
-            "unit": "base",
-            "status": "range",
-            "display_zh": "2 亿元–9 亿元"
-          },
-          "announced_at": "2026-04-09",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "partially_disclosed",
-          "scope": "current_round",
-          "role": "本轮联合领投",
-          "role_code": "co_lead",
-          "evidence": [
-            {
-              "source_id": "FISRC-5e868b9dacd5325c",
-              "source_url": "https://finance.sina.com.cn/stock/t/2026-04-09/doc-inhtwhrc8925749.shtml",
-              "source_title": "大模型公司面壁智能完成数亿元融资投后估值迈入独角兽门槛",
-              "source_content_hash": "21fcbff02b369abf",
-              "quote": "本轮融资由深创投、 汇川技术 旗下汇川产投联合领投，道禾长期投资、 国泰海通 创新投、武岳峰科创等多家头部机构跟投。",
-              "quote_hash": "fb602ee1614b7b09ce81c869fec6e3b8bc3c018cf8eac9dbd6b43120689450de"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-95611ac411cbcb87",
-          "funding_insight_id": "FI-d64fecfe9cecf228",
-          "event_ids": [
-            "EV-d2409770301edc83"
-          ],
-          "company_entity_id": "EN-c5456c9421743002",
-          "company_canonical_entity_id": "EN-c5456c9421743002",
-          "company_name": "银河通用",
-          "round": "轮次未披露",
-          "round_code": "undisclosed",
-          "round_original": "新一轮",
-          "amount_original": "25亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 2500000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "25 亿元"
-          },
-          "announced_at": "2026-03-02",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "partially_disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "老股东持续加码",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-adaac360139469bd",
-              "source_url": "https://www.cls.cn/detail/2300238",
-              "source_title": "开年最大融资诞生！银河通用再融25亿 国家大基金首投具身智能",
-              "source_content_hash": "b2eacae148179fb9ea2302fcd22d73b4b29b0f56ffb1c8400c5764c9a8cdbdcd",
-              "quote": "老股东深创投、上海人工智能基金等持续加码",
-              "quote_hash": "8b03b2eb258a2c20e883545d8291754ece6ec15611e4865efacc00d3b25b23f5"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-c6b2bf2fcb4a94ce",
-          "funding_insight_id": "FI-3dead88500d2a761",
-          "event_ids": [
-            "EV-565b6c1b10b3cf83",
-            "EV-af8e95dbe06ac083"
-          ],
-          "company_entity_id": "EN-ce22f929f4a17467",
-          "company_canonical_entity_id": "EN-ce22f929f4a17467",
-          "company_name": "智平方",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "B轮",
-          "amount_original": "10亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 1000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "10 亿元"
-          },
-          "announced_at": "2026-02-23",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "A系列融资领投",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-b78c44b13620e61a",
-              "source_url": "https://news.pedaily.cn/202602/561111.shtml",
-              "source_title": "首发｜深圳开年首个百亿独角兽，智平方又融资了 - 投资界",
-              "source_content_hash": "36eeadfe3f6c3f89",
-              "quote": "公司完成由深创投领投的新一轮A系列融资，其中深创投押注超过亿元",
-              "quote_hash": "27e3c42e22edbcb94335fafe80b015db3ddafaff7770300de1b1af150e3694c2"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-c951e42d3a3cb0e1",
-          "funding_insight_id": "FI-6763b86fb1d41259",
-          "event_ids": [
-            "EV-876baa523eb93c4f"
-          ],
-          "company_entity_id": "EN-4731aa5b66658c7f",
-          "company_canonical_entity_id": "EN-4731aa5b66658c7f",
-          "company_name": "无界动力",
-          "round": "天使轮",
-          "round_code": "angel",
-          "round_original": "天使轮",
-          "amount_original": "超2亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 200000000,
-            "min_value": 200000000,
-            "max_value": null,
-            "unit": "base",
-            "status": "lower_bound",
-            "display_zh": "超过 2 亿元"
-          },
-          "announced_at": "2026-02-14",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-daccbed46498e19c",
-              "source_url": "https://jnzstatic.cs.com.cn/zzb/htmlInfo/115989.html",
-              "source_title": "无界动力宣布完成超2亿元天使+轮融资",
-              "source_content_hash": "f71a5fef7a18be7527726ba9b5eb5bd4aa7c2be242317d45634cf5ad0538d012",
-              "quote": "新增深创投、创新工场、普华资本、钧山资本、雅瑞资本等加入。",
-              "quote_hash": "8e9d10663fe3e1560634117b6891dc37bab1b356161cbcf0e51af36273fc4061"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-8df215ff3f25247c",
-          "funding_insight_id": "FI-e9bdd4e9374b04ca",
-          "event_ids": [
-            "EV-41c54c428d84cc1e",
-            "EV-26439e34295a0519",
-            "EV-cec68369662236fd"
-          ],
-          "company_entity_id": "EN-8dc72a4672894e0f",
-          "company_canonical_entity_id": "EN-8dc72a4672894e0f",
-          "company_name": "自变量机器人",
-          "round": "A++轮",
-          "round_code": "series_a_plus_plus",
-          "round_original": "A++轮",
-          "amount_original": "10亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 1000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "10 亿元"
-          },
-          "announced_at": "2026-01-12",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-449b969616ed1e95",
-              "source_url": "https://www.36kr.com/p/3636080421586182",
-              "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
-              "source_content_hash": "abef77aff9b6b68f",
-              "quote": "这轮融资由字节跳动、红杉中国领投，北京信息产业发展基金、深创投、南山战新投、锡创投等顶级机构与多元地方平台联合参与。",
-              "quote_hash": "2e2b6fbe0aae04e97855fa8f931a0f401d0a69c53851e388313a7896ddefb23e"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-d0c3dca85d845330",
-          "source_url": "https://news.pedaily.cn/202609/569015.shtml",
-          "source_title": "「因克斯ENCOS」完成3亿元B轮融资，深耕具身智能关节模组",
-          "source_content_hash": "e86bd6fffaf894b4",
-          "quote": "同时 复星创富、深创投、华控基金、锦秋基金、普华资本作为老股东持续多轮追投。",
-          "quote_hash": "0553874275a9d1405d1a0f8e1cc88e61b74f557cf7f1adcb9fac56dd7353f161"
-        },
-        {
-          "source_id": "FISRC-09c3ca37737a71ce",
-          "source_url": "https://stcn.com/article/detail/3386786.html",
-          "source_title": "爱诗科技完成B+轮融资 ARR突破4000万美金",
-          "source_content_hash": "edea92990a31710b",
-          "quote": "该轮融资由阿里巴巴领投，达晨财智、深创投、北京市AI基金、湖南电广传媒、巨人网络和Antler跟投。",
-          "quote_hash": "3e1964c5d30ce70d2f0eb1a20d63918f13352c60a9351bd4858c52ac3f5ff015"
-        },
-        {
-          "source_id": "FISRC-67ccadc4294defd6",
-          "source_url": "https://pitchhub.36kr.com/project/1958573801870344",
-          "source_title": "深度智控 | 项目信息-36氪",
-          "source_content_hash": "ed75aafa3d8feb1d",
-          "quote": "A+轮 2023-05 数亿人民币 深创投 ， 招商局创投 ， Forebright Capital ， HongShan红杉中国 ， 源码资本",
-          "quote_hash": "01231602863d5c406a1b7918938ddc5c99d1a6768495ed555c9506928ed11ad4"
-        },
-        {
-          "source_id": "FISRC-b96684face6f5223",
-          "source_url": "https://finance.sina.com.cn/jjxw/2026-06-15/doc-inicnckx8338155.shtml",
-          "source_title": "微纳核芯完成超10亿元B轮系列融资",
-          "source_content_hash": "3001d7761836998ad785b02a8753e10abd430afc8267dd715a690f318b1cff60",
-          "quote": "深创投 等头部国资机构",
-          "quote_hash": "8586436a7425cb34d3740db319b9fef2aacc30d178978b54ab1a1d3b46c0a11c"
-        },
-        {
-          "source_id": "FISRC-6202f2642c216aa5",
-          "source_url": "https://finance.sina.com.cn/roll/2026-05-29/doc-inhzqccm9474762.shtml",
-          "source_title": "墨芯人工智能完成近10亿元C轮融资",
-          "source_content_hash": "acb7f98eff8e5a18cafd8588c7b7e359b5aeab6222f18d676e54328e28236b61",
-          "quote": "本轮投资方包括深创投、 岩山科技 、大湾区共同家园、 我会会员单位力鼎资本 、蕴盛资本等",
-          "quote_hash": "23b6cdc1274fabc3b892f5e1360779d1ec84cbeaf39e60791428fd74ed5f14b8"
-        },
-        {
-          "source_id": "FISRC-ad8ba39594cec38c",
-          "source_url": "https://www.cls.cn/detail/2341170",
-          "source_title": "智平方完成股改百亿具身智能独角兽加速冲刺IPO - 财联社",
-          "source_content_hash": "0df608927ef662b2",
-          "quote": "当前股东矩阵涵盖深创投、百度、国泰海通、中车资本等",
-          "quote_hash": "7f5e550c58a550b26cc49c6e8c95023f5f67b4dbd608c6c1588c1f866670f36e"
-        },
-        {
-          "source_id": "FISRC-5e868b9dacd5325c",
-          "source_url": "https://finance.sina.com.cn/stock/t/2026-04-09/doc-inhtwhrc8925749.shtml",
-          "source_title": "大模型公司面壁智能完成数亿元融资投后估值迈入独角兽门槛",
-          "source_content_hash": "21fcbff02b369abf",
-          "quote": "本轮融资由深创投、 汇川技术 旗下汇川产投联合领投，道禾长期投资、 国泰海通 创新投、武岳峰科创等多家头部机构跟投。",
-          "quote_hash": "fb602ee1614b7b09ce81c869fec6e3b8bc3c018cf8eac9dbd6b43120689450de"
-        },
-        {
-          "source_id": "FISRC-adaac360139469bd",
-          "source_url": "https://www.cls.cn/detail/2300238",
-          "source_title": "开年最大融资诞生！银河通用再融25亿 国家大基金首投具身智能",
-          "source_content_hash": "b2eacae148179fb9ea2302fcd22d73b4b29b0f56ffb1c8400c5764c9a8cdbdcd",
-          "quote": "老股东深创投、上海人工智能基金等持续加码",
-          "quote_hash": "8b03b2eb258a2c20e883545d8291754ece6ec15611e4865efacc00d3b25b23f5"
-        },
-        {
-          "source_id": "FISRC-b78c44b13620e61a",
-          "source_url": "https://news.pedaily.cn/202602/561111.shtml",
-          "source_title": "首发｜深圳开年首个百亿独角兽，智平方又融资了 - 投资界",
-          "source_content_hash": "36eeadfe3f6c3f89",
-          "quote": "公司完成由深创投领投的新一轮A系列融资，其中深创投押注超过亿元",
-          "quote_hash": "27e3c42e22edbcb94335fafe80b015db3ddafaff7770300de1b1af150e3694c2"
-        },
-        {
-          "source_id": "FISRC-daccbed46498e19c",
-          "source_url": "https://jnzstatic.cs.com.cn/zzb/htmlInfo/115989.html",
-          "source_title": "无界动力宣布完成超2亿元天使+轮融资",
-          "source_content_hash": "f71a5fef7a18be7527726ba9b5eb5bd4aa7c2be242317d45634cf5ad0538d012",
-          "quote": "新增深创投、创新工场、普华资本、钧山资本、雅瑞资本等加入。",
-          "quote_hash": "8e9d10663fe3e1560634117b6891dc37bab1b356161cbcf0e51af36273fc4061"
-        },
-        {
-          "source_id": "FISRC-449b969616ed1e95",
-          "source_url": "https://www.36kr.com/p/3636080421586182",
-          "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
-          "source_content_hash": "abef77aff9b6b68f",
-          "quote": "这轮融资由字节跳动、红杉中国领投，北京信息产业发展基金、深创投、南山战新投、锡创投等顶级机构与多元地方平台联合参与。",
-          "quote_hash": "2e2b6fbe0aae04e97855fa8f931a0f401d0a69c53851e388313a7896ddefb23e"
-        }
-      ]
-    },
-    {
       "id": "INV-92654338f57932",
       "name": "L2F光源创业者基金",
       "aliases": [
@@ -20429,305 +20836,6 @@
           "source_content_hash": "05d5afb79601a323",
           "quote": "还有中金资本旗下基金、普华资本、洪泰基金、广发乾和等PE基金",
           "quote_hash": "099a646a87fd528b3ab1d27c6205599c0515fdfb1ca0127615f5f0499b20d120"
-        }
-      ]
-    },
-    {
-      "id": "INV-d44c7e56fc72a8",
-      "name": "星连资本",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "unverified_investor",
-      "investor_kind_label": "投资方（类型待核验）",
-      "classification_confidence": "unverified",
-      "collection_status": "evidence_backed",
-      "current_round_count": 5,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 4,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 5,
-      "china_market_company_count": 4,
-      "first_disclosed_at": "2026-02-05",
-      "latest_disclosed_at": "2026-09-10",
-      "role_counts": {
-        "co_lead": 2,
-        "lead": 1,
-        "participant": 2
-      },
-      "round_codes": [
-        "pre_series_a",
-        "seed",
-        "series_a_plus",
-        "series_b",
-        "strategic"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-a01847b090a53c6e",
-          "canonical_entity_id": "",
-          "name": "九章智电"
-        },
-        {
-          "entity_id": "EN-aef5bb4e898f303c",
-          "canonical_entity_id": "EN-aef5bb4e898f303c",
-          "name": "奇点逃逸"
-        },
-        {
-          "entity_id": "EN-0355fdd77dae437b",
-          "canonical_entity_id": "EN-0355fdd77dae437b",
-          "name": "趋境科技"
-        },
-        {
-          "entity_id": "EN-9b21c9bf3305c0d6",
-          "canonical_entity_id": "EN-9b21c9bf3305c0d6",
-          "name": "生数科技"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-4e5fc138f48d5df0",
-          "funding_insight_id": "FI-5797999d683fac6b",
-          "event_ids": [
-            "EV-65d274d4277815dc"
-          ],
-          "company_entity_id": "EN-a01847b090a53c6e",
-          "company_canonical_entity_id": "",
-          "company_name": "九章智电",
-          "round": "战略融资",
-          "round_code": "strategic",
-          "round_original": "战略融资",
-          "amount_original": "数千万",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": null,
-            "min_value": 20000000,
-            "max_value": 90000000,
-            "unit": "base",
-            "status": "range",
-            "display_zh": "2000 万元–9000 万元"
-          },
-          "announced_at": "2026-09-10",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-75f2758fb9aa9e2d",
-              "source_url": "https://news.pedaily.cn/202609/568814.shtml",
-              "source_title": "九章智电完成首轮数千万战略融资，深耕AI+电力交易赛道",
-              "source_content_hash": "8d613e8630b21904",
-              "quote": "本轮由 中金资本旗下基金 领投， 星连资本、京成燕北 共同跟投。",
-              "quote_hash": "cf6a2ae7b72f7486fc9eec0f77f5eb7d3abf93e13129d33fd983728af2fd81dd"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-e7be87e5889b109b",
-          "funding_insight_id": "FI-72a762e01ac47812",
-          "event_ids": [
-            "EV-dc35d54f273196f0"
-          ],
-          "company_entity_id": "EN-aef5bb4e898f303c",
-          "company_canonical_entity_id": "EN-aef5bb4e898f303c",
-          "company_name": "奇点逃逸",
-          "round": "种子轮",
-          "round_code": "seed",
-          "round_original": "种子轮",
-          "amount_original": "千万级",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": null,
-            "min_value": 10000000,
-            "max_value": 100000000,
-            "unit": "base",
-            "status": "range",
-            "display_zh": "1000 万元–1 亿元"
-          },
-          "announced_at": "2026-08-03",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮联合领投",
-          "role_code": "co_lead",
-          "evidence": [
-            {
-              "source_id": "FISRC-8f70de35939e4c3c",
-              "source_url": "https://36kr.com/p/3919025939246727?f=rss",
-              "source_title": "让Agent在协作中自进化，清华00后博士获千万元融资 | 36氪首发",
-              "source_content_hash": "ef1aa49772b166b7",
-              "quote": "由星连资本与水木创投联合领投",
-              "quote_hash": "ff1f4783d3bc8be27fc116fc21e2151f37466eb523e6f47974ecf93878c3cab5"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-15a94fb0dade5329",
-          "funding_insight_id": "FI-3734798e9a7f3c5c",
-          "event_ids": [
-            "EV-d94bcfdf64509513"
-          ],
-          "company_entity_id": "EN-0355fdd77dae437b",
-          "company_canonical_entity_id": "EN-0355fdd77dae437b",
-          "company_name": "趋境科技",
-          "round": "Pre-A轮",
-          "round_code": "pre_series_a",
-          "round_original": "Pre-A轮",
-          "amount_original": "数亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": null,
-            "min_value": 200000000,
-            "max_value": 900000000,
-            "unit": "base",
-            "status": "range",
-            "display_zh": "2 亿元–9 亿元"
-          },
-          "announced_at": "2026-05-20",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮联合领投",
-          "role_code": "co_lead",
-          "evidence": [
-            {
-              "source_id": "FISRC-0a40102abd985684",
-              "source_url": "https://news.pedaily.cn/202605/564126.shtml",
-              "source_title": "趋境科技完成数亿元Pre-A轮融资，加速建设高品质AI Token生产基础设施_投资界",
-              "source_content_hash": "0ed32dd4d2b1a439",
-              "quote": "本轮融资由 星连资本与华控科技联合领投，弘晖资本、天壕能源、尚势资本、天津仁爱弘盛、杭州福成 等机构跟投，老股东 高瓴创投（GL Ventures） 持续加注。",
-              "quote_hash": "7f3312a250a9bb0429e31afd20808ce3652b5d3b5cd8c9724ddf67ed16fad278"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-072ebd6c4760a3ca",
-          "funding_insight_id": "FI-7108544d47292865",
-          "event_ids": [
-            "EV-5575555340c04c5a"
-          ],
-          "company_entity_id": "EN-9b21c9bf3305c0d6",
-          "company_canonical_entity_id": "EN-9b21c9bf3305c0d6",
-          "company_name": "生数科技",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "B轮",
-          "amount_original": "20亿元人民币",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 2000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "20 亿元"
-          },
-          "announced_at": "2026-04-10",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-fd865802af815ab3",
-              "source_url": "https://news.pedaily.cn/202604/562614.shtml",
-              "source_title": "生数科技完成近20亿元B轮融资，阿里云领投",
-              "source_content_hash": "a281cc701a9028fb",
-              "quote": "星连资本、达泰资本、建发新兴投资、BV百度风投、卓源亚洲等原有股东持续追加投资",
-              "quote_hash": "f35899115b693a02a891df90bd23087e3313109be82ae0066df26adecfb5827b"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-a314fb07a28e3106",
-          "funding_insight_id": "FI-474a441598e62f93",
-          "event_ids": [
-            "EV-622ebdad1e1fad2d",
-            "EV-535c2f4fb851332d"
-          ],
-          "company_entity_id": "EN-9b21c9bf3305c0d6",
-          "company_canonical_entity_id": "EN-9b21c9bf3305c0d6",
-          "company_name": "生数科技",
-          "round": "A+轮",
-          "round_code": "series_a_plus",
-          "round_original": "A+轮",
-          "amount_original": "6亿元人民币",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 600000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "6 亿元"
-          },
-          "announced_at": "2026-02-05",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮领投",
-          "role_code": "lead",
-          "evidence": [
-            {
-              "source_id": "FISRC-4177e5ca07c921a5",
-              "source_url": "https://news.pedaily.cn/202602/560802.shtml",
-              "source_title": "重构AI在数字和物理世界的生产力，生数科技完成超6亿元A+轮融资",
-              "source_content_hash": "22fd0b6b2709ea7b",
-              "quote": "本轮融资由 中关村科学城公司和星连资本 领投",
-              "quote_hash": "6d1cbcf2aa8a47a0b5abc4725a927f5a4880b7092a67ef2a1056257ceed9d578"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-75f2758fb9aa9e2d",
-          "source_url": "https://news.pedaily.cn/202609/568814.shtml",
-          "source_title": "九章智电完成首轮数千万战略融资，深耕AI+电力交易赛道",
-          "source_content_hash": "8d613e8630b21904",
-          "quote": "本轮由 中金资本旗下基金 领投， 星连资本、京成燕北 共同跟投。",
-          "quote_hash": "cf6a2ae7b72f7486fc9eec0f77f5eb7d3abf93e13129d33fd983728af2fd81dd"
-        },
-        {
-          "source_id": "FISRC-8f70de35939e4c3c",
-          "source_url": "https://36kr.com/p/3919025939246727?f=rss",
-          "source_title": "让Agent在协作中自进化，清华00后博士获千万元融资 | 36氪首发",
-          "source_content_hash": "ef1aa49772b166b7",
-          "quote": "由星连资本与水木创投联合领投",
-          "quote_hash": "ff1f4783d3bc8be27fc116fc21e2151f37466eb523e6f47974ecf93878c3cab5"
-        },
-        {
-          "source_id": "FISRC-0a40102abd985684",
-          "source_url": "https://news.pedaily.cn/202605/564126.shtml",
-          "source_title": "趋境科技完成数亿元Pre-A轮融资，加速建设高品质AI Token生产基础设施_投资界",
-          "source_content_hash": "0ed32dd4d2b1a439",
-          "quote": "本轮融资由 星连资本与华控科技联合领投，弘晖资本、天壕能源、尚势资本、天津仁爱弘盛、杭州福成 等机构跟投，老股东 高瓴创投（GL Ventures） 持续加注。",
-          "quote_hash": "7f3312a250a9bb0429e31afd20808ce3652b5d3b5cd8c9724ddf67ed16fad278"
-        },
-        {
-          "source_id": "FISRC-fd865802af815ab3",
-          "source_url": "https://news.pedaily.cn/202604/562614.shtml",
-          "source_title": "生数科技完成近20亿元B轮融资，阿里云领投",
-          "source_content_hash": "a281cc701a9028fb",
-          "quote": "星连资本、达泰资本、建发新兴投资、BV百度风投、卓源亚洲等原有股东持续追加投资",
-          "quote_hash": "f35899115b693a02a891df90bd23087e3313109be82ae0066df26adecfb5827b"
-        },
-        {
-          "source_id": "FISRC-4177e5ca07c921a5",
-          "source_url": "https://news.pedaily.cn/202602/560802.shtml",
-          "source_title": "重构AI在数字和物理世界的生产力，生数科技完成超6亿元A+轮融资",
-          "source_content_hash": "22fd0b6b2709ea7b",
-          "quote": "本轮融资由 中关村科学城公司和星连资本 领投",
-          "quote_hash": "6d1cbcf2aa8a47a0b5abc4725a927f5a4880b7092a67ef2a1056257ceed9d578"
         }
       ]
     },
@@ -24169,6 +24277,498 @@
           "source_content_hash": "27fac1d61d267f2c",
           "quote": "Sequoia led the seed round for n8n in 2020; Felicis the Series A in 2021.",
           "quote_hash": "f3411a3d81225e862fd180c9eb64915b2b7e5d236423228eec433bf8bffbee5c"
+        }
+      ]
+    },
+    {
+      "id": "INV-581465289348eb",
+      "name": "IDG资本",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 4,
+      "historical_or_ambiguous_count": 5,
+      "portfolio_company_count": 4,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 4,
+      "china_market_company_count": 4,
+      "first_disclosed_at": "2024-09-12",
+      "latest_disclosed_at": "2026-09-16",
+      "role_counts": {
+        "co_lead": 1,
+        "historical_or_ambiguous": 5,
+        "lead": 1,
+        "participant": 2
+      },
+      "round_codes": [
+        "angel_plus",
+        "first_external",
+        "strategic"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-d817dfb0312f7af0",
+          "canonical_entity_id": "",
+          "name": "超衍智能"
+        },
+        {
+          "entity_id": "EN-a43f157d208b2a63",
+          "canonical_entity_id": "EN-a43f157d208b2a63",
+          "name": "开物纪"
+        },
+        {
+          "entity_id": "EN-9a970ad7900121db",
+          "canonical_entity_id": "EN-9a970ad7900121db",
+          "name": "小鹏机器人业务"
+        },
+        {
+          "entity_id": "EN-6f7ac1823da81d2e",
+          "canonical_entity_id": "EN-6f7ac1823da81d2e",
+          "name": "DeepSeek"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-5f2478b2dcc87864",
+          "funding_insight_id": "FI-1dc1b9eef411e165",
+          "event_ids": [
+            "EV-f70e34d7f7d5769a"
+          ],
+          "company_entity_id": "EN-d817dfb0312f7af0",
+          "company_canonical_entity_id": "",
+          "company_name": "超衍智能",
+          "round": "天使+轮",
+          "round_code": "angel_plus",
+          "round_original": "天使+轮",
+          "amount_original": "近4亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 400000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 4 亿元"
+          },
+          "announced_at": "2026-09-16",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-55d8269584f9e05b",
+              "source_url": "https://news.pedaily.cn/202609/569092.shtml",
+              "source_title": "超衍智能完成近4亿元天使系列融资，构建自进化基础大模型",
+              "source_content_hash": "c56b4d99a50bca6f",
+              "quote": "天使轮由 IDG 资本、星连资本、晶泰科技联合领投",
+              "quote_hash": "12bcaabed611233e823f1962f4230bec1881ab50d9829cf88fb059a0a4e4e661"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-14519fdd0cc3b0f9",
+          "funding_insight_id": "FI-e3406c2e889004e3",
+          "event_ids": [
+            "EV-987cb2e5e20f79ce"
+          ],
+          "company_entity_id": "EN-9a970ad7900121db",
+          "company_canonical_entity_id": "EN-9a970ad7900121db",
+          "company_name": "小鹏机器人业务",
+          "round": "战略融资",
+          "round_code": "strategic",
+          "round_original": "战略融资",
+          "amount_original": "9亿美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 900000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "9 亿美元"
+          },
+          "announced_at": "2026-08-24",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮领投",
+          "role_code": "lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-2ec9a5e83ce18f75",
+              "source_url": "https://www.xiaopeng.com/news/company_news/5585.html",
+              "source_title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
+              "source_content_hash": "b8e4f0b869df00ee",
+              "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持。",
+              "quote_hash": "4e355e2322abcda0bc4a3d5a3e5d29c70f9c739e2e601e6eae9f49ef4b9e6765"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-2f46bb6eadc1dc37",
+          "funding_insight_id": "FI-f7342735e68375d9",
+          "event_ids": [
+            "EV-a16d0d2a76e8d4a6",
+            "EV-6ca567f6e80c36c5"
+          ],
+          "company_entity_id": "EN-bbc41366a5a7cf78",
+          "company_canonical_entity_id": "EN-bbc41366a5a7cf78",
+          "company_name": "星动纪元",
+          "round": "轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "新一轮",
+          "amount_original": "10亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 1000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "10 亿元"
+          },
+          "announced_at": "2026-07-06",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "partially_disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "2026年4月新一轮参投",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-8c073d38e1f34758",
+              "source_url": "https://news.pedaily.cn/202607/565883.shtml",
+              "source_title": "首发| 星动纪元两个月融资25亿，国资组团入场 - 投资界",
+              "source_content_hash": "38b0d26a979c4a8e",
+              "quote": "顺丰集团领投，红杉中国、IDG资本等头部机构联合加注",
+              "quote_hash": "a52dcbacf49d2fc2c581a167fb6a7d967ec8cd14a5ff9b9fa76418934d13adbf"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-3e557b0bed7f928f",
+          "funding_insight_id": "FI-71c58a10a93101c8",
+          "event_ids": [
+            "EV-d4d7b019ff0015df",
+            "EV-f8c3a83d883c9b22"
+          ],
+          "company_entity_id": "EN-6f7ac1823da81d2e",
+          "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+          "company_name": "DeepSeek",
+          "round": "首次外部融资",
+          "round_code": "first_external",
+          "round_original": "首次外部融资轮",
+          "amount_original": "约74亿美元（约500亿元人民币）",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 7400000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 74 亿美元"
+          },
+          "announced_at": "2026-06-03",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-d2c8c841370ed82a",
+              "source_url": "https://ashareinsights.com/deepseek-7-billion-funding-term-sheet-control/",
+              "source_title": "DeepSeek's $7.4B Term Sheet: Founder Control, Decoded",
+              "source_content_hash": "1a156474d760e02b",
+              "quote": "JD.com and IDG ​¥3B each",
+              "quote_hash": "79fea3f1302cad58d43e8de7957cc941552e4f021617eeaaf5ba9f94ea1deb3b"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-bf34ea0a6a77688f",
+          "funding_insight_id": "FI-66e7dd713fc6bab5",
+          "event_ids": [
+            "EV-0ff10475efa53e6c",
+            "EV-435d7e7878b0c326"
+          ],
+          "company_entity_id": "EN-a6e5382c05dd0d16",
+          "company_canonical_entity_id": "EN-a6e5382c05dd0d16",
+          "company_name": "星海图",
+          "round": "B+轮",
+          "round_code": "series_b_plus",
+          "round_original": "B+轮",
+          "amount_original": "20亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 2000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "20 亿元"
+          },
+          "announced_at": "2026-04-02",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "历史轮次投资方",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-7a614400d44a7041",
+              "source_url": "https://news.pedaily.cn/202604/562366.shtml",
+              "source_title": "星海图又融资20亿，估值200亿",
+              "source_content_hash": "05d5afb79601a323",
+              "quote": "刚成立两个月，星海图便完成天使轮融资第 一轮交割，此后更是融资凶猛，引进了IDG资本、BV百度风投、无限基金SEE FUND、金沙江创投、七熹投资、高瓴创投、蚂蚁集团领投，米哈游、无锡创投集团、同歌创投、Funplus等投资方。",
+              "quote_hash": "fac951d83a7cfd8a58b1002e9267b5f5f4a3f2bf569294b5cda68728ae766a7b"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-9da5b9b149930bd9",
+          "funding_insight_id": "FI-815e0d2563a8b10f",
+          "event_ids": [
+            "EV-9832526435c1695e"
+          ],
+          "company_entity_id": "EN-a43f157d208b2a63",
+          "company_canonical_entity_id": "EN-a43f157d208b2a63",
+          "company_name": "开物纪",
+          "round": "天使+轮",
+          "round_code": "angel_plus",
+          "round_original": "天使+轮",
+          "amount_original": "数亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 200000000,
+            "max_value": 900000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "2 亿元–9 亿元"
+          },
+          "announced_at": "2026-03-24",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-3d10ec9bd5ef3ad4",
+              "source_url": "https://news.pedaily.cn/202603/562002.shtml",
+              "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
+              "source_content_hash": "d5d8d61ad1133bc1",
+              "quote": "本轮由 Monolith 领投，光合创投、集富亚洲跟投，高瓴创投、IDG资本、蓝驰创投、BV百度风投、L2F光源创业者基金等老股东超额加注。",
+              "quote_hash": "78ea609acc567b7782bb8c165d17ae0c27669ca0818891be37f22b3646bd833d"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-9413a15a4fe260a4",
+          "funding_insight_id": "FI-815e0d2563a8b10f",
+          "event_ids": [
+            "EV-9832526435c1695e"
+          ],
+          "company_entity_id": "EN-a43f157d208b2a63",
+          "company_canonical_entity_id": "EN-a43f157d208b2a63",
+          "company_name": "开物纪",
+          "round": "天使+轮",
+          "round_code": "angel_plus",
+          "round_original": "天使+轮",
+          "amount_original": "数亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 200000000,
+            "max_value": 900000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "2 亿元–9 亿元"
+          },
+          "announced_at": "2026-03-24",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "天使轮联合领投",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-3d10ec9bd5ef3ad4",
+              "source_url": "https://news.pedaily.cn/202603/562002.shtml",
+              "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
+              "source_content_hash": "d5d8d61ad1133bc1",
+              "quote": "去年11月，开物纪宣布完成亿元级天使轮融资，由IDG 资本、蓝驰创投联合领投，BV 百度风投、L2F 光源创业者基金、高瓴创投跟投。",
+              "quote_hash": "1a07a5654a5c0fbf95500d5959cc1a274fc6fa02dd4be49d7e633b8899deecda"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-14ec4fcee5aff540",
+          "funding_insight_id": "FI-d5293ab06cfaa935",
+          "event_ids": [
+            "EV-371bc68f72326c02"
+          ],
+          "company_entity_id": "EN-a6e5382c05dd0d16",
+          "company_canonical_entity_id": "EN-a6e5382c05dd0d16",
+          "company_name": "星海图",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "10亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 1000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "10 亿元"
+          },
+          "announced_at": "2026-02-11",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "天使轮领投",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-2707f48aa6e437b7",
+              "source_url": "https://news.pedaily.cn/202602/560956.shtml",
+              "source_title": "清华90后带队，刚刚星海图又融10亿",
+              "source_content_hash": "85e4d40faa23c515",
+              "quote": "2024年1月，天使轮第二轮融资千万美金，由IDG资本领投，BV百度风投、无限基金SEE FUND、金沙江创投、七熹投资跟投",
+              "quote_hash": "b6fdaa3f5a6c2e7d233c56ea352f73c00c806e8f3dc89f2497f13ad46b24688e"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-7fa1ddb302c0b378",
+          "funding_insight_id": "FI-17403f62777b52b5",
+          "event_ids": [
+            "EV-7a44a47bf36780d2"
+          ],
+          "company_entity_id": "EN-721eb3fd31f8e1f6",
+          "company_canonical_entity_id": "EN-721eb3fd31f8e1f6",
+          "company_name": "壁仞科技",
+          "round": "多轮融资",
+          "round_code": "multi_round",
+          "round_original": "多轮融资",
+          "amount_original": "超过50亿元人民币",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 5000000000,
+            "min_value": 5000000000,
+            "max_value": null,
+            "unit": "base",
+            "status": "lower_bound",
+            "display_zh": "超过 50 亿元"
+          },
+          "announced_at": "2024-09-12",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "A轮领投",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-081c8476182d3ff7",
+              "source_url": "https://36kr.com/p/753999774079237",
+              "source_title": "最前线 | 成立九个月后，壁仞科技创完成11亿元A轮融资-36氪",
+              "source_content_hash": "48f7a6ff96b731e7",
+              "quote": "本轮融资由启明创投、IDG资本及华登国际中国基金领投",
+              "quote_hash": "29ea1383a7fbf4bad7e708fabb6a5e64030ba91561056c9f6110361ad5061f3b"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-55d8269584f9e05b",
+          "source_url": "https://news.pedaily.cn/202609/569092.shtml",
+          "source_title": "超衍智能完成近4亿元天使系列融资，构建自进化基础大模型",
+          "source_content_hash": "c56b4d99a50bca6f",
+          "quote": "天使轮由 IDG 资本、星连资本、晶泰科技联合领投",
+          "quote_hash": "12bcaabed611233e823f1962f4230bec1881ab50d9829cf88fb059a0a4e4e661"
+        },
+        {
+          "source_id": "FISRC-2ec9a5e83ce18f75",
+          "source_url": "https://www.xiaopeng.com/news/company_news/5585.html",
+          "source_title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
+          "source_content_hash": "b8e4f0b869df00ee",
+          "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持。",
+          "quote_hash": "4e355e2322abcda0bc4a3d5a3e5d29c70f9c739e2e601e6eae9f49ef4b9e6765"
+        },
+        {
+          "source_id": "FISRC-8c073d38e1f34758",
+          "source_url": "https://news.pedaily.cn/202607/565883.shtml",
+          "source_title": "首发| 星动纪元两个月融资25亿，国资组团入场 - 投资界",
+          "source_content_hash": "38b0d26a979c4a8e",
+          "quote": "顺丰集团领投，红杉中国、IDG资本等头部机构联合加注",
+          "quote_hash": "a52dcbacf49d2fc2c581a167fb6a7d967ec8cd14a5ff9b9fa76418934d13adbf"
+        },
+        {
+          "source_id": "FISRC-d2c8c841370ed82a",
+          "source_url": "https://ashareinsights.com/deepseek-7-billion-funding-term-sheet-control/",
+          "source_title": "DeepSeek's $7.4B Term Sheet: Founder Control, Decoded",
+          "source_content_hash": "1a156474d760e02b",
+          "quote": "JD.com and IDG ​¥3B each",
+          "quote_hash": "79fea3f1302cad58d43e8de7957cc941552e4f021617eeaaf5ba9f94ea1deb3b"
+        },
+        {
+          "source_id": "FISRC-7a614400d44a7041",
+          "source_url": "https://news.pedaily.cn/202604/562366.shtml",
+          "source_title": "星海图又融资20亿，估值200亿",
+          "source_content_hash": "05d5afb79601a323",
+          "quote": "刚成立两个月，星海图便完成天使轮融资第 一轮交割，此后更是融资凶猛，引进了IDG资本、BV百度风投、无限基金SEE FUND、金沙江创投、七熹投资、高瓴创投、蚂蚁集团领投，米哈游、无锡创投集团、同歌创投、Funplus等投资方。",
+          "quote_hash": "fac951d83a7cfd8a58b1002e9267b5f5f4a3f2bf569294b5cda68728ae766a7b"
+        },
+        {
+          "source_id": "FISRC-3d10ec9bd5ef3ad4",
+          "source_url": "https://news.pedaily.cn/202603/562002.shtml",
+          "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
+          "source_content_hash": "d5d8d61ad1133bc1",
+          "quote": "本轮由 Monolith 领投，光合创投、集富亚洲跟投，高瓴创投、IDG资本、蓝驰创投、BV百度风投、L2F光源创业者基金等老股东超额加注。",
+          "quote_hash": "78ea609acc567b7782bb8c165d17ae0c27669ca0818891be37f22b3646bd833d"
+        },
+        {
+          "source_id": "FISRC-3d10ec9bd5ef3ad4",
+          "source_url": "https://news.pedaily.cn/202603/562002.shtml",
+          "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
+          "source_content_hash": "d5d8d61ad1133bc1",
+          "quote": "去年11月，开物纪宣布完成亿元级天使轮融资，由IDG 资本、蓝驰创投联合领投，BV 百度风投、L2F 光源创业者基金、高瓴创投跟投。",
+          "quote_hash": "1a07a5654a5c0fbf95500d5959cc1a274fc6fa02dd4be49d7e633b8899deecda"
+        },
+        {
+          "source_id": "FISRC-2707f48aa6e437b7",
+          "source_url": "https://news.pedaily.cn/202602/560956.shtml",
+          "source_title": "清华90后带队，刚刚星海图又融10亿",
+          "source_content_hash": "85e4d40faa23c515",
+          "quote": "2024年1月，天使轮第二轮融资千万美金，由IDG资本领投，BV百度风投、无限基金SEE FUND、金沙江创投、七熹投资跟投",
+          "quote_hash": "b6fdaa3f5a6c2e7d233c56ea352f73c00c806e8f3dc89f2497f13ad46b24688e"
+        },
+        {
+          "source_id": "FISRC-081c8476182d3ff7",
+          "source_url": "https://36kr.com/p/753999774079237",
+          "source_title": "最前线 | 成立九个月后，壁仞科技创完成11亿元A轮融资-36氪",
+          "source_content_hash": "48f7a6ff96b731e7",
+          "quote": "本轮融资由启明创投、IDG资本及华登国际中国基金领投",
+          "quote_hash": "29ea1383a7fbf4bad7e708fabb6a5e64030ba91561056c9f6110361ad5061f3b"
         }
       ]
     },
@@ -39867,444 +40467,6 @@
       ]
     },
     {
-      "id": "INV-581465289348eb",
-      "name": "IDG资本",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "unverified_investor",
-      "investor_kind_label": "投资方（类型待核验）",
-      "classification_confidence": "unverified",
-      "collection_status": "evidence_backed",
-      "current_round_count": 3,
-      "historical_or_ambiguous_count": 5,
-      "portfolio_company_count": 3,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 3,
-      "china_market_company_count": 3,
-      "first_disclosed_at": "2024-09-12",
-      "latest_disclosed_at": "2026-08-24",
-      "role_counts": {
-        "historical_or_ambiguous": 5,
-        "lead": 1,
-        "participant": 2
-      },
-      "round_codes": [
-        "angel_plus",
-        "first_external",
-        "strategic"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-a43f157d208b2a63",
-          "canonical_entity_id": "EN-a43f157d208b2a63",
-          "name": "开物纪"
-        },
-        {
-          "entity_id": "EN-9a970ad7900121db",
-          "canonical_entity_id": "EN-9a970ad7900121db",
-          "name": "小鹏机器人业务"
-        },
-        {
-          "entity_id": "EN-6f7ac1823da81d2e",
-          "canonical_entity_id": "EN-6f7ac1823da81d2e",
-          "name": "DeepSeek"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-14519fdd0cc3b0f9",
-          "funding_insight_id": "FI-e3406c2e889004e3",
-          "event_ids": [
-            "EV-987cb2e5e20f79ce"
-          ],
-          "company_entity_id": "EN-9a970ad7900121db",
-          "company_canonical_entity_id": "EN-9a970ad7900121db",
-          "company_name": "小鹏机器人业务",
-          "round": "战略融资",
-          "round_code": "strategic",
-          "round_original": "战略融资",
-          "amount_original": "9亿美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 900000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "9 亿美元"
-          },
-          "announced_at": "2026-08-24",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮领投",
-          "role_code": "lead",
-          "evidence": [
-            {
-              "source_id": "FISRC-2ec9a5e83ce18f75",
-              "source_url": "https://www.xiaopeng.com/news/company_news/5585.html",
-              "source_title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
-              "source_content_hash": "b8e4f0b869df00ee",
-              "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持。",
-              "quote_hash": "4e355e2322abcda0bc4a3d5a3e5d29c70f9c739e2e601e6eae9f49ef4b9e6765"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-2f46bb6eadc1dc37",
-          "funding_insight_id": "FI-f7342735e68375d9",
-          "event_ids": [
-            "EV-a16d0d2a76e8d4a6",
-            "EV-6ca567f6e80c36c5"
-          ],
-          "company_entity_id": "EN-bbc41366a5a7cf78",
-          "company_canonical_entity_id": "EN-bbc41366a5a7cf78",
-          "company_name": "星动纪元",
-          "round": "轮次未披露",
-          "round_code": "undisclosed",
-          "round_original": "新一轮",
-          "amount_original": "10亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 1000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "10 亿元"
-          },
-          "announced_at": "2026-07-06",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "partially_disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "2026年4月新一轮参投",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-8c073d38e1f34758",
-              "source_url": "https://news.pedaily.cn/202607/565883.shtml",
-              "source_title": "首发| 星动纪元两个月融资25亿，国资组团入场 - 投资界",
-              "source_content_hash": "38b0d26a979c4a8e",
-              "quote": "顺丰集团领投，红杉中国、IDG资本等头部机构联合加注",
-              "quote_hash": "a52dcbacf49d2fc2c581a167fb6a7d967ec8cd14a5ff9b9fa76418934d13adbf"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-3e557b0bed7f928f",
-          "funding_insight_id": "FI-71c58a10a93101c8",
-          "event_ids": [
-            "EV-d4d7b019ff0015df",
-            "EV-f8c3a83d883c9b22"
-          ],
-          "company_entity_id": "EN-6f7ac1823da81d2e",
-          "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
-          "company_name": "DeepSeek",
-          "round": "首次外部融资",
-          "round_code": "first_external",
-          "round_original": "首次外部融资轮",
-          "amount_original": "约74亿美元（约500亿元人民币）",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 7400000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "approximate",
-            "display_zh": "约 74 亿美元"
-          },
-          "announced_at": "2026-06-03",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-d2c8c841370ed82a",
-              "source_url": "https://ashareinsights.com/deepseek-7-billion-funding-term-sheet-control/",
-              "source_title": "DeepSeek's $7.4B Term Sheet: Founder Control, Decoded",
-              "source_content_hash": "1a156474d760e02b",
-              "quote": "JD.com and IDG ​¥3B each",
-              "quote_hash": "79fea3f1302cad58d43e8de7957cc941552e4f021617eeaaf5ba9f94ea1deb3b"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-bf34ea0a6a77688f",
-          "funding_insight_id": "FI-66e7dd713fc6bab5",
-          "event_ids": [
-            "EV-0ff10475efa53e6c",
-            "EV-435d7e7878b0c326"
-          ],
-          "company_entity_id": "EN-a6e5382c05dd0d16",
-          "company_canonical_entity_id": "EN-a6e5382c05dd0d16",
-          "company_name": "星海图",
-          "round": "B+轮",
-          "round_code": "series_b_plus",
-          "round_original": "B+轮",
-          "amount_original": "20亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 2000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "20 亿元"
-          },
-          "announced_at": "2026-04-02",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "历史轮次投资方",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-7a614400d44a7041",
-              "source_url": "https://news.pedaily.cn/202604/562366.shtml",
-              "source_title": "星海图又融资20亿，估值200亿",
-              "source_content_hash": "05d5afb79601a323",
-              "quote": "刚成立两个月，星海图便完成天使轮融资第 一轮交割，此后更是融资凶猛，引进了IDG资本、BV百度风投、无限基金SEE FUND、金沙江创投、七熹投资、高瓴创投、蚂蚁集团领投，米哈游、无锡创投集团、同歌创投、Funplus等投资方。",
-              "quote_hash": "fac951d83a7cfd8a58b1002e9267b5f5f4a3f2bf569294b5cda68728ae766a7b"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-9da5b9b149930bd9",
-          "funding_insight_id": "FI-815e0d2563a8b10f",
-          "event_ids": [
-            "EV-9832526435c1695e"
-          ],
-          "company_entity_id": "EN-a43f157d208b2a63",
-          "company_canonical_entity_id": "EN-a43f157d208b2a63",
-          "company_name": "开物纪",
-          "round": "天使+轮",
-          "round_code": "angel_plus",
-          "round_original": "天使+轮",
-          "amount_original": "数亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": null,
-            "min_value": 200000000,
-            "max_value": 900000000,
-            "unit": "base",
-            "status": "range",
-            "display_zh": "2 亿元–9 亿元"
-          },
-          "announced_at": "2026-03-24",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-3d10ec9bd5ef3ad4",
-              "source_url": "https://news.pedaily.cn/202603/562002.shtml",
-              "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
-              "source_content_hash": "d5d8d61ad1133bc1",
-              "quote": "本轮由 Monolith 领投，光合创投、集富亚洲跟投，高瓴创投、IDG资本、蓝驰创投、BV百度风投、L2F光源创业者基金等老股东超额加注。",
-              "quote_hash": "78ea609acc567b7782bb8c165d17ae0c27669ca0818891be37f22b3646bd833d"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-9413a15a4fe260a4",
-          "funding_insight_id": "FI-815e0d2563a8b10f",
-          "event_ids": [
-            "EV-9832526435c1695e"
-          ],
-          "company_entity_id": "EN-a43f157d208b2a63",
-          "company_canonical_entity_id": "EN-a43f157d208b2a63",
-          "company_name": "开物纪",
-          "round": "天使+轮",
-          "round_code": "angel_plus",
-          "round_original": "天使+轮",
-          "amount_original": "数亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": null,
-            "min_value": 200000000,
-            "max_value": 900000000,
-            "unit": "base",
-            "status": "range",
-            "display_zh": "2 亿元–9 亿元"
-          },
-          "announced_at": "2026-03-24",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "天使轮联合领投",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-3d10ec9bd5ef3ad4",
-              "source_url": "https://news.pedaily.cn/202603/562002.shtml",
-              "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
-              "source_content_hash": "d5d8d61ad1133bc1",
-              "quote": "去年11月，开物纪宣布完成亿元级天使轮融资，由IDG 资本、蓝驰创投联合领投，BV 百度风投、L2F 光源创业者基金、高瓴创投跟投。",
-              "quote_hash": "1a07a5654a5c0fbf95500d5959cc1a274fc6fa02dd4be49d7e633b8899deecda"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-14ec4fcee5aff540",
-          "funding_insight_id": "FI-d5293ab06cfaa935",
-          "event_ids": [
-            "EV-371bc68f72326c02"
-          ],
-          "company_entity_id": "EN-a6e5382c05dd0d16",
-          "company_canonical_entity_id": "EN-a6e5382c05dd0d16",
-          "company_name": "星海图",
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "B轮",
-          "amount_original": "10亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 1000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "10 亿元"
-          },
-          "announced_at": "2026-02-11",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "天使轮领投",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-2707f48aa6e437b7",
-              "source_url": "https://news.pedaily.cn/202602/560956.shtml",
-              "source_title": "清华90后带队，刚刚星海图又融10亿",
-              "source_content_hash": "85e4d40faa23c515",
-              "quote": "2024年1月，天使轮第二轮融资千万美金，由IDG资本领投，BV百度风投、无限基金SEE FUND、金沙江创投、七熹投资跟投",
-              "quote_hash": "b6fdaa3f5a6c2e7d233c56ea352f73c00c806e8f3dc89f2497f13ad46b24688e"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-7fa1ddb302c0b378",
-          "funding_insight_id": "FI-17403f62777b52b5",
-          "event_ids": [
-            "EV-7a44a47bf36780d2"
-          ],
-          "company_entity_id": "EN-721eb3fd31f8e1f6",
-          "company_canonical_entity_id": "EN-721eb3fd31f8e1f6",
-          "company_name": "壁仞科技",
-          "round": "多轮融资",
-          "round_code": "multi_round",
-          "round_original": "多轮融资",
-          "amount_original": "超过50亿元人民币",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 5000000000,
-            "min_value": 5000000000,
-            "max_value": null,
-            "unit": "base",
-            "status": "lower_bound",
-            "display_zh": "超过 50 亿元"
-          },
-          "announced_at": "2024-09-12",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "A轮领投",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-081c8476182d3ff7",
-              "source_url": "https://36kr.com/p/753999774079237",
-              "source_title": "最前线 | 成立九个月后，壁仞科技创完成11亿元A轮融资-36氪",
-              "source_content_hash": "48f7a6ff96b731e7",
-              "quote": "本轮融资由启明创投、IDG资本及华登国际中国基金领投",
-              "quote_hash": "29ea1383a7fbf4bad7e708fabb6a5e64030ba91561056c9f6110361ad5061f3b"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-2ec9a5e83ce18f75",
-          "source_url": "https://www.xiaopeng.com/news/company_news/5585.html",
-          "source_title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
-          "source_content_hash": "b8e4f0b869df00ee",
-          "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持。",
-          "quote_hash": "4e355e2322abcda0bc4a3d5a3e5d29c70f9c739e2e601e6eae9f49ef4b9e6765"
-        },
-        {
-          "source_id": "FISRC-8c073d38e1f34758",
-          "source_url": "https://news.pedaily.cn/202607/565883.shtml",
-          "source_title": "首发| 星动纪元两个月融资25亿，国资组团入场 - 投资界",
-          "source_content_hash": "38b0d26a979c4a8e",
-          "quote": "顺丰集团领投，红杉中国、IDG资本等头部机构联合加注",
-          "quote_hash": "a52dcbacf49d2fc2c581a167fb6a7d967ec8cd14a5ff9b9fa76418934d13adbf"
-        },
-        {
-          "source_id": "FISRC-d2c8c841370ed82a",
-          "source_url": "https://ashareinsights.com/deepseek-7-billion-funding-term-sheet-control/",
-          "source_title": "DeepSeek's $7.4B Term Sheet: Founder Control, Decoded",
-          "source_content_hash": "1a156474d760e02b",
-          "quote": "JD.com and IDG ​¥3B each",
-          "quote_hash": "79fea3f1302cad58d43e8de7957cc941552e4f021617eeaaf5ba9f94ea1deb3b"
-        },
-        {
-          "source_id": "FISRC-7a614400d44a7041",
-          "source_url": "https://news.pedaily.cn/202604/562366.shtml",
-          "source_title": "星海图又融资20亿，估值200亿",
-          "source_content_hash": "05d5afb79601a323",
-          "quote": "刚成立两个月，星海图便完成天使轮融资第 一轮交割，此后更是融资凶猛，引进了IDG资本、BV百度风投、无限基金SEE FUND、金沙江创投、七熹投资、高瓴创投、蚂蚁集团领投，米哈游、无锡创投集团、同歌创投、Funplus等投资方。",
-          "quote_hash": "fac951d83a7cfd8a58b1002e9267b5f5f4a3f2bf569294b5cda68728ae766a7b"
-        },
-        {
-          "source_id": "FISRC-3d10ec9bd5ef3ad4",
-          "source_url": "https://news.pedaily.cn/202603/562002.shtml",
-          "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
-          "source_content_hash": "d5d8d61ad1133bc1",
-          "quote": "本轮由 Monolith 领投，光合创投、集富亚洲跟投，高瓴创投、IDG资本、蓝驰创投、BV百度风投、L2F光源创业者基金等老股东超额加注。",
-          "quote_hash": "78ea609acc567b7782bb8c165d17ae0c27669ca0818891be37f22b3646bd833d"
-        },
-        {
-          "source_id": "FISRC-3d10ec9bd5ef3ad4",
-          "source_url": "https://news.pedaily.cn/202603/562002.shtml",
-          "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
-          "source_content_hash": "d5d8d61ad1133bc1",
-          "quote": "去年11月，开物纪宣布完成亿元级天使轮融资，由IDG 资本、蓝驰创投联合领投，BV 百度风投、L2F 光源创业者基金、高瓴创投跟投。",
-          "quote_hash": "1a07a5654a5c0fbf95500d5959cc1a274fc6fa02dd4be49d7e633b8899deecda"
-        },
-        {
-          "source_id": "FISRC-2707f48aa6e437b7",
-          "source_url": "https://news.pedaily.cn/202602/560956.shtml",
-          "source_title": "清华90后带队，刚刚星海图又融10亿",
-          "source_content_hash": "85e4d40faa23c515",
-          "quote": "2024年1月，天使轮第二轮融资千万美金，由IDG资本领投，BV百度风投、无限基金SEE FUND、金沙江创投、七熹投资跟投",
-          "quote_hash": "b6fdaa3f5a6c2e7d233c56ea352f73c00c806e8f3dc89f2497f13ad46b24688e"
-        },
-        {
-          "source_id": "FISRC-081c8476182d3ff7",
-          "source_url": "https://36kr.com/p/753999774079237",
-          "source_title": "最前线 | 成立九个月后，壁仞科技创完成11亿元A轮融资-36氪",
-          "source_content_hash": "48f7a6ff96b731e7",
-          "quote": "本轮融资由启明创投、IDG资本及华登国际中国基金领投",
-          "quote_hash": "29ea1383a7fbf4bad7e708fabb6a5e64030ba91561056c9f6110361ad5061f3b"
-        }
-      ]
-    },
-    {
       "id": "INV-b92b24e064ec0c",
       "name": "NFX",
       "aliases": [],
@@ -49093,6 +49255,523 @@
           "source_content_hash": "22fd0b6b2709ea7b",
           "quote": "原有股东 启明创投、北京市人工智能产业投资基金、卓源亚洲、建发新兴投资、淮海投资等 投资人加码跟投",
           "quote_hash": "4d881e2d381f26fec2c7ab029dbb700555c10c98ea6d02f4540dc9ddde177ebe"
+        }
+      ]
+    },
+    {
+      "id": "INV-3fe27f1ac27534",
+      "name": "初心资本",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 2,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 2,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 2,
+      "china_market_company_count": 2,
+      "first_disclosed_at": "2026-07-10",
+      "latest_disclosed_at": "2026-09-16",
+      "role_counts": {
+        "co_lead": 1,
+        "participant": 1
+      },
+      "round_codes": [
+        "angel",
+        "angel_plus"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-d817dfb0312f7af0",
+          "canonical_entity_id": "",
+          "name": "超衍智能"
+        },
+        {
+          "entity_id": "EN-73424822d4b99926",
+          "canonical_entity_id": "EN-73424822d4b99926",
+          "name": "无界智航"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-6e5690e2024ff180",
+          "funding_insight_id": "FI-1dc1b9eef411e165",
+          "event_ids": [
+            "EV-f70e34d7f7d5769a"
+          ],
+          "company_entity_id": "EN-d817dfb0312f7af0",
+          "company_canonical_entity_id": "",
+          "company_name": "超衍智能",
+          "round": "天使+轮",
+          "round_code": "angel_plus",
+          "round_original": "天使+轮",
+          "amount_original": "近4亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 400000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 4 亿元"
+          },
+          "announced_at": "2026-09-16",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-55d8269584f9e05b",
+              "source_url": "https://news.pedaily.cn/202609/569092.shtml",
+              "source_title": "超衍智能完成近4亿元天使系列融资，构建自进化基础大模型",
+              "source_content_hash": "c56b4d99a50bca6f",
+              "quote": "德迅资本、无限基金、初心资本、云岫资本跟投",
+              "quote_hash": "298d832430feb0d2a1fb8cb9f23ce009310c3f24dbd920165e58902d64f35228"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-8ee3638b86621933",
+          "funding_insight_id": "FI-ecf60585ee9f9f71",
+          "event_ids": [
+            "EV-34a9773ebd5bbc97"
+          ],
+          "company_entity_id": "EN-73424822d4b99926",
+          "company_canonical_entity_id": "EN-73424822d4b99926",
+          "company_name": "无界智航",
+          "round": "天使轮",
+          "round_code": "angel",
+          "round_original": "天使轮",
+          "amount_original": "近亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 100000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 1 亿元"
+          },
+          "announced_at": "2026-07-10",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-086ff36dfb7673e8",
+              "source_url": "https://news.pedaily.cn/202607/566101.shtml",
+              "source_title": "Xspark AI「无界智航」完成近亿元天使轮融资，加速Physical AI规模化落地",
+              "source_content_hash": "d9771ea116d57f70",
+              "quote": "本轮融资由鼎晖VGC、初心资本、SEE Fund 无限基金联合领投",
+              "quote_hash": "d688d5d09fb7cb0f4140acb0a2e6afb3c7d9bd774ae068a653d5ba7df53e9f3d"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-55d8269584f9e05b",
+          "source_url": "https://news.pedaily.cn/202609/569092.shtml",
+          "source_title": "超衍智能完成近4亿元天使系列融资，构建自进化基础大模型",
+          "source_content_hash": "c56b4d99a50bca6f",
+          "quote": "德迅资本、无限基金、初心资本、云岫资本跟投",
+          "quote_hash": "298d832430feb0d2a1fb8cb9f23ce009310c3f24dbd920165e58902d64f35228"
+        },
+        {
+          "source_id": "FISRC-086ff36dfb7673e8",
+          "source_url": "https://news.pedaily.cn/202607/566101.shtml",
+          "source_title": "Xspark AI「无界智航」完成近亿元天使轮融资，加速Physical AI规模化落地",
+          "source_content_hash": "d9771ea116d57f70",
+          "quote": "本轮融资由鼎晖VGC、初心资本、SEE Fund 无限基金联合领投",
+          "quote_hash": "d688d5d09fb7cb0f4140acb0a2e6afb3c7d9bd774ae068a653d5ba7df53e9f3d"
+        }
+      ]
+    },
+    {
+      "id": "INV-287fb78eb0225d",
+      "name": "云岫资本",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 2,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 2,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 2,
+      "china_market_company_count": 2,
+      "first_disclosed_at": "2026-05-08",
+      "latest_disclosed_at": "2026-09-16",
+      "role_counts": {
+        "historical_or_ambiguous": 1,
+        "participant": 2
+      },
+      "round_codes": [
+        "angel",
+        "angel_plus"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-d817dfb0312f7af0",
+          "canonical_entity_id": "",
+          "name": "超衍智能"
+        },
+        {
+          "entity_id": "EN-cecdd8369134f75e",
+          "canonical_entity_id": "EN-cecdd8369134f75e",
+          "name": "容芯致远"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-f765a567843429a0",
+          "funding_insight_id": "FI-1dc1b9eef411e165",
+          "event_ids": [
+            "EV-f70e34d7f7d5769a"
+          ],
+          "company_entity_id": "EN-d817dfb0312f7af0",
+          "company_canonical_entity_id": "",
+          "company_name": "超衍智能",
+          "round": "天使+轮",
+          "round_code": "angel_plus",
+          "round_original": "天使+轮",
+          "amount_original": "近4亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 400000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 4 亿元"
+          },
+          "announced_at": "2026-09-16",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-55d8269584f9e05b",
+              "source_url": "https://news.pedaily.cn/202609/569092.shtml",
+              "source_title": "超衍智能完成近4亿元天使系列融资，构建自进化基础大模型",
+              "source_content_hash": "c56b4d99a50bca6f",
+              "quote": "德迅资本、无限基金、初心资本、云岫资本跟投",
+              "quote_hash": "298d832430feb0d2a1fb8cb9f23ce009310c3f24dbd920165e58902d64f35228"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-8dd0b912a50a2c50",
+          "funding_insight_id": "FI-f15f358f13811b9e",
+          "event_ids": [
+            "EV-44ec7c229995ca3c"
+          ],
+          "company_entity_id": "EN-cecdd8369134f75e",
+          "company_canonical_entity_id": "EN-cecdd8369134f75e",
+          "company_name": "容芯致远",
+          "round": "天使轮",
+          "round_code": "angel",
+          "round_original": "天使轮",
+          "amount_original": "数亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 200000000,
+            "max_value": 900000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "2 亿元–9 亿元"
+          },
+          "announced_at": "2026-05-08",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-ceee1629da3e3cce",
+              "source_url": "https://news.pedaily.cn/202605/563553.shtml",
+              "source_title": "打造高性能国产AGI算力底座，容芯致远完成数亿元天使轮融资",
+              "source_content_hash": "ca2b772ff852bb28bd763b58c146b51cb79ce7f39e56ba7a416b2dfa01b2573a",
+              "quote": "云岫资本 此前参与了公司种子轮投资，本轮继续跟投，并担任长期独 家财务顾问。",
+              "quote_hash": "7439a92b4d4d3e984e292069af9a45a7ef30b3113c74370e82cf4d3cb6479091"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-b2b56dba63c942ac",
+          "funding_insight_id": "FI-f15f358f13811b9e",
+          "event_ids": [
+            "EV-44ec7c229995ca3c"
+          ],
+          "company_entity_id": "EN-cecdd8369134f75e",
+          "company_canonical_entity_id": "EN-cecdd8369134f75e",
+          "company_name": "容芯致远",
+          "round": "天使轮",
+          "round_code": "angel",
+          "round_original": "天使轮",
+          "amount_original": "数亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 200000000,
+            "max_value": 900000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "2 亿元–9 亿元"
+          },
+          "announced_at": "2026-05-08",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "种子轮领投",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-83b43ce2cb476c45",
+              "source_url": "https://www.163.com/dy/article/K02OO3PV05118HJE.html",
+              "source_title": "容芯致远完成数千万元种子轮融资，加速推进AGC架构与国产芯片融合|gpu|agc架构|大语言模型_网易订阅",
+              "source_content_hash": "e83376034d7aeb7b",
+              "quote": "容芯致远获云岫资本领投数千万元种子轮融资",
+              "quote_hash": "6cb304630cc6380a67cdf97b73bd3b53b48d5a2e0574c0fcfd08b00899ffe5d0"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-55d8269584f9e05b",
+          "source_url": "https://news.pedaily.cn/202609/569092.shtml",
+          "source_title": "超衍智能完成近4亿元天使系列融资，构建自进化基础大模型",
+          "source_content_hash": "c56b4d99a50bca6f",
+          "quote": "德迅资本、无限基金、初心资本、云岫资本跟投",
+          "quote_hash": "298d832430feb0d2a1fb8cb9f23ce009310c3f24dbd920165e58902d64f35228"
+        },
+        {
+          "source_id": "FISRC-ceee1629da3e3cce",
+          "source_url": "https://news.pedaily.cn/202605/563553.shtml",
+          "source_title": "打造高性能国产AGI算力底座，容芯致远完成数亿元天使轮融资",
+          "source_content_hash": "ca2b772ff852bb28bd763b58c146b51cb79ce7f39e56ba7a416b2dfa01b2573a",
+          "quote": "云岫资本 此前参与了公司种子轮投资，本轮继续跟投，并担任长期独 家财务顾问。",
+          "quote_hash": "7439a92b4d4d3e984e292069af9a45a7ef30b3113c74370e82cf4d3cb6479091"
+        },
+        {
+          "source_id": "FISRC-83b43ce2cb476c45",
+          "source_url": "https://www.163.com/dy/article/K02OO3PV05118HJE.html",
+          "source_title": "容芯致远完成数千万元种子轮融资，加速推进AGC架构与国产芯片融合|gpu|agc架构|大语言模型_网易订阅",
+          "source_content_hash": "e83376034d7aeb7b",
+          "quote": "容芯致远获云岫资本领投数千万元种子轮融资",
+          "quote_hash": "6cb304630cc6380a67cdf97b73bd3b53b48d5a2e0574c0fcfd08b00899ffe5d0"
+        }
+      ]
+    },
+    {
+      "id": "INV-bfc7c8a1714066",
+      "name": "中关村科学城基金",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "government_fund",
+      "investor_kind_label": "政府或主权基金",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 2,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 2,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 2,
+      "china_market_company_count": 2,
+      "first_disclosed_at": "2026-04-09",
+      "latest_disclosed_at": "2026-09-16",
+      "role_counts": {
+        "co_lead": 1,
+        "historical_or_ambiguous": 1,
+        "participant": 1
+      },
+      "round_codes": [
+        "angel_plus",
+        "infrastructure"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-d817dfb0312f7af0",
+          "canonical_entity_id": "",
+          "name": "超衍智能"
+        },
+        {
+          "entity_id": "EN-8b332ded81dc8d3a",
+          "canonical_entity_id": "EN-8b332ded81dc8d3a",
+          "name": "光轮智能"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-bb858c3cdb180b0d",
+          "funding_insight_id": "FI-1dc1b9eef411e165",
+          "event_ids": [
+            "EV-f70e34d7f7d5769a"
+          ],
+          "company_entity_id": "EN-d817dfb0312f7af0",
+          "company_canonical_entity_id": "",
+          "company_name": "超衍智能",
+          "round": "天使+轮",
+          "round_code": "angel_plus",
+          "round_original": "天使+轮",
+          "amount_original": "近4亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 400000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 4 亿元"
+          },
+          "announced_at": "2026-09-16",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-55d8269584f9e05b",
+              "source_url": "https://news.pedaily.cn/202609/569092.shtml",
+              "source_title": "超衍智能完成近4亿元天使系列融资，构建自进化基础大模型",
+              "source_content_hash": "c56b4d99a50bca6f",
+              "quote": "天使+轮由中关村科学城基金、深创投及上海未来产业基金联合领投",
+              "quote_hash": "9171ab30e12b9f8b285d42e80dbf26f51055f23b1b52b1221ae1c1667530c70d"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-caa7c891e58ea0b9",
+          "funding_insight_id": "FI-d94dd0bea44a17d1",
+          "event_ids": [
+            "EV-e59938ae531af428"
+          ],
+          "company_entity_id": "EN-8b332ded81dc8d3a",
+          "company_canonical_entity_id": "EN-8b332ded81dc8d3a",
+          "company_name": "光轮智能",
+          "round": "基础设施融资",
+          "round_code": "infrastructure",
+          "round_original": "基础设施融资",
+          "amount_original": "10亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 1000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "10 亿元"
+          },
+          "announced_at": "2026-07-01",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-8787a3d3602feb17",
+              "source_url": "https://www.ncsti.gov.cn/kjdt/scyq/zgckxc/zgcdt/202607/t20260701_250581.html",
+              "source_title": "光轮智能完成新一轮10亿元融资，加速物理AI数据与评测基础设施",
+              "source_content_hash": "20bb1f5550c82ab572303b31d101c327f03c9d8cc9fa77681017d9005da78fe3",
+              "quote": "本轮投资方包括中关村科学城基金、四川发展科创基金、山东发展科创投等政府基金",
+              "quote_hash": "b3723f9de6e9a09c248d641d2d6e47081bc5fd4c0a25f31ae4b59238ea741e82"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-7e619adab7bb4a5a",
+          "funding_insight_id": "FI-a7e1a675674f1a0b",
+          "event_ids": [
+            "EV-314db5cbf5010d41"
+          ],
+          "company_entity_id": "EN-3309b3b14807f39a",
+          "company_canonical_entity_id": "EN-3309b3b14807f39a",
+          "company_name": "面壁智能",
+          "round": "轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "新一轮数亿元人民币融资",
+          "amount_original": "数亿元人民币",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 200000000,
+            "max_value": 900000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "2 亿元–9 亿元"
+          },
+          "announced_at": "2026-04-09",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "partially_disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "北京国资持续加注",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-5e868b9dacd5325c",
+              "source_url": "https://finance.sina.com.cn/stock/t/2026-04-09/doc-inhtwhrc8925749.shtml",
+              "source_title": "大模型公司面壁智能完成数亿元融资投后估值迈入独角兽门槛",
+              "source_content_hash": "21fcbff02b369abf",
+              "quote": "再到北京市人工智能产业投资基金、 中关村 科学城基金等北京国资的持续加注",
+              "quote_hash": "3d1ad25dab38fa3f8fee9061a0aadd35ab84e65bb95f9666e4edb543a608ce43"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-55d8269584f9e05b",
+          "source_url": "https://news.pedaily.cn/202609/569092.shtml",
+          "source_title": "超衍智能完成近4亿元天使系列融资，构建自进化基础大模型",
+          "source_content_hash": "c56b4d99a50bca6f",
+          "quote": "天使+轮由中关村科学城基金、深创投及上海未来产业基金联合领投",
+          "quote_hash": "9171ab30e12b9f8b285d42e80dbf26f51055f23b1b52b1221ae1c1667530c70d"
+        },
+        {
+          "source_id": "FISRC-8787a3d3602feb17",
+          "source_url": "https://www.ncsti.gov.cn/kjdt/scyq/zgckxc/zgcdt/202607/t20260701_250581.html",
+          "source_title": "光轮智能完成新一轮10亿元融资，加速物理AI数据与评测基础设施",
+          "source_content_hash": "20bb1f5550c82ab572303b31d101c327f03c9d8cc9fa77681017d9005da78fe3",
+          "quote": "本轮投资方包括中关村科学城基金、四川发展科创基金、山东发展科创投等政府基金",
+          "quote_hash": "b3723f9de6e9a09c248d641d2d6e47081bc5fd4c0a25f31ae4b59238ea741e82"
+        },
+        {
+          "source_id": "FISRC-5e868b9dacd5325c",
+          "source_url": "https://finance.sina.com.cn/stock/t/2026-04-09/doc-inhtwhrc8925749.shtml",
+          "source_title": "大模型公司面壁智能完成数亿元融资投后估值迈入独角兽门槛",
+          "source_content_hash": "21fcbff02b369abf",
+          "quote": "再到北京市人工智能产业投资基金、 中关村 科学城基金等北京国资的持续加注",
+          "quote_hash": "3d1ad25dab38fa3f8fee9061a0aadd35ab84e65bb95f9666e4edb543a608ce43"
         }
       ]
     },
@@ -83274,6 +83953,701 @@
           "source_content_hash": "1d7bff75e7129429",
           "quote": "Abhishek Goyal, a co-founder of Tracxn, have also contributed.",
           "quote_hash": "d427d45ab2395b9dc8245a626f5417341df4042e5e309f6c485424b6b668e14e"
+        }
+      ]
+    },
+    {
+      "id": "INV-097110c3be02c1",
+      "name": "创世伙伴创投",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 1,
+      "china_market_company_count": 1,
+      "first_disclosed_at": "2026-09-04",
+      "latest_disclosed_at": "2026-09-16",
+      "role_counts": {
+        "historical_or_ambiguous": 1,
+        "participant": 1
+      },
+      "round_codes": [
+        "undisclosed"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-caff75902fc3743e",
+          "canonical_entity_id": "",
+          "name": "上海造父智能科技有限公司"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-1fb20ebb807f416b",
+          "funding_insight_id": "FI-e13168ad5b994879",
+          "event_ids": [
+            "EV-1c399d2db39c05a3"
+          ],
+          "company_entity_id": "EN-caff75902fc3743e",
+          "company_canonical_entity_id": "",
+          "company_name": "上海造父智能科技有限公司",
+          "round": "轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "新一轮融资",
+          "amount_original": "约1亿美金",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 100000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 1 亿美元"
+          },
+          "announced_at": "2026-09-16",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "partially_disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-fd74bfb93ef77cfc",
+              "source_url": "https://news.pedaily.cn/202609/569083.shtml",
+              "source_title": "首发|哈啰Robotaxi完成1亿美元新一轮融资，投后估值近30亿美元",
+              "source_content_hash": "d2ea27041b7714fd",
+              "quote": "本轮由 上海国投先导基金领投，闵金投、创世伙伴创投 跟投",
+              "quote_hash": "238afc74132d3b656d7ef7a1b4926377062634f0c36c6aa2dfcec3581ab55f67"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-17b1dee23e0f2d36",
+          "funding_insight_id": "FI-3e97f5e30e99ff0b",
+          "event_ids": [
+            "EV-cbec329253108e80"
+          ],
+          "company_entity_id": "EN-ee2dce6ecf9a1bab",
+          "company_canonical_entity_id": "EN-ee2dce6ecf9a1bab",
+          "company_name": "深朴智能",
+          "round": "Pre-A+轮",
+          "round_code": "pre_series_a_plus",
+          "round_original": "Pre-A+轮",
+          "amount_original": "数亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 200000000,
+            "max_value": 900000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "2 亿元–9 亿元"
+          },
+          "announced_at": "2026-09-04",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "Pre-A轮老股东持续加码",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-3bc1b2f58c3d4a86",
+              "source_url": "https://news.pedaily.cn/202606/565268.shtml",
+              "source_title": "滴滴领投，深朴智能完成数亿元 Pre-A 轮融资_投资界",
+              "source_content_hash": "892b3be292e8e3e6",
+              "quote": "本轮融资由滴滴领投，梅花创投、柯力传感跟投，老股东创世伙伴创投、线性资本、普华资本持续加码",
+              "quote_hash": "6da2e6bd296ea8bf4a4b957b1f4808313ae6cda9109e9ec26e841ba0efd2192f"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-fd74bfb93ef77cfc",
+          "source_url": "https://news.pedaily.cn/202609/569083.shtml",
+          "source_title": "首发|哈啰Robotaxi完成1亿美元新一轮融资，投后估值近30亿美元",
+          "source_content_hash": "d2ea27041b7714fd",
+          "quote": "本轮由 上海国投先导基金领投，闵金投、创世伙伴创投 跟投",
+          "quote_hash": "238afc74132d3b656d7ef7a1b4926377062634f0c36c6aa2dfcec3581ab55f67"
+        },
+        {
+          "source_id": "FISRC-3bc1b2f58c3d4a86",
+          "source_url": "https://news.pedaily.cn/202606/565268.shtml",
+          "source_title": "滴滴领投，深朴智能完成数亿元 Pre-A 轮融资_投资界",
+          "source_content_hash": "892b3be292e8e3e6",
+          "quote": "本轮融资由滴滴领投，梅花创投、柯力传感跟投，老股东创世伙伴创投、线性资本、普华资本持续加码",
+          "quote_hash": "6da2e6bd296ea8bf4a4b957b1f4808313ae6cda9109e9ec26e841ba0efd2192f"
+        }
+      ]
+    },
+    {
+      "id": "INV-ee80076fe3bd2d",
+      "name": "德迅资本",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 1,
+      "china_market_company_count": 1,
+      "first_disclosed_at": "2026-09-16",
+      "latest_disclosed_at": "2026-09-16",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "angel_plus"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-d817dfb0312f7af0",
+          "canonical_entity_id": "",
+          "name": "超衍智能"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-ea3ae4ababafe672",
+          "funding_insight_id": "FI-1dc1b9eef411e165",
+          "event_ids": [
+            "EV-f70e34d7f7d5769a"
+          ],
+          "company_entity_id": "EN-d817dfb0312f7af0",
+          "company_canonical_entity_id": "",
+          "company_name": "超衍智能",
+          "round": "天使+轮",
+          "round_code": "angel_plus",
+          "round_original": "天使+轮",
+          "amount_original": "近4亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 400000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 4 亿元"
+          },
+          "announced_at": "2026-09-16",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-55d8269584f9e05b",
+              "source_url": "https://news.pedaily.cn/202609/569092.shtml",
+              "source_title": "超衍智能完成近4亿元天使系列融资，构建自进化基础大模型",
+              "source_content_hash": "c56b4d99a50bca6f",
+              "quote": "德迅资本、无限基金、初心资本、云岫资本跟投",
+              "quote_hash": "298d832430feb0d2a1fb8cb9f23ce009310c3f24dbd920165e58902d64f35228"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-55d8269584f9e05b",
+          "source_url": "https://news.pedaily.cn/202609/569092.shtml",
+          "source_title": "超衍智能完成近4亿元天使系列融资，构建自进化基础大模型",
+          "source_content_hash": "c56b4d99a50bca6f",
+          "quote": "德迅资本、无限基金、初心资本、云岫资本跟投",
+          "quote_hash": "298d832430feb0d2a1fb8cb9f23ce009310c3f24dbd920165e58902d64f35228"
+        }
+      ]
+    },
+    {
+      "id": "INV-d1a9ff4c860c19",
+      "name": "晶泰科技",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 1,
+      "china_market_company_count": 1,
+      "first_disclosed_at": "2026-09-16",
+      "latest_disclosed_at": "2026-09-16",
+      "role_counts": {
+        "co_lead": 1
+      },
+      "round_codes": [
+        "angel_plus"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-d817dfb0312f7af0",
+          "canonical_entity_id": "",
+          "name": "超衍智能"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-bd088923174776b5",
+          "funding_insight_id": "FI-1dc1b9eef411e165",
+          "event_ids": [
+            "EV-f70e34d7f7d5769a"
+          ],
+          "company_entity_id": "EN-d817dfb0312f7af0",
+          "company_canonical_entity_id": "",
+          "company_name": "超衍智能",
+          "round": "天使+轮",
+          "round_code": "angel_plus",
+          "round_original": "天使+轮",
+          "amount_original": "近4亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 400000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 4 亿元"
+          },
+          "announced_at": "2026-09-16",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-55d8269584f9e05b",
+              "source_url": "https://news.pedaily.cn/202609/569092.shtml",
+              "source_title": "超衍智能完成近4亿元天使系列融资，构建自进化基础大模型",
+              "source_content_hash": "c56b4d99a50bca6f",
+              "quote": "天使轮由 IDG 资本、星连资本、晶泰科技联合领投",
+              "quote_hash": "12bcaabed611233e823f1962f4230bec1881ab50d9829cf88fb059a0a4e4e661"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-55d8269584f9e05b",
+          "source_url": "https://news.pedaily.cn/202609/569092.shtml",
+          "source_title": "超衍智能完成近4亿元天使系列融资，构建自进化基础大模型",
+          "source_content_hash": "c56b4d99a50bca6f",
+          "quote": "天使轮由 IDG 资本、星连资本、晶泰科技联合领投",
+          "quote_hash": "12bcaabed611233e823f1962f4230bec1881ab50d9829cf88fb059a0a4e4e661"
+        }
+      ]
+    },
+    {
+      "id": "INV-96d40aefa8e7ab",
+      "name": "闵金投",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 1,
+      "china_market_company_count": 1,
+      "first_disclosed_at": "2026-09-16",
+      "latest_disclosed_at": "2026-09-16",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "undisclosed"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-caff75902fc3743e",
+          "canonical_entity_id": "",
+          "name": "上海造父智能科技有限公司"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-db8625ab1048cb25",
+          "funding_insight_id": "FI-e13168ad5b994879",
+          "event_ids": [
+            "EV-1c399d2db39c05a3"
+          ],
+          "company_entity_id": "EN-caff75902fc3743e",
+          "company_canonical_entity_id": "",
+          "company_name": "上海造父智能科技有限公司",
+          "round": "轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "新一轮融资",
+          "amount_original": "约1亿美金",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 100000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 1 亿美元"
+          },
+          "announced_at": "2026-09-16",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "partially_disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-fd74bfb93ef77cfc",
+              "source_url": "https://news.pedaily.cn/202609/569083.shtml",
+              "source_title": "首发|哈啰Robotaxi完成1亿美元新一轮融资，投后估值近30亿美元",
+              "source_content_hash": "d2ea27041b7714fd",
+              "quote": "本轮由 上海国投先导基金领投，闵金投、创世伙伴创投 跟投",
+              "quote_hash": "238afc74132d3b656d7ef7a1b4926377062634f0c36c6aa2dfcec3581ab55f67"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-fd74bfb93ef77cfc",
+          "source_url": "https://news.pedaily.cn/202609/569083.shtml",
+          "source_title": "首发|哈啰Robotaxi完成1亿美元新一轮融资，投后估值近30亿美元",
+          "source_content_hash": "d2ea27041b7714fd",
+          "quote": "本轮由 上海国投先导基金领投，闵金投、创世伙伴创投 跟投",
+          "quote_hash": "238afc74132d3b656d7ef7a1b4926377062634f0c36c6aa2dfcec3581ab55f67"
+        }
+      ]
+    },
+    {
+      "id": "INV-fa919bb94e0892",
+      "name": "上海国投先导基金",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 1,
+      "china_market_company_count": 1,
+      "first_disclosed_at": "2026-09-16",
+      "latest_disclosed_at": "2026-09-16",
+      "role_counts": {
+        "lead": 1
+      },
+      "round_codes": [
+        "undisclosed"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-caff75902fc3743e",
+          "canonical_entity_id": "",
+          "name": "上海造父智能科技有限公司"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-f68883ccd197ef4e",
+          "funding_insight_id": "FI-e13168ad5b994879",
+          "event_ids": [
+            "EV-1c399d2db39c05a3"
+          ],
+          "company_entity_id": "EN-caff75902fc3743e",
+          "company_canonical_entity_id": "",
+          "company_name": "上海造父智能科技有限公司",
+          "round": "轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "新一轮融资",
+          "amount_original": "约1亿美金",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 100000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 1 亿美元"
+          },
+          "announced_at": "2026-09-16",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "partially_disclosed",
+          "scope": "current_round",
+          "role": "本轮领投",
+          "role_code": "lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-fd74bfb93ef77cfc",
+              "source_url": "https://news.pedaily.cn/202609/569083.shtml",
+              "source_title": "首发|哈啰Robotaxi完成1亿美元新一轮融资，投后估值近30亿美元",
+              "source_content_hash": "d2ea27041b7714fd",
+              "quote": "本轮由 上海国投先导基金领投，闵金投、创世伙伴创投 跟投",
+              "quote_hash": "238afc74132d3b656d7ef7a1b4926377062634f0c36c6aa2dfcec3581ab55f67"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-fd74bfb93ef77cfc",
+          "source_url": "https://news.pedaily.cn/202609/569083.shtml",
+          "source_title": "首发|哈啰Robotaxi完成1亿美元新一轮融资，投后估值近30亿美元",
+          "source_content_hash": "d2ea27041b7714fd",
+          "quote": "本轮由 上海国投先导基金领投，闵金投、创世伙伴创投 跟投",
+          "quote_hash": "238afc74132d3b656d7ef7a1b4926377062634f0c36c6aa2dfcec3581ab55f67"
+        }
+      ]
+    },
+    {
+      "id": "INV-7b3da7177723b4",
+      "name": "上海未来产业基金",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 1,
+      "china_market_company_count": 1,
+      "first_disclosed_at": "2026-09-16",
+      "latest_disclosed_at": "2026-09-16",
+      "role_counts": {
+        "co_lead": 1
+      },
+      "round_codes": [
+        "angel_plus"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-d817dfb0312f7af0",
+          "canonical_entity_id": "",
+          "name": "超衍智能"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-cc7ff4acf2cf95f6",
+          "funding_insight_id": "FI-1dc1b9eef411e165",
+          "event_ids": [
+            "EV-f70e34d7f7d5769a"
+          ],
+          "company_entity_id": "EN-d817dfb0312f7af0",
+          "company_canonical_entity_id": "",
+          "company_name": "超衍智能",
+          "round": "天使+轮",
+          "round_code": "angel_plus",
+          "round_original": "天使+轮",
+          "amount_original": "近4亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 400000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 4 亿元"
+          },
+          "announced_at": "2026-09-16",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead",
+          "evidence": [
+            {
+              "source_id": "FISRC-55d8269584f9e05b",
+              "source_url": "https://news.pedaily.cn/202609/569092.shtml",
+              "source_title": "超衍智能完成近4亿元天使系列融资，构建自进化基础大模型",
+              "source_content_hash": "c56b4d99a50bca6f",
+              "quote": "天使+轮由中关村科学城基金、深创投及上海未来产业基金联合领投",
+              "quote_hash": "9171ab30e12b9f8b285d42e80dbf26f51055f23b1b52b1221ae1c1667530c70d"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-55d8269584f9e05b",
+          "source_url": "https://news.pedaily.cn/202609/569092.shtml",
+          "source_title": "超衍智能完成近4亿元天使系列融资，构建自进化基础大模型",
+          "source_content_hash": "c56b4d99a50bca6f",
+          "quote": "天使+轮由中关村科学城基金、深创投及上海未来产业基金联合领投",
+          "quote_hash": "9171ab30e12b9f8b285d42e80dbf26f51055f23b1b52b1221ae1c1667530c70d"
+        }
+      ]
+    },
+    {
+      "id": "INV-b882dd235e65ce",
+      "name": "无限基金",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 1,
+      "china_market_company_count": 1,
+      "first_disclosed_at": "2026-08-27",
+      "latest_disclosed_at": "2026-09-16",
+      "role_counts": {
+        "historical_or_ambiguous": 1,
+        "participant": 1
+      },
+      "round_codes": [
+        "angel_plus"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-d817dfb0312f7af0",
+          "canonical_entity_id": "",
+          "name": "超衍智能"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-21ec172bdb755712",
+          "funding_insight_id": "FI-1dc1b9eef411e165",
+          "event_ids": [
+            "EV-f70e34d7f7d5769a"
+          ],
+          "company_entity_id": "EN-d817dfb0312f7af0",
+          "company_canonical_entity_id": "",
+          "company_name": "超衍智能",
+          "round": "天使+轮",
+          "round_code": "angel_plus",
+          "round_original": "天使+轮",
+          "amount_original": "近4亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 400000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 4 亿元"
+          },
+          "announced_at": "2026-09-16",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-55d8269584f9e05b",
+              "source_url": "https://news.pedaily.cn/202609/569092.shtml",
+              "source_title": "超衍智能完成近4亿元天使系列融资，构建自进化基础大模型",
+              "source_content_hash": "c56b4d99a50bca6f",
+              "quote": "德迅资本、无限基金、初心资本、云岫资本跟投",
+              "quote_hash": "298d832430feb0d2a1fb8cb9f23ce009310c3f24dbd920165e58902d64f35228"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-0c8c55814e94e342",
+          "funding_insight_id": "FI-f92057b012040f2a",
+          "event_ids": [
+            "EV-3c145705d72a5e57",
+            "EV-b78b4d2d94c8e72c",
+            "EV-5e8ad56fcef42b5a"
+          ],
+          "company_entity_id": "EN-731b78a10ab9e444",
+          "company_canonical_entity_id": "EN-731b78a10ab9e444",
+          "company_name": "基元律动",
+          "round": "基础设施融资",
+          "round_code": "infrastructure",
+          "round_original": "基础设施融资",
+          "amount_original": "数千万美元",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": null,
+            "min_value": 20000000,
+            "max_value": 90000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "数千万美元"
+          },
+          "announced_at": "2026-08-27",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "种子轮参投",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-f23d61f5ed1d1ac1",
+              "source_url": "https://www.qbitai.com/2026/08/480079.html",
+              "source_title": "基元律动累计融资数千万美元，推出“中国版OpenRouter”",
+              "source_content_hash": "88fa07495f1fde73",
+              "quote": "此前，基元律动曾完成由Granite Asia领投，鼎晖VGC、元璟资本、无限基金参与的种子轮融资。",
+              "quote_hash": "3fd204915d433415c506545b5de000a0746aa9ad3b55be436294053ae07244cf"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-55d8269584f9e05b",
+          "source_url": "https://news.pedaily.cn/202609/569092.shtml",
+          "source_title": "超衍智能完成近4亿元天使系列融资，构建自进化基础大模型",
+          "source_content_hash": "c56b4d99a50bca6f",
+          "quote": "德迅资本、无限基金、初心资本、云岫资本跟投",
+          "quote_hash": "298d832430feb0d2a1fb8cb9f23ce009310c3f24dbd920165e58902d64f35228"
+        },
+        {
+          "source_id": "FISRC-f23d61f5ed1d1ac1",
+          "source_url": "https://www.qbitai.com/2026/08/480079.html",
+          "source_title": "基元律动累计融资数千万美元，推出“中国版OpenRouter”",
+          "source_content_hash": "88fa07495f1fde73",
+          "quote": "此前，基元律动曾完成由Granite Asia领投，鼎晖VGC、元璟资本、无限基金参与的种子轮融资。",
+          "quote_hash": "3fd204915d433415c506545b5de000a0746aa9ad3b55be436294053ae07244cf"
         }
       ]
     },
@@ -122979,91 +124353,6 @@
       ]
     },
     {
-      "id": "INV-3fe27f1ac27534",
-      "name": "初心资本",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "unverified_investor",
-      "investor_kind_label": "投资方（类型待核验）",
-      "classification_confidence": "unverified",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 1,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 1,
-      "china_market_company_count": 1,
-      "first_disclosed_at": "2026-07-10",
-      "latest_disclosed_at": "2026-07-10",
-      "role_counts": {
-        "co_lead": 1
-      },
-      "round_codes": [
-        "angel"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-73424822d4b99926",
-          "canonical_entity_id": "EN-73424822d4b99926",
-          "name": "无界智航"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-8ee3638b86621933",
-          "funding_insight_id": "FI-ecf60585ee9f9f71",
-          "event_ids": [
-            "EV-34a9773ebd5bbc97"
-          ],
-          "company_entity_id": "EN-73424822d4b99926",
-          "company_canonical_entity_id": "EN-73424822d4b99926",
-          "company_name": "无界智航",
-          "round": "天使轮",
-          "round_code": "angel",
-          "round_original": "天使轮",
-          "amount_original": "近亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 100000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "approximate",
-            "display_zh": "约 1 亿元"
-          },
-          "announced_at": "2026-07-10",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮联合领投",
-          "role_code": "co_lead",
-          "evidence": [
-            {
-              "source_id": "FISRC-086ff36dfb7673e8",
-              "source_url": "https://news.pedaily.cn/202607/566101.shtml",
-              "source_title": "Xspark AI「无界智航」完成近亿元天使轮融资，加速Physical AI规模化落地",
-              "source_content_hash": "d9771ea116d57f70",
-              "quote": "本轮融资由鼎晖VGC、初心资本、SEE Fund 无限基金联合领投",
-              "quote_hash": "d688d5d09fb7cb0f4140acb0a2e6afb3c7d9bd774ae068a653d5ba7df53e9f3d"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-086ff36dfb7673e8",
-          "source_url": "https://news.pedaily.cn/202607/566101.shtml",
-          "source_title": "Xspark AI「无界智航」完成近亿元天使轮融资，加速Physical AI规模化落地",
-          "source_content_hash": "d9771ea116d57f70",
-          "quote": "本轮融资由鼎晖VGC、初心资本、SEE Fund 无限基金联合领投",
-          "quote_hash": "d688d5d09fb7cb0f4140acb0a2e6afb3c7d9bd774ae068a653d5ba7df53e9f3d"
-        }
-      ]
-    },
-    {
       "id": "INV-96a292b9d17114",
       "name": "深圳天使母基金",
       "aliases": [],
@@ -132999,140 +134288,6 @@
           "source_content_hash": "ef8ed950cecf5cd3",
           "quote": "参投方包括君联资本、信产投资、联想创投、沄柏资本、普华资本、临港科创投、琥珀资本、庚辛资本等。",
           "quote_hash": "cd4df0216b022c08c23ab0d5f2c10ad4f2f0ea25858f492d74541294ea3c5c62"
-        }
-      ]
-    },
-    {
-      "id": "INV-bfc7c8a1714066",
-      "name": "中关村科学城基金",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "government_fund",
-      "investor_kind_label": "政府或主权基金",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 1,
-      "portfolio_company_count": 1,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 1,
-      "china_market_company_count": 1,
-      "first_disclosed_at": "2026-04-09",
-      "latest_disclosed_at": "2026-07-01",
-      "role_counts": {
-        "historical_or_ambiguous": 1,
-        "participant": 1
-      },
-      "round_codes": [
-        "infrastructure"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-8b332ded81dc8d3a",
-          "canonical_entity_id": "EN-8b332ded81dc8d3a",
-          "name": "光轮智能"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-caa7c891e58ea0b9",
-          "funding_insight_id": "FI-d94dd0bea44a17d1",
-          "event_ids": [
-            "EV-e59938ae531af428"
-          ],
-          "company_entity_id": "EN-8b332ded81dc8d3a",
-          "company_canonical_entity_id": "EN-8b332ded81dc8d3a",
-          "company_name": "光轮智能",
-          "round": "基础设施融资",
-          "round_code": "infrastructure",
-          "round_original": "基础设施融资",
-          "amount_original": "10亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 1000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "10 亿元"
-          },
-          "announced_at": "2026-07-01",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-8787a3d3602feb17",
-              "source_url": "https://www.ncsti.gov.cn/kjdt/scyq/zgckxc/zgcdt/202607/t20260701_250581.html",
-              "source_title": "光轮智能完成新一轮10亿元融资，加速物理AI数据与评测基础设施",
-              "source_content_hash": "20bb1f5550c82ab572303b31d101c327f03c9d8cc9fa77681017d9005da78fe3",
-              "quote": "本轮投资方包括中关村科学城基金、四川发展科创基金、山东发展科创投等政府基金",
-              "quote_hash": "b3723f9de6e9a09c248d641d2d6e47081bc5fd4c0a25f31ae4b59238ea741e82"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-7e619adab7bb4a5a",
-          "funding_insight_id": "FI-a7e1a675674f1a0b",
-          "event_ids": [
-            "EV-314db5cbf5010d41"
-          ],
-          "company_entity_id": "EN-3309b3b14807f39a",
-          "company_canonical_entity_id": "EN-3309b3b14807f39a",
-          "company_name": "面壁智能",
-          "round": "轮次未披露",
-          "round_code": "undisclosed",
-          "round_original": "新一轮数亿元人民币融资",
-          "amount_original": "数亿元人民币",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": null,
-            "min_value": 200000000,
-            "max_value": 900000000,
-            "unit": "base",
-            "status": "range",
-            "display_zh": "2 亿元–9 亿元"
-          },
-          "announced_at": "2026-04-09",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "partially_disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "北京国资持续加注",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-5e868b9dacd5325c",
-              "source_url": "https://finance.sina.com.cn/stock/t/2026-04-09/doc-inhtwhrc8925749.shtml",
-              "source_title": "大模型公司面壁智能完成数亿元融资投后估值迈入独角兽门槛",
-              "source_content_hash": "21fcbff02b369abf",
-              "quote": "再到北京市人工智能产业投资基金、 中关村 科学城基金等北京国资的持续加注",
-              "quote_hash": "3d1ad25dab38fa3f8fee9061a0aadd35ab84e65bb95f9666e4edb543a608ce43"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-8787a3d3602feb17",
-          "source_url": "https://www.ncsti.gov.cn/kjdt/scyq/zgckxc/zgcdt/202607/t20260701_250581.html",
-          "source_title": "光轮智能完成新一轮10亿元融资，加速物理AI数据与评测基础设施",
-          "source_content_hash": "20bb1f5550c82ab572303b31d101c327f03c9d8cc9fa77681017d9005da78fe3",
-          "quote": "本轮投资方包括中关村科学城基金、四川发展科创基金、山东发展科创投等政府基金",
-          "quote_hash": "b3723f9de6e9a09c248d641d2d6e47081bc5fd4c0a25f31ae4b59238ea741e82"
-        },
-        {
-          "source_id": "FISRC-5e868b9dacd5325c",
-          "source_url": "https://finance.sina.com.cn/stock/t/2026-04-09/doc-inhtwhrc8925749.shtml",
-          "source_title": "大模型公司面壁智能完成数亿元融资投后估值迈入独角兽门槛",
-          "source_content_hash": "21fcbff02b369abf",
-          "quote": "再到北京市人工智能产业投资基金、 中关村 科学城基金等北京国资的持续加注",
-          "quote_hash": "3d1ad25dab38fa3f8fee9061a0aadd35ab84e65bb95f9666e4edb543a608ce43"
         }
       ]
     },
@@ -158641,140 +159796,6 @@
           "source_content_hash": "ca2b772ff852bb28bd763b58c146b51cb79ce7f39e56ba7a416b2dfa01b2573a",
           "quote": "顺禧基金、富华资本、万利达集团、长江创新投、水木清华校友基金、梅花创投等跟投",
           "quote_hash": "1268be5eb46af49b91553a5e559123a667d5373f1faaf25d9a7c3cfbcb145388"
-        }
-      ]
-    },
-    {
-      "id": "INV-287fb78eb0225d",
-      "name": "云岫资本",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "unverified_investor",
-      "investor_kind_label": "投资方（类型待核验）",
-      "classification_confidence": "unverified",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 1,
-      "portfolio_company_count": 1,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 1,
-      "china_market_company_count": 1,
-      "first_disclosed_at": "2026-05-08",
-      "latest_disclosed_at": "2026-05-08",
-      "role_counts": {
-        "historical_or_ambiguous": 1,
-        "participant": 1
-      },
-      "round_codes": [
-        "angel"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-cecdd8369134f75e",
-          "canonical_entity_id": "EN-cecdd8369134f75e",
-          "name": "容芯致远"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-8dd0b912a50a2c50",
-          "funding_insight_id": "FI-f15f358f13811b9e",
-          "event_ids": [
-            "EV-44ec7c229995ca3c"
-          ],
-          "company_entity_id": "EN-cecdd8369134f75e",
-          "company_canonical_entity_id": "EN-cecdd8369134f75e",
-          "company_name": "容芯致远",
-          "round": "天使轮",
-          "round_code": "angel",
-          "round_original": "天使轮",
-          "amount_original": "数亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": null,
-            "min_value": 200000000,
-            "max_value": 900000000,
-            "unit": "base",
-            "status": "range",
-            "display_zh": "2 亿元–9 亿元"
-          },
-          "announced_at": "2026-05-08",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-ceee1629da3e3cce",
-              "source_url": "https://news.pedaily.cn/202605/563553.shtml",
-              "source_title": "打造高性能国产AGI算力底座，容芯致远完成数亿元天使轮融资",
-              "source_content_hash": "ca2b772ff852bb28bd763b58c146b51cb79ce7f39e56ba7a416b2dfa01b2573a",
-              "quote": "云岫资本 此前参与了公司种子轮投资，本轮继续跟投，并担任长期独 家财务顾问。",
-              "quote_hash": "7439a92b4d4d3e984e292069af9a45a7ef30b3113c74370e82cf4d3cb6479091"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-b2b56dba63c942ac",
-          "funding_insight_id": "FI-f15f358f13811b9e",
-          "event_ids": [
-            "EV-44ec7c229995ca3c"
-          ],
-          "company_entity_id": "EN-cecdd8369134f75e",
-          "company_canonical_entity_id": "EN-cecdd8369134f75e",
-          "company_name": "容芯致远",
-          "round": "天使轮",
-          "round_code": "angel",
-          "round_original": "天使轮",
-          "amount_original": "数亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": null,
-            "min_value": 200000000,
-            "max_value": 900000000,
-            "unit": "base",
-            "status": "range",
-            "display_zh": "2 亿元–9 亿元"
-          },
-          "announced_at": "2026-05-08",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "种子轮领投",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-83b43ce2cb476c45",
-              "source_url": "https://www.163.com/dy/article/K02OO3PV05118HJE.html",
-              "source_title": "容芯致远完成数千万元种子轮融资，加速推进AGC架构与国产芯片融合|gpu|agc架构|大语言模型_网易订阅",
-              "source_content_hash": "e83376034d7aeb7b",
-              "quote": "容芯致远获云岫资本领投数千万元种子轮融资",
-              "quote_hash": "6cb304630cc6380a67cdf97b73bd3b53b48d5a2e0574c0fcfd08b00899ffe5d0"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-ceee1629da3e3cce",
-          "source_url": "https://news.pedaily.cn/202605/563553.shtml",
-          "source_title": "打造高性能国产AGI算力底座，容芯致远完成数亿元天使轮融资",
-          "source_content_hash": "ca2b772ff852bb28bd763b58c146b51cb79ce7f39e56ba7a416b2dfa01b2573a",
-          "quote": "云岫资本 此前参与了公司种子轮投资，本轮继续跟投，并担任长期独 家财务顾问。",
-          "quote_hash": "7439a92b4d4d3e984e292069af9a45a7ef30b3113c74370e82cf4d3cb6479091"
-        },
-        {
-          "source_id": "FISRC-83b43ce2cb476c45",
-          "source_url": "https://www.163.com/dy/article/K02OO3PV05118HJE.html",
-          "source_title": "容芯致远完成数千万元种子轮融资，加速推进AGC架构与国产芯片融合|gpu|agc架构|大语言模型_网易订阅",
-          "source_content_hash": "e83376034d7aeb7b",
-          "quote": "容芯致远获云岫资本领投数千万元种子轮融资",
-          "quote_hash": "6cb304630cc6380a67cdf97b73bd3b53b48d5a2e0574c0fcfd08b00899ffe5d0"
         }
       ]
     },
@@ -191591,6 +192612,131 @@
       ]
     },
     {
+      "id": "INV-1110b9677926b1",
+      "name": "阿里巴巴集团",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "corporate_investor",
+      "investor_kind_label": "企业投资方",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 0,
+      "historical_or_ambiguous_count": 2,
+      "portfolio_company_count": 0,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "2026-06-18",
+      "latest_disclosed_at": "2026-09-16",
+      "role_counts": {
+        "historical_or_ambiguous": 2
+      },
+      "round_codes": [],
+      "portfolio_companies": [],
+      "activities": [
+        {
+          "activity_id": "IA-0f395379de795cbd",
+          "funding_insight_id": "FI-e13168ad5b994879",
+          "event_ids": [
+            "EV-1c399d2db39c05a3"
+          ],
+          "company_entity_id": "EN-caff75902fc3743e",
+          "company_canonical_entity_id": "",
+          "company_name": "上海造父智能科技有限公司",
+          "round": "轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "新一轮融资",
+          "amount_original": "约1亿美金",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 100000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 1 亿美元"
+          },
+          "announced_at": "2026-09-16",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "partially_disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "战略投资",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-fd74bfb93ef77cfc",
+              "source_url": "https://news.pedaily.cn/202609/569083.shtml",
+              "source_title": "首发|哈啰Robotaxi完成1亿美元新一轮融资，投后估值近30亿美元",
+              "source_content_hash": "d2ea27041b7714fd",
+              "quote": "去年9月，哈啰宣布Robotaxi业务获得阿里巴巴集团战略投资",
+              "quote_hash": "f493f6541cdc6d166423c99c96f3d5eb8ad523cb65912ced84f263bbd6913de1"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-6262c543f60fd861",
+          "funding_insight_id": "FI-ec1ed99dffac2fd0",
+          "event_ids": [
+            "EV-56da7cceeebc8bcf"
+          ],
+          "company_entity_id": "EN-5aacd10b5dbfa7b7",
+          "company_canonical_entity_id": "EN-5aacd10b5dbfa7b7",
+          "company_name": "穹彻智能",
+          "round": "轮次未披露",
+          "round_code": "undisclosed",
+          "round_original": "新一轮融资",
+          "amount_original": "数亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 200000000,
+            "max_value": 900000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "2 亿元–9 亿元"
+          },
+          "announced_at": "2026-06-18",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "partially_disclosed",
+          "scope": "historical_or_ambiguous",
+          "role": "历史投资方",
+          "role_code": "historical_or_ambiguous",
+          "evidence": [
+            {
+              "source_id": "FISRC-e3b51be471b79167",
+              "source_url": "https://www.wuxicapital.com.cn/news_59/575.html",
+              "source_title": "锡创动态 | 穹彻智能完成新一轮融资，锡创投加码人工智能“大脑”赛道",
+              "source_content_hash": "6b768055188f3cb9061ad40773e551b420975d25beb5d6a0dfe2e06bbe6f89c0",
+              "quote": "历史投资方包括沙特阿美P7、红杉资本、阿里、360战投等",
+              "quote_hash": "51972a2bcdf7e26966adf9b94b89d74fbbcd82502e3fb422b66d9c4d7f848b3c"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-fd74bfb93ef77cfc",
+          "source_url": "https://news.pedaily.cn/202609/569083.shtml",
+          "source_title": "首发|哈啰Robotaxi完成1亿美元新一轮融资，投后估值近30亿美元",
+          "source_content_hash": "d2ea27041b7714fd",
+          "quote": "去年9月，哈啰宣布Robotaxi业务获得阿里巴巴集团战略投资",
+          "quote_hash": "f493f6541cdc6d166423c99c96f3d5eb8ad523cb65912ced84f263bbd6913de1"
+        },
+        {
+          "source_id": "FISRC-e3b51be471b79167",
+          "source_url": "https://www.wuxicapital.com.cn/news_59/575.html",
+          "source_title": "锡创动态 | 穹彻智能完成新一轮融资，锡创投加码人工智能“大脑”赛道",
+          "source_content_hash": "6b768055188f3cb9061ad40773e551b420975d25beb5d6a0dfe2e06bbe6f89c0",
+          "quote": "历史投资方包括沙特阿美P7、红杉资本、阿里、360战投等",
+          "quote_hash": "51972a2bcdf7e26966adf9b94b89d74fbbcd82502e3fb422b66d9c4d7f848b3c"
+        }
+      ]
+    },
+    {
       "id": "INV-6f5af0bd115224",
       "name": "德石投资",
       "aliases": [],
@@ -194590,83 +195736,6 @@
       ]
     },
     {
-      "id": "INV-097110c3be02c1",
-      "name": "创世伙伴创投",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 0,
-      "historical_or_ambiguous_count": 1,
-      "portfolio_company_count": 0,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 0,
-      "china_market_company_count": 0,
-      "first_disclosed_at": "2026-09-04",
-      "latest_disclosed_at": "2026-09-04",
-      "role_counts": {
-        "historical_or_ambiguous": 1
-      },
-      "round_codes": [],
-      "portfolio_companies": [],
-      "activities": [
-        {
-          "activity_id": "IA-17b1dee23e0f2d36",
-          "funding_insight_id": "FI-3e97f5e30e99ff0b",
-          "event_ids": [
-            "EV-cbec329253108e80"
-          ],
-          "company_entity_id": "EN-ee2dce6ecf9a1bab",
-          "company_canonical_entity_id": "EN-ee2dce6ecf9a1bab",
-          "company_name": "深朴智能",
-          "round": "Pre-A+轮",
-          "round_code": "pre_series_a_plus",
-          "round_original": "Pre-A+轮",
-          "amount_original": "数亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": null,
-            "min_value": 200000000,
-            "max_value": 900000000,
-            "unit": "base",
-            "status": "range",
-            "display_zh": "2 亿元–9 亿元"
-          },
-          "announced_at": "2026-09-04",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "Pre-A轮老股东持续加码",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-3bc1b2f58c3d4a86",
-              "source_url": "https://news.pedaily.cn/202606/565268.shtml",
-              "source_title": "滴滴领投，深朴智能完成数亿元 Pre-A 轮融资_投资界",
-              "source_content_hash": "892b3be292e8e3e6",
-              "quote": "本轮融资由滴滴领投，梅花创投、柯力传感跟投，老股东创世伙伴创投、线性资本、普华资本持续加码",
-              "quote_hash": "6da2e6bd296ea8bf4a4b957b1f4808313ae6cda9109e9ec26e841ba0efd2192f"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-3bc1b2f58c3d4a86",
-          "source_url": "https://news.pedaily.cn/202606/565268.shtml",
-          "source_title": "滴滴领投，深朴智能完成数亿元 Pre-A 轮融资_投资界",
-          "source_content_hash": "892b3be292e8e3e6",
-          "quote": "本轮融资由滴滴领投，梅花创投、柯力传感跟投，老股东创世伙伴创投、线性资本、普华资本持续加码",
-          "quote_hash": "6da2e6bd296ea8bf4a4b957b1f4808313ae6cda9109e9ec26e841ba0efd2192f"
-        }
-      ]
-    },
-    {
       "id": "INV-51293f7a23474b",
       "name": "柯力传感",
       "aliases": [],
@@ -195887,85 +196956,6 @@
           "source_content_hash": "7d9409a9ba1e94fc",
           "quote": "Pre-A+轮融资由中金资本、广州产投、一村淞灵、华强资本投资。",
           "quote_hash": "ca00b69742155291ef614ec13a2f8362b01fe9476123a2ec6941daf5cddce229"
-        }
-      ]
-    },
-    {
-      "id": "INV-b882dd235e65ce",
-      "name": "无限基金",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 0,
-      "historical_or_ambiguous_count": 1,
-      "portfolio_company_count": 0,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 0,
-      "china_market_company_count": 0,
-      "first_disclosed_at": "2026-08-27",
-      "latest_disclosed_at": "2026-08-27",
-      "role_counts": {
-        "historical_or_ambiguous": 1
-      },
-      "round_codes": [],
-      "portfolio_companies": [],
-      "activities": [
-        {
-          "activity_id": "IA-0c8c55814e94e342",
-          "funding_insight_id": "FI-f92057b012040f2a",
-          "event_ids": [
-            "EV-3c145705d72a5e57",
-            "EV-b78b4d2d94c8e72c",
-            "EV-5e8ad56fcef42b5a"
-          ],
-          "company_entity_id": "EN-731b78a10ab9e444",
-          "company_canonical_entity_id": "EN-731b78a10ab9e444",
-          "company_name": "基元律动",
-          "round": "基础设施融资",
-          "round_code": "infrastructure",
-          "round_original": "基础设施融资",
-          "amount_original": "数千万美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": null,
-            "min_value": 20000000,
-            "max_value": 90000000,
-            "unit": "base",
-            "status": "range",
-            "display_zh": "数千万美元"
-          },
-          "announced_at": "2026-08-27",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "种子轮参投",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-f23d61f5ed1d1ac1",
-              "source_url": "https://www.qbitai.com/2026/08/480079.html",
-              "source_title": "基元律动累计融资数千万美元，推出“中国版OpenRouter”",
-              "source_content_hash": "88fa07495f1fde73",
-              "quote": "此前，基元律动曾完成由Granite Asia领投，鼎晖VGC、元璟资本、无限基金参与的种子轮融资。",
-              "quote_hash": "3fd204915d433415c506545b5de000a0746aa9ad3b55be436294053ae07244cf"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-f23d61f5ed1d1ac1",
-          "source_url": "https://www.qbitai.com/2026/08/480079.html",
-          "source_title": "基元律动累计融资数千万美元，推出“中国版OpenRouter”",
-          "source_content_hash": "88fa07495f1fde73",
-          "quote": "此前，基元律动曾完成由Granite Asia领投，鼎晖VGC、元璟资本、无限基金参与的种子轮融资。",
-          "quote_hash": "3fd204915d433415c506545b5de000a0746aa9ad3b55be436294053ae07244cf"
         }
       ]
     },
@@ -208230,83 +209220,6 @@
       "activities": [
         {
           "activity_id": "IA-d85078440cb8e5b3",
-          "funding_insight_id": "FI-ec1ed99dffac2fd0",
-          "event_ids": [
-            "EV-56da7cceeebc8bcf"
-          ],
-          "company_entity_id": "EN-5aacd10b5dbfa7b7",
-          "company_canonical_entity_id": "EN-5aacd10b5dbfa7b7",
-          "company_name": "穹彻智能",
-          "round": "轮次未披露",
-          "round_code": "undisclosed",
-          "round_original": "新一轮融资",
-          "amount_original": "数亿元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": null,
-            "min_value": 200000000,
-            "max_value": 900000000,
-            "unit": "base",
-            "status": "range",
-            "display_zh": "2 亿元–9 亿元"
-          },
-          "announced_at": "2026-06-18",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "partially_disclosed",
-          "scope": "historical_or_ambiguous",
-          "role": "历史投资方",
-          "role_code": "historical_or_ambiguous",
-          "evidence": [
-            {
-              "source_id": "FISRC-e3b51be471b79167",
-              "source_url": "https://www.wuxicapital.com.cn/news_59/575.html",
-              "source_title": "锡创动态 | 穹彻智能完成新一轮融资，锡创投加码人工智能“大脑”赛道",
-              "source_content_hash": "6b768055188f3cb9061ad40773e551b420975d25beb5d6a0dfe2e06bbe6f89c0",
-              "quote": "历史投资方包括沙特阿美P7、红杉资本、阿里、360战投等",
-              "quote_hash": "51972a2bcdf7e26966adf9b94b89d74fbbcd82502e3fb422b66d9c4d7f848b3c"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-e3b51be471b79167",
-          "source_url": "https://www.wuxicapital.com.cn/news_59/575.html",
-          "source_title": "锡创动态 | 穹彻智能完成新一轮融资，锡创投加码人工智能“大脑”赛道",
-          "source_content_hash": "6b768055188f3cb9061ad40773e551b420975d25beb5d6a0dfe2e06bbe6f89c0",
-          "quote": "历史投资方包括沙特阿美P7、红杉资本、阿里、360战投等",
-          "quote_hash": "51972a2bcdf7e26966adf9b94b89d74fbbcd82502e3fb422b66d9c4d7f848b3c"
-        }
-      ]
-    },
-    {
-      "id": "INV-1110b9677926b1",
-      "name": "阿里巴巴集团",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "corporate_investor",
-      "investor_kind_label": "企业投资方",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 0,
-      "historical_or_ambiguous_count": 1,
-      "portfolio_company_count": 0,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 0,
-      "china_market_company_count": 0,
-      "first_disclosed_at": "2026-06-18",
-      "latest_disclosed_at": "2026-06-18",
-      "role_counts": {
-        "historical_or_ambiguous": 1
-      },
-      "round_codes": [],
-      "portfolio_companies": [],
-      "activities": [
-        {
-          "activity_id": "IA-6262c543f60fd861",
           "funding_insight_id": "FI-ec1ed99dffac2fd0",
           "event_ids": [
             "EV-56da7cceeebc8bcf"
