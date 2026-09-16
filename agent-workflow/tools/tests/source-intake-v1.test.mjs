@@ -1,5 +1,18 @@
 import assert from "node:assert/strict";
 import test from "node:test";
+import { sourceDiagnosticMarkdown } from "../lib/source-diagnostic-markdown.mjs";
+
+test("source reports preserve structured publisher diagnostics and legacy strings", () => {
+  const diagnostic = { source_id: "36kr", status: "partial", candidates: 0, failures: ["no readable funding article links"], query_count: 2 };
+  const original = structuredClone(diagnostic);
+  const rendered = sourceDiagnosticMarkdown(diagnostic);
+  assert.match(rendered, /^```json\n/);
+  assert.doesNotMatch(rendered, /\[object Object\]/);
+  assert.deepEqual(JSON.parse(rendered.slice(8, -4)), diagnostic);
+  assert.deepEqual(diagnostic, original);
+  assert.equal(sourceDiagnosticMarkdown("RSS unavailable"), "- RSS unavailable");
+  assert.equal(sourceDiagnosticMarkdown(null), "- unknown");
+});
 import { sourceTitleLocator, sourceTitleMetadataMatches } from "../lib/source-title-locator.mjs";
 
 test("title provenance selects the dated exact title, not the first identical body", () => {
