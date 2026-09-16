@@ -62,6 +62,17 @@ despite a failed outcome.
 
 ## Evidence and publication acceptance
 
+English elapsed-time text after a series letter (for example, `Series D 7 months
+after last round`) is not a numbered sub-round. Keep genuine `C-1` / `C1`
+labels; canonical reuse repairs the application round without recollecting sources.
+Accepted Claims describing financing raised in multiple tranches with a capped
+`Series C-1, up to ...` component require application review before publishing
+the combined amount as a completed round. Keep factual Claims/Events intact,
+exclude the card, and persist `funding_capped_tranche_requires_review` on retries.
+Likewise, an accepted Chinese disclosure combining 天使轮及天使+轮 with a
+cumulative financing amount stays review-only (`funding_combined_rounds_requires_review`).
+Do not assign the cumulative amount or prior-round investors to the latest round.
+
 Chinese financing headlines such as “智谱宣布完成…” must split “宣布” into the
 action, not the funded company's Claim subject. Repair the deterministic factual
 builder and rebuild from the same accepted intake; do not rename a generated

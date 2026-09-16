@@ -393,7 +393,11 @@ function roundSeriesToken(value = "") {
 
 export function normalizeFundingRound(value = "") {
   const original = clean(value);
-  const text = original.normalize("NFKC").toLowerCase();
+  // A duration after the series letter is prose, not a numbered sub-round.
+  const text = original.normalize("NFKC").toLowerCase().replace(
+    /(\b(?:pre[-\s]*)?series\s*[a-g])\s+(?=\d+(?:\.\d+)?\s*(?:hours?|days?|weeks?|months?|years?)\b)/giu,
+    "$1, ",
+  );
   const compact = text.replace(/[\s_]+/gu, "").replace(/[－—–]/gu, "-");
   const signals = new Set();
   if (/pre[-\s]?seed|种子轮前|预种子/iu.test(text)) signals.add("pre_seed");
@@ -1084,14 +1088,33 @@ function fundingAmountsEquivalent(left = "", right = "") {
   );
 }
 
+export function fundingCombinedRoundsNeedReview(event = {}, claims = []) {
+  return claims.some((claim) => (event.claim_refs || []).includes(claim.claim_id)
+    && claim.claim_type === "funding" && claim.verification_status === "accepted"
+    && /天使轮(?:及|和|与)天使\+轮融资[，,、\s]*(?:累计|合计)融资金额/u.test(claim.source_quote || ""));
+}
+
+export function fundingTrancheDisclosureNeedsReview(event = {}, claims = []) {
+  return claims.some((claim) => (event.claim_refs || []).includes(claim.claim_id)
+    && claim.claim_type === "funding" && claim.verification_status === "accepted"
+    && /\b(?:the|this) financing was raised in (?:two|multiple|\d+) tranches\b/iu.test(claim.source_quote || "")
+    && /\bseries\s+[a-g](?:-?\d+)?\s*,\s*up to\s*[$€£]\s*\d/iu.test(claim.source_quote || ""));
+}
+
 export function fundingEventCardConsistencyProblems(card = {}, event = {}, claims = [], entities = []) {
   if (!card?.company?.entity_id || !event?.event_id) return [];
+  if (fundingTrancheDisclosureNeedsReview(event, claims)) return ["funding_capped_tranche_requires_review"];
+  if (fundingCombinedRoundsNeedReview(event, claims)) return ["funding_combined_rounds_requires_review"];
   // Recheck persisted/recovered cards, not only fresh generation eligibility.
   if ((event.event_status && !["announced", "completed"].includes(event.event_status))
     || ["withdrawn", "disputed", "quarantined", "partial"].includes(event.publication_status)
     || isWithdrawnFundingTitle(event.display_title_zh)) return ["funding_event_not_completed"];
   const acceptedClaims = claims.filter((claim) => (event.claim_refs || []).includes(claim.claim_id)
     && claim.claim_type === "funding" && claim.verification_status === "accepted");
+  if (acceptedClaims.some((claim) => /\bseries\s+[a-g]\s+\d+\s*(?:hours?|days?|weeks?|months?|years?)\b/iu.test(claim.source_quote || ""))
+    && normalizeFundingRound(card.financing?.round).code !== canonicalFundingEventRound(event, claims).code) {
+    return ["funding_current_round_label_mismatch"];
+  }
   if (fundingAmountUsesValuation(card.financing?.amount, [
     event.display_title_zh, event.object,
     ...acceptedClaims.flatMap((claim) => [claim.object, claim.source_quote]),
@@ -1406,6 +1429,8 @@ export function isEligibleFundingInsightEvent(event = {}, claims = []) {
     && event.publication_status === "verified"
     && Boolean(event.display_title_zh)
     && !isWithdrawnFundingTitle(event.display_title_zh)
+    && !fundingTrancheDisclosureNeedsReview(event, claims)
+    && !fundingCombinedRoundsNeedReview(event, claims)
     && Boolean(normalizeFundingAmount(canonicalFundingEventAmount(event, claims)).currency);
 }
 

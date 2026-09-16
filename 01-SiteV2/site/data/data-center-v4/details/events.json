@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-16T04:31:17.797Z",
+    "generatedAt": "2026-09-16T04:41:27.652Z",
     "latestDataDate": "2026-09-16",
     "currentDate": "2026-09-16",
     "eventCount": 3315,
@@ -399,241 +399,17 @@
       "conflicts": [],
       "tags": [],
       "facets": {
-        "ai_market_category": [
-          {
-            "dimensionId": "ai_market_category",
-            "dimensionName": "AI 市场类别",
-            "id": "infrastructure_compute",
-            "name": "基础设施与算力",
-            "entityIds": [
-              "EN-d817dfb0312f7af0"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-bdcb05a3ed14ece0",
-            "fundingInsightId": "FI-d1596da95fb4d12a"
-          }
-        ],
-        "ai_market_subcategory": [
-          {
-            "dimensionId": "ai_market_subcategory",
-            "dimensionName": "AI 市场子类",
-            "id": "development_deployment",
-            "name": "开发与部署",
-            "entityIds": [
-              "EN-d817dfb0312f7af0"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-672693c642a3eb52",
-            "fundingInsightId": "FI-d1596da95fb4d12a"
-          }
-        ],
-        "ai_market_application": [
-          {
-            "dimensionId": "ai_market_application",
-            "dimensionName": "AI 市场细分",
-            "id": "models",
-            "name": "模型",
-            "entityIds": [
-              "EN-d817dfb0312f7af0"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-84f188016421276c",
-            "fundingInsightId": "FI-d1596da95fb4d12a"
-          }
-        ],
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "model",
-            "name": "模型",
-            "entityIds": [
-              "EN-d817dfb0312f7af0"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-20b5db6ed801f7de",
-            "fundingInsightId": "FI-d1596da95fb4d12a"
-          }
-        ],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "research_discovery",
-            "name": "科研与发现",
-            "entityIds": [
-              "EN-d817dfb0312f7af0"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-f64bf5b8f01301c3",
-            "fundingInsightId": "FI-d1596da95fb4d12a"
-          }
-        ],
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
         "industry": [],
         "deployment_model": [],
-        "target_user": [
-          {
-            "dimensionId": "target_user",
-            "dimensionName": "目标用户",
-            "id": "researcher",
-            "name": "研究人员",
-            "entityIds": [
-              "EN-d817dfb0312f7af0"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-9d64b711adef41b5",
-            "fundingInsightId": "FI-d1596da95fb4d12a"
-          }
-        ]
+        "target_user": []
       },
-      "classifications": [
-        {
-          "dimensionId": "ai_market_application",
-          "dimensionName": "AI 市场细分",
-          "id": "models",
-          "name": "模型",
-          "entityIds": [
-            "EN-d817dfb0312f7af0"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-84f188016421276c",
-          "fundingInsightId": "FI-d1596da95fb4d12a"
-        },
-        {
-          "dimensionId": "ai_market_category",
-          "dimensionName": "AI 市场类别",
-          "id": "infrastructure_compute",
-          "name": "基础设施与算力",
-          "entityIds": [
-            "EN-d817dfb0312f7af0"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-bdcb05a3ed14ece0",
-          "fundingInsightId": "FI-d1596da95fb4d12a"
-        },
-        {
-          "dimensionId": "ai_market_subcategory",
-          "dimensionName": "AI 市场子类",
-          "id": "development_deployment",
-          "name": "开发与部署",
-          "entityIds": [
-            "EN-d817dfb0312f7af0"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-672693c642a3eb52",
-          "fundingInsightId": "FI-d1596da95fb4d12a"
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model",
-          "name": "模型",
-          "entityIds": [
-            "EN-d817dfb0312f7af0"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-20b5db6ed801f7de",
-          "fundingInsightId": "FI-d1596da95fb4d12a"
-        },
-        {
-          "dimensionId": "target_user",
-          "dimensionName": "目标用户",
-          "id": "researcher",
-          "name": "研究人员",
-          "entityIds": [
-            "EN-d817dfb0312f7af0"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-9d64b711adef41b5",
-          "fundingInsightId": "FI-d1596da95fb4d12a"
-        },
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "research_discovery",
-          "name": "科研与发现",
-          "entityIds": [
-            "EN-d817dfb0312f7af0"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-f64bf5b8f01301c3",
-          "fundingInsightId": "FI-d1596da95fb4d12a"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "ai_market_category",
-          "dimensionName": "AI 市场类别",
-          "id": "infrastructure_compute",
-          "name": "基础设施与算力",
-          "entityIds": [
-            "EN-d817dfb0312f7af0"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-bdcb05a3ed14ece0",
-          "fundingInsightId": "FI-d1596da95fb4d12a"
-        },
-        {
-          "dimensionId": "ai_market_subcategory",
-          "dimensionName": "AI 市场子类",
-          "id": "development_deployment",
-          "name": "开发与部署",
-          "entityIds": [
-            "EN-d817dfb0312f7af0"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-672693c642a3eb52",
-          "fundingInsightId": "FI-d1596da95fb4d12a"
-        },
-        {
-          "dimensionId": "ai_market_application",
-          "dimensionName": "AI 市场细分",
-          "id": "models",
-          "name": "模型",
-          "entityIds": [
-            "EN-d817dfb0312f7af0"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-84f188016421276c",
-          "fundingInsightId": "FI-d1596da95fb4d12a"
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model",
-          "name": "模型",
-          "entityIds": [
-            "EN-d817dfb0312f7af0"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-20b5db6ed801f7de",
-          "fundingInsightId": "FI-d1596da95fb4d12a"
-        },
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "research_discovery",
-          "name": "科研与发现",
-          "entityIds": [
-            "EN-d817dfb0312f7af0"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-f64bf5b8f01301c3",
-          "fundingInsightId": "FI-d1596da95fb4d12a"
-        },
-        {
-          "dimensionId": "target_user",
-          "dimensionName": "目标用户",
-          "id": "researcher",
-          "name": "研究人员",
-          "entityIds": [
-            "EN-d817dfb0312f7af0"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-9d64b711adef41b5",
-          "fundingInsightId": "FI-d1596da95fb4d12a"
-        }
-      ],
+      "classifications": [],
+      "displayTags": [],
       "entityIds": [
         "EN-d817dfb0312f7af0"
       ],
@@ -11335,61 +11111,10 @@
       "conflicts": [],
       "tags": [],
       "facets": {
-        "ai_market_category": [
-          {
-            "dimensionId": "ai_market_category",
-            "dimensionName": "AI 市场类别",
-            "id": "infrastructure_compute",
-            "name": "基础设施与算力",
-            "entityIds": [
-              "EN-897502f225e38bf5"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-c4fee80a1a96c28a",
-            "fundingInsightId": "FI-9fc87c99a98d17af"
-          }
-        ],
-        "ai_market_subcategory": [
-          {
-            "dimensionId": "ai_market_subcategory",
-            "dimensionName": "AI 市场子类",
-            "id": "hardware_computing",
-            "name": "硬件与算力",
-            "entityIds": [
-              "EN-897502f225e38bf5"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-e746725ebf5d7970",
-            "fundingInsightId": "FI-9fc87c99a98d17af"
-          }
-        ],
-        "ai_market_application": [
-          {
-            "dimensionId": "ai_market_application",
-            "dimensionName": "AI 市场细分",
-            "id": "chips",
-            "name": "芯片",
-            "entityIds": [
-              "EN-897502f225e38bf5"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-e15758c258b7dc14",
-            "fundingInsightId": "FI-9fc87c99a98d17af"
-          }
-        ],
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
         "product_form": [
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "chip_accelerator",
-            "name": "芯片与加速器",
-            "entityIds": [
-              "EN-897502f225e38bf5"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-c1043d13e3d0a186",
-            "fundingInsightId": "FI-9fc87c99a98d17af"
-          },
           {
             "dimensionId": "product_form",
             "dimensionName": "产品形态",
@@ -11402,135 +11127,12 @@
             "assertionId": ""
           }
         ],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "productivity_enterprise_workflows",
-            "name": "生产力与企业工作流",
-            "entityIds": [
-              "EN-897502f225e38bf5"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-6457d965b2198bce",
-            "fundingInsightId": "FI-9fc87c99a98d17af"
-          }
-        ],
-        "industry": [
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "telecommunications",
-            "name": "电信",
-            "entityIds": [
-              "EN-897502f225e38bf5"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-2e0233bb72afd0b8",
-            "fundingInsightId": "FI-9fc87c99a98d17af"
-          }
-        ],
+        "use_case": [],
+        "industry": [],
         "deployment_model": [],
-        "target_user": [
-          {
-            "dimensionId": "target_user",
-            "dimensionName": "目标用户",
-            "id": "developer",
-            "name": "开发者",
-            "entityIds": [
-              "EN-897502f225e38bf5"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-c52a030c6084e6e0",
-            "fundingInsightId": "FI-9fc87c99a98d17af"
-          }
-        ]
+        "target_user": []
       },
       "classifications": [
-        {
-          "dimensionId": "ai_market_application",
-          "dimensionName": "AI 市场细分",
-          "id": "chips",
-          "name": "芯片",
-          "entityIds": [
-            "EN-897502f225e38bf5"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-e15758c258b7dc14",
-          "fundingInsightId": "FI-9fc87c99a98d17af"
-        },
-        {
-          "dimensionId": "ai_market_category",
-          "dimensionName": "AI 市场类别",
-          "id": "infrastructure_compute",
-          "name": "基础设施与算力",
-          "entityIds": [
-            "EN-897502f225e38bf5"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-c4fee80a1a96c28a",
-          "fundingInsightId": "FI-9fc87c99a98d17af"
-        },
-        {
-          "dimensionId": "ai_market_subcategory",
-          "dimensionName": "AI 市场子类",
-          "id": "hardware_computing",
-          "name": "硬件与算力",
-          "entityIds": [
-            "EN-897502f225e38bf5"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-e746725ebf5d7970",
-          "fundingInsightId": "FI-9fc87c99a98d17af"
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "telecommunications",
-          "name": "电信",
-          "entityIds": [
-            "EN-897502f225e38bf5"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-2e0233bb72afd0b8",
-          "fundingInsightId": "FI-9fc87c99a98d17af"
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "chip_accelerator",
-          "name": "芯片与加速器",
-          "entityIds": [
-            "EN-897502f225e38bf5"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-c1043d13e3d0a186",
-          "fundingInsightId": "FI-9fc87c99a98d17af"
-        },
-        {
-          "dimensionId": "target_user",
-          "dimensionName": "目标用户",
-          "id": "developer",
-          "name": "开发者",
-          "entityIds": [
-            "EN-897502f225e38bf5"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-c52a030c6084e6e0",
-          "fundingInsightId": "FI-9fc87c99a98d17af"
-        },
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "productivity_enterprise_workflows",
-          "name": "生产力与企业工作流",
-          "entityIds": [
-            "EN-897502f225e38bf5"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-6457d965b2198bce",
-          "fundingInsightId": "FI-9fc87c99a98d17af"
-        },
         {
           "dimensionId": "product_form",
           "dimensionName": "产品形态",
@@ -11545,54 +11147,6 @@
       ],
       "displayTags": [
         {
-          "dimensionId": "ai_market_category",
-          "dimensionName": "AI 市场类别",
-          "id": "infrastructure_compute",
-          "name": "基础设施与算力",
-          "entityIds": [
-            "EN-897502f225e38bf5"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-c4fee80a1a96c28a",
-          "fundingInsightId": "FI-9fc87c99a98d17af"
-        },
-        {
-          "dimensionId": "ai_market_subcategory",
-          "dimensionName": "AI 市场子类",
-          "id": "hardware_computing",
-          "name": "硬件与算力",
-          "entityIds": [
-            "EN-897502f225e38bf5"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-e746725ebf5d7970",
-          "fundingInsightId": "FI-9fc87c99a98d17af"
-        },
-        {
-          "dimensionId": "ai_market_application",
-          "dimensionName": "AI 市场细分",
-          "id": "chips",
-          "name": "芯片",
-          "entityIds": [
-            "EN-897502f225e38bf5"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-e15758c258b7dc14",
-          "fundingInsightId": "FI-9fc87c99a98d17af"
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "chip_accelerator",
-          "name": "芯片与加速器",
-          "entityIds": [
-            "EN-897502f225e38bf5"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-c1043d13e3d0a186",
-          "fundingInsightId": "FI-9fc87c99a98d17af"
-        },
-        {
           "dimensionId": "product_form",
           "dimensionName": "产品形态",
           "id": "model",
@@ -11602,42 +11156,6 @@
           ],
           "provenance": "claim_assertion",
           "assertionId": ""
-        },
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "productivity_enterprise_workflows",
-          "name": "生产力与企业工作流",
-          "entityIds": [
-            "EN-897502f225e38bf5"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-6457d965b2198bce",
-          "fundingInsightId": "FI-9fc87c99a98d17af"
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "telecommunications",
-          "name": "电信",
-          "entityIds": [
-            "EN-897502f225e38bf5"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-2e0233bb72afd0b8",
-          "fundingInsightId": "FI-9fc87c99a98d17af"
-        },
-        {
-          "dimensionId": "target_user",
-          "dimensionName": "目标用户",
-          "id": "developer",
-          "name": "开发者",
-          "entityIds": [
-            "EN-897502f225e38bf5"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-c52a030c6084e6e0",
-          "fundingInsightId": "FI-9fc87c99a98d17af"
         }
       ],
       "entityIds": [

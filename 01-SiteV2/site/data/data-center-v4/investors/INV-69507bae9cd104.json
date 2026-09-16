@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-16T04:31:17.797Z",
+    "generatedAt": "2026-09-16T04:41:27.652Z",
     "latestDataDate": "2026-09-16",
     "currentDate": "2026-09-16",
     "eventCount": 3315,
@@ -59,33 +59,26 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2022-04-12",
-    "latest_disclosed_at": "2026-09-10",
+    "latest_disclosed_at": "2026-08-17",
     "role_counts": {
-      "co_lead": 1,
       "lead": 2,
       "participant": 1
     },
     "round_codes": [
       "seed",
       "series_a",
-      "series_b",
-      "series_c"
+      "series_b"
     ],
     "portfolio_companies": [
-      {
-        "entity_id": "EN-897502f225e38bf5",
-        "canonical_entity_id": "",
-        "name": "Positron AI"
-      },
       {
         "entity_id": "EN-bf0e59763d382462",
         "canonical_entity_id": "",
@@ -103,46 +96,6 @@
       }
     ],
     "activities": [
-      {
-        "activity_id": "IA-40589e1ca05546a3",
-        "funding_insight_id": "FI-1adbb5f80063337e",
-        "event_ids": [
-          "EV-4e00ddcb0bc4f2bb"
-        ],
-        "company_entity_id": "EN-897502f225e38bf5",
-        "company_canonical_entity_id": "",
-        "company_name": "Positron AI",
-        "round": "C轮",
-        "round_code": "series_c",
-        "round_original": "Series C",
-        "amount_original": "$875 million",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 875000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "8.75 亿美元"
-        },
-        "announced_at": "2026-09-10",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮联合领投",
-        "role_code": "co_lead",
-        "evidence": [
-          {
-            "source_id": "FISRC-3947ce709f26c22a",
-            "source_url": "https://www.prnewswire.com/news-releases/positron-ai-raises-875-million-at-a-5-billion-valuation-to-bring-its-next-generation-inference-silicon-to-market-302874601.html",
-            "source_title": "Positron AI 以 50 亿美元估值融资 8.75 亿美元，将其下一代推理芯片推向市场",
-            "source_content_hash": "3b3748bbe90ac495",
-            "quote": "The round was co-led by NEA, Atreides Management, Valor Equity Partners, Andra Capital, Dylan Patel's SemiAnalysis Capital and Jim Clark",
-            "quote_hash": "7d031291b7451816f12e8fbfdda6c4fe52f0c471626ca1e7f2eb4a9b185c0dda"
-          }
-        ]
-      },
       {
         "activity_id": "IA-751df5264878c5e8",
         "funding_insight_id": "FI-c0b843a5e6f6ea0a",
@@ -281,14 +234,6 @@
       }
     ],
     "evidence": [
-      {
-        "source_id": "FISRC-3947ce709f26c22a",
-        "source_url": "https://www.prnewswire.com/news-releases/positron-ai-raises-875-million-at-a-5-billion-valuation-to-bring-its-next-generation-inference-silicon-to-market-302874601.html",
-        "source_title": "Positron AI 以 50 亿美元估值融资 8.75 亿美元，将其下一代推理芯片推向市场",
-        "source_content_hash": "3b3748bbe90ac495",
-        "quote": "The round was co-led by NEA, Atreides Management, Valor Equity Partners, Andra Capital, Dylan Patel's SemiAnalysis Capital and Jim Clark",
-        "quote_hash": "7d031291b7451816f12e8fbfdda6c4fe52f0c471626ca1e7f2eb4a9b185c0dda"
-      },
       {
         "source_id": "FISRC-2e7a3713da8f3e54",
         "source_url": "https://www.gate.com/news/detail/wispr-raises-280m-in-series-b-funding-led-by-menlo-ventures-valuation-hits-23514139",

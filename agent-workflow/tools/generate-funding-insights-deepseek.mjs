@@ -17,6 +17,8 @@ import {
   ensureNamedCompanyEvidence,
   entityResolver,
   fundingEventCardConsistencyProblems,
+  fundingTrancheDisclosureNeedsReview,
+  fundingCombinedRoundsNeedReview,
   fundingInsightProblems,
   isEligibleFundingInsightEvent,
   latestDataDate,
@@ -1117,6 +1119,14 @@ async function main() {
       updated_at: "",
     });
   // Keep the audit reason after a factual rebuild withdraws a former candidate.
+  for (const event of bundle.events.filter((item) => fundingTrancheDisclosureNeedsReview(item, bundle.claims) || fundingCombinedRoundsNeedReview(item, bundle.claims))) {
+    queue.push({
+      ...(queueByEvent.get(event.event_id) || {}),
+      event_id: event.event_id,
+      status: "blocked",
+      problems: [fundingTrancheDisclosureNeedsReview(event, bundle.claims) ? "funding_capped_tranche_requires_review" : "funding_combined_rounds_requires_review"],
+    });
+  }
   // It stays outside generation and public cards on every subsequent retry.
   for (const item of existing.queue || []) {
     if (eventById.get(item.event_id)?.event_status !== "withdrawn") continue;

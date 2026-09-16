@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-16T04:31:17.797Z",
+    "generatedAt": "2026-09-16T04:41:27.652Z",
     "latestDataDate": "2026-09-16",
     "currentDate": "2026-09-16",
     "eventCount": 3315,
@@ -57,30 +57,24 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 1,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 2,
-    "china_market_company_count": 2,
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
     "first_disclosed_at": "2026-05-08",
-    "latest_disclosed_at": "2026-09-16",
+    "latest_disclosed_at": "2026-05-08",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 2
+      "participant": 1
     },
     "round_codes": [
-      "angel",
-      "angel_plus"
+      "angel"
     ],
     "portfolio_companies": [
-      {
-        "entity_id": "EN-d817dfb0312f7af0",
-        "canonical_entity_id": "",
-        "name": "超衍智能"
-      },
       {
         "entity_id": "EN-cecdd8369134f75e",
         "canonical_entity_id": "EN-cecdd8369134f75e",
@@ -88,46 +82,6 @@
       }
     ],
     "activities": [
-      {
-        "activity_id": "IA-f765a567843429a0",
-        "funding_insight_id": "FI-1dc1b9eef411e165",
-        "event_ids": [
-          "EV-f70e34d7f7d5769a"
-        ],
-        "company_entity_id": "EN-d817dfb0312f7af0",
-        "company_canonical_entity_id": "",
-        "company_name": "超衍智能",
-        "round": "天使+轮",
-        "round_code": "angel_plus",
-        "round_original": "天使+轮",
-        "amount_original": "近4亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 400000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "approximate",
-          "display_zh": "约 4 亿元"
-        },
-        "announced_at": "2026-09-16",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-55d8269584f9e05b",
-            "source_url": "https://news.pedaily.cn/202609/569092.shtml",
-            "source_title": "超衍智能完成近4亿元天使系列融资，构建自进化基础大模型",
-            "source_content_hash": "c56b4d99a50bca6f",
-            "quote": "德迅资本、无限基金、初心资本、云岫资本跟投",
-            "quote_hash": "298d832430feb0d2a1fb8cb9f23ce009310c3f24dbd920165e58902d64f35228"
-          }
-        ]
-      },
       {
         "activity_id": "IA-8dd0b912a50a2c50",
         "funding_insight_id": "FI-f15f358f13811b9e",
@@ -210,14 +164,6 @@
       }
     ],
     "evidence": [
-      {
-        "source_id": "FISRC-55d8269584f9e05b",
-        "source_url": "https://news.pedaily.cn/202609/569092.shtml",
-        "source_title": "超衍智能完成近4亿元天使系列融资，构建自进化基础大模型",
-        "source_content_hash": "c56b4d99a50bca6f",
-        "quote": "德迅资本、无限基金、初心资本、云岫资本跟投",
-        "quote_hash": "298d832430feb0d2a1fb8cb9f23ce009310c3f24dbd920165e58902d64f35228"
-      },
       {
         "source_id": "FISRC-ceee1629da3e3cce",
         "source_url": "https://news.pedaily.cn/202605/563553.shtml",

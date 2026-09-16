@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-16T04:31:17.797Z",
+    "generatedAt": "2026-09-16T04:41:27.652Z",
     "latestDataDate": "2026-09-16",
     "currentDate": "2026-09-16",
     "eventCount": 3315,
@@ -56,7 +56,6 @@
     "valueId": "chips",
     "eventIds": [
       "EV-10b007d20ad2794e",
-      "EV-4e00ddcb0bc4f2bb",
       "EV-e0a31302688c81ec",
       "EV-ae87e20ab0c5d06a",
       "EV-012b1ccfe1d48f51",
@@ -87,7 +86,6 @@
     ],
     "entityIds": [
       "EN-ce232f0155cad088",
-      "EN-897502f225e38bf5",
       "EN-a5e5f031b6f878cf",
       "EN-4482f5b97bed22de",
       "EN-e9c2b868dc8f92df",
@@ -116,7 +114,7 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-04-13",
-    "lastSeen": "2026-09-16"
+    "lastSeen": "2026-09-14"
   },
   "events": [
     {
@@ -538,352 +536,6 @@
       "products": [],
       "sourceUrl": "https://api.laoyaoba.com/n/1017339",
       "publisher": "api.laoyaoba.com"
-    },
-    {
-      "id": "EV-4e00ddcb0bc4f2bb",
-      "dataDate": "2026-09-16",
-      "date": "2026-09-10",
-      "updatedDate": "2026-09-16",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "Positron AI 以 50 亿美元估值融资 8.75 亿美元，将其下一代推理芯片推向市场",
-      "originalTitle": "Positron AI Raises $875 Million at a $5 Billion Valuation to Bring Its Next-Generation Inference Silicon to Market",
-      "subject": "Positron AI",
-      "action": "Raises",
-      "object": "$875 Million at a $5 Billion Valuation to Bring Its Next-Generation Inference Silicon to Market",
-      "metrics": [
-        "$875 million",
-        "$5 billion",
-        "$375 million",
-        "$3.5 billion",
-        "$500 million"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [
-          {
-            "dimensionId": "ai_market_category",
-            "dimensionName": "AI 市场类别",
-            "id": "infrastructure_compute",
-            "name": "基础设施与算力",
-            "entityIds": [
-              "EN-897502f225e38bf5"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-c4fee80a1a96c28a",
-            "fundingInsightId": "FI-9fc87c99a98d17af"
-          }
-        ],
-        "ai_market_subcategory": [
-          {
-            "dimensionId": "ai_market_subcategory",
-            "dimensionName": "AI 市场子类",
-            "id": "hardware_computing",
-            "name": "硬件与算力",
-            "entityIds": [
-              "EN-897502f225e38bf5"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-e746725ebf5d7970",
-            "fundingInsightId": "FI-9fc87c99a98d17af"
-          }
-        ],
-        "ai_market_application": [
-          {
-            "dimensionId": "ai_market_application",
-            "dimensionName": "AI 市场细分",
-            "id": "chips",
-            "name": "芯片",
-            "entityIds": [
-              "EN-897502f225e38bf5"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-e15758c258b7dc14",
-            "fundingInsightId": "FI-9fc87c99a98d17af"
-          }
-        ],
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "chip_accelerator",
-            "name": "芯片与加速器",
-            "entityIds": [
-              "EN-897502f225e38bf5"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-c1043d13e3d0a186",
-            "fundingInsightId": "FI-9fc87c99a98d17af"
-          },
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "model",
-            "name": "模型",
-            "entityIds": [
-              "EN-897502f225e38bf5"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "productivity_enterprise_workflows",
-            "name": "生产力与企业工作流",
-            "entityIds": [
-              "EN-897502f225e38bf5"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-6457d965b2198bce",
-            "fundingInsightId": "FI-9fc87c99a98d17af"
-          }
-        ],
-        "industry": [
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "telecommunications",
-            "name": "电信",
-            "entityIds": [
-              "EN-897502f225e38bf5"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-2e0233bb72afd0b8",
-            "fundingInsightId": "FI-9fc87c99a98d17af"
-          }
-        ],
-        "deployment_model": [],
-        "target_user": [
-          {
-            "dimensionId": "target_user",
-            "dimensionName": "目标用户",
-            "id": "developer",
-            "name": "开发者",
-            "entityIds": [
-              "EN-897502f225e38bf5"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-c52a030c6084e6e0",
-            "fundingInsightId": "FI-9fc87c99a98d17af"
-          }
-        ]
-      },
-      "classifications": [
-        {
-          "dimensionId": "ai_market_application",
-          "dimensionName": "AI 市场细分",
-          "id": "chips",
-          "name": "芯片",
-          "entityIds": [
-            "EN-897502f225e38bf5"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-e15758c258b7dc14",
-          "fundingInsightId": "FI-9fc87c99a98d17af"
-        },
-        {
-          "dimensionId": "ai_market_category",
-          "dimensionName": "AI 市场类别",
-          "id": "infrastructure_compute",
-          "name": "基础设施与算力",
-          "entityIds": [
-            "EN-897502f225e38bf5"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-c4fee80a1a96c28a",
-          "fundingInsightId": "FI-9fc87c99a98d17af"
-        },
-        {
-          "dimensionId": "ai_market_subcategory",
-          "dimensionName": "AI 市场子类",
-          "id": "hardware_computing",
-          "name": "硬件与算力",
-          "entityIds": [
-            "EN-897502f225e38bf5"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-e746725ebf5d7970",
-          "fundingInsightId": "FI-9fc87c99a98d17af"
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "telecommunications",
-          "name": "电信",
-          "entityIds": [
-            "EN-897502f225e38bf5"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-2e0233bb72afd0b8",
-          "fundingInsightId": "FI-9fc87c99a98d17af"
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "chip_accelerator",
-          "name": "芯片与加速器",
-          "entityIds": [
-            "EN-897502f225e38bf5"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-c1043d13e3d0a186",
-          "fundingInsightId": "FI-9fc87c99a98d17af"
-        },
-        {
-          "dimensionId": "target_user",
-          "dimensionName": "目标用户",
-          "id": "developer",
-          "name": "开发者",
-          "entityIds": [
-            "EN-897502f225e38bf5"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-c52a030c6084e6e0",
-          "fundingInsightId": "FI-9fc87c99a98d17af"
-        },
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "productivity_enterprise_workflows",
-          "name": "生产力与企业工作流",
-          "entityIds": [
-            "EN-897502f225e38bf5"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-6457d965b2198bce",
-          "fundingInsightId": "FI-9fc87c99a98d17af"
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model",
-          "name": "模型",
-          "entityIds": [
-            "EN-897502f225e38bf5"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "ai_market_category",
-          "dimensionName": "AI 市场类别",
-          "id": "infrastructure_compute",
-          "name": "基础设施与算力",
-          "entityIds": [
-            "EN-897502f225e38bf5"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-c4fee80a1a96c28a",
-          "fundingInsightId": "FI-9fc87c99a98d17af"
-        },
-        {
-          "dimensionId": "ai_market_subcategory",
-          "dimensionName": "AI 市场子类",
-          "id": "hardware_computing",
-          "name": "硬件与算力",
-          "entityIds": [
-            "EN-897502f225e38bf5"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-e746725ebf5d7970",
-          "fundingInsightId": "FI-9fc87c99a98d17af"
-        },
-        {
-          "dimensionId": "ai_market_application",
-          "dimensionName": "AI 市场细分",
-          "id": "chips",
-          "name": "芯片",
-          "entityIds": [
-            "EN-897502f225e38bf5"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-e15758c258b7dc14",
-          "fundingInsightId": "FI-9fc87c99a98d17af"
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "chip_accelerator",
-          "name": "芯片与加速器",
-          "entityIds": [
-            "EN-897502f225e38bf5"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-c1043d13e3d0a186",
-          "fundingInsightId": "FI-9fc87c99a98d17af"
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model",
-          "name": "模型",
-          "entityIds": [
-            "EN-897502f225e38bf5"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "productivity_enterprise_workflows",
-          "name": "生产力与企业工作流",
-          "entityIds": [
-            "EN-897502f225e38bf5"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-6457d965b2198bce",
-          "fundingInsightId": "FI-9fc87c99a98d17af"
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "telecommunications",
-          "name": "电信",
-          "entityIds": [
-            "EN-897502f225e38bf5"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-2e0233bb72afd0b8",
-          "fundingInsightId": "FI-9fc87c99a98d17af"
-        },
-        {
-          "dimensionId": "target_user",
-          "dimensionName": "目标用户",
-          "id": "developer",
-          "name": "开发者",
-          "entityIds": [
-            "EN-897502f225e38bf5"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-c52a030c6084e6e0",
-          "fundingInsightId": "FI-9fc87c99a98d17af"
-        }
-      ],
-      "entityIds": [
-        "EN-d46dd0dee4e823ff",
-        "EN-897502f225e38bf5"
-      ],
-      "entityNames": [
-        "RENO",
-        "Positron AI"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://prnewswire.com/news-releases/positron-ai-raises-875-million-at-a-5-billion-valuation-to-bring-its-next-generation-inference-silicon-to-market-302874601.html",
-      "publisher": "prnewswire.com"
     },
     {
       "id": "EV-e0a31302688c81ec",
@@ -10377,9 +10029,9 @@
       "classificationRefs": [
         "TX-industry-automotive_transportation",
         "TX-use_case-physical_automation",
-        "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
         "TX-industry-logistics_supply_chain",
+        "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
         "TX-industry-manufacturing",
@@ -10389,34 +10041,6 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-09-14",
       "lastSeen": "2026-09-14"
-    },
-    {
-      "id": "EN-897502f225e38bf5",
-      "name": "Positron AI",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-4e00ddcb0bc4f2bb"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-ai_market_category-infrastructure_compute",
-        "TX-product_form-model",
-        "TX-ai_market_subcategory-hardware_computing",
-        "TX-target_user-developer",
-        "TX-use_case-productivity_enterprise_workflows",
-        "TX-industry-telecommunications",
-        "TX-ai_market_application-chips",
-        "TX-product_form-chip_accelerator"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-09-10",
-      "lastSeen": "2026-09-16"
     },
     {
       "id": "EN-a5e5f031b6f878cf",
@@ -10436,8 +10060,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-industry-automotive_transportation",
-        "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
+        "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
         "TX-industry-manufacturing",
@@ -10470,9 +10094,9 @@
       "classificationRefs": [
         "TX-industry-automotive_transportation",
         "TX-use_case-physical_automation",
-        "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
         "TX-industry-logistics_supply_chain",
+        "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
         "TX-industry-manufacturing",
@@ -10552,8 +10176,8 @@
       "classificationRefs": [
         "TX-industry-automotive_transportation",
         "TX-use_case-physical_automation",
-        "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
+        "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
         "TX-industry-manufacturing",
@@ -10608,12 +10232,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_category-infrastructure_compute",
-        "TX-use_case-research_discovery",
         "TX-target_user-business_user",
+        "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
         "TX-industry-manufacturing",
+        "TX-use_case-research_discovery",
         "TX-industry-financial_services",
         "TX-industry-telecommunications",
         "TX-ai_market_application-chips",
@@ -10644,8 +10268,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_application-computing_infrastructure",
+        "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
         "TX-industry-manufacturing",
@@ -10740,11 +10364,11 @@
       "classificationRefs": [
         "TX-industry-automotive_transportation",
         "TX-ai_market_category-infrastructure_compute",
-        "TX-target_user-researcher",
-        "TX-use_case-research_discovery",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
         "TX-industry-manufacturing",
+        "TX-target_user-researcher",
+        "TX-use_case-research_discovery",
         "TX-ai_market_application-chips",
         "TX-product_form-chip_accelerator",
         "TX-industry-aerospace_defense",
@@ -10796,9 +10420,9 @@
       "classificationRefs": [
         "TX-industry-automotive_transportation",
         "TX-use_case-physical_automation",
-        "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
         "TX-industry-logistics_supply_chain",
+        "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
         "TX-industry-manufacturing",
@@ -10876,12 +10500,12 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
-        "TX-product_form-model",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
         "TX-industry-manufacturing",
         "TX-ai_market_application-chips",
         "TX-product_form-chip_accelerator",
+        "TX-product_form-model",
         "TX-use_case-software_development"
       ],
       "relatedEntityIds": [],
@@ -11238,12 +10862,6 @@
         "TX-industry-automotive_transportation",
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
-        "TX-ai_market_application-models",
-        "TX-ai_market_category-infrastructure_compute",
-        "TX-ai_market_subcategory-development_deployment",
-        "TX-product_form-model",
-        "TX-target_user-researcher",
-        "TX-use_case-research_discovery",
         "TX-industry-media_entertainment",
         "TX-industry-retail_ecommerce",
         "TX-product_form-enterprise_software_platform",
@@ -11252,6 +10870,7 @@
         "TX-industry-logistics_supply_chain",
         "TX-technology-embodied_ai",
         "TX-ai_market_application-computing_infrastructure",
+        "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-government_public_sector",
         "TX-industry-professional_services",
@@ -11260,6 +10879,8 @@
         "TX-use_case-security_operations",
         "TX-industry-manufacturing",
         "TX-industry-healthcare_life_sciences",
+        "TX-target_user-researcher",
+        "TX-use_case-research_discovery",
         "TX-industry-financial_services",
         "TX-industry-telecommunications",
         "TX-technology-on_device",
@@ -11267,6 +10888,9 @@
         "TX-technology-agentic_execution",
         "TX-ai_market_application-chips",
         "TX-product_form-chip_accelerator",
+        "TX-ai_market_application-models",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-product_form-model",
         "TX-industry-aerospace_defense",
         "TX-industry-agriculture",
         "TX-industry-construction_real_estate",
@@ -11336,12 +10960,12 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-industry-automotive_transportation",
-        "TX-ai_market_category-infrastructure_compute",
-        "TX-use_case-research_discovery",
         "TX-industry-retail_ecommerce",
         "TX-target_user-business_user",
+        "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
+        "TX-use_case-research_discovery",
         "TX-industry-telecommunications",
         "TX-ai_market_application-chips",
         "TX-product_form-chip_accelerator",
@@ -11367,11 +10991,11 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
-        "TX-product_form-model",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
         "TX-ai_market_application-chips",
-        "TX-product_form-chip_accelerator"
+        "TX-product_form-chip_accelerator",
+        "TX-product_form-model"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-23",
@@ -11393,8 +11017,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-use_case-physical_automation",
-        "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
+        "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
         "TX-industry-manufacturing",
@@ -11424,8 +11048,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-business_user",
+        "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
         "TX-industry-manufacturing",

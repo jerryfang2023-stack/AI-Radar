@@ -2,7 +2,7 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.3",
     "date": "2026-09-16",
-    "generated_at": "2026-09-16T04:30:33.053Z",
+    "generated_at": "2026-09-16T04:40:29.884Z",
     "trigger": "verified_funding_events_with_three_month_backfill",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
@@ -10,773 +10,13 @@
     "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
       "funding_events": 14,
-      "auto_published": 6,
-      "blocked": 0,
+      "auto_published": 4,
+      "blocked": 2,
       "pending": 0,
       "deduplicated": 8
-    },
-    "taxonomy_version": "TAG-V4.1"
+    }
   },
   "cards": [
-    {
-      "schema_version": "FUNDING-INSIGHT-V1.3",
-      "funding_insight_id": "FI-d1596da95fb4d12a",
-      "triggered_by_event_id": "EV-f70e34d7f7d5769a",
-      "as_of_date": "2026-09-16",
-      "company": {
-        "entity_id": "EN-d817dfb0312f7af0",
-        "name": "超衍智能科技（北京）有限公司",
-        "full_name": "超衍智能科技（北京）有限公司",
-        "website": "",
-        "summary": "超衍智能是一家面向下一代产业智能的自主进化大模型公司，由清华人工智能学院助理教授陈勇超创立，核心愿景是让大模型从复刻人类已有知识，走向自主发现未知规律。",
-        "headquarters": "北京-海淀区",
-        "founders": [
-          {
-            "name": "陈勇超",
-            "role": "创始人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-55d8269584f9e05b",
-                "quote": "超衍智能科技（北京）有限公司（简称：超衍智能）是一家面向下一代产业智能的自主进化大模型公司，由清华人工智能学院助理教授陈勇超创立",
-                "source_content_hash": "c56b4d99a50bca6f",
-                "quote_hash": "837705d96a50720e78d09c397bbfb611d72f81d01698bf27de81461d44d87377"
-              }
-            ],
-            "entity_id": null
-          }
-        ],
-        "team_size": {
-          "value": "1-49人",
-          "observed_at": "2026-08-20",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ec46e359ffa28db9",
-              "quote": "人数规模： 1-49人",
-              "source_content_hash": "27728b7857c48e39",
-              "quote_hash": "5197118fa0a0fe02d88ec47c1d70245ed87b37d33ed129153b23c668a0a2f7d3"
-            }
-          ]
-        },
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-55d8269584f9e05b",
-            "quote": "超衍智能科技（北京）有限公司（简称：超衍智能）是一家面向下一代产业智能的自主进化大模型公司，由清华人工智能学院助理教授陈勇超创立",
-            "source_content_hash": "c56b4d99a50bca6f",
-            "quote_hash": "837705d96a50720e78d09c397bbfb611d72f81d01698bf27de81461d44d87377"
-          }
-        ],
-        "application_entity_id": "EN-d817dfb0312f7af0",
-        "canonical_entity_consistent": false
-      },
-      "financing": {
-        "round": "天使+轮",
-        "amount": "近4亿元",
-        "total_raised": "近4亿人民币",
-        "announced_at": "2026-09-16",
-        "investor_disclosure_status": "disclosed",
-        "investors": [
-          {
-            "name": "IDG资本",
-            "role": "本轮联合领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-55d8269584f9e05b",
-                "quote": "天使轮由 IDG 资本、星连资本、晶泰科技联合领投",
-                "source_content_hash": "c56b4d99a50bca6f",
-                "quote_hash": "12bcaabed611233e823f1962f4230bec1881ab50d9829cf88fb059a0a4e4e661"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "星连资本",
-            "role": "本轮联合领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-55d8269584f9e05b",
-                "quote": "天使轮由 IDG 资本、星连资本、晶泰科技联合领投",
-                "source_content_hash": "c56b4d99a50bca6f",
-                "quote_hash": "12bcaabed611233e823f1962f4230bec1881ab50d9829cf88fb059a0a4e4e661"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "晶泰科技",
-            "role": "本轮联合领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-55d8269584f9e05b",
-                "quote": "天使轮由 IDG 资本、星连资本、晶泰科技联合领投",
-                "source_content_hash": "c56b4d99a50bca6f",
-                "quote_hash": "12bcaabed611233e823f1962f4230bec1881ab50d9829cf88fb059a0a4e4e661"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "德迅资本",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-55d8269584f9e05b",
-                "quote": "德迅资本、无限基金、初心资本、云岫资本跟投",
-                "source_content_hash": "c56b4d99a50bca6f",
-                "quote_hash": "298d832430feb0d2a1fb8cb9f23ce009310c3f24dbd920165e58902d64f35228"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "无限基金",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-55d8269584f9e05b",
-                "quote": "德迅资本、无限基金、初心资本、云岫资本跟投",
-                "source_content_hash": "c56b4d99a50bca6f",
-                "quote_hash": "298d832430feb0d2a1fb8cb9f23ce009310c3f24dbd920165e58902d64f35228"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "初心资本",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-55d8269584f9e05b",
-                "quote": "德迅资本、无限基金、初心资本、云岫资本跟投",
-                "source_content_hash": "c56b4d99a50bca6f",
-                "quote_hash": "298d832430feb0d2a1fb8cb9f23ce009310c3f24dbd920165e58902d64f35228"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "云岫资本",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-55d8269584f9e05b",
-                "quote": "德迅资本、无限基金、初心资本、云岫资本跟投",
-                "source_content_hash": "c56b4d99a50bca6f",
-                "quote_hash": "298d832430feb0d2a1fb8cb9f23ce009310c3f24dbd920165e58902d64f35228"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "中关村科学城基金",
-            "role": "本轮联合领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-55d8269584f9e05b",
-                "quote": "天使+轮由中关村科学城基金、深创投及上海未来产业基金联合领投",
-                "source_content_hash": "c56b4d99a50bca6f",
-                "quote_hash": "9171ab30e12b9f8b285d42e80dbf26f51055f23b1b52b1221ae1c1667530c70d"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "深创投",
-            "role": "本轮联合领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-55d8269584f9e05b",
-                "quote": "天使+轮由中关村科学城基金、深创投及上海未来产业基金联合领投",
-                "source_content_hash": "c56b4d99a50bca6f",
-                "quote_hash": "9171ab30e12b9f8b285d42e80dbf26f51055f23b1b52b1221ae1c1667530c70d"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "上海未来产业基金",
-            "role": "本轮联合领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-55d8269584f9e05b",
-                "quote": "天使+轮由中关村科学城基金、深创投及上海未来产业基金联合领投",
-                "source_content_hash": "c56b4d99a50bca6f",
-                "quote_hash": "9171ab30e12b9f8b285d42e80dbf26f51055f23b1b52b1221ae1c1667530c70d"
-              }
-            ],
-            "entity_id": null
-          }
-        ],
-        "other_round_investors": [],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-55d8269584f9e05b",
-            "quote": "投资界（ID：pedaily2012）9月16日消息，超衍智能 完成天使轮及天使+轮融资，累计融资金额近4亿人民币。",
-            "source_content_hash": "c56b4d99a50bca6f",
-            "quote_hash": "e57efe8bd7afc12cc24ebe453f5741a2a665374dd2c0775d92df37e0493b021a"
-          },
-          {
-            "source_id": "FISRC-55d8269584f9e05b",
-            "quote": "超衍智能 完成天使轮及天使+轮融资，累计融资金额近4亿人民币。天使轮由 IDG 资本、星连资本、晶泰科技联合领投，德迅资本、无限基金、初心资本、云岫资本跟投；天使+轮由中关村科学城基金、深创投及上海未来产业基金联合领投。",
-            "source_content_hash": "c56b4d99a50bca6f",
-            "quote_hash": "1a3672d807169aa8c5b87fe8a89f7498d6a4b5bd8245a289291aaf5bf5057763"
-          }
-        ],
-        "round_code": "angel_plus",
-        "round_original": "天使+轮",
-        "amount_original": "近4亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 400000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "approximate",
-          "display_zh": "约 4 亿元"
-        },
-        "total_raised_original": "近4亿人民币",
-        "total_raised_normalized": {
-          "currency": "CNY",
-          "value": 400000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "approximate",
-          "display_zh": "约 4 亿元"
-        },
-        "risk_markers": [],
-        "disclosures": [
-          {
-            "event_id": "EV-f70e34d7f7d5769a",
-            "round_original": "天使+轮",
-            "amount": "近4亿元",
-            "announced_at": "2026-09-16",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-55d8269584f9e05b",
-                "quote": "投资界（ID：pedaily2012）9月16日消息，超衍智能 完成天使轮及天使+轮融资，累计融资金额近4亿人民币。",
-                "source_content_hash": "c56b4d99a50bca6f",
-                "quote_hash": "e57efe8bd7afc12cc24ebe453f5741a2a665374dd2c0775d92df37e0493b021a"
-              },
-              {
-                "source_id": "FISRC-55d8269584f9e05b",
-                "quote": "超衍智能 完成天使轮及天使+轮融资，累计融资金额近4亿人民币。天使轮由 IDG 资本、星连资本、晶泰科技联合领投，德迅资本、无限基金、初心资本、云岫资本跟投；天使+轮由中关村科学城基金、深创投及上海未来产业基金联合领投。",
-                "source_content_hash": "c56b4d99a50bca6f",
-                "quote_hash": "1a3672d807169aa8c5b87fe8a89f7498d6a4b5bd8245a289291aaf5bf5057763"
-              }
-            ]
-          }
-        ],
-        "disclosure_status": "disclosed"
-      },
-      "products": [
-        {
-          "name": "自进化基础大模型",
-          "description": "构建下一代自进化基础大模型，通过中训练和后训练引导模型提出创造力的想法，并自主完成“假设—实验—验证—迭代”的自进化全过程。",
-          "target_customers": "凡研发流程可结构化、结果可度量的领域，如芯片设计与仿真、分子研发、量化策略迭代",
-          "features": [
-            "递归自我改进（Recursive Self-Improvement）",
-            "自主完成假设—实验—验证—迭代全流程",
-            "聚焦科学研究与发现"
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-55d8269584f9e05b",
-              "quote": "主营业务是构建下一代自进化基础大模型。所谓自进化，即Recursive Self-Improvement——模型自己改进自己。",
-              "source_content_hash": "c56b4d99a50bca6f",
-              "quote_hash": "7addd99909a0a48c63dc7cd0e99b51804ffa50ee19cb9d49afef473bf8ed7361"
-            },
-            {
-              "source_id": "FISRC-55d8269584f9e05b",
-              "quote": "通过中训练和后训练，引导模型提出创造力的想法、并自主完成“假设—实验—验证—迭代”的自进化全过程。",
-              "source_content_hash": "c56b4d99a50bca6f",
-              "quote_hash": "6b9160f8aa8c8f86b3c13961f7cca6357c4ad3c7100f4416c741472c1516e985"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "自动化AI研究系统",
-          "description": "让AI自主发现并验证贯穿整个训练技术栈的改进方案，覆盖模型扩展规律预测、固定预算语言模型训练和GPU Kernel性能优化等方向。",
-          "target_customers": "AI研究团队与基础设施团队",
-          "features": [
-            "Discover → Verify → Learn → Improve 四阶段递归研究循环",
-            "在SLDBench SimpleTES、GPUMode TriMul、MLS-Bench Fused Causal Attention上取得SOTA"
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6069a300a4dbb914",
-              "quote": "我们构建了超衍智能（Apex Intelligence）的自动化 AI 研究系统，希望让 AI 自主发现并验证贯穿整个训练技术栈的改进方案。",
-              "source_content_hash": "a9542fd86cd2603e",
-              "quote_hash": "b4d1d846b5769e60714fb452a04c8aa48bffbb501f815ae6de182370a0af2d51"
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "customers": [],
-      "comparisons": [
-        {
-          "name": "TTT-Discover",
-          "product": "GPU Kernel优化方案",
-          "scenario": "GPUMode TriMul H100任务中优化AlphaFold类蛋白质结构模型的outgoing Triangle Multiplicative Update",
-          "target_customer": "AI基础设施与高性能计算团队",
-          "funding_summary": "",
-          "core_difference": "超衍智能自动化AI系统在七种H100工作负载上的几何平均延迟降至1,036.1 μs，低于TTT-Discover公开报告的1,161 μs。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6069a300a4dbb914",
-              "quote": "其中，TriMul 的成绩超过了由 Stanford、NVIDIA 等机构研究者共同开发的 TTT-Discover",
-              "source_content_hash": "a9542fd86cd2603e",
-              "quote_hash": "a24c06b014c1b60ac89525bc5cda832e151f7ea60d9ef895637d69dab90cc077"
-            },
-            {
-              "source_id": "FISRC-6069a300a4dbb914",
-              "quote": "从各自公开报告的数值看，它也低于 shiyegao CUDA（1,074 μs）、Zeyu Shen Triton（1,140 μs）和 TTT-Discover（1,161 μs）",
-              "source_content_hash": "a9542fd86cd2603e",
-              "quote_hash": "53dbacce69fffe3479ebd73dc28891202aaa59c70ba5c9f26e49c3b22169028b"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "Recursive SuperIntelligence",
-          "product": "NanoChat Autoresearch方案",
-          "scenario": "固定300秒、单张B200 GPU预算下的语言模型训练",
-          "target_customer": "AI研究团队",
-          "funding_summary": "",
-          "core_difference": "超衍智能AI系统取得0.892426 val_bpb，超过Recursive SuperIntelligence在2026年6月公布的最佳单次结果0.903891及10个随机种子平均成绩0.9108745。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6069a300a4dbb914",
-              "quote": "这一成绩超过了 Recursive SuperIntelligence 在 2026 年 6 月公布的最佳单次结果 0.903891 及 10 个随机种子的平均成绩 0.9108745",
-              "source_content_hash": "a9542fd86cd2603e",
-              "quote_hash": "dcfa7da24e209f53f227fd933c0e862c49648f42b52ceebadd288c164e2b1f1b"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "腾讯混元Hyra",
-          "product": "NanoChat Autoresearch方案",
-          "scenario": "固定300秒、单张B200 GPU预算下的语言模型训练",
-          "target_customer": "AI研究团队",
-          "funding_summary": "",
-          "core_difference": "超衍智能AI系统取得0.892426 val_bpb，超过腾讯混元在2026年7月发布的Hyra成绩0.901543。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6069a300a4dbb914",
-              "quote": "也超过了腾讯混元在 2026 年 7 月发布的 Hyra 成绩 0.901543",
-              "source_content_hash": "a9542fd86cd2603e",
-              "quote_hash": "3b94b3bbf9035a974e5f594195a4e5d1160608e56d16f40ad6971f67393d4fc2"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "AutoTrust AI ScienceGuru",
-          "product": "NanoChat Autoresearch方案",
-          "scenario": "固定300秒、单张B200 GPU预算下的语言模型训练",
-          "target_customer": "AI研究团队",
-          "funding_summary": "",
-          "core_difference": "超衍智能AI系统取得0.892426 val_bpb，接近公开排行榜领先者AutoTrust AI的ScienceGuru成绩0.889522。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6069a300a4dbb914",
-              "quote": "截至 2026 年 9 月，它已接近公开排行榜领先者 AutoTrust AI 的 ScienceGuru（ 0.889522 ）",
-              "source_content_hash": "a9542fd86cd2603e",
-              "quote_hash": "f75b70170397332ce95979f86068078010f1d3375f2d11976341f32ba7220c1f"
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "metrics": [
-        {
-          "label": "SLDBench SimpleTES四任务平均分",
-          "value": "0.8846",
-          "observed_at": "2026-09-10",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6069a300a4dbb914",
-              "quote": "四任务平均分由 0.8613 提升至 0.8846，增幅为 2.71%",
-              "source_content_hash": "a9542fd86cd2603e",
-              "quote_hash": "f1fd58c1ac083b7d3f77ab7903d44c3d973aaffc3d5332a0c0fdcfbd759b89d8"
-            }
-          ]
-        },
-        {
-          "label": "GPUMode TriMul H100几何平均延迟",
-          "value": "1,036.1 μs",
-          "observed_at": "2026-09-10",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6069a300a4dbb914",
-              "quote": "在七种 H100 工作负载上，我们的 AI 系统将几何平均延迟降至 1,036.1 μs",
-              "source_content_hash": "a9542fd86cd2603e",
-              "quote_hash": "5ffed9d6a15b9a09e62d774f662c0a9998dead5a89bb866f5007eb2e09a1abe2"
-            }
-          ]
-        },
-        {
-          "label": "MLS-Bench Fused Causal Attention吞吐量（头维度64）",
-          "value": "430.7 TFLOP/s",
-          "observed_at": "2026-09-10",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6069a300a4dbb914",
-              "quote": "在三种 fused-attention 配置下，我们的 AI 系统分别达到 430.7、468.4 和 451.7 TFLOP/s",
-              "source_content_hash": "a9542fd86cd2603e",
-              "quote_hash": "c6939c209f99111d4ec9f36c34265140f6a5f59e102ee4f951e23a2dc188a3c3"
-            }
-          ]
-        },
-        {
-          "label": "MLS-Bench Fused Causal Attention吞吐量（头维度128）",
-          "value": "468.4 TFLOP/s",
-          "observed_at": "2026-09-10",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6069a300a4dbb914",
-              "quote": "在三种 fused-attention 配置下，我们的 AI 系统分别达到 430.7、468.4 和 451.7 TFLOP/s",
-              "source_content_hash": "a9542fd86cd2603e",
-              "quote_hash": "c6939c209f99111d4ec9f36c34265140f6a5f59e102ee4f951e23a2dc188a3c3"
-            }
-          ]
-        },
-        {
-          "label": "MLS-Bench Fused Causal Attention吞吐量（头维度256）",
-          "value": "451.7 TFLOP/s",
-          "observed_at": "2026-09-10",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6069a300a4dbb914",
-              "quote": "在三种 fused-attention 配置下，我们的 AI 系统分别达到 430.7、468.4 和 451.7 TFLOP/s",
-              "source_content_hash": "a9542fd86cd2603e",
-              "quote_hash": "c6939c209f99111d4ec9f36c34265140f6a5f59e102ee4f951e23a2dc188a3c3"
-            }
-          ]
-        },
-        {
-          "label": "NanoChat训练峰值显存降幅",
-          "value": "20.9%",
-          "observed_at": "2026-09-10",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6069a300a4dbb914",
-              "quote": "改动后，训练峰值显存从约 177.7 GB 降至 140.6 GB，下降 20.9%",
-              "source_content_hash": "a9542fd86cd2603e",
-              "quote_hash": "f9f230553eb82fba7ff09bdc0013e54932ee39d3621b96682d076cdc35328bee"
-            }
-          ]
-        }
-      ],
-      "quotes": [
-        {
-          "speaker": "陈勇超",
-          "quote": "我一直坚信，由人类教出来的模型，天花板就是人类自己——用人的偏好去对齐它，智能上限就被锁死在人的水平线上，再怎么堆算力和数据，也只是把已有的知识记得更牢。真正的智能，上限只能由客观世界来定义。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-55d8269584f9e05b",
-              "quote": "我一直坚信，由人类教出来的模型，天花板就是人类自己——用人的偏好去对齐它，智能上限就被锁死在人的水平线上，再怎么堆算力和数据，也只是把已有的知识记得更牢。真正的智能，上限只能由客观世界来定义。",
-              "source_content_hash": "c56b4d99a50bca6f",
-              "quote_hash": "9b081519473323f7d6730f2ce941173d441d4f4060352dd5ec394a623dddc969"
-            }
-          ]
-        },
-        {
-          "speaker": "张鸣晨",
-          "quote": "大模型的下一阶段不只是继续scaling 参数和数据，而是 scaling experience、feedback 和 discovery，让 AI 真正进入研发过程，并在持续试错中获得自我进化的能力。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-55d8269584f9e05b",
-              "quote": "大模型的下一阶段不只是继续scaling 参数和数据，而是 scaling experience、feedback 和 discovery，让 AI 真正进入研发过程，并在持续试错中获得自我进化的能力。",
-              "source_content_hash": "c56b4d99a50bca6f",
-              "quote_hash": "cc962040d88950e566b12b08bb0e08cc171a3ed4e0aafe1b67de62c45960d475"
-            }
-          ]
-        }
-      ],
-      "analysis": {
-        "investment_rationale": [
-          {
-            "institution": "星连资本",
-            "speaker": "张鸣晨",
-            "speaker_role": "星连资本主管合伙人",
-            "rationale": "星连资本认为大模型下一阶段的核心是scaling experience、feedback和discovery，让AI进入研发过程并在持续试错中获得自我进化能力；同时看好陈勇超作为researcher founder兼具研究前沿与工程直觉。",
-            "quote": "大模型的下一阶段不只是继续scaling 参数和数据，而是 scaling experience、feedback 和 discovery，让 AI 真正进入研发过程，并在持续试错中获得自我进化的能力。勇超是非常年轻的 researcher founder：既长期站在模型、agent 和 AI4S 的研究前沿，又对如何把前沿研究变成真实系统有非常强的工程直觉和执行力。",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-55d8269584f9e05b",
-                "quote": "大模型的下一阶段不只是继续scaling 参数和数据，而是 scaling experience、feedback 和 discovery，让 AI 真正进入研发过程，并在持续试错中获得自我进化的能力。勇超是非常年轻的 researcher founder：既长期站在模型、agent 和 AI4S 的研究前沿，又对如何把前沿研究变成真实系统有非常强的工程直觉和执行力。",
-                "source_content_hash": "c56b4d99a50bca6f",
-                "quote_hash": "158579c7e576ee75e43e0804486ea42ac9c41b6bb89e495b1989249fe7b0afdf"
-              }
-            ]
-          }
-        ],
-        "capital_judgment": "资本押注的核心变量是递归自我改进（RSI）能否从benchmark验证走向可迁移的通用研究能力。已验证信号包括：自动化AI研究系统在SLDBench SimpleTES、GPUMode TriMul H100和MLS-Bench Fused Causal Attention三项官方评测中刷新SOTA，其中TriMul超过Stanford、NVIDIA等机构参与的TTT-Discover，NanoChat Autoresearch成绩超过Recursive SuperIntelligence和腾讯混元Hyra。但当前证据边界在于：这些验证集中在模型训练栈内部的kernel优化、scaling law预测和固定预算训练，尚未展示在芯片设计、分子研发等目标产业场景中的端到端研发成果；公司成立于2026年6月，尚无公开客户或商业化收入数据。",
-        "validated_signals": [
-          "自动化AI研究系统在SLDBench SimpleTES四项任务上均超过此前公开参考结果，四任务平均分由0.8613提升至0.8846",
-          "GPUMode TriMul H100几何平均延迟降至1,036.1 μs，超过TTT-Discover公开报告的1,161 μs",
-          "MLS-Bench Fused Causal Attention三项配置均刷新此前最佳结果，提升幅度分别为27.18%、15.63%和17.11%",
-          "NanoChat Autoresearch取得0.892426 val_bpb，超过Recursive SuperIntelligence和腾讯混元Hyra已公开成绩"
-        ],
-        "risks": [
-          "当前验证集中在AI训练栈内部的benchmark任务，尚未证明自进化能力可迁移到芯片设计、分子研发等目标产业场景",
-          "公司成立时间极短且无公开客户或商业化收入，产品仍处于早期研发阶段"
-        ],
-        "related_direction_id": "",
-        "taxonomy_version": "TAG-V4.1",
-        "product_form_id": "model",
-        "market_category_id": "infrastructure_compute",
-        "market_subcategory_id": "development_deployment",
-        "market_application_id": "models",
-        "use_case_ids": [
-          "research_discovery"
-        ],
-        "industry_ids": [],
-        "target_user_ids": [
-          "researcher"
-        ],
-        "sector": "自进化基础大模型与自动化AI研究",
-        "investment_thesis": {
-          "statement": "资本押注的核心变量是递归自我改进（RSI）能否从benchmark验证走向可迁移的通用研究能力。已验证信号包括：自动化AI研究系统在SLDBench SimpleTES、GPUMode TriMul H100和MLS-Bench Fused Causal Attention三项官方评测中刷新SOTA，其中TriMul超过Stanford、NVIDIA等机构参与的TTT-Discover，NanoChat Autoresearch成绩超过Recursive SuperIntelligence和腾讯混元Hyra。但当前证据边界在于：这些验证集中在模型训练栈内部的kernel优化、scaling law预测和固定预算训练，尚未展示在芯片设计、分子研发等目标产业场景中的端到端研发成果；公司成立于2026年6月，尚无公开客户或商业化收入数据。",
-          "evidence_signals": [
-            "自动化AI研究系统在SLDBench SimpleTES四项任务上均超过此前公开参考结果，四任务平均分由0.8613提升至0.8846",
-            "GPUMode TriMul H100几何平均延迟降至1,036.1 μs，超过TTT-Discover公开报告的1,161 μs",
-            "MLS-Bench Fused Causal Attention三项配置均刷新此前最佳结果，提升幅度分别为27.18%、15.63%和17.11%",
-            "NanoChat Autoresearch取得0.892426 val_bpb，超过Recursive SuperIntelligence和腾讯混元Hyra已公开成绩"
-          ],
-          "risks": [
-            "当前验证集中在AI训练栈内部的benchmark任务，尚未证明自进化能力可迁移到芯片设计、分子研发等目标产业场景",
-            "公司成立时间极短且无公开客户或商业化收入，产品仍处于早期研发阶段"
-          ],
-          "institutional_rationale_status": "disclosed"
-        }
-      },
-      "entity_links": [
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "自进化基础大模型",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "自动化AI研究系统",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "founded_by",
-          "target_kind": "person",
-          "research_name": "陈勇超",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "IDG资本",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "星连资本",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "晶泰科技",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "德迅资本",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "无限基金",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "初心资本",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "云岫资本",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "中关村科学城基金",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "深创投",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "上海未来产业基金",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "compared_with",
-          "target_kind": "organization",
-          "research_name": "TTT-Discover",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "compared_with",
-          "target_kind": "organization",
-          "research_name": "Recursive SuperIntelligence",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "compared_with",
-          "target_kind": "organization",
-          "research_name": "腾讯混元Hyra",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "compared_with",
-          "target_kind": "organization",
-          "research_name": "AutoTrust AI ScienceGuru",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        }
-      ],
-      "funding_history": [
-        {
-          "event_id": "EV-f70e34d7f7d5769a",
-          "date": "2026-09-16",
-          "title": "超衍智能完成近4亿元天使系列融资，构建自进化基础大模型",
-          "amount": "近4亿元",
-          "source_refs": [
-            "SA-33600b3712ed722a"
-          ]
-        }
-      ],
-      "research_sources": [
-        {
-          "source_id": "FISRC-55d8269584f9e05b",
-          "source_url": "https://news.pedaily.cn/202609/569092.shtml",
-          "title": "超衍智能完成近4亿元天使系列融资，构建自进化基础大模型",
-          "publisher": "投资界",
-          "source_class": "canonical_event_source",
-          "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-09-16T04:25:46.907Z",
-          "content_hash": "c56b4d99a50bca6f",
-          "source_artifact_id": "SA-33600b3712ed722a",
-          "raw_id": "RAW-43df64764a1321e3"
-        },
-        {
-          "source_id": "FISRC-ec46e359ffa28db9",
-          "source_url": "https://www.liepin.com/job/1985021717.shtml",
-          "title": "【北京 前后端开发工程师招聘】-超衍智能科技(北京)有限公司北京招聘信息-猎聘",
-          "publisher": "liepin.com",
-          "source_class": "independent",
-          "capture_method": "exa_captured_content",
-          "captured_at": "2026-09-16T04:29:57.081Z",
-          "content_hash": "27728b7857c48e39",
-          "source_artifact_id": null,
-          "raw_id": null
-        },
-        {
-          "source_id": "FISRC-6069a300a4dbb914",
-          "source_url": "https://eu.36kr.com/zh/p/3977008691664776",
-          "title": "AI改进AI会发生什么？超衍智能自动化AI系统刷新3项SOTA记录",
-          "publisher": "eu.36kr.com",
-          "source_class": "secondary",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-09-16T04:29:57.859Z",
-          "content_hash": "a9542fd86cd2603e",
-          "source_artifact_id": null,
-          "raw_id": null
-        }
-      ],
-      "model_provenance": {
-        "provider": "deepseek",
-        "model": "deepseek-v4-pro",
-        "attempts": 1,
-        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
-        "generated_at": "2026-09-16T04:30:32.954Z",
-        "taxonomy_classification": {
-          "taxonomy_version": "TAG-V4.1",
-          "method": "deepseek_evidence_review",
-          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
-          "decision_event_id": "EV-f70e34d7f7d5769a",
-          "confidence": 0.75,
-          "needs_review": true
-        }
-      },
-      "auto_publish_gate": {
-        "passed": true,
-        "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
-      },
-      "publication_status": "auto_published",
-      "published_at": "2026-09-16T04:30:32.954Z",
-      "customer_research": {
-        "status": "no_verified_customer_found",
-        "verified_customer_count": 0,
-        "searched_source_count": 3
-      },
-      "entity_link_coverage": {
-        "products": {
-          "linked": 0,
-          "total": 2,
-          "unresolved_names": [
-            "自动化AI研究系统",
-            "自进化基础大模型"
-          ]
-        },
-        "founders": {
-          "linked": 0,
-          "total": 1,
-          "unresolved_names": [
-            "陈勇超"
-          ]
-        }
-      },
-      "source_event_ids": [
-        "EV-f70e34d7f7d5769a"
-      ],
-      "aggregation": {
-        "key": "EN-d817dfb0312f7af0|angel_plus",
-        "event_count": 1,
-        "strategy": "company_and_normalized_round"
-      }
-    },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-cc260ab424e940a9",
@@ -2527,1157 +1767,6 @@
     },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
-      "funding_insight_id": "FI-9fc87c99a98d17af",
-      "triggered_by_event_id": "EV-4e00ddcb0bc4f2bb",
-      "as_of_date": "2026-09-16",
-      "company": {
-        "entity_id": "EN-897502f225e38bf5",
-        "name": "Positron AI",
-        "full_name": "Positron AI",
-        "website": "positron.ai",
-        "summary": "Positron AI 是一家AI推理硬件公司，致力于让AI模型服务成本大幅降低并提升能效。公司采用内存优先的推理系统设计，使用LPDDR5X内存以规避HBM和CoWoS供应链限制。",
-        "headquarters": "Reno, Nevada",
-        "founders": [],
-        "team_size": {
-          "value": "",
-          "observed_at": "",
-          "evidence_refs": []
-        },
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-3947ce709f26c22a",
-            "quote": "Positron AI, the AI inference hardware company built to make serving AI models dramatically cheaper and more energy efficient",
-            "source_content_hash": "3b3748bbe90ac495",
-            "quote_hash": "e847e3feaa2e061ff19aec0e2ee27a821bb86ce9710a487401efe6ab2d88042d"
-          },
-          {
-            "source_id": "FISRC-1029fa42a9437905",
-            "quote": "Founded in 2023, Positron develops hardware and software designed specifically for AI inference",
-            "source_content_hash": "4c1808f69caea175",
-            "quote_hash": "cfeed27dca51e6e259e7570734d0144686e5025f0428acef29cde5b8028fd308"
-          }
-        ],
-        "application_entity_id": "EN-897502f225e38bf5",
-        "canonical_entity_consistent": false
-      },
-      "financing": {
-        "round": "C轮",
-        "amount": "$875 million",
-        "total_raised": "",
-        "announced_at": "2026-09-10",
-        "investor_disclosure_status": "disclosed",
-        "investors": [
-          {
-            "name": "NEA",
-            "role": "本轮联合领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3947ce709f26c22a",
-                "quote": "The round was co-led by NEA, Atreides Management, Valor Equity Partners, Andra Capital, Dylan Patel's SemiAnalysis Capital and Jim Clark",
-                "source_content_hash": "3b3748bbe90ac495",
-                "quote_hash": "7d031291b7451816f12e8fbfdda6c4fe52f0c471626ca1e7f2eb4a9b185c0dda"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Atreides Management",
-            "role": "本轮联合领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3947ce709f26c22a",
-                "quote": "The round was co-led by NEA, Atreides Management, Valor Equity Partners, Andra Capital, Dylan Patel's SemiAnalysis Capital and Jim Clark",
-                "source_content_hash": "3b3748bbe90ac495",
-                "quote_hash": "7d031291b7451816f12e8fbfdda6c4fe52f0c471626ca1e7f2eb4a9b185c0dda"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Valor Equity Partners",
-            "role": "本轮联合领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3947ce709f26c22a",
-                "quote": "The round was co-led by NEA, Atreides Management, Valor Equity Partners, Andra Capital, Dylan Patel's SemiAnalysis Capital and Jim Clark",
-                "source_content_hash": "3b3748bbe90ac495",
-                "quote_hash": "7d031291b7451816f12e8fbfdda6c4fe52f0c471626ca1e7f2eb4a9b185c0dda"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Andra Capital",
-            "role": "本轮联合领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3947ce709f26c22a",
-                "quote": "The round was co-led by NEA, Atreides Management, Valor Equity Partners, Andra Capital, Dylan Patel's SemiAnalysis Capital and Jim Clark",
-                "source_content_hash": "3b3748bbe90ac495",
-                "quote_hash": "7d031291b7451816f12e8fbfdda6c4fe52f0c471626ca1e7f2eb4a9b185c0dda"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "SemiAnalysis Capital",
-            "role": "本轮联合领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3947ce709f26c22a",
-                "quote": "The round was co-led by NEA, Atreides Management, Valor Equity Partners, Andra Capital, Dylan Patel's SemiAnalysis Capital and Jim Clark",
-                "source_content_hash": "3b3748bbe90ac495",
-                "quote_hash": "7d031291b7451816f12e8fbfdda6c4fe52f0c471626ca1e7f2eb4a9b185c0dda"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Jim Clark",
-            "role": "本轮联合领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3947ce709f26c22a",
-                "quote": "The round was co-led by NEA, Atreides Management, Valor Equity Partners, Andra Capital, Dylan Patel's SemiAnalysis Capital and Jim Clark, the founder of Silicon Graphics and Netscape",
-                "source_content_hash": "3b3748bbe90ac495",
-                "quote_hash": "892e057520686ed3c425d014c115cc4b4a2adc47b7ef540525219718006ea76d"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "DFJ Growth",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3947ce709f26c22a",
-                "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures",
-                "source_content_hash": "3b3748bbe90ac495",
-                "quote_hash": "14acf8487753140c42185c176a49f166414f5d49ca282b2a8a6f493d6c5db6f8"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Qatar Investment Authority (QIA)",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3947ce709f26c22a",
-                "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures",
-                "source_content_hash": "3b3748bbe90ac495",
-                "quote_hash": "14acf8487753140c42185c176a49f166414f5d49ca282b2a8a6f493d6c5db6f8"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Resilience Reserve",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3947ce709f26c22a",
-                "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures",
-                "source_content_hash": "3b3748bbe90ac495",
-                "quote_hash": "14acf8487753140c42185c176a49f166414f5d49ca282b2a8a6f493d6c5db6f8"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Arena Private Wealth",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3947ce709f26c22a",
-                "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures",
-                "source_content_hash": "3b3748bbe90ac495",
-                "quote_hash": "14acf8487753140c42185c176a49f166414f5d49ca282b2a8a6f493d6c5db6f8"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Natural Capital",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3947ce709f26c22a",
-                "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures",
-                "source_content_hash": "3b3748bbe90ac495",
-                "quote_hash": "14acf8487753140c42185c176a49f166414f5d49ca282b2a8a6f493d6c5db6f8"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Helena",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3947ce709f26c22a",
-                "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures",
-                "source_content_hash": "3b3748bbe90ac495",
-                "quote_hash": "14acf8487753140c42185c176a49f166414f5d49ca282b2a8a6f493d6c5db6f8"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "1517 Fund",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3947ce709f26c22a",
-                "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures",
-                "source_content_hash": "3b3748bbe90ac495",
-                "quote_hash": "14acf8487753140c42185c176a49f166414f5d49ca282b2a8a6f493d6c5db6f8"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Flume Ventures",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3947ce709f26c22a",
-                "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures",
-                "source_content_hash": "3b3748bbe90ac495",
-                "quote_hash": "14acf8487753140c42185c176a49f166414f5d49ca282b2a8a6f493d6c5db6f8"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Unless",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3947ce709f26c22a",
-                "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures",
-                "source_content_hash": "3b3748bbe90ac495",
-                "quote_hash": "14acf8487753140c42185c176a49f166414f5d49ca282b2a8a6f493d6c5db6f8"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Boardman Bay Capital Management",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3947ce709f26c22a",
-                "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures",
-                "source_content_hash": "3b3748bbe90ac495",
-                "quote_hash": "14acf8487753140c42185c176a49f166414f5d49ca282b2a8a6f493d6c5db6f8"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Fincadia Advisors",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3947ce709f26c22a",
-                "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures",
-                "source_content_hash": "3b3748bbe90ac495",
-                "quote_hash": "14acf8487753140c42185c176a49f166414f5d49ca282b2a8a6f493d6c5db6f8"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Banyan Ventures",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3947ce709f26c22a",
-                "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures",
-                "source_content_hash": "3b3748bbe90ac495",
-                "quote_hash": "14acf8487753140c42185c176a49f166414f5d49ca282b2a8a6f493d6c5db6f8"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "U First Capital",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3947ce709f26c22a",
-                "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures",
-                "source_content_hash": "3b3748bbe90ac495",
-                "quote_hash": "14acf8487753140c42185c176a49f166414f5d49ca282b2a8a6f493d6c5db6f8"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "VentureTech Alliance",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3947ce709f26c22a",
-                "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures",
-                "source_content_hash": "3b3748bbe90ac495",
-                "quote_hash": "14acf8487753140c42185c176a49f166414f5d49ca282b2a8a6f493d6c5db6f8"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Hudson River Trading",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3947ce709f26c22a",
-                "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures",
-                "source_content_hash": "3b3748bbe90ac495",
-                "quote_hash": "14acf8487753140c42185c176a49f166414f5d49ca282b2a8a6f493d6c5db6f8"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Cisco Investments",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3947ce709f26c22a",
-                "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures",
-                "source_content_hash": "3b3748bbe90ac495",
-                "quote_hash": "14acf8487753140c42185c176a49f166414f5d49ca282b2a8a6f493d6c5db6f8"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Naver Ventures",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3947ce709f26c22a",
-                "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures",
-                "source_content_hash": "3b3748bbe90ac495",
-                "quote_hash": "14acf8487753140c42185c176a49f166414f5d49ca282b2a8a6f493d6c5db6f8"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Liberty Global Tech Ventures",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-1029fa42a9437905",
-                "quote": "Liberty Global Tech Ventures, the technology investment arm of Liberty Global, today announced an investment in Positron AI",
-                "source_content_hash": "4c1808f69caea175",
-                "quote_hash": "fa8e0a5e816a31cdbced711d1aaf4cfe27c36012c87d899a0c2bffa9a8a658e8"
-              }
-            ],
-            "entity_id": null
-          }
-        ],
-        "other_round_investors": [],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-3947ce709f26c22a",
-            "quote": "RENO, Nev. , Sept. 10, 2026 /PRNewswire/ -- Positron AI, the AI inference hardware company built to make serving AI models dramatically cheaper and more energy efficient, today announced an $875 million Series C financing at a $5 billion post-money valuation. The round was co-led by NEA, Atreides Management, Valor Equity Partners, Andra Capital, Dylan Patel's SemiAnalysis Capital and Jim Clark, the founder of Silicon Graphics and Netscape. As part of the financing, Forest Baskett of NEA, Gavin Baker of Atreides Management, Thomas Jermoluk from Jim Clark Office and Dylan Patel will join Positron's board of directors.",
-            "source_content_hash": "3b3748bbe90ac495",
-            "quote_hash": "f743ea3fa59715e6db8db29f7e9f9fcc2adda346a2a7c688bca2523e2921ba8a"
-          },
-          {
-            "source_id": "FISRC-3947ce709f26c22a",
-            "quote": "today announced an $875 million Series C financing at a $5 billion post-money valuation",
-            "source_content_hash": "3b3748bbe90ac495",
-            "quote_hash": "af261f331de0669994aed7d6a6c5b9e63fd308dc417ffdc781604e6c9ef5a4d0"
-          },
-          {
-            "source_id": "FISRC-3947ce709f26c22a",
-            "quote": "The financing was raised in two tranches. The Series C, $375 million at a $3.5 billion pre-money valuation, was co-led by NEA, Andra Capital, Atreides Management, Valor Equity Partners, and Dylan Patel's SemiAnalysis Capital. The Series C-1, up to $500 million, was led by NEA and Jim Clark.",
-            "source_content_hash": "3b3748bbe90ac495",
-            "quote_hash": "16086a73dfc72810e8faeef7c64165f9d464f4027691355b071130b6acb1948b"
-          }
-        ],
-        "round_code": "series_c",
-        "round_original": "Series C",
-        "amount_original": "$875 million",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 875000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "8.75 亿美元"
-        },
-        "total_raised_original": "",
-        "total_raised_normalized": {
-          "currency": "",
-          "value": null,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "undisclosed",
-          "display_zh": ""
-        },
-        "risk_markers": [],
-        "disclosures": [
-          {
-            "event_id": "EV-4e00ddcb0bc4f2bb",
-            "round_original": "Series C",
-            "amount": "$875 million",
-            "announced_at": "2026-09-10",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3947ce709f26c22a",
-                "quote": "RENO, Nev. , Sept. 10, 2026 /PRNewswire/ -- Positron AI, the AI inference hardware company built to make serving AI models dramatically cheaper and more energy efficient, today announced an $875 million Series C financing at a $5 billion post-money valuation. The round was co-led by NEA, Atreides Management, Valor Equity Partners, Andra Capital, Dylan Patel's SemiAnalysis Capital and Jim Clark, the founder of Silicon Graphics and Netscape. As part of the financing, Forest Baskett of NEA, Gavin Baker of Atreides Management, Thomas Jermoluk from Jim Clark Office and Dylan Patel will join Positron's board of directors.",
-                "source_content_hash": "3b3748bbe90ac495",
-                "quote_hash": "f743ea3fa59715e6db8db29f7e9f9fcc2adda346a2a7c688bca2523e2921ba8a"
-              },
-              {
-                "source_id": "FISRC-3947ce709f26c22a",
-                "quote": "today announced an $875 million Series C financing at a $5 billion post-money valuation",
-                "source_content_hash": "3b3748bbe90ac495",
-                "quote_hash": "af261f331de0669994aed7d6a6c5b9e63fd308dc417ffdc781604e6c9ef5a4d0"
-              },
-              {
-                "source_id": "FISRC-3947ce709f26c22a",
-                "quote": "The financing was raised in two tranches. The Series C, $375 million at a $3.5 billion pre-money valuation, was co-led by NEA, Andra Capital, Atreides Management, Valor Equity Partners, and Dylan Patel's SemiAnalysis Capital. The Series C-1, up to $500 million, was led by NEA and Jim Clark.",
-                "source_content_hash": "3b3748bbe90ac495",
-                "quote_hash": "16086a73dfc72810e8faeef7c64165f9d464f4027691355b071130b6acb1948b"
-              }
-            ]
-          }
-        ],
-        "disclosure_status": "disclosed"
-      },
-      "products": [
-        {
-          "name": "Atlas",
-          "description": "Positron AI 的第一代推理系统，已在Oracle Cloud Infrastructure部署超过50个机架。",
-          "target_customers": "云服务提供商、推理服务商、金融机构、游戏基础设施商",
-          "features": [
-            "内存优先推理系统",
-            "部署于Oracle Cloud Infrastructure",
-            "支持空气冷却或液体冷却数据中心"
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3947ce709f26c22a",
-              "quote": "Positron is deploying more than 50 racks of Atlas, its first-generation inference system, at Oracle Cloud Infrastructure",
-              "source_content_hash": "3b3748bbe90ac495",
-              "quote_hash": "4495d6e7b2d99ca1351255ce70b54c0a8ac6972365d599e4a13748ca0921536d"
-            },
-            {
-              "source_id": "FISRC-3947ce709f26c22a",
-              "quote": "Positron's energy-efficient architecture allows its systems to be deployed in air-cooled or liquid-cooled data centers at varying rack densities",
-              "source_content_hash": "3b3748bbe90ac495",
-              "quote_hash": "d52c2daf5270b63ed4cc373aa9b95a6f5e2d4169cf4126b335dd48410b98a010"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "Asimov",
-          "description": "Positron AI 的下一代定制推理芯片，采用TSMC N3P工艺，计划2026年底流片，2027年下半年量产。每芯片搭载288GB至2,304GB内存。",
-          "target_customers": "AI推理基础设施采购方",
-          "features": [
-            "TSMC N3P工艺",
-            "288 GB 至 2,304 GB 内存",
-            "使用LPDDR5X内存",
-            "有机基板，不依赖CoWoS"
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3947ce709f26c22a",
-              "quote": "Asimov tapes out on TSMC N3P at the end of 2026, with production in the second half of 2027, and pairs Positron's compute architecture with 288 GB to 2,304 GB of memory per chip",
-              "source_content_hash": "3b3748bbe90ac495",
-              "quote_hash": "90c69367895d9920187bddd6a131b9ad08300cc0a33f033dce472022ee16afeb"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "Titan",
-          "description": "Positron AI 的下一代推理系统，将4至8颗Asimov芯片组合为单一系统，设计用于在单节点服务超过16万亿参数的模型和超过1000万token的上下文窗口。",
-          "target_customers": "需要大规模推理部署的企业和云服务商",
-          "features": [
-            "4至8颗Asimov芯片组合",
-            "支持超过16万亿参数模型",
-            "支持超过1000万token上下文窗口",
-            "可扩展至数千节点"
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3947ce709f26c22a",
-              "quote": "Titan combines four to eight Asimov chips into a single system, designed to serve models beyond 16 trillion parameters and context windows beyond 10 million tokens in a single node, scaling to thousands of nodes",
-              "source_content_hash": "3b3748bbe90ac495",
-              "quote_hash": "84790d9d8c4ea474bda50732ecc64a97dd2b91d8abc5d69d7f31f071d802b855"
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "customers": [
-        {
-          "name": "Oracle Cloud Infrastructure",
-          "industry": "云计算",
-          "use_case": "部署Atlas推理系统",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3947ce709f26c22a",
-              "quote": "Positron is deploying more than 50 racks of Atlas, its first-generation inference system, at Oracle Cloud Infrastructure",
-              "source_content_hash": "3b3748bbe90ac495",
-              "quote_hash": "4495d6e7b2d99ca1351255ce70b54c0a8ac6972365d599e4a13748ca0921536d"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "Parasail",
-          "industry": "AI推理服务",
-          "use_case": "利用Atlas容量支撑其推理服务",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3947ce709f26c22a",
-              "quote": "Parasail, a key partner, utilizes that capacity to power its own inference service",
-              "source_content_hash": "3b3748bbe90ac495",
-              "quote_hash": "4ea68b113b79e64c976a1ec087887a6c417fd7270970584fa5458ba3c73d74f2"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "Jump Trading",
-          "industry": "金融交易",
-          "use_case": "Atlas生产客户",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3947ce709f26c22a",
-              "quote": "Additional Atlas production customers include Jump Trading and i3d.net",
-              "source_content_hash": "3b3748bbe90ac495",
-              "quote_hash": "3cb9be9d2f18210133c19a5be68165df76e00285b59b40c584554be233fa8df0"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "i3d.net",
-          "industry": "游戏基础设施",
-          "use_case": "Atlas生产客户",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3947ce709f26c22a",
-              "quote": "Additional Atlas production customers include Jump Trading and i3d.net",
-              "source_content_hash": "3b3748bbe90ac495",
-              "quote_hash": "3cb9be9d2f18210133c19a5be68165df76e00285b59b40c584554be233fa8df0"
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "comparisons": [
-        {
-          "name": "Nvidia",
-          "product": "H100/H200/Rubin系列GPU",
-          "scenario": "AI推理部署，特别是大语言模型推理",
-          "target_customer": "云服务商和企业AI基础设施采购方",
-          "funding_summary": "",
-          "core_difference": "Nvidia GPU依赖HBM和CoWoS封装，Positron的Asimov使用LPDDR5X和有机基板，规避HBM供应链瓶颈；Positron声称实现超过90%内存带宽利用率，而GPU推理部署通常低于30%。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3947ce709f26c22a",
-              "quote": "are built on commodity LPDDR5X memory that sidesteps constrained HBM and CoWoS supply chains",
-              "source_content_hash": "3b3748bbe90ac495",
-              "quote_hash": "138a3e374619a04050bb489a6cc1141dca92d9ff32d62b2fa2d982d83dd6fbce"
-            }
-          ],
-          "entity_id": "EN-8d4321d936320802"
-        }
-      ],
-      "metrics": [
-        {
-          "label": "本轮融资金额",
-          "value": "$875 million",
-          "observed_at": "2026-09-10",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3947ce709f26c22a",
-              "quote": "today announced an $875 million Series C financing at a $5 billion post-money valuation",
-              "source_content_hash": "3b3748bbe90ac495",
-              "quote_hash": "af261f331de0669994aed7d6a6c5b9e63fd308dc417ffdc781604e6c9ef5a4d0"
-            }
-          ]
-        },
-        {
-          "label": "投后估值",
-          "value": "$5 billion",
-          "observed_at": "2026-09-10",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3947ce709f26c22a",
-              "quote": "today announced an $875 million Series C financing at a $5 billion post-money valuation",
-              "source_content_hash": "3b3748bbe90ac495",
-              "quote_hash": "af261f331de0669994aed7d6a6c5b9e63fd308dc417ffdc781604e6c9ef5a4d0"
-            }
-          ]
-        },
-        {
-          "label": "Series C 金额",
-          "value": "$375 million",
-          "observed_at": "2026-09-10",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3947ce709f26c22a",
-              "quote": "The Series C, $375 million at a $3.5 billion pre-money valuation",
-              "source_content_hash": "3b3748bbe90ac495",
-              "quote_hash": "cfeb0a28ecb1cd20c8064a776c8e0866a7f9e6c0ab7aaa7923d56f0ac204a470"
-            }
-          ]
-        },
-        {
-          "label": "Series C-1 金额",
-          "value": "up to $500 million",
-          "observed_at": "2026-09-10",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3947ce709f26c22a",
-              "quote": "The Series C-1, up to $500 million, was led by NEA and Jim Clark",
-              "source_content_hash": "3b3748bbe90ac495",
-              "quote_hash": "d0a6e9379063e8fd7f6c704aa4232a655f187e54b3aeb89e9d6d41af91928c47"
-            }
-          ]
-        },
-        {
-          "label": "Atlas部署规模",
-          "value": "超过50个机架",
-          "observed_at": "2026-09-10",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3947ce709f26c22a",
-              "quote": "Positron is deploying more than 50 racks of Atlas, its first-generation inference system, at Oracle Cloud Infrastructure",
-              "source_content_hash": "3b3748bbe90ac495",
-              "quote_hash": "4495d6e7b2d99ca1351255ce70b54c0a8ac6972365d599e4a13748ca0921536d"
-            }
-          ]
-        },
-        {
-          "label": "内存带宽利用率",
-          "value": "超过90%",
-          "observed_at": "2026-09-10",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3947ce709f26c22a",
-              "quote": "Its next-gen systems realize more than 90 percent of their available memory bandwidth",
-              "source_content_hash": "3b3748bbe90ac495",
-              "quote_hash": "612eab18fcc3372047b2b610edf9b3565b9648b11a181ab7d019398f5b898d4f"
-            }
-          ]
-        },
-        {
-          "label": "Asimov单芯片内存",
-          "value": "288 GB 至 2,304 GB",
-          "observed_at": "2026-09-10",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3947ce709f26c22a",
-              "quote": "pairs Positron's compute architecture with 288 GB to 2,304 GB of memory per chip",
-              "source_content_hash": "3b3748bbe90ac495",
-              "quote_hash": "329c7988bebd9dedf045a7749dbf6db9237361fe0df8754be8ff3424eb394cae"
-            }
-          ]
-        },
-        {
-          "label": "Titan支持模型参数",
-          "value": "超过16万亿参数",
-          "observed_at": "2026-09-10",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3947ce709f26c22a",
-              "quote": "designed to serve models beyond 16 trillion parameters and context windows beyond 10 million tokens in a single node",
-              "source_content_hash": "3b3748bbe90ac495",
-              "quote_hash": "7000dc83f339b056ddcde44459b28d5efc272b4cc8196876675117dbc5ec1054"
-            }
-          ]
-        }
-      ],
-      "quotes": [
-        {
-          "speaker": "Mitesh Agrawal",
-          "quote": "Speed matters in this market, both in how quickly we ship new generations of silicon and in how quickly they reach customers. Deploying Atlas at scale taught us an enormous amount about what inference customers actually need, and we have carried those lessons directly into Asimov and Titan.",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3947ce709f26c22a",
-              "quote": "Speed matters in this market, both in how quickly we ship new generations of silicon and in how quickly they reach customers. Deploying Atlas at scale taught us an enormous amount about what inference customers actually need, and we have carried those lessons directly into Asimov and Titan.",
-              "source_content_hash": "3b3748bbe90ac495",
-              "quote_hash": "7022b3ccc7f2a2daa6ed43ae612504850d7bfc8b8134fa30358877c1f92f0e33"
-            }
-          ]
-        },
-        {
-          "speaker": "Dylan Patel",
-          "quote": "We spend our lives measuring what AI hardware actually delivers in production, and most inference economics struggle under that scrutiny. Positron's architecture addresses the real constraint, memory, without depending on HBM or advanced packaging for its next-generation systems, and the team has already banked real deployment experience with its first generation inside Oracle.",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3947ce709f26c22a",
-              "quote": "We spend our lives measuring what AI hardware actually delivers in production, and most inference economics struggle under that scrutiny. Positron's architecture addresses the real constraint, memory, without depending on HBM or advanced packaging for its next-generation systems, and the team has already banked real deployment experience with its first generation inside Oracle.",
-              "source_content_hash": "3b3748bbe90ac495",
-              "quote_hash": "e3ab132090c6cecf1b9e69546d3927d777b9c72bc71f45c7772912b1fa161fa6"
-            }
-          ]
-        },
-        {
-          "speaker": "Forest Baskett",
-          "quote": "Positron is solving the constraint that actually matters right now. While the rest of the industry is racing to secure scarce HBM and packaging capacity — even Nvidia's Rubin Ultra roadmap has had to scale back, from a terabyte of HBM4E down toward 192GB, simply because the supply isn't there — Positron built Asimov and Titan to sidestep that dependence altogether.",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3947ce709f26c22a",
-              "quote": "Positron is solving the constraint that actually matters right now. While the rest of the industry is racing to secure scarce HBM and packaging capacity — even Nvidia's Rubin Ultra roadmap has had to scale back, from a terabyte of HBM4E down toward 192GB, simply because the supply isn't there — Positron built Asimov and Titan to sidestep that dependence altogether.",
-              "source_content_hash": "3b3748bbe90ac495",
-              "quote_hash": "982a6e30712d2beedc8b9368e9eec7dc9ccd823f8299849b091a6e012db631cc"
-            }
-          ]
-        },
-        {
-          "speaker": "Paul Tuan",
-          "quote": "AI inference is emerging as one of the world's most consequential infrastructure markets and Positron's memory-first architecture addresses the performance, power and deployment constraints of modern AI systems.",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-3947ce709f26c22a",
-              "quote": "AI inference is emerging as one of the world's most consequential infrastructure markets and Positron's memory-first architecture addresses the performance, power and deployment constraints of modern AI systems.",
-              "source_content_hash": "3b3748bbe90ac495",
-              "quote_hash": "0828c787c1ebbfbe79ff919cbc2c912988c3bf7176e4c82680fad38730f6bb6d"
-            }
-          ]
-        }
-      ],
-      "analysis": {
-        "investment_rationale": [
-          {
-            "institution": "SemiAnalysis Capital",
-            "speaker": "Dylan Patel",
-            "speaker_role": "创始人兼CEO",
-            "rationale": "Positron的架构直接解决推理的核心约束——内存，且不依赖HBM或先进封装，同时已在Oracle内部积累了第一代产品的实际部署经验。",
-            "quote": "Positron's architecture addresses the real constraint, memory, without depending on HBM or advanced packaging for its next-generation systems, and the team has already banked real deployment experience with its first generation inside Oracle.",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3947ce709f26c22a",
-                "quote": "Positron's architecture addresses the real constraint, memory, without depending on HBM or advanced packaging for its next-generation systems, and the team has already banked real deployment experience with its first generation inside Oracle.",
-                "source_content_hash": "3b3748bbe90ac495",
-                "quote_hash": "20e42ef2135facf2639acbddbc13ac7c2c2e2262358b01d1eecffee91d2604ba"
-              }
-            ]
-          },
-          {
-            "institution": "NEA",
-            "speaker": "Forest Baskett",
-            "speaker_role": "合伙人",
-            "rationale": "NEA认为Positron正在做出AI硬件领域最大胆的内存优先押注，其方案绕开了HBM供应瓶颈，且Atlas已在Oracle云中规模化运行。",
-            "quote": "We led this round because we believe Positron is making the boldest memory-first bet in AI hardware.",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3947ce709f26c22a",
-                "quote": "We led this round because we believe Positron is making the boldest memory-first bet in AI hardware.",
-                "source_content_hash": "3b3748bbe90ac495",
-                "quote_hash": "d19831b35a6fca2d48a865b69abbf93df8bbca9e44a17b6a33358ab65de06f1e"
-              }
-            ]
-          },
-          {
-            "institution": "Andra Capital",
-            "speaker": "Paul Tuan",
-            "speaker_role": "管理合伙人",
-            "rationale": "AI推理正在成为全球最重要的基础设施市场之一，Positron的内存优先架构解决了现代AI系统的性能、功耗和部署约束。",
-            "quote": "AI inference is emerging as one of the world's most consequential infrastructure markets and Positron's memory-first architecture addresses the performance, power and deployment constraints of modern AI systems.",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-3947ce709f26c22a",
-                "quote": "AI inference is emerging as one of the world's most consequential infrastructure markets and Positron's memory-first architecture addresses the performance, power and deployment constraints of modern AI systems.",
-                "source_content_hash": "3b3748bbe90ac495",
-                "quote_hash": "0828c787c1ebbfbe79ff919cbc2c912988c3bf7176e4c82680fad38730f6bb6d"
-              }
-            ]
-          },
-          {
-            "institution": "Liberty Global Tech Ventures",
-            "speaker": "Bobbie Maltiel",
-            "speaker_role": "合伙人",
-            "rationale": "Liberty Global认为Positron团队专注于以最低成本交付token使用，这对AI在消费者和企业中的全面价值实现至关重要。",
-            "quote": "The Positron team have a relentless focus on this and we are delighted to be joining them on their mission to deliver high-speed AI at the lowest possible cost to businesses and consumers.",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-1029fa42a9437905",
-                "quote": "The Positron team have a relentless focus on this and we are delighted to be joining them on their mission to deliver high-speed AI at the lowest possible cost to businesses and consumers.",
-                "source_content_hash": "4c1808f69caea175",
-                "quote_hash": "979f3207ab5bdbcbde213c541dfd839984a2665655428ef62cfa554da6128cb7"
-              }
-            ]
-          }
-        ],
-        "capital_judgment": "资本押注的核心变量是：用商品级LPDDR5X内存替代HBM能否在推理场景中实现等效或更优的每token成本与能效。本轮融资所依赖的已验证信号是Atlas已在Oracle Cloud Infrastructure部署超过50个机架，并有Parasail、Jump Trading和i3d.net等生产客户。但Asimov尚未流片，所有性能数据均为设计目标而非硅片实测结果，第三方验证缺失。",
-        "validated_signals": [
-          "Atlas已在Oracle Cloud Infrastructure部署超过50个机架",
-          "Parasail利用Atlas容量支撑其推理服务",
-          "Jump Trading和i3d.net为Atlas生产客户",
-          "公司声称下一代系统实现超过90%内存带宽利用率"
-        ],
-        "risks": [
-          "Asimov尚未流片，所有性能数据均为设计目标，未经第三方独立验证",
-          "Nvidia等竞争对手将在Asimov量产前推出新一代产品，竞争窗口存在不确定性",
-          "LPDDR5X在峰值带宽上仍低于HBM，实际推理性能能否达到宣称水平有待验证"
-        ],
-        "related_direction_id": "",
-        "taxonomy_version": "TAG-V4.1",
-        "product_form_id": "chip_accelerator",
-        "market_category_id": "infrastructure_compute",
-        "market_subcategory_id": "hardware_computing",
-        "market_application_id": "chips",
-        "use_case_ids": [
-          "productivity_enterprise_workflows"
-        ],
-        "industry_ids": [
-          "telecommunications"
-        ],
-        "target_user_ids": [
-          "developer"
-        ],
-        "sector": "AI推理硬件",
-        "investment_thesis": {
-          "statement": "资本押注的核心变量是：用商品级LPDDR5X内存替代HBM能否在推理场景中实现等效或更优的每token成本与能效。本轮融资所依赖的已验证信号是Atlas已在Oracle Cloud Infrastructure部署超过50个机架，并有Parasail、Jump Trading和i3d.net等生产客户。但Asimov尚未流片，所有性能数据均为设计目标而非硅片实测结果，第三方验证缺失。",
-          "evidence_signals": [
-            "Atlas已在Oracle Cloud Infrastructure部署超过50个机架",
-            "Parasail利用Atlas容量支撑其推理服务",
-            "Jump Trading和i3d.net为Atlas生产客户",
-            "公司声称下一代系统实现超过90%内存带宽利用率"
-          ],
-          "risks": [
-            "Asimov尚未流片，所有性能数据均为设计目标，未经第三方独立验证",
-            "Nvidia等竞争对手将在Asimov量产前推出新一代产品，竞争窗口存在不确定性",
-            "LPDDR5X在峰值带宽上仍低于HBM，实际推理性能能否达到宣称水平有待验证"
-          ],
-          "institutional_rationale_status": "disclosed"
-        }
-      },
-      "entity_links": [
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "Atlas",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "Asimov",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "Titan",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "NEA",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Atreides Management",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Valor Equity Partners",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Andra Capital",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "SemiAnalysis Capital",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Jim Clark",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "DFJ Growth",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Qatar Investment Authority (QIA)",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Resilience Reserve",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Arena Private Wealth",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Natural Capital",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Helena",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "1517 Fund",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Flume Ventures",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Unless",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Boardman Bay Capital Management",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Fincadia Advisors",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Banyan Ventures",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "U First Capital",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "VentureTech Alliance",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Hudson River Trading",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Cisco Investments",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Naver Ventures",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Liberty Global Tech Ventures",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "public_customer_case",
-          "target_kind": "organization",
-          "research_name": "Oracle Cloud Infrastructure",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "public_customer_case",
-          "target_kind": "organization",
-          "research_name": "Parasail",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "public_customer_case",
-          "target_kind": "organization",
-          "research_name": "Jump Trading",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "public_customer_case",
-          "target_kind": "organization",
-          "research_name": "i3d.net",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "compared_with",
-          "target_kind": "organization",
-          "research_name": "Nvidia",
-          "canonical_entity_id": "EN-8d4321d936320802",
-          "canonical_name": "NVIDIA"
-        }
-      ],
-      "funding_history": [
-        {
-          "event_id": "EV-4e00ddcb0bc4f2bb",
-          "date": "2026-09-10",
-          "title": "Positron AI 以 50 亿美元估值融资 8.75 亿美元，将其下一代推理芯片推向市场",
-          "amount": "$875 million",
-          "source_refs": [
-            "SA-c41ac7bc4011e562"
-          ]
-        }
-      ],
-      "research_sources": [
-        {
-          "source_id": "FISRC-3947ce709f26c22a",
-          "source_url": "https://www.prnewswire.com/news-releases/positron-ai-raises-875-million-at-a-5-billion-valuation-to-bring-its-next-generation-inference-silicon-to-market-302874601.html",
-          "title": "Positron AI 以 50 亿美元估值融资 8.75 亿美元，将其下一代推理芯片推向市场",
-          "publisher": "keyword search / Exa",
-          "source_class": "canonical_event_source",
-          "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-09-16T04:01:32.137Z",
-          "content_hash": "3b3748bbe90ac495",
-          "source_artifact_id": "SA-c41ac7bc4011e562",
-          "raw_id": "RAW-058ac86adaace450"
-        },
-        {
-          "source_id": "FISRC-1029fa42a9437905",
-          "source_url": "https://www.libertyglobal.com/liberty-global-tech-ventures-invests-in-ai-inference-hardware-and-software-company-positron-ai/",
-          "title": "Liberty Global Tech Ventures Invests in AI Inference Hardware and Software Company, Positron AI - Liberty Global",
-          "publisher": "libertyglobal.com",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-09-16T04:06:02.055Z",
-          "content_hash": "4c1808f69caea175",
-          "source_artifact_id": null,
-          "raw_id": null
-        }
-      ],
-      "model_provenance": {
-        "provider": "deepseek",
-        "model": "deepseek-v4-pro",
-        "attempts": 1,
-        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
-        "generated_at": "2026-09-16T04:07:02.700Z",
-        "taxonomy_classification": {
-          "taxonomy_version": "TAG-V4.1",
-          "method": "deepseek_evidence_review",
-          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
-          "decision_event_id": "EV-4e00ddcb0bc4f2bb",
-          "confidence": 0.9,
-          "needs_review": false
-        }
-      },
-      "auto_publish_gate": {
-        "passed": true,
-        "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
-      },
-      "publication_status": "auto_published",
-      "published_at": "2026-09-16T04:07:02.700Z",
-      "customer_research": {
-        "status": "verified_customers_found",
-        "verified_customer_count": 4,
-        "searched_source_count": 2
-      },
-      "entity_link_coverage": {
-        "products": {
-          "linked": 0,
-          "total": 3,
-          "unresolved_names": [
-            "Asimov",
-            "Atlas",
-            "Titan"
-          ]
-        },
-        "founders": {
-          "linked": 0,
-          "total": 0,
-          "unresolved_names": []
-        }
-      },
-      "source_event_ids": [
-        "EV-4e00ddcb0bc4f2bb"
-      ],
-      "aggregation": {
-        "key": "EN-897502f225e38bf5|series_c",
-        "event_count": 1,
-        "strategy": "company_and_normalized_round"
-      }
-    },
-    {
-      "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-68743806bef12fca",
       "triggered_by_event_id": "EV-05b635c3958e4591",
       "as_of_date": "2026-09-16",
@@ -3726,7 +1815,7 @@
         "canonical_entity_consistent": false
       },
       "financing": {
-        "round": "D7轮",
+        "round": "D轮",
         "amount": "$180M",
         "total_raised": "",
         "announced_at": "2026-09-15",
@@ -3839,8 +1928,8 @@
             "quote_hash": "6e76469313b9bdd543b0b3bc71af254f1afd38ec1bc4990692d2794ca76cb73f"
           }
         ],
-        "round_code": "series_d7",
-        "round_original": "D7轮",
+        "round_code": "series_d",
+        "round_original": "D轮",
         "amount_original": "$180M",
         "amount_normalized": {
           "currency": "USD",
@@ -3865,7 +1954,7 @@
         "disclosures": [
           {
             "event_id": "EV-05b635c3958e4591",
-            "round_original": "D7轮",
+            "round_original": "D轮",
             "amount": "$180M",
             "announced_at": "2026-09-15",
             "evidence_refs": [
@@ -4510,7 +2599,7 @@
           "error": ""
         }
       ],
-      "updated_at": "2026-09-16T04:30:33.050Z"
+      "updated_at": "2026-09-16T04:40:29.868Z"
     },
     {
       "event_id": "EV-81bbaaec2965864a",
@@ -4519,95 +2608,6 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-09-16T04:30:33.051Z"
-    },
-    {
-      "event_id": "EV-4e00ddcb0bc4f2bb",
-      "company_name": "Positron AI",
-      "status": "auto_published",
-      "problems": [],
-      "queries": [
-        "\"Positron AI Raises $875 Million at a $5 Billion Valuation to Bring Its Next-Generation Inference Silicon to Market\" funding company investors product",
-        "\"Positron AI\" \"$875 million\" funding investors round",
-        "\"Positron AI\" product customers case study",
-        "\"Positron AI\" \"Positron AI Raises $875 Million at a $5 Billion Valuation to Bring Its Next-Generation Inference Silicon to Market\" competitors product use case",
-        "\"Positron AI\" \"$875 million\" investor quote why invested",
-        "\"Positron AI\" \"$875 million\" \"why we invested\" OR \"our investment\""
-      ],
-      "attempts": [
-        {
-          "provider": "tavily",
-          "query": "\"Positron AI Raises $875 Million at a $5 Billion Valuation to Bring Its Next-Generation Inference Silicon to Market\" funding company investors product",
-          "status": "failed",
-          "error": "tavily_401"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Positron AI Raises $875 Million at a $5 Billion Valuation to Bring Its Next-Generation Inference Silicon to Market\" funding company investors product",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Positron AI\" \"$875 million\" funding investors round",
-          "status": "failed",
-          "error": "tavily_401"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Positron AI\" \"$875 million\" funding investors round",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Positron AI\" product customers case study",
-          "status": "failed",
-          "error": "tavily_401"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Positron AI\" product customers case study",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Positron AI\" \"Positron AI Raises $875 Million at a $5 Billion Valuation to Bring Its Next-Generation Inference Silicon to Market\" competitors product use case",
-          "status": "failed",
-          "error": "tavily_401"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Positron AI\" \"Positron AI Raises $875 Million at a $5 Billion Valuation to Bring Its Next-Generation Inference Silicon to Market\" competitors product use case",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Positron AI\" \"$875 million\" investor quote why invested",
-          "status": "failed",
-          "error": "tavily_401"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Positron AI\" \"$875 million\" investor quote why invested",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Positron AI\" \"$875 million\" \"why we invested\" OR \"our investment\"",
-          "status": "failed",
-          "error": "tavily_401"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Positron AI\" \"$875 million\" \"why we invested\" OR \"our investment\"",
-          "status": "failed",
-          "error": "exa_429"
-        }
-      ],
       "updated_at": "2026-09-16T04:30:33.051Z"
     },
     {
@@ -4697,7 +2697,7 @@
           "error": ""
         }
       ],
-      "updated_at": "2026-09-16T04:30:33.051Z"
+      "updated_at": "2026-09-16T04:40:29.869Z"
     },
     {
       "event_id": "EV-cbeb33594e06678b",
@@ -4795,11 +2795,11 @@
           "error": ""
         }
       ],
-      "updated_at": "2026-09-16T04:30:33.051Z"
+      "updated_at": "2026-09-16T04:40:29.869Z"
     },
     {
       "event_id": "EV-1c399d2db39c05a3",
-      "company_name": "首发|哈啰Robotaxi",
+      "company_name": "上海造父智能科技有限公司",
       "status": "auto_published",
       "problems": [],
       "queries": [
@@ -4858,7 +2858,7 @@
           "error": ""
         }
       ],
-      "updated_at": "2026-09-16T04:30:33.051Z"
+      "updated_at": "2026-09-16T04:40:29.869Z"
     },
     {
       "event_id": "EV-9c427c0985b3b252",
@@ -4888,10 +2888,130 @@
       "updated_at": "2026-09-16T04:30:33.051Z"
     },
     {
+      "event_id": "EV-6aaa17d9c372e513",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-16T04:30:33.051Z"
+    },
+    {
+      "event_id": "EV-0ac10579ff64fe74",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-16T04:30:33.051Z"
+    },
+    {
+      "event_id": "EV-63a4b6ce48e14829",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-16T04:30:33.051Z"
+    },
+    {
+      "event_id": "EV-4e00ddcb0bc4f2bb",
+      "company_name": "Positron AI",
+      "status": "blocked",
+      "problems": [
+        "funding_capped_tranche_requires_review"
+      ],
+      "queries": [
+        "\"Positron AI Raises $875 Million at a $5 Billion Valuation to Bring Its Next-Generation Inference Silicon to Market\" funding company investors product",
+        "\"Positron AI\" \"$875 million\" funding investors round",
+        "\"Positron AI\" product customers case study",
+        "\"Positron AI\" \"Positron AI Raises $875 Million at a $5 Billion Valuation to Bring Its Next-Generation Inference Silicon to Market\" competitors product use case",
+        "\"Positron AI\" \"$875 million\" investor quote why invested",
+        "\"Positron AI\" \"$875 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Positron AI Raises $875 Million at a $5 Billion Valuation to Bring Its Next-Generation Inference Silicon to Market\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Positron AI Raises $875 Million at a $5 Billion Valuation to Bring Its Next-Generation Inference Silicon to Market\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Positron AI\" \"$875 million\" funding investors round",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Positron AI\" \"$875 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Positron AI\" product customers case study",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Positron AI\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Positron AI\" \"Positron AI Raises $875 Million at a $5 Billion Valuation to Bring Its Next-Generation Inference Silicon to Market\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Positron AI\" \"Positron AI Raises $875 Million at a $5 Billion Valuation to Bring Its Next-Generation Inference Silicon to Market\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Positron AI\" \"$875 million\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Positron AI\" \"$875 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Positron AI\" \"$875 million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Positron AI\" \"$875 million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "exa_429"
+        }
+      ],
+      "updated_at": "2026-09-16T04:30:33.051Z"
+    },
+    {
       "event_id": "EV-f70e34d7f7d5769a",
       "company_name": "超衍智能",
-      "status": "auto_published",
-      "problems": [],
+      "status": "blocked",
+      "problems": [
+        "funding_combined_rounds_requires_review"
+      ],
       "queries": [
         "\"超衍智能\" 2026 融资 轮次 金额 投资方",
         "\"超衍智能\" \"近4亿元\" 本轮融资 领投 跟投",
@@ -4948,33 +3068,6 @@
           "error": ""
         }
       ],
-      "updated_at": "2026-09-16T04:30:33.051Z"
-    },
-    {
-      "event_id": "EV-6aaa17d9c372e513",
-      "company_name": "",
-      "status": "deduplicated",
-      "problems": [],
-      "queries": [],
-      "attempts": [],
-      "updated_at": "2026-09-16T04:30:33.051Z"
-    },
-    {
-      "event_id": "EV-0ac10579ff64fe74",
-      "company_name": "",
-      "status": "deduplicated",
-      "problems": [],
-      "queries": [],
-      "attempts": [],
-      "updated_at": "2026-09-16T04:30:33.051Z"
-    },
-    {
-      "event_id": "EV-63a4b6ce48e14829",
-      "company_name": "",
-      "status": "deduplicated",
-      "problems": [],
-      "queries": [],
-      "attempts": [],
       "updated_at": "2026-09-16T04:30:33.051Z"
     }
   ]
