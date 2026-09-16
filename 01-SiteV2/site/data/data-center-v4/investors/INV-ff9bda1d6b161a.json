@@ -5,14 +5,15 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-15T07:57:02.631Z",
-    "latestDataDate": "2026-09-15",
-    "currentDate": "2026-09-15",
-    "eventCount": 3271,
-    "quarantinedEventCount": 34,
+    "generatedAt": "2026-09-16T04:08:34.638Z",
+    "latestDataDate": "2026-09-16",
+    "currentDate": "2026-09-16",
+    "eventCount": 3311,
+    "quarantinedEventCount": 35,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
       "EV-1fc7578ab4f32166",
@@ -96,7 +97,7 @@
     "activities": [
       {
         "activity_id": "IA-50b4fabe48d529e3",
-        "funding_insight_id": "FI-cb4015ec6509d947",
+        "funding_insight_id": "FI-8acd5314a46c6068",
         "event_ids": [
           "EV-6aaa17d9c372e513"
         ],
@@ -106,15 +107,15 @@
         "round": "B轮",
         "round_code": "series_b",
         "round_original": "B轮",
-        "amount_original": "3亿元人民币",
+        "amount_original": "超3亿元人民币",
         "amount_normalized": {
           "currency": "CNY",
           "value": 300000000,
-          "min_value": null,
+          "min_value": 300000000,
           "max_value": null,
           "unit": "base",
-          "status": "exact",
-          "display_zh": "3 亿元"
+          "status": "lower_bound",
+          "display_zh": "超过 3 亿元"
         },
         "announced_at": "2026-09-15",
         "market_region": "CN",

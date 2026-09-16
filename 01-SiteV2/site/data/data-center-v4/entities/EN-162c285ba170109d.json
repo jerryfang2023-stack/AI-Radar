@@ -5,14 +5,15 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-15T07:57:02.631Z",
-    "latestDataDate": "2026-09-15",
-    "currentDate": "2026-09-15",
-    "eventCount": 3271,
-    "quarantinedEventCount": 34,
+    "generatedAt": "2026-09-16T04:08:34.638Z",
+    "latestDataDate": "2026-09-16",
+    "currentDate": "2026-09-16",
+    "eventCount": 3311,
+    "quarantinedEventCount": 35,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
       "EV-1fc7578ab4f32166",
@@ -58,19 +59,21 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-c12e5e4c3bc203b5",
       "EV-cff79709f0422bea"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-09",
-    "lastSeen": "2026-09-10",
+    "lastSeen": "2026-09-16",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-c12e5e4c3bc203b5",
         "EV-cff79709f0422bea"
       ],
       "hardware": [],
@@ -78,6 +81,22 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-c12e5e4c3bc203b5",
+        "dataDate": "2026-09-16",
+        "date": "2026-09-16",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "苹果 iPhone 18 Pro/Max 引入 Apple Reference Image 像素级标注功能对抗 AI 伪造图片",
+        "displayTags": [],
+        "entityIds": [
+          "EN-3a7bd3e2360a3d29",
+          "EN-162c285ba170109d"
+        ]
+      },
       {
         "id": "EV-cff79709f0422bea",
         "dataDate": "2026-09-10",

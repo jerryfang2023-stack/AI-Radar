@@ -5,14 +5,15 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-15T07:57:02.631Z",
-    "latestDataDate": "2026-09-15",
-    "currentDate": "2026-09-15",
-    "eventCount": 3271,
-    "quarantinedEventCount": 34,
+    "generatedAt": "2026-09-16T04:08:34.638Z",
+    "latestDataDate": "2026-09-16",
+    "currentDate": "2026-09-16",
+    "eventCount": 3311,
+    "quarantinedEventCount": 35,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
       "EV-1fc7578ab4f32166",
@@ -56,6 +57,7 @@
     "eventIds": [
       "EV-4238c51fcdad7bd4",
       "EV-b137470f59491f6a",
+      "EV-37cc66ca2e29a78c",
       "EV-798081a4ec056f8c",
       "EV-d9e018b58da30912",
       "EV-3a467bfb6d9b1b52",
@@ -115,6 +117,7 @@
       "EV-3632f9193a3f3f28",
       "EV-0af7882f1d383ea5",
       "EV-60d94c0d990d04ca",
+      "EV-cbc988c78b987642",
       "EV-0121f0a9e9a975ec",
       "EV-2ffc3377977da114",
       "EV-8fcb52bb6ec980af",
@@ -128,6 +131,7 @@
     "entityIds": [
       "EN-4149d125ad47155a",
       "EN-619245256126c075",
+      "EN-caffca3284100caa",
       "EN-08e7b67a300e585f",
       "EN-187bf23c29af5e43",
       "EN-d1d137efd55a338c",
@@ -183,6 +187,7 @@
       "EN-8b332ded81dc8d3a",
       "EN-37b24c76821f9ff1",
       "EN-a7f65fe198e0bd2c",
+      "EN-4742b2b6563b92ed",
       "EN-29b9f0cae32e7a8a",
       "EN-88e2cce43eeadb36",
       "EN-f4bec299df3f4f27",
@@ -195,10 +200,11 @@
       "FDE-08f12caedc3b2f13"
     ],
     "hardwareIds": [
+      "HW-5aa85a1a004480c8",
       "HW-304c6370cc157449"
     ],
     "firstSeen": "2026-01-06",
-    "lastSeen": "2026-09-15"
+    "lastSeen": "2026-09-16"
   },
   "events": [
     {
@@ -934,6 +940,316 @@
       "products": [],
       "sourceUrl": "https://chinaventure.com.cn/news/113-20260915-393256.html",
       "publisher": "投中网"
+    },
+    {
+      "id": "EV-37cc66ca2e29a78c",
+      "dataDate": "2026-09-16",
+      "date": "2026-09-14",
+      "updatedDate": "2026-09-16",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Cornelis 获 2.05 亿美元融资，挑战 Nvidia 在 AI 基础设施领域的主导地位",
+      "originalTitle": "Cornelis Secures $205M in Funding to Challenge Nvidia's Dominance in AI Infrastructure - Tech Weekly",
+      "subject": "Cornelis",
+      "action": "Secures",
+      "object": "$205M in Funding to Challenge Nvidia's Dominance in AI Infrastructure - Tech Weekly",
+      "metrics": [
+        "$205 million",
+        "$205 Million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-caffca3284100caa"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-24e78c7436416fa8",
+            "fundingInsightId": "FI-69b850b5cebe5572"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "hardware_computing",
+            "name": "硬件与算力",
+            "entityIds": [
+              "EN-caffca3284100caa"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-65f90924414b2379",
+            "fundingInsightId": "FI-69b850b5cebe5572"
+          }
+        ],
+        "ai_market_application": [
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "computing_infrastructure",
+            "name": "计算基础设施",
+            "entityIds": [
+              "EN-caffca3284100caa"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-fe60e642fe1057cd",
+            "fundingInsightId": "FI-69b850b5cebe5572"
+          }
+        ],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_infrastructure_software",
+            "name": "AI 基础设施软件",
+            "entityIds": [
+              "EN-caffca3284100caa"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-75597fca077b66d0",
+            "fundingInsightId": "FI-69b850b5cebe5572"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-caffca3284100caa"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-26d365dca9fb11bc",
+            "fundingInsightId": "FI-69b850b5cebe5572"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "telecommunications",
+            "name": "电信",
+            "entityIds": [
+              "EN-caffca3284100caa"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-3a86e6ee1c2ce39e",
+            "fundingInsightId": "FI-69b850b5cebe5572"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-caffca3284100caa"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-5ff7c329a1581287",
+            "fundingInsightId": "FI-69b850b5cebe5572"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "computing_infrastructure",
+          "name": "计算基础设施",
+          "entityIds": [
+            "EN-caffca3284100caa"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-fe60e642fe1057cd",
+          "fundingInsightId": "FI-69b850b5cebe5572"
+        },
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-caffca3284100caa"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-24e78c7436416fa8",
+          "fundingInsightId": "FI-69b850b5cebe5572"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "hardware_computing",
+          "name": "硬件与算力",
+          "entityIds": [
+            "EN-caffca3284100caa"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-65f90924414b2379",
+          "fundingInsightId": "FI-69b850b5cebe5572"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "telecommunications",
+          "name": "电信",
+          "entityIds": [
+            "EN-caffca3284100caa"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-3a86e6ee1c2ce39e",
+          "fundingInsightId": "FI-69b850b5cebe5572"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_infrastructure_software",
+          "name": "AI 基础设施软件",
+          "entityIds": [
+            "EN-caffca3284100caa"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-75597fca077b66d0",
+          "fundingInsightId": "FI-69b850b5cebe5572"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-caffca3284100caa"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-5ff7c329a1581287",
+          "fundingInsightId": "FI-69b850b5cebe5572"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-caffca3284100caa"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-26d365dca9fb11bc",
+          "fundingInsightId": "FI-69b850b5cebe5572"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-caffca3284100caa"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-24e78c7436416fa8",
+          "fundingInsightId": "FI-69b850b5cebe5572"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "hardware_computing",
+          "name": "硬件与算力",
+          "entityIds": [
+            "EN-caffca3284100caa"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-65f90924414b2379",
+          "fundingInsightId": "FI-69b850b5cebe5572"
+        },
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "computing_infrastructure",
+          "name": "计算基础设施",
+          "entityIds": [
+            "EN-caffca3284100caa"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-fe60e642fe1057cd",
+          "fundingInsightId": "FI-69b850b5cebe5572"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_infrastructure_software",
+          "name": "AI 基础设施软件",
+          "entityIds": [
+            "EN-caffca3284100caa"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-75597fca077b66d0",
+          "fundingInsightId": "FI-69b850b5cebe5572"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-caffca3284100caa"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-26d365dca9fb11bc",
+          "fundingInsightId": "FI-69b850b5cebe5572"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "telecommunications",
+          "name": "电信",
+          "entityIds": [
+            "EN-caffca3284100caa"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-3a86e6ee1c2ce39e",
+          "fundingInsightId": "FI-69b850b5cebe5572"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-caffca3284100caa"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-5ff7c329a1581287",
+          "fundingInsightId": "FI-69b850b5cebe5572"
+        }
+      ],
+      "entityIds": [
+        "EN-caffca3284100caa",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "Cornelis",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techweekly.co.za/2026/09/14/cornelis-secures-205m-in-funding-to-challenge-nvidias-dominance-in-ai-infrastructure",
+      "publisher": "techweekly.co.za"
     },
     {
       "id": "EV-798081a4ec056f8c",
@@ -23745,6 +24061,158 @@
       "publisher": "投资界"
     },
     {
+      "id": "EV-cbc988c78b987642",
+      "dataDate": "2026-09-16",
+      "date": "2026-09-14",
+      "updatedDate": "2026-09-16",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "eventGroup": "AI 硬件",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "富士通推出日本制造的下一代CPU FUJITSU-MONAKA及面向主权AI基础设施的富士通MONAKA服务器",
+      "originalTitle": "Fujitsu launches made-in-Japan next-generation CPU FUJITSU-MONAKA and Fujitsu MONAKA Server for sovereign AI infrastructure",
+      "subject": "Fujitsu",
+      "action": "launches made-in-Japan next-generation CPU FUJITSU-MONAKA and Fujitsu MONAKA Server for sovereign AI infrastructure",
+      "object": "Fujitsu launches made-in-Japan next-generation CPU FUJITSU-MONAKA and Fujitsu MONAKA Server for sovereign AI infrastructure",
+      "metrics": [],
+      "locations": [
+        "Europe",
+        "Japan"
+      ],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_infrastructure_software",
+            "name": "AI 基础设施软件",
+            "entityIds": [
+              "EN-4742b2b6563b92ed"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-4742b2b6563b92ed"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "aerospace_defense",
+            "name": "航空航天与国防",
+            "entityIds": [
+              "EN-4742b2b6563b92ed"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_infrastructure_software",
+          "name": "AI 基础设施软件",
+          "entityIds": [
+            "EN-4742b2b6563b92ed"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-4742b2b6563b92ed"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "aerospace_defense",
+          "name": "航空航天与国防",
+          "entityIds": [
+            "EN-4742b2b6563b92ed"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_infrastructure_software",
+          "name": "AI 基础设施软件",
+          "entityIds": [
+            "EN-4742b2b6563b92ed"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-4742b2b6563b92ed"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "aerospace_defense",
+          "name": "航空航天与国防",
+          "entityIds": [
+            "EN-4742b2b6563b92ed"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-4742b2b6563b92ed"
+      ],
+      "entityNames": [
+        "Fujitsu"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://voasg.com/jcn-newswire/fujitsu-launches-made-in-japan-next-generation-cpu-fujitsu-monaka-and-fujitsu-monaka-server-for-sovereign-ai-infrastructure",
+      "publisher": "voasg.com"
+    },
+    {
       "id": "EV-0121f0a9e9a975ec",
       "dataDate": "2026-08-19",
       "date": "2026-08-14",
@@ -25669,6 +26137,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-target_user-business_user",
+        "TX-use_case-data_analysis",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
@@ -25676,7 +26145,6 @@
         "TX-industry-professional_services",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-developer",
-        "TX-use_case-data_analysis",
         "TX-use_case-security_operations"
       ],
       "relatedEntityIds": [],
@@ -25711,6 +26179,33 @@
       "lastSeen": "2026-09-15"
     },
     {
+      "id": "EN-caffca3284100caa",
+      "name": "Cornelis",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-37cc66ca2e29a78c"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-ai_market_application-computing_infrastructure",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-hardware_computing",
+        "TX-product_form-ai_infrastructure_software",
+        "TX-target_user-developer",
+        "TX-industry-telecommunications"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-14",
+      "lastSeen": "2026-09-16"
+    },
+    {
       "id": "EN-08e7b67a300e585f",
       "name": "无问智科",
       "entityType": "organization_candidate",
@@ -25726,11 +26221,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-developer",
-        "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
         "TX-product_form-model",
         "TX-ai_market_subcategory-data",
@@ -25756,12 +26251,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-developer",
-        "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
         "TX-ai_market_subcategory-data",
         "TX-ai_market_application-synthetic_data"
@@ -25789,13 +26284,13 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-target_user-business_user",
+        "TX-use_case-data_analysis",
         "TX-use_case-physical_automation",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-developer",
-        "TX-use_case-data_analysis",
         "TX-product_form-model",
         "TX-industry-energy_utilities",
         "TX-technology-multimodal"
@@ -25819,10 +26314,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-developer",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_subcategory-observability_evaluation",
         "TX-ai_market_application-ai_observability_governance"
       ],
@@ -25876,10 +26371,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-target_user-business_user",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-developer",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_subcategory-development_deployment",
         "TX-use_case-software_development",
         "TX-ai_market_application-ai_development_orchestration"
@@ -25905,13 +26400,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-logistics_supply_chain",
+        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
+        "TX-industry-logistics_supply_chain",
         "TX-technology-embodied_ai",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-developer",
-        "TX-industry-manufacturing",
         "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
         "TX-technology-multimodal",
@@ -25939,13 +26434,13 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-target_user-business_user",
+        "TX-use_case-data_analysis",
+        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-developer",
-        "TX-use_case-data_analysis",
-        "TX-industry-manufacturing",
         "TX-industry-energy_utilities",
         "TX-ai_market_subcategory-data",
         "TX-ai_market_application-synthetic_data"
@@ -25972,12 +26467,12 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-target_user-business_user",
+        "TX-industry-manufacturing",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
-        "TX-product_form-ai_infrastructure_software",
-        "TX-industry-manufacturing",
-        "TX-use_case-productivity_enterprise_workflows"
+        "TX-product_form-ai_infrastructure_software"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-26",
@@ -26002,18 +26497,18 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-retail_ecommerce",
+        "TX-target_user-business_user",
+        "TX-use_case-data_analysis",
+        "TX-industry-manufacturing",
+        "TX-use_case-physical_automation",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system",
-        "TX-target_user-business_user",
-        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-developer",
-        "TX-use_case-data_analysis",
-        "TX-industry-manufacturing",
         "TX-target_user-researcher",
-        "TX-industry-retail_ecommerce",
         "TX-ai_market_application-data_preparation_curation",
         "TX-ai_market_subcategory-data"
       ],
@@ -26039,12 +26534,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-logistics_supply_chain",
+        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
+        "TX-industry-logistics_supply_chain",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-developer",
-        "TX-industry-manufacturing",
         "TX-target_user-researcher",
         "TX-industry-automotive_transportation",
         "TX-ai_market_application-models",
@@ -26072,11 +26567,11 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-target_user-business_user",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-product_form-ai_infrastructure_software",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-telecommunications"
       ],
       "relatedEntityIds": [],
@@ -26099,16 +26594,16 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-target_user-business_user",
+        "TX-use_case-data_analysis",
+        "TX-industry-manufacturing",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-government_public_sector",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-developer",
-        "TX-use_case-data_analysis",
-        "TX-industry-manufacturing",
         "TX-industry-financial_services",
         "TX-use_case-knowledge_search",
-        "TX-industry-automotive_transportation",
         "TX-industry-telecommunications",
+        "TX-industry-automotive_transportation",
         "TX-ai_market_application-data_preparation_curation",
         "TX-ai_market_subcategory-data"
       ],
@@ -26131,13 +26626,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-logistics_supply_chain",
+        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
+        "TX-industry-logistics_supply_chain",
         "TX-technology-embodied_ai",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-developer",
-        "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
         "TX-ai_market_application-data_preparation_curation",
         "TX-ai_market_subcategory-data"
@@ -26166,16 +26661,16 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-target_user-business_user",
+        "TX-use_case-content_creation",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-developer",
         "TX-use_case-knowledge_search",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
         "TX-product_form-model",
         "TX-target_user-consumer",
-        "TX-use_case-content_creation",
         "TX-use_case-software_development",
         "TX-ai_market_application-data_preparation_curation",
         "TX-ai_market_subcategory-data",
@@ -26227,11 +26722,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-professional_services",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-developer",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_subcategory-observability_evaluation",
         "TX-ai_market_application-ai_observability_governance",
         "TX-technology-agentic_execution",
@@ -26284,10 +26779,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-target_user-business_user",
+        "TX-use_case-data_analysis",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-developer",
-        "TX-use_case-data_analysis",
         "TX-use_case-knowledge_search",
         "TX-ai_market_application-data_preparation_curation",
         "TX-ai_market_subcategory-data"
@@ -26313,10 +26808,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-target_user-business_user",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-developer",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_subcategory-development_deployment",
         "TX-ai_market_application-model_deployment",
         "TX-technology-reasoning"
@@ -26382,10 +26877,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-target_user-business_user",
+        "TX-use_case-data_analysis",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-developer",
-        "TX-use_case-data_analysis",
         "TX-use_case-knowledge_search",
         "TX-technology-agentic_execution",
         "TX-ai_market_subcategory-development_deployment",
@@ -26443,12 +26938,12 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-target_user-business_user",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-government_public_sector",
         "TX-product_form-ai_infrastructure_software",
         "TX-use_case-security_operations",
         "TX-industry-financial_services",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-healthcare_life_sciences",
         "TX-ai_market_subcategory-development_deployment",
         "TX-industry-aerospace_defense",
@@ -26476,13 +26971,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-logistics_supply_chain",
+        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
+        "TX-industry-logistics_supply_chain",
         "TX-technology-embodied_ai",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-developer",
-        "TX-industry-manufacturing",
         "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment"
       ],
@@ -26538,10 +27033,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-developer",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-agentic_execution",
         "TX-ai_market_subcategory-development_deployment",
         "TX-ai_market_application-monetization"
@@ -26566,12 +27061,12 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-target_user-business_user",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-developer",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-chip_accelerator",
         "TX-product_form-compute_cloud_service"
       ],
@@ -26619,19 +27114,20 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-logistics_supply_chain",
+        "TX-industry-media_entertainment",
+        "TX-industry-retail_ecommerce",
         "TX-target_user-business_user",
+        "TX-industry-manufacturing",
+        "TX-industry-logistics_supply_chain",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-government_public_sector",
         "TX-industry-professional_services",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-developer",
         "TX-use_case-security_operations",
-        "TX-industry-manufacturing",
         "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
-        "TX-industry-media_entertainment",
-        "TX-industry-retail_ecommerce",
+        "TX-industry-telecommunications",
         "TX-technology-agentic_execution",
         "TX-industry-automotive_transportation",
         "TX-ai_market_subcategory-development_deployment",
@@ -26642,7 +27138,6 @@
         "TX-industry-energy_utilities",
         "TX-industry-food_hospitality",
         "TX-industry-legal_services",
-        "TX-industry-telecommunications",
         "TX-use_case-software_development",
         "TX-ai_market_application-ai_development_orchestration"
       ],
@@ -26753,8 +27248,8 @@
         "TX-target_user-developer",
         "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
-        "TX-ai_market_subcategory-development_deployment",
         "TX-industry-telecommunications",
+        "TX-ai_market_subcategory-development_deployment",
         "TX-use_case-software_development",
         "TX-ai_market_application-ai_development_orchestration"
       ],
@@ -26781,17 +27276,17 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-target_user-business_user",
+        "TX-use_case-content_creation",
+        "TX-use_case-data_analysis",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-government_public_sector",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-developer",
-        "TX-use_case-data_analysis",
         "TX-industry-financial_services",
         "TX-use_case-knowledge_search",
-        "TX-ai_market_subcategory-development_deployment",
-        "TX-use_case-content_creation",
-        "TX-industry-energy_utilities",
         "TX-industry-telecommunications",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-industry-energy_utilities",
         "TX-use_case-software_development",
         "TX-product_form-model_api_service",
         "TX-ai_market_application-model_deployment"
@@ -26872,10 +27367,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-target_user-business_user",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-developer",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_subcategory-observability_evaluation",
         "TX-ai_market_application-ai_observability_governance"
       ],
@@ -26931,10 +27426,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-target_user-business_user",
+        "TX-use_case-data_analysis",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-developer",
-        "TX-use_case-data_analysis",
         "TX-ai_market_application-data_preparation_curation",
         "TX-ai_market_subcategory-data"
       ],
@@ -26992,11 +27487,11 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-target_user-business_user",
+        "TX-use_case-data_analysis",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-government_public_sector",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-developer",
-        "TX-use_case-data_analysis",
         "TX-use_case-knowledge_search",
         "TX-industry-agriculture",
         "TX-industry-energy_utilities",
@@ -27026,10 +27521,10 @@
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-developer",
-        "TX-product_form-chip_accelerator",
-        "TX-ai_market_subcategory-development_deployment",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
+        "TX-product_form-chip_accelerator",
+        "TX-ai_market_subcategory-development_deployment",
         "TX-ai_market_application-model_deployment"
       ],
       "relatedEntityIds": [],
@@ -27054,12 +27549,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-data_analysis",
+        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-developer",
-        "TX-use_case-data_analysis",
-        "TX-industry-manufacturing",
         "TX-target_user-researcher",
         "TX-ai_market_application-data_preparation_curation",
         "TX-ai_market_subcategory-data"
@@ -27106,17 +27601,18 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-media_entertainment",
+        "TX-industry-retail_ecommerce",
+        "TX-industry-manufacturing",
         "TX-industry-logistics_supply_chain",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-government_public_sector",
         "TX-industry-professional_services",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-developer",
-        "TX-industry-manufacturing",
         "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
-        "TX-industry-media_entertainment",
-        "TX-industry-retail_ecommerce",
+        "TX-industry-telecommunications",
         "TX-technology-agentic_execution",
         "TX-industry-automotive_transportation",
         "TX-ai_market_subcategory-development_deployment",
@@ -27127,7 +27623,6 @@
         "TX-industry-energy_utilities",
         "TX-industry-food_hospitality",
         "TX-industry-legal_services",
-        "TX-industry-telecommunications",
         "TX-use_case-software_development",
         "TX-ai_market_application-ai_development_orchestration"
       ],
@@ -27207,12 +27702,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-data_analysis",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-developer",
-        "TX-use_case-data_analysis",
         "TX-industry-telecommunications"
       ],
       "relatedEntityIds": [],
@@ -27284,10 +27779,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-target_user-business_user",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-developer",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_subcategory-development_deployment",
         "TX-use_case-software_development",
         "TX-ai_market_application-ai_development_orchestration"
@@ -27313,14 +27808,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-logistics_supply_chain",
+        "TX-use_case-data_analysis",
+        "TX-industry-manufacturing",
         "TX-use_case-physical_automation",
+        "TX-industry-logistics_supply_chain",
         "TX-technology-embodied_ai",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-developer",
-        "TX-use_case-data_analysis",
-        "TX-industry-manufacturing",
         "TX-target_user-researcher",
         "TX-industry-automotive_transportation",
         "TX-ai_market_subcategory-data",
@@ -27347,11 +27842,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-professional_services",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-developer",
-        "TX-industry-manufacturing",
         "TX-use_case-research_discovery",
         "TX-target_user-researcher",
         "TX-ai_market_application-models",
@@ -27390,6 +27885,29 @@
       "lastSeen": "2026-09-12"
     },
     {
+      "id": "EN-4742b2b6563b92ed",
+      "name": "Fujitsu",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-cbc988c78b987642"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-manufacturing",
+        "TX-product_form-ai_infrastructure_software",
+        "TX-industry-aerospace_defense"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-14",
+      "lastSeen": "2026-09-16"
+    },
+    {
       "id": "EN-29b9f0cae32e7a8a",
       "name": "L&T",
       "entityType": "organization_candidate",
@@ -27405,9 +27923,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-target_user-business_user",
+        "TX-industry-manufacturing",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-developer",
-        "TX-industry-manufacturing",
         "TX-target_user-researcher",
         "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
@@ -27446,8 +27964,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-ai_infrastructure_software",
         "TX-industry-retail_ecommerce",
+        "TX-product_form-ai_infrastructure_software",
         "TX-product_form-model",
         "TX-product_form-ai_device"
       ],
@@ -27504,6 +28022,8 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-9cf0ca490e9a6f4a",
+        "EV-37cc66ca2e29a78c",
         "EV-532031a0c390a2e3",
         "EV-4f6e481c90ff0e3c",
         "EV-c32dd87e1f72b09a",
@@ -27539,6 +28059,7 @@
         "EV-ef1de880e4ef9f75",
         "EV-18e3fa9303bdba4a",
         "EV-68d5a02e5213b43c",
+        "EV-ad6c755f7cf588c4",
         "EV-b02d4c02ede22ebe",
         "EV-81318fb4bcdb926a",
         "EV-b93b6abf31662339",
@@ -27606,6 +28127,10 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-684428c2905ab07c",
+        "EV-af09904030ac3c22",
+        "EV-b29f516694140945",
+        "EV-d27707a663d29ade",
         "EV-96114d2f1e3abdfd",
         "EV-a65c5ce73c055710",
         "EV-f01a13953fa7aaaa",
@@ -27720,6 +28245,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-46803ffdc054ae6d",
         "EV-2258d4e39a99c186",
         "EV-6a79628f726695a3",
         "EV-5353e265750f02a1",
@@ -27751,10 +28277,15 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-media_entertainment",
+        "TX-industry-retail_ecommerce",
+        "TX-product_form-enterprise_software_platform",
+        "TX-target_user-business_user",
+        "TX-use_case-data_analysis",
+        "TX-industry-manufacturing",
+        "TX-use_case-physical_automation",
         "TX-industry-logistics_supply_chain",
         "TX-product_form-robotic_system",
-        "TX-target_user-business_user",
-        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
@@ -27763,16 +28294,14 @@
         "TX-industry-professional_services",
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-developer",
-        "TX-use_case-data_analysis",
         "TX-use_case-security_operations",
-        "TX-industry-manufacturing",
         "TX-industry-financial_services",
-        "TX-product_form-enterprise_software_platform",
         "TX-use_case-research_discovery",
         "TX-industry-healthcare_life_sciences",
         "TX-target_user-researcher",
-        "TX-industry-media_entertainment",
-        "TX-industry-retail_ecommerce",
+        "TX-industry-telecommunications",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device",
         "TX-technology-agentic_execution",
         "TX-ai_market_application-chips",
         "TX-industry-automotive_transportation",
@@ -27787,12 +28316,9 @@
         "TX-industry-energy_utilities",
         "TX-industry-food_hospitality",
         "TX-industry-legal_services",
-        "TX-industry-telecommunications",
         "TX-use_case-software_development",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
-        "TX-technology-on_device",
-        "TX-deployment_model-edge_device",
         "TX-product_form-ai_compute_system",
         "TX-product_form-model_api_service",
         "TX-technology-open_weights",
@@ -27833,7 +28359,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-15"
+      "lastSeen": "2026-09-16"
     },
     {
       "id": "EN-42a64c68a4a98ad5",
@@ -27992,6 +28518,33 @@
   ],
   "hardware": [
     {
+      "id": "HW-5aa85a1a004480c8",
+      "eventId": "EV-cbc988c78b987642",
+      "dataDate": "2026-09-16",
+      "date": "2026-09-14",
+      "title": "富士通推出日本制造的下一代CPU FUJITSU-MONAKA及面向主权AI基础设施的富士通MONAKA服务器",
+      "hardwareType": "semiconductor",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "data_center",
+      "supplier": "Fujitsu",
+      "customer": "data center operators, enterprises, and the academic and HPC sectors in Japan and Europe, as well as the defense sector",
+      "processNode": "2nm",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "Europe",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://voasg.com/jcn-newswire/fujitsu-launches-made-in-japan-next-generation-cpu-fujitsu-monaka-and-fujitsu-monaka-server-for-sovereign-ai-infrastructure",
+      "sourceName": "voasg.com",
+      "sourceDate": "2026-09-14",
+      "entityIds": [
+        "EN-4742b2b6563b92ed"
+      ]
+    },
+    {
       "id": "HW-304c6370cc157449",
       "eventId": "EV-0121f0a9e9a975ec",
       "dataDate": "2026-08-19",
@@ -28145,6 +28698,305 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-c57d8a28ca8e466d",
+      "snapshotKey": "c57d8a28ca8e466d",
+      "snapshotId": "HWS-256a384ef03055b0",
+      "eventId": "EV-cbc988c78b987642",
+      "eventIds": [
+        "EV-cbc988c78b987642"
+      ],
+      "dataDate": "2026-09-16",
+      "date": "2026-09-16",
+      "title": "Fujitsu",
+      "subject": "Fujitsu",
+      "productNames": [],
+      "hardwareType": "server",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-fae38fd304d41a9e"
+        }
+      },
+      "factCount": 3,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-09-16",
+          "hardware_fact_id": "HWF-afe203c1048393cd",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-09-14T00:00:00.000Z",
+          "subject_entity_id": "EN-4742b2b6563b92ed",
+          "subject_name": "Fujitsu",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "server",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Fujitsu MONAKA Server, powered by the FUJITSU-MONAKA CPU, enhances sovereign capabilities through domestic manufacturing, contributing to traceability and supply chain transparency. Furthermore, at a time when power and installation space are significant challenges for AI infrastructure expansion, this CPU server alone can build an AI inference platform. Its space-saving and power-efficient design allows for deployment in air-cooled data centers, significantly increasing customers’ capacity for AI infrastructure expansion. Fujitsu MONAKA Server also supports future scalability through resource pooling technology and reduces cooling energy consumption with Fujitsu’s long-cultivated cooling technologies.",
+          "event_refs": [
+            "EV-cbc988c78b987642"
+          ],
+          "claim_ref": "CL-689e55520a812b14",
+          "source_refs": [
+            "SA-6215e671db42357f",
+            "SA-10464455faba2bcf",
+            "SA-42103ffeb7d660ed"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-16/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-09-16",
+          "hardware_fact_id": "HWF-24469e6e7d07f75a",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-09-14T00:00:00.000Z",
+          "subject_entity_id": "EN-4742b2b6563b92ed",
+          "subject_name": "Fujitsu",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "server",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Fujitsu MONAKA Server, powered by the FUJITSU-MONAKA CPU, enhances sovereign capabilities through domestic manufacturing, contributing to traceability and supply chain transparency. Furthermore, at a time when power and installation space are significant challenges for AI infrastructure expansion, this CPU server alone can build an AI inference platform. Its space-saving and power-efficient design allows for deployment in air-cooled data centers, significantly increasing customers' capacity for AI infrastructure expansion. Fujitsu MONAKA Server also supports future scalability through resource pooling technology and reduces cooling energy consumption with Fujitsu's long-cultivated cooling technologies.",
+          "event_refs": [
+            "EV-cbc988c78b987642"
+          ],
+          "claim_ref": "CL-3669802f8d651b61",
+          "source_refs": [
+            "SA-6215e671db42357f",
+            "SA-10464455faba2bcf",
+            "SA-42103ffeb7d660ed"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-16/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-09-16",
+          "hardware_fact_id": "HWF-fae38fd304d41a9e",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-09-14T00:00:00.000Z",
+          "subject_entity_id": "EN-4742b2b6563b92ed",
+          "subject_name": "Fujitsu",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "server",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Fujitsu MONAKA Server, powered by the FUJITSU-MONAKA CPU, enhances sovereign capabilities through domestic manufacturing, contributing to traceability and supply chain transparency. Furthermore, at a time when power and installation space are significant challenges for AI infrastructure expansion, this CPU server alone can build an AI inference platform. Its space-saving and power-efficient design allows for deployment in air-cooled data centers, significantly increasing customers' capacity for AI infrastructure expansion. Fujitsu MONAKA Server also supports future scalability through resource pooling technology and reduces cooling energy consumption with Fujitsu's long-cultivated cooling technologies.",
+          "event_refs": [
+            "EV-cbc988c78b987642"
+          ],
+          "claim_ref": "CL-0cd890e93561bf88",
+          "source_refs": [
+            "SA-6215e671db42357f",
+            "SA-10464455faba2bcf",
+            "SA-42103ffeb7d660ed"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-16/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://voasg.com/jcn-newswire/fujitsu-launches-made-in-japan-next-generation-cpu-fujitsu-monaka-and-fujitsu-monaka-server-for-sovereign-ai-infrastructure",
+      "entityIds": [
+        "EN-4742b2b6563b92ed"
+      ]
+    },
+    {
+      "id": "HWC-df312593e6339689",
+      "snapshotKey": "df312593e6339689",
+      "snapshotId": "HWS-d36af5ed79bba073",
+      "eventId": "EV-cbc988c78b987642",
+      "eventIds": [
+        "EV-cbc988c78b987642"
+      ],
+      "dataDate": "2026-09-16",
+      "date": "2026-09-16",
+      "title": "Fujitsu",
+      "subject": "Fujitsu",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product",
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-1c7e306334a59fea"
+        },
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-ea6661c1bd4f85e6"
+        }
+      },
+      "factCount": 6,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-09-16",
+          "hardware_fact_id": "HWF-dac7c33760002891",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-09-14T00:00:00.000Z",
+          "subject_entity_id": "EN-4742b2b6563b92ed",
+          "subject_name": "Fujitsu",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "The FUJITSU-MONAKA CPU integrates Fujitsu’s extensive expertise in processor and server development, achieving world-class computational performance and data supply capabilities with a maximum operating frequency of 3.8GHz and memory transfer speed of 8800MT/s. It delivers twice the AI inference throughput and superior power efficiency compared to other CPUs, effectively halving the number of servers and power consumption required for equivalent processing loads.",
+          "event_refs": [
+            "EV-cbc988c78b987642"
+          ],
+          "claim_ref": "CL-e4ef19507b939ab9",
+          "source_refs": [
+            "SA-6215e671db42357f",
+            "SA-10464455faba2bcf",
+            "SA-42103ffeb7d660ed"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-16/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-09-16",
+          "hardware_fact_id": "HWF-d1d7bb97ff1ac74b",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-09-14T00:00:00.000Z",
+          "subject_entity_id": "EN-4742b2b6563b92ed",
+          "subject_name": "Fujitsu",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "The FUJITSU-MONAKA CPU integrates Fujitsu's extensive expertise in processor and server development, achieving world-class computational performance and data supply capabilities with a maximum operating frequency of 3.8GHz and memory transfer speed of 8800MT/s. It delivers twice the AI inference throughput and superior power efficiency compared to other CPUs, effectively halving the number of servers and power consumption required for equivalent processing loads.",
+          "event_refs": [
+            "EV-cbc988c78b987642"
+          ],
+          "claim_ref": "CL-9c0a0e2c00a4d0d6",
+          "source_refs": [
+            "SA-6215e671db42357f",
+            "SA-10464455faba2bcf",
+            "SA-42103ffeb7d660ed"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-16/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-09-16",
+          "hardware_fact_id": "HWF-ea6661c1bd4f85e6",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-09-14T00:00:00.000Z",
+          "subject_entity_id": "EN-4742b2b6563b92ed",
+          "subject_name": "Fujitsu",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "The FUJITSU-MONAKA CPU integrates Fujitsu's extensive expertise in processor and server development, achieving world-class computational performance and data supply capabilities with a maximum operating frequency of 3.8GHz and memory transfer speed of 8800MT/s. It delivers twice the AI inference throughput and superior power efficiency compared to other CPUs, effectively halving the number of servers and power consumption required for equivalent processing loads.",
+          "event_refs": [
+            "EV-cbc988c78b987642"
+          ],
+          "claim_ref": "CL-30283b50f7b17256",
+          "source_refs": [
+            "SA-6215e671db42357f",
+            "SA-10464455faba2bcf",
+            "SA-42103ffeb7d660ed"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-16/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-16",
+          "hardware_fact_id": "HWF-5cc135ed28063281",
+          "fact_type": "product",
+          "observed_at": "2026-09-14T00:00:00.000Z",
+          "subject_entity_id": "EN-4742b2b6563b92ed",
+          "subject_name": "Fujitsu",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "KAWASAKI, Japan, September 14, 2026 – (JCN Newswire via SeaPRwire.com) – Fujitsu Limited today announced that it will begin global sales of its next-generation CPU, FUJITSU-MONAKA [1], designed and developed in Japan, starting November 2026. This will include sales of the processor as a standalone product to cloud and data center operators and server vendors. Additionally, the company will launch the made-in-Japan Fujitsu MONAKA Server equipped with the FUJITSU-MONAKA CPU, offering high reliability and power efficiency as a sovereign AI infrastructure. Fujitsu MONAKA Server will be made broadly available from November 2026 to data center operators, enterprises, and the academic and HPC sectors in Japan and Europe, as well as to the defense sector, contributing to national security.",
+          "event_refs": [
+            "EV-cbc988c78b987642"
+          ],
+          "claim_ref": "CL-c517fd353bf0698e",
+          "source_refs": [
+            "SA-6215e671db42357f",
+            "SA-10464455faba2bcf",
+            "SA-42103ffeb7d660ed"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-16/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-09-16",
+          "hardware_fact_id": "HWF-48ff399574c929ed",
+          "fact_type": "product",
+          "observed_at": "2026-09-14T00:00:00.000Z",
+          "subject_entity_id": "EN-4742b2b6563b92ed",
+          "subject_name": "Fujitsu",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "KAWASAKI, Japan , Sept. 14, 2026 /PRNewswire/ -- Fujitsu Limited today announced that it will begin global sales of its next-generation CPU, FUJITSU-MONAKA [1] , designed and developed in Japan, starting November 2026. This will include sales of the processor as a standalone product to cloud and data center operators and server vendors. Additionally, the company will launch the made-in-Japan Fujitsu MONAKA Server equipped with the FUJITSU-MONAKA CPU, offering high reliability and power efficiency as a sovereign AI infrastructure. Fujitsu MONAKA Server will be made broadly available from November 2026 to data center operators, enterprises, and the academic and HPC sectors in Japan and Europe, contributing to national security.",
+          "event_refs": [
+            "EV-cbc988c78b987642"
+          ],
+          "claim_ref": "CL-ca842173a064b2d4",
+          "source_refs": [
+            "SA-6215e671db42357f",
+            "SA-10464455faba2bcf",
+            "SA-42103ffeb7d660ed"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-16/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-09-16",
+          "hardware_fact_id": "HWF-1c7e306334a59fea",
+          "fact_type": "product",
+          "observed_at": "2026-09-14T00:00:00.000Z",
+          "subject_entity_id": "EN-4742b2b6563b92ed",
+          "subject_name": "Fujitsu",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "KAWASAKI, Japan , Sept. 14, 2026 /PRNewswire/ -- Fujitsu Limited today announced that it will begin global sales of its next-generation CPU, FUJITSU-MONAKA [1] , designed and developed in Japan, starting November 2026. This will include sales of the processor as a standalone product to cloud and data center operators and server vendors. Additionally, the company will launch the made-in-Japan Fujitsu MONAKA Server equipped with the FUJITSU-MONAKA CPU, offering high reliability and power efficiency as a sovereign AI infrastructure. Fujitsu MONAKA Server will be made broadly available from November 2026 to data center operators, enterprises, and the academic and HPC sectors in Japan and Europe, contributing to national security.",
+          "event_refs": [
+            "EV-cbc988c78b987642"
+          ],
+          "claim_ref": "CL-640e0952365d4fa6",
+          "source_refs": [
+            "SA-6215e671db42357f",
+            "SA-10464455faba2bcf",
+            "SA-42103ffeb7d660ed"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-16/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://voasg.com/jcn-newswire/fujitsu-launches-made-in-japan-next-generation-cpu-fujitsu-monaka-and-fujitsu-monaka-server-for-sovereign-ai-infrastructure",
+      "entityIds": [
+        "EN-4742b2b6563b92ed"
+      ]
+    },
     {
       "id": "HWC-f01062ad2956c510",
       "snapshotKey": "f01062ad2956c510",

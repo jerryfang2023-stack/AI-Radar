@@ -5,14 +5,15 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-15T07:57:02.631Z",
-    "latestDataDate": "2026-09-15",
-    "currentDate": "2026-09-15",
-    "eventCount": 3271,
-    "quarantinedEventCount": 34,
+    "generatedAt": "2026-09-16T04:08:34.638Z",
+    "latestDataDate": "2026-09-16",
+    "currentDate": "2026-09-16",
+    "eventCount": 3311,
+    "quarantinedEventCount": 35,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
       "EV-1fc7578ab4f32166",
@@ -58,17 +59,18 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 14,
+    "current_round_count": 15,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 12,
+    "portfolio_company_count": 13,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-03-25",
-    "latest_disclosed_at": "2026-09-01",
+    "latest_disclosed_at": "2026-09-15",
     "role_counts": {
+      "co_lead": 1,
       "historical_or_ambiguous": 3,
       "lead": 8,
       "other_current_round": 1,
@@ -81,6 +83,7 @@
       "series_b",
       "series_c",
       "series_d",
+      "series_d7",
       "series_f",
       "series_g",
       "undisclosed"
@@ -132,6 +135,11 @@
         "name": "Probook"
       },
       {
+        "entity_id": "FICO-d750f652e8f2dd92",
+        "canonical_entity_id": "",
+        "name": "Profound"
+      },
+      {
         "entity_id": "EN-cfd90af8403941bf",
         "canonical_entity_id": "",
         "name": "Sable"
@@ -148,6 +156,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-b6c6962491cae465",
+        "funding_insight_id": "FI-06c111145d62f576",
+        "event_ids": [
+          "EV-05b635c3958e4591"
+        ],
+        "company_entity_id": "FICO-d750f652e8f2dd92",
+        "company_canonical_entity_id": "",
+        "company_name": "Profound",
+        "round": "D7轮",
+        "round_code": "series_d7",
+        "round_original": "D7轮",
+        "amount_original": "$180M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 180000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.8 亿美元"
+        },
+        "announced_at": "2026-09-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-bed55d4f5e02a374",
+            "source_url": "https://techcrunch.com/2026/09/15/aeo-startup-profound-hits-unicorn-valuation-raises-180m-series-d-7-months-after-last-round",
+            "source_title": "AEO 创业公司 Profound 融资 1.8 亿美元，估值达 18 亿美元",
+            "source_content_hash": "8c26f4447adaeabc",
+            "quote": "Sequoia and Kleiner Perkins led the round",
+            "quote_hash": "d4d9e59aedc610a257eec88140bbe4eb526f5e2384d02fe9df4a43ae1ac2be3b"
+          }
+        ]
+      },
       {
         "activity_id": "IA-b8c2836011deda65",
         "funding_insight_id": "FI-29e37a6d373071d9",
@@ -839,6 +887,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-bed55d4f5e02a374",
+        "source_url": "https://techcrunch.com/2026/09/15/aeo-startup-profound-hits-unicorn-valuation-raises-180m-series-d-7-months-after-last-round",
+        "source_title": "AEO 创业公司 Profound 融资 1.8 亿美元，估值达 18 亿美元",
+        "source_content_hash": "8c26f4447adaeabc",
+        "quote": "Sequoia and Kleiner Perkins led the round",
+        "quote_hash": "d4d9e59aedc610a257eec88140bbe4eb526f5e2384d02fe9df4a43ae1ac2be3b"
+      },
       {
         "source_id": "FISRC-0426e4b3b9347f4f",
         "source_url": "https://techcrunch.com/2026/09/01/air-raises-50m-to-help-companies-vet-the-skills-and-add-ons-ai-agents-use",

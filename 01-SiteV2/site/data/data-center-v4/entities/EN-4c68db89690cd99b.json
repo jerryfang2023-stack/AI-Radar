@@ -1,0 +1,198 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-16T04:08:34.638Z",
+    "latestDataDate": "2026-09-16",
+    "currentDate": "2026-09-16",
+    "eventCount": 3311,
+    "quarantinedEventCount": 35,
+    "quarantinedEventIds": [
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "entity": {
+    "id": "EN-4c68db89690cd99b",
+    "name": "Claude across a sales organization",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-0b7dcbb44344e389"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-15",
+    "lastSeen": "2026-09-16",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-0b7dcbb44344e389"
+      ],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-0b7dcbb44344e389",
+        "dataDate": "2026-09-16",
+        "date": "2026-09-15",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Anthropic 发布《构建 AI 原生营收组织》指南，详解 Claude 在销售团队的落地路径",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-43e07e2f011d8bf3",
+          "EN-4c68db89690cd99b"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [
+    {
+      "id": "FDE-089c1a8365c0c882",
+      "eventId": "EV-0b7dcbb44344e389",
+      "dataDate": "2026-09-16",
+      "date": "2026-09-15",
+      "title": "Anthropic 发布《构建 AI 原生营收组织》指南，详解 Claude 在销售团队的落地路径",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "路径",
+      "reportedNeed": "half the team barely touches the AI it already has, the best sellers build skills and prompts that no one else uses, and leadership has no visibility into usage and spend",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://claude.com/blog/building-an-ai-native-revenue-organization",
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-43e07e2f011d8bf3",
+        "EN-4c68db89690cd99b"
+      ]
+    }
+  ],
+  "hardware": [],
+  "fdeDossiers": [
+    {
+      "id": "FDED-147e347a6175a1b5",
+      "implementationKey": "147e347a6175a1b5",
+      "eventId": "EV-0b7dcbb44344e389",
+      "eventIds": [
+        "EV-0b7dcbb44344e389"
+      ],
+      "dataDate": "2026-09-16",
+      "date": "2026-09-14",
+      "title": "未披露 × 未披露：路径",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "路径",
+      "workflow": "未披露",
+      "systems": [
+        "Claude"
+      ],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.375,
+      "completenessPercent": 38,
+      "missingFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-533a062fe935642f",
+          "type": "implementation_update",
+          "stage": "completed",
+          "date": "2026-09-14",
+          "dataDate": "2026-09-16",
+          "eventId": "EV-0b7dcbb44344e389",
+          "eventTitle": "Anthropic 发布《构建 AI 原生营收组织》指南，详解 Claude 在销售团队的落地路径",
+          "claimCount": 3,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://claude.com/blog/building-an-ai-native-revenue-organization",
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-43e07e2f011d8bf3",
+        "EN-4c68db89690cd99b"
+      ]
+    }
+  ]
+}

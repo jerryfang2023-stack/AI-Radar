@@ -5,14 +5,15 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-15T07:57:02.631Z",
-    "latestDataDate": "2026-09-15",
-    "currentDate": "2026-09-15",
-    "eventCount": 3271,
-    "quarantinedEventCount": 34,
+    "generatedAt": "2026-09-16T04:08:34.638Z",
+    "latestDataDate": "2026-09-16",
+    "currentDate": "2026-09-16",
+    "eventCount": 3311,
+    "quarantinedEventCount": 35,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
       "EV-1fc7578ab4f32166",
@@ -56,17 +57,18 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 8,
+    "current_round_count": 9,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 8,
+    "portfolio_company_count": 9,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-03-31",
-    "latest_disclosed_at": "2026-09-08",
+    "latest_disclosed_at": "2026-09-15",
     "role_counts": {
+      "co_lead": 1,
       "historical_or_ambiguous": 2,
       "lead": 3,
       "participant": 5
@@ -77,6 +79,7 @@
       "series_a",
       "series_b",
       "series_d",
+      "series_d7",
       "series_e"
     ],
     "portfolio_companies": [
@@ -106,6 +109,11 @@
         "name": "Poetic"
       },
       {
+        "entity_id": "FICO-d750f652e8f2dd92",
+        "canonical_entity_id": "",
+        "name": "Profound"
+      },
+      {
         "entity_id": "EN-70e7e370d5a50ea1",
         "canonical_entity_id": "",
         "name": "Retym"
@@ -122,6 +130,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-e572a01b77ee566c",
+        "funding_insight_id": "FI-06c111145d62f576",
+        "event_ids": [
+          "EV-05b635c3958e4591"
+        ],
+        "company_entity_id": "FICO-d750f652e8f2dd92",
+        "company_canonical_entity_id": "",
+        "company_name": "Profound",
+        "round": "D7轮",
+        "round_code": "series_d7",
+        "round_original": "D7轮",
+        "amount_original": "$180M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 180000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.8 亿美元"
+        },
+        "announced_at": "2026-09-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-bed55d4f5e02a374",
+            "source_url": "https://techcrunch.com/2026/09/15/aeo-startup-profound-hits-unicorn-valuation-raises-180m-series-d-7-months-after-last-round",
+            "source_title": "AEO 创业公司 Profound 融资 1.8 亿美元，估值达 18 亿美元",
+            "source_content_hash": "8c26f4447adaeabc",
+            "quote": "Sequoia and Kleiner Perkins led the round",
+            "quote_hash": "d4d9e59aedc610a257eec88140bbe4eb526f5e2384d02fe9df4a43ae1ac2be3b"
+          }
+        ]
+      },
       {
         "activity_id": "IA-73b0732c128db371",
         "funding_insight_id": "FI-d9fc0a409d33d577",
@@ -526,6 +574,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-bed55d4f5e02a374",
+        "source_url": "https://techcrunch.com/2026/09/15/aeo-startup-profound-hits-unicorn-valuation-raises-180m-series-d-7-months-after-last-round",
+        "source_title": "AEO 创业公司 Profound 融资 1.8 亿美元，估值达 18 亿美元",
+        "source_content_hash": "8c26f4447adaeabc",
+        "quote": "Sequoia and Kleiner Perkins led the round",
+        "quote_hash": "d4d9e59aedc610a257eec88140bbe4eb526f5e2384d02fe9df4a43ae1ac2be3b"
+      },
       {
         "source_id": "FISRC-61aa8db010b34dfa",
         "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",

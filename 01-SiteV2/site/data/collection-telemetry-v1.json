@@ -2,40 +2,40 @@
   "meta": {
     "version": "COLLECTION-TELEMETRY-V1.0",
     "ops_version": "OPS-V3.8.0-engineering-integration",
-    "data_date": "2026-09-15",
-    "generated_at": "2026-09-15T07:33:44.432Z",
-    "source_snapshot": "f8052f2724cec0f1b13ba1af80e9a0e7a50aa1773e310a486a5dd70d16184bb3",
+    "data_date": "2026-09-16",
+    "generated_at": "2026-09-16T04:08:52.108Z",
+    "source_snapshot": "4a0d5ca892cd3ffa3e129d40038930072d8197f4d67cdf092630500bb1d913e1",
     "scope": "OPS",
     "canonical_writeback": false,
     "source_of_truth": "Data Center V4 manifest and integrity gate"
   },
   "collection": {
     "discovered": 290,
-    "capture_succeeded": 234,
-    "capture_failed": 6,
-    "recovered_source_failures": 8,
-    "raw_documents": 234
+    "capture_succeeded": 247,
+    "capture_failed": 13,
+    "recovered_source_failures": 9,
+    "raw_documents": 247
   },
   "fact_build": {
-    "accepted_claims": 81,
+    "accepted_claims": 104,
     "rejected_claims": 0,
-    "accepted": 81,
+    "accepted": 104,
     "rejected": 0,
-    "pending_claims": 3,
-    "canonical_events": 38,
-    "entities": 58,
-    "relationships": 84,
+    "pending_claims": 9,
+    "canonical_events": 48,
+    "entities": 80,
+    "relationships": 113,
     "conflicts": 0,
-    "qa_queue": 196,
+    "qa_queue": 198,
     "qa_by_status": {
-      "review_optional": 185,
-      "open": 11
+      "review_optional": 184,
+      "open": 14
     }
   },
   "v4_gate": {
     "status": "passed",
-    "manifest_date": "2026-09-15",
-    "gate_date": "2026-09-15",
+    "manifest_date": "2026-09-16",
+    "gate_date": "2026-09-16",
     "failures": [],
     "warnings": []
   },
@@ -58,15 +58,15 @@
       "status": "partial",
       "counts": {
         "discovered": 290,
-        "capture_succeeded": 234,
-        "capture_failed": 6,
-        "recovered_source_failures": 8,
-        "raw_documents": 234
+        "capture_succeeded": 247,
+        "capture_failed": 13,
+        "recovered_source_failures": 9,
+        "raw_documents": 247
       },
       "evidence": [
-        "01-SiteV2/content/11-databases/data-center-v4/2026-09-15/manifest.json",
-        "agent-workflow/reports/2026-09-15-guanlan-daily-monitor-log.md",
-        "agent-workflow/reports/2026-09-15-guanlan-monitor-quality-gate.md"
+        "01-SiteV2/content/11-databases/data-center-v4/2026-09-16/manifest.json",
+        "agent-workflow/reports/2026-09-16-guanlan-daily-monitor-log.md",
+        "agent-workflow/reports/2026-09-16-guanlan-monitor-quality-gate.md"
       ]
     },
     {
@@ -74,20 +74,20 @@
       "label": "事实构建",
       "status": "passed",
       "counts": {
-        "accepted_claims": 81,
+        "accepted_claims": 104,
         "rejected_claims": 0,
-        "accepted": 81,
+        "accepted": 104,
         "rejected": 0,
-        "pending_claims": 3,
-        "canonical_events": 38,
-        "entities": 58,
-        "relationships": 84,
+        "pending_claims": 9,
+        "canonical_events": 48,
+        "entities": 80,
+        "relationships": 113,
         "conflicts": 0,
-        "qa_queue": 196
+        "qa_queue": 198
       },
       "evidence": [
-        "01-SiteV2/content/11-databases/data-center-v4/2026-09-15/manifest.json",
-        "agent-workflow/reports/2026-09-15-data-center-v4-integrity-gate.json"
+        "01-SiteV2/content/11-databases/data-center-v4/2026-09-16/manifest.json",
+        "agent-workflow/reports/2026-09-16-data-center-v4-integrity-gate.json"
       ]
     },
     {
@@ -101,7 +101,7 @@
         "fde_hardware_sync": "passed"
       },
       "evidence": [
-        "agent-workflow/reports/2026-09-15-persistent-asset-manifest.json"
+        "agent-workflow/reports/2026-09-16-persistent-asset-manifest.json"
       ]
     },
     {
@@ -114,7 +114,7 @@
         "authoritative": false
       },
       "evidence": [
-        "agent-workflow/reports/2026-09-15-persistent-asset-manifest.json"
+        "agent-workflow/reports/2026-09-16-persistent-asset-manifest.json"
       ]
     }
   ],

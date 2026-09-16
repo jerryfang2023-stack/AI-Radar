@@ -1,0 +1,215 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-16T04:08:34.638Z",
+    "latestDataDate": "2026-09-16",
+    "currentDate": "2026-09-16",
+    "eventCount": 3311,
+    "quarantinedEventCount": 35,
+    "quarantinedEventIds": [
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "entity": {
+    "id": "EN-d750f652e8f2dd92",
+    "name": "Profound",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-05b635c3958e4591"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-15",
+    "lastSeen": "2026-09-16",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-05b635c3958e4591"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-05b635c3958e4591",
+        "dataDate": "2026-09-16",
+        "date": "2026-09-15",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "AEO 创业公司 Profound 融资 1.8 亿美元，估值达 18 亿美元",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "enterprise_applications",
+            "name": "企业级应用",
+            "entityIds": [
+              "FICO-d750f652e8f2dd92"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-2d42a0dedc6cc0c5",
+            "fundingInsightId": "FI-68743806bef12fca"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "marketing",
+            "name": "营销",
+            "entityIds": [
+              "FICO-d750f652e8f2dd92"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-d074949e549ded73",
+            "fundingInsightId": "FI-68743806bef12fca"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "FICO-d750f652e8f2dd92"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b3f6a9b3c823cc3c",
+            "fundingInsightId": "FI-68743806bef12fca"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "content_creation",
+            "name": "内容创作",
+            "entityIds": [
+              "FICO-d750f652e8f2dd92"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-7fc0d377f6bda9f1",
+            "fundingInsightId": "FI-68743806bef12fca"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "data_analysis",
+            "name": "数据分析",
+            "entityIds": [
+              "FICO-d750f652e8f2dd92"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-fdaa2c6fa6ca1b15",
+            "fundingInsightId": "FI-68743806bef12fca"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "marketing",
+            "name": "营销",
+            "entityIds": [
+              "FICO-d750f652e8f2dd92"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-596ffd0d674c5949",
+            "fundingInsightId": "FI-68743806bef12fca"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "media_entertainment",
+            "name": "媒体与娱乐",
+            "entityIds": [
+              "FICO-d750f652e8f2dd92"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-9cd28e03a47c5a00",
+            "fundingInsightId": "FI-68743806bef12fca"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "retail_ecommerce",
+            "name": "零售与电商",
+            "entityIds": [
+              "FICO-d750f652e8f2dd92"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f754066dd1b77fa7",
+            "fundingInsightId": "FI-68743806bef12fca"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "FICO-d750f652e8f2dd92"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4b8cd9cca3035722",
+            "fundingInsightId": "FI-68743806bef12fca"
+          }
+        ],
+        "entityIds": [
+          "EN-d750f652e8f2dd92",
+          "FICO-d750f652e8f2dd92"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

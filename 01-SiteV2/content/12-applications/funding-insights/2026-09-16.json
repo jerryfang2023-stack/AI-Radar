@@ -1,0 +1,3438 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "date": "2026-09-16",
+    "generated_at": "2026-09-16T04:07:40.706Z",
+    "trigger": "verified_funding_events_with_three_month_backfill",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
+    "counts": {
+      "funding_events": 6,
+      "auto_published": 4,
+      "blocked": 0,
+      "pending": 0,
+      "deduplicated": 2
+    },
+    "taxonomy_version": "TAG-V4.1"
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-69b850b5cebe5572",
+      "triggered_by_event_id": "EV-37cc66ca2e29a78c",
+      "as_of_date": "2026-09-16",
+      "company": {
+        "entity_id": "EN-caffca3284100caa",
+        "name": "Cornelis",
+        "full_name": "Cornelis",
+        "website": "www.cornelis.com",
+        "summary": "Cornelis是一家高性能网络解决方案提供商，专注于提升AI芯片之间通信的网络技术，提供scale-up和scale-out网络解决方案以加速AI和HPC工作负载。",
+        "headquarters": "WAYNE, PA",
+        "founders": [],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-83d998cb19896193",
+            "quote": "Cornelis, a company specializing in networking technology to enhance communication between AI chips",
+            "source_content_hash": "b407088c7d51f10a",
+            "quote_hash": "514f9e1d69d3ed36d4f6725c4e0d7c0244a9b6bef156ed27e98eaff37a7d6ae1"
+          },
+          {
+            "source_id": "FISRC-024bedf95b5719c6",
+            "quote": "Cornelis , a provider of high-performance networking solutions",
+            "source_content_hash": "1328a5e696e4f83b",
+            "quote_hash": "edb0f3bdcac57e2308ce2787b3a2f29c27506910ed2831cb99a603f9786de1db"
+          }
+        ],
+        "application_entity_id": "EN-caffca3284100caa",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "基础设施融资",
+        "amount": "$205 million",
+        "total_raised": "$205 million",
+        "announced_at": "2026-09-14",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "IAG Capital Partners",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-83d998cb19896193",
+                "quote": "it has secured $205 million in a funding round led by IAG Capital Partners",
+                "source_content_hash": "b407088c7d51f10a",
+                "quote_hash": "39d680d9b18dde1807f51da419d33c20173b63edb4c0d78af437d95804864cd1"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-83d998cb19896193",
+            "quote": "Cornelis, a company specializing in networking technology to enhance communication between AI chips, announced on Monday that it has secured $205 million in a funding round led by IAG Capital Partners.",
+            "source_content_hash": "b407088c7d51f10a",
+            "quote_hash": "e7e9729c925de58ccde099e27569c1f7dd9c5826506235f2f4a24d6e5e49f854"
+          },
+          {
+            "source_id": "FISRC-83d998cb19896193",
+            "quote": "it has secured $205 million in a funding round led by IAG Capital Partners",
+            "source_content_hash": "b407088c7d51f10a",
+            "quote_hash": "39d680d9b18dde1807f51da419d33c20173b63edb4c0d78af437d95804864cd1"
+          },
+          {
+            "source_id": "FISRC-024bedf95b5719c6",
+            "quote": "Cornelis also announced $205 million in funding to support its expansion and bring its next generation of products to market.",
+            "source_content_hash": "1328a5e696e4f83b",
+            "quote_hash": "48b190fc1c44d000194b0d8ecc5b6dc11e992ee1a8983f30a4821ec35eecb392"
+          }
+        ],
+        "round_code": "infrastructure",
+        "round_original": "基础设施融资",
+        "amount_original": "$205 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 205000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.05 亿美元"
+        },
+        "total_raised_original": "$205 million",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 205000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.05 亿美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-37cc66ca2e29a78c",
+            "round_original": "基础设施融资",
+            "amount": "$205 million",
+            "announced_at": "2026-09-14",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-83d998cb19896193",
+                "quote": "Cornelis, a company specializing in networking technology to enhance communication between AI chips, announced on Monday that it has secured $205 million in a funding round led by IAG Capital Partners.",
+                "source_content_hash": "b407088c7d51f10a",
+                "quote_hash": "e7e9729c925de58ccde099e27569c1f7dd9c5826506235f2f4a24d6e5e49f854"
+              },
+              {
+                "source_id": "FISRC-83d998cb19896193",
+                "quote": "it has secured $205 million in a funding round led by IAG Capital Partners",
+                "source_content_hash": "b407088c7d51f10a",
+                "quote_hash": "39d680d9b18dde1807f51da419d33c20173b63edb4c0d78af437d95804864cd1"
+              },
+              {
+                "source_id": "FISRC-024bedf95b5719c6",
+                "quote": "Cornelis also announced $205 million in funding to support its expansion and bring its next generation of products to market.",
+                "source_content_hash": "1328a5e696e4f83b",
+                "quote_hash": "48b190fc1c44d000194b0d8ecc5b6dc11e992ee1a8983f30a4821ec35eecb392"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Active Compute Fabric",
+          "description": "一种开放架构，跨越scale-up和scale-out网络，内置可编程计算，结合无损传输、网内加速和可编程计算，使网络在数据移动过程中对数据进行操作。",
+          "target_customers": "AI和HPC数据中心客户，包括商业、学术、政府和云环境",
+          "features": [
+            "无损传输",
+            "网内加速",
+            "可编程计算",
+            "支持UALink和ESUN标准用于scale-up",
+            "支持Ultra Ethernet规范用于scale-out",
+            "支持广泛的加速器"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-024bedf95b5719c6",
+              "quote": "Active Compute Fabric, an open architecture spanning scale-up and scale-out networking with programmable compute built into the fabric",
+              "source_content_hash": "1328a5e696e4f83b",
+              "quote_hash": "7a734d84fd982b98c6a4297b39279001cd93a3ff8ea77c0524f06e86f9e26a6d"
+            },
+            {
+              "source_id": "FISRC-024bedf95b5719c6",
+              "quote": "Active Compute Fabric moves beyond simply transporting data by combining lossless transport, in-fabric acceleration, and programmable compute.",
+              "source_content_hash": "1328a5e696e4f83b",
+              "quote_hash": "72c53928ebf7c3397345bb11a0e508bbb5fde30e8c22929e5c182c1b1a40bdca"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "CN5000",
+          "description": "首个无损、无拥塞的scale-out网络，提供比现有替代方案更快的训练和更低的推理延迟。",
+          "target_customers": "AI和HPC数据中心客户",
+          "features": [
+            "无损网络",
+            "无拥塞网络",
+            "降低训练时间",
+            "降低推理延迟"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7849063af757ec2e",
+              "quote": "CN5000 The first lossless, congestion-free scale-out network—delivering faster training and lower inference latency than today's alternatives.",
+              "source_content_hash": "0bf31b59110a44bc",
+              "quote_hash": "0c4469332b4e5fb14bd939f24d78c2e190ff8e604ecca8f70edda3ababecce65"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "CN6000",
+          "description": "首款800G多协议SuperNIC，在PCIe 6.0上通过Omni-Path、RoCEv2和Ultra Ethernet提供业界领先的AI和HPC性能。",
+          "target_customers": "AI和HPC数据中心客户",
+          "features": [
+            "800G多协议SuperNIC",
+            "支持Omni-Path",
+            "支持RoCEv2",
+            "支持Ultra Ethernet",
+            "PCIe 6.0"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7849063af757ec2e",
+              "quote": "CN6000 The first 800G multi-protocol SuperNIC, delivering industry-leading AI and HPC performance with Omni-Path, RoCEv2, and Ultra Ethernet on PCIe 6.0.",
+              "source_content_hash": "0bf31b59110a44bc",
+              "quote_hash": "5b53a24345b62a3da4e3b384b7319b2f411ed63c5beca42ce517cba3ce2b60a7"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "100,000-GPU系统中浪费的GPU小时价值",
+          "value": "约$1.68 billion/年",
+          "observed_at": "2026-09-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-024bedf95b5719c6",
+              "quote": "In a 100,000-GPU system, Cornelis modeling of public data shows that roughly half of all GPU hours are spent waiting for data, worth about $1.68 billion a year in wasted capacity",
+              "source_content_hash": "1328a5e696e4f83b",
+              "quote_hash": "9a97df32d430b2eded3ace5555b6bdcfd66c42e74e186bb84f00c06d14538549"
+            }
+          ]
+        },
+        {
+          "label": "100,000-GPU系统中浪费的电力",
+          "value": "500 GWh",
+          "observed_at": "2026-09-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-024bedf95b5719c6",
+              "quote": "500 GWh of power, enough to supply nearly 48,000 U.S. homes",
+              "source_content_hash": "1328a5e696e4f83b",
+              "quote_hash": "da06a8e4a522d7526d1e54c209d2b32a3cd53ad43a9e88defb78bdcb0c1ecdaa"
+            }
+          ]
+        },
+        {
+          "label": "开放标准scale-up和scale-out网络市场机会",
+          "value": "超过$55 billion（到2030年）",
+          "observed_at": "2026-09-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-024bedf95b5719c6",
+              "quote": "Open-standard scale-up and scale-out networking for AI represents more than $55 billion of opportunity by 2030",
+              "source_content_hash": "1328a5e696e4f83b",
+              "quote_hash": "f26941610948d802c0358e4dfb82677fcbb96f7a83372fc175079e1f55500710"
+            }
+          ]
+        },
+        {
+          "label": "CN6000扩展可用性预期",
+          "value": "Q4 2026",
+          "observed_at": "2026-09-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-024bedf95b5719c6",
+              "quote": "CN6000 is sampling with customers ahead of expanded availability expected in Q4 2026",
+              "source_content_hash": "1328a5e696e4f83b",
+              "quote_hash": "7491433fd781b837d9ac0932ef3d035a43e49d09c96c7cf4f6853168d0e3e2d6"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Lisa Spelman",
+          "quote": "AI infrastructure is reaching a point where faster endpoints alone are not enough. The fabric has to become an active part of the compute system.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-024bedf95b5719c6",
+              "quote": "AI infrastructure is reaching a point where faster endpoints alone are not enough. The fabric has to become an active part of the compute system",
+              "source_content_hash": "1328a5e696e4f83b",
+              "quote_hash": "a92fa121f786980212624a20db13fc6248076c32dd73c3e8401aaafa23974b86"
+            }
+          ]
+        },
+        {
+          "speaker": "Lisa Spelman",
+          "quote": "Customers want complete rack-scale solutions without being locked into a single vendor or architecture. We see a significant opportunity for Cornelis to deliver that choice with an open approach built for the demands of AI infrastructure.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-024bedf95b5719c6",
+              "quote": "Customers want complete rack-scale solutions without being locked into a single vendor or architecture. We see a significant opportunity for Cornelis to deliver that choice with an open approach built for the demands of AI infrastructure.",
+              "source_content_hash": "1328a5e696e4f83b",
+              "quote_hash": "df49bbf96d703ae6c4087581fb62a66953e249e49a5f81812c215911ac9078eb"
+            }
+          ]
+        },
+        {
+          "speaker": "Tony Pialis",
+          "quote": "As AI systems continue to scale, moving data efficiently across the rack becomes just as important as the compute itself.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-024bedf95b5719c6",
+              "quote": "As AI systems continue to scale, moving data efficiently across the rack becomes just as important as the compute itself",
+              "source_content_hash": "1328a5e696e4f83b",
+              "quote_hash": "ba0dc7db62ff8712ae9ec9d48596b29a6005fed982218f489e10af8670ac311a"
+            }
+          ]
+        },
+        {
+          "speaker": "Joel Whitley",
+          "quote": "Open-standard scale-up and scale-out networking for AI represents more than $55 billion of opportunity by 2030, and we believe the network will decide how much of the total AI build-out delivers real return.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-024bedf95b5719c6",
+              "quote": "Open-standard scale-up and scale-out networking for AI represents more than $55 billion of opportunity by 2030, and we believe the network will decide how much of the total AI build-out delivers real return",
+              "source_content_hash": "1328a5e696e4f83b",
+              "quote_hash": "109d326827d80707d256ada57e51efa1eca4aa25621ec61c46976f6cbf49491a"
+            }
+          ]
+        },
+        {
+          "speaker": "Joel Whitley",
+          "quote": "What gives us confidence in Cornelis is the combination of a differentiated vision and a team that has demonstrated it can execute. The company has brought multiple generations of technology to market and is well positioned to capitalize on the next phase of growth in AI infrastructure.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-024bedf95b5719c6",
+              "quote": "What gives us confidence in Cornelis is the combination of a differentiated vision and a team that has demonstrated it can execute. The company has brought multiple generations of technology to market and is well positioned to capitalize on the next phase of growth in AI infrastructure.",
+              "source_content_hash": "1328a5e696e4f83b",
+              "quote_hash": "946ec03752b5376b2af3150f6e509ff578f4dc17275423de35d24c2a64c054a3"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是AI基础设施中网络层从被动数据传输向主动计算参与的角色转变，以及开放标准对Nvidia专有GPU栈的替代空间。已验证信号包括：CN5000已开始出货，CN6000正在向客户送样并预计Q4 2026扩大可用性，技术已在数百个数据中心运行AI和HPC工作负载，以及Qualcomm Technologies在AI Infra Summit上公开支持Cornelis的开放可编程网络愿景。来源未披露估值或融资后股权结构，无法判断估值水平。",
+        "validated_signals": [
+          "CN5000已开始出货",
+          "CN6000正在向客户送样，预计Q4 2026扩大可用性",
+          "技术已在数百个数据中心运行AI和HPC工作负载",
+          "Qualcomm Technologies公开支持Cornelis的开放可编程网络愿景"
+        ],
+        "risks": [
+          "Nvidia通过专有软件优化使其完整GPU栈对客户更具吸引力，Cornelis的开放架构面临客户采用惯性挑战",
+          "来源未披露具体客户名称和收入数据，商业化验证程度有限",
+          "性能数据基于预生产模拟和建模，实际结果可能有所不同"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "hardware_computing",
+        "market_application_id": "computing_infrastructure",
+        "use_case_ids": [
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [
+          "telecommunications"
+        ],
+        "target_user_ids": [
+          "developer"
+        ],
+        "sector": "AI基础设施网络",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是AI基础设施中网络层从被动数据传输向主动计算参与的角色转变，以及开放标准对Nvidia专有GPU栈的替代空间。已验证信号包括：CN5000已开始出货，CN6000正在向客户送样并预计Q4 2026扩大可用性，技术已在数百个数据中心运行AI和HPC工作负载，以及Qualcomm Technologies在AI Infra Summit上公开支持Cornelis的开放可编程网络愿景。来源未披露估值或融资后股权结构，无法判断估值水平。",
+          "evidence_signals": [
+            "CN5000已开始出货",
+            "CN6000正在向客户送样，预计Q4 2026扩大可用性",
+            "技术已在数百个数据中心运行AI和HPC工作负载",
+            "Qualcomm Technologies公开支持Cornelis的开放可编程网络愿景"
+          ],
+          "risks": [
+            "Nvidia通过专有软件优化使其完整GPU栈对客户更具吸引力，Cornelis的开放架构面临客户采用惯性挑战",
+            "来源未披露具体客户名称和收入数据，商业化验证程度有限",
+            "性能数据基于预生产模拟和建模，实际结果可能有所不同"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Active Compute Fabric",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "CN5000",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "CN6000",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "IAG Capital Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-37cc66ca2e29a78c",
+          "date": "2026-09-14",
+          "title": "Cornelis 获 2.05 亿美元融资，挑战 Nvidia 在 AI 基础设施领域的主导地位",
+          "amount": "$205 million",
+          "source_refs": [
+            "SA-9896e6281b5202b6"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-83d998cb19896193",
+          "source_url": "https://techweekly.co.za/2026/09/14/cornelis-secures-205m-in-funding-to-challenge-nvidias-dominance-in-ai-infrastructure/",
+          "title": "Cornelis 获 2.05 亿美元融资，挑战 Nvidia 在 AI 基础设施领域的主导地位",
+          "publisher": "keyword search / Exa",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-16T04:02:19.557Z",
+          "content_hash": "b407088c7d51f10a",
+          "source_artifact_id": "SA-9896e6281b5202b6",
+          "raw_id": "RAW-6fdff2a319543a24"
+        },
+        {
+          "source_id": "FISRC-024bedf95b5719c6",
+          "source_url": "https://kpaxtv.marketminute.com/article/bizwire-2026-9-14-cornelis-expands-into-scale-up-networking-with-active-compute-fabric-205m-in-funding-and-qualcomm-collaboration-at-ai-infra-summit",
+          "title": "Cornelis Expands into Scale-Up Networking with Active Compute Fabric, $205M in Funding, and Qualcomm Collaboration at AI Infra Summit | MarketMinute",
+          "publisher": "kpaxtv.marketminute.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-16T04:07:09.422Z",
+          "content_hash": "1328a5e696e4f83b",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-7849063af757ec2e",
+          "source_url": "https://www.cornelis.com/stories/cornelis-expands-into-scaleup-networking-with-active-compute-fabric",
+          "title": "Cornelis Expands into Scale-Up Networking with Active Compute Fabric, $205M in Funding, and Qualcomm Collaboration at AI Infra Summit - The Future of High Performance Fabrics | Cornelis Networks",
+          "publisher": "cornelis.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-16T04:07:14.132Z",
+          "content_hash": "0bf31b59110a44bc",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-16T04:07:40.604Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-37cc66ca2e29a78c",
+          "confidence": 0.75,
+          "needs_review": true
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-16T04:07:40.604Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Active Compute Fabric",
+            "CN5000",
+            "CN6000"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 0,
+          "unresolved_names": []
+        }
+      },
+      "source_event_ids": [
+        "EV-37cc66ca2e29a78c"
+      ],
+      "aggregation": {
+        "key": "EN-caffca3284100caa|infrastructure",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-5354e8108118ce07",
+      "triggered_by_event_id": "EV-e5763ba54217d88a",
+      "as_of_date": "2026-09-16",
+      "company": {
+        "entity_id": "EN-456d7aad12e82e0e",
+        "name": "Arch Systems",
+        "full_name": "Arch Systems",
+        "website": "https://archsys.io",
+        "summary": "Arch Systems 是一家制造智能平台公司，将受治理的制造数据基础与自主 AI 结合在单一平台中，统一分散的工厂数据（设备、MES 和企业系统），并在其上部署经过训练的专家制造 AI 代理，用于质量、规划和运营的调查、推理与行动。",
+        "headquarters": "Palo Alto, California",
+        "founders": [
+          {
+            "name": "Andrew Scheuermann",
+            "role": "联合创始人兼 CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-eff6a156810d9897",
+                "quote": "said Andrew Scheuermann, Co-Founder and CEO of Arch Systems",
+                "source_content_hash": "ae902a312150a491",
+                "quote_hash": "353919a79a8c72b2b5a299046bf7cf0693cc1556785106d47f9142f654fa4e4e"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-eff6a156810d9897",
+            "quote": "Arch Systems is a manufacturing intelligence platform that combines a governed manufacturing data foundation with autonomous AI in a single platform.",
+            "source_content_hash": "ae902a312150a491",
+            "quote_hash": "c9e747b644224ed05dd941b24805745e86ede50cca29d6db8a6d126a0673d3e6"
+          }
+        ],
+        "application_entity_id": "EN-456d7aad12e82e0e",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "成长轮",
+        "amount": "$30 Million",
+        "total_raised": "",
+        "announced_at": "2026-09-15",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Vistara Growth",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-eff6a156810d9897",
+                "quote": "today announced a $30 million investment from Vistara Growth",
+                "source_content_hash": "ae902a312150a491",
+                "quote_hash": "bf30a26e3643ac350e6c6fb3b5df3ccb26e30c160bf24c7fcbfcfc32247ca441"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "DI Technology",
+            "role": "2023年11月追加融资投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-83e0933212b00c0f",
+                "quote": "proudly announces successful additional funding with DI Technology , a Munich-based B2B technology investor with a focus on Industrial Tech and Enterprise SaaS, and Neotribe",
+                "source_content_hash": "dba8e4e18a672a8d",
+                "quote_hash": "c0262611753bac3cc7054c90e322c2e1dc96487d798604e2d77e123628c1ace0"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Neotribe",
+            "role": "2023年11月追加融资投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-83e0933212b00c0f",
+                "quote": "proudly announces successful additional funding with DI Technology , a Munich-based B2B technology investor with a focus on Industrial Tech and Enterprise SaaS, and Neotribe",
+                "source_content_hash": "dba8e4e18a672a8d",
+                "quote_hash": "c0262611753bac3cc7054c90e322c2e1dc96487d798604e2d77e123628c1ace0"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Two Bear Capital",
+            "role": "2022年7月融资领投方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d7613d54dcfcb87f",
+                "quote": "Arch® Systems today announced $15M in new funding led by Two Bear Capital",
+                "source_content_hash": "254f9a2d3fe65a0a",
+                "quote_hash": "d99b0f6580786e4c4161246d6930dd7f75187b93ffd43ec7baaeaf8b970b93e8"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Uncork Capital",
+            "role": "2022年7月融资种子轮领投方及现有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d7613d54dcfcb87f",
+                "quote": "joined by new and existing investors including seed lead investor Uncork Capital",
+                "source_content_hash": "254f9a2d3fe65a0a",
+                "quote_hash": "dcd28102af80561b1a48553797ad91a282c90cf0231efab06cc0d4c207405274"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-eff6a156810d9897",
+            "quote": "Arch Systems Secures $30 Million from Vistara Growth to Accelerate AI-Powered Manufacturing Intelligence",
+            "source_content_hash": "ae902a312150a491",
+            "quote_hash": "9755389f48a5d165ac630f97dfa9db666a31163a4a8733246b236c9b098985cf"
+          },
+          {
+            "source_id": "FISRC-eff6a156810d9897",
+            "quote": "Arch Systems, a leader in manufacturing data and AI solutions, today announced a $30 million investment from Vistara Growth.",
+            "source_content_hash": "ae902a312150a491",
+            "quote_hash": "95291618828945b0a6bc00abd14a8626e6991b3e4b281407d279cfdf6a5ebc2d"
+          }
+        ],
+        "round_code": "growth",
+        "round_original": "成长轮",
+        "amount_original": "$30 Million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3000 万美元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-e5763ba54217d88a",
+            "round_original": "成长轮",
+            "amount": "$30 Million",
+            "announced_at": "2026-09-15",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-eff6a156810d9897",
+                "quote": "Arch Systems Secures $30 Million from Vistara Growth to Accelerate AI-Powered Manufacturing Intelligence",
+                "source_content_hash": "ae902a312150a491",
+                "quote_hash": "9755389f48a5d165ac630f97dfa9db666a31163a4a8733246b236c9b098985cf"
+              },
+              {
+                "source_id": "FISRC-eff6a156810d9897",
+                "quote": "Arch Systems, a leader in manufacturing data and AI solutions, today announced a $30 million investment from Vistara Growth.",
+                "source_content_hash": "ae902a312150a491",
+                "quote_hash": "95291618828945b0a6bc00abd14a8626e6991b3e4b281407d279cfdf6a5ebc2d"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "ArchFX Platform",
+          "description": "ArchFX 平台提供机器连接、数据管理和高级洞察，支持制造组织实现数字化转型。",
+          "target_customers": "全球电子制造服务商、原始设备制造商及受监管终端市场制造商",
+          "features": [
+            "机器连接",
+            "数据管理",
+            "高级分析与可操作洞察"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-83e0933212b00c0f",
+              "quote": "The ArchFX Platform provides the machine connectivity, data management, and advanced insights needed to achieve digital transformation across the manufacturing organization.",
+              "source_content_hash": "dba8e4e18a672a8d",
+              "quote_hash": "7df655c40f0e68e5e722df802c8e06e7281e3969ed0fc85636c385ae0fc93aef"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Arch AI",
+          "description": "Arch AI 将洞察转化为可扩展的引导式行动，支持 AI 代理调查缺陷、停机事件和参数偏差，并在人工介入前闭环。",
+          "target_customers": "Tier-1 电子制造服务商及 OEM 品牌所有者",
+          "features": [
+            "AI 代理自动调查缺陷与停机事件",
+            "自动浮出正确解决方案供现场人员验证与行动"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-eff6a156810d9897",
+              "quote": "AI agents that wake up, investigate every defect, downtime event and parameter deviation, and close the loop before a human is involved, automatically surfacing the correct resolution to the people on the floor for validation and action",
+              "source_content_hash": "ae902a312150a491",
+              "quote_hash": "0299561f6401fd43eca3ad359bc035b014ada92c6a5f61d9ecfce9ca995b17dd"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Arch Data Twin",
+          "description": "Arch Data Twin 是可信、AI 就绪工厂智能的基础。",
+          "target_customers": "制造企业",
+          "features": [
+            "可信工厂数据基础"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-83e0933212b00c0f",
+              "quote": "Arch Data Twin The Foundation for Trusted, AI-Ready Factory Intelligence",
+              "source_content_hash": "dba8e4e18a672a8d",
+              "quote_hash": "3b47459d797972ecee37cf488c0a9be73f8ad32f447dcc709d5047888f784928"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Flex",
+          "industry": "制造业与供应链服务",
+          "use_case": "从新旧机器提取数据，实现实时仪表盘、全球 KPI、定制报告和高级分析，提升利用率和生产力",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0480cd49f3752974",
+              "quote": "Flex partnered with Arch Systems to extract data from new and existing machines, creating a universal solution powered by standardized data.",
+              "source_content_hash": "d8a4eee4d7a157ec",
+              "quote_hash": "77acd8498d7414ffdd732e1354e88b91b1943d99ca350fa559220ea058ef31c7"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "一家全球汽车零部件 OEM",
+          "industry": "汽车",
+          "use_case": "通过 Arch 的停机分析工具和 AI 驱动的自动停机标注，减少停机时间并实现全球推广",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4e46f37f6bcbf54a",
+              "quote": "A global automotive parts OEM partnered with Arch Systems to reduce downtime at a Lighthouse factory in China.",
+              "source_content_hash": "db4b5bd1d04478e2",
+              "quote_hash": "084b3a4bec52087420b8ab947c3a74e279eb08a9662c4e807d9fd9cfbf86bf5e"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "一家全球电子制造商",
+          "industry": "电子制造",
+          "use_case": "利用 ArchFX 分析发现测试站缓冲瓶颈，避免约 700 万美元资本支出",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-43b3d8ad951c83ef",
+              "quote": "A leading multinational electronics manufacturer faced growing capacity constraints in its high-volume automotive part lines.",
+              "source_content_hash": "1e15adf2ed7cbc40",
+              "quote_hash": "982f102551b4464e908038456794327b385f9f86d4bbd1d85a28921844174570"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "$30 Million",
+          "observed_at": "2026-09-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-eff6a156810d9897",
+              "quote": "today announced a $30 million investment from Vistara Growth",
+              "source_content_hash": "ae902a312150a491",
+              "quote_hash": "bf30a26e3643ac350e6c6fb3b5df3ccb26e30c160bf24c7fcbfcfc32247ca441"
+            }
+          ]
+        },
+        {
+          "label": "Flex 案例中连接机器数",
+          "value": "接近 1,000 台机器，覆盖 200 条产线",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0480cd49f3752974",
+              "quote": "Flex had installed Arch solutions in over 22 sites across SMT & Mechanicals production lines with close to 1,000 machines connected across 200 lines globally.",
+              "source_content_hash": "d8a4eee4d7a157ec",
+              "quote_hash": "fcdcf2365508b53b9abe68dd6393ae6c57f98fb3a03a338155174d4866f065e7"
+            }
+          ]
+        },
+        {
+          "label": "全球汽车零部件 OEM 案例硬节省",
+          "value": "$3.7M+",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4e46f37f6bcbf54a",
+              "quote": "the company generated $3.7 million in hard savings over a two-year period",
+              "source_content_hash": "db4b5bd1d04478e2",
+              "quote_hash": "6bc862990e12d51b274b5e8fba73b85f1de75550dd59f1ca3b7f60f11e551395"
+            }
+          ]
+        },
+        {
+          "label": "全球电子制造商案例避免资本支出",
+          "value": "约 $7M",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-43b3d8ad951c83ef",
+              "quote": "avoiding ~$7M in unnecessary capital expenditure",
+              "source_content_hash": "1e15adf2ed7cbc40",
+              "quote_hash": "a9454e8bf527d69cb6f9f0d283ec7c6350e289b5a45635252ab70f7aa9278567"
+            }
+          ]
+        },
+        {
+          "label": "2022 年同比增长",
+          "value": "超过 300%",
+          "observed_at": "2022-07-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d7613d54dcfcb87f",
+              "quote": "more than 300 percent year-over-year growth in business both in active analytics users and connected machines",
+              "source_content_hash": "254f9a2d3fe65a0a",
+              "quote_hash": "f84a92acf6ad2d419522943096aeac6b4962fa3afe1c1e5786c70970e1df6a28"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Andrew Scheuermann",
+          "quote": "We built Arch to turn factory data into intelligence that acts: AI agents that wake up, investigate every defect, downtime event and parameter deviation, and close the loop before a human is involved, automatically surfacing the correct resolution to the people on the floor for validation and action",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-eff6a156810d9897",
+              "quote": "We built Arch to turn factory data into intelligence that acts: AI agents that wake up, investigate every defect, downtime event and parameter deviation, and close the loop before a human is involved, automatically surfacing the correct resolution to the people on the floor for validation and action",
+              "source_content_hash": "ae902a312150a491",
+              "quote_hash": "e5702fe8f41847ff6c3b31172f7584830186b9517b869be982c9d7cfcc7c4816"
+            }
+          ]
+        },
+        {
+          "speaker": "Dave Dunne",
+          "quote": "Arch brings rich data-based analytics, visualisations, and intelligent actionable insights, at speed, real-time, that can allow Flex to truly optimize its operations and performance, to a different level.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0480cd49f3752974",
+              "quote": "Arch brings rich data-based analytics, visualisations, and intelligent actionable insights, at speed, real-time, that can allow Flex to truly optimize its operations and performance, to a different level.",
+              "source_content_hash": "d8a4eee4d7a157ec",
+              "quote_hash": "7050481443eae58bd442673ca704ee1f7be72e66b5fcfb579a69bdebf55fd4d4"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是 Arch 能否将已验证的制造数据基础和 AI 代理能力从 EMS 客户扩展至 OEM 品牌所有者及受监管终端市场。本轮融资所依赖的已验证信号包括：多家全球最大 Tier-1 EMS 提供商使用其平台运行始终在线的数字工厂专家；客户在规划准确率、报废率和首次通过率等质量指标上已获得实际收益；以及 Flex 等客户案例中接近 1,000 台机器连接和可量化的 ROI。证据边界在于来源未披露具体估值、累计融资总额或本轮轮次名称，且客户收益数据主要来自 Arch 官方案例研究，缺乏独立第三方验证。",
+        "validated_signals": [
+          "多家全球最大 Tier-1 EMS 提供商使用 Arch 平台运行始终在线的数字工厂专家",
+          "客户在规划准确率、报废率和首次通过率等指标上已获得实际收益",
+          "Flex 案例中 Arch 解决方案已部署至超过 22 个站点、接近 1,000 台机器、200 条产线",
+          "全球汽车零部件 OEM 案例实现 370 万美元以上硬节省",
+          "全球电子制造商案例避免约 700 万美元资本支出"
+        ],
+        "risks": [
+          "来源未披露本轮融资的具体轮次名称、估值和累计融资总额，资本判断的证据边界受限。",
+          "客户收益数据主要来自 Arch 官方案例研究，缺乏独立第三方验证，实际可复制性存在不确定性。",
+          "从 EMS 向 OEM 及受监管终端市场扩展面临更长的销售周期和更严格的合规要求，可能影响增长节奏。"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "industrials",
+        "market_application_id": "",
+        "use_case_ids": [
+          "data_analysis",
+          "physical_automation",
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [
+          "manufacturing"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "制造智能与工业 AI",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 Arch 能否将已验证的制造数据基础和 AI 代理能力从 EMS 客户扩展至 OEM 品牌所有者及受监管终端市场。本轮融资所依赖的已验证信号包括：多家全球最大 Tier-1 EMS 提供商使用其平台运行始终在线的数字工厂专家；客户在规划准确率、报废率和首次通过率等质量指标上已获得实际收益；以及 Flex 等客户案例中接近 1,000 台机器连接和可量化的 ROI。证据边界在于来源未披露具体估值、累计融资总额或本轮轮次名称，且客户收益数据主要来自 Arch 官方案例研究，缺乏独立第三方验证。",
+          "evidence_signals": [
+            "多家全球最大 Tier-1 EMS 提供商使用 Arch 平台运行始终在线的数字工厂专家",
+            "客户在规划准确率、报废率和首次通过率等指标上已获得实际收益",
+            "Flex 案例中 Arch 解决方案已部署至超过 22 个站点、接近 1,000 台机器、200 条产线",
+            "全球汽车零部件 OEM 案例实现 370 万美元以上硬节省",
+            "全球电子制造商案例避免约 700 万美元资本支出"
+          ],
+          "risks": [
+            "来源未披露本轮融资的具体轮次名称、估值和累计融资总额，资本判断的证据边界受限。",
+            "客户收益数据主要来自 Arch 官方案例研究，缺乏独立第三方验证，实际可复制性存在不确定性。",
+            "从 EMS 向 OEM 及受监管终端市场扩展面临更长的销售周期和更严格的合规要求，可能影响增长节奏。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "ArchFX Platform",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Arch AI",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Arch Data Twin",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Andrew Scheuermann",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Vistara Growth",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "DI Technology",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Neotribe",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Two Bear Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Uncork Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Flex",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "一家全球汽车零部件 OEM",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "一家全球电子制造商",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-e5763ba54217d88a",
+          "date": "2026-09-15",
+          "title": "Arch Systems 从 Vistara Growth 获得 3000 万美元，以加速 AI 驱动的制造智能",
+          "amount": "$30 Million",
+          "source_refs": [
+            "SA-3048d8be4b42e58c"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-eff6a156810d9897",
+          "source_url": "https://archsys.io/hub/news/investment-vistara-accelerates-arch-agentic-ai-roadmap/",
+          "title": "Arch Systems 从 Vistara Growth 获得 3000 万美元，以加速 AI 驱动的制造智能",
+          "publisher": "keyword search / Exa",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-16T04:01:50.413Z",
+          "content_hash": "ae902a312150a491",
+          "source_artifact_id": "SA-3048d8be4b42e58c",
+          "raw_id": "RAW-da879cbb02763afb"
+        },
+        {
+          "source_id": "FISRC-83e0933212b00c0f",
+          "source_url": "https://archsys.io/hub/news/arch-systems-secures-new-funding-with-di-technology-and-neotribe/",
+          "title": "Arch Systems Secures Funding to Expand Manufacturing Data Analytics Platform",
+          "publisher": "archsys.io",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-16T04:06:42.965Z",
+          "content_hash": "dba8e4e18a672a8d",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-d7613d54dcfcb87f",
+          "source_url": "https://www.prnewswire.com/news-releases/arch-systems-secures-15m-in-new-funding-led-by-two-bear-capital-301587244.html",
+          "title": "Arch Systems secures $15M in new funding led by Two Bear Capital",
+          "publisher": "prnewswire.com",
+          "source_class": "secondary",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-16T04:06:41.767Z",
+          "content_hash": "254f9a2d3fe65a0a",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-0480cd49f3752974",
+          "source_url": "https://archsys.io/hub/case-studies/from-legacy-machines-to-manufacturing-intelligence/",
+          "title": "Flex Scales Smart Manufacturing Solutions Globally with Arch Systems",
+          "publisher": "archsys.io",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-16T04:06:44.921Z",
+          "content_hash": "d8a4eee4d7a157ec",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-4e46f37f6bcbf54a",
+          "source_url": "https://archsys.io/hub/case-studies/from-local-success-to-global-adoption/",
+          "title": "How Arch Systems Helped a Global OEM Reduce Downtime in Manufacturing by $3.7M",
+          "publisher": "archsys.io",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-16T04:06:45.540Z",
+          "content_hash": "db4b5bd1d04478e2",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-43b3d8ad951c83ef",
+          "source_url": "https://archsys.io/hub/case-studies/beyond-capacity/",
+          "title": "How Arch Systems Helped a Global Manufacturer Cut Equipment Downtime and Avoid $7M in Capital Costs",
+          "publisher": "archsys.io",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-16T04:06:45.430Z",
+          "content_hash": "1e15adf2ed7cbc40",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-16T04:07:14.903Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-e5763ba54217d88a",
+          "confidence": 0.9,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-16T04:07:14.903Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 3,
+        "searched_source_count": 6
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Arch AI",
+            "Arch Data Twin",
+            "ArchFX Platform"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Andrew Scheuermann"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-e5763ba54217d88a"
+      ],
+      "aggregation": {
+        "key": "EN-456d7aad12e82e0e|growth",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-9fc87c99a98d17af",
+      "triggered_by_event_id": "EV-4e00ddcb0bc4f2bb",
+      "as_of_date": "2026-09-16",
+      "company": {
+        "entity_id": "EN-897502f225e38bf5",
+        "name": "Positron AI",
+        "full_name": "Positron AI",
+        "website": "positron.ai",
+        "summary": "Positron AI 是一家AI推理硬件公司，致力于让AI模型服务成本大幅降低并提升能效。公司采用内存优先的推理系统设计，使用LPDDR5X内存以规避HBM和CoWoS供应链限制。",
+        "headquarters": "Reno, Nevada",
+        "founders": [],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-3947ce709f26c22a",
+            "quote": "Positron AI, the AI inference hardware company built to make serving AI models dramatically cheaper and more energy efficient",
+            "source_content_hash": "3b3748bbe90ac495",
+            "quote_hash": "e847e3feaa2e061ff19aec0e2ee27a821bb86ce9710a487401efe6ab2d88042d"
+          },
+          {
+            "source_id": "FISRC-1029fa42a9437905",
+            "quote": "Founded in 2023, Positron develops hardware and software designed specifically for AI inference",
+            "source_content_hash": "4c1808f69caea175",
+            "quote_hash": "cfeed27dca51e6e259e7570734d0144686e5025f0428acef29cde5b8028fd308"
+          }
+        ],
+        "application_entity_id": "EN-897502f225e38bf5",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "C轮",
+        "amount": "$875 million",
+        "total_raised": "",
+        "announced_at": "2026-09-10",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "NEA",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3947ce709f26c22a",
+                "quote": "The round was co-led by NEA, Atreides Management, Valor Equity Partners, Andra Capital, Dylan Patel's SemiAnalysis Capital and Jim Clark",
+                "source_content_hash": "3b3748bbe90ac495",
+                "quote_hash": "7d031291b7451816f12e8fbfdda6c4fe52f0c471626ca1e7f2eb4a9b185c0dda"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Atreides Management",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3947ce709f26c22a",
+                "quote": "The round was co-led by NEA, Atreides Management, Valor Equity Partners, Andra Capital, Dylan Patel's SemiAnalysis Capital and Jim Clark",
+                "source_content_hash": "3b3748bbe90ac495",
+                "quote_hash": "7d031291b7451816f12e8fbfdda6c4fe52f0c471626ca1e7f2eb4a9b185c0dda"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Valor Equity Partners",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3947ce709f26c22a",
+                "quote": "The round was co-led by NEA, Atreides Management, Valor Equity Partners, Andra Capital, Dylan Patel's SemiAnalysis Capital and Jim Clark",
+                "source_content_hash": "3b3748bbe90ac495",
+                "quote_hash": "7d031291b7451816f12e8fbfdda6c4fe52f0c471626ca1e7f2eb4a9b185c0dda"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Andra Capital",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3947ce709f26c22a",
+                "quote": "The round was co-led by NEA, Atreides Management, Valor Equity Partners, Andra Capital, Dylan Patel's SemiAnalysis Capital and Jim Clark",
+                "source_content_hash": "3b3748bbe90ac495",
+                "quote_hash": "7d031291b7451816f12e8fbfdda6c4fe52f0c471626ca1e7f2eb4a9b185c0dda"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "SemiAnalysis Capital",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3947ce709f26c22a",
+                "quote": "The round was co-led by NEA, Atreides Management, Valor Equity Partners, Andra Capital, Dylan Patel's SemiAnalysis Capital and Jim Clark",
+                "source_content_hash": "3b3748bbe90ac495",
+                "quote_hash": "7d031291b7451816f12e8fbfdda6c4fe52f0c471626ca1e7f2eb4a9b185c0dda"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Jim Clark",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3947ce709f26c22a",
+                "quote": "The round was co-led by NEA, Atreides Management, Valor Equity Partners, Andra Capital, Dylan Patel's SemiAnalysis Capital and Jim Clark, the founder of Silicon Graphics and Netscape",
+                "source_content_hash": "3b3748bbe90ac495",
+                "quote_hash": "892e057520686ed3c425d014c115cc4b4a2adc47b7ef540525219718006ea76d"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "DFJ Growth",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3947ce709f26c22a",
+                "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures",
+                "source_content_hash": "3b3748bbe90ac495",
+                "quote_hash": "14acf8487753140c42185c176a49f166414f5d49ca282b2a8a6f493d6c5db6f8"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Qatar Investment Authority (QIA)",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3947ce709f26c22a",
+                "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures",
+                "source_content_hash": "3b3748bbe90ac495",
+                "quote_hash": "14acf8487753140c42185c176a49f166414f5d49ca282b2a8a6f493d6c5db6f8"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Resilience Reserve",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3947ce709f26c22a",
+                "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures",
+                "source_content_hash": "3b3748bbe90ac495",
+                "quote_hash": "14acf8487753140c42185c176a49f166414f5d49ca282b2a8a6f493d6c5db6f8"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Arena Private Wealth",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3947ce709f26c22a",
+                "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures",
+                "source_content_hash": "3b3748bbe90ac495",
+                "quote_hash": "14acf8487753140c42185c176a49f166414f5d49ca282b2a8a6f493d6c5db6f8"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Natural Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3947ce709f26c22a",
+                "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures",
+                "source_content_hash": "3b3748bbe90ac495",
+                "quote_hash": "14acf8487753140c42185c176a49f166414f5d49ca282b2a8a6f493d6c5db6f8"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Helena",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3947ce709f26c22a",
+                "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures",
+                "source_content_hash": "3b3748bbe90ac495",
+                "quote_hash": "14acf8487753140c42185c176a49f166414f5d49ca282b2a8a6f493d6c5db6f8"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "1517 Fund",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3947ce709f26c22a",
+                "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures",
+                "source_content_hash": "3b3748bbe90ac495",
+                "quote_hash": "14acf8487753140c42185c176a49f166414f5d49ca282b2a8a6f493d6c5db6f8"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Flume Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3947ce709f26c22a",
+                "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures",
+                "source_content_hash": "3b3748bbe90ac495",
+                "quote_hash": "14acf8487753140c42185c176a49f166414f5d49ca282b2a8a6f493d6c5db6f8"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Unless",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3947ce709f26c22a",
+                "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures",
+                "source_content_hash": "3b3748bbe90ac495",
+                "quote_hash": "14acf8487753140c42185c176a49f166414f5d49ca282b2a8a6f493d6c5db6f8"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Boardman Bay Capital Management",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3947ce709f26c22a",
+                "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures",
+                "source_content_hash": "3b3748bbe90ac495",
+                "quote_hash": "14acf8487753140c42185c176a49f166414f5d49ca282b2a8a6f493d6c5db6f8"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Fincadia Advisors",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3947ce709f26c22a",
+                "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures",
+                "source_content_hash": "3b3748bbe90ac495",
+                "quote_hash": "14acf8487753140c42185c176a49f166414f5d49ca282b2a8a6f493d6c5db6f8"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Banyan Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3947ce709f26c22a",
+                "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures",
+                "source_content_hash": "3b3748bbe90ac495",
+                "quote_hash": "14acf8487753140c42185c176a49f166414f5d49ca282b2a8a6f493d6c5db6f8"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "U First Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3947ce709f26c22a",
+                "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures",
+                "source_content_hash": "3b3748bbe90ac495",
+                "quote_hash": "14acf8487753140c42185c176a49f166414f5d49ca282b2a8a6f493d6c5db6f8"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "VentureTech Alliance",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3947ce709f26c22a",
+                "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures",
+                "source_content_hash": "3b3748bbe90ac495",
+                "quote_hash": "14acf8487753140c42185c176a49f166414f5d49ca282b2a8a6f493d6c5db6f8"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Hudson River Trading",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3947ce709f26c22a",
+                "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures",
+                "source_content_hash": "3b3748bbe90ac495",
+                "quote_hash": "14acf8487753140c42185c176a49f166414f5d49ca282b2a8a6f493d6c5db6f8"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Cisco Investments",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3947ce709f26c22a",
+                "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures",
+                "source_content_hash": "3b3748bbe90ac495",
+                "quote_hash": "14acf8487753140c42185c176a49f166414f5d49ca282b2a8a6f493d6c5db6f8"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Naver Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3947ce709f26c22a",
+                "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures",
+                "source_content_hash": "3b3748bbe90ac495",
+                "quote_hash": "14acf8487753140c42185c176a49f166414f5d49ca282b2a8a6f493d6c5db6f8"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Liberty Global Tech Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1029fa42a9437905",
+                "quote": "Liberty Global Tech Ventures, the technology investment arm of Liberty Global, today announced an investment in Positron AI",
+                "source_content_hash": "4c1808f69caea175",
+                "quote_hash": "fa8e0a5e816a31cdbced711d1aaf4cfe27c36012c87d899a0c2bffa9a8a658e8"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-3947ce709f26c22a",
+            "quote": "RENO, Nev. , Sept. 10, 2026 /PRNewswire/ -- Positron AI, the AI inference hardware company built to make serving AI models dramatically cheaper and more energy efficient, today announced an $875 million Series C financing at a $5 billion post-money valuation. The round was co-led by NEA, Atreides Management, Valor Equity Partners, Andra Capital, Dylan Patel's SemiAnalysis Capital and Jim Clark, the founder of Silicon Graphics and Netscape. As part of the financing, Forest Baskett of NEA, Gavin Baker of Atreides Management, Thomas Jermoluk from Jim Clark Office and Dylan Patel will join Positron's board of directors.",
+            "source_content_hash": "3b3748bbe90ac495",
+            "quote_hash": "f743ea3fa59715e6db8db29f7e9f9fcc2adda346a2a7c688bca2523e2921ba8a"
+          },
+          {
+            "source_id": "FISRC-3947ce709f26c22a",
+            "quote": "today announced an $875 million Series C financing at a $5 billion post-money valuation",
+            "source_content_hash": "3b3748bbe90ac495",
+            "quote_hash": "af261f331de0669994aed7d6a6c5b9e63fd308dc417ffdc781604e6c9ef5a4d0"
+          },
+          {
+            "source_id": "FISRC-3947ce709f26c22a",
+            "quote": "The financing was raised in two tranches. The Series C, $375 million at a $3.5 billion pre-money valuation, was co-led by NEA, Andra Capital, Atreides Management, Valor Equity Partners, and Dylan Patel's SemiAnalysis Capital. The Series C-1, up to $500 million, was led by NEA and Jim Clark.",
+            "source_content_hash": "3b3748bbe90ac495",
+            "quote_hash": "16086a73dfc72810e8faeef7c64165f9d464f4027691355b071130b6acb1948b"
+          }
+        ],
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "amount_original": "$875 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 875000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "8.75 亿美元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-4e00ddcb0bc4f2bb",
+            "round_original": "Series C",
+            "amount": "$875 million",
+            "announced_at": "2026-09-10",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3947ce709f26c22a",
+                "quote": "RENO, Nev. , Sept. 10, 2026 /PRNewswire/ -- Positron AI, the AI inference hardware company built to make serving AI models dramatically cheaper and more energy efficient, today announced an $875 million Series C financing at a $5 billion post-money valuation. The round was co-led by NEA, Atreides Management, Valor Equity Partners, Andra Capital, Dylan Patel's SemiAnalysis Capital and Jim Clark, the founder of Silicon Graphics and Netscape. As part of the financing, Forest Baskett of NEA, Gavin Baker of Atreides Management, Thomas Jermoluk from Jim Clark Office and Dylan Patel will join Positron's board of directors.",
+                "source_content_hash": "3b3748bbe90ac495",
+                "quote_hash": "f743ea3fa59715e6db8db29f7e9f9fcc2adda346a2a7c688bca2523e2921ba8a"
+              },
+              {
+                "source_id": "FISRC-3947ce709f26c22a",
+                "quote": "today announced an $875 million Series C financing at a $5 billion post-money valuation",
+                "source_content_hash": "3b3748bbe90ac495",
+                "quote_hash": "af261f331de0669994aed7d6a6c5b9e63fd308dc417ffdc781604e6c9ef5a4d0"
+              },
+              {
+                "source_id": "FISRC-3947ce709f26c22a",
+                "quote": "The financing was raised in two tranches. The Series C, $375 million at a $3.5 billion pre-money valuation, was co-led by NEA, Andra Capital, Atreides Management, Valor Equity Partners, and Dylan Patel's SemiAnalysis Capital. The Series C-1, up to $500 million, was led by NEA and Jim Clark.",
+                "source_content_hash": "3b3748bbe90ac495",
+                "quote_hash": "16086a73dfc72810e8faeef7c64165f9d464f4027691355b071130b6acb1948b"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Atlas",
+          "description": "Positron AI 的第一代推理系统，已在Oracle Cloud Infrastructure部署超过50个机架。",
+          "target_customers": "云服务提供商、推理服务商、金融机构、游戏基础设施商",
+          "features": [
+            "内存优先推理系统",
+            "部署于Oracle Cloud Infrastructure",
+            "支持空气冷却或液体冷却数据中心"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3947ce709f26c22a",
+              "quote": "Positron is deploying more than 50 racks of Atlas, its first-generation inference system, at Oracle Cloud Infrastructure",
+              "source_content_hash": "3b3748bbe90ac495",
+              "quote_hash": "4495d6e7b2d99ca1351255ce70b54c0a8ac6972365d599e4a13748ca0921536d"
+            },
+            {
+              "source_id": "FISRC-3947ce709f26c22a",
+              "quote": "Positron's energy-efficient architecture allows its systems to be deployed in air-cooled or liquid-cooled data centers at varying rack densities",
+              "source_content_hash": "3b3748bbe90ac495",
+              "quote_hash": "d52c2daf5270b63ed4cc373aa9b95a6f5e2d4169cf4126b335dd48410b98a010"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Asimov",
+          "description": "Positron AI 的下一代定制推理芯片，采用TSMC N3P工艺，计划2026年底流片，2027年下半年量产。每芯片搭载288GB至2,304GB内存。",
+          "target_customers": "AI推理基础设施采购方",
+          "features": [
+            "TSMC N3P工艺",
+            "288 GB 至 2,304 GB 内存",
+            "使用LPDDR5X内存",
+            "有机基板，不依赖CoWoS"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3947ce709f26c22a",
+              "quote": "Asimov tapes out on TSMC N3P at the end of 2026, with production in the second half of 2027, and pairs Positron's compute architecture with 288 GB to 2,304 GB of memory per chip",
+              "source_content_hash": "3b3748bbe90ac495",
+              "quote_hash": "90c69367895d9920187bddd6a131b9ad08300cc0a33f033dce472022ee16afeb"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Titan",
+          "description": "Positron AI 的下一代推理系统，将4至8颗Asimov芯片组合为单一系统，设计用于在单节点服务超过16万亿参数的模型和超过1000万token的上下文窗口。",
+          "target_customers": "需要大规模推理部署的企业和云服务商",
+          "features": [
+            "4至8颗Asimov芯片组合",
+            "支持超过16万亿参数模型",
+            "支持超过1000万token上下文窗口",
+            "可扩展至数千节点"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3947ce709f26c22a",
+              "quote": "Titan combines four to eight Asimov chips into a single system, designed to serve models beyond 16 trillion parameters and context windows beyond 10 million tokens in a single node, scaling to thousands of nodes",
+              "source_content_hash": "3b3748bbe90ac495",
+              "quote_hash": "84790d9d8c4ea474bda50732ecc64a97dd2b91d8abc5d69d7f31f071d802b855"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Oracle Cloud Infrastructure",
+          "industry": "云计算",
+          "use_case": "部署Atlas推理系统",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3947ce709f26c22a",
+              "quote": "Positron is deploying more than 50 racks of Atlas, its first-generation inference system, at Oracle Cloud Infrastructure",
+              "source_content_hash": "3b3748bbe90ac495",
+              "quote_hash": "4495d6e7b2d99ca1351255ce70b54c0a8ac6972365d599e4a13748ca0921536d"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Parasail",
+          "industry": "AI推理服务",
+          "use_case": "利用Atlas容量支撑其推理服务",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3947ce709f26c22a",
+              "quote": "Parasail, a key partner, utilizes that capacity to power its own inference service",
+              "source_content_hash": "3b3748bbe90ac495",
+              "quote_hash": "4ea68b113b79e64c976a1ec087887a6c417fd7270970584fa5458ba3c73d74f2"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Jump Trading",
+          "industry": "金融交易",
+          "use_case": "Atlas生产客户",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3947ce709f26c22a",
+              "quote": "Additional Atlas production customers include Jump Trading and i3d.net",
+              "source_content_hash": "3b3748bbe90ac495",
+              "quote_hash": "3cb9be9d2f18210133c19a5be68165df76e00285b59b40c584554be233fa8df0"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "i3d.net",
+          "industry": "游戏基础设施",
+          "use_case": "Atlas生产客户",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3947ce709f26c22a",
+              "quote": "Additional Atlas production customers include Jump Trading and i3d.net",
+              "source_content_hash": "3b3748bbe90ac495",
+              "quote_hash": "3cb9be9d2f18210133c19a5be68165df76e00285b59b40c584554be233fa8df0"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Nvidia",
+          "product": "H100/H200/Rubin系列GPU",
+          "scenario": "AI推理部署，特别是大语言模型推理",
+          "target_customer": "云服务商和企业AI基础设施采购方",
+          "funding_summary": "",
+          "core_difference": "Nvidia GPU依赖HBM和CoWoS封装，Positron的Asimov使用LPDDR5X和有机基板，规避HBM供应链瓶颈；Positron声称实现超过90%内存带宽利用率，而GPU推理部署通常低于30%。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3947ce709f26c22a",
+              "quote": "are built on commodity LPDDR5X memory that sidesteps constrained HBM and CoWoS supply chains",
+              "source_content_hash": "3b3748bbe90ac495",
+              "quote_hash": "138a3e374619a04050bb489a6cc1141dca92d9ff32d62b2fa2d982d83dd6fbce"
+            }
+          ],
+          "entity_id": "EN-8d4321d936320802"
+        }
+      ],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "$875 million",
+          "observed_at": "2026-09-10",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3947ce709f26c22a",
+              "quote": "today announced an $875 million Series C financing at a $5 billion post-money valuation",
+              "source_content_hash": "3b3748bbe90ac495",
+              "quote_hash": "af261f331de0669994aed7d6a6c5b9e63fd308dc417ffdc781604e6c9ef5a4d0"
+            }
+          ]
+        },
+        {
+          "label": "投后估值",
+          "value": "$5 billion",
+          "observed_at": "2026-09-10",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3947ce709f26c22a",
+              "quote": "today announced an $875 million Series C financing at a $5 billion post-money valuation",
+              "source_content_hash": "3b3748bbe90ac495",
+              "quote_hash": "af261f331de0669994aed7d6a6c5b9e63fd308dc417ffdc781604e6c9ef5a4d0"
+            }
+          ]
+        },
+        {
+          "label": "Series C 金额",
+          "value": "$375 million",
+          "observed_at": "2026-09-10",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3947ce709f26c22a",
+              "quote": "The Series C, $375 million at a $3.5 billion pre-money valuation",
+              "source_content_hash": "3b3748bbe90ac495",
+              "quote_hash": "cfeb0a28ecb1cd20c8064a776c8e0866a7f9e6c0ab7aaa7923d56f0ac204a470"
+            }
+          ]
+        },
+        {
+          "label": "Series C-1 金额",
+          "value": "up to $500 million",
+          "observed_at": "2026-09-10",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3947ce709f26c22a",
+              "quote": "The Series C-1, up to $500 million, was led by NEA and Jim Clark",
+              "source_content_hash": "3b3748bbe90ac495",
+              "quote_hash": "d0a6e9379063e8fd7f6c704aa4232a655f187e54b3aeb89e9d6d41af91928c47"
+            }
+          ]
+        },
+        {
+          "label": "Atlas部署规模",
+          "value": "超过50个机架",
+          "observed_at": "2026-09-10",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3947ce709f26c22a",
+              "quote": "Positron is deploying more than 50 racks of Atlas, its first-generation inference system, at Oracle Cloud Infrastructure",
+              "source_content_hash": "3b3748bbe90ac495",
+              "quote_hash": "4495d6e7b2d99ca1351255ce70b54c0a8ac6972365d599e4a13748ca0921536d"
+            }
+          ]
+        },
+        {
+          "label": "内存带宽利用率",
+          "value": "超过90%",
+          "observed_at": "2026-09-10",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3947ce709f26c22a",
+              "quote": "Its next-gen systems realize more than 90 percent of their available memory bandwidth",
+              "source_content_hash": "3b3748bbe90ac495",
+              "quote_hash": "612eab18fcc3372047b2b610edf9b3565b9648b11a181ab7d019398f5b898d4f"
+            }
+          ]
+        },
+        {
+          "label": "Asimov单芯片内存",
+          "value": "288 GB 至 2,304 GB",
+          "observed_at": "2026-09-10",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3947ce709f26c22a",
+              "quote": "pairs Positron's compute architecture with 288 GB to 2,304 GB of memory per chip",
+              "source_content_hash": "3b3748bbe90ac495",
+              "quote_hash": "329c7988bebd9dedf045a7749dbf6db9237361fe0df8754be8ff3424eb394cae"
+            }
+          ]
+        },
+        {
+          "label": "Titan支持模型参数",
+          "value": "超过16万亿参数",
+          "observed_at": "2026-09-10",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3947ce709f26c22a",
+              "quote": "designed to serve models beyond 16 trillion parameters and context windows beyond 10 million tokens in a single node",
+              "source_content_hash": "3b3748bbe90ac495",
+              "quote_hash": "7000dc83f339b056ddcde44459b28d5efc272b4cc8196876675117dbc5ec1054"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Mitesh Agrawal",
+          "quote": "Speed matters in this market, both in how quickly we ship new generations of silicon and in how quickly they reach customers. Deploying Atlas at scale taught us an enormous amount about what inference customers actually need, and we have carried those lessons directly into Asimov and Titan.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3947ce709f26c22a",
+              "quote": "Speed matters in this market, both in how quickly we ship new generations of silicon and in how quickly they reach customers. Deploying Atlas at scale taught us an enormous amount about what inference customers actually need, and we have carried those lessons directly into Asimov and Titan.",
+              "source_content_hash": "3b3748bbe90ac495",
+              "quote_hash": "7022b3ccc7f2a2daa6ed43ae612504850d7bfc8b8134fa30358877c1f92f0e33"
+            }
+          ]
+        },
+        {
+          "speaker": "Dylan Patel",
+          "quote": "We spend our lives measuring what AI hardware actually delivers in production, and most inference economics struggle under that scrutiny. Positron's architecture addresses the real constraint, memory, without depending on HBM or advanced packaging for its next-generation systems, and the team has already banked real deployment experience with its first generation inside Oracle.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3947ce709f26c22a",
+              "quote": "We spend our lives measuring what AI hardware actually delivers in production, and most inference economics struggle under that scrutiny. Positron's architecture addresses the real constraint, memory, without depending on HBM or advanced packaging for its next-generation systems, and the team has already banked real deployment experience with its first generation inside Oracle.",
+              "source_content_hash": "3b3748bbe90ac495",
+              "quote_hash": "e3ab132090c6cecf1b9e69546d3927d777b9c72bc71f45c7772912b1fa161fa6"
+            }
+          ]
+        },
+        {
+          "speaker": "Forest Baskett",
+          "quote": "Positron is solving the constraint that actually matters right now. While the rest of the industry is racing to secure scarce HBM and packaging capacity — even Nvidia's Rubin Ultra roadmap has had to scale back, from a terabyte of HBM4E down toward 192GB, simply because the supply isn't there — Positron built Asimov and Titan to sidestep that dependence altogether.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3947ce709f26c22a",
+              "quote": "Positron is solving the constraint that actually matters right now. While the rest of the industry is racing to secure scarce HBM and packaging capacity — even Nvidia's Rubin Ultra roadmap has had to scale back, from a terabyte of HBM4E down toward 192GB, simply because the supply isn't there — Positron built Asimov and Titan to sidestep that dependence altogether.",
+              "source_content_hash": "3b3748bbe90ac495",
+              "quote_hash": "982a6e30712d2beedc8b9368e9eec7dc9ccd823f8299849b091a6e012db631cc"
+            }
+          ]
+        },
+        {
+          "speaker": "Paul Tuan",
+          "quote": "AI inference is emerging as one of the world's most consequential infrastructure markets and Positron's memory-first architecture addresses the performance, power and deployment constraints of modern AI systems.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3947ce709f26c22a",
+              "quote": "AI inference is emerging as one of the world's most consequential infrastructure markets and Positron's memory-first architecture addresses the performance, power and deployment constraints of modern AI systems.",
+              "source_content_hash": "3b3748bbe90ac495",
+              "quote_hash": "0828c787c1ebbfbe79ff919cbc2c912988c3bf7176e4c82680fad38730f6bb6d"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "SemiAnalysis Capital",
+            "speaker": "Dylan Patel",
+            "speaker_role": "创始人兼CEO",
+            "rationale": "Positron的架构直接解决推理的核心约束——内存，且不依赖HBM或先进封装，同时已在Oracle内部积累了第一代产品的实际部署经验。",
+            "quote": "Positron's architecture addresses the real constraint, memory, without depending on HBM or advanced packaging for its next-generation systems, and the team has already banked real deployment experience with its first generation inside Oracle.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3947ce709f26c22a",
+                "quote": "Positron's architecture addresses the real constraint, memory, without depending on HBM or advanced packaging for its next-generation systems, and the team has already banked real deployment experience with its first generation inside Oracle.",
+                "source_content_hash": "3b3748bbe90ac495",
+                "quote_hash": "20e42ef2135facf2639acbddbc13ac7c2c2e2262358b01d1eecffee91d2604ba"
+              }
+            ]
+          },
+          {
+            "institution": "NEA",
+            "speaker": "Forest Baskett",
+            "speaker_role": "合伙人",
+            "rationale": "NEA认为Positron正在做出AI硬件领域最大胆的内存优先押注，其方案绕开了HBM供应瓶颈，且Atlas已在Oracle云中规模化运行。",
+            "quote": "We led this round because we believe Positron is making the boldest memory-first bet in AI hardware.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3947ce709f26c22a",
+                "quote": "We led this round because we believe Positron is making the boldest memory-first bet in AI hardware.",
+                "source_content_hash": "3b3748bbe90ac495",
+                "quote_hash": "d19831b35a6fca2d48a865b69abbf93df8bbca9e44a17b6a33358ab65de06f1e"
+              }
+            ]
+          },
+          {
+            "institution": "Andra Capital",
+            "speaker": "Paul Tuan",
+            "speaker_role": "管理合伙人",
+            "rationale": "AI推理正在成为全球最重要的基础设施市场之一，Positron的内存优先架构解决了现代AI系统的性能、功耗和部署约束。",
+            "quote": "AI inference is emerging as one of the world's most consequential infrastructure markets and Positron's memory-first architecture addresses the performance, power and deployment constraints of modern AI systems.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3947ce709f26c22a",
+                "quote": "AI inference is emerging as one of the world's most consequential infrastructure markets and Positron's memory-first architecture addresses the performance, power and deployment constraints of modern AI systems.",
+                "source_content_hash": "3b3748bbe90ac495",
+                "quote_hash": "0828c787c1ebbfbe79ff919cbc2c912988c3bf7176e4c82680fad38730f6bb6d"
+              }
+            ]
+          },
+          {
+            "institution": "Liberty Global Tech Ventures",
+            "speaker": "Bobbie Maltiel",
+            "speaker_role": "合伙人",
+            "rationale": "Liberty Global认为Positron团队专注于以最低成本交付token使用，这对AI在消费者和企业中的全面价值实现至关重要。",
+            "quote": "The Positron team have a relentless focus on this and we are delighted to be joining them on their mission to deliver high-speed AI at the lowest possible cost to businesses and consumers.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1029fa42a9437905",
+                "quote": "The Positron team have a relentless focus on this and we are delighted to be joining them on their mission to deliver high-speed AI at the lowest possible cost to businesses and consumers.",
+                "source_content_hash": "4c1808f69caea175",
+                "quote_hash": "979f3207ab5bdbcbde213c541dfd839984a2665655428ef62cfa554da6128cb7"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是：用商品级LPDDR5X内存替代HBM能否在推理场景中实现等效或更优的每token成本与能效。本轮融资所依赖的已验证信号是Atlas已在Oracle Cloud Infrastructure部署超过50个机架，并有Parasail、Jump Trading和i3d.net等生产客户。但Asimov尚未流片，所有性能数据均为设计目标而非硅片实测结果，第三方验证缺失。",
+        "validated_signals": [
+          "Atlas已在Oracle Cloud Infrastructure部署超过50个机架",
+          "Parasail利用Atlas容量支撑其推理服务",
+          "Jump Trading和i3d.net为Atlas生产客户",
+          "公司声称下一代系统实现超过90%内存带宽利用率"
+        ],
+        "risks": [
+          "Asimov尚未流片，所有性能数据均为设计目标，未经第三方独立验证",
+          "Nvidia等竞争对手将在Asimov量产前推出新一代产品，竞争窗口存在不确定性",
+          "LPDDR5X在峰值带宽上仍低于HBM，实际推理性能能否达到宣称水平有待验证"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "hardware_computing",
+        "market_application_id": "chips",
+        "use_case_ids": [
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [
+          "telecommunications"
+        ],
+        "target_user_ids": [
+          "developer"
+        ],
+        "sector": "AI推理硬件",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是：用商品级LPDDR5X内存替代HBM能否在推理场景中实现等效或更优的每token成本与能效。本轮融资所依赖的已验证信号是Atlas已在Oracle Cloud Infrastructure部署超过50个机架，并有Parasail、Jump Trading和i3d.net等生产客户。但Asimov尚未流片，所有性能数据均为设计目标而非硅片实测结果，第三方验证缺失。",
+          "evidence_signals": [
+            "Atlas已在Oracle Cloud Infrastructure部署超过50个机架",
+            "Parasail利用Atlas容量支撑其推理服务",
+            "Jump Trading和i3d.net为Atlas生产客户",
+            "公司声称下一代系统实现超过90%内存带宽利用率"
+          ],
+          "risks": [
+            "Asimov尚未流片，所有性能数据均为设计目标，未经第三方独立验证",
+            "Nvidia等竞争对手将在Asimov量产前推出新一代产品，竞争窗口存在不确定性",
+            "LPDDR5X在峰值带宽上仍低于HBM，实际推理性能能否达到宣称水平有待验证"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Atlas",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Asimov",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Titan",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "NEA",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Atreides Management",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Valor Equity Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Andra Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "SemiAnalysis Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Jim Clark",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "DFJ Growth",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Qatar Investment Authority (QIA)",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Resilience Reserve",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Arena Private Wealth",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Natural Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Helena",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "1517 Fund",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Flume Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Unless",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Boardman Bay Capital Management",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Fincadia Advisors",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Banyan Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "U First Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "VentureTech Alliance",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Hudson River Trading",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Cisco Investments",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Naver Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Liberty Global Tech Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Oracle Cloud Infrastructure",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Parasail",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Jump Trading",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "i3d.net",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Nvidia",
+          "canonical_entity_id": "EN-8d4321d936320802",
+          "canonical_name": "NVIDIA"
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-4e00ddcb0bc4f2bb",
+          "date": "2026-09-10",
+          "title": "Positron AI 以 50 亿美元估值融资 8.75 亿美元，将其下一代推理芯片推向市场",
+          "amount": "$875 million",
+          "source_refs": [
+            "SA-c41ac7bc4011e562"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-3947ce709f26c22a",
+          "source_url": "https://www.prnewswire.com/news-releases/positron-ai-raises-875-million-at-a-5-billion-valuation-to-bring-its-next-generation-inference-silicon-to-market-302874601.html",
+          "title": "Positron AI 以 50 亿美元估值融资 8.75 亿美元，将其下一代推理芯片推向市场",
+          "publisher": "keyword search / Exa",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-16T04:01:32.137Z",
+          "content_hash": "3b3748bbe90ac495",
+          "source_artifact_id": "SA-c41ac7bc4011e562",
+          "raw_id": "RAW-058ac86adaace450"
+        },
+        {
+          "source_id": "FISRC-1029fa42a9437905",
+          "source_url": "https://www.libertyglobal.com/liberty-global-tech-ventures-invests-in-ai-inference-hardware-and-software-company-positron-ai/",
+          "title": "Liberty Global Tech Ventures Invests in AI Inference Hardware and Software Company, Positron AI - Liberty Global",
+          "publisher": "libertyglobal.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-16T04:06:02.055Z",
+          "content_hash": "4c1808f69caea175",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-16T04:07:02.700Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-4e00ddcb0bc4f2bb",
+          "confidence": 0.9,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-16T04:07:02.700Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 4,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Asimov",
+            "Atlas",
+            "Titan"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 0,
+          "unresolved_names": []
+        }
+      },
+      "source_event_ids": [
+        "EV-4e00ddcb0bc4f2bb"
+      ],
+      "aggregation": {
+        "key": "EN-897502f225e38bf5|series_c",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-68743806bef12fca",
+      "triggered_by_event_id": "EV-05b635c3958e4591",
+      "as_of_date": "2026-09-16",
+      "company": {
+        "entity_id": "FICO-d750f652e8f2dd92",
+        "name": "Profound",
+        "full_name": "Profound",
+        "website": "https://www.tryprofound.com/",
+        "summary": "Profound 是一家AI营销平台公司，帮助品牌在AI搜索结果中获得曝光，并为企业营销团队提供AI Marketer智能体来研究、撰写、报告和执行营销工作。",
+        "headquarters": "纽约",
+        "founders": [
+          {
+            "name": "James Cadwallader",
+            "role": "联合创始人兼 CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-77525d98c652d74e",
+                "quote": "said James Cadwallader, Co-Founder and CEO of Profound",
+                "source_content_hash": "28fe5441d86bc327",
+                "quote_hash": "a775525340f440b03c330ea3b1db1cf5b16837688796b012c2d9d407a9398d83"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-bed55d4f5e02a374",
+            "quote": "Profound , which builds marketing software to help brands appear in AI search results",
+            "source_content_hash": "8c26f4447adaeabc",
+            "quote_hash": "46c719de2b11c9d0ef99616c9d32295f8f3c5b5806a3208e93eb5d6aeeb46763"
+          },
+          {
+            "source_id": "FISRC-77525d98c652d74e",
+            "quote": "Profound is the fastest growing AI marketing platform used by 16% of the Fortune 500",
+            "source_content_hash": "28fe5441d86bc327",
+            "quote_hash": "f3a0c91465b35b21d645f4f8659c7b2d5fb7bef5b800a28e6891f32626c9b5e5"
+          }
+        ],
+        "application_entity_id": "FICO-d750f652e8f2dd92",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "D7轮",
+        "amount": "$180M",
+        "total_raised": "",
+        "announced_at": "2026-09-15",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Sequoia Capital",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-bed55d4f5e02a374",
+                "quote": "Sequoia and Kleiner Perkins led the round",
+                "source_content_hash": "8c26f4447adaeabc",
+                "quote_hash": "d4d9e59aedc610a257eec88140bbe4eb526f5e2384d02fe9df4a43ae1ac2be3b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Kleiner Perkins",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-bed55d4f5e02a374",
+                "quote": "Sequoia and Kleiner Perkins led the round",
+                "source_content_hash": "8c26f4447adaeabc",
+                "quote_hash": "d4d9e59aedc610a257eec88140bbe4eb526f5e2384d02fe9df4a43ae1ac2be3b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Lightspeed Venture Partners",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-bed55d4f5e02a374",
+                "quote": "existing investors — including Lightspeed Venture Partners, Khosla Ventures, and South Park Commons — also participated",
+                "source_content_hash": "8c26f4447adaeabc",
+                "quote_hash": "abf17d3c7cc04d6ab46460f8938409589705dc5e1d6d0e56712e07b6a2ea602b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Khosla Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-bed55d4f5e02a374",
+                "quote": "existing investors — including Lightspeed Venture Partners, Khosla Ventures, and South Park Commons — also participated",
+                "source_content_hash": "8c26f4447adaeabc",
+                "quote_hash": "abf17d3c7cc04d6ab46460f8938409589705dc5e1d6d0e56712e07b6a2ea602b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "South Park Commons",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-bed55d4f5e02a374",
+                "quote": "existing investors — including Lightspeed Venture Partners, Khosla Ventures, and South Park Commons — also participated",
+                "source_content_hash": "8c26f4447adaeabc",
+                "quote_hash": "abf17d3c7cc04d6ab46460f8938409589705dc5e1d6d0e56712e07b6a2ea602b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Saga Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-77525d98c652d74e",
+                "quote": "Existing investors Lightspeed Venture Partners, Khosla Ventures, Saga Ventures, Evantic, and South Park Commons all participated",
+                "source_content_hash": "28fe5441d86bc327",
+                "quote_hash": "019e9487717e313cf5236c2bcf7062e06342eef93833c279a9dc7586c55cdb7c"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Evantic",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-77525d98c652d74e",
+                "quote": "Existing investors Lightspeed Venture Partners, Khosla Ventures, Saga Ventures, Evantic, and South Park Commons all participated",
+                "source_content_hash": "28fe5441d86bc327",
+                "quote_hash": "019e9487717e313cf5236c2bcf7062e06342eef93833c279a9dc7586c55cdb7c"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-bed55d4f5e02a374",
+            "quote": "AEO startup Profound hits unicorn valuation, raises $180M Series D 7 months after last round",
+            "source_content_hash": "8c26f4447adaeabc",
+            "quote_hash": "2187bb3b65bd7ea73b4e86f7101cc8859ebca73d18d88bc807389a41c7e26689"
+          },
+          {
+            "source_id": "FISRC-bed55d4f5e02a374",
+            "quote": "has raised a $180 million Series D at a $1.8 billion valuation, less than seven months after it raised a $96 million Series C",
+            "source_content_hash": "8c26f4447adaeabc",
+            "quote_hash": "6e76469313b9bdd543b0b3bc71af254f1afd38ec1bc4990692d2794ca76cb73f"
+          }
+        ],
+        "round_code": "series_d7",
+        "round_original": "D7轮",
+        "amount_original": "$180M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 180000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.8 亿美元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-05b635c3958e4591",
+            "round_original": "D7轮",
+            "amount": "$180M",
+            "announced_at": "2026-09-15",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-bed55d4f5e02a374",
+                "quote": "AEO startup Profound hits unicorn valuation, raises $180M Series D 7 months after last round",
+                "source_content_hash": "8c26f4447adaeabc",
+                "quote_hash": "2187bb3b65bd7ea73b4e86f7101cc8859ebca73d18d88bc807389a41c7e26689"
+              },
+              {
+                "source_id": "FISRC-bed55d4f5e02a374",
+                "quote": "has raised a $180 million Series D at a $1.8 billion valuation, less than seven months after it raised a $96 million Series C",
+                "source_content_hash": "8c26f4447adaeabc",
+                "quote_hash": "6e76469313b9bdd543b0b3bc71af254f1afd38ec1bc4990692d2794ca76cb73f"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "AI Marketer",
+          "description": "AI Marketer是Profound的营销智能体，能够扫描品牌数据、分析AI答案、发现关键机会，并部署子智能体执行营销工作。",
+          "target_customers": "企业营销团队",
+          "features": [
+            "扫描品牌数据并分析AI答案",
+            "发现关键机会并部署子智能体",
+            "寻找赢得媒体机会",
+            "主动刷新过时内容",
+            "进行竞争分析",
+            "分析付费广告表现并启动新广告"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-77525d98c652d74e",
+              "quote": "Profound’s AI Marketer is a marketing expert (agent) that scans your brand’s data, analyzes AI answers, surfaces critical opportunities, and deploys sub-agents to do the work.",
+              "source_content_hash": "28fe5441d86bc327",
+              "quote_hash": "e07005abd51b34ed3f7c45bf1cddde66ef4237149951a82a690d6fc3704a6277"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Context Manager",
+          "description": "Context Manager为AI Marketer提供支持，作为品牌上下文和个人工作风格的动态综合，提炼公司知识库文件、会议记录和沟通线程。",
+          "target_customers": "企业营销团队",
+          "features": [
+            "提炼公司知识库文件、会议记录和沟通线程",
+            "随品牌定位变化调整AI Marketer输出"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-77525d98c652d74e",
+              "quote": "Profound Context Manager powers the AI Marketer, serving as a living synthesis of brand context and individual working style.",
+              "source_content_hash": "28fe5441d86bc327",
+              "quote_hash": "2f74009bef50a6a91c7128b8e80f655b7665e27fd777c47bf229fd1744b50fca"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Ads Studio",
+          "description": "Ads Studio帮助营销人员在不离开Profound的情况下构建、启动和管理AI搜索广告活动，支持跨OpenAI、Google和Meta广告管理器。",
+          "target_customers": "企业营销团队",
+          "features": [
+            "大规模创建广告以进行快速测试",
+            "一次性对整个广告活动应用批量编辑",
+            "运行根因分析或优化竞价策略",
+            "使用Profound自有像素进行跟踪"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-77525d98c652d74e",
+              "quote": "AI Marketer leverages Profound’s latest product, Ads Studio, to help marketers build, launch, and manage AI Search campaigns without leaving Profound.",
+              "source_content_hash": "28fe5441d86bc327",
+              "quote_hash": "7db6475f91ff803aaa9eb77fdf1517bd356f0868d0ee8cf55e5f2b2afc280555"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Comcast",
+          "industry": "电信",
+          "use_case": "AI搜索品牌曝光",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bed55d4f5e02a374",
+              "quote": "more than 1,000 enterprise customers, which include Comcast, The Estée Lauder Companies, and Walmart",
+              "source_content_hash": "8c26f4447adaeabc",
+              "quote_hash": "5ea324e8a22b6055b848f97e1df60c7e64378f271c8d844e249ad957148e0454"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "The Estée Lauder Companies",
+          "industry": "消费品零售",
+          "use_case": "AI搜索品牌曝光",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bed55d4f5e02a374",
+              "quote": "more than 1,000 enterprise customers, which include Comcast, The Estée Lauder Companies, and Walmart",
+              "source_content_hash": "8c26f4447adaeabc",
+              "quote_hash": "5ea324e8a22b6055b848f97e1df60c7e64378f271c8d844e249ad957148e0454"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Walmart",
+          "industry": "零售电商",
+          "use_case": "AI搜索品牌曝光",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bed55d4f5e02a374",
+              "quote": "more than 1,000 enterprise customers, which include Comcast, The Estée Lauder Companies, and Walmart",
+              "source_content_hash": "8c26f4447adaeabc",
+              "quote_hash": "5ea324e8a22b6055b848f97e1df60c7e64378f271c8d844e249ad957148e0454"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Ramp",
+          "industry": "金融科技",
+          "use_case": "AI搜索品牌可见度提升",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-77525d98c652d74e",
+              "quote": "Its customers include Comcast, The Estée Lauder Companies, Walmart, Campari Group, Royal Bank of Canada alongside technology companies such as Zoom, ServiceNow, Ramp, Cursor, MongoDB, and Figma.",
+              "source_content_hash": "28fe5441d86bc327",
+              "quote_hash": "6964de23a38d93fce839df1b212c3949855b0160901dba3e19ef87f6847e3b3b"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Plaid",
+          "industry": "金融科技",
+          "use_case": "AI搜索推荐流量增长",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-09ad4f7f82a25437",
+              "quote": "How Plaid grew Answer Engine referral traffic 300% with Profound",
+              "source_content_hash": "a2d150e47e22170c",
+              "quote_hash": "1297df15cc8886dafce6838802b9cee502e07fb11c097f5cdeefaea1822b164a"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "企业客户数",
+          "value": "超过1,000家",
+          "observed_at": "2026-09-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bed55d4f5e02a374",
+              "quote": "it now has more than 1,000 enterprise customers",
+              "source_content_hash": "8c26f4447adaeabc",
+              "quote_hash": "00462db7985d2beebb461f13a8df348c1b77d60fd6e7e2b0dbae770834dd8057"
+            }
+          ]
+        },
+        {
+          "label": "收入增长",
+          "value": "过去六个月增长3倍",
+          "observed_at": "2026-09-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bed55d4f5e02a374",
+              "quote": "revenue has increased by 3x in the past six months",
+              "source_content_hash": "8c26f4447adaeabc",
+              "quote_hash": "4323bdb6ca8ac8e2b1034548037d3438fe977816c3de1b2fc9cb3151ae88b7b9"
+            }
+          ]
+        },
+        {
+          "label": "估值",
+          "value": "18亿美元",
+          "observed_at": "2026-09-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bed55d4f5e02a374",
+              "quote": "raised a $180 million Series D at a $1.8 billion valuation",
+              "source_content_hash": "8c26f4447adaeabc",
+              "quote_hash": "cbf63f8ff1fa301ecc96fa16d64705da8edfca466c329094450f7e6bb51a8ba8"
+            }
+          ]
+        },
+        {
+          "label": "财富100强覆盖率",
+          "value": "超过三分之一",
+          "observed_at": "2026-09-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-77525d98c652d74e",
+              "quote": "The platform currently serves over one third of the Fortune 100.",
+              "source_content_hash": "28fe5441d86bc327",
+              "quote_hash": "ca6e4cec7cfb5a5580cc8c1d2a4885656174d22b735cc12e0f89c0d652d107c9"
+            }
+          ]
+        },
+        {
+          "label": "财富500强覆盖率",
+          "value": "16%",
+          "observed_at": "2026-09-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-77525d98c652d74e",
+              "quote": "used by 16% of the Fortune 500",
+              "source_content_hash": "28fe5441d86bc327",
+              "quote_hash": "d2f1c2401f852c9a4dab3d00a3aadf7fdcd5f8155d34d5bda6c720fda3f2e2d0"
+            }
+          ]
+        },
+        {
+          "label": "数据规模",
+          "value": "20亿+真实用户提示",
+          "observed_at": "2026-09-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-77525d98c652d74e",
+              "quote": "Built on 2B+ real user prompts and growing",
+              "source_content_hash": "28fe5441d86bc327",
+              "quote_hash": "0e6ec9d06e20f73d23fa45cf155ce1dc220dea00ef6e12ac98ac922af640951b"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "James Cadwallader",
+          "quote": "Profound started as an analytics platform for marketers to understand how buyers discover their brands through AI. Today, they’re using our Agents to research, write, and report. Now, we’re delivering AI Marketer as an Agent orchestrator that works alongside every function of your marketing team.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-77525d98c652d74e",
+              "quote": "Profound started as an analytics platform for marketers to understand how buyers discover their brands through AI. Today, they’re using our Agents to research, write, and report. Now, we’re delivering AI Marketer as an Agent orchestrator that works alongside every function of your marketing team",
+              "source_content_hash": "28fe5441d86bc327",
+              "quote_hash": "827a1e89f305c250cb7470b8ac9c528010a8b3949e8e6c79dd2cde4e8219e106"
+            }
+          ]
+        },
+        {
+          "speaker": "Ilya Fushman",
+          "quote": "As AI becomes a primary interface for search and discovery, marketing is being rebuilt around a new set of workflows. Profound started with AI Search and is now expanding into a much broader platform for how modern marketing teams operate.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-77525d98c652d74e",
+              "quote": "As AI becomes a primary interface for search and discovery, marketing is being rebuilt around a new set of workflows",
+              "source_content_hash": "28fe5441d86bc327",
+              "quote_hash": "40573ea09cc44f0d3dac233dbe6b83f86e8f505f0036aca96ab0a8ce95966fad"
+            }
+          ]
+        },
+        {
+          "speaker": "Anas Biad",
+          "quote": "The world's largest brands are moving fast to put AI to work across their marketing teams, and Profound has established itself as the applied AI lab they rely on.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-77525d98c652d74e",
+              "quote": "The world's largest brands are moving fast to put AI to work across their marketing teams, and Profound has established itself as the applied AI lab they rely on",
+              "source_content_hash": "28fe5441d86bc327",
+              "quote_hash": "9dfb5025fe27fb23d82acd2f83239a721678670cec5861a774ba5706de1de553"
+            }
+          ]
+        },
+        {
+          "speaker": "William Yen",
+          "quote": "This feels like a cheat code. We can launch creative in minutes. A must for AI Search ads.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-77525d98c652d74e",
+              "quote": "This feels like a cheat code. We can launch creative in minutes. A must for AI Search ads",
+              "source_content_hash": "28fe5441d86bc327",
+              "quote_hash": "db5df162e548e9844ea017506492b1a7baa6740fb496875d251221a1931f5f1e"
+            }
+          ]
+        },
+        {
+          "speaker": "Ali Vaghar",
+          "quote": "Marketing is one of the hardest domains for AI to support because success depends on judgment, not just whether an answer is objectively right.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-77525d98c652d74e",
+              "quote": "Marketing is one of the hardest domains for AI to support because success depends on judgment, not just whether an answer is objectively right",
+              "source_content_hash": "28fe5441d86bc327",
+              "quote_hash": "fcc723a957b484df361be900774a26bc50c7db074fba4176d07e1fd0a5bb987a"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是AI搜索时代营销工作流的平台化重构：Profound从AEO分析工具扩展为覆盖研究、内容生产、广告投放和品牌治理的AI营销平台，并以AI Marketer智能体作为核心交付。18亿美元估值建立在已验证的企业采用信号之上——超过1,000家企业客户、覆盖超过三分之一财富100强、过去六个月收入增长3倍，以及红杉和Kleiner Perkins的联合领投。证据边界在于：来源仅披露了客户数量和收入增速，未提供绝对收入规模、毛利率、净收入留存率或单位经济性数据，因此估值合理性无法通过财务指标进一步验证。",
+        "validated_signals": [
+          "超过1,000家企业客户，包括Comcast、Estée Lauder、Walmart、Ramp、Plaid等",
+          "覆盖超过三分之一财富100强和16%财富500强",
+          "过去六个月收入增长3倍",
+          "红杉资本和Kleiner Perkins联合领投，多家现有投资方继续参与",
+          "客户案例显示Plaid的LLM推荐流量增长超过300%，Ramp的AI品牌可见度提升7倍"
+        ],
+        "risks": [
+          "来源未披露绝对收入规模、毛利率或净收入留存率，收入增长3倍可能来自较低基数，估值合理性缺乏财务指标支撑",
+          "AI搜索生态由OpenAI、Google、Meta等平台主导，平台规则或算法变化可能直接影响Profound为客户创造的价值",
+          "GEO/AEO赛道竞争激烈，来源未提供与竞品的直接比较数据，差异化壁垒尚待验证"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "marketing",
+        "market_application_id": "",
+        "use_case_ids": [
+          "marketing",
+          "content_creation",
+          "data_analysis"
+        ],
+        "industry_ids": [
+          "retail_ecommerce",
+          "media_entertainment"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "AI营销平台",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是AI搜索时代营销工作流的平台化重构：Profound从AEO分析工具扩展为覆盖研究、内容生产、广告投放和品牌治理的AI营销平台，并以AI Marketer智能体作为核心交付。18亿美元估值建立在已验证的企业采用信号之上——超过1,000家企业客户、覆盖超过三分之一财富100强、过去六个月收入增长3倍，以及红杉和Kleiner Perkins的联合领投。证据边界在于：来源仅披露了客户数量和收入增速，未提供绝对收入规模、毛利率、净收入留存率或单位经济性数据，因此估值合理性无法通过财务指标进一步验证。",
+          "evidence_signals": [
+            "超过1,000家企业客户，包括Comcast、Estée Lauder、Walmart、Ramp、Plaid等",
+            "覆盖超过三分之一财富100强和16%财富500强",
+            "过去六个月收入增长3倍",
+            "红杉资本和Kleiner Perkins联合领投，多家现有投资方继续参与",
+            "客户案例显示Plaid的LLM推荐流量增长超过300%，Ramp的AI品牌可见度提升7倍"
+          ],
+          "risks": [
+            "来源未披露绝对收入规模、毛利率或净收入留存率，收入增长3倍可能来自较低基数，估值合理性缺乏财务指标支撑",
+            "AI搜索生态由OpenAI、Google、Meta等平台主导，平台规则或算法变化可能直接影响Profound为客户创造的价值",
+            "GEO/AEO赛道竞争激烈，来源未提供与竞品的直接比较数据，差异化壁垒尚待验证"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "AI Marketer",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Context Manager",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Ads Studio",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "James Cadwallader",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Sequoia Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Kleiner Perkins",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Lightspeed Venture Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Khosla Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "South Park Commons",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Saga Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Evantic",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Comcast",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "The Estée Lauder Companies",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Walmart",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Ramp",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Plaid",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [],
+      "research_sources": [
+        {
+          "source_id": "FISRC-bed55d4f5e02a374",
+          "source_url": "https://techcrunch.com/2026/09/15/aeo-startup-profound-hits-unicorn-valuation-raises-180m-series-d-7-months-after-last-round",
+          "title": "AEO 创业公司 Profound 融资 1.8 亿美元，估值达 18 亿美元",
+          "publisher": "TechCrunch：AI（RSS）",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-16T04:01:26.561Z",
+          "content_hash": "8c26f4447adaeabc",
+          "source_artifact_id": "SA-f3f6966c1db096c3",
+          "raw_id": "RAW-bcd67131bc1a0522"
+        },
+        {
+          "source_id": "FISRC-77525d98c652d74e",
+          "source_url": "https://natlawreview.com/press-releases/profound-raises-180m-series-d-18b-valuation-build-ai-platform-marketing",
+          "title": "Profound Raises $180M Series D at $1.8B Valuation to Build the AI",
+          "publisher": "natlawreview.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-16T04:06:00.688Z",
+          "content_hash": "28fe5441d86bc327",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-09ad4f7f82a25437",
+          "source_url": "https://www.tryprofound.com/customers/plaid",
+          "title": "How Plaid grew Answer Engine referral traffic 300% with Profound",
+          "publisher": "tryprofound.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-16T04:06:01.372Z",
+          "content_hash": "a2d150e47e22170c",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-16T04:06:35.278Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-05b635c3958e4591",
+          "confidence": 0.9,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-16T04:06:35.278Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 5,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "AI Marketer",
+            "Ads Studio",
+            "Context Manager"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "James Cadwallader"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-05b635c3958e4591"
+      ],
+      "aggregation": {
+        "key": "FICO-d750f652e8f2dd92|series_d7",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-05b635c3958e4591",
+      "company_name": "Profound",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"AEO 创业公司 Profound 融资 1.8 亿美元，估值达 18 亿美元\" funding company investors product",
+        "\"Profound\" \"$180M\" funding investors round",
+        "\"Profound\" product customers case study",
+        "\"Profound\" \"AEO 创业公司 Profound 融资 1.8 亿美元，估值达 18 亿美元\" competitors product use case",
+        "\"Profound\" \"$180M\" investor quote why invested",
+        "\"Profound\" \"$180M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"AEO 创业公司 Profound 融资 1.8 亿美元，估值达 18 亿美元\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"AEO 创业公司 Profound 融资 1.8 亿美元，估值达 18 亿美元\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Profound\" \"$180M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Profound\" \"$180M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Profound\" product customers case study",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Profound\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Profound\" \"AEO 创业公司 Profound 融资 1.8 亿美元，估值达 18 亿美元\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Profound\" \"AEO 创业公司 Profound 融资 1.8 亿美元，估值达 18 亿美元\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Profound\" \"$180M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Profound\" \"$180M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Profound\" \"$180M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Profound\" \"$180M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-09-16T04:07:40.705Z"
+    },
+    {
+      "event_id": "EV-81bbaaec2965864a",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-16T04:07:40.704Z"
+    },
+    {
+      "event_id": "EV-4e00ddcb0bc4f2bb",
+      "company_name": "Positron AI",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Positron AI Raises $875 Million at a $5 Billion Valuation to Bring Its Next-Generation Inference Silicon to Market\" funding company investors product",
+        "\"Positron AI\" \"$875 million\" funding investors round",
+        "\"Positron AI\" product customers case study",
+        "\"Positron AI\" \"Positron AI Raises $875 Million at a $5 Billion Valuation to Bring Its Next-Generation Inference Silicon to Market\" competitors product use case",
+        "\"Positron AI\" \"$875 million\" investor quote why invested",
+        "\"Positron AI\" \"$875 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Positron AI Raises $875 Million at a $5 Billion Valuation to Bring Its Next-Generation Inference Silicon to Market\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Positron AI Raises $875 Million at a $5 Billion Valuation to Bring Its Next-Generation Inference Silicon to Market\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Positron AI\" \"$875 million\" funding investors round",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Positron AI\" \"$875 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Positron AI\" product customers case study",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Positron AI\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Positron AI\" \"Positron AI Raises $875 Million at a $5 Billion Valuation to Bring Its Next-Generation Inference Silicon to Market\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Positron AI\" \"Positron AI Raises $875 Million at a $5 Billion Valuation to Bring Its Next-Generation Inference Silicon to Market\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Positron AI\" \"$875 million\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Positron AI\" \"$875 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Positron AI\" \"$875 million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Positron AI\" \"$875 million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "exa_429"
+        }
+      ],
+      "updated_at": "2026-09-16T04:07:40.705Z"
+    },
+    {
+      "event_id": "EV-e5763ba54217d88a",
+      "company_name": "Arch Systems",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Arch Systems Secures $30 Million from Vistara Growth to Accelerate AI-Powered Manufacturing Intelligence\" funding company investors product",
+        "\"Arch Systems\" \"$30 Million\" funding investors round",
+        "\"Arch Systems\" product customers case study",
+        "\"Arch Systems\" \"Arch Systems Secures $30 Million from Vistara Growth to Accelerate AI-Powered Manufacturing Intelligence\" competitors product use case",
+        "\"Arch Systems\" \"$30 Million\" investor quote why invested",
+        "\"Arch Systems\" \"$30 Million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Arch Systems Secures $30 Million from Vistara Growth to Accelerate AI-Powered Manufacturing Intelligence\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Arch Systems Secures $30 Million from Vistara Growth to Accelerate AI-Powered Manufacturing Intelligence\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Arch Systems\" \"$30 Million\" funding investors round",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Arch Systems\" \"$30 Million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Arch Systems\" product customers case study",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Arch Systems\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Arch Systems\" \"Arch Systems Secures $30 Million from Vistara Growth to Accelerate AI-Powered Manufacturing Intelligence\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Arch Systems\" \"Arch Systems Secures $30 Million from Vistara Growth to Accelerate AI-Powered Manufacturing Intelligence\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Arch Systems\" \"$30 Million\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Arch Systems\" \"$30 Million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Arch Systems\" \"$30 Million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Arch Systems\" \"$30 Million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-09-16T04:07:40.705Z"
+    },
+    {
+      "event_id": "EV-cbeb33594e06678b",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-16T04:07:40.705Z"
+    },
+    {
+      "event_id": "EV-37cc66ca2e29a78c",
+      "company_name": "Cornelis",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Cornelis Secures $205M in Funding to Challenge Nvidia's Dominance in AI Infrastructure - Tech Weekly\" funding company investors product",
+        "\"Cornelis\" \"$205 million\" funding investors round",
+        "\"Cornelis\" product customers case study",
+        "\"Cornelis\" \"Cornelis Secures $205M in Funding to Challenge Nvidia's Dominance in AI Infrastructure - Tech Weekly\" competitors product use case",
+        "\"Cornelis\" \"$205 million\" investor quote why invested",
+        "\"Cornelis\" \"$205 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Cornelis Secures $205M in Funding to Challenge Nvidia's Dominance in AI Infrastructure - Tech Weekly\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Cornelis Secures $205M in Funding to Challenge Nvidia's Dominance in AI Infrastructure - Tech Weekly\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Cornelis\" \"$205 million\" funding investors round",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Cornelis\" \"$205 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Cornelis\" product customers case study",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Cornelis\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Cornelis\" \"Cornelis Secures $205M in Funding to Challenge Nvidia's Dominance in AI Infrastructure - Tech Weekly\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Cornelis\" \"Cornelis Secures $205M in Funding to Challenge Nvidia's Dominance in AI Infrastructure - Tech Weekly\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Cornelis\" \"$205 million\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Cornelis\" \"$205 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Cornelis\" \"$205 million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Cornelis\" \"$205 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-09-16T04:07:40.705Z"
+    }
+  ]
+}

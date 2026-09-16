@@ -5,14 +5,15 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-15T07:57:02.631Z",
-    "latestDataDate": "2026-09-15",
-    "currentDate": "2026-09-15",
-    "eventCount": 3271,
-    "quarantinedEventCount": 34,
+    "generatedAt": "2026-09-16T04:08:34.638Z",
+    "latestDataDate": "2026-09-16",
+    "currentDate": "2026-09-16",
+    "eventCount": 3311,
+    "quarantinedEventCount": 35,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
       "EV-bf8698a2e28fea12",
       "EV-39b075c62ba4e927",
       "EV-1fc7578ab4f32166",
@@ -61,6 +62,7 @@
       "EV-b67bbfcebd513ac6",
       "EV-eb282b4658bbdd7e",
       "EV-5e2b5770eac85ca5",
+      "EV-09172b686d2b49de",
       "EV-8fcb52bb6ec980af",
       "EV-6ebcbb2660ec7ad9",
       "EV-770cea9de2337d0e",
@@ -75,7 +77,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-05-27",
-    "lastSeen": "2026-09-10",
+    "lastSeen": "2026-09-16",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -85,6 +87,7 @@
         "EV-5e2b5770eac85ca5"
       ],
       "partnerships": [
+        "EV-09172b686d2b49de",
         "EV-8fcb52bb6ec980af"
       ],
       "productsServices": [
@@ -98,6 +101,33 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-09172b686d2b49de",
+        "dataDate": "2026-09-16",
+        "date": "2026-09-16",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "三星与 OpenAI 宣布战略合作，加速全球 AI 基础设施进步",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_compute_system",
+            "name": "AI 计算系统",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-968e2d5b08687bf4",
+          "EN-7d3194f79e645c42",
+          "EN-c13e2f4a44bb01ed"
+        ]
+      },
       {
         "id": "EV-b67bbfcebd513ac6",
         "dataDate": "2026-09-10",
@@ -303,13 +333,16 @@
       "typeLabel": "应用场景",
       "valueId": "productivity_enterprise_workflows",
       "eventIds": [
+        "EV-e5763ba54217d88a",
         "EV-a38a33003b0d6d08",
+        "EV-37cc66ca2e29a78c",
         "EV-04bcb24d608a931c",
         "EV-3fdc9ad98818c36b",
         "EV-63a4b6ce48e14829",
         "EV-7eead74c2baae511",
         "EV-ef669a52c9a3f94f",
         "EV-0cc745a319a25f6e",
+        "EV-4e00ddcb0bc4f2bb",
         "EV-85506f9f86779a6d",
         "EV-cbeb33594e06678b",
         "EV-862a2c0eabc234f0",
@@ -448,12 +481,15 @@
         "EV-f5aec01f1466f6bb"
       ],
       "entityIds": [
+        "EN-456d7aad12e82e0e",
         "EN-1540430ef01214f1",
+        "EN-caffca3284100caa",
         "EN-63d1760c240e7a7c",
         "EN-d5857f6222f45275",
         "EN-c087cefd343cb488",
         "EN-1d79127e9d90e89b",
         "EN-ecf226574e481ea7",
+        "EN-897502f225e38bf5",
         "EN-c04bd5ebd10ab696",
         "EN-2cfe6f50f129c9c3",
         "EN-75cc2d1e57d451bf",
@@ -589,7 +625,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-15"
+      "lastSeen": "2026-09-16"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -821,12 +857,16 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-5e20c319d2ad9a67",
+        "EV-ec55003461ff34b0",
+        "EV-fa05797bb54f4bbe",
+        "EV-89f05daef84e79af",
+        "EV-c69591582a468bd5",
         "EV-ea6688f289974d51",
         "EV-a65c5ce73c055710",
         "EV-358643eefe0a5df5",
         "EV-1938f1caa0e15759",
         "EV-b2573b146a89c48a",
-        "EV-ec55003461ff34b0",
         "EV-73c29838fbb3b394",
         "EV-9ddf337c75157076",
         "EV-2432c3f2376280a5",
@@ -1338,6 +1378,10 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-69337578b2468a88",
+        "EN-c70eca6b0f88f44d",
+        "EN-e473f24d4325d51a",
+        "EN-36408e3a0e094a6f",
         "EN-ce9408431e3d5934",
         "EN-45d780f82c9247fc",
         "EN-32e83e92d45d71f6",
@@ -1347,7 +1391,6 @@
         "EN-72fcf35a691c9bc5",
         "EN-8ff5e729cd4089df",
         "EN-2b6e51bec93e86c1",
-        "EN-c70eca6b0f88f44d",
         "EN-373ac021a2c0bb2c",
         "EN-0d47d3f0783749a8",
         "EN-f8e930daaadf36ec",
@@ -1446,7 +1489,6 @@
         "EN-c31a277efac23f52",
         "EN-96a4bc2602655473",
         "EN-4adc2faea521b1f1",
-        "EN-e473f24d4325d51a",
         "EN-1dc7e9837d60c55d",
         "EN-2dc010636b9dce91",
         "EN-042e9398f2cc8902",
@@ -1583,6 +1625,7 @@
       "valueId": "chip_accelerator",
       "eventIds": [
         "EV-10b007d20ad2794e",
+        "EV-4e00ddcb0bc4f2bb",
         "EV-e0a31302688c81ec",
         "EV-ae87e20ab0c5d06a",
         "EV-012b1ccfe1d48f51",
@@ -1619,6 +1662,7 @@
         "EV-450f624a6a6446ce",
         "EV-fd2ff833db684e40",
         "EV-8077605769c4d4eb",
+        "EV-ad6c755f7cf588c4",
         "EV-81318fb4bcdb926a",
         "EV-fec0251eafea1a20",
         "EV-bf7ced1008b5cbc6",
@@ -1704,6 +1748,7 @@
       ],
       "entityIds": [
         "EN-ce232f0155cad088",
+        "EN-897502f225e38bf5",
         "EN-a5e5f031b6f878cf",
         "EN-4482f5b97bed22de",
         "EN-e9c2b868dc8f92df",
@@ -1736,6 +1781,7 @@
         "EN-883be863cc6562bb",
         "EN-272d534804dc22a4",
         "EN-f2b9106253663314",
+        "EN-984a4161f72f4121",
         "EN-c70eca6b0f88f44d",
         "EN-b81c8201acfc7639",
         "EN-3c8b824c18029ad6",
@@ -1792,6 +1838,7 @@
         "EN-070c562765b9ff05"
       ],
       "fdeIds": [
+        "FDE-98d93530f049c8a1",
         "FDE-47e3588e130d86f6",
         "FDE-0193a6afd26db7ae",
         "FDE-5ea7f3d69a03d417",
@@ -1829,7 +1876,7 @@
         "HW-4c176e4c40871adc"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-14"
+      "lastSeen": "2026-09-16"
     },
     {
       "id": "TX-use_case-customer_support",
