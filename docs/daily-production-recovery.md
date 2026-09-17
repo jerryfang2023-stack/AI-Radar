@@ -78,9 +78,6 @@ them as current funding.
 Qualified Chinese foreign-currency amounts such as `超千万美元` must retain
 both currency and lower-bound status. A truncated metric (`超千万`) cannot
 override an accepted Claim's full amount with an implicit CNY interpretation.
-Local `sync:data-center` builds the current funding projection before projecting
-event classifications, so currency/amount corrections cannot leave classification
-references pointing at an obsolete aggregated card ID.
 
 English elapsed-time text after a series letter (for example, `Series D 7 months
 after last round`) is not a numbered sub-round. Keep genuine `C-1` / `C1`

@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-17T02:32:36.853Z",
+    "generatedAt": "2026-09-17T02:39:32.145Z",
     "latestDataDate": "2026-09-17",
     "currentDate": "2026-09-17",
     "eventCount": 3338,
@@ -58,23 +58,29 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-01-26",
-    "latest_disclosed_at": "2026-01-26",
+    "latest_disclosed_at": "2026-06-23",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "angel",
       "series_b_plus"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-246e062cb6c20ad7",
+        "canonical_entity_id": "EN-246e062cb6c20ad7",
+        "name": "正行创新"
+      },
       {
         "entity_id": "EN-2c348893efb2316e",
         "canonical_entity_id": "EN-2c348893efb2316e",
@@ -82,6 +88,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-54fb4bdbd00390d7",
+        "funding_insight_id": "FI-e01c1a6b5ba6c003",
+        "event_ids": [
+          "EV-bc5bf99bcf3a4484"
+        ],
+        "company_entity_id": "EN-246e062cb6c20ad7",
+        "company_canonical_entity_id": "EN-246e062cb6c20ad7",
+        "company_name": "正行创新",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "近亿",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1 亿元"
+        },
+        "announced_at": "2026-06-23",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7896c13384a2de29",
+            "source_url": "https://news.pedaily.cn/202606/565442.shtml",
+            "source_title": "致力于探索物理智能的技术边界，「正行创新」完成近亿美元天使轮融资",
+            "source_content_hash": "9d83916bd8fd460c",
+            "quote": "投资方包括 正大集团、华勤技术、九安医疗等多家上市企业，多位国内外知名企业家，以及多家一线投资机构",
+            "quote_hash": "9f481bbb69e5109c065fb5beccc9aa9b8e1256d4692f7ee95310151a70cb6e64"
+          }
+        ]
+      },
       {
         "activity_id": "IA-00146377aceb0112",
         "funding_insight_id": "FI-74076c9ab29354a8",
@@ -125,6 +171,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-7896c13384a2de29",
+        "source_url": "https://news.pedaily.cn/202606/565442.shtml",
+        "source_title": "致力于探索物理智能的技术边界，「正行创新」完成近亿美元天使轮融资",
+        "source_content_hash": "9d83916bd8fd460c",
+        "quote": "投资方包括 正大集团、华勤技术、九安医疗等多家上市企业，多位国内外知名企业家，以及多家一线投资机构",
+        "quote_hash": "9f481bbb69e5109c065fb5beccc9aa9b8e1256d4692f7ee95310151a70cb6e64"
+      },
       {
         "source_id": "FISRC-de3bb93d57d25bdf",
         "source_url": "https://www.cyzone.cn/article/822685.html",
