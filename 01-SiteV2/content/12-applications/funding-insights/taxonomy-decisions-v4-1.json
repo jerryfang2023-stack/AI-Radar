@@ -5,16 +5,16 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-09-16T04:40:30.103Z",
+    "generated_at": "2026-09-17T01:11:52.580Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 464,
-    "input_hash": "497ec2b526d1950c",
+    "decision_count": 467,
+    "input_hash": "4e55a5a19938d6ad",
     "override_count": 18,
     "needs_review_count": 52,
-    "low_confidence_count": 68
+    "low_confidence_count": 69
   },
   "decisions": [
     {
@@ -9300,6 +9300,65 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "产品为L4级Robotaxi量产车型，具备多传感器感知、计算决策并直接执行自动驾驶，属于在物理世界中感知、决策和行动的物理AI，而非仅提供基础设施或行业应用。"
+    },
+    {
+      "event_id": "EV-91459f0d9446f471",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "healthcare_life_sciences",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "research_discovery"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "researcher"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "公司为AI制药企业，产品围绕药物研发这一医疗行业专业数据与工作流，属于行业应用而非通用企业应用或基础设施。"
+    },
+    {
+      "event_id": "EV-c997b93aa153720b",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "data_analysis",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.75,
+      "needs_review": false,
+      "rationale": "产品为企业级数据智能体平台，打通企业数据、规则、流程与大模型能力，面向大型国央企和民营制造企业，属于跨行业企业工作流应用。"
+    },
+    {
+      "event_id": "EV-77887cf446f03ba4",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "financial_services",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "finance_accounting",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "financial_services"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "公司为AI驱动财富科技平台，覆盖现金管理、基金、债券、保险等金融产品，围绕金融行业专业数据与监管工作流，属于行业应用。"
     }
   ]
 }

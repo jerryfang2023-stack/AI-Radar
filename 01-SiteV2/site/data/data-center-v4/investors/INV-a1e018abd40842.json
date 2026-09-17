@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-16T04:41:27.652Z",
-    "latestDataDate": "2026-09-16",
-    "currentDate": "2026-09-16",
-    "eventCount": 3315,
+    "generatedAt": "2026-09-17T01:12:12.276Z",
+    "latestDataDate": "2026-09-17",
+    "currentDate": "2026-09-17",
+    "eventCount": 3319,
     "quarantinedEventCount": 35,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -58,7 +58,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 2,
-    "historical_or_ambiguous_count": 2,
+    "historical_or_ambiguous_count": 3,
     "portfolio_company_count": 2,
     "market_regions": [
       "CN"
@@ -66,9 +66,9 @@
     "china_market_activity_count": 2,
     "china_market_company_count": 2,
     "first_disclosed_at": "2026-02-23",
-    "latest_disclosed_at": "2026-08-31",
+    "latest_disclosed_at": "2026-09-16",
     "role_counts": {
-      "historical_or_ambiguous": 2,
+      "historical_or_ambiguous": 3,
       "other_current_round": 1,
       "participant": 1
     },
@@ -88,6 +88,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-c93e107793c741db",
+        "funding_insight_id": "FI-936426cb8df9b450",
+        "event_ids": [
+          "EV-c997b93aa153720b"
+        ],
+        "company_entity_id": "EN-e40403aad241b9fc",
+        "company_canonical_entity_id": "",
+        "company_name": "悦点科技",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-09-16",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮独家投资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-e76b377b4dc40602",
+            "source_url": "https://finance.eastmoney.com/a/202609123872695227.html",
+            "source_title": "从知识图谱走向企业智能体，悦点科技获数千万元Pre-A轮融资 _ 东方财富网",
+            "source_content_hash": "3debc60865fc74d2",
+            "quote": "此前，公司于2024年12月获得云启资本独家投资的天使轮融资。",
+            "quote_hash": "fab203354e24e4c018642bacd6523f8e40a6965f810ee5c55da9806b0064da6f"
+          }
+        ]
+      },
       {
         "activity_id": "IA-236c7c09ea26f4fa",
         "funding_insight_id": "FI-0393a877e1b99840",
@@ -251,6 +291,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-e76b377b4dc40602",
+        "source_url": "https://finance.eastmoney.com/a/202609123872695227.html",
+        "source_title": "从知识图谱走向企业智能体，悦点科技获数千万元Pre-A轮融资 _ 东方财富网",
+        "source_content_hash": "3debc60865fc74d2",
+        "quote": "此前，公司于2024年12月获得云启资本独家投资的天使轮融资。",
+        "quote_hash": "fab203354e24e4c018642bacd6523f8e40a6965f810ee5c55da9806b0064da6f"
+      },
       {
         "source_id": "FISRC-1ae72db61aa80327",
         "source_url": "https://m.sohu.com/a/1070029599_120285954?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",

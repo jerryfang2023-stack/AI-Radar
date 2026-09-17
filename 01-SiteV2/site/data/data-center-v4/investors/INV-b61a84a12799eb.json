@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-16T04:41:27.652Z",
-    "latestDataDate": "2026-09-16",
-    "currentDate": "2026-09-16",
-    "eventCount": 3315,
+    "generatedAt": "2026-09-17T01:12:12.276Z",
+    "latestDataDate": "2026-09-17",
+    "currentDate": "2026-09-17",
+    "eventCount": 3319,
     "quarantinedEventCount": 35,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -57,21 +57,23 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-05-07",
-    "latest_disclosed_at": "2026-09-15",
+    "latest_disclosed_at": "2026-09-16",
     "role_counts": {
       "co_lead": 1,
-      "historical_or_ambiguous": 2
+      "historical_or_ambiguous": 2,
+      "participant": 1
     },
     "round_codes": [
+      "pre_series_a",
       "seed"
     ],
     "portfolio_companies": [
@@ -79,9 +81,54 @@
         "entity_id": "EN-aef5bb4e898f303c",
         "canonical_entity_id": "EN-aef5bb4e898f303c",
         "name": "奇点逃逸"
+      },
+      {
+        "entity_id": "EN-e40403aad241b9fc",
+        "canonical_entity_id": "",
+        "name": "悦点科技"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-8f0b291461a83bad",
+        "funding_insight_id": "FI-936426cb8df9b450",
+        "event_ids": [
+          "EV-c997b93aa153720b"
+        ],
+        "company_entity_id": "EN-e40403aad241b9fc",
+        "company_canonical_entity_id": "",
+        "company_name": "悦点科技",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-09-16",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3561e00f46398605",
+            "source_url": "https://m.pedaily.cn/news/569132",
+            "source_title": "悦点科技完成数千万元Pre-A轮融资，推动AI FDE Model持续进化 AI 2026-09-16 17:00",
+            "source_content_hash": "340909e0a3baa50a",
+            "quote": "本轮融资由盈富泰克领投，水木创投跟投。",
+            "quote_hash": "e587d3e629c52159cb3f9d0b0d6cfd6a32caaa8e53da41d8a0dcfecfe18a0140"
+          }
+        ]
+      },
       {
         "activity_id": "IA-da659ebd1a4a59b6",
         "funding_insight_id": "FI-8acd5314a46c6068",
@@ -204,6 +251,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-3561e00f46398605",
+        "source_url": "https://m.pedaily.cn/news/569132",
+        "source_title": "悦点科技完成数千万元Pre-A轮融资，推动AI FDE Model持续进化 AI 2026-09-16 17:00",
+        "source_content_hash": "340909e0a3baa50a",
+        "quote": "本轮融资由盈富泰克领投，水木创投跟投。",
+        "quote_hash": "e587d3e629c52159cb3f9d0b0d6cfd6a32caaa8e53da41d8a0dcfecfe18a0140"
+      },
       {
         "source_id": "FISRC-27fa748719e248c8",
         "source_url": "https://news.pedaily.cn/202410/541758.shtml",
