@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
-import { inspectProductionChecks, requiredChecks } from "../wait-for-production-code-checks.mjs";
+import { inspectProductionChecks, requiredChecks, approvalBlockedProductionRun } from "../wait-for-production-code-checks.mjs";
 import {
   isCollectionTelemetryReady,
   isV4ManifestReady,
@@ -11,6 +11,15 @@ import {
 } from "../lib/daily-production-chain-state.mjs";
 
 const date = "2026-07-30";
+
+test("approval-required is explicit and cannot be inferred from stale or unrelated runs", () => {
+  const blocked = { id: 1, head_sha: "head", path: ".github/workflows/production-code-checks.yml", conclusion: "action_required" };
+  assert.equal(approvalBlockedProductionRun([blocked], "head"), blocked);
+  assert.equal(approvalBlockedProductionRun([blocked], "other"), null);
+  assert.equal(approvalBlockedProductionRun([{ ...blocked, path: ".github/workflows/unrelated.yml" }], "head"), null);
+  assert.equal(approvalBlockedProductionRun([blocked, { ...blocked, id: 2, conclusion: null }], "head"), null);
+  assert.equal(approvalBlockedProductionRun([], "head"), null);
+});
 
 test("automatic publication requires both current-head CI results, not an empty check list", () => {
   const checks = requiredChecks.map((name, id) => ({ id, name, head_sha: "head", app: { slug: "github-actions" }, status: "completed", conclusion: "success" }));

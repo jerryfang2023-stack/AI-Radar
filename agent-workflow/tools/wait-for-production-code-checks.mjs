@@ -4,6 +4,13 @@ import { pathToFileURL } from "node:url";
 
 export const requiredChecks = ["Production code (ubuntu-latest)", "Production code (windows-latest)"];
 
+export function approvalBlockedProductionRun(runs, head) {
+  const latest = runs.filter((run) => run.head_sha === head
+    && run.path === ".github/workflows/production-code-checks.yml")
+    .sort((a, b) => b.id - a.id)[0];
+  return latest?.conclusion === "action_required" ? latest : null;
+}
+
 export function inspectProductionChecks(checks, head) {
   const selected = requiredChecks.map((name) => checks
     .filter((check) => check.name === name && check.head_sha === head && check.app?.slug === "github-actions")
@@ -35,6 +42,9 @@ async function main() {
     const state = inspectProductionChecks(pages.flatMap((page) => page.check_runs || []), head);
     if (state.status === "passed") { process.stdout.write(`${head}\n`); return; }
     if (state.status === "failed") throw new Error(`Production CI failed for ${head}: ${state.reason}; retain the PR and accepted intake for targeted repair`);
+    const runs = gh(["api", `repos/{owner}/{repo}/actions/runs?head_sha=${head}&per_page=100`]);
+    const approval = approvalBlockedProductionRun(runs.workflow_runs || [], head);
+    if (approval) throw new Error(`Production CI requires maintainer approval for ${head}: ${approval.html_url || approval.id}. Retain accepted intake, review and approve this exact run, then resume publication only; do not recollect or bypass approval.`);
     console.error(`Waiting for exact-head production CI: ${state.reason}`);
     await new Promise((resolve) => setTimeout(resolve, 15_000));
   }

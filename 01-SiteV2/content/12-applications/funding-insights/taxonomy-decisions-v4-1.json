@@ -5,16 +5,16 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-09-17T00:29:55.003Z",
+    "generated_at": "2026-09-17T02:20:11.194Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 466,
-    "input_hash": "f0efa3168b9e4903",
+    "decision_count": 468,
+    "input_hash": "6d358eafc4b20faa",
     "override_count": 18,
-    "needs_review_count": 53,
-    "low_confidence_count": 69
+    "needs_review_count": 52,
+    "low_confidence_count": 70
   },
   "decisions": [
     {
@@ -9321,26 +9321,63 @@
       "rationale": "元川微 is developing LPU+ chips for AI inference, which are hardware accelerators. The company fits infrastructure_compute > hardware_computing > chips. The chip is designed for multimodal and MoE models, targeting developers and AI infrastructure. Physical automation is not directly applicable, but the chip could be used in robotics; however, the primary use case is AI inference acceleration. Target users are developers building AI systems."
     },
     {
-      "event_id": "EV-57da7ad44e35d987",
+      "event_id": "EV-c997b93aa153720b",
       "market_category_id": "enterprise_applications",
       "market_subcategory_id": "productivity_enterprise_workflows",
       "market_application_id": "",
-      "product_form_id": "ai_device",
+      "product_form_id": "enterprise_software_platform",
       "use_case_ids": [
-        "productivity_enterprise_workflows",
-        "content_creation"
+        "data_analysis",
+        "productivity_enterprise_workflows"
       ],
       "industry_ids": [
-        "retail_ecommerce",
-        "media_entertainment"
+        "manufacturing"
       ],
       "target_user_ids": [
-        "consumer",
         "business_user"
       ],
-      "confidence": 0.75,
-      "needs_review": true,
-      "rationale": "公司专注于AI+可穿戴设备，产品为AI拍摄眼镜和AI智能音频眼镜，属于用户操作的AI设备，因此product_form_id为ai_device。当前分类中market_category_id为enterprise_applications，但产品主要面向消费者，且未提供足够信息确定具体企业应用子类。根据允许的层级元组，选择enterprise_applications/productivity_enterprise_workflows作为最接近的匹配，但需要人工审核确认。"
+      "confidence": 0.72,
+      "needs_review": false,
+      "rationale": "产品是面向企业数据、规则、流程与大模型能力的企业级智能体平台，未限定单一行业，且不直接控制物理设备，因此归入跨行业企业应用；证据提到面向国央企和民营制造企业，但产品本身是通用数据智能平台。"
+    },
+    {
+      "event_id": "EV-77887cf446f03ba4",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "financial_services",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "finance_accounting",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "financial_services"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "产品围绕财富管理、现金管理、基金、债券、保险等金融行业专属数据和流程构建，客户为商业银行、券商、家族办公室等金融机构，属于行业应用中的金融服务。"
+    },
+    {
+      "event_id": "EV-91459f0d9446f471",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "healthcare_life_sciences",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "research_discovery"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "researcher"
+      ],
+      "confidence": 0.78,
+      "needs_review": false,
+      "rationale": "公司为AI制药公司，核心团队、算法平台及管线资产均围绕药物研发这一医疗生命科学行业专属工作流，属于行业应用。"
     }
   ]
 }

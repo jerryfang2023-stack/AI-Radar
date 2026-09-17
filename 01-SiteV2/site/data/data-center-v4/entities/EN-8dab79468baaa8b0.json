@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-17T00:30:10.714Z",
+    "generatedAt": "2026-09-17T02:21:59.823Z",
     "latestDataDate": "2026-09-17",
     "currentDate": "2026-09-17",
-    "eventCount": 3335,
+    "eventCount": 3338,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -69,9 +69,9 @@
       "TX-target_user-business_user",
       "TX-use_case-productivity_enterprise_workflows",
       "TX-industry-financial_services",
+      "TX-use_case-finance_accounting",
       "TX-product_form-end_user_application",
-      "TX-technology-agentic_execution",
-      "TX-use_case-finance_accounting"
+      "TX-technology-agentic_execution"
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-05-24",
@@ -213,7 +213,7 @@
       "typeLabel": "AI 市场类别",
       "valueId": "enterprise_applications",
       "eventIds": [
-        "EV-57da7ad44e35d987",
+        "EV-c997b93aa153720b",
         "EV-05b635c3958e4591",
         "EV-6d6715223e80e7a6",
         "EV-cbeb33594e06678b",
@@ -319,7 +319,7 @@
         "EV-b31602193dbf4e08"
       ],
       "entityIds": [
-        "EN-4c317005cf0d0ed9",
+        "EN-e40403aad241b9fc",
         "FICO-d750f652e8f2dd92",
         "EN-4b6cef91ffb05303",
         "EN-2cfe6f50f129c9c3",
@@ -427,7 +427,7 @@
       "typeLabel": "AI 市场子类",
       "valueId": "productivity_enterprise_workflows",
       "eventIds": [
-        "EV-57da7ad44e35d987",
+        "EV-c997b93aa153720b",
         "EV-cbeb33594e06678b",
         "EV-81bbaaec2965864a",
         "EV-c538fb9a61735afc",
@@ -485,7 +485,7 @@
         "EV-acf1bcb321414706"
       ],
       "entityIds": [
-        "EN-4c317005cf0d0ed9",
+        "EN-e40403aad241b9fc",
         "EN-2cfe6f50f129c9c3",
         "EN-ee04228c5c6d8b08",
         "EN-8d8b8c50b8da244b",
@@ -550,7 +550,8 @@
       "typeLabel": "目标用户",
       "valueId": "business_user",
       "eventIds": [
-        "EV-57da7ad44e35d987",
+        "EV-c997b93aa153720b",
+        "EV-77887cf446f03ba4",
         "EV-05b635c3958e4591",
         "EV-0ac10579ff64fe74",
         "EV-4238c51fcdad7bd4",
@@ -913,7 +914,8 @@
         "EV-caf5d85e980c86fd"
       ],
       "entityIds": [
-        "EN-4c317005cf0d0ed9",
+        "EN-e40403aad241b9fc",
+        "EN-efadb20430d25ea7",
         "FICO-d750f652e8f2dd92",
         "EN-60910505210bd6f1",
         "EN-4149d125ad47155a",
@@ -1227,7 +1229,8 @@
       "typeLabel": "应用场景",
       "valueId": "productivity_enterprise_workflows",
       "eventIds": [
-        "EV-57da7ad44e35d987",
+        "EV-c997b93aa153720b",
+        "EV-77887cf446f03ba4",
         "EV-e5763ba54217d88a",
         "EV-a38a33003b0d6d08",
         "EV-37cc66ca2e29a78c",
@@ -1375,7 +1378,8 @@
         "EV-f5aec01f1466f6bb"
       ],
       "entityIds": [
-        "EN-4c317005cf0d0ed9",
+        "EN-e40403aad241b9fc",
+        "EN-efadb20430d25ea7",
         "EN-456d7aad12e82e0e",
         "EN-1540430ef01214f1",
         "EN-caffca3284100caa",
@@ -2986,45 +2990,6 @@
       ],
       "firstSeen": "2024-09-05",
       "lastSeen": "2027-09-30"
-    },
-    {
-      "id": "TX-use_case-finance_accounting",
-      "name": "财务与会计",
-      "nodeType": "use_case",
-      "typeLabel": "应用场景",
-      "valueId": "finance_accounting",
-      "eventIds": [
-        "EV-65d274d4277815dc",
-        "EV-df8954acf9a13848",
-        "EV-13e08bc37724e276",
-        "EV-c64e6836b9cd2b17",
-        "EV-0dfcd1e634de755b",
-        "EV-63236c15166b71e0",
-        "EV-e61effb7ada8508f",
-        "EV-f0fee44c1dfdcb09",
-        "EV-917a390341b9fce6",
-        "EV-cbc0b7a7d21a29e2",
-        "EV-cfbd2bed57ba4644",
-        "EV-8b0f056571d68269"
-      ],
-      "entityIds": [
-        "EN-a01847b090a53c6e",
-        "EN-f970fd34532919fe",
-        "EN-77a82bb9aafc81d9",
-        "EN-95fb1fa9a88b393c",
-        "EN-5afd6103effc8a64",
-        "EN-d6386c59a6bcfcb1",
-        "EN-612370f44fcdeae0",
-        "EN-0cc3af265406c202",
-        "EN-e781481ff5ffe530",
-        "EN-08ff6997681fad41",
-        "EN-8dab79468baaa8b0",
-        "EN-e5cc9e38970eacb5"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-01-20",
-      "lastSeen": "2026-09-14"
     }
   ],
   "fde": [],

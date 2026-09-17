@@ -62,6 +62,19 @@ despite a failed outcome.
 
 ## Evidence and publication acceptance
 
+An exact-head Production Code Checks run with `action_required` needs maintainer
+review and approval. The waiter reports that run immediately; it must not silently
+wait 15 minutes, approve itself, weaken repository policy, or restart collection.
+After approval, reuse accepted lane inputs and resume publication. If later lanes
+were generated against the same older main, reconcile their accepted intake and
+model candidates by stable IDs, then regenerate shared projections before merging.
+
+Publisher article date labels can sit outside the extracted body. Preserve the
+first explicit article date (including `4 月 15, 2025`), not dates in related
+stories. A verified date correction retains the original content hash and intake
+lineage, rebuilds V4, and leaves out-of-window items in QA rather than publishing
+them as current funding.
+
 English elapsed-time text after a series letter (for example, `Series D 7 months
 after last round`) is not a numbered sub-round. Keep genuine `C-1` / `C1`
 labels; canonical reuse repairs the application round without recollecting sources.

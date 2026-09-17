@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-17T00:30:10.714Z",
+    "generatedAt": "2026-09-17T02:21:59.823Z",
     "latestDataDate": "2026-09-17",
     "currentDate": "2026-09-17",
-    "eventCount": 3335,
+    "eventCount": 3338,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -17483,22 +17483,23 @@
         "hardware_shipment_deployment",
         "hardware_supply_agreement"
       ],
-      "raw_documents": 24,
-      "original_sources": 18,
+      "raw_documents": 32,
+      "original_sources": 26,
       "valid_claims": 17,
       "observations": 1,
       "canonical_events": 5,
       "blocker_counts": {
-        "event_not_ai_relevant": 2,
+        "event_not_ai_relevant": 7,
         "non_event_or_index_title": 4,
         "source_outside_daily_window": 3,
         "no_source_bounded_claim": 1,
         "rumor_requires_primary_confirmation": 1,
-        "raw_source_quality_block": 6
+        "raw_source_quality_block": 7,
+        "domestic_publication_date_unverified": 2
       },
       "rates": {
-        "original_source_rate": 0.75,
-        "valid_claim_rate": 0.7083333333333334,
+        "original_source_rate": 0.8125,
+        "valid_claim_rate": 0.53125,
         "observation_rate": 0.058823529411764705,
         "event_conversion_rate": 0.29411764705882354
       },

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-17T00:30:10.714Z",
+    "generatedAt": "2026-09-17T02:21:59.823Z",
     "latestDataDate": "2026-09-17",
     "currentDate": "2026-09-17",
-    "eventCount": 3335,
+    "eventCount": 3338,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -560,13 +560,15 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-media_entertainment",
-        "TX-industry-retail_ecommerce",
-        "TX-target_user-business_user",
         "TX-industry-automotive_transportation",
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
+        "TX-industry-healthcare_life_sciences",
         "TX-product_form-enterprise_software_platform",
+        "TX-target_user-researcher",
+        "TX-use_case-research_discovery",
+        "TX-industry-manufacturing",
+        "TX-target_user-business_user",
         "TX-use_case-data_analysis",
         "TX-industry-financial_services",
         "TX-industry-media_entertainment",
@@ -581,11 +583,6 @@
         "TX-product_form-ai_infrastructure_software",
         "TX-target_user-developer",
         "TX-use_case-security_operations",
-        "TX-industry-manufacturing",
-        "TX-industry-healthcare_life_sciences",
-        "TX-target_user-researcher",
-        "TX-use_case-research_discovery",
-        "TX-industry-financial_services",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-industry-telecommunications",
@@ -699,9 +696,8 @@
       "typeLabel": "行业",
       "valueId": "healthcare_life_sciences",
       "eventIds": [
-        "EV-57da7ad44e35d987",
-        "EV-05b635c3958e4591",
-        "EV-3fdc9ad98818c36b",
+        "EV-91459f0d9446f471",
+        "EV-d98c10d4cba51686",
         "EV-ef669a52c9a3f94f",
         "EV-0cc745a319a25f6e",
         "EV-29e6561ca7c005d0",
@@ -797,9 +793,8 @@
         "EV-edb1ddb3a091ada4"
       ],
       "entityIds": [
-        "EN-4c317005cf0d0ed9",
-        "FICO-d750f652e8f2dd92",
-        "EN-d5857f6222f45275",
+        "EN-0650ad8ad48129f7",
+        "EN-2777b5a794959a7d",
         "EN-1d79127e9d90e89b",
         "EN-ecf226574e481ea7",
         "EN-11f245a21211face",
@@ -888,8 +883,12 @@
         "FDE-560b710961006374",
         "FDE-1fb7e2ae69d2f044"
       ],
-      "hardwareIds": [],
-      "firstSeen": "2023-06-28",
+      "hardwareIds": [
+        "HW-7889eb510b9d4210",
+        "HW-a033b945449628d5",
+        "HW-ceb55d9bc637c1d3"
+      ],
+      "firstSeen": "2026-01-20",
       "lastSeen": "2026-09-17"
     },
     {
@@ -1464,13 +1463,9 @@
         "FDE-48afc88dde234ab1",
         "FDE-309bc49d109029a3"
       ],
-      "hardwareIds": [
-        "HW-7889eb510b9d4210",
-        "HW-a033b945449628d5",
-        "HW-ceb55d9bc637c1d3"
-      ],
-      "firstSeen": "2026-01-20",
-      "lastSeen": "2026-09-17"
+      "hardwareIds": [],
+      "firstSeen": "2023-06-28",
+      "lastSeen": "2026-09-16"
     },
     {
       "id": "TX-technology-agentic_execution",
