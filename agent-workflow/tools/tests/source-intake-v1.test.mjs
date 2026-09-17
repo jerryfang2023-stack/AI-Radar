@@ -1,6 +1,16 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { sourceDiagnosticMarkdown } from "../lib/source-diagnostic-markdown.mjs";
+import { articleLabelDate } from "../lib/publisher-date.mjs";
+
+test("publisher date label precedes related stories and rejects invalid dates", () => {
+  const article = '<span class="mg-blog-date"><i class="fas fa-clock"></i>4 月 15, 2025</span>';
+  const related = '<span class="mg-blog-date">9 月 16, 2026</span>';
+  assert.equal(articleLabelDate(article + related), "2025-04-15T00:00:00.000Z");
+  assert.equal(articleLabelDate('<span>4 月 15, 2025</span>'), "");
+  assert.equal(articleLabelDate('<span class="mg-blog-date">2 月 31, 2026</span>'), "");
+  assert.equal(articleLabelDate('<span class="mg-blog-date">unknown</span>' + related), "");
+});
 
 test("source reports preserve structured publisher diagnostics and legacy strings", () => {
   const diagnostic = { source_id: "36kr", status: "partial", candidates: 0, failures: ["no readable funding article links"], query_count: 2 };

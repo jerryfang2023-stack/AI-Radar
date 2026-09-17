@@ -1,6 +1,6 @@
 ---
 title: WaveSight Current Handoff
-date: 2026-09-12
+date: 2026-09-17
 status: current
 encoding: UTF-8
 ---
@@ -24,7 +24,7 @@ This file keeps only the current handoff state needed by a new window. Historica
 - The 2026-09-12 daily bundle contains 34 canonical events and 71 Claims from 237 RawDocuments, with one FDE record and no hardware record. Source/Claim traceability is 100%. Business Signals and First-Line publications now share one non-cancelling concurrency group; Community Intelligence validates a complete candidate before replacing last-good data.
 - Current funding taxonomy projection uses reviewed event decisions and evidence-backed event/entity classification assertions under `TAG-V4.1`; current counts are owned by the generated taxonomy review and consistency-gate reports rather than this handoff.
 - Current private-evidence counts are owned by the latest private-evidence gate rather than this handoff; the public repository contains locators only.
-- Current local automation: exactly seven Windows tasks, including one combined Hermes watchdog/heartbeat control-plane task.
+- Current local automation: exactly four Windows tasks: Morning 08:10, Community 08:30, First-Line Viewpoints 16:10, and Final Closure 16:45. Inspection and repair are operator-owned; Recovery, Closure, and Hermes watchdog timers are retired. Validate installed ownership with `npm run assert:windows-automation`.
 - Current Skill governance: Skill Store `v2.4.0`, preserving all 24 active governed Skills certified against `GPT-6-ASTRA-SKILL-V1.0`. Content registrations, AIP project Skills, and latest plugin caches are separate inventory, not extra certifications or global installations. Use `npm run check:skill-ops` for the read-only release gate and `npm run build:skill-store-dashboard` to refresh available local sources.
 - Default truth sources: `AGENTS.md`, `context/00-current-state.md`, `context/version-ledger.md`, `context/12-data-center-v4.md`, and directly relevant task files.
 

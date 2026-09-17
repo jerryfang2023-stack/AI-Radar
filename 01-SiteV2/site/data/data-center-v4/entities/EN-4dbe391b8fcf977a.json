@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-16T04:41:27.652Z",
-    "latestDataDate": "2026-09-16",
-    "currentDate": "2026-09-16",
-    "eventCount": 3315,
-    "quarantinedEventCount": 35,
+    "generatedAt": "2026-09-17T02:39:32.145Z",
+    "latestDataDate": "2026-09-17",
+    "currentDate": "2026-09-17",
+    "eventCount": 3338,
+    "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
@@ -28,6 +28,7 @@
       "EV-ca0c54e3f9776fa5",
       "EV-e78ef81d4971565e",
       "EV-31abbd556dd87fc9",
+      "EV-cab18aa68c8ae551",
       "EV-88a9fd0b8f602e16",
       "EV-844b61a6f671856b",
       "EV-90a174964b9d1daf",
@@ -64,6 +65,7 @@
       "EV-4b8064b1139e1724",
       "EV-bb8acbaab5f7aa4e",
       "EV-434dcf1813a84ead",
+      "EV-de1d0f5b1dbb0cd5",
       "EV-ec55003461ff34b0",
       "EV-7fdffebf867b2bd7",
       "EV-218c2f6ecf3c369f",
@@ -74,7 +76,7 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-05-08",
-    "lastSeen": "2026-09-16",
+    "lastSeen": "2026-09-17",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
@@ -86,6 +88,7 @@
       ],
       "partnerships": [],
       "productsServices": [
+        "EV-de1d0f5b1dbb0cd5",
         "EV-ec55003461ff34b0",
         "EV-7fdffebf867b2bd7",
         "EV-7256017056b81bbe"
@@ -98,6 +101,41 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-de1d0f5b1dbb0cd5",
+        "dataDate": "2026-09-17",
+        "date": "2026-09-16",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "高通技术公司携手中兴努比亚和豆包手机助手，共同推动智能手机迈入个人AI新时代",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "consumer",
+            "name": "个人用户",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-4dbe391b8fcf977a",
+          "EN-6f21a653c48f4f19"
+        ]
+      },
       {
         "id": "EV-ec55003461ff34b0",
         "dataDate": "2026-09-16",

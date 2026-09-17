@@ -2,42 +2,45 @@
   "meta": {
     "version": "COLLECTION-TELEMETRY-V1.0",
     "ops_version": "OPS-V3.8.0-engineering-integration",
-    "data_date": "2026-09-16",
-    "generated_at": "2026-09-16T04:08:52.108Z",
-    "source_snapshot": "4a0d5ca892cd3ffa3e129d40038930072d8197f4d67cdf092630500bb1d913e1",
+    "data_date": "2026-09-17",
+    "generated_at": "2026-09-17T00:30:24.526Z",
+    "source_snapshot": "610b8882e8467d8a69a6a80e945028e572edddba75abff2a9f0ee07c6da623ca",
     "scope": "OPS",
     "canonical_writeback": false,
     "source_of_truth": "Data Center V4 manifest and integrity gate"
   },
   "collection": {
     "discovered": 290,
-    "capture_succeeded": 247,
-    "capture_failed": 13,
-    "recovered_source_failures": 9,
-    "raw_documents": 247
+    "capture_succeeded": 233,
+    "capture_failed": 4,
+    "recovered_source_failures": 6,
+    "raw_documents": 233
   },
   "fact_build": {
-    "accepted_claims": 104,
+    "accepted_claims": 66,
     "rejected_claims": 0,
-    "accepted": 104,
+    "accepted": 66,
     "rejected": 0,
-    "pending_claims": 9,
-    "canonical_events": 48,
-    "entities": 80,
-    "relationships": 113,
+    "pending_claims": 4,
+    "canonical_events": 30,
+    "entities": 58,
+    "relationships": 70,
     "conflicts": 0,
-    "qa_queue": 198,
+    "qa_queue": 204,
     "qa_by_status": {
-      "review_optional": 184,
-      "open": 14
+      "review_optional": 194,
+      "open": 10
     }
   },
   "v4_gate": {
     "status": "passed",
-    "manifest_date": "2026-09-16",
-    "gate_date": "2026-09-16",
+    "manifest_date": "2026-09-17",
+    "gate_date": "2026-09-17",
     "failures": [],
-    "warnings": []
+    "warnings": [
+      "No source-bounded FDE projection was produced.",
+      "No source-bounded hardware projection was produced."
+    ]
   },
   "application_projection": {
     "opportunity_map": "passed",
@@ -58,15 +61,15 @@
       "status": "partial",
       "counts": {
         "discovered": 290,
-        "capture_succeeded": 247,
-        "capture_failed": 13,
-        "recovered_source_failures": 9,
-        "raw_documents": 247
+        "capture_succeeded": 233,
+        "capture_failed": 4,
+        "recovered_source_failures": 6,
+        "raw_documents": 233
       },
       "evidence": [
-        "01-SiteV2/content/11-databases/data-center-v4/2026-09-16/manifest.json",
-        "agent-workflow/reports/2026-09-16-guanlan-daily-monitor-log.md",
-        "agent-workflow/reports/2026-09-16-guanlan-monitor-quality-gate.md"
+        "01-SiteV2/content/11-databases/data-center-v4/2026-09-17/manifest.json",
+        "agent-workflow/reports/2026-09-17-guanlan-daily-monitor-log.md",
+        "agent-workflow/reports/2026-09-17-guanlan-monitor-quality-gate.md"
       ]
     },
     {
@@ -74,20 +77,20 @@
       "label": "事实构建",
       "status": "passed",
       "counts": {
-        "accepted_claims": 104,
+        "accepted_claims": 66,
         "rejected_claims": 0,
-        "accepted": 104,
+        "accepted": 66,
         "rejected": 0,
-        "pending_claims": 9,
-        "canonical_events": 48,
-        "entities": 80,
-        "relationships": 113,
+        "pending_claims": 4,
+        "canonical_events": 30,
+        "entities": 58,
+        "relationships": 70,
         "conflicts": 0,
-        "qa_queue": 198
+        "qa_queue": 204
       },
       "evidence": [
-        "01-SiteV2/content/11-databases/data-center-v4/2026-09-16/manifest.json",
-        "agent-workflow/reports/2026-09-16-data-center-v4-integrity-gate.json"
+        "01-SiteV2/content/11-databases/data-center-v4/2026-09-17/manifest.json",
+        "agent-workflow/reports/2026-09-17-data-center-v4-integrity-gate.json"
       ]
     },
     {
@@ -101,7 +104,7 @@
         "fde_hardware_sync": "passed"
       },
       "evidence": [
-        "agent-workflow/reports/2026-09-16-persistent-asset-manifest.json"
+        "agent-workflow/reports/2026-09-17-persistent-asset-manifest.json"
       ]
     },
     {
@@ -114,7 +117,7 @@
         "authoritative": false
       },
       "evidence": [
-        "agent-workflow/reports/2026-09-16-persistent-asset-manifest.json"
+        "agent-workflow/reports/2026-09-17-persistent-asset-manifest.json"
       ]
     }
   ],

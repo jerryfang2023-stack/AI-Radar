@@ -1,24 +1,24 @@
 {
   "meta": {
-    "generatedAt": "2026-09-16T04:17:44.051Z",
+    "generatedAt": "2026-09-17T00:50:07.147Z",
     "sourceFile": "01-SiteV2/site/data/follow-builders-daily.json",
-    "sourceCommits": 151,
-    "sourceSnapshots": 152,
+    "sourceCommits": 152,
+    "sourceSnapshots": 153,
     "earliestDate": "2026-06-01",
-    "latestDate": "2026-09-15",
+    "latestDate": "2026-09-16",
     "dedupeKey": "original_url",
     "sourcePolicy": "Historical records are reconstructed from committed morning-lane snapshots and retain their original URL and source snapshot.",
     "translationPolicy": "Only complete approved Chinese translations with matching source hashes are published."
   },
   "stats": {
-    "discovered": 2757,
-    "aiRelevant": 1529,
-    "alreadyApproved": 721,
+    "discovered": 2780,
+    "aiRelevant": 1542,
+    "alreadyApproved": 732,
     "translatedThisRun": 0,
-    "pendingTranslation": 808,
-    "published": 1318,
+    "pendingTranslation": 810,
+    "published": 1329,
     "pendingReasons": {
-      "translation_gate_failed": 149,
+      "translation_gate_failed": 151,
       "mymemory": 634,
       "static_blog_title": 14,
       "none": 4,
@@ -26,6 +26,358 @@
     }
   },
   "remarks": [
+    {
+      "id": "https://tldr.tech/ai/2026-09-16",
+      "source": "blog",
+      "name": "TLDR AI Newsletter",
+      "handle": "tldr.tech",
+      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
+      "text": "Jev ⚡, Periodic Neon 🧬, Gemini 3.8 Live 💬",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "Jev ⚡，周期霓虹 🧬，Gemini 3.8 实时 💬",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-pro",
+      "translationSourceHash": "9810c3199876f379",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "Wed, 16 Sep 2026 00:00:00 GMT",
+      "date": "2026-09-16",
+      "url": "https://tldr.tech/ai/2026-09-16",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2100056178705514703",
+      "source": "x",
+      "name": "Amjad Masad",
+      "handle": "amasad",
+      "role": "ceo replit. civilizationist",
+      "text": "This is cool, but if your output domain is known in advance, why not just train a model to produce logprobs over enums? https://t.co/rmyen2d7iM",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "这很酷，但如果你的输出领域事先已知，为什么不直接训练一个模型来生成枚举上的对数概率呢？https://t.co/rmyen2d7iM",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "820ea9505738ac3c",
+      "topic": "AI 基础设施",
+      "columnTags": [
+        {
+          "id": "opinion-model-infra",
+          "name": "模型基础设施观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察模型运行、算力、存储、sandbox 或开发平台基础设施的变化；后续事实判断需回到原始公告或技术文档。",
+      "createdAt": "2026-09-16T02:56:24.000Z",
+      "date": "2026-09-16",
+      "url": "https://x.com/amasad/status/2100056178705514703",
+      "likes": 326,
+      "retweets": 7,
+      "replies": 40,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2100027487681953834",
+      "source": "x",
+      "name": "Peter Yang",
+      "handle": "petergyang",
+      "role": "Practical AI tutorials and interviews for busy people",
+      "text": "Thank you all for your replies! Just sent @bot codes to a bunch of you — a few use cases that stood out: For growth & clients: → Find leads, draft outreach, and turn wins into case studies @kouroshbaloo → Build a competitor comparison matrix with sources @PaulWeissAI For ops & shipping: → Monitor hundreds of ad accounts and catch broken signup/payment flows @yashjain10k → Watch Jira, flag blockers, and draft the weekly status update @partykma → Triage support tickets, draft replies, and escalate with full context @jurlycat → For hotel owners: regularly test the booking flow so website booking errors get caught @LeenCanvas → Automate paperwork and back-office workflows for an electrical contracting business @kerwinv101 For research & content: → Monitor AI builders on X, verify sources, then turn wins into hooks and scripts @jenni489471 → A research desk for AI that turns noise into a daily brief @Orynsky Will run this again if I get more codes. Meanwhile consider subscribing to my YouTube below :) https://t.co/SKvvXlY6Km",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "感谢大家的回复！刚刚给一部分人发送了 @bot 代码——几个比较突出的用例： 用于增长与客户： → 寻找潜在客户、起草外联内容，并把成功案例转化为案例研究 @kouroshbaloo → 构建带来源的竞争对手对比矩阵 @PaulWeissAI 用于运营与交付： → 监控数百个广告账户，并捕捉注册/支付流程中的故障 @yashjain10k → 关注 Jira、标记阻塞项，并起草每周状态更新 @partykma → 对支持工单进行分类、起草回复，并附上完整上下文进行升级处理 @jurlycat → 面向酒店业主：定期测试预订流程，以便及时发现网站预订错误 @LeenCanvas → 为电气承包业务自动化文书和后台工作流程 @kerwinv101 用于研究与内容： → 在 X 上监控 AI 开发者，核实来源，然后把成功案例转化为钩子和脚本 @jenni489471 → 一个 AI 研究台，把噪音转化为每日简报 @Orynsky 如果拿到更多代码，我会再运行一次。同时，可以考虑订阅我下面的 YouTube :) https://t.co/SKvvXlY6Km",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-pro",
+      "translationSourceHash": "f227537dd4ce9c24",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-16T01:02:24.000Z",
+      "date": "2026-09-16",
+      "url": "https://x.com/petergyang/status/2100027487681953834",
+      "likes": 4,
+      "retweets": 0,
+      "replies": 0,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2099976021311398230",
+      "source": "x",
+      "name": "Aaron Levie",
+      "handle": "levie",
+      "role": "ceo box - your business lives in content. unleash it with AI",
+      "text": "There’s a massive chasm between the power of AI models and the ultimate workflows that enterprises are trying to automate. This gap is the opportunity for the applied AI layer to fill. You need to connect the intelligence to workflows, often reengineer processes, aggregate the right context and data, allow for the right human in the loop experiences, drive change management, do domain specific evals, manage the security and governance of the data and process, and much more. We’re going to see this layer emerge in every vertical and horizontal category. And ironically, even as models improve at incredible rates, this layer still must exist - and may become even more important and useful. Greater capability enables even more complex tasks to be tackled, amplifying the challenges if you don’t do this well. Was super fun chatting with @sonyatweetybird on all the things going into AI diffusion.",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "AI模型的力量与企业试图自动化的最终工作流程之间，存在着巨大的鸿沟。这一差距正是应用型AI层需要填补的机遇。你需要将智能连接到工作流程中，往往还要重新设计流程，聚合正确的上下文与数据，提供恰到好处的“人在回路”体验，推动变革管理，进行特定领域的评估，管理数据与流程的安全性和治理，等等。我们将看到这一层在每一个垂直和水平类别中涌现。而且颇具讽刺意味的是，即使模型以惊人的速度不断改进，这一层依然必须存在——甚至可能变得更加重要和有用。更强的能力使得更复杂的任务得以被攻克，但如果你在这一层做得不好，挑战也会被放大。与@sonyatweetybird聊AI扩散所涉及的所有事情，真的非常有趣。",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-pro",
+      "translationSourceHash": "62f40b04b358d2c2",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-15T21:37:53.000Z",
+      "date": "2026-09-16",
+      "url": "https://x.com/levie/status/2099976021311398230",
+      "likes": 203,
+      "retweets": 27,
+      "replies": 36,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2099964487667454097",
+      "source": "x",
+      "name": "Garry Tan",
+      "handle": "garrytan",
+      "role": "President & CEO ycombinator —Founder garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
+      "text": "I just started using @capydotai with GStack/GBrain on some fix waves on outstanding issues/PRs and it did what would have taken a day with raw Codex/Claude Code in about half as much time, using the same frontier models. I'm amazed.",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "我刚开始在一些针对未解决问题/PR的修复波次中使用@capydotai配合GStack/GBrain，它用同样的前沿模型，在大约一半的时间内完成了用原始Codex/Claude Code需要一天才能完成的工作。我惊叹不已。",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "b90917df1f8c9c75",
+      "topic": "AI 编程",
+      "columnTags": [
+        {
+          "id": "opinion-ai-coding",
+          "name": "AI Coding 观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-coding",
+          "name": "AI Coding",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 AI 编程工具、设计到代码流程和软件生产方式的变化；需要结合产品发布或文档再做事实判断。",
+      "createdAt": "2026-09-15T20:52:03.000Z",
+      "date": "2026-09-16",
+      "url": "https://x.com/garrytan/status/2099964487667454097",
+      "likes": 247,
+      "retweets": 23,
+      "replies": 36,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2099958388230873165",
+      "source": "x",
+      "name": "Thariq",
+      "handle": "trq212",
+      "role": "Claude Code anthropicai. prev YC W20, spc, medialab",
+      "text": "I was not expecting things to go this way, but I think MCPs are better than CLIs for most integrations. The models have gotten much better at tool calling, we can defer tools & MCP is now stateless. If you need to compose/filter data, add params like query to your MCP tools.",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "我没想到事情会这样发展，但我认为对于大多数集成来说，MCP 比 CLI 更好。模型在工具调用方面已经进步了很多，我们可以延迟加载工具，而且 MCP 现在是无状态的。如果你需要组合/过滤数据，可以在你的 MCP 工具中添加像 query 这样的参数。",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "2d91fac21ea8f75a",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-15T20:27:49.000Z",
+      "date": "2026-09-16",
+      "url": "https://x.com/trq212/status/2099958388230873165",
+      "likes": 2429,
+      "retweets": 109,
+      "replies": 209,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2099921866014306633",
+      "source": "x",
+      "name": "Josh Woodward",
+      "handle": "joshwoodward",
+      "role": "VP, Google GoogleLabs GeminiApp GoogleAIStudio",
+      "text": "New updates in @Gemini_Notebook for students, my 2 favorites: 1) Have a live, spoken Q&A with your class materials in ~100 languages 2) Record lectures and notes on the go, the audio notes save automatically into your chosen notebook As a university student, you can also still get a free Google AI Plan in 140+ countries for bigger limits and access to more Google products!",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "@Gemini_Notebook 为学生带来的新更新，我最喜欢的两个功能：1）用约100种语言与你的课堂材料进行实时语音问答 2）随时随地录制讲座和笔记，音频笔记会自动保存到你选定的笔记本中。作为大学生，你仍然可以在140多个国家免费获得 Google AI Plan，享受更高的使用限额并访问更多 Google 产品！",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "4225269b94192769",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-15T18:02:42.000Z",
+      "date": "2026-09-16",
+      "url": "https://x.com/joshwoodward/status/2099921866014306633",
+      "likes": 329,
+      "retweets": 19,
+      "replies": 22,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2099905740505055680",
+      "source": "x",
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "role": "vercel CEO",
+      "text": "The future is multi-model. Trying to hide the choice confuses and hurts customers, who can't participate in the upside of the most exciting market competition of our times, nor master the best tool for the job. https://t.co/DWMmd7lUqX",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "未来是多模型的。试图隐藏选择会让客户感到困惑并受到伤害，他们既无法参与我们这个时代最激动人心的市场竞争所带来的好处，也无法掌握最适合这项工作的工具。https://t.co/DWMmd7lUqX",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "f5889aab5d79e2f5",
+      "topic": "AI 基础设施",
+      "columnTags": [
+        {
+          "id": "opinion-model-infra",
+          "name": "模型基础设施观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察模型运行、算力、存储、sandbox 或开发平台基础设施的变化；后续事实判断需回到原始公告或技术文档。",
+      "createdAt": "2026-09-15T16:58:37.000Z",
+      "date": "2026-09-16",
+      "url": "https://x.com/rauchg/status/2099905740505055680",
+      "likes": 380,
+      "retweets": 10,
+      "replies": 35,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
     {
       "id": "https://tldr.tech/ai/2026-09-15",
       "source": "blog",
@@ -39,7 +391,7 @@
       "contentTranslationMethod": "",
       "contentTranslationModel": "",
       "contentTranslationSourceHash": "",
-      "translation": "Siri模型互换 🔄，Claude Money 💰，Hugging Face Tau 👨‍💻",
+      "translation": "Siri模型更换 🔄，Claude Money 💰，Hugging Face Tau 👨‍💻",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
@@ -65,6 +417,138 @@
       "likes": 0,
       "retweets": 0,
       "replies": 0,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2099876514330206578",
+      "source": "x",
+      "name": "Claude",
+      "handle": "claudeai",
+      "role": "Claude is an AI assistant built by anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app.",
+      "text": "Salesforce in Claude is now available in beta. It brings your accounts, opportunities, and pipeline into Claude, with 37 pre-built sales skills. Prep a call, review a deal, create a pipeline dashboard, or send your forecast without leaving the conversation. https://t.co/juvI0sU3mX",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "Salesforce in Claude 现已推出测试版。它将你的客户、商机和销售管道带入 Claude，并提供 37 项预置销售技能。准备通话、审查交易、创建销售管道仪表板，或发送预测，全程无需离开对话。https://t.co/juvI0sU3mX",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "8bfa9e38e94bace8",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-15T15:02:29.000Z",
+      "date": "2026-09-15",
+      "url": "https://x.com/claudeai/status/2099876514330206578",
+      "likes": 8891,
+      "retweets": 634,
+      "replies": 285,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2099876515840245772",
+      "source": "x",
+      "name": "Claude",
+      "handle": "claudeai",
+      "role": "Claude is an AI assistant built by anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app.",
+      "text": "Learn more about Salesforce in Claude: https://t.co/LVP8WIUzaY",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "在Claude中了解有关Salesforce的更多信息：https://t.co/LVP8WIUzaY",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "cf35f3191c25d049",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-15T15:02:29.000Z",
+      "date": "2026-09-15",
+      "url": "https://x.com/claudeai/status/2099876515840245772",
+      "likes": 237,
+      "retweets": 23,
+      "replies": 12,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2099760428314411232",
+      "source": "x",
+      "name": "Amjad Masad",
+      "handle": "amasad",
+      "role": "ceo replit. civilizationist",
+      "text": "The AI naming curse strikes again. “AI Safety” firm made AI unsafe. “Effective Altruists” are both ineffective and enabling criminal activity. “Irregular” is regularly incompetent. https://t.co/vaOgS5lyKf",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "AI命名诅咒再次应验。“AI安全”公司让AI变得不安全。“有效利他主义者”既无实效，又在助长犯罪活动。“Irregular”则一贯无能。https://t.co/vaOgS5lyKf",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "d53111521c2d5fea",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-15T07:21:12.000Z",
+      "date": "2026-09-15",
+      "url": "https://x.com/amasad/status/2099760428314411232",
+      "likes": 659,
+      "retweets": 70,
+      "replies": 33,
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
@@ -112,7 +596,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "e9dd1aa1f478df696ce514cd36fb2fb5cdbb788b"
     },
     {
       "id": "2099571935495827761",
@@ -156,7 +640,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "e9dd1aa1f478df696ce514cd36fb2fb5cdbb788b"
     },
     {
       "id": "2099551291601248485",
@@ -200,7 +684,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "e9dd1aa1f478df696ce514cd36fb2fb5cdbb788b"
     },
     {
       "id": "2099551141621329994",
@@ -244,7 +728,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "e9dd1aa1f478df696ce514cd36fb2fb5cdbb788b"
     },
     {
       "id": "2099540886409695346",
@@ -288,7 +772,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "e9dd1aa1f478df696ce514cd36fb2fb5cdbb788b"
     },
     {
       "id": "2099536440006955445",
@@ -332,7 +816,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "e9dd1aa1f478df696ce514cd36fb2fb5cdbb788b"
     },
     {
       "id": "2099529959262019887",
@@ -376,7 +860,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "e9dd1aa1f478df696ce514cd36fb2fb5cdbb788b"
     },
     {
       "id": "https://tldr.tech/ai/2026-09-14",
@@ -464,7 +948,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "e9dd1aa1f478df696ce514cd36fb2fb5cdbb788b"
     },
     {
       "id": "2099393115241300166",
@@ -508,7 +992,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "e9dd1aa1f478df696ce514cd36fb2fb5cdbb788b"
     },
     {
       "id": "2098931686042210381",

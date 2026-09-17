@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-16T04:41:27.652Z",
-    "latestDataDate": "2026-09-16",
-    "currentDate": "2026-09-16",
-    "eventCount": 3315,
-    "quarantinedEventCount": 35,
+    "generatedAt": "2026-09-17T02:39:32.145Z",
+    "latestDataDate": "2026-09-17",
+    "currentDate": "2026-09-17",
+    "eventCount": 3338,
+    "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
@@ -28,6 +28,7 @@
       "EV-ca0c54e3f9776fa5",
       "EV-e78ef81d4971565e",
       "EV-31abbd556dd87fc9",
+      "EV-cab18aa68c8ae551",
       "EV-88a9fd0b8f602e16",
       "EV-844b61a6f671856b",
       "EV-90a174964b9d1daf",
@@ -59,6 +60,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-930e081543bb97ce",
       "EV-36b9457d1508a166",
       "EV-51891fe9f47dd616",
       "EV-c35c34271c7caf53",
@@ -74,13 +76,14 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-01",
-    "lastSeen": "2026-08-27",
+    "lastSeen": "2026-09-17",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-930e081543bb97ce",
         "EV-36b9457d1508a166",
         "EV-51891fe9f47dd616",
         "EV-c35c34271c7caf53",
@@ -95,6 +98,23 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-930e081543bb97ce",
+        "dataDate": "2026-09-17",
+        "date": "2026-09-15",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Cloudflare 推出 Disallow AI Training 设置，拒绝 AI 训练同时保留搜索收录",
+        "displayTags": [],
+        "entityIds": [
+          "EN-738e22f0acab814c",
+          "EN-04d47367a50949e8",
+          "EN-f080981cfb8d08a6"
+        ]
+      },
       {
         "id": "EV-36b9457d1508a166",
         "dataDate": "2026-08-27",
@@ -342,9 +362,11 @@
         "EV-5575555340c04c5a",
         "EV-cba16bd541a07032",
         "EV-68d5a02e5213b43c",
+        "EV-2a6efefa4e5ec631",
         "EV-8ae771f26c02f7c4",
         "EV-a1aea4a04b9e51c7",
         "EV-777eb5b7783b71fb",
+        "EV-de1d0f5b1dbb0cd5",
         "EV-fa05797bb54f4bbe",
         "EV-a347b644cd5d2d31",
         "EV-8e13f1a043f7b979",
@@ -415,6 +437,7 @@
         "EN-3f0cfc0d9c60b562",
         "EN-9b21c9bf3305c0d6",
         "EN-fcfad5f0679009d4",
+        "EN-a8100d425f663eac",
         "EN-03ecbdd9b68f40a0",
         "EN-fb54e9062429a937",
         "EN-c70eca6b0f88f44d",
@@ -440,7 +463,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-09-16"
+      "lastSeen": "2026-09-17"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -672,6 +695,7 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-de1d0f5b1dbb0cd5",
         "EV-5e20c319d2ad9a67",
         "EV-ec55003461ff34b0",
         "EV-fa05797bb54f4bbe",
@@ -989,6 +1013,7 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-6d282114be5eef4f",
         "EV-b1b321fda18cc329",
         "EV-e272541b76d00306",
         "EV-84bd528b36f55b00",
