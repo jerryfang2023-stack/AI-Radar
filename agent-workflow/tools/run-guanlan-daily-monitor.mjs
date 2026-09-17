@@ -4,6 +4,7 @@ import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 import { pathToFileURL } from "node:url";
 import crypto from "node:crypto";
+import { articleLabelDate } from "./lib/publisher-date.mjs";
 import { resolveSourceTitleTranslation, sourceTitleNeedsChineseTranslation } from "./source-title-translation-generator.mjs";
 import {
   buildSourceIntake,
@@ -1336,7 +1337,7 @@ function extractPublishedAtFromHtml(html = "") {
       // Invalid JSON-LD is ignored; visible source evidence remains available.
     }
   }
-  return normalizePublishedAt(candidates);
+  return normalizePublishedAt(candidates) || articleLabelDate(html);
 }
 
 function recoverCompleteSourceTitle(sourceTitle = "", snapshot = {}) {
