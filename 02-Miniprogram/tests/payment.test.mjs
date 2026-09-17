@@ -117,3 +117,13 @@ test("records growth task points in the unified server wallet", async () => {
   assert.deepEqual(request.data, { type: "checkin", subjectId: "daily", behaviorDate: "2026-08-14" });
   assert.equal(request.header.Authorization, "Bearer token-1");
 });
+
+test("first phone binding submits existing profile along with the single phone code", async () => {
+  const { payment, requests } = loadPaymentWx();
+  await payment.bindPhoneNumber("phone-code", {nickname:"贝琳达", avatarSelected:true});
+  const request=requests.find(item=>item.url.endsWith("/auth/wechat"));
+  assert.equal(request.data.nickname,"贝琳达");
+  assert.equal(request.data.avatarSelected,true);
+  assert.equal(request.data.phoneCode,"phone-code");
+  assert.equal(requests.filter(item=>item.url.endsWith("/auth/wechat")).length,1);
+});

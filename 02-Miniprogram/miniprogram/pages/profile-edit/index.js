@@ -1,4 +1,4 @@
-const { getProfile, saveProfile, getProfileCompletion, syncCommunity } = require("../../utils/member.js");
+const { getProfile, saveProfile, getProfileCompletion, syncCommunity, syncMembership, syncWallet } = require("../../utils/member.js");
 const { bindPhoneNumber, fetchMembership, updateProfile } = require("../../utils/payment.js");
 
 Page({
@@ -71,7 +71,15 @@ Page({
     if (this.data.bindingPhone) return;
     this.setData({ bindingPhone: true });
     try {
-      const result = await bindPhoneNumber(code);
+      const profile = getProfile();
+      const result = await bindPhoneNumber(code, {
+        nickname: String(this.data.nickname || profile.nickname || "").trim(),
+        avatarSelected: Boolean(profile.avatarUrl && profile.avatarUrl !== "/assets/brand/app-icon-light.svg"),
+      });
+      if (result.membership) syncMembership(result.membership);
+      if (result.wallet) syncWallet(result.wallet);
+      if (result.community) syncCommunity(result.community);
+      if (result.profile?.nickname && !this._nicknameDirty) saveProfile({ nickname: result.profile.nickname });
       saveProfile({ phoneMasked: result.profile?.phoneMasked || "", phonePending: false });
       this.refreshProfile();
       wx.showToast({ title: "手机号绑定成功", icon: "success" });

@@ -118,15 +118,10 @@ Component({
       trackRegistration("registration_phone_submitted", { flow: "community_link" });
       this.setData({ linkingExisting: true });
       try {
-        const result = await login({ phoneCode });
-        if (result.community?.status !== "joined") {
-          const error = new Error("未匹配到社群成员，请完成资料注册");
-          error.code = "REGISTRATION_REQUIRED";
-          throw error;
-        }
+        const result = await login({ phoneCode, nickname: this.data.nickname.trim(), avatarSelected: this.data.avatarSelected });
         const membership = this.syncAccountSnapshot(result);
         this.setData({ registered: true, membership });
-        this.triggerEvent("registered", { membership, isNewUser: result.isNewUser, linkedCommunity: true });
+        this.triggerEvent("registered", { membership, isNewUser: result.isNewUser, linkedCommunity: result.community?.status === "joined" });
       } catch (error) {
         trackRegistration("registration_failed", { flow: "community_link", reason: registrationFailureReason(error) });
         const message = error.code === "REGISTRATION_REQUIRED" ? "未匹配到社群成员，请完成资料注册" : (error.message || "同步失败，请重试");

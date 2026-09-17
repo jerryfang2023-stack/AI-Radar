@@ -89,7 +89,7 @@ def test_phone_code_is_exchanged_with_a_cached_mini_program_access_token(tmp_pat
 
     def fake_json_request(url, method="GET", body=None, headers=None):
         requests.append({"url": url, "method": method, "body": body, "headers": headers})
-        if "/cgi-bin/token?" in url:
+        if "/cgi-bin/stable_token" in url:
             return 200, {}, {"access_token": "mini-token", "expires_in": 7200}
         return 200, {}, {
             "errcode": 0,
@@ -102,7 +102,45 @@ def test_phone_code_is_exchanged_with_a_cached_mini_program_access_token(tmp_pat
 
     assert first == {"phoneNumber": "13800138000", "countryCode": "86"}
     assert second == first
-    assert len([item for item in requests if "/cgi-bin/token?" in item["url"]]) == 1
+    assert len([item for item in requests if "/cgi-bin/stable_token" in item["url"]]) == 1
     phone_requests = [item for item in requests if "/getuserphonenumber?" in item["url"]]
     assert [item["body"] for item in phone_requests] == [{"code": "phone-code-1"}, {"code": "phone-code-2"}]
     assert all(item["method"] == "POST" for item in phone_requests)
+
+@pytest.mark.parametrize('code', [40001, 40014, 42001])
+def test_invalid_access_token_refreshes_once_before_phone_retry(tmp_path, code):
+    client, _, _ = configured_client(tmp_path)
+    calls = []
+    def request(url, **kwargs):
+        calls.append((url, kwargs))
+        if 'stable_token' in url:
+            assert kwargs['body']['force_refresh'] is False
+            return 200, {}, {'access_token': 'new-token', 'expires_in': 7200}
+        if 'old-token' in url:
+            return 200, {}, {'errcode': code, 'errmsg': 'invalid credential SECRET'}
+        return 200, {}, {'phone_info': {'purePhoneNumber': '13800138000'}}
+    client._mini_access_token = 'old-token'
+    client._mini_access_token_expires_at = 9999999999
+    client._json_request = request
+    assert client.exchange_phone_code('one-use-code')['phoneNumber'] == '13800138000'
+    assert len(calls) == 3
+    assert [c[1]['body'] for c in calls if 'getuserphonenumber' in c[0]] == [{'code': 'one-use-code'}]*2
+
+@pytest.mark.parametrize('error_code,phone_calls', [(40001,2),(40029,1)])
+def test_phone_errors_are_bounded_and_do_not_expose_provider_details(tmp_path,error_code,phone_calls):
+    client, _, _ = configured_client(tmp_path)
+    calls=[]
+    def request(url, **kwargs):
+        if 'stable_token' in url:return 200, {}, {'access_token':'token', 'expires_in':7200}
+        calls.append(url)
+        return 200, {}, {'errcode':error_code,'errmsg':'invalid credential SECRET'}
+    client._json_request=request
+    with pytest.raises(WeChatPayError) as caught:client.exchange_phone_code('code')
+    assert 'SECRET' not in str(caught.value)
+    assert len(calls)==phone_calls
+
+def test_stale_failure_does_not_invalidate_newer_cached_token(tmp_path):
+    client, _, _ = configured_client(tmp_path)
+    client._mini_access_token='newer'
+    client._mini_access_token_expires_at=9999999999
+    assert client._access_token(rejected_token='older')=='newer'

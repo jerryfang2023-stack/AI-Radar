@@ -1418,15 +1418,30 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
         if not masked:
             return jsonify(error={"code": "INVALID_PHONE_NUMBER", "message": "手机号格式无效"}), 400
         now = utcnow()
+        remote = app.community_client.lookup(number)
+        member = remote.get("member") if remote.get("found") else None
         try:
             with closing(db()) as conn:
+                conn.execute("BEGIN IMMEDIATE")
+                user = user_by_id(conn, g.user_id)
+                phone_owner = conn.execute("SELECT id FROM users WHERE phone_hash=? AND id<>?", (phone_digest(number), user["id"])).fetchone()
+                if phone_owner:
+                    return jsonify(error={"code": "PHONE_ALREADY_BOUND", "message": "该手机号已绑定其他账号"}), 409
+                if member:
+                    owner = conn.execute("SELECT id FROM users WHERE community_member_id=? AND id<>? AND merged_into_user_id IS NULL", (member["id"], user["id"])).fetchone()
+                    if owner or (user["community_member_id"] and user["community_member_id"] != member["id"]):
+                        return jsonify(error={"code": "COMMUNITY_IDENTITY_CONFLICT", "message": "社群身份存在关联冲突，请联系管理员核对"}), 409
                 conn.execute(
                     "UPDATE users SET phone_hash=?, phone_masked=?, phone_bound_at=?, updated_at=? WHERE id=?",
-                    (phone_digest(number), masked, iso(now), iso(now), g.user_id),
+                    (phone_digest(number), masked, iso(now), iso(now), user["id"]),
                 )
+                if member:
+                    conn.execute("UPDATE users SET community_member_id=?, community_name=?, community_status=? WHERE id=?", (member["id"], member.get("name") or "", remote_community_status(member), user["id"]))
+                    user = grant_community_access(conn, user_by_id(conn, user["id"]), member)
+                    import_community_points(conn, user, member)
                 conn.commit()
                 user = user_by_id(conn, g.user_id)
-                return jsonify(profile=public_profile(user))
+                return jsonify(profile=public_profile(user), community=community_snapshot(user), membership=membership(user), wallet=wallet(user))
         except sqlite3.IntegrityError:
             return jsonify(error={"code": "PHONE_ALREADY_BOUND", "message": "该手机号已绑定其他账号"}), 409
 
