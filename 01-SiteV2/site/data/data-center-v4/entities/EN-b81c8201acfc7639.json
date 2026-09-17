@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-16T04:41:27.652Z",
-    "latestDataDate": "2026-09-16",
-    "currentDate": "2026-09-16",
-    "eventCount": 3315,
-    "quarantinedEventCount": 35,
+    "generatedAt": "2026-09-17T00:30:10.714Z",
+    "latestDataDate": "2026-09-17",
+    "currentDate": "2026-09-17",
+    "eventCount": 3335,
+    "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
@@ -28,6 +28,7 @@
       "EV-ca0c54e3f9776fa5",
       "EV-e78ef81d4971565e",
       "EV-31abbd556dd87fc9",
+      "EV-cab18aa68c8ae551",
       "EV-88a9fd0b8f602e16",
       "EV-844b61a6f671856b",
       "EV-90a174964b9d1daf",
@@ -63,6 +64,7 @@
     "eventIds": [
       "EV-ea95ea9406e76f62",
       "EV-43c9b851bd2a46c7",
+      "EV-b9ef27cd1fd9b9a9",
       "EV-87432dbb99cd6033",
       "EV-b94a1c3e90455175",
       "EV-3a591b0f027f66cf",
@@ -99,6 +101,7 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [
+      "TX-product_form-ai_device",
       "TX-industry-healthcare_life_sciences",
       "TX-technology-agentic_execution",
       "TX-product_form-chip_accelerator",
@@ -106,7 +109,6 @@
       "TX-use_case-software_development",
       "TX-technology-code_generation",
       "TX-technology-multimodal",
-      "TX-product_form-ai_device",
       "TX-technology-video_generation"
     ],
     "relatedEntityIds": [
@@ -115,7 +117,7 @@
       "EN-24381ecb01753c1b"
     ],
     "firstSeen": "2026-01-13",
-    "lastSeen": "2026-09-12",
+    "lastSeen": "2026-09-17",
     "relationIds": [
       "REL2-1c93528fe8275df1",
       "REL2-f54ed840f69a1dcb",
@@ -123,6 +125,7 @@
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-b9ef27cd1fd9b9a9",
         "EV-ea95ea9406e76f62",
         "EV-43c9b851bd2a46c7",
         "EV-b94a1c3e90455175",
@@ -170,6 +173,108 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-b9ef27cd1fd9b9a9",
+        "dataDate": "2026-09-17",
+        "date": "2026-07-24",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "华为22年老兵从AI终局倒推LPU，元川微完成新一轮数亿元融资_科技头条_资讯_财经中国",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-3b6f88f87a32567e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-3270b1e8cf292e50",
+            "fundingInsightId": "FI-3246e463f2087afc"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "hardware_computing",
+            "name": "硬件与算力",
+            "entityIds": [
+              "EN-3b6f88f87a32567e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-ea74e516d08f3d17",
+            "fundingInsightId": "FI-3246e463f2087afc"
+          },
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "chips",
+            "name": "芯片",
+            "entityIds": [
+              "EN-3b6f88f87a32567e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-5eb3515f3103ed0e",
+            "fundingInsightId": "FI-3246e463f2087afc"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-3b6f88f87a32567e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-aacd7a0627c58b1f",
+            "fundingInsightId": "FI-3246e463f2087afc"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-3b6f88f87a32567e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-64270114cd9fae7e",
+            "fundingInsightId": "FI-3246e463f2087afc"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-3b6f88f87a32567e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-c79abece1be2d557",
+            "fundingInsightId": "FI-3246e463f2087afc"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-3b6f88f87a32567e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4da187ba4c5bf480",
+            "fundingInsightId": "FI-3246e463f2087afc"
+          }
+        ],
+        "entityIds": [
+          "EN-3b6f88f87a32567e",
+          "EN-b81c8201acfc7639",
+          "EN-2bd809528eb2f6c1"
+        ]
+      },
       {
         "id": "EV-ea95ea9406e76f62",
         "dataDate": "2026-09-12",
@@ -1544,6 +1649,69 @@
   ],
   "taxonomyNodes": [
     {
+      "id": "TX-product_form-ai_device",
+      "name": "AI 设备",
+      "nodeType": "product_form",
+      "typeLabel": "产品形态",
+      "valueId": "ai_device",
+      "eventIds": [
+        "EV-57da7ad44e35d987",
+        "EV-0cc745a319a25f6e",
+        "EV-29e6561ca7c005d0",
+        "EV-c6c297156ff274ac",
+        "EV-381d21544fcdd0c4",
+        "EV-a99c491c33412dc2",
+        "EV-02882e6f5e1902c6",
+        "EV-0fa96416b6df804b",
+        "EV-b5dd10300e34f2d3",
+        "EV-7d0803a8b72f84ba",
+        "EV-2f0f3200b9800877",
+        "EV-d124d9d43e994067",
+        "EV-450f624a6a6446ce",
+        "EV-cba16bd541a07032",
+        "EV-a9810b47e0408a05",
+        "EV-b93102125cc062e3",
+        "EV-a6b4fa32cce7c483",
+        "EV-2ffc3377977da114",
+        "EV-cff5848b8c5453af",
+        "EV-02015794e4c719d0",
+        "EV-4e8f6e91e4451ba1",
+        "EV-82e68f59d8584e4e",
+        "EV-f6ac2938949f74ec",
+        "EV-7256017056b81bbe",
+        "EV-9e35de25113a9269"
+      ],
+      "entityIds": [
+        "EN-4c317005cf0d0ed9",
+        "EN-ecf226574e481ea7",
+        "EN-11f245a21211face",
+        "EN-1913c6ab46df3a68",
+        "EN-fac803bdedac7e4e",
+        "EN-2a920347dfcf07a7",
+        "EN-68999f0318390d59",
+        "EN-e22521e7de65d819",
+        "EN-d028026b61987e09",
+        "EN-aa949c066d46acbf",
+        "EN-2d7f06eea6faf716",
+        "EN-245f1e177c5169cb",
+        "EN-fcfad5f0679009d4",
+        "EN-193d220b421d776e",
+        "EN-b81c8201acfc7639",
+        "EN-88e2cce43eeadb36",
+        "EN-478676438ee161a3",
+        "EN-5fdd673ed1fcff1d",
+        "EN-ae0facccf0a3723a",
+        "EN-047364b9be67f665",
+        "EN-a7baed72c308ce88"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [
+        "HW-073f0034b9be13b2"
+      ],
+      "firstSeen": "2026-03-16",
+      "lastSeen": "2026-09-17"
+    },
+    {
       "id": "TX-industry-healthcare_life_sciences",
       "name": "医疗与生命科学",
       "nodeType": "industry",
@@ -1741,7 +1909,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-01-20",
-      "lastSeen": "2026-09-16"
+      "lastSeen": "2026-09-17"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -1973,6 +2141,7 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-de1d0f5b1dbb0cd5",
         "EV-5e20c319d2ad9a67",
         "EV-ec55003461ff34b0",
         "EV-fa05797bb54f4bbe",
@@ -2290,6 +2459,7 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-6d282114be5eef4f",
         "EV-b1b321fda18cc329",
         "EV-e272541b76d00306",
         "EV-84bd528b36f55b00",
@@ -2754,6 +2924,7 @@
         "EV-4d2852e1694b2818",
         "EV-7a44a47bf36780d2",
         "EV-da1655ecfaf35feb",
+        "EV-b9ef27cd1fd9b9a9",
         "EV-b2d94511e4b4dfc8",
         "EV-800384d4fd2434a5",
         "EV-415b083fdaa8077f",
@@ -2874,6 +3045,7 @@
         "EN-a7e079ed603b3436",
         "EN-cc2ab268105df889",
         "EN-721eb3fd31f8e1f6",
+        "EN-3b6f88f87a32567e",
         "EN-cf9488537f777c1a",
         "EN-4c3788aad4bebf2f",
         "EN-7f505bc9744206fd",
@@ -2990,7 +3162,7 @@
         "HW-4c176e4c40871adc"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-16"
+      "lastSeen": "2026-09-17"
     },
     {
       "id": "TX-product_form-model",
@@ -3111,6 +3283,7 @@
         "EV-bee8896bf7efa594",
         "EV-11e2a4e252d48f94",
         "EV-8077605769c4d4eb",
+        "EV-d1438a40de56f3ac",
         "EV-81318fb4bcdb926a",
         "EV-fec0251eafea1a20",
         "EV-8ea4e403a1024ad2",
@@ -3145,6 +3318,7 @@
         "EV-2ffc3377977da114",
         "EV-2fd730d0ad452334",
         "EV-fd21441fb6e143c3",
+        "EV-77d477ee3768ac18",
         "EV-1c44b030ec78ace8",
         "EV-3634cdde2f0152ec",
         "EV-4e95de1c574a3553",
@@ -3437,6 +3611,7 @@
         "EN-f0d59425e4c32abb",
         "EN-b5d7671990b8d4a8",
         "EN-f2b9106253663314",
+        "EN-9a677023cc72cdd0",
         "EN-b81c8201acfc7639",
         "EN-25465dbbb180e21b",
         "EN-047364b9be67f665",
@@ -3453,6 +3628,7 @@
         "EN-88e2cce43eeadb36",
         "EN-c890cfa67d1da908",
         "EN-7df09a7717ef2feb",
+        "EN-b5b986f0b7bdcf4b",
         "EN-69337578b2468a88",
         "EN-3a7bd3e2360a3d29",
         "EN-f01c4f48151c3468",
@@ -3578,7 +3754,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-16"
+      "lastSeen": "2026-09-17"
     },
     {
       "id": "TX-use_case-software_development",
@@ -4125,67 +4301,6 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-01-01",
-      "lastSeen": "2026-09-12"
-    },
-    {
-      "id": "TX-product_form-ai_device",
-      "name": "AI 设备",
-      "nodeType": "product_form",
-      "typeLabel": "产品形态",
-      "valueId": "ai_device",
-      "eventIds": [
-        "EV-0cc745a319a25f6e",
-        "EV-29e6561ca7c005d0",
-        "EV-c6c297156ff274ac",
-        "EV-381d21544fcdd0c4",
-        "EV-a99c491c33412dc2",
-        "EV-02882e6f5e1902c6",
-        "EV-0fa96416b6df804b",
-        "EV-b5dd10300e34f2d3",
-        "EV-7d0803a8b72f84ba",
-        "EV-2f0f3200b9800877",
-        "EV-d124d9d43e994067",
-        "EV-450f624a6a6446ce",
-        "EV-cba16bd541a07032",
-        "EV-a9810b47e0408a05",
-        "EV-b93102125cc062e3",
-        "EV-a6b4fa32cce7c483",
-        "EV-2ffc3377977da114",
-        "EV-cff5848b8c5453af",
-        "EV-02015794e4c719d0",
-        "EV-4e8f6e91e4451ba1",
-        "EV-82e68f59d8584e4e",
-        "EV-f6ac2938949f74ec",
-        "EV-7256017056b81bbe",
-        "EV-9e35de25113a9269"
-      ],
-      "entityIds": [
-        "EN-ecf226574e481ea7",
-        "EN-11f245a21211face",
-        "EN-1913c6ab46df3a68",
-        "EN-fac803bdedac7e4e",
-        "EN-2a920347dfcf07a7",
-        "EN-68999f0318390d59",
-        "EN-e22521e7de65d819",
-        "EN-d028026b61987e09",
-        "EN-aa949c066d46acbf",
-        "EN-2d7f06eea6faf716",
-        "EN-245f1e177c5169cb",
-        "EN-fcfad5f0679009d4",
-        "EN-193d220b421d776e",
-        "EN-b81c8201acfc7639",
-        "EN-88e2cce43eeadb36",
-        "EN-478676438ee161a3",
-        "EN-5fdd673ed1fcff1d",
-        "EN-ae0facccf0a3723a",
-        "EN-047364b9be67f665",
-        "EN-a7baed72c308ce88"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [
-        "HW-073f0034b9be13b2"
-      ],
-      "firstSeen": "2026-03-16",
       "lastSeen": "2026-09-12"
     },
     {

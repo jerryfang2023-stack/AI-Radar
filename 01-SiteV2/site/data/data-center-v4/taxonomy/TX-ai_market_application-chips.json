@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-16T04:41:27.652Z",
-    "latestDataDate": "2026-09-16",
-    "currentDate": "2026-09-16",
-    "eventCount": 3315,
-    "quarantinedEventCount": 35,
+    "generatedAt": "2026-09-17T00:30:10.714Z",
+    "latestDataDate": "2026-09-17",
+    "currentDate": "2026-09-17",
+    "eventCount": 3335,
+    "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
@@ -28,6 +28,7 @@
       "EV-ca0c54e3f9776fa5",
       "EV-e78ef81d4971565e",
       "EV-31abbd556dd87fc9",
+      "EV-cab18aa68c8ae551",
       "EV-88a9fd0b8f602e16",
       "EV-844b61a6f671856b",
       "EV-90a174964b9d1daf",
@@ -65,6 +66,7 @@
       "EV-4d2852e1694b2818",
       "EV-7a44a47bf36780d2",
       "EV-da1655ecfaf35feb",
+      "EV-b9ef27cd1fd9b9a9",
       "EV-b2d94511e4b4dfc8",
       "EV-800384d4fd2434a5",
       "EV-415b083fdaa8077f",
@@ -94,6 +96,7 @@
       "EN-cc2ab268105df889",
       "EN-721eb3fd31f8e1f6",
       "EN-9cb45a27a2808c01",
+      "EN-3b6f88f87a32567e",
       "EN-cf9488537f777c1a",
       "EN-7f505bc9744206fd",
       "EN-d3d151f3f8e7f9ed",
@@ -114,7 +117,7 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-04-13",
-    "lastSeen": "2026-09-14"
+    "lastSeen": "2026-09-17"
   },
   "events": [
     {
@@ -3672,6 +3675,328 @@
       "products": [],
       "sourceUrl": "https://business-news-today.com/etched-raises-300m-as-10-3bn-valuation-tests-ai-inference-chip-economics",
       "publisher": "business-news-today.com"
+    },
+    {
+      "id": "EV-b9ef27cd1fd9b9a9",
+      "dataDate": "2026-09-17",
+      "date": "2026-07-24",
+      "updatedDate": "2026-09-17",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "华为22年老兵从AI终局倒推LPU，元川微完成新一轮数亿元融资_科技头条_资讯_财经中国",
+      "originalTitle": "",
+      "subject": "华为22年老兵从AI终局倒推LPU，元川微",
+      "action": "完成新一轮数亿元融资",
+      "object": "_科技头条_资讯_财经中国",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-44a9d512888b5771",
+          "CL-379fe56545350029",
+          "CL-9c6abca180398b2c"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-3b6f88f87a32567e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-3270b1e8cf292e50",
+            "fundingInsightId": "FI-3246e463f2087afc"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "hardware_computing",
+            "name": "硬件与算力",
+            "entityIds": [
+              "EN-3b6f88f87a32567e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-ea74e516d08f3d17",
+            "fundingInsightId": "FI-3246e463f2087afc"
+          }
+        ],
+        "ai_market_application": [
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "chips",
+            "name": "芯片",
+            "entityIds": [
+              "EN-3b6f88f87a32567e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-5eb3515f3103ed0e",
+            "fundingInsightId": "FI-3246e463f2087afc"
+          }
+        ],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-3b6f88f87a32567e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-aacd7a0627c58b1f",
+            "fundingInsightId": "FI-3246e463f2087afc"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-3b6f88f87a32567e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-64270114cd9fae7e",
+            "fundingInsightId": "FI-3246e463f2087afc"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-3b6f88f87a32567e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-c79abece1be2d557",
+            "fundingInsightId": "FI-3246e463f2087afc"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-3b6f88f87a32567e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4da187ba4c5bf480",
+            "fundingInsightId": "FI-3246e463f2087afc"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "chips",
+          "name": "芯片",
+          "entityIds": [
+            "EN-3b6f88f87a32567e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-5eb3515f3103ed0e",
+          "fundingInsightId": "FI-3246e463f2087afc"
+        },
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-3b6f88f87a32567e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-3270b1e8cf292e50",
+          "fundingInsightId": "FI-3246e463f2087afc"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "hardware_computing",
+          "name": "硬件与算力",
+          "entityIds": [
+            "EN-3b6f88f87a32567e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-ea74e516d08f3d17",
+          "fundingInsightId": "FI-3246e463f2087afc"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-3b6f88f87a32567e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-c79abece1be2d557",
+          "fundingInsightId": "FI-3246e463f2087afc"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-3b6f88f87a32567e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-aacd7a0627c58b1f",
+          "fundingInsightId": "FI-3246e463f2087afc"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-3b6f88f87a32567e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4da187ba4c5bf480",
+          "fundingInsightId": "FI-3246e463f2087afc"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-3b6f88f87a32567e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-64270114cd9fae7e",
+          "fundingInsightId": "FI-3246e463f2087afc"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-3b6f88f87a32567e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-3270b1e8cf292e50",
+          "fundingInsightId": "FI-3246e463f2087afc"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "hardware_computing",
+          "name": "硬件与算力",
+          "entityIds": [
+            "EN-3b6f88f87a32567e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-ea74e516d08f3d17",
+          "fundingInsightId": "FI-3246e463f2087afc"
+        },
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "chips",
+          "name": "芯片",
+          "entityIds": [
+            "EN-3b6f88f87a32567e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-5eb3515f3103ed0e",
+          "fundingInsightId": "FI-3246e463f2087afc"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-3b6f88f87a32567e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-aacd7a0627c58b1f",
+          "fundingInsightId": "FI-3246e463f2087afc"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-3b6f88f87a32567e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-64270114cd9fae7e",
+          "fundingInsightId": "FI-3246e463f2087afc"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-3b6f88f87a32567e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-c79abece1be2d557",
+          "fundingInsightId": "FI-3246e463f2087afc"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-3b6f88f87a32567e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4da187ba4c5bf480",
+          "fundingInsightId": "FI-3246e463f2087afc"
+        }
+      ],
+      "entityIds": [
+        "EN-3b6f88f87a32567e",
+        "EN-b81c8201acfc7639",
+        "EN-2bd809528eb2f6c1"
+      ],
+      "entityNames": [
+        "雷峰网独家",
+        "Huawei",
+        "元川微"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://cjcn.com.cn/news/show-475659.html",
+      "publisher": "cjcn.com.cn"
     },
     {
       "id": "EV-b2d94511e4b4dfc8",
@@ -10027,9 +10352,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-target_user-business_user",
         "TX-industry-automotive_transportation",
         "TX-use_case-physical_automation",
-        "TX-target_user-business_user",
         "TX-industry-logistics_supply_chain",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
@@ -10059,8 +10384,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-automotive_transportation",
         "TX-target_user-business_user",
+        "TX-industry-automotive_transportation",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
@@ -10092,9 +10417,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-target_user-business_user",
         "TX-industry-automotive_transportation",
         "TX-use_case-physical_automation",
-        "TX-target_user-business_user",
         "TX-industry-logistics_supply_chain",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
@@ -10174,9 +10499,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-target_user-business_user",
         "TX-industry-automotive_transportation",
         "TX-use_case-physical_automation",
-        "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
@@ -10281,6 +10606,33 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-07-01",
       "lastSeen": "2026-08-22"
+    },
+    {
+      "id": "EN-3b6f88f87a32567e",
+      "name": "雷峰网独家",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-b9ef27cd1fd9b9a9"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-physical_automation",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-hardware_computing",
+        "TX-target_user-developer",
+        "TX-industry-manufacturing",
+        "TX-ai_market_application-chips",
+        "TX-product_form-chip_accelerator"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-24",
+      "lastSeen": "2026-09-17"
     },
     {
       "id": "EN-cf9488537f777c1a",
@@ -10418,9 +10770,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-target_user-business_user",
         "TX-industry-automotive_transportation",
         "TX-use_case-physical_automation",
-        "TX-target_user-business_user",
         "TX-industry-logistics_supply_chain",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
@@ -10827,6 +11179,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-6d282114be5eef4f",
         "EV-46803ffdc054ae6d",
         "EV-2258d4e39a99c186",
         "EV-6a79628f726695a3",
@@ -10859,13 +11212,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-media_entertainment",
+        "TX-industry-retail_ecommerce",
+        "TX-target_user-business_user",
         "TX-industry-automotive_transportation",
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
-        "TX-industry-media_entertainment",
-        "TX-industry-retail_ecommerce",
         "TX-product_form-enterprise_software_platform",
-        "TX-target_user-business_user",
         "TX-use_case-data_analysis",
         "TX-industry-logistics_supply_chain",
         "TX-technology-embodied_ai",
@@ -10882,9 +11235,9 @@
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
         "TX-industry-financial_services",
-        "TX-industry-telecommunications",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
+        "TX-industry-telecommunications",
         "TX-technology-agentic_execution",
         "TX-ai_market_application-chips",
         "TX-product_form-chip_accelerator",
@@ -10941,7 +11294,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-16"
+      "lastSeen": "2026-09-17"
     },
     {
       "id": "EN-085578b03da7d660",
@@ -10959,9 +11312,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-automotive_transportation",
         "TX-industry-retail_ecommerce",
         "TX-target_user-business_user",
+        "TX-industry-automotive_transportation",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
@@ -11016,8 +11369,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-physical_automation",
         "TX-target_user-business_user",
+        "TX-use_case-physical_automation",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",

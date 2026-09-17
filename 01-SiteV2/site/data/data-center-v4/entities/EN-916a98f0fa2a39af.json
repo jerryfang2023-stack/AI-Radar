@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-16T04:41:27.652Z",
-    "latestDataDate": "2026-09-16",
-    "currentDate": "2026-09-16",
-    "eventCount": 3315,
-    "quarantinedEventCount": 35,
+    "generatedAt": "2026-09-17T00:30:10.714Z",
+    "latestDataDate": "2026-09-17",
+    "currentDate": "2026-09-17",
+    "eventCount": 3335,
+    "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
@@ -28,6 +28,7 @@
       "EV-ca0c54e3f9776fa5",
       "EV-e78ef81d4971565e",
       "EV-31abbd556dd87fc9",
+      "EV-cab18aa68c8ae551",
       "EV-88a9fd0b8f602e16",
       "EV-844b61a6f671856b",
       "EV-90a174964b9d1daf",
@@ -1029,6 +1030,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-5edf45d6424e2154",
         "EV-da957eedfad908b6",
         "EV-b76e38f3fd483ef1",
         "EV-358643eefe0a5df5",
@@ -1285,6 +1287,8 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-bce258f8f915ff5f",
+        "EV-fb6f71a9b5149ff1",
         "EV-46803ffdc054ae6d",
         "EV-8dfe5703fea93b67",
         "EV-e50dd2bea0180d59",
@@ -1320,7 +1324,6 @@
         "EV-8d1915e3b460afa7",
         "EV-16a0fe419e75402b",
         "EV-569e956899258a54",
-        "EV-bce258f8f915ff5f",
         "EV-93cbf506bc54b34e",
         "EV-6872f7635267e39c",
         "EV-2e5333d00710ce65",
@@ -1395,13 +1398,15 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-consumer",
         "TX-ai_market_category-enterprise_applications",
+        "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-industry-media_entertainment",
         "TX-industry-retail_ecommerce",
-        "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
+        "TX-target_user-consumer",
         "TX-use_case-content_creation",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-product_form-enterprise_software_platform",
         "TX-use_case-data_analysis",
         "TX-industry-government_public_sector",
         "TX-industry-professional_services",
@@ -1410,7 +1415,6 @@
         "TX-industry-healthcare_life_sciences",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-financial_services",
         "TX-product_form-end_user_application",
         "TX-technology-agentic_execution",
@@ -1421,7 +1425,6 @@
         "TX-use_case-software_development",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
-        "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-product_form-model_api_service",
         "TX-product_form-developer_tool",
         "TX-technology-open_weights",
@@ -1463,7 +1466,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-16"
+      "lastSeen": "2026-09-17"
     },
     {
       "id": "EN-dc6c28a2123e8efb",
@@ -1637,6 +1640,7 @@
       "typeLabel": "行业",
       "valueId": "retail_ecommerce",
       "eventIds": [
+        "EV-57da7ad44e35d987",
         "EV-05b635c3958e4591",
         "EV-3fdc9ad98818c36b",
         "EV-ef669a52c9a3f94f",
@@ -1733,6 +1737,7 @@
         "EV-81a78212d3927bc4"
       ],
       "entityIds": [
+        "EN-4c317005cf0d0ed9",
         "FICO-d750f652e8f2dd92",
         "EN-d5857f6222f45275",
         "EN-1d79127e9d90e89b",
@@ -1822,7 +1827,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-16"
+      "lastSeen": "2026-09-17"
     },
     {
       "id": "TX-product_form-enterprise_software_platform",
@@ -2171,7 +2176,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-09-16"
+      "lastSeen": "2026-09-17"
     },
     {
       "id": "TX-use_case-security_operations",
@@ -2903,6 +2908,7 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-de1d0f5b1dbb0cd5",
         "EV-5e20c319d2ad9a67",
         "EV-ec55003461ff34b0",
         "EV-fa05797bb54f4bbe",
@@ -3220,6 +3226,7 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-6d282114be5eef4f",
         "EV-b1b321fda18cc329",
         "EV-e272541b76d00306",
         "EV-84bd528b36f55b00",
@@ -3782,6 +3789,7 @@
         "EV-bee8896bf7efa594",
         "EV-11e2a4e252d48f94",
         "EV-8077605769c4d4eb",
+        "EV-d1438a40de56f3ac",
         "EV-81318fb4bcdb926a",
         "EV-fec0251eafea1a20",
         "EV-8ea4e403a1024ad2",
@@ -3816,6 +3824,7 @@
         "EV-2ffc3377977da114",
         "EV-2fd730d0ad452334",
         "EV-fd21441fb6e143c3",
+        "EV-77d477ee3768ac18",
         "EV-1c44b030ec78ace8",
         "EV-3634cdde2f0152ec",
         "EV-4e95de1c574a3553",
@@ -4108,6 +4117,7 @@
         "EN-f0d59425e4c32abb",
         "EN-b5d7671990b8d4a8",
         "EN-f2b9106253663314",
+        "EN-9a677023cc72cdd0",
         "EN-b81c8201acfc7639",
         "EN-25465dbbb180e21b",
         "EN-047364b9be67f665",
@@ -4124,6 +4134,7 @@
         "EN-88e2cce43eeadb36",
         "EN-c890cfa67d1da908",
         "EN-7df09a7717ef2feb",
+        "EN-b5b986f0b7bdcf4b",
         "EN-69337578b2468a88",
         "EN-3a7bd3e2360a3d29",
         "EN-f01c4f48151c3468",
@@ -4249,7 +4260,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-16"
+      "lastSeen": "2026-09-17"
     },
     {
       "id": "TX-use_case-software_development",

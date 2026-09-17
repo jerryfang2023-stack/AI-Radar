@@ -5,16 +5,16 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-09-16T04:40:30.103Z",
+    "generated_at": "2026-09-17T00:29:55.003Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 464,
-    "input_hash": "497ec2b526d1950c",
+    "decision_count": 466,
+    "input_hash": "f0efa3168b9e4903",
     "override_count": 18,
-    "needs_review_count": 52,
-    "low_confidence_count": 68
+    "needs_review_count": 53,
+    "low_confidence_count": 69
   },
   "decisions": [
     {
@@ -9300,6 +9300,47 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "产品为L4级Robotaxi量产车型，具备多传感器感知、计算决策并直接执行自动驾驶，属于在物理世界中感知、决策和行动的物理AI，而非仅提供基础设施或行业应用。"
+    },
+    {
+      "event_id": "EV-b9ef27cd1fd9b9a9",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "chips",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "元川微 is developing LPU+ chips for AI inference, which are hardware accelerators. The company fits infrastructure_compute > hardware_computing > chips. The chip is designed for multimodal and MoE models, targeting developers and AI infrastructure. Physical automation is not directly applicable, but the chip could be used in robotics; however, the primary use case is AI inference acceleration. Target users are developers building AI systems."
+    },
+    {
+      "event_id": "EV-57da7ad44e35d987",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "ai_device",
+      "use_case_ids": [
+        "productivity_enterprise_workflows",
+        "content_creation"
+      ],
+      "industry_ids": [
+        "retail_ecommerce",
+        "media_entertainment"
+      ],
+      "target_user_ids": [
+        "consumer",
+        "business_user"
+      ],
+      "confidence": 0.75,
+      "needs_review": true,
+      "rationale": "公司专注于AI+可穿戴设备，产品为AI拍摄眼镜和AI智能音频眼镜，属于用户操作的AI设备，因此product_form_id为ai_device。当前分类中market_category_id为enterprise_applications，但产品主要面向消费者，且未提供足够信息确定具体企业应用子类。根据允许的层级元组，选择enterprise_applications/productivity_enterprise_workflows作为最接近的匹配，但需要人工审核确认。"
     }
   ]
 }

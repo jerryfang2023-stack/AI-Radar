@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-16T04:41:27.652Z",
-    "latestDataDate": "2026-09-16",
-    "currentDate": "2026-09-16",
-    "eventCount": 3315,
-    "quarantinedEventCount": 35,
+    "generatedAt": "2026-09-17T00:30:10.714Z",
+    "latestDataDate": "2026-09-17",
+    "currentDate": "2026-09-17",
+    "eventCount": 3335,
+    "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
@@ -28,6 +28,7 @@
       "EV-ca0c54e3f9776fa5",
       "EV-e78ef81d4971565e",
       "EV-31abbd556dd87fc9",
+      "EV-cab18aa68c8ae551",
       "EV-88a9fd0b8f602e16",
       "EV-844b61a6f671856b",
       "EV-90a174964b9d1daf",
@@ -63,12 +64,12 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [
+      "TX-product_form-ai_device",
       "TX-target_user-consumer",
       "TX-use_case-physical_automation",
       "TX-ai_market_category-industry_applications",
       "TX-ai_market_subcategory-healthcare_life_sciences",
-      "TX-industry-healthcare_life_sciences",
-      "TX-product_form-ai_device"
+      "TX-industry-healthcare_life_sciences"
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-17",
@@ -181,12 +182,76 @@
   "relationships": [],
   "taxonomyNodes": [
     {
+      "id": "TX-product_form-ai_device",
+      "name": "AI 设备",
+      "nodeType": "product_form",
+      "typeLabel": "产品形态",
+      "valueId": "ai_device",
+      "eventIds": [
+        "EV-57da7ad44e35d987",
+        "EV-0cc745a319a25f6e",
+        "EV-29e6561ca7c005d0",
+        "EV-c6c297156ff274ac",
+        "EV-381d21544fcdd0c4",
+        "EV-a99c491c33412dc2",
+        "EV-02882e6f5e1902c6",
+        "EV-0fa96416b6df804b",
+        "EV-b5dd10300e34f2d3",
+        "EV-7d0803a8b72f84ba",
+        "EV-2f0f3200b9800877",
+        "EV-d124d9d43e994067",
+        "EV-450f624a6a6446ce",
+        "EV-cba16bd541a07032",
+        "EV-a9810b47e0408a05",
+        "EV-b93102125cc062e3",
+        "EV-a6b4fa32cce7c483",
+        "EV-2ffc3377977da114",
+        "EV-cff5848b8c5453af",
+        "EV-02015794e4c719d0",
+        "EV-4e8f6e91e4451ba1",
+        "EV-82e68f59d8584e4e",
+        "EV-f6ac2938949f74ec",
+        "EV-7256017056b81bbe",
+        "EV-9e35de25113a9269"
+      ],
+      "entityIds": [
+        "EN-4c317005cf0d0ed9",
+        "EN-ecf226574e481ea7",
+        "EN-11f245a21211face",
+        "EN-1913c6ab46df3a68",
+        "EN-fac803bdedac7e4e",
+        "EN-2a920347dfcf07a7",
+        "EN-68999f0318390d59",
+        "EN-e22521e7de65d819",
+        "EN-d028026b61987e09",
+        "EN-aa949c066d46acbf",
+        "EN-2d7f06eea6faf716",
+        "EN-245f1e177c5169cb",
+        "EN-fcfad5f0679009d4",
+        "EN-193d220b421d776e",
+        "EN-b81c8201acfc7639",
+        "EN-88e2cce43eeadb36",
+        "EN-478676438ee161a3",
+        "EN-5fdd673ed1fcff1d",
+        "EN-ae0facccf0a3723a",
+        "EN-047364b9be67f665",
+        "EN-a7baed72c308ce88"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [
+        "HW-073f0034b9be13b2"
+      ],
+      "firstSeen": "2026-03-16",
+      "lastSeen": "2026-09-17"
+    },
+    {
       "id": "TX-target_user-consumer",
       "name": "个人用户",
       "nodeType": "target_user",
       "typeLabel": "目标用户",
       "valueId": "consumer",
       "eventIds": [
+        "EV-57da7ad44e35d987",
         "EV-1c399d2db39c05a3",
         "EV-7eead74c2baae511",
         "EV-0cc745a319a25f6e",
@@ -240,9 +305,11 @@
         "EV-5575555340c04c5a",
         "EV-cba16bd541a07032",
         "EV-68d5a02e5213b43c",
+        "EV-2a6efefa4e5ec631",
         "EV-8ae771f26c02f7c4",
         "EV-a1aea4a04b9e51c7",
         "EV-777eb5b7783b71fb",
+        "EV-de1d0f5b1dbb0cd5",
         "EV-fa05797bb54f4bbe",
         "EV-a347b644cd5d2d31",
         "EV-8e13f1a043f7b979",
@@ -265,6 +332,7 @@
         "EV-32a5af8d5ef80073"
       ],
       "entityIds": [
+        "EN-4c317005cf0d0ed9",
         "EN-caff75902fc3743e",
         "EN-1d79127e9d90e89b",
         "EN-ecf226574e481ea7",
@@ -313,6 +381,7 @@
         "EN-3f0cfc0d9c60b562",
         "EN-9b21c9bf3305c0d6",
         "EN-fcfad5f0679009d4",
+        "EN-a8100d425f663eac",
         "EN-03ecbdd9b68f40a0",
         "EN-fb54e9062429a937",
         "EN-c70eca6b0f88f44d",
@@ -338,7 +407,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-09-16"
+      "lastSeen": "2026-09-17"
     },
     {
       "id": "TX-use_case-physical_automation",
@@ -400,6 +469,7 @@
         "EV-6c2d981c2272d2e2",
         "EV-2704d63a5fd4b357",
         "EV-eb881f5de456b59a",
+        "EV-b9ef27cd1fd9b9a9",
         "EV-c7ba7b093a1a3b94",
         "EV-fcf3c464260b6730",
         "EV-34a9773ebd5bbc97",
@@ -597,6 +667,7 @@
         "EN-f1de3226b9e510ac",
         "EN-1e370456c222cbd2",
         "EN-b4701995669a0327",
+        "EN-3b6f88f87a32567e",
         "EN-0f3360879e746531",
         "EN-7ef08ef63597d47c",
         "EN-73424822d4b99926",
@@ -720,7 +791,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-09-16"
+      "lastSeen": "2026-09-17"
     },
     {
       "id": "TX-ai_market_category-industry_applications",
@@ -883,7 +954,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2025-09-10",
-      "lastSeen": "2026-09-16"
+      "lastSeen": "2026-09-17"
     },
     {
       "id": "TX-ai_market_subcategory-healthcare_life_sciences",
@@ -930,7 +1001,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-03-23",
-      "lastSeen": "2026-09-16"
+      "lastSeen": "2026-09-17"
     },
     {
       "id": "TX-industry-healthcare_life_sciences",
@@ -1130,68 +1201,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-01-20",
-      "lastSeen": "2026-09-16"
-    },
-    {
-      "id": "TX-product_form-ai_device",
-      "name": "AI 设备",
-      "nodeType": "product_form",
-      "typeLabel": "产品形态",
-      "valueId": "ai_device",
-      "eventIds": [
-        "EV-0cc745a319a25f6e",
-        "EV-29e6561ca7c005d0",
-        "EV-c6c297156ff274ac",
-        "EV-381d21544fcdd0c4",
-        "EV-a99c491c33412dc2",
-        "EV-02882e6f5e1902c6",
-        "EV-0fa96416b6df804b",
-        "EV-b5dd10300e34f2d3",
-        "EV-7d0803a8b72f84ba",
-        "EV-2f0f3200b9800877",
-        "EV-d124d9d43e994067",
-        "EV-450f624a6a6446ce",
-        "EV-cba16bd541a07032",
-        "EV-a9810b47e0408a05",
-        "EV-b93102125cc062e3",
-        "EV-a6b4fa32cce7c483",
-        "EV-2ffc3377977da114",
-        "EV-cff5848b8c5453af",
-        "EV-02015794e4c719d0",
-        "EV-4e8f6e91e4451ba1",
-        "EV-82e68f59d8584e4e",
-        "EV-f6ac2938949f74ec",
-        "EV-7256017056b81bbe",
-        "EV-9e35de25113a9269"
-      ],
-      "entityIds": [
-        "EN-ecf226574e481ea7",
-        "EN-11f245a21211face",
-        "EN-1913c6ab46df3a68",
-        "EN-fac803bdedac7e4e",
-        "EN-2a920347dfcf07a7",
-        "EN-68999f0318390d59",
-        "EN-e22521e7de65d819",
-        "EN-d028026b61987e09",
-        "EN-aa949c066d46acbf",
-        "EN-2d7f06eea6faf716",
-        "EN-245f1e177c5169cb",
-        "EN-fcfad5f0679009d4",
-        "EN-193d220b421d776e",
-        "EN-b81c8201acfc7639",
-        "EN-88e2cce43eeadb36",
-        "EN-478676438ee161a3",
-        "EN-5fdd673ed1fcff1d",
-        "EN-ae0facccf0a3723a",
-        "EN-047364b9be67f665",
-        "EN-a7baed72c308ce88"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [
-        "HW-073f0034b9be13b2"
-      ],
-      "firstSeen": "2026-03-16",
-      "lastSeen": "2026-09-12"
+      "lastSeen": "2026-09-17"
     }
   ],
   "fde": [],

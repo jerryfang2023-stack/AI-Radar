@@ -1,0 +1,1280 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "date": "2026-09-17",
+    "generated_at": "2026-09-17T00:29:18.928Z",
+    "trigger": "verified_funding_events_with_three_month_backfill",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
+    "counts": {
+      "funding_events": 5,
+      "auto_published": 2,
+      "blocked": 0,
+      "pending": 0,
+      "deduplicated": 3
+    },
+    "taxonomy_version": "TAG-V4.1"
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-ed8e17609047a21d",
+      "triggered_by_event_id": "EV-57da7ad44e35d987",
+      "as_of_date": "2026-09-17",
+      "company": {
+        "entity_id": "EN-4c317005cf0d0ed9",
+        "name": "安徽李未可科技有限公司",
+        "full_name": "安徽李未可科技有限公司",
+        "website": "https://www.lawaken.com/",
+        "summary": "李未可科技成立于2021年，是一家围绕AI+终端打造多模态AI大模型平台的公司，旗下产品涵盖AI音频眼镜、AI拍摄眼镜和AR眼镜。",
+        "headquarters": "安徽省合肥市包河区淝河镇龙川路99号中国视界A4楼1201",
+        "founders": [
+          {
+            "name": "茹忆",
+            "role": "创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-784a1253b3c59c41",
+                "quote": "创始人茹忆为前小米电视与天猫精灵产品总经理",
+                "source_content_hash": "686ad2d99442f77e",
+                "quote_hash": "089249bad768e061bce1c248034f0caaa1d128faba16d0f529b73b5ed589aa01"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "6人 (2025年)",
+          "observed_at": "2025",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c259230928349309",
+              "quote": "员工人数：6人 (2025年)",
+              "source_content_hash": "5388c95854ea817f",
+              "quote_hash": "b408f6d01529325e9cb62180a6acf4e71a0ccfcf262bba0bff39c396f1995240"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-784a1253b3c59c41",
+            "quote": "李未可科技成立于2021年，是一家围绕AI+终端打造多模态AI大模型平台的公司",
+            "source_content_hash": "686ad2d99442f77e",
+            "quote_hash": "99ad8a96619b33668bbe79306b05850d1392ffd024f7f1f1016c9e6f47094a4e"
+          },
+          {
+            "source_id": "FISRC-c259230928349309",
+            "quote": "地址： 安徽省合肥市包河区淝河镇龙川路99号中国视界A4楼1201",
+            "source_content_hash": "5388c95854ea817f",
+            "quote_hash": "04b31ea27101d49394b8f86254513e1f5c4b9f41a619cc9be747c3786910c03d"
+          }
+        ],
+        "application_entity_id": "EN-4c317005cf0d0ed9",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "战略融资",
+        "amount": "数千万",
+        "total_raised": "",
+        "announced_at": "2025-04-15",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "合肥包河创投",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-75f483ca929056ea",
+                "quote": "李未可科技获得数千万元战略融资，投资方为合肥包河创投及上市公司米奥兰特 （股票代码：300795）",
+                "source_content_hash": "cb8078b0a24c0bf5",
+                "quote_hash": "1ad883baf2980ff4d516ed8c9bd629e399a3fee118980dfd9ff77ee7c81f4418"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "米奥兰特",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-75f483ca929056ea",
+                "quote": "李未可科技获得数千万元战略融资，投资方为合肥包河创投及上市公司米奥兰特 （股票代码：300795）",
+                "source_content_hash": "cb8078b0a24c0bf5",
+                "quote_hash": "1ad883baf2980ff4d516ed8c9bd629e399a3fee118980dfd9ff77ee7c81f4418"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "字节跳动战略投资部",
+            "role": "历史轮次投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-784a1253b3c59c41",
+                "quote": "李未可科技也已完成多轮融资，投资方包括字节跳动战略投资部、新干世业投资、国中资本、包河创投以及上市公司米奥会展等",
+                "source_content_hash": "686ad2d99442f77e",
+                "quote_hash": "338a9cfa124102c773a6a5ca50b56c4c0b28790afe54ace30de3eaa0e57bd1de"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "新干世业投资",
+            "role": "历史轮次投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-784a1253b3c59c41",
+                "quote": "李未可科技也已完成多轮融资，投资方包括字节跳动战略投资部、新干世业投资、国中资本、包河创投以及上市公司米奥会展等",
+                "source_content_hash": "686ad2d99442f77e",
+                "quote_hash": "338a9cfa124102c773a6a5ca50b56c4c0b28790afe54ace30de3eaa0e57bd1de"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "国中资本",
+            "role": "历史轮次投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-784a1253b3c59c41",
+                "quote": "李未可科技也已完成多轮融资，投资方包括字节跳动战略投资部、新干世业投资、国中资本、包河创投以及上市公司米奥会展等",
+                "source_content_hash": "686ad2d99442f77e",
+                "quote_hash": "338a9cfa124102c773a6a5ca50b56c4c0b28790afe54ace30de3eaa0e57bd1de"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-75f483ca929056ea",
+            "quote": "李未可科技完成数千万战略融资，与中国移动合作推出AI智能音频眼镜",
+            "source_content_hash": "cb8078b0a24c0bf5",
+            "quote_hash": "7d2bb5b06dde68a4475f3c6a21757656fa24958fe2aafef67dc88f785691421b"
+          },
+          {
+            "source_id": "FISRC-75f483ca929056ea",
+            "quote": "4月15日消息，李未可科技获得数千万元战略融资，投资方为合肥包河创投及上市公司米奥兰特 （股票代码：300795）",
+            "source_content_hash": "cb8078b0a24c0bf5",
+            "quote_hash": "7a3cde534bc0d1afd8a5787c8ea6e931c10d7fa1d169348e13663c60e3f9b595"
+          }
+        ],
+        "round_code": "strategic",
+        "round_original": "战略融资",
+        "amount_original": "数千万",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-57da7ad44e35d987",
+            "round_original": "战略融资",
+            "amount": "数千万",
+            "announced_at": "2025-04-15",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-75f483ca929056ea",
+                "quote": "李未可科技完成数千万战略融资，与中国移动合作推出AI智能音频眼镜",
+                "source_content_hash": "cb8078b0a24c0bf5",
+                "quote_hash": "7d2bb5b06dde68a4475f3c6a21757656fa24958fe2aafef67dc88f785691421b"
+              },
+              {
+                "source_id": "FISRC-75f483ca929056ea",
+                "quote": "4月15日消息，李未可科技获得数千万元战略融资，投资方为合肥包河创投及上市公司米奥兰特 （股票代码：300795）",
+                "source_content_hash": "cb8078b0a24c0bf5",
+                "quote_hash": "7a3cde534bc0d1afd8a5787c8ea6e931c10d7fa1d169348e13663c60e3f9b595"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "李未可 View AI 拍摄眼镜",
+          "description": "第一人称视角拍摄，搭载Sony Imx681传感器，1200万像素高清摄像头，4K高清画质，EIS防抖；同样具备AI全景翻译和AI记录功能。",
+          "target_customers": "需要第一人称拍摄和AI辅助的用户",
+          "features": [
+            "Sony Imx681传感器",
+            "1200万像素高清摄像头",
+            "4K高清画质",
+            "EIS防抖",
+            "AI全景翻译支持128种语言实时互译"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2493a62d59ce6bf3",
+              "quote": "搭载Sony Imx681传感器，拥有1200万像素高清摄像头、小于1.5%镜头畸变和EIS防抖功能，4K高清画质呈现",
+              "source_content_hash": "5f3f292da15dd4cf",
+              "quote_hash": "2d5dcd5588bb2515b55b0a9666f9003120baa583b3ac0a6b8e0e2c489785a3f7"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "AI智能音频眼镜G1000",
+          "description": "与中国移动深度战略合作的定制化AI智能音频眼镜，搭载中国移动灵犀智能体，围绕AI随身记、AI随时译、AI随心听及AI随地游四大功能。",
+          "target_customers": "商务、旅游及日常各场景用户",
+          "features": [
+            "定制化搭载中国移动灵犀智能体",
+            "AI随时译支持超100种语言及20+口音英文翻译",
+            "AI随身记",
+            "AI随心听",
+            "AI随地游"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-75f483ca929056ea",
+              "quote": "AI智能音频眼镜G1000定制化搭载中国移动灵犀智能体，围绕AI随身记，围绕AI随时译、AI随身记、AI随心听及AI随地游四大功能",
+              "source_content_hash": "cb8078b0a24c0bf5",
+              "quote_hash": "0988060a9df5c85fad15727c8ef375b70660a06edf59eeb63ace3c4ea5eeee6b"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "AI眼镜支持语言数量",
+          "value": "超100种语言同传翻译",
+          "observed_at": "2025-04-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-75f483ca929056ea",
+              "quote": "李未可旗下AI眼镜已实现超100种语言同传翻译、AI会议纪要生成等核心功能",
+              "source_content_hash": "cb8078b0a24c0bf5",
+              "quote_hash": "9f5cbbec3fd248669df1bc55553bca8288674cef0373b10ab9001b8facc1ab20"
+            }
+          ]
+        },
+        {
+          "label": "AI随时译支持语言及口音",
+          "value": "超100种语言及20+口音英文",
+          "observed_at": "2025-04-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-75f483ca929056ea",
+              "quote": "AI随时译目前已支持超100种语言及20+口音英文的翻译能力",
+              "source_content_hash": "cb8078b0a24c0bf5",
+              "quote_hash": "5807fb11483002f1348ea109ba359485851196bf6eb21a4383f246644adcafca"
+            }
+          ]
+        },
+        {
+          "label": "CityAir AI音频眼镜重量",
+          "value": "27.6克",
+          "observed_at": "2026",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2493a62d59ce6bf3",
+              "quote": "27.6克超轻机身减轻佩戴负担",
+              "source_content_hash": "5f3f292da15dd4cf",
+              "quote_hash": "9feeb88d18f3e55a164dae687090a76535d3cd21dba7494cdc39e25da690b385"
+            }
+          ]
+        },
+        {
+          "label": "CityAir AI音频眼镜续航",
+          "value": "超14小时",
+          "observed_at": "2026",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2493a62d59ce6bf3",
+              "quote": "超14小时续航保障全天侯使用",
+              "source_content_hash": "5f3f292da15dd4cf",
+              "quote_hash": "d3aa4115f99996caf5a65e0a0447f9c2b5ad65656cec0fcaf1adba8b05e5e1c6"
+            }
+          ]
+        },
+        {
+          "label": "View AI拍摄眼镜续航",
+          "value": "综合续航8小时以上",
+          "observed_at": "2026",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2493a62d59ce6bf3",
+              "quote": "综合续航达到8小时以上",
+              "source_content_hash": "5f3f292da15dd4cf",
+              "quote_hash": "10d78ac62e8a93885f6642ebd6e79e135e2854b7f9e1b0bf04a290899c5b0158"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "合肥包河创投负责人",
+          "quote": "李未可的WAKE-AI大模型平台与合肥‘AI产业集群’的规划高度契合，其技术有望在消费电子，特别是智能穿戴设备领域形成示范效应。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05ddfd513f80f94e",
+              "quote": "李未可的WAKE-AI大模型平台与合肥‘AI产业集群’的规划高度契合，其技术有望在消费电子，特别是智能穿戴设备领域形成示范效应。",
+              "source_content_hash": "179a0e9ca97f1741",
+              "quote_hash": "3b85ee84110675ccf6767a3e151bf91468c364670da8be5271e1306513b7f930"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "合肥包河创投",
+            "speaker": "合肥包河创投负责人",
+            "speaker_role": "投资方负责人",
+            "rationale": "认为李未可的WAKE-AI大模型平台与合肥AI产业集群规划高度契合，技术有望在消费电子特别是智能穿戴设备领域形成示范效应。",
+            "quote": "李未可的WAKE-AI大模型平台与合肥‘AI产业集群’的规划高度契合，其技术有望在消费电子，特别是智能穿戴设备领域形成示范效应。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-05ddfd513f80f94e",
+                "quote": "李未可的WAKE-AI大模型平台与合肥‘AI产业集群’的规划高度契合，其技术有望在消费电子，特别是智能穿戴设备领域形成示范效应。",
+                "source_content_hash": "179a0e9ca97f1741",
+                "quote_hash": "3b85ee84110675ccf6767a3e151bf91468c364670da8be5271e1306513b7f930"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是李未可自研WAKE-AI大模型在AI智能眼镜终端上的场景化落地能力，以及其与中国移动、米奥兰特等产业资源的协同效应。本轮融资所依赖的已验证信号包括：已实现超100种语言同传翻译和AI会议纪要生成等核心功能，且与中国移动达成深度战略合作推出定制化AI智能音频眼镜。证据边界在于来源仅披露了融资金额为数千万元，未提供具体估值或财务数据。",
+        "validated_signals": [
+          "已实现超100种语言同传翻译和AI会议纪要生成等核心功能",
+          "与中国移动达成深度战略合作，推出定制化AI智能音频眼镜G1000",
+          "WAKE-AI大模型完成国家深度合成服务算法备案",
+          "预计2025年5月有三款新品面世"
+        ],
+        "risks": [
+          "AI眼镜赛道竞争激烈，来源提及HTC、PICO、OPPO、亮亮视野等多家厂商均在布局AR/VR产业链，李未可需持续保持产品差异化。"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_device",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "use_case_ids": [
+          "productivity_enterprise_workflows",
+          "content_creation"
+        ],
+        "industry_ids": [
+          "retail_ecommerce",
+          "media_entertainment"
+        ],
+        "target_user_ids": [
+          "consumer",
+          "business_user"
+        ],
+        "sector": "AI+可穿戴设备",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是李未可自研WAKE-AI大模型在AI智能眼镜终端上的场景化落地能力，以及其与中国移动、米奥兰特等产业资源的协同效应。本轮融资所依赖的已验证信号包括：已实现超100种语言同传翻译和AI会议纪要生成等核心功能，且与中国移动达成深度战略合作推出定制化AI智能音频眼镜。证据边界在于来源仅披露了融资金额为数千万元，未提供具体估值或财务数据。",
+          "evidence_signals": [
+            "已实现超100种语言同传翻译和AI会议纪要生成等核心功能",
+            "与中国移动达成深度战略合作，推出定制化AI智能音频眼镜G1000",
+            "WAKE-AI大模型完成国家深度合成服务算法备案",
+            "预计2025年5月有三款新品面世"
+          ],
+          "risks": [
+            "AI眼镜赛道竞争激烈，来源提及HTC、PICO、OPPO、亮亮视野等多家厂商均在布局AR/VR产业链，李未可需持续保持产品差异化。"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "李未可 View AI 拍摄眼镜",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "AI智能音频眼镜G1000",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "茹忆",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "合肥包河创投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "米奥兰特",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "字节跳动战略投资部",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "新干世业投资",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "国中资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-57da7ad44e35d987",
+          "date": "2026-09-17",
+          "title": "李未可科技完成数千万战略融资，与中国移动合作推出AI智能音频眼镜",
+          "amount": "数千万",
+          "source_refs": [
+            "SA-826ba74357421d87"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-75f483ca929056ea",
+          "source_url": "https://www.abvr360.com/a/28840",
+          "title": "李未可科技完成数千万战略融资，与中国移动合作推出AI智能音频眼镜",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-17T00:25:45.318Z",
+          "content_hash": "cb8078b0a24c0bf5",
+          "source_artifact_id": "SA-826ba74357421d87",
+          "raw_id": "RAW-490830ff387bb54a"
+        },
+        {
+          "source_id": "FISRC-784a1253b3c59c41",
+          "source_url": "https://www.stcn.com/article/detail/4018264.html",
+          "title": "李未可科技将在WAIC 2026发布AI记忆眼镜新品 公司为米奥会展战投企业暨AI生态合作伙伴",
+          "publisher": "stcn.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-17T00:28:42.297Z",
+          "content_hash": "686ad2d99442f77e",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-05ddfd513f80f94e",
+          "source_url": "https://news.qq.com/rain/a/20250416A03E4C00",
+          "title": "智能眼镜厂商李未可科技完成数千万战略融资_腾讯新闻",
+          "publisher": "news.qq.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-17T00:28:41.924Z",
+          "content_hash": "179a0e9ca97f1741",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-c259230928349309",
+          "source_url": "https://www.tianyancha.com/company/5193509843",
+          "title": "安徽李未可科技有限公司_李未可-企业工商信息-官方资质认证-天眼查",
+          "publisher": "tianyancha.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-09-17T00:28:42.517Z",
+          "content_hash": "5388c95854ea817f",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-2493a62d59ce6bf3",
+          "source_url": "https://vrarexpo.cn/zhanshangmingdan/3069.html",
+          "title": "安徽李未可科技有限公司",
+          "publisher": "vrarexpo.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-17T00:28:44.981Z",
+          "content_hash": "5f3f292da15dd4cf",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 2,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-17T00:29:18.843Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-57da7ad44e35d987",
+          "confidence": 0.75,
+          "needs_review": true
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-17T00:29:18.843Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "AI智能音频眼镜G1000",
+            "李未可 View AI 拍摄眼镜"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "茹忆"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-57da7ad44e35d987"
+      ],
+      "aggregation": {
+        "key": "EN-4c317005cf0d0ed9|strategic",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-3246e463f2087afc",
+      "triggered_by_event_id": "EV-b9ef27cd1fd9b9a9",
+      "as_of_date": "2026-09-17",
+      "company": {
+        "entity_id": "EN-3b6f88f87a32567e",
+        "name": "元川微",
+        "full_name": "元川微",
+        "website": "",
+        "summary": "元川微是一家LPU创业公司，成立于2025年9月，由华为22年老兵杨滨创立，专注于面向Agentic AI实时推理时代的原生LPU芯片研发。公司从AI终局倒推确定LPU技术路线，只做推理且只做最快的推理，其LPU+架构从设计之初便支持多模态模型，并针对MoE模型的动态调度特征进行优化。",
+        "headquarters": "",
+        "founders": [
+          {
+            "name": "杨滨",
+            "role": "创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ee42dc11e9aa441b",
+                "quote": "元川微创始人兼CEO杨滨就已经开始了对推理芯片的构想",
+                "source_content_hash": "ffeb7006ce0ad831",
+                "quote_hash": "5d1744fb2a73616a2561a835b60e162f1d1123d7c8ce8d1e41b9143b76d295c1"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ee42dc11e9aa441b",
+            "quote": "公开资料显示，元川微成立于2025年9月",
+            "source_content_hash": "ffeb7006ce0ad831",
+            "quote_hash": "c55f3194284c26dbfe69d84f1376a6ac80dc6896cf59281c82be04275a625fb7"
+          },
+          {
+            "source_id": "FISRC-b4a3e7ce6033edf1",
+            "quote": "LPU创业公司元川微已完成Pre-A轮数亿元融资",
+            "source_content_hash": "9246a61c91a15f77",
+            "quote_hash": "b15a9f1ddf46a2f6bbc40c80566532979c10d3ccc7b41a478bdc9b13638fa7df"
+          }
+        ],
+        "application_entity_id": "EN-3b6f88f87a32567e",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "Pre-A轮",
+        "amount": "数亿元",
+        "total_raised": "",
+        "announced_at": "2026-07-24",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "IDG资本",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ee42dc11e9aa441b",
+                "quote": "本轮融资由IDG资本领投，孚腾资本、九坤创投、尚颀资本、顺禧基金、徐汇科创投联合投资",
+                "source_content_hash": "ffeb7006ce0ad831",
+                "quote_hash": "4fc479d899c2302755938d07a87f5969b837f37def30907e2dc06841881dd454"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "孚腾资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ee42dc11e9aa441b",
+                "quote": "本轮融资由IDG资本领投，孚腾资本、九坤创投、尚颀资本、顺禧基金、徐汇科创投联合投资",
+                "source_content_hash": "ffeb7006ce0ad831",
+                "quote_hash": "4fc479d899c2302755938d07a87f5969b837f37def30907e2dc06841881dd454"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "九坤创投",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ee42dc11e9aa441b",
+                "quote": "本轮融资由IDG资本领投，孚腾资本、九坤创投、尚颀资本、顺禧基金、徐汇科创投联合投资",
+                "source_content_hash": "ffeb7006ce0ad831",
+                "quote_hash": "4fc479d899c2302755938d07a87f5969b837f37def30907e2dc06841881dd454"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "尚颀资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ee42dc11e9aa441b",
+                "quote": "本轮融资由IDG资本领投，孚腾资本、九坤创投、尚颀资本、顺禧基金、徐汇科创投联合投资",
+                "source_content_hash": "ffeb7006ce0ad831",
+                "quote_hash": "4fc479d899c2302755938d07a87f5969b837f37def30907e2dc06841881dd454"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "顺禧基金",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ee42dc11e9aa441b",
+                "quote": "本轮融资由IDG资本领投，孚腾资本、九坤创投、尚颀资本、顺禧基金、徐汇科创投联合投资",
+                "source_content_hash": "ffeb7006ce0ad831",
+                "quote_hash": "4fc479d899c2302755938d07a87f5969b837f37def30907e2dc06841881dd454"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "徐汇科创投",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ee42dc11e9aa441b",
+                "quote": "本轮融资由IDG资本领投，孚腾资本、九坤创投、尚颀资本、顺禧基金、徐汇科创投联合投资",
+                "source_content_hash": "ffeb7006ce0ad831",
+                "quote_hash": "4fc479d899c2302755938d07a87f5969b837f37def30907e2dc06841881dd454"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "头部VC、政府基金及产业链",
+            "role": "天使轮系列融资投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ee42dc11e9aa441b",
+                "quote": "今年4月完成的数亿元天使轮系列融资，就已获得头部VC、政府基金及产业链的联合支持",
+                "source_content_hash": "ffeb7006ce0ad831",
+                "quote_hash": "d0f6cb3fed0bbf3f00709fcc70d87fb6ee027e81bafe9f3c99317ffd35be5bd6"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ee42dc11e9aa441b",
+            "quote": "雷峰网独家获悉，LPU创业公司元川微已完成Pre-A轮数亿元融资。",
+            "source_content_hash": "ffeb7006ce0ad831",
+            "quote_hash": "b288da156115e0c2ee50bb6308e4622df4fb6495ff149cf4a3c8da9d0c3e7149"
+          },
+          {
+            "source_id": "FISRC-ee42dc11e9aa441b",
+            "quote": "雷峰网独家获悉，LPU创业公司元川微已完成Pre-A轮数亿元融资。本轮融资由IDG资本领投，孚腾资本、九坤创投、尚颀资本、顺禧基金、徐汇科创投联合投资。",
+            "source_content_hash": "ffeb7006ce0ad831",
+            "quote_hash": "4191ace93ec73ad67794391463be93a22e7529dbbb9c788b51c00cc518b4f8d2"
+          },
+          {
+            "source_id": "FISRC-b4a3e7ce6033edf1",
+            "quote": "雷峰网独家获悉，LPU创业公司元川微已完成Pre-A轮数亿元融资。本轮融资由IDG资本领投，孚腾资本、九坤创投、尚颀资本、顺禧基金、徐汇科创投联合投资。",
+            "source_content_hash": "9246a61c91a15f77",
+            "quote_hash": "4191ace93ec73ad67794391463be93a22e7529dbbb9c788b51c00cc518b4f8d2"
+          }
+        ],
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-b9ef27cd1fd9b9a9",
+            "round_original": "Pre-A轮",
+            "amount": "数亿元",
+            "announced_at": "2026-07-24",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ee42dc11e9aa441b",
+                "quote": "雷峰网独家获悉，LPU创业公司元川微已完成Pre-A轮数亿元融资。",
+                "source_content_hash": "ffeb7006ce0ad831",
+                "quote_hash": "b288da156115e0c2ee50bb6308e4622df4fb6495ff149cf4a3c8da9d0c3e7149"
+              },
+              {
+                "source_id": "FISRC-ee42dc11e9aa441b",
+                "quote": "雷峰网独家获悉，LPU创业公司元川微已完成Pre-A轮数亿元融资。本轮融资由IDG资本领投，孚腾资本、九坤创投、尚颀资本、顺禧基金、徐汇科创投联合投资。",
+                "source_content_hash": "ffeb7006ce0ad831",
+                "quote_hash": "4191ace93ec73ad67794391463be93a22e7529dbbb9c788b51c00cc518b4f8d2"
+              },
+              {
+                "source_id": "FISRC-b4a3e7ce6033edf1",
+                "quote": "雷峰网独家获悉，LPU创业公司元川微已完成Pre-A轮数亿元融资。本轮融资由IDG资本领投，孚腾资本、九坤创投、尚颀资本、顺禧基金、徐汇科创投联合投资。",
+                "source_content_hash": "9246a61c91a15f77",
+                "quote_hash": "4191ace93ec73ad67794391463be93a22e7529dbbb9c788b51c00cc518b4f8d2"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "LPU+芯片",
+          "description": "元川微推出的面向Agentic AI实时推理时代的原生LPU架构，从设计之初便支持多模态模型，并针对MoE模型的动态调度特征进行优化。基于硬流水架构，无需针对不同算力等级重新设计芯片，可根据云边端不同场景灵活扩展算力规模。",
+          "target_customers": "产业客户及云厂商",
+          "features": [
+            "时空编译器",
+            "硬流水架构",
+            "大带宽存储",
+            "支持多模态模型",
+            "针对MoE模型动态调度优化"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ee42dc11e9aa441b",
+              "quote": "同样采用这一命名的元川微，将其架构命名为LPU+，从设计之初便支持多模态模型。此外，作为Transformer时代的原生架构，LPU+还针对MoE（Mixture of Experts，混合专家）模型的动态调度特征进行优化。",
+              "source_content_hash": "ffeb7006ce0ad831",
+              "quote_hash": "edc4819c7be629a883726e0c444d45cee3c4d5eede9731d1beceff6884d13313"
+            },
+            {
+              "source_id": "FISRC-b4a3e7ce6033edf1",
+              "quote": "杨滨强调LPU的时空编译器、硬流水架构、大带宽存储这三大核心很难区分谁的优先级更高",
+              "source_content_hash": "9246a61c91a15f77",
+              "quote_hash": "785c317dac6f59c78a4ba28bb4cb96dfe89432abd3cb998e788bf49978775c77"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "Groq",
+          "product": "Groq LPU",
+          "scenario": "低延迟、可预测的推理芯片",
+          "target_customer": "",
+          "funding_summary": "",
+          "core_difference": "Groq LPU诞生于CNN时代，当时面临的模型架构和应用需求与今天不同；元川微的LPU+是Transformer时代的原生架构，从设计之初便支持多模态模型，并针对MoE模型的动态调度特征进行优化。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ee42dc11e9aa441b",
+              "quote": "他直言两家公司虽然都关注低延迟、可预测的推理，但诞生于CNN时代的Groq LPU当时面临的模型架构和应用需求都与今天并不相同。",
+              "source_content_hash": "ffeb7006ce0ad831",
+              "quote_hash": "f05e95f742d9612893a98f6ee7a845ee9c6c24ae404a3520960ec6d14a27482e"
+            },
+            {
+              "source_id": "FISRC-b4a3e7ce6033edf1",
+              "quote": "同样采用这一命名的元川微，将其架构命名为LPU+，从设计之初便支持多模态模型。此外，作为Transformer时代的原生架构，LPU+还针对MoE（Mixture of Experts，混合专家）模型的动态调度特征进行优化。",
+              "source_content_hash": "9246a61c91a15f77",
+              "quote_hash": "edc4819c7be629a883726e0c444d45cee3c4d5eede9731d1beceff6884d13313"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "2026年以来完成融资轮数",
+          "value": "4轮",
+          "observed_at": "2026-07-24",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ee42dc11e9aa441b",
+              "quote": "这也是元川微2026年以来完成的第四轮融资",
+              "source_content_hash": "ffeb7006ce0ad831",
+              "quote_hash": "ec089b1a32082ac659d058b32f22d6e36a9ee8d9a5de01d28ed1da8f59f863bc"
+            }
+          ]
+        },
+        {
+          "label": "公司成立时间",
+          "value": "2025年9月",
+          "observed_at": "2026-07-24",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ee42dc11e9aa441b",
+              "quote": "公开资料显示，元川微成立于2025年9月",
+              "source_content_hash": "ffeb7006ce0ad831",
+              "quote_hash": "c55f3194284c26dbfe69d84f1376a6ac80dc6896cf59281c82be04275a625fb7"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "杨滨",
+          "quote": "如果我们的目标只是模仿LPU，那么能拓展的空间实际上并不多。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ee42dc11e9aa441b",
+              "quote": "如果我们的目标只是模仿LPU，那么能拓展的空间实际上并不多。",
+              "source_content_hash": "ffeb7006ce0ad831",
+              "quote_hash": "cf19287aba4a956c52332b706b3e66dcea1dee658f67a53d9d27f3f90271141f"
+            }
+          ]
+        },
+        {
+          "speaker": "杨滨",
+          "quote": "创业其实是你过去积累的所有资源的兑现。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ee42dc11e9aa441b",
+              "quote": "创业其实是你过去积累的所有资源的兑现。",
+              "source_content_hash": "ffeb7006ce0ad831",
+              "quote_hash": "948fecb638d12c557da97946df11017c6d373629f0f0ee66ea90e0259b9f77a5"
+            }
+          ]
+        },
+        {
+          "speaker": "杨滨",
+          "quote": "只做推理且只做最快的推理",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ee42dc11e9aa441b",
+              "quote": "只做推理且只做最快的推理",
+              "source_content_hash": "ffeb7006ce0ad831",
+              "quote_hash": "4fc4d4553ae8a11c7a14ca23749352c98f1d1ed0342f243bec784b5495745847"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是推理专用架构在Agentic AI时代对GPU的替代空间。元川微以LPU+架构切入，强调低时延、高稳定性和可预测推理，针对Agent任务链中延迟累积的痛点进行架构级优化。本轮融资由IDG资本领投，多家产业及国资背景机构联合投资，且为2026年以来第四轮融资，显示资本对其技术路线和团队背景的持续认可。但来源未披露具体估值、客户验证结果或性能基准数据，资本判断的证据边界仅限于融资节奏、团队履历和技术路线描述，尚未有独立的商业化或性能验证信号。",
+        "validated_signals": [
+          "2026年以来完成第四轮融资，资本持续加码",
+          "创始人杨滨拥有华为22年处理器与芯片相关经验",
+          "核心团队包括超过30年高性能计算架构经验的CTO和20多年编译器经验的软件负责人",
+          "正与多家产业客户及云厂商开展产品验证与合作"
+        ],
+        "risks": [
+          "来源未披露任何客户名称、订单金额或性能基准数据，产品仍处于验证阶段，商业化落地存在不确定性",
+          "LPU路线面临GPU生态的强锁定效应，软件生态建设需要大量投入且尚未验证"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "hardware_computing",
+        "market_application_id": "chips",
+        "use_case_ids": [
+          "physical_automation"
+        ],
+        "industry_ids": [
+          "manufacturing"
+        ],
+        "target_user_ids": [
+          "developer"
+        ],
+        "sector": "AI推理芯片",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是推理专用架构在Agentic AI时代对GPU的替代空间。元川微以LPU+架构切入，强调低时延、高稳定性和可预测推理，针对Agent任务链中延迟累积的痛点进行架构级优化。本轮融资由IDG资本领投，多家产业及国资背景机构联合投资，且为2026年以来第四轮融资，显示资本对其技术路线和团队背景的持续认可。但来源未披露具体估值、客户验证结果或性能基准数据，资本判断的证据边界仅限于融资节奏、团队履历和技术路线描述，尚未有独立的商业化或性能验证信号。",
+          "evidence_signals": [
+            "2026年以来完成第四轮融资，资本持续加码",
+            "创始人杨滨拥有华为22年处理器与芯片相关经验",
+            "核心团队包括超过30年高性能计算架构经验的CTO和20多年编译器经验的软件负责人",
+            "正与多家产业客户及云厂商开展产品验证与合作"
+          ],
+          "risks": [
+            "来源未披露任何客户名称、订单金额或性能基准数据，产品仍处于验证阶段，商业化落地存在不确定性",
+            "LPU路线面临GPU生态的强锁定效应，软件生态建设需要大量投入且尚未验证"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "LPU+芯片",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "杨滨",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "IDG资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "孚腾资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "九坤创投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "尚颀资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "顺禧基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "徐汇科创投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "头部VC、政府基金及产业链",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Groq",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [],
+      "research_sources": [
+        {
+          "source_id": "FISRC-ee42dc11e9aa441b",
+          "source_url": "https://www.cjcn.com.cn/news/show-475659.html",
+          "title": "华为22年老兵从AI终局倒推LPU，元川微完成新一轮数亿元融资_科技头条_资讯_财经中国",
+          "publisher": "keyword search / Exa",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-17T00:25:36.330Z",
+          "content_hash": "ffeb7006ce0ad831",
+          "source_artifact_id": "SA-9ddf8b217dfb7c96",
+          "raw_id": "RAW-274c0299829b323a"
+        },
+        {
+          "source_id": "FISRC-b4a3e7ce6033edf1",
+          "source_url": "https://www.aitntnews.com/newDetail.html?newId=27540",
+          "title": "独家丨华为22年老兵从AI终局倒推LPU，元川微完成新一轮数亿元融资",
+          "publisher": "aitntnews.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-17T00:28:41.910Z",
+          "content_hash": "9246a61c91a15f77",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-17T00:29:00.439Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-b9ef27cd1fd9b9a9",
+          "confidence": 0.85,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-17T00:29:00.439Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "LPU+芯片"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "杨滨"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-b9ef27cd1fd9b9a9"
+      ],
+      "aggregation": {
+        "key": "EN-3b6f88f87a32567e|pre_series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-81bbaaec2965864a",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-17T00:29:18.928Z"
+    },
+    {
+      "event_id": "EV-a52dd9e9cac23694",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-17T00:29:18.928Z"
+    },
+    {
+      "event_id": "EV-b9ef27cd1fd9b9a9",
+      "company_name": "雷峰网独家",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"雷峰网独家\" 2026 融资 轮次 金额 投资方",
+        "\"雷峰网独家\" \"数亿元\" 本轮融资 领投 跟投",
+        "\"雷峰网独家\" 产品 服务 创始人 总部",
+        "\"雷峰网独家\" 投资机构 投资原因 融资用途"
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"雷峰网独家\" 2026 融资 轮次 金额 投资方",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"雷峰网独家\" 2026 融资 轮次 金额 投资方",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"雷峰网独家\" \"数亿元\" 本轮融资 领投 跟投",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"雷峰网独家\" \"数亿元\" 本轮融资 领投 跟投",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"雷峰网独家\" 产品 服务 创始人 总部",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"雷峰网独家\" 产品 服务 创始人 总部",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"雷峰网独家\" 投资机构 投资原因 融资用途",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"雷峰网独家\" 投资机构 投资原因 融资用途",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-09-17T00:29:18.928Z"
+    },
+    {
+      "event_id": "EV-57da7ad44e35d987",
+      "company_name": "李未可科技",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"李未可科技\" 2026 融资 轮次 金额 投资方",
+        "\"李未可科技\" \"数千万\" 本轮融资 领投 跟投",
+        "\"李未可科技\" 产品 服务 创始人 总部",
+        "\"李未可科技\" 投资机构 投资原因 融资用途"
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"李未可科技\" 2026 融资 轮次 金额 投资方",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"李未可科技\" 2026 融资 轮次 金额 投资方",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"李未可科技\" \"数千万\" 本轮融资 领投 跟投",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"李未可科技\" \"数千万\" 本轮融资 领投 跟投",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"李未可科技\" 产品 服务 创始人 总部",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"李未可科技\" 产品 服务 创始人 总部",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"李未可科技\" 投资机构 投资原因 融资用途",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"李未可科技\" 投资机构 投资原因 融资用途",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-09-17T00:29:18.928Z"
+    },
+    {
+      "event_id": "EV-47f16317cc2d62e2",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-17T00:29:18.928Z"
+    }
+  ]
+}

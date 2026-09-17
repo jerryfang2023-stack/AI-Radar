@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-16T04:41:27.652Z",
-    "latestDataDate": "2026-09-16",
-    "currentDate": "2026-09-16",
-    "eventCount": 3315,
-    "quarantinedEventCount": 35,
+    "generatedAt": "2026-09-17T00:30:10.714Z",
+    "latestDataDate": "2026-09-17",
+    "currentDate": "2026-09-17",
+    "eventCount": 3335,
+    "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
@@ -28,6 +28,7 @@
       "EV-ca0c54e3f9776fa5",
       "EV-e78ef81d4971565e",
       "EV-31abbd556dd87fc9",
+      "EV-cab18aa68c8ae551",
       "EV-88a9fd0b8f602e16",
       "EV-844b61a6f671856b",
       "EV-90a174964b9d1daf",
@@ -3506,6 +3507,73 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-d80d5a31d6c531d0",
+      "snapshotKey": "d80d5a31d6c531d0",
+      "snapshotId": "HWS-d595ad1c2a26e2d1",
+      "eventId": "EV-77d477ee3768ac18",
+      "eventIds": [
+        "EV-77d477ee3768ac18"
+      ],
+      "dataDate": "2026-09-17",
+      "date": "2026-09-17",
+      "title": "LimiX-2",
+      "subject": "清华稳准智能联合",
+      "productNames": [
+        "LimiX-2"
+      ],
+      "hardwareType": "ai_device",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-43ba5348a91591f4"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-17",
+          "hardware_fact_id": "HWF-43ba5348a91591f4",
+          "fact_type": "product",
+          "observed_at": "2026-09-16T06:32:31.000Z",
+          "subject_entity_id": "EN-b5b986f0b7bdcf4b",
+          "subject_name": "清华稳准智能联合",
+          "product_entity_ids": [
+            "EN-2a6e56cccd66ffe2"
+          ],
+          "product_names": [
+            "LimiX-2"
+          ],
+          "component_type": "ai_device",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "9月16日，稳准智能联合清华大学计算机系崔鹏教授，发布新一代数据大模型 LimiX-2，模型参数规模提升至400M。",
+          "event_refs": [
+            "EV-77d477ee3768ac18"
+          ],
+          "claim_ref": "CL-048ae326179ac997",
+          "source_refs": [
+            "SA-a9eeb2579dd9ed94"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-17/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://qbitai.com/2026/09/490400.html",
+      "entityIds": [
+        "EN-b5b986f0b7bdcf4b",
+        "EN-2a6e56cccd66ffe2"
+      ]
+    },
     {
       "id": "HWC-ec83310e0bcadc0c",
       "snapshotKey": "ec83310e0bcadc0c",
@@ -17405,38 +17473,36 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-09-16",
-      "funnel_id": "LF-7321638daebc50a2",
+      "data_date": "2026-09-17",
+      "funnel_id": "LF-5bce65361833faca",
       "lens": "hardware",
-      "date": "2026-09-16",
+      "date": "2026-09-17",
       "monitoring_paths": [
         "hardware_capacity_fab",
-        "hardware_oem_odm",
         "hardware_product_specs",
         "hardware_shipment_deployment",
         "hardware_supply_agreement"
       ],
-      "raw_documents": 35,
-      "original_sources": 32,
-      "valid_claims": 27,
-      "observations": 11,
-      "canonical_events": 12,
+      "raw_documents": 24,
+      "original_sources": 18,
+      "valid_claims": 17,
+      "observations": 1,
+      "canonical_events": 5,
       "blocker_counts": {
-        "source_outside_daily_window": 5,
+        "event_not_ai_relevant": 2,
+        "non_event_or_index_title": 4,
+        "source_outside_daily_window": 3,
         "no_source_bounded_claim": 1,
-        "event_not_ai_relevant": 8,
-        "source_outside_funding_backfill_window": 1,
-        "no_source_bounded_event": 2,
-        "raw_source_quality_block": 5,
-        "domestic_publication_date_unverified": 1
+        "rumor_requires_primary_confirmation": 1,
+        "raw_source_quality_block": 6
       },
       "rates": {
-        "original_source_rate": 0.9142857142857143,
-        "valid_claim_rate": 0.7714285714285715,
-        "observation_rate": 0.4074074074074074,
-        "event_conversion_rate": 0.4444444444444444
+        "original_source_rate": 0.75,
+        "valid_claim_rate": 0.7083333333333334,
+        "observation_rate": 0.058823529411764705,
+        "event_conversion_rate": 0.29411764705882354
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-16/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-17/monitoring-funnel.json"
     }
   ]
 }
