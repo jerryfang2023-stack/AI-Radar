@@ -1197,3 +1197,16 @@ def test_content_denial_distinguishes_registered_expiry_from_visitor(client):
     assert registered.status_code == 403
     assert registered.json["error"]["accessState"] == "expired"
     assert "注册" not in registered.json["error"]["message"]
+
+def test_profile_phone_binding_syncs_community_and_grants_once(client):
+    token=login(client, 'profile-binding')
+    headers=auth(token)
+    response=client.post('/api/v1/member/phone',json={'code':'phone-code'},headers=headers)
+    assert response.status_code==200
+    data=response.get_json()
+    assert data['community']['status']=='joined'
+    assert data['community']['memberId']==42
+    assert data['membership']['remainingDays']==90
+    assert data['wallet']['balance']==860
+    again=client.post('/api/v1/member/phone',json={'code':'phone-code'},headers=headers)
+    assert again.get_json()==data

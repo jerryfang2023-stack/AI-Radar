@@ -305,13 +305,13 @@ async function recordMemberBehavior(type, subjectId, behaviorDate) {
   }));
 }
 
-async function bindPhoneNumber(code) {
+async function bindPhoneNumber(code, profile = {}) {
   if (!code) throw new Error("未获得手机号授权");
   // The phone code is single-use and is also sufficient to complete a first
   // Mini Program login. Do not discard it by starting an implicit login without
   // phoneCode: the server would correctly answer REGISTRATION_REQUIRED even
   // though the user just authorized their number.
-  if (!hasAuthToken()) return login({ phoneCode: code });
+  if (!hasAuthToken()) return login({ phoneCode: code, nickname: profile.nickname, avatarSelected: profile.avatarSelected });
   return withExistingToken((token) => apiRequest("/member/phone", { method: "POST", token, data: { code } }));
 }
 

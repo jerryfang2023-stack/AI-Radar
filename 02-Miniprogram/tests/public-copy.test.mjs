@@ -153,7 +153,7 @@ test("lets verified community members sync without repeating profile registratio
   assert.match(registrationLogic, /syncCommunity\(result\.community\)/u);
   assert.match(registrationLogic, /syncWallet\(result\.wallet\)/u);
   assert.match(registrationLogic, /未匹配到社群成员，请完成资料注册/u);
-  assert.match(registrationLogic, /result\.community\?\.status !== "joined"/u);
+  assert.match(registrationLogic, /linkedCommunity: result\.community\?\.status === "joined"/u);
 });
 
 test("exposes the confirmed membership plans and point exchange entry", () => {
@@ -195,7 +195,7 @@ test("binds phone numbers through the account service without internal-facing pr
   assert.match(profileEditSource, /资料设置/u);
   assert.match(profileEditSource, /手机号/u);
   assert.match(profileEditSource, /点击头像更换/u);
-  assert.match(profileEditLogic, /bindPhoneNumber\(code\)/u);
+  assert.match(profileEditLogic, /bindPhoneNumber\(code,/u);
   assert.match(profileEditLogic, /手机号绑定成功/u);
   for (const removedCopy of ["微信号", "不可读取", "隐私说明", "等待服务端完成绑定", "当前预览版", "授权凭证已取得", "生产"] ) {
     assert.doesNotMatch(profileEditContract, new RegExp(removedCopy, "u"));
