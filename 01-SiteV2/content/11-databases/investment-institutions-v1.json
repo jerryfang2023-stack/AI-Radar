@@ -1,11 +1,11 @@
 {
   "meta": {
     "schema_version": "INVESTMENT-INSTITUTION-V1.0",
-    "generated_at": "2026-09-17T02:20:04.774Z",
+    "generated_at": "2026-09-17T02:29:59.457Z",
     "source_contract": "FUNDING-INSIGHT-V1.3",
-    "institution_count": 1890,
-    "evidence_backed_count": 1890,
-    "current_round_activity_count": 2204,
+    "institution_count": 1889,
+    "evidence_backed_count": 1889,
+    "current_round_activity_count": 2201,
     "individual_investor_count": 184,
     "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
   },
@@ -72407,284 +72407,6 @@
       ]
     },
     {
-      "id": "INV-7d2f2aa869b2f2",
-      "name": "华勤技术",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "unverified_investor",
-      "investor_kind_label": "投资方（类型待核验）",
-      "classification_confidence": "unverified",
-      "collection_status": "evidence_backed",
-      "current_round_count": 2,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 2,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 2,
-      "china_market_company_count": 2,
-      "first_disclosed_at": "2026-01-26",
-      "latest_disclosed_at": "2026-06-23",
-      "role_counts": {
-        "participant": 2
-      },
-      "round_codes": [
-        "angel",
-        "series_b_plus"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-246e062cb6c20ad7",
-          "canonical_entity_id": "EN-246e062cb6c20ad7",
-          "name": "正行创新"
-        },
-        {
-          "entity_id": "EN-2c348893efb2316e",
-          "canonical_entity_id": "EN-2c348893efb2316e",
-          "name": "StepFun"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-54fb4bdbd00390d7",
-          "funding_insight_id": "FI-e01c1a6b5ba6c003",
-          "event_ids": [
-            "EV-bc5bf99bcf3a4484"
-          ],
-          "company_entity_id": "EN-246e062cb6c20ad7",
-          "company_canonical_entity_id": "EN-246e062cb6c20ad7",
-          "company_name": "正行创新",
-          "round": "天使轮",
-          "round_code": "angel",
-          "round_original": "天使轮",
-          "amount_original": "近亿",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 100000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "approximate",
-            "display_zh": "约 1 亿元"
-          },
-          "announced_at": "2026-06-23",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-7896c13384a2de29",
-              "source_url": "https://news.pedaily.cn/202606/565442.shtml",
-              "source_title": "致力于探索物理智能的技术边界，「正行创新」完成近亿美元天使轮融资",
-              "source_content_hash": "9d83916bd8fd460c",
-              "quote": "投资方包括 正大集团、华勤技术、九安医疗等多家上市企业，多位国内外知名企业家，以及多家一线投资机构",
-              "quote_hash": "9f481bbb69e5109c065fb5beccc9aa9b8e1256d4692f7ee95310151a70cb6e64"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-00146377aceb0112",
-          "funding_insight_id": "FI-74076c9ab29354a8",
-          "event_ids": [
-            "EV-df37e9341b5c7f04",
-            "EV-794f0a86004da0c9"
-          ],
-          "company_entity_id": "EN-2c348893efb2316e",
-          "company_canonical_entity_id": "EN-2c348893efb2316e",
-          "company_name": "StepFun",
-          "round": "B+轮",
-          "round_code": "series_b_plus",
-          "round_original": "B+轮",
-          "amount_original": "50 亿人民币",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 5000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "50 亿元"
-          },
-          "announced_at": "2026-01-26",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-de3bb93d57d25bdf",
-              "source_url": "https://www.cyzone.cn/article/822685.html",
-              "source_title": "刷新记录！上海基模独角兽阶跃星辰完成超 50 亿人民币 B+轮融资 - 创业邦",
-              "source_content_hash": "3cd27a7369aa4df5",
-              "quote": "参与机构包括上国投先导基金、国寿股权、浦东创投、徐汇资本、无锡梁溪基金、厦门国贸、华勤技术等产业投资人，腾讯、启明、五源等老股东进一步跟投。",
-              "quote_hash": "f7ef53522aea45928eba53deb0ba7cdf5dcbe8cc3badeae684c82ba9683bc546"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-7896c13384a2de29",
-          "source_url": "https://news.pedaily.cn/202606/565442.shtml",
-          "source_title": "致力于探索物理智能的技术边界，「正行创新」完成近亿美元天使轮融资",
-          "source_content_hash": "9d83916bd8fd460c",
-          "quote": "投资方包括 正大集团、华勤技术、九安医疗等多家上市企业，多位国内外知名企业家，以及多家一线投资机构",
-          "quote_hash": "9f481bbb69e5109c065fb5beccc9aa9b8e1256d4692f7ee95310151a70cb6e64"
-        },
-        {
-          "source_id": "FISRC-de3bb93d57d25bdf",
-          "source_url": "https://www.cyzone.cn/article/822685.html",
-          "source_title": "刷新记录！上海基模独角兽阶跃星辰完成超 50 亿人民币 B+轮融资 - 创业邦",
-          "source_content_hash": "3cd27a7369aa4df5",
-          "quote": "参与机构包括上国投先导基金、国寿股权、浦东创投、徐汇资本、无锡梁溪基金、厦门国贸、华勤技术等产业投资人，腾讯、启明、五源等老股东进一步跟投。",
-          "quote_hash": "f7ef53522aea45928eba53deb0ba7cdf5dcbe8cc3badeae684c82ba9683bc546"
-        }
-      ]
-    },
-    {
-      "id": "INV-80920437b40f0a",
-      "name": "正大集团",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "corporate_investor",
-      "investor_kind_label": "企业投资方",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 2,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 2,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 2,
-      "china_market_company_count": 2,
-      "first_disclosed_at": "2026-04-28",
-      "latest_disclosed_at": "2026-06-23",
-      "role_counts": {
-        "participant": 2
-      },
-      "round_codes": [
-        "angel"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-8936494cd8a7fddb",
-          "canonical_entity_id": "EN-8936494cd8a7fddb",
-          "name": "星迹互动"
-        },
-        {
-          "entity_id": "EN-246e062cb6c20ad7",
-          "canonical_entity_id": "EN-246e062cb6c20ad7",
-          "name": "正行创新"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-280eaa5e3986101d",
-          "funding_insight_id": "FI-e01c1a6b5ba6c003",
-          "event_ids": [
-            "EV-bc5bf99bcf3a4484"
-          ],
-          "company_entity_id": "EN-246e062cb6c20ad7",
-          "company_canonical_entity_id": "EN-246e062cb6c20ad7",
-          "company_name": "正行创新",
-          "round": "天使轮",
-          "round_code": "angel",
-          "round_original": "天使轮",
-          "amount_original": "近亿",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 100000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "approximate",
-            "display_zh": "约 1 亿元"
-          },
-          "announced_at": "2026-06-23",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-7896c13384a2de29",
-              "source_url": "https://news.pedaily.cn/202606/565442.shtml",
-              "source_title": "致力于探索物理智能的技术边界，「正行创新」完成近亿美元天使轮融资",
-              "source_content_hash": "9d83916bd8fd460c",
-              "quote": "投资方包括 正大集团、华勤技术、九安医疗等多家上市企业，多位国内外知名企业家，以及多家一线投资机构",
-              "quote_hash": "9f481bbb69e5109c065fb5beccc9aa9b8e1256d4692f7ee95310151a70cb6e64"
-            }
-          ]
-        },
-        {
-          "activity_id": "IA-e5c02e5816dd0369",
-          "funding_insight_id": "FI-8ac3872d3c8453a1",
-          "event_ids": [
-            "EV-3ccc38328e395afa"
-          ],
-          "company_entity_id": "EN-8936494cd8a7fddb",
-          "company_canonical_entity_id": "EN-8936494cd8a7fddb",
-          "company_name": "星迹互动",
-          "round": "天使轮",
-          "round_code": "angel",
-          "round_original": "天使轮",
-          "amount_original": "数千万元",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": null,
-            "min_value": 20000000,
-            "max_value": 90000000,
-            "unit": "base",
-            "status": "range",
-            "display_zh": "2000 万元–9000 万元"
-          },
-          "announced_at": "2026-04-28",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-467859f48eda89e6",
-              "source_url": "https://news.pedaily.cn/202604/563258.shtml",
-              "source_title": "专注AI漫剧赛道，星迹互动完成数千万元天使轮融资",
-              "source_content_hash": "c167e175fb9c1a9a",
-              "quote": "本轮投资方包括 正大集团、北京大融文化传媒、禹牧智能以及麦迈科技 等。",
-              "quote_hash": "f5f75acc9db6018c561f87d3759c600a8bdab0a4837462a909c8733219323ad3"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-7896c13384a2de29",
-          "source_url": "https://news.pedaily.cn/202606/565442.shtml",
-          "source_title": "致力于探索物理智能的技术边界，「正行创新」完成近亿美元天使轮融资",
-          "source_content_hash": "9d83916bd8fd460c",
-          "quote": "投资方包括 正大集团、华勤技术、九安医疗等多家上市企业，多位国内外知名企业家，以及多家一线投资机构",
-          "quote_hash": "9f481bbb69e5109c065fb5beccc9aa9b8e1256d4692f7ee95310151a70cb6e64"
-        },
-        {
-          "source_id": "FISRC-467859f48eda89e6",
-          "source_url": "https://news.pedaily.cn/202604/563258.shtml",
-          "source_title": "专注AI漫剧赛道，星迹互动完成数千万元天使轮融资",
-          "source_content_hash": "c167e175fb9c1a9a",
-          "quote": "本轮投资方包括 正大集团、北京大融文化传媒、禹牧智能以及麦迈科技 等。",
-          "quote_hash": "f5f75acc9db6018c561f87d3759c600a8bdab0a4837462a909c8733219323ad3"
-        }
-      ]
-    },
-    {
       "id": "INV-f870c666bf84bd",
       "name": "Maverick Silicon",
       "aliases": [],
@@ -83505,8 +83227,8 @@
       ],
       "activities": [
         {
-          "activity_id": "IA-b3e8f36f1c0feb81",
-          "funding_insight_id": "FI-a42d03336e33dd03",
+          "activity_id": "IA-459123f62a110f09",
+          "funding_insight_id": "FI-2afefdedd2834f49",
           "event_ids": [
             "EV-77887cf446f03ba4"
           ],
@@ -83516,15 +83238,15 @@
           "round": "A+轮",
           "round_code": "series_a_plus",
           "round_original": "A+轮",
-          "amount_original": "超千万",
+          "amount_original": "超千万美元",
           "amount_normalized": {
-            "currency": "CNY",
+            "currency": "USD",
             "value": 10000000,
             "min_value": 10000000,
             "max_value": null,
             "unit": "base",
             "status": "lower_bound",
-            "display_zh": "超过 1000 万元"
+            "display_zh": "超过 1000 万美元"
           },
           "announced_at": "2026-09-15",
           "market_region": "CN",
@@ -84295,8 +84017,8 @@
       ],
       "activities": [
         {
-          "activity_id": "IA-eed9d9ec842fed68",
-          "funding_insight_id": "FI-a42d03336e33dd03",
+          "activity_id": "IA-4b75634e3ca1944c",
+          "funding_insight_id": "FI-2afefdedd2834f49",
           "event_ids": [
             "EV-77887cf446f03ba4"
           ],
@@ -84306,15 +84028,15 @@
           "round": "A+轮",
           "round_code": "series_a_plus",
           "round_original": "A+轮",
-          "amount_original": "超千万",
+          "amount_original": "超千万美元",
           "amount_normalized": {
-            "currency": "CNY",
+            "currency": "USD",
             "value": 10000000,
             "min_value": 10000000,
             "max_value": null,
             "unit": "base",
             "status": "lower_bound",
-            "display_zh": "超过 1000 万元"
+            "display_zh": "超过 1000 万美元"
           },
           "announced_at": "2026-09-15",
           "market_region": "CN",
@@ -138289,91 +138011,6 @@
       ]
     },
     {
-      "id": "INV-d201b8a6bea842",
-      "name": "九安医疗",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "unverified_investor",
-      "investor_kind_label": "投资方（类型待核验）",
-      "classification_confidence": "unverified",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 1,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 1,
-      "china_market_company_count": 1,
-      "first_disclosed_at": "2026-06-23",
-      "latest_disclosed_at": "2026-06-23",
-      "role_counts": {
-        "participant": 1
-      },
-      "round_codes": [
-        "angel"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-246e062cb6c20ad7",
-          "canonical_entity_id": "EN-246e062cb6c20ad7",
-          "name": "正行创新"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-5fd4183fb7c2582d",
-          "funding_insight_id": "FI-e01c1a6b5ba6c003",
-          "event_ids": [
-            "EV-bc5bf99bcf3a4484"
-          ],
-          "company_entity_id": "EN-246e062cb6c20ad7",
-          "company_canonical_entity_id": "EN-246e062cb6c20ad7",
-          "company_name": "正行创新",
-          "round": "天使轮",
-          "round_code": "angel",
-          "round_original": "天使轮",
-          "amount_original": "近亿",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 100000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "approximate",
-            "display_zh": "约 1 亿元"
-          },
-          "announced_at": "2026-06-23",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-7896c13384a2de29",
-              "source_url": "https://news.pedaily.cn/202606/565442.shtml",
-              "source_title": "致力于探索物理智能的技术边界，「正行创新」完成近亿美元天使轮融资",
-              "source_content_hash": "9d83916bd8fd460c",
-              "quote": "投资方包括 正大集团、华勤技术、九安医疗等多家上市企业，多位国内外知名企业家，以及多家一线投资机构",
-              "quote_hash": "9f481bbb69e5109c065fb5beccc9aa9b8e1256d4692f7ee95310151a70cb6e64"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-7896c13384a2de29",
-          "source_url": "https://news.pedaily.cn/202606/565442.shtml",
-          "source_title": "致力于探索物理智能的技术边界，「正行创新」完成近亿美元天使轮融资",
-          "source_content_hash": "9d83916bd8fd460c",
-          "quote": "投资方包括 正大集团、华勤技术、九安医疗等多家上市企业，多位国内外知名企业家，以及多家一线投资机构",
-          "quote_hash": "9f481bbb69e5109c065fb5beccc9aa9b8e1256d4692f7ee95310151a70cb6e64"
-        }
-      ]
-    },
-    {
       "id": "INV-1e457ea318f89e",
       "name": "首程资本",
       "aliases": [],
@@ -163220,6 +162857,91 @@
       ]
     },
     {
+      "id": "INV-80920437b40f0a",
+      "name": "正大集团",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "corporate_investor",
+      "investor_kind_label": "企业投资方",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 1,
+      "china_market_company_count": 1,
+      "first_disclosed_at": "2026-04-28",
+      "latest_disclosed_at": "2026-04-28",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "angel"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-8936494cd8a7fddb",
+          "canonical_entity_id": "EN-8936494cd8a7fddb",
+          "name": "星迹互动"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-e5c02e5816dd0369",
+          "funding_insight_id": "FI-8ac3872d3c8453a1",
+          "event_ids": [
+            "EV-3ccc38328e395afa"
+          ],
+          "company_entity_id": "EN-8936494cd8a7fddb",
+          "company_canonical_entity_id": "EN-8936494cd8a7fddb",
+          "company_name": "星迹互动",
+          "round": "天使轮",
+          "round_code": "angel",
+          "round_original": "天使轮",
+          "amount_original": "数千万元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": null,
+            "min_value": 20000000,
+            "max_value": 90000000,
+            "unit": "base",
+            "status": "range",
+            "display_zh": "2000 万元–9000 万元"
+          },
+          "announced_at": "2026-04-28",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-467859f48eda89e6",
+              "source_url": "https://news.pedaily.cn/202604/563258.shtml",
+              "source_title": "专注AI漫剧赛道，星迹互动完成数千万元天使轮融资",
+              "source_content_hash": "c167e175fb9c1a9a",
+              "quote": "本轮投资方包括 正大集团、北京大融文化传媒、禹牧智能以及麦迈科技 等。",
+              "quote_hash": "f5f75acc9db6018c561f87d3759c600a8bdab0a4837462a909c8733219323ad3"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-467859f48eda89e6",
+          "source_url": "https://news.pedaily.cn/202604/563258.shtml",
+          "source_title": "专注AI漫剧赛道，星迹互动完成数千万元天使轮融资",
+          "source_content_hash": "c167e175fb9c1a9a",
+          "quote": "本轮投资方包括 正大集团、北京大融文化传媒、禹牧智能以及麦迈科技 等。",
+          "quote_hash": "f5f75acc9db6018c561f87d3759c600a8bdab0a4837462a909c8733219323ad3"
+        }
+      ]
+    },
+    {
       "id": "INV-cf28dd74a00d81",
       "name": "Capital 49",
       "aliases": [],
@@ -182506,6 +182228,92 @@
       "activities": [
         {
           "activity_id": "IA-899fa7be34a44aeb",
+          "funding_insight_id": "FI-74076c9ab29354a8",
+          "event_ids": [
+            "EV-df37e9341b5c7f04",
+            "EV-794f0a86004da0c9"
+          ],
+          "company_entity_id": "EN-2c348893efb2316e",
+          "company_canonical_entity_id": "EN-2c348893efb2316e",
+          "company_name": "StepFun",
+          "round": "B+轮",
+          "round_code": "series_b_plus",
+          "round_original": "B+轮",
+          "amount_original": "50 亿人民币",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 5000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "50 亿元"
+          },
+          "announced_at": "2026-01-26",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-de3bb93d57d25bdf",
+              "source_url": "https://www.cyzone.cn/article/822685.html",
+              "source_title": "刷新记录！上海基模独角兽阶跃星辰完成超 50 亿人民币 B+轮融资 - 创业邦",
+              "source_content_hash": "3cd27a7369aa4df5",
+              "quote": "参与机构包括上国投先导基金、国寿股权、浦东创投、徐汇资本、无锡梁溪基金、厦门国贸、华勤技术等产业投资人，腾讯、启明、五源等老股东进一步跟投。",
+              "quote_hash": "f7ef53522aea45928eba53deb0ba7cdf5dcbe8cc3badeae684c82ba9683bc546"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-de3bb93d57d25bdf",
+          "source_url": "https://www.cyzone.cn/article/822685.html",
+          "source_title": "刷新记录！上海基模独角兽阶跃星辰完成超 50 亿人民币 B+轮融资 - 创业邦",
+          "source_content_hash": "3cd27a7369aa4df5",
+          "quote": "参与机构包括上国投先导基金、国寿股权、浦东创投、徐汇资本、无锡梁溪基金、厦门国贸、华勤技术等产业投资人，腾讯、启明、五源等老股东进一步跟投。",
+          "quote_hash": "f7ef53522aea45928eba53deb0ba7cdf5dcbe8cc3badeae684c82ba9683bc546"
+        }
+      ]
+    },
+    {
+      "id": "INV-7d2f2aa869b2f2",
+      "name": "华勤技术",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 1,
+      "china_market_company_count": 1,
+      "first_disclosed_at": "2026-01-26",
+      "latest_disclosed_at": "2026-01-26",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "series_b_plus"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-2c348893efb2316e",
+          "canonical_entity_id": "EN-2c348893efb2316e",
+          "name": "StepFun"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-00146377aceb0112",
           "funding_insight_id": "FI-74076c9ab29354a8",
           "event_ids": [
             "EV-df37e9341b5c7f04",

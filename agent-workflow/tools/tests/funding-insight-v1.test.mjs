@@ -34,6 +34,25 @@ import {
 } from "../funding-insight-v1-utils.mjs";
 import { canonicalSources, fundingHistory, recoveryCardsFromGit, fundingResearchNameMatches } from "../generate-funding-insights-deepseek.mjs";
 
+test("local sync refreshes funding card IDs before projecting classification references", () => {
+  const command = JSON.parse(fs.readFileSync(path.join(process.cwd(), "package.json"), "utf8")).scripts["sync:data-center"];
+  assert.ok(command.indexOf("build:funding-insights-site") >= 0);
+  assert.ok(command.indexOf("build:funding-insights-site") < command.indexOf("project:funding-taxonomy-events"));
+});
+
+test("qualified foreign Chinese amounts retain currency instead of a truncated CNY metric", () => {
+  const event = { event_id: "EV-USD", event_type: "funding", metrics: ["超千万"], claim_refs: ["CL-USD"] };
+  const claims = [{ claim_id: "CL-USD", claim_type: "funding", verification_status: "accepted", source_quote: "星路科技宣布，已于今年早些时候完成超千万美元A+轮战略融资，获汇丰参与。" }];
+  assert.equal(canonicalFundingEventAmount(event, claims), "超千万美元");
+  const amount = normalizeFundingAmount(canonicalFundingEventAmount(event, claims));
+  assert.equal(amount.currency, "USD");
+  assert.equal(amount.min_value, 10000000);
+  assert.equal(amount.status, "lower_bound");
+  assert.equal(normalizeFundingAmount("近亿美元").currency, "USD");
+  assert.equal(normalizeFundingAmount("近亿美元").status, "approximate");
+  assert.equal(normalizeFundingAmount("超千万元").currency, "CNY");
+});
+
 test("research discovery accepts source-bound bilingual Chinese short names without inventing identities", () => {
   const company = "深度内核（DeepKernel）";
   assert.equal(fundingResearchNameMatches("深度内核完成数千万元种子轮融资", company), true);
