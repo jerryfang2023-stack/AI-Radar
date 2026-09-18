@@ -51,6 +51,55 @@
   },
   "relationships": [
     {
+      "relationship_id": "REL2-30051dc5d7668662",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-e78bdebae031095b",
+      "subject_type": "entity",
+      "predicate": "acquires",
+      "object_ref": "EN-6fcba5d96a4fadfd",
+      "object_type": "entity",
+      "event_id": "EV-792e2a2b3e98399f",
+      "claim_refs": [
+        "CL-00331c98cb967633"
+      ],
+      "source_refs": [
+        "SA-b75e097a7fbc43ba"
+      ],
+      "data_date": "2026-09-18",
+      "status": "verified",
+      "subjectName": "SpaceX",
+      "objectName": "xAI",
+      "predicateLabel": "收购",
+      "title": "SpaceX 收购 xAI",
+      "eventTitle": "马斯克睡进工地！为AI基建拼了",
+      "eventDate": "2026-09-17",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-00331c98cb967633",
+          "subject": "SpaceX",
+          "object": "xAI",
+          "quote": "SpaceX正式收购xAI"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-b75e097a7fbc43ba",
+          "publisher": "量子位",
+          "url": "https://qbitai.com/2026/09/491280.html"
+        }
+      ],
+      "sourceExcerpt": "SpaceX正式收购xAI",
+      "event": {
+        "id": "EV-792e2a2b3e98399f",
+        "title": "马斯克睡进工地！为AI基建拼了",
+        "originalTitle": "",
+        "date": "2026-09-17",
+        "dataDate": "2026-09-18",
+        "eventTypeLabel": "并购"
+      }
+    },
+    {
       "relationship_id": "REL2-39c721b66f466667",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-7d3194f79e645c42",
@@ -2281,55 +2330,6 @@
         "date": "2026-08-02",
         "dataDate": "2026-08-03",
         "eventTypeLabel": "产品发布"
-      }
-    },
-    {
-      "relationship_id": "REL2-30051dc5d7668662",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-e78bdebae031095b",
-      "subject_type": "entity",
-      "predicate": "acquires",
-      "object_ref": "EN-6fcba5d96a4fadfd",
-      "object_type": "entity",
-      "event_id": "EV-792e2a2b3e98399f",
-      "claim_refs": [
-        "CL-3c2aac2dae19ef58"
-      ],
-      "source_refs": [
-        "SA-08460f4c69d75995"
-      ],
-      "data_date": "2026-08-01",
-      "status": "verified",
-      "subjectName": "SpaceX",
-      "objectName": "xAI",
-      "predicateLabel": "收购",
-      "title": "SpaceX 收购 xAI",
-      "eventTitle": "SpaceX 称 xAI 未获许可的涡轮机还需一年才能全部移除",
-      "eventDate": "2026-07-31",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-3c2aac2dae19ef58",
-          "subject": "SpaceX",
-          "object": "xAI",
-          "quote": "SpaceX acquired xAI in February."
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-08460f4c69d75995",
-          "publisher": "TechCrunch：AI（RSS）",
-          "url": "https://techcrunch.com/2026/07/31/spacex-wont-remove-all-of-xais-unpermitted-turbines-for-another-year"
-        }
-      ],
-      "sourceExcerpt": "SpaceX acquired xAI in February.",
-      "event": {
-        "id": "EV-792e2a2b3e98399f",
-        "title": "SpaceX 称 xAI 未获许可的涡轮机还需一年才能全部移除",
-        "originalTitle": "",
-        "date": "2026-07-31",
-        "dataDate": "2026-08-01",
-        "eventTypeLabel": "并购"
       }
     },
     {

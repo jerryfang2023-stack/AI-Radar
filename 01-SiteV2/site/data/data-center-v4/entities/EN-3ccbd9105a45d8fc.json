@@ -79,6 +79,7 @@
       "EV-8b73e88ffd3569b2",
       "EV-30d7f1c5dc8ea464",
       "EV-6272444f30281858",
+      "EV-f7580b8890e50121",
       "EV-684428c2905ab07c",
       "EV-a78cbbfb8413644b",
       "EV-af09904030ac3c22",
@@ -104,7 +105,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2023-03-21",
-    "lastSeen": "2026-09-16",
+    "lastSeen": "2026-09-18",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
@@ -134,6 +135,7 @@
         "EV-6272444f30281858"
       ],
       "productsServices": [
+        "EV-f7580b8890e50121",
         "EV-684428c2905ab07c",
         "EV-a78cbbfb8413644b",
         "EV-af09904030ac3c22",
@@ -154,6 +156,23 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-f7580b8890e50121",
+        "dataDate": "2026-09-18",
+        "date": "2026-09-16",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "AI 智能体新闻——2026年9月17日当周（每日更新）AI 智能体新闻——2026年9月17日当周",
+        "displayTags": [],
+        "entityIds": [
+          "EN-3ccbd9105a45d8fc",
+          "EN-a7ca8eb528225191",
+          "EN-d95491fb98f64655"
+        ]
+      },
       {
         "id": "EV-684428c2905ab07c",
         "dataDate": "2026-09-16",
@@ -2364,6 +2383,7 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-20cb32f955e7a3d5",
         "EV-de1d0f5b1dbb0cd5",
         "EV-5e20c319d2ad9a67",
         "EV-ec55003461ff34b0",
@@ -2682,6 +2702,7 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-a7567fb3e6a46193",
         "EV-6d282114be5eef4f",
         "EV-b1b321fda18cc329",
         "EV-e272541b76d00306",
@@ -2887,8 +2908,8 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
-        "EN-69337578b2468a88",
         "EN-c70eca6b0f88f44d",
+        "EN-69337578b2468a88",
         "EN-e473f24d4325d51a",
         "EN-36408e3a0e094a6f",
         "EN-ce9408431e3d5934",
@@ -3047,9 +3068,9 @@
         "EN-b7bea343b08cce2c",
         "EN-fdb2cc367267ac57",
         "EN-4a639cb888a15d75",
-        "EN-d4f0bc5a29de06b5",
         "EN-0616a267820d2c78",
         "EN-286a3c612017ad1d",
+        "EN-d4f0bc5a29de06b5",
         "EN-89d01c9ba73cb5c4",
         "EN-11507a0e2f5e69d5",
         "EN-16478186eeecf696",
@@ -3515,5 +3536,78 @@
       ]
     }
   ],
-  "hardware": []
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-e3536d1050e67439",
+      "snapshotKey": "e3536d1050e67439",
+      "snapshotId": "HWS-9b34bd883b861835",
+      "eventId": "EV-f7580b8890e50121",
+      "eventIds": [
+        "EV-f7580b8890e50121"
+      ],
+      "dataDate": "2026-09-18",
+      "date": "2026-09-18",
+      "title": "AI Agents News / AIforce",
+      "subject": "Salesforce",
+      "productNames": [
+        "AI Agents News",
+        "AIforce"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-73a5ae09fbc9df7c"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-18",
+          "hardware_fact_id": "HWF-73a5ae09fbc9df7c",
+          "fact_type": "product",
+          "observed_at": "2026-09-15T16:00:00.000Z",
+          "subject_entity_id": "EN-3ccbd9105a45d8fc",
+          "subject_name": "Salesforce",
+          "product_entity_ids": [
+            "EN-a7ca8eb528225191",
+            "EN-d95491fb98f64655"
+          ],
+          "product_names": [
+            "AI Agents News",
+            "AIforce"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "UiPath announced that Integration Service has evolved into an agent-ready connectivity layer that manages credentials, actions and event sources for coding agents and robots; the announcement and release notes were posted September 16, 2026.",
+          "event_refs": [
+            "EV-f7580b8890e50121"
+          ],
+          "claim_ref": "CL-b6ce4b36eea644f7",
+          "source_refs": [
+            "SA-0c71a77ed95a4d10"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-18/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://aiagentstore.ai/ai-agent-news/this-week",
+      "entityIds": [
+        "EN-3ccbd9105a45d8fc",
+        "EN-a7ca8eb528225191",
+        "EN-d95491fb98f64655"
+      ]
+    }
+  ]
 }

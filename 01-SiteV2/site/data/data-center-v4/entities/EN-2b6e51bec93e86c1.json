@@ -64,6 +64,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-59870accd54d5efd",
       "EV-55e7c286e95be405",
       "EV-6f092cfc7a064d64",
       "EV-d4e44892226be468",
@@ -108,6 +109,7 @@
       "EV-3ef3e18df61a00d8",
       "EV-568d2aeab5234e48",
       "EV-f68e00bb9fd49fac",
+      "EV-14762aedd2985175",
       "EV-7a24f8d94f5eede7",
       "EV-51548a69e952646b",
       "EV-4e3e9b543127b55a",
@@ -152,7 +154,7 @@
       "EN-a3c3b987b09fc1bb"
     ],
     "firstSeen": "2026-06-02",
-    "lastSeen": "2026-09-17",
+    "lastSeen": "2026-09-18",
     "relationIds": [
       "REL2-284835caff7e4288",
       "REL2-3ebed8c60e163231",
@@ -162,6 +164,7 @@
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-59870accd54d5efd",
         "EV-55e7c286e95be405",
         "EV-6f092cfc7a064d64",
         "EV-d4e44892226be468",
@@ -217,6 +220,7 @@
         "EV-eb12fb9dd08e5aad"
       ],
       "organizationPeople": [
+        "EV-14762aedd2985175",
         "EV-8680757a0026461d",
         "EV-248e01495eb582ed",
         "EV-c6b1535a2034f0f2",
@@ -233,6 +237,38 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-59870accd54d5efd",
+        "dataDate": "2026-09-18",
+        "date": "2026-09-17",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "前 DeepMind 研究员创立的 Emulate 拟融资 7 亿美元，估值或达 37 亿美元",
+        "displayTags": [],
+        "entityIds": [
+          "EN-1187ac5ce302823b",
+          "EN-bbdefa2950f49882",
+          "EN-2b6e51bec93e86c1"
+        ]
+      },
+      {
+        "id": "EV-14762aedd2985175",
+        "dataDate": "2026-09-18",
+        "date": "2026-09-17",
+        "eventType": "organization_restructuring",
+        "eventTypeLabel": "组织重组",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Google DeepMind 成立 DeepMind Institute 扩大 AGI 讨论，首发四篇论文",
+        "displayTags": [],
+        "entityIds": [
+          "EN-2b6e51bec93e86c1"
+        ]
+      },
       {
         "id": "EV-5edf45d6424e2154",
         "dataDate": "2026-09-17",
@@ -4018,7 +4054,7 @@
         "HW-1450585d9cd5879f"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-09-17"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "TX-use_case-security_operations",
@@ -4301,7 +4337,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-01-06",
-      "lastSeen": "2026-09-17"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "TX-deployment_model-edge_device",
@@ -4384,7 +4420,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-01-06",
-      "lastSeen": "2026-09-17"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -4616,6 +4652,7 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-20cb32f955e7a3d5",
         "EV-de1d0f5b1dbb0cd5",
         "EV-5e20c319d2ad9a67",
         "EV-ec55003461ff34b0",
@@ -4934,6 +4971,7 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-a7567fb3e6a46193",
         "EV-6d282114be5eef4f",
         "EV-b1b321fda18cc329",
         "EV-e272541b76d00306",
@@ -5139,8 +5177,8 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
-        "EN-69337578b2468a88",
         "EN-c70eca6b0f88f44d",
+        "EN-69337578b2468a88",
         "EN-e473f24d4325d51a",
         "EN-36408e3a0e094a6f",
         "EN-ce9408431e3d5934",
@@ -5299,9 +5337,9 @@
         "EN-b7bea343b08cce2c",
         "EN-fdb2cc367267ac57",
         "EN-4a639cb888a15d75",
-        "EN-d4f0bc5a29de06b5",
         "EN-0616a267820d2c78",
         "EN-286a3c612017ad1d",
+        "EN-d4f0bc5a29de06b5",
         "EN-89d01c9ba73cb5c4",
         "EN-11507a0e2f5e69d5",
         "EN-16478186eeecf696",

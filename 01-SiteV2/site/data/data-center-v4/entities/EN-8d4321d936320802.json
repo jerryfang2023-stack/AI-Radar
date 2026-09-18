@@ -62,6 +62,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-26a5749d8604455a",
       "EV-9cf0ca490e9a6f4a",
       "EV-37cc66ca2e29a78c",
       "EV-532031a0c390a2e3",
@@ -167,13 +168,14 @@
       "EV-436bf00fedf6288d",
       "EV-4faa2bcf2e42e60c",
       "EV-58c1cc3749294649",
+      "EV-f01a13953fa7aaaa",
+      "EV-1cbf8cf2d6daf3e5",
       "EV-684428c2905ab07c",
+      "EV-d27707a663d29ade",
       "EV-af09904030ac3c22",
       "EV-b29f516694140945",
-      "EV-d27707a663d29ade",
       "EV-96114d2f1e3abdfd",
       "EV-a65c5ce73c055710",
-      "EV-f01a13953fa7aaaa",
       "EV-354ff4bc2d0327b4",
       "EV-41df51972f9b3a4a",
       "EV-dc7ca88afc22099a",
@@ -285,6 +287,7 @@
       "EV-02b19ffbe883ee2e",
       "EV-8993e021ac17df4a",
       "EV-34929bdd016dc8d6",
+      "EV-376862e67d0244ce",
       "EV-6d282114be5eef4f",
       "EV-46803ffdc054ae6d",
       "EV-2258d4e39a99c186",
@@ -400,7 +403,7 @@
       "EN-171fa23d27b5894b"
     ],
     "firstSeen": "2025-03-18",
-    "lastSeen": "2026-09-17",
+    "lastSeen": "2026-09-18",
     "relationIds": [
       "REL2-ee25fecc7314abd4",
       "REL2-f2a574345a7b8fa5",
@@ -443,6 +446,7 @@
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-26a5749d8604455a",
         "EV-9cf0ca490e9a6f4a",
         "EV-37cc66ca2e29a78c",
         "EV-2258d4e39a99c186",
@@ -564,13 +568,14 @@
         "EV-58c1cc3749294649"
       ],
       "productsServices": [
+        "EV-f01a13953fa7aaaa",
+        "EV-1cbf8cf2d6daf3e5",
+        "EV-d27707a663d29ade",
         "EV-684428c2905ab07c",
         "EV-af09904030ac3c22",
         "EV-b29f516694140945",
-        "EV-d27707a663d29ade",
         "EV-96114d2f1e3abdfd",
         "EV-a65c5ce73c055710",
-        "EV-f01a13953fa7aaaa",
         "EV-41df51972f9b3a4a",
         "EV-dc7ca88afc22099a",
         "EV-ba091f86fba39da0",
@@ -695,6 +700,7 @@
         "EV-be69ef6fcae83890"
       ],
       "organizationPeople": [
+        "EV-376862e67d0244ce",
         "EV-46803ffdc054ae6d",
         "EV-76c8a600380d988c",
         "EV-0094ff6922e9d570",
@@ -711,6 +717,105 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-26a5749d8604455a",
+        "dataDate": "2026-09-18",
+        "date": "2026-09-17",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Crusoe 融资 39 亿美元建大型数据中心与模块化 AI 工厂，估值达 309 亿美元",
+        "displayTags": [],
+        "entityIds": [
+          "EN-d41ebd9f02722fc8",
+          "EN-8d4321d936320802"
+        ]
+      },
+      {
+        "id": "EV-f01a13953fa7aaaa",
+        "dataDate": "2026-09-18",
+        "date": "2026-09-18",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "NVIDIA AI Enterprise - NVIDIA 文档",
+        "displayTags": [],
+        "entityIds": [
+          "EN-8d4321d936320802",
+          "EN-a79a195bada302ec",
+          "EN-f0fa944bc088687b",
+          "EN-28992d55822c87f9"
+        ]
+      },
+      {
+        "id": "EV-1cbf8cf2d6daf3e5",
+        "dataDate": "2026-09-18",
+        "date": "2026-09-17",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "MLPerf Inference v6.1 发布：AMD 512 个 MI355X 刷新纪录，英伟达 Vera Rubin VR200 首次现身",
+        "displayTags": [],
+        "entityIds": [
+          "EN-8d4321d936320802",
+          "EN-854bfbb1217018ed"
+        ]
+      },
+      {
+        "id": "EV-d27707a663d29ade",
+        "dataDate": "2026-09-18",
+        "date": "2026-09-15",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "夏普开始在日本接受AI服务器订单",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_compute_system",
+            "name": "AI 计算系统",
+            "entityIds": [
+              "EN-c07d4b946fe20ecf"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-c07d4b946fe20ecf",
+          "EN-8d4321d936320802",
+          "EN-7221448735e5f688",
+          "EN-77242fb4d6f2ca68",
+          "EN-fde292a132c95e14"
+        ]
+      },
+      {
+        "id": "EV-376862e67d0244ce",
+        "dataDate": "2026-09-18",
+        "date": "2026-09-17",
+        "eventType": "organization_restructuring",
+        "eventTypeLabel": "组织重组",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Emerald AI 联合 Google、Nvidia、Anthropic 成立 AEMA，用需求响应为更多数据中心腾出电网空间",
+        "displayTags": [],
+        "entityIds": [
+          "EN-61465a6ccbba00f9",
+          "EN-bbdefa2950f49882",
+          "EN-8d4321d936320802",
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
       {
         "id": "EV-9cf0ca490e9a6f4a",
         "dataDate": "2026-09-17",
@@ -958,37 +1063,6 @@
         ]
       },
       {
-        "id": "EV-d27707a663d29ade",
-        "dataDate": "2026-09-16",
-        "date": "2026-09-15",
-        "eventType": "product_release",
-        "eventTypeLabel": "产品发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "夏普开始在日本接受AI服务器订单",
-        "displayTags": [
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "ai_compute_system",
-            "name": "AI 计算系统",
-            "entityIds": [
-              "EN-c07d4b946fe20ecf"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "entityIds": [
-          "EN-c07d4b946fe20ecf",
-          "EN-8d4321d936320802",
-          "EN-7221448735e5f688",
-          "EN-77242fb4d6f2ca68",
-          "EN-fde292a132c95e14"
-        ]
-      },
-      {
         "id": "EV-46803ffdc054ae6d",
         "dataDate": "2026-09-16",
         "date": "2026-09-15",
@@ -1050,24 +1124,6 @@
           "EN-f48010b78058f6d5",
           "EN-4f6e2dc72ee8273f",
           "EN-eaa46d1f274d72bc"
-        ]
-      },
-      {
-        "id": "EV-f01a13953fa7aaaa",
-        "dataDate": "2026-09-14",
-        "date": "2026-09-14",
-        "eventType": "product_release",
-        "eventTypeLabel": "产品发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "NVIDIA AI Enterprise - NVIDIA 文档",
-        "displayTags": [],
-        "entityIds": [
-          "EN-8d4321d936320802",
-          "EN-a79a195bada302ec",
-          "EN-f0fa944bc088687b",
-          "EN-28992d55822c87f9"
         ]
       },
       {
@@ -11039,6 +11095,7 @@
         "EV-d596f111808bd55b",
         "EV-a4f052325d0ef230",
         "EV-6ce6b9c9780b97d9",
+        "EV-2160d6fb3bcc2a5f",
         "EV-fb6f71a9b5149ff1",
         "EV-e4f4d4270155dec8",
         "EV-0f8b9d8ad97f0c21",
@@ -11094,7 +11151,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-09-17"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "EN-7d1507284a5757ca",
@@ -11263,6 +11320,9 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-5937621f596074a3",
+        "EV-2182e541e0fe6a82",
+        "EV-c04ce28acc9cd1af",
         "EV-5edf45d6424e2154",
         "EV-da957eedfad908b6",
         "EV-b76e38f3fd483ef1",
@@ -11520,6 +11580,10 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-2160d6fb3bcc2a5f",
+        "EV-316beb691ef27660",
+        "EV-4008b0134e8a2e8b",
+        "EV-9a99a3a5a3e024bb",
         "EV-bce258f8f915ff5f",
         "EV-fb6f71a9b5149ff1",
         "EV-46803ffdc054ae6d",
@@ -11699,7 +11763,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-17"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "EN-9bc22dcabf7f45b3",
@@ -11829,6 +11893,9 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-20cb32f955e7a3d5",
+        "EV-f68abde6a94eee76",
+        "EV-84c8f2d5b4a2a5e6",
         "EV-3f5856455b36b9cb",
         "EV-7aeb65d67e35f02f",
         "EV-8232ad0075a77b7a",
@@ -12048,6 +12115,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-376862e67d0244ce",
         "EV-803652a0817ca745",
         "EV-8dfe5703fea93b67",
         "EV-7c4ce5576d1d691b",
@@ -17207,6 +17275,7 @@
         "EV-986ac3a819d23388",
         "EV-23ae55daa341be06",
         "EV-acf1bcb321414706",
+        "EV-fd444ccd5831e77a",
         "EV-95acc01f9b9a08ab",
         "EV-dc0ef21764be2db1",
         "EV-97ccee25cc840092",
@@ -17287,6 +17356,7 @@
         "EN-c189daf477a2d4ca",
         "EN-50e2a4156631df49",
         "EN-4bd78d9884b2d958",
+        "EN-80c9564a336a73bc",
         "EN-eed12ec090b1005c",
         "EN-9fbf261b62c1d7c0",
         "EN-2abf8289b2f2113f",
@@ -17296,7 +17366,9 @@
         "EN-7d3194f79e645c42",
         "EN-45d780f82c9247fc"
       ],
-      "fdeIds": [],
+      "fdeIds": [
+        "FDE-faf2e3c8a2b4595b"
+      ],
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
       "lastSeen": "2026-09-18"
@@ -17374,6 +17446,7 @@
         "EV-d535e126615182f0",
         "EV-986ac3a819d23388",
         "EV-4eb0556b8c72d410",
+        "EV-fd444ccd5831e77a",
         "EV-a852dc0ca6011ff6",
         "EV-eb61ddca7f36f55c",
         "EV-4b545e310ded2baa",
@@ -17468,6 +17541,7 @@
         "EN-c189daf477a2d4ca",
         "EN-c71496986d06e3f2",
         "EN-098a40b4499d7512",
+        "EN-80c9564a336a73bc",
         "EN-c9e92f0b88c6456b",
         "EN-5e9e4638fa2ec9a4",
         "EN-d3565d297d476f10",
@@ -17489,6 +17563,7 @@
         "EN-32e83e92d45d71f6"
       ],
       "fdeIds": [
+        "FDE-faf2e3c8a2b4595b",
         "FDE-34d87868ff636016",
         "FDE-e79a238725a98c06",
         "FDE-e1b2683e8d017358",
@@ -18157,7 +18232,7 @@
         "HW-1450585d9cd5879f"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-09-17"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "TX-ai_market_application-computing_infrastructure",
@@ -19408,7 +19483,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-01-06",
-      "lastSeen": "2026-09-17"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "TX-deployment_model-edge_device",
@@ -19491,7 +19566,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-01-06",
-      "lastSeen": "2026-09-17"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "TX-industry-telecommunications",
@@ -19822,6 +19897,7 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-20cb32f955e7a3d5",
         "EV-de1d0f5b1dbb0cd5",
         "EV-5e20c319d2ad9a67",
         "EV-ec55003461ff34b0",
@@ -20140,6 +20216,7 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-a7567fb3e6a46193",
         "EV-6d282114be5eef4f",
         "EV-b1b321fda18cc329",
         "EV-e272541b76d00306",
@@ -20345,8 +20422,8 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
-        "EN-69337578b2468a88",
         "EN-c70eca6b0f88f44d",
+        "EN-69337578b2468a88",
         "EN-e473f24d4325d51a",
         "EN-36408e3a0e094a6f",
         "EN-ce9408431e3d5934",
@@ -20505,9 +20582,9 @@
         "EN-b7bea343b08cce2c",
         "EN-fdb2cc367267ac57",
         "EN-4a639cb888a15d75",
-        "EN-d4f0bc5a29de06b5",
         "EN-0616a267820d2c78",
         "EN-286a3c612017ad1d",
+        "EN-d4f0bc5a29de06b5",
         "EN-89d01c9ba73cb5c4",
         "EN-11507a0e2f5e69d5",
         "EN-16478186eeecf696",
@@ -22338,7 +22415,7 @@
         "HW-9a39a7f449362f96"
       ],
       "firstSeen": "2026-05-08",
-      "lastSeen": "2026-09-16"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "TX-product_form-model_api_service",
