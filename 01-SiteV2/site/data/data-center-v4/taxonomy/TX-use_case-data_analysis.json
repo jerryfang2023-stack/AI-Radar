@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-17T02:39:32.145Z",
-    "latestDataDate": "2026-09-17",
-    "currentDate": "2026-09-17",
-    "eventCount": 3338,
+    "generatedAt": "2026-09-18T00:28:49.225Z",
+    "latestDataDate": "2026-09-18",
+    "currentDate": "2026-09-18",
+    "eventCount": 3365,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -129,6 +129,7 @@
       "EV-986ac3a819d23388",
       "EV-23ae55daa341be06",
       "EV-acf1bcb321414706",
+      "EV-fd444ccd5831e77a",
       "EV-95acc01f9b9a08ab",
       "EV-dc0ef21764be2db1",
       "EV-97ccee25cc840092",
@@ -209,6 +210,7 @@
       "EN-c189daf477a2d4ca",
       "EN-50e2a4156631df49",
       "EN-4bd78d9884b2d958",
+      "EN-80c9564a336a73bc",
       "EN-eed12ec090b1005c",
       "EN-9fbf261b62c1d7c0",
       "EN-2abf8289b2f2113f",
@@ -218,10 +220,12 @@
       "EN-7d3194f79e645c42",
       "EN-45d780f82c9247fc"
     ],
-    "fdeIds": [],
+    "fdeIds": [
+      "FDE-faf2e3c8a2b4595b"
+    ],
     "hardwareIds": [],
     "firstSeen": "2023-06-28",
-    "lastSeen": "2026-09-17"
+    "lastSeen": "2026-09-18"
   },
   "events": [
     {
@@ -16959,9 +16963,9 @@
     },
     {
       "id": "EV-a52dd9e9cac23694",
-      "dataDate": "2026-09-17",
+      "dataDate": "2026-09-18",
       "date": "2026-07-08",
-      "updatedDate": "2026-09-17",
+      "updatedDate": "2026-09-18",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
@@ -16985,7 +16989,7 @@
         ],
         "source_registry_ids": [],
         "claim_refs": [
-          "CL-933226943bd26e13"
+          "CL-ec2e9341ff9ad85f"
         ]
       },
       "missingFields": [],
@@ -30609,6 +30613,146 @@
       "publisher": "techcrunch.com"
     },
     {
+      "id": "EV-fd444ccd5831e77a",
+      "dataDate": "2026-09-18",
+      "date": "2026-09-17",
+      "updatedDate": "2026-09-18",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "月之暗面发布 Kimi 金融行业 AI 解决方案，首批落地工商银行、中信建投等",
+      "originalTitle": "",
+      "subject": "月之暗面发布 Kimi 金融行业 AI 解决方案，首批",
+      "action": "落地",
+      "object": "工商银行、中信建投等",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [
+          "cn-ithome-rss"
+        ],
+        "claim_refs": [
+          "CL-a67f27161cfd8563",
+          "CL-f67d045523e0726a",
+          "CL-0e7e18060092abdd",
+          "CL-031e4faa1d2765da"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "data_analysis",
+            "name": "数据分析",
+            "entityIds": [
+              "EN-80c9564a336a73bc"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-80c9564a336a73bc"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-80c9564a336a73bc"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "data_analysis",
+          "name": "数据分析",
+          "entityIds": [
+            "EN-80c9564a336a73bc"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "data_analysis",
+          "name": "数据分析",
+          "entityIds": [
+            "EN-80c9564a336a73bc"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-80c9564a336a73bc"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-b5251b35f15bedc4",
+        "EN-80c9564a336a73bc"
+      ],
+      "entityNames": [
+        "Moonshot AI",
+        "Kimi"
+      ],
+      "productName": "Kimi",
+      "products": [
+        {
+          "name": "Kimi",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Moonshot AI"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/1/003/733.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-95acc01f9b9a08ab",
       "dataDate": "2026-07-22",
       "date": "2026-07-21",
@@ -31984,23 +32128,17 @@
         {
           "name": "Claude Fable 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Mythos 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude Fable 5 and Mythos 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/anthropic-releases-claude-fable-5-and-mythos-5-with-major-gains-in-coding-and-science",
@@ -32948,6 +33086,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-26a5749d8604455a",
         "EV-9cf0ca490e9a6f4a",
         "EV-37cc66ca2e29a78c",
         "EV-532031a0c390a2e3",
@@ -33053,13 +33192,14 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-f01a13953fa7aaaa",
+        "EV-1cbf8cf2d6daf3e5",
         "EV-684428c2905ab07c",
+        "EV-d27707a663d29ade",
         "EV-af09904030ac3c22",
         "EV-b29f516694140945",
-        "EV-d27707a663d29ade",
         "EV-96114d2f1e3abdfd",
         "EV-a65c5ce73c055710",
-        "EV-f01a13953fa7aaaa",
         "EV-354ff4bc2d0327b4",
         "EV-41df51972f9b3a4a",
         "EV-dc7ca88afc22099a",
@@ -33171,6 +33311,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-376862e67d0244ce",
         "EV-6d282114be5eef4f",
         "EV-46803ffdc054ae6d",
         "EV-2258d4e39a99c186",
@@ -33286,7 +33427,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-17"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "EN-e4a72fa4f054e9be",
@@ -33838,7 +33979,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-08",
-      "lastSeen": "2026-09-17"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "EN-c945929c3683ffb0",
@@ -34482,7 +34623,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-22",
-      "lastSeen": "2026-09-17"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "EN-4ad230340ce031eb",
@@ -34786,6 +34927,28 @@
       "lastSeen": "2026-07-20"
     },
     {
+      "id": "EN-80c9564a336a73bc",
+      "name": "Kimi",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-fd444ccd5831e77a"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-data_analysis",
+        "TX-industry-financial_services"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-17",
+      "lastSeen": "2026-09-18"
+    },
+    {
       "id": "EN-eed12ec090b1005c",
       "name": "Fluree",
       "entityType": "organization_candidate",
@@ -34953,6 +35116,7 @@
         "EV-d596f111808bd55b",
         "EV-a4f052325d0ef230",
         "EV-6ce6b9c9780b97d9",
+        "EV-2160d6fb3bcc2a5f",
         "EV-fb6f71a9b5149ff1",
         "EV-e4f4d4270155dec8",
         "EV-0f8b9d8ad97f0c21",
@@ -35008,7 +35172,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-09-17"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "EN-2abf8289b2f2113f",
@@ -35174,7 +35338,7 @@
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-09-17",
+      "lastSeen": "2026-09-18",
       "organizationFamilyId": "EN-047364b9be67f665",
       "organizationRole": "group",
       "organizationFamilyEntityIds": [
@@ -35238,6 +35402,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-4aa29c278432a9db",
         "EV-448e0a020dd2c9a9",
         "EV-bce46f2e5cc68d5d",
         "EV-fe49d2ee580cfea2",
@@ -35329,6 +35494,9 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-20cb32f955e7a3d5",
+        "EV-f68abde6a94eee76",
+        "EV-84c8f2d5b4a2a5e6",
         "EV-3f5856455b36b9cb",
         "EV-7aeb65d67e35f02f",
         "EV-8232ad0075a77b7a",
@@ -35548,6 +35716,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-376862e67d0244ce",
         "EV-803652a0817ca745",
         "EV-8dfe5703fea93b67",
         "EV-7c4ce5576d1d691b",
@@ -35720,7 +35889,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-09-17"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "EN-7d3194f79e645c42",
@@ -35850,6 +36019,9 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-5937621f596074a3",
+        "EV-2182e541e0fe6a82",
+        "EV-c04ce28acc9cd1af",
         "EV-5edf45d6424e2154",
         "EV-da957eedfad908b6",
         "EV-b76e38f3fd483ef1",
@@ -36107,6 +36279,10 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-2160d6fb3bcc2a5f",
+        "EV-316beb691ef27660",
+        "EV-4008b0134e8a2e8b",
+        "EV-9a99a3a5a3e024bb",
         "EV-bce258f8f915ff5f",
         "EV-fb6f71a9b5149ff1",
         "EV-46803ffdc054ae6d",
@@ -36286,7 +36462,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-17"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "EN-45d780f82c9247fc",
@@ -36315,8 +36491,99 @@
       "lastSeen": "2026-09-15"
     }
   ],
-  "fde": [],
+  "fde": [
+    {
+      "id": "FDE-faf2e3c8a2b4595b",
+      "eventId": "EV-fd444ccd5831e77a",
+      "dataDate": "2026-09-18",
+      "date": "2026-09-17",
+      "title": "月之暗面发布 Kimi 金融行业 AI 解决方案，首批落地工商银行、中信建投等",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "工商银行、中信建投等",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/1/003/733.htm",
+      "entityIds": [
+        "EN-b5251b35f15bedc4",
+        "EN-80c9564a336a73bc"
+      ]
+    }
+  ],
   "hardware": [],
+  "fdeDossiers": [
+    {
+      "id": "FDED-f814f417c008ea69",
+      "implementationKey": "f814f417c008ea69",
+      "eventId": "EV-fd444ccd5831e77a",
+      "eventIds": [
+        "EV-fd444ccd5831e77a"
+      ],
+      "dataDate": "2026-09-18",
+      "date": "2026-09-17",
+      "title": "未披露 × 未披露：工商银行、中信建投等",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "工商银行、中信建投等",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.25,
+      "completenessPercent": 25,
+      "missingFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-df5a7bf1e453d370",
+          "type": "earnings_disclosure",
+          "stage": "completed",
+          "date": "2026-09-17",
+          "dataDate": "2026-09-18",
+          "eventId": "EV-fd444ccd5831e77a",
+          "eventTitle": "月之暗面发布 Kimi 金融行业 AI 解决方案，首批落地工商银行、中信建投等",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/1/003/733.htm",
+      "entityIds": [
+        "EN-b5251b35f15bedc4",
+        "EN-80c9564a336a73bc"
+      ]
+    }
+  ],
   "hardwareCatalog": [
     {
       "id": "HWC-f01062ad2956c510",

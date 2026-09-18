@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-17T02:39:32.145Z",
-    "latestDataDate": "2026-09-17",
-    "currentDate": "2026-09-17",
-    "eventCount": 3338,
+    "generatedAt": "2026-09-18T00:28:49.225Z",
+    "latestDataDate": "2026-09-18",
+    "currentDate": "2026-09-18",
+    "eventCount": 3365,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -65,6 +65,7 @@
       "EV-25d8a47fbc3c0fbb",
       "EV-0e4bddfd5c129618",
       "EV-c5d7d88d1aef8edb",
+      "EV-fd444ccd5831e77a",
       "EV-38ae953ddd53fe8d",
       "EV-f55d16df5b5fecb2",
       "EV-eec1e6857f0e0b2b",
@@ -117,7 +118,7 @@
       "EN-b57c95289680078c"
     ],
     "firstSeen": "2026-05-07",
-    "lastSeen": "2026-09-16",
+    "lastSeen": "2026-09-18",
     "relationIds": [
       "REL2-043910685537ede7",
       "REL2-6099c03394d4a343",
@@ -132,6 +133,7 @@
         "EV-c5d7d88d1aef8edb"
       ],
       "deployments": [
+        "EV-fd444ccd5831e77a",
         "EV-38ae953ddd53fe8d"
       ],
       "partnerships": [
@@ -168,6 +170,45 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-fd444ccd5831e77a",
+        "dataDate": "2026-09-18",
+        "date": "2026-09-17",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "月之暗面发布 Kimi 金融行业 AI 解决方案，首批落地工商银行、中信建投等",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "data_analysis",
+            "name": "数据分析",
+            "entityIds": [
+              "EN-80c9564a336a73bc"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-80c9564a336a73bc"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-b5251b35f15bedc4",
+          "EN-80c9564a336a73bc"
+        ]
+      },
       {
         "id": "EV-8dfe5703fea93b67",
         "dataDate": "2026-09-16",
@@ -2310,7 +2351,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-17"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "TX-use_case-productivity_enterprise_workflows",
@@ -2613,7 +2654,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-17"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "TX-use_case-content_creation",
@@ -3746,7 +3787,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-01-26",
-      "lastSeen": "2026-09-17"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -3978,6 +4019,7 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-20cb32f955e7a3d5",
         "EV-de1d0f5b1dbb0cd5",
         "EV-5e20c319d2ad9a67",
         "EV-ec55003461ff34b0",
@@ -4296,6 +4338,7 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-a7567fb3e6a46193",
         "EV-6d282114be5eef4f",
         "EV-b1b321fda18cc329",
         "EV-e272541b76d00306",
@@ -4501,8 +4544,8 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
-        "EN-69337578b2468a88",
         "EN-c70eca6b0f88f44d",
+        "EN-69337578b2468a88",
         "EN-e473f24d4325d51a",
         "EN-36408e3a0e094a6f",
         "EN-ce9408431e3d5934",
@@ -4661,9 +4704,9 @@
         "EN-b7bea343b08cce2c",
         "EN-fdb2cc367267ac57",
         "EN-4a639cb888a15d75",
-        "EN-d4f0bc5a29de06b5",
         "EN-0616a267820d2c78",
         "EN-286a3c612017ad1d",
+        "EN-d4f0bc5a29de06b5",
         "EN-89d01c9ba73cb5c4",
         "EN-11507a0e2f5e69d5",
         "EN-16478186eeecf696",
@@ -5385,6 +5428,7 @@
         "EV-0cb98302768c2e0a",
         "EV-34929bdd016dc8d6",
         "EV-00834dd71037c7cc",
+        "EV-4008b0134e8a2e8b",
         "EV-0f8b9d8ad97f0c21",
         "EV-d4c42c125b98b97e",
         "EV-06e6d004096040e0",
@@ -5648,7 +5692,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-17"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "TX-use_case-software_development",
@@ -6238,6 +6282,44 @@
   ],
   "fde": [
     {
+      "id": "FDE-faf2e3c8a2b4595b",
+      "eventId": "EV-fd444ccd5831e77a",
+      "dataDate": "2026-09-18",
+      "date": "2026-09-17",
+      "title": "月之暗面发布 Kimi 金融行业 AI 解决方案，首批落地工商银行、中信建投等",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "工商银行、中信建投等",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/1/003/733.htm",
+      "entityIds": [
+        "EN-b5251b35f15bedc4",
+        "EN-80c9564a336a73bc"
+      ]
+    },
+    {
       "id": "FDE-a8fea104d63ff671",
       "eventId": "EV-f55d16df5b5fecb2",
       "dataDate": "2026-07-28",
@@ -6308,6 +6390,58 @@
     }
   ],
   "hardware": [],
+  "fdeDossiers": [
+    {
+      "id": "FDED-f814f417c008ea69",
+      "implementationKey": "f814f417c008ea69",
+      "eventId": "EV-fd444ccd5831e77a",
+      "eventIds": [
+        "EV-fd444ccd5831e77a"
+      ],
+      "dataDate": "2026-09-18",
+      "date": "2026-09-17",
+      "title": "未披露 × 未披露：工商银行、中信建投等",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "工商银行、中信建投等",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.25,
+      "completenessPercent": 25,
+      "missingFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-df5a7bf1e453d370",
+          "type": "earnings_disclosure",
+          "stage": "completed",
+          "date": "2026-09-17",
+          "dataDate": "2026-09-18",
+          "eventId": "EV-fd444ccd5831e77a",
+          "eventTitle": "月之暗面发布 Kimi 金融行业 AI 解决方案，首批落地工商银行、中信建投等",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/1/003/733.htm",
+      "entityIds": [
+        "EN-b5251b35f15bedc4",
+        "EN-80c9564a336a73bc"
+      ]
+    }
+  ],
   "hardwareCatalog": [
     {
       "id": "HWC-924449cfaadb43e0",

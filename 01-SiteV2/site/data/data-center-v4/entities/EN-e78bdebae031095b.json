@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-17T02:39:32.145Z",
-    "latestDataDate": "2026-09-17",
-    "currentDate": "2026-09-17",
-    "eventCount": 3338,
+    "generatedAt": "2026-09-18T00:28:49.225Z",
+    "latestDataDate": "2026-09-18",
+    "currentDate": "2026-09-18",
+    "eventCount": 3365,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -60,6 +60,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-792e2a2b3e98399f",
       "EV-842f6d47e9cae7e7",
       "EV-086902ad904c1c90",
       "EV-8018e028f1840136",
@@ -69,7 +70,6 @@
       "EV-a6cb4aef5284eb68",
       "EV-9bbe5a98b14acd7f",
       "EV-cdd55321754ce823",
-      "EV-792e2a2b3e98399f",
       "EV-f669ee8fd74b8269",
       "EV-e9b020a1b5f1af14",
       "EV-3daefecd0453631a",
@@ -114,12 +114,13 @@
       "EN-6fcba5d96a4fadfd"
     ],
     "firstSeen": "2026-05-21",
-    "lastSeen": "2026-09-14",
+    "lastSeen": "2026-09-18",
     "relationIds": [
       "REL2-30051dc5d7668662"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-792e2a2b3e98399f",
         "EV-842f6d47e9cae7e7",
         "EV-086902ad904c1c90",
         "EV-8018e028f1840136",
@@ -131,7 +132,6 @@
         "EV-cdd55321754ce823",
         "EV-cdc6611d6b115cab",
         "EV-07388b042db1bad0",
-        "EV-792e2a2b3e98399f",
         "EV-f669ee8fd74b8269",
         "EV-e9b020a1b5f1af14",
         "EV-3daefecd0453631a",
@@ -166,6 +166,22 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-792e2a2b3e98399f",
+        "dataDate": "2026-09-18",
+        "date": "2026-09-17",
+        "eventType": "acquisition",
+        "eventTypeLabel": "并购",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "马斯克睡进工地！为AI基建拼了",
+        "displayTags": [],
+        "entityIds": [
+          "EN-e78bdebae031095b",
+          "EN-6fcba5d96a4fadfd"
+        ]
+      },
       {
         "id": "EV-74db6c0f71f2dad2",
         "dataDate": "2026-09-14",
@@ -544,22 +560,6 @@
         "entityIds": [
           "EN-75fe8aaf5a7e3a7e",
           "EN-e78bdebae031095b"
-        ]
-      },
-      {
-        "id": "EV-792e2a2b3e98399f",
-        "dataDate": "2026-08-01",
-        "date": "2026-07-31",
-        "eventType": "acquisition",
-        "eventTypeLabel": "并购",
-        "eventGroup": "融资与并购",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "SpaceX 称 xAI 未获许可的涡轮机还需一年才能全部移除",
-        "displayTags": [],
-        "entityIds": [
-          "EN-e78bdebae031095b",
-          "EN-6fcba5d96a4fadfd"
         ]
       },
       {
@@ -1060,6 +1060,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-792e2a2b3e98399f",
         "EV-8018e028f1840136",
         "EV-fe49d2ee580cfea2",
         "EV-d57fb9108f2cb220",
@@ -1068,7 +1069,6 @@
         "EV-9bbe5a98b14acd7f",
         "EV-55e7c286e95be405",
         "EV-c1295b8f58024ff6",
-        "EV-792e2a2b3e98399f",
         "EV-3daefecd0453631a",
         "EV-edcb66d0401cfb8f",
         "EV-5d581d112fdbd464",
@@ -1122,7 +1122,7 @@
         "EN-24caf10fe9bfb1c5"
       ],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-09-15"
+      "lastSeen": "2026-09-18"
     }
   ],
   "relationships": [
@@ -1136,12 +1136,12 @@
       "object_type": "entity",
       "event_id": "EV-792e2a2b3e98399f",
       "claim_refs": [
-        "CL-3c2aac2dae19ef58"
+        "CL-00331c98cb967633"
       ],
       "source_refs": [
-        "SA-08460f4c69d75995"
+        "SA-b75e097a7fbc43ba"
       ],
-      "data_date": "2026-08-01",
+      "data_date": "2026-09-18",
       "status": "verified"
     }
   ],
@@ -1979,7 +1979,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-09-17"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "TX-target_user-business_user",
@@ -2658,7 +2658,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-17"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "TX-industry-logistics_supply_chain",
@@ -3090,6 +3090,7 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-20cb32f955e7a3d5",
         "EV-de1d0f5b1dbb0cd5",
         "EV-5e20c319d2ad9a67",
         "EV-ec55003461ff34b0",
@@ -3408,6 +3409,7 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-a7567fb3e6a46193",
         "EV-6d282114be5eef4f",
         "EV-b1b321fda18cc329",
         "EV-e272541b76d00306",
@@ -3613,8 +3615,8 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
-        "EN-69337578b2468a88",
         "EN-c70eca6b0f88f44d",
+        "EN-69337578b2468a88",
         "EN-e473f24d4325d51a",
         "EN-36408e3a0e094a6f",
         "EN-ce9408431e3d5934",
@@ -3773,9 +3775,9 @@
         "EN-b7bea343b08cce2c",
         "EN-fdb2cc367267ac57",
         "EN-4a639cb888a15d75",
-        "EN-d4f0bc5a29de06b5",
         "EN-0616a267820d2c78",
         "EN-286a3c612017ad1d",
+        "EN-d4f0bc5a29de06b5",
         "EN-89d01c9ba73cb5c4",
         "EN-11507a0e2f5e69d5",
         "EN-16478186eeecf696",
@@ -4179,6 +4181,7 @@
         "EV-0cb98302768c2e0a",
         "EV-34929bdd016dc8d6",
         "EV-00834dd71037c7cc",
+        "EV-4008b0134e8a2e8b",
         "EV-0f8b9d8ad97f0c21",
         "EV-d4c42c125b98b97e",
         "EV-06e6d004096040e0",
@@ -4442,7 +4445,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-17"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "TX-industry-aerospace_defense",

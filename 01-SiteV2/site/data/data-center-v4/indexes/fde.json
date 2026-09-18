@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-17T02:39:32.145Z",
-    "latestDataDate": "2026-09-17",
-    "currentDate": "2026-09-17",
-    "eventCount": 3338,
+    "generatedAt": "2026-09-18T00:28:49.225Z",
+    "latestDataDate": "2026-09-18",
+    "currentDate": "2026-09-18",
+    "eventCount": 3365,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -50,6 +50,44 @@
     ]
   },
   "fde": [
+    {
+      "id": "FDE-faf2e3c8a2b4595b",
+      "eventId": "EV-fd444ccd5831e77a",
+      "dataDate": "2026-09-18",
+      "date": "2026-09-17",
+      "title": "月之暗面发布 Kimi 金融行业 AI 解决方案，首批落地工商银行、中信建投等",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "工商银行、中信建投等",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/1/003/733.htm",
+      "entityIds": [
+        "EN-b5251b35f15bedc4",
+        "EN-80c9564a336a73bc"
+      ]
+    },
     {
       "id": "FDE-089c1a8365c0c882",
       "eventId": "EV-0b7dcbb44344e389",
@@ -1074,8 +1112,8 @@
       "id": "FDE-bdcc1cc24296c7ca",
       "eventId": "EV-04b84c1f3430c055",
       "dataDate": "2026-08-31",
-      "date": "2026-09-01",
-      "title": "生成式AI用于维护",
+      "date": "2026-09-18",
+      "title": "C3 AI 生成式 AI 维护方案",
       "stage": "announced",
       "stageLabel": "已公布",
       "customer": "C3 AI",
@@ -7268,6 +7306,56 @@
   ],
   "fdeDossiers": [
     {
+      "id": "FDED-f814f417c008ea69",
+      "implementationKey": "f814f417c008ea69",
+      "eventId": "EV-fd444ccd5831e77a",
+      "eventIds": [
+        "EV-fd444ccd5831e77a"
+      ],
+      "dataDate": "2026-09-18",
+      "date": "2026-09-17",
+      "title": "未披露 × 未披露：工商银行、中信建投等",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "工商银行、中信建投等",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.25,
+      "completenessPercent": 25,
+      "missingFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-df5a7bf1e453d370",
+          "type": "earnings_disclosure",
+          "stage": "completed",
+          "date": "2026-09-17",
+          "dataDate": "2026-09-18",
+          "eventId": "EV-fd444ccd5831e77a",
+          "eventTitle": "月之暗面发布 Kimi 金融行业 AI 解决方案，首批落地工商银行、中信建投等",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/1/003/733.htm",
+      "entityIds": [
+        "EN-b5251b35f15bedc4",
+        "EN-80c9564a336a73bc"
+      ]
+    },
+    {
       "id": "FDED-1b7778eb4474c341",
       "implementationKey": "1b7778eb4474c341",
       "eventId": "EV-ad6c755f7cf588c4",
@@ -8466,7 +8554,7 @@
           "date": "2026-08-31",
           "dataDate": "2026-08-31",
           "eventId": "EV-04b84c1f3430c055",
-          "eventTitle": "生成式AI用于维护",
+          "eventTitle": "C3 AI 生成式 AI 维护方案",
           "claimCount": 2,
           "sourceCount": 1
         },
@@ -8477,7 +8565,7 @@
           "date": "2026-08-30",
           "dataDate": "2026-08-30",
           "eventId": "EV-04b84c1f3430c055",
-          "eventTitle": "生成式AI用于维护",
+          "eventTitle": "C3 AI 生成式 AI 维护方案",
           "claimCount": 2,
           "sourceCount": 1
         }
@@ -10457,41 +10545,38 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-09-17",
-      "funnel_id": "LF-b8e9c84d02df5977",
+      "data_date": "2026-09-18",
+      "funnel_id": "LF-f2e61b8fc4c4cf4e",
       "lens": "fde",
-      "date": "2026-09-17",
+      "date": "2026-09-18",
       "monitoring_paths": [
         "fde_customer_case",
         "fde_earnings_disclosure",
         "fde_procurement_contract",
         "fde_production_rollout"
       ],
-      "raw_documents": 96,
-      "original_sources": 81,
-      "valid_claims": 25,
-      "observations": 0,
-      "canonical_events": 10,
+      "raw_documents": 107,
+      "original_sources": 95,
+      "valid_claims": 26,
+      "observations": 1,
+      "canonical_events": 12,
       "blocker_counts": {
-        "no_source_bounded_event": 13,
-        "no_source_bounded_claim": 2,
         "event_entity_unresolved": 1,
-        "source_outside_daily_window": 41,
-        "opinion_without_source_bounded_event": 1,
-        "directory_page_not_event_source": 1,
+        "no_source_bounded_event": 22,
+        "no_source_bounded_claim": 4,
+        "event_not_ai_relevant": 5,
+        "source_outside_daily_window": 45,
         "non_event_or_index_title": 5,
-        "event_not_ai_relevant": 2,
-        "tag_or_topic_index_not_event_source": 1,
-        "community_source_requires_original_event_source": 1,
-        "raw_source_quality_block": 17
+        "opinion_without_source_bounded_event": 1,
+        "raw_source_quality_block": 12
       },
       "rates": {
-        "original_source_rate": 0.84375,
-        "valid_claim_rate": 0.2604166666666667,
-        "observation_rate": 0,
-        "event_conversion_rate": 0.4
+        "original_source_rate": 0.8878504672897196,
+        "valid_claim_rate": 0.24299065420560748,
+        "observation_rate": 0.038461538461538464,
+        "event_conversion_rate": 0.46153846153846156
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-17/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-18/monitoring-funnel.json"
     }
   ]
 }

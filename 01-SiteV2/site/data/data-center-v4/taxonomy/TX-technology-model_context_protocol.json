@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-17T02:39:32.145Z",
-    "latestDataDate": "2026-09-17",
-    "currentDate": "2026-09-17",
-    "eventCount": 3338,
+    "generatedAt": "2026-09-18T00:28:49.225Z",
+    "latestDataDate": "2026-09-18",
+    "currentDate": "2026-09-18",
+    "eventCount": 3365,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -57,6 +57,7 @@
     "valueId": "model_context_protocol",
     "eventIds": [
       "EV-ed8260ee9a7a80af",
+      "EV-6b27d72f139fc7a2",
       "EV-5e1fdcb8a5a96c6d",
       "EV-a2c13c14efec9218",
       "EV-21d4133cd8711813",
@@ -80,6 +81,7 @@
     ],
     "entityIds": [
       "EN-c70eca6b0f88f44d",
+      "EN-a85bd8852b5b34e0",
       "EN-a65f59e21ecf47ab",
       "EN-9d3508a8484ee252",
       "EN-10182ab855ff7727",
@@ -99,7 +101,7 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2025-11-17",
-    "lastSeen": "2026-09-09"
+    "lastSeen": "2026-09-18"
   },
   "events": [
     {
@@ -181,6 +183,90 @@
       "products": [],
       "sourceUrl": "https://www.anthropic.com/news/anthropic-acquires-stainless",
       "publisher": "Anthropic：Newsroom（网页）"
+    },
+    {
+      "id": "EV-6b27d72f139fc7a2",
+      "dataDate": "2026-09-18",
+      "date": "2026-09-17",
+      "updatedDate": "2026-09-18",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "单人创始人如何用 AlloyDB 和 MCP 运营覆盖五大洲的招标平台",
+      "originalTitle": "",
+      "subject": "单人创始人如何用 AlloyDB 和 MCP 运营覆盖五大洲的",
+      "action": "招标",
+      "object": "平台",
+      "metrics": [],
+      "locations": [
+        "India"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "model_context_protocol",
+          "name": "MCP",
+          "entityIds": [
+            "EN-a85bd8852b5b34e0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "model_context_protocol",
+          "name": "MCP",
+          "entityIds": [
+            "EN-a85bd8852b5b34e0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "model_context_protocol",
+          "name": "MCP",
+          "entityIds": [
+            "EN-a85bd8852b5b34e0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-7077d6f6144f655b",
+        "EN-a85bd8852b5b34e0"
+      ],
+      "entityNames": [
+        "单人",
+        "MCP 运营覆盖五大洲的"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://cloud.google.com/blog/products/databases/solo-founder-runs-a-global-tender-platform-on-alloydb-and-mcp",
+      "publisher": "Google Cloud：Databases（RSS）"
     },
     {
       "id": "EV-5e1fdcb8a5a96c6d",
@@ -2160,9 +2246,7 @@
         {
           "name": "MCP AI",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/2025/11/17/mcp-ai-agent-security-startup-runlayer-launches-with-8-unicorns-11m-from-khoslas-keith-rabois-and-felicis",
@@ -2721,6 +2805,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-4aa29c278432a9db",
         "EV-448e0a020dd2c9a9",
         "EV-bce46f2e5cc68d5d",
         "EV-fe49d2ee580cfea2",
@@ -2812,6 +2897,9 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-20cb32f955e7a3d5",
+        "EV-f68abde6a94eee76",
+        "EV-84c8f2d5b4a2a5e6",
         "EV-3f5856455b36b9cb",
         "EV-7aeb65d67e35f02f",
         "EV-8232ad0075a77b7a",
@@ -3031,6 +3119,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-376862e67d0244ce",
         "EV-803652a0817ca745",
         "EV-8dfe5703fea93b67",
         "EV-7c4ce5576d1d691b",
@@ -3203,7 +3292,28 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-09-17"
+      "lastSeen": "2026-09-18"
+    },
+    {
+      "id": "EN-a85bd8852b5b34e0",
+      "name": "MCP 运营覆盖五大洲的",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6b27d72f139fc7a2"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-model_context_protocol"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-17",
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "EN-a65f59e21ecf47ab",
@@ -3486,6 +3596,7 @@
         "EV-d596f111808bd55b",
         "EV-a4f052325d0ef230",
         "EV-6ce6b9c9780b97d9",
+        "EV-2160d6fb3bcc2a5f",
         "EV-fb6f71a9b5149ff1",
         "EV-e4f4d4270155dec8",
         "EV-0f8b9d8ad97f0c21",
@@ -3541,7 +3652,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-09-17"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "EN-e473f24d4325d51a",

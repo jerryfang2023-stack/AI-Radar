@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-17T02:39:32.145Z",
-    "latestDataDate": "2026-09-17",
-    "currentDate": "2026-09-17",
-    "eventCount": 3338,
+    "generatedAt": "2026-09-18T00:28:49.225Z",
+    "latestDataDate": "2026-09-18",
+    "currentDate": "2026-09-18",
+    "eventCount": 3365,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -60,6 +60,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-26a5749d8604455a",
       "EV-f2c93c155070cd35",
       "EV-1e6f73c188a9e946",
       "EV-b84035029a63e52e"
@@ -74,12 +75,13 @@
       "EN-10556ee2cee94c72"
     ],
     "firstSeen": "2026-07-07",
-    "lastSeen": "2026-09-04",
+    "lastSeen": "2026-09-18",
     "relationIds": [
       "REL2-0290625c26082cef"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-26a5749d8604455a",
         "EV-f2c93c155070cd35"
       ],
       "deployments": [],
@@ -94,6 +96,22 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-26a5749d8604455a",
+        "dataDate": "2026-09-18",
+        "date": "2026-09-17",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Crusoe 融资 39 亿美元建大型数据中心与模块化 AI 工厂，估值达 309 亿美元",
+        "displayTags": [],
+        "entityIds": [
+          "EN-d41ebd9f02722fc8",
+          "EN-8d4321d936320802"
+        ]
+      },
       {
         "id": "EV-f2c93c155070cd35",
         "dataDate": "2026-09-04",

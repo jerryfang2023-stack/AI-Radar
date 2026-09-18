@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-17T02:39:32.145Z",
-    "latestDataDate": "2026-09-17",
-    "currentDate": "2026-09-17",
-    "eventCount": 3338,
+    "generatedAt": "2026-09-18T00:28:49.225Z",
+    "latestDataDate": "2026-09-18",
+    "currentDate": "2026-09-18",
+    "eventCount": 3365,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -62,6 +62,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-59870accd54d5efd",
       "EV-83697c1162a5faf9",
       "EV-fe49d2ee580cfea2",
       "EV-d57fb9108f2cb220",
@@ -119,6 +120,10 @@
       "EV-f949fd95df58d42d",
       "EV-97747aee0cafd9f3",
       "EV-c0a65877001ed413",
+      "EV-5937621f596074a3",
+      "EV-7dac293d338589bd",
+      "EV-b909e1c4f904c1b3",
+      "EV-8cd574fbde4182a2",
       "EV-65baf4d62c3ae3a6",
       "EV-da957eedfad908b6",
       "EV-47363108bf292d94",
@@ -284,6 +289,7 @@
       "EV-a4f052325d0ef230",
       "EV-cb3cb11ff13f6069",
       "EV-8115dd18f2812a29",
+      "EV-376862e67d0244ce",
       "EV-7c4ce5576d1d691b",
       "EV-09029303144c5e67",
       "EV-621b257277382475",
@@ -377,7 +383,7 @@
       "EN-bdfecbcd7dbf76d2"
     ],
     "firstSeen": "2025-10-09",
-    "lastSeen": "2026-09-17",
+    "lastSeen": "2026-09-18",
     "relationIds": [
       "REL2-047306f993a722b4",
       "REL2-c0c6b4cd2b1abacd",
@@ -414,6 +420,7 @@
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-59870accd54d5efd",
         "EV-09029303144c5e67",
         "EV-83697c1162a5faf9",
         "EV-ef1de880e4ef9f75",
@@ -486,6 +493,10 @@
         "EV-c0a65877001ed413"
       ],
       "productsServices": [
+        "EV-5937621f596074a3",
+        "EV-7dac293d338589bd",
+        "EV-b909e1c4f904c1b3",
+        "EV-8cd574fbde4182a2",
         "EV-65baf4d62c3ae3a6",
         "EV-da957eedfad908b6",
         "EV-47363108bf292d94",
@@ -661,6 +672,7 @@
         "EV-3f23ddb47fc652a4"
       ],
       "organizationPeople": [
+        "EV-376862e67d0244ce",
         "EV-621b257277382475",
         "EV-65612dfb24abce5c",
         "EV-f5aec01f1466f6bb",
@@ -690,8 +702,89 @@
     },
     "timeline": [
       {
+        "id": "EV-59870accd54d5efd",
+        "dataDate": "2026-09-18",
+        "date": "2026-09-17",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "前 DeepMind 研究员创立的 Emulate 拟融资 7 亿美元，估值或达 37 亿美元",
+        "displayTags": [],
+        "entityIds": [
+          "EN-1187ac5ce302823b",
+          "EN-bbdefa2950f49882",
+          "EN-2b6e51bec93e86c1"
+        ]
+      },
+      {
+        "id": "EV-5937621f596074a3",
+        "dataDate": "2026-09-18",
+        "date": "2026-09-18",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "谷歌最强 AI 模型：Gemini 4 Pro 开测，SVG 生图表现惊艳",
+        "displayTags": [],
+        "entityIds": [
+          "EN-bbdefa2950f49882",
+          "EN-7d3194f79e645c42"
+        ]
+      },
+      {
+        "id": "EV-7dac293d338589bd",
+        "dataDate": "2026-09-18",
+        "date": "2026-09-18",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "联想 Vantage 外设管理应用登陆谷歌 Googlebook 平台，意外曝光自家 AI Mouse 智能鼠标新品",
+        "displayTags": [],
+        "entityIds": [
+          "EN-bbdefa2950f49882",
+          "EN-7322eec4df12e477"
+        ]
+      },
+      {
+        "id": "EV-b909e1c4f904c1b3",
+        "dataDate": "2026-09-18",
+        "date": "2026-09-18",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Google 推出实验性 AI 智能体 CC，面向家庭共享使用",
+        "displayTags": [],
+        "entityIds": [
+          "EN-bbdefa2950f49882"
+        ]
+      },
+      {
+        "id": "EV-8cd574fbde4182a2",
+        "dataDate": "2026-09-18",
+        "date": "2026-09-17",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "让全球数据更易于探索",
+        "displayTags": [],
+        "entityIds": [
+          "EN-ebd2adf9ade74a5e",
+          "EN-bbdefa2950f49882",
+          "EN-4d9aae61c6a23dde"
+        ]
+      },
+      {
         "id": "EV-65baf4d62c3ae3a6",
-        "dataDate": "2026-09-17",
+        "dataDate": "2026-09-18",
         "date": "2026-09-16",
         "eventType": "model_release",
         "eventTypeLabel": "模型发布",
@@ -705,6 +798,24 @@
           "EN-dfa0b001befb3fbd",
           "EN-02e4f54e4ae3c90d",
           "EN-9e3acd9b8d1fd0b8"
+        ]
+      },
+      {
+        "id": "EV-376862e67d0244ce",
+        "dataDate": "2026-09-18",
+        "date": "2026-09-17",
+        "eventType": "organization_restructuring",
+        "eventTypeLabel": "组织重组",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Emerald AI 联合 Google、Nvidia、Anthropic 成立 AEMA，用需求响应为更多数据中心腾出电网空间",
+        "displayTags": [],
+        "entityIds": [
+          "EN-61465a6ccbba00f9",
+          "EN-bbdefa2950f49882",
+          "EN-8d4321d936320802",
+          "EN-c70eca6b0f88f44d"
         ]
       },
       {
@@ -9840,7 +9951,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-01-20",
-      "lastSeen": "2026-09-17"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "TX-product_form-enterprise_software_platform",
@@ -10195,7 +10306,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-09-17"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "TX-use_case-research_discovery",
@@ -10306,7 +10417,7 @@
         "HW-7889eb510b9d4210"
       ],
       "firstSeen": "2026-03-10",
-      "lastSeen": "2026-09-17"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "TX-industry-manufacturing",
@@ -11367,7 +11478,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-17"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "TX-use_case-productivity_enterprise_workflows",
@@ -11670,7 +11781,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-17"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "TX-industry-financial_services",
@@ -11745,6 +11856,7 @@
         "EV-d535e126615182f0",
         "EV-986ac3a819d23388",
         "EV-4eb0556b8c72d410",
+        "EV-fd444ccd5831e77a",
         "EV-a852dc0ca6011ff6",
         "EV-eb61ddca7f36f55c",
         "EV-4b545e310ded2baa",
@@ -11839,6 +11951,7 @@
         "EN-c189daf477a2d4ca",
         "EN-c71496986d06e3f2",
         "EN-098a40b4499d7512",
+        "EN-80c9564a336a73bc",
         "EN-c9e92f0b88c6456b",
         "EN-5e9e4638fa2ec9a4",
         "EN-d3565d297d476f10",
@@ -11860,6 +11973,7 @@
         "EN-32e83e92d45d71f6"
       ],
       "fdeIds": [
+        "FDE-faf2e3c8a2b4595b",
         "FDE-34d87868ff636016",
         "FDE-e79a238725a98c06",
         "FDE-e1b2683e8d017358",
@@ -11875,7 +11989,7 @@
         "HW-a033b945449628d5"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-09-17"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "TX-industry-retail_ecommerce",
@@ -12284,7 +12398,7 @@
         "HW-1450585d9cd5879f"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-09-17"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "TX-ai_market_application-computing_infrastructure",
@@ -13653,7 +13767,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-01-06",
-      "lastSeen": "2026-09-17"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "TX-deployment_model-edge_device",
@@ -13736,7 +13850,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-01-06",
-      "lastSeen": "2026-09-17"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "TX-product_form-end_user_application",
@@ -13964,7 +14078,7 @@
         "HW-c5a22adcc66136ed"
       ],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-09-17"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -14196,6 +14310,7 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-20cb32f955e7a3d5",
         "EV-de1d0f5b1dbb0cd5",
         "EV-5e20c319d2ad9a67",
         "EV-ec55003461ff34b0",
@@ -14514,6 +14629,7 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-a7567fb3e6a46193",
         "EV-6d282114be5eef4f",
         "EV-b1b321fda18cc329",
         "EV-e272541b76d00306",
@@ -14719,8 +14835,8 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
-        "EN-69337578b2468a88",
         "EN-c70eca6b0f88f44d",
+        "EN-69337578b2468a88",
         "EN-e473f24d4325d51a",
         "EN-36408e3a0e094a6f",
         "EN-ce9408431e3d5934",
@@ -14879,9 +14995,9 @@
         "EN-b7bea343b08cce2c",
         "EN-fdb2cc367267ac57",
         "EN-4a639cb888a15d75",
-        "EN-d4f0bc5a29de06b5",
         "EN-0616a267820d2c78",
         "EN-286a3c612017ad1d",
+        "EN-d4f0bc5a29de06b5",
         "EN-89d01c9ba73cb5c4",
         "EN-11507a0e2f5e69d5",
         "EN-16478186eeecf696",
@@ -15285,6 +15401,7 @@
         "EV-0cb98302768c2e0a",
         "EV-34929bdd016dc8d6",
         "EV-00834dd71037c7cc",
+        "EV-4008b0134e8a2e8b",
         "EV-0f8b9d8ad97f0c21",
         "EV-d4c42c125b98b97e",
         "EV-06e6d004096040e0",
@@ -15548,7 +15665,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-17"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "TX-industry-aerospace_defense",
@@ -16277,7 +16394,7 @@
         "HW-9a39a7f449362f96"
       ],
       "firstSeen": "2026-05-08",
-      "lastSeen": "2026-09-16"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "TX-technology-open_weights",

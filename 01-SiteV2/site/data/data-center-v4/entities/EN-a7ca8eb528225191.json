@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-17T02:39:32.145Z",
-    "latestDataDate": "2026-09-17",
-    "currentDate": "2026-09-17",
-    "eventCount": 3338,
+    "generatedAt": "2026-09-18T00:28:49.225Z",
+    "latestDataDate": "2026-09-18",
+    "currentDate": "2026-09-18",
+    "eventCount": 3365,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -60,6 +60,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-f7580b8890e50121",
       "EV-2e485512093088da",
       "EV-4809eb76696a9e61",
       "EV-84bd528b36f55b00"
@@ -68,13 +69,14 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-04",
-    "lastSeen": "2026-09-15",
+    "lastSeen": "2026-09-18",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-f7580b8890e50121",
         "EV-2e485512093088da",
         "EV-4809eb76696a9e61"
       ],
@@ -85,6 +87,23 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-f7580b8890e50121",
+        "dataDate": "2026-09-18",
+        "date": "2026-09-16",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "AI 智能体新闻——2026年9月17日当周（每日更新）AI 智能体新闻——2026年9月17日当周",
+        "displayTags": [],
+        "entityIds": [
+          "EN-3ccbd9105a45d8fc",
+          "EN-a7ca8eb528225191",
+          "EN-d95491fb98f64655"
+        ]
+      },
       {
         "id": "EV-2e485512093088da",
         "dataDate": "2026-09-15",
@@ -169,6 +188,77 @@
   "fde": [],
   "hardware": [],
   "hardwareCatalog": [
+    {
+      "id": "HWC-e3536d1050e67439",
+      "snapshotKey": "e3536d1050e67439",
+      "snapshotId": "HWS-9b34bd883b861835",
+      "eventId": "EV-f7580b8890e50121",
+      "eventIds": [
+        "EV-f7580b8890e50121"
+      ],
+      "dataDate": "2026-09-18",
+      "date": "2026-09-18",
+      "title": "AI Agents News / AIforce",
+      "subject": "Salesforce",
+      "productNames": [
+        "AI Agents News",
+        "AIforce"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-73a5ae09fbc9df7c"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-18",
+          "hardware_fact_id": "HWF-73a5ae09fbc9df7c",
+          "fact_type": "product",
+          "observed_at": "2026-09-15T16:00:00.000Z",
+          "subject_entity_id": "EN-3ccbd9105a45d8fc",
+          "subject_name": "Salesforce",
+          "product_entity_ids": [
+            "EN-a7ca8eb528225191",
+            "EN-d95491fb98f64655"
+          ],
+          "product_names": [
+            "AI Agents News",
+            "AIforce"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "UiPath announced that Integration Service has evolved into an agent-ready connectivity layer that manages credentials, actions and event sources for coding agents and robots; the announcement and release notes were posted September 16, 2026.",
+          "event_refs": [
+            "EV-f7580b8890e50121"
+          ],
+          "claim_ref": "CL-b6ce4b36eea644f7",
+          "source_refs": [
+            "SA-0c71a77ed95a4d10"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-18/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://aiagentstore.ai/ai-agent-news/this-week",
+      "entityIds": [
+        "EN-3ccbd9105a45d8fc",
+        "EN-a7ca8eb528225191",
+        "EN-d95491fb98f64655"
+      ]
+    },
     {
       "id": "HWC-121c9699144faa88",
       "snapshotKey": "121c9699144faa88",
