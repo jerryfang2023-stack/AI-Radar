@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-17T02:39:32.145Z",
-    "latestDataDate": "2026-09-17",
-    "currentDate": "2026-09-17",
-    "eventCount": 3338,
+    "generatedAt": "2026-09-18T00:41:38.678Z",
+    "latestDataDate": "2026-09-18",
+    "currentDate": "2026-09-18",
+    "eventCount": 3342,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -58,20 +58,21 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 4,
     "china_market_company_count": 4,
     "first_disclosed_at": "2026-02-24",
-    "latest_disclosed_at": "2026-09-14",
+    "latest_disclosed_at": "2026-09-17",
     "role_counts": {
       "historical_or_ambiguous": 2,
       "lead": 1,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "other",
@@ -83,6 +84,11 @@
         "entity_id": "EN-1032f7a4df33f629",
         "canonical_entity_id": "EN-1032f7a4df33f629",
         "name": "千寻智能"
+      },
+      {
+        "entity_id": "EN-cfec5bef40cbf3ae",
+        "canonical_entity_id": "EN-cfec5bef40cbf3ae",
+        "name": "设序科技"
       },
       {
         "entity_id": "EN-4e781f6e9e5a49bc",
@@ -101,6 +107,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-c13791579c553f77",
+        "funding_insight_id": "FI-16674c19e6f87ab9",
+        "event_ids": [
+          "EV-b0637e99e328479b"
+        ],
+        "company_entity_id": "EN-cfec5bef40cbf3ae",
+        "company_canonical_entity_id": "EN-cfec5bef40cbf3ae",
+        "company_name": "设序科技",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "超亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿元"
+        },
+        "announced_at": "2026-09-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-887f1542c828b426",
+            "source_url": "https://news.pedaily.cn/202609/569177.shtml",
+            "source_title": "设序科技一连融资6轮，要做「工业界Anthropic」",
+            "source_content_hash": "7ba0fa9425a10e3a",
+            "quote": "最新的B轮融资既有 深产投、广发信德 等新投资方加入，也有老股东 涌铧投资 的持续加码。",
+            "quote_hash": "f3dd51ed9e56fe1d668349c85a77e94fb676db082981495bc533a6d767c27b28"
+          }
+        ]
+      },
       {
         "activity_id": "IA-1f62ce2f5872a41c",
         "funding_insight_id": "FI-257e4f42c36415ea",
@@ -346,6 +392,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-887f1542c828b426",
+        "source_url": "https://news.pedaily.cn/202609/569177.shtml",
+        "source_title": "设序科技一连融资6轮，要做「工业界Anthropic」",
+        "source_content_hash": "7ba0fa9425a10e3a",
+        "quote": "最新的B轮融资既有 深产投、广发信德 等新投资方加入，也有老股东 涌铧投资 的持续加码。",
+        "quote_hash": "f3dd51ed9e56fe1d668349c85a77e94fb676db082981495bc533a6d767c27b28"
+      },
       {
         "source_id": "FISRC-9cb02e3c79eee3a9",
         "source_url": "https://www.chinaventure.com.cn/news/113-20260914-393253.html",

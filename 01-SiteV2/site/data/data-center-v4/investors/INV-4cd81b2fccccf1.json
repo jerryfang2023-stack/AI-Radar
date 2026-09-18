@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-17T02:39:32.145Z",
-    "latestDataDate": "2026-09-17",
-    "currentDate": "2026-09-17",
-    "eventCount": 3338,
+    "generatedAt": "2026-09-18T00:41:38.678Z",
+    "latestDataDate": "2026-09-18",
+    "currentDate": "2026-09-18",
+    "eventCount": 3342,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -58,23 +58,24 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
+    "current_round_count": 7,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 6,
+    "portfolio_company_count": 7,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 6,
-    "china_market_company_count": 6,
+    "china_market_activity_count": 7,
+    "china_market_company_count": 7,
     "first_disclosed_at": "2026-01-26",
-    "latest_disclosed_at": "2026-09-06",
+    "latest_disclosed_at": "2026-09-17",
     "role_counts": {
       "lead": 1,
       "other_current_round": 1,
-      "participant": 4
+      "participant": 5
     },
     "round_codes": [
       "angel",
+      "pre_series_a_plus",
       "seed",
       "series_b_plus"
     ],
@@ -95,6 +96,11 @@
         "name": "瞬适科技"
       },
       {
+        "entity_id": "EN-9b7dfbc73b12c8b9",
+        "canonical_entity_id": "",
+        "name": "思博慧医"
+      },
+      {
         "entity_id": "EN-4eec97c17bca1de2",
         "canonical_entity_id": "EN-4eec97c17bca1de2",
         "name": "星熠智能"
@@ -111,6 +117,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-2d7eedc16acec1f6",
+        "funding_insight_id": "FI-aa4061384cb6ee16",
+        "event_ids": [
+          "EV-1d9cf73bba2debcc"
+        ],
+        "company_entity_id": "EN-9b7dfbc73b12c8b9",
+        "company_canonical_entity_id": "",
+        "company_name": "思博慧医",
+        "round": "Pre-A+轮",
+        "round_code": "pre_series_a_plus",
+        "round_original": "Pre-A+轮",
+        "amount_original": "近亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1 亿元"
+        },
+        "announced_at": "2026-09-17",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-0195a1b88a7ecb41",
+            "source_url": "https://news.pedaily.cn/202609/569157.shtml",
+            "source_title": "思博慧医完成近亿元Pre-A+轮融资，加速AI全自动磁控介入手术平台研发",
+            "source_content_hash": "4b021c644b47dde0",
+            "quote": "本轮由 诺庾资本领投，浦东创投、片仔癀盈科基金、同杨基金、太湖空天动力启明星跟投",
+            "quote_hash": "3e54f30fc23c389889a06fa46c44ee9017a3591a35a78563fc5a8863d1e0b9df"
+          }
+        ]
+      },
       {
         "activity_id": "IA-01432178b5616a7d",
         "funding_insight_id": "FI-8e02d6b25a91500c",
@@ -357,6 +403,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-0195a1b88a7ecb41",
+        "source_url": "https://news.pedaily.cn/202609/569157.shtml",
+        "source_title": "思博慧医完成近亿元Pre-A+轮融资，加速AI全自动磁控介入手术平台研发",
+        "source_content_hash": "4b021c644b47dde0",
+        "quote": "本轮由 诺庾资本领投，浦东创投、片仔癀盈科基金、同杨基金、太湖空天动力启明星跟投",
+        "quote_hash": "3e54f30fc23c389889a06fa46c44ee9017a3591a35a78563fc5a8863d1e0b9df"
+      },
       {
         "source_id": "FISRC-eb5fe8fcd40d4621",
         "source_url": "https://m.sohu.com/a/1072459266_546816?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",

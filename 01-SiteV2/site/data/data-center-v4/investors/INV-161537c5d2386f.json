@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-17T02:39:32.145Z",
-    "latestDataDate": "2026-09-17",
-    "currentDate": "2026-09-17",
-    "eventCount": 3338,
+    "generatedAt": "2026-09-18T00:41:38.678Z",
+    "latestDataDate": "2026-09-18",
+    "currentDate": "2026-09-18",
+    "eventCount": 3342,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -59,21 +59,62 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 0,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-07-23",
-    "latest_disclosed_at": "2026-07-23",
+    "latest_disclosed_at": "2026-09-17",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 2
     },
     "round_codes": [],
     "portfolio_companies": [],
     "activities": [
+      {
+        "activity_id": "IA-2a78ec1725081f13",
+        "funding_insight_id": "FI-16674c19e6f87ab9",
+        "event_ids": [
+          "EV-b0637e99e328479b"
+        ],
+        "company_entity_id": "EN-cfec5bef40cbf3ae",
+        "company_canonical_entity_id": "EN-cfec5bef40cbf3ae",
+        "company_name": "设序科技",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "超亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿元"
+        },
+        "announced_at": "2026-09-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-887f1542c828b426",
+            "source_url": "https://news.pedaily.cn/202609/569177.shtml",
+            "source_title": "设序科技一连融资6轮，要做「工业界Anthropic」",
+            "source_content_hash": "7ba0fa9425a10e3a",
+            "quote": "当年就拿下险峰长青、高榕资本、联想创投联合投资的数千万元天使轮。",
+            "quote_hash": "332e7f6a877a83ac23d5c1a12e8e0dd8d7f9d188e96a1e98d730e1c41628ad2b"
+          }
+        ]
+      },
       {
         "activity_id": "IA-296bac234b368262",
         "funding_insight_id": "FI-ee613463b934eef6",
@@ -116,6 +157,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-887f1542c828b426",
+        "source_url": "https://news.pedaily.cn/202609/569177.shtml",
+        "source_title": "设序科技一连融资6轮，要做「工业界Anthropic」",
+        "source_content_hash": "7ba0fa9425a10e3a",
+        "quote": "当年就拿下险峰长青、高榕资本、联想创投联合投资的数千万元天使轮。",
+        "quote_hash": "332e7f6a877a83ac23d5c1a12e8e0dd8d7f9d188e96a1e98d730e1c41628ad2b"
+      },
       {
         "source_id": "FISRC-7dfa7efaace4f3c8",
         "source_url": "https://news.pedaily.cn/202202/487236.shtml",

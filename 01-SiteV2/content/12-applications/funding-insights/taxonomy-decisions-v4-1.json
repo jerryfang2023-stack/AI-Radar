@@ -5,16 +5,16 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-09-17T02:20:11.194Z",
+    "generated_at": "2026-09-18T00:41:21.855Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 468,
-    "input_hash": "6d358eafc4b20faa",
+    "decision_count": 471,
+    "input_hash": "1c181b835d335cce",
     "override_count": 18,
     "needs_review_count": 52,
-    "low_confidence_count": 70
+    "low_confidence_count": 71
   },
   "decisions": [
     {
@@ -9378,6 +9378,69 @@
       "confidence": 0.78,
       "needs_review": false,
       "rationale": "公司为AI制药公司，核心团队、算法平台及管线资产均围绕药物研发这一医疗生命科学行业专属工作流，属于行业应用。"
+    },
+    {
+      "event_id": "EV-c96705c69e11c520",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "healthcare_life_sciences",
+      "market_application_id": "",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "research_discovery",
+        "design_engineering"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "researcher",
+        "developer"
+      ],
+      "confidence": 0.82,
+      "needs_review": false,
+      "rationale": "产品围绕药物发现、抗体设计等生命科学专业工作流构建，属于行业应用而非通用基础设施。"
+    },
+    {
+      "event_id": "EV-1d9cf73bba2debcc",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "public_sector_user",
+        "researcher"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "手术机器人平台通过VLA大模型感知、决策并执行物理操作，符合Physical AI定义。"
+    },
+    {
+      "event_id": "EV-b0637e99e328479b",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "industrials",
+      "market_application_id": "",
+      "product_form_id": "end_user_application",
+      "use_case_ids": [
+        "design_engineering",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "automotive_transportation"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "developer"
+      ],
+      "confidence": 0.78,
+      "needs_review": false,
+      "rationale": "则形AI直接生成工业设计方案，围绕工业设计专业工作流，客户为制造与汽车企业，属于工业行业应用。"
     }
   ]
 }

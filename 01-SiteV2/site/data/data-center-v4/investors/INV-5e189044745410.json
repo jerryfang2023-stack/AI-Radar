@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-17T02:39:32.145Z",
-    "latestDataDate": "2026-09-17",
-    "currentDate": "2026-09-17",
-    "eventCount": 3338,
+    "generatedAt": "2026-09-18T00:41:38.678Z",
+    "latestDataDate": "2026-09-18",
+    "currentDate": "2026-09-18",
+    "eventCount": 3342,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -58,22 +58,24 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
-    "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 2,
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 3,
+    "portfolio_company_count": 3,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 2,
     "china_market_company_count": 2,
     "first_disclosed_at": "2026-03-25",
-    "latest_disclosed_at": "2026-08-24",
+    "latest_disclosed_at": "2026-09-17",
     "role_counts": {
-      "historical_or_ambiguous": 2,
-      "participant": 2
+      "historical_or_ambiguous": 3,
+      "participant": 3
     },
     "round_codes": [
       "multi_round",
+      "other",
       "strategic"
     ],
     "portfolio_companies": [
@@ -86,9 +88,94 @@
         "entity_id": "EN-9a970ad7900121db",
         "canonical_entity_id": "EN-9a970ad7900121db",
         "name": "小鹏机器人业务"
+      },
+      {
+        "entity_id": "EN-bc06be2cba2b2f2c",
+        "canonical_entity_id": "",
+        "name": "Anew Labs"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-1a00f15decb1fab2",
+        "funding_insight_id": "FI-16674c19e6f87ab9",
+        "event_ids": [
+          "EV-b0637e99e328479b"
+        ],
+        "company_entity_id": "EN-cfec5bef40cbf3ae",
+        "company_canonical_entity_id": "EN-cfec5bef40cbf3ae",
+        "company_name": "设序科技",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "超亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿元"
+        },
+        "announced_at": "2026-09-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-887f1542c828b426",
+            "source_url": "https://news.pedaily.cn/202609/569177.shtml",
+            "source_title": "设序科技一连融资6轮，要做「工业界Anthropic」",
+            "source_content_hash": "7ba0fa9425a10e3a",
+            "quote": "当年就拿下险峰长青、高榕资本、联想创投联合投资的数千万元天使轮。",
+            "quote_hash": "332e7f6a877a83ac23d5c1a12e8e0dd8d7f9d188e96a1e98d730e1c41628ad2b"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-19d01f60bac2e628",
+        "funding_insight_id": "FI-af7196eb73090b84",
+        "event_ids": [
+          "EV-c96705c69e11c520"
+        ],
+        "company_entity_id": "EN-bc06be2cba2b2f2c",
+        "company_canonical_entity_id": "",
+        "company_name": "Anew Labs",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "首轮",
+        "amount_original": "2.9亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 290000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.9 亿美元"
+        },
+        "announced_at": "2026-09-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-55c913083e7dcd21",
+            "source_url": "https://www.chinaventure.com.cn/news/111-20260917-393303.html",
+            "source_title": "20亿首轮，字节分拆AI制药拿下巨额融资 - 投中网",
+            "source_content_hash": "2896ab8dacb23e1a",
+            "quote": "高榕创投、春华创投、博裕资本参与",
+            "quote_hash": "2d3224672af10a84c2db98c58b0ce4208fcc768075f1cafc53f3b81e3d20a853"
+          }
+        ]
+      },
       {
         "activity_id": "IA-7574006920ec4306",
         "funding_insight_id": "FI-e3406c2e889004e3",
@@ -251,6 +338,22 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-887f1542c828b426",
+        "source_url": "https://news.pedaily.cn/202609/569177.shtml",
+        "source_title": "设序科技一连融资6轮，要做「工业界Anthropic」",
+        "source_content_hash": "7ba0fa9425a10e3a",
+        "quote": "当年就拿下险峰长青、高榕资本、联想创投联合投资的数千万元天使轮。",
+        "quote_hash": "332e7f6a877a83ac23d5c1a12e8e0dd8d7f9d188e96a1e98d730e1c41628ad2b"
+      },
+      {
+        "source_id": "FISRC-55c913083e7dcd21",
+        "source_url": "https://www.chinaventure.com.cn/news/111-20260917-393303.html",
+        "source_title": "20亿首轮，字节分拆AI制药拿下巨额融资 - 投中网",
+        "source_content_hash": "2896ab8dacb23e1a",
+        "quote": "高榕创投、春华创投、博裕资本参与",
+        "quote_hash": "2d3224672af10a84c2db98c58b0ce4208fcc768075f1cafc53f3b81e3d20a853"
+      },
       {
         "source_id": "FISRC-2ec9a5e83ce18f75",
         "source_url": "https://www.xiaopeng.com/news/company_news/5585.html",
