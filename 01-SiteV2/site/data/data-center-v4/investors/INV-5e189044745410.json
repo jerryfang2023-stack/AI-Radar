@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-18T00:41:38.678Z",
+    "generatedAt": "2026-09-18T02:50:25.844Z",
     "latestDataDate": "2026-09-18",
     "currentDate": "2026-09-18",
-    "eventCount": 3342,
+    "eventCount": 3369,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -75,8 +75,7 @@
     },
     "round_codes": [
       "multi_round",
-      "other",
-      "strategic"
+      "other"
     ],
     "portfolio_companies": [
       {
@@ -90,9 +89,9 @@
         "name": "小鹏机器人业务"
       },
       {
-        "entity_id": "EN-bc06be2cba2b2f2c",
+        "entity_id": "FICO-anew-labs",
         "canonical_entity_id": "",
-        "name": "Anew Labs"
+        "name": "Anew Labs（新生实验室）"
       }
     ],
     "activities": [
@@ -137,14 +136,15 @@
         ]
       },
       {
-        "activity_id": "IA-19d01f60bac2e628",
-        "funding_insight_id": "FI-af7196eb73090b84",
+        "activity_id": "IA-190c79ead56eb394",
+        "funding_insight_id": "FI-e81dafc2defecb80",
         "event_ids": [
-          "EV-c96705c69e11c520"
+          "EV-c96705c69e11c520",
+          "EV-91459f0d9446f471"
         ],
-        "company_entity_id": "EN-bc06be2cba2b2f2c",
+        "company_entity_id": "FICO-anew-labs",
         "company_canonical_entity_id": "",
-        "company_name": "Anew Labs",
+        "company_name": "Anew Labs（新生实验室）",
         "round": "其他融资",
         "round_code": "other",
         "round_original": "首轮",
@@ -158,7 +158,7 @@
           "status": "exact",
           "display_zh": "2.9 亿美元"
         },
-        "announced_at": "2026-09-17",
+        "announced_at": "2026-09-16",
         "market_region": "GLOBAL",
         "china_market_match": false,
         "disclosure_status": "disclosed",
@@ -177,26 +177,27 @@
         ]
       },
       {
-        "activity_id": "IA-7574006920ec4306",
-        "funding_insight_id": "FI-e3406c2e889004e3",
+        "activity_id": "IA-ba3340a4d65d6773",
+        "funding_insight_id": "FI-7f089c67ec59f0c9",
         "event_ids": [
+          "EV-47f16317cc2d62e2",
           "EV-987cb2e5e20f79ce"
         ],
         "company_entity_id": "EN-9a970ad7900121db",
         "company_canonical_entity_id": "EN-9a970ad7900121db",
         "company_name": "小鹏机器人业务",
-        "round": "战略融资",
-        "round_code": "strategic",
-        "round_original": "战略融资",
-        "amount_original": "9亿美元",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "首轮融资",
+        "amount_original": "超9亿美元",
         "amount_normalized": {
           "currency": "USD",
           "value": 900000000,
-          "min_value": null,
+          "min_value": 900000000,
           "max_value": null,
           "unit": "base",
-          "status": "exact",
-          "display_zh": "9 亿美元"
+          "status": "lower_bound",
+          "display_zh": "超过 9 亿美元"
         },
         "announced_at": "2026-08-24",
         "market_region": "CN",
@@ -211,8 +212,8 @@
             "source_url": "https://www.xiaopeng.com/news/company_news/5585.html",
             "source_title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
             "source_content_hash": "b8e4f0b869df00ee",
-            "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持。",
-            "quote_hash": "4e355e2322abcda0bc4a3d5a3e5d29c70f9c739e2e601e6eae9f49ef4b9e6765"
+            "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持",
+            "quote_hash": "0c0e04917436353a249175e0fe3954233525524468f8b84521713be86611d620"
           }
         ]
       },
@@ -359,8 +360,8 @@
         "source_url": "https://www.xiaopeng.com/news/company_news/5585.html",
         "source_title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
         "source_content_hash": "b8e4f0b869df00ee",
-        "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持。",
-        "quote_hash": "4e355e2322abcda0bc4a3d5a3e5d29c70f9c739e2e601e6eae9f49ef4b9e6765"
+        "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持",
+        "quote_hash": "0c0e04917436353a249175e0fe3954233525524468f8b84521713be86611d620"
       },
       {
         "source_id": "FISRC-3e04e9bd8fc1ab06",

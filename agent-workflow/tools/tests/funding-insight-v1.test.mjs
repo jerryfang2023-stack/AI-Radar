@@ -237,7 +237,7 @@ test("funding claim source quotes recover the funded company when a headline bec
   assert.deepEqual(fundingEventCardConsistencyProblems(card, event, claims, entities), []);
 });
 import { selectHistoricalFundingEvents } from "../backfill-funding-insights-history.mjs";
-import { promptFor, selectFundingEventsForGeneration } from "../generate-funding-insights-deepseek.mjs";
+import { promptFor, selectFundingEventsForGeneration, sameFundingDisclosureForReuse } from "../generate-funding-insights-deepseek.mjs";
 import { assertFundingFounderReview, collectFundingFounderCandidates } from "../build-funding-founder-review.mjs";
 import { inspectFundingInsightWork } from "../inspect-funding-insight-work.mjs";
 import {
@@ -2788,6 +2788,88 @@ test("canonical funding proceeds preserve source qualifiers instead of metric pr
     assert.equal(amount.value, 300000000);
     assert.equal(amount.status, expected);
   }
+});
+
+test("incremental funding reuse does not swallow an additional investment with the same company and round", () => {
+  const folder = path.join(root, "01-SiteV2/content/11-databases/data-center-v4/2026-09-18");
+  const realEvent = JSON.parse(fs.readFileSync(path.join(folder, "canonical-events.json"), "utf8"))
+    .find((item) => item.event_id === "EV-ed8323204ab69697");
+  const claims = JSON.parse(fs.readFileSync(path.join(folder, "claims.json"), "utf8"));
+  assert.equal(normalizeFundingAmount(canonicalFundingEventAmount(realEvent, claims)).value, 53000000,
+    "current incremental proceeds must not come from the founder's previous startup's $50M seed round");
+  const event = { event_id: "EV-new", object: "$53 million", metrics: ["$53 million"], disclosed_at: "2026-09-16" };
+  const old = { triggered_by_event_id: "EV-old", aggregation: { key: "EN-HANG|seed" },
+    financing: { amount: "$32 million", announced_at: "2026-06-24" } };
+  const select = (card) => selectFundingEventsForGeneration([event], { publishedCards: [card],
+    eventAggregationKey: () => "EN-HANG|seed", publishedCardMatchesEvent: sameFundingDisclosureForReuse });
+  assert.equal(select(old).pending.length, 1);
+  assert.equal(select({ ...old, financing: { amount: "$53M", announced_at: "2026-09-17" } }).deduplicated.length, 1);
+  assert.equal(select({ ...old, financing: { amount: "$53M", announced_at: "2026-06-24" } }).pending.length, 1);
+  assert.equal(select({ ...old, financing: { amount: "$53M", announced_at: "" } }).pending.length, 1);
+  assert.equal(select({ ...old, source_event_ids: [event.event_id] }).deduplicated.length, 1);
+});
+
+test("accepted appositive funding sentence resolves the recipient, not the founder's previous employer", () => {
+  const entities = [
+    { entity_id: "EN-HANG", entity_type: "organization_candidate", canonical_name: "Hang Ten Systems" },
+    { entity_id: "EN-SOFTBANK", entity_type: "organization_candidate", canonical_name: "SoftBank", verification_status: "verified" },
+  ];
+  const claim = { claim_id: "CL-HANG", claim_type: "funding", verification_status: "accepted",
+    subject: "Former Infosys chief's AI startup", object: "another $53M",
+    source_quote: "Hang Ten Systems , an AI startup founded by former Infosys CEO Vishal Sikka just four months ago, has expanded its seed funding by another $53 million." };
+  const event = { event_type: "funding", entities: entities.map((entity) => entity.entity_id), claim_refs: [claim.claim_id],
+    action: "nabs", object: "another $53M", metrics: ["$53M"], display_title_zh: "前印孚瑟斯首席执行官的AI初创公司再获5300万美元" };
+  assert.equal(subjectCompanyForEvent(event, entities, {}, [claim])?.entity_id, "EN-HANG");
+  assert.notEqual(subjectCompanyForEvent(event, entities, {}, [{ ...claim, verification_status: "pending" }])?.entity_id, "EN-HANG");
+  assert.notEqual(subjectCompanyForEvent(event, entities, {}, [{ ...claim,
+    source_quote: claim.source_quote.replace("$53 million", "$32 million") }])?.entity_id, "EN-HANG");
+  for (const source_quote of [
+    "Hang Ten Systems , an AI startup founded by Vishal Sikka, has invested $53 million in another company.",
+    "Hang Ten Systems , an AI startup founded by Vishal Sikka, has not raised $53 million.",
+  ]) assert.notEqual(subjectCompanyForEvent(event, entities, {}, [{ ...claim, source_quote }])?.entity_id, "EN-HANG");
+});
+
+test("Sep18 XPeng official repost preserves the original financing and qualifier", () => {
+  const cards = ["2026-09-03", "2026-09-18"].flatMap((date) => JSON.parse(fs.readFileSync(path.join(root,
+    `01-SiteV2/content/12-applications/funding-insights/${date}.json`), "utf8")).cards)
+    .filter((card) => ["EV-987cb2e5e20f79ce", "EV-47f16317cc2d62e2"].includes(card.triggered_by_event_id));
+  assert.equal(cards.length, 2);
+  const result = aggregateFundingRoundCards(cards);
+  assert.equal(result.length, 1);
+  assert.equal(result[0].financing.announced_at, "2026-08-24");
+  assert.equal(result[0].financing.amount_normalized.status, "lower_bound");
+  assert.deepEqual(new Set(result[0].source_event_ids), new Set(cards.map((card) => card.triggered_by_event_id)));
+});
+
+test("Sep18 Yuanchuan repost preserves two disclosures as one historical financing", () => {
+  const cards = ["2026-09-17", "2026-09-18"].flatMap((date) => JSON.parse(fs.readFileSync(path.join(root,
+    `01-SiteV2/content/12-applications/funding-insights/${date}.json`), "utf8")).cards)
+    .filter((card) => ["EV-b9ef27cd1fd9b9a9", "EV-3db9a076e3b7d4fd"].includes(card.triggered_by_event_id));
+  assert.equal(cards.length, 2);
+  const review = JSON.parse(fs.readFileSync(path.join(root,
+    "01-SiteV2/content/12-applications/funding-insights/company-identity-decisions.json"), "utf8"));
+  const result = aggregateFundingRoundCards(cards, {}, {}, review);
+  assert.equal(result.length, 1);
+  assert.equal(result[0].company.application_entity_id, "FICO-yuanchuan-micro");
+  assert.equal(result[0].financing.announced_at, "2026-07-24");
+  assert.deepEqual(new Set(result[0].source_event_ids), new Set(cards.map((card) => card.triggered_by_event_id)));
+  assert.equal(result[0].financing.disclosures.length, 2);
+});
+
+test("Sep18 Anew identity review retains both disclosures without doubling the first round", () => {
+  const cards = ["2026-09-17", "2026-09-18"].flatMap((date) => JSON.parse(fs.readFileSync(path.join(root,
+    `01-SiteV2/content/12-applications/funding-insights/${date}.json`), "utf8")).cards)
+    .filter((card) => ["EV-91459f0d9446f471", "EV-c96705c69e11c520"].includes(card.triggered_by_event_id));
+  assert.equal(cards.length, 2);
+  const review = JSON.parse(fs.readFileSync(path.join(root,
+    "01-SiteV2/content/12-applications/funding-insights/company-identity-decisions.json"), "utf8"));
+  const result = aggregateFundingRoundCards(cards, {}, {}, review);
+  assert.equal(result.length, 1);
+  assert.equal(result[0].company.application_entity_id, "FICO-anew-labs");
+  assert.equal(result[0].financing.amount_normalized.value, 290000000);
+  assert.equal(result[0].financing.announced_at, "2026-09-16");
+  assert.deepEqual(new Set(result[0].source_event_ids), new Set(cards.map((card) => card.triggered_by_event_id)));
+  assert.equal(result[0].financing.disclosures.length, 2);
 });
 
 test("Sep15 reviewed domestic identities aggregate duplicate disclosures without losing source events", () => {

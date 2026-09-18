@@ -62,24 +62,36 @@ export function selectFundingEventsForGeneration(events = [], {
   force: forceGeneration = false,
   eventAggregationKey = () => "",
   allowAggregationReuse = () => true,
+  publishedCardMatchesEvent = () => true,
 } = {}) {
   if (forceGeneration) return { pending: [...events], reused: [], deduplicated: [] };
   const currentEventIds = new Set(currentCards.map((card) => card.triggered_by_event_id).filter(Boolean));
   const publishedEventIds = new Set(publishedCards
     .flatMap((card) => card.source_event_ids || [card.triggered_by_event_id])
     .filter(Boolean));
-  const publishedAggregationKeys = new Set(publishedCards.map((card) => (
+  const publishedAggregationKey = (card) => (
     card.aggregation?.key
     || `${card.company?.entity_id || clean(card.company?.name).toLowerCase()}|${normalizeFundingRound(card.financing?.round_original || card.financing?.round).code}`
-  )).filter(Boolean));
+  );
   return events.reduce((selection, event) => {
     const aggregationKey = eventAggregationKey(event);
     if (currentEventIds.has(event.event_id)) selection.reused.push(event);
     else if (publishedEventIds.has(event.event_id)
-      || (allowAggregationReuse(event) && aggregationKey && publishedAggregationKeys.has(aggregationKey))) selection.deduplicated.push(event);
+      || (allowAggregationReuse(event) && aggregationKey && publishedCards.some((card) =>
+        publishedAggregationKey(card) === aggregationKey && publishedCardMatchesEvent(event, card)))) selection.deduplicated.push(event);
     else selection.pending.push(event);
     return selection;
   }, { pending: [], reused: [], deduplicated: [] });
+}
+
+export function sameFundingDisclosureForReuse(event, card, claims = []) {
+  const amount = normalizeFundingAmount(canonicalFundingEventAmount(event, claims));
+  const previous = normalizeFundingAmount(card.financing?.amount_original || card.financing?.amount);
+  if (!amount.currency || amount.status === "undisclosed") return false;
+  if (!["currency", "status", "value", "min_value", "max_value"].every((key) => amount[key] === previous[key])) return false;
+  const date = Date.parse(event.disclosed_at || event.event_time || "");
+  const previousDate = Date.parse(card.financing?.announced_at || "");
+  return Number.isFinite(date) && Number.isFinite(previousDate) && Math.abs(date - previousDate) <= 3 * 86400000;
 }
 
 export function fundingEventAggregationKey(event, bundle, entityIndex = {}) {
@@ -1015,6 +1027,9 @@ async function main() {
     // Historical rounds need their own evidence and disclosure references.
     // A company/round label alone does not establish that this is the old event.
     allowAggregationReuse: (event) => !(event.source_refs || []).some((id) => historySourceIds.has(id)),
+    // An additional seed investment is not the old seed round merely because
+    // company and round match. Missing or changed amount/date requires research.
+    publishedCardMatchesEvent: (event, card) => sameFundingDisclosureForReuse(event, card, bundle.claims),
   });
   const pending = generationSelection.pending;
   if (!write) {

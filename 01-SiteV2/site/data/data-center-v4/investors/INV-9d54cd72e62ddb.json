@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-18T00:41:38.678Z",
+    "generatedAt": "2026-09-18T02:50:25.844Z",
     "latestDataDate": "2026-09-18",
     "currentDate": "2026-09-18",
-    "eventCount": 3342,
+    "eventCount": 3369,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -58,7 +58,7 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
     "portfolio_company_count": 2,
     "market_regions": [
@@ -67,10 +67,10 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-06-24",
-    "latest_disclosed_at": "2026-07-01",
+    "latest_disclosed_at": "2026-09-16",
     "role_counts": {
       "lead": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "seed",
@@ -89,6 +89,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-bee3553b35504baa",
+        "funding_insight_id": "FI-7c10ad3e094103e9",
+        "event_ids": [
+          "EV-ed8323204ab69697"
+        ],
+        "company_entity_id": "EN-0cc3af265406c202",
+        "company_canonical_entity_id": "",
+        "company_name": "Hang Ten Systems",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮扩展（第二轮种子轮）",
+        "amount_original": "$53M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 53000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5300 万美元"
+        },
+        "announced_at": "2026-09-16",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-def75ecd4873d016",
+            "source_url": "https://techcrunch.com/2026/09/16/former-infosys-chiefs-ai-startup-adds-50m-to-seed-weeks-after-initial-raise/",
+            "source_title": "前印孚瑟斯首席执行官的AI初创公司再获5300万美元",
+            "source_content_hash": "6a0023459752d1bc",
+            "quote": "Other investors include Aramco Ventures, Intel CEO Lip-Bu Tan, Micron CEO Sanjay Mehrotra, and Yahoo co-founder Jerry Yang",
+            "quote_hash": "6a78b3d7a9c9ed703dacf820de4670ff34ec7b3d27d9f1672dcc26b95f1c72ad"
+          }
+        ]
+      },
       {
         "activity_id": "IA-dff0df6fd3293471",
         "funding_insight_id": "FI-2dfbeaa7d627041d",
@@ -171,6 +211,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-def75ecd4873d016",
+        "source_url": "https://techcrunch.com/2026/09/16/former-infosys-chiefs-ai-startup-adds-50m-to-seed-weeks-after-initial-raise/",
+        "source_title": "前印孚瑟斯首席执行官的AI初创公司再获5300万美元",
+        "source_content_hash": "6a0023459752d1bc",
+        "quote": "Other investors include Aramco Ventures, Intel CEO Lip-Bu Tan, Micron CEO Sanjay Mehrotra, and Yahoo co-founder Jerry Yang",
+        "quote_hash": "6a78b3d7a9c9ed703dacf820de4670ff34ec7b3d27d9f1672dcc26b95f1c72ad"
+      },
       {
         "source_id": "FISRC-6f0f12fb121fbd88",
         "source_url": "https://techcrunch.com/2026/07/01/neocloud-together-ai-raises-800m-leaps-to-8-3b-valuation/",

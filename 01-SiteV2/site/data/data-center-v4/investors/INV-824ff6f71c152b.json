@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-18T00:41:38.678Z",
+    "generatedAt": "2026-09-18T02:50:25.844Z",
     "latestDataDate": "2026-09-18",
     "currentDate": "2026-09-18",
-    "eventCount": 3342,
+    "eventCount": 3369,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -58,9 +58,9 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 5,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 1,
     "market_regions": [
       "CN",
       "GLOBAL"
@@ -68,81 +68,36 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-01-26",
-    "latest_disclosed_at": "2026-09-17",
+    "latest_disclosed_at": "2026-09-16",
     "role_counts": {
       "co_lead": 1,
-      "historical_or_ambiguous": 5,
-      "participant": 1
+      "historical_or_ambiguous": 5
     },
     "round_codes": [
       "other"
     ],
     "portfolio_companies": [
       {
-        "entity_id": "EN-bc06be2cba2b2f2c",
-        "canonical_entity_id": "",
-        "name": "Anew Labs"
-      },
-      {
-        "entity_id": "EN-0650ad8ad48129f7",
+        "entity_id": "FICO-anew-labs",
         "canonical_entity_id": "",
         "name": "Anew Labs（新生实验室）"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-66da4c6eb1dddbe9",
-        "funding_insight_id": "FI-af7196eb73090b84",
+        "activity_id": "IA-0b9d4e01aa4d0904",
+        "funding_insight_id": "FI-e81dafc2defecb80",
         "event_ids": [
-          "EV-c96705c69e11c520"
-        ],
-        "company_entity_id": "EN-bc06be2cba2b2f2c",
-        "company_canonical_entity_id": "",
-        "company_name": "Anew Labs",
-        "round": "其他融资",
-        "round_code": "other",
-        "round_original": "首轮",
-        "amount_original": "2.9亿美元",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 290000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "2.9 亿美元"
-        },
-        "announced_at": "2026-09-17",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮联合领投",
-        "role_code": "co_lead",
-        "evidence": [
-          {
-            "source_id": "FISRC-55c913083e7dcd21",
-            "source_url": "https://www.chinaventure.com.cn/news/111-20260917-393303.html",
-            "source_title": "20亿首轮，字节分拆AI制药拿下巨额融资 - 投中网",
-            "source_content_hash": "2896ab8dacb23e1a",
-            "quote": "Anew Labs本轮投资方包括HSG（原红杉中国）、IDG资本、高瓴，五源资本联合领投",
-            "quote_hash": "fa6b8d97dd46f040e739d45a5d02948a7f8341029e22be4a966a18cbb49be81c"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-a868bf121196851f",
-        "funding_insight_id": "FI-bca8dec29dd014aa",
-        "event_ids": [
+          "EV-c96705c69e11c520",
           "EV-91459f0d9446f471"
         ],
-        "company_entity_id": "EN-0650ad8ad48129f7",
+        "company_entity_id": "FICO-anew-labs",
         "company_canonical_entity_id": "",
         "company_name": "Anew Labs（新生实验室）",
         "round": "其他融资",
         "round_code": "other",
-        "round_original": "首轮独立融资",
-        "amount_original": "2.9 亿美元",
+        "round_original": "首轮",
+        "amount_original": "2.9亿美元",
         "amount_normalized": {
           "currency": "USD",
           "value": 290000000,
@@ -157,16 +112,16 @@
         "china_market_match": false,
         "disclosure_status": "disclosed",
         "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
         "evidence": [
           {
-            "source_id": "FISRC-62ba365f86c97ef7",
-            "source_url": "https://news.pedaily.cn/202609/569118.shtml",
-            "source_title": "首发| Anew Labs已完成2.9 亿美元融资，红杉中国、高瓴、IDG - 投资界",
-            "source_content_hash": "13ff3ab9cdd5ecf4",
-            "quote": "本轮投资方涵盖 红杉中国、IDG资本、高瓴创投、五源资本、高榕资本等 投资机构",
-            "quote_hash": "760baa8b75a317471229c57d7f59d980eb75cd55745e055585341d264d284865"
+            "source_id": "FISRC-55c913083e7dcd21",
+            "source_url": "https://www.chinaventure.com.cn/news/111-20260917-393303.html",
+            "source_title": "20亿首轮，字节分拆AI制药拿下巨额融资 - 投中网",
+            "source_content_hash": "2896ab8dacb23e1a",
+            "quote": "Anew Labs本轮投资方包括HSG（原红杉中国）、IDG资本、高瓴，五源资本联合领投",
+            "quote_hash": "fa6b8d97dd46f040e739d45a5d02948a7f8341029e22be4a966a18cbb49be81c"
           }
         ]
       },
@@ -380,14 +335,6 @@
         "source_content_hash": "2896ab8dacb23e1a",
         "quote": "Anew Labs本轮投资方包括HSG（原红杉中国）、IDG资本、高瓴，五源资本联合领投",
         "quote_hash": "fa6b8d97dd46f040e739d45a5d02948a7f8341029e22be4a966a18cbb49be81c"
-      },
-      {
-        "source_id": "FISRC-62ba365f86c97ef7",
-        "source_url": "https://news.pedaily.cn/202609/569118.shtml",
-        "source_title": "首发| Anew Labs已完成2.9 亿美元融资，红杉中国、高瓴、IDG - 投资界",
-        "source_content_hash": "13ff3ab9cdd5ecf4",
-        "quote": "本轮投资方涵盖 红杉中国、IDG资本、高瓴创投、五源资本、高榕资本等 投资机构",
-        "quote_hash": "760baa8b75a317471229c57d7f59d980eb75cd55745e055585341d264d284865"
       },
       {
         "source_id": "FISRC-773362f4e07cd598",

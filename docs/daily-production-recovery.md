@@ -102,6 +102,18 @@ in a valid commit is a normal first run, not failed recovery. Invalid references
 Git errors, malformed JSON and invalid card arrays still fail closed. Existing
 cards continue through the normal evidence and canonical-consistency gates.
 
+Incremental funding reuse requires more than company and round: unless the
+source event is already represented, normalized proceeds (including qualifier)
+must match and disclosure dates must be within three days. A missing amount/date
+or an additional investment resumes research rather than silently reusing an old
+seed card. Historical-authorized sources retain their stricter independent-review
+path. For founder-led English headlines, a directly named, linked recipient in
+an accepted appositive financing sentence can resolve the company; pending
+claims, negation, outward investments and mismatched amounts do not qualify.
+`expanded its seed funding by` binds the incremental proceeds, not a later
+paragraph about the founder's previous company. September 18 Hang Ten regressions
+cover all three boundaries without changing canonical evidence.
+
 Public company/product indexes require an accepted catalog decision with an
 attributed reviewer. Coverage and frontstage construction share that admission
 set and merge resolution. Unreviewed entities remain pending, with counts and

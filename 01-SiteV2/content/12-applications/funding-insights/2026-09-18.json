@@ -2,22 +2,2990 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.3",
     "date": "2026-09-18",
-    "generated_at": "2026-09-18T00:41:12.261Z",
+    "generated_at": "2026-09-18T02:44:17.750Z",
     "trigger": "verified_funding_events_with_three_month_backfill",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
     "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
-      "funding_events": 8,
-      "auto_published": 3,
+      "funding_events": 14,
+      "auto_published": 7,
       "blocked": 0,
       "pending": 0,
-      "deduplicated": 5
+      "deduplicated": 7
     },
     "taxonomy_version": "TAG-V4.1"
   },
   "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-6bc83b7f0f864241",
+      "triggered_by_event_id": "EV-ed8323204ab69697",
+      "as_of_date": "2026-09-18",
+      "company": {
+        "entity_id": "EN-0cc3af265406c202",
+        "name": "Hang Ten Systems",
+        "full_name": "Hang Ten Systems",
+        "website": "https://hangten.ai/",
+        "summary": "Hang Ten Systems是一家企业AI服务公司，由前印孚瑟斯首席执行官Vishal Sikka于2026年5月创立，为大型企业提供咨询、转型和应用型AI服务，通过AI原生交付模式构建、改造和运行企业软件。",
+        "headquarters": "Palo Alto, California",
+        "founders": [
+          {
+            "name": "Vishal Sikka",
+            "role": "创始人兼首席执行官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-def75ecd4873d016",
+                "quote": "Hang Ten Systems , an AI startup founded by former Infosys CEO Vishal Sikka just four months ago",
+                "source_content_hash": "6a0023459752d1bc",
+                "quote_hash": "72de80c387d02ba6cff0b806acff2daca5496aa8c9e53e57c093e896b264a2ae"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "20-25",
+          "observed_at": "2026-09-16",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-def75ecd4873d016",
+              "quote": "The Palo Alto-headquartered startup currently has about 20 to 25 employees across the U.S., the Middle East, and Australia",
+              "source_content_hash": "6a0023459752d1bc",
+              "quote_hash": "c929ad250b05ca4827a575442a259f13d8d70f693b38b7380087f3c6732f7917"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-def75ecd4873d016",
+            "quote": "Hang Ten Systems , an AI startup founded by former Infosys CEO Vishal Sikka just four months ago",
+            "source_content_hash": "6a0023459752d1bc",
+            "quote_hash": "72de80c387d02ba6cff0b806acff2daca5496aa8c9e53e57c093e896b264a2ae"
+          }
+        ],
+        "application_entity_id": "EN-0cc3af265406c202",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "$53M",
+        "total_raised": "$85 million",
+        "announced_at": "2026-09-16",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Xora",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b861572f4d82c021",
+                "quote": "Hang Ten Systems today announced an additional $53 million in seed funding led by Xora, a Temasek-backed fund, bringing total funding in the company to $85 million.",
+                "source_content_hash": "962f5742994aa00e",
+                "quote_hash": "f9f8a52608f22ed9ee6da4c15442a72fd8067a53d3fc0711909dde56545656de"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Aramco Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-def75ecd4873d016",
+                "quote": "Other investors include Aramco Ventures, Intel CEO Lip-Bu Tan, Micron CEO Sanjay Mehrotra, and Yahoo co-founder Jerry Yang",
+                "source_content_hash": "6a0023459752d1bc",
+                "quote_hash": "6a78b3d7a9c9ed703dacf820de4670ff34ec7b3d27d9f1672dcc26b95f1c72ad"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Lip-Bu Tan",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-def75ecd4873d016",
+                "quote": "Other investors include Aramco Ventures, Intel CEO Lip-Bu Tan, Micron CEO Sanjay Mehrotra, and Yahoo co-founder Jerry Yang",
+                "source_content_hash": "6a0023459752d1bc",
+                "quote_hash": "6a78b3d7a9c9ed703dacf820de4670ff34ec7b3d27d9f1672dcc26b95f1c72ad"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Sanjay Mehrotra",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-def75ecd4873d016",
+                "quote": "Other investors include Aramco Ventures, Intel CEO Lip-Bu Tan, Micron CEO Sanjay Mehrotra, and Yahoo co-founder Jerry Yang",
+                "source_content_hash": "6a0023459752d1bc",
+                "quote_hash": "6a78b3d7a9c9ed703dacf820de4670ff34ec7b3d27d9f1672dcc26b95f1c72ad"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Jerry Yang",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-def75ecd4873d016",
+                "quote": "Other investors include Aramco Ventures, Intel CEO Lip-Bu Tan, Micron CEO Sanjay Mehrotra, and Yahoo co-founder Jerry Yang",
+                "source_content_hash": "6a0023459752d1bc",
+                "quote_hash": "6a78b3d7a9c9ed703dacf820de4670ff34ec7b3d27d9f1672dcc26b95f1c72ad"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-def75ecd4873d016",
+            "quote": "Former Infosys chief’s AI startup nabs another $53M",
+            "source_content_hash": "6a0023459752d1bc",
+            "quote_hash": "e41f6762aaa61053c72bef9beadec7fe8b84026b9bddc3d703cfbe0039bd7065"
+          },
+          {
+            "source_id": "FISRC-def75ecd4873d016",
+            "quote": "has expanded its seed funding by another $53 million. This new investment round was closed just five weeks after the initial $32 million seed round was closed",
+            "source_content_hash": "6a0023459752d1bc",
+            "quote_hash": "c42924a518b08572b1f835026ff5db94ef01c866a7dda6035fc3ddafdbbbfc3e"
+          },
+          {
+            "source_id": "FISRC-b861572f4d82c021",
+            "quote": "Hang Ten Systems today announced an additional $53 million in seed funding led by Xora, a Temasek-backed fund, bringing total funding in the company to $85 million.",
+            "source_content_hash": "962f5742994aa00e",
+            "quote_hash": "f9f8a52608f22ed9ee6da4c15442a72fd8067a53d3fc0711909dde56545656de"
+          }
+        ],
+        "round_code": "seed",
+        "round_original": "种子轮扩展（第二轮种子轮）",
+        "amount_original": "$53M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 53000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5300 万美元"
+        },
+        "total_raised_original": "$85 million",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 85000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "8500 万美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-ed8323204ab69697",
+            "round_original": "种子轮扩展（第二轮种子轮）",
+            "amount": "$53M",
+            "announced_at": "2026-09-16",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-def75ecd4873d016",
+                "quote": "Former Infosys chief’s AI startup nabs another $53M",
+                "source_content_hash": "6a0023459752d1bc",
+                "quote_hash": "e41f6762aaa61053c72bef9beadec7fe8b84026b9bddc3d703cfbe0039bd7065"
+              },
+              {
+                "source_id": "FISRC-def75ecd4873d016",
+                "quote": "has expanded its seed funding by another $53 million. This new investment round was closed just five weeks after the initial $32 million seed round was closed",
+                "source_content_hash": "6a0023459752d1bc",
+                "quote_hash": "c42924a518b08572b1f835026ff5db94ef01c866a7dda6035fc3ddafdbbbfc3e"
+              },
+              {
+                "source_id": "FISRC-b861572f4d82c021",
+                "quote": "Hang Ten Systems today announced an additional $53 million in seed funding led by Xora, a Temasek-backed fund, bringing total funding in the company to $85 million.",
+                "source_content_hash": "962f5742994aa00e",
+                "quote_hash": "f9f8a52608f22ed9ee6da4c15442a72fd8067a53d3fc0711909dde56545656de"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Hobie",
+          "description": "Hobie是Hang Ten的代理式AI平台，通过五个层次读取客户实时系统、建模业务并回答可追溯到源数据的问题，支持受监管行业和复杂企业软件项目。",
+          "target_customers": "年收入超过100亿美元的大型企业",
+          "features": [
+            "代理式代码生成",
+            "可复用技能库",
+            "语义建模层",
+            "就地数据查询",
+            "审计与治理"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9890cac27c64857f",
+              "quote": "Hobie is our agentic AI platform. Five layers read your live systems, model your business, and answer questions that trace back to the source data.",
+              "source_content_hash": "16467d2b719a4fb3",
+              "quote_hash": "80963220e0fd84275d5875501aec06c1edad872d4dce77195da86953d0d766c3"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Fresenius Kabi",
+          "industry": "制药与医疗保健",
+          "use_case": "企业软件现代化与AI应用",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-def75ecd4873d016",
+              "quote": "its customers span the U.S., Europe, the Middle East, and Asia, and include Fresenius Kabi, Saudi Aramco, and Siemens Energy.",
+              "source_content_hash": "6a0023459752d1bc",
+              "quote_hash": "b5a50f79e10ca53d3713402719d6693976c60a20083153d0ff2c9da82acd2196"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Saudi Aramco",
+          "industry": "综合能源",
+          "use_case": "支持多个职能领域的运营应用",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-def75ecd4873d016",
+              "quote": "its customers span the U.S., Europe, the Middle East, and Asia, and include Fresenius Kabi, Saudi Aramco, and Siemens Energy.",
+              "source_content_hash": "6a0023459752d1bc",
+              "quote_hash": "b5a50f79e10ca53d3713402719d6693976c60a20083153d0ff2c9da82acd2196"
+            },
+            {
+              "source_id": "FISRC-b861572f4d82c021",
+              "quote": "Hang Ten is working with Aramco on applications supporting its operations across several functions.",
+              "source_content_hash": "962f5742994aa00e",
+              "quote_hash": "f722e6e7fadb3b01887d948ab126dbdbd1734d035f9729745bf9fab452dc9f48"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Siemens Energy",
+          "industry": "能源",
+          "use_case": "企业软件现代化与AI应用",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-def75ecd4873d016",
+              "quote": "its customers span the U.S., Europe, the Middle East, and Asia, and include Fresenius Kabi, Saudi Aramco, and Siemens Energy.",
+              "source_content_hash": "6a0023459752d1bc",
+              "quote_hash": "b5a50f79e10ca53d3713402719d6693976c60a20083153d0ff2c9da82acd2196"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Siemens Gamesa Renewable Energy",
+          "industry": "可再生能源",
+          "use_case": "核心内部应用的AI原生交付",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b861572f4d82c021",
+              "quote": "Siemens Gamesa Renewable Energy is among the enterprises working with Hang Ten.",
+              "source_content_hash": "962f5742994aa00e",
+              "quote_hash": "5265ce26521b3de271e7b0cbfe5f662316d398ed88035629af8182f87e8c65ff"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "OpenAI",
+          "product": "企业级AI产品与服务",
+          "scenario": "企业AI部署与软件开发现代化",
+          "target_customer": "大型企业",
+          "funding_summary": "",
+          "core_difference": "Hang Ten不构建自有基础模型，而是作为独立于底层平台的合作伙伴，将AI适配到大型企业复杂软件开发流程中；OpenAI则扩展自身企业产品。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-def75ecd4873d016",
+              "quote": "Hang Ten enters a crowded market in which AI model developers such as OpenAI and Anthropic are expanding their enterprise offerings",
+              "source_content_hash": "6a0023459752d1bc",
+              "quote_hash": "2b7f5948fe70342de568a2c4a7d5ffbb1cb45c9fbed3b02589f2ba2553d9a3d7"
+            },
+            {
+              "source_id": "FISRC-def75ecd4873d016",
+              "quote": "Hang Ten says its edge lies not in building another AI model, but in adapting AI to the complex software development processes of large enterprises.",
+              "source_content_hash": "6a0023459752d1bc",
+              "quote_hash": "ad3a5f221cca82f06b1aeda6db4257c72b8071558296dd05e221a9b0e82a3355"
+            }
+          ],
+          "entity_id": "EN-7d3194f79e645c42"
+        },
+        {
+          "name": "Anthropic",
+          "product": "企业级AI产品与服务",
+          "scenario": "企业AI部署与软件开发现代化",
+          "target_customer": "大型企业",
+          "funding_summary": "",
+          "core_difference": "Hang Ten定位为独立于底层平台的信任伙伴，不构建自有AI模型；Anthropic作为AI模型开发商扩展企业产品。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-def75ecd4873d016",
+              "quote": "Hang Ten enters a crowded market in which AI model developers such as OpenAI and Anthropic are expanding their enterprise offerings",
+              "source_content_hash": "6a0023459752d1bc",
+              "quote_hash": "2b7f5948fe70342de568a2c4a7d5ffbb1cb45c9fbed3b02589f2ba2553d9a3d7"
+            },
+            {
+              "source_id": "FISRC-def75ecd4873d016",
+              "quote": "Enterprises still need trusted partners who are independent of the underlying platform and who work with and solely in the interest of the enterprise",
+              "source_content_hash": "6a0023459752d1bc",
+              "quote_hash": "a60d713282e8321b4398d91ac9ffc25b060ec61f9e7cfce83b74370bc8df3c0a"
+            }
+          ],
+          "entity_id": "EN-c70eca6b0f88f44d"
+        },
+        {
+          "name": "传统系统集成商",
+          "product": "企业IT系统集成与咨询服务",
+          "scenario": "大型企业软件构建、现代化与维护",
+          "target_customer": "大型企业",
+          "funding_summary": "",
+          "core_difference": "Hang Ten使用2至4人团队完成传统上约需30人的项目，并承诺10倍成本或速度改善；传统系统集成商依赖大规模人力交付。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-def75ecd4873d016",
+              "quote": "Rajagopalan noted that Hang Ten can use teams of about two to four people for some projects that might previously have required about 30",
+              "source_content_hash": "6a0023459752d1bc",
+              "quote_hash": "6c124551039e07fd6028de9d9c08ec8c8d8d55a2a297ab752c4282590f665e93"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "$53 million",
+          "observed_at": "2026-09-16",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-def75ecd4873d016",
+              "quote": "has expanded its seed funding by another $53 million",
+              "source_content_hash": "6a0023459752d1bc",
+              "quote_hash": "217f67310fe4726b0d5935080f07e801609fd111b8279467de34f98a044eaa74"
+            }
+          ]
+        },
+        {
+          "label": "首轮种子轮金额",
+          "value": "$32 million",
+          "observed_at": "2026-09-16",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-def75ecd4873d016",
+              "quote": "the initial $32 million seed round",
+              "source_content_hash": "6a0023459752d1bc",
+              "quote_hash": "2362c7f586b7515ca2bf75c87afdd394e18734fef9466c522f6ad4f7e0a77a5d"
+            }
+          ]
+        },
+        {
+          "label": "客户与后期潜在客户覆盖的大型企业数",
+          "value": "21",
+          "observed_at": "2026-09-16",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-def75ecd4873d016",
+              "quote": "Hang Ten is now working with a mix of existing customers and late-stage prospects spanning 21 major enterprises",
+              "source_content_hash": "6a0023459752d1bc",
+              "quote_hash": "3faa920bb56c92f38bf3b2fd74365cae98cf3f2e1eb3c0e529f521ef1f18985f"
+            }
+          ]
+        },
+        {
+          "label": "员工人数",
+          "value": "20-25",
+          "observed_at": "2026-09-16",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-def75ecd4873d016",
+              "quote": "currently has about 20 to 25 employees",
+              "source_content_hash": "6a0023459752d1bc",
+              "quote_hash": "d0f18c4c1fa9c58ff432bc6b0bf4278ca6b3c2188ba1dd7626628f47b37e5156"
+            }
+          ]
+        },
+        {
+          "label": "承诺的成本或速度改善倍数",
+          "value": "10倍",
+          "observed_at": "2026-09-16",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-def75ecd4873d016",
+              "quote": "The startup promises customers a 10-fold improvement in cost, speed, or a combination of the two",
+              "source_content_hash": "6a0023459752d1bc",
+              "quote_hash": "b6f546a3d0c688c77b058b816eb6c142d7dcc0de175fef037838d0929a5d1b94"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Vishal Sikka",
+          "quote": "The build part itself has basically become close to zero marginal cost, close to zero time",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-def75ecd4873d016",
+              "quote": "The build part itself has basically become close to zero marginal cost, close to zero time",
+              "source_content_hash": "6a0023459752d1bc",
+              "quote_hash": "2a019e180637708e794825b5d11f8c9aec0371348877ab103db126c3d0421f32"
+            }
+          ]
+        },
+        {
+          "speaker": "Vishal Sikka",
+          "quote": "Enterprises still need trusted partners who are independent of the underlying platform and who work with and solely in the interest of the enterprise",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-def75ecd4873d016",
+              "quote": "Enterprises still need trusted partners who are independent of the underlying platform and who work with and solely in the interest of the enterprise",
+              "source_content_hash": "6a0023459752d1bc",
+              "quote_hash": "a60d713282e8321b4398d91ac9ffc25b060ec61f9e7cfce83b74370bc8df3c0a"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Aramco Ventures",
+            "speaker": "Mahdi Aladel",
+            "speaker_role": "CEO",
+            "rationale": "Aramco Ventures认为Hang Ten的吸引力在于其方法的广度，越深入了解其方案，越能在自身运营中发现更多适用场景，团队已在推进项目范围界定。",
+            "quote": "What makes Hang Ten compelling is the breadth. The more closely we look at their approach, the more functions and use cases we find across our own operations where it would fit. Teams across our business are keen to work with them, and projects are already being scoped.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b861572f4d82c021",
+                "quote": "What makes Hang Ten compelling is the breadth. The more closely we look at their approach, the more functions and use cases we find across our own operations where it would fit. Teams across our business are keen to work with them, and projects are already being scoped.",
+                "source_content_hash": "962f5742994aa00e",
+                "quote_hash": "2046add757a4d02947080dc88985bca18678a745ca24b308d09c8ff57f6b7292"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是Hang Ten能否以AI原生的小团队交付模式打破传统IT服务的人力成本结构，将企业软件构建从按人头计费转向按结果计费。已验证信号包括：成立四个月内签署多个七位数合同、21家大型企业客户或后期潜在客户、25天内签下数百万美元关键任务系统合同、Siemens Gamesa在两个月交付后扩大合作范围。但证据边界明显：这些均为公司自述的合同与管线数据，未披露年经常性收入、留存率、合同期限或客户集中度，交付利润率和可重复性尚未被独立验证。",
+        "validated_signals": [
+          "成立四个月内签署多个七位数合同，并正在争取八位数交易",
+          "21家大型企业处于客户或后期潜在客户阶段",
+          "25天内从首次客户会议到签署数百万美元关键任务系统合同",
+          "Siemens Gamesa在两个月交付后扩大合作范围",
+          "Xora在观察到早期客户进展后主动接触投资"
+        ],
+        "risks": [
+          "公司未披露年经常性收入、留存率、合同期限或客户集中度，早期合同数据无法验证交付利润率和可重复性",
+          "以20-25人团队服务21家大型企业，交付能力扩张速度可能跟不上客户承诺",
+          "OpenAI、Anthropic及传统咨询公司均在加速布局企业AI服务，竞争密集"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications",
+        "market_subcategory_id": "productivity_enterprise_workflows",
+        "market_application_id": "",
+        "use_case_ids": [
+          "knowledge_search",
+          "data_analysis",
+          "productivity_enterprise_workflows"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "企业AI服务",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是Hang Ten能否以AI原生的小团队交付模式打破传统IT服务的人力成本结构，将企业软件构建从按人头计费转向按结果计费。已验证信号包括：成立四个月内签署多个七位数合同、21家大型企业客户或后期潜在客户、25天内签下数百万美元关键任务系统合同、Siemens Gamesa在两个月交付后扩大合作范围。但证据边界明显：这些均为公司自述的合同与管线数据，未披露年经常性收入、留存率、合同期限或客户集中度，交付利润率和可重复性尚未被独立验证。",
+          "evidence_signals": [
+            "成立四个月内签署多个七位数合同，并正在争取八位数交易",
+            "21家大型企业处于客户或后期潜在客户阶段",
+            "25天内从首次客户会议到签署数百万美元关键任务系统合同",
+            "Siemens Gamesa在两个月交付后扩大合作范围",
+            "Xora在观察到早期客户进展后主动接触投资"
+          ],
+          "risks": [
+            "公司未披露年经常性收入、留存率、合同期限或客户集中度，早期合同数据无法验证交付利润率和可重复性",
+            "以20-25人团队服务21家大型企业，交付能力扩张速度可能跟不上客户承诺",
+            "OpenAI、Anthropic及传统咨询公司均在加速布局企业AI服务，竞争密集"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Hobie",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Vishal Sikka",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Aramco Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Lip-Bu Tan",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Sanjay Mehrotra",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Jerry Yang",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Fresenius Kabi",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Saudi Aramco",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Siemens Energy",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Siemens Gamesa Renewable Energy",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "OpenAI",
+          "canonical_entity_id": "EN-7d3194f79e645c42",
+          "canonical_name": "OpenAI"
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Anthropic",
+          "canonical_entity_id": "EN-c70eca6b0f88f44d",
+          "canonical_name": "Anthropic"
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "传统系统集成商",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-f0fee44c1dfdcb09",
+          "date": "2026-07-04",
+          "title": "Hang Ten Systems 获 3200 万美元融资，助力企业成功应用 AI",
+          "amount": "$32M",
+          "source_refs": [
+            "SA-4c7af008a157ae01"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-def75ecd4873d016",
+          "source_url": "https://techcrunch.com/2026/09/16/former-infosys-chiefs-ai-startup-adds-50m-to-seed-weeks-after-initial-raise/",
+          "title": "前印孚瑟斯首席执行官的AI初创公司再获5300万美元",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-18T00:25:28.978Z",
+          "content_hash": "6a0023459752d1bc",
+          "source_artifact_id": "SA-037e1cfa2510fabf",
+          "raw_id": "RAW-2cccf7fbc601ad66"
+        },
+        {
+          "source_id": "FISRC-b861572f4d82c021",
+          "source_url": "https://yourtechdiet.com/news/hang-ten-systems-raises-additional-53-million-led-by-xora-a-temasek-backed-fund-bringing-total-funding-to-85-million/",
+          "title": "Hang Ten Systems Raises $53M in Second Seed Round",
+          "publisher": "yourtechdiet.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-18T02:43:27.807Z",
+          "content_hash": "962f5742994aa00e",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-9890cac27c64857f",
+          "source_url": "https://hangten.ai/",
+          "title": "Hang Ten Systems",
+          "publisher": "hangten.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-18T02:43:28.660Z",
+          "content_hash": "16467d2b719a4fb3",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-18T02:44:17.614Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-ed8323204ab69697",
+          "confidence": 0.7,
+          "needs_review": true
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-18T02:44:17.614Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 4,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Hobie"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Vishal Sikka"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-ed8323204ab69697"
+      ],
+      "aggregation": {
+        "key": "EN-0cc3af265406c202|seed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-c96241e737132a62",
+      "triggered_by_event_id": "EV-47f16317cc2d62e2",
+      "as_of_date": "2026-09-18",
+      "company": {
+        "entity_id": "EN-9a970ad7900121db",
+        "name": "小鹏机器人业务",
+        "full_name": "小鹏机器人业务",
+        "website": "https://www.xpeng.com/",
+        "summary": "小鹏集团旗下人形机器人业务，定位为极致拟人、AI驱动、具备最高标准安全品质的高阶人形机器人平台，目标是成为下一代通用人形机器人平台，支持广泛的场景应用和在真实世界自我强化。",
+        "headquarters": "中国广州",
+        "founders": [
+          {
+            "name": "何小鹏",
+            "role": "小鹏机器人业务CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2ec9a5e83ce18f75",
+                "quote": "小鹏集团董事长、 CEO何小鹏表示",
+                "source_content_hash": "b8e4f0b869df00ee",
+                "quote_hash": "73c890d8b13227f98810494f5941a4ad515e8b691cac4e396492a519cf227117"
+              },
+              {
+                "source_id": "FISRC-77ec50b37d44c2f9",
+                "quote": "何小鹏亲自挂帅——他不仅是小鹏汽车创始人，目前也是小鹏机器人业务CEO",
+                "source_content_hash": "d7a283babd7b58e7",
+                "quote_hash": "bc73041ad5e9b31846bd151bcd38ca8027a4b39141adbfbcb2758c88c2984799"
+              }
+            ],
+            "entity_id": "EN-3ec6a4f8fffb8112"
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-2ec9a5e83ce18f75",
+            "quote": "小鹏集团总部位于中国广州",
+            "source_content_hash": "b8e4f0b869df00ee",
+            "quote_hash": "72f9f2c740d137f82e3c4af45389ca258c75d7cc3af78e9239c05ebcf0abb1b8"
+          },
+          {
+            "source_id": "FISRC-2ec9a5e83ce18f75",
+            "quote": "小鹏IRON定位为极致拟人、AI驱动、具备最高标准安全品质的高阶人形机器人，目标是成为下一代通用人形机器人平台",
+            "source_content_hash": "b8e4f0b869df00ee",
+            "quote_hash": "6de6a10a98da17b1c10cad5923006d86570ee40303b4ab9a8eae0df85dcc80e2"
+          }
+        ],
+        "application_entity_id": "EN-9a970ad7900121db",
+        "canonical_entity_consistent": true
+      },
+      "financing": {
+        "round": "其他融资",
+        "amount": "超9亿美元",
+        "total_raised": "超9亿美元",
+        "announced_at": "2026-08-25",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "IDG资本",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2ec9a5e83ce18f75",
+                "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持",
+                "source_content_hash": "b8e4f0b869df00ee",
+                "quote_hash": "0c0e04917436353a249175e0fe3954233525524468f8b84521713be86611d620"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "高榕创投",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2ec9a5e83ce18f75",
+                "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持",
+                "source_content_hash": "b8e4f0b869df00ee",
+                "quote_hash": "0c0e04917436353a249175e0fe3954233525524468f8b84521713be86611d620"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "腾讯",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2ec9a5e83ce18f75",
+                "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持",
+                "source_content_hash": "b8e4f0b869df00ee",
+                "quote_hash": "0c0e04917436353a249175e0fe3954233525524468f8b84521713be86611d620"
+              }
+            ],
+            "entity_id": "EN-9c8ae69b84f21a2e"
+          },
+          {
+            "name": "阿里巴巴",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2ec9a5e83ce18f75",
+                "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持",
+                "source_content_hash": "b8e4f0b869df00ee",
+                "quote_hash": "0c0e04917436353a249175e0fe3954233525524468f8b84521713be86611d620"
+              }
+            ],
+            "entity_id": "EN-047364b9be67f665"
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "小鹏集团旗下全资子公司",
+            "role": "本轮认购方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-77ec50b37d44c2f9",
+                "quote": "小鹏集团旗下全资子公司拟出资2亿美元，认购9867.52万股A系列优先股",
+                "source_content_hash": "d7a283babd7b58e7",
+                "quote_hash": "42b2cdd1001411eb0097a0ddf075fd1799977318c70d7f75468a5b7ef7197f22"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "何小鹏、顾宏地全资控制的关联主体",
+            "role": "高管认购方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-77ec50b37d44c2f9",
+                "quote": "高管认购方即由何小鹏、顾宏地全资控制的关联主体，拟合计出资1亿美元，认购4933.76万普通股",
+                "source_content_hash": "d7a283babd7b58e7",
+                "quote_hash": "7c042e49fe1b9569cc9277994d70d67c8f920b4ebd2b6cb4fec8f3f73ecb5feb"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-2ec9a5e83ce18f75",
+            "quote": "本轮为小鹏机器人业务首轮融资，融资金额超9亿美元，投后估值超63亿美元，刷新中国具身智能行业单轮私募股权融资纪录。",
+            "source_content_hash": "b8e4f0b869df00ee",
+            "quote_hash": "4592a81dc201a461a2b4fd1880ed97ce56abbcc73b237118a4f9d88934f0b49f"
+          },
+          {
+            "source_id": "FISRC-2ec9a5e83ce18f75",
+            "quote": "本轮为小鹏机器人业务首轮融资，融资金额超9亿美元，投后估值超63亿美元，刷新中国具身智能行业单轮私募股权融资纪录",
+            "source_content_hash": "b8e4f0b869df00ee",
+            "quote_hash": "c994b294ba0dbc9ea6ce77214437e944759debc32a96c6200b78527cf8e80681"
+          },
+          {
+            "source_id": "FISRC-77ec50b37d44c2f9",
+            "quote": "本轮交易主体鹏行对应投前估值50亿美元，投后估值63亿美元",
+            "source_content_hash": "d7a283babd7b58e7",
+            "quote_hash": "a07f30d5032bd5e64ee36710349d51eda589f801d1a565d0ffe775f2dee0c835"
+          }
+        ],
+        "round_code": "other",
+        "round_original": "首轮融资",
+        "amount_original": "超9亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 900000000,
+          "min_value": 900000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 9 亿美元"
+        },
+        "total_raised_original": "超9亿美元",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 900000000,
+          "min_value": 900000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 9 亿美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-47f16317cc2d62e2",
+            "round_original": "首轮融资",
+            "amount": "超9亿美元",
+            "announced_at": "2026-08-25",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2ec9a5e83ce18f75",
+                "quote": "本轮为小鹏机器人业务首轮融资，融资金额超9亿美元，投后估值超63亿美元，刷新中国具身智能行业单轮私募股权融资纪录。",
+                "source_content_hash": "b8e4f0b869df00ee",
+                "quote_hash": "4592a81dc201a461a2b4fd1880ed97ce56abbcc73b237118a4f9d88934f0b49f"
+              },
+              {
+                "source_id": "FISRC-2ec9a5e83ce18f75",
+                "quote": "本轮为小鹏机器人业务首轮融资，融资金额超9亿美元，投后估值超63亿美元，刷新中国具身智能行业单轮私募股权融资纪录",
+                "source_content_hash": "b8e4f0b869df00ee",
+                "quote_hash": "c994b294ba0dbc9ea6ce77214437e944759debc32a96c6200b78527cf8e80681"
+              },
+              {
+                "source_id": "FISRC-77ec50b37d44c2f9",
+                "quote": "本轮交易主体鹏行对应投前估值50亿美元，投后估值63亿美元",
+                "source_content_hash": "d7a283babd7b58e7",
+                "quote_hash": "a07f30d5032bd5e64ee36710349d51eda589f801d1a565d0ffe775f2dee0c835"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "小鹏IRON",
+          "description": "极致拟人、AI驱动、具备最高标准安全品质的高阶人形机器人，目标是成为下一代通用人形机器人平台，支持广泛的场景应用和在真实世界自我强化。",
+          "target_customers": "面向中国及海外市场，从小鹏的门店和园区开始落地商业场景应用",
+          "features": [
+            "全身76个自由度，单手21个自由度",
+            "首创全包覆柔性晶格",
+            "搭载3颗图灵AI芯片，有效算力高达2250 TOPS",
+            "物理AI大模型端侧部署，无需遥操即可自主完成复杂工作任务",
+            "车规级品质和大规模量产交付能力"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2ec9a5e83ce18f75",
+              "quote": "小鹏IRON定位为极致拟人、AI驱动、具备最高标准安全品质的高阶人形机器人，目标是成为下一代通用人形机器人平台",
+              "source_content_hash": "b8e4f0b869df00ee",
+              "quote_hash": "6de6a10a98da17b1c10cad5923006d86570ee40303b4ab9a8eae0df85dcc80e2"
+            },
+            {
+              "source_id": "FISRC-2ec9a5e83ce18f75",
+              "quote": "全身76个自由度，单手21个自由度，均处于行业领先水平",
+              "source_content_hash": "b8e4f0b869df00ee",
+              "quote_hash": "1742910d5771bc4608b906537e55795712bc38c0bbc974bd71a2a7a9c944dcca"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "宇树科技",
+          "product": "人形机器人",
+          "scenario": "人形机器人研发与商业化",
+          "target_customer": "具身智能市场",
+          "funding_summary": "宇树科技IPO最终募资总额约60.99亿元",
+          "core_difference": "小鹏机器人业务首轮融资超9亿美元，投后估值超63亿美元，刷新中国具身智能行业单轮私募股权融资纪录；宇树科技IPO最终募资总额约60.99亿元，小鹏单轮私募融资规模超过宇树IPO募资总额。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-77ec50b37d44c2f9",
+              "quote": "对比之下，宇树科技IPO最终募资总额约60.99亿元",
+              "source_content_hash": "d7a283babd7b58e7",
+              "quote_hash": "969857fcf1930b5536681c11181311d7c6a711a42c4b86a614039ff43b0239ce"
+            },
+            {
+              "source_id": "FISRC-77ec50b37d44c2f9",
+              "quote": "本轮为小鹏机器人业务首轮融资，融资金额超9亿美元（约65亿元人民币），投后估值超63亿美元（约430亿元人民币），一举刷新中国具身智能行业单轮私募股权融资纪录",
+              "source_content_hash": "d7a283babd7b58e7",
+              "quote_hash": "170da363b871581f1fffea12642c5fe4bbe6b5378b892bdf9acdd67b3e465c20"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "特斯拉",
+          "product": "Optimus人形机器人",
+          "scenario": "人形机器人量产与商业化",
+          "target_customer": "全球人形机器人市场",
+          "funding_summary": "",
+          "core_difference": "特斯拉Optimus计划于2026年底正式启动大规模量产，弗里蒙特工厂远期规划年产能目标100万台；小鹏IRON计划在2026年底进入量产阶段，从小鹏的门店和园区开始落地商业场景应用，并于2027年面向中国及海外市场正式上市和交付。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-77ec50b37d44c2f9",
+              "quote": "特斯拉公司副总裁陶琳公开表示，Optimus 人形机器人将于2026年底正式启动大规模量产，弗里蒙特工厂远期规划年产能目标100 万台",
+              "source_content_hash": "d7a283babd7b58e7",
+              "quote_hash": "850f2f737c09438fedc0da2b38b0298bc5f4e2158887ed635f6cb5bbe30e8887"
+            },
+            {
+              "source_id": "FISRC-2ec9a5e83ce18f75",
+              "quote": "小鹏IRON计划在2026年底进入量产阶段，从小鹏的门店和园区开始落地商业场景应用，并于2027年面向中国及海外市场正式上市和交付",
+              "source_content_hash": "b8e4f0b869df00ee",
+              "quote_hash": "940f87e0841508c3a2ce3ca37a796d520913935549d37e44f6cfbb9d92e0cad7"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "慧仑科技",
+          "product": "GoMate Mini人形机器人",
+          "scenario": "人形机器人研发与融资",
+          "target_customer": "具身智能市场",
+          "funding_summary": "慧仑科技宣布完成超亿元融资，由中车国创基金、招银国际、四川科创等机构联合投资",
+          "core_difference": "小鹏机器人业务首轮融资超9亿美元，投后估值超63亿美元；慧仑科技完成超亿元融资，融资规模和估值均远低于小鹏机器人业务。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-77ec50b37d44c2f9",
+              "quote": "今年2月，广汽集团正式孵化人形机器人公司慧仑科技，并携第四代机器人GoMate Mini亮相。随后在8月中旬，慧仑科技宣布完成超亿元融资，由中车国创基金、招银国际、四川科创等机构联合投资",
+              "source_content_hash": "d7a283babd7b58e7",
+              "quote_hash": "1fbc6df43f1515346361394ee6acd9529ea38b1dd099bc1bf64a328374a41ec8"
+            },
+            {
+              "source_id": "FISRC-2ec9a5e83ce18f75",
+              "quote": "本轮为小鹏机器人业务首轮融资，融资金额超9亿美元，投后估值超63亿美元",
+              "source_content_hash": "b8e4f0b869df00ee",
+              "quote_hash": "e5f879f1166232b39ba34e999b11fa5aa94971b98dbfb001a7934232481414b1"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "超9亿美元",
+          "observed_at": "2026-08-24",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2ec9a5e83ce18f75",
+              "quote": "融资金额超9亿美元",
+              "source_content_hash": "b8e4f0b869df00ee",
+              "quote_hash": "dea7852ca21c451c3712a9db55606fed15ab5e0ddc9f4f55b8352d98214caa83"
+            }
+          ]
+        },
+        {
+          "label": "投后估值",
+          "value": "超63亿美元",
+          "observed_at": "2026-08-24",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2ec9a5e83ce18f75",
+              "quote": "投后估值超63亿美元",
+              "source_content_hash": "b8e4f0b869df00ee",
+              "quote_hash": "b4e4ba5b6e1a8da1712a2d75574e5e68a4be69f7f7d2fb4cebc4e05a8a27f542"
+            }
+          ]
+        },
+        {
+          "label": "投前估值",
+          "value": "50亿美元",
+          "observed_at": "2026-08-24",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-77ec50b37d44c2f9",
+              "quote": "本轮交易主体鹏行对应投前估值50亿美元",
+              "source_content_hash": "d7a283babd7b58e7",
+              "quote_hash": "79fdc03e66daf657fff0467e7f07a5974a731bcd87799128bff30deb37a7c7a9"
+            }
+          ]
+        },
+        {
+          "label": "自由度",
+          "value": "全身76个自由度，单手21个自由度",
+          "observed_at": "2026-08-24",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2ec9a5e83ce18f75",
+              "quote": "全身76个自由度，单手21个自由度",
+              "source_content_hash": "b8e4f0b869df00ee",
+              "quote_hash": "70179fe8cc00416c2a5a56d67fb02dde15608002085d606a42555c225d9f3508"
+            }
+          ]
+        },
+        {
+          "label": "端侧算力",
+          "value": "2250 TOPS",
+          "observed_at": "2026-08-24",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2ec9a5e83ce18f75",
+              "quote": "有效算力高达2250 TOPS",
+              "source_content_hash": "b8e4f0b869df00ee",
+              "quote_hash": "e1414a33868fe176553aef848f542c87e330d2edbef8ab2a581325013cdce49b"
+            }
+          ]
+        },
+        {
+          "label": "鹏行2024年净亏损",
+          "value": "8700万元",
+          "observed_at": "2026-08-25",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-77ec50b37d44c2f9",
+              "quote": "2024年和2025年分别净亏损8700万元、3.69亿元",
+              "source_content_hash": "d7a283babd7b58e7",
+              "quote_hash": "160e28ae5f347f30b6b5c45ebdf37f0bcf414d0ca9710ae943e29081c9744803"
+            }
+          ]
+        },
+        {
+          "label": "鹏行2025年净亏损",
+          "value": "3.69亿元",
+          "observed_at": "2026-08-25",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-77ec50b37d44c2f9",
+              "quote": "2024年和2025年分别净亏损8700万元、3.69亿元",
+              "source_content_hash": "d7a283babd7b58e7",
+              "quote_hash": "160e28ae5f347f30b6b5c45ebdf37f0bcf414d0ca9710ae943e29081c9744803"
+            }
+          ]
+        },
+        {
+          "label": "鹏行截至2026年3月末净负债",
+          "value": "约4.47亿元",
+          "observed_at": "2026-08-25",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-77ec50b37d44c2f9",
+              "quote": "截至2026年3月末，其净负债约为4.47亿元",
+              "source_content_hash": "d7a283babd7b58e7",
+              "quote_hash": "006d951d062a3a938fbc984d81205e2f62b12ef7f17623a4d87951262c6e7ce6"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "何小鹏",
+          "quote": "小鹏集团在过去12年始终坚持全栈自研，为物理AI时代构建了坚实的技术底座，包括物理世界基座模型、图灵AI芯片和AI Infra体系。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2ec9a5e83ce18f75",
+              "quote": "小鹏集团在过去12年始终坚持全栈自研，为物理AI时代构建了坚实的技术底座，包括物理世界基座模型、图灵AI芯片和AI Infra体系",
+              "source_content_hash": "b8e4f0b869df00ee",
+              "quote_hash": "f2a6e0412a65037d281b62e9f569737c5850eeff8fd8de9caf8e4e112baebc77"
+            }
+          ]
+        },
+        {
+          "speaker": "何小鹏",
+          "quote": "高阶通用机器人的技术门槛极高，优质供给相当稀缺，因此每一台IRON在全生命周期的收入和毛利贡献，包含硬件销售和软件AI模型能力升级带来的持续性收入，将会大幅高于当前汽车业务的单车均价和毛利。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3b0b9dcd7f888a6d",
+              "quote": "高阶通用机器人的技术门槛极高，优质供给相当稀缺，因此每一台IRON在全生命周期的收入和毛利贡献，包含硬件销售和软件AI模型能力升级带来的持续性收入，将会大幅高于当前汽车业务的单车均价和毛利",
+              "source_content_hash": "be956722bbe21b3a",
+              "quote_hash": "10a3ce71c642ccea21c2a0632486eb6625aaf427ca3703919f2ffc2a952ce0b4"
+            }
+          ]
+        },
+        {
+          "speaker": "何小鹏",
+          "quote": "高阶人形机器人的技术挑战和创新难度远高于智能汽车，至少相差20倍。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3b0b9dcd7f888a6d",
+              "quote": "高阶人形机器人的技术挑战和创新难度远高于智能汽车，“至少相差20倍”",
+              "source_content_hash": "be956722bbe21b3a",
+              "quote_hash": "033d04a373b189f7590374585cc466a647116c680529b89d1f27c5b87e92dbe7"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "IDG资本",
+            "speaker": "IDG资本",
+            "speaker_role": "本轮领投方",
+            "rationale": "IDG资本认为具身智能正处于从技术突破迈向量产落地的关键拐点，小鹏人形机器人代表当前中国人形机器人产业的领先水平，具备与海外龙头企业在全球市场竞争的实力。小鹏已实现端侧AI芯片、物理AI大模型、整机硬件的全栈自研布局，拥有行业领先的端侧算力、训练算力和高质量数据闭环体系，同时机器人业务可以与智能汽车和自动驾驶业务产生巨大的战略协同效应。",
+            "quote": "具身智能正处于从技术突破迈向量产落地的关键拐点。在IDG看来，小鹏人形机器人代表当前中国人形机器人产业的领先水平，具备与海外龙头企业在全球市场竞争的实力。小鹏已实现端侧AI芯片、物理AI大模型、整机硬件的全栈自研布局，拥有行业领先的端侧算力、训练算力和高质量数据闭环体系，同时机器人业务可以与智能汽车和自动驾驶业务产生巨大的战略协同效应。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2ec9a5e83ce18f75",
+                "quote": "具身智能正处于从技术突破迈向量产落地的关键拐点。在IDG看来，小鹏人形机器人代表当前中国人形机器人产业的领先水平，具备与海外龙头企业在全球市场竞争的实力。小鹏已实现端侧AI芯片、物理AI大模型、整机硬件的全栈自研布局，拥有行业领先的端侧算力、训练算力和高质量数据闭环体系，同时机器人业务可以与智能汽车和自动驾驶业务产生巨大的战略协同效应。",
+                "source_content_hash": "b8e4f0b869df00ee",
+                "quote_hash": "e9394442f044ef4974488a6e07e29703c80a1cee01a757abbc1afd631bcbc983"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是小鹏能否将智能电动汽车积累的全栈自研能力、供应链和制造体系系统性迁移至人形机器人，并率先实现高阶通用人形机器人的规模量产和商业化。本轮融资所依赖的已验证信号包括：小鹏IRON已构建软硬件深度耦合的全栈自研技术体系，覆盖本体、大脑、小脑、数据和Infra；搭载3颗图灵AI芯片，端侧算力达2250 TOPS，物理AI大模型已在端侧部署成功；全身76个自由度、单手21个自由度处于行业领先水平；小鹏集团继续控股机器人业务，机器人业务仍纳入集团合并财务报表。投后估值超63亿美元，刷新中国具身智能行业单轮私募股权融资纪录。但证据边界同样明确：鹏行2024年和2025年分别净亏损8700万元、3.69亿元，截至2026年3月末净负债约4.47亿元，尚未披露规模化产品收入及外部订单，量产和商业化仍处于计划阶段。",
+        "validated_signals": [
+          "小鹏IRON已构建软硬件深度耦合的全栈自研技术体系，完整覆盖机器人的本体、大脑、小脑、数据和Infra",
+          "小鹏IRON搭载3颗图灵AI芯片，有效算力高达2250 TOPS，物理AI大模型在端侧部署成功，无需遥操即可自主完成复杂工作任务",
+          "小鹏IRON全身76个自由度，单手21个自由度，均处于行业领先水平",
+          "小鹏集团继续控股机器人业务，机器人业务仍纳入集团合并财务报表",
+          "本轮融资由IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持"
+        ],
+        "risks": [
+          "鹏行2024年和2025年分别净亏损8700万元、3.69亿元，截至2026年3月末净负债约4.47亿元，尚未披露规模化产品收入及外部订单，商业化前景存在不确定性",
+          "小鹏IRON计划2026年底进入量产阶段，但量产和交付尚未实际发生，存在技术、供应链和产能爬坡风险",
+          "人形机器人赛道竞争激烈，特斯拉、宇树科技、慧仑科技等国内外企业均在推进量产和商业化，小鹏面临来自车企巨头和创业公司的双重竞争压力"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "robotic_system",
+        "market_category_id": "physical_ai",
+        "market_subcategory_id": "",
+        "market_application_id": "",
+        "use_case_ids": [
+          "physical_automation"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "business_user",
+          "consumer"
+        ],
+        "sector": "物理AI与人形机器人",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是小鹏能否将智能电动汽车积累的全栈自研能力、供应链和制造体系系统性迁移至人形机器人，并率先实现高阶通用人形机器人的规模量产和商业化。本轮融资所依赖的已验证信号包括：小鹏IRON已构建软硬件深度耦合的全栈自研技术体系，覆盖本体、大脑、小脑、数据和Infra；搭载3颗图灵AI芯片，端侧算力达2250 TOPS，物理AI大模型已在端侧部署成功；全身76个自由度、单手21个自由度处于行业领先水平；小鹏集团继续控股机器人业务，机器人业务仍纳入集团合并财务报表。投后估值超63亿美元，刷新中国具身智能行业单轮私募股权融资纪录。但证据边界同样明确：鹏行2024年和2025年分别净亏损8700万元、3.69亿元，截至2026年3月末净负债约4.47亿元，尚未披露规模化产品收入及外部订单，量产和商业化仍处于计划阶段。",
+          "evidence_signals": [
+            "小鹏IRON已构建软硬件深度耦合的全栈自研技术体系，完整覆盖机器人的本体、大脑、小脑、数据和Infra",
+            "小鹏IRON搭载3颗图灵AI芯片，有效算力高达2250 TOPS，物理AI大模型在端侧部署成功，无需遥操即可自主完成复杂工作任务",
+            "小鹏IRON全身76个自由度，单手21个自由度，均处于行业领先水平",
+            "小鹏集团继续控股机器人业务，机器人业务仍纳入集团合并财务报表",
+            "本轮融资由IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持"
+          ],
+          "risks": [
+            "鹏行2024年和2025年分别净亏损8700万元、3.69亿元，截至2026年3月末净负债约4.47亿元，尚未披露规模化产品收入及外部订单，商业化前景存在不确定性",
+            "小鹏IRON计划2026年底进入量产阶段，但量产和交付尚未实际发生，存在技术、供应链和产能爬坡风险",
+            "人形机器人赛道竞争激烈，特斯拉、宇树科技、慧仑科技等国内外企业均在推进量产和商业化，小鹏面临来自车企巨头和创业公司的双重竞争压力"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "小鹏IRON",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "何小鹏",
+          "canonical_entity_id": "EN-3ec6a4f8fffb8112",
+          "canonical_name": "何小鹏"
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "IDG资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "高榕创投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "腾讯",
+          "canonical_entity_id": "EN-9c8ae69b84f21a2e",
+          "canonical_name": "腾讯"
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "阿里巴巴",
+          "canonical_entity_id": "EN-047364b9be67f665",
+          "canonical_name": "阿里巴巴"
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "小鹏集团旗下全资子公司",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "何小鹏、顾宏地全资控制的关联主体",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "宇树科技",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "特斯拉",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "慧仑科技",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-47f16317cc2d62e2",
+          "date": "2026-08-25",
+          "title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
+          "amount": "超9亿美元",
+          "source_refs": [
+            "SA-8f959a6b12c89c05"
+          ]
+        },
+        {
+          "event_id": "EV-88f346991085a2f3",
+          "date": "2026-08-25",
+          "title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
+          "amount": "超9亿美元",
+          "source_refs": [
+            "SA-8f959a6b12c89c05"
+          ]
+        },
+        {
+          "event_id": "EV-987cb2e5e20f79ce",
+          "date": "2026-08-25",
+          "title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
+          "amount": "超9亿美元",
+          "source_refs": [
+            "SA-8f959a6b12c89c05"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-2ec9a5e83ce18f75",
+          "source_url": "https://www.xiaopeng.com/news/company_news/5585.html",
+          "title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
+          "publisher": "keyword search / Exa",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-18T00:26:01.912Z",
+          "content_hash": "b8e4f0b869df00ee",
+          "source_artifact_id": "SA-8f959a6b12c89c05",
+          "raw_id": "RAW-2269bba25bb82139"
+        },
+        {
+          "source_id": "FISRC-3b0b9dcd7f888a6d",
+          "source_url": "https://www.jiemian.com/article/14985727.html",
+          "title": "首轮融资超9亿美元！何小鹏称机器人单台毛利或远超汽车|界面新闻 · 汽车",
+          "publisher": "jiemian.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-18T02:40:33.112Z",
+          "content_hash": "be956722bbe21b3a",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-77ec50b37d44c2f9",
+          "source_url": "https://m.21jingji.com/article/20260825/herald/bbfd8049df86f78a80785f25df0a26f1.html",
+          "title": "小鹏机器人融资9亿美元：何小鹏，打破宇树纪录 - 21财经",
+          "publisher": "m.21jingji.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-18T02:40:33.363Z",
+          "content_hash": "d7a283babd7b58e7",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-18T02:41:17.912Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-47f16317cc2d62e2",
+          "confidence": 0.9,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-18T02:41:17.912Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "小鹏IRON"
+          ]
+        },
+        "founders": {
+          "linked": 1,
+          "total": 1,
+          "unresolved_names": []
+        }
+      },
+      "source_event_ids": [
+        "EV-47f16317cc2d62e2",
+        "EV-987cb2e5e20f79ce"
+      ],
+      "aggregation": {
+        "key": "EN-9a970ad7900121db|other",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-e0a9f997fd33ce21",
+      "triggered_by_event_id": "EV-26a5749d8604455a",
+      "as_of_date": "2026-09-18",
+      "company": {
+        "entity_id": "EN-d41ebd9f02722fc8",
+        "name": "Crusoe",
+        "full_name": "Crusoe",
+        "website": "crusoe.ai",
+        "summary": "Crusoe 是一家垂直整合的 AI 基础设施公司，从能源层到 GPU 云服务全链路自建，提供由清洁能源驱动的 AI 计算基础设施。公司最初以利用油田伴生天然气进行加密挖矿起家，后转型为 AI 数据中心开发商和 GPU 云服务商。",
+        "headquarters": "Denver, Colorado",
+        "founders": [
+          {
+            "name": "Chase Lochmiller",
+            "role": "CEO & Co-Founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4afc17abd0ce2781",
+                "quote": "Crusoe was founded in 2018 by Chase Lochmiller and Cully Cavness",
+                "source_content_hash": "031d223859c249dd",
+                "quote_hash": "1fe2963a51ef025ddef3f0beaf2a60b1347a3ea7df2d6f8bab60561d197bbfe9"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Cully Cavness",
+            "role": "Co-Founder, President & COO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4afc17abd0ce2781",
+                "quote": "Crusoe was founded in 2018 by Chase Lochmiller and Cully Cavness",
+                "source_content_hash": "031d223859c249dd",
+                "quote_hash": "1fe2963a51ef025ddef3f0beaf2a60b1347a3ea7df2d6f8bab60561d197bbfe9"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "501–1,000",
+          "observed_at": "2026-03-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-777a18cf03f23d4d",
+              "quote": "Employee Count 501–1,000",
+              "source_content_hash": "01360043004b89e7",
+              "quote_hash": "f1c52cba8b3c97f07a934f2c1df6f65c8cc2d5e06bd40174747b1d1c03372bef"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-34d15ad3ce6de8dc",
+            "quote": "Data center developer Crusoe said Thursday it raised $3.9 billion in a Series F round that pushes its valuation to $30.9 billion.",
+            "source_content_hash": "c5404319aca5bde8",
+            "quote_hash": "ec0ca2756ad11b42f6265c1309957eef62ed8ca1eda511cfe1a45a969e861716"
+          }
+        ],
+        "application_entity_id": "EN-d41ebd9f02722fc8",
+        "canonical_entity_consistent": true
+      },
+      "financing": {
+        "round": "F轮",
+        "amount": "$3.9B",
+        "total_raised": "$3.9 billion",
+        "announced_at": "2026-09-17",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Atreides Management",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-34d15ad3ce6de8dc",
+                "quote": "The massive round was co-led by Atreides Management, Mubadala Capital, and Valor Equity Partners.",
+                "source_content_hash": "c5404319aca5bde8",
+                "quote_hash": "8f1398698a6a94b8d44c51f196973b3f1cf36c7c0e6d637ea25918ee0560cbf2"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Mubadala Capital",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-34d15ad3ce6de8dc",
+                "quote": "The massive round was co-led by Atreides Management, Mubadala Capital, and Valor Equity Partners.",
+                "source_content_hash": "c5404319aca5bde8",
+                "quote_hash": "8f1398698a6a94b8d44c51f196973b3f1cf36c7c0e6d637ea25918ee0560cbf2"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Valor Equity Partners",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-34d15ad3ce6de8dc",
+                "quote": "The massive round was co-led by Atreides Management, Mubadala Capital, and Valor Equity Partners.",
+                "source_content_hash": "c5404319aca5bde8",
+                "quote_hash": "8f1398698a6a94b8d44c51f196973b3f1cf36c7c0e6d637ea25918ee0560cbf2"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Founders Fund",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-34d15ad3ce6de8dc",
+                "quote": "Founders Fund, GIC, Nvidia, Qatar Investment Authority (QIA), Radical Ventures, and TPG also participated, according to Crusoe.",
+                "source_content_hash": "c5404319aca5bde8",
+                "quote_hash": "92e7fe9ade3d2e01bb9a93f7e7ef10398c2f075ea8977a2f21bd740c300df481"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "GIC",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-34d15ad3ce6de8dc",
+                "quote": "Founders Fund, GIC, Nvidia, Qatar Investment Authority (QIA), Radical Ventures, and TPG also participated, according to Crusoe.",
+                "source_content_hash": "c5404319aca5bde8",
+                "quote_hash": "92e7fe9ade3d2e01bb9a93f7e7ef10398c2f075ea8977a2f21bd740c300df481"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Nvidia",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-34d15ad3ce6de8dc",
+                "quote": "Founders Fund, GIC, Nvidia, Qatar Investment Authority (QIA), Radical Ventures, and TPG also participated, according to Crusoe.",
+                "source_content_hash": "c5404319aca5bde8",
+                "quote_hash": "92e7fe9ade3d2e01bb9a93f7e7ef10398c2f075ea8977a2f21bd740c300df481"
+              }
+            ],
+            "entity_id": "EN-8d4321d936320802"
+          },
+          {
+            "name": "Qatar Investment Authority (QIA)",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-34d15ad3ce6de8dc",
+                "quote": "Founders Fund, GIC, Nvidia, Qatar Investment Authority (QIA), Radical Ventures, and TPG also participated, according to Crusoe.",
+                "source_content_hash": "c5404319aca5bde8",
+                "quote_hash": "92e7fe9ade3d2e01bb9a93f7e7ef10398c2f075ea8977a2f21bd740c300df481"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Radical Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-34d15ad3ce6de8dc",
+                "quote": "Founders Fund, GIC, Nvidia, Qatar Investment Authority (QIA), Radical Ventures, and TPG also participated, according to Crusoe.",
+                "source_content_hash": "c5404319aca5bde8",
+                "quote_hash": "92e7fe9ade3d2e01bb9a93f7e7ef10398c2f075ea8977a2f21bd740c300df481"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "TPG",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-34d15ad3ce6de8dc",
+                "quote": "Founders Fund, GIC, Nvidia, Qatar Investment Authority (QIA), Radical Ventures, and TPG also participated, according to Crusoe.",
+                "source_content_hash": "c5404319aca5bde8",
+                "quote_hash": "92e7fe9ade3d2e01bb9a93f7e7ef10398c2f075ea8977a2f21bd740c300df481"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "Fidelity",
+            "role": "历史轮次投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4afc17abd0ce2781",
+                "quote": "Notable investors beyond the Series D participants include Fidelity, Mubadala, Ribbit Capital, and Long Journey Ventures.",
+                "source_content_hash": "031d223859c249dd",
+                "quote_hash": "253edf90d0e9e4ee8916dbb3a27d6bdf86519572600a3a3ef41bdba815507644"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Ribbit Capital",
+            "role": "历史轮次投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4afc17abd0ce2781",
+                "quote": "Notable investors beyond the Series D participants include Fidelity, Mubadala, Ribbit Capital, and Long Journey Ventures.",
+                "source_content_hash": "031d223859c249dd",
+                "quote_hash": "253edf90d0e9e4ee8916dbb3a27d6bdf86519572600a3a3ef41bdba815507644"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Long Journey Ventures",
+            "role": "历史轮次投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4afc17abd0ce2781",
+                "quote": "Notable investors beyond the Series D participants include Fidelity, Mubadala, Ribbit Capital, and Long Journey Ventures.",
+                "source_content_hash": "031d223859c249dd",
+                "quote_hash": "253edf90d0e9e4ee8916dbb3a27d6bdf86519572600a3a3ef41bdba815507644"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Salesforce Ventures",
+            "role": "Series E 参投方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4afc17abd0ce2781",
+                "quote": "Its October 2025 Series E—oversubscribed and co-led by Valor Equity Partners and Mubadala Capital, with participation from NVIDIA, Fidelity, Founders Fund, Salesforce Ventures, Supermicro, T. Rowe Price, Tiger Global, Ribbit, Franklin Templeton, and Upper90, among others—was anticipated to total $1.375B and valued the company at over $10B.",
+                "source_content_hash": "031d223859c249dd",
+                "quote_hash": "e78c455c702cb1c5edd7d55fa07af015b1b0db72944ba98fe163abcad48cc9e5"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Supermicro",
+            "role": "Series E 参投方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4afc17abd0ce2781",
+                "quote": "Its October 2025 Series E—oversubscribed and co-led by Valor Equity Partners and Mubadala Capital, with participation from NVIDIA, Fidelity, Founders Fund, Salesforce Ventures, Supermicro, T. Rowe Price, Tiger Global, Ribbit, Franklin Templeton, and Upper90, among others—was anticipated to total $1.375B and valued the company at over $10B.",
+                "source_content_hash": "031d223859c249dd",
+                "quote_hash": "e78c455c702cb1c5edd7d55fa07af015b1b0db72944ba98fe163abcad48cc9e5"
+              }
+            ],
+            "entity_id": "EN-4a639cb888a15d75"
+          },
+          {
+            "name": "T. Rowe Price",
+            "role": "Series E 参投方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4afc17abd0ce2781",
+                "quote": "Its October 2025 Series E—oversubscribed and co-led by Valor Equity Partners and Mubadala Capital, with participation from NVIDIA, Fidelity, Founders Fund, Salesforce Ventures, Supermicro, T. Rowe Price, Tiger Global, Ribbit, Franklin Templeton, and Upper90, among others—was anticipated to total $1.375B and valued the company at over $10B.",
+                "source_content_hash": "031d223859c249dd",
+                "quote_hash": "e78c455c702cb1c5edd7d55fa07af015b1b0db72944ba98fe163abcad48cc9e5"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Tiger Global",
+            "role": "Series E 参投方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4afc17abd0ce2781",
+                "quote": "Its October 2025 Series E—oversubscribed and co-led by Valor Equity Partners and Mubadala Capital, with participation from NVIDIA, Fidelity, Founders Fund, Salesforce Ventures, Supermicro, T. Rowe Price, Tiger Global, Ribbit, Franklin Templeton, and Upper90, among others—was anticipated to total $1.375B and valued the company at over $10B.",
+                "source_content_hash": "031d223859c249dd",
+                "quote_hash": "e78c455c702cb1c5edd7d55fa07af015b1b0db72944ba98fe163abcad48cc9e5"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Franklin Templeton",
+            "role": "Series E 参投方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4afc17abd0ce2781",
+                "quote": "Its October 2025 Series E—oversubscribed and co-led by Valor Equity Partners and Mubadala Capital, with participation from NVIDIA, Fidelity, Founders Fund, Salesforce Ventures, Supermicro, T. Rowe Price, Tiger Global, Ribbit, Franklin Templeton, and Upper90, among others—was anticipated to total $1.375B and valued the company at over $10B.",
+                "source_content_hash": "031d223859c249dd",
+                "quote_hash": "e78c455c702cb1c5edd7d55fa07af015b1b0db72944ba98fe163abcad48cc9e5"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Upper90",
+            "role": "Series E 参投方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4afc17abd0ce2781",
+                "quote": "Its October 2025 Series E—oversubscribed and co-led by Valor Equity Partners and Mubadala Capital, with participation from NVIDIA, Fidelity, Founders Fund, Salesforce Ventures, Supermicro, T. Rowe Price, Tiger Global, Ribbit, Franklin Templeton, and Upper90, among others—was anticipated to total $1.375B and valued the company at over $10B.",
+                "source_content_hash": "031d223859c249dd",
+                "quote_hash": "e78c455c702cb1c5edd7d55fa07af015b1b0db72944ba98fe163abcad48cc9e5"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-34d15ad3ce6de8dc",
+            "quote": "Crusoe raises $3.9B to build massive data centers and small modular “AI factories”",
+            "source_content_hash": "c5404319aca5bde8",
+            "quote_hash": "871b81611c92267c2ca01001b88ce128a6a4df2e9abf403216f5b5cbaa9348f9"
+          },
+          {
+            "source_id": "FISRC-34d15ad3ce6de8dc",
+            "quote": "Data center developer Crusoe said Thursday it raised $3.9 billion in a Series F round that pushes its valuation to $30.9 billion.",
+            "source_content_hash": "c5404319aca5bde8",
+            "quote_hash": "ec0ca2756ad11b42f6265c1309957eef62ed8ca1eda511cfe1a45a969e861716"
+          }
+        ],
+        "round_code": "series_f",
+        "round_original": "Series F",
+        "amount_original": "$3.9B",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3900000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "39 亿美元"
+        },
+        "total_raised_original": "$3.9 billion",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 3900000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "39 亿美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-26a5749d8604455a",
+            "round_original": "Series F",
+            "amount": "$3.9B",
+            "announced_at": "2026-09-17",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-34d15ad3ce6de8dc",
+                "quote": "Crusoe raises $3.9B to build massive data centers and small modular “AI factories”",
+                "source_content_hash": "c5404319aca5bde8",
+                "quote_hash": "871b81611c92267c2ca01001b88ce128a6a4df2e9abf403216f5b5cbaa9348f9"
+              },
+              {
+                "source_id": "FISRC-34d15ad3ce6de8dc",
+                "quote": "Data center developer Crusoe said Thursday it raised $3.9 billion in a Series F round that pushes its valuation to $30.9 billion.",
+                "source_content_hash": "c5404319aca5bde8",
+                "quote_hash": "ec0ca2756ad11b42f6265c1309957eef62ed8ca1eda511cfe1a45a969e861716"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "Crusoe Cloud",
+          "description": "Crusoe 的核心产品是一个针对 AI 工作负载优化的 GPU 云平台，提供裸金属或虚拟化实例、3200 Gbps InfiniBand 网络，以及 CLI、REST API、管理控制台和 Terraform 等标准工具。",
+          "target_customers": "AI 公司、企业技术团队、超大规模云服务商",
+          "features": [
+            "按需和预留 GPU 实例，支持 H100、L40S、MI300X 等 GPU",
+            "3200 Gbps InfiniBand 网络",
+            "按秒计费",
+            "AutoClusters 分布式训练编排",
+            "Managed Inference 托管推理服务",
+            "Command Center 可观测性与编排工具",
+            "Edge Zones 低延迟边缘部署"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4afc17abd0ce2781",
+              "quote": "Gets instant access to bare metal or virtualized instances with 3200 Gbps InfiniBand networking",
+              "source_content_hash": "031d223859c249dd",
+              "quote_hash": "c11725b2fed3c2841df860d84f32cb88480b165b689c66b4d8ab8b8da8e28037"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Spark 模块化数据中心",
+          "description": "Crusoe 自建工厂制造的模块化 AI 数据中心，可通过卡车运输并连接到几乎任何地方的大型电源，无需大量施工人员即可快速部署计算能力。",
+          "target_customers": "需要快速部署 AI 计算能力的企业和超大规模客户",
+          "features": [
+            "卡车运输的模块化设计",
+            "可连接大型电源",
+            "快速部署，无需大型施工队伍"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-34d15ad3ce6de8dc",
+              "quote": "smaller, modular AI factories that can be transported by truck and connected to large power sources almost anywhere",
+              "source_content_hash": "c5404319aca5bde8",
+              "quote_hash": "435c5982c8e9f9e2518ad4bb81d8fdc2fa96b078abcd7bddb55e2b46bfc7f30b"
+            },
+            {
+              "source_id": "FISRC-34d15ad3ce6de8dc",
+              "quote": "By manufacturing these modular data centers, called Spark, at its own facilities, Crusoe can deploy compute capacity quickly and without the need for large construction workforces.",
+              "source_content_hash": "c5404319aca5bde8",
+              "quote_hash": "e5f761745e22cca7fa9e2c6ccbcca636acfb36a881ba9f49f99bb613d53f7d23"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Managed Inference",
+          "description": "Crusoe 的托管推理服务，声称在指定基准上比 vLLM 快 9.9 倍的首 token 时间和 5 倍的吞吐量，由 MemoryAlloy KV-cache 技术驱动，支持按 token 付费和预留吞吐量定价。",
+          "target_customers": "需要生产级模型推理服务的 AI 公司",
+          "features": [
+            "MemoryAlloy KV-cache 技术",
+            "按 token 付费和预留吞吐量定价",
+            "支持领先的开源和专用模型"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4afc17abd0ce2781",
+              "quote": "Managed Inference claims up to 9.9x faster time-to-first-token and up to 5x higher throughput versus vLLM for specified benchmarks, enabled by its MemoryAlloy KV-cache technology, and is available on pay-per-token and provisioned-throughput pricing.",
+              "source_content_hash": "031d223859c249dd",
+              "quote_hash": "3643d1f2f4bfe7a137bd7f975516c58dc4075c297af7ab6552fa737a58eaf46f"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "OpenAI",
+          "industry": "AI 研究",
+          "use_case": "使用 Crusoe 位于德克萨斯州 Abilene 的大型数据中心站点",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-34d15ad3ce6de8dc",
+              "quote": "including a large site in Abilene, Texas, used by OpenAI",
+              "source_content_hash": "c5404319aca5bde8",
+              "quote_hash": "1d56b480b16ba219250007078a1a8f25b2d9f4805853c412b8a06cd81d6c4f4b"
+            }
+          ],
+          "entity_id": "EN-7d3194f79e645c42"
+        },
+        {
+          "name": "Microsoft",
+          "industry": "科技",
+          "use_case": "Crusoe 客户；在 Abilene 建设 900 MW AI 工厂园区",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4afc17abd0ce2781",
+              "quote": "In March 2026, Crusoe announced a new 900 MW AI factory campus in Abilene, Texas for Microsoft",
+              "source_content_hash": "031d223859c249dd",
+              "quote_hash": "53006faa0365fb6f38c15c764e44d2e4679afa40acd9d89f88542e9c30472a0a"
+            }
+          ],
+          "entity_id": "EN-9fbf261b62c1d7c0"
+        },
+        {
+          "name": "Oracle",
+          "industry": "科技",
+          "use_case": "Crusoe 客户；Abilene 园区运行在 Oracle Cloud Infrastructure 上",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4afc17abd0ce2781",
+              "quote": "In January 2025, Crusoe announced the first phase of its flagship Abilene, Texas campus is live and running on Oracle Cloud Infrastructure",
+              "source_content_hash": "031d223859c249dd",
+              "quote_hash": "3fa39932c740b5a926e01066126f3f084d3f1ebefc7023ca722ad154ba156262"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Lambda Labs",
+          "product": "GPU 云平台",
+          "scenario": "面向技术用户的 GPU 云计算",
+          "target_customer": "开发者",
+          "funding_summary": "$893M raised",
+          "core_difference": "Lambda Labs 专注于构建卓越的开发者体验和工具，使 GPU 云计算对技术用户更易用；Crusoe 则通过能源高效的基础设施和垂直整合实现差异化。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4afc17abd0ce2781",
+              "quote": "Lambda Labs has focused on building superior developer experience and tooling, making GPU cloud computing more accessible to technical users.",
+              "source_content_hash": "031d223859c249dd",
+              "quote_hash": "6959dd24aba1223a12ddcfd8f3572d75ac23540982bdfdcccc75c8d62cd9c50a"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "2024 年收入",
+          "value": "$276M",
+          "observed_at": "2024",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4afc17abd0ce2781",
+              "quote": "Sacra estimates Crusoe hit $276M in revenue in 2024, up 82% YoY",
+              "source_content_hash": "031d223859c249dd",
+              "quote_hash": "85f9bd12fc2b94cc6db04b829c1cb23d7b6194937df5757fa1cefeadc00e8755"
+            }
+          ]
+        },
+        {
+          "label": "2024 年同比增长率",
+          "value": "82%",
+          "observed_at": "2024",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4afc17abd0ce2781",
+              "quote": "Sacra estimates Crusoe hit $276M in revenue in 2024, up 82% YoY",
+              "source_content_hash": "031d223859c249dd",
+              "quote_hash": "85f9bd12fc2b94cc6db04b829c1cb23d7b6194937df5757fa1cefeadc00e8755"
+            }
+          ]
+        },
+        {
+          "label": "2025 年收入预测",
+          "value": "~$500M",
+          "observed_at": "2025",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4afc17abd0ce2781",
+              "quote": "Crusoe projects that it will grow revenue to ~$500M in 2025",
+              "source_content_hash": "031d223859c249dd",
+              "quote_hash": "1edfedd82ebe41ff3ac0738b2e754fbe04a2c540ab2913d6449ee8e65fa36fc5"
+            }
+          ]
+        },
+        {
+          "label": "电力管线",
+          "value": "超过 45 GW",
+          "observed_at": "2025-10",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4afc17abd0ce2781",
+              "quote": "with its power pipeline exceeding 45 GW",
+              "source_content_hash": "031d223859c249dd",
+              "quote_hash": "add93ec1559cd590ae51006c6960d5982c35c8a1ea16f5bd5f1e2f9004d278cf"
+            }
+          ]
+        },
+        {
+          "label": "移动数据中心数量",
+          "value": "86 个，分布在 30 个站点",
+          "observed_at": "2025",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4afc17abd0ce2781",
+              "quote": "The company operates 86 mobile data centers across 30 sites in major U.S. oil fields plus Argentina",
+              "source_content_hash": "031d223859c249dd",
+              "quote_hash": "cb64e412b60c3e531c2106e95ea9a765d787a0f12454a94e3e95f5cd45107321"
+            }
+          ]
+        },
+        {
+          "label": "每日处理天然气量",
+          "value": "超过 1000 万立方英尺",
+          "observed_at": "2025",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4afc17abd0ce2781",
+              "quote": "processing over 10 million cubic feet of gas daily",
+              "source_content_hash": "031d223859c249dd",
+              "quote_hash": "7e180c7c54438c8b8cbbf75258d440b67de42742f13316290f47fa622bca2b8e"
+            }
+          ]
+        },
+        {
+          "label": "2025 年前三季度云预订量增长",
+          "value": "约 5 倍",
+          "observed_at": "2025-10",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4afc17abd0ce2781",
+              "quote": "Crusoe Cloud bookings grew approximately 5x in the first three quarters of 2025 versus the prior year",
+              "source_content_hash": "031d223859c249dd",
+              "quote_hash": "d68585216bb726f71192c4adc75ccf6b7fb36999f3ef510b380872e46bd0f246"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Marvin Gabler",
+          "quote": "Their platform is reliable, scalable and price-performant, allowing us to rapidly train and tune our models, while being climate-aligned and sustainable.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-de85e5afd5107381",
+              "quote": "Their platform is reliable, scalable and price-performant, allowing us to rapidly train and tune our models, while being climate-aligned and sustainable.",
+              "source_content_hash": "7583c3f671c09408",
+              "quote_hash": "0920cc128f5d0b8a5609aeecf7764a00e14239adf9d387d5cded3a6ccf314bfa"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是 Crusoe 能否通过垂直整合的能源优先模式，在 AI 基础设施的资本密集竞赛中持续获得超大规模客户合同并实现规模化部署。本轮 39 亿美元融资将估值推至 309 亿美元，较 10 个月前 Series E 的 100 亿美元估值增长约 3 倍，其依赖的已验证信号包括：与 OpenAI 的 Abilene 站点合作、与 Jane Street 的 130 亿美元五年期云合同、与 Microsoft 的 900 MW AI 工厂园区协议，以及 2025 年前三季度云预订量约 5 倍增长。证据边界在于：收入数据来自 Sacra 的估算而非公司官方披露，且 2024 年收入 2.76 亿美元与 309 亿美元估值之间存在极高倍数，资本判断受限于缺乏本轮融资后官方财务数据。",
+        "validated_signals": [
+          "与 OpenAI 的 Abilene 大型数据中心站点合作",
+          "与 Jane Street 签署 130 亿美元五年期云合同",
+          "与 Microsoft 达成 900 MW AI 工厂园区协议",
+          "2025 年前三季度云预订量同比增长约 5 倍",
+          "电力管线超过 45 GW"
+        ],
+        "risks": [
+          "资本密集型业务，每个数据中心在产生收入前需要数亿美元的前期投资",
+          "与 AWS、Azure、GCP 等拥有更深资产负债表的超大规模云服务商竞争",
+          "GPU 租赁价格已从 8 美元/GPU/小时降至 2 美元/GPU/小时，价格进一步压缩可能影响利润率",
+          "能源价格波动可能影响利润率"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "compute_cloud_service",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "hardware_computing",
+        "market_application_id": "computing_infrastructure",
+        "use_case_ids": [],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer"
+        ],
+        "sector": "AI 基础设施与清洁能源",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是 Crusoe 能否通过垂直整合的能源优先模式，在 AI 基础设施的资本密集竞赛中持续获得超大规模客户合同并实现规模化部署。本轮 39 亿美元融资将估值推至 309 亿美元，较 10 个月前 Series E 的 100 亿美元估值增长约 3 倍，其依赖的已验证信号包括：与 OpenAI 的 Abilene 站点合作、与 Jane Street 的 130 亿美元五年期云合同、与 Microsoft 的 900 MW AI 工厂园区协议，以及 2025 年前三季度云预订量约 5 倍增长。证据边界在于：收入数据来自 Sacra 的估算而非公司官方披露，且 2024 年收入 2.76 亿美元与 309 亿美元估值之间存在极高倍数，资本判断受限于缺乏本轮融资后官方财务数据。",
+          "evidence_signals": [
+            "与 OpenAI 的 Abilene 大型数据中心站点合作",
+            "与 Jane Street 签署 130 亿美元五年期云合同",
+            "与 Microsoft 达成 900 MW AI 工厂园区协议",
+            "2025 年前三季度云预订量同比增长约 5 倍",
+            "电力管线超过 45 GW"
+          ],
+          "risks": [
+            "资本密集型业务，每个数据中心在产生收入前需要数亿美元的前期投资",
+            "与 AWS、Azure、GCP 等拥有更深资产负债表的超大规模云服务商竞争",
+            "GPU 租赁价格已从 8 美元/GPU/小时降至 2 美元/GPU/小时，价格进一步压缩可能影响利润率",
+            "能源价格波动可能影响利润率"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Crusoe Cloud",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Spark 模块化数据中心",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Managed Inference",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Chase Lochmiller",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Cully Cavness",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Atreides Management",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Mubadala Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Valor Equity Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Founders Fund",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "GIC",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Nvidia",
+          "canonical_entity_id": "EN-8d4321d936320802",
+          "canonical_name": "NVIDIA"
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Qatar Investment Authority (QIA)",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Radical Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "TPG",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Fidelity",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Ribbit Capital",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Long Journey Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Salesforce Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Supermicro",
+          "canonical_entity_id": "EN-4a639cb888a15d75",
+          "canonical_name": "Supermicro"
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "T. Rowe Price",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Tiger Global",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Franklin Templeton",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "Upper90",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "OpenAI",
+          "canonical_entity_id": "EN-7d3194f79e645c42",
+          "canonical_name": "OpenAI"
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Microsoft",
+          "canonical_entity_id": "EN-9fbf261b62c1d7c0",
+          "canonical_name": "Microsoft"
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Oracle",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Lambda Labs",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-26a5749d8604455a",
+          "date": "2026-09-17",
+          "title": "Crusoe 融资 39 亿美元建大型数据中心与模块化 AI 工厂，估值达 309 亿美元",
+          "amount": "$3.9B",
+          "source_refs": [
+            "SA-207c77e7b7c4b991"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-34d15ad3ce6de8dc",
+          "source_url": "https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories",
+          "title": "Crusoe 融资 39 亿美元建大型数据中心与模块化 AI 工厂，估值达 309 亿美元",
+          "publisher": "TechCrunch：AI（RSS）",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-18T00:25:23.632Z",
+          "content_hash": "c5404319aca5bde8",
+          "source_artifact_id": "SA-207c77e7b7c4b991",
+          "raw_id": "RAW-82f4bf3508646b2a"
+        },
+        {
+          "source_id": "FISRC-4afc17abd0ce2781",
+          "source_url": "https://sacra.com/c/crusoe/",
+          "title": "Crusoe revenue, valuation & funding | Sacra",
+          "publisher": "sacra.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-18T02:29:18.120Z",
+          "content_hash": "031d223859c249dd",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-de85e5afd5107381",
+          "source_url": "https://www.crusoe.ai/resources/customers/jua",
+          "title": "How Crusoe customer Jua tackles climate with AI | Crusoe",
+          "publisher": "crusoe.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-18T02:29:22.541Z",
+          "content_hash": "7583c3f671c09408",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-777a18cf03f23d4d",
+          "source_url": "https://www.rainmakersecurities.com/company-profiles/crusoe-pre-ipo",
+          "title": "Crusoe Pre IPO Company Profile | Rainmaker Securities",
+          "publisher": "rainmakersecurities.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-18T02:29:28.846Z",
+          "content_hash": "01360043004b89e7",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-18T02:30:25.649Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-26a5749d8604455a",
+          "confidence": 0.9,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-18T02:30:25.649Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 3,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "Crusoe Cloud",
+            "Managed Inference",
+            "Spark 模块化数据中心"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "Chase Lochmiller",
+            "Cully Cavness"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-26a5749d8604455a"
+      ],
+      "aggregation": {
+        "key": "EN-d41ebd9f02722fc8|series_f",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-f921fdd2a231e6a5",
+      "triggered_by_event_id": "EV-3db9a076e3b7d4fd",
+      "as_of_date": "2026-09-18",
+      "company": {
+        "entity_id": "EN-9b6b1be41e3bc384",
+        "name": "元川微",
+        "full_name": "元川微",
+        "website": "",
+        "summary": "元川微是一家LPU创业公司，由前华为高管杨滨创立，专注于面向Agentic AI实时推理时代的推理芯片研发。公司成立于2025年9月，核心产品为LPU+架构，支持多模态模型并针对MoE模型动态调度特征进行优化。",
+        "headquarters": "",
+        "founders": [
+          {
+            "name": "杨滨",
+            "role": "创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ee42dc11e9aa441b",
+                "quote": "元川微创始人兼CEO杨滨就已经开始了对推理芯片的构想",
+                "source_content_hash": "e7bb87fdb5aacbc8",
+                "quote_hash": "5d1744fb2a73616a2561a835b60e162f1d1123d7c8ce8d1e41b9143b76d295c1"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ee42dc11e9aa441b",
+            "quote": "LPU创业公司元川微已完成Pre-A轮数亿元融资",
+            "source_content_hash": "e7bb87fdb5aacbc8",
+            "quote_hash": "b15a9f1ddf46a2f6bbc40c80566532979c10d3ccc7b41a478bdc9b13638fa7df"
+          },
+          {
+            "source_id": "FISRC-9e846f1537b1804f",
+            "quote": "公开资料显示，元川微成立于2025年9月",
+            "source_content_hash": "90d0ccea10371fa6",
+            "quote_hash": "c55f3194284c26dbfe69d84f1376a6ac80dc6896cf59281c82be04275a625fb7"
+          }
+        ],
+        "application_entity_id": "FICO-yuanchuan-micro",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "Pre-A轮",
+        "amount": "数亿元",
+        "total_raised": "",
+        "announced_at": "2026-07-24",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "IDG资本",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ee42dc11e9aa441b",
+                "quote": "本轮融资由IDG资本领投，孚腾资本、九坤创投、尚颀资本、顺禧基金、徐汇科创投联合投资",
+                "source_content_hash": "e7bb87fdb5aacbc8",
+                "quote_hash": "4fc479d899c2302755938d07a87f5969b837f37def30907e2dc06841881dd454"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "孚腾资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ee42dc11e9aa441b",
+                "quote": "本轮融资由IDG资本领投，孚腾资本、九坤创投、尚颀资本、顺禧基金、徐汇科创投联合投资",
+                "source_content_hash": "e7bb87fdb5aacbc8",
+                "quote_hash": "4fc479d899c2302755938d07a87f5969b837f37def30907e2dc06841881dd454"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "九坤创投",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ee42dc11e9aa441b",
+                "quote": "本轮融资由IDG资本领投，孚腾资本、九坤创投、尚颀资本、顺禧基金、徐汇科创投联合投资",
+                "source_content_hash": "e7bb87fdb5aacbc8",
+                "quote_hash": "4fc479d899c2302755938d07a87f5969b837f37def30907e2dc06841881dd454"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "尚颀资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ee42dc11e9aa441b",
+                "quote": "本轮融资由IDG资本领投，孚腾资本、九坤创投、尚颀资本、顺禧基金、徐汇科创投联合投资",
+                "source_content_hash": "e7bb87fdb5aacbc8",
+                "quote_hash": "4fc479d899c2302755938d07a87f5969b837f37def30907e2dc06841881dd454"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "顺禧基金",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ee42dc11e9aa441b",
+                "quote": "本轮融资由IDG资本领投，孚腾资本、九坤创投、尚颀资本、顺禧基金、徐汇科创投联合投资",
+                "source_content_hash": "e7bb87fdb5aacbc8",
+                "quote_hash": "4fc479d899c2302755938d07a87f5969b837f37def30907e2dc06841881dd454"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "徐汇科创投",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ee42dc11e9aa441b",
+                "quote": "本轮融资由IDG资本领投，孚腾资本、九坤创投、尚颀资本、顺禧基金、徐汇科创投联合投资",
+                "source_content_hash": "e7bb87fdb5aacbc8",
+                "quote_hash": "4fc479d899c2302755938d07a87f5969b837f37def30907e2dc06841881dd454"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "头部VC、政府基金及产业链",
+            "role": "天使轮系列融资投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ee42dc11e9aa441b",
+                "quote": "今年4月完成的数亿元天使轮系列融资，就已获得头部VC、政府基金及产业链的联合支持",
+                "source_content_hash": "e7bb87fdb5aacbc8",
+                "quote_hash": "d0f6cb3fed0bbf3f00709fcc70d87fb6ee027e81bafe9f3c99317ffd35be5bd6"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ee42dc11e9aa441b",
+            "quote": "华为22年老兵从AI终局倒推LPU，元川微完成新一轮数亿元融资_科技头条_资讯_财经中国",
+            "source_content_hash": "e7bb87fdb5aacbc8",
+            "quote_hash": "6d10417e188bf5a314711c6d1bcefebddfbc6f84ad3d279c4f8e0c376573588b"
+          },
+          {
+            "source_id": "FISRC-ee42dc11e9aa441b",
+            "quote": "雷峰网独家获悉，LPU创业公司元川微已完成Pre-A轮数亿元融资。本轮融资由IDG资本领投，孚腾资本、九坤创投、尚颀资本、顺禧基金、徐汇科创投联合投资。",
+            "source_content_hash": "e7bb87fdb5aacbc8",
+            "quote_hash": "4191ace93ec73ad67794391463be93a22e7529dbbb9c788b51c00cc518b4f8d2"
+          },
+          {
+            "source_id": "FISRC-9e846f1537b1804f",
+            "quote": "据了解，这也是元川微2026年以来完成的第四轮融资。",
+            "source_content_hash": "90d0ccea10371fa6",
+            "quote_hash": "c6d2b3d1c861eaf8c76c81bc37c0fa52e3672ca5daadd0f7daadd00aed56ccde"
+          }
+        ],
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-3db9a076e3b7d4fd",
+            "round_original": "Pre-A轮",
+            "amount": "数亿元",
+            "announced_at": "2026-07-24",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ee42dc11e9aa441b",
+                "quote": "华为22年老兵从AI终局倒推LPU，元川微完成新一轮数亿元融资_科技头条_资讯_财经中国",
+                "source_content_hash": "e7bb87fdb5aacbc8",
+                "quote_hash": "6d10417e188bf5a314711c6d1bcefebddfbc6f84ad3d279c4f8e0c376573588b"
+              },
+              {
+                "source_id": "FISRC-ee42dc11e9aa441b",
+                "quote": "雷峰网独家获悉，LPU创业公司元川微已完成Pre-A轮数亿元融资。本轮融资由IDG资本领投，孚腾资本、九坤创投、尚颀资本、顺禧基金、徐汇科创投联合投资。",
+                "source_content_hash": "e7bb87fdb5aacbc8",
+                "quote_hash": "4191ace93ec73ad67794391463be93a22e7529dbbb9c788b51c00cc518b4f8d2"
+              },
+              {
+                "source_id": "FISRC-9e846f1537b1804f",
+                "quote": "据了解，这也是元川微2026年以来完成的第四轮融资。",
+                "source_content_hash": "90d0ccea10371fa6",
+                "quote_hash": "c6d2b3d1c861eaf8c76c81bc37c0fa52e3672ca5daadd0f7daadd00aed56ccde"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "LPU+",
+          "description": "元川微推出的面向Agentic AI实时推理时代的原生LPU架构，从设计之初便支持多模态模型，并针对MoE模型的动态调度特征进行优化。",
+          "target_customers": "产业客户及云厂商",
+          "features": [
+            "时空编译器",
+            "硬流水架构",
+            "大带宽存储",
+            "支持多模态模型",
+            "针对MoE模型动态调度优化",
+            "可根据云边端不同场景灵活扩展算力规模"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ee42dc11e9aa441b",
+              "quote": "同样采用这一命名的元川微，将其架构命名为LPU+，从设计之初便支持多模态模型。此外，作为Transformer时代的原生架构，LPU+还针对MoE（Mixture of Experts，混合专家）模型的动态调度特征进行优化。",
+              "source_content_hash": "e7bb87fdb5aacbc8",
+              "quote_hash": "edc4819c7be629a883726e0c444d45cee3c4d5eede9731d1beceff6884d13313"
+            },
+            {
+              "source_id": "FISRC-9e846f1537b1804f",
+              "quote": "杨滨强调LPU 的时空编译器、硬流水架构、大带宽存储 这三大 核心 很难区分谁的优先级更高",
+              "source_content_hash": "90d0ccea10371fa6",
+              "quote_hash": "bb1340d02009a5b13ee8711f572627af04467a2ba399fe590e95d4dc779c4424"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "Groq",
+          "product": "Groq LPU",
+          "scenario": "低延迟、可预测的推理芯片",
+          "target_customer": "",
+          "funding_summary": "",
+          "core_difference": "Groq LPU诞生于CNN时代，当时面临的模型架构和应用需求与今天不同；元川微的LPU+从设计之初便支持多模态模型，并针对MoE模型的动态调度特征进行优化。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ee42dc11e9aa441b",
+              "quote": "他直言两家公司虽然都关注低延迟、可预测的推理，但诞生于CNN时代的Groq LPU当时面临的模型架构和应用需求都与今天并不相同。",
+              "source_content_hash": "e7bb87fdb5aacbc8",
+              "quote_hash": "f05e95f742d9612893a98f6ee7a845ee9c6c24ae404a3520960ec6d14a27482e"
+            },
+            {
+              "source_id": "FISRC-9e846f1537b1804f",
+              "quote": "同样采用这一命名的元川微，将其架构命名为LPU+，从设计之初便支持多模态模型。此外，作为Transformer时代的原生架构，LPU+还针对MoE（Mixture of Experts，混合专家）模型的动态调度特征进行优化。",
+              "source_content_hash": "90d0ccea10371fa6",
+              "quote_hash": "edc4819c7be629a883726e0c444d45cee3c4d5eede9731d1beceff6884d13313"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "2026年以来完成融资轮数",
+          "value": "4轮",
+          "observed_at": "2026-07-24",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ee42dc11e9aa441b",
+              "quote": "据了解，这也是元川微2026年以来完成的第四轮融资。",
+              "source_content_hash": "e7bb87fdb5aacbc8",
+              "quote_hash": "c6d2b3d1c861eaf8c76c81bc37c0fa52e3672ca5daadd0f7daadd00aed56ccde"
+            }
+          ]
+        },
+        {
+          "label": "公司成立时间",
+          "value": "2025年9月",
+          "observed_at": "2026-07-24",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ee42dc11e9aa441b",
+              "quote": "公开资料显示，元川微成立于2025年9月",
+              "source_content_hash": "e7bb87fdb5aacbc8",
+              "quote_hash": "c55f3194284c26dbfe69d84f1376a6ac80dc6896cf59281c82be04275a625fb7"
+            }
+          ]
+        },
+        {
+          "label": "天使轮系列融资金额",
+          "value": "数亿元",
+          "observed_at": "2026-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ee42dc11e9aa441b",
+              "quote": "今年4月完成的数亿元天使轮系列融资",
+              "source_content_hash": "e7bb87fdb5aacbc8",
+              "quote_hash": "ae206683451594f16e9ca5e575bbbba30522bd130170231b48d527ca004e7a94"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "杨滨",
+          "quote": "如果我们的目标只是模仿LPU，那么能拓展的空间实际上并不多。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ee42dc11e9aa441b",
+              "quote": "如果我们的目标只是模仿LPU，那么能拓展的空间实际上并不多。",
+              "source_content_hash": "e7bb87fdb5aacbc8",
+              "quote_hash": "cf19287aba4a956c52332b706b3e66dcea1dee658f67a53d9d27f3f90271141f"
+            }
+          ]
+        },
+        {
+          "speaker": "杨滨",
+          "quote": "创业其实是你过去积累的所有资源的兑现。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ee42dc11e9aa441b",
+              "quote": "创业其实是你过去积累的所有资源的兑现。",
+              "source_content_hash": "e7bb87fdb5aacbc8",
+              "quote_hash": "948fecb638d12c557da97946df11017c6d373629f0f0ee66ea90e0259b9f77a5"
+            }
+          ]
+        },
+        {
+          "speaker": "杨滨",
+          "quote": "只做推理且只做最快的推理",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ee42dc11e9aa441b",
+              "quote": "只做推理且只做最快的推理",
+              "source_content_hash": "e7bb87fdb5aacbc8",
+              "quote_hash": "4fc4d4553ae8a11c7a14ca23749352c98f1d1ed0342f243bec784b5495745847"
+            }
+          ]
+        },
+        {
+          "speaker": "杨滨",
+          "quote": "主打性价比肯定有市场空间，但会被压缩得很快。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ee42dc11e9aa441b",
+              "quote": "主打性价比肯定有市场空间，但会被压缩得很快。",
+              "source_content_hash": "e7bb87fdb5aacbc8",
+              "quote_hash": "fdb4bfaa0912db82d41c549cdcbeed3d3e9e25548c7015c00b4a20b53508daa6"
+            }
+          ]
+        },
+        {
+          "speaker": "杨滨",
+          "quote": "Groq真正值得借鉴的是其一直坚持的硬流水架构。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ee42dc11e9aa441b",
+              "quote": "Groq真正值得借鉴的是其一直坚持的硬流水架构。",
+              "source_content_hash": "e7bb87fdb5aacbc8",
+              "quote_hash": "cd4c5e58bd144d6ef09b89b2778211c0eba1b2cd851a2070a77911d3afbe97d9"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是Agentic AI推理时代对低时延、高稳定性推理芯片的专用架构需求。元川微以LPU+架构切入，强调从AI终局倒推技术路线，而非简单复制Groq。已验证信号包括：2026年以来完成四轮融资、天使轮系列融资获得头部VC、政府基金及产业链联合支持、正与多家产业客户及云厂商开展产品验证与合作。但来源未披露具体估值、客户名称或产品实测性能数据，资本判断的证据边界限于融资节奏、团队背景和技术路线描述。",
+        "validated_signals": [
+          "2026年以来完成四轮融资，资本持续加码",
+          "天使轮系列融资获得头部VC、政府基金及产业链联合支持",
+          "正与多家产业客户及云厂商开展产品验证与合作",
+          "核心团队来自华为，具备处理器、基带算法、芯片架构等长期经验"
+        ],
+        "risks": [
+          "来源未披露具体客户名称、产品实测性能或商业化收入，产品验证与合作仍处于早期阶段",
+          "LPU路线面临GPU生态和ASIC路线的双重竞争，模型快速演进可能影响架构适应性"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "hardware_computing",
+        "market_application_id": "chips",
+        "use_case_ids": [
+          "physical_automation"
+        ],
+        "industry_ids": [
+          "manufacturing"
+        ],
+        "target_user_ids": [
+          "developer"
+        ],
+        "sector": "AI推理芯片",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是Agentic AI推理时代对低时延、高稳定性推理芯片的专用架构需求。元川微以LPU+架构切入，强调从AI终局倒推技术路线，而非简单复制Groq。已验证信号包括：2026年以来完成四轮融资、天使轮系列融资获得头部VC、政府基金及产业链联合支持、正与多家产业客户及云厂商开展产品验证与合作。但来源未披露具体估值、客户名称或产品实测性能数据，资本判断的证据边界限于融资节奏、团队背景和技术路线描述。",
+          "evidence_signals": [
+            "2026年以来完成四轮融资，资本持续加码",
+            "天使轮系列融资获得头部VC、政府基金及产业链联合支持",
+            "正与多家产业客户及云厂商开展产品验证与合作",
+            "核心团队来自华为，具备处理器、基带算法、芯片架构等长期经验"
+          ],
+          "risks": [
+            "来源未披露具体客户名称、产品实测性能或商业化收入，产品验证与合作仍处于早期阶段",
+            "LPU路线面临GPU生态和ASIC路线的双重竞争，模型快速演进可能影响架构适应性"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "LPU+",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "杨滨",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "IDG资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "孚腾资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "九坤创投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "尚颀资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "顺禧基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "徐汇科创投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "头部VC、政府基金及产业链",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Groq",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-3db9a076e3b7d4fd",
+          "date": "2026-07-24",
+          "title": "华为22年老兵从AI终局倒推LPU，元川微完成新一轮数亿元融资_科技头条_资讯_财经中国",
+          "amount": "数亿元",
+          "source_refs": [
+            "SA-37f46aedc5fa03d3"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-ee42dc11e9aa441b",
+          "source_url": "https://www.cjcn.com.cn/news/show-475659.html",
+          "title": "华为22年老兵从AI终局倒推LPU，元川微完成新一轮数亿元融资_科技头条_资讯_财经中国",
+          "publisher": "keyword search / Exa",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-18T00:25:55.808Z",
+          "content_hash": "e7bb87fdb5aacbc8",
+          "source_artifact_id": "SA-37f46aedc5fa03d3",
+          "raw_id": "RAW-205909662f11ff30"
+        },
+        {
+          "source_id": "FISRC-9e846f1537b1804f",
+          "source_url": "https://www.leiphone.com/category/chips/AGaAOgr50XhElaxq.html",
+          "title": "独家丨华为22年老兵从AI终局倒推LPU，元川微完成新一轮数亿元融资 | 雷峰网",
+          "publisher": "leiphone.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-18T02:29:14.497Z",
+          "content_hash": "90d0ccea10371fa6",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-18T02:29:42.967Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-3db9a076e3b7d4fd",
+          "confidence": 0.85,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-18T02:29:42.967Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "LPU+"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "杨滨"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-3db9a076e3b7d4fd"
+      ],
+      "aggregation": {
+        "key": "EN-9b6b1be41e3bc384|pre_series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-63b6e7a62d6c3705",
@@ -839,7 +3807,7 @@
       "as_of_date": "2026-09-18",
       "company": {
         "entity_id": "EN-bc06be2cba2b2f2c",
-        "name": "Anew Labs",
+        "name": "Anew Labs（新生实验室）",
         "full_name": "Anew Labs",
         "website": "https://anewbt.com/",
         "summary": "Anew Labs（新生实验室）是一家从字节跳动分拆出来的AI制药公司，致力于以AI技术突破解决药物研发中长期存在的难题，将技术进展与实验科学、药物研发专业能力相结合，研发新药。",
@@ -885,7 +3853,7 @@
             "quote_hash": "f4d3d05780f9700e708850247f0018f7d86241323091d942daedf762dc120142"
           }
         ],
-        "application_entity_id": "EN-bc06be2cba2b2f2c",
+        "application_entity_id": "FICO-anew-labs",
         "canonical_entity_consistent": false
       },
       "financing": {
@@ -2003,8 +4971,330 @@
   ],
   "queue": [
     {
+      "event_id": "EV-26a5749d8604455a",
+      "company_name": "Crusoe",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Crusoe 融资 39 亿美元建大型数据中心与模块化 AI 工厂，估值达 309 亿美元\" funding company investors product",
+        "\"Crusoe\" \"$3.9B\" funding investors round",
+        "\"Crusoe\" product customers case study",
+        "\"Crusoe\" \"Crusoe 融资 39 亿美元建大型数据中心与模块化 AI 工厂，估值达 309 亿美元\" competitors product use case",
+        "\"Crusoe\" \"$3.9B\" investor quote why invested",
+        "\"Crusoe\" \"$3.9B\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Crusoe 融资 39 亿美元建大型数据中心与模块化 AI 工厂，估值达 309 亿美元\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Crusoe 融资 39 亿美元建大型数据中心与模块化 AI 工厂，估值达 309 亿美元\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Crusoe\" \"$3.9B\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Crusoe\" \"$3.9B\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Crusoe\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Crusoe\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Crusoe\" \"Crusoe 融资 39 亿美元建大型数据中心与模块化 AI 工厂，估值达 309 亿美元\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Crusoe\" \"Crusoe 融资 39 亿美元建大型数据中心与模块化 AI 工厂，估值达 309 亿美元\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Crusoe\" \"$3.9B\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Crusoe\" \"$3.9B\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Crusoe\" \"$3.9B\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Crusoe\" \"$3.9B\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-09-18T02:41:43.659Z"
+    },
+    {
+      "event_id": "EV-81bbaaec2965864a",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-18T02:41:43.659Z"
+    },
+    {
+      "event_id": "EV-ed8323204ab69697",
+      "company_name": "Hang Ten Systems",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Former Infosys chief's AI startup nabs another $53M\" funding company investors product",
+        "\"Hang Ten Systems\" \"$53M\" funding investors round",
+        "\"Hang Ten Systems\" product customers case study",
+        "\"Hang Ten Systems\" \"Former Infosys chief's AI startup nabs another $53M\" competitors product use case",
+        "\"Hang Ten Systems\" \"$53M\" investor quote why invested",
+        "\"Hang Ten Systems\" \"$53M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Former Infosys chief's AI startup nabs another $53M\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Former Infosys chief's AI startup nabs another $53M\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Hang Ten Systems\" \"$53M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Hang Ten Systems\" \"$53M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Hang Ten Systems\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Hang Ten Systems\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Hang Ten Systems\" \"Former Infosys chief's AI startup nabs another $53M\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Hang Ten Systems\" \"Former Infosys chief's AI startup nabs another $53M\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Hang Ten Systems\" \"$53M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Hang Ten Systems\" \"$53M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Hang Ten Systems\" \"$53M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Hang Ten Systems\" \"$53M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-09-18T02:44:17.748Z"
+    },
+    {
+      "event_id": "EV-3db9a076e3b7d4fd",
+      "company_name": "元川微",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"华为22年老兵从AI终局倒推LPU，元川微\" 2026 融资 轮次 金额 投资方",
+        "\"华为22年老兵从AI终局倒推LPU，元川微\" \"数亿元\" 本轮融资 领投 跟投",
+        "\"华为22年老兵从AI终局倒推LPU，元川微\" 产品 服务 创始人 总部",
+        "\"华为22年老兵从AI终局倒推LPU，元川微\" 投资机构 投资原因 融资用途"
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"华为22年老兵从AI终局倒推LPU，元川微\" 2026 融资 轮次 金额 投资方",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"华为22年老兵从AI终局倒推LPU，元川微\" 2026 融资 轮次 金额 投资方",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"华为22年老兵从AI终局倒推LPU，元川微\" \"数亿元\" 本轮融资 领投 跟投",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"华为22年老兵从AI终局倒推LPU，元川微\" \"数亿元\" 本轮融资 领投 跟投",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"华为22年老兵从AI终局倒推LPU，元川微\" 产品 服务 创始人 总部",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"华为22年老兵从AI终局倒推LPU，元川微\" 产品 服务 创始人 总部",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"华为22年老兵从AI终局倒推LPU，元川微\" 投资机构 投资原因 融资用途",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"华为22年老兵从AI终局倒推LPU，元川微\" 投资机构 投资原因 融资用途",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-09-18T02:41:43.659Z"
+    },
+    {
+      "event_id": "EV-a52dd9e9cac23694",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-18T02:41:43.659Z"
+    },
+    {
+      "event_id": "EV-47f16317cc2d62e2",
+      "company_name": "小鹏机器人业务首轮",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"小鹏机器人业务首轮\" 2026 融资 轮次 金额 投资方",
+        "\"小鹏机器人业务首轮\" \"超9亿美元\" 本轮融资 领投 跟投",
+        "\"小鹏机器人业务首轮\" 产品 服务 创始人 总部",
+        "\"小鹏机器人业务首轮\" 投资机构 投资原因 融资用途"
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"小鹏机器人业务首轮\" 2026 融资 轮次 金额 投资方",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"小鹏机器人业务首轮\" 2026 融资 轮次 金额 投资方",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"小鹏机器人业务首轮\" \"超9亿美元\" 本轮融资 领投 跟投",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"小鹏机器人业务首轮\" \"超9亿美元\" 本轮融资 领投 跟投",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"小鹏机器人业务首轮\" 产品 服务 创始人 总部",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"小鹏机器人业务首轮\" 产品 服务 创始人 总部",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"小鹏机器人业务首轮\" 投资机构 投资原因 融资用途",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"小鹏机器人业务首轮\" 投资机构 投资原因 融资用途",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-09-18T02:41:43.659Z"
+    },
+    {
       "event_id": "EV-c96705c69e11c520",
-      "company_name": "Anew Labs",
+      "company_name": "Anew Labs（新生实验室）",
       "status": "auto_published",
       "problems": [],
       "queries": [
@@ -2089,7 +5379,7 @@
           "error": ""
         }
       ],
-      "updated_at": "2026-09-18T00:41:12.260Z"
+      "updated_at": "2026-09-18T02:41:43.659Z"
     },
     {
       "event_id": "EV-04bcb24d608a931c",
@@ -2098,11 +5388,11 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-09-18T00:41:12.260Z"
+      "updated_at": "2026-09-18T02:41:43.659Z"
     },
     {
       "event_id": "EV-1d9cf73bba2debcc",
-      "company_name": "思博慧医",
+      "company_name": "上海思博慧医科技有限公司",
       "status": "auto_published",
       "problems": [],
       "queries": [
@@ -2161,7 +5451,7 @@
           "error": ""
         }
       ],
-      "updated_at": "2026-09-18T00:41:12.260Z"
+      "updated_at": "2026-09-18T02:41:43.659Z"
     },
     {
       "event_id": "EV-9c427c0985b3b252",
@@ -2170,11 +5460,11 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-09-18T00:41:12.260Z"
+      "updated_at": "2026-09-18T02:41:43.659Z"
     },
     {
       "event_id": "EV-b0637e99e328479b",
-      "company_name": "设序科技一连",
+      "company_name": "设序科技",
       "status": "auto_published",
       "problems": [],
       "queries": [
@@ -2233,7 +5523,7 @@
           "error": ""
         }
       ],
-      "updated_at": "2026-09-18T00:41:12.260Z"
+      "updated_at": "2026-09-18T02:41:43.659Z"
     },
     {
       "event_id": "EV-c997b93aa153720b",
@@ -2242,7 +5532,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-09-18T00:41:12.260Z"
+      "updated_at": "2026-09-18T02:41:43.659Z"
     },
     {
       "event_id": "EV-91459f0d9446f471",
@@ -2251,7 +5541,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-09-18T00:41:12.260Z"
+      "updated_at": "2026-09-18T02:41:43.659Z"
     },
     {
       "event_id": "EV-77887cf446f03ba4",
@@ -2260,7 +5550,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-09-18T00:41:12.260Z"
+      "updated_at": "2026-09-18T02:41:43.659Z"
     }
   ]
 }
