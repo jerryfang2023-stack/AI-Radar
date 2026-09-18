@@ -1,10 +1,48 @@
 {
   "meta": {
     "schema_version": "FUNDING-COMPANY-IDENTITY-DECISION-V1.0",
-    "updated_at": "2026-09-15",
+    "updated_at": "2026-09-18",
     "rule": "Funding Insights may merge public cards only after an explicit identity review. The decision changes the application projection, preserves every source event, and does not mutate Data Center V4 canonical facts."
   },
   "decisions": [
+    {
+      "decision_id": "FICID-YUANCHUAN-20260918",
+      "entity_id": "EN-3b6f88f87a32567e",
+      "application_entity_id": "FICO-yuanchuan-micro",
+      "current": { "name": "元川微", "catalog_type": "company" },
+      "match_names": ["元川微"],
+      "action": "correct",
+      "merge_into_entity_id": "",
+      "canonical": { "name": "元川微", "catalog_type": "company" },
+      "review_status": "accepted",
+      "reviewed_at": "2026-09-18",
+      "evidence": {
+        "source_url": "https://www.cjcn.com.cn/news/show-475659.html",
+        "quote": "雷峰网独家获悉，LPU创业公司元川微已完成Pre-A轮数亿元融资。本轮融资由IDG资本领投，孚腾资本、九坤创投、尚颀资本、顺禧基金、徐汇科创投联合投资。",
+        "corroborating_source_url": "https://www.leiphone.com/category/chips/AGaAOgr50XhElaxq.html",
+        "corroborating_quote": "公开资料显示，元川微成立于2025年9月"
+      },
+      "rationale": "9月17日与18日卡片共同引用财经中国同一转载URL，原文和雷峰网交叉证据均指向7月24日披露、IDG资本领投的同一笔Pre-A轮数亿元融资。仅统一应用身份，保留两个来源事件及披露，不修改规范事实。"
+    },
+    {
+      "decision_id": "FICID-ANEW-LABS-20260918",
+      "entity_id": "EN-0650ad8ad48129f7",
+      "application_entity_id": "FICO-anew-labs",
+      "current": { "name": "Anew Labs（新生实验室）", "catalog_type": "company" },
+      "match_names": ["Anew Labs（新生实验室）", "Anew Labs"],
+      "action": "correct",
+      "merge_into_entity_id": "",
+      "canonical": { "name": "Anew Labs（新生实验室）", "catalog_type": "company" },
+      "review_status": "accepted",
+      "reviewed_at": "2026-09-18",
+      "evidence": {
+        "source_url": "https://news.pedaily.cn/202609/569118.shtml",
+        "quote": "AI制药公司Anew Labs（新生实验室）日前已完成 首轮独立融资 ，融资总额 2.9 亿美元",
+        "corroborating_source_url": "https://www.chinaventure.com.cn/news/111-20260917-393303.html",
+        "corroborating_quote": "9 月 16 日，一家名为Anew Labs的初创AI制药公司宣布完成2.9亿美元融资"
+      },
+      "rationale": "两份已捕获原文指向同一 Anew Labs AI 制药公司、9月16日披露的2.9亿美元首轮融资；后文发布日期为9月17日。仅统一应用身份，保留两条来源事件及各自金额、日期与投资方证据，不晋升或改写规范实体。"
+    },
     {
       "decision_id": "FICID-DEEPKERNEL-20260915",
       "entity_id": "EN-619245256126c075",

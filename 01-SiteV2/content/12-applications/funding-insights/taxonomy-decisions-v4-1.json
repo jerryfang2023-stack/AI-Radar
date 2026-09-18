@@ -5,16 +5,16 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-09-17T02:20:11.194Z",
+    "generated_at": "2026-09-18T02:46:12.423Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 468,
-    "input_hash": "6d358eafc4b20faa",
+    "decision_count": 475,
+    "input_hash": "b587baa3a0d4b51f",
     "override_count": 18,
-    "needs_review_count": 52,
-    "low_confidence_count": 70
+    "needs_review_count": 53,
+    "low_confidence_count": 72
   },
   "decisions": [
     {
@@ -9378,6 +9378,140 @@
       "confidence": 0.78,
       "needs_review": false,
       "rationale": "公司为AI制药公司，核心团队、算法平台及管线资产均围绕药物研发这一医疗生命科学行业专属工作流，属于行业应用。"
+    },
+    {
+      "event_id": "EV-c96705c69e11c520",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "healthcare_life_sciences",
+      "market_application_id": "",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "research_discovery",
+        "design_engineering"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "researcher",
+        "developer"
+      ],
+      "confidence": 0.82,
+      "needs_review": false,
+      "rationale": "产品围绕药物发现、抗体设计等生命科学专业工作流构建，属于行业应用而非通用基础设施。"
+    },
+    {
+      "event_id": "EV-1d9cf73bba2debcc",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "public_sector_user",
+        "researcher"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "手术机器人平台通过VLA大模型感知、决策并执行物理操作，符合Physical AI定义。"
+    },
+    {
+      "event_id": "EV-b0637e99e328479b",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "industrials",
+      "market_application_id": "",
+      "product_form_id": "end_user_application",
+      "use_case_ids": [
+        "design_engineering",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "automotive_transportation"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "developer"
+      ],
+      "confidence": 0.78,
+      "needs_review": false,
+      "rationale": "则形AI直接生成工业设计方案，围绕工业设计专业工作流，客户为制造与汽车企业，属于工业行业应用。"
+    },
+    {
+      "event_id": "EV-47f16317cc2d62e2",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user",
+        "consumer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "小鹏IRON是AI驱动的人形机器人，具备76个自由度并直接执行物理动作，符合Physical AI“感知、决策、行动于物理世界”的定义，而非仅世界模型或未来规划。"
+    },
+    {
+      "event_id": "EV-3db9a076e3b7d4fd",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "chips",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "元川微 is an AI inference chip startup (LPU+ architecture) focused on multimodal and MoE model acceleration. The company's product is a chip accelerator, which fits the infrastructure_compute > hardware_computing > chips hierarchy. The primary use case is physical automation as the chip is designed for AI inference in physical systems, and the target user is developer since the chip is intended for integration by developers building AI systems."
+    },
+    {
+      "event_id": "EV-26a5749d8604455a",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "compute_cloud_service",
+      "use_case_ids": [],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Crusoe is a data center developer and cloud provider for AI infrastructure. Its products include Crusoe Cloud (bare metal/virtualized instances), modular data centers (Spark), and managed inference. This maps to infrastructure_compute > hardware_computing > computing_infrastructure. The product form is compute_cloud_service. Target users are developers who use cloud compute. No specific use case or industry is clearly indicated beyond general AI infrastructure."
+    },
+    {
+      "event_id": "EV-ed8323204ab69697",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "knowledge_search",
+        "data_analysis",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.7,
+      "needs_review": true,
+      "rationale": "证据显示Hobie是读取企业实时系统、建模业务并回答可溯源问题的智能体平台，属于跨行业企业工作流，而非单一行业或物理AI/基础设施。但证据未明确具体行业，且产品细节有限，故标记需复核。"
     }
   ]
 }

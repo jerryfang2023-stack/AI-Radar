@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-17T02:39:32.145Z",
-    "latestDataDate": "2026-09-17",
-    "currentDate": "2026-09-17",
-    "eventCount": 3338,
+    "generatedAt": "2026-09-18T02:50:25.844Z",
+    "latestDataDate": "2026-09-18",
+    "currentDate": "2026-09-18",
+    "eventCount": 3369,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -58,26 +58,27 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
+    "current_round_count": 7,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 6,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-12",
-    "latest_disclosed_at": "2026-09-08",
+    "latest_disclosed_at": "2026-09-17",
     "role_counts": {
       "co_lead": 3,
       "historical_or_ambiguous": 2,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "series_a",
       "series_b",
       "series_d",
       "series_e",
+      "series_f",
       "series_g"
     ],
     "portfolio_companies": [
@@ -97,6 +98,11 @@
         "name": "Cognition AI"
       },
       {
+        "entity_id": "EN-d41ebd9f02722fc8",
+        "canonical_entity_id": "EN-d41ebd9f02722fc8",
+        "name": "Crusoe"
+      },
+      {
         "entity_id": "EN-8da5eafb322ee86e",
         "canonical_entity_id": "",
         "name": "Fractile"
@@ -108,6 +114,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-cdea56df788485c8",
+        "funding_insight_id": "FI-72df07926e3369ef",
+        "event_ids": [
+          "EV-26a5749d8604455a"
+        ],
+        "company_entity_id": "EN-d41ebd9f02722fc8",
+        "company_canonical_entity_id": "EN-d41ebd9f02722fc8",
+        "company_name": "Crusoe",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "Series F",
+        "amount_original": "$3.9B",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3900000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "39 亿美元"
+        },
+        "announced_at": "2026-09-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-34d15ad3ce6de8dc",
+            "source_url": "https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories",
+            "source_title": "Crusoe 融资 39 亿美元建大型数据中心与模块化 AI 工厂，估值达 309 亿美元",
+            "source_content_hash": "c5404319aca5bde8",
+            "quote": "Founders Fund, GIC, Nvidia, Qatar Investment Authority (QIA), Radical Ventures, and TPG also participated, according to Crusoe.",
+            "quote_hash": "92e7fe9ade3d2e01bb9a93f7e7ef10398c2f075ea8977a2f21bd740c300df481"
+          }
+        ]
+      },
       {
         "activity_id": "IA-60c277bd78fbfb7e",
         "funding_insight_id": "FI-d9fc0a409d33d577",
@@ -439,6 +485,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-34d15ad3ce6de8dc",
+        "source_url": "https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories",
+        "source_title": "Crusoe 融资 39 亿美元建大型数据中心与模块化 AI 工厂，估值达 309 亿美元",
+        "source_content_hash": "c5404319aca5bde8",
+        "quote": "Founders Fund, GIC, Nvidia, Qatar Investment Authority (QIA), Radical Ventures, and TPG also participated, according to Crusoe.",
+        "quote_hash": "92e7fe9ade3d2e01bb9a93f7e7ef10398c2f075ea8977a2f21bd740c300df481"
+      },
       {
         "source_id": "FISRC-61aa8db010b34dfa",
         "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-17T02:39:32.145Z",
-    "latestDataDate": "2026-09-17",
-    "currentDate": "2026-09-17",
-    "eventCount": 3338,
+    "generatedAt": "2026-09-18T02:50:25.844Z",
+    "latestDataDate": "2026-09-18",
+    "currentDate": "2026-09-18",
+    "eventCount": 3369,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -62,6 +62,9 @@
     ],
     "eventIds": [],
     "viewpointIds": [
+      "2100315538472009897",
+      "2100315535758217422",
+      "2100315537251463523",
       "2099958388230873165",
       "2099551141621329994",
       "2098860941391872132",
@@ -123,22 +126,22 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-09",
-    "lastSeen": "2026-09-16",
+    "lastSeen": "2026-09-17",
     "handle": "trq212",
     "role": "Claude Code anthropicai。前YC W20、spc、medialab成员",
     "organization": "Anthropic",
     "viewpointTags": [
-      "产品与创业",
-      "产品策略观点",
-      "AI 应用与平台",
+      "Agent",
+      "Agent 工作流观点",
+      "Agentic AI",
       "AI 编程",
       "AI Coding 观点",
       "AI Coding",
       "AI 基础设施",
       "模型基础设施观点",
-      "Agent",
-      "Agent 工作流观点",
-      "Agentic AI",
+      "产品与创业",
+      "产品策略观点",
+      "AI 应用与平台",
       "企业工作流"
     ],
     "organizationNames": [
@@ -164,6 +167,24 @@
     },
     "timeline": [],
     "viewpoints": [
+      {
+        "id": "2100315538472009897",
+        "date": "2026-09-17",
+        "title": "我认为Claude Managed Agents在这方面取得了恰当的平衡，沙盒是可选的，并且可以独立于代理循环的其他部分启动。我最近把一个专注于bash工具调用的旧项目移植到了CMA，效果很好！",
+        "sourceUrl": "https://x.com/trq212/status/2100315538472009897"
+      },
+      {
+        "id": "2100315535758217422",
+        "date": "2026-09-17",
+        "title": "与此相关——我认为，如果你的目标只是可靠地进行工具调用，那么bash不再是你所需要的一切，但沙箱加bash对于涉及代码生成与执行的工作仍然很有用 https://t.co/xTptTmEmCE",
+        "sourceUrl": "https://x.com/trq212/status/2100315535758217422"
+      },
+      {
+        "id": "2100315537251463523",
+        "date": "2026-09-17",
+        "title": "我认为，越来越明显的是，你可以直接给Claude提供你想要的形状的工具，而不是用一层间接的方式来欺骗它。例如，对于数据存储，你真正想要的是一个文件系统，还是一个数据库的API？这再次是我对去年的一个更新。",
+        "sourceUrl": "https://x.com/trq212/status/2100315537251463523"
+      },
       {
         "id": "2099958388230873165",
         "date": "2026-09-16",

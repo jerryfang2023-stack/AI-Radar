@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-18T02:50:25.844Z",
+    "latestDataDate": "2026-09-18",
+    "currentDate": "2026-09-18",
+    "eventCount": 3369,
+    "quarantinedEventCount": 36,
+    "quarantinedEventIds": [
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-cab18aa68c8ae551",
+      "EV-88a9fd0b8f602e16",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "institution": {
+    "id": "INV-ef70491cc5c081",
+    "name": "TPG",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "GLOBAL"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-09-17",
+    "latest_disclosed_at": "2026-09-17",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "series_f"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-d41ebd9f02722fc8",
+        "canonical_entity_id": "EN-d41ebd9f02722fc8",
+        "name": "Crusoe"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-bc282819f5626795",
+        "funding_insight_id": "FI-72df07926e3369ef",
+        "event_ids": [
+          "EV-26a5749d8604455a"
+        ],
+        "company_entity_id": "EN-d41ebd9f02722fc8",
+        "company_canonical_entity_id": "EN-d41ebd9f02722fc8",
+        "company_name": "Crusoe",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "Series F",
+        "amount_original": "$3.9B",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3900000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "39 亿美元"
+        },
+        "announced_at": "2026-09-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-34d15ad3ce6de8dc",
+            "source_url": "https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories",
+            "source_title": "Crusoe 融资 39 亿美元建大型数据中心与模块化 AI 工厂，估值达 309 亿美元",
+            "source_content_hash": "c5404319aca5bde8",
+            "quote": "Founders Fund, GIC, Nvidia, Qatar Investment Authority (QIA), Radical Ventures, and TPG also participated, according to Crusoe.",
+            "quote_hash": "92e7fe9ade3d2e01bb9a93f7e7ef10398c2f075ea8977a2f21bd740c300df481"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-34d15ad3ce6de8dc",
+        "source_url": "https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories",
+        "source_title": "Crusoe 融资 39 亿美元建大型数据中心与模块化 AI 工厂，估值达 309 亿美元",
+        "source_content_hash": "c5404319aca5bde8",
+        "quote": "Founders Fund, GIC, Nvidia, Qatar Investment Authority (QIA), Radical Ventures, and TPG also participated, according to Crusoe.",
+        "quote_hash": "92e7fe9ade3d2e01bb9a93f7e7ef10398c2f075ea8977a2f21bd740c300df481"
+      }
+    ]
+  }
+}

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-17T02:39:32.145Z",
-    "latestDataDate": "2026-09-17",
-    "currentDate": "2026-09-17",
-    "eventCount": 3338,
+    "generatedAt": "2026-09-18T02:50:25.844Z",
+    "latestDataDate": "2026-09-18",
+    "currentDate": "2026-09-18",
+    "eventCount": 3369,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -59,7 +59,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 8,
-    "historical_or_ambiguous_count": 3,
+    "historical_or_ambiguous_count": 4,
     "portfolio_company_count": 8,
     "market_regions": [
       "GLOBAL"
@@ -67,9 +67,9 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2023-08-24",
-    "latest_disclosed_at": "2026-09-08",
+    "latest_disclosed_at": "2026-09-17",
     "role_counts": {
-      "historical_or_ambiguous": 3,
+      "historical_or_ambiguous": 4,
       "lead": 3,
       "participant": 5
     },
@@ -123,6 +123,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-ff36ba12aca77599",
+        "funding_insight_id": "FI-72df07926e3369ef",
+        "event_ids": [
+          "EV-26a5749d8604455a"
+        ],
+        "company_entity_id": "EN-d41ebd9f02722fc8",
+        "company_canonical_entity_id": "EN-d41ebd9f02722fc8",
+        "company_name": "Crusoe",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "Series F",
+        "amount_original": "$3.9B",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3900000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "39 亿美元"
+        },
+        "announced_at": "2026-09-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Series E 参投方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-4afc17abd0ce2781",
+            "source_url": "https://sacra.com/c/crusoe/",
+            "source_title": "Crusoe revenue, valuation & funding | Sacra",
+            "source_content_hash": "031d223859c249dd",
+            "quote": "Its October 2025 Series E—oversubscribed and co-led by Valor Equity Partners and Mubadala Capital, with participation from NVIDIA, Fidelity, Founders Fund, Salesforce Ventures, Supermicro, T. Rowe Price, Tiger Global, Ribbit, Franklin Templeton, and Upper90, among others—was anticipated to total $1.375B and valued the company at over $10B.",
+            "quote_hash": "e78c455c702cb1c5edd7d55fa07af015b1b0db72944ba98fe163abcad48cc9e5"
+          }
+        ]
+      },
       {
         "activity_id": "IA-f92c4d9d12008105",
         "funding_insight_id": "FI-e0e22d70a91e704e",
@@ -569,6 +609,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-4afc17abd0ce2781",
+        "source_url": "https://sacra.com/c/crusoe/",
+        "source_title": "Crusoe revenue, valuation & funding | Sacra",
+        "source_content_hash": "031d223859c249dd",
+        "quote": "Its October 2025 Series E—oversubscribed and co-led by Valor Equity Partners and Mubadala Capital, with participation from NVIDIA, Fidelity, Founders Fund, Salesforce Ventures, Supermicro, T. Rowe Price, Tiger Global, Ribbit, Franklin Templeton, and Upper90, among others—was anticipated to total $1.375B and valued the company at over $10B.",
+        "quote_hash": "e78c455c702cb1c5edd7d55fa07af015b1b0db72944ba98fe163abcad48cc9e5"
+      },
+      {
         "source_id": "FISRC-4d11ed62a144a3f4",
         "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
         "source_title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
@@ -656,6 +704,18 @@
         "quote": "a series D funding round led by Salesforce",
         "quote_hash": "dc679f5e5dedcbaac48269cd2e5d3992c2bbd56ef48c91e73fa4fb29cf203c21"
       }
-    ]
+    ],
+    "translations": {
+      "zh-CN": {
+        "activities[0].role": {
+          "text": "Series E 参投方",
+          "source_hash": "4c5721848f6406bd6f2e84ed29d011b6af208116ac9cea44324fd35d85384690",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-18T02:49:06.821Z",
+          "status": "translated"
+        }
+      }
+    }
   }
 }

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-17T02:39:32.145Z",
-    "latestDataDate": "2026-09-17",
-    "currentDate": "2026-09-17",
-    "eventCount": 3338,
+    "generatedAt": "2026-09-18T02:50:25.844Z",
+    "latestDataDate": "2026-09-18",
+    "currentDate": "2026-09-18",
+    "eventCount": 3369,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -61,6 +61,7 @@
     ],
     "eventIds": [
       "EV-d80c43b35418e74d",
+      "EV-2182e541e0fe6a82",
       "EV-293d6feac5b8efab",
       "EV-b22136a993b21f0c",
       "EV-cff5848b8c5453af",
@@ -79,7 +80,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-03",
-    "lastSeen": "2026-09-08",
+    "lastSeen": "2026-09-18",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -88,6 +89,7 @@
       ],
       "partnerships": [],
       "productsServices": [
+        "EV-2182e541e0fe6a82",
         "EV-293d6feac5b8efab",
         "EV-b22136a993b21f0c",
         "EV-5ede0f85a672441c",
@@ -104,6 +106,23 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-2182e541e0fe6a82",
+        "dataDate": "2026-09-18",
+        "date": "2026-09-17",
+        "eventType": "service_change",
+        "eventTypeLabel": "服务变更",
+        "eventGroup": "模型、产品与服务",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "派早报：佳能发布 EOS R8 Mark II、GPT-5.5 即将下线等",
+        "displayTags": [],
+        "entityIds": [
+          "EN-478676438ee161a3",
+          "EN-7d3194f79e645c42",
+          "EN-32587950ae471cd6"
+        ]
+      },
       {
         "id": "EV-375b675a454e3b8e",
         "dataDate": "2026-09-08",
@@ -367,6 +386,7 @@
       "typeLabel": "应用场景",
       "valueId": "physical_automation",
       "eventIds": [
+        "EV-1d9cf73bba2debcc",
         "EV-1c399d2db39c05a3",
         "EV-0ac10579ff64fe74",
         "EV-6aaa17d9c372e513",
@@ -420,6 +440,7 @@
         "EV-6c2d981c2272d2e2",
         "EV-2704d63a5fd4b357",
         "EV-eb881f5de456b59a",
+        "EV-3db9a076e3b7d4fd",
         "EV-b9ef27cd1fd9b9a9",
         "EV-c7ba7b093a1a3b94",
         "EV-fcf3c464260b6730",
@@ -572,6 +593,7 @@
         "EV-ad64347138da72bb"
       ],
       "entityIds": [
+        "EN-9b7dfbc73b12c8b9",
         "EN-caff75902fc3743e",
         "EN-60910505210bd6f1",
         "EN-24dd6fa3e1cbba97",
@@ -618,6 +640,7 @@
         "EN-f1de3226b9e510ac",
         "EN-1e370456c222cbd2",
         "EN-b4701995669a0327",
+        "EN-9b6b1be41e3bc384",
         "EN-3b6f88f87a32567e",
         "EN-0f3360879e746531",
         "EN-7ef08ef63597d47c",
@@ -742,7 +765,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-09-17"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "TX-use_case-software_development",

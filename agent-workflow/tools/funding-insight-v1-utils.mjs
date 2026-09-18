@@ -262,7 +262,7 @@ function fundingAmountMentions(value = "") {
       // A financing verb in an earlier clause must not own a later valuation.
       /(?:完成|获得|获)[^，,：:；;。！？.!?]{0,32}$/u.test(before) && /^[^，,：:；;。！？.!?]{0,24}融资/u.test(after)
       ||
-      /(?:融资|筹集|募资|raises?|raised|raising|secured|funding\s+round|round\s+of)[^，,：:；;。！？.!?]{0,48}$/iu.test(before)
+      /(?:融资|筹集|募资|raises?|raised|raising|secured|expanded\s+its\s+(?:seed\s+)?funding\s+by|funding\s+round|round\s+of)[^，,：:；;。！？.!?]{0,48}$/iu.test(before)
       || /^\s*(?:(?:的\s*)?(?:(?:(?:Pre[-\s]?)?[A-Z](?:\d+|\+)?|天使|种子|战略)\s*轮\s*)?融资|(?:funding\s+round|round)\b)/iu.test(after)
     );
     const qualifier = before.match(/(?:超过|超|逾|至少|接近|将近|近|约|\b(?:just over|over|more than|at least|about|approximately|nearly))\s*$/iu)?.[0] || "";
@@ -1333,6 +1333,22 @@ export function subjectCompanyForEvent(event, entities, entityIndex = {}, claims
   const acceptedFundingSubjects = acceptedFundingClaims
     .map((claim) => normalizedName(claim.subject))
     .filter(Boolean);
+  // Founder-led headlines can omit the recipient's name. A long appositive
+  // must not hide a directly named funding subject or boost its former employer.
+  // Match only linked candidates, an accepted quote, and the current amount.
+  const appositiveRecipients = (event.entities || []).map((id) => byId.get(id))
+    .filter((entity) => entity?.entity_type === "organization_candidate")
+    .filter((entity) => {
+      const name = clean(entity.canonical_name).replace(/[.*+?^${}()|[\]\\]/gu, "\\$&");
+      if (!name) return false;
+      const sentence = new RegExp(`(?:^|[.!?]\\s+)${name}\\s*,\\s*(?:an? |the )[^,;.!?]{1,180},\\s*(?:has |had )?(?:raised|raises|secured|expanded its (?:seed )?funding by)\\s+[^.!?;]{1,100}`, "iu");
+      return acceptedFundingClaims.some((claim) => {
+        const match = clean(claim.source_quote).match(sentence);
+        return match && fundingAmountsEquivalent(event.object || claim.object, match[0]);
+      });
+    });
+  if (appositiveRecipients.length === 1) return appositiveRecipients[0];
+  if (appositiveRecipients.length > 1) return null;
   const claimInferredCompanyName = fundedStartupNameFromClaims(eventClaims);
   if (acceptedFundingSubjects.length) {
     const subjectMatches = (event.entities || [])

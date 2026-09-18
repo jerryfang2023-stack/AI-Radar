@@ -2,12 +2,12 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-ENTITY-REVIEW-V1.0",
     "funding_insight_version": "FUNDING-INSIGHT-V1.3",
-    "candidate_count": 1255,
-    "product_candidates": 735,
-    "person_candidates": 520,
-    "china_market_candidates": 397,
-    "china_market_product_candidates": 355,
-    "china_market_person_candidates": 42,
+    "candidate_count": 1268,
+    "product_candidates": 744,
+    "person_candidates": 524,
+    "china_market_candidates": 400,
+    "china_market_product_candidates": 357,
+    "china_market_person_candidates": 43,
     "rule": "Application evidence never mutates canonical V4 entities automatically."
   },
   "candidates": [
@@ -2503,6 +2503,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-2fc2b93a68087b57",
+      "candidate_kind": "person",
+      "research_name": "Chase Lochmiller",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-d41ebd9f02722fc8"
+      ],
+      "funding_insight_ids": [
+        "FI-e0a9f997fd33ce21"
+      ],
+      "source_event_ids": [
+        "EV-26a5749d8604455a"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-4afc17abd0ce2781",
+          "quote": "Crusoe was founded in 2018 by Chase Lochmiller and Cully Cavness",
+          "source_content_hash": "031d223859c249dd",
+          "quote_hash": "1fe2963a51ef025ddef3f0beaf2a60b1347a3ea7df2d6f8bab60561d197bbfe9"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-688ed326c9c750f8",
       "candidate_kind": "person",
       "research_name": "Chetan Conikee",
@@ -2911,6 +2939,34 @@
           "quote": "Conor Hoey, Co-founder and CEO of First Concepts",
           "source_content_hash": "23290af9e3485959",
           "quote_hash": "0fadb6fd969361e643bc68efc1d6b84f445dd125cc6b3f0c9772969f0eb957dd"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-665cf613a1fa01bf",
+      "candidate_kind": "person",
+      "research_name": "Cully Cavness",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-d41ebd9f02722fc8"
+      ],
+      "funding_insight_ids": [
+        "FI-e0a9f997fd33ce21"
+      ],
+      "source_event_ids": [
+        "EV-26a5749d8604455a"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-4afc17abd0ce2781",
+          "quote": "Crusoe was founded in 2018 by Chase Lochmiller and Cully Cavness",
+          "source_content_hash": "031d223859c249dd",
+          "quote_hash": "1fe2963a51ef025ddef3f0beaf2a60b1347a3ea7df2d6f8bab60561d197bbfe9"
         }
       ],
       "market_regions": [
@@ -13287,6 +13343,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-ff7b558e5a7458e4",
+      "candidate_kind": "person",
+      "research_name": "Vishal Sikka",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-0cc3af265406c202"
+      ],
+      "funding_insight_ids": [
+        "FI-6bc83b7f0f864241"
+      ],
+      "source_event_ids": [
+        "EV-ed8323204ab69697"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-def75ecd4873d016",
+          "quote": "Hang Ten Systems , an AI startup founded by former Infosys CEO Vishal Sikka just four months ago",
+          "source_content_hash": "6a0023459752d1bc",
+          "quote_hash": "72de80c387d02ba6cff0b806acff2daca5496aa8c9e53e57c093e896b264a2ae"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-b281ff5f77efb56f",
       "candidate_kind": "person",
       "research_name": "Vitor Balocco",
@@ -14333,13 +14417,16 @@
       "status": "pending_canonical_review",
       "reason": "canonical_exact_match_missing",
       "company_entity_ids": [
-        "EN-0650ad8ad48129f7"
+        "EN-0650ad8ad48129f7",
+        "EN-bc06be2cba2b2f2c"
       ],
       "funding_insight_ids": [
+        "FI-bbf0ff1638dafe21",
         "FI-d680f5777827c36e"
       ],
       "source_event_ids": [
-        "EV-91459f0d9446f471"
+        "EV-91459f0d9446f471",
+        "EV-c96705c69e11c520"
       ],
       "evidence_refs": [
         {
@@ -14347,6 +14434,12 @@
           "quote": "由原团队负责人刘凯负责",
           "source_content_hash": "13ff3ab9cdd5ecf4",
           "quote_hash": "13ea763a61ec98e8222af6105f462e356a3292ab7b539a5624a50511fb85b730"
+        },
+        {
+          "source_id": "FISRC-55c913083e7dcd21",
+          "quote": "带队的正是后来Anew Labs创始人刘凯",
+          "source_content_hash": "2896ab8dacb23e1a",
+          "quote_hash": "5914dc7cff8fb4515ebea5a7230c460d673ee7978f512770f3e0f1f2372e08be"
         }
       ],
       "market_regions": [
@@ -14447,6 +14540,34 @@
       "market_regions": [
         "CN",
         "GLOBAL"
+      ],
+      "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-64088ea8a1aac334",
+      "candidate_kind": "person",
+      "research_name": "吴振洲",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-9b7dfbc73b12c8b9"
+      ],
+      "funding_insight_ids": [
+        "FI-37e02bd38bfea214"
+      ],
+      "source_event_ids": [
+        "EV-1d9cf73bba2debcc"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-0195a1b88a7ecb41",
+          "quote": "公司创始人及CEO吴振洲本科毕业于新加坡国立大学数学和物理专业，研究生毕业于麦吉尔大学计算机科学，曾在MILA、美国微软研究院从事深度学习研究。",
+          "source_content_hash": "4b021c644b47dde0",
+          "quote_hash": "5968f38e8e77c99cc4c66eca57e796951e7cc85d6c3a989d9a8bf89c0529c3c1"
+        }
+      ],
+      "market_regions": [
+        "CN"
       ],
       "china_market_match": true
     },
@@ -15053,19 +15174,22 @@
       "status": "pending_canonical_review",
       "reason": "canonical_exact_match_missing",
       "company_entity_ids": [
-        "EN-3b6f88f87a32567e"
+        "EN-3b6f88f87a32567e",
+        "EN-9b6b1be41e3bc384"
       ],
       "funding_insight_ids": [
-        "FI-3246e463f2087afc"
+        "FI-3246e463f2087afc",
+        "FI-f921fdd2a231e6a5"
       ],
       "source_event_ids": [
+        "EV-3db9a076e3b7d4fd",
         "EV-b9ef27cd1fd9b9a9"
       ],
       "evidence_refs": [
         {
           "source_id": "FISRC-ee42dc11e9aa441b",
           "quote": "元川微创始人兼CEO杨滨就已经开始了对推理芯片的构想",
-          "source_content_hash": "ffeb7006ce0ad831",
+          "source_content_hash": "e7bb87fdb5aacbc8",
           "quote_hash": "5d1744fb2a73616a2561a835b60e162f1d1123d7c8ce8d1e41b9143b76d295c1"
         }
       ],
@@ -18052,6 +18176,90 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-edcee0e681bc6396",
+      "candidate_kind": "product",
+      "research_name": "AnewDesign",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-bc06be2cba2b2f2c"
+      ],
+      "funding_insight_ids": [
+        "FI-bbf0ff1638dafe21"
+      ],
+      "source_event_ids": [
+        "EV-c96705c69e11c520"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-98b0c7b274250e5c",
+          "quote": "AnewDesign for antibody design and optimization",
+          "source_content_hash": "4efbd2eb3ac56047",
+          "quote_hash": "780001f9be92ed9bca482e26695e675db2832bb0d9d4457d1dfb319143c643ca"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-d39e0326cd5e5a9e",
+      "candidate_kind": "product",
+      "research_name": "AnewFold",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-bc06be2cba2b2f2c"
+      ],
+      "funding_insight_ids": [
+        "FI-bbf0ff1638dafe21"
+      ],
+      "source_event_ids": [
+        "EV-c96705c69e11c520"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-98b0c7b274250e5c",
+          "quote": "AnewFold for protein and molecular-complex structure prediction",
+          "source_content_hash": "4efbd2eb3ac56047",
+          "quote_hash": "681980e95de218c0d09d18bf1a13e862f750d0cbbff351d365578a8ea34e3780"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-2e81f25126192044",
+      "candidate_kind": "product",
+      "research_name": "AnewMind",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-bc06be2cba2b2f2c"
+      ],
+      "funding_insight_ids": [
+        "FI-bbf0ff1638dafe21"
+      ],
+      "source_event_ids": [
+        "EV-c96705c69e11c520"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-98b0c7b274250e5c",
+          "quote": "AnewMind, a scientific reasoning large language model focused on drug-discovery decisions",
+          "source_content_hash": "4efbd2eb3ac56047",
+          "quote_hash": "9cb28d09560c936c1b7b351daffd9982100178738b5143c35befb9d20670af9b"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-78e200c791469990",
       "candidate_kind": "product",
       "research_name": "AngioQFA",
@@ -20492,6 +20700,34 @@
         "CN"
       ],
       "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-096ccff4bb01666b",
+      "candidate_kind": "product",
+      "research_name": "Crusoe Cloud",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-d41ebd9f02722fc8"
+      ],
+      "funding_insight_ids": [
+        "FI-e0a9f997fd33ce21"
+      ],
+      "source_event_ids": [
+        "EV-26a5749d8604455a"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-4afc17abd0ce2781",
+          "quote": "Gets instant access to bare metal or virtualized instances with 3200 Gbps InfiniBand networking",
+          "source_content_hash": "031d223859c249dd",
+          "quote_hash": "c11725b2fed3c2841df860d84f32cb88480b165b689c66b4d8ab8b8da8e28037"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
     },
     {
       "candidate_id": "FIER-92df782eec1f9185",
@@ -23605,6 +23841,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-21a11bf739b843e2",
+      "candidate_kind": "product",
+      "research_name": "Hobie",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-0cc3af265406c202"
+      ],
+      "funding_insight_ids": [
+        "FI-6bc83b7f0f864241"
+      ],
+      "source_event_ids": [
+        "EV-ed8323204ab69697"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-9890cac27c64857f",
+          "quote": "Hobie is our agentic AI platform. Five layers read your live systems, model your business, and answer questions that trace back to the source data.",
+          "source_content_hash": "16467d2b719a4fb3",
+          "quote_hash": "80963220e0fd84275d5875501aec06c1edad872d4dce77195da86953d0d766c3"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-581e5d8628008c6d",
       "candidate_kind": "product",
       "research_name": "Hostie AI Virtual Concierge",
@@ -25175,6 +25439,40 @@
       "china_market_match": true
     },
     {
+      "candidate_id": "FIER-a7056d5e3a64a552",
+      "candidate_kind": "product",
+      "research_name": "LPU+",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-9b6b1be41e3bc384"
+      ],
+      "funding_insight_ids": [
+        "FI-f921fdd2a231e6a5"
+      ],
+      "source_event_ids": [
+        "EV-3db9a076e3b7d4fd"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-ee42dc11e9aa441b",
+          "quote": "同样采用这一命名的元川微，将其架构命名为LPU+，从设计之初便支持多模态模型。此外，作为Transformer时代的原生架构，LPU+还针对MoE（Mixture of Experts，混合专家）模型的动态调度特征进行优化。",
+          "source_content_hash": "e7bb87fdb5aacbc8",
+          "quote_hash": "edc4819c7be629a883726e0c444d45cee3c4d5eede9731d1beceff6884d13313"
+        },
+        {
+          "source_id": "FISRC-9e846f1537b1804f",
+          "quote": "杨滨强调LPU 的时空编译器、硬流水架构、大带宽存储 这三大 核心 很难区分谁的优先级更高",
+          "source_content_hash": "90d0ccea10371fa6",
+          "quote_hash": "bb1340d02009a5b13ee8711f572627af04467a2ba399fe590e95d4dc779c4424"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
       "candidate_id": "FIER-0195e530976b72b6",
       "candidate_kind": "product",
       "research_name": "LPU+芯片",
@@ -25461,6 +25759,34 @@
           "quote": "Since June 2026, it has been generally available to Shopify merchants through a native integration, while larger retailers can integrate the technology through its API.",
           "source_content_hash": "05dd04be6ad83ba1",
           "quote_hash": "5a596806ad9ee03f6afe07657aba31cc8b8ce7273488b0083ac02887fa6a4241"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-c0502de308c9d9dc",
+      "candidate_kind": "product",
+      "research_name": "Managed Inference",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-d41ebd9f02722fc8"
+      ],
+      "funding_insight_ids": [
+        "FI-e0a9f997fd33ce21"
+      ],
+      "source_event_ids": [
+        "EV-26a5749d8604455a"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-4afc17abd0ce2781",
+          "quote": "Managed Inference claims up to 9.9x faster time-to-first-token and up to 5x higher throughput versus vLLM for specified benchmarks, enabled by its MemoryAlloy KV-cache technology, and is available on pay-per-token and provisioned-throughput pricing.",
+          "source_content_hash": "031d223859c249dd",
+          "quote_hash": "3643d1f2f4bfe7a137bd7f975516c58dc4075c297af7ab6552fa737a58eaf46f"
         }
       ],
       "market_regions": [
@@ -30462,6 +30788,40 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-92e1e0eb2a2090f9",
+      "candidate_kind": "product",
+      "research_name": "Spark 模块化数据中心",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-d41ebd9f02722fc8"
+      ],
+      "funding_insight_ids": [
+        "FI-e0a9f997fd33ce21"
+      ],
+      "source_event_ids": [
+        "EV-26a5749d8604455a"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-34d15ad3ce6de8dc",
+          "quote": "smaller, modular AI factories that can be transported by truck and connected to large power sources almost anywhere",
+          "source_content_hash": "c5404319aca5bde8",
+          "quote_hash": "435c5982c8e9f9e2518ad4bb81d8fdc2fa96b078abcd7bddb55e2b46bfc7f30b"
+        },
+        {
+          "source_id": "FISRC-34d15ad3ce6de8dc",
+          "quote": "By manufacturing these modular data centers, called Spark, at its own facilities, Crusoe can deploy compute capacity quickly and without the need for large construction workforces.",
+          "source_content_hash": "c5404319aca5bde8",
+          "quote_hash": "e5f761745e22cca7fa9e2c6ccbcca636acfb36a881ba9f49f99bb613d53f7d23"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-5136d10fd1278724",
       "candidate_kind": "product",
       "research_name": "Sparkoh.ai平台",
@@ -33972,6 +34332,40 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-0717279cb850a83f",
+      "candidate_kind": "product",
+      "research_name": "全自动磁控介入手术机器人平台",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-9b7dfbc73b12c8b9"
+      ],
+      "funding_insight_ids": [
+        "FI-37e02bd38bfea214"
+      ],
+      "source_event_ids": [
+        "EV-1d9cf73bba2debcc"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-0195a1b88a7ecb41",
+          "quote": "思博慧医潜心研发了全球首台AI智能体全程参与的磁控介入手术平台。该平台旨在实现手术全流程自动化，以大幅降低准入门槛，缩短培训周期，抹平医生间的水平差异，从而提升整体医疗质量。",
+          "source_content_hash": "4b021c644b47dde0",
+          "quote_hash": "71bb4bb008fd70ff6e939659b928ed8bf7ce15fd5498e480a6cd8738470d7a18"
+        },
+        {
+          "source_id": "FISRC-11ada846f74cedf6",
+          "quote": "在算法层面，平台由VLA（视觉-语言-动作）大模型驱动，通过在物理仿真世界模型里做大量的自我强化学习，能够精准模拟顶级专家的手术策略与操作手法。",
+          "source_content_hash": "6059090f3b4fe29b",
+          "quote_hash": "4aa1c74493c7dedd747e3e43101e471ab7353e991f1515c289c39f9fd6f67894"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
       "candidate_id": "FIER-b8608caaba9fa71b",
       "candidate_kind": "product",
       "research_name": "共封装光学芯片 (CPO)",
@@ -34299,10 +34693,12 @@
         "EN-cfec5bef40cbf3ae"
       ],
       "funding_insight_ids": [
+        "FI-63b6e7a62d6c3705",
         "FI-d8032ae8eb6bbca2"
       ],
       "source_event_ids": [
-        "EV-50dc1a246ea090e5"
+        "EV-50dc1a246ea090e5",
+        "EV-b0637e99e328479b"
       ],
       "evidence_refs": [
         {
@@ -34310,10 +34706,23 @@
           "quote": "旗下产品“则形AI”是基于自研工业世界模型与自然语言大模型封装的面向硬件工程的设计研发智能体平台，提供云架构下的3D设计方案与2D工程图纸智能生成功能。",
           "source_content_hash": "7c9e0b478a4a12a6",
           "quote_hash": "c3c5e312cf4bed81d1a6775221960a3827bc7929c90c1fd279488ef8fd9dcb82"
+        },
+        {
+          "source_id": "FISRC-887f1542c828b426",
+          "quote": "设序科技的“则形AI”则会根据需求直接生成完整的工业设计方案。过去需要花费工程师几十个小时完成的方案，“则形AI”几分钟就能生成一版。",
+          "source_content_hash": "7ba0fa9425a10e3a",
+          "quote_hash": "fd2287e13e2216557162cc4775f5a0e6b6f120b9f98fd8fde0b27ca14d595692"
+        },
+        {
+          "source_id": "FISRC-887f1542c828b426",
+          "quote": "针对通用大模型的短板，设序科技自研了实体几何物理基础模型。不同于通用模型“看图猜结构”，该模型从硬件实体模态出发，提前掌握零件公差、装配边界、加工条件等底层逻辑",
+          "source_content_hash": "7ba0fa9425a10e3a",
+          "quote_hash": "05011a0f795635d4c92d58eb75211947f07cd836daedff85bd6d47306703ebde"
         }
       ],
       "market_regions": [
-        "CN"
+        "CN",
+        "GLOBAL"
       ],
       "china_market_match": true
     },
@@ -35423,9 +35832,11 @@
         "EN-9a970ad7900121db"
       ],
       "funding_insight_ids": [
-        "FI-45963c2baf94d978"
+        "FI-45963c2baf94d978",
+        "FI-c96241e737132a62"
       ],
       "source_event_ids": [
+        "EV-47f16317cc2d62e2",
         "EV-987cb2e5e20f79ce"
       ],
       "evidence_refs": [

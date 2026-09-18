@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-17T02:39:32.145Z",
-    "latestDataDate": "2026-09-17",
-    "currentDate": "2026-09-17",
-    "eventCount": 3338,
+    "generatedAt": "2026-09-18T02:50:25.844Z",
+    "latestDataDate": "2026-09-18",
+    "currentDate": "2026-09-18",
+    "eventCount": 3369,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -58,21 +58,24 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
     "first_disclosed_at": "2026-04-09",
-    "latest_disclosed_at": "2026-05-07",
+    "latest_disclosed_at": "2026-09-16",
     "role_counts": {
       "co_lead": 1,
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 1,
+      "participant": 1
     },
     "round_codes": [
+      "other",
       "pre_series_a"
     ],
     "portfolio_companies": [
@@ -80,9 +83,55 @@
         "entity_id": "EN-00e5330d08a779e8",
         "canonical_entity_id": "EN-00e5330d08a779e8",
         "name": "共绩科技"
+      },
+      {
+        "entity_id": "FICO-anew-labs",
+        "canonical_entity_id": "",
+        "name": "Anew Labs（新生实验室）"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-3ee79b75a1291e17",
+        "funding_insight_id": "FI-e81dafc2defecb80",
+        "event_ids": [
+          "EV-c96705c69e11c520",
+          "EV-91459f0d9446f471"
+        ],
+        "company_entity_id": "FICO-anew-labs",
+        "company_canonical_entity_id": "",
+        "company_name": "Anew Labs（新生实验室）",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "首轮",
+        "amount_original": "2.9亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 290000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.9 亿美元"
+        },
+        "announced_at": "2026-09-16",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-55c913083e7dcd21",
+            "source_url": "https://www.chinaventure.com.cn/news/111-20260917-393303.html",
+            "source_title": "20亿首轮，字节分拆AI制药拿下巨额融资 - 投中网",
+            "source_content_hash": "2896ab8dacb23e1a",
+            "quote": "高榕创投、春华创投、博裕资本参与",
+            "quote_hash": "2d3224672af10a84c2db98c58b0ce4208fcc768075f1cafc53f3b81e3d20a853"
+          }
+        ]
+      },
       {
         "activity_id": "IA-9155275d9a35ebb6",
         "funding_insight_id": "FI-b9cb6432f4173d34",
@@ -165,6 +214,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-55c913083e7dcd21",
+        "source_url": "https://www.chinaventure.com.cn/news/111-20260917-393303.html",
+        "source_title": "20亿首轮，字节分拆AI制药拿下巨额融资 - 投中网",
+        "source_content_hash": "2896ab8dacb23e1a",
+        "quote": "高榕创投、春华创投、博裕资本参与",
+        "quote_hash": "2d3224672af10a84c2db98c58b0ce4208fcc768075f1cafc53f3b81e3d20a853"
+      },
       {
         "source_id": "FISRC-3e0fde80ebf2a574",
         "source_url": "https://www.36kr.com/p/3799065589406724",

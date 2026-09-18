@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-17T02:39:32.145Z",
-    "latestDataDate": "2026-09-17",
-    "currentDate": "2026-09-17",
-    "eventCount": 3338,
+    "generatedAt": "2026-09-18T02:50:25.844Z",
+    "latestDataDate": "2026-09-18",
+    "currentDate": "2026-09-18",
+    "eventCount": 3369,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -62,6 +62,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-792e2a2b3e98399f",
       "EV-8018e028f1840136",
       "EV-fe49d2ee580cfea2",
       "EV-d57fb9108f2cb220",
@@ -70,7 +71,6 @@
       "EV-9bbe5a98b14acd7f",
       "EV-55e7c286e95be405",
       "EV-c1295b8f58024ff6",
-      "EV-792e2a2b3e98399f",
       "EV-3daefecd0453631a",
       "EV-edcb66d0401cfb8f",
       "EV-5d581d112fdbd464",
@@ -124,7 +124,7 @@
       "EN-24caf10fe9bfb1c5"
     ],
     "firstSeen": "2026-05-25",
-    "lastSeen": "2026-09-15",
+    "lastSeen": "2026-09-18",
     "relationIds": [
       "REL2-30051dc5d7668662",
       "REL2-e0b4c492d7f56ad2",
@@ -132,6 +132,7 @@
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-792e2a2b3e98399f",
         "EV-8018e028f1840136",
         "EV-fe49d2ee580cfea2",
         "EV-c1295b8f58024ff6",
@@ -140,7 +141,6 @@
         "EV-a6cb4aef5284eb68",
         "EV-9bbe5a98b14acd7f",
         "EV-55e7c286e95be405",
-        "EV-792e2a2b3e98399f",
         "EV-3daefecd0453631a",
         "EV-edcb66d0401cfb8f",
         "EV-5d581d112fdbd464",
@@ -192,6 +192,22 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-792e2a2b3e98399f",
+        "dataDate": "2026-09-18",
+        "date": "2026-09-17",
+        "eventType": "acquisition",
+        "eventTypeLabel": "并购",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "马斯克睡进工地！为AI基建拼了",
+        "displayTags": [],
+        "entityIds": [
+          "EN-e78bdebae031095b",
+          "EN-6fcba5d96a4fadfd"
+        ]
+      },
       {
         "id": "EV-e50dd2bea0180d59",
         "dataDate": "2026-09-15",
@@ -921,22 +937,6 @@
         "displayTags": [],
         "entityIds": [
           "EN-69b0ae6906b17c81",
-          "EN-6fcba5d96a4fadfd"
-        ]
-      },
-      {
-        "id": "EV-792e2a2b3e98399f",
-        "dataDate": "2026-08-01",
-        "date": "2026-07-31",
-        "eventType": "acquisition",
-        "eventTypeLabel": "并购",
-        "eventGroup": "融资与并购",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "SpaceX 称 xAI 未获许可的涡轮机还需一年才能全部移除",
-        "displayTags": [],
-        "entityIds": [
-          "EN-e78bdebae031095b",
           "EN-6fcba5d96a4fadfd"
         ]
       },
@@ -1961,6 +1961,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-792e2a2b3e98399f",
         "EV-842f6d47e9cae7e7",
         "EV-086902ad904c1c90",
         "EV-8018e028f1840136",
@@ -1970,7 +1971,6 @@
         "EV-a6cb4aef5284eb68",
         "EV-9bbe5a98b14acd7f",
         "EV-cdd55321754ce823",
-        "EV-792e2a2b3e98399f",
         "EV-f669ee8fd74b8269",
         "EV-e9b020a1b5f1af14",
         "EV-3daefecd0453631a",
@@ -1998,24 +1998,24 @@
       "classificationRefs": [
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system",
-        "TX-target_user-consumer",
+        "TX-target_user-public_sector_user",
         "TX-use_case-physical_automation",
         "TX-target_user-business_user",
+        "TX-product_form-model",
+        "TX-target_user-consumer",
         "TX-industry-logistics_supply_chain",
         "TX-industry-telecommunications",
         "TX-technology-agentic_execution",
-        "TX-product_form-model",
         "TX-industry-aerospace_defense",
         "TX-use_case-software_development",
         "TX-technology-code_generation",
-        "TX-target_user-public_sector_user",
         "TX-product_form-developer_tool"
       ],
       "relatedEntityIds": [
         "EN-6fcba5d96a4fadfd"
       ],
       "firstSeen": "2026-05-21",
-      "lastSeen": "2026-09-14"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "EN-c4bc2d00a42f220f",
@@ -2071,12 +2071,12 @@
       "object_type": "entity",
       "event_id": "EV-792e2a2b3e98399f",
       "claim_refs": [
-        "CL-3c2aac2dae19ef58"
+        "CL-00331c98cb967633"
       ],
       "source_refs": [
-        "SA-08460f4c69d75995"
+        "SA-b75e097a7fbc43ba"
       ],
-      "data_date": "2026-08-01",
+      "data_date": "2026-09-18",
       "status": "verified"
     },
     {
@@ -2129,8 +2129,9 @@
       "typeLabel": "产品形态",
       "valueId": "end_user_application",
       "eventIds": [
-        "EV-63a4b6ce48e14829",
+        "EV-b0637e99e328479b",
         "EV-04bcb24d608a931c",
+        "EV-63a4b6ce48e14829",
         "EV-6d6715223e80e7a6",
         "EV-c538fb9a61735afc",
         "EV-0ea2bbb7280091f2",
@@ -2243,8 +2244,9 @@
         "EV-618e2e96fac28f06"
       ],
       "entityIds": [
-        "EN-c087cefd343cb488",
+        "EN-cfec5bef40cbf3ae",
         "EN-63d1760c240e7a7c",
+        "EN-c087cefd343cb488",
         "EN-4b6cef91ffb05303",
         "EN-8d8b8c50b8da244b",
         "EN-27d914a99e32f0f2",
@@ -2348,7 +2350,7 @@
         "HW-c5a22adcc66136ed"
       ],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-09-17"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "TX-product_form-model",
@@ -2357,6 +2359,7 @@
       "typeLabel": "产品形态",
       "valueId": "model",
       "eventIds": [
+        "EV-c96705c69e11c520",
         "EV-7eead74c2baae511",
         "EV-ef669a52c9a3f94f",
         "EV-08612741cfce0bcf",
@@ -2677,6 +2680,7 @@
         "EV-0cb98302768c2e0a",
         "EV-34929bdd016dc8d6",
         "EV-00834dd71037c7cc",
+        "EV-4008b0134e8a2e8b",
         "EV-0f8b9d8ad97f0c21",
         "EV-d4c42c125b98b97e",
         "EV-06e6d004096040e0",
@@ -2708,6 +2712,7 @@
         "EV-5208aa6dcd06cecb"
       ],
       "entityIds": [
+        "EN-bc06be2cba2b2f2c",
         "EN-1d79127e9d90e89b",
         "EN-fba6bdd504fa7aff",
         "EN-a1fb5521655e55c3",
@@ -2940,7 +2945,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-17"
+      "lastSeen": "2026-09-18"
     },
     {
       "id": "TX-use_case-software_development",

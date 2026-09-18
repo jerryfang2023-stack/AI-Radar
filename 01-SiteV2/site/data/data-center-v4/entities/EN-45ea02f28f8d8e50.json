@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-17T02:39:32.145Z",
-    "latestDataDate": "2026-09-17",
-    "currentDate": "2026-09-17",
-    "eventCount": 3338,
+    "generatedAt": "2026-09-18T02:50:25.844Z",
+    "latestDataDate": "2026-09-18",
+    "currentDate": "2026-09-18",
+    "eventCount": 3369,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -74,13 +74,14 @@
       "EV-1f88bfaf77dcfca3",
       "EV-3a8752218ab2b487",
       "EV-4adc165f85ae86ff",
+      "EV-316beb691ef27660",
       "EV-16f359eab1f09a1d"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-02",
-    "lastSeen": "2026-09-14",
+    "lastSeen": "2026-09-18",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -106,10 +107,28 @@
       "hardware": [],
       "organizationPeople": [],
       "other": [
+        "EV-316beb691ef27660",
         "EV-16f359eab1f09a1d"
       ]
     },
     "timeline": [
+      {
+        "id": "EV-316beb691ef27660",
+        "dataDate": "2026-09-18",
+        "date": "2026-09-17",
+        "eventType": "research_result",
+        "eventTypeLabel": "研究结果",
+        "eventGroup": "研究结果",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "OpenAI 的 GPT-6 Astra 在十小时内解密了一条 83 年未解的纳粹无线电信息",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7ebe2252e6df37be",
+          "EN-7d3194f79e645c42",
+          "EN-45ea02f28f8d8e50"
+        ]
+      },
       {
         "id": "EV-ffa46f84468cffd9",
         "dataDate": "2026-09-14",
