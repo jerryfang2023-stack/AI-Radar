@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-18T02:50:25.844Z",
-    "latestDataDate": "2026-09-18",
-    "currentDate": "2026-09-18",
-    "eventCount": 3369,
+    "generatedAt": "2026-09-19T00:31:34.791Z",
+    "latestDataDate": "2026-09-19",
+    "currentDate": "2026-09-19",
+    "eventCount": 3401,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -390,6 +390,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-884ee276b1160545",
         "EV-376862e67d0244ce",
         "EV-6d282114be5eef4f",
         "EV-46803ffdc054ae6d",
@@ -424,26 +425,28 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-healthcare_life_sciences",
-        "TX-product_form-robotic_system",
-        "TX-target_user-researcher",
-        "TX-use_case-physical_automation",
         "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
-        "TX-industry-automotive_transportation",
-        "TX-industry-manufacturing",
+        "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
+        "TX-use_case-data_analysis",
+        "TX-ai_market_application-chips",
+        "TX-industry-logistics_supply_chain",
+        "TX-industry-manufacturing",
+        "TX-product_form-chip_accelerator",
+        "TX-use_case-physical_automation",
+        "TX-technology-embodied_ai",
+        "TX-industry-healthcare_life_sciences",
+        "TX-product_form-robotic_system",
+        "TX-target_user-researcher",
+        "TX-industry-automotive_transportation",
         "TX-product_form-model",
         "TX-use_case-research_discovery",
-        "TX-product_form-enterprise_software_platform",
-        "TX-use_case-data_analysis",
         "TX-industry-financial_services",
         "TX-industry-media_entertainment",
         "TX-industry-retail_ecommerce",
-        "TX-industry-logistics_supply_chain",
-        "TX-technology-embodied_ai",
         "TX-industry-government_public_sector",
         "TX-industry-professional_services",
         "TX-product_form-ai_infrastructure_software",
@@ -452,8 +455,6 @@
         "TX-deployment_model-edge_device",
         "TX-industry-telecommunications",
         "TX-technology-agentic_execution",
-        "TX-ai_market_application-chips",
-        "TX-product_form-chip_accelerator",
         "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
         "TX-industry-aerospace_defense",
@@ -506,7 +507,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-18"
+      "lastSeen": "2026-09-19"
     }
   ],
   "relationships": [
@@ -539,6 +540,7 @@
       "typeLabel": "应用场景",
       "valueId": "physical_automation",
       "eventIds": [
+        "EV-412f7ce21693dc13",
         "EV-1d9cf73bba2debcc",
         "EV-1c399d2db39c05a3",
         "EV-0ac10579ff64fe74",
@@ -671,6 +673,7 @@
         "EV-26439e34295a0519",
         "EV-843f0807558b3d10",
         "EV-cec68369662236fd",
+        "EV-24b55d8abde53c32",
         "EV-81937f2e4fa0f9fe",
         "EV-b93b6abf31662339",
         "EV-d8748baee002e2b6",
@@ -746,6 +749,7 @@
         "EV-ad64347138da72bb"
       ],
       "entityIds": [
+        "EN-c5146e8a5659ab7e",
         "EN-9b7dfbc73b12c8b9",
         "EN-caff75902fc3743e",
         "EN-60910505210bd6f1",
@@ -852,6 +856,7 @@
         "EN-ad691fd49d3307e8",
         "EN-9a1a3ee1f50745c6",
         "EN-36dde5de93197cee",
+        "EN-0899bccb1b028521",
         "EN-a84cd4bf5dd3e20f",
         "EN-633a148f6f72e81b",
         "EN-3b39ea849059759f",
@@ -918,7 +923,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-09-18"
+      "lastSeen": "2026-09-19"
     },
     {
       "id": "TX-technology-guardrails_safety",

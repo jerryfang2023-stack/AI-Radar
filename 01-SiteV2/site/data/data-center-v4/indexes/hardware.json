@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-18T02:50:25.844Z",
-    "latestDataDate": "2026-09-18",
-    "currentDate": "2026-09-18",
-    "eventCount": 3369,
+    "generatedAt": "2026-09-19T00:31:34.791Z",
+    "latestDataDate": "2026-09-19",
+    "currentDate": "2026-09-19",
+    "eventCount": 3401,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -50,6 +50,33 @@
     ]
   },
   "hardware": [
+    {
+      "id": "HW-ef547aa78d8d0ade",
+      "eventId": "EV-5af773d44ac066f7",
+      "dataDate": "2026-09-19",
+      "date": "2026-09-18",
+      "title": "斗山宣布近 1 万亿韩元 CCL 扩产计划，投向光模块与 AI 加速器用覆铜板",
+      "hardwareType": "semiconductor",
+      "eventType": "hardware_capacity",
+      "eventTypeLabel": "硬件产能",
+      "computeLayer": "未披露",
+      "supplier": "斗山",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "中国",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://ithome.com/1/004/129.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-09-18",
+      "entityIds": [
+        "EN-ddb83bc0da573869"
+      ]
+    },
     {
       "id": "HW-5aa85a1a004480c8",
       "eventId": "EV-cbc988c78b987642",
@@ -3507,6 +3534,264 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-5b8722fab040e3bf",
+      "snapshotKey": "5b8722fab040e3bf",
+      "snapshotId": "HWS-c5965708463037b6",
+      "eventId": "EV-f2f9ce8933ab8d4f",
+      "eventIds": [
+        "EV-f2f9ce8933ab8d4f"
+      ],
+      "dataDate": "2026-09-19",
+      "date": "2026-09-19",
+      "title": "Peerium",
+      "subject": "Huawei",
+      "productNames": [
+        "Peerium"
+      ],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-310889d13ede95eb"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-19",
+          "hardware_fact_id": "HWF-310889d13ede95eb",
+          "fact_type": "product",
+          "observed_at": "2026-09-18T00:31:55.000Z",
+          "subject_entity_id": "EN-b81c8201acfc7639",
+          "subject_name": "Huawei",
+          "product_entity_ids": [
+            "EN-32425714bc255528"
+          ],
+          "product_names": [
+            "Peerium"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家 9 月 18 日消息，华为 9 月 17 日在上海发布 AI 时代的全新计算架构 Peerium，称该架构可实现百万级处理器作为一台计算机协同工作，以满足持续增长的 AI 算力需求。",
+          "event_refs": [
+            "EV-f2f9ce8933ab8d4f"
+          ],
+          "claim_ref": "CL-43c16ba372c49c01",
+          "source_refs": [
+            "SA-4ecf4d44789b8d7d"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-19/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/1/003/910.htm",
+      "entityIds": [
+        "EN-b81c8201acfc7639",
+        "EN-32425714bc255528"
+      ]
+    },
+    {
+      "id": "HWC-988111196840f624",
+      "snapshotKey": "988111196840f624",
+      "snapshotId": "HWS-7b34722055457589",
+      "eventId": "EV-eff92e59afe2e412",
+      "eventIds": [
+        "EV-eff92e59afe2e412"
+      ],
+      "dataDate": "2026-09-19",
+      "date": "2026-09-19",
+      "title": "Qwen3.8 / 27B 98.2 / Ternary Bonsai 2",
+      "subject": "PrismML",
+      "productNames": [
+        "Qwen3.8",
+        "27B 98.2",
+        "Ternary Bonsai 2"
+      ],
+      "hardwareType": "ai_device / gpu",
+      "factTypes": [
+        "specification"
+      ],
+      "latestValues": {
+        "specification": {
+          "metric_value": "16",
+          "unit": "GB",
+          "fact_ref": "HWF-1b2580a814b0ebe8"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-19",
+          "hardware_fact_id": "HWF-a6eba2f6bfe4ce4c",
+          "fact_type": "specification",
+          "observed_at": "2026-09-18T18:06:36.000Z",
+          "subject_entity_id": "EN-95b0632f1b292fa7",
+          "subject_name": "PrismML",
+          "product_entity_ids": [
+            "EN-0f553f48551aef83",
+            "EN-e292acf6eb58039d",
+            "EN-2c60a7e458097662"
+          ],
+          "product_names": [
+            "Qwen3.8",
+            "27B 98.2",
+            "Ternary Bonsai 2"
+          ],
+          "component_type": "ai_device",
+          "metric_value": "5.93",
+          "unit": "GB",
+          "source_quote": "PrismML has released Ternary Bonsai 2 27B , a ternary-weight version of Qwen3.8 27B . The language model occupies 5.93 GB, against 53.80 GB in FP16. PrismML reports that it keeps 98.2% of the parent model’s average across 20 benchmarks. The model accepts text and images and supports a 262K-token context. PrismML demos it driving Cline coding agents and computer use on an RTX 5090. It arrives 2 months after the first Bonsai 27B , whose ternary variant retained about 95%.",
+          "event_refs": [
+            "EV-eff92e59afe2e412"
+          ],
+          "claim_ref": "CL-7b33369c79df07cf",
+          "source_refs": [
+            "SA-01c730d1074dde62"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-19/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-09-19",
+          "hardware_fact_id": "HWF-1b2580a814b0ebe8",
+          "fact_type": "specification",
+          "observed_at": "2026-09-18T18:06:36.000Z",
+          "subject_entity_id": "EN-95b0632f1b292fa7",
+          "subject_name": "PrismML",
+          "product_entity_ids": [
+            "EN-0f553f48551aef83",
+            "EN-e292acf6eb58039d",
+            "EN-2c60a7e458097662"
+          ],
+          "product_names": [
+            "Qwen3.8",
+            "27B 98.2",
+            "Ternary Bonsai 2"
+          ],
+          "component_type": "gpu",
+          "metric_value": "16",
+          "unit": "GB",
+          "source_quote": "Yes. The Apache 2.0 weights run today on a 16 GB laptop or a single 24 GB GPU. You need PrismML’s llama.cpp fork or its MLX runtime.",
+          "event_refs": [
+            "EV-eff92e59afe2e412"
+          ],
+          "claim_ref": "CL-4e1e5f63aad5ae10",
+          "source_refs": [
+            "SA-01c730d1074dde62"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-19/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "computer_use",
+          "name": "计算机操作",
+          "entityIds": [
+            "EN-95b0632f1b292fa7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/09/18/prismml-releases-ternary-bonsai-2-27b-a-5-9-gb-apache-2-0-model-retaining-98-2-of-qwen3-8-27b-performance",
+      "entityIds": [
+        "EN-95b0632f1b292fa7",
+        "EN-0f553f48551aef83",
+        "EN-e292acf6eb58039d",
+        "EN-2c60a7e458097662"
+      ]
+    },
+    {
+      "id": "HWC-57b665951367dbc8",
+      "snapshotKey": "57b665951367dbc8",
+      "snapshotId": "HWS-4e8b83a9f72c4e34",
+      "eventId": "EV-67804da6b04fdcc5",
+      "eventIds": [
+        "EV-67804da6b04fdcc5"
+      ],
+      "dataDate": "2026-09-19",
+      "date": "2026-09-19",
+      "title": "Serverless platforms for",
+      "subject": "Serverless platforms for",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-b52adf7b3e6c17b1"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-09-19",
+          "hardware_fact_id": "HWF-b52adf7b3e6c17b1",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-09-19T00:25:46.219Z",
+          "subject_entity_id": "EN-8d02f06f05d1d64a",
+          "subject_name": "Serverless platforms for",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Microsoft Agent Framework is Microsoft's successor to both Semantic Kernel and AutoGen. AutoGen moved into maintenance mode in 2026. For teams building production AI agents, the serverless platform you choose can materially affect code-execution isolation, elastic scaling, CPU and GPU access, networking, and operational overhead. A purpose-built AI infrastructure platform can simplify how you deploy and manage agent workloads. This guide examines seven serverless platforms that serve different Microsoft Agent Framework deployment needs in 2026, starting with Modal, an AI-native solution that combines isolated Sandboxes, broad compute selection, fast serverless scaling, and code-first infrastructure.",
+          "event_refs": [
+            "EV-67804da6b04fdcc5"
+          ],
+          "claim_ref": "CL-5393ab68ad670508",
+          "source_refs": [
+            "SA-43cea57da88ea288"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-19/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d02f06f05d1d64a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://modal.com/resources/best-serverless-platforms-microsoft-agent-framework-apps",
+      "entityIds": [
+        "EN-8d02f06f05d1d64a",
+        "EN-9fbf261b62c1d7c0",
+        "EN-bbdefa2950f49882"
+      ]
+    },
     {
       "id": "HWC-e3536d1050e67439",
       "snapshotKey": "e3536d1050e67439",
@@ -17544,10 +17829,10 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-09-18",
-      "funnel_id": "LF-e62616166aab7c63",
+      "data_date": "2026-09-19",
+      "funnel_id": "LF-9e1772d6fbd84190",
       "lens": "hardware",
-      "date": "2026-09-18",
+      "date": "2026-09-19",
       "monitoring_paths": [
         "hardware_capacity_fab",
         "hardware_capex",
@@ -17555,29 +17840,24 @@
         "hardware_shipment_deployment",
         "hardware_supply_agreement"
       ],
-      "raw_documents": 31,
-      "original_sources": 26,
-      "valid_claims": 20,
-      "observations": 1,
-      "canonical_events": 7,
+      "raw_documents": 21,
+      "original_sources": 18,
+      "valid_claims": 18,
+      "observations": 4,
+      "canonical_events": 6,
       "blocker_counts": {
-        "non_event_or_index_title": 2,
-        "source_outside_daily_window": 8,
-        "rumor_requires_primary_confirmation": 1,
         "no_source_bounded_event": 1,
-        "raw_source_quality_block": 5,
-        "domestic_publication_date_unverified": 3,
-        "source_outside_funding_backfill_window": 1,
-        "no_source_bounded_claim": 1,
-        "event_not_ai_relevant": 2
+        "source_outside_daily_window": 8,
+        "non_event_or_index_title": 2,
+        "raw_source_quality_block": 3
       },
       "rates": {
-        "original_source_rate": 0.8387096774193549,
-        "valid_claim_rate": 0.6451612903225806,
-        "observation_rate": 0.05,
-        "event_conversion_rate": 0.35
+        "original_source_rate": 0.8571428571428571,
+        "valid_claim_rate": 0.8571428571428571,
+        "observation_rate": 0.2222222222222222,
+        "event_conversion_rate": 0.3333333333333333
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-18/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-19/monitoring-funnel.json"
     }
   ]
 }

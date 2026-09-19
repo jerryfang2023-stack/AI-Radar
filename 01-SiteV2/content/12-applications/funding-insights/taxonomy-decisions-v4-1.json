@@ -5,16 +5,16 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-09-18T02:46:12.423Z",
+    "generated_at": "2026-09-19T00:31:20.674Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 475,
-    "input_hash": "b587baa3a0d4b51f",
+    "decision_count": 478,
+    "input_hash": "242def048f7c95ce",
     "override_count": 18,
-    "needs_review_count": 53,
-    "low_confidence_count": 72
+    "needs_review_count": 54,
+    "low_confidence_count": 73
   },
   "decisions": [
     {
@@ -9512,6 +9512,60 @@
       "confidence": 0.7,
       "needs_review": true,
       "rationale": "证据显示Hobie是读取企业实时系统、建模业务并回答可溯源问题的智能体平台，属于跨行业企业工作流，而非单一行业或物理AI/基础设施。但证据未明确具体行业，且产品细节有限，故标记需复核。"
+    },
+    {
+      "event_id": "EV-40d4ce6d936d4d49",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "compute_cloud_service",
+      "use_case_ids": [],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Crusoe is a data center developer and AI cloud provider offering compute infrastructure, including modular data centers and large-scale installations for AI training. This maps to infrastructure_compute > hardware_computing > computing_infrastructure. The product form is compute_cloud_service, and the primary target users are developers."
+    },
+    {
+      "event_id": "EV-f077c91cb2fd9179",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "productivity_enterprise_workflows",
+        "knowledge_search",
+        "data_analysis"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.7,
+      "needs_review": true,
+      "rationale": "证据显示Vantora通过COSMOS统一企业运营数据并供AI流程和自主代理使用，属于跨行业的企业工作流平台，而非单一行业应用或物理AI。但证据未明确其是否直接向AI构建者提供基础设施，故归入企业应用并标记需复核。"
+    },
+    {
+      "event_id": "EV-412f7ce21693dc13",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "chips",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "logistics_supply_chain"
+      ],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "公司核心产品为旭日系列芯片，面向机器人端侧计算场景，属于为其他AI产品提供算力硬件的芯片供应商，因此归入基础设施计算-硬件计算-芯片。客户为机器人厂商，使用场景涉及物理自动化，行业覆盖制造与物流供应链。"
     }
   ]
 }

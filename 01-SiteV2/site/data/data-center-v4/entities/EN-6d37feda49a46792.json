@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-18T02:50:25.844Z",
-    "latestDataDate": "2026-09-18",
-    "currentDate": "2026-09-18",
-    "eventCount": 3369,
+    "generatedAt": "2026-09-19T00:31:34.791Z",
+    "latestDataDate": "2026-09-19",
+    "currentDate": "2026-09-19",
+    "eventCount": 3401,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -60,6 +60,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-0b515afec96dae0d",
       "EV-918fc324de3117bd",
       "EV-b4e7187a9bd1de0e"
     ],
@@ -67,13 +68,14 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-08",
-    "lastSeen": "2026-07-01",
+    "lastSeen": "2026-09-19",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-0b515afec96dae0d",
         "EV-918fc324de3117bd",
         "EV-b4e7187a9bd1de0e"
       ],
@@ -82,6 +84,21 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-0b515afec96dae0d",
+        "dataDate": "2026-09-19",
+        "date": "2026-09-18",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "亚马逊：AI 模型必须经过严格测试，确认足够安全才能发布",
+        "displayTags": [],
+        "entityIds": [
+          "EN-6d37feda49a46792"
+        ]
+      },
       {
         "id": "EV-918fc324de3117bd",
         "dataDate": "2026-07-01",

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-18T02:50:25.844Z",
-    "latestDataDate": "2026-09-18",
-    "currentDate": "2026-09-18",
-    "eventCount": 3369,
+    "generatedAt": "2026-09-19T00:31:34.791Z",
+    "latestDataDate": "2026-09-19",
+    "currentDate": "2026-09-19",
+    "eventCount": 3401,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -71,8 +71,8 @@
       "TX-ai_market_category-infrastructure_compute",
       "TX-ai_market_subcategory-hardware_computing",
       "TX-target_user-developer",
-      "TX-industry-manufacturing",
       "TX-ai_market_application-chips",
+      "TX-industry-manufacturing",
       "TX-product_form-chip_accelerator",
       "TX-use_case-software_development",
       "TX-product_form-ai_compute_system"
@@ -448,6 +448,7 @@
       "typeLabel": "AI 市场细分",
       "valueId": "computing_infrastructure",
       "eventIds": [
+        "EV-40d4ce6d936d4d49",
         "EV-26a5749d8604455a",
         "EV-4238c51fcdad7bd4",
         "EV-37cc66ca2e29a78c",
@@ -508,7 +509,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-01-06",
-      "lastSeen": "2026-09-18"
+      "lastSeen": "2026-09-19"
     },
     {
       "id": "TX-ai_market_category-infrastructure_compute",
@@ -517,6 +518,8 @@
       "typeLabel": "AI 市场类别",
       "valueId": "infrastructure_compute",
       "eventIds": [
+        "EV-40d4ce6d936d4d49",
+        "EV-412f7ce21693dc13",
         "EV-26a5749d8604455a",
         "EV-4238c51fcdad7bd4",
         "EV-b137470f59491f6a",
@@ -740,6 +743,7 @@
       ],
       "entityIds": [
         "EN-d41ebd9f02722fc8",
+        "EN-c5146e8a5659ab7e",
         "EN-4149d125ad47155a",
         "EN-619245256126c075",
         "EN-caffca3284100caa",
@@ -928,7 +932,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-01-06",
-      "lastSeen": "2026-09-18"
+      "lastSeen": "2026-09-19"
     },
     {
       "id": "TX-ai_market_subcategory-hardware_computing",
@@ -937,6 +941,8 @@
       "typeLabel": "AI 市场子类",
       "valueId": "hardware_computing",
       "eventIds": [
+        "EV-40d4ce6d936d4d49",
+        "EV-412f7ce21693dc13",
         "EV-26a5749d8604455a",
         "EV-4238c51fcdad7bd4",
         "EV-37cc66ca2e29a78c",
@@ -998,6 +1004,7 @@
       ],
       "entityIds": [
         "EN-d41ebd9f02722fc8",
+        "EN-c5146e8a5659ab7e",
         "EN-4149d125ad47155a",
         "EN-caffca3284100caa",
         "EN-ce232f0155cad088",
@@ -1052,7 +1059,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-01-06",
-      "lastSeen": "2026-09-18"
+      "lastSeen": "2026-09-19"
     },
     {
       "id": "TX-target_user-developer",
@@ -1061,6 +1068,8 @@
       "typeLabel": "目标用户",
       "valueId": "developer",
       "eventIds": [
+        "EV-40d4ce6d936d4d49",
+        "EV-412f7ce21693dc13",
         "EV-26a5749d8604455a",
         "EV-b0637e99e328479b",
         "EV-c96705c69e11c520",
@@ -1322,6 +1331,7 @@
       ],
       "entityIds": [
         "EN-d41ebd9f02722fc8",
+        "EN-c5146e8a5659ab7e",
         "EN-cfec5bef40cbf3ae",
         "EN-bc06be2cba2b2f2c",
         "EN-4149d125ad47155a",
@@ -1543,7 +1553,81 @@
         "HW-f05a371d8e0599b0"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-09-18"
+      "lastSeen": "2026-09-19"
+    },
+    {
+      "id": "TX-ai_market_application-chips",
+      "name": "芯片",
+      "nodeType": "ai_market_application",
+      "typeLabel": "AI 市场细分",
+      "valueId": "chips",
+      "eventIds": [
+        "EV-412f7ce21693dc13",
+        "EV-10b007d20ad2794e",
+        "EV-e0a31302688c81ec",
+        "EV-ae87e20ab0c5d06a",
+        "EV-012b1ccfe1d48f51",
+        "EV-2a2f79242a9479e7",
+        "EV-ef2ac2c9b425491c",
+        "EV-b116eafe60d71fbe",
+        "EV-4d2852e1694b2818",
+        "EV-7a44a47bf36780d2",
+        "EV-da1655ecfaf35feb",
+        "EV-3db9a076e3b7d4fd",
+        "EV-b9ef27cd1fd9b9a9",
+        "EV-b2d94511e4b4dfc8",
+        "EV-800384d4fd2434a5",
+        "EV-415b083fdaa8077f",
+        "EV-7abe829941f97b65",
+        "EV-4e1d2d6105d09d24",
+        "EV-a8dc5c859946f336",
+        "EV-48075ca70a5458ec",
+        "EV-040fc355bc12a750",
+        "EV-63dee9f748531f08",
+        "EV-7abd8ec418f1e7f3",
+        "EV-b3c7c4bff17063d8",
+        "EV-80e54c9a390da293",
+        "EV-ad75efcb12a07793",
+        "EV-236cbc2d64f0c455",
+        "EV-794f921515af8e8b",
+        "EV-70a994b9339f92e7",
+        "EV-59882383f82f215d",
+        "EV-fd2ff833db684e40"
+      ],
+      "entityIds": [
+        "EN-c5146e8a5659ab7e",
+        "EN-ce232f0155cad088",
+        "EN-a5e5f031b6f878cf",
+        "EN-4482f5b97bed22de",
+        "EN-e9c2b868dc8f92df",
+        "EN-adda212f0afa4781",
+        "EN-373da2ec629326c0",
+        "EN-cc2ab268105df889",
+        "EN-721eb3fd31f8e1f6",
+        "EN-9cb45a27a2808c01",
+        "EN-9b6b1be41e3bc384",
+        "EN-3b6f88f87a32567e",
+        "EN-cf9488537f777c1a",
+        "EN-7f505bc9744206fd",
+        "EN-d3d151f3f8e7f9ed",
+        "EN-70e7e370d5a50ea1",
+        "EN-ed9980025e312ded",
+        "EN-6907a22fafe13a63",
+        "EN-7a814849bc288dc0",
+        "EN-dc758ebb8ad248f8",
+        "EN-86c49cd0980883a3",
+        "EN-0995103010d39563",
+        "EN-a736e4d4ef0af078",
+        "EN-8d4321d936320802",
+        "EN-085578b03da7d660",
+        "EN-8da5eafb322ee86e",
+        "EN-53453cfb48a75dde",
+        "EN-272d534804dc22a4"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-04-13",
+      "lastSeen": "2026-09-19"
     },
     {
       "id": "TX-industry-manufacturing",
@@ -1552,6 +1636,7 @@
       "typeLabel": "行业",
       "valueId": "manufacturing",
       "eventIds": [
+        "EV-412f7ce21693dc13",
         "EV-b0637e99e328479b",
         "EV-c997b93aa153720b",
         "EV-6aaa17d9c372e513",
@@ -1745,6 +1830,7 @@
         "EV-6ce6b9c9780b97d9",
         "EV-dd62847548bb6ae3",
         "EV-8993e021ac17df4a",
+        "EV-5af773d44ac066f7",
         "EV-d01032735e07be2c",
         "EV-0e9f000dd04fe04c",
         "EV-3ec034d25ba6a710",
@@ -1755,6 +1841,7 @@
         "EV-2c7d13d234147817"
       ],
       "entityIds": [
+        "EN-c5146e8a5659ab7e",
         "EN-cfec5bef40cbf3ae",
         "EN-e40403aad241b9fc",
         "EN-24dd6fa3e1cbba97",
@@ -1903,6 +1990,7 @@
         "EN-61cce404a45c3545",
         "EN-4a639cb888a15d75",
         "EN-cbc62794911ff31b",
+        "EN-ddb83bc0da573869",
         "EN-bbdefa2950f49882",
         "EN-1706429cbf67f1c9",
         "EN-c3983a4111660712",
@@ -1925,82 +2013,11 @@
         "HW-3a780bcd6e5bab6a",
         "HW-c57ff6e49b40d839",
         "HW-ceb55d9bc637c1d3",
-        "HW-cff6ff4add035b48"
+        "HW-cff6ff4add035b48",
+        "HW-ef547aa78d8d0ade"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-09-18"
-    },
-    {
-      "id": "TX-ai_market_application-chips",
-      "name": "芯片",
-      "nodeType": "ai_market_application",
-      "typeLabel": "AI 市场细分",
-      "valueId": "chips",
-      "eventIds": [
-        "EV-10b007d20ad2794e",
-        "EV-e0a31302688c81ec",
-        "EV-ae87e20ab0c5d06a",
-        "EV-012b1ccfe1d48f51",
-        "EV-2a2f79242a9479e7",
-        "EV-ef2ac2c9b425491c",
-        "EV-b116eafe60d71fbe",
-        "EV-4d2852e1694b2818",
-        "EV-7a44a47bf36780d2",
-        "EV-da1655ecfaf35feb",
-        "EV-3db9a076e3b7d4fd",
-        "EV-b9ef27cd1fd9b9a9",
-        "EV-b2d94511e4b4dfc8",
-        "EV-800384d4fd2434a5",
-        "EV-415b083fdaa8077f",
-        "EV-7abe829941f97b65",
-        "EV-4e1d2d6105d09d24",
-        "EV-a8dc5c859946f336",
-        "EV-48075ca70a5458ec",
-        "EV-040fc355bc12a750",
-        "EV-63dee9f748531f08",
-        "EV-7abd8ec418f1e7f3",
-        "EV-b3c7c4bff17063d8",
-        "EV-80e54c9a390da293",
-        "EV-ad75efcb12a07793",
-        "EV-236cbc2d64f0c455",
-        "EV-794f921515af8e8b",
-        "EV-70a994b9339f92e7",
-        "EV-59882383f82f215d",
-        "EV-fd2ff833db684e40"
-      ],
-      "entityIds": [
-        "EN-ce232f0155cad088",
-        "EN-a5e5f031b6f878cf",
-        "EN-4482f5b97bed22de",
-        "EN-e9c2b868dc8f92df",
-        "EN-adda212f0afa4781",
-        "EN-373da2ec629326c0",
-        "EN-cc2ab268105df889",
-        "EN-721eb3fd31f8e1f6",
-        "EN-9cb45a27a2808c01",
-        "EN-9b6b1be41e3bc384",
-        "EN-3b6f88f87a32567e",
-        "EN-cf9488537f777c1a",
-        "EN-7f505bc9744206fd",
-        "EN-d3d151f3f8e7f9ed",
-        "EN-70e7e370d5a50ea1",
-        "EN-ed9980025e312ded",
-        "EN-6907a22fafe13a63",
-        "EN-7a814849bc288dc0",
-        "EN-dc758ebb8ad248f8",
-        "EN-86c49cd0980883a3",
-        "EN-0995103010d39563",
-        "EN-a736e4d4ef0af078",
-        "EN-8d4321d936320802",
-        "EN-085578b03da7d660",
-        "EN-8da5eafb322ee86e",
-        "EN-53453cfb48a75dde",
-        "EN-272d534804dc22a4"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-04-13",
-      "lastSeen": "2026-09-18"
+      "lastSeen": "2026-09-19"
     },
     {
       "id": "TX-product_form-chip_accelerator",
@@ -2009,6 +2026,7 @@
       "typeLabel": "产品形态",
       "valueId": "chip_accelerator",
       "eventIds": [
+        "EV-412f7ce21693dc13",
         "EV-10b007d20ad2794e",
         "EV-e0a31302688c81ec",
         "EV-ae87e20ab0c5d06a",
@@ -2048,6 +2066,7 @@
         "EV-450f624a6a6446ce",
         "EV-fd2ff833db684e40",
         "EV-8077605769c4d4eb",
+        "EV-67804da6b04fdcc5",
         "EV-ad6c755f7cf588c4",
         "EV-81318fb4bcdb926a",
         "EV-fec0251eafea1a20",
@@ -2128,11 +2147,14 @@
         "EV-657837763764c869",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-5af773d44ac066f7",
+        "EV-884ee276b1160545",
         "EV-09029303144c5e67",
         "EV-89bdda008227fb6b",
         "EV-bca0d9aca07bcb4a"
       ],
       "entityIds": [
+        "EN-c5146e8a5659ab7e",
         "EN-ce232f0155cad088",
         "EN-a5e5f031b6f878cf",
         "EN-4482f5b97bed22de",
@@ -2168,6 +2190,7 @@
         "EN-883be863cc6562bb",
         "EN-272d534804dc22a4",
         "EN-f2b9106253663314",
+        "EN-8d02f06f05d1d64a",
         "EN-984a4161f72f4121",
         "EN-c70eca6b0f88f44d",
         "EN-b81c8201acfc7639",
@@ -2222,9 +2245,11 @@
         "EN-d5c876a36e02b120",
         "EN-cbc62794911ff31b",
         "EN-4a639cb888a15d75",
+        "EN-ddb83bc0da573869",
         "EN-070c562765b9ff05"
       ],
       "fdeIds": [
+        "FDE-e6a6ca05cf979d49",
         "FDE-98d93530f049c8a1",
         "FDE-47e3588e130d86f6",
         "FDE-0193a6afd26db7ae",
@@ -2259,11 +2284,12 @@
         "HW-59752bb17e6eab3f",
         "HW-1450585d9cd5879f",
         "HW-25ce41fab12d9ef2",
+        "HW-ef547aa78d8d0ade",
         "HW-2c1e21c6ec3cbc17",
         "HW-4c176e4c40871adc"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-18"
+      "lastSeen": "2026-09-19"
     },
     {
       "id": "TX-use_case-software_development",
@@ -2618,7 +2644,7 @@
         "HW-9a39a7f449362f96"
       ],
       "firstSeen": "2026-05-08",
-      "lastSeen": "2026-09-18"
+      "lastSeen": "2026-09-19"
     }
   ],
   "fde": [],

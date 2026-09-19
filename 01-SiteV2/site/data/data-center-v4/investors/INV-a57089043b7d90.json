@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-18T02:50:25.844Z",
-    "latestDataDate": "2026-09-18",
-    "currentDate": "2026-09-18",
-    "eventCount": 3369,
+    "generatedAt": "2026-09-19T00:31:34.791Z",
+    "latestDataDate": "2026-09-19",
+    "currentDate": "2026-09-19",
+    "eventCount": 3401,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -59,7 +59,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 6,
-    "historical_or_ambiguous_count": 9,
+    "historical_or_ambiguous_count": 10,
     "portfolio_company_count": 6,
     "market_regions": [
       "CN",
@@ -68,10 +68,10 @@
     "china_market_activity_count": 5,
     "china_market_company_count": 5,
     "first_disclosed_at": "2024-09-12",
-    "latest_disclosed_at": "2026-09-16",
+    "latest_disclosed_at": "2026-09-17",
     "role_counts": {
       "co_lead": 2,
-      "historical_or_ambiguous": 9,
+      "historical_or_ambiguous": 10,
       "participant": 4
     },
     "round_codes": [
@@ -115,6 +115,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-43be44133d835299",
+        "funding_insight_id": "FI-a7fa0f99646ce4d0",
+        "event_ids": [
+          "EV-412f7ce21693dc13"
+        ],
+        "company_entity_id": "EN-c5146e8a5659ab7e",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳地瓜机器人有限公司",
+        "round": "基础设施融资",
+        "round_code": "infrastructure",
+        "round_original": "基础设施融资",
+        "amount_original": "4亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 400000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4 亿美元"
+        },
+        "announced_at": "2026-09-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "原有投资机构继续追加投资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-517ef1b31eac6dd3",
+            "source_url": "https://finance.sina.com.cn/roll/2026-09-17/doc-iniscekc4127167.shtml",
+            "source_title": "地瓜机器人完成4亿美元C轮融资 软硬一体基础设施支撑具身智能产业落地_新浪财经_新浪网",
+            "source_content_hash": "ffc4d665dce6209d",
+            "quote": "高瓴创投、五源资本、线性资本、淡马锡旗下Vertex Growth等多家原有投资机构继续追加投资。",
+            "quote_hash": "2e695e67eb318bb202681426003226fdafc284ca308890dae2f0111b03fe308e"
+          }
+        ]
+      },
       {
         "activity_id": "IA-dc22922eaa6a4585",
         "funding_insight_id": "FI-e81dafc2defecb80",
@@ -724,6 +764,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-517ef1b31eac6dd3",
+        "source_url": "https://finance.sina.com.cn/roll/2026-09-17/doc-iniscekc4127167.shtml",
+        "source_title": "地瓜机器人完成4亿美元C轮融资 软硬一体基础设施支撑具身智能产业落地_新浪财经_新浪网",
+        "source_content_hash": "ffc4d665dce6209d",
+        "quote": "高瓴创投、五源资本、线性资本、淡马锡旗下Vertex Growth等多家原有投资机构继续追加投资。",
+        "quote_hash": "2e695e67eb318bb202681426003226fdafc284ca308890dae2f0111b03fe308e"
+      },
+      {
         "source_id": "FISRC-62ba365f86c97ef7",
         "source_url": "https://news.pedaily.cn/202609/569118.shtml",
         "source_title": "首发| Anew Labs已完成2.9 亿美元融资，红杉中国、高瓴、IDG - 投资界",
@@ -846,7 +894,7 @@
     ],
     "translations": {
       "zh-CN": {
-        "activities[13].role": {
+        "activities[14].role": {
           "text": "Pre-A轮领投",
           "source_hash": "c61fa44ebf092b66526cb4a8de607b70e57d3e5006aa179d3a2b39fd8925f719",
           "provider": "deepseek",
@@ -854,7 +902,7 @@
           "translated_at": "2026-08-14T07:17:18.959Z",
           "status": "translated"
         },
-        "activities[14].role": {
+        "activities[15].role": {
           "text": "Pre-B轮领投",
           "source_hash": "aebf442c5143e180f2950bcaa72a692c16eb3617aebf8ba3bb3eb5171f29e2d6",
           "provider": "deepseek",

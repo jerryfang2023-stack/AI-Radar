@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-18T02:50:25.844Z",
-    "latestDataDate": "2026-09-18",
-    "currentDate": "2026-09-18",
-    "eventCount": 3369,
+    "generatedAt": "2026-09-19T00:31:34.791Z",
+    "latestDataDate": "2026-09-19",
+    "currentDate": "2026-09-19",
+    "eventCount": 3401,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -64,9 +64,9 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [
-      "TX-target_user-public_sector_user",
       "TX-product_form-compute_cloud_service",
-      "TX-product_form-chip_accelerator"
+      "TX-product_form-chip_accelerator",
+      "TX-target_user-public_sector_user"
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-02",
@@ -141,58 +141,13 @@
   "relationships": [],
   "taxonomyNodes": [
     {
-      "id": "TX-target_user-public_sector_user",
-      "name": "公共部门用户",
-      "nodeType": "target_user",
-      "typeLabel": "目标用户",
-      "valueId": "public_sector_user",
-      "eventIds": [
-        "EV-1d9cf73bba2debcc",
-        "EV-03bc82f6d6c169d7",
-        "EV-259566f35ea4f66d",
-        "EV-60f219702a66bf38",
-        "EV-82e77abb1a77f81c",
-        "EV-ceb23160ad25e497",
-        "EV-9486e14e99499e3b",
-        "EV-ef7346378fcf9746",
-        "EV-e0ecb5f81a273447",
-        "EV-3b817460afe0d3a6",
-        "EV-6329f290aecc84da",
-        "EV-d535e126615182f0",
-        "EV-a3ba586cbc57b5fd",
-        "EV-843f0807558b3d10",
-        "EV-a86b04e679044c45"
-      ],
-      "entityIds": [
-        "EN-9b7dfbc73b12c8b9",
-        "EN-48b85dc3fd54f74d",
-        "EN-607a596a603dd679",
-        "EN-6861f63c27eb0ada",
-        "EN-92dd63c8e5c77e8a",
-        "EN-6ea730515425a60f",
-        "EN-05f6ecf01ac4ebec",
-        "EN-e78bdebae031095b",
-        "EN-afff1ef2d34b618e",
-        "EN-94f3cca8dd7fa0ff",
-        "EN-376967c5f350003c",
-        "EN-7035f6607ad2d162",
-        "EN-ad691fd49d3307e8",
-        "EN-7640da40298286a6"
-      ],
-      "fdeIds": [
-        "FDE-5ea7f3d69a03d417"
-      ],
-      "hardwareIds": [],
-      "firstSeen": "2026-01-12",
-      "lastSeen": "2026-09-18"
-    },
-    {
       "id": "TX-product_form-compute_cloud_service",
       "name": "算力云服务",
       "nodeType": "product_form",
       "typeLabel": "产品形态",
       "valueId": "compute_cloud_service",
       "eventIds": [
+        "EV-40d4ce6d936d4d49",
         "EV-26a5749d8604455a",
         "EV-181cd28d97c4e61d",
         "EV-2dea56b0e97c1685",
@@ -254,7 +209,7 @@
         "HW-9a39a7f449362f96"
       ],
       "firstSeen": "2026-04-30",
-      "lastSeen": "2026-09-18"
+      "lastSeen": "2026-09-19"
     },
     {
       "id": "TX-product_form-chip_accelerator",
@@ -263,6 +218,7 @@
       "typeLabel": "产品形态",
       "valueId": "chip_accelerator",
       "eventIds": [
+        "EV-412f7ce21693dc13",
         "EV-10b007d20ad2794e",
         "EV-e0a31302688c81ec",
         "EV-ae87e20ab0c5d06a",
@@ -302,6 +258,7 @@
         "EV-450f624a6a6446ce",
         "EV-fd2ff833db684e40",
         "EV-8077605769c4d4eb",
+        "EV-67804da6b04fdcc5",
         "EV-ad6c755f7cf588c4",
         "EV-81318fb4bcdb926a",
         "EV-fec0251eafea1a20",
@@ -382,11 +339,14 @@
         "EV-657837763764c869",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-5af773d44ac066f7",
+        "EV-884ee276b1160545",
         "EV-09029303144c5e67",
         "EV-89bdda008227fb6b",
         "EV-bca0d9aca07bcb4a"
       ],
       "entityIds": [
+        "EN-c5146e8a5659ab7e",
         "EN-ce232f0155cad088",
         "EN-a5e5f031b6f878cf",
         "EN-4482f5b97bed22de",
@@ -422,6 +382,7 @@
         "EN-883be863cc6562bb",
         "EN-272d534804dc22a4",
         "EN-f2b9106253663314",
+        "EN-8d02f06f05d1d64a",
         "EN-984a4161f72f4121",
         "EN-c70eca6b0f88f44d",
         "EN-b81c8201acfc7639",
@@ -476,9 +437,11 @@
         "EN-d5c876a36e02b120",
         "EN-cbc62794911ff31b",
         "EN-4a639cb888a15d75",
+        "EN-ddb83bc0da573869",
         "EN-070c562765b9ff05"
       ],
       "fdeIds": [
+        "FDE-e6a6ca05cf979d49",
         "FDE-98d93530f049c8a1",
         "FDE-47e3588e130d86f6",
         "FDE-0193a6afd26db7ae",
@@ -513,10 +476,57 @@
         "HW-59752bb17e6eab3f",
         "HW-1450585d9cd5879f",
         "HW-25ce41fab12d9ef2",
+        "HW-ef547aa78d8d0ade",
         "HW-2c1e21c6ec3cbc17",
         "HW-4c176e4c40871adc"
       ],
       "firstSeen": "2025-03-18",
+      "lastSeen": "2026-09-19"
+    },
+    {
+      "id": "TX-target_user-public_sector_user",
+      "name": "公共部门用户",
+      "nodeType": "target_user",
+      "typeLabel": "目标用户",
+      "valueId": "public_sector_user",
+      "eventIds": [
+        "EV-1d9cf73bba2debcc",
+        "EV-03bc82f6d6c169d7",
+        "EV-259566f35ea4f66d",
+        "EV-60f219702a66bf38",
+        "EV-82e77abb1a77f81c",
+        "EV-ceb23160ad25e497",
+        "EV-9486e14e99499e3b",
+        "EV-ef7346378fcf9746",
+        "EV-e0ecb5f81a273447",
+        "EV-3b817460afe0d3a6",
+        "EV-6329f290aecc84da",
+        "EV-d535e126615182f0",
+        "EV-a3ba586cbc57b5fd",
+        "EV-843f0807558b3d10",
+        "EV-a86b04e679044c45"
+      ],
+      "entityIds": [
+        "EN-9b7dfbc73b12c8b9",
+        "EN-48b85dc3fd54f74d",
+        "EN-607a596a603dd679",
+        "EN-6861f63c27eb0ada",
+        "EN-92dd63c8e5c77e8a",
+        "EN-6ea730515425a60f",
+        "EN-05f6ecf01ac4ebec",
+        "EN-e78bdebae031095b",
+        "EN-afff1ef2d34b618e",
+        "EN-94f3cca8dd7fa0ff",
+        "EN-376967c5f350003c",
+        "EN-7035f6607ad2d162",
+        "EN-ad691fd49d3307e8",
+        "EN-7640da40298286a6"
+      ],
+      "fdeIds": [
+        "FDE-5ea7f3d69a03d417"
+      ],
+      "hardwareIds": [],
+      "firstSeen": "2026-01-12",
       "lastSeen": "2026-09-18"
     }
   ],

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-18T02:50:25.844Z",
-    "latestDataDate": "2026-09-18",
-    "currentDate": "2026-09-18",
-    "eventCount": 3369,
+    "generatedAt": "2026-09-19T00:31:34.791Z",
+    "latestDataDate": "2026-09-19",
+    "currentDate": "2026-09-19",
+    "eventCount": 3401,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -60,6 +60,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-40d4ce6d936d4d49",
       "EV-26a5749d8604455a",
       "EV-f2c93c155070cd35",
       "EV-1e6f73c188a9e946",
@@ -80,12 +81,13 @@
       "EN-10556ee2cee94c72"
     ],
     "firstSeen": "2026-07-07",
-    "lastSeen": "2026-09-18",
+    "lastSeen": "2026-09-19",
     "relationIds": [
       "REL2-0290625c26082cef"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-40d4ce6d936d4d49",
         "EV-26a5749d8604455a",
         "EV-f2c93c155070cd35"
       ],
@@ -101,6 +103,85 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-40d4ce6d936d4d49",
+        "dataDate": "2026-09-19",
+        "date": "2026-09-18",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "中东战争与利率上升威胁 AI 基建融资，Meta Muse 冲击 Instinct",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-d41ebd9f02722fc8"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-bd2e97b56994f621",
+            "fundingInsightId": "FI-43591d77714fd601"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "hardware_computing",
+            "name": "硬件与算力",
+            "entityIds": [
+              "EN-d41ebd9f02722fc8"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-5abf3c1b5b575bff",
+            "fundingInsightId": "FI-43591d77714fd601"
+          },
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "computing_infrastructure",
+            "name": "计算基础设施",
+            "entityIds": [
+              "EN-d41ebd9f02722fc8"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-14c7fb99fbc5fedd",
+            "fundingInsightId": "FI-43591d77714fd601"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "compute_cloud_service",
+            "name": "算力云服务",
+            "entityIds": [
+              "EN-d41ebd9f02722fc8"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-c3e126e728f34185",
+            "fundingInsightId": "FI-43591d77714fd601"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-d41ebd9f02722fc8"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-c4fd3806a491d116",
+            "fundingInsightId": "FI-43591d77714fd601"
+          }
+        ],
+        "entityIds": [
+          "EN-d41ebd9f02722fc8",
+          "EN-02dec79659b6a089",
+          "EN-2e5358bdb85c4666",
+          "EN-ea3bd73e2b506e00"
+        ]
+      },
       {
         "id": "EV-26a5749d8604455a",
         "dataDate": "2026-09-18",
@@ -323,6 +404,7 @@
       "typeLabel": "AI 市场细分",
       "valueId": "computing_infrastructure",
       "eventIds": [
+        "EV-40d4ce6d936d4d49",
         "EV-26a5749d8604455a",
         "EV-4238c51fcdad7bd4",
         "EV-37cc66ca2e29a78c",
@@ -383,7 +465,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-01-06",
-      "lastSeen": "2026-09-18"
+      "lastSeen": "2026-09-19"
     },
     {
       "id": "TX-ai_market_category-infrastructure_compute",
@@ -392,6 +474,8 @@
       "typeLabel": "AI 市场类别",
       "valueId": "infrastructure_compute",
       "eventIds": [
+        "EV-40d4ce6d936d4d49",
+        "EV-412f7ce21693dc13",
         "EV-26a5749d8604455a",
         "EV-4238c51fcdad7bd4",
         "EV-b137470f59491f6a",
@@ -615,6 +699,7 @@
       ],
       "entityIds": [
         "EN-d41ebd9f02722fc8",
+        "EN-c5146e8a5659ab7e",
         "EN-4149d125ad47155a",
         "EN-619245256126c075",
         "EN-caffca3284100caa",
@@ -803,7 +888,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-01-06",
-      "lastSeen": "2026-09-18"
+      "lastSeen": "2026-09-19"
     },
     {
       "id": "TX-ai_market_subcategory-hardware_computing",
@@ -812,6 +897,8 @@
       "typeLabel": "AI 市场子类",
       "valueId": "hardware_computing",
       "eventIds": [
+        "EV-40d4ce6d936d4d49",
+        "EV-412f7ce21693dc13",
         "EV-26a5749d8604455a",
         "EV-4238c51fcdad7bd4",
         "EV-37cc66ca2e29a78c",
@@ -873,6 +960,7 @@
       ],
       "entityIds": [
         "EN-d41ebd9f02722fc8",
+        "EN-c5146e8a5659ab7e",
         "EN-4149d125ad47155a",
         "EN-caffca3284100caa",
         "EN-ce232f0155cad088",
@@ -927,7 +1015,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-01-06",
-      "lastSeen": "2026-09-18"
+      "lastSeen": "2026-09-19"
     },
     {
       "id": "TX-product_form-compute_cloud_service",
@@ -936,6 +1024,7 @@
       "typeLabel": "产品形态",
       "valueId": "compute_cloud_service",
       "eventIds": [
+        "EV-40d4ce6d936d4d49",
         "EV-26a5749d8604455a",
         "EV-181cd28d97c4e61d",
         "EV-2dea56b0e97c1685",
@@ -997,7 +1086,7 @@
         "HW-9a39a7f449362f96"
       ],
       "firstSeen": "2026-04-30",
-      "lastSeen": "2026-09-18"
+      "lastSeen": "2026-09-19"
     },
     {
       "id": "TX-target_user-developer",
@@ -1006,6 +1095,8 @@
       "typeLabel": "目标用户",
       "valueId": "developer",
       "eventIds": [
+        "EV-40d4ce6d936d4d49",
+        "EV-412f7ce21693dc13",
         "EV-26a5749d8604455a",
         "EV-b0637e99e328479b",
         "EV-c96705c69e11c520",
@@ -1267,6 +1358,7 @@
       ],
       "entityIds": [
         "EN-d41ebd9f02722fc8",
+        "EN-c5146e8a5659ab7e",
         "EN-cfec5bef40cbf3ae",
         "EN-bc06be2cba2b2f2c",
         "EN-4149d125ad47155a",
@@ -1488,7 +1580,7 @@
         "HW-f05a371d8e0599b0"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-09-18"
+      "lastSeen": "2026-09-19"
     },
     {
       "id": "TX-industry-manufacturing",
@@ -1497,6 +1589,7 @@
       "typeLabel": "行业",
       "valueId": "manufacturing",
       "eventIds": [
+        "EV-412f7ce21693dc13",
         "EV-b0637e99e328479b",
         "EV-c997b93aa153720b",
         "EV-6aaa17d9c372e513",
@@ -1690,6 +1783,7 @@
         "EV-6ce6b9c9780b97d9",
         "EV-dd62847548bb6ae3",
         "EV-8993e021ac17df4a",
+        "EV-5af773d44ac066f7",
         "EV-d01032735e07be2c",
         "EV-0e9f000dd04fe04c",
         "EV-3ec034d25ba6a710",
@@ -1700,6 +1794,7 @@
         "EV-2c7d13d234147817"
       ],
       "entityIds": [
+        "EN-c5146e8a5659ab7e",
         "EN-cfec5bef40cbf3ae",
         "EN-e40403aad241b9fc",
         "EN-24dd6fa3e1cbba97",
@@ -1848,6 +1943,7 @@
         "EN-61cce404a45c3545",
         "EN-4a639cb888a15d75",
         "EN-cbc62794911ff31b",
+        "EN-ddb83bc0da573869",
         "EN-bbdefa2950f49882",
         "EN-1706429cbf67f1c9",
         "EN-c3983a4111660712",
@@ -1870,10 +1966,11 @@
         "HW-3a780bcd6e5bab6a",
         "HW-c57ff6e49b40d839",
         "HW-ceb55d9bc637c1d3",
-        "HW-cff6ff4add035b48"
+        "HW-cff6ff4add035b48",
+        "HW-ef547aa78d8d0ade"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-09-18"
+      "lastSeen": "2026-09-19"
     },
     {
       "id": "TX-technology-open_weights",

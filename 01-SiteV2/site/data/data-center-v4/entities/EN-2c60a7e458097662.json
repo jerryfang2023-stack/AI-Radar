@@ -1,0 +1,240 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-19T00:31:34.791Z",
+    "latestDataDate": "2026-09-19",
+    "currentDate": "2026-09-19",
+    "eventCount": 3401,
+    "quarantinedEventCount": 36,
+    "quarantinedEventIds": [
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-cab18aa68c8ae551",
+      "EV-88a9fd0b8f602e16",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "entity": {
+    "id": "EN-2c60a7e458097662",
+    "name": "Ternary Bonsai 2",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-eff92e59afe2e412"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-19",
+    "lastSeen": "2026-09-19",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-eff92e59afe2e412"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-eff92e59afe2e412",
+        "dataDate": "2026-09-19",
+        "date": "2026-09-19",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "PrismML 发布 Ternary Bonsai 2 27B：5.93 GB 三值权重模型保留 Qwen3.8 27B 98.2% 的性能",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "computer_use",
+            "name": "计算机操作",
+            "entityIds": [
+              "EN-95b0632f1b292fa7"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-95b0632f1b292fa7",
+          "EN-0f553f48551aef83",
+          "EN-e292acf6eb58039d",
+          "EN-2c60a7e458097662"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-988111196840f624",
+      "snapshotKey": "988111196840f624",
+      "snapshotId": "HWS-7b34722055457589",
+      "eventId": "EV-eff92e59afe2e412",
+      "eventIds": [
+        "EV-eff92e59afe2e412"
+      ],
+      "dataDate": "2026-09-19",
+      "date": "2026-09-19",
+      "title": "Qwen3.8 / 27B 98.2 / Ternary Bonsai 2",
+      "subject": "PrismML",
+      "productNames": [
+        "Qwen3.8",
+        "27B 98.2",
+        "Ternary Bonsai 2"
+      ],
+      "hardwareType": "ai_device / gpu",
+      "factTypes": [
+        "specification"
+      ],
+      "latestValues": {
+        "specification": {
+          "metric_value": "16",
+          "unit": "GB",
+          "fact_ref": "HWF-1b2580a814b0ebe8"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-19",
+          "hardware_fact_id": "HWF-a6eba2f6bfe4ce4c",
+          "fact_type": "specification",
+          "observed_at": "2026-09-18T18:06:36.000Z",
+          "subject_entity_id": "EN-95b0632f1b292fa7",
+          "subject_name": "PrismML",
+          "product_entity_ids": [
+            "EN-0f553f48551aef83",
+            "EN-e292acf6eb58039d",
+            "EN-2c60a7e458097662"
+          ],
+          "product_names": [
+            "Qwen3.8",
+            "27B 98.2",
+            "Ternary Bonsai 2"
+          ],
+          "component_type": "ai_device",
+          "metric_value": "5.93",
+          "unit": "GB",
+          "source_quote": "PrismML has released Ternary Bonsai 2 27B , a ternary-weight version of Qwen3.8 27B . The language model occupies 5.93 GB, against 53.80 GB in FP16. PrismML reports that it keeps 98.2% of the parent model’s average across 20 benchmarks. The model accepts text and images and supports a 262K-token context. PrismML demos it driving Cline coding agents and computer use on an RTX 5090. It arrives 2 months after the first Bonsai 27B , whose ternary variant retained about 95%.",
+          "event_refs": [
+            "EV-eff92e59afe2e412"
+          ],
+          "claim_ref": "CL-7b33369c79df07cf",
+          "source_refs": [
+            "SA-01c730d1074dde62"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-19/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-09-19",
+          "hardware_fact_id": "HWF-1b2580a814b0ebe8",
+          "fact_type": "specification",
+          "observed_at": "2026-09-18T18:06:36.000Z",
+          "subject_entity_id": "EN-95b0632f1b292fa7",
+          "subject_name": "PrismML",
+          "product_entity_ids": [
+            "EN-0f553f48551aef83",
+            "EN-e292acf6eb58039d",
+            "EN-2c60a7e458097662"
+          ],
+          "product_names": [
+            "Qwen3.8",
+            "27B 98.2",
+            "Ternary Bonsai 2"
+          ],
+          "component_type": "gpu",
+          "metric_value": "16",
+          "unit": "GB",
+          "source_quote": "Yes. The Apache 2.0 weights run today on a 16 GB laptop or a single 24 GB GPU. You need PrismML’s llama.cpp fork or its MLX runtime.",
+          "event_refs": [
+            "EV-eff92e59afe2e412"
+          ],
+          "claim_ref": "CL-4e1e5f63aad5ae10",
+          "source_refs": [
+            "SA-01c730d1074dde62"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-19/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "computer_use",
+          "name": "计算机操作",
+          "entityIds": [
+            "EN-95b0632f1b292fa7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/09/18/prismml-releases-ternary-bonsai-2-27b-a-5-9-gb-apache-2-0-model-retaining-98-2-of-qwen3-8-27b-performance",
+      "entityIds": [
+        "EN-95b0632f1b292fa7",
+        "EN-0f553f48551aef83",
+        "EN-e292acf6eb58039d",
+        "EN-2c60a7e458097662"
+      ]
+    }
+  ]
+}

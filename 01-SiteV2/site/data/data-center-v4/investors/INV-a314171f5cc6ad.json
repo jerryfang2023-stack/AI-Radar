@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-19T00:31:34.791Z",
+    "latestDataDate": "2026-09-19",
+    "currentDate": "2026-09-19",
+    "eventCount": 3401,
+    "quarantinedEventCount": 36,
+    "quarantinedEventIds": [
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-cab18aa68c8ae551",
+      "EV-88a9fd0b8f602e16",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "institution": {
+    "id": "INV-a314171f5cc6ad",
+    "name": "Silversmith Capital Partners",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "GLOBAL"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-09-18",
+    "latest_disclosed_at": "2026-09-18",
+    "role_counts": {
+      "lead": 1
+    },
+    "round_codes": [
+      "growth"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-4bb042ef8e3060a4",
+        "canonical_entity_id": "",
+        "name": "Vantora"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-838543acf381c88f",
+        "funding_insight_id": "FI-77070979135324dc",
+        "event_ids": [
+          "EV-f077c91cb2fd9179"
+        ],
+        "company_entity_id": "EN-4bb042ef8e3060a4",
+        "company_canonical_entity_id": "",
+        "company_name": "Vantora",
+        "round": "成长轮",
+        "round_code": "growth",
+        "round_original": "Growth investment",
+        "amount_original": "$100 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1 亿美元"
+        },
+        "announced_at": "2026-09-18",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-415291b734cbb8a6",
+            "source_url": "https://techcrunch.com/2026/09/18/a-startup-that-builds-other-startups-raised-100m-and-is-all-in-on-physical-ai",
+            "source_title": "为企业孵化创业项目的 Vantora 获 1 亿美元投资，全面转向物理 AI",
+            "source_content_hash": "97b97e7fd4240190",
+            "quote": "a $100 million investment from Silversmith Capital Partners",
+            "quote_hash": "1dd1cf566b59dd67b4a4cb9b681a965a07b141b3fdd0a55c35cfa3f103af7537"
+          },
+          {
+            "source_id": "FISRC-03e0e6a10c8bd9e6",
+            "source_url": "https://www.silversmith.com/news/vantora-secures-more-than-100-million-from-silversmith-capital-partners",
+            "source_title": "Vantora Secures More Than $100 Million From Silversmith Capital Partners to Build AI-Native Operating Companies Inside Industrial Enterprises",
+            "source_content_hash": "82f723e9faf50613",
+            "quote": "Vantora (formerly UP.Labs) today announced more than $100 million in growth investment from Silversmith Capital Partners.",
+            "quote_hash": "e431380e268980496bfa89f9e9c33df3762fde5762668d9584bfed662e2c466e"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-415291b734cbb8a6",
+        "source_url": "https://techcrunch.com/2026/09/18/a-startup-that-builds-other-startups-raised-100m-and-is-all-in-on-physical-ai",
+        "source_title": "为企业孵化创业项目的 Vantora 获 1 亿美元投资，全面转向物理 AI",
+        "source_content_hash": "97b97e7fd4240190",
+        "quote": "a $100 million investment from Silversmith Capital Partners",
+        "quote_hash": "1dd1cf566b59dd67b4a4cb9b681a965a07b141b3fdd0a55c35cfa3f103af7537"
+      },
+      {
+        "source_id": "FISRC-03e0e6a10c8bd9e6",
+        "source_url": "https://www.silversmith.com/news/vantora-secures-more-than-100-million-from-silversmith-capital-partners",
+        "source_title": "Vantora Secures More Than $100 Million From Silversmith Capital Partners to Build AI-Native Operating Companies Inside Industrial Enterprises",
+        "source_content_hash": "82f723e9faf50613",
+        "quote": "Vantora (formerly UP.Labs) today announced more than $100 million in growth investment from Silversmith Capital Partners.",
+        "quote_hash": "e431380e268980496bfa89f9e9c33df3762fde5762668d9584bfed662e2c466e"
+      }
+    ]
+  }
+}
