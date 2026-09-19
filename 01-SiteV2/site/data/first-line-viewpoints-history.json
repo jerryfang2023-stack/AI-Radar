@@ -1,24 +1,24 @@
 {
   "meta": {
-    "generatedAt": "2026-09-18T00:34:39.892Z",
+    "generatedAt": "2026-09-19T00:36:59.281Z",
     "sourceFile": "01-SiteV2/site/data/follow-builders-daily.json",
-    "sourceCommits": 153,
-    "sourceSnapshots": 154,
+    "sourceCommits": 154,
+    "sourceSnapshots": 155,
     "earliestDate": "2026-06-01",
-    "latestDate": "2026-09-17",
+    "latestDate": "2026-09-18",
     "dedupeKey": "original_url",
     "sourcePolicy": "Historical records are reconstructed from committed morning-lane snapshots and retain their original URL and source snapshot.",
     "translationPolicy": "Only complete approved Chinese translations with matching source hashes are published."
   },
   "stats": {
-    "discovered": 2812,
-    "aiRelevant": 1562,
-    "alreadyApproved": 750,
+    "discovered": 2835,
+    "aiRelevant": 1576,
+    "alreadyApproved": 762,
     "translatedThisRun": 0,
-    "pendingTranslation": 812,
-    "published": 1347,
+    "pendingTranslation": 814,
+    "published": 1359,
     "pendingReasons": {
-      "translation_gate_failed": 153,
+      "translation_gate_failed": 155,
       "mymemory": 634,
       "static_blog_title": 14,
       "none": 4,
@@ -26,6 +26,534 @@
     }
   },
   "remarks": [
+    {
+      "id": "https://tldr.tech/ai/2026-09-18",
+      "source": "blog",
+      "name": "TLDR AI Newsletter",
+      "handle": "tldr.tech",
+      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
+      "text": "Claude Projects v2 💼, Google family agent 👨‍👩‍👧‍👦,",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "Claude Projects v2 💼，Google 家庭智能体 👨‍👩‍👧‍👦，",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "ebd05dc334ecd46d",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "Fri, 18 Sep 2026 00:00:00 GMT",
+      "date": "2026-09-18",
+      "url": "https://tldr.tech/ai/2026-09-18",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2100718806004064730",
+      "source": "x",
+      "name": "Nikunj Kothari",
+      "handle": "nikunj",
+      "role": "partner fpvventures - investing in seed/A. previous: early hire meter, opendoor, atlassian & others. love shimoleejhaveri + 👦👧",
+      "text": "Website here: https://t.co/KSiodPdZHT PS: There's a full blown MCP (and WebMCP) for this as well if you want to direct your agent towards it. https://t.co/eo0oIkJUX2",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "网站在这里：https://t.co/KSiodPdZHT 附注：如果你想引导你的代理使用它，这里还有一个完整的MCP（以及WebMCP）。https://t.co/eo0oIkJUX2",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "72a118a8530c854c",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-09-17T22:49:27.000Z",
+      "date": "2026-09-18",
+      "url": "https://x.com/nikunj/status/2100718806004064730",
+      "likes": 4,
+      "retweets": 0,
+      "replies": 1,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2100714665571737885",
+      "source": "x",
+      "name": "Nikunj Kothari",
+      "handle": "nikunj",
+      "role": "partner fpvventures - investing in seed/A. previous: early hire meter, opendoor, atlassian & others. love shimoleejhaveri + 👦👧",
+      "text": "I have been obsessed with self driving companies for more than a year now.. tried a LOT of products, none of them met the bar and decided to just build one myself with \"claude\" in the loop. Introducing my first experiment: nosugarforkids (dot com) 🙅‍♂️ > catalog of only healthy snacks for kids (surprisingly this didn't exist) > you can chat to get recommendations for school, lunches, snack boxes > built a \"tier\" list based on the nutrients and what's actually good On the autonomous side, I have a Claude agent that wakes up once a day to do the following things: > checks catalog for new additions > prunes any products that may be dead > finds new content ideas to help increase reach > checks dataforSEO and Google Search Console for performance > writes and edits new pieces that might be useful to help > keeps quality high, and tries to not introduce slop > (new) reaches out to publications to get backlinks Even with ZERO backlinks today and no social presence whatsoever, site has organically grown to ~6k impressions a day and 60 clicks. Lots of rough edges still, but parents give it a try and tell me if it's helpful!",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "我痴迷自动驾驶公司已经一年多了……试过很多产品，没有一个达到标准，于是决定自己动手做一个，并把“claude”纳入流程中。介绍我的第一个实验：nosugarforkids (dot com) 🙅‍♂️ > 只收录儿童健康零食的目录（令人惊讶的是，这种东西以前并不存在） > 你可以通过聊天获取针对学校、午餐、零食盒的推荐 > 根据营养成分和真正有益的东西建立了一个“等级”列表 在自主运行方面，我有一个 Claude 智能体，每天醒来一次，执行以下任务： > 检查目录中是否有新增内容 > 清理任何可能已失效的产品 > 寻找新的内容创意，帮助扩大覆盖面 > 检查 dataforSEO 和 Google Search Console 的表现 > 撰写和编辑可能有帮助的新内容 > 保持高质量，并尽量避免引入垃圾内容 > （新增）联系出版物以获取反向链接 即使今天反向链接为零，也完全没有社交存在感，网站已经自然增长到每天约 6k 次展示和 60 次点击。仍然有很多粗糙之处，但家长们可以试试看，并告诉我它是否有帮助！",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-pro",
+      "translationSourceHash": "9c4dd51fbbc4f4bd",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-09-17T22:33:00.000Z",
+      "date": "2026-09-18",
+      "url": "https://x.com/nikunj/status/2100714665571737885",
+      "likes": 69,
+      "retweets": 1,
+      "replies": 20,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2100682030170489160",
+      "source": "x",
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "role": "vercel CEO",
+      "text": "This is really cool. When you pressure your agent to ship a hotfix really fast, it can now 𝚟𝚎𝚛𝚌𝚎𝚕 --𝚝𝚞𝚛𝚋𝚘 --𝚙𝚛𝚘𝚍 😊 It'll use the fastest available build machine. h/t @garberchov for tweeting this idea to us https://t.co/iLXPsP2m3R",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "这真的很酷。当你催促你的代理快速发布一个热修复时，它现在可以𝚟𝚎𝚛𝚌𝚎𝚕 --𝚝𝚞𝚛𝚋𝚘 --𝚙𝚛𝚘 😊 它会使用最快的可用构建机器。感谢 @garberchov 把这个想法推给我们 https://t.co/iLXPsP2m3R",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "03fda8ef37716187",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-09-17T20:23:19.000Z",
+      "date": "2026-09-18",
+      "url": "https://x.com/rauchg/status/2100682030170489160",
+      "likes": 79,
+      "retweets": 2,
+      "replies": 18,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2100669598995816511",
+      "source": "x",
+      "name": "Boris Cherny",
+      "handle": "bcherny",
+      "role": "Claude Code anthropicai",
+      "text": "Projects have changed not only how I interact with Claude but how I code. I stopped managing sessions. I just send thoughts as they come, Claude splits them into threads, and the project remembers how I work. It's where I do a ton of my coding now. [screenshot: my actual prompts for claude code cli yesterday]",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "项目不仅改变了我与 Claude 的交互方式，也改变了我的编码方式。我不再管理会话了。我只是随时把想法发出去，Claude 会把它们拆分成不同的线程，而项目会记住我的工作方式。现在我的大量编码都是在这里完成的。[截图：我昨天为 claude code cli 写的实际提示词]",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "657c332bc3ebaaa8",
+      "topic": "AI 编程",
+      "columnTags": [
+        {
+          "id": "opinion-ai-coding",
+          "name": "AI Coding 观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-coding",
+          "name": "AI Coding",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 AI 编程工具、设计到代码流程和软件生产方式的变化；需要结合产品发布或文档再做事实判断。",
+      "createdAt": "2026-09-17T19:33:55.000Z",
+      "date": "2026-09-18",
+      "url": "https://x.com/bcherny/status/2100669598995816511",
+      "likes": 2352,
+      "retweets": 85,
+      "replies": 211,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2100668489178456268",
+      "source": "x",
+      "name": "Garry Tan",
+      "handle": "garrytan",
+      "role": "President & CEO ycombinator —Founder garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
+      "text": "Memorable found a way to optimize memory with embeddings instead of more tokens which is a powerful new way to do memory https://t.co/Y8wowo41WF",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "Memorable找到了一种通过嵌入而非更多token来优化记忆的方法，这是一种强大的全新记忆方式 https://t.co/Y8wowo41WF",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "7b07bf01fcb8f9eb",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-17T19:29:31.000Z",
+      "date": "2026-09-18",
+      "url": "https://x.com/garrytan/status/2100668489178456268",
+      "likes": 477,
+      "retweets": 20,
+      "replies": 32,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2100645454245720513",
+      "source": "x",
+      "name": "Thibault Sottiaux",
+      "handle": "thsottiaux",
+      "role": "Codex & ChatGPT OpenAI",
+      "text": "Has anyone yet tried to get Astra and Fable to agree on the perfect styleguide? And then host it somewhere with a web mcp.",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "有没有人试过让Astra和Fable就完美的样式指南达成一致？然后把它托管在某个带有web mcp的地方。",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "d8c2dd3058f41d2f",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-17T17:57:59.000Z",
+      "date": "2026-09-18",
+      "url": "https://x.com/thsottiaux/status/2100645454245720513",
+      "likes": 5524,
+      "retweets": 88,
+      "replies": 1800,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2100641163120423057",
+      "source": "x",
+      "name": "Cat Wu",
+      "handle": "_catwu",
+      "role": "claude code + cowork anthropicai, prev: dagster, scale_ai",
+      "text": "In the new Projects experience, Claude coordinates all of your sessions. I've been using it every day since it lets me operate at a higher level of abstraction. I fire off a batch of tasks and move on. Claude has context on everything I'm working on and can give me an aggregated status update whenever I ask. It also has long-lived memory that evolves as I use it. We're rolling this out over the coming weeks. Let me know what you think!",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "在新的 Projects 体验中，Claude 协调你的所有会话。我每天都在使用它，因为它让我能够在更高的抽象层次上运作。我发出一批任务，然后继续做别的事。Claude 掌握我正在处理的一切上下文，并且无论我何时询问，都能给我一份汇总的状态更新。它还具有随着我使用而不断演进的长期记忆。我们将在未来几周内逐步推出这一功能。告诉我你的想法！",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "221089ee0204d344",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-17T17:40:55.000Z",
+      "date": "2026-09-18",
+      "url": "https://x.com/_catwu/status/2100641163120423057",
+      "likes": 356,
+      "retweets": 10,
+      "replies": 41,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2100639991244427490",
+      "source": "x",
+      "name": "Boris Cherny",
+      "handle": "bcherny",
+      "role": "Claude Code anthropicai",
+      "text": "Projects are how I write a lot of my code these days. Really excited for everyone to try the new experience! Rolling out now https://t.co/bpaufmEweL",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "如今我写很多代码都是通过项目来完成的。非常期待大家体验这一全新功能！现已开始推送 https://t.co/bpaufmEweL",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "176de3ec1e30d7a6",
+      "topic": "AI 编程",
+      "columnTags": [
+        {
+          "id": "opinion-ai-coding",
+          "name": "AI Coding 观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-coding",
+          "name": "AI Coding",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 AI 编程工具、设计到代码流程和软件生产方式的变化；需要结合产品发布或文档再做事实判断。",
+      "createdAt": "2026-09-17T17:36:16.000Z",
+      "date": "2026-09-18",
+      "url": "https://x.com/bcherny/status/2100639991244427490",
+      "likes": 1926,
+      "retweets": 50,
+      "replies": 136,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2100638355872706571",
+      "source": "x",
+      "name": "Thariq",
+      "handle": "trq212",
+      "role": "Claude Code anthropicai. prev YC W20, spc, medialab",
+      "text": "Projects brings the architecture of Claude Tag to Claude Code. It has one agent per project that manages memory and spins off subagents for tasks. You can ask it to be proactive, to do things on a schedule, etc. It feels a lot nicer than a bunch of sessions, try it out! https://t.co/qzyEgLUyN4",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "Projects 将 Claude Tag 的架构引入 Claude Code。每个项目有一个 agent 负责管理记忆，并为各项任务衍生子 agent。你可以让它主动行事、按计划执行任务等。它比一堆会话用起来舒服多了，试试看！https://t.co/qzyEgLUyN4",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "8e2610d41a358eef",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-09-17T17:29:46.000Z",
+      "date": "2026-09-18",
+      "url": "https://x.com/trq212/status/2100638355872706571",
+      "likes": 1041,
+      "retweets": 51,
+      "replies": 115,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2100632688625348890",
+      "source": "x",
+      "name": "Claude",
+      "handle": "claudeai",
+      "role": "Claude is an AI assistant built by anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app.",
+      "text": "Existing projects on Pro and Max plans keep working as they do today. We'll upgrade them as the rollout expands across Claude. Read more: https://t.co/veHKrtOLtr Join the waitlist for earlier access: https://t.co/s0RrhrolEm",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "Pro和Max计划上的现有项目将照常运行。随着推广范围扩展到Claude，我们会对其进行升级。了解更多：https://t.co/veHKrtOLtr 加入等候名单以获取更早访问权限：https://t.co/s0RrhrolEm",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "24662576312ab14c",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-17T17:07:15.000Z",
+      "date": "2026-09-18",
+      "url": "https://x.com/claudeai/status/2100632688625348890",
+      "likes": 232,
+      "retweets": 13,
+      "replies": 6,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2100632684074549309",
+      "source": "x",
+      "name": "Claude",
+      "handle": "claudeai",
+      "role": "Claude is an AI assistant built by anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app.",
+      "text": "A project builds over time. Every thread adds to and draws from its shared memory, so Claude can remember that the release moved to Friday, or who to ask before touching the billing service. The project's library keeps the files you add and the ones Claude creates. https://t.co/jtzVie3DB7",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "项目随时间逐步构建。每个对话线程都会为共享记忆添砖加瓦，并从中汲取信息，因此Claude能记得发布改到了周五，或者在动计费服务之前该问谁。项目的库会保存你添加的文件以及Claude创建的文件。https://t.co/jtzVie3DB7",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "8de7c8b087f1e88f",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-17T17:07:14.000Z",
+      "date": "2026-09-18",
+      "url": "https://x.com/claudeai/status/2100632684074549309",
+      "likes": 346,
+      "retweets": 9,
+      "replies": 6,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
     {
       "id": "https://tldr.tech/ai/2026-09-17",
       "source": "blog",
@@ -39,7 +567,7 @@
       "contentTranslationMethod": "",
       "contentTranslationModel": "",
       "contentTranslationSourceHash": "",
-      "translation": "Claude + Cowork 合并 🛠️，ChatGPT 赞助智能体 💰，harness 税 🤖",
+      "translation": "Claude + Cowork 合并 🛠️，ChatGPT 赞助的智能体 💰，框架税 🤖",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
@@ -112,7 +640,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "67ac87d3c11dc3ef097daaf210c06d8343716fd9"
     },
     {
       "id": "2100354983053111365",
@@ -156,7 +684,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "67ac87d3c11dc3ef097daaf210c06d8343716fd9"
     },
     {
       "id": "2100339347669279149",
@@ -200,7 +728,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "67ac87d3c11dc3ef097daaf210c06d8343716fd9"
     },
     {
       "id": "2100328939034128856",
@@ -244,7 +772,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "67ac87d3c11dc3ef097daaf210c06d8343716fd9"
     },
     {
       "id": "2100315538472009897",
@@ -288,7 +816,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "67ac87d3c11dc3ef097daaf210c06d8343716fd9"
     },
     {
       "id": "2100315535758217422",
@@ -332,7 +860,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "67ac87d3c11dc3ef097daaf210c06d8343716fd9"
     },
     {
       "id": "2100315537251463523",
@@ -376,7 +904,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "67ac87d3c11dc3ef097daaf210c06d8343716fd9"
     },
     {
       "id": "2100312717739667963",
@@ -420,7 +948,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "67ac87d3c11dc3ef097daaf210c06d8343716fd9"
     },
     {
       "id": "2100295757953917120",
@@ -464,7 +992,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "67ac87d3c11dc3ef097daaf210c06d8343716fd9"
     },
     {
       "id": "2100278750776824115",
@@ -508,7 +1036,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "67ac87d3c11dc3ef097daaf210c06d8343716fd9"
     },
     {
       "id": "2100260655312089562",
@@ -552,7 +1080,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "67ac87d3c11dc3ef097daaf210c06d8343716fd9"
     },
     {
       "id": "2100260544087535639",
@@ -596,7 +1124,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "67ac87d3c11dc3ef097daaf210c06d8343716fd9"
     },
     {
       "id": "2100259951398789487",
@@ -640,7 +1168,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "67ac87d3c11dc3ef097daaf210c06d8343716fd9"
     },
     {
       "id": "2100258492590207079",
@@ -684,7 +1212,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "67ac87d3c11dc3ef097daaf210c06d8343716fd9"
     },
     {
       "id": "2100258494221812123",
@@ -728,7 +1256,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "67ac87d3c11dc3ef097daaf210c06d8343716fd9"
     },
     {
       "id": "2100258495543071016",
@@ -772,7 +1300,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "67ac87d3c11dc3ef097daaf210c06d8343716fd9"
     },
     {
       "id": "https://tldr.tech/ai/2026-09-16",
@@ -860,7 +1388,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "67ac87d3c11dc3ef097daaf210c06d8343716fd9"
     },
     {
       "id": "2100056178705514703",
