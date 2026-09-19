@@ -2,22 +2,3499 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.3",
     "date": "2026-09-19",
-    "generated_at": "2026-09-19T00:30:39.327Z",
+    "generated_at": "2026-09-19T06:58:30.613Z",
     "trigger": "verified_funding_events_with_three_month_backfill",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
     "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
-      "funding_events": 6,
-      "auto_published": 3,
+      "funding_events": 15,
+      "auto_published": 8,
       "blocked": 0,
       "pending": 0,
-      "deduplicated": 3
-    },
-    "taxonomy_version": "TAG-V4.1"
+      "deduplicated": 7
+    }
   },
   "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-ad7e52af8e98cfb5",
+      "triggered_by_event_id": "EV-bdd574fb9ee91b4d",
+      "as_of_date": "2026-09-19",
+      "company": {
+        "entity_id": "EN-cfec5bef40cbf3ae",
+        "name": "设序科技",
+        "full_name": "设序科技",
+        "website": "",
+        "summary": "设序科技是一家中国AI公司，目标是做“工业界的Anthropic”，通过自研的“则形AI”根据需求直接生成完整的工业设计方案，覆盖工业设计、模拟仿真、工艺规划到生产制造的全流程。",
+        "headquarters": "",
+        "founders": [
+          {
+            "name": "吴泳荣",
+            "role": "创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-887f1542c828b426",
+                "quote": "离开蔚来汽车后，吴泳荣于2020年创立了设序科技",
+                "source_content_hash": "7ba0fa9425a10e3a",
+                "quote_hash": "967496a48a33520e0b550370efd1352394c1317772aff5b9444c498c48fe8194"
+              }
+            ],
+            "entity_id": "EN-464ee725c264d5f7"
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-887f1542c828b426",
+            "quote": "这家AI公司叫设序科技，目标是做“工业界的Anthropic”——Anthropic教会了AI写代码，设序科技则要教AI造机器。",
+            "source_content_hash": "7ba0fa9425a10e3a",
+            "quote_hash": "7d536b5fa42ca5753b4ca9eea59bf4c0520055dea7fdb46ea48692bce6b13402"
+          },
+          {
+            "source_id": "FISRC-b45d2b561f968e83",
+            "quote": "设序科技的“则形AI”则会根据需求直接生成完整的工业设计方案。",
+            "source_content_hash": "ed34ce7106aaac8c",
+            "quote_hash": "38fc1e0b6342c5943d66392babba310dea15397ce08de77176981705d4b55652"
+          }
+        ],
+        "application_entity_id": "EN-cfec5bef40cbf3ae",
+        "canonical_entity_consistent": true
+      },
+      "financing": {
+        "round": "B轮",
+        "amount": "超亿元",
+        "total_raised": "累计金额超3亿元",
+        "announced_at": "2026-09-17",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "深产投",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-887f1542c828b426",
+                "quote": "最新的B轮融资既有 深产投、广发信德 等新投资方加入，也有老股东 涌铧投资 的持续加码。",
+                "source_content_hash": "7ba0fa9425a10e3a",
+                "quote_hash": "f3dd51ed9e56fe1d668349c85a77e94fb676db082981495bc533a6d767c27b28"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "广发信德",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-887f1542c828b426",
+                "quote": "最新的B轮融资既有 深产投、广发信德 等新投资方加入，也有老股东 涌铧投资 的持续加码。",
+                "source_content_hash": "7ba0fa9425a10e3a",
+                "quote_hash": "f3dd51ed9e56fe1d668349c85a77e94fb676db082981495bc533a6d767c27b28"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "涌铧投资",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-887f1542c828b426",
+                "quote": "最新的B轮融资既有 深产投、广发信德 等新投资方加入，也有老股东 涌铧投资 的持续加码。",
+                "source_content_hash": "7ba0fa9425a10e3a",
+                "quote_hash": "f3dd51ed9e56fe1d668349c85a77e94fb676db082981495bc533a6d767c27b28"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "险峰长青",
+            "role": "天使轮投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-887f1542c828b426",
+                "quote": "当年就拿下险峰长青、高榕资本、联想创投联合投资的数千万元天使轮。",
+                "source_content_hash": "7ba0fa9425a10e3a",
+                "quote_hash": "332e7f6a877a83ac23d5c1a12e8e0dd8d7f9d188e96a1e98d730e1c41628ad2b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "高榕创投",
+            "role": "天使轮投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-887f1542c828b426",
+                "quote": "当年就拿下险峰长青、高榕资本、联想创投联合投资的数千万元天使轮。",
+                "source_content_hash": "7ba0fa9425a10e3a",
+                "quote_hash": "332e7f6a877a83ac23d5c1a12e8e0dd8d7f9d188e96a1e98d730e1c41628ad2b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "联想创投",
+            "role": "天使轮投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-887f1542c828b426",
+                "quote": "当年就拿下险峰长青、高榕资本、联想创投联合投资的数千万元天使轮。",
+                "source_content_hash": "7ba0fa9425a10e3a",
+                "quote_hash": "332e7f6a877a83ac23d5c1a12e8e0dd8d7f9d188e96a1e98d730e1c41628ad2b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "阿米巴资本",
+            "role": "财务投资机构",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-887f1542c828b426",
+                "quote": "回溯设序科技的股东名单，既有 险峰长青、高榕创投、阿米巴资本 等财务投资机构",
+                "source_content_hash": "7ba0fa9425a10e3a",
+                "quote_hash": "ec16150a628316289f5c18fc079cff45cffa721e3bf0521dcfa6aa1fa57c8f2f"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "字节跳动",
+            "role": "产业资本",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-887f1542c828b426",
+                "quote": "也有 字节跳动、联想创投、中芯聚源 等产业资本",
+                "source_content_hash": "7ba0fa9425a10e3a",
+                "quote_hash": "45ca26aaa775fa6d9a569d2a449d8992a071e1de36df25698855abfd66d19d82"
+              }
+            ],
+            "entity_id": "EN-5388bc10736a0eff"
+          },
+          {
+            "name": "中芯聚源",
+            "role": "产业资本",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-887f1542c828b426",
+                "quote": "也有 字节跳动、联想创投、中芯聚源 等产业资本",
+                "source_content_hash": "7ba0fa9425a10e3a",
+                "quote_hash": "45ca26aaa775fa6d9a569d2a449d8992a071e1de36df25698855abfd66d19d82"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-887f1542c828b426",
+            "quote": "上半年刚完成B轮超亿元",
+            "source_content_hash": "7ba0fa9425a10e3a",
+            "quote_hash": "16476d16e9d2a885aff7961d7f3666cec768be54c899f48a8a5568c9bfe16b48"
+          },
+          {
+            "source_id": "FISRC-887f1542c828b426",
+            "quote": "已经完成了六轮融资，累计金额超3亿元，上半年刚完成B轮超亿元。",
+            "source_content_hash": "7ba0fa9425a10e3a",
+            "quote_hash": "469948c8acf69115d848f39ab729da46980ff52de2dc4495c765ad3ec41b59a3"
+          },
+          {
+            "source_id": "FISRC-b45d2b561f968e83",
+            "quote": "最新的B轮融资既有 深产投、广发信德 等新投资方加入，也有老股东 涌铧投资 的持续加码。",
+            "source_content_hash": "ed34ce7106aaac8c",
+            "quote_hash": "f3dd51ed9e56fe1d668349c85a77e94fb676db082981495bc533a6d767c27b28"
+          }
+        ],
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "超亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿元"
+        },
+        "total_raised_original": "累计金额超3亿元",
+        "total_raised_normalized": {
+          "currency": "CNY",
+          "value": 300000000,
+          "min_value": 300000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 3 亿元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-bdd574fb9ee91b4d",
+            "round_original": "B轮",
+            "amount": "超亿元",
+            "announced_at": "2026-09-17",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-887f1542c828b426",
+                "quote": "上半年刚完成B轮超亿元",
+                "source_content_hash": "7ba0fa9425a10e3a",
+                "quote_hash": "16476d16e9d2a885aff7961d7f3666cec768be54c899f48a8a5568c9bfe16b48"
+              },
+              {
+                "source_id": "FISRC-887f1542c828b426",
+                "quote": "已经完成了六轮融资，累计金额超3亿元，上半年刚完成B轮超亿元。",
+                "source_content_hash": "7ba0fa9425a10e3a",
+                "quote_hash": "469948c8acf69115d848f39ab729da46980ff52de2dc4495c765ad3ec41b59a3"
+              },
+              {
+                "source_id": "FISRC-b45d2b561f968e83",
+                "quote": "最新的B轮融资既有 深产投、广发信德 等新投资方加入，也有老股东 涌铧投资 的持续加码。",
+                "source_content_hash": "ed34ce7106aaac8c",
+                "quote_hash": "f3dd51ed9e56fe1d668349c85a77e94fb676db082981495bc533a6d767c27b28"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "则形AI",
+          "description": "设序科技自研的AI工业智能体，根据需求直接生成完整的工业设计方案，覆盖工业设计、模拟仿真、工艺规划到生产制造的全流程。",
+          "target_customers": "工业B端客户，包括车企、装备集成商、国央企及集成商和设计公司",
+          "features": [
+            "根据需求直接生成完整的工业设计方案",
+            "过去需要花费工程师几十个小时完成的方案，几分钟就能生成一版",
+            "基于实体几何物理基础模型，从源头杜绝违背物理规律的无效设计",
+            "将力学标准、工艺约束、装配规范等工程准则原生嵌入模型训练底层"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-887f1542c828b426",
+              "quote": "设序科技的“则形AI”则会根据需求直接生成完整的工业设计方案。过去需要花费工程师几十个小时完成的方案，“则形AI”几分钟就能生成一版。",
+              "source_content_hash": "7ba0fa9425a10e3a",
+              "quote_hash": "fd2287e13e2216557162cc4775f5a0e6b6f120b9f98fd8fde0b27ca14d595692"
+            },
+            {
+              "source_id": "FISRC-b45d2b561f968e83",
+              "quote": "设序科技要做的并非一款“更聪明的CAD工具”，而是一个“AI工业智能体”。",
+              "source_content_hash": "ed34ce7106aaac8c",
+              "quote_hash": "1ce7e21bbb182d5517f6695884c0dd5f4ce591cb0ebaa89fbca66c1c456a4d3f"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "东风",
+          "industry": "汽车制造",
+          "use_case": "工业设计方案生成",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-887f1542c828b426",
+              "quote": "翻开设序科技的客户名单，既有头部的国央企如东风、中车、商飞",
+              "source_content_hash": "7ba0fa9425a10e3a",
+              "quote_hash": "501fbd118dd69151973ac1c3eb32e0e2a0a358810e2bfe310bf63df51a75de72"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "中车",
+          "industry": "轨道交通",
+          "use_case": "工业设计方案生成",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-887f1542c828b426",
+              "quote": "翻开设序科技的客户名单，既有头部的国央企如东风、中车、商飞",
+              "source_content_hash": "7ba0fa9425a10e3a",
+              "quote_hash": "501fbd118dd69151973ac1c3eb32e0e2a0a358810e2bfe310bf63df51a75de72"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "商飞",
+          "industry": "航空航天",
+          "use_case": "工业设计方案生成",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-887f1542c828b426",
+              "quote": "翻开设序科技的客户名单，既有头部的国央企如东风、中车、商飞",
+              "source_content_hash": "7ba0fa9425a10e3a",
+              "quote_hash": "501fbd118dd69151973ac1c3eb32e0e2a0a358810e2bfe310bf63df51a75de72"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "奔驰",
+          "industry": "汽车制造",
+          "use_case": "制造装备设计方案",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-887f1542c828b426",
+              "quote": "在欧洲的奔驰车间，一批制造装备的设计方案出自一家中国AI公司之手",
+              "source_content_hash": "7ba0fa9425a10e3a",
+              "quote_hash": "5566eed8ed1a478aa35279967bdc340d879cfde1c1746b47b702cc02a5426a42"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "特斯拉",
+          "industry": "汽车制造",
+          "use_case": "设备设计",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-887f1542c828b426",
+              "quote": "北美特斯拉的超级工厂里也运转着它设计的设备。",
+              "source_content_hash": "7ba0fa9425a10e3a",
+              "quote_hash": "bd5fcf32dc2a50fc701321613e0d07193fa200ef3f7e7da2295890c247f766de"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Anthropic",
+          "product": "Claude",
+          "scenario": "软件工程B端服务，根据一句需求生成软件代码",
+          "target_customer": "软件工程B端客户",
+          "funding_summary": "",
+          "core_difference": "Claude聚焦软件工程的B端服务，核心要求是结果精准、安全可控、可解释；设序科技的则形AI聚焦硬件工程，根据需求直接生成完整的工业设计方案，面向工业B端客户。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-887f1542c828b426",
+              "quote": "Anthropic的Claude根据一句需求生成软件代码，设序科技的“则形AI”则会根据需求直接生成完整的工业设计方案。",
+              "source_content_hash": "7ba0fa9425a10e3a",
+              "quote_hash": "d6296d09bb4c9c7513ab2486828f41253239b23f5ea2a3be1cd58eac06cb6d74"
+            },
+            {
+              "source_id": "FISRC-b45d2b561f968e83",
+              "quote": "Claude聚焦软件工程的B端服务，核心要求是结果精准、安全可控、可解释，这与工业客户对硬件设计的核心诉求完全一致。",
+              "source_content_hash": "ed34ce7106aaac8c",
+              "quote_hash": "2002662cd9294743ce9b5a21cf2b94a1af0101610962a696236d2d6a841dcef3"
+            }
+          ],
+          "entity_id": "EN-c70eca6b0f88f44d"
+        }
+      ],
+      "metrics": [
+        {
+          "label": "累计融资金额",
+          "value": "超3亿元",
+          "observed_at": "2026-09-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-887f1542c828b426",
+              "quote": "已经完成了六轮融资，累计金额超3亿元",
+              "source_content_hash": "7ba0fa9425a10e3a",
+              "quote_hash": "be69f34952d58c841f9e88d9bdb72ed6e12fc97883155cba3dce891a9e1c748e"
+            }
+          ]
+        },
+        {
+          "label": "B轮融资金额",
+          "value": "超亿元",
+          "observed_at": "2026-09-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-887f1542c828b426",
+              "quote": "上半年刚完成B轮超亿元",
+              "source_content_hash": "7ba0fa9425a10e3a",
+              "quote_hash": "16476d16e9d2a885aff7961d7f3666cec768be54c899f48a8a5568c9bfe16b48"
+            }
+          ]
+        },
+        {
+          "label": "年均营收增速",
+          "value": "80%以上",
+          "observed_at": "2026-09-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-887f1542c828b426",
+              "quote": "设序科技自2022年商业化以来年均营收增速一直在80%以上",
+              "source_content_hash": "7ba0fa9425a10e3a",
+              "quote_hash": "15413c5902965e998bdb4311c6713ab9b235bc88af2c49466cff7ce606f2d8f8"
+            }
+          ]
+        },
+        {
+          "label": "今年合同额预计",
+          "value": "近2亿元",
+          "observed_at": "2026-09-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-887f1542c828b426",
+              "quote": "今年合同额预计近2亿元，较去年基本翻番。",
+              "source_content_hash": "7ba0fa9425a10e3a",
+              "quote_hash": "267a309f254d48348d8278971e934fcc0ee0c4c4ebb81ddfd0cb539c89324749"
+            }
+          ]
+        },
+        {
+          "label": "总客户数量",
+          "value": "近1000家",
+          "observed_at": "2026-09-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-887f1542c828b426",
+              "quote": "总客户数量近1000家。",
+              "source_content_hash": "7ba0fa9425a10e3a",
+              "quote_hash": "8e91ec3572a275ee04082b460f6eae05c4032ab8c71b6a2f4584ec5dab6a2427"
+            }
+          ]
+        },
+        {
+          "label": "每天云端生成的3D模型和2D图纸数量",
+          "value": "数以万计",
+          "observed_at": "2026-09-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-887f1542c828b426",
+              "quote": "每天在云端生成的3D模型和2D图纸数以万计。",
+              "source_content_hash": "7ba0fa9425a10e3a",
+              "quote_hash": "8cc5fa159b7233c640cb6b3f74ccd6dee66bf491a93a33f6e7beb96e2ee02a9a"
+            }
+          ]
+        },
+        {
+          "label": "全球工业工程师数量",
+          "value": "900万",
+          "observed_at": "2026-09-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-887f1542c828b426",
+              "quote": "全球900万工业工程师",
+              "source_content_hash": "7ba0fa9425a10e3a",
+              "quote_hash": "eda366e33dbaaad8cdd0d5fff99deba090f0901d966e531236744c6a5ef9d646"
+            }
+          ]
+        },
+        {
+          "label": "AI在国内硬件工程里的渗透率",
+          "value": "不到1%",
+          "observed_at": "2026-09-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-887f1542c828b426",
+              "quote": "今天，AI在国内硬件工程里的渗透率只有不到1%",
+              "source_content_hash": "7ba0fa9425a10e3a",
+              "quote_hash": "1d744a75d0891a6b985bbff4e0c337087c3972c60e737ed97ad0d2b30acb6e80"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "吴泳荣",
+          "quote": "起初，我们只是想用AI把设计工程师从手工画图里解放出来，但越往工业场景深处做，越发现工业设计是硬件工程中一切数据的源头，牵一发动全身。后来团队下定决心，从整个硬件工程的角度来搭建数据结构、模型架构，以满足工业B端客户的要求。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-887f1542c828b426",
+              "quote": "起初，我们只是想用AI把设计工程师从手工画图里解放出来，但越往工业场景深处做，越发现工业设计是硬件工程中一切数据的源头，牵一发动全身。后来团队下定决心，从整个硬件工程的角度来搭建数据结构、模型架构，以满足工业B端客户的要求。",
+              "source_content_hash": "7ba0fa9425a10e3a",
+              "quote_hash": "9798eac6456dffbc080b3fa8d0ff5541b1991d9cc0ec9df21d1f08d719440f73"
+            }
+          ]
+        },
+        {
+          "speaker": "吴泳荣",
+          "quote": "我们希望生成可以直接交付甚至加工制造的设计方案，而不是在投入大量token和等待时间后靠模型去猜。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-887f1542c828b426",
+              "quote": "我们希望生成可以直接交付甚至加工制造的设计方案，而不是在投入大量token和等待时间后靠模型去猜。",
+              "source_content_hash": "7ba0fa9425a10e3a",
+              "quote_hash": "f334bb9260de6a9090c47fa441039381c92c23c9e3cb89e8d75711b3f7898f8e"
+            }
+          ]
+        },
+        {
+          "speaker": "吴泳荣",
+          "quote": "我们核心关注的是两个北极星指标：一是AI在设计中的参与度，二是使用AI生成工业设计的数量。前者目标是三年内提升到80%以上，后者目标是每年翻一到两倍。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-887f1542c828b426",
+              "quote": "我们核心关注的是两个北极星指标：一是AI在设计中的参与度，二是使用AI生成工业设计的数量。前者目标是三年内提升到80%以上，后者目标是每年翻一到两倍。",
+              "source_content_hash": "7ba0fa9425a10e3a",
+              "quote_hash": "347cdd3158eb6d0263df3bc36ab43b9fdd4b2526c0907bc077f376251f1706b4"
+            }
+          ]
+        },
+        {
+          "speaker": "吴泳荣",
+          "quote": "数年积累下来，我们可能是目前拥有工业真值数据最多的企业。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-887f1542c828b426",
+              "quote": "数年积累下来，我们可能是目前拥有工业真值数据最多的企业。",
+              "source_content_hash": "7ba0fa9425a10e3a",
+              "quote_hash": "1aaf89ef4a733a5dabb1649c4a4cd0208b5ea8bf4423d9f699185937ed4ea3f9"
+            }
+          ]
+        },
+        {
+          "speaker": "吴泳荣",
+          "quote": "中国有全世界最大的工业产能、最齐全的工业场景、最丰富的工业数据，但使用的传统工业软件都是西方定义和提供的。这一次，AI技术的进步提供了一个绝佳的时代机遇。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-887f1542c828b426",
+              "quote": "中国有全世界最大的工业产能、最齐全的工业场景、最丰富的工业数据，但使用的传统工业软件都是西方定义和提供的。这一次，AI技术的进步提供了一个绝佳的时代机遇。",
+              "source_content_hash": "7ba0fa9425a10e3a",
+              "quote_hash": "69bea5a8aa3c626333c164940090a4042383b3c3803307320c66856e61bf8737"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是AI在硬件工程中的渗透率提升，以及设序科技通过自研实体几何物理基础模型和工业真值数据飞轮建立的壁垒。已验证信号包括：自2022年商业化以来年均营收增速80%以上，今年合同额预计近2亿元，总客户数量近1000家，每天在云端生成数以万计的3D模型和2D图纸。证据边界：来源未披露本轮估值，也未提供投资机构的具体投资逻辑原话。",
+        "validated_signals": [
+          "自2022年商业化以来年均营收增速一直在80%以上",
+          "今年合同额预计近2亿元，较去年基本翻番",
+          "总客户数量近1000家，包括东风、中车、商飞等头部国央企",
+          "每天在云端生成的3D模型和2D图纸数以万计",
+          "已完成六轮融资，累计金额超3亿元"
+        ],
+        "risks": [
+          "AI在国内硬件工程里的渗透率目前只有不到1%，市场教育成本高，渗透率爬坡速度存在不确定性。"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "industrials",
+        "market_application_id": "",
+        "use_case_ids": [
+          "design_engineering"
+        ],
+        "industry_ids": [
+          "manufacturing",
+          "automotive_transportation"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "AI工业设计",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是AI在硬件工程中的渗透率提升，以及设序科技通过自研实体几何物理基础模型和工业真值数据飞轮建立的壁垒。已验证信号包括：自2022年商业化以来年均营收增速80%以上，今年合同额预计近2亿元，总客户数量近1000家，每天在云端生成数以万计的3D模型和2D图纸。证据边界：来源未披露本轮估值，也未提供投资机构的具体投资逻辑原话。",
+          "evidence_signals": [
+            "自2022年商业化以来年均营收增速一直在80%以上",
+            "今年合同额预计近2亿元，较去年基本翻番",
+            "总客户数量近1000家，包括东风、中车、商飞等头部国央企",
+            "每天在云端生成的3D模型和2D图纸数以万计",
+            "已完成六轮融资，累计金额超3亿元"
+          ],
+          "risks": [
+            "AI在国内硬件工程里的渗透率目前只有不到1%，市场教育成本高，渗透率爬坡速度存在不确定性。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "则形AI",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "吴泳荣",
+          "canonical_entity_id": "EN-464ee725c264d5f7",
+          "canonical_name": "吴泳荣"
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "深产投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "广发信德",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "涌铧投资",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "险峰长青",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "高榕创投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "联想创投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "阿米巴资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "字节跳动",
+          "canonical_entity_id": "EN-5388bc10736a0eff",
+          "canonical_name": "ByteDance"
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "中芯聚源",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "东风",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "中车",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "商飞",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "奔驰",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "特斯拉",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Anthropic",
+          "canonical_entity_id": "EN-c70eca6b0f88f44d",
+          "canonical_name": "Anthropic"
+        }
+      ],
+      "funding_history": [],
+      "research_sources": [
+        {
+          "source_id": "FISRC-887f1542c828b426",
+          "source_url": "https://news.pedaily.cn/202609/569177.shtml",
+          "title": "设序科技一连融资6轮，要做「工业界Anthropic」",
+          "publisher": "投资界",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-19T00:40:43.978Z",
+          "content_hash": "7ba0fa9425a10e3a",
+          "source_artifact_id": "SA-a54f43be8317c9e0",
+          "raw_id": "RAW-facee7818a18da8c"
+        },
+        {
+          "source_id": "FISRC-b45d2b561f968e83",
+          "source_url": "https://user.guancha.cn/main/content?id=1738534&s=fwtjgzwz",
+          "title": "设序科技一连融资6轮，要做「工业界Anthropic」_风闻",
+          "publisher": "user.guancha.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-19T00:43:02.750Z",
+          "content_hash": "ed34ce7106aaac8c",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 2,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-19T00:43:47.213Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-bdd574fb9ee91b4d",
+          "confidence": 0.85,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-19T00:43:47.213Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 5,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "则形AI"
+          ]
+        },
+        "founders": {
+          "linked": 1,
+          "total": 1,
+          "unresolved_names": []
+        }
+      },
+      "source_event_ids": [
+        "EV-bdd574fb9ee91b4d"
+      ],
+      "aggregation": {
+        "key": "EN-cfec5bef40cbf3ae|series_b",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-e9c9a6238a93d9dd",
+      "triggered_by_event_id": "EV-06f2bca776e5cee7",
+      "as_of_date": "2026-09-19",
+      "company": {
+        "entity_id": "EN-34bc69b5df00e2d3",
+        "name": "北京中科弧光量子软件技术有限公司",
+        "full_name": "北京中科弧光量子软件技术有限公司",
+        "website": "",
+        "summary": "弧光量子是一家专注于量子软件和量子计算应用的高科技公司，提供量子EDA、量子程序开发平台、量子机器学习平台、量子测控系统、量子应用等一站式量子软件产品及服务。",
+        "headquarters": "北京",
+        "founders": [
+          {
+            "name": "应圣钢",
+            "role": "创始人兼董事长",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b6f0082c9f0d425c",
+                "quote": "公司创始人兼董事长应圣钢则毕业于清华大学，获博士学位，并曾于悉尼科技大学从事博士后研究，现为中国科学院软件研究所正高级工程师。",
+                "source_content_hash": "18a253da8984afb0",
+                "quote_hash": "278fc3eb6699f5f5b488bf71ee5470b79d30c92feaa20e5787b1e13248528cd6"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "核心团队80%以上来自清华、北大等顶尖院校，硕博占比超90%",
+          "observed_at": "2026-09-18",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b6f0082c9f0d425c",
+              "quote": "公司核心团队80%以上来自清华、北大等顶 尖院校，硕博占比超90%。",
+              "source_content_hash": "18a253da8984afb0",
+              "quote_hash": "99d30322bcdc211a38892e0fa47f9edfe1a481d1cf16fc501032602c154ab85a"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b6f0082c9f0d425c",
+            "quote": "北京中科弧光量子软件技术有限公司（简称“弧光量子”）是一家专注于量子软件和量子计算应用的高科技公司。",
+            "source_content_hash": "18a253da8984afb0",
+            "quote_hash": "3606df91e063c88dd5c3541b4f7938ae137168243e38d816b91a05e020a852af"
+          }
+        ],
+        "application_entity_id": "EN-34bc69b5df00e2d3",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "战略融资",
+        "amount": "超亿元",
+        "total_raised": "",
+        "announced_at": "2026-09-18",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "中国移动链长基金",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b6f0082c9f0d425c",
+                "quote": "弧光量子 近期 已完成超亿元战略融资，投资方为中国移动链长基金。",
+                "source_content_hash": "18a253da8984afb0",
+                "quote_hash": "09176c2b1167b2fc49df437a8b4386610698687a5c351003b18efae94e19fa48"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b6f0082c9f0d425c",
+            "quote": "投资界（ID：pedaily2012）9月18日消息， 弧光量子 近期 已完成超亿元战略融资，投资方为中国移动链长基金。",
+            "source_content_hash": "18a253da8984afb0",
+            "quote_hash": "e5889ca8943ee480388839be626882020485dfecdbcddb3fae9bab5717b7a32d"
+          },
+          {
+            "source_id": "FISRC-b6f0082c9f0d425c",
+            "quote": "弧光量子 近期 已完成超亿元战略融资，投资方为中国移动链长基金。",
+            "source_content_hash": "18a253da8984afb0",
+            "quote_hash": "09176c2b1167b2fc49df437a8b4386610698687a5c351003b18efae94e19fa48"
+          },
+          {
+            "source_id": "FISRC-5f7c3ae57ca3a0ce",
+            "quote": "近日，弧光量子完成超亿元战略融资，投资方为中国移动链长基金。",
+            "source_content_hash": "dd1233c49ad44e45",
+            "quote_hash": "d94fdeee59d7d14c56fb22b0225588e079defc82c5c39b7d0807838cbef3a1b2"
+          }
+        ],
+        "round_code": "strategic",
+        "round_original": "战略融资",
+        "amount_original": "超亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-06f2bca776e5cee7",
+            "round_original": "战略融资",
+            "amount": "超亿元",
+            "announced_at": "2026-09-18",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b6f0082c9f0d425c",
+                "quote": "投资界（ID：pedaily2012）9月18日消息， 弧光量子 近期 已完成超亿元战略融资，投资方为中国移动链长基金。",
+                "source_content_hash": "18a253da8984afb0",
+                "quote_hash": "e5889ca8943ee480388839be626882020485dfecdbcddb3fae9bab5717b7a32d"
+              },
+              {
+                "source_id": "FISRC-b6f0082c9f0d425c",
+                "quote": "弧光量子 近期 已完成超亿元战略融资，投资方为中国移动链长基金。",
+                "source_content_hash": "18a253da8984afb0",
+                "quote_hash": "09176c2b1167b2fc49df437a8b4386610698687a5c351003b18efae94e19fa48"
+              },
+              {
+                "source_id": "FISRC-5f7c3ae57ca3a0ce",
+                "quote": "近日，弧光量子完成超亿元战略融资，投资方为中国移动链长基金。",
+                "source_content_hash": "dd1233c49ad44e45",
+                "quote_hash": "d94fdeee59d7d14c56fb22b0225588e079defc82c5c39b7d0807838cbef3a1b2"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "量子EDA",
+          "description": "量子芯片设计与测控工具，包括量子EDA、芯片缺陷检测、测控系统和纠错解码，帮助硬件团队在芯片制造前完成设计验证和调试。",
+          "target_customers": "量子硬件团队",
+          "features": [
+            "量子芯片设计验证",
+            "芯片缺陷检测",
+            "测控系统",
+            "纠错解码"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b6f0082c9f0d425c",
+              "quote": "底层硬件侧，弧光量子提供量子芯片设计与测控工具，包括量子EDA、芯片缺陷检测、测控系统和纠错解码，帮助硬件团队在芯片造出来之前就能完成设计验证和调试，已在国内顶 尖超导芯片的实际产线使用。",
+              "source_content_hash": "18a253da8984afb0",
+              "quote_hash": "82bb16270092c732f01f676f8dd44a9c3d2103622667c1f464ebeb6471513522"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "isQ编译器",
+          "description": "量子计算机的“操作系统级”工具，将开发者编写的量子程序翻译并优化成不同硬件能执行的指令。",
+          "target_customers": "量子程序开发者",
+          "features": [
+            "量子程序编译",
+            "硬件指令优化"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b6f0082c9f0d425c",
+              "quote": "开发工具侧，弧光量子做的是量子计算机的“操作系统级”工具——编译器。简单说，就是把开发者写的量子程序，翻译并优化成不同硬件能执行的指令。",
+              "source_content_hash": "18a253da8984afb0",
+              "quote_hash": "bd1830702e4c73ee7b652051e19a5b73ac7cd79c83cdfb178d31f5b838c80276"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "SymFT模拟器",
+          "description": "量子模拟器，在单CPU核心上模拟表面码线路时相较国际主流模拟器Stim实现约2.5倍性能提升，在魔法态培养等场景相较Clifft最高提升3.51倍。",
+          "target_customers": "量子计算研究人员",
+          "features": [
+            "表面码线路模拟",
+            "魔法态培养场景优化"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b6f0082c9f0d425c",
+              "quote": "在量子模拟领域，弧光量子先后形成SOFT、SymFT等模拟器。最新SymFT在单CPU核心上模拟表面码线路时，相较国际主流模拟器Stim实现约2.5倍性能提升，在魔法态培养等场景相较Clifft最高提升3.51倍。",
+              "source_content_hash": "18a253da8984afb0",
+              "quote_hash": "92be1382c7c03b7d1994caa251185b088da2792c8896f848101fc2c7612d27fc"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "IBM",
+          "product": "量子编程语言与编译器",
+          "scenario": "量子程序开发与编译",
+          "target_customer": "量子计算开发者",
+          "funding_summary": "",
+          "core_difference": "弧光量子的量子编程语言isQ与编译器产品与IBM形成差异化定位，具体差异来源未展开。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b6f0082c9f0d425c",
+              "quote": "量子编程语言isQ与编译器产品与IBM、谷歌等国际巨头形成差异化定位。",
+              "source_content_hash": "18a253da8984afb0",
+              "quote_hash": "5e4f14cc6239d158c8d7e162960b75ffdbbf35fde7c3e76b7f323459d8c1f376"
+            }
+          ],
+          "entity_id": "EN-916a98f0fa2a39af"
+        },
+        {
+          "name": "谷歌",
+          "product": "量子编程语言与编译器",
+          "scenario": "量子程序开发与编译",
+          "target_customer": "量子计算开发者",
+          "funding_summary": "",
+          "core_difference": "弧光量子的量子编程语言isQ与编译器产品与谷歌形成差异化定位，具体差异来源未展开。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b6f0082c9f0d425c",
+              "quote": "量子编程语言isQ与编译器产品与IBM、谷歌等国际巨头形成差异化定位。",
+              "source_content_hash": "18a253da8984afb0",
+              "quote_hash": "5e4f14cc6239d158c8d7e162960b75ffdbbf35fde7c3e76b7f323459d8c1f376"
+            }
+          ],
+          "entity_id": "EN-bbdefa2950f49882"
+        },
+        {
+          "name": "Clifft",
+          "product": "量子模拟器",
+          "scenario": "魔法态培养等场景",
+          "target_customer": "量子计算研究人员",
+          "funding_summary": "",
+          "core_difference": "弧光量子SymFT在魔法态培养等场景相较Clifft最高提升3.51倍。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b6f0082c9f0d425c",
+              "quote": "在魔法态培养等场景相较Clifft最高提升3.51倍。",
+              "source_content_hash": "18a253da8984afb0",
+              "quote_hash": "2fe8d04dbf0b34123756213a919f15428ac4721e62e8e697c7fa20f73127b6f2"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "核心团队硕博占比",
+          "value": "超90%",
+          "observed_at": "2026-09-18",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b6f0082c9f0d425c",
+              "quote": "硕博占比超90%。",
+              "source_content_hash": "18a253da8984afb0",
+              "quote_hash": "77a8e61ef049fedb070a27492e5c540d9d8a4b0bd02f862b2dd121094cc1f7c2"
+            }
+          ]
+        },
+        {
+          "label": "SymFT相较Clifft性能提升",
+          "value": "最高3.51倍",
+          "observed_at": "2026-09-18",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b6f0082c9f0d425c",
+              "quote": "在魔法态培养等场景相较Clifft最高提升3.51倍。",
+              "source_content_hash": "18a253da8984afb0",
+              "quote_hash": "2fe8d04dbf0b34123756213a919f15428ac4721e62e8e697c7fa20f73127b6f2"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "中国移动链长基金",
+          "quote": "量子计算已成为各国科技竞争核心领域，我国处于关键“追赶窗口期”，量子基础软件是推动量子计算发展的重要环节，构建连接硬件与应用的核心枢纽。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b6f0082c9f0d425c",
+              "quote": "量子计算已成为各国科技竞争核心领域，我国处于关键“追赶窗口期”，量子基础软件是推动量子计算发展的重要环节，构建连接硬件与应用的核心枢纽。",
+              "source_content_hash": "18a253da8984afb0",
+              "quote_hash": "95636a02e76bb6462d579b673911b20a3e3ce66fa8bbc7b148e0f2334a379627"
+            }
+          ]
+        },
+        {
+          "speaker": "中国移动链长基金",
+          "quote": "弧光量子依托中科院软件所深厚理论积累，稀缺性价值显著，团队发布的核心技术成果（量子程序定理证明器）处于国际领 先水平，量子编程语言isQ与编译器产品与IBM、谷歌等国际巨头形成差异化定位。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b6f0082c9f0d425c",
+              "quote": "弧光量子依托中科院软件所深厚理论积累，稀缺性价值显著，团队发布的核心技术成果（量子程序定理证明器）处于国际领 先水平，量子编程语言isQ与编译器产品与IBM、谷歌等国际巨头形成差异化定位。",
+              "source_content_hash": "18a253da8984afb0",
+              "quote_hash": "9efe48bb3ec4cdf4b282ed3f9f50d6a216e5c9a19f6f3545119a15cb91e87746"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "中国移动链长基金",
+            "speaker": "中国移动链长基金",
+            "speaker_role": "投资方",
+            "rationale": "认为量子基础软件是连接硬件与应用的核心枢纽，弧光量子依托中科院软件所理论积累具备稀缺价值，其量子程序定理证明器处于国际领先水平，isQ与编译器产品与国际巨头形成差异化定位。",
+            "quote": "弧光量子依托中科院软件所深厚理论积累，稀缺性价值显著，团队发布的核心技术成果（量子程序定理证明器）处于国际领 先水平，量子编程语言isQ与编译器产品与IBM、谷歌等国际巨头形成差异化定位。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b6f0082c9f0d425c",
+                "quote": "弧光量子依托中科院软件所深厚理论积累，稀缺性价值显著，团队发布的核心技术成果（量子程序定理证明器）处于国际领 先水平，量子编程语言isQ与编译器产品与IBM、谷歌等国际巨头形成差异化定位。",
+                "source_content_hash": "18a253da8984afb0",
+                "quote_hash": "9efe48bb3ec4cdf4b282ed3f9f50d6a216e5c9a19f6f3545119a15cb91e87746"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是量子基础软件作为连接量子硬件与应用的枢纽地位，以及弧光量子依托中科院软件所积累的稀缺技术能力。已验证信号包括：量子EDA已在国内顶尖超导芯片实际产线使用；SymFT模拟器相较国际主流产品实现数倍性能提升；isQCDer大模型编译率达98%；核心团队硕博占比超90%。证据边界：来源未披露具体估值、营收或客户名单，融资所依赖的验证主要来自技术性能指标和投资方定性表述。",
+        "validated_signals": [
+          "量子EDA已在国内顶尖超导芯片的实际产线使用",
+          "SymFT模拟器相较Stim实现约2.5倍性能提升，相较Clifft最高提升3.51倍",
+          "isQCDer大模型编译率达98%",
+          "核心团队硕博占比超90%，80%以上来自清华、北大等顶尖院校"
+        ],
+        "risks": [
+          "来源未披露具体营收、客户数量或商业化收入，商业化验证程度有限",
+          "量子计算整体仍处于早期阶段，量子基础软件的市场规模和应用落地节奏存在不确定性"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "developer_tool",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "ai_development_orchestration",
+        "use_case_ids": [
+          "software_development"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer",
+          "researcher"
+        ],
+        "sector": "量子软件与量子计算应用",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是量子基础软件作为连接量子硬件与应用的枢纽地位，以及弧光量子依托中科院软件所积累的稀缺技术能力。已验证信号包括：量子EDA已在国内顶尖超导芯片实际产线使用；SymFT模拟器相较国际主流产品实现数倍性能提升；isQCDer大模型编译率达98%；核心团队硕博占比超90%。证据边界：来源未披露具体估值、营收或客户名单，融资所依赖的验证主要来自技术性能指标和投资方定性表述。",
+          "evidence_signals": [
+            "量子EDA已在国内顶尖超导芯片的实际产线使用",
+            "SymFT模拟器相较Stim实现约2.5倍性能提升，相较Clifft最高提升3.51倍",
+            "isQCDer大模型编译率达98%",
+            "核心团队硕博占比超90%，80%以上来自清华、北大等顶尖院校"
+          ],
+          "risks": [
+            "来源未披露具体营收、客户数量或商业化收入，商业化验证程度有限",
+            "量子计算整体仍处于早期阶段，量子基础软件的市场规模和应用落地节奏存在不确定性"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "量子EDA",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "isQ编译器",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "SymFT模拟器",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "应圣钢",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "中国移动链长基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "IBM",
+          "canonical_entity_id": "EN-916a98f0fa2a39af",
+          "canonical_name": "IBM"
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "谷歌",
+          "canonical_entity_id": "EN-bbdefa2950f49882",
+          "canonical_name": "Google"
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Clifft",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-06f2bca776e5cee7",
+          "date": "2026-09-18",
+          "title": "弧光量子完成超亿元战略融资，加速量子+AI融合研发",
+          "amount": "超亿元",
+          "source_refs": [
+            "SA-e6c6923ac5b6bf38"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-b6f0082c9f0d425c",
+          "source_url": "https://news.pedaily.cn/202609/569239.shtml",
+          "title": "弧光量子完成超亿元战略融资，加速量子+AI融合研发",
+          "publisher": "投资界",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-19T00:40:44.005Z",
+          "content_hash": "18a253da8984afb0",
+          "source_artifact_id": "SA-e6c6923ac5b6bf38",
+          "raw_id": "RAW-594f56a42fd38002"
+        },
+        {
+          "source_id": "FISRC-5f7c3ae57ca3a0ce",
+          "source_url": "https://ijiwei.com/n/1109316",
+          "title": "弧光量子完成超亿元战略融资，专注量子软件产品及服务",
+          "publisher": "ijiwei.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-19T00:43:21.667Z",
+          "content_hash": "dd1233c49ad44e45",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-19T00:43:40.038Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-06f2bca776e5cee7",
+          "confidence": 0.8,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-19T00:43:40.038Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "SymFT模拟器",
+            "isQ编译器",
+            "量子EDA"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "应圣钢"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-06f2bca776e5cee7"
+      ],
+      "aggregation": {
+        "key": "EN-34bc69b5df00e2d3|strategic",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-575622c3fb4ad8db",
+      "triggered_by_event_id": "EV-375d04f7cc9746c6",
+      "as_of_date": "2026-09-19",
+      "company": {
+        "entity_id": "EN-968e2d5b08687bf4",
+        "name": "Euclyd",
+        "full_name": "Euclyd",
+        "website": "",
+        "summary": "Euclyd是一家成立于2024年的荷兰AI芯片制造商，正在研发一套不同于GPU架构的AI芯片系统，涵盖处理器和内存架构，主要用于AI推理。",
+        "headquarters": "荷兰",
+        "founders": [
+          {
+            "name": "Bernardo Kastrup",
+            "role": "创始人兼首席执行官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6cbfc1ea08a48a66",
+                "quote": "Euclyd创始人兼首席执行官Bernardo Kastrup在声明中写道",
+                "source_content_hash": "9676197117c46240",
+                "quote_hash": "dca1491a975c4641ab9bb65aad43d3c60aa0839c071da8ccdd35dc78d7b99c06"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-6cbfc1ea08a48a66",
+            "quote": "Euclyd成立于2024年，目前正在研发一套不同于GPU架构的AI芯片系统，涵盖处理器和内存架构，主要用于AI推理。",
+            "source_content_hash": "9676197117c46240",
+            "quote_hash": "949565f7aa361ca1a889e273630508434228172a784e05dd756a41570ae300e2"
+          }
+        ],
+        "application_entity_id": "FICO-0ab04bcfc3de286b",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "A轮",
+        "amount": "2亿欧元",
+        "total_raised": "超过2亿欧元",
+        "announced_at": "2026-09-15",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "三星",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6cbfc1ea08a48a66",
+                "quote": "三星、Somerset Capital Partners、EQT旗下Scaleup Europe Fund以及Innovation Industries共同领投",
+                "source_content_hash": "9676197117c46240",
+                "quote_hash": "05040103b8eb124e57e50a7a08bd5189f9de6a169757e0c2708bfb3ebf04d7f2"
+              }
+            ],
+            "entity_id": "EN-968e2d5b08687bf4"
+          },
+          {
+            "name": "Somerset Capital Partners",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6cbfc1ea08a48a66",
+                "quote": "三星、Somerset Capital Partners、EQT旗下Scaleup Europe Fund以及Innovation Industries共同领投",
+                "source_content_hash": "9676197117c46240",
+                "quote_hash": "05040103b8eb124e57e50a7a08bd5189f9de6a169757e0c2708bfb3ebf04d7f2"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "EQT旗下Scaleup Europe Fund",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6cbfc1ea08a48a66",
+                "quote": "三星、Somerset Capital Partners、EQT旗下Scaleup Europe Fund以及Innovation Industries共同领投",
+                "source_content_hash": "9676197117c46240",
+                "quote_hash": "05040103b8eb124e57e50a7a08bd5189f9de6a169757e0c2708bfb3ebf04d7f2"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Innovation Industries",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6cbfc1ea08a48a66",
+                "quote": "三星、Somerset Capital Partners、EQT旗下Scaleup Europe Fund以及Innovation Industries共同领投",
+                "source_content_hash": "9676197117c46240",
+                "quote_hash": "05040103b8eb124e57e50a7a08bd5189f9de6a169757e0c2708bfb3ebf04d7f2"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-6cbfc1ea08a48a66",
+            "quote": "财联社9月15日讯（编辑 赵昊） 随着市场对英伟达GPU替代方案的投资热潮持续升温，三星电子参与了荷兰一家AI芯片制造商的2亿欧元融资。",
+            "source_content_hash": "9676197117c46240",
+            "quote_hash": "6e5bf12d7ff853f3919ddf78a46ca47078bba814959bd88c4f2ee3d4ff84ae44"
+          },
+          {
+            "source_id": "FISRC-6cbfc1ea08a48a66",
+            "quote": "Euclyd在官网宣布，公司已完成超过2亿欧元的A轮融资，三星、Somerset Capital Partners、EQT旗下Scaleup Europe Fund以及Innovation Industries共同领投。",
+            "source_content_hash": "9676197117c46240",
+            "quote_hash": "767bb73dc6f3ae9e41dfcb9776a43212caba2bdcfb744dfe764b2c3f91506574"
+          }
+        ],
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "2亿欧元",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2 亿欧元"
+        },
+        "total_raised_original": "超过2亿欧元",
+        "total_raised_normalized": {
+          "currency": "EUR",
+          "value": 200000000,
+          "min_value": 200000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 2 亿欧元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-375d04f7cc9746c6",
+            "round_original": "A轮",
+            "amount": "2亿欧元",
+            "announced_at": "2026-09-15",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6cbfc1ea08a48a66",
+                "quote": "财联社9月15日讯（编辑 赵昊） 随着市场对英伟达GPU替代方案的投资热潮持续升温，三星电子参与了荷兰一家AI芯片制造商的2亿欧元融资。",
+                "source_content_hash": "9676197117c46240",
+                "quote_hash": "6e5bf12d7ff853f3919ddf78a46ca47078bba814959bd88c4f2ee3d4ff84ae44"
+              },
+              {
+                "source_id": "FISRC-6cbfc1ea08a48a66",
+                "quote": "Euclyd在官网宣布，公司已完成超过2亿欧元的A轮融资，三星、Somerset Capital Partners、EQT旗下Scaleup Europe Fund以及Innovation Industries共同领投。",
+                "source_content_hash": "9676197117c46240",
+                "quote_hash": "767bb73dc6f3ae9e41dfcb9776a43212caba2bdcfb744dfe764b2c3f91506574"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "AI芯片系统",
+          "description": "一套不同于GPU架构的AI芯片系统，涵盖处理器和内存架构，主要用于AI推理，面向基础模型，能够降低AI数据中心基础设施的能源需求和成本。",
+          "target_customers": "希望安全地在本地部署AI推理能力的企业客户，以及希望基于现有技术开发自有芯片的企业",
+          "features": [
+            "不同于GPU架构的处理器和内存架构",
+            "主要用于AI推理",
+            "面向基础模型",
+            "降低AI数据中心基础设施的能源需求和成本"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6cbfc1ea08a48a66",
+              "quote": "目前正在研发一套不同于GPU架构的AI芯片系统，涵盖处理器和内存架构，主要用于AI推理。",
+              "source_content_hash": "9676197117c46240",
+              "quote_hash": "3685acf4f7808c2c7f50991d33e23bbb983eafbf1ef698ef51d9757e098fc869"
+            },
+            {
+              "source_id": "FISRC-6cbfc1ea08a48a66",
+              "quote": "其面向基础模型的芯片系统能够降低AI数据中心基础设施的能源需求和成本",
+              "source_content_hash": "9676197117c46240",
+              "quote_hash": "3bae1efd732df75e3848c065f05dcf875efd278bd7001a0260de1372d0e02631"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "英伟达",
+          "product": "GPU",
+          "scenario": "用于训练和运行AI模型的高端AI芯片市场",
+          "target_customer": "AI数据中心、超大规模云服务商",
+          "funding_summary": "",
+          "core_difference": "英伟达的GPU最初为游戏设计，被用于训练和运行AI模型后迅速崛起，并几乎垄断高端AI芯片市场；Euclyd正在研发一套不同于GPU架构的AI芯片系统，涵盖处理器和内存架构，主要用于AI推理，且尚未经过大规模商业部署验证。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6cbfc1ea08a48a66",
+              "quote": "英伟达最初为游戏设计的GPU被用于训练和运行AI模型后迅速崛起，并成为全球市值最高的公司。",
+              "source_content_hash": "9676197117c46240",
+              "quote_hash": "40fd5af32c924d94610b85ae8cc77059ca9261eac5883ec95f5b9bde35fd94c9"
+            },
+            {
+              "source_id": "FISRC-6cbfc1ea08a48a66",
+              "quote": "目前，英伟达已经几乎垄断了高端AI芯片市场。",
+              "source_content_hash": "9676197117c46240",
+              "quote_hash": "c97d5d95f22d9d96ae2bc1364523363eb9e20f4aa3975cbd9a73cef49688d294"
+            },
+            {
+              "source_id": "FISRC-6cbfc1ea08a48a66",
+              "quote": "Euclyd的系统尚未经过大规模商业部署的验证。",
+              "source_content_hash": "9676197117c46240",
+              "quote_hash": "b0201fa6b6d4fe3a5e84b57b714d13d2bf58cd59756e99be540d28aa80705edc"
+            }
+          ],
+          "entity_id": "EN-8d4321d936320802"
+        },
+        {
+          "name": "OpenAI",
+          "product": "AI芯片Jalapeño",
+          "scenario": "自主研发用于AI工作负载的处理器",
+          "target_customer": "自有AI工作负载",
+          "funding_summary": "",
+          "core_difference": "OpenAI自主研发首款AI芯片Jalapeño，宣称拥有行业领先的速度和效率；Euclyd则研发不同于GPU架构的AI芯片系统，主要用于AI推理，并计划通过销售硬件和实体机架系统以及出售相关知识产权实现收入。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6cbfc1ea08a48a66",
+              "quote": "OpenAI今年8月宣布，其首款AI芯片Jalapeño拥有“行业领先的速度和效率”",
+              "source_content_hash": "9676197117c46240",
+              "quote_hash": "ecb52835f206415cc155cf888201660d76abe713252a148f040dc9e14074a769"
+            },
+            {
+              "source_id": "FISRC-6cbfc1ea08a48a66",
+              "quote": "Euclyd计划通过两大业务渠道实现收入：一是向希望安全地在本地部署AI推理能力的企业客户销售硬件和实体机架系统；二是向希望基于现有技术开发自有芯片的企业出售相关知识产权。",
+              "source_content_hash": "9676197117c46240",
+              "quote_hash": "f4355aa3f02f6e919eb1570957ae0ed5f2104edae57679fecb6d19aad413f9e7"
+            }
+          ],
+          "entity_id": "EN-7d3194f79e645c42"
+        }
+      ],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "超过2亿欧元",
+          "observed_at": "2026-09-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6cbfc1ea08a48a66",
+              "quote": "公司已完成超过2亿欧元的A轮融资",
+              "source_content_hash": "9676197117c46240",
+              "quote_hash": "69da0338e3ed1807ea307f6b639cc729cf3233cac86b1175a23d80811d8b712d"
+            }
+          ]
+        },
+        {
+          "label": "实体芯片系统推出计划时间",
+          "value": "2028年",
+          "observed_at": "2026-09-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6cbfc1ea08a48a66",
+              "quote": "Euclyd计划从2028年开始推出实体芯片系统",
+              "source_content_hash": "9676197117c46240",
+              "quote_hash": "d73535d206452f50cc4798f7ce15f303ed111bd932e516c3997ad1147b6777a3"
+            }
+          ]
+        },
+        {
+          "label": "目标企业客户数量",
+          "value": "到2030年服务数千家企业客户",
+          "observed_at": "2026-09-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6cbfc1ea08a48a66",
+              "quote": "力争到2030年服务数千家企业客户",
+              "source_content_hash": "9676197117c46240",
+              "quote_hash": "7a669b899d486bb650a43fceaddd722e7e4dd6dd55dfe77de6028c63ebe9c5be"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Bernardo Kastrup",
+          "quote": "人工智能正成为经济增长、科学发现和国家竞争力的基石。除非我们从根本上改变其底层基础设施，否则其潜力将受到限制。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6cbfc1ea08a48a66",
+              "quote": "人工智能正成为经济增长、科学发现和国家竞争力的基石。除非我们从根本上改变其底层基础设施，否则其潜力将受到限制。",
+              "source_content_hash": "9676197117c46240",
+              "quote_hash": "444fd9f22ba9a2be78efb649ab111a709ae6f0971e582573e2325992fd55eba7"
+            }
+          ]
+        },
+        {
+          "speaker": "Bernardo Kastrup",
+          "quote": "这笔融资将加速我们实现使命的进程，即通过提高效率、降低token成本和扩大先进人工智能的普及范围，使智能惠及更多人。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6cbfc1ea08a48a66",
+              "quote": "这笔融资将加速我们实现使命的进程，即通过提高效率、降低token成本和扩大先进人工智能的普及范围，使智能惠及更多人。",
+              "source_content_hash": "9676197117c46240",
+              "quote_hash": "a8f66f6b1b555f4cc8a41db9ec1a4a83a7ded138b8f4056617fad03e32e70b8c"
+            }
+          ]
+        },
+        {
+          "speaker": "salesforce.com",
+          "quote": "Empowered with Salesforce Service Cloud, Samsung Electronics UK & Ireland’s customer success agents have seen a 60% increase in cases being raised via digital versus traditional channels such as voice and email – with 88% of these cases resolved on first contact.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fd6d44e351307db6",
+              "quote": "Empowered with Salesforce Service Cloud, Samsung Electronics UK & Ireland’s customer success agents have seen a 60% increase in cases being raised via digital versus traditional channels such as voice and email – with 88% of these cases resolved on first contact.",
+              "source_content_hash": "a4f1a5fa3abb2e43",
+              "quote_hash": "df83a20908eb4cd1a7f53e1f7b321b9162eb896e39481573716eba2c55f5d612"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是Euclyd能否在2028年推出实体芯片系统并完成大规模商业部署验证，从而在英伟达主导的高端AI芯片市场之外建立一条以AI推理为切入点的GPU替代路径。本轮融资所依赖的已验证信号仅限于：公司已完成超过2亿欧元A轮融资，获得三星、Somerset Capital Partners、EQT旗下Scaleup Europe Fund及Innovation Industries共同领投，且阿斯麦前总裁兼首席执行官彼得·温宁克将加入担任董事会主席。但Euclyd的系统尚未经过大规模商业部署验证，产品仍处于研发阶段，尚无实体芯片系统交付，收入模式也尚未被市场验证。",
+        "validated_signals": [
+          "完成超过2亿欧元A轮融资，由三星、Somerset Capital Partners、EQT旗下Scaleup Europe Fund及Innovation Industries共同领投",
+          "阿斯麦前总裁兼首席执行官彼得·温宁克将加入Euclyd担任董事会主席",
+          "公司明确以AI推理为切入点，研发不同于GPU架构的AI芯片系统"
+        ],
+        "risks": [
+          "Euclyd的系统尚未经过大规模商业部署验证，产品仍处于研发阶段，存在技术可行性和商业化落地的不确定性",
+          "英伟达已几乎垄断高端AI芯片市场，Euclyd面临来自英伟达及谷歌、亚马逊、Meta、OpenAI等自研AI芯片的激烈竞争"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "hardware_computing",
+        "market_application_id": "chips",
+        "use_case_ids": [],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer"
+        ],
+        "sector": "AI芯片",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是Euclyd能否在2028年推出实体芯片系统并完成大规模商业部署验证，从而在英伟达主导的高端AI芯片市场之外建立一条以AI推理为切入点的GPU替代路径。本轮融资所依赖的已验证信号仅限于：公司已完成超过2亿欧元A轮融资，获得三星、Somerset Capital Partners、EQT旗下Scaleup Europe Fund及Innovation Industries共同领投，且阿斯麦前总裁兼首席执行官彼得·温宁克将加入担任董事会主席。但Euclyd的系统尚未经过大规模商业部署验证，产品仍处于研发阶段，尚无实体芯片系统交付，收入模式也尚未被市场验证。",
+          "evidence_signals": [
+            "完成超过2亿欧元A轮融资，由三星、Somerset Capital Partners、EQT旗下Scaleup Europe Fund及Innovation Industries共同领投",
+            "阿斯麦前总裁兼首席执行官彼得·温宁克将加入Euclyd担任董事会主席",
+            "公司明确以AI推理为切入点，研发不同于GPU架构的AI芯片系统"
+          ],
+          "risks": [
+            "Euclyd的系统尚未经过大规模商业部署验证，产品仍处于研发阶段，存在技术可行性和商业化落地的不确定性",
+            "英伟达已几乎垄断高端AI芯片市场，Euclyd面临来自英伟达及谷歌、亚马逊、Meta、OpenAI等自研AI芯片的激烈竞争"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "AI芯片系统",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Bernardo Kastrup",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "三星",
+          "canonical_entity_id": "EN-968e2d5b08687bf4",
+          "canonical_name": "Samsung"
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Somerset Capital Partners",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "EQT旗下Scaleup Europe Fund",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Innovation Industries",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "英伟达",
+          "canonical_entity_id": "EN-8d4321d936320802",
+          "canonical_name": "NVIDIA"
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "OpenAI",
+          "canonical_entity_id": "EN-7d3194f79e645c42",
+          "canonical_name": "OpenAI"
+        }
+      ],
+      "funding_history": [],
+      "research_sources": [
+        {
+          "source_id": "FISRC-6cbfc1ea08a48a66",
+          "source_url": "https://www.cls.cn/detail/2484090",
+          "title": "三星押注GPU替代方案赛道：荷兰初创公司获2亿欧元融资",
+          "publisher": "财联社／科创板日报",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-19T00:40:43.959Z",
+          "content_hash": "9676197117c46240",
+          "source_artifact_id": "SA-93ee69616a340fb0",
+          "raw_id": "RAW-2951750f3bdb7702"
+        },
+        {
+          "source_id": "FISRC-fd6d44e351307db6",
+          "source_url": "https://www.salesforce.com/uk/customer-stories/samsung-electronics/",
+          "title": "Samsung Electronics UK & Ireland transforms B2B services to give customers faster, smarter support",
+          "publisher": "salesforce.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-19T00:42:55.741Z",
+          "content_hash": "a4f1a5fa3abb2e43",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-19T00:43:12.319Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-375d04f7cc9746c6",
+          "confidence": 0.9,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-19T00:43:12.319Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "AI芯片系统"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "Bernardo Kastrup"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-375d04f7cc9746c6"
+      ],
+      "aggregation": {
+        "key": "EN-968e2d5b08687bf4|series_a",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-cf6f47c9a3154450",
+      "triggered_by_event_id": "EV-2c2f903622c29ba4",
+      "as_of_date": "2026-09-19",
+      "company": {
+        "entity_id": "EN-33d5a47fc56e4ba1",
+        "name": "奕行智能（北京）科技股份有限公司",
+        "full_name": "奕行智能（北京）科技股份有限公司",
+        "website": "",
+        "summary": "奕行智能是一家RISC-V云端AI算力芯片公司，自2022年起布局RISC-V+AI DSA技术路线，已完成芯片、板卡、整机、超节点、集群全栈布局，首代Epoch算力芯片实现规模化量产交付。",
+        "headquarters": "北京经开区国家信创园",
+        "founders": [
+          {
+            "name": "刘珲",
+            "role": "创始人、CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ed0092859381f876",
+                "quote": "实则是创始人刘珲及核心团队深度行业洞见、极致执行力与精准战略判断力的集中体现",
+                "source_content_hash": "299a9be6f63ac708",
+                "quote_hash": "d8aaf5e7ac4082492fd7a447e616fb6c125c86519a5ad0f4734b9673172f4f0e"
+              },
+              {
+                "source_id": "FISRC-57fa132710ceea85",
+                "quote": "创始人、CEO刘珲，拥有西北工业大学电子工程专业及英属哥伦比亚大学工商管理专业双硕士学位",
+                "source_content_hash": "c0cce647933765a9",
+                "quote_hash": "0195cd2b9d5b81b4e0b907e42255c6df12b416753e9be6917c1c4411b8e2216e"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ed0092859381f876",
+            "quote": "RISC-V云端AI算力芯片独角兽奕行智能（北京）科技股份有限公司（简称“奕行智能”）完成新一轮20亿元融资",
+            "source_content_hash": "299a9be6f63ac708",
+            "quote_hash": "0bbecb5d9b5445ae2be2da3ec04308e607d3ed8b2c98a5cc9b9a9810e2639716"
+          },
+          {
+            "source_id": "FISRC-57fa132710ceea85",
+            "quote": "成立于2022年初，奕行智能由西工大校友刘珲创立",
+            "source_content_hash": "c0cce647933765a9",
+            "quote_hash": "27434d5c759d736eb6a9f322626a174bb6d0ea25aaa07879660a5101a06b3a19"
+          }
+        ],
+        "application_entity_id": "EN-33d5a47fc56e4ba1",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "轮次未披露",
+        "amount": "20亿元",
+        "total_raised": "",
+        "announced_at": "2026-09-18",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "华泰创新",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ed0092859381f876",
+                "quote": "汇聚了 华泰创新、钟鼎资本、中芯聚源、九安医疗、仁爱资本、通富微电子、赛意产业基金、和利资本、芯鑫租赁、恒旭资本、尚颀资本、建广湛卢、容亿资本 等超20家知名投资机构",
+                "source_content_hash": "299a9be6f63ac708",
+                "quote_hash": "b0ef77952d03ea1c5566ead5cfe16d66884042d81d7ffc1aad3f6f8c428adef1"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "钟鼎资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ed0092859381f876",
+                "quote": "汇聚了 华泰创新、钟鼎资本、中芯聚源、九安医疗、仁爱资本、通富微电子、赛意产业基金、和利资本、芯鑫租赁、恒旭资本、尚颀资本、建广湛卢、容亿资本 等超20家知名投资机构",
+                "source_content_hash": "299a9be6f63ac708",
+                "quote_hash": "b0ef77952d03ea1c5566ead5cfe16d66884042d81d7ffc1aad3f6f8c428adef1"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "中芯聚源",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ed0092859381f876",
+                "quote": "汇聚了 华泰创新、钟鼎资本、中芯聚源、九安医疗、仁爱资本、通富微电子、赛意产业基金、和利资本、芯鑫租赁、恒旭资本、尚颀资本、建广湛卢、容亿资本 等超20家知名投资机构",
+                "source_content_hash": "299a9be6f63ac708",
+                "quote_hash": "b0ef77952d03ea1c5566ead5cfe16d66884042d81d7ffc1aad3f6f8c428adef1"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "九安医疗",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ed0092859381f876",
+                "quote": "汇聚了 华泰创新、钟鼎资本、中芯聚源、九安医疗、仁爱资本、通富微电子、赛意产业基金、和利资本、芯鑫租赁、恒旭资本、尚颀资本、建广湛卢、容亿资本 等超20家知名投资机构",
+                "source_content_hash": "299a9be6f63ac708",
+                "quote_hash": "b0ef77952d03ea1c5566ead5cfe16d66884042d81d7ffc1aad3f6f8c428adef1"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "仁爱资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ed0092859381f876",
+                "quote": "汇聚了 华泰创新、钟鼎资本、中芯聚源、九安医疗、仁爱资本、通富微电子、赛意产业基金、和利资本、芯鑫租赁、恒旭资本、尚颀资本、建广湛卢、容亿资本 等超20家知名投资机构",
+                "source_content_hash": "299a9be6f63ac708",
+                "quote_hash": "b0ef77952d03ea1c5566ead5cfe16d66884042d81d7ffc1aad3f6f8c428adef1"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "通富微电子",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ed0092859381f876",
+                "quote": "汇聚了 华泰创新、钟鼎资本、中芯聚源、九安医疗、仁爱资本、通富微电子、赛意产业基金、和利资本、芯鑫租赁、恒旭资本、尚颀资本、建广湛卢、容亿资本 等超20家知名投资机构",
+                "source_content_hash": "299a9be6f63ac708",
+                "quote_hash": "b0ef77952d03ea1c5566ead5cfe16d66884042d81d7ffc1aad3f6f8c428adef1"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "赛意产业基金",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ed0092859381f876",
+                "quote": "汇聚了 华泰创新、钟鼎资本、中芯聚源、九安医疗、仁爱资本、通富微电子、赛意产业基金、和利资本、芯鑫租赁、恒旭资本、尚颀资本、建广湛卢、容亿资本 等超20家知名投资机构",
+                "source_content_hash": "299a9be6f63ac708",
+                "quote_hash": "b0ef77952d03ea1c5566ead5cfe16d66884042d81d7ffc1aad3f6f8c428adef1"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "和利资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ed0092859381f876",
+                "quote": "汇聚了 华泰创新、钟鼎资本、中芯聚源、九安医疗、仁爱资本、通富微电子、赛意产业基金、和利资本、芯鑫租赁、恒旭资本、尚颀资本、建广湛卢、容亿资本 等超20家知名投资机构",
+                "source_content_hash": "299a9be6f63ac708",
+                "quote_hash": "b0ef77952d03ea1c5566ead5cfe16d66884042d81d7ffc1aad3f6f8c428adef1"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "芯鑫租赁",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ed0092859381f876",
+                "quote": "汇聚了 华泰创新、钟鼎资本、中芯聚源、九安医疗、仁爱资本、通富微电子、赛意产业基金、和利资本、芯鑫租赁、恒旭资本、尚颀资本、建广湛卢、容亿资本 等超20家知名投资机构",
+                "source_content_hash": "299a9be6f63ac708",
+                "quote_hash": "b0ef77952d03ea1c5566ead5cfe16d66884042d81d7ffc1aad3f6f8c428adef1"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "恒旭资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ed0092859381f876",
+                "quote": "汇聚了 华泰创新、钟鼎资本、中芯聚源、九安医疗、仁爱资本、通富微电子、赛意产业基金、和利资本、芯鑫租赁、恒旭资本、尚颀资本、建广湛卢、容亿资本 等超20家知名投资机构",
+                "source_content_hash": "299a9be6f63ac708",
+                "quote_hash": "b0ef77952d03ea1c5566ead5cfe16d66884042d81d7ffc1aad3f6f8c428adef1"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "尚颀资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ed0092859381f876",
+                "quote": "汇聚了 华泰创新、钟鼎资本、中芯聚源、九安医疗、仁爱资本、通富微电子、赛意产业基金、和利资本、芯鑫租赁、恒旭资本、尚颀资本、建广湛卢、容亿资本 等超20家知名投资机构",
+                "source_content_hash": "299a9be6f63ac708",
+                "quote_hash": "b0ef77952d03ea1c5566ead5cfe16d66884042d81d7ffc1aad3f6f8c428adef1"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "建广湛卢",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ed0092859381f876",
+                "quote": "汇聚了 华泰创新、钟鼎资本、中芯聚源、九安医疗、仁爱资本、通富微电子、赛意产业基金、和利资本、芯鑫租赁、恒旭资本、尚颀资本、建广湛卢、容亿资本 等超20家知名投资机构",
+                "source_content_hash": "299a9be6f63ac708",
+                "quote_hash": "b0ef77952d03ea1c5566ead5cfe16d66884042d81d7ffc1aad3f6f8c428adef1"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "容亿资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ed0092859381f876",
+                "quote": "汇聚了 华泰创新、钟鼎资本、中芯聚源、九安医疗、仁爱资本、通富微电子、赛意产业基金、和利资本、芯鑫租赁、恒旭资本、尚颀资本、建广湛卢、容亿资本 等超20家知名投资机构",
+                "source_content_hash": "299a9be6f63ac708",
+                "quote_hash": "b0ef77952d03ea1c5566ead5cfe16d66884042d81d7ffc1aad3f6f8c428adef1"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "中国移动链长基金",
+            "role": "战略投资",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-57fa132710ceea85",
+                "quote": "奕行智能（EVAS Intelligence）宣布获得中国移动链长基金数亿元的战略投资",
+                "source_content_hash": "c0cce647933765a9",
+                "quote_hash": "daf5f97a76979e8d3685cbef5cf51547165bbfb39eb72e3aa0b19033c00ef405"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "北京经开区产业升级基金（亦国投）",
+            "role": "B轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-57fa132710ceea85",
+                "quote": "奕行智能宣布完成15亿元人民币B轮融资，由北京经开区产业升级基金（亦国投）、北京高精尖产业发展投资基金、北京信息产业发展投资基金、北京人工智能产业投资基金联合领投",
+                "source_content_hash": "c0cce647933765a9",
+                "quote_hash": "116269c4a7e2823f89d72a992d115671e4aea0670e17ae2d0cdbc0a418e2d8c6"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "北京高精尖产业发展投资基金",
+            "role": "B轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-57fa132710ceea85",
+                "quote": "奕行智能宣布完成15亿元人民币B轮融资，由北京经开区产业升级基金（亦国投）、北京高精尖产业发展投资基金、北京信息产业发展投资基金、北京人工智能产业投资基金联合领投",
+                "source_content_hash": "c0cce647933765a9",
+                "quote_hash": "116269c4a7e2823f89d72a992d115671e4aea0670e17ae2d0cdbc0a418e2d8c6"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "北京信息产业发展投资基金",
+            "role": "B轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-57fa132710ceea85",
+                "quote": "奕行智能宣布完成15亿元人民币B轮融资，由北京经开区产业升级基金（亦国投）、北京高精尖产业发展投资基金、北京信息产业发展投资基金、北京人工智能产业投资基金联合领投",
+                "source_content_hash": "c0cce647933765a9",
+                "quote_hash": "116269c4a7e2823f89d72a992d115671e4aea0670e17ae2d0cdbc0a418e2d8c6"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "北京人工智能产业投资基金",
+            "role": "B轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-57fa132710ceea85",
+                "quote": "奕行智能宣布完成15亿元人民币B轮融资，由北京经开区产业升级基金（亦国投）、北京高精尖产业发展投资基金、北京信息产业发展投资基金、北京人工智能产业投资基金联合领投",
+                "source_content_hash": "c0cce647933765a9",
+                "quote_hash": "116269c4a7e2823f89d72a992d115671e4aea0670e17ae2d0cdbc0a418e2d8c6"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "广汽资本",
+            "role": "Pre-A轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-afa0818eda6a6b72",
+                "quote": "本轮融资由 广汽资本 领投、 东方富海 联合领投",
+                "source_content_hash": "502650dfb353872d",
+                "quote_hash": "2f57307a3f960d3b9eb292e180b55fc17d3a40bd876664581ad741cd3f95ad11"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "东方富海",
+            "role": "Pre-A轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-afa0818eda6a6b72",
+                "quote": "本轮融资由 广汽资本 领投、 东方富海 联合领投",
+                "source_content_hash": "502650dfb353872d",
+                "quote_hash": "2f57307a3f960d3b9eb292e180b55fc17d3a40bd876664581ad741cd3f95ad11"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "广州南沙区南金基金",
+            "role": "Pre-A+轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-44c45563314497fe",
+                "quote": "本轮融资由广州南沙科金控股集团下属广州南沙区南金基金领投，华侨银行集团旗下狮城资本跟投",
+                "source_content_hash": "5dbe7af466461203",
+                "quote_hash": "c7ad01d438c488e3713c3c59adc74a0f39c03256cdb977948a0116b5a2b7c9ec"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "狮城资本",
+            "role": "Pre-A+轮跟投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-44c45563314497fe",
+                "quote": "本轮融资由广州南沙科金控股集团下属广州南沙区南金基金领投，华侨银行集团旗下狮城资本跟投",
+                "source_content_hash": "5dbe7af466461203",
+                "quote_hash": "c7ad01d438c488e3713c3c59adc74a0f39c03256cdb977948a0116b5a2b7c9ec"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ed0092859381f876",
+            "quote": "投资界获悉，RISC-V云端AI算力芯片独角兽奕行智能（北京）科技股份有限公司（简称“奕行智能”）完成新一轮20亿元融资，据估计投后估值接近150亿元。",
+            "source_content_hash": "299a9be6f63ac708",
+            "quote_hash": "32470d7453e64aac48ffdddbbb2d83920d33a01c1d4761e33094f783d6fc50c8"
+          },
+          {
+            "source_id": "FISRC-ed0092859381f876",
+            "quote": "奕行智能（北京）科技股份有限公司（简称“奕行智能”）完成新一轮20亿元融资，据估计投后估值接近150亿元",
+            "source_content_hash": "299a9be6f63ac708",
+            "quote_hash": "bf63ed1f43336a965a9e289b954466c6ed5b8abadaeaa3bb4f05a6dcfe643981"
+          }
+        ],
+        "round_code": "undisclosed",
+        "round_original": "新一轮",
+        "amount_original": "20亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-2c2f903622c29ba4",
+            "round_original": "新一轮",
+            "amount": "20亿元",
+            "announced_at": "2026-09-18",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ed0092859381f876",
+                "quote": "投资界获悉，RISC-V云端AI算力芯片独角兽奕行智能（北京）科技股份有限公司（简称“奕行智能”）完成新一轮20亿元融资，据估计投后估值接近150亿元。",
+                "source_content_hash": "299a9be6f63ac708",
+                "quote_hash": "32470d7453e64aac48ffdddbbb2d83920d33a01c1d4761e33094f783d6fc50c8"
+              },
+              {
+                "source_id": "FISRC-ed0092859381f876",
+                "quote": "奕行智能（北京）科技股份有限公司（简称“奕行智能”）完成新一轮20亿元融资，据估计投后估值接近150亿元",
+                "source_content_hash": "299a9be6f63ac708",
+                "quote_hash": "bf63ed1f43336a965a9e289b954466c6ed5b8abadaeaa3bb4f05a6dcfe643981"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "partially_disclosed"
+      },
+      "products": [
+        {
+          "name": "Epoch系列AI计算芯片",
+          "description": "基于RISC-V开源指令集+类TPU架构+VISA虚拟指令集的云端高性能AI芯片，首代产品已实现规模化量产交付，浮点计算性能、互联带宽及大参数量模型Token吞吐性能处于国内量产产品第一梯队。",
+          "target_customers": "数据中心、运营商、智算中心等云端算力客户",
+          "features": [
+            "RISC-V开源指令集",
+            "类TPU架构",
+            "VISA虚拟指令集",
+            "双脉动流水矩阵运算引擎",
+            "4D DMA引擎"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ed0092859381f876",
+              "quote": "其首代Epoch算力芯片产品已实现规模化量产交付",
+              "source_content_hash": "299a9be6f63ac708",
+              "quote_hash": "cb5b4bedb8dbc126fc70bc87d58eba89ed7072709670fb35c762d5ca6dbb76a8"
+            },
+            {
+              "source_id": "FISRC-57fa132710ceea85",
+              "quote": "该系列芯片基于“RISC-V开源指令集+类TPU架构+VISA虚拟指令集”的差异化技术路线",
+              "source_content_hash": "c0cce647933765a9",
+              "quote_hash": "c967ebc1b500e75f282028f809d7ee1823c607b89c28ec164febe693c3a3aa76"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "RISC-V AI算力超节点",
+          "description": "业内首款RISC-V超节点，已量产上线，并在2026世界人工智能大会发布后两个多月完成首套集群在运营商数据中心的部署落地。",
+          "target_customers": "运营商数据中心、智算中心",
+          "features": [
+            "自研高速互联技术ELink",
+            "高带宽、低延迟、高度可扩展的系统级互联"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ed0092859381f876",
+              "quote": "业内首款RISC-V超节点也已量产上线",
+              "source_content_hash": "299a9be6f63ac708",
+              "quote_hash": "43a4655a79aef28ed665b57d4d2ea9b06482cc8c577de4d35bedffe29812888b"
+            },
+            {
+              "source_id": "FISRC-ed0092859381f876",
+              "quote": "2026世界人工智能大会上，奕行智能发布业界首个RISC-V AI算力超节点，此后仅用两个多月就完成首套集群在运营商数据中心的部署落地",
+              "source_content_hash": "299a9be6f63ac708",
+              "quote_hash": "9609a0f45d5f794f920aa1dfa70019bb796c83960da54869157c4b5a49722fa1"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "ELYNX系列车载AI芯片",
+          "description": "面向智能汽车场景的车载AI芯片，已开发两代并规模化量产。",
+          "target_customers": "主机厂、汽车行业客户",
+          "features": [
+            "面向座舱AI画质处理",
+            "面向高阶辅助驾驶"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-57fa132710ceea85",
+              "quote": "在先后开发了两代车载AI芯片并规模化量产的同时，顺应大模型应用场景爆发式增长的趋势，奕行智能团队还结合自研的AI计算架构，定义并开发了Epoch AI计算芯片",
+              "source_content_hash": "c0cce647933765a9",
+              "quote_hash": "5366e1c89c7f399ff7aaf0a151b6882e21100f085adc43fb31c74adf2fb9d720"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "谷歌TPU",
+          "product": "TPU",
+          "scenario": "云端AI计算，以极致能耗比抢占市场",
+          "target_customer": "云端算力客户",
+          "funding_summary": "",
+          "core_difference": "奕行智能采用RISC-V开源指令集，不受海外生态约束；谷歌TPU采用自研闭源架构。奕行智能已完成芯片、板卡、整机、超节点、集群全栈布局，而TPU主要作为谷歌云内部算力产品。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ed0092859381f876",
+              "quote": "产业界不少玩家一直渴望撬动GPU的市场份额，谷歌的TPU就是其中之一，以极致能耗比抢占市场",
+              "source_content_hash": "299a9be6f63ac708",
+              "quote_hash": "508667d04e33d280dd00feb1613efa6702d26bbe374db7d21a3ed4e8a6974280"
+            },
+            {
+              "source_id": "FISRC-ed0092859381f876",
+              "quote": "该架构与TPU有着相似之处，如同样采用RISC-V内核、内置了性能强大的双脉动流水矩阵运算引擎",
+              "source_content_hash": "299a9be6f63ac708",
+              "quote_hash": "450819695c26ed39f3ae641ce080e5885d5ecbd48a332a76e62127e542024bee"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "20亿元",
+          "observed_at": "2026-09-18",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ed0092859381f876",
+              "quote": "完成新一轮20亿元融资",
+              "source_content_hash": "299a9be6f63ac708",
+              "quote_hash": "3d31231a1dc564d98841cdb5cfc17cc965f2dee3dfbd3236e921baea5fd54d31"
+            }
+          ]
+        },
+        {
+          "label": "投后估值",
+          "value": "接近150亿元",
+          "observed_at": "2026-09-18",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ed0092859381f876",
+              "quote": "据估计投后估值接近150亿元",
+              "source_content_hash": "299a9be6f63ac708",
+              "quote_hash": "2fc3adf4bee47b1ab7083dd92d4ba83907f4e96dc9be33ba2a6fd898dedc4189"
+            }
+          ]
+        },
+        {
+          "label": "B轮融资金额",
+          "value": "15亿元",
+          "observed_at": "2026-05-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-57fa132710ceea85",
+              "quote": "奕行智能宣布完成15亿元人民币B轮融资",
+              "source_content_hash": "c0cce647933765a9",
+              "quote_hash": "94479839ae3d0f78019d4d012906117c3f9d5792d364bcbe4665d896de6870a1"
+            }
+          ]
+        },
+        {
+          "label": "中国移动链长基金战略投资金额",
+          "value": "数亿元",
+          "observed_at": "2026-05-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-57fa132710ceea85",
+              "quote": "奕行智能（EVAS Intelligence）宣布获得中国移动链长基金数亿元的战略投资",
+              "source_content_hash": "c0cce647933765a9",
+              "quote_hash": "daf5f97a76979e8d3685cbef5cf51547165bbfb39eb72e3aa0b19033c00ef405"
+            }
+          ]
+        },
+        {
+          "label": "天使轮融资金额",
+          "value": "近2亿元",
+          "observed_at": "2022-02",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ed0092859381f876",
+              "quote": "刚成立不久，公司就宣布完成近2亿元天使轮融资",
+              "source_content_hash": "299a9be6f63ac708",
+              "quote_hash": "d8856c571ae569776bbca4696387f849ee9eadb886162b224ad348fdc3df272a"
+            }
+          ]
+        },
+        {
+          "label": "Pre-A轮融资金额",
+          "value": "超3亿元",
+          "observed_at": "2022-10-24",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-afa0818eda6a6b72",
+              "quote": "奕行智能科技（广州）有限公司（以下简称“ 奕行智能 ”）近日宣布完成 超3亿元Pre-A轮融资",
+              "source_content_hash": "502650dfb353872d",
+              "quote_hash": "0ce685846a758fc29bf45ab843517fb4395498633b04fe954a5f686c041293f3"
+            }
+          ]
+        },
+        {
+          "label": "Pre-A+轮融资金额",
+          "value": "超1亿元",
+          "observed_at": "2023-11-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-44c45563314497fe",
+              "quote": "近日汽车AI计算芯片公司「奕行智能」完成了超亿元人民币Pre-A+轮融资",
+              "source_content_hash": "5dbe7af466461203",
+              "quote_hash": "e42a06ad329b7fb867775da7acb1ade3a031f025360bde8e2464f950bd893f43"
+            }
+          ]
+        },
+        {
+          "label": "本轮投资机构数量",
+          "value": "超20家",
+          "observed_at": "2026-09-18",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ed0092859381f876",
+              "quote": "等超20家知名投资机构",
+              "source_content_hash": "299a9be6f63ac708",
+              "quote_hash": "1f46e28c97825f879791b7f2b34bad95bd2f9b6ffb6c46bd80fdf6481242a8a1"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "刘珲",
+          "quote": "AI产业正经历从‘参数竞赛’向‘价值落地’的深刻跃迁",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-57fa132710ceea85",
+              "quote": "刘珲也有相同的判断，“AI产业正经历从‘参数竞赛’向‘价值落地’的深刻跃迁”",
+              "source_content_hash": "c0cce647933765a9",
+              "quote_hash": "2131887a6a3e6a0e5a9a9a57d93e6301a6f8c21792fdb9d00aa4d5eadc742033"
+            }
+          ]
+        },
+        {
+          "speaker": "中国移动链长基金",
+          "quote": "算力网络是中国移动重要的战略方向。奕行智能在RISC-V AI计算芯片及计算平台领域展现出的技术创新、能效表现和开放生态动能，与‘算网融合’长期规划高度契合。期待双方在智算中心、云边协同及新型AI基础设施建设等领域深化协同，共同推动国产算力生态高质量发展。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-57fa132710ceea85",
+              "quote": "中国移动链长基金表示：“算力网络是中国移动重要的战略方向。奕行智能在RISC-V AI计算芯片及计算平台领域展现出的技术创新、能效表现和开放生态动能，与‘算网融合’长期规划高度契合。期待双方在智算中心、云边协同及新型AI基础设施建设等领域深化协同，共同推动国产算力生态高质量发展。”",
+              "source_content_hash": "c0cce647933765a9",
+              "quote_hash": "e8ceeea775409887f312ce92b47aecc8c3e37590f22508f507ce6d70413d0a94"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是RISC-V开源指令集在云端AI算力领域对x86/ARM闭源生态的替代能力，以及奕行智能从芯片到集群的全栈系统级交付能力。本轮20亿元融资对应投后估值接近150亿元，估值所依赖的已验证信号包括：首代Epoch芯片已实现规模化量产交付、业内首款RISC-V超节点量产上线、首套集群在运营商数据中心完成部署落地，以及中国移动链长基金的战略投资背书。证据边界在于：来源未披露本轮融资的具体领投方、未披露营收或客户合同金额，也未提供与英伟达GPU或华为昇腾的第三方性能对比数据，估值合理性无法通过财务指标独立验证。",
+        "validated_signals": [
+          "首代Epoch算力芯片已实现规模化量产交付",
+          "业内首款RISC-V超节点已量产上线",
+          "首套集群在运营商数据中心完成部署落地",
+          "中国移动链长基金完成数亿元战略投资",
+          "北京国资组团完成15亿元B轮融资"
+        ],
+        "risks": [
+          "RISC-V云端AI算力生态相比CUDA等成熟生态仍处于早期，软件工具链和开发者生态的完备性尚未在来源中得到验证",
+          "来源未披露本轮融资的领投方及具体估值依据，投后估值接近150亿元的说法缺乏独立财务验证"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "hardware_computing",
+        "market_application_id": "chips",
+        "use_case_ids": [
+          "physical_automation"
+        ],
+        "industry_ids": [
+          "automotive_transportation"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "RISC-V云端AI算力芯片",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是RISC-V开源指令集在云端AI算力领域对x86/ARM闭源生态的替代能力，以及奕行智能从芯片到集群的全栈系统级交付能力。本轮20亿元融资对应投后估值接近150亿元，估值所依赖的已验证信号包括：首代Epoch芯片已实现规模化量产交付、业内首款RISC-V超节点量产上线、首套集群在运营商数据中心完成部署落地，以及中国移动链长基金的战略投资背书。证据边界在于：来源未披露本轮融资的具体领投方、未披露营收或客户合同金额，也未提供与英伟达GPU或华为昇腾的第三方性能对比数据，估值合理性无法通过财务指标独立验证。",
+          "evidence_signals": [
+            "首代Epoch算力芯片已实现规模化量产交付",
+            "业内首款RISC-V超节点已量产上线",
+            "首套集群在运营商数据中心完成部署落地",
+            "中国移动链长基金完成数亿元战略投资",
+            "北京国资组团完成15亿元B轮融资"
+          ],
+          "risks": [
+            "RISC-V云端AI算力生态相比CUDA等成熟生态仍处于早期，软件工具链和开发者生态的完备性尚未在来源中得到验证",
+            "来源未披露本轮融资的领投方及具体估值依据，投后估值接近150亿元的说法缺乏独立财务验证"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Epoch系列AI计算芯片",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "RISC-V AI算力超节点",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "ELYNX系列车载AI芯片",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "刘珲",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "华泰创新",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "钟鼎资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "中芯聚源",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "九安医疗",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "仁爱资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "通富微电子",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "赛意产业基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "和利资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "芯鑫租赁",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "恒旭资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "尚颀资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "建广湛卢",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "容亿资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "中国移动链长基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "北京经开区产业升级基金（亦国投）",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "北京高精尖产业发展投资基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "北京信息产业发展投资基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "北京人工智能产业投资基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "广汽资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "东方富海",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "广州南沙区南金基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "狮城资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "谷歌TPU",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-2c2f903622c29ba4",
+          "date": "2026-09-18",
+          "title": "奕行智能完成新一轮20亿元融资，投后估值近150亿",
+          "amount": "20亿元",
+          "source_refs": [
+            "SA-cd8617c67617dd16"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-ed0092859381f876",
+          "source_url": "https://news.pedaily.cn/202609/569236.shtml",
+          "title": "首发| 奕行智能完成新一轮20亿元融资，投后估值近150亿",
+          "publisher": "投资界",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-19T00:40:43.910Z",
+          "content_hash": "299a9be6f63ac708",
+          "source_artifact_id": "SA-cd8617c67617dd16",
+          "raw_id": "RAW-c2086dc13c22f8c3"
+        },
+        {
+          "source_id": "FISRC-57fa132710ceea85",
+          "source_url": "https://finance.sina.com.cn/tech/roll/2026-05-08/doc-inhxcyyr4353533.shtml",
+          "title": "首发|奕行智能融资数亿元，中国移动链长基金投了_新浪科技_新浪网",
+          "publisher": "finance.sina.com.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-19T00:42:27.135Z",
+          "content_hash": "c0cce647933765a9",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-44c45563314497fe",
+          "source_url": "https://news.qq.com/rain/a/20231114A01CK700",
+          "title": "36氪首发｜奕行智能EVAS完成超亿元Pre-A+轮融资，将推出车用AI芯片_腾讯新闻",
+          "publisher": "news.qq.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-19T00:42:29.425Z",
+          "content_hash": "5dbe7af466461203",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-afa0818eda6a6b72",
+          "source_url": "https://news.pedaily.cn/202210/502518.shtml",
+          "title": "首发 | 「奕行智能」完成超3亿Pre-A轮融资，广汽资本、东方富海联合领投_投资界",
+          "publisher": "news.pedaily.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-19T00:42:28.372Z",
+          "content_hash": "502650dfb353872d",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-19T00:42:59.564Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-2c2f903622c29ba4",
+          "confidence": 0.85,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-19T00:42:59.564Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "ELYNX系列车载AI芯片",
+            "Epoch系列AI计算芯片",
+            "RISC-V AI算力超节点"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "刘珲"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-2c2f903622c29ba4"
+      ],
+      "aggregation": {
+        "key": "EN-33d5a47fc56e4ba1|undisclosed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-77f7509a57ee32b1",
+      "triggered_by_event_id": "EV-1043d78cc040ab30",
+      "as_of_date": "2026-09-19",
+      "company": {
+        "entity_id": "EN-295219ea74639f0b",
+        "name": "上海新生探途科技有限公司",
+        "full_name": "上海新生探途科技有限公司",
+        "website": "",
+        "summary": "新生探途是一家由字节跳动AI制药业务线拆分而来的AI制药公司，前身为字节跳动内部药物发现团队，2021年由刘凯牵头组建，2026年6月业务从字节跳动分拆独立运营，核心团队整体迁入新主体。公司运营多个生物分子结构预测与设计、抗体设计优化以及药物发现相关平台，研发管线中包含全球首个可同时靶向IL-17家族全部三种二聚体类型的小分子抑制剂。",
+        "headquarters": "上海市杨浦区",
+        "founders": [
+          {
+            "name": "刘凯",
+            "role": "公司负责人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a429bfa589657e6f",
+                "quote": "公司负责人为刘凯",
+                "source_content_hash": "782fe6da734543a3",
+                "quote_hash": "2471c2b3b9043beafa02a73a7795e36ae9e03d1f12a459caa50f254c06722545"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "约50人",
+          "observed_at": "2026-09-16",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a429bfa589657e6f",
+              "quote": "核心团队约50人",
+              "source_content_hash": "782fe6da734543a3",
+              "quote_hash": "10921f52235363ae23c62ba75bc557c4e066774fcddd9134a7bdb754b9cde8a5"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-a429bfa589657e6f",
+            "quote": "新生探途成立于2026年7月，总部位于上海市杨浦区，是一家由字节跳动AI制药业务线拆分而来的AI制药公司。",
+            "source_content_hash": "782fe6da734543a3",
+            "quote_hash": "2395dbaf53b188a4a4abd8bd7b33817acae9382876408f1b4bed04b5402a585f"
+          }
+        ],
+        "application_entity_id": "EN-295219ea74639f0b",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "首次外部融资",
+        "amount": "2.9亿美元",
+        "total_raised": "2.9亿美元",
+        "announced_at": "2026-09-18",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "红杉中国",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a429bfa589657e6f",
+                "quote": "投资方为红杉中国、IDG资本、高瓴创投、五源资本、高榕创投、春华创投及包括中国生物制药在内的多家医药产业集团。",
+                "source_content_hash": "782fe6da734543a3",
+                "quote_hash": "a69fa25c057f3d12ac7884cbc859b32922cccc8d933e1b6240e48e03c1cce459"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "IDG资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a429bfa589657e6f",
+                "quote": "投资方为红杉中国、IDG资本、高瓴创投、五源资本、高榕创投、春华创投及包括中国生物制药在内的多家医药产业集团。",
+                "source_content_hash": "782fe6da734543a3",
+                "quote_hash": "a69fa25c057f3d12ac7884cbc859b32922cccc8d933e1b6240e48e03c1cce459"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "高瓴创投",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a429bfa589657e6f",
+                "quote": "投资方为红杉中国、IDG资本、高瓴创投、五源资本、高榕创投、春华创投及包括中国生物制药在内的多家医药产业集团。",
+                "source_content_hash": "782fe6da734543a3",
+                "quote_hash": "a69fa25c057f3d12ac7884cbc859b32922cccc8d933e1b6240e48e03c1cce459"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "五源资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a429bfa589657e6f",
+                "quote": "投资方为红杉中国、IDG资本、高瓴创投、五源资本、高榕创投、春华创投及包括中国生物制药在内的多家医药产业集团。",
+                "source_content_hash": "782fe6da734543a3",
+                "quote_hash": "a69fa25c057f3d12ac7884cbc859b32922cccc8d933e1b6240e48e03c1cce459"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "高榕创投",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a429bfa589657e6f",
+                "quote": "投资方为红杉中国、IDG资本、高瓴创投、五源资本、高榕创投、春华创投及包括中国生物制药在内的多家医药产业集团。",
+                "source_content_hash": "782fe6da734543a3",
+                "quote_hash": "a69fa25c057f3d12ac7884cbc859b32922cccc8d933e1b6240e48e03c1cce459"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "春华创投",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a429bfa589657e6f",
+                "quote": "投资方为红杉中国、IDG资本、高瓴创投、五源资本、高榕创投、春华创投及包括中国生物制药在内的多家医药产业集团。",
+                "source_content_hash": "782fe6da734543a3",
+                "quote_hash": "a69fa25c057f3d12ac7884cbc859b32922cccc8d933e1b6240e48e03c1cce459"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "中国生物制药",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a429bfa589657e6f",
+                "quote": "投资方为红杉中国、IDG资本、高瓴创投、五源资本、高榕创投、春华创投及包括中国生物制药在内的多家医药产业集团。",
+                "source_content_hash": "782fe6da734543a3",
+                "quote_hash": "a69fa25c057f3d12ac7884cbc859b32922cccc8d933e1b6240e48e03c1cce459"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-d487304658d16938",
+            "quote": "9月16日，字节跳动分拆的AI制药公司新生探途（Anew Labs）完成首轮外部融资2.9亿美元。",
+            "source_content_hash": "d8cf347db94effa8",
+            "quote_hash": "5bf714f370c34003502c4397dd5b9a3626f776fe4b73d61ba4bfe31d03c1e5b4"
+          },
+          {
+            "source_id": "FISRC-fd7013435fecc4cf",
+            "quote": "近日，由字节跳动分拆出来的AI制药公司新生探途（Anew Labs）宣布完成首轮天使轮融资，融资金额2.9亿美元，投后估值达15亿美元。",
+            "source_content_hash": "746e4189cef7587f",
+            "quote_hash": "361800e78c9bc91340cc0458f44b027aa552f0414bc48ddab8172f3be5d8f215"
+          }
+        ],
+        "round_code": "first_external",
+        "round_original": "首次外部融资",
+        "amount_original": "2.9亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 290000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.9 亿美元"
+        },
+        "total_raised_original": "2.9亿美元",
+        "total_raised_normalized": {
+          "currency": "USD",
+          "value": 290000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.9 亿美元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-1043d78cc040ab30",
+            "round_original": "首次外部融资",
+            "amount": "2.9亿美元",
+            "announced_at": "2026-09-18",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d487304658d16938",
+                "quote": "9月16日，字节跳动分拆的AI制药公司新生探途（Anew Labs）完成首轮外部融资2.9亿美元。",
+                "source_content_hash": "d8cf347db94effa8",
+                "quote_hash": "5bf714f370c34003502c4397dd5b9a3626f776fe4b73d61ba4bfe31d03c1e5b4"
+              },
+              {
+                "source_id": "FISRC-fd7013435fecc4cf",
+                "quote": "近日，由字节跳动分拆出来的AI制药公司新生探途（Anew Labs）宣布完成首轮天使轮融资，融资金额2.9亿美元，投后估值达15亿美元。",
+                "source_content_hash": "746e4189cef7587f",
+                "quote_hash": "361800e78c9bc91340cc0458f44b027aa552f0414bc48ddab8172f3be5d8f215"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "AnewFold",
+          "description": "新生探途公开披露的产品组合之一，属于生物分子结构预测与设计相关平台。",
+          "target_customers": "",
+          "features": [],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fd7013435fecc4cf",
+              "quote": "截至目前，公司公开披露的产品组合包括AnewFold、AnewSampling、AnewOmni、AnewDesign和AnewMind",
+              "source_content_hash": "746e4189cef7587f",
+              "quote_hash": "f5a7b1f41849fce48bbed035b0238b43efcbdc29c01134b3de0cd9c256853182"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Protenix",
+          "description": "早期发布的分子结构预测模型，当前已迭代至v2版本。",
+          "target_customers": "",
+          "features": [
+            "分子结构预测"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a429bfa589657e6f",
+              "quote": "早期发布分子结构预测模型Protenix与Seedfold；当前迭代Protenix至v2版本",
+              "source_content_hash": "782fe6da734543a3",
+              "quote_hash": "e52a1de4773408bbf29bf1d01a39f3342f696ced4cbde7512dba37ef05963fd8"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "PXDesign",
+          "description": "蛋白结合剂设计工具，属于新生探途搭建的端到端AI药物研发平台的一部分。",
+          "target_customers": "",
+          "features": [
+            "蛋白结合剂设计"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a429bfa589657e6f",
+              "quote": "推出蛋白结合剂设计工具PXDesign，搭建起端到端AI药物研发平台",
+              "source_content_hash": "782fe6da734543a3",
+              "quote_hash": "f42eb7c37d702d069ed5c94c54a0fd694f8c041536c7f63f62c0d3fc69b102b6"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "英矽智能",
+          "product": "生成式人工智能药物开发工具",
+          "scenario": "AI驱动的药物发现与临床开发",
+          "target_customer": "药企及自身管线开发",
+          "funding_summary": "",
+          "core_difference": "英矽智能已利用生成式人工智能工具开发了至少28种药物，其中近一半已进入临床阶段，并与礼来达成价值27.5亿美元的协议；新生探途目前披露的IL-17小分子抑制剂仍处于临床前阶段。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a429bfa589657e6f",
+              "quote": "英矽智能已利用生成式人工智能工具开发了至少28种药物，其中近一半已进入临床阶段；与礼来达成价值27.5亿美元的协议",
+              "source_content_hash": "782fe6da734543a3",
+              "quote_hash": "18acba4300ea0cede547af2009346218b4537ca7178510bcdfb573a6aabbeac9"
+            },
+            {
+              "source_id": "FISRC-a429bfa589657e6f",
+              "quote": "已披露一款处在临床前阶段的IL-17小分子抑制剂",
+              "source_content_hash": "782fe6da734543a3",
+              "quote_hash": "76e26892d39f35b817f400bd91623b3fae1d0258cfba27d90bdf81330b76183c"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "晶泰科技",
+          "product": "AiTEM人工智能制剂创新平台",
+          "scenario": "AI赋能制剂研发与临床开发",
+          "target_customer": "药企",
+          "funding_summary": "",
+          "core_difference": "晶泰科技自研的AiTEM平台已在恒瑞医药完成本地化部署，其核心产品MTS-004成功达到III期临床试验主要终点；新生探途的IL-17小分子抑制剂仍处于临床前阶段。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a429bfa589657e6f",
+              "quote": "晶泰科技自研的AiTEM人工智能制剂创新平台在恒瑞医药完成本地化部署；其核心产品MTS-004成功达到III期临床试验主要终点",
+              "source_content_hash": "782fe6da734543a3",
+              "quote_hash": "673cc95f34212b6c449a6c26d4ad06df26e6f6cf8ffd97b83b0d4ed482bef99c"
+            },
+            {
+              "source_id": "FISRC-a429bfa589657e6f",
+              "quote": "已披露一款处在临床前阶段的IL-17小分子抑制剂",
+              "source_content_hash": "782fe6da734543a3",
+              "quote_hash": "76e26892d39f35b817f400bd91623b3fae1d0258cfba27d90bdf81330b76183c"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "德睿智药",
+          "product": "AI辅助设计小分子GLP-1受体激动剂MDR-001",
+          "scenario": "AI辅助小分子药物设计与临床开发",
+          "target_customer": "",
+          "funding_summary": "",
+          "core_difference": "德睿智药自主研发的MDR-001已在中国启动III期临床试验；新生探途的IL-17小分子抑制剂仍处于临床前阶段。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a429bfa589657e6f",
+              "quote": "德睿智药自主研发的AI辅助设计小分子GLP-1受体激动剂MDR-001在中国启动III期临床试验。",
+              "source_content_hash": "782fe6da734543a3",
+              "quote_hash": "eece089ab503661d88e71c4cf565b384b3072d3a79b779028aec9f8f201ce20f"
+            },
+            {
+              "source_id": "FISRC-a429bfa589657e6f",
+              "quote": "已披露一款处在临床前阶段的IL-17小分子抑制剂",
+              "source_content_hash": "782fe6da734543a3",
+              "quote_hash": "76e26892d39f35b817f400bd91623b3fae1d0258cfba27d90bdf81330b76183c"
+            }
+          ],
+          "entity_id": "EN-ed8ff30f2dcaf9d6"
+        }
+      ],
+      "metrics": [
+        {
+          "label": "投后估值",
+          "value": "15亿美元",
+          "observed_at": "2026-09-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fd7013435fecc4cf",
+              "quote": "投后估值达15亿美元",
+              "source_content_hash": "746e4189cef7587f",
+              "quote_hash": "0357b099bdd608b11b428282f03e924d5180c9f51d76c015ce6a8dab98665ca5"
+            }
+          ]
+        },
+        {
+          "label": "融资完成后字节跳动持股比例",
+          "value": "56%",
+          "observed_at": "2026-09-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fd7013435fecc4cf",
+              "quote": "融资完成后，字节跳动保留56%股份，保持控股地位。",
+              "source_content_hash": "746e4189cef7587f",
+              "quote_hash": "9ae3519a6d06c7d39562f0b057a5d20ed7b730459ea56628efba50261a00b9dc"
+            }
+          ]
+        },
+        {
+          "label": "全球AI制药市场规模（2025年）",
+          "value": "约24.1亿美元",
+          "observed_at": "2026-09-16",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a429bfa589657e6f",
+              "quote": "全球AI制药市场规模在2025年约为24.1亿美元",
+              "source_content_hash": "782fe6da734543a3",
+              "quote_hash": "bf923de219184328591d7bb3d6d9cd811d35d9f73cdbd3888f7dfd3221c8bc9b"
+            }
+          ]
+        },
+        {
+          "label": "全球AI制药市场规模（2026年预计）",
+          "value": "29.9亿美元",
+          "observed_at": "2026-09-16",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a429bfa589657e6f",
+              "quote": "预计2026年将达到29.9亿美元",
+              "source_content_hash": "782fe6da734543a3",
+              "quote_hash": "bef21c0f6c264bfe57367b6f5bd748881c13de3c4bd5e3ed624c0bb02f563ef3"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "任峰",
+          "quote": "AI将候选药物从靶点发现推进至PCC确认平均需12至18个月，传统药物的平均周期约4.5年。以Rentosertib为例，合成78个分子耗时1.5年、投入260万美元，传统方式需4.5年、数千万至上亿美元。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d487304658d16938",
+              "quote": "AI将候选药物从靶点发现推进至PCC确认平均需12至18个月，传统药物的平均周期约4.5年。以Rentosertib为例，合成78个分子耗时1.5年、投入260万美元，传统方式需4.5年、数千万至上亿美元。",
+              "source_content_hash": "d8cf347db94effa8",
+              "quote_hash": "1d27cb3dce84cf204804f4090697aa68c021e261bc8a5bffcd02a610d6cf6fdb"
+            }
+          ]
+        },
+        {
+          "speaker": "任峰",
+          "quote": "现阶段还没有数据来证明AI开发的药物可以在临床上提高它的成功率，主要原因是临床验证本身周期极长，截至目前，还没有一款真正由AI开发的药物走完全部研发流程，成功获批上市。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d487304658d16938",
+              "quote": "现阶段还没有数据来证明AI开发的药物可以在临床上提高它的成功率，主要原因是临床验证本身周期极长，截至目前，还没有一款真正由AI开发的药物走完全部研发流程，成功获批上市。",
+              "source_content_hash": "d8cf347db94effa8",
+              "quote_hash": "16423d2aadc1e7d4a6adae950da0d2d521216b553a3c09ebc88d9a4bbc7fbc3a"
+            }
+          ]
+        },
+        {
+          "speaker": "张鹏",
+          "quote": "AI制药行业最紧缺的岗位，不是算法工程师。比算法工程师更难招的，是能把AI设计的分子挑出来、送进湿实验验证、再把实验结果反馈给模型迭代优化的人。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d487304658d16938",
+              "quote": "AI制药行业最紧缺的岗位，不是算法工程师。比算法工程师更难招的，是能把AI设计的分子挑出来、送进湿实验验证、再把实验结果反馈给模型迭代优化的人。",
+              "source_content_hash": "d8cf347db94effa8",
+              "quote_hash": "8b8b59f1adbfcbbd32708561a330b80ed6d15b5d109ffb349baa466c12624b1e"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是字节跳动AI制药业务分拆后的平台化能力与管线资产能否在临床前阶段建立差异化壁垒。本轮2.9亿美元天使轮融资对应15亿美元投后估值，融资完成后字节跳动保留56%股份保持控股地位，说明资本认可的是字节系AI4S团队从基础模型研究到产业化的完整能力栈，而非单纯的单点分子资产。已验证信号包括：核心团队约50人、自2021年起承担从基础模型研究到产业化的核心职能、已发布Protenix v2与PXDesign等平台工具、开发出全球首个全谱IL-17小分子抑制剂。但该抑制剂仍处于临床前阶段，尚无临床数据验证AI设计分子的成功率优势，这是估值逻辑的最大证据边界。",
+        "validated_signals": [
+          "核心团队约50人，由AI4S算法人才和资深制药领域专家构成，自2021年团队正式组建起便承担从基础模型研究到产业化的核心职能",
+          "已发布分子结构预测模型Protenix与Seedfold，当前迭代Protenix至v2版本，并推出蛋白结合剂设计工具PXDesign",
+          "开发出全球首个全谱IL-17小分子抑制剂，首次在小分子层面实现对IL-17家族的全面阻断",
+          "公司在上海、旧金山和新加坡设有办公室，以独立主体开展新药研发与产业化"
+        ],
+        "risks": [
+          "IL-17小分子抑制剂仍处于临床前阶段，尚无临床数据验证AI设计分子的成功率优势",
+          "AI制药行业尚未有完全由AI开发的药物走完全部研发流程并成功获批上市，临床验证周期极长",
+          "药企之间不愿分享失败数据，数据孤岛可能制约模型闭环迭代能力"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "healthcare_life_sciences",
+        "market_application_id": "",
+        "use_case_ids": [
+          "research_discovery",
+          "design_engineering"
+        ],
+        "industry_ids": [
+          "healthcare_life_sciences"
+        ],
+        "target_user_ids": [
+          "researcher",
+          "developer"
+        ],
+        "sector": "AI制药",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是字节跳动AI制药业务分拆后的平台化能力与管线资产能否在临床前阶段建立差异化壁垒。本轮2.9亿美元天使轮融资对应15亿美元投后估值，融资完成后字节跳动保留56%股份保持控股地位，说明资本认可的是字节系AI4S团队从基础模型研究到产业化的完整能力栈，而非单纯的单点分子资产。已验证信号包括：核心团队约50人、自2021年起承担从基础模型研究到产业化的核心职能、已发布Protenix v2与PXDesign等平台工具、开发出全球首个全谱IL-17小分子抑制剂。但该抑制剂仍处于临床前阶段，尚无临床数据验证AI设计分子的成功率优势，这是估值逻辑的最大证据边界。",
+          "evidence_signals": [
+            "核心团队约50人，由AI4S算法人才和资深制药领域专家构成，自2021年团队正式组建起便承担从基础模型研究到产业化的核心职能",
+            "已发布分子结构预测模型Protenix与Seedfold，当前迭代Protenix至v2版本，并推出蛋白结合剂设计工具PXDesign",
+            "开发出全球首个全谱IL-17小分子抑制剂，首次在小分子层面实现对IL-17家族的全面阻断",
+            "公司在上海、旧金山和新加坡设有办公室，以独立主体开展新药研发与产业化"
+          ],
+          "risks": [
+            "IL-17小分子抑制剂仍处于临床前阶段，尚无临床数据验证AI设计分子的成功率优势",
+            "AI制药行业尚未有完全由AI开发的药物走完全部研发流程并成功获批上市，临床验证周期极长",
+            "药企之间不愿分享失败数据，数据孤岛可能制约模型闭环迭代能力"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "AnewFold",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Protenix",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "PXDesign",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "刘凯",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "红杉中国",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "IDG资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "高瓴创投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "五源资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "高榕创投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "春华创投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "中国生物制药",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "英矽智能",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "晶泰科技",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "德睿智药",
+          "canonical_entity_id": "EN-ed8ff30f2dcaf9d6",
+          "canonical_name": "德睿智药"
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-1043d78cc040ab30",
+          "date": "2026-09-18",
+          "title": "AI制药走到哪一步了？ - 财联社",
+          "amount": "2.9亿美元",
+          "source_refs": [
+            "SA-53d5baf7e3c54215"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-d487304658d16938",
+          "source_url": "https://www.cls.cn/detail/2487425",
+          "title": "AI制药走到哪一步了？ - 财联社",
+          "publisher": "财联社／科创板日报",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-19T00:40:43.914Z",
+          "content_hash": "d8cf347db94effa8",
+          "source_artifact_id": "SA-53d5baf7e3c54215",
+          "raw_id": "RAW-8ff78c07363b1d37"
+        },
+        {
+          "source_id": "FISRC-a429bfa589657e6f",
+          "source_url": "http://c.m.163.com/news/a/L702P9D405198CJN.html",
+          "title": "字节跳动拆分AI制药公司新生探途 拿下2.9亿美元天使轮融资",
+          "publisher": "c.m.163.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-19T00:42:27.733Z",
+          "content_hash": "782fe6da734543a3",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-fd7013435fecc4cf",
+          "source_url": "https://c.m.163.com/news/a/L7195TML05198CJN.html",
+          "title": "字节系AI制药公司首轮融资 巨头集体转向AI4S 医药行业迎来新叙事？",
+          "publisher": "c.m.163.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-19T00:42:31.726Z",
+          "content_hash": "746e4189cef7587f",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-19T00:42:52.238Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-1043d78cc040ab30",
+          "confidence": 0.85,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-19T00:42:52.238Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "AnewFold",
+            "PXDesign",
+            "Protenix"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "刘凯"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-1043d78cc040ab30",
+        "EV-c96705c69e11c520",
+        "EV-91459f0d9446f471"
+      ],
+      "aggregation": {
+        "key": "EN-295219ea74639f0b|first_external",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-3baed7f0e4eeef88",
@@ -69,7 +3546,7 @@
         "canonical_entity_consistent": false
       },
       "financing": {
-        "round": "基础设施融资",
+        "round": "C轮",
         "amount": "4亿美元",
         "total_raised": "7.7亿美元",
         "announced_at": "2026-09-17",
@@ -204,12 +3681,10 @@
               }
             ],
             "entity_id": null
-          }
-        ],
-        "other_round_investors": [
+          },
           {
             "name": "高瓴创投",
-            "role": "原有投资机构继续追加投资",
+            "role": "本轮跟投（原有投资机构继续追加投资）",
             "evidence_refs": [
               {
                 "source_id": "FISRC-517ef1b31eac6dd3",
@@ -222,7 +3697,7 @@
           },
           {
             "name": "五源资本",
-            "role": "原有投资机构继续追加投资",
+            "role": "本轮跟投（原有投资机构继续追加投资）",
             "evidence_refs": [
               {
                 "source_id": "FISRC-517ef1b31eac6dd3",
@@ -235,7 +3710,7 @@
           },
           {
             "name": "线性资本",
-            "role": "原有投资机构继续追加投资",
+            "role": "本轮跟投（原有投资机构继续追加投资）",
             "evidence_refs": [
               {
                 "source_id": "FISRC-517ef1b31eac6dd3",
@@ -248,7 +3723,7 @@
           },
           {
             "name": "淡马锡旗下Vertex Growth",
-            "role": "原有投资机构继续追加投资",
+            "role": "本轮跟投（原有投资机构继续追加投资）",
             "evidence_refs": [
               {
                 "source_id": "FISRC-517ef1b31eac6dd3",
@@ -258,7 +3733,9 @@
               }
             ],
             "entity_id": null
-          },
+          }
+        ],
+        "other_round_investors": [
           {
             "name": "Prosperity7",
             "role": "老股东持续加码",
@@ -313,8 +3790,8 @@
             "quote_hash": "882f536873eea5e4ff681d11f2996db3fd8dba716f2a1a9314231ad485377a49"
           }
         ],
-        "round_code": "infrastructure",
-        "round_original": "基础设施融资",
+        "round_code": "series_c",
+        "round_original": "C轮",
         "amount_original": "4亿美元",
         "amount_normalized": {
           "currency": "USD",
@@ -339,7 +3816,7 @@
         "disclosures": [
           {
             "event_id": "EV-412f7ce21693dc13",
-            "round_original": "基础设施融资",
+            "round_original": "C轮",
             "amount": "4亿美元",
             "announced_at": "2026-09-17",
             "evidence_refs": [
@@ -740,28 +4217,28 @@
           "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_other_round",
+          "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "高瓴创投",
           "canonical_entity_id": null,
           "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_other_round",
+          "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "五源资本",
           "canonical_entity_id": null,
           "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_other_round",
+          "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "线性资本",
           "canonical_entity_id": null,
           "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_other_round",
+          "relation_type": "invested_in_round",
           "target_kind": "organization",
           "research_name": "淡马锡旗下Vertex Growth",
           "canonical_entity_id": null,
@@ -1750,7 +5227,8 @@
         }
       },
       "source_event_ids": [
-        "EV-40d4ce6d936d4d49"
+        "EV-40d4ce6d936d4d49",
+        "EV-26a5749d8604455a"
       ],
       "aggregation": {
         "key": "EN-d41ebd9f02722fc8|series_f",
@@ -2533,7 +6011,7 @@
           "error": ""
         }
       ],
-      "updated_at": "2026-09-19T00:30:39.325Z"
+      "updated_at": "2026-09-19T06:58:30.610Z"
     },
     {
       "event_id": "EV-40d4ce6d936d4d49",
@@ -2622,7 +6100,7 @@
           "error": ""
         }
       ],
-      "updated_at": "2026-09-19T00:30:39.325Z"
+      "updated_at": "2026-09-19T06:58:30.611Z"
     },
     {
       "event_id": "EV-81bbaaec2965864a",
@@ -2635,7 +6113,7 @@
     },
     {
       "event_id": "EV-412f7ce21693dc13",
-      "company_name": "地瓜机器人",
+      "company_name": "深圳地瓜机器人有限公司",
       "status": "auto_published",
       "problems": [],
       "queries": [
@@ -2694,7 +6172,7 @@
           "error": ""
         }
       ],
-      "updated_at": "2026-09-19T00:30:39.325Z"
+      "updated_at": "2026-09-19T06:58:30.611Z"
     },
     {
       "event_id": "EV-a52dd9e9cac23694",
@@ -2713,6 +6191,409 @@
       "queries": [],
       "attempts": [],
       "updated_at": "2026-09-19T00:30:39.325Z"
+    },
+    {
+      "event_id": "EV-2c2f903622c29ba4",
+      "company_name": "奕行智能（北京）科技股份有限公司",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"首发| 奕行智能\" 2026 融资 轮次 金额 投资方",
+        "\"首发| 奕行智能\" \"20亿元\" 本轮融资 领投 跟投",
+        "\"首发| 奕行智能\" 产品 服务 创始人 总部",
+        "\"首发| 奕行智能\" 投资机构 投资原因 融资用途"
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"首发| 奕行智能\" 2026 融资 轮次 金额 投资方",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"首发| 奕行智能\" 2026 融资 轮次 金额 投资方",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"首发| 奕行智能\" \"20亿元\" 本轮融资 领投 跟投",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"首发| 奕行智能\" \"20亿元\" 本轮融资 领投 跟投",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"首发| 奕行智能\" 产品 服务 创始人 总部",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"首发| 奕行智能\" 产品 服务 创始人 总部",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"首发| 奕行智能\" 投资机构 投资原因 融资用途",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"首发| 奕行智能\" 投资机构 投资原因 融资用途",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-09-19T06:58:30.611Z"
+    },
+    {
+      "event_id": "EV-1043d78cc040ab30",
+      "company_name": "上海新生探途科技有限公司",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"新生探途（Anew Labs）\" 2026 融资 轮次 金额 投资方",
+        "\"新生探途（Anew Labs）\" \"2.9亿美元\" 本轮融资 领投 跟投",
+        "\"新生探途（Anew Labs）\" 产品 服务 创始人 总部",
+        "\"新生探途（Anew Labs）\" 投资机构 投资原因 融资用途",
+        "\"新生探途\" 2026 融资 投资方",
+        "\"新生探途\" 产品 创始人"
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"新生探途（Anew Labs）\" 2026 融资 轮次 金额 投资方",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"新生探途（Anew Labs）\" 2026 融资 轮次 金额 投资方",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"新生探途（Anew Labs）\" \"2.9亿美元\" 本轮融资 领投 跟投",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"新生探途（Anew Labs）\" \"2.9亿美元\" 本轮融资 领投 跟投",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"新生探途（Anew Labs）\" 产品 服务 创始人 总部",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"新生探途（Anew Labs）\" 产品 服务 创始人 总部",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"新生探途（Anew Labs）\" 投资机构 投资原因 融资用途",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"新生探途（Anew Labs）\" 投资机构 投资原因 融资用途",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"新生探途\" 2026 融资 投资方",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"新生探途\" 2026 融资 投资方",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"新生探途\" 产品 创始人",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"新生探途\" 产品 创始人",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-09-19T06:58:30.611Z"
+    },
+    {
+      "event_id": "EV-04bcb24d608a931c",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-19T00:43:47.314Z"
+    },
+    {
+      "event_id": "EV-375d04f7cc9746c6",
+      "company_name": "Euclyd",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"三星押注GPU替代方案赛道：荷兰初创公司获2亿欧元融资\" funding company investors product",
+        "\"Samsung\" \"2亿欧元\" funding investors round",
+        "\"Samsung\" product customers case study",
+        "\"Samsung\" \"三星押注GPU替代方案赛道：荷兰初创公司获2亿欧元融资\" competitors product use case",
+        "\"Samsung\" \"2亿欧元\" investor quote why invested",
+        "\"Samsung\" \"2亿欧元\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"三星押注GPU替代方案赛道：荷兰初创公司获2亿欧元融资\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"三星押注GPU替代方案赛道：荷兰初创公司获2亿欧元融资\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Samsung\" \"2亿欧元\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Samsung\" \"2亿欧元\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Samsung\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Samsung\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Samsung\" \"三星押注GPU替代方案赛道：荷兰初创公司获2亿欧元融资\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Samsung\" \"三星押注GPU替代方案赛道：荷兰初创公司获2亿欧元融资\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Samsung\" \"2亿欧元\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Samsung\" \"2亿欧元\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Samsung\" \"2亿欧元\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Samsung\" \"2亿欧元\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-09-19T06:58:30.611Z"
+    },
+    {
+      "event_id": "EV-1d9cf73bba2debcc",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-19T00:43:47.314Z"
+    },
+    {
+      "event_id": "EV-bdd574fb9ee91b4d",
+      "company_name": "设序科技",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"设序科技一连\" 2026 融资 轮次 金额 投资方",
+        "\"设序科技一连\" \"超亿元\" 本轮融资 领投 跟投",
+        "\"设序科技一连\" 产品 服务 创始人 总部",
+        "\"设序科技一连\" 投资机构 投资原因 融资用途"
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"设序科技一连\" 2026 融资 轮次 金额 投资方",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"设序科技一连\" 2026 融资 轮次 金额 投资方",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"设序科技一连\" \"超亿元\" 本轮融资 领投 跟投",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"设序科技一连\" \"超亿元\" 本轮融资 领投 跟投",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"设序科技一连\" 产品 服务 创始人 总部",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"设序科技一连\" 产品 服务 创始人 总部",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"设序科技一连\" 投资机构 投资原因 融资用途",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"设序科技一连\" 投资机构 投资原因 融资用途",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-09-19T06:58:30.611Z"
+    },
+    {
+      "event_id": "EV-06f2bca776e5cee7",
+      "company_name": "北京中科弧光量子软件技术有限公司",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"弧光量子\" 2026 融资 轮次 金额 投资方",
+        "\"弧光量子\" \"超亿元\" 本轮融资 领投 跟投",
+        "\"弧光量子\" 产品 服务 创始人 总部",
+        "\"弧光量子\" 投资机构 投资原因 融资用途"
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"弧光量子\" 2026 融资 轮次 金额 投资方",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"弧光量子\" 2026 融资 轮次 金额 投资方",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"弧光量子\" \"超亿元\" 本轮融资 领投 跟投",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"弧光量子\" \"超亿元\" 本轮融资 领投 跟投",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"弧光量子\" 产品 服务 创始人 总部",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"弧光量子\" 产品 服务 创始人 总部",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"弧光量子\" 投资机构 投资原因 融资用途",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"弧光量子\" 投资机构 投资原因 融资用途",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-09-19T06:58:30.611Z"
+    },
+    {
+      "event_id": "EV-c997b93aa153720b",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-19T00:43:47.314Z"
+    },
+    {
+      "event_id": "EV-77887cf446f03ba4",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-19T00:43:47.314Z"
     }
   ]
 }

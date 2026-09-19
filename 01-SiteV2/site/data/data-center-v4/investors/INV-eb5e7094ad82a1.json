@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-19T00:31:34.791Z",
+    "generatedAt": "2026-09-19T07:02:09.778Z",
     "latestDataDate": "2026-09-19",
     "currentDate": "2026-09-19",
-    "eventCount": 3401,
+    "eventCount": 3409,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -58,9 +58,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
     ],
@@ -69,23 +69,31 @@
     "first_disclosed_at": "2026-09-17",
     "latest_disclosed_at": "2026-09-17",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "series_c"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-c5146e8a5659ab7e",
+        "canonical_entity_id": "",
+        "name": "深圳地瓜机器人有限公司"
+      }
+    ],
     "activities": [
       {
-        "activity_id": "IA-2e585008b778c5d2",
-        "funding_insight_id": "FI-a7fa0f99646ce4d0",
+        "activity_id": "IA-83d876dd858bb473",
+        "funding_insight_id": "FI-e9d633fa8c039673",
         "event_ids": [
           "EV-412f7ce21693dc13"
         ],
         "company_entity_id": "EN-c5146e8a5659ab7e",
         "company_canonical_entity_id": "",
         "company_name": "深圳地瓜机器人有限公司",
-        "round": "基础设施融资",
-        "round_code": "infrastructure",
-        "round_original": "基础设施融资",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
         "amount_original": "4亿美元",
         "amount_normalized": {
           "currency": "USD",
@@ -100,9 +108,9 @@
         "market_region": "GLOBAL",
         "china_market_match": false,
         "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "原有投资机构继续追加投资",
-        "role_code": "historical_or_ambiguous",
+        "scope": "current_round",
+        "role": "本轮跟投（原有投资机构继续追加投资）",
+        "role_code": "participant",
         "evidence": [
           {
             "source_id": "FISRC-517ef1b31eac6dd3",

@@ -14,6 +14,7 @@ import {
   acceptedFundingCompanyIdentityDecisions,
   buildFundingEntityReviewQueue,
   canonicalFundingEventAmount,
+  canonicalFundingEventRound,
   ensureCanonicalFundingEvidence,
   ensureNamedCompanyEvidence,
   entityResolver,
@@ -33,6 +34,15 @@ import {
   verifiedFundingEventCardCoverageProblems,
 } from "../funding-insight-v1-utils.mjs";
 import { canonicalSources, fundingHistory, recoveryCardsFromGit, fundingResearchNameMatches } from "../generate-funding-insights-deepseek.mjs";
+
+test("accepted financing round takes precedence over infrastructure product descriptions", () => {
+  const event = { claim_refs: ["CL-C"], object: "软硬一体基础设施支撑具身智能产业落地", display_title_zh: "地瓜机器人完成4亿美元C轮融资" };
+  const claim = { claim_id: "CL-C", claim_type: "funding", verification_status: "accepted", source_quote: "9月17日，地瓜机器人宣布完成4亿美元C轮融资。" };
+  assert.equal(canonicalFundingEventRound(event, [claim]).code, "series_c");
+  assert.equal(canonicalFundingEventRound(event, [{ ...claim, verification_status: "pending" }]).code, "infrastructure");
+  assert.equal(canonicalFundingEventRound(event, [{ ...claim, claim_id: "UNRELATED" }]).code, "infrastructure");
+  assert.equal(canonicalFundingEventRound({ object: "基础设施投资" }).code, "infrastructure");
+});
 
 test("qualified foreign Chinese amounts retain currency instead of a truncated CNY metric", () => {
   const event = { event_id: "EV-USD", event_type: "funding", metrics: ["超千万"], claim_refs: ["CL-USD"] };
@@ -2870,6 +2880,22 @@ test("Sep18 Anew identity review retains both disclosures without doubling the f
   assert.equal(result[0].financing.announced_at, "2026-09-16");
   assert.deepEqual(new Set(result[0].source_event_ids), new Set(cards.map((card) => card.triggered_by_event_id)));
   assert.equal(result[0].financing.disclosures.length, 2);
+});
+
+test("Sep19 reviewed reposts preserve Sep18 source events without counting new rounds", () => {
+  const all = ["2026-09-17", "2026-09-18", "2026-09-19"].flatMap((date) => JSON.parse(fs.readFileSync(path.join(root,
+    `01-SiteV2/content/12-applications/funding-insights/${date}.json`), "utf8")).cards);
+  const review = JSON.parse(fs.readFileSync(path.join(root,
+    "01-SiteV2/content/12-applications/funding-insights/company-identity-decisions.json"), "utf8"));
+  for (const ids of [["EV-91459f0d9446f471", "EV-c96705c69e11c520", "EV-1043d78cc040ab30"],
+    ["EV-26a5749d8604455a", "EV-40d4ce6d936d4d49"]]) {
+    const cards = all.filter((card) => ids.includes(card.triggered_by_event_id));
+    assert.equal(cards.length, ids.length);
+    const result = aggregateFundingRoundCards(cards, {}, {}, review);
+    assert.equal(result.length, 1);
+    assert.deepEqual(new Set(result[0].source_event_ids), new Set(ids));
+    assert.equal(result[0].financing.disclosures.length, ids.length);
+  }
 });
 
 test("Sep15 reviewed domestic identities aggregate duplicate disclosures without losing source events", () => {

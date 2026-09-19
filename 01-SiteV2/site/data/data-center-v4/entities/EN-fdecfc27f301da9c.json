@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-19T00:31:34.791Z",
+    "generatedAt": "2026-09-19T07:02:09.778Z",
     "latestDataDate": "2026-09-19",
     "currentDate": "2026-09-19",
-    "eventCount": 3401,
+    "eventCount": 3409,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -188,6 +188,8 @@
       "typeLabel": "AI 市场类别",
       "valueId": "infrastructure_compute",
       "eventIds": [
+        "EV-06f2bca776e5cee7",
+        "EV-2c2f903622c29ba4",
         "EV-40d4ce6d936d4d49",
         "EV-412f7ce21693dc13",
         "EV-26a5749d8604455a",
@@ -417,6 +419,7 @@
         "EN-33d5a47fc56e4ba1",
         "EN-d41ebd9f02722fc8",
         "EN-c5146e8a5659ab7e",
+        "EN-968e2d5b08687bf4",
         "EN-4149d125ad47155a",
         "EN-619245256126c075",
         "EN-caffca3284100caa",
@@ -614,10 +617,39 @@
       "typeLabel": "AI 市场子类",
       "valueId": "development_deployment",
       "eventIds": [
-        "EV-40d4ce6d936d4d49",
-        "EV-26a5749d8604455a",
-        "EV-181cd28d97c4e61d",
-        "EV-2dea56b0e97c1685",
+        "EV-06f2bca776e5cee7",
+        "EV-7eead74c2baae511",
+        "EV-ef669a52c9a3f94f",
+        "EV-d0dd835f3abb3163",
+        "EV-5ea74d357e73366b",
+        "EV-85506f9f86779a6d",
+        "EV-dc442b91a69fcc5a",
+        "EV-dccfca59b3e58638",
+        "EV-782e8dcca41fd545",
+        "EV-89ec502a1340079a",
+        "EV-4d46806b1522d5f4",
+        "EV-b78b4d2d94c8e72c",
+        "EV-3c145705d72a5e57",
+        "EV-5e8ad56fcef42b5a",
+        "EV-657176fd0dff6209",
+        "EV-07d112b2a4c980d2",
+        "EV-a72baefac91ba841",
+        "EV-c9a11db49e1afbe5",
+        "EV-64c5290cc685eb93",
+        "EV-cca4bd983a16b8d9",
+        "EV-f5dd6dec49ad83aa",
+        "EV-55e7c286e95be405",
+        "EV-b334843aec926ce3",
+        "EV-88a984b765bb54f1",
+        "EV-00514c4ffc2e3cd3",
+        "EV-25d8a47fbc3c0fbb",
+        "EV-33b3cf34f8ff7bd8",
+        "EV-e51643edc7bec259",
+        "EV-e65748bbcfe6b0fd",
+        "EV-c7ba7b093a1a3b94",
+        "EV-d1d7212194b63b0b",
+        "EV-901155ab700a7e8e",
+        "EV-d7a7244d620a2142",
         "EV-e3792591090281c6",
         "EV-0d4e656aa51f9a46",
         "EV-44cd5e03d30c85b3",
@@ -780,15 +812,9 @@
         "EN-a3b8fbb2200a105a",
         "EN-2c348893efb2316e"
       ],
-      "fdeIds": [
-        "FDE-3c16927208b7ac37",
-        "FDE-5ea7f3d69a03d417"
-      ],
-      "hardwareIds": [
-        "HW-304c6370cc157449",
-        "HW-9a39a7f449362f96"
-      ],
-      "firstSeen": "2026-04-30",
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-01-26",
       "lastSeen": "2026-09-19"
     },
     {
@@ -798,6 +824,8 @@
       "typeLabel": "目标用户",
       "valueId": "developer",
       "eventIds": [
+        "EV-06f2bca776e5cee7",
+        "EV-1043d78cc040ab30",
         "EV-40d4ce6d936d4d49",
         "EV-412f7ce21693dc13",
         "EV-26a5749d8604455a",
@@ -1296,6 +1324,7 @@
       "typeLabel": "产品形态",
       "valueId": "compute_cloud_service",
       "eventIds": [
+        "EV-40d4ce6d936d4d49",
         "EV-26a5749d8604455a",
         "EV-181cd28d97c4e61d",
         "EV-2dea56b0e97c1685",
@@ -1357,7 +1386,7 @@
         "HW-9a39a7f449362f96"
       ],
       "firstSeen": "2026-04-30",
-      "lastSeen": "2026-09-18"
+      "lastSeen": "2026-09-19"
     },
     {
       "id": "TX-product_form-model_api_service",

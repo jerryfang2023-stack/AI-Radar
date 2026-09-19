@@ -10,7 +10,7 @@
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 478,
+    "decision_count": 483,
     "input_hash": "242def048f7c95ce",
     "override_count": 18,
     "needs_review_count": 54,
@@ -9566,6 +9566,99 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "公司核心产品为旭日系列芯片，面向机器人端侧计算场景，属于为其他AI产品提供算力硬件的芯片供应商，因此归入基础设施计算-硬件计算-芯片。客户为机器人厂商，使用场景涉及物理自动化，行业覆盖制造与物流供应链。"
+    },
+    {
+      "event_id": "EV-375d04f7cc9746c6",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "chips",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "证据显示公司研发AI芯片系统，面向基础模型推理并降低数据中心能耗，属于为AI构建者提供硬件/算力基础设施，归入infrastructure_compute > hardware_computing > chips。"
+    },
+    {
+      "event_id": "EV-1043d78cc040ab30",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "healthcare_life_sciences",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "research_discovery",
+        "design_engineering"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "researcher",
+        "developer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "证据显示公司由字节跳动AI制药业务拆分，产品为AI药物研发平台和分子结构预测模型，围绕制药行业专业数据与工作流，应归入industry_applications > healthcare_life_sciences，而非通用模型基础设施。"
+    },
+    {
+      "event_id": "EV-06f2bca776e5cee7",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "ai_development_orchestration",
+      "product_form_id": "developer_tool",
+      "use_case_ids": [
+        "software_development"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "researcher"
+      ],
+      "confidence": 0.8,
+      "needs_review": false,
+      "rationale": "证据显示公司提供量子软件工具，包括编译器、模拟器和量子EDA，服务于量子计算开发者，属于开发部署基础设施，归入infrastructure_compute > development_deployment > ai_development_orchestration。"
+    },
+    {
+      "event_id": "EV-2c2f903622c29ba4",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "chips",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "automotive_transportation"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "奕行智能 develops RISC-V AI computing chips and AI compute nodes, including Epoch series AI chips and RISC-V AI supernodes for data centers, as well as ELYNX automotive AI chips. The primary product is chip accelerators for AI compute infrastructure, fitting infrastructure_compute > hardware_computing > chips. The automotive chip line also supports physical automation in vehicles, but the core funding focus is AI compute chips."
+    },
+    {
+      "event_id": "EV-bdd574fb9ee91b4d",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "industrials",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "design_engineering"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "automotive_transportation"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "产品围绕工业设计这一特定行业工作流，直接生成工业设计方案，客户为东风、中车、商飞、奔驰、特斯拉等制造与汽车交通企业，符合行业应用而非跨行业企业应用或物理AI。"
     }
   ]
 }

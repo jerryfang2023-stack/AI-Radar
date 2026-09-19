@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-19T00:31:34.791Z",
+    "generatedAt": "2026-09-19T07:02:09.778Z",
     "latestDataDate": "2026-09-19",
     "currentDate": "2026-09-19",
-    "eventCount": 3401,
+    "eventCount": 3409,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -6516,17 +6516,23 @@
         {
           "name": "AI Server",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "NVIDIA"
+          ]
         },
         {
           "name": "RTX Pro Server",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "NVIDIA"
+          ]
         },
         {
           "name": "AI Server for Enterprise",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "NVIDIA"
+          ]
         }
       ],
       "sourceUrl": "https://global.sharp/corporate/news/260915-a.html",
@@ -6652,12 +6658,16 @@
         {
           "name": "Jetson Thor",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "NVIDIA"
+          ]
         },
         {
           "name": "HomeAgent",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "NVIDIA"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/998/879.htm",
@@ -7018,17 +7028,23 @@
         {
           "name": "AI GPU Cluster Powered",
           "type": "AI 硬件",
-          "ownerNames": []
+          "ownerNames": [
+            "NVIDIA"
+          ]
         },
         {
           "name": "H200 GPUs",
           "type": "AI 硬件",
-          "ownerNames": []
+          "ownerNames": [
+            "NVIDIA"
+          ]
         },
         {
           "name": "Master Group",
           "type": "AI 硬件",
-          "ownerNames": []
+          "ownerNames": [
+            "NVIDIA"
+          ]
         }
       ],
       "sourceUrl": "https://propakistani.pk/2026/08/12/master-groups-indus-cloud-launches-pakistans-first-cisco-ai-gpu-cluster-powered-by-nvidia-h200-gpus",
@@ -7453,12 +7469,16 @@
         {
           "name": "Jetson Thor",
           "type": "AI 硬件",
-          "ownerNames": []
+          "ownerNames": [
+            "NVIDIA"
+          ]
         },
         {
           "name": "MS-NAT5000",
           "type": "AI 硬件",
-          "ownerNames": []
+          "ownerNames": [
+            "NVIDIA"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/967/992.htm",
@@ -7736,7 +7756,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-target_user-developer",
+        "TX-ai_market_subcategory-hardware_computing",
         "TX-ai_market_application-computing_infrastructure",
+        "TX-product_form-ai_compute_system",
         "TX-use_case-data_analysis",
         "TX-target_user-public_sector_user",
         "TX-industry-telecommunications",
@@ -7762,13 +7786,15 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
-        "TX-use_case-data_analysis",
-        "TX-target_user-public_sector_user",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
+        "TX-ai_market_subcategory-hardware_computing",
+        "TX-ai_market_application-computing_infrastructure",
+        "TX-product_form-ai_compute_system",
+        "TX-use_case-data_analysis",
+        "TX-target_user-public_sector_user",
         "TX-industry-government_public_sector",
         "TX-industry-telecommunications",
         "TX-industry-aerospace_defense"
@@ -7797,16 +7823,13 @@
       "classificationRefs": [
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
-        "TX-ai_market_application-chips",
-        "TX-industry-manufacturing",
-        "TX-product_form-chip_accelerator",
         "TX-use_case-software_development",
         "TX-ai_market_application-chips",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-product_form-chip_accelerator",
+        "TX-ai_market_application-computing_infrastructure",
         "TX-product_form-ai_compute_system",
-        "TX-industry-manufacturing",
-        "TX-ai_market_application-computing_infrastructure"
+        "TX-industry-manufacturing"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-01",
@@ -8086,32 +8109,29 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
+        "TX-target_user-researcher",
+        "TX-use_case-software_development",
+        "TX-industry-healthcare_life_sciences",
         "TX-product_form-enterprise_software_platform",
-        "TX-target_user-business_user",
-        "TX-use_case-data_analysis",
+        "TX-use_case-research_discovery",
         "TX-ai_market_application-chips",
+        "TX-ai_market_subcategory-hardware_computing",
+        "TX-industry-automotive_transportation",
+        "TX-product_form-chip_accelerator",
+        "TX-target_user-business_user",
+        "TX-use_case-physical_automation",
+        "TX-industry-financial_services",
+        "TX-ai_market_application-computing_infrastructure",
+        "TX-product_form-ai_compute_system",
+        "TX-use_case-data_analysis",
+        "TX-product_form-robotic_system",
         "TX-industry-logistics_supply_chain",
         "TX-industry-manufacturing",
-        "TX-product_form-chip_accelerator",
-        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
-        "TX-industry-healthcare_life_sciences",
-        "TX-product_form-robotic_system",
-        "TX-target_user-researcher",
-        "TX-industry-automotive_transportation",
         "TX-product_form-model",
-        "TX-use_case-research_discovery",
-        "TX-industry-financial_services",
-        "TX-product_form-ai_compute_system",
-        "TX-product_form-robotic_system",
-        "TX-industry-manufacturing",
-        "TX-ai_market_application-computing_infrastructure",
-        "TX-product_form-model",
-        "TX-use_case-data_analysis",
         "TX-industry-media_entertainment",
         "TX-industry-retail_ecommerce",
         "TX-industry-government_public_sector",
@@ -8215,18 +8235,17 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
         "TX-industry-healthcare_life_sciences",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-business_user",
+        "TX-ai_market_application-computing_infrastructure",
+        "TX-product_form-ai_compute_system",
         "TX-use_case-data_analysis",
         "TX-use_case-knowledge_search",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-industry-healthcare_life_sciences",
-        "TX-industry-government_public_sector",
-        "TX-product_form-ai_compute_system"
+        "TX-industry-government_public_sector"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-08",
@@ -8514,25 +8533,23 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
+        "TX-use_case-software_development",
+        "TX-industry-healthcare_life_sciences",
         "TX-product_form-enterprise_software_platform",
+        "TX-use_case-research_discovery",
+        "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-business_user",
         "TX-industry-financial_services",
-        "TX-product_form-ai_compute_system",
-        "TX-industry-manufacturing",
         "TX-ai_market_application-computing_infrastructure",
-        "TX-product_form-end_user_application",
+        "TX-product_form-ai_compute_system",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-manufacturing",
         "TX-technology-embodied_ai",
-        "TX-industry-healthcare_life_sciences",
         "TX-product_form-end_user_application",
         "TX-product_form-model",
-        "TX-use_case-research_discovery",
         "TX-target_user-consumer",
-        "TX-industry-financial_services",
         "TX-industry-retail_ecommerce",
         "TX-use_case-security_operations",
         "TX-technology-on_device",
@@ -8590,22 +8607,19 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
-        "TX-target_user-business_user",
-        "TX-industry-manufacturing",
-        "TX-industry-healthcare_life_sciences",
         "TX-target_user-researcher",
-        "TX-industry-automotive_transportation",
+        "TX-use_case-software_development",
+        "TX-industry-healthcare_life_sciences",
         "TX-use_case-research_discovery",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-automotive_transportation",
         "TX-target_user-business_user",
         "TX-industry-financial_services",
+        "TX-ai_market_application-computing_infrastructure",
         "TX-product_form-ai_compute_system",
         "TX-industry-manufacturing",
-        "TX-ai_market_application-computing_infrastructure",
         "TX-industry-media_entertainment",
         "TX-industry-government_public_sector",
         "TX-industry-professional_services",
@@ -8697,16 +8711,16 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-compute_cloud_service",
         "TX-target_user-developer",
-        "TX-target_user-business_user",
-        "TX-industry-manufacturing",
-        "TX-product_form-chip_accelerator",
         "TX-target_user-researcher",
+        "TX-product_form-chip_accelerator",
+        "TX-target_user-business_user",
+        "TX-product_form-compute_cloud_service",
+        "TX-product_form-ai_compute_system",
+        "TX-industry-manufacturing",
         "TX-product_form-model",
         "TX-product_form-ai_infrastructure_software",
         "TX-technology-agentic_execution",
-        "TX-product_form-ai_compute_system",
         "TX-technology-open_weights",
         "TX-technology-fine_tuning"
       ],
@@ -8833,16 +8847,16 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-developer_tool",
+        "TX-use_case-software_development",
         "TX-product_form-enterprise_software_platform",
-        "TX-industry-manufacturing",
         "TX-product_form-chip_accelerator",
         "TX-use_case-physical_automation",
-        "TX-technology-embodied_ai",
-        "TX-product_form-robotic_system",
-        "TX-technology-agentic_execution",
-        "TX-use_case-software_development",
         "TX-product_form-ai_compute_system",
-        "TX-product_form-developer_tool",
+        "TX-product_form-robotic_system",
+        "TX-industry-manufacturing",
+        "TX-technology-embodied_ai",
+        "TX-technology-agentic_execution",
         "TX-technology-human_in_loop"
       ],
       "relatedEntityIds": [
@@ -8935,8 +8949,6 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-chip_accelerator",
-        "TX-product_form-model",
-        "TX-industry-government_public_sector",
         "TX-product_form-ai_compute_system",
         "TX-product_form-model",
         "TX-industry-government_public_sector",
@@ -9028,8 +9040,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-ai_compute_system",
-        "TX-product_form-compute_cloud_service"
+        "TX-product_form-compute_cloud_service",
+        "TX-product_form-ai_compute_system"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-08",

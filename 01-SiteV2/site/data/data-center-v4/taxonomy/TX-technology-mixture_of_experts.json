@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-19T00:31:34.791Z",
+    "generatedAt": "2026-09-19T07:02:09.778Z",
     "latestDataDate": "2026-09-19",
     "currentDate": "2026-09-19",
-    "eventCount": 3401,
+    "eventCount": 3409,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -1308,17 +1308,23 @@
         {
           "name": "NeMo Switchyard",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "NVIDIA"
+          ]
         },
         {
           "name": "Nemotron 3.5 Lightning",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "NVIDIA"
+          ]
         },
         {
           "name": "MoE",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "NVIDIA"
+          ]
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/08/11/nvidia-ai-releases-nemotron-3-5-lightning-and-nemo-switchyard",
@@ -1509,7 +1515,9 @@
         {
           "name": "Nemotron 3.5 Lightning",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "NVIDIA"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/988/609.htm",
@@ -1631,7 +1639,7 @@
           "name": "Nemotron 3.5 Lightning",
           "type": "产品/服务",
           "ownerNames": [
-            "SGLang"
+            "NVIDIA"
           ]
         }
       ],
@@ -1853,7 +1861,9 @@
         {
           "name": "LTX-2.5",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "NVIDIA"
+          ]
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/08/11/the-video-production-stack-now-fits-on-one-desk-ltx-2-5-launches-as-nvidia-accelerated-open-weights-world-model",
@@ -2216,7 +2226,7 @@
           "name": "Laguna S 2.1",
           "type": "模型",
           "ownerNames": [
-            "DeepSeek"
+            "NVIDIA"
           ]
         }
       ],
@@ -2594,14 +2604,14 @@
           "name": "Nemotron-Labs-Audex-30B-A3B",
           "type": "产品/服务",
           "ownerNames": [
-            "Intel"
+            "NVIDIA"
           ]
         },
         {
           "name": "Audex",
           "type": "产品/服务",
           "ownerNames": [
-            "Intel"
+            "NVIDIA"
           ]
         }
       ],
@@ -3448,14 +3458,14 @@
           "name": "Blackwell",
           "type": "产品/服务",
           "ownerNames": [
-            "Intel"
+            "NVIDIA"
           ]
         },
         {
           "name": "Open Source",
           "type": "产品/服务",
           "ownerNames": [
-            "Intel"
+            "NVIDIA"
           ]
         }
       ],
@@ -3884,32 +3894,29 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-developer",
+        "TX-target_user-researcher",
+        "TX-use_case-software_development",
+        "TX-industry-healthcare_life_sciences",
         "TX-product_form-enterprise_software_platform",
-        "TX-target_user-business_user",
-        "TX-use_case-data_analysis",
+        "TX-use_case-research_discovery",
         "TX-ai_market_application-chips",
+        "TX-ai_market_subcategory-hardware_computing",
+        "TX-industry-automotive_transportation",
+        "TX-product_form-chip_accelerator",
+        "TX-target_user-business_user",
+        "TX-use_case-physical_automation",
+        "TX-industry-financial_services",
+        "TX-ai_market_application-computing_infrastructure",
+        "TX-product_form-ai_compute_system",
+        "TX-use_case-data_analysis",
+        "TX-product_form-robotic_system",
         "TX-industry-logistics_supply_chain",
         "TX-industry-manufacturing",
-        "TX-product_form-chip_accelerator",
-        "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
-        "TX-industry-healthcare_life_sciences",
-        "TX-product_form-robotic_system",
-        "TX-target_user-researcher",
-        "TX-industry-automotive_transportation",
         "TX-product_form-model",
-        "TX-use_case-research_discovery",
-        "TX-industry-financial_services",
-        "TX-product_form-ai_compute_system",
-        "TX-product_form-robotic_system",
-        "TX-industry-manufacturing",
-        "TX-ai_market_application-computing_infrastructure",
-        "TX-product_form-model",
-        "TX-use_case-data_analysis",
         "TX-industry-media_entertainment",
         "TX-industry-retail_ecommerce",
         "TX-industry-government_public_sector",
@@ -4377,12 +4384,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-software_development",
         "TX-product_form-enterprise_software_platform",
+        "TX-use_case-research_discovery",
         "TX-product_form-chip_accelerator",
         "TX-use_case-physical_automation",
         "TX-technology-embodied_ai",
         "TX-product_form-model",
-        "TX-use_case-research_discovery",
         "TX-industry-media_entertainment",
         "TX-use_case-security_operations",
         "TX-technology-on_device",
