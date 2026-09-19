@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-18T02:50:25.844Z",
-    "latestDataDate": "2026-09-18",
-    "currentDate": "2026-09-18",
-    "eventCount": 3369,
+    "generatedAt": "2026-09-19T07:02:09.778Z",
+    "latestDataDate": "2026-09-19",
+    "currentDate": "2026-09-19",
+    "eventCount": 3409,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -50,6 +50,76 @@
     ]
   },
   "relationships": [
+    {
+      "relationship_id": "REL2-6460871b6d621283",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-4d748ebd71af03a7",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-c70eca6b0f88f44d",
+      "object_type": "entity",
+      "event_id": "EV-0f241385f0cd6c2d",
+      "claim_refs": [
+        "CL-a6daf41a10d169de",
+        "CL-49b695f02f9e309f",
+        "CL-95db255d7bc333a4",
+        "CL-a6ba6dce5d8c259d"
+      ],
+      "source_refs": [
+        "SA-00e574ebc2409309"
+      ],
+      "data_date": "2026-09-19",
+      "status": "verified",
+      "subjectName": "Accenture",
+      "objectName": "Anthropic",
+      "predicateLabel": "合作",
+      "title": "Accenture 合作 Anthropic",
+      "eventTitle": "Anthropic 与 Accenture 合作开展嵌入式独立评估，双方各投入至少 10 亿美元",
+      "eventDate": "2026-09-18",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-a6daf41a10d169de",
+          "subject": "Anthropic 与 Accenture",
+          "object": "开展嵌入式独立评估，双方各投入至少 10 亿美元",
+          "quote": "The partnership will be led by Faculty, Accenture’s specialist AI business, and will include evaluating and red-teaming models, conducting alignment assessments, and testing model safeguards. Accenture helps businesses and governments deploy AI across many industries. Their understanding of how enterprises use AI in practice informs their safety approach, and they will bring that perspective to evaluating our models."
+        },
+        {
+          "id": "CL-49b695f02f9e309f",
+          "subject": "Anthropic 与 Accenture",
+          "object": "开展嵌入式独立评估，双方各投入至少 10 亿美元",
+          "quote": "We expect frontier labs to work with several organizations at once. Our partnership is non-exclusive; Anthropic will work with other evaluators to be announced in the coming weeks, and Accenture will work with other AI developers in similar capacities."
+        },
+        {
+          "id": "CL-95db255d7bc333a4",
+          "subject": "Anthropic 与 Accenture",
+          "object": "开展嵌入式独立评估，双方各投入至少 10 亿美元",
+          "quote": "Anthropic and Accenture each expect to invest at least $1 billion in building capacity in this area over the next five years."
+        },
+        {
+          "id": "CL-a6ba6dce5d8c259d",
+          "subject": "Anthropic 与 Accenture",
+          "object": "开展嵌入式独立评估，双方各投入至少 10 亿美元",
+          "quote": "Embedded evaluation is new, and many of the details about how it will operate are still being worked out. Unlike today’s external evaluators, embedded evaluators will work inside AI companies, with access comparable to an employee's. That access allows them to watch models take shape in training, follow the decisions that govern how those models are built and deployed, and speak directly to employees. From this vantage point, embedded evaluators can assess how a company operates, verify that it is keeping its safety commitments, and identify blind spots. They can also report incidents and give the public a more informed account of benefits and risks."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-00e574ebc2409309",
+          "publisher": "Anthropic：Newsroom（网页）",
+          "url": "https://anthropic.com/news/accenture-embedded-evaluation"
+        }
+      ],
+      "sourceExcerpt": "The partnership will be led by Faculty, Accenture’s specialist AI business, and will include evaluating and red-teaming models, conducting alignment assessments, and testing model safeguards. Accenture helps businesses and governments deploy AI across many industries. Their understanding of how enterprises use AI in practice informs their safety approach, and they will bring that perspective to evaluating our models.",
+      "event": {
+        "id": "EV-0f241385f0cd6c2d",
+        "title": "Anthropic 与 Accenture 合作开展嵌入式独立评估，双方各投入至少 10 亿美元",
+        "originalTitle": "",
+        "date": "2026-09-18",
+        "dataDate": "2026-09-19",
+        "eventTypeLabel": "合作"
+      }
+    },
     {
       "relationship_id": "REL2-30051dc5d7668662",
       "relationship_version": "RELATION-V2.1",

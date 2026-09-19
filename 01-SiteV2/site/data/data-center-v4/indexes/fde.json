@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-18T02:50:25.844Z",
-    "latestDataDate": "2026-09-18",
-    "currentDate": "2026-09-18",
-    "eventCount": 3369,
+    "generatedAt": "2026-09-19T07:02:09.778Z",
+    "latestDataDate": "2026-09-19",
+    "currentDate": "2026-09-19",
+    "eventCount": 3409,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -50,6 +50,136 @@
     ]
   },
   "fde": [
+    {
+      "id": "FDE-e6a6ca05cf979d49",
+      "eventId": "EV-67804da6b04fdcc5",
+      "dataDate": "2026-09-19",
+      "date": "2026-09-19",
+      "title": "用于部署 Microsoft Agent Framework 应用的无服务器平台",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "Serverless platforms for",
+      "industry": "AI infrastructure",
+      "useCase": "Microsoft Agent Framework apps",
+      "reportedNeed": "For teams building production AI agents, the serverless platform you choose can materially affect code-execution isolation, elastic scaling, CPU and GPU access, networking, and operational overhead.",
+      "deliveryComponents": [
+        "Best Serverless Platforms for Deploying Microsoft Agent Framework Apps in 2026 | Modal Blog AI Infrastructure",
+        "Best Serverless Platforms for Deploying Microsoft Agent Framework Apps in 2026",
+        "Microsoft Agent Framework is Microsoft's successor to both Semantic Kernel and AutoGen. AutoGen moved into maintenance mode in 2026. For teams building production AI agents, the serverless platform you choose can materially affect code-execution isolation, elastic scaling, CPU and GPU access, networking, and operational overhead. A purpose-built AI infrastructure platform can simplify how you deploy and manage agent workloads. This guide examines seven serverless platforms that serve different Microsoft Agent Framework deployment needs in 2026, starting with Modal, an AI-native solution that combines isolated Sandboxes, broad compute selection, fast serverless scaling, and code-first infrastructure.",
+        "Source-based deployment : Cloud Run can deploy services directly from source code, with Google Cloud buildpacks available for supported languages."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "workflow_before",
+        "workflow_after",
+        "team_composition",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d02f06f05d1d64a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://modal.com/resources/best-serverless-platforms-microsoft-agent-framework-apps",
+      "entityIds": [
+        "EN-8d02f06f05d1d64a",
+        "EN-9fbf261b62c1d7c0",
+        "EN-bbdefa2950f49882"
+      ]
+    },
+    {
+      "id": "FDE-ed5be666a17af354",
+      "eventId": "EV-a7568a8f75368e09",
+      "dataDate": "2026-09-19",
+      "date": "2026-09-19",
+      "title": "企业AI落地的“最后一公里”：FDE为何成了2026年的首席交付官？",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "的“最后一公里”：FDE为何成了2026年的首席交付官？",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "这种矛盾催生了今年PEC 2026 AI创新者大会上最炙手可热的议题—— FDE（Forward Deployed Engineer，前沿部署工程师） 。",
+        "过去，软件工程的成功标准是明确的：软件上线、没有Bug、通过验收。",
+        "如果AI系统上线了却没人用，或者没能带来实际的经营效益，那么技术上的“优雅”将毫无意义。"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://cnblogs.com/daoyiyun/p/23030190",
+      "entityIds": [
+        "EN-a4916084455b1950"
+      ]
+    },
+    {
+      "id": "FDE-d535f8773bfd95d2",
+      "eventId": "EV-0f241385f0cd6c2d",
+      "dataDate": "2026-09-19",
+      "date": "2026-09-18",
+      "title": "Anthropic 与 Accenture 合作开展嵌入式独立评估，双方各投入至少 10 亿美元",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "Accenture",
+      "industry": "未披露",
+      "useCase": "开展嵌入式独立评估，双方各投入至少 10 亿美元",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Embedded evaluation is new, and many of the details about how it will operate are still being worked out. Unlike today’s external evaluators, embedded evaluators will work inside AI companies, with access comparable to an employee's. That access allows them to watch models take shape in training, follow the decisions that govern how those models are built and deployed, and speak directly to employees. From this vantage point, embedded evaluators can assess how a company operates, verify that it is keeping its safety commitments, and identify blind spots. They can also report incidents and give the public a more informed account of benefits and risks."
+      ],
+      "outcomes": [],
+      "metrics": [
+        "$1 billion"
+      ],
+      "undisclosedFields": [
+        "customer",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://anthropic.com/news/accenture-embedded-evaluation",
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-4d748ebd71af03a7"
+      ]
+    },
     {
       "id": "FDE-faf2e3c8a2b4595b",
       "eventId": "EV-fd444ccd5831e77a",
@@ -7306,6 +7436,164 @@
   ],
   "fdeDossiers": [
     {
+      "id": "FDED-bb07ff367afa68c8",
+      "implementationKey": "bb07ff367afa68c8",
+      "eventId": "EV-a7568a8f75368e09",
+      "eventIds": [
+        "EV-a7568a8f75368e09"
+      ],
+      "dataDate": "2026-09-19",
+      "date": "2026-09-19",
+      "title": "未披露 × 未披露：的“最后一公里”：FDE为何成了2026年的首席交付官？",
+      "stage": "production",
+      "stageLabel": "production",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "的“最后一公里”：FDE为何成了2026年的首席交付官？",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.25,
+      "completenessPercent": 25,
+      "missingFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-9f1e87306b6161ab",
+          "type": "implementation_update",
+          "stage": "production",
+          "date": "2026-09-19",
+          "dataDate": "2026-09-19",
+          "eventId": "EV-a7568a8f75368e09",
+          "eventTitle": "企业AI落地的“最后一公里”：FDE为何成了2026年的首席交付官？",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://cnblogs.com/daoyiyun/p/23030190",
+      "entityIds": [
+        "EN-a4916084455b1950"
+      ]
+    },
+    {
+      "id": "FDED-cd09309e8468abc9",
+      "implementationKey": "cd09309e8468abc9",
+      "eventId": "EV-67804da6b04fdcc5",
+      "eventIds": [
+        "EV-67804da6b04fdcc5"
+      ],
+      "dataDate": "2026-09-19",
+      "date": "2026-09-19",
+      "title": "Serverless platforms for × Serverless platforms for：Microsoft Agent Framework apps",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Serverless platforms for",
+      "vendor": "Serverless platforms for",
+      "industry": "AI infrastructure",
+      "useCase": "Microsoft Agent Framework apps",
+      "workflow": "未披露",
+      "systems": [
+        "Google Cloud"
+      ],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.75,
+      "completenessPercent": 75,
+      "missingFields": [
+        "workflow",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-ac3cddfa943f3312",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-09-19",
+          "dataDate": "2026-09-19",
+          "eventId": "EV-67804da6b04fdcc5",
+          "eventTitle": "用于部署 Microsoft Agent Framework 应用的无服务器平台",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d02f06f05d1d64a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://modal.com/resources/best-serverless-platforms-microsoft-agent-framework-apps",
+      "entityIds": [
+        "EN-8d02f06f05d1d64a",
+        "EN-9fbf261b62c1d7c0",
+        "EN-bbdefa2950f49882"
+      ]
+    },
+    {
+      "id": "FDED-fb965e651b7f09c8",
+      "implementationKey": "fb965e651b7f09c8",
+      "eventId": "EV-0f241385f0cd6c2d",
+      "eventIds": [
+        "EV-0f241385f0cd6c2d"
+      ],
+      "dataDate": "2026-09-19",
+      "date": "2026-09-18",
+      "title": "Accenture × Accenture：开展嵌入式独立评估，双方各投入至少 10 亿美元",
+      "stage": "production",
+      "stageLabel": "production",
+      "customer": "Accenture",
+      "vendor": "Accenture",
+      "industry": "未披露",
+      "useCase": "开展嵌入式独立评估，双方各投入至少 10 亿美元",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.5,
+      "completenessPercent": 50,
+      "missingFields": [
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-74f494396e84652b",
+          "type": "implementation_update",
+          "stage": "production",
+          "date": "2026-09-18",
+          "dataDate": "2026-09-19",
+          "eventId": "EV-0f241385f0cd6c2d",
+          "eventTitle": "Anthropic 与 Accenture 合作开展嵌入式独立评估，双方各投入至少 10 亿美元",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://anthropic.com/news/accenture-embedded-evaluation",
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-4d748ebd71af03a7"
+      ]
+    },
+    {
       "id": "FDED-f814f417c008ea69",
       "implementationKey": "f814f417c008ea69",
       "eventId": "EV-fd444ccd5831e77a",
@@ -10545,10 +10833,10 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-09-18",
-      "funnel_id": "LF-f2e61b8fc4c4cf4e",
+      "data_date": "2026-09-19",
+      "funnel_id": "LF-04a7e2ae498b3397",
       "lens": "fde",
-      "date": "2026-09-18",
+      "date": "2026-09-19",
       "monitoring_paths": [
         "fde_customer_case",
         "fde_earnings_disclosure",
@@ -10556,27 +10844,27 @@
         "fde_production_rollout"
       ],
       "raw_documents": 109,
-      "original_sources": 97,
-      "valid_claims": 27,
-      "observations": 1,
-      "canonical_events": 13,
+      "original_sources": 95,
+      "valid_claims": 41,
+      "observations": 3,
+      "canonical_events": 16,
       "blocker_counts": {
-        "event_entity_unresolved": 1,
-        "no_source_bounded_event": 22,
-        "no_source_bounded_claim": 4,
-        "event_not_ai_relevant": 5,
-        "source_outside_daily_window": 46,
-        "non_event_or_index_title": 5,
-        "opinion_without_source_bounded_event": 1,
-        "raw_source_quality_block": 12
+        "no_source_bounded_event": 13,
+        "event_not_ai_relevant": 3,
+        "no_source_bounded_claim": 2,
+        "source_outside_daily_window": 54,
+        "non_event_or_index_title": 4,
+        "question_headline_not_event_specific": 1,
+        "raw_source_quality_block": 14,
+        "raw_document_not_auditable": 1
       },
       "rates": {
-        "original_source_rate": 0.8899082568807339,
-        "valid_claim_rate": 0.24770642201834864,
-        "observation_rate": 0.037037037037037035,
-        "event_conversion_rate": 0.48148148148148145
+        "original_source_rate": 0.8715596330275229,
+        "valid_claim_rate": 0.3761467889908257,
+        "observation_rate": 0.07317073170731707,
+        "event_conversion_rate": 0.3902439024390244
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-18/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-19/monitoring-funnel.json"
     }
   ]
 }

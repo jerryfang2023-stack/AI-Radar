@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-19T07:02:09.778Z",
+    "latestDataDate": "2026-09-19",
+    "currentDate": "2026-09-19",
+    "eventCount": 3409,
+    "quarantinedEventCount": 36,
+    "quarantinedEventIds": [
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-cab18aa68c8ae551",
+      "EV-88a9fd0b8f602e16",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "entity": {
+    "id": "EN-cb06f3c535c07379",
+    "name": "犀里光电",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-c3e9553260552659"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-product_form-ai_compute_system"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-18",
+    "lastSeen": "2026-09-19",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-c3e9553260552659"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-c3e9553260552659",
+        "dataDate": "2026-09-19",
+        "date": "2026-09-18",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "犀里光电完成Pre-A 轮融资 - 投中网",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_compute_system",
+            "name": "AI 计算系统",
+            "entityIds": [
+              "EN-cb06f3c535c07379"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-cb06f3c535c07379"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-product_form-ai_compute_system",
+      "name": "AI 计算系统",
+      "nodeType": "product_form",
+      "typeLabel": "产品形态",
+      "valueId": "ai_compute_system",
+      "eventIds": [
+        "EV-c3e9553260552659",
+        "EV-03bc82f6d6c169d7",
+        "EV-259566f35ea4f66d",
+        "EV-19dd4c3a5dd5a94b",
+        "EV-4af14568b1bdeb35",
+        "EV-e70a48e36e99d57a",
+        "EV-7abd8ec418f1e7f3",
+        "EV-e9d06e8a06aa7318",
+        "EV-dbbe3fd637be213f",
+        "EV-44ec7c229995ca3c",
+        "EV-ad6c755f7cf588c4",
+        "EV-c3b67ac2dcd72881",
+        "EV-ac069339ca20e4c6",
+        "EV-0121f0a9e9a975ec",
+        "EV-a852dc0ca6011ff6",
+        "EV-c3b96b789b5bcafd",
+        "EV-b9a1cba0b59a5354",
+        "EV-ebdc37429f89b55a",
+        "EV-234ad54940674bf6",
+        "EV-09172b686d2b49de",
+        "EV-ad8e1754463695fd",
+        "EV-5b16886442234f81",
+        "EV-451a70d4374c2818",
+        "EV-d27707a663d29ade",
+        "EV-4ecc308baf04ff02",
+        "EV-36a9af9b98a66be3",
+        "EV-a6c4f879a58ababa",
+        "EV-140aab677738351f",
+        "EV-1dc482e2fe2f10bc",
+        "EV-7bc2e6744a92c81f",
+        "EV-5d50eb202b478bd4",
+        "EV-09029303144c5e67",
+        "EV-a67071a8550cb1be"
+      ],
+      "entityIds": [
+        "EN-cb06f3c535c07379",
+        "EN-48b85dc3fd54f74d",
+        "EN-607a596a603dd679",
+        "EN-9cb45a27a2808c01",
+        "EN-8d4321d936320802",
+        "EN-0995103010d39563",
+        "EN-4e4b333252f207fd",
+        "EN-bbdefa2950f49882",
+        "EN-cecdd8369134f75e",
+        "EN-984a4161f72f4121",
+        "EN-e1680f5d27ebecb8",
+        "EN-c7fb6b39e587e345",
+        "EN-29b9f0cae32e7a8a",
+        "EN-c9e92f0b88c6456b",
+        "EN-54dfb14dcddad637",
+        "EN-772c171be4bf6551",
+        "EN-240389f4b730bad4",
+        "EN-bb144c85d7f4652d",
+        "EN-c07d4b946fe20ecf",
+        "EN-72fcf35a691c9bc5",
+        "EN-83eb1cb31148698f",
+        "EN-adb4b0aa1de289f9",
+        "EN-d7e81f6e7d39f00f",
+        "EN-98502f8f7e5e64cd",
+        "EN-070c562765b9ff05",
+        "EN-a89a94ff38d4dc95"
+      ],
+      "fdeIds": [
+        "FDE-98d93530f049c8a1",
+        "FDE-d1333c4e772841f2",
+        "FDE-dadf0e9572889d3d",
+        "FDE-856a0ed89c848048",
+        "FDE-b366647aabd8f450"
+      ],
+      "hardwareIds": [
+        "HW-662a7e40c8349289",
+        "HW-68c81779533a3523",
+        "HW-304c6370cc157449",
+        "HW-a033b945449628d5",
+        "HW-c5a22adcc66136ed",
+        "HW-a7207541fe11bd3b",
+        "HW-25eea5677838fb54",
+        "HW-fda4fe26e7e80468",
+        "HW-fceac179a4df80f5",
+        "HW-9a39a7f449362f96"
+      ],
+      "firstSeen": "2026-05-08",
+      "lastSeen": "2026-09-19"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

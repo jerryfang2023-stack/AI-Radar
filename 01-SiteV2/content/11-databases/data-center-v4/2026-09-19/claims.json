@@ -1,0 +1,2956 @@
+[
+  {
+    "claim_id": "CL-d29878d3829d81ed",
+    "raw_id": "RAW-deb4c97df2b6552d",
+    "claim_type": "funding",
+    "subject": "Vantora",
+    "predicate": "funding",
+    "object": "Silversmith Capital Partners",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-36db7e80c2f30e14"
+    },
+    "source_span": {
+      "raw_id": "RAW-deb4c97df2b6552d",
+      "start": 675,
+      "end": 734
+    },
+    "source_quote": "a $100 million investment from Silversmith Capital Partners",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3cd96549dd0cc5c4",
+    "raw_id": "RAW-44bedec4ac88406f",
+    "claim_type": "research_result",
+    "subject": "NVIDIA 发布 AIPerf 并演示如何在 vLLM 上规模化做 LLM 推理",
+    "predicate": "research_result",
+    "object": "Your maiden benchmark: Synthetic ISL/OSL on vLLM",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-44bedec4ac88406f",
+      "start": 3723,
+      "end": 3771
+    },
+    "source_quote": "Your maiden benchmark: Synthetic ISL/OSL on vLLM",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5ad2d67d7847d5cf",
+    "raw_id": "RAW-44bedec4ac88406f",
+    "claim_type": "research_result",
+    "subject": "NVIDIA 发布 AIPerf 并演示如何在 vLLM 上规模化做 LLM 推理",
+    "predicate": "research_result",
+    "object": "For this walkthrough we’ll use Qwen3-0.6B served through vLLM. The model choice is deliberate; it’s small enough to run on a single GPU and fast enough to iterate on without waiting. The point isn’t to benchmark Qwen3-0.6B specifically; it’s to establish the measurement loop. Once you have that, swapping in a different model or endpoint is a one-flag change.",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-44bedec4ac88406f",
+      "start": 3772,
+      "end": 4132
+    },
+    "source_quote": "For this walkthrough we’ll use Qwen3-0.6B served through vLLM. The model choice is deliberate; it’s small enough to run on a single GPU and fast enough to iterate on without waiting. The point isn’t to benchmark Qwen3-0.6B specifically; it’s to establish the measurement loop. Once you have that, swapping in a different model or endpoint is a one-flag change.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c4f8512a25a2bd63",
+    "raw_id": "RAW-44bedec4ac88406f",
+    "claim_type": "research_result",
+    "subject": "NVIDIA 发布 AIPerf 并演示如何在 vLLM 上规模化做 LLM 推理",
+    "predicate": "research_result",
+    "object": "Now that our feet are wet with a static benchmark, we can start exploring something more dynamic. The section above provided an extremely fixed traffic pattern, but real inference traffic doesn’t follow a static pattern. To benchmark with a scenario that’s less rigid, we can use some of AIPerf’s synthetic workload knobs to introduce variability to our requests.",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-44bedec4ac88406f",
+      "start": 8403,
+      "end": 8766
+    },
+    "source_quote": "Now that our feet are wet with a static benchmark, we can start exploring something more dynamic. The section above provided an extremely fixed traffic pattern, but real inference traffic doesn’t follow a static pattern. To benchmark with a scenario that’s less rigid, we can use some of AIPerf’s synthetic workload knobs to introduce variability to our requests.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ea7365a0dcf96232",
+    "raw_id": "RAW-44bedec4ac88406f",
+    "claim_type": "research_result",
+    "subject": "NVIDIA 发布 AIPerf 并演示如何在 vLLM 上规模化做 LLM 推理",
+    "predicate": "research_result",
+    "object": "Agentic AI / Generative AI | Developer Tools & Techniques | General | AGX | Jetson | TensorRT | TensorRT-LLM | Intermediate Technical | Benchmark | AI Agent | AI Inference | Cloud APIs | Inference Performance | LLMs",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-44bedec4ac88406f",
+      "start": 13591,
+      "end": 13806
+    },
+    "source_quote": "Agentic AI / Generative AI | Developer Tools & Techniques | General | AGX | Jetson | TensorRT | TensorRT-LLM | Intermediate Technical | Benchmark | AI Agent | AI Inference | Cloud APIs | Inference Performance | LLMs",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-df22e299dbdce7a1",
+    "raw_id": "RAW-efac07522bd82bd7",
+    "claim_type": "funding",
+    "subject": "Manus 拟以 40 亿美元估值",
+    "predicate": "funding",
+    "object": "5 亿美元，已恢复独立运营",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-efac07522bd82bd7",
+      "start": 280,
+      "end": 555
+    },
+    "source_quote": "Chinese AI startup Manus, which earlier this year had to break off a merger with Meta, is in discussions to raise $500 million at a $4 billion valuation now that it has resumed operations as an independent company, The Wall Street Journal reported , citing anonymous sources.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-9c26959e1add5319",
+    "raw_id": "RAW-9947876eab1efc05",
+    "claim_type": "funding",
+    "subject": "Crusoe",
+    "predicate": "funding",
+    "object": "nearly $4 billion in a single round at a $30.9 billion post-money valuation",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3,
+      "model_candidate_id": "MAC-4c67ceb60ca321ad"
+    },
+    "source_span": {
+      "raw_id": "RAW-9947876eab1efc05",
+      "start": 753,
+      "end": 843
+    },
+    "source_quote": "Crusoe raises nearly $4 billion in a single round at a $30.9 billion post-money valuation.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b66c44c4b30e7bd7",
+    "raw_id": "RAW-1f43f479df8f75b0",
+    "claim_type": "acquisition",
+    "subject": "Accenture",
+    "predicate": "acquisition",
+    "object": "Faculty",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 3,
+      "model_candidate_id": "MAC-ead141820ea12bb1"
+    },
+    "source_span": {
+      "raw_id": "RAW-1f43f479df8f75b0",
+      "start": 529,
+      "end": 603
+    },
+    "source_quote": "Faculty, a company Accenture acquired in January to act as its AI division",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a6daf41a10d169de",
+    "raw_id": "RAW-0014e6ef34ab5ea9",
+    "claim_type": "partnership",
+    "subject": "Anthropic 与 Accenture",
+    "predicate": "partnership",
+    "object": "开展嵌入式独立评估，双方各投入至少 10 亿美元",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-0014e6ef34ab5ea9",
+      "start": 351,
+      "end": 771
+    },
+    "source_quote": "The partnership will be led by Faculty, Accenture’s specialist AI business, and will include evaluating and red-teaming models, conducting alignment assessments, and testing model safeguards. Accenture helps businesses and governments deploy AI across many industries. Their understanding of how enterprises use AI in practice informs their safety approach, and they will bring that perspective to evaluating our models.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-49b695f02f9e309f",
+    "raw_id": "RAW-0014e6ef34ab5ea9",
+    "claim_type": "partnership",
+    "subject": "Anthropic 与 Accenture",
+    "predicate": "partnership",
+    "object": "开展嵌入式独立评估，双方各投入至少 10 亿美元",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-0014e6ef34ab5ea9",
+      "start": 2493,
+      "end": 2745
+    },
+    "source_quote": "We expect frontier labs to work with several organizations at once. Our partnership is non-exclusive; Anthropic will work with other evaluators to be announced in the coming weeks, and Accenture will work with other AI developers in similar capacities.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-95db255d7bc333a4",
+    "raw_id": "RAW-0014e6ef34ab5ea9",
+    "claim_type": "partnership",
+    "subject": "Anthropic 与 Accenture",
+    "predicate": "partnership",
+    "object": "开展嵌入式独立评估，双方各投入至少 10 亿美元",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-0014e6ef34ab5ea9",
+      "start": 772,
+      "end": 897
+    },
+    "source_quote": "Anthropic and Accenture each expect to invest at least $1 billion in building capacity in this area over the next five years.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a6ba6dce5d8c259d",
+    "raw_id": "RAW-0014e6ef34ab5ea9",
+    "claim_type": "partnership",
+    "subject": "Anthropic 与 Accenture",
+    "predicate": "partnership",
+    "object": "开展嵌入式独立评估，双方各投入至少 10 亿美元",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-0014e6ef34ab5ea9",
+      "start": 898,
+      "end": 1556
+    },
+    "source_quote": "Embedded evaluation is new, and many of the details about how it will operate are still being worked out. Unlike today’s external evaluators, embedded evaluators will work inside AI companies, with access comparable to an employee's. That access allows them to watch models take shape in training, follow the decisions that govern how those models are built and deployed, and speak directly to employees. From this vantage point, embedded evaluators can assess how a company operates, verify that it is keeping its safety commitments, and identify blind spots. They can also report incidents and give the public a more informed account of benefits and risks.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f714a3cdfe65ee4f",
+    "raw_id": "RAW-9c452519d777e793",
+    "claim_type": "deployment",
+    "subject": "Serverless platforms for",
+    "predicate": "deployment",
+    "object": "Microsoft Agent Framework apps",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-9c452519d777e793",
+      "start": 0,
+      "end": 109
+    },
+    "source_quote": "Best Serverless Platforms for Deploying Microsoft Agent Framework Apps in 2026 | Modal Blog AI Infrastructure",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4950389c2c7ba221",
+    "raw_id": "RAW-9c452519d777e793",
+    "claim_type": "deployment",
+    "subject": "Serverless platforms for",
+    "predicate": "deployment",
+    "object": "Microsoft Agent Framework apps",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-9c452519d777e793",
+      "start": 110,
+      "end": 188
+    },
+    "source_quote": "Best Serverless Platforms for Deploying Microsoft Agent Framework Apps in 2026",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5393ab68ad670508",
+    "raw_id": "RAW-9c452519d777e793",
+    "claim_type": "deployment",
+    "subject": "Serverless platforms for",
+    "predicate": "deployment",
+    "object": "Microsoft Agent Framework apps",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-9c452519d777e793",
+      "start": 189,
+      "end": 897
+    },
+    "source_quote": "Microsoft Agent Framework is Microsoft's successor to both Semantic Kernel and AutoGen. AutoGen moved into maintenance mode in 2026. For teams building production AI agents, the serverless platform you choose can materially affect code-execution isolation, elastic scaling, CPU and GPU access, networking, and operational overhead. A purpose-built AI infrastructure platform can simplify how you deploy and manage agent workloads. This guide examines seven serverless platforms that serve different Microsoft Agent Framework deployment needs in 2026, starting with Modal, an AI-native solution that combines isolated Sandboxes, broad compute selection, fast serverless scaling, and code-first infrastructure.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d87e2122c8d13354",
+    "raw_id": "RAW-9c452519d777e793",
+    "claim_type": "deployment",
+    "subject": "Serverless platforms for",
+    "predicate": "deployment",
+    "object": "Microsoft Agent Framework apps",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-9c452519d777e793",
+      "start": 9019,
+      "end": 9165
+    },
+    "source_quote": "Source-based deployment : Cloud Run can deploy services directly from source code, with Google Cloud buildpacks available for supported languages.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2142252ef9ee89c5",
+    "raw_id": "RAW-724e68655d606fe7",
+    "claim_type": "product_release",
+    "subject": "Sharp Corporation",
+    "predicate": "product_release",
+    "object": "AI Server for Enterprise Workloads (NVIDIA RTX Pro Server)",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-4562cc39919e1063"
+    },
+    "source_span": {
+      "raw_id": "RAW-724e68655d606fe7",
+      "start": 335,
+      "end": 597
+    },
+    "source_quote": "Sharp Corporation will enter the AI server business by accepting orders for AI servers equipped with NVIDIA technology in Japan starting today, September 15, from corporations, local governments, research institutions, data center operators, and other customers.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0022381ed27c8473",
+    "raw_id": "RAW-dbc3a3fe56a45fb4",
+    "claim_type": "funding",
+    "subject": "Wonderful",
+    "predicate": "funding",
+    "object": "$550 Million Series C to Scale the AI Operating System for the Enterprise",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-dbc3a3fe56a45fb4",
+      "start": 0,
+      "end": 90
+    },
+    "source_quote": "Wonderful Raises $550 Million Series C to Scale the AI Operating System for the Enterprise",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0e8a28d5b530328e",
+    "raw_id": "RAW-dbc3a3fe56a45fb4",
+    "claim_type": "funding",
+    "subject": "Wonderful",
+    "predicate": "funding",
+    "object": "$550 Million Series C to Scale the AI Operating System for the Enterprise",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-dbc3a3fe56a45fb4",
+      "start": 91,
+      "end": 122
+    },
+    "source_quote": "Wonderful Raises $550M Series C",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a7ecc3d48cc95099",
+    "raw_id": "RAW-dbc3a3fe56a45fb4",
+    "claim_type": "funding",
+    "subject": "Wonderful",
+    "predicate": "funding",
+    "object": "$550 Million Series C to Scale the AI Operating System for the Enterprise",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-dbc3a3fe56a45fb4",
+      "start": 123,
+      "end": 154
+    },
+    "source_quote": "Wonderful Raises $550M Series C",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-dca51b7ee15c1d0b",
+    "raw_id": "RAW-dbc3a3fe56a45fb4",
+    "claim_type": "funding",
+    "subject": "Wonderful",
+    "predicate": "funding",
+    "object": "$550 Million Series C to Scale the AI Operating System for the Enterprise",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-dbc3a3fe56a45fb4",
+      "start": 211,
+      "end": 242
+    },
+    "source_quote": "Wonderful Raises $550M Series C",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-79c4520826a1b515",
+    "raw_id": "RAW-4ce712d383c1280a",
+    "claim_type": "product_release",
+    "subject": "NVIDIA AI Enterprise Infrastructure 8.2",
+    "predicate": "product_release",
+    "object": "Production Branch",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-3a21812e6f854411"
+    },
+    "source_span": {
+      "raw_id": "RAW-4ce712d383c1280a",
+      "start": 561,
+      "end": 623
+    },
+    "source_quote": "Infrastructure 8.2 (Production Branch) - Released August 2026.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-85e3aa9c584ff615",
+    "raw_id": "RAW-4ce712d383c1280a",
+    "claim_type": "product_release",
+    "subject": "NVIDIA AI Enterprise Infrastructure 7.8",
+    "predicate": "product_release",
+    "object": "Long-Term Support Branch",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-3a21812e6f854411"
+    },
+    "source_span": {
+      "raw_id": "RAW-4ce712d383c1280a",
+      "start": 805,
+      "end": 854
+    },
+    "source_quote": "Infrastructure 7.8 (LTSB) - Released August 2026.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-88b43db5f705b46d",
+    "raw_id": "RAW-212df71b483d4caa",
+    "claim_type": "product_release",
+    "subject": "Sharp Corporation",
+    "predicate": "product_release",
+    "object": "AI Server for Enterprise Workloads (NVIDIA RTX Pro Server)",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-c600fd34602e3eb3"
+    },
+    "source_span": {
+      "raw_id": "RAW-212df71b483d4caa",
+      "start": 743,
+      "end": 1007
+    },
+    "source_quote": "Sharp Corporation will enter the AI server business by accepting orders for AI servers equipped with NVIDIA technology in Japan starting on September 15, 2026, from corporations, local governments, research institutions, data center operators, and other customers.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-79cb64db16a36c56",
+    "raw_id": "RAW-5caae576e74a5497",
+    "claim_type": "partnership",
+    "subject": "PwC Middle East",
+    "predicate": "partnership",
+    "object": "Axelera AI",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-28b91757c9c729aa"
+    },
+    "source_span": {
+      "raw_id": "RAW-5caae576e74a5497",
+      "start": 317,
+      "end": 355
+    },
+    "source_quote": "PwC Middle East and Axelera AI team up",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7cb2fca96a6e81b7",
+    "raw_id": "RAW-5caae576e74a5497",
+    "claim_type": "partnership",
+    "subject": "ASRock Industrial",
+    "predicate": "partnership",
+    "object": "Axelera AI",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-28b91757c9c729aa"
+    },
+    "source_span": {
+      "raw_id": "RAW-5caae576e74a5497",
+      "start": 1084,
+      "end": 1267
+    },
+    "source_quote": "ASRock Industrial today announced a strategic collaboration with Axelera AI to deliver high-performance, power-efficient, and cost-effective AI inference solutions for edge computing.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-32f2b342399ce2ea",
+    "raw_id": "RAW-0c5fb076a0cccb41",
+    "claim_type": "product_release",
+    "subject": "Instinct",
+    "predicate": "product_release",
+    "object": "Instinct Concierge",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-3d1c3b695e1399a2"
+    },
+    "source_span": {
+      "raw_id": "RAW-0c5fb076a0cccb41",
+      "start": 228,
+      "end": 384
+    },
+    "source_quote": "Instinct rolled out “Instinct Concierge” to let user agents place phone calls and perform high-touch tasks (booking restaurants, joining cancellation lists)",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-28c132c80d21f164",
+    "raw_id": "RAW-0c5fb076a0cccb41",
+    "claim_type": "product_release",
+    "subject": "Meta",
+    "predicate": "product_release",
+    "object": "Muse outbound calling",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-3d1c3b695e1399a2"
+    },
+    "source_span": {
+      "raw_id": "RAW-0c5fb076a0cccb41",
+      "start": 389,
+      "end": 443
+    },
+    "source_quote": "Meta’s Muse gained outbound calling to U.S. businesses",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-206ecea9ccb77a5c",
+    "raw_id": "RAW-be1189e02b98c79a",
+    "claim_type": "certification_compliance",
+    "subject": "Procurement Sciences",
+    "predicate": "certification_compliance",
+    "object": "FedRAMP Moderate Authorization",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-0a46824655c41c07"
+    },
+    "source_span": {
+      "raw_id": "RAW-be1189e02b98c79a",
+      "start": 1794,
+      "end": 1918
+    },
+    "source_quote": "Procurement Sciences is designed for the most sensitive government workloads. This includes FedRAMP® Moderate Authorization.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-cce55e6dc3dd20ab",
+    "raw_id": "RAW-9129228ccd5f6d7b",
+    "claim_type": "research_result",
+    "subject": "Deloitte and DocuSign 2026 global study",
+    "predicate": "research_result",
+    "object": "36% efficiency gains across agreement workflows",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-ab9cb0231922d7f3"
+    },
+    "source_span": {
+      "raw_id": "RAW-9129228ccd5f6d7b",
+      "start": 478,
+      "end": 715
+    },
+    "source_quote": "In Deloitte and DocuSign’s 2026 global study, Capitalizing on AI: How automated agreement workflows drive ROI, more than 1,100 leaders share how contract intelligence platforms are driving 36% efficiency gains across agreement workflows.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6aaff7e4c2f8276b",
+    "raw_id": "RAW-9129228ccd5f6d7b",
+    "claim_type": "research_result",
+    "subject": "Legal respondents",
+    "predicate": "research_result",
+    "object": "average time savings of 37% across agreement management activities",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-ab9cb0231922d7f3"
+    },
+    "source_span": {
+      "raw_id": "RAW-9129228ccd5f6d7b",
+      "start": 1162,
+      "end": 1259
+    },
+    "source_quote": "Legal respondents reported an average time savings of 37% across agreement management activities.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7075ade34c6993df",
+    "raw_id": "RAW-9129228ccd5f6d7b",
+    "claim_type": "research_result",
+    "subject": "Organizations not currently using AI for agreement management",
+    "predicate": "research_result",
+    "object": "95% are now either considering or planning to adopt it",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-ab9cb0231922d7f3"
+    },
+    "source_span": {
+      "raw_id": "RAW-9129228ccd5f6d7b",
+      "start": 2461,
+      "end": 2585
+    },
+    "source_quote": "Among organizations not currently using AI for agreement management, 95% are now either considering or planning to adopt it.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-76928c33c7252dfe",
+    "raw_id": "RAW-421204cb4b8cdd97",
+    "claim_type": "research_result",
+    "subject": "Gartner",
+    "predicate": "research_result",
+    "object": "agentic AI projects",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-f357de589d744211"
+    },
+    "source_span": {
+      "raw_id": "RAW-421204cb4b8cdd97",
+      "start": 2460,
+      "end": 2622
+    },
+    "source_quote": "Gartner predicts over 40% of agentic AI projects will be canceled by the end of 2027 due to escalating costs, unclear business value, or inadequate risk controls.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-55d39f9fda5f6e96",
+    "raw_id": "RAW-421204cb4b8cdd97",
+    "claim_type": "research_result",
+    "subject": "McKinsey",
+    "predicate": "research_result",
+    "object": "enterprises",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-f357de589d744211"
+    },
+    "source_span": {
+      "raw_id": "RAW-421204cb4b8cdd97",
+      "start": 2623,
+      "end": 2854
+    },
+    "source_quote": "McKinsey research shows that while nearly two-thirds of enterprises have experimented with AI agents, fewer than 10% have scaled them to deliver measurable value, with poor data quality and governance cited as the primary barriers.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c5f531987db70dc1",
+    "raw_id": "RAW-cf3ce397471386e4",
+    "claim_type": "certification_compliance",
+    "subject": "Zip",
+    "predicate": "certification_compliance",
+    "object": "SOC 1 Type 2",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-04183e503b833f46"
+    },
+    "source_span": {
+      "raw_id": "RAW-cf3ce397471386e4",
+      "start": 3402,
+      "end": 3414
+    },
+    "source_quote": "SOC 1 Type 2",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-231b2c611eb5cf9a",
+    "raw_id": "RAW-cf3ce397471386e4",
+    "claim_type": "certification_compliance",
+    "subject": "Zip",
+    "predicate": "certification_compliance",
+    "object": "SOC 2 Type 2",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-04183e503b833f46"
+    },
+    "source_span": {
+      "raw_id": "RAW-cf3ce397471386e4",
+      "start": 3415,
+      "end": 3427
+    },
+    "source_quote": "SOC 2 Type 2",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2292435c2ea881dc",
+    "raw_id": "RAW-cf3ce397471386e4",
+    "claim_type": "certification_compliance",
+    "subject": "Zip",
+    "predicate": "certification_compliance",
+    "object": "ISO27001",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-04183e503b833f46"
+    },
+    "source_span": {
+      "raw_id": "RAW-cf3ce397471386e4",
+      "start": 3443,
+      "end": 3451
+    },
+    "source_quote": "ISO27001",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ff174fbe119bf090",
+    "raw_id": "RAW-069a44e3b70d36cc",
+    "claim_type": "product_release",
+    "subject": "Procurement Sciences",
+    "predicate": "product_release",
+    "object": "Awarded AI",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-8b6eb01181606ea9"
+    },
+    "source_span": {
+      "raw_id": "RAW-069a44e3b70d36cc",
+      "start": 0,
+      "end": 168
+    },
+    "source_quote": "Introducing, Awarded AI\nAwarded AI by Procurement Sciences is our end-to-end platform for proposal creation, capture and business development, powered by generative AI.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d2e9f3f6de86d51a",
+    "raw_id": "RAW-121003398bba455c",
+    "claim_type": "security_incident",
+    "subject": "US Special Operations Command analyst",
+    "predicate": "security_incident",
+    "object": "Chinese ship",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-2aec402428d6194a"
+    },
+    "source_span": {
+      "raw_id": "RAW-121003398bba455c",
+      "start": 320,
+      "end": 502
+    },
+    "source_quote": "That erroneous intelligence, submitted by a US Special Operations Command analyst, suggested the Chinese ship was transporting nuclear arms program components through the Middle East",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7b33369c79df07cf",
+    "raw_id": "RAW-10e8f79a2b7c7252",
+    "claim_type": "model_release",
+    "subject": "PrismML",
+    "predicate": "model_release",
+    "object": "保留 Qwen3.8 27B 98.2% 的性能",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-10e8f79a2b7c7252",
+      "start": 208,
+      "end": 682
+    },
+    "source_quote": "PrismML has released Ternary Bonsai 2 27B , a ternary-weight version of Qwen3.8 27B . The language model occupies 5.93 GB, against 53.80 GB in FP16. PrismML reports that it keeps 98.2% of the parent model’s average across 20 benchmarks. The model accepts text and images and supports a 262K-token context. PrismML demos it driving Cline coding agents and computer use on an RTX 5090. It arrives 2 months after the first Bonsai 27B , whose ternary variant retained about 95%.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4e1e5f63aad5ae10",
+    "raw_id": "RAW-10e8f79a2b7c7252",
+    "claim_type": "model_release",
+    "subject": "PrismML",
+    "predicate": "model_release",
+    "object": "保留 Qwen3.8 27B 98.2% 的性能",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-10e8f79a2b7c7252",
+      "start": 701,
+      "end": 833
+    },
+    "source_quote": "Yes. The Apache 2.0 weights run today on a 16 GB laptop or a single 24 GB GPU. You need PrismML’s llama.cpp fork or its MLX runtime.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-557998bc66d40955",
+    "raw_id": "RAW-10e8f79a2b7c7252",
+    "claim_type": "model_release",
+    "subject": "PrismML",
+    "predicate": "model_release",
+    "object": "保留 Qwen3.8 27B 98.2% 的性能",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-10e8f79a2b7c7252",
+      "start": 834,
+      "end": 863
+    },
+    "source_quote": "What is Ternary Bonsai 2 27B?",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-12f1a1259a620deb",
+    "raw_id": "RAW-10e8f79a2b7c7252",
+    "claim_type": "model_release",
+    "subject": "PrismML",
+    "predicate": "model_release",
+    "object": "保留 Qwen3.8 27B 98.2% 的性能",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-10e8f79a2b7c7252",
+      "start": 864,
+      "end": 1148
+    },
+    "source_quote": "The model keeps the Qwen3.8 27B architecture unchanged. It has 27.36B parameters. That splits into a 24.35B language backbone, 2.54B in embeddings and LM head, and a 0.47B vision tower. The backbone uses hybrid attention, with about 75% linear-attention and 25% full-attention layers.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5053c0d87d2a749b",
+    "raw_id": "RAW-de3a7d1041246de9",
+    "claim_type": "funding",
+    "subject": "深创投、和利资本、TCL创投、中科创星联合领投，烨知心",
+    "predicate": "funding",
+    "object": "加速端侧AI算力布局_东方财经网",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-de3a7d1041246de9",
+      "start": 0,
+      "end": 53
+    },
+    "source_quote": "深创投、和利资本、TCL创投、中科创星联合领投，烨知心完成Pre-A轮融资加速端侧AI算力布局_东方财经网",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-60fb391eec1a2790",
+    "raw_id": "RAW-de3a7d1041246de9",
+    "claim_type": "funding",
+    "subject": "深创投、和利资本、TCL创投、中科创星联合领投，烨知心",
+    "predicate": "funding",
+    "object": "加速端侧AI算力布局_东方财经网",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-de3a7d1041246de9",
+      "start": 217,
+      "end": 264
+    },
+    "source_quote": "深创投、和利资本、TCL创投、中科创星联合领投，烨知心完成Pre-A轮融资加速端侧AI算力布局",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c8a4984f659168f7",
+    "raw_id": "RAW-de3a7d1041246de9",
+    "claim_type": "funding",
+    "subject": "深创投、和利资本、TCL创投、中科创星联合领投，烨知心",
+    "predicate": "funding",
+    "object": "加速端侧AI算力布局_东方财经网",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-de3a7d1041246de9",
+      "start": 318,
+      "end": 429
+    },
+    "source_quote": "近日，端侧AI算力基础设施公司烨知心（Yeats.AI）宣布完成Pre-A轮融资，由深创投、和利资本、TCL创投、中科创星联合领投，艾为电子（688798.SH）、国开科创、朝晖资本等机构跟投，老股东连续多轮持续超额追投。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4a2a9fc49877453a",
+    "raw_id": "RAW-de3a7d1041246de9",
+    "claim_type": "funding",
+    "subject": "深创投、和利资本、TCL创投、中科创星联合领投，烨知心",
+    "predicate": "funding",
+    "object": "加速端侧AI算力布局_东方财经网",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-de3a7d1041246de9",
+      "start": 429,
+      "end": 494
+    },
+    "source_quote": "值得关注的是，本轮融资是烨知心成立一年以来完成的第三轮融资，累计融资规模已近10亿元，每轮均获得数家产业资本与头部VC的联合支持。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-16d4df92dd24da99",
+    "raw_id": "RAW-1618e4cc2813ef0b",
+    "claim_type": "funding",
+    "subject": "地瓜机器人",
+    "predicate": "funding",
+    "object": "软硬一体基础设施支撑具身智能产业落地_新浪财经_新浪网",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-1618e4cc2813ef0b",
+      "start": 0,
+      "end": 43
+    },
+    "source_quote": "地瓜机器人完成4亿美元C轮融资 软硬一体基础设施支撑具身智能产业落地_新浪财经_新浪网",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0eaf604bde79a452",
+    "raw_id": "RAW-1618e4cc2813ef0b",
+    "claim_type": "funding",
+    "subject": "地瓜机器人",
+    "predicate": "funding",
+    "object": "软硬一体基础设施支撑具身智能产业落地_新浪财经_新浪网",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-1618e4cc2813ef0b",
+      "start": 198,
+      "end": 232
+    },
+    "source_quote": "地瓜机器人完成4亿美元C轮融资 软硬一体基础设施支撑具身智能产业落地",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ff5c6ddb02c791c1",
+    "raw_id": "RAW-1618e4cc2813ef0b",
+    "claim_type": "funding",
+    "subject": "地瓜机器人",
+    "predicate": "funding",
+    "object": "软硬一体基础设施支撑具身智能产业落地_新浪财经_新浪网",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-1618e4cc2813ef0b",
+      "start": 233,
+      "end": 267
+    },
+    "source_quote": "地瓜机器人完成4亿美元C轮融资 软硬一体基础设施支撑具身智能产业落地",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b0fbb08b127bc2d3",
+    "raw_id": "RAW-1618e4cc2813ef0b",
+    "claim_type": "funding",
+    "subject": "地瓜机器人",
+    "predicate": "funding",
+    "object": "软硬一体基础设施支撑具身智能产业落地_新浪财经_新浪网",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-1618e4cc2813ef0b",
+      "start": 403,
+      "end": 427
+    },
+    "source_quote": "9月17日，地瓜机器人宣布完成4亿美元C轮融资。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1457a5df5f680223",
+    "raw_id": "RAW-5b77240adcb910e3",
+    "claim_type": "security_incident",
+    "subject": "Hacktron security team",
+    "predicate": "security_incident",
+    "object": "OpenAI internal systems",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-01c69ab0b7ba2af2"
+    },
+    "source_span": {
+      "raw_id": "RAW-5b77240adcb910e3",
+      "start": 1072,
+      "end": 1189
+    },
+    "source_quote": "Hacktron's security team chained two vulnerabilities together to access OpenAI employees' ChatGPT and Codex accounts.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-bf10625be0f21972",
+    "raw_id": "RAW-5b77240adcb910e3",
+    "claim_type": "security_incident",
+    "subject": "OpenAI",
+    "predicate": "security_incident",
+    "object": "community forum vulnerability",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-01c69ab0b7ba2af2"
+    },
+    "source_span": {
+      "raw_id": "RAW-5b77240adcb910e3",
+      "start": 3443,
+      "end": 3500
+    },
+    "source_quote": "OpenAI confirmed the fix about 14 hours after the report.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-894d1d390d9ac321",
+    "raw_id": "RAW-2829eb8cb9242bc4",
+    "claim_type": "organization_people",
+    "subject": "New experts",
+    "predicate": "organization_people",
+    "object": "Google’s AI & Economy team",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-2829eb8cb9242bc4",
+      "start": 42,
+      "end": 85
+    },
+    "source_quote": "New experts join Google’s AI & Economy team",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-292884998c4f77c6",
+    "raw_id": "RAW-2829eb8cb9242bc4",
+    "claim_type": "organization_people",
+    "subject": "New experts",
+    "predicate": "organization_people",
+    "object": "Google’s AI & Economy team",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-2829eb8cb9242bc4",
+      "start": 138,
+      "end": 338
+    },
+    "source_quote": "Nobel Laureate Philippe Aghion, Professor Ajay Agrawal, and leading researchers join Google’s AI & Economy program to expand our scientific understanding of AI’s impact on economic activity worldwide.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a84d69b25b2e3bad",
+    "raw_id": "RAW-2829eb8cb9242bc4",
+    "claim_type": "organization_people",
+    "subject": "New experts",
+    "predicate": "organization_people",
+    "object": "Google’s AI & Economy team",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-2829eb8cb9242bc4",
+      "start": 1089,
+      "end": 1192
+    },
+    "source_quote": "Google’s \"New experts join Google’s AI & Economy team\" article details their expanded research program.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-38e82605b8f1408a",
+    "raw_id": "RAW-2829eb8cb9242bc4",
+    "claim_type": "organization_people",
+    "subject": "New experts",
+    "predicate": "organization_people",
+    "object": "Google’s AI & Economy team",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-2829eb8cb9242bc4",
+      "start": 0,
+      "end": 41
+    },
+    "source_quote": "Google expands AI & Economy research team",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b90b8706a58252f1",
+    "raw_id": "RAW-4624311ee6a06919",
+    "claim_type": "product_release",
+    "subject": "UN system",
+    "predicate": "product_release",
+    "object": "UN System Data Commons",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-a03a61d2e9ceff7a"
+    },
+    "source_span": {
+      "raw_id": "RAW-4624311ee6a06919",
+      "start": 1107,
+      "end": 1318
+    },
+    "source_quote": "the UN system is launching the UN System Data Commons —an open-source platform built on Data Commons by Google that unites global statistics into one interconnected resource known as an AI-ready knowledge graph.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8ff8b03ee8d50de2",
+    "raw_id": "RAW-ebfcbb249679e41b",
+    "claim_type": "funding",
+    "subject": "德睿智药",
+    "predicate": "funding",
+    "object": "，构建AI Native新药研发引擎-动脉网",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-ebfcbb249679e41b",
+      "start": 0,
+      "end": 81
+    },
+    "source_quote": "动脉网获悉，近日， 专注于AI驱动新药研发的科技公司——德睿智药（MindRank）宣布分阶段完成累计5200万美元B轮融资，多家知名投资机构与产业基金共同投资。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b0dc4d3fdd51f39c",
+    "raw_id": "RAW-48092249d99ebf43",
+    "claim_type": "lawsuit_settlement",
+    "subject": "纽约时报版权",
+    "predicate": "lawsuit_settlement",
+    "object": "披露：微软高管内部称训练 AI 是人类历史上最大规模劳动窃取",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-48092249d99ebf43",
+      "start": 0,
+      "end": 131
+    },
+    "source_quote": "IT之家 9 月 19 日消息，科技媒体 Tom's Hardware 昨日（9 月 18 日）发布博文，报道称在起诉 OpenAI 和微软的版权纠纷案中，原告《纽约时报》已申请简易判决， 并提交新的法律摘要，进一步披露两家公司（微软和 OpenAI）内部材料。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-2de8e6902f74f046",
+    "raw_id": "RAW-48092249d99ebf43",
+    "claim_type": "lawsuit_settlement",
+    "subject": "纽约时报版权",
+    "predicate": "lawsuit_settlement",
+    "object": "披露：微软高管内部称训练 AI 是人类历史上最大规模劳动窃取",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-48092249d99ebf43",
+      "start": 275,
+      "end": 301
+    },
+    "source_quote": "IT之家注：简易判决是美国民事诉讼中的一种裁决程序。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-18b0036e990c2cef",
+    "raw_id": "RAW-48092249d99ebf43",
+    "claim_type": "lawsuit_settlement",
+    "subject": "纽约时报版权",
+    "predicate": "lawsuit_settlement",
+    "object": "披露：微软高管内部称训练 AI 是人类历史上最大规模劳动窃取",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-48092249d99ebf43",
+      "start": 132,
+      "end": 225
+    },
+    "source_quote": "这起版权纠纷可以追溯到 2023 年年底，《纽约时报》指控微软和 OpenAI 两家公司侵犯其数千篇新闻报道的版权，未经许可使用其内容来训练 ChatGPT 和 Copilot 等产品。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-6a9dbdc49e66c65c",
+    "raw_id": "RAW-48092249d99ebf43",
+    "claim_type": "lawsuit_settlement",
+    "subject": "纽约时报版权",
+    "predicate": "lawsuit_settlement",
+    "object": "披露：微软高管内部称训练 AI 是人类历史上最大规模劳动窃取",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-48092249d99ebf43",
+      "start": 226,
+      "end": 274
+    },
+    "source_quote": "《纽约时报》法律团队近日向法院申请简易判决，并同时递交法律摘要，并援引来自两家被告的声明和文件。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-7bf901c4b09c97d8",
+    "raw_id": "RAW-021f97215b68323c",
+    "claim_type": "product_release",
+    "subject": "亚马逊：AI 模型必须经过严格测试，确认足够安全才能",
+    "predicate": "product_release",
+    "object": "亚马逊：AI 模型必须经过严格测试，确认足够安全才能发布 - IT之家",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-021f97215b68323c",
+      "start": 0,
+      "end": 35
+    },
+    "source_quote": "亚马逊：AI 模型必须经过严格测试，确认足够安全才能发布 - IT之家",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f782422be8ed10c4",
+    "raw_id": "RAW-021f97215b68323c",
+    "claim_type": "product_release",
+    "subject": "亚马逊：AI 模型必须经过严格测试，确认足够安全才能",
+    "predicate": "product_release",
+    "object": "亚马逊：AI 模型必须经过严格测试，确认足够安全才能发布",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-021f97215b68323c",
+      "start": 203,
+      "end": 231
+    },
+    "source_quote": "亚马逊：AI 模型必须经过严格测试，确认足够安全才能发布",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c7d1c62c1b19c0f6",
+    "raw_id": "RAW-021f97215b68323c",
+    "claim_type": "product_release",
+    "subject": "亚马逊：AI 模型必须经过严格测试，确认足够安全才能",
+    "predicate": "product_release",
+    "object": "IT之家 9 月 18 日消息，据彭博社今天（18 日）凌晨报道，亚马逊认为，AI 模型必须 经过严格测试，确认具备足够的安全保障 后才能发布。",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-021f97215b68323c",
+      "start": 300,
+      "end": 372
+    },
+    "source_quote": "IT之家 9 月 18 日消息，据彭博社今天（18 日）凌晨报道，亚马逊认为，AI 模型必须 经过严格测试，确认具备足够的安全保障 后才能发布。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-aaa2b330f030d8eb",
+    "raw_id": "RAW-021f97215b68323c",
+    "claim_type": "product_release",
+    "subject": "亚马逊：AI 模型必须经过严格测试，确认足够安全才能",
+    "predicate": "product_release",
+    "object": "模型只有在准备充分、能够安全使用时才应该发布，而这离不开严格测试和强有力的安全保障。",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-021f97215b68323c",
+      "start": 471,
+      "end": 513
+    },
+    "source_quote": "模型只有在准备充分、能够安全使用时才应该发布，而这离不开严格测试和强有力的安全保障。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-96ffc93f4aac48cc",
+    "raw_id": "RAW-b8853ade3a905592",
+    "claim_type": "hardware_capacity",
+    "subject": "斗山宣布近 1 万亿韩元 CCL",
+    "predicate": "hardware_capacity",
+    "object": "计划，投向光模块与 AI 加速器用覆铜板",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-b8853ade3a905592",
+      "start": 0,
+      "end": 41
+    },
+    "source_quote": "斗山宣布近 1 万亿韩元 PCB 核心材料 CCL（覆铜板）扩产计划 - IT之家",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-93b10b06fa72e2bd",
+    "raw_id": "RAW-b8853ade3a905592",
+    "claim_type": "hardware_capacity",
+    "subject": "斗山宣布近 1 万亿韩元 CCL",
+    "predicate": "hardware_capacity",
+    "object": "计划，投向光模块与 AI 加速器用覆铜板",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-b8853ade3a905592",
+      "start": 207,
+      "end": 241
+    },
+    "source_quote": "斗山宣布近 1 万亿韩元 PCB 核心材料 CCL（覆铜板）扩产计划",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2ceef4465e205869",
+    "raw_id": "RAW-b8853ade3a905592",
+    "claim_type": "hardware_capacity",
+    "subject": "斗山宣布近 1 万亿韩元 CCL",
+    "predicate": "hardware_capacity",
+    "object": "计划，投向光模块与 AI 加速器用覆铜板",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-b8853ade3a905592",
+      "start": 292,
+      "end": 427
+    },
+    "source_quote": "IT之家 9 月 18 日消息，韩国企业斗山 (Soosan) 当地时间昨日宣布，将在 3 年内 向 PCB（印刷电路板）核心材料 CCL（覆铜板，覆铜箔层压板，铜箔基板）领域投资 9,700 亿韩元 （IT之家注：现汇率约合 47.39 亿元人民币） ，提升制造能力。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-17ae6c42a69a1f65",
+    "raw_id": "RAW-b8853ade3a905592",
+    "claim_type": "hardware_capacity",
+    "subject": "斗山宣布近 1 万亿韩元 CCL",
+    "predicate": "hardware_capacity",
+    "object": "计划，投向光模块与 AI 加速器用覆铜板",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-b8853ade3a905592",
+      "start": 428,
+      "end": 558
+    },
+    "source_quote": "斗山计划在韩国投资约 4,200 亿韩元 （现汇率约合 20.52 亿元人民币） ，用于扩建光收发模块用 CCL 生产线；另外 5,500 亿韩元 （现汇率约合 26.87 亿元人民币） 则投向中国，新建一座生产 AI 加速器、网络交换芯片用 CCL 的工厂。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ef2d20aae522a7f8",
+    "raw_id": "RAW-8eef68b1d84ef257",
+    "claim_type": "lawsuit_settlement",
+    "subject": "Palantir CEO 卡普：Anthropic 等前沿 AI 实验室或在谋求\"国有化\"，以避开知识产权",
+    "predicate": "lawsuit_settlement",
+    "object": "Palantir CEO 卡普：美国前沿 AI 实验室或在谋求“国有化”，以避开知识产权诉讼 - IT之家",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-8eef68b1d84ef257",
+      "start": 0,
+      "end": 53
+    },
+    "source_quote": "Palantir CEO 卡普：美国前沿 AI 实验室或在谋求“国有化”，以避开知识产权诉讼 - IT之家",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d6a7358f28882c02",
+    "raw_id": "RAW-8eef68b1d84ef257",
+    "claim_type": "lawsuit_settlement",
+    "subject": "Palantir CEO 卡普：Anthropic 等前沿 AI 实验室或在谋求\"国有化\"，以避开知识产权",
+    "predicate": "lawsuit_settlement",
+    "object": "Palantir CEO 卡普：美国前沿 AI 实验室或在谋求“国有化”，以避开知识产权诉讼",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-8eef68b1d84ef257",
+      "start": 221,
+      "end": 267
+    },
+    "source_quote": "Palantir CEO 卡普：美国前沿 AI 实验室或在谋求“国有化”，以避开知识产权诉讼",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-74558f1389253aab",
+    "raw_id": "RAW-8eef68b1d84ef257",
+    "claim_type": "lawsuit_settlement",
+    "subject": "Palantir CEO 卡普：Anthropic 等前沿 AI 实验室或在谋求\"国有化\"，以避开知识产权",
+    "predicate": "lawsuit_settlement",
+    "object": "当地时间 17 日，卡普接受 CNBC 采访时指出，Anthropic 等前沿 AI 实验室 真正谋求的可能是国有化，从而获得政府保护 ，应对未来因涉嫌窃取知识产权而可能面临的大量诉讼。",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-8eef68b1d84ef257",
+      "start": 410,
+      "end": 503
+    },
+    "source_quote": "当地时间 17 日，卡普接受 CNBC 采访时指出，Anthropic 等前沿 AI 实验室 真正谋求的可能是国有化，从而获得政府保护 ，应对未来因涉嫌窃取知识产权而可能面临的大量诉讼。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-210e15dc0fc39b11",
+    "raw_id": "RAW-8eef68b1d84ef257",
+    "claim_type": "lawsuit_settlement",
+    "subject": "Palantir CEO 卡普：Anthropic 等前沿 AI 实验室或在谋求\"国有化\"，以避开知识产权",
+    "predicate": "lawsuit_settlement",
+    "object": "“这些企业必须被国有化，因为如果不国有化，我的每一个客户都会起诉。",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-8eef68b1d84ef257",
+      "start": 503,
+      "end": 536
+    },
+    "source_quote": "“这些企业必须被国有化，因为如果不国有化，我的每一个客户都会起诉。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-43c16ba372c49c01",
+    "raw_id": "RAW-2469ac39a4337058",
+    "claim_type": "product_release",
+    "subject": "华为",
+    "predicate": "product_release",
+    "object": "Peerium 计算架构，Atlas 950 超节点为首代产品",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-2469ac39a4337058",
+      "start": 377,
+      "end": 473
+    },
+    "source_quote": "IT之家 9 月 18 日消息，华为 9 月 17 日在上海发布 AI 时代的全新计算架构 Peerium，称该架构可实现百万级处理器作为一台计算机协同工作，以满足持续增长的 AI 算力需求。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a3ac41b748be3367",
+    "raw_id": "RAW-2469ac39a4337058",
+    "claim_type": "product_release",
+    "subject": "华为",
+    "predicate": "product_release",
+    "object": "Peerium 计算架构，Atlas 950 超节点为首代产品",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-2469ac39a4337058",
+      "start": 474,
+      "end": 546
+    },
+    "source_quote": "华为介绍称，Peerium 计算架构基于嵌套并行、统一内存寻址和平等互联，实现百万级处理器的强扩展能力，彻底突破了冯 · 诺依曼单机架构的限制。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-efcaa255c0c1a1e9",
+    "raw_id": "RAW-2469ac39a4337058",
+    "claim_type": "product_release",
+    "subject": "华为",
+    "predicate": "product_release",
+    "object": "Peerium 计算架构，Atlas 950 超节点为首代产品",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-2469ac39a4337058",
+      "start": 547,
+      "end": 611
+    },
+    "source_quote": "同时，该架构提出 Nested BSP（嵌套批量同步并行，一种将并行计算任务分层递归组织的计算范式），突破了传统图灵范式的限制。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7c08d91d9c81e686",
+    "raw_id": "RAW-2469ac39a4337058",
+    "claim_type": "product_release",
+    "subject": "华为",
+    "predicate": "product_release",
+    "object": "Peerium 计算架构，Atlas 950 超节点为首代产品",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-2469ac39a4337058",
+      "start": 0,
+      "end": 64
+    },
+    "source_quote": "华为开创 Peerium 计算架构：突破传统图灵范式与冯 · 诺依曼单机架构的限制，让百万处理器协同成为一台计算机 - IT之家",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-338b5eff1f18350f",
+    "raw_id": "RAW-0e7d04e525b77a9f",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "法律专用 AI 平台 Astra for Law",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-0e7d04e525b77a9f",
+      "start": 0,
+      "end": 50
+    },
+    "source_quote": "打官司最佳 AI 助手：OpenAI 推出 Astra for Law，提高案件胜诉率 - IT之家",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8e2dbc61ea51425d",
+    "raw_id": "RAW-0e7d04e525b77a9f",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "法律专用 AI 平台 Astra for Law",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-0e7d04e525b77a9f",
+      "start": 218,
+      "end": 261
+    },
+    "source_quote": "打官司最佳 AI 助手：OpenAI 推出 Astra for Law，提高案件胜诉率",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9a865b55d6e83a16",
+    "raw_id": "RAW-0e7d04e525b77a9f",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "法律专用 AI 平台 Astra for Law",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-0e7d04e525b77a9f",
+      "start": 330,
+      "end": 475
+    },
+    "source_quote": "IT之家 9 月 18 日消息，OpenAI 公司昨日（9 月 17 日）发布博文，宣布推出 Astra for Law 服务，定位法律专用人工智能基础平台， 其法律搜索索引覆盖超过 2.3 亿个 URL，并纳入覆盖 99.9% 以上已发布美国判例法的 CourtListener 案例库。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-70cb95d4b18d6889",
+    "raw_id": "RAW-0e7d04e525b77a9f",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "法律专用 AI 平台 Astra for Law",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-0e7d04e525b77a9f",
+      "start": 538,
+      "end": 604
+    },
+    "source_quote": "在最高推理强度下，Astra for Law 整体正确率为 54.0%，而仅使用网页搜索的 GPT-6 Astra 为 38.7%。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b99c2b9135e29a0d",
+    "raw_id": "RAW-a1b989e70ee4f2ae",
+    "claim_type": "partnership",
+    "subject": "无问芯穹与华环电子签署战略",
+    "predicate": "partnership",
+    "object": "，共同探索国产异构算力AI基础设施新方向",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-a1b989e70ee4f2ae",
+      "start": 0,
+      "end": 35
+    },
+    "source_quote": "无问芯穹与华环电子签署战略合作，共同探索国产异构算力AI基础设施新方向",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ea86d0e2f055aad5",
+    "raw_id": "RAW-a1b989e70ee4f2ae",
+    "claim_type": "partnership",
+    "subject": "无问芯穹与华环电子签署战略",
+    "predicate": "partnership",
+    "object": "，共同探索国产异构算力AI基础设施新方向",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-a1b989e70ee4f2ae",
+      "start": 83,
+      "end": 153
+    },
+    "source_quote": "9月17日，上海无问芯穹智能科技股份有限公司（以下简称“无问芯穹”）与北京华环电子股份有限公司（以下简称“华环电子”）签署战略合作框架协议。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0466561f630a7449",
+    "raw_id": "RAW-a1b989e70ee4f2ae",
+    "claim_type": "partnership",
+    "subject": "无问芯穹与华环电子签署战略",
+    "predicate": "partnership",
+    "object": "，共同探索国产异构算力AI基础设施新方向",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-a1b989e70ee4f2ae",
+      "start": 153,
+      "end": 205
+    },
+    "source_quote": "双方将结合各自产业与技术优势，围绕AI基础设施创新与产业应用深化合作，共同探索算力与网络协同发展新模式。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-111eb0b54e96dfd3",
+    "raw_id": "RAW-58763bce1f29ce39",
+    "claim_type": "deployment",
+    "subject": "AGI最难一战，竟在医院！中国AI登上Science，医生不怕失业还催着",
+    "predicate": "deployment",
+    "object": "中国AI登上Science，医生不怕失业还催着上线",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-58763bce1f29ce39",
+      "start": 13,
+      "end": 38
+    },
+    "source_quote": "中国AI登上Science，医生不怕失业还催着上线",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-72e0cbb9577da8dc",
+    "raw_id": "RAW-58763bce1f29ce39",
+    "claim_type": "deployment",
+    "subject": "AGI最难一战，竟在医院！中国AI登上Science，医生不怕失业还催着",
+    "predicate": "deployment",
+    "object": "AI正在横扫一切，但有块硬骨头，迟迟攻不下来，让无数人希望落空。",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-58763bce1f29ce39",
+      "start": 119,
+      "end": 151
+    },
+    "source_quote": "AI正在横扫一切，但有块硬骨头，迟迟攻不下来，让无数人希望落空。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-99c029d686743174",
+    "raw_id": "RAW-58763bce1f29ce39",
+    "claim_type": "deployment",
+    "subject": "AGI最难一战，竟在医院！中国AI登上Science，医生不怕失业还催着",
+    "predicate": "deployment",
+    "object": "2016年，Hinton老爷子就预言：“人们现在就应该停止培养放射科医生。",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-58763bce1f29ce39",
+      "start": 152,
+      "end": 189
+    },
+    "source_quote": "2016年，Hinton老爷子就预言：“人们现在就应该停止培养放射科医生。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-009cd797e202ce89",
+    "raw_id": "RAW-facc8353174417da",
+    "claim_type": "deployment",
+    "subject": "企业AI",
+    "predicate": "deployment",
+    "object": "的“最后一公里”：FDE为何成了2026年的首席交付官？",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-facc8353174417da",
+      "start": 20,
+      "end": 119
+    },
+    "source_quote": "在2026年的今天，人工智能领域正呈现出一种诡谲的“剪刀差”：基础模型与开发工具的获取已如水电般廉价，一个技术Demo的诞生往往只需数小时；然而，当AI试图深入企业毛细血管时，落地反而变得空前艰难。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8eb33b89ef1f8481",
+    "raw_id": "RAW-facc8353174417da",
+    "claim_type": "deployment",
+    "subject": "企业AI",
+    "predicate": "deployment",
+    "object": "的“最后一公里”：FDE为何成了2026年的首席交付官？",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-facc8353174417da",
+      "start": 120,
+      "end": 197
+    },
+    "source_quote": "这种矛盾催生了今年PEC 2026 AI创新者大会上最炙手可热的议题—— FDE（Forward Deployed Engineer，前沿部署工程师） 。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f850f3431c941960",
+    "raw_id": "RAW-facc8353174417da",
+    "claim_type": "deployment",
+    "subject": "企业AI",
+    "predicate": "deployment",
+    "object": "的“最后一公里”：FDE为何成了2026年的首席交付官？",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-facc8353174417da",
+      "start": 317,
+      "end": 350
+    },
+    "source_quote": "过去，软件工程的成功标准是明确的：软件上线、没有Bug、通过验收。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-01381d479e6f7147",
+    "raw_id": "RAW-facc8353174417da",
+    "claim_type": "deployment",
+    "subject": "企业AI",
+    "predicate": "deployment",
+    "object": "的“最后一公里”：FDE为何成了2026年的首席交付官？",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-facc8353174417da",
+      "start": 628,
+      "end": 672
+    },
+    "source_quote": "如果AI系统上线了却没人用，或者没能带来实际的经营效益，那么技术上的“优雅”将毫无意义。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7eec88eedf7b52e4",
+    "raw_id": "RAW-d9a0f8e1108e64dc",
+    "claim_type": "product_release",
+    "subject": "Claude Code",
+    "predicate": "product_release",
+    "object": "AGENTS.md",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-6eee03415022dd86"
+    },
+    "source_span": {
+      "raw_id": "RAW-d9a0f8e1108e64dc",
+      "start": 466,
+      "end": 531
+    },
+    "source_quote": "从今天发布的 2.1.277 版本开始，如果文件夹中没有 CLAUDE.md ，Claude 将检查并使用 AGENTS.md 。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-34869b6bb8a1e238",
+    "raw_id": "RAW-cf32808793f63346",
+    "claim_type": "funding",
+    "subject": "小鹏机器人业务首轮",
+    "predicate": "funding",
+    "object": "超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-cf32808793f63346",
+      "start": 93,
+      "end": 150
+    },
+    "source_quote": "本轮为小鹏机器人业务首轮融资，融资金额超9亿美元，投后估值超63亿美元，刷新中国具身智能行业单轮私募股权融资纪录。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4b62c2e01a623ac0",
+    "raw_id": "RAW-cf32808793f63346",
+    "claim_type": "funding",
+    "subject": "小鹏机器人业务首轮",
+    "predicate": "funding",
+    "object": "超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-cf32808793f63346",
+      "start": 151,
+      "end": 209
+    },
+    "source_quote": "本轮融资由全球顶尖的投资机构主动发起：由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-73f3a056b338427b",
+    "raw_id": "RAW-cf32808793f63346",
+    "claim_type": "funding",
+    "subject": "小鹏机器人业务首轮",
+    "predicate": "funding",
+    "object": "超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-cf32808793f63346",
+      "start": 209,
+      "end": 337
+    },
+    "source_quote": "本轮融资汇聚深入布局全球具身智能产业的头部投资机构和战略投资者，首轮融资金额和估值即打破行业纪录，充分体现了资本市场对小鹏集团在物理AI领域的领先地位、技术路线、规模量产能力和长期商业价值的高度认可，也为机器人业务的生态建设和应用场景拓展带来更多战略资源。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-69b02d638520abbf",
+    "raw_id": "RAW-b89469ae791157c5",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "Astra for Law",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-d2ac3358e3c3a10d"
+    },
+    "source_span": {
+      "raw_id": "RAW-b89469ae791157c5",
+      "start": 112,
+      "end": 205
+    },
+    "source_quote": "OpenAI has introduced Astra for Law, a version of its GPT-6 Astra model built for legal work.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-49a5c76eb6fe078a",
+    "raw_id": "RAW-d6b64c9fee6726b9",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "Google’s new ‘CC’ is an AI agent that helps families run their households",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-d6b64c9fee6726b9",
+      "start": 279,
+      "end": 731
+    },
+    "source_quote": "Google is testing a new product designed to help families coordinate with the support of an AI agent. This week, the search giant introduced a new version of CC , an AI agent designed to work across email, calendar, chats, and tasks. With the update, CC now focuses on keeping families organized, planning for the day ahead, and even handling family-specific tasks, like signing permission slips, creating shopping lists, or crafting weekly meal plans.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-51b2fa626903e36c",
+    "raw_id": "RAW-d6b64c9fee6726b9",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "Google’s new ‘CC’ is an AI agent that helps families run their households",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-d6b64c9fee6726b9",
+      "start": 732,
+      "end": 998
+    },
+    "source_quote": "The move to make CC more family-focused comes as a number of AI startups are experimenting with how to best fit agentic AI into consumers’ lives. Some AI tools, like Ollie and Fambot , for instance, have aimed their services directly at helping parents and families.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4f8275223e5f542d",
+    "raw_id": "RAW-d6b64c9fee6726b9",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "Google’s new ‘CC’ is an AI agent that helps families run their households",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-d6b64c9fee6726b9",
+      "start": 999,
+      "end": 1275
+    },
+    "source_quote": "Google’s CC, meanwhile, began its life as a productivity agent that connected to Gmail, Google Calendar, Google Drive, and the wider web to understand your day, then deliver a “Your Day Ahead” briefing to your inbox. In May, the tool came to the Gemini app as “ Daily Brief .”",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-67c0c8e56570705e",
+    "raw_id": "RAW-d6b64c9fee6726b9",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "Google’s new ‘CC’ is an AI agent that helps families run their households",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-d6b64c9fee6726b9",
+      "start": 159,
+      "end": 232
+    },
+    "source_quote": "Google’s new ‘CC’ is an AI agent that helps families run their households",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8b7fdb32a67149bc",
+    "raw_id": "RAW-07badabe4443a45c",
+    "claim_type": "lawsuit_settlement",
+    "subject": "The New York Times and other media companies",
+    "predicate": "lawsuit_settlement",
+    "object": "OpenAI and Microsoft",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-ccf224c335311f3e"
+    },
+    "source_span": {
+      "raw_id": "RAW-07badabe4443a45c",
+      "start": 956,
+      "end": 1084
+    },
+    "source_quote": "The New York Times and several other media companies have filed a joint summary judgment brief in US District Court in New York.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2c586adb76e631f6",
+    "raw_id": "RAW-a9f190b37f64e899",
+    "claim_type": "deployment",
+    "subject": "百度智能云",
+    "predicate": "deployment",
+    "object": "东莞具身智能训练场",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-bd14d3fdac1fc544"
+    },
+    "source_span": {
+      "raw_id": "RAW-a9f190b37f64e899",
+      "start": 2416,
+      "end": 2460
+    },
+    "source_quote": "在东莞，由东莞市及万江街道方面投入建设、 百度智能云承建运营的具身智能训练场已投入运转。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-31c5abeb4b494ca5",
+    "raw_id": "RAW-a9f190b37f64e899",
+    "claim_type": "deployment",
+    "subject": "百度智能云",
+    "predicate": "deployment",
+    "object": "大湾区首个实体化具身智能采标实验室",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-bd14d3fdac1fc544"
+    },
+    "source_span": {
+      "raw_id": "RAW-a9f190b37f64e899",
+      "start": 2461,
+      "end": 2531
+    },
+    "source_quote": "百度也在这里落地了 大湾区首个实体化具身智能采标实验室 ，提供数据工具链、百舸算力底座和训推平台，为机器人做真机采集、标注、仿真和模型迭代。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c24a9b99f5846fbe",
+    "raw_id": "RAW-bc6b50ff05e21149",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "辛顿参与联署公开信，要求 Anthropic 与 OpenAI 等实验室保障第三方评估独立性",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-bc6b50ff05e21149",
+      "start": 0,
+      "end": 140
+    },
+    "source_quote": "IT之家 9 月 18 日消息，据《商业内幕》今天（18 日）晚间报道，由多家监督组织组成的 AI 评估机构论坛发布了一封公开信，为第三方风险评估划出一套最低条件，认为 Anthropic 和 OpenAI 等 AI 实验室只有满足特定的要求，才能与外部评估机构开展更有效的合作。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-84725eae2fa5f2c5",
+    "raw_id": "RAW-bc6b50ff05e21149",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "辛顿参与联署公开信，要求 Anthropic 与 OpenAI 等实验室保障第三方评估独立性",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-bc6b50ff05e21149",
+      "start": 141,
+      "end": 195
+    },
+    "source_quote": "公开信获得数十名 AI 领域人士联署，包括“AI 教父”计算机科学先驱杰弗里 · 辛顿和斯图尔特 · 罗素。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-43c488e3b8103c6f",
+    "raw_id": "RAW-bc6b50ff05e21149",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "辛顿参与联署公开信，要求 Anthropic 与 OpenAI 等实验室保障第三方评估独立性",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-bc6b50ff05e21149",
+      "start": 196,
+      "end": 217
+    },
+    "source_quote": "本周，网络上对 AI 风险的担忧迅速升温。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-206a28d5936dd027",
+    "raw_id": "RAW-bc6b50ff05e21149",
+    "claim_type": "product_release",
+    "subject": "undisclosed_subject",
+    "predicate": "product_release",
+    "object": "辛顿参与联署公开信，要求 Anthropic 与 OpenAI 等实验室保障第三方评估独立性",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-bc6b50ff05e21149",
+      "start": 217,
+      "end": 310
+    },
+    "source_quote": "Anthropic CEO 达里奥 · 阿莫迪和 OpenAI CEO 萨姆 · 奥尔特曼此前都承诺向第三方评估人员开放公司内部资源并评估 AI 风险，获得与员工同等级别的信息访问权限。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-495ccc2fc9a07960",
+    "raw_id": "RAW-fa7a000b2b6083c7",
+    "claim_type": "procurement_contract",
+    "subject": "Federal Aviation Administration",
+    "predicate": "procurement_contract",
+    "object": "Air Space Intelligence",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-199f714684938eea"
+    },
+    "source_span": {
+      "raw_id": "RAW-fa7a000b2b6083c7",
+      "start": 2250,
+      "end": 2368
+    },
+    "source_quote": "SMART is part of an $875 million, 12-year contract awarded to the Boston-based company Air Space Intelligence in June.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2fb969c79ebdcafb",
+    "raw_id": "RAW-01473fe5784fec22",
+    "claim_type": "policy_regulation",
+    "subject": "California Governor Newsom signs",
+    "predicate": "policy_regulation",
+    "object": "demanding \"kill switch\" for AI models",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-01473fe5784fec22",
+      "start": 0,
+      "end": 86
+    },
+    "source_quote": "California Governor Newsom signs executive order demanding \"kill switch\" for AI models",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4d861251a9a67fa3",
+    "raw_id": "RAW-01473fe5784fec22",
+    "claim_type": "policy_regulation",
+    "subject": "California Governor Newsom signs",
+    "predicate": "policy_regulation",
+    "object": "demanding \"kill switch\" for AI models",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-01473fe5784fec22",
+      "start": 87,
+      "end": 173
+    },
+    "source_quote": "California Governor Newsom signs executive order demanding \"kill switch\" for AI models",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f005ca757e0335b0",
+    "raw_id": "RAW-01473fe5784fec22",
+    "claim_type": "policy_regulation",
+    "subject": "California Governor Newsom signs",
+    "predicate": "policy_regulation",
+    "object": "demanding \"kill switch\" for AI models",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-01473fe5784fec22",
+      "start": 174,
+      "end": 450
+    },
+    "source_quote": "California Governor Gavin Newsom signed an executive order seeking independent auditors inside AI labs and a \"kill switch\" for AI models. An expert panel has two months to deliver recommendations. Newsom says no federal law requires AI companies to report dangerous incidents.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2391c84accf106bc",
+    "raw_id": "RAW-01473fe5784fec22",
+    "claim_type": "policy_regulation",
+    "subject": "California Governor Newsom signs",
+    "predicate": "policy_regulation",
+    "object": "demanding \"kill switch\" for AI models",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-01473fe5784fec22",
+      "start": 451,
+      "end": 727
+    },
+    "source_quote": "California Governor Gavin Newsom signed an executive order seeking independent auditors inside AI labs and a \"kill switch\" for AI models. An expert panel has two months to deliver recommendations. Newsom says no federal law requires AI companies to report dangerous incidents.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-168cc814af8c52ba",
+    "raw_id": "RAW-1601b01c5ea73e27",
+    "claim_type": "ipo_listing",
+    "subject": "Anthropic 计划将",
+    "predicate": "ipo_listing",
+    "object": "推迟至 11 月，上市估值约 2 万亿美元",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-1601b01c5ea73e27",
+      "start": 0,
+      "end": 82
+    },
+    "source_quote": "IT之家 9 月 19 日消息，据《华尔街日报》今日报道，Anthropic 计划将首次公开募股（IPO）推迟至 11 月进行，晚于许多投资者此前预期的 10 月。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-53b6681cbf8d93b5",
+    "raw_id": "RAW-1601b01c5ea73e27",
+    "claim_type": "ipo_listing",
+    "subject": "Anthropic 计划将",
+    "predicate": "ipo_listing",
+    "object": "推迟至 11 月，上市估值约 2 万亿美元",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-1601b01c5ea73e27",
+      "start": 144,
+      "end": 217
+    },
+    "source_quote": "知情人士表示，将 IPO 目标定在 11 月的决定是在 Anthropic 前研究员发出公开警告、引发关于 AI 发展速度是否过快辩论之前作出的。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6e280d5c22062ac5",
+    "raw_id": "RAW-1601b01c5ea73e27",
+    "claim_type": "ipo_listing",
+    "subject": "Anthropic 计划将",
+    "predicate": "ipo_listing",
+    "object": "推迟至 11 月，上市估值约 2 万亿美元",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-1601b01c5ea73e27",
+      "start": 834,
+      "end": 897
+    },
+    "source_quote": "许多投资 Anthropic 的硅谷机构表示，阿莫代伊推动全行业安全标准的时机是合理的，并不担心这会削弱 IPO 的市场兴趣。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ec19083c8cd8c60a",
+    "raw_id": "RAW-1601b01c5ea73e27",
+    "claim_type": "ipo_listing",
+    "subject": "Anthropic 计划将",
+    "predicate": "ipo_listing",
+    "object": "推迟至 11 月，上市估值约 2 万亿美元",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-1601b01c5ea73e27",
+      "start": 83,
+      "end": 144
+    },
+    "source_quote": "知情人士透露，部分 Anthropic 顾问认为，推迟至 11 月可以让公司有时间展示第三季度财务数据，以证明其竞争地位。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e955670c790ffcf0",
+    "raw_id": "RAW-c2086dc13c22f8c3",
+    "claim_type": "funding",
+    "subject": "首发| 奕行智能",
+    "predicate": "funding",
+    "object": "，投后估值近150亿",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-c2086dc13c22f8c3",
+      "start": 19,
+      "end": 95
+    },
+    "source_quote": "投资界获悉，RISC-V云端AI算力芯片独角兽奕行智能（北京）科技股份有限公司（简称“奕行智能”）完成新一轮20亿元融资，据估计投后估值接近150亿元。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e63017c8bdcca2ff",
+    "raw_id": "RAW-c2086dc13c22f8c3",
+    "claim_type": "funding",
+    "subject": "首发| 奕行智能",
+    "predicate": "funding",
+    "object": "，投后估值近150亿",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-c2086dc13c22f8c3",
+      "start": 96,
+      "end": 228
+    },
+    "source_quote": "这是继上半年获15亿元B轮及中国移动战略投资后，公司短短数月内完成的又一次大额融资，阵容豪华——汇聚了 华泰创新、钟鼎资本、中芯聚源、九安医疗、仁爱资本、通富微电子、赛意产业基金、和利资本、芯鑫租赁、恒旭资本、尚颀资本、建广湛卢、容亿资本 等超20家知名投资机构。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6921343580b87d96",
+    "raw_id": "RAW-8ff78c07363b1d37",
+    "claim_type": "funding",
+    "subject": "新生探途（Anew Labs）",
+    "predicate": "funding",
+    "object": "2.9亿美元",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-506f3e73d89d8dfd"
+    },
+    "source_span": {
+      "raw_id": "RAW-8ff78c07363b1d37",
+      "start": 2303,
+      "end": 2352
+    },
+    "source_quote": "9月16日，字节跳动分拆的AI制药公司新生探途（Anew Labs）完成首轮外部融资2.9亿美元。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8add6564a3b6e638",
+    "raw_id": "RAW-6e0af4246035f242",
+    "claim_type": "deployment",
+    "subject": "直击中国机器人峰会：褪去资本喧嚣具身智能奔赴真实场景",
+    "predicate": "deployment",
+    "object": "- 财联社",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-6e0af4246035f242",
+      "start": 266,
+      "end": 364
+    },
+    "source_quote": "《科创板日报》记者关注到，峰会现场落地的多项成果，涵盖产业协同平台搭建、人才培养与储备、产业出海研究以及具身智能评测体系建设等多个维度，直指当前机器人产业迈向规模化落地过程中，亟待补齐的关键短板。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9ead84a6ca1c9936",
+    "raw_id": "RAW-6e0af4246035f242",
+    "claim_type": "deployment",
+    "subject": "直击中国机器人峰会：褪去资本喧嚣具身智能奔赴真实场景",
+    "predicate": "deployment",
+    "object": "- 财联社",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-6e0af4246035f242",
+      "start": 460,
+      "end": 511
+    },
+    "source_quote": "“今年大家关注的已经不是人形机器人、AI等一些宏大叙事，而是开始聚焦能不能落地、能不能真正实现产业化。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-06b0e038b1b901e4",
+    "raw_id": "RAW-6e0af4246035f242",
+    "claim_type": "deployment",
+    "subject": "直击中国机器人峰会：褪去资本喧嚣具身智能奔赴真实场景",
+    "predicate": "deployment",
+    "object": "- 财联社",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-6e0af4246035f242",
+      "start": 511,
+      "end": 584
+    },
+    "source_quote": "”中国机电一体化技术应用协会会长、新松机器人创始人曲道奎在演讲当中表示，在资本与产业狂飙的同时，更应该清醒地认识到，行业正站在商业化落地的关键点。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-14117a502434ec85",
+    "raw_id": "RAW-6e0af4246035f242",
+    "claim_type": "deployment",
+    "subject": "直击中国机器人峰会：褪去资本喧嚣具身智能奔赴真实场景",
+    "predicate": "deployment",
+    "object": "- 财联社",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-6e0af4246035f242",
+      "start": 782,
+      "end": 824
+    },
+    "source_quote": "市场热度提升、各方关注度增加，会带来资金、人才等资源，恰恰是产业落地推进的有利条件。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-bc8464be7a1e58ad",
+    "raw_id": "RAW-3620295b0ff8ff78",
+    "claim_type": "funding",
+    "subject": "讯兔科技",
+    "predicate": "funding",
+    "object": "超3亿元人民币B轮融资",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-3d52b6bd8d4fe45d"
+    },
+    "source_span": {
+      "raw_id": "RAW-3620295b0ff8ff78",
+      "start": 97,
+      "end": 131
+    },
+    "source_quote": "近日，中国金融AI领跑者讯兔科技正式完成 超3亿元 人民币B轮融资。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7a5fc5a36d51aacd",
+    "raw_id": "RAW-3620295b0ff8ff78",
+    "claim_type": "funding",
+    "subject": "讯兔科技",
+    "predicate": "funding",
+    "object": "过去一年内连续完成三轮融资",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-3d52b6bd8d4fe45d"
+    },
+    "source_span": {
+      "raw_id": "RAW-3620295b0ff8ff78",
+      "start": 131,
+      "end": 154
+    },
+    "source_quote": "至此， 公司在过去一年内已连续完成三轮融资 。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-93400c1ae17b103d",
+    "raw_id": "RAW-2951750f3bdb7702",
+    "claim_type": "funding",
+    "subject": "三星押注GPU替代方案赛道：荷兰初创公司获2亿欧元",
+    "predicate": "funding",
+    "object": "财联社9月15日讯（编辑 赵昊） 随着市场对英伟达GPU替代方案的投资热潮持续升温，三星电子参与了荷兰一家AI芯片制造商的2亿欧元融资。",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-2951750f3bdb7702",
+      "start": 0,
+      "end": 68
+    },
+    "source_quote": "财联社9月15日讯（编辑 赵昊） 随着市场对英伟达GPU替代方案的投资热潮持续升温，三星电子参与了荷兰一家AI芯片制造商的2亿欧元融资。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c02ea3b83bb35c37",
+    "raw_id": "RAW-2951750f3bdb7702",
+    "claim_type": "funding",
+    "subject": "三星押注GPU替代方案赛道：荷兰初创公司获2亿欧元",
+    "predicate": "funding",
+    "object": "周二（9月15日），Euclyd在官网宣布，公司已完成超过2亿欧元的A轮融资，三星、Somerset Capital Partners、EQT旗下Scaleup Europe Fund以及Innovation Industries共同领投。",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-2951750f3bdb7702",
+      "start": 69,
+      "end": 189
+    },
+    "source_quote": "周二（9月15日），Euclyd在官网宣布，公司已完成超过2亿欧元的A轮融资，三星、Somerset Capital Partners、EQT旗下Scaleup Europe Fund以及Innovation Industries共同领投。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ce42709502e7e024",
+    "raw_id": "RAW-3ce0bc01c59dd3c7",
+    "claim_type": "funding",
+    "subject": "思博慧医",
+    "predicate": "funding",
+    "object": "，加速AI全自动磁控介入手术平台研发",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-3ce0bc01c59dd3c7",
+      "start": 48,
+      "end": 174
+    },
+    "source_quote": "投资界（ID：pedaily2012）9月17日消息， 思博慧医 宣布 完成近亿元Pre-A+轮融资， 本轮由 诺庾资本领投，浦东创投、片仔癀盈科基金、同杨基金、太湖空天动力启明星跟投； Bitola Capital（翎杉资本）担任长期独 家财务顾问。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-08fd246b2ab38ebb",
+    "raw_id": "RAW-facee7818a18da8c",
+    "claim_type": "funding",
+    "subject": "设序科技",
+    "predicate": "funding",
+    "object": "B轮融资",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-9bd3880ff91f1c26"
+    },
+    "source_span": {
+      "raw_id": "RAW-facee7818a18da8c",
+      "start": 150,
+      "end": 161
+    },
+    "source_quote": "上半年刚完成B轮超亿元",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-bdfc07f31f7e4745",
+    "raw_id": "RAW-1c35ceedf75bb833",
+    "claim_type": "funding",
+    "subject": "Freeride AI",
+    "predicate": "funding",
+    "object": "，推进金融专业模型与自进化研究",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-1c35ceedf75bb833",
+      "start": 0,
+      "end": 82
+    },
+    "source_quote": "投资界（ID：pedaily2012）9月17日消息，近日，Ace Labs旗下 Freeride AI 宣布完成数百万美元种子轮融资，由L2F光源创业者基金投资。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-61f94b00228fd1de",
+    "raw_id": "RAW-1c35ceedf75bb833",
+    "claim_type": "funding",
+    "subject": "Freeride AI",
+    "predicate": "funding",
+    "object": "，推进金融专业模型与自进化研究",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-1c35ceedf75bb833",
+      "start": 2298,
+      "end": 2362
+    },
+    "source_quote": "L2F 光源创业者基金管理合伙人吉星表示： “祝贺 Freeride AI 完成种子轮融资，更要特别祝贺子辰和 William。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-df1f51d2c27ffaab",
+    "raw_id": "RAW-50223fe5415f2063",
+    "claim_type": "funding",
+    "subject": "上海斐睿科思",
+    "predicate": "funding",
+    "object": "战略投资，聚焦生命科学具身智能数据基础设施",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-50223fe5415f2063",
+      "start": 126,
+      "end": 179
+    },
+    "source_quote": "投资界（ID：pedaily2012）9月18日消息，上海斐睿科思已 完成数百万元级人民币首轮战略投资 。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d3397ffe1880bb25",
+    "raw_id": "RAW-50223fe5415f2063",
+    "claim_type": "funding",
+    "subject": "上海斐睿科思",
+    "predicate": "funding",
+    "object": "战略投资，聚焦生命科学具身智能数据基础设施",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-50223fe5415f2063",
+      "start": 863,
+      "end": 922
+    },
+    "source_quote": "完成首轮战略投资后，上海斐睿科思将继续推进实验室建设、核心设备调试、机器人数据采集流程验证及首批生命科学实验场景落地。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-dbc41161342000bf",
+    "raw_id": "RAW-594f56a42fd38002",
+    "claim_type": "funding",
+    "subject": "弧光量子",
+    "predicate": "funding",
+    "object": "，加速量子+AI融合研发",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-594f56a42fd38002",
+      "start": 50,
+      "end": 110
+    },
+    "source_quote": "投资界（ID：pedaily2012）9月18日消息， 弧光量子 近期 已完成超亿元战略融资，投资方为中国移动链长基金。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-74abd12fe1902ab2",
+    "raw_id": "RAW-8faad41bb0b44750",
+    "claim_type": "funding",
+    "subject": "悦点科技",
+    "predicate": "funding",
+    "object": "，推动AI FDE Model持续进化",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-8faad41bb0b44750",
+      "start": 154,
+      "end": 206
+    },
+    "source_quote": "投资界（ID：pedaily2012）9月16日消息，悦点科技宣布 完成数千万元人民币Pre-A轮融资。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-760ec62ff0968fca",
+    "raw_id": "RAW-f5a01ee05b3fe72d",
+    "claim_type": "funding",
+    "subject": "星路科技",
+    "predicate": "funding",
+    "object": "3天前 1",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-f5a01ee05b3fe72d",
+      "start": 0,
+      "end": 96
+    },
+    "source_quote": "2026年9月15日——AI驱动全球一站式财富科技平台星路金融科技控股有限公司（“星路科技”）宣布，已于今年早些时候完成超千万美元A+轮战略融资，获汇丰、People’s Capital参与。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f19de85db51bcdc7",
+    "raw_id": "RAW-0128fd4e0a494470",
+    "claim_type": "funding",
+    "subject": "犀里光电",
+    "predicate": "funding",
+    "object": "- 投中网",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-0128fd4e0a494470",
+      "start": 0,
+      "end": 74
+    },
+    "source_quote": "近日，面向 AI 数据中心光互联的薄膜铌酸锂光子芯片平台公司犀里光电科技（杭州）有限责任公司（简称 “犀里光电”）正式宣布完成 Pre-A 轮融资。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  }
+]

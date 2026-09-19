@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-18T02:50:25.844Z",
-    "latestDataDate": "2026-09-18",
-    "currentDate": "2026-09-18",
-    "eventCount": 3369,
+    "generatedAt": "2026-09-19T07:02:09.778Z",
+    "latestDataDate": "2026-09-19",
+    "currentDate": "2026-09-19",
+    "eventCount": 3409,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -2874,8 +2874,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-product_form-enterprise_software_platform",
+        "TX-product_form-model",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-fine_tuning"
       ],
@@ -2898,16 +2898,16 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-researcher",
-        "TX-product_form-compute_cloud_service",
         "TX-target_user-developer",
-        "TX-industry-manufacturing",
+        "TX-target_user-researcher",
+        "TX-product_form-chip_accelerator",
         "TX-target_user-business_user",
+        "TX-product_form-compute_cloud_service",
+        "TX-product_form-ai_compute_system",
+        "TX-industry-manufacturing",
         "TX-product_form-model",
         "TX-product_form-ai_infrastructure_software",
         "TX-technology-agentic_execution",
-        "TX-product_form-chip_accelerator",
-        "TX-product_form-ai_compute_system",
         "TX-technology-open_weights",
         "TX-technology-fine_tuning"
       ],
@@ -2930,10 +2930,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
-        "TX-industry-government_public_sector",
         "TX-product_form-chip_accelerator",
         "TX-product_form-ai_compute_system",
+        "TX-product_form-model",
+        "TX-industry-government_public_sector",
         "TX-technology-fine_tuning"
       ],
       "relatedEntityIds": [],
@@ -2975,14 +2975,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
+        "TX-use_case-software_development",
         "TX-product_form-enterprise_software_platform",
         "TX-industry-financial_services",
+        "TX-product_form-model",
         "TX-industry-retail_ecommerce",
         "TX-use_case-security_operations",
         "TX-industry-telecommunications",
         "TX-technology-agentic_execution",
-        "TX-use_case-software_development",
         "TX-technology-speech_audio",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-fine_tuning",
@@ -3055,18 +3055,20 @@
       ],
       "eventIds": [
         "EV-dda9429d76897a3d",
+        "EV-eff92e59afe2e412",
         "EV-70cbf25f7ec2cc3a",
         "EV-8b9e4428074bde60"
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-computer_use",
         "TX-technology-fine_tuning"
       ],
       "relatedEntityIds": [
         "EN-03e2a9d18916f7c5"
       ],
       "firstSeen": "2026-07-15",
-      "lastSeen": "2026-07-29"
+      "lastSeen": "2026-09-19"
     },
     {
       "id": "EN-d41ebd9f02722fc8",
@@ -3079,6 +3081,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-40d4ce6d936d4d49",
         "EV-26a5749d8604455a",
         "EV-f2c93c155070cd35",
         "EV-1e6f73c188a9e946",
@@ -3086,11 +3089,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_application-computing_infrastructure",
         "TX-ai_market_category-infrastructure_compute",
-        "TX-ai_market_subcategory-hardware_computing",
-        "TX-product_form-compute_cloud_service",
         "TX-target_user-developer",
+        "TX-ai_market_subcategory-hardware_computing",
+        "TX-ai_market_application-computing_infrastructure",
+        "TX-product_form-compute_cloud_service",
         "TX-industry-manufacturing",
         "TX-technology-open_weights",
         "TX-technology-fine_tuning"
@@ -3099,7 +3102,7 @@
         "EN-10556ee2cee94c72"
       ],
       "firstSeen": "2026-07-07",
-      "lastSeen": "2026-09-18"
+      "lastSeen": "2026-09-19"
     },
     {
       "id": "EN-4a639cb888a15d75",
@@ -3121,11 +3124,11 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-industry-healthcare_life_sciences",
+        "TX-product_form-chip_accelerator",
         "TX-industry-manufacturing",
         "TX-product_form-model",
         "TX-industry-retail_ecommerce",
         "TX-technology-agentic_execution",
-        "TX-product_form-chip_accelerator",
         "TX-technology-fine_tuning"
       ],
       "relatedEntityIds": [

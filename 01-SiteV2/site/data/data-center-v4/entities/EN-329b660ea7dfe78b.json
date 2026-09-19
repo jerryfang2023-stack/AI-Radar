@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-18T02:50:25.844Z",
-    "latestDataDate": "2026-09-18",
-    "currentDate": "2026-09-18",
-    "eventCount": 3369,
+    "generatedAt": "2026-09-19T07:02:09.778Z",
+    "latestDataDate": "2026-09-19",
+    "currentDate": "2026-09-19",
+    "eventCount": 3409,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -60,6 +60,8 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-440866c21881868f",
+      "EV-66628835106394a1",
       "EV-2d17a87d3863dcee",
       "EV-125040ec61215481"
     ],
@@ -67,13 +69,15 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-03",
-    "lastSeen": "2026-09-07",
+    "lastSeen": "2026-09-19",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-440866c21881868f",
+        "EV-66628835106394a1",
         "EV-2d17a87d3863dcee",
         "EV-125040ec61215481"
       ],
@@ -82,6 +86,52 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-440866c21881868f",
+        "dataDate": "2026-09-19",
+        "date": "2026-09-18",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "OpenAI 推出法律专用 AI 平台 Astra for Law",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "end_user_application",
+            "name": "终端 AI 应用",
+            "entityIds": [
+              "EN-7d3194f79e645c42"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-5c98cbc48d9d26cc",
+          "EN-329b660ea7dfe78b"
+        ]
+      },
+      {
+        "id": "EV-66628835106394a1",
+        "dataDate": "2026-09-19",
+        "date": "2026-09-18",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "OpenAI 以 Astra for Law 瞄准法律市场",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-5c98cbc48d9d26cc",
+          "EN-329b660ea7dfe78b"
+        ]
+      },
       {
         "id": "EV-2d17a87d3863dcee",
         "dataDate": "2026-09-07",

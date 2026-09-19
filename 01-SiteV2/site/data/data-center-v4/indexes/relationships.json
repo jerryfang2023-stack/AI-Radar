@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-18T02:50:25.844Z",
-    "latestDataDate": "2026-09-18",
-    "currentDate": "2026-09-18",
-    "eventCount": 3369,
+    "generatedAt": "2026-09-19T07:02:09.778Z",
+    "latestDataDate": "2026-09-19",
+    "currentDate": "2026-09-19",
+    "eventCount": 3409,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -50,6 +50,34 @@
     ]
   },
   "relationships": [
+    {
+      "relationship_id": "REL2-6460871b6d621283",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-4d748ebd71af03a7",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-c70eca6b0f88f44d",
+      "object_type": "entity",
+      "event_id": "EV-0f241385f0cd6c2d",
+      "claim_refs": [
+        "CL-a6daf41a10d169de",
+        "CL-49b695f02f9e309f",
+        "CL-95db255d7bc333a4",
+        "CL-a6ba6dce5d8c259d"
+      ],
+      "source_refs": [
+        "SA-00e574ebc2409309"
+      ],
+      "data_date": "2026-09-19",
+      "status": "verified",
+      "subjectName": "Accenture",
+      "objectName": "Anthropic",
+      "predicateLabel": "合作",
+      "title": "Accenture 合作 Anthropic",
+      "eventTitle": "Anthropic 与 Accenture 合作开展嵌入式独立评估，双方各投入至少 10 亿美元",
+      "eventDate": "2026-09-18",
+      "sourceCount": 1
+    },
     {
       "relationship_id": "REL2-30051dc5d7668662",
       "relationship_version": "RELATION-V2.1",

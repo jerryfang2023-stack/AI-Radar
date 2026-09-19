@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-18T02:50:25.844Z",
-    "latestDataDate": "2026-09-18",
-    "currentDate": "2026-09-18",
-    "eventCount": 3369,
+    "generatedAt": "2026-09-19T07:02:09.778Z",
+    "latestDataDate": "2026-09-19",
+    "currentDate": "2026-09-19",
+    "eventCount": 3409,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -59,17 +59,18 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 3,
-    "historical_or_ambiguous_count": 4,
+    "historical_or_ambiguous_count": 5,
     "portfolio_company_count": 3,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 3,
     "china_market_company_count": 3,
     "first_disclosed_at": "2026-01-12",
-    "latest_disclosed_at": "2026-07-30",
+    "latest_disclosed_at": "2026-09-17",
     "role_counts": {
-      "historical_or_ambiguous": 4,
+      "historical_or_ambiguous": 5,
       "lead": 1,
       "participant": 2
     },
@@ -96,6 +97,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-10e898b23d22cd27",
+        "funding_insight_id": "FI-e9d633fa8c039673",
+        "event_ids": [
+          "EV-412f7ce21693dc13"
+        ],
+        "company_entity_id": "EN-c5146e8a5659ab7e",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳地瓜机器人有限公司",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "4亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 400000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4 亿美元"
+        },
+        "announced_at": "2026-09-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "老股东持续加码",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-9addb049f2438939",
+            "source_url": "https://www.163.com/dy/article/L71BBKKG0511A8SL.html",
+            "source_title": "地瓜机器人完成4亿美元C轮融资 1年三轮融资 商业化进入兑现期|创投|美团|c轮融资|千寻智能|知名企业_网易订阅",
+            "source_content_hash": "c7ad77c1a9165c73",
+            "quote": "从融资节奏看，地瓜机器人呈现出罕见的资本加速度： · 2025年：完成1亿美元A轮，高瓴创投、五源资本、线性资本等入场； · 2026年3月：完成1.2亿美元B1轮，滴滴、美团龙珠、北汽产投等加入； · 2026年4月：完成1.5亿美元B2轮，Prosperity7、云锋基金、远景科技等跟投； · 2026年9月：完成4亿美元C轮，未来资产领投。",
+            "quote_hash": "3784ba81aac1a65aac464e06a7054d058416e2c96b64c8010d52796e61728668"
+          }
+        ]
+      },
       {
         "activity_id": "IA-c745f42bcc4ab73c",
         "funding_insight_id": "FI-53612bad1f698300",
@@ -390,6 +431,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-9addb049f2438939",
+        "source_url": "https://www.163.com/dy/article/L71BBKKG0511A8SL.html",
+        "source_title": "地瓜机器人完成4亿美元C轮融资 1年三轮融资 商业化进入兑现期|创投|美团|c轮融资|千寻智能|知名企业_网易订阅",
+        "source_content_hash": "c7ad77c1a9165c73",
+        "quote": "从融资节奏看，地瓜机器人呈现出罕见的资本加速度： · 2025年：完成1亿美元A轮，高瓴创投、五源资本、线性资本等入场； · 2026年3月：完成1.2亿美元B1轮，滴滴、美团龙珠、北汽产投等加入； · 2026年4月：完成1.5亿美元B2轮，Prosperity7、云锋基金、远景科技等跟投； · 2026年9月：完成4亿美元C轮，未来资产领投。",
+        "quote_hash": "3784ba81aac1a65aac464e06a7054d058416e2c96b64c8010d52796e61728668"
+      },
       {
         "source_id": "FISRC-773362f4e07cd598",
         "source_url": "https://news.pedaily.cn/202607/566986.shtml",

@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-19T07:02:09.778Z",
+    "latestDataDate": "2026-09-19",
+    "currentDate": "2026-09-19",
+    "eventCount": 3409,
+    "quarantinedEventCount": 36,
+    "quarantinedEventIds": [
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-cab18aa68c8ae551",
+      "EV-88a9fd0b8f602e16",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "entity": {
+    "id": "EN-32425714bc255528",
+    "name": "Peerium",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-f2f9ce8933ab8d4f"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-18",
+    "lastSeen": "2026-09-19",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-f2f9ce8933ab8d4f"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-f2f9ce8933ab8d4f",
+        "dataDate": "2026-09-19",
+        "date": "2026-09-18",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "华为发布 Peerium 计算架构，Atlas 950 超节点为首代产品",
+        "displayTags": [],
+        "entityIds": [
+          "EN-b81c8201acfc7639",
+          "EN-32425714bc255528"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-5b8722fab040e3bf",
+      "snapshotKey": "5b8722fab040e3bf",
+      "snapshotId": "HWS-c5965708463037b6",
+      "eventId": "EV-f2f9ce8933ab8d4f",
+      "eventIds": [
+        "EV-f2f9ce8933ab8d4f"
+      ],
+      "dataDate": "2026-09-19",
+      "date": "2026-09-19",
+      "title": "Peerium",
+      "subject": "Huawei",
+      "productNames": [
+        "Peerium"
+      ],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-310889d13ede95eb"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-19",
+          "hardware_fact_id": "HWF-310889d13ede95eb",
+          "fact_type": "product",
+          "observed_at": "2026-09-18T00:31:55.000Z",
+          "subject_entity_id": "EN-b81c8201acfc7639",
+          "subject_name": "Huawei",
+          "product_entity_ids": [
+            "EN-32425714bc255528"
+          ],
+          "product_names": [
+            "Peerium"
+          ],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家 9 月 18 日消息，华为 9 月 17 日在上海发布 AI 时代的全新计算架构 Peerium，称该架构可实现百万级处理器作为一台计算机协同工作，以满足持续增长的 AI 算力需求。",
+          "event_refs": [
+            "EV-f2f9ce8933ab8d4f"
+          ],
+          "claim_ref": "CL-43c16ba372c49c01",
+          "source_refs": [
+            "SA-4ecf4d44789b8d7d"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-19/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/1/003/910.htm",
+      "entityIds": [
+        "EN-b81c8201acfc7639",
+        "EN-32425714bc255528"
+      ]
+    }
+  ]
+}

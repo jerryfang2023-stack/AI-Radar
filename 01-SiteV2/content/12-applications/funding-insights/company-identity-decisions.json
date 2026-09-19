@@ -1,7 +1,7 @@
 {
   "meta": {
     "schema_version": "FUNDING-COMPANY-IDENTITY-DECISION-V1.0",
-    "updated_at": "2026-09-18",
+    "updated_at": "2026-09-19",
     "rule": "Funding Insights may merge public cards only after an explicit identity review. The decision changes the application projection, preserves every source event, and does not mutate Data Center V4 canonical facts."
   },
   "decisions": [
@@ -29,7 +29,7 @@
       "entity_id": "EN-0650ad8ad48129f7",
       "application_entity_id": "FICO-anew-labs",
       "current": { "name": "Anew Labs（新生实验室）", "catalog_type": "company" },
-      "match_names": ["Anew Labs（新生实验室）", "Anew Labs"],
+      "match_names": ["Anew Labs（新生实验室）", "Anew Labs", "新生探途", "上海新生探途科技有限公司"],
       "action": "correct",
       "merge_into_entity_id": "",
       "canonical": { "name": "Anew Labs（新生实验室）", "catalog_type": "company" },
@@ -39,9 +39,11 @@
         "source_url": "https://news.pedaily.cn/202609/569118.shtml",
         "quote": "AI制药公司Anew Labs（新生实验室）日前已完成 首轮独立融资 ，融资总额 2.9 亿美元",
         "corroborating_source_url": "https://www.chinaventure.com.cn/news/111-20260917-393303.html",
-        "corroborating_quote": "9 月 16 日，一家名为Anew Labs的初创AI制药公司宣布完成2.9亿美元融资"
+        "corroborating_quote": "9 月 16 日，一家名为Anew Labs的初创AI制药公司宣布完成2.9亿美元融资",
+        "additional_source_url": "https://www.cls.cn/detail/2487425",
+        "additional_quote": "9月16日，字节跳动分拆的AI制药公司新生探途（Anew Labs）完成首轮外部融资2.9亿美元。"
       },
-      "rationale": "两份已捕获原文指向同一 Anew Labs AI 制药公司、9月16日披露的2.9亿美元首轮融资；后文发布日期为9月17日。仅统一应用身份，保留两条来源事件及各自金额、日期与投资方证据，不晋升或改写规范实体。"
+      "rationale": "三份已捕获原文指向同一 Anew Labs AI 制药公司、9月16日披露的2.9亿美元首轮融资；9月19日采集的财联社正文直接对应新生探途与Anew Labs，法定名由同卡公司证据保留。仅统一应用身份并显式关联三条来源事件，保留各自金额、日期与投资方证据，不晋升或改写规范实体。"
     },
     {
       "decision_id": "FICID-DEEPKERNEL-20260915",

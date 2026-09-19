@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-18T02:50:25.844Z",
-    "latestDataDate": "2026-09-18",
-    "currentDate": "2026-09-18",
-    "eventCount": 3369,
+    "generatedAt": "2026-09-19T07:02:09.778Z",
+    "latestDataDate": "2026-09-19",
+    "currentDate": "2026-09-19",
+    "eventCount": 3409,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -58,24 +58,32 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
     "first_disclosed_at": "2026-05-07",
-    "latest_disclosed_at": "2026-07-07",
+    "latest_disclosed_at": "2026-09-17",
     "role_counts": {
       "co_lead": 1,
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 1,
+      "participant": 1
     },
     "round_codes": [
-      "pre_series_b"
+      "pre_series_b",
+      "series_c"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-c5146e8a5659ab7e",
+        "canonical_entity_id": "",
+        "name": "深圳地瓜机器人有限公司"
+      },
       {
         "entity_id": "EN-aa949c066d46acbf",
         "canonical_entity_id": "EN-aa949c066d46acbf",
@@ -83,6 +91,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-eeff7438fc5fb4e7",
+        "funding_insight_id": "FI-e9d633fa8c039673",
+        "event_ids": [
+          "EV-412f7ce21693dc13"
+        ],
+        "company_entity_id": "EN-c5146e8a5659ab7e",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳地瓜机器人有限公司",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "4亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 400000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4 亿美元"
+        },
+        "announced_at": "2026-09-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-517ef1b31eac6dd3",
+            "source_url": "https://finance.sina.com.cn/roll/2026-09-17/doc-iniscekc4127167.shtml",
+            "source_title": "地瓜机器人完成4亿美元C轮融资 软硬一体基础设施支撑具身智能产业落地_新浪财经_新浪网",
+            "source_content_hash": "ffc4d665dce6209d",
+            "quote": "美团参与战略投资",
+            "quote_hash": "181fe49d7bb4d586cd5c07e4df643b4acf5ec1819ced69c55f8a3a6c88401d60"
+          }
+        ]
+      },
       {
         "activity_id": "IA-340faa68e0aaf3c3",
         "funding_insight_id": "FI-43fe661ce1291832",
@@ -165,6 +213,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-517ef1b31eac6dd3",
+        "source_url": "https://finance.sina.com.cn/roll/2026-09-17/doc-iniscekc4127167.shtml",
+        "source_title": "地瓜机器人完成4亿美元C轮融资 软硬一体基础设施支撑具身智能产业落地_新浪财经_新浪网",
+        "source_content_hash": "ffc4d665dce6209d",
+        "quote": "美团参与战略投资",
+        "quote_hash": "181fe49d7bb4d586cd5c07e4df643b4acf5ec1819ced69c55f8a3a6c88401d60"
+      },
       {
         "source_id": "FISRC-340182e8dcb597a3",
         "source_url": "https://roadtovr.com/smart-glasses-even-realities-unicorn-150m-funding/",

@@ -38,6 +38,22 @@ despite a failed outcome.
 
 ## Preserve operational state
 
+Funding round recovery prioritizes the referenced, accepted funding Claim's
+financing sentence over the event object, which may describe a product. For
+example, an infrastructure product description must not replace an explicitly
+disclosed Series C round. Preserve historical-round disambiguation and immutable
+source quotes; rebuild reused cards through the canonical evidence normalizer.
+
+Cross-day review must distinguish new reporting from a new financing. On
+2026-09-19, the accepted CLS original explicitly identifies 新生探途 as Anew Labs
+and dates its $290 million first external round to September 16; the application
+identity review and source-event links retain all three disclosures. Crusoe's
+September 18 Newcomer summary (nearly $4 billion at a $30.9 billion valuation)
+repeats the September 17 TechCrunch Series F disclosure ($3.9 billion at the same
+valuation). Their reviewed source-event links aggregate one round while keeping
+both original amount/date disclosures. Do not implement a general fuzzy-amount
+merge or edit accepted Claims to achieve this projection.
+
 - Network preflight checks both proxy environment variables and Git proxy
   configuration. A dead loopback Git proxy receives an empty process-scoped
   override inherited by Vault, OPS and the sibling financing publisher. User
