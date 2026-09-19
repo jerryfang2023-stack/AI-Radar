@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-18T02:50:25.844Z",
-    "latestDataDate": "2026-09-18",
-    "currentDate": "2026-09-18",
-    "eventCount": 3369,
+    "generatedAt": "2026-09-19T00:44:39.441Z",
+    "latestDataDate": "2026-09-19",
+    "currentDate": "2026-09-19",
+    "eventCount": 3377,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -58,23 +58,29 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-07-24",
-    "latest_disclosed_at": "2026-07-24",
+    "latest_disclosed_at": "2026-09-18",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "pre_series_a"
+      "pre_series_a",
+      "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-33d5a47fc56e4ba1",
+        "canonical_entity_id": "",
+        "name": "奕行智能"
+      },
       {
         "entity_id": "FICO-yuanchuan-micro",
         "canonical_entity_id": "",
@@ -82,6 +88,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-11da2fd86a7aa7b0",
+        "funding_insight_id": "FI-77950002d539c290",
+        "event_ids": [
+          "EV-2c2f903622c29ba4"
+        ],
+        "company_entity_id": "EN-33d5a47fc56e4ba1",
+        "company_canonical_entity_id": "",
+        "company_name": "奕行智能",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮",
+        "amount_original": "20亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿元"
+        },
+        "announced_at": "2026-09-18",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ed0092859381f876",
+            "source_url": "https://news.pedaily.cn/202609/569236.shtml",
+            "source_title": "首发| 奕行智能完成新一轮20亿元融资，投后估值近150亿",
+            "source_content_hash": "299a9be6f63ac708",
+            "quote": "汇聚了 华泰创新、钟鼎资本、中芯聚源、九安医疗、仁爱资本、通富微电子、赛意产业基金、和利资本、芯鑫租赁、恒旭资本、尚颀资本、建广湛卢、容亿资本 等超20家知名投资机构",
+            "quote_hash": "b0ef77952d03ea1c5566ead5cfe16d66884042d81d7ffc1aad3f6f8c428adef1"
+          }
+        ]
+      },
       {
         "activity_id": "IA-9024f55faaf0d140",
         "funding_insight_id": "FI-62124a69da75bc76",
@@ -125,6 +171,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-ed0092859381f876",
+        "source_url": "https://news.pedaily.cn/202609/569236.shtml",
+        "source_title": "首发| 奕行智能完成新一轮20亿元融资，投后估值近150亿",
+        "source_content_hash": "299a9be6f63ac708",
+        "quote": "汇聚了 华泰创新、钟鼎资本、中芯聚源、九安医疗、仁爱资本、通富微电子、赛意产业基金、和利资本、芯鑫租赁、恒旭资本、尚颀资本、建广湛卢、容亿资本 等超20家知名投资机构",
+        "quote_hash": "b0ef77952d03ea1c5566ead5cfe16d66884042d81d7ffc1aad3f6f8c428adef1"
+      },
       {
         "source_id": "FISRC-ee42dc11e9aa441b",
         "source_url": "https://www.cjcn.com.cn/news/show-475659.html",

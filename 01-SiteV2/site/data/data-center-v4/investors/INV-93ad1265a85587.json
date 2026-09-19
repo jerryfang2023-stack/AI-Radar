@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-18T02:50:25.844Z",
-    "latestDataDate": "2026-09-18",
-    "currentDate": "2026-09-18",
-    "eventCount": 3369,
+    "generatedAt": "2026-09-19T00:44:39.441Z",
+    "latestDataDate": "2026-09-19",
+    "currentDate": "2026-09-19",
+    "eventCount": 3377,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -58,9 +58,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "CN",
       "GLOBAL"
@@ -68,13 +68,14 @@
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
     "first_disclosed_at": "2026-04-09",
-    "latest_disclosed_at": "2026-09-16",
+    "latest_disclosed_at": "2026-09-18",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "first_external",
       "other",
       "pre_series_a"
     ],
@@ -85,12 +86,57 @@
         "name": "共绩科技"
       },
       {
+        "entity_id": "EN-295219ea74639f0b",
+        "canonical_entity_id": "",
+        "name": "上海新生探途科技有限公司"
+      },
+      {
         "entity_id": "FICO-anew-labs",
         "canonical_entity_id": "",
         "name": "Anew Labs（新生实验室）"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-b008a358dbc6e101",
+        "funding_insight_id": "FI-b907b184c9b87f60",
+        "event_ids": [
+          "EV-1043d78cc040ab30"
+        ],
+        "company_entity_id": "EN-295219ea74639f0b",
+        "company_canonical_entity_id": "",
+        "company_name": "上海新生探途科技有限公司",
+        "round": "首次外部融资",
+        "round_code": "first_external",
+        "round_original": "首次外部融资",
+        "amount_original": "2.9亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 290000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.9 亿美元"
+        },
+        "announced_at": "2026-09-18",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a429bfa589657e6f",
+            "source_url": "http://c.m.163.com/news/a/L702P9D405198CJN.html",
+            "source_title": "字节跳动拆分AI制药公司新生探途 拿下2.9亿美元天使轮融资",
+            "source_content_hash": "782fe6da734543a3",
+            "quote": "投资方为红杉中国、IDG资本、高瓴创投、五源资本、高榕创投、春华创投及包括中国生物制药在内的多家医药产业集团。",
+            "quote_hash": "a69fa25c057f3d12ac7884cbc859b32922cccc8d933e1b6240e48e03c1cce459"
+          }
+        ]
+      },
       {
         "activity_id": "IA-3ee79b75a1291e17",
         "funding_insight_id": "FI-e81dafc2defecb80",
@@ -214,6 +260,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-a429bfa589657e6f",
+        "source_url": "http://c.m.163.com/news/a/L702P9D405198CJN.html",
+        "source_title": "字节跳动拆分AI制药公司新生探途 拿下2.9亿美元天使轮融资",
+        "source_content_hash": "782fe6da734543a3",
+        "quote": "投资方为红杉中国、IDG资本、高瓴创投、五源资本、高榕创投、春华创投及包括中国生物制药在内的多家医药产业集团。",
+        "quote_hash": "a69fa25c057f3d12ac7884cbc859b32922cccc8d933e1b6240e48e03c1cce459"
+      },
       {
         "source_id": "FISRC-55c913083e7dcd21",
         "source_url": "https://www.chinaventure.com.cn/news/111-20260917-393303.html",

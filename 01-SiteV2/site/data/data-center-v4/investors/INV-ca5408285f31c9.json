@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-18T02:50:25.844Z",
-    "latestDataDate": "2026-09-18",
-    "currentDate": "2026-09-18",
-    "eventCount": 3369,
+    "generatedAt": "2026-09-19T00:44:39.441Z",
+    "latestDataDate": "2026-09-19",
+    "currentDate": "2026-09-19",
+    "eventCount": 3377,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -58,23 +58,30 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-06-15",
-    "latest_disclosed_at": "2026-06-15",
+    "latest_disclosed_at": "2026-09-18",
     "role_counts": {
-      "participant": 1
+      "historical_or_ambiguous": 1,
+      "participant": 2
     },
     "round_codes": [
-      "multi_round"
+      "multi_round",
+      "strategic"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-34bc69b5df00e2d3",
+        "canonical_entity_id": "",
+        "name": "弧光量子"
+      },
       {
         "entity_id": "EN-a5e5f031b6f878cf",
         "canonical_entity_id": "EN-a5e5f031b6f878cf",
@@ -82,6 +89,86 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-4a739f298591cafb",
+        "funding_insight_id": "FI-359dbc4cb60c5635",
+        "event_ids": [
+          "EV-06f2bca776e5cee7"
+        ],
+        "company_entity_id": "EN-34bc69b5df00e2d3",
+        "company_canonical_entity_id": "",
+        "company_name": "弧光量子",
+        "round": "战略融资",
+        "round_code": "strategic",
+        "round_original": "战略融资",
+        "amount_original": "超亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿元"
+        },
+        "announced_at": "2026-09-18",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b6f0082c9f0d425c",
+            "source_url": "https://news.pedaily.cn/202609/569239.shtml",
+            "source_title": "弧光量子完成超亿元战略融资，加速量子+AI融合研发",
+            "source_content_hash": "18a253da8984afb0",
+            "quote": "弧光量子 近期 已完成超亿元战略融资，投资方为中国移动链长基金。",
+            "quote_hash": "09176c2b1167b2fc49df437a8b4386610698687a5c351003b18efae94e19fa48"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-86c153ceac661f6e",
+        "funding_insight_id": "FI-77950002d539c290",
+        "event_ids": [
+          "EV-2c2f903622c29ba4"
+        ],
+        "company_entity_id": "EN-33d5a47fc56e4ba1",
+        "company_canonical_entity_id": "",
+        "company_name": "奕行智能",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮",
+        "amount_original": "20亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿元"
+        },
+        "announced_at": "2026-09-18",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "战略投资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-57fa132710ceea85",
+            "source_url": "https://finance.sina.com.cn/tech/roll/2026-05-08/doc-inhxcyyr4353533.shtml",
+            "source_title": "首发|奕行智能融资数亿元，中国移动链长基金投了_新浪科技_新浪网",
+            "source_content_hash": "c0cce647933765a9",
+            "quote": "奕行智能（EVAS Intelligence）宣布获得中国移动链长基金数亿元的战略投资",
+            "quote_hash": "daf5f97a76979e8d3685cbef5cf51547165bbfb39eb72e3aa0b19033c00ef405"
+          }
+        ]
+      },
       {
         "activity_id": "IA-6290a122e3ca96bb",
         "funding_insight_id": "FI-6ada8d4502daa530",
@@ -124,6 +211,22 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-b6f0082c9f0d425c",
+        "source_url": "https://news.pedaily.cn/202609/569239.shtml",
+        "source_title": "弧光量子完成超亿元战略融资，加速量子+AI融合研发",
+        "source_content_hash": "18a253da8984afb0",
+        "quote": "弧光量子 近期 已完成超亿元战略融资，投资方为中国移动链长基金。",
+        "quote_hash": "09176c2b1167b2fc49df437a8b4386610698687a5c351003b18efae94e19fa48"
+      },
+      {
+        "source_id": "FISRC-57fa132710ceea85",
+        "source_url": "https://finance.sina.com.cn/tech/roll/2026-05-08/doc-inhxcyyr4353533.shtml",
+        "source_title": "首发|奕行智能融资数亿元，中国移动链长基金投了_新浪科技_新浪网",
+        "source_content_hash": "c0cce647933765a9",
+        "quote": "奕行智能（EVAS Intelligence）宣布获得中国移动链长基金数亿元的战略投资",
+        "quote_hash": "daf5f97a76979e8d3685cbef5cf51547165bbfb39eb72e3aa0b19033c00ef405"
+      },
       {
         "source_id": "FISRC-b96684face6f5223",
         "source_url": "https://finance.sina.com.cn/jjxw/2026-06-15/doc-inicnckx8338155.shtml",

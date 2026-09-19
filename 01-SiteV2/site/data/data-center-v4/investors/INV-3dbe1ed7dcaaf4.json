@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-18T02:50:25.844Z",
-    "latestDataDate": "2026-09-18",
-    "currentDate": "2026-09-18",
-    "eventCount": 3369,
+    "generatedAt": "2026-09-19T00:44:39.441Z",
+    "latestDataDate": "2026-09-19",
+    "currentDate": "2026-09-19",
+    "eventCount": 3377,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -58,22 +58,72 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-07-06",
-    "latest_disclosed_at": "2026-07-06",
+    "latest_disclosed_at": "2026-09-15",
     "role_counts": {
+      "co_lead": 1,
       "historical_or_ambiguous": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "FICO-0ab04bcfc3de286b",
+        "canonical_entity_id": "",
+        "name": "Euclyd"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-530484c463a03507",
+        "funding_insight_id": "FI-1d043b12be806460",
+        "event_ids": [
+          "EV-375d04f7cc9746c6"
+        ],
+        "company_entity_id": "FICO-0ab04bcfc3de286b",
+        "company_canonical_entity_id": "",
+        "company_name": "Euclyd",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "2亿欧元",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2 亿欧元"
+        },
+        "announced_at": "2026-09-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-6cbfc1ea08a48a66",
+            "source_url": "https://www.cls.cn/detail/2484090",
+            "source_title": "三星押注GPU替代方案赛道：荷兰初创公司获2亿欧元融资",
+            "source_content_hash": "9676197117c46240",
+            "quote": "三星、Somerset Capital Partners、EQT旗下Scaleup Europe Fund以及Innovation Industries共同领投",
+            "quote_hash": "05040103b8eb124e57e50a7a08bd5189f9de6a169757e0c2708bfb3ebf04d7f2"
+          }
+        ]
+      },
       {
         "activity_id": "IA-cbed8de226fdff70",
         "funding_insight_id": "FI-f7342735e68375d9",
@@ -117,6 +167,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-6cbfc1ea08a48a66",
+        "source_url": "https://www.cls.cn/detail/2484090",
+        "source_title": "三星押注GPU替代方案赛道：荷兰初创公司获2亿欧元融资",
+        "source_content_hash": "9676197117c46240",
+        "quote": "三星、Somerset Capital Partners、EQT旗下Scaleup Europe Fund以及Innovation Industries共同领投",
+        "quote_hash": "05040103b8eb124e57e50a7a08bd5189f9de6a169757e0c2708bfb3ebf04d7f2"
+      },
       {
         "source_id": "FISRC-8c073d38e1f34758",
         "source_url": "https://news.pedaily.cn/202607/565883.shtml",

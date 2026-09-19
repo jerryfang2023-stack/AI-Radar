@@ -519,8 +519,8 @@ window.WaveSightOpsConsole = {
   },
   "meta": {
     "version": "OPS-V3.8.0-engineering-integration",
-    "generatedAt": "2026-09-18T00:41:58.296Z",
-    "date": "2026-09-17",
+    "generatedAt": "2026-09-19T00:45:01.747Z",
+    "date": "2026-09-18",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
       "01-SiteV2/site/data/pipeline-dashboard.json",
@@ -581,23 +581,23 @@ window.WaveSightOpsConsole = {
     },
     "monthly": {
       "windowDays": 30,
-      "total": 6,
+      "total": 5,
       "open": 0,
-      "resolved": 6,
+      "resolved": 5,
       "byLane": {
-        "skill_ops": 2,
         "business_signals": 2,
-        "automation": 2
+        "automation": 2,
+        "skill_ops": 1
       },
       "byCategory": {
-        "recurring_automation_issue": 3,
+        "recurring_automation_issue": 2,
         "control_plane_liveness": 2,
         "weekly_learning_loop": 1
       },
       "recurring": [
         {
           "category": "recurring_automation_issue",
-          "count": 3
+          "count": 2
         },
         {
           "category": "control_plane_liveness",
@@ -714,28 +714,6 @@ window.WaveSightOpsConsole = {
           "validation": "daily-automation-runtime-11-passed-and-runtime-output-contract-passed",
           "prevention": "gate",
           "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-24-business-signals-recurring-9b3705b9af766a92.md"
-        },
-        {
-          "id": "2026-08-20-skill-ops-recurring-403353afd75531ab",
-          "date": "2026-08-20",
-          "title": "Recurring problem: skill_ops",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "normal",
-          "laneId": "skill_ops",
-          "category": "recurring_automation_issue",
-          "failedGate": "repeated daily supervision signal",
-          "reportPath": "runtime://daily-supervision/2026-08-18",
-          "dataGenerated": "inspect linked daily reports",
-          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
-          "createdAt": "2026-08-20T08:48:36.673Z",
-          "updatedAt": "2026-08-21T10:11:13+08:00",
-          "resolvedAt": "2026-08-21T10:11:13+08:00",
-          "resolver": "codex",
-          "fixCommit": "069273d4a3",
-          "validation": "npm run build:skill-store-dashboard && npm run check:skill-ops (passed, 167 dashboard skills)",
-          "prevention": "gate",
-          "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-20-skill-ops-recurring-403353afd75531ab.md"
         }
       ]
     }
@@ -1672,7 +1650,7 @@ window.WaveSightOpsConsole = {
       }
     ],
     "sourceQuality": {
-      "updatedAt": "2026-09-18T00:41:58.288Z",
+      "updatedAt": "2026-09-19T00:45:01.738Z",
       "sampleNote": "按最新 V4 RawDocument 的 acquisition_channel 聚合；样本量为已落盘 Raw 文档数。",
       "metricNote": "诊断分由可用率、全文率、高质提取率、可读性和事实命中率组成，仅用于运营观察，不参与来源准入、排序或事实门禁。",
       "rows": [
@@ -1707,15 +1685,15 @@ window.WaveSightOpsConsole = {
         {
           "id": "keyword-search",
           "label": "关键词检索",
-          "total": 83,
-          "eligibleRate": 80,
-          "fullTextRate": 75,
-          "highQualityRate": 71,
-          "readabilityScore": 68,
-          "factHitRate": 7,
-          "acceptedClaims": 12,
-          "canonicalEvents": 6,
-          "score": 64,
+          "total": 99,
+          "eligibleRate": 84,
+          "fullTextRate": 81,
+          "highQualityRate": 74,
+          "readabilityScore": 71,
+          "factHitRate": 9,
+          "acceptedClaims": 19,
+          "canonicalEvents": 9,
+          "score": 68,
           "grade": "中"
         },
         {
@@ -1729,50 +1707,50 @@ window.WaveSightOpsConsole = {
           "factHitRate": 12,
           "acceptedClaims": 12,
           "canonicalEvents": 4,
-          "score": 60,
-          "grade": "中"
+          "score": 47,
+          "grade": "待改善"
         },
         {
           "id": "china-funding",
           "label": "china-funding",
-          "total": 70,
-          "eligibleRate": 87,
-          "fullTextRate": 56,
-          "highQualityRate": 14,
-          "readabilityScore": 38,
-          "factHitRate": 10,
-          "acceptedClaims": 8,
-          "canonicalEvents": 9,
-          "score": 47,
-          "grade": "待改善"
+          "total": 82,
+          "eligibleRate": 100,
+          "fullTextRate": 79,
+          "highQualityRate": 30,
+          "readabilityScore": 58,
+          "factHitRate": 11,
+          "acceptedClaims": 12,
+          "canonicalEvents": 10,
+          "score": 62,
+          "grade": "中"
         }
       ]
     },
     "chinaFunding": {
       "schema_version": "CHINA-FUNDING-HEALTH-V1.0",
-      "date": "2026-09-18",
-      "generated_at": "2026-09-18T00:41:58.241Z",
+      "date": "2026-09-19",
+      "generated_at": "2026-09-19T00:45:01.683Z",
       "status": "partial",
-      "last_collection_at": "2026-09-18T00:13:34.795Z",
+      "last_collection_at": "2026-09-19T00:13:38.748Z",
       "failed_stage": null,
       "stages": [
         {
           "id": "capture",
           "status": "passed",
-          "started_at": "2026-09-18T00:37:57.827Z",
-          "finished_at": "2026-09-18T00:38:21.591Z"
+          "started_at": "2026-09-19T00:40:29.338Z",
+          "finished_at": "2026-09-19T00:40:53.497Z"
         },
         {
           "id": "facts",
           "status": "passed",
-          "started_at": "2026-09-18T00:38:21.591Z",
-          "finished_at": "2026-09-18T00:39:57.369Z"
+          "started_at": "2026-09-19T00:40:53.497Z",
+          "finished_at": "2026-09-19T00:42:07.949Z"
         },
         {
           "id": "projections",
           "status": "passed",
-          "started_at": "2026-09-18T00:39:57.369Z",
-          "finished_at": "2026-09-18T00:41:58.128Z"
+          "started_at": "2026-09-19T00:42:07.950Z",
+          "finished_at": "2026-09-19T00:45:01.565Z"
         }
       ],
       "sources": [
@@ -1780,7 +1758,7 @@ window.WaveSightOpsConsole = {
           "source_id": "pedaily",
           "registry_id": "cn-pedaily",
           "name": "投资界",
-          "attempted_at": "2026-09-18T00:12:34.690Z",
+          "attempted_at": "2026-09-19T00:12:37.587Z",
           "query_count": 2,
           "successful_queries": 2,
           "list_pages_ok": 2,
@@ -1790,94 +1768,102 @@ window.WaveSightOpsConsole = {
             "https://m.pedaily.cn/",
             "https://www.pedaily.cn/vcpeevent/"
           ],
-          "discovered": 32,
-          "capped": 8,
+          "discovered": 36,
+          "capped": 12,
           "status": "collected",
-          "response_ms": 8269,
-          "completed_at": "2026-09-18T00:12:42.959Z",
+          "response_ms": 6014,
+          "completed_at": "2026-09-19T00:12:43.601Z",
           "raw_count": 24,
           "readable_count": 24,
-          "accepted_claims": 6,
+          "accepted_claims": 10,
           "verified_event_ids": [
+            "EV-2c2f903622c29ba4",
             "EV-1d9cf73bba2debcc",
-            "EV-b0637e99e328479b",
+            "EV-bdd574fb9ee91b4d",
             "EV-5594c1b556d321be",
-            "EV-c997b93aa153720b",
-            "EV-91459f0d9446f471"
+            "EV-c0b49766ef954766",
+            "EV-06f2bca776e5cee7",
+            "EV-c997b93aa153720b"
           ],
           "funding_event_ids": [
+            "EV-2c2f903622c29ba4",
             "EV-1d9cf73bba2debcc",
-            "EV-b0637e99e328479b",
+            "EV-bdd574fb9ee91b4d",
             "EV-5594c1b556d321be",
-            "EV-c997b93aa153720b",
-            "EV-91459f0d9446f471"
+            "EV-c0b49766ef954766",
+            "EV-06f2bca776e5cee7",
+            "EV-c997b93aa153720b"
           ],
-          "china_funding_event_ids": [],
+          "china_funding_event_ids": [
+            "EV-2c2f903622c29ba4"
+          ],
           "card_ids": [
+            "FI-359dbc4cb60c5635",
+            "FI-77950002d539c290",
             "FI-16674c19e6f87ab9",
-            "FI-aa4061384cb6ee16",
-            "FI-bca8dec29dd014aa"
+            "FI-aa4061384cb6ee16"
           ],
-          "latest_disclosure": "2026-09-17T08:11:00.000Z"
+          "latest_disclosure": "2026-09-18T05:04:00.000Z"
         },
         {
           "source_id": "chinaventure",
           "registry_id": "cn-chinaventure",
           "name": "投中网",
-          "attempted_at": "2026-09-18T00:12:42.959Z",
+          "attempted_at": "2026-09-19T00:12:43.601Z",
           "query_count": 2,
           "successful_queries": 2,
           "list_pages_ok": 1,
-          "candidates": 19,
+          "candidates": 15,
           "failures": [],
           "entry_urls": [
             "https://www.chinaventure.com.cn/"
           ],
-          "discovered": 19,
+          "discovered": 15,
           "capped": 0,
           "status": "collected",
-          "response_ms": 6574,
-          "completed_at": "2026-09-18T00:12:49.533Z",
-          "raw_count": 19,
-          "readable_count": 19,
+          "response_ms": 10246,
+          "completed_at": "2026-09-19T00:12:53.847Z",
+          "raw_count": 15,
+          "readable_count": 15,
           "accepted_claims": 2,
           "verified_event_ids": [
-            "EV-c96705c69e11c520",
-            "EV-77887cf446f03ba4"
+            "EV-77887cf446f03ba4",
+            "EV-c3e9553260552659"
           ],
           "funding_event_ids": [
-            "EV-c96705c69e11c520",
-            "EV-77887cf446f03ba4"
+            "EV-77887cf446f03ba4",
+            "EV-c3e9553260552659"
           ],
-          "china_funding_event_ids": [],
+          "china_funding_event_ids": [
+            "EV-c3e9553260552659"
+          ],
           "card_ids": [
-            "FI-af7196eb73090b84",
             "FI-2afefdedd2834f49"
           ],
-          "latest_disclosure": "2026-09-17T07:00:00.000Z"
+          "latest_disclosure": "2026-09-18T08:44:00.000Z"
         },
         {
           "source_id": "36kr",
           "registry_id": "cn-36kr-rss",
           "name": "36氪",
-          "attempted_at": "2026-09-18T00:12:49.533Z",
+          "attempted_at": "2026-09-19T00:12:53.847Z",
           "query_count": 2,
           "successful_queries": 2,
           "list_pages_ok": 0,
-          "candidates": 3,
+          "candidates": 0,
           "failures": [
             "list https://pitchhub.36kr.com/: no readable funding article links"
           ],
           "entry_urls": [
             "https://pitchhub.36kr.com/"
           ],
-          "discovered": 3,
+          "discovered": 0,
           "capped": 0,
           "status": "partial",
-          "response_ms": 9355,
-          "completed_at": "2026-09-18T00:12:58.888Z",
-          "raw_count": 3,
-          "readable_count": 3,
+          "response_ms": 6157,
+          "completed_at": "2026-09-19T00:13:00.004Z",
+          "raw_count": 0,
+          "readable_count": 0,
           "accepted_claims": 0,
           "verified_event_ids": [],
           "funding_event_ids": [],
@@ -1889,22 +1875,22 @@ window.WaveSightOpsConsole = {
           "source_id": "cyzone",
           "registry_id": "cn-cyzone",
           "name": "创业邦",
-          "attempted_at": "2026-09-18T00:12:58.889Z",
+          "attempted_at": "2026-09-19T00:13:00.005Z",
           "query_count": 2,
           "successful_queries": 2,
           "list_pages_ok": 1,
-          "candidates": 13,
+          "candidates": 15,
           "failures": [],
           "entry_urls": [
             "https://www.cyzone.cn/"
           ],
-          "discovered": 13,
+          "discovered": 15,
           "capped": 0,
           "status": "collected",
-          "response_ms": 14483,
-          "completed_at": "2026-09-18T00:13:13.372Z",
-          "raw_count": 12,
-          "readable_count": 12,
+          "response_ms": 12354,
+          "completed_at": "2026-09-19T00:13:12.359Z",
+          "raw_count": 15,
+          "readable_count": 15,
           "accepted_claims": 0,
           "verified_event_ids": [],
           "funding_event_ids": [],
@@ -1912,66 +1898,67 @@ window.WaveSightOpsConsole = {
           "card_ids": [
             "FI-5a53c657c45faf9b"
           ],
-          "latest_disclosure": null
+          "latest_disclosure": "2026-09-11T00:00:00+08:00"
         },
         {
           "source_id": "cls",
           "registry_id": "cn-cls",
           "name": "财联社／科创板日报",
-          "attempted_at": "2026-09-18T00:13:13.372Z",
+          "attempted_at": "2026-09-19T00:13:12.359Z",
           "query_count": 2,
           "successful_queries": 2,
           "list_pages_ok": 1,
-          "candidates": 16,
+          "candidates": 13,
           "failures": [],
           "entry_urls": [
             "https://www.cls.cn/"
           ],
-          "discovered": 16,
+          "discovered": 13,
           "capped": 0,
           "status": "collected",
-          "response_ms": 6693,
-          "completed_at": "2026-09-18T00:13:20.065Z",
-          "raw_count": 16,
-          "readable_count": 15,
-          "accepted_claims": 2,
+          "response_ms": 8215,
+          "completed_at": "2026-09-19T00:13:20.574Z",
+          "raw_count": 13,
+          "readable_count": 13,
+          "accepted_claims": 7,
           "verified_event_ids": [
-            "EV-9c427c0985b3b252"
+            "EV-1043d78cc040ab30",
+            "EV-1c0fe6f6090ce11c",
+            "EV-375d04f7cc9746c6"
           ],
           "funding_event_ids": [
-            "EV-9c427c0985b3b252"
+            "EV-1043d78cc040ab30",
+            "EV-375d04f7cc9746c6"
           ],
-          "china_funding_event_ids": [
-            "EV-9c427c0985b3b252"
-          ],
+          "china_funding_event_ids": [],
           "card_ids": [
-            "FI-c2d2a86fa237b6eb",
-            "FI-0e108e32ef8a5b27"
+            "FI-b907b184c9b87f60",
+            "FI-1d043b12be806460"
           ],
-          "latest_disclosure": "2026-09-17T13:17:00.000Z"
+          "latest_disclosure": "2026-09-18T23:56:00.000Z"
         },
         {
           "source_id": "qbitai",
           "registry_id": "cn-qbitai-rss",
           "name": "量子位",
-          "attempted_at": "2026-09-18T00:13:20.065Z",
+          "attempted_at": "2026-09-19T00:13:20.574Z",
           "query_count": 2,
           "successful_queries": 2,
           "list_pages_ok": 0,
-          "candidates": 8,
+          "candidates": 6,
           "failures": [
             "list https://www.qbitai.com/: no readable funding article links"
           ],
           "entry_urls": [
             "https://www.qbitai.com/"
           ],
-          "discovered": 8,
+          "discovered": 6,
           "capped": 0,
           "status": "partial",
-          "response_ms": 7376,
-          "completed_at": "2026-09-18T00:13:27.441Z",
-          "raw_count": 8,
-          "readable_count": 8,
+          "response_ms": 7061,
+          "completed_at": "2026-09-19T00:13:27.635Z",
+          "raw_count": 6,
+          "readable_count": 6,
           "accepted_claims": 2,
           "verified_event_ids": [
             "EV-04bcb24d608a931c"
@@ -1983,9 +1970,7 @@ window.WaveSightOpsConsole = {
             "EV-04bcb24d608a931c"
           ],
           "card_ids": [
-            "FI-257e4f42c36415ea",
-            "FI-111c093076dbcf41",
-            "FI-846562dfba15b6a0"
+            "FI-257e4f42c36415ea"
           ],
           "latest_disclosure": "2026-09-14T00:00:00+08:00"
         },
@@ -1993,7 +1978,7 @@ window.WaveSightOpsConsole = {
           "source_id": "jiqizhixin",
           "registry_id": "cn-jiqizhixin",
           "name": "机器之心",
-          "attempted_at": "2026-09-18T00:13:27.441Z",
+          "attempted_at": "2026-09-19T00:13:27.635Z",
           "query_count": 2,
           "successful_queries": 2,
           "list_pages_ok": 0,
@@ -2007,8 +1992,8 @@ window.WaveSightOpsConsole = {
           "discovered": 0,
           "capped": 0,
           "status": "partial",
-          "response_ms": 7304,
-          "completed_at": "2026-09-18T00:13:34.745Z",
+          "response_ms": 11063,
+          "completed_at": "2026-09-19T00:13:38.698Z",
           "raw_count": 0,
           "readable_count": 0,
           "accepted_claims": 0,
@@ -2022,15 +2007,15 @@ window.WaveSightOpsConsole = {
       "totals": {
         "sources_attempted": 7,
         "sources_failed": 0,
-        "candidates": 83,
-        "readable_documents": 81,
-        "accepted_claims": 12,
-        "verified_events": 9,
-        "funding_events": 9,
-        "china_funding_events": 2,
-        "linked_organizations": 15,
+        "candidates": 73,
+        "readable_documents": 73,
+        "accepted_claims": 21,
+        "verified_events": 13,
+        "funding_events": 12,
+        "china_funding_events": 3,
+        "linked_organizations": 20,
         "linked_products": 0,
-        "published_card_matches": 11
+        "published_card_matches": 9
       },
       "publication": {
         "status": "awaiting_publication_receipt"
@@ -27940,6 +27925,6 @@ window.WaveSightOpsConsole = {
       }
     ],
     "catalogGeneratedAt": "2026-09-13 16:21:58",
-    "snapshotGeneratedAt": "2026-09-18T00:41:58.296Z"
+    "snapshotGeneratedAt": "2026-09-19T00:45:01.747Z"
   }
 };
