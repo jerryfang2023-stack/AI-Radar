@@ -58,20 +58,22 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-24",
-    "latest_disclosed_at": "2026-02-24",
+    "latest_disclosed_at": "2026-09-15",
     "role_counts": {
+      "co_lead": 1,
       "lead": 1
     },
     "round_codes": [
+      "series_a",
       "undisclosed"
     ],
     "portfolio_companies": [
@@ -79,9 +81,54 @@
         "entity_id": "EN-53453cfb48a75dde",
         "canonical_entity_id": "",
         "name": "Axelera AI"
+      },
+      {
+        "entity_id": "FICO-0ab04bcfc3de286b",
+        "canonical_entity_id": "",
+        "name": "Euclyd"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-a008827ce7ff784b",
+        "funding_insight_id": "FI-1d043b12be806460",
+        "event_ids": [
+          "EV-375d04f7cc9746c6"
+        ],
+        "company_entity_id": "FICO-0ab04bcfc3de286b",
+        "company_canonical_entity_id": "",
+        "company_name": "Euclyd",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "2亿欧元",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2 亿欧元"
+        },
+        "announced_at": "2026-09-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-6cbfc1ea08a48a66",
+            "source_url": "https://www.cls.cn/detail/2484090",
+            "source_title": "三星押注GPU替代方案赛道：荷兰初创公司获2亿欧元融资",
+            "source_content_hash": "9676197117c46240",
+            "quote": "三星、Somerset Capital Partners、EQT旗下Scaleup Europe Fund以及Innovation Industries共同领投",
+            "quote_hash": "05040103b8eb124e57e50a7a08bd5189f9de6a169757e0c2708bfb3ebf04d7f2"
+          }
+        ]
+      },
       {
         "activity_id": "IA-eced0270ad5da0cd",
         "funding_insight_id": "FI-e5f8a40683ba6b3e",
@@ -124,6 +171,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-6cbfc1ea08a48a66",
+        "source_url": "https://www.cls.cn/detail/2484090",
+        "source_title": "三星押注GPU替代方案赛道：荷兰初创公司获2亿欧元融资",
+        "source_content_hash": "9676197117c46240",
+        "quote": "三星、Somerset Capital Partners、EQT旗下Scaleup Europe Fund以及Innovation Industries共同领投",
+        "quote_hash": "05040103b8eb124e57e50a7a08bd5189f9de6a169757e0c2708bfb3ebf04d7f2"
+      },
       {
         "source_id": "FISRC-6f1272d694246329",
         "source_url": "http://today.reuters.com/business/european-ai-chip-startup-axelera-raises-additional-250-million-2026-02-24/",
