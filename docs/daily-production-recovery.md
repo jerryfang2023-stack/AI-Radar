@@ -163,6 +163,13 @@ suite used after daily materialization. Person coverage assertions compare
 accepted review-ledger IDs rather than historical catalog sizes; source-specific
 community pages and job-level publication locks retain explicit contract checks.
 
+Homepage banners, documentation index pages and monthly/yearly article archives
+are discovery containers even when their body mentions a valid financing or
+release. The shared source-URL gate rejects those containers in both generation
+and integrity validation; resolve their announcement links before admission.
+Rebuild the affected date from immutable intake so rejected containers retain
+Raw evidence and explicit QA reasons rather than appearing as newly dated events.
+
 After the gated atomic application set merges, verify a successful internal
 Pages deployment of that commit or a proven descendant. A cancelled deployment
 superseded by a newer successful release is not a publication failure. That

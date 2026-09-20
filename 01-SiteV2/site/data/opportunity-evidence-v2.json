@@ -9,7 +9,7 @@
     "activeDate": "2026-09-20",
     "generatedAt": "2026-09-20T00:00:00.000Z",
     "windowDays": 30,
-    "evidenceCount": 989,
+    "evidenceCount": 988,
     "directionCardCount": 0,
     "sourceAdapter": "data-center-v4-canonical"
   },
@@ -95,97 +95,6 @@
       }
     },
     {
-      "id": "EV-32060230ca88d46b",
-      "event_id": "EV-32060230ca88d46b",
-      "event_type": "partnership",
-      "publication_status": "verified",
-      "title": "数据中心性能，边缘效率",
-      "category": "case",
-      "categoryLabel": "案例",
-      "date": "2026-09-20",
-      "event_time": "",
-      "sourceUrl": "https://axelera.ai/",
-      "sourceName": "keyword search / Anysearch",
-      "subject": "PwC Middle East",
-      "sourceExcerpt": "PwC Middle East and Axelera AI team up",
-      "entity_refs": [
-        {
-          "entity_id": "EN-53acae0694a93bf2",
-          "canonical_name": "PwC Middle East",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-e4ffb7bd879b89da",
-          "canonical_name": "PwC",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        }
-      ],
-      "claim_refs": [
-        "CL-48bd68e19fce4871",
-        "CL-25feca26180e8aaa"
-      ],
-      "source_refs": [
-        "SA-c5f348e66af61d18"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [
-          {
-            "value_id": "cost_monitoring",
-            "claim_ref": "CL-25feca26180e8aaa",
-            "source_refs": [
-              "SA-c5f348e66af61d18"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "pain_or_constraint": [
-          {
-            "value_id": "api_cost_spike",
-            "claim_ref": "CL-25feca26180e8aaa",
-            "source_refs": [
-              "SA-c5f348e66af61d18"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "partnership_integration",
-            "claim_ref": "CL-48bd68e19fce4871",
-            "source_refs": [
-              "SA-c5f348e66af61d18"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [
-            "cost_monitoring"
-          ],
-          "pain_or_constraint": [
-            "api_cost_spike"
-          ],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "partnership_integration"
-          ]
-        }
-      }
-    },
-    {
       "id": "EV-9ef7ad8c3b903331",
       "event_id": "EV-9ef7ad8c3b903331",
       "event_type": "procurement_contract",
@@ -243,79 +152,6 @@
           "delivery_model": [],
           "business_action": [
             "procurement_signal"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-c230c05281ef3aa2",
-      "event_id": "EV-c230c05281ef3aa2",
-      "event_type": "certification_compliance",
-      "publication_status": "verified",
-      "title": "AI 助力政府合同竞标：赢得更多投标",
-      "category": "case",
-      "categoryLabel": "案例",
-      "date": "2026-09-20",
-      "event_time": "",
-      "sourceUrl": "https://www.procurementsciences.com/",
-      "sourceName": "keyword search / Anysearch",
-      "subject": "Procurement Sciences",
-      "sourceExcerpt": "Procurement Sciences is designed for the most sensitive government workloads. This includes FedRAMP® Moderate Authorization.",
-      "entity_refs": [
-        {
-          "entity_id": "EN-7035f6607ad2d162",
-          "canonical_name": "Procurement Sciences",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-8e87f27557fb70ca"
-      ],
-      "source_refs": [
-        "SA-e22982460bd55618"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [
-          {
-            "value_id": "security_compliance",
-            "claim_ref": "CL-8e87f27557fb70ca",
-            "source_refs": [
-              "SA-e22982460bd55618"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "governance_requirement",
-            "claim_ref": "CL-8e87f27557fb70ca",
-            "source_refs": [
-              "SA-e22982460bd55618"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [
-            "security_compliance"
-          ],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "governance_requirement"
           ]
         }
       }
@@ -899,124 +735,6 @@
           "team_or_function": [
             "engineering"
           ],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "funding_round"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-26a5749d8604455a",
-      "event_id": "EV-26a5749d8604455a",
-      "event_type": "funding",
-      "publication_status": "verified",
-      "title": "AI 工厂公司",
-      "category": "funding",
-      "categoryLabel": "融资",
-      "date": "2026-09-20",
-      "event_time": "",
-      "sourceUrl": "https://www.crusoe.ai/",
-      "sourceName": "keyword search / Anysearch",
-      "subject": "Crusoe",
-      "sourceExcerpt": "Crusoe raises $3.9B Series F for its vertically-integrated AI infrastructure platform",
-      "entity_refs": [
-        {
-          "entity_id": "EN-d41ebd9f02722fc8",
-          "canonical_name": "Crusoe",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        }
-      ],
-      "claim_refs": [
-        "CL-08682e8f450aba3c"
-      ],
-      "source_refs": [
-        "SA-b1c40dbc92397196"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [
-        {
-          "dimension_id": "ai_market_application",
-          "dimension_name": "AI 市场细分",
-          "value_id": "computing_infrastructure",
-          "value_name": "计算基础设施",
-          "entity_ids": [
-            "EN-d41ebd9f02722fc8"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-af5ff5ce3cb7e413"
-        },
-        {
-          "dimension_id": "ai_market_category",
-          "dimension_name": "AI 市场类别",
-          "value_id": "infrastructure_compute",
-          "value_name": "基础设施与算力",
-          "entity_ids": [
-            "EN-d41ebd9f02722fc8"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-8f1299365d09e933"
-        },
-        {
-          "dimension_id": "ai_market_subcategory",
-          "dimension_name": "AI 市场子类",
-          "value_id": "hardware_computing",
-          "value_name": "硬件与算力",
-          "entity_ids": [
-            "EN-d41ebd9f02722fc8"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-80d0d205684825ac"
-        },
-        {
-          "dimension_id": "product_form",
-          "dimension_name": "产品形态",
-          "value_id": "compute_cloud_service",
-          "value_name": "算力云服务",
-          "entity_ids": [
-            "EN-d41ebd9f02722fc8"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-dd8df171be870991"
-        },
-        {
-          "dimension_id": "target_user",
-          "dimension_name": "目标用户",
-          "value_id": "developer",
-          "value_name": "开发者",
-          "entity_ids": [
-            "EN-d41ebd9f02722fc8"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-dbd613bd9ead7bc8"
-        }
-      ],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "funding_round",
-            "claim_ref": "CL-08682e8f450aba3c",
-            "source_refs": [
-              "SA-b1c40dbc92397196"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
           "specific_task": [],
           "pain_or_constraint": [],
           "product_form": [],
@@ -3406,80 +3124,6 @@
       }
     },
     {
-      "id": "EV-8232ad0075a77b7a",
-      "event_id": "EV-8232ad0075a77b7a",
-      "event_type": "model_release",
-      "publication_status": "verified",
-      "title": "GitHub 更新日志：06/2026",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-09-20",
-      "event_time": "",
-      "sourceUrl": "https://github.blog/changelog/month/06-2026/",
-      "sourceName": "keyword search / Anysearch",
-      "subject": "Anthropic",
-      "sourceExcerpt": "Claude Sonnet 5 is Anthropic&rsquo;s latest Sonnet-class model, now available in GitHub Copilot.",
-      "entity_refs": [
-        {
-          "entity_id": "EN-c70eca6b0f88f44d",
-          "canonical_name": "Anthropic",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        },
-        {
-          "entity_id": "EN-07035a20899a7cd7",
-          "canonical_name": "GitHub Copilot",
-          "entity_type": "product_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-6d7b7fd67cb649ae",
-          "canonical_name": "GitHub Changelog",
-          "entity_type": "product_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-1817f26370795474"
-      ],
-      "source_refs": [
-        "SA-0a68edee80553fee"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-1817f26370795474",
-            "source_refs": [
-              "SA-0a68edee80553fee"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
       "id": "EV-82f5cd84bf05d11e",
       "event_id": "EV-82f5cd84bf05d11e",
       "event_type": "model_release",
@@ -4291,170 +3935,6 @@
       }
     },
     {
-      "id": "EV-e77549afcd91bef8",
-      "event_id": "EV-e77549afcd91bef8",
-      "event_type": "model_release",
-      "publication_status": "verified",
-      "title": "Convai 发布开源决策模型 Laya，对标 TypeSafe AI 的 Jev",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-09-20",
-      "event_time": "2026-09-19T13:15:27.181Z",
-      "sourceUrl": "https://laya.convaiinnovations.com/",
-      "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "subject": "Convai",
-      "sourceExcerpt": "I worked on this literally one year back in March 2025. I spent months of hard work, sweat, and sleepless nights building it, published an arXiv paper ( arXiv:2503.23303 ), released the model weights on Hugging Face ( sales-conversion-model-reinf-learning ), published the open dataset ( saas-sales-conversations ), built a PyPI package, and posted the whole approach on Reddit ( r/LocalLLaMA discussion ).",
-      "entity_refs": [
-        {
-          "entity_id": "EN-ab8441a4cd68f01b",
-          "canonical_name": "Convai",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-7d3194f79e645c42",
-          "canonical_name": "OpenAI",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        }
-      ],
-      "claim_refs": [
-        "CL-51bb4590f5af108d",
-        "CL-23d1a93fc6f72ab9",
-        "CL-217cf5f68179c9d0",
-        "CL-1c19c89a538a330a"
-      ],
-      "source_refs": [
-        "SA-def93875ffa29583"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [
-        {
-          "dimension_id": "technology",
-          "dimension_name": "技术",
-          "value_id": "open_weights",
-          "value_name": "开放权重",
-          "entity_ids": [
-            "EN-ab8441a4cd68f01b"
-          ],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
-        }
-      ],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-51bb4590f5af108d",
-            "source_refs": [
-              "SA-def93875ffa29583"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-f01a13953fa7aaaa",
-      "event_id": "EV-f01a13953fa7aaaa",
-      "event_type": "product_release",
-      "publication_status": "verified",
-      "title": "NVIDIA AI Enterprise - NVIDIA 文档",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-09-20",
-      "event_time": "",
-      "sourceUrl": "https://docs.nvidia.com/ai-enterprise/index.html",
-      "sourceName": "keyword search / Anysearch",
-      "subject": "NVIDIA",
-      "sourceExcerpt": "Infrastructure 8.2 (Production Branch) - Released August 2026.",
-      "entity_refs": [
-        {
-          "entity_id": "EN-8d4321d936320802",
-          "canonical_name": "NVIDIA",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        },
-        {
-          "entity_id": "EN-a79a195bada302ec",
-          "canonical_name": "Production Branch",
-          "entity_type": "product_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-f0fa944bc088687b",
-          "canonical_name": "Docs",
-          "entity_type": "product_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-28992d55822c87f9",
-          "canonical_name": "August 2026.",
-          "entity_type": "product_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-d6023145c208d6ba",
-        "CL-09fb98455ec65807"
-      ],
-      "source_refs": [
-        "SA-39deba0d2fd76fa0"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-d6023145c208d6ba",
-            "source_refs": [
-              "SA-39deba0d2fd76fa0"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
       "id": "EV-0f241385f0cd6c2d",
       "event_id": "EV-0f241385f0cd6c2d",
       "event_type": "partnership",
@@ -4750,6 +4230,97 @@
           "delivery_model": [],
           "business_action": [
             "customer_deployment"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-32060230ca88d46b",
+      "event_id": "EV-32060230ca88d46b",
+      "event_type": "partnership",
+      "publication_status": "verified",
+      "title": "数据中心性能，边缘效率",
+      "category": "case",
+      "categoryLabel": "案例",
+      "date": "2026-09-19",
+      "event_time": "",
+      "sourceUrl": "https://axelera.ai/",
+      "sourceName": "keyword search / Anysearch",
+      "subject": "PwC Middle East",
+      "sourceExcerpt": "PwC Middle East and Axelera AI team up",
+      "entity_refs": [
+        {
+          "entity_id": "EN-53acae0694a93bf2",
+          "canonical_name": "PwC Middle East",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-e4ffb7bd879b89da",
+          "canonical_name": "PwC",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        }
+      ],
+      "claim_refs": [
+        "CL-79cb64db16a36c56",
+        "CL-7cb2fca96a6e81b7"
+      ],
+      "source_refs": [
+        "SA-c5f348e66af61d18"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [
+          {
+            "value_id": "cost_monitoring",
+            "claim_ref": "CL-7cb2fca96a6e81b7",
+            "source_refs": [
+              "SA-c5f348e66af61d18"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "pain_or_constraint": [
+          {
+            "value_id": "api_cost_spike",
+            "claim_ref": "CL-7cb2fca96a6e81b7",
+            "source_refs": [
+              "SA-c5f348e66af61d18"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "partnership_integration",
+            "claim_ref": "CL-79cb64db16a36c56",
+            "source_refs": [
+              "SA-c5f348e66af61d18"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [
+            "cost_monitoring"
+          ],
+          "pain_or_constraint": [
+            "api_cost_spike"
+          ],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "partnership_integration"
           ]
         }
       }
@@ -5164,6 +4735,79 @@
           "delivery_model": [],
           "business_action": [
             "customer_deployment"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-c230c05281ef3aa2",
+      "event_id": "EV-c230c05281ef3aa2",
+      "event_type": "certification_compliance",
+      "publication_status": "verified",
+      "title": "AI 助力政府合同竞标：赢得更多投标",
+      "category": "case",
+      "categoryLabel": "案例",
+      "date": "2026-09-19",
+      "event_time": "",
+      "sourceUrl": "https://www.procurementsciences.com/",
+      "sourceName": "keyword search / Anysearch",
+      "subject": "Procurement Sciences",
+      "sourceExcerpt": "Procurement Sciences is designed for the most sensitive government workloads. This includes FedRAMP® Moderate Authorization.",
+      "entity_refs": [
+        {
+          "entity_id": "EN-7035f6607ad2d162",
+          "canonical_name": "Procurement Sciences",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-206ecea9ccb77a5c"
+      ],
+      "source_refs": [
+        "SA-e22982460bd55618"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [
+          {
+            "value_id": "security_compliance",
+            "claim_ref": "CL-206ecea9ccb77a5c",
+            "source_refs": [
+              "SA-e22982460bd55618"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "governance_requirement",
+            "claim_ref": "CL-206ecea9ccb77a5c",
+            "source_refs": [
+              "SA-e22982460bd55618"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [
+            "security_compliance"
+          ],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "governance_requirement"
           ]
         }
       }
@@ -7780,6 +7424,87 @@
       }
     },
     {
+      "id": "EV-f01a13953fa7aaaa",
+      "event_id": "EV-f01a13953fa7aaaa",
+      "event_type": "product_release",
+      "publication_status": "verified",
+      "title": "NVIDIA AI Enterprise - NVIDIA 文档",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "date": "2026-09-19",
+      "event_time": "",
+      "sourceUrl": "https://docs.nvidia.com/ai-enterprise/index.html",
+      "sourceName": "keyword search / Anysearch",
+      "subject": "NVIDIA",
+      "sourceExcerpt": "Infrastructure 8.2 (Production Branch) - Released August 2026.",
+      "entity_refs": [
+        {
+          "entity_id": "EN-8d4321d936320802",
+          "canonical_name": "NVIDIA",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-a79a195bada302ec",
+          "canonical_name": "Production Branch",
+          "entity_type": "product_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-f0fa944bc088687b",
+          "canonical_name": "Docs",
+          "entity_type": "product_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-28992d55822c87f9",
+          "canonical_name": "August 2026.",
+          "entity_type": "product_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-79c4520826a1b515",
+        "CL-85e3aa9c584ff615"
+      ],
+      "source_refs": [
+        "SA-39deba0d2fd76fa0"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "product_launch",
+            "claim_ref": "CL-79c4520826a1b515",
+            "source_refs": [
+              "SA-39deba0d2fd76fa0"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "product_launch"
+          ]
+        }
+      }
+    },
+    {
       "id": "EV-f2f9ce8933ab8d4f",
       "event_id": "EV-f2f9ce8933ab8d4f",
       "event_type": "product_release",
@@ -8448,6 +8173,165 @@
           "delivery_model": [],
           "business_action": [
             "customer_deployment"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-26a5749d8604455a",
+      "event_id": "EV-26a5749d8604455a",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "Crusoe 融资 39 亿美元建大型数据中心与模块化 AI 工厂，估值达 309 亿美元",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-18",
+      "event_time": "2026-09-17T00:00:00.000Z",
+      "sourceUrl": "https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories",
+      "sourceName": "TechCrunch：AI（RSS）",
+      "subject": "Crusoe",
+      "sourceExcerpt": "Crusoe raises $3.9B to build massive data centers and small modular “AI factories”",
+      "entity_refs": [
+        {
+          "entity_id": "EN-d41ebd9f02722fc8",
+          "canonical_name": "Crusoe",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-8d4321d936320802",
+          "canonical_name": "NVIDIA",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        }
+      ],
+      "claim_refs": [
+        "CL-030885d4eac15316",
+        "CL-417c916bc9b7e256",
+        "CL-f8544bc8dfb67a23"
+      ],
+      "source_refs": [
+        "SA-207c77e7b7c4b991"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "ai_market_application",
+          "dimension_name": "AI 市场细分",
+          "value_id": "computing_infrastructure",
+          "value_name": "计算基础设施",
+          "entity_ids": [
+            "EN-d41ebd9f02722fc8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-af5ff5ce3cb7e413"
+        },
+        {
+          "dimension_id": "ai_market_category",
+          "dimension_name": "AI 市场类别",
+          "value_id": "infrastructure_compute",
+          "value_name": "基础设施与算力",
+          "entity_ids": [
+            "EN-d41ebd9f02722fc8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-8f1299365d09e933"
+        },
+        {
+          "dimension_id": "ai_market_subcategory",
+          "dimension_name": "AI 市场子类",
+          "value_id": "hardware_computing",
+          "value_name": "硬件与算力",
+          "entity_ids": [
+            "EN-d41ebd9f02722fc8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-80d0d205684825ac"
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "compute_cloud_service",
+          "value_name": "算力云服务",
+          "entity_ids": [
+            "EN-d41ebd9f02722fc8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-dd8df171be870991"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "developer",
+          "value_name": "开发者",
+          "entity_ids": [
+            "EN-d41ebd9f02722fc8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-dbd613bd9ead7bc8"
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [
+          {
+            "value_id": "engineering_team",
+            "claim_ref": "CL-417c916bc9b7e256",
+            "source_refs": [
+              "SA-207c77e7b7c4b991"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "team_or_function": [
+          {
+            "value_id": "engineering",
+            "claim_ref": "CL-417c916bc9b7e256",
+            "source_refs": [
+              "SA-207c77e7b7c4b991"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "specific_task": [
+          {
+            "value_id": "internal_tool_building",
+            "claim_ref": "CL-417c916bc9b7e256",
+            "source_refs": [
+              "SA-207c77e7b7c4b991"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-030885d4eac15316",
+            "source_refs": [
+              "SA-207c77e7b7c4b991"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [
+            "engineering_team"
+          ],
+          "team_or_function": [
+            "engineering"
+          ],
+          "specific_task": [
+            "internal_tool_building"
+          ],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
           ]
         }
       }
@@ -12133,6 +12017,98 @@
           "delivery_model": [
             "api_usage_based"
           ],
+          "business_action": [
+            "product_launch"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-8232ad0075a77b7a",
+      "event_id": "EV-8232ad0075a77b7a",
+      "event_type": "model_release",
+      "publication_status": "verified",
+      "title": "GitHub 更新日志：06/2026",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "date": "2026-09-17",
+      "event_time": "",
+      "sourceUrl": "https://github.blog/changelog/month/06-2026/",
+      "sourceName": "keyword search / Anysearch",
+      "subject": "Anthropic",
+      "sourceExcerpt": "Claude Sonnet 5 is Anthropic&rsquo;s latest Sonnet-class model, now available in GitHub Copilot.",
+      "entity_refs": [
+        {
+          "entity_id": "EN-c70eca6b0f88f44d",
+          "canonical_name": "Anthropic",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-9fbf261b62c1d7c0",
+          "canonical_name": "Microsoft",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-07035a20899a7cd7",
+          "canonical_name": "GitHub Copilot",
+          "entity_type": "product_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-6d7b7fd67cb649ae",
+          "canonical_name": "GitHub Changelog",
+          "entity_type": "product_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-5b121f3ce2b24d6e",
+        "CL-f6172d9e6998c6ab"
+      ],
+      "source_refs": [
+        "SA-0a68edee80553fee"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [
+          {
+            "value_id": "internal_tool_building",
+            "claim_ref": "CL-f6172d9e6998c6ab",
+            "source_refs": [
+              "SA-0a68edee80553fee"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "product_launch",
+            "claim_ref": "CL-5b121f3ce2b24d6e",
+            "source_refs": [
+              "SA-0a68edee80553fee"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [
+            "internal_tool_building"
+          ],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
           "business_action": [
             "product_launch"
           ]

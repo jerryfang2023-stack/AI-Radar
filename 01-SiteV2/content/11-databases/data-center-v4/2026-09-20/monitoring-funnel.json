@@ -11,15 +11,17 @@
     ],
     "raw_documents": 98,
     "original_sources": 84,
-    "valid_claims": 35,
+    "valid_claims": 26,
     "observations": 1,
-    "canonical_events": 13,
+    "canonical_events": 9,
     "blocker_counts": {
+      "homepage_requires_original_event_source": 5,
       "source_outside_daily_window": 46,
       "directory_page_not_event_source": 2,
-      "no_source_bounded_event": 10,
+      "no_source_bounded_event": 8,
       "non_event_or_index_title": 4,
       "event_not_ai_relevant": 2,
+      "documentation_index_not_event_source": 1,
       "event_entity_unresolved": 1,
       "question_headline_not_event_specific": 2,
       "repository_page_requires_release_source": 1,
@@ -30,9 +32,9 @@
     },
     "rates": {
       "original_source_rate": 0.8571428571428571,
-      "valid_claim_rate": 0.35714285714285715,
-      "observation_rate": 0.02857142857142857,
-      "event_conversion_rate": 0.37142857142857144
+      "valid_claim_rate": 0.2653061224489796,
+      "observation_rate": 0.038461538461538464,
+      "event_conversion_rate": 0.34615384615384615
     }
   },
   {

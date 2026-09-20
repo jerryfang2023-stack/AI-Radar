@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-20T05:20:50.473Z",
+    "generatedAt": "2026-09-20T05:41:49.434Z",
     "latestDataDate": "2026-09-20",
     "currentDate": "2026-09-20",
-    "eventCount": 3435,
+    "eventCount": 3434,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -50,257 +50,6 @@
     ]
   },
   "events": [
-    {
-      "id": "EV-26a5749d8604455a",
-      "dataDate": "2026-09-20",
-      "date": "2026-09-20",
-      "updatedDate": "2026-09-20",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "AI 工厂公司",
-      "originalTitle": "Crusoe | The AI factory company",
-      "subject": "Crusoe",
-      "action": "funding",
-      "object": "$3.9B Series F",
-      "metrics": [
-        "$3.9B"
-      ],
-      "locations": [],
-      "missingFields": [
-        "event_time"
-      ],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [
-          {
-            "dimensionId": "ai_market_category",
-            "dimensionName": "AI 市场类别",
-            "id": "infrastructure_compute",
-            "name": "基础设施与算力",
-            "entityIds": [
-              "EN-d41ebd9f02722fc8"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-8f1299365d09e933",
-            "fundingInsightId": "FI-e0a9f997fd33ce21"
-          }
-        ],
-        "ai_market_subcategory": [
-          {
-            "dimensionId": "ai_market_subcategory",
-            "dimensionName": "AI 市场子类",
-            "id": "hardware_computing",
-            "name": "硬件与算力",
-            "entityIds": [
-              "EN-d41ebd9f02722fc8"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-80d0d205684825ac",
-            "fundingInsightId": "FI-e0a9f997fd33ce21"
-          }
-        ],
-        "ai_market_application": [
-          {
-            "dimensionId": "ai_market_application",
-            "dimensionName": "AI 市场细分",
-            "id": "computing_infrastructure",
-            "name": "计算基础设施",
-            "entityIds": [
-              "EN-d41ebd9f02722fc8"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-af5ff5ce3cb7e413",
-            "fundingInsightId": "FI-e0a9f997fd33ce21"
-          }
-        ],
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "compute_cloud_service",
-            "name": "算力云服务",
-            "entityIds": [
-              "EN-d41ebd9f02722fc8"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-dd8df171be870991",
-            "fundingInsightId": "FI-e0a9f997fd33ce21"
-          }
-        ],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": [
-          {
-            "dimensionId": "target_user",
-            "dimensionName": "目标用户",
-            "id": "developer",
-            "name": "开发者",
-            "entityIds": [
-              "EN-d41ebd9f02722fc8"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-dbd613bd9ead7bc8",
-            "fundingInsightId": "FI-e0a9f997fd33ce21"
-          }
-        ]
-      },
-      "classifications": [
-        {
-          "dimensionId": "ai_market_application",
-          "dimensionName": "AI 市场细分",
-          "id": "computing_infrastructure",
-          "name": "计算基础设施",
-          "entityIds": [
-            "EN-d41ebd9f02722fc8"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-af5ff5ce3cb7e413",
-          "fundingInsightId": "FI-e0a9f997fd33ce21"
-        },
-        {
-          "dimensionId": "ai_market_category",
-          "dimensionName": "AI 市场类别",
-          "id": "infrastructure_compute",
-          "name": "基础设施与算力",
-          "entityIds": [
-            "EN-d41ebd9f02722fc8"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-8f1299365d09e933",
-          "fundingInsightId": "FI-e0a9f997fd33ce21"
-        },
-        {
-          "dimensionId": "ai_market_subcategory",
-          "dimensionName": "AI 市场子类",
-          "id": "hardware_computing",
-          "name": "硬件与算力",
-          "entityIds": [
-            "EN-d41ebd9f02722fc8"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-80d0d205684825ac",
-          "fundingInsightId": "FI-e0a9f997fd33ce21"
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "compute_cloud_service",
-          "name": "算力云服务",
-          "entityIds": [
-            "EN-d41ebd9f02722fc8"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-dd8df171be870991",
-          "fundingInsightId": "FI-e0a9f997fd33ce21"
-        },
-        {
-          "dimensionId": "target_user",
-          "dimensionName": "目标用户",
-          "id": "developer",
-          "name": "开发者",
-          "entityIds": [
-            "EN-d41ebd9f02722fc8"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-dbd613bd9ead7bc8",
-          "fundingInsightId": "FI-e0a9f997fd33ce21"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "ai_market_category",
-          "dimensionName": "AI 市场类别",
-          "id": "infrastructure_compute",
-          "name": "基础设施与算力",
-          "entityIds": [
-            "EN-d41ebd9f02722fc8"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-8f1299365d09e933",
-          "fundingInsightId": "FI-e0a9f997fd33ce21"
-        },
-        {
-          "dimensionId": "ai_market_subcategory",
-          "dimensionName": "AI 市场子类",
-          "id": "hardware_computing",
-          "name": "硬件与算力",
-          "entityIds": [
-            "EN-d41ebd9f02722fc8"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-80d0d205684825ac",
-          "fundingInsightId": "FI-e0a9f997fd33ce21"
-        },
-        {
-          "dimensionId": "ai_market_application",
-          "dimensionName": "AI 市场细分",
-          "id": "computing_infrastructure",
-          "name": "计算基础设施",
-          "entityIds": [
-            "EN-d41ebd9f02722fc8"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-af5ff5ce3cb7e413",
-          "fundingInsightId": "FI-e0a9f997fd33ce21"
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "compute_cloud_service",
-          "name": "算力云服务",
-          "entityIds": [
-            "EN-d41ebd9f02722fc8"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-dd8df171be870991",
-          "fundingInsightId": "FI-e0a9f997fd33ce21"
-        },
-        {
-          "dimensionId": "target_user",
-          "dimensionName": "目标用户",
-          "id": "developer",
-          "name": "开发者",
-          "entityIds": [
-            "EN-d41ebd9f02722fc8"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-dbd613bd9ead7bc8",
-          "fundingInsightId": "FI-e0a9f997fd33ce21"
-        }
-      ],
-      "entityIds": [
-        "EN-d41ebd9f02722fc8"
-      ],
-      "entityNames": [
-        "Crusoe"
-      ],
-      "productName": "",
-      "products": [],
-      "claims": [
-        {
-          "id": "CL-08682e8f450aba3c",
-          "subject": "Crusoe",
-          "object": "$3.9B Series F",
-          "quote": "Crusoe raises $3.9B Series F for its vertically-integrated AI infrastructure platform"
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-b1c40dbc92397196",
-          "publisher": "crusoe.ai",
-          "url": "https://crusoe.ai"
-        }
-      ],
-      "sourceUrl": "https://crusoe.ai",
-      "publisher": "crusoe.ai",
-      "sourceExcerpt": "Crusoe raises $3.9B Series F for its vertically-integrated AI infrastructure platform"
-    },
     {
       "id": "EV-06f2bca776e5cee7",
       "dataDate": "2026-09-20",
@@ -3934,6 +3683,273 @@
       "sourceUrl": "https://news.pedaily.cn/202609/569177.shtml",
       "publisher": "投资界",
       "sourceExcerpt": "上半年刚完成B轮超亿元"
+    },
+    {
+      "id": "EV-26a5749d8604455a",
+      "dataDate": "2026-09-18",
+      "date": "2026-09-17",
+      "updatedDate": "2026-09-18",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Crusoe 融资 39 亿美元建大型数据中心与模块化 AI 工厂，估值达 309 亿美元",
+      "originalTitle": "",
+      "subject": "Crusoe",
+      "action": "融资",
+      "object": "39 亿美元建大型数据中心与模块化 AI 工厂，估值达 309 亿美元",
+      "metrics": [
+        "$3.9B",
+        "$3.9 billion",
+        "$30.9 billion",
+        "$1.38 billion",
+        "$10 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-d41ebd9f02722fc8"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-8f1299365d09e933",
+            "fundingInsightId": "FI-e0a9f997fd33ce21"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "hardware_computing",
+            "name": "硬件与算力",
+            "entityIds": [
+              "EN-d41ebd9f02722fc8"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-80d0d205684825ac",
+            "fundingInsightId": "FI-e0a9f997fd33ce21"
+          }
+        ],
+        "ai_market_application": [
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "computing_infrastructure",
+            "name": "计算基础设施",
+            "entityIds": [
+              "EN-d41ebd9f02722fc8"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-af5ff5ce3cb7e413",
+            "fundingInsightId": "FI-e0a9f997fd33ce21"
+          }
+        ],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "compute_cloud_service",
+            "name": "算力云服务",
+            "entityIds": [
+              "EN-d41ebd9f02722fc8"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-dd8df171be870991",
+            "fundingInsightId": "FI-e0a9f997fd33ce21"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-d41ebd9f02722fc8"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-dbd613bd9ead7bc8",
+            "fundingInsightId": "FI-e0a9f997fd33ce21"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "computing_infrastructure",
+          "name": "计算基础设施",
+          "entityIds": [
+            "EN-d41ebd9f02722fc8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-af5ff5ce3cb7e413",
+          "fundingInsightId": "FI-e0a9f997fd33ce21"
+        },
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-d41ebd9f02722fc8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-8f1299365d09e933",
+          "fundingInsightId": "FI-e0a9f997fd33ce21"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "hardware_computing",
+          "name": "硬件与算力",
+          "entityIds": [
+            "EN-d41ebd9f02722fc8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-80d0d205684825ac",
+          "fundingInsightId": "FI-e0a9f997fd33ce21"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "compute_cloud_service",
+          "name": "算力云服务",
+          "entityIds": [
+            "EN-d41ebd9f02722fc8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-dd8df171be870991",
+          "fundingInsightId": "FI-e0a9f997fd33ce21"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-d41ebd9f02722fc8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-dbd613bd9ead7bc8",
+          "fundingInsightId": "FI-e0a9f997fd33ce21"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-d41ebd9f02722fc8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-8f1299365d09e933",
+          "fundingInsightId": "FI-e0a9f997fd33ce21"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "hardware_computing",
+          "name": "硬件与算力",
+          "entityIds": [
+            "EN-d41ebd9f02722fc8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-80d0d205684825ac",
+          "fundingInsightId": "FI-e0a9f997fd33ce21"
+        },
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "computing_infrastructure",
+          "name": "计算基础设施",
+          "entityIds": [
+            "EN-d41ebd9f02722fc8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-af5ff5ce3cb7e413",
+          "fundingInsightId": "FI-e0a9f997fd33ce21"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "compute_cloud_service",
+          "name": "算力云服务",
+          "entityIds": [
+            "EN-d41ebd9f02722fc8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-dd8df171be870991",
+          "fundingInsightId": "FI-e0a9f997fd33ce21"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-d41ebd9f02722fc8"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-dbd613bd9ead7bc8",
+          "fundingInsightId": "FI-e0a9f997fd33ce21"
+        }
+      ],
+      "entityIds": [
+        "EN-d41ebd9f02722fc8",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "Crusoe",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-030885d4eac15316",
+          "subject": "Crusoe",
+          "object": "39 亿美元建大型数据中心与模块化 AI 工厂，估值达 309 亿美元",
+          "quote": "Crusoe raises $3.9B to build massive data centers and small modular “AI factories”"
+        },
+        {
+          "id": "CL-417c916bc9b7e256",
+          "subject": "Crusoe",
+          "object": "39 亿美元建大型数据中心与模块化 AI 工厂，估值达 309 亿美元",
+          "quote": "Data center developer Crusoe said Thursday it raised $3.9 billion in a Series F round that pushes its valuation to $30.9 billion. The massive round was co-led by Atreides Management, Mubadala Capital, and Valor Equity Partners. Founders Fund, GIC, Nvidia, Qatar Investment Authority (QIA), Radical Ventures, and TPG also participated, according to Crusoe."
+        },
+        {
+          "id": "CL-f8544bc8dfb67a23",
+          "subject": "Crusoe",
+          "object": "39 亿美元建大型数据中心与模块化 AI 工厂，估值达 309 亿美元",
+          "quote": "The fresh fundraise comes 10 months after Crusoe raised $1.38 billion at a $10 billion valuation last October."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-207c77e7b7c4b991",
+          "publisher": "TechCrunch：AI（RSS）",
+          "url": "https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories"
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories",
+      "publisher": "TechCrunch：AI（RSS）",
+      "sourceExcerpt": "Crusoe raises $3.9B to build massive data centers and small modular “AI factories”"
     },
     {
       "id": "EV-4aa29c278432a9db",
@@ -265342,9 +265358,9 @@
     },
     {
       "id": "EV-32060230ca88d46b",
-      "dataDate": "2026-09-20",
-      "date": "2026-09-20",
-      "updatedDate": "2026-09-20",
+      "dataDate": "2026-09-19",
+      "date": "2026-09-19",
+      "updatedDate": "2026-09-19",
       "eventType": "partnership",
       "eventTypeLabel": "合作",
       "eventGroup": "商业合作",
@@ -265387,13 +265403,13 @@
       "products": [],
       "claims": [
         {
-          "id": "CL-48bd68e19fce4871",
+          "id": "CL-79cb64db16a36c56",
           "subject": "PwC Middle East",
           "object": "Axelera AI",
           "quote": "PwC Middle East and Axelera AI team up"
         },
         {
-          "id": "CL-25feca26180e8aaa",
+          "id": "CL-7cb2fca96a6e81b7",
           "subject": "ASRock Industrial",
           "object": "Axelera AI",
           "quote": "ASRock Industrial today announced a strategic collaboration with Axelera AI to deliver high-performance, power-efficient, and cost-effective AI inference solutions for edge computing."
@@ -285789,87 +285805,6 @@
       "sourceExcerpt": "Introducing, Awarded AI Awarded AI by Procurement Sciences is our end-to-end platform for proposal creation, capture and business development, powered by generative AI."
     },
     {
-      "id": "EV-8232ad0075a77b7a",
-      "dataDate": "2026-09-20",
-      "date": "2026-09-20",
-      "updatedDate": "2026-09-20",
-      "eventType": "model_release",
-      "eventTypeLabel": "模型发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "GitHub 更新日志：06/2026",
-      "originalTitle": "06/2026 - GitHub Changelog",
-      "subject": "Claude Sonnet 5",
-      "action": "model_release",
-      "object": "GitHub Copilot",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [
-        "event_time"
-      ],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-c70eca6b0f88f44d",
-        "EN-07035a20899a7cd7",
-        "EN-6d7b7fd67cb649ae"
-      ],
-      "entityNames": [
-        "Anthropic",
-        "GitHub Copilot",
-        "GitHub Changelog"
-      ],
-      "productName": "GitHub Copilot",
-      "products": [
-        {
-          "name": "GitHub Copilot",
-          "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
-        },
-        {
-          "name": "GitHub Changelog",
-          "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
-        }
-      ],
-      "claims": [
-        {
-          "id": "CL-1817f26370795474",
-          "subject": "Claude Sonnet 5",
-          "object": "GitHub Copilot",
-          "quote": "Claude Sonnet 5 is Anthropic&rsquo;s latest Sonnet-class model, now available in GitHub Copilot."
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-0a68edee80553fee",
-          "publisher": "github.blog",
-          "url": "https://github.blog/changelog/month/06-2026"
-        }
-      ],
-      "sourceUrl": "https://github.blog/changelog/month/06-2026",
-      "publisher": "github.blog",
-      "sourceExcerpt": "Claude Sonnet 5 is Anthropic&rsquo;s latest Sonnet-class model, now available in GitHub Copilot."
-    },
-    {
       "id": "EV-82f5cd84bf05d11e",
       "dataDate": "2026-09-20",
       "date": "2026-09-20",
@@ -286104,102 +286039,6 @@
       "sourceUrl": "https://marktechpost.com/2026/09/19/openclaw-releases-2026-9-5",
       "publisher": "MarkTechPost（RSS）",
       "sourceExcerpt": "OpenClaw is an open-source, MIT-licensed personal AI agent that you run on your own machines. Its Gateway connects models, tools, and chat channels such as Telegram, Slack, and Discord. The project has now shipped version 2026.9.5 , announced on X . The release bundles 4,179 pull requests and 64 direct commits, with credits to 502 contributing accounts. The main change is Atomic Updates, which targets a long-running complaint: updates that break a working agent."
-    },
-    {
-      "id": "EV-f01a13953fa7aaaa",
-      "dataDate": "2026-09-20",
-      "date": "2026-09-20",
-      "updatedDate": "2026-09-20",
-      "eventType": "product_release",
-      "eventTypeLabel": "产品发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "NVIDIA AI Enterprise - NVIDIA 文档",
-      "originalTitle": "NVIDIA AI Enterprise - NVIDIA Docs",
-      "subject": "NVIDIA AI Enterprise Infrastructure 8.2",
-      "action": "product_release",
-      "object": "Production Branch",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [
-        "event_time"
-      ],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-8d4321d936320802",
-        "EN-a79a195bada302ec",
-        "EN-f0fa944bc088687b",
-        "EN-28992d55822c87f9"
-      ],
-      "entityNames": [
-        "NVIDIA",
-        "Production Branch",
-        "Docs",
-        "August 2026."
-      ],
-      "productName": "Production Branch",
-      "products": [
-        {
-          "name": "Production Branch",
-          "type": "产品/服务",
-          "ownerNames": [
-            "NVIDIA"
-          ]
-        },
-        {
-          "name": "Docs",
-          "type": "产品/服务",
-          "ownerNames": [
-            "NVIDIA"
-          ]
-        },
-        {
-          "name": "August 2026.",
-          "type": "产品/服务",
-          "ownerNames": [
-            "NVIDIA"
-          ]
-        }
-      ],
-      "claims": [
-        {
-          "id": "CL-d6023145c208d6ba",
-          "subject": "NVIDIA AI Enterprise Infrastructure 8.2",
-          "object": "Production Branch",
-          "quote": "Infrastructure 8.2 (Production Branch) - Released August 2026."
-        },
-        {
-          "id": "CL-09fb98455ec65807",
-          "subject": "NVIDIA AI Enterprise Infrastructure 7.8",
-          "object": "Long-Term Support Branch",
-          "quote": "Infrastructure 7.8 (LTSB) - Released August 2026."
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-39deba0d2fd76fa0",
-          "publisher": "docs.nvidia.com",
-          "url": "https://docs.nvidia.com/ai-enterprise"
-        }
-      ],
-      "sourceUrl": "https://docs.nvidia.com/ai-enterprise",
-      "publisher": "docs.nvidia.com",
-      "sourceExcerpt": "Infrastructure 8.2 (Production Branch) - Released August 2026."
     },
     {
       "id": "EV-10a072b1d240e493",
@@ -287436,122 +287275,6 @@
       "sourceExcerpt": "昇腾960DT研发进度比原计划 提前三个季度 ，单芯片算力实现倍增，960DT支持2 PFLOPS FP8、4 PFLOPS FP4，HBM容量最高288GB、带宽9.6TB/s。"
     },
     {
-      "id": "EV-e77549afcd91bef8",
-      "dataDate": "2026-09-20",
-      "date": "2026-09-19",
-      "updatedDate": "2026-09-20",
-      "eventType": "model_release",
-      "eventTypeLabel": "模型发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "Convai 发布开源决策模型 Laya，对标 TypeSafe AI 的 Jev",
-      "originalTitle": "",
-      "subject": "Convai",
-      "action": "发布开源决策模型",
-      "object": "Laya，对标 TypeSafe AI 的 Jev",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "open_weights",
-          "name": "开放权重",
-          "entityIds": [
-            "EN-ab8441a4cd68f01b"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "open_weights",
-          "name": "开放权重",
-          "entityIds": [
-            "EN-ab8441a4cd68f01b"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "open_weights",
-          "name": "开放权重",
-          "entityIds": [
-            "EN-ab8441a4cd68f01b"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-ab8441a4cd68f01b",
-        "EN-7d3194f79e645c42"
-      ],
-      "entityNames": [
-        "Convai",
-        "OpenAI"
-      ],
-      "productName": "",
-      "products": [],
-      "claims": [
-        {
-          "id": "CL-51bb4590f5af108d",
-          "subject": "Convai",
-          "object": "Laya，对标 TypeSafe AI 的 Jev",
-          "quote": "I worked on this literally one year back in March 2025. I spent months of hard work, sweat, and sleepless nights building it, published an arXiv paper ( arXiv:2503.23303 ), released the model weights on Hugging Face ( sales-conversion-model-reinf-learning ), published the open dataset ( saas-sales-conversations ), built a PyPI package, and posted the whole approach on Reddit ( r/LocalLLaMA discussion )."
-        },
-        {
-          "id": "CL-23d1a93fc6f72ab9",
-          "subject": "Convai",
-          "object": "Laya，对标 TypeSafe AI 的 Jev",
-          "quote": "And then in September 2026, a well-funded frontier lab called TypeSafe AI (founded by Diogo Almeida, a co-inventor of ChatGPT at OpenAI) launched Jev. They proposed the exact same non-autoregressive decision concept as if it was a brand-new scientific breakthrough. Except they launched without technical papers, without open weights, and with zero open training datasets."
-        },
-        {
-          "id": "CL-217cf5f68179c9d0",
-          "subject": "Convai",
-          "object": "Laya，对标 TypeSafe AI 的 Jev",
-          "quote": "convaiinnovations/laya ModernBERT-large 421M 512 English text classification, guardrails, email triage"
-        },
-        {
-          "id": "CL-1c19c89a538a330a",
-          "subject": "Convai",
-          "object": "Laya，对标 TypeSafe AI 的 Jev",
-          "quote": "convaiinnovations/laya-multilingual mmBERT-base (256k vocab) 322M 1024 (up to 8k) 100+ languages, 2.2x faster, cross-lingual NLI"
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-def93875ffa29583",
-          "publisher": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "url": "https://laya.convaiinnovations.com"
-        }
-      ],
-      "sourceUrl": "https://laya.convaiinnovations.com",
-      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "sourceExcerpt": "I worked on this literally one year back in March 2025. I spent months of hard work, sweat, and sleepless nights building it, published an arXiv paper ( arXiv:2503.23303 ), released the model weights on Hugging Face ( sales-conversion-model-reinf-learning ), published the open dataset ( saas-sales-conversations ), built a PyPI package, and posted the whole approach on Reddit ( r/LocalLLaMA discussion )."
-    },
-    {
       "id": "EV-03fe6992f9f90c2e",
       "dataDate": "2026-09-19",
       "date": "2026-09-19",
@@ -287769,6 +287492,102 @@
       "sourceUrl": "https://marktechpost.com/2026/09/18/prismml-releases-ternary-bonsai-2-27b-a-5-9-gb-apache-2-0-model-retaining-98-2-of-qwen3-8-27b-performance",
       "publisher": "MarkTechPost（RSS）",
       "sourceExcerpt": "PrismML has released Ternary Bonsai 2 27B , a ternary-weight version of Qwen3.8 27B . The language model occupies 5.93 GB, against 53.80 GB in FP16. PrismML reports that it keeps 98.2% of the parent model’s average across 20 benchmarks. The model accepts text and images and supports a 262K-token context. PrismML demos it driving Cline coding agents and computer use on an RTX 5090. It arrives 2 months after the first Bonsai 27B , whose ternary variant retained about 95%."
+    },
+    {
+      "id": "EV-f01a13953fa7aaaa",
+      "dataDate": "2026-09-19",
+      "date": "2026-09-19",
+      "updatedDate": "2026-09-19",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "NVIDIA AI Enterprise - NVIDIA 文档",
+      "originalTitle": "NVIDIA AI Enterprise - NVIDIA Docs",
+      "subject": "NVIDIA AI Enterprise Infrastructure 8.2",
+      "action": "product_release",
+      "object": "Production Branch",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-a79a195bada302ec",
+        "EN-f0fa944bc088687b",
+        "EN-28992d55822c87f9"
+      ],
+      "entityNames": [
+        "NVIDIA",
+        "Production Branch",
+        "Docs",
+        "August 2026."
+      ],
+      "productName": "Production Branch",
+      "products": [
+        {
+          "name": "Production Branch",
+          "type": "产品/服务",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        },
+        {
+          "name": "Docs",
+          "type": "产品/服务",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        },
+        {
+          "name": "August 2026.",
+          "type": "产品/服务",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-79c4520826a1b515",
+          "subject": "NVIDIA AI Enterprise Infrastructure 8.2",
+          "object": "Production Branch",
+          "quote": "Infrastructure 8.2 (Production Branch) - Released August 2026."
+        },
+        {
+          "id": "CL-85e3aa9c584ff615",
+          "subject": "NVIDIA AI Enterprise Infrastructure 7.8",
+          "object": "Long-Term Support Branch",
+          "quote": "Infrastructure 7.8 (LTSB) - Released August 2026."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-39deba0d2fd76fa0",
+          "publisher": "docs.nvidia.com",
+          "url": "https://docs.nvidia.com/ai-enterprise"
+        }
+      ],
+      "sourceUrl": "https://docs.nvidia.com/ai-enterprise",
+      "publisher": "docs.nvidia.com",
+      "sourceExcerpt": "Infrastructure 8.2 (Production Branch) - Released August 2026."
     },
     {
       "id": "EV-5ff63c4f72976e83",
@@ -290077,6 +289896,95 @@
       "sourceUrl": "https://theverge.com/ai-artificial-intelligence/996234/anthropic-one-claude-cowork-docs-slides",
       "publisher": "The Verge AI",
       "sourceExcerpt": "Claude is getting a pair of new tools today: Docs and Slides."
+    },
+    {
+      "id": "EV-8232ad0075a77b7a",
+      "dataDate": "2026-09-17",
+      "date": "2026-09-17",
+      "updatedDate": "2026-09-17",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "GitHub 更新日志：06/2026",
+      "originalTitle": "06/2026 - GitHub Changelog",
+      "subject": "Claude Sonnet 5",
+      "action": "model_release",
+      "object": "GitHub Copilot",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-9fbf261b62c1d7c0",
+        "EN-07035a20899a7cd7",
+        "EN-6d7b7fd67cb649ae"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "Microsoft",
+        "GitHub Copilot",
+        "GitHub Changelog"
+      ],
+      "productName": "GitHub Copilot",
+      "products": [
+        {
+          "name": "GitHub Copilot",
+          "type": "模型",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        },
+        {
+          "name": "GitHub Changelog",
+          "type": "模型",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-5b121f3ce2b24d6e",
+          "subject": "Claude Sonnet 5",
+          "object": "GitHub Copilot",
+          "quote": "Claude Sonnet 5 is Anthropic&rsquo;s latest Sonnet-class model, now available in GitHub Copilot."
+        },
+        {
+          "id": "CL-f6172d9e6998c6ab",
+          "subject": "MAI-Code-1-Flash",
+          "object": "GitHub Copilot Business and Copilot Enterprise",
+          "quote": "MAI-Code-1-Flash, Microsoft AI&rsquo;s in-house coding model, is now generally available for GitHub Copilot Business and Copilot Enterprise"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-0a68edee80553fee",
+          "publisher": "github.blog",
+          "url": "https://github.blog/changelog/month/06-2026"
+        }
+      ],
+      "sourceUrl": "https://github.blog/changelog/month/06-2026",
+      "publisher": "github.blog",
+      "sourceExcerpt": "Claude Sonnet 5 is Anthropic&rsquo;s latest Sonnet-class model, now available in GitHub Copilot."
     },
     {
       "id": "EV-cee1833a40bc2879",
@@ -465079,68 +464987,6 @@
       "sourceExcerpt": "Gartner predicts over 40% of agentic AI projects will be canceled by the end of 2027 due to escalating costs, unclear business value, or inadequate risk controls."
     },
     {
-      "id": "EV-c230c05281ef3aa2",
-      "dataDate": "2026-09-20",
-      "date": "2026-09-20",
-      "updatedDate": "2026-09-20",
-      "eventType": "certification_compliance",
-      "eventTypeLabel": "认证合规",
-      "eventGroup": "组织、政策与法律",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "AI 助力政府合同竞标：赢得更多投标",
-      "originalTitle": "AI for Government Contracting: Win More Bids | Procurement Sciences",
-      "subject": "Procurement Sciences",
-      "action": "certification_compliance",
-      "object": "FedRAMP Moderate Authorization",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [
-        "event_time"
-      ],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-7035f6607ad2d162"
-      ],
-      "entityNames": [
-        "Procurement Sciences"
-      ],
-      "productName": "",
-      "products": [],
-      "claims": [
-        {
-          "id": "CL-8e87f27557fb70ca",
-          "subject": "Procurement Sciences",
-          "object": "FedRAMP Moderate Authorization",
-          "quote": "Procurement Sciences is designed for the most sensitive government workloads. This includes FedRAMP® Moderate Authorization."
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-e22982460bd55618",
-          "publisher": "procurementsciences.com",
-          "url": "https://procurementsciences.com"
-        }
-      ],
-      "sourceUrl": "https://procurementsciences.com",
-      "publisher": "procurementsciences.com",
-      "sourceExcerpt": "Procurement Sciences is designed for the most sensitive government workloads. This includes FedRAMP® Moderate Authorization."
-    },
-    {
       "id": "EV-0fac401cc35ad5e6",
       "dataDate": "2026-09-20",
       "date": "2026-09-19",
@@ -466040,6 +465886,68 @@
       "sourceUrl": "https://northflank.com/blog/enterprise-ai-coding-agent-deployment",
       "publisher": "northflank.com",
       "sourceExcerpt": "Gartner predicts over 40% of agentic AI projects will be canceled by the end of 2027 due to escalating costs, unclear business value, or inadequate risk controls."
+    },
+    {
+      "id": "EV-c230c05281ef3aa2",
+      "dataDate": "2026-09-19",
+      "date": "2026-09-19",
+      "updatedDate": "2026-09-19",
+      "eventType": "certification_compliance",
+      "eventTypeLabel": "认证合规",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AI 助力政府合同竞标：赢得更多投标",
+      "originalTitle": "AI for Government Contracting: Win More Bids | Procurement Sciences",
+      "subject": "Procurement Sciences",
+      "action": "certification_compliance",
+      "object": "FedRAMP Moderate Authorization",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7035f6607ad2d162"
+      ],
+      "entityNames": [
+        "Procurement Sciences"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-206ecea9ccb77a5c",
+          "subject": "Procurement Sciences",
+          "object": "FedRAMP Moderate Authorization",
+          "quote": "Procurement Sciences is designed for the most sensitive government workloads. This includes FedRAMP® Moderate Authorization."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-e22982460bd55618",
+          "publisher": "procurementsciences.com",
+          "url": "https://procurementsciences.com"
+        }
+      ],
+      "sourceUrl": "https://procurementsciences.com",
+      "publisher": "procurementsciences.com",
+      "sourceExcerpt": "Procurement Sciences is designed for the most sensitive government workloads. This includes FedRAMP® Moderate Authorization."
     },
     {
       "id": "EV-f5abde19ff5a1830",

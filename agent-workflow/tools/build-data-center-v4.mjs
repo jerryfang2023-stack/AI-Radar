@@ -188,6 +188,16 @@ function subtractCalendarMonths(dateText, months) {
 export function publicEventSourceUrlIssue(value) {
   try {
     const url = new URL(cleanString(value));
+    if (/^\/(?:index\.(?:html?|php))?$/iu.test(url.pathname)
+        && !["p", "page_id", "article_id"].some(key => /^\d+$/u.test(url.searchParams.get(key) || ""))) {
+      return "homepage_requires_original_event_source";
+    }
+    if (/\/(?:changelog|news|blog)\/(?:month|year)\/[^/]+\/?$/iu.test(url.pathname)) {
+      return "calendar_archive_not_event_source";
+    }
+    if (/^(?:docs|documentation)\./iu.test(url.hostname) && /\/index\.html?$/iu.test(url.pathname)) {
+      return "documentation_index_not_event_source";
+    }
     if (/\/(?:tags?|topics?)\/[^/]+\/?$/iu.test(url.pathname)
         && !/\/releases\/tag\//u.test(url.pathname)) {
       return "tag_or_topic_index_not_event_source";
