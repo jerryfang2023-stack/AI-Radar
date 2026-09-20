@@ -6,14 +6,1406 @@
     "opportunityMapVersion": "OMAP-V2.0.0-v4-evidence",
     "directionCardVersion": "DIRECTION-CARD-V2.0-v4-evidence",
     "taxonomyVersion": "TAG-V4.1",
-    "activeDate": "2026-09-19",
-    "generatedAt": "2026-09-19T00:00:00.000Z",
+    "activeDate": "2026-09-20",
+    "generatedAt": "2026-09-20T00:00:00.000Z",
     "windowDays": 30,
-    "evidenceCount": 994,
+    "evidenceCount": 971,
     "directionCardCount": 0,
     "sourceAdapter": "data-center-v4-canonical"
   },
   "evidence": [
+    {
+      "id": "EV-04bcb24d608a931c",
+      "event_id": "EV-04bcb24d608a931c",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "一年连融三轮，这家金融AI公司又拿下超3亿B轮 - 量子位",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-20",
+      "event_time": "2026-09-14T00:00:00+08:00",
+      "sourceUrl": "https://www.qbitai.com/2026/09/488912.html",
+      "sourceName": "量子位",
+      "subject": "讯兔科技",
+      "sourceExcerpt": "近日，中国金融AI领跑者讯兔科技正式完成 超3亿元 人民币B轮融资。",
+      "entity_refs": [
+        {
+          "entity_id": "EN-63d1760c240e7a7c",
+          "canonical_name": "讯兔科技",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-525f24ca22b3d430"
+      ],
+      "source_refs": [
+        "SA-11a0b4d7c6594cf0"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "ai_market_category",
+          "dimension_name": "AI 市场类别",
+          "value_id": "industry_applications",
+          "value_name": "行业应用",
+          "entity_ids": [
+            "EN-63d1760c240e7a7c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-a77a93e5c885cbbe"
+        },
+        {
+          "dimension_id": "ai_market_subcategory",
+          "dimension_name": "AI 市场子类",
+          "value_id": "financial_services",
+          "value_name": "金融服务",
+          "entity_ids": [
+            "EN-63d1760c240e7a7c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-39486d20e6416bf3"
+        },
+        {
+          "dimension_id": "industry",
+          "dimension_name": "行业",
+          "value_id": "financial_services",
+          "value_name": "金融服务",
+          "entity_ids": [
+            "EN-63d1760c240e7a7c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-32d3296fbc384528"
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "end_user_application",
+          "value_name": "终端 AI 应用",
+          "entity_ids": [
+            "EN-63d1760c240e7a7c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-be144e3052fb8bd4"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "business_user",
+          "value_name": "企业用户",
+          "entity_ids": [
+            "EN-63d1760c240e7a7c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-5b21e411d7aa3b48"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "data_analysis",
+          "value_name": "数据分析",
+          "entity_ids": [
+            "EN-63d1760c240e7a7c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-714767b186c71ccc"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "knowledge_search",
+          "value_name": "知识与搜索",
+          "entity_ids": [
+            "EN-63d1760c240e7a7c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-7163bdca47c52195"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "productivity_enterprise_workflows",
+          "value_name": "生产力与企业工作流",
+          "entity_ids": [
+            "EN-63d1760c240e7a7c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-ef6faea121059667"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "research_discovery",
+          "value_name": "科研与发现",
+          "entity_ids": [
+            "EN-63d1760c240e7a7c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-b8030fee1e41c08e"
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-525f24ca22b3d430",
+            "source_refs": [
+              "SA-11a0b4d7c6594cf0"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-06f2bca776e5cee7",
+      "event_id": "EV-06f2bca776e5cee7",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "弧光量子完成超亿元战略融资，加速量子+AI融合研发",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-20",
+      "event_time": "2026-09-18T02:23:00.000Z",
+      "sourceUrl": "https://news.pedaily.cn/202609/569239.shtml",
+      "sourceName": "投资界",
+      "subject": "弧光量子",
+      "sourceExcerpt": "投资界（ID：pedaily2012）9月18日消息， 弧光量子 近期 已完成超亿元战略融资，投资方为中国移动链长基金。",
+      "entity_refs": [
+        {
+          "entity_id": "EN-34bc69b5df00e2d3",
+          "canonical_name": "弧光量子",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-43077bfc062f7c59"
+      ],
+      "source_refs": [
+        "SA-e6c6923ac5b6bf38"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "ai_market_application",
+          "dimension_name": "AI 市场细分",
+          "value_id": "ai_development_orchestration",
+          "value_name": "AI 开发与编排",
+          "entity_ids": [
+            "EN-34bc69b5df00e2d3"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-77ef2792d53f82e9"
+        },
+        {
+          "dimension_id": "ai_market_category",
+          "dimension_name": "AI 市场类别",
+          "value_id": "infrastructure_compute",
+          "value_name": "基础设施与算力",
+          "entity_ids": [
+            "EN-34bc69b5df00e2d3"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-d2d9ee5a940bd8a6"
+        },
+        {
+          "dimension_id": "ai_market_subcategory",
+          "dimension_name": "AI 市场子类",
+          "value_id": "development_deployment",
+          "value_name": "开发与部署",
+          "entity_ids": [
+            "EN-34bc69b5df00e2d3"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-97bd72ec12f2fa3e"
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "developer_tool",
+          "value_name": "开发者工具",
+          "entity_ids": [
+            "EN-34bc69b5df00e2d3"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-4fe233cf49557074"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "developer",
+          "value_name": "开发者",
+          "entity_ids": [
+            "EN-34bc69b5df00e2d3"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-64c30fcb7966f45a"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "researcher",
+          "value_name": "研究人员",
+          "entity_ids": [
+            "EN-34bc69b5df00e2d3"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-227a790f097f18d2"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "software_development",
+          "value_name": "软件开发",
+          "entity_ids": [
+            "EN-34bc69b5df00e2d3"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-49bbc86860c3e86f"
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [
+          {
+            "value_id": "engineering_team",
+            "claim_ref": "CL-43077bfc062f7c59",
+            "source_refs": [
+              "SA-e6c6923ac5b6bf38"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "team_or_function": [
+          {
+            "value_id": "engineering",
+            "claim_ref": "CL-43077bfc062f7c59",
+            "source_refs": [
+              "SA-e6c6923ac5b6bf38"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-43077bfc062f7c59",
+            "source_refs": [
+              "SA-e6c6923ac5b6bf38"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [
+            "engineering_team"
+          ],
+          "team_or_function": [
+            "engineering"
+          ],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-1d9cf73bba2debcc",
+      "event_id": "EV-1d9cf73bba2debcc",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "思博慧医完成近亿元Pre-A+轮融资，加速AI全自动磁控介入手术平台研发",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-20",
+      "event_time": "2026-09-17T01:45:00.000Z",
+      "sourceUrl": "https://news.pedaily.cn/202609/569157.shtml",
+      "sourceName": "投资界",
+      "subject": "思博慧医",
+      "sourceExcerpt": "投资界（ID：pedaily2012）9月17日消息， 思博慧医 宣布 完成近亿元Pre-A+轮融资， 本轮由 诺庾资本领投，浦东创投、片仔癀盈科基金、同杨基金、太湖空天动力启明星跟投； Bitola Capital（翎杉资本）担任长期独 家财务顾问。",
+      "entity_refs": [
+        {
+          "entity_id": "EN-9b7dfbc73b12c8b9",
+          "canonical_name": "思博慧医",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-0c7ca8b8d7678c91"
+      ],
+      "source_refs": [
+        "SA-72d2d92161f026ad"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "ai_market_category",
+          "dimension_name": "AI 市场类别",
+          "value_id": "physical_ai",
+          "value_name": "Physical AI",
+          "entity_ids": [
+            "EN-9b7dfbc73b12c8b9"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-8ab2f1d97c38ee51"
+        },
+        {
+          "dimension_id": "industry",
+          "dimension_name": "行业",
+          "value_id": "healthcare_life_sciences",
+          "value_name": "医疗与生命科学",
+          "entity_ids": [
+            "EN-9b7dfbc73b12c8b9"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-582ebecd79bc2d10"
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "robotic_system",
+          "value_name": "机器人系统",
+          "entity_ids": [
+            "EN-9b7dfbc73b12c8b9"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-a8bc07e120e264f1"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "public_sector_user",
+          "value_name": "公共部门用户",
+          "entity_ids": [
+            "EN-9b7dfbc73b12c8b9"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-00d9a73f1ff12b8b"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "researcher",
+          "value_name": "研究人员",
+          "entity_ids": [
+            "EN-9b7dfbc73b12c8b9"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-87dca521d899a3ba"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "physical_automation",
+          "value_name": "物理自动化",
+          "entity_ids": [
+            "EN-9b7dfbc73b12c8b9"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-e862b037eb9fafdd"
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [
+          {
+            "value_id": "engineering_team",
+            "claim_ref": "CL-0c7ca8b8d7678c91",
+            "source_refs": [
+              "SA-72d2d92161f026ad"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "team_or_function": [
+          {
+            "value_id": "engineering",
+            "claim_ref": "CL-0c7ca8b8d7678c91",
+            "source_refs": [
+              "SA-72d2d92161f026ad"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-0c7ca8b8d7678c91",
+            "source_refs": [
+              "SA-72d2d92161f026ad"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [
+            "engineering_team"
+          ],
+          "team_or_function": [
+            "engineering"
+          ],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-2c2f903622c29ba4",
+      "event_id": "EV-2c2f903622c29ba4",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "奕行智能完成新一轮20亿元融资，投后估值近150亿",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-20",
+      "event_time": "2026-09-18T02:06:00.000Z",
+      "sourceUrl": "https://news.pedaily.cn/202609/569236.shtml",
+      "sourceName": "投资界",
+      "subject": "首发| 奕行智能",
+      "sourceExcerpt": "投资界获悉，RISC-V云端AI算力芯片独角兽奕行智能（北京）科技股份有限公司（简称“奕行智能”）完成新一轮20亿元融资，据估计投后估值接近150亿元。",
+      "entity_refs": [
+        {
+          "entity_id": "EN-33d5a47fc56e4ba1",
+          "canonical_name": "首发| 奕行智能",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-dea7792834b68f8c",
+          "canonical_name": "这是继上半年",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-113c95fe634f571c",
+          "canonical_name": "短短数月内",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-075f604caccb7e20",
+        "CL-5b7817e05e546bc4"
+      ],
+      "source_refs": [
+        "SA-cd8617c67617dd16"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "ai_market_application",
+          "dimension_name": "AI 市场细分",
+          "value_id": "chips",
+          "value_name": "芯片",
+          "entity_ids": [
+            "EN-33d5a47fc56e4ba1"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-46652153f36acc77"
+        },
+        {
+          "dimension_id": "ai_market_category",
+          "dimension_name": "AI 市场类别",
+          "value_id": "infrastructure_compute",
+          "value_name": "基础设施与算力",
+          "entity_ids": [
+            "EN-33d5a47fc56e4ba1"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-5960683a10de52fb"
+        },
+        {
+          "dimension_id": "ai_market_subcategory",
+          "dimension_name": "AI 市场子类",
+          "value_id": "hardware_computing",
+          "value_name": "硬件与算力",
+          "entity_ids": [
+            "EN-33d5a47fc56e4ba1"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-11811c2b0e9ab523"
+        },
+        {
+          "dimension_id": "industry",
+          "dimension_name": "行业",
+          "value_id": "automotive_transportation",
+          "value_name": "汽车与交通",
+          "entity_ids": [
+            "EN-33d5a47fc56e4ba1"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-39dc08cd79fb5d0e"
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "chip_accelerator",
+          "value_name": "芯片与加速器",
+          "entity_ids": [
+            "EN-33d5a47fc56e4ba1"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-9cd44dbbf8f4bb23"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "business_user",
+          "value_name": "企业用户",
+          "entity_ids": [
+            "EN-33d5a47fc56e4ba1"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-8e33b5d948f4a919"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "physical_automation",
+          "value_name": "物理自动化",
+          "entity_ids": [
+            "EN-33d5a47fc56e4ba1"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-1db7aaa39a2b973e"
+        },
+        {
+          "dimension_id": "industry",
+          "dimension_name": "行业",
+          "value_id": "financial_services",
+          "value_name": "金融服务",
+          "entity_ids": [
+            "EN-33d5a47fc56e4ba1"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        },
+        {
+          "dimension_id": "industry",
+          "dimension_name": "行业",
+          "value_id": "healthcare_life_sciences",
+          "value_name": "医疗与生命科学",
+          "entity_ids": [
+            "EN-33d5a47fc56e4ba1"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-075f604caccb7e20",
+            "source_refs": [
+              "SA-cd8617c67617dd16"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-2de77a62435cc041",
+      "event_id": "EV-2de77a62435cc041",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "具身数据来了实战派！40天2轮融资数千万，瞄准物理AI基础设施",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-20",
+      "event_time": "2026-08-13T00:00:00+08:00",
+      "sourceUrl": "https://www.qbitai.com/2026/08/472060.html",
+      "sourceName": "量子位",
+      "subject": "元点科技",
+      "sourceExcerpt": "40天2轮融资数千万，瞄准物理AI基础设施",
+      "entity_refs": [
+        {
+          "entity_id": "EN-2505fe8a9e908e04",
+          "canonical_name": "元点科技",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-4f7be1caee66d665",
+        "CL-6b6c23dded43f5d5",
+        "CL-5d4ed900593c592f"
+      ],
+      "source_refs": [
+        "SA-3a5956cf91ad9843"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "technology",
+          "dimension_name": "技术",
+          "value_id": "embodied_ai",
+          "value_name": "具身智能",
+          "entity_ids": [
+            "EN-2505fe8a9e908e04"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-4f7be1caee66d665",
+            "source_refs": [
+              "SA-3a5956cf91ad9843"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-5594c1b556d321be",
+      "event_id": "EV-5594c1b556d321be",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "Freeride AI 完成数百万美元种子轮融资，推进金融专业模型与自进化研究",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-20",
+      "event_time": "2026-09-17T08:11:00.000Z",
+      "sourceUrl": "https://news.pedaily.cn/202609/569200.shtml",
+      "sourceName": "投资界",
+      "subject": "Freeride AI",
+      "sourceExcerpt": "投资界（ID：pedaily2012）9月17日消息，近日，Ace Labs旗下 Freeride AI 宣布完成数百万美元种子轮融资，由L2F光源创业者基金投资。",
+      "entity_refs": [
+        {
+          "entity_id": "EN-a5d33b71cf64ee32",
+          "canonical_name": "Freeride AI",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-9f808d84bdb427ce",
+        "CL-59e70f4b91697917"
+      ],
+      "source_refs": [
+        "SA-6b97613446176cb9"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-9f808d84bdb427ce",
+            "source_refs": [
+              "SA-6b97613446176cb9"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-77887cf446f03ba4",
+      "event_id": "EV-77887cf446f03ba4",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "星路科技完成A+轮融资 4天前 2",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-20",
+      "event_time": "2026-09-15T07:53:00.000Z",
+      "sourceUrl": "https://www.chinaventure.com.cn/news/80-20260915-393275.html",
+      "sourceName": "投中网",
+      "subject": "AI驱动全球一站式财富科技平台星路金融科技控股有限公司",
+      "sourceExcerpt": "2026年9月15日——AI驱动全球一站式财富科技平台星路金融科技控股有限公司（“星路科技”）宣布，已于今年早些时候完成超千万美元A+轮战略融资，获汇丰、People’s Capital参与。",
+      "entity_refs": [
+        {
+          "entity_id": "EN-49b20a608a25b9a9",
+          "canonical_name": "AI驱动全球一站式财富科技平台星路金融科技控股有限公司",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-efadb20430d25ea7",
+          "canonical_name": "星路科技",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-0af9668f7a70a2ee"
+      ],
+      "source_refs": [
+        "SA-033268e887c5b358"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "ai_market_category",
+          "dimension_name": "AI 市场类别",
+          "value_id": "industry_applications",
+          "value_name": "行业应用",
+          "entity_ids": [
+            "EN-efadb20430d25ea7"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-40a4761c2041a882"
+        },
+        {
+          "dimension_id": "ai_market_subcategory",
+          "dimension_name": "AI 市场子类",
+          "value_id": "financial_services",
+          "value_name": "金融服务",
+          "entity_ids": [
+            "EN-efadb20430d25ea7"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-cd8ba757b0e8f4eb"
+        },
+        {
+          "dimension_id": "industry",
+          "dimension_name": "行业",
+          "value_id": "financial_services",
+          "value_name": "金融服务",
+          "entity_ids": [
+            "EN-efadb20430d25ea7"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-1304670bf6566334"
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "enterprise_software_platform",
+          "value_name": "企业软件平台",
+          "entity_ids": [
+            "EN-efadb20430d25ea7"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-0d83144130264958"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "business_user",
+          "value_name": "企业用户",
+          "entity_ids": [
+            "EN-efadb20430d25ea7"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-619440d60acd42fa"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "finance_accounting",
+          "value_name": "财务与会计",
+          "entity_ids": [
+            "EN-efadb20430d25ea7"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-37243760c7f9e4df"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "productivity_enterprise_workflows",
+          "value_name": "生产力与企业工作流",
+          "entity_ids": [
+            "EN-efadb20430d25ea7"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-ca07772554909a84"
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-0af9668f7a70a2ee",
+            "source_refs": [
+              "SA-033268e887c5b358"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-90f03740e87ae062",
+      "event_id": "EV-90f03740e87ae062",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "犀里光电完成 Pre-A 轮融资 本轮由孚腾资本领投，上海未来产业基金、基石资本、大湾区基金、天际资本、深产投及上市公司智微智能跟投，光源资本担任独家财务顾问。 投中网 · 1天前",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-20",
+      "event_time": "2026-09-18T06:12:00.000Z",
+      "sourceUrl": "https://www.chinaventure.com.cn/news/113-20260918-393335.html",
+      "sourceName": "投中网",
+      "subject": "犀里光电",
+      "sourceExcerpt": "近日，面向 AI 数据中心光互联的薄膜铌酸锂光子芯片平台公司犀里光电科技（杭州）有限责任公司（简称 “犀里光电”）正式宣布完成 Pre-A 轮融资。",
+      "entity_refs": [
+        {
+          "entity_id": "EN-cb06f3c535c07379",
+          "canonical_name": "犀里光电",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-cc099c5dc0320617"
+      ],
+      "source_refs": [
+        "SA-e9f2684cc10e1c55"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "ai_compute_system",
+          "value_name": "AI 计算系统",
+          "entity_ids": [
+            "EN-cb06f3c535c07379"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-cc099c5dc0320617",
+            "source_refs": [
+              "SA-e9f2684cc10e1c55"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-b0637e99e328479b",
+      "event_id": "EV-b0637e99e328479b",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "设序科技一连融资6轮，要做「工业界Anthropic」",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-20",
+      "event_time": "2026-09-17T03:23:00.000Z",
+      "sourceUrl": "https://news.pedaily.cn/202609/569177.shtml",
+      "sourceName": "投资界",
+      "subject": "设序科技一连",
+      "sourceExcerpt": "名字可能听起来陌生，但已经完成了六轮融资，累计金额超3亿元，上半年刚完成B轮超亿元。",
+      "entity_refs": [
+        {
+          "entity_id": "EN-f79e8a870aaf5d5c",
+          "canonical_name": "设序科技一连",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-c70eca6b0f88f44d",
+          "canonical_name": "Anthropic",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-be559dd770913243"
+      ],
+      "source_refs": [
+        "SA-a54f43be8317c9e0"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "ai_market_category",
+          "dimension_name": "AI 市场类别",
+          "value_id": "industry_applications",
+          "value_name": "行业应用",
+          "entity_ids": [
+            "EN-cfec5bef40cbf3ae"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-aa48c1cac2dd62a6"
+        },
+        {
+          "dimension_id": "ai_market_subcategory",
+          "dimension_name": "AI 市场子类",
+          "value_id": "industrials",
+          "value_name": "工业",
+          "entity_ids": [
+            "EN-cfec5bef40cbf3ae"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-6a86ec292dbd8229"
+        },
+        {
+          "dimension_id": "industry",
+          "dimension_name": "行业",
+          "value_id": "automotive_transportation",
+          "value_name": "汽车与交通",
+          "entity_ids": [
+            "EN-cfec5bef40cbf3ae"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-370fe1a603d198a4"
+        },
+        {
+          "dimension_id": "industry",
+          "dimension_name": "行业",
+          "value_id": "manufacturing",
+          "value_name": "制造业",
+          "entity_ids": [
+            "EN-cfec5bef40cbf3ae"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-3321f14eb5df93f2"
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "end_user_application",
+          "value_name": "终端 AI 应用",
+          "entity_ids": [
+            "EN-cfec5bef40cbf3ae"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-f79d00001d990d3d"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "business_user",
+          "value_name": "企业用户",
+          "entity_ids": [
+            "EN-cfec5bef40cbf3ae"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-71a9248042ba9dc0"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "developer",
+          "value_name": "开发者",
+          "entity_ids": [
+            "EN-cfec5bef40cbf3ae"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-3f20d397d193e5b1"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "design_engineering",
+          "value_name": "设计与工程",
+          "entity_ids": [
+            "EN-cfec5bef40cbf3ae"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-ae210b52e6777992"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "productivity_enterprise_workflows",
+          "value_name": "生产力与企业工作流",
+          "entity_ids": [
+            "EN-cfec5bef40cbf3ae"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-dcf5fe9bfb2819a4"
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-be559dd770913243",
+            "source_refs": [
+              "SA-a54f43be8317c9e0"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-c0b49766ef954766",
+      "event_id": "EV-c0b49766ef954766",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "上海斐睿科思完成数百万元首轮战略投资，聚焦生命科学具身智能数据基础设施",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-20",
+      "event_time": "2026-09-18T02:53:00.000Z",
+      "sourceUrl": "https://news.pedaily.cn/202609/569241.shtml",
+      "sourceName": "投资界",
+      "subject": "上海斐睿科思",
+      "sourceExcerpt": "投资界（ID：pedaily2012）9月18日消息，上海斐睿科思已 完成数百万元级人民币首轮战略投资 。",
+      "entity_refs": [
+        {
+          "entity_id": "EN-15a5d0c82cc9e872",
+          "canonical_name": "上海斐睿科思",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-2d2b351855e3ca38",
+        "CL-6f5eb2692dae15c4"
+      ],
+      "source_refs": [
+        "SA-66682d47075975f4"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "physical_automation",
+          "value_name": "物理自动化",
+          "entity_ids": [
+            "EN-15a5d0c82cc9e872"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-2d2b351855e3ca38",
+            "source_refs": [
+              "SA-66682d47075975f4"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-c997b93aa153720b",
+      "event_id": "EV-c997b93aa153720b",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "悦点科技完成数千万元Pre-A轮融资，推动AI FDE Model持续进化",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-20",
+      "event_time": "2026-09-16T09:00:00.000Z",
+      "sourceUrl": "https://news.pedaily.cn/202609/569132.shtml",
+      "sourceName": "投资界",
+      "subject": "悦点科技",
+      "sourceExcerpt": "投资界（ID：pedaily2012）9月16日消息，悦点科技宣布 完成数千万元人民币Pre-A轮融资。",
+      "entity_refs": [
+        {
+          "entity_id": "EN-e40403aad241b9fc",
+          "canonical_name": "悦点科技",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-9c0def6ca2d6988f"
+      ],
+      "source_refs": [
+        "SA-2b205854cbab911c"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "ai_market_category",
+          "dimension_name": "AI 市场类别",
+          "value_id": "enterprise_applications",
+          "value_name": "企业级应用",
+          "entity_ids": [
+            "EN-e40403aad241b9fc"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-aeb688b64301694d"
+        },
+        {
+          "dimension_id": "ai_market_subcategory",
+          "dimension_name": "AI 市场子类",
+          "value_id": "productivity_enterprise_workflows",
+          "value_name": "生产力与企业工作流",
+          "entity_ids": [
+            "EN-e40403aad241b9fc"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-ee7ab88604450c89"
+        },
+        {
+          "dimension_id": "industry",
+          "dimension_name": "行业",
+          "value_id": "manufacturing",
+          "value_name": "制造业",
+          "entity_ids": [
+            "EN-e40403aad241b9fc"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-5a3d72459faec9c4"
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "enterprise_software_platform",
+          "value_name": "企业软件平台",
+          "entity_ids": [
+            "EN-e40403aad241b9fc"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-5f863e80fa1ec54e"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "business_user",
+          "value_name": "企业用户",
+          "entity_ids": [
+            "EN-e40403aad241b9fc"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-c616a7d791c7b987"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "data_analysis",
+          "value_name": "数据分析",
+          "entity_ids": [
+            "EN-e40403aad241b9fc"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-091939f6b6707920"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "productivity_enterprise_workflows",
+          "value_name": "生产力与企业工作流",
+          "entity_ids": [
+            "EN-e40403aad241b9fc"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-83eb286ddd73a3c0"
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-9c0def6ca2d6988f",
+            "source_refs": [
+              "SA-2b205854cbab911c"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
     {
       "id": "EV-0f241385f0cd6c2d",
       "event_id": "EV-0f241385f0cd6c2d",
@@ -955,337 +2347,6 @@
       }
     },
     {
-      "id": "EV-04bcb24d608a931c",
-      "event_id": "EV-04bcb24d608a931c",
-      "event_type": "funding",
-      "publication_status": "verified",
-      "title": "一年连融三轮，这家金融AI公司又拿下超3亿B轮 - 量子位",
-      "category": "funding",
-      "categoryLabel": "融资",
-      "date": "2026-09-19",
-      "event_time": "2026-09-14T00:00:00+08:00",
-      "sourceUrl": "https://www.qbitai.com/2026/09/488912.html",
-      "sourceName": "量子位",
-      "subject": "讯兔科技",
-      "sourceExcerpt": "近日，中国金融AI领跑者讯兔科技正式完成 超3亿元 人民币B轮融资。",
-      "entity_refs": [
-        {
-          "entity_id": "EN-63d1760c240e7a7c",
-          "canonical_name": "讯兔科技",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-4522c2f4a5ee9b72",
-          "canonical_name": "在过去一年内已连续",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-bc8464be7a1e58ad",
-        "CL-7a5fc5a36d51aacd"
-      ],
-      "source_refs": [
-        "SA-08c35db13b133fa5"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [
-        {
-          "dimension_id": "ai_market_category",
-          "dimension_name": "AI 市场类别",
-          "value_id": "industry_applications",
-          "value_name": "行业应用",
-          "entity_ids": [
-            "EN-63d1760c240e7a7c"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-a77a93e5c885cbbe"
-        },
-        {
-          "dimension_id": "ai_market_subcategory",
-          "dimension_name": "AI 市场子类",
-          "value_id": "financial_services",
-          "value_name": "金融服务",
-          "entity_ids": [
-            "EN-63d1760c240e7a7c"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-39486d20e6416bf3"
-        },
-        {
-          "dimension_id": "industry",
-          "dimension_name": "行业",
-          "value_id": "financial_services",
-          "value_name": "金融服务",
-          "entity_ids": [
-            "EN-63d1760c240e7a7c"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-32d3296fbc384528"
-        },
-        {
-          "dimension_id": "product_form",
-          "dimension_name": "产品形态",
-          "value_id": "end_user_application",
-          "value_name": "终端 AI 应用",
-          "entity_ids": [
-            "EN-63d1760c240e7a7c"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-be144e3052fb8bd4"
-        },
-        {
-          "dimension_id": "target_user",
-          "dimension_name": "目标用户",
-          "value_id": "business_user",
-          "value_name": "企业用户",
-          "entity_ids": [
-            "EN-63d1760c240e7a7c"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-5b21e411d7aa3b48"
-        },
-        {
-          "dimension_id": "use_case",
-          "dimension_name": "应用场景",
-          "value_id": "data_analysis",
-          "value_name": "数据分析",
-          "entity_ids": [
-            "EN-63d1760c240e7a7c"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-714767b186c71ccc"
-        },
-        {
-          "dimension_id": "use_case",
-          "dimension_name": "应用场景",
-          "value_id": "knowledge_search",
-          "value_name": "知识与搜索",
-          "entity_ids": [
-            "EN-63d1760c240e7a7c"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-7163bdca47c52195"
-        },
-        {
-          "dimension_id": "use_case",
-          "dimension_name": "应用场景",
-          "value_id": "productivity_enterprise_workflows",
-          "value_name": "生产力与企业工作流",
-          "entity_ids": [
-            "EN-63d1760c240e7a7c"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-ef6faea121059667"
-        },
-        {
-          "dimension_id": "use_case",
-          "dimension_name": "应用场景",
-          "value_id": "research_discovery",
-          "value_name": "科研与发现",
-          "entity_ids": [
-            "EN-63d1760c240e7a7c"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-b8030fee1e41c08e"
-        }
-      ],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "funding_round",
-            "claim_ref": "CL-bc8464be7a1e58ad",
-            "source_refs": [
-              "SA-08c35db13b133fa5"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "funding_round"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-06f2bca776e5cee7",
-      "event_id": "EV-06f2bca776e5cee7",
-      "event_type": "funding",
-      "publication_status": "verified",
-      "title": "弧光量子完成超亿元战略融资，加速量子+AI融合研发",
-      "category": "funding",
-      "categoryLabel": "融资",
-      "date": "2026-09-19",
-      "event_time": "2026-09-18T02:23:00.000Z",
-      "sourceUrl": "https://news.pedaily.cn/202609/569239.shtml",
-      "sourceName": "投资界",
-      "subject": "弧光量子",
-      "sourceExcerpt": "投资界（ID：pedaily2012）9月18日消息， 弧光量子 近期 已完成超亿元战略融资，投资方为中国移动链长基金。",
-      "entity_refs": [
-        {
-          "entity_id": "EN-34bc69b5df00e2d3",
-          "canonical_name": "弧光量子",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-dbc41161342000bf"
-      ],
-      "source_refs": [
-        "SA-e6c6923ac5b6bf38"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [
-        {
-          "dimension_id": "ai_market_application",
-          "dimension_name": "AI 市场细分",
-          "value_id": "ai_development_orchestration",
-          "value_name": "AI 开发与编排",
-          "entity_ids": [
-            "EN-34bc69b5df00e2d3"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-77ef2792d53f82e9"
-        },
-        {
-          "dimension_id": "ai_market_category",
-          "dimension_name": "AI 市场类别",
-          "value_id": "infrastructure_compute",
-          "value_name": "基础设施与算力",
-          "entity_ids": [
-            "EN-34bc69b5df00e2d3"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-d2d9ee5a940bd8a6"
-        },
-        {
-          "dimension_id": "ai_market_subcategory",
-          "dimension_name": "AI 市场子类",
-          "value_id": "development_deployment",
-          "value_name": "开发与部署",
-          "entity_ids": [
-            "EN-34bc69b5df00e2d3"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-97bd72ec12f2fa3e"
-        },
-        {
-          "dimension_id": "product_form",
-          "dimension_name": "产品形态",
-          "value_id": "developer_tool",
-          "value_name": "开发者工具",
-          "entity_ids": [
-            "EN-34bc69b5df00e2d3"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-4fe233cf49557074"
-        },
-        {
-          "dimension_id": "target_user",
-          "dimension_name": "目标用户",
-          "value_id": "developer",
-          "value_name": "开发者",
-          "entity_ids": [
-            "EN-34bc69b5df00e2d3"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-64c30fcb7966f45a"
-        },
-        {
-          "dimension_id": "target_user",
-          "dimension_name": "目标用户",
-          "value_id": "researcher",
-          "value_name": "研究人员",
-          "entity_ids": [
-            "EN-34bc69b5df00e2d3"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-227a790f097f18d2"
-        },
-        {
-          "dimension_id": "use_case",
-          "dimension_name": "应用场景",
-          "value_id": "software_development",
-          "value_name": "软件开发",
-          "entity_ids": [
-            "EN-34bc69b5df00e2d3"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-49bbc86860c3e86f"
-        }
-      ],
-      "application_assertions": {
-        "buyer_or_user": [
-          {
-            "value_id": "engineering_team",
-            "claim_ref": "CL-dbc41161342000bf",
-            "source_refs": [
-              "SA-e6c6923ac5b6bf38"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "team_or_function": [
-          {
-            "value_id": "engineering",
-            "claim_ref": "CL-dbc41161342000bf",
-            "source_refs": [
-              "SA-e6c6923ac5b6bf38"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "funding_round",
-            "claim_ref": "CL-dbc41161342000bf",
-            "source_refs": [
-              "SA-e6c6923ac5b6bf38"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [
-            "engineering_team"
-          ],
-          "team_or_function": [
-            "engineering"
-          ],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "funding_round"
-          ]
-        }
-      }
-    },
-    {
       "id": "EV-1043d78cc040ab30",
       "event_id": "EV-1043d78cc040ab30",
       "event_type": "funding",
@@ -1423,332 +2484,6 @@
             "claim_ref": "CL-6921343580b87d96",
             "source_refs": [
               "SA-53d5baf7e3c54215"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "funding_round"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-1d9cf73bba2debcc",
-      "event_id": "EV-1d9cf73bba2debcc",
-      "event_type": "funding",
-      "publication_status": "verified",
-      "title": "思博慧医完成近亿元Pre-A+轮融资，加速AI全自动磁控介入手术平台研发",
-      "category": "funding",
-      "categoryLabel": "融资",
-      "date": "2026-09-19",
-      "event_time": "2026-09-17T01:45:00.000Z",
-      "sourceUrl": "https://news.pedaily.cn/202609/569157.shtml",
-      "sourceName": "投资界",
-      "subject": "思博慧医",
-      "sourceExcerpt": "投资界（ID：pedaily2012）9月17日消息， 思博慧医 宣布 完成近亿元Pre-A+轮融资， 本轮由 诺庾资本领投，浦东创投、片仔癀盈科基金、同杨基金、太湖空天动力启明星跟投； Bitola Capital（翎杉资本）担任长期独 家财务顾问。",
-      "entity_refs": [
-        {
-          "entity_id": "EN-9b7dfbc73b12c8b9",
-          "canonical_name": "思博慧医",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-ce42709502e7e024"
-      ],
-      "source_refs": [
-        "SA-72d2d92161f026ad"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [
-        {
-          "dimension_id": "ai_market_category",
-          "dimension_name": "AI 市场类别",
-          "value_id": "physical_ai",
-          "value_name": "Physical AI",
-          "entity_ids": [
-            "EN-9b7dfbc73b12c8b9"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-8ab2f1d97c38ee51"
-        },
-        {
-          "dimension_id": "industry",
-          "dimension_name": "行业",
-          "value_id": "healthcare_life_sciences",
-          "value_name": "医疗与生命科学",
-          "entity_ids": [
-            "EN-9b7dfbc73b12c8b9"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-582ebecd79bc2d10"
-        },
-        {
-          "dimension_id": "product_form",
-          "dimension_name": "产品形态",
-          "value_id": "robotic_system",
-          "value_name": "机器人系统",
-          "entity_ids": [
-            "EN-9b7dfbc73b12c8b9"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-a8bc07e120e264f1"
-        },
-        {
-          "dimension_id": "target_user",
-          "dimension_name": "目标用户",
-          "value_id": "public_sector_user",
-          "value_name": "公共部门用户",
-          "entity_ids": [
-            "EN-9b7dfbc73b12c8b9"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-00d9a73f1ff12b8b"
-        },
-        {
-          "dimension_id": "target_user",
-          "dimension_name": "目标用户",
-          "value_id": "researcher",
-          "value_name": "研究人员",
-          "entity_ids": [
-            "EN-9b7dfbc73b12c8b9"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-87dca521d899a3ba"
-        },
-        {
-          "dimension_id": "use_case",
-          "dimension_name": "应用场景",
-          "value_id": "physical_automation",
-          "value_name": "物理自动化",
-          "entity_ids": [
-            "EN-9b7dfbc73b12c8b9"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-e862b037eb9fafdd"
-        }
-      ],
-      "application_assertions": {
-        "buyer_or_user": [
-          {
-            "value_id": "engineering_team",
-            "claim_ref": "CL-ce42709502e7e024",
-            "source_refs": [
-              "SA-72d2d92161f026ad"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "team_or_function": [
-          {
-            "value_id": "engineering",
-            "claim_ref": "CL-ce42709502e7e024",
-            "source_refs": [
-              "SA-72d2d92161f026ad"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "funding_round",
-            "claim_ref": "CL-ce42709502e7e024",
-            "source_refs": [
-              "SA-72d2d92161f026ad"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [
-            "engineering_team"
-          ],
-          "team_or_function": [
-            "engineering"
-          ],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "funding_round"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-2c2f903622c29ba4",
-      "event_id": "EV-2c2f903622c29ba4",
-      "event_type": "funding",
-      "publication_status": "verified",
-      "title": "奕行智能完成新一轮20亿元融资，投后估值近150亿",
-      "category": "funding",
-      "categoryLabel": "融资",
-      "date": "2026-09-19",
-      "event_time": "2026-09-18T02:06:00.000Z",
-      "sourceUrl": "https://news.pedaily.cn/202609/569236.shtml",
-      "sourceName": "投资界",
-      "subject": "首发| 奕行智能",
-      "sourceExcerpt": "投资界获悉，RISC-V云端AI算力芯片独角兽奕行智能（北京）科技股份有限公司（简称“奕行智能”）完成新一轮20亿元融资，据估计投后估值接近150亿元。",
-      "entity_refs": [
-        {
-          "entity_id": "EN-33d5a47fc56e4ba1",
-          "canonical_name": "首发| 奕行智能",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-dea7792834b68f8c",
-          "canonical_name": "这是继上半年",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-113c95fe634f571c",
-          "canonical_name": "短短数月内",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-e955670c790ffcf0",
-        "CL-e63017c8bdcca2ff"
-      ],
-      "source_refs": [
-        "SA-cd8617c67617dd16"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [
-        {
-          "dimension_id": "ai_market_application",
-          "dimension_name": "AI 市场细分",
-          "value_id": "chips",
-          "value_name": "芯片",
-          "entity_ids": [
-            "EN-33d5a47fc56e4ba1"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-46652153f36acc77"
-        },
-        {
-          "dimension_id": "ai_market_category",
-          "dimension_name": "AI 市场类别",
-          "value_id": "infrastructure_compute",
-          "value_name": "基础设施与算力",
-          "entity_ids": [
-            "EN-33d5a47fc56e4ba1"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-5960683a10de52fb"
-        },
-        {
-          "dimension_id": "ai_market_subcategory",
-          "dimension_name": "AI 市场子类",
-          "value_id": "hardware_computing",
-          "value_name": "硬件与算力",
-          "entity_ids": [
-            "EN-33d5a47fc56e4ba1"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-11811c2b0e9ab523"
-        },
-        {
-          "dimension_id": "industry",
-          "dimension_name": "行业",
-          "value_id": "automotive_transportation",
-          "value_name": "汽车与交通",
-          "entity_ids": [
-            "EN-33d5a47fc56e4ba1"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-39dc08cd79fb5d0e"
-        },
-        {
-          "dimension_id": "product_form",
-          "dimension_name": "产品形态",
-          "value_id": "chip_accelerator",
-          "value_name": "芯片与加速器",
-          "entity_ids": [
-            "EN-33d5a47fc56e4ba1"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-9cd44dbbf8f4bb23"
-        },
-        {
-          "dimension_id": "target_user",
-          "dimension_name": "目标用户",
-          "value_id": "business_user",
-          "value_name": "企业用户",
-          "entity_ids": [
-            "EN-33d5a47fc56e4ba1"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-8e33b5d948f4a919"
-        },
-        {
-          "dimension_id": "use_case",
-          "dimension_name": "应用场景",
-          "value_id": "physical_automation",
-          "value_name": "物理自动化",
-          "entity_ids": [
-            "EN-33d5a47fc56e4ba1"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-1db7aaa39a2b973e"
-        },
-        {
-          "dimension_id": "industry",
-          "dimension_name": "行业",
-          "value_id": "financial_services",
-          "value_name": "金融服务",
-          "entity_ids": [
-            "EN-33d5a47fc56e4ba1"
-          ],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
-        },
-        {
-          "dimension_id": "industry",
-          "dimension_name": "行业",
-          "value_id": "healthcare_life_sciences",
-          "value_name": "医疗与生命科学",
-          "entity_ids": [
-            "EN-33d5a47fc56e4ba1"
-          ],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
-        }
-      ],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "funding_round",
-            "claim_ref": "CL-e955670c790ffcf0",
-            "source_refs": [
-              "SA-cd8617c67617dd16"
             ],
             "provenance": "event_type_rule"
           }
@@ -2350,215 +3085,6 @@
       }
     },
     {
-      "id": "EV-5594c1b556d321be",
-      "event_id": "EV-5594c1b556d321be",
-      "event_type": "funding",
-      "publication_status": "verified",
-      "title": "Freeride AI 完成数百万美元种子轮融资，推进金融专业模型与自进化研究",
-      "category": "funding",
-      "categoryLabel": "融资",
-      "date": "2026-09-19",
-      "event_time": "2026-09-17T08:11:00.000Z",
-      "sourceUrl": "https://news.pedaily.cn/202609/569200.shtml",
-      "sourceName": "投资界",
-      "subject": "Freeride AI",
-      "sourceExcerpt": "投资界（ID：pedaily2012）9月17日消息，近日，Ace Labs旗下 Freeride AI 宣布完成数百万美元种子轮融资，由L2F光源创业者基金投资。",
-      "entity_refs": [
-        {
-          "entity_id": "EN-a5d33b71cf64ee32",
-          "canonical_name": "Freeride AI",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-bdfc07f31f7e4745",
-        "CL-61f94b00228fd1de"
-      ],
-      "source_refs": [
-        "SA-6b97613446176cb9"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "funding_round",
-            "claim_ref": "CL-bdfc07f31f7e4745",
-            "source_refs": [
-              "SA-6b97613446176cb9"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "funding_round"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-77887cf446f03ba4",
-      "event_id": "EV-77887cf446f03ba4",
-      "event_type": "funding",
-      "publication_status": "verified",
-      "title": "星路科技完成A+轮融资 3天前 1",
-      "category": "funding",
-      "categoryLabel": "融资",
-      "date": "2026-09-19",
-      "event_time": "2026-09-15T07:53:00.000Z",
-      "sourceUrl": "https://www.chinaventure.com.cn/news/80-20260915-393275.html",
-      "sourceName": "投中网",
-      "subject": "AI驱动全球一站式财富科技平台星路金融科技控股有限公司",
-      "sourceExcerpt": "2026年9月15日——AI驱动全球一站式财富科技平台星路金融科技控股有限公司（“星路科技”）宣布，已于今年早些时候完成超千万美元A+轮战略融资，获汇丰、People’s Capital参与。",
-      "entity_refs": [
-        {
-          "entity_id": "EN-49b20a608a25b9a9",
-          "canonical_name": "AI驱动全球一站式财富科技平台星路金融科技控股有限公司",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        },
-        {
-          "entity_id": "EN-efadb20430d25ea7",
-          "canonical_name": "星路科技",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-760ec62ff0968fca"
-      ],
-      "source_refs": [
-        "SA-033268e887c5b358"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [
-        {
-          "dimension_id": "ai_market_category",
-          "dimension_name": "AI 市场类别",
-          "value_id": "industry_applications",
-          "value_name": "行业应用",
-          "entity_ids": [
-            "EN-efadb20430d25ea7"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-40a4761c2041a882"
-        },
-        {
-          "dimension_id": "ai_market_subcategory",
-          "dimension_name": "AI 市场子类",
-          "value_id": "financial_services",
-          "value_name": "金融服务",
-          "entity_ids": [
-            "EN-efadb20430d25ea7"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-cd8ba757b0e8f4eb"
-        },
-        {
-          "dimension_id": "industry",
-          "dimension_name": "行业",
-          "value_id": "financial_services",
-          "value_name": "金融服务",
-          "entity_ids": [
-            "EN-efadb20430d25ea7"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-1304670bf6566334"
-        },
-        {
-          "dimension_id": "product_form",
-          "dimension_name": "产品形态",
-          "value_id": "enterprise_software_platform",
-          "value_name": "企业软件平台",
-          "entity_ids": [
-            "EN-efadb20430d25ea7"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-0d83144130264958"
-        },
-        {
-          "dimension_id": "target_user",
-          "dimension_name": "目标用户",
-          "value_id": "business_user",
-          "value_name": "企业用户",
-          "entity_ids": [
-            "EN-efadb20430d25ea7"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-619440d60acd42fa"
-        },
-        {
-          "dimension_id": "use_case",
-          "dimension_name": "应用场景",
-          "value_id": "finance_accounting",
-          "value_name": "财务与会计",
-          "entity_ids": [
-            "EN-efadb20430d25ea7"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-37243760c7f9e4df"
-        },
-        {
-          "dimension_id": "use_case",
-          "dimension_name": "应用场景",
-          "value_id": "productivity_enterprise_workflows",
-          "value_name": "生产力与企业工作流",
-          "entity_ids": [
-            "EN-efadb20430d25ea7"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-ca07772554909a84"
-        }
-      ],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "funding_round",
-            "claim_ref": "CL-760ec62ff0968fca",
-            "source_refs": [
-              "SA-033268e887c5b358"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "funding_round"
-          ]
-        }
-      }
-    },
-    {
       "id": "EV-81bbaaec2965864a",
       "event_id": "EV-81bbaaec2965864a",
       "event_type": "funding",
@@ -3122,81 +3648,6 @@
       }
     },
     {
-      "id": "EV-c0b49766ef954766",
-      "event_id": "EV-c0b49766ef954766",
-      "event_type": "funding",
-      "publication_status": "verified",
-      "title": "上海斐睿科思完成数百万元首轮战略投资，聚焦生命科学具身智能数据基础设施",
-      "category": "funding",
-      "categoryLabel": "融资",
-      "date": "2026-09-19",
-      "event_time": "2026-09-18T02:53:00.000Z",
-      "sourceUrl": "https://news.pedaily.cn/202609/569241.shtml",
-      "sourceName": "投资界",
-      "subject": "上海斐睿科思",
-      "sourceExcerpt": "投资界（ID：pedaily2012）9月18日消息，上海斐睿科思已 完成数百万元级人民币首轮战略投资 。",
-      "entity_refs": [
-        {
-          "entity_id": "EN-15a5d0c82cc9e872",
-          "canonical_name": "上海斐睿科思",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-df1f51d2c27ffaab",
-        "CL-d3397ffe1880bb25"
-      ],
-      "source_refs": [
-        "SA-66682d47075975f4"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [
-        {
-          "dimension_id": "use_case",
-          "dimension_name": "应用场景",
-          "value_id": "physical_automation",
-          "value_name": "物理自动化",
-          "entity_ids": [
-            "EN-15a5d0c82cc9e872"
-          ],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
-        }
-      ],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "funding_round",
-            "claim_ref": "CL-df1f51d2c27ffaab",
-            "source_refs": [
-              "SA-66682d47075975f4"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "funding_round"
-          ]
-        }
-      }
-    },
-    {
       "id": "EV-c3e9553260552659",
       "event_id": "EV-c3e9553260552659",
       "event_type": "funding",
@@ -3251,146 +3702,6 @@
             "claim_ref": "CL-f19de85db51bcdc7",
             "source_refs": [
               "SA-e9f2684cc10e1c55"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "funding_round"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-c997b93aa153720b",
-      "event_id": "EV-c997b93aa153720b",
-      "event_type": "funding",
-      "publication_status": "verified",
-      "title": "悦点科技完成数千万元Pre-A轮融资，推动AI FDE Model持续进化",
-      "category": "funding",
-      "categoryLabel": "融资",
-      "date": "2026-09-19",
-      "event_time": "2026-09-16T09:00:00.000Z",
-      "sourceUrl": "https://news.pedaily.cn/202609/569132.shtml",
-      "sourceName": "投资界",
-      "subject": "悦点科技",
-      "sourceExcerpt": "投资界（ID：pedaily2012）9月16日消息，悦点科技宣布 完成数千万元人民币Pre-A轮融资。",
-      "entity_refs": [
-        {
-          "entity_id": "EN-e40403aad241b9fc",
-          "canonical_name": "悦点科技",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-74abd12fe1902ab2"
-      ],
-      "source_refs": [
-        "SA-2b205854cbab911c"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [
-        {
-          "dimension_id": "ai_market_category",
-          "dimension_name": "AI 市场类别",
-          "value_id": "enterprise_applications",
-          "value_name": "企业级应用",
-          "entity_ids": [
-            "EN-e40403aad241b9fc"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-aeb688b64301694d"
-        },
-        {
-          "dimension_id": "ai_market_subcategory",
-          "dimension_name": "AI 市场子类",
-          "value_id": "productivity_enterprise_workflows",
-          "value_name": "生产力与企业工作流",
-          "entity_ids": [
-            "EN-e40403aad241b9fc"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-ee7ab88604450c89"
-        },
-        {
-          "dimension_id": "industry",
-          "dimension_name": "行业",
-          "value_id": "manufacturing",
-          "value_name": "制造业",
-          "entity_ids": [
-            "EN-e40403aad241b9fc"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-5a3d72459faec9c4"
-        },
-        {
-          "dimension_id": "product_form",
-          "dimension_name": "产品形态",
-          "value_id": "enterprise_software_platform",
-          "value_name": "企业软件平台",
-          "entity_ids": [
-            "EN-e40403aad241b9fc"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-5f863e80fa1ec54e"
-        },
-        {
-          "dimension_id": "target_user",
-          "dimension_name": "目标用户",
-          "value_id": "business_user",
-          "value_name": "企业用户",
-          "entity_ids": [
-            "EN-e40403aad241b9fc"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-c616a7d791c7b987"
-        },
-        {
-          "dimension_id": "use_case",
-          "dimension_name": "应用场景",
-          "value_id": "data_analysis",
-          "value_name": "数据分析",
-          "entity_ids": [
-            "EN-e40403aad241b9fc"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-091939f6b6707920"
-        },
-        {
-          "dimension_id": "use_case",
-          "dimension_name": "应用场景",
-          "value_id": "productivity_enterprise_workflows",
-          "value_name": "生产力与企业工作流",
-          "entity_ids": [
-            "EN-e40403aad241b9fc"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-83eb286ddd73a3c0"
-        }
-      ],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "funding_round",
-            "claim_ref": "CL-74abd12fe1902ab2",
-            "source_refs": [
-              "SA-2b205854cbab911c"
             ],
             "provenance": "event_type_rule"
           }
@@ -6383,174 +6694,6 @@
             "claim_ref": "CL-987c8198f43fc46d",
             "source_refs": [
               "SA-7a73b3b2a2a2f4cb"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "funding_round"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-b0637e99e328479b",
-      "event_id": "EV-b0637e99e328479b",
-      "event_type": "funding",
-      "publication_status": "verified",
-      "title": "设序科技一连融资6轮，要做「工业界Anthropic」",
-      "category": "funding",
-      "categoryLabel": "融资",
-      "date": "2026-09-18",
-      "event_time": "2026-09-17T03:23:00.000Z",
-      "sourceUrl": "https://news.pedaily.cn/202609/569177.shtml",
-      "sourceName": "投资界",
-      "subject": "设序科技一连",
-      "sourceExcerpt": "名字可能听起来陌生，但已经完成了六轮融资，累计金额超3亿元，上半年刚完成B轮超亿元。",
-      "entity_refs": [
-        {
-          "entity_id": "EN-f79e8a870aaf5d5c",
-          "canonical_name": "设序科技一连",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-c70eca6b0f88f44d",
-          "canonical_name": "Anthropic",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-5bb28e102faba731"
-      ],
-      "source_refs": [
-        "SA-a54f43be8317c9e0"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [
-        {
-          "dimension_id": "ai_market_category",
-          "dimension_name": "AI 市场类别",
-          "value_id": "industry_applications",
-          "value_name": "行业应用",
-          "entity_ids": [
-            "EN-cfec5bef40cbf3ae"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-aa48c1cac2dd62a6"
-        },
-        {
-          "dimension_id": "ai_market_subcategory",
-          "dimension_name": "AI 市场子类",
-          "value_id": "industrials",
-          "value_name": "工业",
-          "entity_ids": [
-            "EN-cfec5bef40cbf3ae"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-6a86ec292dbd8229"
-        },
-        {
-          "dimension_id": "industry",
-          "dimension_name": "行业",
-          "value_id": "automotive_transportation",
-          "value_name": "汽车与交通",
-          "entity_ids": [
-            "EN-cfec5bef40cbf3ae"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-370fe1a603d198a4"
-        },
-        {
-          "dimension_id": "industry",
-          "dimension_name": "行业",
-          "value_id": "manufacturing",
-          "value_name": "制造业",
-          "entity_ids": [
-            "EN-cfec5bef40cbf3ae"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-3321f14eb5df93f2"
-        },
-        {
-          "dimension_id": "product_form",
-          "dimension_name": "产品形态",
-          "value_id": "end_user_application",
-          "value_name": "终端 AI 应用",
-          "entity_ids": [
-            "EN-cfec5bef40cbf3ae"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-f79d00001d990d3d"
-        },
-        {
-          "dimension_id": "target_user",
-          "dimension_name": "目标用户",
-          "value_id": "business_user",
-          "value_name": "企业用户",
-          "entity_ids": [
-            "EN-cfec5bef40cbf3ae"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-71a9248042ba9dc0"
-        },
-        {
-          "dimension_id": "target_user",
-          "dimension_name": "目标用户",
-          "value_id": "developer",
-          "value_name": "开发者",
-          "entity_ids": [
-            "EN-cfec5bef40cbf3ae"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-3f20d397d193e5b1"
-        },
-        {
-          "dimension_id": "use_case",
-          "dimension_name": "应用场景",
-          "value_id": "design_engineering",
-          "value_name": "设计与工程",
-          "entity_ids": [
-            "EN-cfec5bef40cbf3ae"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-ae210b52e6777992"
-        },
-        {
-          "dimension_id": "use_case",
-          "dimension_name": "应用场景",
-          "value_id": "productivity_enterprise_workflows",
-          "value_name": "生产力与企业工作流",
-          "entity_ids": [
-            "EN-cfec5bef40cbf3ae"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-dcf5fe9bfb2819a4"
-        }
-      ],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "funding_round",
-            "claim_ref": "CL-5bb28e102faba731",
-            "source_refs": [
-              "SA-a54f43be8317c9e0"
             ],
             "provenance": "event_type_rule"
           }
@@ -104158,2488 +104301,6 @@
           "pain_or_constraint": [],
           "product_form": [],
           "delivery_model": [],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-2a787eb1a544462d",
-      "event_id": "EV-2a787eb1a544462d",
-      "event_type": "procurement_contract",
-      "publication_status": "verified",
-      "title": "美国陆军授予Raft 9900万美元企业合同，加速数据和AI能力交付",
-      "category": "case",
-      "categoryLabel": "案例",
-      "date": "2026-08-21",
-      "event_time": "2026-08-19T00:00:00.000Z",
-      "sourceUrl": "https://www.prnewswire.com/news-releases/us-army-awards-raft-99m-enterprise-contract-to-accelerate-delivery-of-data-and-ai-capabilities-302855011.html",
-      "sourceName": "keyword search / Exa",
-      "subject": "U.S. Army Contracting Command",
-      "sourceExcerpt": "today announced it has been awarded a five-year, $99 million firm-fixed-price Indefinite Delivery, Indefinite Quantity (IDIQ) contract by the U.S. Army Contracting Command.",
-      "entity_refs": [
-        {
-          "entity_id": "EN-12c0b2941322a443",
-          "canonical_name": "U.S. Army Contracting Command",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-b04971041677acd6"
-      ],
-      "source_refs": [
-        "SA-564eca141d7c995d"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "procurement_signal",
-            "claim_ref": "CL-b04971041677acd6",
-            "source_refs": [
-              "SA-564eca141d7c995d"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "procurement_signal"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-87c5f6dcc769999c",
-      "event_id": "EV-87c5f6dcc769999c",
-      "event_type": "deployment",
-      "publication_status": "verified",
-      "title": "云电脑 Windows 365 上线 5 周年，微软规划深度整合 AI 智能体体验",
-      "category": "case",
-      "categoryLabel": "案例",
-      "date": "2026-08-21",
-      "event_time": "2026-08-20T23:16:09.000Z",
-      "sourceUrl": "https://www.ithome.com/0/992/419.htm",
-      "sourceName": "IT之家（RSS）",
-      "subject": "Microsoft",
-      "sourceExcerpt": "IT之家 8 月 21 日消息，微软今天（8 月 21 日）发布博文，庆祝其云电脑服务 Windows 365（2021 年上线）推出 5 周年，并规划整合 AI 智能体，帮助用户在受管云电脑中操作应用、完成任务。",
-      "entity_refs": [
-        {
-          "entity_id": "EN-9fbf261b62c1d7c0",
-          "canonical_name": "Microsoft",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        }
-      ],
-      "claim_refs": [
-        "CL-f36fae3e5068b750",
-        "CL-5d572da5b7e24ba5",
-        "CL-63c9052c516bc05a",
-        "CL-7ca8e153756cc48b"
-      ],
-      "source_refs": [
-        "SA-1776c1033d427aad"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [
-        {
-          "dimension_id": "technology",
-          "dimension_name": "技术",
-          "value_id": "agentic_execution",
-          "value_name": "智能体",
-          "entity_ids": [
-            "EN-9fbf261b62c1d7c0"
-          ],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
-        }
-      ],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [
-          {
-            "value_id": "internal_tool_building",
-            "claim_ref": "CL-63c9052c516bc05a",
-            "source_refs": [
-              "SA-1776c1033d427aad"
-            ],
-            "provenance": "exact_claim_rule"
-          },
-          {
-            "value_id": "permission_audit",
-            "claim_ref": "CL-63c9052c516bc05a",
-            "source_refs": [
-              "SA-1776c1033d427aad"
-            ],
-            "provenance": "exact_claim_rule"
-          },
-          {
-            "value_id": "cost_monitoring",
-            "claim_ref": "CL-7ca8e153756cc48b",
-            "source_refs": [
-              "SA-1776c1033d427aad"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "pain_or_constraint": [
-          {
-            "value_id": "security_compliance",
-            "claim_ref": "CL-63c9052c516bc05a",
-            "source_refs": [
-              "SA-1776c1033d427aad"
-            ],
-            "provenance": "exact_claim_rule"
-          },
-          {
-            "value_id": "api_cost_spike",
-            "claim_ref": "CL-7ca8e153756cc48b",
-            "source_refs": [
-              "SA-1776c1033d427aad"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "customer_deployment",
-            "claim_ref": "CL-f36fae3e5068b750",
-            "source_refs": [
-              "SA-1776c1033d427aad"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [
-            "internal_tool_building",
-            "permission_audit",
-            "cost_monitoring"
-          ],
-          "pain_or_constraint": [
-            "security_compliance",
-            "api_cost_spike"
-          ],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "customer_deployment"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-b8206195828dc573",
-      "event_id": "EV-b8206195828dc573",
-      "event_type": "partnership",
-      "publication_status": "verified",
-      "title": "通过Gemini和Pixel更贴近比赛",
-      "category": "case",
-      "categoryLabel": "案例",
-      "date": "2026-08-21",
-      "event_time": "2026-08-17T00:00:00.000Z",
-      "sourceUrl": "https://blog.google/products-and-platforms/products/gemini/google-gemini-pixel-football-club-partnerships/",
-      "sourceName": "Google AI Blog",
-      "subject": "Gemini and Pixel",
-      "sourceExcerpt": "Gemini and Pixel have announced new long-term partnerships with Arsenal FC, FC Barcelona, FC Bayern München, Liverpool FC, and Paris Saint-Germain to bring fans closer to the game through AI personal intelligence and smartphone technology.",
-      "entity_refs": [
-        {
-          "entity_id": "EN-236a21ca81b0f5ca",
-          "canonical_name": "Gemini and Pixel",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-5d72436256ada538",
-          "canonical_name": "Gemini",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-3f8d7379e2f0f7d0",
-          "canonical_name": "Pixel",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-89bd41cda7be6b68"
-      ],
-      "source_refs": [
-        "SA-0d965234a42f262e"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "partnership_integration",
-            "claim_ref": "CL-89bd41cda7be6b68",
-            "source_refs": [
-              "SA-0d965234a42f262e"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "partnership_integration"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-be76a1e5ed2b6cf5",
-      "event_id": "EV-be76a1e5ed2b6cf5",
-      "event_type": "procurement_contract",
-      "publication_status": "verified",
-      "title": "Meta 成微软最大 AI 客户之一：年采购额达数亿美元，每周消耗数万亿词元",
-      "category": "case",
-      "categoryLabel": "案例",
-      "date": "2026-08-21",
-      "event_time": "2026-08-20T14:40:57.000Z",
-      "sourceUrl": "https://www.ithome.com/0/992/397.htm",
-      "sourceName": "IT之家（RSS）",
-      "subject": "Meta",
-      "sourceExcerpt": "Meta 成微软最大 AI 客户之一：年采购额达数亿美元，每周消耗数万亿词元 - IT之家",
-      "entity_refs": [
-        {
-          "entity_id": "EN-ea3bd73e2b506e00",
-          "canonical_name": "Meta",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        },
-        {
-          "entity_id": "EN-9fbf261b62c1d7c0",
-          "canonical_name": "Microsoft",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        }
-      ],
-      "claim_refs": [
-        "CL-c329da85bc04f51f",
-        "CL-5e0f0d7002317c16",
-        "CL-3d3f622c5770f3d7",
-        "CL-a0e9feccd38e307d"
-      ],
-      "source_refs": [
-        "SA-c43073908b641979"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [
-        {
-          "dimension_id": "deployment_model",
-          "dimension_name": "部署形态",
-          "value_id": "cloud",
-          "value_name": "云端",
-          "entity_ids": [
-            "EN-ea3bd73e2b506e00"
-          ],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
-        },
-        {
-          "dimension_id": "use_case",
-          "dimension_name": "应用场景",
-          "value_id": "software_development",
-          "value_name": "软件开发",
-          "entity_ids": [
-            "EN-ea3bd73e2b506e00"
-          ],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
-        }
-      ],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [
-          {
-            "value_id": "internal_tool_building",
-            "claim_ref": "CL-a0e9feccd38e307d",
-            "source_refs": [
-              "SA-c43073908b641979"
-            ],
-            "provenance": "v4_facet_projection"
-          }
-        ],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "procurement_signal",
-            "claim_ref": "CL-c329da85bc04f51f",
-            "source_refs": [
-              "SA-c43073908b641979"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [
-            "internal_tool_building"
-          ],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "procurement_signal"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-cc9d9706f9b6c597",
-      "event_id": "EV-cc9d9706f9b6c597",
-      "event_type": "certification_compliance",
-      "publication_status": "verified",
-      "title": "研华与相机生态系统合作伙伴完成合作",
-      "category": "case",
-      "categoryLabel": "案例",
-      "date": "2026-08-21",
-      "event_time": "2026-08-17T16:00:00.000Z",
-      "sourceUrl": "https://www.advantech.com/en-au/resources/news/advantech-and-camera-ecosystem-partners-complete-validation-on-nvidia-jetpack-72-for-advanced-vision-ai-deployment",
-      "sourceName": "keyword search / Exa",
-      "subject": "Advantech",
-      "sourceExcerpt": "Advantech (TWSE: 2395), a global leader in industrial IoT, has announced the successful completion of validation with its camera ecosystem partners on NVIDIA JetPack 7.2 across its MIC-AI and MIB series platforms.",
-      "entity_refs": [
-        {
-          "entity_id": "EN-2f04672311c5a914",
-          "canonical_name": "Advantech",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-8d4321d936320802",
-          "canonical_name": "NVIDIA",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        }
-      ],
-      "claim_refs": [
-        "CL-4fb097999a39d2a1"
-      ],
-      "source_refs": [
-        "SA-7b3fc7511a93f089"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [
-          {
-            "value_id": "security_compliance",
-            "claim_ref": "CL-4fb097999a39d2a1",
-            "source_refs": [
-              "SA-7b3fc7511a93f089"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "governance_requirement",
-            "claim_ref": "CL-4fb097999a39d2a1",
-            "source_refs": [
-              "SA-7b3fc7511a93f089"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [
-            "security_compliance"
-          ],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "governance_requirement"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-181cd28d97c4e61d",
-      "event_id": "EV-181cd28d97c4e61d",
-      "event_type": "funding",
-      "publication_status": "verified",
-      "title": "Groq完成3.5亿美元A轮融资，打造全球领先的AI推理云",
-      "category": "funding",
-      "categoryLabel": "融资",
-      "date": "2026-08-21",
-      "event_time": "2026-08-17T00:00:00.000Z",
-      "sourceUrl": "https://groq.com/newsroom/groq-closes-usd350-million-series-a-building-the-world-s-leading-ai-inference-cloud",
-      "sourceName": "keyword search / Exa",
-      "subject": "Groq",
-      "sourceExcerpt": "Groq Closes $350 million Series A, Building the World's Leading AI Inference Cloud",
-      "entity_refs": [
-        {
-          "entity_id": "EN-0b79cf2de0ee6b8e",
-          "canonical_name": "Groq",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-1a2290470e0aa754",
-          "canonical_name": "San Francisco",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-8d4321d936320802",
-          "canonical_name": "NVIDIA",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        }
-      ],
-      "claim_refs": [
-        "CL-e5b3e94bce04a84d",
-        "CL-220d60ba1cb8c1c3",
-        "CL-19c66fc022f4e3ad"
-      ],
-      "source_refs": [
-        "SA-6adbb72abee6f2b7"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [
-        {
-          "dimension_id": "ai_market_application",
-          "dimension_name": "AI 市场细分",
-          "value_id": "computing_infrastructure",
-          "value_name": "计算基础设施",
-          "entity_ids": [
-            "EN-0b79cf2de0ee6b8e"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-b0f983ccda86eec7"
-        },
-        {
-          "dimension_id": "ai_market_category",
-          "dimension_name": "AI 市场类别",
-          "value_id": "infrastructure_compute",
-          "value_name": "基础设施与算力",
-          "entity_ids": [
-            "EN-0b79cf2de0ee6b8e"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-744899ec503b5a08"
-        },
-        {
-          "dimension_id": "ai_market_subcategory",
-          "dimension_name": "AI 市场子类",
-          "value_id": "hardware_computing",
-          "value_name": "硬件与算力",
-          "entity_ids": [
-            "EN-0b79cf2de0ee6b8e"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-19c00b42d90ea75b"
-        },
-        {
-          "dimension_id": "product_form",
-          "dimension_name": "产品形态",
-          "value_id": "compute_cloud_service",
-          "value_name": "算力云服务",
-          "entity_ids": [
-            "EN-0b79cf2de0ee6b8e"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-5be5c6d0846f5ae5"
-        },
-        {
-          "dimension_id": "target_user",
-          "dimension_name": "目标用户",
-          "value_id": "business_user",
-          "value_name": "企业用户",
-          "entity_ids": [
-            "EN-0b79cf2de0ee6b8e"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-081b8368f977bbec"
-        },
-        {
-          "dimension_id": "target_user",
-          "dimension_name": "目标用户",
-          "value_id": "developer",
-          "value_name": "开发者",
-          "entity_ids": [
-            "EN-0b79cf2de0ee6b8e"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "assertion_ref": "REC-4f0e7c73b03db9ed"
-        }
-      ],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "funding_round",
-            "claim_ref": "CL-e5b3e94bce04a84d",
-            "source_refs": [
-              "SA-6adbb72abee6f2b7"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "funding_round"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-2e45b802ea23ea02",
-      "event_id": "EV-2e45b802ea23ea02",
-      "event_type": "research_result",
-      "publication_status": "verified",
-      "title": "研究：ChatGPT发布以来，三分之一的网页显示AI创作痕迹",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-08-21",
-      "event_time": "2026-08-20T00:00:00.000Z",
-      "sourceUrl": "https://techcrunch.com/2026/08/20/a-third-of-webpages-published-since-chatgpts-launch-show-signs-of-ai-authorship-study-finds/",
-      "sourceName": "TechCrunch AI",
-      "subject": "ChatGPT",
-      "sourceExcerpt": "A third of web pages published since ChatGPT’s launch show signs of AI authorship, study finds",
-      "entity_refs": [
-        {
-          "entity_id": "EN-d1ad14d4ad57d207",
-          "canonical_name": "ChatGPT",
-          "entity_type": "product_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-65d8de1f40925895",
-        "CL-dd30ce1128ca366d",
-        "CL-0635c5339af0cf4b",
-        "CL-75b5cba4c4e57124"
-      ],
-      "source_refs": [
-        "SA-518851a8bc7dfe39"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [
-          {
-            "value_id": "knowledge_base_qa",
-            "claim_ref": "CL-65d8de1f40925895",
-            "source_refs": [
-              "SA-518851a8bc7dfe39"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "research_benchmark",
-            "claim_ref": "CL-65d8de1f40925895",
-            "source_refs": [
-              "SA-518851a8bc7dfe39"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [
-            "knowledge_base_qa"
-          ],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "research_benchmark"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-3873f7ea8ac5a93f",
-      "event_id": "EV-3873f7ea8ac5a93f",
-      "event_type": "product_release",
-      "publication_status": "verified",
-      "title": "Binance 推出 Agent OS，让 AI 智能体代用户交易",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-08-21",
-      "event_time": "2026-08-20T00:00:00.000Z",
-      "sourceUrl": "https://techcrunch.com/2026/08/20/binance-now-lets-ai-agents-trade-but-keeping-them-in-check-is-largely-up-to-users",
-      "sourceName": "TechCrunch：AI（RSS）",
-      "subject": "Binance",
-      "sourceExcerpt": "Binance , the world’s largest crypto exchange with more than 300 million registered users, on Thursday launched a platform that lets AI agents analyze markets and execute trades on users’ behalf, bringing autonomous AI directly into the business of managing real money.",
-      "entity_refs": [
-        {
-          "entity_id": "EN-59bba357145ca539",
-          "canonical_name": "Binance",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-7d3194f79e645c42",
-          "canonical_name": "OpenAI",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        },
-        {
-          "entity_id": "EN-c70eca6b0f88f44d",
-          "canonical_name": "Anthropic",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-dd750a98f453fbe8",
-          "canonical_name": "Agent OS",
-          "entity_type": "product_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-7533cdf523011574",
-        "CL-3ba3210969af9c63",
-        "CL-e3f227439c70aa2b",
-        "CL-cea1ec344003e201"
-      ],
-      "source_refs": [
-        "SA-3ce71481385ae23d"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [
-        {
-          "dimension_id": "technology",
-          "dimension_name": "技术",
-          "value_id": "agentic_execution",
-          "value_name": "智能体",
-          "entity_ids": [
-            "EN-59bba357145ca539"
-          ],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
-        },
-        {
-          "dimension_id": "technology",
-          "dimension_name": "技术",
-          "value_id": "model_context_protocol",
-          "value_name": "MCP",
-          "entity_ids": [
-            "EN-59bba357145ca539"
-          ],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
-        }
-      ],
-      "application_assertions": {
-        "buyer_or_user": [
-          {
-            "value_id": "engineering_team",
-            "claim_ref": "CL-3ba3210969af9c63",
-            "source_refs": [
-              "SA-3ce71481385ae23d"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "team_or_function": [
-          {
-            "value_id": "engineering",
-            "claim_ref": "CL-3ba3210969af9c63",
-            "source_refs": [
-              "SA-3ce71481385ae23d"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "specific_task": [
-          {
-            "value_id": "internal_tool_building",
-            "claim_ref": "CL-3ba3210969af9c63",
-            "source_refs": [
-              "SA-3ce71481385ae23d"
-            ],
-            "provenance": "exact_claim_rule"
-          },
-          {
-            "value_id": "permission_audit",
-            "claim_ref": "CL-e3f227439c70aa2b",
-            "source_refs": [
-              "SA-3ce71481385ae23d"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "pain_or_constraint": [
-          {
-            "value_id": "security_compliance",
-            "claim_ref": "CL-e3f227439c70aa2b",
-            "source_refs": [
-              "SA-3ce71481385ae23d"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "product_form": [
-          {
-            "value_id": "api",
-            "claim_ref": "CL-3ba3210969af9c63",
-            "source_refs": [
-              "SA-3ce71481385ae23d"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "delivery_model": [
-          {
-            "value_id": "api_usage_based",
-            "claim_ref": "CL-3ba3210969af9c63",
-            "source_refs": [
-              "SA-3ce71481385ae23d"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-7533cdf523011574",
-            "source_refs": [
-              "SA-3ce71481385ae23d"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [
-            "engineering_team"
-          ],
-          "team_or_function": [
-            "engineering"
-          ],
-          "specific_task": [
-            "internal_tool_building",
-            "permission_audit"
-          ],
-          "pain_or_constraint": [
-            "security_compliance"
-          ],
-          "product_form": [
-            "api"
-          ],
-          "delivery_model": [
-            "api_usage_based"
-          ],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-3e7db5b8d976bf0e",
-      "event_id": "EV-3e7db5b8d976bf0e",
-      "event_type": "product_release",
-      "publication_status": "verified",
-      "title": "OpenAI 推出 Private Safety Processing 安全系统，可在不存储客户数据的情况下捕捉滥用行为",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-08-21",
-      "event_time": "2026-08-20T08:01:18.000Z",
-      "sourceUrl": "https://the-decoder.com/openai-builds-safety-system-that-catches-misuse-without-storing-customer-data",
-      "sourceName": "The Decoder：AI News（RSS）",
-      "subject": "OpenAI",
-      "sourceExcerpt": "OpenAI builds safety system that catches misuse without storing customer data",
-      "entity_refs": [
-        {
-          "entity_id": "EN-7d3194f79e645c42",
-          "canonical_name": "OpenAI",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        },
-        {
-          "entity_id": "EN-cb3168ac65600e46",
-          "canonical_name": "Private Safety Processing",
-          "entity_type": "product_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-67f67e4b7aca01e8"
-      ],
-      "source_refs": [
-        "SA-151a4438625995ce"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-67f67e4b7aca01e8",
-            "source_refs": [
-              "SA-151a4438625995ce"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-435ad78c9ec50025",
-      "event_id": "EV-435ad78c9ec50025",
-      "event_type": "model_release",
-      "publication_status": "verified",
-      "title": "GEN-1.5：通用型AI智能体通过单次演示教会机器人新任务",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-08-21",
-      "event_time": "2026-08-20T12:35:52.000Z",
-      "sourceUrl": "https://the-decoder.com/gen-1-5-generalist-ai-teaches-robots-new-tasks-from-a-single-demo/",
-      "sourceName": "The Decoder AI News",
-      "subject": "Generalist AI",
-      "sourceExcerpt": "Robotics startup Generalist AI has unveiled GEN-1.5, an AI model that teaches robots new tasks from a single demonstration.",
-      "entity_refs": [
-        {
-          "entity_id": "EN-9c3de5f42376b1af",
-          "canonical_name": "Generalist AI",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-4dc02e72724c7467",
-          "canonical_name": "GEN-1.5",
-          "entity_type": "product_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-4978552a0b7a728f"
-      ],
-      "source_refs": [
-        "SA-d89041c75e4f4249"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [
-        {
-          "dimension_id": "product_form",
-          "dimension_name": "产品形态",
-          "value_id": "model",
-          "value_name": "模型",
-          "entity_ids": [
-            "EN-9c3de5f42376b1af"
-          ],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
-        },
-        {
-          "dimension_id": "use_case",
-          "dimension_name": "应用场景",
-          "value_id": "physical_automation",
-          "value_name": "物理自动化",
-          "entity_ids": [
-            "EN-9c3de5f42376b1af"
-          ],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
-        }
-      ],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-4978552a0b7a728f",
-            "source_refs": [
-              "SA-d89041c75e4f4249"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-4af183c70855ecf2",
-      "event_id": "EV-4af183c70855ecf2",
-      "event_type": "product_release",
-      "publication_status": "verified",
-      "title": "谷歌为出版商提供对抗AI流量损失的新方式",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-08-21",
-      "event_time": "2026-08-20T00:00:00.000Z",
-      "sourceUrl": "https://techcrunch.com/2026/08/20/google-gives-publishers-a-new-way-to-fight-ai-driven-traffic-losses/",
-      "sourceName": "TechCrunch AI",
-      "subject": "Google",
-      "sourceExcerpt": "It’s now allowing readers to push a button on a publisher’s website to indicate it’s a “favorite source” they’d like to see highlighted more often across Google Search, Discover, and Google News.",
-      "entity_refs": [
-        {
-          "entity_id": "EN-bbdefa2950f49882",
-          "canonical_name": "Google",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        },
-        {
-          "entity_id": "EN-8a3d0f3c68b5dba9",
-          "canonical_name": "Preferred Sources",
-          "entity_type": "product_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-c1312721bcf15205",
-          "canonical_name": "AI-driven",
-          "entity_type": "product_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-7c84250b85b132f2",
-        "CL-78388ce1027a222c",
-        "CL-cf7aabeb7ef54f11"
-      ],
-      "source_refs": [
-        "SA-375b203a481af47a"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [
-          {
-            "value_id": "knowledge_base_qa",
-            "claim_ref": "CL-7c84250b85b132f2",
-            "source_refs": [
-              "SA-375b203a481af47a"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-7c84250b85b132f2",
-            "source_refs": [
-              "SA-375b203a481af47a"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [
-            "knowledge_base_qa"
-          ],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-4e815cac738fa514",
-      "event_id": "EV-4e815cac738fa514",
-      "event_type": "product_release",
-      "publication_status": "verified",
-      "title": "Claude Code v2.1.237 发布：修复 LLM 网关提示词缓存，新增\"简洁\"输出风格",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-08-21",
-      "event_time": "2026-08-20T00:54:41.000Z",
-      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.237",
-      "sourceName": "Claude Code：GitHub Releases（RSS）",
-      "subject": "Claude Code",
-      "sourceExcerpt": "Added a built-in \"Concise\" output style: Claude leads with results and skips preamble and narration, while doing the work just as thoroughly. Select it under Output style in /config.",
-      "entity_refs": [
-        {
-          "entity_id": "EN-cb4754c48f8023d0",
-          "canonical_name": "Claude Code",
-          "entity_type": "product_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-d49332b31c432ff3",
-        "CL-29c9f192430173e0"
-      ],
-      "source_refs": [
-        "SA-9bb924e9cf76d1e6"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-d49332b31c432ff3",
-            "source_refs": [
-              "SA-9bb924e9cf76d1e6"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-597a6d51533fe5d6",
-      "event_id": "EV-597a6d51533fe5d6",
-      "event_type": "product_release",
-      "publication_status": "verified",
-      "title": "Mac 版 ChatGPT 可控制“信息”应用，古尔曼称恐触及苹果 Siri AI 的设备优势",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-08-21",
-      "event_time": "2026-08-20T23:46:37.000Z",
-      "sourceUrl": "https://www.ithome.com/0/992/426.htm",
-      "sourceName": "IT之家",
-      "subject": "Mac",
-      "sourceExcerpt": "IT之家 8 月 21 日消息，OpenAI 昨日（8 月 20 日）在 X 平台发布推文，宣布升级 macOS 版 ChatGPT 应用程序，添加控制苹果“信息”（Apple Messages）能力， 可以读取、撰写、发送短信，并支持搜索消息以及生成对话摘要。",
-      "entity_refs": [
-        {
-          "entity_id": "EN-348a629f5ceed032",
-          "canonical_name": "Mac",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-7d3194f79e645c42",
-          "canonical_name": "OpenAI",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        },
-        {
-          "entity_id": "EN-3a7bd3e2360a3d29",
-          "canonical_name": "Apple",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        },
-        {
-          "entity_id": "EN-d1ad14d4ad57d207",
-          "canonical_name": "ChatGPT",
-          "entity_type": "product_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-3c97d57319564526",
-        "CL-1038053e7e4ec1a9",
-        "CL-8415a8e99f60acc7",
-        "CL-3ee7d7e9b6a43fe1"
-      ],
-      "source_refs": [
-        "SA-e2b96af7ce645b73"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [
-          {
-            "value_id": "knowledge_base_qa",
-            "claim_ref": "CL-3c97d57319564526",
-            "source_refs": [
-              "SA-e2b96af7ce645b73"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-3c97d57319564526",
-            "source_refs": [
-              "SA-e2b96af7ce645b73"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [
-            "knowledge_base_qa"
-          ],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-6fdbcd14c6a633b6",
-      "event_id": "EV-6fdbcd14c6a633b6",
-      "event_type": "product_release",
-      "publication_status": "verified",
-      "title": "Meta AI 推出 Mac 应用，支持系统级听写与屏幕问答",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-08-21",
-      "event_time": "2026-08-20T00:00:00.000Z",
-      "sourceUrl": "https://techcrunch.com/2026/08/20/meta-ais-new-mac-app-wants-you-to-talk-to-your-apps",
-      "sourceName": "TechCrunch：AI（RSS）",
-      "subject": "Meta AI",
-      "sourceExcerpt": "The Mac app release is part of a Meta AI update for business owners. The company said that merchants can connect their Instagram and Facebook accounts, Meta ad campaigns, and Google Workspace (Gmail, Docs, Sheets, and Slides) accounts to Meta AI and get insights by querying the AI assistant.",
-      "entity_refs": [
-        {
-          "entity_id": "EN-ae31f30d39374a8b",
-          "canonical_name": "Meta AI",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-ea3bd73e2b506e00",
-          "canonical_name": "Meta",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        },
-        {
-          "entity_id": "EN-bbdefa2950f49882",
-          "canonical_name": "Google",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        },
-        {
-          "entity_id": "EN-00910b5c1cc27f5f",
-          "canonical_name": "Mac",
-          "entity_type": "product_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-502f13f3f059289d",
-        "CL-b1033f686b56cec5",
-        "CL-9fb9e23278aa8ab6",
-        "CL-f39df2ace27b2791"
-      ],
-      "source_refs": [
-        "SA-ca6a1f18e1157465"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [
-          {
-            "value_id": "data_analysis_query",
-            "claim_ref": "CL-502f13f3f059289d",
-            "source_refs": [
-              "SA-ca6a1f18e1157465"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-502f13f3f059289d",
-            "source_refs": [
-              "SA-ca6a1f18e1157465"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [
-            "data_analysis_query"
-          ],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-78651dfea74b4323",
-      "event_id": "EV-78651dfea74b4323",
-      "event_type": "model_release",
-      "publication_status": "verified",
-      "title": "DiffusionGemma 技术报告：Google DeepMind 开源离散扩散模型，单卡 H100 每秒生成约 1500 token",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-08-21",
-      "event_time": "2026-08-20T18:14:18.037Z",
-      "sourceUrl": "https://arxiv.org/abs/2608.00146",
-      "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "subject": "Google DeepMind",
-      "sourceExcerpt": "Abstract: We introduce DiffusionGemma, an experimental open-weight language model that uses discrete diffusion to generate text at exceptionally high speed. Rather than decoding one token at a time, DiffusionGemma iteratively refines blocks of 256 tokens in parallel, avoiding the sequential decoding bottleneck of conventional autoregressive (AR) large language models. Instead of training from scratch, we obtain DiffusionGemma by fine-tuning the mixture-of-experts Gemma 4 model with 3.8B activated and 25.2B total parameters. Our compute-efficient two-stage training pipeline uses fewer than 10% of the starting AR model's total training token budget. The first stage uses supervised fine-tuning to teach bidirectional denoising, while the second stage combines reinforcement learning with sampler distillation to jointly improve generation quality and inference efficiency. DiffusionGemma establishes a new Pareto frontier for the trade-off between generation speed and model capability. Averaged across our full evaluation suite, it generates around 20 tokens per forward pass and achieves roughly 1,500 output tokens per second on a single NVIDIA H100 GPU, which is substantially faster than AR models even with state-of-the-art speculative decoding. DiffusionGemma also retains the starting model's support for thinking mode, multimodal inputs, and long contexts. Despite diffusion fine-tuning, it remains capable of AR generation with only minor performance degradation, suggesting a path toward hybrid diffusion-AR decoding.",
-      "entity_refs": [
-        {
-          "entity_id": "EN-2b6e51bec93e86c1",
-          "canonical_name": "Google DeepMind",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        },
-        {
-          "entity_id": "EN-8d4321d936320802",
-          "canonical_name": "NVIDIA",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        },
-        {
-          "entity_id": "EN-d56aa2f9908f566a",
-          "canonical_name": "DiffusionGemma",
-          "entity_type": "product_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-7242399f5a1ee7bd"
-      ],
-      "source_refs": [
-        "SA-e0a2d59fe681f30c"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [
-        {
-          "dimension_id": "technology",
-          "dimension_name": "技术",
-          "value_id": "multimodal",
-          "value_name": "多模态",
-          "entity_ids": [],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
-        },
-        {
-          "dimension_id": "technology",
-          "dimension_name": "技术",
-          "value_id": "mixture_of_experts",
-          "value_name": "混合专家模型",
-          "entity_ids": [],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
-        },
-        {
-          "dimension_id": "technology",
-          "dimension_name": "技术",
-          "value_id": "open_weights",
-          "value_name": "开放权重",
-          "entity_ids": [],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
-        },
-        {
-          "dimension_id": "technology",
-          "dimension_name": "技术",
-          "value_id": "fine_tuning",
-          "value_name": "模型微调",
-          "entity_ids": [],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
-        },
-        {
-          "dimension_id": "product_form",
-          "dimension_name": "产品形态",
-          "value_id": "model",
-          "value_name": "模型",
-          "entity_ids": [],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
-        },
-        {
-          "dimension_id": "product_form",
-          "dimension_name": "产品形态",
-          "value_id": "chip_accelerator",
-          "value_name": "芯片与加速器",
-          "entity_ids": [],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
-        }
-      ],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [
-          {
-            "value_id": "internal_tool_building",
-            "claim_ref": "CL-7242399f5a1ee7bd",
-            "source_refs": [
-              "SA-e0a2d59fe681f30c"
-            ],
-            "provenance": "exact_claim_rule"
-          },
-          {
-            "value_id": "cost_monitoring",
-            "claim_ref": "CL-7242399f5a1ee7bd",
-            "source_refs": [
-              "SA-e0a2d59fe681f30c"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "pain_or_constraint": [
-          {
-            "value_id": "api_cost_spike",
-            "claim_ref": "CL-7242399f5a1ee7bd",
-            "source_refs": [
-              "SA-e0a2d59fe681f30c"
-            ],
-            "provenance": "exact_claim_rule"
-          },
-          {
-            "value_id": "evaluation_gap",
-            "claim_ref": "CL-7242399f5a1ee7bd",
-            "source_refs": [
-              "SA-e0a2d59fe681f30c"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-7242399f5a1ee7bd",
-            "source_refs": [
-              "SA-e0a2d59fe681f30c"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [
-            "internal_tool_building",
-            "cost_monitoring"
-          ],
-          "pain_or_constraint": [
-            "api_cost_spike",
-            "evaluation_gap"
-          ],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-937b855e723d6ef0",
-      "event_id": "EV-937b855e723d6ef0",
-      "event_type": "product_release",
-      "publication_status": "verified",
-      "title": "Mojo🔥现已开源",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-08-21",
-      "event_time": "2026-08-18T21:39:20.000Z",
-      "sourceUrl": "https://simonwillison.net/2026/Aug/18/mojo-is-now-open-source/",
-      "sourceName": "Simon Willison's Blog",
-      "subject": "Mojo🔥 is now",
-      "sourceExcerpt": "Mojo🔥 is now open source",
-      "entity_refs": [
-        {
-          "entity_id": "EN-bb15c5437cc0ac44",
-          "canonical_name": "Mojo🔥 is now",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-7d3194f79e645c42",
-          "canonical_name": "OpenAI",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        }
-      ],
-      "claim_refs": [
-        "CL-29ff434799673dd7",
-        "CL-52e7ee2bdaf1113f",
-        "CL-1f3ec50029afd661",
-        "CL-bd6ba472f64b1f7c"
-      ],
-      "source_refs": [
-        "SA-923419a5a43582c4"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [
-          {
-            "value_id": "open_source_commercial",
-            "claim_ref": "CL-29ff434799673dd7",
-            "source_refs": [
-              "SA-923419a5a43582c4"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-29ff434799673dd7",
-            "source_refs": [
-              "SA-923419a5a43582c4"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [
-            "open_source_commercial"
-          ],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-9d53b12f5f077d3b",
-      "event_id": "EV-9d53b12f5f077d3b",
-      "event_type": "product_release",
-      "publication_status": "verified",
-      "title": "Meta AI 推出 Mac 应用",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-08-21",
-      "event_time": "2026-08-19T00:00:00.000Z",
-      "sourceUrl": "https://www.theverge.com/tech/982270/meta-ai-mac-app",
-      "sourceName": "The Verge AI",
-      "subject": "Meta",
-      "sourceExcerpt": "Meta is launching a new Mac app dedicated to its AI chatbot.",
-      "entity_refs": [
-        {
-          "entity_id": "EN-ea3bd73e2b506e00",
-          "canonical_name": "Meta",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        }
-      ],
-      "claim_refs": [
-        "CL-ab3f1212f9e713ba"
-      ],
-      "source_refs": [
-        "SA-e80e5f990e344f7e"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [
-        {
-          "dimension_id": "product_form",
-          "dimension_name": "产品形态",
-          "value_id": "end_user_application",
-          "value_name": "终端 AI 应用",
-          "entity_ids": [
-            "EN-ea3bd73e2b506e00"
-          ],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
-        }
-      ],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-ab3f1212f9e713ba",
-            "source_refs": [
-              "SA-e80e5f990e344f7e"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-b33e250220b91f9c",
-      "event_id": "EV-b33e250220b91f9c",
-      "event_type": "product_release",
-      "publication_status": "verified",
-      "title": "Ramp 推出自研 AI 模型路由服务 Router",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-08-21",
-      "event_time": "2026-08-20T00:00:00.000Z",
-      "sourceUrl": "https://techcrunch.com/2026/08/20/ramp-launches-its-own-ai-model-router-called-router",
-      "sourceName": "TechCrunch：AI（RSS）",
-      "subject": "Ramp",
-      "sourceExcerpt": "Ramp launches its own AI model router, called Router",
-      "entity_refs": [
-        {
-          "entity_id": "EN-f7d9f5a90479d632",
-          "canonical_name": "Ramp",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-7f871cbf905f6e0c",
-          "canonical_name": "OpenRouter",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-61668c5d1d180f3f",
-        "CL-160b853b886a7118",
-        "CL-210bcb09879bd09e",
-        "CL-b3bb2580b8a6a17c"
-      ],
-      "source_refs": [
-        "SA-62d9d0ebc454593d"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [
-        {
-          "dimension_id": "product_form",
-          "dimension_name": "产品形态",
-          "value_id": "model",
-          "value_name": "模型",
-          "entity_ids": [
-            "EN-f7d9f5a90479d632"
-          ],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
-        }
-      ],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [
-          {
-            "value_id": "cost_monitoring",
-            "claim_ref": "CL-210bcb09879bd09e",
-            "source_refs": [
-              "SA-62d9d0ebc454593d"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "pain_or_constraint": [
-          {
-            "value_id": "model_routing_complexity",
-            "claim_ref": "CL-61668c5d1d180f3f",
-            "source_refs": [
-              "SA-62d9d0ebc454593d"
-            ],
-            "provenance": "exact_claim_rule"
-          },
-          {
-            "value_id": "api_cost_spike",
-            "claim_ref": "CL-210bcb09879bd09e",
-            "source_refs": [
-              "SA-62d9d0ebc454593d"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "product_form": [
-          {
-            "value_id": "model_gateway",
-            "claim_ref": "CL-61668c5d1d180f3f",
-            "source_refs": [
-              "SA-62d9d0ebc454593d"
-            ],
-            "provenance": "exact_claim_rule"
-          },
-          {
-            "value_id": "api",
-            "claim_ref": "CL-160b853b886a7118",
-            "source_refs": [
-              "SA-62d9d0ebc454593d"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "delivery_model": [
-          {
-            "value_id": "api_usage_based",
-            "claim_ref": "CL-160b853b886a7118",
-            "source_refs": [
-              "SA-62d9d0ebc454593d"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-61668c5d1d180f3f",
-            "source_refs": [
-              "SA-62d9d0ebc454593d"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [
-            "cost_monitoring"
-          ],
-          "pain_or_constraint": [
-            "model_routing_complexity",
-            "api_cost_spike"
-          ],
-          "product_form": [
-            "model_gateway",
-            "api"
-          ],
-          "delivery_model": [
-            "api_usage_based"
-          ],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-b6a57599c12b2a1d",
-      "event_id": "EV-b6a57599c12b2a1d",
-      "event_type": "product_release",
-      "publication_status": "verified",
-      "title": "Ben 的会话 #2",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-08-21",
-      "event_time": "2026-08-14T00:00:00.000Z",
-      "sourceUrl": "https://www.bensbites.com/p/bens-session-2",
-      "sourceName": "Ben's Bites AI Newsletter",
-      "subject": "Grok Bot",
-      "sourceExcerpt": "You may have heard about OpenClaw, Hermes, Grok Bot (launched this week)",
-      "entity_refs": [
-        {
-          "entity_id": "EN-bf5b1a77289a1fca",
-          "canonical_name": "Grok Bot",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-ce63780adffe61b9"
-      ],
-      "source_refs": [
-        "SA-62d1197418be6348"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-ce63780adffe61b9",
-            "source_refs": [
-              "SA-62d1197418be6348"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-baf1a4c3db620d90",
-      "event_id": "EV-baf1a4c3db620d90",
-      "event_type": "product_release",
-      "publication_status": "verified",
-      "title": "Adobe Firefly新增AI音频工具及谷歌Gemini Omni Flash",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-08-21",
-      "event_time": "2026-08-20T19:29:34.000Z",
-      "sourceUrl": "https://the-decoder.com/adobe-firefly-adds-ai-audio-tools-and-googles-gemini-omni-flash/",
-      "sourceName": "The Decoder AI News",
-      "subject": "Adobe Firefly",
-      "sourceExcerpt": "Adobe Firefly adds AI audio tools and Google's Gemini Omni Flash",
-      "entity_refs": [
-        {
-          "entity_id": "EN-d75388af00e08fca",
-          "canonical_name": "Adobe Firefly",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-bbdefa2950f49882",
-          "canonical_name": "Google",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        },
-        {
-          "entity_id": "EN-7ed9c9e7c260ed06",
-          "canonical_name": "Gemini Omni Flash",
-          "entity_type": "product_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-6e18e42d9943624c",
-          "canonical_name": "AI audio",
-          "entity_type": "product_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-f5d7e9160489f5bb",
-        "CL-793f42f13c62e269",
-        "CL-4636198f8f6fd8fd",
-        "CL-768e9f9bdd819878"
-      ],
-      "source_refs": [
-        "SA-7b1deb1348e0fb5e"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-f5d7e9160489f5bb",
-            "source_refs": [
-              "SA-7b1deb1348e0fb5e"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-c3ac03a8a0cc3a0e",
-      "event_id": "EV-c3ac03a8a0cc3a0e",
-      "event_type": "product_release",
-      "publication_status": "verified",
-      "title": "Claude Code v2.1.238 发布：新增 readline 键位、插件市场 headersHelper 与多项 Remote Control 修复",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-08-21",
-      "event_time": "2026-08-20T20:33:51.000Z",
-      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.238",
-      "sourceName": "Claude Code：GitHub Releases（RSS）",
-      "subject": "Claude Code",
-      "sourceExcerpt": "Added a keybindingFlavor setting: set it to \"readline\" to make Ctrl+W in the prompt delete back to the previous whitespace, as in Bash; the default ( \"classic\" ) is unchanged",
-      "entity_refs": [
-        {
-          "entity_id": "EN-cb4754c48f8023d0",
-          "canonical_name": "Claude Code",
-          "entity_type": "product_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-572889793e98337c",
-          "canonical_name": "keybindingFlavor setting",
-          "entity_type": "product_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-e419166518845074",
-        "CL-ed5031d8058ba220",
-        "CL-c5280e5e5be398cc",
-        "CL-bec33cb1f4c17f42"
-      ],
-      "source_refs": [
-        "SA-f3d2049def0e012d"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [
-        {
-          "dimension_id": "deployment_model",
-          "dimension_name": "部署形态",
-          "value_id": "on_premise",
-          "value_name": "本地部署",
-          "entity_ids": [
-            "EN-cb4754c48f8023d0"
-          ],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
-        }
-      ],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [
-          {
-            "value_id": "knowledge_base_qa",
-            "claim_ref": "CL-bec33cb1f4c17f42",
-            "source_refs": [
-              "SA-f3d2049def0e012d"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "pain_or_constraint": [],
-        "product_form": [
-          {
-            "value_id": "api",
-            "claim_ref": "CL-bec33cb1f4c17f42",
-            "source_refs": [
-              "SA-f3d2049def0e012d"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "delivery_model": [
-          {
-            "value_id": "api_usage_based",
-            "claim_ref": "CL-bec33cb1f4c17f42",
-            "source_refs": [
-              "SA-f3d2049def0e012d"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-e419166518845074",
-            "source_refs": [
-              "SA-f3d2049def0e012d"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [
-            "knowledge_base_qa"
-          ],
-          "pain_or_constraint": [],
-          "product_form": [
-            "api"
-          ],
-          "delivery_model": [
-            "api_usage_based"
-          ],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-cd7ba52564d4091e",
-      "event_id": "EV-cd7ba52564d4091e",
-      "event_type": "model_release",
-      "publication_status": "verified",
-      "title": "Hugging Face 发布 LFM2.5 系列 DSpark 草稿模型，推理速度最高提升 3.18 倍",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-08-21",
-      "event_time": "2026-08-19T16:00:00.000Z",
-      "sourceUrl": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
-      "sourceName": "Hugging Face：Blog（RSS）",
-      "subject": "Hugging Face",
-      "sourceExcerpt": "Today, we release DSpark draft model checkpoints for three models from our LFM2.5 family: LFM2.5-1.2B-Instruct, LFM2.5-2.6B, and LFM2.5-8B-A1B. These add a speculative decoding path that trades a minimal memory increase for a large decoding speedup without changing output quality:",
-      "entity_refs": [
-        {
-          "entity_id": "EN-e3ce9cc5efa9354c",
-          "canonical_name": "Hugging Face",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-869b70f1f380d952",
-          "canonical_name": "LFM2.5",
-          "entity_type": "product_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-95dd5408be1680d0",
-          "canonical_name": "DSpark draft",
-          "entity_type": "product_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-54437538d75d3ddb",
-        "CL-c9185ae89b825b62",
-        "CL-31487c8c461c6fbb",
-        "CL-c853f4680116202b"
-      ],
-      "source_refs": [
-        "SA-e18f21661f8206b5"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [
-        {
-          "dimension_id": "technology",
-          "dimension_name": "技术",
-          "value_id": "on_device",
-          "value_name": "端侧",
-          "entity_ids": [
-            "EN-e3ce9cc5efa9354c"
-          ],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
-        },
-        {
-          "dimension_id": "technology",
-          "dimension_name": "技术",
-          "value_id": "agentic_execution",
-          "value_name": "智能体",
-          "entity_ids": [
-            "EN-e3ce9cc5efa9354c"
-          ],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
-        },
-        {
-          "dimension_id": "deployment_model",
-          "dimension_name": "部署形态",
-          "value_id": "edge_device",
-          "value_name": "边缘与端侧",
-          "entity_ids": [
-            "EN-e3ce9cc5efa9354c"
-          ],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
-        }
-      ],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [
-          {
-            "value_id": "internal_tool_building",
-            "claim_ref": "CL-54437538d75d3ddb",
-            "source_refs": [
-              "SA-e18f21661f8206b5"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "pain_or_constraint": [
-          {
-            "value_id": "latency_sensitive",
-            "claim_ref": "CL-31487c8c461c6fbb",
-            "source_refs": [
-              "SA-e18f21661f8206b5"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-54437538d75d3ddb",
-            "source_refs": [
-              "SA-e18f21661f8206b5"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [
-            "internal_tool_building"
-          ],
-          "pain_or_constraint": [
-            "latency_sensitive"
-          ],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-e3da5e799e746408",
-      "event_id": "EV-e3da5e799e746408",
-      "event_type": "product_release",
-      "publication_status": "verified",
-      "title": "ChatGPT 推出 Apple Messages 插件，可直接代发短信",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-08-21",
-      "event_time": "2026-08-20T00:00:00.000Z",
-      "sourceUrl": "https://techcrunch.com/2026/08/20/chatgpt-can-now-send-texts-for-you-with-new-apple-messages-plugin",
-      "sourceName": "TechCrunch：AI（RSS）",
-      "subject": "ChatGPT",
-      "sourceExcerpt": "If you’ve ever wanted to share all of your digital conversations with OpenAI, we have good news for you: The AI lab has just launched an Apple Messages plug-in for ChatGPT, allowing interested users to connect their Messages inbox with the chatbot.",
-      "entity_refs": [
-        {
-          "entity_id": "EN-60965168ce762e94",
-          "canonical_name": "ChatGPT",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-3a7bd3e2360a3d29",
-          "canonical_name": "Apple",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        },
-        {
-          "entity_id": "EN-7d3194f79e645c42",
-          "canonical_name": "OpenAI",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        },
-        {
-          "entity_id": "EN-2e27a4ab28dcad40",
-          "canonical_name": "Messages",
-          "entity_type": "product_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-d5e00f83f15acb4a",
-          "canonical_name": "Messages plug-in",
-          "entity_type": "product_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-a15196f326056940",
-        "CL-b998c89595031528",
-        "CL-f0e0d148d4005eda",
-        "CL-d1d9d6787f673160"
-      ],
-      "source_refs": [
-        "SA-c30f3ac9e4393bd2"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-a15196f326056940",
-            "source_refs": [
-              "SA-c30f3ac9e4393bd2"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-f9ebb480a6b58b21",
-      "event_id": "EV-f9ebb480a6b58b21",
-      "event_type": "product_release",
-      "publication_status": "verified",
-      "title": "揭秘 OpenAI 的\"终极野心\"：让智能体像人类一样熟练操作电脑",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-08-21",
-      "event_time": "2026-08-20T12:29:27.000Z",
-      "sourceUrl": "https://www.ithome.com/0/992/339.htm",
-      "sourceName": "IT之家（RSS）",
-      "subject": "OpenAI",
-      "sourceExcerpt": "经过多年开发，公司现在已经有信心开始向客户逐步开放电脑操作功能。",
-      "entity_refs": [
-        {
-          "entity_id": "EN-7d3194f79e645c42",
-          "canonical_name": "OpenAI",
-          "entity_type": "organization_candidate",
-          "verification_status": "verified"
-        }
-      ],
-      "claim_refs": [
-        "CL-e2695c3b1839a32d"
-      ],
-      "source_refs": [
-        "SA-d113b332bdd774d7"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [],
-        "delivery_model": [],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-e2695c3b1839a32d",
-            "source_refs": [
-              "SA-d113b332bdd774d7"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [],
-          "delivery_model": [],
-          "business_action": [
-            "product_launch"
-          ]
-        }
-      }
-    },
-    {
-      "id": "EV-fabb3080e5263d33",
-      "event_id": "EV-fabb3080e5263d33",
-      "event_type": "product_release",
-      "publication_status": "verified",
-      "title": "Claude Platform 正式上线 Computer Use、Skills API 与 Files API，新增浏览器操作工具",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "date": "2026-08-21",
-      "event_time": "2026-08-19T16:00:00.000Z",
-      "sourceUrl": "https://claude.com/blog/computer-use-skills-api-files-api",
-      "sourceName": "Claude：Blog（网页）",
-      "subject": "Skills API",
-      "sourceExcerpt": "Computer use, the Skills API, and the Files API are generally available on the Claude Platform today. Computer use also adds a new browser use tool for agents that work in web applications. Together they let you build agents that operate software, apply your team's expertise, and return finished files.",
-      "entity_refs": [
-        {
-          "entity_id": "EN-4c4ee09fd90816ac",
-          "canonical_name": "Skills API",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-03b48a9dc95cf779",
-          "canonical_name": "Files API",
-          "entity_type": "organization_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-729324072d368379",
-          "canonical_name": "Claude",
-          "entity_type": "product_candidate",
-          "verification_status": "candidate"
-        },
-        {
-          "entity_id": "EN-3aa38718f0399af9",
-          "canonical_name": "Computer Use",
-          "entity_type": "product_candidate",
-          "verification_status": "candidate"
-        }
-      ],
-      "claim_refs": [
-        "CL-b410d86377ac7080",
-        "CL-3e20f010e2f2a7a1",
-        "CL-a1693bdeb66b4f7a",
-        "CL-0c08dcbce4a5f201"
-      ],
-      "source_refs": [
-        "SA-68b08ac0133b6643"
-      ],
-      "taxonomy_version": "TAG-V4.1",
-      "classifications": [
-        {
-          "dimension_id": "technology",
-          "dimension_name": "技术",
-          "value_id": "computer_use",
-          "value_name": "计算机操作",
-          "entity_ids": [],
-          "provenance": "claim_assertion",
-          "assertion_ref": ""
-        }
-      ],
-      "application_assertions": {
-        "buyer_or_user": [],
-        "team_or_function": [],
-        "specific_task": [],
-        "pain_or_constraint": [],
-        "product_form": [
-          {
-            "value_id": "api",
-            "claim_ref": "CL-b410d86377ac7080",
-            "source_refs": [
-              "SA-68b08ac0133b6643"
-            ],
-            "provenance": "exact_claim_rule"
-          },
-          {
-            "value_id": "workflow_automation",
-            "claim_ref": "CL-0c08dcbce4a5f201",
-            "source_refs": [
-              "SA-68b08ac0133b6643"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "delivery_model": [
-          {
-            "value_id": "api_usage_based",
-            "claim_ref": "CL-b410d86377ac7080",
-            "source_refs": [
-              "SA-68b08ac0133b6643"
-            ],
-            "provenance": "exact_claim_rule"
-          }
-        ],
-        "business_action": [
-          {
-            "value_id": "product_launch",
-            "claim_ref": "CL-b410d86377ac7080",
-            "source_refs": [
-              "SA-68b08ac0133b6643"
-            ],
-            "provenance": "event_type_rule"
-          }
-        ]
-      },
-      "opportunitySignals": {
-        "labels": {
-          "buyer_or_user": [],
-          "team_or_function": [],
-          "specific_task": [],
-          "pain_or_constraint": [],
-          "product_form": [
-            "api",
-            "workflow_automation"
-          ],
-          "delivery_model": [
-            "api_usage_based"
-          ],
           "business_action": [
             "product_launch"
           ]

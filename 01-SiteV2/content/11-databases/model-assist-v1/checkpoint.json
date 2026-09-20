@@ -1,22 +1,64 @@
 {
   "schema_version": "model-assist-2026-07-18.2",
-  "generated_at": "2026-09-19T00:28:54.020Z",
+  "generated_at": "2026-09-20T00:41:54.840Z",
   "dates": [
-    "2026-09-19"
+    "2026-09-20"
   ],
-  "raw_documents_scanned": 259,
-  "scanned_jobs": 70,
+  "raw_documents_scanned": 74,
+  "scanned_jobs": 33,
   "reuse_existing": true,
   "reused_jobs": 0,
   "regated_existing": 0,
   "offset": 0,
-  "selected_jobs": 70,
-  "completed": 69,
+  "selected_jobs": 33,
+  "completed": 25,
   "failures": [
     {
-      "date": "2026-09-19",
+      "date": "2026-09-20",
       "task_type": "qa_repair",
-      "asset_id": "QA-c8e9f21625cf6b2b",
+      "asset_id": "QA-0f4245e289969617",
+      "error": "deepseek_json_quality_failed:qa_suggestion_incomplete"
+    },
+    {
+      "date": "2026-09-20",
+      "task_type": "qa_repair",
+      "asset_id": "QA-150fc9fb5a57bb5e",
+      "error": "deepseek_json_quality_failed:qa_suggestion_incomplete"
+    },
+    {
+      "date": "2026-09-20",
+      "task_type": "qa_repair",
+      "asset_id": "QA-2a0560aa6758487c",
+      "error": "deepseek_json_quality_failed:qa_suggestion_incomplete"
+    },
+    {
+      "date": "2026-09-20",
+      "task_type": "qa_repair",
+      "asset_id": "QA-63a83bb27dae4636",
+      "error": "deepseek_json_quality_failed:qa_suggestion_incomplete"
+    },
+    {
+      "date": "2026-09-20",
+      "task_type": "qa_repair",
+      "asset_id": "QA-95ab40768467f04a",
+      "error": "deepseek_json_quality_failed:qa_suggestion_incomplete"
+    },
+    {
+      "date": "2026-09-20",
+      "task_type": "qa_repair",
+      "asset_id": "QA-b6f6ce9434de93c7",
+      "error": "deepseek_json_quality_failed:qa_suggestion_incomplete"
+    },
+    {
+      "date": "2026-09-20",
+      "task_type": "qa_repair",
+      "asset_id": "QA-f064281a06eab642",
+      "error": "deepseek_json_quality_failed:qa_suggestion_incomplete"
+    },
+    {
+      "date": "2026-09-20",
+      "task_type": "qa_repair",
+      "asset_id": "QA-fc71725acfdcb8fe",
       "error": "deepseek_json_quality_failed:qa_suggestion_incomplete"
     }
   ]
