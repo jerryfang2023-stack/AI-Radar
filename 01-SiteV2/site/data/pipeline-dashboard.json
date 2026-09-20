@@ -1,10 +1,10 @@
 {
   "meta": {
     "version": "OPS-V3.8.0-engineering-integration",
-    "generatedAt": "2026-09-19T00:31:46.854Z",
+    "generatedAt": "2026-09-20T00:30:46.816Z",
     "dateRange": {
-      "start": "2026-09-13",
-      "end": "2026-09-19"
+      "start": "2026-09-14",
+      "end": "2026-09-20"
     },
     "source": "Data Center V4 manifest + collection-telemetry-v1",
     "telemetryVersion": "COLLECTION-TELEMETRY-V1.0"
@@ -16,15 +16,15 @@
       "status": "partial",
       "counts": {
         "discovered": 290,
-        "capture_succeeded": 259,
+        "capture_succeeded": 226,
         "capture_failed": 6,
         "recovered_source_failures": 9,
-        "raw_documents": 259
+        "raw_documents": 226
       },
       "evidence": [
-        "01-SiteV2/content/11-databases/data-center-v4/2026-09-19/manifest.json",
-        "agent-workflow/reports/2026-09-19-guanlan-daily-monitor-log.md",
-        "agent-workflow/reports/2026-09-19-guanlan-monitor-quality-gate.md"
+        "01-SiteV2/content/11-databases/data-center-v4/2026-09-20/manifest.json",
+        "agent-workflow/reports/2026-09-20-guanlan-daily-monitor-log.md",
+        "agent-workflow/reports/2026-09-20-guanlan-monitor-quality-gate.md"
       ]
     },
     {
@@ -32,20 +32,20 @@
       "label": "事实构建",
       "status": "passed",
       "counts": {
-        "accepted_claims": 113,
+        "accepted_claims": 104,
         "rejected_claims": 0,
-        "accepted": 113,
+        "accepted": 104,
         "rejected": 0,
-        "pending_claims": 5,
-        "canonical_events": 44,
-        "entities": 75,
-        "relationships": 118,
+        "pending_claims": 0,
+        "canonical_events": 38,
+        "entities": 66,
+        "relationships": 104,
         "conflicts": 0,
-        "qa_queue": 215
+        "qa_queue": 188
       },
       "evidence": [
-        "01-SiteV2/content/11-databases/data-center-v4/2026-09-19/manifest.json",
-        "agent-workflow/reports/2026-09-19-data-center-v4-integrity-gate.json"
+        "01-SiteV2/content/11-databases/data-center-v4/2026-09-20/manifest.json",
+        "agent-workflow/reports/2026-09-20-data-center-v4-integrity-gate.json"
       ]
     },
     {
@@ -59,7 +59,7 @@
         "fde_hardware_sync": "passed"
       },
       "evidence": [
-        "agent-workflow/reports/2026-09-19-persistent-asset-manifest.json"
+        "agent-workflow/reports/2026-09-20-persistent-asset-manifest.json"
       ]
     },
     {
@@ -72,44 +72,44 @@
         "authoritative": false
       },
       "evidence": [
-        "agent-workflow/reports/2026-09-19-persistent-asset-manifest.json"
+        "agent-workflow/reports/2026-09-20-persistent-asset-manifest.json"
       ]
     }
   ],
   "latest": {
-    "date": "2026-09-19",
-    "label": "2026.09.19",
-    "shortLabel": "09.19",
-    "discovered": 259,
-    "captured": 259,
-    "claims": 118,
-    "events": 44,
-    "entities": 75,
-    "relationships": 118,
+    "date": "2026-09-20",
+    "label": "2026.09.20",
+    "shortLabel": "09.20",
+    "discovered": 226,
+    "captured": 226,
+    "claims": 104,
+    "events": 38,
+    "entities": 66,
+    "relationships": 104,
     "conflicts": 0,
-    "qaQueue": 215,
-    "telemetryDate": "2026-09-19",
+    "qaQueue": 188,
+    "telemetryDate": "2026-09-20",
     "collection": {
       "discovered": 290,
-      "capture_succeeded": 259,
+      "capture_succeeded": 226,
       "capture_failed": 6,
       "recovered_source_failures": 9,
-      "raw_documents": 259
+      "raw_documents": 226
     },
     "factBuild": {
-      "accepted_claims": 113,
+      "accepted_claims": 104,
       "rejected_claims": 0,
-      "accepted": 113,
+      "accepted": 104,
       "rejected": 0,
-      "pending_claims": 5,
-      "canonical_events": 44,
-      "entities": 75,
-      "relationships": 118,
+      "pending_claims": 0,
+      "canonical_events": 38,
+      "entities": 66,
+      "relationships": 104,
       "conflicts": 0,
-      "qa_queue": 215,
+      "qa_queue": 188,
       "qa_by_status": {
-        "review_optional": 205,
-        "open": 10
+        "review_optional": 181,
+        "open": 7
       }
     },
     "applicationProjection": {
@@ -127,17 +127,30 @@
   },
   "days": [
     {
+      "date": "2026-09-20",
+      "label": "2026.09.20",
+      "shortLabel": "09.20",
+      "discovered": 226,
+      "captured": 226,
+      "claims": 104,
+      "events": 38,
+      "entities": 66,
+      "relationships": 104,
+      "conflicts": 0,
+      "qaQueue": 188
+    },
+    {
       "date": "2026-09-19",
       "label": "2026.09.19",
       "shortLabel": "09.19",
-      "discovered": 259,
-      "captured": 259,
-      "claims": 118,
-      "events": 44,
-      "entities": 75,
-      "relationships": 118,
+      "discovered": 332,
+      "captured": 332,
+      "claims": 139,
+      "events": 57,
+      "entities": 93,
+      "relationships": 139,
       "conflicts": 0,
-      "qaQueue": 215
+      "qaQueue": 275
     },
     {
       "date": "2026-09-18",
@@ -203,35 +216,22 @@
       "relationships": 84,
       "conflicts": 0,
       "qaQueue": 260
-    },
-    {
-      "date": "2026-09-13",
-      "label": "2026.09.13",
-      "shortLabel": "09.13",
-      "discovered": 297,
-      "captured": 297,
-      "claims": 73,
-      "events": 32,
-      "entities": 56,
-      "relationships": 73,
-      "conflicts": 1,
-      "qaQueue": 263
     }
   ],
   "totals": {
-    "discovered": 2110,
-    "captured": 2110,
-    "claims": 703,
-    "events": 312,
-    "entities": 523,
-    "relationships": 703,
-    "conflicts": 1,
-    "qaQueue": 1793
+    "discovered": 2112,
+    "captured": 2112,
+    "claims": 755,
+    "events": 331,
+    "entities": 551,
+    "relationships": 755,
+    "conflicts": 0,
+    "qaQueue": 1778
   },
   "v4Gate": {
     "status": "passed",
-    "manifest_date": "2026-09-19",
-    "gate_date": "2026-09-19",
+    "manifest_date": "2026-09-20",
+    "gate_date": "2026-09-20",
     "failures": [],
     "warnings": []
   },

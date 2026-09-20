@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-19T07:02:09.778Z",
-    "latestDataDate": "2026-09-19",
-    "currentDate": "2026-09-19",
-    "eventCount": 3409,
+    "generatedAt": "2026-09-20T05:41:49.434Z",
+    "latestDataDate": "2026-09-20",
+    "currentDate": "2026-09-20",
+    "eventCount": 3434,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -60,6 +60,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-800958e92cf5e67f",
       "EV-c4d784c7069ca66b",
       "EV-bc41a3060f11ca2d",
       "EV-e295f808713644c7"
@@ -70,7 +71,7 @@
       "EN-7d3194f79e645c42"
     ],
     "firstSeen": "2026-06-03",
-    "lastSeen": "2026-08-24",
+    "lastSeen": "2026-09-20",
     "relationIds": [
       "REL2-349051c055086411"
     ],
@@ -79,6 +80,7 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-800958e92cf5e67f",
         "EV-c4d784c7069ca66b",
         "EV-bc41a3060f11ca2d",
         "EV-e295f808713644c7"
@@ -88,6 +90,36 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-800958e92cf5e67f",
+        "dataDate": "2026-09-20",
+        "date": "2026-09-19",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Unity 为 Claude Code 和 OpenAI Codex 推出官方插件，以阻止 AI 智能体使用过时教程",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-a5790b06f63b7c16"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-a5790b06f63b7c16",
+          "EN-7d3194f79e645c42",
+          "EN-cb4754c48f8023d0",
+          "EN-1ecf93c539fcffca"
+        ]
+      },
       {
         "id": "EV-c4d784c7069ca66b",
         "dataDate": "2026-08-24",
@@ -293,6 +325,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-800958e92cf5e67f",
         "EV-440866c21881868f",
         "EV-4ea7cc69ffdf6bd4",
         "EV-66628835106394a1",
@@ -556,7 +589,11 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-36defc1d19f0ce5d",
+        "EV-6d4ba6a553d0564c",
+        "EV-b739349cfab7e41c",
         "EV-59d06d776297a3cd",
+        "EV-cbc06e90ef8b24f7",
         "EV-827744fb4c444b4c",
         "EV-2160d6fb3bcc2a5f",
         "EV-316beb691ef27660",
@@ -677,12 +714,12 @@
         "TX-target_user-developer",
         "TX-target_user-researcher",
         "TX-use_case-software_development",
-        "TX-industry-healthcare_life_sciences",
-        "TX-product_form-enterprise_software_platform",
-        "TX-use_case-research_discovery",
         "TX-product_form-chip_accelerator",
         "TX-target_user-business_user",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
+        "TX-product_form-enterprise_software_platform",
+        "TX-use_case-research_discovery",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-use_case-data_analysis",
@@ -741,7 +778,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-19"
+      "lastSeen": "2026-09-20"
     }
   ],
   "relationships": [

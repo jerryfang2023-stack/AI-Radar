@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-19T07:02:09.778Z",
-    "latestDataDate": "2026-09-19",
-    "currentDate": "2026-09-19",
-    "eventCount": 3409,
+    "generatedAt": "2026-09-20T05:41:49.434Z",
+    "latestDataDate": "2026-09-20",
+    "currentDate": "2026-09-20",
+    "eventCount": 3434,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -59,6 +59,7 @@
       "EV-d051cfbe3fd7e80f",
       "EV-6f092cfc7a064d64",
       "EV-8077605769c4d4eb",
+      "EV-5ff63c4f72976e83",
       "EV-6a3286e2186e4774",
       "EV-7c53df0cdea33936",
       "EV-39d56d5cef4cea80",
@@ -73,6 +74,7 @@
     "entityIds": [
       "EN-f2b9106253663314",
       "EN-2b6e51bec93e86c1",
+      "EN-bdfc3c0aaa95272a",
       "EN-bae152c4560df38c",
       "EN-a658fbc24f5e3832",
       "EN-593d0361124f348f",
@@ -85,7 +87,7 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-01-06",
-    "lastSeen": "2026-09-12"
+    "lastSeen": "2026-09-20"
   },
   "events": [
     {
@@ -864,6 +866,143 @@
       "products": [],
       "sourceUrl": "https://news.pedaily.cn/202601/559543.shtml",
       "publisher": "投资界"
+    },
+    {
+      "id": "EV-5ff63c4f72976e83",
+      "dataDate": "2026-09-20",
+      "date": "2026-09-18",
+      "updatedDate": "2026-09-20",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "阿里巴巴达摩院开源医学影像模型 Damo Radar，可识别近150种腹部疾病",
+      "originalTitle": "",
+      "subject": "阿里巴巴达摩院",
+      "action": "开源医学影像模型",
+      "object": "Damo Radar，可识别近150种腹部疾病",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言",
+          "entityIds": [
+            "EN-bdfc3c0aaa95272a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言",
+          "entityIds": [
+            "EN-bdfc3c0aaa95272a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-bdfc3c0aaa95272a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言",
+          "entityIds": [
+            "EN-bdfc3c0aaa95272a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-bdfc3c0aaa95272a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-bdfc3c0aaa95272a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言",
+          "entityIds": [
+            "EN-bdfc3c0aaa95272a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-047364b9be67f665",
+        "EN-bdfc3c0aaa95272a",
+        "EN-ee205fbfa313b8fe"
+      ],
+      "entityNames": [
+        "Alibaba",
+        "阿里巴巴达摩院",
+        "Damo Radar"
+      ],
+      "productName": "Damo Radar",
+      "products": [
+        {
+          "name": "Damo Radar",
+          "type": "模型",
+          "ownerNames": [
+            "Alibaba"
+          ]
+        }
+      ],
+      "sourceUrl": "https://scmp.com/tech/big-tech/article/3368055/alibaba-open-sources-medical-ai-model-can-detect-cancer-and-nearly-150-conditions",
+      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）"
     },
     {
       "id": "EV-6a3286e2186e4774",
@@ -2350,6 +2489,8 @@
         "EV-3ef3e18df61a00d8",
         "EV-568d2aeab5234e48",
         "EV-f68e00bb9fd49fac",
+        "EV-9b8fb88908ef8553",
+        "EV-b739349cfab7e41c",
         "EV-14762aedd2985175",
         "EV-7a24f8d94f5eede7",
         "EV-51548a69e952646b",
@@ -2367,10 +2508,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-use_case-software_development",
-        "TX-product_form-enterprise_software_platform",
-        "TX-use_case-research_discovery",
         "TX-product_form-chip_accelerator",
         "TX-use_case-physical_automation",
+        "TX-product_form-enterprise_software_platform",
+        "TX-use_case-research_discovery",
         "TX-technology-embodied_ai",
         "TX-product_form-model",
         "TX-industry-media_entertainment",
@@ -2395,7 +2536,29 @@
         "EN-a3c3b987b09fc1bb"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-09-18"
+      "lastSeen": "2026-09-20"
+    },
+    {
+      "id": "EN-bdfc3c0aaa95272a",
+      "name": "阿里巴巴达摩院",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-5ff63c4f72976e83"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-technology-vision_language"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-18",
+      "lastSeen": "2026-09-20"
     },
     {
       "id": "EN-bae152c4560df38c",
@@ -2408,6 +2571,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-10a072b1d240e493",
         "EV-6a3286e2186e4774",
         "EV-1a241bcb4fad886c",
         "EV-f388f7ae2debeae8",
@@ -2422,7 +2586,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-10",
-      "lastSeen": "2026-09-07"
+      "lastSeen": "2026-09-20"
     },
     {
       "id": "EN-a658fbc24f5e3832",
@@ -2539,8 +2703,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
         "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-technology-multimodal",

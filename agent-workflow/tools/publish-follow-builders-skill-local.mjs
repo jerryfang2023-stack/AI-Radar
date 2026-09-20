@@ -7,7 +7,7 @@ import { spawnSync } from "node:child_process";
 const root = process.cwd();
 const reportsDir = path.join(root, "agent-workflow", "reports");
 const skillRoot = path.join(os.homedir(), ".skill-store", "follow-builders");
-const skillScript = path.join(skillRoot, "scripts", "prepare-digest.js");
+const skillScript = path.join(root, "agent-workflow", "tools", "prepare-follow-builders-intake.mjs");
 
 const args = new Map(
   process.argv.slice(2).map((arg) => {

@@ -16,7 +16,7 @@ const args = new Map(
 const date = args.get("date") || new Date().toISOString().slice(0, 10);
 const followBuildersSkillScript =
   args.get("follow-builders-script") ||
-  path.join(process.env.USERPROFILE || "", ".skill-store", "follow-builders", "scripts", "prepare-digest.js");
+  path.join(root, "agent-workflow", "tools", "prepare-follow-builders-intake.mjs");
 
 const contentRoot = path.join(root, "01-SiteV2", "content");
 const pointsDir = path.join(contentRoot, "07-points");
@@ -47,7 +47,7 @@ async function loadSkill() {
   if (!fs.existsSync(followBuildersSkillScript)) {
     throw new Error(`follow-builders skill script not found: ${followBuildersSkillScript}`);
   }
-  const { stdout } = await execFileAsync("node", [followBuildersSkillScript], {
+  const { stdout } = await execFileAsync(process.execPath, [followBuildersSkillScript], {
     maxBuffer: 120 * 1024 * 1024,
     timeout: 180_000,
   });
@@ -112,6 +112,7 @@ function flattenItems(data) {
 async function main() {
   const data = await loadSkill();
   const items = flattenItems(data);
+  if (!items.length) throw new Error("follow-builders intake has no usable source-linked items");
   ensure(pointsDir);
 
   const lines = [
@@ -122,6 +123,7 @@ async function main() {
     `builder_items_count: ${items.length}`,
     `generated_at: ${new Date().toISOString()}`,
     `follow_builders_script: ${rel(followBuildersSkillScript)}`,
+    `source_errors: ${JSON.stringify(data.errors || [])}`,
     "---",
     "",
     `# ${date} First-Line Viewpoints Skill Intake`,

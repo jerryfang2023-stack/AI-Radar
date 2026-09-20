@@ -693,7 +693,7 @@ test("blocked, community, and launch-index sources do not become canonical event
   assert.equal(bundle.canonical_events.length, 0);
   assert.deepEqual(
     new Set(bundle.qa_queue.map((item) => item.reason)),
-    new Set(["raw_source_quality_block", "community_source_requires_original_event_source", "non_event_or_index_title"])
+    new Set(["raw_source_quality_block", "community_source_requires_original_event_source", "homepage_requires_original_event_source"])
   );
 });
 
@@ -1437,6 +1437,22 @@ test("known upstream category collisions stay in their responsible canonical typ
   ];
 
   for (const [title, eventType] of cases) assert.equal(findEventRule(title)?.eventType, eventType, title);
+});
+
+test("homepages, documentation indexes and calendar archives remain discovery-only", () => {
+  for (const [url, reason] of [
+    ["https://www.crusoe.ai/", "homepage_requires_original_event_source"],
+    ["https://axelera.ai/?utm_source=search", "homepage_requires_original_event_source"],
+    ["https://docs.nvidia.com/ai-enterprise/index.html", "documentation_index_not_event_source"],
+    ["https://github.blog/changelog/month/06-2026/", "calendar_archive_not_event_source"],
+  ]) {
+    assert.equal(publicEventSourceUrlIssue(url), reason);
+    assert.equal(eventSourceEligibility({ raw_qc_decision: "pass", clean_text: "Acme AI raised $10 million in Series A." },
+      { source_url: url }, "Acme AI raises $10 million", "2026-09-20", { eventType: "funding" }).reason, reason);
+  }
+  for (const url of ["https://example.com/?p=123", "https://crusoe.ai/resources/series-f", "https://github.blog/changelog/2026-09-19-ai-release/", "https://docs.nvidia.com/ai-enterprise/latest/release-notes.html"]) {
+    assert.equal(publicEventSourceUrlIssue(url), "", url);
+  }
 });
 
 test("a research-fund commitment is not eligible as company financing", () => {

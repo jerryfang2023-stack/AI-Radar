@@ -1,22 +1,22 @@
 {
   "meta": {
-    "generatedAt": "2026-09-19T00:36:59.281Z",
+    "generatedAt": "2026-09-20T00:35:58.542Z",
     "sourceFile": "01-SiteV2/site/data/follow-builders-daily.json",
-    "sourceCommits": 154,
-    "sourceSnapshots": 155,
+    "sourceCommits": 155,
+    "sourceSnapshots": 156,
     "earliestDate": "2026-06-01",
-    "latestDate": "2026-09-18",
+    "latestDate": "2026-09-19",
     "dedupeKey": "original_url",
     "sourcePolicy": "Historical records are reconstructed from committed morning-lane snapshots and retain their original URL and source snapshot.",
     "translationPolicy": "Only complete approved Chinese translations with matching source hashes are published."
   },
   "stats": {
-    "discovered": 2835,
-    "aiRelevant": 1576,
-    "alreadyApproved": 762,
+    "discovered": 2857,
+    "aiRelevant": 1586,
+    "alreadyApproved": 772,
     "translatedThisRun": 0,
     "pendingTranslation": 814,
-    "published": 1359,
+    "published": 1369,
     "pendingReasons": {
       "translation_gate_failed": 155,
       "mymemory": 634,
@@ -26,6 +26,446 @@
     }
   },
   "remarks": [
+    {
+      "id": "2101186741042663579",
+      "source": "x",
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "role": "vercel CEO",
+      "text": "Looks like today may be a record day for token volume % of open models on Vercel AI Gateway: 🟦 Open 78.4% 🟨 Closed 21.6% While spend 💲 usually tells a different story, #3 and #4 today are Moonshot AI & DeepSeek. Adding Z⁠.ai, their combined spend surpasses OpenAI (#2). (Do note that's the spend for inference of the model across providers (mostly in the US), not revenue going directly to the open weight labs.)",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "看起来今天可能是 Vercel AI Gateway 上开放模型 token 用量占比创纪录的一天：🟦 开放 78.4% 🟨 封闭 21.6% 虽然花费 💲 通常呈现出不同的情况，但今天 #3 和 #4 是 Moonshot AI 与 DeepSeek。加上 Z⁠.ai，它们的合计支出已超过 OpenAI（#2）。（请注意，这是指模型在各提供商（主要在美国）的推理支出，而不是直接流向开放权重实验室的收入。）",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-pro",
+      "translationSourceHash": "56ea35b49b356b86",
+      "topic": "AI 基础设施",
+      "columnTags": [
+        {
+          "id": "opinion-model-infra",
+          "name": "模型基础设施观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察模型运行、算力、存储、sandbox 或开发平台基础设施的变化；后续事实判断需回到原始公告或技术文档。",
+      "createdAt": "2026-09-19T05:48:51.000Z",
+      "date": "2026-09-19",
+      "url": "https://x.com/rauchg/status/2101186741042663579",
+      "likes": 91,
+      "retweets": 3,
+      "replies": 24,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2101155521818476693",
+      "source": "x",
+      "name": "Dan Shipper",
+      "handle": "danshipper",
+      "role": "ceo every",
+      "text": "there are certainly over the top AI demos on X, but it very sad to see someone call @jackcheng’s work “fake” He’s one of the smartest, most intellectually honest, and craft-focused people I’ve ever worked with. And his demo is both real and an interesting peak into the future not a good look!",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "X 上确实有一些夸张的 AI 演示，但看到有人称 @jackcheng 的作品是“假的”，实在令人难过。他是我共事过的最聪明、最智识诚实、最注重手艺的人之一。而且他的演示既真实，又是有趣地窥见未来的一瞥，这可不好看！",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "b42ea7a0d569a3c7",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-19T03:44:48.000Z",
+      "date": "2026-09-19",
+      "url": "https://x.com/danshipper/status/2101155521818476693",
+      "likes": 23,
+      "retweets": 0,
+      "replies": 8,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2101141707375227372",
+      "source": "x",
+      "name": "Peter Steinberger",
+      "handle": "steipete",
+      "role": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world.",
+      "text": "The coolest part: roboclaw runs our team server, is live on Discord, talks with gpt-live and knows about all the sessions it's juggling. We can ask it about context to current and past sessions right while we have meetings.",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "最酷的部分是：roboclaw运行着我们的团队服务器，活跃在Discord上，与gpt-live交流，并了解它正在处理的所有会话。我们可以在开会时询问它关于当前和过去会话的上下文。",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "6708bf5cdd393656",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-19T02:49:55.000Z",
+      "date": "2026-09-19",
+      "url": "https://x.com/steipete/status/2101141707375227372",
+      "likes": 83,
+      "retweets": 5,
+      "replies": 19,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2101115690719809873",
+      "source": "x",
+      "name": "Peter Steinberger",
+      "handle": "steipete",
+      "role": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world.",
+      "text": "... and CUA works on all of these too, so agent can be more efficient than just screenshots.",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "……而且CUA也能在所有这些上运行，所以智能体可以比仅靠截图更高效。",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "3350d4cb7a2f56ce",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-09-19T01:06:32.000Z",
+      "date": "2026-09-19",
+      "url": "https://x.com/steipete/status/2101115690719809873",
+      "likes": 13,
+      "retweets": 0,
+      "replies": 3,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2101104320897040627",
+      "source": "x",
+      "name": "Peter Yang",
+      "handle": "petergyang",
+      "role": "Practical AI tutorials and interviews for busy people",
+      "text": "How smart AI gets is inversely correlated with my ability to compose a coherent sentence with no spelling or grammar mistakes",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "人工智能变得越聪明，我写出没有拼写或语法错误的连贯句子的能力就越成反比。",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "980c6741018d5171",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-19T00:21:21.000Z",
+      "date": "2026-09-19",
+      "url": "https://x.com/petergyang/status/2101104320897040627",
+      "likes": 35,
+      "retweets": 0,
+      "replies": 10,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2101097330107875437",
+      "source": "x",
+      "name": "Aditya Agarwal",
+      "handle": "adityaag",
+      "role": "General Partner SPC, Co-Founder Bevel_Health",
+      "text": "AI is a full circle. Everything old is new again. https://t.co/B0mpUnjas2",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "AI是一个完整的循环。旧事物再度焕新。https://t.co/B0mpUnjas2",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "04698cad5bd4aee3",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-18T23:53:34.000Z",
+      "date": "2026-09-19",
+      "url": "https://x.com/adityaag/status/2101097330107875437",
+      "likes": 6,
+      "retweets": 0,
+      "replies": 1,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2101079472732848510",
+      "source": "x",
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "role": "vercel CEO",
+      "text": "The data and the anecdata on Jev's adoption are shocking. Everyone is adopting it. I think it's a great product, but this is also downstream of the \"AI is too expensive/slow\" zeitgeist. People are eager to optimize and put AI in even more places! https://t.co/tK86PNGgNs https://t.co/Y7w3UKosBC",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "关于Jev采用情况的数据和轶事证据令人震惊。每个人都在采用它。我认为这是一个很棒的产品，但这也是“AI太贵/太慢”时代思潮的下游产物。人们急于优化，并把AI放到更多地方！https://t.co/tK86PNGgNs https://t.co/Y7w3UKosBC",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "3104a41ce4462aae",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-18T22:42:37.000Z",
+      "date": "2026-09-19",
+      "url": "https://x.com/rauchg/status/2101079472732848510",
+      "likes": 711,
+      "retweets": 35,
+      "replies": 36,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2101009392611278961",
+      "source": "x",
+      "name": "Thariq",
+      "handle": "trq212",
+      "role": "Claude Code anthropicai. prev YC W20, spc, medialab",
+      "text": "We're adding support for AGENTS.md to Claude Code. Starting today in version 2.1.277, if there is no CLAUDE.md in a folder, Claude will check for and use AGENTS.md. You can toggle this behavior in /config.",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "我们正在为 Claude Code 添加对 AGENTS.md 的支持。从今天的 2.1.277 版本开始，如果某个文件夹中没有 CLAUDE.md，Claude 将检查并使用 AGENTS.md。你可以在 /config 中切换此行为。",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "37ec54bccb160e75",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-09-18T18:04:08.000Z",
+      "date": "2026-09-19",
+      "url": "https://x.com/trq212/status/2101009392611278961",
+      "likes": 25553,
+      "retweets": 2174,
+      "replies": 1676,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2101009393731223817",
+      "source": "x",
+      "name": "Thariq",
+      "handle": "trq212",
+      "role": "Claude Code anthropicai. prev YC W20, spc, medialab",
+      "text": "AGENTS.md support is built off of Claude Code mods, our upcoming way to customize the Claude Code harness. This is a built-in mod, but you’ll be able to build custom versions of project instructions yourself as you’d like too.",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "AGENTS.md 支持是基于 Claude Code mods 构建的，这是我们即将推出的自定义 Claude Code harness 的方式。这是一个内置 mod，但你也可以根据自己的需要构建自定义版本的项目指令。",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "faa2ee14fff87cf3",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-09-18T18:04:08.000Z",
+      "date": "2026-09-19",
+      "url": "https://x.com/trq212/status/2101009393731223817",
+      "likes": 926,
+      "retweets": 20,
+      "replies": 33,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2101007708044574906",
+      "source": "x",
+      "name": "Aaron Levie",
+      "handle": "levie",
+      "role": "ceo box - your business lives in content. unleash it with AI",
+      "text": "Jev will be super helpful for agents to make split second decisions in workflows, data classification, judgment calls, and hundreds of other use-cases in the enterprise. Here's a quick demo with Box and Jev to make that real. The demo pulls an incident report from Box, asks whether it's customer-facing and how severe it is, moves the file into escalate, monitor, or review folders, and sets a metadata template instance with the result. This all happens nearly instantly and at almost no cost. You can imagine this in insurance claims, contract management, loan processing, security reviews, customer log analysis, and so on. Definitely a great new class of AI use-case.",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "Jev 将极大地帮助代理在工作流程、数据分类、判断调用以及企业中数百种其他用例中做出瞬间决策。这里有一个与 Box 和 Jev 的快速演示，让这一点变得真实。该演示从 Box 中提取一份事件报告，询问它是否面向客户以及严重程度如何，将文件移动到升级、监控或审查文件夹中，并设置一个带有结果的元数据模板实例。这一切几乎瞬间发生，且成本几乎为零。你可以想象这在保险索赔、合同管理、贷款处理、安全审查、客户日志分析等方面的应用。这绝对是一类全新的 AI 用例。",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-pro",
+      "translationSourceHash": "016d60361f9fa637",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-09-18T17:57:27.000Z",
+      "date": "2026-09-19",
+      "url": "https://x.com/levie/status/2101007708044574906",
+      "likes": 500,
+      "retweets": 57,
+      "replies": 43,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
     {
       "id": "https://tldr.tech/ai/2026-09-18",
       "source": "blog",
@@ -39,7 +479,7 @@
       "contentTranslationMethod": "",
       "contentTranslationModel": "",
       "contentTranslationSourceHash": "",
-      "translation": "Claude Projects v2 💼，Google 家庭智能体 👨‍👩‍👧‍👦，",
+      "translation": "Claude Projects v2 💼，Google 家庭代理 👨‍👩‍👧‍👦，",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
@@ -112,7 +552,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "4f17ca4fe1ace9982fb984300d1c96813455810d"
     },
     {
       "id": "2100714665571737885",
@@ -156,7 +596,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "4f17ca4fe1ace9982fb984300d1c96813455810d"
     },
     {
       "id": "2100682030170489160",
@@ -200,7 +640,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "4f17ca4fe1ace9982fb984300d1c96813455810d"
     },
     {
       "id": "2100669598995816511",
@@ -244,7 +684,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "4f17ca4fe1ace9982fb984300d1c96813455810d"
     },
     {
       "id": "2100668489178456268",
@@ -288,7 +728,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "4f17ca4fe1ace9982fb984300d1c96813455810d"
     },
     {
       "id": "2100645454245720513",
@@ -332,7 +772,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "4f17ca4fe1ace9982fb984300d1c96813455810d"
     },
     {
       "id": "2100641163120423057",
@@ -376,7 +816,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "4f17ca4fe1ace9982fb984300d1c96813455810d"
     },
     {
       "id": "2100639991244427490",
@@ -420,7 +860,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "4f17ca4fe1ace9982fb984300d1c96813455810d"
     },
     {
       "id": "2100638355872706571",
@@ -464,7 +904,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "4f17ca4fe1ace9982fb984300d1c96813455810d"
     },
     {
       "id": "2100632688625348890",
@@ -508,7 +948,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "4f17ca4fe1ace9982fb984300d1c96813455810d"
     },
     {
       "id": "2100632684074549309",
@@ -552,7 +992,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "4f17ca4fe1ace9982fb984300d1c96813455810d"
     },
     {
       "id": "https://tldr.tech/ai/2026-09-17",
@@ -567,7 +1007,7 @@
       "contentTranslationMethod": "",
       "contentTranslationModel": "",
       "contentTranslationSourceHash": "",
-      "translation": "Claude + Cowork 合并 🛠️，ChatGPT 赞助的智能体 💰，框架税 🤖",
+      "translation": "Claude + Cowork 合并 🛠️，ChatGPT 赞助智能体 💰，harness 税 🤖",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
@@ -1315,7 +1755,7 @@
       "contentTranslationMethod": "",
       "contentTranslationModel": "",
       "contentTranslationSourceHash": "",
-      "translation": "Jev ⚡，周期霓虹 🧬，Gemini 3.8 实时 💬",
+      "translation": "Jev ⚡，周期霓虹 🧬，Gemini 3.8 Live 💬",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-pro",
@@ -2195,7 +2635,7 @@
       "contentTranslationMethod": "",
       "contentTranslationModel": "",
       "contentTranslationSourceHash": "",
-      "translation": "Amodei放缓前沿🛑，ARC-AGI-4🧠，Cursor Projects👨‍💻",
+      "translation": "Amodei放缓前沿 🛑，ARC-AGI-4 🧠，Cursor Projects 👨‍💻",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",

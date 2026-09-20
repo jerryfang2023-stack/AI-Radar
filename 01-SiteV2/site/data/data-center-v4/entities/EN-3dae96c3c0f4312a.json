@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-19T07:02:09.778Z",
-    "latestDataDate": "2026-09-19",
-    "currentDate": "2026-09-19",
-    "eventCount": 3409,
+    "generatedAt": "2026-09-20T05:41:49.434Z",
+    "latestDataDate": "2026-09-20",
+    "currentDate": "2026-09-20",
+    "eventCount": 3434,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -60,19 +60,21 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-7bffdadf9a6e467e",
       "EV-73c29838fbb3b394"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-10",
-    "lastSeen": "2026-09-11",
+    "lastSeen": "2026-09-20",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-7bffdadf9a6e467e",
         "EV-73c29838fbb3b394"
       ],
       "hardware": [],
@@ -80,6 +82,57 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-7bffdadf9a6e467e",
+        "dataDate": "2026-09-20",
+        "date": "2026-09-17",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Meta 发布 Muse for Mac，可跨本地文件、邮件、消息、日历和笔记执行任务",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "software_development",
+            "name": "软件开发",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "code_generation",
+            "name": "代码生成",
+            "entityIds": [
+              "EN-ea3bd73e2b506e00"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-ea3bd73e2b506e00",
+          "EN-72974fb8d2361dba",
+          "EN-3dae96c3c0f4312a"
+        ]
+      },
       {
         "id": "EV-73c29838fbb3b394",
         "dataDate": "2026-09-11",
@@ -115,5 +168,101 @@
   "relationships": [],
   "taxonomyNodes": [],
   "fde": [],
-  "hardware": []
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-a8821f20f885ea94",
+      "snapshotKey": "a8821f20f885ea94",
+      "snapshotId": "HWS-9eb16f8984ad5dfe",
+      "eventId": "EV-7bffdadf9a6e467e",
+      "eventIds": [
+        "EV-7bffdadf9a6e467e"
+      ],
+      "dataDate": "2026-09-20",
+      "date": "2026-09-20",
+      "title": "Muse for Mac / Muse",
+      "subject": "Meta",
+      "productNames": [
+        "Muse for Mac",
+        "Muse"
+      ],
+      "hardwareType": "ai_device",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-68fb09f0c8ae2ac5"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-20",
+          "hardware_fact_id": "HWF-68fb09f0c8ae2ac5",
+          "fact_type": "product",
+          "observed_at": "2026-09-17T00:00:00.000Z",
+          "subject_entity_id": "EN-ea3bd73e2b506e00",
+          "subject_name": "Meta",
+          "product_entity_ids": [
+            "EN-72974fb8d2361dba",
+            "EN-3dae96c3c0f4312a"
+          ],
+          "product_names": [
+            "Muse for Mac",
+            "Muse"
+          ],
+          "component_type": "ai_device",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Meta has released Muse for Mac , the first version of Muse that can complete things on a user’s computer. The agent works with local files and native apps, where your data already lives. It adds a desktop layer to an agent that launched on phones, the web and WhatsApp earlier this month.",
+          "event_refs": [
+            "EV-7bffdadf9a6e467e"
+          ],
+          "claim_ref": "CL-01a2890d5e188d0e",
+          "source_refs": [
+            "SA-620733c77f29f267"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-20/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/09/19/meta-launches-muse-for-mac",
+      "entityIds": [
+        "EN-ea3bd73e2b506e00",
+        "EN-72974fb8d2361dba",
+        "EN-3dae96c3c0f4312a"
+      ]
+    }
+  ]
 }

@@ -9,7 +9,7 @@ export function isFreshSupervisionReport(report, action, date) {
   const finished = Date.parse(action?.finished_at || "");
   return report?.date === date
     && typeof report.ok === "boolean" && Array.isArray(report.lanes)
-    && ["passed", "warning", "failed", "waiting"].includes(report.status)
+    && ["passed", "warning", "failed", "waiting", "manual_required"].includes(report.status)
     && [0, 1].includes(action?.status)
     && Number.isFinite(started) && Number.isFinite(finished) && Number.isFinite(generated)
     && generated >= started && generated <= finished;
