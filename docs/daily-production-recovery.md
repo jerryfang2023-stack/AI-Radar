@@ -76,6 +76,20 @@ merge or edit accepted Claims to achieve this projection.
   the current collection window; `--force-afternoon-window=true` is an explicit
   retrospective check, not the default before 16:10.
 
+Afternoon source intake uses the repository-owned
+`prepare-follow-builders-intake.mjs`, which fetches the same three upstream feeds
+concurrently with bounded request/body deadlines. It does not fetch unused remote
+digest prompts or read personal delivery settings. The former generic helper's
+unbounded fetches and five sequential prompt downloads could exhaust the outer
+180-second process budget before returning any diagnostics. Failed feeds remain
+explicit; empty usable intake fails before replacing the accepted Markdown.
+The Windows runner's durable report lives under
+`<runtime>/follow-builders-skill/<date>-follow-builders-skill-local-publish.md`.
+Supervision selects the latest exact-date local report from that directory or
+the active worktree, falls back to the canonical published report, and retains the original
+failure cause. Final Closure accepts a fresh `manual_required` report as completed
+supervision with unhealthy lanes, never as a missing report or a healthy release.
+
 ## Evidence and publication acceptance
 
 An exact-head Production Code Checks run with `action_required` needs maintainer

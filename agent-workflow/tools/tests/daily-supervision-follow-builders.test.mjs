@@ -161,6 +161,29 @@ test("forced afternoon supervision fails missing artifacts and passes count-cons
   }
 });
 
+test("afternoon supervision retains the durable runtime failure and its original cause", async () => {
+  const originalCwd = process.cwd();
+  const originalArgv = process.argv;
+  const fixtureRoot = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-afternoon-runtime-"));
+  const date = "2026-09-19";
+  try {
+    const runtime = path.join(fixtureRoot, "runtime");
+    const report = path.join(runtime, "follow-builders-skill", `${date}-follow-builders-skill-local-publish.md`);
+    fs.mkdirSync(path.dirname(report), { recursive: true });
+    fs.writeFileSync(report, '- publish_status: failed\n- publish_error: "prepare-digest SIGTERM timeout"\n');
+    const supervisor = await loadSupervisor(fixtureRoot,
+      [`--date=${date}`, `--output-dir=${runtime}`, "--force-afternoon-window=true", "--github=off", "--scheduled-task=off", "--hermes=off"], "runtime-failure");
+    const lane = supervisor.buildFollowBuildersSkillLane();
+    assert.equal(lane.status, "failed");
+    assert.equal(lane.evidence.publishError, "prepare-digest SIGTERM timeout");
+    assert.match(lane.evidence.reportFile, /runtime\/follow-builders-skill/u);
+    assert.ok(!lane.problems.some(item => /no same-date.*report/u.test(item.message)));
+  } finally {
+    process.chdir(originalCwd); process.argv = originalArgv;
+    fs.rmSync(fixtureRoot, { recursive: true, force: true });
+  }
+});
+
 test("pre-window afternoon supervision reports waiting instead of passed", async () => {
   const originalCwd = process.cwd();
   const originalArgv = process.argv;

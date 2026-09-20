@@ -803,11 +803,18 @@ export function buildFollowBuildersSkillLane() {
   const actions = [];
   const windowPassed = forceAfternoonWindow || hasWindowPassed(date, "16:30");
   const outputFile = path.join(root, "01-SiteV2", "content", "07-points", `${date}-builders-viewpoints.md`);
-  const reportFile = path.join(reportsDir, `${date}-follow-builders-skill-local-publish.md`);
+  const reportName = `${date}-follow-builders-skill-local-publish.md`;
+  const reportFile = [...new Set([
+    path.join(reportsDir, reportName),
+    path.join(outputDir, "follow-builders-skill", reportName),
+    path.join(outputDir, reportName),
+  ])].filter(file => fs.existsSync(file))
+    .sort((left, right) => fs.statSync(right).mtimeMs - fs.statSync(left).mtimeMs)[0]
+    || path.join(reportsDir, reportName);
   const localOutputText = readText(outputFile);
   const localReportText = readText(reportFile);
   const publishedOutputText = localOutputText ? "" : readTextFromGit("origin/main", outputFile);
-  const publishedReportText = localReportText ? "" : readTextFromGit("origin/main", reportFile);
+  const publishedReportText = localReportText ? "" : readTextFromGit("origin/main", path.join(root, "agent-workflow", "reports", reportName));
   const outputText = localOutputText || publishedOutputText;
   const reportText = localReportText || publishedReportText;
   const outputExists = Boolean(outputText);

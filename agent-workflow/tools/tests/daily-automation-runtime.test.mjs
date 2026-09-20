@@ -22,6 +22,7 @@ test("final closure rejects stale evidence but preserves fresh lane-finding repo
   const report = { date: "2026-09-13", generated_at: "2026-09-13T08:45:30.000Z", ok: true, status: "passed", lanes: [] };
   assert.equal(isFreshSupervisionReport(report, action, report.date), true);
   assert.equal(isFreshSupervisionReport({ ...report, status: "warning" }, action, report.date), true);
+  assert.equal(isFreshSupervisionReport({ ...report, ok: false, status: "manual_required" }, action, report.date), true);
   assert.equal(isFreshSupervisionReport({ ...report, ok: false, status: "failed" }, { ...action, status: 1 }, report.date), true);
   for (const invalid of [null, {}, { ...report, generated_at: action.started_at.replace("08:45", "08:44") },
     { ...report, generated_at: "2026-09-13T08:47:00Z" }, { ...report, date: "2026-09-12" },
