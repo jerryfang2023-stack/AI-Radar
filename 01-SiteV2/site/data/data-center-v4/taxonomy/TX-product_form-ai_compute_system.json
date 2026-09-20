@@ -56,6 +56,7 @@
     "typeLabel": "产品形态",
     "valueId": "ai_compute_system",
     "eventIds": [
+      "EV-90f03740e87ae062",
       "EV-c3e9553260552659",
       "EV-03bc82f6d6c169d7",
       "EV-259566f35ea4f66d",
@@ -141,6 +142,99 @@
     "lastSeen": "2026-09-20"
   },
   "events": [
+    {
+      "id": "EV-90f03740e87ae062",
+      "dataDate": "2026-09-20",
+      "date": "2026-09-18",
+      "updatedDate": "2026-09-20",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "犀里光电完成 Pre-A 轮融资 本轮由孚腾资本领投，上海未来产业基金、基石资本、大湾区基金、天际资本、深产投及上市公司智微智能跟投，光源资本担任独家财务顾问。 投中网 · 1天前",
+      "originalTitle": "",
+      "subject": "犀里光电",
+      "action": "完成 Pre-A 轮融资",
+      "object": "本轮由孚腾资本领投，上海未来产业基金、基石资本、大湾区基金、天际资本、深产投及上市公司智微智能跟投，光源资本担任独家财务顾问。 投中网 · 1天前",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [
+          "cn-chinaventure"
+        ],
+        "claim_refs": [
+          "CL-cc099c5dc0320617"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_compute_system",
+            "name": "AI 计算系统",
+            "entityIds": [
+              "EN-cb06f3c535c07379"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_compute_system",
+          "name": "AI 计算系统",
+          "entityIds": [
+            "EN-cb06f3c535c07379"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_compute_system",
+          "name": "AI 计算系统",
+          "entityIds": [
+            "EN-cb06f3c535c07379"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-cb06f3c535c07379"
+      ],
+      "entityNames": [
+        "犀里光电"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://chinaventure.com.cn/news/113-20260918-393335.html",
+      "publisher": "投中网"
+    },
     {
       "id": "EV-c3e9553260552659",
       "dataDate": "2026-09-19",
@@ -7728,6 +7822,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-90f03740e87ae062",
         "EV-c3e9553260552659"
       ],
       "viewpointIds": [],
@@ -7736,7 +7831,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-09-18",
-      "lastSeen": "2026-09-19"
+      "lastSeen": "2026-09-20"
     },
     {
       "id": "EN-48b85dc3fd54f74d",
@@ -7761,6 +7856,7 @@
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
         "TX-product_form-ai_compute_system",
+        "TX-ai_market_application-computing_infrastructure",
         "TX-use_case-data_analysis",
         "TX-target_user-public_sector_user",
         "TX-industry-telecommunications",
@@ -7793,6 +7889,8 @@
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
         "TX-product_form-ai_compute_system",
+        "TX-use_case-research_discovery",
+        "TX-ai_market_application-computing_infrastructure",
         "TX-use_case-data_analysis",
         "TX-target_user-public_sector_user",
         "TX-industry-government_public_sector",
@@ -7829,6 +7927,7 @@
         "TX-ai_market_application-chips",
         "TX-product_form-chip_accelerator",
         "TX-product_form-ai_compute_system",
+        "TX-ai_market_application-computing_infrastructure",
         "TX-industry-manufacturing"
       ],
       "relatedEntityIds": [],
@@ -8115,9 +8214,6 @@
         "TX-ai_market_subcategory-development_deployment",
         "TX-target_user-researcher",
         "TX-use_case-software_development",
-        "TX-industry-healthcare_life_sciences",
-        "TX-product_form-enterprise_software_platform",
-        "TX-use_case-research_discovery",
         "TX-ai_market_application-chips",
         "TX-industry-automotive_transportation",
         "TX-product_form-chip_accelerator",
@@ -8125,10 +8221,13 @@
         "TX-use_case-physical_automation",
         "TX-industry-financial_services",
         "TX-product_form-ai_compute_system",
+        "TX-product_form-enterprise_software_platform",
+        "TX-use_case-research_discovery",
+        "TX-ai_market_application-computing_infrastructure",
         "TX-use_case-data_analysis",
         "TX-product_form-robotic_system",
-        "TX-industry-logistics_supply_chain",
         "TX-industry-manufacturing",
+        "TX-industry-logistics_supply_chain",
         "TX-technology-embodied_ai",
         "TX-product_form-model",
         "TX-industry-media_entertainment",
@@ -8241,6 +8340,7 @@
         "TX-industry-healthcare_life_sciences",
         "TX-target_user-business_user",
         "TX-product_form-ai_compute_system",
+        "TX-ai_market_application-computing_infrastructure",
         "TX-use_case-data_analysis",
         "TX-use_case-knowledge_search",
         "TX-use_case-productivity_enterprise_workflows",
@@ -8545,10 +8645,13 @@
         "TX-target_user-business_user",
         "TX-industry-financial_services",
         "TX-product_form-ai_compute_system",
+        "TX-product_form-enterprise_software_platform",
+        "TX-use_case-research_discovery",
+        "TX-ai_market_application-computing_infrastructure",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-manufacturing",
-        "TX-technology-embodied_ai",
         "TX-product_form-end_user_application",
+        "TX-technology-embodied_ai",
         "TX-product_form-model",
         "TX-target_user-consumer",
         "TX-industry-retail_ecommerce",
@@ -8620,6 +8723,8 @@
         "TX-target_user-business_user",
         "TX-industry-financial_services",
         "TX-product_form-ai_compute_system",
+        "TX-use_case-research_discovery",
+        "TX-ai_market_application-computing_infrastructure",
         "TX-industry-manufacturing",
         "TX-industry-media_entertainment",
         "TX-industry-government_public_sector",
@@ -8718,6 +8823,7 @@
         "TX-product_form-chip_accelerator",
         "TX-target_user-business_user",
         "TX-product_form-ai_compute_system",
+        "TX-product_form-compute_cloud_service",
         "TX-industry-manufacturing",
         "TX-product_form-model",
         "TX-product_form-ai_infrastructure_software",
@@ -8744,8 +8850,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
         "TX-product_form-ai_compute_system",
         "TX-industry-telecommunications",
         "TX-technology-agentic_execution"
@@ -8850,10 +8956,10 @@
       "classificationRefs": [
         "TX-product_form-developer_tool",
         "TX-use_case-software_development",
-        "TX-product_form-enterprise_software_platform",
         "TX-product_form-chip_accelerator",
         "TX-use_case-physical_automation",
         "TX-product_form-ai_compute_system",
+        "TX-product_form-enterprise_software_platform",
         "TX-product_form-robotic_system",
         "TX-industry-manufacturing",
         "TX-technology-embodied_ai",
@@ -9041,8 +9147,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-compute_cloud_service",
-        "TX-product_form-ai_compute_system"
+        "TX-product_form-ai_compute_system",
+        "TX-product_form-compute_cloud_service"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-08",

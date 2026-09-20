@@ -60,6 +60,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-90f03740e87ae062",
       "EV-c3e9553260552659"
     ],
     "viewpointIds": [],
@@ -68,10 +69,11 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-18",
-    "lastSeen": "2026-09-19",
+    "lastSeen": "2026-09-20",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-90f03740e87ae062",
         "EV-c3e9553260552659"
       ],
       "deployments": [],
@@ -82,6 +84,33 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-90f03740e87ae062",
+        "dataDate": "2026-09-20",
+        "date": "2026-09-18",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "犀里光电完成 Pre-A 轮融资 本轮由孚腾资本领投，上海未来产业基金、基石资本、大湾区基金、天际资本、深产投及上市公司智微智能跟投，光源资本担任独家财务顾问。 投中网 · 1天前",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_compute_system",
+            "name": "AI 计算系统",
+            "entityIds": [
+              "EN-cb06f3c535c07379"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-cb06f3c535c07379"
+        ]
+      },
       {
         "id": "EV-c3e9553260552659",
         "dataDate": "2026-09-19",
@@ -122,6 +151,7 @@
       "typeLabel": "产品形态",
       "valueId": "ai_compute_system",
       "eventIds": [
+        "EV-90f03740e87ae062",
         "EV-c3e9553260552659",
         "EV-03bc82f6d6c169d7",
         "EV-259566f35ea4f66d",
