@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-19T07:02:09.778Z",
-    "latestDataDate": "2026-09-19",
-    "currentDate": "2026-09-19",
-    "eventCount": 3409,
+    "generatedAt": "2026-09-20T00:30:29.531Z",
+    "latestDataDate": "2026-09-20",
+    "currentDate": "2026-09-20",
+    "eventCount": 3433,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -50,6 +50,45 @@
     ]
   },
   "fde": [
+    {
+      "id": "FDE-660a50bf2d274f18",
+      "eventId": "EV-1d0bca303142cba9",
+      "dataDate": "2026-09-20",
+      "date": "2026-09-19",
+      "title": "美国政府网站使用了FBI称为“恶意”的中国模型",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Alibaba Qwen AI model",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "On Wednesday, US government officials removed a Chinese AI search tool that was briefly deployed on the Federal Register website"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://arstechnica.com/tech-policy/2026/09/us-government-website-used-chinese-model-the-fbi-called-malicious",
+      "entityIds": [
+        "EN-aa7605809dc55c07",
+        "EN-047364b9be67f665"
+      ]
+    },
     {
       "id": "FDE-e6a6ca05cf979d49",
       "eventId": "EV-67804da6b04fdcc5",
@@ -7436,6 +7475,56 @@
   ],
   "fdeDossiers": [
     {
+      "id": "FDED-ce3aaca02fbfcb1a",
+      "implementationKey": "ce3aaca02fbfcb1a",
+      "eventId": "EV-1d0bca303142cba9",
+      "eventIds": [
+        "EV-1d0bca303142cba9"
+      ],
+      "dataDate": "2026-09-20",
+      "date": "2026-09-18",
+      "title": "未披露 × 未披露：Alibaba Qwen AI model",
+      "stage": "production",
+      "stageLabel": "production",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Alibaba Qwen AI model",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.25,
+      "completenessPercent": 25,
+      "missingFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-340904020a7cf11a",
+          "type": "implementation_update",
+          "stage": "production",
+          "date": "2026-09-18",
+          "dataDate": "2026-09-20",
+          "eventId": "EV-1d0bca303142cba9",
+          "eventTitle": "美国政府网站使用了FBI称为“恶意”的中国模型",
+          "claimCount": 2,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://arstechnica.com/tech-policy/2026/09/us-government-website-used-chinese-model-the-fbi-called-malicious",
+      "entityIds": [
+        "EN-aa7605809dc55c07",
+        "EN-047364b9be67f665"
+      ]
+    },
+    {
       "id": "FDED-bb07ff367afa68c8",
       "implementationKey": "bb07ff367afa68c8",
       "eventId": "EV-a7568a8f75368e09",
@@ -10833,38 +10922,41 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-09-19",
-      "funnel_id": "LF-04a7e2ae498b3397",
+      "data_date": "2026-09-20",
+      "funnel_id": "LF-307168304985d609",
       "lens": "fde",
-      "date": "2026-09-19",
+      "date": "2026-09-20",
       "monitoring_paths": [
         "fde_customer_case",
         "fde_earnings_disclosure",
         "fde_procurement_contract",
         "fde_production_rollout"
       ],
-      "raw_documents": 109,
-      "original_sources": 95,
-      "valid_claims": 41,
-      "observations": 3,
-      "canonical_events": 16,
+      "raw_documents": 96,
+      "original_sources": 82,
+      "valid_claims": 34,
+      "observations": 1,
+      "canonical_events": 12,
       "blocker_counts": {
-        "no_source_bounded_event": 13,
-        "event_not_ai_relevant": 3,
-        "no_source_bounded_claim": 2,
-        "source_outside_daily_window": 54,
+        "source_outside_daily_window": 46,
+        "directory_page_not_event_source": 2,
+        "no_source_bounded_event": 10,
         "non_event_or_index_title": 4,
-        "question_headline_not_event_specific": 1,
-        "raw_source_quality_block": 14,
-        "raw_document_not_auditable": 1
+        "event_not_ai_relevant": 2,
+        "event_entity_unresolved": 1,
+        "question_headline_not_event_specific": 2,
+        "repository_page_requires_release_source": 1,
+        "tag_or_topic_index_not_event_source": 1,
+        "no_source_bounded_claim": 1,
+        "raw_source_quality_block": 14
       },
       "rates": {
-        "original_source_rate": 0.8715596330275229,
-        "valid_claim_rate": 0.3761467889908257,
-        "observation_rate": 0.07317073170731707,
-        "event_conversion_rate": 0.3902439024390244
+        "original_source_rate": 0.8541666666666666,
+        "valid_claim_rate": 0.3541666666666667,
+        "observation_rate": 0.029411764705882353,
+        "event_conversion_rate": 0.35294117647058826
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-19/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-20/monitoring-funnel.json"
     }
   ]
 }

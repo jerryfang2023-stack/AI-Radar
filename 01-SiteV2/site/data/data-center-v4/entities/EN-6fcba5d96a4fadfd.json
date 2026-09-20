@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-19T07:02:09.778Z",
-    "latestDataDate": "2026-09-19",
-    "currentDate": "2026-09-19",
-    "eventCount": 3409,
+    "generatedAt": "2026-09-20T00:30:29.531Z",
+    "latestDataDate": "2026-09-20",
+    "currentDate": "2026-09-20",
+    "eventCount": 3433,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -81,6 +81,8 @@
       "EV-883d3b5f6d30eb48",
       "EV-e15ae1112294d59e",
       "EV-43301de739fe560e",
+      "EV-6ceebcab1b417cc6",
+      "EV-dda4d9e9b72f3d5d",
       "EV-74db6c0f71f2dad2",
       "EV-8e0c25aebb1d4f5f",
       "EV-85dc7f34cb077fba",
@@ -101,6 +103,7 @@
       "EV-ed58c2c69290ee4c",
       "EV-631197767a45d34c",
       "EV-d53cd33e8f541a65",
+      "EV-36defc1d19f0ce5d",
       "EV-e50dd2bea0180d59",
       "EV-95875c6cc15e6b29",
       "EV-9e2c443eae76fb50",
@@ -116,7 +119,9 @@
       "TX-use_case-software_development",
       "TX-product_form-end_user_application",
       "TX-product_form-model",
-      "TX-technology-code_generation"
+      "TX-technology-code_generation",
+      "TX-technology-open_weights",
+      "TX-deployment_model-cloud"
     ],
     "relatedEntityIds": [
       "EN-e78bdebae031095b",
@@ -124,7 +129,7 @@
       "EN-24caf10fe9bfb1c5"
     ],
     "firstSeen": "2026-05-25",
-    "lastSeen": "2026-09-18",
+    "lastSeen": "2026-09-20",
     "relationIds": [
       "REL2-30051dc5d7668662",
       "REL2-e0b4c492d7f56ad2",
@@ -156,6 +161,8 @@
       ],
       "partnerships": [],
       "productsServices": [
+        "EV-6ceebcab1b417cc6",
+        "EV-dda4d9e9b72f3d5d",
         "EV-74db6c0f71f2dad2",
         "EV-8e0c25aebb1d4f5f",
         "EV-85dc7f34cb077fba",
@@ -180,6 +187,7 @@
       "hardware": [],
       "organizationPeople": [],
       "other": [
+        "EV-36defc1d19f0ce5d",
         "EV-e50dd2bea0180d59",
         "EV-95875c6cc15e6b29",
         "EV-9e2c443eae76fb50",
@@ -192,6 +200,79 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-6ceebcab1b417cc6",
+        "dataDate": "2026-09-20",
+        "date": "2026-09-19",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "xAI 旗下 Grok Voice Transcribe 2.0 语音转文本 API 发布，宣称准确率为 1.0 的两倍且价格不变",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "open_weights",
+            "name": "开放权重",
+            "entityIds": [
+              "EN-6fcba5d96a4fadfd"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "cloud",
+            "name": "云端",
+            "entityIds": [
+              "EN-6fcba5d96a4fadfd"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-6fcba5d96a4fadfd",
+          "EN-f2fba2b04c585d59"
+        ]
+      },
+      {
+        "id": "EV-dda4d9e9b72f3d5d",
+        "dataDate": "2026-09-20",
+        "date": "2026-09-19",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "SpaceXAI 发布 Grok Voice Transcribe 2.0 语音转文本模型，错误率降低约一半且价格不变",
+        "displayTags": [],
+        "entityIds": [
+          "EN-6fcba5d96a4fadfd",
+          "EN-f2fba2b04c585d59"
+        ]
+      },
+      {
+        "id": "EV-36defc1d19f0ce5d",
+        "dataDate": "2026-09-20",
+        "date": "2026-09-19",
+        "eventType": "lawsuit_settlement",
+        "eventTypeLabel": "诉讼与和解",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Anthropic、OpenAI、SpaceXAI 和谷歌因呼吁放缓 AI 研发在美国面临反垄断集体诉讼",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-7d3194f79e645c42",
+          "EN-6fcba5d96a4fadfd",
+          "EN-bbdefa2950f49882"
+        ]
+      },
       {
         "id": "EV-792e2a2b3e98399f",
         "dataDate": "2026-09-18",
@@ -1988,6 +2069,7 @@
         "EV-8a91e14f37d32b4d",
         "EV-31782f0824ae1db1",
         "EV-3c51bcb5e99d2b68",
+        "EV-b739349cfab7e41c",
         "EV-9e2c443eae76fb50",
         "EV-cdc6611d6b115cab",
         "EV-07388b042db1bad0",
@@ -2015,7 +2097,7 @@
         "EN-6fcba5d96a4fadfd"
       ],
       "firstSeen": "2026-05-21",
-      "lastSeen": "2026-09-18"
+      "lastSeen": "2026-09-20"
     },
     {
       "id": "EN-c4bc2d00a42f220f",
@@ -2235,6 +2317,7 @@
         "EV-129ffa6be41bb485",
         "EV-75b9b997e9c7e5d1",
         "EV-b2e374d54b10b9af",
+        "EV-7bffdadf9a6e467e",
         "EV-5ff6037816b64323",
         "EV-0f6e4d81f3dbbb64",
         "EV-b8a7ddde8a7e42c8",
@@ -2388,7 +2471,7 @@
         "HW-033a5b73cdc3f4be"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-09-19"
+      "lastSeen": "2026-09-20"
     },
     {
       "id": "TX-product_form-end_user_application",
@@ -2777,6 +2860,9 @@
         "EV-2ffc3377977da114",
         "EV-2fd730d0ad452334",
         "EV-fd21441fb6e143c3",
+        "EV-10a072b1d240e493",
+        "EV-dfcefb4e6c51ed26",
+        "EV-5ff63c4f72976e83",
         "EV-77d477ee3768ac18",
         "EV-1c44b030ec78ace8",
         "EV-3634cdde2f0152ec",
@@ -3091,6 +3177,10 @@
         "EN-88e2cce43eeadb36",
         "EN-c890cfa67d1da908",
         "EN-7df09a7717ef2feb",
+        "EN-bae152c4560df38c",
+        "EN-9416c7914a254a73",
+        "EN-6c87e5496f592f3c",
+        "EN-bdfc3c0aaa95272a",
         "EN-b5b986f0b7bdcf4b",
         "EN-69337578b2468a88",
         "EN-3a7bd3e2360a3d29",
@@ -3099,7 +3189,6 @@
         "EN-67734881da046ff9",
         "EN-572e31f55b6ac1b1",
         "EN-1a6d6ea981e8688c",
-        "EN-bae152c4560df38c",
         "EN-7d3194f79e645c42",
         "EN-ec31d2be1b244616",
         "EN-39ba5f9dcab4e98a",
@@ -3219,7 +3308,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-19"
+      "lastSeen": "2026-09-20"
     },
     {
       "id": "TX-technology-code_generation",
@@ -3255,6 +3344,7 @@
         "EV-e1a4bc40db4a9d8f",
         "EV-2e8512bbfea3a76a",
         "EV-d5f276ad6b2ac9de",
+        "EV-7bffdadf9a6e467e",
         "EV-ba091f86fba39da0",
         "EV-0f6e4d81f3dbbb64",
         "EV-2868ff08777b5de9",
@@ -3306,9 +3396,9 @@
         "EN-5b3767eb23d5e4ed",
         "EN-3db1f560db626918",
         "EN-047364b9be67f665",
+        "EN-ea3bd73e2b506e00",
         "EN-0b9ca57f53ba758b",
         "EN-8d4321d936320802",
-        "EN-ea3bd73e2b506e00",
         "EN-76a9a8a6e2f1a47b",
         "EN-4adc2faea521b1f1",
         "EN-c857d09db23e6822",
@@ -3335,7 +3425,147 @@
         "HW-b1302168a9ab18e8"
       ],
       "firstSeen": "2026-03-30",
-      "lastSeen": "2026-09-13"
+      "lastSeen": "2026-09-20"
+    },
+    {
+      "id": "TX-technology-open_weights",
+      "name": "开放权重",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "open_weights",
+      "eventIds": [
+        "EV-4f6e481c90ff0e3c",
+        "EV-40fd274ae86434b8",
+        "EV-1abf0d076d30ec6d",
+        "EV-0121f0a9e9a975ec",
+        "EV-d2a623e8eef1f61d",
+        "EV-f55d16df5b5fecb2",
+        "EV-6ceebcab1b417cc6",
+        "EV-e77549afcd91bef8",
+        "EV-1eb30888d3550a34",
+        "EV-50e7de294816f918",
+        "EV-f71726063c6e1615",
+        "EV-b1b396e6ba2fe208",
+        "EV-2afe102017e1b21c",
+        "EV-78651dfea74b4323",
+        "EV-0d5a32aca724d30e",
+        "EV-615fbb4de33fad2d",
+        "EV-defb496c46fcc604",
+        "EV-c17a52220be52dc1",
+        "EV-58e18eab1b072c9a",
+        "EV-c698da7da473b059",
+        "EV-29c0d969abde2020",
+        "EV-7228e4310ee1341a",
+        "EV-890ffd351486b884",
+        "EV-3dc8d5c373ddd1f3",
+        "EV-d230942b0787581a",
+        "EV-db304937ceac95d2",
+        "EV-cfba8b877da20eaf",
+        "EV-63858d9b5ef92175",
+        "EV-acf3df526813ed37",
+        "EV-afcefb5d86a2db45",
+        "EV-ca18725115b61bd3",
+        "EV-0f0b2013927ce156",
+        "EV-702276a31f123374",
+        "EV-fe519605ebb69aaf",
+        "EV-2fea1664807824ce",
+        "EV-b84035029a63e52e",
+        "EV-3028dfadf94c8f4c",
+        "EV-a06011da69abcc3d",
+        "EV-e2da1aafabb3e09c",
+        "EV-2258329f33d413cf",
+        "EV-69ca0385618ff721",
+        "EV-735fac8d2be356bb",
+        "EV-86537be17d50ff20"
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-cd3509f4e1fbec99",
+        "EN-29b9f0cae32e7a8a",
+        "EN-bd6769fe78d0971a",
+        "EN-6fcba5d96a4fadfd",
+        "EN-ab8441a4cd68f01b",
+        "EN-62c5b390b6bbacec",
+        "EN-bbdefa2950f49882",
+        "EN-ea3bd73e2b506e00",
+        "EN-7d3194f79e645c42",
+        "EN-1ea953e1dbed6788",
+        "EN-e59f5a52b6713a29",
+        "EN-a899a3dde1d51caf",
+        "EN-74be4cbf48e647b2",
+        "EN-47dd52018c2b6985",
+        "EN-920510199770f4d6",
+        "EN-422332977c41eb77",
+        "EN-88ab1e5d793701f9",
+        "EN-c70eca6b0f88f44d",
+        "EN-6b61eab266a42eb0",
+        "EN-cc70f504af53013a",
+        "EN-bc1fc5140040180e",
+        "EN-0d1e478de2157d48",
+        "EN-d41ebd9f02722fc8",
+        "EN-b3e3bce83d29e787",
+        "EN-f7a386a451b79627",
+        "EN-b3c2c4e7ae290575",
+        "EN-6ac6ad44bb9995ca"
+      ],
+      "fdeIds": [
+        "FDE-0193a6afd26db7ae",
+        "FDE-a8fea104d63ff671"
+      ],
+      "hardwareIds": [
+        "HW-304c6370cc157449"
+      ],
+      "firstSeen": "2026-05-23",
+      "lastSeen": "2026-09-20"
+    },
+    {
+      "id": "TX-deployment_model-cloud",
+      "name": "云端",
+      "nodeType": "deployment_model",
+      "typeLabel": "部署形态",
+      "valueId": "cloud",
+      "eventIds": [
+        "EV-e70a48e36e99d57a",
+        "EV-4118202ed0f91895",
+        "EV-7e9cc6f0faab48ed",
+        "EV-9fe6938336dea2a2",
+        "EV-be76a1e5ed2b6cf5",
+        "EV-4fba2b2f1ac10a79",
+        "EV-b4b5d141dac164c2",
+        "EV-82f5cd84bf05d11e",
+        "EV-6ceebcab1b417cc6",
+        "EV-7b7cd55cb5330db3",
+        "EV-50e7de294816f918",
+        "EV-29c0d969abde2020",
+        "EV-3dc8d5c373ddd1f3",
+        "EV-fec9e1b9ae2955ee",
+        "EV-c0d8138d8cab5135",
+        "EV-7fb25ff3d853c314",
+        "EV-20cdbe59ba2a1359",
+        "EV-309ea4fc27a66485"
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-0b79cf2de0ee6b8e",
+        "EN-b81c8201acfc7639",
+        "EN-8f5ef31ed5125786",
+        "EN-ea3bd73e2b506e00",
+        "EN-c7d7af20b6ab853d",
+        "EN-fc67129ea8fe8366",
+        "EN-6fcba5d96a4fadfd",
+        "EN-897dae632aeac9d0",
+        "EN-bbdefa2950f49882",
+        "EN-74be4cbf48e647b2",
+        "EN-2613d360c34cdc8c",
+        "EN-842fcb5e60989a03",
+        "EN-6f4e2e93ad6de7f1"
+      ],
+      "fdeIds": [
+        "FDE-3c16927208b7ac37"
+      ],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-03",
+      "lastSeen": "2026-09-20"
     }
   ],
   "fde": [],

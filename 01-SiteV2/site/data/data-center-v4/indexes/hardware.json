@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-19T07:02:09.778Z",
-    "latestDataDate": "2026-09-19",
-    "currentDate": "2026-09-19",
-    "eventCount": 3409,
+    "generatedAt": "2026-09-20T00:30:29.531Z",
+    "latestDataDate": "2026-09-20",
+    "currentDate": "2026-09-20",
+    "eventCount": 3433,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -50,6 +50,33 @@
     ]
   },
   "hardware": [
+    {
+      "id": "HW-489f7f0d9be77d02",
+      "eventId": "EV-e17326c8f33e636c",
+      "dataDate": "2026-09-20",
+      "date": "2026-09-19",
+      "title": "华为汪涛：华为要打造AI算力底座，只做好一颗芯片远远不够",
+      "hardwareType": "ai_accelerator",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "Huawei",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": 288,
+      "capacityUnit": "GB",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://qbitai.com/2026/09/492476.html",
+      "sourceName": "量子位",
+      "sourceDate": "2026-09-19",
+      "entityIds": [
+        "EN-b81c8201acfc7639"
+      ]
+    },
     {
       "id": "HW-ef547aa78d8d0ade",
       "eventId": "EV-5af773d44ac066f7",
@@ -3534,6 +3561,220 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-6fd74d1e67500cb5",
+      "snapshotKey": "6fd74d1e67500cb5",
+      "snapshotId": "HWS-1c8cf542807568e4",
+      "eventId": "EV-e17326c8f33e636c",
+      "eventIds": [
+        "EV-e17326c8f33e636c"
+      ],
+      "dataDate": "2026-09-20",
+      "date": "2026-09-20",
+      "title": "Huawei",
+      "subject": "Huawei",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "specification"
+      ],
+      "latestValues": {
+        "specification": {
+          "metric_value": "288",
+          "unit": "GB",
+          "fact_ref": "HWF-04411e00317b0be1"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-20",
+          "hardware_fact_id": "HWF-04411e00317b0be1",
+          "fact_type": "specification",
+          "observed_at": "2026-09-19T08:28:51.000Z",
+          "subject_entity_id": "EN-b81c8201acfc7639",
+          "subject_name": "Huawei",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "288",
+          "unit": "GB",
+          "source_quote": "昇腾960DT研发进度比原计划 提前三个季度 ，单芯片算力实现倍增，960DT支持2 PFLOPS FP8、4 PFLOPS FP4，HBM容量最高288GB、带宽9.6TB/s。",
+          "event_refs": [
+            "EV-e17326c8f33e636c"
+          ],
+          "claim_ref": "CL-e3c78b5803808171",
+          "source_refs": [
+            "SA-844b4c4aa81ef6d7"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-20/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://qbitai.com/2026/09/492476.html",
+      "entityIds": [
+        "EN-b81c8201acfc7639"
+      ]
+    },
+    {
+      "id": "HWC-1db5091e9cad7e0a",
+      "snapshotKey": "1db5091e9cad7e0a",
+      "snapshotId": "HWS-ad4a9d497ab8c4d5",
+      "eventId": "EV-e17326c8f33e636c",
+      "eventIds": [
+        "EV-e17326c8f33e636c"
+      ],
+      "dataDate": "2026-09-20",
+      "date": "2026-09-20",
+      "title": "Huawei",
+      "subject": "Huawei",
+      "productNames": [],
+      "hardwareType": "ai_accelerator",
+      "factTypes": [
+        "specification"
+      ],
+      "latestValues": {
+        "specification": {
+          "metric_value": "1",
+          "unit": "PB",
+          "fact_ref": "HWF-e7200eeefc417f9e"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-20",
+          "hardware_fact_id": "HWF-e7200eeefc417f9e",
+          "fact_type": "specification",
+          "observed_at": "2026-09-19T08:28:51.000Z",
+          "subject_entity_id": "EN-b81c8201acfc7639",
+          "subject_name": "Huawei",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "ai_accelerator",
+          "metric_value": "1",
+          "unit": "PB",
+          "source_quote": "对应的昇腾960超节点做到4096张NPU卡，最高8EFLOPS FP8算力、超过1PB HBM容量。",
+          "event_refs": [
+            "EV-e17326c8f33e636c"
+          ],
+          "claim_ref": "CL-2ea055d76674cd5b",
+          "source_refs": [
+            "SA-844b4c4aa81ef6d7"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-20/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://qbitai.com/2026/09/492476.html",
+      "entityIds": [
+        "EN-b81c8201acfc7639"
+      ]
+    },
+    {
+      "id": "HWC-a8821f20f885ea94",
+      "snapshotKey": "a8821f20f885ea94",
+      "snapshotId": "HWS-9eb16f8984ad5dfe",
+      "eventId": "EV-7bffdadf9a6e467e",
+      "eventIds": [
+        "EV-7bffdadf9a6e467e"
+      ],
+      "dataDate": "2026-09-20",
+      "date": "2026-09-20",
+      "title": "Muse for Mac / Muse",
+      "subject": "Meta",
+      "productNames": [
+        "Muse for Mac",
+        "Muse"
+      ],
+      "hardwareType": "ai_device",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-68fb09f0c8ae2ac5"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-20",
+          "hardware_fact_id": "HWF-68fb09f0c8ae2ac5",
+          "fact_type": "product",
+          "observed_at": "2026-09-17T00:00:00.000Z",
+          "subject_entity_id": "EN-ea3bd73e2b506e00",
+          "subject_name": "Meta",
+          "product_entity_ids": [
+            "EN-72974fb8d2361dba",
+            "EN-3dae96c3c0f4312a"
+          ],
+          "product_names": [
+            "Muse for Mac",
+            "Muse"
+          ],
+          "component_type": "ai_device",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Meta has released Muse for Mac , the first version of Muse that can complete things on a user’s computer. The agent works with local files and native apps, where your data already lives. It adds a desktop layer to an agent that launched on phones, the web and WhatsApp earlier this month.",
+          "event_refs": [
+            "EV-7bffdadf9a6e467e"
+          ],
+          "claim_ref": "CL-01a2890d5e188d0e",
+          "source_refs": [
+            "SA-620733c77f29f267"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-20/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/09/19/meta-launches-muse-for-mac",
+      "entityIds": [
+        "EN-ea3bd73e2b506e00",
+        "EN-72974fb8d2361dba",
+        "EN-3dae96c3c0f4312a"
+      ]
+    },
     {
       "id": "HWC-5b8722fab040e3bf",
       "snapshotKey": "5b8722fab040e3bf",
@@ -17829,37 +18070,33 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-09-19",
-      "funnel_id": "LF-9e1772d6fbd84190",
+      "data_date": "2026-09-20",
+      "funnel_id": "LF-d8c3e8fb498d478b",
       "lens": "hardware",
-      "date": "2026-09-19",
+      "date": "2026-09-20",
       "monitoring_paths": [
         "hardware_capacity_fab",
-        "hardware_capex",
         "hardware_product_specs",
         "hardware_shipment_deployment",
         "hardware_supply_agreement"
       ],
-      "raw_documents": 33,
-      "original_sources": 30,
-      "valid_claims": 22,
-      "observations": 4,
-      "canonical_events": 8,
+      "raw_documents": 13,
+      "original_sources": 11,
+      "valid_claims": 9,
+      "observations": 3,
+      "canonical_events": 4,
       "blocker_counts": {
-        "no_source_bounded_event": 1,
-        "source_outside_daily_window": 9,
+        "source_outside_daily_window": 5,
         "non_event_or_index_title": 2,
-        "raw_source_quality_block": 4,
-        "domestic_publication_date_unverified": 6,
-        "event_not_ai_relevant": 2
+        "raw_source_quality_block": 2
       },
       "rates": {
-        "original_source_rate": 0.9090909090909091,
-        "valid_claim_rate": 0.6666666666666666,
-        "observation_rate": 0.18181818181818182,
-        "event_conversion_rate": 0.36363636363636365
+        "original_source_rate": 0.8461538461538461,
+        "valid_claim_rate": 0.6923076923076923,
+        "observation_rate": 0.3333333333333333,
+        "event_conversion_rate": 0.4444444444444444
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-19/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-20/monitoring-funnel.json"
     }
   ]
 }
