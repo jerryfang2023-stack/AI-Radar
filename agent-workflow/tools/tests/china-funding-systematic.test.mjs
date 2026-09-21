@@ -139,3 +139,11 @@ test("China funding geography belongs to the recipient, not its Chinese investor
   assert.equal(chinaFundingActorEvidence("Acme", "Acme完成融资，投资方是深圳甲智能科技有限公司。").matched, false);
   assert.equal(chinaFundingActorEvidence("Acme", "投资界报道，Acme获得中国企业投资。").matched, false);
 });
+
+test("China recipient locality recognizes an explicit city-company apposition", () => {
+  assert.equal(chinaFundingActorEvidence("千觉机器人", "上海具身触觉公司 千觉机器人 宣布连续 完成两轮数亿元战略融资").matched, true);
+  assert.equal(chinaFundingActorEvidence("千觉机器人", "融资消息：上海具身触觉公司千觉机器人宣布完成融资。").matched, true);
+  assert.equal(chinaFundingActorEvidence("Acme", "上海具身触觉公司千觉机器人宣布投资Acme。").matched, false);
+  assert.equal(chinaFundingActorEvidence("Acme", "上海媒体报道，Acme宣布完成融资。").matched, false);
+  assert.equal(chinaFundingActorEvidence("Acme", "Acme由上海交通大学教授创立。").matched, false);
+});

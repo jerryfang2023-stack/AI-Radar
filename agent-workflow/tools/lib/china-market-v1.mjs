@@ -263,6 +263,7 @@ export function chinaMarketBasisType(value = "") {
   if (basis.startsWith("china_entity:")) return "actor_origin";
   if (basis.startsWith("china_legal_entity:")) return "actor_origin";
   if (basis.startsWith("china_entity_headquarters:")) return "actor_origin";
+  if (basis.startsWith("china_entity_locality:")) return "actor_origin";
   if (/国家网信办|工业和信息化部|工信部|备案|算法/u.test(basis)) return "regulatory_jurisdiction";
   if (/落地|部署|客户案例|智算中心/u.test(basis)) return "deployment_location";
   if (basis) return "event_market";
@@ -282,6 +283,10 @@ export function chinaFundingActorEvidence(subject, evidence) {
     }
   }
   const escaped = name.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&");
+  // Bind the city descriptor directly to the funded company. A publisher,
+  // investor, founder's university or a later company mention is not its origin.
+  const localCompany = String(evidence || "").match(new RegExp(`(?:^|[。！？\\n：:])\\s*((?:北京|上海|深圳|广州|杭州|南京|苏州|成都|武汉|西安|合肥|天津|重庆|宁波|无锡|香港|厦门|长沙|济南|青岛)[\\p{Script=Han}A-Za-z0-9+/-]{0,16}(?:公司|企业)\\s*${escaped})(?=\\s*(?:宣布|完成|获得|获|是一家|成立|，|,))`, "u"));
+  if (localCompany) return { matched: true, basis: `china_entity_locality:${localCompany[1]}` };
   const headquarters = String(evidence || "").match(new RegExp(`${escaped}[^。！？\\n]{0,100}总部(?:位于|设于|设在|落户)(?:中国)?(?:北京|上海|深圳|广州|杭州|南京|苏州|成都|武汉|西安|合肥|天津|重庆|宁波|无锡|香港|厦门|长沙|济南|青岛|(?:浙江|江苏|广东|安徽|福建|山东|湖北|湖南|四川|河南|河北|陕西|江西|山西|云南|贵州|甘肃|吉林|辽宁|海南|青海|黑龙江)省)`, "u"));
   return headquarters ? { matched: true, basis: `china_entity_headquarters:${headquarters[0]}` } : { matched: false, basis: "" };
 }
