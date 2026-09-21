@@ -126,6 +126,21 @@ test("preserves multiplier words and scaled non-money counts", () => {
   assert.equal(sourceTitleFactsPreserved("double the performance", "性能翻一番"), true);
 });
 
+test("distinguishes Chinese growth increments from final multipliers", () => {
+  const source = "Daily AI usage in the U.S. has more than doubled in just six months";
+  for (const translation of [
+    "美国每日AI使用量在短短六个月内增长了一倍多",
+    "美国日常AI使用量在短短六个月内增长逾一倍",
+    "美国每日AI使用量在六个月内增长超过1倍",
+  ]) assert.equal(sourceTitleFactsPreserved(source, translation), true, translation);
+  for (const translation of [
+    "美国每日AI使用量在六个月内增长两倍",
+    "美国每日AI使用量在五个月内增长一倍多",
+    "美国每日AI使用量在六个月内增长至一倍",
+  ]) assert.equal(sourceTitleFactsPreserved(source, translation), false, translation);
+  assert.equal(sourceTitleFactsPreserved("AI usage tripled in six months", "AI使用量在六个月内增长两倍"), true);
+});
+
 test("recognizes explicitly qualified Indian rupees without accepting magnitude errors", () => {
   const source = "TCS Wins INR 122 Crore Bid to Build AI-enabled Digital Governance Platform";
   assert.equal(sourceTitleFactsPreserved(source, "TCS 赢得 12.2 亿印度卢比项目，构建 AI 数字治理平台"), true);

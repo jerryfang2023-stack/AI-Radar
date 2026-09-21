@@ -35,6 +35,11 @@ despite a failed outcome.
    Calendar equivalence accepts spaces between a Chinese month number and 月;
    translated months, days and years remain protected. A correct spaced Chinese
    date must not force repeated model calls or source recollection.
+   Chinese growth increments must compare with the final English multiplier:
+   "增长一倍" corresponds to "doubled", whereas "增长两倍" corresponds to
+   "tripled". Keep changed durations and growth-to-level wording distinct.
+   The September 21 regression uses both actual rejected DeepSeek translations;
+   repair the numeric comparator rather than replacing the source or bypassing it.
 
 ## Preserve operational state
 
