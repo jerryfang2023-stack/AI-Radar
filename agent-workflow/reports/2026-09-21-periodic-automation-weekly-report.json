@@ -1,0 +1,81 @@
+{
+  "ok": true,
+  "status": "page_gate_passed_with_opportunity_warning",
+  "window": {
+    "start": "2026-09-14",
+    "end": "2026-09-20",
+    "reportDate": "2026-09-21"
+  },
+  "actions": [
+    {
+      "label": "build weekly V4 opportunity evidence",
+      "ok": true,
+      "status": 0,
+      "command": "node 01-SiteV2/site/scripts/build-industry-reports-frontstage.mjs --date=2026-09-20",
+      "stdout": "{\n  \"ok\": true,\n  \"output\": \"01-SiteV2/site/data/opportunity-evidence-v2.json\",\n  \"activeDate\": \"2026-09-20\",\n  \"evidence\": 988,\n  \"directionCards\": 0\n}",
+      "stderr": ""
+    },
+    {
+      "label": "V4 opportunity evidence tests",
+      "ok": true,
+      "status": 0,
+      "command": "node --test agent-workflow/tools/tests/industry-reports-frontstage.test.mjs",
+      "stdout": "TAP version 13\n# Subtest: Opportunity Map projection reads accepted V4 evidence without Signal Cards\nok 1 - Opportunity Map projection reads accepted V4 evidence without Signal Cards\n  ---\n  duration_ms: 1131.862384\n  type: 'test'\n  ...\n# Subtest: frontstage gate accepts an empty direction-card day only when metadata agrees\nok 2 - frontstage gate accepts an empty direction-card day only when metadata agrees\n  ---\n  duration_ms: 1.056952\n  type: 'test'\n  ...\n# Subtest: Opportunity Map projection builds from V4 fixtures when all V3 assets are absent\nok 3 - Opportunity Map projection builds from V4 fixtures when all V3 assets are absent\n  ---\n  duration_ms: 2.662677\n  type: 'test'\n  ...\n# Subtest: Opportunity Map evidence excludes viewpoints, community material, and OPS reports\nok 4 - Opportunity Map evidence excludes viewpoints, community material, and OPS reports\n  ---\n  duration_ms: 0.327932\n  type: 'test'\n  ...\n# Subtest: legacy public routes and report pages redirect to their current owners\nok 5 - legacy public routes and report pages redirect to their current owners\n  ---\n  duration_ms: 0.792267\n  type: 'test'\n  ...\n# Subtest: the two latest weekly issues keep stable compatibility redirects\nok 6 - the two latest weekly issues keep stable compatibility redirects\n  ---\n  duration_ms: 2.046228\n  type: 'test'\n  ...\n# Subtest: retired V3 page assets and datasets are absent while the current internal viewpoint feed stays private\nok 7 - retired V3 page assets and datasets are absent while the current internal viewpoint feed stays private\n  ---\n  duration_ms: 0.381732\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 1233.072909",
+      "stderr": ""
+    },
+    {
+      "label": "DeepSeek Pro V4 direction card candidates",
+      "ok": false,
+      "status": 1,
+      "command": "node agent-workflow/tools/generate-opportunity-direction-cards-deepseek.mjs --date=2026-09-20",
+      "stdout": "",
+      "stderr": "Error: deepseek_json_quality_failed:candidate_1:unsupported_number:2\n    at deepSeekJsonCompletion (file:///home/runner/work/AI-Radar/AI-Radar/agent-workflow/tools/deepseek-translation-client.mjs:115:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async main (file:///home/runner/work/AI-Radar/AI-Radar/agent-workflow/tools/generate-opportunity-direction-cards-deepseek.mjs:178:18)"
+    },
+    {
+      "label": "DeepSeek Pro report draft",
+      "ok": true,
+      "status": 0,
+      "command": "node agent-workflow/tools/generate-periodic-report-deepseek.mjs --kind=weekly --date=2026-09-21 --window-start=2026-09-14 --window-end=2026-09-20",
+      "stdout": "{\"stage\":\"draft-validation\",\"attempt\":1,\"problems\":[],\"visibleCharacters\":3765}\n{\n  \"ok\": true,\n  \"kind\": \"weekly\",\n  \"date\": \"2026-09-21\",\n  \"content\": \"01-SiteV2/content/12-applications/industry-reports/2026-09-21--weekly-report--ai-business-change-radar.md\",\n  \"counts\": {\n    \"Signals\": 246,\n    \"Opinions\": 72,\n    \"Community\": 210\n  }\n}",
+      "stderr": ""
+    },
+    {
+      "label": "content acceptance gate",
+      "ok": true,
+      "status": 0,
+      "command": "node agent-workflow/tools/assert-periodic-report-content.mjs --kind=weekly --date=2026-09-21 --window-start=2026-09-14 --window-end=2026-09-20",
+      "stdout": "{\n  \"ok\": true,\n  \"kind\": \"weekly\",\n  \"date\": \"2026-09-21\",\n  \"report\": \"agent-workflow/reports/2026-09-21-weekly-content-gate.json\",\n  \"failures\": []\n}",
+      "stderr": ""
+    },
+    {
+      "label": "deterministic report page renderer",
+      "ok": true,
+      "status": 0,
+      "command": "node agent-workflow/tools/render-periodic-report-pages.mjs --kind=weekly --date=2026-09-21",
+      "stdout": "{\n  \"ok\": true,\n  \"kind\": \"weekly\",\n  \"date\": \"2026-09-21\",\n  \"route\": \"weekly-ai-business-change-radar-2026-09-21.html\",\n  \"source\": \"01-SiteV2/content/12-applications/industry-reports/2026-09-21--weekly-report--ai-business-change-radar.md\",\n  \"target\": \"https://www.zkdlj.vip/#report/weekly-2026-w38\"\n}",
+      "stderr": ""
+    },
+    {
+      "label": "periodic report renderer tests",
+      "ok": true,
+      "status": 0,
+      "command": "node --test agent-workflow/tools/tests/periodic-report-renderer.test.mjs",
+      "stdout": "TAP version 13\n# Subtest: periodic renderer owns the report-center release version\nok 1 - periodic renderer owns the report-center release version\n  ---\n  duration_ms: 1.091436\n  type: 'test'\n  ...\n# Subtest: periodic report titles support varied evidence-bearing structures\nok 2 - periodic report titles support varied evidence-bearing structures\n  ---\n  duration_ms: 1.713757\n  type: 'test'\n  ...\n# Subtest: periodic report title corpus rejects mechanical template repetition\nok 3 - periodic report title corpus rejects mechanical template repetition\n  ---\n  duration_ms: 0.537062\n  type: 'test'\n  ...\n# Subtest: June monthly title records the standalone DeepSeek title skill provenance\nok 4 - June monthly title records the standalone DeepSeek title skill provenance\n  ---\n  duration_ms: 0.851569\n  type: 'test'\n  ...\n# Subtest: periodic renderer removes all inline source annotations without harming readability\nok 5 - periodic renderer removes all inline source annotations without harming readability\n  ---\n  duration_ms: 1.288072\n  type: 'test'\n  ...\n# Subtest: public evidence index resolves event, viewpoint, and historical community sources\nok 6 - public evidence index resolves event, viewpoint, and historical community sources\n  ---\n  duration_ms: 525.13875\n  type: 'test'\n  ...\n# Subtest: public evidence index keeps historical viewpoint sources after current snapshots are rebuilt\nok 7 - public evidence index keeps historical viewpoint sources after current snapshots are rebuilt\n  ---\n  duration_ms: 2.536482\n  type: 'test'\n  ...\n# Subtest: periodic renderer escapes model-supplied HTML\nok 8 - periodic renderer escapes model-supplied HTML\n  ---\n  duration_ms: 0.465297\n  type: 'test'\n  ...\n# Subtest: historical weekly reports retain analysis modules after requested module removal\nok 9 - historical weekly reports retain analysis modules after requested module removal\n  ---\n  duration_ms: 5.850053\n  type: 'test'\n  ...\n# Subtest: published reports exclude user-removed modules while retaining stable identity and body\nok 10 - published reports exclude user-removed modules while retaining stable identity and body\n  ---\n  duration_ms: 11.977364\n  type: 'test'\n  ...\n# Subtest: all published periodic report pages omit inline source annotations\nok 11 - all published periodic report pages omit inline source annotations\n  ---\n  duration_ms: 2.379029\n  type: 'test'\n  ...\n# Subtest: monthly reports preserve prose and render editorial tables for mobile\nok 12 - monthly reports preserve prose and render editorial tables for mobile\n  ---\n  duration_ms: 1.033738\n  type: 'test'\n  ...\n# Subtest: report center and report routes redirect to stable funding portal hashes\nok 13 - report center and report routes redirect to stable funding portal hashes\n  ---\n  duration_ms: 2.405297\n  type: 'test'\n  ...\n1..13\n# tests 13\n# suites 0\n# pass 13\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 633.679106",
+      "stderr": ""
+    },
+    {
+      "label": "V4 report shell syntax",
+      "ok": true,
+      "status": 0,
+      "command": "node --check 01-SiteV2/site/assets/v4-report-shell.js",
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "opportunity_warning": true,
+  "phase": "weekly-report",
+  "date": "2026-09-21",
+  "dry_run": false,
+  "report_provider": "deepseek",
+  "generated_at": "2026-09-21T08:11:54.123Z"
+}
