@@ -5,16 +5,16 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-09-19T00:31:20.674Z",
+    "generated_at": "2026-09-21T00:39:13.515Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 483,
-    "input_hash": "242def048f7c95ce",
+    "decision_count": 488,
+    "input_hash": "263aefcb4f40b535",
     "override_count": 18,
-    "needs_review_count": 54,
-    "low_confidence_count": 73
+    "needs_review_count": 55,
+    "low_confidence_count": 75
   },
   "decisions": [
     {
@@ -9659,6 +9659,111 @@
       "confidence": 0.85,
       "needs_review": false,
       "rationale": "产品围绕工业设计这一特定行业工作流，直接生成工业设计方案，客户为东风、中车、商飞、奔驰、特斯拉等制造与汽车交通企业，符合行业应用而非跨行业企业应用或物理AI。"
+    },
+    {
+      "event_id": "EV-d5d58c23fa179e23",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "consumer_retail",
+      "market_application_id": "",
+      "product_form_id": "ai_device",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "consumer"
+      ],
+      "confidence": 0.7,
+      "needs_review": true,
+      "rationale": "产品为宠物穿戴设备、摄像头和窝垫，直接面向宠物主消费者，围绕宠物健康与行为监测这一特定消费场景，属于行业应用中的消费零售，而非通用企业应用或基础设施。"
+    },
+    {
+      "event_id": "EV-bdd1611cc17c3325",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "data",
+      "market_application_id": "synthetic_data",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "physical_automation",
+        "data_analysis"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "automotive_transportation"
+      ],
+      "target_user_ids": [
+        "developer",
+        "researcher"
+      ],
+      "confidence": 0.75,
+      "needs_review": false,
+      "rationale": "公司核心产品为触觉传感器、触觉具身模型和触觉交互数据集，为机器人等AI产品提供数据与模型基础设施，属于基础设施计算中的数据合成与开发部署。"
+    },
+    {
+      "event_id": "EV-3c7609d3fc7b7ec8",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "energy_utilities",
+        "government_public_sector",
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "public_sector_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "公司自研四足机器狗和人形机器人，具备自主导航、环境感知与智能决策能力，直接作用于物理世界，符合物理AI定义。"
+    },
+    {
+      "event_id": "EV-d959c800774d5d30",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "energy_utilities",
+        "government_public_sector",
+        "education"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "public_sector_user",
+        "educator"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "公司自研四足机器狗和全尺寸人形机器人，产品已进入电力、石化、消防、安防、应急、教育等行业，直接执行物理世界任务，属于物理AI。"
+    },
+    {
+      "event_id": "EV-b9be18b12b1714f3",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "chips",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "automotive_transportation",
+        "energy_utilities"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.8,
+      "needs_review": false,
+      "rationale": "公司产品为车规级功率模块和AI级SST模块等芯片级硬件，为AI数据中心和整车供电架构提供底层硬件支持，属于基础设施计算中的硬件芯片。"
     }
   ]
 }

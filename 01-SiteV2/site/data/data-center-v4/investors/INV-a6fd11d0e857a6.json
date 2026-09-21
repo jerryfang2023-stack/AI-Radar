@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-21T00:32:45.144Z",
-    "latestDataDate": "2026-09-20",
-    "currentDate": "2026-09-20",
-    "eventCount": 3434,
+    "generatedAt": "2026-09-21T03:59:32.097Z",
+    "latestDataDate": "2026-09-21",
+    "currentDate": "2026-09-21",
+    "eventCount": 3444,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -59,7 +59,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 2,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 2,
     "market_regions": [
       "CN"
@@ -67,9 +67,9 @@
     "china_market_activity_count": 2,
     "china_market_company_count": 2,
     "first_disclosed_at": "2026-07-02",
-    "latest_disclosed_at": "2026-07-06",
+    "latest_disclosed_at": "2026-09-20",
     "role_counts": {
-      "historical_or_ambiguous": 1,
+      "historical_or_ambiguous": 2,
       "lead": 1,
       "participant": 1
     },
@@ -90,6 +90,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-118b044435096746",
+        "funding_insight_id": "FI-8af42a8c953a4ffb",
+        "event_ids": [
+          "EV-b9be18b12b1714f3"
+        ],
+        "company_entity_id": "EN-92d14efa2f3f44b1",
+        "company_canonical_entity_id": "",
+        "company_name": "浙江晶能微电子股份有限公司",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "6.3亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 630000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6.3 亿元"
+        },
+        "announced_at": "2026-09-20",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A轮跟投方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-8ffab0ff3ac3652d",
+            "source_url": "https://www.geener.cn/energy/company",
+            "source_title": "公司概况-晶能微电子",
+            "source_content_hash": "3b22df3d79c4eff4",
+            "quote": "2023年6月，完成A轮融资，由高榕资本领投，吉利资本、厦门建发等数十家机构跟投",
+            "quote_hash": "50f37d9ed489af968f91b8a9e3d7b149627b36e40c82a88406379c31c5210615"
+          }
+        ]
+      },
       {
         "activity_id": "IA-9b67bf0d1def4e71",
         "funding_insight_id": "FI-f7342735e68375d9",
@@ -213,6 +253,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-8ffab0ff3ac3652d",
+        "source_url": "https://www.geener.cn/energy/company",
+        "source_title": "公司概况-晶能微电子",
+        "source_content_hash": "3b22df3d79c4eff4",
+        "quote": "2023年6月，完成A轮融资，由高榕资本领投，吉利资本、厦门建发等数十家机构跟投",
+        "quote_hash": "50f37d9ed489af968f91b8a9e3d7b149627b36e40c82a88406379c31c5210615"
+      },
       {
         "source_id": "FISRC-5484b51c45e4fa41",
         "source_url": "https://news.pedaily.cn/202511/557546.shtml",

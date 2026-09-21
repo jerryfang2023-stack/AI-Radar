@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-21T00:32:45.144Z",
-    "latestDataDate": "2026-09-20",
-    "currentDate": "2026-09-20",
-    "eventCount": 3434,
+    "generatedAt": "2026-09-21T03:59:32.097Z",
+    "latestDataDate": "2026-09-21",
+    "currentDate": "2026-09-21",
+    "eventCount": 3444,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -56,6 +56,7 @@
     "typeLabel": "AI 市场子类",
     "valueId": "consumer_retail",
     "eventIds": [
+      "EV-d5d58c23fa179e23",
       "EV-2cf2ab399eb05035",
       "EV-f1553722b4ce43af",
       "EV-02882e6f5e1902c6",
@@ -71,6 +72,7 @@
       "EV-cba16bd541a07032"
     ],
     "entityIds": [
+      "EN-4df6f0f59120b360",
       "EN-66c09c4c12ce671c",
       "EN-b80e0af617d0f8ff",
       "EN-2a920347dfcf07a7",
@@ -88,9 +90,242 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-03-16",
-    "lastSeen": "2026-09-12"
+    "lastSeen": "2026-09-21"
   },
   "events": [
+    {
+      "id": "EV-d5d58c23fa179e23",
+      "dataDate": "2026-09-21",
+      "date": "2026-09-20",
+      "updatedDate": "2026-09-21",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Moonback完成首轮数千万元人民币融资，加码宠物AI",
+      "originalTitle": "",
+      "subject": "Moonback",
+      "action": "完成首轮数千万元人民币融资",
+      "object": "，加码宠物AI",
+      "metrics": [
+        "数千万元"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "industry_applications",
+            "name": "行业应用",
+            "entityIds": [
+              "EN-4df6f0f59120b360"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-6ce9a14f0df0896b",
+            "fundingInsightId": "FI-73ce1a35019b849e"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "consumer_retail",
+            "name": "消费与零售",
+            "entityIds": [
+              "EN-4df6f0f59120b360"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-08c0179ab283961e",
+            "fundingInsightId": "FI-73ce1a35019b849e"
+          }
+        ],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_device",
+            "name": "AI 设备",
+            "entityIds": [
+              "EN-4df6f0f59120b360"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-3800e49a4291b8bb",
+            "fundingInsightId": "FI-73ce1a35019b849e"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-4df6f0f59120b360"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-e2e3c3145a323d35",
+            "fundingInsightId": "FI-73ce1a35019b849e"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "consumer",
+            "name": "个人用户",
+            "entityIds": [
+              "EN-4df6f0f59120b360"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-1ed28d0b41fd8a98",
+            "fundingInsightId": "FI-73ce1a35019b849e"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "industry_applications",
+          "name": "行业应用",
+          "entityIds": [
+            "EN-4df6f0f59120b360"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-6ce9a14f0df0896b",
+          "fundingInsightId": "FI-73ce1a35019b849e"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "consumer_retail",
+          "name": "消费与零售",
+          "entityIds": [
+            "EN-4df6f0f59120b360"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-08c0179ab283961e",
+          "fundingInsightId": "FI-73ce1a35019b849e"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [
+            "EN-4df6f0f59120b360"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-3800e49a4291b8bb",
+          "fundingInsightId": "FI-73ce1a35019b849e"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "consumer",
+          "name": "个人用户",
+          "entityIds": [
+            "EN-4df6f0f59120b360"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-1ed28d0b41fd8a98",
+          "fundingInsightId": "FI-73ce1a35019b849e"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-4df6f0f59120b360"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-e2e3c3145a323d35",
+          "fundingInsightId": "FI-73ce1a35019b849e"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "industry_applications",
+          "name": "行业应用",
+          "entityIds": [
+            "EN-4df6f0f59120b360"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-6ce9a14f0df0896b",
+          "fundingInsightId": "FI-73ce1a35019b849e"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "consumer_retail",
+          "name": "消费与零售",
+          "entityIds": [
+            "EN-4df6f0f59120b360"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-08c0179ab283961e",
+          "fundingInsightId": "FI-73ce1a35019b849e"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [
+            "EN-4df6f0f59120b360"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-3800e49a4291b8bb",
+          "fundingInsightId": "FI-73ce1a35019b849e"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-4df6f0f59120b360"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-e2e3c3145a323d35",
+          "fundingInsightId": "FI-73ce1a35019b849e"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "consumer",
+          "name": "个人用户",
+          "entityIds": [
+            "EN-4df6f0f59120b360"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-1ed28d0b41fd8a98",
+          "fundingInsightId": "FI-73ce1a35019b849e"
+        }
+      ],
+      "entityIds": [
+        "EN-4df6f0f59120b360"
+      ],
+      "entityNames": [
+        "Moonback"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.pedaily.cn/202609/569297.shtml",
+      "publisher": "投资界"
+    },
     {
       "id": "EV-2cf2ab399eb05035",
       "dataDate": "2026-09-12",
@@ -4092,6 +4327,32 @@
   ],
   "entities": [
     {
+      "id": "EN-4df6f0f59120b360",
+      "name": "Moonback",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-66f24f6db71cc011",
+        "EV-d5d58c23fa179e23"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-physical_automation",
+        "TX-ai_market_category-industry_applications",
+        "TX-ai_market_subcategory-consumer_retail",
+        "TX-product_form-ai_device",
+        "TX-target_user-consumer"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-20",
+      "lastSeen": "2026-09-21"
+    },
+    {
       "id": "EN-66c09c4c12ce671c",
       "name": "中科欣扬",
       "entityType": "organization_candidate",
@@ -4108,15 +4369,15 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-researcher",
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
-        "TX-industry-healthcare_life_sciences",
+        "TX-target_user-researcher",
         "TX-ai_market_category-industry_applications",
+        "TX-ai_market_subcategory-consumer_retail",
+        "TX-industry-healthcare_life_sciences",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-research_discovery",
-        "TX-use_case-productivity_enterprise_workflows",
-        "TX-industry-manufacturing",
-        "TX-ai_market_subcategory-consumer_retail"
+        "TX-use_case-productivity_enterprise_workflows"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-31",
@@ -4138,11 +4399,11 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-industry_applications",
+        "TX-ai_market_subcategory-consumer_retail",
+        "TX-target_user-consumer",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-end_user_application",
-        "TX-target_user-consumer",
-        "TX-industry-construction_real_estate",
-        "TX-ai_market_subcategory-consumer_retail"
+        "TX-industry-construction_real_estate"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-29",
@@ -4171,11 +4432,11 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-industry_applications",
-        "TX-use_case-productivity_enterprise_workflows",
-        "TX-target_user-consumer",
-        "TX-industry-retail_ecommerce",
+        "TX-ai_market_subcategory-consumer_retail",
         "TX-product_form-ai_device",
-        "TX-ai_market_subcategory-consumer_retail"
+        "TX-target_user-consumer",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-industry-retail_ecommerce"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-01",
@@ -4199,11 +4460,11 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-industry_applications",
-        "TX-product_form-end_user_application",
+        "TX-ai_market_subcategory-consumer_retail",
         "TX-target_user-consumer",
+        "TX-product_form-end_user_application",
         "TX-industry-media_entertainment",
-        "TX-use_case-content_creation",
-        "TX-ai_market_subcategory-consumer_retail"
+        "TX-use_case-content_creation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-22",
@@ -4225,13 +4486,13 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-industry_applications",
+        "TX-ai_market_subcategory-consumer_retail",
+        "TX-product_form-ai_device",
         "TX-target_user-consumer",
         "TX-industry-media_entertainment",
         "TX-industry-retail_ecommerce",
         "TX-use_case-content_creation",
-        "TX-use_case-education_learning",
-        "TX-product_form-ai_device",
-        "TX-ai_market_subcategory-consumer_retail"
+        "TX-use_case-education_learning"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-13",
@@ -4253,13 +4514,13 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-target_user-business_user",
-        "TX-ai_market_category-industry_applications",
-        "TX-product_form-enterprise_software_platform",
         "TX-use_case-data_analysis",
+        "TX-ai_market_category-industry_applications",
+        "TX-ai_market_subcategory-consumer_retail",
+        "TX-product_form-enterprise_software_platform",
         "TX-industry-logistics_supply_chain",
         "TX-industry-retail_ecommerce",
-        "TX-use_case-procurement_supply_chain",
-        "TX-ai_market_subcategory-consumer_retail"
+        "TX-use_case-procurement_supply_chain"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-12",
@@ -4282,11 +4543,11 @@
       "classificationRefs": [
         "TX-target_user-business_user",
         "TX-ai_market_category-industry_applications",
+        "TX-ai_market_subcategory-consumer_retail",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-end_user_application",
         "TX-industry-food_hospitality",
-        "TX-use_case-customer_support",
-        "TX-ai_market_subcategory-consumer_retail"
+        "TX-use_case-customer_support"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-09",
@@ -4309,10 +4570,10 @@
       "classificationRefs": [
         "TX-target_user-business_user",
         "TX-ai_market_category-industry_applications",
+        "TX-ai_market_subcategory-consumer_retail",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-industry-construction_real_estate",
-        "TX-ai_market_subcategory-consumer_retail"
+        "TX-industry-construction_real_estate"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-27",
@@ -4335,10 +4596,10 @@
       "classificationRefs": [
         "TX-target_user-business_user",
         "TX-ai_market_category-industry_applications",
-        "TX-product_form-enterprise_software_platform",
-        "TX-use_case-productivity_enterprise_workflows",
+        "TX-ai_market_subcategory-consumer_retail",
         "TX-industry-education",
-        "TX-ai_market_subcategory-consumer_retail"
+        "TX-product_form-enterprise_software_platform",
+        "TX-use_case-productivity_enterprise_workflows"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-25",
@@ -4361,11 +4622,11 @@
       "classificationRefs": [
         "TX-target_user-business_user",
         "TX-ai_market_category-industry_applications",
+        "TX-ai_market_subcategory-consumer_retail",
+        "TX-target_user-consumer",
         "TX-use_case-design_engineering",
         "TX-product_form-end_user_application",
-        "TX-target_user-consumer",
-        "TX-industry-construction_real_estate",
-        "TX-ai_market_subcategory-consumer_retail"
+        "TX-industry-construction_real_estate"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-29",
@@ -4388,10 +4649,10 @@
       "classificationRefs": [
         "TX-target_user-business_user",
         "TX-ai_market_category-industry_applications",
+        "TX-ai_market_subcategory-consumer_retail",
         "TX-use_case-design_engineering",
         "TX-product_form-end_user_application",
-        "TX-industry-construction_real_estate",
-        "TX-ai_market_subcategory-consumer_retail"
+        "TX-industry-construction_real_estate"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-23",
@@ -4414,11 +4675,11 @@
       "classificationRefs": [
         "TX-target_user-business_user",
         "TX-ai_market_category-industry_applications",
-        "TX-product_form-end_user_application",
+        "TX-ai_market_subcategory-consumer_retail",
         "TX-target_user-consumer",
+        "TX-product_form-end_user_application",
         "TX-industry-media_entertainment",
-        "TX-use_case-content_creation",
-        "TX-ai_market_subcategory-consumer_retail"
+        "TX-use_case-content_creation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-04-28",
@@ -4442,12 +4703,12 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-ai_market_category-industry_applications",
-        "TX-use_case-knowledge_search",
-        "TX-target_user-consumer",
-        "TX-industry-retail_ecommerce",
-        "TX-use_case-content_creation",
+        "TX-ai_market_subcategory-consumer_retail",
         "TX-product_form-ai_device",
-        "TX-ai_market_subcategory-consumer_retail"
+        "TX-target_user-consumer",
+        "TX-use_case-knowledge_search",
+        "TX-industry-retail_ecommerce",
+        "TX-use_case-content_creation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-03-16",

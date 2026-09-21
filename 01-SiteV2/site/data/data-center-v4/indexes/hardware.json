@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-21T00:32:45.144Z",
-    "latestDataDate": "2026-09-20",
-    "currentDate": "2026-09-20",
-    "eventCount": 3434,
+    "generatedAt": "2026-09-21T03:59:32.097Z",
+    "latestDataDate": "2026-09-21",
+    "currentDate": "2026-09-21",
+    "eventCount": 3444,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -18070,36 +18070,27 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-09-20",
-      "funnel_id": "LF-d8c3e8fb498d478b",
+      "data_date": "2026-09-21",
+      "funnel_id": "LF-e4fefad4c87b05ae",
       "lens": "hardware",
-      "date": "2026-09-20",
-      "monitoring_paths": [
-        "hardware_capacity_fab",
-        "hardware_product_specs",
-        "hardware_shipment_deployment",
-        "hardware_supply_agreement"
-      ],
-      "raw_documents": 20,
-      "original_sources": 18,
-      "valid_claims": 11,
-      "observations": 3,
-      "canonical_events": 5,
+      "date": "2026-09-21",
+      "monitoring_paths": [],
+      "raw_documents": 7,
+      "original_sources": 7,
+      "valid_claims": 4,
+      "observations": 0,
+      "canonical_events": 3,
       "blocker_counts": {
-        "source_outside_daily_window": 5,
-        "non_event_or_index_title": 2,
-        "raw_source_quality_block": 2,
-        "domestic_publication_date_unverified": 2,
-        "event_not_ai_relevant": 3,
-        "source_outside_funding_backfill_window": 1
+        "event_not_ai_relevant": 2,
+        "domestic_publication_date_unverified": 2
       },
       "rates": {
-        "original_source_rate": 0.9,
-        "valid_claim_rate": 0.55,
-        "observation_rate": 0.2727272727272727,
-        "event_conversion_rate": 0.45454545454545453
+        "original_source_rate": 1,
+        "valid_claim_rate": 0.5714285714285714,
+        "observation_rate": 0,
+        "event_conversion_rate": 0.75
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-20/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-21/monitoring-funnel.json"
     }
   ]
 }

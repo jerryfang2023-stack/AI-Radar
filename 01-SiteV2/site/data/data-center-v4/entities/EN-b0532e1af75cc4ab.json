@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-21T00:32:45.144Z",
-    "latestDataDate": "2026-09-20",
-    "currentDate": "2026-09-20",
-    "eventCount": 3434,
+    "generatedAt": "2026-09-21T03:59:32.097Z",
+    "latestDataDate": "2026-09-21",
+    "currentDate": "2026-09-21",
+    "eventCount": 3444,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -101,11 +101,11 @@
     "classificationRefs": [
       "TX-ai_market_category-infrastructure_compute",
       "TX-target_user-developer",
+      "TX-ai_market_application-synthetic_data",
+      "TX-ai_market_subcategory-data",
       "TX-product_form-model",
       "TX-use_case-content_creation",
-      "TX-technology-agentic_execution",
-      "TX-ai_market_subcategory-data",
-      "TX-ai_market_application-synthetic_data"
+      "TX-technology-agentic_execution"
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-04-02",
@@ -2298,6 +2298,8 @@
       "typeLabel": "AI 市场类别",
       "valueId": "infrastructure_compute",
       "eventIds": [
+        "EV-b9be18b12b1714f3",
+        "EV-bdd1611cc17c3325",
         "EV-06f2bca776e5cee7",
         "EV-2c2f903622c29ba4",
         "EV-40d4ce6d936d4d49",
@@ -2525,6 +2527,8 @@
         "EV-60d94c0d990d04ca"
       ],
       "entityIds": [
+        "EN-92d14efa2f3f44b1",
+        "EN-c386ba3b954748fa",
         "EN-34bc69b5df00e2d3",
         "EN-33d5a47fc56e4ba1",
         "EN-d41ebd9f02722fc8",
@@ -2718,7 +2722,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-01-06",
-      "lastSeen": "2026-09-20"
+      "lastSeen": "2026-09-21"
     },
     {
       "id": "TX-target_user-developer",
@@ -2727,6 +2731,8 @@
       "typeLabel": "目标用户",
       "valueId": "developer",
       "eventIds": [
+        "EV-b9be18b12b1714f3",
+        "EV-bdd1611cc17c3325",
         "EV-06f2bca776e5cee7",
         "EV-1043d78cc040ab30",
         "EV-40d4ce6d936d4d49",
@@ -2992,6 +2998,8 @@
         "EV-a9fe726c4ea2a17b"
       ],
       "entityIds": [
+        "EN-92d14efa2f3f44b1",
+        "EN-c386ba3b954748fa",
         "EN-34bc69b5df00e2d3",
         "EN-295219ea74639f0b",
         "EN-d41ebd9f02722fc8",
@@ -3218,7 +3226,94 @@
         "HW-f05a371d8e0599b0"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-09-20"
+      "lastSeen": "2026-09-21"
+    },
+    {
+      "id": "TX-ai_market_application-synthetic_data",
+      "name": "合成数据",
+      "nodeType": "ai_market_application",
+      "typeLabel": "AI 市场细分",
+      "valueId": "synthetic_data",
+      "eventIds": [
+        "EV-bdd1611cc17c3325",
+        "EV-798081a4ec056f8c",
+        "EV-d9e018b58da30912",
+        "EV-c17a6102aab72f4f",
+        "EV-64fb6d791e19d10a",
+        "EV-e59938ae531af428",
+        "EV-3632f9193a3f3f28"
+      ],
+      "entityIds": [
+        "EN-c386ba3b954748fa",
+        "EN-08e7b67a300e585f",
+        "EN-187bf23c29af5e43",
+        "EN-d47eb2cee65d0687",
+        "EN-b0532e1af75cc4ab",
+        "EN-8b332ded81dc8d3a"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-03-11",
+      "lastSeen": "2026-09-21"
+    },
+    {
+      "id": "TX-ai_market_subcategory-data",
+      "name": "数据",
+      "nodeType": "ai_market_subcategory",
+      "typeLabel": "AI 市场子类",
+      "valueId": "data",
+      "eventIds": [
+        "EV-bdd1611cc17c3325",
+        "EV-08612741cfce0bcf",
+        "EV-798081a4ec056f8c",
+        "EV-d9e018b58da30912",
+        "EV-c17a6102aab72f4f",
+        "EV-d67dd793fe1f2c04",
+        "EV-bdcb22b1a53358f5",
+        "EV-1bc31f98fa3e34cc",
+        "EV-1765fd690cff1cac",
+        "EV-cfbfc6c80338aa12",
+        "EV-60f219702a66bf38",
+        "EV-74967394aed730ce",
+        "EV-64fb6d791e19d10a",
+        "EV-4da1a7c4d527eb69",
+        "EV-e54bfac94961f4d2",
+        "EV-2bb63a3015195f9b",
+        "EV-f54ec32c67e9447c",
+        "EV-30466ebe86779a64",
+        "EV-e8d1de5c77f32b9c",
+        "EV-e579af588ad8cf64",
+        "EV-1a6fbd73eb4eb133",
+        "EV-e59938ae531af428",
+        "EV-3632f9193a3f3f28"
+      ],
+      "entityIds": [
+        "EN-c386ba3b954748fa",
+        "EN-fba6bdd504fa7aff",
+        "EN-08e7b67a300e585f",
+        "EN-187bf23c29af5e43",
+        "EN-d47eb2cee65d0687",
+        "EN-5f03b37d8cca57e1",
+        "EN-67e8c106650aa683",
+        "EN-e4a72fa4f054e9be",
+        "EN-2505fe8a9e908e04",
+        "EN-7ebe9a17c4d4c271",
+        "EN-6861f63c27eb0ada",
+        "EN-18be231103e4649b",
+        "EN-b0532e1af75cc4ab",
+        "EN-ae1eae1d76e5b7c8",
+        "EN-d361e2fd6b342245",
+        "EN-e23228440ca5340f",
+        "EN-a9aff9e0737a5d4a",
+        "EN-67e05af6c6502566",
+        "EN-2b81d85809794782",
+        "EN-3ee57b807d91aa43",
+        "EN-8b332ded81dc8d3a"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-03-11",
+      "lastSeen": "2026-09-21"
     },
     {
       "id": "TX-product_form-model",
@@ -4959,89 +5054,6 @@
       ],
       "firstSeen": "2024-09-05",
       "lastSeen": "2027-09-30"
-    },
-    {
-      "id": "TX-ai_market_subcategory-data",
-      "name": "数据",
-      "nodeType": "ai_market_subcategory",
-      "typeLabel": "AI 市场子类",
-      "valueId": "data",
-      "eventIds": [
-        "EV-08612741cfce0bcf",
-        "EV-798081a4ec056f8c",
-        "EV-d9e018b58da30912",
-        "EV-c17a6102aab72f4f",
-        "EV-d67dd793fe1f2c04",
-        "EV-bdcb22b1a53358f5",
-        "EV-1bc31f98fa3e34cc",
-        "EV-1765fd690cff1cac",
-        "EV-cfbfc6c80338aa12",
-        "EV-60f219702a66bf38",
-        "EV-74967394aed730ce",
-        "EV-64fb6d791e19d10a",
-        "EV-4da1a7c4d527eb69",
-        "EV-e54bfac94961f4d2",
-        "EV-2bb63a3015195f9b",
-        "EV-f54ec32c67e9447c",
-        "EV-30466ebe86779a64",
-        "EV-e8d1de5c77f32b9c",
-        "EV-e579af588ad8cf64",
-        "EV-1a6fbd73eb4eb133",
-        "EV-e59938ae531af428",
-        "EV-3632f9193a3f3f28"
-      ],
-      "entityIds": [
-        "EN-fba6bdd504fa7aff",
-        "EN-08e7b67a300e585f",
-        "EN-187bf23c29af5e43",
-        "EN-d47eb2cee65d0687",
-        "EN-5f03b37d8cca57e1",
-        "EN-67e8c106650aa683",
-        "EN-e4a72fa4f054e9be",
-        "EN-2505fe8a9e908e04",
-        "EN-7ebe9a17c4d4c271",
-        "EN-6861f63c27eb0ada",
-        "EN-18be231103e4649b",
-        "EN-b0532e1af75cc4ab",
-        "EN-ae1eae1d76e5b7c8",
-        "EN-d361e2fd6b342245",
-        "EN-e23228440ca5340f",
-        "EN-a9aff9e0737a5d4a",
-        "EN-67e05af6c6502566",
-        "EN-2b81d85809794782",
-        "EN-3ee57b807d91aa43",
-        "EN-8b332ded81dc8d3a"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-03-11",
-      "lastSeen": "2026-09-15"
-    },
-    {
-      "id": "TX-ai_market_application-synthetic_data",
-      "name": "合成数据",
-      "nodeType": "ai_market_application",
-      "typeLabel": "AI 市场细分",
-      "valueId": "synthetic_data",
-      "eventIds": [
-        "EV-798081a4ec056f8c",
-        "EV-d9e018b58da30912",
-        "EV-c17a6102aab72f4f",
-        "EV-64fb6d791e19d10a",
-        "EV-e59938ae531af428",
-        "EV-3632f9193a3f3f28"
-      ],
-      "entityIds": [
-        "EN-08e7b67a300e585f",
-        "EN-187bf23c29af5e43",
-        "EN-d47eb2cee65d0687",
-        "EN-b0532e1af75cc4ab",
-        "EN-8b332ded81dc8d3a"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-03-11",
-      "lastSeen": "2026-09-13"
     }
   ],
   "fde": [
