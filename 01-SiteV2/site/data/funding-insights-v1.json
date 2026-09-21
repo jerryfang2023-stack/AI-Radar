@@ -10,7 +10,7 @@
     "latest_financing_date": "2026-09-20",
     "generated_at": "2026-09-21T04:07:01.570Z",
     "card_count": 429,
-    "china_market_card_count": 159,
+    "china_market_card_count": 160,
     "duplicate_rounds_removed": 59,
     "automatic_publication": true,
     "translation_registry": {
@@ -2119,9 +2119,11 @@
         }
       ],
       "market_scope": {
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "china_market_basis": [],
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "funding_company_evidence:china_entity_locality:上海具身触觉公司 千觉机器人"
+        ],
         "source_registry_ids": []
       },
       "product_form": {
@@ -127223,7 +127225,8 @@
         "china_market_basis": [
           "actor_origin",
           "event_market",
-          "china_entity_alias:StepFun"
+          "china_entity_alias:StepFun",
+          "funding_company_evidence:china_entity_locality:上海大模型创业公司阶跃星辰（StepFun）"
         ],
         "source_registry_ids": [
           "cn-cyzone",
@@ -173565,7 +173568,8 @@
         "china_market_match": true,
         "china_market_basis": [
           "actor_origin",
-          "china_entity_alias:西湖心辰"
+          "china_entity_alias:西湖心辰",
+          "funding_company_evidence:china_entity_locality:杭州大模型公司 西湖心辰"
         ],
         "source_registry_ids": [
           "cn-readaitime",

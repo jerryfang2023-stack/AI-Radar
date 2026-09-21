@@ -299,6 +299,11 @@ Research discovery accepts a Chinese subject with an explicitly parenthesized
 English name when a result uses only its Chinese name. It must not require the
 literal bilingual display label in every secondary page. This affects candidate
 discovery only, not canonical aliases or exact-quote/card publication gates.
+China application scope also recognizes a source-quoted city/company apposition
+such as “上海具身触觉公司 千觉机器人 宣布…”. It must bind the city descriptor
+directly to the funded recipient; a publisher, investor or founder's university
+does not establish the company's origin. Keep unsupported geography unclassified
+instead of inferring it from a Chinese name, currency or unquoted headquarters.
 Financing market commentary, ownership explainers and mixed financing/listing/news
 headlines are discovery material, not single-company financing evidence. Keep their
 originals and diagnostic reasons, but do not promote the headline subject into a
