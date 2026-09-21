@@ -1,0 +1,4160 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "date": "2026-09-21",
+    "generated_at": "2026-09-21T00:38:58.411Z",
+    "trigger": "verified_funding_events_with_three_month_backfill",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
+    "counts": {
+      "funding_events": 8,
+      "auto_published": 5,
+      "blocked": 0,
+      "pending": 0,
+      "deduplicated": 3
+    },
+    "taxonomy_version": "TAG-V4.1"
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-14f04ed0c11638ac",
+      "triggered_by_event_id": "EV-b9be18b12b1714f3",
+      "as_of_date": "2026-09-21",
+      "company": {
+        "entity_id": "EN-92d14efa2f3f44b1",
+        "name": "浙江晶能微电子股份有限公司",
+        "full_name": "浙江晶能微电子股份有限公司",
+        "website": "https://www.geener.cn/",
+        "summary": "晶能微电子成立于2022年6月，是吉利科技集团功率与AI半导体产业平台，依托集团全球化产业资源构建研发与制造体系，服务于电动汽车、可持续能源及AI基础设施等关键场景。",
+        "headquarters": "浙江省杭州市",
+        "founders": [],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-46403d79167f168c",
+            "quote": "浙江晶能微电子股份有限公司（下称“晶能微电子”或“公司”）成立于2022年6月，是吉利科技集团功率与AI半导体产业平台。",
+            "source_content_hash": "f19d3e0814aa0700",
+            "quote_hash": "73f9f6e97f604f009ad81e7a171c4921859b0e7cfb0f3f377849868111091ecc"
+          },
+          {
+            "source_id": "FISRC-8ffab0ff3ac3652d",
+            "quote": "浙江晶能微电子有限公司成立于2022年6月，是吉利科技集团功率与AI半导体产业平台。",
+            "source_content_hash": "3b22df3d79c4eff4",
+            "quote_hash": "43c1a4972436acbb38f231a797b22489b19c146e6b053f174550435451e4b700"
+          }
+        ],
+        "application_entity_id": "EN-92d14efa2f3f44b1",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "C轮",
+        "amount": "6.3亿元",
+        "total_raised": "近20亿元",
+        "announced_at": "2026-09-20",
+        "investor_disclosure_status": "not_disclosed",
+        "investors": [],
+        "other_round_investors": [
+          {
+            "name": "秀洲翎航基金",
+            "role": "B轮投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1d9d3631d83282b0",
+                "quote": "近日，浙江晶能微电子有限公司（以下简称“晶能微电子”）完成5亿元B轮融资，由秀洲翎航基金投资。",
+                "source_content_hash": "d9ff750765162954",
+                "quote_hash": "aea626ab836c4fb6acc2ab525296e19abf2594e220c26061f309731b00bdd100"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "温岭九龙汇",
+            "role": "A+轮领投方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8ffab0ff3ac3652d",
+                "quote": "2023年12月，完成A+轮融资，由温岭九龙汇领投，余杭国投、钱江摩托跟投",
+                "source_content_hash": "3b22df3d79c4eff4",
+                "quote_hash": "cda0e063c803dad403d8dd31caac65412fa772c4a485dfe9b75c5a35cce15595"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "余杭国投",
+            "role": "A+轮跟投方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8ffab0ff3ac3652d",
+                "quote": "2023年12月，完成A+轮融资，由温岭九龙汇领投，余杭国投、钱江摩托跟投",
+                "source_content_hash": "3b22df3d79c4eff4",
+                "quote_hash": "cda0e063c803dad403d8dd31caac65412fa772c4a485dfe9b75c5a35cce15595"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "钱江摩托",
+            "role": "A+轮跟投方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8ffab0ff3ac3652d",
+                "quote": "2023年12月，完成A+轮融资，由温岭九龙汇领投，余杭国投、钱江摩托跟投",
+                "source_content_hash": "3b22df3d79c4eff4",
+                "quote_hash": "cda0e063c803dad403d8dd31caac65412fa772c4a485dfe9b75c5a35cce15595"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "高榕资本",
+            "role": "A轮领投方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8ffab0ff3ac3652d",
+                "quote": "2023年6月，完成A轮融资，由高榕资本领投，吉利资本、厦门建发等数十家机构跟投",
+                "source_content_hash": "3b22df3d79c4eff4",
+                "quote_hash": "50f37d9ed489af968f91b8a9e3d7b149627b36e40c82a88406379c31c5210615"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "吉利资本",
+            "role": "A轮跟投方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8ffab0ff3ac3652d",
+                "quote": "2023年6月，完成A轮融资，由高榕资本领投，吉利资本、厦门建发等数十家机构跟投",
+                "source_content_hash": "3b22df3d79c4eff4",
+                "quote_hash": "50f37d9ed489af968f91b8a9e3d7b149627b36e40c82a88406379c31c5210615"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "厦门建发",
+            "role": "A轮跟投方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8ffab0ff3ac3652d",
+                "quote": "2023年6月，完成A轮融资，由高榕资本领投，吉利资本、厦门建发等数十家机构跟投",
+                "source_content_hash": "3b22df3d79c4eff4",
+                "quote_hash": "50f37d9ed489af968f91b8a9e3d7b149627b36e40c82a88406379c31c5210615"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "华登国际",
+            "role": "Pre-A轮领投方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8ffab0ff3ac3652d",
+                "quote": "2022年11月，完成Pre-A轮融资由华登国际领投，高榕资本、矽芯投资等跟投",
+                "source_content_hash": "3b22df3d79c4eff4",
+                "quote_hash": "3697720b74d995742a1df5cef51263dfd9ec45cff3495b1d2e2c0e7ad7a0ed02"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "高榕资本",
+            "role": "Pre-A轮跟投方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8ffab0ff3ac3652d",
+                "quote": "2022年11月，完成Pre-A轮融资由华登国际领投，高榕资本、矽芯投资等跟投",
+                "source_content_hash": "3b22df3d79c4eff4",
+                "quote_hash": "3697720b74d995742a1df5cef51263dfd9ec45cff3495b1d2e2c0e7ad7a0ed02"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "矽芯投资",
+            "role": "Pre-A轮跟投方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8ffab0ff3ac3652d",
+                "quote": "2022年11月，完成Pre-A轮融资由华登国际领投，高榕资本、矽芯投资等跟投",
+                "source_content_hash": "3b22df3d79c4eff4",
+                "quote_hash": "3697720b74d995742a1df5cef51263dfd9ec45cff3495b1d2e2c0e7ad7a0ed02"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "吉利控股",
+            "role": "历史投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1d9d3631d83282b0",
+                "quote": "截至目前，晶能微电子已完成4轮融资，投资方包括吉利控股、华登国际、高榕资本、春山资本、余杭国投等。",
+                "source_content_hash": "d9ff750765162954",
+                "quote_hash": "86ac340beb005da05b72fdc061347188328775b4ca4473a0dd9bcdbfc22c3f0b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "华登国际",
+            "role": "历史投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1d9d3631d83282b0",
+                "quote": "截至目前，晶能微电子已完成4轮融资，投资方包括吉利控股、华登国际、高榕资本、春山资本、余杭国投等。",
+                "source_content_hash": "d9ff750765162954",
+                "quote_hash": "86ac340beb005da05b72fdc061347188328775b4ca4473a0dd9bcdbfc22c3f0b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "高榕资本",
+            "role": "历史投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1d9d3631d83282b0",
+                "quote": "截至目前，晶能微电子已完成4轮融资，投资方包括吉利控股、华登国际、高榕资本、春山资本、余杭国投等。",
+                "source_content_hash": "d9ff750765162954",
+                "quote_hash": "86ac340beb005da05b72fdc061347188328775b4ca4473a0dd9bcdbfc22c3f0b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "春山资本",
+            "role": "历史投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1d9d3631d83282b0",
+                "quote": "截至目前，晶能微电子已完成4轮融资，投资方包括吉利控股、华登国际、高榕资本、春山资本、余杭国投等。",
+                "source_content_hash": "d9ff750765162954",
+                "quote_hash": "86ac340beb005da05b72fdc061347188328775b4ca4473a0dd9bcdbfc22c3f0b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "余杭国投",
+            "role": "历史投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1d9d3631d83282b0",
+                "quote": "截至目前，晶能微电子已完成4轮融资，投资方包括吉利控股、华登国际、高榕资本、春山资本、余杭国投等。",
+                "source_content_hash": "d9ff750765162954",
+                "quote_hash": "86ac340beb005da05b72fdc061347188328775b4ca4473a0dd9bcdbfc22c3f0b"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "泰珅私募",
+            "role": "2026年8月投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-19642d0a2d94b811",
+                "quote": "今年8月，泰珅私募消息指出，其旗下管理的两只基金顺利完成对浙江晶能微电子有限公司的投资。",
+                "source_content_hash": "1cba6a963e4a2687",
+                "quote_hash": "13017c3d9f065400ec97c05f9c58761d7a6fae99760371268fd59c1de01f5b13"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-46403d79167f168c",
+            "quote": "投资界（ID：pedaily2012）9月20日消息，近日，晶能微电子 完成6.3亿元C轮融资 。",
+            "source_content_hash": "f19d3e0814aa0700",
+            "quote_hash": "32e3c5745423536ba0a7e9b5b3e1d607c4e03dc85486010b81d32ba56199266a"
+          },
+          {
+            "source_id": "FISRC-46403d79167f168c",
+            "quote": "近日，晶能微电子 完成6.3亿元C轮融资 。这是公司成立四年来的第五轮融资，累计融资规模近20亿元。",
+            "source_content_hash": "f19d3e0814aa0700",
+            "quote_hash": "bee06e20053bc527f7d3df8df9b3f6acced6f3eb8085e3c70532532fdd85c779"
+          },
+          {
+            "source_id": "FISRC-19642d0a2d94b811",
+            "quote": "近日，浙江晶能微电子股份有限公司完成6.3亿元C轮融资。这是公司成立四年来的第五轮融资，累计融资规模近20亿元",
+            "source_content_hash": "1cba6a963e4a2687",
+            "quote_hash": "4f994732945f2c685fd2dd3d504a0224e9642523229276f4270c2f71a27ad570"
+          }
+        ],
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "6.3亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 630000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6.3 亿元"
+        },
+        "total_raised_original": "近20亿元",
+        "total_raised_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 20 亿元"
+        },
+        "risk_markers": [
+          "investors_missing"
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-b9be18b12b1714f3",
+            "round_original": "C轮",
+            "amount": "6.3亿元",
+            "announced_at": "2026-09-20",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-46403d79167f168c",
+                "quote": "投资界（ID：pedaily2012）9月20日消息，近日，晶能微电子 完成6.3亿元C轮融资 。",
+                "source_content_hash": "f19d3e0814aa0700",
+                "quote_hash": "32e3c5745423536ba0a7e9b5b3e1d607c4e03dc85486010b81d32ba56199266a"
+              },
+              {
+                "source_id": "FISRC-46403d79167f168c",
+                "quote": "近日，晶能微电子 完成6.3亿元C轮融资 。这是公司成立四年来的第五轮融资，累计融资规模近20亿元。",
+                "source_content_hash": "f19d3e0814aa0700",
+                "quote_hash": "bee06e20053bc527f7d3df8df9b3f6acced6f3eb8085e3c70532532fdd85c779"
+              },
+              {
+                "source_id": "FISRC-19642d0a2d94b811",
+                "quote": "近日，浙江晶能微电子股份有限公司完成6.3亿元C轮融资。这是公司成立四年来的第五轮融资，累计融资规模近20亿元",
+                "source_content_hash": "1cba6a963e4a2687",
+                "quote_hash": "4f994732945f2c685fd2dd3d504a0224e9642523229276f4270c2f71a27ad570"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "partially_disclosed"
+      },
+      "products": [
+        {
+          "name": "车规级功率模块",
+          "description": "面向新能源汽车等场景的车规级功率模块，涵盖Si/SiC基的全桥、半桥、单管及单开关模块，以超高可靠性和极致转化效率为技术基石。",
+          "target_customers": "电动汽车整车企业及Tier 1供应商",
+          "features": [
+            "SiC基功率模块",
+            "Si基功率模块",
+            "车规级认证"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-46403d79167f168c",
+              "quote": "公司产品体系已涵盖车规级功率模块、AI 级 SST 模块、嵌入式 SSCB 模块、多芯子钽电容等。",
+              "source_content_hash": "f19d3e0814aa0700",
+              "quote_hash": "e3b416d905f25c22048899577121502dd5f5c9198f18da2385286ba6a9a3645b"
+            },
+            {
+              "source_id": "FISRC-1d9d3631d83282b0",
+              "quote": "目前，晶能微电子针对400V、800V等整车EE架构，完成了多种产品研发，包括Si/SiC（碳化硅）基的全桥、半桥、单管及单开关模块。",
+              "source_content_hash": "d9ff750765162954",
+              "quote_hash": "d57f9437a0e09818682d5612b6aa72387a9cc61538df260922013bf4cb7c906c"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "AI级SST模块",
+          "description": "面向AI数据中心供电架构的固态变压器SiC功率模块，适配英伟达主导的下一代AI数据中心800V+SST供电架构。",
+          "target_customers": "AI数据中心及算力基础设施企业",
+          "features": [
+            "适配800V+SST供电架构",
+            "SiC功率模块",
+            "AI级SiC模块标准"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-19642d0a2d94b811",
+              "quote": "2026年6月发布了SST用SiC功率模块R2C，于行业首倡“AI级SiC模块”新标准，全面适配英伟达主导的下一代AI数据中心800V+SST供电架构。",
+              "source_content_hash": "1cba6a963e4a2687",
+              "quote_hash": "efd956c1371ad215b54698c833104a01507ffc199ffc977683405211891cbe53"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "嵌入式SSCB模块",
+          "description": "嵌入式固态断路器模块，属于公司产品体系中的电力电子控制产品。",
+          "target_customers": "",
+          "features": [],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-46403d79167f168c",
+              "quote": "公司产品体系已涵盖车规级功率模块、AI 级 SST 模块、嵌入式 SSCB 模块、多芯子钽电容等。",
+              "source_content_hash": "f19d3e0814aa0700",
+              "quote_hash": "e3b416d905f25c22048899577121502dd5f5c9198f18da2385286ba6a9a3645b"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "士兰微",
+          "product": "SiC碳化硅功率半导体产品",
+          "scenario": "国内SiC碳化硅功率模块及器件供应",
+          "target_customer": "新能源汽车、工业等领域客户",
+          "funding_summary": "",
+          "core_difference": "晶能微电子背靠吉利科技集团，具备车规级SiC模块积累并延伸至AI数据中心供电场景；士兰微为独立功率半导体IDM企业，来源未披露其AI级SST模块布局。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1d9d3631d83282b0",
+              "quote": "国内聚焦SiC碳化硅领域的企业还包括 士兰微 、芯聚能、 芯联集成 、基本半导体、 比亚迪 等。",
+              "source_content_hash": "d9ff750765162954",
+              "quote_hash": "c6c332256756147f7757986cadc152eb9a3e51906def42158eeb7e5922ed9268"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "芯聚能",
+          "product": "SiC碳化硅功率半导体产品",
+          "scenario": "国内SiC碳化硅功率模块及器件供应",
+          "target_customer": "新能源汽车、工业等领域客户",
+          "funding_summary": "",
+          "core_difference": "晶能微电子为吉利科技集团旗下功率与AI半导体平台，产品覆盖车规级功率模块及AI级SST模块；芯聚能作为独立SiC企业，来源未披露其AI数据中心供电产品线。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1d9d3631d83282b0",
+              "quote": "国内聚焦SiC碳化硅领域的企业还包括 士兰微 、芯聚能、 芯联集成 、基本半导体、 比亚迪 等。",
+              "source_content_hash": "d9ff750765162954",
+              "quote_hash": "c6c332256756147f7757986cadc152eb9a3e51906def42158eeb7e5922ed9268"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "芯联集成",
+          "product": "SiC碳化硅功率半导体产品",
+          "scenario": "国内SiC碳化硅功率模块及器件供应",
+          "target_customer": "新能源汽车、工业等领域客户",
+          "funding_summary": "",
+          "core_difference": "晶能微电子依托吉利科技集团产业资源，具备车规级SiC模块量产能力并拓展AI基础设施供电场景；芯联集成为独立晶圆代工与功率半导体企业，来源未披露其AI级SST模块布局。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1d9d3631d83282b0",
+              "quote": "国内聚焦SiC碳化硅领域的企业还包括 士兰微 、芯聚能、 芯联集成 、基本半导体、 比亚迪 等。",
+              "source_content_hash": "d9ff750765162954",
+              "quote_hash": "c6c332256756147f7757986cadc152eb9a3e51906def42158eeb7e5922ed9268"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "基本半导体",
+          "product": "SiC碳化硅功率半导体产品",
+          "scenario": "国内SiC碳化硅功率模块及器件供应",
+          "target_customer": "新能源汽车、工业等领域客户",
+          "funding_summary": "",
+          "core_difference": "晶能微电子为吉利科技集团旗下功率与AI半导体平台，产品覆盖车规级功率模块及AI级SST模块；基本半导体为独立SiC功率器件企业，来源未披露其AI数据中心供电产品线。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1d9d3631d83282b0",
+              "quote": "国内聚焦SiC碳化硅领域的企业还包括 士兰微 、芯聚能、 芯联集成 、基本半导体、 比亚迪 等。",
+              "source_content_hash": "d9ff750765162954",
+              "quote_hash": "c6c332256756147f7757986cadc152eb9a3e51906def42158eeb7e5922ed9268"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "比亚迪",
+          "product": "SiC碳化硅功率半导体产品",
+          "scenario": "国内SiC碳化硅功率模块及器件供应",
+          "target_customer": "新能源汽车、工业等领域客户",
+          "funding_summary": "",
+          "core_difference": "晶能微电子为吉利科技集团旗下功率与AI半导体平台，产品覆盖车规级功率模块及AI级SST模块；比亚迪为整车企业自研SiC功率半导体，来源未披露其AI数据中心供电产品线。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1d9d3631d83282b0",
+              "quote": "国内聚焦SiC碳化硅领域的企业还包括 士兰微 、芯聚能、 芯联集成 、基本半导体、 比亚迪 等。",
+              "source_content_hash": "d9ff750765162954",
+              "quote_hash": "c6c332256756147f7757986cadc152eb9a3e51906def42158eeb7e5922ed9268"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "6.3亿元",
+          "observed_at": "2026-09-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-46403d79167f168c",
+              "quote": "晶能微电子 完成6.3亿元C轮融资",
+              "source_content_hash": "f19d3e0814aa0700",
+              "quote_hash": "ee605c47763989b3811f240e28fe1786c858076c58ae869822b1553f8dddd296"
+            }
+          ]
+        },
+        {
+          "label": "累计融资规模",
+          "value": "近20亿元",
+          "observed_at": "2026-09-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-46403d79167f168c",
+              "quote": "累计融资规模近20亿元",
+              "source_content_hash": "f19d3e0814aa0700",
+              "quote_hash": "8874c0e57e86c9ac2fffcf4593e25ac4594b8041e3e27771df1230aa5ff0eb90"
+            }
+          ]
+        },
+        {
+          "label": "融资轮次",
+          "value": "第五轮",
+          "observed_at": "2026-09-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-46403d79167f168c",
+              "quote": "这是公司成立四年来的第五轮融资",
+              "source_content_hash": "f19d3e0814aa0700",
+              "quote_hash": "7ce5e54a7dd078aacb8316916e5576a45d7bacc3ed751027b292f7b788275aa9"
+            }
+          ]
+        },
+        {
+          "label": "车规级SiC模块月交付量",
+          "value": "连续多月交付量超万套",
+          "observed_at": "2025-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8ffab0ff3ac3652d",
+              "quote": "2025年7月，车规级SiC模块实现连续多月交付量超万套",
+              "source_content_hash": "3b22df3d79c4eff4",
+              "quote_hash": "49039e9ff68b54ff0274f3e4e37ee2b7418deaa8be7dcd008d31dba8dbaf26cd"
+            }
+          ]
+        },
+        {
+          "label": "封测基地二期总用地面积",
+          "value": "约1.5万平方米",
+          "observed_at": "2026-09",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-19642d0a2d94b811",
+              "quote": "该项目总用地面积约1.5万平方米，总建筑面积约3.4万平方米",
+              "source_content_hash": "1cba6a963e4a2687",
+              "quote_hash": "f65264613b1a9b84ebd50139d3da9d5d05f71a383470231a1842ea30e5283dc2"
+            }
+          ]
+        },
+        {
+          "label": "封测基地二期总建筑面积",
+          "value": "约3.4万平方米",
+          "observed_at": "2026-09",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-19642d0a2d94b811",
+              "quote": "该项目总用地面积约1.5万平方米，总建筑面积约3.4万平方米",
+              "source_content_hash": "1cba6a963e4a2687",
+              "quote_hash": "f65264613b1a9b84ebd50139d3da9d5d05f71a383470231a1842ea30e5283dc2"
+            }
+          ]
+        },
+        {
+          "label": "吉利科技集团持股比例",
+          "value": "43%",
+          "observed_at": "2024-10-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1d9d3631d83282b0",
+              "quote": "吉利科技集团有限公司（隶属于吉利控股集团）为其第一大股东，持股43%。",
+              "source_content_hash": "d9ff750765162954",
+              "quote_hash": "98898d1f318cdfc7c7c75de9e856217ca7b8e1b868224b322ce56abb93bfd64a"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "潘运滨",
+          "quote": "AI产业的发展，离不开底层电力电子技术的坚实支撑。我们将把车规级产品沉淀的技术能力实现跨领域复用，持续与行业头部客户协作共创，在多元高端场景牵引下，输出更具竞争力的技术解决方案，助力前沿硬科技产业高质量发展。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-46403d79167f168c",
+              "quote": "晶能微电子CEO潘运滨表示 ，AI产业的发展，离不开底层电力电子技术的坚实支撑。我们将把车规级产品沉淀的技术能力实现跨领域复用，持续与行业头部客户协作共创，在多元高端场景牵引下，输出更具竞争力的技术解决方案，助力前沿硬科技产业高质量发展。",
+              "source_content_hash": "f19d3e0814aa0700",
+              "quote_hash": "ad7eb6c0f7b796c77549aca7b7b7ec9f902b859cd3b0d5f2f9772993c940bfda"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是车规级SiC功率模块技术向AI数据中心供电架构的跨领域复用能力。已验证信号包括：公司成立四年完成五轮融资、累计融资近20亿元；车规级SiC模块连续多月交付量超万套；2026年6月发布SST用SiC功率模块R2C并首倡AI级SiC模块标准，适配英伟达主导的800V+SST供电架构；车规级封测基地二期进入收尾期。但本轮C轮融资的具体投资方未在来源中披露，无法确认资本结构变化及估值依据。",
+        "validated_signals": [
+          "车规级SiC模块实现连续多月交付量超万套",
+          "2026年6月发布SST用SiC功率模块R2C，适配英伟达主导的下一代AI数据中心800V+SST供电架构",
+          "车规级半导体封测基地二期厂房主体基本完工，进入冲刺收尾期",
+          "成立四年完成五轮融资，累计融资规模近20亿元"
+        ],
+        "risks": [
+          "本轮C轮融资未披露具体投资方，资本结构及产业协同方不明确",
+          "AI数据中心供电架构尚处早期，SST模块的商业化放量节奏未经验证",
+          "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "hardware_computing",
+        "market_application_id": "chips",
+        "use_case_ids": [
+          "physical_automation"
+        ],
+        "industry_ids": [
+          "automotive_transportation",
+          "energy_utilities"
+        ],
+        "target_user_ids": [
+          "developer",
+          "business_user"
+        ],
+        "sector": "功率半导体与AI电力电子",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是车规级SiC功率模块技术向AI数据中心供电架构的跨领域复用能力。已验证信号包括：公司成立四年完成五轮融资、累计融资近20亿元；车规级SiC模块连续多月交付量超万套；2026年6月发布SST用SiC功率模块R2C并首倡AI级SiC模块标准，适配英伟达主导的800V+SST供电架构；车规级封测基地二期进入收尾期。但本轮C轮融资的具体投资方未在来源中披露，无法确认资本结构变化及估值依据。",
+          "evidence_signals": [
+            "车规级SiC模块实现连续多月交付量超万套",
+            "2026年6月发布SST用SiC功率模块R2C，适配英伟达主导的下一代AI数据中心800V+SST供电架构",
+            "车规级半导体封测基地二期厂房主体基本完工，进入冲刺收尾期",
+            "成立四年完成五轮融资，累计融资规模近20亿元"
+          ],
+          "risks": [
+            "本轮C轮融资未披露具体投资方，资本结构及产业协同方不明确",
+            "AI数据中心供电架构尚处早期，SST模块的商业化放量节奏未经验证"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "车规级功率模块",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "AI级SST模块",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "嵌入式SSCB模块",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "秀洲翎航基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "温岭九龙汇",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "余杭国投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "钱江摩托",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "高榕资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "吉利资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "厦门建发",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "华登国际",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "高榕资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "矽芯投资",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "吉利控股",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "华登国际",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "高榕资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "春山资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "余杭国投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "泰珅私募",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "士兰微",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "芯聚能",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "芯联集成",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "基本半导体",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "比亚迪",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-b9be18b12b1714f3",
+          "date": "2026-09-20",
+          "title": "晶能完成6.3亿元C轮融资，开创AI电力电子新范式",
+          "amount": "6.3亿元",
+          "source_refs": [
+            "SA-80ca9cb7c3dfb74e"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-46403d79167f168c",
+          "source_url": "https://news.pedaily.cn/202609/569299.shtml",
+          "title": "晶能完成6.3亿元C轮融资，开创AI电力电子新范式",
+          "publisher": "投资界",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-21T00:36:09.285Z",
+          "content_hash": "f19d3e0814aa0700",
+          "source_artifact_id": "SA-80ca9cb7c3dfb74e",
+          "raw_id": "RAW-9d5c504b61068173"
+        },
+        {
+          "source_id": "FISRC-19642d0a2d94b811",
+          "source_url": "https://www.seccw.com/document/detail/id/50471.html",
+          "title": "晶能微电子完成6.3亿元C轮融资，车规级封测基地二期进入收尾期",
+          "publisher": "seccw.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-21T00:38:27.281Z",
+          "content_hash": "1cba6a963e4a2687",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-1d9d3631d83282b0",
+          "source_url": "https://finance.sina.com.cn/jjxw/2024-10-28/doc-incucmqv8547504.shtml",
+          "title": "晶能微电子融了5亿元 大股东吉利密集落子汽车半导体|微电子_新浪财经_新浪网",
+          "publisher": "finance.sina.com.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-21T00:38:27.269Z",
+          "content_hash": "d9ff750765162954",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-8ffab0ff3ac3652d",
+          "source_url": "https://www.geener.cn/energy/company",
+          "title": "公司概况-晶能微电子",
+          "publisher": "geener.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-21T00:38:28.685Z",
+          "content_hash": "3b22df3d79c4eff4",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-21T00:38:58.306Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-b9be18b12b1714f3",
+          "confidence": 0.8,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-21T00:38:58.306Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "AI级SST模块",
+            "嵌入式SSCB模块",
+            "车规级功率模块"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 0,
+          "unresolved_names": []
+        }
+      },
+      "source_event_ids": [
+        "EV-b9be18b12b1714f3"
+      ],
+      "aggregation": {
+        "key": "EN-92d14efa2f3f44b1|series_c",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-f6f7f89f3da4f119",
+      "triggered_by_event_id": "EV-bdd1611cc17c3325",
+      "as_of_date": "2026-09-21",
+      "company": {
+        "entity_id": "EN-c386ba3b954748fa",
+        "name": "千觉机器人",
+        "full_name": "千觉机器人",
+        "website": "",
+        "summary": "千觉机器人是一家上海具身触觉公司，成立于2024年5月，由上海交通大学教授马道林创立，专注于高精度视触觉传感器、触觉数据采集体系、触觉仿真、数据集及触觉具身模型研发。",
+        "headquarters": "上海",
+        "founders": [
+          {
+            "name": "马道林",
+            "role": "创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3a00c703054126cd",
+                "quote": "千觉成立于2024年5月，由上海交通大学教授、ICRA 2021全球唯一最佳论文奖得主马道林创立。",
+                "source_content_hash": "3943ea5191d9c7eb",
+                "quote_hash": "9ce7c51f5062a407f907c023af8efb8d3965cabaea9f423fe07bcf59c40dc687"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "刘琎",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-79c5483a33f74063",
+                "quote": "千觉机器人联合创始人刘琎、赵浩南均为上海交通大学博士",
+                "source_content_hash": "32bc3a9c428f8f13",
+                "quote_hash": "bca7bb345b91d9b36ce8e0ef14d3ae1b9beeb36bee47770a4b5009aa5033e7c5"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "赵浩南",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-79c5483a33f74063",
+                "quote": "千觉机器人联合创始人刘琎、赵浩南均为上海交通大学博士",
+                "source_content_hash": "32bc3a9c428f8f13",
+                "quote_hash": "bca7bb345b91d9b36ce8e0ef14d3ae1b9beeb36bee47770a4b5009aa5033e7c5"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-3a00c703054126cd",
+            "quote": "千觉成立于2024年5月，由上海交通大学教授、ICRA 2021全球唯一最佳论文奖得主马道林创立。",
+            "source_content_hash": "3943ea5191d9c7eb",
+            "quote_hash": "9ce7c51f5062a407f907c023af8efb8d3965cabaea9f423fe07bcf59c40dc687"
+          },
+          {
+            "source_id": "FISRC-79c5483a33f74063",
+            "quote": "上海具身触觉公司 千觉机器人 宣布连续 完成两轮数亿元战略融资",
+            "source_content_hash": "32bc3a9c428f8f13",
+            "quote_hash": "22d85898a6facf8c5b9a71ea4299c451b95599413ae681bf53f6c6ff0f672797"
+          }
+        ],
+        "application_entity_id": "EN-c386ba3b954748fa",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "战略融资",
+        "amount": "数亿元",
+        "total_raised": "",
+        "announced_at": "2026-09-20",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "蓝驰创投",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3a00c703054126cd",
+                "quote": "投资方包括知名双币基金蓝驰创投、中金资本旗下基金、靖亚资本等知名投资机构。",
+                "source_content_hash": "3943ea5191d9c7eb",
+                "quote_hash": "b107f578d66cdfb0c455906070c8afb274d89805bad140a09769daf8c6fa1a89"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "中金资本旗下基金",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3a00c703054126cd",
+                "quote": "投资方包括知名双币基金蓝驰创投、中金资本旗下基金、靖亚资本等知名投资机构。",
+                "source_content_hash": "3943ea5191d9c7eb",
+                "quote_hash": "b107f578d66cdfb0c455906070c8afb274d89805bad140a09769daf8c6fa1a89"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "靖亚资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3a00c703054126cd",
+                "quote": "投资方包括知名双币基金蓝驰创投、中金资本旗下基金、靖亚资本等知名投资机构。",
+                "source_content_hash": "3943ea5191d9c7eb",
+                "quote_hash": "b107f578d66cdfb0c455906070c8afb274d89805bad140a09769daf8c6fa1a89"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "具身智能产业方",
+            "role": "此前亿元级融资投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3a00c703054126cd",
+                "quote": "此前，千觉已宣布完成亿元级融资，投资方包括顶级具身智能产业方、天季资本、吉德电器。",
+                "source_content_hash": "3943ea5191d9c7eb",
+                "quote_hash": "09c4da88abb10fa422cb8edd951807aac09e7a98e16b591a02b49f66af0dec69"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "天季资本",
+            "role": "此前亿元级融资投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3a00c703054126cd",
+                "quote": "此前，千觉已宣布完成亿元级融资，投资方包括顶级具身智能产业方、天季资本、吉德电器。",
+                "source_content_hash": "3943ea5191d9c7eb",
+                "quote_hash": "09c4da88abb10fa422cb8edd951807aac09e7a98e16b591a02b49f66af0dec69"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "吉德电器",
+            "role": "此前亿元级融资投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3a00c703054126cd",
+                "quote": "此前，千觉已宣布完成亿元级融资，投资方包括顶级具身智能产业方、天季资本、吉德电器。",
+                "source_content_hash": "3943ea5191d9c7eb",
+                "quote_hash": "09c4da88abb10fa422cb8edd951807aac09e7a98e16b591a02b49f66af0dec69"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "高瓴创投",
+            "role": "股东",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3a00c703054126cd",
+                "quote": "目前，千觉股东阵容已汇集高瓴创投、元禾原点、孚腾资本等知名财务投资机构",
+                "source_content_hash": "3943ea5191d9c7eb",
+                "quote_hash": "01b8d7c5d02d6928d7583763d8be3efd8c373ae10dd820b90515844a61cfbced"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "元禾原点",
+            "role": "股东",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3a00c703054126cd",
+                "quote": "目前，千觉股东阵容已汇集高瓴创投、元禾原点、孚腾资本等知名财务投资机构",
+                "source_content_hash": "3943ea5191d9c7eb",
+                "quote_hash": "01b8d7c5d02d6928d7583763d8be3efd8c373ae10dd820b90515844a61cfbced"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "孚腾资本",
+            "role": "股东",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3a00c703054126cd",
+                "quote": "目前，千觉股东阵容已汇集高瓴创投、元禾原点、孚腾资本等知名财务投资机构",
+                "source_content_hash": "3943ea5191d9c7eb",
+                "quote_hash": "01b8d7c5d02d6928d7583763d8be3efd8c373ae10dd820b90515844a61cfbced"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "理想汽车",
+            "role": "股东",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3a00c703054126cd",
+                "quote": "以及理想汽车、智元机器人、吉德电器等具身与工业领域头部产业方",
+                "source_content_hash": "3943ea5191d9c7eb",
+                "quote_hash": "5aa2de18c5e95ae817f5bfe810bfa27f5798694d9934229e98298d263d163400"
+              }
+            ],
+            "entity_id": "EN-d3c20bd565303d39"
+          },
+          {
+            "name": "智元机器人",
+            "role": "股东",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3a00c703054126cd",
+                "quote": "以及理想汽车、智元机器人、吉德电器等具身与工业领域头部产业方",
+                "source_content_hash": "3943ea5191d9c7eb",
+                "quote_hash": "5aa2de18c5e95ae817f5bfe810bfa27f5798694d9934229e98298d263d163400"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-3a00c703054126cd",
+            "quote": "近日，千觉机器人宣布连续完成两轮数亿元战略融资，投资方包括知名双币基金蓝驰创投、中金资本旗下基金、靖亚资本等知名投资机构。",
+            "source_content_hash": "3943ea5191d9c7eb",
+            "quote_hash": "319358b3577c4a06d14015ede75e1393d81e7b5a5d67822e172cd33f3ab58294"
+          },
+          {
+            "source_id": "FISRC-79c5483a33f74063",
+            "quote": "今天，上海具身触觉公司 千觉机器人 宣布连续 完成两轮数亿元战略融资 ，投资方包括 蓝驰创投 、中金资本旗下基金、靖亚资本 等投资机构。",
+            "source_content_hash": "32bc3a9c428f8f13",
+            "quote_hash": "e0559ac078d5c35c9c4b6284a84088ed1cfee9c22907b9d3b869831d214ebc82"
+          }
+        ],
+        "round_code": "strategic",
+        "round_original": "战略融资",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-bdd1611cc17c3325",
+            "round_original": "战略融资",
+            "amount": "数亿元",
+            "announced_at": "2026-09-20",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3a00c703054126cd",
+                "quote": "近日，千觉机器人宣布连续完成两轮数亿元战略融资，投资方包括知名双币基金蓝驰创投、中金资本旗下基金、靖亚资本等知名投资机构。",
+                "source_content_hash": "3943ea5191d9c7eb",
+                "quote_hash": "319358b3577c4a06d14015ede75e1393d81e7b5a5d67822e172cd33f3ab58294"
+              },
+              {
+                "source_id": "FISRC-79c5483a33f74063",
+                "quote": "今天，上海具身触觉公司 千觉机器人 宣布连续 完成两轮数亿元战略融资 ，投资方包括 蓝驰创投 、中金资本旗下基金、靖亚资本 等投资机构。",
+                "source_content_hash": "32bc3a9c428f8f13",
+                "quote_hash": "e0559ac078d5c35c9c4b6284a84088ed1cfee9c22907b9d3b869831d214ebc82"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "高精度三色光视触觉传感器",
+          "description": "千觉机器人自研的高精度三色光视触觉传感器，可输出原始图像、差分图像、三维可视化、切向信息、深度图及六维力等多模态数据，支持三维形貌测量、纹理识别、三维分布力、滑移检测、运动追踪等功能。",
+          "target_customers": "机器人、工业制造、消费品牌及科研机构",
+          "features": [
+            "输出原始图像、差分图像、三维可视化、切向信息、深度图及六维力等多模态数据",
+            "支持三维形貌测量、纹理识别、三维分布力、滑移检测、运动追踪等功能",
+            "已实现万片级量产"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-79c5483a33f74063",
+              "quote": "硬件层，千觉机器人自研了 高精度三色光视触觉传感器 ，触觉传感器系列覆盖 夸克N1、精灵Elf、光子Photon、GS-PS 等产品，可输出原始图像、差分图像、三维可视化、切向信息、深度图及六维力等多模态数据，支持三维形貌测量、纹理识别、三维分布力、滑移检测、运动追踪等功能。",
+              "source_content_hash": "32bc3a9c428f8f13",
+              "quote_hash": "942ccd0537112523dd085ad73eef2029d58a17f8f085d6ab4779dde22291a69c"
+            },
+            {
+              "source_id": "FISRC-79c5483a33f74063",
+              "quote": "据其介绍， 三色光视触觉传感器已实现万片级量产。",
+              "source_content_hash": "32bc3a9c428f8f13",
+              "quote_hash": "e0f6330cc98e19d7fed631859f6925ec8c84416ca99405b191ecad51564b648b"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "X-TouchMind V1触觉具身模型",
+          "description": "千觉机器人推出的视觉—触觉—语言—动作（VTLA）多模态模型，属于触觉具身模型。",
+          "target_customers": "具身智能企业、机器人企业",
+          "features": [
+            "视觉—触觉—语言—动作（VTLA）多模态模型"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-79c5483a33f74063",
+              "quote": "该公司推出了 X-TouchMind V1视觉—触觉—语言—动作（VTLA）多模态模型 及多个多模态触觉模型。",
+              "source_content_hash": "32bc3a9c428f8f13",
+              "quote_hash": "6633d73434809b287d4406f3e1c0ac1f5ced1da618110b48fd3e3044317cdd1d"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "TacVerse触觉交互数据集",
+          "description": "千觉机器人配套XTac UMI G1穿戴式数采设备的触觉交互数据集，今年7月发布TacVerse 1k，为首批1000小时视触觉多模态具身数据集。",
+          "target_customers": "具身智能企业、科研机构",
+          "features": [
+            "首批1000小时视触觉多模态具身数据集",
+            "数据采集成本可下降80%以上，效率提升3到5倍"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-79c5483a33f74063",
+              "quote": "数据层，千觉机器人自研 XTac UMI G1穿戴式数采设备 ，配套 TacVerse触觉交互数据集 。今年7月，千觉机器人发布 TacVerse 1k ，是该公司发布的首批1000小时视触觉多模态具身数据集。",
+              "source_content_hash": "32bc3a9c428f8f13",
+              "quote_hash": "4339c8f6fd00394e5f6d01a26e278d1fc66a578b4e9577bc1eb89f8bc0109513"
+            },
+            {
+              "source_id": "FISRC-79c5483a33f74063",
+              "quote": "TacVerse 1k依托自研采集硬件体系，数据采集成本可下降 80% 以上，效率提升3到5倍。",
+              "source_content_hash": "32bc3a9c428f8f13",
+              "quote_hash": "8ac6a67f8c0644211ba6de92942b7fcab1c03d573850c7edb0e5fb9178c528eb"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "智元机器人",
+          "industry": "具身智能",
+          "use_case": "产品应用",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-79c5483a33f74063",
+              "quote": "此前该公司也表示，产品已应用于智元、谷歌、自变量、银河通用、众擎等众多国内外具身企业。",
+              "source_content_hash": "32bc3a9c428f8f13",
+              "quote_hash": "2768b8a7e58fa708000006736e037852d7c9238dd9eb609f949ab1a4f2fa3a65"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "谷歌",
+          "industry": "具身智能",
+          "use_case": "产品应用",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-79c5483a33f74063",
+              "quote": "此前该公司也表示，产品已应用于智元、谷歌、自变量、银河通用、众擎等众多国内外具身企业。",
+              "source_content_hash": "32bc3a9c428f8f13",
+              "quote_hash": "2768b8a7e58fa708000006736e037852d7c9238dd9eb609f949ab1a4f2fa3a65"
+            }
+          ],
+          "entity_id": "EN-bbdefa2950f49882"
+        },
+        {
+          "name": "宁德时代",
+          "industry": "工业制造",
+          "use_case": "具身模型落地验证",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-79c5483a33f74063",
+              "quote": "千觉机器人与宁德时代开展具身模型落地验证",
+              "source_content_hash": "32bc3a9c428f8f13",
+              "quote_hash": "f7908765d7bd6f107a32cf3311ac197e01eace476cf311ff8b95d49bab14b296"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "欧莱雅",
+          "industry": "消费品牌",
+          "use_case": "物流方案合作",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-79c5483a33f74063",
+              "quote": "与欧莱雅推进物流方案合作",
+              "source_content_hash": "32bc3a9c428f8f13",
+              "quote_hash": "0de67634d0dd7cf75f3ace00d6c8c70ceff9d15398e9beb1220ea02c0bbb827a"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "得物",
+          "industry": "消费品牌",
+          "use_case": "商品验真场景能力展示",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-79c5483a33f74063",
+              "quote": "并与得物合作展示商品验真场景能力。",
+              "source_content_hash": "32bc3a9c428f8f13",
+              "quote_hash": "1f1723533bacc0baa425a85438679d13ae40d70706adbcefc363b0e97d546c2b"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "付费客户数",
+          "value": "超过300家",
+          "observed_at": "2026-09-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-79c5483a33f74063",
+              "quote": "截至目前，千觉机器人透露，其已服务 超过300家付费客户",
+              "source_content_hash": "32bc3a9c428f8f13",
+              "quote_hash": "63750862e4342a56c1221c4c4b93162cc82cfd0d76f3ef6f35dd20c2bc3c48e3"
+            }
+          ]
+        },
+        {
+          "label": "三色光视触觉传感器量产规模",
+          "value": "万片级",
+          "observed_at": "2026-09-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-79c5483a33f74063",
+              "quote": "三色光视触觉传感器已实现万片级量产。",
+              "source_content_hash": "32bc3a9c428f8f13",
+              "quote_hash": "184e393619f93c7da95214be70e8bd85a21e393a31f7a4ec4cb710d5596dc090"
+            }
+          ]
+        },
+        {
+          "label": "TacVerse 1k数据集规模",
+          "value": "1000小时",
+          "observed_at": "2026-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-79c5483a33f74063",
+              "quote": "今年7月，千觉机器人发布 TacVerse 1k ，是该公司发布的首批1000小时视触觉多模态具身数据集。",
+              "source_content_hash": "32bc3a9c428f8f13",
+              "quote_hash": "f209080d01dcc21efde86170c67fb10c652fef541096ef4590b76c21b68f4944"
+            }
+          ]
+        },
+        {
+          "label": "数据采集成本下降幅度",
+          "value": "80%以上",
+          "observed_at": "2026-09-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-79c5483a33f74063",
+              "quote": "TacVerse 1k依托自研采集硬件体系，数据采集成本可下降 80% 以上",
+              "source_content_hash": "32bc3a9c428f8f13",
+              "quote_hash": "f004501849a2f6a36bf8a1ce4904ae1af183fca6e781a2ec13f4104b15f3084a"
+            }
+          ]
+        },
+        {
+          "label": "数据采集效率提升",
+          "value": "3到5倍",
+          "observed_at": "2026-09-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-79c5483a33f74063",
+              "quote": "效率提升3到5倍。",
+              "source_content_hash": "32bc3a9c428f8f13",
+              "quote_hash": "116afad93fddf2bcf62ceaca466bbbaad86f867b275facd535d9f0edd92a01c8"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "千觉机器人",
+          "quote": "本轮资金将重点用于产品升级、业务扩展与产业化落地，加快高精度视触觉传感器迭代与规模化交付，完善真实交互数据采集、触觉仿真与数据集建设，持续推进触觉具身模型和触觉世界模型研发，推动触觉智能技术在更多真实场景中的应用。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3a00c703054126cd",
+              "quote": "本轮资金将重点用于产品升级、业务扩展与产业化落地，加快高精度视触觉传感器迭代与规模化交付，完善真实交互数据采集、触觉仿真与数据集建设，持续推进触觉具身模型和触觉世界模型研发，推动触觉智能技术在更多真实场景中的应用。",
+              "source_content_hash": "3943ea5191d9c7eb",
+              "quote_hash": "712155a9508969095f7e0a7d18877ea7912d2d7323ebcca2c36f087ce3172fc3"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是触觉智能作为具身智能关键感知环节的产业化能力。已验证信号包括：三色光视触觉传感器实现万片级量产、超过300家付费客户、产品已应用于智元、谷歌等头部具身企业，以及宁德时代、欧莱雅、得物等工业与消费场景的落地验证。来源未披露本轮估值，也未提供投资机构公开投资逻辑原话，因此无法确认估值依据或机构具体判断。",
+        "validated_signals": [
+          "三色光视触觉传感器已实现万片级量产",
+          "已服务超过300家付费客户，覆盖机器人、工业制造、消费品牌及科研机构",
+          "产品已应用于智元、谷歌、自变量、银河通用、众擎等国内外具身企业",
+          "与宁德时代开展具身模型落地验证，与欧莱雅推进物流方案合作，与得物合作展示商品验真场景能力"
+        ],
+        "risks": [
+          "来源未披露本轮融资的具体金额、估值及投资机构投资逻辑，资本判断缺乏机构原话支撑",
+          "触觉智能赛道仍处于产业化早期，规模化交付与真实场景应用尚需验证"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "data",
+        "market_application_id": "synthetic_data",
+        "use_case_ids": [
+          "physical_automation",
+          "data_analysis"
+        ],
+        "industry_ids": [
+          "manufacturing",
+          "automotive_transportation"
+        ],
+        "target_user_ids": [
+          "developer",
+          "researcher"
+        ],
+        "sector": "具身智能触觉感知",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是触觉智能作为具身智能关键感知环节的产业化能力。已验证信号包括：三色光视触觉传感器实现万片级量产、超过300家付费客户、产品已应用于智元、谷歌等头部具身企业，以及宁德时代、欧莱雅、得物等工业与消费场景的落地验证。来源未披露本轮估值，也未提供投资机构公开投资逻辑原话，因此无法确认估值依据或机构具体判断。",
+          "evidence_signals": [
+            "三色光视触觉传感器已实现万片级量产",
+            "已服务超过300家付费客户，覆盖机器人、工业制造、消费品牌及科研机构",
+            "产品已应用于智元、谷歌、自变量、银河通用、众擎等国内外具身企业",
+            "与宁德时代开展具身模型落地验证，与欧莱雅推进物流方案合作，与得物合作展示商品验真场景能力"
+          ],
+          "risks": [
+            "来源未披露本轮融资的具体金额、估值及投资机构投资逻辑，资本判断缺乏机构原话支撑",
+            "触觉智能赛道仍处于产业化早期，规模化交付与真实场景应用尚需验证"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "高精度三色光视触觉传感器",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "X-TouchMind V1触觉具身模型",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "TacVerse触觉交互数据集",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "马道林",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "刘琎",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "赵浩南",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "蓝驰创投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "中金资本旗下基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "靖亚资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "具身智能产业方",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "天季资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "吉德电器",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "高瓴创投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "元禾原点",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "孚腾资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "理想汽车",
+          "canonical_entity_id": "EN-d3c20bd565303d39",
+          "canonical_name": "理想汽车"
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "智元机器人",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "智元机器人",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "谷歌",
+          "canonical_entity_id": "EN-bbdefa2950f49882",
+          "canonical_name": "Google"
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "宁德时代",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "欧莱雅",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "得物",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-bdd1611cc17c3325",
+          "date": "2026-09-20",
+          "title": "千觉机器人宣布连续完成两轮数亿元战略融资 投资方包括知名双币基金蓝驰创投、中金资本旗下基金、靖亚资本等知名投资机构。 投中网 · 22小时前",
+          "amount": "数亿元",
+          "source_refs": [
+            "SA-82ab886e22cfb44e"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-3a00c703054126cd",
+          "source_url": "https://www.chinaventure.com.cn/news/114-20260920-393347.html",
+          "title": "千觉机器人宣布连续完成两轮数亿元战略融资 投资方包括知名双币基金蓝驰创投、中金资本旗下基金、靖亚资本等知名投资机构。 投中网 · 22小时前",
+          "publisher": "投中网",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-21T00:36:09.276Z",
+          "content_hash": "3943ea5191d9c7eb",
+          "source_artifact_id": "SA-82ab886e22cfb44e",
+          "raw_id": "RAW-f0c9f069866b402b"
+        },
+        {
+          "source_id": "FISRC-79c5483a33f74063",
+          "source_url": "https://www.zhidx.com/p/595470.html",
+          "title": "智元投的上海触觉创企，再融数亿元 - 智东西",
+          "publisher": "zhidx.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-21T00:38:13.860Z",
+          "content_hash": "32bc3a9c428f8f13",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-21T00:38:40.828Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-bdd1611cc17c3325",
+          "confidence": 0.75,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-21T00:38:40.828Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 5,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "TacVerse触觉交互数据集",
+            "X-TouchMind V1触觉具身模型",
+            "高精度三色光视触觉传感器"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "刘琎",
+            "赵浩南",
+            "马道林"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-bdd1611cc17c3325"
+      ],
+      "aggregation": {
+        "key": "EN-c386ba3b954748fa|strategic",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-cee276f72af07a63",
+      "triggered_by_event_id": "EV-d959c800774d5d30",
+      "as_of_date": "2026-09-21",
+      "company": {
+        "entity_id": "EN-0213fcbfa6055593",
+        "name": "智身科技（GENISOM AI）",
+        "full_name": "智身科技（GENISOM AI）",
+        "website": "https://www.genisomai.com/",
+        "summary": "智身科技是一家具身智能机器人企业，全栈自研核心部件与整机，自研四足机器狗、全尺寸人形机器人等产品，已成功下线并接受国内外客户的检验。",
+        "headquarters": "北京市大兴区",
+        "founders": [],
+        "team_size": {
+          "value": "研发人员占公司总人数70%",
+          "observed_at": "2026-09-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d3ef62d0abfa671a",
+              "quote": "研发人员占公司总人数70%",
+              "source_content_hash": "7586850679fe60a5",
+              "quote_hash": "b0de12d5ab42a62081f33bc8499538c9d7e3af204793796e6f5ba5a3d6a5ae83"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-fecad8ccb9a84a39",
+            "quote": "具身智能机器人企业智身科技（GENISOM AI）宣布完成数亿元人民币B轮融资",
+            "source_content_hash": "8e85893a67ba1482",
+            "quote_hash": "9a5334d5c08aeda96b4b6193d34fd0f410ee58fcc2835626cdbede235db5b2c9"
+          },
+          {
+            "source_id": "FISRC-750c27d055174535",
+            "quote": "智身科技是一家具身智能全产业链技术服务商，全栈自研核心部件与整机，自研四足机器狗、全尺寸人形机器人等产品，已成功下线并接受国内外客户的检验。",
+            "source_content_hash": "d755141a7f7db875",
+            "quote_hash": "f8869bb395f6cc58ad61aaae53cf3f8ed02712f4a89cb357fc5c005197d080cf"
+          }
+        ],
+        "application_entity_id": "EN-0213fcbfa6055593",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "B轮",
+        "amount": "数亿元人民币",
+        "total_raised": "",
+        "announced_at": "2026-09-20",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "Stone Venture（磊石资本）",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fecad8ccb9a84a39",
+                "quote": "本轮融资由阿联酋Stone Venture（磊石资本）领投",
+                "source_content_hash": "8e85893a67ba1482",
+                "quote_hash": "3b4482b2426f6535e214554cc11cecd5659013822d0f1106390ffa7c1e7642d1"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "洪山资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fecad8ccb9a84a39",
+                "quote": "洪山资本、粤科金融、吴中融玥、吴中金控等投资机构，以及东软集团、豪鹏科技、远见资本、日盈电子等产业投资方共同参与",
+                "source_content_hash": "8e85893a67ba1482",
+                "quote_hash": "ec5d9bdbc2441058040753c6cf8e363b26fdf75debe18db0ba5922163b174b9f"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "粤科金融",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fecad8ccb9a84a39",
+                "quote": "洪山资本、粤科金融、吴中融玥、吴中金控等投资机构，以及东软集团、豪鹏科技、远见资本、日盈电子等产业投资方共同参与",
+                "source_content_hash": "8e85893a67ba1482",
+                "quote_hash": "ec5d9bdbc2441058040753c6cf8e363b26fdf75debe18db0ba5922163b174b9f"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "吴中融玥",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fecad8ccb9a84a39",
+                "quote": "洪山资本、粤科金融、吴中融玥、吴中金控等投资机构，以及东软集团、豪鹏科技、远见资本、日盈电子等产业投资方共同参与",
+                "source_content_hash": "8e85893a67ba1482",
+                "quote_hash": "ec5d9bdbc2441058040753c6cf8e363b26fdf75debe18db0ba5922163b174b9f"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "吴中金控",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fecad8ccb9a84a39",
+                "quote": "洪山资本、粤科金融、吴中融玥、吴中金控等投资机构，以及东软集团、豪鹏科技、远见资本、日盈电子等产业投资方共同参与",
+                "source_content_hash": "8e85893a67ba1482",
+                "quote_hash": "ec5d9bdbc2441058040753c6cf8e363b26fdf75debe18db0ba5922163b174b9f"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "东软集团",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fecad8ccb9a84a39",
+                "quote": "洪山资本、粤科金融、吴中融玥、吴中金控等投资机构，以及东软集团、豪鹏科技、远见资本、日盈电子等产业投资方共同参与",
+                "source_content_hash": "8e85893a67ba1482",
+                "quote_hash": "ec5d9bdbc2441058040753c6cf8e363b26fdf75debe18db0ba5922163b174b9f"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "豪鹏科技",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fecad8ccb9a84a39",
+                "quote": "洪山资本、粤科金融、吴中融玥、吴中金控等投资机构，以及东软集团、豪鹏科技、远见资本、日盈电子等产业投资方共同参与",
+                "source_content_hash": "8e85893a67ba1482",
+                "quote_hash": "ec5d9bdbc2441058040753c6cf8e363b26fdf75debe18db0ba5922163b174b9f"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "远见资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fecad8ccb9a84a39",
+                "quote": "洪山资本、粤科金融、吴中融玥、吴中金控等投资机构，以及东软集团、豪鹏科技、远见资本、日盈电子等产业投资方共同参与",
+                "source_content_hash": "8e85893a67ba1482",
+                "quote_hash": "ec5d9bdbc2441058040753c6cf8e363b26fdf75debe18db0ba5922163b174b9f"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "日盈电子",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fecad8ccb9a84a39",
+                "quote": "洪山资本、粤科金融、吴中融玥、吴中金控等投资机构，以及东软集团、豪鹏科技、远见资本、日盈电子等产业投资方共同参与",
+                "source_content_hash": "8e85893a67ba1482",
+                "quote_hash": "ec5d9bdbc2441058040753c6cf8e363b26fdf75debe18db0ba5922163b174b9f"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "智元机器人",
+            "role": "历史轮次投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-750c27d055174535",
+                "quote": "A+轮 数亿元人民币 智元机器人, 贵安鲲鹏基金 ,金马游乐,柯力股份,豪鹏科技, 时代伯乐 , 茅台基金",
+                "source_content_hash": "d755141a7f7db875",
+                "quote_hash": "73abb7c1bbe47bb43dd8c46edcbd43f4329e879b481d278a3f2572e24a4b6895"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "贵安鲲鹏基金",
+            "role": "历史轮次投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-750c27d055174535",
+                "quote": "A+轮 数亿元人民币 智元机器人, 贵安鲲鹏基金 ,金马游乐,柯力股份,豪鹏科技, 时代伯乐 , 茅台基金",
+                "source_content_hash": "d755141a7f7db875",
+                "quote_hash": "73abb7c1bbe47bb43dd8c46edcbd43f4329e879b481d278a3f2572e24a4b6895"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "金马游乐",
+            "role": "历史轮次投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-750c27d055174535",
+                "quote": "A+轮 数亿元人民币 智元机器人, 贵安鲲鹏基金 ,金马游乐,柯力股份,豪鹏科技, 时代伯乐 , 茅台基金",
+                "source_content_hash": "d755141a7f7db875",
+                "quote_hash": "73abb7c1bbe47bb43dd8c46edcbd43f4329e879b481d278a3f2572e24a4b6895"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "柯力股份",
+            "role": "历史轮次投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-750c27d055174535",
+                "quote": "A+轮 数亿元人民币 智元机器人, 贵安鲲鹏基金 ,金马游乐,柯力股份,豪鹏科技, 时代伯乐 , 茅台基金",
+                "source_content_hash": "d755141a7f7db875",
+                "quote_hash": "73abb7c1bbe47bb43dd8c46edcbd43f4329e879b481d278a3f2572e24a4b6895"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "时代伯乐",
+            "role": "历史轮次投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-750c27d055174535",
+                "quote": "A+轮 数亿元人民币 智元机器人, 贵安鲲鹏基金 ,金马游乐,柯力股份,豪鹏科技, 时代伯乐 , 茅台基金",
+                "source_content_hash": "d755141a7f7db875",
+                "quote_hash": "73abb7c1bbe47bb43dd8c46edcbd43f4329e879b481d278a3f2572e24a4b6895"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "茅台基金",
+            "role": "历史轮次投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-750c27d055174535",
+                "quote": "A+轮 数亿元人民币 智元机器人, 贵安鲲鹏基金 ,金马游乐,柯力股份,豪鹏科技, 时代伯乐 , 茅台基金",
+                "source_content_hash": "d755141a7f7db875",
+                "quote_hash": "73abb7c1bbe47bb43dd8c46edcbd43f4329e879b481d278a3f2572e24a4b6895"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "深圳前海奕铭投资",
+            "role": "历史轮次投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-750c27d055174535",
+                "quote": "A轮 未披露 深圳前海奕铭投资",
+                "source_content_hash": "d755141a7f7db875",
+                "quote_hash": "d8ba51688e971d96bc3295d00084555d3f740a55833b341160465c71295db262"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-fecad8ccb9a84a39",
+            "quote": "2026年9月，具身智能机器人企业智身科技（GENISOM AI）宣布完成数亿元人民币B轮融资。",
+            "source_content_hash": "8e85893a67ba1482",
+            "quote_hash": "388e442ae4e2cc6aa30b7b0126481db8c76a3dee1c222a59c608aed6c90a71e2"
+          },
+          {
+            "source_id": "FISRC-fecad8ccb9a84a39",
+            "quote": "本轮融资由阿联酋Stone Venture（磊石资本）领投，洪山资本、粤科金融、吴中融玥、吴中金控等投资机构，以及东软集团、豪鹏科技、远见资本、日盈电子等产业投资方共同参与。",
+            "source_content_hash": "8e85893a67ba1482",
+            "quote_hash": "4252e2c9e4dc154dc45cb228c9960ebacaf654d7b89c5d7472cf9f31b37bbf38"
+          }
+        ],
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "数亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-d959c800774d5d30",
+            "round_original": "B轮",
+            "amount": "数亿元人民币",
+            "announced_at": "2026-09-20",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fecad8ccb9a84a39",
+                "quote": "2026年9月，具身智能机器人企业智身科技（GENISOM AI）宣布完成数亿元人民币B轮融资。",
+                "source_content_hash": "8e85893a67ba1482",
+                "quote_hash": "388e442ae4e2cc6aa30b7b0126481db8c76a3dee1c222a59c608aed6c90a71e2"
+              },
+              {
+                "source_id": "FISRC-fecad8ccb9a84a39",
+                "quote": "本轮融资由阿联酋Stone Venture（磊石资本）领投，洪山资本、粤科金融、吴中融玥、吴中金控等投资机构，以及东软集团、豪鹏科技、远见资本、日盈电子等产业投资方共同参与。",
+                "source_content_hash": "8e85893a67ba1482",
+                "quote_hash": "4252e2c9e4dc154dc45cb228c9960ebacaf654d7b89c5d7472cf9f31b37bbf38"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "四足机器狗",
+          "description": "智身科技自研的四足机器狗产品，已成功下线并接受国内外客户的检验。",
+          "target_customers": "电力、石化、消防、安防、应急、教育等行业客户",
+          "features": [
+            "自主导航",
+            "环境感知",
+            "智能决策"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-750c27d055174535",
+              "quote": "自研四足机器狗、全尺寸人形机器人等产品，已成功下线并接受国内外客户的检验",
+              "source_content_hash": "d755141a7f7db875",
+              "quote_hash": "2b09e9ce571d111628dd4854ee77cd69b5dd18e22eadb1998e8654ee95d232c4"
+            },
+            {
+              "source_id": "FISRC-fecad8ccb9a84a39",
+              "quote": "产品已进入电力、石化、消防、安防、应急、教育等多个行业",
+              "source_content_hash": "8e85893a67ba1482",
+              "quote_hash": "b6c590913e5cb2255c3bcb77171a5e5d8c95159dc2f90114796e507d3040eda6"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "全尺寸人形机器人",
+          "description": "智身科技自研的全尺寸人形机器人产品，已成功下线并接受国内外客户的检验。",
+          "target_customers": "电力、石化、消防、安防、应急、教育等行业客户",
+          "features": [
+            "全尺寸人形形态",
+            "任务作业能力"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-750c27d055174535",
+              "quote": "自研四足机器狗、全尺寸人形机器人等产品，已成功下线并接受国内外客户的检验",
+              "source_content_hash": "d755141a7f7db875",
+              "quote_hash": "2b09e9ce571d111628dd4854ee77cd69b5dd18e22eadb1998e8654ee95d232c4"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "CHAMP系列高功率密度关节模组",
+          "description": "智身科技自主研发的CHAMP系列高功率密度关节模组，目前年产能已突破100万件，为产品迭代和规模量产提供底层支撑。",
+          "target_customers": "机器人本体制造与核心部件供应",
+          "features": [
+            "高功率密度",
+            "年产能突破100万件"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e54e97020b0290ed",
+              "quote": "公司自主研发CHAMP系列高功率密度关节模组，目前年产能已突破100万件",
+              "source_content_hash": "1f38d04bcb52fdb7",
+              "quote_hash": "8a9bc2a52b6ad737edc13e9d324a72b534cb65ba4f43584bcdbc7c13edd1846a"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "电力行业客户",
+          "industry": "电力",
+          "use_case": "电力巡检四足机器人相关行业标准制定",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e54e97020b0290ed",
+              "quote": "在电力领域，公司参与电力巡检四足机器人相关行业标准制定",
+              "source_content_hash": "1f38d04bcb52fdb7",
+              "quote_hash": "3e4e79445ffa778b2dfc4fba91b8cf2d85a6a88dfe46e0e1d2cbcc15d8ed538f"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "消防和应急场景客户",
+          "industry": "消防、应急",
+          "use_case": "机器人进入人员作业风险较高的环境，协助完成侦察、监测、信息回传等任务",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e54e97020b0290ed",
+              "quote": "在消防和应急场景，机器人能够进入人员作业风险较高的环境，协助完成侦察、监测、信息回传等任务",
+              "source_content_hash": "1f38d04bcb52fdb7",
+              "quote_hash": "1c5ba831039c4d01f24409f35953af6f67aff832390be80bccbd5bfc497b6dba"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "安防场景客户",
+          "industry": "安防",
+          "use_case": "承担园区、社区等区域的高频巡逻和巡检工作",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e54e97020b0290ed",
+              "quote": "在安防场景，则可以承担园区、社区等区域的高频巡逻和巡检工作",
+              "source_content_hash": "1f38d04bcb52fdb7",
+              "quote_hash": "19809301592b040baa4b8985b5c64ca337236f557cb2ca000a5dedf3b1420073"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "具身智能机器人累计量产",
+          "value": "突破15000台",
+          "observed_at": "2026-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fecad8ccb9a84a39",
+              "quote": "截至2026年6月，智身科技具身智能机器人累计量产突破15000台",
+              "source_content_hash": "8e85893a67ba1482",
+              "quote_hash": "e34ef452fa21965e8a4c529fb064dde565cb5f116b8587fe5bf6991bfa642b3d"
+            }
+          ]
+        },
+        {
+          "label": "单月产能较去年月均水平提升",
+          "value": "超10倍",
+          "observed_at": "2026-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fecad8ccb9a84a39",
+              "quote": "单月产能较去年月均水平提升超10倍",
+              "source_content_hash": "8e85893a67ba1482",
+              "quote_hash": "dd534d70d8f620fcafc9e934e566d36537f5b469ad7dd1eca31e872b2796b1f5"
+            }
+          ]
+        },
+        {
+          "label": "生态伙伴数量",
+          "value": "500余家",
+          "observed_at": "2026-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fecad8ccb9a84a39",
+              "quote": "并与500余家生态伙伴建立合作",
+              "source_content_hash": "8e85893a67ba1482",
+              "quote_hash": "15c8cd3dc9035c448a3bcbd0a584038e318c2b72a453ff730612770914c5b59c"
+            }
+          ]
+        },
+        {
+          "label": "CHAMP系列关节模组年产能",
+          "value": "突破100万件",
+          "observed_at": "2026-09-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e54e97020b0290ed",
+              "quote": "公司自主研发CHAMP系列高功率密度关节模组，目前年产能已突破100万件",
+              "source_content_hash": "1f38d04bcb52fdb7",
+              "quote_hash": "8a9bc2a52b6ad737edc13e9d324a72b534cb65ba4f43584bcdbc7c13edd1846a"
+            }
+          ]
+        },
+        {
+          "label": "研发人员占比",
+          "value": "70%",
+          "observed_at": "2026-09-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d3ef62d0abfa671a",
+              "quote": "研发人员占公司总人数70%",
+              "source_content_hash": "7586850679fe60a5",
+              "quote_hash": "b0de12d5ab42a62081f33bc8499538c9d7e3af204793796e6f5ba5a3d6a5ae83"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "智身科技",
+          "quote": "在人不想去、不能去、不该去的地方，把活干好。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e54e97020b0290ed",
+              "quote": "对于机器人为什么值得被造出来，智身科技有一个朴素的判断：在人不想去、不能去、不该去的地方，把活干好。",
+              "source_content_hash": "1f38d04bcb52fdb7",
+              "quote_hash": "3a74e9a4329908637a0bf865d4bdcd9c5cf9e4e5ee4c028284365ce0ea82a90a"
+            }
+          ]
+        },
+        {
+          "speaker": "智身科技",
+          "quote": "推动机器人从“自主进入现场”走向“自主完成任务”，持续打造真正“能干活的机器人”。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fecad8ccb9a84a39",
+              "quote": "推动机器人从“自主进入现场”走向“自主完成任务”，持续打造真正“能干活的机器人”。",
+              "source_content_hash": "8e85893a67ba1482",
+              "quote_hash": "3e38cab4b9fa2c688fe8cc47c521752767cec707a3fa1a86d9ab74f595f41eeb"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是智身科技在具身智能机器人领域已形成的规模量产能力与真实行业场景验证。截至2026年6月，公司累计量产突破15000台，单月产能较去年月均水平提升超10倍，产品已进入电力、石化、消防、安防、应急、教育等多个行业，并与500余家生态伙伴建立合作。本轮融资由阿联酋Stone Venture领投，并汇聚洪山资本、粤科金融、吴中融玥、吴中金控等投资机构及东软集团、豪鹏科技、远见资本、日盈电子等产业投资方，资本结构覆盖境内外投资机构与产业资本。来源未披露本轮估值或投后估值，也未提供投资机构对估值逻辑的公开表述，因此无法确认估值所依赖的具体财务信号。已验证信号集中在量产规模、行业渗透和生态合作数量，而非收入、毛利率或复购率等商业指标。",
+        "validated_signals": [
+          "截至2026年6月，具身智能机器人累计量产突破15000台",
+          "单月产能较去年月均水平提升超10倍",
+          "产品已进入电力、石化、消防、安防、应急、教育等多个行业",
+          "与500余家生态伙伴建立合作",
+          "CHAMP系列高功率密度关节模组年产能突破100万件"
+        ],
+        "risks": [
+          "来源未披露收入、毛利率、复购率等商业指标，规模量产与行业渗透尚未转化为可验证的财务表现",
+          "具身智能机器人行业仍处于发展早期，场景商业化落地和技术迭代速度面临市场竞争压力"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "robotic_system",
+        "market_category_id": "physical_ai",
+        "market_subcategory_id": "",
+        "market_application_id": "",
+        "use_case_ids": [
+          "physical_automation"
+        ],
+        "industry_ids": [
+          "energy_utilities",
+          "government_public_sector",
+          "education"
+        ],
+        "target_user_ids": [
+          "business_user",
+          "public_sector_user",
+          "educator"
+        ],
+        "sector": "具身智能机器人",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是智身科技在具身智能机器人领域已形成的规模量产能力与真实行业场景验证。截至2026年6月，公司累计量产突破15000台，单月产能较去年月均水平提升超10倍，产品已进入电力、石化、消防、安防、应急、教育等多个行业，并与500余家生态伙伴建立合作。本轮融资由阿联酋Stone Venture领投，并汇聚洪山资本、粤科金融、吴中融玥、吴中金控等投资机构及东软集团、豪鹏科技、远见资本、日盈电子等产业投资方，资本结构覆盖境内外投资机构与产业资本。来源未披露本轮估值或投后估值，也未提供投资机构对估值逻辑的公开表述，因此无法确认估值所依赖的具体财务信号。已验证信号集中在量产规模、行业渗透和生态合作数量，而非收入、毛利率或复购率等商业指标。",
+          "evidence_signals": [
+            "截至2026年6月，具身智能机器人累计量产突破15000台",
+            "单月产能较去年月均水平提升超10倍",
+            "产品已进入电力、石化、消防、安防、应急、教育等多个行业",
+            "与500余家生态伙伴建立合作",
+            "CHAMP系列高功率密度关节模组年产能突破100万件"
+          ],
+          "risks": [
+            "来源未披露收入、毛利率、复购率等商业指标，规模量产与行业渗透尚未转化为可验证的财务表现",
+            "具身智能机器人行业仍处于发展早期，场景商业化落地和技术迭代速度面临市场竞争压力"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "四足机器狗",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "全尺寸人形机器人",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "CHAMP系列高功率密度关节模组",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Stone Venture（磊石资本）",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "洪山资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "粤科金融",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "吴中融玥",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "吴中金控",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "东软集团",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "豪鹏科技",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "远见资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "日盈电子",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "智元机器人",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "贵安鲲鹏基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "金马游乐",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "柯力股份",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "时代伯乐",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "茅台基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "深圳前海奕铭投资",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "电力行业客户",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "消防和应急场景客户",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "安防场景客户",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-3c7609d3fc7b7ec8",
+          "date": "2026-09-20",
+          "title": "智身科技完成数亿元人民币B轮融资，加速推进「真正干活的机器人」",
+          "amount": "数亿元人民币",
+          "source_refs": [
+            "SA-9310c508eee81fe9"
+          ]
+        },
+        {
+          "event_id": "EV-d959c800774d5d30",
+          "date": "2026-09-20",
+          "title": "智身科技完成数亿元B轮融资 本轮融资由阿联酋Stone Venture（磊石资本）领投，洪山资本、粤科金融、吴中融玥、吴中金控等投资机构，以及东软集团、豪鹏科技、远见资本、日盈电子等产业投资方共同参与。 投中网 · 20小时前",
+          "amount": "数亿元人民币",
+          "source_refs": [
+            "SA-26fddbbdd4514abf"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-fecad8ccb9a84a39",
+          "source_url": "https://www.chinaventure.com.cn/news/114-20260920-393359.html",
+          "title": "智身科技完成数亿元B轮融资 本轮融资由阿联酋Stone Venture（磊石资本）领投，洪山资本、粤科金融、吴中融玥、吴中金控等投资机构，以及东软集团、豪鹏科技、远见资本、日盈电子等产业投资方共同参与。 投中网 · 20小时前",
+          "publisher": "投中网",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-21T00:36:09.275Z",
+          "content_hash": "8e85893a67ba1482",
+          "source_artifact_id": "SA-26fddbbdd4514abf",
+          "raw_id": "RAW-13d6402b8c7f6f66"
+        },
+        {
+          "source_id": "FISRC-e54e97020b0290ed",
+          "source_url": "https://www.cs.com.cn/ssgs/01/2026/09/20/detail_2026092010040494.html",
+          "title": "聚焦真实产业场景作业能力 智身科技完成数亿元B轮融资",
+          "publisher": "cs.com.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-21T00:37:56.064Z",
+          "content_hash": "1f38d04bcb52fdb7",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-750c27d055174535",
+          "source_url": "https://www.taibo.cn/company/122078",
+          "title": "智身科技（北京）有限公司-泰伯网",
+          "publisher": "taibo.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-21T00:37:56.935Z",
+          "content_hash": "d755141a7f7db875",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-d3ef62d0abfa671a",
+          "source_url": "https://www.headscm.com/Fingertip/detail/id/55686.html",
+          "title": "智身科技完成数亿元融资 - 物流指闻",
+          "publisher": "headscm.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-21T00:37:58.451Z",
+          "content_hash": "7586850679fe60a5",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-21T00:38:23.656Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-d959c800774d5d30",
+          "confidence": 0.9,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-21T00:38:23.656Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 3,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "CHAMP系列高功率密度关节模组",
+            "全尺寸人形机器人",
+            "四足机器狗"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 0,
+          "unresolved_names": []
+        }
+      },
+      "source_event_ids": [
+        "EV-d959c800774d5d30"
+      ],
+      "aggregation": {
+        "key": "EN-0213fcbfa6055593|series_b",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-2b01182be49534d7",
+      "triggered_by_event_id": "EV-3c7609d3fc7b7ec8",
+      "as_of_date": "2026-09-21",
+      "company": {
+        "entity_id": "EN-0213fcbfa6055593",
+        "name": "智身科技（GENISOM AI）",
+        "full_name": "智身科技（GENISOM AI）",
+        "website": "https://www.genisomai.com/",
+        "summary": "智身科技是专注于具身智能领域的创新科技企业，构建覆盖核心部件、机器人本体、运动控制与智能算法的全栈技术体系，形成“全栈技术＋规模量产＋行业应用”三大核心能力，产品已进入电力、石化、消防、安防、应急、教育等多个行业。",
+        "headquarters": "北京市大兴区",
+        "founders": [],
+        "team_size": {
+          "value": "研发人员占公司总人数70%",
+          "observed_at": "2026-09-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d3ef62d0abfa671a",
+              "quote": "核心团队来自小米“铁蛋”机器狗原班人马及华为、大疆，研发人员占公司总人数70%",
+              "source_content_hash": "7586850679fe60a5",
+              "quote_hash": "212c420277bcef14d27033fba4b00a4a171cd68db9516f9a14b94fe89dce6144"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-5b2457392e3c9d0d",
+            "quote": "智身科技（GENISOM AI）是专注于具身智能领域的创新科技企业",
+            "source_content_hash": "d409c07864c1f719",
+            "quote_hash": "907a148d9a0c60b2e7283c15f52dcc038aafcc3c416558c25c433205bb8b35b4"
+          },
+          {
+            "source_id": "FISRC-750c27d055174535",
+            "quote": "智身科技是一家具身智能全产业链技术服务商，全栈自研核心部件与整机，自研四足机器狗、全尺寸人形机器人等产品",
+            "source_content_hash": "d755141a7f7db875",
+            "quote_hash": "6364941e8deaba922bd7398897d9b26135c52487a2e82a8cb865f3229e56019c"
+          }
+        ],
+        "application_entity_id": "EN-0213fcbfa6055593",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "B轮",
+        "amount": "数亿元人民币",
+        "total_raised": "",
+        "announced_at": "2026-09-20",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "阿联酋Stone Venture（磊石资本）",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5b2457392e3c9d0d",
+                "quote": "本轮融资由 阿联酋Stone Venture（磊石资本）领投",
+                "source_content_hash": "d409c07864c1f719",
+                "quote_hash": "25ff41ef116e59a08cbb2c106059845cab7ed0dbf4e5a6c46deebcc93ea37744"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "洪山资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5b2457392e3c9d0d",
+                "quote": "洪山资本、粤科金融、吴中融玥、吴中金控等投资机构，以及东软集团、豪鹏科技、远见资本、日盈电子等产业投资方共同参与",
+                "source_content_hash": "d409c07864c1f719",
+                "quote_hash": "ec5d9bdbc2441058040753c6cf8e363b26fdf75debe18db0ba5922163b174b9f"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "粤科金融",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5b2457392e3c9d0d",
+                "quote": "洪山资本、粤科金融、吴中融玥、吴中金控等投资机构，以及东软集团、豪鹏科技、远见资本、日盈电子等产业投资方共同参与",
+                "source_content_hash": "d409c07864c1f719",
+                "quote_hash": "ec5d9bdbc2441058040753c6cf8e363b26fdf75debe18db0ba5922163b174b9f"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "吴中融玥",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5b2457392e3c9d0d",
+                "quote": "洪山资本、粤科金融、吴中融玥、吴中金控等投资机构，以及东软集团、豪鹏科技、远见资本、日盈电子等产业投资方共同参与",
+                "source_content_hash": "d409c07864c1f719",
+                "quote_hash": "ec5d9bdbc2441058040753c6cf8e363b26fdf75debe18db0ba5922163b174b9f"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "吴中金控",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5b2457392e3c9d0d",
+                "quote": "洪山资本、粤科金融、吴中融玥、吴中金控等投资机构，以及东软集团、豪鹏科技、远见资本、日盈电子等产业投资方共同参与",
+                "source_content_hash": "d409c07864c1f719",
+                "quote_hash": "ec5d9bdbc2441058040753c6cf8e363b26fdf75debe18db0ba5922163b174b9f"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "东软集团",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5b2457392e3c9d0d",
+                "quote": "东软集团、豪鹏科技、远见资本、日盈电子等产业投资方共同参与",
+                "source_content_hash": "d409c07864c1f719",
+                "quote_hash": "452da0cc6bfe87d86b29b67b68ddfd2d39eb10e456aa8eec41aec1e81e11bbfe"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "豪鹏科技",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5b2457392e3c9d0d",
+                "quote": "东软集团、豪鹏科技、远见资本、日盈电子等产业投资方共同参与",
+                "source_content_hash": "d409c07864c1f719",
+                "quote_hash": "452da0cc6bfe87d86b29b67b68ddfd2d39eb10e456aa8eec41aec1e81e11bbfe"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "远见资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5b2457392e3c9d0d",
+                "quote": "东软集团、豪鹏科技、远见资本、日盈电子等产业投资方共同参与",
+                "source_content_hash": "d409c07864c1f719",
+                "quote_hash": "452da0cc6bfe87d86b29b67b68ddfd2d39eb10e456aa8eec41aec1e81e11bbfe"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "日盈电子",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5b2457392e3c9d0d",
+                "quote": "东软集团、豪鹏科技、远见资本、日盈电子等产业投资方共同参与",
+                "source_content_hash": "d409c07864c1f719",
+                "quote_hash": "452da0cc6bfe87d86b29b67b68ddfd2d39eb10e456aa8eec41aec1e81e11bbfe"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "智元机器人",
+            "role": "历史轮次投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-750c27d055174535",
+                "quote": "A+轮 数亿元人民币 智元机器人, 贵安鲲鹏基金 ,金马游乐,柯力股份,豪鹏科技, 时代伯乐 , 茅台基金",
+                "source_content_hash": "d755141a7f7db875",
+                "quote_hash": "73abb7c1bbe47bb43dd8c46edcbd43f4329e879b481d278a3f2572e24a4b6895"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "贵安鲲鹏基金",
+            "role": "历史轮次投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-750c27d055174535",
+                "quote": "A+轮 数亿元人民币 智元机器人, 贵安鲲鹏基金 ,金马游乐,柯力股份,豪鹏科技, 时代伯乐 , 茅台基金",
+                "source_content_hash": "d755141a7f7db875",
+                "quote_hash": "73abb7c1bbe47bb43dd8c46edcbd43f4329e879b481d278a3f2572e24a4b6895"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "金马游乐",
+            "role": "历史轮次投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-750c27d055174535",
+                "quote": "A+轮 数亿元人民币 智元机器人, 贵安鲲鹏基金 ,金马游乐,柯力股份,豪鹏科技, 时代伯乐 , 茅台基金",
+                "source_content_hash": "d755141a7f7db875",
+                "quote_hash": "73abb7c1bbe47bb43dd8c46edcbd43f4329e879b481d278a3f2572e24a4b6895"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "柯力股份",
+            "role": "历史轮次投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-750c27d055174535",
+                "quote": "A+轮 数亿元人民币 智元机器人, 贵安鲲鹏基金 ,金马游乐,柯力股份,豪鹏科技, 时代伯乐 , 茅台基金",
+                "source_content_hash": "d755141a7f7db875",
+                "quote_hash": "73abb7c1bbe47bb43dd8c46edcbd43f4329e879b481d278a3f2572e24a4b6895"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "时代伯乐",
+            "role": "历史轮次投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-750c27d055174535",
+                "quote": "A+轮 数亿元人民币 智元机器人, 贵安鲲鹏基金 ,金马游乐,柯力股份,豪鹏科技, 时代伯乐 , 茅台基金",
+                "source_content_hash": "d755141a7f7db875",
+                "quote_hash": "73abb7c1bbe47bb43dd8c46edcbd43f4329e879b481d278a3f2572e24a4b6895"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "茅台基金",
+            "role": "历史轮次投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-750c27d055174535",
+                "quote": "A+轮 数亿元人民币 智元机器人, 贵安鲲鹏基金 ,金马游乐,柯力股份,豪鹏科技, 时代伯乐 , 茅台基金",
+                "source_content_hash": "d755141a7f7db875",
+                "quote_hash": "73abb7c1bbe47bb43dd8c46edcbd43f4329e879b481d278a3f2572e24a4b6895"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "深圳前海奕铭投资",
+            "role": "历史轮次投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-750c27d055174535",
+                "quote": "A轮 未披露 深圳前海奕铭投资 2025-09-06",
+                "source_content_hash": "d755141a7f7db875",
+                "quote_hash": "023637315ac7fff357c68f207d6de2f503e507c4bf23e0e34d0ecb9a3d58eee8"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-5b2457392e3c9d0d",
+            "quote": "投资界（ID：pedaily2012）9月20日消息，2026年9月，智身科技（GENISOM AI）宣布 完成数亿元人民币B轮融资 。",
+            "source_content_hash": "d409c07864c1f719",
+            "quote_hash": "431fc953fdbfe071e04d1e3621a48c6159e375ec7e38789286cabe94a4451bba"
+          },
+          {
+            "source_id": "FISRC-5b2457392e3c9d0d",
+            "quote": "2026年9月，智身科技（GENISOM AI）宣布 完成数亿元人民币B轮融资",
+            "source_content_hash": "d409c07864c1f719",
+            "quote_hash": "37f045025ad714faed6fe8a14ad3503b86bd795f550a950c4f1c18bbc9de5587"
+          },
+          {
+            "source_id": "FISRC-e54e97020b0290ed",
+            "quote": "近日，该公司宣布完成数亿元B轮融资。据悉，本轮融资由阿联酋Stone Venture（磊石资本）领投",
+            "source_content_hash": "1f38d04bcb52fdb7",
+            "quote_hash": "b61b621e90b6ced747ab67b68a1fa7741301665d6f5cf63c68064418df2ffbd8"
+          }
+        ],
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "数亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-3c7609d3fc7b7ec8",
+            "round_original": "B轮",
+            "amount": "数亿元人民币",
+            "announced_at": "2026-09-20",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5b2457392e3c9d0d",
+                "quote": "投资界（ID：pedaily2012）9月20日消息，2026年9月，智身科技（GENISOM AI）宣布 完成数亿元人民币B轮融资 。",
+                "source_content_hash": "d409c07864c1f719",
+                "quote_hash": "431fc953fdbfe071e04d1e3621a48c6159e375ec7e38789286cabe94a4451bba"
+              },
+              {
+                "source_id": "FISRC-5b2457392e3c9d0d",
+                "quote": "2026年9月，智身科技（GENISOM AI）宣布 完成数亿元人民币B轮融资",
+                "source_content_hash": "d409c07864c1f719",
+                "quote_hash": "37f045025ad714faed6fe8a14ad3503b86bd795f550a950c4f1c18bbc9de5587"
+              },
+              {
+                "source_id": "FISRC-e54e97020b0290ed",
+                "quote": "近日，该公司宣布完成数亿元B轮融资。据悉，本轮融资由阿联酋Stone Venture（磊石资本）领投",
+                "source_content_hash": "1f38d04bcb52fdb7",
+                "quote_hash": "b61b621e90b6ced747ab67b68a1fa7741301665d6f5cf63c68064418df2ffbd8"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "智身机器人",
+          "description": "面向电力、石化、消防、安防、应急等行业的具身智能机器人，采用“一体双脑”核心架构，具备自主导航、环境感知、智能决策与运动控制能力，能够进入人员作业风险较高的环境协助完成侦察、监测、信息回传等任务。",
+          "target_customers": "电力、石化、消防、安防、应急、教育等行业客户",
+          "features": [
+            "一体双脑架构：大脑负责自主导航、环境感知与智能决策，小脑负责运动控制与动力学能力",
+            "GSD（Genisom Self-Driving）自主导航能力",
+            "CHAMP系列高功率密度关节模组",
+            "覆盖核心部件、机器人本体、运动控制与智能算法的全栈技术体系"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5b2457392e3c9d0d",
+              "quote": "智身机器人已经进入电力、石化、消防、安防、应急等多个行业",
+              "source_content_hash": "d409c07864c1f719",
+              "quote_hash": "95db82155285d5fd9e2936fce0164449cf86278410f5fc83a2ca23021516c300"
+            },
+            {
+              "source_id": "FISRC-e54e97020b0290ed",
+              "quote": "形成“一体双脑”核心架构：“大脑”负责自主导航、环境感知与智能决策，“小脑”负责运动控制与动力学能力",
+              "source_content_hash": "1f38d04bcb52fdb7",
+              "quote_hash": "a610aa983030047b37f5c7641f0bda275570bc6b0425ed92d66dc9cb3cb1962e"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "CHAMP系列高功率密度关节模组",
+          "description": "智身科技自主研发的核心硬件部件，为机器人产品迭代和规模量产提供底层支撑，年产能已突破100万件。",
+          "target_customers": "机器人本体制造与内部产品配套",
+          "features": [
+            "高功率密度关节模组",
+            "年产能突破100万件"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5b2457392e3c9d0d",
+              "quote": "公司自主研发CHAMP系列高功率密度关节模组，目前年产能已突破100万件",
+              "source_content_hash": "d409c07864c1f719",
+              "quote_hash": "8a9bc2a52b6ad737edc13e9d324a72b534cb65ba4f43584bcdbc7c13edd1846a"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "电力行业客户",
+          "industry": "电力",
+          "use_case": "电力巡检四足机器人应用，参与行业标准制定并累计参与上百个电力巡检项目",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5b2457392e3c9d0d",
+              "quote": "在电力领域，公司参与电力巡检四足机器人相关行业标准制定，并累计参与上百个电力巡检项目",
+              "source_content_hash": "d409c07864c1f719",
+              "quote_hash": "7a11266e60ae2a8c1e9de5f10ba7f4e10087cd8a2b4e6140c430ae4880e3ece8"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "消防和应急场景客户",
+          "industry": "消防应急",
+          "use_case": "机器人进入人员作业风险较高的环境，协助完成侦察、监测、信息回传等任务",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5b2457392e3c9d0d",
+              "quote": "在消防和应急场景，机器人能够进入人员作业风险较高的环境，协助完成侦察、监测、信息回传等任务",
+              "source_content_hash": "d409c07864c1f719",
+              "quote_hash": "1c5ba831039c4d01f24409f35953af6f67aff832390be80bccbd5bfc497b6dba"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "安防场景客户",
+          "industry": "安防",
+          "use_case": "承担园区、社区等区域的高频巡逻和巡检工作",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5b2457392e3c9d0d",
+              "quote": "在安防场景，则可以承担园区、社区等区域的高频巡逻和巡检工作",
+              "source_content_hash": "d409c07864c1f719",
+              "quote_hash": "19809301592b040baa4b8985b5c64ca337236f557cb2ca000a5dedf3b1420073"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "具身智能机器人累计量产",
+          "value": "突破15000台",
+          "observed_at": "2026-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5b2457392e3c9d0d",
+              "quote": "截至2026年6月，智身科技具身智能机器人累计量产突破15000台",
+              "source_content_hash": "d409c07864c1f719",
+              "quote_hash": "e34ef452fa21965e8a4c529fb064dde565cb5f116b8587fe5bf6991bfa642b3d"
+            }
+          ]
+        },
+        {
+          "label": "单月产能较去年月均水平提升",
+          "value": "超10倍",
+          "observed_at": "2026-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5b2457392e3c9d0d",
+              "quote": "单月产能较去年月均水平提升超10倍",
+              "source_content_hash": "d409c07864c1f719",
+              "quote_hash": "dd534d70d8f620fcafc9e934e566d36537f5b469ad7dd1eca31e872b2796b1f5"
+            }
+          ]
+        },
+        {
+          "label": "生态伙伴数量",
+          "value": "500余家",
+          "observed_at": "2026-09-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5b2457392e3c9d0d",
+              "quote": "并与500余家生态伙伴建立合作",
+              "source_content_hash": "d409c07864c1f719",
+              "quote_hash": "15c8cd3dc9035c448a3bcbd0a584038e318c2b72a453ff730612770914c5b59c"
+            }
+          ]
+        },
+        {
+          "label": "CHAMP系列关节模组年产能",
+          "value": "突破100万件",
+          "observed_at": "2026-09-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5b2457392e3c9d0d",
+              "quote": "公司自主研发CHAMP系列高功率密度关节模组，目前年产能已突破100万件",
+              "source_content_hash": "d409c07864c1f719",
+              "quote_hash": "8a9bc2a52b6ad737edc13e9d324a72b534cb65ba4f43584bcdbc7c13edd1846a"
+            }
+          ]
+        },
+        {
+          "label": "生产布局",
+          "value": "三大基地、四大工厂",
+          "observed_at": "2026-09-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5b2457392e3c9d0d",
+              "quote": "智身科技已形成三大基地、四大工厂的生产布局",
+              "source_content_hash": "d409c07864c1f719",
+              "quote_hash": "346fe6360c9fc397890f6386bf4b2a13ef1fe8b2b63e6fe5031462cd2147ab1f"
+            }
+          ]
+        },
+        {
+          "label": "研发人员占比",
+          "value": "70%",
+          "observed_at": "2026-09-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d3ef62d0abfa671a",
+              "quote": "研发人员占公司总人数70%",
+              "source_content_hash": "7586850679fe60a5",
+              "quote_hash": "b0de12d5ab42a62081f33bc8499538c9d7e3af204793796e6f5ba5a3d6a5ae83"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "智身科技",
+          "quote": "在人不想去、不能去、不该去的地方，把活干好。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e54e97020b0290ed",
+              "quote": "对于机器人为什么值得被造出来，智身科技有一个朴素的判断：在人不想去、不能去、不该去的地方，把活干好。",
+              "source_content_hash": "1f38d04bcb52fdb7",
+              "quote_hash": "3a74e9a4329908637a0bf865d4bdcd9c5cf9e4e5ee4c028284365ce0ea82a90a"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是智身科技在具身智能领域同时具备全栈技术、规模量产和真实行业应用三重能力，尤其是截至2026年6月累计量产突破15000台、单月产能较去年月均提升超10倍的量产信号，以及产品已进入电力、石化、消防、安防、应急、教育等多个行业的场景验证。本轮由阿联酋Stone Venture领投，叠加洪山资本、粤科金融、吴中融玥、吴中金控等地方国资与东软集团、豪鹏科技、远见资本、日盈电子等产业投资方共同参与，表明资本认可其从技术验证走向规模交付的产业化路径。但来源未披露本轮估值、具体融资金额及财务数据，资本判断的证据边界限于量产规模、行业覆盖和投资方结构，无法对估值水平和商业化盈利能力作出量化判断。",
+        "validated_signals": [
+          "截至2026年6月具身智能机器人累计量产突破15000台",
+          "单月产能较去年月均水平提升超10倍",
+          "产品已进入电力、石化、消防、安防、应急、教育等多个行业",
+          "已形成三大基地、四大工厂的生产布局及覆盖研发、供应链、核心部件、整机生产、质量管理和交付服务的规模量产体系",
+          "与500余家生态伙伴建立合作",
+          "CHAMP系列高功率密度关节模组年产能突破100万件"
+        ],
+        "risks": [
+          "来源未披露本轮融资的具体金额、估值及财务数据，无法验证资本效率与商业化盈利能力",
+          "具身智能机器人行业仍处于发展早期，场景商业化落地和技术迭代速度面临市场竞争压力"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "robotic_system",
+        "market_category_id": "physical_ai",
+        "market_subcategory_id": "",
+        "market_application_id": "",
+        "use_case_ids": [
+          "physical_automation"
+        ],
+        "industry_ids": [
+          "energy_utilities",
+          "government_public_sector",
+          "manufacturing"
+        ],
+        "target_user_ids": [
+          "business_user",
+          "public_sector_user"
+        ],
+        "sector": "具身智能机器人",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是智身科技在具身智能领域同时具备全栈技术、规模量产和真实行业应用三重能力，尤其是截至2026年6月累计量产突破15000台、单月产能较去年月均提升超10倍的量产信号，以及产品已进入电力、石化、消防、安防、应急、教育等多个行业的场景验证。本轮由阿联酋Stone Venture领投，叠加洪山资本、粤科金融、吴中融玥、吴中金控等地方国资与东软集团、豪鹏科技、远见资本、日盈电子等产业投资方共同参与，表明资本认可其从技术验证走向规模交付的产业化路径。但来源未披露本轮估值、具体融资金额及财务数据，资本判断的证据边界限于量产规模、行业覆盖和投资方结构，无法对估值水平和商业化盈利能力作出量化判断。",
+          "evidence_signals": [
+            "截至2026年6月具身智能机器人累计量产突破15000台",
+            "单月产能较去年月均水平提升超10倍",
+            "产品已进入电力、石化、消防、安防、应急、教育等多个行业",
+            "已形成三大基地、四大工厂的生产布局及覆盖研发、供应链、核心部件、整机生产、质量管理和交付服务的规模量产体系",
+            "与500余家生态伙伴建立合作",
+            "CHAMP系列高功率密度关节模组年产能突破100万件"
+          ],
+          "risks": [
+            "来源未披露本轮融资的具体金额、估值及财务数据，无法验证资本效率与商业化盈利能力",
+            "具身智能机器人行业仍处于发展早期，场景商业化落地和技术迭代速度面临市场竞争压力"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "智身机器人",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "CHAMP系列高功率密度关节模组",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "阿联酋Stone Venture（磊石资本）",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "洪山资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "粤科金融",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "吴中融玥",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "吴中金控",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "东软集团",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "豪鹏科技",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "远见资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "日盈电子",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "智元机器人",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "贵安鲲鹏基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "金马游乐",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "柯力股份",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "时代伯乐",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "茅台基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "深圳前海奕铭投资",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "电力行业客户",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "消防和应急场景客户",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "安防场景客户",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-3c7609d3fc7b7ec8",
+          "date": "2026-09-20",
+          "title": "智身科技完成数亿元人民币B轮融资，加速推进「真正干活的机器人」",
+          "amount": "数亿元人民币",
+          "source_refs": [
+            "SA-9310c508eee81fe9"
+          ]
+        },
+        {
+          "event_id": "EV-d959c800774d5d30",
+          "date": "2026-09-20",
+          "title": "智身科技完成数亿元B轮融资 本轮融资由阿联酋Stone Venture（磊石资本）领投，洪山资本、粤科金融、吴中融玥、吴中金控等投资机构，以及东软集团、豪鹏科技、远见资本、日盈电子等产业投资方共同参与。 投中网 · 20小时前",
+          "amount": "数亿元人民币",
+          "source_refs": [
+            "SA-26fddbbdd4514abf"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-5b2457392e3c9d0d",
+          "source_url": "https://news.pedaily.cn/202609/569302.shtml",
+          "title": "智身科技完成数亿元人民币B轮融资，加速推进「真正干活的机器人」",
+          "publisher": "投资界",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-21T00:36:09.224Z",
+          "content_hash": "d409c07864c1f719",
+          "source_artifact_id": "SA-9310c508eee81fe9",
+          "raw_id": "RAW-9218a87a9163f2c7"
+        },
+        {
+          "source_id": "FISRC-e54e97020b0290ed",
+          "source_url": "https://www.cs.com.cn/ssgs/01/2026/09/20/detail_2026092010040494.html",
+          "title": "聚焦真实产业场景作业能力 智身科技完成数亿元B轮融资",
+          "publisher": "cs.com.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-21T00:37:29.306Z",
+          "content_hash": "1f38d04bcb52fdb7",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-750c27d055174535",
+          "source_url": "https://www.taibo.cn/company/122078",
+          "title": "智身科技（北京）有限公司-泰伯网",
+          "publisher": "taibo.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-21T00:37:30.081Z",
+          "content_hash": "d755141a7f7db875",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-d3ef62d0abfa671a",
+          "source_url": "https://www.headscm.com/Fingertip/detail/id/55686.html",
+          "title": "智身科技完成数亿元融资 - 物流指闻",
+          "publisher": "headscm.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-21T00:37:32.327Z",
+          "content_hash": "7586850679fe60a5",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-21T00:38:10.218Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-3c7609d3fc7b7ec8",
+          "confidence": 0.9,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-21T00:38:10.218Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 3,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "CHAMP系列高功率密度关节模组",
+            "智身机器人"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 0,
+          "unresolved_names": []
+        }
+      },
+      "source_event_ids": [
+        "EV-3c7609d3fc7b7ec8"
+      ],
+      "aggregation": {
+        "key": "EN-0213fcbfa6055593|series_b",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-73ce1a35019b849e",
+      "triggered_by_event_id": "EV-d5d58c23fa179e23",
+      "as_of_date": "2026-09-21",
+      "company": {
+        "entity_id": "EN-4df6f0f59120b360",
+        "name": "Moonback",
+        "full_name": "Moonback",
+        "website": "",
+        "summary": "AI宠物科技公司，最早从智能猫砂盆、智能玩具切入北美市场，即将推出AI宠物穿戴设备、AI摄像头和AI宠物睡眠窝垫，并为每只宠物建立数字生命档案。",
+        "headquarters": "",
+        "founders": [],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-47d99ccf15fbf5c8",
+            "quote": "AI宠物科技公司Moonback 完成首轮数千万元人民币融资",
+            "source_content_hash": "0b2eeda5af35ffed",
+            "quote_hash": "91bd0ee77a18451ce169c42b14a83227c6857d3d18a1a7f5b99d1e31dc110b1b"
+          }
+        ],
+        "application_entity_id": "EN-4df6f0f59120b360",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "其他融资",
+        "amount": "数千万元",
+        "total_raised": "数千万元人民币",
+        "announced_at": "2026-09-20",
+        "investor_disclosure_status": "not_disclosed",
+        "investors": [],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-47d99ccf15fbf5c8",
+            "quote": "投资界（ID：pedaily2012）9月20日消息，近日，AI宠物科技公司Moonback 完成首轮数千万元人民币融资 ，投资方为 国内头部 AI上市公司 ，云岫资本担任财务顾问。",
+            "source_content_hash": "0b2eeda5af35ffed",
+            "quote_hash": "fbda20f28d3d467ca5b60c57e1018883cd77ef866b81ffe300eea9e621afd30a"
+          },
+          {
+            "source_id": "FISRC-47d99ccf15fbf5c8",
+            "quote": "AI宠物科技公司Moonback 完成首轮数千万元人民币融资 ，投资方为 国内头部 AI上市公司 ，云岫资本担任财务顾问。",
+            "source_content_hash": "0b2eeda5af35ffed",
+            "quote_hash": "2c1f657a8de39fa9d58da6870e4574bcf46e0aa2655eec1c6a1a952d4a14f988"
+          },
+          {
+            "source_id": "FISRC-04b070d7768db896",
+            "quote": "近期，AI宠物科技公司Moonback完成首轮数千万元融资，投资方为国内头部AI上市公司，云岫资本担任财务顾问。",
+            "source_content_hash": "e607de68ec61738e",
+            "quote_hash": "f41d25f872cf5ddaa879fbdd7f2b76b8e9c0c05a046a3011c3eed66a60391725"
+          }
+        ],
+        "round_code": "other",
+        "round_original": "首轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "total_raised_original": "数千万元人民币",
+        "total_raised_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "risk_markers": [
+          "investors_missing"
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-d5d58c23fa179e23",
+            "round_original": "首轮",
+            "amount": "数千万元",
+            "announced_at": "2026-09-20",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-47d99ccf15fbf5c8",
+                "quote": "投资界（ID：pedaily2012）9月20日消息，近日，AI宠物科技公司Moonback 完成首轮数千万元人民币融资 ，投资方为 国内头部 AI上市公司 ，云岫资本担任财务顾问。",
+                "source_content_hash": "0b2eeda5af35ffed",
+                "quote_hash": "fbda20f28d3d467ca5b60c57e1018883cd77ef866b81ffe300eea9e621afd30a"
+              },
+              {
+                "source_id": "FISRC-47d99ccf15fbf5c8",
+                "quote": "AI宠物科技公司Moonback 完成首轮数千万元人民币融资 ，投资方为 国内头部 AI上市公司 ，云岫资本担任财务顾问。",
+                "source_content_hash": "0b2eeda5af35ffed",
+                "quote_hash": "2c1f657a8de39fa9d58da6870e4574bcf46e0aa2655eec1c6a1a952d4a14f988"
+              },
+              {
+                "source_id": "FISRC-04b070d7768db896",
+                "quote": "近期，AI宠物科技公司Moonback完成首轮数千万元融资，投资方为国内头部AI上市公司，云岫资本担任财务顾问。",
+                "source_content_hash": "e607de68ec61738e",
+                "quote_hash": "f41d25f872cf5ddaa879fbdd7f2b76b8e9c0c05a046a3011c3eed66a60391725"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "partially_disclosed"
+      },
+      "products": [
+        {
+          "name": "AI宠物穿戴设备",
+          "description": "通过GPS、电子围栏及多种传感器，持续采集宠物的位置、活动状态，同时监测心率、呼吸频率、HRV和体动情况。",
+          "target_customers": "宠物家长",
+          "features": [
+            "GPS定位",
+            "电子围栏",
+            "心率监测",
+            "呼吸频率监测",
+            "HRV监测",
+            "体动监测"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-47d99ccf15fbf5c8",
+              "quote": "AI宠物穿戴设备通过GPS、电子围栏及多种传感器，持续采集宠物的位置、活动状态，同时监测心率、呼吸频率、HRV和体动情况",
+              "source_content_hash": "0b2eeda5af35ffed",
+              "quote_hash": "f4d70a26d1770124afcf40ae50792b86a9d77c799e3d29a3c97b0920b5dfa17e"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "AI摄像头",
+          "description": "用视觉AI识别宠物的排泄和行为模式。",
+          "target_customers": "宠物家长",
+          "features": [
+            "视觉AI识别排泄模式",
+            "行为模式识别"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-47d99ccf15fbf5c8",
+              "quote": "AI摄像头用视觉AI识别宠物的排泄和行为模式",
+              "source_content_hash": "0b2eeda5af35ffed",
+              "quote_hash": "54c9ace624781a993eb6422605261780c09131dbd6a40b3ded1082882e81e1d4"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "AI宠物睡眠窝垫",
+          "description": "围绕在/离窝识别、睡眠时长和睡眠状态做持续监测。",
+          "target_customers": "宠物家长",
+          "features": [
+            "在/离窝识别",
+            "睡眠时长监测",
+            "睡眠状态监测"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-47d99ccf15fbf5c8",
+              "quote": "AI宠物窝垫围绕在/离窝识别、睡眠时长和睡眠状态做持续监测",
+              "source_content_hash": "0b2eeda5af35ffed",
+              "quote_hash": "6de6299adddecbdc9c7cddddc182e9b6cc8ace70a39483eb80ef4cd018d8499a"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "海外营收",
+          "value": "近亿元人民币",
+          "observed_at": "2026-09-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-47d99ccf15fbf5c8",
+              "quote": "过去一年Moonback海外营收近亿元人民币",
+              "source_content_hash": "0b2eeda5af35ffed",
+              "quote_hash": "cf815aa8df5b49e7efbc6002809d5c4b34f376c37d446354e7816889ac7c4c82"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Kevin",
+          "quote": "Moonback要做的是通过硬件+AI，帮助每一只毛孩子表达自己的健康和情绪，帮助宠物家长更好理解自己的毛孩子，为宠物家长和毛孩子提供一个真正能解决养宠问题的社区和平台，为养宠用户提供一个宠物版的“小红书”。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-47d99ccf15fbf5c8",
+              "quote": "Moonback要做的是通过硬件+AI，帮助每一只毛孩子表达自己的健康和情绪，帮助宠物家长更好理解自己的毛孩子，为宠物家长和毛孩子提供一个真正能解决养宠问题的社区和平台，为养宠用户提供一个宠物版的“小红书”。",
+              "source_content_hash": "0b2eeda5af35ffed",
+              "quote_hash": "8063d61e94dd48fa1d5bbbfa8f5b8597d9e0e2a49bbda6fa9f070fe7e96dc60d"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是Moonback能否将硬件渠道积累转化为可持续的宠物垂类AI数据与服务闭环。已验证信号包括：过去一年海外营收近亿元人民币、产品在北美核心品类排名第二、新品类目第一、已进入北美和欧洲线下商超渠道。但本轮投资方仅披露为“国内头部AI上市公司”而未具名，无法确认具体机构背书；宠物垂类模型共建仍处于计划阶段，尚未有实际产品落地证据。",
+        "validated_signals": [
+          "过去一年海外营收近亿元人民币",
+          "产品在核心品类中拿到同类目第二、新品类目第一",
+          "产品已入驻北美线下商超渠道",
+          "已进入北美和欧洲市场"
+        ],
+        "risks": [
+          "投资方未披露具体名称，无法验证产业资本的真实协同能力与资源投入程度。",
+          "宠物垂类模型共建仍处于计划阶段，缺乏已落地的模型能力或服务收入证据。",
+          "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "ai_device",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "consumer_retail",
+        "market_application_id": "",
+        "use_case_ids": [
+          "physical_automation"
+        ],
+        "industry_ids": [],
+        "target_user_ids": [
+          "consumer"
+        ],
+        "sector": "宠物科技",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是Moonback能否将硬件渠道积累转化为可持续的宠物垂类AI数据与服务闭环。已验证信号包括：过去一年海外营收近亿元人民币、产品在北美核心品类排名第二、新品类目第一、已进入北美和欧洲线下商超渠道。但本轮投资方仅披露为“国内头部AI上市公司”而未具名，无法确认具体机构背书；宠物垂类模型共建仍处于计划阶段，尚未有实际产品落地证据。",
+          "evidence_signals": [
+            "过去一年海外营收近亿元人民币",
+            "产品在核心品类中拿到同类目第二、新品类目第一",
+            "产品已入驻北美线下商超渠道",
+            "已进入北美和欧洲市场"
+          ],
+          "risks": [
+            "投资方未披露具体名称，无法验证产业资本的真实协同能力与资源投入程度。",
+            "宠物垂类模型共建仍处于计划阶段，缺乏已落地的模型能力或服务收入证据。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "AI宠物穿戴设备",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "AI摄像头",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "AI宠物睡眠窝垫",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-d5d58c23fa179e23",
+          "date": "2026-09-20",
+          "title": "Moonback完成首轮数千万元人民币融资，加码宠物AI",
+          "amount": "数千万元",
+          "source_refs": [
+            "SA-0ed0d93d747bbcef"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-47d99ccf15fbf5c8",
+          "source_url": "https://news.pedaily.cn/202609/569297.shtml",
+          "title": "Moonback完成首轮数千万元人民币融资，加码宠物AI",
+          "publisher": "投资界",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-21T00:36:09.226Z",
+          "content_hash": "0b2eeda5af35ffed",
+          "source_artifact_id": "SA-0ed0d93d747bbcef",
+          "raw_id": "RAW-670d20db656dd825"
+        },
+        {
+          "source_id": "FISRC-04b070d7768db896",
+          "source_url": "https://finance.eastmoney.com/a/202609203879304591.html",
+          "title": "Moonback完成首轮数千万元融资 _ 东方财富网",
+          "publisher": "finance.eastmoney.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-21T00:37:31.246Z",
+          "content_hash": "e607de68ec61738e",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 2,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-21T00:37:54.987Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-d5d58c23fa179e23",
+          "confidence": 0.7,
+          "needs_review": true
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-21T00:37:54.987Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 2
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "AI宠物睡眠窝垫",
+            "AI宠物穿戴设备",
+            "AI摄像头"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 0,
+          "unresolved_names": []
+        }
+      },
+      "source_event_ids": [
+        "EV-d5d58c23fa179e23"
+      ],
+      "aggregation": {
+        "key": "EN-4df6f0f59120b360|other",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-2c2f903622c29ba4",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-21T00:38:58.409Z"
+    },
+    {
+      "event_id": "EV-3c7609d3fc7b7ec8",
+      "company_name": "智身科技",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"智身科技\" 2026 融资 轮次 金额 投资方",
+        "\"智身科技\" \"数亿元人民币\" 本轮融资 领投 跟投",
+        "\"智身科技\" 产品 服务 创始人 总部",
+        "\"智身科技\" 投资机构 投资原因 融资用途"
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"智身科技\" 2026 融资 轮次 金额 投资方",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"智身科技\" 2026 融资 轮次 金额 投资方",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"智身科技\" \"数亿元人民币\" 本轮融资 领投 跟投",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"智身科技\" \"数亿元人民币\" 本轮融资 领投 跟投",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"智身科技\" 产品 服务 创始人 总部",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"智身科技\" 产品 服务 创始人 总部",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"智身科技\" 投资机构 投资原因 融资用途",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"智身科技\" 投资机构 投资原因 融资用途",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-09-21T00:38:58.409Z"
+    },
+    {
+      "event_id": "EV-d5d58c23fa179e23",
+      "company_name": "Moonback",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Moonback完成首轮数千万元人民币融资，加码宠物AI\" funding company investors product",
+        "\"Moonback\" \"数千万元\" funding investors round",
+        "\"Moonback\" product customers case study",
+        "\"Moonback\" \"Moonback完成首轮数千万元人民币融资，加码宠物AI\" competitors product use case",
+        "\"Moonback\" \"数千万元\" investor quote why invested",
+        "\"Moonback\" \"数千万元\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Moonback完成首轮数千万元人民币融资，加码宠物AI\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Moonback完成首轮数千万元人民币融资，加码宠物AI\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Moonback\" \"数千万元\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Moonback\" \"数千万元\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Moonback\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Moonback\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Moonback\" \"Moonback完成首轮数千万元人民币融资，加码宠物AI\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Moonback\" \"Moonback完成首轮数千万元人民币融资，加码宠物AI\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Moonback\" \"数千万元\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Moonback\" \"数千万元\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Moonback\" \"数千万元\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Moonback\" \"数千万元\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-09-21T00:38:58.409Z"
+    },
+    {
+      "event_id": "EV-06f2bca776e5cee7",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-21T00:38:58.409Z"
+    },
+    {
+      "event_id": "EV-d959c800774d5d30",
+      "company_name": "智身科技",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"智身科技\" 2026 融资 轮次 金额 投资方",
+        "\"智身科技\" \"数亿元人民币\" 本轮融资 领投 跟投",
+        "\"智身科技\" 产品 服务 创始人 总部",
+        "\"智身科技\" 投资机构 投资原因 融资用途"
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"智身科技\" 2026 融资 轮次 金额 投资方",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"智身科技\" 2026 融资 轮次 金额 投资方",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"智身科技\" \"数亿元人民币\" 本轮融资 领投 跟投",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"智身科技\" \"数亿元人民币\" 本轮融资 领投 跟投",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"智身科技\" 产品 服务 创始人 总部",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"智身科技\" 产品 服务 创始人 总部",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"智身科技\" 投资机构 投资原因 融资用途",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"智身科技\" 投资机构 投资原因 融资用途",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-09-21T00:38:58.409Z"
+    },
+    {
+      "event_id": "EV-bdd1611cc17c3325",
+      "company_name": "千觉机器人宣布连续",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"千觉机器人宣布连续\" 2026 融资 轮次 金额 投资方",
+        "\"千觉机器人宣布连续\" \"数亿元\" 本轮融资 领投 跟投",
+        "\"千觉机器人宣布连续\" 产品 服务 创始人 总部",
+        "\"千觉机器人宣布连续\" 投资机构 投资原因 融资用途"
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"千觉机器人宣布连续\" 2026 融资 轮次 金额 投资方",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"千觉机器人宣布连续\" 2026 融资 轮次 金额 投资方",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"千觉机器人宣布连续\" \"数亿元\" 本轮融资 领投 跟投",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"千觉机器人宣布连续\" \"数亿元\" 本轮融资 领投 跟投",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"千觉机器人宣布连续\" 产品 服务 创始人 总部",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"千觉机器人宣布连续\" 产品 服务 创始人 总部",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"千觉机器人宣布连续\" 投资机构 投资原因 融资用途",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"千觉机器人宣布连续\" 投资机构 投资原因 融资用途",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-09-21T00:38:58.409Z"
+    },
+    {
+      "event_id": "EV-b9be18b12b1714f3",
+      "company_name": "晶能",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"晶能\" 2026 融资 轮次 金额 投资方",
+        "\"晶能\" \"6.3亿元\" 本轮融资 领投 跟投",
+        "\"晶能\" 产品 服务 创始人 总部",
+        "\"晶能\" 投资机构 投资原因 融资用途"
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"晶能\" 2026 融资 轮次 金额 投资方",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"晶能\" 2026 融资 轮次 金额 投资方",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"晶能\" \"6.3亿元\" 本轮融资 领投 跟投",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"晶能\" \"6.3亿元\" 本轮融资 领投 跟投",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"晶能\" 产品 服务 创始人 总部",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"晶能\" 产品 服务 创始人 总部",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"晶能\" 投资机构 投资原因 融资用途",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"晶能\" 投资机构 投资原因 融资用途",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-09-21T00:38:58.409Z"
+    },
+    {
+      "event_id": "EV-77887cf446f03ba4",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-21T00:38:58.409Z"
+    }
+  ]
+}

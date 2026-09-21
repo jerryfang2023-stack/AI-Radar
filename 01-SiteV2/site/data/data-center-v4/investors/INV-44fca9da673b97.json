@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-20T05:41:49.434Z",
-    "latestDataDate": "2026-09-20",
-    "currentDate": "2026-09-20",
-    "eventCount": 3434,
+    "generatedAt": "2026-09-21T00:39:33.145Z",
+    "latestDataDate": "2026-09-21",
+    "currentDate": "2026-09-21",
+    "eventCount": 3444,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -59,21 +59,62 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 0,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-09-12",
-    "latest_disclosed_at": "2026-09-12",
+    "latest_disclosed_at": "2026-09-20",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 2
     },
     "round_codes": [],
     "portfolio_companies": [],
     "activities": [
+      {
+        "activity_id": "IA-4ed5264d1cef1565",
+        "funding_insight_id": "FI-cb9086864c5c66de",
+        "event_ids": [
+          "EV-bdd1611cc17c3325"
+        ],
+        "company_entity_id": "EN-c386ba3b954748fa",
+        "company_canonical_entity_id": "",
+        "company_name": "千觉机器人",
+        "round": "战略融资",
+        "round_code": "strategic",
+        "round_original": "战略融资",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-09-20",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "股东",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-3a00c703054126cd",
+            "source_url": "https://www.chinaventure.com.cn/news/114-20260920-393347.html",
+            "source_title": "千觉机器人宣布连续完成两轮数亿元战略融资 投资方包括知名双币基金蓝驰创投、中金资本旗下基金、靖亚资本等知名投资机构。 投中网 · 22小时前",
+            "source_content_hash": "3943ea5191d9c7eb",
+            "quote": "以及理想汽车、智元机器人、吉德电器等具身与工业领域头部产业方",
+            "quote_hash": "5aa2de18c5e95ae817f5bfe810bfa27f5798694d9934229e98298d263d163400"
+          }
+        ]
+      },
       {
         "activity_id": "IA-a51e63764f43f12d",
         "funding_insight_id": "FI-6cb88e1aa2901cbb",
@@ -116,6 +157,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-3a00c703054126cd",
+        "source_url": "https://www.chinaventure.com.cn/news/114-20260920-393347.html",
+        "source_title": "千觉机器人宣布连续完成两轮数亿元战略融资 投资方包括知名双币基金蓝驰创投、中金资本旗下基金、靖亚资本等知名投资机构。 投中网 · 22小时前",
+        "source_content_hash": "3943ea5191d9c7eb",
+        "quote": "以及理想汽车、智元机器人、吉德电器等具身与工业领域头部产业方",
+        "quote_hash": "5aa2de18c5e95ae817f5bfe810bfa27f5798694d9934229e98298d263d163400"
+      },
       {
         "source_id": "FISRC-c721ebc5120776a7",
         "source_url": "https://www.zidonghua.com.cn/m/news/Finance/83627.html",

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-20T05:41:49.434Z",
-    "latestDataDate": "2026-09-20",
-    "currentDate": "2026-09-20",
-    "eventCount": 3434,
+    "generatedAt": "2026-09-21T00:39:33.145Z",
+    "latestDataDate": "2026-09-21",
+    "currentDate": "2026-09-21",
+    "eventCount": 3444,
     "quarantinedEventCount": 36,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -62,6 +62,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-5458f54522772562",
       "EV-1a75b3a3a8bff860",
       "EV-0121f0a9e9a975ec",
       "EV-522c339dded54be5",
@@ -89,14 +90,16 @@
       "EN-cf81a61e4eaef17c"
     ],
     "firstSeen": "2026-06-01",
-    "lastSeen": "2026-09-11",
+    "lastSeen": "2026-09-21",
     "relationIds": [
       "REL2-a01e1f1fdf22a3e4",
       "REL2-aedca968ec6469f3",
       "REL2-949bfe8ea8e326ed"
     ],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-5458f54522772562"
+      ],
       "deployments": [
         "EV-1a75b3a3a8bff860",
         "EV-0121f0a9e9a975ec",
@@ -123,6 +126,21 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-5458f54522772562",
+        "dataDate": "2026-09-21",
+        "date": "2026-07-10",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "MiniMax再融160亿港币国产大模型掀起融资热潮 - 财联社",
+        "displayTags": [],
+        "entityIds": [
+          "EN-e1517be14d06cdb7"
+        ]
+      },
       {
         "id": "EV-1a75b3a3a8bff860",
         "dataDate": "2026-09-11",
@@ -856,6 +874,7 @@
       "typeLabel": "产品形态",
       "valueId": "chip_accelerator",
       "eventIds": [
+        "EV-b9be18b12b1714f3",
         "EV-2c2f903622c29ba4",
         "EV-412f7ce21693dc13",
         "EV-375d04f7cc9746c6",
@@ -864,6 +883,7 @@
         "EV-ae87e20ab0c5d06a",
         "EV-012b1ccfe1d48f51",
         "EV-2a2f79242a9479e7",
+        "EV-0f7dc05e62a249e8",
         "EV-4af14568b1bdeb35",
         "EV-e70a48e36e99d57a",
         "EV-83728e3b6c7736ce",
@@ -986,6 +1006,7 @@
         "EV-bca0d9aca07bcb4a"
       ],
       "entityIds": [
+        "EN-92d14efa2f3f44b1",
         "EN-33d5a47fc56e4ba1",
         "EN-c5146e8a5659ab7e",
         "EN-968e2d5b08687bf4",
@@ -993,6 +1014,7 @@
         "EN-a5e5f031b6f878cf",
         "EN-4482f5b97bed22de",
         "EN-e9c2b868dc8f92df",
+        "EN-d6aaf8306449a07d",
         "EN-9cb45a27a2808c01",
         "EN-8d4321d936320802",
         "EN-240389f4b730bad4",
@@ -1123,7 +1145,7 @@
         "HW-4c176e4c40871adc"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-20"
+      "lastSeen": "2026-09-21"
     },
     {
       "id": "TX-technology-multimodal",

@@ -7,8 +7,8 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-20T05:54:20.800Z",
-    "latestDataDate": "2026-09-20",
+    "generatedAt": "2026-09-21T00:39:36.537Z",
+    "latestDataDate": "2026-09-21",
     "timezone": "Asia/Shanghai",
     "dateBasis": "dataDate",
     "boundary": "accepted-canonical-events-only; no viewpoints, community, scores or recommendations",
@@ -37,15 +37,730 @@
       "hardware": "AI 硬件"
     },
     "sourceCounts": {
-      "events": 3259,
+      "events": 3269,
       "entities": 960,
       "relationships": 392
     }
   },
   "events": {
+    "EV-3c7609d3fc7b7ec8": {
+      "id": "EV-3c7609d3fc7b7ec8",
+      "dataDate": "2026-09-21",
+      "occurrenceDate": "2026-09-20",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "publicationStatus": "verified",
+      "category": "financing",
+      "title": "智身科技完成数亿元人民币B轮融资，加速推进「真正干活的机器人」",
+      "entityIds": [],
+      "entityNames": [
+        "智身科技"
+      ],
+      "productNames": [],
+      "classifications": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "physical_ai",
+          "name": "Physical AI",
+          "entityIds": [
+            "EN-0213fcbfa6055593"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b52bdb70aed1ade6",
+          "fundingInsightId": "FI-2b01182be49534d7"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "energy_utilities",
+          "name": "能源与公用事业",
+          "entityIds": [
+            "EN-0213fcbfa6055593"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-03ad07012c30e7cd",
+          "fundingInsightId": "FI-2b01182be49534d7"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "government_public_sector",
+          "name": "政府与公共部门",
+          "entityIds": [
+            "EN-0213fcbfa6055593"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-8cddbb7c76686dd7",
+          "fundingInsightId": "FI-2b01182be49534d7"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-0213fcbfa6055593"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-cd1a5b009fc9d5d3",
+          "fundingInsightId": "FI-2b01182be49534d7"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "robotic_system",
+          "name": "机器人系统",
+          "entityIds": [
+            "EN-0213fcbfa6055593"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-6a4088026a44d8f6",
+          "fundingInsightId": "FI-2b01182be49534d7"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-0213fcbfa6055593"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-661e37b0b1326233",
+          "fundingInsightId": "FI-2b01182be49534d7"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "public_sector_user",
+          "name": "公共部门用户",
+          "entityIds": [
+            "EN-0213fcbfa6055593"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b03bd7c0f030c194",
+          "fundingInsightId": "FI-2b01182be49534d7"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-0213fcbfa6055593"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-2258ecfc418f3042",
+          "fundingInsightId": "FI-2b01182be49534d7"
+        }
+      ],
+      "claimIds": [
+        "CL-a18a00e13a511511"
+      ],
+      "sourceIds": [
+        "SA-9310c508eee81fe9"
+      ],
+      "sourceUrl": "https://news.pedaily.cn/202609/569302.shtml",
+      "publisher": "投资界",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-3c7609d3fc7b7ec8"
+    },
+    "EV-66f24f6db71cc011": {
+      "id": "EV-66f24f6db71cc011",
+      "dataDate": "2026-09-21",
+      "occurrenceDate": "2026-09-20",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "publicationStatus": "verified",
+      "category": "financing",
+      "title": "Moonback完成新一轮融资 投资方为国内头部AI上市公司，云岫资本担任财务顾问。 投中网 · 21小时前",
+      "entityIds": [
+        "EN-ea3bd73e2b506e00",
+        "EN-3a7bd3e2360a3d29"
+      ],
+      "entityNames": [
+        "Meta",
+        "Apple",
+        "Moonback"
+      ],
+      "productNames": [],
+      "classifications": [],
+      "claimIds": [
+        "CL-b0c2e49b024f7cc1"
+      ],
+      "sourceIds": [
+        "SA-4c84b7b5a89ca250"
+      ],
+      "sourceUrl": "https://chinaventure.com.cn/news/116-20260920-393358.html",
+      "publisher": "投中网",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-66f24f6db71cc011"
+    },
+    "EV-b9be18b12b1714f3": {
+      "id": "EV-b9be18b12b1714f3",
+      "dataDate": "2026-09-21",
+      "occurrenceDate": "2026-09-20",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "publicationStatus": "verified",
+      "category": "financing",
+      "title": "晶能完成6.3亿元C轮融资，开创AI电力电子新范式",
+      "entityIds": [],
+      "entityNames": [
+        "晶能"
+      ],
+      "productNames": [],
+      "classifications": [
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "chips",
+          "name": "芯片",
+          "entityIds": [
+            "EN-92d14efa2f3f44b1"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-2d25b95065895aef",
+          "fundingInsightId": "FI-14f04ed0c11638ac"
+        },
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-92d14efa2f3f44b1"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-658e5eda75103399",
+          "fundingInsightId": "FI-14f04ed0c11638ac"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "hardware_computing",
+          "name": "硬件与算力",
+          "entityIds": [
+            "EN-92d14efa2f3f44b1"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-c4c8b4f7119c52a4",
+          "fundingInsightId": "FI-14f04ed0c11638ac"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "automotive_transportation",
+          "name": "汽车与交通",
+          "entityIds": [
+            "EN-92d14efa2f3f44b1"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-5acadb34caf81177",
+          "fundingInsightId": "FI-14f04ed0c11638ac"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "energy_utilities",
+          "name": "能源与公用事业",
+          "entityIds": [
+            "EN-92d14efa2f3f44b1"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-81e997543b828838",
+          "fundingInsightId": "FI-14f04ed0c11638ac"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-92d14efa2f3f44b1"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f157c249fd6e5db0",
+          "fundingInsightId": "FI-14f04ed0c11638ac"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-92d14efa2f3f44b1"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-e9519ef44fc9c94f",
+          "fundingInsightId": "FI-14f04ed0c11638ac"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-92d14efa2f3f44b1"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4ff2bf2a5ea8d81c",
+          "fundingInsightId": "FI-14f04ed0c11638ac"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-92d14efa2f3f44b1"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-1d772d7361ee3a9c",
+          "fundingInsightId": "FI-14f04ed0c11638ac"
+        }
+      ],
+      "claimIds": [
+        "CL-758e93379e46e0d6"
+      ],
+      "sourceIds": [
+        "SA-80ca9cb7c3dfb74e"
+      ],
+      "sourceUrl": "https://news.pedaily.cn/202609/569299.shtml",
+      "publisher": "投资界",
+      "metricDisclosed": true,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-b9be18b12b1714f3"
+    },
+    "EV-bdd1611cc17c3325": {
+      "id": "EV-bdd1611cc17c3325",
+      "dataDate": "2026-09-21",
+      "occurrenceDate": "2026-09-20",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "publicationStatus": "verified",
+      "category": "financing",
+      "title": "千觉机器人宣布连续完成两轮数亿元战略融资 投资方包括知名双币基金蓝驰创投、中金资本旗下基金、靖亚资本等知名投资机构。 投中网 · 22小时前",
+      "entityIds": [],
+      "entityNames": [
+        "千觉机器人",
+        "千觉机器人宣布连续",
+        "短短数月内连续"
+      ],
+      "productNames": [],
+      "classifications": [
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "synthetic_data",
+          "name": "合成数据",
+          "entityIds": [
+            "EN-c386ba3b954748fa"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-9ca283c04fce1c4b",
+          "fundingInsightId": "FI-f6f7f89f3da4f119"
+        },
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-c386ba3b954748fa"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-7b2084922308426f",
+          "fundingInsightId": "FI-f6f7f89f3da4f119"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "data",
+          "name": "数据",
+          "entityIds": [
+            "EN-c386ba3b954748fa"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-5b0de7abab014f24",
+          "fundingInsightId": "FI-f6f7f89f3da4f119"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "automotive_transportation",
+          "name": "汽车与交通",
+          "entityIds": [
+            "EN-c386ba3b954748fa"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-d5b0dc7dec6e5f6d",
+          "fundingInsightId": "FI-f6f7f89f3da4f119"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-c386ba3b954748fa"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-9d5e4f29f3884c38",
+          "fundingInsightId": "FI-f6f7f89f3da4f119"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_infrastructure_software",
+          "name": "AI 基础设施软件",
+          "entityIds": [
+            "EN-c386ba3b954748fa"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f794622839f69601",
+          "fundingInsightId": "FI-f6f7f89f3da4f119"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-c386ba3b954748fa"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-868a349dd5476681",
+          "fundingInsightId": "FI-f6f7f89f3da4f119"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "researcher",
+          "name": "研究人员",
+          "entityIds": [
+            "EN-c386ba3b954748fa"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-9647d66e6081fde1",
+          "fundingInsightId": "FI-f6f7f89f3da4f119"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "data_analysis",
+          "name": "数据分析",
+          "entityIds": [
+            "EN-c386ba3b954748fa"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-e2c0d964d6392e4b",
+          "fundingInsightId": "FI-f6f7f89f3da4f119"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-c386ba3b954748fa"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-6090ff04b3804140",
+          "fundingInsightId": "FI-f6f7f89f3da4f119"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-c386ba3b954748fa"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "claimIds": [
+        "CL-df92e265ed5fdd13",
+        "CL-b7bd1c29ee31bd32",
+        "CL-5db0550ee32c0370"
+      ],
+      "sourceIds": [
+        "SA-82ab886e22cfb44e"
+      ],
+      "sourceUrl": "https://chinaventure.com.cn/news/114-20260920-393347.html",
+      "publisher": "投中网",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-bdd1611cc17c3325"
+    },
+    "EV-d5d58c23fa179e23": {
+      "id": "EV-d5d58c23fa179e23",
+      "dataDate": "2026-09-21",
+      "occurrenceDate": "2026-09-20",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "publicationStatus": "verified",
+      "category": "financing",
+      "title": "Moonback完成首轮数千万元人民币融资，加码宠物AI",
+      "entityIds": [],
+      "entityNames": [
+        "Moonback"
+      ],
+      "productNames": [],
+      "classifications": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "industry_applications",
+          "name": "行业应用",
+          "entityIds": [
+            "EN-4df6f0f59120b360"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-6ce9a14f0df0896b",
+          "fundingInsightId": "FI-73ce1a35019b849e"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "consumer_retail",
+          "name": "消费与零售",
+          "entityIds": [
+            "EN-4df6f0f59120b360"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-08c0179ab283961e",
+          "fundingInsightId": "FI-73ce1a35019b849e"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [
+            "EN-4df6f0f59120b360"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-3800e49a4291b8bb",
+          "fundingInsightId": "FI-73ce1a35019b849e"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "consumer",
+          "name": "个人用户",
+          "entityIds": [
+            "EN-4df6f0f59120b360"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-1ed28d0b41fd8a98",
+          "fundingInsightId": "FI-73ce1a35019b849e"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-4df6f0f59120b360"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-e2e3c3145a323d35",
+          "fundingInsightId": "FI-73ce1a35019b849e"
+        }
+      ],
+      "claimIds": [
+        "CL-0b6a26c008cf8ee0"
+      ],
+      "sourceIds": [
+        "SA-0ed0d93d747bbcef"
+      ],
+      "sourceUrl": "https://news.pedaily.cn/202609/569297.shtml",
+      "publisher": "投资界",
+      "metricDisclosed": true,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-d5d58c23fa179e23"
+    },
+    "EV-d959c800774d5d30": {
+      "id": "EV-d959c800774d5d30",
+      "dataDate": "2026-09-21",
+      "occurrenceDate": "2026-09-20",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "publicationStatus": "verified",
+      "category": "financing",
+      "title": "智身科技完成数亿元B轮融资 本轮融资由阿联酋Stone Venture（磊石资本）领投，洪山资本、粤科金融、吴中融玥、吴中金控等投资机构，以及东软集团、豪鹏科技、远见资本、日盈电子等产业投资方共同参与。 投中网 · 20小时前",
+      "entityIds": [],
+      "entityNames": [
+        "智身科技"
+      ],
+      "productNames": [],
+      "classifications": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "physical_ai",
+          "name": "Physical AI",
+          "entityIds": [
+            "EN-0213fcbfa6055593"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-d2608d35b277744e",
+          "fundingInsightId": "FI-cee276f72af07a63"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "education",
+          "name": "教育",
+          "entityIds": [
+            "EN-0213fcbfa6055593"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-e73deafbd66bf1ee",
+          "fundingInsightId": "FI-cee276f72af07a63"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "energy_utilities",
+          "name": "能源与公用事业",
+          "entityIds": [
+            "EN-0213fcbfa6055593"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-1cc8af7e363645d8",
+          "fundingInsightId": "FI-cee276f72af07a63"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "government_public_sector",
+          "name": "政府与公共部门",
+          "entityIds": [
+            "EN-0213fcbfa6055593"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-e3db970b8fbacb04",
+          "fundingInsightId": "FI-cee276f72af07a63"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "robotic_system",
+          "name": "机器人系统",
+          "entityIds": [
+            "EN-0213fcbfa6055593"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-073dbb7aa94533f5",
+          "fundingInsightId": "FI-cee276f72af07a63"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-0213fcbfa6055593"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-2e80c2aee6ddbcd4",
+          "fundingInsightId": "FI-cee276f72af07a63"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "educator",
+          "name": "教师",
+          "entityIds": [
+            "EN-0213fcbfa6055593"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-8033b7c11da0cbce",
+          "fundingInsightId": "FI-cee276f72af07a63"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "public_sector_user",
+          "name": "公共部门用户",
+          "entityIds": [
+            "EN-0213fcbfa6055593"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b751e82a1650f6a7",
+          "fundingInsightId": "FI-cee276f72af07a63"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-0213fcbfa6055593"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-32807ca90f20c7d4",
+          "fundingInsightId": "FI-cee276f72af07a63"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-0213fcbfa6055593"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "claimIds": [
+        "CL-184658e411c57769"
+      ],
+      "sourceIds": [
+        "SA-26fddbbdd4514abf"
+      ],
+      "sourceUrl": "https://chinaventure.com.cn/news/114-20260920-393359.html",
+      "publisher": "投中网",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-d959c800774d5d30"
+    },
+    "EV-ea75b2ed63b1700d": {
+      "id": "EV-ea75b2ed63b1700d",
+      "dataDate": "2026-09-21",
+      "occurrenceDate": "2026-09-20",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "publicationStatus": "verified",
+      "category": "financing",
+      "title": "硅基流动完成B+轮二期和C轮融资，推进AI 推理核心技术研发 - 投资界",
+      "entityIds": [
+        "EN-2864ab1d9269d363"
+      ],
+      "entityNames": [
+        "SiliconFlow"
+      ],
+      "productNames": [],
+      "classifications": [],
+      "marketScopes": [
+        "event_market"
+      ],
+      "claimIds": [
+        "CL-4202f204670085e1"
+      ],
+      "sourceIds": [
+        "SA-d474f31758acada2"
+      ],
+      "sourceUrl": "https://news.pedaily.cn/202609/569317.shtml",
+      "publisher": "投资界",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-ea75b2ed63b1700d"
+    },
     "EV-06f2bca776e5cee7": {
       "id": "EV-06f2bca776e5cee7",
-      "dataDate": "2026-09-20",
+      "dataDate": "2026-09-21",
       "occurrenceDate": "2026-09-18",
       "eventType": "funding",
       "eventTypeLabel": "融资",
@@ -144,7 +859,7 @@
         }
       ],
       "claimIds": [
-        "CL-43077bfc062f7c59"
+        "CL-c6cfc4042a21a602"
       ],
       "sourceIds": [
         "SA-e6c6923ac5b6bf38"
@@ -156,7 +871,7 @@
     },
     "EV-2c2f903622c29ba4": {
       "id": "EV-2c2f903622c29ba4",
-      "dataDate": "2026-09-20",
+      "dataDate": "2026-09-21",
       "occurrenceDate": "2026-09-18",
       "eventType": "funding",
       "eventTypeLabel": "融资",
@@ -282,8 +997,8 @@
         "event_market"
       ],
       "claimIds": [
-        "CL-075f604caccb7e20",
-        "CL-5b7817e05e546bc4"
+        "CL-54edb2b621001e6a",
+        "CL-2014c92d8366d53f"
       ],
       "sourceIds": [
         "SA-cd8617c67617dd16"
@@ -292,6 +1007,45 @@
       "publisher": "投资界",
       "metricDisclosed": true,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-2c2f903622c29ba4"
+    },
+    "EV-c0b49766ef954766": {
+      "id": "EV-c0b49766ef954766",
+      "dataDate": "2026-09-21",
+      "occurrenceDate": "2026-09-18",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "publicationStatus": "verified",
+      "category": "financing",
+      "title": "上海斐睿科思完成数百万元首轮战略投资，聚焦生命科学具身智能数据基础设施",
+      "entityIds": [],
+      "entityNames": [
+        "上海斐睿科思"
+      ],
+      "productNames": [],
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-15a5d0c82cc9e872"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "claimIds": [
+        "CL-05706ddca31b1468",
+        "CL-e4dccb3ec5d1d042"
+      ],
+      "sourceIds": [
+        "SA-66682d47075975f4"
+      ],
+      "sourceUrl": "https://news.pedaily.cn/202609/569241.shtml",
+      "publisher": "投资界",
+      "metricDisclosed": true,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-c0b49766ef954766"
     },
     "EV-90f03740e87ae062": {
       "id": "EV-90f03740e87ae062",
@@ -333,45 +1087,6 @@
       "publisher": "投中网",
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-90f03740e87ae062"
-    },
-    "EV-c0b49766ef954766": {
-      "id": "EV-c0b49766ef954766",
-      "dataDate": "2026-09-20",
-      "occurrenceDate": "2026-09-18",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "publicationStatus": "verified",
-      "category": "financing",
-      "title": "上海斐睿科思完成数百万元首轮战略投资，聚焦生命科学具身智能数据基础设施",
-      "entityIds": [],
-      "entityNames": [
-        "上海斐睿科思"
-      ],
-      "productNames": [],
-      "classifications": [
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "physical_automation",
-          "name": "物理自动化",
-          "entityIds": [
-            "EN-15a5d0c82cc9e872"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "claimIds": [
-        "CL-2d2b351855e3ca38",
-        "CL-6f5eb2692dae15c4"
-      ],
-      "sourceIds": [
-        "SA-66682d47075975f4"
-      ],
-      "sourceUrl": "https://news.pedaily.cn/202609/569241.shtml",
-      "publisher": "投资界",
-      "metricDisclosed": true,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-c0b49766ef954766"
     },
     "EV-1043d78cc040ab30": {
       "id": "EV-1043d78cc040ab30",
@@ -774,6 +1489,33 @@
       "metricDisclosed": true,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-f077c91cb2fd9179"
     },
+    "EV-5594c1b556d321be": {
+      "id": "EV-5594c1b556d321be",
+      "dataDate": "2026-09-21",
+      "occurrenceDate": "2026-09-17",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "publicationStatus": "verified",
+      "category": "financing",
+      "title": "Freeride AI 完成数百万美元种子轮融资，推进金融专业模型与自进化研究",
+      "entityIds": [],
+      "entityNames": [
+        "Freeride AI"
+      ],
+      "productNames": [],
+      "classifications": [],
+      "claimIds": [
+        "CL-c4ed77ef6982a957",
+        "CL-35e9b32683c88eaa"
+      ],
+      "sourceIds": [
+        "SA-6b97613446176cb9"
+      ],
+      "sourceUrl": "https://news.pedaily.cn/202609/569200.shtml",
+      "publisher": "投资界",
+      "metricDisclosed": true,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-5594c1b556d321be"
+    },
     "EV-1d9cf73bba2debcc": {
       "id": "EV-1d9cf73bba2debcc",
       "dataDate": "2026-09-20",
@@ -872,33 +1614,6 @@
       "publisher": "投资界",
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-1d9cf73bba2debcc"
-    },
-    "EV-5594c1b556d321be": {
-      "id": "EV-5594c1b556d321be",
-      "dataDate": "2026-09-20",
-      "occurrenceDate": "2026-09-17",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "publicationStatus": "verified",
-      "category": "financing",
-      "title": "Freeride AI 完成数百万美元种子轮融资，推进金融专业模型与自进化研究",
-      "entityIds": [],
-      "entityNames": [
-        "Freeride AI"
-      ],
-      "productNames": [],
-      "classifications": [],
-      "claimIds": [
-        "CL-9f808d84bdb427ce",
-        "CL-59e70f4b91697917"
-      ],
-      "sourceIds": [
-        "SA-6b97613446176cb9"
-      ],
-      "sourceUrl": "https://news.pedaily.cn/202609/569200.shtml",
-      "publisher": "投资界",
-      "metricDisclosed": true,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-5594c1b556d321be"
     },
     "EV-b0637e99e328479b": {
       "id": "EV-b0637e99e328479b",
@@ -2079,13 +2794,13 @@
     },
     "EV-77887cf446f03ba4": {
       "id": "EV-77887cf446f03ba4",
-      "dataDate": "2026-09-20",
+      "dataDate": "2026-09-21",
       "occurrenceDate": "2026-09-15",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "publicationStatus": "verified",
       "category": "financing",
-      "title": "星路科技完成A+轮融资 4天前 2",
+      "title": "星路科技完成A+轮融资 5天前 2",
       "entityIds": [
         "EN-49b20a608a25b9a9"
       ],
@@ -2181,7 +2896,7 @@
         }
       ],
       "claimIds": [
-        "CL-0af9668f7a70a2ee"
+        "CL-fc356e7df6e3a1f3"
       ],
       "sourceIds": [
         "SA-033268e887c5b358"
@@ -13922,6 +14637,47 @@
       "publisher": "aiconference.london",
       "metricDisclosed": true,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-ab839326ca9597d8"
+    },
+    "EV-0f7dc05e62a249e8": {
+      "id": "EV-0f7dc05e62a249e8",
+      "dataDate": "2026-09-21",
+      "occurrenceDate": "2026-08-21",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "publicationStatus": "partial",
+      "category": "financing",
+      "title": "博通版“算力融资池”据传将加码超600亿美元",
+      "entityIds": [
+        "EN-373ac021a2c0bb2c"
+      ],
+      "entityNames": [
+        "博通版“算力",
+        "Broadcom"
+      ],
+      "productNames": [],
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-d6aaf8306449a07d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "claimIds": [
+        "CL-1476206e2cbeea47"
+      ],
+      "sourceIds": [
+        "SA-0c66e66ac86120e1"
+      ],
+      "sourceUrl": "https://cls.cn/detail/2460119",
+      "publisher": "财联社／科创板日报",
+      "metricDisclosed": true,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-0f7dc05e62a249e8"
     },
     "EV-a72baefac91ba841": {
       "id": "EV-a72baefac91ba841",
@@ -32504,6 +33260,37 @@
       "publisher": "The Decoder：AI News（RSS）",
       "metricDisclosed": true,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-427081ec574b43bb"
+    },
+    "EV-5458f54522772562": {
+      "id": "EV-5458f54522772562",
+      "dataDate": "2026-09-21",
+      "occurrenceDate": "2026-07-10",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "publicationStatus": "verified",
+      "category": "financing",
+      "title": "MiniMax再融160亿港币国产大模型掀起融资热潮 - 财联社",
+      "entityIds": [
+        "EN-e1517be14d06cdb7"
+      ],
+      "entityNames": [
+        "MiniMax"
+      ],
+      "productNames": [],
+      "classifications": [],
+      "marketScopes": [
+        "event_market"
+      ],
+      "claimIds": [
+        "CL-8283d0403f78e6bd"
+      ],
+      "sourceIds": [
+        "SA-d95b7f5bc095a4d6"
+      ],
+      "sourceUrl": "https://cls.cn/detail/2422383",
+      "publisher": "财联社／科创板日报",
+      "metricDisclosed": true,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-5458f54522772562"
     },
     "EV-235eb1efd4760c37": {
       "id": "EV-235eb1efd4760c37",
@@ -77163,7 +77950,7 @@
     },
     "EV-1c0fe6f6090ce11c": {
       "id": "EV-1c0fe6f6090ce11c",
-      "dataDate": "2026-09-19",
+      "dataDate": "2026-09-21",
       "occurrenceDate": "2026-09-18",
       "eventType": "deployment",
       "eventTypeLabel": "部署",
@@ -77203,10 +77990,10 @@
         "event_market"
       ],
       "claimIds": [
-        "CL-8add6564a3b6e638",
-        "CL-9ead84a6ca1c9936",
-        "CL-06b0e038b1b901e4",
-        "CL-14117a502434ec85"
+        "CL-54a911ad59517fa3",
+        "CL-42b5714c4546f859",
+        "CL-be4bdbc4df8f0f55",
+        "CL-b7ed701e21eaf846"
       ],
       "sourceIds": [
         "SA-6501bf9a308ff8b5"
@@ -99043,6 +99830,48 @@
       "publisher": "The Decoder AI News",
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-f68abde6a94eee76"
+    },
+    "EV-805ba2cd49be2b47": {
+      "id": "EV-805ba2cd49be2b47",
+      "dataDate": "2026-09-21",
+      "occurrenceDate": "2026-09-17",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "publicationStatus": "verified",
+      "category": "product",
+      "title": "创立仅一个月估值就接近40亿美元？这家AI新贵有何来头 - 财联社",
+      "entityIds": [
+        "EN-d36e5a1a7a3c45ce"
+      ],
+      "entityNames": [
+        "Roblox"
+      ],
+      "productNames": [],
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "media_entertainment",
+          "name": "媒体与娱乐",
+          "entityIds": [
+            "EN-d36e5a1a7a3c45ce"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "claimIds": [
+        "CL-d8d25b748078b0c7",
+        "CL-25dfe6b1eaacd0c8",
+        "CL-856d5705c75b943f"
+      ],
+      "sourceIds": [
+        "SA-7df92c97f9ad7645"
+      ],
+      "sourceUrl": "https://cls.cn/detail/2486172",
+      "publisher": "财联社／科创板日报",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-805ba2cd49be2b47"
     },
     "EV-7bffdadf9a6e467e": {
       "id": "EV-7bffdadf9a6e467e",
@@ -195165,8 +195994,9 @@
   },
   "periods": {
     "day": {
-      "defaultKey": "2026-09-20",
+      "defaultKey": "2026-09-21",
       "options": [
+        "2026-09-21",
         "2026-09-20",
         "2026-09-19",
         "2026-09-18",
@@ -195289,10 +196119,41 @@
         "2026-05-18"
       ],
       "records": {
+        "2026-09-21": {
+          "key": "2026-09-21",
+          "counts": {
+            "financing": 14,
+            "deployment": 1,
+            "partnership": 0,
+            "product": 1,
+            "hardware": 0
+          },
+          "eventIds": [
+            "EV-06f2bca776e5cee7",
+            "EV-0f7dc05e62a249e8",
+            "EV-1c0fe6f6090ce11c",
+            "EV-2c2f903622c29ba4",
+            "EV-3c7609d3fc7b7ec8",
+            "EV-5458f54522772562",
+            "EV-5594c1b556d321be",
+            "EV-66f24f6db71cc011",
+            "EV-77887cf446f03ba4",
+            "EV-805ba2cd49be2b47",
+            "EV-b9be18b12b1714f3",
+            "EV-bdd1611cc17c3325",
+            "EV-c0b49766ef954766",
+            "EV-d5d58c23fa179e23",
+            "EV-d959c800774d5d30",
+            "EV-ea75b2ed63b1700d"
+          ],
+          "otherCount": 0,
+          "totalAccepted": 16,
+          "coverage": "数据中心于 2026-09-21 接受的事件；事件发生日期可能不同。"
+        },
         "2026-09-20": {
           "key": "2026-09-20",
           "counts": {
-            "financing": 13,
+            "financing": 8,
             "deployment": 2,
             "partnership": 1,
             "product": 15,
@@ -195301,17 +196162,13 @@
           "eventIds": [
             "EV-03992c9b7f8fef10",
             "EV-04bcb24d608a931c",
-            "EV-06f2bca776e5cee7",
             "EV-10a072b1d240e493",
             "EV-1d0bca303142cba9",
             "EV-1d9cf73bba2debcc",
-            "EV-2c2f903622c29ba4",
             "EV-2de77a62435cc041",
             "EV-4247dcb73551a51e",
-            "EV-5594c1b556d321be",
             "EV-5ff63c4f72976e83",
             "EV-6ceebcab1b417cc6",
-            "EV-77887cf446f03ba4",
             "EV-7bffdadf9a6e467e",
             "EV-7e9cc6f0faab48ed",
             "EV-800958e92cf5e67f",
@@ -195322,7 +196179,6 @@
             "EV-90f03740e87ae062",
             "EV-9ef7ad8c3b903331",
             "EV-b0637e99e328479b",
-            "EV-c0b49766ef954766",
             "EV-c59a99a6e5c04ba2",
             "EV-c997b93aa153720b",
             "EV-cbeb33594e06678b",
@@ -195334,14 +196190,14 @@
             "EV-e17326c8f33e636c"
           ],
           "otherCount": 10,
-          "totalAccepted": 43,
+          "totalAccepted": 38,
           "coverage": "数据中心于 2026-09-20 接受的事件；事件发生日期可能不同。"
         },
         "2026-09-19": {
           "key": "2026-09-19",
           "counts": {
             "financing": 12,
-            "deployment": 5,
+            "deployment": 4,
             "partnership": 4,
             "product": 10,
             "hardware": 1
@@ -195351,7 +196207,6 @@
             "EV-0b515afec96dae0d",
             "EV-0f241385f0cd6c2d",
             "EV-1043d78cc040ab30",
-            "EV-1c0fe6f6090ce11c",
             "EV-1c6c587c3d2e084a",
             "EV-24b55d8abde53c32",
             "EV-32060230ca88d46b",
@@ -195381,7 +196236,7 @@
             "EV-f2f9ce8933ab8d4f"
           ],
           "otherCount": 7,
-          "totalAccepted": 39,
+          "totalAccepted": 38,
           "coverage": "数据中心于 2026-09-19 接受的事件；事件发生日期可能不同。"
         },
         "2026-09-18": {
@@ -199967,8 +200822,9 @@
       }
     },
     "week": {
-      "defaultKey": "2026-09-14",
+      "defaultKey": "2026-09-21",
       "options": [
+        "2026-09-21",
         "2026-09-14",
         "2026-09-07",
         "2026-08-31",
@@ -199989,6 +200845,31 @@
         "2026-05-18"
       ],
       "records": {
+        "2026-09-21": {
+          "key": "2026-09-21",
+          "start": "2026-09-21",
+          "end": "2026-09-27",
+          "observedDataDays": [
+            "2026-09-21"
+          ],
+          "counts": {
+            "financing": 14,
+            "deployment": 1,
+            "partnership": 0,
+            "product": 1,
+            "hardware": 0
+          },
+          "totalAccepted": 16,
+          "trackedCount": 16,
+          "otherCount": 0,
+          "activeEntities": [],
+          "deploymentEventIds": [
+            "EV-1c0fe6f6090ce11c"
+          ],
+          "productsEnteringUse": [],
+          "newClassifications": [],
+          "coverage": "按数据中心接受日期汇总；仅观测到的批次日期计入覆盖天数。"
+        },
         "2026-09-14": {
           "key": "2026-09-14",
           "start": "2026-09-14",
@@ -200003,14 +200884,14 @@
             "2026-09-20"
           ],
           "counts": {
-            "financing": 76,
-            "deployment": 17,
+            "financing": 71,
+            "deployment": 16,
             "partnership": 12,
             "product": 87,
             "hardware": 8
           },
-          "totalAccepted": 242,
-          "trackedCount": 200,
+          "totalAccepted": 236,
+          "trackedCount": 194,
           "otherCount": 42,
           "activeEntities": [
             {
@@ -200232,7 +201113,6 @@
             "EV-1d0bca303142cba9",
             "EV-7e9cc6f0faab48ed",
             "EV-d2f89de76c27be7f",
-            "EV-1c0fe6f6090ce11c",
             "EV-24b55d8abde53c32",
             "EV-67804da6b04fdcc5",
             "EV-a7568a8f75368e09",
@@ -237004,7 +237884,7 @@
         "2026-09": {
           "key": "2026-09",
           "start": "2026-09-01",
-          "end": "2026-09-20",
+          "end": "2026-09-21",
           "observedDataDays": [
             "2026-09-01",
             "2026-09-02",
@@ -237025,19 +237905,20 @@
             "2026-09-17",
             "2026-09-18",
             "2026-09-19",
-            "2026-09-20"
+            "2026-09-20",
+            "2026-09-21"
           ],
           "counts": {
-            "financing": 424,
+            "financing": 433,
             "deployment": 34,
             "partnership": 42,
-            "product": 247,
+            "product": 248,
             "hardware": 26
           },
           "previousMonth": "2026-08",
           "comparisonAvailable": true,
           "comparisonWindow": {
-            "currentEndDay": 20,
+            "currentEndDay": 21,
             "previousObservedDataDays": [
               "2026-08-01",
               "2026-08-02",
@@ -237058,25 +237939,26 @@
               "2026-08-17",
               "2026-08-18",
               "2026-08-19",
-              "2026-08-20"
+              "2026-08-20",
+              "2026-08-21"
             ]
           },
           "previousCounts": {
-            "financing": 102,
-            "deployment": 27,
-            "partnership": 43,
-            "product": 215,
-            "hardware": 14
+            "financing": 104,
+            "deployment": 28,
+            "partnership": 46,
+            "product": 233,
+            "hardware": 15
           },
           "deltas": {
-            "financing": 322,
-            "deployment": 7,
-            "partnership": -1,
-            "product": 32,
-            "hardware": 12
+            "financing": 329,
+            "deployment": 6,
+            "partnership": -4,
+            "product": 15,
+            "hardware": 11
           },
-          "totalAccepted": 880,
-          "trackedCount": 773,
+          "totalAccepted": 890,
+          "trackedCount": 783,
           "otherCount": 107,
           "newCompanies": [
             {
@@ -238080,17 +238962,26 @@
           "newProducts": [],
           "financing": {
             "eventIds": [
-              "EV-04bcb24d608a931c",
               "EV-06f2bca776e5cee7",
-              "EV-1d9cf73bba2debcc",
+              "EV-0f7dc05e62a249e8",
               "EV-2c2f903622c29ba4",
-              "EV-2de77a62435cc041",
+              "EV-3c7609d3fc7b7ec8",
+              "EV-5458f54522772562",
               "EV-5594c1b556d321be",
+              "EV-66f24f6db71cc011",
               "EV-77887cf446f03ba4",
+              "EV-b9be18b12b1714f3",
+              "EV-bdd1611cc17c3325",
+              "EV-c0b49766ef954766",
+              "EV-d5d58c23fa179e23",
+              "EV-d959c800774d5d30",
+              "EV-ea75b2ed63b1700d",
+              "EV-04bcb24d608a931c",
+              "EV-1d9cf73bba2debcc",
+              "EV-2de77a62435cc041",
               "EV-81bbaaec2965864a",
               "EV-90f03740e87ae062",
               "EV-b0637e99e328479b",
-              "EV-c0b49766ef954766",
               "EV-c997b93aa153720b",
               "EV-cbeb33594e06678b",
               "EV-1043d78cc040ab30",
@@ -238505,7 +239396,7 @@
               "EV-93c2515d50157281",
               "EV-de976687caf47511"
             ],
-            "disclosedMetricCount": 254
+            "disclosedMetricCount": 258
           },
           "distributions": {
             "marketCategory": [
@@ -238515,6 +239406,8 @@
                 "eventIds": [
                   "EV-06f2bca776e5cee7",
                   "EV-2c2f903622c29ba4",
+                  "EV-b9be18b12b1714f3",
+                  "EV-bdd1611cc17c3325",
                   "EV-375d04f7cc9746c6",
                   "EV-40d4ce6d936d4d49",
                   "EV-412f7ce21693dc13",
@@ -238596,12 +239489,14 @@
                   "EV-f0a666f5416e049f",
                   "EV-a40e5e8c638e323d"
                 ],
-                "count": 82
+                "count": 84
               },
               {
                 "id": "physical_ai",
                 "name": "Physical AI",
                 "eventIds": [
+                  "EV-3c7609d3fc7b7ec8",
+                  "EV-d959c800774d5d30",
                   "EV-1d9cf73bba2debcc",
                   "EV-47f16317cc2d62e2",
                   "EV-1c399d2db39c05a3",
@@ -238649,14 +239544,15 @@
                   "EV-ea916006167c6c43",
                   "EV-987cb2e5e20f79ce"
                 ],
-                "count": 46
+                "count": 48
               },
               {
                 "id": "industry_applications",
                 "name": "行业应用",
                 "eventIds": [
-                  "EV-04bcb24d608a931c",
                   "EV-77887cf446f03ba4",
+                  "EV-d5d58c23fa179e23",
+                  "EV-04bcb24d608a931c",
                   "EV-b0637e99e328479b",
                   "EV-1043d78cc040ab30",
                   "EV-a52dd9e9cac23694",
@@ -238697,7 +239593,7 @@
                   "EV-f4b72708c66aa752",
                   "EV-f9b346bec4251166"
                 ],
-                "count": 41
+                "count": 42
               },
               {
                 "id": "enterprise_applications",
@@ -238788,6 +239684,7 @@
                 "name": "硬件与算力",
                 "eventIds": [
                   "EV-2c2f903622c29ba4",
+                  "EV-b9be18b12b1714f3",
                   "EV-375d04f7cc9746c6",
                   "EV-40d4ce6d936d4d49",
                   "EV-412f7ce21693dc13",
@@ -238810,7 +239707,7 @@
                   "EV-ae87e20ab0c5d06a",
                   "EV-fd2ff833db684e40"
                 ],
-                "count": 22
+                "count": 23
               },
               {
                 "id": "healthcare_life_sciences",
@@ -238897,6 +239794,7 @@
                 "id": "data",
                 "name": "数据",
                 "eventIds": [
+                  "EV-bdd1611cc17c3325",
                   "EV-08612741cfce0bcf",
                   "EV-798081a4ec056f8c",
                   "EV-1a6fbd73eb4eb133",
@@ -238906,14 +239804,14 @@
                   "EV-d9e018b58da30912",
                   "EV-e59938ae531af428"
                 ],
-                "count": 8
+                "count": 9
               },
               {
                 "id": "financial_services",
                 "name": "金融服务",
                 "eventIds": [
-                  "EV-04bcb24d608a931c",
                   "EV-77887cf446f03ba4",
+                  "EV-04bcb24d608a931c",
                   "EV-63a4b6ce48e14829",
                   "EV-a38a33003b0d6d08",
                   "EV-65d274d4277815dc",
@@ -238938,11 +239836,12 @@
                 "id": "consumer_retail",
                 "name": "消费与零售",
                 "eventIds": [
+                  "EV-d5d58c23fa179e23",
                   "EV-2cf2ab399eb05035",
                   "EV-3ccc38328e395afa",
                   "EV-cba16bd541a07032"
                 ],
-                "count": 3
+                "count": 4
               },
               {
                 "id": "hr",
@@ -239039,6 +239938,7 @@
                 "name": "芯片",
                 "eventIds": [
                   "EV-2c2f903622c29ba4",
+                  "EV-b9be18b12b1714f3",
                   "EV-375d04f7cc9746c6",
                   "EV-412f7ce21693dc13",
                   "EV-3db9a076e3b7d4fd",
@@ -239049,7 +239949,7 @@
                   "EV-ae87e20ab0c5d06a",
                   "EV-fd2ff833db684e40"
                 ],
-                "count": 10
+                "count": 11
               },
               {
                 "id": "ai_development_orchestration",
@@ -239085,13 +239985,14 @@
                 "id": "synthetic_data",
                 "name": "合成数据",
                 "eventIds": [
+                  "EV-bdd1611cc17c3325",
                   "EV-798081a4ec056f8c",
                   "EV-3632f9193a3f3f28",
                   "EV-c17a6102aab72f4f",
                   "EV-d9e018b58da30912",
                   "EV-e59938ae531af428"
                 ],
-                "count": 5
+                "count": 6
               },
               {
                 "id": "model_agent_security",
@@ -239236,6 +240137,8 @@
                 "id": "robotic_system",
                 "name": "机器人系统",
                 "eventIds": [
+                  "EV-3c7609d3fc7b7ec8",
+                  "EV-d959c800774d5d30",
                   "EV-1d9cf73bba2debcc",
                   "EV-47f16317cc2d62e2",
                   "EV-1c399d2db39c05a3",
@@ -239288,7 +240191,7 @@
                   "EV-ea916006167c6c43",
                   "EV-987cb2e5e20f79ce"
                 ],
-                "count": 51
+                "count": 53
               },
               {
                 "id": "enterprise_software_platform",
@@ -239348,6 +240251,7 @@
                 "id": "ai_infrastructure_software",
                 "name": "AI 基础设施软件",
                 "eventIds": [
+                  "EV-bdd1611cc17c3325",
                   "EV-37cc66ca2e29a78c",
                   "EV-4238c51fcdad7bd4",
                   "EV-cbc988c78b987642",
@@ -239381,7 +240285,7 @@
                   "EV-89ec502a1340079a",
                   "EV-a40e5e8c638e323d"
                 ],
-                "count": 32
+                "count": 33
               },
               {
                 "id": "end_user_application",
@@ -239420,7 +240324,9 @@
                 "id": "chip_accelerator",
                 "name": "芯片与加速器",
                 "eventIds": [
+                  "EV-0f7dc05e62a249e8",
                   "EV-2c2f903622c29ba4",
+                  "EV-b9be18b12b1714f3",
                   "EV-375d04f7cc9746c6",
                   "EV-412f7ce21693dc13",
                   "EV-5af773d44ac066f7",
@@ -239440,7 +240346,7 @@
                   "EV-bf7ced1008b5cbc6",
                   "EV-fec0251eafea1a20"
                 ],
-                "count": 19
+                "count": 21
               },
               {
                 "id": "ai_compute_system",
@@ -239463,6 +240369,7 @@
                 "id": "ai_device",
                 "name": "AI 设备",
                 "eventIds": [
+                  "EV-d5d58c23fa179e23",
                   "EV-0cc745a319a25f6e",
                   "EV-0fa96416b6df804b",
                   "EV-29e6561ca7c005d0",
@@ -239473,7 +240380,7 @@
                   "EV-d124d9d43e994067",
                   "EV-2f0f3200b9800877"
                 ],
-                "count": 9
+                "count": 10
               },
               {
                 "id": "model_api_service",
@@ -239598,8 +240505,10 @@
                 "id": "embodied_ai",
                 "name": "具身智能",
                 "eventIds": [
-                  "EV-2de77a62435cc041",
                   "EV-1c0fe6f6090ce11c",
+                  "EV-bdd1611cc17c3325",
+                  "EV-d959c800774d5d30",
+                  "EV-2de77a62435cc041",
                   "EV-24b55d8abde53c32",
                   "EV-412f7ce21693dc13",
                   "EV-47f16317cc2d62e2",
@@ -239657,7 +240566,7 @@
                   "EV-d32e50951ff7f9a1",
                   "EV-85ba013c379a9d3d"
                 ],
-                "count": 58
+                "count": 60
               },
               {
                 "id": "multimodal",
@@ -239848,10 +240757,15 @@
                 "id": "physical_automation",
                 "name": "物理自动化",
                 "eventIds": [
-                  "EV-1d9cf73bba2debcc",
-                  "EV-2c2f903622c29ba4",
-                  "EV-c0b49766ef954766",
                   "EV-1c0fe6f6090ce11c",
+                  "EV-2c2f903622c29ba4",
+                  "EV-3c7609d3fc7b7ec8",
+                  "EV-b9be18b12b1714f3",
+                  "EV-bdd1611cc17c3325",
+                  "EV-c0b49766ef954766",
+                  "EV-d5d58c23fa179e23",
+                  "EV-d959c800774d5d30",
+                  "EV-1d9cf73bba2debcc",
                   "EV-24b55d8abde53c32",
                   "EV-412f7ce21693dc13",
                   "EV-47f16317cc2d62e2",
@@ -239960,12 +240874,13 @@
                   "EV-1fd2dfea0a3f7322",
                   "EV-de976687caf47511"
                 ],
-                "count": 111
+                "count": 116
               },
               {
                 "id": "data_analysis",
                 "name": "数据分析",
                 "eventIds": [
+                  "EV-bdd1611cc17c3325",
                   "EV-04bcb24d608a931c",
                   "EV-c997b93aa153720b",
                   "EV-cbeb33594e06678b",
@@ -240012,14 +240927,14 @@
                   "EV-dc442b91a69fcc5a",
                   "EV-dccfca59b3e58638"
                 ],
-                "count": 45
+                "count": 46
               },
               {
                 "id": "productivity_enterprise_workflows",
                 "name": "生产力与企业工作流",
                 "eventIds": [
-                  "EV-04bcb24d608a931c",
                   "EV-77887cf446f03ba4",
+                  "EV-04bcb24d608a931c",
                   "EV-81bbaaec2965864a",
                   "EV-b0637e99e328479b",
                   "EV-c997b93aa153720b",
@@ -240351,6 +241266,8 @@
                 "id": "manufacturing",
                 "name": "制造业",
                 "eventIds": [
+                  "EV-3c7609d3fc7b7ec8",
+                  "EV-bdd1611cc17c3325",
                   "EV-b0637e99e328479b",
                   "EV-c997b93aa153720b",
                   "EV-d2f89de76c27be7f",
@@ -240439,14 +241356,14 @@
                   "EV-1a846b94337dd961",
                   "EV-53957f94b3924ad3"
                 ],
-                "count": 87
+                "count": 89
               },
               {
                 "id": "healthcare_life_sciences",
                 "name": "医疗与生命科学",
                 "eventIds": [
-                  "EV-1d9cf73bba2debcc",
                   "EV-2c2f903622c29ba4",
+                  "EV-1d9cf73bba2debcc",
                   "EV-1043d78cc040ab30",
                   "EV-a52dd9e9cac23694",
                   "EV-91459f0d9446f471",
@@ -240485,6 +241402,8 @@
                 "name": "汽车与交通",
                 "eventIds": [
                   "EV-2c2f903622c29ba4",
+                  "EV-b9be18b12b1714f3",
+                  "EV-bdd1611cc17c3325",
                   "EV-b0637e99e328479b",
                   "EV-d2f89de76c27be7f",
                   "EV-bdd574fb9ee91b4d",
@@ -240513,15 +241432,15 @@
                   "EV-df37e9341b5c7f04",
                   "EV-e59938ae531af428"
                 ],
-                "count": 28
+                "count": 30
               },
               {
                 "id": "financial_services",
                 "name": "金融服务",
                 "eventIds": [
-                  "EV-04bcb24d608a931c",
                   "EV-2c2f903622c29ba4",
                   "EV-77887cf446f03ba4",
+                  "EV-04bcb24d608a931c",
                   "EV-fd444ccd5831e77a",
                   "EV-63a4b6ce48e14829",
                   "EV-3fdc9ad98818c36b",
@@ -240587,6 +241506,7 @@
                 "id": "media_entertainment",
                 "name": "媒体与娱乐",
                 "eventIds": [
+                  "EV-805ba2cd49be2b47",
                   "EV-05b635c3958e4591",
                   "EV-3fdc9ad98818c36b",
                   "EV-4f0a45fda9b19e48",
@@ -240613,7 +241533,34 @@
                   "EV-0fce4630e77c9db7",
                   "EV-2dff88f85e3bce86"
                 ],
-                "count": 25
+                "count": 26
+              },
+              {
+                "id": "energy_utilities",
+                "name": "能源与公用事业",
+                "eventIds": [
+                  "EV-3c7609d3fc7b7ec8",
+                  "EV-b9be18b12b1714f3",
+                  "EV-d959c800774d5d30",
+                  "EV-65d274d4277815dc",
+                  "EV-ef669a52c9a3f94f",
+                  "EV-07d112b2a4c980d2",
+                  "EV-0e1edf873779be1d",
+                  "EV-3a467bfb6d9b1b52",
+                  "EV-44ec7c229995ca3c",
+                  "EV-5a28b9c37a236c89",
+                  "EV-6329f290aecc84da",
+                  "EV-69ac49d771d3b778",
+                  "EV-7021bd7041019330",
+                  "EV-ac5e79d96a009ee1",
+                  "EV-b91024c06d8762a4",
+                  "EV-c17a6102aab72f4f",
+                  "EV-c6437ac13cb07531",
+                  "EV-d535e126615182f0",
+                  "EV-f9b346bec4251166",
+                  "EV-85506f9f86779a6d"
+                ],
+                "count": 20
               },
               {
                 "id": "logistics_supply_chain",
@@ -240642,28 +241589,25 @@
                 "count": 19
               },
               {
-                "id": "energy_utilities",
-                "name": "能源与公用事业",
+                "id": "government_public_sector",
+                "name": "政府与公共部门",
                 "eventIds": [
-                  "EV-65d274d4277815dc",
+                  "EV-3c7609d3fc7b7ec8",
+                  "EV-d959c800774d5d30",
+                  "EV-cbeb33594e06678b",
+                  "EV-4238c51fcdad7bd4",
                   "EV-ef669a52c9a3f94f",
-                  "EV-07d112b2a4c980d2",
-                  "EV-0e1edf873779be1d",
-                  "EV-3a467bfb6d9b1b52",
                   "EV-44ec7c229995ca3c",
                   "EV-5a28b9c37a236c89",
                   "EV-6329f290aecc84da",
-                  "EV-69ac49d771d3b778",
-                  "EV-7021bd7041019330",
-                  "EV-ac5e79d96a009ee1",
-                  "EV-b91024c06d8762a4",
-                  "EV-c17a6102aab72f4f",
-                  "EV-c6437ac13cb07531",
+                  "EV-6928501584326746",
+                  "EV-843f0807558b3d10",
                   "EV-d535e126615182f0",
-                  "EV-f9b346bec4251166",
-                  "EV-85506f9f86779a6d"
+                  "EV-87f31c71f040785a",
+                  "EV-85506f9f86779a6d",
+                  "EV-c04ef2433ae230f6"
                 ],
-                "count": 17
+                "count": 14
               },
               {
                 "id": "professional_services",
@@ -240684,25 +241628,6 @@
                   "EV-dc442b91a69fcc5a"
                 ],
                 "count": 13
-              },
-              {
-                "id": "government_public_sector",
-                "name": "政府与公共部门",
-                "eventIds": [
-                  "EV-cbeb33594e06678b",
-                  "EV-4238c51fcdad7bd4",
-                  "EV-ef669a52c9a3f94f",
-                  "EV-44ec7c229995ca3c",
-                  "EV-5a28b9c37a236c89",
-                  "EV-6329f290aecc84da",
-                  "EV-6928501584326746",
-                  "EV-843f0807558b3d10",
-                  "EV-d535e126615182f0",
-                  "EV-87f31c71f040785a",
-                  "EV-85506f9f86779a6d",
-                  "EV-c04ef2433ae230f6"
-                ],
-                "count": 12
               },
               {
                 "id": "telecommunications",
@@ -240754,6 +241679,7 @@
                 "id": "education",
                 "name": "教育",
                 "eventIds": [
+                  "EV-d959c800774d5d30",
                   "EV-ef669a52c9a3f94f",
                   "EV-26439e34295a0519",
                   "EV-44ec7c229995ca3c",
@@ -240761,7 +241687,7 @@
                   "EV-d1d7212194b63b0b",
                   "EV-2dff88f85e3bce86"
                 ],
-                "count": 6
+                "count": 7
               },
               {
                 "id": "construction_real_estate",
@@ -240800,9 +241726,12 @@
                 "id": "business_user",
                 "name": "企业用户",
                 "eventIds": [
-                  "EV-04bcb24d608a931c",
                   "EV-2c2f903622c29ba4",
+                  "EV-3c7609d3fc7b7ec8",
                   "EV-77887cf446f03ba4",
+                  "EV-b9be18b12b1714f3",
+                  "EV-d959c800774d5d30",
+                  "EV-04bcb24d608a931c",
                   "EV-81bbaaec2965864a",
                   "EV-b0637e99e328479b",
                   "EV-c997b93aa153720b",
@@ -240940,13 +241869,15 @@
                   "EV-f0a666f5416e049f",
                   "EV-49577d438cb6624b"
                 ],
-                "count": 139
+                "count": 142
               },
               {
                 "id": "developer",
                 "name": "开发者",
                 "eventIds": [
                   "EV-06f2bca776e5cee7",
+                  "EV-b9be18b12b1714f3",
+                  "EV-bdd1611cc17c3325",
                   "EV-b0637e99e328479b",
                   "EV-1043d78cc040ab30",
                   "EV-375d04f7cc9746c6",
@@ -241038,12 +241969,13 @@
                   "EV-f0a666f5416e049f",
                   "EV-a40e5e8c638e323d"
                 ],
-                "count": 91
+                "count": 93
               },
               {
                 "id": "consumer",
                 "name": "个人用户",
                 "eventIds": [
+                  "EV-d5d58c23fa179e23",
                   "EV-1c6c587c3d2e084a",
                   "EV-47f16317cc2d62e2",
                   "EV-1c399d2db39c05a3",
@@ -241082,13 +242014,14 @@
                   "EV-8ae771f26c02f7c4",
                   "EV-8e13f1a043f7b979"
                 ],
-                "count": 37
+                "count": 38
               },
               {
                 "id": "researcher",
                 "name": "研究人员",
                 "eventIds": [
                   "EV-06f2bca776e5cee7",
+                  "EV-bdd1611cc17c3325",
                   "EV-1d9cf73bba2debcc",
                   "EV-1043d78cc040ab30",
                   "EV-a52dd9e9cac23694",
@@ -241121,12 +242054,14 @@
                   "EV-e59938ae531af428",
                   "EV-e6a4e0785ebb268a"
                 ],
-                "count": 32
+                "count": 33
               },
               {
                 "id": "public_sector_user",
                 "name": "公共部门用户",
                 "eventIds": [
+                  "EV-3c7609d3fc7b7ec8",
+                  "EV-d959c800774d5d30",
                   "EV-1d9cf73bba2debcc",
                   "EV-03bc82f6d6c169d7",
                   "EV-3b817460afe0d3a6",
@@ -241134,18 +242069,19 @@
                   "EV-843f0807558b3d10",
                   "EV-d535e126615182f0"
                 ],
-                "count": 6
+                "count": 8
               },
               {
                 "id": "educator",
                 "name": "教师",
                 "eventIds": [
+                  "EV-d959c800774d5d30",
                   "EV-ef669a52c9a3f94f",
                   "EV-26439e34295a0519",
                   "EV-41c54c428d84cc1e",
                   "EV-b4d6c556eadaa272"
                 ],
-                "count": 4
+                "count": 5
               },
               {
                 "id": "student",
@@ -241202,10 +242138,10 @@
             ]
           },
           "deploymentEventIds": [
+            "EV-1c0fe6f6090ce11c",
             "EV-1d0bca303142cba9",
             "EV-7e9cc6f0faab48ed",
             "EV-d2f89de76c27be7f",
-            "EV-1c0fe6f6090ce11c",
             "EV-24b55d8abde53c32",
             "EV-67804da6b04fdcc5",
             "EV-a7568a8f75368e09",
