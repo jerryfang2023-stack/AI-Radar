@@ -2,18 +2,18 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.3",
     "date": "2026-09-21",
-    "generated_at": "2026-09-21T00:38:58.411Z",
+    "generated_at": "2026-09-21T04:07:01.570Z",
     "trigger": "verified_funding_events_with_three_month_backfill",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
     "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
     "counts": {
-      "funding_events": 8,
+      "funding_events": 10,
       "auto_published": 5,
       "blocked": 0,
       "pending": 0,
-      "deduplicated": 3
+      "deduplicated": 5
     },
     "taxonomy_version": "TAG-V4.1"
   },
@@ -643,7 +643,8 @@
           ],
           "risks": [
             "本轮C轮融资未披露具体投资方，资本结构及产业协同方不明确",
-            "AI数据中心供电架构尚处早期，SST模块的商业化放量节奏未经验证"
+            "AI数据中心供电架构尚处早期，SST模块的商业化放量节奏未经验证",
+            "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
           ],
           "institutional_rationale_status": "not_disclosed"
         }
@@ -3669,7 +3670,8 @@
           ],
           "risks": [
             "投资方未披露具体名称，无法验证产业资本的真实协同能力与资源投入程度。",
-            "宠物垂类模型共建仍处于计划阶段，缺乏已落地的模型能力或服务收入证据。"
+            "宠物垂类模型共建仍处于计划阶段，缺乏已落地的模型能力或服务收入证据。",
+            "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
           ],
           "institutional_rationale_status": "not_disclosed"
         }
@@ -3789,17 +3791,35 @@
   ],
   "queue": [
     {
+      "event_id": "EV-81bbaaec2965864a",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-21T04:07:01.568Z"
+    },
+    {
+      "event_id": "EV-c538fb9a61735afc",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-21T04:07:01.568Z"
+    },
+    {
       "event_id": "EV-2c2f903622c29ba4",
       "company_name": "",
       "status": "deduplicated",
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-09-21T00:38:58.409Z"
+      "updated_at": "2026-09-21T04:07:01.568Z"
     },
     {
       "event_id": "EV-3c7609d3fc7b7ec8",
-      "company_name": "智身科技",
+      "company_name": "智身科技（GENISOM AI）",
       "status": "auto_published",
       "problems": [],
       "queries": [
@@ -3858,7 +3878,7 @@
           "error": ""
         }
       ],
-      "updated_at": "2026-09-21T00:38:58.409Z"
+      "updated_at": "2026-09-21T04:07:01.568Z"
     },
     {
       "event_id": "EV-d5d58c23fa179e23",
@@ -3947,7 +3967,7 @@
           "error": ""
         }
       ],
-      "updated_at": "2026-09-21T00:38:58.409Z"
+      "updated_at": "2026-09-21T04:07:01.568Z"
     },
     {
       "event_id": "EV-06f2bca776e5cee7",
@@ -3956,11 +3976,11 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-09-21T00:38:58.409Z"
+      "updated_at": "2026-09-21T04:07:01.568Z"
     },
     {
       "event_id": "EV-d959c800774d5d30",
-      "company_name": "智身科技",
+      "company_name": "智身科技（GENISOM AI）",
       "status": "auto_published",
       "problems": [],
       "queries": [
@@ -4019,11 +4039,11 @@
           "error": ""
         }
       ],
-      "updated_at": "2026-09-21T00:38:58.409Z"
+      "updated_at": "2026-09-21T04:07:01.568Z"
     },
     {
       "event_id": "EV-bdd1611cc17c3325",
-      "company_name": "千觉机器人宣布连续",
+      "company_name": "千觉机器人",
       "status": "auto_published",
       "problems": [],
       "queries": [
@@ -4082,11 +4102,11 @@
           "error": ""
         }
       ],
-      "updated_at": "2026-09-21T00:38:58.409Z"
+      "updated_at": "2026-09-21T04:07:01.568Z"
     },
     {
       "event_id": "EV-b9be18b12b1714f3",
-      "company_name": "晶能",
+      "company_name": "浙江晶能微电子股份有限公司",
       "status": "auto_published",
       "problems": [],
       "queries": [
@@ -4145,7 +4165,7 @@
           "error": ""
         }
       ],
-      "updated_at": "2026-09-21T00:38:58.409Z"
+      "updated_at": "2026-09-21T04:07:01.568Z"
     },
     {
       "event_id": "EV-77887cf446f03ba4",
@@ -4154,7 +4174,7 @@
       "problems": [],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-09-21T00:38:58.409Z"
+      "updated_at": "2026-09-21T04:07:01.568Z"
     }
   ]
 }

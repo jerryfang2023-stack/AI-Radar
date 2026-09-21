@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-21T03:59:32.097Z",
+    "generatedAt": "2026-09-21T04:13:14.914Z",
     "latestDataDate": "2026-09-21",
     "currentDate": "2026-09-21",
-    "eventCount": 3444,
-    "quarantinedEventCount": 36,
+    "eventCount": 3463,
+    "quarantinedEventCount": 37,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
@@ -33,6 +33,7 @@
       "EV-844b61a6f671856b",
       "EV-90a174964b9d1daf",
       "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
       "EV-0139c3fbe3e5a173",
       "EV-ea0938a6f851008a",
       "EV-a9c57b461ee10f8d",
@@ -74,6 +75,7 @@
       "EV-b93102125cc062e3",
       "EV-a6b4fa32cce7c483",
       "EV-2ffc3377977da114",
+      "EV-952a95bff6b05d4f",
       "EV-cff5848b8c5453af",
       "EV-02015794e4c719d0",
       "EV-4e8f6e91e4451ba1",
@@ -99,6 +101,7 @@
       "EN-193d220b421d776e",
       "EN-b81c8201acfc7639",
       "EN-88e2cce43eeadb36",
+      "EN-c6a14da2b605499f",
       "EN-478676438ee161a3",
       "EN-5fdd673ed1fcff1d",
       "EN-ae0facccf0a3723a",
@@ -4766,6 +4769,106 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-952a95bff6b05d4f",
+      "dataDate": "2026-09-21",
+      "date": "2026-09-20",
+      "updatedDate": "2026-09-21",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "卢伟冰：真正意义上的 AI 手机离走进生活还有不少距离，小米 18 Pro 系列 9 月 23 日发布",
+      "originalTitle": "",
+      "subject": "卢伟冰：真正意义上的 AI 手机离走进生活还有不少距离，小米 18 Pro 系列 9 月 23 日",
+      "action": "发布",
+      "object": "卢伟冰：真正意义上的 AI 手机离走进生活还有不少距离，小米 18 Pro 系列 9 月 23 日发布",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [
+          "cn-ithome-rss"
+        ],
+        "claim_refs": [
+          "CL-8635b2e256d3f444",
+          "CL-f92969ca047f9e77",
+          "CL-3b68e6b02f37797c",
+          "CL-d24a781f972c4dac"
+        ]
+      },
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_device",
+            "name": "AI 设备",
+            "entityIds": [
+              "EN-c6a14da2b605499f"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [
+            "EN-c6a14da2b605499f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [
+            "EN-c6a14da2b605499f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-c6a14da2b605499f",
+        "EN-c608c4787821de1b"
+      ],
+      "entityNames": [
+        "卢伟冰",
+        "Xiaomi"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/1/004/782.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-cff5848b8c5453af",
       "dataDate": "2026-08-20",
       "date": "2026-08-19",
@@ -5966,6 +6069,7 @@
         "EV-b93102125cc062e3",
         "EV-6c361125c3f50bb6",
         "EV-bf23c87d0aa1f205",
+        "EV-9ec1b90f071eef44",
         "EV-e17326c8f33e636c",
         "EV-f2f9ce8933ab8d4f",
         "EV-cbe5cc267353560e",
@@ -5987,12 +6091,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
         "TX-product_form-ai_device",
         "TX-use_case-software_development",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-model",
-        "TX-technology-agentic_execution",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-technology-video_generation",
@@ -6004,7 +6108,7 @@
         "EN-24381ecb01753c1b"
       ],
       "firstSeen": "2026-01-13",
-      "lastSeen": "2026-09-20"
+      "lastSeen": "2026-09-21"
     },
     {
       "id": "EN-88e2cce43eeadb36",
@@ -6041,6 +6145,27 @@
       ],
       "firstSeen": "2026-07-07",
       "lastSeen": "2026-09-07"
+    },
+    {
+      "id": "EN-c6a14da2b605499f",
+      "name": "卢伟冰",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-952a95bff6b05d4f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-ai_device"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-20",
+      "lastSeen": "2026-09-21"
     },
     {
       "id": "EN-478676438ee161a3",
@@ -6147,9 +6272,10 @@
         "EV-b99c318c66e1a295",
         "EV-3d9aa640411471ea",
         "EV-2a833330267cb2df",
+        "EV-3dc533666d73a255",
+        "EV-6e92e04d93656021",
         "EV-10a072b1d240e493",
         "EV-5ff63c4f72976e83",
-        "EV-ec55003461ff34b0",
         "EV-1cdca99fb7272349",
         "EV-4ad737260c42c505",
         "EV-6a5b724c821567f3",
@@ -6218,11 +6344,11 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-target_user-business_user",
+        "TX-technology-agentic_execution",
         "TX-use_case-data_analysis",
         "TX-product_form-ai_device",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-model",
-        "TX-technology-agentic_execution",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-technology-video_generation",
@@ -6240,7 +6366,7 @@
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-09-20",
+      "lastSeen": "2026-09-21",
       "organizationFamilyId": "EN-047364b9be67f665",
       "organizationRole": "group",
       "organizationFamilyEntityIds": [
@@ -6261,6 +6387,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-ceae771867a66bb5",
         "EV-eb3b431d4ce98ec5",
         "EV-68897f26c8d956df",
         "EV-cffa617426a5e139",
@@ -6270,15 +6397,15 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-target_user-business_user",
-        "TX-product_form-ai_device",
-        "TX-technology-agentic_execution"
+        "TX-technology-agentic_execution",
+        "TX-product_form-ai_device"
       ],
       "relatedEntityIds": [
         "EN-dd24c3b82a636110",
         "EN-7ff4fb5ddc1f4700"
       ],
       "firstSeen": "2026-07-09",
-      "lastSeen": "2026-08-30"
+      "lastSeen": "2026-09-21"
     }
   ],
   "fde": [],

@@ -1,28 +1,28 @@
 {
   "schema_version": "FUNDING-SOURCE-HEALTH-V1.0",
-  "generated_at": "2026-09-20T05:54:22.615Z",
-  "date": "2026-09-20",
+  "generated_at": "2026-09-21T04:10:16.890Z",
+  "date": "2026-09-21",
   "status": "passed",
   "state": "healthy",
-  "last_checked_date": "2026-09-20",
-  "latest_financing_date": "2026-09-18",
+  "last_checked_date": "2026-09-21",
+  "latest_financing_date": "2026-09-20",
   "totals": {
-    "fetched": 475,
-    "funding_candidates": 106,
+    "fetched": 511,
+    "funding_candidates": 117,
     "verified_events": 10
   },
   "channels": [
     {
       "id": "aihot",
       "status": "collected",
-      "last_success_at": "2026-09-20T00:14:05.964Z",
+      "last_success_at": "2026-09-21T00:14:18.515Z",
       "response_ms": null,
       "http_status": "200",
-      "fetched_count": 151,
-      "latest_content_date": "2026-09-19",
+      "fetched_count": 143,
+      "latest_content_date": "2026-09-20",
       "duplicate_rate": 0,
       "stale_rate": 1,
-      "funding_candidate_count": 3,
+      "funding_candidate_count": 1,
       "verified_event_count": 0,
       "failures": [],
       "fallback_used": false
@@ -30,70 +30,68 @@
     {
       "id": "funding",
       "status": "collected",
-      "last_success_at": "2026-09-20T00:14:23.420Z",
+      "last_success_at": "2026-09-21T00:14:33.411Z",
       "response_ms": null,
       "http_status": "429",
-      "fetched_count": 50,
-      "latest_content_date": "2026-09-10",
+      "fetched_count": 48,
+      "latest_content_date": "2026-09-20",
       "duplicate_rate": 0,
       "stale_rate": 1,
-      "funding_candidate_count": 50,
+      "funding_candidate_count": 48,
       "verified_event_count": 0,
       "failures": [
-        "RSS venturebeat-ai: HTTP 429",
-        "RSS tldr-ai-newsletter: HTTP 429"
+        "RSS venturebeat-ai: HTTP 429"
       ],
       "fallback_used": false
     },
     {
       "id": "gdelt",
-      "status": "failed",
-      "last_success_at": "",
+      "status": "collected",
+      "last_success_at": "2026-09-21T00:24:35.868Z",
       "response_ms": null,
-      "http_status": "",
-      "fetched_count": 0,
+      "http_status": "200",
+      "fetched_count": 56,
       "latest_content_date": "",
       "duplicate_rate": 0,
-      "stale_rate": 0,
-      "funding_candidate_count": 0,
-      "verified_event_count": 0,
-      "failures": [
-        "source collection command failed; see gdelt-source-run.log"
-      ],
+      "stale_rate": 1,
+      "funding_candidate_count": 15,
+      "verified_event_count": 1,
+      "failures": [],
       "fallback_used": false
     },
     {
       "id": "keyword",
       "status": "collected",
-      "last_success_at": "2026-09-20T00:23:36.119Z",
+      "last_success_at": "2026-09-21T00:23:19.804Z",
       "response_ms": null,
       "http_status": "200",
-      "fetched_count": 149,
-      "latest_content_date": "2026-09-17",
-      "duplicate_rate": 0.0698,
+      "fetched_count": 148,
+      "latest_content_date": "2024-10-23",
+      "duplicate_rate": 0.2093,
       "stale_rate": 1,
       "funding_candidate_count": 43,
-      "verified_event_count": 3,
+      "verified_event_count": 1,
       "failures": [
-        "keyword-search pre-gate filtered 74 result(s): missing_ai_anchor_in_result=26; broad_list_or_market_report=19; social_or_profile_source=19; noise_term:hiring=5; directory_or_search_page=2; noise_term:meme=2; noise_term:dictionary=1",
-        "Anysearch fallback for query \"AI agent startup raises procurement workflow announced September 2026 (AI procurement OR tender OR \"contract awarded\" OR \"purchasing agreement\") (official OR government OR newsroom)\": Anysearch returned 0 usable results"
+        "keyword-search pre-gate filtered 74 result(s): social_or_profile_source=27; missing_ai_anchor_in_result=21; broad_list_or_market_report=18; directory_or_search_page=4; noise_term:career=2; noise_term:hiring=2",
+        "Anysearch fallback for query \"AI workflow rollout procurement pilot announced September 2026 (AI procurement OR tender OR \"contract awarded\" OR \"purchasing agreement\") (official OR government OR newsroom)\": Anysearch returned 0 usable results"
       ],
       "fallback_used": true
     },
     {
       "id": "rss",
       "status": "collected",
-      "last_success_at": "2026-09-20T00:14:10.832Z",
+      "last_success_at": "2026-09-21T00:14:21.330Z",
       "response_ms": null,
       "http_status": "429",
-      "fetched_count": 125,
-      "latest_content_date": "2026-09-10",
+      "fetched_count": 116,
+      "latest_content_date": "2026-09-20",
       "duplicate_rate": 0,
       "stale_rate": 1,
       "funding_candidate_count": 10,
       "verified_event_count": 0,
       "failures": [
-        "RSS venturebeat-ai: HTTP 429"
+        "RSS venturebeat-ai: HTTP 429",
+        "RSS tldr-ai-newsletter: HTTP 429"
       ],
       "fallback_used": false
     }

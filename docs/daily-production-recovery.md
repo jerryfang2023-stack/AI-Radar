@@ -175,6 +175,11 @@ and integrity validation; resolve their announcement links before admission.
 Rebuild the affected date from immutable intake so rejected containers retain
 Raw evidence and explicit QA reasons rather than appearing as newly dated events.
 
+Dated industry explainers (annual role-of essays and industry-chain outlooks)
+are not product-release announcements merely because their body mentions open
+source, products or prior policy targets. Preserve their Raw evidence in QA;
+an actual named report or product announcement remains a separate eligible source.
+
 After the gated atomic application set merges, verify a successful internal
 Pages deployment of that commit or a proven descendant. A cancelled deployment
 superseded by a newer successful release is not a publication failure. That

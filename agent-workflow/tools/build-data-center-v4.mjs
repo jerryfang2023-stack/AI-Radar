@@ -335,6 +335,9 @@ function eventSourceEligibility(raw, artifact, title, dataDate = "", options = {
 
 function publicEventSourceTitleIssue(title) {
   const value = cleanString(title);
+  if (/^The role of\b.{1,100}\bin\b.{1,100}\b20\d{2}\b|^20\d{2}年.{1,100}在.{1,100}中的作用|^(?:研判|展望|洞察)\s*20\d{2}.{0,100}行业.{0,60}(?:产业链|核心特征|市场规模)/iu.test(value)) {
+    return "industry_overview_not_event_source";
+  }
   if (/^how\s+to\b.{0,100}\b(?:rais(?:e|ing)|funding|financing|seed\s+round)\b|^(?:AI\s*(?:初创公司|初创企业))?如何.{0,50}(?:融资|募资|种子轮)/iu.test(value)) {
     return "fundraising_guide_not_company_event";
   }

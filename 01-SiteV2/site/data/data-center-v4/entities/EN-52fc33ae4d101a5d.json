@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-21T03:59:32.097Z",
+    "generatedAt": "2026-09-21T04:13:14.914Z",
     "latestDataDate": "2026-09-21",
     "currentDate": "2026-09-21",
-    "eventCount": 3444,
-    "quarantinedEventCount": 36,
+    "eventCount": 3463,
+    "quarantinedEventCount": 37,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
@@ -33,6 +33,7 @@
       "EV-844b61a6f671856b",
       "EV-90a174964b9d1daf",
       "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
       "EV-0139c3fbe3e5a173",
       "EV-ea0938a6f851008a",
       "EV-a9c57b461ee10f8d",
@@ -70,7 +71,8 @@
       "EV-ee9a1c99fe7054d6",
       "EV-888b9eb73582e21c",
       "EV-28145c97a7237d6d",
-      "EV-0c06df62702d26ab"
+      "EV-0c06df62702d26ab",
+      "EV-187cf0c72699ab5e"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
@@ -78,7 +80,7 @@
       "EN-7d3194f79e645c42"
     ],
     "firstSeen": "2026-06-20",
-    "lastSeen": "2026-08-19",
+    "lastSeen": "2026-09-21",
     "relationIds": [
       "REL2-6be506e2b049f516",
       "REL2-7ac7dc8cf5020f51",
@@ -103,9 +105,29 @@
       ],
       "hardware": [],
       "organizationPeople": [],
-      "other": []
+      "other": [
+        "EV-187cf0c72699ab5e"
+      ]
     },
     "timeline": [
+      {
+        "id": "EV-187cf0c72699ab5e",
+        "dataDate": "2026-09-21",
+        "date": "2026-09-20",
+        "eventType": "research_result",
+        "eventTypeLabel": "研究结果",
+        "eventGroup": "研究结果",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "美国每日AI使用量在短短六个月内增长了一倍多",
+        "displayTags": [],
+        "entityIds": [
+          "EN-d9fab4d170786f8f",
+          "EN-e4050d35cb58c567",
+          "EN-52fc33ae4d101a5d",
+          "EN-02d160bdf2351717"
+        ]
+      },
       {
         "id": "EV-5ebbe581dba0caf4",
         "dataDate": "2026-08-19",
@@ -460,6 +482,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-1d5c66256df950a5",
         "EV-800958e92cf5e67f",
         "EV-440866c21881868f",
         "EV-4ea7cc69ffdf6bd4",
@@ -724,9 +747,11 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-054a8623f9abdbb7",
+        "EV-fd18ed4c81ae1791",
+        "EV-b739349cfab7e41c",
         "EV-36defc1d19f0ce5d",
         "EV-6d4ba6a553d0564c",
-        "EV-b739349cfab7e41c",
         "EV-59d06d776297a3cd",
         "EV-cbc06e90ef8b24f7",
         "EV-827744fb4c444b4c",
@@ -847,6 +872,7 @@
       "classificationRefs": [
         "TX-industry-government_public_sector",
         "TX-target_user-business_user",
+        "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
         "TX-target_user-developer",
         "TX-target_user-researcher",
@@ -868,7 +894,6 @@
         "TX-use_case-content_creation",
         "TX-industry-professional_services",
         "TX-use_case-security_operations",
-        "TX-technology-agentic_execution",
         "TX-industry-aerospace_defense",
         "TX-industry-legal_services",
         "TX-technology-code_generation",
@@ -913,7 +938,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-20"
+      "lastSeen": "2026-09-21"
     }
   ],
   "relationships": [
