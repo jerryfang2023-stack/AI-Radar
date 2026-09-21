@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-20T05:41:49.434Z",
-    "latestDataDate": "2026-09-20",
-    "currentDate": "2026-09-20",
-    "eventCount": 3434,
-    "quarantinedEventCount": 36,
+    "generatedAt": "2026-09-21T04:13:14.914Z",
+    "latestDataDate": "2026-09-21",
+    "currentDate": "2026-09-21",
+    "eventCount": 3463,
+    "quarantinedEventCount": 37,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
@@ -33,6 +33,7 @@
       "EV-844b61a6f671856b",
       "EV-90a174964b9d1daf",
       "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
       "EV-0139c3fbe3e5a173",
       "EV-ea0938a6f851008a",
       "EV-a9c57b461ee10f8d",
@@ -58,6 +59,8 @@
     "eventIds": [
       "EV-657176fd0dff6209",
       "EV-fd329b4350f404ef",
+      "EV-3dc533666d73a255",
+      "EV-6e92e04d93656021",
       "EV-dc0ef21764be2db1",
       "EV-1372037e191a9587",
       "EV-1c240446b94d16b1",
@@ -76,11 +79,12 @@
     "entityIds": [
       "EN-336ab1deb42d6284",
       "EN-b97e07c31e87f7d0",
+      "EN-bae152c4560df38c",
+      "EN-1f9bfd088b15331d",
       "EN-7d3194f79e645c42",
       "EN-9fbf261b62c1d7c0",
       "EN-4721e06a8b6d85ff",
       "EN-bbdefa2950f49882",
-      "EN-bae152c4560df38c",
       "EN-ea3bd73e2b506e00",
       "EN-534e99d81da1c54d",
       "EN-2b6e51bec93e86c1",
@@ -89,7 +93,7 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-06-11",
-    "lastSeen": "2026-09-16"
+    "lastSeen": "2026-09-21"
   },
   "events": [
     {
@@ -631,6 +635,223 @@
       "products": [],
       "sourceUrl": "https://arstechnica.com/ai/2026/07/google-earth-releases-swiftly-retracts-ai-feature-to-make-fake-satellite-images",
       "publisher": "Ars Technica：AI（RSS）"
+    },
+    {
+      "id": "EV-3dc533666d73a255",
+      "dataDate": "2026-09-21",
+      "date": "2026-09-20",
+      "updatedDate": "2026-09-21",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "阿里千问开源 Qwen-Image-2.1 图像模型，支持透明图像与最多 10 张参考图",
+      "originalTitle": "",
+      "subject": "阿里千问",
+      "action": "开源 Qwen-Image-2.1 图像模型",
+      "object": "，支持透明图像与最多 10 张参考图",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "image_generation",
+          "name": "图像生成",
+          "entityIds": [
+            "EN-bae152c4560df38c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "image_generation",
+          "name": "图像生成",
+          "entityIds": [
+            "EN-bae152c4560df38c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "image_generation",
+          "name": "图像生成",
+          "entityIds": [
+            "EN-bae152c4560df38c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-bae152c4560df38c",
+        "EN-047364b9be67f665",
+        "EN-62a6bfd36e0a6abe"
+      ],
+      "entityNames": [
+        "阿里千问",
+        "Alibaba",
+        "Qwen-Image-2.1"
+      ],
+      "productName": "Qwen-Image-2.1",
+      "products": [
+        {
+          "name": "Qwen-Image-2.1",
+          "type": "模型",
+          "ownerNames": [
+            "Alibaba"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/1/004/989.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-6e92e04d93656021",
+      "dataDate": "2026-09-21",
+      "date": "2026-09-20",
+      "updatedDate": "2026-09-21",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "阿里巴巴开放权重 Qwen-Image-2.1 声称仅凭 70 亿参数在图像生成上击败闭源模型",
+      "originalTitle": "Alibaba's open-weight Qwen-Image-2.1 claims to beat closed models in image generation with just 7 billion parameters",
+      "subject": "Alibaba's Qwen AI team",
+      "action": "model_release",
+      "object": "Qwen-Image-2.1",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "image_generation",
+          "name": "图像生成",
+          "entityIds": [
+            "EN-1f9bfd088b15331d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-1f9bfd088b15331d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "image_generation",
+          "name": "图像生成",
+          "entityIds": [
+            "EN-1f9bfd088b15331d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-1f9bfd088b15331d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "image_generation",
+          "name": "图像生成",
+          "entityIds": [
+            "EN-1f9bfd088b15331d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-1f9bfd088b15331d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-1f9bfd088b15331d",
+        "EN-047364b9be67f665",
+        "EN-62a6bfd36e0a6abe"
+      ],
+      "entityNames": [
+        "Alibaba's Qwen AI team",
+        "Alibaba",
+        "Qwen-Image-2.1"
+      ],
+      "productName": "Qwen-Image-2.1",
+      "products": [
+        {
+          "name": "Qwen-Image-2.1",
+          "type": "模型",
+          "ownerNames": [
+            "Alibaba"
+          ]
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/alibabas-open-weight-qwen-image-2-1-claims-to-beat-closed-models-in-image-generation-with-just-7-billion-parameters",
+      "publisher": "The Decoder AI News"
     },
     {
       "id": "EV-dc0ef21764be2db1",
@@ -2541,12 +2762,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_category-infrastructure_compute",
-        "TX-ai_market_subcategory-development_deployment",
-        "TX-target_user-developer",
         "TX-target_user-business_user",
-        "TX-product_form-model",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-target_user-developer",
         "TX-target_user-consumer",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-product_form-model",
         "TX-industry-media_entertainment",
         "TX-use_case-content_creation",
         "TX-ai_market_application-models",
@@ -2577,6 +2798,57 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-08-01",
       "lastSeen": "2026-08-01"
+    },
+    {
+      "id": "EN-bae152c4560df38c",
+      "name": "阿里千问",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-3dc533666d73a255",
+        "EV-10a072b1d240e493",
+        "EV-6a3286e2186e4774",
+        "EV-1a241bcb4fad886c",
+        "EV-f388f7ae2debeae8",
+        "EV-bbc34d7bc9c02b6f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-technology-vision_language",
+        "TX-technology-image_generation",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-10",
+      "lastSeen": "2026-09-21"
+    },
+    {
+      "id": "EN-1f9bfd088b15331d",
+      "name": "Alibaba's Qwen AI team",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6e92e04d93656021"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-open_weights",
+        "TX-technology-image_generation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-20",
+      "lastSeen": "2026-09-21"
     },
     {
       "id": "EN-7d3194f79e645c42",
@@ -2706,6 +2978,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-1d5c66256df950a5",
         "EV-800958e92cf5e67f",
         "EV-440866c21881868f",
         "EV-4ea7cc69ffdf6bd4",
@@ -2970,9 +3243,11 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-054a8623f9abdbb7",
+        "EV-fd18ed4c81ae1791",
+        "EV-b739349cfab7e41c",
         "EV-36defc1d19f0ce5d",
         "EV-6d4ba6a553d0564c",
-        "EV-b739349cfab7e41c",
         "EV-59d06d776297a3cd",
         "EV-cbc06e90ef8b24f7",
         "EV-827744fb4c444b4c",
@@ -3091,30 +3366,30 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-developer_tool",
+        "TX-industry-government_public_sector",
+        "TX-target_user-business_user",
+        "TX-technology-agentic_execution",
+        "TX-product_form-chip_accelerator",
         "TX-target_user-developer",
         "TX-target_user-researcher",
+        "TX-use_case-data_analysis",
+        "TX-target_user-consumer",
+        "TX-product_form-developer_tool",
         "TX-use_case-software_development",
-        "TX-product_form-chip_accelerator",
-        "TX-target_user-business_user",
         "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-research_discovery",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-use_case-data_analysis",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-end_user_application",
         "TX-product_form-model",
-        "TX-target_user-consumer",
         "TX-industry-media_entertainment",
         "TX-industry-retail_ecommerce",
         "TX-use_case-content_creation",
-        "TX-industry-government_public_sector",
         "TX-industry-professional_services",
         "TX-use_case-security_operations",
-        "TX-technology-agentic_execution",
         "TX-industry-aerospace_defense",
         "TX-industry-legal_services",
         "TX-technology-code_generation",
@@ -3159,7 +3434,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-20"
+      "lastSeen": "2026-09-21"
     },
     {
       "id": "EN-9fbf261b62c1d7c0",
@@ -3339,13 +3614,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
-        "TX-use_case-data_analysis",
         "TX-industry-manufacturing",
-        "TX-product_form-model",
-        "TX-target_user-consumer",
-        "TX-use_case-security_operations",
+        "TX-target_user-business_user",
         "TX-technology-agentic_execution",
+        "TX-use_case-data_analysis",
+        "TX-target_user-consumer",
+        "TX-product_form-model",
+        "TX-use_case-security_operations",
         "TX-technology-image_generation",
         "TX-technology-mixture_of_experts",
         "TX-deployment_model-on_premise",
@@ -3674,11 +3949,15 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_category-infrastructure_compute",
-        "TX-target_user-developer",
-        "TX-use_case-software_development",
-        "TX-ai_market_subcategory-hardware_computing",
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
+        "TX-technology-agentic_execution",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-hardware_computing",
+        "TX-target_user-developer",
+        "TX-technology-embodied_ai",
+        "TX-target_user-consumer",
+        "TX-use_case-software_development",
         "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-ai_compute_system",
@@ -3686,16 +3965,12 @@
         "TX-use_case-research_discovery",
         "TX-ai_market_application-computing_infrastructure",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-industry-manufacturing",
         "TX-product_form-end_user_application",
-        "TX-technology-embodied_ai",
         "TX-product_form-model",
-        "TX-target_user-consumer",
         "TX-industry-retail_ecommerce",
         "TX-use_case-security_operations",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
-        "TX-technology-agentic_execution",
         "TX-industry-aerospace_defense",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
@@ -3730,35 +4005,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-09-20"
-    },
-    {
-      "id": "EN-bae152c4560df38c",
-      "name": "阿里千问",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-10a072b1d240e493",
-        "EV-6a3286e2186e4774",
-        "EV-1a241bcb4fad886c",
-        "EV-f388f7ae2debeae8",
-        "EV-bbc34d7bc9c02b6f"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-product_form-model",
-        "TX-technology-vision_language",
-        "TX-technology-image_generation",
-        "TX-technology-speech_audio"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-06-10",
-      "lastSeen": "2026-09-20"
+      "lastSeen": "2026-09-21"
     },
     {
       "id": "EN-ea3bd73e2b506e00",
@@ -3771,6 +4018,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-66f24f6db71cc011",
         "EV-40d4ce6d936d4d49",
         "EV-622c77a021ef08de",
         "EV-f2c93c155070cd35",
@@ -3890,20 +4138,20 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-software_development",
-        "TX-product_form-chip_accelerator",
+        "TX-industry-manufacturing",
         "TX-target_user-business_user",
+        "TX-technology-agentic_execution",
+        "TX-product_form-chip_accelerator",
+        "TX-use_case-data_analysis",
+        "TX-target_user-consumer",
+        "TX-use_case-software_development",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
-        "TX-use_case-data_analysis",
-        "TX-industry-manufacturing",
         "TX-product_form-end_user_application",
         "TX-product_form-model",
-        "TX-target_user-consumer",
         "TX-industry-media_entertainment",
         "TX-use_case-content_creation",
-        "TX-technology-agentic_execution",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-ai_market_subcategory-sales",
@@ -3930,7 +4178,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-12",
-      "lastSeen": "2026-09-20"
+      "lastSeen": "2026-09-21"
     },
     {
       "id": "EN-534e99d81da1c54d",
@@ -4014,8 +4262,8 @@
         "EV-3ef3e18df61a00d8",
         "EV-568d2aeab5234e48",
         "EV-f68e00bb9fd49fac",
-        "EV-9b8fb88908ef8553",
         "EV-b739349cfab7e41c",
+        "EV-9b8fb88908ef8553",
         "EV-14762aedd2985175",
         "EV-7a24f8d94f5eede7",
         "EV-51548a69e952646b",
@@ -4032,18 +4280,18 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-software_development",
-        "TX-product_form-chip_accelerator",
         "TX-use_case-physical_automation",
+        "TX-technology-agentic_execution",
+        "TX-product_form-chip_accelerator",
+        "TX-technology-embodied_ai",
+        "TX-use_case-software_development",
         "TX-product_form-enterprise_software_platform",
         "TX-use_case-research_discovery",
-        "TX-technology-embodied_ai",
         "TX-product_form-model",
         "TX-industry-media_entertainment",
         "TX-use_case-security_operations",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
-        "TX-technology-agentic_execution",
         "TX-industry-aerospace_defense",
         "TX-technology-code_generation",
         "TX-technology-multimodal",
@@ -4061,7 +4309,7 @@
         "EN-a3c3b987b09fc1bb"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-09-20"
+      "lastSeen": "2026-09-21"
     },
     {
       "id": "EN-5388bc10736a0eff",

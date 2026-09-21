@@ -18,6 +18,20 @@ const root = path.resolve(__dirname, "../../..");
 const taxonomy = JSON.parse(fs.readFileSync(path.join(root, "agent-workflow/product/tag-taxonomy-v4.json"), "utf8"));
 const date = "2026-07-16";
 
+test("dated industry explainers are not new product releases", () => {
+  for (const title of [
+    "The Role of Open Source in Enterprise AI in 2026 - MLflow",
+    "2026年开源在企业AI中的作用 - MLflow",
+    "研判2026！中国AI AGENT（人工智能体）行业核心特征、产业链 - 智研咨询",
+  ]) {
+    assert.equal(publicEventSourceTitleIssue(title), "industry_overview_not_event_source");
+    assert.equal(eventSourceEligibility({raw_qc_decision:"pass"}, {source_url:"https://example.com/article/2026-ai"}, title).accepted, false);
+  }
+  for (const title of ["MLflow releases AI agent evaluation tools", "智研咨询发布2026年AI行业调研报告", "Acme AI launches a new platform in 2026"]) {
+    assert.equal(publicEventSourceTitleIssue(title), "");
+  }
+});
+
 test("funding claim candidates reject an unrelated financing teaser near the article lead", () => {
   const title = "贝联珠贯获阿里云领投超亿元A轮融资，深耕AI运维领域";
   const subject = "贝联珠贯获阿里云领投超亿元A轮";

@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-20T05:41:49.434Z",
-    "latestDataDate": "2026-09-20",
-    "currentDate": "2026-09-20",
-    "eventCount": 3434,
-    "quarantinedEventCount": 36,
+    "generatedAt": "2026-09-21T04:13:14.914Z",
+    "latestDataDate": "2026-09-21",
+    "currentDate": "2026-09-21",
+    "eventCount": 3463,
+    "quarantinedEventCount": 37,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
@@ -33,6 +33,7 @@
       "EV-844b61a6f671856b",
       "EV-90a174964b9d1daf",
       "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
       "EV-0139c3fbe3e5a173",
       "EV-ea0938a6f851008a",
       "EV-a9c57b461ee10f8d",
@@ -3561,6 +3562,126 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-8eb9e3e3cf6ea367",
+      "snapshotKey": "8eb9e3e3cf6ea367",
+      "snapshotId": "HWS-4d5bc577a8636cd3",
+      "eventId": "EV-ceae771867a66bb5",
+      "eventIds": [
+        "EV-ceae771867a66bb5",
+        "EV-b40ba79822469bc0"
+      ],
+      "dataDate": "2026-09-21",
+      "date": "2026-09-21",
+      "title": "启元机器人",
+      "subject": "启元机器人",
+      "productNames": [],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-e6674f83b817bb07"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-09-21",
+          "previousDate": "2026-08-03",
+          "snapshotId": "HWS-4d5bc577a8636cd3",
+          "previousSnapshotId": "HWS-12dc4775928bb24b",
+          "changedFacts": [
+            "product"
+          ]
+        }
+      ],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-21",
+          "hardware_fact_id": "HWF-1140402b9efcbd97",
+          "fact_type": "product",
+          "observed_at": "2026-09-20T08:36:05.000Z",
+          "subject_entity_id": "EN-85f0c155e340fb63",
+          "subject_name": "启元机器人",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "稚晖君发布启元 Q1 和 T1 人形机器人：外壳随心改换、人形四足秒切换，首发接入腾讯 WorkBuddy - IT之家",
+          "event_refs": [
+            "EV-ceae771867a66bb5"
+          ],
+          "claim_ref": "CL-9e01ce29efd554f5",
+          "source_refs": [
+            "SA-68e4a92e36c6e8a6"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-21/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-09-21",
+          "hardware_fact_id": "HWF-e6674f83b817bb07",
+          "fact_type": "product",
+          "observed_at": "2026-09-20T08:36:05.000Z",
+          "subject_entity_id": "EN-85f0c155e340fb63",
+          "subject_name": "启元机器人",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "稚晖君发布启元 Q1 和 T1 人形机器人：外壳随心改换、人形四足秒切换，首发接入腾讯 WorkBuddy",
+          "event_refs": [
+            "EV-ceae771867a66bb5"
+          ],
+          "claim_ref": "CL-e4a7b18b5369f046",
+          "source_refs": [
+            "SA-68e4a92e36c6e8a6"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-21/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-0ad1a6d446cfd5e2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-85f0c155e340fb63"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://ithome.com/1/004/871.htm",
+      "entityIds": [
+        "EN-85f0c155e340fb63",
+        "EN-0ad1a6d446cfd5e2",
+        "EN-9c8ae69b84f21a2e",
+        "EN-fb646a85ad74e7c5",
+        "EN-0f09eb70713e0871"
+      ]
+    },
     {
       "id": "HWC-6fd74d1e67500cb5",
       "snapshotKey": "6fd74d1e67500cb5",
@@ -15045,123 +15166,6 @@
       ]
     },
     {
-      "id": "HWC-8eb9e3e3cf6ea367",
-      "snapshotKey": "8eb9e3e3cf6ea367",
-      "snapshotId": "HWS-12dc4775928bb24b",
-      "eventId": "EV-b40ba79822469bc0",
-      "eventIds": [
-        "EV-b40ba79822469bc0"
-      ],
-      "dataDate": "2026-08-03",
-      "date": "2026-08-03",
-      "title": "启元机器人",
-      "subject": "启元机器人",
-      "productNames": [],
-      "hardwareType": "robot",
-      "factTypes": [
-        "product"
-      ],
-      "latestValues": {
-        "product": {
-          "metric_value": "",
-          "unit": "",
-          "fact_ref": "HWF-b9abe4e7e221d517"
-        }
-      },
-      "factCount": 3,
-      "snapshotCount": 1,
-      "changes": [],
-      "capacityFacts": [],
-      "supplyFacts": [],
-      "specificationFacts": [
-        {
-          "data_date": "2026-08-03",
-          "hardware_fact_id": "HWF-d7968ea4e7f9b569",
-          "fact_type": "product",
-          "observed_at": "2026-08-02T08:30:31.000Z",
-          "subject_entity_id": "EN-85f0c155e340fb63",
-          "subject_name": "启元机器人",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "robot",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "上纬新材启元宣布与暴雪《魔兽世界》合作，推出限定“鱼人定制款”Q1 机器人 - IT之家",
-          "event_refs": [
-            "EV-b40ba79822469bc0"
-          ],
-          "claim_ref": "CL-820a454684276421",
-          "source_refs": [
-            "SA-ef4ab2531521893b"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-03/hardware-facts.json"
-        },
-        {
-          "data_date": "2026-08-03",
-          "hardware_fact_id": "HWF-3d3f98fda91aaf6b",
-          "fact_type": "product",
-          "observed_at": "2026-08-02T08:30:31.000Z",
-          "subject_entity_id": "EN-85f0c155e340fb63",
-          "subject_name": "启元机器人",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "robot",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "上纬新材启元宣布与暴雪《魔兽世界》合作，推出限定“鱼人定制款”Q1 机器人",
-          "event_refs": [
-            "EV-b40ba79822469bc0"
-          ],
-          "claim_ref": "CL-46137d43b05cd905",
-          "source_refs": [
-            "SA-ef4ab2531521893b"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-03/hardware-facts.json"
-        },
-        {
-          "data_date": "2026-08-03",
-          "hardware_fact_id": "HWF-b9abe4e7e221d517",
-          "fact_type": "product",
-          "observed_at": "2026-08-02T08:30:31.000Z",
-          "subject_entity_id": "EN-85f0c155e340fb63",
-          "subject_name": "启元机器人",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "robot",
-          "metric_value": "",
-          "unit": "",
-          "source_quote": "IT之家 8 月 2 日消息，上纬新材料科技股份有限公司（上纬新材）旗下消费级具身智能品牌“启元机器人”在 2026 年度 ChinaJoy 期间官宣与暴雪《魔兽世界》进行合作，推出活动限定“鱼人定制款”启元 Q1。",
-          "event_refs": [
-            "EV-b40ba79822469bc0"
-          ],
-          "claim_ref": "CL-8f334a11526d331d",
-          "source_refs": [
-            "SA-ef4ab2531521893b"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-03/hardware-facts.json"
-        }
-      ],
-      "capexFacts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "embodied_ai",
-          "name": "具身智能",
-          "entityIds": [
-            "EN-85f0c155e340fb63"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "sourceUrl": "https://ithome.com/0/984/758.htm",
-      "entityIds": [
-        "EN-85f0c155e340fb63",
-        "EN-0f09eb70713e0871"
-      ]
-    },
-    {
       "id": "HWC-f9f990a3d8deb26a",
       "snapshotKey": "f9f990a3d8deb26a",
       "snapshotId": "HWS-360420c6352a51a7",
@@ -18070,36 +18074,37 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-09-20",
-      "funnel_id": "LF-d8c3e8fb498d478b",
+      "data_date": "2026-09-21",
+      "funnel_id": "LF-e4fefad4c87b05ae",
       "lens": "hardware",
-      "date": "2026-09-20",
+      "date": "2026-09-21",
       "monitoring_paths": [
         "hardware_capacity_fab",
+        "hardware_capex",
         "hardware_product_specs",
         "hardware_shipment_deployment",
         "hardware_supply_agreement"
       ],
-      "raw_documents": 20,
-      "original_sources": 18,
-      "valid_claims": 11,
-      "observations": 3,
+      "raw_documents": 27,
+      "original_sources": 22,
+      "valid_claims": 9,
+      "observations": 2,
       "canonical_events": 5,
       "blocker_counts": {
-        "source_outside_daily_window": 5,
-        "non_event_or_index_title": 2,
-        "raw_source_quality_block": 2,
-        "domestic_publication_date_unverified": 2,
-        "event_not_ai_relevant": 3,
-        "source_outside_funding_backfill_window": 1
+        "source_outside_daily_window": 10,
+        "source_outside_funding_backfill_window": 1,
+        "industry_overview_not_event_source": 1,
+        "raw_source_quality_block": 5,
+        "event_not_ai_relevant": 2,
+        "domestic_publication_date_unverified": 2
       },
       "rates": {
-        "original_source_rate": 0.9,
-        "valid_claim_rate": 0.55,
-        "observation_rate": 0.2727272727272727,
-        "event_conversion_rate": 0.45454545454545453
+        "original_source_rate": 0.8148148148148148,
+        "valid_claim_rate": 0.3333333333333333,
+        "observation_rate": 0.2222222222222222,
+        "event_conversion_rate": 0.5555555555555556
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-20/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-21/monitoring-funnel.json"
     }
   ]
 }

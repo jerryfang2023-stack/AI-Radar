@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-20T05:41:49.434Z",
-    "latestDataDate": "2026-09-20",
-    "currentDate": "2026-09-20",
-    "eventCount": 3434,
-    "quarantinedEventCount": 36,
+    "generatedAt": "2026-09-21T04:13:14.914Z",
+    "latestDataDate": "2026-09-21",
+    "currentDate": "2026-09-21",
+    "eventCount": 3463,
+    "quarantinedEventCount": 37,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
@@ -33,6 +33,7 @@
       "EV-844b61a6f671856b",
       "EV-90a174964b9d1daf",
       "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
       "EV-0139c3fbe3e5a173",
       "EV-ea0938a6f851008a",
       "EV-a9c57b461ee10f8d",
@@ -60,19 +61,21 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-492e63783b3fda76",
       "EV-10a072b1d240e493"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-19",
-    "lastSeen": "2026-09-20",
+    "lastSeen": "2026-09-21",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-492e63783b3fda76",
         "EV-10a072b1d240e493"
       ],
       "hardware": [],
@@ -80,6 +83,33 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-492e63783b3fda76",
+        "dataDate": "2026-09-21",
+        "date": "2026-09-20",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "阿里通义Qwen团队发布Qwen3.8-LiveTranslate，实时翻译平均延迟降至2.3秒、支持60种语言",
+        "displayTags": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "cloud",
+            "name": "云端",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-d6815758a2ec3d1f",
+          "EN-e9fc4f156e36f6aa",
+          "EN-b5af4919e2dc31a9"
+        ]
+      },
       {
         "id": "EV-10a072b1d240e493",
         "dataDate": "2026-09-20",

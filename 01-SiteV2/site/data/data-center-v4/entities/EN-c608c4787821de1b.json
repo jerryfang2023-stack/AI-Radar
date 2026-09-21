@@ -5,11 +5,11 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-20T05:41:49.434Z",
-    "latestDataDate": "2026-09-20",
-    "currentDate": "2026-09-20",
-    "eventCount": 3434,
-    "quarantinedEventCount": 36,
+    "generatedAt": "2026-09-21T04:13:14.914Z",
+    "latestDataDate": "2026-09-21",
+    "currentDate": "2026-09-21",
+    "eventCount": 3463,
+    "quarantinedEventCount": 37,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
@@ -33,6 +33,7 @@
       "EV-844b61a6f671856b",
       "EV-90a174964b9d1daf",
       "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
       "EV-0139c3fbe3e5a173",
       "EV-ea0938a6f851008a",
       "EV-a9c57b461ee10f8d",
@@ -68,6 +69,7 @@
       "EV-f341178bd64e6ede",
       "EV-d80c43b35418e74d",
       "EV-53f08daddd011dbb",
+      "EV-952a95bff6b05d4f",
       "EV-5d0f3f6556749dc5",
       "EV-e5f13798813adfbf",
       "EV-58df7e344df0f7fe",
@@ -98,7 +100,7 @@
       "EN-ddf9916b459b6d77"
     ],
     "firstSeen": "2026-01-01",
-    "lastSeen": "2026-09-12",
+    "lastSeen": "2026-09-21",
     "relationIds": [
       "REL2-d51ced7ee48e317e",
       "REL2-b30737fc4bbfa97d"
@@ -116,6 +118,7 @@
       ],
       "partnerships": [],
       "productsServices": [
+        "EV-952a95bff6b05d4f",
         "EV-5d0f3f6556749dc5",
         "EV-e5f13798813adfbf",
         "EV-58df7e344df0f7fe",
@@ -142,6 +145,34 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-952a95bff6b05d4f",
+        "dataDate": "2026-09-21",
+        "date": "2026-09-20",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "卢伟冰：真正意义上的 AI 手机离走进生活还有不少距离，小米 18 Pro 系列 9 月 23 日发布",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_device",
+            "name": "AI 设备",
+            "entityIds": [
+              "EN-c6a14da2b605499f"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-c6a14da2b605499f",
+          "EN-c608c4787821de1b"
+        ]
+      },
       {
         "id": "EV-5bec025c9fd9ff0d",
         "dataDate": "2026-09-12",
@@ -1072,6 +1103,7 @@
         "EV-bee8896bf7efa594",
         "EV-11e2a4e252d48f94",
         "EV-8077605769c4d4eb",
+        "EV-261be266930904fd",
         "EV-a7568a8f75368e09",
         "EV-d1438a40de56f3ac",
         "EV-81318fb4bcdb926a",
@@ -1108,6 +1140,8 @@
         "EV-2ffc3377977da114",
         "EV-2fd730d0ad452334",
         "EV-fd21441fb6e143c3",
+        "EV-9ec1b90f071eef44",
+        "EV-e496e24751712be7",
         "EV-10a072b1d240e493",
         "EV-dfcefb4e6c51ed26",
         "EV-5ff63c4f72976e83",
@@ -1284,6 +1318,7 @@
         "EV-0cb98302768c2e0a",
         "EV-34929bdd016dc8d6",
         "EV-00834dd71037c7cc",
+        "EV-e1abae9b8a30783c",
         "EV-31a0215da892fc7f",
         "EV-4008b0134e8a2e8b",
         "EV-0f8b9d8ad97f0c21",
@@ -1407,6 +1442,7 @@
         "EN-f0d59425e4c32abb",
         "EN-b5d7671990b8d4a8",
         "EN-f2b9106253663314",
+        "EN-a377bedfcb73be99",
         "EN-a4916084455b1950",
         "EN-9a677023cc72cdd0",
         "EN-b81c8201acfc7639",
@@ -1425,6 +1461,8 @@
         "EN-88e2cce43eeadb36",
         "EN-c890cfa67d1da908",
         "EN-7df09a7717ef2feb",
+        "EN-c5da36ead951ea76",
+        "EN-9c8ae69b84f21a2e",
         "EN-bae152c4560df38c",
         "EN-9416c7914a254a73",
         "EN-6c87e5496f592f3c",
@@ -1474,7 +1512,6 @@
         "EN-593d0361124f348f",
         "EN-e16fc821f34228d1",
         "EN-99ab66e520f71a9b",
-        "EN-9c8ae69b84f21a2e",
         "EN-7d48744f8d0f0657",
         "EN-6fcba5d96a4fadfd",
         "EN-165753d8649b9122",
@@ -1515,6 +1552,7 @@
         "EN-14754db7f1439c88",
         "EN-ce31f92c521b7b08",
         "EN-4a639cb888a15d75",
+        "EN-50e6bb921e16b88b",
         "EN-8a64ef5a6c0d7bc7",
         "EN-9fbf261b62c1d7c0",
         "EN-c3961295b7b3da96",
@@ -1556,7 +1594,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-20"
+      "lastSeen": "2026-09-21"
     },
     {
       "id": "TX-technology-code_generation",
@@ -1592,6 +1630,7 @@
         "EV-e1a4bc40db4a9d8f",
         "EV-2e8512bbfea3a76a",
         "EV-d5f276ad6b2ac9de",
+        "EV-07c226b0ca5cb558",
         "EV-7bffdadf9a6e467e",
         "EV-ba091f86fba39da0",
         "EV-0f6e4d81f3dbbb64",
@@ -1644,6 +1683,7 @@
         "EN-5b3767eb23d5e4ed",
         "EN-3db1f560db626918",
         "EN-047364b9be67f665",
+        "EN-ebefab0353686b57",
         "EN-ea3bd73e2b506e00",
         "EN-0b9ca57f53ba758b",
         "EN-8d4321d936320802",
@@ -1673,7 +1713,7 @@
         "HW-b1302168a9ab18e8"
       ],
       "firstSeen": "2026-03-30",
-      "lastSeen": "2026-09-20"
+      "lastSeen": "2026-09-21"
     },
     {
       "id": "TX-technology-speech_audio",

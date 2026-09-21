@@ -35,6 +35,11 @@ despite a failed outcome.
    Calendar equivalence accepts spaces between a Chinese month number and 月;
    translated months, days and years remain protected. A correct spaced Chinese
    date must not force repeated model calls or source recollection.
+   Chinese growth increments must compare with the final English multiplier:
+   "增长一倍" corresponds to "doubled", whereas "增长两倍" corresponds to
+   "tripled". Keep changed durations and growth-to-level wording distinct.
+   The September 21 regression uses both actual rejected DeepSeek translations;
+   repair the numeric comparator rather than replacing the source or bypassing it.
 
 ## Preserve operational state
 
@@ -169,6 +174,11 @@ release. The shared source-URL gate rejects those containers in both generation
 and integrity validation; resolve their announcement links before admission.
 Rebuild the affected date from immutable intake so rejected containers retain
 Raw evidence and explicit QA reasons rather than appearing as newly dated events.
+
+Dated industry explainers (annual role-of essays and industry-chain outlooks)
+are not product-release announcements merely because their body mentions open
+source, products or prior policy targets. Preserve their Raw evidence in QA;
+an actual named report or product announcement remains a separate eligible source.
 
 After the gated atomic application set merges, verify a successful internal
 Pages deployment of that commit or a proven descendant. A cancelled deployment
