@@ -38,6 +38,20 @@ export function fundingCompanyChinaEvidence(card, acceptedSubjectNames = []) {
   return { matched: false, basis: "" };
 }
 
+export function inheritConfirmedCompanyMarkets(cards) {
+  // Only reviewed canonical identity can carry geography across financing rounds.
+  // Equal display names and unreviewed application IDs are not identity proof.
+  const confirmed = new Map(cards.filter(card => card.company?.canonical_entity_consistent
+    && card.company.entity_id && card.market_scope?.market_region === "CN")
+    .map(card => [card.company.entity_id, card.funding_insight_id]));
+  return cards.map(card => {
+    const source = card.company?.canonical_entity_consistent && confirmed.get(card.company.entity_id);
+    if (!source || card.market_scope?.market_region === "CN") return card;
+    return { ...card, market_scope: { ...card.market_scope, market_region: "CN", china_market_match: true,
+      china_market_basis: [...(card.market_scope?.china_market_basis || []), `confirmed_company_market:${source}`] } };
+  });
+}
+
 export function fundingProductFormDecision(card) {
   const explicitId = String(card.analysis?.product_form_id || "").trim();
   if (explicitId) return { id: explicitId, method: "card_explicit", decision_id: "" };
@@ -563,7 +577,7 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
       };
     });
   const translationRegistry = readPublicTranslationRegistry(projectRoot);
-  const cards = rawCards.map((card) => applyPublicZhTranslations(card, translationRegistry, {
+  const cards = inheritConfirmedCompanyMarkets(rawCards).map((card) => applyPublicZhTranslations(card, translationRegistry, {
     entityType: "funding_card",
   }));
   const latestDate = bundles.map((bundle) => bundle.meta?.date || "").sort().at(-1) || "";

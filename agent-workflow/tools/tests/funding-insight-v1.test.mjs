@@ -72,8 +72,15 @@ import {
   verifiedFundingSourceUrls,
 } from "../build-funding-source-health-v1.mjs";
 import { resolveReviewedCompany } from "../project-funding-taxonomy-to-events-v4-1.mjs";
-import { fundingCompanyChinaEvidence } from "../../../01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs";
+import { fundingCompanyChinaEvidence, inheritConfirmedCompanyMarkets } from "../../../01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs";
 import { classificationEntityAggregationProblems, sourceTitleQuarantinesProjection, fundingCardsByTrigger } from "../assert-taxonomy-consistency-v4-1.mjs";
+
+test("confirmed company market is shared across rounds without guessing from names or unreviewed IDs", () => {
+  const card = (id, entity, confirmed, region) => ({ funding_insight_id:id, company:{name:'Same name',entity_id:entity,canonical_entity_consistent:confirmed}, market_scope:{market_region:region,china_market_basis:[]} });
+  const rows = inheritConfirmedCompanyMarkets([card('old','E1',true,'CN'),card('new','E1',true,'GLOBAL'),card('other','E2',true,'GLOBAL'),card('unreviewed','E1',false,'GLOBAL')]);
+  assert.deepEqual(rows.map(c=>c.market_scope.market_region), ['CN','CN','GLOBAL','GLOBAL']);
+  assert.deepEqual(rows[1].market_scope.china_market_basis,['confirmed_company_market:old']);
+});
 
 test("taxonomy validates the event's own card before a repost's cross-reference", () => {
   const repost = { triggered_by_event_id: "SEPT", source_event_ids: ["JAN", "SEPT"] };

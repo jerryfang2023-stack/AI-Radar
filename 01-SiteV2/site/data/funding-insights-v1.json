@@ -10,7 +10,7 @@
     "latest_financing_date": "2026-09-20",
     "generated_at": "2026-09-21T04:07:01.570Z",
     "card_count": 429,
-    "china_market_card_count": 160,
+    "china_market_card_count": 166,
     "duplicate_rounds_removed": 59,
     "automatic_publication": true,
     "translation_registry": {
@@ -3202,9 +3202,11 @@
         }
       ],
       "market_scope": {
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "china_market_basis": [],
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "china_entity_alias:智身科技"
+        ],
         "source_registry_ids": []
       },
       "product_form": {
@@ -3655,9 +3657,11 @@
         }
       ],
       "market_scope": {
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "china_market_basis": [],
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "china_entity_alias:Moonback"
+        ],
         "source_registry_ids": []
       },
       "product_form": {
@@ -7249,9 +7253,11 @@
         }
       ],
       "market_scope": {
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "china_market_basis": [],
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "confirmed_company_market:FI-ee613463b934eef6"
+        ],
         "source_registry_ids": []
       },
       "product_form": {
@@ -7289,7 +7295,7 @@
       "as_of_date": "2026-09-19",
       "company": {
         "entity_id": "EN-c5146e8a5659ab7e",
-        "name": "深圳地瓜机器人有限公司",
+        "name": "地瓜机器人",
         "full_name": "深圳地瓜机器人有限公司",
         "website": "",
         "summary": "地瓜机器人是专注机器人智能进化的底层基础设施提供商，通过提供高性能计算芯片和软硬协同、端云一体的全链路开发平台，助力机器人开发与规模化落地。公司由地平线机器人事业部于2024年初分拆独立运营。",
@@ -8310,9 +8316,11 @@
         }
       ],
       "market_scope": {
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "china_market_basis": [],
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "china_entity_alias:地瓜机器人"
+        ],
         "source_registry_ids": []
       },
       "product_form": {
@@ -9631,9 +9639,11 @@
         }
       ],
       "market_scope": {
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "china_market_basis": [],
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "china_entity_alias:Anew Labs"
+        ],
         "source_registry_ids": []
       },
       "product_form": {
@@ -21144,9 +21154,11 @@
         }
       ],
       "market_scope": {
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "china_market_basis": [],
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "china_entity_alias:寅成智能"
+        ],
         "source_registry_ids": []
       },
       "product_form": {
@@ -88944,7 +88956,8 @@
         "market_region": "CN",
         "china_market_match": true,
         "china_market_basis": [
-          "event_market"
+          "event_market",
+          "china_entity_alias:寅成智能"
         ],
         "source_registry_ids": [
           "cn-sina-finance"
