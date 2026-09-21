@@ -5,7 +5,7 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(here, "..");
-const defaultInput = path.resolve(projectRoot, "..", "01-SiteV2", "site", "data", "funding-insights-v1.json");
+const defaultInput = path.resolve(projectRoot, "data-input", "reviewed-funding.json");
 const dataDir = path.resolve(projectRoot, "miniprogram", "data");
 const bundledDetailLimit = 0;
 
@@ -198,7 +198,8 @@ function writeModule(file, value, banner) {
 
 export function build(inputFile = defaultInput) {
   const source = JSON.parse(fs.readFileSync(inputFile, "utf8"));
-  const projected = projectFundingData(source);
+  const projected = source.manifest && source.index ? { index: source.index, details: {} } : projectFundingData(source);
+  if (source.manifest && (projected.index.cards.length !== source.manifest.cardCount || projected.index.meta.cardCount !== source.manifest.cardCount || projected.index.meta.latestDate !== source.manifest.latestDate || projected.index.meta.fundingVersion !== source.manifest.fundingVersion || projected.index.cards.some(card => !visibility.isFundingVisible(card)))) throw new Error("Reviewed funding snapshot is invalid");
   const bundledDetails = Object.fromEntries(
     projected.index.cards
       .slice(0, bundledDetailLimit)

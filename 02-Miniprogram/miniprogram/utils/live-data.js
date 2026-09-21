@@ -9,10 +9,10 @@ const PUBLIC_ORIGIN = "https://www.zkdlj.vip";
 const API_ROOT = `${PUBLIC_ORIGIN}/data`;
 const LIVE_ROOT = `${API_ROOT}/mini`;
 const CACHE_KEYS = {
-  fundingManifest: "guanlan_live_funding_manifest_v1",
-  fundingIndex: "guanlan_live_funding_index_v1",
-  fundingEntities: "guanlan_live_funding_entities_v1",
-  fundingDetails: "guanlan_live_funding_detail_cache_v1",
+  fundingManifest: "guanlan_live_funding_manifest_v2",
+  fundingIndex: "guanlan_live_funding_index_v2",
+  fundingEntities: "guanlan_live_funding_entities_v2",
+  fundingDetails: "guanlan_live_funding_detail_cache_v2",
   reportManifest: "guanlan_live_report_manifest_v1",
   reportIndex: "guanlan_live_report_index_v1",
   communityDetails: "guanlan_live_community_detail_cache_v1",
@@ -339,9 +339,11 @@ function writeStorage(key, value) {
 }
 
 function assertFundingManifest(payload) {
+  // Reviewed removals may reduce the count; completeness is checked against the index.
+  if (!Number.isInteger(payload?.cardCount) || payload.cardCount < 0) throw new Error("融资数量无效");
   if (!payload || !text(payload.version) || !/^\d{4}-\d{2}-\d{2}$/.test(text(payload.latestDate))) throw new Error("融资清单无效");
   if (versionIsOlder(payload.fundingVersion, bundledFundingIndex.meta.fundingVersion)) throw new Error("融资清单版本回退");
-  if (payload.latestDate < bundledFundingIndex.meta.latestDate || Number(payload.cardCount) < bundledFundingIndex.meta.cardCount) throw new Error("融资清单数据回退");
+  if (payload.latestDate < bundledFundingIndex.meta.latestDate) throw new Error("融资清单数据回退");
 }
 
 function assertFundingIndex(payload, manifest) {
@@ -364,8 +366,9 @@ function assertReportIndex(payload, manifest) {
 }
 
 function mergeFundingIndex(index, details = {}) {
+  const visibleIds = new Set(index.cards.map(card => card.id));
   const completeDetails = Object.fromEntries(Object.entries(fundingState.details).filter(([id, detail]) => bundledFundingDetailIds.has(id) || detail?.detailComplete));
-  fundingState = { index, details: { ...fundingState.details, ...details, ...completeDetails }, source: "live" };
+  fundingState = { index, details: Object.fromEntries(Object.entries({ ...fundingState.details, ...details, ...completeDetails }).filter(([id, detail]) => visibleIds.has(id) && isFundingVisible(detail))), source: "live" };
   return fundingState;
 }
 
@@ -387,18 +390,23 @@ function refreshFundingData() {
   if (fundingRequest) return fundingRequest;
   fundingRequest = requestJson(`${LIVE_ROOT}/funding-manifest.json?refresh=${Date.now()}`).then((manifest) => {
     assertFundingManifest(manifest);
-    fundingManifest = manifest;
+    const acceptIndex = (index) => {
+      assertFundingIndex(index, manifest);
+      if (fundingManifest?.version !== manifest.version) fundingState = { ...fundingState, details: {} };
+      fundingManifest = manifest;
+      return mergeFundingIndex(index);
+    };
     const cachedManifest = readStorage(CACHE_KEYS.fundingManifest);
     const cachedIndex = readStorage(CACHE_KEYS.fundingIndex);
     if (cachedManifest?.version === manifest.version && cachedIndex) {
       assertFundingIndex(cachedIndex, manifest);
-      return mergeFundingIndex(cachedIndex);
+      return acceptIndex(cachedIndex);
     }
     return requestJson(`${PUBLIC_ORIGIN}${manifest.indexPath}?v=${encodeURIComponent(manifest.version)}`).then((index) => {
       assertFundingIndex(index, manifest);
       writeStorage(CACHE_KEYS.fundingManifest, manifest);
       writeStorage(CACHE_KEYS.fundingIndex, index);
-      return mergeFundingIndex(index);
+      return acceptIndex(index);
     });
   }).then((value) => {
     fundingState = { ...value, refreshFailed: false };
@@ -432,6 +440,8 @@ function refreshFundingEntities() {
 }
 
 function getFundingDetail(id) {
+  if (!fundingState.index.cards.some(card => card.id === id)) return Promise.resolve(null);
+  const version = fundingManifest?.version;
   const fallback = fundingState.details[id] || null;
   if (!fundingManifest?.detailBasePath) return Promise.resolve(fallback);
   const cached = readDetailCache(CACHE_KEYS.fundingDetails, fundingManifest.version, id);
@@ -440,11 +450,12 @@ function getFundingDetail(id) {
     return Promise.resolve(cached);
   }
   return requestJson(`${PUBLIC_ORIGIN}${fundingManifest.detailBasePath}/${encodeURIComponent(id)}.json?v=${encodeURIComponent(fundingManifest.version)}`).then((detail) => {
-    if (detail?.id !== id || !detail.detailComplete) throw new Error("融资详情无效");
+    if (version !== fundingManifest?.version || !fundingState.index.cards.some(card => card.id === id)) return null;
+    if (detail?.id !== id || !isFundingVisible(detail) || !detail.detailComplete) throw new Error("融资详情无效");
     fundingState.details[id] = detail;
     writeDetailCache(CACHE_KEYS.fundingDetails, fundingManifest.version, id, detail, 16);
     return detail;
-  }).catch(() => fallback);
+  }).catch(() => version === fundingManifest?.version && fundingState.index.cards.some(card => card.id === id) ? fallback : null);
 }
 
 function getFundingDetails(ids) {

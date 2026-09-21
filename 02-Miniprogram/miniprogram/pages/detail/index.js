@@ -1,7 +1,7 @@
 const { isFundingVisible } = require("../../utils/funding-visibility.js");
 const { isWatched, toggleWatch, isCompared, toggleCompare } = require("../../utils/storage.js");
 const { recordBrowse } = require("../../utils/member.js");
-const { getFundingData } = require("../../utils/live-data.js");
+const { getFundingData, refreshFundingData } = require("../../utils/live-data.js");
 const { companyEntityKey, investorEntityKey, personEntityKey } = require("../../utils/entity-library.js");
 const { getAccessState, openMembership } = require("../../utils/access.js");
 const { resolveDetailAccess, contentLockReason, requestLockedContent } = require("../../utils/metered-access.js");
@@ -58,7 +58,8 @@ Page({
   renderCard(card) {
     if (!isFundingVisible(card)) {
       this.setData({ card: null });
-      wx.showToast({ title: "该类融资暂不展示", icon: "none" });
+      refreshFundingData();
+      wx.switchTab({ url: "/pages/terminal/index", success: () => wx.showToast({ title: "该融资已下架", icon: "none" }) });
       return;
     }
     this.recordView(card);

@@ -26,10 +26,10 @@ Previous immutable uploaded release: 0.9.5 adds a global native-share baseline, 
 
 ## Boundaries
 
-- Source truth remains `../01-SiteV2/site/data/funding-insights-v1.json`.
+- Canonical source remains `../01-SiteV2/site/data/funding-insights-v1.json`. Mini offline funding input is the reviewed Portal public snapshot `data-input/reviewed-funding.json`; refresh it with `node scripts/sync-reviewed-funding.mjs` before release so removed records cannot reappear from the raw canonical bundle.
 - Weekly/monthly report source truth remains `../01-SiteV2/content/12-applications/industry-reports/`.
 - Run `npm run build:data` after the source projection changes. Do not hand-edit generated files under `miniprogram/data/`.
-- Bundled projections are the offline fallback. Runtime funding and report refreshes may read only the gated public contracts under `https://www.zkdlj.vip/data/`; reject date/version/count regressions and retain the fallback on any request or validation failure.
+- Bundled projections are the offline fallback. Runtime funding and report refreshes may read only the gated public contracts under `https://www.zkdlj.vip/data/`; reject date/version regressions and manifest/index count mismatches; reviewed removals may reduce counts and retain the fallback on any request or validation failure.
 - Public UI may expose application-level funding facts, analysis, and source links only. It must not expose Data Center/Application Center navigation, operational fields, model provenance, internal gates, or private evidence locators.
 - Missing values remain explicit. Do not infer undisclosed amounts, investors, customers, regions, or outcomes.
 - The project may use `touristappid`, a WeChat test AppID, or the production AppID. Never store AppSecret or other account credentials in the repository.

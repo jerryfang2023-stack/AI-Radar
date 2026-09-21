@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+const origin = 'https://www.zkdlj.vip';
+const read = async url => { const response = await fetch(url); if (!response.ok) throw new Error(`HTTP ${response.status}`); return response.json(); };
+const manifest = await read(`${origin}/data/mini/funding-manifest.json?refresh=${Date.now()}`);
+const index = await read(`${origin}${manifest.indexPath}?v=${encodeURIComponent(manifest.version)}`);
+if (index.cards.length !== manifest.cardCount || index.meta.cardCount !== manifest.cardCount || index.meta.fundingVersion !== manifest.fundingVersion || index.meta.latestDate !== manifest.latestDate) throw new Error('Published index does not match manifest');
+const destination = fileURLToPath(new URL('../data-input/reviewed-funding.json', import.meta.url));
+fs.mkdirSync(path.dirname(destination), {recursive:true});
+fs.writeFileSync(destination, JSON.stringify({source:origin + manifest.indexPath, manifest, index}));
+console.log(JSON.stringify({version:manifest.version, cards:index.cards.length, china:index.meta.chinaMarketCardCount}));
