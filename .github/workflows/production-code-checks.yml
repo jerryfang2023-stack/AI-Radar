@@ -55,4 +55,6 @@ jobs:
       - run: npm run test:skill-ops
       - run: node --test agent-workflow/tools/tests/data-lake-v4-convergence.test.mjs
       - run: npm run test:ops-v2
+      # Validate the committed OPS projection before merge, not only at Pages deployment.
+      - run: npm run test:ops-unified
       - run: npm run test:funding-insights

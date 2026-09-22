@@ -43,6 +43,11 @@ despite a failed outcome.
 
 ## Preserve operational state
 
+After rebuilding collection telemetry, rebuild the OPS console projection before
+staging. Its embedded telemetry metadata must exactly match the accepted telemetry
+file, including the generation timestamp. `test:ops-unified` runs in both PR CI
+and Pages deployment; never relax this equality to publish a stale OPS snapshot.
+
 Funding round recovery prioritizes the referenced, accepted funding Claim's
 financing sentence over the event object, which may describe a product. For
 example, an infrastructure product description must not replace an explicitly
