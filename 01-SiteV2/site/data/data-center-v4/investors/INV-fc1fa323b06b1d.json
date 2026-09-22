@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-21T04:13:14.914Z",
-    "latestDataDate": "2026-09-21",
-    "currentDate": "2026-09-21",
-    "eventCount": 3463,
+    "generatedAt": "2026-09-22T03:45:38.642Z",
+    "latestDataDate": "2026-09-22",
+    "currentDate": "2026-09-22",
+    "eventCount": 3493,
     "quarantinedEventCount": 37,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -60,7 +60,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 4,
-    "historical_or_ambiguous_count": 2,
+    "historical_or_ambiguous_count": 3,
     "portfolio_company_count": 4,
     "market_regions": [
       "CN"
@@ -68,9 +68,9 @@
     "china_market_activity_count": 4,
     "china_market_company_count": 4,
     "first_disclosed_at": "2026-01-12",
-    "latest_disclosed_at": "2026-09-13",
+    "latest_disclosed_at": "2026-09-21",
     "role_counts": {
-      "historical_or_ambiguous": 2,
+      "historical_or_ambiguous": 3,
       "lead": 1,
       "participant": 3
     },
@@ -102,6 +102,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-62898c29ec6b958d",
+        "funding_insight_id": "FI-1c45f6b3bea32aad",
+        "event_ids": [
+          "EV-fbb4b961191efa55"
+        ],
+        "company_entity_id": "EN-e7d56af70143fcd7",
+        "company_canonical_entity_id": "",
+        "company_name": "数巅智能",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-09-21",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "pre-A轮老股东持续加码",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-9ebda1057c2926b3",
+            "source_url": "https://industry.caijing.com.cn/20260707/5169223.shtml",
+            "source_title": "迎驾贡酒投资数巅智能，后者提供企业级Data Agent解决方案_食饮_产经频道首页_财经网 - CAIJING.COM.CN",
+            "source_content_hash": "6e9cfd36fd6943c7",
+            "quote": "老股东君联资本等也持续加码。",
+            "quote_hash": "a05d9ce54923c229860f924a516aa8582eba626684335303691ad8d96c1e9346"
+          }
+        ]
+      },
       {
         "activity_id": "IA-c5241f9002656c92",
         "funding_insight_id": "FI-63374eeafcdd0df6",
@@ -349,6 +389,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-9ebda1057c2926b3",
+        "source_url": "https://industry.caijing.com.cn/20260707/5169223.shtml",
+        "source_title": "迎驾贡酒投资数巅智能，后者提供企业级Data Agent解决方案_食饮_产经频道首页_财经网 - CAIJING.COM.CN",
+        "source_content_hash": "6e9cfd36fd6943c7",
+        "quote": "老股东君联资本等也持续加码。",
+        "quote_hash": "a05d9ce54923c229860f924a516aa8582eba626684335303691ad8d96c1e9346"
+      },
+      {
         "source_id": "FISRC-e930be8aa5120588",
         "source_url": "https://www.jiemian.com/article/12128930.html",
         "source_title": "刚刚，智谱AI完成融资30亿|界面新闻 · JMedia",
@@ -399,7 +447,7 @@
     ],
     "translations": {
       "zh-CN": {
-        "activities[5].role": {
+        "activities[6].role": {
           "text": "Pre-A++轮领投",
           "source_hash": "c17edb52e19a80f769b3d7eaff613c94c5bc182eadef3ef691dfcf2d817465cd",
           "provider": "deepseek",

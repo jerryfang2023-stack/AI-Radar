@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-22T03:45:38.642Z",
+    "latestDataDate": "2026-09-22",
+    "currentDate": "2026-09-22",
+    "eventCount": 3493,
+    "quarantinedEventCount": 37,
+    "quarantinedEventIds": [
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-cab18aa68c8ae551",
+      "EV-88a9fd0b8f602e16",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "entity": {
+    "id": "EN-6089854c94ca5454",
+    "name": "London",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-eadf57952ad76a26"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-21",
+    "lastSeen": "2026-09-22",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-eadf57952ad76a26"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-eadf57952ad76a26",
+        "dataDate": "2026-09-22",
+        "date": "2026-09-21",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "FintechOS 获得 2800 万美元股权与债务组合融资",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "industry_applications",
+            "name": "行业应用",
+            "entityIds": [
+              "EN-5dd3b777303686d3"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-3ca7f111c1eb5b04",
+            "fundingInsightId": "FI-6347e445cdc5bdf5"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-5dd3b777303686d3"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-698c9ae00d58a5af",
+            "fundingInsightId": "FI-6347e445cdc5bdf5"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-5dd3b777303686d3"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-e9b7e3e7cd7b172a",
+            "fundingInsightId": "FI-6347e445cdc5bdf5"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-5dd3b777303686d3"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-246dfc28b8e0267b",
+            "fundingInsightId": "FI-6347e445cdc5bdf5"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-5dd3b777303686d3"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-5dd3b777303686d3"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-0e1f3365240c88f9",
+            "fundingInsightId": "FI-6347e445cdc5bdf5"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-5dd3b777303686d3"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-d5426e268d24ff45",
+            "fundingInsightId": "FI-6347e445cdc5bdf5"
+          }
+        ],
+        "entityIds": [
+          "EN-5dd3b777303686d3",
+          "EN-6089854c94ca5454"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-21T04:13:14.914Z",
-    "latestDataDate": "2026-09-21",
-    "currentDate": "2026-09-21",
-    "eventCount": 3463,
+    "generatedAt": "2026-09-22T03:45:38.642Z",
+    "latestDataDate": "2026-09-22",
+    "currentDate": "2026-09-22",
+    "eventCount": 3493,
     "quarantinedEventCount": 37,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -63,17 +63,17 @@
     "historical_or_ambiguous_count": 0,
     "portfolio_company_count": 1,
     "market_regions": [
-      "GLOBAL"
+      "CN"
     ],
-    "china_market_activity_count": 0,
-    "china_market_company_count": 0,
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
     "first_disclosed_at": "2026-09-16",
     "latest_disclosed_at": "2026-09-16",
     "role_counts": {
       "participant": 1
     },
     "round_codes": [
-      "first_external"
+      "other"
     ],
     "portfolio_companies": [
       {
@@ -84,9 +84,10 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-ffdd69a72e6cfca1",
-        "funding_insight_id": "FI-7ed03b9f49b8e497",
+        "activity_id": "IA-d80505b6ea5c2f92",
+        "funding_insight_id": "FI-e81dafc2defecb80",
         "event_ids": [
+          "EV-4bc690025cbda146",
           "EV-1043d78cc040ab30",
           "EV-c96705c69e11c520",
           "EV-91459f0d9446f471"
@@ -94,9 +95,9 @@
         "company_entity_id": "FICO-anew-labs",
         "company_canonical_entity_id": "",
         "company_name": "Anew Labs（新生实验室）",
-        "round": "首次外部融资",
-        "round_code": "first_external",
-        "round_original": "首次外部融资",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "首轮独立融资",
         "amount_original": "2.9亿美元",
         "amount_normalized": {
           "currency": "USD",
@@ -108,8 +109,8 @@
           "display_zh": "2.9 亿美元"
         },
         "announced_at": "2026-09-16",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
+        "market_region": "CN",
+        "china_market_match": true,
         "disclosure_status": "disclosed",
         "scope": "current_round",
         "role": "本轮参投",

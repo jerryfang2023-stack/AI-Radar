@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-21T04:13:14.914Z",
-    "latestDataDate": "2026-09-21",
-    "currentDate": "2026-09-21",
-    "eventCount": 3463,
+    "generatedAt": "2026-09-22T03:45:38.642Z",
+    "latestDataDate": "2026-09-22",
+    "currentDate": "2026-09-22",
+    "eventCount": 3493,
     "quarantinedEventCount": 37,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -63,11 +63,10 @@
     "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 6,
     "market_regions": [
-      "CN",
-      "GLOBAL"
+      "CN"
     ],
-    "china_market_activity_count": 4,
-    "china_market_company_count": 4,
+    "china_market_activity_count": 6,
+    "china_market_company_count": 6,
     "first_disclosed_at": "2026-02-24",
     "latest_disclosed_at": "2026-09-17",
     "role_counts": {
@@ -82,6 +81,11 @@
       "series_c"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-c5146e8a5659ab7e",
+        "canonical_entity_id": "",
+        "name": "地瓜机器人"
+      },
       {
         "entity_id": "EN-1032f7a4df33f629",
         "canonical_entity_id": "EN-1032f7a4df33f629",
@@ -98,11 +102,6 @@
         "name": "深度智控"
       },
       {
-        "entity_id": "EN-c5146e8a5659ab7e",
-        "canonical_entity_id": "",
-        "name": "深圳地瓜机器人有限公司"
-      },
-      {
         "entity_id": "EN-37ad0de3969166fa",
         "canonical_entity_id": "EN-37ad0de3969166fa",
         "name": "西湖心辰"
@@ -114,6 +113,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-724b5c27baf96a01",
+        "funding_insight_id": "FI-e9d633fa8c039673",
+        "event_ids": [
+          "EV-412f7ce21693dc13"
+        ],
+        "company_entity_id": "EN-c5146e8a5659ab7e",
+        "company_canonical_entity_id": "",
+        "company_name": "地瓜机器人",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "4亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 400000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4 亿美元"
+        },
+        "announced_at": "2026-09-17",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-517ef1b31eac6dd3",
+            "source_url": "https://finance.sina.com.cn/roll/2026-09-17/doc-iniscekc4127167.shtml",
+            "source_title": "地瓜机器人完成4亿美元C轮融资 软硬一体基础设施支撑具身智能产业落地_新浪财经_新浪网",
+            "source_content_hash": "ffc4d665dce6209d",
+            "quote": "凯辉基金、华美国际投资集团、广发信德、超越摩尔、启航投资芯创二期基金等机构联合跟投",
+            "quote_hash": "7bdc9a76799f80a936bb33aab97e75cdc6b2fb6eefbdb8fa5fd4e6dd135c0809"
+          }
+        ]
+      },
       {
         "activity_id": "IA-c13791579c553f77",
         "funding_insight_id": "FI-16674c19e6f87ab9",
@@ -138,8 +177,8 @@
           "display_zh": "超过 1 亿元"
         },
         "announced_at": "2026-09-17",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
+        "market_region": "CN",
+        "china_market_match": true,
         "disclosure_status": "disclosed",
         "scope": "current_round",
         "role": "本轮参投",
@@ -152,46 +191,6 @@
             "source_content_hash": "7ba0fa9425a10e3a",
             "quote": "最新的B轮融资既有 深产投、广发信德 等新投资方加入，也有老股东 涌铧投资 的持续加码。",
             "quote_hash": "f3dd51ed9e56fe1d668349c85a77e94fb676db082981495bc533a6d767c27b28"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-f98ad0428cef8bfd",
-        "funding_insight_id": "FI-e9d633fa8c039673",
-        "event_ids": [
-          "EV-412f7ce21693dc13"
-        ],
-        "company_entity_id": "EN-c5146e8a5659ab7e",
-        "company_canonical_entity_id": "",
-        "company_name": "深圳地瓜机器人有限公司",
-        "round": "C轮",
-        "round_code": "series_c",
-        "round_original": "C轮",
-        "amount_original": "4亿美元",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 400000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "4 亿美元"
-        },
-        "announced_at": "2026-09-17",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
-        "evidence": [
-          {
-            "source_id": "FISRC-517ef1b31eac6dd3",
-            "source_url": "https://finance.sina.com.cn/roll/2026-09-17/doc-iniscekc4127167.shtml",
-            "source_title": "地瓜机器人完成4亿美元C轮融资 软硬一体基础设施支撑具身智能产业落地_新浪财经_新浪网",
-            "source_content_hash": "ffc4d665dce6209d",
-            "quote": "凯辉基金、华美国际投资集团、广发信德、超越摩尔、启航投资芯创二期基金等机构联合跟投",
-            "quote_hash": "7bdc9a76799f80a936bb33aab97e75cdc6b2fb6eefbdb8fa5fd4e6dd135c0809"
           }
         ]
       },
@@ -441,20 +440,20 @@
     ],
     "evidence": [
       {
-        "source_id": "FISRC-887f1542c828b426",
-        "source_url": "https://news.pedaily.cn/202609/569177.shtml",
-        "source_title": "设序科技一连融资6轮，要做「工业界Anthropic」",
-        "source_content_hash": "7ba0fa9425a10e3a",
-        "quote": "最新的B轮融资既有 深产投、广发信德 等新投资方加入，也有老股东 涌铧投资 的持续加码。",
-        "quote_hash": "f3dd51ed9e56fe1d668349c85a77e94fb676db082981495bc533a6d767c27b28"
-      },
-      {
         "source_id": "FISRC-517ef1b31eac6dd3",
         "source_url": "https://finance.sina.com.cn/roll/2026-09-17/doc-iniscekc4127167.shtml",
         "source_title": "地瓜机器人完成4亿美元C轮融资 软硬一体基础设施支撑具身智能产业落地_新浪财经_新浪网",
         "source_content_hash": "ffc4d665dce6209d",
         "quote": "凯辉基金、华美国际投资集团、广发信德、超越摩尔、启航投资芯创二期基金等机构联合跟投",
         "quote_hash": "7bdc9a76799f80a936bb33aab97e75cdc6b2fb6eefbdb8fa5fd4e6dd135c0809"
+      },
+      {
+        "source_id": "FISRC-887f1542c828b426",
+        "source_url": "https://news.pedaily.cn/202609/569177.shtml",
+        "source_title": "设序科技一连融资6轮，要做「工业界Anthropic」",
+        "source_content_hash": "7ba0fa9425a10e3a",
+        "quote": "最新的B轮融资既有 深产投、广发信德 等新投资方加入，也有老股东 涌铧投资 的持续加码。",
+        "quote_hash": "f3dd51ed9e56fe1d668349c85a77e94fb676db082981495bc533a6d767c27b28"
       },
       {
         "source_id": "FISRC-9cb02e3c79eee3a9",

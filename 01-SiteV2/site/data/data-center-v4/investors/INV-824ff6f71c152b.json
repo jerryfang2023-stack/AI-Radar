@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-21T04:13:14.914Z",
-    "latestDataDate": "2026-09-21",
-    "currentDate": "2026-09-21",
-    "eventCount": 3463,
+    "generatedAt": "2026-09-22T03:45:38.642Z",
+    "latestDataDate": "2026-09-22",
+    "currentDate": "2026-09-22",
+    "eventCount": 3493,
     "quarantinedEventCount": 37,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -63,11 +63,10 @@
     "historical_or_ambiguous_count": 5,
     "portfolio_company_count": 2,
     "market_regions": [
-      "CN",
-      "GLOBAL"
+      "CN"
     ],
-    "china_market_activity_count": 0,
-    "china_market_company_count": 0,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-01-26",
     "latest_disclosed_at": "2026-09-17",
     "role_counts": {
@@ -75,14 +74,14 @@
       "participant": 2
     },
     "round_codes": [
-      "first_external",
+      "other",
       "series_c"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-c5146e8a5659ab7e",
         "canonical_entity_id": "",
-        "name": "深圳地瓜机器人有限公司"
+        "name": "地瓜机器人"
       },
       {
         "entity_id": "FICO-anew-labs",
@@ -92,14 +91,14 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-ba9234f37d99508b",
+        "activity_id": "IA-9d5f6dba5858918d",
         "funding_insight_id": "FI-e9d633fa8c039673",
         "event_ids": [
           "EV-412f7ce21693dc13"
         ],
         "company_entity_id": "EN-c5146e8a5659ab7e",
         "company_canonical_entity_id": "",
-        "company_name": "深圳地瓜机器人有限公司",
+        "company_name": "地瓜机器人",
         "round": "C轮",
         "round_code": "series_c",
         "round_original": "C轮",
@@ -114,8 +113,8 @@
           "display_zh": "4 亿美元"
         },
         "announced_at": "2026-09-17",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
+        "market_region": "CN",
+        "china_market_match": true,
         "disclosure_status": "disclosed",
         "scope": "current_round",
         "role": "本轮跟投（原有投资机构继续追加投资）",
@@ -132,9 +131,10 @@
         ]
       },
       {
-        "activity_id": "IA-3f82e752f8d45723",
-        "funding_insight_id": "FI-7ed03b9f49b8e497",
+        "activity_id": "IA-6eabe6d2be7ed75a",
+        "funding_insight_id": "FI-e81dafc2defecb80",
         "event_ids": [
+          "EV-4bc690025cbda146",
           "EV-1043d78cc040ab30",
           "EV-c96705c69e11c520",
           "EV-91459f0d9446f471"
@@ -142,9 +142,9 @@
         "company_entity_id": "FICO-anew-labs",
         "company_canonical_entity_id": "",
         "company_name": "Anew Labs（新生实验室）",
-        "round": "首次外部融资",
-        "round_code": "first_external",
-        "round_original": "首次外部融资",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "首轮独立融资",
         "amount_original": "2.9亿美元",
         "amount_normalized": {
           "currency": "USD",
@@ -156,20 +156,20 @@
           "display_zh": "2.9 亿美元"
         },
         "announced_at": "2026-09-16",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
+        "market_region": "CN",
+        "china_market_match": true,
         "disclosure_status": "disclosed",
         "scope": "current_round",
         "role": "本轮参投",
         "role_code": "participant",
         "evidence": [
           {
-            "source_id": "FISRC-a429bfa589657e6f",
-            "source_url": "http://c.m.163.com/news/a/L702P9D405198CJN.html",
-            "source_title": "字节跳动拆分AI制药公司新生探途 拿下2.9亿美元天使轮融资",
-            "source_content_hash": "782fe6da734543a3",
-            "quote": "投资方为红杉中国、IDG资本、高瓴创投、五源资本、高榕创投、春华创投及包括中国生物制药在内的多家医药产业集团。",
-            "quote_hash": "a69fa25c057f3d12ac7884cbc859b32922cccc8d933e1b6240e48e03c1cce459"
+            "source_id": "FISRC-a2c9854f5230d423",
+            "source_url": "https://www.chinaventure.com.cn/news/111-20260921-393379.html",
+            "source_title": "张一鸣，又创造了一个100亿 首轮融资20亿元。 投中网 · 21小时前",
+            "source_content_hash": "2bb10add5e428ec5",
+            "quote": "涵盖了红杉中国、IDG资本、高瓴创投、五源资本、高榕创投、春华创投等头部投资机构",
+            "quote_hash": "b39561dd1ac0be7734491e6d8c5951e687ceff86f0fa6dbf11feced93e7c4b87"
           }
         ]
       },
@@ -385,12 +385,12 @@
         "quote_hash": "2e695e67eb318bb202681426003226fdafc284ca308890dae2f0111b03fe308e"
       },
       {
-        "source_id": "FISRC-a429bfa589657e6f",
-        "source_url": "http://c.m.163.com/news/a/L702P9D405198CJN.html",
-        "source_title": "字节跳动拆分AI制药公司新生探途 拿下2.9亿美元天使轮融资",
-        "source_content_hash": "782fe6da734543a3",
-        "quote": "投资方为红杉中国、IDG资本、高瓴创投、五源资本、高榕创投、春华创投及包括中国生物制药在内的多家医药产业集团。",
-        "quote_hash": "a69fa25c057f3d12ac7884cbc859b32922cccc8d933e1b6240e48e03c1cce459"
+        "source_id": "FISRC-a2c9854f5230d423",
+        "source_url": "https://www.chinaventure.com.cn/news/111-20260921-393379.html",
+        "source_title": "张一鸣，又创造了一个100亿 首轮融资20亿元。 投中网 · 21小时前",
+        "source_content_hash": "2bb10add5e428ec5",
+        "quote": "涵盖了红杉中国、IDG资本、高瓴创投、五源资本、高榕创投、春华创投等头部投资机构",
+        "quote_hash": "b39561dd1ac0be7734491e6d8c5951e687ceff86f0fa6dbf11feced93e7c4b87"
       },
       {
         "source_id": "FISRC-773362f4e07cd598",

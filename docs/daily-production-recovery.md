@@ -48,6 +48,12 @@ financing sentence over the event object, which may describe a product. For
 example, an infrastructure product description must not replace an explicitly
 disclosed Series C round. Preserve historical-round disambiguation and immutable
 source quotes; rebuild reused cards through the canonical evidence normalizer.
+Prospective Chinese headlines such as “又要融资” or “寻求融资” do not establish
+completion. The shared transaction-status guard applies both to factual status
+and to persisted/recovered funding cards. Keep the original evidence and partial
+event, but exclude financing talks (including a potential valuation) from completed
+funding publication. The September 22 regression covers this boundary without
+letting a future round mentioned in a completed round's background suppress it.
 
 Cross-day review must distinguish new reporting from a new financing. On
 2026-09-19, the accepted CLS original explicitly identifies 新生探途 as Anew Labs

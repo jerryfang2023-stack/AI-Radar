@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-21T04:13:14.914Z",
-    "latestDataDate": "2026-09-21",
-    "currentDate": "2026-09-21",
-    "eventCount": 3463,
+    "generatedAt": "2026-09-22T03:45:38.642Z",
+    "latestDataDate": "2026-09-22",
+    "currentDate": "2026-09-22",
+    "eventCount": 3493,
     "quarantinedEventCount": 37,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -61,13 +61,14 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-30ba1a24f74ccc6d"
+      "EV-30ba1a24f74ccc6d",
+      "EV-724c61ecf50714cb"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-18",
-    "lastSeen": "2026-07-19",
+    "lastSeen": "2026-09-22",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -78,9 +79,40 @@
       "productsServices": [],
       "hardware": [],
       "organizationPeople": [],
-      "other": []
+      "other": [
+        "EV-724c61ecf50714cb"
+      ]
     },
     "timeline": [
+      {
+        "id": "EV-724c61ecf50714cb",
+        "dataDate": "2026-09-22",
+        "date": "2026-09-21",
+        "eventType": "policy_regulation",
+        "eventTypeLabel": "政策监管",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "美中同意在特朗普-习近平峰会前建立AI对话与安全机制",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "aerospace_defense",
+            "name": "航空航天与国防",
+            "entityIds": [
+              "EN-79adb2a2fce5c6ba"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-857bb6b2dbebae80",
+          "EN-79adb2a2fce5c6ba",
+          "EN-50c0152c2952082a"
+        ]
+      },
       {
         "id": "EV-30ba1a24f74ccc6d",
         "dataDate": "2026-07-19",

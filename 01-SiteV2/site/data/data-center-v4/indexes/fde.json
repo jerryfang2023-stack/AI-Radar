@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-21T04:13:14.914Z",
-    "latestDataDate": "2026-09-21",
-    "currentDate": "2026-09-21",
-    "eventCount": 3463,
+    "generatedAt": "2026-09-22T03:45:38.642Z",
+    "latestDataDate": "2026-09-22",
+    "currentDate": "2026-09-22",
+    "eventCount": 3493,
     "quarantinedEventCount": 37,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -51,6 +51,95 @@
     ]
   },
   "fde": [
+    {
+      "id": "FDE-5ca4d6b1a0aff93c",
+      "eventId": "EV-ee40b65cc5f85c36",
+      "dataDate": "2026-09-22",
+      "date": "2026-09-22",
+      "title": "NVIDIA Halos：为何规模化部署物理 AI 需要全栈安全",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "物理 AI 需要全栈安全",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Physical AI is moving rapidly from research to large-scale deployment. By 2035, ABI Research projects an installed base of 49 million level 3-5 autonomous vehicles (AVs) , while Omdia estimates that roughly 60 million industrial robots will be deployed between 2026 and 2035 . As these machines enter roads, factories, warehouses and other environments shared with people, safety must scale with them.",
+        "Physical AI safety means proving that AI-driven machines — AVs , humanoid robots , industrial robots and more — behave safely when their decisions turn into physical action. That requires safety across the hardware, software, AI, operating environment and deployment lifecycle — not a one-time check before deployment."
+      ],
+      "outcomes": [],
+      "metrics": [
+        "49 million",
+        "60 million"
+      ],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://blogs.nvidia.com/blog/physical-ai-halos-safety",
+      "entityIds": [
+        "EN-e5b6577f9bec4e61",
+        "EN-8d4321d936320802"
+      ]
+    },
     {
       "id": "FDE-660a50bf2d274f18",
       "eventId": "EV-1d0bca303142cba9",
@@ -10923,45 +11012,48 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-09-21",
-      "funnel_id": "LF-92e11a4a10138d53",
+      "data_date": "2026-09-22",
+      "funnel_id": "LF-683fb21388ae25a0",
       "lens": "fde",
-      "date": "2026-09-21",
+      "date": "2026-09-22",
       "monitoring_paths": [
         "fde_customer_case",
         "fde_earnings_disclosure",
         "fde_procurement_contract",
         "fde_production_rollout"
       ],
-      "raw_documents": 109,
-      "original_sources": 93,
-      "valid_claims": 21,
+      "raw_documents": 114,
+      "original_sources": 96,
+      "valid_claims": 31,
       "observations": 0,
-      "canonical_events": 7,
+      "canonical_events": 10,
       "blocker_counts": {
-        "homepage_requires_original_event_source": 7,
-        "source_outside_daily_window": 55,
-        "directory_page_not_event_source": 2,
-        "event_entity_unresolved": 1,
+        "no_source_bounded_event": 10,
+        "no_source_bounded_claim": 2,
+        "event_not_ai_relevant": 4,
+        "repository_page_requires_release_source": 1,
+        "homepage_requires_original_event_source": 6,
+        "directory_page_not_event_source": 1,
+        "source_outside_daily_window": 47,
         "documentation_index_not_event_source": 1,
-        "no_source_bounded_event": 9,
-        "repository_page_requires_release_source": 2,
-        "event_not_ai_relevant": 1,
-        "source_published_after_data_date": 2,
+        "non_event_or_index_title": 4,
+        "event_entity_unresolved": 3,
         "industry_overview_not_event_source": 1,
+        "tag_or_topic_index_not_event_source": 1,
+        "opinion_without_source_bounded_event": 1,
         "question_headline_not_event_specific": 1,
-        "non_event_or_index_title": 2,
-        "raw_source_quality_block": 15,
+        "rumor_requires_primary_confirmation": 1,
+        "raw_source_quality_block": 17,
         "raw_document_not_auditable": 1,
         "domestic_publication_date_unverified": 1
       },
       "rates": {
-        "original_source_rate": 0.8532110091743119,
-        "valid_claim_rate": 0.1926605504587156,
+        "original_source_rate": 0.8421052631578947,
+        "valid_claim_rate": 0.2719298245614035,
         "observation_rate": 0,
-        "event_conversion_rate": 0.3333333333333333
+        "event_conversion_rate": 0.3225806451612903
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-21/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-22/monitoring-funnel.json"
     }
   ]
 }

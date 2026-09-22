@@ -566,6 +566,17 @@ test("scrubbed financing stays withdrawn in the factual bundle", () => {
   assert.equal(eventStatus("Acme AI raises $10 million for its data-scrubbing product", "", "funding"), "completed");
 });
 
+test("Chinese prospective funding headline remains incomplete despite the word financing", () => {
+  const bundle = buildBundle([
+    entry("prospective-funding", "OpenAI又要融资了：1.2万亿美元估值，谁还敢接下一棒？",
+      "OpenAI正在就新一轮私募融资与投资者展开初步接触，潜在估值或达1.2万亿美元以上。")
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+  assert.equal(bundle.canonical_events[0].event_status, "in_progress");
+  assert.equal(bundle.canonical_events[0].publication_status, "partial");
+  assert.ok(bundle.claims.length > 0);
+  assert.equal(eventStatus("Acme AI完成新一轮融资", "公司计划明年融资。", "funding"), "completed");
+});
+
 test("pending funding is represented as disputed and never projected", () => {
   const bundle = buildBundle([
     entry("pending-funding", "Acme AI in talks to raise $200 million Series B", "Acme AI is in talks to raise about $200 million at a $2 billion valuation. Talks are ongoing and the deal may not be final.")

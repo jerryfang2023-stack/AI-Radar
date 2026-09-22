@@ -1,24 +1,24 @@
 {
   "meta": {
-    "generatedAt": "2026-09-21T00:32:18.135Z",
+    "generatedAt": "2026-09-22T00:37:33.090Z",
     "sourceFile": "01-SiteV2/site/data/follow-builders-daily.json",
-    "sourceCommits": 156,
-    "sourceSnapshots": 157,
+    "sourceCommits": 157,
+    "sourceSnapshots": 158,
     "earliestDate": "2026-06-01",
-    "latestDate": "2026-09-20",
+    "latestDate": "2026-09-21",
     "dedupeKey": "original_url",
     "sourcePolicy": "Historical records are reconstructed from committed morning-lane snapshots and retain their original URL and source snapshot.",
     "translationPolicy": "Only complete approved Chinese translations with matching source hashes are published."
   },
   "stats": {
-    "discovered": 2865,
-    "aiRelevant": 1589,
-    "alreadyApproved": 775,
+    "discovered": 2882,
+    "aiRelevant": 1596,
+    "alreadyApproved": 779,
     "translatedThisRun": 0,
-    "pendingTranslation": 814,
-    "published": 1372,
+    "pendingTranslation": 817,
+    "published": 1376,
     "pendingReasons": {
-      "translation_gate_failed": 155,
+      "translation_gate_failed": 158,
       "mymemory": 634,
       "static_blog_title": 14,
       "none": 4,
@@ -26,6 +26,182 @@
     }
   },
   "remarks": [
+    {
+      "id": "https://tldr.tech/ai/2026-09-21",
+      "source": "blog",
+      "name": "TLDR AI Newsletter",
+      "handle": "tldr.tech",
+      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
+      "text": "Muse connectors 🤖, Meta SAM 3.1 🖼️, Gemini hacks companies 🔓",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "Muse连接器 🤖，Meta SAM 3.1 🖼️，Gemini入侵公司 🔓",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "4b3898ef5c57d85c",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "Mon, 21 Sep 2026 00:00:00 GMT",
+      "date": "2026-09-21",
+      "url": "https://tldr.tech/ai/2026-09-21",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2101917073081598255",
+      "source": "x",
+      "name": "Peter Yang",
+      "handle": "petergyang",
+      "role": "Practical AI tutorials and interviews for busy people",
+      "text": "If you enjoyed this, sign up for free to my newsletter to get my best AI and product guides. Join 110,000+ subscribers here: https://t.co/yz9xcsfrhF",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "如果你喜欢这个，免费订阅我的新闻通讯，获取我最棒的AI和产品指南。在这里加入110,000+订阅者：https://t.co/yz9xcsfrhF",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "e6cd3e8d7df79e48",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-21T06:10:56.000Z",
+      "date": "2026-09-21",
+      "url": "https://x.com/petergyang/status/2101917073081598255",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2101846262840799251",
+      "source": "x",
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "role": "vercel CEO",
+      "text": "The thoroughness with which agents can test and QA software is unrivaled. I pointed out something wasn't rendering right in a mobile (in-app) browser. The thing goes to the depths of Mordor to reproduce, simulate, fix, deploy, verify. It created an ephemeral vercel deployment to throw at an iPhone simulator! The absolute grind on these things. Humans could simply never match this level of intensity. We'd run of energy, we'd extrapolate, we'd hope it'd work out. The software of the future will be of a quality and performance we've never experienced before. It's amazing to watch this shift.",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "智能体测试和QA软件的彻底程度是无可匹敌的。我指出某个东西在移动（应用内）浏览器中渲染不正确。它深入Mordor般的深渊去复现、模拟、修复、部署、验证。它甚至创建了一个临时的vercel部署，扔给iPhone模拟器！这些东西上的绝对苦干。人类根本无法匹配这种强度的投入。我们会耗尽精力，我们会做外推，我们会希望它能行得通。未来的软件将拥有我们从未体验过的质量和性能。看着这种转变真是令人惊叹。",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "9e9989cb8f51c278",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-09-21T01:29:34.000Z",
+      "date": "2026-09-21",
+      "url": "https://x.com/rauchg/status/2101846262840799251",
+      "likes": 376,
+      "retweets": 19,
+      "replies": 53,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2101731574668747081",
+      "source": "x",
+      "name": "Aaron Levie",
+      "handle": "levie",
+      "role": "ceo box - your business lives in content. unleash it with AI",
+      "text": "Literally impenetrable from agent swarms https://t.co/tg7SZ4d0xu",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "简直无法被代理集群穿透 https://t.co/tg7SZ4d0xu",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "9260e567fe1e8340",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-09-20T17:53:50.000Z",
+      "date": "2026-09-21",
+      "url": "https://x.com/levie/status/2101731574668747081",
+      "likes": 2691,
+      "retweets": 121,
+      "replies": 111,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
     {
       "id": "2101427997597446636",
       "source": "x",
@@ -68,7 +244,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "41583758318c4f7d1d1e1435542c0f3c2e8bbd73"
     },
     {
       "id": "2101397206595231765",
@@ -112,7 +288,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "41583758318c4f7d1d1e1435542c0f3c2e8bbd73"
     },
     {
       "id": "2101342055352201519",
@@ -156,7 +332,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "41583758318c4f7d1d1e1435542c0f3c2e8bbd73"
     },
     {
       "id": "2101186741042663579",
@@ -1139,7 +1315,7 @@
       "contentTranslationMethod": "",
       "contentTranslationModel": "",
       "contentTranslationSourceHash": "",
-      "translation": "Claude + Cowork 合并 🛠️，ChatGPT 赞助智能体 💰，框架税 🤖",
+      "translation": "Claude + Cowork 合并 🛠️，ChatGPT 赞助智能体 💰，harness 税 🤖",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
@@ -1887,7 +2063,7 @@
       "contentTranslationMethod": "",
       "contentTranslationModel": "",
       "contentTranslationSourceHash": "",
-      "translation": "Jev ⚡，周期霓虹 🧬，Gemini 3.8 直播 💬",
+      "translation": "Jev ⚡，周期霓虹 🧬，Gemini 3.8 实时 💬",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-pro",
@@ -2312,7 +2488,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "41583758318c4f7d1d1e1435542c0f3c2e8bbd73"
     },
     {
       "id": "2099876514330206578",

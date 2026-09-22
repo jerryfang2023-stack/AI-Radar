@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-21T04:13:14.914Z",
-    "latestDataDate": "2026-09-21",
-    "currentDate": "2026-09-21",
-    "eventCount": 3463,
+    "generatedAt": "2026-09-22T03:45:38.642Z",
+    "latestDataDate": "2026-09-22",
+    "currentDate": "2026-09-22",
+    "eventCount": 3493,
     "quarantinedEventCount": 37,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -57,6 +57,7 @@
     "typeLabel": "技术",
     "valueId": "guardrails_safety",
     "eventIds": [
+      "EV-ee40b65cc5f85c36",
       "EV-729a0261934b73d9",
       "EV-d1e2a7c6d314612c",
       "EV-b240fb11e65b018e",
@@ -86,14 +87,148 @@
       "EN-4e7e886400fe6a83"
     ],
     "fdeIds": [
+      "FDE-5ca4d6b1a0aff93c",
       "FDE-0ee0fe3baa3f1364",
       "FDE-8cc818b0e819b217"
     ],
     "hardwareIds": [],
     "firstSeen": "2026-06-11",
-    "lastSeen": "2026-09-16"
+    "lastSeen": "2026-09-22"
   },
   "events": [
+    {
+      "id": "EV-ee40b65cc5f85c36",
+      "dataDate": "2026-09-22",
+      "date": "2026-09-22",
+      "updatedDate": "2026-09-22",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "NVIDIA Halos：为何规模化部署物理 AI 需要全栈安全",
+      "originalTitle": "",
+      "subject": "NVIDIA Halos：为何规模化",
+      "action": "部署",
+      "object": "物理 AI 需要全栈安全",
+      "metrics": [
+        "49 million",
+        "60 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-e5b6577f9bec4e61",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "NVIDIA Halos",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://blogs.nvidia.com/blog/physical-ai-halos-safety",
+      "publisher": "NVIDIA Blog（RSS）"
+    },
     {
       "id": "EV-729a0261934b73d9",
       "dataDate": "2026-07-26",
@@ -2698,6 +2833,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-bc025a501363e4f3",
         "EV-054a8623f9abdbb7",
         "EV-b739349cfab7e41c",
         "EV-36defc1d19f0ce5d",
@@ -2813,26 +2949,26 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-government_public_sector",
+        "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
-        "TX-technology-agentic_execution",
-        "TX-ai_market_category-infrastructure_compute",
-        "TX-product_form-chip_accelerator",
         "TX-target_user-developer",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-industry-healthcare_life_sciences",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
+        "TX-use_case-research_discovery",
+        "TX-industry-financial_services",
+        "TX-technology-agentic_execution",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-industry-government_public_sector",
+        "TX-product_form-chip_accelerator",
         "TX-technology-embodied_ai",
         "TX-target_user-consumer",
         "TX-industry-education",
         "TX-target_user-educator",
-        "TX-ai_market_subcategory-development_deployment",
         "TX-use_case-software_development",
-        "TX-industry-financial_services",
-        "TX-industry-healthcare_life_sciences",
-        "TX-product_form-enterprise_software_platform",
-        "TX-use_case-research_discovery",
         "TX-product_form-compute_cloud_service",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-model",
         "TX-industry-media_entertainment",
         "TX-industry-retail_ecommerce",
@@ -2847,8 +2983,8 @@
         "TX-technology-long_context",
         "TX-technology-model_context_protocol",
         "TX-technology-guardrails_safety",
-        "TX-technology-tool_use",
         "TX-technology-human_in_loop",
+        "TX-technology-tool_use",
         "TX-technology-distillation"
       ],
       "relatedEntityIds": [
@@ -2879,7 +3015,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-09-21"
+      "lastSeen": "2026-09-22"
     },
     {
       "id": "EN-373ac021a2c0bb2c",
@@ -2908,9 +3044,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-product_form-compute_cloud_service",
         "TX-technology-guardrails_safety"
       ],
@@ -2919,7 +3055,7 @@
         "EN-7d3194f79e645c42"
       ],
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-09-21"
+      "lastSeen": "2026-09-22"
     },
     {
       "id": "EN-7d3194f79e645c42",
@@ -2932,6 +3068,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-c8871997cafcf846",
         "EV-e331c286836a80f3",
         "EV-56c0d1d5b0c07971",
         "EV-ff0f58a42d41f75b",
@@ -3049,6 +3186,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-91ecc81010a43bd9",
         "EV-1d5c66256df950a5",
         "EV-800958e92cf5e67f",
         "EV-440866c21881868f",
@@ -3314,8 +3452,9 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
-        "EV-054a8623f9abdbb7",
+        "EV-5bd4ad184627c301",
         "EV-fd18ed4c81ae1791",
+        "EV-054a8623f9abdbb7",
         "EV-b739349cfab7e41c",
         "EV-36defc1d19f0ce5d",
         "EV-6d4ba6a553d0564c",
@@ -3437,23 +3576,23 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-government_public_sector",
+        "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
-        "TX-technology-agentic_execution",
-        "TX-product_form-chip_accelerator",
         "TX-target_user-developer",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-industry-healthcare_life_sciences",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
+        "TX-use_case-research_discovery",
+        "TX-industry-financial_services",
+        "TX-technology-agentic_execution",
+        "TX-industry-government_public_sector",
+        "TX-product_form-chip_accelerator",
         "TX-target_user-consumer",
         "TX-product_form-developer_tool",
         "TX-use_case-software_development",
-        "TX-industry-financial_services",
-        "TX-industry-healthcare_life_sciences",
-        "TX-product_form-enterprise_software_platform",
-        "TX-use_case-research_discovery",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-end_user_application",
         "TX-product_form-model",
         "TX-industry-media_entertainment",
@@ -3473,8 +3612,8 @@
         "TX-technology-computer_use",
         "TX-technology-long_context",
         "TX-technology-reasoning",
-        "TX-technology-inference_optimization",
         "TX-technology-guardrails_safety",
+        "TX-technology-inference_optimization",
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
@@ -3505,7 +3644,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-21"
+      "lastSeen": "2026-09-22"
     },
     {
       "id": "EN-efa98ef1e586ac73",
@@ -3611,6 +3750,95 @@
     }
   ],
   "fde": [
+    {
+      "id": "FDE-5ca4d6b1a0aff93c",
+      "eventId": "EV-ee40b65cc5f85c36",
+      "dataDate": "2026-09-22",
+      "date": "2026-09-22",
+      "title": "NVIDIA Halos：为何规模化部署物理 AI 需要全栈安全",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "物理 AI 需要全栈安全",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Physical AI is moving rapidly from research to large-scale deployment. By 2035, ABI Research projects an installed base of 49 million level 3-5 autonomous vehicles (AVs) , while Omdia estimates that roughly 60 million industrial robots will be deployed between 2026 and 2035 . As these machines enter roads, factories, warehouses and other environments shared with people, safety must scale with them.",
+        "Physical AI safety means proving that AI-driven machines — AVs , humanoid robots , industrial robots and more — behave safely when their decisions turn into physical action. That requires safety across the hardware, software, AI, operating environment and deployment lifecycle — not a one-time check before deployment."
+      ],
+      "outcomes": [],
+      "metrics": [
+        "49 million",
+        "60 million"
+      ],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://blogs.nvidia.com/blog/physical-ai-halos-safety",
+      "entityIds": [
+        "EN-e5b6577f9bec4e61",
+        "EN-8d4321d936320802"
+      ]
+    },
     {
       "id": "FDE-8cc818b0e819b217",
       "eventId": "EV-fe63a869fe4cee45",
@@ -3745,6 +3973,135 @@
   ],
   "hardware": [],
   "hardwareCatalog": [
+    {
+      "id": "HWC-148b919da0bedf5d",
+      "snapshotKey": "148b919da0bedf5d",
+      "snapshotId": "HWS-0146a038b3bcce86",
+      "eventId": "EV-ee40b65cc5f85c36",
+      "eventIds": [
+        "EV-ee40b65cc5f85c36"
+      ],
+      "dataDate": "2026-09-22",
+      "date": "2026-09-22",
+      "title": "NVIDIA Halos",
+      "subject": "NVIDIA Halos",
+      "productNames": [],
+      "hardwareType": "robot",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-e9f2b9a9e35819c8"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-09-22",
+          "hardware_fact_id": "HWF-8477e9f832004c98",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-09-21T16:00:46.000Z",
+          "subject_entity_id": "EN-e5b6577f9bec4e61",
+          "subject_name": "NVIDIA Halos",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "49",
+          "unit": "million",
+          "source_quote": "Physical AI is moving rapidly from research to large-scale deployment. By 2035, ABI Research projects an installed base of 49 million level 3-5 autonomous vehicles (AVs) , while Omdia estimates that roughly 60 million industrial robots will be deployed between 2026 and 2035 . As these machines enter roads, factories, warehouses and other environments shared with people, safety must scale with them.",
+          "event_refs": [
+            "EV-ee40b65cc5f85c36"
+          ],
+          "claim_ref": "CL-18e008e667053a99",
+          "source_refs": [
+            "SA-aeb552ac349f479f"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-22/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-09-22",
+          "hardware_fact_id": "HWF-e9f2b9a9e35819c8",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-09-21T16:00:46.000Z",
+          "subject_entity_id": "EN-e5b6577f9bec4e61",
+          "subject_name": "NVIDIA Halos",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Physical AI safety means proving that AI-driven machines — AVs , humanoid robots , industrial robots and more — behave safely when their decisions turn into physical action. That requires safety across the hardware, software, AI, operating environment and deployment lifecycle — not a one-time check before deployment.",
+          "event_refs": [
+            "EV-ee40b65cc5f85c36"
+          ],
+          "claim_ref": "CL-ad1fceaf0ecfb3fa",
+          "source_refs": [
+            "SA-aeb552ac349f479f"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-22/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://blogs.nvidia.com/blog/physical-ai-halos-safety",
+      "entityIds": [
+        "EN-e5b6577f9bec4e61",
+        "EN-8d4321d936320802"
+      ]
+    },
     {
       "id": "HWC-782f385baae37a60",
       "snapshotKey": "782f385baae37a60",

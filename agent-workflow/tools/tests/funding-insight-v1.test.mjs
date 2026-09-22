@@ -323,6 +323,9 @@ test("withdrawn financing fails eligibility and persisted-card consistency", () 
     "Listen Labs shelved its $1.5B funding round",
     "Listen Labs 取消15亿美元融资轮，转向收购谈判",
     "Listen Labs funding round never closed",
+    "OpenAI又要融资了：1.2万亿美元估值，谁还敢接下一棒？",
+    "人工智能公司寻求新一轮融资",
+    "Acme AI in talks to raise $1.5B",
   ]) {
     const event = { ...base, display_title_zh: title };
     assert.equal(isEligibleFundingInsightEvent(event), false, title);
@@ -2903,6 +2906,20 @@ test("Sep19 reviewed reposts preserve Sep18 source events without counting new r
     assert.deepEqual(new Set(result[0].source_event_ids), new Set(ids));
     assert.equal(result[0].financing.disclosures.length, ids.length);
   }
+});
+
+test("Sep22 Anew repost retains four disclosures in a single reviewed first round", () => {
+  const ids = ["EV-91459f0d9446f471", "EV-c96705c69e11c520", "EV-1043d78cc040ab30", "EV-4bc690025cbda146"];
+  const cards = ["2026-09-17", "2026-09-18", "2026-09-19", "2026-09-22"].flatMap(date => JSON.parse(fs.readFileSync(path.join(root,
+    `01-SiteV2/content/12-applications/funding-insights/${date}.json`), "utf8")).cards).filter(card => ids.includes(card.triggered_by_event_id));
+  const review = JSON.parse(fs.readFileSync(path.join(root,
+    "01-SiteV2/content/12-applications/funding-insights/company-identity-decisions.json"), "utf8"));
+  assert.equal(cards.length, 4);
+  const result = aggregateFundingRoundCards(cards, {}, {}, review);
+  assert.equal(result.length, 1);
+  assert.deepEqual(new Set(result[0].source_event_ids), new Set(ids));
+  assert.equal(result[0].financing.disclosures.length, 4);
+  assert.equal(result[0].financing.announced_at, "2026-09-16");
 });
 
 test("Sep15 reviewed domestic identities aggregate duplicate disclosures without losing source events", () => {
