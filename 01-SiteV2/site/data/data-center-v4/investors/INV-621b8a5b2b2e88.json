@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-22T00:32:07.024Z",
+    "latestDataDate": "2026-09-22",
+    "currentDate": "2026-09-22",
+    "eventCount": 3487,
+    "quarantinedEventCount": 37,
+    "quarantinedEventIds": [
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-cab18aa68c8ae551",
+      "EV-88a9fd0b8f602e16",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "institution": {
+    "id": "INV-621b8a5b2b2e88",
+    "name": "IFC",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "GLOBAL"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-09-21",
+    "latest_disclosed_at": "2026-09-21",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "debt"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-5dd3b777303686d3",
+        "canonical_entity_id": "",
+        "name": "FintechOS"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-82080666b8b89432",
+        "funding_insight_id": "FI-3b3629354d22b6a4",
+        "event_ids": [
+          "EV-eadf57952ad76a26"
+        ],
+        "company_entity_id": "EN-5dd3b777303686d3",
+        "company_canonical_entity_id": "",
+        "company_name": "FintechOS",
+        "round": "债务融资",
+        "round_code": "debt",
+        "round_original": "债务融资",
+        "amount_original": "$28M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 28000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2800 万美元"
+        },
+        "announced_at": "2026-09-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ebb4cfeb462f5780",
+            "source_url": "https://fintechos.com/in-the-news/fintechos-secures-28m-in-combined-equity-and-debt-financing/",
+            "source_title": "FintechOS 获得 2800 万美元股权与债务组合融资",
+            "source_content_hash": "ffc50b05f8c9cdae",
+            "quote": "raised $28 million in combined equity and debt financing from its current shareholder base, including Bek Ventures, IFC, Cipio Partners and Molten Ventures, alongside a senior debt facility from Santander CIB",
+            "quote_hash": "dbe4affcdde93e87d3b166291082fcb242b3fe2b5d8d0e8c75bd211cb68787e6"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-ebb4cfeb462f5780",
+        "source_url": "https://fintechos.com/in-the-news/fintechos-secures-28m-in-combined-equity-and-debt-financing/",
+        "source_title": "FintechOS 获得 2800 万美元股权与债务组合融资",
+        "source_content_hash": "ffc50b05f8c9cdae",
+        "quote": "raised $28 million in combined equity and debt financing from its current shareholder base, including Bek Ventures, IFC, Cipio Partners and Molten Ventures, alongside a senior debt facility from Santander CIB",
+        "quote_hash": "dbe4affcdde93e87d3b166291082fcb242b3fe2b5d8d0e8c75bd211cb68787e6"
+      }
+    ]
+  }
+}

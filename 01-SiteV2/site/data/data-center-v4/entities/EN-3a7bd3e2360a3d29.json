@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-22T00:38:00.371Z",
-    "latestDataDate": "2026-09-21",
-    "currentDate": "2026-09-21",
-    "eventCount": 3463,
+    "generatedAt": "2026-09-22T00:32:07.024Z",
+    "latestDataDate": "2026-09-22",
+    "currentDate": "2026-09-22",
+    "eventCount": 3487,
     "quarantinedEventCount": 37,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -78,6 +78,8 @@
       "EV-d116b0aa5bb292e2",
       "EV-e857f9d1c1478c70",
       "EV-fd21441fb6e143c3",
+      "EV-f114a151829de349",
+      "EV-a1c1e9084f310dba",
       "EV-cee1833a40bc2879",
       "EV-c12e5e4c3bc203b5",
       "EV-47363108bf292d94",
@@ -149,6 +151,7 @@
       "EV-ebef81764102ee7c",
       "EV-f6611268f119a172",
       "EV-342799d4e68e7416",
+      "EV-347fb4245833ddd1",
       "EV-e50dd2bea0180d59",
       "EV-3bb3577e52eb08ea",
       "EV-c06d008e73a0d337",
@@ -196,7 +199,7 @@
       "EN-45b5216872656eb3"
     ],
     "firstSeen": "2026-06-04",
-    "lastSeen": "2026-09-21",
+    "lastSeen": "2026-09-22",
     "relationIds": [
       "REL2-a3bd8b736cbfac80",
       "REL2-2c82bf25c532a4e1",
@@ -238,6 +241,8 @@
         "EV-fd21441fb6e143c3"
       ],
       "productsServices": [
+        "EV-f114a151829de349",
+        "EV-a1c1e9084f310dba",
         "EV-cee1833a40bc2879",
         "EV-c12e5e4c3bc203b5",
         "EV-47363108bf292d94",
@@ -315,6 +320,7 @@
         "EV-4a982ba6f291ddec"
       ],
       "organizationPeople": [
+        "EV-347fb4245833ddd1",
         "EV-c06d008e73a0d337",
         "EV-7d4b4b8d4e3599d4"
       ],
@@ -344,6 +350,78 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-f114a151829de349",
+        "dataDate": "2026-09-22",
+        "date": "2026-09-22",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "AI 编程平台 Bitrig 宣布为苹果 iPhone Duo 引入支持，提供交互式 3D 模拟器供开发者测试应用",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "code_generation",
+            "name": "代码生成",
+            "entityIds": [
+              "EN-744c133f932492ec"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-744c133f932492ec",
+          "EN-3a7bd3e2360a3d29"
+        ]
+      },
+      {
+        "id": "EV-a1c1e9084f310dba",
+        "dataDate": "2026-09-22",
+        "date": "2026-09-21",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Meta 的 Muse 在早期移动端发布上正超越 ChatGPT",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "end_user_application",
+            "name": "终端 AI 应用",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-ea3bd73e2b506e00",
+          "EN-3a7bd3e2360a3d29",
+          "EN-bbdefa2950f49882",
+          "EN-d1ad14d4ad57d207"
+        ]
+      },
+      {
+        "id": "EV-347fb4245833ddd1",
+        "dataDate": "2026-09-22",
+        "date": "2026-09-21",
+        "eventType": "organization_restructuring",
+        "eventTypeLabel": "组织重组",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "打造 Apple Store 的人不看好硅谷押注 AI 购物",
+        "displayTags": [],
+        "entityIds": [
+          "EN-73c5b032ac15cee7",
+          "EN-3a7bd3e2360a3d29"
+        ]
+      },
       {
         "id": "EV-66f24f6db71cc011",
         "dataDate": "2026-09-21",
@@ -3186,6 +3264,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-91ecc81010a43bd9",
         "EV-1d5c66256df950a5",
         "EV-800958e92cf5e67f",
         "EV-440866c21881868f",
@@ -3451,8 +3530,9 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
-        "EV-054a8623f9abdbb7",
+        "EV-5bd4ad184627c301",
         "EV-fd18ed4c81ae1791",
+        "EV-054a8623f9abdbb7",
         "EV-b739349cfab7e41c",
         "EV-36defc1d19f0ce5d",
         "EV-6d4ba6a553d0564c",
@@ -3574,9 +3654,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-government_public_sector",
+        "TX-industry-financial_services",
+        "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-agentic_execution",
+        "TX-industry-government_public_sector",
         "TX-product_form-chip_accelerator",
         "TX-target_user-developer",
         "TX-target_user-researcher",
@@ -3584,13 +3667,10 @@
         "TX-target_user-consumer",
         "TX-product_form-developer_tool",
         "TX-use_case-software_development",
-        "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
-        "TX-product_form-enterprise_software_platform",
         "TX-use_case-research_discovery",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-end_user_application",
         "TX-product_form-model",
         "TX-industry-media_entertainment",
@@ -3610,8 +3690,8 @@
         "TX-technology-computer_use",
         "TX-technology-long_context",
         "TX-technology-reasoning",
-        "TX-technology-inference_optimization",
         "TX-technology-guardrails_safety",
+        "TX-technology-inference_optimization",
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
@@ -3642,7 +3722,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-21"
+      "lastSeen": "2026-09-22"
     },
     {
       "id": "EN-e463d05a14e8697f",
@@ -4119,6 +4199,7 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
+        "EV-eadf57952ad76a26",
         "EV-5b01704049bcea48",
         "EV-904068439ac5b9a5",
         "EV-6cfa72f00022d66a",
@@ -4246,6 +4327,7 @@
         "EV-23ae55daa341be06",
         "EV-6bb83280a2116f24",
         "EV-d10684a6f16afe10",
+        "EV-84fc5a50962cfc89",
         "EV-d2f89de76c27be7f",
         "EV-67804da6b04fdcc5",
         "EV-ff598b54d248fce0",
@@ -4345,6 +4427,7 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-d8739d5413d6530f",
         "EV-07c226b0ca5cb558",
         "EV-9ec1b90f071eef44",
         "EV-cefbc0389b58d15f",
@@ -4672,6 +4755,7 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-b8ea4c072c54167a",
         "EV-2c17183b71d8b7d1",
         "EV-9db14ad0d6fe3135",
         "EV-884ee276b1160545",
@@ -4709,6 +4793,7 @@
         "EV-c17f5a364ed6a3ac"
       ],
       "entityIds": [
+        "EN-5dd3b777303686d3",
         "EN-cb79e557718da60e",
         "EN-ed0f45e26b04d335",
         "EN-55c37c5c0b75471a",
@@ -4824,6 +4909,7 @@
         "EN-50e2a4156631df49",
         "EN-f531c4e9f8555dcc",
         "EN-df30a48992da7fe8",
+        "EN-01b3d337c12353f3",
         "EN-b9b408a52b47a660",
         "EN-8d02f06f05d1d64a",
         "EN-75267e233f93671b",
@@ -4882,6 +4968,7 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-6fcba5d96a4fadfd",
         "EN-ebefab0353686b57",
         "EN-c5da36ead951ea76",
         "EN-96a4bc2602655473",
@@ -5049,6 +5136,7 @@
         "EN-b7bea343b08cce2c",
         "EN-fdb2cc367267ac57",
         "EN-4a639cb888a15d75",
+        "EN-d977520b7963d84e",
         "EN-0616a267820d2c78",
         "EN-286a3c612017ad1d",
         "EN-d4f0bc5a29de06b5",
@@ -5464,6 +5552,7 @@
         "EV-0cb98302768c2e0a",
         "EV-34929bdd016dc8d6",
         "EV-00834dd71037c7cc",
+        "EV-b8ea4c072c54167a",
         "EV-e1abae9b8a30783c",
         "EV-31a0215da892fc7f",
         "EV-4008b0134e8a2e8b",
@@ -5698,6 +5787,7 @@
         "EN-14754db7f1439c88",
         "EN-ce31f92c521b7b08",
         "EN-4a639cb888a15d75",
+        "EN-d977520b7963d84e",
         "EN-50e6bb921e16b88b",
         "EN-8a64ef5a6c0d7bc7",
         "EN-9fbf261b62c1d7c0",
@@ -5740,7 +5830,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-21"
+      "lastSeen": "2026-09-22"
     },
     {
       "id": "TX-technology-on_device",

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-22T00:38:00.371Z",
-    "latestDataDate": "2026-09-21",
-    "currentDate": "2026-09-21",
-    "eventCount": 3463,
+    "generatedAt": "2026-09-22T00:32:07.024Z",
+    "latestDataDate": "2026-09-22",
+    "currentDate": "2026-09-22",
+    "eventCount": 3487,
     "quarantinedEventCount": 37,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -3562,6 +3562,135 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-148b919da0bedf5d",
+      "snapshotKey": "148b919da0bedf5d",
+      "snapshotId": "HWS-0146a038b3bcce86",
+      "eventId": "EV-ee40b65cc5f85c36",
+      "eventIds": [
+        "EV-ee40b65cc5f85c36"
+      ],
+      "dataDate": "2026-09-22",
+      "date": "2026-09-22",
+      "title": "NVIDIA Halos",
+      "subject": "NVIDIA Halos",
+      "productNames": [],
+      "hardwareType": "robot",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-e9f2b9a9e35819c8"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-09-22",
+          "hardware_fact_id": "HWF-8477e9f832004c98",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-09-21T16:00:46.000Z",
+          "subject_entity_id": "EN-e5b6577f9bec4e61",
+          "subject_name": "NVIDIA Halos",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "49",
+          "unit": "million",
+          "source_quote": "Physical AI is moving rapidly from research to large-scale deployment. By 2035, ABI Research projects an installed base of 49 million level 3-5 autonomous vehicles (AVs) , while Omdia estimates that roughly 60 million industrial robots will be deployed between 2026 and 2035 . As these machines enter roads, factories, warehouses and other environments shared with people, safety must scale with them.",
+          "event_refs": [
+            "EV-ee40b65cc5f85c36"
+          ],
+          "claim_ref": "CL-18e008e667053a99",
+          "source_refs": [
+            "SA-aeb552ac349f479f"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-22/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-09-22",
+          "hardware_fact_id": "HWF-e9f2b9a9e35819c8",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-09-21T16:00:46.000Z",
+          "subject_entity_id": "EN-e5b6577f9bec4e61",
+          "subject_name": "NVIDIA Halos",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Physical AI safety means proving that AI-driven machines — AVs , humanoid robots , industrial robots and more — behave safely when their decisions turn into physical action. That requires safety across the hardware, software, AI, operating environment and deployment lifecycle — not a one-time check before deployment.",
+          "event_refs": [
+            "EV-ee40b65cc5f85c36"
+          ],
+          "claim_ref": "CL-ad1fceaf0ecfb3fa",
+          "source_refs": [
+            "SA-aeb552ac349f479f"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-22/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://blogs.nvidia.com/blog/physical-ai-halos-safety",
+      "entityIds": [
+        "EN-e5b6577f9bec4e61",
+        "EN-8d4321d936320802"
+      ]
+    },
     {
       "id": "HWC-8eb9e3e3cf6ea367",
       "snapshotKey": "8eb9e3e3cf6ea367",
@@ -18074,10 +18203,10 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-09-21",
-      "funnel_id": "LF-e4fefad4c87b05ae",
+      "data_date": "2026-09-22",
+      "funnel_id": "LF-f05c2459005f0609",
       "lens": "hardware",
-      "date": "2026-09-21",
+      "date": "2026-09-22",
       "monitoring_paths": [
         "hardware_capacity_fab",
         "hardware_capex",
@@ -18085,26 +18214,26 @@
         "hardware_shipment_deployment",
         "hardware_supply_agreement"
       ],
-      "raw_documents": 27,
-      "original_sources": 22,
+      "raw_documents": 21,
+      "original_sources": 14,
       "valid_claims": 9,
       "observations": 2,
-      "canonical_events": 5,
+      "canonical_events": 3,
       "blocker_counts": {
-        "source_outside_daily_window": 10,
+        "non_event_or_index_title": 2,
+        "homepage_requires_original_event_source": 1,
         "source_outside_funding_backfill_window": 1,
-        "industry_overview_not_event_source": 1,
-        "raw_source_quality_block": 5,
-        "event_not_ai_relevant": 2,
-        "domestic_publication_date_unverified": 2
+        "source_outside_daily_window": 5,
+        "event_entity_unresolved": 1,
+        "raw_source_quality_block": 7
       },
       "rates": {
-        "original_source_rate": 0.8148148148148148,
-        "valid_claim_rate": 0.3333333333333333,
+        "original_source_rate": 0.6666666666666666,
+        "valid_claim_rate": 0.42857142857142855,
         "observation_rate": 0.2222222222222222,
-        "event_conversion_rate": 0.5555555555555556
+        "event_conversion_rate": 0.3333333333333333
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-21/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-22/monitoring-funnel.json"
     }
   ]
 }

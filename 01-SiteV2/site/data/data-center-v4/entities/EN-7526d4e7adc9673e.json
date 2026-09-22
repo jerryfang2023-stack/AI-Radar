@@ -1,0 +1,171 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-22T00:32:07.024Z",
+    "latestDataDate": "2026-09-22",
+    "currentDate": "2026-09-22",
+    "eventCount": 3487,
+    "quarantinedEventCount": 37,
+    "quarantinedEventIds": [
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-cab18aa68c8ae551",
+      "EV-88a9fd0b8f602e16",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "entity": {
+    "id": "EN-7526d4e7adc9673e",
+    "name": "阿里通义千问",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-9be76c1882a810e5"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-image_generation"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-22",
+    "lastSeen": "2026-09-22",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-9be76c1882a810e5"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-9be76c1882a810e5",
+        "dataDate": "2026-09-22",
+        "date": "2026-09-22",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "阿里通义千问发布 Qwen-Image-2.1：7B 开源权重图像生成与编辑模型",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "image_generation",
+            "name": "图像生成",
+            "entityIds": [
+              "EN-7526d4e7adc9673e"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-047364b9be67f665",
+          "EN-7526d4e7adc9673e",
+          "EN-62a6bfd36e0a6abe"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-image_generation",
+      "name": "图像生成",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "image_generation",
+      "eventIds": [
+        "EV-657176fd0dff6209",
+        "EV-fd329b4350f404ef",
+        "EV-9be76c1882a810e5",
+        "EV-6e92e04d93656021",
+        "EV-3dc533666d73a255",
+        "EV-dc0ef21764be2db1",
+        "EV-1372037e191a9587",
+        "EV-1c240446b94d16b1",
+        "EV-617f1daf708475d0",
+        "EV-ea2598236eae915f",
+        "EV-5111b297a0234e46",
+        "EV-cf4da5583e9311d7",
+        "EV-82ae0ea3bfe336a1",
+        "EV-1a241bcb4fad886c",
+        "EV-a442b55d0bac5651",
+        "EV-dce5de62b2e4b752",
+        "EV-41baa43cf05d4288",
+        "EV-568d2aeab5234e48",
+        "EV-9766c0f1ac902595"
+      ],
+      "entityIds": [
+        "EN-336ab1deb42d6284",
+        "EN-b97e07c31e87f7d0",
+        "EN-7526d4e7adc9673e",
+        "EN-1f9bfd088b15331d",
+        "EN-bae152c4560df38c",
+        "EN-7d3194f79e645c42",
+        "EN-9fbf261b62c1d7c0",
+        "EN-4721e06a8b6d85ff",
+        "EN-bbdefa2950f49882",
+        "EN-ea3bd73e2b506e00",
+        "EN-534e99d81da1c54d",
+        "EN-2b6e51bec93e86c1",
+        "EN-5388bc10736a0eff"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-11",
+      "lastSeen": "2026-09-22"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

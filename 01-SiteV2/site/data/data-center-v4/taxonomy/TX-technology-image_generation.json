@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-22T00:38:00.371Z",
-    "latestDataDate": "2026-09-21",
-    "currentDate": "2026-09-21",
-    "eventCount": 3463,
+    "generatedAt": "2026-09-22T00:32:07.024Z",
+    "latestDataDate": "2026-09-22",
+    "currentDate": "2026-09-22",
+    "eventCount": 3487,
     "quarantinedEventCount": 37,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -59,8 +59,9 @@
     "eventIds": [
       "EV-657176fd0dff6209",
       "EV-fd329b4350f404ef",
-      "EV-3dc533666d73a255",
+      "EV-9be76c1882a810e5",
       "EV-6e92e04d93656021",
+      "EV-3dc533666d73a255",
       "EV-dc0ef21764be2db1",
       "EV-1372037e191a9587",
       "EV-1c240446b94d16b1",
@@ -79,8 +80,9 @@
     "entityIds": [
       "EN-336ab1deb42d6284",
       "EN-b97e07c31e87f7d0",
-      "EN-bae152c4560df38c",
+      "EN-7526d4e7adc9673e",
       "EN-1f9bfd088b15331d",
+      "EN-bae152c4560df38c",
       "EN-7d3194f79e645c42",
       "EN-9fbf261b62c1d7c0",
       "EN-4721e06a8b6d85ff",
@@ -93,7 +95,7 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-06-11",
-    "lastSeen": "2026-09-21"
+    "lastSeen": "2026-09-22"
   },
   "events": [
     {
@@ -637,24 +639,26 @@
       "publisher": "Ars Technica：AI（RSS）"
     },
     {
-      "id": "EV-3dc533666d73a255",
-      "dataDate": "2026-09-21",
-      "date": "2026-09-20",
-      "updatedDate": "2026-09-21",
+      "id": "EV-9be76c1882a810e5",
+      "dataDate": "2026-09-22",
+      "date": "2026-09-22",
+      "updatedDate": "2026-09-22",
       "eventType": "model_release",
       "eventTypeLabel": "模型发布",
       "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
+      "status": "completed",
+      "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "阿里千问开源 Qwen-Image-2.1 图像模型，支持透明图像与最多 10 张参考图",
+      "title": "阿里通义千问发布 Qwen-Image-2.1：7B 开源权重图像生成与编辑模型",
       "originalTitle": "",
-      "subject": "阿里千问",
-      "action": "开源 Qwen-Image-2.1 图像模型",
-      "object": "，支持透明图像与最多 10 张参考图",
+      "subject": "阿里通义千问",
+      "action": "发布 Qwen-Image-2.1：7B 开源权重图像生成与编辑模型",
+      "object": "阿里通义千问发布 Qwen-Image-2.1：7B 开源权重图像生成与编辑模型",
       "metrics": [],
       "locations": [],
-      "missingFields": [],
+      "missingFields": [
+        "object"
+      ],
       "conflicts": [],
       "tags": [
         {
@@ -663,7 +667,7 @@
           "id": "image_generation",
           "name": "图像生成",
           "entityIds": [
-            "EN-bae152c4560df38c"
+            "EN-7526d4e7adc9673e"
           ],
           "provenance": "claim_assertion",
           "assertionId": ""
@@ -686,7 +690,7 @@
           "id": "image_generation",
           "name": "图像生成",
           "entityIds": [
-            "EN-bae152c4560df38c"
+            "EN-7526d4e7adc9673e"
           ],
           "provenance": "claim_assertion",
           "assertionId": ""
@@ -699,20 +703,22 @@
           "id": "image_generation",
           "name": "图像生成",
           "entityIds": [
-            "EN-bae152c4560df38c"
+            "EN-7526d4e7adc9673e"
           ],
           "provenance": "claim_assertion",
           "assertionId": ""
         }
       ],
       "entityIds": [
-        "EN-bae152c4560df38c",
         "EN-047364b9be67f665",
+        "EN-7526d4e7adc9673e",
+        "EN-6c87e5496f592f3c",
         "EN-62a6bfd36e0a6abe"
       ],
       "entityNames": [
-        "阿里千问",
         "Alibaba",
+        "阿里通义千问",
+        "SGLang",
         "Qwen-Image-2.1"
       ],
       "productName": "Qwen-Image-2.1",
@@ -725,14 +731,14 @@
           ]
         }
       ],
-      "sourceUrl": "https://ithome.com/1/004/989.htm",
-      "publisher": "IT之家（RSS）"
+      "sourceUrl": "https://marktechpost.com/2026/09/21/alibaba-qwen-releases-qwen-image-2-1",
+      "publisher": "MarkTechPost（RSS）"
     },
     {
       "id": "EV-6e92e04d93656021",
-      "dataDate": "2026-09-21",
+      "dataDate": "2026-09-22",
       "date": "2026-09-20",
-      "updatedDate": "2026-09-21",
+      "updatedDate": "2026-09-22",
       "eventType": "model_release",
       "eventTypeLabel": "模型发布",
       "eventGroup": "模型、产品与服务",
@@ -852,6 +858,98 @@
       ],
       "sourceUrl": "https://the-decoder.com/alibabas-open-weight-qwen-image-2-1-claims-to-beat-closed-models-in-image-generation-with-just-7-billion-parameters",
       "publisher": "The Decoder AI News"
+    },
+    {
+      "id": "EV-3dc533666d73a255",
+      "dataDate": "2026-09-21",
+      "date": "2026-09-20",
+      "updatedDate": "2026-09-21",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "阿里千问开源 Qwen-Image-2.1 图像模型，支持透明图像与最多 10 张参考图",
+      "originalTitle": "",
+      "subject": "阿里千问",
+      "action": "开源 Qwen-Image-2.1 图像模型",
+      "object": "，支持透明图像与最多 10 张参考图",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "image_generation",
+          "name": "图像生成",
+          "entityIds": [
+            "EN-bae152c4560df38c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "image_generation",
+          "name": "图像生成",
+          "entityIds": [
+            "EN-bae152c4560df38c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "image_generation",
+          "name": "图像生成",
+          "entityIds": [
+            "EN-bae152c4560df38c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-bae152c4560df38c",
+        "EN-047364b9be67f665",
+        "EN-62a6bfd36e0a6abe"
+      ],
+      "entityNames": [
+        "阿里千问",
+        "Alibaba",
+        "Qwen-Image-2.1"
+      ],
+      "productName": "Qwen-Image-2.1",
+      "products": [
+        {
+          "name": "Qwen-Image-2.1",
+          "type": "模型",
+          "ownerNames": [
+            "Alibaba"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/1/004/989.htm",
+      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-dc0ef21764be2db1",
@@ -2800,6 +2898,49 @@
       "lastSeen": "2026-08-01"
     },
     {
+      "id": "EN-7526d4e7adc9673e",
+      "name": "阿里通义千问",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-9be76c1882a810e5"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-image_generation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-22",
+      "lastSeen": "2026-09-22"
+    },
+    {
+      "id": "EN-1f9bfd088b15331d",
+      "name": "Alibaba's Qwen AI team",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6e92e04d93656021"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-open_weights",
+        "TX-technology-image_generation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-20",
+      "lastSeen": "2026-09-22"
+    },
+    {
       "id": "EN-bae152c4560df38c",
       "name": "阿里千问",
       "entityType": "organization_candidate",
@@ -2826,28 +2967,6 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-10",
-      "lastSeen": "2026-09-21"
-    },
-    {
-      "id": "EN-1f9bfd088b15331d",
-      "name": "Alibaba's Qwen AI team",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-6e92e04d93656021"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-open_weights",
-        "TX-technology-image_generation"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-09-20",
       "lastSeen": "2026-09-21"
     },
     {
@@ -2978,6 +3097,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-91ecc81010a43bd9",
         "EV-1d5c66256df950a5",
         "EV-800958e92cf5e67f",
         "EV-440866c21881868f",
@@ -3243,8 +3363,9 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
-        "EV-054a8623f9abdbb7",
+        "EV-5bd4ad184627c301",
         "EV-fd18ed4c81ae1791",
+        "EV-054a8623f9abdbb7",
         "EV-b739349cfab7e41c",
         "EV-36defc1d19f0ce5d",
         "EV-6d4ba6a553d0564c",
@@ -3366,9 +3487,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-government_public_sector",
+        "TX-industry-financial_services",
+        "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-agentic_execution",
+        "TX-industry-government_public_sector",
         "TX-product_form-chip_accelerator",
         "TX-target_user-developer",
         "TX-target_user-researcher",
@@ -3376,13 +3500,10 @@
         "TX-target_user-consumer",
         "TX-product_form-developer_tool",
         "TX-use_case-software_development",
-        "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
-        "TX-product_form-enterprise_software_platform",
         "TX-use_case-research_discovery",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-end_user_application",
         "TX-product_form-model",
         "TX-industry-media_entertainment",
@@ -3402,8 +3523,8 @@
         "TX-technology-computer_use",
         "TX-technology-long_context",
         "TX-technology-reasoning",
-        "TX-technology-inference_optimization",
         "TX-technology-guardrails_safety",
+        "TX-technology-inference_optimization",
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
@@ -3434,7 +3555,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-21"
+      "lastSeen": "2026-09-22"
     },
     {
       "id": "EN-9fbf261b62c1d7c0",
@@ -3584,6 +3705,7 @@
         "EV-d596f111808bd55b",
         "EV-a4f052325d0ef230",
         "EV-6ce6b9c9780b97d9",
+        "EV-bc025a501363e4f3",
         "EV-59d06d776297a3cd",
         "EV-cbc06e90ef8b24f7",
         "EV-2160d6fb3bcc2a5f",
@@ -3614,9 +3736,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-use_case-data_analysis",
         "TX-target_user-consumer",
         "TX-product_form-model",
@@ -3642,7 +3764,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-09-20"
+      "lastSeen": "2026-09-22"
     },
     {
       "id": "EN-4721e06a8b6d85ff",
@@ -3737,6 +3859,8 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-321d51eb98ef76ef",
+        "EV-a1c1e9084f310dba",
         "EV-8172a6e59ebdf375",
         "EV-1c6c587c3d2e084a",
         "EV-5937621f596074a3",
@@ -3949,22 +4073,22 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
+        "TX-industry-financial_services",
+        "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-target_user-developer",
         "TX-technology-embodied_ai",
         "TX-target_user-consumer",
         "TX-use_case-software_development",
-        "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
         "TX-product_form-ai_compute_system",
-        "TX-product_form-enterprise_software_platform",
         "TX-use_case-research_discovery",
         "TX-ai_market_application-computing_infrastructure",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-end_user_application",
         "TX-product_form-model",
         "TX-industry-retail_ecommerce",
@@ -4005,7 +4129,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-09-21"
+      "lastSeen": "2026-09-22"
     },
     {
       "id": "EN-ea3bd73e2b506e00",
@@ -4048,6 +4172,7 @@
         "EV-9efcf6480f6c6f48",
         "EV-cf76f090a1a20a36",
         "EV-43301de739fe560e",
+        "EV-a1c1e9084f310dba",
         "EV-375bbf9c7fae65e9",
         "EV-7bffdadf9a6e467e",
         "EV-a347b644cd5d2d31",
@@ -4138,15 +4263,15 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
+        "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-product_form-chip_accelerator",
         "TX-use_case-data_analysis",
         "TX-target_user-consumer",
         "TX-use_case-software_development",
         "TX-industry-healthcare_life_sciences",
-        "TX-product_form-enterprise_software_platform",
         "TX-ai_market_category-enterprise_applications",
         "TX-product_form-end_user_application",
         "TX-product_form-model",
@@ -4178,7 +4303,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-12",
-      "lastSeen": "2026-09-21"
+      "lastSeen": "2026-09-22"
     },
     {
       "id": "EN-534e99d81da1c54d",
@@ -4280,12 +4405,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-physical_automation",
+        "TX-product_form-enterprise_software_platform",
         "TX-technology-agentic_execution",
+        "TX-use_case-physical_automation",
         "TX-product_form-chip_accelerator",
         "TX-technology-embodied_ai",
         "TX-use_case-software_development",
-        "TX-product_form-enterprise_software_platform",
         "TX-use_case-research_discovery",
         "TX-product_form-model",
         "TX-industry-media_entertainment",
@@ -4331,6 +4456,7 @@
         "EV-97fdf068afbbe555",
         "EV-47a84a0f1a85c29c",
         "EV-6c361125c3f50bb6",
+        "EV-10e1ebf738d9a122",
         "EV-650e4b23d45d5758",
         "EV-c157bdbedac35fa3",
         "EV-d1d36268ff74be0e",
@@ -4351,6 +4477,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-enterprise_software_platform",
         "TX-technology-agentic_execution",
         "TX-technology-video_generation",
         "TX-technology-image_generation"
@@ -4359,7 +4486,7 @@
         "EN-4f96127fdacbb405"
       ],
       "firstSeen": "2026-04-09",
-      "lastSeen": "2026-09-19"
+      "lastSeen": "2026-09-22"
     }
   ],
   "fde": [],

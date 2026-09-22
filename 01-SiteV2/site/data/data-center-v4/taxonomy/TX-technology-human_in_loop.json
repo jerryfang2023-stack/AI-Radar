@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-22T00:38:00.371Z",
-    "latestDataDate": "2026-09-21",
-    "currentDate": "2026-09-21",
-    "eventCount": 3463,
+    "generatedAt": "2026-09-22T00:32:07.024Z",
+    "latestDataDate": "2026-09-22",
+    "currentDate": "2026-09-22",
+    "eventCount": 3487,
     "quarantinedEventCount": 37,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -57,6 +57,7 @@
     "typeLabel": "技术",
     "valueId": "human_in_loop",
     "eventIds": [
+      "EV-84fc5a50962cfc89",
       "EV-fe63a869fe4cee45",
       "EV-b600caa2f74af16f",
       "EV-243e73016576fa43",
@@ -65,6 +66,7 @@
       "EV-9576bebb698a4c66"
     ],
     "entityIds": [
+      "EN-01b3d337c12353f3",
       "EN-c70eca6b0f88f44d",
       "EN-240389f4b730bad4",
       "EN-9fbf261b62c1d7c0"
@@ -74,9 +76,122 @@
     ],
     "hardwareIds": [],
     "firstSeen": "2026-06-11",
-    "lastSeen": "2026-09-10"
+    "lastSeen": "2026-09-22"
   },
   "events": [
+    {
+      "id": "EV-84fc5a50962cfc89",
+      "dataDate": "2026-09-22",
+      "date": "2026-09-20",
+      "updatedDate": "2026-09-22",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "eventGroup": "商业合作",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "全省首个政府采购智能体应用平台上线",
+      "originalTitle": "",
+      "subject": "全省首个政府",
+      "action": "采购",
+      "object": "智能体应用平台上线",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-01b3d337c12353f3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "human_in_loop",
+          "name": "人在回路",
+          "entityIds": [
+            "EN-01b3d337c12353f3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-01b3d337c12353f3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "human_in_loop",
+          "name": "人在回路",
+          "entityIds": [
+            "EN-01b3d337c12353f3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-01b3d337c12353f3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "human_in_loop",
+          "name": "人在回路",
+          "entityIds": [
+            "EN-01b3d337c12353f3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-01b3d337c12353f3"
+      ],
+      "entityNames": [
+        "全省首个政府"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://changzhou.gov.cn/ns_news/167178988881207",
+      "publisher": "changzhou.gov.cn"
+    },
     {
       "id": "EV-fe63a869fe4cee45",
       "dataDate": "2026-07-26",
@@ -792,6 +907,28 @@
   ],
   "entities": [
     {
+      "id": "EN-01b3d337c12353f3",
+      "name": "全省首个政府",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-84fc5a50962cfc89"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-human_in_loop"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-20",
+      "lastSeen": "2026-09-22"
+    },
+    {
       "id": "EN-c70eca6b0f88f44d",
       "name": "Anthropic",
       "entityType": "organization_candidate",
@@ -1122,6 +1259,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-bc025a501363e4f3",
         "EV-054a8623f9abdbb7",
         "EV-b739349cfab7e41c",
         "EV-36defc1d19f0ce5d",
@@ -1237,9 +1375,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-government_public_sector",
+        "TX-industry-financial_services",
+        "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-agentic_execution",
+        "TX-industry-government_public_sector",
         "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-chip_accelerator",
         "TX-target_user-developer",
@@ -1251,12 +1392,9 @@
         "TX-target_user-educator",
         "TX-ai_market_subcategory-development_deployment",
         "TX-use_case-software_development",
-        "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
-        "TX-product_form-enterprise_software_platform",
         "TX-use_case-research_discovery",
         "TX-product_form-compute_cloud_service",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-model",
         "TX-industry-media_entertainment",
         "TX-industry-retail_ecommerce",
@@ -1271,8 +1409,8 @@
         "TX-technology-long_context",
         "TX-technology-model_context_protocol",
         "TX-technology-guardrails_safety",
-        "TX-technology-tool_use",
         "TX-technology-human_in_loop",
+        "TX-technology-tool_use",
         "TX-technology-distillation"
       ],
       "relatedEntityIds": [
@@ -1303,7 +1441,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-09-21"
+      "lastSeen": "2026-09-22"
     },
     {
       "id": "EN-240389f4b730bad4",
@@ -1353,16 +1491,16 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-enterprise_software_platform",
+        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
         "TX-product_form-robotic_system",
         "TX-use_case-physical_automation",
-        "TX-technology-agentic_execution",
         "TX-product_form-chip_accelerator",
         "TX-technology-embodied_ai",
         "TX-product_form-developer_tool",
         "TX-use_case-software_development",
         "TX-product_form-ai_compute_system",
-        "TX-product_form-enterprise_software_platform",
         "TX-technology-human_in_loop"
       ],
       "relatedEntityIds": [
@@ -1523,6 +1661,7 @@
         "EV-d596f111808bd55b",
         "EV-a4f052325d0ef230",
         "EV-6ce6b9c9780b97d9",
+        "EV-bc025a501363e4f3",
         "EV-59d06d776297a3cd",
         "EV-cbc06e90ef8b24f7",
         "EV-2160d6fb3bcc2a5f",
@@ -1553,9 +1692,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-use_case-data_analysis",
         "TX-target_user-consumer",
         "TX-product_form-model",
@@ -1581,7 +1720,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-09-20"
+      "lastSeen": "2026-09-22"
     }
   ],
   "fde": [
