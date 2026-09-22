@@ -5,13 +5,13 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-09-21T00:39:13.515Z",
+    "generated_at": "2026-09-22T00:31:46.639Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 488,
-    "input_hash": "263aefcb4f40b535",
+    "decision_count": 489,
+    "input_hash": "c1b5df4e3822ab14",
     "override_count": 18,
     "needs_review_count": 55,
     "low_confidence_count": 75
@@ -9764,6 +9764,25 @@
       "confidence": 0.8,
       "needs_review": false,
       "rationale": "公司产品为车规级功率模块和AI级SST模块等芯片级硬件，为AI数据中心和整车供电架构提供底层硬件支持，属于基础设施计算中的硬件芯片。"
+    },
+    {
+      "event_id": "EV-eadf57952ad76a26",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "financial_services",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "financial_services"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "产品专为银行、保险等金融机构的统一产品运营而建，围绕金融行业专业数据与工作流，因此归入行业应用而非通用企业应用。"
     }
   ]
 }
