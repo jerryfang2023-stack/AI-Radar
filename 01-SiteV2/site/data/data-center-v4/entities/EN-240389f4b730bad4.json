@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-22T00:32:07.024Z",
+    "generatedAt": "2026-09-22T03:45:38.642Z",
     "latestDataDate": "2026-09-22",
     "currentDate": "2026-09-22",
-    "eventCount": 3487,
+    "eventCount": 3493,
     "quarantinedEventCount": 37,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -1686,25 +1686,25 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-financial_services",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
-        "TX-use_case-productivity_enterprise_workflows",
-        "TX-technology-agentic_execution",
-        "TX-industry-government_public_sector",
-        "TX-ai_market_category-infrastructure_compute",
-        "TX-product_form-chip_accelerator",
         "TX-target_user-developer",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-industry-healthcare_life_sciences",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
+        "TX-use_case-research_discovery",
+        "TX-industry-financial_services",
+        "TX-technology-agentic_execution",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-industry-government_public_sector",
+        "TX-product_form-chip_accelerator",
         "TX-technology-embodied_ai",
         "TX-target_user-consumer",
         "TX-industry-education",
         "TX-target_user-educator",
-        "TX-ai_market_subcategory-development_deployment",
         "TX-use_case-software_development",
-        "TX-industry-healthcare_life_sciences",
-        "TX-use_case-research_discovery",
         "TX-product_form-compute_cloud_service",
         "TX-product_form-model",
         "TX-industry-media_entertainment",
@@ -2035,7 +2035,11 @@
       "typeLabel": "产品形态",
       "valueId": "enterprise_software_platform",
       "eventIds": [
+        "EV-33df10f232e26f29",
+        "EV-4bc690025cbda146",
+        "EV-6f7ec978fd8ad3fc",
         "EV-eadf57952ad76a26",
+        "EV-fbb4b961191efa55",
         "EV-1043d78cc040ab30",
         "EV-f077c91cb2fd9179",
         "EV-bdd574fb9ee91b4d",
@@ -2224,7 +2228,10 @@
         "EV-7580a050ca19a8ae"
       ],
       "entityIds": [
+        "EN-2cee85064ca8de3f",
+        "EN-bc06be2cba2b2f2c",
         "EN-5dd3b777303686d3",
+        "EN-e7d56af70143fcd7",
         "EN-295219ea74639f0b",
         "EN-4bb042ef8e3060a4",
         "EN-cfec5bef40cbf3ae",
@@ -3425,6 +3432,7 @@
       "typeLabel": "行业",
       "valueId": "manufacturing",
       "eventIds": [
+        "EV-fbb4b961191efa55",
         "EV-3c7609d3fc7b7ec8",
         "EV-bdd1611cc17c3325",
         "EV-b0637e99e328479b",
@@ -3637,6 +3645,7 @@
         "EV-2c7d13d234147817"
       ],
       "entityIds": [
+        "EN-e7d56af70143fcd7",
         "EN-0213fcbfa6055593",
         "EN-c386ba3b954748fa",
         "EN-cfec5bef40cbf3ae",
@@ -3989,7 +3998,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-09-21"
+      "lastSeen": "2026-09-22"
     },
     {
       "id": "TX-use_case-physical_automation",
@@ -4398,7 +4407,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-09-21"
+      "lastSeen": "2026-09-22"
     },
     {
       "id": "TX-product_form-chip_accelerator",
@@ -4678,7 +4687,7 @@
         "HW-4c176e4c40871adc"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-21"
+      "lastSeen": "2026-09-22"
     },
     {
       "id": "TX-technology-embodied_ai",

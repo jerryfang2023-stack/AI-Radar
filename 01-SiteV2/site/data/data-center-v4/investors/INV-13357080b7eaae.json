@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-22T00:32:07.024Z",
+    "generatedAt": "2026-09-22T03:45:38.642Z",
     "latestDataDate": "2026-09-22",
     "currentDate": "2026-09-22",
-    "eventCount": 3487,
+    "eventCount": 3493,
     "quarantinedEventCount": 37,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -59,22 +59,71 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 0,
-    "china_market_company_count": 0,
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
     "first_disclosed_at": "2026-06-24",
-    "latest_disclosed_at": "2026-06-24",
+    "latest_disclosed_at": "2026-09-21",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 1,
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "multi_round"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-e7d56af70143fcd7",
+        "canonical_entity_id": "",
+        "name": "数巅智能"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-12ceebb5fc8885cd",
+        "funding_insight_id": "FI-1c45f6b3bea32aad",
+        "event_ids": [
+          "EV-fbb4b961191efa55"
+        ],
+        "company_entity_id": "EN-e7d56af70143fcd7",
+        "company_canonical_entity_id": "",
+        "company_name": "数巅智能",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-09-21",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-f5fa738edf400dda",
+            "source_url": "https://news.pedaily.cn/202609/569430.shtml",
+            "source_title": "数巅智能再获数亿元融资，以数据智能体推动企业业务流程全面智能化",
+            "source_content_hash": "8dda700ee0f559df",
+            "quote": "君联、赛富、红鸟启航资本等老股东则连续多轮追加",
+            "quote_hash": "b98c030161f5126c41d6af31e8c235113c3824f7c1ef7dac35c4ad75b1e1f96f"
+          }
+        ]
+      },
       {
         "activity_id": "IA-6b9e57f01c685cb6",
         "funding_insight_id": "FI-a23f361cdc15f347",
@@ -117,6 +166,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-f5fa738edf400dda",
+        "source_url": "https://news.pedaily.cn/202609/569430.shtml",
+        "source_title": "数巅智能再获数亿元融资，以数据智能体推动企业业务流程全面智能化",
+        "source_content_hash": "8dda700ee0f559df",
+        "quote": "君联、赛富、红鸟启航资本等老股东则连续多轮追加",
+        "quote_hash": "b98c030161f5126c41d6af31e8c235113c3824f7c1ef7dac35c4ad75b1e1f96f"
+      },
       {
         "source_id": "FISRC-7f2f81aa1ff4be86",
         "source_url": "https://www.163.com/dy/article/KQ181F7O0550B1DU.html",

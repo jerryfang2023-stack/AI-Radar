@@ -2,7 +2,7 @@ import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { hydrateRawDocument } from "./lib/private-evidence-store.mjs";
-import { isWithdrawnFundingTitle } from "./lib/funding-transaction-status.mjs";
+import { isWithdrawnFundingTitle, isPendingFundingTitle } from "./lib/funding-transaction-status.mjs";
 
 export const FUNDING_INSIGHT_VERSION = "FUNDING-INSIGHT-V1.3";
 export const FUNDING_INSIGHT_FRONTSTAGE_VERSION = "FUNDING-INSIGHT-FRONTSTAGE-V1.5";
@@ -1116,7 +1116,8 @@ export function fundingEventCardConsistencyProblems(card = {}, event = {}, claim
   // Recheck persisted/recovered cards, not only fresh generation eligibility.
   if ((event.event_status && !["announced", "completed"].includes(event.event_status))
     || ["withdrawn", "disputed", "quarantined", "partial"].includes(event.publication_status)
-    || isWithdrawnFundingTitle(event.display_title_zh)) return ["funding_event_not_completed"];
+    || isWithdrawnFundingTitle(event.display_title_zh)
+    || isPendingFundingTitle(event.display_title_zh)) return ["funding_event_not_completed"];
   const acceptedClaims = claims.filter((claim) => (event.claim_refs || []).includes(claim.claim_id)
     && claim.claim_type === "funding" && claim.verification_status === "accepted");
   if (acceptedClaims.some((claim) => /\bseries\s+[a-g]\s+\d+\s*(?:hours?|days?|weeks?|months?|years?)\b/iu.test(claim.source_quote || ""))
@@ -1453,6 +1454,7 @@ export function isEligibleFundingInsightEvent(event = {}, claims = []) {
     && event.publication_status === "verified"
     && Boolean(event.display_title_zh)
     && !isWithdrawnFundingTitle(event.display_title_zh)
+    && !isPendingFundingTitle(event.display_title_zh)
     && !fundingTrancheDisclosureNeedsReview(event, claims)
     && !fundingCombinedRoundsNeedReview(event, claims)
     && Boolean(normalizeFundingAmount(canonicalFundingEventAmount(event, claims)).currency);

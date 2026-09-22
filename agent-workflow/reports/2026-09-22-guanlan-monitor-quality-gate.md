@@ -1,6 +1,6 @@
 # 2026-09-22 Guanlan Monitor Quality Gate
 
-- generated_at: 2026-09-22T00:28:27.431Z
+- generated_at: 2026-09-22T03:41:21.798Z
 - attempt: 1/1
 - status: passed
 - production_weekday: tuesday
@@ -9,39 +9,39 @@
 - total_score: 0
 - diagnostic_score_reference: 85
 - score_mode: diagnostic_only
-- raw_count: 240
+- raw_count: 317
 - structured_supply_healthy: true
-- pool_count: 210
-- pool_index_count: 210
-- routed_pool_count: 169
+- pool_count: 282
+- pool_index_count: 282
+- routed_pool_count: 226
 - legacy_origin_fetch_status_inferred_count: 0
-- index_only_pool_count: 41
+- index_only_pool_count: 56
 - aihot_index_only_count: 10
 - aihot_core_count: 23
 - keyword_search_non_community_count: 108
 - non_community_paths_hit: official_original, developer_ecosystem, capital_startup, industry_landing, procurement_marketplace, a_media_gdelt
-- ai_relevant_title_ratio: 0.767
+- ai_relevant_title_ratio: 0.625
 - off_topic_title_count: 0
-- core_pool_count: 167
+- core_pool_count: 216
 - core_pool_min_effective: 1
 - core_pool_min_default: 1
-- usable_core_evidence_count: 167
+- usable_core_evidence_count: 216
 - usable_core_evidence_min_effective: 1
 - usable_core_evidence_min_default: 1
-- core_evidence_strength_distribution: rich_evidence=167
+- core_evidence_strength_distribution: rich_evidence=216
 - core_blocked_evidence_count: 0
 - core_traceable_summary_count: 0
 - core_source_backed_event_count: 0
-- core_rich_evidence_count: 167
+- core_rich_evidence_count: 216
 - homepage_directory_core_count: 0
 - core_text_contamination_count: 0
 - core_raw_qc_block_count: 0
 - core_raw_qc_degraded_count: 0
-- core_large_vendor_count: 43
-- core_non_large_vendor_count: 124
+- core_large_vendor_count: 45
+- core_non_large_vendor_count: 171
 - core_non_large_vendor_min_effective: 0
 - core_non_large_vendor_min_default: 0
-- core_large_vendor_ratio: 0.257
+- core_large_vendor_ratio: 0.208
 - aihot_resolved_evidence_count: 23
 - aihot_resolved_core_count: 23
 - importance_coverage_gaps: none
@@ -61,14 +61,14 @@
 - coverage_scope (undefined): 0
 - keyword_compliance (undefined): 0
 - strategic_alignment (undefined): 0
-- importance_readiness (10): 9.18
+- importance_readiness (10): 9.06
 
 ## Hard Gates
 
-- pool_count_min: passed (210/15)
-- routed_pool_count_min: passed (169/10)
-- core_pool_min: passed (167/1)
-- usable_core_evidence_min: passed (167/1)
+- pool_count_min: passed (282/15)
+- routed_pool_count_min: passed (226/10)
+- core_pool_min: passed (216/1)
+- usable_core_evidence_min: passed (216/1)
 - homepage_directory_core_max: passed (0/0)
 - core_text_contamination_max: passed (0/0)
 - core_raw_qc_block_max: passed (0/0)
@@ -76,9 +76,9 @@
 
 ## Diagnostics
 
-- raw_count_min: passed (240/150)
+- raw_count_min: passed (317/150)
 - keyword_search_non_community_min: passed (108/6)
-- ai_relevant_title_ratio_min: passed (0.77/0.7)
+- ai_relevant_title_ratio_min: passed (0.62/0.7; diagnostic_recovered_by_structured_supply=true)
 - off_topic_title_max: passed (0/3)
 - importance_coverage_gaps: passed (none)
 - pool_importance_coverage_gaps: warning (important_case=2/5; important_funding=4/5)
@@ -87,7 +87,7 @@
 
 - unrecovered_failed_sources=8
 - pool_importance_coverage_gaps=important_case=2/5; important_funding=4/5
-- core_large_vendor=43/10; ratio=0.26/0.35
+- core_large_vendor=45/10; ratio=0.21/0.35
 
 ## Recovered Diagnostics
 
@@ -95,6 +95,7 @@
 
 ## Skill Feedback
 
+- Tighten Raw AI relevance anchors and noise filters before accepting candidates.
 - Repair Pool importance coverage before downstream assets; each required importance type needs the configured Pool minimum.
 - Keep provider failures diagnostic; repair the deficient evidence-supply bucket through any available source channel.
 
@@ -102,7 +103,7 @@
 
 - level: allow_with_notes
 - action: Allow the V4 factual build to proceed with noted source-supply diagnostics.
-- reasons: Pool importance coverage gaps remain | source-provider failures remain visible as supply diagnostics
+- reasons: AI relevance insufficient | Pool importance coverage gaps remain | source-provider failures remain visible as supply diagnostics
 
 ## Inputs
 

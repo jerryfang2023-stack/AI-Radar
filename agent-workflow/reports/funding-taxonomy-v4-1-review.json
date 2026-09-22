@@ -5,16 +5,16 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-09-14T04:54:48.872Z",
+    "generated_at": "2026-09-22T03:40:47.758Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 450,
-    "input_hash": "a082777049007589",
+    "decision_count": 493,
+    "input_hash": "95e59e9cc189eb1a",
     "override_count": 18,
-    "needs_review_count": 50,
-    "low_confidence_count": 65
+    "needs_review_count": 55,
+    "low_confidence_count": 76
   },
   "decisions": [
     {
@@ -9011,6 +9011,864 @@
       "confidence": 0.85,
       "needs_review": false,
       "rationale": "智谱AI is a large model company offering GLM series models and MaaS API services. The core offering is a foundation model and model API, fitting infrastructure_compute > development_deployment > models. Product form is model (with model_api_service also relevant, but model is the primary classification). Use cases are broad due to general-purpose LLM capabilities. Industries are broad as the model is horizontal. Target users include developers, business users, researchers, educators, and students. No physical AI or AI device evidence."
+    },
+    {
+      "event_id": "EV-04bcb24d608a931c",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "financial_services",
+      "market_application_id": "",
+      "product_form_id": "end_user_application",
+      "use_case_ids": [
+        "data_analysis",
+        "research_discovery",
+        "knowledge_search",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "financial_services"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "证据显示讯兔科技专注于为公募、私募、券商研究所、保险及一级市场投资机构提供金融数据服务与智能化投研工具，产品围绕金融行业专业数据与投研工作流构建，符合行业应用分类。"
+    },
+    {
+      "event_id": "EV-d98c10d4cba51686",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "healthcare_life_sciences",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "research_discovery",
+        "data_analysis"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "researcher"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "公司核心产品是AI+物理的变构药物研发平台，围绕制药行业的专业数据、调控机制和难成药靶标工作流构建，属于行业应用而非通用基础设施或物理AI。"
+    },
+    {
+      "event_id": "EV-6aaa17d9c372e513",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "公司专注于机器人动力系统、关节模组、灵巧手等核心零部件，直接服务于机器人的物理感知、决策与执行，属于物理AI范畴。"
+    },
+    {
+      "event_id": "EV-0ac10579ff64fe74",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "logistics_supply_chain"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "公司推出端到端大模型驱动的分拣机器人，在物流场景中自主感知、决策并执行分拣动作，属于物理AI。"
+    },
+    {
+      "event_id": "EV-7326768782ff1e4e",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "logistics_supply_chain"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "公司产品为通用拣选机器人，具备感知、决策与物理执行能力，直接作用于物理世界，符合Physical AI定义；客户为物流企业，故行业为物流供应链。"
+    },
+    {
+      "event_id": "EV-3fdc9ad98818c36b",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "observability_evaluation",
+      "market_application_id": "ai_observability_governance",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "security_operations",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "financial_services",
+        "manufacturing",
+        "retail_ecommerce",
+        "media_entertainment",
+        "professional_services"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "developer"
+      ],
+      "confidence": 0.82,
+      "needs_review": false,
+      "rationale": "亿格云提供零信任SASE、XDR、XDLP等企业安全与治理基础设施，明确面向AI时代的人与Agent统一治理，属于基础设施计算中的模型/智能体安全与AI可观测治理，而非单一行业应用或物理AI。"
+    },
+    {
+      "event_id": "EV-4238c51fcdad7bd4",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "security_operations",
+        "data_analysis"
+      ],
+      "industry_ids": [
+        "government_public_sector",
+        "professional_services"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "developer"
+      ],
+      "confidence": 0.75,
+      "needs_review": false,
+      "rationale": "深度内核提供主权AI基础设施，重点在可信计算边界、机密计算、远程证明等，属于基础设施计算中的硬件计算/计算基础设施。产品形态为AI基础设施软件，主要面向企业和开发者，用于安全运营和数据分析场景。"
+    },
+    {
+      "event_id": "EV-b137470f59491f6a",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "observability_evaluation",
+      "market_application_id": "model_agent_security",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "security_operations"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.72,
+      "needs_review": true,
+      "rationale": "证据显示公司提供可信AI基础设施，包括机密计算、远程证明、执行管控与审计留痕，属于为AI训练和推理构建可信域的安全基础设施，归入基础设施计算下的可观测/安全子类。但证据未明确其产品是面向模型/智能体安全还是更广义的AI安全治理，故标记需复核。"
+    },
+    {
+      "event_id": "EV-a38a33003b0d6d08",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "financial_services",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "research_discovery",
+        "data_analysis",
+        "knowledge_search",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "financial_services"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "产品围绕金融投研工作流，整合金融数据、研究工具、办公套件和知识库，属于金融行业专用应用，而非跨行业企业应用或基础设施。"
+    },
+    {
+      "event_id": "EV-63a4b6ce48e14829",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "financial_services",
+      "market_application_id": "",
+      "product_form_id": "end_user_application",
+      "use_case_ids": [
+        "research_discovery",
+        "data_analysis",
+        "knowledge_search",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "financial_services"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.88,
+      "needs_review": false,
+      "rationale": "核心产品Alpha派是AI投研助理，从会议纪要切入投研工作流，属于金融行业专用应用；PaiWork为投研工作台，整体围绕金融投研场景。"
+    },
+    {
+      "event_id": "EV-e5763ba54217d88a",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "industrials",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "data_analysis",
+        "physical_automation",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Arch Systems 的产品围绕制造业的机器连接、数据管理和缺陷/停机事件处理，属于单一行业专业数据与工作流，因此归为行业应用而非通用企业应用。"
+    },
+    {
+      "event_id": "EV-37cc66ca2e29a78c",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "telecommunications"
+      ],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.75,
+      "needs_review": true,
+      "rationale": "Cornelis 提供 AI 芯片间高性能网络解决方案，属于基础设施计算，但证据未明确其产品是纯软件还是包含硬件，且缺少客户与使用场景细节，故标记需复核。"
+    },
+    {
+      "event_id": "EV-05b635c3958e4591",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "marketing",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "marketing",
+        "content_creation",
+        "data_analysis"
+      ],
+      "industry_ids": [
+        "retail_ecommerce",
+        "media_entertainment"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Profound 提供跨行业营销软件，帮助品牌优化 AI 搜索结果，属于企业应用中的营销子类。"
+    },
+    {
+      "event_id": "EV-1c399d2db39c05a3",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "automotive_transportation"
+      ],
+      "target_user_ids": [
+        "consumer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "产品为L4级Robotaxi量产车型，具备多传感器感知、计算决策并直接执行自动驾驶，属于在物理世界中感知、决策和行动的物理AI，而非仅提供基础设施或行业应用。"
+    },
+    {
+      "event_id": "EV-b9ef27cd1fd9b9a9",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "chips",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "元川微 is developing LPU+ chips for AI inference, which are hardware accelerators. The company fits infrastructure_compute > hardware_computing > chips. The chip is designed for multimodal and MoE models, targeting developers and AI infrastructure. Physical automation is not directly applicable, but the chip could be used in robotics; however, the primary use case is AI inference acceleration. Target users are developers building AI systems."
+    },
+    {
+      "event_id": "EV-c997b93aa153720b",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "data_analysis",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.72,
+      "needs_review": false,
+      "rationale": "产品是面向企业数据、规则、流程与大模型能力的企业级智能体平台，未限定单一行业，且不直接控制物理设备，因此归入跨行业企业应用；证据提到面向国央企和民营制造企业，但产品本身是通用数据智能平台。"
+    },
+    {
+      "event_id": "EV-77887cf446f03ba4",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "financial_services",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "finance_accounting",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "financial_services"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "产品围绕财富管理、现金管理、基金、债券、保险等金融行业专属数据和流程构建，客户为商业银行、券商、家族办公室等金融机构，属于行业应用中的金融服务。"
+    },
+    {
+      "event_id": "EV-91459f0d9446f471",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "healthcare_life_sciences",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "research_discovery"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "researcher"
+      ],
+      "confidence": 0.78,
+      "needs_review": false,
+      "rationale": "公司为AI制药公司，核心团队、算法平台及管线资产均围绕药物研发这一医疗生命科学行业专属工作流，属于行业应用。"
+    },
+    {
+      "event_id": "EV-c96705c69e11c520",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "healthcare_life_sciences",
+      "market_application_id": "",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "research_discovery",
+        "design_engineering"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "researcher",
+        "developer"
+      ],
+      "confidence": 0.82,
+      "needs_review": false,
+      "rationale": "产品围绕药物发现、抗体设计等生命科学专业工作流构建，属于行业应用而非通用基础设施。"
+    },
+    {
+      "event_id": "EV-1d9cf73bba2debcc",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "public_sector_user",
+        "researcher"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "手术机器人平台通过VLA大模型感知、决策并执行物理操作，符合Physical AI定义。"
+    },
+    {
+      "event_id": "EV-b0637e99e328479b",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "industrials",
+      "market_application_id": "",
+      "product_form_id": "end_user_application",
+      "use_case_ids": [
+        "design_engineering",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "automotive_transportation"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "developer"
+      ],
+      "confidence": 0.78,
+      "needs_review": false,
+      "rationale": "则形AI直接生成工业设计方案，围绕工业设计专业工作流，客户为制造与汽车企业，属于工业行业应用。"
+    },
+    {
+      "event_id": "EV-47f16317cc2d62e2",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user",
+        "consumer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "小鹏IRON是AI驱动的人形机器人，具备76个自由度并直接执行物理动作，符合Physical AI“感知、决策、行动于物理世界”的定义，而非仅世界模型或未来规划。"
+    },
+    {
+      "event_id": "EV-3db9a076e3b7d4fd",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "chips",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "元川微 is an AI inference chip startup (LPU+ architecture) focused on multimodal and MoE model acceleration. The company's product is a chip accelerator, which fits the infrastructure_compute > hardware_computing > chips hierarchy. The primary use case is physical automation as the chip is designed for AI inference in physical systems, and the target user is developer since the chip is intended for integration by developers building AI systems."
+    },
+    {
+      "event_id": "EV-26a5749d8604455a",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "compute_cloud_service",
+      "use_case_ids": [],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Crusoe is a data center developer and cloud provider for AI infrastructure. Its products include Crusoe Cloud (bare metal/virtualized instances), modular data centers (Spark), and managed inference. This maps to infrastructure_compute > hardware_computing > computing_infrastructure. The product form is compute_cloud_service. Target users are developers who use cloud compute. No specific use case or industry is clearly indicated beyond general AI infrastructure."
+    },
+    {
+      "event_id": "EV-ed8323204ab69697",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "knowledge_search",
+        "data_analysis",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.7,
+      "needs_review": true,
+      "rationale": "证据显示Hobie是读取企业实时系统、建模业务并回答可溯源问题的智能体平台，属于跨行业企业工作流，而非单一行业或物理AI/基础设施。但证据未明确具体行业，且产品细节有限，故标记需复核。"
+    },
+    {
+      "event_id": "EV-40d4ce6d936d4d49",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "product_form_id": "compute_cloud_service",
+      "use_case_ids": [],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Crusoe is a data center developer and AI cloud provider offering compute infrastructure, including modular data centers and large-scale installations for AI training. This maps to infrastructure_compute > hardware_computing > computing_infrastructure. The product form is compute_cloud_service, and the primary target users are developers."
+    },
+    {
+      "event_id": "EV-f077c91cb2fd9179",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "productivity_enterprise_workflows",
+        "knowledge_search",
+        "data_analysis"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.7,
+      "needs_review": true,
+      "rationale": "证据显示Vantora通过COSMOS统一企业运营数据并供AI流程和自主代理使用，属于跨行业的企业工作流平台，而非单一行业应用或物理AI。但证据未明确其是否直接向AI构建者提供基础设施，故归入企业应用并标记需复核。"
+    },
+    {
+      "event_id": "EV-412f7ce21693dc13",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "chips",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "logistics_supply_chain"
+      ],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "公司核心产品为旭日系列芯片，面向机器人端侧计算场景，属于为其他AI产品提供算力硬件的芯片供应商，因此归入基础设施计算-硬件计算-芯片。客户为机器人厂商，使用场景涉及物理自动化，行业覆盖制造与物流供应链。"
+    },
+    {
+      "event_id": "EV-375d04f7cc9746c6",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "chips",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "证据显示公司研发AI芯片系统，面向基础模型推理并降低数据中心能耗，属于为AI构建者提供硬件/算力基础设施，归入infrastructure_compute > hardware_computing > chips。"
+    },
+    {
+      "event_id": "EV-1043d78cc040ab30",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "healthcare_life_sciences",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "research_discovery",
+        "design_engineering"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "researcher",
+        "developer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "证据显示公司由字节跳动AI制药业务拆分，产品为AI药物研发平台和分子结构预测模型，围绕制药行业专业数据与工作流，应归入industry_applications > healthcare_life_sciences，而非通用模型基础设施。"
+    },
+    {
+      "event_id": "EV-06f2bca776e5cee7",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "ai_development_orchestration",
+      "product_form_id": "developer_tool",
+      "use_case_ids": [
+        "software_development"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "researcher"
+      ],
+      "confidence": 0.8,
+      "needs_review": false,
+      "rationale": "证据显示公司提供量子软件工具，包括编译器、模拟器和量子EDA，服务于量子计算开发者，属于开发部署基础设施，归入infrastructure_compute > development_deployment > ai_development_orchestration。"
+    },
+    {
+      "event_id": "EV-2c2f903622c29ba4",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "chips",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "automotive_transportation"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "奕行智能 develops RISC-V AI computing chips and AI compute nodes, including Epoch series AI chips and RISC-V AI supernodes for data centers, as well as ELYNX automotive AI chips. The primary product is chip accelerators for AI compute infrastructure, fitting infrastructure_compute > hardware_computing > chips. The automotive chip line also supports physical automation in vehicles, but the core funding focus is AI compute chips."
+    },
+    {
+      "event_id": "EV-bdd574fb9ee91b4d",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "industrials",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "design_engineering"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "automotive_transportation"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "产品围绕工业设计这一特定行业工作流，直接生成工业设计方案，客户为东风、中车、商飞、奔驰、特斯拉等制造与汽车交通企业，符合行业应用而非跨行业企业应用或物理AI。"
+    },
+    {
+      "event_id": "EV-d5d58c23fa179e23",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "consumer_retail",
+      "market_application_id": "",
+      "product_form_id": "ai_device",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "consumer"
+      ],
+      "confidence": 0.7,
+      "needs_review": true,
+      "rationale": "产品为宠物穿戴设备、摄像头和窝垫，直接面向宠物主消费者，围绕宠物健康与行为监测这一特定消费场景，属于行业应用中的消费零售，而非通用企业应用或基础设施。"
+    },
+    {
+      "event_id": "EV-bdd1611cc17c3325",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "data",
+      "market_application_id": "synthetic_data",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "physical_automation",
+        "data_analysis"
+      ],
+      "industry_ids": [
+        "manufacturing",
+        "automotive_transportation"
+      ],
+      "target_user_ids": [
+        "developer",
+        "researcher"
+      ],
+      "confidence": 0.75,
+      "needs_review": false,
+      "rationale": "公司核心产品为触觉传感器、触觉具身模型和触觉交互数据集，为机器人等AI产品提供数据与模型基础设施，属于基础设施计算中的数据合成与开发部署。"
+    },
+    {
+      "event_id": "EV-3c7609d3fc7b7ec8",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "energy_utilities",
+        "government_public_sector",
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "public_sector_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "公司自研四足机器狗和人形机器人，具备自主导航、环境感知与智能决策能力，直接作用于物理世界，符合物理AI定义。"
+    },
+    {
+      "event_id": "EV-d959c800774d5d30",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "energy_utilities",
+        "government_public_sector",
+        "education"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "public_sector_user",
+        "educator"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "公司自研四足机器狗和全尺寸人形机器人，产品已进入电力、石化、消防、安防、应急、教育等行业，直接执行物理世界任务，属于物理AI。"
+    },
+    {
+      "event_id": "EV-b9be18b12b1714f3",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "chips",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "automotive_transportation",
+        "energy_utilities"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.8,
+      "needs_review": false,
+      "rationale": "公司产品为车规级功率模块和AI级SST模块等芯片级硬件，为AI数据中心和整车供电架构提供底层硬件支持，属于基础设施计算中的硬件芯片。"
+    },
+    {
+      "event_id": "EV-eadf57952ad76a26",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "financial_services",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "financial_services"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "产品专为银行、保险等金融机构的统一产品运营而建，围绕金融行业专业数据与工作流，因此归入行业应用而非通用企业应用。"
+    },
+    {
+      "event_id": "EV-4bc690025cbda146",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "healthcare_life_sciences",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "research_discovery",
+        "data_analysis"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "researcher"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "公司核心产品为AI药物发现平台AnewDDE及生物分子预测模型，围绕制药行业的专业数据与工作流构建，属于行业应用而非通用基础设施。"
+    },
+    {
+      "event_id": "EV-fbb4b961191efa55",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "ai_development_orchestration",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "data_analysis",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "financial_services",
+        "telecommunications",
+        "energy_utilities",
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "developer"
+      ],
+      "confidence": 0.75,
+      "needs_review": false,
+      "rationale": "公司核心产品是数据智能体基础设施及数字员工操作系统，为其他AI应用提供开发与部署底座，属于基础设施中的开发部署层；AskBI等智能体是构建在该基础设施上的应用，但证据强调基础设施定位，故归入infrastructure_compute。"
+    },
+    {
+      "event_id": "EV-33df10f232e26f29",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "industrials",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "productivity_enterprise_workflows",
+        "design_engineering"
+      ],
+      "industry_ids": [
+        "automotive_transportation"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "developer"
+      ],
+      "confidence": 0.8,
+      "needs_review": false,
+      "rationale": "产品围绕智能汽车座舱的垂域数据、车载推理模型和AIOS框架构建，属于汽车行业专用工作流，而非通用基础设施或跨行业企业应用。"
+    },
+    {
+      "event_id": "EV-6f7ec978fd8ad3fc",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "industrials",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "productivity_enterprise_workflows",
+        "design_engineering"
+      ],
+      "industry_ids": [
+        "automotive_transportation"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "developer"
+      ],
+      "confidence": 0.8,
+      "needs_review": false,
+      "rationale": "证据显示公司提供智能车中间件、SOA通信框架及座舱AI全栈系统，深度绑定汽车行业架构与工作流，应归为行业应用而非基础设施。"
     }
   ],
   "inputs": [
@@ -9216,6 +10074,48 @@
       }
     },
     {
+      "event_id": "EV-fbb4b961191efa55",
+      "funding_insight_id": "FI-c85edfcb046a283b",
+      "company_name": "北京数巅科技有限公司",
+      "company_full_name": "北京数巅科技有限公司",
+      "website": "",
+      "current_sector": "企业数据智能体基础设施与数字员工",
+      "company_evidence_quotes": [
+        "北京数巅科技有限公司（下称“数巅智能”）成立于2022年，致力于实现“让数据智能像水电一样简单”的愿景，为企业提供数据智能体基础设施及各类智能体场景应用，助力AI产业发展从通用大模型向领域专精升级。"
+      ],
+      "products": [
+        {
+          "name": "RUI Source 睿源决策智能操作系统",
+          "evidence_quotes": [
+            "数巅智能发布的RUI Source 睿源决策智能操作系统，明确了数字员工的「四阶进化路径」：闲聊问答 → 单点任务 → 流程闭环 → 全职岗位替代。作为统一智能劳动力载体，RUI Source 集成 AskRUI、AskDoc 等多款标准化数字员工，支持多智能体协同；员工日常作业自动沉淀行业数据，反向迭代模型，形成「越用越聪明」的飞轮。"
+          ]
+        },
+        {
+          "name": "AskRUI 数据员工",
+          "evidence_quotes": [
+            "本次 WAIC 主推的 AskRUI 数据分析系列（“小睿”）正是前文所述“查数99%准、秒级响应”能力的落地载体，已具备中等专业数据分析师能力，覆盖数据统计、生产运营、金融风控等岗位"
+          ]
+        },
+        {
+          "name": "AskBI 生成式分析智能体",
+          "evidence_quotes": [
+            "一是 AskBI 生成式分析智能体 ，面向经营分析场景。业务人员无需掌握 SQL、数据分析技能，仅用自然语言提问，即可自动完成指标拆解、数据查询、可视化出图、异动归因、趋势预测，原本数天的财务、经营分析工作缩短至秒级反馈，已在各大银行、电信集团落地，实现 “人人都是数据分析师”"
+          ]
+        }
+      ],
+      "customer_names": [
+        "国家电网",
+        "中石油",
+        "中国移动",
+        "浦发银行",
+        "中国宝武"
+      ],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
       "event_id": "EV-be59d9048dd1b6a0",
       "funding_insight_id": "FI-ca07008ee604703d",
       "company_name": "北京小雨智造科技有限公司",
@@ -9292,6 +10192,78 @@
       "current_classification": {
         "product_form_id": "robotic_system",
         "market_category_id": "physical_ai"
+      }
+    },
+    {
+      "event_id": "EV-c997b93aa153720b",
+      "funding_insight_id": "FI-c5dec686d4056956",
+      "company_name": "北京悦点科技有限公司",
+      "company_full_name": "北京悦点科技有限公司",
+      "website": "https://www.brightendata.cn",
+      "current_sector": "企业级智能体与数据智能",
+      "company_evidence_quotes": [
+        "北京悦点科技有限公司（简称：悦点科技）是一家专注企业级智能体与数据智能技术的企业。",
+        "悦点科技成立于 2022 年，专注企业级智能体与数据智能技术。"
+      ],
+      "products": [
+        {
+          "name": "Knora-AI数据智能体平台",
+          "evidence_quotes": [
+            "自主研发的Knora-AI数据智能体平台，以多智能体(Mult-Agent)架构、业务领域本体(Ontology)及自丰协作机制为核心，打通企业数据、规则、流程与大模型能力，打造可理解业务、可自主执行、可持续演进的企业智能体。",
+            "悦点科技因此将产品面向大型国央企和民营制造企业等客户，希望由数据应用进一步进入生产与管理环节。"
+          ]
+        },
+        {
+          "name": "Knora-Data",
+          "evidence_quotes": [
+            "Knora-Data · 数据智能分析"
+          ]
+        }
+      ],
+      "customer_names": [
+        "HKC",
+        "国方资本",
+        "中财"
+      ],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
+      }
+    },
+    {
+      "event_id": "EV-06f2bca776e5cee7",
+      "funding_insight_id": "FI-e9c9a6238a93d9dd",
+      "company_name": "北京中科弧光量子软件技术有限公司",
+      "company_full_name": "北京中科弧光量子软件技术有限公司",
+      "website": "",
+      "current_sector": "量子软件与量子计算应用",
+      "company_evidence_quotes": [
+        "北京中科弧光量子软件技术有限公司（简称“弧光量子”）是一家专注于量子软件和量子计算应用的高科技公司。"
+      ],
+      "products": [
+        {
+          "name": "量子EDA",
+          "evidence_quotes": [
+            "底层硬件侧，弧光量子提供量子芯片设计与测控工具，包括量子EDA、芯片缺陷检测、测控系统和纠错解码，帮助硬件团队在芯片造出来之前就能完成设计验证和调试，已在国内顶 尖超导芯片的实际产线使用。"
+          ]
+        },
+        {
+          "name": "isQ编译器",
+          "evidence_quotes": [
+            "开发工具侧，弧光量子做的是量子计算机的“操作系统级”工具——编译器。简单说，就是把开发者写的量子程序，翻译并优化成不同硬件能执行的指令。"
+          ]
+        },
+        {
+          "name": "SymFT模拟器",
+          "evidence_quotes": [
+            "在量子模拟领域，弧光量子先后形成SOFT、SymFT等模拟器。最新SymFT在单CPU核心上模拟表面码线路时，相较国际主流模拟器Stim实现约2.5倍性能提升，在魔法态培养等场景相较Clifft最高提升3.51倍。"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "developer_tool",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -10040,6 +11012,47 @@
       "customer_names": [],
       "current_classification": {
         "product_form_id": "model",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-3fdc9ad98818c36b",
+      "funding_insight_id": "FI-814db3f53a8fd2aa",
+      "company_name": "杭州亿格云科技有限公司",
+      "company_full_name": "杭州亿格云科技有限公司",
+      "website": "https://www.eagleyun.com",
+      "current_sector": "企业安全与AI治理",
+      "company_evidence_quotes": [
+        "杭州亿格云科技有限公司（以下简称：亿格云）是一家企业一体化零信任安全办公解决方案供应商，为超过500万终端提供保护，正在成为AI时代企业安全与治理的基础设施。"
+      ],
+      "products": [
+        {
+          "name": "云枢",
+          "evidence_quotes": [
+            "亿格云依托自研一体化平台“云枢”，践行智能生产力治理原则：管好企业里每一个行动主体，实现人与Agent统一治理。"
+          ]
+        },
+        {
+          "name": "亿格云枢平台",
+          "evidence_quotes": [
+            "亿格云自主研发的零信任SASE产品亿格云枢平台，提供零信任安全访问、终端安全防护(XDR)、数据安全防护(XDLP)、全球应用加速的一站式办公安全解决方案"
+          ]
+        },
+        {
+          "name": "亿格云XDR",
+          "evidence_quotes": [
+            "亿格云 XDR 构建本地引擎 + 云端协同 + 行为分析的三层检测体系，依托全球 300 万+ 终端威胁情报，实现从已知威胁拦截到未知攻击发现的能力跃升。"
+          ]
+        }
+      ],
+      "customer_names": [
+        "零跑汽车",
+        "小红书",
+        "广联达",
+        "老虎国际"
+      ],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
         "market_category_id": "infrastructure_compute"
       }
     },
@@ -11075,6 +12088,43 @@
       }
     },
     {
+      "event_id": "EV-6aaa17d9c372e513",
+      "funding_insight_id": "FI-93997daa66cf0e5b",
+      "company_name": "南京因克斯智能科技有限公司",
+      "company_full_name": "南京因克斯智能科技有限公司",
+      "website": "http://www.encos.cn",
+      "current_sector": "具身智能核心零部件",
+      "company_evidence_quotes": [
+        "南京因克斯智能科技有限公司（以下简称：因克斯）成立于2022年，是一家专注于机器人动力系统核心技术研发与制造的高科技企业。",
+        "注册地址 南京市江宁区空港经济技术开发区飞天大道69号3号实验楼228室（江宁开发区）"
+      ],
+      "products": [
+        {
+          "name": "关节模组",
+          "evidence_quotes": [
+            "因克斯已推出第二代关节模组产品。二代关节不仅实现了性能的进一步迭代升级，还带来一项关键性革新——模块化快拆设计。"
+          ]
+        },
+        {
+          "name": "动力系统解决方案",
+          "evidence_quotes": [
+            "运动控制能力，对应由“关节模组 + 智能电池 + 通信模块”组成的动力系统解决方案"
+          ]
+        },
+        {
+          "name": "末端执行系统解决方案",
+          "evidence_quotes": [
+            "智能操作能力，对应由“灵巧手 + 数采手套”组成的末端执行系统解决方案"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "robotic_system",
+        "market_category_id": "physical_ai"
+      }
+    },
+    {
       "event_id": "EV-88158ddf272e4731",
       "funding_insight_id": "FI-9abe249350b11512",
       "company_name": "欧拉万象",
@@ -11215,6 +12265,51 @@
       "current_classification": {
         "product_form_id": "robotic_system",
         "market_category_id": "physical_ai"
+      }
+    },
+    {
+      "event_id": "EV-bdd1611cc17c3325",
+      "funding_insight_id": "FI-f6f7f89f3da4f119",
+      "company_name": "千觉机器人",
+      "company_full_name": "千觉机器人",
+      "website": "",
+      "current_sector": "具身智能触觉感知",
+      "company_evidence_quotes": [
+        "千觉成立于2024年5月，由上海交通大学教授、ICRA 2021全球唯一最佳论文奖得主马道林创立。",
+        "上海具身触觉公司 千觉机器人 宣布连续 完成两轮数亿元战略融资"
+      ],
+      "products": [
+        {
+          "name": "高精度三色光视触觉传感器",
+          "evidence_quotes": [
+            "硬件层，千觉机器人自研了 高精度三色光视触觉传感器 ，触觉传感器系列覆盖 夸克N1、精灵Elf、光子Photon、GS-PS 等产品，可输出原始图像、差分图像、三维可视化、切向信息、深度图及六维力等多模态数据，支持三维形貌测量、纹理识别、三维分布力、滑移检测、运动追踪等功能。",
+            "据其介绍， 三色光视触觉传感器已实现万片级量产。"
+          ]
+        },
+        {
+          "name": "X-TouchMind V1触觉具身模型",
+          "evidence_quotes": [
+            "该公司推出了 X-TouchMind V1视觉—触觉—语言—动作（VTLA）多模态模型 及多个多模态触觉模型。"
+          ]
+        },
+        {
+          "name": "TacVerse触觉交互数据集",
+          "evidence_quotes": [
+            "数据层，千觉机器人自研 XTac UMI G1穿戴式数采设备 ，配套 TacVerse触觉交互数据集 。今年7月，千觉机器人发布 TacVerse 1k ，是该公司发布的首批1000小时视触觉多模态具身数据集。",
+            "TacVerse 1k依托自研采集硬件体系，数据采集成本可下降 80% 以上，效率提升3到5倍。"
+          ]
+        }
+      ],
+      "customer_names": [
+        "智元机器人",
+        "谷歌",
+        "宁德时代",
+        "欧莱雅",
+        "得物"
+      ],
+      "current_classification": {
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -11939,6 +13034,67 @@
       }
     },
     {
+      "event_id": "EV-1d9cf73bba2debcc",
+      "funding_insight_id": "FI-37e02bd38bfea214",
+      "company_name": "上海思博慧医科技有限公司",
+      "company_full_name": "上海思博慧医科技有限公司",
+      "website": "",
+      "current_sector": "医疗健康",
+      "company_evidence_quotes": [
+        "上海思博慧医科技有限公司（以下简称“思博慧医”）是一家专注于全自动磁控介入手术机器人研发的公司。"
+      ],
+      "products": [
+        {
+          "name": "全自动磁控介入手术机器人平台",
+          "evidence_quotes": [
+            "思博慧医潜心研发了全球首台AI智能体全程参与的磁控介入手术平台。该平台旨在实现手术全流程自动化，以大幅降低准入门槛，缩短培训周期，抹平医生间的水平差异，从而提升整体医疗质量。",
+            "在算法层面，平台由VLA（视觉-语言-动作）大模型驱动，通过在物理仿真世界模型里做大量的自我强化学习，能够精准模拟顶级专家的手术策略与操作手法。"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "robotic_system",
+        "market_category_id": "physical_ai"
+      }
+    },
+    {
+      "event_id": "EV-1043d78cc040ab30",
+      "funding_insight_id": "FI-77f7509a57ee32b1",
+      "company_name": "上海新生探途科技有限公司",
+      "company_full_name": "上海新生探途科技有限公司",
+      "website": "",
+      "current_sector": "AI制药",
+      "company_evidence_quotes": [
+        "新生探途成立于2026年7月，总部位于上海市杨浦区，是一家由字节跳动AI制药业务线拆分而来的AI制药公司。"
+      ],
+      "products": [
+        {
+          "name": "AnewFold",
+          "evidence_quotes": [
+            "截至目前，公司公开披露的产品组合包括AnewFold、AnewSampling、AnewOmni、AnewDesign和AnewMind"
+          ]
+        },
+        {
+          "name": "Protenix",
+          "evidence_quotes": [
+            "早期发布分子结构预测模型Protenix与Seedfold；当前迭代Protenix至v2版本"
+          ]
+        },
+        {
+          "name": "PXDesign",
+          "evidence_quotes": [
+            "推出蛋白结合剂设计工具PXDesign，搭建起端到端AI药物研发平台"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
+      }
+    },
+    {
       "event_id": "EV-89ec502a1340079a",
       "funding_insight_id": "FI-6068d3b0fa0a22d2",
       "company_name": "上海以太之心科技有限公司",
@@ -11967,6 +13123,68 @@
       "current_classification": {
         "product_form_id": "ai_infrastructure_software",
         "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-d98c10d4cba51686",
+      "funding_insight_id": "FI-55397cb9c404e73a",
+      "company_name": "上海宇道生物技术有限公司",
+      "company_full_name": "上海宇道生物技术有限公司",
+      "website": "http://www.allonutshell.com/",
+      "current_sector": "AI制药/变构药物研发",
+      "company_evidence_quotes": [
+        "上海宇道生物技术有限公司以下简称（“ 宇道生物 （ NUTSHELL Therapeutics ） ”） 是一家 基于 “ AI+物理 ” 调控蛋白构象、突破难成药 靶标 的头部 AI原生Biotech 企业 。"
+      ],
+      "products": [
+        {
+          "name": "AlloStar™",
+          "evidence_quotes": [
+            "公司 基于蛋白构象调控核心 科技 搭建的 干湿结合 研发平台 AlloStar TM ，可系统性攻克 不同 疾病领域的难成药靶 标",
+            "AlloStar ™平台内置 AlloWaves 模块，融合物理模型与 AI 算法完成蛋白隐藏功能位点的识别与表征； AlloLig 模块则基于 Diffusion Model、Flow Model 等前沿生成式 AI 模型"
+          ]
+        },
+        {
+          "name": "AlloMatrix",
+          "evidence_quotes": [
+            "公司在蛋白构象调控领域搭建起全球规模领先、源于湿实验的 标准化 数据库"
+          ]
+        },
+        {
+          "name": "Dalretapopt（NTS071）",
+          "evidence_quotes": [
+            "宇道生物 p53 Y220C 小分子重激活剂项目依托 AlloWaves 模块完成变构位点表征，设计得到具备皮 摩尔级 变构激动活性的临床候选化合物 Dalretapopt （NTS071）。"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
+      }
+    },
+    {
+      "event_id": "EV-1c399d2db39c05a3",
+      "funding_insight_id": "FI-cc260ab424e940a9",
+      "company_name": "上海造父智能科技有限公司",
+      "company_full_name": "上海造父智能科技有限公司",
+      "website": "",
+      "current_sector": "自动驾驶出行服务",
+      "company_evidence_quotes": [
+        "哈啰旗下Robotaxi业务（上海造父智能科技有限公司）宣布完成约1亿美金新一轮融资"
+      ],
+      "products": [
+        {
+          "name": "HR1（Hello Robot1）",
+          "evidence_quotes": [
+            "HR1（Hello Robot1）是哈啰Robotaxi面向规模化运营打造的首 款量产L4车型",
+            "主副两套计算单元，合并算力超过2200 TOPS，支持14个高精度相机，8个激光雷达和6个毫米波雷达"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "robotic_system",
+        "market_category_id": "physical_ai"
       }
     },
     {
@@ -12010,6 +13228,131 @@
       "current_classification": {
         "product_form_id": "enterprise_software_platform",
         "market_category_id": "industry_applications"
+      }
+    },
+    {
+      "event_id": "EV-b0637e99e328479b",
+      "funding_insight_id": "FI-63b6e7a62d6c3705",
+      "company_name": "设序科技",
+      "company_full_name": "设序科技",
+      "website": "",
+      "current_sector": "AI工业设计",
+      "company_evidence_quotes": [
+        "这家AI公司叫设序科技，目标是做“工业界的Anthropic”——Anthropic教会了AI写代码，设序科技则要教AI造机器。",
+        "名字可能听起来陌生，但已经完成了六轮融资，累计金额超3亿元，上半年刚完成B轮超亿元。"
+      ],
+      "products": [
+        {
+          "name": "则形AI",
+          "evidence_quotes": [
+            "设序科技的“则形AI”则会根据需求直接生成完整的工业设计方案。过去需要花费工程师几十个小时完成的方案，“则形AI”几分钟就能生成一版。",
+            "针对通用大模型的短板，设序科技自研了实体几何物理基础模型。不同于通用模型“看图猜结构”，该模型从硬件实体模态出发，提前掌握零件公差、装配边界、加工条件等底层逻辑"
+          ]
+        }
+      ],
+      "customer_names": [
+        "东风",
+        "中车",
+        "商飞",
+        "奔驰",
+        "特斯拉"
+      ],
+      "current_classification": {
+        "product_form_id": "end_user_application",
+        "market_category_id": "industry_applications"
+      }
+    },
+    {
+      "event_id": "EV-bdd574fb9ee91b4d",
+      "funding_insight_id": "FI-ad7e52af8e98cfb5",
+      "company_name": "设序科技",
+      "company_full_name": "设序科技",
+      "website": "",
+      "current_sector": "AI工业设计",
+      "company_evidence_quotes": [
+        "这家AI公司叫设序科技，目标是做“工业界的Anthropic”——Anthropic教会了AI写代码，设序科技则要教AI造机器。",
+        "设序科技的“则形AI”则会根据需求直接生成完整的工业设计方案。"
+      ],
+      "products": [
+        {
+          "name": "则形AI",
+          "evidence_quotes": [
+            "设序科技的“则形AI”则会根据需求直接生成完整的工业设计方案。过去需要花费工程师几十个小时完成的方案，“则形AI”几分钟就能生成一版。",
+            "设序科技要做的并非一款“更聪明的CAD工具”，而是一个“AI工业智能体”。"
+          ]
+        }
+      ],
+      "customer_names": [
+        "东风",
+        "中车",
+        "商飞",
+        "奔驰",
+        "特斯拉"
+      ],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
+      }
+    },
+    {
+      "event_id": "EV-4238c51fcdad7bd4",
+      "funding_insight_id": "FI-c18ef00b96197827",
+      "company_name": "深度内核（DeepKernel）",
+      "company_full_name": "深度内核（DeepKernel）",
+      "website": "",
+      "current_sector": "主权AI基础设施",
+      "company_evidence_quotes": [
+        "主权AI（Sovereign AI）基础设施公司深度内核（DeepKernel）宣布完成数千万元人民币种子轮融资",
+        "深度内核是一家主权AI基础设施服务商，旨在让企业在使用先进AI技术的同时，保留对数据、智能体轨迹、学习闭环及已积累智能的控制权，确保智能资产归企业所有。"
+      ],
+      "products": [
+        {
+          "name": "主权AI三层架构",
+          "evidence_quotes": [
+            "深度内核将主权AI的构建拆解为三层",
+            "在第 一层计算层，深度内核破解了企业AI部署的两难困境。团队基于密码学、可信芯片与分布式系统，为AI训练和推理基础设施建立明确且可强制执行的信任边界（Trusted Computing Boundary）"
+          ]
+        },
+        {
+          "name": "数据空间可信AI基础设施解决方案",
+          "evidence_quotes": [
+            "联合宣布达成战略合作，共同发布数据空间可信AI基础设施解决方案",
+            "上层继续由清雁科技提供数据空间已有的业务能力，包括数字合约/签约、数据分级、出域审批工作流和管理控制台；下层由深度内核提供执行与验证能力，包括机密计算、远程证明、执行管控与审计留痕。"
+          ]
+        }
+      ],
+      "customer_names": [
+        "清雁科技"
+      ],
+      "current_classification": {
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-b137470f59491f6a",
+      "funding_insight_id": "FI-c8dd7f42bf3132f2",
+      "company_name": "深度内核（DeepKernel）",
+      "company_full_name": "深度内核（DeepKernel）",
+      "website": "",
+      "current_sector": "主权AI基础设施",
+      "company_evidence_quotes": [
+        "主权 AI（Sovereign AI）基础设施头部公司深度内核（DeepKernel）宣布完成数千万人民币种子轮融资",
+        "深度内核是一家主权AI基础设施服务商，旨在让企业在使用先进AI技术的同时，保留对数据、智能体轨迹、学习闭环及已积累智能的控制权，确保智能资产归企业所有。"
+      ],
+      "products": [
+        {
+          "name": "可信AI基础设施",
+          "evidence_quotes": [
+            "下层由深度内核提供执行与验证能力，包括机密计算、远程证明、执行管控与审计留痕。",
+            "基于可信芯片、密码学和分布式系统，为AI训练和推理构建端到端可信域，实现AI Trusted Computing（AITC）"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -12154,6 +13497,43 @@
       "current_classification": {
         "product_form_id": "robotic_system",
         "market_category_id": "physical_ai"
+      }
+    },
+    {
+      "event_id": "EV-412f7ce21693dc13",
+      "funding_insight_id": "FI-3baed7f0e4eeef88",
+      "company_name": "深圳地瓜机器人有限公司",
+      "company_full_name": "深圳地瓜机器人有限公司",
+      "website": "",
+      "current_sector": "具身智能基础设施与端侧算力芯片",
+      "company_evidence_quotes": [
+        "地瓜机器人脱胎于地平线，双方在机器人业务板块维持战略协同。"
+      ],
+      "products": [
+        {
+          "name": "旭日系列芯片",
+          "evidence_quotes": [
+            "已形成覆盖5~500 TOPS各算力段的完整产品布局，全面适配人形机器人、轮足机器人、四足机器狗、服务陪伴机器人、物流AMR等多样化端侧计算场景。",
+            "本次募集资金将主要用于旭日芯片多算力等级产品矩阵完善"
+          ]
+        },
+        {
+          "name": "RDK机器人开发者套件",
+          "evidence_quotes": [
+            "搭建贯通数据采集、模型训练、仿真验证、推理部署的软件平台"
+          ]
+        }
+      ],
+      "customer_names": [
+        "它石智航",
+        "千寻智能",
+        "自变量机器人",
+        "优必选",
+        "北京人形机器人创新中心"
+      ],
+      "current_classification": {
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -13140,6 +14520,32 @@
       }
     },
     {
+      "event_id": "EV-47f16317cc2d62e2",
+      "funding_insight_id": "FI-c96241e737132a62",
+      "company_name": "小鹏机器人业务",
+      "company_full_name": "小鹏机器人业务",
+      "website": "https://www.xpeng.com/",
+      "current_sector": "物理AI与人形机器人",
+      "company_evidence_quotes": [
+        "小鹏集团总部位于中国广州",
+        "小鹏IRON定位为极致拟人、AI驱动、具备最高标准安全品质的高阶人形机器人，目标是成为下一代通用人形机器人平台"
+      ],
+      "products": [
+        {
+          "name": "小鹏IRON",
+          "evidence_quotes": [
+            "小鹏IRON定位为极致拟人、AI驱动、具备最高标准安全品质的高阶人形机器人，目标是成为下一代通用人形机器人平台",
+            "全身76个自由度，单手21个自由度，均处于行业领先水平"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "robotic_system",
+        "market_category_id": "physical_ai"
+      }
+    },
+    {
       "event_id": "EV-987cb2e5e20f79ce",
       "funding_insight_id": "FI-45963c2baf94d978",
       "company_name": "小鹏机器人业务",
@@ -13431,6 +14837,44 @@
       }
     },
     {
+      "event_id": "EV-77887cf446f03ba4",
+      "funding_insight_id": "FI-e26cedc396bba44f",
+      "company_name": "星路金融科技控股有限公司",
+      "company_full_name": "星路金融科技控股有限公司",
+      "website": "www.finloop.hk",
+      "current_sector": "财富科技",
+      "company_evidence_quotes": [
+        "AI驱动全球一站式财富科技平台星路金融科技控股有限公司（“星路科技”）宣布",
+        "星路金融科技控股有限公司及其子公司統稱「星路科技」，是位於香港的AI驅動全球一站式Web5（Web2+Web3）財富科技平台"
+      ],
+      "products": [
+        {
+          "name": "星企通（Finterprise）",
+          "evidence_quotes": [
+            "星路科技亦推出專為企業客户而設的一站式企業財富管理服務「星企通」（Finterprise），旨在為企業提供高效、安全的數字化解決方案，以滿足其財資及流動性管理需求"
+          ]
+        },
+        {
+          "name": "企业级AI财富管理平台",
+          "evidence_quotes": [
+            "星路科技已成功打造企业级AI财富管理平台，广泛覆盖现金管理、基金、结构性产品、债券、保险等全品类产品",
+            "星路科技已成功打造企業級AI財富管理平臺，廣泛覆蓋現金管理、基金、結構性產品、債券、保險及虛擬資產等全品類產品"
+          ]
+        }
+      ],
+      "customer_names": [
+        "商业银行",
+        "证券公司",
+        "家族办公室",
+        "财富管理公司",
+        "保险经纪公司"
+      ],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
+      }
+    },
+    {
       "event_id": "EV-696ff69f11f66191",
       "funding_insight_id": "FI-e7244d63992102a9",
       "company_name": "星熠智能",
@@ -13537,6 +14981,113 @@
       }
     },
     {
+      "event_id": "EV-04bcb24d608a931c",
+      "funding_insight_id": "FI-1dd4f2d097b05964",
+      "company_name": "讯兔科技",
+      "company_full_name": "讯兔科技",
+      "website": "https://rabyte.cn/",
+      "current_sector": "金融AI",
+      "company_evidence_quotes": [
+        "近日，中国金融AI领跑者讯兔科技正式完成 超3亿元 人民币B轮融资。",
+        "讯兔科技成立于2021年，总部位于上海，专注于为公募基金、私募基金、证券公司研究所、保险公司及一级市场投资机构提供高质量金融数据服务与智能化投研工具"
+      ],
+      "products": [
+        {
+          "name": "Alpha派",
+          "evidence_quotes": [
+            "讯兔科技旗下AI投研助理Alpha派从会议与信息处理等高频入口切入，逐步深入研究、分析与知识沉淀等核心投研工作流",
+            "专注于为公募基金、私募基金、证券公司研究所、保险公司及一级市场投资机构提供高质量金融数据服务与智能化投研工具"
+          ]
+        },
+        {
+          "name": "PaiWork",
+          "evidence_quotes": [
+            "2026年4月，讯兔科技推出行业首个 AI投研工作台PaiWork ，将金融数据、研究工具、办公套件、知识库整合进统一工作环境"
+          ]
+        },
+        {
+          "name": "iRaB投研实战评测体系",
+          "evidence_quotes": [
+            "2026年6月，公司推出 iRaB投研实战评测体系 ，以真实投研任务检验AI对任务的理解、分析与专业交付能力"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "end_user_application",
+        "market_category_id": "industry_applications"
+      }
+    },
+    {
+      "event_id": "EV-63a4b6ce48e14829",
+      "funding_insight_id": "FI-f9ecc33ddac65f14",
+      "company_name": "讯兔科技",
+      "company_full_name": "讯兔科技（上海）有限公司",
+      "website": "",
+      "current_sector": "金融AI",
+      "company_evidence_quotes": [
+        "金融AI领域头部公司讯兔科技近日正式完成超3亿元人民币B轮融资",
+        "讯兔科技创立于2021年。作为行业内第一个将AI技术成功落地于投资研究场景的应用"
+      ],
+      "products": [
+        {
+          "name": "Alpha派",
+          "evidence_quotes": [
+            "成立最初，讯兔科技通过旗下AI投研助理Alpha派从会议与信息处理等高频入口切入，后逐步深入研究、分析与知识沉淀等核心投研工作流",
+            "讯兔科技的核心产品「Alpha派」从会议这一核心痛点切入，凭借AI纪要助理迅速赢得了用户青睐"
+          ]
+        },
+        {
+          "name": "PaiWork",
+          "evidence_quotes": [
+            "今年4月，讯兔科技推出行业首 个AI投研工作台PaiWork"
+          ]
+        },
+        {
+          "name": "iRaB投研实战评测体系",
+          "evidence_quotes": [
+            "再到6月，继续推出iRaB投研实战评测体系和启动了ORE投研生态合作伙伴计划"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "end_user_application",
+        "market_category_id": "industry_applications"
+      }
+    },
+    {
+      "event_id": "EV-a38a33003b0d6d08",
+      "funding_insight_id": "FI-4ba12f222da5c88a",
+      "company_name": "讯兔科技",
+      "company_full_name": "讯兔科技（Alpha派）",
+      "website": "",
+      "current_sector": "金融AI投研",
+      "company_evidence_quotes": [
+        "近日，中国金融AI企业讯兔科技正式完成超3亿元人民币B轮融资。",
+        "讯兔科技旗下AI投研助理Alpha派从金融会议与信息处理等高频入口切入，逐步深入研究、分析与知识沉淀等核心投研工作流"
+      ],
+      "products": [
+        {
+          "name": "Alpha派",
+          "evidence_quotes": [
+            "讯兔科技旗下AI投研助理Alpha派从会议与信息处理等高频入口切入，逐步深入研究、分析与知识沉淀等核心投研工作流"
+          ]
+        },
+        {
+          "name": "PaiWork",
+          "evidence_quotes": [
+            "2026年4月，讯兔科技推出行业首个AI投研工作台PaiWork，将金融数据、研究工具、办公套件、知识库整合进统一工作环境"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
+      }
+    },
+    {
       "event_id": "EV-35fcdb4a96a2f814",
       "funding_insight_id": "FI-475bd728cb760ff4",
       "company_name": "贻如",
@@ -13567,6 +15118,75 @@
       }
     },
     {
+      "event_id": "EV-33df10f232e26f29",
+      "funding_insight_id": "FI-48e46a0dfe6cb7ea",
+      "company_name": "弋途科技",
+      "company_full_name": "弋途科技",
+      "website": "",
+      "current_sector": "智能汽车座舱AI化",
+      "company_evidence_quotes": [
+        "弋途科技（EXTURING）成立于2023年，是一家专注以AI Native全栈能力赋能座舱智能化、汽车AI化的创新型领 先企业。"
+      ],
+      "products": [
+        {
+          "name": "心界AI全栈系统",
+          "evidence_quotes": [
+            "2025年，弋途核心产品心界AI全栈系统问世；2026年北京车展，弋途心界 AI 全栈系统 2.0 与全球版座舱解决方案亮相",
+            "构建了覆盖车载垂域推理大模型、出行Agents集群、生成式AI交互及AIOS框架的完整技术矩阵"
+          ]
+        },
+        {
+          "name": "AICAR",
+          "evidence_quotes": [
+            "近期，弋途AICAR上线。弋途自研端侧模型及软硬一体成果也即将发布。"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
+      }
+    },
+    {
+      "event_id": "EV-6f7ec978fd8ad3fc",
+      "funding_insight_id": "FI-184399e67d9b6593",
+      "company_name": "弋途科技",
+      "company_full_name": "弋途科技",
+      "website": "",
+      "current_sector": "汽车智能化",
+      "company_evidence_quotes": [
+        "弋途科技（EXTURING）成立于2023年，是一家专注以AI Native全栈能力赋能座舱智能化、汽车AI化的创新型领 先企业。"
+      ],
+      "products": [
+        {
+          "name": "心界AI全栈系统",
+          "evidence_quotes": [
+            "2025年，弋途核心产品心界AI全栈系统问世",
+            "构建了覆盖车载垂域推理大模型、出行Agents集群、生成式AI交互及AIOS框架的完整技术矩阵"
+          ]
+        },
+        {
+          "name": "AICAR",
+          "evidence_quotes": [
+            "近期，弋途AICAR上线。弋途自研端侧模型及软硬一体成果也即将发布。",
+            "本轮融资旨在加速AICAR 的规模化推广，推动深度结合自研端侧模型的下一代 AICAR 落地积蓄纵深"
+          ]
+        },
+        {
+          "name": "智能车中间件平台",
+          "evidence_quotes": [
+            "弋途科技主要提供智能车中间件平台、整车SOA通信框架及相关开发、仿真、验证工具，为下一代电子电器架构提供整体解决方案。"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
+      }
+    },
+    {
       "event_id": "EV-71fc51b3d8e89851",
       "funding_insight_id": "FI-089bc1acaaf889fb",
       "company_name": "易启未来",
@@ -13592,6 +15212,74 @@
         }
       ],
       "customer_names": [],
+      "current_classification": {
+        "product_form_id": "robotic_system",
+        "market_category_id": "physical_ai"
+      }
+    },
+    {
+      "event_id": "EV-2c2f903622c29ba4",
+      "funding_insight_id": "FI-cf6f47c9a3154450",
+      "company_name": "奕行智能（北京）科技股份有限公司",
+      "company_full_name": "奕行智能（北京）科技股份有限公司",
+      "website": "",
+      "current_sector": "RISC-V云端AI算力芯片",
+      "company_evidence_quotes": [
+        "RISC-V云端AI算力芯片独角兽奕行智能（北京）科技股份有限公司（简称“奕行智能”）完成新一轮20亿元融资",
+        "成立于2022年初，奕行智能由西工大校友刘珲创立"
+      ],
+      "products": [
+        {
+          "name": "Epoch系列AI计算芯片",
+          "evidence_quotes": [
+            "其首代Epoch算力芯片产品已实现规模化量产交付",
+            "该系列芯片基于“RISC-V开源指令集+类TPU架构+VISA虚拟指令集”的差异化技术路线"
+          ]
+        },
+        {
+          "name": "RISC-V AI算力超节点",
+          "evidence_quotes": [
+            "业内首款RISC-V超节点也已量产上线",
+            "2026世界人工智能大会上，奕行智能发布业界首个RISC-V AI算力超节点，此后仅用两个多月就完成首套集群在运营商数据中心的部署落地"
+          ]
+        },
+        {
+          "name": "ELYNX系列车载AI芯片",
+          "evidence_quotes": [
+            "在先后开发了两代车载AI芯片并规模化量产的同时，顺应大模型应用场景爆发式增长的趋势，奕行智能团队还结合自研的AI计算架构，定义并开发了Epoch AI计算芯片"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-0ac10579ff64fe74",
+      "funding_insight_id": "FI-8109d72b6e9a6aa4",
+      "company_name": "寅成智能",
+      "company_full_name": "寅成智能",
+      "website": "",
+      "current_sector": "具身智能物流机器人",
+      "company_evidence_quotes": [
+        "专注于物流垂直领域具身智能研发与应用的寅成智能完成近亿元A轮融资",
+        "通用拣选机器人研发商寅成智能今日正式宣布完成千万美元级别的天使轮融资"
+      ],
+      "products": [
+        {
+          "name": "Starborn",
+          "evidence_quotes": [
+            "寅成智能推出 L2级高性能分拣机器人“Starborn” ，凭借自研的NECESSI端到端大模型，分拣速度实现1800件/小时，单台设备可替代2-3名人工，投资回报周期仅需1-1.5年。"
+          ]
+        }
+      ],
+      "customer_names": [
+        "顺丰速运",
+        "京东集团",
+        "中国邮政"
+      ],
       "current_classification": {
         "product_form_id": "robotic_system",
         "market_category_id": "physical_ai"
@@ -13635,6 +15323,36 @@
       }
     },
     {
+      "event_id": "EV-7326768782ff1e4e",
+      "funding_insight_id": "FI-471dcb46f9c8ee90",
+      "company_name": "寅成智能",
+      "company_full_name": "寅成智能",
+      "website": "",
+      "current_sector": "具身智能与物流机器人",
+      "company_evidence_quotes": [
+        "浦群妍创办的具身智能公司寅成智能完成近亿元的A轮融资",
+        "寅成智能成立于2023年，致力于打造高泛化、高智能的通用拣选机器人"
+      ],
+      "products": [
+        {
+          "name": "NECESSI具身智能端到端大模型",
+          "evidence_quotes": [
+            "公司自主研发的NECESSI具身智能端到端大模型，让机器人能像人一样“看懂”不同物品、自主判断如何抓取与放置"
+          ]
+        }
+      ],
+      "customer_names": [
+        "顺丰速运",
+        "申通快递",
+        "科捷股份",
+        "GOFO"
+      ],
+      "current_classification": {
+        "product_form_id": "robotic_system",
+        "market_category_id": "physical_ai"
+      }
+    },
+    {
       "event_id": "EV-d2409770301edc83",
       "funding_insight_id": "FI-e661b87a377fd997",
       "company_name": "银河通用机器人",
@@ -13668,6 +15386,58 @@
       "current_classification": {
         "product_form_id": "robotic_system",
         "market_category_id": "physical_ai"
+      }
+    },
+    {
+      "event_id": "EV-3db9a076e3b7d4fd",
+      "funding_insight_id": "FI-f921fdd2a231e6a5",
+      "company_name": "元川微",
+      "company_full_name": "元川微",
+      "website": "",
+      "current_sector": "AI推理芯片",
+      "company_evidence_quotes": [
+        "LPU创业公司元川微已完成Pre-A轮数亿元融资",
+        "公开资料显示，元川微成立于2025年9月"
+      ],
+      "products": [
+        {
+          "name": "LPU+",
+          "evidence_quotes": [
+            "同样采用这一命名的元川微，将其架构命名为LPU+，从设计之初便支持多模态模型。此外，作为Transformer时代的原生架构，LPU+还针对MoE（Mixture of Experts，混合专家）模型的动态调度特征进行优化。",
+            "杨滨强调LPU 的时空编译器、硬流水架构、大带宽存储 这三大 核心 很难区分谁的优先级更高"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-b9ef27cd1fd9b9a9",
+      "funding_insight_id": "FI-3246e463f2087afc",
+      "company_name": "元川微",
+      "company_full_name": "元川微",
+      "website": "",
+      "current_sector": "AI推理芯片",
+      "company_evidence_quotes": [
+        "公开资料显示，元川微成立于2025年9月",
+        "LPU创业公司元川微已完成Pre-A轮数亿元融资"
+      ],
+      "products": [
+        {
+          "name": "LPU+芯片",
+          "evidence_quotes": [
+            "同样采用这一命名的元川微，将其架构命名为LPU+，从设计之初便支持多模态模型。此外，作为Transformer时代的原生架构，LPU+还针对MoE（Mixture of Experts，混合专家）模型的动态调度特征进行优化。",
+            "杨滨强调LPU的时空编译器、硬流水架构、大带宽存储这三大核心很难区分谁的优先级更高"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -13774,6 +15544,44 @@
       "current_classification": {
         "product_form_id": "security_software",
         "market_category_id": "enterprise_applications"
+      }
+    },
+    {
+      "event_id": "EV-b9be18b12b1714f3",
+      "funding_insight_id": "FI-14f04ed0c11638ac",
+      "company_name": "浙江晶能微电子股份有限公司",
+      "company_full_name": "浙江晶能微电子股份有限公司",
+      "website": "https://www.geener.cn/",
+      "current_sector": "功率半导体与AI电力电子",
+      "company_evidence_quotes": [
+        "浙江晶能微电子股份有限公司（下称“晶能微电子”或“公司”）成立于2022年6月，是吉利科技集团功率与AI半导体产业平台。",
+        "浙江晶能微电子有限公司成立于2022年6月，是吉利科技集团功率与AI半导体产业平台。"
+      ],
+      "products": [
+        {
+          "name": "车规级功率模块",
+          "evidence_quotes": [
+            "公司产品体系已涵盖车规级功率模块、AI 级 SST 模块、嵌入式 SSCB 模块、多芯子钽电容等。",
+            "目前，晶能微电子针对400V、800V等整车EE架构，完成了多种产品研发，包括Si/SiC（碳化硅）基的全桥、半桥、单管及单开关模块。"
+          ]
+        },
+        {
+          "name": "AI级SST模块",
+          "evidence_quotes": [
+            "2026年6月发布了SST用SiC功率模块R2C，于行业首倡“AI级SiC模块”新标准，全面适配英伟达主导的下一代AI数据中心800V+SST供电架构。"
+          ]
+        },
+        {
+          "name": "嵌入式SSCB模块",
+          "evidence_quotes": [
+            "公司产品体系已涵盖车规级功率模块、AI 级 SST 模块、嵌入式 SSCB 模块、多芯子钽电容等。"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -14055,6 +15863,84 @@
       "current_classification": {
         "product_form_id": "model",
         "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-3c7609d3fc7b7ec8",
+      "funding_insight_id": "FI-2b01182be49534d7",
+      "company_name": "智身科技（GENISOM AI）",
+      "company_full_name": "智身科技（GENISOM AI）",
+      "website": "https://www.genisomai.com/",
+      "current_sector": "具身智能机器人",
+      "company_evidence_quotes": [
+        "智身科技（GENISOM AI）是专注于具身智能领域的创新科技企业",
+        "智身科技是一家具身智能全产业链技术服务商，全栈自研核心部件与整机，自研四足机器狗、全尺寸人形机器人等产品"
+      ],
+      "products": [
+        {
+          "name": "智身机器人",
+          "evidence_quotes": [
+            "智身机器人已经进入电力、石化、消防、安防、应急等多个行业",
+            "形成“一体双脑”核心架构：“大脑”负责自主导航、环境感知与智能决策，“小脑”负责运动控制与动力学能力"
+          ]
+        },
+        {
+          "name": "CHAMP系列高功率密度关节模组",
+          "evidence_quotes": [
+            "公司自主研发CHAMP系列高功率密度关节模组，目前年产能已突破100万件"
+          ]
+        }
+      ],
+      "customer_names": [
+        "电力行业客户",
+        "消防和应急场景客户",
+        "安防场景客户"
+      ],
+      "current_classification": {
+        "product_form_id": "robotic_system",
+        "market_category_id": "physical_ai"
+      }
+    },
+    {
+      "event_id": "EV-d959c800774d5d30",
+      "funding_insight_id": "FI-cee276f72af07a63",
+      "company_name": "智身科技（GENISOM AI）",
+      "company_full_name": "智身科技（GENISOM AI）",
+      "website": "https://www.genisomai.com/",
+      "current_sector": "具身智能机器人",
+      "company_evidence_quotes": [
+        "具身智能机器人企业智身科技（GENISOM AI）宣布完成数亿元人民币B轮融资",
+        "智身科技是一家具身智能全产业链技术服务商，全栈自研核心部件与整机，自研四足机器狗、全尺寸人形机器人等产品，已成功下线并接受国内外客户的检验。"
+      ],
+      "products": [
+        {
+          "name": "四足机器狗",
+          "evidence_quotes": [
+            "自研四足机器狗、全尺寸人形机器人等产品，已成功下线并接受国内外客户的检验",
+            "产品已进入电力、石化、消防、安防、应急、教育等多个行业"
+          ]
+        },
+        {
+          "name": "全尺寸人形机器人",
+          "evidence_quotes": [
+            "自研四足机器狗、全尺寸人形机器人等产品，已成功下线并接受国内外客户的检验"
+          ]
+        },
+        {
+          "name": "CHAMP系列高功率密度关节模组",
+          "evidence_quotes": [
+            "公司自主研发CHAMP系列高功率密度关节模组，目前年产能已突破100万件"
+          ]
+        }
+      ],
+      "customer_names": [
+        "电力行业客户",
+        "消防和应急场景客户",
+        "安防场景客户"
+      ],
+      "current_classification": {
+        "product_form_id": "robotic_system",
+        "market_category_id": "physical_ai"
       }
     },
     {
@@ -15278,6 +17164,104 @@
       }
     },
     {
+      "event_id": "EV-4bc690025cbda146",
+      "funding_insight_id": "FI-1d311d0979e2acdf",
+      "company_name": "Anew Labs（新生实验室）",
+      "company_full_name": "Anew Labs",
+      "website": "www.anewbt.com",
+      "current_sector": "AI制药",
+      "company_evidence_quotes": [
+        "AI制药公司Anew Labs（新生实验室）完成首轮独立融资",
+        "Anew Labs, the artificial intelligence-driven drug discovery venture spun out from Chinese tech giant ByteDance"
+      ],
+      "products": [
+        {
+          "name": "AnewDDE",
+          "evidence_quotes": [
+            "On Thursday it launched its AnewDDE agentic platform, which it said was designed to address “fragmented” AI workflows in drug discovery."
+          ]
+        },
+        {
+          "name": "Protenix",
+          "evidence_quotes": [
+            "Protenix, an open-source reproduction of AlphaFold 3, the most advanced biomolecular prediction AI model from Google DeepMind"
+          ]
+        },
+        {
+          "name": "AnewFold",
+          "evidence_quotes": [
+            "AnewFold, its in-house foundation model"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
+      }
+    },
+    {
+      "event_id": "EV-91459f0d9446f471",
+      "funding_insight_id": "FI-d680f5777827c36e",
+      "company_name": "Anew Labs（新生实验室）",
+      "company_full_name": "Anew Labs（新生实验室）",
+      "website": "",
+      "current_sector": "AI制药",
+      "company_evidence_quotes": [
+        "AI制药公司Anew Labs（新生实验室）日前已完成 首轮独立融资 ，融资总额 2.9 亿美元"
+      ],
+      "products": [
+        {
+          "name": "AI制药业务",
+          "evidence_quotes": [
+            "字节跳动将 AI 制药业务线拆分独立，核心团队、算法平台及已有管线资产整体注入新主体"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
+      }
+    },
+    {
+      "event_id": "EV-c96705c69e11c520",
+      "funding_insight_id": "FI-bbf0ff1638dafe21",
+      "company_name": "Anew Labs（新生实验室）",
+      "company_full_name": "Anew Labs",
+      "website": "https://anewbt.com/",
+      "current_sector": "AI制药",
+      "company_evidence_quotes": [
+        "品牌定为Anew Labs，中文名新生实验室",
+        "Anew Labs is headquartered in Shanghai and also has offices in Singapore and San Francisco."
+      ],
+      "products": [
+        {
+          "name": "AnewFold",
+          "evidence_quotes": [
+            "AnewFold for protein and molecular-complex structure prediction"
+          ]
+        },
+        {
+          "name": "AnewMind",
+          "evidence_quotes": [
+            "AnewMind, a scientific reasoning large language model focused on drug-discovery decisions"
+          ]
+        },
+        {
+          "name": "AnewDesign",
+          "evidence_quotes": [
+            "AnewDesign for antibody design and optimization"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "model",
+        "market_category_id": "industry_applications"
+      }
+    },
+    {
       "event_id": "EV-201b25d4f3cf696a",
       "funding_insight_id": "FI-87daf1ce6554f45d",
       "company_name": "Anthropic",
@@ -15486,6 +17470,46 @@
       "current_classification": {
         "product_form_id": "security_software",
         "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-e5763ba54217d88a",
+      "funding_insight_id": "FI-5354e8108118ce07",
+      "company_name": "Arch Systems",
+      "company_full_name": "Arch Systems",
+      "website": "https://archsys.io",
+      "current_sector": "制造智能与工业 AI",
+      "company_evidence_quotes": [
+        "Arch Systems is a manufacturing intelligence platform that combines a governed manufacturing data foundation with autonomous AI in a single platform."
+      ],
+      "products": [
+        {
+          "name": "ArchFX Platform",
+          "evidence_quotes": [
+            "The ArchFX Platform provides the machine connectivity, data management, and advanced insights needed to achieve digital transformation across the manufacturing organization."
+          ]
+        },
+        {
+          "name": "Arch AI",
+          "evidence_quotes": [
+            "AI agents that wake up, investigate every defect, downtime event and parameter deviation, and close the loop before a human is involved, automatically surfacing the correct resolution to the people on the floor for validation and action"
+          ]
+        },
+        {
+          "name": "Arch Data Twin",
+          "evidence_quotes": [
+            "Arch Data Twin The Foundation for Trusted, AI-Ready Factory Intelligence"
+          ]
+        }
+      ],
+      "customer_names": [
+        "Flex",
+        "一家全球汽车零部件 OEM",
+        "一家全球电子制造商"
+      ],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -16203,6 +18227,127 @@
       "current_classification": {
         "product_form_id": "enterprise_software_platform",
         "market_category_id": "enterprise_applications"
+      }
+    },
+    {
+      "event_id": "EV-37cc66ca2e29a78c",
+      "funding_insight_id": "FI-69b850b5cebe5572",
+      "company_name": "Cornelis",
+      "company_full_name": "Cornelis",
+      "website": "www.cornelis.com",
+      "current_sector": "AI基础设施网络",
+      "company_evidence_quotes": [
+        "Cornelis, a company specializing in networking technology to enhance communication between AI chips",
+        "Cornelis , a provider of high-performance networking solutions"
+      ],
+      "products": [
+        {
+          "name": "Active Compute Fabric",
+          "evidence_quotes": [
+            "Active Compute Fabric, an open architecture spanning scale-up and scale-out networking with programmable compute built into the fabric",
+            "Active Compute Fabric moves beyond simply transporting data by combining lossless transport, in-fabric acceleration, and programmable compute."
+          ]
+        },
+        {
+          "name": "CN5000",
+          "evidence_quotes": [
+            "CN5000 The first lossless, congestion-free scale-out network—delivering faster training and lower inference latency than today's alternatives."
+          ]
+        },
+        {
+          "name": "CN6000",
+          "evidence_quotes": [
+            "CN6000 The first 800G multi-protocol SuperNIC, delivering industry-leading AI and HPC performance with Omni-Path, RoCEv2, and Ultra Ethernet on PCIe 6.0."
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-26a5749d8604455a",
+      "funding_insight_id": "FI-e0a9f997fd33ce21",
+      "company_name": "Crusoe",
+      "company_full_name": "Crusoe",
+      "website": "crusoe.ai",
+      "current_sector": "AI 基础设施与清洁能源",
+      "company_evidence_quotes": [
+        "Data center developer Crusoe said Thursday it raised $3.9 billion in a Series F round that pushes its valuation to $30.9 billion."
+      ],
+      "products": [
+        {
+          "name": "Crusoe Cloud",
+          "evidence_quotes": [
+            "Gets instant access to bare metal or virtualized instances with 3200 Gbps InfiniBand networking"
+          ]
+        },
+        {
+          "name": "Spark 模块化数据中心",
+          "evidence_quotes": [
+            "smaller, modular AI factories that can be transported by truck and connected to large power sources almost anywhere",
+            "By manufacturing these modular data centers, called Spark, at its own facilities, Crusoe can deploy compute capacity quickly and without the need for large construction workforces."
+          ]
+        },
+        {
+          "name": "Managed Inference",
+          "evidence_quotes": [
+            "Managed Inference claims up to 9.9x faster time-to-first-token and up to 5x higher throughput versus vLLM for specified benchmarks, enabled by its MemoryAlloy KV-cache technology, and is available on pay-per-token and provisioned-throughput pricing."
+          ]
+        }
+      ],
+      "customer_names": [
+        "OpenAI",
+        "Microsoft",
+        "Oracle"
+      ],
+      "current_classification": {
+        "product_form_id": "compute_cloud_service",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-40d4ce6d936d4d49",
+      "funding_insight_id": "FI-43591d77714fd601",
+      "company_name": "Crusoe",
+      "company_full_name": "Crusoe",
+      "website": "https://www.crusoe.ai",
+      "current_sector": "AI基础设施",
+      "company_evidence_quotes": [
+        "data center developer and AI cloud provider Crusoe announced Thursday that it has successfully raised $3.9 billion in a massive Series F funding round"
+      ],
+      "products": [
+        {
+          "name": "Crusoe Cloud",
+          "evidence_quotes": [
+            "Crusoe Cloud AI Cloud Platform Cloud Overview Command Center Crusoe Edge Zones Managed AI Managed Inference Serverless Fine-Tuning GPUs NVIDIA GB200 NVIDIA B200 NVIDIA H200 NVIDIA H100 AMD MI300X AMD MI355X"
+          ]
+        },
+        {
+          "name": "Spark模块化数据中心",
+          "evidence_quotes": [
+            "Crusoe is manufacturing modular, pre-fabricated data center units—dubbed Spark—at its own dedicated facilities. These units can be transported via standard commercial trucks and connected to localized power sources almost anywhere in the world."
+          ]
+        },
+        {
+          "name": "固定站点数据中心",
+          "evidence_quotes": [
+            "The company is building out massive, high-capacity installations optimized for frontier model training. A prime example is its sprawling campus in Abilene, Texas, which provides crucial compute infrastructure for OpenAI ."
+          ]
+        }
+      ],
+      "customer_names": [
+        "OpenAI",
+        "Meta",
+        "Microsoft",
+        "Oracle",
+        "Jane Street"
+      ],
+      "current_classification": {
+        "product_form_id": "compute_cloud_service",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -16978,6 +19123,31 @@
       }
     },
     {
+      "event_id": "EV-375d04f7cc9746c6",
+      "funding_insight_id": "FI-575622c3fb4ad8db",
+      "company_name": "Euclyd",
+      "company_full_name": "Euclyd",
+      "website": "",
+      "current_sector": "AI芯片",
+      "company_evidence_quotes": [
+        "Euclyd成立于2024年，目前正在研发一套不同于GPU架构的AI芯片系统，涵盖处理器和内存架构，主要用于AI推理。"
+      ],
+      "products": [
+        {
+          "name": "AI芯片系统",
+          "evidence_quotes": [
+            "目前正在研发一套不同于GPU架构的AI芯片系统，涵盖处理器和内存架构，主要用于AI推理。",
+            "其面向基础模型的芯片系统能够降低AI数据中心基础设施的能源需求和成本"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
       "event_id": "EV-2f0f3200b9800877",
       "funding_insight_id": "FI-20a08a4c9398fa77",
       "company_name": "Even Realities Technology",
@@ -17158,6 +19328,38 @@
         "Mission Wealth",
         "Tokio Marine",
         "Hiscox"
+      ],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
+      }
+    },
+    {
+      "event_id": "EV-eadf57952ad76a26",
+      "funding_insight_id": "FI-6347e445cdc5bdf5",
+      "company_name": "FintechOS",
+      "company_full_name": "FintechOS",
+      "website": "https://fintechos.com",
+      "current_sector": "金融科技",
+      "company_evidence_quotes": [
+        "FintechOS , the agentic platform for Unified Product Operations serving banks, insurers and other financial services companies across the United States and Europe",
+        "The 2017-founded startup, which is headquartered in London and also has offices in Bucharest and New York"
+      ],
+      "products": [
+        {
+          "name": "FintechOS 8",
+          "evidence_quotes": [
+            "FintechOS is the agentic platform for Unified Product Operations, supporting banks, insurers and other financial services companies across Europe and the United States",
+            "non-technical users can configure products and offers directly within Dex, the AI copilot, alongside the full range of Unified Product Operations capabilities"
+          ]
+        }
+      ],
+      "customer_names": [
+        "ESL Federal Credit Union",
+        "Vibrant Credit Union",
+        "Hanscom Federal Credit Union",
+        "Farmers Bank of Willards",
+        "MHG Insurance"
       ],
       "current_classification": {
         "product_form_id": "enterprise_software_platform",
@@ -17814,6 +20016,35 @@
       "current_classification": {
         "product_form_id": "enterprise_software_platform",
         "market_category_id": "industry_applications"
+      }
+    },
+    {
+      "event_id": "EV-ed8323204ab69697",
+      "funding_insight_id": "FI-6bc83b7f0f864241",
+      "company_name": "Hang Ten Systems",
+      "company_full_name": "Hang Ten Systems",
+      "website": "https://hangten.ai/",
+      "current_sector": "企业AI服务",
+      "company_evidence_quotes": [
+        "Hang Ten Systems , an AI startup founded by former Infosys CEO Vishal Sikka just four months ago"
+      ],
+      "products": [
+        {
+          "name": "Hobie",
+          "evidence_quotes": [
+            "Hobie is our agentic AI platform. Five layers read your live systems, model your business, and answer questions that trace back to the source data."
+          ]
+        }
+      ],
+      "customer_names": [
+        "Fresenius Kabi",
+        "Saudi Aramco",
+        "Siemens Energy",
+        "Siemens Gamesa Renewable Energy"
+      ],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {
@@ -19238,6 +21469,42 @@
       "current_classification": {
         "product_form_id": "end_user_application",
         "market_category_id": "enterprise_applications"
+      }
+    },
+    {
+      "event_id": "EV-d5d58c23fa179e23",
+      "funding_insight_id": "FI-73ce1a35019b849e",
+      "company_name": "Moonback",
+      "company_full_name": "Moonback",
+      "website": "",
+      "current_sector": "宠物科技",
+      "company_evidence_quotes": [
+        "AI宠物科技公司Moonback 完成首轮数千万元人民币融资"
+      ],
+      "products": [
+        {
+          "name": "AI宠物穿戴设备",
+          "evidence_quotes": [
+            "AI宠物穿戴设备通过GPS、电子围栏及多种传感器，持续采集宠物的位置、活动状态，同时监测心率、呼吸频率、HRV和体动情况"
+          ]
+        },
+        {
+          "name": "AI摄像头",
+          "evidence_quotes": [
+            "AI摄像头用视觉AI识别宠物的排泄和行为模式"
+          ]
+        },
+        {
+          "name": "AI宠物睡眠窝垫",
+          "evidence_quotes": [
+            "AI宠物窝垫围绕在/离窝识别、睡眠时长和睡眠状态做持续监测"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "ai_device",
+        "market_category_id": "industry_applications"
       }
     },
     {
@@ -21186,6 +23453,49 @@
       }
     },
     {
+      "event_id": "EV-05b635c3958e4591",
+      "funding_insight_id": "FI-68743806bef12fca",
+      "company_name": "Profound",
+      "company_full_name": "Profound",
+      "website": "https://www.tryprofound.com/",
+      "current_sector": "AI营销平台",
+      "company_evidence_quotes": [
+        "Profound , which builds marketing software to help brands appear in AI search results",
+        "Profound is the fastest growing AI marketing platform used by 16% of the Fortune 500"
+      ],
+      "products": [
+        {
+          "name": "AI Marketer",
+          "evidence_quotes": [
+            "Profound’s AI Marketer is a marketing expert (agent) that scans your brand’s data, analyzes AI answers, surfaces critical opportunities, and deploys sub-agents to do the work."
+          ]
+        },
+        {
+          "name": "Context Manager",
+          "evidence_quotes": [
+            "Profound Context Manager powers the AI Marketer, serving as a living synthesis of brand context and individual working style."
+          ]
+        },
+        {
+          "name": "Ads Studio",
+          "evidence_quotes": [
+            "AI Marketer leverages Profound’s latest product, Ads Studio, to help marketers build, launch, and manage AI Search campaigns without leaving Profound."
+          ]
+        }
+      ],
+      "customer_names": [
+        "Comcast",
+        "The Estée Lauder Companies",
+        "Walmart",
+        "Ramp",
+        "Plaid"
+      ],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
+      }
+    },
+    {
       "event_id": "EV-f6c882e143c0d634",
       "funding_insight_id": "FI-84828ecea6ac5bab",
       "company_name": "PureblueAI清蓝",
@@ -23064,6 +25374,50 @@
       "current_classification": {
         "product_form_id": "ai_infrastructure_software",
         "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-f077c91cb2fd9179",
+      "funding_insight_id": "FI-b6a79f740cf9403c",
+      "company_name": "Vantora",
+      "company_full_name": "Vantora",
+      "website": "vantora.us",
+      "current_sector": "企业风险构建与主权AI平台",
+      "company_evidence_quotes": [
+        "Vantora, as the firm is now called, continues to work with its corporate customers",
+        "Vantora makes enterprise problems valuable."
+      ],
+      "products": [
+        {
+          "name": "COSMOS",
+          "evidence_quotes": [
+            "Vantora's work runs on COSMOS, a proprietary ontology product, which unifies an enterprise's operating data and makes it usable by AI-driven processes and autonomous agents.",
+            "COSMOS connects fragmented systems, structures proprietary knowledge, and makes operating data usable by AI-driven processes and autonomous agents."
+          ]
+        },
+        {
+          "name": "LABS",
+          "evidence_quotes": [
+            "LABS identifies the enterprise problem and forms the company or capability around it."
+          ]
+        },
+        {
+          "name": "ASCENT",
+          "evidence_quotes": [
+            "ASCENT provides shared support across talent, engineering, finance, legal, HR, marketing, and go-to-market."
+          ]
+        }
+      ],
+      "customer_names": [
+        "Porsche AG",
+        "Alaska Airlines",
+        "J.B. Hunt",
+        "Wabash",
+        "TDG (parent of Ashley Furniture)"
+      ],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
       }
     },
     {

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-22T00:32:07.024Z",
+    "generatedAt": "2026-09-22T03:45:38.642Z",
     "latestDataDate": "2026-09-22",
     "currentDate": "2026-09-22",
-    "eventCount": 3487,
+    "eventCount": 3493,
     "quarantinedEventCount": 37,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -67,8 +67,8 @@
     "classificationRefs": [
       "TX-ai_market_category-industry_applications",
       "TX-target_user-business_user",
-      "TX-ai_market_subcategory-consumer_retail",
       "TX-use_case-design_engineering",
+      "TX-ai_market_subcategory-consumer_retail",
       "TX-product_form-end_user_application",
       "TX-industry-construction_real_estate"
     ],
@@ -189,6 +189,9 @@
       "typeLabel": "AI 市场类别",
       "valueId": "industry_applications",
       "eventIds": [
+        "EV-33df10f232e26f29",
+        "EV-4bc690025cbda146",
+        "EV-6f7ec978fd8ad3fc",
         "EV-eadf57952ad76a26",
         "EV-d5d58c23fa179e23",
         "EV-1043d78cc040ab30",
@@ -276,11 +279,12 @@
         "EV-986ac3a819d23388"
       ],
       "entityIds": [
+        "EN-2cee85064ca8de3f",
+        "EN-bc06be2cba2b2f2c",
         "EN-5dd3b777303686d3",
         "EN-4df6f0f59120b360",
         "EN-295219ea74639f0b",
         "EN-cfec5bef40cbf3ae",
-        "EN-bc06be2cba2b2f2c",
         "EN-0650ad8ad48129f7",
         "EN-efadb20430d25ea7",
         "EN-2777b5a794959a7d",
@@ -366,7 +370,10 @@
       "typeLabel": "目标用户",
       "valueId": "business_user",
       "eventIds": [
+        "EV-33df10f232e26f29",
+        "EV-6f7ec978fd8ad3fc",
         "EV-eadf57952ad76a26",
+        "EV-fbb4b961191efa55",
         "EV-3c7609d3fc7b7ec8",
         "EV-b9be18b12b1714f3",
         "EV-d959c800774d5d30",
@@ -740,7 +747,9 @@
         "EV-caf5d85e980c86fd"
       ],
       "entityIds": [
+        "EN-2cee85064ca8de3f",
         "EN-5dd3b777303686d3",
+        "EN-e7d56af70143fcd7",
         "EN-0213fcbfa6055593",
         "EN-92d14efa2f3f44b1",
         "EN-33d5a47fc56e4ba1",
@@ -1054,55 +1063,14 @@
       "lastSeen": "2026-09-22"
     },
     {
-      "id": "TX-ai_market_subcategory-consumer_retail",
-      "name": "消费与零售",
-      "nodeType": "ai_market_subcategory",
-      "typeLabel": "AI 市场子类",
-      "valueId": "consumer_retail",
-      "eventIds": [
-        "EV-d5d58c23fa179e23",
-        "EV-2cf2ab399eb05035",
-        "EV-f1553722b4ce43af",
-        "EV-02882e6f5e1902c6",
-        "EV-ecc12e5ec883b7e7",
-        "EV-b5dd10300e34f2d3",
-        "EV-dcbe916c6138e5cb",
-        "EV-0a62954694db4143",
-        "EV-2b15f160de3c7ddf",
-        "EV-a7e14985b924b464",
-        "EV-eb4858e820bf9435",
-        "EV-4596181c26d7f672",
-        "EV-3ccc38328e395afa",
-        "EV-cba16bd541a07032"
-      ],
-      "entityIds": [
-        "EN-4df6f0f59120b360",
-        "EN-66c09c4c12ce671c",
-        "EN-b80e0af617d0f8ff",
-        "EN-2a920347dfcf07a7",
-        "EN-7706c3c94d5f9b59",
-        "EN-e22521e7de65d819",
-        "EN-814669895ed30dff",
-        "EN-c71a83adf3de3f40",
-        "EN-03abf933127f01f3",
-        "EN-577d8adaee97497b",
-        "EN-094b7ade939cad4d",
-        "EN-4458e908dd9a5440",
-        "EN-8936494cd8a7fddb",
-        "EN-fcfad5f0679009d4"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-03-16",
-      "lastSeen": "2026-09-21"
-    },
-    {
       "id": "TX-use_case-design_engineering",
       "name": "设计与工程",
       "nodeType": "use_case",
       "typeLabel": "应用场景",
       "valueId": "design_engineering",
       "eventIds": [
+        "EV-33df10f232e26f29",
+        "EV-6f7ec978fd8ad3fc",
         "EV-1043d78cc040ab30",
         "EV-b0637e99e328479b",
         "EV-bdd574fb9ee91b4d",
@@ -1145,6 +1113,7 @@
         "EV-0af7882f1d383ea5"
       ],
       "entityIds": [
+        "EN-2cee85064ca8de3f",
         "EN-295219ea74639f0b",
         "EN-cfec5bef40cbf3ae",
         "EN-bc06be2cba2b2f2c",
@@ -1183,7 +1152,50 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-03-10",
-      "lastSeen": "2026-09-20"
+      "lastSeen": "2026-09-22"
+    },
+    {
+      "id": "TX-ai_market_subcategory-consumer_retail",
+      "name": "消费与零售",
+      "nodeType": "ai_market_subcategory",
+      "typeLabel": "AI 市场子类",
+      "valueId": "consumer_retail",
+      "eventIds": [
+        "EV-d5d58c23fa179e23",
+        "EV-2cf2ab399eb05035",
+        "EV-f1553722b4ce43af",
+        "EV-02882e6f5e1902c6",
+        "EV-ecc12e5ec883b7e7",
+        "EV-b5dd10300e34f2d3",
+        "EV-dcbe916c6138e5cb",
+        "EV-0a62954694db4143",
+        "EV-2b15f160de3c7ddf",
+        "EV-a7e14985b924b464",
+        "EV-eb4858e820bf9435",
+        "EV-4596181c26d7f672",
+        "EV-3ccc38328e395afa",
+        "EV-cba16bd541a07032"
+      ],
+      "entityIds": [
+        "EN-4df6f0f59120b360",
+        "EN-66c09c4c12ce671c",
+        "EN-b80e0af617d0f8ff",
+        "EN-2a920347dfcf07a7",
+        "EN-7706c3c94d5f9b59",
+        "EN-e22521e7de65d819",
+        "EN-814669895ed30dff",
+        "EN-c71a83adf3de3f40",
+        "EN-03abf933127f01f3",
+        "EN-577d8adaee97497b",
+        "EN-094b7ade939cad4d",
+        "EN-4458e908dd9a5440",
+        "EN-8936494cd8a7fddb",
+        "EN-fcfad5f0679009d4"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-03-16",
+      "lastSeen": "2026-09-21"
     },
     {
       "id": "TX-product_form-end_user_application",

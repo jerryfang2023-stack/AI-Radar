@@ -3,7 +3,7 @@
     "version": "COLLECTION-TELEMETRY-V1.0",
     "ops_version": "OPS-V3.8.0-engineering-integration",
     "data_date": "2026-09-22",
-    "generated_at": "2026-09-22T00:32:24.761Z",
+    "generated_at": "2026-09-22T03:42:23.760Z",
     "source_snapshot": "62c0446fbc201caa2d7da7fbd1bdf0009f5f7351ac546dfbe86f7f8114768041",
     "scope": "OPS",
     "canonical_writeback": false,
@@ -11,24 +11,24 @@
   },
   "collection": {
     "discovered": 290,
-    "capture_succeeded": 240,
+    "capture_succeeded": 317,
     "capture_failed": 8,
     "recovered_source_failures": 10,
-    "raw_documents": 240
+    "raw_documents": 317
   },
   "fact_build": {
-    "accepted_claims": 78,
+    "accepted_claims": 97,
     "rejected_claims": 0,
-    "accepted": 78,
+    "accepted": 97,
     "rejected": 0,
     "pending_claims": 4,
-    "canonical_events": 30,
-    "entities": 54,
-    "relationships": 82,
+    "canonical_events": 41,
+    "entities": 68,
+    "relationships": 101,
     "conflicts": 0,
-    "qa_queue": 209,
+    "qa_queue": 275,
     "qa_by_status": {
-      "review_optional": 201,
+      "review_optional": 267,
       "open": 8
     }
   },
@@ -45,11 +45,11 @@
     "opportunity_map": "passed",
     "trend_radar": "passed",
     "funding_insights": "passed",
-    "fde_hardware_sync": "passed"
+    "fde_hardware_sync": "unknown"
   },
   "publication": {
-    "status": "waiting",
-    "phase": "pre_deploy_snapshot",
+    "status": "passed",
+    "phase": "build_snapshot",
     "authoritative": false,
     "finalization": "github_pages_artifact"
   },
@@ -60,10 +60,10 @@
       "status": "partial",
       "counts": {
         "discovered": 290,
-        "capture_succeeded": 240,
+        "capture_succeeded": 317,
         "capture_failed": 8,
         "recovered_source_failures": 10,
-        "raw_documents": 240
+        "raw_documents": 317
       },
       "evidence": [
         "01-SiteV2/content/11-databases/data-center-v4/2026-09-22/manifest.json",
@@ -76,16 +76,16 @@
       "label": "事实构建",
       "status": "passed",
       "counts": {
-        "accepted_claims": 78,
+        "accepted_claims": 97,
         "rejected_claims": 0,
-        "accepted": 78,
+        "accepted": 97,
         "rejected": 0,
         "pending_claims": 4,
-        "canonical_events": 30,
-        "entities": 54,
-        "relationships": 82,
+        "canonical_events": 41,
+        "entities": 68,
+        "relationships": 101,
         "conflicts": 0,
-        "qa_queue": 209
+        "qa_queue": 275
       },
       "evidence": [
         "01-SiteV2/content/11-databases/data-center-v4/2026-09-22/manifest.json",
@@ -95,12 +95,12 @@
     {
       "id": "application_projection",
       "label": "应用投影",
-      "status": "passed",
+      "status": "partial",
       "counts": {
         "opportunity_map": "passed",
         "trend_radar": "passed",
         "funding_insights": "passed",
-        "fde_hardware_sync": "passed"
+        "fde_hardware_sync": "unknown"
       },
       "evidence": [
         "agent-workflow/reports/2026-09-22-persistent-asset-manifest.json"
@@ -109,10 +109,10 @@
     {
       "id": "publication",
       "label": "发布",
-      "status": "waiting",
+      "status": "passed",
       "counts": {
         "v4_bundle_ready": true,
-        "snapshot_phase": "pre_deploy_snapshot",
+        "snapshot_phase": "build_snapshot",
         "authoritative": false
       },
       "evidence": [
