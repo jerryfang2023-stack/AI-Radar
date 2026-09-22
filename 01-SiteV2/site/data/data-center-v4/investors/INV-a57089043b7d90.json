@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-21T04:13:14.914Z",
-    "latestDataDate": "2026-09-21",
-    "currentDate": "2026-09-21",
-    "eventCount": 3463,
+    "generatedAt": "2026-09-22T00:46:35.366Z",
+    "latestDataDate": "2026-09-22",
+    "currentDate": "2026-09-22",
+    "eventCount": 3469,
     "quarantinedEventCount": 37,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -59,41 +59,41 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 7,
+    "current_round_count": 8,
     "historical_or_ambiguous_count": 10,
     "portfolio_company_count": 7,
     "market_regions": [
-      "CN",
-      "GLOBAL"
+      "CN"
     ],
-    "china_market_activity_count": 5,
-    "china_market_company_count": 5,
+    "china_market_activity_count": 8,
+    "china_market_company_count": 7,
     "first_disclosed_at": "2024-09-12",
-    "latest_disclosed_at": "2026-09-20",
+    "latest_disclosed_at": "2026-09-21",
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 10,
-      "participant": 5
+      "participant": 6
     },
     "round_codes": [
       "angel",
       "angel_plus",
       "first_external",
       "multi_round",
+      "other",
       "pre_series_a",
       "series_b",
       "series_c"
     ],
     "portfolio_companies": [
       {
+        "entity_id": "EN-c5146e8a5659ab7e",
+        "canonical_entity_id": "",
+        "name": "地瓜机器人"
+      },
+      {
         "entity_id": "EN-a43f157d208b2a63",
         "canonical_entity_id": "EN-a43f157d208b2a63",
         "name": "开物纪"
-      },
-      {
-        "entity_id": "EN-c5146e8a5659ab7e",
-        "canonical_entity_id": "",
-        "name": "深圳地瓜机器人有限公司"
       },
       {
         "entity_id": "EN-39ba5f9dcab4e98a",
@@ -123,6 +123,46 @@
     ],
     "activities": [
       {
+        "activity_id": "IA-42ec2a8f5a3c7df0",
+        "funding_insight_id": "FI-47911ee433d82d2a",
+        "event_ids": [
+          "EV-4bc690025cbda146"
+        ],
+        "company_entity_id": "FICO-anew-labs",
+        "company_canonical_entity_id": "",
+        "company_name": "Anew Labs（新生实验室）",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "首轮独立融资",
+        "amount_original": "2.9亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 290000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.9 亿美元"
+        },
+        "announced_at": "2026-09-21",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a2c9854f5230d423",
+            "source_url": "https://www.chinaventure.com.cn/news/111-20260921-393379.html",
+            "source_title": "张一鸣，又创造了一个100亿 首轮融资20亿元。 投中网 · 21小时前",
+            "source_content_hash": "2bb10add5e428ec5",
+            "quote": "涵盖了红杉中国、IDG资本、高瓴创投、五源资本、高榕创投、春华创投等头部投资机构",
+            "quote_hash": "b39561dd1ac0be7734491e6d8c5951e687ceff86f0fa6dbf11feced93e7c4b87"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-f72f73dffbe6f3bd",
         "funding_insight_id": "FI-cb9086864c5c66de",
         "event_ids": [
@@ -145,8 +185,8 @@
           "display_zh": "2 亿元–9 亿元"
         },
         "announced_at": "2026-09-20",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
+        "market_region": "CN",
+        "china_market_match": true,
         "disclosure_status": "disclosed",
         "scope": "historical_or_ambiguous",
         "role": "股东",
@@ -163,14 +203,14 @@
         ]
       },
       {
-        "activity_id": "IA-47ba1a033c3adc90",
+        "activity_id": "IA-59cb5d76c1e39e5f",
         "funding_insight_id": "FI-e9d633fa8c039673",
         "event_ids": [
           "EV-412f7ce21693dc13"
         ],
         "company_entity_id": "EN-c5146e8a5659ab7e",
         "company_canonical_entity_id": "",
-        "company_name": "深圳地瓜机器人有限公司",
+        "company_name": "地瓜机器人",
         "round": "C轮",
         "round_code": "series_c",
         "round_original": "C轮",
@@ -185,8 +225,8 @@
           "display_zh": "4 亿美元"
         },
         "announced_at": "2026-09-17",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
+        "market_region": "CN",
+        "china_market_match": true,
         "disclosure_status": "disclosed",
         "scope": "current_round",
         "role": "本轮跟投（原有投资机构继续追加投资）",
@@ -227,8 +267,8 @@
           "display_zh": "2.9 亿美元"
         },
         "announced_at": "2026-09-16",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
+        "market_region": "CN",
+        "china_market_match": true,
         "disclosure_status": "disclosed",
         "scope": "current_round",
         "role": "本轮参投",
@@ -812,6 +852,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-a2c9854f5230d423",
+        "source_url": "https://www.chinaventure.com.cn/news/111-20260921-393379.html",
+        "source_title": "张一鸣，又创造了一个100亿 首轮融资20亿元。 投中网 · 21小时前",
+        "source_content_hash": "2bb10add5e428ec5",
+        "quote": "涵盖了红杉中国、IDG资本、高瓴创投、五源资本、高榕创投、春华创投等头部投资机构",
+        "quote_hash": "b39561dd1ac0be7734491e6d8c5951e687ceff86f0fa6dbf11feced93e7c4b87"
+      },
+      {
         "source_id": "FISRC-3a00c703054126cd",
         "source_url": "https://www.chinaventure.com.cn/news/114-20260920-393347.html",
         "source_title": "千觉机器人宣布连续完成两轮数亿元战略融资 投资方包括知名双币基金蓝驰创投、中金资本旗下基金、靖亚资本等知名投资机构。 投中网 · 22小时前",
@@ -950,7 +998,7 @@
     ],
     "translations": {
       "zh-CN": {
-        "activities[15].role": {
+        "activities[16].role": {
           "text": "Pre-A轮领投",
           "source_hash": "c61fa44ebf092b66526cb4a8de607b70e57d3e5006aa179d3a2b39fd8925f719",
           "provider": "deepseek",
@@ -958,7 +1006,7 @@
           "translated_at": "2026-08-14T07:17:18.959Z",
           "status": "translated"
         },
-        "activities[16].role": {
+        "activities[17].role": {
           "text": "Pre-B轮领投",
           "source_hash": "aebf442c5143e180f2950bcaa72a692c16eb3617aebf8ba3bb3eb5171f29e2d6",
           "provider": "deepseek",

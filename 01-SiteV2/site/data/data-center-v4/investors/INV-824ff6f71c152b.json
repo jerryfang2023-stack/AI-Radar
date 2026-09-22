@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-21T04:13:14.914Z",
-    "latestDataDate": "2026-09-21",
-    "currentDate": "2026-09-21",
-    "eventCount": 3463,
+    "generatedAt": "2026-09-22T00:46:35.366Z",
+    "latestDataDate": "2026-09-22",
+    "currentDate": "2026-09-22",
+    "eventCount": 3469,
     "quarantinedEventCount": 37,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -59,30 +59,30 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 5,
     "portfolio_company_count": 2,
     "market_regions": [
-      "CN",
-      "GLOBAL"
+      "CN"
     ],
-    "china_market_activity_count": 0,
-    "china_market_company_count": 0,
+    "china_market_activity_count": 3,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-01-26",
-    "latest_disclosed_at": "2026-09-17",
+    "latest_disclosed_at": "2026-09-21",
     "role_counts": {
       "historical_or_ambiguous": 5,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "first_external",
+      "other",
       "series_c"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-c5146e8a5659ab7e",
         "canonical_entity_id": "",
-        "name": "深圳地瓜机器人有限公司"
+        "name": "地瓜机器人"
       },
       {
         "entity_id": "FICO-anew-labs",
@@ -92,14 +92,54 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-ba9234f37d99508b",
+        "activity_id": "IA-6eabe6d2be7ed75a",
+        "funding_insight_id": "FI-47911ee433d82d2a",
+        "event_ids": [
+          "EV-4bc690025cbda146"
+        ],
+        "company_entity_id": "FICO-anew-labs",
+        "company_canonical_entity_id": "",
+        "company_name": "Anew Labs（新生实验室）",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "首轮独立融资",
+        "amount_original": "2.9亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 290000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.9 亿美元"
+        },
+        "announced_at": "2026-09-21",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a2c9854f5230d423",
+            "source_url": "https://www.chinaventure.com.cn/news/111-20260921-393379.html",
+            "source_title": "张一鸣，又创造了一个100亿 首轮融资20亿元。 投中网 · 21小时前",
+            "source_content_hash": "2bb10add5e428ec5",
+            "quote": "涵盖了红杉中国、IDG资本、高瓴创投、五源资本、高榕创投、春华创投等头部投资机构",
+            "quote_hash": "b39561dd1ac0be7734491e6d8c5951e687ceff86f0fa6dbf11feced93e7c4b87"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-9d5f6dba5858918d",
         "funding_insight_id": "FI-e9d633fa8c039673",
         "event_ids": [
           "EV-412f7ce21693dc13"
         ],
         "company_entity_id": "EN-c5146e8a5659ab7e",
         "company_canonical_entity_id": "",
-        "company_name": "深圳地瓜机器人有限公司",
+        "company_name": "地瓜机器人",
         "round": "C轮",
         "round_code": "series_c",
         "round_original": "C轮",
@@ -114,8 +154,8 @@
           "display_zh": "4 亿美元"
         },
         "announced_at": "2026-09-17",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
+        "market_region": "CN",
+        "china_market_match": true,
         "disclosure_status": "disclosed",
         "scope": "current_round",
         "role": "本轮跟投（原有投资机构继续追加投资）",
@@ -156,8 +196,8 @@
           "display_zh": "2.9 亿美元"
         },
         "announced_at": "2026-09-16",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
+        "market_region": "CN",
+        "china_market_match": true,
         "disclosure_status": "disclosed",
         "scope": "current_round",
         "role": "本轮参投",
@@ -376,6 +416,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-a2c9854f5230d423",
+        "source_url": "https://www.chinaventure.com.cn/news/111-20260921-393379.html",
+        "source_title": "张一鸣，又创造了一个100亿 首轮融资20亿元。 投中网 · 21小时前",
+        "source_content_hash": "2bb10add5e428ec5",
+        "quote": "涵盖了红杉中国、IDG资本、高瓴创投、五源资本、高榕创投、春华创投等头部投资机构",
+        "quote_hash": "b39561dd1ac0be7734491e6d8c5951e687ceff86f0fa6dbf11feced93e7c4b87"
+      },
       {
         "source_id": "FISRC-517ef1b31eac6dd3",
         "source_url": "https://finance.sina.com.cn/roll/2026-09-17/doc-iniscekc4127167.shtml",

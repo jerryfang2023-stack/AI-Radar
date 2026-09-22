@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-21T04:13:14.914Z",
-    "latestDataDate": "2026-09-21",
-    "currentDate": "2026-09-21",
-    "eventCount": 3463,
+    "generatedAt": "2026-09-22T00:46:35.366Z",
+    "latestDataDate": "2026-09-22",
+    "currentDate": "2026-09-22",
+    "eventCount": 3469,
     "quarantinedEventCount": 37,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -57,6 +57,8 @@
     "typeLabel": "AI 市场子类",
     "valueId": "industrials",
     "eventIds": [
+      "EV-33df10f232e26f29",
+      "EV-6f7ec978fd8ad3fc",
       "EV-b0637e99e328479b",
       "EV-bdd574fb9ee91b4d",
       "EV-e5763ba54217d88a",
@@ -87,6 +89,7 @@
       "EV-9832526435c1695e"
     ],
     "entityIds": [
+      "EN-2cee85064ca8de3f",
       "EN-cfec5bef40cbf3ae",
       "EN-456d7aad12e82e0e",
       "EN-4d916dc8b25421d2",
@@ -115,9 +118,689 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-03-24",
-    "lastSeen": "2026-09-20"
+    "lastSeen": "2026-09-22"
   },
   "events": [
+    {
+      "id": "EV-33df10f232e26f29",
+      "dataDate": "2026-09-22",
+      "date": "2026-09-21",
+      "updatedDate": "2026-09-22",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "弋途科技完成近亿元Pre-B轮融资，以AI Native全栈能力赋能座舱智能化、汽车AI化",
+      "originalTitle": "",
+      "subject": "弋途科技",
+      "action": "完成近亿元Pre-B轮融资",
+      "object": "，以AI Native全栈能力赋能座舱智能化、汽车AI化",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "industry_applications",
+            "name": "行业应用",
+            "entityIds": [
+              "EN-2cee85064ca8de3f"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-1d89709335aa3280",
+            "fundingInsightId": "FI-48e46a0dfe6cb7ea"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "industrials",
+            "name": "工业",
+            "entityIds": [
+              "EN-2cee85064ca8de3f"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-92ae250432ac8d69",
+            "fundingInsightId": "FI-48e46a0dfe6cb7ea"
+          }
+        ],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-2cee85064ca8de3f"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-c52d523d5e29bbb0",
+            "fundingInsightId": "FI-48e46a0dfe6cb7ea"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "design_engineering",
+            "name": "设计与工程",
+            "entityIds": [
+              "EN-2cee85064ca8de3f"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-fb83a669b77f4d44",
+            "fundingInsightId": "FI-48e46a0dfe6cb7ea"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-2cee85064ca8de3f"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-fb641df367a1f139",
+            "fundingInsightId": "FI-48e46a0dfe6cb7ea"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "automotive_transportation",
+            "name": "汽车与交通",
+            "entityIds": [
+              "EN-2cee85064ca8de3f"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a7fc4904ad09e03c",
+            "fundingInsightId": "FI-48e46a0dfe6cb7ea"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-2cee85064ca8de3f"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f9fd0878654cb479",
+            "fundingInsightId": "FI-48e46a0dfe6cb7ea"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-2cee85064ca8de3f"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-01e080404e21fc9b",
+            "fundingInsightId": "FI-48e46a0dfe6cb7ea"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "industry_applications",
+          "name": "行业应用",
+          "entityIds": [
+            "EN-2cee85064ca8de3f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-1d89709335aa3280",
+          "fundingInsightId": "FI-48e46a0dfe6cb7ea"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "industrials",
+          "name": "工业",
+          "entityIds": [
+            "EN-2cee85064ca8de3f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-92ae250432ac8d69",
+          "fundingInsightId": "FI-48e46a0dfe6cb7ea"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "automotive_transportation",
+          "name": "汽车与交通",
+          "entityIds": [
+            "EN-2cee85064ca8de3f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-a7fc4904ad09e03c",
+          "fundingInsightId": "FI-48e46a0dfe6cb7ea"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-2cee85064ca8de3f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-c52d523d5e29bbb0",
+          "fundingInsightId": "FI-48e46a0dfe6cb7ea"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-2cee85064ca8de3f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f9fd0878654cb479",
+          "fundingInsightId": "FI-48e46a0dfe6cb7ea"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-2cee85064ca8de3f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-01e080404e21fc9b",
+          "fundingInsightId": "FI-48e46a0dfe6cb7ea"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "design_engineering",
+          "name": "设计与工程",
+          "entityIds": [
+            "EN-2cee85064ca8de3f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-fb83a669b77f4d44",
+          "fundingInsightId": "FI-48e46a0dfe6cb7ea"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-2cee85064ca8de3f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-fb641df367a1f139",
+          "fundingInsightId": "FI-48e46a0dfe6cb7ea"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "industry_applications",
+          "name": "行业应用",
+          "entityIds": [
+            "EN-2cee85064ca8de3f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-1d89709335aa3280",
+          "fundingInsightId": "FI-48e46a0dfe6cb7ea"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "industrials",
+          "name": "工业",
+          "entityIds": [
+            "EN-2cee85064ca8de3f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-92ae250432ac8d69",
+          "fundingInsightId": "FI-48e46a0dfe6cb7ea"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-2cee85064ca8de3f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-c52d523d5e29bbb0",
+          "fundingInsightId": "FI-48e46a0dfe6cb7ea"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "design_engineering",
+          "name": "设计与工程",
+          "entityIds": [
+            "EN-2cee85064ca8de3f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-fb83a669b77f4d44",
+          "fundingInsightId": "FI-48e46a0dfe6cb7ea"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-2cee85064ca8de3f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-fb641df367a1f139",
+          "fundingInsightId": "FI-48e46a0dfe6cb7ea"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "automotive_transportation",
+          "name": "汽车与交通",
+          "entityIds": [
+            "EN-2cee85064ca8de3f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-a7fc4904ad09e03c",
+          "fundingInsightId": "FI-48e46a0dfe6cb7ea"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-2cee85064ca8de3f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f9fd0878654cb479",
+          "fundingInsightId": "FI-48e46a0dfe6cb7ea"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-2cee85064ca8de3f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-01e080404e21fc9b",
+          "fundingInsightId": "FI-48e46a0dfe6cb7ea"
+        }
+      ],
+      "entityIds": [
+        "EN-2cee85064ca8de3f"
+      ],
+      "entityNames": [
+        "弋途科技"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.pedaily.cn/202609/569399.shtml",
+      "publisher": "投资界"
+    },
+    {
+      "id": "EV-6f7ec978fd8ad3fc",
+      "dataDate": "2026-09-22",
+      "date": "2026-09-21",
+      "updatedDate": "2026-09-22",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "弋途科技完成近亿元Pre-B轮融资，以AI Native全栈能力赋能座舱智能化、汽车AI化 汽车出行 2026-09-21 15:41",
+      "originalTitle": "",
+      "subject": "弋途科技",
+      "action": "完成近亿元Pre-B轮融资",
+      "object": "，以AI Native全栈能力赋能座舱智能化、汽车AI化 汽车出行 2026-09-21 15:41",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "industry_applications",
+            "name": "行业应用",
+            "entityIds": [
+              "EN-2cee85064ca8de3f"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-aa69a4fd174c0728",
+            "fundingInsightId": "FI-184399e67d9b6593"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "industrials",
+            "name": "工业",
+            "entityIds": [
+              "EN-2cee85064ca8de3f"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-438b9f6230216a8c",
+            "fundingInsightId": "FI-184399e67d9b6593"
+          }
+        ],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-2cee85064ca8de3f"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4410e8e3a2405eab",
+            "fundingInsightId": "FI-184399e67d9b6593"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "design_engineering",
+            "name": "设计与工程",
+            "entityIds": [
+              "EN-2cee85064ca8de3f"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a9a2c1393eafbd0f",
+            "fundingInsightId": "FI-184399e67d9b6593"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-2cee85064ca8de3f"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-2bc55083de38cd4c",
+            "fundingInsightId": "FI-184399e67d9b6593"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "automotive_transportation",
+            "name": "汽车与交通",
+            "entityIds": [
+              "EN-2cee85064ca8de3f"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-067650e9f5735e0a",
+            "fundingInsightId": "FI-184399e67d9b6593"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-2cee85064ca8de3f"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-3f52225170a21662",
+            "fundingInsightId": "FI-184399e67d9b6593"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-2cee85064ca8de3f"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-24ce468c0bce85fb",
+            "fundingInsightId": "FI-184399e67d9b6593"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "industry_applications",
+          "name": "行业应用",
+          "entityIds": [
+            "EN-2cee85064ca8de3f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-aa69a4fd174c0728",
+          "fundingInsightId": "FI-184399e67d9b6593"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "industrials",
+          "name": "工业",
+          "entityIds": [
+            "EN-2cee85064ca8de3f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-438b9f6230216a8c",
+          "fundingInsightId": "FI-184399e67d9b6593"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "automotive_transportation",
+          "name": "汽车与交通",
+          "entityIds": [
+            "EN-2cee85064ca8de3f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-067650e9f5735e0a",
+          "fundingInsightId": "FI-184399e67d9b6593"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-2cee85064ca8de3f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4410e8e3a2405eab",
+          "fundingInsightId": "FI-184399e67d9b6593"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-2cee85064ca8de3f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-3f52225170a21662",
+          "fundingInsightId": "FI-184399e67d9b6593"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-2cee85064ca8de3f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-24ce468c0bce85fb",
+          "fundingInsightId": "FI-184399e67d9b6593"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "design_engineering",
+          "name": "设计与工程",
+          "entityIds": [
+            "EN-2cee85064ca8de3f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-a9a2c1393eafbd0f",
+          "fundingInsightId": "FI-184399e67d9b6593"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-2cee85064ca8de3f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-2bc55083de38cd4c",
+          "fundingInsightId": "FI-184399e67d9b6593"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "industry_applications",
+          "name": "行业应用",
+          "entityIds": [
+            "EN-2cee85064ca8de3f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-aa69a4fd174c0728",
+          "fundingInsightId": "FI-184399e67d9b6593"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "industrials",
+          "name": "工业",
+          "entityIds": [
+            "EN-2cee85064ca8de3f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-438b9f6230216a8c",
+          "fundingInsightId": "FI-184399e67d9b6593"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-2cee85064ca8de3f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4410e8e3a2405eab",
+          "fundingInsightId": "FI-184399e67d9b6593"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "design_engineering",
+          "name": "设计与工程",
+          "entityIds": [
+            "EN-2cee85064ca8de3f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-a9a2c1393eafbd0f",
+          "fundingInsightId": "FI-184399e67d9b6593"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-2cee85064ca8de3f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-2bc55083de38cd4c",
+          "fundingInsightId": "FI-184399e67d9b6593"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "automotive_transportation",
+          "name": "汽车与交通",
+          "entityIds": [
+            "EN-2cee85064ca8de3f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-067650e9f5735e0a",
+          "fundingInsightId": "FI-184399e67d9b6593"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-2cee85064ca8de3f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-3f52225170a21662",
+          "fundingInsightId": "FI-184399e67d9b6593"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-2cee85064ca8de3f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-24ce468c0bce85fb",
+          "fundingInsightId": "FI-184399e67d9b6593"
+        }
+      ],
+      "entityIds": [
+        "EN-2cee85064ca8de3f"
+      ],
+      "entityNames": [
+        "弋途科技"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://pedaily.cn/news/569399",
+      "publisher": "投资界"
+    },
     {
       "id": "EV-b0637e99e328479b",
       "dataDate": "2026-09-20",
@@ -9417,6 +10100,35 @@
   ],
   "entities": [
     {
+      "id": "EN-2cee85064ca8de3f",
+      "name": "弋途科技",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-33df10f232e26f29",
+        "EV-6f7ec978fd8ad3fc"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-ai_market_category-industry_applications",
+        "TX-ai_market_subcategory-industrials",
+        "TX-industry-automotive_transportation",
+        "TX-product_form-enterprise_software_platform",
+        "TX-target_user-business_user",
+        "TX-target_user-developer",
+        "TX-use_case-design_engineering",
+        "TX-use_case-productivity_enterprise_workflows"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-21",
+      "lastSeen": "2026-09-22"
+    },
+    {
       "id": "EN-cfec5bef40cbf3ae",
       "name": "设序科技",
       "entityType": "organization_candidate",
@@ -9435,15 +10147,15 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
-        "TX-target_user-business_user",
-        "TX-industry-automotive_transportation",
-        "TX-target_user-developer",
         "TX-ai_market_category-industry_applications",
+        "TX-ai_market_subcategory-industrials",
+        "TX-industry-automotive_transportation",
         "TX-product_form-enterprise_software_platform",
+        "TX-target_user-business_user",
+        "TX-target_user-developer",
         "TX-use_case-design_engineering",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-ai_market_subcategory-industrials",
+        "TX-industry-manufacturing",
         "TX-product_form-end_user_application"
       ],
       "relatedEntityIds": [],
@@ -9465,14 +10177,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
-        "TX-target_user-business_user",
-        "TX-use_case-physical_automation",
-        "TX-use_case-data_analysis",
         "TX-ai_market_category-industry_applications",
+        "TX-ai_market_subcategory-industrials",
         "TX-product_form-enterprise_software_platform",
+        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-ai_market_subcategory-industrials"
+        "TX-use_case-data_analysis",
+        "TX-industry-manufacturing",
+        "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-09-15",
@@ -9495,13 +10207,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
+        "TX-ai_market_category-industry_applications",
+        "TX-ai_market_subcategory-industrials",
         "TX-target_user-business_user",
         "TX-target_user-developer",
-        "TX-ai_market_category-industry_applications",
         "TX-use_case-design_engineering",
-        "TX-ai_market_subcategory-industrials",
-        "TX-product_form-model"
+        "TX-product_form-model",
+        "TX-industry-manufacturing"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-09-09",
@@ -9525,14 +10237,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-ai_market_category-industry_applications",
+        "TX-ai_market_subcategory-industrials",
+        "TX-product_form-enterprise_software_platform",
+        "TX-target_user-business_user",
+        "TX-use_case-data_analysis",
         "TX-industry-energy_utilities",
         "TX-industry-manufacturing",
-        "TX-target_user-business_user",
-        "TX-use_case-physical_automation",
-        "TX-use_case-data_analysis",
-        "TX-ai_market_category-industry_applications",
-        "TX-product_form-enterprise_software_platform",
-        "TX-ai_market_subcategory-industrials"
+        "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-09",
@@ -9553,14 +10265,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
-        "TX-target_user-business_user",
-        "TX-use_case-physical_automation",
         "TX-ai_market_category-industry_applications",
+        "TX-ai_market_subcategory-industrials",
         "TX-product_form-enterprise_software_platform",
+        "TX-target_user-business_user",
         "TX-use_case-design_engineering",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-ai_market_subcategory-industrials"
+        "TX-industry-manufacturing",
+        "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-09-03",
@@ -9583,14 +10295,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
-        "TX-target_user-business_user",
-        "TX-use_case-physical_automation",
-        "TX-use_case-data_analysis",
         "TX-ai_market_category-industry_applications",
+        "TX-ai_market_subcategory-industrials",
         "TX-product_form-enterprise_software_platform",
+        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-ai_market_subcategory-industrials"
+        "TX-use_case-data_analysis",
+        "TX-industry-manufacturing",
+        "TX-use_case-physical_automation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-18",
@@ -9613,14 +10325,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
-        "TX-technology-agentic_execution",
-        "TX-industry-automotive_transportation",
         "TX-ai_market_category-industry_applications",
+        "TX-ai_market_subcategory-industrials",
+        "TX-industry-automotive_transportation",
         "TX-product_form-enterprise_software_platform",
+        "TX-target_user-business_user",
         "TX-use_case-design_engineering",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-ai_market_subcategory-industrials",
+        "TX-technology-agentic_execution",
         "TX-industry-construction_real_estate"
       ],
       "relatedEntityIds": [],
@@ -9642,12 +10354,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
-        "TX-target_user-researcher",
         "TX-ai_market_category-industry_applications",
+        "TX-ai_market_subcategory-industrials",
         "TX-product_form-enterprise_software_platform",
+        "TX-target_user-researcher",
         "TX-use_case-research_discovery",
-        "TX-ai_market_subcategory-industrials"
+        "TX-industry-manufacturing"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-10",
@@ -9668,12 +10380,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
-        "TX-target_user-business_user",
         "TX-ai_market_category-industry_applications",
-        "TX-product_form-enterprise_software_platform",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_subcategory-industrials",
+        "TX-product_form-enterprise_software_platform",
+        "TX-target_user-business_user",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-industry-manufacturing",
         "TX-industry-logistics_supply_chain",
         "TX-use_case-procurement_supply_chain"
       ],
@@ -9696,11 +10408,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-energy_utilities",
-        "TX-target_user-business_user",
         "TX-ai_market_category-industry_applications",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_subcategory-industrials",
+        "TX-target_user-business_user",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-industry-energy_utilities",
         "TX-product_form-end_user_application",
         "TX-industry-construction_real_estate",
         "TX-use_case-legal_compliance"
@@ -9725,13 +10437,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
-        "TX-target_user-business_user",
         "TX-ai_market_category-industry_applications",
+        "TX-ai_market_subcategory-industrials",
         "TX-product_form-enterprise_software_platform",
+        "TX-target_user-business_user",
         "TX-use_case-design_engineering",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-ai_market_subcategory-industrials",
+        "TX-industry-manufacturing",
         "TX-industry-logistics_supply_chain",
         "TX-industry-aerospace_defense"
       ],
@@ -9754,12 +10466,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
-        "TX-technology-agentic_execution",
         "TX-ai_market_category-industry_applications",
-        "TX-product_form-enterprise_software_platform",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_subcategory-industrials",
+        "TX-product_form-enterprise_software_platform",
+        "TX-target_user-business_user",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-technology-agentic_execution",
         "TX-use_case-finance_accounting",
         "TX-industry-construction_real_estate"
       ],
@@ -9784,12 +10496,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
-        "TX-target_user-business_user",
-        "TX-use_case-physical_automation",
         "TX-ai_market_category-industry_applications",
-        "TX-product_form-ai_device",
         "TX-ai_market_subcategory-industrials",
+        "TX-target_user-business_user",
+        "TX-industry-manufacturing",
+        "TX-use_case-physical_automation",
+        "TX-product_form-ai_device",
         "TX-industry-aerospace_defense"
       ],
       "relatedEntityIds": [],
@@ -9811,10 +10523,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
-        "TX-use_case-data_analysis",
         "TX-ai_market_category-industry_applications",
         "TX-ai_market_subcategory-industrials",
+        "TX-target_user-business_user",
+        "TX-use_case-data_analysis",
         "TX-product_form-end_user_application",
         "TX-industry-construction_real_estate",
         "TX-use_case-procurement_supply_chain"
@@ -9840,11 +10552,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
-        "TX-target_user-business_user",
         "TX-ai_market_category-industry_applications",
-        "TX-use_case-design_engineering",
         "TX-ai_market_subcategory-industrials",
+        "TX-target_user-business_user",
+        "TX-use_case-design_engineering",
+        "TX-industry-manufacturing",
         "TX-product_form-end_user_application"
       ],
       "relatedEntityIds": [],
@@ -9866,13 +10578,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
-        "TX-target_user-developer",
         "TX-ai_market_category-industry_applications",
-        "TX-product_form-developer_tool",
-        "TX-use_case-software_development",
+        "TX-ai_market_subcategory-industrials",
+        "TX-target_user-developer",
         "TX-use_case-design_engineering",
-        "TX-ai_market_subcategory-industrials"
+        "TX-use_case-software_development",
+        "TX-industry-manufacturing",
+        "TX-product_form-developer_tool"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-04",
@@ -9893,11 +10605,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
-        "TX-target_user-business_user",
         "TX-ai_market_category-industry_applications",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_subcategory-industrials",
+        "TX-target_user-business_user",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-industry-manufacturing",
         "TX-product_form-end_user_application",
         "TX-use_case-procurement_supply_chain"
       ],
@@ -9920,10 +10632,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
         "TX-ai_market_category-industry_applications",
-        "TX-use_case-design_engineering",
         "TX-ai_market_subcategory-industrials",
+        "TX-target_user-business_user",
+        "TX-use_case-design_engineering",
         "TX-product_form-end_user_application",
         "TX-industry-construction_real_estate"
       ],
@@ -9946,12 +10658,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
-        "TX-target_user-business_user",
         "TX-ai_market_category-industry_applications",
-        "TX-product_form-enterprise_software_platform",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-ai_market_subcategory-industrials",
+        "TX-product_form-enterprise_software_platform",
+        "TX-target_user-business_user",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-industry-manufacturing",
         "TX-industry-logistics_supply_chain",
         "TX-use_case-procurement_supply_chain"
       ],
@@ -9990,28 +10702,28 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-energy_utilities",
-        "TX-industry-government_public_sector",
-        "TX-industry-manufacturing",
-        "TX-target_user-business_user",
-        "TX-ai_market_category-infrastructure_compute",
-        "TX-industry-automotive_transportation",
-        "TX-target_user-developer",
-        "TX-use_case-data_analysis",
         "TX-ai_market_category-industry_applications",
-        "TX-ai_market_subcategory-development_deployment",
-        "TX-use_case-software_development",
-        "TX-industry-financial_services",
+        "TX-ai_market_subcategory-industrials",
+        "TX-industry-automotive_transportation",
         "TX-product_form-enterprise_software_platform",
+        "TX-target_user-business_user",
+        "TX-target_user-developer",
         "TX-use_case-design_engineering",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-use_case-data_analysis",
+        "TX-ai_market_application-models",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-product_form-model",
+        "TX-use_case-software_development",
+        "TX-industry-energy_utilities",
+        "TX-industry-financial_services",
+        "TX-industry-manufacturing",
+        "TX-industry-government_public_sector",
         "TX-product_form-compute_cloud_service",
         "TX-use_case-knowledge_search",
-        "TX-use_case-productivity_enterprise_workflows",
-        "TX-ai_market_subcategory-industrials",
-        "TX-product_form-model",
         "TX-use_case-content_creation",
         "TX-industry-professional_services",
-        "TX-ai_market_application-models",
         "TX-industry-aerospace_defense",
         "TX-technology-multimodal"
       ],
@@ -10039,10 +10751,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
         "TX-ai_market_category-industry_applications",
-        "TX-use_case-design_engineering",
         "TX-ai_market_subcategory-industrials",
+        "TX-target_user-business_user",
+        "TX-use_case-design_engineering",
         "TX-product_form-end_user_application",
         "TX-industry-construction_real_estate"
       ],
@@ -10065,10 +10777,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
         "TX-ai_market_category-industry_applications",
-        "TX-use_case-design_engineering",
         "TX-ai_market_subcategory-industrials",
+        "TX-target_user-business_user",
+        "TX-use_case-design_engineering",
         "TX-product_form-end_user_application",
         "TX-industry-construction_real_estate"
       ],
@@ -10094,14 +10806,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-energy_utilities",
-        "TX-industry-manufacturing",
-        "TX-target_user-business_user",
-        "TX-use_case-data_analysis",
         "TX-ai_market_category-industry_applications",
+        "TX-ai_market_subcategory-industrials",
         "TX-product_form-enterprise_software_platform",
+        "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-ai_market_subcategory-industrials"
+        "TX-use_case-data_analysis",
+        "TX-industry-energy_utilities",
+        "TX-industry-manufacturing"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-19",
@@ -10123,14 +10835,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
-        "TX-target_user-developer",
-        "TX-target_user-researcher",
         "TX-ai_market_category-industry_applications",
-        "TX-use_case-design_engineering",
-        "TX-use_case-research_discovery",
         "TX-ai_market_subcategory-industrials",
-        "TX-product_form-model"
+        "TX-target_user-developer",
+        "TX-use_case-design_engineering",
+        "TX-target_user-researcher",
+        "TX-use_case-research_discovery",
+        "TX-product_form-model",
+        "TX-industry-manufacturing"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-03-24",

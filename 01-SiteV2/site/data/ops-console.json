@@ -49,7 +49,7 @@
           "key": "MINIPROGRAM",
           "label": "微信小程序",
           "category": "融资产品",
-          "value": "1.1.3",
+          "value": "1.1.4",
           "source": "02-Miniprogram/package.json",
           "status": "源码版本 · 微信线上待核验",
           "kind": "source",
@@ -315,7 +315,7 @@
         "key": "MINIPROGRAM",
         "label": "微信小程序",
         "category": "融资产品",
-        "value": "1.1.3",
+        "value": "1.1.4",
         "source": "02-Miniprogram/package.json",
         "status": "源码版本 · 微信线上待核验",
         "kind": "source",
@@ -519,7 +519,7 @@
   },
   "meta": {
     "version": "OPS-V3.8.0-engineering-integration",
-    "generatedAt": "2026-09-21T04:14:25.763Z",
+    "generatedAt": "2026-09-22T00:46:58.071Z",
     "date": "2026-09-21",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
@@ -1651,7 +1651,7 @@
       }
     ],
     "sourceQuality": {
-      "updatedAt": "2026-09-21T04:14:25.747Z",
+      "updatedAt": "2026-09-22T00:46:58.062Z",
       "sampleNote": "按最新 V4 RawDocument 的 acquisition_channel 聚合；样本量为已落盘 Raw 文档数。",
       "metricNote": "诊断分由可用率、全文率、高质提取率、可读性和事实命中率组成，仅用于运营观察，不参与来源准入、排序或事实门禁。",
       "rows": [
@@ -1729,29 +1729,29 @@
     },
     "chinaFunding": {
       "schema_version": "CHINA-FUNDING-HEALTH-V1.0",
-      "date": "2026-09-21",
-      "generated_at": "2026-09-21T00:39:55.351Z",
+      "date": "2026-09-22",
+      "generated_at": "2026-09-22T00:46:58.007Z",
       "status": "partial",
-      "last_collection_at": "2026-09-21T00:13:45.402Z",
+      "last_collection_at": "2026-09-22T00:13:45.077Z",
       "failed_stage": null,
       "stages": [
         {
           "id": "capture",
           "status": "passed",
-          "started_at": "2026-09-21T00:35:48.282Z",
-          "finished_at": "2026-09-21T00:36:17.944Z"
+          "started_at": "2026-09-22T00:41:30.670Z",
+          "finished_at": "2026-09-22T00:42:07.728Z"
         },
         {
           "id": "facts",
           "status": "passed",
-          "started_at": "2026-09-21T00:36:17.944Z",
-          "finished_at": "2026-09-21T00:37:10.229Z"
+          "started_at": "2026-09-22T00:42:07.728Z",
+          "finished_at": "2026-09-22T00:43:25.298Z"
         },
         {
           "id": "projections",
           "status": "passed",
-          "started_at": "2026-09-21T00:37:10.229Z",
-          "finished_at": "2026-09-21T00:39:55.234Z"
+          "started_at": "2026-09-22T00:43:25.298Z",
+          "finished_at": "2026-09-22T00:46:57.888Z"
         }
       ],
       "sources": [
@@ -1759,7 +1759,7 @@
           "source_id": "pedaily",
           "registry_id": "cn-pedaily",
           "name": "投资界",
-          "attempted_at": "2026-09-21T00:12:35.286Z",
+          "attempted_at": "2026-09-22T00:12:36.936Z",
           "query_count": 2,
           "successful_queries": 2,
           "list_pages_ok": 2,
@@ -1769,111 +1769,101 @@
             "https://m.pedaily.cn/",
             "https://www.pedaily.cn/vcpeevent/"
           ],
-          "discovered": 29,
-          "capped": 5,
+          "discovered": 28,
+          "capped": 4,
           "status": "collected",
-          "response_ms": 11762,
-          "completed_at": "2026-09-21T00:12:47.048Z",
+          "response_ms": 10794,
+          "completed_at": "2026-09-22T00:12:47.730Z",
           "raw_count": 24,
           "readable_count": 24,
-          "accepted_claims": 11,
+          "accepted_claims": 8,
           "verified_event_ids": [
-            "EV-2c2f903622c29ba4",
-            "EV-ea75b2ed63b1700d",
-            "EV-3c7609d3fc7b7ec8",
-            "EV-d5d58c23fa179e23",
-            "EV-5594c1b556d321be",
-            "EV-c0b49766ef954766",
-            "EV-06f2bca776e5cee7",
-            "EV-b9be18b12b1714f3"
+            "EV-c8871997cafcf846",
+            "EV-4bc575228888c358",
+            "EV-6f7ec978fd8ad3fc",
+            "EV-fbb4b961191efa55",
+            "EV-33df10f232e26f29",
+            "EV-3c7609d3fc7b7ec8"
           ],
           "funding_event_ids": [
-            "EV-2c2f903622c29ba4",
-            "EV-ea75b2ed63b1700d",
-            "EV-3c7609d3fc7b7ec8",
-            "EV-d5d58c23fa179e23",
-            "EV-5594c1b556d321be",
-            "EV-c0b49766ef954766",
-            "EV-06f2bca776e5cee7",
-            "EV-b9be18b12b1714f3"
+            "EV-c8871997cafcf846",
+            "EV-4bc575228888c358",
+            "EV-6f7ec978fd8ad3fc",
+            "EV-fbb4b961191efa55",
+            "EV-33df10f232e26f29",
+            "EV-3c7609d3fc7b7ec8"
           ],
           "china_funding_event_ids": [
-            "EV-2c2f903622c29ba4",
-            "EV-ea75b2ed63b1700d"
+            "EV-4bc575228888c358",
+            "EV-3c7609d3fc7b7ec8"
           ],
           "card_ids": [
-            "FI-8af42a8c953a4ffb",
-            "FI-6f249b72ba7485a4",
-            "FI-650502a31ab7ccaa",
-            "FI-359dbc4cb60c5635",
-            "FI-77950002d539c290"
+            "FI-1c45f6b3bea32aad",
+            "FI-16af0b20c345fd03",
+            "FI-38b75fc20ab26eaf",
+            "FI-6f249b72ba7485a4"
           ],
-          "latest_disclosure": "2026-09-20T09:32:00.000Z"
+          "latest_disclosure": "2026-09-21T10:03:00.000Z"
         },
         {
           "source_id": "chinaventure",
           "registry_id": "cn-chinaventure",
           "name": "投中网",
-          "attempted_at": "2026-09-21T00:12:47.048Z",
+          "attempted_at": "2026-09-22T00:12:47.730Z",
           "query_count": 2,
           "successful_queries": 2,
           "list_pages_ok": 1,
-          "candidates": 23,
+          "candidates": 21,
           "failures": [],
           "entry_urls": [
             "https://www.chinaventure.com.cn/"
           ],
-          "discovered": 23,
+          "discovered": 21,
           "capped": 0,
           "status": "collected",
-          "response_ms": 7384,
-          "completed_at": "2026-09-21T00:12:54.432Z",
-          "raw_count": 23,
-          "readable_count": 23,
-          "accepted_claims": 6,
+          "response_ms": 6482,
+          "completed_at": "2026-09-22T00:12:54.212Z",
+          "raw_count": 20,
+          "readable_count": 20,
+          "accepted_claims": 5,
           "verified_event_ids": [
-            "EV-d959c800774d5d30",
-            "EV-bdd1611cc17c3325",
-            "EV-66f24f6db71cc011",
+            "EV-4bc690025cbda146",
             "EV-77887cf446f03ba4"
           ],
           "funding_event_ids": [
-            "EV-d959c800774d5d30",
-            "EV-bdd1611cc17c3325",
-            "EV-66f24f6db71cc011",
+            "EV-4bc690025cbda146",
             "EV-77887cf446f03ba4"
           ],
           "china_funding_event_ids": [],
           "card_ids": [
-            "FI-cb9086864c5c66de",
+            "FI-47911ee433d82d2a",
             "FI-6f249b72ba7485a4",
-            "FI-7ed03b9f49b8e497",
             "FI-2afefdedd2834f49"
           ],
-          "latest_disclosure": "2026-09-20T06:24:00.000Z"
+          "latest_disclosure": "2026-09-21T06:28:00.000Z"
         },
         {
           "source_id": "36kr",
           "registry_id": "cn-36kr-rss",
           "name": "36氪",
-          "attempted_at": "2026-09-21T00:12:54.432Z",
+          "attempted_at": "2026-09-22T00:12:54.212Z",
           "query_count": 2,
           "successful_queries": 2,
           "list_pages_ok": 0,
-          "candidates": 1,
+          "candidates": 2,
           "failures": [
             "list https://pitchhub.36kr.com/: no readable funding article links"
           ],
           "entry_urls": [
             "https://pitchhub.36kr.com/"
           ],
-          "discovered": 1,
+          "discovered": 2,
           "capped": 0,
           "status": "partial",
-          "response_ms": 9783,
-          "completed_at": "2026-09-21T00:13:04.215Z",
-          "raw_count": 1,
-          "readable_count": 1,
+          "response_ms": 7674,
+          "completed_at": "2026-09-22T00:13:01.886Z",
+          "raw_count": 2,
+          "readable_count": 2,
           "accepted_claims": 0,
           "verified_event_ids": [],
           "funding_event_ids": [],
@@ -1885,22 +1875,22 @@
           "source_id": "cyzone",
           "registry_id": "cn-cyzone",
           "name": "创业邦",
-          "attempted_at": "2026-09-21T00:13:04.216Z",
+          "attempted_at": "2026-09-22T00:13:01.886Z",
           "query_count": 2,
           "successful_queries": 2,
           "list_pages_ok": 1,
-          "candidates": 9,
+          "candidates": 12,
           "failures": [],
           "entry_urls": [
             "https://www.cyzone.cn/"
           ],
-          "discovered": 9,
+          "discovered": 12,
           "capped": 0,
           "status": "collected",
-          "response_ms": 14607,
-          "completed_at": "2026-09-21T00:13:18.823Z",
-          "raw_count": 9,
-          "readable_count": 9,
+          "response_ms": 9712,
+          "completed_at": "2026-09-22T00:13:11.598Z",
+          "raw_count": 12,
+          "readable_count": 12,
           "accepted_claims": 0,
           "verified_event_ids": [],
           "funding_event_ids": [],
@@ -1914,78 +1904,81 @@
           "source_id": "cls",
           "registry_id": "cn-cls",
           "name": "财联社／科创板日报",
-          "attempted_at": "2026-09-21T00:13:18.823Z",
+          "attempted_at": "2026-09-22T00:13:11.598Z",
           "query_count": 2,
           "successful_queries": 2,
           "list_pages_ok": 0,
-          "candidates": 16,
+          "candidates": 9,
           "failures": [
             "list https://www.cls.cn/: no readable funding article links"
           ],
           "entry_urls": [
             "https://www.cls.cn/"
           ],
-          "discovered": 16,
+          "discovered": 9,
           "capped": 0,
           "status": "partial",
-          "response_ms": 5452,
-          "completed_at": "2026-09-21T00:13:24.275Z",
-          "raw_count": 16,
-          "readable_count": 16,
-          "accepted_claims": 9,
+          "response_ms": 12704,
+          "completed_at": "2026-09-22T00:13:24.302Z",
+          "raw_count": 9,
+          "readable_count": 9,
+          "accepted_claims": 3,
           "verified_event_ids": [
-            "EV-1c0fe6f6090ce11c",
-            "EV-5458f54522772562",
-            "EV-805ba2cd49be2b47"
+            "EV-375d04f7cc9746c6"
           ],
           "funding_event_ids": [
-            "EV-5458f54522772562"
+            "EV-375d04f7cc9746c6"
           ],
-          "china_funding_event_ids": [
-            "EV-5458f54522772562"
-          ],
+          "china_funding_event_ids": [],
           "card_ids": [
+            "FI-1d043b12be806460",
             "FI-c2d2a86fa237b6eb"
           ],
-          "latest_disclosure": "2026-09-18T07:24:00.000Z"
+          "latest_disclosure": "2026-09-21T10:12:00.000Z"
         },
         {
           "source_id": "qbitai",
           "registry_id": "cn-qbitai-rss",
           "name": "量子位",
-          "attempted_at": "2026-09-21T00:13:24.275Z",
+          "attempted_at": "2026-09-22T00:13:24.302Z",
           "query_count": 2,
           "successful_queries": 2,
           "list_pages_ok": 0,
-          "candidates": 2,
+          "candidates": 11,
           "failures": [
             "list https://www.qbitai.com/: no readable funding article links"
           ],
           "entry_urls": [
             "https://www.qbitai.com/"
           ],
-          "discovered": 2,
+          "discovered": 11,
           "capped": 0,
           "status": "partial",
-          "response_ms": 7924,
-          "completed_at": "2026-09-21T00:13:32.199Z",
-          "raw_count": 2,
-          "readable_count": 2,
-          "accepted_claims": 0,
-          "verified_event_ids": [],
-          "funding_event_ids": [],
+          "response_ms": 3699,
+          "completed_at": "2026-09-22T00:13:28.001Z",
+          "raw_count": 11,
+          "readable_count": 11,
+          "accepted_claims": 3,
+          "verified_event_ids": [
+            "EV-2de77a62435cc041"
+          ],
+          "funding_event_ids": [
+            "EV-2de77a62435cc041"
+          ],
           "china_funding_event_ids": [],
           "card_ids": [
-            "FI-257e4f42c36415ea",
+            "FI-66e7dd713fc6bab5",
+            "FI-846562dfba15b6a0",
+            "FI-29dc2b4975d2ba0a",
             "FI-5c529fe1ecb9dd07"
           ],
-          "latest_disclosure": null
+          "latest_disclosure": "2026-09-21T00:00:00+08:00"
         },
         {
           "source_id": "jiqizhixin",
           "registry_id": "cn-jiqizhixin",
           "name": "机器之心",
-          "attempted_at": "2026-09-21T00:13:32.199Z",
+          "attempted_at": "2026-09-22T00:13:28.001Z",
           "query_count": 2,
           "successful_queries": 2,
           "list_pages_ok": 0,
@@ -1999,8 +1992,8 @@
           "discovered": 0,
           "capped": 0,
           "status": "partial",
-          "response_ms": 13145,
-          "completed_at": "2026-09-21T00:13:45.344Z",
+          "response_ms": 16998,
+          "completed_at": "2026-09-22T00:13:44.999Z",
           "raw_count": 0,
           "readable_count": 0,
           "accepted_claims": 0,
@@ -2014,15 +2007,15 @@
       "totals": {
         "sources_attempted": 7,
         "sources_failed": 0,
-        "candidates": 75,
-        "readable_documents": 75,
-        "accepted_claims": 26,
-        "verified_events": 15,
-        "funding_events": 13,
-        "china_funding_events": 3,
-        "linked_organizations": 20,
+        "candidates": 79,
+        "readable_documents": 78,
+        "accepted_claims": 19,
+        "verified_events": 10,
+        "funding_events": 10,
+        "china_funding_events": 2,
+        "linked_organizations": 14,
         "linked_products": 0,
-        "published_card_matches": 12
+        "published_card_matches": 13
       },
       "publication": {
         "status": "awaiting_publication_receipt"
@@ -23317,7 +23310,7 @@
         "key": "MINIPROGRAM",
         "label": "微信小程序",
         "category": "融资产品",
-        "value": "1.1.3",
+        "value": "1.1.4",
         "source": "02-Miniprogram/package.json",
         "status": "源码版本 · 微信线上待核验",
         "kind": "source",
@@ -27812,7 +27805,7 @@
         "key": "MINIPROGRAM",
         "label": "微信小程序",
         "category": "融资产品",
-        "value": "1.1.3",
+        "value": "1.1.4",
         "source": "02-Miniprogram/package.json",
         "status": "源码版本 · 微信线上待核验",
         "kind": "source",
@@ -27932,6 +27925,6 @@
       }
     ],
     "catalogGeneratedAt": "2026-09-13 16:21:58",
-    "snapshotGeneratedAt": "2026-09-21T04:14:25.763Z"
+    "snapshotGeneratedAt": "2026-09-22T00:46:58.071Z"
   }
 }

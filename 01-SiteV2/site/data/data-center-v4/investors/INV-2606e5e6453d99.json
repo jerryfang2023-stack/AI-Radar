@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-21T04:13:14.914Z",
-    "latestDataDate": "2026-09-21",
-    "currentDate": "2026-09-21",
-    "eventCount": 3463,
+    "generatedAt": "2026-09-22T00:46:35.366Z",
+    "latestDataDate": "2026-09-22",
+    "currentDate": "2026-09-22",
+    "eventCount": 3469,
     "quarantinedEventCount": 37,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -60,7 +60,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 2,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
@@ -68,9 +68,9 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-03-03",
-    "latest_disclosed_at": "2026-08-12",
+    "latest_disclosed_at": "2026-09-21",
     "role_counts": {
-      "historical_or_ambiguous": 1,
+      "historical_or_ambiguous": 2,
       "participant": 2
     },
     "round_codes": [
@@ -90,6 +90,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-159edc7e804629fd",
+        "funding_insight_id": "FI-38b75fc20ab26eaf",
+        "event_ids": [
+          "EV-c8871997cafcf846"
+        ],
+        "company_entity_id": "EN-7d3194f79e645c42",
+        "company_canonical_entity_id": "EN-7d3194f79e645c42",
+        "company_name": "OpenAI",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮私募融资",
+        "amount_original": "1.2万亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1200000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "12000 亿美元"
+        },
+        "announced_at": "2026-09-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "今年3月1220亿美元融资参与方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-f444b625cf695878",
+            "source_url": "https://m.pedaily.cn/news/569386",
+            "source_title": "OpenAI又要融资了：1.2万亿美元估值，谁还敢接下一棒？ AI 2026-09-21 11:12",
+            "source_content_hash": "de25ff9efc9b9cdb",
+            "quote": "Coatue Management、D1 Capital Partners、Dragoneer Investment Group等跨界基金",
+            "quote_hash": "e36ba6857a03b0f56c09206350f1dee478aa4dba100b9fe49f5458d1cc4495d7"
+          }
+        ]
+      },
       {
         "activity_id": "IA-05368ae165fb9eb0",
         "funding_insight_id": "FI-208f5f069010d44d",
@@ -212,6 +252,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-f444b625cf695878",
+        "source_url": "https://m.pedaily.cn/news/569386",
+        "source_title": "OpenAI又要融资了：1.2万亿美元估值，谁还敢接下一棒？ AI 2026-09-21 11:12",
+        "source_content_hash": "de25ff9efc9b9cdb",
+        "quote": "Coatue Management、D1 Capital Partners、Dragoneer Investment Group等跨界基金",
+        "quote_hash": "e36ba6857a03b0f56c09206350f1dee478aa4dba100b9fe49f5458d1cc4495d7"
+      },
       {
         "source_id": "FISRC-0afb458e7b0878f0",
         "source_url": "https://techcrunch.com/2026/08/12/openai-backed-thrive-holdings-raises-2b-to-bring-ai-to-the-enterprise/",

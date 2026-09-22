@@ -5,16 +5,16 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-09-21T00:39:13.515Z",
+    "generated_at": "2026-09-22T00:46:15.026Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 488,
-    "input_hash": "263aefcb4f40b535",
+    "decision_count": 493,
+    "input_hash": "707682cf71377a0c",
     "override_count": 18,
     "needs_review_count": 55,
-    "low_confidence_count": 75
+    "low_confidence_count": 76
   },
   "decisions": [
     {
@@ -9764,6 +9764,109 @@
       "confidence": 0.8,
       "needs_review": false,
       "rationale": "公司产品为车规级功率模块和AI级SST模块等芯片级硬件，为AI数据中心和整车供电架构提供底层硬件支持，属于基础设施计算中的硬件芯片。"
+    },
+    {
+      "event_id": "EV-4bc690025cbda146",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "healthcare_life_sciences",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "research_discovery",
+        "data_analysis"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "researcher"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "公司核心产品为AI药物发现平台AnewDDE及生物分子预测模型，围绕制药行业的专业数据与工作流构建，属于行业应用而非通用基础设施。"
+    },
+    {
+      "event_id": "EV-c8871997cafcf846",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "software_development"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "OpenAI is a foundation model developer. The card mentions Codex and new models (5.6, Astra), which are AI models. The current classification already has product_form_id 'model' and market_category_id 'infrastructure_compute'. The most specific allowed hierarchy tuple for models is [\"infrastructure_compute\",\"development_deployment\",\"models\"]. Codex is a coding product, so software_development is a relevant use case. Target user is developer. No specific industry is indicated."
+    },
+    {
+      "event_id": "EV-fbb4b961191efa55",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "ai_development_orchestration",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "data_analysis",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "financial_services",
+        "telecommunications",
+        "energy_utilities",
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "developer"
+      ],
+      "confidence": 0.75,
+      "needs_review": false,
+      "rationale": "公司核心产品是数据智能体基础设施及数字员工操作系统，为其他AI应用提供开发与部署底座，属于基础设施中的开发部署层；AskBI等智能体是构建在该基础设施上的应用，但证据强调基础设施定位，故归入infrastructure_compute。"
+    },
+    {
+      "event_id": "EV-33df10f232e26f29",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "industrials",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "productivity_enterprise_workflows",
+        "design_engineering"
+      ],
+      "industry_ids": [
+        "automotive_transportation"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "developer"
+      ],
+      "confidence": 0.8,
+      "needs_review": false,
+      "rationale": "产品围绕智能汽车座舱的垂域数据、车载推理模型和AIOS框架构建，属于汽车行业专用工作流，而非通用基础设施或跨行业企业应用。"
+    },
+    {
+      "event_id": "EV-6f7ec978fd8ad3fc",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "industrials",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "productivity_enterprise_workflows",
+        "design_engineering"
+      ],
+      "industry_ids": [
+        "automotive_transportation"
+      ],
+      "target_user_ids": [
+        "business_user",
+        "developer"
+      ],
+      "confidence": 0.8,
+      "needs_review": false,
+      "rationale": "证据显示公司提供智能车中间件、SOA通信框架及座舱AI全栈系统，深度绑定汽车行业架构与工作流，应归为行业应用而非基础设施。"
     }
   ]
 }

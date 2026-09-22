@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-21T04:13:14.914Z",
-    "latestDataDate": "2026-09-21",
-    "currentDate": "2026-09-21",
-    "eventCount": 3463,
+    "generatedAt": "2026-09-22T00:46:35.366Z",
+    "latestDataDate": "2026-09-22",
+    "currentDate": "2026-09-22",
+    "eventCount": 3469,
     "quarantinedEventCount": 37,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -60,17 +60,18 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 2,
-    "historical_or_ambiguous_count": 3,
+    "historical_or_ambiguous_count": 4,
     "portfolio_company_count": 2,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 2,
     "china_market_company_count": 2,
     "first_disclosed_at": "2026-02-23",
-    "latest_disclosed_at": "2026-09-16",
+    "latest_disclosed_at": "2026-09-21",
     "role_counts": {
-      "historical_or_ambiguous": 3,
+      "historical_or_ambiguous": 4,
       "other_current_round": 1,
       "participant": 1
     },
@@ -90,6 +91,47 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-24cf1742ae56b6f0",
+        "funding_insight_id": "FI-16af0b20c345fd03",
+        "event_ids": [
+          "EV-6f7ec978fd8ad3fc",
+          "EV-33df10f232e26f29"
+        ],
+        "company_entity_id": "EN-2cee85064ca8de3f",
+        "company_canonical_entity_id": "",
+        "company_name": "弋途科技",
+        "round": "Pre-B轮",
+        "round_code": "pre_series_b",
+        "round_original": "Pre-B轮",
+        "amount_original": "近亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1 亿元"
+        },
+        "announced_at": "2026-09-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A+轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-08be95e2b95904af",
+            "source_url": "https://www.lejucaijing.com/news-7507630694257588011.html",
+            "source_title": "年内第三轮、弋途科技完成Pre-B轮融资，上海半导体参投-乐居财经",
+            "source_content_hash": "c2b3a4f00a437876",
+            "quote": "4月，A+轮超亿元，云启资本领投，赛富投资战略入局，以骏、德宁跟投",
+            "quote_hash": "133261190b5f1fcecfcbb8f696734b300d444c765b7ffcf74082ba55837584ee"
+          }
+        ]
+      },
       {
         "activity_id": "IA-c93e107793c741db",
         "funding_insight_id": "FI-936426cb8df9b450",
@@ -293,6 +335,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-08be95e2b95904af",
+        "source_url": "https://www.lejucaijing.com/news-7507630694257588011.html",
+        "source_title": "年内第三轮、弋途科技完成Pre-B轮融资，上海半导体参投-乐居财经",
+        "source_content_hash": "c2b3a4f00a437876",
+        "quote": "4月，A+轮超亿元，云启资本领投，赛富投资战略入局，以骏、德宁跟投",
+        "quote_hash": "133261190b5f1fcecfcbb8f696734b300d444c765b7ffcf74082ba55837584ee"
+      },
       {
         "source_id": "FISRC-e76b377b4dc40602",
         "source_url": "https://finance.eastmoney.com/a/202609123872695227.html",

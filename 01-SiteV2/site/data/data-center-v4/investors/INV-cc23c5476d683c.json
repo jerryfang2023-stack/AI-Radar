@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-21T04:13:14.914Z",
-    "latestDataDate": "2026-09-21",
-    "currentDate": "2026-09-21",
-    "eventCount": 3463,
+    "generatedAt": "2026-09-22T00:46:35.366Z",
+    "latestDataDate": "2026-09-22",
+    "currentDate": "2026-09-22",
+    "eventCount": 3469,
     "quarantinedEventCount": 37,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -60,7 +60,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 2,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
@@ -68,8 +68,9 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-28",
-    "latest_disclosed_at": "2026-07-22",
+    "latest_disclosed_at": "2026-09-21",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 2
     },
     "round_codes": [
@@ -89,6 +90,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-cc284c9e4d1f7209",
+        "funding_insight_id": "FI-38b75fc20ab26eaf",
+        "event_ids": [
+          "EV-c8871997cafcf846"
+        ],
+        "company_entity_id": "EN-7d3194f79e645c42",
+        "company_canonical_entity_id": "EN-7d3194f79e645c42",
+        "company_name": "OpenAI",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮私募融资",
+        "amount_original": "1.2万亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1200000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "12000 亿美元"
+        },
+        "announced_at": "2026-09-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "现有大股东，承诺投资OpenAI",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-f444b625cf695878",
+            "source_url": "https://m.pedaily.cn/news/569386",
+            "source_title": "OpenAI又要融资了：1.2万亿美元估值，谁还敢接下一棒？ AI 2026-09-21 11:12",
+            "source_content_hash": "de25ff9efc9b9cdb",
+            "quote": "软银为交付其对OpenAI承诺的最后100亿美元投资，已申请了近120亿美元的贷款。",
+            "quote_hash": "1577d006ceb5e674e5a53bb30a2a6d8605af2bcae2cc1cc2bf3a2f2227e1a4af"
+          }
+        ]
+      },
       {
         "activity_id": "IA-6dfc3333e757cea3",
         "funding_insight_id": "FI-8912876dba34b0dc",
@@ -171,6 +212,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-f444b625cf695878",
+        "source_url": "https://m.pedaily.cn/news/569386",
+        "source_title": "OpenAI又要融资了：1.2万亿美元估值，谁还敢接下一棒？ AI 2026-09-21 11:12",
+        "source_content_hash": "de25ff9efc9b9cdb",
+        "quote": "软银为交付其对OpenAI承诺的最后100亿美元投资，已申请了近120亿美元的贷款。",
+        "quote_hash": "1577d006ceb5e674e5a53bb30a2a6d8605af2bcae2cc1cc2bf3a2f2227e1a4af"
+      },
       {
         "source_id": "FISRC-990ec5e1d34ab9a7",
         "source_url": "https://www.ithome.com/0/980/066.htm",

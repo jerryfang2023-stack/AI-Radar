@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-21T04:13:14.914Z",
-    "latestDataDate": "2026-09-21",
-    "currentDate": "2026-09-21",
-    "eventCount": 3463,
+    "generatedAt": "2026-09-22T00:46:35.366Z",
+    "latestDataDate": "2026-09-22",
+    "currentDate": "2026-09-22",
+    "eventCount": 3469,
     "quarantinedEventCount": 37,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -60,7 +60,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 0,
     "market_regions": [
       "CN"
@@ -68,13 +68,53 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-06-16",
-    "latest_disclosed_at": "2026-06-16",
+    "latest_disclosed_at": "2026-09-21",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 2
     },
     "round_codes": [],
     "portfolio_companies": [],
     "activities": [
+      {
+        "activity_id": "IA-90e82a4c57690907",
+        "funding_insight_id": "FI-1c45f6b3bea32aad",
+        "event_ids": [
+          "EV-fbb4b961191efa55"
+        ],
+        "company_entity_id": "EN-e7d56af70143fcd7",
+        "company_canonical_entity_id": "",
+        "company_name": "数巅智能",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-09-21",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b081386a3d09c943",
+            "source_url": "https://cn.chinadaily.com.cn/a/202608/31/WS6a953f26e4b09a165c787146.html",
+            "source_title": "数巅智能：以数据智能体重塑企业AI生产力 - 中国日报网",
+            "source_content_hash": "2db46bde0cf654b8",
+            "quote": "数巅智能已完成数亿元多轮融资，投资方涵盖君联资本、赛富基金、中国中车、中石油昆仑资本、耀途资本、济和创投、红鸟基金、中关村科学城、北京市信息产业发展投资基金等知名机构。",
+            "quote_hash": "e3549fb86c70ab59e7bba116769dd020a96e66db5bb6d6308113bffcc4df1b63"
+          }
+        ]
+      },
       {
         "activity_id": "IA-3bca97f9a029ce20",
         "funding_insight_id": "FI-a385248b0f830a67",
@@ -118,6 +158,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-b081386a3d09c943",
+        "source_url": "https://cn.chinadaily.com.cn/a/202608/31/WS6a953f26e4b09a165c787146.html",
+        "source_title": "数巅智能：以数据智能体重塑企业AI生产力 - 中国日报网",
+        "source_content_hash": "2db46bde0cf654b8",
+        "quote": "数巅智能已完成数亿元多轮融资，投资方涵盖君联资本、赛富基金、中国中车、中石油昆仑资本、耀途资本、济和创投、红鸟基金、中关村科学城、北京市信息产业发展投资基金等知名机构。",
+        "quote_hash": "e3549fb86c70ab59e7bba116769dd020a96e66db5bb6d6308113bffcc4df1b63"
+      },
       {
         "source_id": "FISRC-50b5e9b4a45a40c4",
         "source_url": "https://www.siliconflowcn.com/",
