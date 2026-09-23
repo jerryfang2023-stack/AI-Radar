@@ -351,6 +351,10 @@ failures; the collector's default gate still validates its working-tree candidat
 Vault refresh uses an isolated `origin/main` worktree. Resolve broken manual-note
 links at the referenced file and archive retired duplicate repository copies
 outside the wiki. Do not weaken the Vault boundary gate to tolerate old roots.
+Evidence projection and Vault validation share the same tool-cache exclusions,
+including `.pytest_cache`. They must not traverse unrelated generated caches in
+personal work areas; permission errors on actual knowledge directories still
+block synchronization. Do not change ACLs or delete personal files to pass this gate.
 
 Read or resolve external incident drafts with `--inbox-dir=<runtime>/production-incidents`
 on `inbox:incidents` and `resolve:incident`; keep the same explicit directory when

@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { VAULT_SCAN_SKIP_DIRECTORIES } from "./guanlan-vault-scan.mjs";
 
 const CITATION_ROOT = "60-知识资产/来源引用";
 const RELATION_INDEX = "60-知识资产/证据关系索引.md";
@@ -99,7 +100,7 @@ function markdownFiles(root) {
     const current = stack.pop();
     for (const entry of fs.readdirSync(current, { withFileTypes: true })) {
       const file = path.join(current, entry.name);
-      if (entry.isDirectory()) stack.push(file);
+      if (entry.isDirectory() && !VAULT_SCAN_SKIP_DIRECTORIES.has(entry.name.toLowerCase())) stack.push(file);
       else if (entry.isFile() && entry.name.toLowerCase().endsWith(".md")) files.push(file);
     }
   }
