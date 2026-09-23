@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-22T03:45:38.642Z",
-    "latestDataDate": "2026-09-22",
-    "currentDate": "2026-09-22",
-    "eventCount": 3493,
+    "generatedAt": "2026-09-23T00:30:23.033Z",
+    "latestDataDate": "2026-09-23",
+    "currentDate": "2026-09-23",
+    "eventCount": 3520,
     "quarantinedEventCount": 37,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -28,8 +28,8 @@
       "EV-ca0c54e3f9776fa5",
       "EV-e78ef81d4971565e",
       "EV-31abbd556dd87fc9",
-      "EV-cab18aa68c8ae551",
       "EV-88a9fd0b8f602e16",
+      "EV-cab18aa68c8ae551",
       "EV-844b61a6f671856b",
       "EV-90a174964b9d1daf",
       "EV-4b4943ce006aeb80",
@@ -65,14 +65,14 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [
+      "TX-use_case-education_learning",
       "TX-ai_market_category-industry_applications",
       "TX-ai_market_subcategory-consumer_retail",
       "TX-product_form-ai_device",
       "TX-target_user-consumer",
       "TX-industry-media_entertainment",
       "TX-industry-retail_ecommerce",
-      "TX-use_case-content_creation",
-      "TX-use_case-education_learning"
+      "TX-use_case-content_creation"
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-13",
@@ -210,6 +210,33 @@
   "relatedEntities": [],
   "relationships": [],
   "taxonomyNodes": [
+    {
+      "id": "TX-use_case-education_learning",
+      "name": "教育与学习",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "education_learning",
+      "eventIds": [
+        "EV-2470b13ea55496d0",
+        "EV-ef669a52c9a3f94f",
+        "EV-b5dd10300e34f2d3",
+        "EV-b4d6c556eadaa272",
+        "EV-88158ddf272e4731",
+        "EV-26439e34295a0519"
+      ],
+      "entityIds": [
+        "EN-0830e0bf8e8fa471",
+        "EN-1d79127e9d90e89b",
+        "EN-e22521e7de65d819",
+        "EN-ada6f7916f22af98",
+        "EN-f0a77f08b0db14ab",
+        "EN-8dc72a4672894e0f"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-01-12",
+      "lastSeen": "2026-09-23"
+    },
     {
       "id": "TX-ai_market_category-industry_applications",
       "name": "行业应用",
@@ -1130,31 +1157,6 @@
       "hardwareIds": [],
       "firstSeen": "2026-01-26",
       "lastSeen": "2026-09-16"
-    },
-    {
-      "id": "TX-use_case-education_learning",
-      "name": "教育与学习",
-      "nodeType": "use_case",
-      "typeLabel": "应用场景",
-      "valueId": "education_learning",
-      "eventIds": [
-        "EV-ef669a52c9a3f94f",
-        "EV-b5dd10300e34f2d3",
-        "EV-b4d6c556eadaa272",
-        "EV-88158ddf272e4731",
-        "EV-26439e34295a0519"
-      ],
-      "entityIds": [
-        "EN-1d79127e9d90e89b",
-        "EN-e22521e7de65d819",
-        "EN-ada6f7916f22af98",
-        "EN-f0a77f08b0db14ab",
-        "EN-8dc72a4672894e0f"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-01-12",
-      "lastSeen": "2026-09-14"
     }
   ],
   "fde": [],

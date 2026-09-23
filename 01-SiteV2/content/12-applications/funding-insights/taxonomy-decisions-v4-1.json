@@ -5,13 +5,13 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-09-22T03:40:47.758Z",
+    "generated_at": "2026-09-23T00:30:02.026Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 493,
-    "input_hash": "95e59e9cc189eb1a",
+    "decision_count": 496,
+    "input_hash": "fc23a04e13b7ef50",
     "override_count": 18,
     "needs_review_count": 55,
     "low_confidence_count": 76
@@ -9869,6 +9869,66 @@
       "confidence": 0.8,
       "needs_review": false,
       "rationale": "证据显示公司提供智能车中间件、SOA通信框架及座舱AI全栈系统，深度绑定汽车行业架构与工作流，应归为行业应用而非基础设施。"
+    },
+    {
+      "event_id": "EV-4a6955d6f3f47b64",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model_api_service",
+      "use_case_ids": [
+        "software_development",
+        "knowledge_search",
+        "data_analysis"
+      ],
+      "industry_ids": [
+        "financial_services",
+        "government_public_sector",
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "DeepSeek provides large language model APIs (V4-Pro) and open-source models (V4 series). The product is a model API service, and the market hierarchy fits infrastructure_compute > development_deployment > models. Customers include financial services, government, and manufacturing, with use cases spanning software development, knowledge search, and data analysis. Target users are primarily developers and business users."
+    },
+    {
+      "event_id": "EV-2470b13ea55496d0",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "end_user_application",
+      "use_case_ids": [
+        "education_learning"
+      ],
+      "industry_ids": [
+        "education"
+      ],
+      "target_user_ids": [
+        "student"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "The Horowitz Andreessen Academy is an educational program for recent high school graduates, providing computing credits and technology resources. It is an end-user application focused on education and learning, targeting students. The market hierarchy tuple [\"enterprise_applications\",\"productivity_enterprise_workflows\",\"\"] is the closest allowed non-physical AI tuple, as the academy is not a physical AI system, AI device, or infrastructure compute offering."
+    },
+    {
+      "event_id": "EV-bba3677d51b85918",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "data",
+      "market_application_id": "synthetic_data",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "data_analysis"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "Snorkel AI 为 AI 实验室和企业提供训练数据集与模拟环境，属于为其他 AI 产品构建者供应数据的基础设施层；其数据即服务以合成数据与专家混合方式生成，故归入 infrastructure_compute > data > synthetic_data。"
     }
   ]
 }

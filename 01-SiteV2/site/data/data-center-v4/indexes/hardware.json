@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-22T03:45:38.642Z",
-    "latestDataDate": "2026-09-22",
-    "currentDate": "2026-09-22",
-    "eventCount": 3493,
+    "generatedAt": "2026-09-23T00:30:23.033Z",
+    "latestDataDate": "2026-09-23",
+    "currentDate": "2026-09-23",
+    "eventCount": 3520,
     "quarantinedEventCount": 37,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -28,8 +28,8 @@
       "EV-ca0c54e3f9776fa5",
       "EV-e78ef81d4971565e",
       "EV-31abbd556dd87fc9",
-      "EV-cab18aa68c8ae551",
       "EV-88a9fd0b8f602e16",
+      "EV-cab18aa68c8ae551",
       "EV-844b61a6f671856b",
       "EV-90a174964b9d1daf",
       "EV-4b4943ce006aeb80",
@@ -3562,6 +3562,249 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-efc4726e2dac7dda",
+      "snapshotKey": "efc4726e2dac7dda",
+      "snapshotId": "HWS-55bb788f628a1b20",
+      "eventId": "EV-67de8f4c9ac5ce4d",
+      "eventIds": [
+        "EV-67de8f4c9ac5ce4d"
+      ],
+      "dataDate": "2026-09-23",
+      "date": "2026-09-23",
+      "title": "Claude Opus 5.5",
+      "subject": "Anthropic",
+      "productNames": [
+        "Claude Opus 5.5"
+      ],
+      "hardwareType": "ai_device",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "40",
+          "unit": "%",
+          "fact_ref": "HWF-fb2b4138874de48e"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-23",
+          "hardware_fact_id": "HWF-fb2b4138874de48e",
+          "fact_type": "product",
+          "observed_at": "2026-09-22T18:59:35.000Z",
+          "subject_entity_id": "EN-c70eca6b0f88f44d",
+          "subject_name": "Anthropic",
+          "product_entity_ids": [
+            "EN-ad11a77ab9b86f44"
+          ],
+          "product_names": [
+            "Claude Opus 5.5"
+          ],
+          "component_type": "ai_device",
+          "metric_value": "40",
+          "unit": "%",
+          "source_quote": "Anthropic has released Claude Opus 5.5 , the first model in its new Claude 5.5 family. The team states it performs at the level of Claude Fable 5.1 on most work. It also costs 40% less to run than Opus 5 on typical workloads at default settings. On Anthropic’s own benchmarks, it leads in agentic coding, computer use, and knowledge work.",
+          "event_refs": [
+            "EV-67de8f4c9ac5ce4d"
+          ],
+          "claim_ref": "CL-49cb1fc57d364810",
+          "source_refs": [
+            "SA-f7679c6faeb78a5c"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-23/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "computer_use",
+          "name": "计算机操作",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/09/22/anthropic-claude-opus-5-5-release",
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-cbc62794911ff31b",
+        "EN-bbdefa2950f49882",
+        "EN-9fbf261b62c1d7c0",
+        "EN-ad11a77ab9b86f44"
+      ]
+    },
+    {
+      "id": "HWC-2f24f410232f00fb",
+      "snapshotKey": "2f24f410232f00fb",
+      "snapshotId": "HWS-c3ce7d1680ef0342",
+      "eventId": "EV-9f86bdb1f57f57aa",
+      "eventIds": [
+        "EV-9f86bdb1f57f57aa"
+      ],
+      "dataDate": "2026-09-23",
+      "date": "2026-09-23",
+      "title": "GPT-6 Sol / GPT-6 Sol and Luna",
+      "subject": "OpenAI",
+      "productNames": [
+        "GPT-6 Sol",
+        "GPT-6 Sol and Luna"
+      ],
+      "hardwareType": "ai_device",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-8d1d2414aa4efbf4"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-23",
+          "hardware_fact_id": "HWF-8d1d2414aa4efbf4",
+          "fact_type": "product",
+          "observed_at": "2026-09-22T00:00:00.000Z",
+          "subject_entity_id": "EN-7d3194f79e645c42",
+          "subject_name": "OpenAI",
+          "product_entity_ids": [
+            "EN-1942c9c064b67c1a",
+            "EN-a3d17dab52134515"
+          ],
+          "product_names": [
+            "GPT-6 Sol",
+            "GPT-6 Sol and Luna"
+          ],
+          "component_type": "ai_device",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Earlier this month, OpenAI launched GPT-6 Astra , which it heralded as its most powerful and capable model yet, and the “world’s best model” for a variety of activities, including computer work and coding. Now, the lab is expanding the GPT-6 generation with updated versions of the smaller Sol and Luna models.",
+          "event_refs": [
+            "EV-9f86bdb1f57f57aa"
+          ],
+          "claim_ref": "CL-ba29e46e4825ca89",
+          "source_refs": [
+            "SA-8dc176901ed4a7c4"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-23/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna",
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-1942c9c064b67c1a",
+        "EN-a3d17dab52134515"
+      ]
+    },
+    {
+      "id": "HWC-5ab6d0da0e0532ff",
+      "snapshotKey": "5ab6d0da0e0532ff",
+      "snapshotId": "HWS-7eeae6b40a9ed708",
+      "eventId": "EV-1e96f85d4c034559",
+      "eventIds": [
+        "EV-1e96f85d4c034559"
+      ],
+      "dataDate": "2026-09-23",
+      "date": "2026-09-23",
+      "title": "Isaac ROS 5.0",
+      "subject": "NVIDIA",
+      "productNames": [
+        "Isaac ROS 5.0"
+      ],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-1a3c17179daffb4d"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-23",
+          "hardware_fact_id": "HWF-1a3c17179daffb4d",
+          "fact_type": "product",
+          "observed_at": "2026-09-22T12:00:41.000Z",
+          "subject_entity_id": "EN-8d4321d936320802",
+          "subject_name": "NVIDIA",
+          "product_entity_ids": [
+            "EN-0cb8ce679b1feacc"
+          ],
+          "product_names": [
+            "Isaac ROS 5.0"
+          ],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "NVIDIA Isaac ROS 5.0 — a collection of GPU-accelerated packages built on ROS, released today at the ROSCon conference in Toronto, Canada — helps humans and AI agents build robots together.",
+          "event_refs": [
+            "EV-1e96f85d4c034559"
+          ],
+          "claim_ref": "CL-98d78d0c8728e604",
+          "source_refs": [
+            "SA-2bff779496364e95"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-23/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://blogs.nvidia.com/blog/isaac-ros-5-0-agentic-open-source-robotics",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-0cb8ce679b1feacc"
+      ]
+    },
     {
       "id": "HWC-148b919da0bedf5d",
       "snapshotKey": "148b919da0bedf5d",
@@ -18203,40 +18446,39 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-09-22",
-      "funnel_id": "LF-f05c2459005f0609",
+      "data_date": "2026-09-23",
+      "funnel_id": "LF-4e7a1a0629483e45",
       "lens": "hardware",
-      "date": "2026-09-22",
+      "date": "2026-09-23",
       "monitoring_paths": [
         "hardware_capacity_fab",
         "hardware_capex",
+        "hardware_oem_odm",
         "hardware_product_specs",
         "hardware_shipment_deployment",
         "hardware_supply_agreement"
       ],
-      "raw_documents": 35,
-      "original_sources": 28,
-      "valid_claims": 17,
-      "observations": 2,
-      "canonical_events": 8,
+      "raw_documents": 25,
+      "original_sources": 21,
+      "valid_claims": 4,
+      "observations": 3,
+      "canonical_events": 2,
       "blocker_counts": {
-        "non_event_or_index_title": 2,
+        "source_outside_daily_window": 8,
         "homepage_requires_original_event_source": 1,
-        "source_outside_funding_backfill_window": 1,
-        "source_outside_daily_window": 5,
-        "event_entity_unresolved": 1,
-        "raw_source_quality_block": 8,
-        "domestic_publication_date_unverified": 4,
-        "event_not_ai_relevant": 3,
-        "no_source_bounded_claim": 1
+        "non_event_or_index_title": 1,
+        "no_source_bounded_event": 4,
+        "multi_event_roundup_not_single_event_source": 1,
+        "industry_overview_not_event_source": 1,
+        "raw_source_quality_block": 7
       },
       "rates": {
-        "original_source_rate": 0.8,
-        "valid_claim_rate": 0.4857142857142857,
-        "observation_rate": 0.11764705882352941,
-        "event_conversion_rate": 0.47058823529411764
+        "original_source_rate": 0.84,
+        "valid_claim_rate": 0.16,
+        "observation_rate": 0.75,
+        "event_conversion_rate": 0.5
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-22/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-23/monitoring-funnel.json"
     }
   ]
 }

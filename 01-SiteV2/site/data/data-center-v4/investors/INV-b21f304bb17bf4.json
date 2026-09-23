@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-22T03:45:38.642Z",
-    "latestDataDate": "2026-09-22",
-    "currentDate": "2026-09-22",
-    "eventCount": 3493,
+    "generatedAt": "2026-09-23T00:30:23.033Z",
+    "latestDataDate": "2026-09-23",
+    "currentDate": "2026-09-23",
+    "eventCount": 3520,
     "quarantinedEventCount": 37,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -28,8 +28,8 @@
       "EV-ca0c54e3f9776fa5",
       "EV-e78ef81d4971565e",
       "EV-31abbd556dd87fc9",
-      "EV-cab18aa68c8ae551",
       "EV-88a9fd0b8f602e16",
+      "EV-cab18aa68c8ae551",
       "EV-844b61a6f671856b",
       "EV-90a174964b9d1daf",
       "EV-4b4943ce006aeb80",
@@ -59,24 +59,31 @@
     "investor_kind_label": "个人投资者",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-06-17",
-    "latest_disclosed_at": "2026-06-30",
+    "latest_disclosed_at": "2026-09-22",
     "role_counts": {
-      "other_current_round": 2
+      "other_current_round": 2,
+      "participant": 1
     },
     "round_codes": [
+      "other",
       "seed",
       "series_b"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-0830e0bf8e8fa471",
+        "canonical_entity_id": "",
+        "name": "Horowitz Andreessen Academy"
+      },
       {
         "entity_id": "EN-ee00b93bf0631b3e",
         "canonical_entity_id": "",
@@ -89,6 +96,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-85e33a2c40429a66",
+        "funding_insight_id": "FI-00a8a79e470f2469",
+        "event_ids": [
+          "EV-2470b13ea55496d0"
+        ],
+        "company_entity_id": "EN-0830e0bf8e8fa471",
+        "company_canonical_entity_id": "",
+        "company_name": "Horowitz Andreessen Academy",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "Founding Class Fellowship",
+        "amount_original": "$42 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 42000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4200 万美元"
+        },
+        "announced_at": "2026-09-22",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1f3aa9ba4c739ca7",
+            "source_url": "https://pulse2.com/horowitz-andreessen-academy-raises-42-million-and-launches-tuition-free-fellowship-in-san-francisco/",
+            "source_title": "Horowitz Andreessen Academy Raises $42 Million And Launches Tuition-Free Fellowship In San Francisco",
+            "source_content_hash": "bb1048a5af39e427",
+            "quote": "The $42 million financing comes from a16z and a group of individual investors, including Adam D’Angelo, co-founder of Quora; Tobi Lütke, CEO of Shopify; Tony Xu, CEO of DoorDash; Fidji Simo, who recently served as CEO of Applications at OpenAI; Garry Tan of Y Combinator; Joe Liemandt of Alpha School; and Shyam Sankar, CTO of Palantir.",
+            "quote_hash": "66f075ad9a5112fbd5e30b27263196962b1250767ea2b56f8dae3803d67dd806"
+          }
+        ]
+      },
       {
         "activity_id": "IA-ebf3fbe428c78dd8",
         "funding_insight_id": "FI-12131c1300a2d205",
@@ -171,6 +218,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-1f3aa9ba4c739ca7",
+        "source_url": "https://pulse2.com/horowitz-andreessen-academy-raises-42-million-and-launches-tuition-free-fellowship-in-san-francisco/",
+        "source_title": "Horowitz Andreessen Academy Raises $42 Million And Launches Tuition-Free Fellowship In San Francisco",
+        "source_content_hash": "bb1048a5af39e427",
+        "quote": "The $42 million financing comes from a16z and a group of individual investors, including Adam D’Angelo, co-founder of Quora; Tobi Lütke, CEO of Shopify; Tony Xu, CEO of DoorDash; Fidji Simo, who recently served as CEO of Applications at OpenAI; Garry Tan of Y Combinator; Joe Liemandt of Alpha School; and Shyam Sankar, CTO of Palantir.",
+        "quote_hash": "66f075ad9a5112fbd5e30b27263196962b1250767ea2b56f8dae3803d67dd806"
+      },
       {
         "source_id": "FISRC-907e4297862ddd8c",
         "source_url": "https://www.thesaasnews.com/news/monogram-raises-40m-seed/",
