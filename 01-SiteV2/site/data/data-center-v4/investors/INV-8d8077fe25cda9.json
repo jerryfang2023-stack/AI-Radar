@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-22T03:45:38.642Z",
-    "latestDataDate": "2026-09-22",
-    "currentDate": "2026-09-22",
-    "eventCount": 3493,
+    "generatedAt": "2026-09-23T00:30:23.033Z",
+    "latestDataDate": "2026-09-23",
+    "currentDate": "2026-09-23",
+    "eventCount": 3520,
     "quarantinedEventCount": 37,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -28,8 +28,8 @@
       "EV-ca0c54e3f9776fa5",
       "EV-e78ef81d4971565e",
       "EV-31abbd556dd87fc9",
-      "EV-cab18aa68c8ae551",
       "EV-88a9fd0b8f602e16",
+      "EV-cab18aa68c8ae551",
       "EV-844b61a6f671856b",
       "EV-90a174964b9d1daf",
       "EV-4b4943ce006aeb80",
@@ -63,11 +63,10 @@
     "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 5,
     "market_regions": [
-      "CN",
-      "GLOBAL"
+      "CN"
     ],
-    "china_market_activity_count": 4,
-    "china_market_company_count": 4,
+    "china_market_activity_count": 5,
+    "china_market_company_count": 5,
     "first_disclosed_at": "2026-04-02",
     "latest_disclosed_at": "2026-09-10",
     "role_counts": {
@@ -92,6 +91,11 @@
         "name": "它石智航"
       },
       {
+        "entity_id": "EN-08e7b67a300e585f",
+        "canonical_entity_id": "",
+        "name": "无问智科"
+      },
+      {
         "entity_id": "EN-187bf23c29af5e43",
         "canonical_entity_id": "",
         "name": "无问智科"
@@ -100,23 +104,18 @@
         "entity_id": "EN-a6e5382c05dd0d16",
         "canonical_entity_id": "EN-a6e5382c05dd0d16",
         "name": "星海图"
-      },
-      {
-        "entity_id": "EN-08e7b67a300e585f",
-        "canonical_entity_id": "",
-        "name": "浙江无问智行科技有限公司"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-812cb201ba127862",
+        "activity_id": "IA-87433586fbf814ad",
         "funding_insight_id": "FI-c2d2a86fa237b6eb",
         "event_ids": [
           "EV-798081a4ec056f8c"
         ],
         "company_entity_id": "EN-08e7b67a300e585f",
         "company_canonical_entity_id": "",
-        "company_name": "浙江无问智行科技有限公司",
+        "company_name": "无问智科",
         "round": "A轮",
         "round_code": "series_a",
         "round_original": "A轮",
@@ -171,8 +170,8 @@
           "display_zh": "2 亿元–9 亿元"
         },
         "announced_at": "2026-09-09",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
+        "market_region": "CN",
+        "china_market_match": true,
         "disclosure_status": "disclosed",
         "scope": "current_round",
         "role": "本轮领投",

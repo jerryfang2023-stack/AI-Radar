@@ -2,11 +2,11 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-ENTITY-REVIEW-V1.0",
     "funding_insight_version": "FUNDING-INSIGHT-V1.3",
-    "candidate_count": 1315,
-    "product_candidates": 780,
-    "person_candidates": 535,
-    "china_market_candidates": 449,
-    "china_market_product_candidates": 395,
+    "candidate_count": 1321,
+    "product_candidates": 784,
+    "person_candidates": 537,
+    "china_market_candidates": 450,
+    "china_market_product_candidates": 396,
     "china_market_person_candidates": 54,
     "rule": "Application evidence never mutates canonical V4 entities automatically."
   },
@@ -610,6 +610,34 @@
           "quote": "Alex Oelling, who serves as the company's Chief Executive Officer",
           "source_content_hash": "e5099ab9d9f63450",
           "quote_hash": "a0141961ee30327b254e6fe26a9ab94f69ec19ac9500e31a6cec3d992dca620e"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-a48ffc5a7d206c2b",
+      "candidate_kind": "person",
+      "research_name": "Alex Ratner",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-7331374f7091259f"
+      ],
+      "funding_insight_ids": [
+        "FI-f3d5baebe3965e53"
+      ],
+      "source_event_ids": [
+        "EV-bba3677d51b85918"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-16afc5791c45315a",
+          "quote": "Snorkel launched commercially in 2019 following four years of research by co-founder and CEO Alex Ratner and his team at a Stanford AI lab.",
+          "source_content_hash": "ad04baf1994708d0",
+          "quote_hash": "392368964b5e83d53232084d53189002321c5c7e5e270d887e3e12875669998a"
         }
       ],
       "market_regions": [
@@ -4803,6 +4831,34 @@
           "quote": "Fryderyk Wiatrowski , CEO and co-founder of Viktor",
           "source_content_hash": "bc6dd70ea1b6ac85",
           "quote_hash": "080b72e48a24e6aec1f35163d2d8fa8d379da3660a0b99312bc75b62b70894b9"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-d8635e570e9b9f01",
+      "candidate_kind": "person",
+      "research_name": "Gagan Biyani",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-0830e0bf8e8fa471"
+      ],
+      "funding_insight_ids": [
+        "FI-514e488a64ce05a1"
+      ],
+      "source_event_ids": [
+        "EV-2470b13ea55496d0"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-1f3aa9ba4c739ca7",
+          "quote": "The Academy was founded by Gagan Biyani, who previously co-founded Udemy and Maven",
+          "source_content_hash": "bb1048a5af39e427",
+          "quote_hash": "9c0c847a3c65bb6a1f4e1e45b9c48f0d3d53fbcecd91859204682d6edb4dc18b"
         }
       ],
       "market_regions": [
@@ -21784,9 +21840,11 @@
         "EN-6f7ac1823da81d2e"
       ],
       "funding_insight_ids": [
-        "FI-3d0c1f24bc33a340"
+        "FI-3d0c1f24bc33a340",
+        "FI-8de1458398c2b7a7"
       ],
       "source_event_ids": [
+        "EV-4a6955d6f3f47b64",
         "EV-d4d7b019ff0015df",
         "EV-f8c3a83d883c9b22"
       ],
@@ -21802,6 +21860,46 @@
           "quote": "Its hybrid attention architecture reduces inference cost dramatically at long context",
           "source_content_hash": "181a4f5d99becdb1",
           "quote_hash": "9e9e4178efa9612b4d48d9acbe0a9e9f31a06103ad71fbf0245ad2ba0e85e2fd"
+        },
+        {
+          "source_id": "FISRC-d69b7607b8e0473c",
+          "quote": "API价格V4-Pro ¥3/¥4 per 1M tokens仅为GPT-5.5的1/35单Token毛利率38%行业最高",
+          "source_content_hash": "e8e0c60eb54a6686",
+          "quote_hash": "fc7e02bcad658b8ac56e5c62c37aa86c3c53630753c269d06f4d8bbca9021b6c"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-3a0751367cc52f0d",
+      "candidate_kind": "product",
+      "research_name": "DeepSeek-V4系列",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-6f7ac1823da81d2e"
+      ],
+      "funding_insight_ids": [
+        "FI-8de1458398c2b7a7"
+      ],
+      "source_event_ids": [
+        "EV-4a6955d6f3f47b64"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d69b7607b8e0473c",
+          "quote": "开源生态DeepSeek-V4系列GitHub stars破420K",
+          "source_content_hash": "e8e0c60eb54a6686",
+          "quote_hash": "a2a691c4f641cfdbdeef675569d44da9d71750b78c53d8af6b03e18c7c5ceed1"
+        },
+        {
+          "source_id": "FISRC-1624ffbe0dfa0a1a",
+          "quote": "开源生态：DeepSeek-V4系列GitHub stars破420K",
+          "source_content_hash": "8b2e1f39ea6b84af",
+          "quote_hash": "ae399bc96fb11ebdbdeb265cfe44cf5aff044cc4217c88460337cbea63a8da26"
         }
       ],
       "market_regions": [
@@ -23101,6 +23199,40 @@
           "quote": "Our platform orchestrates multiple frontier AI models across image, video, 3D, spatial ideation, and design workflows.",
           "source_content_hash": "e332f39f80ce13b3",
           "quote_hash": "d56b6c4351b5f5ccddc6a48828b6fb5674ab3f1102fcf76fc1ec612d8d63534b"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-5fdc040690fa5dfb",
+      "candidate_kind": "product",
+      "research_name": "Founding Class Fellowship",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-0830e0bf8e8fa471"
+      ],
+      "funding_insight_ids": [
+        "FI-514e488a64ce05a1"
+      ],
+      "source_event_ids": [
+        "EV-2470b13ea55496d0"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-b764d2ad8902084d",
+          "quote": "The Horowitz Andreessen Academy will be free for its first one-year program in the fall of 2027. It will only accept 50 students and is designed mainly for recent high school graduates.",
+          "source_content_hash": "23b7d549e5738d99",
+          "quote_hash": "3dbf629ea75c9d52b46aa834eeabf92b92e7fa41a71d7a531c1ebd6ed04fb4b4"
+        },
+        {
+          "source_id": "FISRC-1f3aa9ba4c739ca7",
+          "quote": "Each student will receive more than $50,000 in computing credits and technology resources, along with a $5,000 travel and exploration budget.",
+          "source_content_hash": "bb1048a5af39e427",
+          "quote_hash": "604abc833cc6ed6d61df975c8897ef83f50a35dfbc09b20a9ede239920f40093"
         }
       ],
       "market_regions": [
@@ -31619,6 +31751,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-be14f330e5d38147",
+      "candidate_kind": "product",
+      "research_name": "Snorkel Flow",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-7331374f7091259f"
+      ],
+      "funding_insight_ids": [
+        "FI-f3d5baebe3965e53"
+      ],
+      "source_event_ids": [
+        "EV-bba3677d51b85918"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-42f04cd4c276a7c9",
+          "quote": "How SLB uses Snorkel Flow to enhance proactive well management",
+          "source_content_hash": "a1f77bf0f141091d",
+          "quote_hash": "3a634b784fb49b28312f188f1d27eb81324a8c6ae20eceb120018d145be5f4a2"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-7543252c39d4625e",
       "candidate_kind": "product",
       "research_name": "Software Factory",
@@ -37422,6 +37582,40 @@
         "CN"
       ],
       "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-f8b4cedfb485d85d",
+      "candidate_kind": "product",
+      "research_name": "数据即服务（Data-as-a-Service）",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-7331374f7091259f"
+      ],
+      "funding_insight_ids": [
+        "FI-f3d5baebe3965e53"
+      ],
+      "source_event_ids": [
+        "EV-bba3677d51b85918"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-16afc5791c45315a",
+          "quote": "While Snorkel originally provided software for data-labeling automation , it shifted last year to providing customers with completed datasets, an offering it calls data-as-a-service.",
+          "source_content_hash": "ad04baf1994708d0",
+          "quote_hash": "0da102a66f5785ce4e2f3ba0b89512bb34d5157a5f85d9162a44763f8603f72e"
+        },
+        {
+          "source_id": "FISRC-16afc5791c45315a",
+          "quote": "Rather than operating purely as a human expert marketplace, Snorkel relies on a hybrid approach, using its software and models to generate data synthetically alongside subject matter experts.",
+          "source_content_hash": "ad04baf1994708d0",
+          "quote_hash": "66f1b6df75a2bb6ad72219927523d7f536bc702de2a792009a976a8162771c88"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
     },
     {
       "candidate_id": "FIER-18df0c8406271b3c",
