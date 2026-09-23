@@ -15,6 +15,31 @@ function writeText(file, value) {
   fs.writeFileSync(file, value, "utf8");
 }
 
+test("evidence sync excludes inaccessible tool caches but keeps ordinary knowledge read failures blocking", (t) => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-cache-source-"));
+  const vaultRoot = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-cache-vault-"));
+  const cache = path.join(vaultRoot, "90-工作区", ".pytest_cache");
+  writeText(path.join(cache, "README.md"), "test cache, not knowledge");
+  const originalRead = fs.readdirSync;
+  const denied = new Set([cache]);
+  t.mock.method(fs, "readdirSync", (directory, ...args) => {
+    if (denied.has(String(directory))) throw Object.assign(new Error("fixture access denied"), { code: "EPERM" });
+    return originalRead(directory, ...args);
+  });
+  try {
+    assert.doesNotThrow(() => syncGuanlanEvidence({ root, vaultRoot }));
+    assert.equal(fs.readFileSync(path.join(cache, "README.md"), "utf8"), "test cache, not knowledge");
+    const knowledge = path.join(vaultRoot, "60-知识资产", "受保护的笔记");
+    fs.mkdirSync(knowledge, { recursive: true });
+    denied.add(knowledge);
+    assert.throws(() => syncGuanlanEvidence({ root, vaultRoot }), /fixture access denied/);
+  } finally {
+    t.mock.restoreAll();
+    fs.rmSync(root, { recursive: true, force: true });
+    fs.rmSync(vaultRoot, { recursive: true, force: true });
+  }
+});
+
 test("Guanlan evidence projection links assets to V4 evidence without copying original bodies", () => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-evidence-root-"));
   const vaultRoot = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-evidence-vault-"));

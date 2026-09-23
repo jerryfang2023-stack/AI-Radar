@@ -2,6 +2,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
+import { VAULT_SCAN_SKIP_DIRECTORIES } from "./lib/guanlan-vault-scan.mjs";
 import {
   GUANLAN_VAULT_PATHS,
   REPOSITORY_CONTENT_PATHS,
@@ -15,16 +16,6 @@ const workspaceWarnings = [];
 let markdownFileCount = 0;
 const oldRepositoryVault = path.join(root, "vault");
 const reportSource = path.join(root, REPOSITORY_CONTENT_PATHS.industryReportsRoot);
-const VAULT_SCAN_SKIP_DIRECTORIES = new Set([
-  ".git",
-  ".venv",
-  ".cache",
-  "__pycache__",
-  "build",
-  "dist",
-  "node_modules",
-  "venv",
-]);
 
 function directoryContainsFiles(directory) {
   for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
