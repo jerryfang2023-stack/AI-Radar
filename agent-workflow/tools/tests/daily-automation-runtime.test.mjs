@@ -3,6 +3,8 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
+import { pathToFileURL } from "node:url";
+import { isMainModule } from "../lib/module-entry.mjs";
 import test from "node:test";
 import { resolveAutomationNetworkEnv } from "../lib/automation-network-env.mjs";
 import { runLoggedCommand, defaultRuntimeDirectory, CODEX_REPAIR_TIMEOUT_MS, CODEX_REPAIR_HANDOFF_TIMEOUT_MS } from "../lib/logged-command.mjs";
@@ -16,6 +18,28 @@ import {
 } from "../lib/controller-report-liveness.mjs";
 
 const root = process.cwd();
+
+test("entry identity resolves directory aliases and never treats imports as CLI execution", () => {
+  const temporary = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-main-"));
+  const physical = path.join(temporary, "真实 目录");
+  const alias = path.join(temporary, "old-location");
+  fs.mkdirSync(physical);
+  const entry = path.join(physical, "entry.mjs");
+  const other = path.join(physical, "importer.mjs");
+  fs.writeFileSync(entry, "// entry\n");
+  fs.writeFileSync(other, "// importer\n");
+  try {
+    fs.symlinkSync(physical, alias, process.platform === "win32" ? "junction" : "dir");
+    assert.equal(isMainModule(pathToFileURL(entry), path.join(alias, "entry.mjs")), true);
+    assert.equal(isMainModule(pathToFileURL(entry), entry), true);
+    assert.equal(isMainModule(pathToFileURL(entry), other), false);
+    assert.equal(isMainModule(pathToFileURL(entry), ""), false);
+    assert.equal(isMainModule(pathToFileURL(entry), path.join(alias, "missing.mjs")), false);
+  } finally {
+    if (fs.existsSync(alias)) fs.unlinkSync(alias);
+    fs.rmSync(temporary, { recursive: true, force: true });
+  }
+});
 
 test("final closure rejects stale evidence but preserves fresh lane-finding reports", () => {
   const action = { status: 0, started_at: "2026-09-13T08:45:00.000Z", finished_at: "2026-09-13T08:46:00.000Z" };

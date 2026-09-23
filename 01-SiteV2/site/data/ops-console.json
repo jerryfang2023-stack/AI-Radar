@@ -519,7 +519,7 @@
   },
   "meta": {
     "version": "OPS-V3.8.0-engineering-integration",
-    "generatedAt": "2026-09-23T00:30:41.004Z",
+    "generatedAt": "2026-09-23T02:45:11.308Z",
     "date": "2026-09-23",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
@@ -1248,15 +1248,15 @@
           },
           {
             "label": "Claims",
-            "value": 84
+            "value": 87
           },
           {
             "label": "Events",
-            "value": 34
+            "value": 37
           },
           {
             "label": "QA",
-            "value": 214
+            "value": 269
           }
         ]
       },
@@ -1300,10 +1300,10 @@
         "status": "partial",
         "counts": {
           "discovered": 290,
-          "capture_succeeded": 248,
+          "capture_succeeded": 306,
           "capture_failed": 5,
           "recovered_source_failures": 10,
-          "raw_documents": 248
+          "raw_documents": 306
         },
         "evidence": [
           "01-SiteV2/content/11-databases/data-center-v4/2026-09-23/manifest.json",
@@ -1316,16 +1316,16 @@
         "label": "事实构建",
         "status": "passed",
         "counts": {
-          "accepted_claims": 84,
+          "accepted_claims": 87,
           "rejected_claims": 0,
-          "accepted": 84,
+          "accepted": 87,
           "rejected": 0,
           "pending_claims": 4,
-          "canonical_events": 34,
-          "entities": 52,
-          "relationships": 88,
+          "canonical_events": 37,
+          "entities": 55,
+          "relationships": 91,
           "conflicts": 0,
-          "qa_queue": 214
+          "qa_queue": 269
         },
         "evidence": [
           "01-SiteV2/content/11-databases/data-center-v4/2026-09-23/manifest.json",
@@ -1403,32 +1403,32 @@
         "version": "COLLECTION-TELEMETRY-V1.0",
         "ops_version": "OPS-V3.8.0-engineering-integration",
         "data_date": "2026-09-23",
-        "generated_at": "2026-09-23T00:30:40.893Z",
-        "source_snapshot": "d3b2db5810efd0b53c5f7424b1a6eacbde9d5e04ee0e5b2f63c2245354d6811a",
+        "generated_at": "2026-09-23T02:45:10.722Z",
+        "source_snapshot": "c03c18bbf2534b2ac4551f87e8bb247070f917e988bd7edd041da36df4c9c044",
         "scope": "OPS",
         "canonical_writeback": false,
         "source_of_truth": "Data Center V4 manifest and integrity gate"
       },
       "collection": {
         "discovered": 290,
-        "capture_succeeded": 248,
+        "capture_succeeded": 306,
         "capture_failed": 5,
         "recovered_source_failures": 10,
-        "raw_documents": 248
+        "raw_documents": 306
       },
       "factBuild": {
-        "accepted_claims": 84,
+        "accepted_claims": 87,
         "rejected_claims": 0,
-        "accepted": 84,
+        "accepted": 87,
         "rejected": 0,
         "pending_claims": 4,
-        "canonical_events": 34,
-        "entities": 52,
-        "relationships": 88,
+        "canonical_events": 37,
+        "entities": 55,
+        "relationships": 91,
         "conflicts": 0,
-        "qa_queue": 214,
+        "qa_queue": 269,
         "qa_by_status": {
-          "review_optional": 199,
+          "review_optional": 254,
           "open": 15
         }
       },
@@ -1625,7 +1625,7 @@
       }
     ],
     "sourceQuality": {
-      "updatedAt": "2026-09-23T00:30:40.995Z",
+      "updatedAt": "2026-09-23T02:45:11.216Z",
       "sampleNote": "按最新 V4 RawDocument 的 acquisition_channel 聚合；样本量为已落盘 Raw 文档数。",
       "metricNote": "诊断分由可用率、全文率、高质提取率、可读性和事实命中率组成，仅用于运营观察，不参与来源准入、排序或事实门禁。",
       "rows": [
@@ -1665,9 +1665,9 @@
           "fullTextRate": 75,
           "highQualityRate": 69,
           "readabilityScore": 69,
-          "factHitRate": 7,
-          "acceptedClaims": 12,
-          "canonicalEvents": 6,
+          "factHitRate": 6,
+          "acceptedClaims": 8,
+          "canonicalEvents": 5,
           "score": 64,
           "grade": "中"
         },
@@ -1684,34 +1684,48 @@
           "canonicalEvents": 0,
           "score": 46,
           "grade": "待改善"
+        },
+        {
+          "id": "china-funding",
+          "label": "china-funding",
+          "total": 58,
+          "eligibleRate": 100,
+          "fullTextRate": 71,
+          "highQualityRate": 31,
+          "readabilityScore": 52,
+          "factHitRate": 7,
+          "acceptedClaims": 7,
+          "canonicalEvents": 4,
+          "score": 59,
+          "grade": "待改善"
         }
       ]
     },
     "chinaFunding": {
       "schema_version": "CHINA-FUNDING-HEALTH-V1.0",
-      "date": "2026-09-22",
-      "generated_at": "2026-09-22T00:46:58.007Z",
+      "date": "2026-09-23",
+      "generated_at": "2026-09-23T00:40:52.888Z",
       "status": "partial",
-      "last_collection_at": "2026-09-22T00:13:45.077Z",
+      "last_collection_at": "2026-09-23T00:13:49.073Z",
       "failed_stage": null,
       "stages": [
         {
           "id": "capture",
           "status": "passed",
-          "started_at": "2026-09-22T00:41:30.670Z",
-          "finished_at": "2026-09-22T00:42:07.728Z"
+          "started_at": "2026-09-23T00:38:30.788Z",
+          "finished_at": "2026-09-23T00:38:47.283Z"
         },
         {
           "id": "facts",
           "status": "passed",
-          "started_at": "2026-09-22T00:42:07.728Z",
-          "finished_at": "2026-09-22T00:43:25.298Z"
+          "started_at": "2026-09-23T00:38:47.283Z",
+          "finished_at": "2026-09-23T00:39:58.185Z"
         },
         {
           "id": "projections",
           "status": "passed",
-          "started_at": "2026-09-22T00:43:25.298Z",
-          "finished_at": "2026-09-22T00:46:57.888Z"
+          "started_at": "2026-09-23T00:39:58.186Z",
+          "finished_at": "2026-09-23T00:40:52.794Z"
         }
       ],
       "sources": [
@@ -1719,7 +1733,7 @@
           "source_id": "pedaily",
           "registry_id": "cn-pedaily",
           "name": "投资界",
-          "attempted_at": "2026-09-22T00:12:36.936Z",
+          "attempted_at": "2026-09-23T00:12:51.212Z",
           "query_count": 2,
           "successful_queries": 2,
           "list_pages_ok": 2,
@@ -1729,101 +1743,80 @@
             "https://m.pedaily.cn/",
             "https://www.pedaily.cn/vcpeevent/"
           ],
-          "discovered": 28,
-          "capped": 4,
+          "discovered": 27,
+          "capped": 3,
           "status": "collected",
-          "response_ms": 10794,
-          "completed_at": "2026-09-22T00:12:47.730Z",
+          "response_ms": 9041,
+          "completed_at": "2026-09-23T00:13:00.253Z",
           "raw_count": 24,
           "readable_count": 24,
-          "accepted_claims": 8,
+          "accepted_claims": 2,
           "verified_event_ids": [
-            "EV-c8871997cafcf846",
-            "EV-4bc575228888c358",
-            "EV-6f7ec978fd8ad3fc",
             "EV-fbb4b961191efa55",
-            "EV-33df10f232e26f29",
-            "EV-3c7609d3fc7b7ec8"
+            "EV-33df10f232e26f29"
           ],
           "funding_event_ids": [
-            "EV-c8871997cafcf846",
-            "EV-4bc575228888c358",
-            "EV-6f7ec978fd8ad3fc",
             "EV-fbb4b961191efa55",
-            "EV-33df10f232e26f29",
-            "EV-3c7609d3fc7b7ec8"
+            "EV-33df10f232e26f29"
           ],
           "china_funding_event_ids": [
-            "EV-4bc575228888c358",
-            "EV-3c7609d3fc7b7ec8"
+            "EV-33df10f232e26f29"
           ],
           "card_ids": [
             "FI-1c45f6b3bea32aad",
-            "FI-16af0b20c345fd03",
-            "FI-38b75fc20ab26eaf",
-            "FI-6f249b72ba7485a4"
+            "FI-16af0b20c345fd03"
           ],
-          "latest_disclosure": "2026-09-21T10:03:00.000Z"
+          "latest_disclosure": "2026-09-22T10:22:00.000Z"
         },
         {
           "source_id": "chinaventure",
           "registry_id": "cn-chinaventure",
           "name": "投中网",
-          "attempted_at": "2026-09-22T00:12:47.730Z",
+          "attempted_at": "2026-09-23T00:13:00.253Z",
           "query_count": 2,
           "successful_queries": 2,
           "list_pages_ok": 1,
-          "candidates": 21,
+          "candidates": 16,
           "failures": [],
           "entry_urls": [
             "https://www.chinaventure.com.cn/"
           ],
-          "discovered": 21,
+          "discovered": 16,
           "capped": 0,
           "status": "collected",
-          "response_ms": 6482,
-          "completed_at": "2026-09-22T00:12:54.212Z",
-          "raw_count": 20,
-          "readable_count": 20,
-          "accepted_claims": 5,
-          "verified_event_ids": [
-            "EV-4bc690025cbda146",
-            "EV-77887cf446f03ba4"
-          ],
-          "funding_event_ids": [
-            "EV-4bc690025cbda146",
-            "EV-77887cf446f03ba4"
-          ],
+          "response_ms": 8156,
+          "completed_at": "2026-09-23T00:13:08.409Z",
+          "raw_count": 16,
+          "readable_count": 16,
+          "accepted_claims": 0,
+          "verified_event_ids": [],
+          "funding_event_ids": [],
           "china_funding_event_ids": [],
-          "card_ids": [
-            "FI-47911ee433d82d2a",
-            "FI-6f249b72ba7485a4",
-            "FI-2afefdedd2834f49"
-          ],
-          "latest_disclosure": "2026-09-21T06:28:00.000Z"
+          "card_ids": [],
+          "latest_disclosure": "2026-09-22T07:17:00.000Z"
         },
         {
           "source_id": "36kr",
           "registry_id": "cn-36kr-rss",
           "name": "36氪",
-          "attempted_at": "2026-09-22T00:12:54.212Z",
+          "attempted_at": "2026-09-23T00:13:08.409Z",
           "query_count": 2,
           "successful_queries": 2,
           "list_pages_ok": 0,
-          "candidates": 2,
+          "candidates": 1,
           "failures": [
             "list https://pitchhub.36kr.com/: no readable funding article links"
           ],
           "entry_urls": [
             "https://pitchhub.36kr.com/"
           ],
-          "discovered": 2,
+          "discovered": 1,
           "capped": 0,
           "status": "partial",
-          "response_ms": 7674,
-          "completed_at": "2026-09-22T00:13:01.886Z",
-          "raw_count": 2,
-          "readable_count": 2,
+          "response_ms": 6159,
+          "completed_at": "2026-09-23T00:13:14.568Z",
+          "raw_count": 1,
+          "readable_count": 1,
           "accepted_claims": 0,
           "verified_event_ids": [],
           "funding_event_ids": [],
@@ -1835,22 +1828,22 @@
           "source_id": "cyzone",
           "registry_id": "cn-cyzone",
           "name": "创业邦",
-          "attempted_at": "2026-09-22T00:13:01.886Z",
+          "attempted_at": "2026-09-23T00:13:14.568Z",
           "query_count": 2,
           "successful_queries": 2,
           "list_pages_ok": 1,
-          "candidates": 12,
+          "candidates": 4,
           "failures": [],
           "entry_urls": [
             "https://www.cyzone.cn/"
           ],
-          "discovered": 12,
+          "discovered": 4,
           "capped": 0,
           "status": "collected",
-          "response_ms": 9712,
-          "completed_at": "2026-09-22T00:13:11.598Z",
-          "raw_count": 12,
-          "readable_count": 12,
+          "response_ms": 6891,
+          "completed_at": "2026-09-23T00:13:21.459Z",
+          "raw_count": 3,
+          "readable_count": 3,
           "accepted_claims": 0,
           "verified_event_ids": [],
           "funding_event_ids": [],
@@ -1864,25 +1857,25 @@
           "source_id": "cls",
           "registry_id": "cn-cls",
           "name": "财联社／科创板日报",
-          "attempted_at": "2026-09-22T00:13:11.598Z",
+          "attempted_at": "2026-09-23T00:13:21.459Z",
           "query_count": 2,
           "successful_queries": 2,
           "list_pages_ok": 0,
-          "candidates": 9,
+          "candidates": 5,
           "failures": [
             "list https://www.cls.cn/: no readable funding article links"
           ],
           "entry_urls": [
             "https://www.cls.cn/"
           ],
-          "discovered": 9,
+          "discovered": 5,
           "capped": 0,
           "status": "partial",
-          "response_ms": 12704,
-          "completed_at": "2026-09-22T00:13:24.302Z",
-          "raw_count": 9,
-          "readable_count": 9,
-          "accepted_claims": 3,
+          "response_ms": 14993,
+          "completed_at": "2026-09-23T00:13:36.452Z",
+          "raw_count": 5,
+          "readable_count": 5,
+          "accepted_claims": 2,
           "verified_event_ids": [
             "EV-375d04f7cc9746c6"
           ],
@@ -1891,33 +1884,32 @@
           ],
           "china_funding_event_ids": [],
           "card_ids": [
-            "FI-1d043b12be806460",
-            "FI-c2d2a86fa237b6eb"
+            "FI-1d043b12be806460"
           ],
-          "latest_disclosure": "2026-09-21T10:12:00.000Z"
+          "latest_disclosure": "2026-09-17T02:36:00.000Z"
         },
         {
           "source_id": "qbitai",
           "registry_id": "cn-qbitai-rss",
           "name": "量子位",
-          "attempted_at": "2026-09-22T00:13:24.302Z",
+          "attempted_at": "2026-09-23T00:13:36.452Z",
           "query_count": 2,
           "successful_queries": 2,
           "list_pages_ok": 0,
-          "candidates": 11,
+          "candidates": 9,
           "failures": [
             "list https://www.qbitai.com/: no readable funding article links"
           ],
           "entry_urls": [
             "https://www.qbitai.com/"
           ],
-          "discovered": 11,
+          "discovered": 9,
           "capped": 0,
           "status": "partial",
-          "response_ms": 3699,
-          "completed_at": "2026-09-22T00:13:28.001Z",
-          "raw_count": 11,
-          "readable_count": 11,
+          "response_ms": 4897,
+          "completed_at": "2026-09-23T00:13:41.349Z",
+          "raw_count": 9,
+          "readable_count": 9,
           "accepted_claims": 3,
           "verified_event_ids": [
             "EV-2de77a62435cc041"
@@ -1932,13 +1924,13 @@
             "FI-29dc2b4975d2ba0a",
             "FI-5c529fe1ecb9dd07"
           ],
-          "latest_disclosure": "2026-09-21T00:00:00+08:00"
+          "latest_disclosure": "2026-09-10T00:00:00+08:00"
         },
         {
           "source_id": "jiqizhixin",
           "registry_id": "cn-jiqizhixin",
           "name": "机器之心",
-          "attempted_at": "2026-09-22T00:13:28.001Z",
+          "attempted_at": "2026-09-23T00:13:41.349Z",
           "query_count": 2,
           "successful_queries": 2,
           "list_pages_ok": 0,
@@ -1952,8 +1944,8 @@
           "discovered": 0,
           "capped": 0,
           "status": "partial",
-          "response_ms": 16998,
-          "completed_at": "2026-09-22T00:13:44.999Z",
+          "response_ms": 7676,
+          "completed_at": "2026-09-23T00:13:49.025Z",
           "raw_count": 0,
           "readable_count": 0,
           "accepted_claims": 0,
@@ -1967,15 +1959,15 @@
       "totals": {
         "sources_attempted": 7,
         "sources_failed": 0,
-        "candidates": 79,
-        "readable_documents": 78,
-        "accepted_claims": 19,
-        "verified_events": 10,
-        "funding_events": 10,
-        "china_funding_events": 2,
-        "linked_organizations": 14,
+        "candidates": 59,
+        "readable_documents": 58,
+        "accepted_claims": 7,
+        "verified_events": 4,
+        "funding_events": 4,
+        "china_funding_events": 1,
+        "linked_organizations": 6,
         "linked_products": 0,
-        "published_card_matches": 13
+        "published_card_matches": 8
       },
       "publication": {
         "status": "awaiting_publication_receipt"
@@ -27813,8 +27805,8 @@
     "batches": [
       {
         "id": "data-center:2026-09-23",
-        "observedAt": "2026-09-23T00:30:40.893Z",
-        "sourceSnapshot": "d3b2db5810efd0b53c5f7424b1a6eacbde9d5e04ee0e5b2f63c2245354d6811a",
+        "observedAt": "2026-09-23T02:45:10.722Z",
+        "sourceSnapshot": "c03c18bbf2534b2ac4551f87e8bb247070f917e988bd7edd041da36df4c9c044",
         "stages": [
           {
             "id": "data-center:2026-09-23:collection",
@@ -27822,10 +27814,10 @@
             "status": "partial",
             "counts": {
               "discovered": 290,
-              "capture_succeeded": 248,
+              "capture_succeeded": 306,
               "capture_failed": 5,
               "recovered_source_failures": 10,
-              "raw_documents": 248
+              "raw_documents": 306
             },
             "evidence": [
               "01-SiteV2/content/11-databases/data-center-v4/2026-09-23/manifest.json",
@@ -27838,16 +27830,16 @@
             "label": "事实构建",
             "status": "passed",
             "counts": {
-              "accepted_claims": 84,
+              "accepted_claims": 87,
               "rejected_claims": 0,
-              "accepted": 84,
+              "accepted": 87,
               "rejected": 0,
               "pending_claims": 4,
-              "canonical_events": 34,
-              "entities": 52,
-              "relationships": 88,
+              "canonical_events": 37,
+              "entities": 55,
+              "relationships": 91,
               "conflicts": 0,
-              "qa_queue": 214
+              "qa_queue": 269
             },
             "evidence": [
               "01-SiteV2/content/11-databases/data-center-v4/2026-09-23/manifest.json",
@@ -27885,6 +27877,6 @@
       }
     ],
     "catalogGeneratedAt": "2026-09-13 16:21:58",
-    "snapshotGeneratedAt": "2026-09-23T00:30:41.004Z"
+    "snapshotGeneratedAt": "2026-09-23T02:45:11.308Z"
   }
 }

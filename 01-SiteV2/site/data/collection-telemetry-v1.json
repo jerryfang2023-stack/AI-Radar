@@ -3,32 +3,32 @@
     "version": "COLLECTION-TELEMETRY-V1.0",
     "ops_version": "OPS-V3.8.0-engineering-integration",
     "data_date": "2026-09-23",
-    "generated_at": "2026-09-23T00:30:40.893Z",
-    "source_snapshot": "d3b2db5810efd0b53c5f7424b1a6eacbde9d5e04ee0e5b2f63c2245354d6811a",
+    "generated_at": "2026-09-23T02:45:10.722Z",
+    "source_snapshot": "c03c18bbf2534b2ac4551f87e8bb247070f917e988bd7edd041da36df4c9c044",
     "scope": "OPS",
     "canonical_writeback": false,
     "source_of_truth": "Data Center V4 manifest and integrity gate"
   },
   "collection": {
     "discovered": 290,
-    "capture_succeeded": 248,
+    "capture_succeeded": 306,
     "capture_failed": 5,
     "recovered_source_failures": 10,
-    "raw_documents": 248
+    "raw_documents": 306
   },
   "fact_build": {
-    "accepted_claims": 84,
+    "accepted_claims": 87,
     "rejected_claims": 0,
-    "accepted": 84,
+    "accepted": 87,
     "rejected": 0,
     "pending_claims": 4,
-    "canonical_events": 34,
-    "entities": 52,
-    "relationships": 88,
+    "canonical_events": 37,
+    "entities": 55,
+    "relationships": 91,
     "conflicts": 0,
-    "qa_queue": 214,
+    "qa_queue": 269,
     "qa_by_status": {
-      "review_optional": 199,
+      "review_optional": 254,
       "open": 15
     }
   },
@@ -61,10 +61,10 @@
       "status": "partial",
       "counts": {
         "discovered": 290,
-        "capture_succeeded": 248,
+        "capture_succeeded": 306,
         "capture_failed": 5,
         "recovered_source_failures": 10,
-        "raw_documents": 248
+        "raw_documents": 306
       },
       "evidence": [
         "01-SiteV2/content/11-databases/data-center-v4/2026-09-23/manifest.json",
@@ -77,16 +77,16 @@
       "label": "事实构建",
       "status": "passed",
       "counts": {
-        "accepted_claims": 84,
+        "accepted_claims": 87,
         "rejected_claims": 0,
-        "accepted": 84,
+        "accepted": 87,
         "rejected": 0,
         "pending_claims": 4,
-        "canonical_events": 34,
-        "entities": 52,
-        "relationships": 88,
+        "canonical_events": 37,
+        "entities": 55,
+        "relationships": 91,
         "conflicts": 0,
-        "qa_queue": 214
+        "qa_queue": 269
       },
       "evidence": [
         "01-SiteV2/content/11-databases/data-center-v4/2026-09-23/manifest.json",

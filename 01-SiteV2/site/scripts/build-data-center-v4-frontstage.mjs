@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { isMainModule } from "../../../agent-workflow/tools/lib/module-entry.mjs";
 
 import { publicEventSourceTitleIssue } from "../../../agent-workflow/tools/build-data-center-v4.mjs";
 import crypto from "node:crypto";
@@ -1037,4 +1038,4 @@ function main() {
   }, null, 2));
 }
 
-if (process.argv[1] && path.resolve(process.argv[1]) === __filename) main();
+if (isMainModule(import.meta.url)) main();

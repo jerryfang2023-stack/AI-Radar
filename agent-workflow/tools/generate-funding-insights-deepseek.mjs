@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { isMainModule } from "./lib/module-entry.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
@@ -1181,7 +1182,7 @@ async function main() {
   }, null, 2));
 }
 
-if (path.resolve(process.argv[1] || "") === fileURLToPath(import.meta.url)) {
+if (isMainModule(import.meta.url)) {
   main().catch((error) => {
     console.error(error.stack || error.message);
     process.exit(1);

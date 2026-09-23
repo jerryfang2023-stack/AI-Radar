@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { isMainModule } from "./lib/module-entry.mjs";
 // Read-only reference audit. Registered check commands are never evaluated.
 import fs from 'node:fs';
 import path from 'node:path';
@@ -119,4 +120,4 @@ function main() {
   console.log(JSON.stringify(report, null, 2));
   if (!result.ok) process.exitCode = 1;
 }
-if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) main();
+if (isMainModule(import.meta.url)) main();

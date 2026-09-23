@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { isMainModule } from "./lib/module-entry.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -212,7 +213,7 @@ async function main() {
   }, null, 2));
 }
 
-if (path.resolve(process.argv[1] || "") === fileURLToPath(import.meta.url)) {
+if (isMainModule(import.meta.url)) {
   main().catch((error) => {
     console.error(error?.stack || error?.message || String(error));
     process.exit(1);

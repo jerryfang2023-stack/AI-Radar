@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { isMainModule } from "./lib/module-entry.mjs";
 
 import fs from "node:fs";
 import path from "node:path";
@@ -121,4 +122,4 @@ function main() {
   console.log(JSON.stringify(refreshReviewedEntityServingNames(), null, 2));
 }
 
-if (process.argv[1] && path.resolve(process.argv[1]) === __filename) main();
+if (isMainModule(import.meta.url)) main();

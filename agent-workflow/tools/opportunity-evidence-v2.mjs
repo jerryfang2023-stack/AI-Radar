@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { isMainModule } from "./lib/module-entry.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -515,7 +516,7 @@ export function writeOpportunityEvidenceData(root = defaultRoot, options = {}) {
   return { output, data };
 }
 
-if (path.resolve(process.argv[1] || "") === fileURLToPath(import.meta.url)) {
+if (isMainModule(import.meta.url)) {
   const args = new Map(process.argv.slice(2).map((arg) => {
     const [key, ...rest] = arg.replace(/^--/u, "").split("=");
     return [key, rest.join("=") || "true"];

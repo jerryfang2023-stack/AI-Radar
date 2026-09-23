@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { isMainModule } from "../../../agent-workflow/tools/lib/module-entry.mjs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -323,7 +324,7 @@ export function writeTrendRadarData(root = defaultRoot) {
   return { target, output };
 }
 
-if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+if (isMainModule(import.meta.url)) {
   const { target, output } = writeTrendRadarData();
   console.log(`Trend Radar built: ${path.relative(defaultRoot, target)} (${output.meta.sourceCounts.events} accepted events)`);
 }

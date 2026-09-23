@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { isMainModule } from "../../../agent-workflow/tools/lib/module-entry.mjs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
@@ -35,7 +36,7 @@ export function writeIndustryReportsData(root = defaultRoot, options = {}) {
   return writeOpportunityEvidenceData(root, options);
 }
 
-if (path.resolve(process.argv[1] || "") === fileURLToPath(import.meta.url)) {
+if (isMainModule(import.meta.url)) {
   const args = parseArgs();
   const root = args.get("root") ? path.resolve(args.get("root")) : defaultRoot;
   const { output, data } = writeIndustryReportsData(root, {

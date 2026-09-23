@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { isMainModule } from "./lib/module-entry.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -203,6 +204,5 @@ function main() {
   }, null, 2));
 }
 
-const isDirectRun = process.argv[1]
-  && path.resolve(process.argv[1]).toLowerCase() === path.resolve(fileURLToPath(import.meta.url)).toLowerCase();
+const isDirectRun = isMainModule(import.meta.url);
 if (isDirectRun) main();

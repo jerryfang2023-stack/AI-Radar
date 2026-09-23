@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { isMainModule } from "../../../agent-workflow/tools/lib/module-entry.mjs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -243,7 +244,7 @@ export function writeFirstLineViewpointsV4Data() {
   return { outputFile, data };
 }
 
-if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+if (isMainModule(import.meta.url)) {
   const { data } = writeFirstLineViewpointsV4Data();
   console.log(JSON.stringify({
     ok: true,

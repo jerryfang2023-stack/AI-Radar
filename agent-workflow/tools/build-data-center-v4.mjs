@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { isMainModule } from "./lib/module-entry.mjs";
 
 import crypto from "crypto";
 import fs from "fs";
@@ -342,6 +343,10 @@ function publicEventSourceTitleIssue(title) {
     return "fundraising_guide_not_company_event";
   }
   if (/^AI\s+(?:(?:infrastructure\s+)?startups?|agents?)\s+funding\s+20\d{2}\b|^AI\s*(?:基础设施)?(?:初创公司|初创企业|智能体)\s*融资\s*20\d{2}/iu.test(value)) {
+    return "multi_event_roundup_not_single_event_source";
+  }
+  if (/(?:融资|募资|funding|financing)/iu.test(value)
+      && /(?:[二三四五六七八九十多几\d]+巨头|多家公司).{0,20}(?:全景)?(?:对比|比较|盘点)/u.test(value)) {
     return "multi_event_roundup_not_single_event_source";
   }
   if (/^(?:奉劝|劝告|建议)(?:各位|所有|大家|AI)|^谁拥有.{1,60}[？?]/u.test(value)) return "reaction_or_commentary_not_new_event";
@@ -2594,7 +2599,7 @@ function main() {
   console.log(JSON.stringify({ ok: true, date, output: rel(destination), counts: bundle.manifest.counts, forbidden_field_hits: bundle.manifest.forbidden_field_hits }, null, 2));
 }
 
-if (process.argv[1] && path.resolve(process.argv[1]) === __filename) {
+if (isMainModule(import.meta.url)) {
   try {
     main();
   } catch (error) {
