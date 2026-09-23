@@ -5,13 +5,13 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-09-22T03:40:47.758Z",
+    "generated_at": "2026-09-23T02:43:17.330Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 493,
-    "input_hash": "95e59e9cc189eb1a",
+    "decision_count": 495,
+    "input_hash": "fad3a291e1e2a623",
     "override_count": 18,
     "needs_review_count": 55,
     "low_confidence_count": 76
@@ -9869,6 +9869,42 @@
       "confidence": 0.8,
       "needs_review": false,
       "rationale": "证据显示公司提供智能车中间件、SOA通信框架及座舱AI全栈系统，深度绑定汽车行业架构与工作流，应归为行业应用而非基础设施。"
+    },
+    {
+      "event_id": "EV-2470b13ea55496d0",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "end_user_application",
+      "use_case_ids": [
+        "education_learning"
+      ],
+      "industry_ids": [
+        "education"
+      ],
+      "target_user_ids": [
+        "student"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "The Horowitz Andreessen Academy is an educational program for recent high school graduates, providing computing credits and technology resources. It is an end-user application focused on education and learning, targeting students. The market hierarchy tuple [\"enterprise_applications\",\"productivity_enterprise_workflows\",\"\"] is the closest allowed non-physical AI tuple, as the academy is not a physical AI system, AI device, or infrastructure compute offering."
+    },
+    {
+      "event_id": "EV-bba3677d51b85918",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "data",
+      "market_application_id": "synthetic_data",
+      "product_form_id": "ai_infrastructure_software",
+      "use_case_ids": [
+        "data_analysis"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "Snorkel AI 为 AI 实验室和企业提供训练数据集与模拟环境，属于为其他 AI 产品构建者供应数据的基础设施层；其数据即服务以合成数据与专家混合方式生成，故归入 infrastructure_compute > data > synthetic_data。"
     }
   ],
   "inputs": [
@@ -20318,6 +20354,31 @@
       }
     },
     {
+      "event_id": "EV-2470b13ea55496d0",
+      "funding_insight_id": "FI-514e488a64ce05a1",
+      "company_name": "Horowitz Andreessen Academy",
+      "company_full_name": "Horowitz Andreessen Academy",
+      "website": "theacademysf.com",
+      "current_sector": "教育科技",
+      "company_evidence_quotes": [
+        "The “Horowitz Andreessen Academy” will launch with 10 partners, including Anduril, Anthropic, Coinbase, Google, Meta, Nvidia, OpenAI, Palantir, Replit, and Stripe, along with $42 million in funding led by a16z."
+      ],
+      "products": [
+        {
+          "name": "Founding Class Fellowship",
+          "evidence_quotes": [
+            "The Horowitz Andreessen Academy will be free for its first one-year program in the fall of 2027. It will only accept 50 students and is designed mainly for recent high school graduates.",
+            "Each student will receive more than $50,000 in computing credits and technology resources, along with a $5,000 travel and exploration budget."
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "end_user_application",
+        "market_category_id": "enterprise_applications"
+      }
+    },
+    {
       "event_id": "EV-0a62954694db4143",
       "funding_insight_id": "FI-1fd24df5ecb12af2",
       "company_name": "Hostie",
@@ -24434,6 +24495,43 @@
       "current_classification": {
         "product_form_id": "enterprise_software_platform",
         "market_category_id": "enterprise_applications"
+      }
+    },
+    {
+      "event_id": "EV-bba3677d51b85918",
+      "funding_insight_id": "FI-f3d5baebe3965e53",
+      "company_name": "Snorkel AI",
+      "company_full_name": "Snorkel AI",
+      "website": "https://snorkel.ai",
+      "current_sector": "AI 数据基础设施",
+      "company_evidence_quotes": [
+        "Snorkel AI, a startup that helps AI labs and corporations build training datasets and simulated environments, has raised a $350 million Series E at a $3.5 billion valuation."
+      ],
+      "products": [
+        {
+          "name": "数据即服务（Data-as-a-Service）",
+          "evidence_quotes": [
+            "While Snorkel originally provided software for data-labeling automation , it shifted last year to providing customers with completed datasets, an offering it calls data-as-a-service.",
+            "Rather than operating purely as a human expert marketplace, Snorkel relies on a hybrid approach, using its software and models to generate data synthetically alongside subject matter experts."
+          ]
+        },
+        {
+          "name": "Snorkel Flow",
+          "evidence_quotes": [
+            "How SLB uses Snorkel Flow to enhance proactive well management"
+          ]
+        }
+      ],
+      "customer_names": [
+        "MSKCC",
+        "Google",
+        "SLB",
+        "Experian",
+        "Wayfair"
+      ],
+      "current_classification": {
+        "product_form_id": "ai_infrastructure_software",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {

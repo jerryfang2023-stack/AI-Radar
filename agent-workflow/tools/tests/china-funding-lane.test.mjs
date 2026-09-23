@@ -25,6 +25,7 @@ test("financing commentary and multi-event headlines cannot become company finan
     "AI芯片融资狂潮来袭机构预计未来两年将新增5000亿美元债务 - 财联社",
     "谁拥有DeepSeek？所有权、控制权与中国持股",
     "Who owns DeepSeek? Ownership, control and China stake",
+    "2026年AI商业化新拐点：Anthropic 470亿ARR、OpenAI 200亿月活、DeepSeek 500亿融资三巨头全景对比-网站名",
   ]) assert.equal(eventSourceEligibility(source, artifact, title, "2026-09-14", { eventType: "funding" }).accepted, false, title);
   assert.equal(eventSourceEligibility(source, artifact, "智谱约50亿美元融资落定Anthropic敲定纳斯达克上市计划南京最大国资平台揭牌", "2026-09-14", { eventType: "funding" }).reason, "multi_event_roundup_not_single_event_source");
   assert.equal(eventSourceEligibility(source, artifact, "智谱宣布完成约50亿美元融资，用于下一代GLM基础模型研发", "2026-09-14", { eventType: "funding" }).accepted, true);

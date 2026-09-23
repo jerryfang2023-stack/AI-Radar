@@ -345,6 +345,10 @@ function publicEventSourceTitleIssue(title) {
   if (/^AI\s+(?:(?:infrastructure\s+)?startups?|agents?)\s+funding\s+20\d{2}\b|^AI\s*(?:基础设施)?(?:初创公司|初创企业|智能体)\s*融资\s*20\d{2}/iu.test(value)) {
     return "multi_event_roundup_not_single_event_source";
   }
+  if (/(?:融资|募资|funding|financing)/iu.test(value)
+      && /(?:[二三四五六七八九十多几\d]+巨头|多家公司).{0,20}(?:全景)?(?:对比|比较|盘点)/u.test(value)) {
+    return "multi_event_roundup_not_single_event_source";
+  }
   if (/^(?:奉劝|劝告|建议)(?:各位|所有|大家|AI)|^谁拥有.{1,60}[？?]/u.test(value)) return "reaction_or_commentary_not_new_event";
   if (/^\d+笔.{0,15}融资[，,].{0,50}(?:这些|公司)|^本轮融资由/u.test(value)) return "roundup_or_body_fragment_not_event_title";
   if (QUESTION_HEADLINE.test(value)) return "question_headline_not_event_specific";
