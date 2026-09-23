@@ -5,6 +5,7 @@ import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { pathToFileURL } from "node:url";
 import { isMainModule } from "../lib/module-entry.mjs";
+import { VAULT_SCAN_SKIP_DIRECTORIES } from "../lib/guanlan-vault-scan.mjs";
 import test from "node:test";
 import { resolveAutomationNetworkEnv } from "../lib/automation-network-env.mjs";
 import { runLoggedCommand, defaultRuntimeDirectory, CODEX_REPAIR_TIMEOUT_MS, CODEX_REPAIR_HANDOFF_TIMEOUT_MS } from "../lib/logged-command.mjs";
@@ -415,7 +416,10 @@ test("Vault refresh uses an isolated origin/main worktree and leaves supervision
   assert.match(sync, /guanlan-vault-sync\.json/u);
   assert.match(supervision, /vaultSync\.current/u);
   assert.match(vaultGate, /function directoryContainsFiles[^]*retiredVaultRootHasContent[^]*directoryContainsFiles\(retiredVaultRoot\)/u);
-  assert.match(vaultGate, /VAULT_SCAN_SKIP_DIRECTORIES[^]*node_modules[^]*!VAULT_SCAN_SKIP_DIRECTORIES\.has\(entry\.name\.toLowerCase\(\)\)/u);
+  assert.ok(VAULT_SCAN_SKIP_DIRECTORIES.has("node_modules"));
+  assert.ok(VAULT_SCAN_SKIP_DIRECTORIES.has(".pytest_cache"));
+  assert.match(vaultGate, /import \{ VAULT_SCAN_SKIP_DIRECTORIES \} from "\.\/lib\/guanlan-vault-scan\.mjs"/u);
+  assert.match(vaultGate, /!VAULT_SCAN_SKIP_DIRECTORIES\.has\(entry\.name\.toLowerCase\(\)\)/u);
 });
 
 test("morning controller repairs derived repo Skill runtime before auditing it", () => {
