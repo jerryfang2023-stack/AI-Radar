@@ -1,0 +1,699 @@
+---
+date: 2026-09-23
+stage: builders-viewpoints
+status: first-line-viewpoint-collected
+builder_items_count: 43
+generated_at: 2026-09-23T08:12:31.081Z
+follow_builders_script: agent-workflow/tools/prepare-follow-builders-intake.mjs
+source_errors: []
+---
+
+# 2026-09-23 First-Line Viewpoints Skill Intake
+
+说明：本文件直接调用本地 follow-builders skill，收录 Builder 观点/实践线索（discovery 级），作为一线观点 intake 资产沉淀。
+注意：社媒/X 观点为观点线索，不作为事实主证据；进入商业信号、变化候选、趋势候选或当前前台链路的事实结论仍需补足 S/A/B 原始来源。
+
+## BP-20260923-01｜Josh Woodward｜Big milestone! https://t.co/2MfmmG5Way
+
+- stable_id: `BP-20260923-01`
+- source_path: `follow-builders`
+- source_url: `https://x.com/joshwoodward/status/2102498448364954083`
+- source_name: follow-builders / X / Josh Woodward
+- original_date: 2026-09-22
+- captured_at: 2026-09-23T08:12:31.077Z
+- kind: x
+
+原始观点/摘要：Big milestone! https://t.co/2MfmmG5Way
+
+VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio
+
+likes=235; retweets=9; replies=9
+
+## BP-20260923-02｜Boris Cherny｜Opus made an infographic https://t.co/w9fMWqB7HA
+
+- stable_id: `BP-20260923-02`
+- source_path: `follow-builders`
+- source_url: `https://x.com/bcherny/status/2102543350436180277`
+- source_name: follow-builders / X / Boris Cherny
+- original_date: 2026-09-22
+- captured_at: 2026-09-23T08:12:31.079Z
+- kind: x
+
+原始观点/摘要：Opus made an infographic https://t.co/w9fMWqB7HA
+
+Claude Code @anthropicai
+
+likes=117; retweets=1; replies=5
+
+## BP-20260923-03｜Boris Cherny｜I used Opus 5.5 to formally verify the Claude Agent SDK using Lean. A couple short prompts
+
+- stable_id: `BP-20260923-03`
+- source_path: `follow-builders`
+- source_url: `https://x.com/bcherny/status/2102543349102338309`
+- source_name: follow-builders / X / Boris Cherny
+- original_date: 2026-09-22
+- captured_at: 2026-09-23T08:12:31.079Z
+- kind: x
+
+原始观点/摘要：I used Opus 5.5 to formally verify the Claude Agent SDK using Lean. A couple short prompts = 16 PRs fixing various bugs and race conditions. Video attached. TLA+ also works well. I sometimes combine Lean and TLA+ to look for issues around data flow, concurrency, and state mgmt. I don't know either language well, but Claude is excellent at both. This approach is super useful for formally modeling your code and finding bugs that a human probably wouldn't have spotted. Is formal verification the future of coding (or at least, bug finding)?
+
+Claude Code @anthropicai
+
+likes=3324; retweets=165; replies=258
+
+## BP-20260923-04｜Boris Cherny｜Opus 5.5 is a really good model. It's been my daily driver the last few weeks. We had Opus
+
+- stable_id: `BP-20260923-04`
+- source_path: `follow-builders`
+- source_url: `https://x.com/bcherny/status/2102439069053747549`
+- source_name: follow-builders / X / Boris Cherny
+- original_date: 2026-09-22
+- captured_at: 2026-09-23T08:12:31.079Z
+- kind: x
+
+原始观点/摘要：Opus 5.5 is a really good model. It's been my daily driver the last few weeks. We had Opus 5.5 and Fable 5.1 each port HAProxy from C to Rust. Both passed nearly all of HAProxy's tests, but Opus 5.5 finished in 9.5 hours compared to Fable 5.1's 12 hours, and for 51% less cost. https://t.co/GJ9FaS3Erx
+
+Claude Code @anthropicai
+
+likes=6778; retweets=228; replies=312
+
+## BP-20260923-05｜Thibault Sottiaux｜Maybe our cutest launch so far. But still packing the biggest punch. https://t.co/LVYOxpH0
+
+- stable_id: `BP-20260923-05`
+- source_path: `follow-builders`
+- source_url: `https://x.com/thsottiaux/status/2102509507415048245`
+- source_name: follow-builders / X / Thibault Sottiaux
+- original_date: 2026-09-22
+- captured_at: 2026-09-23T08:12:31.079Z
+- kind: x
+
+原始观点/摘要：Maybe our cutest launch so far. But still packing the biggest punch. https://t.co/LVYOxpH0Wi
+
+Codex & ChatGPT @OpenAI
+
+likes=6045; retweets=134; replies=817
+
+## BP-20260923-06｜Thibault Sottiaux｜GPT-6 Sol and Luna are out. Not only are they a very significant improvement across the bo
+
+- stable_id: `BP-20260923-06`
+- source_path: `follow-builders`
+- source_url: `https://x.com/thsottiaux/status/2102463847714247142`
+- source_name: follow-builders / X / Thibault Sottiaux
+- original_date: 2026-09-22
+- captured_at: 2026-09-23T08:12:31.079Z
+- kind: x
+
+原始观点/摘要：GPT-6 Sol and Luna are out. Not only are they a very significant improvement across the board, but also in writing and general "you know when you try it" quality. We are also permanently reducing the API price by 50% making both of them viable for a ton of new usecases and making your usage go further too, even on the subscriptions. And one more thing. We are loading a banked reset into all accounts of our Plus, Pro and Business users. Let's go! https://t.co/00DRh1sRrO
+
+Codex & ChatGPT @OpenAI
+
+likes=23309; retweets=1512; replies=2806
+
+## BP-20260923-07｜Thibault Sottiaux｜We have been focusing on efficiency and intelligence for all. Very proud of the team. Only
+
+- stable_id: `BP-20260923-07`
+- source_path: `follow-builders`
+- source_url: `https://x.com/thsottiaux/status/2102440619616682120`
+- source_name: follow-builders / X / Thibault Sottiaux
+- original_date: 2026-09-22
+- captured_at: 2026-09-23T08:12:31.079Z
+- kind: x
+
+原始观点/摘要：We have been focusing on efficiency and intelligence for all. Very proud of the team. Only possible when you have incredible models at the top end of the capability that you can then use to make a big difference in everything else.
+
+Codex & ChatGPT @OpenAI
+
+likes=12590; retweets=317; replies=1698
+
+## BP-20260923-08｜Peter Yang｜Just randomly played this Australian show on Apple TV and it’s another banger https://t.co
+
+- stable_id: `BP-20260923-08`
+- source_path: `follow-builders`
+- source_url: `https://x.com/petergyang/status/2102628682301046875`
+- source_name: follow-builders / X / Peter Yang
+- original_date: 2026-09-23
+- captured_at: 2026-09-23T08:12:31.079Z
+- kind: x
+
+原始观点/摘要：Just randomly played this Australian show on Apple TV and it’s another banger https://t.co/Cp2vUitABa https://t.co/mpOYshnd0G
+
+Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at https://t.co/6VAA6p81x6
+
+likes=19; retweets=0; replies=5
+
+## BP-20260923-09｜Peter Yang｜@claudeai If you enjoyed this, sign up for free to my newsletter to get my best AI and pro
+
+- stable_id: `BP-20260923-09`
+- source_path: `follow-builders`
+- source_url: `https://x.com/petergyang/status/2102589061445939508`
+- source_name: follow-builders / X / Peter Yang
+- original_date: 2026-09-23
+- captured_at: 2026-09-23T08:12:31.079Z
+- kind: x
+
+原始观点/摘要：@claudeai If you enjoyed this, sign up for free to my newsletter to get my best AI and product guides. Join 110,000+ subscribers here: https://t.co/yz9xcsfrhF
+
+Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at https://t.co/6VAA6p81x6
+
+likes=1; retweets=0; replies=0
+
+## BP-20260923-10｜Peter Yang｜I talk about why Opus 5.5 is the most excited I've been about a Claude model in awhile her
+
+- stable_id: `BP-20260923-10`
+- source_path: `follow-builders`
+- source_url: `https://x.com/petergyang/status/2102577425838485916`
+- source_name: follow-builders / X / Peter Yang
+- original_date: 2026-09-23
+- captured_at: 2026-09-23T08:12:31.079Z
+- kind: x
+
+原始观点/摘要：I talk about why Opus 5.5 is the most excited I've been about a Claude model in awhile here: https://t.co/PBxPzE43Ud
+
+Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at https://t.co/6VAA6p81x6
+
+likes=3; retweets=0; replies=0
+
+## BP-20260923-11｜Cat Wu｜If you’re looking for ways to try Opus 5.5 and Claude Tag in Slack… https://t.co/PpwztYQx2
+
+- stable_id: `BP-20260923-11`
+- source_path: `follow-builders`
+- source_url: `https://x.com/_catwu/status/2102569951974584612`
+- source_name: follow-builders / X / Cat Wu
+- original_date: 2026-09-23
+- captured_at: 2026-09-23T08:12:31.079Z
+- kind: x
+
+原始观点/摘要：If you’re looking for ways to try Opus 5.5 and Claude Tag in Slack… https://t.co/PpwztYQx2o
+
+claude code + cowork @anthropicai, prev: @dagster, @scale_ai
+
+likes=119; retweets=2; replies=7
+
+## BP-20260923-12｜Cat Wu｜Claude Opus 5.5 is now the default model in Claude Code and the Claude app, including Cowo
+
+- stable_id: `BP-20260923-12`
+- source_path: `follow-builders`
+- source_url: `https://x.com/_catwu/status/2102437713781944397`
+- source_name: follow-builders / X / Cat Wu
+- original_date: 2026-09-22
+- captured_at: 2026-09-23T08:12:31.079Z
+- kind: x
+
+原始观点/摘要：Claude Opus 5.5 is now the default model in Claude Code and the Claude app, including Cowork, for Pro, Max, and Team plans. I’ve been using Opus 5.5 as a daily driver and love its clear communication skills and ability to write in my style. We’re defaulting to effort medium across products, which is comparable to Fable 5.1 on intelligence but faster. Your rate limits will go 25% further on Opus 5.5 compared to Opus 5. Give Opus 5.5 an ambitious task and let us know what you think!
+
+claude code + cowork @anthropicai, prev: @dagster, @scale_ai
+
+likes=1308; retweets=35; replies=72
+
+## BP-20260923-13｜Thariq｜if you want to make games, 3d generation is a great capability to help you imagine your ga
+
+- stable_id: `BP-20260923-13`
+- source_path: `follow-builders`
+- source_url: `https://x.com/trq212/status/2102549030303867257`
+- source_name: follow-builders / X / Thariq
+- original_date: 2026-09-23
+- captured_at: 2026-09-23T08:12:31.079Z
+- kind: x
+
+原始观点/摘要：if you want to make games, 3d generation is a great capability to help you imagine your game come to life but you should figure out how to make a good, satisfying game loop first (talking to myself here)
+
+Claude Code @anthropicai. prev YC W20, @spc, @medialab
+
+likes=254; retweets=5; replies=10
+
+## BP-20260923-14｜Thariq｜the right way to use model capabilities is not to ship 10x more features to prod it's to s
+
+- stable_id: `BP-20260923-14`
+- source_path: `follow-builders`
+- source_url: `https://x.com/trq212/status/2102548686303854790`
+- source_name: follow-builders / X / Thariq
+- original_date: 2026-09-23
+- captured_at: 2026-09-23T08:12:31.079Z
+- kind: x
+
+原始观点/摘要：the right way to use model capabilities is not to ship 10x more features to prod it's to spend more time understanding your users, trying experiments, building prototypes, learning about things you don't understand so that you can ship things that actually work
+
+Claude Code @anthropicai. prev YC W20, @spc, @medialab
+
+likes=4528; retweets=313; replies=160
+
+## BP-20260923-15｜Thariq｜workflows are a huge part of how I use Claude these days, I'm glad we have Fable-like inte
+
+- stable_id: `BP-20260923-15`
+- source_path: `follow-builders`
+- source_url: `https://x.com/trq212/status/2102477527688388752`
+- source_name: follow-builders / X / Thariq
+- original_date: 2026-09-22
+- captured_at: 2026-09-23T08:12:31.079Z
+- kind: x
+
+原始观点/摘要：workflows are a huge part of how I use Claude these days, I'm glad we have Fable-like intelligence that works with workflows from a cost perspective
+
+Claude Code @anthropicai. prev YC W20, @spc, @medialab
+
+likes=73; retweets=0; replies=5
+
+## BP-20260923-16｜Amjad Masad｜Your intelligence is fake. It’s artificial. Mine? It’s super. Super Intelligence. Aka SI. 
+
+- stable_id: `BP-20260923-16`
+- source_path: `follow-builders`
+- source_url: `https://x.com/amasad/status/2102489320766800002`
+- source_name: follow-builders / X / Amjad Masad
+- original_date: 2026-09-22
+- captured_at: 2026-09-23T08:12:31.080Z
+- kind: x
+
+原始观点/摘要：Your intelligence is fake. It’s artificial. Mine? It’s super. Super Intelligence. Aka SI. https://t.co/oTWHfUUpDP
+
+ceo @replit. civilizationist
+
+likes=935; retweets=37; replies=107
+
+## BP-20260923-17｜Guillermo Rauch｜Software will never die again. You liked Google Reader? Cool, you can generate and deploy 
+
+- stable_id: `BP-20260923-17`
+- source_path: `follow-builders`
+- source_url: `https://x.com/rauchg/status/2102594015669756323`
+- source_name: follow-builders / X / Guillermo Rauch
+- original_date: 2026-09-23
+- captured_at: 2026-09-23T08:12:31.080Z
+- kind: x
+
+原始观点/摘要：Software will never die again. You liked Google Reader? Cool, you can generate and deploy your own. Yours, forever.
+
+@vercel CEO
+
+likes=1045; retweets=33; replies=76
+
+## BP-20260923-18｜Guillermo Rauch｜We ran fresh Next.js evals. The tally: ① Opus 5.5 [𝟿𝟽%] ② GPT 6 Sol [𝟿𝟽%] ③ Fable 5.1 
+
+- stable_id: `BP-20260923-18`
+- source_path: `follow-builders`
+- source_url: `https://x.com/rauchg/status/2102519097770885231`
+- source_name: follow-builders / X / Guillermo Rauch
+- original_date: 2026-09-22
+- captured_at: 2026-09-23T08:12:31.080Z
+- kind: x
+
+原始观点/摘要：We ran fresh Next.js evals. The tally: ① Opus 5.5 [𝟿𝟽%] ② GPT 6 Sol [𝟿𝟽%] ③ Fable 5.1 [𝟿𝟽%] ④ Grok 4.7 [𝟿𝟺%] Notably, Grok is 2x-7x cheaper https://t.co/BAUg14981G
+
+@vercel CEO
+
+likes=1087; retweets=55; replies=133
+
+## BP-20260923-19｜Guillermo Rauch｜Love the tastefulness with which anthropic ships. Main reason I got excited about 'headles
+
+- stable_id: `BP-20260923-19`
+- source_path: `follow-builders`
+- source_url: `https://x.com/rauchg/status/2102438365455167883`
+- source_name: follow-builders / X / Guillermo Rauch
+- original_date: 2026-09-22
+- captured_at: 2026-09-23T08:12:31.080Z
+- kind: x
+
+原始观点/摘要：Love the tastefulness with which anthropic ships. Main reason I got excited about 'headless' for the web is that any given page could take whatever whimsical or unique shape you wanted. With AI, there's no excuse not to push the design frontier. This is @nextjs at its finest: https://t.co/uXM96EijiW
+
+@vercel CEO
+
+likes=1418; retweets=34; replies=63
+
+## BP-20260923-20｜Alex Albert｜Prompt in Claude Tag "Recreate Market Street, San Francisco as it stood on April 17, 1906,
+
+- stable_id: `BP-20260923-20`
+- source_path: `follow-builders`
+- source_url: `https://x.com/alexalbert__/status/2102466524934271381`
+- source_name: follow-builders / X / Alex Albert
+- original_date: 2026-09-22
+- captured_at: 2026-09-23T08:12:31.080Z
+- kind: x
+
+原始观点/摘要：Prompt in Claude Tag "Recreate Market Street, San Francisco as it stood on April 17, 1906, the afternoon before the earthquake, in Blender. Scope: the Ferry Building up Market to Fifth Street, including the Palace Hotel, the Call Building, the Chronicle Building, Lotta's Fountain and the Emporium. Before modeling anything, build a source file from: the 1899-1905 Sanborn fire insurance maps (footprints, heights, materials, occupants), the Miles Brothers film "A Trip Down Market Street" (April 1906), period photographs from OpenSFHistory, the Library of Congress and the David Rumsey collection, and USGS topography. Record every building with footprint, height, facade material, occupant, and the source for each fact with a confidence level. Build everything in Blender Python. No downloaded meshes, textures or HDRIs. Write reusable generators (Victorian commercial facade, mansard roof, bay windows, awnings, painted signage, gas and electric street lamps, cable car, horse-drawn wagon, early automobile) and assemble the street from the source file, so every building traces back to data. Provide a 10 second video up the street."
+
+Research @AnthropicAI. Opinions are my own!
+
+likes=73; retweets=1; replies=4
+
+## BP-20260923-21｜Alex Albert｜I've been on a Blender kick with Opus 5.5. Its better 3D modeling and vision mean you can 
+
+- stable_id: `BP-20260923-21`
+- source_path: `follow-builders`
+- source_url: `https://x.com/alexalbert__/status/2102466523164274839`
+- source_name: follow-builders / X / Alex Albert
+- original_date: 2026-09-22
+- captured_at: 2026-09-23T08:12:31.080Z
+- kind: x
+
+原始观点/摘要：I've been on a Blender kick with Opus 5.5. Its better 3D modeling and vision mean you can build an entire world from a single prompt. Historically accurate San Francisco Market street in 1906, pre-earthquake https://t.co/aisvFLFGy3
+
+Research @AnthropicAI. Opinions are my own!
+
+likes=890; retweets=40; replies=54
+
+## BP-20260923-22｜Alex Albert｜need to make sure you've been updated to this (rolling out to everyone soon if you haven't
+
+- stable_id: `BP-20260923-22`
+- source_path: `follow-builders`
+- source_url: `https://x.com/alexalbert__/status/2102458350348935454`
+- source_name: follow-builders / X / Alex Albert
+- original_date: 2026-09-22
+- captured_at: 2026-09-23T08:12:31.080Z
+- kind: x
+
+原始观点/摘要：need to make sure you've been updated to this (rolling out to everyone soon if you haven't!) https://t.co/fjCAQKazVs
+
+Research @AnthropicAI. Opinions are my own!
+
+likes=31; retweets=0; replies=1
+
+## BP-20260923-23｜Aaron Levie｜What an insane day in AI. The frontier models just became substantially cheaper, with the 
+
+- stable_id: `BP-20260923-23`
+- source_path: `follow-builders`
+- source_url: `https://x.com/levie/status/2102477253070430322`
+- source_name: follow-builders / X / Aaron Levie
+- original_date: 2026-09-22
+- captured_at: 2026-09-23T08:12:31.080Z
+- kind: x
+
+原始观点/摘要：What an insane day in AI. The frontier models just became substantially cheaper, with the Opus 5.5 price cuts, and now with GPT-6 Sol and Luna dropping token prices by 50%. The rate at which the cost per task (on a like-for-like basis) drops in AI is unlike any other type of technology in history. And every time the cost of AI drops, the use-cases you can deploy agents against dramatically increase. This is Jevons paradox applied to agents. These improvements will directly lead to broader diffusion of AI in the economy as we can use agents to process all of our data, scan our code for security issues, read through all log data to make decisions, have agent swarms in workflows, and much more. The cost of tokens is directly correlated to these use-cases being opened up at scale.
+
+ceo @box - your business lives in content. unleash it with AI
+
+likes=655; retweets=69; replies=68
+
+## BP-20260923-24｜Aaron Levie｜At Box, we've been testing Opus 5.5 on a variety of complex enterprise knowledge work task
+
+- stable_id: `BP-20260923-24`
+- source_path: `follow-builders`
+- source_url: `https://x.com/levie/status/2102448415775051790`
+- source_name: follow-builders / X / Aaron Levie
+- original_date: 2026-09-22
+- captured_at: 2026-09-23T08:12:31.080Z
+- kind: x
+
+原始观点/摘要：At Box, we've been testing Opus 5.5 on a variety of complex enterprise knowledge work tasks dealing with unstructured data with the Box Agent. Overall, we saw frontier capability levels, with major performance improvements over Opus 5. 63% fewer tokens used, 42% less verbosity, and 30% faster vs. Opus 5. And the model itself is cheaper, so this is a major win for any agentic computer use, coding, analytics, or data work that enterprises will be doing. Here are some examples of the task wins and performance gains across a variety of industry tests that we performed: • Financial services - due diligence (+39% task accuracy): A year of transaction records, with the job of finding every miscalculation in an acquisition target's pricing tool. Opus 5.5 scored a perfect result on every attempt in half the words Opus 5 used, consuming 82% fewer tokens overall. • Technology - cloud cost analysis (+65% task accuracy): Work out what a company should actually change about its cloud spend. Opus 5.5 picked the right basis for the retention calculation and kept the source data's unit conventions straight all the way through, so the number at the end actually holds up. It took half the time Opus 5 took, with 70% fewer tokens. • Consumer products - client account analysis (+17% task accuracy): Set the onboarding targets for a client account, reading across the signed contract, a satisfaction tracker and a team metrics sheet. The contract never states a senior/junior split, so Opus 5.5 derived it from the 18-person roster and showed the rule it used; several clients had a perfect 10 on individual survey questions, so it averaged each client's responses instead of crowning the single 10. It finished this one in half the time, on 78% fewer tokens. • Clinical diagnostics - data analysis (+15% task accuracy): Malaria rapid-test performance across a dry and a wet season: build the patient records out of two clinical PDFs, compute positive test rates by season and gender, and test whether parasite counts really differ between test-positive and test-negative patients. Opus 5.5 caught that the two groups' standard deviations differed more than 100-fold, re-ran it the right way, and found
+
+## BP-20260923-25｜Garry Tan｜Capy (@capydotai) lets me drop PRs much much faster than I would with Codex or Claude Code
+
+- stable_id: `BP-20260923-25`
+- source_path: `follow-builders`
+- source_url: `https://x.com/garrytan/status/2102544711647129902`
+- source_name: follow-builders / X / Garry Tan
+- original_date: 2026-09-22
+- captured_at: 2026-09-23T08:12:31.080Z
+- kind: x
+
+原始观点/摘要：Capy (@capydotai) lets me drop PRs much much faster than I would with Codex or Claude Code alone https://t.co/s6xeWJahvJ
+
+President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop
+
+likes=111; retweets=9; replies=29
+
+## BP-20260923-26｜Garry Tan｜If you're working on something cool, GStack does actually tell you to apply to YC :-) http
+
+- stable_id: `BP-20260923-26`
+- source_path: `follow-builders`
+- source_url: `https://x.com/garrytan/status/2102537390774759761`
+- source_name: follow-builders / X / Garry Tan
+- original_date: 2026-09-22
+- captured_at: 2026-09-23T08:12:31.080Z
+- kind: x
+
+原始观点/摘要：If you're working on something cool, GStack does actually tell you to apply to YC :-) https://t.co/G4jWbqwINt
+
+President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop
+
+likes=155; retweets=3; replies=23
+
+## BP-20260923-27｜Garry Tan｜We need to teach the world to prompt and maximally use AI: to help all people see the way 
+
+- stable_id: `BP-20260923-27`
+- source_path: `follow-builders`
+- source_url: `https://x.com/garrytan/status/2102501556348440983`
+- source_name: follow-builders / X / Garry Tan
+- original_date: 2026-09-22
+- captured_at: 2026-09-23T08:12:31.080Z
+- kind: x
+
+原始观点/摘要：We need to teach the world to prompt and maximally use AI: to help all people see the way it can give you wings in all your pursuits Then we need yearn to solve more problems for ourselves and for one another https://t.co/e7yOADOf6s
+
+President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop
+
+likes=144; retweets=17; replies=31
+
+## BP-20260923-28｜Nikunj Kothari｜The amount of SPVs organzied by even the “best” investors is simply mind boggling.. To the
+
+- stable_id: `BP-20260923-28`
+- source_path: `follow-builders`
+- source_url: `https://x.com/nikunj/status/2102534909076349291`
+- source_name: follow-builders / X / Nikunj Kothari
+- original_date: 2026-09-22
+- captured_at: 2026-09-23T08:12:31.080Z
+- kind: x
+
+原始观点/摘要：The amount of SPVs organzied by even the “best” investors is simply mind boggling.. To the point that if you read headlines of a large fundraise, you can be reasonably sure now that a large amount of it came from SPVs even though the headlines say something else. Combine that with tranched valuations and revenue not being the same, all I’ll say don’t believe the headlines anymore. Proof is in the pudding and the pudding is not publicly visible anywhere.
+
+partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧
+
+likes=34; retweets=0; replies=5
+
+## BP-20260923-29｜Nikunj Kothari｜Now also on YouTube: https://t.co/U3O2vY7Z66
+
+- stable_id: `BP-20260923-29`
+- source_path: `follow-builders`
+- source_url: `https://x.com/nikunj/status/2102409907278602622`
+- source_name: follow-builders / X / Nikunj Kothari
+- original_date: 2026-09-22
+- captured_at: 2026-09-23T08:12:31.080Z
+- kind: x
+
+原始观点/摘要：Now also on YouTube: https://t.co/U3O2vY7Z66
+
+partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧
+
+likes=0; retweets=0; replies=0
+
+## BP-20260923-30｜Nikunj Kothari｜A Walk In The Park (part III) feat @toddsaunders 00:00 Software should fit your business 0
+
+- stable_id: `BP-20260923-30`
+- source_path: `follow-builders`
+- source_url: `https://x.com/nikunj/status/2102395699895677325`
+- source_name: follow-builders / X / Nikunj Kothari
+- original_date: 2026-09-22
+- captured_at: 2026-09-23T08:12:31.080Z
+- kind: x
+
+原始观点/摘要：A Walk In The Park (part III) feat @toddsaunders 00:00 Software should fit your business 00:16 Meet Todd, the councilman 03:01 From Google to flooring software 07:51 The $10M pivot 11:55 Life after the exit 17:35 Vertical vs. horizontal software 23:21 The college startup story 24:35 Cofounders and the Dalton Mills name 28:06 Why raise VC again? 32:43 Who Todd wants to hear from shot on @iPhone, edited on @descript 📍westfield, nj
+
+partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + 👦👧
+
+likes=34; retweets=2; replies=5
+
+## BP-20260923-31｜Peter Steinberger｜Had ChatGPT sometimes crashing on me after updating to macOS 27 and... Astra found a ~14 y
+
+- stable_id: `BP-20260923-31`
+- source_path: `follow-builders`
+- source_url: `https://x.com/steipete/status/2102501642176528743`
+- source_name: follow-builders / X / Peter Steinberger
+- original_date: 2026-09-22
+- captured_at: 2026-09-23T08:12:31.080Z
+- kind: x
+
+原始观点/摘要：Had ChatGPT sometimes crashing on me after updating to macOS 27 and... Astra found a ~14 year old bug in libuv. https://t.co/JE8GssiRXJ
+
+Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world. @OpenClaw🦞 + @OpenAI
+
+likes=850; retweets=33; replies=54
+
+## BP-20260923-32｜Dan Shipper｜@every https://t.co/OIFF8UYr2k
+
+- stable_id: `BP-20260923-32`
+- source_path: `follow-builders`
+- source_url: `https://x.com/danshipper/status/2102557212581536207`
+- source_name: follow-builders / X / Dan Shipper
+- original_date: 2026-09-23
+- captured_at: 2026-09-23T08:12:31.080Z
+- kind: x
+
+原始观点/摘要：@every https://t.co/OIFF8UYr2k
+
+ceo @every | the only subscription you need to stay at the edge of AI
+
+likes=0; retweets=0; replies=0
+
+## BP-20260923-33｜Dan Shipper｜i added almost 10k new followers today! if you're new around here, here are two things to 
+
+- stable_id: `BP-20260923-33`
+- source_path: `follow-builders`
+- source_url: `https://x.com/danshipper/status/2102556723244564715`
+- source_name: follow-builders / X / Dan Shipper
+- original_date: 2026-09-23
+- captured_at: 2026-09-23T08:12:31.080Z
+- kind: x
+
+原始观点/摘要：i added almost 10k new followers today! if you're new around here, here are two things to start with: 1. my vibe check on opus 5.5 vs. sol-6 on @every: https://t.co/61XgBTikxH 2. after automation, my take on why AI automation creates more good work to do for human experts: https://t.co/Lb7SUCe2pO if you like those two things you should subscribe to @every—there's more where that came from!
+
+ceo @every | the only subscription you need to stay at the edge of AI
+
+likes=37; retweets=1; replies=5
+
+## BP-20260923-34｜Dan Shipper｜😚 https://t.co/XHmyhFqjxB
+
+- stable_id: `BP-20260923-34`
+- source_path: `follow-builders`
+- source_url: `https://x.com/danshipper/status/2102555830080205130`
+- source_name: follow-builders / X / Dan Shipper
+- original_date: 2026-09-23
+- captured_at: 2026-09-23T08:12:31.080Z
+- kind: x
+
+原始观点/摘要：😚 https://t.co/XHmyhFqjxB
+
+ceo @every | the only subscription you need to stay at the edge of AI
+
+likes=16; retweets=0; replies=2
+
+## BP-20260923-35｜Aditya Agarwal｜I have hosted over 50 Minus One fireside chats with lots of interesting and well known peo
+
+- stable_id: `BP-20260923-35`
+- source_path: `follow-builders`
+- source_url: `https://x.com/adityaag/status/2102498288658526614`
+- source_name: follow-builders / X / Aditya Agarwal
+- original_date: 2026-09-22
+- captured_at: 2026-09-23T08:12:31.080Z
+- kind: x
+
+原始观点/摘要：I have hosted over 50 Minus One fireside chats with lots of interesting and well known people over the years @spc. The first one my 9 year old asked to attend was yesterday's with Dmitri of Waymo. The evocative beauty of building things for the physical world is undeniable.
+
+General Partner @SPC, Co-Founder @Bevel_Health | Ex: Early Eng @facebook, CTO @Dropbox, Board @Flipkart | Optimist, Builder, Dad
+
+likes=17; retweets=0; replies=1
+
+## BP-20260923-36｜Aditya Agarwal｜Safety and alignment of "models" is the raging topic today. But the original "safety" deba
+
+- stable_id: `BP-20260923-36`
+- source_path: `follow-builders`
+- source_url: `https://x.com/adityaag/status/2102457464432284019`
+- source_name: follow-builders / X / Aditya Agarwal
+- original_date: 2026-09-22
+- captured_at: 2026-09-23T08:12:31.080Z
+- kind: x
+
+原始观点/摘要：Safety and alignment of "models" is the raging topic today. But the original "safety" debate for AI/MachineLearning was actually in autonomous vehicles! My first Waymo ride truly felt like a religious experience. It was mind-boggling that we could build technology that actually worked on real roads with all the challenges that entails. I thought the most interesting part of the talk yesterday was the extensive eval/testing infrastructure that Waymo has built out in order to build the confidence to release 2-ton robots traveling at 30mph through urban environments. It was awesome to host @dmitri_dolgov @spc yesterday. I learnt a lot myself and I am excited to release the full video soon.
+
+General Partner @SPC, Co-Founder @Bevel_Health | Ex: Early Eng @facebook, CTO @Dropbox, Board @Flipkart | Optimist, Builder, Dad
+
+likes=41; retweets=4; replies=4
+
+## BP-20260923-37｜Aditya Agarwal｜In the mad dash for productivity...we often forget that AI products should be delightful a
+
+- stable_id: `BP-20260923-37`
+- source_path: `follow-builders`
+- source_url: `https://x.com/adityaag/status/2102421668509733058`
+- source_name: follow-builders / X / Aditya Agarwal
+- original_date: 2026-09-22
+- captured_at: 2026-09-23T08:12:31.080Z
+- kind: x
+
+原始观点/摘要：In the mad dash for productivity...we often forget that AI products should be delightful and FUN. I have had so many magic moments of delight on Sentience. Highly recommend trying it out. https://t.co/i8pKw19PKq
+
+General Partner @SPC, Co-Founder @Bevel_Health | Ex: Early Eng @facebook, CTO @Dropbox, Board @Flipkart | Optimist, Builder, Dad
+
+likes=23; retweets=1; replies=4
+
+## BP-20260923-38｜Sam Altman｜argh i meant VOICE not video :( sorry to dissapoint
+
+- stable_id: `BP-20260923-38`
+- source_path: `follow-builders`
+- source_url: `https://x.com/sama/status/2102512794235207758`
+- source_name: follow-builders / X / Sam Altman
+- original_date: 2026-09-22
+- captured_at: 2026-09-23T08:12:31.080Z
+- kind: x
+
+原始观点/摘要：argh i meant VOICE not video :( sorry to dissapoint
+
+The mission of OpenAI is to ensure that AGI benefits all of humanity
+
+likes=855; retweets=16; replies=101
+
+## BP-20260923-39｜Sam Altman｜Startups are naturally good at this; it is hard to keep a bigger company good at this and 
+
+- stable_id: `BP-20260923-39`
+- source_path: `follow-builders`
+- source_url: `https://x.com/sama/status/2102469008079679640`
+- source_name: follow-builders / X / Sam Altman
+- original_date: 2026-09-22
+- captured_at: 2026-09-23T08:12:31.080Z
+- kind: x
+
+原始观点/摘要：Startups are naturally good at this; it is hard to keep a bigger company good at this and i think an underexplored space. https://t.co/Sr48wgC0lL
+
+The mission of OpenAI is to ensure that AGI benefits all of humanity
+
+likes=3675; retweets=123; replies=272
+
+## BP-20260923-40｜Sam Altman｜michelle embodies this as much as anyone openai is so, so lucky to have benefited from eve
+
+- stable_id: `BP-20260923-40`
+- source_path: `follow-builders`
+- source_url: `https://x.com/sama/status/2102468713866055872`
+- source_name: follow-builders / X / Sam Altman
+- original_date: 2026-09-22
+- captured_at: 2026-09-23T08:12:31.080Z
+- kind: x
+
+原始观点/摘要：michelle embodies this as much as anyone openai is so, so lucky to have benefited from everything she has done so far and i think people will be quite pleased to see what she + team have cooking next! https://t.co/AVZAtyk6Uc
+
+The mission of OpenAI is to ensure that AGI benefits all of humanity
+
+likes=2124; retweets=58; replies=121
+
+## BP-20260923-41｜Claude｜Claude Opus 5.5 is available today. What will you explore?
+
+- stable_id: `BP-20260923-41`
+- source_path: `follow-builders`
+- source_url: `https://x.com/claudeai/status/2102471892099866883`
+- source_name: follow-builders / X / Claude
+- original_date: 2026-09-22
+- captured_at: 2026-09-23T08:12:31.080Z
+- kind: x
+
+原始观点/摘要：Claude Opus 5.5 is available today. What will you explore?
+
+Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app.
+
+likes=226; retweets=5; replies=28
+
+## BP-20260923-42｜Claude｜An algorithmic drawing program created by @kevin_t_ngo. Every drawing is based on a differ
+
+- stable_id: `BP-20260923-42`
+- source_path: `follow-builders`
+- source_url: `https://x.com/claudeai/status/2102471889092276516`
+- source_name: follow-builders / X / Claude
+- original_date: 2026-09-22
+- captured_at: 2026-09-23T08:12:31.080Z
+- kind: x
+
+原始观点/摘要：An algorithmic drawing program created by @kevin_t_ngo. Every drawing is based on a different seed. https://t.co/3qZFPs9mGc
+
+Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app.
+
+likes=261; retweets=7; replies=4
+
+## BP-20260923-43｜Claude｜A toy brick-building app. Turn a photo or a description into a buildable model with custom
+
+- stable_id: `BP-20260923-43`
+- source_path: `follow-builders`
+- source_url: `https://x.com/claudeai/status/2102471885061812714`
+- source_name: follow-builders / X / Claude
+- original_date: 2026-09-22
+- captured_at: 2026-09-23T08:12:31.080Z
+- kind: x
+
+原始观点/摘要：A toy brick-building app. Turn a photo or a description into a buildable model with custom instructions. https://t.co/zDFMIKuXLP
+
+Claude is an AI assistant built by @anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app.
+
+likes=257; retweets=7; replies=4
+
