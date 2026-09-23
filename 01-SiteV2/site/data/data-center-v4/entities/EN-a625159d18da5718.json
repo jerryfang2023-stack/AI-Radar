@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-22T03:45:38.642Z",
-    "latestDataDate": "2026-09-22",
-    "currentDate": "2026-09-22",
-    "eventCount": 3493,
+    "generatedAt": "2026-09-23T00:30:23.033Z",
+    "latestDataDate": "2026-09-23",
+    "currentDate": "2026-09-23",
+    "eventCount": 3520,
     "quarantinedEventCount": 37,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -28,8 +28,8 @@
       "EV-ca0c54e3f9776fa5",
       "EV-e78ef81d4971565e",
       "EV-31abbd556dd87fc9",
-      "EV-cab18aa68c8ae551",
       "EV-88a9fd0b8f602e16",
+      "EV-cab18aa68c8ae551",
       "EV-844b61a6f671856b",
       "EV-90a174964b9d1daf",
       "EV-4b4943ce006aeb80",
@@ -62,6 +62,7 @@
     ],
     "eventIds": [
       "EV-75f31cab33bc26b9",
+      "EV-030e6c802c2f888d",
       "EV-03fe6992f9f90c2e",
       "EV-b255934b06281883",
       "EV-d60335a12d394f65",
@@ -80,7 +81,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-19",
-    "lastSeen": "2026-09-19",
+    "lastSeen": "2026-09-23",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -89,6 +90,7 @@
       ],
       "partnerships": [],
       "productsServices": [
+        "EV-030e6c802c2f888d",
         "EV-03fe6992f9f90c2e",
         "EV-b255934b06281883",
         "EV-35df58b993efa71a",
@@ -106,6 +108,34 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-030e6c802c2f888d",
+        "dataDate": "2026-09-23",
+        "date": "2026-09-23",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude Code v2.1.280 发布，新增 Claude Opus 5.5 为默认 Opus 模型",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "long_context",
+            "name": "长上下文",
+            "entityIds": [
+              "EN-a625159d18da5718"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-a625159d18da5718",
+          "EN-ad11a77ab9b86f44"
+        ]
+      },
       {
         "id": "EV-03fe6992f9f90c2e",
         "dataDate": "2026-09-19",
@@ -315,6 +345,7 @@
       "eventIds": [
         "EV-80e54c9a390da293",
         "EV-fd21441fb6e143c3",
+        "EV-030e6c802c2f888d",
         "EV-9ec1b90f071eef44",
         "EV-d60335a12d394f65",
         "EV-eb3b431d4ce98ec5",
@@ -342,8 +373,8 @@
       ],
       "entityIds": [
         "EN-7df09a7717ef2feb",
-        "EN-c5da36ead951ea76",
         "EN-a625159d18da5718",
+        "EN-c5da36ead951ea76",
         "EN-f7a386a451b79627",
         "EN-8d4321d936320802",
         "EN-ea3bd73e2b506e00",
@@ -364,7 +395,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-06-12",
-      "lastSeen": "2026-09-21"
+      "lastSeen": "2026-09-23"
     }
   ],
   "fde": [],

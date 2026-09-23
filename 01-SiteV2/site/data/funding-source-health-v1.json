@@ -1,101 +1,97 @@
 {
   "schema_version": "FUNDING-SOURCE-HEALTH-V1.0",
-  "generated_at": "2026-09-22T03:58:24.389Z",
-  "date": "2026-09-22",
+  "generated_at": "2026-09-23T00:30:40.830Z",
+  "date": "2026-09-23",
   "status": "passed",
   "state": "healthy",
-  "last_checked_date": "2026-09-22",
-  "latest_financing_date": "2026-09-21",
+  "last_checked_date": "2026-09-23",
+  "latest_financing_date": "2026-09-22",
   "totals": {
-    "fetched": 602,
-    "funding_candidates": 101,
-    "verified_events": 10
+    "fetched": 696,
+    "funding_candidates": 116,
+    "verified_events": 3
   },
   "channels": [
     {
       "id": "aihot",
       "status": "collected",
-      "last_success_at": "2026-09-22T00:14:16.230Z",
+      "last_success_at": "2026-09-23T00:14:28.767Z",
       "response_ms": null,
       "http_status": "200",
-      "fetched_count": 279,
-      "latest_content_date": "2026-09-21",
+      "fetched_count": 323,
+      "latest_content_date": "2026-09-22",
       "duplicate_rate": 0,
       "stale_rate": 1,
       "funding_candidate_count": 4,
-      "verified_event_count": 0,
-      "failures": [
-        "AI HOT (daily endpoint https://aihot.virxact.com/api/public/daily/2026-09-22): 404 Not Found — {\"error\":\"No daily report for 2026-09-22.\"}"
-      ],
+      "verified_event_count": 2,
+      "failures": [],
       "fallback_used": false
     },
     {
       "id": "funding",
       "status": "collected",
-      "last_success_at": "2026-09-22T00:14:28.820Z",
+      "last_success_at": "2026-09-23T00:14:53.899Z",
       "response_ms": null,
       "http_status": "429",
-      "fetched_count": 44,
-      "latest_content_date": "2026-09-20",
+      "fetched_count": 49,
+      "latest_content_date": "2026-09-22",
       "duplicate_rate": 0,
       "stale_rate": 1,
-      "funding_candidate_count": 44,
-      "verified_event_count": 0,
+      "funding_candidate_count": 49,
+      "verified_event_count": 1,
       "failures": [
         "RSS venturebeat-ai: HTTP 429",
-        "RSS tldr-ai-newsletter: HTTP 429"
+        "RSS cn-qbitai-rss: fetch failed"
       ],
       "fallback_used": false
     },
     {
       "id": "gdelt",
-      "status": "failed",
-      "last_success_at": "",
+      "status": "collected",
+      "last_success_at": "2026-09-23T00:23:38.549Z",
       "response_ms": null,
-      "http_status": "",
-      "fetched_count": 0,
+      "http_status": "200",
+      "fetched_count": 56,
       "latest_content_date": "",
-      "duplicate_rate": 0,
-      "stale_rate": 0,
-      "funding_candidate_count": 0,
+      "duplicate_rate": 0.0909,
+      "stale_rate": 1,
+      "funding_candidate_count": 11,
       "verified_event_count": 0,
-      "failures": [
-        "source collection command failed; see gdelt-source-run.log"
-      ],
+      "failures": [],
       "fallback_used": false
     },
     {
       "id": "keyword",
       "status": "collected",
-      "last_success_at": "2026-09-22T00:23:00.033Z",
+      "last_success_at": "2026-09-23T00:23:29.295Z",
       "response_ms": null,
       "http_status": "200",
-      "fetched_count": 154,
+      "fetched_count": 150,
       "latest_content_date": "2024-10-23",
-      "duplicate_rate": 0.1395,
+      "duplicate_rate": 0.122,
       "stale_rate": 1,
-      "funding_candidate_count": 43,
-      "verified_event_count": 2,
+      "funding_candidate_count": 41,
+      "verified_event_count": 1,
       "failures": [
-        "keyword-search pre-gate filtered 70 result(s): broad_list_or_market_report=23; social_or_profile_source=23; missing_ai_anchor_in_result=18; directory_or_search_page=2; noise_term:career=2; noise_term:avatar=1; noise_term:hiring=1",
-        "Anysearch fallback for query \"AI workflow rollout procurement pilot announced September 2026 (AI procurement OR tender OR \"contract awarded\" OR \"purchasing agreement\") (official OR government OR newsroom)\": Anysearch returned 0 usable results"
+        "keyword-search pre-gate filtered 74 result(s): missing_ai_anchor_in_result=29; broad_list_or_market_report=26; social_or_profile_source=15; directory_or_search_page=2; noise_term:career=1; noise_term:hiring=1"
       ],
-      "fallback_used": true
+      "fallback_used": false
     },
     {
       "id": "rss",
       "status": "collected",
-      "last_success_at": "2026-09-22T00:14:17.829Z",
+      "last_success_at": "2026-09-23T00:14:30.177Z",
       "response_ms": null,
       "http_status": "429",
-      "fetched_count": 125,
-      "latest_content_date": "2026-09-20",
+      "fetched_count": 118,
+      "latest_content_date": "2026-09-22",
       "duplicate_rate": 0,
       "stale_rate": 1,
-      "funding_candidate_count": 10,
-      "verified_event_count": 0,
+      "funding_candidate_count": 11,
+      "verified_event_count": 1,
       "failures": [
-        "RSS venturebeat-ai: HTTP 429"
+        "RSS venturebeat-ai: HTTP 429",
+        "RSS tldr-ai-newsletter: HTTP 429"
       ],
       "fallback_used": false
     }
