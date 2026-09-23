@@ -5,9 +5,9 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-22T03:45:38.642Z",
-    "latestDataDate": "2026-09-22",
-    "currentDate": "2026-09-22",
+    "generatedAt": "2026-09-23T00:40:34.239Z",
+    "latestDataDate": "2026-09-23",
+    "currentDate": "2026-09-23",
     "eventCount": 3493,
     "quarantinedEventCount": 37,
     "quarantinedEventIds": [
@@ -68,8 +68,8 @@
       "TX-ai_market_category-industry_applications",
       "TX-product_form-enterprise_software_platform",
       "TX-target_user-business_user",
-      "TX-ai_market_subcategory-financial_services",
       "TX-industry-financial_services",
+      "TX-ai_market_subcategory-financial_services",
       "TX-technology-agentic_execution",
       "TX-use_case-finance_accounting",
       "TX-use_case-security_operations"
@@ -386,7 +386,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2025-09-10",
-      "lastSeen": "2026-09-22"
+      "lastSeen": "2026-09-23"
     },
     {
       "id": "TX-product_form-enterprise_software_platform",
@@ -396,10 +396,10 @@
       "valueId": "enterprise_software_platform",
       "eventIds": [
         "EV-33df10f232e26f29",
+        "EV-fbb4b961191efa55",
         "EV-4bc690025cbda146",
         "EV-6f7ec978fd8ad3fc",
         "EV-eadf57952ad76a26",
-        "EV-fbb4b961191efa55",
         "EV-1043d78cc040ab30",
         "EV-f077c91cb2fd9179",
         "EV-bdd574fb9ee91b4d",
@@ -589,9 +589,9 @@
       ],
       "entityIds": [
         "EN-2cee85064ca8de3f",
+        "EN-e7d56af70143fcd7",
         "EN-bc06be2cba2b2f2c",
         "EN-5dd3b777303686d3",
-        "EN-e7d56af70143fcd7",
         "EN-295219ea74639f0b",
         "EN-4bb042ef8e3060a4",
         "EN-cfec5bef40cbf3ae",
@@ -758,7 +758,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-09-22"
+      "lastSeen": "2026-09-23"
     },
     {
       "id": "TX-target_user-business_user",
@@ -768,9 +768,9 @@
       "valueId": "business_user",
       "eventIds": [
         "EV-33df10f232e26f29",
+        "EV-fbb4b961191efa55",
         "EV-6f7ec978fd8ad3fc",
         "EV-eadf57952ad76a26",
-        "EV-fbb4b961191efa55",
         "EV-3c7609d3fc7b7ec8",
         "EV-b9be18b12b1714f3",
         "EV-d959c800774d5d30",
@@ -1145,8 +1145,8 @@
       ],
       "entityIds": [
         "EN-2cee85064ca8de3f",
-        "EN-5dd3b777303686d3",
         "EN-e7d56af70143fcd7",
+        "EN-5dd3b777303686d3",
         "EN-0213fcbfa6055593",
         "EN-92d14efa2f3f44b1",
         "EN-33d5a47fc56e4ba1",
@@ -1457,52 +1457,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-22"
-    },
-    {
-      "id": "TX-ai_market_subcategory-financial_services",
-      "name": "金融服务",
-      "nodeType": "ai_market_subcategory",
-      "typeLabel": "AI 市场子类",
-      "valueId": "financial_services",
-      "eventIds": [
-        "EV-eadf57952ad76a26",
-        "EV-77887cf446f03ba4",
-        "EV-a38a33003b0d6d08",
-        "EV-04bcb24d608a931c",
-        "EV-63a4b6ce48e14829",
-        "EV-65d274d4277815dc",
-        "EV-13e08bc37724e276",
-        "EV-bffc68e7bb4d598b",
-        "EV-34a077ec20c91cea",
-        "EV-e61effb7ada8508f",
-        "EV-917a390341b9fce6",
-        "EV-c0d19b8641a7a36c",
-        "EV-e4b3a19529576778",
-        "EV-f4b72708c66aa752",
-        "EV-986ac3a819d23388"
-      ],
-      "entityIds": [
-        "EN-5dd3b777303686d3",
-        "EN-efadb20430d25ea7",
-        "EN-1540430ef01214f1",
-        "EN-63d1760c240e7a7c",
-        "EN-c087cefd343cb488",
-        "EN-a01847b090a53c6e",
-        "EN-77a82bb9aafc81d9",
-        "EN-7f67f2f8692510cf",
-        "EN-e5dcb6b25180d1d6",
-        "EN-612370f44fcdeae0",
-        "EN-e781481ff5ffe530",
-        "EN-a972bc1b3220493e",
-        "EN-eaa1c24270a0d057",
-        "EN-b6292f967fa84b03",
-        "EN-c189daf477a2d4ca"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2025-09-10",
-      "lastSeen": "2026-09-22"
+      "lastSeen": "2026-09-23"
     },
     {
       "id": "TX-industry-financial_services",
@@ -1511,8 +1466,8 @@
       "typeLabel": "行业",
       "valueId": "financial_services",
       "eventIds": [
-        "EV-eadf57952ad76a26",
         "EV-fbb4b961191efa55",
+        "EV-eadf57952ad76a26",
         "EV-2c2f903622c29ba4",
         "EV-77887cf446f03ba4",
         "EV-a38a33003b0d6d08",
@@ -1612,8 +1567,8 @@
         "EV-889f518dcce85a8f"
       ],
       "entityIds": [
-        "EN-5dd3b777303686d3",
         "EN-e7d56af70143fcd7",
+        "EN-5dd3b777303686d3",
         "EN-33d5a47fc56e4ba1",
         "EN-efadb20430d25ea7",
         "EN-1540430ef01214f1",
@@ -1716,6 +1671,51 @@
         "HW-a033b945449628d5"
       ],
       "firstSeen": "2025-08-27",
+      "lastSeen": "2026-09-23"
+    },
+    {
+      "id": "TX-ai_market_subcategory-financial_services",
+      "name": "金融服务",
+      "nodeType": "ai_market_subcategory",
+      "typeLabel": "AI 市场子类",
+      "valueId": "financial_services",
+      "eventIds": [
+        "EV-eadf57952ad76a26",
+        "EV-77887cf446f03ba4",
+        "EV-a38a33003b0d6d08",
+        "EV-04bcb24d608a931c",
+        "EV-63a4b6ce48e14829",
+        "EV-65d274d4277815dc",
+        "EV-13e08bc37724e276",
+        "EV-bffc68e7bb4d598b",
+        "EV-34a077ec20c91cea",
+        "EV-e61effb7ada8508f",
+        "EV-917a390341b9fce6",
+        "EV-c0d19b8641a7a36c",
+        "EV-e4b3a19529576778",
+        "EV-f4b72708c66aa752",
+        "EV-986ac3a819d23388"
+      ],
+      "entityIds": [
+        "EN-5dd3b777303686d3",
+        "EN-efadb20430d25ea7",
+        "EN-1540430ef01214f1",
+        "EN-63d1760c240e7a7c",
+        "EN-c087cefd343cb488",
+        "EN-a01847b090a53c6e",
+        "EN-77a82bb9aafc81d9",
+        "EN-7f67f2f8692510cf",
+        "EN-e5dcb6b25180d1d6",
+        "EN-612370f44fcdeae0",
+        "EN-e781481ff5ffe530",
+        "EN-a972bc1b3220493e",
+        "EN-eaa1c24270a0d057",
+        "EN-b6292f967fa84b03",
+        "EN-c189daf477a2d4ca"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2025-09-10",
       "lastSeen": "2026-09-22"
     },
     {

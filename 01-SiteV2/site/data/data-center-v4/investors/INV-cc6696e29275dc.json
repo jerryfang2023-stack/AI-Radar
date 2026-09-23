@@ -5,9 +5,9 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-22T03:45:38.642Z",
-    "latestDataDate": "2026-09-22",
-    "currentDate": "2026-09-22",
+    "generatedAt": "2026-09-23T00:40:34.239Z",
+    "latestDataDate": "2026-09-23",
+    "currentDate": "2026-09-23",
     "eventCount": 3493,
     "quarantinedEventCount": 37,
     "quarantinedEventIds": [
@@ -63,11 +63,10 @@
     "historical_or_ambiguous_count": 0,
     "portfolio_company_count": 2,
     "market_regions": [
-      "CN",
-      "GLOBAL"
+      "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-09-09",
     "latest_disclosed_at": "2026-09-10",
     "role_counts": {
@@ -78,26 +77,26 @@
     ],
     "portfolio_companies": [
       {
-        "entity_id": "EN-187bf23c29af5e43",
+        "entity_id": "EN-08e7b67a300e585f",
         "canonical_entity_id": "",
         "name": "无问智科"
       },
       {
-        "entity_id": "EN-08e7b67a300e585f",
+        "entity_id": "EN-187bf23c29af5e43",
         "canonical_entity_id": "",
-        "name": "浙江无问智行科技有限公司"
+        "name": "无问智科"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-d63ab03bb5cfd082",
+        "activity_id": "IA-a047b9271bd29fa6",
         "funding_insight_id": "FI-c2d2a86fa237b6eb",
         "event_ids": [
           "EV-798081a4ec056f8c"
         ],
         "company_entity_id": "EN-08e7b67a300e585f",
         "company_canonical_entity_id": "",
-        "company_name": "浙江无问智行科技有限公司",
+        "company_name": "无问智科",
         "round": "A轮",
         "round_code": "series_a",
         "round_original": "A轮",
@@ -152,8 +151,8 @@
           "display_zh": "2 亿元–9 亿元"
         },
         "announced_at": "2026-09-09",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
+        "market_region": "CN",
+        "china_market_match": true,
         "disclosure_status": "disclosed",
         "scope": "current_round",
         "role": "本轮参投",
