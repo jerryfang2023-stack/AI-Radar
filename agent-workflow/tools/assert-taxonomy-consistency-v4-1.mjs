@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { isMainModule } from "./lib/module-entry.mjs";
 
 import fs from "node:fs";
 import path from "node:path";
@@ -334,7 +335,7 @@ export function taxonomyConsistencyProblems(rootDir = root) {
   return failures;
 }
 
-if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+if (isMainModule(import.meta.url)) {
   const failures = taxonomyConsistencyProblems();
   if (failures.length) {
     console.error(JSON.stringify({ ok: false, count: failures.length, failures: failures.slice(0, 100) }, null, 2));

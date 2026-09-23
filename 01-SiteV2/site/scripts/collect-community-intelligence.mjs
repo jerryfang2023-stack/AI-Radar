@@ -1,4 +1,5 @@
 import { chromium } from "playwright";
+import { isMainModule } from "../../../agent-workflow/tools/lib/module-entry.mjs";
 import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -790,8 +791,7 @@ async function main() {
   } finally { await browser?.close(); }
 }
 
-const isDirectRun = process.argv[1]
-  && path.resolve(process.argv[1]).toLowerCase() === path.resolve(fileURLToPath(import.meta.url)).toLowerCase();
+const isDirectRun = isMainModule(import.meta.url);
 
 if (isDirectRun) {
   main().catch((error) => {

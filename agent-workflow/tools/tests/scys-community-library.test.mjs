@@ -1,10 +1,31 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
+import os from "node:os";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+import { spawnSync } from "node:child_process";
 import { buildLibrary } from "../build-scys-community-library.mjs";
 const model = globalThis.ScysCommunityModel;
 const link = { href: "https://my.feishu.cn/wiki/CompleteAddress?from=from_copylink", text: "交付流程" };
 const post = { id: "a", source: "scys", url: "https://scys.com/articleDetail/xq_topic/123", title: "AI 交付复盘", bodyRef: "evidence://test", links: [link] };
+
+test("community CLI executes through a relocated directory junction instead of silently succeeding", () => {
+  const temporary = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-entry-"));
+  const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../..");
+  const alias = path.join(temporary, "relocated-repo");
+  try {
+    fs.symlinkSync(root, alias, process.platform === "win32" ? "junction" : "dir");
+    const result = spawnSync(process.execPath, [path.join(alias, "agent-workflow/tools/build-scys-community-library.mjs"), "--check"], {
+      cwd: temporary, encoding: "utf8", timeout: 15000,
+    });
+    assert.equal(result.status, 1, "missing inputs must fail; zero would mean the CLI never ran");
+    assert.match(result.stderr, /ENOENT/);
+  } finally {
+    if (fs.existsSync(alias)) fs.unlinkSync(alias);
+    fs.rmSync(temporary, { recursive: true, force: true });
+  }
+});
 
 test("historical SCYS library preserves resources when a later snapshot returns no links", () => {
   const data = buildLibrary([

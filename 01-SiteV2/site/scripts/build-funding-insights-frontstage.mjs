@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { isMainModule } from "../../../agent-workflow/tools/lib/module-entry.mjs";
 import crypto from "node:crypto";
 import { fundingCompanyDisplayName } from "../../../agent-workflow/tools/funding-company-display-v1.mjs";
 import { chinaFundingActorEvidence } from "../../../agent-workflow/tools/lib/china-market-v1.mjs";
@@ -704,4 +705,4 @@ export function writeFundingInsightsFrontstage(projectRoot = root) {
   return data;
 }
 
-if (path.resolve(process.argv[1] || "") === fileURLToPath(import.meta.url)) writeFundingInsightsFrontstage(root);
+if (isMainModule(import.meta.url)) writeFundingInsightsFrontstage(root);

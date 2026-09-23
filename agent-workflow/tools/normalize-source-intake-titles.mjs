@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { isMainModule } from "./lib/module-entry.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -88,7 +89,7 @@ export function normalizeSourceIntakeTitles(root, date) {
   };
 }
 
-if (process.argv[1] && path.resolve(process.argv[1]) === modulePath) {
+if (isMainModule(import.meta.url)) {
   const date = process.argv.find((value) => value.startsWith("--date="))?.slice("--date=".length) || "";
   console.log(JSON.stringify({ ok: true, ...normalizeSourceIntakeTitles(projectRoot, date) }, null, 2));
 }

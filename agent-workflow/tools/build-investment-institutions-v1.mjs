@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { isMainModule } from "./lib/module-entry.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -26,7 +27,7 @@ export function writeInvestmentInstitutionRegistry(projectRoot = defaultRoot) {
   return { output, registry };
 }
 
-if (path.resolve(process.argv[1] || "") === __filename) {
+if (isMainModule(import.meta.url)) {
   const { output, registry } = writeInvestmentInstitutionRegistry();
   console.log(JSON.stringify({
     ok: true,

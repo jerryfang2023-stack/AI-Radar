@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { isMainModule } from "./lib/module-entry.mjs";
 
 import crypto from "node:crypto";
 import fs from "node:fs";
@@ -290,6 +291,6 @@ export function projectFundingTaxonomy(rootDir = root) {
   };
 }
 
-if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+if (isMainModule(import.meta.url)) {
   console.log(JSON.stringify({ ok: true, ...projectFundingTaxonomy() }, null, 2));
 }

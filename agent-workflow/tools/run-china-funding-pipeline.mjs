@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { isMainModule } from "./lib/module-entry.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
@@ -185,4 +186,4 @@ function main() {
   if (failed) { console.error(failed.message); process.exitCode = 1; }
 }
 
-if (path.resolve(process.argv[1] || "") === fileURLToPath(import.meta.url)) main();
+if (isMainModule(import.meta.url)) main();

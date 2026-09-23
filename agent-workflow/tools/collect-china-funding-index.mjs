@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { isMainModule } from "./lib/module-entry.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
@@ -92,7 +93,7 @@ export async function collectIndex({ root, from, to, date, fetchPage = page, max
   console.log(JSON.stringify({ cases: cases.length, companies: companies.length, with_candidates: cases.filter((row) => row.original_candidates.length).length, boundary }));
   return output;
 }
-if (path.resolve(process.argv[1] || "") === fileURLToPath(import.meta.url)) {
+if (isMainModule(import.meta.url)) {
   const args = new Map(process.argv.slice(2).map((arg) => arg.replace(/^--/u, "").split("=")));
   const date = args.get("date") || new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Shanghai" }).format(new Date());
   await collectIndex({ root: process.cwd(), from: args.get("from") || "2026-01-01", to: args.get("to") || date, date });

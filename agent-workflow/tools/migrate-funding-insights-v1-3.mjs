@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { isMainModule } from "./lib/module-entry.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -36,6 +37,6 @@ export function migrateFundingInsightBundles(projectRoot = root, shouldWrite = f
   return { files: files.length, cards, write: shouldWrite, schema_version: FUNDING_INSIGHT_VERSION };
 }
 
-if (path.resolve(process.argv[1] || "") === __filename) {
+if (isMainModule(import.meta.url)) {
   console.log(JSON.stringify(migrateFundingInsightBundles(root, write), null, 2));
 }

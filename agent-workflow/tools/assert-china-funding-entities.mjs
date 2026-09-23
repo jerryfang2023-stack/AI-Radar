@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { isMainModule } from "./lib/module-entry.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
@@ -74,7 +75,7 @@ export function assertChinaFundingEntities(root = process.cwd(), { requirePrivat
   return report;
 }
 
-if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+if (isMainModule(import.meta.url)) {
   const report = assertChinaFundingEntities(process.cwd(), { requirePrivateEvidence: process.argv.includes("--require-private-evidence"), writeHealth: process.argv.includes("--write-health") });
   console.log(JSON.stringify({ ok: true, ...report, deferred_people: report.deferred_people.length, deferred_companies: report.deferred_companies.length }, null, 2));
 }

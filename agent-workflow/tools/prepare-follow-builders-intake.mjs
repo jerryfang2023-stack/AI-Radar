@@ -1,4 +1,5 @@
 import { execFile } from "node:child_process";
+import { isMainModule } from "./lib/module-entry.mjs";
 import { promisify } from "node:util";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
@@ -45,7 +46,7 @@ export async function prepareBuilderIntake({ load = fetchBuilderFeed, now = () =
   return output;
 }
 
-if (path.resolve(process.argv[1] || "") === fileURLToPath(import.meta.url)) {
+if (isMainModule(import.meta.url)) {
   prepareBuilderIntake().then(data => console.log(JSON.stringify(data))).catch(error => {
     console.error(error.message); process.exitCode = 1;
   });

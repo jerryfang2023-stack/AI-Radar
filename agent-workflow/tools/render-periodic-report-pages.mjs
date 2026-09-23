@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { isMainModule } from "./lib/module-entry.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -589,4 +590,4 @@ function main() {
   console.log(JSON.stringify({ ok: true, kind, date, route, source, target }, null, 2));
 }
 
-if (path.resolve(process.argv[1] || "") === fileURLToPath(import.meta.url)) main();
+if (isMainModule(import.meta.url)) main();

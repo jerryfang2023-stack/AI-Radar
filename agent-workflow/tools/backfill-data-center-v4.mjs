@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { isMainModule } from "./lib/module-entry.mjs";
 
 import fs from "node:fs";
 import path from "node:path";
@@ -142,7 +143,7 @@ function main() {
   }, null, 2));
 }
 
-if (process.argv[1] && path.resolve(process.argv[1]) === __filename) {
+if (isMainModule(import.meta.url)) {
   try {
     main();
   } catch (error) {

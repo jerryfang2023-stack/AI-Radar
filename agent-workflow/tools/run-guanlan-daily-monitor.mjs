@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { isMainModule } from "./lib/module-entry.mjs";
 import path from "node:path";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
@@ -6410,7 +6411,7 @@ async function main() {
   );
 }
 
-if (import.meta.url === pathToFileURL(process.argv[1] || "").href) {
+if (isMainModule(import.meta.url)) {
   (querySelectionFixtureMode
     ? runQuerySelectionRegressionFixtures()
     : rssIngestionFixtureMode

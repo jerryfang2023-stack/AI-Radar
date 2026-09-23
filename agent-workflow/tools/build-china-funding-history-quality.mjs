@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { isMainModule } from "./lib/module-entry.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -85,7 +86,7 @@ export function buildHistoryQuality(root, from = "2026-01-01", to = "2026-09-12"
   console.log(JSON.stringify(result.totals));
   return result;
 }
-if (path.resolve(process.argv[1] || "") === fileURLToPath(import.meta.url)) {
+if (isMainModule(import.meta.url)) {
   const args = new Map(process.argv.slice(2).map((arg) => arg.replace(/^--/u, "").split("=")));
   buildHistoryQuality(process.cwd(), args.get("from") || "2026-01-01", args.get("to") || "2026-09-12", args.get("date") || "2026-09-12");
 }

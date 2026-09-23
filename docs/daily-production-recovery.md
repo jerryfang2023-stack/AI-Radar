@@ -43,6 +43,15 @@ despite a failed outcome.
 
 ## Preserve operational state
 
+After a workspace migration, Windows directory junctions can preserve an old
+invocation path while Node resolves the module to its new physical path.
+Production CLI entry guards must use `lib/module-entry.mjs`, which compares
+real paths, rather than comparing `process.argv[1]` with a module URL as strings.
+Otherwise collection, generation and gates can exit zero without running.
+The community CLI junction regression and runtime entry-identity tests cover
+both direct execution and import-only behavior on Windows and Linux. A zero
+exit code still needs a fresh dated output/gate before publication is accepted.
+
 After rebuilding collection telemetry, rebuild the OPS console projection before
 staging. Its embedded telemetry metadata must exactly match the accepted telemetry
 file, including the generation timestamp. `test:ops-unified` runs in both PR CI

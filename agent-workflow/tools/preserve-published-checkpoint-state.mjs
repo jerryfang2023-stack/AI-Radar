@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { isMainModule } from "./lib/module-entry.mjs";
 import fs from "node:fs";
 import { execFileSync } from "node:child_process";
 import { pathToFileURL } from "node:url";
@@ -35,4 +36,4 @@ function main() {
   console.log(JSON.stringify({ ok: true, published_ref: ref, taxonomy_decisions: restored.decisions.length, source_locators: sources.length }));
 }
 
-if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) main();
+if (isMainModule(import.meta.url)) main();

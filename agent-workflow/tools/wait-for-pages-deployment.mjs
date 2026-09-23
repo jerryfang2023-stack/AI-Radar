@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { isMainModule } from "./lib/module-entry.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -45,6 +46,6 @@ async function main() {
   throw new Error(`No successful Pages deployment contains ${sourceSha}; portal publication remains unverified.`);
 }
 
-if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+if (isMainModule(import.meta.url)) {
   main().catch((error) => { console.error(error.message); process.exitCode = 1; });
 }

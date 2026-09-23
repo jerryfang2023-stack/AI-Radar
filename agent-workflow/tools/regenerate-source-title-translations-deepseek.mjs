@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { isMainModule } from "./lib/module-entry.mjs";
 
 import fs from "node:fs";
 import path from "node:path";
@@ -50,7 +51,7 @@ export async function regenerateSourceTitleTranslations({
   return { eligible: targets.length, regenerated: results.length, written: Boolean(write && results.length) };
 }
 
-if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+if (isMainModule(import.meta.url)) {
   const valueFor = (name, fallback = "") => process.argv.find((item) => item.startsWith(`--${name}=`))?.slice(name.length + 3) || fallback;
   const write = valueFor("write", "false") === "true";
   if (write && !process.env.DEEPSEEK_API_KEY) throw new Error("DEEPSEEK_API_KEY is required");

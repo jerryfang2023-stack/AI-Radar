@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { isMainModule } from "./lib/module-entry.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
@@ -240,4 +241,4 @@ function runCli() {
   console.log(`Skill Store dashboard contract passed: ${result.summary.skills} skills.`);
 }
 
-if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) runCli();
+if (isMainModule(import.meta.url)) runCli();

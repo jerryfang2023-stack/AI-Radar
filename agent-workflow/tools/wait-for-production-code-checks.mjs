@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { isMainModule } from "./lib/module-entry.mjs";
 import { spawnSync } from "node:child_process";
 import { pathToFileURL } from "node:url";
 
@@ -51,6 +52,6 @@ async function main() {
   throw new Error("Production CI missing or unfinished after 15 minutes; an empty check list is not success. Inspect the PR token/workflow trigger; do not recollect sources.");
 }
 
-if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+if (isMainModule(import.meta.url)) {
   main().catch((error) => { console.error(error.message); process.exitCode = 1; });
 }

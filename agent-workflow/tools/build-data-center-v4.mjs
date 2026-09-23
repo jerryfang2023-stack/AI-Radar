@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { isMainModule } from "./lib/module-entry.mjs";
 
 import crypto from "crypto";
 import fs from "fs";
@@ -2594,7 +2595,7 @@ function main() {
   console.log(JSON.stringify({ ok: true, date, output: rel(destination), counts: bundle.manifest.counts, forbidden_field_hits: bundle.manifest.forbidden_field_hits }, null, 2));
 }
 
-if (process.argv[1] && path.resolve(process.argv[1]) === __filename) {
+if (isMainModule(import.meta.url)) {
   try {
     main();
   } catch (error) {

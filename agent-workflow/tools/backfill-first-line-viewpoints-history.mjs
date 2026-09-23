@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { isMainModule } from "./lib/module-entry.mjs";
 import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
@@ -297,4 +298,4 @@ export function mergeApprovedHistory(current = [], previous = []) {
     || String(b.createdAt).localeCompare(String(a.createdAt)) || a.url.localeCompare(b.url));
 }
 
-if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) await main();
+if (isMainModule(import.meta.url)) await main();

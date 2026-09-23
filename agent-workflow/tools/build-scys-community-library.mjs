@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { isMainModule } from "./lib/module-entry.mjs";
 import { updateDirections } from "./build-scys-startup-directions.mjs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -56,6 +57,6 @@ export function buildScysLibrary(root = process.cwd(), { check = false } = {}) {
   const directions = updateDirections(root, result, { check });
   return { directions, missingOriginalLinks: result.meta.missingOriginalLinks, items: result.items.length, resources: result.resources.length, snapshots: snapshots.length };
 }
-if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+if (isMainModule(import.meta.url)) {
   console.log(JSON.stringify({ ok: true, ...buildScysLibrary(process.cwd(), { check: process.argv.includes("--check") }) }));
 }

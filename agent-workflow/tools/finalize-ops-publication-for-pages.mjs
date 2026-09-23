@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { isMainModule } from "./lib/module-entry.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import { V3_RETIRED_COMPATIBILITY } from "./lib/collection-telemetry-v1.mjs";
@@ -97,7 +98,7 @@ export function finalizeOpsPublicationData({
   return evidence;
 }
 
-const isDirectRun = process.argv[1] && path.resolve(process.argv[1]) === path.resolve(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z]:)/u, "$1"));
+const isDirectRun = isMainModule(import.meta.url);
 if (isDirectRun) {
   const args = new Map(process.argv.slice(2).map((arg) => {
     const [key, ...rest] = arg.replace(/^--/u, "").split("=");
