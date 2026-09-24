@@ -5,13 +5,13 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-09-23T02:43:17.330Z",
+    "generated_at": "2026-09-24T00:41:11.756Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 495,
-    "input_hash": "fad3a291e1e2a623",
+    "decision_count": 500,
+    "input_hash": "6167b5b9b77c7301",
     "override_count": 18,
     "needs_review_count": 55,
     "low_confidence_count": 76
@@ -9905,6 +9905,101 @@
       "confidence": 0.85,
       "needs_review": false,
       "rationale": "Snorkel AI 为 AI 实验室和企业提供训练数据集与模拟环境，属于为其他 AI 产品构建者供应数据的基础设施层；其数据即服务以合成数据与专家混合方式生成，故归入 infrastructure_compute > data > synthetic_data。"
+    },
+    {
+      "event_id": "EV-0d0b83c319d971b0",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "industrials",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "productivity_enterprise_workflows",
+        "data_analysis"
+      ],
+      "industry_ids": [
+        "energy_utilities",
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.82,
+      "needs_review": false,
+      "rationale": "达卯科技提供算电协同与AI虚拟电厂平台，属于面向能源运营的企业级软件平台，核心应用在能源/算力基础设施运营场景，因此归入行业应用-工业，产品形态为企业软件平台。"
+    },
+    {
+      "event_id": "EV-3c86fb0161715336",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "息壤开物 is developing a Large Physics Model (LPM) for robots and physical AI scenarios, which is a foundation model. The company also provides data and evaluation platforms for physical AI development. The core offering is a model, not a deployed robot or autonomous machine, so it is classified under infrastructure_compute > development_deployment > models. The use case is physical_automation, and the primary industry is manufacturing. Target users are developers building physical AI systems."
+    },
+    {
+      "event_id": "EV-71d477e3af99ef9a",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "息壤开物（XIRRA）自研物理基础模型LPM，面向机器人等物理智能场景，属于基础设施层的模型开发，产品形态为模型，主要用例为物理自动化，目标用户为开发者。"
+    },
+    {
+      "event_id": "EV-0f2e50fbc9af587a",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "chips",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "公司核心产品为UWB SoC芯片，属于为其他AI/物联网产品提供底层硬件算力或感知能力的芯片基础设施，符合infrastructure_compute > hardware_computing > chips的边界。"
+    },
+    {
+      "event_id": "EV-3ca24f79062a359e",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "chips",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "automotive_transportation",
+        "manufacturing",
+        "retail_ecommerce"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "驰芯半导体专注于UWB芯片研发与销售，产品已量产并应用于消费电子、物联网、汽车电子和工业市场。UWB芯片属于硬件计算芯片，因此市场层级为infrastructure_compute/hardware_computing/chips。产品形式为chip_accelerator。UWB用于高精度空间感知，支持物理世界智能化，主要用例为physical_automation。行业覆盖汽车、制造和消费零售等。目标用户以企业客户为主。"
     }
   ]
 }

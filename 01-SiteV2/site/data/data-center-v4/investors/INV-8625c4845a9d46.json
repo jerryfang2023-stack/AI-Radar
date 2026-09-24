@@ -1,0 +1,143 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-24T00:41:23.865Z",
+    "latestDataDate": "2026-09-24",
+    "currentDate": "2026-09-24",
+    "eventCount": 3527,
+    "quarantinedEventCount": 37,
+    "quarantinedEventIds": [
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-cab18aa68c8ae551",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "institution": {
+    "id": "INV-8625c4845a9d46",
+    "name": "鸿石资本",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-09-23",
+    "latest_disclosed_at": "2026-09-23",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-6c71057b48f1758f",
+        "funding_insight_id": "FI-86634a7717d63426",
+        "event_ids": [
+          "EV-3ca24f79062a359e",
+          "EV-0f2e50fbc9af587a"
+        ],
+        "company_entity_id": "EN-73c2f5aa8e632c19",
+        "company_canonical_entity_id": "",
+        "company_name": "驰芯半导体",
+        "round": "A+轮",
+        "round_code": "series_a_plus",
+        "round_original": "A+轮",
+        "amount_original": "亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿元–10 亿元"
+        },
+        "announced_at": "2026-09-23",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A轮投资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-d7c3cbdfafeaf4fc",
+            "source_url": "https://m.jobui.com/company/16905688/financing/",
+            "source_title": "登录 - 职友集",
+            "source_content_hash": "9d7575ba7af1f209",
+            "quote": "Pre-A轮，1亿人民币 2022.10.01，惠友资本，上海驭快，鸿石资本",
+            "quote_hash": "c45b85546ad6f32730d3ddda7e98c94fecdb1521293edd70edf5a64509313071"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-d7c3cbdfafeaf4fc",
+        "source_url": "https://m.jobui.com/company/16905688/financing/",
+        "source_title": "登录 - 职友集",
+        "source_content_hash": "9d7575ba7af1f209",
+        "quote": "Pre-A轮，1亿人民币 2022.10.01，惠友资本，上海驭快，鸿石资本",
+        "quote_hash": "c45b85546ad6f32730d3ddda7e98c94fecdb1521293edd70edf5a64509313071"
+      }
+    ],
+    "translations": {
+      "zh-CN": {
+        "activities[0].role": {
+          "text": "Pre-A轮投资",
+          "source_hash": "7abbbca79efc5a8a08134a3b9ea7d36b9cb1bfeadfb8a3d18d078876daa8636c",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-24T00:40:30.690Z",
+          "status": "translated"
+        }
+      }
+    }
+  }
+}

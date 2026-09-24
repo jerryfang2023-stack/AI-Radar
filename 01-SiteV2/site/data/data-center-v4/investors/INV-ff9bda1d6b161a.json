@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-23T02:44:38.147Z",
-    "latestDataDate": "2026-09-23",
-    "currentDate": "2026-09-23",
-    "eventCount": 3519,
+    "generatedAt": "2026-09-24T00:41:23.865Z",
+    "latestDataDate": "2026-09-24",
+    "currentDate": "2026-09-24",
+    "eventCount": 3527,
     "quarantinedEventCount": 37,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -59,20 +59,21 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 5,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 3,
     "china_market_company_count": 3,
     "first_disclosed_at": "2026-03-05",
-    "latest_disclosed_at": "2026-09-15",
+    "latest_disclosed_at": "2026-09-23",
     "role_counts": {
       "historical_or_ambiguous": 5,
       "other_current_round": 1,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "multi_round",
@@ -94,9 +95,55 @@
         "entity_id": "EN-60d2cc785c19e818",
         "canonical_entity_id": "EN-60d2cc785c19e818",
         "name": "三启万物"
+      },
+      {
+        "entity_id": "EN-67895119a5182d06",
+        "canonical_entity_id": "",
+        "name": "息壤开物"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-dd2cab241b717eaa",
+        "funding_insight_id": "FI-a2fd2365924904e7",
+        "event_ids": [
+          "EV-3c86fb0161715336",
+          "EV-71d477e3af99ef9a"
+        ],
+        "company_entity_id": "EN-67895119a5182d06",
+        "company_canonical_entity_id": "",
+        "company_name": "息壤开物",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-09-23",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-41f074703465b30a",
+            "source_url": "https://m.pedaily.cn/news/569562",
+            "source_title": "Physical AI创业公司息壤开物连获数亿元融资 AI 2026-09-23 16:38",
+            "source_content_hash": "5f3fdf302b68696b",
+            "quote": "由 敦鸿资产领投，华控基金、三花控股、银杏谷资本、泽然资本、本坚基金、上海天使会、标朴投资等知名机构跟投",
+            "quote_hash": "dd477a61ea1ba275edd33cd5c862253fc7e7e35e1a91cdb31079479ed163154e"
+          }
+        ]
+      },
       {
         "activity_id": "IA-50b4fabe48d529e3",
         "funding_insight_id": "FI-8acd5314a46c6068",
@@ -429,6 +476,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-41f074703465b30a",
+        "source_url": "https://m.pedaily.cn/news/569562",
+        "source_title": "Physical AI创业公司息壤开物连获数亿元融资 AI 2026-09-23 16:38",
+        "source_content_hash": "5f3fdf302b68696b",
+        "quote": "由 敦鸿资产领投，华控基金、三花控股、银杏谷资本、泽然资本、本坚基金、上海天使会、标朴投资等知名机构跟投",
+        "quote_hash": "dd477a61ea1ba275edd33cd5c862253fc7e7e35e1a91cdb31079479ed163154e"
+      },
       {
         "source_id": "FISRC-d0c3dca85d845330",
         "source_url": "https://news.pedaily.cn/202609/569015.shtml",

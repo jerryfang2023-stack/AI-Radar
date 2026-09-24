@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-23T02:44:38.147Z",
-    "latestDataDate": "2026-09-23",
-    "currentDate": "2026-09-23",
-    "eventCount": 3519,
+    "generatedAt": "2026-09-24T00:41:23.865Z",
+    "latestDataDate": "2026-09-24",
+    "currentDate": "2026-09-24",
+    "eventCount": 3527,
     "quarantinedEventCount": 37,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -18446,42 +18446,29 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-09-23",
-      "funnel_id": "LF-4e7a1a0629483e45",
+      "data_date": "2026-09-24",
+      "funnel_id": "LF-47acbacdbbdcb135",
       "lens": "hardware",
-      "date": "2026-09-23",
-      "monitoring_paths": [
-        "hardware_capacity_fab",
-        "hardware_capex",
-        "hardware_oem_odm",
-        "hardware_product_specs",
-        "hardware_shipment_deployment",
-        "hardware_supply_agreement"
-      ],
-      "raw_documents": 38,
-      "original_sources": 34,
-      "valid_claims": 7,
-      "observations": 3,
-      "canonical_events": 4,
+      "date": "2026-09-24",
+      "monitoring_paths": [],
+      "raw_documents": 11,
+      "original_sources": 11,
+      "valid_claims": 4,
+      "observations": 0,
+      "canonical_events": 3,
       "blocker_counts": {
-        "event_not_ai_relevant": 5,
-        "source_outside_daily_window": 10,
-        "no_source_bounded_claim": 1,
         "rumor_requires_primary_confirmation": 1,
-        "raw_source_quality_block": 9,
-        "homepage_requires_original_event_source": 1,
-        "non_event_or_index_title": 1,
-        "no_source_bounded_event": 4,
-        "multi_event_roundup_not_single_event_source": 1,
-        "industry_overview_not_event_source": 1
+        "domestic_publication_date_unverified": 2,
+        "source_outside_daily_window": 2,
+        "event_not_ai_relevant": 3
       },
       "rates": {
-        "original_source_rate": 0.8947368421052632,
-        "valid_claim_rate": 0.18421052631578946,
-        "observation_rate": 0.42857142857142855,
-        "event_conversion_rate": 0.5714285714285714
+        "original_source_rate": 1,
+        "valid_claim_rate": 0.36363636363636365,
+        "observation_rate": 0,
+        "event_conversion_rate": 0.75
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-23/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-24/monitoring-funnel.json"
     }
   ]
 }

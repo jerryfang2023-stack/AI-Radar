@@ -1,16 +1,53 @@
 {
   "schema_version": "model-assist-2026-07-18.2",
-  "generated_at": "2026-09-23T00:26:53.473Z",
+  "generated_at": "2026-09-24T00:38:38.201Z",
   "dates": [
-    "2026-09-23"
+    "2026-09-24"
   ],
-  "raw_documents_scanned": 248,
-  "scanned_jobs": 50,
+  "raw_documents_scanned": 86,
+  "scanned_jobs": 34,
   "reuse_existing": true,
   "reused_jobs": 0,
   "regated_existing": 0,
   "offset": 0,
-  "selected_jobs": 50,
-  "completed": 50,
-  "failures": []
+  "selected_jobs": 34,
+  "completed": 28,
+  "failures": [
+    {
+      "date": "2026-09-24",
+      "task_type": "qa_repair",
+      "asset_id": "QA-0d16068c46d8b55f",
+      "error": "deepseek_json_quality_failed:qa_suggestion_incomplete"
+    },
+    {
+      "date": "2026-09-24",
+      "task_type": "qa_repair",
+      "asset_id": "QA-0fe9045a45fd238f",
+      "error": "deepseek_json_quality_failed:qa_suggestion_incomplete"
+    },
+    {
+      "date": "2026-09-24",
+      "task_type": "qa_repair",
+      "asset_id": "QA-2de291461a99b276",
+      "error": "deepseek_json_quality_failed:qa_suggestion_incomplete"
+    },
+    {
+      "date": "2026-09-24",
+      "task_type": "qa_repair",
+      "asset_id": "QA-5265728b053d9aea",
+      "error": "deepseek_json_quality_failed:qa_suggestion_incomplete"
+    },
+    {
+      "date": "2026-09-24",
+      "task_type": "qa_repair",
+      "asset_id": "QA-88c75168c6b19e40",
+      "error": "deepseek_json_quality_failed:qa_suggestion_incomplete"
+    },
+    {
+      "date": "2026-09-24",
+      "task_type": "qa_repair",
+      "asset_id": "QA-fb173c7e2ebb576d",
+      "error": "deepseek_json_quality_failed:qa_suggestion_incomplete"
+    }
+  ]
 }

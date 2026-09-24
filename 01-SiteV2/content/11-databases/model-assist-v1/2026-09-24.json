@@ -1,0 +1,1695 @@
+{
+  "schema_version": "MODEL-ASSIST-V1.0",
+  "generated_at": "2026-09-24T00:38:38.200Z",
+  "data_date": "2026-09-24",
+  "prompt_version": "model-assist-2026-07-18.2",
+  "source_count": 86,
+  "candidates": [
+    {
+      "candidate_id": "MAC-1ac425370f169959",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-ab929d40406ae0a2",
+      "raw_id": "RAW-a92cc3269c7182f1",
+      "source_ref": "SA-75024ad5d81b1de9",
+      "source_hash": "66476a4e28a4b1be",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "嵌化合生",
+            "object": "数千万人民币Pre-A轮融资",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "capital_investment",
+            "subject": "道远资本",
+            "object": "嵌化合生",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "capital_investment",
+            "subject": "成都科创投",
+            "object": "嵌化合生",
+            "evidence_index": 1
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 97,
+          "end": 116,
+          "quote": "近日完成 数千万人民币Pre-A轮融资"
+        },
+        {
+          "start": 118,
+          "end": 134,
+          "quote": "由 道远资本领投，成都科创投跟投"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-24T00:37:18.011Z"
+    },
+    {
+      "candidate_id": "MAC-1f49418b2ee74133",
+      "task_type": "qa_repair",
+      "asset_id": "QA-42a0173f1d239b02",
+      "raw_id": "RAW-42e9fa2c4734c4da",
+      "source_ref": "SA-52e6a87d0260b1b9",
+      "source_hash": "ee0037375125b3de",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source contains a concrete AI-relevant funding event for a satellite communications company.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "星移联信",
+            "object": "A+轮及A++轮融资",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 89,
+          "end": 125,
+          "quote": "星移联信宣布连续 完成A+轮及A++轮融资 ， 两轮合计融资额数亿元 。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-24T00:37:39.180Z"
+    },
+    {
+      "candidate_id": "MAC-2ce06c2579fd82c4",
+      "task_type": "qa_repair",
+      "asset_id": "QA-91d1e2cc85fcf8bc",
+      "raw_id": "RAW-2fe9af83c560d133",
+      "source_ref": "SA-4e1787e2f2ca10c9",
+      "source_hash": "1558f974064928ef",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "recollect_original",
+        "reason": "The source text describes a funding round for 宜锂科技, a lithium technology company, which is not an AI industry event.",
+        "claims": []
+      },
+      "evidence": [
+        {
+          "start": 519,
+          "end": 532,
+          "quote": "宜锂科技完成数亿元A轮融资"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-24T00:37:47.455Z"
+    },
+    {
+      "candidate_id": "MAC-2ee8118cc626654c",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-e1088f74ec74d02f",
+      "raw_id": "RAW-58a9992e2dabcefb",
+      "source_ref": "SA-3a993a4397974e0d",
+      "source_hash": "94b7e4689b9e1076",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "financial_performance",
+            "subject": "全球AI市场融资额",
+            "object": "2025年全年的1.7倍",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "capital_investment",
+            "subject": "峰瑞资本",
+            "object": "AI领域",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "capital_investment",
+            "subject": "中科创星",
+            "object": "智元机器人",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 1,
+          "end": 35,
+          "quote": "2026年上半年，全球AI市场融资额已超过2025年全年的1.7倍。"
+        },
+        {
+          "start": 517,
+          "end": 554,
+          "quote": "从整个基金的投资策略角度，我相信5年后会有90%以上的资本投入到AI领域。"
+        },
+        {
+          "start": 1283,
+          "end": 1315,
+          "quote": "中科创星自2023年上半年开始布局具身智能，最早投资了智元机器人"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-24T00:37:20.124Z"
+    },
+    {
+      "candidate_id": "MAC-31576a38ee2a628d",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-ea80f78af5618947",
+      "raw_id": "RAW-9e98384dcf7e3c78",
+      "source_ref": "SA-e7edea17e031c44d",
+      "source_hash": "7d88e25d31f8ca07",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "星测未来",
+            "object": "A+、A++两轮累计数亿元融资",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "capital_investment",
+            "subject": "北创投、华映资本、新尚资本、新鼎资本、江苏康华集团、匀升资本、晨峰基石、海南见月、君一资本、惠丰达等多家知名产业及财务投资机构",
+            "object": "星测未来",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "capital_investment",
+            "subject": "锡创投、厚天资本",
+            "object": "星测未来",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 32,
+          "end": 57,
+          "quote": "星测未来正式宣布完成A+、A++两轮累计数亿元融资"
+        },
+        {
+          "start": 58,
+          "end": 130,
+          "quote": "本轮融资由北创投、华映资本、新尚资本、新鼎资本、江苏康华集团、匀升资本、晨峰基石、海南见月、君一资本、惠丰达等多家知名产业及财务投资机构联合投资"
+        },
+        {
+          "start": 131,
+          "end": 148,
+          "quote": "老股东锡创投、厚天资本持续加码追投"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-24T00:37:21.799Z"
+    },
+    {
+      "candidate_id": "MAC-392ff59ea78f0c8c",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-f95d5af831e91b94",
+      "raw_id": "RAW-dd0ac3fd32598bb1",
+      "source_ref": "SA-5213b3868aacdbe6",
+      "source_hash": "550b7a5ba4540998",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "SenseTime",
+        "rationale": "The quote mentions 商汤科技 as one of the shareholders of 达卯科技, which is a shareholder relationship, not evidence that the candidate mention refers to the same entity as SenseTime.",
+        "candidate_name": "SenseTime"
+      },
+      "evidence": [
+        {
+          "start": 392,
+          "end": 426,
+          "quote": "目前，达卯科技股东阵容包含宁德时代、商汤科技、寒武纪等产业链龙头企业"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-24T00:37:26.771Z"
+    },
+    {
+      "candidate_id": "MAC-41ce214a806a74d4",
+      "task_type": "qa_repair",
+      "asset_id": "QA-3514295af7af6c7f",
+      "raw_id": "RAW-8e93b616a5c54fbc",
+      "source_ref": "SA-8972a193c7df6f01",
+      "source_hash": "6a07e68ef7cf5635",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source text contains a concrete AI-relevant funding event for a company developing liquid metal battery technology for long-duration energy storage, including applications for computing centers.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "恒辉科源",
+            "object": "数千万元天使+轮融资",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 129,
+          "end": 178,
+          "quote": "恒辉科源宣布 完成数千万元天使+轮融资 ，投资方包括 江远资本、西安财金及西安航空城产业基金等机构"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-24T00:37:37.837Z"
+    },
+    {
+      "candidate_id": "MAC-427b7a93d0544c18",
+      "task_type": "qa_repair",
+      "asset_id": "QA-949658a3c34291c3",
+      "raw_id": "RAW-8cce6942cf2e21ac",
+      "source_ref": "SA-331416f26e441064",
+      "source_hash": "ab43bb442d20dda3",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source text contains a concrete AI-industry-relevant funding event for a medical device company.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "巴泰医疗",
+            "object": "中金资本旗下基金",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 109,
+          "end": 142,
+          "quote": "巴泰医疗宣布 完成D轮数千万元扩大融资 ，由 中金资本旗下基金投资"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-24T00:37:48.750Z"
+    },
+    {
+      "candidate_id": "MAC-491f06ec7c74d1cd",
+      "task_type": "qa_repair",
+      "asset_id": "QA-bb7e645bb48d7735",
+      "raw_id": "RAW-f89493917366afe7",
+      "source_ref": "SA-8946c3ea6447bbd9",
+      "source_hash": "9bfcd315a09db933",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source describes a concrete funding event for an AI-relevant RISC-V processor company.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "深圳奥维领芯科技有限公司",
+            "object": "Pre-A+轮融资",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 110,
+          "end": 149,
+          "quote": "奥维领芯正式宣布已于本月 完成Pre-A+轮融资全部资金交割， 金额 超2亿元"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-24T00:37:51.205Z"
+    },
+    {
+      "candidate_id": "MAC-5ae9534b5e64a62b",
+      "task_type": "qa_repair",
+      "asset_id": "QA-b6b2bdf3ca56f3a0",
+      "raw_id": "RAW-f3e9872080b2a8ea",
+      "source_ref": "SA-79debad56845c95c",
+      "source_hash": "8a800d6cf5f884ca",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source text contains a concrete AI industry funding event for 数巅智能.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "数巅智能",
+            "object": "数亿元融资",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "capital_investment",
+            "subject": "中国中车",
+            "object": "数巅智能",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "capital_investment",
+            "subject": "中石油昆仑资本",
+            "object": "数巅智能",
+            "evidence_index": 1
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 519,
+          "end": 530,
+          "quote": "数巅智能再获数亿元融资"
+        },
+        {
+          "start": 592,
+          "end": 639,
+          "quote": "此轮投资方包括中国中车、中石油昆仑资本、中关村科学城、镔鑫钢铁、迎驾贡酒、财鑫资本、深圳力合等"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-24T00:37:51.138Z"
+    },
+    {
+      "candidate_id": "MAC-5c61ed4e9e29a229",
+      "task_type": "qa_repair",
+      "asset_id": "QA-8db64a9d56c1c1bc",
+      "raw_id": "RAW-54e49fcdbc088498",
+      "source_ref": "SA-0def5193f8c225f3",
+      "source_hash": "5b38afb60be128bd",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source text describes a concrete funding event for Yitu Technology (弋途科技), including the amount, investors, and purpose.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "弋途科技",
+            "object": "Pre-B轮融资",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "capital_investment",
+            "subject": "上海半导体装备材料产业投资基金",
+            "object": "弋途科技",
+            "evidence_index": 2
+          },
+          {
+            "event_type": "capital_investment",
+            "subject": "Sands Talk Capital",
+            "object": "弋途科技",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 185,
+          "quote": "近日，弋途科技（EXTURING）正式宣布完成Pre-B轮融资，融资金额近亿元人民币。本轮融资由上海半导体装备材料产业投资基金（简称\"上海半导体\"）与 Sands Talk Capital（沙滩说资本）联合领投，深圳市九派资本管理有限公司（简称\"九派资本\"）、江苏金桥私募基金管理有限公司（简称\"江苏金桥\"）参投，老股东合肥市包河区科创基金（简称\"包河科创\"）持续加码。"
+        },
+        {
+          "start": 0,
+          "end": 43,
+          "quote": "近日，弋途科技（EXTURING）正式宣布完成Pre-B轮融资，融资金额近亿元人民币。"
+        },
+        {
+          "start": 43,
+          "end": 105,
+          "quote": "本轮融资由上海半导体装备材料产业投资基金（简称\"上海半导体\"）与 Sands Talk Capital（沙滩说资本）联合领投"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-24T00:37:46.865Z"
+    },
+    {
+      "candidate_id": "MAC-62945bcb1a9f1a9c",
+      "task_type": "qa_repair",
+      "asset_id": "QA-f1ff4b22dec73bcf",
+      "raw_id": "RAW-ead0385ffb939dfc",
+      "source_ref": "SA-7ff324a66589860d",
+      "source_hash": "1aca8588c90ea568",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source text contains a concrete AI-relevant event: the company will continue to increase investment in AI energy management platform R&D as part of its funding allocation.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "深圳闻储创新科技有限公司",
+            "object": "亿元级人民币融资",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "capital_investment",
+            "subject": "正轩投资",
+            "object": "闻储创新",
+            "evidence_index": 2
+          },
+          {
+            "event_type": "research_result",
+            "subject": "闻储创新",
+            "object": "AI能源管理平台研发",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 400,
+          "end": 440,
+          "quote": "此外，公司也将持续加码AI能源管理平台研发、海外渠道建设与本地化售后团队的强化。"
+        },
+        {
+          "start": 111,
+          "end": 126,
+          "quote": "闻储创新 完成亿元级人民币融资"
+        },
+        {
+          "start": 128,
+          "end": 140,
+          "quote": "本轮融资由 正轩投资领投"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-24T00:38:15.937Z"
+    },
+    {
+      "candidate_id": "MAC-851337da9d16a8b2",
+      "task_type": "qa_repair",
+      "asset_id": "QA-0ce3198de16398c6",
+      "raw_id": "RAW-29ac4069103b4ea8",
+      "source_ref": "SA-96949f0c49868652",
+      "source_hash": "b8f9e742469e0040",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "recollect_original",
+        "reason": "The source describes a medical device company's funding round and product developments, not an AI industry event.",
+        "claims": []
+      },
+      "evidence": [
+        {
+          "start": 123,
+          "end": 142,
+          "quote": "雾联医疗 正式宣布完成数千万元B轮融资"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-24T00:38:20.749Z"
+    },
+    {
+      "candidate_id": "MAC-9c39998632535b18",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-da62cdb872c48d92",
+      "raw_id": "RAW-aaffdfb45016c15d",
+      "source_ref": "SA-2adb58710f1364a7",
+      "source_hash": "56b4394991876fe4",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "欧卡智舶",
+            "object": "C轮融资",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "capital_investment",
+            "subject": "西高投",
+            "object": "欧卡智舶",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "financial_performance",
+            "subject": "欧卡智舶",
+            "object": "累计融资近3亿",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 92,
+          "end": 114,
+          "quote": "欧卡智舶已于2026年7月正式 完成C轮融资"
+        },
+        {
+          "start": 129,
+          "end": 152,
+          "quote": "本轮融资由 西高投领投，元禾璞华、三元资本跟投"
+        },
+        {
+          "start": 116,
+          "end": 128,
+          "quote": "本年度完成累计融资近3亿"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-24T00:37:19.249Z"
+    },
+    {
+      "candidate_id": "MAC-b0d601bc4170587e",
+      "task_type": "qa_repair",
+      "asset_id": "QA-171aa8988a898ea6",
+      "raw_id": "RAW-4ed6708555309c0d",
+      "source_ref": "SA-580e6e4256385d20",
+      "source_hash": "db01902b2600c3ea",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source text contains a concrete AI-relevant funding event for a company developing liquid metal battery technology for energy storage, including details about the funding amount, investors, and intended use of funds.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "恒辉科源（西安）新能源技术有限公司",
+            "object": "数千万元天使+轮融资",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 129,
+          "end": 178,
+          "quote": "恒辉科源宣布 完成数千万元天使+轮融资 ，投资方包括 江远资本、西安财金及西安航空城产业基金等机构"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-24T00:37:35.720Z"
+    },
+    {
+      "candidate_id": "MAC-b717c8f380221c3f",
+      "task_type": "qa_repair",
+      "asset_id": "QA-79fab4e360faa29c",
+      "raw_id": "RAW-2646823314fb6c9b",
+      "source_ref": "SA-d4cdcde918b5390a",
+      "source_hash": "cedcd37f9278c67a",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source text describes a concrete funding event for an AI-related company.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "时维感知",
+            "object": "奇绩创坛、零以创投和鹏晨投资",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 95,
+          "end": 134,
+          "quote": "时维感知已 完成数千万元天使轮融资 ，投资方包括 奇绩创坛、零以创投和鹏晨投资"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-24T00:37:42.961Z"
+    },
+    {
+      "candidate_id": "MAC-b7df47aa3e22550a",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-c3b4830e4b57d836",
+      "raw_id": "RAW-c2e8d54113bc9dd2",
+      "source_ref": "SA-a52a759076067e56",
+      "source_hash": "82828f6f16cd420b",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "它石智航顶尖",
+        "rationale": "The candidate canonical name '它石智航顶尖' does not exactly match the verified alternative '它石智航'. The source text refers to the company '它石智航' and its '顶尖研发团队', but '顶尖' is a descriptive adjective modifying the team, not part of the entity's official name. Therefore, the candidate mention does not refer to the verified alternative entity.",
+        "candidate_name": "它石智航顶尖"
+      },
+      "evidence": [
+        {
+          "start": 872,
+          "end": 899,
+          "quote": "它石智航已经组建起了一支硕博占比超80%的顶尖研发团队"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-24T00:37:24.068Z"
+    },
+    {
+      "candidate_id": "MAC-bd35595a4d205915",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-15a97b9b64afe05e",
+      "raw_id": "RAW-22d88243d664e9bc",
+      "source_ref": "SA-055a0cf2d3a08c0a",
+      "source_hash": "2896ab8dacb23e1a",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Anew Labs",
+            "object": "2.9亿美元融资",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "organization_restructuring",
+            "subject": "字节跳动",
+            "object": "Anew Labs",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "acquisition",
+            "subject": "Chan Zuckerberg Biohub",
+            "object": "EvolutionaryScale",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 43,
+          "quote": "9 月 16 日，一家名为Anew Labs的初创AI制药公司宣布完成2.9亿美元融资"
+        },
+        {
+          "start": 493,
+          "end": 575,
+          "quote": "时间回到3个月前，字节跳动把内部运行了5年的AI制药业务整体拆分出去，核心团队、算法平台与已有管线资产一并注入新主体，品牌定为Anew Labs，中文名新生实验室。"
+        },
+        {
+          "start": 2504,
+          "end": 2577,
+          "quote": "到了2025年11月，EvolutionaryScale被扎克伯格夫妇的慈善研究机构Chan Zuckerberg Biohub收购，公司整体并入"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-24T00:37:15.552Z"
+    },
+    {
+      "candidate_id": "MAC-cc5294d8bd138510",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-73c2f5aa8e632c19",
+      "raw_id": "RAW-e00ae576b32a89a5",
+      "source_ref": "SA-c6475d75cc6e8f01",
+      "source_hash": "03e6bfdfc45c129c",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "same_entity",
+        "canonical_name": "长沙驰芯半导体科技有限公司",
+        "rationale": "SOURCE_TEXT 开头明确写明“长沙驰芯半导体科技有限公司（以下简称“驰芯半导体”）”，该简称“驰芯半导体”与候选实体名称一致，且引文证明其指代的是同一家公司的全称。",
+        "candidate_name": "驰芯半导体"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 26,
+          "quote": "长沙驰芯半导体科技有限公司（以下简称“驰芯半导体”）"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-24T00:37:22.365Z"
+    },
+    {
+      "candidate_id": "MAC-d78b9a86951f2fe3",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-da6ed1e6ee3b0489",
+      "raw_id": "RAW-dd0ac3fd32598bb1",
+      "source_ref": "SA-5213b3868aacdbe6",
+      "source_hash": "550b7a5ba4540998",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Cambricon",
+        "rationale": "The quote mentions 寒武纪 as one of the shareholders of 达卯科技, indicating a shareholder relationship, not that the candidate entity itself is the subject of the text. Entity identity requires the mention to refer to the entity itself, not a relationship such as investor/shareholder.",
+        "candidate_name": "Cambricon"
+      },
+      "evidence": [
+        {
+          "start": 392,
+          "end": 426,
+          "quote": "目前，达卯科技股东阵容包含宁德时代、商汤科技、寒武纪等产业链龙头企业"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-24T00:37:24.688Z"
+    },
+    {
+      "candidate_id": "MAC-d8ac8c133916adfc",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-ef5cac7907b28194",
+      "raw_id": "RAW-bfcae45eb806440b",
+      "source_ref": "SA-9dabee305e16c0bd",
+      "source_hash": "63e11602c73bd776",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "达卯科技",
+        "rationale": "ENTITY_CANDIDATE 的 canonical_name 为“达卯科技”，而 VERIFIED_ALTERNATIVES 中仅包含“它石智航”。两者名称不同，且 SOURCE_TEXT 中关于“达卯科技”的引用并未证明其与“它石智航”为同一实体。文中“它石智航”仅出现在文末的无关文章标题列表中，与“达卯科技”无身份关联。",
+        "candidate_name": "达卯科技"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 27,
+          "quote": "达卯科技完成新一轮融资，算电协同核心软件层“稀缺标的”"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-24T00:37:26.552Z"
+    },
+    {
+      "candidate_id": "MAC-e41ff6bf6d724989",
+      "task_type": "fde_enrichment",
+      "asset_id": "FDE-0577244415a9270b",
+      "raw_id": "RAW-c2e8d54113bc9dd2",
+      "source_ref": "SA-a52a759076067e56",
+      "source_hash": "82828f6f16cd420b",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "fields": [
+          {
+            "field": "reported_need",
+            "value": "受制于劳动力结构变化与工艺复杂度，汽车总装、精密线束装配及精细零件上料等工序仍高度依赖人工，成为自动化升级难以越过的“最后一公里”。",
+            "evidence_index": 0
+          },
+          {
+            "field": "reported_delivery_components",
+            "value": [
+              "AWE具身智能基座大模型",
+              "A系列轮式机器人",
+              "T系列双足机器人",
+              "21自由度准直驱DexHand灵巧手"
+            ],
+            "evidence_index": 1
+          },
+          {
+            "field": "team_composition",
+            "value": "硕博占比超80%的顶尖研发团队",
+            "evidence_index": 2
+          },
+          {
+            "field": "reported_outcomes",
+            "value": [
+              "采集了超百万小时高质量真实人类操作数据",
+              "成功攻克精细操作、柔性物体处理、长程任务规划和泛化能力等工业难题",
+              "快速推进具身智能技术的规模化产线验证，让机器人实现了“真干活”"
+            ],
+            "evidence_index": 3
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 259,
+          "end": 325,
+          "quote": "受制于劳动力结构变化与工艺复杂度，汽车总装、精密线束装配及精细零件上料等工序仍高度依赖人工，成为自动化升级难以越过的“最后一公里”。"
+        },
+        {
+          "start": 643,
+          "end": 785,
+          "quote": "自主研发AWE具身智能基座大模型，成功攻克精细操作、柔性物体处理、长程任务规划和泛化能力等工业难题，为给机器人装上了“通用大脑”；其次，依托长三角强大的“一小时产业圈”，打造“为AI而生”的硬件和本体，包括自研的A系列轮式机器人、T系列双足机器人和21自由度准直驱DexHand灵巧手"
+        },
+        {
+          "start": 869,
+          "end": 900,
+          "quote": "目前，它石智航已经组建起了一支硕博占比超80%的顶尖研发团队。"
+        },
+        {
+          "start": 623,
+          "end": 832,
+          "quote": "采集了超百万小时高质量真实人类操作数据，自主研发AWE具身智能基座大模型，成功攻克精细操作、柔性物体处理、长程任务规划和泛化能力等工业难题，为给机器人装上了“通用大脑”；其次，依托长三角强大的“一小时产业圈”，打造“为AI而生”的硬件和本体，包括自研的A系列轮式机器人、T系列双足机器人和21自由度准直驱DexHand灵巧手；在上海专项政策的大力支持下，快速推进具身智能技术的规模化产线验证，让机器人实现了“真干活”。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-24T00:37:30.799Z"
+    },
+    {
+      "candidate_id": "MAC-e7af5c268259fd8b",
+      "task_type": "qa_repair",
+      "asset_id": "QA-d8ee447c06f737dc",
+      "raw_id": "RAW-d29134180cad6e4b",
+      "source_ref": "SA-d3018641173d59d1",
+      "source_hash": "07377a04252f3277",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "recollect_original",
+        "reason": "The source describes a medical device company's funding round and product development, not an AI industry event.",
+        "claims": []
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 96,
+          "quote": "苏州雾联医疗科技有限公司（以下简称\"雾联医疗”）是一家致力于创新医疗雾化技术的科技企业，专注于新型雾化技术的研发与整合，在颗粒气动直径、药物颗粒在肺部的有效沉积以及其他技术方面拥有丰富的经验。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-24T00:37:52.872Z"
+    },
+    {
+      "candidate_id": "MAC-e88225e221cc7ba8",
+      "task_type": "qa_repair",
+      "asset_id": "QA-7e4be70bcf83c472",
+      "raw_id": "RAW-e4266bc4a5853a4c",
+      "source_ref": "SA-c233f0f06128737a",
+      "source_hash": "66fab3d80454e4b7",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "recollect_original",
+        "reason": "The source text is about a funding round for a company named 蓝星光域, but there is no indication that this company or event is AI-related.",
+        "claims": []
+      },
+      "evidence": [
+        {
+          "start": 519,
+          "end": 533,
+          "quote": "蓝星光域完成数亿元C+轮融资"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-24T00:37:44.088Z"
+    },
+    {
+      "candidate_id": "MAC-e89a17b111e911e5",
+      "task_type": "qa_repair",
+      "asset_id": "QA-648131b720844dc7",
+      "raw_id": "RAW-e1a66522f1b503a4",
+      "source_ref": "SA-588ff0c110befbd1",
+      "source_hash": "9bc30e0fe8617abe",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source text contains a concrete AI industry funding event for 时维感知.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "时维感知（杭州）科技有限公司",
+            "object": "奇绩创坛、零以创投和鹏晨投资",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 95,
+          "end": 150,
+          "quote": "时维感知已 完成数千万元天使轮融资 ，投资方包括 奇绩创坛、零以创投和鹏晨投资 ，一苇资本担任独 家财务顾问。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-24T00:37:41.150Z"
+    },
+    {
+      "candidate_id": "MAC-e9816a74e21762e6",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-7076321105387ac4",
+      "raw_id": "RAW-d856fedc30bc90e3",
+      "source_ref": "SA-c66323a7416f1222",
+      "source_hash": "ef19d180da83cb31",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "息壤开物",
+            "object": "数亿元种子轮及天使轮融资",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "capital_investment",
+            "subject": "敦鸿资产",
+            "object": "息壤开物",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "organization_people",
+            "subject": "张含望",
+            "object": "息壤开物联合创始人、首席科学家",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 60,
+          "end": 85,
+          "quote": "息壤开物宣布已经连续 完成数亿元种子轮及天使轮融资"
+        },
+        {
+          "start": 87,
+          "end": 139,
+          "quote": "由 敦鸿资产领投，华控基金、三花控股、银杏谷资本、泽然资本、本坚基金、上海天使会、标朴投资等知名机构跟投"
+        },
+        {
+          "start": 411,
+          "end": 434,
+          "quote": "即将出任息壤开物联合创始人、首席科学家的张含望"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-24T00:37:15.797Z"
+    },
+    {
+      "candidate_id": "MAC-f84e86b3c45ad319",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-9d01962825bb4252",
+      "raw_id": "RAW-c3785172355aa740",
+      "source_ref": "SA-3ad946506f155841",
+      "source_hash": "5f3fdf302b68696b",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "息壤开物",
+            "object": "数亿元种子轮及天使轮融资",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "capital_investment",
+            "subject": "敦鸿资产",
+            "object": "息壤开物",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "financial_performance",
+            "subject": "息壤开物",
+            "object": "估值达5亿美元",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 60,
+          "end": 85,
+          "quote": "息壤开物宣布已经连续 完成数亿元种子轮及天使轮融资"
+        },
+        {
+          "start": 87,
+          "end": 139,
+          "quote": "由 敦鸿资产领投，华控基金、三花控股、银杏谷资本、泽然资本、本坚基金、上海天使会、标朴投资等知名机构跟投"
+        },
+        {
+          "start": 141,
+          "end": 150,
+          "quote": "目前估值达5亿美元"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-24T00:37:17.171Z"
+    },
+    {
+      "candidate_id": "MAC-fb5f3ea90aa45990",
+      "task_type": "qa_repair",
+      "asset_id": "QA-a4cdaf607dbe0f83",
+      "raw_id": "RAW-51b2c1119cce654e",
+      "source_ref": "SA-dbcae98792cec6e2",
+      "source_hash": "748e9b92da785af8",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source text describes a concrete funding event for an AI-relevant RISC-V processor company.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "奥维领芯",
+            "object": "Pre-A+轮融资",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 110,
+          "end": 149,
+          "quote": "奥维领芯正式宣布已于本月 完成Pre-A+轮融资全部资金交割， 金额 超2亿元"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-09-24T00:37:49.317Z"
+    }
+  ]
+}

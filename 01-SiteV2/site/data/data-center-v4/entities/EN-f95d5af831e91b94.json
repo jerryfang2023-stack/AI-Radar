@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-23T02:44:38.147Z",
-    "latestDataDate": "2026-09-23",
-    "currentDate": "2026-09-23",
-    "eventCount": 3519,
+    "generatedAt": "2026-09-24T00:41:23.865Z",
+    "latestDataDate": "2026-09-24",
+    "currentDate": "2026-09-24",
+    "eventCount": 3527,
     "quarantinedEventCount": 37,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -55,12 +55,15 @@
     "name": "SenseTime",
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
-    "aliases": [],
+    "aliases": [
+      "商汤科技"
+    ],
     "verificationStatus": "candidate",
     "datasetScopes": [
       "canonical"
     ],
     "eventIds": [
+      "EV-0d0b83c319d971b0",
       "EV-056bb8c683ef60a4"
     ],
     "viewpointIds": [],
@@ -70,10 +73,12 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-22",
-    "lastSeen": "2026-07-23",
+    "lastSeen": "2026-09-24",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-0d0b83c319d971b0"
+      ],
       "deployments": [],
       "partnerships": [
         "EV-056bb8c683ef60a4"
@@ -84,6 +89,120 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-0d0b83c319d971b0",
+        "dataDate": "2026-09-24",
+        "date": "2026-09-23",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "达卯科技完成新一轮融资，算电协同核心软件层“稀缺标的”",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "industry_applications",
+            "name": "行业应用",
+            "entityIds": [
+              "EN-ef5cac7907b28194"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b486bc9e2ad661cd",
+            "fundingInsightId": "FI-c856c1434a24c08f"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "industrials",
+            "name": "工业",
+            "entityIds": [
+              "EN-ef5cac7907b28194"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a0a20baee2f11c6a",
+            "fundingInsightId": "FI-c856c1434a24c08f"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-ef5cac7907b28194"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f39bcc3cd379926f",
+            "fundingInsightId": "FI-c856c1434a24c08f"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "data_analysis",
+            "name": "数据分析",
+            "entityIds": [
+              "EN-ef5cac7907b28194"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-06dabde9d613e85e",
+            "fundingInsightId": "FI-c856c1434a24c08f"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-ef5cac7907b28194"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-e3c11ff5fd6c234a",
+            "fundingInsightId": "FI-c856c1434a24c08f"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "energy_utilities",
+            "name": "能源与公用事业",
+            "entityIds": [
+              "EN-ef5cac7907b28194"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b76edf9d44dbfe5c",
+            "fundingInsightId": "FI-c856c1434a24c08f"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-ef5cac7907b28194"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-52eb59b51d1d76e0",
+            "fundingInsightId": "FI-c856c1434a24c08f"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-ef5cac7907b28194"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-370f62b0f11c791d",
+            "fundingInsightId": "FI-c856c1434a24c08f"
+          }
+        ],
+        "entityIds": [
+          "EN-ef5cac7907b28194",
+          "EN-f95d5af831e91b94",
+          "EN-da6ed1e6ee3b0489"
+        ]
+      },
       {
         "id": "EV-056bb8c683ef60a4",
         "dataDate": "2026-07-23",
@@ -136,6 +255,8 @@
       "typeLabel": "产品形态",
       "valueId": "chip_accelerator",
       "eventIds": [
+        "EV-0f2e50fbc9af587a",
+        "EV-3ca24f79062a359e",
         "EV-b9be18b12b1714f3",
         "EV-2c2f903622c29ba4",
         "EV-412f7ce21693dc13",
@@ -269,6 +390,7 @@
         "EV-bca0d9aca07bcb4a"
       ],
       "entityIds": [
+        "EN-73c2f5aa8e632c19",
         "EN-92d14efa2f3f44b1",
         "EN-33d5a47fc56e4ba1",
         "EN-c5146e8a5659ab7e",
@@ -408,7 +530,7 @@
         "HW-4c176e4c40871adc"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-23"
+      "lastSeen": "2026-09-24"
     },
     {
       "id": "TX-industry-aerospace_defense",

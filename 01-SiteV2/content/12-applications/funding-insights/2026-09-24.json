@@ -1,0 +1,4244 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "date": "2026-09-24",
+    "generated_at": "2026-09-24T00:40:25.852Z",
+    "trigger": "verified_funding_events_with_three_month_backfill",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1",
+    "counts": {
+      "funding_events": 8,
+      "auto_published": 5,
+      "blocked": 0,
+      "pending": 0,
+      "deduplicated": 3
+    },
+    "taxonomy_version": "TAG-V4.1"
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-c856c1434a24c08f",
+      "triggered_by_event_id": "EV-0d0b83c319d971b0",
+      "as_of_date": "2026-09-24",
+      "company": {
+        "entity_id": "EN-ef5cac7907b28194",
+        "name": "上海达卯科技有限公司",
+        "full_name": "上海达卯科技有限公司",
+        "website": "https://www.damao.pro/about",
+        "summary": "达卯科技成立于2021年，总部位于上海徐汇模速空间，是国内首家将能源大模型规模化落地算电协同、虚拟电厂与泛能源场景的AI企业，也是算电协同赛道的先行者。公司核心依托自研垂类能源大模型与AI智能体集群，打造算电协同平台、AI虚拟电厂平台、智能运维平台等产品矩阵，面向智算中心客户提供从咨询规划、投资测算、智能运营、精细化运维、能源增值交易的全生命周期服务。",
+        "headquarters": "上海市徐汇区龙台路180号模速空间",
+        "founders": [],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-23e3875ee86bc918",
+            "quote": "达卯科技成立于2021年，总部位于上海徐汇模速空间，是国内首家将能源大模型规模化落地算电协同、虚拟电厂与泛能源场景的AI企业，也是算电协同赛道的先行者。",
+            "source_content_hash": "b652dc815aea1925",
+            "quote_hash": "d66c663e08ead1e0ba8c20bda27823c53677d0df1c5e83af5e76e879ea6b10bb"
+          },
+          {
+            "source_id": "FISRC-f40e07fad9bc4db8",
+            "quote": "上海达卯科技有限公司，简称达卯科技，成立于2021年3月，总部位于上海市徐汇区，是国内首家将能源大模型应用于算力一电力协同优化领域的高科技企业。",
+            "source_content_hash": "8827075b7294aa9d",
+            "quote_hash": "2f5b3bfcaed5fd886366c23325d118e75b6bee37f4dfd283a594298e1fbe9d3f"
+          }
+        ],
+        "application_entity_id": "EN-ef5cac7907b28194",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "轮次未披露",
+        "amount": "约2亿元",
+        "total_raised": "",
+        "announced_at": "2026-09-23",
+        "investor_disclosure_status": "not_disclosed",
+        "investors": [],
+        "other_round_investors": [
+          {
+            "name": "宁德时代旗下溥泉资本",
+            "role": "A+轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-23e3875ee86bc918",
+                "quote": "去年10月，达卯科技完成由宁德时代旗下溥泉资本领投的近亿元A+轮融资。",
+                "source_content_hash": "b652dc815aea1925",
+                "quote_hash": "087c388326eef9ae94e81eea702d5705c55b8dfc21ac3103809c27eab3e37ada"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "宁德时代",
+            "role": "股东方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-23e3875ee86bc918",
+                "quote": "目前，达卯科技股东阵容包含宁德时代、商汤科技、寒武纪等产业链龙头企业",
+                "source_content_hash": "b652dc815aea1925",
+                "quote_hash": "3ea31f36954c8902959b2b0d0e7a4636bb9a7524cc8abfbcde3f12b5937a02e9"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "商汤科技",
+            "role": "股东方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-23e3875ee86bc918",
+                "quote": "目前，达卯科技股东阵容包含宁德时代、商汤科技、寒武纪等产业链龙头企业",
+                "source_content_hash": "b652dc815aea1925",
+                "quote_hash": "3ea31f36954c8902959b2b0d0e7a4636bb9a7524cc8abfbcde3f12b5937a02e9"
+              }
+            ],
+            "entity_id": "EN-a8100d425f663eac"
+          },
+          {
+            "name": "寒武纪",
+            "role": "股东方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-23e3875ee86bc918",
+                "quote": "目前，达卯科技股东阵容包含宁德时代、商汤科技、寒武纪等产业链龙头企业",
+                "source_content_hash": "b652dc815aea1925",
+                "quote_hash": "3ea31f36954c8902959b2b0d0e7a4636bb9a7524cc8abfbcde3f12b5937a02e9"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-23e3875ee86bc918",
+            "quote": "达卯科技完成新一轮融资，算电协同核心软件层“稀缺标的”",
+            "source_content_hash": "b652dc815aea1925",
+            "quote_hash": "822623c4e025351aa45f36131e83fa7bd4c20e3716d70b98dc768a07c97fa24a"
+          },
+          {
+            "source_id": "FISRC-23e3875ee86bc918",
+            "quote": "算电协同AI能源运营操作系统核心企业达卯科技，近期据悉已完成约2亿元新一轮融资。",
+            "source_content_hash": "b652dc815aea1925",
+            "quote_hash": "df13cd2db981a6698180cd7e14d1d884a72e9646222cb01be7164262e6babff3"
+          },
+          {
+            "source_id": "FISRC-1f1845999eef0097",
+            "quote": "9月23日，证券时报记者独家获悉，达卯科技已完成约2亿元新一轮融资。不过，投资方尚未浮出水面。",
+            "source_content_hash": "df82974d90c4bf48",
+            "quote_hash": "692fa22d7e3d26de653efef85421d3f0d7ebe975eb106dbd236a8dc279d7ba0e"
+          }
+        ],
+        "round_code": "undisclosed",
+        "round_original": "新一轮融资",
+        "amount_original": "约2亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 2 亿元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [
+          "investors_missing"
+        ],
+        "disclosures": [
+          {
+            "event_id": "EV-0d0b83c319d971b0",
+            "round_original": "新一轮融资",
+            "amount": "约2亿元",
+            "announced_at": "2026-09-23",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-23e3875ee86bc918",
+                "quote": "达卯科技完成新一轮融资，算电协同核心软件层“稀缺标的”",
+                "source_content_hash": "b652dc815aea1925",
+                "quote_hash": "822623c4e025351aa45f36131e83fa7bd4c20e3716d70b98dc768a07c97fa24a"
+              },
+              {
+                "source_id": "FISRC-23e3875ee86bc918",
+                "quote": "算电协同AI能源运营操作系统核心企业达卯科技，近期据悉已完成约2亿元新一轮融资。",
+                "source_content_hash": "b652dc815aea1925",
+                "quote_hash": "df13cd2db981a6698180cd7e14d1d884a72e9646222cb01be7164262e6babff3"
+              },
+              {
+                "source_id": "FISRC-1f1845999eef0097",
+                "quote": "9月23日，证券时报记者独家获悉，达卯科技已完成约2亿元新一轮融资。不过，投资方尚未浮出水面。",
+                "source_content_hash": "df82974d90c4bf48",
+                "quote_hash": "692fa22d7e3d26de653efef85421d3f0d7ebe975eb106dbd236a8dc279d7ba0e"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "partially_disclosed"
+      },
+      "products": [
+        {
+          "name": "算电协同2.0平台・AIDC绿电直连能源运营操作系统",
+          "description": "算电协同产业链中的关键软件，已形成面向GW级智算中心绿电直连场景的全周期智慧能源运营闭环能力，推动AIDC从传统“用电负荷”升级为“新型电力系统下可调度、可交易的柔性资源”。",
+          "target_customers": "智算中心客户",
+          "features": [
+            "全周期智慧能源运营闭环能力",
+            "面向GW级智算中心绿电直连场景",
+            "推动AIDC升级为可调度、可交易的柔性资源"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-23e3875ee86bc918",
+              "quote": "公司推出的核心产品算电协同2.0平台・AIDC绿电直连能源运营操作系统，是算电协同产业链中的关键软件，已形成面向GW级智算中心绿电直连场景的全周期智慧能源运营闭环能力，核心技术指标处于行业领先水平，推动AIDC从传统“用电负荷”升级为“新型电力系统下可调度、可交易的柔性资源”。",
+              "source_content_hash": "b652dc815aea1925",
+              "quote_hash": "a953da52afe4b4b0ea4de6f4473950d7de521a7245165f2b46a26ce146c43fd6"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "算电协同平台",
+          "description": "以自研能源大模型为核心，融合精准预测、动态决策和实时调度于一体，实现算力与电力的精准协同。",
+          "target_customers": "智算中心、通算中心与超算中心等高能耗算力基础设施",
+          "features": [
+            "精准预测",
+            "动态决策",
+            "实时调度"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f40e07fad9bc4db8",
+              "quote": "达卯科技独创的算电协同平台，以自研能源大模型为核心，融合精准预测、动态决策和实时调度于一体，实现算力与电力的精准协同",
+              "source_content_hash": "8827075b7294aa9d",
+              "quote_hash": "cea5b2cb1e851212215994339f9f07ba6b67b3d2cc662cba62c2a013b4f0e109"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "AI虚拟电厂平台",
+          "description": "达卯科技产品矩阵之一，面向泛能源场景提供虚拟电厂能力。",
+          "target_customers": "智算中心客户",
+          "features": [],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-23e3875ee86bc918",
+              "quote": "打造算电协同平台、AI虚拟电厂平台、智能运维平台等产品矩阵",
+              "source_content_hash": "b652dc815aea1925",
+              "quote_hash": "ea091e0492a47a016acafe6faf6810f7099be61e6580372e1dc951105b633572"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "商汤临港智算中心",
+          "industry": "智算中心",
+          "use_case": "算电协同平台应用，降低电费成本，参与电网需求响应",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1f1845999eef0097",
+              "quote": "达卯科技的核心产品——算电协同2.0平台・AIDC能源运营操作系统，已应用到商汤临港智算中心",
+              "source_content_hash": "df82974d90c4bf48",
+              "quote_hash": "3007cfdde089d81ebc6f9cd5af0e250b9dcf9b81f3a633830addfe74fe0b9511"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "福建智算方舟科技有限公司",
+          "industry": "智算中心",
+          "use_case": "为长乐机场综保区人工智能智算中心（一期）提供全栈式算电协同服务",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1f1845999eef0097",
+              "quote": "近日，达卯科技与福建智算方舟科技有限公司达成深度合作，为长乐机场综保区人工智能智算中心（一期）提供全栈式算电协同服务",
+              "source_content_hash": "df82974d90c4bf48",
+              "quote_hash": "47b2072421f222e3064db8560785d850cdab31fd6f7eb2e1afdb2eaf628a5e6b"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "商汤临港智算中心电费降低比例",
+          "value": "9.73%",
+          "observed_at": "2026-09-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1f1845999eef0097",
+              "quote": "算电协同平台帮助该中心电费降低了9.73%，每年可节省千万元级成本。",
+              "source_content_hash": "df82974d90c4bf48",
+              "quote_hash": "35bbb47a9ff547c954eb4d99b3f5ef30cdc03c87f3134bf3ec353432e0e6f200"
+            }
+          ]
+        },
+        {
+          "label": "临港智算中心需求响应最高准确率",
+          "value": "99.3%",
+          "observed_at": "2026-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1f1845999eef0097",
+              "quote": "今年7月，临港智算中心算电协同项目在电网削峰需求完成4轮需求响应任务，最高以99.3%的响应准确率实现需求度履约",
+              "source_content_hash": "df82974d90c4bf48",
+              "quote_hash": "80b461985ddc3b4eebfa9d7d40fcb9588224fee1bfe4e6f36fac2acbdf5437db"
+            }
+          ]
+        },
+        {
+          "label": "商汤临港智算中心年耗电量",
+          "value": "超1亿度",
+          "observed_at": "2021",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f40e07fad9bc4db8",
+              "quote": "年耗电量超1亿度",
+              "source_content_hash": "8827075b7294aa9d",
+              "quote_hash": "32d7f74222cf2146dea8f9d7650aa672436fa47a552c54e8497700f68604c9ac"
+            }
+          ]
+        },
+        {
+          "label": "商汤临港智算中心万卡集群规模",
+          "value": "9400P",
+          "observed_at": "2021",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f40e07fad9bc4db8",
+              "quote": "万卡集群规模（9400P）",
+              "source_content_hash": "8827075b7294aa9d",
+              "quote_hash": "41b51650346afe3df945232849ac10b73461264030e813a30a3bf5c5eeed6fc7"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "简煜忞",
+          "quote": "达卯科技定位不只是算电协同技术服务商，更是产业核心运营服务商。区别于传统软件售卖模式，达卯采用“技术赋能+运营落地”的商业模式，以价值销售为核心，交付长期能源运营价值，持续为客户挖掘收益提升空间。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-23e3875ee86bc918",
+              "quote": "达卯科技定位不只是算电协同技术服务商，更是产业核心运营服务商。区别于传统软件售卖模式，达卯采用“技术赋能+运营落地”的商业模式，以价值销售为核心，交付长期能源运营价值，持续为客户挖掘收益提升空间。",
+              "source_content_hash": "b652dc815aea1925",
+              "quote_hash": "8f097d3b24cf6c7b3a0ab8dfd39537473b7a47717df79624bf7a3fe0671e6634"
+            }
+          ]
+        },
+        {
+          "speaker": "简煜忞",
+          "quote": "算电协同行业当前处于快速窗口期，政策、技术迭代节奏快，公司会持续投入技术研发与市场拓展，持续抢占赛道先机、夯实竞争壁垒。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-23e3875ee86bc918",
+              "quote": "算电协同行业当前处于快速窗口期，政策、技术迭代节奏快，公司会持续投入技术研发与市场拓展，持续抢占赛道先机、夯实竞争壁垒。",
+              "source_content_hash": "b652dc815aea1925",
+              "quote_hash": "57c34fd3034bfc8125620174a02983d25dab248bbd489ff1a15dd4aac1e43356"
+            }
+          ]
+        },
+        {
+          "speaker": "简煜忞",
+          "quote": "达卯现阶段沟通的投资方仍以产业方为主，后续还有一两轮融资规划，资金将用于持续性研发投入、模型与平台升级迭代以及产业整合等。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1f1845999eef0097",
+              "quote": "达卯现阶段沟通的投资方仍以产业方为主，后续还有一两轮融资规划，资金将用于持续性研发投入、模型与平台升级迭代以及产业整合等。",
+              "source_content_hash": "df82974d90c4bf48",
+              "quote_hash": "7e04257b50bb0d030edaa98f1871d6b907324c828dc9f858c9c9cfa52f022009"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是达卯科技在算电协同产业链软件层率先跑通商业化闭环的能力。来源显示，算电协同产业链硬件环节参与者众多，但能够提供完整底层软件、实现算电协同全链路商业化落地的企业寥寥无几，达卯科技被定位为“算电协同产业链软件层为数不多已实现商业落地的稀缺标的”。其已验证信号包括：核心产品算电协同2.0平台已应用到商汤临港智算中心，帮助该中心电费降低9.73%，每年节省千万元级成本；2026年7月临港项目在电网削峰需求中完成4轮需求响应任务，最高以99.3%的响应准确率实现需求度履约。本轮约2亿元融资的投资方尚未披露，CEO表示现阶段沟通的投资方仍以产业方为主，后续还有一两轮融资规划。证据边界：本轮融资的具体投资机构名称未在来源中披露，无法确认本轮领投或参投方；累计融资总额亦未披露。",
+        "validated_signals": [
+          "核心产品算电协同2.0平台已应用到商汤临港智算中心，实现商业落地",
+          "算电协同平台帮助商汤临港智算中心电费降低9.73%，每年节省千万元级成本",
+          "2026年7月临港智算中心算电协同项目完成4轮需求响应任务，最高响应准确率99.3%",
+          "2026年初算电协同首次写入政府工作报告，成为新基建重点方向",
+          "股东阵容包含宁德时代、商汤科技、寒武纪等产业链龙头企业"
+        ],
+        "risks": [
+          "本轮融资投资方尚未披露，无法确认产业方或财务投资人的具体构成及后续资源支持力度",
+          "算力调度真正商业化落地可能要到2028年至2029年，现阶段公司以能源管理为主，核心业务扩展存在时间窗口不确定性",
+          "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications",
+        "market_subcategory_id": "industrials",
+        "market_application_id": "",
+        "use_case_ids": [
+          "productivity_enterprise_workflows",
+          "data_analysis"
+        ],
+        "industry_ids": [
+          "energy_utilities",
+          "manufacturing"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "算电协同AI能源运营",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是达卯科技在算电协同产业链软件层率先跑通商业化闭环的能力。来源显示，算电协同产业链硬件环节参与者众多，但能够提供完整底层软件、实现算电协同全链路商业化落地的企业寥寥无几，达卯科技被定位为“算电协同产业链软件层为数不多已实现商业落地的稀缺标的”。其已验证信号包括：核心产品算电协同2.0平台已应用到商汤临港智算中心，帮助该中心电费降低9.73%，每年节省千万元级成本；2026年7月临港项目在电网削峰需求中完成4轮需求响应任务，最高以99.3%的响应准确率实现需求度履约。本轮约2亿元融资的投资方尚未披露，CEO表示现阶段沟通的投资方仍以产业方为主，后续还有一两轮融资规划。证据边界：本轮融资的具体投资机构名称未在来源中披露，无法确认本轮领投或参投方；累计融资总额亦未披露。",
+          "evidence_signals": [
+            "核心产品算电协同2.0平台已应用到商汤临港智算中心，实现商业落地",
+            "算电协同平台帮助商汤临港智算中心电费降低9.73%，每年节省千万元级成本",
+            "2026年7月临港智算中心算电协同项目完成4轮需求响应任务，最高响应准确率99.3%",
+            "2026年初算电协同首次写入政府工作报告，成为新基建重点方向",
+            "股东阵容包含宁德时代、商汤科技、寒武纪等产业链龙头企业"
+          ],
+          "risks": [
+            "本轮融资投资方尚未披露，无法确认产业方或财务投资人的具体构成及后续资源支持力度",
+            "算力调度真正商业化落地可能要到2028年至2029年，现阶段公司以能源管理为主，核心业务扩展存在时间窗口不确定性"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "算电协同2.0平台・AIDC绿电直连能源运营操作系统",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "算电协同平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "AI虚拟电厂平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "宁德时代旗下溥泉资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "宁德时代",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "商汤科技",
+          "canonical_entity_id": "EN-a8100d425f663eac",
+          "canonical_name": "商汤科技"
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "寒武纪",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "商汤临港智算中心",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "福建智算方舟科技有限公司",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-0d0b83c319d971b0",
+          "date": "2026-09-23",
+          "title": "达卯科技完成新一轮融资，算电协同核心软件层“稀缺标的”",
+          "amount": "约2亿元",
+          "source_refs": [
+            "SA-9dabee305e16c0bd",
+            "SA-5213b3868aacdbe6"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-23e3875ee86bc918",
+          "source_url": "https://www.qbitai.com/2026/09/496494.html",
+          "title": "达卯科技完成新一轮融资，算电协同核心软件层“稀缺标的”",
+          "publisher": "量子位",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-24T00:37:06.125Z",
+          "content_hash": "b652dc815aea1925",
+          "source_artifact_id": "SA-9dabee305e16c0bd",
+          "raw_id": "RAW-bfcae45eb806440b"
+        },
+        {
+          "source_id": "FISRC-f40e07fad9bc4db8",
+          "source_url": "https://www.damao.pro/about",
+          "title": "达卯智能",
+          "publisher": "damao.pro",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-09-24T00:40:02.246Z",
+          "content_hash": "8827075b7294aa9d",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-1f1845999eef0097",
+          "source_url": "https://www.stcn.com/article/detail/4196162.html",
+          "title": "达卯科技再拿2亿融资！宁德时代、商汤、寒武纪已提前押注",
+          "publisher": "stcn.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-24T00:40:02.888Z",
+          "content_hash": "df82974d90c4bf48",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-24T00:40:25.792Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-0d0b83c319d971b0",
+          "confidence": 0.82,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-24T00:40:25.792Z",
+      "customer_research": {
+        "status": "verified_customers_found",
+        "verified_customer_count": 2,
+        "searched_source_count": 3
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "AI虚拟电厂平台",
+            "算电协同2.0平台・AIDC绿电直连能源运营操作系统",
+            "算电协同平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 0,
+          "unresolved_names": []
+        }
+      },
+      "source_event_ids": [
+        "EV-0d0b83c319d971b0"
+      ],
+      "aggregation": {
+        "key": "EN-ef5cac7907b28194|undisclosed",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-168ba5111b3efa51",
+      "triggered_by_event_id": "EV-3c86fb0161715336",
+      "as_of_date": "2026-09-24",
+      "company": {
+        "entity_id": "EN-67895119a5182d06",
+        "name": "息壤开物",
+        "full_name": "息壤开物",
+        "website": "",
+        "summary": "息壤开物（XIRRA）是一家AI 2.0原生物理AI基座模型公司，由前华为云大模型CTO李寅创办，主要研发物理基础模型LPM，面向机器人等物理智能场景。",
+        "headquarters": "深圳宝安区",
+        "founders": [
+          {
+            "name": "李寅",
+            "role": "创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-41f074703465b30a",
+                "quote": "息壤开物创始人李寅，清华大学毕业，曾任华为云大模型CTO，华为云行业大模型开发部部长，华为大模型0 到 1 核心成员",
+                "source_content_hash": "5f3fdf302b68696b",
+                "quote_hash": "108e06f42dc7fb09635d0495eaaa94cf5ec4b11937dbaa0c5d752841e0c01ac0"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "张含望",
+            "role": "即将出任联合创始人、首席科学家",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-41f074703465b30a",
+                "quote": "即将出任息壤开物联合创始人、首席科学家的张含望，现任华为多模态首席科学家，南洋理工大学AI 领域校长讲席教授",
+                "source_content_hash": "5f3fdf302b68696b",
+                "quote_hash": "36633c826bb634e4a3b315df8133a984898e4d6a8dd5e8005a204861f3bacb74"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-41f074703465b30a",
+            "quote": "息壤开物（XIRRA）是一家AI 2.0原生物理AI基座模型公司。",
+            "source_content_hash": "5f3fdf302b68696b",
+            "quote_hash": "1bb201cfb1862aaf941dcc28e8bf23b8ba0e91848c59d16e4a26d5653e6c9629"
+          },
+          {
+            "source_id": "FISRC-208d487b9abe9896",
+            "quote": "息壤开物今年7月成立，由前华为云大模型CTO李寅创办",
+            "source_content_hash": "4d802d66691cb3f8",
+            "quote_hash": "50d493bd73cad3b1df3737f991da7931411d878699b3e3ab3d66edd596a37015"
+          }
+        ],
+        "application_entity_id": "EN-67895119a5182d06",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "多轮融资",
+        "amount": "数亿元",
+        "total_raised": "数亿元",
+        "announced_at": "2026-09-23",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "敦鸿资产",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-41f074703465b30a",
+                "quote": "由 敦鸿资产领投，华控基金、三花控股、银杏谷资本、泽然资本、本坚基金、上海天使会、标朴投资等知名机构跟投",
+                "source_content_hash": "5f3fdf302b68696b",
+                "quote_hash": "dd477a61ea1ba275edd33cd5c862253fc7e7e35e1a91cdb31079479ed163154e"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "华控基金",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-41f074703465b30a",
+                "quote": "由 敦鸿资产领投，华控基金、三花控股、银杏谷资本、泽然资本、本坚基金、上海天使会、标朴投资等知名机构跟投",
+                "source_content_hash": "5f3fdf302b68696b",
+                "quote_hash": "dd477a61ea1ba275edd33cd5c862253fc7e7e35e1a91cdb31079479ed163154e"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "三花控股",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-41f074703465b30a",
+                "quote": "由 敦鸿资产领投，华控基金、三花控股、银杏谷资本、泽然资本、本坚基金、上海天使会、标朴投资等知名机构跟投",
+                "source_content_hash": "5f3fdf302b68696b",
+                "quote_hash": "dd477a61ea1ba275edd33cd5c862253fc7e7e35e1a91cdb31079479ed163154e"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "银杏谷资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-41f074703465b30a",
+                "quote": "由 敦鸿资产领投，华控基金、三花控股、银杏谷资本、泽然资本、本坚基金、上海天使会、标朴投资等知名机构跟投",
+                "source_content_hash": "5f3fdf302b68696b",
+                "quote_hash": "dd477a61ea1ba275edd33cd5c862253fc7e7e35e1a91cdb31079479ed163154e"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "泽然资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-41f074703465b30a",
+                "quote": "由 敦鸿资产领投，华控基金、三花控股、银杏谷资本、泽然资本、本坚基金、上海天使会、标朴投资等知名机构跟投",
+                "source_content_hash": "5f3fdf302b68696b",
+                "quote_hash": "dd477a61ea1ba275edd33cd5c862253fc7e7e35e1a91cdb31079479ed163154e"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "本坚基金",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-41f074703465b30a",
+                "quote": "由 敦鸿资产领投，华控基金、三花控股、银杏谷资本、泽然资本、本坚基金、上海天使会、标朴投资等知名机构跟投",
+                "source_content_hash": "5f3fdf302b68696b",
+                "quote_hash": "dd477a61ea1ba275edd33cd5c862253fc7e7e35e1a91cdb31079479ed163154e"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "上海天使会",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-41f074703465b30a",
+                "quote": "由 敦鸿资产领投，华控基金、三花控股、银杏谷资本、泽然资本、本坚基金、上海天使会、标朴投资等知名机构跟投",
+                "source_content_hash": "5f3fdf302b68696b",
+                "quote_hash": "dd477a61ea1ba275edd33cd5c862253fc7e7e35e1a91cdb31079479ed163154e"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "标朴投资",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-41f074703465b30a",
+                "quote": "由 敦鸿资产领投，华控基金、三花控股、银杏谷资本、泽然资本、本坚基金、上海天使会、标朴投资等知名机构跟投",
+                "source_content_hash": "5f3fdf302b68696b",
+                "quote_hash": "dd477a61ea1ba275edd33cd5c862253fc7e7e35e1a91cdb31079479ed163154e"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "天使基石",
+            "role": "跟投方（界面新闻、网易转载财联社版本披露）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-208d487b9abe9896",
+                "quote": "由敦鸿资产领投，华控基金、三花控股、银杏谷资本、泽然资本、本坚基金、天使基石 、标朴投资等机构跟投",
+                "source_content_hash": "4d802d66691cb3f8",
+                "quote_hash": "04346c1861b5a7501a9963da316befd676814c8946df3230d45e680e452a8ce5"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "泽然创投",
+            "role": "天使轮参与投资机构（天眼查APP披露）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-33579ea2ea648fac",
+                "quote": "深圳息壤开物科技有限公司天使轮融资，融资额未披露，参与投资的机构包括敦鸿资产，华控基金，泽然创投，本坚基金，银杏谷资本。",
+                "source_content_hash": "7547bdabb9fa4903",
+                "quote_hash": "bb40bb57c3c8f3b67c8bb25e7210d777da6bec33c6246d63d8848a0388d0b4f1"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-41f074703465b30a",
+            "quote": "息壤开物宣布已经连续 完成数亿元种子轮及天使轮融资",
+            "source_content_hash": "5f3fdf302b68696b",
+            "quote_hash": "f4d21ea79e153fd31b606fbadf92eeaa7170d4956022977272d075a7403d566e"
+          },
+          {
+            "source_id": "FISRC-41f074703465b30a",
+            "quote": "息壤开物宣布已经连续 完成数亿元种子轮及天使轮融资 ，由 敦鸿资产领投，华控基金、三花控股、银杏谷资本、泽然资本、本坚基金、上海天使会、标朴投资等知名机构跟投 ，目前估值达5亿美元。",
+            "source_content_hash": "5f3fdf302b68696b",
+            "quote_hash": "35a1c9fdb3246882262b2ff658eacac15107241c7999e7220eb5a63fe9074443"
+          },
+          {
+            "source_id": "FISRC-208d487b9abe9896",
+            "quote": "Physical AI初创公司息壤开物连续完成种子轮及天使轮融资，累计融资金额达数亿元，由敦鸿资产领投，华控基金、三花控股、银杏谷资本、泽然资本、本坚基金、天使基石 、标朴投资等机构跟投。据公司披露，目前其估值达5亿美元。",
+            "source_content_hash": "4d802d66691cb3f8",
+            "quote_hash": "157d97bca94b0d176da79fca6930228000bd651f1b214736100a3b96160a57cd"
+          }
+        ],
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "total_raised_original": "数亿元",
+        "total_raised_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-3c86fb0161715336",
+            "round_original": "多轮融资",
+            "amount": "数亿元",
+            "announced_at": "2026-09-23",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-41f074703465b30a",
+                "quote": "息壤开物宣布已经连续 完成数亿元种子轮及天使轮融资",
+                "source_content_hash": "5f3fdf302b68696b",
+                "quote_hash": "f4d21ea79e153fd31b606fbadf92eeaa7170d4956022977272d075a7403d566e"
+              },
+              {
+                "source_id": "FISRC-41f074703465b30a",
+                "quote": "息壤开物宣布已经连续 完成数亿元种子轮及天使轮融资 ，由 敦鸿资产领投，华控基金、三花控股、银杏谷资本、泽然资本、本坚基金、上海天使会、标朴投资等知名机构跟投 ，目前估值达5亿美元。",
+                "source_content_hash": "5f3fdf302b68696b",
+                "quote_hash": "35a1c9fdb3246882262b2ff658eacac15107241c7999e7220eb5a63fe9074443"
+              },
+              {
+                "source_id": "FISRC-208d487b9abe9896",
+                "quote": "Physical AI初创公司息壤开物连续完成种子轮及天使轮融资，累计融资金额达数亿元，由敦鸿资产领投，华控基金、三花控股、银杏谷资本、泽然资本、本坚基金、天使基石 、标朴投资等机构跟投。据公司披露，目前其估值达5亿美元。",
+                "source_content_hash": "4d802d66691cb3f8",
+                "quote_hash": "157d97bca94b0d176da79fca6930228000bd651f1b214736100a3b96160a57cd"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "LPM（Large Physics Model，物理基础模型）",
+          "description": "自研物理基础模型，理解物理规律、预测状态演化、规划长程动作、支撑闭环执行。架构上将世界推演与视频渲染解耦，统一自回归架构负责因果历史与推演，扩散模型负责渲染。",
+          "target_customers": "机器人等物理智能场景",
+          "features": [
+            "以贝尔曼方程最优解作为理论根基，统一学习世界转移P与策略π",
+            "原生物理预训练，从物理交互数据统一编码、状态—动作—结果建模和长程一致性学习切入",
+            "世界推演与视频渲染解耦",
+            "面向机器人等物理智能场景"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-41f074703465b30a",
+              "quote": "息壤开物自研物理基础模型（Large Physics Model，LPM）——一个理解物理规律、预测状态演化、规划长程动作、支撑闭环执行的物理世界基础模型。",
+              "source_content_hash": "5f3fdf302b68696b",
+              "quote_hash": "3207cb8a3b6f3c4407093bd5fb1472a2f89f0f95b7698afa10af3c3b794c5318"
+            },
+            {
+              "source_id": "FISRC-208d487b9abe9896",
+              "quote": "公司主要研发物理基础模型LPM，面向机器人等物理智能场景。",
+              "source_content_hash": "4d802d66691cb3f8",
+              "quote_hash": "0c31e42d9d87fe6390617b50eb7066d68966b9185d20ea2ddc5dd210a56ae475"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "XR数据平台",
+          "description": "面向物理AI研发的数据平台，覆盖多模态数据接入、清洗、标注、质量检查、版本管理与发布的完整流程，保持跨本体、跨模型的中立定位。",
+          "target_customers": "物理AI研发团队",
+          "features": [
+            "多模态数据接入、清洗、标注、质量检查、版本管理与发布",
+            "跨本体、跨模型中立定位",
+            "将真机轨迹、人类示教、真实失败案例编译成可训练、可追溯、可迭代的数据资产"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-41f074703465b30a",
+              "quote": "一是XR 数据平台——面向物理AI 研发，覆盖多模态数据接入、清洗、标注、质量检查、版本管理与发布的完整流程。它保持跨本体、跨模型的中立定位，把真机轨迹、人类示教、真实失败案例等物理世界经验，编译成可训练、可追溯、可迭代的高质量数据资产。",
+              "source_content_hash": "5f3fdf302b68696b",
+              "quote_hash": "375b1f64e13576209986f872d55d0eebf96f535a3533886c6dfd5f6d66218f35"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "XR评测平台",
+          "description": "已实现从场景构建、质量检查、策略执行到报告生成的完整工作流程，支持评测场景复用，打通仿真场景构建、模型推理与结果可视化全链路，形成评测即飞轮的迭代效应。",
+          "target_customers": "物理AI模型研发与评测团队",
+          "features": [
+            "场景构建、质量检查、策略执行到报告生成的完整工作流程",
+            "支持评测场景复用及执行过程、评测报告保存回查",
+            "失败样本定位、补数与复验，持续回流至下一轮模型训练"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-41f074703465b30a",
+              "quote": "二是XR评测平台——已实现从场景构建、质量检查、策略执行到报告生成的完整工作流程，支持评测场景复用，以及执行过程、评测报告的保存回查。平台打通仿真场景构建、模型推理与结果可视化全链路，把过去高度依赖人工的工作链路打造为自动化闭环；失败样本可在此完成定位、补数与复验，持续回流至下一轮模型训练，形成评测即飞轮、越评越强的迭代效应。",
+              "source_content_hash": "5f3fdf302b68696b",
+              "quote_hash": "a8277514d6bed8021770850df3dc682af729db55aa2f2a7d30866c0b27f908be"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "估值",
+          "value": "5亿美元",
+          "observed_at": "2026-09-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-41f074703465b30a",
+              "quote": "目前估值达5亿美元",
+              "source_content_hash": "5f3fdf302b68696b",
+              "quote_hash": "043c7f2629c79adfccbb04c24fd8a0221c4d3235d626f80793082462b2bfcd42"
+            }
+          ]
+        },
+        {
+          "label": "累计交付行业AI项目数",
+          "value": "200+",
+          "observed_at": "2026-09-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-41f074703465b30a",
+              "quote": "目前，息壤开物累计交付200+ 行业 AI 项目，覆盖金融、制造、能源、政务等30+ 行业，项目累计金额 10 亿+。",
+              "source_content_hash": "5f3fdf302b68696b",
+              "quote_hash": "b53876066d1d5fc1ef5c4c59e28f2e54a46f77bdc4c6336db4acf9e9a75b9ad0"
+            }
+          ]
+        },
+        {
+          "label": "覆盖行业数",
+          "value": "30+",
+          "observed_at": "2026-09-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-41f074703465b30a",
+              "quote": "覆盖金融、制造、能源、政务等30+ 行业",
+              "source_content_hash": "5f3fdf302b68696b",
+              "quote_hash": "dba8a6e2d0a2ab7608042df5a12a34c8efdaebd0de8a3a8044e28e907b624611"
+            }
+          ]
+        },
+        {
+          "label": "项目累计金额",
+          "value": "10亿+",
+          "observed_at": "2026-09-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-41f074703465b30a",
+              "quote": "项目累计金额 10 亿+",
+              "source_content_hash": "5f3fdf302b68696b",
+              "quote_hash": "9a8d860b254dc76e2c91a4a638d26b9b040832a0b9af379c31e7db7f94c0a4ce"
+            }
+          ]
+        },
+        {
+          "label": "集群可用度",
+          "value": "99.7%",
+          "observed_at": "2026-09-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-41f074703465b30a",
+              "quote": "集群可用度达99.7%",
+              "source_content_hash": "5f3fdf302b68696b",
+              "quote_hash": "4e54327bcffec313818e7e83531e2f68519fe6d665664228d7326a2312b57577"
+            }
+          ]
+        },
+        {
+          "label": "WorldArena2.0全球总决赛轨迹精度",
+          "value": "全球第一",
+          "observed_at": "2026-09-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3bb48d0a79924c04",
+              "quote": "其自研原生物理基础模型LPM近日在WorldArena2.0全球总决赛中获轨迹精度全球第一、物理合规性全球TOP3。",
+              "source_content_hash": "ffff3caebeeefd6f",
+              "quote_hash": "a4558f3db11f3268419a2f5c5004ea722d8732934cbcf8e6c776ac1937a1041b"
+            }
+          ]
+        },
+        {
+          "label": "WorldArena2.0全球总决赛物理合规性",
+          "value": "全球TOP3",
+          "observed_at": "2026-09-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3bb48d0a79924c04",
+              "quote": "其自研原生物理基础模型LPM近日在WorldArena2.0全球总决赛中获轨迹精度全球第一、物理合规性全球TOP3。",
+              "source_content_hash": "ffff3caebeeefd6f",
+              "quote_hash": "a4558f3db11f3268419a2f5c5004ea722d8732934cbcf8e6c776ac1937a1041b"
+            }
+          ]
+        },
+        {
+          "label": "注册资本",
+          "value": "100万元",
+          "observed_at": "2026-08-24",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-33579ea2ea648fac",
+              "quote": "注册资本100万元，总部位于宝安区。",
+              "source_content_hash": "7547bdabb9fa4903",
+              "quote_hash": "9618d343b92db4d49053a8f760a051ec4d6c6d5c0dcbd35fe90e7f28edc3ee8d"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "息壤开物",
+          "quote": "息壤开物坚持以贝尔曼方程最 优解作为模型的理论根基：把长程决策递归分解，让模型在长期累计回报最 大化的统一目标下，同时学习世界转移P与策略π——世界模型与策略模型的能力，在同一个基础模型里被统一。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-41f074703465b30a",
+              "quote": "息壤开物坚持以贝尔曼方程最 优解作为模型的理论根基：把长程决策递归分解，让模型在长期累计回报最 大化的统一目标下，同时学习世界转移P与策略π——世界模型与策略模型的能力，在同一个基础模型里被统一。",
+              "source_content_hash": "5f3fdf302b68696b",
+              "quote_hash": "d35f0c591b00d9b2b289c2b96fc447f32de765e94e17268c44d50e2b1c38e42b"
+            }
+          ]
+        },
+        {
+          "speaker": "息壤开物",
+          "quote": "息壤开物的目标是成为物理智能时代的底座型公司。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-41f074703465b30a",
+              "quote": "息壤开物的目标是成为物理智能时代的底座型公司。",
+              "source_content_hash": "5f3fdf302b68696b",
+              "quote_hash": "f3c94edf8e77188692675eee0df939b7d6f70b7c7084ac778f9d30c66a699b60"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是原生物理AI基座模型能否通过规模预训练持续涌现物理世界能力，并以L0通用物理基础模型、L1领域模型、L2应用模型的分层路径完成商业化闭环。当前5亿美元估值所依赖的已验证信号包括：创始团队具备华为云大模型0到1、万卡集群训练与万亿参数长稳训练经验；LPM在WorldArena2.0全球总决赛获轨迹精度全球第一、物理合规性全球TOP3；公司累计交付200+行业AI项目、项目累计金额10亿+。但证据边界明显：这些交付项目来自创始团队既往经历，而非息壤开物作为2026年7月新设主体的独立商业化验证；种子轮及天使轮投资方均未在来源中给出公开投资理由，资本判断缺乏机构原话支撑。",
+        "validated_signals": [
+          "创始团队具备华为云大模型0到1、万卡集群训练与万亿参数长稳训练经验",
+          "LPM在WorldArena2.0全球总决赛获轨迹精度全球第一、物理合规性全球TOP3",
+          "公司披露累计交付200+行业AI项目，覆盖30+行业，项目累计金额10亿+",
+          "具备昇腾首个万卡超节点集群调测实战经验，集群可用度达99.7%"
+        ],
+        "risks": [
+          "公司2026年7月才成立，来源披露的200+行业AI项目与10亿+累计金额主要来自创始团队既往经历，新主体尚未展示独立商业化验证。",
+          "物理基础模型仍处于早期阶段，来源未提供LPM在真实机器人等物理智能场景中的客户部署或付费验证证据。"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "models",
+        "use_case_ids": [
+          "physical_automation"
+        ],
+        "industry_ids": [
+          "manufacturing"
+        ],
+        "target_user_ids": [
+          "developer"
+        ],
+        "sector": "物理AI基座模型",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是原生物理AI基座模型能否通过规模预训练持续涌现物理世界能力，并以L0通用物理基础模型、L1领域模型、L2应用模型的分层路径完成商业化闭环。当前5亿美元估值所依赖的已验证信号包括：创始团队具备华为云大模型0到1、万卡集群训练与万亿参数长稳训练经验；LPM在WorldArena2.0全球总决赛获轨迹精度全球第一、物理合规性全球TOP3；公司累计交付200+行业AI项目、项目累计金额10亿+。但证据边界明显：这些交付项目来自创始团队既往经历，而非息壤开物作为2026年7月新设主体的独立商业化验证；种子轮及天使轮投资方均未在来源中给出公开投资理由，资本判断缺乏机构原话支撑。",
+          "evidence_signals": [
+            "创始团队具备华为云大模型0到1、万卡集群训练与万亿参数长稳训练经验",
+            "LPM在WorldArena2.0全球总决赛获轨迹精度全球第一、物理合规性全球TOP3",
+            "公司披露累计交付200+行业AI项目，覆盖30+行业，项目累计金额10亿+",
+            "具备昇腾首个万卡超节点集群调测实战经验，集群可用度达99.7%"
+          ],
+          "risks": [
+            "公司2026年7月才成立，来源披露的200+行业AI项目与10亿+累计金额主要来自创始团队既往经历，新主体尚未展示独立商业化验证。",
+            "物理基础模型仍处于早期阶段，来源未提供LPM在真实机器人等物理智能场景中的客户部署或付费验证证据。"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "LPM（Large Physics Model，物理基础模型）",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "XR数据平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "XR评测平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "李寅",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "张含望",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "敦鸿资产",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "华控基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "三花控股",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "银杏谷资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "泽然资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "本坚基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "上海天使会",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "标朴投资",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "天使基石",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "泽然创投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-3c86fb0161715336",
+          "date": "2026-09-23",
+          "title": "Physical AI创业公司息壤开物连获数亿元融资 AI 2026-09-23 16:38",
+          "amount": "数亿元",
+          "source_refs": [
+            "SA-3ad946506f155841"
+          ]
+        },
+        {
+          "event_id": "EV-71d477e3af99ef9a",
+          "date": "2026-09-23",
+          "title": "Physical AI创业公司息壤开物连获数亿元融资",
+          "amount": "数亿元",
+          "source_refs": [
+            "SA-c66323a7416f1222"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-41f074703465b30a",
+          "source_url": "https://m.pedaily.cn/news/569562",
+          "title": "Physical AI创业公司息壤开物连获数亿元融资 AI 2026-09-23 16:38",
+          "publisher": "投资界",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-24T00:37:06.111Z",
+          "content_hash": "5f3fdf302b68696b",
+          "source_artifact_id": "SA-3ad946506f155841",
+          "raw_id": "RAW-c3785172355aa740"
+        },
+        {
+          "source_id": "FISRC-208d487b9abe9896",
+          "source_url": "https://www.jiemian.com/article/15130462.html",
+          "title": "Physical AI初创公司息壤开物连续完成数亿元融资|界面新闻 · 快讯",
+          "publisher": "jiemian.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-24T00:39:30.577Z",
+          "content_hash": "4d802d66691cb3f8",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-33579ea2ea648fac",
+          "source_url": "https://www.aigbk.com/article/xirang_kaiwu_angel_round_financing_investors/",
+          "title": "【投融资动态】息壤开物天使轮融资，投资方为敦鸿资产、华控基金等 - 投资逻辑解析 - 股百科",
+          "publisher": "aigbk.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-24T00:39:31.583Z",
+          "content_hash": "7547bdabb9fa4903",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-3bb48d0a79924c04",
+          "source_url": "https://www.caiwennews.com/article/1621370.shtml",
+          "title": "物理基础模型公司息壤开物连获数亿元种子轮、天使轮融资 - 财闻网",
+          "publisher": "caiwennews.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-24T00:39:34.113Z",
+          "content_hash": "ffff3caebeeefd6f",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-24T00:40:01.340Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-3c86fb0161715336",
+          "confidence": 0.85,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-24T00:40:01.340Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "LPM（Large Physics Model，物理基础模型）",
+            "XR数据平台",
+            "XR评测平台"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "张含望",
+            "李寅"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-3c86fb0161715336"
+      ],
+      "aggregation": {
+        "key": "EN-67895119a5182d06|multi_round",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-7bac103a2fa22d4a",
+      "triggered_by_event_id": "EV-71d477e3af99ef9a",
+      "as_of_date": "2026-09-24",
+      "company": {
+        "entity_id": "EN-67895119a5182d06",
+        "name": "息壤开物（XIRRA）",
+        "full_name": "息壤开物（XIRRA）",
+        "website": "",
+        "summary": "息壤开物是一家AI 2.0原生物理AI基座模型公司，自研物理基础模型LPM，面向机器人等物理智能场景。",
+        "headquarters": "深圳宝安区",
+        "founders": [
+          {
+            "name": "李寅",
+            "role": "创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-da593324002f40c5",
+                "quote": "息壤开物创始人李寅，清华大学毕业，曾任华为云大模型CTO",
+                "source_content_hash": "ef19d180da83cb31",
+                "quote_hash": "f7074cb2a4179055eaa26bd009f12adc196a6d90c52f144ab2fd0451145b7b3f"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "张含望",
+            "role": "即将出任联合创始人、首席科学家",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-da593324002f40c5",
+                "quote": "即将出任息壤开物联合创始人、首席科学家的张含望",
+                "source_content_hash": "ef19d180da83cb31",
+                "quote_hash": "dfa0d0599fabb7341f5b928526686502f94ad39d6800a850fb7647ccd86abfbc"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-da593324002f40c5",
+            "quote": "息壤开物（XIRRA）是一家AI 2.0原生物理AI基座模型公司",
+            "source_content_hash": "ef19d180da83cb31",
+            "quote_hash": "5c423d7233f42a5b99d60038cd950714c66c3e2de9bd353deb097d90505775ea"
+          },
+          {
+            "source_id": "FISRC-33579ea2ea648fac",
+            "quote": "总部位于宝安区",
+            "source_content_hash": "7547bdabb9fa4903",
+            "quote_hash": "3b2bdef5eba0d9d4f1b791b91413d9afbd2442a1dc2264ab073f7e498207c8ea"
+          }
+        ],
+        "application_entity_id": "EN-67895119a5182d06",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "多轮融资",
+        "amount": "数亿元",
+        "total_raised": "数亿元",
+        "announced_at": "2026-09-23",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "敦鸿资产",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-da593324002f40c5",
+                "quote": "投资界（ID：pedaily2012）9月23日消息，息壤开物宣布已经连续 完成数亿元种子轮及天使轮融资 ，由 敦鸿资产领投，华控基金、三花控股、银杏谷资本、泽然资本、本坚基金、上海天使会、标朴投资等知名机构跟投 ，目前估值达5亿美元。",
+                "source_content_hash": "ef19d180da83cb31",
+                "quote_hash": "d4389fbde0471181d33d0511cd3c7b5e836b474569dc5cd99e9f25e5c4367fd6"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "华控基金",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-da593324002f40c5",
+                "quote": "投资界（ID：pedaily2012）9月23日消息，息壤开物宣布已经连续 完成数亿元种子轮及天使轮融资 ，由 敦鸿资产领投，华控基金、三花控股、银杏谷资本、泽然资本、本坚基金、上海天使会、标朴投资等知名机构跟投 ，目前估值达5亿美元。",
+                "source_content_hash": "ef19d180da83cb31",
+                "quote_hash": "d4389fbde0471181d33d0511cd3c7b5e836b474569dc5cd99e9f25e5c4367fd6"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "三花控股",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-da593324002f40c5",
+                "quote": "投资界（ID：pedaily2012）9月23日消息，息壤开物宣布已经连续 完成数亿元种子轮及天使轮融资 ，由 敦鸿资产领投，华控基金、三花控股、银杏谷资本、泽然资本、本坚基金、上海天使会、标朴投资等知名机构跟投 ，目前估值达5亿美元。",
+                "source_content_hash": "ef19d180da83cb31",
+                "quote_hash": "d4389fbde0471181d33d0511cd3c7b5e836b474569dc5cd99e9f25e5c4367fd6"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "银杏谷资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-da593324002f40c5",
+                "quote": "投资界（ID：pedaily2012）9月23日消息，息壤开物宣布已经连续 完成数亿元种子轮及天使轮融资 ，由 敦鸿资产领投，华控基金、三花控股、银杏谷资本、泽然资本、本坚基金、上海天使会、标朴投资等知名机构跟投 ，目前估值达5亿美元。",
+                "source_content_hash": "ef19d180da83cb31",
+                "quote_hash": "d4389fbde0471181d33d0511cd3c7b5e836b474569dc5cd99e9f25e5c4367fd6"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "泽然资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-da593324002f40c5",
+                "quote": "投资界（ID：pedaily2012）9月23日消息，息壤开物宣布已经连续 完成数亿元种子轮及天使轮融资 ，由 敦鸿资产领投，华控基金、三花控股、银杏谷资本、泽然资本、本坚基金、上海天使会、标朴投资等知名机构跟投 ，目前估值达5亿美元。",
+                "source_content_hash": "ef19d180da83cb31",
+                "quote_hash": "d4389fbde0471181d33d0511cd3c7b5e836b474569dc5cd99e9f25e5c4367fd6"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "本坚基金",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-da593324002f40c5",
+                "quote": "投资界（ID：pedaily2012）9月23日消息，息壤开物宣布已经连续 完成数亿元种子轮及天使轮融资 ，由 敦鸿资产领投，华控基金、三花控股、银杏谷资本、泽然资本、本坚基金、上海天使会、标朴投资等知名机构跟投 ，目前估值达5亿美元。",
+                "source_content_hash": "ef19d180da83cb31",
+                "quote_hash": "d4389fbde0471181d33d0511cd3c7b5e836b474569dc5cd99e9f25e5c4367fd6"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "上海天使会",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-da593324002f40c5",
+                "quote": "投资界（ID：pedaily2012）9月23日消息，息壤开物宣布已经连续 完成数亿元种子轮及天使轮融资 ，由 敦鸿资产领投，华控基金、三花控股、银杏谷资本、泽然资本、本坚基金、上海天使会、标朴投资等知名机构跟投 ，目前估值达5亿美元。",
+                "source_content_hash": "ef19d180da83cb31",
+                "quote_hash": "d4389fbde0471181d33d0511cd3c7b5e836b474569dc5cd99e9f25e5c4367fd6"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "标朴投资",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-da593324002f40c5",
+                "quote": "投资界（ID：pedaily2012）9月23日消息，息壤开物宣布已经连续 完成数亿元种子轮及天使轮融资 ，由 敦鸿资产领投，华控基金、三花控股、银杏谷资本、泽然资本、本坚基金、上海天使会、标朴投资等知名机构跟投 ，目前估值达5亿美元。",
+                "source_content_hash": "ef19d180da83cb31",
+                "quote_hash": "d4389fbde0471181d33d0511cd3c7b5e836b474569dc5cd99e9f25e5c4367fd6"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-da593324002f40c5",
+            "quote": "息壤开物宣布已经连续 完成数亿元种子轮及天使轮融资",
+            "source_content_hash": "ef19d180da83cb31",
+            "quote_hash": "f4d21ea79e153fd31b606fbadf92eeaa7170d4956022977272d075a7403d566e"
+          },
+          {
+            "source_id": "FISRC-208d487b9abe9896",
+            "quote": "息壤开物连续完成种子轮及天使轮融资，累计融资金额达数亿元",
+            "source_content_hash": "4d802d66691cb3f8",
+            "quote_hash": "e94fcc503ed204ae57137b94582057e916647600062f61d70caf882d63d02a85"
+          }
+        ],
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "total_raised_original": "数亿元",
+        "total_raised_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-71d477e3af99ef9a",
+            "round_original": "多轮融资",
+            "amount": "数亿元",
+            "announced_at": "2026-09-23",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-da593324002f40c5",
+                "quote": "息壤开物宣布已经连续 完成数亿元种子轮及天使轮融资",
+                "source_content_hash": "ef19d180da83cb31",
+                "quote_hash": "f4d21ea79e153fd31b606fbadf92eeaa7170d4956022977272d075a7403d566e"
+              },
+              {
+                "source_id": "FISRC-208d487b9abe9896",
+                "quote": "息壤开物连续完成种子轮及天使轮融资，累计融资金额达数亿元",
+                "source_content_hash": "4d802d66691cb3f8",
+                "quote_hash": "e94fcc503ed204ae57137b94582057e916647600062f61d70caf882d63d02a85"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "物理基础模型LPM（Large Physics Model）",
+          "description": "理解物理规律、预测状态演化、规划长程动作、支撑闭环执行的物理世界基础模型，以贝尔曼方程最优解为理论根基，将世界模型与策略模型统一在同一个基础模型里。",
+          "target_customers": "机器人等物理智能场景",
+          "features": [
+            "世界推演与视频渲染解耦",
+            "统一自回归架构负责因果历史与推演",
+            "扩散模型负责渲染",
+            "原生物理预训练"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-da593324002f40c5",
+              "quote": "息壤开物自研物理基础模型（Large Physics Model，LPM）——一个理解物理规律、预测状态演化、规划长程动作、支撑闭环执行的物理世界基础模型",
+              "source_content_hash": "ef19d180da83cb31",
+              "quote_hash": "c9cd237cd735adfa51e5ccea996a2f7b7ec2b4b4d0dc9c616806b2888b44e74f"
+            },
+            {
+              "source_id": "FISRC-208d487b9abe9896",
+              "quote": "公司主要研发物理基础模型LPM，面向机器人等物理智能场景",
+              "source_content_hash": "4d802d66691cb3f8",
+              "quote_hash": "fa3f7edb323823b0b8c54a078a60c1de560b01cc8dd56cdf18dfd0dda9365792"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "XR数据平台",
+          "description": "面向物理AI研发，覆盖多模态数据接入、清洗、标注、质量检查、版本管理与发布的完整流程，保持跨本体、跨模型的中立定位。",
+          "target_customers": "物理AI研发",
+          "features": [
+            "多模态数据接入",
+            "清洗、标注、质量检查",
+            "版本管理与发布"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-da593324002f40c5",
+              "quote": "XR 数据平台——面向物理AI 研发，覆盖多模态数据接入、清洗、标注、质量检查、版本管理与发布的完整流程",
+              "source_content_hash": "ef19d180da83cb31",
+              "quote_hash": "003682d46358cae710bdab55b5335631c1fde3de696abe203519d05dbc2bf769"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "XR评测平台",
+          "description": "实现从场景构建、质量检查、策略执行到报告生成的完整工作流程，打通仿真场景构建、模型推理与结果可视化全链路，形成评测即飞轮的迭代效应。",
+          "target_customers": "物理AI研发",
+          "features": [
+            "场景构建、质量检查、策略执行、报告生成",
+            "仿真场景构建、模型推理与结果可视化全链路",
+            "失败样本定位、补数与复验"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-da593324002f40c5",
+              "quote": "XR评测平台——已实现从场景构建、质量检查、策略执行到报告生成的完整工作流程",
+              "source_content_hash": "ef19d180da83cb31",
+              "quote_hash": "351acdd91e45b37967173b386e38c4a60312c8228df9599aded0b298d6cbc65b"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "估值",
+          "value": "5亿美元",
+          "observed_at": "2026-09-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-da593324002f40c5",
+              "quote": "目前估值达5亿美元",
+              "source_content_hash": "ef19d180da83cb31",
+              "quote_hash": "043c7f2629c79adfccbb04c24fd8a0221c4d3235d626f80793082462b2bfcd42"
+            }
+          ]
+        },
+        {
+          "label": "累计交付行业AI项目",
+          "value": "200+",
+          "observed_at": "2026-09-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-da593324002f40c5",
+              "quote": "息壤开物累计交付200+ 行业 AI 项目",
+              "source_content_hash": "ef19d180da83cb31",
+              "quote_hash": "dbd938a178a1799db5ca095548ae323ae7cf6a1a453dc33c02a1671f98b94ab8"
+            }
+          ]
+        },
+        {
+          "label": "覆盖行业数",
+          "value": "30+",
+          "observed_at": "2026-09-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-da593324002f40c5",
+              "quote": "覆盖金融、制造、能源、政务等30+ 行业",
+              "source_content_hash": "ef19d180da83cb31",
+              "quote_hash": "dba8a6e2d0a2ab7608042df5a12a34c8efdaebd0de8a3a8044e28e907b624611"
+            }
+          ]
+        },
+        {
+          "label": "项目累计金额",
+          "value": "10亿+",
+          "observed_at": "2026-09-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-da593324002f40c5",
+              "quote": "项目累计金额 10 亿+",
+              "source_content_hash": "ef19d180da83cb31",
+              "quote_hash": "9a8d860b254dc76e2c91a4a638d26b9b040832a0b9af379c31e7db7f94c0a4ce"
+            }
+          ]
+        },
+        {
+          "label": "集群可用度",
+          "value": "99.7%",
+          "observed_at": "2026-09-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-da593324002f40c5",
+              "quote": "集群可用度达99.7%",
+              "source_content_hash": "ef19d180da83cb31",
+              "quote_hash": "4e54327bcffec313818e7e83531e2f68519fe6d665664228d7326a2312b57577"
+            }
+          ]
+        },
+        {
+          "label": "WorldArena2.0全球总决赛轨迹精度",
+          "value": "全球第一",
+          "observed_at": "2026-09-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3bb48d0a79924c04",
+              "quote": "其自研原生物理基础模型LPM近日在WorldArena2.0全球总决赛中获轨迹精度全球第一、物理合规性全球TOP3",
+              "source_content_hash": "ffff3caebeeefd6f",
+              "quote_hash": "21ecbee627ce8d098994b61b13ef397654fa86908ce83ee3e8bad63b2b3f5138"
+            }
+          ]
+        },
+        {
+          "label": "WorldArena2.0全球总决赛物理合规性",
+          "value": "全球TOP3",
+          "observed_at": "2026-09-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3bb48d0a79924c04",
+              "quote": "其自研原生物理基础模型LPM近日在WorldArena2.0全球总决赛中获轨迹精度全球第一、物理合规性全球TOP3",
+              "source_content_hash": "ffff3caebeeefd6f",
+              "quote_hash": "21ecbee627ce8d098994b61b13ef397654fa86908ce83ee3e8bad63b2b3f5138"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "息壤开物",
+          "quote": "募集资金将主要用于原生物理AI模型的规模预训练、真实物理交互数据建设、核心研发人才引入与场景验证。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-da593324002f40c5",
+              "quote": "募集资金将主要用于原生物理AI 模型的规模预训练、真实物理交互数据建设、核心研发人才引入与场景验证",
+              "source_content_hash": "ef19d180da83cb31",
+              "quote_hash": "902c9097e2fd9c0c4fa3ac97cb4b46700e73d16cdc1a7548ecea07880339d23b"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是原生物理AI基座模型能否通过预训练阶段习得物理世界规律，并随规模持续涌现能力。本轮融资所依赖的已验证信号包括：创始人李寅具备华为云大模型CTO及华为大模型0到1核心成员背景，曾带领400人团队完成视频大模型训练与发布；公司自研LPM在WorldArena2.0全球总决赛中获轨迹精度全球第一、物理合规性全球TOP3；公司具备万卡集群稳定训练、万亿参数长稳训练与极致推理优化的工程积累，集群可用度达99.7%；累计交付200+行业AI项目，项目累计金额10亿+。估值达5亿美元。证据边界：投资机构未公开披露投资逻辑或估值依据，上述判断仅基于公司披露的业务与技术信号，无法验证商业化可持续性。",
+        "validated_signals": [
+          "创始人李寅曾任华为云大模型CTO，具备大模型0到1核心经验",
+          "LPM在WorldArena2.0全球总决赛中获轨迹精度全球第一、物理合规性全球TOP3",
+          "具备万卡集群稳定训练、万亿参数长稳训练与极致推理优化工程积累，集群可用度99.7%",
+          "累计交付200+行业AI项目，项目累计金额10亿+"
+        ],
+        "risks": [
+          "公司成立时间短，物理基础模型商业化路径尚处于场景验证阶段，缺乏公开客户与收入证据",
+          "种子轮及天使轮投资方未公开披露投资逻辑，估值达5亿美元缺乏独立第三方验证"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "development_deployment",
+        "market_application_id": "models",
+        "use_case_ids": [
+          "physical_automation"
+        ],
+        "industry_ids": [
+          "manufacturing"
+        ],
+        "target_user_ids": [
+          "developer"
+        ],
+        "sector": "物理AI基座模型",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是原生物理AI基座模型能否通过预训练阶段习得物理世界规律，并随规模持续涌现能力。本轮融资所依赖的已验证信号包括：创始人李寅具备华为云大模型CTO及华为大模型0到1核心成员背景，曾带领400人团队完成视频大模型训练与发布；公司自研LPM在WorldArena2.0全球总决赛中获轨迹精度全球第一、物理合规性全球TOP3；公司具备万卡集群稳定训练、万亿参数长稳训练与极致推理优化的工程积累，集群可用度达99.7%；累计交付200+行业AI项目，项目累计金额10亿+。估值达5亿美元。证据边界：投资机构未公开披露投资逻辑或估值依据，上述判断仅基于公司披露的业务与技术信号，无法验证商业化可持续性。",
+          "evidence_signals": [
+            "创始人李寅曾任华为云大模型CTO，具备大模型0到1核心经验",
+            "LPM在WorldArena2.0全球总决赛中获轨迹精度全球第一、物理合规性全球TOP3",
+            "具备万卡集群稳定训练、万亿参数长稳训练与极致推理优化工程积累，集群可用度99.7%",
+            "累计交付200+行业AI项目，项目累计金额10亿+"
+          ],
+          "risks": [
+            "公司成立时间短，物理基础模型商业化路径尚处于场景验证阶段，缺乏公开客户与收入证据",
+            "种子轮及天使轮投资方未公开披露投资逻辑，估值达5亿美元缺乏独立第三方验证"
+          ],
+          "institutional_rationale_status": "not_disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "物理基础模型LPM（Large Physics Model）",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "XR数据平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "XR评测平台",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "李寅",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "张含望",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "敦鸿资产",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "华控基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "三花控股",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "银杏谷资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "泽然资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "本坚基金",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "上海天使会",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "标朴投资",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-3c86fb0161715336",
+          "date": "2026-09-23",
+          "title": "Physical AI创业公司息壤开物连获数亿元融资 AI 2026-09-23 16:38",
+          "amount": "数亿元",
+          "source_refs": [
+            "SA-3ad946506f155841"
+          ]
+        },
+        {
+          "event_id": "EV-71d477e3af99ef9a",
+          "date": "2026-09-23",
+          "title": "Physical AI创业公司息壤开物连获数亿元融资",
+          "amount": "数亿元",
+          "source_refs": [
+            "SA-c66323a7416f1222"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-da593324002f40c5",
+          "source_url": "https://news.pedaily.cn/202609/569562.shtml",
+          "title": "Physical AI创业公司息壤开物连获数亿元融资",
+          "publisher": "投资界",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-24T00:37:06.115Z",
+          "content_hash": "ef19d180da83cb31",
+          "source_artifact_id": "SA-c66323a7416f1222",
+          "raw_id": "RAW-d856fedc30bc90e3"
+        },
+        {
+          "source_id": "FISRC-208d487b9abe9896",
+          "source_url": "https://www.jiemian.com/article/15130462.html",
+          "title": "Physical AI初创公司息壤开物连续完成数亿元融资|界面新闻 · 快讯",
+          "publisher": "jiemian.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-24T00:39:36.705Z",
+          "content_hash": "4d802d66691cb3f8",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-33579ea2ea648fac",
+          "source_url": "https://www.aigbk.com/article/xirang_kaiwu_angel_round_financing_investors/",
+          "title": "【投融资动态】息壤开物天使轮融资，投资方为敦鸿资产、华控基金等 - 投资逻辑解析 - 股百科",
+          "publisher": "aigbk.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-24T00:39:36.611Z",
+          "content_hash": "7547bdabb9fa4903",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-3bb48d0a79924c04",
+          "source_url": "https://www.caiwennews.com/article/1621370.shtml",
+          "title": "物理基础模型公司息壤开物连获数亿元种子轮、天使轮融资 - 财闻网",
+          "publisher": "caiwennews.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-24T00:39:37.371Z",
+          "content_hash": "ffff3caebeeefd6f",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-24T00:39:59.098Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-71d477e3af99ef9a",
+          "confidence": 0.85,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-24T00:39:59.098Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 4
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "XR数据平台",
+            "XR评测平台",
+            "物理基础模型LPM（Large Physics Model）"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 2,
+          "unresolved_names": [
+            "张含望",
+            "李寅"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-71d477e3af99ef9a"
+      ],
+      "aggregation": {
+        "key": "EN-67895119a5182d06|multi_round",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-5e102c39ac33c555",
+      "triggered_by_event_id": "EV-3ca24f79062a359e",
+      "as_of_date": "2026-09-24",
+      "company": {
+        "entity_id": "EN-73c2f5aa8e632c19",
+        "name": "长沙驰芯半导体科技有限公司",
+        "full_name": "长沙驰芯半导体科技有限公司",
+        "website": "",
+        "summary": "驰芯半导体专注于超宽带（UWB）芯片的研发和销售，以自主UWB芯片为支点，深耕高精度空间感知核心技术，致力于构筑物理世界智能化的感知底座，并致力于成为全球领先的通信定位芯片供应商。",
+        "headquarters": "长沙",
+        "founders": [
+          {
+            "name": "景振海",
+            "role": "董事长、创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-adff65727174a119",
+                "quote": "驰芯半导体董事长景振海博士表示",
+                "source_content_hash": "03e6bfdfc45c129c",
+                "quote_hash": "e2d80c4267468dee9d6b8ffba16cfbe54844d7debcb20629891dcc3a5bb2cf3f"
+              },
+              {
+                "source_id": "FISRC-cd5b0b79e0cacd63",
+                "quote": "驰芯半导体创始人景振海博士 表示",
+                "source_content_hash": "556acdb82a71c877",
+                "quote_hash": "39df6d6804e6d0ddb04f52e1f1a02958c8b71d86668b0d155e3fcefd8838f801"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-adff65727174a119",
+            "quote": "长沙驰芯半导体科技有限公司（以下简称“驰芯半导体”）专注于超宽带（Ultra Wide Band，简称UWB）芯片的研发和销售，致力于成为全球领 先的通信定位芯片供应商。",
+            "source_content_hash": "03e6bfdfc45c129c",
+            "quote_hash": "ae4a05048c79727a28901d444dc5745ecdb3dbf20763c597f6aad32623363850"
+          },
+          {
+            "source_id": "FISRC-b933ce2c89b5ae5d",
+            "quote": "驰芯半导体以自主UWB芯片为支点，深耕高精度空间感知核心技术，致力于构筑物理世界智能化的感知底座。",
+            "source_content_hash": "d67710f8dbb18d0d",
+            "quote_hash": "955a2fe9790b696d15b28005c18a693bee093b4543d4d9f6e22d6845eb0cbfa9"
+          }
+        ],
+        "application_entity_id": "EN-73c2f5aa8e632c19",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "A+轮",
+        "amount": "亿元",
+        "total_raised": "",
+        "announced_at": "2026-09-23",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "上海沿浦精工科技（集团）股份有限公司",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-adff65727174a119",
+                "quote": "本轮融资由 上海沿浦精工科技（集团）股份有限公司（下称“沿浦精工”）领投",
+                "source_content_hash": "03e6bfdfc45c129c",
+                "quote_hash": "64dd659d75a0fcc73ae2de4248c5fa6dc637e45b0d61c514261418271abfaa20"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "湖南金霞盛世股权投资基金合伙企业（有限合伙）",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-adff65727174a119",
+                "quote": "湖南金霞盛世股权投资基金合伙企业（有限合伙）（下称“金霞盛世”）、上海移远通信技术股份有限公司（下称“移远通信”）、长沙麓山投资控股集团有限公司（下称“麓山控股”）联合参投",
+                "source_content_hash": "03e6bfdfc45c129c",
+                "quote_hash": "11ca97fbe8513dc5e03a93bc6adb01108880c7cc8d01ab11f897958826f6b0b2"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "上海移远通信技术股份有限公司",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-adff65727174a119",
+                "quote": "湖南金霞盛世股权投资基金合伙企业（有限合伙）（下称“金霞盛世”）、上海移远通信技术股份有限公司（下称“移远通信”）、长沙麓山投资控股集团有限公司（下称“麓山控股”）联合参投",
+                "source_content_hash": "03e6bfdfc45c129c",
+                "quote_hash": "11ca97fbe8513dc5e03a93bc6adb01108880c7cc8d01ab11f897958826f6b0b2"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "长沙麓山投资控股集团有限公司",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-adff65727174a119",
+                "quote": "湖南金霞盛世股权投资基金合伙企业（有限合伙）（下称“金霞盛世”）、上海移远通信技术股份有限公司（下称“移远通信”）、长沙麓山投资控股集团有限公司（下称“麓山控股”）联合参投",
+                "source_content_hash": "03e6bfdfc45c129c",
+                "quote_hash": "11ca97fbe8513dc5e03a93bc6adb01108880c7cc8d01ab11f897958826f6b0b2"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "兴湘资本",
+            "role": "A轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-cd5b0b79e0cacd63",
+                "quote": "本轮融资由 兴湘资本领投、北京基石创投、财信金控、农银国际、昆山高新创投、及橡果资本等 多家头部创投机构共同投资",
+                "source_content_hash": "556acdb82a71c877",
+                "quote_hash": "947f78e911058631259b73771c06ee2cef87fdb2b2a28ec7b2b338e501dd7786"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "北京基石创投",
+            "role": "A轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-cd5b0b79e0cacd63",
+                "quote": "本轮融资由 兴湘资本领投、北京基石创投、财信金控、农银国际、昆山高新创投、及橡果资本等 多家头部创投机构共同投资",
+                "source_content_hash": "556acdb82a71c877",
+                "quote_hash": "947f78e911058631259b73771c06ee2cef87fdb2b2a28ec7b2b338e501dd7786"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "财信金控",
+            "role": "A轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-cd5b0b79e0cacd63",
+                "quote": "本轮融资由 兴湘资本领投、北京基石创投、财信金控、农银国际、昆山高新创投、及橡果资本等 多家头部创投机构共同投资",
+                "source_content_hash": "556acdb82a71c877",
+                "quote_hash": "947f78e911058631259b73771c06ee2cef87fdb2b2a28ec7b2b338e501dd7786"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "农银国际",
+            "role": "A轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-cd5b0b79e0cacd63",
+                "quote": "本轮融资由 兴湘资本领投、北京基石创投、财信金控、农银国际、昆山高新创投、及橡果资本等 多家头部创投机构共同投资",
+                "source_content_hash": "556acdb82a71c877",
+                "quote_hash": "947f78e911058631259b73771c06ee2cef87fdb2b2a28ec7b2b338e501dd7786"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "昆山高新创投",
+            "role": "A轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-cd5b0b79e0cacd63",
+                "quote": "本轮融资由 兴湘资本领投、北京基石创投、财信金控、农银国际、昆山高新创投、及橡果资本等 多家头部创投机构共同投资",
+                "source_content_hash": "556acdb82a71c877",
+                "quote_hash": "947f78e911058631259b73771c06ee2cef87fdb2b2a28ec7b2b338e501dd7786"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "橡果资本",
+            "role": "A轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-cd5b0b79e0cacd63",
+                "quote": "本轮融资由 兴湘资本领投、北京基石创投、财信金控、农银国际、昆山高新创投、及橡果资本等 多家头部创投机构共同投资",
+                "source_content_hash": "556acdb82a71c877",
+                "quote_hash": "947f78e911058631259b73771c06ee2cef87fdb2b2a28ec7b2b338e501dd7786"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "翱鹏投资",
+            "role": "A+轮投资",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-274bb287554403bb",
+                "quote": "近日，长沙驰芯半导体科技有限公司获得A+轮融资，翱鹏投资投资。",
+                "source_content_hash": "b75c2b0c21ca28ae",
+                "quote_hash": "7afb296f702338ee72eb34d8aed2b7c0e05d14dae474fa58726b9f711235a5e6"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "麓谷发展集团",
+            "role": "A+轮投资",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d7c3cbdfafeaf4fc",
+                "quote": "A+轮，融资金额未公开 2025.10.15，麓谷发展集团",
+                "source_content_hash": "9d7575ba7af1f209",
+                "quote_hash": "6767e75b2593984dfcaefbe2001e8a72f177bb33dc0f57ec3197467a830b56d4"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "昆高新集团",
+            "role": "A+轮投资",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d7c3cbdfafeaf4fc",
+                "quote": "A+轮，融资金额未公开 2024.09.19，昆高新集团",
+                "source_content_hash": "9d7575ba7af1f209",
+                "quote_hash": "eaecb19ffe4336c4b7b1b934ae3331d0e70aaa8a6da3118abbd80e9bc7cd9fa7"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "民生证券投资",
+            "role": "A轮投资",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d7c3cbdfafeaf4fc",
+                "quote": "A轮，融资金额未公开 2023.04.01，民生证券投资，安睿信杰",
+                "source_content_hash": "9d7575ba7af1f209",
+                "quote_hash": "a2f6fc222e4db97dd97c9a7a0c41e40ee0d6dbcf3715452cf459cf48e0d9d555"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "安睿信杰",
+            "role": "A轮投资",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d7c3cbdfafeaf4fc",
+                "quote": "A轮，融资金额未公开 2023.04.01，民生证券投资，安睿信杰",
+                "source_content_hash": "9d7575ba7af1f209",
+                "quote_hash": "a2f6fc222e4db97dd97c9a7a0c41e40ee0d6dbcf3715452cf459cf48e0d9d555"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "惠友资本",
+            "role": "Pre-A轮投资",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d7c3cbdfafeaf4fc",
+                "quote": "Pre-A轮，1亿人民币 2022.10.01，惠友资本，上海驭快，鸿石资本",
+                "source_content_hash": "9d7575ba7af1f209",
+                "quote_hash": "c45b85546ad6f32730d3ddda7e98c94fecdb1521293edd70edf5a64509313071"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "上海驭快",
+            "role": "Pre-A轮投资",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d7c3cbdfafeaf4fc",
+                "quote": "Pre-A轮，1亿人民币 2022.10.01，惠友资本，上海驭快，鸿石资本",
+                "source_content_hash": "9d7575ba7af1f209",
+                "quote_hash": "c45b85546ad6f32730d3ddda7e98c94fecdb1521293edd70edf5a64509313071"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "鸿石资本",
+            "role": "Pre-A轮投资",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d7c3cbdfafeaf4fc",
+                "quote": "Pre-A轮，1亿人民币 2022.10.01，惠友资本，上海驭快，鸿石资本",
+                "source_content_hash": "9d7575ba7af1f209",
+                "quote_hash": "c45b85546ad6f32730d3ddda7e98c94fecdb1521293edd70edf5a64509313071"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "惠友投资",
+            "role": "Pre-A+轮投资",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d7c3cbdfafeaf4fc",
+                "quote": "Pre-A+轮，近亿人民币 2022.09.01，惠友投资，上海驭快，鸿石资本，鸿石联合",
+                "source_content_hash": "9d7575ba7af1f209",
+                "quote_hash": "b1a239b0605052452c0f8f64aa2ca4a1af1e238e475cc06de68d210bf758cca8"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "鸿石联合",
+            "role": "Pre-A+轮投资",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d7c3cbdfafeaf4fc",
+                "quote": "Pre-A+轮，近亿人民币 2022.09.01，惠友投资，上海驭快，鸿石资本，鸿石联合",
+                "source_content_hash": "9d7575ba7af1f209",
+                "quote_hash": "b1a239b0605052452c0f8f64aa2ca4a1af1e238e475cc06de68d210bf758cca8"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "联和资本",
+            "role": "Pre-A轮投资",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d7c3cbdfafeaf4fc",
+                "quote": "Pre-A轮，数千万人民币 2021.08.01，联和资本，力合科创，蓝微电子，麓谷发展集团，惠友投资，德赛电池",
+                "source_content_hash": "9d7575ba7af1f209",
+                "quote_hash": "060f851f4ecabbd02f43d78b7a5c3e14438976a439f01cc5d07b9702463ec114"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "力合科创",
+            "role": "Pre-A轮投资",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d7c3cbdfafeaf4fc",
+                "quote": "Pre-A轮，数千万人民币 2021.08.01，联和资本，力合科创，蓝微电子，麓谷发展集团，惠友投资，德赛电池",
+                "source_content_hash": "9d7575ba7af1f209",
+                "quote_hash": "060f851f4ecabbd02f43d78b7a5c3e14438976a439f01cc5d07b9702463ec114"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "蓝微电子",
+            "role": "Pre-A轮投资",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d7c3cbdfafeaf4fc",
+                "quote": "Pre-A轮，数千万人民币 2021.08.01，联和资本，力合科创，蓝微电子，麓谷发展集团，惠友投资，德赛电池",
+                "source_content_hash": "9d7575ba7af1f209",
+                "quote_hash": "060f851f4ecabbd02f43d78b7a5c3e14438976a439f01cc5d07b9702463ec114"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "德赛电池",
+            "role": "Pre-A轮投资",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d7c3cbdfafeaf4fc",
+                "quote": "Pre-A轮，数千万人民币 2021.08.01，联和资本，力合科创，蓝微电子，麓谷发展集团，惠友投资，德赛电池",
+                "source_content_hash": "9d7575ba7af1f209",
+                "quote_hash": "060f851f4ecabbd02f43d78b7a5c3e14438976a439f01cc5d07b9702463ec114"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "君爵投资",
+            "role": "天使轮投资",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d7c3cbdfafeaf4fc",
+                "quote": "天使轮，数千万人民币 2020.08.01，君爵投资，长沙群欣",
+                "source_content_hash": "9d7575ba7af1f209",
+                "quote_hash": "0a35b08ee7ab61940749ca60dec8c3a8cf5a905fdeb8542cfd716078e34bb7f7"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "长沙群欣",
+            "role": "天使轮投资",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d7c3cbdfafeaf4fc",
+                "quote": "天使轮，数千万人民币 2020.08.01，君爵投资，长沙群欣",
+                "source_content_hash": "9d7575ba7af1f209",
+                "quote_hash": "0a35b08ee7ab61940749ca60dec8c3a8cf5a905fdeb8542cfd716078e34bb7f7"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-adff65727174a119",
+            "quote": "投资界（ID：pedaily2012）9月23日消息，驰芯半导体正式 完成 超两亿元 A +轮融资 。",
+            "source_content_hash": "03e6bfdfc45c129c",
+            "quote_hash": "53b12c772baea42bbc328cbb63ff1a1ffee962d2a95dbb0014106436f92a8557"
+          },
+          {
+            "source_id": "FISRC-adff65727174a119",
+            "quote": "驰芯半导体正式 完成 超两亿元 A +轮融资 。本轮融资由 上海沿浦精工科技（集团）股份有限公司（下称“沿浦精工”）领投，湖南金霞盛世股权投资基金合伙企业（有限合伙）（下称“金霞盛世”）、上海移远通信技术股份有限公司（下称“移远通信”）、长沙麓山投资控股集团有限公司（下称“麓山控股”）联合参投 。",
+            "source_content_hash": "03e6bfdfc45c129c",
+            "quote_hash": "4ba2c418c291509e83b22fbe7526c94dd15a86b2952a7ac324f7ed279dce92f0"
+          }
+        ],
+        "round_code": "series_a_plus",
+        "round_original": "A+轮",
+        "amount_original": "亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿元–10 亿元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-3ca24f79062a359e",
+            "round_original": "A+轮",
+            "amount": "亿元",
+            "announced_at": "2026-09-23",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-adff65727174a119",
+                "quote": "投资界（ID：pedaily2012）9月23日消息，驰芯半导体正式 完成 超两亿元 A +轮融资 。",
+                "source_content_hash": "03e6bfdfc45c129c",
+                "quote_hash": "53b12c772baea42bbc328cbb63ff1a1ffee962d2a95dbb0014106436f92a8557"
+              },
+              {
+                "source_id": "FISRC-adff65727174a119",
+                "quote": "驰芯半导体正式 完成 超两亿元 A +轮融资 。本轮融资由 上海沿浦精工科技（集团）股份有限公司（下称“沿浦精工”）领投，湖南金霞盛世股权投资基金合伙企业（有限合伙）（下称“金霞盛世”）、上海移远通信技术股份有限公司（下称“移远通信”）、长沙麓山投资控股集团有限公司（下称“麓山控股”）联合参投 。",
+                "source_content_hash": "03e6bfdfc45c129c",
+                "quote_hash": "4ba2c418c291509e83b22fbe7526c94dd15a86b2952a7ac324f7ed279dce92f0"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "CX100系列UWB芯片",
+          "description": "驰芯半导体UWB芯片产品系列之一，已实现量产，并与消费电子、物联网、汽车电子和工业市场头部客户建立合作并出货。",
+          "target_customers": "消费电子、物联网、汽车电子和工业市场头部客户",
+          "features": [
+            "已实现量产"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-adff65727174a119",
+              "quote": "目前公司UWB芯片产品CX100、CX310和CX500系列已实现量产，并与消费电子、物联网、汽车电子和工业市场头部客户建立合作并出货。",
+              "source_content_hash": "03e6bfdfc45c129c",
+              "quote_hash": "40529d11074fda5f2020cb838badbba27017df230ec8ed3ce654f1ef835b6507"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "CX310系列UWB芯片",
+          "description": "驰芯半导体UWB芯片产品系列之一，已实现量产，并与消费电子、物联网、汽车电子和工业市场头部客户建立合作并出货。",
+          "target_customers": "消费电子、物联网、汽车电子和工业市场头部客户",
+          "features": [
+            "已实现量产"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-adff65727174a119",
+              "quote": "目前公司UWB芯片产品CX100、CX310和CX500系列已实现量产，并与消费电子、物联网、汽车电子和工业市场头部客户建立合作并出货。",
+              "source_content_hash": "03e6bfdfc45c129c",
+              "quote_hash": "40529d11074fda5f2020cb838badbba27017df230ec8ed3ce654f1ef835b6507"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "CX500系列UWB芯片",
+          "description": "驰芯半导体UWB芯片产品系列之一，已实现量产，并与消费电子、物联网、汽车电子和工业市场头部客户建立合作并出货。",
+          "target_customers": "消费电子、物联网、汽车电子和工业市场头部客户",
+          "features": [
+            "已实现量产"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-adff65727174a119",
+              "quote": "目前公司UWB芯片产品CX100、CX310和CX500系列已实现量产，并与消费电子、物联网、汽车电子和工业市场头部客户建立合作并出货。",
+              "source_content_hash": "03e6bfdfc45c129c",
+              "quote_hash": "40529d11074fda5f2020cb838badbba27017df230ec8ed3ce654f1ef835b6507"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "国际龙头企业",
+          "product": "国际龙头企业竞品UWB芯片",
+          "scenario": "海内外多家客户测试",
+          "target_customer": "海内外多家客户",
+          "funding_summary": "",
+          "core_difference": "驰芯半导体CX100、CX310、CX500系列UWB SoC芯片在海内外多家客户测试中展现出明显竞争优势，对比国际龙头企业的竞品，雷达性能明显更优的同时，保证优异的通信和定位性能。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cd5b0b79e0cacd63",
+              "quote": "旗下的CX100、CX310、CX500系列UWB S0C芯片，在海内外多家客户测试中展现出明显竞争优势，对比国际龙头企业的竞品，雷达性能明显更优的同时，保证优异的通信和定位性能",
+              "source_content_hash": "556acdb82a71c877",
+              "quote_hash": "e345e822bfdf53b33c284d496671a82020945f5fd822ac6cdad2a08161883eb6"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "累计出货量",
+          "value": "数百万颗",
+          "observed_at": "2024-12-31",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cd5b0b79e0cacd63",
+              "quote": "截至2024年底，公司累计出货数百万颗",
+              "source_content_hash": "556acdb82a71c877",
+              "quote_hash": "0105cf8e7a6cd5721f4dbd387cd26d0bfd9b36bb34f69247923db601c0c28b54"
+            }
+          ]
+        },
+        {
+          "label": "2025年在售UWB芯片订单",
+          "value": "超千万颗",
+          "observed_at": "2025-03-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cd5b0b79e0cacd63",
+              "quote": "2025年在售UWB芯片订单超千万颗",
+              "source_content_hash": "556acdb82a71c877",
+              "quote_hash": "5f6f055501859c6c7449a642c8dd7df43ed821f71efaaf41d983360188be9f1d"
+            }
+          ]
+        },
+        {
+          "label": "累计申请专利",
+          "value": "超百项",
+          "observed_at": "2025-03-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cd5b0b79e0cacd63",
+              "quote": "公司累计申请专利超百项，覆盖射频架构、信号处理等核心环节",
+              "source_content_hash": "556acdb82a71c877",
+              "quote_hash": "c22e1b7e84312df394794e19a7ba96d35ee21a924577c15a60f395db3e586829"
+            }
+          ]
+        },
+        {
+          "label": "核心骨干半导体从业经验",
+          "value": "全部超过10年",
+          "observed_at": "2026-09-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-adff65727174a119",
+              "quote": "核心骨干的半导体从业经验全部超过10年",
+              "source_content_hash": "03e6bfdfc45c129c",
+              "quote_hash": "a9d1b19702a90f7ca07af5c6c000cff2b6b6b40f5e0cbb71ce83e20bd9d295b1"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "周建清",
+          "quote": "沿浦精工长期立足主业，积极拓展机器人等新质生产力领域布局。此次战略投资驰芯半导体，是公司深化产业链上游布局、抢占物理AI 空间感知制高点的重要举措。我们高度看好该领域的广阔前景，愿与驰芯团队并肩同行，加快国产UWB 芯片在工业 5.0、具身智能等具体应用场景的落地。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-adff65727174a119",
+              "quote": "沿浦精工创始人、董事长周建清先生表示 ：“沿浦精工长期立足主业，积极拓展机器人等新质生产力领域布局。此次战略投资驰芯半导体，是公司深化产业链上游布局、抢占物理AI 空间感知制高点的重要举措。我们高度看好该领域的广阔前景，愿与驰芯团队并肩同行，加快国产UWB 芯片在工业 5.0、具身智能等具体应用场景的落地。”",
+              "source_content_hash": "03e6bfdfc45c129c",
+              "quote_hash": "01d178537578c0c584ee56f72f1ff5bf88aeb38a876c230b1379d0319998fad7"
+            }
+          ]
+        },
+        {
+          "speaker": "张栋",
+          "quote": "在 AI、机器人、XR 浪潮交汇的时代背景下，连接、算力与 AI 的深度融合，是移远通信深耕通信与智能领域十五年所积淀的能力底座。作为全球最 大的通信模组商，我们愿与驰芯半导体在前期项目合作的基础上深度绑定，围绕智能雷达、AI 硬件等新兴场景打造差异化竞争优势，携手开拓物理 AI 时代的增量市场。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-adff65727174a119",
+              "quote": "移远通信联合创始人、首席运营官张栋先生指出 ：\"在 AI、机器人、XR 浪潮交汇的时代背景下，连接、算力与 AI 的深度融合，是移远通信深耕通信与智能领域十五年所积淀的能力底座。作为全球最 大的通信模组商，我们愿与驰芯半导体在前期项目合作的基础上深度绑定，围绕智能雷达、AI 硬件等新兴场景打造差异化竞争优势，携手开拓物理 AI 时代的增量市场。”",
+              "source_content_hash": "03e6bfdfc45c129c",
+              "quote_hash": "ec1763b604de128f360acd4046ea73b99f95eaba5956cfa00fbc3ddb4b43e032"
+            }
+          ]
+        },
+        {
+          "speaker": "张志远",
+          "quote": "驰芯半导体在高端芯片领域的技术积累和商业化落地能力，与新区产业发展方向高度契合。此次投资驰芯半导体，正是麓山控股围绕湘江新区人工智能产业深化布局、聚焦半导体行业开展投资的重要探索。未来，麓山控股将充分发挥国有资本的引导作用和产业资源的协同优势，以多元化的赋能方式，陪伴驰芯半导体在高端芯片赛道上走得更稳更远，为长沙市打造“人工智能+制造”融合发展标杆城市贡献力量。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-adff65727174a119",
+              "quote": "麓山控股董事长张志远表示 ：“驰芯半导体在高端芯片领域的技术积累和商业化落地能力，与新区产业发展方向高度契合。此次投资驰芯半导体，正是麓山控股围绕湘江新区人工智能产业深化布局、聚焦半导体行业开展投资的重要探索。未来，麓山控股将充分发挥国有资本的引导作用和产业资源的协同优势，以多元化的赋能方式，陪伴驰芯半导体在高端芯片赛道上走得更稳更远，为长沙市打造“人工智能+制造”融合发展标杆城市贡献力量。”",
+              "source_content_hash": "03e6bfdfc45c129c",
+              "quote_hash": "b60c9566d1569c63957f162386ddf26fa6f0d7c0c9e4d78bc6aa7ab0a8412ece"
+            }
+          ]
+        },
+        {
+          "speaker": "景振海",
+          "quote": "顺利完成 A + 轮融资，是资本市场对驰芯团队坚持长期主义、坚守核心技术自研、开创物理 AI 空间感知细分赛道的充分肯定，我们由衷感谢股东们的信任与托举。以此为新的起点，公司将持续加大研发投入，加快新产品量产与迭代，深化与产业伙伴的协同合作，推动国产UWB芯片在更多应用场景规模化落地，向着成为全球第 一的物理 AI 空间感知厂商的目标坚实迈进。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-adff65727174a119",
+              "quote": "驰芯半导体董事长景振海博士表示 ：“顺利完成 A + 轮融资，是资本市场对驰芯团队坚持长期主义、坚守核心技术自研、开创物理 AI 空间感知细分赛道的充分肯定，我们由衷感谢股东们的信任与托举。以此为新的起点，公司将持续加大研发投入，加快新产品量产与迭代，深化与产业伙伴的协同合作，推动国产UWB芯片在更多应用场景规模化落地，向着成为全球第 一的物理 AI 空间感知厂商的目标坚实迈进。”",
+              "source_content_hash": "03e6bfdfc45c129c",
+              "quote_hash": "3d281fca599318f58a478be4de2b2c182f4c456405969f7f5e95e4f1e6a5deb2"
+            }
+          ]
+        },
+        {
+          "speaker": "张亮",
+          "quote": "我们高度认可长沙驰芯半导体在高端芯片领域展现出的专业研发能力和产业化潜力。其团队在关键技术攻关中展现出的坚韧与高效执行力，为国产芯片崛起注入了强劲动力。未来，兴湘资本将继续以多元化资源和灵活多样的赋能方式，助力驰芯半导体实现更高质量的发展。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cd5b0b79e0cacd63",
+              "quote": "兴湘资本董事长张亮 表示：“我们高度认可长沙驰芯半导体在高端芯片领域展现出的专业研发能力和产业化潜力。其团队在关键技术攻关中展现出的坚韧与高效执行力，为国产芯片崛起注入了强劲动力。未来，兴湘资本将继续以多元化资源和灵活多样的赋能方式，助力驰芯半导体实现更高质量的发展。”",
+              "source_content_hash": "556acdb82a71c877",
+              "quote_hash": "363d6d936e001521e34120ca7a18c73cce03474f4ae662d4ee9aee94f7d0ea18"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "上海沿浦精工科技（集团）股份有限公司",
+            "speaker": "周建清",
+            "speaker_role": "创始人、董事长",
+            "rationale": "沿浦精工将此次战略投资视为深化产业链上游布局、抢占物理AI空间感知制高点的重要举措，看好国产UWB芯片在工业5.0、具身智能等场景的落地前景。",
+            "quote": "此次战略投资驰芯半导体，是公司深化产业链上游布局、抢占物理AI 空间感知制高点的重要举措。我们高度看好该领域的广阔前景，愿与驰芯团队并肩同行，加快国产UWB 芯片在工业 5.0、具身智能等具体应用场景的落地。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-adff65727174a119",
+                "quote": "此次战略投资驰芯半导体，是公司深化产业链上游布局、抢占物理AI 空间感知制高点的重要举措。我们高度看好该领域的广阔前景，愿与驰芯团队并肩同行，加快国产UWB 芯片在工业 5.0、具身智能等具体应用场景的落地。",
+                "source_content_hash": "03e6bfdfc45c129c",
+                "quote_hash": "1b1d5c00bf5e793dd78e08a12f159bdc28cdba791a47c0830139b0e282d1f7f6"
+              }
+            ]
+          },
+          {
+            "institution": "上海移远通信技术股份有限公司",
+            "speaker": "张栋",
+            "speaker_role": "联合创始人、首席运营官",
+            "rationale": "移远通信基于前期项目合作，希望与驰芯半导体深度绑定，围绕智能雷达、AI硬件等新兴场景打造差异化竞争优势，开拓物理AI时代的增量市场。",
+            "quote": "作为全球最 大的通信模组商，我们愿与驰芯半导体在前期项目合作的基础上深度绑定，围绕智能雷达、AI 硬件等新兴场景打造差异化竞争优势，携手开拓物理 AI 时代的增量市场。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-adff65727174a119",
+                "quote": "作为全球最 大的通信模组商，我们愿与驰芯半导体在前期项目合作的基础上深度绑定，围绕智能雷达、AI 硬件等新兴场景打造差异化竞争优势，携手开拓物理 AI 时代的增量市场。",
+                "source_content_hash": "03e6bfdfc45c129c",
+                "quote_hash": "d22903182bba70b1da82c72f6b27910432568367b33fb9edd80fa2686b78fe87"
+              }
+            ]
+          },
+          {
+            "institution": "长沙麓山投资控股集团有限公司",
+            "speaker": "张志远",
+            "speaker_role": "董事长",
+            "rationale": "麓山控股认为驰芯半导体在高端芯片领域的技术积累和商业化落地能力与湘江新区人工智能产业发展方向高度契合，投资是其围绕人工智能产业深化布局、聚焦半导体行业的重要探索。",
+            "quote": "驰芯半导体在高端芯片领域的技术积累和商业化落地能力，与新区产业发展方向高度契合。此次投资驰芯半导体，正是麓山控股围绕湘江新区人工智能产业深化布局、聚焦半导体行业开展投资的重要探索。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-adff65727174a119",
+                "quote": "驰芯半导体在高端芯片领域的技术积累和商业化落地能力，与新区产业发展方向高度契合。此次投资驰芯半导体，正是麓山控股围绕湘江新区人工智能产业深化布局、聚焦半导体行业开展投资的重要探索。",
+                "source_content_hash": "03e6bfdfc45c129c",
+                "quote_hash": "2302d1ebc4c317fdc8f4f0aae1fade32ac732759c37415c2f95b4c4643d3e6d7"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是国产UWB芯片在物理AI空间感知场景中的规模化应用能力，尤其是车规级芯片导入、具身智能场景落地和产业生态共建。本轮融资所依赖的已验证信号包括：CX100、CX310、CX500系列已实现量产并与消费电子、物联网、汽车电子和工业市场头部客户建立合作并出货；截至2024年底累计出货数百万颗，2025年在售UWB芯片订单超千万颗；公司具备从射频前端到协议栈的全栈自研能力，累计申请专利超百项。证据边界在于：来源未披露本轮融资的具体估值、投后估值或营收数据，也未披露具体客户名称；融资后商业化进展仍需后续验证。",
+        "validated_signals": [
+          "CX100、CX310和CX500系列UWB芯片已实现量产",
+          "与消费电子、物联网、汽车电子和工业市场头部客户建立合作并出货",
+          "截至2024年底累计出货数百万颗，2025年在售UWB芯片订单超千万颗",
+          "具备从射频前端到协议栈的UWB全栈技术自主研发能力",
+          "累计申请专利超百项，覆盖射频架构、信号处理等核心环节"
+        ],
+        "risks": [
+          "来源未披露本轮融资的具体估值和投后估值，资本判断缺乏估值锚点",
+          "来源未披露具体客户名称，商业化质量难以独立验证",
+          "UWB芯片市场面临国际龙头企业竞争，国产替代的规模化节奏存在不确定性"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "hardware_computing",
+        "market_application_id": "chips",
+        "use_case_ids": [
+          "physical_automation"
+        ],
+        "industry_ids": [
+          "automotive_transportation",
+          "manufacturing",
+          "retail_ecommerce"
+        ],
+        "target_user_ids": [
+          "business_user"
+        ],
+        "sector": "半导体芯片",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是国产UWB芯片在物理AI空间感知场景中的规模化应用能力，尤其是车规级芯片导入、具身智能场景落地和产业生态共建。本轮融资所依赖的已验证信号包括：CX100、CX310、CX500系列已实现量产并与消费电子、物联网、汽车电子和工业市场头部客户建立合作并出货；截至2024年底累计出货数百万颗，2025年在售UWB芯片订单超千万颗；公司具备从射频前端到协议栈的全栈自研能力，累计申请专利超百项。证据边界在于：来源未披露本轮融资的具体估值、投后估值或营收数据，也未披露具体客户名称；融资后商业化进展仍需后续验证。",
+          "evidence_signals": [
+            "CX100、CX310和CX500系列UWB芯片已实现量产",
+            "与消费电子、物联网、汽车电子和工业市场头部客户建立合作并出货",
+            "截至2024年底累计出货数百万颗，2025年在售UWB芯片订单超千万颗",
+            "具备从射频前端到协议栈的UWB全栈技术自主研发能力",
+            "累计申请专利超百项，覆盖射频架构、信号处理等核心环节"
+          ],
+          "risks": [
+            "来源未披露本轮融资的具体估值和投后估值，资本判断缺乏估值锚点",
+            "来源未披露具体客户名称，商业化质量难以独立验证",
+            "UWB芯片市场面临国际龙头企业竞争，国产替代的规模化节奏存在不确定性"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "CX100系列UWB芯片",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "CX310系列UWB芯片",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "CX500系列UWB芯片",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "景振海",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "上海沿浦精工科技（集团）股份有限公司",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "湖南金霞盛世股权投资基金合伙企业（有限合伙）",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "上海移远通信技术股份有限公司",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "长沙麓山投资控股集团有限公司",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "兴湘资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "北京基石创投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "财信金控",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "农银国际",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "昆山高新创投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "橡果资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "翱鹏投资",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "麓谷发展集团",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "昆高新集团",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "民生证券投资",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "安睿信杰",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "惠友资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "上海驭快",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "鸿石资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "惠友投资",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "鸿石联合",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "联和资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "力合科创",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "蓝微电子",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "德赛电池",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "君爵投资",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "长沙群欣",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "国际龙头企业",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-3ca24f79062a359e",
+          "date": "2026-09-23",
+          "title": "驰芯半导体完成超两亿元A+轮融资，致力于构筑物理世界智能化的感知底座",
+          "amount": "亿元",
+          "source_refs": [
+            "SA-c6475d75cc6e8f01"
+          ]
+        },
+        {
+          "event_id": "EV-0f2e50fbc9af587a",
+          "date": "2026-09-23",
+          "title": "驰芯半导体完成超两亿元 A + 轮融资 本轮融资由上海沿浦精工科技（集团）股份有限公司（简称“沿浦精工”）领投 投中网 · 17小时前",
+          "amount": "亿元人民币",
+          "source_refs": [
+            "SA-6c07976244ef6c15"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-adff65727174a119",
+          "source_url": "https://news.pedaily.cn/202609/569521.shtml",
+          "title": "驰芯半导体完成超两亿元A+轮融资，致力于构筑物理世界智能化的感知底座",
+          "publisher": "投资界",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-24T00:37:06.082Z",
+          "content_hash": "03e6bfdfc45c129c",
+          "source_artifact_id": "SA-c6475d75cc6e8f01",
+          "raw_id": "RAW-e00ae576b32a89a5"
+        },
+        {
+          "source_id": "FISRC-d7c3cbdfafeaf4fc",
+          "source_url": "https://m.jobui.com/company/16905688/financing/",
+          "title": "登录 - 职友集",
+          "publisher": "m.jobui.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-09-24T00:38:55.627Z",
+          "content_hash": "9d7575ba7af1f209",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-b933ce2c89b5ae5d",
+          "source_url": "https://feng.ifeng.com/c/8weI8RLSzhs",
+          "title": "驰芯半导体完成超两亿元A+轮融资，致力于构筑物理世界智能化的感知底座_大风号_凤凰网",
+          "publisher": "feng.ifeng.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-24T00:38:54.283Z",
+          "content_hash": "d67710f8dbb18d0d",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-cd5b0b79e0cacd63",
+          "source_url": "https://news.pedaily.cn/202503/547159.shtml",
+          "title": "驰芯半导体获近2亿A轮融资，兴湘资本领投_投资界",
+          "publisher": "news.pedaily.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-24T00:38:54.453Z",
+          "content_hash": "556acdb82a71c877",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-274bb287554403bb",
+          "source_url": "https://www.icviews.cn/news/23289/7",
+          "title": "UWB芯片商驰芯半导体获A+轮融资",
+          "publisher": "icviews.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-24T00:38:54.751Z",
+          "content_hash": "b75c2b0c21ca28ae",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-24T00:39:35.507Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-3ca24f79062a359e",
+          "confidence": 0.85,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-24T00:39:35.507Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 5
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "CX100系列UWB芯片",
+            "CX310系列UWB芯片",
+            "CX500系列UWB芯片"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "景振海"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-3ca24f79062a359e"
+      ],
+      "aggregation": {
+        "key": "EN-73c2f5aa8e632c19|series_a_plus",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.3",
+      "funding_insight_id": "FI-9dca49960ec03d63",
+      "triggered_by_event_id": "EV-0f2e50fbc9af587a",
+      "as_of_date": "2026-09-24",
+      "company": {
+        "entity_id": "EN-73c2f5aa8e632c19",
+        "name": "长沙驰芯半导体科技有限公司",
+        "full_name": "长沙驰芯半导体科技有限公司",
+        "website": "",
+        "summary": "驰芯半导体是一家物联网芯片设计企业，专注于低功耗物联网芯片的研发，核心业务为超宽带（UWB）芯片的研发、设计和销售，以自主UWB芯片为支点，深耕高精度空间感知核心技术，致力于构筑物理世界智能化的感知底座。",
+        "headquarters": "湖南省湘江新区",
+        "founders": [
+          {
+            "name": "景振海",
+            "role": "董事长",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b933ce2c89b5ae5d",
+                "quote": "驰芯半导体董事长景振海博士表示",
+                "source_content_hash": "d67710f8dbb18d0d",
+                "quote_hash": "e2d80c4267468dee9d6b8ffba16cfbe54844d7debcb20629891dcc3a5bb2cf3f"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b1701c03a5d4abb2",
+            "quote": "驰芯半导体创立于2020年6月，总部位于湖南省湘江新区，同时设有上海子公司及研发中心，是一家物联网芯片设计企业，专注于低功耗物联网芯片的研发，核心业务为超宽带（UWB）芯片的研发、设计和销售。",
+            "source_content_hash": "b0dddf2532e59ee7",
+            "quote_hash": "61cbb4a76697cff897b53964a76df42cd3bdfd344ec2118af156dd9f3a230c78"
+          },
+          {
+            "source_id": "FISRC-0c21763ea007dfb7",
+            "quote": "驰芯半导体以自主UWB芯片为支点，深耕高精度空间感知核心技术，致力于构筑物理世界智能化的感知底座。",
+            "source_content_hash": "ff882a85393a4ee3",
+            "quote_hash": "955a2fe9790b696d15b28005c18a693bee093b4543d4d9f6e22d6845eb0cbfa9"
+          }
+        ],
+        "application_entity_id": "EN-73c2f5aa8e632c19",
+        "canonical_entity_consistent": false
+      },
+      "financing": {
+        "round": "A+轮",
+        "amount": "亿元人民币",
+        "total_raised": "",
+        "announced_at": "2026-09-23",
+        "investor_disclosure_status": "disclosed",
+        "investors": [
+          {
+            "name": "上海沿浦精工科技（集团）股份有限公司",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0c21763ea007dfb7",
+                "quote": "本轮融资由上海沿浦精工科技（集团）股份有限公司（简称“沿浦精工”）领投",
+                "source_content_hash": "ff882a85393a4ee3",
+                "quote_hash": "7f396fc68bc0230579d22b533136de59c3ae2b9da6a835538878ba5098897984"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "湖南金霞盛世股权投资基金合伙企业（有限合伙）",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0c21763ea007dfb7",
+                "quote": "湖南金霞盛世股权投资基金合伙企业（有限合伙）（简称 “金霞盛世”）、上海移远通信技术股份有限公司（简称 “移远通信”）、长沙麓山投资控股集团有限公司（简称 “麓山控股”）联合参投",
+                "source_content_hash": "ff882a85393a4ee3",
+                "quote_hash": "ac17345cf47c4512325b264b35d574ad69307ac2de1599e9fba420f2a2abff22"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "上海移远通信技术股份有限公司",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0c21763ea007dfb7",
+                "quote": "湖南金霞盛世股权投资基金合伙企业（有限合伙）（简称 “金霞盛世”）、上海移远通信技术股份有限公司（简称 “移远通信”）、长沙麓山投资控股集团有限公司（简称 “麓山控股”）联合参投",
+                "source_content_hash": "ff882a85393a4ee3",
+                "quote_hash": "ac17345cf47c4512325b264b35d574ad69307ac2de1599e9fba420f2a2abff22"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "长沙麓山投资控股集团有限公司",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0c21763ea007dfb7",
+                "quote": "湖南金霞盛世股权投资基金合伙企业（有限合伙）（简称 “金霞盛世”）、上海移远通信技术股份有限公司（简称 “移远通信”）、长沙麓山投资控股集团有限公司（简称 “麓山控股”）联合参投",
+                "source_content_hash": "ff882a85393a4ee3",
+                "quote_hash": "ac17345cf47c4512325b264b35d574ad69307ac2de1599e9fba420f2a2abff22"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "other_round_investors": [
+          {
+            "name": "兴湘资本",
+            "role": "A轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-cd5b0b79e0cacd63",
+                "quote": "本轮融资由 兴湘资本领投、北京基石创投、财信金控、农银国际、昆山高新创投、及橡果资本等 多家头部创投机构共同投资",
+                "source_content_hash": "556acdb82a71c877",
+                "quote_hash": "947f78e911058631259b73771c06ee2cef87fdb2b2a28ec7b2b338e501dd7786"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "北京基石创投",
+            "role": "A轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-cd5b0b79e0cacd63",
+                "quote": "本轮融资由 兴湘资本领投、北京基石创投、财信金控、农银国际、昆山高新创投、及橡果资本等 多家头部创投机构共同投资",
+                "source_content_hash": "556acdb82a71c877",
+                "quote_hash": "947f78e911058631259b73771c06ee2cef87fdb2b2a28ec7b2b338e501dd7786"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "财信金控",
+            "role": "A轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-cd5b0b79e0cacd63",
+                "quote": "本轮融资由 兴湘资本领投、北京基石创投、财信金控、农银国际、昆山高新创投、及橡果资本等 多家头部创投机构共同投资",
+                "source_content_hash": "556acdb82a71c877",
+                "quote_hash": "947f78e911058631259b73771c06ee2cef87fdb2b2a28ec7b2b338e501dd7786"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "农银国际",
+            "role": "A轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-cd5b0b79e0cacd63",
+                "quote": "本轮融资由 兴湘资本领投、北京基石创投、财信金控、农银国际、昆山高新创投、及橡果资本等 多家头部创投机构共同投资",
+                "source_content_hash": "556acdb82a71c877",
+                "quote_hash": "947f78e911058631259b73771c06ee2cef87fdb2b2a28ec7b2b338e501dd7786"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "昆山高新创投",
+            "role": "A轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-cd5b0b79e0cacd63",
+                "quote": "本轮融资由 兴湘资本领投、北京基石创投、财信金控、农银国际、昆山高新创投、及橡果资本等 多家头部创投机构共同投资",
+                "source_content_hash": "556acdb82a71c877",
+                "quote_hash": "947f78e911058631259b73771c06ee2cef87fdb2b2a28ec7b2b338e501dd7786"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "橡果资本",
+            "role": "A轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-cd5b0b79e0cacd63",
+                "quote": "本轮融资由 兴湘资本领投、北京基石创投、财信金控、农银国际、昆山高新创投、及橡果资本等 多家头部创投机构共同投资",
+                "source_content_hash": "556acdb82a71c877",
+                "quote_hash": "947f78e911058631259b73771c06ee2cef87fdb2b2a28ec7b2b338e501dd7786"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "翱鹏投资",
+            "role": "A+轮投资",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-274bb287554403bb",
+                "quote": "近日，长沙驰芯半导体科技有限公司获得A+轮融资，翱鹏投资投资。",
+                "source_content_hash": "b75c2b0c21ca28ae",
+                "quote_hash": "7afb296f702338ee72eb34d8aed2b7c0e05d14dae474fa58726b9f711235a5e6"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-0c21763ea007dfb7",
+            "quote": "长沙驰芯半导体科技有限公司（简称“驰芯半导体”）近日正式完成A + 轮融资，融资金额超两亿元人民币，创下物理 AI 空间感知芯片赛道单轮融资规模的历史新高。",
+            "source_content_hash": "ff882a85393a4ee3",
+            "quote_hash": "c70a6cf999123ddafb009791b3207ba128e3cff4971e512c2a61a3af698357fc"
+          }
+        ],
+        "round_code": "series_a_plus",
+        "round_original": "A+轮",
+        "amount_original": "亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿元–10 亿元"
+        },
+        "total_raised_original": "",
+        "total_raised_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "undisclosed",
+          "display_zh": ""
+        },
+        "risk_markers": [],
+        "disclosures": [
+          {
+            "event_id": "EV-0f2e50fbc9af587a",
+            "round_original": "A+轮",
+            "amount": "亿元人民币",
+            "announced_at": "2026-09-23",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0c21763ea007dfb7",
+                "quote": "长沙驰芯半导体科技有限公司（简称“驰芯半导体”）近日正式完成A + 轮融资，融资金额超两亿元人民币，创下物理 AI 空间感知芯片赛道单轮融资规模的历史新高。",
+                "source_content_hash": "ff882a85393a4ee3",
+                "quote_hash": "c70a6cf999123ddafb009791b3207ba128e3cff4971e512c2a61a3af698357fc"
+              }
+            ]
+          }
+        ],
+        "disclosure_status": "disclosed"
+      },
+      "products": [
+        {
+          "name": "CX100系列UWB SoC芯片",
+          "description": "驰芯半导体自主研发的UWB SoC芯片系列之一，采用“定位+通信+雷达”综合体系架构设计方法。",
+          "target_customers": "消费电子、物联网、汽车电子和工业市场头部客户",
+          "features": [
+            "定位+通信+雷达综合体系架构",
+            "支持IEEE802.15.4z/4ab标准"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cd5b0b79e0cacd63",
+              "quote": "旗下的CX100、CX310、CX500系列UWB S0C芯片，在海内外多家客户测试中展现出明显竞争优势",
+              "source_content_hash": "556acdb82a71c877",
+              "quote_hash": "b7c50ded9206400b56f09b6f30f2d2577e2856e38f51cdc9143d279d581a99b2"
+            },
+            {
+              "source_id": "FISRC-b933ce2c89b5ae5d",
+              "quote": "目前公司UWB芯片产品CX100、CX310和CX500系列已实现量产，并与消费电子、物联网、汽车电子和工业市场头部客户建立合作并出货。",
+              "source_content_hash": "d67710f8dbb18d0d",
+              "quote_hash": "40529d11074fda5f2020cb838badbba27017df230ec8ed3ce654f1ef835b6507"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "CX310系列UWB SoC芯片",
+          "description": "驰芯半导体自主研发的UWB SoC芯片系列之一，已实现量产。",
+          "target_customers": "消费电子、物联网、汽车电子等领域头部客户",
+          "features": [
+            "已实现量产"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fe8e99e90dc92022",
+              "quote": "驰芯半导体旗下UWB芯片产品CX310和CX500系列已实现量产，与消费电子、 物联网 、汽车电子等领域头部客户建立合作并出货",
+              "source_content_hash": "3ae61a326fafcec1",
+              "quote_hash": "7d23890bb9ab5153352d153cc8ec428a011ab4a97d1ddb81652da07178d4330d"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "CX500系列UWB SoC芯片",
+          "description": "驰芯半导体自主研发的UWB SoC芯片系列之一，已实现量产。",
+          "target_customers": "消费电子、物联网、汽车电子等领域头部客户",
+          "features": [
+            "已实现量产"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fe8e99e90dc92022",
+              "quote": "驰芯半导体旗下UWB芯片产品CX310和CX500系列已实现量产，与消费电子、 物联网 、汽车电子等领域头部客户建立合作并出货",
+              "source_content_hash": "3ae61a326fafcec1",
+              "quote_hash": "7d23890bb9ab5153352d153cc8ec428a011ab4a97d1ddb81652da07178d4330d"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "国际龙头企业",
+          "product": "国际龙头企业竞品UWB芯片",
+          "scenario": "海内外多家客户测试中的雷达、通信和定位性能对比",
+          "target_customer": "海内外UWB芯片客户",
+          "funding_summary": "",
+          "core_difference": "驰芯半导体CX100、CX310、CX500系列UWB SoC芯片在雷达性能明显更优的同时，保证优异的通信和定位性能。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cd5b0b79e0cacd63",
+              "quote": "旗下的CX100、CX310、CX500系列UWB S0C芯片，在海内外多家客户测试中展现出明显竞争优势，对比国际龙头企业的竞品，雷达性能明显更优的同时，保证优异的通信和定位性能",
+              "source_content_hash": "556acdb82a71c877",
+              "quote_hash": "e345e822bfdf53b33c284d496671a82020945f5fd822ac6cdad2a08161883eb6"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "metrics": [
+        {
+          "label": "截至2024年底累计出货量",
+          "value": "数百万颗",
+          "observed_at": "2024-12-31",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cd5b0b79e0cacd63",
+              "quote": "截至2024年底，公司累计出货数百万颗",
+              "source_content_hash": "556acdb82a71c877",
+              "quote_hash": "0105cf8e7a6cd5721f4dbd387cd26d0bfd9b36bb34f69247923db601c0c28b54"
+            }
+          ]
+        },
+        {
+          "label": "2025年在售UWB芯片订单量",
+          "value": "超千万颗",
+          "observed_at": "2025-03-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cd5b0b79e0cacd63",
+              "quote": "2025年在售UWB芯片订单超千万颗",
+              "source_content_hash": "556acdb82a71c877",
+              "quote_hash": "5f6f055501859c6c7449a642c8dd7df43ed821f71efaaf41d983360188be9f1d"
+            }
+          ]
+        },
+        {
+          "label": "累计申请专利数",
+          "value": "超百项",
+          "observed_at": "2025-03-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cd5b0b79e0cacd63",
+              "quote": "公司累计申请专利超百项，覆盖射频架构、信号处理等核心环节",
+              "source_content_hash": "556acdb82a71c877",
+              "quote_hash": "c22e1b7e84312df394794e19a7ba96d35ee21a924577c15a60f395db3e586829"
+            }
+          ]
+        },
+        {
+          "label": "核心团队平均行业经验",
+          "value": "超15年",
+          "observed_at": "2025-03-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cd5b0b79e0cacd63",
+              "quote": "核心团队绝大部分来自于本土培养的行业专家，平均行业经验超15年",
+              "source_content_hash": "556acdb82a71c877",
+              "quote_hash": "2ee8d670659ca58b1a54277a88c0c7841f6378935d2471d9d79bc7a2bb9ecbb9"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "景振海",
+          "quote": "顺利完成 A + 轮融资，是资本市场对驰芯团队坚持长期主义、坚守核心技术自研、开创物理 AI 空间感知细分赛道的充分肯定，我们由衷感谢股东们的信任与托举。以此为新的起点，公司将持续加大研发投入，加快新产品量产与迭代，深化与产业伙伴的协同合作，推动国产UWB芯片在更多应用场景规模化落地，向着成为全球第 一的物理 AI 空间感知厂商的目标坚实迈进。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b933ce2c89b5ae5d",
+              "quote": "驰芯半导体董事长景振海博士表示 ：“顺利完成 A + 轮融资，是资本市场对驰芯团队坚持长期主义、坚守核心技术自研、开创物理 AI 空间感知细分赛道的充分肯定，我们由衷感谢股东们的信任与托举。以此为新的起点，公司将持续加大研发投入，加快新产品量产与迭代，深化与产业伙伴的协同合作，推动国产UWB芯片在更多应用场景规模化落地，向着成为全球第 一的物理 AI 空间感知厂商的目标坚实迈进。”",
+              "source_content_hash": "d67710f8dbb18d0d",
+              "quote_hash": "3d281fca599318f58a478be4de2b2c182f4c456405969f7f5e95e4f1e6a5deb2"
+            }
+          ]
+        },
+        {
+          "speaker": "周建清",
+          "quote": "沿浦精工长期立足主业，积极拓展机器人等新质生产力领域布局。此次战略投资驰芯半导体，是公司深化产业链上游布局、抢占物理AI 空间感知制高点的重要举措。我们高度看好该领域的广阔前景，愿与驰芯团队并肩同行，加快国产UWB 芯片在工业 5.0、具身智能等具体应用场景的落地。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b933ce2c89b5ae5d",
+              "quote": "沿浦精工创始人、董事长周建清先生表示 ：“沿浦精工长期立足主业，积极拓展机器人等新质生产力领域布局。此次战略投资驰芯半导体，是公司深化产业链上游布局、抢占物理AI 空间感知制高点的重要举措。我们高度看好该领域的广阔前景，愿与驰芯团队并肩同行，加快国产UWB 芯片在工业 5.0、具身智能等具体应用场景的落地。”",
+              "source_content_hash": "d67710f8dbb18d0d",
+              "quote_hash": "01d178537578c0c584ee56f72f1ff5bf88aeb38a876c230b1379d0319998fad7"
+            }
+          ]
+        },
+        {
+          "speaker": "张栋",
+          "quote": "在 AI、机器人、XR 浪潮交汇的时代背景下，连接、算力与 AI 的深度融合，是移远通信深耕通信与智能领域十五年所积淀的能力底座。作为全球最 大的通信模组商，我们愿与驰芯半导体在前期项目合作的基础上深度绑定，围绕智能雷达、AI 硬件等新兴场景打造差异化竞争优势，携手开拓物理 AI 时代的增量市场。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b933ce2c89b5ae5d",
+              "quote": "移远通信联合创始人、首席运营官张栋先生指出 ：\"在 AI、机器人、XR 浪潮交汇的时代背景下，连接、算力与 AI 的深度融合，是移远通信深耕通信与智能领域十五年所积淀的能力底座。作为全球最 大的通信模组商，我们愿与驰芯半导体在前期项目合作的基础上深度绑定，围绕智能雷达、AI 硬件等新兴场景打造差异化竞争优势，携手开拓物理 AI 时代的增量市场。”",
+              "source_content_hash": "d67710f8dbb18d0d",
+              "quote_hash": "ec1763b604de128f360acd4046ea73b99f95eaba5956cfa00fbc3ddb4b43e032"
+            }
+          ]
+        },
+        {
+          "speaker": "张志远",
+          "quote": "驰芯半导体在高端芯片领域的技术积累和商业化落地能力，与新区产业发展方向高度契合。此次投资驰芯半导体，正是麓山控股围绕湘江新区人工智能产业深化布局、聚焦半导体行业开展投资的重要探索。未来，麓山控股将充分发挥国有资本的引导作用和产业资源的协同优势，以多元化的赋能方式，陪伴驰芯半导体在高端芯片赛道上走得更稳更远，为长沙市打造“人工智能+制造”融合发展标杆城市贡献力量。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b933ce2c89b5ae5d",
+              "quote": "麓山控股董事长张志远表示 ：“驰芯半导体在高端芯片领域的技术积累和商业化落地能力，与新区产业发展方向高度契合。此次投资驰芯半导体，正是麓山控股围绕湘江新区人工智能产业深化布局、聚焦半导体行业开展投资的重要探索。未来，麓山控股将充分发挥国有资本的引导作用和产业资源的协同优势，以多元化的赋能方式，陪伴驰芯半导体在高端芯片赛道上走得更稳更远，为长沙市打造“人工智能+制造”融合发展标杆城市贡献力量。”",
+              "source_content_hash": "d67710f8dbb18d0d",
+              "quote_hash": "b60c9566d1569c63957f162386ddf26fa6f0d7c0c9e4d78bc6aa7ab0a8412ece"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "上海沿浦精工科技（集团）股份有限公司",
+            "speaker": "周建清",
+            "speaker_role": "创始人、董事长",
+            "rationale": "沿浦精工将此次战略投资视为深化产业链上游布局、抢占物理AI空间感知制高点的重要举措，看好国产UWB芯片在工业5.0、具身智能等场景的落地前景。",
+            "quote": "此次战略投资驰芯半导体，是公司深化产业链上游布局、抢占物理AI 空间感知制高点的重要举措。我们高度看好该领域的广阔前景，愿与驰芯团队并肩同行，加快国产UWB 芯片在工业 5.0、具身智能等具体应用场景的落地。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b933ce2c89b5ae5d",
+                "quote": "此次战略投资驰芯半导体，是公司深化产业链上游布局、抢占物理AI 空间感知制高点的重要举措。我们高度看好该领域的广阔前景，愿与驰芯团队并肩同行，加快国产UWB 芯片在工业 5.0、具身智能等具体应用场景的落地。",
+                "source_content_hash": "d67710f8dbb18d0d",
+                "quote_hash": "1b1d5c00bf5e793dd78e08a12f159bdc28cdba791a47c0830139b0e282d1f7f6"
+              }
+            ]
+          },
+          {
+            "institution": "上海移远通信技术股份有限公司",
+            "speaker": "张栋",
+            "speaker_role": "联合创始人、首席运营官",
+            "rationale": "移远通信基于前期项目合作基础，希望与驰芯半导体深度绑定，围绕智能雷达、AI硬件等新兴场景打造差异化竞争优势，开拓物理AI时代增量市场。",
+            "quote": "作为全球最 大的通信模组商，我们愿与驰芯半导体在前期项目合作的基础上深度绑定，围绕智能雷达、AI 硬件等新兴场景打造差异化竞争优势，携手开拓物理 AI 时代的增量市场。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b933ce2c89b5ae5d",
+                "quote": "作为全球最 大的通信模组商，我们愿与驰芯半导体在前期项目合作的基础上深度绑定，围绕智能雷达、AI 硬件等新兴场景打造差异化竞争优势，携手开拓物理 AI 时代的增量市场。",
+                "source_content_hash": "d67710f8dbb18d0d",
+                "quote_hash": "d22903182bba70b1da82c72f6b27910432568367b33fb9edd80fa2686b78fe87"
+              }
+            ]
+          },
+          {
+            "institution": "长沙麓山投资控股集团有限公司",
+            "speaker": "张志远",
+            "speaker_role": "董事长",
+            "rationale": "麓山控股认为驰芯半导体在高端芯片领域的技术积累和商业化落地能力与湘江新区人工智能产业发展方向高度契合，投资是其围绕湘江新区人工智能产业深化布局、聚焦半导体行业的重要探索。",
+            "quote": "驰芯半导体在高端芯片领域的技术积累和商业化落地能力，与新区产业发展方向高度契合。此次投资驰芯半导体，正是麓山控股围绕湘江新区人工智能产业深化布局、聚焦半导体行业开展投资的重要探索。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b933ce2c89b5ae5d",
+                "quote": "驰芯半导体在高端芯片领域的技术积累和商业化落地能力，与新区产业发展方向高度契合。此次投资驰芯半导体，正是麓山控股围绕湘江新区人工智能产业深化布局、聚焦半导体行业开展投资的重要探索。",
+                "source_content_hash": "d67710f8dbb18d0d",
+                "quote_hash": "2302d1ebc4c317fdc8f4f0aae1fade32ac732759c37415c2f95b4c4643d3e6d7"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是国产UWB芯片在物理AI空间感知场景中的规模化落地能力。本轮融资创下物理AI空间感知芯片赛道单轮融资规模历史新高，且由产业资本沿浦精工领投、通信模组商移远通信参投，表明投资方看重的是车规级芯片导入、具身智能场景落地和产业生态共建的协同价值，而非单纯的财务回报。已验证信号包括：CX100、CX310、CX500系列已实现量产并与消费电子、物联网、汽车电子和工业市场头部客户建立合作并出货；截至2024年底累计出货数百万颗，2025年在售订单超千万颗；产品在智能家居、智能雷达、智慧新能源电站和新能源汽车等多元场景加速渗透。证据边界在于：来源未披露本轮融资的具体估值、投后股权结构或资金用途分配，也未提供具体客户名称，商业化验证主要依赖公司自述和投资方表态。",
+        "validated_signals": [
+          "CX100、CX310和CX500系列UWB芯片已实现量产",
+          "与消费电子、物联网、汽车电子和工业市场头部客户建立合作并出货",
+          "截至2024年底累计出货数百万颗，2025年在售UWB芯片订单超千万颗",
+          "产品已在智能家居、智能雷达、智慧新能源电站和新能源汽车等多元场景加速渗透",
+          "本轮融资创下物理AI空间感知芯片赛道单轮融资规模历史新高"
+        ],
+        "risks": [
+          "来源未披露具体客户名称，商业化验证主要依赖公司自述，缺乏独立第三方客户佐证",
+          "UWB芯片赛道面临国际龙头企业竞争，国产替代的持续性和客户导入节奏存在不确定性"
+        ],
+        "related_direction_id": "",
+        "taxonomy_version": "TAG-V4.1",
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute",
+        "market_subcategory_id": "hardware_computing",
+        "market_application_id": "chips",
+        "use_case_ids": [],
+        "industry_ids": [],
+        "target_user_ids": [
+          "developer"
+        ],
+        "sector": "半导体芯片设计",
+        "investment_thesis": {
+          "statement": "资本押注的核心变量是国产UWB芯片在物理AI空间感知场景中的规模化落地能力。本轮融资创下物理AI空间感知芯片赛道单轮融资规模历史新高，且由产业资本沿浦精工领投、通信模组商移远通信参投，表明投资方看重的是车规级芯片导入、具身智能场景落地和产业生态共建的协同价值，而非单纯的财务回报。已验证信号包括：CX100、CX310、CX500系列已实现量产并与消费电子、物联网、汽车电子和工业市场头部客户建立合作并出货；截至2024年底累计出货数百万颗，2025年在售订单超千万颗；产品在智能家居、智能雷达、智慧新能源电站和新能源汽车等多元场景加速渗透。证据边界在于：来源未披露本轮融资的具体估值、投后股权结构或资金用途分配，也未提供具体客户名称，商业化验证主要依赖公司自述和投资方表态。",
+          "evidence_signals": [
+            "CX100、CX310和CX500系列UWB芯片已实现量产",
+            "与消费电子、物联网、汽车电子和工业市场头部客户建立合作并出货",
+            "截至2024年底累计出货数百万颗，2025年在售UWB芯片订单超千万颗",
+            "产品已在智能家居、智能雷达、智慧新能源电站和新能源汽车等多元场景加速渗透",
+            "本轮融资创下物理AI空间感知芯片赛道单轮融资规模历史新高"
+          ],
+          "risks": [
+            "来源未披露具体客户名称，商业化验证主要依赖公司自述，缺乏独立第三方客户佐证",
+            "UWB芯片赛道面临国际龙头企业竞争，国产替代的持续性和客户导入节奏存在不确定性"
+          ],
+          "institutional_rationale_status": "disclosed"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "CX100系列UWB SoC芯片",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "CX310系列UWB SoC芯片",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "CX500系列UWB SoC芯片",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "景振海",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "上海沿浦精工科技（集团）股份有限公司",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "湖南金霞盛世股权投资基金合伙企业（有限合伙）",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "上海移远通信技术股份有限公司",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "长沙麓山投资控股集团有限公司",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "兴湘资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "北京基石创投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "财信金控",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "农银国际",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "昆山高新创投",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "橡果资本",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "invested_in_other_round",
+          "target_kind": "organization",
+          "research_name": "翱鹏投资",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "国际龙头企业",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-3ca24f79062a359e",
+          "date": "2026-09-23",
+          "title": "驰芯半导体完成超两亿元A+轮融资，致力于构筑物理世界智能化的感知底座",
+          "amount": "亿元",
+          "source_refs": [
+            "SA-c6475d75cc6e8f01"
+          ]
+        },
+        {
+          "event_id": "EV-0f2e50fbc9af587a",
+          "date": "2026-09-23",
+          "title": "驰芯半导体完成超两亿元 A + 轮融资 本轮融资由上海沿浦精工科技（集团）股份有限公司（简称“沿浦精工”）领投 投中网 · 17小时前",
+          "amount": "亿元人民币",
+          "source_refs": [
+            "SA-6c07976244ef6c15"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-0c21763ea007dfb7",
+          "source_url": "https://www.chinaventure.com.cn/news/110-20260923-393423.html",
+          "title": "驰芯半导体完成超两亿元 A + 轮融资 本轮融资由上海沿浦精工科技（集团）股份有限公司（简称“沿浦精工”）领投 投中网 · 17小时前",
+          "publisher": "投中网",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-09-24T00:37:06.109Z",
+          "content_hash": "ff882a85393a4ee3",
+          "source_artifact_id": "SA-6c07976244ef6c15",
+          "raw_id": "RAW-79a6e3fc1cf86c38"
+        },
+        {
+          "source_id": "FISRC-cd5b0b79e0cacd63",
+          "source_url": "https://news.pedaily.cn/202503/547159.shtml",
+          "title": "驰芯半导体获近2亿A轮融资，兴湘资本领投_投资界",
+          "publisher": "news.pedaily.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-24T00:38:52.786Z",
+          "content_hash": "556acdb82a71c877",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-b933ce2c89b5ae5d",
+          "source_url": "https://feng.ifeng.com/c/8weI8RLSzhs",
+          "title": "驰芯半导体完成超两亿元A+轮融资，致力于构筑物理世界智能化的感知底座_大风号_凤凰网",
+          "publisher": "feng.ifeng.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-24T00:38:53.955Z",
+          "content_hash": "d67710f8dbb18d0d",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-274bb287554403bb",
+          "source_url": "https://www.icviews.cn/news/23289/7",
+          "title": "UWB芯片商驰芯半导体获A+轮融资",
+          "publisher": "icviews.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-24T00:38:53.673Z",
+          "content_hash": "b75c2b0c21ca28ae",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-b1701c03a5d4abb2",
+          "source_url": "https://ijiwei.com/n/1111631",
+          "title": "驰芯半导体完成超两亿元A+轮融资，专注于低功耗物联网芯片研发",
+          "publisher": "ijiwei.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-24T00:38:56.992Z",
+          "content_hash": "b0dddf2532e59ee7",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-fe8e99e90dc92022",
+          "source_url": "https://news.qq.com/rain/a/20250314A04SSU00",
+          "title": "兴湘资本领投，驰芯半导体完成近2亿元A轮融资_腾讯新闻",
+          "publisher": "news.qq.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-09-24T00:38:56.764Z",
+          "content_hash": "3ae61a326fafcec1",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.7",
+        "generated_at": "2026-09-24T00:39:28.177Z",
+        "taxonomy_classification": {
+          "taxonomy_version": "TAG-V4.1",
+          "method": "deepseek_evidence_review",
+          "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
+          "decision_event_id": "EV-0f2e50fbc9af587a",
+          "confidence": 0.9,
+          "needs_review": false
+        }
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-09-24T00:39:28.177Z",
+      "customer_research": {
+        "status": "no_verified_customer_found",
+        "verified_customer_count": 0,
+        "searched_source_count": 6
+      },
+      "entity_link_coverage": {
+        "products": {
+          "linked": 0,
+          "total": 3,
+          "unresolved_names": [
+            "CX100系列UWB SoC芯片",
+            "CX310系列UWB SoC芯片",
+            "CX500系列UWB SoC芯片"
+          ]
+        },
+        "founders": {
+          "linked": 0,
+          "total": 1,
+          "unresolved_names": [
+            "景振海"
+          ]
+        }
+      },
+      "source_event_ids": [
+        "EV-0f2e50fbc9af587a"
+      ],
+      "aggregation": {
+        "key": "EN-73c2f5aa8e632c19|series_a_plus",
+        "event_count": 1,
+        "strategy": "company_and_normalized_round"
+      }
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-c96705c69e11c520",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-24T00:40:25.851Z"
+    },
+    {
+      "event_id": "EV-2de77a62435cc041",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-24T00:40:25.851Z"
+    },
+    {
+      "event_id": "EV-3ca24f79062a359e",
+      "company_name": "驰芯半导体",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"驰芯半导体\" 2026 融资 轮次 金额 投资方",
+        "\"驰芯半导体\" \"亿元\" 本轮融资 领投 跟投",
+        "\"驰芯半导体\" 产品 服务 创始人 总部",
+        "\"驰芯半导体\" 投资机构 投资原因 融资用途"
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"驰芯半导体\" 2026 融资 轮次 金额 投资方",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"驰芯半导体\" 2026 融资 轮次 金额 投资方",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"驰芯半导体\" \"亿元\" 本轮融资 领投 跟投",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"驰芯半导体\" \"亿元\" 本轮融资 领投 跟投",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"驰芯半导体\" 产品 服务 创始人 总部",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"驰芯半导体\" 产品 服务 创始人 总部",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"驰芯半导体\" 投资机构 投资原因 融资用途",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"驰芯半导体\" 投资机构 投资原因 融资用途",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-09-24T00:40:25.851Z"
+    },
+    {
+      "event_id": "EV-0f2e50fbc9af587a",
+      "company_name": "驰芯半导体",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"驰芯半导体\" 2026 融资 轮次 金额 投资方",
+        "\"驰芯半导体\" \"亿元人民币\" 本轮融资 领投 跟投",
+        "\"驰芯半导体\" 产品 服务 创始人 总部",
+        "\"驰芯半导体\" 投资机构 投资原因 融资用途"
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"驰芯半导体\" 2026 融资 轮次 金额 投资方",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"驰芯半导体\" 2026 融资 轮次 金额 投资方",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"驰芯半导体\" \"亿元人民币\" 本轮融资 领投 跟投",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"驰芯半导体\" \"亿元人民币\" 本轮融资 领投 跟投",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"驰芯半导体\" 产品 服务 创始人 总部",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"驰芯半导体\" 产品 服务 创始人 总部",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"驰芯半导体\" 投资机构 投资原因 融资用途",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"驰芯半导体\" 投资机构 投资原因 融资用途",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-09-24T00:40:25.851Z"
+    },
+    {
+      "event_id": "EV-3c86fb0161715336",
+      "company_name": "息壤开物",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"息壤开物\" 2026 融资 轮次 金额 投资方",
+        "\"息壤开物\" \"数亿元\" 本轮融资 领投 跟投",
+        "\"息壤开物\" 产品 服务 创始人 总部",
+        "\"息壤开物\" 投资机构 投资原因 融资用途"
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"息壤开物\" 2026 融资 轮次 金额 投资方",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"息壤开物\" 2026 融资 轮次 金额 投资方",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"息壤开物\" \"数亿元\" 本轮融资 领投 跟投",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"息壤开物\" \"数亿元\" 本轮融资 领投 跟投",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"息壤开物\" 产品 服务 创始人 总部",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"息壤开物\" 产品 服务 创始人 总部",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"息壤开物\" 投资机构 投资原因 融资用途",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"息壤开物\" 投资机构 投资原因 融资用途",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-09-24T00:40:25.851Z"
+    },
+    {
+      "event_id": "EV-71d477e3af99ef9a",
+      "company_name": "息壤开物",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"息壤开物\" 2026 融资 轮次 金额 投资方",
+        "\"息壤开物\" \"数亿元\" 本轮融资 领投 跟投",
+        "\"息壤开物\" 产品 服务 创始人 总部",
+        "\"息壤开物\" 投资机构 投资原因 融资用途"
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"息壤开物\" 2026 融资 轮次 金额 投资方",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"息壤开物\" 2026 融资 轮次 金额 投资方",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"息壤开物\" \"数亿元\" 本轮融资 领投 跟投",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"息壤开物\" \"数亿元\" 本轮融资 领投 跟投",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"息壤开物\" 产品 服务 创始人 总部",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"息壤开物\" 产品 服务 创始人 总部",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"息壤开物\" 投资机构 投资原因 融资用途",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"息壤开物\" 投资机构 投资原因 融资用途",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-09-24T00:40:25.851Z"
+    },
+    {
+      "event_id": "EV-0d0b83c319d971b0",
+      "company_name": "达卯科技",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"达卯科技\" 2026 融资 轮次 金额 投资方",
+        "\"达卯科技\" \"约2亿元\" 本轮融资 领投 跟投",
+        "\"达卯科技\" 产品 服务 创始人 总部",
+        "\"达卯科技\" 投资机构 投资原因 融资用途"
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"达卯科技\" 2026 融资 轮次 金额 投资方",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"达卯科技\" 2026 融资 轮次 金额 投资方",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"达卯科技\" \"约2亿元\" 本轮融资 领投 跟投",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"达卯科技\" \"约2亿元\" 本轮融资 领投 跟投",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"达卯科技\" 产品 服务 创始人 总部",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"达卯科技\" 产品 服务 创始人 总部",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"达卯科技\" 投资机构 投资原因 融资用途",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"达卯科技\" 投资机构 投资原因 融资用途",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-09-24T00:40:25.851Z"
+    },
+    {
+      "event_id": "EV-f3303c1905f3467b",
+      "company_name": "",
+      "status": "deduplicated",
+      "problems": [],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-09-24T00:40:25.851Z"
+    }
+  ]
+}

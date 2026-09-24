@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-23T02:44:38.147Z",
-    "latestDataDate": "2026-09-23",
-    "currentDate": "2026-09-23",
-    "eventCount": 3519,
+    "generatedAt": "2026-09-24T00:41:23.865Z",
+    "latestDataDate": "2026-09-24",
+    "currentDate": "2026-09-24",
+    "eventCount": 3527,
     "quarantinedEventCount": 37,
     "quarantinedEventIds": [
       "EV-9fd8d784459150e5",
@@ -60,7 +60,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 2,
-    "historical_or_ambiguous_count": 2,
+    "historical_or_ambiguous_count": 3,
     "portfolio_company_count": 2,
     "market_regions": [
       "CN"
@@ -68,9 +68,9 @@
     "china_market_activity_count": 2,
     "china_market_company_count": 2,
     "first_disclosed_at": "2026-02-24",
-    "latest_disclosed_at": "2026-09-08",
+    "latest_disclosed_at": "2026-09-23",
     "role_counts": {
-      "historical_or_ambiguous": 2,
+      "historical_or_ambiguous": 3,
       "lead": 1,
       "participant": 1
     },
@@ -91,6 +91,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-bc610e4a48c3c11d",
+        "funding_insight_id": "FI-17089973bc48aad2",
+        "event_ids": [
+          "EV-0d0b83c319d971b0"
+        ],
+        "company_entity_id": "EN-ef5cac7907b28194",
+        "company_canonical_entity_id": "",
+        "company_name": "上海达卯科技有限公司",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮融资",
+        "amount_original": "约2亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 2 亿元"
+        },
+        "announced_at": "2026-09-23",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "股东方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-23e3875ee86bc918",
+            "source_url": "https://www.qbitai.com/2026/09/496494.html",
+            "source_title": "达卯科技完成新一轮融资，算电协同核心软件层“稀缺标的”",
+            "source_content_hash": "b652dc815aea1925",
+            "quote": "目前，达卯科技股东阵容包含宁德时代、商汤科技、寒武纪等产业链龙头企业",
+            "quote_hash": "3ea31f36954c8902959b2b0d0e7a4636bb9a7524cc8abfbcde3f12b5937a02e9"
+          }
+        ]
+      },
       {
         "activity_id": "IA-fb1fe5f6e907fcc0",
         "funding_insight_id": "FI-fae9478ac0e65316",
@@ -262,6 +302,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-23e3875ee86bc918",
+        "source_url": "https://www.qbitai.com/2026/09/496494.html",
+        "source_title": "达卯科技完成新一轮融资，算电协同核心软件层“稀缺标的”",
+        "source_content_hash": "b652dc815aea1925",
+        "quote": "目前，达卯科技股东阵容包含宁德时代、商汤科技、寒武纪等产业链龙头企业",
+        "quote_hash": "3ea31f36954c8902959b2b0d0e7a4636bb9a7524cc8abfbcde3f12b5937a02e9"
+      },
       {
         "source_id": "FISRC-ac5a938b8fdef1a9",
         "source_url": "https://news.pedaily.cn/202609/568645.shtml",
