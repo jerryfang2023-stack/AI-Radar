@@ -5,12 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-23T02:44:38.147Z",
-    "latestDataDate": "2026-09-23",
-    "currentDate": "2026-09-23",
-    "eventCount": 3519,
-    "quarantinedEventCount": 37,
+    "generatedAt": "2026-09-24T02:18:33.039Z",
+    "latestDataDate": "2026-09-24",
+    "currentDate": "2026-09-24",
+    "eventCount": 3561,
+    "quarantinedEventCount": 39,
     "quarantinedEventIds": [
+      "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -57,6 +59,7 @@
     "typeLabel": "应用场景",
     "valueId": "finance_accounting",
     "eventIds": [
+      "EV-4a045d3f9026286c",
       "EV-77887cf446f03ba4",
       "EV-65d274d4277815dc",
       "EV-df8954acf9a13848",
@@ -72,6 +75,7 @@
       "EV-8b0f056571d68269"
     ],
     "entityIds": [
+      "EN-8c15a763882d4862",
       "EN-efadb20430d25ea7",
       "EN-a01847b090a53c6e",
       "EN-f970fd34532919fe",
@@ -89,9 +93,350 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-01-20",
-    "lastSeen": "2026-09-22"
+    "lastSeen": "2026-09-24"
   },
   "events": [
+    {
+      "id": "EV-4a045d3f9026286c",
+      "dataDate": "2026-09-24",
+      "date": "2026-09-23",
+      "updatedDate": "2026-09-24",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Ema 融资 7700 万美元，用 AI 智能体切入企业软件与服务市场",
+      "originalTitle": "",
+      "subject": "Ema",
+      "action": "融资",
+      "object": "7700 万美元，用 AI 智能体切入企业软件与服务市场",
+      "metrics": [
+        "$77M",
+        "$77 million",
+        "$140 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8c15a763882d4862"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "enterprise_applications",
+            "name": "企业级应用",
+            "entityIds": [
+              "EN-8c15a763882d4862"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f2206e5360b4a785",
+            "fundingInsightId": "FI-33827080896cd0ec"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-8c15a763882d4862"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-aafec881c249a0ac",
+            "fundingInsightId": "FI-33827080896cd0ec"
+          }
+        ],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-8c15a763882d4862"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-22c29074b2c381f9",
+            "fundingInsightId": "FI-33827080896cd0ec"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "finance_accounting",
+            "name": "财务与会计",
+            "entityIds": [
+              "EN-8c15a763882d4862"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-1be06d94e5d21d53",
+            "fundingInsightId": "FI-33827080896cd0ec"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "hr_workforce",
+            "name": "人力与员工体验",
+            "entityIds": [
+              "EN-8c15a763882d4862"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-5c6425707a79ea76",
+            "fundingInsightId": "FI-33827080896cd0ec"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-8c15a763882d4862"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-808ee1c88ff17dd6",
+            "fundingInsightId": "FI-33827080896cd0ec"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-8c15a763882d4862"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-47775607fdbca6ae",
+            "fundingInsightId": "FI-33827080896cd0ec"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "enterprise_applications",
+          "name": "企业级应用",
+          "entityIds": [
+            "EN-8c15a763882d4862"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f2206e5360b4a785",
+          "fundingInsightId": "FI-33827080896cd0ec"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-8c15a763882d4862"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-aafec881c249a0ac",
+          "fundingInsightId": "FI-33827080896cd0ec"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-8c15a763882d4862"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-22c29074b2c381f9",
+          "fundingInsightId": "FI-33827080896cd0ec"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-8c15a763882d4862"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-47775607fdbca6ae",
+          "fundingInsightId": "FI-33827080896cd0ec"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "finance_accounting",
+          "name": "财务与会计",
+          "entityIds": [
+            "EN-8c15a763882d4862"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-1be06d94e5d21d53",
+          "fundingInsightId": "FI-33827080896cd0ec"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "hr_workforce",
+          "name": "人力与员工体验",
+          "entityIds": [
+            "EN-8c15a763882d4862"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-5c6425707a79ea76",
+          "fundingInsightId": "FI-33827080896cd0ec"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-8c15a763882d4862"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-808ee1c88ff17dd6",
+          "fundingInsightId": "FI-33827080896cd0ec"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8c15a763882d4862"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "enterprise_applications",
+          "name": "企业级应用",
+          "entityIds": [
+            "EN-8c15a763882d4862"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f2206e5360b4a785",
+          "fundingInsightId": "FI-33827080896cd0ec"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-8c15a763882d4862"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-aafec881c249a0ac",
+          "fundingInsightId": "FI-33827080896cd0ec"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-8c15a763882d4862"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-22c29074b2c381f9",
+          "fundingInsightId": "FI-33827080896cd0ec"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "finance_accounting",
+          "name": "财务与会计",
+          "entityIds": [
+            "EN-8c15a763882d4862"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-1be06d94e5d21d53",
+          "fundingInsightId": "FI-33827080896cd0ec"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "hr_workforce",
+          "name": "人力与员工体验",
+          "entityIds": [
+            "EN-8c15a763882d4862"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-5c6425707a79ea76",
+          "fundingInsightId": "FI-33827080896cd0ec"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-8c15a763882d4862"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-808ee1c88ff17dd6",
+          "fundingInsightId": "FI-33827080896cd0ec"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8c15a763882d4862"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-8c15a763882d4862"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-47775607fdbca6ae",
+          "fundingInsightId": "FI-33827080896cd0ec"
+        }
+      ],
+      "entityIds": [
+        "EN-8c15a763882d4862"
+      ],
+      "entityNames": [
+        "Ema"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/09/23/ema-raises-77m-as-ai-starts-eating-into-enterprise-software-and-services",
+      "publisher": "TechCrunch：AI（RSS）"
+    },
     {
       "id": "EV-77887cf446f03ba4",
       "dataDate": "2026-09-22",
@@ -4568,6 +4913,34 @@
   ],
   "entities": [
     {
+      "id": "EN-8c15a763882d4862",
+      "name": "Ema",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-4a045d3f9026286c"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-enterprise_software_platform",
+        "TX-target_user-business_user",
+        "TX-ai_market_category-enterprise_applications",
+        "TX-ai_market_subcategory-productivity_enterprise_workflows",
+        "TX-use_case-finance_accounting",
+        "TX-use_case-hr_workforce",
+        "TX-use_case-productivity_enterprise_workflows",
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-23",
+      "lastSeen": "2026-09-24"
+    },
+    {
       "id": "EN-efadb20430d25ea7",
       "name": "星路科技",
       "entityType": "organization_candidate",
@@ -4585,10 +4958,10 @@
         "TX-ai_market_category-industry_applications",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
+        "TX-use_case-finance_accounting",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-financial_services",
-        "TX-ai_market_subcategory-financial_services",
-        "TX-use_case-finance_accounting"
+        "TX-ai_market_subcategory-financial_services"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-09-15",
@@ -4609,13 +4982,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-data_analysis",
         "TX-ai_market_category-industry_applications",
+        "TX-industry-energy_utilities",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
-        "TX-industry-energy_utilities",
-        "TX-ai_market_subcategory-financial_services",
-        "TX-use_case-finance_accounting"
+        "TX-use_case-finance_accounting",
+        "TX-use_case-data_analysis",
+        "TX-ai_market_subcategory-financial_services"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-09-10",
@@ -4636,12 +5009,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_category-enterprise_applications",
-        "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
-        "TX-use_case-productivity_enterprise_workflows",
+        "TX-ai_market_category-enterprise_applications",
+        "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-use_case-finance_accounting",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-professional_services",
         "TX-industry-construction_real_estate"
       ],
@@ -4664,15 +5037,15 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-data_analysis",
         "TX-ai_market_category-industry_applications",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
+        "TX-use_case-finance_accounting",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-industry-financial_services",
-        "TX-ai_market_subcategory-financial_services",
         "TX-technology-agentic_execution",
-        "TX-use_case-finance_accounting"
+        "TX-use_case-data_analysis",
+        "TX-industry-financial_services",
+        "TX-ai_market_subcategory-financial_services"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-31",
@@ -4697,9 +5070,9 @@
         "TX-ai_market_subcategory-industrials",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
+        "TX-use_case-finance_accounting",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-agentic_execution",
-        "TX-use_case-finance_accounting",
         "TX-industry-construction_real_estate"
       ],
       "relatedEntityIds": [],
@@ -4721,12 +5094,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_category-enterprise_applications",
-        "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
-        "TX-use_case-productivity_enterprise_workflows",
+        "TX-ai_market_category-enterprise_applications",
+        "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-use_case-finance_accounting",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-use_case-procurement_supply_chain"
       ],
       "relatedEntityIds": [],
@@ -4748,12 +5121,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_category-enterprise_applications",
-        "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
-        "TX-technology-agentic_execution",
+        "TX-ai_market_category-enterprise_applications",
+        "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-use_case-finance_accounting",
+        "TX-technology-agentic_execution",
         "TX-use_case-procurement_supply_chain"
       ],
       "relatedEntityIds": [],
@@ -4778,10 +5151,10 @@
         "TX-ai_market_category-industry_applications",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
+        "TX-use_case-finance_accounting",
+        "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-ai_market_subcategory-financial_services",
-        "TX-technology-agentic_execution",
-        "TX-use_case-finance_accounting",
         "TX-use_case-security_operations"
       ],
       "relatedEntityIds": [],
@@ -4804,17 +5177,17 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_category-enterprise_applications",
-        "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-developer",
-        "TX-use_case-data_analysis",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
+        "TX-target_user-developer",
+        "TX-ai_market_category-enterprise_applications",
+        "TX-ai_market_subcategory-productivity_enterprise_workflows",
+        "TX-use_case-finance_accounting",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-agentic_execution",
+        "TX-use_case-data_analysis",
         "TX-use_case-software_development",
         "TX-use_case-knowledge_search",
-        "TX-use_case-finance_accounting",
         "TX-technology-code_generation"
       ],
       "relatedEntityIds": [],
@@ -4839,10 +5212,10 @@
         "TX-ai_market_category-industry_applications",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
+        "TX-use_case-finance_accounting",
+        "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-ai_market_subcategory-financial_services",
-        "TX-technology-agentic_execution",
-        "TX-use_case-finance_accounting",
         "TX-use_case-legal_compliance"
       ],
       "relatedEntityIds": [],
@@ -4864,13 +5237,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_category-enterprise_applications",
-        "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
+        "TX-ai_market_category-enterprise_applications",
+        "TX-ai_market_subcategory-productivity_enterprise_workflows",
+        "TX-use_case-finance_accounting",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-technology-agentic_execution",
-        "TX-use_case-finance_accounting"
+        "TX-technology-agentic_execution"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-24",
@@ -4891,14 +5264,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-target_user-business_user",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-product_form-end_user_application",
-        "TX-target_user-business_user",
+        "TX-use_case-finance_accounting",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-industry-financial_services",
         "TX-technology-agentic_execution",
-        "TX-use_case-finance_accounting"
+        "TX-product_form-end_user_application",
+        "TX-industry-financial_services"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-24",
@@ -4919,14 +5292,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-ai_market_category-enterprise_applications",
-        "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
+        "TX-industry-retail_ecommerce",
+        "TX-ai_market_category-enterprise_applications",
+        "TX-ai_market_subcategory-productivity_enterprise_workflows",
+        "TX-use_case-finance_accounting",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-finance_accounting",
-        "TX-industry-retail_ecommerce",
         "TX-use_case-legal_compliance"
       ],
       "relatedEntityIds": [],

@@ -5,12 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-23T02:44:38.147Z",
-    "latestDataDate": "2026-09-23",
-    "currentDate": "2026-09-23",
-    "eventCount": 3519,
-    "quarantinedEventCount": 37,
+    "generatedAt": "2026-09-24T02:18:33.039Z",
+    "latestDataDate": "2026-09-24",
+    "currentDate": "2026-09-24",
+    "eventCount": 3561,
+    "quarantinedEventCount": 39,
     "quarantinedEventIds": [
+      "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -59,23 +61,29 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-07-15",
-    "latest_disclosed_at": "2026-07-15",
+    "latest_disclosed_at": "2026-09-23",
     "role_counts": {
-      "lead": 1
+      "lead": 2
     },
     "round_codes": [
+      "series_b",
       "series_c"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-8c15a763882d4862",
+        "canonical_entity_id": "",
+        "name": "Ema"
+      },
       {
         "entity_id": "EN-026c3bd4be5b91f3",
         "canonical_entity_id": "EN-026c3bd4be5b91f3",
@@ -83,6 +91,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-e5d6aaaecefe12e4",
+        "funding_insight_id": "FI-0393a8a6e43ef544",
+        "event_ids": [
+          "EV-4a045d3f9026286c"
+        ],
+        "company_entity_id": "EN-8c15a763882d4862",
+        "company_canonical_entity_id": "",
+        "company_name": "Ema",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$77M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 77000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7700 万美元"
+        },
+        "announced_at": "2026-09-23",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-1898b8cd3bcc2449",
+            "source_url": "https://techcrunch.com/2026/09/23/ema-raises-77m-as-ai-starts-eating-into-enterprise-software-and-services",
+            "source_title": "Ema 融资 7700 万美元，用 AI 智能体切入企业软件与服务市场",
+            "source_content_hash": "aed60de0b0299f2e",
+            "quote": "The Series B round was led by Bengaluru-based venture firm Creaegis",
+            "quote_hash": "ac2d3a6cf9e8d3a996d0c11d48f899557eb55b6a0b7776743e816a9cba3159dc"
+          }
+        ]
+      },
       {
         "activity_id": "IA-66c3c8807eff1f77",
         "funding_insight_id": "FI-d7bfa354898e2dda",
@@ -125,6 +173,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-1898b8cd3bcc2449",
+        "source_url": "https://techcrunch.com/2026/09/23/ema-raises-77m-as-ai-starts-eating-into-enterprise-software-and-services",
+        "source_title": "Ema 融资 7700 万美元，用 AI 智能体切入企业软件与服务市场",
+        "source_content_hash": "aed60de0b0299f2e",
+        "quote": "The Series B round was led by Bengaluru-based venture firm Creaegis",
+        "quote_hash": "ac2d3a6cf9e8d3a996d0c11d48f899557eb55b6a0b7776743e816a9cba3159dc"
+      },
       {
         "source_id": "FISRC-07d25b80d4335f93",
         "source_url": "https://techcrunch.com/2026/07/15/indian-ai-coding-startup-emergent-becomes-a-unicorn-just-over-a-year-after-launch",

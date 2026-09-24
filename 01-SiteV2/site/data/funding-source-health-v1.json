@@ -1,25 +1,25 @@
 {
   "schema_version": "FUNDING-SOURCE-HEALTH-V1.0",
-  "generated_at": "2026-09-23T03:01:10.715Z",
-  "date": "2026-09-23",
+  "generated_at": "2026-09-24T02:18:58.795Z",
+  "date": "2026-09-24",
   "status": "passed",
   "state": "healthy",
-  "last_checked_date": "2026-09-23",
-  "latest_financing_date": "2026-09-22",
+  "last_checked_date": "2026-09-24",
+  "latest_financing_date": "2026-09-23",
   "totals": {
-    "fetched": 696,
-    "funding_candidates": 116,
-    "verified_events": 6
+    "fetched": 637,
+    "funding_candidates": 125,
+    "verified_events": 11
   },
   "channels": [
     {
       "id": "aihot",
       "status": "collected",
-      "last_success_at": "2026-09-23T00:14:28.767Z",
+      "last_success_at": "2026-09-24T00:14:18.998Z",
       "response_ms": null,
       "http_status": "200",
-      "fetched_count": 323,
-      "latest_content_date": "2026-09-22",
+      "fetched_count": 255,
+      "latest_content_date": "2026-09-23",
       "duplicate_rate": 0,
       "stale_rate": 1,
       "funding_candidate_count": 4,
@@ -30,32 +30,31 @@
     {
       "id": "funding",
       "status": "collected",
-      "last_success_at": "2026-09-23T00:14:53.899Z",
+      "last_success_at": "2026-09-24T00:14:36.949Z",
       "response_ms": null,
       "http_status": "429",
-      "fetched_count": 49,
-      "latest_content_date": "2026-09-22",
+      "fetched_count": 52,
+      "latest_content_date": "2026-09-23",
       "duplicate_rate": 0,
       "stale_rate": 1,
-      "funding_candidate_count": 49,
+      "funding_candidate_count": 52,
       "verified_event_count": 1,
       "failures": [
-        "RSS venturebeat-ai: HTTP 429",
-        "RSS cn-qbitai-rss: fetch failed"
+        "RSS venturebeat-ai: HTTP 429"
       ],
       "fallback_used": false
     },
     {
       "id": "gdelt",
       "status": "collected",
-      "last_success_at": "2026-09-23T00:23:38.549Z",
+      "last_success_at": "2026-09-24T00:25:22.574Z",
       "response_ms": null,
       "http_status": "200",
       "fetched_count": 56,
       "latest_content_date": "",
-      "duplicate_rate": 0.0909,
+      "duplicate_rate": 0,
       "stale_rate": 1,
-      "funding_candidate_count": 11,
+      "funding_candidate_count": 13,
       "verified_event_count": 0,
       "failures": [],
       "fallback_used": false
@@ -63,31 +62,33 @@
     {
       "id": "keyword",
       "status": "collected",
-      "last_success_at": "2026-09-23T00:23:29.295Z",
+      "last_success_at": "2026-09-24T00:23:14.972Z",
       "response_ms": null,
       "http_status": "200",
-      "fetched_count": 150,
-      "latest_content_date": "2024-10-23",
-      "duplicate_rate": 0.122,
+      "fetched_count": 156,
+      "latest_content_date": "2026-09-21",
+      "duplicate_rate": 0.1364,
       "stale_rate": 1,
-      "funding_candidate_count": 41,
+      "funding_candidate_count": 44,
       "verified_event_count": 1,
       "failures": [
-        "keyword-search pre-gate filtered 74 result(s): missing_ai_anchor_in_result=29; broad_list_or_market_report=26; social_or_profile_source=15; directory_or_search_page=2; noise_term:career=1; noise_term:hiring=1"
+        "keyword-search pre-gate filtered 68 result(s): missing_ai_anchor_in_result=27; broad_list_or_market_report=20; social_or_profile_source=15; directory_or_search_page=3; noise_term:career=2; noise_term:hiring=1",
+        "Anysearch fallback for query \"AI agent startup raises procurement workflow announced September 2026 (AI procurement OR tender OR \"contract awarded\" OR \"purchasing agreement\") (official OR government OR newsroom)\": Anysearch returned 0 usable results",
+        "Anysearch fallback for query \"agent governance evals production rollout enterprise AI announced September 2026 (AI server OR AI hardware) (OEM OR ODM OR \"contract manufacturer\" OR \"manufacturing partner\") (official OR newsroom)\": Anysearch returned 0 usable results"
       ],
-      "fallback_used": false
+      "fallback_used": true
     },
     {
       "id": "rss",
       "status": "collected",
-      "last_success_at": "2026-09-23T00:14:30.177Z",
+      "last_success_at": "2026-09-24T00:14:26.191Z",
       "response_ms": null,
       "http_status": "429",
       "fetched_count": 118,
-      "latest_content_date": "2026-09-22",
+      "latest_content_date": "2026-09-23",
       "duplicate_rate": 0,
       "stale_rate": 1,
-      "funding_candidate_count": 11,
+      "funding_candidate_count": 12,
       "verified_event_count": 1,
       "failures": [
         "RSS venturebeat-ai: HTTP 429",

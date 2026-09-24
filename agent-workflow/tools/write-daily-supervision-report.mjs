@@ -2,7 +2,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
-import { fileURLToPath } from "node:url";
+import { isMainModule } from "./lib/module-entry.mjs";
 import { sourceTitleNeedsChineseTranslation } from "./source-title-translation-generator.mjs";
 import { runtimeSourceSnapshot } from "./lib/runtime-source-snapshot.mjs";
 
@@ -1324,7 +1324,6 @@ function main() {
   if (status === "failed") process.exit(1);
 }
 
-const executedFile = process.argv[1] ? path.resolve(process.argv[1]) : "";
-if (executedFile === fileURLToPath(import.meta.url)) {
+if (isMainModule(import.meta.url)) {
   main();
 }

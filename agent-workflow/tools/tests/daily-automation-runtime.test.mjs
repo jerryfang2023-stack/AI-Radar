@@ -42,6 +42,25 @@ test("entry identity resolves directory aliases and never treats imports as CLI 
   }
 });
 
+test("supervision CLI writes a dated receipt when invoked through a directory alias", () => {
+  const temporary = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-supervision-entry-"));
+  const alias = path.join(temporary, "old-location");
+  const output = path.join(temporary, "reports");
+  try {
+    fs.symlinkSync(root, alias, process.platform === "win32" ? "junction" : "dir");
+    const result = spawnSync(process.execPath, [path.join(alias, "agent-workflow/tools/write-daily-supervision-report.mjs"),
+      "--date=2026-09-24", "--github=off", "--scheduled-task=off", `--output-dir=${output}`],
+    { cwd: root, encoding: "utf8", timeout: 60000, windowsHide: true });
+    assert.ok(!result.error, result.error?.message);
+    const receipt = path.join(output, "2026-09-24-daily-supervision-report.json");
+    assert.ok(fs.existsSync(receipt), `missing supervision receipt: ${result.stdout} ${result.stderr}`);
+    assert.equal(JSON.parse(fs.readFileSync(receipt, "utf8")).date, "2026-09-24");
+  } finally {
+    if (fs.existsSync(alias)) fs.unlinkSync(alias);
+    fs.rmSync(temporary, { recursive: true, force: true });
+  }
+});
+
 test("final closure rejects stale evidence but preserves fresh lane-finding reports", () => {
   const action = { status: 0, started_at: "2026-09-13T08:45:00.000Z", finished_at: "2026-09-13T08:46:00.000Z" };
   const report = { date: "2026-09-13", generated_at: "2026-09-13T08:45:30.000Z", ok: true, status: "passed", lanes: [] };

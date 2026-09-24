@@ -5,12 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-23T02:44:38.147Z",
-    "latestDataDate": "2026-09-23",
-    "currentDate": "2026-09-23",
-    "eventCount": 3519,
-    "quarantinedEventCount": 37,
+    "generatedAt": "2026-09-24T02:18:33.039Z",
+    "latestDataDate": "2026-09-24",
+    "currentDate": "2026-09-24",
+    "eventCount": 3561,
+    "quarantinedEventCount": 39,
     "quarantinedEventIds": [
+      "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -61,6 +63,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-0d841753e8afa8f4",
       "EV-f734010431e37500",
       "EV-20dcacae656a9eb8"
     ],
@@ -72,7 +75,7 @@
       "EN-8bc5e80636cd4b86"
     ],
     "firstSeen": "2026-06-17",
-    "lastSeen": "2026-06-25",
+    "lastSeen": "2026-09-24",
     "relationIds": [
       "REL2-fb40fbc6c320e155"
     ],
@@ -81,6 +84,7 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-0d841753e8afa8f4",
         "EV-f734010431e37500"
       ],
       "hardware": [
@@ -90,6 +94,21 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-0d841753e8afa8f4",
+        "dataDate": "2026-09-24",
+        "date": "2026-09-24",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "高通发布第二代骁龙音频平台至尊版：AI 能力翻倍、功耗降低 40%",
+        "displayTags": [],
+        "entityIds": [
+          "EN-42a64c68a4a98ad5"
+        ]
+      },
       {
         "id": "EV-f734010431e37500",
         "dataDate": "2026-06-25",
@@ -376,6 +395,68 @@
         "EN-42a64c68a4a98ad5",
         "EN-968e2d5b08687bf4",
         "EN-8bc5e80636cd4b86"
+      ]
+    }
+  ],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-5e91afa6f090a567",
+      "snapshotKey": "5e91afa6f090a567",
+      "snapshotId": "HWS-bbbe5d5aaa665305",
+      "eventId": "EV-0d841753e8afa8f4",
+      "eventIds": [
+        "EV-0d841753e8afa8f4"
+      ],
+      "dataDate": "2026-09-24",
+      "date": "2026-09-24",
+      "title": "高通",
+      "subject": "高通",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-77bd0987d25b44f7"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-24",
+          "hardware_fact_id": "HWF-77bd0987d25b44f7",
+          "fact_type": "product",
+          "observed_at": "2026-09-23T22:41:13.000Z",
+          "subject_entity_id": "EN-42a64c68a4a98ad5",
+          "subject_name": "高通",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家 9 月 24 日消息，在夏威夷举办的 2026 骁龙峰会上，高通在宣布第六代骁龙 8 至尊版和第六代骁龙 8 超级至尊版芯片后， 今天发布第二代骁龙音频平台至尊版。",
+          "event_refs": [
+            "EV-0d841753e8afa8f4"
+          ],
+          "claim_ref": "CL-90f1c74ff8d2d570",
+          "source_refs": [
+            "SA-c529db655ee2a084"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-24/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/1/006/516.htm",
+      "entityIds": [
+        "EN-42a64c68a4a98ad5"
       ]
     }
   ]

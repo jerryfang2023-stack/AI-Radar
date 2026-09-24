@@ -5,13 +5,13 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-09-23T02:43:17.330Z",
+    "generated_at": "2026-09-24T02:18:04.445Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 495,
-    "input_hash": "fad3a291e1e2a623",
+    "decision_count": 502,
+    "input_hash": "5e9087aa00ddaea0",
     "override_count": 18,
     "needs_review_count": 55,
     "low_confidence_count": 76
@@ -9905,6 +9905,138 @@
       "confidence": 0.85,
       "needs_review": false,
       "rationale": "Snorkel AI 为 AI 实验室和企业提供训练数据集与模拟环境，属于为其他 AI 产品构建者供应数据的基础设施层；其数据即服务以合成数据与专家混合方式生成，故归入 infrastructure_compute > data > synthetic_data。"
+    },
+    {
+      "event_id": "EV-0d0b83c319d971b0",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "industrials",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "energy_utilities"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "达卯科技提供算电协同、虚拟电厂等能源运营软件平台，属于工业/能源行业应用，产品形态为企业软件平台，主要面向能源与算力基础设施运营方。"
+    },
+    {
+      "event_id": "EV-3c86fb0161715336",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "息壤开物 is a physical AI foundation model company developing Large Physics Model (LPM) for robots and physical intelligence scenarios. The core product is a model, not a deployed robot or autonomous machine, so it is classified under infrastructure_compute/development_deployment/models. The XR data and evaluation platforms support model development but the primary offering is the model itself. Use case is physical_automation, industry is manufacturing (robotics), and target user is developer."
+    },
+    {
+      "event_id": "EV-71d477e3af99ef9a",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "manufacturing"
+      ],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "息壤开物（XIRRA）自研物理基础模型LPM，面向机器人等物理智能场景，属于基础设施层的模型开发，产品形态为模型，主要用例为物理自动化，目标用户为开发者。"
+    },
+    {
+      "event_id": "EV-0f2e50fbc9af587a",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "chips",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "公司核心产品为UWB SoC芯片，属于为其他AI/物联网产品提供硬件计算基础设施的芯片供应商，符合infrastructure_compute > hardware_computing > chips。"
+    },
+    {
+      "event_id": "EV-3ca24f79062a359e",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "chips",
+      "product_form_id": "chip_accelerator",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [
+        "automotive_transportation",
+        "manufacturing",
+        "retail_ecommerce"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "驰芯半导体专注于UWB芯片研发与销售，产品已量产并应用于消费电子、物联网、汽车电子和工业市场。UWB芯片属于硬件计算芯片，因此市场层级为 infrastructure_compute > hardware_computing > chips。产品形式为 chip_accelerator。UWB用于高精度空间感知和物理世界智能化，主要用例为 physical_automation。目标用户以企业/商业用户为主。"
+    },
+    {
+      "event_id": "EV-4a045d3f9026286c",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "productivity_enterprise_workflows",
+        "hr_workforce",
+        "finance_accounting"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "Ema 的产品是跨 HR、IT、财务等多个业务职能的 AI 智能体平台，不依赖单一行业数据或监管，也不直接控制物理设备，因此归入企业应用下的生产力/企业工作流子类。"
+    },
+    {
+      "event_id": "EV-be364dc6883ec94b",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "healthcare_life_sciences",
+      "market_application_id": "",
+      "product_form_id": "enterprise_software_platform",
+      "use_case_ids": [
+        "research_discovery",
+        "data_analysis"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences"
+      ],
+      "target_user_ids": [
+        "researcher"
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "rationale": "Enveda 的核心产品是 AI 药物发现平台 PRISM，用于解析质谱数据、预测分子结构并指导实验，直接服务于生物医药研发流程，属于行业专属数据与工作流，因此归入行业应用而非基础设施或企业应用。"
     }
   ],
   "inputs": [
@@ -12883,6 +13015,46 @@
       }
     },
     {
+      "event_id": "EV-0d0b83c319d971b0",
+      "funding_insight_id": "FI-c856c1434a24c08f",
+      "company_name": "上海达卯科技有限公司",
+      "company_full_name": "上海达卯科技有限公司",
+      "website": "https://www.damao.pro/about",
+      "current_sector": "算电协同AI能源运营",
+      "company_evidence_quotes": [
+        "达卯科技成立于2021年，总部位于上海徐汇模速空间，是国内首家将能源大模型规模化落地算电协同、虚拟电厂与泛能源场景的AI企业，也是算电协同赛道的先行者。",
+        "上海达卯科技有限公司，简称达卯科技，成立于2021年3月，总部位于上海市徐汇区，是国内首家将能源大模型应用于算力一电力协同优化领域的高科技企业。"
+      ],
+      "products": [
+        {
+          "name": "算电协同2.0平台・AIDC绿电直连能源运营操作系统",
+          "evidence_quotes": [
+            "公司推出的核心产品算电协同2.0平台・AIDC绿电直连能源运营操作系统，是算电协同产业链中的关键软件，已形成面向GW级智算中心绿电直连场景的全周期智慧能源运营闭环能力，核心技术指标处于行业领先水平，推动AIDC从传统“用电负荷”升级为“新型电力系统下可调度、可交易的柔性资源”。"
+          ]
+        },
+        {
+          "name": "算电协同平台",
+          "evidence_quotes": [
+            "达卯科技独创的算电协同平台，以自研能源大模型为核心，融合精准预测、动态决策和实时调度于一体，实现算力与电力的精准协同"
+          ]
+        },
+        {
+          "name": "AI虚拟电厂平台",
+          "evidence_quotes": [
+            "打造算电协同平台、AI虚拟电厂平台、智能运维平台等产品矩阵"
+          ]
+        }
+      ],
+      "customer_names": [
+        "商汤临港智算中心",
+        "福建智算方舟科技有限公司"
+      ],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
+      }
+    },
+    {
       "event_id": "EV-5e8ad56fcef42b5a",
       "funding_insight_id": "FI-48944ef1f23a9e57",
       "company_name": "上海基元律动科技有限公司",
@@ -14556,6 +14728,82 @@
       }
     },
     {
+      "event_id": "EV-3c86fb0161715336",
+      "funding_insight_id": "FI-168ba5111b3efa51",
+      "company_name": "息壤开物",
+      "company_full_name": "息壤开物",
+      "website": "",
+      "current_sector": "物理AI基座模型",
+      "company_evidence_quotes": [
+        "息壤开物（XIRRA）是一家AI 2.0原生物理AI基座模型公司。",
+        "息壤开物今年7月成立，由前华为云大模型CTO李寅创办"
+      ],
+      "products": [
+        {
+          "name": "LPM（Large Physics Model，物理基础模型）",
+          "evidence_quotes": [
+            "息壤开物自研物理基础模型（Large Physics Model，LPM）——一个理解物理规律、预测状态演化、规划长程动作、支撑闭环执行的物理世界基础模型。",
+            "公司主要研发物理基础模型LPM，面向机器人等物理智能场景。"
+          ]
+        },
+        {
+          "name": "XR数据平台",
+          "evidence_quotes": [
+            "一是XR 数据平台——面向物理AI 研发，覆盖多模态数据接入、清洗、标注、质量检查、版本管理与发布的完整流程。它保持跨本体、跨模型的中立定位，把真机轨迹、人类示教、真实失败案例等物理世界经验，编译成可训练、可追溯、可迭代的高质量数据资产。"
+          ]
+        },
+        {
+          "name": "XR评测平台",
+          "evidence_quotes": [
+            "二是XR评测平台——已实现从场景构建、质量检查、策略执行到报告生成的完整工作流程，支持评测场景复用，以及执行过程、评测报告的保存回查。平台打通仿真场景构建、模型推理与结果可视化全链路，把过去高度依赖人工的工作链路打造为自动化闭环；失败样本可在此完成定位、补数与复验，持续回流至下一轮模型训练，形成评测即飞轮、越评越强的迭代效应。"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-71d477e3af99ef9a",
+      "funding_insight_id": "FI-7bac103a2fa22d4a",
+      "company_name": "息壤开物（XIRRA）",
+      "company_full_name": "息壤开物（XIRRA）",
+      "website": "",
+      "current_sector": "物理AI基座模型",
+      "company_evidence_quotes": [
+        "息壤开物（XIRRA）是一家AI 2.0原生物理AI基座模型公司",
+        "总部位于宝安区"
+      ],
+      "products": [
+        {
+          "name": "物理基础模型LPM（Large Physics Model）",
+          "evidence_quotes": [
+            "息壤开物自研物理基础模型（Large Physics Model，LPM）——一个理解物理规律、预测状态演化、规划长程动作、支撑闭环执行的物理世界基础模型",
+            "公司主要研发物理基础模型LPM，面向机器人等物理智能场景"
+          ]
+        },
+        {
+          "name": "XR数据平台",
+          "evidence_quotes": [
+            "XR 数据平台——面向物理AI 研发，覆盖多模态数据接入、清洗、标注、质量检查、版本管理与发布的完整流程"
+          ]
+        },
+        {
+          "name": "XR评测平台",
+          "evidence_quotes": [
+            "XR评测平台——已实现从场景构建、质量检查、策略执行到报告生成的完整工作流程"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "model",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
       "event_id": "EV-47f16317cc2d62e2",
       "funding_insight_id": "FI-c96241e737132a62",
       "company_name": "小鹏机器人业务",
@@ -15538,6 +15786,81 @@
       "current_classification": {
         "product_form_id": "robotic_system",
         "market_category_id": "physical_ai"
+      }
+    },
+    {
+      "event_id": "EV-0f2e50fbc9af587a",
+      "funding_insight_id": "FI-9dca49960ec03d63",
+      "company_name": "长沙驰芯半导体科技有限公司",
+      "company_full_name": "长沙驰芯半导体科技有限公司",
+      "website": "",
+      "current_sector": "半导体芯片设计",
+      "company_evidence_quotes": [
+        "驰芯半导体创立于2020年6月，总部位于湖南省湘江新区，同时设有上海子公司及研发中心，是一家物联网芯片设计企业，专注于低功耗物联网芯片的研发，核心业务为超宽带（UWB）芯片的研发、设计和销售。",
+        "驰芯半导体以自主UWB芯片为支点，深耕高精度空间感知核心技术，致力于构筑物理世界智能化的感知底座。"
+      ],
+      "products": [
+        {
+          "name": "CX100系列UWB SoC芯片",
+          "evidence_quotes": [
+            "旗下的CX100、CX310、CX500系列UWB S0C芯片，在海内外多家客户测试中展现出明显竞争优势",
+            "目前公司UWB芯片产品CX100、CX310和CX500系列已实现量产，并与消费电子、物联网、汽车电子和工业市场头部客户建立合作并出货。"
+          ]
+        },
+        {
+          "name": "CX310系列UWB SoC芯片",
+          "evidence_quotes": [
+            "驰芯半导体旗下UWB芯片产品CX310和CX500系列已实现量产，与消费电子、 物联网 、汽车电子等领域头部客户建立合作并出货"
+          ]
+        },
+        {
+          "name": "CX500系列UWB SoC芯片",
+          "evidence_quotes": [
+            "驰芯半导体旗下UWB芯片产品CX310和CX500系列已实现量产，与消费电子、 物联网 、汽车电子等领域头部客户建立合作并出货"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-3ca24f79062a359e",
+      "funding_insight_id": "FI-5e102c39ac33c555",
+      "company_name": "长沙驰芯半导体科技有限公司",
+      "company_full_name": "长沙驰芯半导体科技有限公司",
+      "website": "",
+      "current_sector": "半导体芯片",
+      "company_evidence_quotes": [
+        "长沙驰芯半导体科技有限公司（以下简称“驰芯半导体”）专注于超宽带（Ultra Wide Band，简称UWB）芯片的研发和销售，致力于成为全球领 先的通信定位芯片供应商。",
+        "驰芯半导体以自主UWB芯片为支点，深耕高精度空间感知核心技术，致力于构筑物理世界智能化的感知底座。"
+      ],
+      "products": [
+        {
+          "name": "CX100系列UWB芯片",
+          "evidence_quotes": [
+            "目前公司UWB芯片产品CX100、CX310和CX500系列已实现量产，并与消费电子、物联网、汽车电子和工业市场头部客户建立合作并出货。"
+          ]
+        },
+        {
+          "name": "CX310系列UWB芯片",
+          "evidence_quotes": [
+            "目前公司UWB芯片产品CX100、CX310和CX500系列已实现量产，并与消费电子、物联网、汽车电子和工业市场头部客户建立合作并出货。"
+          ]
+        },
+        {
+          "name": "CX500系列UWB芯片",
+          "evidence_quotes": [
+            "目前公司UWB芯片产品CX100、CX310和CX500系列已实现量产，并与消费电子、物联网、汽车电子和工业市场头部客户建立合作并出货。"
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "chip_accelerator",
+        "market_category_id": "infrastructure_compute"
       }
     },
     {
@@ -18819,6 +19142,37 @@
       }
     },
     {
+      "event_id": "EV-4a045d3f9026286c",
+      "funding_insight_id": "FI-33827080896cd0ec",
+      "company_name": "Ema",
+      "company_full_name": "Ema",
+      "website": "https://www.ema.ai",
+      "current_sector": "企业级 AI 智能体平台",
+      "company_evidence_quotes": [
+        "Ema , a startup that uses teams of AI agents to automate corporate processes across HR, IT, and finance"
+      ],
+      "products": [
+        {
+          "name": "Ema AI Employees Platform",
+          "evidence_quotes": [
+            "The startup deploys its technology, which it calls “AI employees” — systems that coordinate multiple AI agents. These help carry out multi-step business processes across a company’s existing applications, rather than handling a single task at a time.",
+            "Ema delivers purpose-built AI Employees for HR, IT and Finance. These AI Employees plan and execute work across the applications an enterprise already uses, check their work, route approvals when required and complete processes end to end – with human oversight for critical decisions."
+          ]
+        }
+      ],
+      "customer_names": [
+        "Wipro",
+        "Hitachi",
+        "ADP",
+        "PwC",
+        "NTT DATA"
+      ],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "enterprise_applications"
+      }
+    },
+    {
       "event_id": "EV-1a6688afdfd108ef",
       "funding_insight_id": "FI-516531801f5798bd",
       "company_name": "Emergent",
@@ -18982,6 +19336,43 @@
       "current_classification": {
         "product_form_id": "developer_tool",
         "market_category_id": "infrastructure_compute"
+      }
+    },
+    {
+      "event_id": "EV-be364dc6883ec94b",
+      "funding_insight_id": "FI-e9d8005e88c2997f",
+      "company_name": "Enveda",
+      "company_full_name": "Enveda",
+      "website": "https://enveda.com/",
+      "current_sector": "AI药物发现",
+      "company_evidence_quotes": [
+        "Enveda , a biotech startup that uses AI to discover new drugs in the natural world",
+        "The clinical-stage biotech company will use the capital to advance multiple programs through clinical development."
+      ],
+      "products": [
+        {
+          "name": "PRISM",
+          "evidence_quotes": [
+            "The company's PRISM foundation model interprets mass-spectrometry data, predicts molecular structures, guides laboratory experiments, and helps rank molecules by therapeutic potential."
+          ]
+        },
+        {
+          "name": "ENV-294",
+          "evidence_quotes": [
+            "ENV-294 is an oral inflammatory-disease candidate being studied in atopic dermatitis and asthma. Enveda reported that eczema severity improved by an average of 85% after 42 days in a Phase 1b study, with no serious side effects reported. Phase 2 studies are underway."
+          ]
+        },
+        {
+          "name": "ENV-308",
+          "evidence_quotes": [
+            "ENV-308 is inspired by Lac-Phe, a molecule released during intense exercise. Enveda is developing the once-daily oral candidate for metabolic health, including the possibility of helping people maintain weight loss after stopping GLP-1 medicines. The first Phase 1 study in 88 healthy volunteers reported favorable safety and tolerability."
+          ]
+        }
+      ],
+      "customer_names": [],
+      "current_classification": {
+        "product_form_id": "enterprise_software_platform",
+        "market_category_id": "industry_applications"
       }
     },
     {

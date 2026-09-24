@@ -5,12 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-23T02:44:38.147Z",
-    "latestDataDate": "2026-09-23",
-    "currentDate": "2026-09-23",
-    "eventCount": 3519,
-    "quarantinedEventCount": 37,
+    "generatedAt": "2026-09-24T02:18:33.039Z",
+    "latestDataDate": "2026-09-24",
+    "currentDate": "2026-09-24",
+    "eventCount": 3561,
+    "quarantinedEventCount": 39,
     "quarantinedEventIds": [
+      "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -61,23 +63,24 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-09-02",
-    "latest_disclosed_at": "2026-08-10",
+    "latest_disclosed_at": "2026-09-23",
     "role_counts": {
       "co_lead": 2,
       "lead": 2,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "series_a",
+      "series_e",
       "series_f",
       "series_g"
     ],
@@ -86,6 +89,11 @@
         "entity_id": "EN-c70eca6b0f88f44d",
         "canonical_entity_id": "EN-c70eca6b0f88f44d",
         "name": "Anthropic"
+      },
+      {
+        "entity_id": "EN-5ee1e4de588a016a",
+        "canonical_entity_id": "",
+        "name": "Enveda"
       },
       {
         "entity_id": "EN-382635c9325bf327",
@@ -99,6 +107,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-b1bfd25b2bac892a",
+        "funding_insight_id": "FI-5bf569d857da4dcb",
+        "event_ids": [
+          "EV-be364dc6883ec94b"
+        ],
+        "company_entity_id": "EN-5ee1e4de588a016a",
+        "company_canonical_entity_id": "",
+        "company_name": "Enveda",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "$311M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 311000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.11 亿美元"
+        },
+        "announced_at": "2026-09-23",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b2cab94e5375e0ba",
+            "source_url": "https://techcrunch.com/2026/09/23/enveda-secures-311m-to-bring-more-nature-derived-ai-drugs-into-clinical-trials",
+            "source_title": "Enveda 获 3.11 亿美元 E 轮融资，推进天然来源 AI 药物进入临床试验",
+            "source_content_hash": "79b5761869f8dba5",
+            "quote": "The fresh funding, which was led by Catalio Capital Management, with participation from Iconiq and others",
+            "quote_hash": "4de0100c58ebb8c5bc3ca996fe00a665d79ecafef938ab278948ad6a72c3a4d4"
+          }
+        ]
+      },
       {
         "activity_id": "IA-47fda0d590f5a669",
         "funding_insight_id": "FI-f55b62cf10cb7c98",
@@ -310,6 +358,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-b2cab94e5375e0ba",
+        "source_url": "https://techcrunch.com/2026/09/23/enveda-secures-311m-to-bring-more-nature-derived-ai-drugs-into-clinical-trials",
+        "source_title": "Enveda 获 3.11 亿美元 E 轮融资，推进天然来源 AI 药物进入临床试验",
+        "source_content_hash": "79b5761869f8dba5",
+        "quote": "The fresh funding, which was led by Catalio Capital Management, with participation from Iconiq and others",
+        "quote_hash": "4de0100c58ebb8c5bc3ca996fe00a665d79ecafef938ab278948ad6a72c3a4d4"
+      },
       {
         "source_id": "FISRC-077b1124fc8e9581",
         "source_url": "https://sg.finance.yahoo.com/news/gic-backed-openai-rival-anthropic-202159553.html",

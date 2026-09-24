@@ -5,12 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-23T02:44:38.147Z",
-    "latestDataDate": "2026-09-23",
-    "currentDate": "2026-09-23",
-    "eventCount": 3519,
-    "quarantinedEventCount": 37,
+    "generatedAt": "2026-09-24T02:18:33.039Z",
+    "latestDataDate": "2026-09-24",
+    "currentDate": "2026-09-24",
+    "eventCount": 3561,
+    "quarantinedEventCount": 39,
     "quarantinedEventIds": [
+      "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -85,6 +87,7 @@
       "EV-e03b324b7e297e6b",
       "EV-887d47bb477e2142",
       "EV-631197767a45d34c",
+      "EV-a8f60b70be8b5e00",
       "EV-9766c0f1ac902595",
       "EV-666f2f4b5756c679",
       "EV-8fef3537ed4c1e48"
@@ -100,12 +103,13 @@
       "EN-4f96127fdacbb405"
     ],
     "firstSeen": "2026-04-09",
-    "lastSeen": "2026-09-22",
+    "lastSeen": "2026-09-24",
     "relationIds": [
       "REL2-fc89e0f24571bef8"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-a8f60b70be8b5e00",
         "EV-1043d78cc040ab30",
         "EV-41c54c428d84cc1e",
         "EV-59e88ff6b13c901b",
@@ -143,6 +147,22 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-a8f60b70be8b5e00",
+        "dataDate": "2026-09-24",
+        "date": "2026-09-23",
+        "eventType": "ipo_listing",
+        "eventTypeLabel": "IPO 与上市",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "英伟达支持的Nscale在其IPO文件中未披露最大客户字节跳动",
+        "displayTags": [],
+        "entityIds": [
+          "EN-8d4321d936320802",
+          "EN-5388bc10736a0eff"
+        ]
+      },
       {
         "id": "EV-10e1ebf738d9a122",
         "dataDate": "2026-09-22",
@@ -1038,6 +1058,9 @@
       "typeLabel": "产品形态",
       "valueId": "enterprise_software_platform",
       "eventIds": [
+        "EV-0d0b83c319d971b0",
+        "EV-4a045d3f9026286c",
+        "EV-be364dc6883ec94b",
         "EV-33df10f232e26f29",
         "EV-fbb4b961191efa55",
         "EV-4bc690025cbda146",
@@ -1232,6 +1255,9 @@
         "EV-7580a050ca19a8ae"
       ],
       "entityIds": [
+        "EN-ef5cac7907b28194",
+        "EN-8c15a763882d4862",
+        "EN-5ee1e4de588a016a",
         "EN-2cee85064ca8de3f",
         "EN-e7d56af70143fcd7",
         "EN-bc06be2cba2b2f2c",
@@ -1403,7 +1429,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-09-23"
+      "lastSeen": "2026-09-24"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -1412,6 +1438,7 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
+        "EV-4a045d3f9026286c",
         "EV-eadf57952ad76a26",
         "EV-5b01704049bcea48",
         "EV-904068439ac5b9a5",
@@ -1540,6 +1567,7 @@
         "EV-23ae55daa341be06",
         "EV-6bb83280a2116f24",
         "EV-d10684a6f16afe10",
+        "EV-cc0d955aa68445ea",
         "EV-ff217f0d7270d4de",
         "EV-84fc5a50962cfc89",
         "EV-d2f89de76c27be7f",
@@ -1641,6 +1669,10 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-0d5a32aca724d30e",
+        "EV-1873f3c6fa4bdedd",
+        "EV-3bf02572d01ed324",
+        "EV-b7808dc792664fa6",
         "EV-67de8f4c9ac5ce4d",
         "EV-bddc994a070fe5f4",
         "EV-1e96f85d4c034559",
@@ -2010,6 +2042,7 @@
         "EV-c17f5a364ed6a3ac"
       ],
       "entityIds": [
+        "EN-8c15a763882d4862",
         "EN-5dd3b777303686d3",
         "EN-cb79e557718da60e",
         "EN-ed0f45e26b04d335",
@@ -2126,6 +2159,7 @@
         "EN-50e2a4156631df49",
         "EN-f531c4e9f8555dcc",
         "EN-df30a48992da7fe8",
+        "EN-1a47edcb80cc76dd",
         "EN-6a8bd14d856a8fd6",
         "EN-01b3d337c12353f3",
         "EN-b9b408a52b47a660",
@@ -2186,6 +2220,8 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-f9768e4769ec9d14",
+        "EN-0ed9e4984f0e77cf",
         "EN-c70eca6b0f88f44d",
         "EN-6fcba5d96a4fadfd",
         "EN-ebefab0353686b57",
@@ -2372,6 +2408,7 @@
         "EN-e72901462ebe4458"
       ],
       "fdeIds": [
+        "FDE-3b1b8676e4a9feae",
         "FDE-e6a6ca05cf979d49",
         "FDE-c77877b7a2447017",
         "FDE-8dd7a8bc8f9d8666",

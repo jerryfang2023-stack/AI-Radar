@@ -51,6 +51,15 @@ Otherwise collection, generation and gates can exit zero without running.
 The community CLI junction regression and runtime entry-identity tests cover
 both direct execution and import-only behavior on Windows and Linux. A zero
 exit code still needs a fresh dated output/gate before publication is accepted.
+The supervision writer follows this same entry contract. Its regression invokes
+the actual CLI through a directory junction and requires a dated report, because
+testing the shared path helper alone cannot detect a CLI that never uses it.
+
+Title numeric validation treats singular English time phrases such as `a week`
+and `an hour` as one unit, equivalent to `一周` and `一小时`. This normalization
+is duration-bounded: articles before ordinary nouns are not numeric facts, and
+changed durations or user counts must still fail. Preserve the original intake
+and regenerate the approved title overlay rather than weakening the gate.
 
 After rebuilding collection telemetry, rebuild the OPS console projection before
 staging. Its embedded telemetry metadata must exactly match the accepted telemetry
