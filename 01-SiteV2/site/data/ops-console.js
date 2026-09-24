@@ -519,8 +519,8 @@ window.WaveSightOpsConsole = {
   },
   "meta": {
     "version": "OPS-V3.8.0-engineering-integration",
-    "generatedAt": "2026-09-23T02:45:11.308Z",
-    "date": "2026-09-23",
+    "generatedAt": "2026-09-24T02:18:59.540Z",
+    "date": "2026-09-24",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
       "01-SiteV2/site/data/pipeline-dashboard.json",
@@ -556,7 +556,7 @@ window.WaveSightOpsConsole = {
     }
   ],
   "daily": {
-    "date": "2026-09-23",
+    "date": "2026-09-24",
     "status": "passed",
     "statusText": "已通过",
     "issueSummary": {
@@ -1248,15 +1248,15 @@ window.WaveSightOpsConsole = {
           },
           {
             "label": "Claims",
-            "value": 87
+            "value": 137
           },
           {
             "label": "Events",
-            "value": 37
+            "value": 54
           },
           {
             "label": "QA",
-            "value": 269
+            "value": 295
           }
         ]
       },
@@ -1300,15 +1300,15 @@ window.WaveSightOpsConsole = {
         "status": "partial",
         "counts": {
           "discovered": 290,
-          "capture_succeeded": 306,
+          "capture_succeeded": 350,
           "capture_failed": 5,
-          "recovered_source_failures": 10,
-          "raw_documents": 306
+          "recovered_source_failures": 11,
+          "raw_documents": 350
         },
         "evidence": [
-          "01-SiteV2/content/11-databases/data-center-v4/2026-09-23/manifest.json",
-          "agent-workflow/reports/2026-09-23-guanlan-daily-monitor-log.md",
-          "agent-workflow/reports/2026-09-23-guanlan-monitor-quality-gate.md"
+          "01-SiteV2/content/11-databases/data-center-v4/2026-09-24/manifest.json",
+          "agent-workflow/reports/2026-09-24-guanlan-daily-monitor-log.md",
+          "agent-workflow/reports/2026-09-24-guanlan-monitor-quality-gate.md"
         ]
       },
       {
@@ -1316,20 +1316,20 @@ window.WaveSightOpsConsole = {
         "label": "事实构建",
         "status": "passed",
         "counts": {
-          "accepted_claims": 87,
+          "accepted_claims": 137,
           "rejected_claims": 0,
-          "accepted": 87,
+          "accepted": 137,
           "rejected": 0,
-          "pending_claims": 4,
-          "canonical_events": 37,
-          "entities": 55,
-          "relationships": 91,
+          "pending_claims": 3,
+          "canonical_events": 54,
+          "entities": 79,
+          "relationships": 140,
           "conflicts": 0,
-          "qa_queue": 269
+          "qa_queue": 295
         },
         "evidence": [
-          "01-SiteV2/content/11-databases/data-center-v4/2026-09-23/manifest.json",
-          "agent-workflow/reports/2026-09-23-data-center-v4-integrity-gate.json"
+          "01-SiteV2/content/11-databases/data-center-v4/2026-09-24/manifest.json",
+          "agent-workflow/reports/2026-09-24-data-center-v4-integrity-gate.json"
         ]
       },
       {
@@ -1343,7 +1343,7 @@ window.WaveSightOpsConsole = {
           "fde_hardware_sync": "passed"
         },
         "evidence": [
-          "agent-workflow/reports/2026-09-23-persistent-asset-manifest.json"
+          "agent-workflow/reports/2026-09-24-persistent-asset-manifest.json"
         ]
       },
       {
@@ -1356,18 +1356,18 @@ window.WaveSightOpsConsole = {
           "authoritative": false
         },
         "evidence": [
-          "agent-workflow/reports/2026-09-23-persistent-asset-manifest.json"
+          "agent-workflow/reports/2026-09-24-persistent-asset-manifest.json"
         ]
       }
     ],
     "latestProduction": {
-      "date": "2026-09-23",
-      "discovered": 248,
-      "captured": 248,
-      "claims": 88,
-      "events": 34,
-      "entities": 52,
-      "relationships": 88
+      "date": "2026-09-24",
+      "discovered": 350,
+      "captured": 350,
+      "claims": 140,
+      "events": 54,
+      "entities": 79,
+      "relationships": 140
     },
     "sync": [
       {
@@ -1388,7 +1388,7 @@ window.WaveSightOpsConsole = {
       {
         "label": "Pipeline Dashboard",
         "status": "passed",
-        "detail": "2026-09-23T00:30:40.942Z"
+        "detail": "2026-09-24T02:18:59.018Z"
       },
       {
         "label": "Daily Supervision",
@@ -1402,43 +1402,42 @@ window.WaveSightOpsConsole = {
       "meta": {
         "version": "COLLECTION-TELEMETRY-V1.0",
         "ops_version": "OPS-V3.8.0-engineering-integration",
-        "data_date": "2026-09-23",
-        "generated_at": "2026-09-23T02:45:10.722Z",
-        "source_snapshot": "c03c18bbf2534b2ac4551f87e8bb247070f917e988bd7edd041da36df4c9c044",
+        "data_date": "2026-09-24",
+        "generated_at": "2026-09-24T02:18:58.890Z",
+        "source_snapshot": "0518549814e031ec77efd843683e799e85a5cdd26206f2dc236e3c2680c955bb",
         "scope": "OPS",
         "canonical_writeback": false,
         "source_of_truth": "Data Center V4 manifest and integrity gate"
       },
       "collection": {
         "discovered": 290,
-        "capture_succeeded": 306,
+        "capture_succeeded": 350,
         "capture_failed": 5,
-        "recovered_source_failures": 10,
-        "raw_documents": 306
+        "recovered_source_failures": 11,
+        "raw_documents": 350
       },
       "factBuild": {
-        "accepted_claims": 87,
+        "accepted_claims": 137,
         "rejected_claims": 0,
-        "accepted": 87,
+        "accepted": 137,
         "rejected": 0,
-        "pending_claims": 4,
-        "canonical_events": 37,
-        "entities": 55,
-        "relationships": 91,
+        "pending_claims": 3,
+        "canonical_events": 54,
+        "entities": 79,
+        "relationships": 140,
         "conflicts": 0,
-        "qa_queue": 269,
+        "qa_queue": 295,
         "qa_by_status": {
-          "review_optional": 254,
-          "open": 15
+          "review_optional": 277,
+          "open": 18
         }
       },
       "v4Gate": {
         "status": "passed",
-        "manifest_date": "2026-09-23",
-        "gate_date": "2026-09-23",
+        "manifest_date": "2026-09-24",
+        "gate_date": "2026-09-24",
         "failures": [],
         "warnings": [
-          "No source-bounded FDE projection was produced.",
           "No source-bounded hardware projection was produced."
         ]
       },
@@ -1464,48 +1463,48 @@ window.WaveSightOpsConsole = {
     },
     "pipelineMeta": {
       "version": "OPS-V3.8.0-engineering-integration",
-      "generatedAt": "2026-09-23T00:30:40.942Z",
+      "generatedAt": "2026-09-24T02:18:59.018Z",
       "dateRange": {
-        "start": "2026-09-17",
-        "end": "2026-09-23"
+        "start": "2026-09-18",
+        "end": "2026-09-24"
       },
       "source": "Data Center V4 manifest + collection-telemetry-v1",
       "telemetryVersion": "COLLECTION-TELEMETRY-V1.0"
     },
     "latest": {
-      "date": "2026-09-23",
-      "label": "2026.09.23",
-      "shortLabel": "09.23",
-      "discovered": 248,
-      "captured": 248,
-      "claims": 88,
-      "events": 34,
-      "entities": 52,
-      "relationships": 88,
+      "date": "2026-09-24",
+      "label": "2026.09.24",
+      "shortLabel": "09.24",
+      "discovered": 350,
+      "captured": 350,
+      "claims": 140,
+      "events": 54,
+      "entities": 79,
+      "relationships": 140,
       "conflicts": 0,
-      "qaQueue": 214,
-      "telemetryDate": "2026-09-23",
+      "qaQueue": 295,
+      "telemetryDate": "2026-09-24",
       "collection": {
         "discovered": 290,
-        "capture_succeeded": 248,
+        "capture_succeeded": 350,
         "capture_failed": 5,
-        "recovered_source_failures": 10,
-        "raw_documents": 248
+        "recovered_source_failures": 11,
+        "raw_documents": 350
       },
       "factBuild": {
-        "accepted_claims": 84,
+        "accepted_claims": 137,
         "rejected_claims": 0,
-        "accepted": 84,
+        "accepted": 137,
         "rejected": 0,
-        "pending_claims": 4,
-        "canonical_events": 34,
-        "entities": 52,
-        "relationships": 88,
+        "pending_claims": 3,
+        "canonical_events": 54,
+        "entities": 79,
+        "relationships": 140,
         "conflicts": 0,
-        "qa_queue": 214,
+        "qa_queue": 295,
         "qa_by_status": {
-          "review_optional": 199,
-          "open": 15
+          "review_optional": 277,
+          "open": 18
         }
       },
       "applicationProjection": {
@@ -1522,28 +1521,41 @@ window.WaveSightOpsConsole = {
       }
     },
     "totals": {
-      "discovered": 2182,
-      "captured": 2182,
-      "claims": 734,
-      "events": 304,
-      "entities": 514,
-      "relationships": 734,
+      "discovered": 2287,
+      "captured": 2287,
+      "claims": 794,
+      "events": 326,
+      "entities": 531,
+      "relationships": 794,
       "conflicts": 0,
-      "qaQueue": 1874
+      "qaQueue": 1958
     },
     "days": [
+      {
+        "date": "2026-09-24",
+        "label": "2026.09.24",
+        "shortLabel": "09.24",
+        "discovered": 350,
+        "captured": 350,
+        "claims": 140,
+        "events": 54,
+        "entities": 79,
+        "relationships": 140,
+        "conflicts": 0,
+        "qaQueue": 295
+      },
       {
         "date": "2026-09-23",
         "label": "2026.09.23",
         "shortLabel": "09.23",
-        "discovered": 248,
-        "captured": 248,
-        "claims": 88,
-        "events": 34,
-        "entities": 52,
-        "relationships": 88,
+        "discovered": 306,
+        "captured": 306,
+        "claims": 91,
+        "events": 37,
+        "entities": 55,
+        "relationships": 91,
         "conflicts": 0,
-        "qaQueue": 214
+        "qaQueue": 269
       },
       {
         "date": "2026-09-22",
@@ -1609,123 +1621,110 @@ window.WaveSightOpsConsole = {
         "relationships": 109,
         "conflicts": 0,
         "qaQueue": 289
-      },
-      {
-        "date": "2026-09-17",
-        "label": "2026.09.17",
-        "shortLabel": "09.17",
-        "discovered": 303,
-        "captured": 303,
-        "claims": 83,
-        "events": 35,
-        "entities": 65,
-        "relationships": 83,
-        "conflicts": 0,
-        "qaQueue": 266
       }
     ],
     "sourceQuality": {
-      "updatedAt": "2026-09-23T02:45:11.216Z",
+      "updatedAt": "2026-09-24T02:18:59.532Z",
       "sampleNote": "按最新 V4 RawDocument 的 acquisition_channel 聚合；样本量为已落盘 Raw 文档数。",
       "metricNote": "诊断分由可用率、全文率、高质提取率、可读性和事实命中率组成，仅用于运营观察，不参与来源准入、排序或事实门禁。",
       "rows": [
         {
           "id": "aihot",
           "label": "AI HOT",
-          "total": 39,
-          "eligibleRate": 100,
-          "fullTextRate": 69,
-          "highQualityRate": 51,
-          "readabilityScore": 56,
-          "factHitRate": 41,
-          "acceptedClaims": 48,
-          "canonicalEvents": 17,
-          "score": 69,
-          "grade": "中"
+          "total": 52,
+          "eligibleRate": 87,
+          "fullTextRate": 56,
+          "highQualityRate": 46,
+          "readabilityScore": 48,
+          "factHitRate": 35,
+          "acceptedClaims": 58,
+          "canonicalEvents": 18,
+          "score": 59,
+          "grade": "待改善"
         },
         {
           "id": "rss-feed",
           "label": "RSS",
-          "total": 82,
-          "eligibleRate": 94,
-          "fullTextRate": 94,
-          "highQualityRate": 80,
-          "readabilityScore": 82,
-          "factHitRate": 15,
-          "acceptedClaims": 24,
-          "canonicalEvents": 12,
-          "score": 78,
+          "total": 85,
+          "eligibleRate": 95,
+          "fullTextRate": 95,
+          "highQualityRate": 79,
+          "readabilityScore": 83,
+          "factHitRate": 22,
+          "acceptedClaims": 50,
+          "canonicalEvents": 20,
+          "score": 79,
           "grade": "中"
         },
         {
           "id": "keyword-search",
           "label": "关键词检索",
-          "total": 85,
-          "eligibleRate": 80,
-          "fullTextRate": 75,
-          "highQualityRate": 69,
-          "readabilityScore": 69,
-          "factHitRate": 6,
-          "acceptedClaims": 8,
+          "total": 94,
+          "eligibleRate": 84,
+          "fullTextRate": 79,
+          "highQualityRate": 73,
+          "readabilityScore": 71,
+          "factHitRate": 5,
+          "acceptedClaims": 9,
           "canonicalEvents": 5,
-          "score": 64,
+          "score": 67,
           "grade": "中"
         },
         {
           "id": "gdelt",
           "label": "GDELT",
-          "total": 42,
-          "eligibleRate": 57,
-          "fullTextRate": 57,
-          "highQualityRate": 48,
-          "readabilityScore": 55,
+          "total": 33,
+          "eligibleRate": 70,
+          "fullTextRate": 61,
+          "highQualityRate": 42,
+          "readabilityScore": 50,
           "factHitRate": 0,
           "acceptedClaims": 0,
           "canonicalEvents": 0,
-          "score": 46,
+          "score": 49,
           "grade": "待改善"
         },
         {
           "id": "china-funding",
           "label": "china-funding",
-          "total": 58,
+          "total": 86,
           "eligibleRate": 100,
-          "fullTextRate": 71,
+          "fullTextRate": 78,
           "highQualityRate": 31,
-          "readabilityScore": 52,
-          "factHitRate": 7,
-          "acceptedClaims": 7,
-          "canonicalEvents": 4,
-          "score": 59,
-          "grade": "待改善"
+          "readabilityScore": 56,
+          "factHitRate": 14,
+          "acceptedClaims": 20,
+          "canonicalEvents": 12,
+          "score": 62,
+          "grade": "中"
         }
       ]
     },
     "chinaFunding": {
       "schema_version": "CHINA-FUNDING-HEALTH-V1.0",
-      "date": "2026-09-23",
-      "generated_at": "2026-09-23T00:40:52.888Z",
+      "date": "2026-09-24",
+      "generated_at": "2026-09-24T00:41:38.612Z",
       "status": "partial",
-      "last_collection_at": "2026-09-23T00:13:49.073Z",
+      "last_collection_at": "2026-09-24T00:13:40.819Z",
       "failed_stage": null,
       "stages": [
         {
           "id": "capture",
           "status": "passed",
-          "started_at": "2026-09-23T00:38:30.788Z",
-          "finished_at": "2026-09-23T00:38:47.283Z"
+          "started_at": "2026-09-24T00:36:51.007Z",
+          "finished_at": "2026-09-24T00:37:12.340Z"
         },
         {
           "id": "facts",
           "status": "passed",
-          "started_at": "2026-09-23T00:38:47.283Z",
-          "finished_at": "2026-09-23T00:39:58.185Z"
+          "started_at": "2026-09-24T00:37:12.340Z",
+          "finished_at": "2026-09-24T00:38:39.865Z"
         },
         {
           "id": "projections",
           "status": "passed",
-          "started_at": "2026-09-23T00:39:58.186Z",
-          "finished_at": "2026-09-23T00:40:52.794Z"
+          "started_at": "2026-09-24T00:38:39.867Z",
+          "finished_at": "2026-09-24T00:41:38.536Z"
         }
       ],
       "sources": [
@@ -1733,7 +1732,7 @@ window.WaveSightOpsConsole = {
           "source_id": "pedaily",
           "registry_id": "cn-pedaily",
           "name": "投资界",
-          "attempted_at": "2026-09-23T00:12:51.212Z",
+          "attempted_at": "2026-09-24T00:12:39.557Z",
           "query_count": 2,
           "successful_queries": 2,
           "list_pages_ok": 2,
@@ -1743,80 +1742,101 @@ window.WaveSightOpsConsole = {
             "https://m.pedaily.cn/",
             "https://www.pedaily.cn/vcpeevent/"
           ],
-          "discovered": 27,
-          "capped": 3,
+          "discovered": 42,
+          "capped": 18,
           "status": "collected",
-          "response_ms": 9041,
-          "completed_at": "2026-09-23T00:13:00.253Z",
+          "response_ms": 6147,
+          "completed_at": "2026-09-24T00:12:45.704Z",
           "raw_count": 24,
           "readable_count": 24,
-          "accepted_claims": 2,
+          "accepted_claims": 5,
           "verified_event_ids": [
-            "EV-fbb4b961191efa55",
-            "EV-33df10f232e26f29"
+            "EV-3ca24f79062a359e",
+            "EV-3c86fb0161715336",
+            "EV-71d477e3af99ef9a",
+            "EV-8c634244a6a6d408"
           ],
           "funding_event_ids": [
-            "EV-fbb4b961191efa55",
-            "EV-33df10f232e26f29"
+            "EV-3ca24f79062a359e",
+            "EV-3c86fb0161715336",
+            "EV-71d477e3af99ef9a",
+            "EV-8c634244a6a6d408"
           ],
-          "china_funding_event_ids": [
-            "EV-33df10f232e26f29"
-          ],
+          "china_funding_event_ids": [],
           "card_ids": [
-            "FI-1c45f6b3bea32aad",
-            "FI-16af0b20c345fd03"
+            "FI-a2fd2365924904e7",
+            "FI-86634a7717d63426"
           ],
-          "latest_disclosure": "2026-09-22T10:22:00.000Z"
+          "latest_disclosure": "2026-09-23T09:47:00.000Z"
         },
         {
           "source_id": "chinaventure",
           "registry_id": "cn-chinaventure",
           "name": "投中网",
-          "attempted_at": "2026-09-23T00:13:00.253Z",
+          "attempted_at": "2026-09-24T00:12:45.704Z",
           "query_count": 2,
           "successful_queries": 2,
           "list_pages_ok": 1,
-          "candidates": 16,
+          "candidates": 24,
           "failures": [],
           "entry_urls": [
             "https://www.chinaventure.com.cn/"
           ],
-          "discovered": 16,
+          "discovered": 24,
           "capped": 0,
           "status": "collected",
-          "response_ms": 8156,
-          "completed_at": "2026-09-23T00:13:08.409Z",
-          "raw_count": 16,
-          "readable_count": 16,
-          "accepted_claims": 0,
-          "verified_event_ids": [],
-          "funding_event_ids": [],
-          "china_funding_event_ids": [],
-          "card_ids": [],
-          "latest_disclosure": "2026-09-22T07:17:00.000Z"
+          "response_ms": 4094,
+          "completed_at": "2026-09-24T00:12:49.798Z",
+          "raw_count": 24,
+          "readable_count": 24,
+          "accepted_claims": 5,
+          "verified_event_ids": [
+            "EV-c96705c69e11c520",
+            "EV-0f2e50fbc9af587a",
+            "EV-0d0b83c319d971b0",
+            "EV-f3303c1905f3467b"
+          ],
+          "funding_event_ids": [
+            "EV-c96705c69e11c520",
+            "EV-0f2e50fbc9af587a",
+            "EV-0d0b83c319d971b0",
+            "EV-f3303c1905f3467b"
+          ],
+          "china_funding_event_ids": [
+            "EV-0f2e50fbc9af587a",
+            "EV-0d0b83c319d971b0",
+            "EV-f3303c1905f3467b"
+          ],
+          "card_ids": [
+            "FI-86634a7717d63426",
+            "FI-e81dafc2defecb80",
+            "FI-6f249b72ba7485a4",
+            "FI-85004d0ca806b8ac"
+          ],
+          "latest_disclosure": "2026-09-23T06:58:00.000Z"
         },
         {
           "source_id": "36kr",
           "registry_id": "cn-36kr-rss",
           "name": "36氪",
-          "attempted_at": "2026-09-23T00:13:08.409Z",
+          "attempted_at": "2026-09-24T00:12:49.798Z",
           "query_count": 2,
           "successful_queries": 2,
           "list_pages_ok": 0,
-          "candidates": 1,
+          "candidates": 2,
           "failures": [
             "list https://pitchhub.36kr.com/: no readable funding article links"
           ],
           "entry_urls": [
             "https://pitchhub.36kr.com/"
           ],
-          "discovered": 1,
+          "discovered": 2,
           "capped": 0,
           "status": "partial",
-          "response_ms": 6159,
-          "completed_at": "2026-09-23T00:13:14.568Z",
-          "raw_count": 1,
-          "readable_count": 1,
+          "response_ms": 6857,
+          "completed_at": "2026-09-24T00:12:56.655Z",
+          "raw_count": 2,
+          "readable_count": 2,
           "accepted_claims": 0,
           "verified_event_ids": [],
           "funding_event_ids": [],
@@ -1828,22 +1848,22 @@ window.WaveSightOpsConsole = {
           "source_id": "cyzone",
           "registry_id": "cn-cyzone",
           "name": "创业邦",
-          "attempted_at": "2026-09-23T00:13:14.568Z",
+          "attempted_at": "2026-09-24T00:12:56.655Z",
           "query_count": 2,
           "successful_queries": 2,
           "list_pages_ok": 1,
-          "candidates": 4,
+          "candidates": 11,
           "failures": [],
           "entry_urls": [
             "https://www.cyzone.cn/"
           ],
-          "discovered": 4,
+          "discovered": 11,
           "capped": 0,
           "status": "collected",
-          "response_ms": 6891,
-          "completed_at": "2026-09-23T00:13:21.459Z",
-          "raw_count": 3,
-          "readable_count": 3,
+          "response_ms": 13108,
+          "completed_at": "2026-09-24T00:13:09.763Z",
+          "raw_count": 11,
+          "readable_count": 11,
           "accepted_claims": 0,
           "verified_event_ids": [],
           "funding_event_ids": [],
@@ -1857,80 +1877,80 @@ window.WaveSightOpsConsole = {
           "source_id": "cls",
           "registry_id": "cn-cls",
           "name": "财联社／科创板日报",
-          "attempted_at": "2026-09-23T00:13:21.459Z",
+          "attempted_at": "2026-09-24T00:13:09.764Z",
           "query_count": 2,
           "successful_queries": 2,
           "list_pages_ok": 0,
-          "candidates": 5,
+          "candidates": 8,
           "failures": [
             "list https://www.cls.cn/: no readable funding article links"
           ],
           "entry_urls": [
             "https://www.cls.cn/"
           ],
-          "discovered": 5,
+          "discovered": 8,
           "capped": 0,
           "status": "partial",
-          "response_ms": 14993,
-          "completed_at": "2026-09-23T00:13:36.452Z",
-          "raw_count": 5,
-          "readable_count": 5,
-          "accepted_claims": 2,
-          "verified_event_ids": [
-            "EV-375d04f7cc9746c6"
-          ],
-          "funding_event_ids": [
-            "EV-375d04f7cc9746c6"
-          ],
+          "response_ms": 7568,
+          "completed_at": "2026-09-24T00:13:17.332Z",
+          "raw_count": 8,
+          "readable_count": 8,
+          "accepted_claims": 1,
+          "verified_event_ids": [],
+          "funding_event_ids": [],
           "china_funding_event_ids": [],
           "card_ids": [
-            "FI-1d043b12be806460"
+            "FI-c2d2a86fa237b6eb"
           ],
-          "latest_disclosure": "2026-09-17T02:36:00.000Z"
+          "latest_disclosure": "2026-09-21T10:12:00.000Z"
         },
         {
           "source_id": "qbitai",
           "registry_id": "cn-qbitai-rss",
           "name": "量子位",
-          "attempted_at": "2026-09-23T00:13:36.452Z",
+          "attempted_at": "2026-09-24T00:13:17.332Z",
           "query_count": 2,
           "successful_queries": 2,
-          "list_pages_ok": 0,
-          "candidates": 9,
-          "failures": [
-            "list https://www.qbitai.com/: no readable funding article links"
-          ],
+          "list_pages_ok": 1,
+          "candidates": 17,
+          "failures": [],
           "entry_urls": [
             "https://www.qbitai.com/"
           ],
-          "discovered": 9,
+          "discovered": 17,
           "capped": 0,
-          "status": "partial",
-          "response_ms": 4897,
-          "completed_at": "2026-09-23T00:13:41.349Z",
-          "raw_count": 9,
-          "readable_count": 9,
-          "accepted_claims": 3,
+          "status": "collected",
+          "response_ms": 7263,
+          "completed_at": "2026-09-24T00:13:24.595Z",
+          "raw_count": 17,
+          "readable_count": 17,
+          "accepted_claims": 9,
           "verified_event_ids": [
-            "EV-2de77a62435cc041"
+            "EV-2de77a62435cc041",
+            "EV-faa25b0b9ffbaa30",
+            "EV-0d0b83c319d971b0"
           ],
           "funding_event_ids": [
-            "EV-2de77a62435cc041"
+            "EV-2de77a62435cc041",
+            "EV-0d0b83c319d971b0"
           ],
-          "china_funding_event_ids": [],
+          "china_funding_event_ids": [
+            "EV-0d0b83c319d971b0"
+          ],
           "card_ids": [
+            "FI-17089973bc48aad2",
+            "FI-257e4f42c36415ea",
+            "FI-111c093076dbcf41",
             "FI-66e7dd713fc6bab5",
-            "FI-846562dfba15b6a0",
-            "FI-29dc2b4975d2ba0a",
-            "FI-5c529fe1ecb9dd07"
+            "FI-29dc2b4975d2ba0a"
           ],
-          "latest_disclosure": "2026-09-10T00:00:00+08:00"
+          "latest_disclosure": "2026-09-23T00:00:00+08:00"
         },
         {
           "source_id": "jiqizhixin",
           "registry_id": "cn-jiqizhixin",
           "name": "机器之心",
-          "attempted_at": "2026-09-23T00:13:41.349Z",
+          "attempted_at": "2026-09-24T00:13:24.595Z",
           "query_count": 2,
           "successful_queries": 2,
           "list_pages_ok": 0,
@@ -1944,8 +1964,8 @@ window.WaveSightOpsConsole = {
           "discovered": 0,
           "capped": 0,
           "status": "partial",
-          "response_ms": 7676,
-          "completed_at": "2026-09-23T00:13:49.025Z",
+          "response_ms": 16190,
+          "completed_at": "2026-09-24T00:13:40.785Z",
           "raw_count": 0,
           "readable_count": 0,
           "accepted_claims": 0,
@@ -1959,15 +1979,15 @@ window.WaveSightOpsConsole = {
       "totals": {
         "sources_attempted": 7,
         "sources_failed": 0,
-        "candidates": 59,
-        "readable_documents": 58,
-        "accepted_claims": 7,
-        "verified_events": 4,
-        "funding_events": 4,
-        "china_funding_events": 1,
-        "linked_organizations": 6,
+        "candidates": 86,
+        "readable_documents": 86,
+        "accepted_claims": 20,
+        "verified_events": 10,
+        "funding_events": 9,
+        "china_funding_events": 3,
+        "linked_organizations": 14,
         "linked_products": 0,
-        "published_card_matches": 8
+        "published_card_matches": 12
       },
       "publication": {
         "status": "awaiting_publication_receipt"
@@ -27804,50 +27824,50 @@ window.WaveSightOpsConsole = {
     ],
     "batches": [
       {
-        "id": "data-center:2026-09-23",
-        "observedAt": "2026-09-23T02:45:10.722Z",
-        "sourceSnapshot": "c03c18bbf2534b2ac4551f87e8bb247070f917e988bd7edd041da36df4c9c044",
+        "id": "data-center:2026-09-24",
+        "observedAt": "2026-09-24T02:18:58.890Z",
+        "sourceSnapshot": "0518549814e031ec77efd843683e799e85a5cdd26206f2dc236e3c2680c955bb",
         "stages": [
           {
-            "id": "data-center:2026-09-23:collection",
+            "id": "data-center:2026-09-24:collection",
             "label": "采集",
             "status": "partial",
             "counts": {
               "discovered": 290,
-              "capture_succeeded": 306,
+              "capture_succeeded": 350,
               "capture_failed": 5,
-              "recovered_source_failures": 10,
-              "raw_documents": 306
+              "recovered_source_failures": 11,
+              "raw_documents": 350
             },
             "evidence": [
-              "01-SiteV2/content/11-databases/data-center-v4/2026-09-23/manifest.json",
-              "agent-workflow/reports/2026-09-23-guanlan-daily-monitor-log.md",
-              "agent-workflow/reports/2026-09-23-guanlan-monitor-quality-gate.md"
+              "01-SiteV2/content/11-databases/data-center-v4/2026-09-24/manifest.json",
+              "agent-workflow/reports/2026-09-24-guanlan-daily-monitor-log.md",
+              "agent-workflow/reports/2026-09-24-guanlan-monitor-quality-gate.md"
             ]
           },
           {
-            "id": "data-center:2026-09-23:fact_build",
+            "id": "data-center:2026-09-24:fact_build",
             "label": "事实构建",
             "status": "passed",
             "counts": {
-              "accepted_claims": 87,
+              "accepted_claims": 137,
               "rejected_claims": 0,
-              "accepted": 87,
+              "accepted": 137,
               "rejected": 0,
-              "pending_claims": 4,
-              "canonical_events": 37,
-              "entities": 55,
-              "relationships": 91,
+              "pending_claims": 3,
+              "canonical_events": 54,
+              "entities": 79,
+              "relationships": 140,
               "conflicts": 0,
-              "qa_queue": 269
+              "qa_queue": 295
             },
             "evidence": [
-              "01-SiteV2/content/11-databases/data-center-v4/2026-09-23/manifest.json",
-              "agent-workflow/reports/2026-09-23-data-center-v4-integrity-gate.json"
+              "01-SiteV2/content/11-databases/data-center-v4/2026-09-24/manifest.json",
+              "agent-workflow/reports/2026-09-24-data-center-v4-integrity-gate.json"
             ]
           },
           {
-            "id": "data-center:2026-09-23:application_projection",
+            "id": "data-center:2026-09-24:application_projection",
             "label": "应用投影",
             "status": "passed",
             "counts": {
@@ -27857,11 +27877,11 @@ window.WaveSightOpsConsole = {
               "fde_hardware_sync": "passed"
             },
             "evidence": [
-              "agent-workflow/reports/2026-09-23-persistent-asset-manifest.json"
+              "agent-workflow/reports/2026-09-24-persistent-asset-manifest.json"
             ]
           },
           {
-            "id": "data-center:2026-09-23:publication",
+            "id": "data-center:2026-09-24:publication",
             "label": "发布",
             "status": "waiting",
             "counts": {
@@ -27870,13 +27890,13 @@ window.WaveSightOpsConsole = {
               "authoritative": false
             },
             "evidence": [
-              "agent-workflow/reports/2026-09-23-persistent-asset-manifest.json"
+              "agent-workflow/reports/2026-09-24-persistent-asset-manifest.json"
             ]
           }
         ]
       }
     ],
     "catalogGeneratedAt": "2026-09-13 16:21:58",
-    "snapshotGeneratedAt": "2026-09-23T02:45:11.308Z"
+    "snapshotGeneratedAt": "2026-09-24T02:18:59.540Z"
   }
 };

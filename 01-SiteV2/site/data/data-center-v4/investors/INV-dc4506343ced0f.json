@@ -5,12 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-23T02:44:38.147Z",
-    "latestDataDate": "2026-09-23",
-    "currentDate": "2026-09-23",
-    "eventCount": 3519,
-    "quarantinedEventCount": 37,
+    "generatedAt": "2026-09-24T02:18:33.039Z",
+    "latestDataDate": "2026-09-24",
+    "currentDate": "2026-09-24",
+    "eventCount": 3561,
+    "quarantinedEventCount": 39,
     "quarantinedEventIds": [
+      "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -59,23 +61,30 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-08-01",
-    "latest_disclosed_at": "2025-08-01",
+    "latest_disclosed_at": "2026-09-23",
     "role_counts": {
-      "lead": 1
+      "lead": 1,
+      "participant": 1
     },
     "round_codes": [
-      "series_a"
+      "series_a",
+      "series_b"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-8c15a763882d4862",
+        "canonical_entity_id": "",
+        "name": "Ema"
+      },
       {
         "entity_id": "EN-50e2a4156631df49",
         "canonical_entity_id": "",
@@ -83,6 +92,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-65f51ddcd38de5c8",
+        "funding_insight_id": "FI-0393a8a6e43ef544",
+        "event_ids": [
+          "EV-4a045d3f9026286c"
+        ],
+        "company_entity_id": "EN-8c15a763882d4862",
+        "company_canonical_entity_id": "",
+        "company_name": "Ema",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$77M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 77000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7700 万美元"
+        },
+        "announced_at": "2026-09-23",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1898b8cd3bcc2449",
+            "source_url": "https://techcrunch.com/2026/09/23/ema-raises-77m-as-ai-starts-eating-into-enterprise-software-and-services",
+            "source_title": "Ema 融资 7700 万美元，用 AI 智能体切入企业软件与服务市场",
+            "source_content_hash": "aed60de0b0299f2e",
+            "quote": "with existing investors Accel, Section 32, and Prosus increasing their stakes",
+            "quote_hash": "069118ff869b0b60360e17fac78c42a06952f1dfe4275a277ebeb7c57898ee1e"
+          }
+        ]
+      },
       {
         "activity_id": "IA-003d643d63caac1a",
         "funding_insight_id": "FI-1064b8c5f69e8336",
@@ -125,6 +174,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-1898b8cd3bcc2449",
+        "source_url": "https://techcrunch.com/2026/09/23/ema-raises-77m-as-ai-starts-eating-into-enterprise-software-and-services",
+        "source_title": "Ema 融资 7700 万美元，用 AI 智能体切入企业软件与服务市场",
+        "source_content_hash": "aed60de0b0299f2e",
+        "quote": "with existing investors Accel, Section 32, and Prosus increasing their stakes",
+        "quote_hash": "069118ff869b0b60360e17fac78c42a06952f1dfe4275a277ebeb7c57898ee1e"
+      },
       {
         "source_id": "FISRC-3ac436d049634bc2",
         "source_url": "https://techcrunch.com/2025/08/01/fundamental-research-labs-nabs-33-million-from-prosus-to-build-ai-agents-for-multiple-verticals/",

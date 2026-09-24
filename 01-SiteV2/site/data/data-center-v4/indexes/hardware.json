@@ -5,12 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-23T02:44:38.147Z",
-    "latestDataDate": "2026-09-23",
-    "currentDate": "2026-09-23",
-    "eventCount": 3519,
-    "quarantinedEventCount": 37,
+    "generatedAt": "2026-09-24T02:18:33.039Z",
+    "latestDataDate": "2026-09-24",
+    "currentDate": "2026-09-24",
+    "eventCount": 3561,
+    "quarantinedEventCount": 39,
     "quarantinedEventIds": [
+      "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -3562,6 +3564,318 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-5e91afa6f090a567",
+      "snapshotKey": "5e91afa6f090a567",
+      "snapshotId": "HWS-bbbe5d5aaa665305",
+      "eventId": "EV-0d841753e8afa8f4",
+      "eventIds": [
+        "EV-0d841753e8afa8f4"
+      ],
+      "dataDate": "2026-09-24",
+      "date": "2026-09-24",
+      "title": "高通",
+      "subject": "高通",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-77bd0987d25b44f7"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-24",
+          "hardware_fact_id": "HWF-77bd0987d25b44f7",
+          "fact_type": "product",
+          "observed_at": "2026-09-23T22:41:13.000Z",
+          "subject_entity_id": "EN-42a64c68a4a98ad5",
+          "subject_name": "高通",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "IT之家 9 月 24 日消息，在夏威夷举办的 2026 骁龙峰会上，高通在宣布第六代骁龙 8 至尊版和第六代骁龙 8 超级至尊版芯片后， 今天发布第二代骁龙音频平台至尊版。",
+          "event_refs": [
+            "EV-0d841753e8afa8f4"
+          ],
+          "claim_ref": "CL-90f1c74ff8d2d570",
+          "source_refs": [
+            "SA-c529db655ee2a084"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-24/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/1/006/516.htm",
+      "entityIds": [
+        "EN-42a64c68a4a98ad5"
+      ]
+    },
+    {
+      "id": "HWC-999f391ca581fa19",
+      "snapshotKey": "999f391ca581fa19",
+      "snapshotId": "HWS-7627e7d5bbe2a20b",
+      "eventId": "EV-b7808dc792664fa6",
+      "eventIds": [
+        "EV-b7808dc792664fa6"
+      ],
+      "dataDate": "2026-09-24",
+      "date": "2026-09-24",
+      "title": "Connect 2026",
+      "subject": "Meta",
+      "productNames": [
+        "Connect 2026"
+      ],
+      "hardwareType": "smart_glasses",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-8b0f9dd1af8bc60d"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-24",
+          "hardware_fact_id": "HWF-c6b5308018cd0294",
+          "fact_type": "product",
+          "observed_at": "2026-09-23T00:00:00.000Z",
+          "subject_entity_id": "EN-ea3bd73e2b506e00",
+          "subject_name": "Meta",
+          "product_entity_ids": [
+            "EN-7f3b9f040cd732ad"
+          ],
+          "product_names": [
+            "Connect 2026"
+          ],
+          "component_type": "smart_glasses",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "It’s time once again for Meta’s annual September product launch event, and The Verge is on the ground in Menlo Park to cover the show live. Meta says that today’s keynote by Mark Zuckerberg will be about how “Meta is building a future for everyone” — something he wrote at length about in a recent essay about AI, smart glasses, and more. That means we can expect more news from Zuckerberg and his team on those topics; perhaps we’ll hear more about Meta’s recently launched Muse AI agent and new glasses hardware.",
+          "event_refs": [
+            "EV-b7808dc792664fa6"
+          ],
+          "claim_ref": "CL-34a6a4413d31bde4",
+          "source_refs": [
+            "SA-4e11476c50fb217f"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-24/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-09-24",
+          "hardware_fact_id": "HWF-8b0f9dd1af8bc60d",
+          "fact_type": "product",
+          "observed_at": "2026-09-23T00:00:00.000Z",
+          "subject_entity_id": "EN-ea3bd73e2b506e00",
+          "subject_name": "Meta",
+          "product_entity_ids": [
+            "EN-7f3b9f040cd732ad"
+          ],
+          "product_names": [
+            "Connect 2026"
+          ],
+          "component_type": "smart_glasses",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Whatever Zuckerberg and Meta have to say about smart glasses will be particularly notable. The company is dealing with an outpouring of privacy and harassment concerns stemming from the product line’s built-in camera, which has led to them being derided as “pervert glasses.” Meta has already tried to tackle that reputation with recent privacy fixes and a new marketing campaign, but it could introduce more updates on the Connect stage.",
+          "event_refs": [
+            "EV-b7808dc792664fa6"
+          ],
+          "claim_ref": "CL-c0aa6d2e30b2466e",
+          "source_refs": [
+            "SA-4e11476c50fb217f"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-24/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://theverge.com/tech/998457/meta-connect-2026-live-blog-mark-zuckerberg-keynote",
+      "entityIds": [
+        "EN-ea3bd73e2b506e00",
+        "EN-7f3b9f040cd732ad"
+      ]
+    },
+    {
+      "id": "HWC-6eefd85afa49d4f6",
+      "snapshotKey": "6eefd85afa49d4f6",
+      "snapshotId": "HWS-1f6587969156ebd1",
+      "eventId": "EV-9ced0afc6d0d1f63",
+      "eventIds": [
+        "EV-9ced0afc6d0d1f63"
+      ],
+      "dataDate": "2026-09-24",
+      "date": "2026-09-24",
+      "title": "Nemotron 3 Diarization",
+      "subject": "NVIDIA",
+      "productNames": [
+        "Nemotron 3 Diarization"
+      ],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-bf389cb35e8753ab"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-24",
+          "hardware_fact_id": "HWF-bf389cb35e8753ab",
+          "fact_type": "product",
+          "observed_at": "2026-09-23T18:17:14.000Z",
+          "subject_entity_id": "EN-8d4321d936320802",
+          "subject_name": "NVIDIA",
+          "product_entity_ids": [
+            "EN-58b573f59fdbfa74"
+          ],
+          "product_names": [
+            "Nemotron 3 Diarization"
+          ],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Yes. The weights are released under the OpenMDW License 1.1 , which permits commercial use. It runs on Linux through NVIDIA NeMo, using Ampere, Ada Lovelace, Hopper, or Blackwell GPUs.",
+          "event_refs": [
+            "EV-9ced0afc6d0d1f63"
+          ],
+          "claim_ref": "CL-83f798b6fcbe3de3",
+          "source_refs": [
+            "SA-a6b876f327c0acc8"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-24/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/09/23/nvidia-releases-nemotron-3-diarization",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-58b573f59fdbfa74"
+      ]
+    },
+    {
+      "id": "HWC-8c8f92d8d611d20e",
+      "snapshotKey": "8c8f92d8d611d20e",
+      "snapshotId": "HWS-74f51c675c2277af",
+      "eventId": "EV-df53157dee9ad589",
+      "eventIds": [
+        "EV-df53157dee9ad589"
+      ],
+      "dataDate": "2026-09-24",
+      "date": "2026-09-24",
+      "title": "Private Processing",
+      "subject": "Meta 为 AI 眼镜",
+      "productNames": [
+        "Private Processing"
+      ],
+      "hardwareType": "smart_glasses",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-7ca9e4881e81d01d"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-24",
+          "hardware_fact_id": "HWF-7ca9e4881e81d01d",
+          "fact_type": "product",
+          "observed_at": "2026-09-24T00:00:00.000Z",
+          "subject_entity_id": "EN-5746c6c54685bf8e",
+          "subject_name": "Meta 为 AI 眼镜",
+          "product_entity_ids": [
+            "EN-86a0e9636c0be56d"
+          ],
+          "product_names": [
+            "Private Processing"
+          ],
+          "component_type": "smart_glasses",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "This isn’t a new idea for us. In 2025, we introduced Private Processing for WhatsApp and the Meta AI app, allowing you to have completely private chats with Meta AI, without Meta or WhatsApp ever seeing the data. We’ve learned from that initial approach and we’re expanding it to bring these same privacy benefits to our AI glasses. This blog highlights how we engineered a cloud runtime that processes personal context at scale.",
+          "event_refs": [
+            "EV-df53157dee9ad589"
+          ],
+          "claim_ref": "CL-264c69a1ab3851a0",
+          "source_refs": [
+            "SA-c3a3ce390a7dcf4f"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-24/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://engineering.fb.com/2026/09/23/security/private-processing-meta-ai-glasses",
+      "entityIds": [
+        "EN-5746c6c54685bf8e",
+        "EN-ea3bd73e2b506e00",
+        "EN-86a0e9636c0be56d"
+      ]
+    },
     {
       "id": "HWC-efc4726e2dac7dda",
       "snapshotKey": "efc4726e2dac7dda",
@@ -17075,48 +17389,19 @@
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
-          "id": "open_weights",
-          "name": "开放权重",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "open_weights",
-          "name": "开放权重",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "open_weights",
-          "name": "开放权重",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "open_weights",
-          "name": "开放权重",
-          "entityIds": [],
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-f9768e4769ec9d14"
+          ],
           "provenance": "claim_assertion",
           "assertionId": ""
         }
       ],
-      "sourceUrl": "https://marktechpost.com/2026/08/23/harvey-tenet-post-trained-kimi-k3-legal-agent-model",
+      "sourceUrl": "https://fireworks.ai/blog/ember-1",
       "entityIds": [
-        "EN-c9fd53f3265ef997",
-        "EN-8d4321d936320802",
-        "EN-30cae3294219af79",
-        "EN-607964040e4b62e0",
-        "EN-7d3194f79e645c42",
-        "EN-b5251b35f15bedc4"
+        "EN-f9768e4769ec9d14",
+        "EN-38fa3bccfb59f5c5"
       ]
     },
     {
@@ -18446,42 +18731,39 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-09-23",
-      "funnel_id": "LF-4e7a1a0629483e45",
+      "data_date": "2026-09-24",
+      "funnel_id": "LF-47acbacdbbdcb135",
       "lens": "hardware",
-      "date": "2026-09-23",
+      "date": "2026-09-24",
       "monitoring_paths": [
         "hardware_capacity_fab",
         "hardware_capex",
-        "hardware_oem_odm",
         "hardware_product_specs",
         "hardware_shipment_deployment",
         "hardware_supply_agreement"
       ],
-      "raw_documents": 38,
-      "original_sources": 34,
-      "valid_claims": 7,
-      "observations": 3,
-      "canonical_events": 4,
+      "raw_documents": 33,
+      "original_sources": 27,
+      "valid_claims": 8,
+      "observations": 5,
+      "canonical_events": 5,
       "blocker_counts": {
-        "event_not_ai_relevant": 5,
-        "source_outside_daily_window": 10,
-        "no_source_bounded_claim": 1,
         "rumor_requires_primary_confirmation": 1,
-        "raw_source_quality_block": 9,
-        "homepage_requires_original_event_source": 1,
-        "non_event_or_index_title": 1,
-        "no_source_bounded_event": 4,
-        "multi_event_roundup_not_single_event_source": 1,
-        "industry_overview_not_event_source": 1
+        "domestic_publication_date_unverified": 2,
+        "source_outside_daily_window": 10,
+        "event_not_ai_relevant": 3,
+        "no_source_bounded_claim": 1,
+        "non_event_or_index_title": 2,
+        "no_source_bounded_event": 2,
+        "raw_source_quality_block": 7
       },
       "rates": {
-        "original_source_rate": 0.8947368421052632,
-        "valid_claim_rate": 0.18421052631578946,
-        "observation_rate": 0.42857142857142855,
-        "event_conversion_rate": 0.5714285714285714
+        "original_source_rate": 0.8181818181818182,
+        "valid_claim_rate": 0.24242424242424243,
+        "observation_rate": 0.625,
+        "event_conversion_rate": 0.625
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-23/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-24/monitoring-funnel.json"
     }
   ]
 }

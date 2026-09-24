@@ -5,12 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-23T02:44:38.147Z",
-    "latestDataDate": "2026-09-23",
-    "currentDate": "2026-09-23",
-    "eventCount": 3519,
-    "quarantinedEventCount": 37,
+    "generatedAt": "2026-09-24T02:18:33.039Z",
+    "latestDataDate": "2026-09-24",
+    "currentDate": "2026-09-24",
+    "eventCount": 3561,
+    "quarantinedEventCount": 39,
     "quarantinedEventIds": [
+      "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -63,7 +65,8 @@
     "eventIds": [
       "EV-75452672c9976d73",
       "EV-33053abbe1a60b38",
-      "EV-a7572f16e6d6bf6e"
+      "EV-a7572f16e6d6bf6e",
+      "EV-338f3cd9a30e73a8"
     ],
     "viewpointIds": [],
     "classificationRefs": [
@@ -77,7 +80,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-03",
-    "lastSeen": "2026-08-20",
+    "lastSeen": "2026-09-24",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
@@ -91,9 +94,26 @@
       ],
       "hardware": [],
       "organizationPeople": [],
-      "other": []
+      "other": [
+        "EV-338f3cd9a30e73a8"
+      ]
     },
     "timeline": [
+      {
+        "id": "EV-338f3cd9a30e73a8",
+        "dataDate": "2026-09-24",
+        "date": "2026-09-23",
+        "eventType": "research_result",
+        "eventTypeLabel": "研究结果",
+        "eventGroup": "研究结果",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "开发者想要更高效的软件。以下是超过1000名GitHub用户告诉我们他们需要什么。",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c0b0109d9439de57"
+        ]
+      },
       {
         "id": "EV-75452672c9976d73",
         "dataDate": "2026-08-20",
@@ -335,6 +355,10 @@
       "typeLabel": "AI 市场类别",
       "valueId": "infrastructure_compute",
       "eventIds": [
+        "EV-0f2e50fbc9af587a",
+        "EV-3c86fb0161715336",
+        "EV-3ca24f79062a359e",
+        "EV-71d477e3af99ef9a",
         "EV-bba3677d51b85918",
         "EV-fbb4b961191efa55",
         "EV-b9be18b12b1714f3",
@@ -566,6 +590,8 @@
         "EV-60d94c0d990d04ca"
       ],
       "entityIds": [
+        "EN-73c2f5aa8e632c19",
+        "EN-67895119a5182d06",
         "EN-7331374f7091259f",
         "EN-e7d56af70143fcd7",
         "EN-92d14efa2f3f44b1",
@@ -763,7 +789,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-01-06",
-      "lastSeen": "2026-09-23"
+      "lastSeen": "2026-09-24"
     },
     {
       "id": "TX-target_user-developer",
@@ -772,6 +798,9 @@
       "typeLabel": "目标用户",
       "valueId": "developer",
       "eventIds": [
+        "EV-0f2e50fbc9af587a",
+        "EV-3c86fb0161715336",
+        "EV-71d477e3af99ef9a",
         "EV-bba3677d51b85918",
         "EV-33df10f232e26f29",
         "EV-fbb4b961191efa55",
@@ -781,10 +810,10 @@
         "EV-06f2bca776e5cee7",
         "EV-1043d78cc040ab30",
         "EV-40d4ce6d936d4d49",
+        "EV-c96705c69e11c520",
         "EV-b0637e99e328479b",
         "EV-412f7ce21693dc13",
         "EV-26a5749d8604455a",
-        "EV-c96705c69e11c520",
         "EV-375d04f7cc9746c6",
         "EV-4238c51fcdad7bd4",
         "EV-b137470f59491f6a",
@@ -1043,6 +1072,8 @@
         "EV-a9fe726c4ea2a17b"
       ],
       "entityIds": [
+        "EN-73c2f5aa8e632c19",
+        "EN-67895119a5182d06",
         "EN-7331374f7091259f",
         "EN-2cee85064ca8de3f",
         "EN-e7d56af70143fcd7",
@@ -1051,9 +1082,9 @@
         "EN-34bc69b5df00e2d3",
         "EN-295219ea74639f0b",
         "EN-d41ebd9f02722fc8",
+        "EN-bc06be2cba2b2f2c",
         "EN-cfec5bef40cbf3ae",
         "EN-c5146e8a5659ab7e",
-        "EN-bc06be2cba2b2f2c",
         "EN-968e2d5b08687bf4",
         "EN-4149d125ad47155a",
         "EN-619245256126c075",
@@ -1274,7 +1305,7 @@
         "HW-f05a371d8e0599b0"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-09-23"
+      "lastSeen": "2026-09-24"
     },
     {
       "id": "TX-use_case-software_development",
@@ -1390,6 +1421,7 @@
         "EV-75b9b997e9c7e5d1",
         "EV-b2e374d54b10b9af",
         "EV-01eaadc83f55095a",
+        "EV-0e8877060ca89517",
         "EV-7bffdadf9a6e467e",
         "EV-5ff6037816b64323",
         "EV-0f6e4d81f3dbbb64",
@@ -1517,6 +1549,7 @@
         "EN-3db1f560db626918",
         "EN-7c3482959a6cdd3f",
         "EN-916a98f0fa2a39af",
+        "EN-11e0e34bd35e1218",
         "EN-0effe3ae84a909f7",
         "EN-bbdefa2950f49882",
         "EN-0b9ca57f53ba758b",
@@ -1544,7 +1577,7 @@
         "HW-033a5b73cdc3f4be"
       ],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-09-23"
+      "lastSeen": "2026-09-24"
     },
     {
       "id": "TX-use_case-security_operations",

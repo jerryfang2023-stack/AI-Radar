@@ -5,12 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-23T02:44:38.147Z",
-    "latestDataDate": "2026-09-23",
-    "currentDate": "2026-09-23",
-    "eventCount": 3519,
-    "quarantinedEventCount": 37,
+    "generatedAt": "2026-09-24T02:18:33.039Z",
+    "latestDataDate": "2026-09-24",
+    "currentDate": "2026-09-24",
+    "eventCount": 3561,
+    "quarantinedEventCount": 39,
     "quarantinedEventIds": [
+      "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -60,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 0,
     "market_regions": [
       "GLOBAL"
@@ -68,13 +70,53 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-07-07",
-    "latest_disclosed_at": "2026-07-07",
+    "latest_disclosed_at": "2026-09-23",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 2
     },
     "round_codes": [],
     "portfolio_companies": [],
     "activities": [
+      {
+        "activity_id": "IA-d627bd0bcad93730",
+        "funding_insight_id": "FI-5bf569d857da4dcb",
+        "event_ids": [
+          "EV-be364dc6883ec94b"
+        ],
+        "company_entity_id": "EN-5ee1e4de588a016a",
+        "company_canonical_entity_id": "",
+        "company_name": "Enveda",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "$311M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 311000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.11 亿美元"
+        },
+        "announced_at": "2026-09-23",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "参投C轮",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-921d200ac951683e",
+            "source_url": "https://enveda.com/news/enveda-closes-130m-series-c-funding-to-deliver-multiple-clinical-readouts-from-a-pipeline-of-10-development-candidates/",
+            "source_title": "Enveda Closes $130M Series C Funding to Deliver Multiple Clinical Readouts from a Pipeline of 10 Development Candidates - Enveda",
+            "source_content_hash": "35e46e0b7d563b7c",
+            "quote": "with participation from new and existing investors Baillie Gifford, Premji Invest, Lingotto Innovation, Lux Capital, Dimension Capital, True Ventures, Cresset Partners, The Nature Conservancy, and Henry R. Kravis",
+            "quote_hash": "29f6a39572c0dcee3d9f011f25267268cbf119efa2db305ac7fe55954575c41a"
+          }
+        ]
+      },
       {
         "activity_id": "IA-bb4166df47f2dab5",
         "funding_insight_id": "FI-9fd39f44b35d940c",
@@ -117,6 +159,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-921d200ac951683e",
+        "source_url": "https://enveda.com/news/enveda-closes-130m-series-c-funding-to-deliver-multiple-clinical-readouts-from-a-pipeline-of-10-development-candidates/",
+        "source_title": "Enveda Closes $130M Series C Funding to Deliver Multiple Clinical Readouts from a Pipeline of 10 Development Candidates - Enveda",
+        "source_content_hash": "35e46e0b7d563b7c",
+        "quote": "with participation from new and existing investors Baillie Gifford, Premji Invest, Lingotto Innovation, Lux Capital, Dimension Capital, True Ventures, Cresset Partners, The Nature Conservancy, and Henry R. Kravis",
+        "quote_hash": "29f6a39572c0dcee3d9f011f25267268cbf119efa2db305ac7fe55954575c41a"
+      },
       {
         "source_id": "FISRC-afaa91a6569d1f7a",
         "source_url": "https://justainews.com/companies/funding-news/norm-ai-raises-120m-series-c-at-1-2b-valuation/",

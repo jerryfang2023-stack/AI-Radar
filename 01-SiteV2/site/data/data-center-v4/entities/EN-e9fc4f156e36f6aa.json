@@ -5,12 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-23T02:44:38.147Z",
-    "latestDataDate": "2026-09-23",
-    "currentDate": "2026-09-23",
-    "eventCount": 3519,
-    "quarantinedEventCount": 37,
+    "generatedAt": "2026-09-24T02:18:33.039Z",
+    "latestDataDate": "2026-09-24",
+    "currentDate": "2026-09-24",
+    "eventCount": 3561,
+    "quarantinedEventCount": 39,
     "quarantinedEventIds": [
+      "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -65,6 +67,7 @@
     "eventIds": [
       "EV-cf9e968f38db7796",
       "EV-5575555340c04c5a",
+      "EV-cc0d955aa68445ea",
       "EV-d80c43b35418e74d",
       "EV-b25b396e368ee4d9",
       "EV-492e63783b3fda76",
@@ -79,7 +82,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-04-10",
-    "lastSeen": "2026-09-21",
+    "lastSeen": "2026-09-24",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
@@ -87,6 +90,7 @@
         "EV-5575555340c04c5a"
       ],
       "deployments": [
+        "EV-cc0d955aa68445ea",
         "EV-d80c43b35418e74d",
         "EV-b25b396e368ee4d9"
       ],
@@ -103,6 +107,56 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-cc0d955aa68445ea",
+        "dataDate": "2026-09-24",
+        "date": "2026-09-23",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "联想亮相阿里云栖大会：联想天禧AI把超级组织落地到端侧",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "on_device",
+            "name": "端侧",
+            "entityIds": [
+              "EN-1a47edcb80cc76dd"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-1a47edcb80cc76dd"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-1a47edcb80cc76dd"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-1a47edcb80cc76dd",
+          "EN-e9fc4f156e36f6aa"
+        ]
+      },
       {
         "id": "EV-492e63783b3fda76",
         "dataDate": "2026-09-21",
@@ -605,6 +659,8 @@
       "typeLabel": "产品形态",
       "valueId": "model",
       "eventIds": [
+        "EV-3c86fb0161715336",
+        "EV-71d477e3af99ef9a",
         "EV-c96705c69e11c520",
         "EV-7eead74c2baae511",
         "EV-ef669a52c9a3f94f",
@@ -755,6 +811,7 @@
         "EV-2ffc3377977da114",
         "EV-2fd730d0ad452334",
         "EV-fd21441fb6e143c3",
+        "EV-8ca7036c405028d4",
         "EV-c45b1098a3092e03",
         "EV-9ec1b90f071eef44",
         "EV-e496e24751712be7",
@@ -969,6 +1026,7 @@
         "EV-5208aa6dcd06cecb"
       ],
       "entityIds": [
+        "EN-67895119a5182d06",
         "EN-bc06be2cba2b2f2c",
         "EN-1d79127e9d90e89b",
         "EN-fba6bdd504fa7aff",
@@ -1212,11 +1270,168 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-23"
+      "lastSeen": "2026-09-24"
     }
   ],
-  "fde": [],
+  "fde": [
+    {
+      "id": "FDE-3b1b8676e4a9feae",
+      "eventId": "EV-cc0d955aa68445ea",
+      "dataDate": "2026-09-24",
+      "date": "2026-09-23",
+      "title": "联想亮相阿里云栖大会：联想天禧AI把超级组织落地到端侧",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "Alibaba Cloud",
+      "industry": "未披露",
+      "useCase": "到端侧",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-1a47edcb80cc76dd"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-1a47edcb80cc76dd"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-1a47edcb80cc76dd"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://qbitai.com/2026/09/496609.html",
+      "entityIds": [
+        "EN-1a47edcb80cc76dd",
+        "EN-e9fc4f156e36f6aa"
+      ]
+    }
+  ],
   "hardware": [],
+  "fdeDossiers": [
+    {
+      "id": "FDED-4aba8b22b39a76c3",
+      "implementationKey": "4aba8b22b39a76c3",
+      "eventId": "EV-cc0d955aa68445ea",
+      "eventIds": [
+        "EV-cc0d955aa68445ea"
+      ],
+      "dataDate": "2026-09-24",
+      "date": "2026-09-23",
+      "title": "未披露 × Alibaba Cloud：到端侧",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "Alibaba Cloud",
+      "industry": "未披露",
+      "useCase": "到端侧",
+      "workflow": "未披露",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.375,
+      "completenessPercent": 38,
+      "missingFields": [
+        "customer",
+        "industry",
+        "workflow",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-4b196e9752e87599",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-09-23",
+          "dataDate": "2026-09-24",
+          "eventId": "EV-cc0d955aa68445ea",
+          "eventTitle": "联想亮相阿里云栖大会：联想天禧AI把超级组织落地到端侧",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-1a47edcb80cc76dd"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-1a47edcb80cc76dd"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-1a47edcb80cc76dd"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://qbitai.com/2026/09/496609.html",
+      "entityIds": [
+        "EN-1a47edcb80cc76dd",
+        "EN-e9fc4f156e36f6aa"
+      ]
+    }
+  ],
   "hardwareCatalog": [
     {
       "id": "HWC-c08fcad350fc35d8",

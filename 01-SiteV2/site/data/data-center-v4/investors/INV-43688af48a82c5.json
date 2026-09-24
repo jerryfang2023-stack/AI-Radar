@@ -5,12 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-23T02:44:38.147Z",
-    "latestDataDate": "2026-09-23",
-    "currentDate": "2026-09-23",
-    "eventCount": 3519,
-    "quarantinedEventCount": 37,
+    "generatedAt": "2026-09-24T02:18:33.039Z",
+    "latestDataDate": "2026-09-24",
+    "currentDate": "2026-09-24",
+    "eventCount": 3561,
+    "quarantinedEventCount": 39,
     "quarantinedEventIds": [
+      "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -59,19 +61,19 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-27",
-    "latest_disclosed_at": "2026-09-08",
+    "latest_disclosed_at": "2026-09-23",
     "role_counts": {
       "lead": 2,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "seed",
@@ -91,6 +93,11 @@
         "name": "Cognition AI"
       },
       {
+        "entity_id": "EN-5ee1e4de588a016a",
+        "canonical_entity_id": "",
+        "name": "Enveda"
+      },
+      {
         "entity_id": "EN-ee00b93bf0631b3e",
         "canonical_entity_id": "",
         "name": "Monogram AI, Inc."
@@ -102,6 +109,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-c41694dbdaca595e",
+        "funding_insight_id": "FI-5bf569d857da4dcb",
+        "event_ids": [
+          "EV-be364dc6883ec94b"
+        ],
+        "company_entity_id": "EN-5ee1e4de588a016a",
+        "company_canonical_entity_id": "",
+        "company_name": "Enveda",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "$311M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 311000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.11 亿美元"
+        },
+        "announced_at": "2026-09-23",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-852df50f4128c47b",
+            "source_url": "https://www.bioxconomy.com/investment/enveda-s-311m-series-e-to-found-ai-driven-drug-discovery-platform",
+            "source_title": "Enveda's $311m Series E to fund AI-driven drug discovery",
+            "source_content_hash": "e6486e5f995e038e",
+            "quote": "Existing investors Baillie Gifford, Premji Invest, FPV Ventures, True Ventures, Kinnevik, Dimension, Lifeforce Capital, and Lux Capital also participated.",
+            "quote_hash": "882202cb44ad9d9c134b2a21b4c2fb2c2449305ea2081d7480583ed23e7792bf"
+          }
+        ]
+      },
       {
         "activity_id": "IA-3ce3bd9769d23f14",
         "funding_insight_id": "FI-d9fc0a409d33d577",
@@ -264,6 +311,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-852df50f4128c47b",
+        "source_url": "https://www.bioxconomy.com/investment/enveda-s-311m-series-e-to-found-ai-driven-drug-discovery-platform",
+        "source_title": "Enveda's $311m Series E to fund AI-driven drug discovery",
+        "source_content_hash": "e6486e5f995e038e",
+        "quote": "Existing investors Baillie Gifford, Premji Invest, FPV Ventures, True Ventures, Kinnevik, Dimension, Lifeforce Capital, and Lux Capital also participated.",
+        "quote_hash": "882202cb44ad9d9c134b2a21b4c2fb2c2449305ea2081d7480583ed23e7792bf"
+      },
       {
         "source_id": "FISRC-61aa8db010b34dfa",
         "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
