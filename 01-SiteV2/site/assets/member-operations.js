@@ -498,8 +498,8 @@
   root.addEventListener("membership:open", (event) => {
     activeView = ["membership", "membership-community", "membership-approval", "membership-users", "membership-schedule", "membership-token"].includes(event?.detail?.view) ? event.detail.view : "membership";
     if (activeView === "membership" && !loaded) refresh();
-    if (activeView === "membership-users" && adminCsrfToken && !adminLoaded) void loadAdminUsers();
-    if (activeView === "membership-community" && adminCsrfToken && !communityLoaded) void loadCommunityMembers();
+    if (activeView === "membership-users" && adminCsrfToken) void loadAdminUsers();
+    if (activeView === "membership-community" && adminCsrfToken) void loadCommunityMembers();
     if (activeView === "membership-approval" && adminCsrfToken && !approvalsLoaded) void loadApprovals();
     if (activeView === "membership-schedule" && adminCsrfToken && !scheduleLoaded) void loadSchedule();
   });
