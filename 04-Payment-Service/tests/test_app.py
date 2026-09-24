@@ -1210,3 +1210,26 @@ def test_profile_phone_binding_syncs_community_and_grants_once(client):
     assert data['wallet']['balance']==860
     again=client.post('/api/v1/member/phone',json={'code':'phone-code'},headers=headers)
     assert again.get_json()==data
+
+
+@pytest.mark.parametrize("with_phone", [False, True])
+def test_placeholder_relogin_never_overwrites_saved_nickname(client, with_phone):
+    result = client.post('/api/v1/auth/wechat', json={'code': 'placeholder-member', 'phoneCode': 'phone-code'}).get_json()
+    token = result['token']
+    client.put('/api/v1/member/profile', json={'nickname': '保留自定义'}, headers=auth(token))
+    payload = {'code': 'placeholder-member', 'nickname': '观澜用户', 'avatarSelected': True}
+    if with_phone:
+        payload['phoneCode'] = 'phone-code'
+    response = client.post('/api/v1/auth/wechat', json=payload)
+    assert response.status_code == 200
+    assert response.get_json()['profile']['nickname'] == '保留自定义'
+
+
+def test_member_refresh_repairs_placeholder_from_confirmed_community(client):
+    result = client.post('/api/v1/auth/wechat', json={'code': 'legacy-placeholder', 'phoneCode': 'phone-code'}).get_json()
+    token = result['token']
+    client.put('/api/v1/member/profile', json={'nickname': '观澜用户'}, headers=auth(token))
+    refreshed = client.get('/api/v1/member/me', headers=auth(token)).get_json()
+    assert refreshed['profile']['nickname'] == '现有社群成员'
+    client.put('/api/v1/member/profile', json={'nickname': '自选昵称'}, headers=auth(token))
+    assert client.get('/api/v1/member/me', headers=auth(token)).get_json()['profile']['nickname'] == '自选昵称'

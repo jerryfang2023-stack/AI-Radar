@@ -1251,6 +1251,8 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
                         import_community_points(conn, user, community_member)
                     conn.commit()
                     user = user_by_id(conn, user["id"])
+                if nickname == "观澜用户":
+                    nickname = ""  # A client placeholder must never replace a saved name.
                 if nickname or avatar_selected:
                     conn.execute(
                         "UPDATE users SET nickname=COALESCE(NULLIF(?, ''), nickname), avatar_selected_at=CASE WHEN ? THEN COALESCE(avatar_selected_at, ?) ELSE avatar_selected_at END, updated_at=? WHERE id=?",
@@ -1316,8 +1318,12 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
                 remote = app.community_client.status(user["community_member_id"])
                 member = remote.get("member") or {}
                 conn.execute(
-                    "UPDATE users SET community_name=?, community_status=?, updated_at=? WHERE id=?",
-                    (member.get("name") or user["community_name"], remote_community_status(member, user["community_status"]), iso(utcnow()), user["id"]),
+                    """UPDATE users SET community_name=?, community_status=?,
+                       nickname=CASE WHEN TRIM(COALESCE(nickname, '')) IN ('', '观澜用户')
+                         THEN COALESCE(NULLIF(?, ''), nickname) ELSE nickname END,
+                       updated_at=? WHERE id=?""",
+                    (member.get("name") or user["community_name"], remote_community_status(member, user["community_status"]),
+                     str(member.get("name") or "").strip()[:20], iso(utcnow()), user["id"]),
                 )
                 user = grant_community_access(conn, user_by_id(conn, user["id"]), member)
                 import_community_points(conn, user, member)
