@@ -1,5 +1,14 @@
 import assert from "node:assert/strict";
 
+test("source-title indefinite singular durations retain their numeric meaning", () => {
+  const source = "Meta's AI agent Muse draws 500,000 users in a week along with claims it copied OpenClaw";
+  assert.equal(sourceTitleFactsPreserved(source, "Meta的AI代理Muse一周内吸引50万用户，同时被指抄袭OpenClaw"), true);
+  assert.equal(sourceTitleFactsPreserved(source, "Meta的AI智能体Muse两周内吸引50万用户，同时被指抄袭OpenClaw"), false);
+  assert.equal(sourceTitleFactsPreserved(source, "Meta的AI智能体Muse一周内吸引500万用户，同时被指抄袭OpenClaw"), false);
+  assert.equal(sourceTitleFactsPreserved("AI agent completes a task in an hour", "AI智能体在一小时内完成任务"), true);
+  assert.equal(sourceTitleFactsPreserved("AI agent completes a task", "AI智能体完成一项任务"), true);
+});
+
 test("source-title dates accept Chinese spacing but reject changed calendar facts", () => {
   const source = "eu ai act: AI Brief, 11 September 2026 - iSystem.ai";
   assert.equal(sourceTitleFactsPreserved(source, "欧盟 AI 法案：AI 简报，2026 年 9 月 11 日"), true);
