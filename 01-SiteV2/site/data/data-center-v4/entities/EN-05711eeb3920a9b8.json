@@ -111,30 +111,82 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "陈源培 的来源线索将其与灵初智能（创始团队成员）关联。来源日期：2026-08-03；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
-      "career": [
+      "summary": "陈源培是灵初智能联合创始人及强化学习负责人。其个人学术主页记载了北京大学机器人研究经历和 2023 年斯坦福访问研究经历；澎湃新闻报道补充其本科就读华南理工大学土木工程专业，并于 2024 年共同创立灵初智能。",
+      "current_roles": [
         {
-          "organization": "灵初智能",
-          "title": "创始团队成员",
-          "period": "来源记录于 2026-08-03；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "SA-bee9309fa7819b3a"
+          "title": "联合创始人、强化学习负责人",
+          "organization": "灵初智能（PsiBot）",
+          "source_id": "yuanpei_psibot"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "career": [
+        {
+          "organization": "北京大学",
+          "title": "机器人研究（杨耀东教授团队）",
+          "period": "创业前；具体任期未披露",
+          "description": "个人学术主页称其曾与杨耀东教授团队合作开展机器人研究。",
+          "source_id": "yuanpei_homepage"
+        },
+        {
+          "organization": "斯坦福大学",
+          "title": "访问研究者",
+          "period": "2023 年",
+          "description": "个人学术主页称其于 2023 年以访问研究者身份工作，导师包括 Karen Liu 与李飞飞。",
+          "source_id": "yuanpei_homepage"
+        },
+        {
+          "organization": "灵初智能（PsiBot）",
+          "title": "联合创始人、强化学习负责人",
+          "period": "2024 年共同创立；任期未披露",
+          "description": "公司官网将其列为联合创始人及 RL Leader。",
+          "source_id": "yuanpei_psibot"
+        }
+      ],
+      "education": [
+        {
+          "institution": "华南理工大学",
+          "qualification": "本科，土木工程专业",
+          "source_id": "yuanpei_paper"
+        },
+        {
+          "institution": "北京大学",
+          "qualification": "硕士阶段研究经历；公开报道未明确学位授予情况",
+          "source_id": "yuanpei_paper"
+        }
+      ],
+      "experience_summary": "公开资料呈现其从土木工程本科转向机器人与强化学习研究，经历包括北京大学团队研究、斯坦福访问研究及回国创业。学位授予、完整任职年份和具体成果贡献边界未在所引材料中完整披露。",
+      "track_record": [
+        {
+          "description": "个人主页列出其在灵巧操作、强化学习及仿真到现实迁移方向的研究与论文；公司官网确认其负责强化学习。论文成果和公司模型的具体个人贡献不作超出来源的归因。",
+          "source_id": "yuanpei_homepage"
+        }
+      ],
+      "coverage_status": "researched",
+      "coverage_note": "现任角色以灵初智能官网为准；个人研究经历以其公开学术主页为准，教育经历由澎湃新闻交叉补充。访问研究不等同于斯坦福学位，任职年份未披露处不作推测。",
       "sources": [
         {
-          "source_id": "SA-bee9309fa7819b3a",
-          "source_url": "https://finance.sina.com.cn/cj/2026-03-10/doc-inhqnmhx6407658.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "20f81c1ca1ce317a8829a288b011283ff55820a5b683df55a4b9078e8f2ce857",
-          "quote": "核心创始团队汇聚行业顶尖人才，包括拥有多年机器人产业操盘经验的王启斌博士、斯坦福大学访问学者、00后创业先锋陈源培，以及在机器人与无人驾驶领域具备深厚算法积淀的柴晓杰博士",
-          "quote_hash": "dc703322b8099a6af574b41a9cda41984884691d197b99a4abf516240286b171"
+          "source_id": "yuanpei_psibot",
+          "source_url": "https://www.psibot.ai/about-us_zh/",
+          "source_title": "About Us_zh - 灵初智能",
+          "source_content_hash": "27aef654a6b48d9ddda369528dcb499d41ed41e4637fae16e7e24e8741ed93bc",
+          "quote": "灵初智能官网团队页列陈源培为联合创始人及 RL Leader。",
+          "quote_hash": "cdb7481ab28ff2fff22cde7a429dc2d383a1b598c52e5f598f75cd48b782f84f"
+        },
+        {
+          "source_id": "yuanpei_homepage",
+          "source_url": "https://cypypccpy.github.io/",
+          "source_title": "Yuanpei Chen | 陈源培",
+          "source_content_hash": "0afefacd359ac7c034121e04fd129aa8e1ccaaa87980648fd6c80a53d32c53ad",
+          "quote": "陈源培个人主页称其曾与北京大学杨耀东教授团队合作，并于 2023 年作为访问研究者在斯坦福大学与 Karen Liu、李飞飞等开展研究。",
+          "quote_hash": "854a505e8edb72e662118e3e5aeb1abed9986d1b7f446af94612bf9bd3c4fffe"
+        },
+        {
+          "source_id": "yuanpei_paper",
+          "source_url": "https://www.thepaper.cn/newsDetail_forward_31701906",
+          "source_title": "十位离职华为的“天才少年” - 澎湃新闻",
+          "source_content_hash": "2c8fcec149efd548d3e78c49862243af064938995d0d0e32c4c2736e1671afcf",
+          "quote": "澎湃新闻报道记载陈源培本科就读华南理工大学土木工程专业，硕士阶段在北京大学杨耀东教授团队研究，并于 2024 年与团队创立灵初智能。",
+          "quote_hash": "b8b5d31e5d2955d38deb31d6ef9df329c1803d7956f3c1e7426b2858fc130841"
         }
       ],
       "last_verified_at": "2026-09-25"

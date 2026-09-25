@@ -111,30 +111,41 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "丁添 的来源线索将其与智子芯元（联合创始人）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "丁添是智子芯元创始人。36 氪专访记录其围绕国产算力释放效率阐述创业判断，并介绍公司提供 AI 计算加速基础设施；公开资料尚未披露其完整教育和任职履历。",
+      "current_roles": [
+        {
+          "title": "创始人",
+          "organization": "智子芯元",
+          "source_id": "ding36kr"
+        }
+      ],
       "career": [
         {
           "organization": "智子芯元",
-          "title": "联合创始人",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-31d9f2f1a48dfdc8"
+          "title": "创始人",
+          "period": "报道于 2026 年 6 月；具体创立日期及任期未披露",
+          "description": "36 氪专访将其称为智子芯元创始人，并介绍公司聚焦 AI 计算加速基础设施。",
+          "source_id": "ding36kr"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "experience_summary": "公开采访支持其作为智子芯元创始人参与 AI 计算基础设施创业，并对国产算力卡落地与有效算力问题有公开阐述；此前雇主、教育经历和具体技术职位尚未查到可靠披露。",
+      "track_record": [
+        {
+          "description": "专访披露智子芯元于 2026 年完成天使+轮融资；该为公司融资进展，不作为丁添个人业绩。",
+          "source_id": "ding36kr"
+        }
+      ],
+      "coverage_status": "researched",
+      "coverage_note": "目前可核验信息主要来自 36 氪人物专访；未找到可确认的教育、过往任职或个人联系方式，留空而不推断。融资信息归属公司，不归因于个人。",
       "sources": [
         {
-          "source_id": "FISRC-31d9f2f1a48dfdc8",
-          "source_url": "https://finance.sina.com.cn/wm/2026-04-27/doc-inhvxtre9075192.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "d6e545bc4939641838e43537be5bacf8b16aa2b727e5570a9bc1b98de7cac2af",
-          "quote": "用联合创始人丁添的话说：“AI和人类的结合，10%是结合， 100%也是结合，而我们想走到90%以上。”",
-          "quote_hash": "22d5066882cab1a7f522189fa368ff87781d4735f8edbc28aaaa3fb2e0cfaaeb"
+          "source_id": "ding36kr",
+          "source_url": "https://eu.36kr.com/zh/p/3867016514524416",
+          "source_title": "独家专访丁添：两个月连融两轮，AI for Computing赛道黑马智子芯元做对了什么？-36氪",
+          "source_content_hash": "2fcf8acd2190f9bbf6a5a3274f308f5e70fd2ea34aaf56726796b26b08899200",
+          "quote": "36 氪专访称丁添为智子芯元创始人；丁添谈及国产计算生态中芯片采购不等于获得可用算力，报道介绍公司聚焦 AI 计算加速基础设施。",
+          "quote_hash": "592a53623834bfaf6ec3eae8065d7ae16d1f34aafb12f4a58596ac8179bcbab0"
         }
       ],
       "last_verified_at": "2026-09-25"

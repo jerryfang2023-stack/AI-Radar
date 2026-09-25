@@ -111,30 +111,41 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "柏冰 的来源线索将其与星熠智能（创始人兼CEO）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "柏冰是星熠智能创始人兼 CEO。融资报道记载其拥有 20 余年 HRO、RPO、BPO 业务管理经验，并参与过大规模人才交付体系建设；公开报道未列出此前任职公司的名称。",
+      "current_roles": [
+        {
+          "title": "创始人兼 CEO",
+          "organization": "星熠智能（上海星熠无限智能科技有限公司）",
+          "source_id": "bai_longbridge"
+        }
+      ],
       "career": [
         {
-          "organization": "星熠智能",
-          "title": "创始人兼CEO",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-b28cfdc86e1c7c16"
+          "organization": "星熠智能（上海星熠无限智能科技有限公司）",
+          "title": "创始人兼 CEO",
+          "period": "报道于 2026 年；具体任期未披露",
+          "description": "融资报道将其列为创始人兼 CEO。",
+          "source_id": "bai_longbridge"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "experience_summary": "目前可确认其长期从事 HRO、RPO、BPO 业务管理并参与大规模人才交付体系建设；此前雇主、教育经历和各阶段任职时间未公开，故不补写未证实关联公司。",
+      "track_record": [
+        {
+          "description": "媒体报道记载其参与过大规模人才交付体系建设；目前没有公开的独立绩效指标或具名案例。",
+          "source_id": "bai_longbridge"
+        }
+      ],
+      "coverage_status": "researched",
+      "coverage_note": "现任职务及从业经验来自融资报道，属媒体披露口径；未公开此前任职机构、学历或个人联系方式，不作推断。",
       "sources": [
         {
-          "source_id": "FISRC-b28cfdc86e1c7c16",
-          "source_url": "https://news.pedaily.cn/202606/565533.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "73a5594e54d6952f",
-          "quote": "创始人兼CEO 柏冰拥有20 余年HRO、RPO、BPO 业务管理经验",
-          "quote_hash": "47d3c39d721fedfa432ba0ac59dde753aa447187858e4e238bce9214fea905eb"
+          "source_id": "bai_longbridge",
+          "source_url": "https://longbridge.com/zh-HK/news/290758468",
+          "source_title": "星熠智能完成千萬級天使輪融資，以 AI 人力供應鏈助力連鎖品牌從百店到萬店｜長橋證券",
+          "source_content_hash": "905811ec4b2a6e6b",
+          "quote": "报道记载星熠智能创始人兼 CEO 柏冰拥有 20 余年 HRO、RPO、BPO 业务管理经验，并参与过大规模人才交付体系建设。",
+          "quote_hash": "c7fac3537b006588f7ea7678b4e38c5fe2759351e8a089580468e343b1e619e8"
         }
       ],
       "last_verified_at": "2026-09-25"

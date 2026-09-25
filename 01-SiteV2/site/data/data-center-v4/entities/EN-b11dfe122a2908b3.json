@@ -111,30 +111,83 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "柴晓杰 的来源线索将其与灵初智能（创始团队成员）关联。来源日期：2026-08-03；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
-      "career": [
+      "summary": "柴晓杰博士是灵初智能联合创始人及工程负责人。公司官网确认其现任角色；行业报道记载其拥有中科院自动化所博士背景，并曾在腾讯、阿里巴巴及京东的机器人或自动驾驶相关团队任职。",
+      "current_roles": [
         {
-          "organization": "灵初智能",
-          "title": "创始团队成员",
-          "period": "来源记录于 2026-08-03；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "SA-bee9309fa7819b3a"
+          "title": "联合创始人、工程负责人",
+          "organization": "灵初智能（PsiBot）",
+          "source_id": "chai_psibot"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "career": [
+        {
+          "organization": "中国科学院自动化研究所",
+          "title": "博士研究及助理研究员",
+          "period": "具体任期未披露",
+          "description": "行业报道记载其在自动化所取得博士学位并曾任助理研究员。",
+          "source_id": "chai_sohu"
+        },
+        {
+          "organization": "腾讯",
+          "title": "微信/机器人系统相关负责人",
+          "period": "具体任期未披露",
+          "description": "行业报道所载过往经历；岗位范围按报道概括，不补充未披露的内部职级。",
+          "source_id": "chai_sohu"
+        },
+        {
+          "organization": "阿里巴巴达摩院",
+          "title": "自动驾驶实验室高级算法专家",
+          "period": "具体任期未披露",
+          "description": "行业报道记载其曾参与自动驾驶相关算法工作。",
+          "source_id": "chai_sohu"
+        },
+        {
+          "organization": "京东 X 事业部",
+          "title": "智能驾驶技术负责人",
+          "period": "具体任期未披露",
+          "description": "行业报道记载其曾负责智能驾驶技术工作。",
+          "source_id": "chai_sohu"
+        },
+        {
+          "organization": "灵初智能（PsiBot）",
+          "title": "联合创始人、工程负责人",
+          "period": "任期未披露",
+          "description": "公司官网团队页列其为联合创始人及 Engineering Leader。",
+          "source_id": "chai_psibot"
+        }
+      ],
+      "education": [
+        {
+          "institution": "中国科学院自动化研究所",
+          "qualification": "博士",
+          "source_id": "chai_sohu"
+        }
+      ],
+      "experience_summary": "其公开履历横跨机器人、微信系统、自动驾驶算法与工程管理；报道提及大规模 L4 自动驾驶落地经验，但未提供项目和指标细节，故保留为媒体报道口径。",
+      "track_record": [
+        {
+          "description": "行业报道称其参与过大规模 L4 自动驾驶技术落地；该结果尚未在所引公司官网得到独立量化验证。",
+          "source_id": "chai_sohu"
+        }
+      ],
+      "coverage_status": "researched",
+      "coverage_note": "现任职务以灵初智能官网为准；教育和此前工作经历来自行业报道，具体任期与项目指标未披露，相关成绩按报道口径标注。",
       "sources": [
         {
-          "source_id": "SA-bee9309fa7819b3a",
-          "source_url": "https://finance.sina.com.cn/cj/2026-03-10/doc-inhqnmhx6407658.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "20f81c1ca1ce317a8829a288b011283ff55820a5b683df55a4b9078e8f2ce857",
-          "quote": "核心创始团队汇聚行业顶尖人才，包括拥有多年机器人产业操盘经验的王启斌博士、斯坦福大学访问学者、00后创业先锋陈源培，以及在机器人与无人驾驶领域具备深厚算法积淀的柴晓杰博士",
-          "quote_hash": "dc703322b8099a6af574b41a9cda41984884691d197b99a4abf516240286b171"
+          "source_id": "chai_psibot",
+          "source_url": "https://www.psibot.ai/about-us_zh/",
+          "source_title": "About Us_zh - 灵初智能",
+          "source_content_hash": "27aef654a6b48d9ddda369528dcb499d41ed41e4637fae16e7e24e8741ed93bc",
+          "quote": "灵初智能官网团队页列柴晓杰博士为联合创始人及 Engineering Leader。",
+          "quote_hash": "ac04f216f8df3c084b805e59994ca9a7cb2f005f0acb228e0d33aadd93140571"
+        },
+        {
+          "source_id": "chai_sohu",
+          "source_url": "https://www.sohu.com/a/889660340_100016644",
+          "source_title": "VLA分层革命：当机器人学会用“快慢脑”思考物理世界 - 甲子光年",
+          "source_content_hash": "702375be404cc1e3248d5f9334215e3d43631db1aae55a0e8c6caed944ad3c55",
+          "quote": "甲子光年报道记载柴晓杰为中科院自动化所博士、曾任助理研究员，并有腾讯微信/机器人系统、阿里巴巴 ADLab、京东 X 事业部智能驾驶相关经历；报道称其有大规模 L4 自动驾驶技术落地经验。",
+          "quote_hash": "148c086b631c85a7e2a44a7ce0105f52ab1eecf6245b0ae7e9c34bdeedba4da5"
         }
       ],
       "last_verified_at": "2026-09-25"
