@@ -369,51 +369,65 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "coverage_status": "activity_only",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "20VC 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "20VC 是将风险投资与媒体业务结合的投资机构。其官网列出 Pre-Seed/Seed 与 Series A 两档基金及对应支票规模，并提供创业者项目申请表。融资数据库中出现的 20VC 参投记录是已披露案例，不代表机构完整组合。",
+      "facts": [
+        {
+          "field": "investment_model",
+          "label": "业务定位",
+          "value": "风险投资与创业媒体业务相结合",
+          "source_id": "20vc_home"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": [
+            "Pre-Seed",
+            "Seed",
+            "Series A"
+          ],
+          "source_id": "20vc_home"
+        },
+        {
+          "field": "check_size",
+          "label": "官网公开支票区间",
+          "value": "Pre-Seed/Seed：$100,000–$3,000,000；Series A：$5,000,000–$15,000,000",
+          "source_id": "20vc_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Fireworks AI Inc. · D轮 · 2026-07-16 · 本轮参投 · $1.505 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-d1237a4476f41ad9"
-        },
-        {
-          "description": "融资来源记录：Archestra · 种子轮 · 2026-06-02 · 本轮领投 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2226010f84adae92"
-        },
-        {
-          "description": "融资来源记录：Archestra · 种子轮 · 2026-06-02 · 本轮领投 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-50130a45d72291a2"
+          "description": "官网设有投资组合目录，并以相关创业公司和创始人作为对外展示案例；该页面未提供可在此处完整复核的投资回报统计。",
+          "source_id": "20vc_home"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "application",
+          "label": "创业项目申请表",
+          "value": "通过官网 Pitch to 20VC 表单提交公司邮箱、融资阶段、创始人资料及项目材料。",
+          "url": "https://20vc.fund/contact",
+          "source_id": "20vc_contact"
+        }
+      ],
+      "coverage_status": "researched",
+      "coverage_note": "投资定位、阶段和金额区间取自 20VC 官网；支票规模为网站公开范围，不代表每笔实际投资金额或承诺额度。官网提供项目提交表单，未发现可替代表单的通用项目邮箱。",
       "sources": [
         {
-          "source_id": "FISRC-d1237a4476f41ad9",
-          "source_url": "https://davidandgoliath.ai/daily-ai-briefing/fireworks-ai-1-5-billion-series-d-specialised-intelligence",
-          "source_title": "Fireworks AI $1.5B Series D: What… | David & Goliath",
-          "source_content_hash": "bbcd4459be4aa17d",
-          "quote": "Nvidia, Lightspeed Venture Partners, Bessemer Venture Partners, Menlo Ventures, and 20VC participating.",
-          "quote_hash": "634e72e688b462c8f5b9f6f69243e65eb4e0d54fa5711f832e4352e9ebf2d1fa"
+          "source_id": "20vc_home",
+          "source_url": "https://20vc.fund/",
+          "source_title": "20VC Fund | The Intersection of Venture Capital and Media",
+          "source_content_hash": "8d62a329de22c7673b7221334fe764e455004358fd1eb3fec1208330062a723b",
+          "quote": "20VC operates at the intersection of venture capital and media. Its published fund strategy lists pre-seed/seed checks of $100k-$3M and Series A checks of $5M-$15M.",
+          "quote_hash": "e507ed25f3e04d895b98e4405e67d7e7d666cd286c6dab73673cf4bf2082b980"
         },
         {
-          "source_id": "FISRC-2226010f84adae92",
-          "source_url": "https://siliconangle.com/2026/06/02/archestra-raises-10m-broker-ai-agent-access-corporate-data/",
-          "source_title": "Archestra 融资 1000 万美元，为 AI 智能体接入企业数据提供中介服务",
-          "source_content_hash": "37249690c82d8e0a",
-          "quote": "The seed round was led by 20VC",
-          "quote_hash": "3eec14ff335cb9f157578628b83cb3f1c8ba2cc2d7eda983bbe0f09365cb0c6d"
-        },
-        {
-          "source_id": "FISRC-50130a45d72291a2",
-          "source_url": "https://archestra.ai/blog/archestra-announces-10m-seed",
-          "source_title": "Archestra.AI Announces $10M Seed 🎉 | Blog | Archestra",
-          "source_content_hash": "65e55f883bf21e63",
-          "quote": "we've raised a $10 million Seed round, led by 20VC",
-          "quote_hash": "7db49d2541be58708e5471ae36968e3ca07be5e9cefbaad9cfe6390586da5533"
+          "source_id": "20vc_contact",
+          "source_url": "https://20vc.fund/contact",
+          "source_title": "Pitch to 20VC | 20VC Fund",
+          "source_content_hash": "b225b51f3254616fffc376e56b1576274eb690cd6cccf324e5b8ab1f66334b9b",
+          "quote": "Interested in joining the 20VC portfolio? Pitch 20VC to access valuable resources, strategic insights, and a robust network of investors.",
+          "quote_hash": "73984b6a35c7bc8c9b3100348265e6075201f2ac8887cd17374d5cb3a59fbe50"
         }
       ],
       "last_verified_at": "2026-09-25"
