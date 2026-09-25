@@ -404,53 +404,143 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "洪泰基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "洪泰基金由新东方创始人俞敏洪与华泰联合证券首任董事长盛希泰于2014年共同创立。官网披露管理规模超300亿元，投资方向包括先进制造、信息技术、新材料新能源、生命健康和科技消费；该规模为管理人当前自述，官网未列统计时点和计算口径。其官方网站公布北京总部电话、地址，并通过招聘/品牌合作页面公开商业计划书投递邮箱。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "创立时间",
+          "value": "2014年",
+          "source_id": "aplus_about"
+        },
+        {
+          "field": "founders",
+          "label": "创始人及背景",
+          "value": "俞敏洪（新东方创始人）、盛希泰（华泰联合证券首任董事长）；此处为洪泰官网介绍中的历史背景，不表示其当前职务",
+          "source_id": "aplus_about"
+        },
+        {
+          "field": "aum",
+          "label": "官网自报管理规模",
+          "value": "超过300亿元；未注明统计时点、币种细分及口径",
+          "source_id": "aplus_about"
+        },
+        {
+          "field": "sectors",
+          "label": "官网列示投资方向",
+          "value": [
+            "先进制造",
+            "信息技术",
+            "新材料与新能源",
+            "生命健康",
+            "科技消费"
+          ],
+          "source_id": "aplus_about"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网列示投资阶段",
+          "value": "官网投资布局包含天使、成长及PE相关基金安排；具体基金策略和阶段以各基金文件为准",
+          "source_id": "aplus_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2014-11",
+          "description": "洪泰基金官网记载机构于2014年正式启航。",
+          "source_id": "aplus_about"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：华清未央 · Pre-A轮 · 2026-06-01 · 本轮参投 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c8f7d3c7af4bc00a"
+          "description": "洪泰官网投资布局与组合展示包括易点云（已上市，股份代码2416.HK）、奥比中光（688322.SH）、荃信生物（2509.HK）等案例；这是官网展示的被投企业/投资组合线索，不构成完整组合或基金回报率。",
+          "source_id": "aplus_portfolio"
         },
         {
-          "description": "融资来源记录：它石智航 · Pre-A轮 · 2026-04-16 · 本轮参投 · 超4.5亿美元（约30亿元）。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b4d6b7523ee32ad7"
-        },
-        {
-          "description": "融资来源记录：它石智航 · Pre-A轮 · 2026-04-16 · 天使轮参投 · 超4.5亿美元（约30亿元）。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-877032defba1f3e1"
+          "description": "官网历史页面称截至2021年前后已投资超过200家企业；作为页面所载历史时点信息，不更新解读为当前组合规模。",
+          "source_id": "aplus_history"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "洪泰基金 / Hongtai Aplus",
+          "url": "https://www.apluscap.com/",
+          "source_id": "aplus_home"
+        },
+        {
+          "kind": "phone",
+          "label": "北京总部固定电话",
+          "value": "+86 10 6500 0261",
+          "url": "https://www.apluscap.com/",
+          "source_id": "aplus_home"
+        },
+        {
+          "kind": "address",
+          "label": "北京总部",
+          "value": "北京市朝阳区天泽路16号院润世中心（一期）B座20层",
+          "url": "https://www.apluscap.com/",
+          "source_id": "aplus_home"
+        },
+        {
+          "kind": "email",
+          "label": "商业计划书投递邮箱（官网公开）",
+          "value": "bpcenter@apluscap.com（官网同时列示 bp@apluscap.com）",
+          "url": "https://www.apluscap.com/join/",
+          "source_id": "aplus_join"
+        },
+        {
+          "kind": "email",
+          "label": "品牌合作邮箱",
+          "value": "pr@apluscap.com",
+          "url": "https://www.apluscap.com/join/",
+          "source_id": "aplus_join"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-c8f7d3c7af4bc00a",
-          "source_url": "https://finance.sina.com.cn/tech/roll/2026-06-01/doc-inhzwisx2581224.shtml",
-          "source_title": "华清未央完成超亿元Pre-A轮融资",
-          "source_content_hash": "719dea70c671a252",
-          "quote": "投资方包括安赐资本、华屹资本、盛世投资、芯能创投、洪泰基金、辛夷投资、海德资本、瀚晖资本等",
-          "quote_hash": "e6f1ce4ea3834a3e001f0edae979a05a690aed6dd030ed064eee879a97c1273a"
+          "source_id": "aplus_about",
+          "source_url": "https://www.apluscap.com/about/",
+          "source_title": "关于洪泰｜洪泰基金",
+          "source_content_hash": "84bfb332036e9211cbc51b409dca8d3262cde4b3d533098e4d63217ece1b51a3",
+          "quote": "洪泰基金由新东方创始人俞敏洪先生和华泰联合证券首任董事长盛希泰先生于2014年共同创立。截至目前，管理规模超300亿元，投资方向聚焦先进制造、信息技术、新材料新能源、生命健康和科技消费等五大领域。",
+          "quote_hash": "32a2d6b1e4c1950a7ae11d9eb4138ba780d3451377f4818df454b513247f6ef4"
         },
         {
-          "source_id": "FISRC-b4d6b7523ee32ad7",
-          "source_url": "https://news.pedaily.cn/202604/562863.shtml",
-          "source_title": "高瓴红杉，联合领投中国最大具身融资：它石智航融资4.55亿美金",
-          "source_content_hash": "0f321e5ffc10ea03",
-          "quote": "同时启明创投、线性资本、蓝驰创投、襄禾资本、洪泰基金等老股东也进行了战略投资加注",
-          "quote_hash": "ea6504441ab3f48998d2e8af72feaeac84f46475c936005d5c8982232af6d170"
+          "source_id": "aplus_home",
+          "source_url": "https://www.apluscap.com/",
+          "source_title": "洪泰基金官网首页",
+          "source_content_hash": "79959cf9a36090e54d8bf800c31b05ca885e9bd4bd1572fd89f2cf069f86b1af",
+          "quote": "固定电话：86-010-65000261 公司地址：北京市朝阳区天泽路16号院润世中心（一期）B座20层",
+          "quote_hash": "d0aa5c1e0bab8a432938683e53008eec636b2d009049edc58d966ae5d523d541"
         },
         {
-          "source_id": "FISRC-877032defba1f3e1",
-          "source_url": "https://www.chnfund.com/article/ARa02b65be-84b4-488b-1eea-3a18e4d5be1d",
-          "source_title": "它石智航完成天使轮1.2亿美元融资，蓝驰、启明、联想、高瓴等知名机构出手 中国基金报",
-          "source_content_hash": "9bc3ee36ffea717f",
-          "quote": "线性资本、恒旭资本、洪泰基金、联想创投、襄禾资本、高瓴创投跟投",
-          "quote_hash": "ad0a3e590ffa110b3cf74a5f62e58f3e387290b3c658e3f5c91e312af6a29fd6"
+          "source_id": "aplus_join",
+          "source_url": "https://www.apluscap.com/join/",
+          "source_title": "加入我们｜洪泰基金",
+          "source_content_hash": "332cb340e402619064bf9598199030f5d3bb14c6a42e436caa03729b59c5b53d",
+          "quote": "商业计划书请投递至BP通道 bpcenter@apluscap.com (bp@apluscap.com) 品牌合作请投递至 PR通道 pr@apluscap.com",
+          "quote_hash": "6a9f5fc0fd0d9f9349421d1517baa5d6f4af59e33006756e2112ba685d1eef87"
+        },
+        {
+          "source_id": "aplus_portfolio",
+          "source_url": "https://www.apluscap.com/portfolios/",
+          "source_title": "被投企业｜洪泰基金",
+          "source_content_hash": "ba3eaa19b99bd4ac2858fcba39ade93859c612915cce5bb75a2ef78a70a43807",
+          "quote": "奥比中光 (688322.SH) 是一家专注于3D视觉感知技术的企业；荃信生物 (2509.HK)；易点云 (2416.HK)。",
+          "quote_hash": "a66e8ba66d62061c260cc18d0141b25a67a3cf443ea0dcb551e0ef63decb3990"
+        },
+        {
+          "source_id": "aplus_history",
+          "source_url": "https://www.apluscap.com/news/428.html",
+          "source_title": "150亿湖北高质量发展产业投资基金揭牌落地｜洪泰基金",
+          "source_content_hash": "a948d7507cad3ccf1943c8c34ff2dccd1528ca8d6ac59ba9f44844f940085411",
+          "quote": "洪泰基金由著名企业家俞敏洪先生和资深投资银行家盛希泰先生于2014年共同创立，目前已投资超过200家优质企业。",
+          "quote_hash": "178e58248dba8407bfb42f86368c9ba5c800d2e99815cd7aa9f897d5743c1a91"
         }
       ],
+      "coverage_status": "researched",
+      "coverage_note": "创立背景、方向和管理规模来自洪泰基金官网；管理规模为管理人自述。办公室信息来自官网首页，BP与公关邮箱来自官方加入我们页面。展示的上市企业仅作为官网组合案例，不推断基金回报。",
       "last_verified_at": "2026-09-25"
     }
   }

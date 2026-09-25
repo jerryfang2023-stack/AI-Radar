@@ -460,53 +460,156 @@
       }
     },
     "public_profile": {
-      "profile_type": "unverified",
-      "coverage_status": "activity_only",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "君联资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "君联资本（Legend Capital）官网称其成立于2001年4月，专注早期创业投资与成长期私募股权投资。官网页面元数据与结构化资料自报累计投资700余家企业、管理规模900亿元以上、129家组合企业实现上市、近300家专精特新企业；这些均为管理人披露的组合历史数据，不是基金净回报或IRR。君联资本为联想控股旗下基金管理公司；具体融资事件仍需按新闻披露逐轮核验。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2001年4月",
+          "source_id": "legendcapital_profile"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期创业投资及成长期私募股权投资",
+          "source_id": "legendcapital_profile"
+        },
+        {
+          "field": "portfolio_scale",
+          "label": "官网自报累计投资",
+          "value": "700余家企业",
+          "source_id": "legendcapital_profile"
+        },
+        {
+          "field": "aum",
+          "label": "官网自报管理规模",
+          "value": "900亿元以上；官网未注明统计时点及计算口径",
+          "source_id": "legendcapital_profile"
+        },
+        {
+          "field": "ipo_track_record",
+          "label": "官网自报组合上市案例",
+          "value": "129家组合企业实现上市；累计历史口径，不等同基金回报率",
+          "source_id": "legendcapital_profile"
+        },
+        {
+          "field": "parent_company",
+          "label": "集团关联",
+          "value": "联想控股官网将君联资本列为基金管理公司；该关系指集团/业务归属，不表示融资库每笔投资均由联想控股直接实施",
+          "source_id": "legendholdings_intro"
+        },
+        {
+          "field": "specialty_companies",
+          "label": "官网自报专精特新组合企业",
+          "value": "近300家；管理人历史披露口径",
+          "source_id": "legendcapital_profile"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2001-04",
+          "description": "君联资本官网列示机构成立时间。",
+          "source_id": "legendcapital_profile"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：数巅智能 · 多轮融资 · 2026-09-21 · pre-A轮老股东持续加码 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-9ebda1057c2926b3"
-        },
-        {
-          "description": "融资来源记录：智谱AI · 其他融资 · 2026-09-13 · 老股东跟投 · 50 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-e930be8aa5120588"
-        },
-        {
-          "description": "融资来源记录：清雁科技 · A轮 · 2026-08-19 · 本轮领投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b7725acf292395aa"
+          "description": "君联资本官网自报累计投资700余家、管理规模900亿元以上、129家组合企业实现上市、近300家专精特新企业。该数据为管理人披露的组合累计信息，未将其解释为基金净回报、IRR或特定法律主体的审计业绩。",
+          "source_id": "legendcapital_profile"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "君联资本 / Legend Capital",
+          "url": "https://www.legendcapital.com.cn/",
+          "source_id": "legendcapital_profile"
+        },
+        {
+          "kind": "email",
+          "label": "一般建议联系邮箱（官网公开）",
+          "value": "grm@legendcapital.com.cn",
+          "url": "https://www.legendcapital.com.cn/",
+          "source_id": "legendcapital_profile"
+        },
+        {
+          "kind": "phone",
+          "label": "北京总部总机",
+          "value": "+86 10 8913 9000",
+          "url": "https://www.legendcapital.com.cn/",
+          "source_id": "legendcapital_profile"
+        },
+        {
+          "kind": "address",
+          "label": "北京总部",
+          "value": "北京市海淀区中关村科学院南路2号融科资讯中心B座16层",
+          "url": "https://www.legendcapital.com.cn/",
+          "source_id": "legendcapital_profile"
+        },
+        {
+          "kind": "phone",
+          "label": "上海办公室总机",
+          "value": "+86 21 6288 4566",
+          "url": "https://www.legendcapital.com.cn/",
+          "source_id": "legendcapital_profile"
+        },
+        {
+          "kind": "address",
+          "label": "上海办公室",
+          "value": "上海市南京西路1366号恒隆广场二期37层3703-07",
+          "url": "https://www.legendcapital.com.cn/",
+          "source_id": "legendcapital_profile"
+        },
+        {
+          "kind": "phone",
+          "label": "深圳办公室总机",
+          "value": "+86 755 8899 2168",
+          "url": "https://www.legendcapital.com.cn/",
+          "source_id": "legendcapital_profile"
+        },
+        {
+          "kind": "address",
+          "label": "深圳办公室",
+          "value": "深圳市福田区深南大道7888号东海国际中心A座1701",
+          "url": "https://www.legendcapital.com.cn/",
+          "source_id": "legendcapital_profile"
+        },
+        {
+          "kind": "phone",
+          "label": "香港办公室总机",
+          "value": "+852 28512610",
+          "url": "https://www.legendcapital.com.cn/",
+          "source_id": "legendcapital_profile"
+        },
+        {
+          "kind": "address",
+          "label": "香港办公室",
+          "value": "香港中环皇后大道中99号中环中心6113室",
+          "url": "https://www.legendcapital.com.cn/",
+          "source_id": "legendcapital_profile"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-9ebda1057c2926b3",
-          "source_url": "https://industry.caijing.com.cn/20260707/5169223.shtml",
-          "source_title": "迎驾贡酒投资数巅智能，后者提供企业级Data Agent解决方案_食饮_产经频道首页_财经网 - CAIJING.COM.CN",
-          "source_content_hash": "6e9cfd36fd6943c7",
-          "quote": "老股东君联资本等也持续加码。",
-          "quote_hash": "a05d9ce54923c229860f924a516aa8582eba626684335303691ad8d96c1e9346"
+          "source_id": "legendcapital_profile",
+          "source_url": "https://www.legendcapital.com.cn/",
+          "source_title": "君联资本官网首页",
+          "source_content_hash": "b4ce0b3e8aba5f36c094bfb39722aaeb7aedcaeb691ad9c107c462110e14b00a",
+          "quote": "君联资本—中国领先创业投资与私募股权投资机构。2001年成立，管理规模900+亿人民币，累计投资700+企业，129家上市，近300家专精特新企业。聚焦硬科技、AI、生物医药、半导体。",
+          "quote_hash": "733dc1cb84d8364ff5bb65c7ccefad69bca6a72afb46fa295bf5e6121577cb20"
         },
         {
-          "source_id": "FISRC-e930be8aa5120588",
-          "source_url": "https://www.jiemian.com/article/12128930.html",
-          "source_title": "刚刚，智谱AI完成融资30亿|界面新闻 · JMedia",
-          "source_content_hash": "6039a35df79b1076",
-          "quote": "君联资本等老股东继续跟投",
-          "quote_hash": "09135137d26f26bd28b50094f83073165e1fc63f7387c73121997236f599dfa2"
-        },
-        {
-          "source_id": "FISRC-b7725acf292395aa",
-          "source_url": "https://finance.sina.com.cn/tech/roll/2026-08-19/doc-ininvmyx9448955.shtml",
-          "source_title": "清雁科技完成数亿元A轮融资",
-          "source_content_hash": "2707e235463cb763",
-          "quote": "本轮融资由君联资本领投，苏创投、宁波亿时跟投。",
-          "quote_hash": "9e9ebbcedcfb0c95664330687e92995d8ab583cce32cf4a91958a80665cf5925"
+          "source_id": "legendholdings_intro",
+          "source_url": "https://www.legendholdings.com.cn/Introduction/index.html",
+          "source_title": "公司介绍｜联想控股官网",
+          "source_content_hash": "279a2fde5891cfeebb08b51dac57da6d5f82aeb58bc92e2ac723e3fe5edf01de",
+          "quote": "基金管理公司包含君联资本、联想之星、弘毅投资。",
+          "quote_hash": "fa0efa2170098f4b30290b619d7549dfce67c2e313da51204bbbb0aacba594dd"
         }
       ],
+      "coverage_status": "researched",
+      "coverage_note": "成立时间、投资阶段、管理规模、上市与专精特新组合数量、公开邮箱及办公室联系方式来自君联资本官网；规模与数量为管理人自报累计数据，不代表基金回报率。联想控股官网确认集团业务关联，不据此推定每轮融资的实际法律主体。",
       "last_verified_at": "2026-09-25"
     }
   }
