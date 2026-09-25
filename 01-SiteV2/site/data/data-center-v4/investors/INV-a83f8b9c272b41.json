@@ -457,54 +457,114 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "coverage_status": "activity_only",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "BlackRock 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-25",
+      "coverage_note": "成立背景、机构定位、上海办公信息与官网联系方式来自BlackRock官方资料。BlackRock是多资产类别全球资产管理机构；相关融资记录不意味着其主要业务为早期风险投资。",
+      "summary": "BlackRock（贝莱德）成立于1988年，是全球资产管理机构，最初在纽约管理固定收益资产。其业务覆盖公募与私募市场，并为客户提供投资管理、风险管理及技术服务。官网在上海列有当地办公室；本档案不将其等同于专注早期创业投资的传统VC。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立年份",
+          "value": "1988",
+          "source_id": "blackrock_history"
+        },
+        {
+          "field": "organization_type",
+          "label": "机构定位",
+          "value": "全球投资管理与受托管理机构，覆盖公募及私募市场",
+          "source_id": "blackrock_about"
+        },
+        {
+          "field": "origins",
+          "label": "成立背景",
+          "value": "在纽约创立，最初管理固定收益资产",
+          "source_id": "blackrock_history"
+        },
+        {
+          "field": "regional_presence",
+          "label": "亚太办公网络",
+          "value": "官网列示上海、香港、新加坡、东京、首尔等办公室",
+          "source_id": "blackrock_contacts"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1988",
+          "description": "在纽约成立，最初专注于固定收益资产管理。",
+          "source_id": "blackrock_history"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Mistral AI · D轮 · 2026-09-08 · 本轮参投 · €3 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-4d11ed62a144a3f4"
-        },
-        {
-          "description": "融资来源记录：Groq · A轮 · 2026-08-17 · 历史轮次投资方 · $350M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-28e142eb564f6762"
-        },
-        {
-          "description": "融资来源记录：NVIDIA · 基础设施融资 · 2026-08-15 · 本轮参投 · 超过 5000 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-5514041be03e64ae"
+          "description": "BlackRock官网介绍其业务覆盖公募和私募市场；其另类投资平台包含私人信贷、基础设施、私募股权、房地产和对冲基金等策略。",
+          "source_id": "blackrock_alts"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "BlackRock",
+          "url": "https://www.blackrock.com/",
+          "source_id": "blackrock_about"
+        },
+        {
+          "kind": "phone",
+          "label": "上海办公室电话",
+          "value": "+86 21 8030 7000",
+          "url": "https://www.blackrock.com/corporate/about-us/who-we-are/contacts-and-locations",
+          "source_id": "blackrock_contacts"
+        },
+        {
+          "kind": "address",
+          "label": "上海办公室地址",
+          "value": "上海市浦东新区世纪大道826号陆家嘴金融广场22层",
+          "url": "https://www.blackrock.com/corporate/about-us/who-we-are/contacts-and-locations",
+          "source_id": "blackrock_contacts"
+        },
+        {
+          "kind": "contact_form",
+          "label": "官网联系入口",
+          "value": "BlackRock官方联系页面",
+          "url": "https://www.blackrock.com/us/individual/resources/customer-service",
+          "source_id": "blackrock_contacts"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-4d11ed62a144a3f4",
-          "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
-          "source_title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
-          "source_content_hash": "714c413ab36c1848",
-          "quote": "Advent, funds and accounts managed by BlackRock as well as the Grand Duchy of Luxembourg joined the round as new investors.",
-          "quote_hash": "b952b5e82744af45e69677c953c87b92547c5228ab46ab60eb90968b57012a92"
+          "source_id": "blackrock_history",
+          "source_url": "https://www.blackrock.com/corporate/about-us/who-we-are/history",
+          "source_title": "History | BlackRock",
+          "source_content_hash": "e75d5576450b8b33faa168308bb63417165b59d85be34c8bad997944f5442918",
+          "quote": "BlackRock was founded in 1988 in New York to manage fixed-income assets.",
+          "quote_hash": "31a98618544e4836659fb35d0ac93e519767fddddbd2c2d378e9e5736ce17026"
         },
         {
-          "source_id": "FISRC-28e142eb564f6762",
-          "source_url": "https://www.verdict.co.uk/groq-obtains-750m-in-funding-ai-inference-technology/",
-          "source_title": "Groq obtains $750m in funding for AI inference technology",
-          "source_content_hash": "b6f5ca4d5c31cfb3",
-          "quote": "Groq also secured notable investments from BlackRock, Neuberger Berman, Deutsche Telekom Capital Partners, and a major mutual fund manager based on the US West Coast.",
-          "quote_hash": "ed71500dc8a1a4e18d291568de425fbe6492106f824a8a3e558236c34540a2a0"
+          "source_id": "blackrock_about",
+          "source_url": "https://www.blackrock.com/corporate/about-us/who-we-are",
+          "source_title": "Who We Are - BlackRock",
+          "source_content_hash": "087054ea0e512c06681ffb94aa5343f7e4dfcaf53be2263152aa8d16fc863e54",
+          "quote": "BlackRock is a global investment manager and fiduciary to its clients.",
+          "quote_hash": "77cdf4b2b0ee8f657114d5c00fa6d3db259b7588b47a8773a379f7f0fa067176"
         },
         {
-          "source_id": "FISRC-5514041be03e64ae",
-          "source_url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Partners-With-Apollo-BlackRock-Blackstone-Brookfield-Goldman-Sachs-and-KKR-to-Establish-AI-Compute-Infrastructure-Financing-Platforms-to-Mobilize-Over-500-Billion-of-Third-Party-Capital/default.aspx",
-          "source_title": "NVIDIA Corporation - NVIDIA Partners With Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to Establish AI Compute Infrastructure Financing Platforms to Mobilize Over $500 Billion of Third-Party Capital",
-          "source_content_hash": "281ec3c5199ae992",
-          "quote": "NVIDIA today announced strategic partnerships to establish independent compute financing platforms with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to mobilize over $500 billion of third-party capital for the buildout of AI infrastructure over time.",
-          "quote_hash": "bca4883adfc66926e1ee2372403f7453b74408994ba78ee775c3f14531e961fe"
+          "source_id": "blackrock_contacts",
+          "source_url": "https://www.blackrock.com/corporate/about-us/who-we-are/contacts-and-locations",
+          "source_title": "Contacts and Locations | BlackRock",
+          "source_content_hash": "b6bda83c834db991c96b20d74ee941f46afa0354092434f9df6fdb50314e4cfa",
+          "quote": "BlackRock Shanghai office: Lujiazui Financial Plaza, 826 Century Avenue, 22nd Floor, Shanghai 200002, China. Phone: +8621 80307000.",
+          "quote_hash": "62fc6e604a081013765d1ec76a09cb3480e08e8d179b5c922621d07d8bc7f27c"
+        },
+        {
+          "source_id": "blackrock_alts",
+          "source_url": "https://www.blackrock.com/institutions/en-global/investment-capabilities/strategies/alternatives",
+          "source_title": "Alternatives | BlackRock",
+          "source_content_hash": "a1a31645969c9588878884991efea6d0fdc254cdf6fc96b35fc623be6e10006a",
+          "quote": "BlackRock alternatives include private credit, infrastructure, private equity, real estate, hedge funds and alternative solutions.",
+          "quote_hash": "2400755af3b5a43dcabe91f90d979f6c095b748d7d54cb89a1307a2097de8970"
         }
-      ],
-      "last_verified_at": "2026-09-25"
+      ]
     }
   }
 }

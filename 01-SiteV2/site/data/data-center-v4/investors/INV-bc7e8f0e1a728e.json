@@ -138,26 +138,58 @@
     ],
     "public_profile": {
       "profile_type": "person",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Ted Schlein 当前按“个人投资者”收录。最新融资披露记录日期为 2026-07-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "coverage_note": "现任机构职务和职业经历来自 Ballistic Ventures 官方团队介绍；基金回报不作量化推断。",
       "facts": [],
       "milestones": [],
-      "track_record": [
+      "contacts": [],
+      "summary": "Ted Schlein 是网络安全投资人，现任 Ballistic Ventures 普通合伙人。其经历包括在 Kleiner Perkins 工作约 30 年，并拥有超过 40 年的网络安全行业经验；还曾任 Fortify Software 创办人、运营者及投资人。",
+      "current_roles": [
         {
-          "description": "融资来源记录：Adapter · 种子轮 · 2026-07-14 · 种子轮个人投资者 · 1780万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-74e051fb023f526b"
+          "title": "普通合伙人",
+          "organization": "Ballistic Ventures",
+          "source_id": "schlein_ballistic"
         }
       ],
-      "contacts": [],
+      "career": [
+        {
+          "organization": "Ballistic Ventures",
+          "title": "普通合伙人",
+          "period": "官网现任信息",
+          "description": "专注于网络安全领域的风险投资。",
+          "source_id": "schlein_ballistic"
+        },
+        {
+          "organization": "Kleiner Perkins",
+          "title": "合伙人",
+          "period": "约 30 年",
+          "description": "长期从事科技和网络安全风险投资。",
+          "source_id": "schlein_ballistic"
+        },
+        {
+          "organization": "Fortify Software",
+          "title": "创办人、运营者及投资人",
+          "period": "此前",
+          "description": "参与创建并经营网络应用安全公司。",
+          "source_id": "schlein_ballistic"
+        }
+      ],
+      "education": [],
+      "experience_summary": "专业背景集中在网络安全创业、公司经营、风险投资和行业顾问工作。Ballistic 官网称其服务于美国情报界并担任 In-Q-Tel 董事会受托人；任期未在该页注明。",
+      "track_record": [
+        {
+          "description": "Ballistic 官网称其在 Kleiner Perkins 任职期间参与创建对网络安全行业有重要影响的企业；未披露可比口径基金回报，因此不作回报率陈述。",
+          "source_id": "schlein_ballistic"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-74e051fb023f526b",
-          "source_url": "https://www.upstartsmedia.com/p/deep-dive-adapter-launches-ai-cognition",
-          "source_title": "独家：初创公司 Adapter 获 1780 万美元融资，为 AI 工具注入全新“认知”能力",
-          "source_content_hash": "c4b4aec73019eeb8",
-          "quote": "Ted Schlein",
-          "quote_hash": "cfd6653fa5114388da4119a88f80211fa4a2e89d414464ca5074dfdfd8f9775d"
+          "source_id": "schlein_ballistic",
+          "source_url": "https://ballisticventures.com/team/ted-schlein/",
+          "source_title": "Ted Schlein | Ballistic Ventures",
+          "source_content_hash": "7055ef480bbd487a0c441c92f41380451f5cd07e41dc68d858b7f30888396be6",
+          "quote": "Ted Schlein — General Partner. Ted’s legendary career in venture capital — spanning 30 years at Kleiner Perkins and more than 40 years in cybersecurity — make him uniquely qualified to lead the Ballistic team as a General Partner. His roles as operator, founder, investor and advisor have resulted in the creation of companies that have fundamentally shaped the cybersecurity landscape, while returning billions of dollars to shareholders. Ted provides counsel to the U.S. intelligence community, serves on the Board of Trustees at In-Q-Tel, and was a board member of the CISA Cybersecurity Advisory Committee.",
+          "quote_hash": "99040231dc099cb3370487948ebbc781629628664047833466cf4e27aed800c4"
         }
       ],
       "last_verified_at": "2026-09-25"

@@ -364,51 +364,78 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "coverage_status": "activity_only",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "DST Global 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "coverage_note": "机构身份、创始团队、公开联系邮箱与不接受零售投资者均依据DST Global官网。官网未公开完整投资组合、基金规模或投资申请渠道；不据融资活动列表推断其具体基金实体。",
+      "summary": "DST Global 是总部注册于开曼群岛基金体系的全球互联网投资机构。官网列其创始人为 Yuri Milner，联合创始人为 Saurabh Gupta、John Lindfors、Rahul Mehta 和 Tom Stafford；并明确表示不招揽或接受零售投资者。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网定位",
+          "value": "全球互联网投资机构",
+          "source_id": "dst_official"
+        },
+        {
+          "field": "founder",
+          "label": "创始人",
+          "value": "Yuri Milner",
+          "source_id": "dst_official"
+        },
+        {
+          "field": "co_founders",
+          "label": "联合创始人",
+          "value": [
+            "Saurabh Gupta",
+            "John Lindfors",
+            "Rahul Mehta",
+            "Tom Stafford"
+          ],
+          "source_id": "dst_official"
+        },
+        {
+          "field": "registered_office",
+          "label": "基金注册地",
+          "value": "开曼群岛（官网表述为DST Global基金的注册办公室）",
+          "source_id": "dst_official"
+        },
+        {
+          "field": "public_investor_policy",
+          "label": "零售投资者政策",
+          "value": "官网表示不招揽或接受零售投资者",
+          "source_id": "dst_official"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Mistral AI · D轮 · 2026-09-08 · 本轮参投 · €3 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-4d11ed62a144a3f4"
-        },
-        {
-          "description": "融资来源记录：Mistral AI · D轮 · 2026-09-08 · 历史轮次投资方 · €3 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-27e01480407caae0"
-        },
-        {
-          "description": "融资来源记录：Higgsfield · B轮 · 2026-08-17 · 本轮领投 · 4 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b235ace767812393"
+          "description": "官网自述其投资包含全球成长较快、价值较高的公司，但该页面未列出组合清单或回报数据；本库的单笔融资记录不据此推断由哪个DST基金实体完成。",
+          "source_id": "dst_official"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "DST Global",
+          "url": "https://dst-global.com/",
+          "source_id": "dst_official"
+        },
+        {
+          "kind": "email",
+          "label": "官网公开咨询邮箱（非零售投资申请）",
+          "value": "info@dst-global.com",
+          "url": "https://dst-global.com/",
+          "source_id": "dst_official"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-4d11ed62a144a3f4",
-          "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
-          "source_title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
-          "source_content_hash": "714c413ab36c1848",
-          "quote": "Existing investors a16z, ASML, Belfius, BNP Paribas CIB, Bpifrance, Carmignac, DST Global, Eurazeo, General Catalyst, Headline, Hillspire, Index Ventures, Korelya Capital, Lightspeed, NVIDIA, Phoenix Court's Solar fund (home to LocalGlobe, Latitude and Solar) and Salesforce Ventures participated in the round.",
-          "quote_hash": "1aea8271fecd0d55fa862c63b4b216ab8bda36b37c1200c16dd0db73697dfc25"
-        },
-        {
-          "source_id": "FISRC-27e01480407caae0",
-          "source_url": "https://www.sesamers.com/funding/mistral-ai-raises-3b-series-d-samsung/",
-          "source_title": "Mistral AI raises €3B Series D led by Samsung Electronics",
-          "source_content_hash": "d6a4b74f9e758dc8",
-          "quote": "Participants a16z Advent DST Global Eurazeo General Catalyst Headline Hillspire Index Ventures Korelya Capital Lightspeed Phoenix Court BlackRock (funds and accounts) Grand Duchy of Luxembourg ASML Belfius BNP Paribas CIB Bpifrance Carmignac Nvidia Phoenix Court (Solar fund) Salesforce Ventures",
-          "quote_hash": "4366f11c6e24e9307486d82a2c35757bff7230de3683d6d918c0c285f0830ea1"
-        },
-        {
-          "source_id": "FISRC-b235ace767812393",
-          "source_url": "https://siliconangle.com/2026/08/17/higgsfield-raises-400m-at-5-4-billion-valuation-to-scale-video-and-image-generation-platform/",
-          "source_title": "Higgsfield raises $400M at $5.4 billion valuation to scale video and image generation platform - SiliconANGLE",
-          "source_content_hash": "06ecfd55822882e3",
-          "quote": "The Series B round was led by DST Global",
-          "quote_hash": "4486e781e7a0339f2e078c9d96b2fd5c87d699f9e49491e036814c978fe3f2f9"
+          "source_id": "dst_official",
+          "source_url": "https://dst-global.com/",
+          "source_title": "DST Global",
+          "source_content_hash": "f7d5a62383334954c9f304032f4541c44dd44e65b328eb7b8e75b6f0fa744a39",
+          "quote": "DST Global is one of the leading Internet investment firms globally. Its founder is Yuri Milner and its co-founders are Saurabh Gupta, John Lindfors, Rahul Mehta and Tom Stafford. DST Global does not solicit or accept retail investors. For inquiries please contact info@dst-global.com.",
+          "quote_hash": "e9c96030cc00ce2bc8bfd5f20d65cad25253164d3752dc440f5401fc795c236f"
         }
       ],
       "last_verified_at": "2026-09-25"

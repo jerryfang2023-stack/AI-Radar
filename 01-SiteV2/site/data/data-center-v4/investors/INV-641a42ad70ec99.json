@@ -191,38 +191,79 @@
     ],
     "public_profile": {
       "profile_type": "person",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Tony James 当前按“个人投资者”收录。最新融资披露记录日期为 2026-07-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "coverage_note": "职业履历取自 Blackstone 官方公告及投资者日材料；现职状态未由本批一手来源充分核验，因此 current_roles 留空。",
       "facts": [],
       "milestones": [],
-      "track_record": [
+      "contacts": [],
+      "summary": "Tony James 是长期从事私募股权、并购与投资银行业务的金融管理者，曾任 Blackstone 总裁、首席运营官及执行副董事长，并推动公司多个投资业务板块建立。",
+      "current_roles": [],
+      "career": [
         {
-          "description": "融资来源记录：Nomos Ai Inc. · C轮 · 2026-07-07 · 本轮参投（个人投资者） · 1.2亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1b05d1dc5cb45a7b"
+          "organization": "Blackstone",
+          "title": "副董事长兼 COO；总裁；执行副董事长",
+          "period": "2002—2021",
+          "description": "加入后担任副董事长和 COO，2006 年起任总裁，2018 年转任执行副董事长，并于 2021 年末退休。曾参与公司 IPO、收购 GSO 与 Strategic Partners，以及设立多个投资业务。",
+          "source_id": "james_blackstone"
         },
         {
-          "description": "融资来源记录：Norm Ai · C轮 · 2026-07-07 · 本轮参投（个人天使） · $120M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-9ec121b03e3fabc8"
+          "organization": "Credit Suisse First Boston",
+          "title": "全球投行业务与私募股权主席",
+          "period": "加入 Blackstone 之前",
+          "description": "曾领导全球投资银行及私募股权业务，并担任执行委员会成员。",
+          "source_id": "james_investorday"
+        },
+        {
+          "organization": "Donaldson, Lufkin & Jenrette",
+          "title": "董事总经理、并购负责人及商人银行业务创办人",
+          "period": "1975 年起；2000 年被收购前任职",
+          "description": "领导全球并购业务，创立 DLJ Merchant Banking。",
+          "source_id": "james_investorday"
         }
       ],
-      "contacts": [],
-      "sources": [
+      "education": [
         {
-          "source_id": "FISRC-1b05d1dc5cb45a7b",
-          "source_url": "https://siliconangle.com/2026/07/07/norm-ai-nabs-120m-1-2b-valuation-bring-ai-agents-law/",
-          "source_title": "Norm Ai 以 12 亿美元估值获 1.2 亿美元融资，将 AI 智能体引入法律领域",
-          "source_content_hash": "bdcf73e00730d3c9",
-          "quote": "Notable individuals also joined in the round, including Tony James, former president, chief operating officer and executive vice chairman of Blackstone",
-          "quote_hash": "def984e4980922962e45ecb7335aac5caceea1f26d7ab0a53f0a3d1dbfe68af6"
+          "institution": "Harvard College",
+          "qualification": "学士，magna cum laude；John Harvard Scholar",
+          "source_id": "james_investorday"
         },
         {
-          "source_id": "FISRC-9ec121b03e3fabc8",
-          "source_url": "https://techcrunch.com/2026/07/07/ai-law-startup-norm-raises-120m-hits-unicorn-valuation/",
-          "source_title": "AI 法律初创公司 Norm 获 1.2 亿美元融资，估值达独角兽级别",
-          "source_content_hash": "cbfe35d93b913826",
-          "quote": "Tony James (former president and COO of Blackstone)",
-          "quote_hash": "21e7f3ebf504cbd0ec857f3a98d2b6a925ddac21bb9d3bccce0e09282a94c549"
+          "institution": "Harvard Business School",
+          "qualification": "MBA，高荣誉；Baker Scholar",
+          "source_id": "james_investorday"
+        }
+      ],
+      "experience_summary": "履历覆盖并购、商人银行、私募股权、上市公司治理和投资平台扩张；其职业角色及日期以 Blackstone 公告和公司材料为准。",
+      "track_record": [
+        {
+          "description": "Blackstone 公告列出他在公司 IPO、GSO 与 Strategic Partners 收购、顾问业务分拆，以及 Tactical Opportunities、Core Private Equity、基础设施和保险方案等业务建设中的领导工作。",
+          "source_id": "james_blackstone"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "james_blackstone",
+          "source_url": "https://www.blackstone.com/news/press/jon-gray-named-president-and-chief-operating-officer-of-blackstone-tony-james-named-executive-vice-chairman/",
+          "source_title": "Tony James named Executive Vice Chairman | Blackstone",
+          "source_content_hash": "5c9c21d68697b7457ca5c2d3911369543e48cc5a6e01083198d49203ae2f4ea7",
+          "quote": "Mr. James joined Blackstone in 2002 as Vice Chairman and Chief Operating Officer and assumed the title of President in 2006 ... Major initiatives led by Mr. James include the firm’s IPO, the acquisitions of GSO and Strategic Partners ... and the founding of Blackstone’s Tactical Opportunities, Core Private Equity, Infrastructure, Insurance Solutions and retail initiatives.",
+          "quote_hash": "86e3f917bb113a5ff1152be3e2da19c71925bf544f71d5ccee8ab0a8926e5b4a"
+        },
+        {
+          "source_id": "james_exit",
+          "source_url": "https://www.axios.com/2021/12/02/tony-james-to-leave-blackstone-after-20-years",
+          "source_title": "Tony James to leave Blackstone after 20 years | Axios",
+          "source_content_hash": "dda3fa267f4d6f5f02c9c2a51e276bd24761ba3e2cbe588f403bcea0e11dfed7",
+          "quote": "Tony James plans to retire from his role as executive vice chairman of Blackstone at the end of 2021.",
+          "quote_hash": "b85acbd90d3423558a20aab8834bfbee10b4c0a81089a65e902eeaedfd892597"
+        },
+        {
+          "source_id": "james_investorday",
+          "source_url": "https://www.blackstone.com/wp-content/uploads/sites/2/2018/10/2018-blackstone-investor-day-conference_pdfdownload_2.pdf",
+          "source_title": "2018 Investor Day Conference | Blackstone",
+          "source_content_hash": "db75bad630067edcc7e4c775bf06df247e4e202e9e3deee844603d235d7ec1aa",
+          "quote": "Tony James was Executive Vice Chairman of Blackstone ... Prior to joining Blackstone in 2002, he was Chairman of Global Investment Banking and Private Equity at Credit Suisse First Boston. He joined DLJ in 1975, became head of global M&A in 1982, founded DLJ Merchant Banking in 1985 ... He graduated magna cum laude with a BA from Harvard College in 1973 and earned an MBA with high distinction from Harvard Business School, graduating as a Baker Scholar in 1975.",
+          "quote_hash": "e8d9c7d6103063f01f83f3a527a8288c5aabd57595076399205b52ada20dc2e3"
         }
       ],
       "last_verified_at": "2026-09-25"

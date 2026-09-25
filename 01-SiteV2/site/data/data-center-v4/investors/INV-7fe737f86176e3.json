@@ -302,50 +302,94 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Seligman Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "信息来自 Seligman / Seligman Ventures 官网；新设投资平台的历史表现与母公司历史不可混为一谈。",
+      "summary": "Seligman Ventures 是 Seligman 技术投资平台中的风险投资业务，聚焦 AI 与云基础设施、网络安全和数据中心技术，可从早期阶段投资至 IPO 前阶段。",
+      "facts": [
+        {
+          "field": "investment_stages",
+          "label": "投资阶段",
+          "value": [
+            "Pre-seed",
+            "Seed",
+            "后续阶段至 IPO 前"
+          ],
+          "source_id": "seligman_ventures"
+        },
+        {
+          "field": "sectors",
+          "label": "投资方向",
+          "value": [
+            "AI 与云基础设施",
+            "下一代数据中心",
+            "网络安全"
+          ],
+          "source_id": "seligman_ventures"
+        },
+        {
+          "field": "deployable_capital",
+          "label": "可部署资本",
+          "value": "10 亿美元（官网新闻标题披露）",
+          "source_id": "seligman_ventures"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Lumilens Inc. · C轮 · 2026-08-06 · 本轮联合领投 · $900M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-a967da2448674734"
+          "description": "官网示例包括 Velaura AI 1.1 亿美元 Series A、Lumilens 超过 7 亿美元融资；此处记录被投企业融资披露，不是 Seligman Ventures 的回报率。",
+          "source_id": "seligman_home"
         },
         {
-          "description": "融资来源记录：Smallest.ai · A轮 · 2026-08-01 · 本轮领投 · 1300万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1284a14893cb26a9"
-        },
-        {
-          "description": "融资来源记录：SambaNova Systems · F轮 · 2026-07-08 · 本轮参投 · $1 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-dbf8259066547c8e"
+          "description": "管理合伙人 Umesh Padval 具备超过 35 年运营与董事会经验，其中 19 年为创投投资经历；Ashish Kakran 负责 AI/ML、云基础设施、网络安全与现代数据中心早期投资。",
+          "source_id": "seligman_ventures"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Seligman Ventures",
+          "url": "https://www.seligman.com/seligman-ventures/",
+          "source_id": "seligman_ventures"
+        },
+        {
+          "kind": "address",
+          "label": "湾区办公室",
+          "value": "3000 Sand Hill Rd, Building 4, Suite 210, Menlo Park, CA 94025, USA",
+          "url": "https://www.seligman.com/",
+          "source_id": "seligman_home"
+        },
+        {
+          "kind": "address",
+          "label": "纽约办公室",
+          "value": "485 Lexington Avenue, 12th Floor, New York, NY 10017, USA",
+          "url": "https://www.seligman.com/",
+          "source_id": "seligman_home"
+        },
+        {
+          "kind": "contact_form",
+          "label": "机构联系",
+          "value": "官网 Contact 入口",
+          "url": "https://www.seligman.com/",
+          "source_id": "seligman_home"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-a967da2448674734",
-          "source_url": "https://siliconangle.com/2026/08/06/optical-networking-startup-lumilens-launches-900m-funding/",
-          "source_title": "光网络初创公司Lumilens以9亿美元资金启动",
-          "source_content_hash": "f3b1d21bc0dc0006",
-          "quote": "Atreides Management, Bain Capital Ventures, Meritech, Seligman Ventures and Spark Capital jointly led the investment.",
-          "quote_hash": "94812b7738edf261aeeb91479d522c33f2085d3a81ac0ce4f52f97200d1b0642"
+          "source_id": "seligman_ventures",
+          "source_url": "https://www.seligman.com/seligman-ventures/",
+          "source_title": "Seligman Ventures | Seligman",
+          "source_content_hash": "50baf307734cf710d23e5c1a47be7e7a54ca5bd19fee103f96b8a33cff677611",
+          "quote": "Seligman Ventures Doubles Deployable Capital to $1Bn. Seligman Ventures backs the next generation of companies responding to that shift, from those delivering AI-powered security platforms to those securing AI deployments in production. Seligman Ventures invests from pre-seed to pre-IPO. Umesh brings over 35 years of operating and board experience, including 19 years of venture investing. Ashish focuses on early-stage investments across cloud infrastructure, AI/ML, cybersecurity, and modern data center technologies.",
+          "quote_hash": "9cd99b3a10e2ad97970f283f18600e61a10f2881b4d510a8133379cee98f0eff"
         },
         {
-          "source_id": "FISRC-1284a14893cb26a9",
-          "source_url": "https://thecatalystonline.com/investment-funding/smallest-ai-expands-enterprise-voice-ai-with-new-funding/",
-          "source_title": "Smallest.ai 获新融资，扩展企业级语音 AI - The Catalyst",
-          "source_content_hash": "6b55dc3b9b331355",
-          "quote": "a $13 million Series A led by Seligman Ventures",
-          "quote_hash": "747ce6a44058bda0a67d5764ad79c100c426d9682f0df73df84993bbfd464f2b"
-        },
-        {
-          "source_id": "FISRC-dbf8259066547c8e",
-          "source_url": "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/",
-          "source_title": "AI 芯片制造商 SambaNova 以 110 亿美元估值融资 10 亿美元，距上一轮巨额融资仅 5 个月",
-          "source_content_hash": "e79999ca03a0833e",
-          "quote": "Other investors participating in the round include Seligman Ventures",
-          "quote_hash": "ced1c172bdfd97899692650f0e19d995ba4d44503122bc54c28c0c7a1d3d67b9"
+          "source_id": "seligman_home",
+          "source_url": "https://www.seligman.com/",
+          "source_title": "Home | Seligman",
+          "source_content_hash": "3287f4d989c0cf7c8ed65c7825979349fd4c5041b9fe742e68d2ff898c9e896b",
+          "quote": "Seligman Ventures backs the founders building the next era of AI infrastructure ... Velaura AI Raises $110 Million Series A ... Lumilens Emerges from Stealth with More Than $900 Million in Funding, including a new financing of more than $700 million co-led by Seligman Ventures. BAY AREA: 3000 Sand Hill Rd Building 4 Suite 210 Menlo Park CA 94025. NEW YORK: 485 Lexington Avenue 12th Floor New York NY 10017.",
+          "quote_hash": "609e1d83071cb5b9b6f2f278e3be8ffe0e38696e96147d315e4d2035e7ab0875"
         }
       ],
       "last_verified_at": "2026-09-25"

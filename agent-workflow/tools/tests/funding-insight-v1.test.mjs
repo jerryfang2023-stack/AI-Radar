@@ -1268,6 +1268,43 @@ test("Y Combinator 保持稳定公开 ID 并明确归类为投资机构", () => 
   assert.equal(registry.institutions[0].investor_kind_label, "投资机构");
 });
 
+test("有官网核验的机构名称保持既有 ID 并从待核验分类提升为投资机构", () => {
+  const names = ["DST Global", "GIC", "襄禾资本", "云启资本", "普华资本", "孚腾资本", "国中资本", "BoxGroup", "Blackstone", "华业天成", "顺禧基金", "L2F光源创业者基金", "复星创富", "复星锐正", "元璟资本", "Benchmark", "Greycroft", "Jane Street", "Tiger Global", "Headline"];
+  const expectedIds = [
+    "INV-8f3811e8a6b13c",
+    "INV-517883c02d5d50",
+    "INV-f310a64a471b49",
+    "INV-a1e018abd40842",
+    "INV-1ca8e15d91cea9",
+    "INV-a34b5d6c82951d",
+    "INV-ef4fa21fa3cb12",
+    "INV-bcb98dcb1568ed",
+    "INV-1493e20e99083e",
+    "INV-2a6fc2d76ca211",
+    "INV-31b30415e63c71",
+    "INV-92654338f57932",
+    "INV-cd8857f54a42ce",
+    "INV-40ff3cc9cefa0c",
+    "INV-0281640da2df9b",
+    "INV-1996308273c587",
+    "INV-ac2ec77dd2b7a9",
+    "INV-cbf3e624e55b8f",
+    "INV-732d47e1616ac5",
+    "INV-cac108c8c0b62f",
+  ];
+  const card = validCard();
+  card.financing.investors = names.map((name, index) => ({
+    name,
+    entity_id: "",
+    role: "本轮参投",
+    evidence_refs: evidence(`SRC-VERIFIED-${index}`, `${name} participated in the round.`),
+  }));
+  const registry = buildInvestmentInstitutionRegistry([card], { companies: [] }, card.published_at);
+  assert.deepEqual(names.map((name) => investmentInstitutionId(name)), expectedIds);
+  assert.deepEqual(registry.institutions.map((item) => item.id).sort(), [...expectedIds].sort());
+  assert.ok(registry.institutions.every((item) => item.investor_kind === "investment_institution"));
+});
+
 test("实体链接只做可解释的规范精确匹配并容忍商标与人物角色后缀", () => {
   const resolve = entityResolver({
     products: [{ id: "EN-PRODUCT", type: "产品/服务", name: "Acme Agent", aliases: [] }],
@@ -2941,4 +2978,13 @@ test("Sep15 reviewed domestic identities aggregate duplicate disclosures without
     new Set(cards.map((card) => card.triggered_by_event_id)));
   assert.ok(result.every((card) => !card.company.canonical_entity_consistent),
     "application review must not promote canonical company identity");
+});
+
+
+test("official corporate venture arm is classified as a corporate investor", () => {
+  const card = validCard();
+  card.financing.investors = [{ name: "北汽产投", entity_id: "", role: "本轮参投", evidence_refs: evidence("SRC-BAIC", "BAIC Capital participated in the round.") }];
+  const registry = buildInvestmentInstitutionRegistry([card], { companies: [] }, card.published_at);
+  assert.equal(registry.institutions[0].id, "INV-8e2043c5fb5fde");
+  assert.equal(registry.institutions[0].investor_kind, "corporate_investor");
 });

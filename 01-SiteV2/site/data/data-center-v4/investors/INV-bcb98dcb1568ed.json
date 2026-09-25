@@ -349,54 +349,116 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "coverage_status": "activity_only",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "BoxGroup 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-25",
+      "coverage_note": "投资阶段、投资金额范围、地域策略、团队和公开联系邮箱来自BoxGroup官网。官网投资组合及首页举例反映公开展示案例，并非完整投资组合；未补入未经官网证实的成立年份或回报数据。",
+      "summary": "BoxGroup是一家早期风险投资机构，官网称其可从pre-seed投资至A轮，并希望成为创业公司的首位机构投资承诺方，单笔投资最高可达100万美元。其团队主要位于纽约和旧金山，可在美国以外地区投资；关注技术驱动的新市场与早期创业团队。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Pre-seed至A轮",
+          "source_id": "boxgroup_about"
+        },
+        {
+          "field": "check_size",
+          "label": "官网披露投资额度",
+          "value": "最高100万美元；官网未说明是否为固定额度或适用于所有项目",
+          "source_id": "boxgroup_about"
+        },
+        {
+          "field": "locations",
+          "label": "团队所在城市",
+          "value": [
+            "纽约",
+            "旧金山"
+          ],
+          "source_id": "boxgroup_about"
+        },
+        {
+          "field": "geography",
+          "label": "投资地域",
+          "value": "官网表示可在各地投资",
+          "source_id": "boxgroup_about"
+        },
+        {
+          "field": "team",
+          "label": "官网列示投资团队",
+          "value": [
+            "David Tisch",
+            "Adam Rothenberg",
+            "Nimi Katragadda",
+            "Greg Rosen",
+            "Adina Davis",
+            "Claire Smilow",
+            "Disha Karale",
+            "Holley McShan",
+            "Ava Payman"
+          ],
+          "source_id": "boxgroup_team"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Foundational Industries · 种子轮 · 2026-08-01 · 本轮联合领投 · $25 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-e6ee0cd472bfb792"
+          "description": "官网首页列举Cursor、Ramp、Baseten、Clay、Plaid、Ro等公司作为其投资案例；不代表完整投资组合或投资回报。",
+          "source_id": "boxgroup_home"
         },
         {
-          "description": "融资来源记录：Sable · 轮次未披露 · 2026-07-16 · 本轮参投 · $45 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-9f8cec869ac3008e"
-        },
-        {
-          "description": "融资来源记录：Ornn AI Inc. · 种子轮 · 2026-06-24 · 既有投资方（本轮参投） · $33M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-44c6debf2c528a2a"
+          "description": "官网关于页面说明BoxGroup会在早期阶段投资，并预留后续投资资金；其投资理念强调对团队及创始人与市场匹配度的判断。",
+          "source_id": "boxgroup_about"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "BoxGroup",
+          "url": "https://www.boxgroup.com/",
+          "source_id": "boxgroup_home"
+        },
+        {
+          "kind": "email",
+          "label": "公开联系邮箱",
+          "value": "hello@boxgroup.com",
+          "url": "https://www.boxgroup.com/about",
+          "source_id": "boxgroup_about"
+        },
+        {
+          "kind": "contact_form",
+          "label": "联系团队",
+          "value": "官网联系入口",
+          "url": "https://www.boxgroup.com/about",
+          "source_id": "boxgroup_about"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-e6ee0cd472bfb792",
-          "source_url": "https://aiweekly.co/alerts/foundational-industries-raises-25m-to-build-ai-run-factories",
-          "source_title": "Foundational Industries 筹集 2500 万美元，打造 AI 运营工厂",
-          "source_content_hash": "ad03bbee3088b0fc",
-          "quote": "The round was led by BoxGroup and Zigg Ventures",
-          "quote_hash": "603f65c4354e79487ebff6657abc1acb3c8db7111baaf6bb4c0e4eab80efc8a1"
+          "source_id": "boxgroup_about",
+          "source_url": "https://www.boxgroup.com/about",
+          "source_title": "About - BoxGroup",
+          "source_content_hash": "da3756fead9112227d5c36f8b02b75853fbd3261c2a3894110381ece3ded2b4c",
+          "quote": "We invest as early as the pre-seed round and as late as Series A. We want to be your first commitment. Investing up to $1M. Proud to represent both coasts, and fund companies anywhere.",
+          "quote_hash": "c21b950eee5fbbcee12da35828fc8af6dcfc641185914c99824b53d3cfe6df45"
         },
         {
-          "source_id": "FISRC-9f8cec869ac3008e",
-          "source_url": "https://www.citybiz.co/article/876088/sable-raises-45m-to-build-ai-employee-for-customer-relations/",
-          "source_title": "Sable Raises $45M to Build ‘AI Employee’ for Customer Relations | citybiz",
-          "source_content_hash": "be1a3bb8f3be622f",
-          "quote": "Other investors in the round included BoxGroup, SV Angel, Valor Atreides AI Fund, and Sabrina and Evan Hahn.",
-          "quote_hash": "c9b09741a783eeded8d5ba6e91bf31f306cc1e89aff8eb3e3905e54b1ac16dbb"
+          "source_id": "boxgroup_team",
+          "source_url": "https://www.boxgroup.com/team",
+          "source_title": "Team - BoxGroup",
+          "source_content_hash": "c425347fd451409e1007912fcd9bb68cda49bbf7b7513e9355827d7d6bf95a08",
+          "quote": "Meet our team: David Tisch, Adam Rothenberg, Nimi Katragadda, Greg Rosen, Adina Davis, Claire Smilow, Disha Karale, Holley McShan and Ava Payman. Contact us: hello@boxgroup.com.",
+          "quote_hash": "01d606ebdb76a56a7a2c9b29ebfad7310fa3f14b8c8e2b54b32bf14937dde617"
         },
         {
-          "source_id": "FISRC-44c6debf2c528a2a",
-          "source_url": "https://siliconangle.com/2026/06/24/ornn-raises-33m-help-companies-buy-sell-ai-compute-commodity-like-oil/",
-          "source_title": "Ornn 融资 3300 万美元，帮助企业像买卖石油一样交易 AI 算力",
-          "source_content_hash": "5fe0ae2b10239c5e",
-          "quote": "plus existing investors Crucible Capital, Vine Ventures, Link Ventures and Box Group",
-          "quote_hash": "6098d4e689559f73e7e149035a967dac073ab7743433b4b03e523fe97caa313d"
+          "source_id": "boxgroup_home",
+          "source_url": "https://www.boxgroup.com/",
+          "source_title": "BoxGroup",
+          "source_content_hash": "05635b88cdae56b8e35a0f212046740622f8b5f601448acc8d39632592e3eae5",
+          "quote": "Investing in dreams at the earliest stage with companies like Cursor, Ramp, Baseten, Clay, Plaid, Ro and many more.",
+          "quote_hash": "060e2785780b531d4e0c206450259d550d2d8079f2aeb507dd84aea0207971ca"
         }
-      ],
-      "last_verified_at": "2026-09-25"
+      ]
     }
   }
 }

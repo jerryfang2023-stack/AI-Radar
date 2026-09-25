@@ -300,50 +300,118 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Craft Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "coverage_note": "机构定位、投资阶段、团队和投资组合来自官网；组合举例不代表收益表现。",
+      "summary": "Craft Ventures 是专注 B2B 科技的风险投资机构，由创业者及运营者构成团队，覆盖早期与成长阶段，并通过运营经验支持被投企业。",
+      "facts": [
         {
-          "description": "融资来源记录：Neo Security Inc. · B轮 · 2026-07-20 · 本轮参投 · $100 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1bf4ecd2fae97f0b"
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": [
+            "B2B 科技",
+            "SaaS",
+            "市场平台",
+            "AI 应用"
+          ],
+          "source_id": "craft_home"
         },
         {
-          "description": "融资来源记录：Neo Security, Inc. · 多轮融资 · 2026-07-20 · 种子轮和A轮参投 · 1亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-9a07ea732902851d"
+          "field": "investment_stages",
+          "label": "投资阶段",
+          "value": [
+            "种子期",
+            "早期风险投资",
+            "成长阶段"
+          ],
+          "source_id": "craft_funds"
         },
         {
-          "description": "融资来源记录：Nomos Ai Inc. · C轮 · 2026-07-07 · 本轮参投 · 1.2亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1b05d1dc5cb45a7b"
+          "field": "growth_aum",
+          "label": "Growth I、II 管理规模",
+          "value": "11.2 亿美元（公告发布时口径）",
+          "source_id": "craft_growth"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2017",
+          "description": "官方团队介绍称 Brian Murray 于 2017 年协助创立 Craft。",
+          "source_id": "craft_brian"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "官方投资组合列有 Replit（2023 年 Series B extension）、Glean（2024 年 Series E）、Supabase（2024 年 Series C）等案例；公司年份和轮次为官网披露，不代表投资收益。",
+          "source_id": "craft_portfolio"
+        },
+        {
+          "description": "公司介绍称团队由前创始人、运营者和行业专家组成，并为创始团队提供资深人才与运营支持。",
+          "source_id": "craft_home"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Craft Ventures",
+          "url": "https://www.craftventures.com/",
+          "source_id": "craft_home"
+        },
+        {
+          "kind": "email",
+          "label": "一般咨询",
+          "value": "inquiries@craftventures.com",
+          "url": "https://www.craftventures.com/portfolio",
+          "source_id": "craft_portfolio"
+        },
+        {
+          "kind": "address",
+          "label": "纽约办公室",
+          "value": "纽约市 Flatiron District（公告未提供完整街道地址）",
+          "url": "https://www.craftventures.com/articles/announcing-1-3-billion-for-craft-ventures-iv-and-growth-ii",
+          "source_id": "craft_growth"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-1bf4ecd2fae97f0b",
-          "source_url": "https://siliconangle.com/2026/07/20/neo-security-bags-100m-build-secure-control-layer-enterprise-ai-agents/",
-          "source_title": "Neo Security 获 1 亿美元融资，为企业 AI 智能体构建安全控制层",
-          "source_content_hash": "84b7d83dc85df604",
-          "quote": "and saw participation from Craft Ventures and Merlin Ventures",
-          "quote_hash": "88e87cc4460f3a0c9e2720c1412935b514260a4bee11ef70302e250559e827a9"
+          "source_id": "craft_home",
+          "source_url": "https://www.craftventures.com/",
+          "source_title": "Craft Ventures",
+          "source_content_hash": "e91e0bf08d68242f5991245916c933fc88f978a8c9a4ea241fc7b87a02c3abef",
+          "quote": "Leaders in B2B technology investing. The Craft team has proven, repeated success at building and scaling technology businesses. We are a team of former founders, operators, and experts. We share winning playbooks and give founders access to senior talent at a stage before they can hire it themselves.",
+          "quote_hash": "e4a6ebdfe7f63455852a9726972316972e5594366c663ed89aaa9e2768ef41b0"
         },
         {
-          "source_id": "FISRC-9a07ea732902851d",
-          "source_url": "https://www.globenewswire.com/news-release/2026/07/20/3329638/0/en/Neo-Launches-with-100M-to-Secure-AI-Software-Across-the-Enterprise.html",
-          "source_title": "Neo 获 1 亿美元融资，致力于保障企业级 AI 软件安全",
-          "source_content_hash": "9889ba96b2e121cd",
-          "quote": "with participation from Craft Ventures and Merlin Ventures",
-          "quote_hash": "8fbed03d25acbe7db9df7c9848a9d085d6e3c865962177733d5ffa03083f7fd2"
+          "source_id": "craft_funds",
+          "source_url": "https://www.craftventures.com/articles/announcing-craft-iii-1-1-billion-for-saas-and-marketplaces",
+          "source_title": "Announcing Craft III and Growth I | Craft Ventures",
+          "source_content_hash": "b4f32d3d8d34adf9152ead46f5faf759379a7ee961e3e80aeaadf0bf51dafd50",
+          "quote": "Through our first two funds, we have had the privilege of partnering with dozens of visionary founders at their Series A or Series B round, and invested in many more at the seed stage.",
+          "quote_hash": "819ec30e5c5e85d830a1c597c5b98d00234660d447575ce9601c7cacc08496f6"
         },
         {
-          "source_id": "FISRC-1b05d1dc5cb45a7b",
-          "source_url": "https://siliconangle.com/2026/07/07/norm-ai-nabs-120m-1-2b-valuation-bring-ai-agents-law/",
-          "source_title": "Norm Ai 以 12 亿美元估值获 1.2 亿美元融资，将 AI 智能体引入法律领域",
-          "source_content_hash": "bdcf73e00730d3c9",
-          "quote": "Blackstone, Bain Capital Ventures, Craft Ventures, Coatue, Vanguard, New York Life, TIAA, and Fenwick LLP also participated.",
-          "quote_hash": "67ea6d53fe5895c7b9259e09b6099219f3a5195b03bfa47ecb2dbe337be24814"
+          "source_id": "craft_growth",
+          "source_url": "https://www.craftventures.com/articles/announcing-1-3-billion-for-craft-ventures-iv-and-growth-ii",
+          "source_title": "Announcing $1.3 billion for Craft Ventures IV and Growth II | Craft Ventures",
+          "source_content_hash": "33053cbfc06e4777b7039db339fa446a94ce3262c7412fa96cdca27c407e23fa",
+          "quote": "With $1.12 billion of AUM across Craft Ventures Growth I and II, we have brought in seasoned growth-stage investor Michael Robinson to lead our growth practice.",
+          "quote_hash": "e51ae60974bae1fe411a63276797b147ac597bde93e5d50dfcafaa14b626ffe1"
+        },
+        {
+          "source_id": "craft_brian",
+          "source_url": "https://www.craftventures.com/team/brian-murray",
+          "source_title": "Brian Murray | Craft Ventures",
+          "source_content_hash": "1a0d485e3cb840b05ad6a7f167dc04164c0a1a6366573f8f43c8a14dd53aee46",
+          "quote": "Since helping start the firm in 2017, Brian built the infrastructure that powers the firm’s investment process and has hired a talented team to expand Craft’s growing portfolio.",
+          "quote_hash": "dafef1452dcb727fa4672f05c982dab75ea7ee259662bdd541c47aa04b9f1404"
+        },
+        {
+          "source_id": "craft_portfolio",
+          "source_url": "https://www.craftventures.com/portfolio",
+          "source_title": "Portfolio | Craft Ventures",
+          "source_content_hash": "11e40608067a0f92a0f450c86b785c835be9538f824ec0df082d50f2ff8c2b9e",
+          "quote": "We invest in outstanding teams creating market-defining products. Replit — Invested 2023 — Series B Extension. Supabase — Invested 2024 — Co-led Series C. Glean — Invested 2024 — Series E. inquiries@craftventures.com",
+          "quote_hash": "03907309f8a5623791b8815bc42d1746a5bc61ba72d6de97f362e50fb707d95d"
         }
       ],
       "last_verified_at": "2026-09-25"

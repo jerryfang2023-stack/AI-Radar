@@ -193,38 +193,53 @@
     ],
     "public_profile": {
       "profile_type": "person",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Cal Henderson 当前按“个人投资者”收录。最新融资披露记录日期为 2026-05-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "coverage_note": "基于公司官网、院校档案或本人公开资料核验；个人融资参投记录仅作为本库可追溯案例，不代表完整投资组合。",
       "facts": [],
       "milestones": [],
-      "track_record": [
+      "contacts": [],
+      "summary": "Cal Henderson 是 Slack 联合创始人及前 CTO，也参与创办早期在线游戏公司 Tiny Speck；Slack 的内部聊天工具后来发展为企业协作产品。",
+      "current_roles": [],
+      "career": [
         {
-          "description": "融资来源记录：Viktor · A轮 · 2026-05-20 · 本轮天使投资人 · €64.7 million ($75 million)。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-ce83b857608dabeb"
+          "organization": "Slack",
+          "title": "联合创始人兼 CTO（历史职位）",
+          "period": "Slack 早期至后续管理交接",
+          "description": "参与将 Tiny Speck 游戏项目的内部聊天工具发展为 Slack；担任 CTO 并负责技术与工程管理。",
+          "source_id": "henderson_slack"
         },
         {
-          "description": "融资来源记录：Realm Technologies Oy · 种子轮 · 2026-04-22 · 本轮参投（天使投资人） · $4.5 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-a7e59a61493f0ad8"
+          "organization": "Tiny Speck",
+          "title": "联合创始人",
+          "period": "Slack 前身时期",
+          "description": "共同创办在线游戏公司，其内部聊天工具成为 Slack 产品的起点。",
+          "source_id": "henderson_history"
         }
       ],
-      "contacts": [],
+      "education": [],
+      "experience_summary": "工程与产品建设经历集中于互联网服务及协作软件；Slack 官方材料在 2021 年称其为联合创始人兼 CTO。近期状态以“前任职位”标注，避免将旧职务误作现任。",
+      "track_record": [
+        {
+          "description": "Slack 官方说明，创始团队在 2013 年决定把原为游戏团队开发的聊天工具扩展为面向外部用户的产品，Slack 于 2014 年成立。",
+          "source_id": "henderson_history"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-ce83b857608dabeb",
-          "source_url": "https://www.eu-startups.com/2026/05/ai-coworker-startup-viktor-raises-e64-7-million-series-a-after-hitting-e12-9-million-revenue-run-rate-within-10-weeks-of-launch/",
-          "source_title": "AI 同事初创公司 Viktor 在推出后 10 周内达到 1290 万欧元营收运行率，随后完成 6470 万欧元 A 轮融资",
-          "source_content_hash": "bc6dd70ea1b6ac85",
-          "quote": "Angel investors, including Stewart Butterfield and Cal Henderson, co-founders of Slack",
-          "quote_hash": "1979b0dcc0a0dd729f138e6683fc5434f2016357a868a33bcb8c3894f56e2563"
+          "source_id": "henderson_slack",
+          "source_url": "https://slack.com/blog/transformation/the-five-day-workweek-has-left-the-building",
+          "source_title": "The five-day workweek has left the building | Slack",
+          "source_content_hash": "0d9cdb86e4ba892cf8d691ddecd73df55d052ef0f4d51415cc47f5bf9a3343d6",
+          "quote": "Slack’s co-founder and CTO ... Cal Henderson ... In February 2020 ... Cal Henderson was skeptical that it would be possible to pivot the whole organization quickly.",
+          "quote_hash": "48bce5981353e1cb76823574210152d04cab0edb3dda8385f31c25ef70c27051"
         },
         {
-          "source_id": "FISRC-a7e59a61493f0ad8",
-          "source_url": "https://www.prnewswire.com/news-releases/realm-raises-4-5m-to-bring-the-cursor-moment-to-enterprise-sales-302750020.html",
-          "source_title": "Realm 获450万美元融资，将“Cursor时刻”带入企业销售领域",
-          "source_content_hash": "4a8f131fc27d204e",
-          "quote": "The round was led by Frontline Ventures, with participation from HubSpot Ventures, Slack Co-founder Cal Henderson and Deel Co-founder Alex Bouaziz.",
-          "quote_hash": "909dfefa1a6a5441803aca1b318c3a6e999a94b92a513140467d892f67c2dc1e"
+          "source_id": "henderson_history",
+          "source_url": "https://slack.com/resources/why-use-slack/what-is-slack-and-how-does-it-work",
+          "source_title": "What is Slack and how does it work? | Slack",
+          "source_content_hash": "d463071b4504fd46d48b5eb7c531af7b03e833ec92ae016ce4fe8b782b7aae00",
+          "quote": "Slack was founded in 2014. The software began as an internal chat tool for a game called Glitch by the startup Tiny Speck. When that company’s co-founders Stewart Butterfield, Cal Henderson, Eric Costello and Serguei Mourachov decided to shut down the game in 2013, they decided to develop their chat tool for wide release.",
+          "quote_hash": "5c4172e30ec8862f17976d1cb44c207d633447969d13b939d195743f9dc64667"
         }
       ],
       "last_verified_at": "2026-09-25"

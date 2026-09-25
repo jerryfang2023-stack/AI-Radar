@@ -342,50 +342,100 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Amplify Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "coverage_note": "机构定位、基金规模和组合经历依据Amplify Partners官网自述。基金募集金额、组合公司与投资阶段按页面原文和日期记录，不等同于基金回报或净资产规模。官网未见面向投资申请人的通用邮箱，故只列官方网站。",
+      "summary": "Amplify Partners 是面向技术创业者的早期风险投资机构，重点支持工程师、研究者和科学家创立的软件、AI、基础设施与数字生物学公司。官网将其历史追溯至2012年，并披露2025年新募三支基金合计9亿美元。",
+      "facts": [
         {
-          "description": "融资来源记录：Engram · 种子轮 · 2026-06-23 · 本轮参投 · $98M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-39d911c5038cb1c0"
+          "field": "founded",
+          "label": "官网所述开始投资年份",
+          "value": "2012",
+          "source_id": "amplify_official_home"
         },
         {
-          "description": "融资来源记录：Engram · 种子轮 · 2026-06-23 · 既有投资方 · $98M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-bcf01fbecb1fbdb6"
+          "field": "investment_focus",
+          "label": "投资定位",
+          "value": "技术型创始人、软件、AI、工具与基础设施",
+          "source_id": "amplify_official_home"
         },
         {
-          "description": "融资来源记录：Niteshift · 种子轮 · 2026-06-10 · 本轮参投 · $7 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-a1dac8a4c0e97aee"
+          "field": "funds_2025",
+          "label": "2025年宣布基金",
+          "value": [
+            {
+              "fund": "Amplify Fund 6",
+              "amount": "4亿美元",
+              "stage": "早期"
+            },
+            {
+              "fund": "Amplify Fund 6 Select",
+              "amount": "3亿美元",
+              "stage": "支持现有组合成长"
+            },
+            {
+              "fund": "Amplify Bio",
+              "amount": "2亿美元",
+              "stage": "数字生物学"
+            }
+          ],
+          "source_id": "amplify_fund6"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2012",
+          "description": "官网将机构支持技术型创始人的投资历史追溯至2012年。",
+          "source_id": "amplify_official_home"
+        },
+        {
+          "date": "2025-06-05",
+          "description": "宣布三支基金，规模合计9亿美元。",
+          "source_id": "amplify_fund6"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "官网称Amplify早期投资Datadog、Fastly，并列出2025年基金公告中的Temporal、Runway、dbt、Chainguard等组合公司；组合案例是机构自述，不据此估算投资回报。",
+          "source_id": "amplify_fund6"
+        },
+        {
+          "description": "官网组合页记录Datadog于2012年与Amplify建立合作、2019年IPO；Fastly列为IPO组合企业。",
+          "source_id": "amplify_official_portfolio"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站及联系入口",
+          "value": "Amplify Partners",
+          "url": "https://www.amplifypartners.com/",
+          "source_id": "amplify_official_home"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-39d911c5038cb1c0",
-          "source_url": "https://theaiinsider.tech/2026/07/01/engram-launches-with-98m-to-build-ai-that-actually-knows-your-organization/",
-          "source_title": "Engram 获 9800 万美元启动资金，打造真正了解你组织的 AI",
-          "source_content_hash": "f7105d727554bb38",
-          "quote": "emerged from stealth with $98M in funding from General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern, Amplify Partners, Neo",
-          "quote_hash": "d6d2e6175424260b5170a8e5367eac93875a636a037b0e4d21c7a38705fd06e4"
+          "source_id": "amplify_official_home",
+          "source_url": "https://www.amplifypartners.com/",
+          "source_title": "Amplify Partners",
+          "source_content_hash": "50229a838017962a4acc4ed7170eb5158618e96d0dbd33a533b4a9cfe805e04b",
+          "quote": "Amplify invests in technical founders building the next generation of applications, models, tools, and infrastructure. Amplify has been investing in and supporting technical founders since 2012.",
+          "quote_hash": "c9fb5beb6e3db3a504c1b922d52849e49c4d7968e2fc4de07f549f28454aa330"
         },
         {
-          "source_id": "FISRC-bcf01fbecb1fbdb6",
-          "source_url": "https://www.caplight.com/company/engram",
-          "source_title": "Engram | Valuation, Funding Rounds & Stock Price | Caplight",
-          "source_content_hash": "24739161319ad4eb",
-          "quote": "Amplify Partners Seed, Early Funding",
-          "quote_hash": "74f164b9f3ae2b349fb6072043b9fa156393e9e8860ad27b6db4ddabcfe575bc"
+          "source_id": "amplify_fund6",
+          "source_url": "https://www.amplifypartners.com/blog-posts/fund-6-announcement",
+          "source_title": "Announcing $900M in new capital - Amplify Partners",
+          "source_content_hash": "d37c21ce02c9d2be0c92250d8823e962d8d2da0a87dd9ef0abdd0205b5a8b21b",
+          "quote": "Today we’re announcing three new funds dedicated to backing early stage technical founders: Fund 6, our $400M core fund; Fund 6 Select, a $300M fund to support existing portfolio companies; and Amplify Bio, a $200M dedicated digital biology fund.",
+          "quote_hash": "f0e2d7a404674849c170e0f0be7dd5ee2ce0cf7492f1b1270c5e002d3186ed0e"
         },
         {
-          "source_id": "FISRC-a1dac8a4c0e97aee",
-          "source_url": "https://www.todaysstartupnews.com/startups/niteshift-raises-7-million-seed-greylock-jerry-chen-ai-coding-agent-cloud-platform",
-          "source_title": "Niteshift Raises $7 Million Seed Round Led by Greylock to Build the Cloud Infrastructure Layer for AI Coding Agents",
-          "source_content_hash": "c89dfd8f0a56c07f",
-          "quote": "Niteshift has raised $7 million in a seed round led by Greylock, with participation from Amplify Partners, BoxGroup, and SV Angel.",
-          "quote_hash": "b784d4f0084512f627cf683b07ea68a93c1cb7b5b6c53181d49da02707611ddc"
+          "source_id": "amplify_official_portfolio",
+          "source_url": "https://www.amplifypartners.com/portfolio/company",
+          "source_title": "The Amplify Portfolio",
+          "source_content_hash": "f2af295322cddb4e533afed8a890cc838fc3ba1516c759eee2d5d1f0da4b497a",
+          "quote": "Amplify’s portfolio page lists Datadog as an IPO, with a 2012 partnership and 2019 IPO milestone, and Fastly as an IPO.",
+          "quote_hash": "20f0fa198f9c751f7ee613e09acba365fc863b690c585e23cbea389adce9d1f8"
         }
       ],
       "last_verified_at": "2026-09-25"

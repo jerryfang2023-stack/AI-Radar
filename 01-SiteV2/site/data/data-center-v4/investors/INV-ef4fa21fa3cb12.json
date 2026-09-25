@@ -430,54 +430,135 @@
       }
     },
     "public_profile": {
-      "profile_type": "unverified",
-      "coverage_status": "activity_only",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "国中资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-25",
+      "coverage_note": "成立时间、基金管理规模、国家级基金管理经历、管理合伙人、关注领域和项目案例均来自国中资本官网。官网不同页面分别披露160亿元和165亿元，因时点或统计范围可能不同，未合并为单一确定值。",
+      "summary": "国中资本成立于2015年12月，是施安平带领原深创投部分核心团队创办的创业投资基金管理平台。官网列示其管理国家中小企业发展基金三支实体基金及国家绿色发展基金一支直投子基金，并聚焦人工智能、半导体、新能源、新材料、先进制造和医疗健康等战略新兴产业。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2015年12月21日",
+          "source_id": "guozhong_home"
+        },
+        {
+          "field": "founding_background",
+          "label": "创立背景",
+          "value": "施安平带领原深创投集团部分核心团队创办",
+          "source_id": "guozhong_home"
+        },
+        {
+          "field": "self_reported_aum",
+          "label": "官网披露管理基金规模",
+          "value": "官网首页披露累计管理165亿元；关于页面披露总计160亿元，页面口径不同",
+          "source_id": "guozhong_home"
+        },
+        {
+          "field": "managed_funds",
+          "label": "官网列示管理基金",
+          "value": [
+            "国家中小企业发展基金三支实体基金",
+            "国家绿色发展基金一支直投子基金"
+          ],
+          "source_id": "guozhong_about"
+        },
+        {
+          "field": "investment_sectors",
+          "label": "投资重点",
+          "value": [
+            "绿色低碳与新能源汽车",
+            "半导体与电子信息",
+            "新材料与先进制造",
+            "医疗大健康",
+            "AI与具身智能",
+            "人工智能应用",
+            "新型显示与智能终端"
+          ],
+          "source_id": "guozhong_investment"
+        },
+        {
+          "field": "management_partners",
+          "label": "官网列示管理合伙人",
+          "value": [
+            "马若鹏",
+            "施安平（首席合伙人、董事长）",
+            "贾巍",
+            "刘云"
+          ],
+          "source_id": "guozhong_home"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2015-12",
+          "description": "中标管理国家中小企业发展基金首支人民币60亿元实体基金。",
+          "source_id": "guozhong_about"
+        },
+        {
+          "date": "2020",
+          "description": "官网称再次中标国家中小企业发展基金二期基金管理人。",
+          "source_id": "guozhong_about"
+        },
+        {
+          "date": "2024",
+          "description": "完成国家中小企业发展基金三期基金设立，官网称成为首家连续管理三支该基金实体基金的机构。",
+          "source_id": "guozhong_about"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：极佳视界 · B2轮 · 2026-06-15 · 本轮参投 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-ce47b663ca256878"
+          "description": "官网项目案例包括博恩坦、赛诺生物、月星新能源、济群医药、安元科技、知微传感、便利侠、朗呈医疗和艾科赛龙等；案例为官网展示，不代表完整组合或投资收益。",
+          "source_id": "guozhong_home"
         },
         {
-          "description": "融资来源记录：灵初智能 · 多轮融资 · 2026-03-10 · 本轮参投 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-819e76f1dcf54552"
-        },
-        {
-          "description": "融资来源记录：极佳视界 · Pre-B轮 · 2026-03-05 · Pre-A轮领投方 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-fdfe58e2e68c7e9e"
+          "description": "国中资本官网称，2015年以第一名中标国家中小企业发展基金首支实体基金，2020年再次中标二期，2024年完成三期基金设立。",
+          "source_id": "guozhong_about"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "国中资本",
+          "url": "https://www.gzvcm.com/",
+          "source_id": "guozhong_home"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-ce47b663ca256878",
-          "source_url": "https://news.pedaily.cn/202606/565201.shtml",
-          "source_title": "首发| 极佳视界三个月融资35亿，投资人开抢物理世界OpenAI",
-          "source_content_hash": "a652909321da946b",
-          "quote": "国中资本、达晨财智、图灵资管等多个老股东持续超额加注",
-          "quote_hash": "dce935c06fce5425156b93b1b31d4ac97ff305070d2c8f29d10845c372e5c8f8"
+          "source_id": "guozhong_home",
+          "source_url": "https://www.gzvcm.com/",
+          "source_title": "国中资本官方网站",
+          "source_content_hash": "fcc15d6a1318db0fe18f6ad1d9568a682bd65664f8c73416439192b0cbf2f6d2",
+          "quote": "国中资本成立于2015年12月21日，是施安平博士带领原深创投集团部分核心团队创办的创业投资基金管理平台。官网列示累计管理基金规模165亿元及管理合伙人。",
+          "quote_hash": "042089d8fe22171c3db3c707bdca7dc32dd4e60d2bc801d3a241533f0553ca63"
         },
         {
-          "source_id": "FISRC-819e76f1dcf54552",
-          "source_url": "https://www.163.com/dy/article/KNLU70L305198R3E.html",
-          "source_title": "灵初智能已完成20亿融资，获“国家队”资本重磅投资|飞轮|机器人|智能化|世界人工智能大会_网易订阅",
-          "source_content_hash": "91d16c2fbe60a677",
-          "quote": "天使轮由国开金融、国中资本、央视融媒体产业投资基金等国家级 “国家队” 资本，某数千亿上市公司旗下战投、长飞光纤旗下基金，两大核心产业龙头资本，沃德尔等知名产业资本，及元生创投、珠海科技产业集团、钧山投资、燕缘创投、大米资本、沃赋资本、彬复资本等多家知名基金共同投资。",
-          "quote_hash": "542263c73eb4885b71c5f6107c44e16fa3e2b45e879bc6daee6925ba1553438f"
+          "source_id": "guozhong_about",
+          "source_url": "https://www.gzvcm.com/About.html",
+          "source_title": "关于我们 - 国中资本",
+          "source_content_hash": "d62b185d02cde413829f8981c3161a9567080a4b831b93ecd6d16b1b2efa1911",
+          "quote": "国中资本于2015年中标管理国家中小企业发展基金首支实体基金；2020年中标二期；2024年完成三期基金设立。",
+          "quote_hash": "9e2141523ad5b278d589bf8e6b6d4172cf8666979267e82fd60f1b72136f4cd0"
         },
         {
-          "source_id": "FISRC-fdfe58e2e68c7e9e",
-          "source_url": "https://news.pedaily.cn/202603/561389.shtml",
-          "source_title": "首发|华为押注的机器人，极佳视界刚刚又融10亿",
-          "source_content_hash": "7d9409a9ba1e94fc",
-          "quote": "其中Pre-A轮融资由国中资本领投，紫峰资本、老股东 PKSHA Algorithm Fund跟投",
-          "quote_hash": "74469dfd79f9128cb2f80f362ec23f4b7e9167b3e623558ed16dd27a64de114f"
+          "source_id": "guozhong_investment",
+          "source_url": "https://www.gzvcm.com/invest1.html",
+          "source_title": "投资业务 - 国中资本",
+          "source_content_hash": "e30fefe1b2d13996e49870ad64774e811da5fb4030a7653027d580e63d80c1e7",
+          "quote": "国中资本倡导研究先行、投研结合，通过产业链深度研究指导投资，关注绿色低碳、新能源汽车、半导体、新材料、先进制造、医疗健康、AI与具身智能等方向。",
+          "quote_hash": "b9f43cfba7471d83ffa92d879f6b166cd852851d57dd06e6f42a4daee30c26c5"
+        },
+        {
+          "source_id": "guozhong_partners",
+          "source_url": "https://www.gzvcm.com/About2.html",
+          "source_title": "合伙人 - 国中资本",
+          "source_content_hash": "7e7f0e71dca239be0abee91bb49a6e066617fe5ba0454e8d21bb2832326829a4",
+          "quote": "官网管理合伙人页面列示施安平、贾巍、刘云、马若鹏。",
+          "quote_hash": "4e5aa239371cb2bc47a7f96926659f84129037771811f05d77bc2835e95882ee"
         }
-      ],
-      "last_verified_at": "2026-09-25"
+      ]
     }
   }
 }

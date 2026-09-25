@@ -503,53 +503,103 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "L2F光源创业者基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-25",
+      "coverage_note": "L2F基金定位、投资方向、LP背景和生态赋能描述来自新华社及光源资本相关公开报道。光源资本官方网站确认其资产服务与资产管理一体化愿景；基金的具体规模、完整团队与独立联系方式未在所用来源披露。",
+      "summary": "L2F（Lighthouse Founders’ Fund，光源创业者基金）是光源资本投资与孵化体系中的超早期投资工具，聚焦AI和前沿科技创业机会。公开报道介绍，基金汇聚成功创业者和产业龙头作为出资人与产业伙伴，计划用创业经验、行业资源和专业团队支持早期AI创业者。",
+      "facts": [
+        {
+          "field": "parent",
+          "label": "所属平台",
+          "value": "光源资本的基金及产业孵化体系",
+          "source_id": "l2f_launch"
+        },
+        {
+          "field": "fund_name",
+          "label": "基金英文名",
+          "value": "Lighthouse Founders’ Fund（L2F）",
+          "source_id": "l2f_launch"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "超早期",
+          "source_id": "l2f_xinhua"
+        },
+        {
+          "field": "sectors",
+          "label": "投资方向",
+          "value": [
+            "人工智能",
+            "前沿科技"
+          ],
+          "source_id": "l2f_xinhua"
+        },
+        {
+          "field": "lp_background",
+          "label": "公开报道的出资人结构",
+          "value": "成功创业者和各行业产业龙头",
+          "source_id": "l2f_xinhua"
+        },
+        {
+          "field": "support",
+          "label": "支持方式",
+          "value": "产业资源、创业经验和专业团队赋能",
+          "source_id": "l2f_xinhua"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2025",
+          "description": "光源资本公开报道启动L2F光源创业者基金，定位为AI早期投资及创始人赋能工具。",
+          "source_id": "l2f_launch"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：深度内核（DeepKernel） · 种子轮 · 2026-09-15 · 本轮参投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-9eb697a746e19a88"
+          "description": "新华社2025年报道将L2F描述为光源资本面向AI与前沿科技超早期机会的新基金，并举例说明光源资本以财务顾问、孵化和产业资源参与银河通用、爱诗科技早期发展；这些案例涉及光源资本整体服务，不等同于L2F基金独立投资业绩。",
+          "source_id": "l2f_xinhua"
         },
         {
-          "description": "融资来源记录：MemoraX AI · 种子++轮 · 2026-08-12 · 种子轮联合领投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-853986351b6d68d9"
-        },
-        {
-          "description": "融资来源记录：幻码跃迁 · 种子轮 · 2026-07-14 · 本轮领投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-7c0e1d89cdf9af82"
+          "description": "光源资本相关公开访谈将L2F列入其AI时代产业投行工具体系，称其在2025年启动，面向AI创业者开展超早期投资与共同投资。",
+          "source_id": "l2f_launch"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "所属平台官方网站",
+          "value": "光源资本",
+          "url": "https://www.lighthousecap.cn/",
+          "source_id": "l2f_official"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-9eb697a746e19a88",
-          "source_url": "https://news.pedaily.cn/202609/568997.shtml",
-          "source_title": "首发|深度内核（DeepKernel）完成数千万元种子轮融资，定义AI时代的主权智能",
-          "source_content_hash": "4d4f7417581fed42",
-          "quote": "由顺为资本领投， L2F光源创业者基金跟投",
-          "quote_hash": "7c0a452061bc6289441586c201662d2e9549f4cc18441dbb159a96b49ebecb1f"
+          "source_id": "l2f_official",
+          "source_url": "https://www.lighthousecap.cn/about.html",
+          "source_title": "光源资本",
+          "source_content_hash": "94499a62ce08b184e7bf0f33b461ca271f0828cac975d182bdc2183a5139fe16",
+          "quote": "光源资本的使命是助力顶尖企业家，愿景是建设企业家和投资人长期信赖的资产服务和资产管理一体化平台。",
+          "quote_hash": "0edc87b2c39216c1a12d9a19973c3959630a0a4eebd66d674977eab8acda0c9a"
         },
         {
-          "source_id": "FISRC-853986351b6d68d9",
-          "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-28/doc-inhvzfsh8584344.shtml",
-          "source_title": "首发| 华为大牛深圳创业，MemoraX AI首轮融资千万美元_新浪科技_新浪网",
-          "source_content_hash": "7b3001b2629929ad",
-          "quote": "本轮由L2F光源创业者基金、钟鼎资本联合领投，知名投资人及产业方共同参与。",
-          "quote_hash": "e9fb39839566d2517b1b64485aa3b92724685259cd0e25f7d160f6447cfabf34"
+          "source_id": "l2f_xinhua",
+          "source_url": "https://www.xinhuanet.com/digital/20250402/33872be9f0864adfa320e85d44c8dd01/c.html",
+          "source_title": "光源资本布局AI投资与产业孵化 - 新华网",
+          "source_content_hash": "c8c24cbe237836bb5709b9336b9253069b4fb7c6c954c5d75fb550d0ee634a54",
+          "quote": "光源资本拟设Lighthouse Founders’ Fund（L2F），关注AI和前沿科技超早期投资机会，并以创业者和产业龙头作为出资人，提供行业资源和专业团队赋能。",
+          "quote_hash": "1a6a9dbd1c98178b52dec7e7f7a0bb0da3c1578ced59e48d6a56d689cc0233ba"
         },
         {
-          "source_id": "FISRC-7c0e1d89cdf9af82",
-          "source_url": "https://news.pedaily.cn/202607/566249.shtml",
-          "source_title": "「幻码跃迁」完成数千万种子轮融资，打造量子×AI融合创新的量子计算基础设施",
-          "source_content_hash": "340f8c8784943503",
-          "quote": "本轮融资由 L2F 光源创业者基金领投，云启资本、小苗朗程 共同参与",
-          "quote_hash": "9d550bd78ff799b3264b3b2282f0d9d5519c19d1d3062ffdb184d6343ff9d2ee"
+          "source_id": "l2f_launch",
+          "source_url": "https://media.qimingpian.cn/2025/12/05/b397cefd6d22f7359622874711e35df8.html",
+          "source_title": "光源资本谈L2F光源创业者基金",
+          "source_content_hash": "b9eab8c4fdd308355cf09de38f3156d4efdae2a9e6dc4dd8c6239a8921135139",
+          "quote": "光源资本体系包括L2F光源创业者基金、3i产业创新孵化器、成长期基金等工具，L2F面向AI早期创业者开展超早期投资和共同投资。",
+          "quote_hash": "48b5ad1c00c514ba324d94bf6a4ab6a447e02880508f92caaaea6c570e02ab78"
         }
-      ],
-      "last_verified_at": "2026-09-25"
+      ]
     }
   }
 }

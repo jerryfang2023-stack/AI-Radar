@@ -289,69 +289,106 @@
       }
     ],
     "public_profile": {
-      "summary": "Elad Gil 是连续创业者、运营高管及科技投资人；其本人介绍披露了创业、科技公司管理与早期投资经历。",
       "profile_type": "person",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-25",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "coverage_note": "投资与创业经历来自Elad Gil个人官网和Milken Institute人物简介；公司名单和成就为本人或活动机构披露，按原来源口径记录。未发现官方资料明确披露完整投资回报或全部基金结构。",
+      "summary": "Elad Gil是科技创业者、投资人和Gil&Co创始人。他创立MixerLabs（后被Twitter收购）和Color Health，曾在Google从事移动与AI产品工作、在Twitter担任副总裁，并参与孵化Braintrust等企业。其公开介绍称拥有加州大学圣迭戈分校数学学士学位及MIT博士学位。",
       "current_roles": [
         {
-          "title": "投资人及顾问",
-          "organization": "私人科技公司（本人介绍）",
-          "source_id": "elad_about"
+          "title": "创始人、投资人",
+          "organization": "Gil&Co",
+          "source_id": "elad_personal"
         }
       ],
       "career": [
         {
+          "organization": "Gil&Co",
+          "title": "创始人、投资人",
+          "period": "任期未披露",
+          "description": "多阶段投资机构；本人表示为科技创业者和未来科技投资人。",
+          "source_id": "elad_personal"
+        },
+        {
           "organization": "MixerLabs",
-          "title": "联合创始人",
-          "period": "未披露",
-          "description": "公司在 Twitter 员工规模不足 100 人时被收购。",
-          "source_id": "elad_about"
+          "title": "联合创始人兼CEO",
+          "period": "被Twitter收购前；具体任期未披露",
+          "description": "创立地理位置技术初创公司，后被Twitter收购。",
+          "source_id": "elad_personal"
+        },
+        {
+          "organization": "Twitter",
+          "title": "副总裁、企业战略与产品负责人",
+          "period": "MixerLabs被收购后；公开简介未列完整任期",
+          "description": "参与产品、AI、移动及公司战略相关工作。",
+          "source_id": "elad_milken"
+        },
+        {
+          "organization": "Google",
+          "title": "移动与AI产品团队",
+          "period": "具体任期未披露",
+          "description": "Milken Institute简介称其曾在Google工作并经营AI相关产品组织。",
+          "source_id": "elad_milken"
         },
         {
           "organization": "Color Health",
           "title": "联合创始人",
-          "period": "未披露",
-          "description": "本人网站列出的创业项目。",
-          "source_id": "elad_about"
+          "period": "任期未披露",
+          "description": "创立医疗科技公司。",
+          "source_id": "elad_personal"
         },
         {
-          "organization": "Twitter",
-          "title": "企业战略副总裁；参与广告定向与移动业务",
-          "period": "未披露",
-          "description": "相关职能和任期按本人简介所述。",
-          "source_id": "elad_about"
-        },
-        {
-          "organization": "Google",
-          "title": "参与移动业务与 AdSense",
-          "period": "未披露",
-          "description": "本人简介未说明具体职衔与任期。",
-          "source_id": "elad_about"
+          "organization": "Braintrust",
+          "title": "孵化及创立支持者",
+          "period": "近期参与；日期未披露",
+          "description": "本人官网称参与孵化并帮助创立AI评测及企业工具公司Braintrust。",
+          "source_id": "elad_personal"
         }
       ],
-      "education": [],
-      "experience_summary": "本人网站介绍其曾创业并担任运营管理职务，后从事科技公司投资与顾问工作；没有从该简介补写教育经历。",
+      "education": [
+        {
+          "institution": "University of California, San Diego",
+          "qualification": "数学学士学位（BS及BA，按Milken Institute简介）",
+          "source_id": "elad_milken"
+        },
+        {
+          "institution": "Massachusetts Institute of Technology",
+          "qualification": "博士学位；本人官网提及PhD，具体学科未在页面明确列示",
+          "source_id": "elad_personal"
+        }
+      ],
+      "experience_summary": "履历覆盖软件创业、科技公司产品与AI运营、风险投资及公司孵化；其投资组合跨越AI、软件、金融科技与生命科学等领域。",
       "track_record": [
         {
-          "description": "本人简介称其投资或顾问约 40 家达到十亿美元估值的公司，其中 30 多家为 pre-seed、seed 或 Series A 阶段投资；该数字为本人披露口径。",
-          "source_id": "elad_about"
+          "description": "本人官网列出的创业经历包括MixerLabs和Color Health，并称其参与Braintrust及Brain Co等公司创建；不将这些描述推断为完整个人投资组合。",
+          "source_id": "elad_personal"
+        },
+        {
+          "description": "Milken Institute人物资料列举其早期投资或顾问关联公司Airbnb、Airtable、Coinbase、Figma、GitLab、Instacart、Notion、Pinterest、Stripe等；该名单按会议简介公开展示。",
+          "source_id": "elad_milken"
         }
       ],
-      "contacts": [],
       "sources": [
         {
-          "source_id": "elad_about",
-          "source_url": "https://blog.eladgil.com/about",
-          "source_title": "About Me | Elad Gil",
-          "source_content_hash": "96304f660b4ae27507698d054d4d92e34b85718b1af96c58ad97a8306566529a",
-          "quote": "I'm a serial entrepreneur, operating executive, and investor or advisor to private companies. I have started two companies - MixerLabs (acquired by Twitter when Twitter was <100 people) and Color Health. I was previously the VP of Corporate Strategy at Twitter and worked on ads targeting and mobile at Google. As an investor I have backed ~40 “unicorns,” 30-something of them at the pre-seed, seed, or series A.",
-          "quote_hash": "354a529379508d663a01a2b9f65dd26f5bfc4774a9b51f5c2cb0c80be2b83e5a"
+          "source_id": "elad_personal",
+          "source_url": "https://eladgil.com/",
+          "source_title": "Elad Gil",
+          "source_content_hash": "f7b893a81cd9d7e17c2cecef2df1bc44dabbf70115d3e4bc419022606d7fb0b5",
+          "quote": "I run Gil&Co, a multi-stage investment firm. I started two companies (MixerLabs, acquired by Twitter, and Color Health) and recently incubated or helped start Braintrust. I worked on AI and mobile at Google and was a VP at Twitter.",
+          "quote_hash": "d99847adac5f44989de4ab6d2871348190d81ba7e8deee890e1132529668c0ff"
+        },
+        {
+          "source_id": "elad_milken",
+          "source_url": "https://milkeninstitute.org/events/global-conference-2024/speakers/elad-gil",
+          "source_title": "Elad Gil | Milken Institute",
+          "source_content_hash": "9da930e0d42d526e7f661a51e4112383aab49fc0ace46b02007004f2281b0934",
+          "quote": "Elad Gil is CEO of Gil Capital and an early investor or advisor to companies including Airbnb, Airtable, Coinbase, Figma, GitLab, Instacart, Notion, Pinterest and Stripe. He worked at Google and Twitter and received a PhD from MIT and mathematics degrees from UCSD.",
+          "quote_hash": "c76ab80f58ec18c309c91b2774881bfb00422964834be51eda901baa77c0955a"
         }
-      ],
-      "last_verified_at": "2026-09-25",
-      "coverage_status": "researched",
-      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
+      ]
     }
   }
 }

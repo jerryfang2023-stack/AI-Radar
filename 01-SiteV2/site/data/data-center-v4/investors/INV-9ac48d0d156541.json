@@ -295,53 +295,89 @@
     ],
     "public_profile": {
       "profile_type": "person",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Jeff Dean 当前按“个人投资者”收录。最新融资披露记录日期为 2026-07-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-25",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "coverage_note": "Discovery Loop官网确认Jeff Dean为创始团队成员；明尼苏达大学校方资料提供教育背景，Google官网资料说明其1999年加入及长期技术贡献。Google个人简介页面可能未同步2026年离职信息，当前角色以Discovery Loop现行官网为准。",
+      "summary": "Jeff Dean是计算机科学家和Discovery Loop联合创始人。此前他于1999年加入Google，长期参与分布式计算基础设施和人工智能研发，参与MapReduce与Bigtable等基础系统建设。明尼苏达大学及华盛顿大学资料记载其计算机科学、经济学本科学习及计算机科学博士学位。",
+      "current_roles": [
+        {
+          "title": "联合创始人",
+          "organization": "Discovery Loop",
+          "source_id": "jeff_discovery"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Google",
+          "title": "研究与工程领导职务；曾任Google DeepMind及Google Research首席科学家",
+          "period": "1999–2026",
+          "description": "长期参与Google基础设施及AI研究；2026年离开Google并共同创立Discovery Loop。",
+          "source_id": "jeff_departure"
+        },
+        {
+          "organization": "World Health Organization",
+          "title": "软件开发人员",
+          "period": "加入Google前",
+          "description": "明尼苏达大学校方传记记载其曾在WHO全球艾滋病项目开发疫情影响建模软件。",
+          "source_id": "jeff_minnesota"
+        }
+      ],
+      "education": [
+        {
+          "institution": "University of Minnesota",
+          "qualification": "计算机科学与经济学理学学士，1990年",
+          "source_id": "jeff_minnesota"
+        },
+        {
+          "institution": "University of Washington",
+          "qualification": "计算机科学博士，1996年",
+          "source_id": "jeff_minnesota"
+        }
+      ],
+      "experience_summary": "研究与职业经验横跨分布式系统、计算基础设施和人工智能。Discovery Loop官网将Jeff Dean列入创始团队；校方及Google资料记录其在Google长期从事系统工程与AI工作。",
       "track_record": [
         {
-          "description": "融资来源记录：Elorian · 种子轮 · 2026-07-16 · 本轮参投（天使投资人） · $55 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-09d3aaaafa6cdabc"
-        },
-        {
-          "description": "融资来源记录：Bespoke Labs · 多轮融资 · 2026-07-06 · 种子轮参投 · $40 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-bcf489b2ae49f41b"
-        },
-        {
-          "description": "融资来源记录：Odyssey ML · B轮 · 2026-06-17 · 本轮天使投资人 · 3.1亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-e94365d0212a78f3"
+          "description": "Discovery Loop官网将MapReduce、Bigtable、Spanner、TensorFlow、Pathways及TPU等系统和技术列入创始团队的共同成果清单；此为团队自述，并非将每一项单独归于Jeff Dean。",
+          "source_id": "jeff_discovery"
         }
       ],
-      "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-09d3aaaafa6cdabc",
-          "source_url": "https://www.recall.it/summary/artificial-intelligence/how-elorian-ai-pulled-off-a-dollar300m-pre-seed-valuation-with-andrew-dai",
-          "source_title": "How Elorian AI pulled off a $300M pre-seed valuation with Andrew Dai | AI YouTube Summary | TechCrunch | Recall",
-          "source_content_hash": "7b935e4006e94036",
-          "quote": "attracting high‑profile investors such as Menlo Ventures, Nvidia, and Jeff Dean",
-          "quote_hash": "ebeaf596ca305a06070fb1ec2843b8ede18bcdeb117f767b82d14c002579f478"
+          "source_id": "jeff_discovery",
+          "source_url": "https://www.discoveryloop.com/",
+          "source_title": "Discovery Loop — Continuous Exploration",
+          "source_content_hash": "1bc736716bb79242247d8ce04a74105c1fe4885d46cb71fe8432b6531ffb0303",
+          "quote": "Our founding team — Jeff Dean, Sanjay Ghemawat, Quoc Le, and Oriol Vinyals — has a shared history of deep friendship and decades of close and impactful collaboration.",
+          "quote_hash": "c204cd2547495f9d2b32cb161caba0e44494c77ea3f7e02e99b8c2f77bf7014d"
         },
         {
-          "source_id": "FISRC-bcf489b2ae49f41b",
-          "source_url": "https://bespokelabs.ai/blog/bespoke-labs-raises-40m-to-build-environments-that-enable-reliable-agents",
-          "source_title": "Bespoke Labs 融资 4000 万美元，打造支持可靠 AI 智能体的环境",
-          "source_content_hash": "0eae2122fce5a05c",
-          "quote": "with participation from Jeff Dean",
-          "quote_hash": "fcf780d450fd4f65c92e4ba52b315dd96dad37c7d517de7d70d2c237db65376c"
+          "source_id": "jeff_departure",
+          "source_url": "https://techcrunch.com/2026/08/05/jeff-dean-and-other-top-ai-researchers-are-leaving-google-to-launch-their-own-startup/",
+          "source_title": "Jeff Dean and other top AI researchers are leaving Google to launch their own startup | TechCrunch",
+          "source_content_hash": "8ba94ee9e571b66e2828a3f0e5199a997f0c1bcf4dda0f62192d5355adce104d",
+          "quote": "Jeff Dean and several Google AI colleagues left Google to launch a new company, which Alphabet supports.",
+          "quote_hash": "b459312080f96733ae1f05aaf8924cf1054288686fe0e6f83a1cf3bb5627b051"
         },
         {
-          "source_id": "FISRC-e94365d0212a78f3",
-          "source_url": "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names",
-          "source_title": "世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元",
-          "source_content_hash": "75587989c4b9271c",
-          "quote": "These include Jeff Dean, Elad Gil, Garry Tan, Guillermo Rauch, and Cruise founder Kyle Vogt.",
-          "quote_hash": "1dc60799a251a7ee9baca1d4db39e00312e6b360748a03aeaf7039b1ef047a15"
+          "source_id": "jeff_minnesota",
+          "source_url": "https://uawards.umn.edu/recipients-outstanding-achievement-award/jeffrey-dean",
+          "source_title": "Jeffrey A. Dean | University Awards & Honors",
+          "source_content_hash": "5f4db3f45304c23b048f797edca0fc238f88bd18734364f034373b6c8820ff49",
+          "quote": "Jeffrey A. Dean received a bachelor of science degree in computer science and economics in 1990 at the University of Minnesota. He received a Ph.D. from the University of Washington in 1996. Before Google, Dean worked at the World Health Organization.",
+          "quote_hash": "842c5771e7a0707df57aea765e4a957d443c8d5c97283470b20ae6fdbc771bda"
+        },
+        {
+          "source_id": "jeff_google",
+          "source_url": "https://blog.google/authors/jeff-dean/",
+          "source_title": "Jeff Dean - Google Blog",
+          "source_content_hash": "35360dadee6cd1f2b6189a8ccfe8d66173888ad352ca18daa7b0f54421839df8",
+          "quote": "Jeff Dean joined Google in 1999 and has held leadership roles driving innovations in Google infrastructure and AI development.",
+          "quote_hash": "735ab87e2874c0f3418553ebccf97adbc6788ce371a70d1577bd19f498d14934"
         }
-      ],
-      "last_verified_at": "2026-09-25"
+      ]
     }
   }
 }

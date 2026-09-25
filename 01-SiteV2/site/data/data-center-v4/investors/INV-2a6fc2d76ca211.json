@@ -348,54 +348,106 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "coverage_status": "activity_only",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "华业天成 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-25",
+      "coverage_note": "华业天成资本的成立背景、产业定位、投资领域和项目案例来自华业天成官网；联系方式来自官网公开的深圳办公室信息。基金规模等没有以官网当前页面确认的数据未补录。",
+      "summary": "华业天成资本于2015年创立，是聚焦智能科技及其产业变革的产业型投资机构。官网称团队具备平均15年以上科技领导企业管理与实战经验，现重点布局半导体、AI基础设施、智能终端与机器人、AI Agent等方向，并通过产业经验和资源网络支持被投企业。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "创立年份",
+          "value": "2015",
+          "source_id": "huaye_about"
+        },
+        {
+          "field": "organization_type",
+          "label": "机构定位",
+          "value": "产业型投资机构",
+          "source_id": "huaye_about"
+        },
+        {
+          "field": "sectors",
+          "label": "当前投资布局",
+          "value": [
+            "半导体",
+            "AI基础设施",
+            "智能终端与机器人",
+            "AI Agent及智能应用"
+          ],
+          "source_id": "huaye_about"
+        },
+        {
+          "field": "team_experience",
+          "label": "官网自述团队经验",
+          "value": "平均15年以上科技领导企业管理和实战经验",
+          "source_id": "huaye_about"
+        },
+        {
+          "field": "investment_principle",
+          "label": "投资理念",
+          "value": "通过价值投资与产业赋能，支持科技企业成长",
+          "source_id": "huaye_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2015",
+          "description": "创立华业天成资本。",
+          "source_id": "huaye_about"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：MemoraX AI · 种子++轮 · 2026-08-12 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-4a456deffcbf4bfd"
+          "description": "官网展示开思科技、汉朔科技、云账户、贝尔机器人、聚芯微电子、阿博茨科技、磁云科技和回收宝等项目案例；所列案例不代表完整组合或收益表现。",
+          "source_id": "huaye_home"
         },
         {
-          "description": "融资来源记录：墨奇智能 · 天使轮 · 2026-07-09 · 本轮参投 · 10 亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-bea9d0be613bc1cd"
-        },
-        {
-          "description": "融资来源记录：MemoraX AI · 种子轮 · 2026-05-20 · 本轮联合领投 · 数千万人民币。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-924702999fc88d2f"
+          "description": "官网2026年关于页面将投资方向描述为AI驱动的信息技术产业变革，重点包括半导体、AI Infra、机器人与智能应用。",
+          "source_id": "huaye_about"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "华业天成资本",
+          "url": "https://www.huacapital.com/",
+          "source_id": "huaye_home"
+        },
+        {
+          "kind": "phone",
+          "label": "深圳办公室联系电话",
+          "value": "+86 755 8696 8295",
+          "url": "https://huacapital.com/",
+          "source_id": "huaye_home"
+        },
+        {
+          "kind": "address",
+          "label": "深圳办公室地址",
+          "value": "深圳市南山区海棠道3号懿德轩别墅",
+          "url": "https://huacapital.com/",
+          "source_id": "huaye_home"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-4a456deffcbf4bfd",
-          "source_url": "https://news.pedaily.cn/202608/567590.shtml",
-          "source_title": "「MemoraX AI」完成数亿元种子++轮融资，三个月连融3轮",
-          "source_content_hash": "c26b4f6c5b757ce3",
-          "quote": "本轮融资由 北洋海棠基金、尚势资本、仁爱资本联合领投，银杏谷资本跟投，华业天成、达泰资本 等老股东持续加码投资。",
-          "quote_hash": "c940fe3b12e9e760642901ea669b9984b6b36816b863de7d64621d7344c07512"
+          "source_id": "huaye_about",
+          "source_url": "https://www.huacapital.com/about.html",
+          "source_title": "关于我们 - 华业天成",
+          "source_content_hash": "dc51350155f06a03fd2a621cd22766e369c6cce1e64c07ebb38d5da312a9d29f",
+          "quote": "华业天成资本由前全球头部科技企业高管、资深投资人创立于2015年，聚焦投资智能科技及其驱动的行业变革。团队平均拥有15年以上科技领导企业管理和实战经验。",
+          "quote_hash": "dc571b8b3d17d9cde9da887a8d5306eefd9d3248b022d416084d067acd035a85"
         },
         {
-          "source_id": "FISRC-bea9d0be613bc1cd",
-          "source_url": "https://finance.sina.com.cn/roll/2026-07-09/doc-inihfazc5336299.shtml?froms=ggmp",
-          "source_title": "具身智能企业墨奇智能完成10亿元天使轮融资 - 新浪财经",
-          "source_content_hash": "311224a4dfb089df",
-          "quote": "蓝驰创投、君联资本、华业天成、高榕资本、中科创星、源码资本、光合创投、柏睿资本、58 产业基金等多家专业投资机构共同参与",
-          "quote_hash": "ec3f3255ca1ad3b762f10c8464560a301ec0efedbd9e312f027cac2f0749684b"
-        },
-        {
-          "source_id": "FISRC-924702999fc88d2f",
-          "source_url": "https://www.chinaventure.com.cn/news/116-20260520-391447.html",
-          "source_title": "「MemoraX AI」完成数千万人民币种子+轮融资",
-          "source_content_hash": "76bcd79d46511d45",
-          "quote": "本轮由中金资本、达泰资本、华业天成联合领投",
-          "quote_hash": "87dab2266ac0906c976ca534acc2aadbd10203242f22a09e359ab687abc46980"
+          "source_id": "huaye_home",
+          "source_url": "https://huacapital.com/",
+          "source_title": "华业天成 - 官网",
+          "source_content_hash": "56e02345a928a6cf9b2df031c5590479a78fb37b9058b9c3cce8dfda58c18aec",
+          "quote": "华业天成官网公开深圳办公室地址及联系电话，并展示投资案例。",
+          "quote_hash": "b6dbd92310190ecbf72594e17c35261364be01ab5f8ed8b250da4f8cbb0e8e2f"
         }
-      ],
-      "last_verified_at": "2026-09-25"
+      ]
     }
   }
 }

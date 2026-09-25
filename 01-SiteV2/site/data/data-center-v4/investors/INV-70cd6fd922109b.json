@@ -242,50 +242,64 @@
     ],
     "public_profile": {
       "profile_type": "person",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Olivier Pomel 当前按“个人投资者”收录。最新融资披露记录日期为 2026-07-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "coverage_note": "基于公司官网、院校档案或本人公开资料核验；个人融资参投记录仅作为本库可追溯案例，不代表完整投资组合。",
       "facts": [],
       "milestones": [],
-      "track_record": [
+      "contacts": [],
+      "summary": "Olivier Pomel 是 Datadog 联合创始人兼 CEO，长期从事软件工程、数据系统和科技公司建设；公开资料亦记录其参与 VLC media player 早期开发。",
+      "current_roles": [
         {
-          "description": "融资来源记录：Arrakis · A轮 · 2026-07-22 · 本轮天使投资人 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-ac4fd601f33650ff"
-        },
-        {
-          "description": "融资来源记录：Niteshift · 种子轮 · 2026-06-10 · 天使投资人 · $7 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-01df70e43799a400"
-        },
-        {
-          "description": "融资来源记录：Archestra · 种子轮 · 2026-06-02 · 本轮天使投资人 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-08f2020b7eca8380"
+          "title": "联合创始人兼首席执行官",
+          "organization": "Datadog",
+          "source_id": "pomel_datadog"
         }
       ],
-      "contacts": [],
+      "career": [
+        {
+          "organization": "Datadog",
+          "title": "联合创始人兼首席执行官",
+          "period": "2010 年至今（官网现任信息）",
+          "description": "联合创办云监控与可观测性公司 Datadog，并担任 CEO。",
+          "source_id": "pomel_datadog"
+        },
+        {
+          "organization": "Wireless Generation",
+          "title": "技术副总裁",
+          "period": "2002—2010",
+          "description": "负责 K-12 教育数据系统；公司被 News Corp 收购前，带领开发团队由少数成员扩展至近 100 人。",
+          "source_id": "pomel_datadog"
+        },
+        {
+          "organization": "IBM Research 及互联网初创公司",
+          "title": "软件工程师",
+          "period": "此前",
+          "description": "在 IBM Research 和多家互联网初创公司从事软件工程。",
+          "source_id": "pomel_datadog"
+        }
+      ],
+      "education": [
+        {
+          "institution": "École Centrale Paris",
+          "qualification": "计算机科学硕士（MS, CS）",
+          "source_id": "pomel_datadog"
+        }
+      ],
+      "experience_summary": "经历覆盖软件工程、教育数据系统、工程团队扩张和上市科技公司经营。Datadog 官方资料称他是 VLC media player 的早期作者之一。",
+      "track_record": [
+        {
+          "description": "参与创建并持续领导 Datadog；融资信息库另收录其作为天使投资人的若干披露案例，不能据此推断其完整投资组合。",
+          "source_id": "pomel_datadog"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-ac4fd601f33650ff",
-          "source_url": "https://www.financialcontent.com/article/bizwire-2026-7-22-arrakis-comes-out-of-stealth-with-38m-to-help-industrial-enterprises-compete-in-the-ai-era",
-          "source_title": "Arrakis 携 3800 万美元走出隐身模式，助力工业企业竞争 AI 时代",
-          "source_content_hash": "4d42f1ad7c55a3e3",
-          "quote": "includes backing from prominent technology leaders, including Olivier Pomel, founder and chief executive of Datadog",
-          "quote_hash": "23c11afd491ee076f76e385d788cd78cc1467fe8fbd0d8fe7eadcb74ca978f75"
-        },
-        {
-          "source_id": "FISRC-01df70e43799a400",
-          "source_url": "https://techcrunch.com/2026/06/10/datadog-veterans-launch-ai-coding-startup-niteshift-on-a-bet-against-big-ai-lock-in",
-          "source_title": "Datadog 资深人士创立 AI 编码初创公司 Niteshift，押注企业对抗大模型锁定",
-          "source_content_hash": "21b15182c071a779",
-          "quote": "the startup, founded by two former early Datadog engineers, has attracted some big-name angels like Reid Hoffman, Datadog’s Olivier Pomel and Alexis Lê-Quôc",
-          "quote_hash": "0a97a78cb513a7c08f340a295557d456130ec12667680c5c6039f375d939cc8b"
-        },
-        {
-          "source_id": "FISRC-08f2020b7eca8380",
-          "source_url": "https://tech.eu/2026/06/02/archestraai-raises-10m-to-unlock-next-gen-agentic-use-case/",
-          "source_title": "Archestra.AI 获1000万美元融资，解锁下一代自主代理应用场景 - Tech.eu",
-          "source_content_hash": "e9f5a2a28919e9c2",
-          "quote": "Angels investing in the round include Olivier Pomel, CEO and co-founder of Datadog",
-          "quote_hash": "5e16f4c08d67b884d79c10879877fb341755dc3306b67c0e0f65bf31b55e4294"
+          "source_id": "pomel_datadog",
+          "source_url": "https://www.datadoghq.com/about/leadership/",
+          "source_title": "Leadership | Datadog",
+          "source_content_hash": "3c288123cf81b524a9094c0af767bf023c3ab084b4a12d0c85d2affefac63492",
+          "quote": "Olivier Pomel — CEO & Co-Founder. Prior to founding Datadog, Olivier Pomel built data systems for K-12 teachers as a VP, Technology for Wireless Generation, where he grew the development team from a handful of people to close to 100. Before Wireless Generation, Olivier held software engineering positions at IBM Research and several internet startups. Olivier is an original author of the VLC media player and holds a MS, CS from the Ecole Centrale Paris.",
+          "quote_hash": "66e3145c981479ce3c1f93af930bd95fc93616de0ce3b96da22d7c7861d212d5"
         }
       ],
       "last_verified_at": "2026-09-25"

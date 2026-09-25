@@ -192,38 +192,74 @@
     ],
     "public_profile": {
       "profile_type": "person",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Jim Breyer 当前按“个人投资者”收录。最新融资披露记录日期为 2026-03-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "coverage_note": "职业履历与自述投资业绩来自 Breyer Capital 官网；倍数与成功案例属于机构自述口径，不构成独立验证的基金回报。",
       "facts": [],
       "milestones": [],
-      "track_record": [
+      "contacts": [],
+      "summary": "Jim Breyer 是 Breyer Capital 创始人兼 CEO，也是长期从事科技创业投资的投资人。其公开投资履历涉及 Facebook、Etsy、Spotify、Dell 等公司，并参与创立 Accel-KKR。",
+      "current_roles": [
         {
-          "description": "融资来源记录：Advanced Machine Intelligence Labs (AMI Labs) · 种子轮 · 2026-03-12 · 本轮个人投资者 · 10.3亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-bcebf5ead5f70f46"
+          "title": "创始人兼 CEO",
+          "organization": "Breyer Capital",
+          "source_id": "breyer_bio"
         },
         {
-          "description": "融资来源记录：Liquid AI · 种子轮 · 2023-12-06 · 本轮参投 · 3750万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-4e5f377f1837e2e5"
+          "title": "董事会成员",
+          "organization": "Blackstone",
+          "source_id": "breyer_bio"
         }
       ],
-      "contacts": [],
-      "sources": [
+      "career": [
         {
-          "source_id": "FISRC-bcebf5ead5f70f46",
-          "source_url": "https://andrew.ooo/posts/ami-labs-1b-seed-yann-lecun-world-models/",
-          "source_title": "AMI Labs Raises $1.03B Seed Round: Yann LeCun's Bet That LLMs Are a Dead End — andrew.ooo",
-          "source_content_hash": "5d530dab1f01bc4c",
-          "quote": "Jim Breyer (legendary VC, early Facebook investor)",
-          "quote_hash": "372bad8d3326e5352bbd89d2c4074cec711a77e64ea315deee09e3f0e4897f35"
+          "organization": "Breyer Capital",
+          "title": "创始人兼 CEO",
+          "period": "现任（官网介绍）",
+          "description": "管理风险投资公司，关注 AI、量子技术、计算驱动的医疗与生命科学。",
+          "source_id": "breyer_bio"
         },
         {
-          "source_id": "FISRC-4e5f377f1837e2e5",
-          "source_url": "https://www.bostonglobe.com/2023/12/06/business/liquid-ai-boston-chatgpt/",
-          "source_title": "Liquid AI is Boston's answer to ChatGPT",
-          "source_content_hash": "af7dbaee048f0409",
-          "quote": "Texas venture capitalist Jim Breyer",
-          "quote_hash": "ada9d8a1402f0129b22678228f567a19a39927a8d58fc3fedd56a6f091583a0f"
+          "organization": "Accel-KKR",
+          "title": "共同创始人及投资委员会成员",
+          "period": "2001 年起（官网介绍）",
+          "description": "与 George Roberts、Henry Kravis 共同创立并参与投资委员会。",
+          "source_id": "breyer_bio"
+        },
+        {
+          "organization": "Accel Partners",
+          "title": "合伙人",
+          "period": "1995 年起（官网介绍）",
+          "description": "参与科技企业投资及董事会工作。",
+          "source_id": "breyer_bio"
+        }
+      ],
+      "education": [
+        {
+          "institution": "Stanford University",
+          "qualification": "毕业生",
+          "source_id": "breyer_bio"
+        },
+        {
+          "institution": "Harvard Business School",
+          "qualification": "MBA；Baker Scholar",
+          "source_id": "breyer_bio"
+        }
+      ],
+      "experience_summary": "投资经验横跨早期科技企业、成长公司董事会及跨境基金建设。Breyer Capital 官网称其自 2016 年起在 Blackstone 董事会任职，投资兴趣聚焦 AI、量子计算及计算驱动的生命科学。",
+      "track_record": [
+        {
+          "description": "Breyer Capital 官网称 Jim Breyer 早期投资过 40 多家后来成功上市或并购的科技公司，并称其部分领投项目实现超过 100 倍成本回报；该数字是机构自述口径，并非单一基金审计结果。",
+          "source_id": "breyer_bio"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "breyer_bio",
+          "source_url": "https://breyercapital.com/jim-breyer/",
+          "source_title": "Jim Breyer | Breyer Capital",
+          "source_content_hash": "b4d0aa44533b986e0bb3f1005d614312e037dba5c4f9bf8523a7f33df3b049d9",
+          "quote": "Jim is the Founder and CEO of Breyer Capital ... Jim has been an early investor in over 40 technology companies that have completed highly successful public offerings or mergers. As a lead investor and Director, many of these investments, including Facebook, returned well over 100 times their cost ... Jim is a graduate of Stanford and Harvard Business School where he graduated as a Baker Scholar.",
+          "quote_hash": "9f3554f4aacfcc0bd2a77a6e0e597dad4dba5eb7cf1969db7f32907a79d17b37"
         }
       ],
       "last_verified_at": "2026-09-25"

@@ -29,6 +29,29 @@ const INVESTOR_ALIAS_GROUPS = [
   { name: "Greylock", aliases: ["Greylock Partners"], kind: "investment_institution" },
   { name: "IVP", aliases: ["Institutional Venture Partners"], kind: "investment_institution" },
   { name: "Founders Fund", aliases: ["The Founders Fund"], kind: "investment_institution" },
+  { name: "DST Global", aliases: [], kind: "investment_institution", stableKey: "name:dstglobal" },
+  { name: "GIC", aliases: [], kind: "investment_institution", stableKey: "name:gic" },
+  { name: "襄禾资本", aliases: [], kind: "investment_institution", stableKey: "name:襄禾资本" },
+  { name: "云启资本", aliases: [], kind: "investment_institution", stableKey: "name:云启资本" },
+  { name: "普华资本", aliases: [], kind: "investment_institution", stableKey: "name:普华资本" },
+  { name: "孚腾资本", aliases: ["Fortera Capital"], kind: "investment_institution", stableKey: "name:孚腾资本" },
+  { name: "国中资本", aliases: [], kind: "investment_institution", stableKey: "name:国中资本" },
+  { name: "BoxGroup", aliases: ["Box Group"], kind: "investment_institution", stableKey: "name:boxgroup" },
+  { name: "Blackstone", aliases: [], kind: "investment_institution", stableKey: "name:blackstone" },
+  { name: "BlackRock", aliases: [], kind: "investment_institution", stableKey: "name:blackrock" },
+  { name: "鼎晖VGC", aliases: [], kind: "investment_institution", stableKey: "name:鼎晖vgc" },
+  { name: "北汽产投", aliases: [], kind: "corporate_investor", stableKey: "name:北汽产投" },
+  { name: "华业天成", aliases: ["华业天成资本"], kind: "investment_institution", stableKey: "name:华业天成" },
+  { name: "顺禧基金", aliases: ["北京顺禧基金"], kind: "investment_institution", stableKey: "name:顺禧基金" },
+  { name: "L2F光源创业者基金", aliases: ["L2F 光源创业者基金", "Lighthouse Founders’ Fund"], kind: "investment_institution", stableKey: "name:l2f光源创业者基金" },
+  { name: "复星创富", aliases: ["Fosun Capital"], kind: "investment_institution", stableKey: "name:复星创富" },
+  { name: "复星锐正", aliases: ["复星锐正资本", "Fosun RZ Capital"], kind: "investment_institution", stableKey: "name:复星锐正" },
+  { name: "元璟资本", aliases: ["Vision Plus Capital"], kind: "investment_institution", stableKey: "name:元璟资本" },
+  { name: "Benchmark", aliases: ["Benchmark Capital"], kind: "investment_institution", stableKey: "name:benchmark" },
+  { name: "Greycroft", aliases: [], kind: "investment_institution", stableKey: "name:greycroft" },
+  { name: "Jane Street", aliases: [], kind: "investment_institution", stableKey: "name:janestreet" },
+  { name: "Tiger Global", aliases: ["Tiger Global Management"], kind: "investment_institution", stableKey: "name:tigerglobal" },
+  { name: "Headline", aliases: [], kind: "investment_institution", stableKey: "name:headline" },
 ];
 
 const INVESTOR_ALIAS_INDEX = new Map(INVESTOR_ALIAS_GROUPS.flatMap((group) => (
@@ -61,6 +84,9 @@ function investorKind(rows = [], entityIndex = {}, identity = {}) {
   const subjectText = items.map((item) => `${clean(item.name)} ${clean(item.role)}`).join(" ");
   if (identity.kind === "investment_institution") {
     return { code: "investment_institution", label: "投资机构", confidence: "evidence_bounded" };
+  }
+  if (identity.kind === "corporate_investor") {
+    return { code: "corporate_investor", label: "企业投资方", confidence: "evidence_bounded" };
   }
   if (items.some((item) => peopleIds.has(item.entity_id)) || /\b(?:angel investor|angels from|researchers?|engineers?|executives?)\b|天使投资人|个人投资者|个人身份|个人[）)]/iu.test(subjectText)) {
     return { code: "individual", label: "个人投资者", confidence: "evidence_bounded" };

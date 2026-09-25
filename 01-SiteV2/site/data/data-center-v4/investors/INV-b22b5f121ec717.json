@@ -315,50 +315,98 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Alumni Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "coverage_note": "规模、投资数量和业绩排名为 Alumni Ventures 官网披露，带有时间范围和口径；不代表未来业绩。",
+      "summary": "Alumni Ventures（AV）是一家成立于 2014 年的风险投资机构，面向合格个人和机构投资者提供专业管理的多元化创投组合，也为创业公司提供资本和社群网络支持。",
+      "facts": [
         {
-          "description": "融资来源记录：logcat.ai · 预种子轮 · 2026-07-16 · 本轮参投 · $2.55M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-adb92a0723de45a1"
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2014",
+          "source_id": "av_about"
         },
         {
-          "description": "融资来源记录：Katalyze AI · 种子轮 · 2026-07-06 · 本轮参投 · $10.5M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-d887dae741d872b9"
+          "field": "capital_raised",
+          "label": "累计募集资本",
+          "value": "超过 16 亿美元（官网当前披露）",
+          "source_id": "av_portfolio"
         },
         {
-          "description": "融资来源记录：Empromptu · 预种子轮 · 2025-12-09 · 本轮参投 · $2M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-79832d8eb3d1b153"
+          "field": "portfolio_count",
+          "label": "历史组合企业",
+          "value": "超过 1,800 家（官网当前披露）",
+          "source_id": "av_portfolio"
+        },
+        {
+          "field": "investment_frequency",
+          "label": "新增投资频率",
+          "value": "每季度约 50—75 笔（官网当前披露）",
+          "source_id": "av_portfolio"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2014",
+          "description": "Alumni Ventures 开始运营；创始人 Mike Collins 称其创建初衷是建立面向社群的风险投资公司。",
+          "source_id": "av_about"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "官网列示历史投资组合超过 1,800 家企业，组合案例包括 Bluesky、Groq 和 Goodles；组合广度不是收益指标。",
+          "source_id": "av_portfolio"
+        },
+        {
+          "description": "官网称 2016—2020 年基金批次截至 2024-09-30 的 DPI 处于 Cambridge Associates 创投同业的前四分位；这是特定批次和单一业绩指标，过往表现不保证未来回报。",
+          "source_id": "av_portfolio"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Alumni Ventures",
+          "url": "https://www.av.vc/",
+          "source_id": "av_about"
+        },
+        {
+          "kind": "phone",
+          "label": "总部电话",
+          "value": "+1 603-518-8112",
+          "url": "https://www.av.vc/about",
+          "source_id": "av_about"
+        },
+        {
+          "kind": "address",
+          "label": "总部地址",
+          "value": "670 N. Commercial St, Suite 403, Manchester, NH 03101, USA",
+          "url": "https://www.av.vc/about",
+          "source_id": "av_about"
+        },
+        {
+          "kind": "contact_form",
+          "label": "联系表单",
+          "value": "官网联系入口",
+          "url": "https://www.av.vc/about",
+          "source_id": "av_about"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-adb92a0723de45a1",
-          "source_url": "https://blog.logcat.ai/2026/07/16/logcat.ai-raises-2.55m-to-build-the-future-of-device-systems-engineering/",
-          "source_title": "logcat.ai 获 255 万美元融资，打造设备系统工程未来",
-          "source_content_hash": "1dcd4855bd96a462",
-          "quote": "with participation from Act One Ventures, TheFounderVC, Shorewind Capital, Clayoquot Capital, and Alumni Ventures",
-          "quote_hash": "4203370d402238a15912e531fe70d3001f6dd4f8566c942b203406c38e70dbf9"
+          "source_id": "av_about",
+          "source_url": "https://www.av.vc/about",
+          "source_title": "Our Company | Alumni Ventures",
+          "source_content_hash": "88c934d7b7e966c4b6ab7ff1dd49a845a238e9709d763165156a38b40d535032",
+          "quote": "In 2014, when I set out to create Alumni Ventures, many people couldn’t understand why I was so determined to start a community-oriented venture capital firm. ... Contact Alumni Ventures ... Phone 603-518-8112 Address Headquarters: 670 N. Commercial St, Suite 403, Manchester, NH 03101.",
+          "quote_hash": "e5c5cc1af18a7a37dbd11bf1dc5f3fda59c230da76475a8d497622afce047be7"
         },
         {
-          "source_id": "FISRC-d887dae741d872b9",
-          "source_url": "https://aijourn.com/katalyze-ai-raises-10-5m-led-by-bonfire-ventures-deploy-agentic-operating-system-for-pharma/",
-          "source_title": "Katalyze AI获Bonfire Ventures领投1050万美元，为制药业部署代理操作系统",
-          "source_content_hash": "d3fbadee56dcb775",
-          "quote": "the seed round also saw participation from Inovia Capital, Ripple Ventures, Alumni Ventures",
-          "quote_hash": "8363d17886a4d9d21585a3831ffea903eefb32eb3b73964c4a06d6f72a862d3d"
-        },
-        {
-          "source_id": "FISRC-79832d8eb3d1b153",
-          "source_url": "https://techcrunch.com/2025/12/09/empromptu-raises-2m-pre-seed-to-help-enterprises-build-ai-apps/",
-          "source_title": "Empromptu 获 200 万美元种子轮融资，助力企业构建 AI 应用",
-          "source_content_hash": "5799cff742ce8e79",
-          "quote": "Zeal Capital, Alumni Ventures, FoundersEdge, and South Loop also participated.",
-          "quote_hash": "335035a545f17d505b7bd23acb4d79e69a2090a2266208a90d7bfbd9143a45ea"
+          "source_id": "av_portfolio",
+          "source_url": "https://www.av.vc/portfolio",
+          "source_title": "Portfolio | Alumni Ventures",
+          "source_content_hash": "9c837ee7d020773944efc69873bf287e13d0441f31791cf37b943cfa8eac8331",
+          "quote": "We are a venture capital firm that provides accredited investors & institutions with access to professionally-managed, diversified venture portfolios. ... $1.6B+ capital raised since founding in 2014 ... diversified historical portfolio of 1,800+ venture-backed companies ... We make ~50-75 new investments each quarter. Top-Quartile for AV Fund vintages 2016-2020 as of September 30, 2024.",
+          "quote_hash": "e6d16e3845b2a12bc801bbe8163e0ef0975179557fcabec3af281d43d15f599b"
         }
       ],
       "last_verified_at": "2026-09-25"

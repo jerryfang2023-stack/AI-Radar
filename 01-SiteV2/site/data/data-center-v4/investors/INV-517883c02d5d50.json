@@ -360,51 +360,97 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "coverage_status": "activity_only",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "GIC 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "coverage_note": "投资策略、投资阶段与组织部门以GIC官网为准；上海地址及总机来自官网联系页。GIC明确不为公众代客投资，所列总机仅为办公室联系方式，不代表投资申请渠道。",
+      "summary": "GIC（新加坡政府投资公司）管理新加坡外汇储备，是长期全球投资机构。官网称其科技投资覆盖创业、成长及上市阶段；Private Equity 下的 Technology Investment Group 负责多数早期科技投资，方式包括基金、共同投资和直接投资。",
+      "facts": [
+        {
+          "field": "organization_role",
+          "label": "组织定位",
+          "value": "管理新加坡外汇储备的主权投资机构",
+          "source_id": "gic_contact_official"
+        },
+        {
+          "field": "technology_investing_experience",
+          "label": "科技投资经历",
+          "value": "官网称在科技领域投资超过40年",
+          "source_id": "gic_tech_official"
+        },
+        {
+          "field": "stages",
+          "label": "科技投资阶段",
+          "value": [
+            "早期创业",
+            "成长阶段",
+            "IPO及上市公司"
+          ],
+          "source_id": "gic_tech_official"
+        },
+        {
+          "field": "early_stage_team",
+          "label": "早期科技投资部门",
+          "value": "Private Equity 下的 Technology Investment Group",
+          "source_id": "gic_tech_official"
+        },
+        {
+          "field": "investment_modes",
+          "label": "投资方式",
+          "value": [
+            "VC基金",
+            "成长股权基金",
+            "共同投资",
+            "直接投资"
+          ],
+          "source_id": "gic_tech_official"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Crusoe · F轮 · 2026-09-17 · 本轮参投 · $3.9B。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-5fc65e3f4fb1b347"
-        },
-        {
-          "description": "融资来源记录：Anthropic · G轮 · 2026-08-10 · 本轮领投 · $30 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2d91b8c40e694677"
-        },
-        {
-          "description": "融资来源记录：Temporal Technologies · D轮 · 2026-02-17 · 既有投资方，本轮参投；曾领投2025年10月二级交易 · $300 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1f69885afd5fc439"
+          "description": "GIC官网说明其科技投资覆盖创业至上市阶段，并以直接投资、共同投资及外部基金管理人等方式参与；没有将单笔融资记录归属于具体子团队或基金。",
+          "source_id": "gic_tech_official"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "GIC",
+          "url": "https://www.gic.com.sg/",
+          "source_id": "gic_contact_official"
+        },
+        {
+          "kind": "phone",
+          "label": "上海办公室总机（非公众投资申请渠道）",
+          "value": "(8621) 6165 1919",
+          "url": "https://www.gic.com.sg/contact-us/",
+          "source_id": "gic_contact_official"
+        },
+        {
+          "kind": "address",
+          "label": "上海办公室",
+          "value": "上海市浦东新区陆家嘴环路1233号The Azia Centre 805室，邮编200120",
+          "url": "https://www.gic.com.sg/contact-us/",
+          "source_id": "gic_contact_official"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-5fc65e3f4fb1b347",
-          "source_url": "https://kingliber.com/the-ai-infrastructure-boom-crusoe-secures-3-9-billion-series-f-at-a-30-9-billion-valuation-to-power-the-next-generation-of-compute/",
-          "source_title": "The AI Infrastructure Boom: Crusoe Secures $3.9 Billion Series F at a $30.9 Billion Valuation to Power the Next Generation of Compute – King Liber",
-          "source_content_hash": "a5d809d221408d5b",
-          "quote": "They were joined by a roster of elite institutional and corporate investors, including Founders Fund , GIC , Nvidia , the Qatar Investment Authority (QIA) , Radical Ventures , and TPG .",
-          "quote_hash": "f095cfa01d7214cc37d55b841ff30c29ca4c63f1172dcbde315aadbad247b8e2"
+          "source_id": "gic_tech_official",
+          "source_url": "https://www.gic.com.sg/how-we-invest/investing-in-technology/",
+          "source_title": "Investing in Technology - GIC",
+          "source_content_hash": "8d893824de9c15b4",
+          "quote": "GIC has been investing in the technology space for over 40 years. Within Private Equity, our Technology Investment Group handles most of our early-stage investments through venture capital funds, growth equity funds, co-investments, and direct investments.",
+          "quote_hash": "8d893824de9c15b4f9982cda520911ad18ca3788f524cee9e555d9af7fed673a"
         },
         {
-          "source_id": "FISRC-2d91b8c40e694677",
-          "source_url": "https://www.gic.com.sg/newsroom/all/gic-leads-30-billion-series-g-in-anthropic/",
-          "source_title": "GIC Leads $30 Billion Series G in Anthropic | GIC Newsroom",
-          "source_content_hash": "a0ff76f6894f0267",
-          "quote": "GIC, a global institutional investor, has led Anthropic’s $30 billion Series G alongside Coatue, valuing Anthropic at $380 billion post-money.",
-          "quote_hash": "de507bc015d862739260e2ce19337e511d393916dd1bee9d748c8d93c7f22a72"
-        },
-        {
-          "source_id": "FISRC-1f69885afd5fc439",
-          "source_url": "https://temporal.io/news/temporal-raises-300M-to-make-agentic-ai-real-for-companies",
-          "source_title": "Temporal 完成 D 轮融资",
-          "source_content_hash": "74cb86598e6c9021",
-          "quote": "with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify",
-          "quote_hash": "e3f3d2d15b78bd35632ba28b62a2a86c87c45d4ecfbe8c86739628eb3f1b4eab"
+          "source_id": "gic_contact_official",
+          "source_url": "https://www.gic.com.sg/contact-us/",
+          "source_title": "Contact Us - GIC",
+          "source_content_hash": "ef4912c7408fe402931fee1f054d8bd17d21ae683ab98c80d64a2f259aaa4437",
+          "quote": "GIC is the sovereign wealth fund for Singapore and manages Singapore’s foreign reserves. It does not invest for any member of the public. Shanghai office: Room 805, The Azia Centre, 1233 Lujiazui Ring Road, Shanghai 200120; telephone (8621) 6165 1919.",
+          "quote_hash": "81c23bdd2b3c8328757d2a64f09211a9d4586a1a477ea1fa1822428323a53bf8"
         }
       ],
       "last_verified_at": "2026-09-25"

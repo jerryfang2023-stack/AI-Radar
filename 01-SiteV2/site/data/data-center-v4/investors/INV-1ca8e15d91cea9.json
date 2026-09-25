@@ -700,54 +700,155 @@
       }
     },
     "public_profile": {
-      "profile_type": "unverified",
-      "coverage_status": "activity_only",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "普华资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-25",
+      "coverage_note": "成立时间、投资方向、组合与规模为普华资本官网自述；机构公布的累计投资和阶段性成果未由独立第三方审计。地址、电话和BP邮箱来自官网联系页面。",
+      "summary": "普华资本成立于2004年，开展风险投资及资产管理业务。机构官网称其以“健康+快乐”为长期主线，布局新科技、新能源与新材料、新医疗、新消费，并披露累计投资近600家创业企业、陪伴150余家企业取得阶段性资本成果。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立年份",
+          "value": "2004",
+          "source_id": "puhua_about"
+        },
+        {
+          "field": "business",
+          "label": "业务",
+          "value": [
+            "风险投资",
+            "资产管理"
+          ],
+          "source_id": "puhua_about"
+        },
+        {
+          "field": "sectors",
+          "label": "官网列示重点领域",
+          "value": [
+            "新科技",
+            "新能源与新材料",
+            "新医疗",
+            "新消费"
+          ],
+          "source_id": "puhua_about"
+        },
+        {
+          "field": "self_reported_portfolio",
+          "label": "官网自述累计投资企业",
+          "value": "近600家；官网未标明统计截止日期",
+          "source_id": "puhua_about"
+        },
+        {
+          "field": "self_reported_outcomes",
+          "label": "官网自述取得阶段性资本成果的企业",
+          "value": "150余家；官网未标明统计口径与截止日期",
+          "source_id": "puhua_about"
+        },
+        {
+          "field": "chair",
+          "label": "官网新闻所列董事长",
+          "value": "曹国熊",
+          "source_id": "puhua_news"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2004",
+          "description": "成立普华资本。",
+          "source_id": "puhua_about"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：因克斯 · B轮 · 2026-09-15 · 老股东持续多轮追投 · 超3亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-d0c3dca85d845330"
+          "description": "官网投资案例展示有赞、快的打车、乐刻运动、毛戈平、宇泛智能等项目；案例为官网公开展示，不代表完整投资组合或收益情况。",
+          "source_id": "puhua_home"
         },
         {
-          "description": "融资来源记录：比特无限 · Pre-A轮 · 2026-09-09 · 天使轮及天使+轮投资方 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-6aea6a18fe712b45"
+          "description": "机构官网称已累计投资近600家创业企业，并陪伴其中150余家取得阶段性资本成果，属于机构自述口径。",
+          "source_id": "puhua_about"
         },
         {
-          "description": "融资来源记录：深朴智能 · Pre-A+轮 · 2026-09-04 · Pre-A轮老股东持续加码 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3bc1b2f58c3d4a86"
+          "description": "官网2026年活动报道显示，普华资本参与具身智能产业交流并称其投资布局覆盖机器人本体、核心零部件、具身大脑及相关应用环节。",
+          "source_id": "puhua_news"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "普华资本",
+          "url": "https://www.puhuacapital.com/",
+          "source_id": "puhua_home"
+        },
+        {
+          "kind": "email",
+          "label": "BP投递邮箱",
+          "value": "bp@puhuacapital.com",
+          "url": "https://www.puhuacapital.com/index.php/about",
+          "source_id": "puhua_about"
+        },
+        {
+          "kind": "phone",
+          "label": "杭州联系电话",
+          "value": "+86 571 8775 5559",
+          "url": "https://www.puhuacapital.com/index.php/about",
+          "source_id": "puhua_about"
+        },
+        {
+          "kind": "phone",
+          "label": "北京联系电话",
+          "value": "+86 10 6585 8698",
+          "url": "https://www.puhuacapital.com/index.php/about",
+          "source_id": "puhua_about"
+        },
+        {
+          "kind": "address",
+          "label": "杭州办公地址",
+          "value": "杭州市西湖区天目山路272号黄龙时代广场B座19F",
+          "url": "https://www.puhuacapital.com/index.php/about",
+          "source_id": "puhua_about"
+        },
+        {
+          "kind": "address",
+          "label": "北京办公地址",
+          "value": "北京市朝阳区光华路9号楼SOHO二期B座10-8",
+          "url": "https://www.puhuacapital.com/index.php/about",
+          "source_id": "puhua_about"
+        },
+        {
+          "kind": "address",
+          "label": "上海办公地址",
+          "value": "上海市黄浦区茂名南路205号瑞金大厦2408室",
+          "url": "https://www.puhuacapital.com/index.php/about",
+          "source_id": "puhua_about"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-d0c3dca85d845330",
-          "source_url": "https://news.pedaily.cn/202609/569015.shtml",
-          "source_title": "「因克斯ENCOS」完成3亿元B轮融资，深耕具身智能关节模组",
-          "source_content_hash": "e86bd6fffaf894b4",
-          "quote": "同时 复星创富、深创投、华控基金、锦秋基金、普华资本作为老股东持续多轮追投。",
-          "quote_hash": "0553874275a9d1405d1a0f8e1cc88e61b74f557cf7f1adcb9fac56dd7353f161"
+          "source_id": "puhua_about",
+          "source_url": "https://www.puhuacapital.com/index.php/about",
+          "source_title": "关于我们 - 普华资本",
+          "source_content_hash": "ab34099fd5861781b9ff38101701dcbda8e137c3286eb1e9b8d02f9a511c530b",
+          "quote": "普华资本成立于2004年，始终秉持“怀普泽之心，行华实之事”的初心，专注于风险投资及资产管理业务。官网称累计投资近600家优秀创业企业，并伴随其中150余家实现了资本的阶段性成果。",
+          "quote_hash": "ab46d837e06de49a6303be54d44db0ce1d7e13779b05d9dc81b5585516b66edf"
         },
         {
-          "source_id": "FISRC-6aea6a18fe712b45",
-          "source_url": "https://m.pedaily.cn/news/566841",
-          "source_title": "词元无限完成天使++轮融资，卡位企业级AI Agent基础设施赛道|投资界",
-          "source_content_hash": "d48aefe2d69963c9",
-          "quote": "比特无限 上海比特无限人工智能科技有限公司 融资时间 2026-07-24 当前轮次 天使轮 融资金额 未披露 AI 涉及机构： 卓源亚洲 容亿投资 普华资本 壹德资本",
-          "quote_hash": "b8f53700bde821a96ad3d0463b9893d04c2982bb8e49cf22b6d5e9808ad5fc43"
+          "source_id": "puhua_home",
+          "source_url": "https://www.puhuacapital.com/",
+          "source_title": "普华资本官方网站",
+          "source_content_hash": "e5496c16b15e5e30fe570e1dc5f4332efc9992e938476342edc33ff451901164",
+          "quote": "普华资本官网列示投资案例，并公布公司地址、联系电话及官方网站。",
+          "quote_hash": "168c027598efbc1ed0a8113ef94d58d27988af786c18a7c594bbece6a5d7ae48"
         },
         {
-          "source_id": "FISRC-3bc1b2f58c3d4a86",
-          "source_url": "https://news.pedaily.cn/202606/565268.shtml",
-          "source_title": "滴滴领投，深朴智能完成数亿元 Pre-A 轮融资_投资界",
-          "source_content_hash": "892b3be292e8e3e6",
-          "quote": "本轮融资由滴滴领投，梅花创投、柯力传感跟投，老股东创世伙伴创投、线性资本、普华资本持续加码",
-          "quote_hash": "6da2e6bd296ea8bf4a4b957b1f4808313ae6cda9109e9ec26e841ba0efd2192f"
+          "source_id": "puhua_news",
+          "source_url": "https://www.puhuacapital.com/mobile/index.php/news/info/287",
+          "source_title": "普华资本官网活动报道",
+          "source_content_hash": "bcf7c830af87748b3c813830659c3c77f56ea2e8173f5d3404e39c3a87a30a6e",
+          "quote": "普华资本董事长曹国熊作为创投机构代表参会；普华资本称长期投资聚焦投早、投小、投长期、投硬科技。",
+          "quote_hash": "18b7b2d6b2bc45e654f67e0c8628e7910853de78ca0149cdaff09e31fcc00f3a"
         }
-      ],
-      "last_verified_at": "2026-09-25"
+      ]
     }
   }
 }

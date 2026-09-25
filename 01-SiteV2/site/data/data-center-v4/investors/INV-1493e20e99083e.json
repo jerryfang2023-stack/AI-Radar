@@ -536,54 +536,104 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "coverage_status": "activity_only",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Blackstone 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-19；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-25",
+      "coverage_note": "Blackstone的机构背景、技术创新投资策略、投资方向和联系方式来自Blackstone官网。其主体是另类资产管理公司，早期技术投资仅为其技术创新投资平台的一部分；官网披露的规模为动态指标，本文不复述易变AUM数字。",
+      "summary": "Blackstone是全球另类资产管理机构。除私募股权、房地产、信贷和基础设施等业务外，其Blackstone Innovations Investments平台也投资与集团及被投企业需求相关的早期科技公司，重点领域包括金融科技、房地产科技、网络安全和企业软件。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "全球另类资产管理机构",
+          "source_id": "blackstone_about"
+        },
+        {
+          "field": "early_stage_platform",
+          "label": "早期科技投资平台",
+          "value": "Blackstone Innovations Investments",
+          "source_id": "blackstone_innovations"
+        },
+        {
+          "field": "sectors",
+          "label": "早期科技投资方向",
+          "value": [
+            "金融科技",
+            "房地产科技",
+            "网络安全",
+            "企业软件"
+          ],
+          "source_id": "blackstone_innovations"
+        },
+        {
+          "field": "investment_mandate",
+          "label": "官网描述投资逻辑",
+          "value": "投资与Blackstone及其投资组合公司具有战略关联、可通过深入合作获得价值的早期企业",
+          "source_id": "blackstone_innovations"
+        },
+        {
+          "field": "technology_leadership",
+          "label": "官网列示技术与创新负责人",
+          "value": "John Stecher（首席技术官、技术与创新负责人）",
+          "source_id": "blackstone_innovations"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Etched · D轮 · 2026-08-19 · 本轮参投 · $700m。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-134a8e8124653c90"
-        },
-        {
-          "description": "融资来源记录：NVIDIA · 基础设施融资 · 2026-08-15 · 本轮参投 · 超过 5000 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-5514041be03e64ae"
-        },
-        {
-          "description": "融资来源记录：Nomos Ai Inc. · C轮 · 2026-07-07 · 本轮参投 · 1.2亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1b05d1dc5cb45a7b"
+          "description": "官网说明该平台会围绕集团业务及投资组合公司的需求，与技术企业合作并进行早期投资；这反映其战略投资平台定位，不应等同于独立传统VC基金。",
+          "source_id": "blackstone_innovations"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Blackstone",
+          "url": "https://www.blackstone.com/",
+          "source_id": "blackstone_about"
+        },
+        {
+          "kind": "phone",
+          "label": "上海办公室电话",
+          "value": "+86 21 6169 8188",
+          "url": "https://www.blackstone.com/the-firm/our-offices/",
+          "source_id": "blackstone_offices"
+        },
+        {
+          "kind": "address",
+          "label": "上海办公室地址",
+          "value": "上海市静安区石门一路288号兴业太古汇香港兴业中心一座39层3901-3903室",
+          "url": "https://www.blackstone.com/the-firm/our-offices/",
+          "source_id": "blackstone_offices"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-134a8e8124653c90",
-          "source_url": "https://www.verdict.co.uk/etched-bags-700m/",
-          "source_title": "Etched 以210亿美元估值融资7亿美元，向Jane Street交付首台机架",
-          "source_content_hash": "e0e9398bf1a24e32",
-          "quote": "The round was led by Jane Street, with participation from Sequoia Capital, Kleiner Perkins, Andreessen Horowitz, Bain Capital Ventures, Stripes, Positive Sum, Tiger Global, Neo, Primary, and Blackstone.",
-          "quote_hash": "0c948f9a83fe6bf02d914e718b9524770cd022630e09f51c42213bd98f467b90"
+          "source_id": "blackstone_about",
+          "source_url": "https://www.blackstone.com/the-firm/",
+          "source_title": "About the Firm - Blackstone",
+          "source_content_hash": "aac01afdb4d7e7dc9931005b24d98f22e06eddc169e9020188da26a4dcbc2542",
+          "quote": "Blackstone is a global alternative asset manager that serves institutional and individual investors by building businesses and investing across asset classes.",
+          "quote_hash": "6f9caae4c6bdbe2388275fe0e0e45a0af13da6661179c02f76c6c021b1606389"
         },
         {
-          "source_id": "FISRC-5514041be03e64ae",
-          "source_url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Partners-With-Apollo-BlackRock-Blackstone-Brookfield-Goldman-Sachs-and-KKR-to-Establish-AI-Compute-Infrastructure-Financing-Platforms-to-Mobilize-Over-500-Billion-of-Third-Party-Capital/default.aspx",
-          "source_title": "NVIDIA Corporation - NVIDIA Partners With Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to Establish AI Compute Infrastructure Financing Platforms to Mobilize Over $500 Billion of Third-Party Capital",
-          "source_content_hash": "281ec3c5199ae992",
-          "quote": "NVIDIA today announced strategic partnerships to establish independent compute financing platforms with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to mobilize over $500 billion of third-party capital for the buildout of AI infrastructure over time.",
-          "quote_hash": "bca4883adfc66926e1ee2372403f7453b74408994ba78ee775c3f14531e961fe"
+          "source_id": "blackstone_innovations",
+          "source_url": "https://www.blackstone.com/blackstone-innovations-investments/",
+          "source_title": "Blackstone Innovations Investments",
+          "source_content_hash": "9aeb4f46647851704314a9d26eba3cb180313e41660b31c18a8d52055acb7c65",
+          "quote": "We invest in early-stage companies that are well-positioned to benefit from a deeper relationship with Blackstone. Investment areas include Financial Technology, Real Estate Technology, Cybersecurity and Enterprise Software.",
+          "quote_hash": "85cce7d4b1f9833f3caa058886233eb789e5966aba7d7f2ee91493b3dc3fd289"
         },
         {
-          "source_id": "FISRC-1b05d1dc5cb45a7b",
-          "source_url": "https://siliconangle.com/2026/07/07/norm-ai-nabs-120m-1-2b-valuation-bring-ai-agents-law/",
-          "source_title": "Norm Ai 以 12 亿美元估值获 1.2 亿美元融资，将 AI 智能体引入法律领域",
-          "source_content_hash": "bdcf73e00730d3c9",
-          "quote": "Blackstone, Bain Capital Ventures, Craft Ventures, Coatue, Vanguard, New York Life, TIAA, and Fenwick LLP also participated.",
-          "quote_hash": "67ea6d53fe5895c7b9259e09b6099219f3a5195b03bfa47ecb2dbe337be24814"
+          "source_id": "blackstone_offices",
+          "source_url": "https://www.blackstone.com/the-firm/our-offices/",
+          "source_title": "Our Offices - Blackstone",
+          "source_content_hash": "733dd3e2f1ea297bcef162854b3cbae21cc443eb3e6aca0099b4b4c340a2ca67",
+          "quote": "Shanghai office: Unit 3901-3903, 39th Floor, HKRI Center One, HKRI Taikoo Hui, 288 Shimen Yi Road, Shanghai 200041; phone 86 21 6169 8188.",
+          "quote_hash": "8ffe37a438662a1adc0c72c1cd00a9f468feb68cf03d28f5a5d61b9c655fbc10"
         }
-      ],
-      "last_verified_at": "2026-09-25"
+      ]
     }
   }
 }

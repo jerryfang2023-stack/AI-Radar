@@ -187,38 +187,77 @@
     ],
     "public_profile": {
       "profile_type": "person",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Vaibhav Domkundwar 当前按“个人投资者”收录。最新融资披露记录日期为 2026-07-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "coverage_note": "创始人履历及教育背景来自 Vaibhav Domkundwar 本人官网；Better Capital 的投资活动与案例来自其官方媒体资料，均按机构自述口径标注。",
       "facts": [],
       "milestones": [],
-      "track_record": [
+      "contacts": [],
+      "summary": "Vaibhav Domkundwar 是印度早期投资机构 Better Capital 创始人兼 CEO。创业前曾创办企业软件公司 Roamware（后被 Audax 收购）及自筹资金的创业工作室 Better Labs；毕业于 UC Berkeley 和 College of Engineering Pune。",
+      "current_roles": [
         {
-          "description": "融资来源记录：Aina · 种子轮 · 2026-07-16 · 本轮天使投资人 · 550万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-9e755507b523ddb2"
-        },
-        {
-          "description": "融资来源记录：Mowito · 预种子轮 · 2026-07-07 · 天使投资人 · $3M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-a357ef46b52de45f"
+          "title": "创始人兼 CEO",
+          "organization": "Better Capital",
+          "source_id": "domkundwar_better"
         }
       ],
-      "contacts": [],
-      "sources": [
+      "career": [
         {
-          "source_id": "FISRC-9e755507b523ddb2",
-          "source_url": "https://inc42.com/buzz/aina-raises-5-5-mn-from-info-edge-ventures-360-one-asset-to-build-ai-native-interfaces/",
-          "source_title": "Aina 从 Info Edge 等机构融资 550 万美元，用于构建 AI 硬件接口",
-          "source_content_hash": "495ca48cb14fa6d7",
-          "quote": "Better Capital founder Vaibhav Domkundwar, among others, also participated in the round.",
-          "quote_hash": "3350e36888488d97d6159578cf4a59e23295e0a3c0b9af80aa027257fc6687a7"
+          "organization": "Better Capital",
+          "title": "创始人兼 CEO",
+          "period": "现任（官网资料）",
+          "description": "面向早期创业团队开展投资；其官方媒体资料称已与 200 多位创始人建立合作。",
+          "source_id": "domkundwar_better"
         },
         {
-          "source_id": "FISRC-a357ef46b52de45f",
-          "source_url": "https://www.woodenscale.ai/blogs/mowito-funding-pre-seed-3m/",
-          "source_title": "Mowito Physical AI Raises $3M for US Factory Push | WoodenScale AI Blog | WoodenScale AI",
-          "source_content_hash": "aee7b0df3309885d",
-          "quote": "Angel backers include Thinking Machines Lab CTO Soumith Chintala, Foundry Robotics founder and CEO Adarsh Kulkarni, Coformer.ai cofounder and CEO Ashish Kulkarni, and Better Capital founder and CEO Vaibhav Domkundwar.",
-          "quote_hash": "0f75776be243b345cea4172241d646fa108827772e03b325cdd8fe8ec28e46c2"
+          "organization": "Better Labs",
+          "title": "创办人",
+          "period": "此前",
+          "description": "创办自筹资金的 startup studio。",
+          "source_id": "domkundwar_personal"
+        },
+        {
+          "organization": "Roamware",
+          "title": "创办人",
+          "period": "此前",
+          "description": "创办企业软件公司，后被 Audax 收购。",
+          "source_id": "domkundwar_personal"
+        }
+      ],
+      "education": [
+        {
+          "institution": "University of California, Berkeley",
+          "qualification": "校友；本人官网未列明学位",
+          "source_id": "domkundwar_personal"
+        },
+        {
+          "institution": "College of Engineering, Pune",
+          "qualification": "校友；本人官网未列明学位",
+          "source_id": "domkundwar_personal"
+        }
+      ],
+      "experience_summary": "经历包括企业软件创业、创业工作室建设及早期投资。公开投资案例按 Better Capital 官方资料列示，不等于经审计的基金业绩。",
+      "track_record": [
+        {
+          "description": "Better Capital 官方媒体资料列举其投资组合案例，并称机构与 200 多位创始人合作；该数字和案例为机构自述。",
+          "source_id": "domkundwar_better"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "domkundwar_personal",
+          "source_url": "https://www.vaibhavdomkundwar.com/",
+          "source_title": "Vaibhav Domkundwar",
+          "source_content_hash": "310d8b7787ee67569a5eafcda010c6345a9c8eea0fb76d3ef0266337d6305562",
+          "quote": "I’m the founder of Better Capital where we invest in gritty founders & their passionate ideas - both big and small. Earlier I founded two successful companies: a venture-backed enterprise software company Roamware (acq. by Audax) & a bootstrapped startup studio Better Labs. I am proud alum of University of California at Berkeley & College of Engineering Pune.",
+          "quote_hash": "f590fd19026d73baf993ed176feb2612de5032102634af11e83ec7cabab247e7"
+        },
+        {
+          "source_id": "domkundwar_better",
+          "source_url": "https://www.bettercapital.vc/media",
+          "source_title": "Media | Better Capital",
+          "source_content_hash": "e3fb10269d70e4f0a087fad1f06fd449d4c0047680a9804d8ae52d1df48e2ead",
+          "quote": "Vaibhav Domkundwar is the Founder & CEO of Better Capital. Across 200+ founder partnerships, Better has built a reputation for spotting exceptional founders before the market consensus forms. Better Capital has backed multiple unicorns and 20+ soonicorns, with early investments across the full breadth of India’s startup economy.",
+          "quote_hash": "7998d511fcca5504dd1d96a01d81a1dbc5371fd251dfb41a57d67fdab0d4b3d8"
         }
       ],
       "last_verified_at": "2026-09-25"

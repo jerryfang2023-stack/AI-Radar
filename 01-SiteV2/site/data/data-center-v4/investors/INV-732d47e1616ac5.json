@@ -307,51 +307,76 @@
       }
     },
     "public_profile": {
-      "profile_type": "unverified",
-      "coverage_status": "activity_only",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Tiger Global 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "coverage_note": "Tiger Global 官方网站定位为 SEC 注册投资顾问和跨阶段投资机构；其投资组合及基金回报不由本档案推断。",
+      "summary": "Tiger Global 是研究驱动型投资机构，长期投资不同发展阶段的创新企业。官方资料称其在科技创新领域拥有 25 年以上经验，并同时经营面向投资者的资产管理业务。",
+      "facts": [
+        {
+          "field": "business",
+          "label": "业务定位",
+          "value": "研究驱动型投资机构；SEC 注册投资顾问",
+          "source_id": "tiger_home"
+        },
+        {
+          "field": "investment_stages",
+          "label": "投资阶段",
+          "value": "企业生命周期多个阶段",
+          "source_id": "tiger_home"
+        },
+        {
+          "field": "experience",
+          "label": "官网披露经验",
+          "value": "超过 25 年",
+          "source_id": "tiger_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Crusoe · F轮 · 2026-09-17 · Series E 参投方 · $3.9B。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-4afc17abd0ce2781"
-        },
-        {
-          "description": "融资来源记录：Etched · D轮 · 2026-08-19 · 本轮参投 · $700m。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-134a8e8124653c90"
-        },
-        {
-          "description": "融资来源记录：Upscale AI · 多轮融资 · 2026-06-22 · 既有投资方（本轮参投） · $190 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-7dcdc22c0b1702bf"
+          "description": "官网介绍其通过研究、数据和分析寻找全球企业投资机会，并称其持续投资于多个阶段的创新公司；不据此推断具体基金表现。",
+          "source_id": "tiger_edge"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Tiger Global",
+          "url": "https://www.tigerglobal.com/",
+          "source_id": "tiger_home"
+        },
+        {
+          "kind": "email",
+          "label": "媒体联系",
+          "value": "media@tigerglobal.com",
+          "url": "https://www.tigerglobal.com/",
+          "source_id": "tiger_home"
+        },
+        {
+          "kind": "address",
+          "label": "纽约办公室",
+          "value": "9 West 57th St., New York, NY 10019, USA",
+          "url": "https://www.tigerglobal.com/",
+          "source_id": "tiger_home"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-4afc17abd0ce2781",
-          "source_url": "https://sacra.com/c/crusoe/",
-          "source_title": "Crusoe revenue, valuation & funding | Sacra",
-          "source_content_hash": "031d223859c249dd",
-          "quote": "Its October 2025 Series E—oversubscribed and co-led by Valor Equity Partners and Mubadala Capital, with participation from NVIDIA, Fidelity, Founders Fund, Salesforce Ventures, Supermicro, T. Rowe Price, Tiger Global, Ribbit, Franklin Templeton, and Upper90, among others—was anticipated to total $1.375B and valued the company at over $10B.",
-          "quote_hash": "e78c455c702cb1c5edd7d55fa07af015b1b0db72944ba98fe163abcad48cc9e5"
+          "source_id": "tiger_home",
+          "source_url": "https://www.tigerglobal.com/",
+          "source_title": "Tiger Global Management, LLC",
+          "source_content_hash": "8482749c0b2a6e1055fcc15bccbdddf4d45b0d078e9d45e7a2213471b7fa00b1",
+          "quote": "Tiger Global is a research-driven investment firm pursuing a long-term approach to partnering with high-quality, innovative companies across different stages of their lifecycle. With more than 25 years of experience ... Tiger Global Management, LLC (“Tiger Global”) is an SEC-registered investment adviser. 9 West 57th St., New York, NY 10019. Media inquiries: media@tigerglobal.com.",
+          "quote_hash": "18428d64d7ae05247e773b30086ce7108cfbe689c4890feeac00640d63a15a5a"
         },
         {
-          "source_id": "FISRC-134a8e8124653c90",
-          "source_url": "https://www.verdict.co.uk/etched-bags-700m/",
-          "source_title": "Etched 以210亿美元估值融资7亿美元，向Jane Street交付首台机架",
-          "source_content_hash": "e0e9398bf1a24e32",
-          "quote": "The round was led by Jane Street, with participation from Sequoia Capital, Kleiner Perkins, Andreessen Horowitz, Bain Capital Ventures, Stripes, Positive Sum, Tiger Global, Neo, Primary, and Blackstone.",
-          "quote_hash": "0c948f9a83fe6bf02d914e718b9524770cd022630e09f51c42213bd98f467b90"
-        },
-        {
-          "source_id": "FISRC-7dcdc22c0b1702bf",
-          "source_url": "https://upscale.com/blogs/upscale-ai-adds-190-million-in-extension-to-series-a-reaching-half-billion-dollars-in-total-funding?from_theconsensus=1",
-          "source_title": "Upscale AI 完成1.9亿美元A轮扩展融资，总融资额达5亿美元",
-          "source_content_hash": "23145edb5fdd8d69",
-          "quote": "participation from existing investors, Maverick Silicon, Mayfield, Prosperity7 Ventures, StepStone Group, and Tiger Global",
-          "quote_hash": "d4db08a7784c3a46a464a3350c29751178db84d970cb4663b8517176519d3fcb"
+          "source_id": "tiger_edge",
+          "source_url": "https://www.tigerglobal.com/ouredge",
+          "source_title": "Our Edge | Tiger Global",
+          "source_content_hash": "30a2fc1c75440ea2f27d296d507a54b00e3501e2e2e21301e787128de6baf66d",
+          "quote": "Fueled by fundamental industry and company-specific research, data, and analytics, our team pursues unique investment opportunities. Investing behind successive eras of technological advancement has enabled us to identify and invest in the most innovative companies.",
+          "quote_hash": "c1993b4525cabc40054293c1a5e2bb8a8067d972eff38d6341634b905fd026a5"
         }
       ],
       "last_verified_at": "2026-09-25"

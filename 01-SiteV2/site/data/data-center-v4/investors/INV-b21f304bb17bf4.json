@@ -247,53 +247,74 @@
     ],
     "public_profile": {
       "profile_type": "person",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Garry Tan 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "coverage_status": "researched",
+      "coverage_note": "职位、教育和职业经历来自Y Combinator官方人物页；YC官网统计数字按其自身口径记录。",
+      "last_verified_at": "2026-09-25",
+      "summary": "Garry Tan是Y Combinator总裁兼CEO及普通合伙人，也是Initialized Capital和Posterous的联合创始人。他曾在Palantir从事设计与工程工作，后担任YC合伙人并参与建设创业者内部产品；拥有斯坦福大学计算机系统工程学士学位。",
+      "current_roles": [
+        {
+          "title": "总裁兼CEO、普通合伙人",
+          "organization": "Y Combinator",
+          "source_id": "garry_yc"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Y Combinator",
+          "title": "总裁兼CEO、普通合伙人；此前为合伙人",
+          "period": "2011–2015任合伙人；2023年起任总裁兼CEO（官方资料）",
+          "description": "曾建设面向创始人的Bookface和Demo Day网站等内部产品。",
+          "source_id": "garry_yc"
+        },
+        {
+          "organization": "Initialized Capital",
+          "title": "联合创始人",
+          "period": "具体起止日期未在该人物页列出",
+          "description": "与YC工作经历并行后离开YC专注于其共同创立的基金。",
+          "source_id": "garry_yc"
+        },
+        {
+          "organization": "Posterous",
+          "title": "联合创始人",
+          "period": "公司于2012年被Twitter收购；具体任期未披露",
+          "description": "共同创立博客平台Posterous，该平台后被Twitter收购。",
+          "source_id": "garry_yc"
+        },
+        {
+          "organization": "Palantir",
+          "title": "早期设计师和工程经理",
+          "period": "具体任期未披露",
+          "description": "从事设计及工程管理工作。",
+          "source_id": "garry_yc"
+        }
+      ],
+      "education": [
+        {
+          "institution": "斯坦福大学",
+          "qualification": "计算机系统工程理学学士（BS）",
+          "source_id": "garry_yc"
+        }
+      ],
+      "experience_summary": "职业经历连接了早期创业、产品设计与工程管理、风险投资和创业加速器运营；YC官方页面记录了他在Posterous创业、Palantir任职、Initialized Capital投资及Y Combinator运营的经历。",
       "track_record": [
         {
-          "description": "融资来源记录：Horowitz Andreessen Academy · 其他融资 · 2026-09-22 · 本轮参投 · $42 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1f3aa9ba4c739ca7"
-        },
-        {
-          "description": "融资来源记录：Monogram AI, Inc. · 种子轮 · 2026-06-30 · 本轮天使投资人 · $40M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-907e4297862ddd8c"
-        },
-        {
-          "description": "融资来源记录：Odyssey ML · B轮 · 2026-06-17 · 本轮天使投资人 · 3.1亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-e94365d0212a78f3"
+          "description": "Y Combinator官方简介称，Garry Tan曾参与Posterous创业，该公司被Twitter收购；他还共同创立Initialized Capital，并曾帮助建设YC面向创始人的内部产品。",
+          "source_id": "garry_yc"
         }
       ],
-      "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-1f3aa9ba4c739ca7",
-          "source_url": "https://pulse2.com/horowitz-andreessen-academy-raises-42-million-and-launches-tuition-free-fellowship-in-san-francisco/",
-          "source_title": "Horowitz Andreessen Academy Raises $42 Million And Launches Tuition-Free Fellowship In San Francisco",
-          "source_content_hash": "bb1048a5af39e427",
-          "quote": "The $42 million financing comes from a16z and a group of individual investors, including Adam D’Angelo, co-founder of Quora; Tobi Lütke, CEO of Shopify; Tony Xu, CEO of DoorDash; Fidji Simo, who recently served as CEO of Applications at OpenAI; Garry Tan of Y Combinator; Joe Liemandt of Alpha School; and Shyam Sankar, CTO of Palantir.",
-          "quote_hash": "66f075ad9a5112fbd5e30b27263196962b1250767ea2b56f8dae3803d67dd806"
-        },
-        {
-          "source_id": "FISRC-907e4297862ddd8c",
-          "source_url": "https://www.thesaasnews.com/news/monogram-raises-40m-seed/",
-          "source_title": "Monogram 获 4000 万美元种子轮融资",
-          "source_content_hash": "3a584a627e1535ff",
-          "quote": "Arthur Mensch, Logan Green, Karim Atiyeh, Garry Tan, Pete Flint, Mario Schlosser, Othman Laraki, Lenny Rachitsky, and Charlie Songhurst",
-          "quote_hash": "49b9176525c9b670b8fddd7882264ccd675914d00fe270263b9fd54c278087c0"
-        },
-        {
-          "source_id": "FISRC-e94365d0212a78f3",
-          "source_url": "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names",
-          "source_title": "世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元",
-          "source_content_hash": "75587989c4b9271c",
-          "quote": "These include Jeff Dean, Elad Gil, Garry Tan, Guillermo Rauch, and Cruise founder Kyle Vogt.",
-          "quote_hash": "1dc60799a251a7ee9baca1d4db39e00312e6b360748a03aeaf7039b1ef047a15"
+          "source_id": "garry_yc",
+          "source_url": "https://www.ycombinator.com/people/garry-tan",
+          "source_title": "Garry Tan: YC Partner | Y Combinator",
+          "source_content_hash": "b9f58607a43f45f9cd6f89ab40a6b938a6a35caa47481cc08802d9da8817a92f",
+          "quote": "Garry Tan is president and CEO of Y Combinator and a General Partner. He is the co-founder of Initialized Capital and Posterous, which was acquired by Twitter, and previously was an early designer and engineering manager at Palantir. Garry holds a BS in Computer Systems Engineering from Stanford.",
+          "quote_hash": "397f60ae5c91d857d1c5193e6091da05f0e6fd7ed34e7a296aae8e86806e1dc9"
         }
-      ],
-      "last_verified_at": "2026-09-25"
+      ]
     }
   }
 }

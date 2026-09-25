@@ -386,51 +386,132 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "coverage_status": "activity_only",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "云启资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "coverage_note": "机构策略、团队和联系方式来自云启资本官网。网站所列榜单为引用方评选结果；未披露管理规模或具体投资回报，故不作推算。",
+      "summary": "云启资本成立于2014年，长期投资早中期科技创业企业，官网介绍其以人工智能为主线并布局应用与基础设施，覆盖商业航天、集成电路、量子计算、脑机接口、能源和智能机器人等方向。",
+      "facts": [
         {
-          "description": "融资来源记录：弋途科技 · Pre-B轮 · 2026-09-21 · A+轮领投 · 近亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-08be95e2b95904af"
+          "field": "founded",
+          "label": "成立年份",
+          "value": "2014",
+          "source_id": "yunqi_official_about"
         },
         {
-          "description": "融资来源记录：悦点科技 · Pre-A轮 · 2026-09-16 · 天使轮独家投资 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-e76b377b4dc40602"
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早中期科技企业",
+          "source_id": "yunqi_official_about"
         },
         {
-          "description": "融资来源记录：松应科技 · 多轮融资 · 2026-08-31 · 种子轮投资方 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1ae72db61aa80327"
+          "field": "sectors",
+          "label": "官网列示投资领域",
+          "value": [
+            "人工智能",
+            "商业航天",
+            "集成电路",
+            "量子计算",
+            "脑机接口",
+            "能源",
+            "核能",
+            "智能机器人"
+          ],
+          "source_id": "yunqi_official_about"
+        },
+        {
+          "field": "funds_and_programs",
+          "label": "基金及创业项目",
+          "value": [
+            "云启主基金",
+            "交大-云启AI天使基金",
+            "Y Transformers"
+          ],
+          "source_id": "yunqi_official_about"
+        },
+        {
+          "field": "management_team",
+          "label": "官网列示管理合伙人",
+          "value": [
+            "毛丞宇（创始管理合伙人）",
+            "黄榆镔（创始管理合伙人）",
+            "陈昱（管理合伙人）"
+          ],
+          "source_id": "yunqi_official_team"
+        },
+        {
+          "field": "offices",
+          "label": "办公城市",
+          "value": [
+            "上海",
+            "北京"
+          ],
+          "source_id": "yunqi_official_home"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2014",
+          "description": "成立云启资本。",
+          "source_id": "yunqi_official_about"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "官网创业者案例提及MiniMax、PingCAP、群核科技等被投企业；此处记录官网展示的组合关系，不据此推断投资回报。",
+          "source_id": "yunqi_official_about"
+        },
+        {
+          "description": "官网列示投中、清科、甲子光年、界面新闻等在2025年给予的机构榜单认可；各榜单范围不同，按官网所引评选表述。",
+          "source_id": "yunqi_official_about"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "云启资本",
+          "url": "https://yunqi.vc/",
+          "source_id": "yunqi_official_home"
+        },
+        {
+          "kind": "phone",
+          "label": "公开联系电话",
+          "value": "021-64681818",
+          "url": "https://yunqi.vc/",
+          "source_id": "yunqi_official_home"
+        },
+        {
+          "kind": "email",
+          "label": "公开联系邮箱",
+          "value": "community@yunqi.vc",
+          "url": "https://yunqi.vc/",
+          "source_id": "yunqi_official_home"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-08be95e2b95904af",
-          "source_url": "https://www.lejucaijing.com/news-7507630694257588011.html",
-          "source_title": "年内第三轮、弋途科技完成Pre-B轮融资，上海半导体参投-乐居财经",
-          "source_content_hash": "c2b3a4f00a437876",
-          "quote": "4月，A+轮超亿元，云启资本领投，赛富投资战略入局，以骏、德宁跟投",
-          "quote_hash": "133261190b5f1fcecfcbb8f696734b300d444c765b7ffcf74082ba55837584ee"
+          "source_id": "yunqi_official_about",
+          "source_url": "https://yunqi.vc/about",
+          "source_title": "云启资本-关于云启",
+          "source_content_hash": "b3195b09964fe8d900ff7b12103b4cb59df0d56a0c976319857420e49906692f",
+          "quote": "2014年成立；深耕人工智能10+年；布局应用与基础设施；持续探索前沿科技。",
+          "quote_hash": "37a376b947d58ea5e10b5eaf38a5f90578ed27900a92d580ca42091dcde66c3e"
         },
         {
-          "source_id": "FISRC-e76b377b4dc40602",
-          "source_url": "https://finance.eastmoney.com/a/202609123872695227.html",
-          "source_title": "从知识图谱走向企业智能体，悦点科技获数千万元Pre-A轮融资 _ 东方财富网",
-          "source_content_hash": "3debc60865fc74d2",
-          "quote": "此前，公司于2024年12月获得云启资本独家投资的天使轮融资。",
-          "quote_hash": "fab203354e24e4c018642bacd6523f8e40a6965f810ee5c55da9806b0064da6f"
+          "source_id": "yunqi_official_team",
+          "source_url": "https://yunqi.vc/team",
+          "source_title": "云启资本-团队",
+          "source_content_hash": "a07eac25bececcc643d7ed506e7712d920e698150ec71a0a422284e716efd789",
+          "quote": "毛丞宇 创始管理合伙人；黄榆镔 创始管理合伙人；陈昱 管理合伙人。",
+          "quote_hash": "77c4980fcb185aec896fe79ee940b1865cb22fc1e605fd4b4584dab3a95d963f"
         },
         {
-          "source_id": "FISRC-1ae72db61aa80327",
-          "source_url": "https://m.sohu.com/a/1070029599_120285954?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
-          "source_title": "松应科技完成A轮、A1轮数亿元融资：「成物理AI时代安卓」",
-          "source_content_hash": "74d6b0dda1bd2148",
-          "quote": "2022年，公司完成数百万美元种子轮融资，投资方包括红杉中国、云启资本",
-          "quote_hash": "5720d5d70f16e00eed2d27ad9715fb56be35e6a45841b62f7b41cd58a7a1fb8a"
+          "source_id": "yunqi_official_home",
+          "source_url": "https://yunqi.vc/",
+          "source_title": "云启资本",
+          "source_content_hash": "41f31257a19401135617f13be591a63bb57b33b0c7b2c56d5ad1c6d49d223063",
+          "quote": "021-64681818；community@yunqi.vc；上海 · 北京。",
+          "quote_hash": "af232b342a2eb27cfed34c138513122bd587c2c9f9eee0df32d2748d80cd24ac"
         }
       ],
       "last_verified_at": "2026-09-25"

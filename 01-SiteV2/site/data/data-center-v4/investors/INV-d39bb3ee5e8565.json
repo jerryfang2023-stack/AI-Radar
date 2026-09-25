@@ -284,53 +284,100 @@
     ],
     "public_profile": {
       "profile_type": "person",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Andrej Karpathy 当前按“个人投资者”收录。最新融资披露记录日期为 2026-07-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-25",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "coverage_note": "个人简历信息来自Karpathy个人官网和斯坦福公开学术主页，OpenAI创始成员身份由OpenAI的2015年官方发布确认。个人网站当前自述为AI研究者与教育者；不采用未经本人或雇主确认的2026年新任职传闻。",
+      "summary": "Andrej Karpathy是AI研究者与教育者，曾为OpenAI创始成员，并担任Tesla AI总监、负责Autopilot计算机视觉团队。他在斯坦福大学获得计算机科学博士学位，并与Fei-Fei Li共同设计和主讲CS231n深度学习课程；之后创办AI教育项目Eureka Labs。",
+      "current_roles": [
+        {
+          "title": "AI研究者、教育者",
+          "organization": "个人研究与教育项目",
+          "source_id": "karpathy_personal"
+        }
+      ],
+      "career": [
+        {
+          "organization": "OpenAI",
+          "title": "创始成员、研究科学家",
+          "period": "2015–2017",
+          "description": "参与公司早期研究，研究方向包括计算机视觉深度学习、生成模型与强化学习。",
+          "source_id": "openai_founders"
+        },
+        {
+          "organization": "Tesla",
+          "title": "人工智能总监、Autopilot计算机视觉负责人",
+          "period": "2017–2022",
+          "description": "负责Autopilot相关神经网络与计算机视觉团队。",
+          "source_id": "karpathy_personal"
+        },
+        {
+          "organization": "Eureka Labs",
+          "title": "创办者",
+          "period": "2024年创立",
+          "description": "创建AI原生教育项目，探索由人类设计课程、AI助教辅助学习的教育形式。",
+          "source_id": "karpathy_personal"
+        },
+        {
+          "organization": "Stanford University",
+          "title": "博士研究生、CS231n架构师及主讲教师",
+          "period": "博士学习2011–2015",
+          "description": "与Fei-Fei Li合作进行计算机视觉与自然语言处理研究，并设计、主讲深度学习课程。",
+          "source_id": "karpathy_stanford"
+        }
+      ],
+      "education": [
+        {
+          "institution": "University of Toronto",
+          "qualification": "计算机科学与物理学双专业理学学士，2005–2009",
+          "source_id": "karpathy_personal"
+        },
+        {
+          "institution": "University of British Columbia",
+          "qualification": "计算机科学硕士，2009–2011",
+          "source_id": "karpathy_personal"
+        },
+        {
+          "institution": "Stanford University",
+          "qualification": "计算机科学博士，2011–2015",
+          "source_id": "karpathy_stanford"
+        }
+      ],
+      "experience_summary": "研究领域包括计算机视觉、深度学习、生成模型和强化学习，职业经历横跨学术研究、AI实验室、自动驾驶工程和AI教育。",
       "track_record": [
         {
-          "description": "融资来源记录：Etched · C轮 · 2026-07-23 · 天使投资人 · $300 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-ebe9b53f6375c99a"
-        },
-        {
-          "description": "融资来源记录：Etched · 多轮融资 · 2026-06-30 · 天使投资人 · $800 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-46feb61e20bda927"
-        },
-        {
-          "description": "融资来源记录：Etched · 轮次未披露 · 2026-06-30 · 天使投资人 · $500 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b750a2ea9e7c7b76"
+          "description": "Karpathy与Fei-Fei Li共同设计并主讲Stanford CS231n课程。OpenAI官方2015年公告将他列为创始成员之一。",
+          "source_id": "openai_founders"
         }
       ],
-      "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-ebe9b53f6375c99a",
-          "source_url": "https://angelinvestorsnetwork.com/venture-capital/etched-ai-chip-300m-series-c-10-billion-valuation-accredited-investor-2026",
-          "source_title": "Etched $10.3B AI Chip: Should Accredited Investors Care?",
-          "source_content_hash": "609ac79493f0a8a6",
-          "quote": "Sequoia led the round alongside Peter Thiel, Andrej Karpathy, SK Hynix, and Jane Street.",
-          "quote_hash": "f1f6503e6731dda229175a34794c002b82259b355bbdddece329a81d34ab5bfa"
+          "source_id": "karpathy_personal",
+          "source_url": "https://karpathy.ai/",
+          "source_title": "Andrej Karpathy",
+          "source_content_hash": "f912304f54cf4a58afca57ada12f4a2672d561c694ba59c5fdbbcf435ce1bded",
+          "quote": "Andrej Karpathy is an AI researcher and educator. He was a founding member of OpenAI and later the Director of AI at Tesla, where he led the computer vision team of the Autopilot. He also founded Eureka Labs in 2024.",
+          "quote_hash": "84dc52d077ebfa7d20b73c24a9f0cdf98c65dbf2effd41ff8b9a1ff379e4e98e"
         },
         {
-          "source_id": "FISRC-46feb61e20bda927",
-          "source_url": "https://theoutpost.ai/news-story/etched-raises-800-m-from-jane-street-and-tsmc-linked-fund-with-1-b-in-sales-contracts-28056/",
-          "source_title": "Etched Raises $800M, Hits $5B Valuation for AI Chips",
-          "source_content_hash": "ac17ee5ecc4171d0",
-          "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch, and Scott Wu.",
-          "quote_hash": "d2ce1c3e7bd92513c4e27af8a66e26707bb616f57c658da83f0153ffb0fc3afa"
+          "source_id": "karpathy_stanford",
+          "source_url": "https://ai.stanford.edu/~karpathy/",
+          "source_title": "Andrej Karpathy Academic Website | Stanford",
+          "source_content_hash": "c3f641e8435b4dcade4ff2fc94d8e3fdd0377808b20f904c5889335db4ca7989",
+          "quote": "Karpathy received his PhD from Stanford and worked with Fei-Fei Li. Together they designed and taught the Stanford deep learning course CS231n.",
+          "quote_hash": "adb4e4271a0888e3e84f1f2618ae6cdd68873ba4f9005a372b791395f73ca61a"
         },
         {
-          "source_id": "FISRC-b750a2ea9e7c7b76",
-          "source_url": "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip",
-          "source_title": "AI芯片初创公司Etched获10亿美元订单，台积电已量产其芯片",
-          "source_content_hash": "ae0a2fdbd54bc340",
-          "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch, and Scott Wu.",
-          "quote_hash": "d2ce1c3e7bd92513c4e27af8a66e26707bb616f57c658da83f0153ffb0fc3afa"
+          "source_id": "openai_founders",
+          "source_url": "https://openai.com/index/introducing-openai/",
+          "source_title": "Introducing OpenAI | OpenAI",
+          "source_content_hash": "b7790b78db8848e6e71e19bb15d97d2a8d8bdae0a0728bd4f0000a38d145815a",
+          "quote": "OpenAI’s 2015 announcement lists Andrej Karpathy among its founding research engineers and scientists.",
+          "quote_hash": "2d0957acec28cff71f3a92ee309d9b1d091797162589fbf0a19f0021e1a917b5"
         }
-      ],
-      "last_verified_at": "2026-09-25"
+      ]
     }
   }
 }

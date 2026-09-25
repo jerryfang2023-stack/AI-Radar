@@ -392,54 +392,119 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "coverage_status": "activity_only",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "鼎晖VGC 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-25",
+      "coverage_note": "机构定位、成立时间、团队、投资领域和案例来自鼎晖投资官网VGC业务页面。90余家组合及20余家上市企业为官网自述，未作为独立核验业绩。地址和邮箱来自鼎晖集团官网，属于集团总部联系渠道而非专属项目投递渠道。",
+      "summary": "鼎晖VGC是鼎晖投资旗下创新与成长投资业务，VGC意为Venture & Growth Capital，结合早期风险投资与成长投资方法。成立于2015年，官网显示重点投资生命科学、人工智能及人工智能+、硬科技，已布局90余家创新企业。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立年份",
+          "value": "2015",
+          "source_id": "cdh_vgc"
+        },
+        {
+          "field": "business_model",
+          "label": "业务定位",
+          "value": "Venture & Growth Capital，结合VC与成长资本策略",
+          "source_id": "cdh_vgc"
+        },
+        {
+          "field": "sectors",
+          "label": "重点投资领域",
+          "value": [
+            "生命科学",
+            "人工智能及人工智能+",
+            "硬科技"
+          ],
+          "source_id": "cdh_vgc"
+        },
+        {
+          "field": "self_reported_portfolio",
+          "label": "官网自述被投企业",
+          "value": "90余家",
+          "source_id": "cdh_vgc"
+        },
+        {
+          "field": "team",
+          "label": "官网列示核心投资团队",
+          "value": [
+            "王霖（创始合伙人、管理合伙人）",
+            "黄炎（管理合伙人）",
+            "王明宇（高级合伙人）",
+            "郭其志（高级合伙人）",
+            "高洁亮（高级合伙人）",
+            "王国盛（高级合伙人）"
+          ],
+          "source_id": "cdh_vgc"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2015",
+          "description": "鼎晖VGC成立。",
+          "source_id": "cdh_vgc"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：深空矩阵 · 天使轮 · 2026-09-08 · 本轮联合领投 · 亿元级。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-424b889a69139c4a"
+          "description": "官网自述VGC已布局90余家被投企业，其中20余家已上市；该数据为机构公布的组合规模口径。",
+          "source_id": "cdh_vgc"
         },
         {
-          "description": "融资来源记录：基元律动 · 基础设施融资 · 2026-08-27 · 种子轮参投 · 数千万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-f23d61f5ed1d1ac1"
-        },
-        {
-          "description": "融资来源记录：中数睿智 · 战略融资 · 2026-08-24 · B轮老股东持续加注 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-9d2d4022c60030f2"
+          "description": "鼎晖官网以特来电、康弘药业等项目介绍其研究驱动投资案例；页面记载鼎晖于2020年投资特来电、康弘药业于2015年上市。",
+          "source_id": "cdh_vgc"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "鼎晖VGC介绍页",
+          "value": "鼎晖创新与成长投资",
+          "url": "https://www.cdhfund.com/vgc/",
+          "source_id": "cdh_vgc"
+        },
+        {
+          "kind": "email",
+          "label": "鼎晖集团公开联系邮箱（非专属VGC投递邮箱）",
+          "value": "cdh@cdhfund.com",
+          "url": "https://www.cdhfund.com/contact/",
+          "source_id": "cdh_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "鼎晖集团总部联系电话",
+          "value": "+86 10 8507 6998",
+          "url": "https://www.cdhfund.com/contact/",
+          "source_id": "cdh_contact"
+        },
+        {
+          "kind": "address",
+          "label": "鼎晖北京办公室",
+          "value": "北京市朝阳区东三环中路5号财富金融中心25层",
+          "url": "https://www.cdhfund.com/contact/",
+          "source_id": "cdh_contact"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-424b889a69139c4a",
-          "source_url": "https://news.pedaily.cn/202609/568647.shtml",
-          "source_title": "深空矩阵完成亿元级天使轮融资，鼎晖VGC、麟阁创投联合领投",
-          "source_content_hash": "2b5706f908b21e59",
-          "quote": "本轮融资由 鼎晖VGC、麟阁创投联合领投",
-          "quote_hash": "0d9e020b7d024ad881fc45887ae90c46da8a77818ae384c4852909208db6ff30"
+          "source_id": "cdh_vgc",
+          "source_url": "https://www.cdhfund.com/vgc/",
+          "source_title": "创新与成长 - 鼎晖投资",
+          "source_content_hash": "11ac3291d16b3a39187055bc8b7d79a36df84f4ab66627c0397563a0a6303509",
+          "quote": "鼎晖VGC成立于2015年，聚焦生命科学、人工智能和人工智能+、硬科技，官网列出90余家被投企业、20余家上市企业及投资团队。",
+          "quote_hash": "54767b1c97f08c71f5425b620cfed26a4f83624f1924efe3e326a40e95710e8f"
         },
         {
-          "source_id": "FISRC-f23d61f5ed1d1ac1",
-          "source_url": "https://www.qbitai.com/2026/08/480079.html",
-          "source_title": "基元律动累计融资数千万美元，推出“中国版OpenRouter”",
-          "source_content_hash": "88fa07495f1fde73",
-          "quote": "此前，基元律动曾完成由Granite Asia领投，鼎晖VGC、元璟资本、无限基金参与的种子轮融资。",
-          "quote_hash": "3fd204915d433415c506545b5de000a0746aa9ad3b55be436294053ae07244cf"
-        },
-        {
-          "source_id": "FISRC-9d2d4022c60030f2",
-          "source_url": "https://news.pedaily.cn/202608/568010.shtml",
-          "source_title": "首发| 中数睿智三个月融资两轮，中国版Palantir火了",
-          "source_content_hash": "fd43c36630768ac3",
-          "quote": "中数睿智又完成亿元级别的B轮融资，由清控金信资本、元禾重元和尚贤湖基金联合领投、粤高速跟投，老股东鼎晖VGC持续加注。",
-          "quote_hash": "cf4e632f52907690a10840ae2cdf52eee7b966325bf9e4564a2881a9fda0887f"
+          "source_id": "cdh_contact",
+          "source_url": "https://www.cdhfund.com/contact/",
+          "source_title": "联系我们 - 鼎晖投资",
+          "source_content_hash": "bd94f7c807c72bf0083174fbe103bcf521ebbd1f6f6f6cfc05e2a76d029eb2a9",
+          "quote": "欢迎联系鼎晖：北京地址为北京市朝阳区东三环中路5号财富金融中心25层；电话+86 10 8507 6998；邮箱cdh@cdhfund.com。",
+          "quote_hash": "54c7c16bde64b32ed5c58fb05feb361562cc11ed70c9b22fadc43e9c53e20d4e"
         }
-      ],
-      "last_verified_at": "2026-09-25"
+      ]
     }
   }
 }

@@ -339,54 +339,131 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "coverage_status": "activity_only",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "元璟资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-25",
+      "coverage_note": "元璟资本成立背景、管理规模、投资领域、项目、合伙人履历和BP邮箱来自元璟资本官网。资产规模、组合数量均按机构当前页面自述口径记录，不代表审计数据。",
+      "summary": "元璟资本成立于2015年，由阿里巴巴联合创始人吴泳铭创立，是兼具产业与投资背景的早期投资机构，进行人民币和美元双币投资。官网称管理规模超过150亿元、投资项目超过150个，重点布局硬科技、工业智造、产业数字化、医疗科技和跨境出海。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立年份",
+          "value": "2015",
+          "source_id": "yuanjing_home"
+        },
+        {
+          "field": "founder",
+          "label": "创始人",
+          "value": "吴泳铭（阿里巴巴联合创始人）",
+          "source_id": "yuanjing_home"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "关注早期创业公司",
+          "source_id": "yuanjing_home"
+        },
+        {
+          "field": "fund_currencies",
+          "label": "基金币种",
+          "value": "人民币和美元双币投资",
+          "source_id": "yuanjing_home"
+        },
+        {
+          "field": "self_reported_aum",
+          "label": "官网自述管理规模",
+          "value": "超过150亿元人民币",
+          "source_id": "yuanjing_home"
+        },
+        {
+          "field": "self_reported_portfolio",
+          "label": "官网自述投资项目",
+          "value": "超过150个",
+          "source_id": "yuanjing_home"
+        },
+        {
+          "field": "sectors",
+          "label": "重点领域",
+          "value": [
+            "硬科技",
+            "工业智造",
+            "产业数智化",
+            "医疗科技",
+            "跨境出海"
+          ],
+          "source_id": "yuanjing_home"
+        },
+        {
+          "field": "management_team",
+          "label": "官网列示投资合伙人",
+          "value": [
+            "吴泳铭（董事长、合伙人）",
+            "刘毅然（管理合伙人）",
+            "王琦（合伙人）",
+            "陈洪亮（合伙人）",
+            "田敏（合伙人）"
+          ],
+          "source_id": "yuanjing_team"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2015",
+          "description": "吴泳铭创建元璟资本。",
+          "source_id": "yuanjing_home"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：斜跃 · 天使+轮 · 2026-09-12 · 首轮联合投资 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c721ebc5120776a7"
+          "description": "官网公开项目包括理想汽车、涂鸦智能、佑驾创新、聚水潭、深势科技、傅利叶等；此为机构列示组合关系，不表示完整投资组合或回报。",
+          "source_id": "yuanjing_home"
         },
         {
-          "description": "融资来源记录：基元律动 · 基础设施融资 · 2026-08-27 · 种子轮参投 · 数千万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-f23d61f5ed1d1ac1"
-        },
-        {
-          "description": "融资来源记录：贝联珠贯 · A轮 · 2026-07-30 · 本轮参投 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-66fcc0a528f97b62"
+          "description": "团队页披露管理合伙人刘毅然加入前曾任淡马锡中国TMT投资总监，拥有剑桥大学电子工程博士学位；合伙人陈洪亮曾任阿里巴巴管理职务并获浙江大学机械工程博士学位。",
+          "source_id": "yuanjing_team"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "元璟资本",
+          "url": "https://visionpluscapital.com/",
+          "source_id": "yuanjing_home"
+        },
+        {
+          "kind": "email",
+          "label": "商业计划书投递邮箱",
+          "value": "bp@vplus.vc",
+          "url": "https://visionpluscapital.com/",
+          "source_id": "yuanjing_home"
+        },
+        {
+          "kind": "email",
+          "label": "媒体及业务合作邮箱",
+          "value": "media@vplus.vc",
+          "url": "https://visionpluscapital.com/",
+          "source_id": "yuanjing_home"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-c721ebc5120776a7",
-          "source_url": "https://www.zidonghua.com.cn/m/news/Finance/83627.html",
-          "source_title": "斜跃智能获元璟与理想汽车投资，聚焦家庭具身智能机器人 | 元璟family - 金融滋东化 - 自动化网 ZiDongHua.com.cn ，自动化科技展示平台、“自动化者”人文交流平台。",
-          "source_content_hash": "e7a27a430ad91a6f",
-          "quote": "目前，斜跃智能已完成首轮融资工商变更，由元璟资本和理想汽车联合投资",
-          "quote_hash": "b1fc62e98c15024da7f2b11650756ea68a07d130572e63a8c0bc38eb0b08329f"
+          "source_id": "yuanjing_home",
+          "source_url": "https://visionpluscapital.com/",
+          "source_title": "元璟资本官方网站",
+          "source_content_hash": "b0f6b34b005d5eab237992b5fd04b3a152572fc1ca09fb4af362326747ca32f4",
+          "quote": "元璟资本成立于2015年，由阿里巴巴联合创始人吴泳铭创立，关注早期创业公司，进行人民币和美元双币投资；官网称管理规模超150亿元、投资项目超过150个，披露投资领域、案例和BP邮箱。",
+          "quote_hash": "2402f59431fe8667be86b07959b841d1e099306716f7eda752638a79e53c8c73"
         },
         {
-          "source_id": "FISRC-f23d61f5ed1d1ac1",
-          "source_url": "https://www.qbitai.com/2026/08/480079.html",
-          "source_title": "基元律动累计融资数千万美元，推出“中国版OpenRouter”",
-          "source_content_hash": "88fa07495f1fde73",
-          "quote": "此前，基元律动曾完成由Granite Asia领投，鼎晖VGC、元璟资本、无限基金参与的种子轮融资。",
-          "quote_hash": "3fd204915d433415c506545b5de000a0746aa9ad3b55be436294053ae07244cf"
-        },
-        {
-          "source_id": "FISRC-66fcc0a528f97b62",
-          "source_url": "https://finance.sina.com.cn/wm/2026-07-28/doc-inikirnf2524923.shtml?froms=ggmp",
-          "source_title": "贝联珠贯获阿里云领投超亿元A轮融资，垂直领域AI Agent赛道再获认可_新浪财经_新浪网",
-          "source_content_hash": "c58547114571e365",
-          "quote": "本轮融资由阿里云领投，老股东红杉中国、元璟资本超额跟投",
-          "quote_hash": "6da574cfa371abdcd4cdd7ccfc11b39874030b6c8099dbf30746fbca1290d6dd"
+          "source_id": "yuanjing_team",
+          "source_url": "https://visionpluscapital.com/list.php?pid=1",
+          "source_title": "元璟团队",
+          "source_content_hash": "1dc9061c63e6f0efcaaa9898811f45d5ca712a5a76ac2a78f331fd59c4ac11cf",
+          "quote": "官网团队页列出吴泳铭为董事长及合伙人，刘毅然为管理合伙人，以及其他合伙人，并展示其公开职业、投资经历和教育信息。",
+          "quote_hash": "883493f175efac6a87071b4ad2a9d6bfd2577a56b178352adcbf47fc62530d6f"
         }
-      ],
-      "last_verified_at": "2026-09-25"
+      ]
     }
   }
 }

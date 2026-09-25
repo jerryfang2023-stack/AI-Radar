@@ -241,50 +241,107 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Aramco Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "coverage_note": "Aramco Ventures 官方披露的投资能力为 2024—2027 年资金配置口径；这是母公司企业风投，不是独立第三方基金。",
+      "summary": "Aramco Ventures 是沙特阿美旗下企业风险投资机构，投资与母公司战略相关的初创及高成长企业，涵盖数字化、工业技术、可持续发展及突破性技术，并可借助 Aramco 业务场景试点和部署。",
+      "facts": [
         {
-          "description": "融资来源记录：Hang Ten Systems · 种子轮 · 2026-09-16 · 本轮参投 · $53M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-def75ecd4873d016"
+          "field": "parent",
+          "label": "所属公司",
+          "value": "沙特阿美（Aramco）",
+          "source_id": "aramco_funding"
         },
         {
-          "description": "融资来源记录：Together AI · C轮 · 2026-07-01 · 本轮领投 · $800 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-6f0f12fb121fbd88"
+          "field": "fund_programs",
+          "label": "基金与项目",
+          "value": [
+            "Digital/Industrial Fund",
+            "Prosperity7 Fund",
+            "Sustainability Fund",
+            "Strategic Venturing Program"
+          ],
+          "source_id": "aramco_funding"
         },
         {
-          "description": "融资来源记录：Hang Ten Systems · 种子轮 · 2026-06-24 · 本轮战略参投 · $32 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-f36f0a9a7099248a"
+          "field": "investment_capability",
+          "label": "投资能力配置",
+          "value": "2024—2027 年提升至 70 亿美元（Aramco Ventures 口径）；Aramco 全部风投配置另含 Wa’ad Ventures 后为 75 亿美元",
+          "source_id": "aramco_funding"
+        },
+        {
+          "field": "sectors",
+          "label": "战略方向",
+          "value": [
+            "AI 与高级分析",
+            "机器人与自动化",
+            "先进制造",
+            "工业技术",
+            "数字化",
+            "能源转型与可持续发展"
+          ],
+          "source_id": "aramco_strategy"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2024-01-17",
+          "description": "Aramco 宣布为其全球风险投资计划追加 40 亿美元，使 Aramco Ventures 2024—2027 年投资能力增至 70 亿美元。",
+          "source_id": "aramco_funding"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "官网披露其投资组合横跨工业软件、AI 与分析、网络安全、能源转型及先进制造；页面逐项列出被投企业和已披露收购案例。组合披露不代表投资回报率。",
+          "source_id": "aramco_portfolio"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Aramco Ventures",
+          "url": "https://aramcoventures.com/",
+          "source_id": "aramco_strategy"
+        },
+        {
+          "kind": "address",
+          "label": "总部",
+          "value": "AMAAD Business Park, Tower 8, 8th Floor, Dhahran 34464, Saudi Arabia",
+          "url": "https://aramcoventures.com/programs-fund/digital-industrial-fund/",
+          "source_id": "aramco_strategy"
+        },
+        {
+          "kind": "email",
+          "label": "媒体联系（Aramco）",
+          "value": "media.inquiries@aramco.com",
+          "url": "https://aramcoventures.com/news/aramco-expands-global-venture-capital-program-with-4bn-funds-injection/",
+          "source_id": "aramco_funding"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-def75ecd4873d016",
-          "source_url": "https://techcrunch.com/2026/09/16/former-infosys-chiefs-ai-startup-adds-50m-to-seed-weeks-after-initial-raise/",
-          "source_title": "前印孚瑟斯首席执行官的AI初创公司再获5300万美元",
-          "source_content_hash": "6a0023459752d1bc",
-          "quote": "Other investors include Aramco Ventures, Intel CEO Lip-Bu Tan, Micron CEO Sanjay Mehrotra, and Yahoo co-founder Jerry Yang",
-          "quote_hash": "6a78b3d7a9c9ed703dacf820de4670ff34ec7b3d27d9f1672dcc26b95f1c72ad"
+          "source_id": "aramco_funding",
+          "source_url": "https://aramcoventures.com/news/aramco-expands-global-venture-capital-program-with-4bn-funds-injection/",
+          "source_title": "Aramco expands global venture capital program | Aramco Ventures",
+          "source_content_hash": "d3ed56f697317a73dba284bbc85b13a9ea68af002a58a1c2b65d0a0ee184a01e",
+          "quote": "Aramco has allocated an additional $4 billion to its global venture capital arm, Aramco Ventures, increasing its total investment capabilities from $3 billion to $7 billion between 2024 and 2027. ... Aramco Ventures also operates Prosperity7 ... Media Relations: media.inquiries@aramco.com.",
+          "quote_hash": "b3325821ef99ebd37b1d6e9132e308aa38838a475d19db5c2d83b1dca7d073fe"
         },
         {
-          "source_id": "FISRC-6f0f12fb121fbd88",
-          "source_url": "https://techcrunch.com/2026/07/01/neocloud-together-ai-raises-800m-leaps-to-8-3b-valuation/",
-          "source_title": "Neocloud Together AI 融资 8 亿美元，估值跃升至 83 亿美元",
-          "source_content_hash": "99e8e0f48b30eed2",
-          "quote": "The round was led by Aramco Ventures",
-          "quote_hash": "532d1d05cbca7d9e8debeeee4449d6f35cb1c3f6c3679a46c8a23bdb58629c5b"
+          "source_id": "aramco_strategy",
+          "source_url": "https://aramcoventures.com/programs-fund/digital-industrial-fund/",
+          "source_title": "Strategic Venturing | Aramco Ventures",
+          "source_content_hash": "412163b92baf0347b894ac1f97334b8f87147b13d1cb1dfaf5bce911fca552af",
+          "quote": "Invests globally in technologies of strategic importance to Aramco, with a focus on sustainability, digital and industrial innovation. The program connects high-potential companies with Aramco’s global operations and technical expertise ... sectors include artificial intelligence and advanced analytics, robotics and automation, additive and advanced manufacturing ... HEADQUARTERS: AMAAD Business Park, Tower 8, 8th Floor, Dhahran 34464 Kingdom of Saudi Arabia.",
+          "quote_hash": "93cdc73800505848e710b8e8a8c891141c56280bdfbfdb569461e594f7f832e1"
         },
         {
-          "source_id": "FISRC-f36f0a9a7099248a",
-          "source_url": "https://theaiinsider.tech/2026/07/02/hang-ten-systems-raises-32m-to-help-enterprises-succeed-with-ai/",
-          "source_title": "Hang Ten Systems 获 3200 万美元融资，助力企业成功应用 AI",
-          "source_content_hash": "2f3ab64f96763d7b",
-          "quote": "The round was led by Mayfield, with a strategic investment from Aramco Ventures and participation from a group of angel investors.",
-          "quote_hash": "ec217dcca5a56df09c6244e4cadf319d6bfd3fe9b0a4e6f5c1eea899d4be1702"
+          "source_id": "aramco_portfolio",
+          "source_url": "https://aramcoventures.com/portfolio/",
+          "source_title": "Portfolio Companies | Aramco Ventures",
+          "source_content_hash": "5613843570ab78923b292916ee6d7731a7eab458550648c136c2951668a9a5e0",
+          "quote": "Portfolio Companies. Sustainability Portfolio ... Industrial Portfolio ... AI & Analytics ... Enterprise Software ... Cybersecurity ... Industrial.",
+          "quote_hash": "39cdaae2fbd7fd090414dbc9398e5ff34707ce176f1a161592187aef3fef5d17"
         }
       ],
       "last_verified_at": "2026-09-25"

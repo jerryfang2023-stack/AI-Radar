@@ -341,51 +341,101 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "coverage_status": "activity_only",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Jane Street 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-19；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "coverage_note": "Jane Street 官方资料将自身定位为量化交易和流动性提供商；本库中的初创公司参投记录独立来自融资来源，不据此将其描述为传统风险投资基金。",
+      "summary": "Jane Street 是成立于 2000 年的全球量化交易公司和流动性提供商，覆盖多类资产与市场，重视数学研究、机器学习和自研交易技术。该机构并非传统风险投资公司。",
+      "facts": [
         {
-          "description": "融资来源记录：Etched · D轮 · 2026-08-19 · 本轮领投 · $700m。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-134a8e8124653c90"
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2000",
+          "source_id": "jane_who"
         },
         {
-          "description": "融资来源记录：Etched · C轮 · 2026-07-23 · 本轮参投 · $300 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-f34324e392a333c0"
+          "field": "business",
+          "label": "主要业务",
+          "value": [
+            "量化交易",
+            "全球流动性提供",
+            "研究与交易技术"
+          ],
+          "source_id": "jane_overview"
         },
         {
-          "description": "融资来源记录：Etched · 多轮融资 · 2026-06-30 · 既有投资方（曾领投此前未披露轮次）及本轮参投 · $800 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-5b1fe7cfe0f0cbb5"
+          "field": "market_coverage",
+          "label": "市场覆盖",
+          "value": "在 45 个国家、200 多个市场交易多类资产（官网当前介绍）",
+          "source_id": "jane_who"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2000",
+          "description": "由一小群交易员和技术人员创立。",
+          "source_id": "jane_who"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "Jane Street 官网称其为全球大型做市商之一，并通过量化研究、机器学习和自建交易系统提供流动性。数据库另有若干其参与创业公司融资的披露记录，不构成完整投资组合。",
+          "source_id": "jane_overview"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Jane Street",
+          "url": "https://www.janestreet.com/",
+          "source_id": "jane_who"
+        },
+        {
+          "kind": "email",
+          "label": "媒体联系",
+          "value": "media@janestreet.com",
+          "url": "https://www.janestreet.com/contact-us/",
+          "source_id": "jane_contact"
+        },
+        {
+          "kind": "address",
+          "label": "香港办公室",
+          "value": "香港中环干諾道中 8 号遮打大厦 10 楼",
+          "url": "https://www.janestreet.com/contact-us/",
+          "source_id": "jane_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "香港办公室电话",
+          "value": "+852 3900 7300",
+          "url": "https://www.janestreet.com/contact-us/",
+          "source_id": "jane_contact"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-134a8e8124653c90",
-          "source_url": "https://www.verdict.co.uk/etched-bags-700m/",
-          "source_title": "Etched 以210亿美元估值融资7亿美元，向Jane Street交付首台机架",
-          "source_content_hash": "e0e9398bf1a24e32",
-          "quote": "The round was led by Jane Street, with participation from Sequoia Capital, Kleiner Perkins, Andreessen Horowitz, Bain Capital Ventures, Stripes, Positive Sum, Tiger Global, Neo, Primary, and Blackstone.",
-          "quote_hash": "0c948f9a83fe6bf02d914e718b9524770cd022630e09f51c42213bd98f467b90"
+          "source_id": "jane_who",
+          "source_url": "https://www.janestreet.com/who-we-are/",
+          "source_title": "Who We Are | Jane Street",
+          "source_content_hash": "0fd54559b3f26f9789ae05569753c46ec8c856f92995df26a0c6884d33b112eb",
+          "quote": "Established in 2000. We were founded by a small group of traders and technologists in a tiny New York office. Today, we have more than 3000 employees across five global offices. We trade a broad range of asset classes on more than 200 venues in 45 countries.",
+          "quote_hash": "b7d36acd354c3858ef03245a0c754508f11bf10ab6afa08144c5140d14c71257"
         },
         {
-          "source_id": "FISRC-f34324e392a333c0",
-          "source_url": "https://www.datacenterdynamics.com/en/news/ai-chip-startup-etched-closes-300m-funding-round-doubles-its-valuation-to-103bn/",
-          "source_title": "AI chip startup Etched closes $300m funding round, doubles its valuation to $10.3bn - DCD",
-          "source_content_hash": "fbd60dfb1abe4670",
-          "quote": "with participation from SK Hynix, Andreessen Horowitz, Jane Street, and Diffusion",
-          "quote_hash": "69bb8526577d001a4d8e2a7b84177296d93bd657b3c2e011f6b6738e80b3b0dc"
+          "source_id": "jane_overview",
+          "source_url": "https://www.janestreet.com/what-we-do/overview/",
+          "source_title": "Overview | Jane Street",
+          "source_content_hash": "c7c4c4f1a163c7f90b93f23528b3ea5ebe572e4af8bd79d19cb472afb3950831",
+          "quote": "We are a global liquidity provider and trading firm that uses sophisticated quantitative analysis and a deep understanding of market mechanics to help keep prices consistent and reliable. Jane Street became known for its expertise in domestic and international ETFs ... Today, we are major players in the Equities, Bonds, and Options markets.",
+          "quote_hash": "35409853ab33579138441214e60f84769a32ca07319eb01499c27e9673116276"
         },
         {
-          "source_id": "FISRC-5b1fe7cfe0f0cbb5",
-          "source_url": "https://www.techtimes.com/articles/319393/20260630/transformer-chip-startup-etched-exits-stealth-800m-raised-1b-contracts.htm",
-          "source_title": "变压器芯片初创公司Etched结束隐身模式：融资8亿美元，合同金额10亿美元",
-          "source_content_hash": "62358e027589c8c5",
-          "quote": "Jane Street led a previously unannounced round and has invested more than $100 million in Etched in total, according to Bloomberg.",
-          "quote_hash": "1afc9069c43b418b9ff147e885e84ee0da9b10ff0164622e4958be9977c53b06"
+          "source_id": "jane_contact",
+          "source_url": "https://www.janestreet.com/contact-us/",
+          "source_title": "Contact Us | Jane Street",
+          "source_content_hash": "0e04df161a93d53dacd415fb9073d812adcd120ee129e2813d7afda6b46e8d1c",
+          "quote": "Hong Kong: Jane Street Asia Limited, 10th Floor, Chater House, 8 Connaught Rd. Central, Central, Hong Kong, +852 3900 7300. For media inquiries, please email: media@janestreet.com.",
+          "quote_hash": "f89bb1300ea1aa5a9e9067ea15a63d705a05a5a27ab2742189e7a87a624cb473"
         }
       ],
       "last_verified_at": "2026-09-25"

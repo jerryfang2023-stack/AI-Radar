@@ -246,50 +246,125 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Qatar Investment Authority (QIA) 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "coverage_note": "卡塔尔投资局官方资料；其 VC Fund of Funds 是独立于主权基金整体组合的专项项目，规模和策略分别标注。",
+      "summary": "卡塔尔投资局（QIA）是卡塔尔国主权财富基金，成立于 2005 年，通过全球多资产和长期投资支持国家储备管理与经济多元化。其专项 Fund of Funds 计划主要投资风险投资基金，并可与参与基金共同投资。",
+      "facts": [
         {
-          "description": "融资来源记录：Crusoe · F轮 · 2026-09-17 · 本轮参投 · $3.9B。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-5fc65e3f4fb1b347"
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2005",
+          "source_id": "qia_about"
         },
         {
-          "description": "融资来源记录：SambaNova Systems · F轮 · 2026-07-08 · 本轮参投（新进或既有） · $1 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-dbf8259066547c8e"
+          "field": "headquarters",
+          "label": "总部",
+          "value": "卡塔尔多哈",
+          "source_id": "qia_about"
         },
         {
-          "description": "融资来源记录：Positron AI · B轮 · 2026-02-04 · 本轮战略参投 · $230 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-272c28400131d6f2"
+          "field": "vc_fund_of_funds",
+          "label": "风险投资母基金计划",
+          "value": "2024 年公布拟投资超过 10 亿美元于国际及区域 VC 基金；该数字为专项计划规模，不是 QIA 总管理资产",
+          "source_id": "qia_vc"
+        },
+        {
+          "field": "sectors",
+          "label": "官网列示直接投资团队覆盖领域",
+          "value": [
+            "大宗商品",
+            "金融机构",
+            "医疗健康",
+            "工业",
+            "基础设施",
+            "房地产",
+            "零售与消费",
+            "科技、媒体与通信"
+          ],
+          "source_id": "qia_teams"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2005",
+          "description": "QIA 根据卡塔尔埃米尔决定成立。",
+          "source_id": "qia_history"
+        },
+        {
+          "date": "2024-02-26",
+          "description": "QIA 宣布拟推出超过 10 亿美元风险投资 Fund of Funds，主要以基金投资为主，并允许对参与基金进行定向共同投资。",
+          "source_id": "qia_vc"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "Fund of Funds 计划公布科技领域重点包括金融科技、教育科技和医疗健康；管理人需证明历史业绩及对卡塔尔本地生态的投入承诺。",
+          "source_id": "qia_vc"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Qatar Investment Authority",
+          "url": "https://www.qia.qa/en/Pages/default.aspx",
+          "source_id": "qia_about"
+        },
+        {
+          "kind": "contact_form",
+          "label": "联系入口",
+          "value": "QIA 官网联系表单",
+          "url": "https://www.qia.qa/en/Pages/default.aspx",
+          "source_id": "qia_about"
+        },
+        {
+          "kind": "email",
+          "label": "媒体联系",
+          "value": "media@qia.qa",
+          "url": "https://qia.qa/en/Newsroom/Pages/QIA-and-Fiera-Capital-launch-USD-200m-Fiera-Equity-Fund--.aspx",
+          "source_id": "qia_media"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-5fc65e3f4fb1b347",
-          "source_url": "https://kingliber.com/the-ai-infrastructure-boom-crusoe-secures-3-9-billion-series-f-at-a-30-9-billion-valuation-to-power-the-next-generation-of-compute/",
-          "source_title": "The AI Infrastructure Boom: Crusoe Secures $3.9 Billion Series F at a $30.9 Billion Valuation to Power the Next Generation of Compute – King Liber",
-          "source_content_hash": "a5d809d221408d5b",
-          "quote": "They were joined by a roster of elite institutional and corporate investors, including Founders Fund , GIC , Nvidia , the Qatar Investment Authority (QIA) , Radical Ventures , and TPG .",
-          "quote_hash": "f095cfa01d7214cc37d55b841ff30c29ca4c63f1172dcbde315aadbad247b8e2"
+          "source_id": "qia_about",
+          "source_url": "https://qia.qa/About/AboutUs.aspx",
+          "source_title": "About Us | Qatar Investment Authority",
+          "source_content_hash": "a1ffef4247128c48b467b6b60895ea05e8cca6aa1f2b4da1aea7767a85a419f8",
+          "quote": "Qatar Investment Authority is the sovereign wealth fund of the State of Qatar ... QIA was founded in 2005 ... Headquartered in Doha ... QIA has a strong track record of investing in multiple asset classes, including listed securities, property, alternative assets and private equity in all the major markets globally.",
+          "quote_hash": "3bbbd33ea2a1ebe17b0df4831c65c3f6a0ad88990bb9e493a868a3336166cdb2"
         },
         {
-          "source_id": "FISRC-dbf8259066547c8e",
-          "source_url": "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/",
-          "source_title": "AI 芯片制造商 SambaNova 以 110 亿美元估值融资 10 亿美元，距上一轮巨额融资仅 5 个月",
-          "source_content_hash": "e79999ca03a0833e",
-          "quote": "New and existing investors also joined, including A&E Investment, Assam Ventures, Battery Ventures, Cambium Capital, BlackRock, Kabila Capital, QFO Capital, Qatar Investment Authority (QIA)",
-          "quote_hash": "ddae9f48bdbe0094e20cd42df22b9f874f5d4ffa21c8c1243326ea0395e91b8f"
+          "source_id": "qia_history",
+          "source_url": "https://www.qia.qa/en/about/pages/History.aspx",
+          "source_title": "History | QIA",
+          "source_content_hash": "4c6afb36607aea6b9d16bbe89c7f1eb76d58f1867e4228f1c5924a007bb321f3",
+          "quote": "QIA was established by the Amiri Decision no. 22 for the year 2005, which defines QIA’s objectives and governance framework.",
+          "quote_hash": "acd7cc979a4f6b35c4ad603b155b88b2e60ac4810912219fe79d6fd13e3d22de"
         },
         {
-          "source_id": "FISRC-272c28400131d6f2",
-          "source_url": "https://techcrunch.com/2026/02/04/exclusive-positron-raises-230m-series-b-to-take-on-nvidias-ai-chips/",
-          "source_title": "独家：Positron 获 2.3 亿美元 B 轮融资，挑战英伟达 AI 芯片",
-          "source_content_hash": "a68fc4da018f5dc8",
-          "quote": "with strategic investment from Qatar Investment Authority (QIA)",
-          "quote_hash": "7ffed4cf21d6b46d53100dc146a1b7b07494ee2ef65c7e58c60919b529169810"
+          "source_id": "qia_vc",
+          "source_url": "https://www.qia.qa/en/Newsroom/Pages/QIA-to-launch-new-venture-capital-programs.aspx",
+          "source_title": "QIA to launch new venture capital program | QIA",
+          "source_content_hash": "fa082668cd35553022d866e6ace6253ccde13f5fb8cf4b3a7359001b9ef73900",
+          "quote": "QIA will invest more than USD 1 billion in international and regional venture capital funds. The Fund of Funds program will primarily invest indirectly via other VC funds, but will be able to make targeted co-investments with the participating funds. Its priority tech sectors include fintech and edtech, as well as healthcare.",
+          "quote_hash": "9a3f6d9206b9e1f3d8b5c9d727e076e401325bc81002a0e4a4f5a43497dcf58b"
+        },
+        {
+          "source_id": "qia_teams",
+          "source_url": "https://qia.qa/People/ActiveInvestments.aspx",
+          "source_title": "Active Investments | QIA",
+          "source_content_hash": "43137e1adf5a2bf8a2a8eac761378769ad09feca734fd4dfabbbfe7fd5165532",
+          "quote": "The Active Investment Teams are organized along industry sectors ... Commodities, Financial Institutions, Health Care, Industrials, Infrastructure, Real Estate, Retail and Consumer, Technology, Media, Telecoms.",
+          "quote_hash": "7b9413c06aade74fab8279b71265ec43b5b559668120b7c73cf75b216e98bab3"
+        },
+        {
+          "source_id": "qia_media",
+          "source_url": "https://qia.qa/en/Newsroom/Pages/QIA-and-Fiera-Capital-launch-USD-200m-Fiera-Equity-Fund--.aspx",
+          "source_title": "QIA and Fiera Capital announce fund | QIA",
+          "source_content_hash": "ca28d4fc6ba9c6c657257f5a73e62e67f3ea67608507784dfaff2f52bcb248b1",
+          "quote": "Media Contact: media@qia.qa.",
+          "quote_hash": "c0967ea1a89afdb244f11c280faf1a1832ddc22f7ec4dd0c8b95cbdb421a8cb9"
         }
       ],
       "last_verified_at": "2026-09-25"

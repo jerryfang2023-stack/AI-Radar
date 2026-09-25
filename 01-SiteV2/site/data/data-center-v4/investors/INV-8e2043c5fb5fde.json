@@ -435,54 +435,90 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "coverage_status": "activity_only",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "北汽产投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-25",
+      "coverage_note": "公司成立时间、注册资本、股东集团关系、投资方向、累计项目与产业协同数据来自北汽产投官网；累计投资数量和企业比例均按官网自述口径记录。官网页面暂未提供可验证的BP投递邮箱或电话，故未填联系方式。",
+      "summary": "北京汽车集团产业投资有限公司（北汽产投）成立于2012年底，是北汽集团的产业投资与资本运作平台，注册资本35.35亿元。公司围绕新能源汽车产业链布局新能源、新材料、智能网联、汽车零部件和车用半导体，并依托北汽集团供应链生态为被投企业提供产业协同。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2012年底",
+          "source_id": "baic_about"
+        },
+        {
+          "field": "registered_capital",
+          "label": "注册资本",
+          "value": "35.35亿元人民币",
+          "source_id": "baic_about"
+        },
+        {
+          "field": "parent",
+          "label": "集团关系",
+          "value": "北汽集团产业投资与资本运作平台",
+          "source_id": "baic_about"
+        },
+        {
+          "field": "sectors",
+          "label": "投资领域",
+          "value": [
+            "新能源",
+            "新材料",
+            "智能网联",
+            "汽车零部件",
+            "车用半导体"
+          ],
+          "source_id": "baic_about"
+        },
+        {
+          "field": "self_reported_portfolio",
+          "label": "官网自述累计投资项目",
+          "value": "190余个（官网页面未单独标注统计时点）",
+          "source_id": "baic_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2012",
+          "description": "北汽产投成立。",
+          "source_id": "baic_about"
+        },
+        {
+          "date": "2024-06",
+          "description": "参与设立北京绿色能源和低碳产业发展投资基金。",
+          "source_id": "baic_about"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：极佳视界 · B2轮 · 2026-06-15 · 天使及天使+轮投资方 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-ce47b663ca256878"
+          "description": "官网自述累计投资项目190余个，关键科技领域投资超过90%，绿色能源与低碳领域投资超过50%，且超过50%的被投企业进入北汽集团供应链；数据为企业公开口径。",
+          "source_id": "baic_about"
         },
         {
-          "description": "融资来源记录：小雨智造 · B+轮 · 2026-05-09 · 本轮联合领投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-7cae6e0a712567de"
-        },
-        {
-          "description": "融资来源记录：极佳视界 · 多轮融资 · 2026-04-16 · 天使及天使+轮投资方 · 近15亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-4782a6093d519a4d"
+          "description": "公司官网介绍其于2024年6月作为GP2参与设立百亿规模北京绿色能源和低碳产业发展投资基金。",
+          "source_id": "baic_about"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "北汽产投",
+          "url": "https://www.baiccapital.com/",
+          "source_id": "baic_about"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-ce47b663ca256878",
-          "source_url": "https://news.pedaily.cn/202606/565201.shtml",
-          "source_title": "首发| 极佳视界三个月融资35亿，投资人开抢物理世界OpenAI",
-          "source_content_hash": "a652909321da946b",
-          "quote": "2024年9月完成近5000万元天使及天使+连续两轮融资，由北汽产投、奇绩创坛、华民投、龙鼎投资、清智资本、普超资本、PKSHA Algorithm Fund等机构投资",
-          "quote_hash": "9b9ce628f2153be8091acaf7f0dc51a7b8b7ba876c6095049a8b94630f2cfb97"
-        },
-        {
-          "source_id": "FISRC-7cae6e0a712567de",
-          "source_url": "https://finance.sina.com.cn/roll/2026-05-09/doc-inhxhuvc1441707.shtml",
-          "source_title": "小雨智造完成数亿元B+轮融资",
-          "source_content_hash": "320a14d704f62a2d42fda843b83e1e1542fcc79e50110842dd13af84440e9b2b",
-          "quote": "本轮融资由北汽产投、复星锐正和建发新兴三家新进投资方联合投资",
-          "quote_hash": "ac0161d399343ccd00f4ef57f57f7ccab85837dc32aa86b16f2d2118d8c700db"
-        },
-        {
-          "source_id": "FISRC-4782a6093d519a4d",
-          "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-16/doc-inhuryef7850324.shtml",
-          "source_title": "极佳视界完成15亿元B1轮融资",
-          "source_content_hash": "1249ab9a7b5d09d0d0f4f5724c90445e53a54409c6821fa0e8f197a595dca320",
-          "quote": "在2024年9月完成近5000万元天使及天使+连续两轮融资，由北汽产投、奇绩创坛、华民投、龙鼎投资、清智资本、PKSHA Algorithm Fund等机构投资",
-          "quote_hash": "f248e4020c87a3fcbc494e48fca7345bb5a100001eda55988f8393321e524d14"
+          "source_id": "baic_about",
+          "source_url": "https://www.baiccapital.com/aboutus/brief/signle-c7.html",
+          "source_title": "公司简介 - 北汽产投",
+          "source_content_hash": "91bec243a3fed6a98cad1381aaa5e5bdf13829a22eb2a480e2f88fa7d85ff395",
+          "quote": "北京汽车集团产业投资有限公司（以下简称“北汽产投”）成立于2012年底，注册资本35.35亿元人民币，是北汽集团产业投资平台与资本运作平台。官网介绍其投资方向包括新能源、新材料、智能网联、汽车零部件、车用半导体，并披露累计投资项目190余个。",
+          "quote_hash": "80c7bfe602259a2f38732ea7e08814d8ec85117222679a94aa6ad0e27ce67635"
         }
-      ],
-      "last_verified_at": "2026-09-25"
+      ]
     }
   }
 }

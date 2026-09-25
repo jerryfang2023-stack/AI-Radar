@@ -235,50 +235,93 @@
     ],
     "public_profile": {
       "profile_type": "person",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Eric Schmidt 当前按“个人投资者”收录。最新融资披露记录日期为 2026-07-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "coverage_note": "基于公司官网、院校档案或本人公开资料核验；个人融资参投记录仅作为本库可追溯案例，不代表完整投资组合。",
       "facts": [],
       "milestones": [],
-      "track_record": [
+      "contacts": [],
+      "summary": "Eric Schmidt 是科技企业管理者和投资人，曾于 2001—2011 年担任 Google CEO，并担任董事长至 2015 年。他现任 Relativity Space 董事长兼 CEO，并创立或共同创立多个科学、教育与公共政策项目。",
+      "current_roles": [
         {
-          "description": "融资来源记录：Gradium · 种子轮 · 2026-07-09 · 种子轮参投（2025年12月首次披露） · $100 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-9af7e6a4d7b3d5e7"
+          "title": "董事长兼 CEO",
+          "organization": "Relativity Space",
+          "source_id": "schmidt_bio"
         },
         {
-          "description": "融资来源记录：Advanced Machine Intelligence Labs (AMI Labs) · 种子轮 · 2026-03-12 · 本轮个人投资者 · 10.3亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-6c35525e379488bf"
+          "title": "主席",
+          "organization": "Special Competitive Studies Project",
+          "source_id": "schmidt_bio"
         },
         {
-          "description": "融资来源记录：Fundamental Research Labs · A轮 · 2025-08-01 · 种子轮参投 · $33 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3ac436d049634bc2"
+          "title": "董事会主席",
+          "organization": "Sandbox AQ",
+          "source_id": "schmidt_bio"
         }
       ],
-      "contacts": [],
+      "career": [
+        {
+          "organization": "Google / Alphabet",
+          "title": "CEO、董事长及技术顾问",
+          "period": "Google CEO/董事长 2001—2011；Google 董事长至 2015；Alphabet 执行董事长 2015—2018；技术顾问 2018—2020",
+          "description": "领导 Google 扩大基础设施和产品组合，之后为 Alphabet 管理层提供技术、业务与政策建议。",
+          "source_id": "schmidt_bio"
+        },
+        {
+          "organization": "Novell",
+          "title": "董事长兼 CEO",
+          "period": "加入 Google 之前",
+          "description": "曾负责企业软件公司的管理。",
+          "source_id": "schmidt_bio"
+        },
+        {
+          "organization": "Sun Microsystems",
+          "title": "首席技术官",
+          "period": "此前任职 14 年",
+          "description": "从管理岗位成长为 CTO。",
+          "source_id": "schmidt_bio"
+        },
+        {
+          "organization": "Relativity Space",
+          "title": "董事长兼 CEO",
+          "period": "现任（个人官网）",
+          "description": "负责商业航天企业领导工作。",
+          "source_id": "schmidt_bio"
+        },
+        {
+          "organization": "Special Competitive Studies Project",
+          "title": "创始人兼主席",
+          "period": "2021 年至今（官网介绍）",
+          "description": "推动关于美国长期竞争力及新兴技术影响的研究与建议。",
+          "source_id": "schmidt_bio"
+        }
+      ],
+      "education": [
+        {
+          "institution": "Princeton University",
+          "qualification": "电气工程学士",
+          "source_id": "schmidt_bio"
+        },
+        {
+          "institution": "University of California, Berkeley",
+          "qualification": "计算机科学硕士及博士",
+          "source_id": "schmidt_bio"
+        }
+      ],
+      "experience_summary": "职业经验涵盖科技公司管理、新兴技术投资、科学慈善与国家竞争力研究。",
+      "track_record": [
+        {
+          "description": "曾领导 Google 十年，并共同创立 Schmidt Futures、Schmidt Ocean Institute 等组织；这些组织活动不等同于个人投资基金业绩。",
+          "source_id": "schmidt_bio"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-9af7e6a4d7b3d5e7",
-          "source_url": "https://techcrunch.com/2026/07/09/paris-based-ai-voice-startup-gradium-raises-100m-seed-backed-by-nvidia",
-          "source_title": "巴黎AI语音初创Gradium获1亿美元种子轮融资，Nvidia参投",
-          "source_content_hash": "84b42b7082dca9a3",
-          "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel.",
-          "quote_hash": "8a279183c65affc5bbc27dbf381db1b94f01e896b7ab8f45b484410fc650fb5d"
-        },
-        {
-          "source_id": "FISRC-6c35525e379488bf",
-          "source_url": "https://futurumgroup.com/insights/yann-lecuns-ami-raises-1bn-seed-round-is-the-world-model-era-finally-here",
-          "source_title": "AMI Labs 获 1BN 美元种子轮融资，用于构建世界模型",
-          "source_content_hash": "adc0cc9ffe3c9dd0",
-          "quote": "individual investors including Jeff Bezos, Mark Cuban, Eric Schmidt, and Tim Berners-Lee",
-          "quote_hash": "60f42c380f06d6bfad4ffb0b92dfbc7d978e62e09c5c80452af8d9b4d7fea76a"
-        },
-        {
-          "source_id": "FISRC-3ac436d049634bc2",
-          "source_url": "https://techcrunch.com/2025/08/01/fundamental-research-labs-nabs-33-million-from-prosus-to-build-ai-agents-for-multiple-verticals/",
-          "source_title": "Fundamental Research Labs 获超 3000 万美元融资，用于跨垂直领域构建 AI 智能体",
-          "source_content_hash": "7ac40477f31de3c2",
-          "quote": "with participation from a16z Speedrun and Eric Schmidt",
-          "quote_hash": "e9a47343212197afc2f14cc7884d6536820ef9694080c8de5d1edeb520f0fdb0"
+          "source_id": "schmidt_bio",
+          "source_url": "https://ericschmidt.com/bio/",
+          "source_title": "About Eric | Eric Schmidt",
+          "source_content_hash": "a59f57b8cdb68692929dda637a72903936fc8e1fb6e1aca128d327b81259acf0",
+          "quote": "Eric Schmidt, KBE, Chair and CEO of Relativity Space ... during his tenure as CEO and Chairman from 2001 to 2011. From 2018-2020, Eric served as the Technical Advisor to Alphabet. He was Executive Chairman of Alphabet from 2015-2018 and remained Chairman of Google until 2015. Prior to Google, Eric was Chairman and CEO of Novell. He spent 14 years at Sun Microsystems, rising to Chief Technology Officer. Since 2022 he has served as Chairman of Sandbox AQ. In 2021, he launched, and currently Chairs, the Special Competitive Studies Project. Eric holds a bachelor’s degree in electrical engineering from Princeton University and a master’s degree and Ph.D. in computer science from UC Berkeley.",
+          "quote_hash": "b097ce8ea78b14ba0bed697e650b89800ff37800870b0d7797b37b3df992e109"
         }
       ],
       "last_verified_at": "2026-09-25"

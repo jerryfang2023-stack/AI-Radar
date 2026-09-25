@@ -435,51 +435,113 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "coverage_status": "activity_only",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "襄禾资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "coverage_note": "机构背景、创始团队、投资领域、公开组合案例与BP联系方式来自襄禾资本官网；规模数字及机构自述业绩按官网口径记录，不视为独立审计。",
+      "summary": "襄禾资本是2016年成立的早期科技投资机构，由原百度战略投资并购团队的汤和松、杨柳共同创立。官网关注人工智能、机器人、先进制造、汽车与新能源等技术领域，并自述管理规模超过150亿元、投资企业80余家。",
+      "facts": [
         {
-          "description": "融资来源记录：Moonshot AI · 轮次未披露 · 2026-05-07 · A轮参投 · 约20亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-5d82f5dc9fc96ce5"
+          "field": "founded",
+          "label": "成立年份",
+          "value": "2016",
+          "source_id": "xianghe_official_about"
         },
         {
-          "description": "融资来源记录：它石智航 · Pre-A轮 · 2026-04-16 · 本轮参投 · 超4.5亿美元（约30亿元）。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b4d6b7523ee32ad7"
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期科技创新",
+          "source_id": "xianghe_official_about"
         },
         {
-          "description": "融资来源记录：它石智航 · Pre-A轮 · 2026-04-16 · 天使轮参投 · 超4.5亿美元（约30亿元）。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-877032defba1f3e1"
+          "field": "sectors",
+          "label": "关注领域",
+          "value": [
+            "人工智能",
+            "机器人",
+            "先进制造",
+            "汽车产业链",
+            "新能源",
+            "新材料",
+            "企业服务",
+            "互联网"
+          ],
+          "source_id": "xianghe_official_about"
+        },
+        {
+          "field": "team",
+          "label": "创始团队",
+          "value": "汤和松、杨柳；二人曾负责百度战略投资并购",
+          "source_id": "xianghe_official_about"
+        },
+        {
+          "field": "self_reported_scale",
+          "label": "官网自述管理规模",
+          "value": "150亿元以上；统计口径和截至日期未在页面注明",
+          "source_id": "xianghe_official_about"
+        },
+        {
+          "field": "self_reported_portfolio",
+          "label": "官网自述投资企业数量",
+          "value": "80余家；截至日期未在页面注明",
+          "source_id": "xianghe_official_about"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2016",
+          "description": "成立襄禾资本。",
+          "source_id": "xianghe_official_about"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "官网展示襄禾对运满满、爱奇艺等企业长期支持的案例；这些是机构网站列示的组合和关系案例，不代表该机构所有投资的回报。",
+          "source_id": "xianghe_official_about"
+        },
+        {
+          "description": "官网自述其投资企业80余家、独角兽俱乐部企业10余家；未提供独立审计口径。",
+          "source_id": "xianghe_official_about"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "襄禾资本",
+          "url": "https://www.xianghecap.com/",
+          "source_id": "xianghe_official_about"
+        },
+        {
+          "kind": "email",
+          "label": "BP投递邮箱",
+          "value": "bp@xianghecap.com",
+          "url": "https://www.xianghecap.com/contact/contact-us",
+          "source_id": "xianghe_official_contact"
+        },
+        {
+          "kind": "address",
+          "label": "北京办公地址",
+          "value": "北京市海淀区融科资讯中心C座南楼16层",
+          "url": "https://www.xianghecap.com/contact/contact-us",
+          "source_id": "xianghe_official_contact"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-5d82f5dc9fc96ce5",
-          "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
-          "source_title": "月之暗面完成5亿美元C轮融资|c轮融资|现金|定西_网易科技",
-          "source_content_hash": "eeb091dd8db852e6",
-          "quote": "2023年7月A轮，美团龙珠、襄禾资本、蓝驰创投",
-          "quote_hash": "ce983bb92940dbb6f14d4981d97fbc6b7a87dc7e3c877c0706e8b68444455643"
+          "source_id": "xianghe_official_about",
+          "source_url": "https://www.xianghecap.com/about?tp=4",
+          "source_title": "关于我们 - 襄禾资本",
+          "source_content_hash": "e7005ccfd83cd4425204cf025a792b626ab74bc4849aaefe40be453363b05a0d",
+          "quote": "襄禾资本是原百度公司负责战略投资并购的副总裁汤和松先生和执行总监杨柳共同创立，持续聚焦技术变革和创新的早期机会。",
+          "quote_hash": "26369931ebe0227990eafdd304238ac145fa8991b87dc7c58b7f98bc8affa5a6"
         },
         {
-          "source_id": "FISRC-b4d6b7523ee32ad7",
-          "source_url": "https://news.pedaily.cn/202604/562863.shtml",
-          "source_title": "高瓴红杉，联合领投中国最大具身融资：它石智航融资4.55亿美金",
-          "source_content_hash": "0f321e5ffc10ea03",
-          "quote": "同时启明创投、线性资本、蓝驰创投、襄禾资本、洪泰基金等老股东也进行了战略投资加注",
-          "quote_hash": "ea6504441ab3f48998d2e8af72feaeac84f46475c936005d5c8982232af6d170"
-        },
-        {
-          "source_id": "FISRC-877032defba1f3e1",
-          "source_url": "https://www.chnfund.com/article/ARa02b65be-84b4-488b-1eea-3a18e4d5be1d",
-          "source_title": "它石智航完成天使轮1.2亿美元融资，蓝驰、启明、联想、高瓴等知名机构出手 中国基金报",
-          "source_content_hash": "9bc3ee36ffea717f",
-          "quote": "线性资本、恒旭资本、洪泰基金、联想创投、襄禾资本、高瓴创投跟投",
-          "quote_hash": "ad0a3e590ffa110b3cf74a5f62e58f3e387290b3c658e3f5c91e312af6a29fd6"
+          "source_id": "xianghe_official_contact",
+          "source_url": "https://www.xianghecap.com/contact/contact-us",
+          "source_title": "联系我们 - 襄禾资本",
+          "source_content_hash": "d96e70cb55f7f0b4156df7500a062dfd89d950b0b6f28016a2adc17204f90650",
+          "quote": "投递BP：bp@xianghecap.com；办公地址：北京市海淀区融科资讯中心C座南楼16层。",
+          "quote_hash": "1cad8fb0866cb5eea6a5c0c06295a11c86a088fc09e2f1f286f8e6c106fa488d"
         }
       ],
       "last_verified_at": "2026-09-25"

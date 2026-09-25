@@ -350,54 +350,129 @@
       }
     },
     "public_profile": {
-      "profile_type": "unverified",
-      "coverage_status": "activity_only",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "复星锐正 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-25",
+      "coverage_note": "复星锐正官网公开的成立时间、复星集团关系、业务策略、管理规模、组合、后续融资比例和办公地址均为机构自述；规模和比例可能随时间变化。官网北京页所列电话号码为000-0000000，未收录为有效电话。",
+      "summary": "复星锐正资本成立于2013年，是复星旗下全球化VC投资平台，借助复星健康、快乐、富足和智造等产业生态开展投资，目标是通过产业资源支持创新企业全球化发展。官网称其管理资金总规模超过100亿元，已投资百余家企业，并在多个国家和地区开展投资。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立年份",
+          "value": "2013",
+          "source_id": "fosunrz_home"
+        },
+        {
+          "field": "parent",
+          "label": "所属平台",
+          "value": "复星集团",
+          "source_id": "fosunrz_home"
+        },
+        {
+          "field": "investment_stages",
+          "label": "投资阶段",
+          "value": "全阶段",
+          "source_id": "fosunrz_home"
+        },
+        {
+          "field": "geographies",
+          "label": "官网列示投资区域",
+          "value": [
+            "中国",
+            "美国",
+            "以色列",
+            "印度",
+            "东南亚"
+          ],
+          "source_id": "fosunrz_home"
+        },
+        {
+          "field": "sectors",
+          "label": "官网概括投资方向",
+          "value": [
+            "科技",
+            "新消费",
+            "全球化"
+          ],
+          "source_id": "fosunrz_home"
+        },
+        {
+          "field": "self_reported_aum",
+          "label": "官网自述管理资金规模",
+          "value": "超过100亿元人民币；动态口径",
+          "source_id": "fosunrz_home"
+        },
+        {
+          "field": "self_reported_portfolio",
+          "label": "官网自述已投资企业",
+          "value": "百余家；其中超过70%的被投企业获得后续融资",
+          "source_id": "fosunrz_home"
+        },
+        {
+          "field": "team_locations",
+          "label": "官网列示团队覆盖",
+          "value": "7个地区",
+          "source_id": "fosunrz_home"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2013",
+          "description": "复星锐正资本成立。",
+          "source_id": "fosunrz_home"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：爱诗科技 · C轮 · 2026-07-14 · B+轮共同投资 · 29.8亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-09c3ca37737a71ce"
+          "description": "官网列示速腾聚创于2024年在港交所上市，复星锐正称其为早期投资企业，并记录了机构持续多轮陪伴。",
+          "source_id": "fosunrz_news"
         },
         {
-          "description": "融资来源记录：极佳视界 · B2轮 · 2026-06-15 · 本轮参投 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-ce47b663ca256878"
-        },
-        {
-          "description": "融资来源记录：小雨智造 · B+轮 · 2026-05-09 · 本轮联合领投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-7cae6e0a712567de"
+          "description": "官网称投资企业量化派于2025年在港交所主板上市，并列出元戎启行、爱诗科技、千寻智能等组合公司。",
+          "source_id": "fosunrz_news"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "复星锐正资本",
+          "url": "https://www.frzcapital.cn/",
+          "source_id": "fosunrz_home"
+        },
+        {
+          "kind": "address",
+          "label": "上海办公室",
+          "value": "上海市黄浦区中山二路600号外滩金融中心S1栋15F",
+          "url": "https://www.frzcapital.cn/",
+          "source_id": "fosunrz_home"
+        },
+        {
+          "kind": "address",
+          "label": "北京办公室",
+          "value": "北京市朝阳区朝阳北路237号复星国际中心25层2509室",
+          "url": "https://www.frzcapital.cn/",
+          "source_id": "fosunrz_home"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-09c3ca37737a71ce",
-          "source_url": "https://stcn.com/article/detail/3386786.html",
-          "source_title": "爱诗科技完成B+轮融资 ARR突破4000万美金",
-          "source_content_hash": "edea92990a31710b",
-          "quote": "10月17日，AI视频企业爱诗科技宣布完成1亿元人民币B+轮融资，由复星锐正、同创伟业、顺禧基金等共同投资。",
-          "quote_hash": "e9aae3ff1b77f083544e7ec6565ade2999a46e7937b2893111210677a5f7bd3e"
+          "source_id": "fosunrz_home",
+          "source_url": "https://www.frzcapital.cn/",
+          "source_title": "复星锐正资本官方网站",
+          "source_content_hash": "d335e6a4cf81a018bd6386a6a6fe9eac9d8a1f4e7fd9f5d44a832b94b4c0aff5",
+          "quote": "复星锐正资本成立于2013年，是复星旗下全球化VC投资平台；官网称在管资金总规模超过百亿元，投资百余家企业，团队覆盖7地，超过70%的被投企业获得后续融资。",
+          "quote_hash": "6a2569a62dc57d00067443c4ba3ccf0bf103f6ee8c14df67b99b81e2b79bdba9"
         },
         {
-          "source_id": "FISRC-ce47b663ca256878",
-          "source_url": "https://news.pedaily.cn/202606/565201.shtml",
-          "source_title": "首发| 极佳视界三个月融资35亿，投资人开抢物理世界OpenAI",
-          "source_content_hash": "a652909321da946b",
-          "quote": "由新加坡顶级跨境投资机构狮城资本（多轮持续追投）、中国-比利时基金（中比基金）、建投投资、万向钱潮、复星锐正、华盖创赢、金创投、德屹资本、华仓资本、元石基金等全球顶级国家队基金、产业资本、财务机构、国资平台共同投资",
-          "quote_hash": "d65491949cddef8dbbeb83255e6b1186dbf2888d42525d5dc2353472077af0ed"
-        },
-        {
-          "source_id": "FISRC-7cae6e0a712567de",
-          "source_url": "https://finance.sina.com.cn/roll/2026-05-09/doc-inhxhuvc1441707.shtml",
-          "source_title": "小雨智造完成数亿元B+轮融资",
-          "source_content_hash": "320a14d704f62a2d42fda843b83e1e1542fcc79e50110842dd13af84440e9b2b",
-          "quote": "本轮融资由北汽产投、复星锐正和建发新兴三家新进投资方联合投资",
-          "quote_hash": "ac0161d399343ccd00f4ef57f57f7ccab85837dc32aa86b16f2d2118d8c700db"
+          "source_id": "fosunrz_news",
+          "source_url": "https://www.frzcapital.cn/",
+          "source_title": "复星锐正官网投资组合与动态",
+          "source_content_hash": "44c111fffafd194e52b2ae95925273c8a332f92dbe0322b758fd22113b7a0732",
+          "quote": "官网列示早期投资企业速腾聚创于2024年港交所上市，量化派于2025年港交所上市，并列示元戎启行、爱诗科技、千寻智能等投资组合企业。",
+          "quote_hash": "2c07d54e34e4edbf6e63fda3c0834be0c0d804a621ff1e8c37a4e02a97758ae8"
         }
-      ],
-      "last_verified_at": "2026-09-25"
+      ]
     }
   }
 }
