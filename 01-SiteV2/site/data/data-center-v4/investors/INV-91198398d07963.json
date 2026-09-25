@@ -247,51 +247,86 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "B Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "B Capital 是一家提供早期及成长期投资的全球风险投资机构，官方资料列出的重点领域包括科技、医疗健康及能源与韧性。官网自述管理资产超过 120 亿美元、投资组合公司超过 200 家，并在全球设有 9 个办公地点。",
+      "facts": [
+        {
+          "field": "assets_under_management",
+          "label": "管理资产规模",
+          "value": "超过 120 亿美元（官网自述）",
+          "source_id": "bcapital_home"
+        },
+        {
+          "field": "portfolio_count",
+          "label": "组合公司数量",
+          "value": "超过 200 家，覆盖早期至后期阶段（官网自述）",
+          "source_id": "bcapital_home"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": [
+            "早期",
+            "成长期至后期"
+          ],
+          "source_id": "bcapital_home"
+        },
+        {
+          "field": "focus_sectors",
+          "label": "重点领域",
+          "value": [
+            "科技",
+            "医疗健康",
+            "能源与韧性"
+          ],
+          "source_id": "bcapital_home"
+        },
+        {
+          "field": "offices",
+          "label": "全球办公地点",
+          "value": "9 个（官网自述）",
+          "source_id": "bcapital_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Seltz · 种子轮 · 2026-06-24 · 本轮领投 · $12.5 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-05007e2b6b43ffda"
-        },
-        {
-          "description": "融资来源记录：Oro Labs · C轮 · 2026-03-12 · 既有投资方，本轮参投 · $100 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1347e63f3abd5d34"
-        },
-        {
-          "description": "融资来源记录：Goodfire AI · B轮 · 2026-02-05 · 本轮领投 · $150M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-f0d4056113fd3650"
+          "description": "官网展示科技、医疗健康和能源韧性领域的组合公司案例；组合展示为机构选列样本，不代表全部项目或投资回报表现。",
+          "source_id": "bcapital_home"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "B Capital 官方网站",
+          "value": "B Capital",
+          "url": "https://b.capital/",
+          "source_id": "bcapital_home"
+        },
+        {
+          "kind": "email",
+          "label": "投资人关系（LP/机构投资人联系；非创业项目投递邮箱）",
+          "value": "ir@b.capital",
+          "url": "https://b.capital/",
+          "source_id": "bcapital_home"
+        },
+        {
+          "kind": "email",
+          "label": "新闻媒体联系",
+          "value": "media@b.capital",
+          "url": "https://b.capital/",
+          "source_id": "bcapital_home"
+        }
+      ],
+      "coverage_status": "researched",
+      "coverage_note": "机构信息取自 B Capital 官网。资产规模、组合数量和地点数为机构当前自述；联系邮箱按官网栏目明确区分为投资人关系和媒体联系，不将其解释为创业项目投递渠道。",
       "sources": [
         {
-          "source_id": "FISRC-05007e2b6b43ffda",
-          "source_url": "https://siliconangle.com/2026/06/24/agentic-infrastructure-startup-seltz-raises-12-5m-help-ai-agents-search-web-answers/",
-          "source_title": "智能体基础设施初创公司Seltz融资1250万美元，帮助AI代理搜索网络答案 - SiliconANGLE",
-          "source_content_hash": "4affcb58ccdfce57",
-          "quote": "The round was led by Speedinvest and B Capital.",
-          "quote_hash": "b68bf6c771cbe20280d08f6c63dfd6539e7a25e0e0151d64b99b2f0be98c15ce"
-        },
-        {
-          "source_id": "FISRC-1347e63f3abd5d34",
-          "source_url": "https://fortune.com/2026/03/12/oro-labs-corporate-procurement-ai-efficiency/",
-          "source_title": "独家：Oro Labs利用AI智能体简化企业采购，获1亿美元融资",
-          "source_content_hash": "903d49978d88c371",
-          "quote": "Existing investors Norwest Venture Partners, B Capital, XYZ Capital, and Felicis are also participating.",
-          "quote_hash": "2758854e444ab6df3eb9d32daef6307353e57d69fcf49c16a5361ca212a26c43"
-        },
-        {
-          "source_id": "FISRC-f0d4056113fd3650",
-          "source_url": "https://theaiinsider.tech/2026/02/11/ai-lab-goodfire-raises-150m-at-1-25b-valuation-to-design-models-with-interpretability/",
-          "source_title": "AI Lab Goodfire Raises $150M at $1.25B Valuation to Design Models with Interpretability",
-          "source_content_hash": "065e9d351d56505a",
-          "quote": "a $150 million Series B funding round at a $1.25 billion valuation. The round was led by B Capital",
-          "quote_hash": "8181c9adcb232ce7cf278ebe7c39d0c701d57cdf5448c2ffea29995f41d9dfbf"
+          "source_id": "bcapital_home",
+          "source_url": "https://b.capital/",
+          "source_title": "B Capital | We empower entrepreneurs to think bigger",
+          "source_content_hash": "c229fbe1905fea1449eea19ab39f4518434c2ebb65a2b516d2bf090b93aba92d",
+          "quote": "B Capital has over $12 billion in assets under management and more than 200 early to late-stage portfolio companies across nine global locations. Early and late-stage support in Technology, Healthcare and Energy & Resilience. Investors ir@b.capital Press/Media media@b.capital",
+          "quote_hash": "5a44a49f589dddc7f986598627306800a43e0491082d1a7b737f0a0036bc2f08"
         }
       ],
       "last_verified_at": "2026-09-25"

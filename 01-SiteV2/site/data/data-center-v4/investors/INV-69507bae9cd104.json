@@ -280,51 +280,128 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "New Enterprise Associates 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "summary": "New Enterprise Associates（NEA）是一家创立于 1977 年的全球风险投资机构，主要投资科技与医疗健康企业，投资阶段从种子期延伸至 IPO。官网将自身定位为长期参与企业建设的创始人伙伴，并公开列出投资人关系、媒体及企业咨询联系方式。",
+      "facts": [
         {
-          "description": "融资来源记录：Wispr · B轮 · 2026-08-17 · 本轮参投 · $280M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2e7a3713da8f3e54"
+          "field": "founded",
+          "label": "成立时间",
+          "value": "1977 年",
+          "source_id": "nea_about"
         },
         {
-          "description": "融资来源记录：Valarian Technologies Ltd. · A轮 · 2026-07-14 · 本轮领投 · 5000万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-03aa198ddff34236"
+          "field": "assets_under_management",
+          "label": "管理资产规模",
+          "value": "超过 250 亿美元（NEA 官方口径，截至 2023-12-31）",
+          "source_id": "nea_leadership"
         },
         {
-          "description": "融资来源记录：Valarian Technologies Ltd. · A轮 · 2026-07-14 · 本轮领投 · 5000万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2b07f86358c31628"
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": [
+            "种子期",
+            "早期",
+            "成长期",
+            "IPO 前各阶段"
+          ],
+          "source_id": "nea_leadership"
+        },
+        {
+          "field": "focus_sectors",
+          "label": "核心投资领域",
+          "value": [
+            "科技",
+            "医疗健康"
+          ],
+          "source_id": "nea_about"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "1977",
+          "description": "New Enterprise Associates 成立。",
+          "source_id": "nea_about"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "NEA 2023 年官方公告称，截至 2023 年底管理资产超过 250 亿美元，历史投资企业中有 270 多家 IPO 和 450 多起并购；这是机构自述累计数据，非单一基金回报率。",
+          "source_id": "nea_leadership"
+        },
+        {
+          "description": "官网介绍其业务覆盖科技、医疗健康，并从种子期持续支持公司成长至 IPO；当前组合可在官网 portfolio 页面逐项查看。",
+          "source_id": "nea_about"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "NEA 官方网站",
+          "value": "New Enterprise Associates",
+          "url": "https://www.nea.com/",
+          "source_id": "nea_about"
+        },
+        {
+          "kind": "email",
+          "label": "投资人关系（潜在 LP）",
+          "value": "LPRelations@nea.com",
+          "url": "https://www.nea.com/contact",
+          "source_id": "nea_contact"
+        },
+        {
+          "kind": "email",
+          "label": "企业咨询",
+          "value": "bd@nea.com",
+          "url": "https://www.nea.com/contact",
+          "source_id": "nea_contact"
+        },
+        {
+          "kind": "email",
+          "label": "媒体联系",
+          "value": "esunkin@nea.com",
+          "url": "https://www.nea.com/contact",
+          "source_id": "nea_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "Menlo Park 办公室",
+          "value": "+1-650-854-9499",
+          "url": "https://www.nea.com/contact",
+          "source_id": "nea_contact"
+        },
+        {
+          "kind": "address",
+          "label": "Menlo Park 办公室",
+          "value": "2855 Sand Hill Road, Menlo Park, CA 94025, United States",
+          "url": "https://www.nea.com/contact",
+          "source_id": "nea_contact"
+        }
+      ],
+      "coverage_status": "researched",
+      "coverage_note": "机构沿革和投资策略来自 NEA 官方资料。AUM 与退出数量为 2023 年公告时的历史口径，未表述为当前规模或回报率。公开邮箱按官网栏目区分 LP 关系、企业咨询和媒体用途；未把投资人关系邮箱误作创业项目投递渠道。",
       "sources": [
         {
-          "source_id": "FISRC-2e7a3713da8f3e54",
-          "source_url": "https://www.gate.com/news/detail/wispr-raises-280m-in-series-b-funding-led-by-menlo-ventures-valuation-hits-23514139",
-          "source_title": "Wispr Raises $280M in Series B Funding Led by Menlo Ventures, Valuation Hits $2B | Gate News",
-          "source_content_hash": "affdfd9a0ccfb188",
-          "quote": "with participation from existing investors including Notable Capital, NEA, Neo Ventures, 8VC, and MVP Ventures, alongside new backers such as Acrew, Forerunner, Goodwater, Peak XV, Together Fund, and PLUS Capital",
-          "quote_hash": "aba568fee486e1922b966cf3934b60f576f64daef335bb8592e1d089190091dd"
+          "source_id": "nea_about",
+          "source_url": "https://www.nea.com/about",
+          "source_title": "About NEA | New Enterprise Associates",
+          "source_content_hash": "b54c96289a46deec9bcb86b9ea92a47b876806c977e86fb1a48c64ce3aaa14b8",
+          "quote": "For five decades, we’ve served as deeply engaged partners to our founders delivering stability, meaningful support, and expert guidance as they set out to build the future. Established in 1977, NEA has served as a partner to the founders and teams behind some of the most transformational innovations in healthcare and technology over the past five decades.",
+          "quote_hash": "36d5680cc8a001fce4cf2563eb20ec035155055a0cb9ce52b4abea85de11a3f4"
         },
         {
-          "source_id": "FISRC-03aa198ddff34236",
-          "source_url": "https://siliconangle.com/2026/07/14/sovereign-ai-infrastructure-startup-valarian-raises-50m-help-nations-secure-military-defense-systems/",
-          "source_title": "主权AI基础设施初创公司Valarian融资5000万美元，助力各国保障国防系统安全",
-          "source_content_hash": "ab99df0f3d10a2c4",
-          "quote": "The Series A round was led by new investor New Enterprise Associates",
-          "quote_hash": "416eca9057a9af276343242333734ff9165696bc63336d0a0a83e3d977450d78"
+          "source_id": "nea_leadership",
+          "source_url": "https://www.nea.com/news/press-releases/tony-florence-and-mohamad-makhzoumi-named-co-ceos-of-nea-scott-sandell-assumes-role-of-executive-chairman-cio",
+          "source_title": "Tony Florence and Mohamad Makhzoumi Named Co-CEOs of NEA | NEA",
+          "source_content_hash": "9aa694e21a669a4c162ccc6a17cd2129935258d8340cf7716b4aa82967479d36",
+          "quote": "Founded in 1977, NEA has over $25 billion in assets under management as of December 31, 2023, and invests in technology and healthcare companies at all stages in a company’s lifecycle, from seed stage through IPO. The firm’s long track record of investing includes more than 270 portfolio company IPOs and more than 450 mergers and acquisitions.",
+          "quote_hash": "43283aa248289de0d5f2c1ab84d2e9f224be82ce36ba1ee1e2737af7d364c887"
         },
         {
-          "source_id": "FISRC-2b07f86358c31628",
-          "source_url": "https://www.valarian.com/article/valarian-raises-50m-series-a-led-by-nea",
-          "source_title": "Valarian | $50M Series A led by NEA",
-          "source_content_hash": "7bd6453900b66054",
-          "quote": "Valarian raises $50M Series A led by NEA",
-          "quote_hash": "ad9746f7fb042abfad76ff5cbe546652a7719a2706487495dbdcfb2340abcf1f"
+          "source_id": "nea_contact",
+          "source_url": "https://www.nea.com/contact",
+          "source_title": "Contact NEA | New Enterprise Associates",
+          "source_content_hash": "3312a08e14472fa495ef416ea2de56b6270c8b721bd7b596cc9e81116b919b6b",
+          "quote": "Investor Relations LPRelations@nea.com Media Contact Erica Sunkin esunkin@nea.com Corporate Inquiries Shanna Hendriks bd@nea.com",
+          "quote_hash": "b657f17ea54811c9e0d34913681f9e271da506b4610184ed87b3242622786271"
         }
       ],
       "last_verified_at": "2026-09-25"

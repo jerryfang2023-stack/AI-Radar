@@ -8054,51 +8054,128 @@
       "last_verified_at": "2026-09-25"
     },
     "INV-69507bae9cd104": {
-      "profile_type": "organization",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "New Enterprise Associates 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "summary": "New Enterprise Associates（NEA）是一家创立于 1977 年的全球风险投资机构，主要投资科技与医疗健康企业，投资阶段从种子期延伸至 IPO。官网将自身定位为长期参与企业建设的创始人伙伴，并公开列出投资人关系、媒体及企业咨询联系方式。",
+      "facts": [
         {
-          "description": "融资来源记录：Wispr · B轮 · 2026-08-17 · 本轮参投 · $280M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2e7a3713da8f3e54"
+          "field": "founded",
+          "label": "成立时间",
+          "value": "1977 年",
+          "source_id": "nea_about"
         },
         {
-          "description": "融资来源记录：Valarian Technologies Ltd. · A轮 · 2026-07-14 · 本轮领投 · 5000万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-03aa198ddff34236"
+          "field": "assets_under_management",
+          "label": "管理资产规模",
+          "value": "超过 250 亿美元（NEA 官方口径，截至 2023-12-31）",
+          "source_id": "nea_leadership"
         },
         {
-          "description": "融资来源记录：Valarian Technologies Ltd. · A轮 · 2026-07-14 · 本轮领投 · 5000万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2b07f86358c31628"
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": [
+            "种子期",
+            "早期",
+            "成长期",
+            "IPO 前各阶段"
+          ],
+          "source_id": "nea_leadership"
+        },
+        {
+          "field": "focus_sectors",
+          "label": "核心投资领域",
+          "value": [
+            "科技",
+            "医疗健康"
+          ],
+          "source_id": "nea_about"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "1977",
+          "description": "New Enterprise Associates 成立。",
+          "source_id": "nea_about"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "NEA 2023 年官方公告称，截至 2023 年底管理资产超过 250 亿美元，历史投资企业中有 270 多家 IPO 和 450 多起并购；这是机构自述累计数据，非单一基金回报率。",
+          "source_id": "nea_leadership"
+        },
+        {
+          "description": "官网介绍其业务覆盖科技、医疗健康，并从种子期持续支持公司成长至 IPO；当前组合可在官网 portfolio 页面逐项查看。",
+          "source_id": "nea_about"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "NEA 官方网站",
+          "value": "New Enterprise Associates",
+          "url": "https://www.nea.com/",
+          "source_id": "nea_about"
+        },
+        {
+          "kind": "email",
+          "label": "投资人关系（潜在 LP）",
+          "value": "LPRelations@nea.com",
+          "url": "https://www.nea.com/contact",
+          "source_id": "nea_contact"
+        },
+        {
+          "kind": "email",
+          "label": "企业咨询",
+          "value": "bd@nea.com",
+          "url": "https://www.nea.com/contact",
+          "source_id": "nea_contact"
+        },
+        {
+          "kind": "email",
+          "label": "媒体联系",
+          "value": "esunkin@nea.com",
+          "url": "https://www.nea.com/contact",
+          "source_id": "nea_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "Menlo Park 办公室",
+          "value": "+1-650-854-9499",
+          "url": "https://www.nea.com/contact",
+          "source_id": "nea_contact"
+        },
+        {
+          "kind": "address",
+          "label": "Menlo Park 办公室",
+          "value": "2855 Sand Hill Road, Menlo Park, CA 94025, United States",
+          "url": "https://www.nea.com/contact",
+          "source_id": "nea_contact"
+        }
+      ],
+      "coverage_status": "researched",
+      "coverage_note": "机构沿革和投资策略来自 NEA 官方资料。AUM 与退出数量为 2023 年公告时的历史口径，未表述为当前规模或回报率。公开邮箱按官网栏目区分 LP 关系、企业咨询和媒体用途；未把投资人关系邮箱误作创业项目投递渠道。",
       "sources": [
         {
-          "source_id": "FISRC-2e7a3713da8f3e54",
-          "source_url": "https://www.gate.com/news/detail/wispr-raises-280m-in-series-b-funding-led-by-menlo-ventures-valuation-hits-23514139",
-          "source_title": "Wispr Raises $280M in Series B Funding Led by Menlo Ventures, Valuation Hits $2B | Gate News",
-          "source_content_hash": "affdfd9a0ccfb188",
-          "quote": "with participation from existing investors including Notable Capital, NEA, Neo Ventures, 8VC, and MVP Ventures, alongside new backers such as Acrew, Forerunner, Goodwater, Peak XV, Together Fund, and PLUS Capital",
-          "quote_hash": "aba568fee486e1922b966cf3934b60f576f64daef335bb8592e1d089190091dd"
+          "source_id": "nea_about",
+          "source_url": "https://www.nea.com/about",
+          "source_title": "About NEA | New Enterprise Associates",
+          "source_content_hash": "b54c96289a46deec9bcb86b9ea92a47b876806c977e86fb1a48c64ce3aaa14b8",
+          "quote": "For five decades, we’ve served as deeply engaged partners to our founders delivering stability, meaningful support, and expert guidance as they set out to build the future. Established in 1977, NEA has served as a partner to the founders and teams behind some of the most transformational innovations in healthcare and technology over the past five decades.",
+          "quote_hash": "36d5680cc8a001fce4cf2563eb20ec035155055a0cb9ce52b4abea85de11a3f4"
         },
         {
-          "source_id": "FISRC-03aa198ddff34236",
-          "source_url": "https://siliconangle.com/2026/07/14/sovereign-ai-infrastructure-startup-valarian-raises-50m-help-nations-secure-military-defense-systems/",
-          "source_title": "主权AI基础设施初创公司Valarian融资5000万美元，助力各国保障国防系统安全",
-          "source_content_hash": "ab99df0f3d10a2c4",
-          "quote": "The Series A round was led by new investor New Enterprise Associates",
-          "quote_hash": "416eca9057a9af276343242333734ff9165696bc63336d0a0a83e3d977450d78"
+          "source_id": "nea_leadership",
+          "source_url": "https://www.nea.com/news/press-releases/tony-florence-and-mohamad-makhzoumi-named-co-ceos-of-nea-scott-sandell-assumes-role-of-executive-chairman-cio",
+          "source_title": "Tony Florence and Mohamad Makhzoumi Named Co-CEOs of NEA | NEA",
+          "source_content_hash": "9aa694e21a669a4c162ccc6a17cd2129935258d8340cf7716b4aa82967479d36",
+          "quote": "Founded in 1977, NEA has over $25 billion in assets under management as of December 31, 2023, and invests in technology and healthcare companies at all stages in a company’s lifecycle, from seed stage through IPO. The firm’s long track record of investing includes more than 270 portfolio company IPOs and more than 450 mergers and acquisitions.",
+          "quote_hash": "43283aa248289de0d5f2c1ab84d2e9f224be82ce36ba1ee1e2737af7d364c887"
         },
         {
-          "source_id": "FISRC-2b07f86358c31628",
-          "source_url": "https://www.valarian.com/article/valarian-raises-50m-series-a-led-by-nea",
-          "source_title": "Valarian | $50M Series A led by NEA",
-          "source_content_hash": "7bd6453900b66054",
-          "quote": "Valarian raises $50M Series A led by NEA",
-          "quote_hash": "ad9746f7fb042abfad76ff5cbe546652a7719a2706487495dbdcfb2340abcf1f"
+          "source_id": "nea_contact",
+          "source_url": "https://www.nea.com/contact",
+          "source_title": "Contact NEA | New Enterprise Associates",
+          "source_content_hash": "3312a08e14472fa495ef416ea2de56b6270c8b721bd7b596cc9e81116b919b6b",
+          "quote": "Investor Relations LPRelations@nea.com Media Contact Erica Sunkin esunkin@nea.com Corporate Inquiries Shanna Hendriks bd@nea.com",
+          "quote_hash": "b657f17ea54811c9e0d34913681f9e271da506b4610184ed87b3242622786271"
         }
       ],
       "last_verified_at": "2026-09-25"
@@ -9192,51 +9269,100 @@
       "last_verified_at": "2026-09-25"
     },
     "INV-bf4e2cee6f0a9b": {
-      "profile_type": "organization",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Gradient Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "summary": "Gradient Ventures（品牌现用 Gradient）是专注 AI 的早期风险投资机构，官网记载其由 Google 合作创立，现以独立机构身份运作，Google 仍为其有限合伙人及长期合作方。2026 年宣布第五期 2.2 亿美元基金，重点覆盖 AI 原生软件、智能体、开发者工具、基础设施及现实世界 AI。",
+      "facts": [
         {
-          "description": "融资来源记录：Monogram AI, Inc. · 种子轮 · 2026-06-30 · 本轮参投 · $40M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-907e4297862ddd8c"
+          "field": "investment_mandate",
+          "label": "投资使命",
+          "value": "专注人工智能领域的早期风险投资",
+          "source_id": "gradient_fund5"
         },
         {
-          "description": "融资来源记录：Fazeshift · A轮 · 2026-05-07 · 本轮参投 · $17 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-37925b95fc58982a"
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": [
+            "Pre-Seed",
+            "Seed"
+          ],
+          "source_id": "gradient_fund5"
         },
         {
-          "description": "融资来源记录：Stack AI · 种子轮 · 2024-05-21 · 种子轮领投 · $3 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-79a4e94da8271853"
+          "field": "fund_size",
+          "label": "第五期基金规模",
+          "value": "2.2 亿美元（2026 年 3 月宣布）",
+          "source_id": "gradient_fund5"
+        },
+        {
+          "field": "focus_sectors",
+          "label": "重点方向",
+          "value": [
+            "AI 原生 B2B 软件",
+            "AI 智能体",
+            "AI 开发者技术栈",
+            "生物、材料、机器人与计算等现实世界 AI",
+            "开源、小模型与混合计算"
+          ],
+          "source_id": "gradient_fund5"
+        },
+        {
+          "field": "organizational_status",
+          "label": "机构沿革",
+          "value": "官网称 Gradient 于 2017 年与 Google 合作成立；2026 年作为独立机构运营，Google 仍为 LP 和长期合作方。",
+          "source_id": "gradient_fund5"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2026-03-17",
+          "description": "宣布超募的 2.2 亿美元 Fund 5，并表示将继续以独立机构形式运营。",
+          "source_id": "gradient_fund5"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "官网称过去十年支持超过 500 位 AI 创业者；这是基金官方累计统计。",
+          "source_id": "gradient_fund5"
+        },
+        {
+          "description": "投资组合页列出 Airspace Intelligence、Lambda、Writer、Oura、Streamlit 等项目与退出案例；为公开展示组合，不代表完整投资组合或基金回报。",
+          "source_id": "gradient_portfolio"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Gradient 官方网站及团队信息",
+          "value": "Gradient",
+          "url": "https://gradient.com/",
+          "source_id": "gradient_home"
+        }
+      ],
+      "coverage_status": "researched",
+      "coverage_note": "基金战略、成立沿革、Fund 5 规模和创始团队支持数据均来自 Gradient 官方文章与网站；500 位创始人和基金规模为机构自述。官网未提供通用创业项目申请邮箱，页面列出的 privacy@gradient.com 仅用于隐私事项，故不作为商务联系方式收录。",
       "sources": [
         {
-          "source_id": "FISRC-907e4297862ddd8c",
-          "source_url": "https://www.thesaasnews.com/news/monogram-raises-40m-seed/",
-          "source_title": "Monogram 获 4000 万美元种子轮融资",
-          "source_content_hash": "3a584a627e1535ff",
-          "quote": "Additional Investors: Conviction, SOMA Capital, Gradient Ventures, e2vc, Maxitech",
-          "quote_hash": "b9cc79ff3ee3d1c3099bd371810b95b959c3d159d0e36d1a13788c3e4675cda6"
+          "source_id": "gradient_fund5",
+          "source_url": "https://gradient.com/blog/posts/fund-5/",
+          "source_title": "Ten years of AI investing: Introducing Gradient’s $220 million Fund 5 | Gradient Ventures",
+          "source_content_hash": "e82c398a3a0c341f26d6c567b9c233de222f36bcf29d973de798e2e1ac506388",
+          "quote": "Today, we’re proud to share the next chapter of that story: officially announcing the launch of our oversubscribed $220 million Fund 5, and as a fully independent firm. Gradient’s independence allows us to do what we’ve always done: be the first institutional check, spend real time with founders at pre-seed and seed. Gradient was built to be an early-stage venture firm focused exclusively on AI, not as a side bet, but as the entire mandate.",
+          "quote_hash": "4dd3369feb60a6b68b3990c2a47233d5bff6004ab1cb2c1edd2bc928784fef6c"
         },
         {
-          "source_id": "FISRC-37925b95fc58982a",
-          "source_url": "https://news.crunchbase.com/fintech/fazeshift-accounts-receivable-ai-finance-ops-startup-funding/",
-          "source_title": "独家：Fazeshift获1700万美元融资，投资者押注AI驱动的财务运营，从应收账款起步",
-          "source_content_hash": "9fc07709e89b11cc",
-          "quote": "participation from Gradient Ventures (Google’s early-stage AI fund)",
-          "quote_hash": "1ca9ecd413f62c5d03f1e0bcdd445f4d51a04c94de14d3d1ccbd86fcfaac42e6"
+          "source_id": "gradient_home",
+          "source_url": "https://gradient.com/",
+          "source_title": "Gradient | The seed fund designed for founders in AI",
+          "source_content_hash": "2b6d4e85b1c9477a5ba8b0f16470874153d47fb1d404c6182b063ad333f9cfa4",
+          "quote": "Actively investing in every layer of AI.",
+          "quote_hash": "231913bb64ac13f33d10356f37612baa7015897177217f71ea3d9f4acb097d20"
         },
         {
-          "source_id": "FISRC-79a4e94da8271853",
-          "source_url": "https://dataphoenix.info/stack-ai-raised-3m-to-connect-the-latest-ai-innovations-with-the-most-urgent-applications/",
-          "source_title": "Stack AI raised $3M to connect the latest AI innovations with the most urgent applications",
-          "source_content_hash": "eb1befb4357516cf",
-          "quote": "Stack AI recently announced it closed a $3 million oversubscribed seed funding round led by Gradient Ventures",
-          "quote_hash": "70e2c351cbf12de0c2e90c8d80c350d84ab7f1d234a2b5e7cb4f7d220f013343"
+          "source_id": "gradient_portfolio",
+          "source_url": "https://gradient.com/portfolio/",
+          "source_title": "Gradient Portfolio",
+          "source_content_hash": "31c64c722a14219eeabc3a8886af58fae29acda96ac695772d0f95e0f84a113e",
+          "quote": "Actively investing in every layer of AI.",
+          "quote_hash": "231913bb64ac13f33d10356f37612baa7015897177217f71ea3d9f4acb097d20"
         }
       ],
       "last_verified_at": "2026-09-25"
@@ -9292,51 +9418,86 @@
       "last_verified_at": "2026-09-25"
     },
     "INV-91198398d07963": {
-      "profile_type": "organization",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "B Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "B Capital 是一家提供早期及成长期投资的全球风险投资机构，官方资料列出的重点领域包括科技、医疗健康及能源与韧性。官网自述管理资产超过 120 亿美元、投资组合公司超过 200 家，并在全球设有 9 个办公地点。",
+      "facts": [
+        {
+          "field": "assets_under_management",
+          "label": "管理资产规模",
+          "value": "超过 120 亿美元（官网自述）",
+          "source_id": "bcapital_home"
+        },
+        {
+          "field": "portfolio_count",
+          "label": "组合公司数量",
+          "value": "超过 200 家，覆盖早期至后期阶段（官网自述）",
+          "source_id": "bcapital_home"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": [
+            "早期",
+            "成长期至后期"
+          ],
+          "source_id": "bcapital_home"
+        },
+        {
+          "field": "focus_sectors",
+          "label": "重点领域",
+          "value": [
+            "科技",
+            "医疗健康",
+            "能源与韧性"
+          ],
+          "source_id": "bcapital_home"
+        },
+        {
+          "field": "offices",
+          "label": "全球办公地点",
+          "value": "9 个（官网自述）",
+          "source_id": "bcapital_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Seltz · 种子轮 · 2026-06-24 · 本轮领投 · $12.5 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-05007e2b6b43ffda"
-        },
-        {
-          "description": "融资来源记录：Oro Labs · C轮 · 2026-03-12 · 既有投资方，本轮参投 · $100 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1347e63f3abd5d34"
-        },
-        {
-          "description": "融资来源记录：Goodfire AI · B轮 · 2026-02-05 · 本轮领投 · $150M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-f0d4056113fd3650"
+          "description": "官网展示科技、医疗健康和能源韧性领域的组合公司案例；组合展示为机构选列样本，不代表全部项目或投资回报表现。",
+          "source_id": "bcapital_home"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "B Capital 官方网站",
+          "value": "B Capital",
+          "url": "https://b.capital/",
+          "source_id": "bcapital_home"
+        },
+        {
+          "kind": "email",
+          "label": "投资人关系（LP/机构投资人联系；非创业项目投递邮箱）",
+          "value": "ir@b.capital",
+          "url": "https://b.capital/",
+          "source_id": "bcapital_home"
+        },
+        {
+          "kind": "email",
+          "label": "新闻媒体联系",
+          "value": "media@b.capital",
+          "url": "https://b.capital/",
+          "source_id": "bcapital_home"
+        }
+      ],
+      "coverage_status": "researched",
+      "coverage_note": "机构信息取自 B Capital 官网。资产规模、组合数量和地点数为机构当前自述；联系邮箱按官网栏目明确区分为投资人关系和媒体联系，不将其解释为创业项目投递渠道。",
       "sources": [
         {
-          "source_id": "FISRC-05007e2b6b43ffda",
-          "source_url": "https://siliconangle.com/2026/06/24/agentic-infrastructure-startup-seltz-raises-12-5m-help-ai-agents-search-web-answers/",
-          "source_title": "智能体基础设施初创公司Seltz融资1250万美元，帮助AI代理搜索网络答案 - SiliconANGLE",
-          "source_content_hash": "4affcb58ccdfce57",
-          "quote": "The round was led by Speedinvest and B Capital.",
-          "quote_hash": "b68bf6c771cbe20280d08f6c63dfd6539e7a25e0e0151d64b99b2f0be98c15ce"
-        },
-        {
-          "source_id": "FISRC-1347e63f3abd5d34",
-          "source_url": "https://fortune.com/2026/03/12/oro-labs-corporate-procurement-ai-efficiency/",
-          "source_title": "独家：Oro Labs利用AI智能体简化企业采购，获1亿美元融资",
-          "source_content_hash": "903d49978d88c371",
-          "quote": "Existing investors Norwest Venture Partners, B Capital, XYZ Capital, and Felicis are also participating.",
-          "quote_hash": "2758854e444ab6df3eb9d32daef6307353e57d69fcf49c16a5361ca212a26c43"
-        },
-        {
-          "source_id": "FISRC-f0d4056113fd3650",
-          "source_url": "https://theaiinsider.tech/2026/02/11/ai-lab-goodfire-raises-150m-at-1-25b-valuation-to-design-models-with-interpretability/",
-          "source_title": "AI Lab Goodfire Raises $150M at $1.25B Valuation to Design Models with Interpretability",
-          "source_content_hash": "065e9d351d56505a",
-          "quote": "a $150 million Series B funding round at a $1.25 billion valuation. The round was led by B Capital",
-          "quote_hash": "8181c9adcb232ce7cf278ebe7c39d0c701d57cdf5448c2ffea29995f41d9dfbf"
+          "source_id": "bcapital_home",
+          "source_url": "https://b.capital/",
+          "source_title": "B Capital | We empower entrepreneurs to think bigger",
+          "source_content_hash": "c229fbe1905fea1449eea19ab39f4518434c2ebb65a2b516d2bf090b93aba92d",
+          "quote": "B Capital has over $12 billion in assets under management and more than 200 early to late-stage portfolio companies across nine global locations. Early and late-stage support in Technology, Healthcare and Energy & Resilience. Investors ir@b.capital Press/Media media@b.capital",
+          "quote_hash": "5a44a49f589dddc7f986598627306800a43e0491082d1a7b737f0a0036bc2f08"
         }
       ],
       "last_verified_at": "2026-09-25"

@@ -245,51 +245,100 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Gradient Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "summary": "Gradient Ventures（品牌现用 Gradient）是专注 AI 的早期风险投资机构，官网记载其由 Google 合作创立，现以独立机构身份运作，Google 仍为其有限合伙人及长期合作方。2026 年宣布第五期 2.2 亿美元基金，重点覆盖 AI 原生软件、智能体、开发者工具、基础设施及现实世界 AI。",
+      "facts": [
         {
-          "description": "融资来源记录：Monogram AI, Inc. · 种子轮 · 2026-06-30 · 本轮参投 · $40M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-907e4297862ddd8c"
+          "field": "investment_mandate",
+          "label": "投资使命",
+          "value": "专注人工智能领域的早期风险投资",
+          "source_id": "gradient_fund5"
         },
         {
-          "description": "融资来源记录：Fazeshift · A轮 · 2026-05-07 · 本轮参投 · $17 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-37925b95fc58982a"
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": [
+            "Pre-Seed",
+            "Seed"
+          ],
+          "source_id": "gradient_fund5"
         },
         {
-          "description": "融资来源记录：Stack AI · 种子轮 · 2024-05-21 · 种子轮领投 · $3 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-79a4e94da8271853"
+          "field": "fund_size",
+          "label": "第五期基金规模",
+          "value": "2.2 亿美元（2026 年 3 月宣布）",
+          "source_id": "gradient_fund5"
+        },
+        {
+          "field": "focus_sectors",
+          "label": "重点方向",
+          "value": [
+            "AI 原生 B2B 软件",
+            "AI 智能体",
+            "AI 开发者技术栈",
+            "生物、材料、机器人与计算等现实世界 AI",
+            "开源、小模型与混合计算"
+          ],
+          "source_id": "gradient_fund5"
+        },
+        {
+          "field": "organizational_status",
+          "label": "机构沿革",
+          "value": "官网称 Gradient 于 2017 年与 Google 合作成立；2026 年作为独立机构运营，Google 仍为 LP 和长期合作方。",
+          "source_id": "gradient_fund5"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2026-03-17",
+          "description": "宣布超募的 2.2 亿美元 Fund 5，并表示将继续以独立机构形式运营。",
+          "source_id": "gradient_fund5"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "官网称过去十年支持超过 500 位 AI 创业者；这是基金官方累计统计。",
+          "source_id": "gradient_fund5"
+        },
+        {
+          "description": "投资组合页列出 Airspace Intelligence、Lambda、Writer、Oura、Streamlit 等项目与退出案例；为公开展示组合，不代表完整投资组合或基金回报。",
+          "source_id": "gradient_portfolio"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Gradient 官方网站及团队信息",
+          "value": "Gradient",
+          "url": "https://gradient.com/",
+          "source_id": "gradient_home"
+        }
+      ],
+      "coverage_status": "researched",
+      "coverage_note": "基金战略、成立沿革、Fund 5 规模和创始团队支持数据均来自 Gradient 官方文章与网站；500 位创始人和基金规模为机构自述。官网未提供通用创业项目申请邮箱，页面列出的 privacy@gradient.com 仅用于隐私事项，故不作为商务联系方式收录。",
       "sources": [
         {
-          "source_id": "FISRC-907e4297862ddd8c",
-          "source_url": "https://www.thesaasnews.com/news/monogram-raises-40m-seed/",
-          "source_title": "Monogram 获 4000 万美元种子轮融资",
-          "source_content_hash": "3a584a627e1535ff",
-          "quote": "Additional Investors: Conviction, SOMA Capital, Gradient Ventures, e2vc, Maxitech",
-          "quote_hash": "b9cc79ff3ee3d1c3099bd371810b95b959c3d159d0e36d1a13788c3e4675cda6"
+          "source_id": "gradient_fund5",
+          "source_url": "https://gradient.com/blog/posts/fund-5/",
+          "source_title": "Ten years of AI investing: Introducing Gradient’s $220 million Fund 5 | Gradient Ventures",
+          "source_content_hash": "e82c398a3a0c341f26d6c567b9c233de222f36bcf29d973de798e2e1ac506388",
+          "quote": "Today, we’re proud to share the next chapter of that story: officially announcing the launch of our oversubscribed $220 million Fund 5, and as a fully independent firm. Gradient’s independence allows us to do what we’ve always done: be the first institutional check, spend real time with founders at pre-seed and seed. Gradient was built to be an early-stage venture firm focused exclusively on AI, not as a side bet, but as the entire mandate.",
+          "quote_hash": "4dd3369feb60a6b68b3990c2a47233d5bff6004ab1cb2c1edd2bc928784fef6c"
         },
         {
-          "source_id": "FISRC-37925b95fc58982a",
-          "source_url": "https://news.crunchbase.com/fintech/fazeshift-accounts-receivable-ai-finance-ops-startup-funding/",
-          "source_title": "独家：Fazeshift获1700万美元融资，投资者押注AI驱动的财务运营，从应收账款起步",
-          "source_content_hash": "9fc07709e89b11cc",
-          "quote": "participation from Gradient Ventures (Google’s early-stage AI fund)",
-          "quote_hash": "1ca9ecd413f62c5d03f1e0bcdd445f4d51a04c94de14d3d1ccbd86fcfaac42e6"
+          "source_id": "gradient_home",
+          "source_url": "https://gradient.com/",
+          "source_title": "Gradient | The seed fund designed for founders in AI",
+          "source_content_hash": "2b6d4e85b1c9477a5ba8b0f16470874153d47fb1d404c6182b063ad333f9cfa4",
+          "quote": "Actively investing in every layer of AI.",
+          "quote_hash": "231913bb64ac13f33d10356f37612baa7015897177217f71ea3d9f4acb097d20"
         },
         {
-          "source_id": "FISRC-79a4e94da8271853",
-          "source_url": "https://dataphoenix.info/stack-ai-raised-3m-to-connect-the-latest-ai-innovations-with-the-most-urgent-applications/",
-          "source_title": "Stack AI raised $3M to connect the latest AI innovations with the most urgent applications",
-          "source_content_hash": "eb1befb4357516cf",
-          "quote": "Stack AI recently announced it closed a $3 million oversubscribed seed funding round led by Gradient Ventures",
-          "quote_hash": "70e2c351cbf12de0c2e90c8d80c350d84ab7f1d234a2b5e7cb4f7d220f013343"
+          "source_id": "gradient_portfolio",
+          "source_url": "https://gradient.com/portfolio/",
+          "source_title": "Gradient Portfolio",
+          "source_content_hash": "31c64c722a14219eeabc3a8886af58fae29acda96ac695772d0f95e0f84a113e",
+          "quote": "Actively investing in every layer of AI.",
+          "quote_hash": "231913bb64ac13f33d10356f37612baa7015897177217f71ea3d9f4acb097d20"
         }
       ],
       "last_verified_at": "2026-09-25"
