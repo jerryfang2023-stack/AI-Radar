@@ -37012,51 +37012,114 @@
         }
       ],
       "public_profile": {
-        "profile_type": "unverified",
-        "coverage_status": "activity_only",
-        "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "元禾璞华 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-11；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "summary": "元禾璞华是元禾控股旗下专注集成电路产业的投资平台，重点覆盖芯片设计、制造与封测、设备零部件、半导体材料、EDA 软件，并延伸至人工智能、汽车电子、新材料和先进制造。官网及母公司资料显示，该团队具有长期半导体创业与产业投资经验；机构官网自述历史管理基金规模超过 150 亿元、投资集成电路项目超过 200 个。",
+        "facts": [
+          {
+            "field": "parent_platform",
+            "label": "所属平台",
+            "value": "元禾控股旗下专注集成电路产业投资的平台",
+            "source_id": "oriza_hua"
+          },
+          {
+            "field": "focus_sectors",
+            "label": "重点领域",
+            "value": [
+              "集成电路设计",
+              "芯片制造与封测",
+              "半导体设备及零部件",
+              "半导体材料",
+              "EDA/软件",
+              "人工智能",
+              "汽车电子",
+              "新材料",
+              "先进制造"
+            ],
+            "source_id": "oriza_hua"
+          },
+          {
+            "field": "team_experience",
+            "label": "团队产业经验",
+            "value": "核心成员在芯片设计、制造与封测环节拥有近 30 年创业和从业经验（母公司介绍）",
+            "source_id": "oriza_hua"
+          },
+          {
+            "field": "assets_under_management",
+            "label": "历史管理基金规模",
+            "value": "超过 150 亿元（机构官网自述）",
+            "source_id": "hua_home"
+          },
+          {
+            "field": "portfolio_count",
+            "label": "累计投资项目",
+            "value": "集成电路项目超过 200 个（机构官网自述）",
+            "source_id": "hua_home"
+          },
+          {
+            "field": "portfolio_outcomes",
+            "label": "上市企业培育",
+            "value": "培育行业上市公司 40 家以上（机构官网自述）",
+            "source_id": "hua_home"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：听象科技 · A2轮 · 2026-09-11 · A1轮领投 · 数千万人民币。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-5ba892cc4cd3496f"
+            "description": "元禾璞华官网称其投资的多家企业已上市，并列举华勤技术、思泰克、安集微电子、安凯微电子、博通集成等案例；此为官网展示案例。",
+            "source_id": "hua_home"
           },
           {
-            "description": "融资来源记录：听象科技 · A1轮 · 2026-08-04 · 本轮领投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-1ca175ac9946013a"
-          },
-          {
-            "description": "融资来源记录：灵睿智芯 · Pre-A轮 · 2026-07-13 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-760e793448781182"
+            "description": "元禾控股介绍其团队成员曾参与创办豪威科技、展讯通信、中芯国际等半导体企业；这是团队成员的产业经历，不等同于元禾璞华基金的投资业绩。",
+            "source_id": "oriza_hua"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "元禾璞华官方介绍与投资领域",
+            "value": "元禾璞华",
+            "url": "https://www.hua-capital.com/",
+            "source_id": "hua_home"
+          },
+          {
+            "kind": "email",
+            "label": "企业联系邮箱",
+            "value": "info@hua-capital.com",
+            "url": "https://www.hua-capital.com/",
+            "source_id": "hua_home"
+          },
+          {
+            "kind": "phone",
+            "label": "联系电话",
+            "value": "+86-10-83030088",
+            "url": "https://www.hua-capital.com/",
+            "source_id": "hua_home"
+          },
+          {
+            "kind": "address",
+            "label": "北京办公室",
+            "value": "北京市海淀区北航致真大厦 A 座 23F",
+            "url": "https://www.hua-capital.com/",
+            "source_id": "hua_home"
+          }
+        ],
+        "coverage_status": "researched",
+        "coverage_note": "投资领域与团队经验由元禾控股官网业务平台资料支持；基金规模、投资项目数量、上市企业数量及联系方式来自元禾璞华官网。规模与数量为机构自述，页面未注明精确统计基准日。",
         "sources": [
           {
-            "source_id": "FISRC-5ba892cc4cd3496f",
-            "source_url": "https://www.cyzone.cn/article/846160.html",
-            "source_title": "昂听ELEHEAR 完成数千万元新一轮融资，C资本领投",
-            "source_content_hash": "8964aa6d1b5771e5",
-            "quote": "继完成元禾璞华领投的数千万元A1轮融资后，昂听 ELEHEAR 再度完成数千万元的A2轮融资",
-            "quote_hash": "d554b8fc24824d3a482b3eaea4822a0492af65ac743f495a461f942935171e2d"
+            "source_id": "hua_home",
+            "source_url": "https://www.hua-capital.com/",
+            "source_title": "元禾璞华",
+            "source_content_hash": "cc2ecee4fc3b63e2",
+            "quote": "元禾璞华是集成电路领域活跃的投资团队之一，历史管理基金规模超过 150 亿元，累计投资集成电路项目超过 200 个，培育行业上市公司 40 家以上。投资方向涵盖集成电路、人工智能、新材料、机器人、光子与量子技术、智能制造等。北京办公室电话 010-83030088，邮箱 info@hua-capital.com。",
+            "quote_hash": "cc2ecee4fc3b63e29253869c8ef88ec2e86c8b314e695f5668be34790f2463ff"
           },
           {
-            "source_id": "FISRC-1ca175ac9946013a",
-            "source_url": "https://news.pedaily.cn/202608/567233.shtml",
-            "source_title": "听象科技（昂听Elehear） 完成数千万元新一轮融资，加速声学与AI算法研发",
-            "source_content_hash": "adf84267d0f50be0",
-            "quote": "本轮融资由元禾璞华领投。",
-            "quote_hash": "1b239c4f8a829228f7dfea1f8380de925600a97494672813a102616689cdfcdd"
-          },
-          {
-            "source_id": "FISRC-760e793448781182",
-            "source_url": "https://www.dramx.com/News/IC/20260713-40772.html",
-            "source_title": "灵睿智芯完成数亿元Pre-A轮融资，推进高端RISC-V内核P100流片落地",
-            "source_content_hash": "8b2b4166d5cfc440ad705c54d27b2283f53fb500afe8c3300ba824137632fc87",
-            "quote": "本轮融资投资方阵容多元，产业资本与专业创投联合入局，包括张江高科、壁仞科技、东方富海、中科创星、成为资本、石溪资本、上海天使会、孚腾资本、元禾璞华、华山资本十家机构，其中孚腾资本、元禾璞华、华山资本为企业早期天使轮老股东，持续加码投入。",
-            "quote_hash": "658e7d67f3d42944487a286b5d34aab2c70ac5a5666046ca016f64eb1759b918"
+            "source_id": "oriza_hua",
+            "source_url": "https://www.oriza.com/p/busi/bid-5wgvmqq7opoz.html",
+            "source_title": "元禾璞华业务平台 | 元禾控股",
+            "source_content_hash": "35f6cc156e02e4c732446d0e341d79489fab87bbc3319c4650eadd2c04c3c3c5",
+            "quote": "元禾璞华是元禾控股专注于集成电路产业领域投资的平台，重点关注集成电路设计、制造与封测、设备及零部件、半导体材料、EDA/软件，以及人工智能、汽车电子、新材料和先进制造。核心成员在芯片产业有近 30 年创业与从业经验。",
+            "quote_hash": "78b0cb24c01b96c39b12d1c9d0d877d6e9bf98009c55fe27f439d924337dff59"
           }
         ],
         "last_verified_at": "2026-09-25"
@@ -49110,51 +49173,100 @@
         }
       ],
       "public_profile": {
-        "profile_type": "organization",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "BV百度风投 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
-        "track_record": [
+        "summary": "BV百度风投是百度集团于 2017 年发起设立、独立运营的风险投资机构，自成立起聚焦人工智能及相关早期科技创业。官网列出 AIGC、具身智能、自动驾驶、先进计算与生命科学等方向，并表示已管理多支双币基金、投资全球 200 多家企业。官网提供 BP 投递邮箱。",
+        "facts": [
           {
-            "description": "融资来源记录：上海宇道生物技术有限公司 · C1轮 · 2026-09-15 · Pre-A轮共同领投 · 数千万美元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-ad78c308ef4022ae"
+            "field": "founded",
+            "label": "设立时间",
+            "value": "2017 年由百度集团发起设立；现以独立风险投资机构身份运营。",
+            "source_id": "bv_about"
           },
           {
-            "description": "融资来源记录：深朴智能 · Pre-A+轮 · 2026-09-04 · 历史轮次投资方 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-d3ed2da5812586ea"
+            "field": "investment_stage",
+            "label": "投资阶段",
+            "value": [
+              "早期",
+              "创业第一天"
+            ],
+            "source_id": "bv_about"
           },
           {
-            "description": "融资来源记录：西湖心辰 · B+轮 · 2026-08-03 · Pre-A轮领投方 · 数亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-c0671e3e70d8ae56"
+            "field": "focus_sectors",
+            "label": "重点领域",
+            "value": [
+              "AIGC",
+              "具身智能",
+              "自动驾驶",
+              "先进计算",
+              "生命科学"
+            ],
+            "source_id": "bv_about"
+          },
+          {
+            "field": "fund_structure",
+            "label": "基金结构",
+            "value": "管理多支美元及人民币基金（官网未披露当前规模）",
+            "source_id": "bv_about"
+          },
+          {
+            "field": "portfolio_count",
+            "label": "累计投资企业",
+            "value": "全球 200 余家（机构官网自述）",
+            "source_id": "bv_about"
+          },
+          {
+            "field": "headquarters",
+            "label": "官网列示地址",
+            "value": "北京市海淀区科学院南路 2 号融科资讯中心 C 座",
+            "source_id": "bv_about"
           }
         ],
-        "contacts": [],
+        "milestones": [
+          {
+            "date": "2017",
+            "description": "由百度集团发起设立，成为专注人工智能的独立风险投资机构。",
+            "source_id": "bv_about"
+          }
+        ],
+        "track_record": [
+          {
+            "description": "BV 官网展示跨 AIGC、具身智能、自动驾驶、先进计算及生命科学领域的投资案例，并自述累计投资企业超过 200 家；该数字为机构自报口径。",
+            "source_id": "bv_about"
+          }
+        ],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "BV百度风投官网",
+            "value": "BV百度风投",
+            "url": "https://www.baidu-venture.com/bv/",
+            "source_id": "bv_about"
+          },
+          {
+            "kind": "application",
+            "label": "商业计划书投递",
+            "value": "bp@baidu-ventures.com",
+            "url": "https://www.baidu-venture.com/bv/",
+            "source_id": "bv_about"
+          },
+          {
+            "kind": "email",
+            "label": "人才招聘联系",
+            "value": "hr@baidu-ventures.com",
+            "url": "https://www.baidu-venture.com/bv/",
+            "source_id": "bv_about"
+          }
+        ],
+        "coverage_status": "researched",
+        "coverage_note": "成立背景、投资策略、领域、组合数量、办公地址及 BP 邮箱均来自 BV 百度风投官网。组合数量和奖项为官网自述；官网未披露基金规模，故未采用第三方旧口径。",
         "sources": [
           {
-            "source_id": "FISRC-ad78c308ef4022ae",
-            "source_url": "https://news.pedaily.cn/202106/472864.shtml",
-            "source_title": "宇道生物完成2000万美元A轮融资，经纬中国领投_投资界",
-            "source_content_hash": "6252d8b33f3b6c2a",
-            "quote": "2020年12月，宇道生物完成近亿元Pre-A轮融资，由北极光创投、BV百度风投共同领投",
-            "quote_hash": "6ffd60b00f1b4f5cb0fe0c1818b8506e7336ce9f664e6e76e73187a5c3938b84"
-          },
-          {
-            "source_id": "FISRC-d3ed2da5812586ea",
-            "source_url": "https://caifuhao.eastmoney.com/news/20260906090920742991760",
-            "source_title": "一年四轮之后再拿数亿元Pre-A+轮融资，深朴智能的无本体数据引擎要从酒店跑进家庭_财富号_东方财富网",
-            "source_content_hash": "28bd9ee2b4d8b3a6",
-            "quote": "投资方名单覆盖顺为资本、BV百度风投、梅花创投、柯力传感等机构",
-            "quote_hash": "ad00b62d35c4db8f76f7f421e064b7c886795bec97b2ae4f2e967ddcbdbced87"
-          },
-          {
-            "source_id": "FISRC-c0671e3e70d8ae56",
-            "source_url": "https://m.36kr.com/p/2179385107198212",
-            "source_title": "36氪首发｜打通大模型、中间层、产品应用三层能力，「西湖心辰」完成Pre-A轮融资-36氪",
-            "source_content_hash": "1562678e3cf5d266",
-            "quote": "本轮融资领投方为百度风投",
-            "quote_hash": "edd77badf072b98fa744101d384a663989f16a20756d374e1f5ba9e0018970fd"
+            "source_id": "bv_about",
+            "source_url": "https://www.baidu-venture.com/bv/",
+            "source_title": "关于BV_百度集团发起的独立风险投资机构",
+            "source_content_hash": "530711d532083b7f",
+            "quote": "BV百度风投是由百度集团于 2017 年发起设立的独立风险投资机构。机构创立伊始便聚焦人工智能，投资方向覆盖 AIGC、具身智能、自动驾驶、先进计算、生命科学等领域。旗下管理多支双币基金，全球累计投资 200 余家企业。商业计划书投递 bp@baidu-ventures.com，简历投递 hr@baidu-ventures.com。",
+            "quote_hash": "530711d532083b7fad610c3dba95897713fa15d88d7a4e814f46e0bc20130d20"
           }
         ],
         "last_verified_at": "2026-09-25"
@@ -51835,51 +51947,129 @@
         }
       ],
       "public_profile": {
-        "profile_type": "unverified",
-        "coverage_status": "activity_only",
-        "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "中科创星 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "summary": "中科创星是一家专注硬科技的早期投资与孵化平台，提供从科研成果转化、创业孵化、早期资本到投后服务的综合支持。官网列出的代表性领域包括光电芯片、人工智能、生物技术、航空航天、信息技术、新材料、新能源和智能制造。机构官网自述管理基金规模超过 190 亿元、投资企业超过 600 家。",
+        "facts": [
+          {
+            "field": "investment_mandate",
+            "label": "投资定位",
+            "value": "专注硬科技早期投资与孵化",
+            "source_id": "casstar_home"
+          },
+          {
+            "field": "focus_sectors",
+            "label": "重点领域",
+            "value": [
+              "光电芯片",
+              "人工智能",
+              "生物技术",
+              "航空航天",
+              "信息技术",
+              "新材料",
+              "新能源",
+              "智能制造"
+            ],
+            "source_id": "casstar_home"
+          },
+          {
+            "field": "investment_model",
+            "label": "投资与孵化模式",
+            "value": "研究机构、早期投资、创业平台与投后服务相结合，协助科研成果转化。",
+            "source_id": "casstar_home"
+          },
+          {
+            "field": "portfolio_count",
+            "label": "投资企业数量",
+            "value": "600 余家（官网自述）",
+            "source_id": "casstar_home"
+          },
+          {
+            "field": "assets_under_management",
+            "label": "基金规模",
+            "value": "190 亿元以上（官网自述；网页未标注统计基准日）",
+            "source_id": "casstar_home"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：光啾科技 · 天使轮 · 2026-09-06 · 本轮参投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-eb5fe8fcd40d4621"
+            "description": "官网披露投资企业数量 600+、项目当前市值 16000+ 亿元及基金规模 190+ 亿元，均为机构公开页面自述数据，页面未注明精确基准日。",
+            "source_id": "casstar_home"
           },
           {
-            "description": "融资来源记录：松应科技 · 多轮融资 · 2026-08-31 · 天使轮投资方 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-1ae72db61aa80327"
-          },
-          {
-            "description": "融资来源记录：灵睿智芯 · Pre-A轮 · 2026-07-13 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-760e793448781182"
+            "description": "官网投资企业列表覆盖光电芯片、人工智能、生物技术、航空航天、智能制造、信息技术、新能源及新材料等领域；列表为公开展示项目样本。",
+            "source_id": "casstar_portfolio"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "中科创星官方网站",
+            "value": "中科创星",
+            "url": "https://www.casstar.com.cn/",
+            "source_id": "casstar_home"
+          },
+          {
+            "kind": "application",
+            "label": "商业计划书投递",
+            "value": "huyang@casstar.com.cn",
+            "url": "https://www.casstar.com.cn/contact-us/",
+            "source_id": "casstar_contact"
+          },
+          {
+            "kind": "email",
+            "label": "品牌合作联系",
+            "value": "casstarbrand@casstar.com.cn",
+            "url": "https://www.casstar.com.cn/contact-us/",
+            "source_id": "casstar_contact"
+          },
+          {
+            "kind": "address",
+            "label": "西安办公室",
+            "value": "西安市长安区毕原二路 3000 号西科控股硬科技企业社区曲率引擎 4 层",
+            "url": "https://www.casstar.com.cn/contact-us/",
+            "source_id": "casstar_contact"
+          },
+          {
+            "kind": "address",
+            "label": "北京办公室",
+            "value": "北京市海淀区知春路 63 号 6 号楼 5 层",
+            "url": "https://www.casstar.com.cn/contact-us/",
+            "source_id": "casstar_contact"
+          },
+          {
+            "kind": "address",
+            "label": "上海办公室",
+            "value": "上海市浦东新区纳贤路 800 号科海大楼 9 层",
+            "url": "https://www.casstar.com.cn/contact-us/",
+            "source_id": "casstar_contact"
+          }
+        ],
+        "coverage_status": "researched",
+        "coverage_note": "机构定位、投资领域、平台模式及规模数据来自中科创星官网；600+企业、190+亿元基金及项目当前市值均为官网自报且未见基准日。联系方式按官网对应栏目标记，商业计划书邮箱不与招聘邮箱混用。",
         "sources": [
           {
-            "source_id": "FISRC-eb5fe8fcd40d4621",
-            "source_url": "https://m.sohu.com/a/1072459266_546816?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
-            "source_title": "光啾科技完成数千万元天使轮融资",
-            "source_content_hash": "e03f1563df28426e",
-            "quote": "由鼎峰科创领投，浦东创投跟投，老股东中科创星持续加注",
-            "quote_hash": "de6162a9ca964bb5718758566a5656cac69973de503ea1ff52208aea9908d013"
+            "source_id": "casstar_home",
+            "source_url": "https://www.casstar.com.cn/",
+            "source_title": "中科创星官网",
+            "source_content_hash": "b986ca86e1078968aa96a3a40c8636f0af4133f53b026855950bd5c49abe032e",
+            "quote": "中科创星是专注于硬科技的早期投资机构，致力于打造研究机构、早期投资、创业平台、投后服务一体的硬科技创业生态。官网列出投资企业 600+、项目当前市值 16000+ 亿元、基金规模 190+ 亿元；硬科技方向包括光电芯片、人工智能、生物技术、航空航天、信息技术、新材料、新能源和智能制造。",
+            "quote_hash": "c4804a0f2d265ab4ed78a1c685269c48f41c51ea1b198211fa02aeff684c2fe9"
           },
           {
-            "source_id": "FISRC-1ae72db61aa80327",
-            "source_url": "https://m.sohu.com/a/1070029599_120285954?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
-            "source_title": "松应科技完成A轮、A1轮数亿元融资：「成物理AI时代安卓」",
-            "source_content_hash": "74d6b0dda1bd2148",
-            "quote": "2025年先后落地天使轮、Pre‑A轮，引入奇绩创坛、创业接力集团、中科创星、上海天使会、中新资本等机构",
-            "quote_hash": "f2c07c8e65c6a838bbc6b0ad5eb71c2acc3709345078921ab540bde1dcb9efc2"
+            "source_id": "casstar_portfolio",
+            "source_url": "https://www.casstar.com.cn/investment-enterprises/",
+            "source_title": "投资企业 - 中科创星",
+            "quote": "中科创星官网的投资企业页面按光电芯片、人工智能、生物技术、航空航天、智能制造、信息技术、新能源、新材料展示项目。",
+            "quote_hash": "be4ca1490aa3cf80c810829d86ff03987efbb9307563367f06a56e067830cc65",
+            "source_content_hash": "bb1bf6e9cbf40b42096a35460ffd412731a1b0c12f2d606297028d5e205be4bb"
           },
           {
-            "source_id": "FISRC-760e793448781182",
-            "source_url": "https://www.dramx.com/News/IC/20260713-40772.html",
-            "source_title": "灵睿智芯完成数亿元Pre-A轮融资，推进高端RISC-V内核P100流片落地",
-            "source_content_hash": "8b2b4166d5cfc440ad705c54d27b2283f53fb500afe8c3300ba824137632fc87",
-            "quote": "本轮融资投资方阵容多元，产业资本与专业创投联合入局，包括张江高科、壁仞科技、东方富海、中科创星、成为资本、石溪资本、上海天使会、孚腾资本、元禾璞华、华山资本十家机构",
-            "quote_hash": "ad4cdec7019f2399d9eeb7f30e95e9276f95aea304853b693997f7d42cec5400"
+            "source_id": "casstar_contact",
+            "source_url": "https://www.casstar.com.cn/contact-us/",
+            "source_title": "联系我们 - 中科创星",
+            "source_content_hash": "e80d47377ad2ccb4be844411fa12cb01e22dada034c30557c06287fcaab6a01b",
+            "quote": "商业计划书投递：huyang@casstar.com.cn；品牌合作：casstarbrand@casstar.com.cn；简历投递：cv@casstar.com.cn。官网列出西安、北京、上海办公室及其地址。",
+            "quote_hash": "389f74f49613386c073e0945096e9aacfe8f72be46ccdb13b722b7b46f7f8eef"
           }
         ],
         "last_verified_at": "2026-09-25"

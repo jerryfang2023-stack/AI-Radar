@@ -395,51 +395,114 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "coverage_status": "activity_only",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "元禾璞华 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-11；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "元禾璞华是元禾控股旗下专注集成电路产业的投资平台，重点覆盖芯片设计、制造与封测、设备零部件、半导体材料、EDA 软件，并延伸至人工智能、汽车电子、新材料和先进制造。官网及母公司资料显示，该团队具有长期半导体创业与产业投资经验；机构官网自述历史管理基金规模超过 150 亿元、投资集成电路项目超过 200 个。",
+      "facts": [
+        {
+          "field": "parent_platform",
+          "label": "所属平台",
+          "value": "元禾控股旗下专注集成电路产业投资的平台",
+          "source_id": "oriza_hua"
+        },
+        {
+          "field": "focus_sectors",
+          "label": "重点领域",
+          "value": [
+            "集成电路设计",
+            "芯片制造与封测",
+            "半导体设备及零部件",
+            "半导体材料",
+            "EDA/软件",
+            "人工智能",
+            "汽车电子",
+            "新材料",
+            "先进制造"
+          ],
+          "source_id": "oriza_hua"
+        },
+        {
+          "field": "team_experience",
+          "label": "团队产业经验",
+          "value": "核心成员在芯片设计、制造与封测环节拥有近 30 年创业和从业经验（母公司介绍）",
+          "source_id": "oriza_hua"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "历史管理基金规模",
+          "value": "超过 150 亿元（机构官网自述）",
+          "source_id": "hua_home"
+        },
+        {
+          "field": "portfolio_count",
+          "label": "累计投资项目",
+          "value": "集成电路项目超过 200 个（机构官网自述）",
+          "source_id": "hua_home"
+        },
+        {
+          "field": "portfolio_outcomes",
+          "label": "上市企业培育",
+          "value": "培育行业上市公司 40 家以上（机构官网自述）",
+          "source_id": "hua_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：听象科技 · A2轮 · 2026-09-11 · A1轮领投 · 数千万人民币。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-5ba892cc4cd3496f"
+          "description": "元禾璞华官网称其投资的多家企业已上市，并列举华勤技术、思泰克、安集微电子、安凯微电子、博通集成等案例；此为官网展示案例。",
+          "source_id": "hua_home"
         },
         {
-          "description": "融资来源记录：听象科技 · A1轮 · 2026-08-04 · 本轮领投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1ca175ac9946013a"
-        },
-        {
-          "description": "融资来源记录：灵睿智芯 · Pre-A轮 · 2026-07-13 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-760e793448781182"
+          "description": "元禾控股介绍其团队成员曾参与创办豪威科技、展讯通信、中芯国际等半导体企业；这是团队成员的产业经历，不等同于元禾璞华基金的投资业绩。",
+          "source_id": "oriza_hua"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "元禾璞华官方介绍与投资领域",
+          "value": "元禾璞华",
+          "url": "https://www.hua-capital.com/",
+          "source_id": "hua_home"
+        },
+        {
+          "kind": "email",
+          "label": "企业联系邮箱",
+          "value": "info@hua-capital.com",
+          "url": "https://www.hua-capital.com/",
+          "source_id": "hua_home"
+        },
+        {
+          "kind": "phone",
+          "label": "联系电话",
+          "value": "+86-10-83030088",
+          "url": "https://www.hua-capital.com/",
+          "source_id": "hua_home"
+        },
+        {
+          "kind": "address",
+          "label": "北京办公室",
+          "value": "北京市海淀区北航致真大厦 A 座 23F",
+          "url": "https://www.hua-capital.com/",
+          "source_id": "hua_home"
+        }
+      ],
+      "coverage_status": "researched",
+      "coverage_note": "投资领域与团队经验由元禾控股官网业务平台资料支持；基金规模、投资项目数量、上市企业数量及联系方式来自元禾璞华官网。规模与数量为机构自述，页面未注明精确统计基准日。",
       "sources": [
         {
-          "source_id": "FISRC-5ba892cc4cd3496f",
-          "source_url": "https://www.cyzone.cn/article/846160.html",
-          "source_title": "昂听ELEHEAR 完成数千万元新一轮融资，C资本领投",
-          "source_content_hash": "8964aa6d1b5771e5",
-          "quote": "继完成元禾璞华领投的数千万元A1轮融资后，昂听 ELEHEAR 再度完成数千万元的A2轮融资",
-          "quote_hash": "d554b8fc24824d3a482b3eaea4822a0492af65ac743f495a461f942935171e2d"
+          "source_id": "hua_home",
+          "source_url": "https://www.hua-capital.com/",
+          "source_title": "元禾璞华",
+          "source_content_hash": "cc2ecee4fc3b63e2",
+          "quote": "元禾璞华是集成电路领域活跃的投资团队之一，历史管理基金规模超过 150 亿元，累计投资集成电路项目超过 200 个，培育行业上市公司 40 家以上。投资方向涵盖集成电路、人工智能、新材料、机器人、光子与量子技术、智能制造等。北京办公室电话 010-83030088，邮箱 info@hua-capital.com。",
+          "quote_hash": "cc2ecee4fc3b63e29253869c8ef88ec2e86c8b314e695f5668be34790f2463ff"
         },
         {
-          "source_id": "FISRC-1ca175ac9946013a",
-          "source_url": "https://news.pedaily.cn/202608/567233.shtml",
-          "source_title": "听象科技（昂听Elehear） 完成数千万元新一轮融资，加速声学与AI算法研发",
-          "source_content_hash": "adf84267d0f50be0",
-          "quote": "本轮融资由元禾璞华领投。",
-          "quote_hash": "1b239c4f8a829228f7dfea1f8380de925600a97494672813a102616689cdfcdd"
-        },
-        {
-          "source_id": "FISRC-760e793448781182",
-          "source_url": "https://www.dramx.com/News/IC/20260713-40772.html",
-          "source_title": "灵睿智芯完成数亿元Pre-A轮融资，推进高端RISC-V内核P100流片落地",
-          "source_content_hash": "8b2b4166d5cfc440ad705c54d27b2283f53fb500afe8c3300ba824137632fc87",
-          "quote": "本轮融资投资方阵容多元，产业资本与专业创投联合入局，包括张江高科、壁仞科技、东方富海、中科创星、成为资本、石溪资本、上海天使会、孚腾资本、元禾璞华、华山资本十家机构，其中孚腾资本、元禾璞华、华山资本为企业早期天使轮老股东，持续加码投入。",
-          "quote_hash": "658e7d67f3d42944487a286b5d34aab2c70ac5a5666046ca016f64eb1759b918"
+          "source_id": "oriza_hua",
+          "source_url": "https://www.oriza.com/p/busi/bid-5wgvmqq7opoz.html",
+          "source_title": "元禾璞华业务平台 | 元禾控股",
+          "source_content_hash": "35f6cc156e02e4c732446d0e341d79489fab87bbc3319c4650eadd2c04c3c3c5",
+          "quote": "元禾璞华是元禾控股专注于集成电路产业领域投资的平台，重点关注集成电路设计、制造与封测、设备及零部件、半导体材料、EDA/软件，以及人工智能、汽车电子、新材料和先进制造。核心成员在芯片产业有近 30 年创业与从业经验。",
+          "quote_hash": "78b0cb24c01b96c39b12d1c9d0d877d6e9bf98009c55fe27f439d924337dff59"
         }
       ],
       "last_verified_at": "2026-09-25"

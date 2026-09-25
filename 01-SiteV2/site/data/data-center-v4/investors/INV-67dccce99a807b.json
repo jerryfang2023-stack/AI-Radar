@@ -294,51 +294,129 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "coverage_status": "activity_only",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "中科创星 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "中科创星是一家专注硬科技的早期投资与孵化平台，提供从科研成果转化、创业孵化、早期资本到投后服务的综合支持。官网列出的代表性领域包括光电芯片、人工智能、生物技术、航空航天、信息技术、新材料、新能源和智能制造。机构官网自述管理基金规模超过 190 亿元、投资企业超过 600 家。",
+      "facts": [
+        {
+          "field": "investment_mandate",
+          "label": "投资定位",
+          "value": "专注硬科技早期投资与孵化",
+          "source_id": "casstar_home"
+        },
+        {
+          "field": "focus_sectors",
+          "label": "重点领域",
+          "value": [
+            "光电芯片",
+            "人工智能",
+            "生物技术",
+            "航空航天",
+            "信息技术",
+            "新材料",
+            "新能源",
+            "智能制造"
+          ],
+          "source_id": "casstar_home"
+        },
+        {
+          "field": "investment_model",
+          "label": "投资与孵化模式",
+          "value": "研究机构、早期投资、创业平台与投后服务相结合，协助科研成果转化。",
+          "source_id": "casstar_home"
+        },
+        {
+          "field": "portfolio_count",
+          "label": "投资企业数量",
+          "value": "600 余家（官网自述）",
+          "source_id": "casstar_home"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "基金规模",
+          "value": "190 亿元以上（官网自述；网页未标注统计基准日）",
+          "source_id": "casstar_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：光啾科技 · 天使轮 · 2026-09-06 · 本轮参投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-eb5fe8fcd40d4621"
+          "description": "官网披露投资企业数量 600+、项目当前市值 16000+ 亿元及基金规模 190+ 亿元，均为机构公开页面自述数据，页面未注明精确基准日。",
+          "source_id": "casstar_home"
         },
         {
-          "description": "融资来源记录：松应科技 · 多轮融资 · 2026-08-31 · 天使轮投资方 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1ae72db61aa80327"
-        },
-        {
-          "description": "融资来源记录：灵睿智芯 · Pre-A轮 · 2026-07-13 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-760e793448781182"
+          "description": "官网投资企业列表覆盖光电芯片、人工智能、生物技术、航空航天、智能制造、信息技术、新能源及新材料等领域；列表为公开展示项目样本。",
+          "source_id": "casstar_portfolio"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "中科创星官方网站",
+          "value": "中科创星",
+          "url": "https://www.casstar.com.cn/",
+          "source_id": "casstar_home"
+        },
+        {
+          "kind": "application",
+          "label": "商业计划书投递",
+          "value": "huyang@casstar.com.cn",
+          "url": "https://www.casstar.com.cn/contact-us/",
+          "source_id": "casstar_contact"
+        },
+        {
+          "kind": "email",
+          "label": "品牌合作联系",
+          "value": "casstarbrand@casstar.com.cn",
+          "url": "https://www.casstar.com.cn/contact-us/",
+          "source_id": "casstar_contact"
+        },
+        {
+          "kind": "address",
+          "label": "西安办公室",
+          "value": "西安市长安区毕原二路 3000 号西科控股硬科技企业社区曲率引擎 4 层",
+          "url": "https://www.casstar.com.cn/contact-us/",
+          "source_id": "casstar_contact"
+        },
+        {
+          "kind": "address",
+          "label": "北京办公室",
+          "value": "北京市海淀区知春路 63 号 6 号楼 5 层",
+          "url": "https://www.casstar.com.cn/contact-us/",
+          "source_id": "casstar_contact"
+        },
+        {
+          "kind": "address",
+          "label": "上海办公室",
+          "value": "上海市浦东新区纳贤路 800 号科海大楼 9 层",
+          "url": "https://www.casstar.com.cn/contact-us/",
+          "source_id": "casstar_contact"
+        }
+      ],
+      "coverage_status": "researched",
+      "coverage_note": "机构定位、投资领域、平台模式及规模数据来自中科创星官网；600+企业、190+亿元基金及项目当前市值均为官网自报且未见基准日。联系方式按官网对应栏目标记，商业计划书邮箱不与招聘邮箱混用。",
       "sources": [
         {
-          "source_id": "FISRC-eb5fe8fcd40d4621",
-          "source_url": "https://m.sohu.com/a/1072459266_546816?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
-          "source_title": "光啾科技完成数千万元天使轮融资",
-          "source_content_hash": "e03f1563df28426e",
-          "quote": "由鼎峰科创领投，浦东创投跟投，老股东中科创星持续加注",
-          "quote_hash": "de6162a9ca964bb5718758566a5656cac69973de503ea1ff52208aea9908d013"
+          "source_id": "casstar_home",
+          "source_url": "https://www.casstar.com.cn/",
+          "source_title": "中科创星官网",
+          "source_content_hash": "b986ca86e1078968aa96a3a40c8636f0af4133f53b026855950bd5c49abe032e",
+          "quote": "中科创星是专注于硬科技的早期投资机构，致力于打造研究机构、早期投资、创业平台、投后服务一体的硬科技创业生态。官网列出投资企业 600+、项目当前市值 16000+ 亿元、基金规模 190+ 亿元；硬科技方向包括光电芯片、人工智能、生物技术、航空航天、信息技术、新材料、新能源和智能制造。",
+          "quote_hash": "c4804a0f2d265ab4ed78a1c685269c48f41c51ea1b198211fa02aeff684c2fe9"
         },
         {
-          "source_id": "FISRC-1ae72db61aa80327",
-          "source_url": "https://m.sohu.com/a/1070029599_120285954?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
-          "source_title": "松应科技完成A轮、A1轮数亿元融资：「成物理AI时代安卓」",
-          "source_content_hash": "74d6b0dda1bd2148",
-          "quote": "2025年先后落地天使轮、Pre‑A轮，引入奇绩创坛、创业接力集团、中科创星、上海天使会、中新资本等机构",
-          "quote_hash": "f2c07c8e65c6a838bbc6b0ad5eb71c2acc3709345078921ab540bde1dcb9efc2"
+          "source_id": "casstar_portfolio",
+          "source_url": "https://www.casstar.com.cn/investment-enterprises/",
+          "source_title": "投资企业 - 中科创星",
+          "quote": "中科创星官网的投资企业页面按光电芯片、人工智能、生物技术、航空航天、智能制造、信息技术、新能源、新材料展示项目。",
+          "quote_hash": "be4ca1490aa3cf80c810829d86ff03987efbb9307563367f06a56e067830cc65",
+          "source_content_hash": "bb1bf6e9cbf40b42096a35460ffd412731a1b0c12f2d606297028d5e205be4bb"
         },
         {
-          "source_id": "FISRC-760e793448781182",
-          "source_url": "https://www.dramx.com/News/IC/20260713-40772.html",
-          "source_title": "灵睿智芯完成数亿元Pre-A轮融资，推进高端RISC-V内核P100流片落地",
-          "source_content_hash": "8b2b4166d5cfc440ad705c54d27b2283f53fb500afe8c3300ba824137632fc87",
-          "quote": "本轮融资投资方阵容多元，产业资本与专业创投联合入局，包括张江高科、壁仞科技、东方富海、中科创星、成为资本、石溪资本、上海天使会、孚腾资本、元禾璞华、华山资本十家机构",
-          "quote_hash": "ad4cdec7019f2399d9eeb7f30e95e9276f95aea304853b693997f7d42cec5400"
+          "source_id": "casstar_contact",
+          "source_url": "https://www.casstar.com.cn/contact-us/",
+          "source_title": "联系我们 - 中科创星",
+          "source_content_hash": "e80d47377ad2ccb4be844411fa12cb01e22dada034c30557c06287fcaab6a01b",
+          "quote": "商业计划书投递：huyang@casstar.com.cn；品牌合作：casstarbrand@casstar.com.cn；简历投递：cv@casstar.com.cn。官网列出西安、北京、上海办公室及其地址。",
+          "quote_hash": "389f74f49613386c073e0945096e9aacfe8f72be46ccdb13b722b7b46f7f8eef"
         }
       ],
       "last_verified_at": "2026-09-25"
