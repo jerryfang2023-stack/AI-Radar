@@ -2,12 +2,12 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-ENTITY-REVIEW-V1.0",
     "funding_insight_version": "FUNDING-INSIGHT-V1.3",
-    "candidate_count": 1342,
-    "product_candidates": 799,
-    "person_candidates": 543,
-    "china_market_candidates": 458,
-    "china_market_product_candidates": 403,
-    "china_market_person_candidates": 55,
+    "candidate_count": 1344,
+    "product_candidates": 800,
+    "person_candidates": 544,
+    "china_market_candidates": 460,
+    "china_market_product_candidates": 404,
+    "china_market_person_candidates": 56,
     "rule": "Application evidence never mutates canonical V4 entities automatically."
   },
   "candidates": [
@@ -14677,6 +14677,40 @@
           "quote": "数巅智能创始人兼CEO 何昌华博士表示",
           "source_content_hash": "8dda700ee0f559df",
           "quote_hash": "94ea66d62c16ee60b6b912a91cb59d0ff29048957c4311e84d9de45b691a273b"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-95d7b246715d5394",
+      "candidate_kind": "person",
+      "research_name": "余腾",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-1067dd040b02ac41"
+      ],
+      "funding_insight_ids": [
+        "FI-c125fd9d45d6b383"
+      ],
+      "source_event_ids": [
+        "EV-589b3b522be5b280"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-735024582f88eccf",
+          "quote": "2021年，清华大学计算机系校友余腾带队创立清醒异构",
+          "source_content_hash": "a13785fb3b434348",
+          "quote_hash": "dec5fd509fa867d12ad643249e26f530d7d138bcea80fba70b7497b875203847"
+        },
+        {
+          "source_id": "FISRC-ec8473e1f5e395e8",
+          "quote": "公司创始人兼CEO余腾博士告诉36氪",
+          "source_content_hash": "cf5a90511681af19",
+          "quote_hash": "787506b1c1349d84492a1b9a48af6e8b06ae5ce8b791a6880e61a4df6f696fcb"
         }
       ],
       "market_regions": [
@@ -31335,6 +31369,34 @@
         "GLOBAL"
       ],
       "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-425391b95df58650",
+      "candidate_kind": "product",
+      "research_name": "RiverONE",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-1067dd040b02ac41"
+      ],
+      "funding_insight_ids": [
+        "FI-c125fd9d45d6b383"
+      ],
+      "source_event_ids": [
+        "EV-589b3b522be5b280"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-735024582f88eccf",
+          "quote": "在量子校准图表理解这一特定测试中，RiverONE以不足对比模型十分之一的19亿参数量，达到英伟达Ising Calibration 1至少95%的表现",
+          "source_content_hash": "a13785fb3b434348",
+          "quote_hash": "fb4b4612a16d8e7800f3d6a45c5a271809d16c4180d3d90fa92e3697ba356601"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
     },
     {
       "candidate_id": "FIER-dc2f5dc78a527bbf",

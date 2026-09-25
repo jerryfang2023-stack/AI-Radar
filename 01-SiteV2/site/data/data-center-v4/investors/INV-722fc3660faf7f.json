@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-25T00:43:09.950Z",
+    "latestDataDate": "2026-09-25",
+    "currentDate": "2026-09-25",
+    "eventCount": 3568,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,23 +61,29 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-01-26",
-    "latest_disclosed_at": "2026-01-26",
+    "latest_disclosed_at": "2026-09-24",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "series_a_plus",
       "series_b_plus"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-1067dd040b02ac41",
+        "canonical_entity_id": "",
+        "name": "清醒异构"
+      },
       {
         "entity_id": "EN-2c348893efb2316e",
         "canonical_entity_id": "EN-2c348893efb2316e",
@@ -85,6 +91,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-e4de813f5df93887",
+        "funding_insight_id": "FI-b6de4c88fe0455f3",
+        "event_ids": [
+          "EV-589b3b522be5b280"
+        ],
+        "company_entity_id": "EN-1067dd040b02ac41",
+        "company_canonical_entity_id": "",
+        "company_name": "清醒异构",
+        "round": "A+轮",
+        "round_code": "series_a_plus",
+        "round_original": "A+轮",
+        "amount_original": "近亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1 亿元"
+        },
+        "announced_at": "2026-09-24",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-735024582f88eccf",
+            "source_url": "https://news.pedaily.cn/202609/569586.shtml",
+            "source_title": "首发| 清醒异构完成A+轮融资，三个月两轮融资近亿元",
+            "source_content_hash": "a13785fb3b434348",
+            "quote": "投资方包括 晶凯资本、安徽高新投、道得投资、励石投资、中咨基金、徐汇资本、森蓝集团、泾东集团创始人 等。",
+            "quote_hash": "2003afd91363e5b5e30381a0045930a17a8884bc7462b16b29bf3895a560a15d"
+          }
+        ]
+      },
       {
         "activity_id": "IA-2beee1283b4952ed",
         "funding_insight_id": "FI-74076c9ab29354a8",
@@ -128,6 +174,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-735024582f88eccf",
+        "source_url": "https://news.pedaily.cn/202609/569586.shtml",
+        "source_title": "首发| 清醒异构完成A+轮融资，三个月两轮融资近亿元",
+        "source_content_hash": "a13785fb3b434348",
+        "quote": "投资方包括 晶凯资本、安徽高新投、道得投资、励石投资、中咨基金、徐汇资本、森蓝集团、泾东集团创始人 等。",
+        "quote_hash": "2003afd91363e5b5e30381a0045930a17a8884bc7462b16b29bf3895a560a15d"
+      },
       {
         "source_id": "FISRC-de3bb93d57d25bdf",
         "source_url": "https://www.cyzone.cn/article/822685.html",

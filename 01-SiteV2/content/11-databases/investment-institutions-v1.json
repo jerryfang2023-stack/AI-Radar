@@ -1,11 +1,11 @@
 {
   "meta": {
     "schema_version": "INVESTMENT-INSTITUTION-V1.0",
-    "generated_at": "2026-09-24T02:14:37.160Z",
+    "generated_at": "2026-09-25T00:42:32.674Z",
     "source_contract": "FUNDING-INSIGHT-V1.3",
-    "institution_count": 2045,
-    "evidence_backed_count": 2045,
-    "current_round_activity_count": 2346,
+    "institution_count": 2052,
+    "evidence_backed_count": 2052,
+    "current_round_activity_count": 2354,
     "individual_investor_count": 184,
     "boundary": "融资应用证据投影，不自动写入 Data Center V4 规范实体或 RELATION-V2.1"
   },
@@ -52865,6 +52865,146 @@
       ]
     },
     {
+      "id": "INV-722fc3660faf7f",
+      "name": "徐汇资本",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 2,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 2,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 2,
+      "china_market_company_count": 2,
+      "first_disclosed_at": "2026-01-26",
+      "latest_disclosed_at": "2026-09-24",
+      "role_counts": {
+        "participant": 2
+      },
+      "round_codes": [
+        "series_a_plus",
+        "series_b_plus"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-1067dd040b02ac41",
+          "canonical_entity_id": "",
+          "name": "清醒异构"
+        },
+        {
+          "entity_id": "EN-2c348893efb2316e",
+          "canonical_entity_id": "EN-2c348893efb2316e",
+          "name": "StepFun"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-e4de813f5df93887",
+          "funding_insight_id": "FI-b6de4c88fe0455f3",
+          "event_ids": [
+            "EV-589b3b522be5b280"
+          ],
+          "company_entity_id": "EN-1067dd040b02ac41",
+          "company_canonical_entity_id": "",
+          "company_name": "清醒异构",
+          "round": "A+轮",
+          "round_code": "series_a_plus",
+          "round_original": "A+轮",
+          "amount_original": "近亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 100000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 1 亿元"
+          },
+          "announced_at": "2026-09-24",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-735024582f88eccf",
+              "source_url": "https://news.pedaily.cn/202609/569586.shtml",
+              "source_title": "首发| 清醒异构完成A+轮融资，三个月两轮融资近亿元",
+              "source_content_hash": "a13785fb3b434348",
+              "quote": "投资方包括 晶凯资本、安徽高新投、道得投资、励石投资、中咨基金、徐汇资本、森蓝集团、泾东集团创始人 等。",
+              "quote_hash": "2003afd91363e5b5e30381a0045930a17a8884bc7462b16b29bf3895a560a15d"
+            }
+          ]
+        },
+        {
+          "activity_id": "IA-2beee1283b4952ed",
+          "funding_insight_id": "FI-74076c9ab29354a8",
+          "event_ids": [
+            "EV-df37e9341b5c7f04",
+            "EV-794f0a86004da0c9"
+          ],
+          "company_entity_id": "EN-2c348893efb2316e",
+          "company_canonical_entity_id": "EN-2c348893efb2316e",
+          "company_name": "StepFun",
+          "round": "B+轮",
+          "round_code": "series_b_plus",
+          "round_original": "B+轮",
+          "amount_original": "50 亿人民币",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 5000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "50 亿元"
+          },
+          "announced_at": "2026-01-26",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-de3bb93d57d25bdf",
+              "source_url": "https://www.cyzone.cn/article/822685.html",
+              "source_title": "刷新记录！上海基模独角兽阶跃星辰完成超 50 亿人民币 B+轮融资 - 创业邦",
+              "source_content_hash": "3cd27a7369aa4df5",
+              "quote": "参与机构包括上国投先导基金、国寿股权、浦东创投、徐汇资本、无锡梁溪基金、厦门国贸、华勤技术等产业投资人，腾讯、启明、五源等老股东进一步跟投。",
+              "quote_hash": "f7ef53522aea45928eba53deb0ba7cdf5dcbe8cc3badeae684c82ba9683bc546"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-735024582f88eccf",
+          "source_url": "https://news.pedaily.cn/202609/569586.shtml",
+          "source_title": "首发| 清醒异构完成A+轮融资，三个月两轮融资近亿元",
+          "source_content_hash": "a13785fb3b434348",
+          "quote": "投资方包括 晶凯资本、安徽高新投、道得投资、励石投资、中咨基金、徐汇资本、森蓝集团、泾东集团创始人 等。",
+          "quote_hash": "2003afd91363e5b5e30381a0045930a17a8884bc7462b16b29bf3895a560a15d"
+        },
+        {
+          "source_id": "FISRC-de3bb93d57d25bdf",
+          "source_url": "https://www.cyzone.cn/article/822685.html",
+          "source_title": "刷新记录！上海基模独角兽阶跃星辰完成超 50 亿人民币 B+轮融资 - 创业邦",
+          "source_content_hash": "3cd27a7369aa4df5",
+          "quote": "参与机构包括上国投先导基金、国寿股权、浦东创投、徐汇资本、无锡梁溪基金、厦门国贸、华勤技术等产业投资人，腾讯、启明、五源等老股东进一步跟投。",
+          "quote_hash": "f7ef53522aea45928eba53deb0ba7cdf5dcbe8cc3badeae684c82ba9683bc546"
+        }
+      ]
+    },
+    {
       "id": "INV-ff2dcd02d6c271",
       "name": "敦鸿资产",
       "aliases": [],
@@ -88981,6 +89121,601 @@
           "source_content_hash": "1d7bff75e7129429",
           "quote": "Abhishek Goyal, a co-founder of Tracxn, have also contributed.",
           "quote_hash": "d427d45ab2395b9dc8245a626f5417341df4042e5e309f6c485424b6b668e14e"
+        }
+      ]
+    },
+    {
+      "id": "INV-81ad92a2b487c6",
+      "name": "安徽高新投",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 1,
+      "china_market_company_count": 1,
+      "first_disclosed_at": "2026-09-24",
+      "latest_disclosed_at": "2026-09-24",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "series_a_plus"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-1067dd040b02ac41",
+          "canonical_entity_id": "",
+          "name": "清醒异构"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-1947fd2efe4be2a9",
+          "funding_insight_id": "FI-b6de4c88fe0455f3",
+          "event_ids": [
+            "EV-589b3b522be5b280"
+          ],
+          "company_entity_id": "EN-1067dd040b02ac41",
+          "company_canonical_entity_id": "",
+          "company_name": "清醒异构",
+          "round": "A+轮",
+          "round_code": "series_a_plus",
+          "round_original": "A+轮",
+          "amount_original": "近亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 100000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 1 亿元"
+          },
+          "announced_at": "2026-09-24",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-735024582f88eccf",
+              "source_url": "https://news.pedaily.cn/202609/569586.shtml",
+              "source_title": "首发| 清醒异构完成A+轮融资，三个月两轮融资近亿元",
+              "source_content_hash": "a13785fb3b434348",
+              "quote": "投资方包括 晶凯资本、安徽高新投、道得投资、励石投资、中咨基金、徐汇资本、森蓝集团、泾东集团创始人 等。",
+              "quote_hash": "2003afd91363e5b5e30381a0045930a17a8884bc7462b16b29bf3895a560a15d"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-735024582f88eccf",
+          "source_url": "https://news.pedaily.cn/202609/569586.shtml",
+          "source_title": "首发| 清醒异构完成A+轮融资，三个月两轮融资近亿元",
+          "source_content_hash": "a13785fb3b434348",
+          "quote": "投资方包括 晶凯资本、安徽高新投、道得投资、励石投资、中咨基金、徐汇资本、森蓝集团、泾东集团创始人 等。",
+          "quote_hash": "2003afd91363e5b5e30381a0045930a17a8884bc7462b16b29bf3895a560a15d"
+        }
+      ]
+    },
+    {
+      "id": "INV-484e5755959596",
+      "name": "道得投资",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 1,
+      "china_market_company_count": 1,
+      "first_disclosed_at": "2026-09-24",
+      "latest_disclosed_at": "2026-09-24",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "series_a_plus"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-1067dd040b02ac41",
+          "canonical_entity_id": "",
+          "name": "清醒异构"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-89bc3893584fa918",
+          "funding_insight_id": "FI-b6de4c88fe0455f3",
+          "event_ids": [
+            "EV-589b3b522be5b280"
+          ],
+          "company_entity_id": "EN-1067dd040b02ac41",
+          "company_canonical_entity_id": "",
+          "company_name": "清醒异构",
+          "round": "A+轮",
+          "round_code": "series_a_plus",
+          "round_original": "A+轮",
+          "amount_original": "近亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 100000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 1 亿元"
+          },
+          "announced_at": "2026-09-24",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-735024582f88eccf",
+              "source_url": "https://news.pedaily.cn/202609/569586.shtml",
+              "source_title": "首发| 清醒异构完成A+轮融资，三个月两轮融资近亿元",
+              "source_content_hash": "a13785fb3b434348",
+              "quote": "投资方包括 晶凯资本、安徽高新投、道得投资、励石投资、中咨基金、徐汇资本、森蓝集团、泾东集团创始人 等。",
+              "quote_hash": "2003afd91363e5b5e30381a0045930a17a8884bc7462b16b29bf3895a560a15d"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-735024582f88eccf",
+          "source_url": "https://news.pedaily.cn/202609/569586.shtml",
+          "source_title": "首发| 清醒异构完成A+轮融资，三个月两轮融资近亿元",
+          "source_content_hash": "a13785fb3b434348",
+          "quote": "投资方包括 晶凯资本、安徽高新投、道得投资、励石投资、中咨基金、徐汇资本、森蓝集团、泾东集团创始人 等。",
+          "quote_hash": "2003afd91363e5b5e30381a0045930a17a8884bc7462b16b29bf3895a560a15d"
+        }
+      ]
+    },
+    {
+      "id": "INV-d7dd116e2c1a45",
+      "name": "泾东集团创始人",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "corporate_investor",
+      "investor_kind_label": "企业投资方",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 1,
+      "china_market_company_count": 1,
+      "first_disclosed_at": "2026-09-24",
+      "latest_disclosed_at": "2026-09-24",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "series_a_plus"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-1067dd040b02ac41",
+          "canonical_entity_id": "",
+          "name": "清醒异构"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-acc2f04b167984ab",
+          "funding_insight_id": "FI-b6de4c88fe0455f3",
+          "event_ids": [
+            "EV-589b3b522be5b280"
+          ],
+          "company_entity_id": "EN-1067dd040b02ac41",
+          "company_canonical_entity_id": "",
+          "company_name": "清醒异构",
+          "round": "A+轮",
+          "round_code": "series_a_plus",
+          "round_original": "A+轮",
+          "amount_original": "近亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 100000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 1 亿元"
+          },
+          "announced_at": "2026-09-24",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-735024582f88eccf",
+              "source_url": "https://news.pedaily.cn/202609/569586.shtml",
+              "source_title": "首发| 清醒异构完成A+轮融资，三个月两轮融资近亿元",
+              "source_content_hash": "a13785fb3b434348",
+              "quote": "投资方包括 晶凯资本、安徽高新投、道得投资、励石投资、中咨基金、徐汇资本、森蓝集团、泾东集团创始人 等。",
+              "quote_hash": "2003afd91363e5b5e30381a0045930a17a8884bc7462b16b29bf3895a560a15d"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-735024582f88eccf",
+          "source_url": "https://news.pedaily.cn/202609/569586.shtml",
+          "source_title": "首发| 清醒异构完成A+轮融资，三个月两轮融资近亿元",
+          "source_content_hash": "a13785fb3b434348",
+          "quote": "投资方包括 晶凯资本、安徽高新投、道得投资、励石投资、中咨基金、徐汇资本、森蓝集团、泾东集团创始人 等。",
+          "quote_hash": "2003afd91363e5b5e30381a0045930a17a8884bc7462b16b29bf3895a560a15d"
+        }
+      ]
+    },
+    {
+      "id": "INV-3a8a39755087f5",
+      "name": "晶凯资本",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 1,
+      "china_market_company_count": 1,
+      "first_disclosed_at": "2026-09-24",
+      "latest_disclosed_at": "2026-09-24",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "series_a_plus"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-1067dd040b02ac41",
+          "canonical_entity_id": "",
+          "name": "清醒异构"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-0b7b43480651ca22",
+          "funding_insight_id": "FI-b6de4c88fe0455f3",
+          "event_ids": [
+            "EV-589b3b522be5b280"
+          ],
+          "company_entity_id": "EN-1067dd040b02ac41",
+          "company_canonical_entity_id": "",
+          "company_name": "清醒异构",
+          "round": "A+轮",
+          "round_code": "series_a_plus",
+          "round_original": "A+轮",
+          "amount_original": "近亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 100000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 1 亿元"
+          },
+          "announced_at": "2026-09-24",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-735024582f88eccf",
+              "source_url": "https://news.pedaily.cn/202609/569586.shtml",
+              "source_title": "首发| 清醒异构完成A+轮融资，三个月两轮融资近亿元",
+              "source_content_hash": "a13785fb3b434348",
+              "quote": "投资方包括 晶凯资本、安徽高新投、道得投资、励石投资、中咨基金、徐汇资本、森蓝集团、泾东集团创始人 等。",
+              "quote_hash": "2003afd91363e5b5e30381a0045930a17a8884bc7462b16b29bf3895a560a15d"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-735024582f88eccf",
+          "source_url": "https://news.pedaily.cn/202609/569586.shtml",
+          "source_title": "首发| 清醒异构完成A+轮融资，三个月两轮融资近亿元",
+          "source_content_hash": "a13785fb3b434348",
+          "quote": "投资方包括 晶凯资本、安徽高新投、道得投资、励石投资、中咨基金、徐汇资本、森蓝集团、泾东集团创始人 等。",
+          "quote_hash": "2003afd91363e5b5e30381a0045930a17a8884bc7462b16b29bf3895a560a15d"
+        }
+      ]
+    },
+    {
+      "id": "INV-5dcb390b03e6ea",
+      "name": "励石投资",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "unverified_investor",
+      "investor_kind_label": "投资方（类型待核验）",
+      "classification_confidence": "unverified",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 1,
+      "china_market_company_count": 1,
+      "first_disclosed_at": "2026-09-24",
+      "latest_disclosed_at": "2026-09-24",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "series_a_plus"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-1067dd040b02ac41",
+          "canonical_entity_id": "",
+          "name": "清醒异构"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-3aa10a34ddb7e32e",
+          "funding_insight_id": "FI-b6de4c88fe0455f3",
+          "event_ids": [
+            "EV-589b3b522be5b280"
+          ],
+          "company_entity_id": "EN-1067dd040b02ac41",
+          "company_canonical_entity_id": "",
+          "company_name": "清醒异构",
+          "round": "A+轮",
+          "round_code": "series_a_plus",
+          "round_original": "A+轮",
+          "amount_original": "近亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 100000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 1 亿元"
+          },
+          "announced_at": "2026-09-24",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-735024582f88eccf",
+              "source_url": "https://news.pedaily.cn/202609/569586.shtml",
+              "source_title": "首发| 清醒异构完成A+轮融资，三个月两轮融资近亿元",
+              "source_content_hash": "a13785fb3b434348",
+              "quote": "投资方包括 晶凯资本、安徽高新投、道得投资、励石投资、中咨基金、徐汇资本、森蓝集团、泾东集团创始人 等。",
+              "quote_hash": "2003afd91363e5b5e30381a0045930a17a8884bc7462b16b29bf3895a560a15d"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-735024582f88eccf",
+          "source_url": "https://news.pedaily.cn/202609/569586.shtml",
+          "source_title": "首发| 清醒异构完成A+轮融资，三个月两轮融资近亿元",
+          "source_content_hash": "a13785fb3b434348",
+          "quote": "投资方包括 晶凯资本、安徽高新投、道得投资、励石投资、中咨基金、徐汇资本、森蓝集团、泾东集团创始人 等。",
+          "quote_hash": "2003afd91363e5b5e30381a0045930a17a8884bc7462b16b29bf3895a560a15d"
+        }
+      ]
+    },
+    {
+      "id": "INV-4a7834341a4138",
+      "name": "森蓝集团",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "corporate_investor",
+      "investor_kind_label": "企业投资方",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 1,
+      "china_market_company_count": 1,
+      "first_disclosed_at": "2026-09-24",
+      "latest_disclosed_at": "2026-09-24",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "series_a_plus"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-1067dd040b02ac41",
+          "canonical_entity_id": "",
+          "name": "清醒异构"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-ef666266c5724808",
+          "funding_insight_id": "FI-b6de4c88fe0455f3",
+          "event_ids": [
+            "EV-589b3b522be5b280"
+          ],
+          "company_entity_id": "EN-1067dd040b02ac41",
+          "company_canonical_entity_id": "",
+          "company_name": "清醒异构",
+          "round": "A+轮",
+          "round_code": "series_a_plus",
+          "round_original": "A+轮",
+          "amount_original": "近亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 100000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 1 亿元"
+          },
+          "announced_at": "2026-09-24",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-735024582f88eccf",
+              "source_url": "https://news.pedaily.cn/202609/569586.shtml",
+              "source_title": "首发| 清醒异构完成A+轮融资，三个月两轮融资近亿元",
+              "source_content_hash": "a13785fb3b434348",
+              "quote": "投资方包括 晶凯资本、安徽高新投、道得投资、励石投资、中咨基金、徐汇资本、森蓝集团、泾东集团创始人 等。",
+              "quote_hash": "2003afd91363e5b5e30381a0045930a17a8884bc7462b16b29bf3895a560a15d"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-735024582f88eccf",
+          "source_url": "https://news.pedaily.cn/202609/569586.shtml",
+          "source_title": "首发| 清醒异构完成A+轮融资，三个月两轮融资近亿元",
+          "source_content_hash": "a13785fb3b434348",
+          "quote": "投资方包括 晶凯资本、安徽高新投、道得投资、励石投资、中咨基金、徐汇资本、森蓝集团、泾东集团创始人 等。",
+          "quote_hash": "2003afd91363e5b5e30381a0045930a17a8884bc7462b16b29bf3895a560a15d"
+        }
+      ]
+    },
+    {
+      "id": "INV-f5d53393654385",
+      "name": "中咨基金",
+      "aliases": [],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 1,
+      "historical_or_ambiguous_count": 0,
+      "portfolio_company_count": 1,
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_activity_count": 1,
+      "china_market_company_count": 1,
+      "first_disclosed_at": "2026-09-24",
+      "latest_disclosed_at": "2026-09-24",
+      "role_counts": {
+        "participant": 1
+      },
+      "round_codes": [
+        "series_a_plus"
+      ],
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-1067dd040b02ac41",
+          "canonical_entity_id": "",
+          "name": "清醒异构"
+        }
+      ],
+      "activities": [
+        {
+          "activity_id": "IA-c64cd55f548b03dc",
+          "funding_insight_id": "FI-b6de4c88fe0455f3",
+          "event_ids": [
+            "EV-589b3b522be5b280"
+          ],
+          "company_entity_id": "EN-1067dd040b02ac41",
+          "company_canonical_entity_id": "",
+          "company_name": "清醒异构",
+          "round": "A+轮",
+          "round_code": "series_a_plus",
+          "round_original": "A+轮",
+          "amount_original": "近亿元",
+          "amount_normalized": {
+            "currency": "CNY",
+            "value": 100000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "approximate",
+            "display_zh": "约 1 亿元"
+          },
+          "announced_at": "2026-09-24",
+          "market_region": "CN",
+          "china_market_match": true,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant",
+          "evidence": [
+            {
+              "source_id": "FISRC-735024582f88eccf",
+              "source_url": "https://news.pedaily.cn/202609/569586.shtml",
+              "source_title": "首发| 清醒异构完成A+轮融资，三个月两轮融资近亿元",
+              "source_content_hash": "a13785fb3b434348",
+              "quote": "投资方包括 晶凯资本、安徽高新投、道得投资、励石投资、中咨基金、徐汇资本、森蓝集团、泾东集团创始人 等。",
+              "quote_hash": "2003afd91363e5b5e30381a0045930a17a8884bc7462b16b29bf3895a560a15d"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "FISRC-735024582f88eccf",
+          "source_url": "https://news.pedaily.cn/202609/569586.shtml",
+          "source_title": "首发| 清醒异构完成A+轮融资，三个月两轮融资近亿元",
+          "source_content_hash": "a13785fb3b434348",
+          "quote": "投资方包括 晶凯资本、安徽高新投、道得投资、励石投资、中咨基金、徐汇资本、森蓝集团、泾东集团创始人 等。",
+          "quote_hash": "2003afd91363e5b5e30381a0045930a17a8884bc7462b16b29bf3895a560a15d"
         }
       ]
     },
@@ -195103,92 +195838,6 @@
       "activities": [
         {
           "activity_id": "IA-f3c903d924e178a5",
-          "funding_insight_id": "FI-74076c9ab29354a8",
-          "event_ids": [
-            "EV-df37e9341b5c7f04",
-            "EV-794f0a86004da0c9"
-          ],
-          "company_entity_id": "EN-2c348893efb2316e",
-          "company_canonical_entity_id": "EN-2c348893efb2316e",
-          "company_name": "StepFun",
-          "round": "B+轮",
-          "round_code": "series_b_plus",
-          "round_original": "B+轮",
-          "amount_original": "50 亿人民币",
-          "amount_normalized": {
-            "currency": "CNY",
-            "value": 5000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "50 亿元"
-          },
-          "announced_at": "2026-01-26",
-          "market_region": "CN",
-          "china_market_match": true,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant",
-          "evidence": [
-            {
-              "source_id": "FISRC-de3bb93d57d25bdf",
-              "source_url": "https://www.cyzone.cn/article/822685.html",
-              "source_title": "刷新记录！上海基模独角兽阶跃星辰完成超 50 亿人民币 B+轮融资 - 创业邦",
-              "source_content_hash": "3cd27a7369aa4df5",
-              "quote": "参与机构包括上国投先导基金、国寿股权、浦东创投、徐汇资本、无锡梁溪基金、厦门国贸、华勤技术等产业投资人，腾讯、启明、五源等老股东进一步跟投。",
-              "quote_hash": "f7ef53522aea45928eba53deb0ba7cdf5dcbe8cc3badeae684c82ba9683bc546"
-            }
-          ]
-        }
-      ],
-      "evidence": [
-        {
-          "source_id": "FISRC-de3bb93d57d25bdf",
-          "source_url": "https://www.cyzone.cn/article/822685.html",
-          "source_title": "刷新记录！上海基模独角兽阶跃星辰完成超 50 亿人民币 B+轮融资 - 创业邦",
-          "source_content_hash": "3cd27a7369aa4df5",
-          "quote": "参与机构包括上国投先导基金、国寿股权、浦东创投、徐汇资本、无锡梁溪基金、厦门国贸、华勤技术等产业投资人，腾讯、启明、五源等老股东进一步跟投。",
-          "quote_hash": "f7ef53522aea45928eba53deb0ba7cdf5dcbe8cc3badeae684c82ba9683bc546"
-        }
-      ]
-    },
-    {
-      "id": "INV-722fc3660faf7f",
-      "name": "徐汇资本",
-      "aliases": [],
-      "canonical_entity_id": null,
-      "investor_kind": "unverified_investor",
-      "investor_kind_label": "投资方（类型待核验）",
-      "classification_confidence": "unverified",
-      "collection_status": "evidence_backed",
-      "current_round_count": 1,
-      "historical_or_ambiguous_count": 0,
-      "portfolio_company_count": 1,
-      "market_regions": [
-        "CN"
-      ],
-      "china_market_activity_count": 1,
-      "china_market_company_count": 1,
-      "first_disclosed_at": "2026-01-26",
-      "latest_disclosed_at": "2026-01-26",
-      "role_counts": {
-        "participant": 1
-      },
-      "round_codes": [
-        "series_b_plus"
-      ],
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-2c348893efb2316e",
-          "canonical_entity_id": "EN-2c348893efb2316e",
-          "name": "StepFun"
-        }
-      ],
-      "activities": [
-        {
-          "activity_id": "IA-2beee1283b4952ed",
           "funding_insight_id": "FI-74076c9ab29354a8",
           "event_ids": [
             "EV-df37e9341b5c7f04",
