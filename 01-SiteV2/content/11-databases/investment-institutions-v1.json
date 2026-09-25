@@ -17219,54 +17219,103 @@
         }
       ],
       "public_profile": {
-        "profile_type": "organization",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "高瓴创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "summary": "高瓴创投（GL Ventures）是高瓴体系下的早期投资品牌。36氪机构资料称其于2020年推出，采用人民币/美元双币策略，重点覆盖生物医药与医疗器械、软件服务与原发科技创新、消费互联网与科技、新兴消费品牌与服务；该机构资料为第三方整理，未找到对应的高瓴官方独立档案页，规模与邮箱均按该来源谨慎标注。",
+        "facts": [
+          {
+            "field": "launch_date",
+            "label": "推出时间",
+            "value": "2020年（36氪机构资料口径）",
+            "source_id": "glv_profile_36kr"
+          },
+          {
+            "field": "strategy",
+            "label": "投资方式",
+            "value": "人民币与美元双币种；第三方机构资料称策略覆盖多轮投资。",
+            "source_id": "glv_profile_36kr"
+          },
+          {
+            "field": "sectors",
+            "label": "第三方资料列示投资领域",
+            "value": [
+              "生物医药及医疗器械",
+              "软件服务与原发科技创新",
+              "消费互联网与科技",
+              "新兴消费品牌与服务"
+            ],
+            "source_id": "glv_profile_36kr"
+          },
+          {
+            "field": "initial_fund",
+            "label": "首期基金规模",
+            "value": "100亿元人民币（36氪报道/机构资料提及，未找到官方一手材料复核）",
+            "source_id": "glv_profile_36kr"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2020-02-24",
+            "description": "36氪机构资料记载高瓴集团宣布成立专注早期创业投资的高瓴创投。",
+            "source_id": "glv_profile_36kr"
+          }
+        ],
         "track_record": [
           {
-            "description": "融资来源记录：千觉机器人 · 战略融资 · 2026-09-20 · 股东 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-3a00c703054126cd"
-          },
-          {
-            "description": "融资来源记录：地瓜机器人 · C轮 · 2026-09-17 · 本轮跟投（原有投资机构继续追加投资） · 4亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-517ef1b31eac6dd3"
-          },
-          {
-            "description": "融资来源记录：Anew Labs（新生实验室） · 其他融资 · 2026-09-16 · 本轮参投 · 2.9亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-a2c9854f5230d423"
+            "description": "36氪机构页展示了团队分工、投资策略及部分被投案例；页面内容属于第三方整理，所列案例不代表完整组合或经审计基金业绩。",
+            "source_id": "glv_profile_36kr"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "Hillhouse 官方网站（集团层面）",
+            "value": "Hillhouse Investment",
+            "url": "https://www.hillhouseinvestment.com/",
+            "source_id": "hillhouse_group_site"
+          },
+          {
+            "kind": "email",
+            "label": "项目 BP 邮箱（第三方机构页列示，投递前建议复核）",
+            "value": "bp@glventures.com.cn",
+            "url": "https://pitchhub.36kr.com/organization/1678204652696582",
+            "source_id": "glv_profile_36kr"
+          },
+          {
+            "kind": "email",
+            "label": "Hillhouse 一般联系（集团层面，非经核验的 GL Ventures 投递渠道）",
+            "value": "contactus@hillhouseinvestment.com",
+            "url": "https://www.hillhouseinvestment.com/team/",
+            "source_id": "hillhouse_team"
+          }
+        ],
         "sources": [
           {
-            "source_id": "FISRC-3a00c703054126cd",
-            "source_url": "https://www.chinaventure.com.cn/news/114-20260920-393347.html",
-            "source_title": "千觉机器人宣布连续完成两轮数亿元战略融资 投资方包括知名双币基金蓝驰创投、中金资本旗下基金、靖亚资本等知名投资机构。 投中网 · 22小时前",
-            "source_content_hash": "3943ea5191d9c7eb",
-            "quote": "目前，千觉股东阵容已汇集高瓴创投、元禾原点、孚腾资本等知名财务投资机构",
-            "quote_hash": "01b8d7c5d02d6928d7583763d8be3efd8c373ae10dd820b90515844a61cfbced"
+            "source_id": "glv_profile_36kr",
+            "source_url": "https://pitchhub.36kr.com/organization/1678204652696582",
+            "source_title": "高瓴创投 | 投资机构信息 - 36氪",
+            "source_content_hash": "79e2e87c89fa8cfd0b4b5ab8eb8f0a6f075ab4f65020b9756affd0d37c404e00",
+            "quote": "高瓴创投将以美元和人民币双币种模式运作。",
+            "quote_hash": "cd97d23e6e1b3c9ddacdba91b717f5b104174b8df5d66e66b1b3f349b396592c"
           },
           {
-            "source_id": "FISRC-517ef1b31eac6dd3",
-            "source_url": "https://finance.sina.com.cn/roll/2026-09-17/doc-iniscekc4127167.shtml",
-            "source_title": "地瓜机器人完成4亿美元C轮融资 软硬一体基础设施支撑具身智能产业落地_新浪财经_新浪网",
-            "source_content_hash": "ffc4d665dce6209d",
-            "quote": "高瓴创投、五源资本、线性资本、淡马锡旗下Vertex Growth等多家原有投资机构继续追加投资。",
-            "quote_hash": "2e695e67eb318bb202681426003226fdafc284ca308890dae2f0111b03fe308e"
+            "source_id": "hillhouse_group_site",
+            "source_url": "https://www.hillhouseinvestment.com/",
+            "source_title": "Hillhouse – builds businesses that stand the test of time",
+            "source_content_hash": "8793f1b61fda5d9fef96ea83eff22e7bd2ae384dc1c847ea8f0cff66fa9a5ca8",
+            "quote": "Hillhouse Investment seeks to help high-quality businesses thrive for the long term.",
+            "quote_hash": "9dd4f1f6cab9d48a587dc369dcb2100d1721a9cb5a27649c47c4a97d860e4892"
           },
           {
-            "source_id": "FISRC-a2c9854f5230d423",
-            "source_url": "https://www.chinaventure.com.cn/news/111-20260921-393379.html",
-            "source_title": "张一鸣，又创造了一个100亿 首轮融资20亿元。 投中网 · 21小时前",
-            "source_content_hash": "2bb10add5e428ec5",
-            "quote": "涵盖了红杉中国、IDG资本、高瓴创投、五源资本、高榕创投、春华创投等头部投资机构",
-            "quote_hash": "b39561dd1ac0be7734491e6d8c5951e687ceff86f0fa6dbf11feced93e7c4b87"
+            "source_id": "hillhouse_team",
+            "source_url": "https://www.hillhouseinvestment.com/team/",
+            "source_title": "Our team | Hillhouse",
+            "source_content_hash": "8793f1b61fda5d9fef96ea83eff22e7bd2ae384dc1c847ea8f0cff66fa9a5ca8",
+            "quote": "For any inquiries, please email: contactus@hillhouseinvestment.com",
+            "quote_hash": "bd84d630669e917a6daeb10987340c8ef55e0c5336e6f24bf9c3ee10fa44d042"
           }
         ],
-        "last_verified_at": "2026-09-25"
+        "last_verified_at": "2026-09-25",
+        "coverage_status": "researched",
+        "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
       }
     },
     {
@@ -17681,54 +17730,89 @@
         }
       ],
       "public_profile": {
-        "profile_type": "organization",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "浦东创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "summary": "浦东创投是上海浦东创业投资有限公司的简称。上海证券交易所披露文件记载该公司1997年设立、注册资本人民币1亿元，注册地址位于浦东张江，法定代表人为何彬，经营范围包括高新技术行业投资、实业投资及投资管理咨询。该公司不得与浦东新区各类政府引导基金或浦东创投行业生态统计混为一体。",
+        "facts": [
+          {
+            "field": "legal_name",
+            "label": "法定名称",
+            "value": "上海浦东创业投资有限公司",
+            "source_id": "pudong_bond_filing"
+          },
+          {
+            "field": "founded",
+            "label": "成立时间",
+            "value": "1997-01-09（上交所披露文件）",
+            "source_id": "pudong_bond_filing"
+          },
+          {
+            "field": "registered_capital",
+            "label": "注册资本",
+            "value": "人民币1亿元（披露时口径）",
+            "source_id": "pudong_bond_filing"
+          },
+          {
+            "field": "business_scope",
+            "label": "披露的经营范围",
+            "value": "高新技术行业投资、实业投资、投资管理、投资咨询及资产经营管理等（以公告登记信息为准）",
+            "source_id": "pudong_bond_filing"
+          },
+          {
+            "field": "legal_representative",
+            "label": "法定代表人",
+            "value": "何彬（披露时口径）",
+            "source_id": "pudong_bond_filing"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "1997-01-09",
+            "description": "上交所披露文件记载公司成立。",
+            "source_id": "pudong_bond_filing"
+          }
+        ],
         "track_record": [
           {
-            "description": "融资来源记录：思博慧医 · Pre-A+轮 · 2026-09-17 · 本轮参投 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-0195a1b88a7ecb41"
-          },
-          {
-            "description": "融资来源记录：光啾科技 · 天使轮 · 2026-09-06 · 本轮参投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-eb5fe8fcd40d4621"
-          },
-          {
-            "description": "融资来源记录：以太之心 · 种子轮 · 2026-08-31 · 本轮参投 · 数千万。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-1a358dfcb10fed1c"
+            "description": "本档案只把可回溯融资披露列为投资样本；浦东新区整体基金管理规模及投资统计属于区域生态口径，不归因于浦东创投单一公司。",
+            "source_id": "pudong_bond_filing"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站状态",
+            "value": "本次核验未找到可确认由该公司运营的官网；不将第三方目录中的域名直接认定为官方渠道。",
+            "url": "https://static.sse.com.cn/bond/bridge2/disclosure/announcement/c/202111/018501_20211119_TM6N.pdf",
+            "source_id": "pudong_bond_filing"
+          },
+          {
+            "kind": "address",
+            "label": "注册地址（上交所披露文件）",
+            "value": "中国（上海）自由贸易试验区春晓路350号南楼二层",
+            "url": "https://static.sse.com.cn/bond/bridge2/disclosure/announcement/c/202111/018501_20211119_TM6N.pdf",
+            "source_id": "pudong_bond_filing"
+          }
+        ],
         "sources": [
           {
-            "source_id": "FISRC-0195a1b88a7ecb41",
-            "source_url": "https://news.pedaily.cn/202609/569157.shtml",
-            "source_title": "思博慧医完成近亿元Pre-A+轮融资，加速AI全自动磁控介入手术平台研发",
-            "source_content_hash": "4b021c644b47dde0",
-            "quote": "本轮由 诺庾资本领投，浦东创投、片仔癀盈科基金、同杨基金、太湖空天动力启明星跟投",
-            "quote_hash": "3e54f30fc23c389889a06fa46c44ee9017a3591a35a78563fc5a8863d1e0b9df"
+            "source_id": "pudong_bond_filing",
+            "source_url": "https://static.sse.com.cn/bond/bridge2/disclosure/announcement/c/202111/018501_20211119_TM6N.pdf",
+            "source_title": "上海张江科技创业投资有限公司公开发行创新创业公司债券募集说明书摘要",
+            "source_content_hash": "e05007178ef4884a278a2137b3380a73657c19da49682ec48280a0e1bca47106",
+            "quote": "上海浦东创业投资有限公司，成立于1997年1月9日，注册资本为10,000万元人民币。",
+            "quote_hash": "df4b77e5ef8c070b11f3c8e284f0670d1ad11962904e7ad62e6a287921ca6907"
           },
           {
-            "source_id": "FISRC-eb5fe8fcd40d4621",
-            "source_url": "https://m.sohu.com/a/1072459266_546816?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
-            "source_title": "光啾科技完成数千万元天使轮融资",
-            "source_content_hash": "e03f1563df28426e",
-            "quote": "由鼎峰科创领投，浦东创投跟投，老股东中科创星持续加注",
-            "quote_hash": "de6162a9ca964bb5718758566a5656cac69973de503ea1ff52208aea9908d013"
-          },
-          {
-            "source_id": "FISRC-1a358dfcb10fed1c",
-            "source_url": "https://www.stcn.com/article/detail/4165239.html",
-            "source_title": "AI智能体基础设施公司“以太之心”完成数千万种子轮融资",
-            "source_content_hash": "d05d4ca6f929c2cb",
-            "quote": "本轮融资由著名天使机构“上海天使会”、国资创投公司“浦东创投”、张雪机车的天使投资人“高信资本”以及知名投资公司天使清芬等共同参与。",
-            "quote_hash": "208aaf6d57296d70409e01ce934811120c1593208ea1b6e6d46ebd1333700f44"
+            "source_id": "pudong_venture_ecosystem",
+            "source_url": "https://english.shanghai.gov.cn/en-Latest-WhatsNew/20260707/c7421943f8a24713872d934a2678cd36.html",
+            "source_title": "Pudong registered funds exceed 2 trillion yuan: Report | Shanghai Municipal Government",
+            "source_content_hash": "54010315437dd5acc3c9c33791086c30886a26bc0e7291bb2fd22b66d24cfdbb",
+            "quote": "Wen Xinchun, board chairman of Shanghai Pudong Venture Capital Co Ltd.",
+            "quote_hash": "4ddb4024185ef9434099c81655ab6f5398e630eacc1d93feab5945625a320ea1"
           }
         ],
-        "last_verified_at": "2026-09-25"
+        "last_verified_at": "2026-09-25",
+        "coverage_status": "researched",
+        "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
       }
     },
     {
@@ -20595,54 +20679,124 @@
         }
       ],
       "public_profile": {
-        "profile_type": "organization",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "腾讯 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "summary": "本记录中的“腾讯”指腾讯控股集团层级的投资活动，不自动归因到某一基金、子公司或腾讯投资部门。集团官方材料将投资定位为核心战略之一，强调投资组合与核心业务及 Connection 战略协同；2025年报披露期末投资组合账面/公允价值合计口径约人民币9572.19亿元，该数包含联营合营企业及以公允价值计量的金融资产，不等于VC基金AUM。",
+        "facts": [
+          {
+            "field": "founded",
+            "label": "集团成立",
+            "value": "1998年，深圳（腾讯公司介绍）",
+            "source_id": "tencent_about"
+          },
+          {
+            "field": "investment_strategy",
+            "label": "投资策略",
+            "value": "投资组合服务于核心业务与 Connection 战略，在社交及数字内容、零售、金融科技等领域强化连接，并延伸至医疗健康、云与AI、交通等领域。",
+            "source_id": "tencent_annual_2025"
+          },
+          {
+            "field": "investment_portfolio_value",
+            "label": "集团投资组合披露口径",
+            "value": "约人民币9572.19亿元，截至2025-12-31；包含按权益法核算的联营/合营企业及公允价值金融资产，不是VC基金AUM。",
+            "source_id": "tencent_annual_2025"
+          },
+          {
+            "field": "investment_return",
+            "label": "2025年投资组合收益",
+            "value": "人民币297.38亿元，年报称同比增加13%；其口径包含股息、处置收益、公允价值变动、联营合营利润份额及其他调整，不代表基金IRR或已实现投资回报。",
+            "source_id": "tencent_annual_2025"
+          },
+          {
+            "field": "portfolio_scale_legacy",
+            "label": "历史公开投资规模",
+            "value": "腾讯2020年官方文章曾披露累计投资企业超过800家、70多家上市、逾160家成为独角兽；为2020年时点的集团口径，不作现时数量。",
+            "source_id": "tencent_investment_strategy_2020"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "1998",
+            "description": "腾讯公司介绍称集团在深圳创立。",
+            "source_id": "tencent_about"
+          }
+        ],
         "track_record": [
           {
-            "description": "融资来源记录：小鹏机器人业务 · 其他融资 · 2026-08-24 · 本轮参投 · 超9亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-2ec9a5e83ce18f75"
+            "description": "2025年报披露集团投资组合期末价值及年度收益分类；这是上市公司合并报表层面的投资组合财务披露，不能等同创投基金净回报或腾讯投资部门独立业绩。",
+            "source_id": "tencent_annual_2025"
           },
           {
-            "description": "融资来源记录：Moonshot AI · F轮 · 2026-07-30 · 2026年前两个月连续三轮融资老股东持续加码 · 35亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-773362f4e07cd598"
-          },
-          {
-            "description": "融资来源记录：墨奇智能 · 天使轮 · 2026-07-09 · 本轮联合领投 · 10 亿元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-bea9d0be613bc1cd"
+            "description": "2020年腾讯官方投资策略文章称当时已投资超过800家企业；时间与口径均按原文保留。",
+            "source_id": "tencent_investment_strategy_2020"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "腾讯官方网站",
+            "value": "Tencent",
+            "url": "https://www.tencent.com/en-us/about.html",
+            "source_id": "tencent_about"
+          },
+          {
+            "kind": "contact_form",
+            "label": "媒体及投资者咨询",
+            "value": "腾讯官网联系表单（媒体及投资者）",
+            "url": "https://www.tencent.com/contact/",
+            "source_id": "tencent_contact"
+          },
+          {
+            "kind": "contact_form",
+            "label": "投资者关系",
+            "value": "投资者关系团队咨询表单",
+            "url": "https://www.tencent.com/investors/",
+            "source_id": "tencent_investor"
+          }
+        ],
         "sources": [
           {
-            "source_id": "FISRC-2ec9a5e83ce18f75",
-            "source_url": "https://www.xiaopeng.com/news/company_news/5585.html",
-            "source_title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
-            "source_content_hash": "b8e4f0b869df00ee",
-            "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持",
-            "quote_hash": "0c0e04917436353a249175e0fe3954233525524468f8b84521713be86611d620"
+            "source_id": "tencent_about",
+            "source_url": "https://www.tencent.com/en-us/about.html?trk=s-bl",
+            "source_title": "Tencent - Tencent",
+            "source_content_hash": "285d67581c57500a3a880df36265475766290f985af193e6c679885049807499",
+            "quote": "Tencent was founded in Shenzhen, China, in 1998.",
+            "quote_hash": "0a082fa4a0092b02d6bc361ca0ba0951c38734b9f0f18cf97c647c7e96909e1e"
           },
           {
-            "source_id": "FISRC-773362f4e07cd598",
-            "source_url": "https://news.pedaily.cn/202607/566986.shtml",
-            "source_title": "月之暗面完成超35亿美元F轮融资",
-            "source_content_hash": "4d700156140038e7",
-            "quote": "今年前两个月，公司还连续完成5亿、7亿、7亿美元三轮融资，估值从100亿美元攀升至180亿美元，阿里、腾讯、五源资本等老股东持续加码。",
-            "quote_hash": "1b04f6348a3383cbbcda8ce26c8dbd8a0f223287a55894621d0ba47dce291306"
+            "source_id": "tencent_annual_2025",
+            "source_url": "https://static.www.tencent.com/uploads/2026/04/09/62d786fcf3d3c8cb7e54791ee95439ac.pdf",
+            "source_title": "Tencent Holdings Limited Annual Report 2025",
+            "source_content_hash": "2a7547168077c3d9994af673125e77612e8656bc0f17ad189371d7e4088f4e98",
+            "quote": "As at 31 December 2025, our investment portfolio amounted to approximately RMB957,219 million.",
+            "quote_hash": "ad773cd8cf2a58eb04a85f46ee3d25aa33c068b09cedbaaa9f6fb38c00568a1a"
           },
           {
-            "source_id": "FISRC-bea9d0be613bc1cd",
-            "source_url": "https://finance.sina.com.cn/roll/2026-07-09/doc-inihfazc5336299.shtml?froms=ggmp",
-            "source_title": "具身智能企业墨奇智能完成10亿元天使轮融资 - 新浪财经",
-            "source_content_hash": "311224a4dfb089df",
-            "quote": "本次融资由阿里巴巴、腾讯联合领投",
-            "quote_hash": "98b7d1967cc53e05ee6fae09461995df935db30454c5bf6627dc724464483c92"
+            "source_id": "tencent_investment_strategy_2020",
+            "source_url": "https://www.tencent.com/zh-cn/value-creation-is-pivotal-to-our-investments/",
+            "source_title": "创造价值是投资的关键 | Tencent",
+            "source_content_hash": "82167e3423106f4b5f5331e1551237845c6492b48516787bea3a9667d5188ed9",
+            "quote": "截至目前，腾讯总计投资企业超过800家，其中70多家已上市，逾160家成为市值或估值超10亿美金的独角兽。",
+            "quote_hash": "f0c0398bae5d4255f9063adf450587209622da90280d1cd1c432823e3a266300"
+          },
+          {
+            "source_id": "tencent_contact",
+            "source_url": "https://www.tencent.com/contact/",
+            "source_title": "Contact - Tencent",
+            "source_content_hash": "e3b3189fb4133d1723d383cf351f5d0490a604e5f8813ac954f955d7ee08ea5f",
+            "quote": "Media and investors; Please fill out the enquiry form below.",
+            "quote_hash": "d87dc8f992d0b0c8d258cd291fe9ab05523b4ce01cedcccfc89d88f759c16d2b"
+          },
+          {
+            "source_id": "tencent_investor",
+            "source_url": "https://www.tencent.com/investors/",
+            "source_title": "Investors - Tencent",
+            "source_content_hash": "77b76096059f450344aec13a740a06133e01491515bbd8c14b086208890f278f",
+            "quote": "Have an investor inquiry? Click to fill out a form and get in touch with our Investor Relations team.",
+            "quote_hash": "de3feafcd81368d41be78c53253a89b9ddd2c9c32424cf40089015550080528c"
           }
         ],
-        "last_verified_at": "2026-09-25"
+        "last_verified_at": "2026-09-25",
+        "coverage_status": "researched",
+        "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
       }
     },
     {

@@ -464,54 +464,89 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "浦东创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "浦东创投是上海浦东创业投资有限公司的简称。上海证券交易所披露文件记载该公司1997年设立、注册资本人民币1亿元，注册地址位于浦东张江，法定代表人为何彬，经营范围包括高新技术行业投资、实业投资及投资管理咨询。该公司不得与浦东新区各类政府引导基金或浦东创投行业生态统计混为一体。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "法定名称",
+          "value": "上海浦东创业投资有限公司",
+          "source_id": "pudong_bond_filing"
+        },
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "1997-01-09（上交所披露文件）",
+          "source_id": "pudong_bond_filing"
+        },
+        {
+          "field": "registered_capital",
+          "label": "注册资本",
+          "value": "人民币1亿元（披露时口径）",
+          "source_id": "pudong_bond_filing"
+        },
+        {
+          "field": "business_scope",
+          "label": "披露的经营范围",
+          "value": "高新技术行业投资、实业投资、投资管理、投资咨询及资产经营管理等（以公告登记信息为准）",
+          "source_id": "pudong_bond_filing"
+        },
+        {
+          "field": "legal_representative",
+          "label": "法定代表人",
+          "value": "何彬（披露时口径）",
+          "source_id": "pudong_bond_filing"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1997-01-09",
+          "description": "上交所披露文件记载公司成立。",
+          "source_id": "pudong_bond_filing"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：思博慧医 · Pre-A+轮 · 2026-09-17 · 本轮参投 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-0195a1b88a7ecb41"
-        },
-        {
-          "description": "融资来源记录：光啾科技 · 天使轮 · 2026-09-06 · 本轮参投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-eb5fe8fcd40d4621"
-        },
-        {
-          "description": "融资来源记录：以太之心 · 种子轮 · 2026-08-31 · 本轮参投 · 数千万。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1a358dfcb10fed1c"
+          "description": "本档案只把可回溯融资披露列为投资样本；浦东新区整体基金管理规模及投资统计属于区域生态口径，不归因于浦东创投单一公司。",
+          "source_id": "pudong_bond_filing"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站状态",
+          "value": "本次核验未找到可确认由该公司运营的官网；不将第三方目录中的域名直接认定为官方渠道。",
+          "url": "https://static.sse.com.cn/bond/bridge2/disclosure/announcement/c/202111/018501_20211119_TM6N.pdf",
+          "source_id": "pudong_bond_filing"
+        },
+        {
+          "kind": "address",
+          "label": "注册地址（上交所披露文件）",
+          "value": "中国（上海）自由贸易试验区春晓路350号南楼二层",
+          "url": "https://static.sse.com.cn/bond/bridge2/disclosure/announcement/c/202111/018501_20211119_TM6N.pdf",
+          "source_id": "pudong_bond_filing"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-0195a1b88a7ecb41",
-          "source_url": "https://news.pedaily.cn/202609/569157.shtml",
-          "source_title": "思博慧医完成近亿元Pre-A+轮融资，加速AI全自动磁控介入手术平台研发",
-          "source_content_hash": "4b021c644b47dde0",
-          "quote": "本轮由 诺庾资本领投，浦东创投、片仔癀盈科基金、同杨基金、太湖空天动力启明星跟投",
-          "quote_hash": "3e54f30fc23c389889a06fa46c44ee9017a3591a35a78563fc5a8863d1e0b9df"
+          "source_id": "pudong_bond_filing",
+          "source_url": "https://static.sse.com.cn/bond/bridge2/disclosure/announcement/c/202111/018501_20211119_TM6N.pdf",
+          "source_title": "上海张江科技创业投资有限公司公开发行创新创业公司债券募集说明书摘要",
+          "source_content_hash": "e05007178ef4884a278a2137b3380a73657c19da49682ec48280a0e1bca47106",
+          "quote": "上海浦东创业投资有限公司，成立于1997年1月9日，注册资本为10,000万元人民币。",
+          "quote_hash": "df4b77e5ef8c070b11f3c8e284f0670d1ad11962904e7ad62e6a287921ca6907"
         },
         {
-          "source_id": "FISRC-eb5fe8fcd40d4621",
-          "source_url": "https://m.sohu.com/a/1072459266_546816?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
-          "source_title": "光啾科技完成数千万元天使轮融资",
-          "source_content_hash": "e03f1563df28426e",
-          "quote": "由鼎峰科创领投，浦东创投跟投，老股东中科创星持续加注",
-          "quote_hash": "de6162a9ca964bb5718758566a5656cac69973de503ea1ff52208aea9908d013"
-        },
-        {
-          "source_id": "FISRC-1a358dfcb10fed1c",
-          "source_url": "https://www.stcn.com/article/detail/4165239.html",
-          "source_title": "AI智能体基础设施公司“以太之心”完成数千万种子轮融资",
-          "source_content_hash": "d05d4ca6f929c2cb",
-          "quote": "本轮融资由著名天使机构“上海天使会”、国资创投公司“浦东创投”、张雪机车的天使投资人“高信资本”以及知名投资公司天使清芬等共同参与。",
-          "quote_hash": "208aaf6d57296d70409e01ce934811120c1593208ea1b6e6d46ebd1333700f44"
+          "source_id": "pudong_venture_ecosystem",
+          "source_url": "https://english.shanghai.gov.cn/en-Latest-WhatsNew/20260707/c7421943f8a24713872d934a2678cd36.html",
+          "source_title": "Pudong registered funds exceed 2 trillion yuan: Report | Shanghai Municipal Government",
+          "source_content_hash": "54010315437dd5acc3c9c33791086c30886a26bc0e7291bb2fd22b66d24cfdbb",
+          "quote": "Wen Xinchun, board chairman of Shanghai Pudong Venture Capital Co Ltd.",
+          "quote_hash": "4ddb4024185ef9434099c81655ab6f5398e630eacc1d93feab5945625a320ea1"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-25",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

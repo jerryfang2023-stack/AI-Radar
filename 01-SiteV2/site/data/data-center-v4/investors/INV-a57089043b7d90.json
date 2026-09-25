@@ -971,54 +971,103 @@
       }
     },
     "public_profile": {
-      "profile_type": "organization",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "高瓴创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "高瓴创投（GL Ventures）是高瓴体系下的早期投资品牌。36氪机构资料称其于2020年推出，采用人民币/美元双币策略，重点覆盖生物医药与医疗器械、软件服务与原发科技创新、消费互联网与科技、新兴消费品牌与服务；该机构资料为第三方整理，未找到对应的高瓴官方独立档案页，规模与邮箱均按该来源谨慎标注。",
+      "facts": [
+        {
+          "field": "launch_date",
+          "label": "推出时间",
+          "value": "2020年（36氪机构资料口径）",
+          "source_id": "glv_profile_36kr"
+        },
+        {
+          "field": "strategy",
+          "label": "投资方式",
+          "value": "人民币与美元双币种；第三方机构资料称策略覆盖多轮投资。",
+          "source_id": "glv_profile_36kr"
+        },
+        {
+          "field": "sectors",
+          "label": "第三方资料列示投资领域",
+          "value": [
+            "生物医药及医疗器械",
+            "软件服务与原发科技创新",
+            "消费互联网与科技",
+            "新兴消费品牌与服务"
+          ],
+          "source_id": "glv_profile_36kr"
+        },
+        {
+          "field": "initial_fund",
+          "label": "首期基金规模",
+          "value": "100亿元人民币（36氪报道/机构资料提及，未找到官方一手材料复核）",
+          "source_id": "glv_profile_36kr"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2020-02-24",
+          "description": "36氪机构资料记载高瓴集团宣布成立专注早期创业投资的高瓴创投。",
+          "source_id": "glv_profile_36kr"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：千觉机器人 · 战略融资 · 2026-09-20 · 股东 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3a00c703054126cd"
-        },
-        {
-          "description": "融资来源记录：地瓜机器人 · C轮 · 2026-09-17 · 本轮跟投（原有投资机构继续追加投资） · 4亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-517ef1b31eac6dd3"
-        },
-        {
-          "description": "融资来源记录：Anew Labs（新生实验室） · 其他融资 · 2026-09-16 · 本轮参投 · 2.9亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-a2c9854f5230d423"
+          "description": "36氪机构页展示了团队分工、投资策略及部分被投案例；页面内容属于第三方整理，所列案例不代表完整组合或经审计基金业绩。",
+          "source_id": "glv_profile_36kr"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Hillhouse 官方网站（集团层面）",
+          "value": "Hillhouse Investment",
+          "url": "https://www.hillhouseinvestment.com/",
+          "source_id": "hillhouse_group_site"
+        },
+        {
+          "kind": "email",
+          "label": "项目 BP 邮箱（第三方机构页列示，投递前建议复核）",
+          "value": "bp@glventures.com.cn",
+          "url": "https://pitchhub.36kr.com/organization/1678204652696582",
+          "source_id": "glv_profile_36kr"
+        },
+        {
+          "kind": "email",
+          "label": "Hillhouse 一般联系（集团层面，非经核验的 GL Ventures 投递渠道）",
+          "value": "contactus@hillhouseinvestment.com",
+          "url": "https://www.hillhouseinvestment.com/team/",
+          "source_id": "hillhouse_team"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-3a00c703054126cd",
-          "source_url": "https://www.chinaventure.com.cn/news/114-20260920-393347.html",
-          "source_title": "千觉机器人宣布连续完成两轮数亿元战略融资 投资方包括知名双币基金蓝驰创投、中金资本旗下基金、靖亚资本等知名投资机构。 投中网 · 22小时前",
-          "source_content_hash": "3943ea5191d9c7eb",
-          "quote": "目前，千觉股东阵容已汇集高瓴创投、元禾原点、孚腾资本等知名财务投资机构",
-          "quote_hash": "01b8d7c5d02d6928d7583763d8be3efd8c373ae10dd820b90515844a61cfbced"
+          "source_id": "glv_profile_36kr",
+          "source_url": "https://pitchhub.36kr.com/organization/1678204652696582",
+          "source_title": "高瓴创投 | 投资机构信息 - 36氪",
+          "source_content_hash": "79e2e87c89fa8cfd0b4b5ab8eb8f0a6f075ab4f65020b9756affd0d37c404e00",
+          "quote": "高瓴创投将以美元和人民币双币种模式运作。",
+          "quote_hash": "cd97d23e6e1b3c9ddacdba91b717f5b104174b8df5d66e66b1b3f349b396592c"
         },
         {
-          "source_id": "FISRC-517ef1b31eac6dd3",
-          "source_url": "https://finance.sina.com.cn/roll/2026-09-17/doc-iniscekc4127167.shtml",
-          "source_title": "地瓜机器人完成4亿美元C轮融资 软硬一体基础设施支撑具身智能产业落地_新浪财经_新浪网",
-          "source_content_hash": "ffc4d665dce6209d",
-          "quote": "高瓴创投、五源资本、线性资本、淡马锡旗下Vertex Growth等多家原有投资机构继续追加投资。",
-          "quote_hash": "2e695e67eb318bb202681426003226fdafc284ca308890dae2f0111b03fe308e"
+          "source_id": "hillhouse_group_site",
+          "source_url": "https://www.hillhouseinvestment.com/",
+          "source_title": "Hillhouse – builds businesses that stand the test of time",
+          "source_content_hash": "8793f1b61fda5d9fef96ea83eff22e7bd2ae384dc1c847ea8f0cff66fa9a5ca8",
+          "quote": "Hillhouse Investment seeks to help high-quality businesses thrive for the long term.",
+          "quote_hash": "9dd4f1f6cab9d48a587dc369dcb2100d1721a9cb5a27649c47c4a97d860e4892"
         },
         {
-          "source_id": "FISRC-a2c9854f5230d423",
-          "source_url": "https://www.chinaventure.com.cn/news/111-20260921-393379.html",
-          "source_title": "张一鸣，又创造了一个100亿 首轮融资20亿元。 投中网 · 21小时前",
-          "source_content_hash": "2bb10add5e428ec5",
-          "quote": "涵盖了红杉中国、IDG资本、高瓴创投、五源资本、高榕创投、春华创投等头部投资机构",
-          "quote_hash": "b39561dd1ac0be7734491e6d8c5951e687ceff86f0fa6dbf11feced93e7c4b87"
+          "source_id": "hillhouse_team",
+          "source_url": "https://www.hillhouseinvestment.com/team/",
+          "source_title": "Our team | Hillhouse",
+          "source_content_hash": "8793f1b61fda5d9fef96ea83eff22e7bd2ae384dc1c847ea8f0cff66fa9a5ca8",
+          "quote": "For any inquiries, please email: contactus@hillhouseinvestment.com",
+          "quote_hash": "bd84d630669e917a6daeb10987340c8ef55e0c5336e6f24bf9c3ee10fa44d042"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-25",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

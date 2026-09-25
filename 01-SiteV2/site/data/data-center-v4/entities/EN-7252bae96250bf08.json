@@ -111,32 +111,58 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "白惠源 的来源线索将其与原力无限（创始人兼CEO）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "白惠源是原力无限科技集团创始人、CEO。原力无限官网于2025年报道她获评浙江省青年科学企业家，并称她创办 ELU、原力无限（INFIFORCE）为其智能机器人品牌。该官网没有披露她的博士院校、专业或此前任职经历；公司所述技术与业务表现不等同于个人独立业绩。",
+      "current_roles": [
+        {
+          "title": "创始人、CEO（官网报道于2025年5月）",
+          "organization": "原力无限科技集团 / 原力无限（INFIFORCE）",
+          "source_id": "infiforce_baihuiyuan_2025"
+        }
+      ],
       "career": [
         {
-          "organization": "原力无限",
-          "title": "创始人兼CEO",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将白惠源与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-e2a93b3b7aba7290"
+          "organization": "ELU",
+          "title": "创办者",
+          "period": "截至2025年5月官网报道；任职起始日期未披露",
+          "description": "原力无限官网报道将 ELU 描述为白惠源创办的企业，并称原力无限（INFIFORCE）是 ELU 打造的智能机器人品牌；两者的法律主体关系未由该报道进一步说明。",
+          "source_id": "infiforce_elu_relation_2025"
+        },
+        {
+          "organization": "原力无限科技集团 / 原力无限（INFIFORCE）",
+          "title": "创始人、CEO",
+          "period": "截至2025年5月官网报道；任职起始日期未披露",
+          "description": "官网人物报道记载其为原力无限科技集团创始人、CEO；未披露任职起始日期及此前职业履历。",
+          "source_id": "infiforce_baihuiyuan_2025"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
-      "sources": [
+      "experience_summary": "一手资料目前支持她创办 ELU、担任原力无限科技集团 CEO，并于2025年获评浙江省青年科学企业家。报道称其为博士，但未说明院校、专业、学位授予年份；此前公司任职与完整职业时间线暂无可引用的一手公开资料。",
+      "track_record": [
         {
-          "source_id": "FISRC-e2a93b3b7aba7290",
-          "source_url": "https://prewww.tmtpost.com/7313052.html",
-          "source_title": "融资披露来源",
-          "source_content_hash": "bdc73b71c5e1813a0875cf90edda25e31a3586089ffa0a72cba3b72e3caf7a5b",
-          "quote": "原力无限机器人创始人兼CEO白惠源博士是一位在人工智能领域有着行业影响力，并有成功创业经历的企业家。",
-          "quote_hash": "43562dc93bd143ca210baf985179444287e576933018f6e2f2fd887d0252275d"
+          "description": "原力无限官网报道她入选2025年度浙江省青年科学企业家（该奖项由浙江省科协、省经信厅等部门联合发起）。获奖报道同时介绍了她提出的“AI Agent EPOCH理论”；理论描述来自公司新闻稿，不作为独立学术评审结论。",
+          "source_id": "infiforce_baihuiyuan_2025"
         }
       ],
+      "sources": [
+        {
+          "source_id": "infiforce_baihuiyuan_2025",
+          "source_url": "https://infiforce.cn/news-detail?id=1950444978815766529",
+          "source_title": "原力无限科技集团创始人、CEO白惠源博士荣膺浙江省青年科学企业家！｜原力无限",
+          "source_content_hash": "c49c3f2f433f3c92aa491399426218c0d2a67b1fc7550e4d2ad10b79535fce8f",
+          "quote": "原力无限创始人、CEO白惠源博士荣耀入选，并于今日在浙江省人民大会堂完成颁奖典礼。",
+          "quote_hash": "f63196ca63c8ac61921b038adc3cba0df04df60d6cc6584865636e507205306a"
+        },
+        {
+          "source_id": "infiforce_elu_relation_2025",
+          "source_url": "https://infiforce.cn/news-detail?id=1950444978815766529",
+          "source_title": "原力无限科技集团创始人、CEO白惠源博士荣膺浙江省青年科学企业家！｜原力无限",
+          "source_content_hash": "c49c3f2f433f3c92aa491399426218c0d2a67b1fc7550e4d2ad10b79535fce8f",
+          "quote": "白惠源创办的 ELU是一家以 AI 驱动、科技引领的创新型高科技企业，集研发、生产制造与行业解决方案为一体，聚焦 AI 智能机器人、行业 AI Agent 和类脑智能三大核心领域，构建全球领先的具身智能生态体系。原力无限（INFIFORCE）作为 ELU倾力打造的智能机器人品牌",
+          "quote_hash": "e59f938c1d064bf559f22b847cffbfd396640355ab094169bc7b80a68db1c08e"
+        }
+      ],
+      "coverage_status": "researched",
+      "coverage_note": "已补充公司官网人物报道支持的创始人/CEO身份、创业关联及2025年荣誉；这是有限的一手资料档案，不代表完整履历。学历院校、专业、早期工作经历、公开个人联系方式仍未核验。",
       "last_verified_at": "2026-09-25"
     }
   },

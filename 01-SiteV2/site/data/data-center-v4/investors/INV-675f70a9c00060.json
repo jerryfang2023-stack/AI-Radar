@@ -476,54 +476,124 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "腾讯 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "本记录中的“腾讯”指腾讯控股集团层级的投资活动，不自动归因到某一基金、子公司或腾讯投资部门。集团官方材料将投资定位为核心战略之一，强调投资组合与核心业务及 Connection 战略协同；2025年报披露期末投资组合账面/公允价值合计口径约人民币9572.19亿元，该数包含联营合营企业及以公允价值计量的金融资产，不等于VC基金AUM。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "集团成立",
+          "value": "1998年，深圳（腾讯公司介绍）",
+          "source_id": "tencent_about"
+        },
+        {
+          "field": "investment_strategy",
+          "label": "投资策略",
+          "value": "投资组合服务于核心业务与 Connection 战略，在社交及数字内容、零售、金融科技等领域强化连接，并延伸至医疗健康、云与AI、交通等领域。",
+          "source_id": "tencent_annual_2025"
+        },
+        {
+          "field": "investment_portfolio_value",
+          "label": "集团投资组合披露口径",
+          "value": "约人民币9572.19亿元，截至2025-12-31；包含按权益法核算的联营/合营企业及公允价值金融资产，不是VC基金AUM。",
+          "source_id": "tencent_annual_2025"
+        },
+        {
+          "field": "investment_return",
+          "label": "2025年投资组合收益",
+          "value": "人民币297.38亿元，年报称同比增加13%；其口径包含股息、处置收益、公允价值变动、联营合营利润份额及其他调整，不代表基金IRR或已实现投资回报。",
+          "source_id": "tencent_annual_2025"
+        },
+        {
+          "field": "portfolio_scale_legacy",
+          "label": "历史公开投资规模",
+          "value": "腾讯2020年官方文章曾披露累计投资企业超过800家、70多家上市、逾160家成为独角兽；为2020年时点的集团口径，不作现时数量。",
+          "source_id": "tencent_investment_strategy_2020"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1998",
+          "description": "腾讯公司介绍称集团在深圳创立。",
+          "source_id": "tencent_about"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：小鹏机器人业务 · 其他融资 · 2026-08-24 · 本轮参投 · 超9亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2ec9a5e83ce18f75"
+          "description": "2025年报披露集团投资组合期末价值及年度收益分类；这是上市公司合并报表层面的投资组合财务披露，不能等同创投基金净回报或腾讯投资部门独立业绩。",
+          "source_id": "tencent_annual_2025"
         },
         {
-          "description": "融资来源记录：Moonshot AI · F轮 · 2026-07-30 · 2026年前两个月连续三轮融资老股东持续加码 · 35亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-773362f4e07cd598"
-        },
-        {
-          "description": "融资来源记录：墨奇智能 · 天使轮 · 2026-07-09 · 本轮联合领投 · 10 亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-bea9d0be613bc1cd"
+          "description": "2020年腾讯官方投资策略文章称当时已投资超过800家企业；时间与口径均按原文保留。",
+          "source_id": "tencent_investment_strategy_2020"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "腾讯官方网站",
+          "value": "Tencent",
+          "url": "https://www.tencent.com/en-us/about.html",
+          "source_id": "tencent_about"
+        },
+        {
+          "kind": "contact_form",
+          "label": "媒体及投资者咨询",
+          "value": "腾讯官网联系表单（媒体及投资者）",
+          "url": "https://www.tencent.com/contact/",
+          "source_id": "tencent_contact"
+        },
+        {
+          "kind": "contact_form",
+          "label": "投资者关系",
+          "value": "投资者关系团队咨询表单",
+          "url": "https://www.tencent.com/investors/",
+          "source_id": "tencent_investor"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-2ec9a5e83ce18f75",
-          "source_url": "https://www.xiaopeng.com/news/company_news/5585.html",
-          "source_title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
-          "source_content_hash": "b8e4f0b869df00ee",
-          "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持",
-          "quote_hash": "0c0e04917436353a249175e0fe3954233525524468f8b84521713be86611d620"
+          "source_id": "tencent_about",
+          "source_url": "https://www.tencent.com/en-us/about.html?trk=s-bl",
+          "source_title": "Tencent - Tencent",
+          "source_content_hash": "285d67581c57500a3a880df36265475766290f985af193e6c679885049807499",
+          "quote": "Tencent was founded in Shenzhen, China, in 1998.",
+          "quote_hash": "0a082fa4a0092b02d6bc361ca0ba0951c38734b9f0f18cf97c647c7e96909e1e"
         },
         {
-          "source_id": "FISRC-773362f4e07cd598",
-          "source_url": "https://news.pedaily.cn/202607/566986.shtml",
-          "source_title": "月之暗面完成超35亿美元F轮融资",
-          "source_content_hash": "4d700156140038e7",
-          "quote": "今年前两个月，公司还连续完成5亿、7亿、7亿美元三轮融资，估值从100亿美元攀升至180亿美元，阿里、腾讯、五源资本等老股东持续加码。",
-          "quote_hash": "1b04f6348a3383cbbcda8ce26c8dbd8a0f223287a55894621d0ba47dce291306"
+          "source_id": "tencent_annual_2025",
+          "source_url": "https://static.www.tencent.com/uploads/2026/04/09/62d786fcf3d3c8cb7e54791ee95439ac.pdf",
+          "source_title": "Tencent Holdings Limited Annual Report 2025",
+          "source_content_hash": "2a7547168077c3d9994af673125e77612e8656bc0f17ad189371d7e4088f4e98",
+          "quote": "As at 31 December 2025, our investment portfolio amounted to approximately RMB957,219 million.",
+          "quote_hash": "ad773cd8cf2a58eb04a85f46ee3d25aa33c068b09cedbaaa9f6fb38c00568a1a"
         },
         {
-          "source_id": "FISRC-bea9d0be613bc1cd",
-          "source_url": "https://finance.sina.com.cn/roll/2026-07-09/doc-inihfazc5336299.shtml?froms=ggmp",
-          "source_title": "具身智能企业墨奇智能完成10亿元天使轮融资 - 新浪财经",
-          "source_content_hash": "311224a4dfb089df",
-          "quote": "本次融资由阿里巴巴、腾讯联合领投",
-          "quote_hash": "98b7d1967cc53e05ee6fae09461995df935db30454c5bf6627dc724464483c92"
+          "source_id": "tencent_investment_strategy_2020",
+          "source_url": "https://www.tencent.com/zh-cn/value-creation-is-pivotal-to-our-investments/",
+          "source_title": "创造价值是投资的关键 | Tencent",
+          "source_content_hash": "82167e3423106f4b5f5331e1551237845c6492b48516787bea3a9667d5188ed9",
+          "quote": "截至目前，腾讯总计投资企业超过800家，其中70多家已上市，逾160家成为市值或估值超10亿美金的独角兽。",
+          "quote_hash": "f0c0398bae5d4255f9063adf450587209622da90280d1cd1c432823e3a266300"
+        },
+        {
+          "source_id": "tencent_contact",
+          "source_url": "https://www.tencent.com/contact/",
+          "source_title": "Contact - Tencent",
+          "source_content_hash": "e3b3189fb4133d1723d383cf351f5d0490a604e5f8813ac954f955d7ee08ea5f",
+          "quote": "Media and investors; Please fill out the enquiry form below.",
+          "quote_hash": "d87dc8f992d0b0c8d258cd291fe9ab05523b4ce01cedcccfc89d88f759c16d2b"
+        },
+        {
+          "source_id": "tencent_investor",
+          "source_url": "https://www.tencent.com/investors/",
+          "source_title": "Investors - Tencent",
+          "source_content_hash": "77b76096059f450344aec13a740a06133e01491515bbd8c14b086208890f278f",
+          "quote": "Have an investor inquiry? Click to fill out a form and get in touch with our Investor Relations team.",
+          "quote_hash": "de3feafcd81368d41be78c53253a89b9ddd2c9c32424cf40089015550080528c"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-25",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }
