@@ -111,30 +111,83 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "蓝振忠 的来源线索将其与西湖心辰（创始人）关联。来源日期：2026-08-03；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
-      "career": [
+      "summary": "蓝振忠是西湖心辰创始人及 AI 研究者，曾任职 Google AI，参与 ALBERT 预训练语言模型研究；2020 年加入西湖大学并组建深度学习实验室，之后创办西湖心辰。",
+      "coverage_status": "researched",
+      "coverage_note": "履历依据西湖心辰项目团队简介和蓝驰创投公开文章交叉整理。学术头衔按来源日期表述；ALBERT 的成果影响和应用范围采用投资方文章的描述，并非独立业绩审计。未补录未经来源支持的学历年份、任职起止时间或个人联系方式。",
+      "current_roles": [
         {
-          "organization": "西湖心辰",
           "title": "创始人",
-          "period": "来源记录于 2026-08-03；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-312cccaedbeb2478"
+          "organization": "西湖心辰",
+          "source_id": "lan_zhenzhong_36kr_project"
+        },
+        {
+          "title": "研究员、博士生导师",
+          "organization": "西湖大学工学院深度学习实验室",
+          "source_id": "lan_zhenzhong_36kr_project"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "career": [
+        {
+          "organization": "Google AI / Google AI 研究所",
+          "title": "研究人员",
+          "period": "西湖大学任职前；具体年份未披露",
+          "description": "来源介绍其研究涉及自然语言处理与计算机视觉，参与 ALBERT 工作。",
+          "source_id": "lan_zhenzhong_lanchi_vc"
+        },
+        {
+          "organization": "西湖大学",
+          "title": "特聘研究员、深度学习实验室负责人及博士生导师",
+          "period": "2020 年 6 月起全职加入；任期结束时间未披露",
+          "description": "36氪项目团队资料记载其全职加入西湖大学并开展深度学习研究；蓝驰创投文章记载其担任实验室负责人、博士生导师。",
+          "source_id": "lan_zhenzhong_36kr_project"
+        },
+        {
+          "organization": "西湖心辰（杭州）科技有限公司",
+          "title": "创始人",
+          "period": "公司成立于 2021 年 7 月；创始人身份见公开项目资料",
+          "description": "依托西湖大学深度学习实验室创办，探索大模型及人工智能产品应用。",
+          "source_id": "lan_zhenzhong_lanchi_vc"
+        }
+      ],
+      "education": [
+        {
+          "institution": "中山大学",
+          "qualification": "本科",
+          "source_id": "lan_zhenzhong_36kr_project"
+        },
+        {
+          "institution": "卡耐基梅隆大学计算机学院",
+          "qualification": "博士",
+          "source_id": "lan_zhenzhong_36kr_project"
+        }
+      ],
+      "experience_summary": "蓝振忠的履历结合自然语言处理研究、高校实验室建设和创业实践，包括 Google AI 研究经历、西湖大学研究工作，以及将高校研究和团队经验转化为 AI 公司与产品。",
+      "track_record": [
+        {
+          "description": "作为 ALBERT 论文第一作者参与轻量化 BERT 模型研究。蓝驰创投称相关成果应用于 Google News、Google Assistant；该应用范围归属于来源方表述。",
+          "source_id": "lan_zhenzhong_lanchi_vc"
+        },
+        {
+          "description": "创办西湖心辰。公司公开项目资料列出其推出的西湖大模型等产品及 2023—2024 年融资和战略合作动态；这些公司成果不等同于个人独立业绩。",
+          "source_id": "lan_zhenzhong_36kr_project"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-312cccaedbeb2478",
-          "source_url": "https://news.pedaily.cn/202608/567151.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "04e62dc8a14bfb33",
-          "quote": "创始人蓝振忠博士为西湖大学博士生导师、蚂蚁集团技术研究院通用人工智能中心主任",
-          "quote_hash": "53b71cb62437243717f790cf6d73035452c505cf3990421be0e5d672549ccbf7"
+          "source_id": "lan_zhenzhong_lanchi_vc",
+          "source_url": "https://www.lanchivc.com/6920/",
+          "source_title": "蓝驰创投持续加注，西湖心辰再获战略投资 | 蓝驰创投",
+          "source_content_hash": "7f09724231fdd809d3c07e07415a36e37455642f3d95d28c35daf534bd0787b5",
+          "quote": "创始人蓝振忠博士毕业于卡耐基梅隆大学，在谷歌AI部门工作期间，负责过多个自然语言处理和计算视觉的项目，成功开发出了谷歌大模型BERT的轻量化版本：ALBERT。蓝振忠是ALBERT的第一作者。",
+          "quote_hash": "ad7958286631385eedfd46491fbad16eb889a91bd3ca989886d3bb94d90e98a3"
+        },
+        {
+          "source_id": "lan_zhenzhong_36kr_project",
+          "source_url": "https://pitchhub.36kr.com/project/1679745902351105",
+          "source_title": "西湖心辰 | 项目信息与团队成员 | 36氪项目库",
+          "source_content_hash": "cdec654af4fb70ff37849f8966122b2bf33aa31e70a966820da494f17de5ba1c",
+          "quote": "蓝振忠，西湖心辰科技创始人，西湖大学工学院计算机科学与技术深度学习实验室研究员。本科毕业于中山大学，博士毕业于卡耐基·梅隆大学计算机学院。曾任职谷歌AI研究所，2020年6月作为特聘研究员全职加入西湖大学。",
+          "quote_hash": "b99b33bf1bc7c60df2a26a8b9b99986c86b05ced2ac11cdc19e7d3c3978213e4"
         }
       ],
       "last_verified_at": "2026-09-25"
