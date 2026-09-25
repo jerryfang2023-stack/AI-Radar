@@ -109,6 +109,32 @@ test("agent output above the default pipe limit is retained without ENOBUFS", ()
   }
 });
 
+test("command log filename collisions retry without overwriting prior output", () => {
+  const logDir = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-command-log-collision-"));
+  const reservedLog = path.join(logDir, "collision-fixture-reserved.stdout.log");
+  fs.writeFileSync(reservedLog, "preserve existing log");
+  const ids = ["reserved", "fresh"];
+  let attempts = 0;
+  try {
+    const result = runLoggedCommand(process.execPath, ["-e", "process.stdout.write('fresh output')"], {
+      logDir,
+      label: "collision-fixture",
+      timeout: 10000,
+      idFactory: () => {
+        attempts += 1;
+        return ids.shift();
+      },
+    });
+    assert.equal(result.status, 0);
+    assert.equal(result.stdout, "fresh output");
+    assert.equal(path.basename(result.stdout_log), "collision-fixture-fresh.stdout.log");
+    assert.equal(attempts, 2);
+    assert.equal(fs.readFileSync(reservedLog, "utf8"), "preserve existing log");
+  } finally {
+    fs.rmSync(logDir, { recursive: true, force: true });
+  }
+});
+
 test("the handoff budget outlives the Codex budget and report finalization", () => {
   assert.ok(CODEX_REPAIR_HANDOFF_TIMEOUT_MS >= CODEX_REPAIR_TIMEOUT_MS + 180000);
   assert.match(read("run-daily-automation-controller.mjs"), /\], CODEX_REPAIR_HANDOFF_TIMEOUT_MS\)/u);

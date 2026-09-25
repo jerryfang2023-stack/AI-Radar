@@ -189,7 +189,7 @@ test("downstream funding projection cannot replace same-day source health with a
 
 test("multi-company canonical funding events cannot publish a mismatched company amount", () => {
   const card = {
-    company: { entity_id: "EN-SAMBA", name: "SambaNova Systems" },
+    company: { entity_id: "EN-SAMBA", name: "SambaNova Systems", canonical_entity_consistent: true },
     financing: { amount: "$312 million" },
     triggered_by_event_id: "EV-MULTI",
   };
@@ -209,9 +209,29 @@ test("multi-company canonical funding events cannot publish a mismatched company
   );
 });
 
+test("funding cards block unresolved company identities and unnamed founder investors", () => {
+  const event = { event_id: "EV-IDENTITY", event_type: "funding", event_status: "completed", publication_status: "verified" };
+  const unresolvedCompany = {
+    company: { entity_id: "EN-IDENTITY", canonical_entity_consistent: false },
+    financing: { investors: [] },
+  };
+  const anonymousInvestor = {
+    company: { entity_id: "EN-IDENTITY", canonical_entity_consistent: true },
+    financing: { investors: [{ name: "泾东集团创始人", role: "本轮参投" }] },
+  };
+  assert.deepEqual(
+    fundingEventCardConsistencyProblems(unresolvedCompany, event),
+    ["funding_company_identity_unverified"],
+  );
+  assert.deepEqual(
+    fundingEventCardConsistencyProblems(anonymousInvestor, event),
+    ["funding_investor_identity_unidentified"],
+  );
+});
+
 test("multi-company funding cards can use the exact source quote when claim object is truncated", () => {
   const card = {
-    company: { entity_id: "EN-LUMILENS", name: "Lumilens" },
+    company: { entity_id: "EN-LUMILENS", name: "Lumilens", canonical_entity_consistent: true },
     financing: { amount: "$700 million" },
     triggered_by_event_id: "EV-LUMILENS",
   };
@@ -235,7 +255,7 @@ test("multi-company funding cards can use the exact source quote when claim obje
 
 test("funding claim source quotes recover the funded company when a headline becomes the claim subject", () => {
   const card = {
-    company: { entity_id: "EN-NEXUS", name: "奇点逃逸" },
+    company: { entity_id: "EN-NEXUS", name: "奇点逃逸", canonical_entity_consistent: true },
     financing: { amount: "千万级" },
     triggered_by_event_id: "EV-NEXUS",
   };
@@ -315,7 +335,7 @@ test("an implicit Chinese lower bound wins over an unrelated nearby financing te
 });
 
 test("withdrawn financing fails eligibility and persisted-card consistency", () => {
-  const card = { company: { entity_id: "EN-listen", name: "Listen Labs" }, financing: { amount: "$1.5B" } };
+  const card = { company: { entity_id: "EN-listen", name: "Listen Labs", canonical_entity_consistent: true }, financing: { amount: "$1.5B" } };
   const base = { event_id: "EV-withdrawn", event_type: "funding", event_status: "announced",
     publication_status: "verified", metrics: ["$1.5B"], object: "$1.5B funding round" };
   for (const title of [
@@ -486,7 +506,7 @@ test("spaced Chinese round labels and valuation clauses keep proceeds distinct",
     metrics: ["30 亿", "210 亿"], claim_refs: claims.map((claim) => claim.claim_id) };
   assert.equal(canonicalFundingEventAmount(event, claims), "30 亿欧元");
   assert.equal(canonicalFundingEventAmount({ display_title_zh: quotes[1] }), "30 亿欧元");
-  const card = { company: { entity_id: "EN-MISTRAL" },
+  const card = { company: { entity_id: "EN-MISTRAL", canonical_entity_consistent: true },
     financing: { amount: "210 亿欧元", evidence_refs: quotes.map((quote) => ({ quote })) } };
   assert.ok(fundingEventCardConsistencyProblems(card, event, claims).includes("funding_amount_is_valuation"));
   assert.ok(fundingEvidenceProofProblems(card).includes("funding_amount_is_valuation"));
@@ -555,7 +575,7 @@ test("Even Realities accepted evidence cannot overwrite proceeds with its unicor
   const payload = ensureCanonicalFundingEvidence({ financing: { amount: "1.5亿美元" } }, { claims }, event);
   assert.equal(payload.financing.amount, "1.5亿美元");
   for (const entities of [["EN-EVEN"], ["EN-EVEN", "EN-TENCENT"]]) {
-    const card = { company: { entity_id: "EN-EVEN", name: "Even Realities Technology" },
+    const card = { company: { entity_id: "EN-EVEN", name: "Even Realities Technology", canonical_entity_consistent: true },
       financing: { amount: "10亿美元" } };
     assert.ok(fundingEventCardConsistencyProblems(card, { ...event, entities }, claims)
       .includes("funding_amount_is_valuation"));
@@ -784,7 +804,7 @@ test("a current seed round stays separate from a previously undisclosed pre-seed
   const event = { event_id: "EV-ROUNDS", display_title_zh: "Acme 融资1750万美元",
     metrics: ["$17.5 million", "$15 million", "$2.5 million"], claim_refs: ["CL-ROUNDS"], entities: ["EN-ACME", "EN-VC"] };
   assert.equal(canonicalFundingEventAmount(event, claims), "$15 million");
-  const payload = { company: { entity_id: "EN-ACME", name: "Acme" }, financing: {
+  const payload = { company: { entity_id: "EN-ACME", name: "Acme", canonical_entity_consistent: true }, financing: {
     amount: "$17.5 million", total_raised: "$17.5 million", round: "预种子轮",
   } };
   assert.ok(fundingEventCardConsistencyProblems(payload, event, claims)
@@ -899,6 +919,7 @@ function validCard() {
     company: {
       entity_id: "EN-1",
       name: "Acme",
+      canonical_entity_consistent: true,
       full_name: "Acme, Inc.",
       website: "https://acme.example",
       summary: "企业智能代理平台",
@@ -1021,7 +1042,7 @@ test("a duration after a Series letter is not a numbered financing round", () =>
   assert.equal(normalizeFundingRound("Series D+" ).code, "series_d_plus");
   const event = { event_id: "EV-D", claim_refs: ["CL-D"] };
   const claims = [{ claim_id: "CL-D", claim_type: "funding", verification_status: "accepted", source_quote: "Profound raises $180M Series D 7 months after last round" }];
-  assert.deepEqual(fundingEventCardConsistencyProblems({ company: { entity_id: "EN-D" }, financing: { round: "D7轮" } }, event, claims), ["funding_current_round_label_mismatch"]);
+  assert.deepEqual(fundingEventCardConsistencyProblems({ company: { entity_id: "EN-D", canonical_entity_consistent: true }, financing: { round: "D7轮" } }, event, claims), ["funding_current_round_label_mismatch"]);
 });
 
 test("capped multi-tranche announcements stay review-only without changing factual events", () => {
@@ -1029,7 +1050,7 @@ test("capped multi-tranche announcements stay review-only without changing factu
   const claims = [{ claim_id: "CL-T", claim_type: "funding", verification_status: "accepted", source_quote: "The financing was raised in two tranches. The Series C, $375 million, was co-led by A. The Series C-1, up to $500 million, was led by B." }];
   const original = structuredClone(event);
   assert.equal(isEligibleFundingInsightEvent(event, claims), false);
-  assert.deepEqual(fundingEventCardConsistencyProblems({ company: { entity_id: "EN-T" } }, event, claims), ["funding_capped_tranche_requires_review"]);
+  assert.deepEqual(fundingEventCardConsistencyProblems({ company: { entity_id: "EN-T", canonical_entity_consistent: true } }, event, claims), ["funding_capped_tranche_requires_review"]);
   assert.deepEqual(event, original);
   assert.equal(isEligibleFundingInsightEvent(event, [{ ...claims[0], verification_status: "rejected" }]), true);
   assert.equal(isEligibleFundingInsightEvent(event, [{ ...claims[0], source_quote: claims[0].source_quote.replace("up to ", "") }]), true);
@@ -1040,7 +1061,7 @@ test("combined angel rounds with cumulative amount remain review-only", () => {
   const claims = [{ claim_id: "CL-C", claim_type: "funding", verification_status: "accepted", source_quote: "公司完成天使轮及天使+轮融资，累计融资金额近4亿人民币。" }];
   const original = structuredClone(event);
   assert.equal(isEligibleFundingInsightEvent(event, claims), false);
-  assert.deepEqual(fundingEventCardConsistencyProblems({ company: { entity_id: "EN-C" } }, event, claims), ["funding_combined_rounds_requires_review"]);
+  assert.deepEqual(fundingEventCardConsistencyProblems({ company: { entity_id: "EN-C", canonical_entity_consistent: true } }, event, claims), ["funding_combined_rounds_requires_review"]);
   assert.deepEqual(event, original);
   assert.equal(isEligibleFundingInsightEvent(event, [{ ...claims[0], verification_status: "rejected" }]), true);
   assert.equal(isEligibleFundingInsightEvent(event, [{ ...claims[0], source_quote: "公司完成天使+轮融资近4亿元。" }]), true);
@@ -1497,7 +1518,14 @@ test("单事件增量生成不会删除同日已经发布的其他融资卡", ()
     secondCard.triggered_by_event_id = "EV-2";
     secondCard.company.entity_id = "EN-2";
     secondCard.company.name = "Beta";
+    secondCard.company.full_name = "Beta";
     fs.writeFileSync(output, `${JSON.stringify({ cards: [validCard(), secondCard], queue: [] })}\n`, "utf8");
+    const entityIndexPath = path.join(projectRoot, "01-SiteV2/site/data/data-center-v4/indexes/entities.json");
+    fs.mkdirSync(path.dirname(entityIndexPath), { recursive: true });
+    fs.writeFileSync(entityIndexPath, `${JSON.stringify({ companies: [
+      { id: "EN-1", name: "Acme", type: "公司/机构" },
+      { id: "EN-2", name: "Beta", type: "公司/机构" },
+    ] })}\n`, "utf8");
     childProcess.execFileSync(process.execPath, [
       path.join(root, "agent-workflow/tools/generate-funding-insights-deepseek.mjs"),
       "--date=2026-07-26",

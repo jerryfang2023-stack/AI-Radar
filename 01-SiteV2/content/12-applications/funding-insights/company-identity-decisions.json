@@ -1,7 +1,7 @@
 {
   "meta": {
     "schema_version": "FUNDING-COMPANY-IDENTITY-DECISION-V1.0",
-    "updated_at": "2026-09-22",
+    "updated_at": "2026-09-25",
     "rule": "Funding Insights may merge public cards only after an explicit identity review. The decision changes the application projection, preserves every source event, and does not mutate Data Center V4 canonical facts."
   },
   "decisions": [
@@ -4168,6 +4168,37 @@
         "quote": "Moonshot AI, the Chinese company behind the Kimi chatbot, is looking for a valuation of up to $30 billion in a new funding round."
       },
       "rationale": "证据显示 Moonshot AI（月之暗面）发布了 Kimi Code CLI 编码代理和 Kimi K2.7 Code 模型，并寻求 300 亿美元估值融资，表明 Moonshot AI 是一个进行产品发布和融资行为的组织实体，符合公司定义。"
+    },
+    {
+      "decision_id": "FICID-CN-ENTITY-EN-1067dd040b02ac41",
+      "entity_id": "EN-1067dd040b02ac41",
+      "application_entity_id": "EN-1067dd040b02ac41",
+      "current": {
+        "name": "首发| 清醒异构",
+        "catalog_type": "company"
+      },
+      "match_names": [
+        "清醒异构"
+      ],
+      "action": "correct",
+      "merge_into_entity_id": "",
+      "canonical": {
+        "name": "清醒异构",
+        "catalog_type": "company"
+      },
+      "review_status": "accepted",
+      "reviewed_at": "2026-09-25T12:16:49+08:00",
+      "evidence": {
+        "claim_refs": [
+          "CL-5c76af6f9805fa94",
+          "CL-e182597a6d8ed95e"
+        ],
+        "source_url": "https://news.pedaily.cn/202609/569586.shtml",
+        "quote": "投资界AI获悉，清华系量子人工智能明星企业清醒异构完成A+轮融资，投资方包括 晶凯资本、安徽高新投、道得投资、励石投资、中咨基金、徐汇资本、森蓝集团、泾东集团创始人 等。",
+        "corroborating_source_url": "https://36kr.com/p/1773644071926018",
+        "corroborating_quote": "公司创始人兼CEO余腾博士告诉36氪"
+      },
+      "rationale": "投资界规范事件正文明确将主体称为“清华系量子人工智能明星企业清醒异构”，并披露其完成A+轮融资；原始实体名中的“首发|”是媒体标题栏目标记。36氪历史报道也以清醒异构为报道主体并称余腾为公司创始人兼CEO。故将企业展示身份纠正为“清醒异构”，不据此推断其法定全称。"
     }
   ]
 }

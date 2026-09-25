@@ -2,7 +2,7 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.3",
     "date": "2026-09-25",
-    "generated_at": "2026-09-25T00:42:32.674Z",
+    "generated_at": "2026-09-25T04:22:56.269Z",
     "trigger": "verified_funding_events_with_three_month_backfill",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
@@ -14,8 +14,7 @@
       "blocked": 0,
       "pending": 0,
       "deduplicated": 4
-    },
-    "taxonomy_version": "TAG-V4.1"
+    }
   },
   "cards": [
     {
@@ -65,7 +64,7 @@
           }
         ],
         "application_entity_id": "EN-1067dd040b02ac41",
-        "canonical_entity_consistent": false
+        "canonical_entity_consistent": true
       },
       "financing": {
         "round": "A+轮",
@@ -154,19 +153,6 @@
           },
           {
             "name": "森蓝集团",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-735024582f88eccf",
-                "quote": "投资方包括 晶凯资本、安徽高新投、道得投资、励石投资、中咨基金、徐汇资本、森蓝集团、泾东集团创始人 等。",
-                "source_content_hash": "a13785fb3b434348",
-                "quote_hash": "2003afd91363e5b5e30381a0045930a17a8884bc7462b16b29bf3895a560a15d"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "泾东集团创始人",
             "role": "本轮参投",
             "evidence_refs": [
               {
@@ -557,13 +543,6 @@
           "canonical_name": ""
         },
         {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "泾东集团创始人",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
           "research_name": "AMD",
@@ -699,7 +678,7 @@
   "queue": [
     {
       "event_id": "EV-589b3b522be5b280",
-      "company_name": "首发| 清醒异构",
+      "company_name": "清醒异构",
       "status": "auto_published",
       "problems": [],
       "queries": [
@@ -758,7 +737,7 @@
           "error": ""
         }
       ],
-      "updated_at": "2026-09-25T00:42:32.674Z"
+      "updated_at": "2026-09-25T04:22:56.268Z"
     },
     {
       "event_id": "EV-3ca24f79062a359e",

@@ -1,7 +1,7 @@
 {
   "schema_version": "ENTITY-CATALOG-REVIEW-V1",
-  "generated_at": "2026-09-03T11:36:00+08:00",
-  "reviewer": "codex-2026-09-03",
+  "generated_at": "2026-09-25T12:16:49+08:00",
+  "reviewer": "codex-2026-09-25",
   "inputs": [
     "agent-workflow/reports/entity-catalog-deepseek-audit-phase2.json",
     "agent-workflow/reports/entity-catalog-secondary-search.json",
@@ -9,15 +9,18 @@
     "01-SiteV2/content/11-databases/data-center-v4/2026-08-29/entity-mentions.json",
     "01-SiteV2/content/11-databases/data-center-v4/2026-08-30/entity-mentions.json",
     "01-SiteV2/content/11-databases/data-center-v4/2026-08-31/entity-mentions.json",
-    "01-SiteV2/content/11-databases/data-center-v4/2026-09-03/entity-mentions.json"
+    "01-SiteV2/content/11-databases/data-center-v4/2026-09-03/entity-mentions.json",
+    "01-SiteV2/content/11-databases/data-center-v4/2026-09-25/entities.json",
+    "01-SiteV2/content/11-databases/data-center-v4/2026-09-25/canonical-events.json",
+    "01-SiteV2/content/11-databases/data-center-v4/2026-09-25/claims.json"
   ],
   "summary": {
     "current_catalog_reviewed": 536,
-    "supplemental_claim_entities": 25,
+    "supplemental_claim_entities": 26,
     "historical_decisions_retained": 358,
-    "reviewed": 912,
+    "reviewed": 913,
     "confirmed": 379,
-    "corrected": 187,
+    "corrected": 188,
     "merged": 111,
     "quarantined": 235
   },
@@ -30766,6 +30769,41 @@
       "reviewer": "codex-2026-09-03",
       "reviewed_at": "2026-09-03T11:36:00+08:00",
       "error_patterns": []
+    },
+    {
+      "entity_id": "EN-1067dd040b02ac41",
+      "current": {
+        "name": "首发| 清醒异构",
+        "catalog_type": "company",
+        "company_names": []
+      },
+      "action": "correct",
+      "merge_into_entity_id": "",
+      "canonical": {
+        "name": "清醒异构",
+        "catalog_type": "company",
+        "company_names": [],
+        "aliases": [],
+        "retain_original_name_as_alias": false
+      },
+      "evidence": {
+        "claim_refs": ["CL-5c76af6f9805fa94", "CL-e182597a6d8ed95e"],
+        "secondary_sources": [
+          {
+            "source_id": "FISRC-ec8473e1f5e395e8",
+            "source_url": "https://36kr.com/p/1773644071926018",
+            "quote": "公司创始人兼CEO余腾博士告诉36氪"
+          }
+        ]
+      },
+      "advisory_source": "codex_source_review",
+      "advisory_decision": "corrected",
+      "confidence": 0.98,
+      "rationale": "投资界规范事件正文将融资主体明确称为“清华系量子人工智能明星企业清醒异构”；实体名中的“首发|”来自媒体标题栏目标记。36氪历史报道以清醒异构为报道主体并称余腾为公司创始人兼CEO。将展示身份纠正为“清醒异构”并确认其为组织实体；不推断其法定全称。",
+      "review_status": "accepted",
+      "reviewer": "codex-2026-09-25",
+      "reviewed_at": "2026-09-25T12:16:49+08:00",
+      "error_patterns": ["name_extraction_fragment"]
     }
   ]
 }
