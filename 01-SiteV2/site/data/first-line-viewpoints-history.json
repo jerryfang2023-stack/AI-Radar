@@ -1,24 +1,24 @@
 {
   "meta": {
-    "generatedAt": "2026-09-24T00:33:53.351Z",
+    "generatedAt": "2026-09-25T00:36:42.830Z",
     "sourceFile": "01-SiteV2/site/data/follow-builders-daily.json",
-    "sourceCommits": 159,
-    "sourceSnapshots": 160,
+    "sourceCommits": 160,
+    "sourceSnapshots": 161,
     "earliestDate": "2026-06-01",
-    "latestDate": "2026-09-23",
+    "latestDate": "2026-09-24",
     "dedupeKey": "original_url",
     "sourcePolicy": "Historical records are reconstructed from committed morning-lane snapshots and retain their original URL and source snapshot.",
     "translationPolicy": "Only complete approved Chinese translations with matching source hashes are published."
   },
   "stats": {
-    "discovered": 2941,
-    "aiRelevant": 1630,
-    "alreadyApproved": 810,
+    "discovered": 2968,
+    "aiRelevant": 1643,
+    "alreadyApproved": 822,
     "translatedThisRun": 0,
-    "pendingTranslation": 820,
-    "published": 1407,
+    "pendingTranslation": 821,
+    "published": 1419,
     "pendingReasons": {
-      "translation_gate_failed": 161,
+      "translation_gate_failed": 162,
       "mymemory": 634,
       "static_blog_title": 14,
       "none": 4,
@@ -26,6 +26,490 @@
     }
   },
   "remarks": [
+    {
+      "id": "https://tldr.tech/ai/2026-09-24",
+      "source": "blog",
+      "name": "TLDR AI Newsletter",
+      "handle": "tldr.tech",
+      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
+      "text": "Gemini TTS 🗣️, Claude’s novel enzyme 🧬, Google private memory 🔒",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "Gemini TTS 🗣️，Claude的新型酶 🧬，Google私人记忆 🔒",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "eddea51d924204c6",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "Thu, 24 Sep 2026 00:00:00 GMT",
+      "date": "2026-09-24",
+      "url": "https://tldr.tech/ai/2026-09-24",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2102956775645552645",
+      "source": "x",
+      "name": "Peter Yang",
+      "handle": "petergyang",
+      "role": "Practical AI tutorials and interviews for busy people",
+      "text": "No more crappy corporate slides, the result of this prompt blew me away lol https://t.co/atQudEjz9H",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "不再有糟糕的企业幻灯片了，这个提示词的结果让我惊呆了哈哈 https://t.co/atQudEjz9H",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "c8e7544ce9a73bac",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-24T03:02:21.000Z",
+      "date": "2026-09-24",
+      "url": "https://x.com/petergyang/status/2102956775645552645",
+      "likes": 206,
+      "retweets": 2,
+      "replies": 16,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2102955139875397806",
+      "source": "x",
+      "name": "Garry Tan",
+      "handle": "garrytan",
+      "role": "President & CEO ycombinator —Founder garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
+      "text": "Two important simultaneous important trends in how startups get customers: Make software agents want Use agents to make people want software",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "初创企业获取客户的两个重要且同时发生的趋势：让软件代理想要，用代理让人们想要软件",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "c07163d7777a3ebb",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-09-24T02:55:51.000Z",
+      "date": "2026-09-24",
+      "url": "https://x.com/garrytan/status/2102955139875397806",
+      "likes": 434,
+      "retweets": 37,
+      "replies": 87,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2102952201350254667",
+      "source": "x",
+      "name": "Peter Yang",
+      "handle": "petergyang",
+      "role": "Practical AI tutorials and interviews for busy people",
+      "text": "With a model this good the Claude Code harness really needs great live voice and browser + computer use (latter is improving!) Right now one lab has the best model and another has the best harness. https://t.co/SoV7GN0pIB",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "有了这么好的模型，Claude Code 框架真的需要出色的实时语音以及浏览器 + 计算机使用能力（后者正在改进！）目前，一个实验室拥有最好的模型，另一个拥有最好的框架。https://t.co/SoV7GN0pIB",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "151d7326f619ace2",
+      "topic": "AI 编程",
+      "columnTags": [
+        {
+          "id": "opinion-ai-coding",
+          "name": "AI Coding 观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-coding",
+          "name": "AI Coding",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 AI 编程工具、设计到代码流程和软件生产方式的变化；需要结合产品发布或文档再做事实判断。",
+      "createdAt": "2026-09-24T02:44:10.000Z",
+      "date": "2026-09-24",
+      "url": "https://x.com/petergyang/status/2102952201350254667",
+      "likes": 25,
+      "retweets": 0,
+      "replies": 16,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2102947745132924993",
+      "source": "x",
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "role": "vercel CEO",
+      "text": "ShellPerfBench. I'm really neurotic about the startup time of a new shell session. Opus 5.5 found a lot of really great optimizations other models missed. Anon, anytime you open a new terminal, you might be silently suffering. Tell your agent to optimize .𝚣𝚜𝚑𝚛𝚌 and friends",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "ShellPerfBench。我对新 shell 会话的启动时间真的非常神经质。Opus 5.5 找到了很多其他模型错过的非常棒的优化。匿名的朋友，每当你打开一个新终端，你可能都在默默受苦。让你的 agent 去优化 .𝚣𝚜𝚑𝚛𝚌 及其同类文件吧",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "14767c20f2ad3517",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-09-24T02:26:27.000Z",
+      "date": "2026-09-24",
+      "url": "https://x.com/rauchg/status/2102947745132924993",
+      "likes": 112,
+      "retweets": 2,
+      "replies": 33,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2102898067133595992",
+      "source": "x",
+      "name": "Boris Cherny",
+      "handle": "bcherny",
+      "role": "Claude Code anthropicai",
+      "text": "More details for the formal methods people -- what's happening is Claude is doing something like: 1. Building a model of the program, targeting a tricky state machine or race-prone part of the code 2. Finding counter-examples in the model. These are suspected bugs 3. Reproducing the bugs 4. Fixing the bugs in the code It's not that the whole codebase is formally verified (yet!..), more that the hairiest parts of the code are modeled, checked for counter-examples, and fixed.",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "给形式化方法领域的人更多细节——正在发生的事情是Claude在做类似这样的事情：1. 构建程序的一个模型，针对代码中棘手的状态机或容易发生竞态的部分 2. 在模型中找到反例。这些是疑似bug 3. 复现这些bug 4. 在代码中修复这些bug。并不是说整个代码库都被形式化验证了（还！……），更多的是代码中最棘手的部分被建模、检查反例并修复。",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "0cdfb088e5a58571",
+      "topic": "AI 编程",
+      "columnTags": [
+        {
+          "id": "opinion-ai-coding",
+          "name": "AI Coding 观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-coding",
+          "name": "AI Coding",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 AI 编程工具、设计到代码流程和软件生产方式的变化；需要结合产品发布或文档再做事实判断。",
+      "createdAt": "2026-09-23T23:09:03.000Z",
+      "date": "2026-09-24",
+      "url": "https://x.com/bcherny/status/2102898067133595992",
+      "likes": 68,
+      "retweets": 2,
+      "replies": 18,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2102857025206255902",
+      "source": "x",
+      "name": "Thariq",
+      "handle": "trq212",
+      "role": "Claude Code anthropicai. prev YC W20, spc, medialab",
+      "text": "this is a new type of post we're trying where we share in-depth about how we do work using specific prompts and techniques you should be able to replicate let us know if it's useful or if you have any feedback! https://t.co/OiScn8ZI9Y",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "这是我们正在尝试的一种新型帖子，我们会深入分享如何使用特定提示和技巧来开展工作，你应该能够复制。请告诉我们这是否有用，或者如果你有任何反馈！https://t.co/OiScn8ZI9Y",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "355bdfc3e52d79da",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-23T20:25:58.000Z",
+      "date": "2026-09-24",
+      "url": "https://x.com/trq212/status/2102857025206255902",
+      "likes": 2289,
+      "retweets": 56,
+      "replies": 98,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2102840855258452037",
+      "source": "x",
+      "name": "Claude",
+      "handle": "claudeai",
+      "role": "Claude is an AI assistant built by anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app.",
+      "text": "Browse the marketplace: https://t.co/MIKvTzg59L And if you're building for Claude, list your tools, agents or services here: https://t.co/gjX3Xctic2",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "浏览市场：https://t.co/MIKvTzg59L 如果你正在为Claude构建，请在此列出你的工具、代理或服务：https://t.co/gjX3Xctic2",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "e07f282d7e819088",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-09-23T19:21:43.000Z",
+      "date": "2026-09-24",
+      "url": "https://x.com/claudeai/status/2102840855258452037",
+      "likes": 179,
+      "retweets": 7,
+      "replies": 18,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2102840851538080172",
+      "source": "x",
+      "name": "Claude",
+      "handle": "claudeai",
+      "role": "Claude is an AI assistant built by anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app.",
+      "text": "You can now discover tools, agents and expert partners on Claude Marketplace. Use it to: - Add connectors and plugins like Slack and Notion - Buy agents and products from companies like Cursor and CrowdStrike - Scale with service partners like Accenture and Deloitte https://t.co/S5DrmdUkXu",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "你现在可以在 Claude Marketplace 上发现工具、代理和专家合作伙伴。用它来： - 添加 Slack 和 Notion 等连接器和插件 - 从 Cursor 和 CrowdStrike 等公司购买代理和产品 - 与 Accenture 和 Deloitte 等服务合作伙伴一起扩展 https://t.co/S5DrmdUkXu",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "4ecff936a97ba22c",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-09-23T19:21:42.000Z",
+      "date": "2026-09-24",
+      "url": "https://x.com/claudeai/status/2102840851538080172",
+      "likes": 4249,
+      "retweets": 245,
+      "replies": 166,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2102826854357016793",
+      "source": "x",
+      "name": "Dan Shipper",
+      "handle": "danshipper",
+      "role": "ceo every",
+      "text": "tomorrow at 6pm we find out if an ai agent can throw a good party the @every agent planned every’s september meetup from the food and drinks menu to the guest list. come grade it with in our brownstone in brooklyn! rsvp: https://t.co/pfbOXwEWbJ",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "明天下午6点，我们就会知道AI智能体能不能办出一场精彩的派对。@every 智能体策划了Every九月的聚会，从餐饮菜单到宾客名单，全都包办。来我们布鲁克林的褐石屋一起给它打分吧！报名：https://t.co/pfbOXwEWbJ",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "224209edcb2cc8f9",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-09-23T18:26:05.000Z",
+      "date": "2026-09-24",
+      "url": "https://x.com/danshipper/status/2102826854357016793",
+      "likes": 31,
+      "retweets": 4,
+      "replies": 7,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2102800209894056351",
+      "source": "x",
+      "name": "Josh Woodward",
+      "handle": "joshwoodward",
+      "role": "VP, Google GoogleLabs GeminiApp GoogleAIStudio",
+      "text": "More of your favorite apps are coming to Gemini! Which ones do you want next? https://t.co/5TcgtcMM24",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "你最喜欢的更多应用即将登陆Gemini！你接下来希望是哪些？https://t.co/5TcgtcMM24",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "57e3808de1925254",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-23T16:40:12.000Z",
+      "date": "2026-09-24",
+      "url": "https://x.com/joshwoodward/status/2102800209894056351",
+      "likes": 366,
+      "retweets": 11,
+      "replies": 143,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
     {
       "id": "https://tldr.tech/ai/2026-09-23",
       "source": "blog",
@@ -65,6 +549,50 @@
       "likes": 0,
       "retweets": 0,
       "replies": 0,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2102650014552182920",
+      "source": "x",
+      "name": "Swyx",
+      "handle": "swyx",
+      "role": "achieve ambition with intentionality, intensity, integrity & insanity.",
+      "text": "can confirm. ran @latentspacepod AINews side by side with 6 Sol and the difference was night and day: https://t.co/oloSDxf0q7 5.5 Opus is the new default model for AINews going forward. so much more concise and tasteful reporting, with much less slopese than even 5 Opus. https://t.co/P6AXDlBKNP https://t.co/6q20Ik0dho",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "可以确认。把@latentspacepod AINews与6 Sol并排运行，差别简直是天壤之别：https://t.co/oloSDxf0q7 5.5 Opus 今后将成为 AINews 的新默认模型。报道简洁得体得多，废话连篇的程度甚至比 5 Opus 还低得多。https://t.co/P6AXDlBKNP https://t.co/6q20Ik0dho",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "7fc431109c707b3a",
+      "topic": "AI 基础设施",
+      "columnTags": [
+        {
+          "id": "opinion-model-infra",
+          "name": "模型基础设施观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察模型运行、算力、存储、sandbox 或开发平台基础设施的变化；后续事实判断需回到原始公告或技术文档。",
+      "createdAt": "2026-09-23T06:43:23.000Z",
+      "date": "2026-09-23",
+      "url": "https://x.com/swyx/status/2102650014552182920",
+      "likes": 205,
+      "retweets": 12,
+      "replies": 125,
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
@@ -112,7 +640,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102589061445939508",
@@ -156,7 +684,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102577425838485916",
@@ -200,7 +728,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102569951974584612",
@@ -244,7 +772,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102544711647129902",
@@ -288,7 +816,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102543349102338309",
@@ -332,7 +860,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102519097770885231",
@@ -376,7 +904,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102501556348440983",
@@ -420,7 +948,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102477527688388752",
@@ -464,7 +992,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102477253070430322",
@@ -508,7 +1036,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102471892099866883",
@@ -552,7 +1080,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102471885061812714",
@@ -596,7 +1124,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102468713866055872",
@@ -640,7 +1168,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102466524934271381",
@@ -684,7 +1212,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102466523164274839",
@@ -728,7 +1256,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102463847714247142",
@@ -772,7 +1300,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102448415775051790",
@@ -816,7 +1344,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102440619616682120",
@@ -860,7 +1388,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102438365455167883",
@@ -904,7 +1432,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102437713781944397",
@@ -948,7 +1476,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102421668509733058",
@@ -992,7 +1520,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102253246807261579",
@@ -2180,7 +2708,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2100718806004064730",
