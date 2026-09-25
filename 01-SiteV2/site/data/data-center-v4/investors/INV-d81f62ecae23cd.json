@@ -369,51 +369,82 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "coverage_status": "activity_only",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Felicis 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "summary": "Felicis 是一家以早期投资为主的风险投资机构。官网称其 94% 的投资发生在 Seed 或 Series A，并强调快速决策、创始人支持及跨行业投资。官网当前自述管理资产 41 亿美元，组合中有 65 家以上独角兽及 140 多家已上市或被收购企业；这些属于机构自报的统计口径。",
+      "facts": [
         {
-          "description": "融资来源记录：Runlayer · A轮 · 2026-06-24 · 本轮领投，种子轮领投 · 3000万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-06082ac5aeed96c9"
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": [
+            "Seed",
+            "Series A 为主"
+          ],
+          "source_id": "felicis_about"
         },
         {
-          "description": "融资来源记录：Runlayer · A轮 · 2026-06-24 · 本轮领投，种子轮领投 · 3000万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-ef4e64efecd2b0f8"
+          "field": "investment_mix",
+          "label": "早期投资比例",
+          "value": "官网称 94% 的投资为 Seed 或 Series A",
+          "source_id": "felicis_about"
         },
         {
-          "description": "融资来源记录：Fractile · B轮 · 2026-05-13 · 本轮参投 · 2.2亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-62071134d28f47b9"
+          "field": "assets_under_management",
+          "label": "管理资产规模",
+          "value": "41 亿美元（官网当前自述）",
+          "source_id": "felicis_about"
+        },
+        {
+          "field": "portfolio_outcomes",
+          "label": "组合退出概况",
+          "value": "官网自述有 140 多家组合企业已上市或被收购；此为机构统计口径",
+          "source_id": "felicis_about"
+        },
+        {
+          "field": "founder_support",
+          "label": "创始人支持方式",
+          "value": "官网称每笔首期投资额的 1% 用于创始人支持，并设有管理者教练与个人发展支持",
+          "source_id": "felicis_about"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2006",
+          "description": "官网时间线记载机构于 2006 年创立。",
+          "source_id": "felicis_about"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "官网组合页列示 Adyen、Canva、Shopify、Crusoe、Runway 等案例；该展示是公开选列组合，不代表完整投资清单或基金回报。",
+          "source_id": "felicis_portfolio"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Felicis 官方网站与团队入口",
+          "value": "Felicis",
+          "url": "https://www.felicis.com/",
+          "source_id": "felicis_about"
+        }
+      ],
+      "coverage_status": "researched",
+      "coverage_note": "机构策略和数据来自 Felicis 官网 About 与 Portfolio 页面；比例、资产规模和退出数量均按官网自报及页面当前口径表述。官网页面未核验到通用项目投递邮箱，因此只列官网入口。",
       "sources": [
         {
-          "source_id": "FISRC-06082ac5aeed96c9",
-          "source_url": "https://www.prnewswire.com/news-releases/runlayer-raises-30m-series-a-to-help-enterprises-go-all-in-on-ai-302809271.html",
-          "source_title": "Runlayer 获 3000 万美元 A 轮融资，助力企业全面拥抱 AI",
-          "source_content_hash": "6fd7da0cbf7f6306",
-          "quote": "a $30 million Series A led by Felicis",
-          "quote_hash": "58e264e73bd127873513433688e7704fb3ff322bddc5ddfc22c474947b5a0fda"
+          "source_id": "felicis_about",
+          "source_url": "https://www.felicis.com/about",
+          "source_title": "About | Felicis",
+          "source_content_hash": "084ae98886d18aca38f92a20d88b47029b802a5c7ee3fde006cdecea82ca863c",
+          "quote": "94% of our investments are Seed or Series A. We invest before it is obvious, when founders are just beginning to build. $4.1 B AUM. 65+ Unicorns. 140+ portfolio companies acquired or public. 1% of every first check goes to founder support. 2006: FV I fund.",
+          "quote_hash": "3156e7257de9752aa379f57c28fd4270b58924716a65dafe6e257ef942223aaa"
         },
         {
-          "source_id": "FISRC-ef4e64efecd2b0f8",
-          "source_url": "https://denotepress.com/runlayer-series-a-funding/",
-          "source_title": "Runlayer Raises $30M Series A to Build the Enterprise AI Governance Layer - denotepress.com",
-          "source_content_hash": "36d67b31b12d3716",
-          "quote": "Felicis preempted the round — a strong signal of investor conviction — after having also led the company’s $11 million seed round",
-          "quote_hash": "39ca999c5b3b8fd54de07533fe179ee51e8c2ef40953f3c4e8466ebdf69f1e5b"
-        },
-        {
-          "source_id": "FISRC-62071134d28f47b9",
-          "source_url": "https://www.fractile.ai/news/fractile-raises-220m-to-build-the-next-generation-of-inference-hardware",
-          "source_title": "Fractile 融资2.2亿美元，打造下一代推理硬件",
-          "source_content_hash": "49c881bff41c0376",
-          "quote": "with participation from Conviction, Gigascale, 01A, Felicis, Buckley Ventures and 8VC",
-          "quote_hash": "43b18a1ac783a5b2aecda37d5dfe5f4e674fa56f7f1ab21b2b165fded9ad59bb"
+          "source_id": "felicis_portfolio",
+          "source_url": "https://www.felicis.com/portfolio",
+          "source_title": "Felicis Portfolio | Companies We’ve Invested In | Felicis",
+          "source_content_hash": "6f2b9ddff65fcfa9d1830c9a623869e9afdc2152ed98696e77e62e944796279a",
+          "quote": "Felicis portfolio lists companies by stage, domain and status, including Adyen, Canva, Shopify, Crusoe, Runway and BioAge Labs.",
+          "quote_hash": "b9a5ee78916eb3f518f18a5938b6de0d0cfb0b5d3a89f6eee512e9971c660433"
         }
       ],
       "last_verified_at": "2026-09-25"

@@ -4191,51 +4191,82 @@
       "last_verified_at": "2026-09-25"
     },
     "INV-d81f62ecae23cd": {
-      "profile_type": "unverified",
-      "coverage_status": "activity_only",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Felicis 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "summary": "Felicis 是一家以早期投资为主的风险投资机构。官网称其 94% 的投资发生在 Seed 或 Series A，并强调快速决策、创始人支持及跨行业投资。官网当前自述管理资产 41 亿美元，组合中有 65 家以上独角兽及 140 多家已上市或被收购企业；这些属于机构自报的统计口径。",
+      "facts": [
         {
-          "description": "融资来源记录：Runlayer · A轮 · 2026-06-24 · 本轮领投，种子轮领投 · 3000万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-06082ac5aeed96c9"
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": [
+            "Seed",
+            "Series A 为主"
+          ],
+          "source_id": "felicis_about"
         },
         {
-          "description": "融资来源记录：Runlayer · A轮 · 2026-06-24 · 本轮领投，种子轮领投 · 3000万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-ef4e64efecd2b0f8"
+          "field": "investment_mix",
+          "label": "早期投资比例",
+          "value": "官网称 94% 的投资为 Seed 或 Series A",
+          "source_id": "felicis_about"
         },
         {
-          "description": "融资来源记录：Fractile · B轮 · 2026-05-13 · 本轮参投 · 2.2亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-62071134d28f47b9"
+          "field": "assets_under_management",
+          "label": "管理资产规模",
+          "value": "41 亿美元（官网当前自述）",
+          "source_id": "felicis_about"
+        },
+        {
+          "field": "portfolio_outcomes",
+          "label": "组合退出概况",
+          "value": "官网自述有 140 多家组合企业已上市或被收购；此为机构统计口径",
+          "source_id": "felicis_about"
+        },
+        {
+          "field": "founder_support",
+          "label": "创始人支持方式",
+          "value": "官网称每笔首期投资额的 1% 用于创始人支持，并设有管理者教练与个人发展支持",
+          "source_id": "felicis_about"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2006",
+          "description": "官网时间线记载机构于 2006 年创立。",
+          "source_id": "felicis_about"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "官网组合页列示 Adyen、Canva、Shopify、Crusoe、Runway 等案例；该展示是公开选列组合，不代表完整投资清单或基金回报。",
+          "source_id": "felicis_portfolio"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Felicis 官方网站与团队入口",
+          "value": "Felicis",
+          "url": "https://www.felicis.com/",
+          "source_id": "felicis_about"
+        }
+      ],
+      "coverage_status": "researched",
+      "coverage_note": "机构策略和数据来自 Felicis 官网 About 与 Portfolio 页面；比例、资产规模和退出数量均按官网自报及页面当前口径表述。官网页面未核验到通用项目投递邮箱，因此只列官网入口。",
       "sources": [
         {
-          "source_id": "FISRC-06082ac5aeed96c9",
-          "source_url": "https://www.prnewswire.com/news-releases/runlayer-raises-30m-series-a-to-help-enterprises-go-all-in-on-ai-302809271.html",
-          "source_title": "Runlayer 获 3000 万美元 A 轮融资，助力企业全面拥抱 AI",
-          "source_content_hash": "6fd7da0cbf7f6306",
-          "quote": "a $30 million Series A led by Felicis",
-          "quote_hash": "58e264e73bd127873513433688e7704fb3ff322bddc5ddfc22c474947b5a0fda"
+          "source_id": "felicis_about",
+          "source_url": "https://www.felicis.com/about",
+          "source_title": "About | Felicis",
+          "source_content_hash": "084ae98886d18aca38f92a20d88b47029b802a5c7ee3fde006cdecea82ca863c",
+          "quote": "94% of our investments are Seed or Series A. We invest before it is obvious, when founders are just beginning to build. $4.1 B AUM. 65+ Unicorns. 140+ portfolio companies acquired or public. 1% of every first check goes to founder support. 2006: FV I fund.",
+          "quote_hash": "3156e7257de9752aa379f57c28fd4270b58924716a65dafe6e257ef942223aaa"
         },
         {
-          "source_id": "FISRC-ef4e64efecd2b0f8",
-          "source_url": "https://denotepress.com/runlayer-series-a-funding/",
-          "source_title": "Runlayer Raises $30M Series A to Build the Enterprise AI Governance Layer - denotepress.com",
-          "source_content_hash": "36d67b31b12d3716",
-          "quote": "Felicis preempted the round — a strong signal of investor conviction — after having also led the company’s $11 million seed round",
-          "quote_hash": "39ca999c5b3b8fd54de07533fe179ee51e8c2ef40953f3c4e8466ebdf69f1e5b"
-        },
-        {
-          "source_id": "FISRC-62071134d28f47b9",
-          "source_url": "https://www.fractile.ai/news/fractile-raises-220m-to-build-the-next-generation-of-inference-hardware",
-          "source_title": "Fractile 融资2.2亿美元，打造下一代推理硬件",
-          "source_content_hash": "49c881bff41c0376",
-          "quote": "with participation from Conviction, Gigascale, 01A, Felicis, Buckley Ventures and 8VC",
-          "quote_hash": "43b18a1ac783a5b2aecda37d5dfe5f4e674fa56f7f1ab21b2b165fded9ad59bb"
+          "source_id": "felicis_portfolio",
+          "source_url": "https://www.felicis.com/portfolio",
+          "source_title": "Felicis Portfolio | Companies We’ve Invested In | Felicis",
+          "source_content_hash": "6f2b9ddff65fcfa9d1830c9a623869e9afdc2152ed98696e77e62e944796279a",
+          "quote": "Felicis portfolio lists companies by stage, domain and status, including Adyen, Canva, Shopify, Crusoe, Runway and BioAge Labs.",
+          "quote_hash": "b9a5ee78916eb3f518f18a5938b6de0d0cfb0b5d3a89f6eee512e9971c660433"
         }
       ],
       "last_verified_at": "2026-09-25"
@@ -4451,51 +4482,104 @@
       "last_verified_at": "2026-09-25"
     },
     "INV-90d5bb78e64004": {
-      "profile_type": "organization",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "GV 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "summary": "GV（原 Google Ventures）是 Alphabet 的风险投资机构，Alphabet 为其唯一有限合伙人。官网称 GV 覆盖种子期至成长期，投资科技和生命科学领域，并依托运营合伙人为创业团队提供招聘、传播和市场支持。",
+      "facts": [
         {
-          "description": "融资来源记录：Snorkel AI · E轮 · 2026-09-22 · 本轮参投 · $350 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-16afc5791c45315a"
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2009 年以 Google Ventures 名义创立",
+          "source_id": "gv_about"
         },
         {
-          "description": "融资来源记录：Adapter · 种子轮 · 2026-07-14 · 种子轮领投 · 1780万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-74e051fb023f526b"
+          "field": "ownership",
+          "label": "有限合伙人",
+          "value": "Alphabet 为唯一有限合伙人（官网自述）",
+          "source_id": "gv_about"
         },
         {
-          "description": "融资来源记录：Odyssey ML · B轮 · 2026-06-17 · 本轮参投 · 3.1亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-e94365d0212a78f3"
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": [
+            "种子期",
+            "成长期"
+          ],
+          "source_id": "gv_about"
+        },
+        {
+          "field": "focus_sectors",
+          "label": "重点领域",
+          "value": [
+            "科技",
+            "生命科学"
+          ],
+          "source_id": "gv_about"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "管理资产规模",
+          "value": "超过 130 亿美元（官网自述，页面当前口径）",
+          "source_id": "gv_about"
+        },
+        {
+          "field": "portfolio_count",
+          "label": "活跃组合企业",
+          "value": "400 家（官网自述）",
+          "source_id": "gv_about"
+        },
+        {
+          "field": "portfolio_geography",
+          "label": "组合覆盖地区",
+          "value": [
+            "北美",
+            "欧洲",
+            "以色列"
+          ],
+          "source_id": "gv_about"
+        },
+        {
+          "field": "operating_support",
+          "label": "运营支持",
+          "value": "官网称运营合伙人支持高管人才、传播和市场工作，并可协助创业公司连接 Google 与 Alphabet 公司。",
+          "source_id": "gv_about"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2009",
+          "description": "以 Google Ventures 名义创立；官网记载首批投资包括 Silver Spring Networks 与 Adimab。",
+          "source_id": "gv_about"
+        },
+        {
+          "date": "2015",
+          "description": "Google Ventures 更名为 GV。",
+          "source_id": "gv_about"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "官网列出的代表性退出包括 Uber、Nest、Slack、GitLab、Duo Security、Flatiron Health、Lemonade 和 One Medical；该列表为机构自选案例。",
+          "source_id": "gv_about"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "GV 官方网站与团队入口",
+          "value": "GV",
+          "url": "https://www.gv.com/",
+          "source_id": "gv_about"
+        }
+      ],
+      "coverage_status": "researched",
+      "coverage_note": "机构定位、Alphabet 关系、阶段范围、规模和组合数据来自 GV 官方 About 页面。AUM、组合及退出数量为机构自述的页面当前口径；未将融资活动库中名称相同的交易自动归因到 GV 的特定基金。",
       "sources": [
         {
-          "source_id": "FISRC-16afc5791c45315a",
-          "source_url": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms",
-          "source_title": "Snorkel AI 完成 3.5 亿美元 E 轮融资，估值升至 35 亿美元",
-          "source_content_hash": "ad04baf1994708d0",
-          "quote": "Existing investors, including Addition, Lightspeed, Greylock, GV, and Wells Fargo, also participated in the round.",
-          "quote_hash": "92843a27e9a17a95541b55d525127fe759bd8cd3c7ac12e6ae5e7f1891818260"
-        },
-        {
-          "source_id": "FISRC-74e051fb023f526b",
-          "source_url": "https://www.upstartsmedia.com/p/deep-dive-adapter-launches-ai-cognition",
-          "source_title": "独家：初创公司 Adapter 获 1780 万美元融资，为 AI 工具注入全新“认知”能力",
-          "source_content_hash": "c4b4aec73019eeb8",
-          "quote": "has raised $17.8 million in capital to date from GV, Bond Partners (an early-stage fund within BOND), and a number of other investors",
-          "quote_hash": "918ca6b7204df55ee2a0ebea7cb4273f29d354276b90e6c473cd92d279be7154"
-        },
-        {
-          "source_id": "FISRC-e94365d0212a78f3",
-          "source_url": "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names",
-          "source_title": "世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元",
-          "source_content_hash": "75587989c4b9271c",
-          "quote": "with Amazon, AMD Ventures, GV, and others participating",
-          "quote_hash": "a36a967aacd4c90a1561022a9dc76b3a0a4d1cf9bc904ad059b99a95d150543b"
+          "source_id": "gv_about",
+          "source_url": "https://www.gv.com/about",
+          "source_title": "GV - About GV",
+          "source_content_hash": "e0b75d0a77292164589ef6f5944d40f8d3c4b303f8ac36c68d51b41f88eff3fb",
+          "quote": "Launched as Google Ventures in 2009. With Alphabet as our sole limited partner. Today, with over $13 billion in assets under management, we invest from seed to growth stages across the technology and life sciences sectors. We support 400 active portfolio companies across North America, Europe, and Israel. Our portfolio includes notable exits such as Uber, Nest, Slack, GitLab, Duo Security, Flatiron Health, Lemonade, and One Medical.",
+          "quote_hash": "90cbdf37bd32985fe0287193ec4b8eaee618ac9632610f1ef38fb1e68a388701"
         }
       ],
       "last_verified_at": "2026-09-25"
@@ -6276,51 +6360,92 @@
       "last_verified_at": "2026-09-25"
     },
     "INV-f6da221585bf1b": {
-      "profile_type": "organization",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Greylock 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "summary": "Greylock 是一家长期专注早期企业的软件和科技风险投资机构。官网称其多数投资支持首次创业者，并从企业构想阶段开始提供产品、市场、招聘及客户拓展支持。机构公开资料列举了 Airbnb、Coinbase、Discord、Figma、LinkedIn、Meta、Roblox 等早期合作案例。",
+      "facts": [
         {
-          "description": "融资来源记录：Snorkel AI · E轮 · 2026-09-22 · 本轮参投 · $350 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-16afc5791c45315a"
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": [
+            "Pre-Seed",
+            "Seed",
+            "Series A"
+          ],
+          "source_id": "greylock_fund"
         },
         {
-          "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮参投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-61aa8db010b34dfa"
+          "field": "investment_focus",
+          "label": "投资重点",
+          "value": "官网称专注早期创业者；2023 年基金公告聚焦企业软件与消费软件。",
+          "source_id": "greylock_firm"
         },
         {
-          "description": "融资来源记录：Niteshift · 种子轮 · 2026-06-10 · 本轮领投 · $7 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-01df70e43799a400"
+          "field": "fund_size",
+          "label": "第 17 期基金规模",
+          "value": "10 亿美元（2023 年公布，历史基金数据）",
+          "source_id": "greylock_fund"
+        },
+        {
+          "field": "founder_support",
+          "label": "创始人支持",
+          "value": "官网介绍包括早期产品定位、技术架构、人才招聘、客户反馈、市场进入和后续融资支持。",
+          "source_id": "greylock_firm"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2023",
+          "description": "宣布 Greylock 17，10 亿美元基金重点支持 Pre-Seed、Seed 和 Series A 企业软件及消费软件创业者。",
+          "source_id": "greylock_fund"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "官网列举的历史早期合作企业包括 Airbnb、AppDynamics、Coinbase、Discord、Figma、Instagram、LinkedIn、Meta、Nextdoor、Okta、Palo Alto Networks、Roblox 与 Workday；属机构自选案例，并非完整组合或回报披露。",
+          "source_id": "greylock_firm"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "application",
+          "label": "商业计划与业务联系表单",
+          "value": "Greylock Contact Us 表单",
+          "url": "https://greylock.com/contact-us/",
+          "source_id": "greylock_contact"
+        },
+        {
+          "kind": "website",
+          "label": "Greylock 官方网站",
+          "value": "Greylock",
+          "url": "https://greylock.com/",
+          "source_id": "greylock_firm"
+        }
+      ],
+      "coverage_status": "researched",
+      "coverage_note": "公司介绍与创始人支持内容来自 Greylock 官网；基金规模和阶段按 2023 年 Fund 17 公告标注为历史数据，未当作当前基金规模。官网联络页提供 Business Plans 表单，不推断未公开的通用投资邮箱。",
       "sources": [
         {
-          "source_id": "FISRC-16afc5791c45315a",
-          "source_url": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms",
-          "source_title": "Snorkel AI 完成 3.5 亿美元 E 轮融资，估值升至 35 亿美元",
-          "source_content_hash": "ad04baf1994708d0",
-          "quote": "Existing investors, including Addition, Lightspeed, Greylock, GV, and Wells Fargo, also participated in the round.",
-          "quote_hash": "92843a27e9a17a95541b55d525127fe759bd8cd3c7ac12e6ae5e7f1891818260"
+          "source_id": "greylock_firm",
+          "source_url": "https://greylock.com/firm/",
+          "source_title": "Firm | Greylock",
+          "source_content_hash": "2bfc7a8a89697f7902053b3d176fddcd52e9c1cca80cc81454516748d51a4d11",
+          "quote": "The majority of Greylock investments go to entrepreneurs who are creating their first enterprise. Our sole focus is on hearing from entrepreneurs. In every investment, our commitment is to be that partner from day one. We’ve stayed true to this approach for more than five decades. Early partners include Airbnb, Coinbase, Discord, Figma, Instagram, LinkedIn, Meta, Roblox and Workday.",
+          "quote_hash": "b5e925e05eea0ba950ba0f713ab0c7fbe873ce3b38cee0b4dafa97292180ec23"
         },
         {
-          "source_id": "FISRC-61aa8db010b34dfa",
-          "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
-          "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
-          "source_content_hash": "274ba4a54870c633",
-          "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
-          "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
+          "source_id": "greylock_fund",
+          "source_url": "https://greylock.com/blog/announcing-greylock-17/",
+          "source_title": "A $1 Billion Commitment to Day One | Greylock",
+          "source_content_hash": "65d51dbfd7cd7ef5fe66b13aa671ae98b42b8773edb48c10929abbf516d491fa",
+          "quote": "Greylock 17 is a $1 billion fund intentionally focused on Pre-Seed, Seed, and Series A founders in enterprise and consumer software.",
+          "quote_hash": "10ca32c065bcb52ecdd3d6e5a3519483262820a82085cb66e75409634e240d21"
         },
         {
-          "source_id": "FISRC-01df70e43799a400",
-          "source_url": "https://techcrunch.com/2026/06/10/datadog-veterans-launch-ai-coding-startup-niteshift-on-a-bet-against-big-ai-lock-in",
-          "source_title": "Datadog 资深人士创立 AI 编码初创公司 Niteshift，押注企业对抗大模型锁定",
-          "source_content_hash": "21b15182c071a779",
-          "quote": "Niteshift has raised a $7 million seed round led by Greylock’s Jerry Chen.",
-          "quote_hash": "5d755020d7aeebf996ab29872032d7726456cf085ad52a99c899bc2d4a3e257c"
+          "source_id": "greylock_contact",
+          "source_url": "https://greylock.com/contact-us/",
+          "source_title": "Contact Us | Greylock",
+          "source_content_hash": "a24d90e1f03d9d41e71cd08bf50251a11448a30725ea8d27e1f114aadbb47193",
+          "quote": "Send a note. Business Plans. Business Email Address. Business Full Name. Business Company. Title. Your Message.",
+          "quote_hash": "194f05aeb8a2c405ec300b3421939216eb9fa55244523a7af1789c36f143f839"
         }
       ],
       "last_verified_at": "2026-09-25"

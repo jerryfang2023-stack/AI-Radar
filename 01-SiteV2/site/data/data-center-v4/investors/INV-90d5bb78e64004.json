@@ -300,51 +300,104 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "GV 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "summary": "GV（原 Google Ventures）是 Alphabet 的风险投资机构，Alphabet 为其唯一有限合伙人。官网称 GV 覆盖种子期至成长期，投资科技和生命科学领域，并依托运营合伙人为创业团队提供招聘、传播和市场支持。",
+      "facts": [
         {
-          "description": "融资来源记录：Snorkel AI · E轮 · 2026-09-22 · 本轮参投 · $350 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-16afc5791c45315a"
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2009 年以 Google Ventures 名义创立",
+          "source_id": "gv_about"
         },
         {
-          "description": "融资来源记录：Adapter · 种子轮 · 2026-07-14 · 种子轮领投 · 1780万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-74e051fb023f526b"
+          "field": "ownership",
+          "label": "有限合伙人",
+          "value": "Alphabet 为唯一有限合伙人（官网自述）",
+          "source_id": "gv_about"
         },
         {
-          "description": "融资来源记录：Odyssey ML · B轮 · 2026-06-17 · 本轮参投 · 3.1亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-e94365d0212a78f3"
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": [
+            "种子期",
+            "成长期"
+          ],
+          "source_id": "gv_about"
+        },
+        {
+          "field": "focus_sectors",
+          "label": "重点领域",
+          "value": [
+            "科技",
+            "生命科学"
+          ],
+          "source_id": "gv_about"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "管理资产规模",
+          "value": "超过 130 亿美元（官网自述，页面当前口径）",
+          "source_id": "gv_about"
+        },
+        {
+          "field": "portfolio_count",
+          "label": "活跃组合企业",
+          "value": "400 家（官网自述）",
+          "source_id": "gv_about"
+        },
+        {
+          "field": "portfolio_geography",
+          "label": "组合覆盖地区",
+          "value": [
+            "北美",
+            "欧洲",
+            "以色列"
+          ],
+          "source_id": "gv_about"
+        },
+        {
+          "field": "operating_support",
+          "label": "运营支持",
+          "value": "官网称运营合伙人支持高管人才、传播和市场工作，并可协助创业公司连接 Google 与 Alphabet 公司。",
+          "source_id": "gv_about"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2009",
+          "description": "以 Google Ventures 名义创立；官网记载首批投资包括 Silver Spring Networks 与 Adimab。",
+          "source_id": "gv_about"
+        },
+        {
+          "date": "2015",
+          "description": "Google Ventures 更名为 GV。",
+          "source_id": "gv_about"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "官网列出的代表性退出包括 Uber、Nest、Slack、GitLab、Duo Security、Flatiron Health、Lemonade 和 One Medical；该列表为机构自选案例。",
+          "source_id": "gv_about"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "GV 官方网站与团队入口",
+          "value": "GV",
+          "url": "https://www.gv.com/",
+          "source_id": "gv_about"
+        }
+      ],
+      "coverage_status": "researched",
+      "coverage_note": "机构定位、Alphabet 关系、阶段范围、规模和组合数据来自 GV 官方 About 页面。AUM、组合及退出数量为机构自述的页面当前口径；未将融资活动库中名称相同的交易自动归因到 GV 的特定基金。",
       "sources": [
         {
-          "source_id": "FISRC-16afc5791c45315a",
-          "source_url": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms",
-          "source_title": "Snorkel AI 完成 3.5 亿美元 E 轮融资，估值升至 35 亿美元",
-          "source_content_hash": "ad04baf1994708d0",
-          "quote": "Existing investors, including Addition, Lightspeed, Greylock, GV, and Wells Fargo, also participated in the round.",
-          "quote_hash": "92843a27e9a17a95541b55d525127fe759bd8cd3c7ac12e6ae5e7f1891818260"
-        },
-        {
-          "source_id": "FISRC-74e051fb023f526b",
-          "source_url": "https://www.upstartsmedia.com/p/deep-dive-adapter-launches-ai-cognition",
-          "source_title": "独家：初创公司 Adapter 获 1780 万美元融资，为 AI 工具注入全新“认知”能力",
-          "source_content_hash": "c4b4aec73019eeb8",
-          "quote": "has raised $17.8 million in capital to date from GV, Bond Partners (an early-stage fund within BOND), and a number of other investors",
-          "quote_hash": "918ca6b7204df55ee2a0ebea7cb4273f29d354276b90e6c473cd92d279be7154"
-        },
-        {
-          "source_id": "FISRC-e94365d0212a78f3",
-          "source_url": "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names",
-          "source_title": "世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元",
-          "source_content_hash": "75587989c4b9271c",
-          "quote": "with Amazon, AMD Ventures, GV, and others participating",
-          "quote_hash": "a36a967aacd4c90a1561022a9dc76b3a0a4d1cf9bc904ad059b99a95d150543b"
+          "source_id": "gv_about",
+          "source_url": "https://www.gv.com/about",
+          "source_title": "GV - About GV",
+          "source_content_hash": "e0b75d0a77292164589ef6f5944d40f8d3c4b303f8ac36c68d51b41f88eff3fb",
+          "quote": "Launched as Google Ventures in 2009. With Alphabet as our sole limited partner. Today, with over $13 billion in assets under management, we invest from seed to growth stages across the technology and life sciences sectors. We support 400 active portfolio companies across North America, Europe, and Israel. Our portfolio includes notable exits such as Uber, Nest, Slack, GitLab, Duo Security, Flatiron Health, Lemonade, and One Medical.",
+          "quote_hash": "90cbdf37bd32985fe0287193ec4b8eaee618ac9632610f1ef38fb1e68a388701"
         }
       ],
       "last_verified_at": "2026-09-25"

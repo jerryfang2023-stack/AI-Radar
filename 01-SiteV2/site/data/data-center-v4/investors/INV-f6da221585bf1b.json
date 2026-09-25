@@ -245,51 +245,92 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Greylock 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "summary": "Greylock 是一家长期专注早期企业的软件和科技风险投资机构。官网称其多数投资支持首次创业者，并从企业构想阶段开始提供产品、市场、招聘及客户拓展支持。机构公开资料列举了 Airbnb、Coinbase、Discord、Figma、LinkedIn、Meta、Roblox 等早期合作案例。",
+      "facts": [
         {
-          "description": "融资来源记录：Snorkel AI · E轮 · 2026-09-22 · 本轮参投 · $350 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-16afc5791c45315a"
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": [
+            "Pre-Seed",
+            "Seed",
+            "Series A"
+          ],
+          "source_id": "greylock_fund"
         },
         {
-          "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮参投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-61aa8db010b34dfa"
+          "field": "investment_focus",
+          "label": "投资重点",
+          "value": "官网称专注早期创业者；2023 年基金公告聚焦企业软件与消费软件。",
+          "source_id": "greylock_firm"
         },
         {
-          "description": "融资来源记录：Niteshift · 种子轮 · 2026-06-10 · 本轮领投 · $7 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-01df70e43799a400"
+          "field": "fund_size",
+          "label": "第 17 期基金规模",
+          "value": "10 亿美元（2023 年公布，历史基金数据）",
+          "source_id": "greylock_fund"
+        },
+        {
+          "field": "founder_support",
+          "label": "创始人支持",
+          "value": "官网介绍包括早期产品定位、技术架构、人才招聘、客户反馈、市场进入和后续融资支持。",
+          "source_id": "greylock_firm"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2023",
+          "description": "宣布 Greylock 17，10 亿美元基金重点支持 Pre-Seed、Seed 和 Series A 企业软件及消费软件创业者。",
+          "source_id": "greylock_fund"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "官网列举的历史早期合作企业包括 Airbnb、AppDynamics、Coinbase、Discord、Figma、Instagram、LinkedIn、Meta、Nextdoor、Okta、Palo Alto Networks、Roblox 与 Workday；属机构自选案例，并非完整组合或回报披露。",
+          "source_id": "greylock_firm"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "application",
+          "label": "商业计划与业务联系表单",
+          "value": "Greylock Contact Us 表单",
+          "url": "https://greylock.com/contact-us/",
+          "source_id": "greylock_contact"
+        },
+        {
+          "kind": "website",
+          "label": "Greylock 官方网站",
+          "value": "Greylock",
+          "url": "https://greylock.com/",
+          "source_id": "greylock_firm"
+        }
+      ],
+      "coverage_status": "researched",
+      "coverage_note": "公司介绍与创始人支持内容来自 Greylock 官网；基金规模和阶段按 2023 年 Fund 17 公告标注为历史数据，未当作当前基金规模。官网联络页提供 Business Plans 表单，不推断未公开的通用投资邮箱。",
       "sources": [
         {
-          "source_id": "FISRC-16afc5791c45315a",
-          "source_url": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms",
-          "source_title": "Snorkel AI 完成 3.5 亿美元 E 轮融资，估值升至 35 亿美元",
-          "source_content_hash": "ad04baf1994708d0",
-          "quote": "Existing investors, including Addition, Lightspeed, Greylock, GV, and Wells Fargo, also participated in the round.",
-          "quote_hash": "92843a27e9a17a95541b55d525127fe759bd8cd3c7ac12e6ae5e7f1891818260"
+          "source_id": "greylock_firm",
+          "source_url": "https://greylock.com/firm/",
+          "source_title": "Firm | Greylock",
+          "source_content_hash": "2bfc7a8a89697f7902053b3d176fddcd52e9c1cca80cc81454516748d51a4d11",
+          "quote": "The majority of Greylock investments go to entrepreneurs who are creating their first enterprise. Our sole focus is on hearing from entrepreneurs. In every investment, our commitment is to be that partner from day one. We’ve stayed true to this approach for more than five decades. Early partners include Airbnb, Coinbase, Discord, Figma, Instagram, LinkedIn, Meta, Roblox and Workday.",
+          "quote_hash": "b5e925e05eea0ba950ba0f713ab0c7fbe873ce3b38cee0b4dafa97292180ec23"
         },
         {
-          "source_id": "FISRC-61aa8db010b34dfa",
-          "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
-          "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
-          "source_content_hash": "274ba4a54870c633",
-          "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
-          "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
+          "source_id": "greylock_fund",
+          "source_url": "https://greylock.com/blog/announcing-greylock-17/",
+          "source_title": "A $1 Billion Commitment to Day One | Greylock",
+          "source_content_hash": "65d51dbfd7cd7ef5fe66b13aa671ae98b42b8773edb48c10929abbf516d491fa",
+          "quote": "Greylock 17 is a $1 billion fund intentionally focused on Pre-Seed, Seed, and Series A founders in enterprise and consumer software.",
+          "quote_hash": "10ca32c065bcb52ecdd3d6e5a3519483262820a82085cb66e75409634e240d21"
         },
         {
-          "source_id": "FISRC-01df70e43799a400",
-          "source_url": "https://techcrunch.com/2026/06/10/datadog-veterans-launch-ai-coding-startup-niteshift-on-a-bet-against-big-ai-lock-in",
-          "source_title": "Datadog 资深人士创立 AI 编码初创公司 Niteshift，押注企业对抗大模型锁定",
-          "source_content_hash": "21b15182c071a779",
-          "quote": "Niteshift has raised a $7 million seed round led by Greylock’s Jerry Chen.",
-          "quote_hash": "5d755020d7aeebf996ab29872032d7726456cf085ad52a99c899bc2d4a3e257c"
+          "source_id": "greylock_contact",
+          "source_url": "https://greylock.com/contact-us/",
+          "source_title": "Contact Us | Greylock",
+          "source_content_hash": "a24d90e1f03d9d41e71cd08bf50251a11448a30725ea8d27e1f114aadbb47193",
+          "quote": "Send a note. Business Plans. Business Email Address. Business Full Name. Business Company. Title. Your Message.",
+          "quote_hash": "194f05aeb8a2c405ec300b3421939216eb9fa55244523a7af1789c36f143f839"
         }
       ],
       "last_verified_at": "2026-09-25"
