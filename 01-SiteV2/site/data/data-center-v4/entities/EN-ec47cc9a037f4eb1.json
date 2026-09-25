@@ -111,30 +111,87 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "陈伟嘉 的来源线索将其与Noiz AI（创始人）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "陈伟嘉是音频 AI 创业公司 Noiz AI 创始人，曾创办身份管理 SaaS 企业玉符科技，该公司于 2020 年被腾讯收购。公开资料显示，他先后在 Facebook、Splunk 从事视频平台和分布式系统工作，之后参与腾讯 Agent 模型工程化；毕业于加州大学尔湾分校计算机科学硕士。",
+      "current_roles": [
+        {
+          "title": "创始人",
+          "organization": "Noiz AI",
+          "source_id": "chen_pedaily"
+        }
+      ],
       "career": [
+        {
+          "organization": "Facebook",
+          "title": "软件工程工作，负责 Feed 流视频平台功能",
+          "period": "具体任期未披露",
+          "description": "腾讯云 TVP 专家档案记载其利用大数据分析及语音识别技术参与视频平台功能开发。",
+          "source_id": "chen_tencent"
+        },
+        {
+          "organization": "Splunk",
+          "title": "分布式系统工程工作",
+          "period": "具体任期未披露",
+          "description": "负责分布式集群自动化调度和部署。",
+          "source_id": "chen_tencent"
+        },
+        {
+          "organization": "玉符科技",
+          "title": "创始人及技术负责人",
+          "period": "公司于 2020 年被腾讯收购；具体任职起止未披露",
+          "description": "从事身份管理 SaaS，后被腾讯收购；收购后陈伟嘉参与腾讯 Agent 模型工程化。",
+          "source_id": "chen_pedaily"
+        },
+        {
+          "organization": "腾讯",
+          "title": "Agent 模型工程化相关工作",
+          "period": "收购后；具体时间未披露",
+          "description": "近期融资报道提及其参与 Agent 模型工程化落地。",
+          "source_id": "chen_pedaily"
+        },
         {
           "organization": "Noiz AI",
           "title": "创始人",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-4dbba5d9789ac616"
+          "period": "融资报道发表于 2026 年；创立日期未披露",
+          "description": "推动音频模型 AudioX 和面向创作者的音频生成产品。",
+          "source_id": "chen_pedaily"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "加州大学尔湾分校（University of California, Irvine）",
+          "qualification": "计算机科学硕士",
+          "source_id": "chen_tencent"
+        }
+      ],
+      "experience_summary": "职业经验横跨社交视频平台、分布式系统、身份管理 SaaS、被腾讯收购后的大模型工程化，以及音频和多模态生成。公开履历未披露 Facebook、Splunk 和腾讯的具体职级与完整任期。",
+      "track_record": [
+        {
+          "description": "其创办的玉符科技于 2020 年被腾讯收购；近期采访将其创业复盘描述为由早期重技术投入转向让市场反馈驱动模型产品迭代。",
+          "source_id": "chen_pedaily"
+        },
+        {
+          "description": "Noiz AI 创业团队自研开源音频模型 AudioX，并以创作者产品进入市场；用户规模和团队成果为融资报道中的公司口径。",
+          "source_id": "chen_pedaily"
+        }
+      ],
+      "coverage_status": "researched",
+      "coverage_note": "教育和 Facebook、Splunk 技术经历来自腾讯云 TVP 专家官方档案（该档案的任职时段为 2020–2021）；玉符科技收购经历及 Noiz AI 创业情况来自 2026 年投资界专访。媒体描述的未注明起止时间一律保留为“未披露”，不推断在职状态。",
       "sources": [
         {
-          "source_id": "FISRC-4dbba5d9789ac616",
-          "source_url": "https://news.pedaily.cn/202608/567481.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "4afeaa2317f6d87f",
-          "quote": "创始⼈陈伟嘉曾在Meta、Tiktok任职，做视频、ASR与Agent相关工作。回国后他创办玉符科技，做身份管理类SaaS，2020年公司被腾讯收购。",
-          "quote_hash": "b35f4071008a8a393a3c66401e94cda5ca9f2330af7555a46290ccbe4d74146e"
+          "source_id": "chen_tencent",
+          "source_url": "https://cloud.tencent.com/tvp/member/230",
+          "source_title": "腾讯云最具价值专家 TVP - 陈伟嘉",
+          "source_content_hash": "872b4d4e80877aa2042c2456b2c9567b0ae59f6bfcd601e2cfa5d2f5d44a2cef",
+          "quote": "玉符科技 CTO，毕业于加州大学尔湾分校，计算机科学硕士。在 Facebook 期间，利用大数据分析、智能语音识别技术，负责 Feeds 流视频平台功能开发；在 Splunk 负责分布式集群的自动化调度和部署。",
+          "quote_hash": "80a9d86dd51b24d289d08a4f387c530fcc82295b2d8356cc3195055661d52677"
+        },
+        {
+          "source_id": "chen_pedaily",
+          "source_url": "https://m.pedaily.cn/news/567481",
+          "source_title": "Noiz AI 获金沙江数千万元种子融资，挖掘声音背后物理信息 | 投资界",
+          "source_content_hash": "04e9537a7ddf77a088c0a5abf15b76419971bcd0f365d3d005e31f8b6ae4577d",
+          "quote": "创始人陈伟嘉曾在 Meta、TikTok 任职，做视频、ASR 与 Agent 相关工作。回国后创办玉符科技，做身份管理 SaaS，2020 年公司被腾讯收购。随后他在腾讯参与 Agent 模型的工程化落地；Noiz 团队自研开源音频模型底座 AudioX。",
+          "quote_hash": "01b37116de002fd8ad6da225f87fa8036d4e09f711c40393ad66b419d577b4fc"
         }
       ],
       "last_verified_at": "2026-09-25"

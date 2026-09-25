@@ -111,30 +111,83 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "丁文伯 的来源线索将其与无界智航（联合创始人）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
-      "career": [
+      "summary": "丁文伯是清华大学深圳国际研究生院长聘副教授、博士生导师，研究机器人触觉感知、具身智能、信号处理与人机交互。他于 2025 年与自动驾驶高管熊祺、香港大学博士生陈天行共同创办无界智航（Xspark AI），尝试把触觉感知研究转化为机器人可信物理智能。",
+      "current_roles": [
         {
-          "organization": "无界智航",
+          "title": "长聘副教授、博士生导师",
+          "organization": "清华大学深圳国际研究生院",
+          "source_id": "ding_tsinghua"
+        },
+        {
           "title": "联合创始人",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-086ff36dfb7673e8"
+          "organization": "无界智航（Xspark AI）",
+          "source_id": "ding_funding"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "career": [
+        {
+          "organization": "佐治亚理工学院",
+          "title": "博士后研究员",
+          "period": "2016–2019",
+          "description": "从事机器人及相关研究。",
+          "source_id": "ding_tsinghua"
+        },
+        {
+          "organization": "清华大学深圳国际研究生院",
+          "title": "助理教授；后任副教授",
+          "period": "2019 年起；2022 年起任副教授",
+          "description": "清华官方教师页面列出其任职经历。",
+          "source_id": "ding_tsinghua"
+        },
+        {
+          "organization": "无界智航（Xspark AI）",
+          "title": "联合创始人",
+          "period": "2025 年创立",
+          "description": "与熊祺、陈天行共同创建机器人创业公司；此为融资媒体披露的创业关联。",
+          "source_id": "ding_funding"
+        }
+      ],
+      "education": [
+        {
+          "institution": "清华大学电子工程系",
+          "qualification": "工学学士，2011 年",
+          "source_id": "ding_tsinghua"
+        },
+        {
+          "institution": "清华大学电子工程系",
+          "qualification": "博士，2016 年",
+          "source_id": "ding_tsinghua"
+        }
+      ],
+      "experience_summary": "经历结合电子工程、机器人触觉与具身智能研究、大学科研和早期创业。清华主页记载其在 Georgia Tech 从事三年博士后研究，之后在清华深圳国际研究生院任教；公开资料显示其研究团队发表论文 70 余篇。",
+      "track_record": [
+        {
+          "description": "清华官方简介称其在 Nature Sensors、Nature Communications、Science Advances、IEEE TRO 等期刊发表论文 70 余篇，并列出中国电子学会自然科学奖等荣誉；属官方个人简介统计。",
+          "source_id": "ding_tsinghua"
+        },
+        {
+          "description": "2025 年参与创办无界智航，团队方向聚焦机器人触觉和可信物理智能。",
+          "source_id": "ding_funding"
+        }
+      ],
+      "coverage_status": "researched",
+      "coverage_note": "教育和学术履历以清华大学深圳国际研究生院官方教师主页为主；无界智航创办信息取自近期融资报道。该报道中的“清华长聘副教授”与官网履历一致；企业融资报道不作为其学术成果来源。",
       "sources": [
         {
-          "source_id": "FISRC-086ff36dfb7673e8",
+          "source_id": "ding_tsinghua",
+          "source_url": "https://www.sigs.tsinghua.edu.cn/dwb/",
+          "source_title": "中文信息 - 清华大学深圳国际研究生院",
+          "source_content_hash": "7d850773d4b94d8e3d608d9eb40f0e62a7358d59a1e3c1a5494646ea949c7d56",
+          "quote": "丁文伯，清华大学深圳国际研究生院长聘副教授、博士生导师。2011 年和 2016 年在清华大学电子工程系获得学士和博士学位，2016 年到 2019 年在美国佐治亚理工学院开展博士后研究。主要研究领域为机器人触觉感知及具身智能，在 Nature Sensors、Nature Communications、Science Advances、IEEE TRO 等期刊发表论文 70 余篇。",
+          "quote_hash": "abb4b0a5dd889b45d5b9c12df45fe2b2406676030fdc6d00e5fc917330e3c1db"
+        },
+        {
+          "source_id": "ding_funding",
           "source_url": "https://news.pedaily.cn/202607/566101.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "d9771ea116d57f70",
-          "quote": "Xspark AI 由前蔚来汽车自动驾驶核心高管熊祺、清华大学长聘副教授丁文伯，以及香港大学 MMLab 00 后博士生陈天行联合创立",
-          "quote_hash": "4b1c198be7500336bb8ad4fd0eac5fc21f445454d502aa3b15b34b7da687cf1e"
+          "source_title": "Xspark AI 创业团队融资报道 | 投资界",
+          "source_content_hash": "351e6b931c1b9b8c85b0589c95f7d1fe4760b98ad5341f40a6ad7e2898cd38ab",
+          "quote": "Xspark AI 由前蔚来汽车自动驾驶核心高管熊祺、清华大学长聘副教授丁文伯，以及香港大学 MMLab 博士生陈天行联合创立。",
+          "quote_hash": "9fbbf6729790aa784b35e7bdd7cc7f91f1c85f4378457521644c6c7af9539a86"
         }
       ],
       "last_verified_at": "2026-09-25"
