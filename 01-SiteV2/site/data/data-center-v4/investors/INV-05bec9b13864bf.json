@@ -315,53 +315,115 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Hetz Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Hetz Ventures是以色列早期投资基金，官网当前聚焦AI与数据基础设施、网络安全及相邻领域；官网披露2026年1月宣布规模1.4亿美元的第四支基金。机构主页自报管理资产5亿美元、80%种子轮由其领投，未标出统计日期。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "种子及早期投资；官网称从构想与创立初期支持创业者",
+          "source_id": "hetz_official_home_2026"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": [
+            "AI基础设施",
+            "数据基础设施",
+            "网络安全"
+          ],
+          "source_id": "hetz_official_home_2026"
+        },
+        {
+          "field": "fund_iv",
+          "label": "第四支基金",
+          "value": "官网时间线称于2026年1月宣布，规模1.4亿美元",
+          "source_id": "hetz_official_home_2026"
+        },
+        {
+          "field": "reported_aum",
+          "label": "官网自报管理资产规模",
+          "value": "5亿美元；官网未注明统计日期",
+          "source_id": "hetz_official_home_2026"
+        },
+        {
+          "field": "reported_lead_rate",
+          "label": "官网自报领投比例",
+          "value": "其种子轮中80%由Hetz领投；统计期间及口径未注明",
+          "source_id": "hetz_official_home_2026"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026-01",
+          "description": "官网公布第四支基金规模为1.4亿美元。",
+          "source_id": "hetz_official_home_2026"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Arrakis Security · 种子轮 · 2026-08-02 · 本轮领投 · $8 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-370a65ed92921303"
-        },
-        {
-          "description": "融资来源记录：Oak · 种子轮 · 2026-07-15 · 本轮参投 · $60 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-88cec30382296a0c"
-        },
-        {
-          "description": "融资来源记录：Aligned · B轮 · 2026-07-01 · 本轮参投，既有投资方 · $60 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-7c7a5a66361dc784"
+          "description": "官方组合页列示跨AI应用、网络安全、数据与AI基础设施等领域的被投企业，并标注多家企业被收购；不将组合案例视为已实现基金回报。",
+          "source_id": "hetz_official_portfolio_2026"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "label": "早期生成式AI创业项目联系（定向主题，不是通用客服）",
+          "value": "yaelb@hetz.vc",
+          "url": "https://www.hetz.vc/news/4-questions-for-early-stage-generative-ai-startups",
+          "source_id": "hetz_genai_founder_contact_2023"
+        },
+        {
+          "kind": "website",
+          "label": "官方投资团队与项目介绍入口",
+          "value": "Hetz Ventures",
+          "url": "https://www.hetz.vc/our-team",
+          "source_id": "hetz_official_team_2026"
+        },
+        {
+          "kind": "address",
+          "label": "办公室地址",
+          "value": "12 David Elazar, Tel Aviv 6107075, Israel",
+          "url": "https://www.hetz.vc/",
+          "source_id": "hetz_official_home_2026"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-370a65ed92921303",
-          "source_url": "https://runtimewire.com/article/arrakis-security-raises-8-million-ai-agent-runtime-controls",
-          "source_title": "Arrakis 为 AI 智能体运行时安全筹集 800 万美元",
-          "source_content_hash": "895c7d4909879605",
-          "quote": "Hetz Ventures led the round.",
-          "quote_hash": "68a40a2fba00fbccb310a5889f57827116ce3de49f4c5d08a810c849db3cfb65"
+          "source_id": "hetz_official_home_2026",
+          "source_url": "https://www.hetz.vc/",
+          "source_title": "Hetz Ventures | Official Website",
+          "source_content_hash": "604f1e24a16644687f478e2a2f39e5092e23731f5093fdfc845ebcb3f9a51406",
+          "quote": "January 2026 — Fund IV announced; $140M. Hetz states that 80% of its seed rounds are led by the firm and reports $500m AUM.",
+          "quote_hash": "a2199e887a47c806c49c207e7aa78c8aaee1aff5cd0b674312c49e88dbf06d93"
         },
         {
-          "source_id": "FISRC-88cec30382296a0c",
-          "source_url": "https://techcrunch.com/2026/07/15/backed-by-60m-in-funding-oak-steps-out-of-stealth-to-fix-the-identity-mess-that-ai-agents-are-making-worse/",
-          "source_title": "获得6000万美元融资，Oak走出隐身模式，欲解决AI智能体加剧的身份混乱问题",
-          "source_content_hash": "c175c57e420a1b4c",
-          "quote": "with participation from AlphaDrive Ventures, Hetz Ventures, and angel investors",
-          "quote_hash": "cc34267824bc20b9cf279c98b0294d2660229485b515151b6536e5347270b2bf"
+          "source_id": "hetz_official_team_2026",
+          "source_url": "https://www.hetz.vc/our-team",
+          "source_title": "Meet the Team at Hetz Ventures",
+          "source_content_hash": "11415b01a36f44bc6b4bbe4390203f00a7114f4edd68ec226dacc9f723acb83e",
+          "quote": "Judah Taub is co-founder and managing partner at Hetz Ventures.",
+          "quote_hash": "88c1e2050fc10a1bfdedd7da1dbe4b7a9ca84f832ca04ea572c8584075f2f879"
         },
         {
-          "source_id": "FISRC-7c7a5a66361dc784",
-          "source_url": "https://www.saasrise.com/deals/aligned-bags-60m-in-funding-to-build-the-ainative-sales-execution-layer-for-enterprise-deals-5eecc03e-e805-4519-9bac-782e166d991a",
-          "source_title": "Aligned 为其 AI 销售执行平台筹集 6000 万美元 B 轮融资",
-          "source_content_hash": "9348da1b25f12b48",
-          "quote": "with participation from Hetz Ventures, JAL Ventures and NFX",
-          "quote_hash": "0e21e7dce274a10684bf7e6562c8a8fab7604afcb43ee0246b8e6a62125a4714"
+          "source_id": "hetz_genai_founder_contact_2023",
+          "source_url": "https://www.hetz.vc/news/4-questions-for-early-stage-generative-ai-startups",
+          "source_title": "4 Questions We Ask Early Stage Generative AI Startups | Hetz",
+          "source_content_hash": "8fba238150dc21e11aae5ef1ee1dc43a5a12c0a461bded134539b3d253e53577",
+          "quote": "For early-stage generative AI startup inquiries, Hetz invites founders to email Principal Yael Barsheshet at yaelb@hetz.vc.",
+          "quote_hash": "17bc0d5912f7fe4fb029fa698562349f048804d42c8edaf5a7763a2e09786f1b"
+        },
+        {
+          "source_id": "hetz_official_portfolio_2026",
+          "source_url": "https://www.hetz.vc/our-portfolio",
+          "source_title": "Our Portfolio | Hetz Ventures",
+          "source_content_hash": "982faba2ababa0cf0fecf56987f4c5668d20ee0324b6bf336cd0aa99c6ef7d8e",
+          "quote": "Hetz is a specialist fund investing in data & AI infrastructure, cybersecurity and the intersection between.",
+          "quote_hash": "5cfde7db5be4a6f71c602a7ff87a95c9246a064435a054f0e19421a526c0fc0f"
         }
       ],
+      "coverage_status": "researched",
+      "coverage_note": "机构主页与组合页支持基金策略、管理规模、种子领投比例和基金信息；AUM及领投率为官网自报且缺少统计期间。公开邮箱来自一篇聚焦早期生成式AI项目的文章，仅按该范围标注。",
       "last_verified_at": "2026-09-25"
     }
   }

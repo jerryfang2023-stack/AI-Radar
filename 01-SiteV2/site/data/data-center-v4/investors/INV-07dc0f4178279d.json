@@ -295,53 +295,86 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Vine Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Vine Ventures是一家2020年成立、专注早期创业公司的风险投资机构，公开资料称其在纽约、特拉维夫和旧金山开展投资。官网称其从创业起点持续支持公司直至IPO。管理资产规模与通用投资邮箱未见可靠公开披露。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立年份",
+          "value": "2020年（官网自述）",
+          "source_id": "vine_official_home_2026"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "创立初期与种子阶段，目标为长期支持组合公司",
+          "source_id": "vine_official_home_2026"
+        },
+        {
+          "field": "geography",
+          "label": "官网所述投资布局",
+          "value": [
+            "纽约",
+            "特拉维夫",
+            "旧金山"
+          ],
+          "source_id": "vine_official_home_2026"
+        },
+        {
+          "field": "team",
+          "label": "官网列示创始合伙人",
+          "value": [
+            "Eric Reiner（Founder & Managing Partner）",
+            "Dan Povitsky（Co-founder & Partner）"
+          ],
+          "source_id": "vine_official_home_2026"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2020",
+          "description": "创始人Eric Reiner称Vine Ventures于2020年成立。",
+          "source_id": "vine_official_home_2026"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Wonderful · C轮 · 2026-09-02 · 本轮参投 · $550 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3bc5a4e973b035eb"
+          "description": "Vine官方文章记载其与Sequoia共同在Eon创立时投资2000万美元；这是单一融资案例，不代表完整组合或基金回报。",
+          "source_id": "vine_eon_portfolio_case_2024"
         },
         {
-          "description": "融资来源记录：Ornn AI Inc. · 种子轮 · 2026-06-24 · 既有投资方（本轮参投） · $33M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-44c6debf2c528a2a"
-        },
-        {
-          "description": "融资来源记录：Qodo · B轮 · 2026-03-30 · 本轮参投 · $70 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-f001682a294672d5"
+          "description": "官网列示Eric Reiner曾在Insight Venture Partners工作并投资Xamarin、1stdibs等；这些是其前职经历，不计入Vine Ventures业绩。",
+          "source_id": "vine_official_home_2026"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网与组合入口",
+          "value": "Vine Ventures",
+          "url": "https://vineventures.com/",
+          "source_id": "vine_official_home_2026"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-3bc5a4e973b035eb",
-          "source_url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
-          "source_title": "Wonderful 融资 5.5 亿美元，估值半年内翻倍至 50 亿美元",
-          "source_content_hash": "290d66b36443e7c5",
-          "quote": "existing investors Index Ventures, IVP, Vine Ventures, 9Yards, and Bessemer Venture Partners are participating once again",
-          "quote_hash": "7cfbf6002c6b3d827fa06c95fbd97b23e8834d8a8fcf043c93f9f377b51a9686"
+          "source_id": "vine_official_home_2026",
+          "source_url": "https://vineventures.com/",
+          "source_title": "Vine Ventures | Official Website",
+          "source_content_hash": "dfa0933cd564cad171ec14a15026dda198d92a32236aa0434f6e9339d4e24144",
+          "quote": "We are long-term investors, backing founders at inception and continuing to invest until IPO. We started Vine in 2020.",
+          "quote_hash": "d69ec00970818b7fb1e8ede75daba46363e2b582f0419ea1aa5539431ddf465f"
         },
         {
-          "source_id": "FISRC-44c6debf2c528a2a",
-          "source_url": "https://siliconangle.com/2026/06/24/ornn-raises-33m-help-companies-buy-sell-ai-compute-commodity-like-oil/",
-          "source_title": "Ornn 融资 3300 万美元，帮助企业像买卖石油一样交易 AI 算力",
-          "source_content_hash": "5fe0ae2b10239c5e",
-          "quote": "plus existing investors Crucible Capital, Vine Ventures, Link Ventures and Box Group",
-          "quote_hash": "6098d4e689559f73e7e149035a967dac073ab7743433b4b03e523fe97caa313d"
-        },
-        {
-          "source_id": "FISRC-f001682a294672d5",
-          "source_url": "https://techcrunch.com/2026/03/30/qodo-bets-on-code-verification-as-ai-coding-scales-raises-70m/",
-          "source_title": "Qodo 获 7000 万美元融资，用于 AI 编码扩展中的代码验证",
-          "source_content_hash": "043dbfa14e6bef8c",
-          "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round.",
-          "quote_hash": "a027f2b22de724675eb349b0bafb306c4f586cad722a3279c84850378ab6a186"
+          "source_id": "vine_eon_portfolio_case_2024",
+          "source_url": "https://vineventures.com/blog/big-news-in-the-cloud-eon-launches-out-of-stealth-with-127m-in-funding/",
+          "source_title": "Big News in the Cloud! Eon Launches out of Stealth with $127M in Funding | Vine Ventures",
+          "source_content_hash": "d6b1274a549d30a0a19c888305f953508d2d54e77031929275c180071b0940a6",
+          "quote": "Vine Ventures seeded the team at their founding in Jan ‘24, alongside Sequoia, in a $20M round.",
+          "quote_hash": "48534275b7244cc5ead00f98288f581edb01050ec29775469f050558c0fa94e0"
         }
       ],
+      "coverage_status": "researched",
+      "coverage_note": "官网支持成立年份、投资阶段、团队与投资区域；单笔投资按公司官方组合文章记录。官网未披露AUM和通用项目邮箱，不使用同名的Vine Ventures LLC等其他主体资料。",
       "last_verified_at": "2026-09-25"
     }
   }
