@@ -111,30 +111,70 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "陈缪喆 的来源线索将其与智推时代（创始人）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "陈缪喆是智推时代创始人兼 CEO，经历覆盖新东方市场工作、豌豆思维创业和三七互娱营销管理。其于 2025 年发起智推时代，聚焦生成式引擎优化（GEO）基础设施及企业 AI 搜索可见性；华东师范大学在 2026 年与其企业开展产学研合作。",
+      "current_roles": [
+        {
+          "title": "创始人兼 CEO",
+          "organization": "智推时代",
+          "source_id": "miao_ecnu"
+        }
+      ],
       "career": [
         {
+          "organization": "新东方",
+          "title": "市场总监",
+          "period": "具体任期未披露",
+          "description": "媒体人物报道所载其早期市场工作经历。",
+          "source_id": "miao_sohu"
+        },
+        {
+          "organization": "豌豆思维",
+          "title": "参与创办；具体职务未披露",
+          "period": "具体任期未披露",
+          "description": "媒体报道记载其参与公司由早期发展至规模化阶段，具体个人责任范围未披露。",
+          "source_id": "miao_sohu"
+        },
+        {
+          "organization": "三七互娱",
+          "title": "营销副总裁",
+          "period": "具体任期未披露",
+          "description": "媒体报道列出的创业前履历。",
+          "source_id": "miao_sohu"
+        },
+        {
           "organization": "智推时代",
-          "title": "创始人",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将陈缪喆与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-602fdc3dbd5462df"
+          "title": "创始人兼 CEO",
+          "period": "公司于 2025 年创立；精确任职日未披露",
+          "description": "负责 GEO 产品与企业 AI 搜索可见性业务。",
+          "source_id": "miao_ecnu"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "experience_summary": "职业经历横跨教育行业市场、在线教育创业、游戏公司营销管理和生成式 AI 搜索优化创业。公开来源未披露学历信息和前序岗位任期。",
+      "track_record": [
+        {
+          "description": "华东师范大学软件工程学院于 2026 年与智推时代签署产学研合作协议，陈缪喆代表企业参与签约，并围绕 GEO 实践与技术演进作交流。",
+          "source_id": "miao_ecnu"
+        }
+      ],
+      "coverage_status": "researched",
+      "coverage_note": "当前职务与合作信息以华东师范大学官方院系新闻为依据；过往职业经历来自媒体人物特写。学历及具体任职年份未见可靠公开资料，故不推断；媒体对融资和估值的叙述未作为个人履历事实。",
       "sources": [
         {
-          "source_id": "FISRC-602fdc3dbd5462df",
-          "source_url": "https://news.pedaily.cn/202607/565918.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "939f8ade087f52a4",
-          "quote": "2025年5月，陈缪喆决定下场，智推时代从上海长宁一处共享办公空间起步，很快聚起一支联创团队：茹立云是搜狗前COO、百川智能联合创始人，清华大学计算机博士，深耕AI与搜索产业20多年；于大川参与创办豌豆思维，曾主导近4亿美元融资及超6亿美元并购；刘文明则是连续创业者。",
-          "quote_hash": "66e7b5d7b8e3f9f8b6cfa8f5c6085836b028cb17f9d587069101082606ea121c"
+          "source_id": "miao_ecnu",
+          "source_url": "https://sei.ecnu.edu.cn/c8/4a/c33170a772170/page.htm",
+          "source_title": "软件工程学院与智推时代、豌豆智能签署产学研战略合作协议 | 华东师范大学",
+          "source_content_hash": "7842a4994bfd36d24fafb233e919f76007e60191eef33cb1623eb74ca9c6f06c",
+          "quote": "2026 年 8 月，华东师范大学软件工程学院与智推时代签署产学研合作协议；新闻称智推时代创始人、CEO 陈缪喆参加活动并围绕生成式引擎优化（GEO）产业实践与技术演进交流。",
+          "quote_hash": "7d42d89ea377010ff90c740f88db3f6570d1394a0d18f8af86127cf08d439042"
+        },
+        {
+          "source_id": "miao_sohu",
+          "source_url": "https://www.sohu.com/a/1068157167_122411041",
+          "source_title": "智推时代：从被搜索到被推荐，一场一年 ARR 破亿的答案战争",
+          "source_content_hash": "dae80cadd55a658ce0cab6ed36309aaaeb02e618474796355b42adaadcbd3c20",
+          "quote": "媒体人物报道记载陈缪喆曾任新东方市场总监、参与创办豌豆思维、曾任三七互娱营销副总裁，并于 2025 年开始创办智推时代。",
+          "quote_hash": "b8c92da8004a063a7e72993a1836bf66b604db6fc7515a24e9e10612f654ff32"
         }
       ],
       "last_verified_at": "2026-09-25"

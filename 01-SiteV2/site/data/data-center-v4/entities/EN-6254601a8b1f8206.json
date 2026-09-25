@@ -111,30 +111,66 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "陈前 的来源线索将其与Noiz AI（联合创始人）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "陈前是 Noiz AI 联合创始人，曾负责百川智能用户增长与运营，并在抖音从事 AI 个性化及记忆策略相关工作。他毕业于北京大学元培学院并取得清华大学 MBA 学位；公开访谈还提到其长期参与音乐演出和创作。",
+      "current_roles": [
+        {
+          "title": "联合创始人",
+          "organization": "Noiz AI",
+          "source_id": "chenq_noiz"
+        }
+      ],
       "career": [
+        {
+          "organization": "百川智能",
+          "title": "用户增长及运营负责人",
+          "period": "具体任期未披露",
+          "description": "在融资报道与本人访谈中被列为过往职责。",
+          "source_id": "chenq_noiz"
+        },
+        {
+          "organization": "抖音",
+          "title": "AI 个性化及 Memory 策略负责人",
+          "period": "具体任期未披露",
+          "description": "相关职责来自对陈前的本人访谈，公开材料未提供职级与任期细节。",
+          "source_id": "chenq_noiz"
+        },
         {
           "organization": "Noiz AI",
           "title": "联合创始人",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-4dbba5d9789ac616"
+          "period": "2025 年创立；任职起止未披露",
+          "description": "参与音频生成、理解和编辑模型及面向创作者的产品建设。",
+          "source_id": "chenq_noiz"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "北京大学元培学院",
+          "qualification": "毕业；具体专业与年份未披露",
+          "source_id": "chenq_noiz"
+        },
+        {
+          "institution": "清华大学",
+          "qualification": "工商管理硕士（MBA）；年份未披露",
+          "source_id": "chenq_noiz"
+        }
+      ],
+      "experience_summary": "经验覆盖消费互联网用户增长、AI 个性化产品策略和音频创作。本人访谈称其有近 20 年音乐行业经历，参与或组织过近百场国内外演出；该部分为受访者自述，未逐项列出活动清单。",
+      "track_record": [
+        {
+          "description": "Noiz 团队的公开介绍将陈前定位为连接用户增长、产品策略与音乐创作经验的联合创始人；其参与公司音频产品和模型从早期进入市场验证。",
+          "source_id": "chenq_noiz"
+        }
+      ],
+      "coverage_status": "researched",
+      "coverage_note": "主要履历和教育信息来自对陈前的本人访谈；创业身份由融资报道交叉披露。访谈属于个人自述，未提供具体任职年月，故不补造时间线。",
       "sources": [
         {
-          "source_id": "FISRC-4dbba5d9789ac616",
-          "source_url": "https://news.pedaily.cn/202608/567481.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "4afeaa2317f6d87f",
-          "quote": "联合创始⼈陈前具有北⼤、清华和MIT的教育背景，此前曾任百川智能用户增长及运营负责人。",
-          "quote_hash": "a55faeed54cb78f62ef5dac8ac4765c2f37063f14e0abfb699e37c1a9f269360"
+          "source_id": "chenq_noiz",
+          "source_url": "https://www.aitntnews.com/newDetail.html?newId=24830",
+          "source_title": "对话 Noiz AI：清华字节团队押注音频 AI 模型 | AITNT",
+          "source_content_hash": "cf0e16d508a646128fd27e26598b18a54d5b47b6e9f39c0b4e19ae60742acb31",
+          "quote": "联合创始人陈前毕业于北大元培学院、清华大学 MBA，曾任百川智能用户增长及运营负责人、抖音 AI 个性化及 Memory 策略负责人；有近 20 年音乐行业经历，曾参与和组织国内外演出近百场。",
+          "quote_hash": "4b397e7654392d8a40afa0cc54ce15a4d7e1369aa73af33d933cfd460f59c4bc"
         }
       ],
       "last_verified_at": "2026-09-25"
