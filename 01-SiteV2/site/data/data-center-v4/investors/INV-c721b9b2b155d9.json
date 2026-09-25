@@ -414,51 +414,98 @@
       }
     },
     "public_profile": {
-      "profile_type": "unverified",
-      "coverage_status": "activity_only",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Mayfield 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "summary": "Mayfield 是一家以早期阶段投资为主的风险投资机构，官方资料称其在 AI、企业软件、半导体及人类与地球健康等领域支持创业者。该机构强调从构想到成长期陪伴创始团队；本库参投记录仅反映可查融资披露，不等同于其完整投资组合。",
+      "facts": [
         {
-          "description": "融资来源记录：GitHub · 其他融资 · 2026-08-13 · 本轮参投 · $500,000。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-08365977cd80206b"
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "从创业构想到早期客户增长；AI Start 基金重点覆盖 Day Zero/种子阶段，官方称可从首轮机构投资开始支持",
+          "source_id": "mayfield_ai_start"
         },
         {
-          "description": "融资来源记录：Lumilens Inc. · C轮 · 2026-08-06 · 种子轮领投 · $900M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-158eb924ad66ae7b"
+          "field": "focus_sectors",
+          "label": "重点领域",
+          "value": [
+            "人工智能",
+            "企业软件",
+            "半导体",
+            "人类健康",
+            "地球健康"
+          ],
+          "source_id": "mayfield_team"
         },
         {
-          "description": "融资来源记录：Bespoke Labs · 多轮融资 · 2026-07-06 · Series A轮参投 · $40 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-bcf489b2ae49f41b"
+          "field": "ai_fund",
+          "label": "AI Start 基金",
+          "value": "2023 年宣布设立 2.5 亿美元种子基金；面向 AI 初创团队",
+          "source_id": "mayfield_ai_start"
+        },
+        {
+          "field": "track_record_claim",
+          "label": "机构自述历史业绩",
+          "value": "Mayfield 官网称其历史组合实现 120 次 IPO、225+ 次并购；该数字为机构自述，非独立审计口径",
+          "source_id": "mayfield_ethos"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2023-07-20",
+          "description": "宣布 2.5 亿美元 Mayfield AI Start 种子基金，支持从构想到成立早期的 AI 公司。",
+          "source_id": "mayfield_ai_start"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "官网介绍其组合历史包含 120 次 IPO 和 225 次以上并购；这是 Mayfield 的累计机构自述，不应视作本库所列个别融资的回报数据。",
+          "source_id": "mayfield_ethos"
+        },
+        {
+          "description": "机构列举其过往早期投资公司，包括 Lyft、Poshmark、Rancher、Nuvia、Mammoth Biosciences、Frore Systems 等。名单来自机构官网，不代表全部组合。",
+          "source_id": "mayfield_ai_start"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Mayfield 官方网站",
+          "value": "Mayfield",
+          "url": "https://www.mayfield.com/",
+          "source_id": "mayfield_team"
+        },
+        {
+          "kind": "email",
+          "label": "AI 创业团队基金申请邮箱",
+          "value": "aistart@mayfield.com",
+          "url": "https://www.mayfield.com/ai-start-pathfinders/",
+          "source_id": "mayfield_ai_start"
+        }
+      ],
+      "coverage_status": "researched",
+      "coverage_note": "机构背景、投资主题、阶段、AI Start 基金和公开创业者联系邮箱均来自 Mayfield 官方资料。历史退出数量及公司组合清单为机构自述；未将这些统计解读为投资回报率，也未将其参投数据中的所有记录都视作该基金当前完整组合。",
       "sources": [
         {
-          "source_id": "FISRC-08365977cd80206b",
-          "source_url": "https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era/",
-          "source_title": "50个开源项目教会我们的AI时代安全之道",
-          "source_content_hash": "269f33be0068a71b",
-          "quote": "Funding Partners: Alfred P. Sloan Foundation, American Express, Chainguard, Datadog, Herodevs, Kraken, Mayfield, Microsoft, Shopify, Stripe, Superbloom, Vercel, Zerodha, 1Password",
-          "quote_hash": "57a3b10ecc8879baca9d411eb7712d020a1e7be6e0eca203be9e70272fc56400"
+          "source_id": "mayfield_team",
+          "source_url": "https://www.mayfield.com/meet-our-team/",
+          "source_title": "Meet Our Team | Mayfield",
+          "source_content_hash": "56b9fad45635b7b3b43a44d2a0a16154554fb0e5df7f8893d3f0a6778cbb34f9",
+          "quote": "For more than 55 years, we’ve partnered with founders from their first idea through the long arc of building iconic companies. Our track record – 120 IPOs and 225+ acquisitions – reflects a simple belief: great companies built by people first.",
+          "quote_hash": "4a59f646560145bb4df542a6b33c985c4157ca3906ddd49282551a00f9f05bfd"
         },
         {
-          "source_id": "FISRC-158eb924ad66ae7b",
-          "source_url": "https://lumilens.com/news-insights/lumilens-emerges-with-900m-in-funding",
-          "source_title": "Lumilens emerges with $900M+ in Funding",
-          "source_content_hash": "1cd3346880763c40",
-          "quote": "That's why we partnered with Ankur Singla for the third time to help build Lumilens from inception, led their seed round, and have participated in every round since.",
-          "quote_hash": "2540bc57de90a2f90c6b79b51e8d7fdde2d0997fea267fc20e54bf235244a89b"
+          "source_id": "mayfield_ai_start",
+          "source_url": "https://www.mayfield.com/ai-start-pathfinders/",
+          "source_title": "Mayfield AI Start Pathfinders",
+          "source_content_hash": "b59fe75bdc21b2892bb1020895d026888c359a06a0a5479a9ae2e939f1031db3",
+          "quote": "Our $250 million AI Start fund partners with entrepreneurs starting at Day Zero, when often all you just have is an idea. We like to be the first institutional check in for $1-4 million, investing in startups across the six layers of the Cognition-as-a-Service stack, primarily on the West Coast.",
+          "quote_hash": "9048dff0d30ce06a9214eb563f14d013679497822055f2c4576f3e8ab48ae53f"
         },
         {
-          "source_id": "FISRC-bcf489b2ae49f41b",
-          "source_url": "https://bespokelabs.ai/blog/bespoke-labs-raises-40m-to-build-environments-that-enable-reliable-agents",
-          "source_title": "Bespoke Labs 融资 4000 万美元，打造支持可靠 AI 智能体的环境",
-          "source_content_hash": "0eae2122fce5a05c",
-          "quote": "with participation from Mayfield",
-          "quote_hash": "fdd7cfc9bc6208b5d8b12d7f5c32e7d0386d421fd0f115ea88d827baba3b52c0"
+          "source_id": "mayfield_ethos",
+          "source_url": "https://www.mayfield.com/feel-our-ethos/",
+          "source_title": "Feel Our Ethos | Mayfield",
+          "source_content_hash": "e13c030ea7bf0154cba3b59af0ac69ae1717358029bad49f70a429c6fb306da3",
+          "quote": "We invest in and champion founders building the future of AI.",
+          "quote_hash": "9e66fd815187158cb67c27f57ee330d8e0b390f85eb80fd67a7d67fd248913bb"
         }
       ],
       "last_verified_at": "2026-09-25"
