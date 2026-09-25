@@ -1,36 +1,36 @@
 {
   "schema_version": "FUNDING-SOURCE-HEALTH-V1.0",
-  "generated_at": "2026-09-24T02:18:58.795Z",
-  "date": "2026-09-24",
-  "status": "passed",
-  "state": "healthy",
-  "last_checked_date": "2026-09-24",
+  "generated_at": "2026-09-25T00:31:39.893Z",
+  "date": "2026-09-25",
+  "status": "degraded",
+  "state": "projection_failed",
+  "last_checked_date": "2026-09-25",
   "latest_financing_date": "2026-09-23",
   "totals": {
-    "fetched": 637,
-    "funding_candidates": 125,
-    "verified_events": 11
+    "fetched": 615,
+    "funding_candidates": 109,
+    "verified_events": 3
   },
   "channels": [
     {
       "id": "aihot",
       "status": "collected",
-      "last_success_at": "2026-09-24T00:14:18.998Z",
+      "last_success_at": "2026-09-25T00:13:41.220Z",
       "response_ms": null,
       "http_status": "200",
-      "fetched_count": 255,
-      "latest_content_date": "2026-09-23",
+      "fetched_count": 254,
+      "latest_content_date": "2026-09-24",
       "duplicate_rate": 0,
       "stale_rate": 1,
-      "funding_candidate_count": 4,
-      "verified_event_count": 2,
+      "funding_candidate_count": 5,
+      "verified_event_count": 0,
       "failures": [],
       "fallback_used": false
     },
     {
       "id": "funding",
       "status": "collected",
-      "last_success_at": "2026-09-24T00:14:36.949Z",
+      "last_success_at": "2026-09-25T00:13:56.758Z",
       "response_ms": null,
       "http_status": "429",
       "fetched_count": 52,
@@ -38,23 +38,24 @@
       "duplicate_rate": 0,
       "stale_rate": 1,
       "funding_candidate_count": 52,
-      "verified_event_count": 1,
+      "verified_event_count": 0,
       "failures": [
-        "RSS venturebeat-ai: HTTP 429"
+        "RSS venturebeat-ai: HTTP 429",
+        "RSS tldr-ai-newsletter: HTTP 429"
       ],
       "fallback_used": false
     },
     {
       "id": "gdelt",
       "status": "collected",
-      "last_success_at": "2026-09-24T00:25:22.574Z",
+      "last_success_at": "2026-09-25T00:24:24.636Z",
       "response_ms": null,
       "http_status": "200",
       "fetched_count": 56,
       "latest_content_date": "",
       "duplicate_rate": 0,
       "stale_rate": 1,
-      "funding_candidate_count": 13,
+      "funding_candidate_count": 12,
       "verified_event_count": 0,
       "failures": [],
       "fallback_used": false
@@ -62,37 +63,35 @@
     {
       "id": "keyword",
       "status": "collected",
-      "last_success_at": "2026-09-24T00:23:14.972Z",
+      "last_success_at": "2026-09-25T00:22:32.925Z",
       "response_ms": null,
       "http_status": "200",
-      "fetched_count": 156,
-      "latest_content_date": "2026-09-21",
-      "duplicate_rate": 0.1364,
+      "fetched_count": 126,
+      "latest_content_date": "2026-09-23",
+      "duplicate_rate": 0.129,
       "stale_rate": 1,
-      "funding_candidate_count": 44,
+      "funding_candidate_count": 31,
       "verified_event_count": 1,
       "failures": [
-        "keyword-search pre-gate filtered 68 result(s): missing_ai_anchor_in_result=27; broad_list_or_market_report=20; social_or_profile_source=15; directory_or_search_page=3; noise_term:career=2; noise_term:hiring=1",
-        "Anysearch fallback for query \"AI agent startup raises procurement workflow announced September 2026 (AI procurement OR tender OR \"contract awarded\" OR \"purchasing agreement\") (official OR government OR newsroom)\": Anysearch returned 0 usable results",
-        "Anysearch fallback for query \"agent governance evals production rollout enterprise AI announced September 2026 (AI server OR AI hardware) (OEM OR ODM OR \"contract manufacturer\" OR \"manufacturing partner\") (official OR newsroom)\": Anysearch returned 0 usable results"
+        "keyword-search pre-gate filtered 96 result(s): social_or_profile_source=35; missing_ai_anchor_in_result=34; broad_list_or_market_report=19; directory_or_search_page=4; noise_term:hiring=2; noise_term:avatar=1; noise_term:definition=1",
+        "Anysearch fallback for query \"AI agent startup raises procurement workflow announced September 2026 (AI procurement OR tender OR \"contract awarded\" OR \"purchasing agreement\") (official OR government OR newsroom)\": Anysearch returned 0 usable results"
       ],
       "fallback_used": true
     },
     {
       "id": "rss",
       "status": "collected",
-      "last_success_at": "2026-09-24T00:14:26.191Z",
+      "last_success_at": "2026-09-25T00:13:46.160Z",
       "response_ms": null,
       "http_status": "429",
-      "fetched_count": 118,
+      "fetched_count": 127,
       "latest_content_date": "2026-09-23",
       "duplicate_rate": 0,
       "stale_rate": 1,
-      "funding_candidate_count": 12,
-      "verified_event_count": 1,
+      "funding_candidate_count": 9,
+      "verified_event_count": 0,
       "failures": [
-        "RSS venturebeat-ai: HTTP 429",
-        "RSS tldr-ai-newsletter: HTTP 429"
+        "RSS venturebeat-ai: HTTP 429"
       ],
       "fallback_used": false
     }

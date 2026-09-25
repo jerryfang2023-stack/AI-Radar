@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-25T00:29:53.849Z",
+    "latestDataDate": "2026-09-25",
+    "currentDate": "2026-09-25",
+    "eventCount": 3599,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -116,6 +116,7 @@
       "EV-ea916006167c6c43",
       "EV-3e580ccbc11654cb",
       "EV-1765fd690cff1cac",
+      "EV-79a0ee5a1daffb78",
       "EV-b116eafe60d71fbe",
       "EV-a99c491c33412dc2",
       "EV-d95c436efb0dd108",
@@ -224,6 +225,7 @@
       "EV-e4fec8a00b416d12",
       "EV-39848cdd62c00e59",
       "EV-4faa2bcf2e42e60c",
+      "EV-ef9e127aa8964431",
       "EV-5a90068e9e762f94",
       "EV-ba091f86fba39da0",
       "EV-66561ec28d8b1fec",
@@ -330,6 +332,7 @@
       "EN-fac803bdedac7e4e",
       "EN-b59ef7313eebea39",
       "EN-2505fe8a9e908e04",
+      "EN-04e798f8f91ee67d",
       "EN-373da2ec629326c0",
       "EN-ecf226574e481ea7",
       "EN-08e30f3f66c830cb",
@@ -409,6 +412,7 @@
       "EN-3e14bbbb0445c2de",
       "EN-7c5d04104b1d34e7",
       "EN-72138e570e5103e2",
+      "EN-febedfcafee9d610",
       "EN-69abd664ab1011d3",
       "EN-35826112ed957325",
       "EN-ec31d2be1b244616",
@@ -422,7 +426,6 @@
       "EN-2b6e51bec93e86c1",
       "EN-364df82f85761d58",
       "EN-8d57f84bd1847b24",
-      "EN-febedfcafee9d610",
       "EN-240389f4b730bad4",
       "EN-593d0361124f348f",
       "EN-a96df57737b74def",
@@ -467,7 +470,7 @@
       "HW-dca442211b264bbe"
     ],
     "firstSeen": "2026-01-12",
-    "lastSeen": "2026-09-24"
+    "lastSeen": "2026-09-25"
   },
   "events": [
     {
@@ -17745,6 +17748,163 @@
       "products": [],
       "sourceUrl": "https://qbitai.com/2026/08/472060.html",
       "publisher": "量子位"
+    },
+    {
+      "id": "EV-79a0ee5a1daffb78",
+      "dataDate": "2026-09-25",
+      "date": "2026-08-06",
+      "updatedDate": "2026-09-25",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Comfo Labs 从 Prodigy Investment 获得种子轮融资",
+      "originalTitle": "Comfo Labs raises seed round from Prodigy Investment - Dealroom",
+      "subject": "Comfo Labs",
+      "action": "raises",
+      "object": "seed round from Prodigy Investment - Dealroom",
+      "metrics": [
+        "$4.5M",
+        "$419.2K"
+      ],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-04e798f8f91ee67d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-04e798f8f91ee67d"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-04e798f8f91ee67d"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-04e798f8f91ee67d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-04e798f8f91ee67d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-04e798f8f91ee67d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-04e798f8f91ee67d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-04e798f8f91ee67d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-04e798f8f91ee67d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-04e798f8f91ee67d",
+        "EN-737f388fa36e18bf",
+        "EN-c92dedc5abec562f"
+      ],
+      "entityNames": [
+        "Comfo Labs",
+        "Comfo Labs Dealroom",
+        "Codebreaker Labs"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://dealroom.co/news/143383-comfo-labs-raises-seed-round-from-prodigy-investment",
+      "publisher": "dealroom.co"
     },
     {
       "id": "EV-b116eafe60d71fbe",
@@ -47165,6 +47325,130 @@
       "publisher": "NVIDIA AI Blog"
     },
     {
+      "id": "EV-ef9e127aa8964431",
+      "dataDate": "2026-09-25",
+      "date": "2026-09-25",
+      "updatedDate": "2026-09-25",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Black Forest Labs 推出 FLUX 3 Action，一个开放机器人 AI 模型",
+      "originalTitle": "Black Forest Labs launches FLUX 3 Action, an open robotics AI model",
+      "subject": "Black Forest Labs",
+      "action": "launches FLUX 3 Action, an open robotics AI model",
+      "object": "Black Forest Labs launches FLUX 3 Action, an open robotics AI model",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-febedfcafee9d610"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-febedfcafee9d610"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-febedfcafee9d610"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-febedfcafee9d610"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-febedfcafee9d610"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-febedfcafee9d610"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-febedfcafee9d610",
+        "EN-a57527720ba063a6"
+      ],
+      "entityNames": [
+        "Black Forest Labs",
+        "FLUX 3 Action"
+      ],
+      "productName": "FLUX 3 Action",
+      "products": [
+        {
+          "name": "FLUX 3 Action",
+          "type": "模型",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/black-forest-labs-launches-flux-3-action-an-open-robotics-ai-model",
+      "publisher": "The Decoder AI News"
+    },
+    {
       "id": "EV-5a90068e9e762f94",
       "dataDate": "2026-09-15",
       "date": "2026-09-14",
@@ -56058,6 +56342,29 @@
       "lastSeen": "2026-09-24"
     },
     {
+      "id": "EN-04e798f8f91ee67d",
+      "name": "Comfo Labs",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-79a0ee5a1daffb78"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-physical_automation",
+        "TX-industry-manufacturing",
+        "TX-technology-embodied_ai"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-06",
+      "lastSeen": "2026-09-25"
+    },
+    {
       "id": "EN-373da2ec629326c0",
       "name": "Optical networking startup Lumilens",
       "entityType": "organization_candidate",
@@ -57448,6 +57755,7 @@
         "EV-edcb66d0401cfb8f",
         "EV-03f661e8dcdf1b58",
         "EV-ef7346378fcf9746",
+        "EV-76b340a187999c51",
         "EV-77092089644381a3",
         "EV-4da18f97771852a9",
         "EV-f949fd95df58d42d",
@@ -57487,7 +57795,7 @@
         "EN-6fcba5d96a4fadfd"
       ],
       "firstSeen": "2026-05-21",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "EN-998255d915da8953",
@@ -58538,6 +58846,34 @@
       "lastSeen": "2026-07-05"
     },
     {
+      "id": "EN-febedfcafee9d610",
+      "name": "Black Forest Labs",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-ef9e127aa8964431",
+        "EV-58457ebde013a438",
+        "EV-c7e1e920e54bb364",
+        "EV-b76705cd8461925f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-physical_automation",
+        "TX-product_form-model",
+        "TX-technology-multimodal"
+      ],
+      "relatedEntityIds": [
+        "EN-0bd85984211bd173"
+      ],
+      "firstSeen": "2026-07-23",
+      "lastSeen": "2026-09-25"
+    },
+    {
       "id": "EN-69abd664ab1011d3",
       "name": "蓝虫具身",
       "entityType": "organization_candidate",
@@ -58733,8 +59069,8 @@
       ],
       "eventIds": [
         "EV-d80c43b35418e74d",
-        "EV-2182e541e0fe6a82",
         "EV-293d6feac5b8efab",
+        "EV-2182e541e0fe6a82",
         "EV-b22136a993b21f0c",
         "EV-cff5848b8c5453af",
         "EV-5ede0f85a672441c",
@@ -58752,7 +59088,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-09-18"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "EN-e59f5a52b6713a29",
@@ -58805,6 +59141,9 @@
         "EV-67ef7accd26a07a0",
         "EV-a7e1ecd212474e00",
         "EV-d961d3ad02f6ae14",
+        "EV-a1da145cb3f6b8ba",
+        "EV-ba56c2356b17d979",
+        "EV-f34e18f3e7e123a1",
         "EV-5edf45d6424e2154",
         "EV-da957eedfad908b6",
         "EV-606d3928fcd6a078",
@@ -58886,7 +59225,7 @@
         "EN-a3c3b987b09fc1bb"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-09-21"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "EN-364df82f85761d58",
@@ -58937,33 +59276,6 @@
         "EN-be548deba4a093d7"
       ],
       "firstSeen": "2026-07-18",
-      "lastSeen": "2026-07-27"
-    },
-    {
-      "id": "EN-febedfcafee9d610",
-      "name": "Black Forest Labs",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-58457ebde013a438",
-        "EV-c7e1e920e54bb364",
-        "EV-b76705cd8461925f"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-use_case-physical_automation",
-        "TX-product_form-model",
-        "TX-technology-multimodal"
-      ],
-      "relatedEntityIds": [
-        "EN-0bd85984211bd173"
-      ],
-      "firstSeen": "2026-07-23",
       "lastSeen": "2026-07-27"
     },
     {
@@ -60220,6 +60532,99 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-1bc309a1de1c7945",
+      "snapshotKey": "1bc309a1de1c7945",
+      "snapshotId": "HWS-011465efd4b973dc",
+      "eventId": "EV-ef9e127aa8964431",
+      "eventIds": [
+        "EV-ef9e127aa8964431"
+      ],
+      "dataDate": "2026-09-25",
+      "date": "2026-09-25",
+      "title": "FLUX 3 Action",
+      "subject": "Black Forest Labs",
+      "productNames": [
+        "FLUX 3 Action"
+      ],
+      "hardwareType": "robot",
+      "factTypes": [
+        "specification"
+      ],
+      "latestValues": {
+        "specification": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-56ba85dbed83fb8c"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-09-25",
+          "hardware_fact_id": "HWF-bd46f8e59fd5f0cb",
+          "fact_type": "specification",
+          "observed_at": "2026-09-24T17:01:03.000Z",
+          "subject_entity_id": "EN-febedfcafee9d610",
+          "subject_name": "Black Forest Labs",
+          "product_entity_ids": [
+            "EN-a57527720ba063a6"
+          ],
+          "product_names": [
+            "FLUX 3 Action"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Black Forest Labs is entering robotics with FLUX 3 Action. The open-world-action model uses camera feeds to predict what action a robot should take next. With just seven billion parameters, it sets a record on the RoboLab-120 benchmark while running up to 3.95 times faster than the previous top model.",
+          "event_refs": [
+            "EV-ef9e127aa8964431"
+          ],
+          "claim_ref": "CL-a40abdde1dfb4502",
+          "source_refs": [
+            "SA-a495998ec01e1f1c"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-25/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-09-25",
+          "hardware_fact_id": "HWF-56ba85dbed83fb8c",
+          "fact_type": "specification",
+          "observed_at": "2026-09-24T17:01:03.000Z",
+          "subject_entity_id": "EN-febedfcafee9d610",
+          "subject_name": "Black Forest Labs",
+          "product_entity_ids": [
+            "EN-a57527720ba063a6"
+          ],
+          "product_names": [
+            "FLUX 3 Action"
+          ],
+          "component_type": "robot",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "Black Forest Labs is entering robotics with FLUX 3 Action. The open-world-action model uses camera feeds to predict what action a robot should take next. With just seven billion parameters, it sets a record on the RoboLab-120 benchmark while running up to 3.95 times faster than the previous top model.",
+          "event_refs": [
+            "EV-ef9e127aa8964431"
+          ],
+          "claim_ref": "CL-1089b36202a2d1ec",
+          "source_refs": [
+            "SA-a495998ec01e1f1c"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-25/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://the-decoder.com/black-forest-labs-launches-flux-3-action-an-open-robotics-ai-model",
+      "entityIds": [
+        "EN-febedfcafee9d610",
+        "EN-a57527720ba063a6"
+      ]
+    },
     {
       "id": "HWC-8eb9e3e3cf6ea367",
       "snapshotKey": "8eb9e3e3cf6ea367",

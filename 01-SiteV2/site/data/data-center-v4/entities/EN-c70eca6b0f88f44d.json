@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-25T00:29:53.849Z",
+    "latestDataDate": "2026-09-25",
+    "currentDate": "2026-09-25",
+    "eventCount": 3599,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -101,7 +101,9 @@
       "EV-f247eff115e840af",
       "EV-ed8260ee9a7a80af",
       "EV-df88363737beb880",
+      "EV-34a6d03b3142b97f",
       "EV-3ed4dfb4a164a3e0",
+      "EV-f337fdcdf92ec1e1",
       "EV-0b7dcbb44344e389",
       "EV-da26b43d3924136e",
       "EV-172660367138131c",
@@ -133,6 +135,7 @@
       "EV-3a704c40204ecfd9",
       "EV-94e0afb44c320c99",
       "EV-777eb5b7783b71fb",
+      "EV-8fb741b3f6af17ae",
       "EV-0f241385f0cd6c2d",
       "EV-bbb3ed2040b40e3f",
       "EV-d2247eeac1478994",
@@ -162,6 +165,8 @@
       "EV-fe63a869fe4cee45",
       "EV-35be62272c77c556",
       "EV-c0a65877001ed413",
+      "EV-a1da145cb3f6b8ba",
+      "EV-ba56c2356b17d979",
       "EV-74e87bba31270f42",
       "EV-8058ddb115bdef47",
       "EV-06b33a114cf6e513",
@@ -580,7 +585,7 @@
       "EN-da20c5952dba19d8"
     ],
     "firstSeen": "2025-09-04",
-    "lastSeen": "2026-09-24",
+    "lastSeen": "2026-09-25",
     "relationIds": [
       "REL2-6460871b6d621283",
       "REL2-02bdd133e9353ff7",
@@ -705,6 +710,8 @@
         "EV-ed8260ee9a7a80af"
       ],
       "deployments": [
+        "EV-34a6d03b3142b97f",
+        "EV-f337fdcdf92ec1e1",
         "EV-3ed4dfb4a164a3e0",
         "EV-0b7dcbb44344e389",
         "EV-da26b43d3924136e",
@@ -746,6 +753,7 @@
         "EV-3a704c40204ecfd9"
       ],
       "partnerships": [
+        "EV-8fb741b3f6af17ae",
         "EV-0f241385f0cd6c2d",
         "EV-bbb3ed2040b40e3f",
         "EV-d2247eeac1478994",
@@ -777,6 +785,8 @@
         "EV-c0a65877001ed413"
       ],
       "productsServices": [
+        "EV-a1da145cb3f6b8ba",
+        "EV-ba56c2356b17d979",
         "EV-74e87bba31270f42",
         "EV-8058ddb115bdef47",
         "EV-06b33a114cf6e513",
@@ -1104,8 +1114,116 @@
     },
     "timeline": [
       {
+        "id": "EV-34a6d03b3142b97f",
+        "dataDate": "2026-09-25",
+        "date": "2026-09-24",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Anthropic Claude Code 云会话正式上线，Pro/Max 用户可领 100~250 美元额度",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-cb4754c48f8023d0"
+        ]
+      },
+      {
+        "id": "EV-f337fdcdf92ec1e1",
+        "dataDate": "2026-09-25",
+        "date": "2026-09-21",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "知识管理中的AI：22个真实部署",
+        "displayTags": [],
+        "entityIds": [
+          "EN-9b8f8a7d29275bf7",
+          "EN-c13e2f4a44bb01ed",
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
+      {
+        "id": "EV-8fb741b3f6af17ae",
+        "dataDate": "2026-09-25",
+        "date": "2026-09-25",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "AI - 彭博社",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-bbdefa2950f49882"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-bbdefa2950f49882"
+        ]
+      },
+      {
+        "id": "EV-a1da145cb3f6b8ba",
+        "dataDate": "2026-09-25",
+        "date": "2026-09-24",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "rumored",
+        "statusLabel": "rumored",
+        "title": "Google DeepMind 新负责人：Gemini 4 已进入打磨阶段，将远早于年底发布",
+        "displayTags": [],
+        "entityIds": [
+          "EN-2b6e51bec93e86c1",
+          "EN-7d3194f79e645c42",
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
+      {
+        "id": "EV-ba56c2356b17d979",
+        "dataDate": "2026-09-25",
+        "date": "2026-09-24",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "DeepMind 新任负责人 Koray Kavukcuoglu 力争年底前发布 Gemini 4，称 AGI 之争不是正确话题",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-2b6e51bec93e86c1",
+          "EN-bbdefa2950f49882",
+          "EN-7d3194f79e645c42",
+          "EN-c70eca6b0f88f44d",
+          "EN-b59adf2d806d3013",
+          "EN-d17581ad1da34901"
+        ]
+      },
+      {
         "id": "EV-74e87bba31270f42",
-        "dataDate": "2026-09-24",
+        "dataDate": "2026-09-25",
         "date": "2026-09-23",
         "eventType": "model_release",
         "eventTypeLabel": "模型发布",
@@ -14012,6 +14130,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-34a6d03b3142b97f",
         "EV-f8d9fa15111c7f61",
         "EV-0e8877060ca89517",
         "EV-800958e92cf5e67f",
@@ -14087,7 +14206,7 @@
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "EN-830abc32d2a443c5",
@@ -14488,6 +14607,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-fe7445d005172a39",
         "EV-2470b13ea55496d0",
         "EV-c8871997cafcf846",
         "EV-e331c286836a80f3",
@@ -14576,6 +14696,7 @@
         "EV-8abf5adc3e72fbb8",
         "EV-3a704c40204ecfd9",
         "EV-777eb5b7783b71fb",
+        "EV-76d9a509356f3cff",
         "EV-09172b686d2b49de",
         "EV-bbb3ed2040b40e3f",
         "EV-20e076804a3000b4",
@@ -14607,6 +14728,10 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-482ed3a78c117cfc",
+        "EV-a1da145cb3f6b8ba",
+        "EV-ba56c2356b17d979",
+        "EV-d29cc3b49745d56d",
         "EV-57f3792e2324389e",
         "EV-74e87bba31270f42",
         "EV-c45ed9151e55246f",
@@ -14654,7 +14779,6 @@
         "EV-cb1bc28f78888566",
         "EV-4e31149f2cd129f7",
         "EV-7a7a5267ca73e44c",
-        "EV-293d6feac5b8efab",
         "EV-a474530ccf6cd872",
         "EV-1f88bfaf77dcfca3",
         "EV-2954a6f0220f5b18",
@@ -14881,6 +15005,8 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-3b9a80dacf25e596",
+        "EV-d3c3b8ef89894945",
         "EV-98a5bcde4600a029",
         "EV-82b8afc59e9be662",
         "EV-aed61f7e2ca28c38",
@@ -15049,10 +15175,10 @@
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
+        "EN-3a7bd3e2360a3d29",
         "EN-968e2d5b08687bf4",
         "EN-d1ad14d4ad57d207",
         "EN-6a50fbf0b970c03a",
-        "EN-3a7bd3e2360a3d29",
         "EN-916a98f0fa2a39af",
         "EN-8d4321d936320802",
         "EN-7839fb10a8f14c70",
@@ -15076,7 +15202,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "EN-729324072d368379",
@@ -16953,6 +17079,7 @@
         "EV-a591b0c96f79de45",
         "EV-25f9e4686e2c58c9",
         "EV-6ce6b9c9780b97d9",
+        "EV-7bba4f0313ce1638",
         "EV-ef823877347ff40f",
         "EV-2d56dec8dfeb2b56",
         "EV-7580a050ca19a8ae"
@@ -17117,7 +17244,8 @@
         "EN-3eee4f30151db45a",
         "EN-35e36dc1a5213fa3",
         "EN-73209317ae64f32b",
-        "EN-61cce404a45c3545"
+        "EN-61cce404a45c3545",
+        "EN-2db08657b592ffb4"
       ],
       "fdeIds": [
         "FDE-ebcbdf2b14d4c291",
@@ -17132,7 +17260,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "TX-target_user-business_user",
@@ -17842,7 +17970,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "TX-ai_market_category-infrastructure_compute",
@@ -19537,6 +19665,7 @@
         "EV-bee8896bf7efa594",
         "EV-11e2a4e252d48f94",
         "EV-8077605769c4d4eb",
+        "EV-dbbfe87457c76852",
         "EV-261be266930904fd",
         "EV-a7568a8f75368e09",
         "EV-d1438a40de56f3ac",
@@ -19565,6 +19694,7 @@
         "EV-c81cb21337a9bb98",
         "EV-6c361125c3f50bb6",
         "EV-83b2e8f7fe679bc3",
+        "EV-8fb741b3f6af17ae",
         "EV-40f14150d6f622f5",
         "EV-129ffa6be41bb485",
         "EV-3d9aa640411471ea",
@@ -19574,6 +19704,8 @@
         "EV-2ffc3377977da114",
         "EV-2fd730d0ad452334",
         "EV-fd21441fb6e143c3",
+        "EV-ef9e127aa8964431",
+        "EV-293d6feac5b8efab",
         "EV-8ca7036c405028d4",
         "EV-c45b1098a3092e03",
         "EV-9ec1b90f071eef44",
@@ -19880,6 +20012,7 @@
         "EN-f0d59425e4c32abb",
         "EN-b5d7671990b8d4a8",
         "EN-f2b9106253663314",
+        "EN-eb302984269553e7",
         "EN-a377bedfcb73be99",
         "EN-a4916084455b1950",
         "EN-9a677023cc72cdd0",
@@ -19893,12 +20026,14 @@
         "EN-968e2d5b08687bf4",
         "EN-23929c7dca3eb576",
         "EN-bc8a00f7f6fb535f",
+        "EN-bbdefa2950f49882",
         "EN-22152786a70738a1",
         "EN-916a98f0fa2a39af",
         "EN-87c730bc4f32459e",
         "EN-88e2cce43eeadb36",
         "EN-c890cfa67d1da908",
         "EN-7df09a7717ef2feb",
+        "EN-febedfcafee9d610",
         "EN-c5da36ead951ea76",
         "EN-9c8ae69b84f21a2e",
         "EN-bae152c4560df38c",
@@ -19916,7 +20051,6 @@
         "EN-7d3194f79e645c42",
         "EN-ec31d2be1b244616",
         "EN-39ba5f9dcab4e98a",
-        "EN-bbdefa2950f49882",
         "EN-cbdc46f896784f98",
         "EN-da2f0f03bc3a24f5",
         "EN-35e36dc1a5213fa3",
@@ -19942,7 +20076,6 @@
         "EN-7f871cbf905f6e0c",
         "EN-2ee49ef51a776e2c",
         "EN-a89151ba4b5ac0f2",
-        "EN-febedfcafee9d610",
         "EN-d30e5ffc0ba9150b",
         "EN-0f553f48551aef83",
         "EN-a7b54a780af509be",
@@ -20033,7 +20166,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "TX-industry-retail_ecommerce",
@@ -20548,7 +20681,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -20788,12 +20921,14 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-8183ec309f4e9ff7",
+        "EV-a5d3be58d302a847",
+        "EV-bddc994a070fe5f4",
         "EV-0d5a32aca724d30e",
         "EV-1873f3c6fa4bdedd",
         "EV-3bf02572d01ed324",
         "EV-b7808dc792664fa6",
         "EV-67de8f4c9ac5ce4d",
-        "EV-bddc994a070fe5f4",
         "EV-1e96f85d4c034559",
         "EV-d8739d5413d6530f",
         "EV-07c226b0ca5cb558",
@@ -21123,6 +21258,7 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-76ede2fb00adc813",
         "EV-9db14ad0d6fe3135",
         "EV-b8ea4c072c54167a",
         "EV-2c17183b71d8b7d1",
@@ -21339,6 +21475,7 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-8d3d0527c0f03837",
         "EN-f9768e4769ec9d14",
         "EN-0ed9e4984f0e77cf",
         "EN-c70eca6b0f88f44d",
@@ -22408,6 +22545,7 @@
         "EV-3dc8d5c373ddd1f3",
         "EV-9cd1cb31e2adf5dc",
         "EV-5caf7f83664b1a2c",
+        "EV-7bba4f0313ce1638",
         "EV-7a3a3754522828e1",
         "EV-8b36007d0b5f377f",
         "EV-4b44f5eafecf4922",
@@ -22497,6 +22635,7 @@
         "EN-74be4cbf48e647b2",
         "EN-0078ec52880eaa14",
         "EN-4e721fae5963494d",
+        "EN-2db08657b592ffb4",
         "EN-f90aec90acf3dc85",
         "EN-18b4bbfd60f4137e",
         "EN-6eedfb906b1652fb",
@@ -22519,7 +22658,7 @@
         "HW-a033b945449628d5"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-09-23"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "TX-technology-embodied_ai",
@@ -22555,6 +22694,7 @@
         "EV-3e580ccbc11654cb",
         "EV-8a4e1df3760d9bea",
         "EV-1765fd690cff1cac",
+        "EV-79a0ee5a1daffb78",
         "EV-6e655c211bb0982a",
         "EV-fcf3c464260b6730",
         "EV-34a9773ebd5bbc97",
@@ -22611,6 +22751,7 @@
         "EV-acb2087779a8ea3c",
         "EV-6415a58637893b34",
         "EV-4faa2bcf2e42e60c",
+        "EV-aa858ac4f503c2a8",
         "EV-5a90068e9e762f94",
         "EV-d32e50951ff7f9a1",
         "EV-85ba013c379a9d3d",
@@ -22665,6 +22806,7 @@
         "EN-2505fe8a9e908e04",
         "EN-ee12ab249ba9a51f",
         "EN-2a5704f811f09cb8",
+        "EN-04e798f8f91ee67d",
         "EN-45e648a56b09477d",
         "EN-7ef08ef63597d47c",
         "EN-73424822d4b99926",
@@ -22754,7 +22896,7 @@
         "HW-1450585d9cd5879f"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "TX-industry-government_public_sector",
@@ -23461,6 +23603,8 @@
         "EV-2d6d2dc0ead4be10",
         "EV-afcd5426f5c01dc7",
         "EV-6c361125c3f50bb6",
+        "EV-a12ddefe2930d1c4",
+        "EV-bba1ef7fda30e0f6",
         "EV-805ba2cd49be2b47",
         "EV-4f0a45fda9b19e48",
         "EV-78b759d491382d09",
@@ -23526,6 +23670,8 @@
         "EN-3db1f560db626918",
         "EN-bfc698cb0f9b4d72",
         "EN-23929c7dca3eb576",
+        "EN-2bed2032ed3d8300",
+        "EN-bbdefa2950f49882",
         "EN-d36e5a1a7a3c45ce",
         "EN-3f074df65df1ab6b",
         "EN-bc44764a5e2cdba7",
@@ -23550,7 +23696,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-01-26",
-      "lastSeen": "2026-09-21"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "TX-industry-professional_services",
@@ -24209,6 +24355,7 @@
         "EV-3fb492fb45980541",
         "EV-2a71353a862e56b3",
         "EV-05a87b578967c83e",
+        "EV-49ff4d7805d8516a",
         "EV-890ffd351486b884",
         "EV-670a5100977ac1e9",
         "EV-78277c678f01e540",
@@ -24250,6 +24397,7 @@
         "EN-7d3194f79e645c42",
         "EN-c70eca6b0f88f44d",
         "EN-19e41212c0556603",
+        "EN-bbdefa2950f49882",
         "EN-a899a3dde1d51caf",
         "EN-76a5d97e81b562c4",
         "EN-c47b618e17c75f06",
@@ -24269,7 +24417,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-09-14"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "TX-technology-computer_use",
@@ -24341,6 +24489,7 @@
         "EV-0c06df62702d26ab",
         "EV-534dc9add1c0cc35",
         "EV-57f083a39393d841",
+        "EV-238b9cce7dee3a37",
         "EV-8dfe5703fea93b67",
         "EV-86537be17d50ff20"
       ],
@@ -24362,13 +24511,14 @@
         "EN-1d79127e9d90e89b",
         "EN-7d3194f79e645c42",
         "EN-3153ebda601cdb79",
+        "EN-3b2f42b25cad199c",
         "EN-9b8f8a7d29275bf7",
         "EN-6ac6ad44bb9995ca"
       ],
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-06-12",
-      "lastSeen": "2026-09-23"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "TX-technology-model_context_protocol",
@@ -24436,6 +24586,7 @@
         "EV-d1e2a7c6d314612c",
         "EV-b240fb11e65b018e",
         "EV-fe63a869fe4cee45",
+        "EV-d29cc3b49745d56d",
         "EV-49577d438cb6624b",
         "EV-92634b09de96ca83",
         "EV-39d56d5cef4cea80",
@@ -24452,8 +24603,8 @@
       "entityIds": [
         "EN-ddadc7e89f7cd629",
         "EN-c70eca6b0f88f44d",
-        "EN-373ac021a2c0bb2c",
         "EN-7d3194f79e645c42",
+        "EN-373ac021a2c0bb2c",
         "EN-920510199770f4d6",
         "EN-efa98ef1e586ac73",
         "EN-ae31f30d39374a8b",
@@ -24467,7 +24618,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-06-11",
-      "lastSeen": "2026-09-22"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "TX-technology-human_in_loop",
@@ -24575,6 +24726,47 @@
     }
   ],
   "fde": [
+    {
+      "id": "FDE-fdcff00cdefe42de",
+      "eventId": "EV-f337fdcdf92ec1e1",
+      "dataDate": "2026-09-25",
+      "date": "2026-09-21",
+      "title": "知识管理中的AI：22个真实部署",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Mistral-powered AI browsing assistant in Firefox Smart Window",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Deploying Mistral-powered AI browsing assistant in Firefox Smart Window with answer-checking, tab grouping, duplicate detection and visual history search",
+        "Samsung SDS is deploying Claude Enterprise and Claude Code across Samsung affiliates and training applied-AI engineers with Anthropic.",
+        "Mount Sinai integrated the OpenEvidence LLM clinical reference enterprise-wide inside its Epic EHR for physicians, nurses and pharmacists."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://aiweekly.co/ai-use-cases/function/knowledge-management",
+      "entityIds": [
+        "EN-9b8f8a7d29275bf7",
+        "EN-c13e2f4a44bb01ed",
+        "EN-c70eca6b0f88f44d"
+      ]
+    },
     {
       "id": "FDE-d535f8773bfd95d2",
       "eventId": "EV-0f241385f0cd6c2d",
@@ -25906,6 +26098,57 @@
     }
   ],
   "fdeDossiers": [
+    {
+      "id": "FDED-4dacd28cde8a1d97",
+      "implementationKey": "4dacd28cde8a1d97",
+      "eventId": "EV-f337fdcdf92ec1e1",
+      "eventIds": [
+        "EV-f337fdcdf92ec1e1"
+      ],
+      "dataDate": "2026-09-25",
+      "date": "2026-09-21",
+      "title": "Samsung SDS × 未披露：Mistral-powered AI browsing assistant in Firefox Smart Window",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Samsung SDS",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Mistral-powered AI browsing assistant in Firefox Smart Window",
+      "workflow": "未披露",
+      "systems": [
+        "Claude"
+      ],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.5,
+      "completenessPercent": 50,
+      "missingFields": [
+        "vendor",
+        "industry",
+        "workflow",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-982ba0961991db46",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-09-21",
+          "dataDate": "2026-09-25",
+          "eventId": "EV-f337fdcdf92ec1e1",
+          "eventTitle": "知识管理中的AI：22个真实部署",
+          "claimCount": 3,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://aiweekly.co/ai-use-cases/function/knowledge-management",
+      "entityIds": [
+        "EN-9b8f8a7d29275bf7",
+        "EN-c13e2f4a44bb01ed",
+        "EN-c70eca6b0f88f44d"
+      ]
+    },
     {
       "id": "FDED-fb965e651b7f09c8",
       "implementationKey": "fb965e651b7f09c8",

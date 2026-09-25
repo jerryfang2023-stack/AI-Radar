@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-25T00:29:53.849Z",
+    "latestDataDate": "2026-09-25",
+    "currentDate": "2026-09-25",
+    "eventCount": 3599,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -63,6 +63,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-bba1ef7fda30e0f6",
       "EV-09898d5522f0db28",
       "EV-29c45021243dba2a"
     ],
@@ -70,13 +71,14 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-23",
-    "lastSeen": "2026-09-24",
+    "lastSeen": "2026-09-25",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-bba1ef7fda30e0f6",
         "EV-09898d5522f0db28",
         "EV-29c45021243dba2a"
       ],
@@ -85,6 +87,36 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-bba1ef7fda30e0f6",
+        "dataDate": "2026-09-25",
+        "date": "2026-09-24",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Google 发布 Gemini 3.8 Flash TTS 与 Flash-Lite TTS 语音模型",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "media_entertainment",
+            "name": "媒体与娱乐",
+            "entityIds": [
+              "EN-bbdefa2950f49882"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-bbdefa2950f49882",
+          "EN-57309e90afe96cfa",
+          "EN-c21a23e0b9afd6a8",
+          "EN-79f9b4e712614f59"
+        ]
+      },
       {
         "id": "EV-09898d5522f0db28",
         "dataDate": "2026-09-24",

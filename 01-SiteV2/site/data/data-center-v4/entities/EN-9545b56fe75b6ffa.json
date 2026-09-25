@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-25T00:29:53.849Z",
+    "latestDataDate": "2026-09-25",
+    "currentDate": "2026-09-25",
+    "eventCount": 3599,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -65,13 +65,14 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-f6ad842485bb71ab"
+      "EV-f6ad842485bb71ab",
+      "EV-f34e18f3e7e123a1"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-04",
-    "lastSeen": "2026-09-07",
+    "lastSeen": "2026-09-25",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -79,12 +80,32 @@
       "partnerships": [
         "EV-f6ad842485bb71ab"
       ],
-      "productsServices": [],
+      "productsServices": [
+        "EV-f34e18f3e7e123a1"
+      ],
       "hardware": [],
       "organizationPeople": [],
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-f34e18f3e7e123a1",
+        "dataDate": "2026-09-25",
+        "date": "2026-09-24",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "摩尔线程官宣：MTT S5000 适配字节跳动 Protenix-v2 开源生物分子结构预测模型",
+        "displayTags": [],
+        "entityIds": [
+          "EN-4746f51043a70d10",
+          "EN-9545b56fe75b6ffa",
+          "EN-5388bc10736a0eff",
+          "EN-2b6e51bec93e86c1"
+        ]
+      },
       {
         "id": "EV-f6ad842485bb71ab",
         "dataDate": "2026-09-07",

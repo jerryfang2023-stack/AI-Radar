@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-25T00:29:53.849Z",
+    "latestDataDate": "2026-09-25",
+    "currentDate": "2026-09-25",
+    "eventCount": 3599,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -290,12 +290,14 @@
       "EV-8fcb52bb6ec980af",
       "EV-c0a65877001ed413",
       "EV-05a87b578967c83e",
+      "EV-8183ec309f4e9ff7",
+      "EV-a5d3be58d302a847",
+      "EV-bddc994a070fe5f4",
       "EV-0d5a32aca724d30e",
       "EV-1873f3c6fa4bdedd",
       "EV-3bf02572d01ed324",
       "EV-b7808dc792664fa6",
       "EV-67de8f4c9ac5ce4d",
-      "EV-bddc994a070fe5f4",
       "EV-1e96f85d4c034559",
       "EV-d8739d5413d6530f",
       "EV-07c226b0ca5cb558",
@@ -625,6 +627,7 @@
       "EV-8cb5b0ed18c7cdd8",
       "EV-6566d065f5500a85",
       "EV-34929bdd016dc8d6",
+      "EV-76ede2fb00adc813",
       "EV-9db14ad0d6fe3135",
       "EV-b8ea4c072c54167a",
       "EV-2c17183b71d8b7d1",
@@ -841,6 +844,7 @@
       "EN-a08cc489f1c7c830",
       "EN-f4bec299df3f4f27",
       "EN-19e41212c0556603",
+      "EN-8d3d0527c0f03837",
       "EN-f9768e4769ec9d14",
       "EN-0ed9e4984f0e77cf",
       "EN-c70eca6b0f88f44d",
@@ -51101,6 +51105,279 @@
       "publisher": "sierra.ai"
     },
     {
+      "id": "EV-8183ec309f4e9ff7",
+      "dataDate": "2026-09-25",
+      "date": "2026-09-25",
+      "updatedDate": "2026-09-25",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "BottleCap AI 发布 ThinkingCap-Qwen3.8-27B：思考 token 减少 37.2%，精度仅降 0.86pp",
+      "originalTitle": "",
+      "subject": "BottleCap AI",
+      "action": "发布",
+      "object": "ThinkingCap-Qwen3.8-27B：思考 token 减少 37.2%，精度仅降 0.86pp",
+      "metrics": [
+        "37.2%",
+        "86.65%",
+        "85.79%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d3d0527c0f03837"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d3d0527c0f03837"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d3d0527c0f03837"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-8d3d0527c0f03837",
+        "EN-314d19ce2dfad860"
+      ],
+      "entityNames": [
+        "BottleCap AI",
+        "ThinkingCap-Qwen3.8-27B"
+      ],
+      "productName": "ThinkingCap-Qwen3.8-27B",
+      "products": [
+        {
+          "name": "ThinkingCap-Qwen3.8-27B",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/09/24/bottlecap-ai-releases-thinkingcap-qwen3-8-27b-37-2-fewer-thinking-tokens-at-a-0-86pp-accuracy-cost",
+      "publisher": "MarkTechPost（RSS）"
+    },
+    {
+      "id": "EV-a5d3be58d302a847",
+      "dataDate": "2026-09-25",
+      "date": "2026-09-25",
+      "updatedDate": "2026-09-25",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "Meta 的 AI 智能体 Muse 被发现可导出虚拟机大量文件",
+      "originalTitle": "",
+      "subject": "Meta",
+      "action": "product_release",
+      "object": "Meta 的 AI 智能体 Muse 被发现可导出虚拟机大量文件",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-ea3bd73e2b506e00"
+      ],
+      "entityNames": [
+        "Meta"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/1/007/059.htm",
+      "publisher": "IT之家"
+    },
+    {
+      "id": "EV-bddc994a070fe5f4",
+      "dataDate": "2026-09-25",
+      "date": "2026-09-24",
+      "updatedDate": "2026-09-25",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Muse 看起来很像 OpenClaw",
+      "originalTitle": "Muse sure looks a lot like OpenClaw",
+      "subject": "Meta",
+      "action": "model_release",
+      "object": "Muse",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-ea3bd73e2b506e00"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-ea3bd73e2b506e00",
+        "EN-1c186c171538697c"
+      ],
+      "entityNames": [
+        "Meta",
+        "OpenClaw"
+      ],
+      "productName": "OpenClaw",
+      "products": [
+        {
+          "name": "OpenClaw",
+          "type": "模型",
+          "ownerNames": [
+            "Meta"
+          ]
+        }
+      ],
+      "sourceUrl": "https://theverge.com/report/1000180/muse-openclaw-instinct-lookalike",
+      "publisher": "The Verge AI"
+    },
+    {
       "id": "EV-0d5a32aca724d30e",
       "dataDate": "2026-09-24",
       "date": "2026-09-23",
@@ -51715,116 +51992,6 @@
       ],
       "sourceUrl": "https://marktechpost.com/2026/09/22/anthropic-claude-opus-5-5-release",
       "publisher": "MarkTechPost（RSS）"
-    },
-    {
-      "id": "EV-bddc994a070fe5f4",
-      "dataDate": "2026-09-23",
-      "date": "2026-09-23",
-      "updatedDate": "2026-09-23",
-      "eventType": "model_release",
-      "eventTypeLabel": "模型发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "Muse AI 智能体对 B2B 企业的影响",
-      "originalTitle": "Muse AI Agent's Impact on B2B Enterprises - MarketScale",
-      "subject": "Meta",
-      "action": "model_release",
-      "object": "Muse",
-      "metrics": [],
-      "locations": [
-        "U.S."
-      ],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-ea3bd73e2b506e00"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-ea3bd73e2b506e00"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-ea3bd73e2b506e00"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-ea3bd73e2b506e00",
-        "EN-df585e1ae163af2e",
-        "EN-b4ce42ffc757cc19",
-        "EN-6fad5744b882e628"
-      ],
-      "entityNames": [
-        "Meta",
-        "B2B Enterprises",
-        "MarketScale",
-        "Muse AI"
-      ],
-      "productName": "B2B Enterprises",
-      "products": [
-        {
-          "name": "B2B Enterprises",
-          "type": "模型",
-          "ownerNames": [
-            "Meta"
-          ]
-        },
-        {
-          "name": "MarketScale",
-          "type": "模型",
-          "ownerNames": [
-            "Meta"
-          ]
-        },
-        {
-          "name": "Muse AI",
-          "type": "模型",
-          "ownerNames": [
-            "Meta"
-          ]
-        }
-      ],
-      "sourceUrl": "https://marketscale.com/industries/software-and-technology/muses-rise-signals-the-next-phase-of-the-ai-agent-economy-and-enterprises-should-be-paying-attention",
-      "publisher": "marketscale.com"
     },
     {
       "id": "EV-1e96f85d4c034559",
@@ -69825,7 +69992,9 @@
         {
           "name": "OpenWorker",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Apple"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/981/493.htm",
@@ -82215,7 +82384,7 @@
           "name": "Gemini Spark",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Apple"
           ]
         }
       ],
@@ -87090,7 +87259,9 @@
         {
           "name": "Xcode 27",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Apple"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/965/734.htm",
@@ -90080,12 +90251,16 @@
         {
           "name": "Xcode 27 Beta",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Apple"
+          ]
         },
         {
           "name": "Core AI",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Apple"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/961/694.htm",
@@ -94769,6 +94944,130 @@
       ],
       "sourceUrl": "https://supermicro.com/en/pressreleases/supermicro-expands-enterprise-ai-portfolio-over-100-gpu-optimized-systems-supporting?mlg=0",
       "publisher": "supermicro.com"
+    },
+    {
+      "id": "EV-76ede2fb00adc813",
+      "dataDate": "2026-09-25",
+      "date": "2026-09-24",
+      "updatedDate": "2026-09-25",
+      "eventType": "research_result",
+      "eventTypeLabel": "研究结果",
+      "eventGroup": "研究结果",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Google 用 AI video co-director 多智能体框架自动生成长视频",
+      "originalTitle": "",
+      "subject": "Google",
+      "action": "research_result",
+      "object": "AI video co-director",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-bbdefa2950f49882"
+      ],
+      "entityNames": [
+        "Google"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://research.google/blog/coherent-long-form-video-generation",
+      "publisher": "Google Research：Blog（网页）"
     },
     {
       "id": "EV-9db14ad0d6fe3135",
@@ -101506,7 +101805,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-22",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "EN-eafe895eb8119e6e",
@@ -102056,6 +102355,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-f337fdcdf92ec1e1",
         "EV-b67bbfcebd513ac6",
         "EV-eb282b4658bbdd7e",
         "EV-5e2b5770eac85ca5",
@@ -102074,7 +102374,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-09-16"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "EN-03ecbdd9b68f40a0",
@@ -102181,6 +102481,7 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-d29cc3b49745d56d",
         "EV-8058ddb115bdef47",
         "EV-d26f174b7e773bc3",
         "EV-67de8f4c9ac5ce4d",
@@ -102331,7 +102632,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "EN-29b9f0cae32e7a8a",
@@ -102525,6 +102826,7 @@
         "EV-b99c318c66e1a295",
         "EV-3d9aa640411471ea",
         "EV-2a833330267cb2df",
+        "EV-293d6feac5b8efab",
         "EV-438b93c09aeb4264",
         "EV-8ca7036c405028d4",
         "EV-ae99edddf2ad4c24",
@@ -102623,7 +102925,7 @@
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-09-24",
+      "lastSeen": "2026-09-25",
       "organizationFamilyId": "EN-047364b9be67f665",
       "organizationRole": "group",
       "organizationFamilyEntityIds": [
@@ -102642,6 +102944,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-fe7445d005172a39",
         "EV-2470b13ea55496d0",
         "EV-c8871997cafcf846",
         "EV-e331c286836a80f3",
@@ -102730,6 +103033,7 @@
         "EV-8abf5adc3e72fbb8",
         "EV-3a704c40204ecfd9",
         "EV-777eb5b7783b71fb",
+        "EV-76d9a509356f3cff",
         "EV-09172b686d2b49de",
         "EV-bbb3ed2040b40e3f",
         "EV-20e076804a3000b4",
@@ -102761,6 +103065,10 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-482ed3a78c117cfc",
+        "EV-a1da145cb3f6b8ba",
+        "EV-ba56c2356b17d979",
+        "EV-d29cc3b49745d56d",
         "EV-57f3792e2324389e",
         "EV-74e87bba31270f42",
         "EV-c45ed9151e55246f",
@@ -102808,7 +103116,6 @@
         "EV-cb1bc28f78888566",
         "EV-4e31149f2cd129f7",
         "EV-7a7a5267ca73e44c",
-        "EV-293d6feac5b8efab",
         "EV-a474530ccf6cd872",
         "EV-1f88bfaf77dcfca3",
         "EV-2954a6f0220f5b18",
@@ -103035,6 +103342,8 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-3b9a80dacf25e596",
+        "EV-d3c3b8ef89894945",
         "EV-98a5bcde4600a029",
         "EV-82b8afc59e9be662",
         "EV-aed61f7e2ca28c38",
@@ -103203,10 +103512,10 @@
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
+        "EN-3a7bd3e2360a3d29",
         "EN-968e2d5b08687bf4",
         "EN-d1ad14d4ad57d207",
         "EN-6a50fbf0b970c03a",
-        "EN-3a7bd3e2360a3d29",
         "EN-916a98f0fa2a39af",
         "EN-8d4321d936320802",
         "EN-7839fb10a8f14c70",
@@ -103230,7 +103539,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "EN-df3b29befa02cd17",
@@ -103549,11 +103858,13 @@
         "EV-9efcf6480f6c6f48",
         "EV-cf76f090a1a20a36",
         "EV-43301de739fe560e",
+        "EV-a5d3be58d302a847",
+        "EV-a171d2ec6b5982e9",
+        "EV-bddc994a070fe5f4",
         "EV-25af07a982e78cb0",
         "EV-df53157dee9ad589",
         "EV-1873f3c6fa4bdedd",
         "EV-b7808dc792664fa6",
-        "EV-bddc994a070fe5f4",
         "EV-a1c1e9084f310dba",
         "EV-375bbf9c7fae65e9",
         "EV-7bffdadf9a6e467e",
@@ -103564,7 +103875,6 @@
         "EV-66561ec28d8b1fec",
         "EV-54451ee210a0d0d4",
         "EV-f26c01475e591f11",
-        "EV-293d6feac5b8efab",
         "EV-f29c0c51a5cbfd84",
         "EV-c877ce26c9f8997f",
         "EV-b1b396e6ba2fe208",
@@ -103685,7 +103995,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-12",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "EN-866e1f18c9370d5d",
@@ -105008,6 +105318,27 @@
       "lastSeen": "2026-07-18"
     },
     {
+      "id": "EN-8d3d0527c0f03837",
+      "name": "BottleCap AI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-8183ec309f4e9ff7"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-25",
+      "lastSeen": "2026-09-25"
+    },
+    {
       "id": "EN-f9768e4769ec9d14",
       "name": "Fireworks Research",
       "entityType": "organization_candidate",
@@ -105101,7 +105432,9 @@
         "EV-f247eff115e840af",
         "EV-ed8260ee9a7a80af",
         "EV-df88363737beb880",
+        "EV-34a6d03b3142b97f",
         "EV-3ed4dfb4a164a3e0",
+        "EV-f337fdcdf92ec1e1",
         "EV-0b7dcbb44344e389",
         "EV-da26b43d3924136e",
         "EV-172660367138131c",
@@ -105133,6 +105466,7 @@
         "EV-3a704c40204ecfd9",
         "EV-94e0afb44c320c99",
         "EV-777eb5b7783b71fb",
+        "EV-8fb741b3f6af17ae",
         "EV-0f241385f0cd6c2d",
         "EV-bbb3ed2040b40e3f",
         "EV-d2247eeac1478994",
@@ -105162,6 +105496,8 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-a1da145cb3f6b8ba",
+        "EV-ba56c2356b17d979",
         "EV-74e87bba31270f42",
         "EV-8058ddb115bdef47",
         "EV-06b33a114cf6e513",
@@ -105580,7 +105916,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "EN-6fcba5d96a4fadfd",
@@ -105884,6 +106220,8 @@
         "EV-5762fe51987bc5ff",
         "EV-6cb8979f92cf74ce",
         "EV-ef1de880e4ef9f75",
+        "EV-76b340a187999c51",
+        "EV-73ad59f3fed520eb",
         "EV-67804da6b04fdcc5",
         "EV-4965305d57edf6dd",
         "EV-ec21501b02a611f6",
@@ -105902,6 +106240,8 @@
         "EV-cec235426920c522",
         "EV-051d1924db7ba65d",
         "EV-777eb5b7783b71fb",
+        "EV-8fb741b3f6af17ae",
+        "EV-76d9a509356f3cff",
         "EV-bbb3ed2040b40e3f",
         "EV-b67a95250d1aae8b",
         "EV-6379ee71e6029bd0",
@@ -105923,6 +106263,11 @@
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
         "EV-1b912ec16c50fc0f",
+        "EV-49ff4d7805d8516a",
+        "EV-96768694a18588be",
+        "EV-ba56c2356b17d979",
+        "EV-bba1ef7fda30e0f6",
+        "EV-c82473af0a147e3d",
         "EV-09898d5522f0db28",
         "EV-29c45021243dba2a",
         "EV-8058ddb115bdef47",
@@ -106101,6 +106446,7 @@
         "EV-a4f052325d0ef230",
         "EV-cb3cb11ff13f6069",
         "EV-8115dd18f2812a29",
+        "EV-76ede2fb00adc813",
         "EV-5b593a87f47334f9",
         "EV-36defc1d19f0ce5d",
         "EV-808c496734dae101",
@@ -106162,6 +106508,7 @@
         "TX-use_case-software_development",
         "TX-product_form-ai_compute_system",
         "TX-ai_market_application-computing_infrastructure",
+        "TX-industry-media_entertainment",
         "TX-use_case-security_operations",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
@@ -106170,6 +106517,7 @@
         "TX-technology-multimodal",
         "TX-technology-open_weights",
         "TX-technology-video_generation",
+        "TX-use_case-customer_support",
         "TX-technology-image_generation",
         "TX-technology-speech_audio",
         "TX-use_case-legal_compliance",
@@ -106200,7 +106548,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "EN-69337578b2468a88",
@@ -106471,6 +106819,9 @@
         "EV-67ef7accd26a07a0",
         "EV-a7e1ecd212474e00",
         "EV-d961d3ad02f6ae14",
+        "EV-a1da145cb3f6b8ba",
+        "EV-ba56c2356b17d979",
+        "EV-f34e18f3e7e123a1",
         "EV-5edf45d6424e2154",
         "EV-da957eedfad908b6",
         "EV-606d3928fcd6a078",
@@ -106552,7 +106903,7 @@
         "EN-a3c3b987b09fc1bb"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-09-21"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "EN-373ac021a2c0bb2c",
@@ -106667,6 +107018,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-34a6d03b3142b97f",
         "EV-f8d9fa15111c7f61",
         "EV-0e8877060ca89517",
         "EV-800958e92cf5e67f",
@@ -106742,7 +107094,7 @@
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "EN-738e22f0acab814c",
@@ -107145,6 +107497,7 @@
         "EV-4dfd7233c8c69b0b",
         "EV-657837763764c869",
         "EV-388a53fe918389b0",
+        "EV-238b9cce7dee3a37",
         "EV-c44f8fbab9e200ca",
         "EV-59b7ba3d079ad09a",
         "EV-3aefbdfa5df2fd6a",
@@ -107171,7 +107524,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-08",
-      "lastSeen": "2026-09-15"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "EN-e78bdebae031095b",
@@ -107201,6 +107554,7 @@
         "EV-edcb66d0401cfb8f",
         "EV-03f661e8dcdf1b58",
         "EV-ef7346378fcf9746",
+        "EV-76b340a187999c51",
         "EV-77092089644381a3",
         "EV-4da18f97771852a9",
         "EV-f949fd95df58d42d",
@@ -107240,7 +107594,7 @@
         "EN-6fcba5d96a4fadfd"
       ],
       "firstSeen": "2026-05-21",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "EN-92df1be3e37c9268",
@@ -107775,6 +108129,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-ba56c2356b17d979",
         "EV-6f26809c0ae960a8"
       ],
       "viewpointIds": [],
@@ -107783,7 +108138,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-27",
-      "lastSeen": "2026-07-28"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "EN-cd6362472aea60ef",
@@ -108458,7 +108813,8 @@
         "EV-a4b72879f3d73ea4",
         "EV-276d6fc7ccb9eb76",
         "EV-9e04edd969c977a1",
-        "EV-ceb7d70f0043eb81"
+        "EV-ceb7d70f0043eb81",
+        "EV-15f5f6bbfc331f84"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -108471,7 +108827,7 @@
         "EN-fdc6b157616f12a8"
       ],
       "firstSeen": "2026-06-22",
-      "lastSeen": "2026-09-12"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "EN-820a72d1d4b51ae7",
@@ -108928,6 +109284,7 @@
         "EV-97fdf068afbbe555",
         "EV-47a84a0f1a85c29c",
         "EV-6c361125c3f50bb6",
+        "EV-f34e18f3e7e123a1",
         "EV-10e1ebf738d9a122",
         "EV-650e4b23d45d5758",
         "EV-c157bdbedac35fa3",
@@ -108959,7 +109316,7 @@
         "EN-4f96127fdacbb405"
       ],
       "firstSeen": "2026-04-09",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "EN-42f0b44cc91cc5e0",
@@ -109091,6 +109448,7 @@
         "EV-57944eebac69d510",
         "EV-5b1bdc06406424b4",
         "EV-6272444f30281858",
+        "EV-c35a8f323fe20cc9",
         "EV-c8d5ff6ced937ca9",
         "EV-73a6143b5ce273e9",
         "EV-4e01d849a23a07d9",
@@ -109117,7 +109475,7 @@
         "EN-a42d5d95234db6c4"
       ],
       "firstSeen": "2026-02-10",
-      "lastSeen": "2026-09-23"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "EN-042e9398f2cc8902",
@@ -109589,6 +109947,7 @@
         "EV-afcd5426f5c01dc7",
         "EV-f5a50f1fed72fec3",
         "EV-d116b0aa5bb292e2",
+        "EV-76d9a509356f3cff",
         "EV-e857f9d1c1478c70",
         "EV-fd21441fb6e143c3",
         "EV-f114a151829de349",
@@ -109712,7 +110071,7 @@
         "EN-45b5216872656eb3"
       ],
       "firstSeen": "2026-06-04",
-      "lastSeen": "2026-09-22"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "EN-0502bb9ed34980aa",

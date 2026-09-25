@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-25T00:29:53.849Z",
+    "latestDataDate": "2026-09-25",
+    "currentDate": "2026-09-25",
+    "eventCount": 3599,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -69,6 +69,7 @@
       "EV-522c339dded54be5",
       "EV-a354af52772334fd",
       "EV-26d2874c6ce028d6",
+      "EV-49ff4d7805d8516a",
       "EV-a251b011afec190d",
       "EV-c5f8f07d714f330f",
       "EV-172e82bbbedb3619",
@@ -87,6 +88,8 @@
       "EV-c7404765df94a3b4",
       "EV-473f852b374d8b1c",
       "EV-887d47bb477e2142",
+      "EV-238b9cce7dee3a37",
+      "EV-76ede2fb00adc813",
       "EV-9766c0f1ac902595"
     ],
     "entityIds": [
@@ -99,8 +102,8 @@
       "EN-e1517be14d06cdb7",
       "EN-d747d6f5125b6bee",
       "EN-b81c8201acfc7639",
-      "EN-572e31f55b6ac1b1",
       "EN-bbdefa2950f49882",
+      "EN-572e31f55b6ac1b1",
       "EN-1ba4a2b10cfc1093",
       "EN-031f4a060a67e7af",
       "EN-e59f5a52b6713a29",
@@ -110,6 +113,7 @@
       "EN-2b6e51bec93e86c1",
       "EN-01f1074bb52ff605",
       "EN-47c1e53c427aafb4",
+      "EN-3b2f42b25cad199c",
       "EN-5388bc10736a0eff"
     ],
     "fdeIds": [],
@@ -117,7 +121,7 @@
       "HW-68457c8c0a7240ac"
     ],
     "firstSeen": "2026-01-19",
-    "lastSeen": "2026-09-12"
+    "lastSeen": "2026-09-25"
   },
   "events": [
     {
@@ -1655,6 +1659,139 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/967/217.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-49ff4d7805d8516a",
+      "dataDate": "2026-09-25",
+      "date": "2026-09-24",
+      "updatedDate": "2026-09-25",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Google 发布 Gemini 3.8 Live with Live Avatar，为对话 AI 带来实时视觉形象",
+      "originalTitle": "",
+      "subject": "Google",
+      "action": "发布",
+      "object": "Gemini 3.8 Live with Live Avatar，为对话 AI 带来实时视觉形象",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "customer_support",
+            "name": "客户支持",
+            "entityIds": [
+              "EN-bbdefa2950f49882"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "customer_support",
+          "name": "客户支持",
+          "entityIds": [
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "customer_support",
+          "name": "客户支持",
+          "entityIds": [
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-dfa0b001befb3fbd",
+        "EN-3f18cef2fb74e26f"
+      ],
+      "entityNames": [
+        "Google",
+        "Gemini 3.8 Live",
+        "Live Avatar"
+      ],
+      "productName": "Gemini 3.8 Live",
+      "products": [
+        {
+          "name": "Gemini 3.8 Live",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Google"
+          ]
+        },
+        {
+          "name": "Live Avatar",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Google"
+          ]
+        }
+      ],
+      "sourceUrl": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar",
+      "publisher": "Google DeepMind：Blog（RSS）"
     },
     {
       "id": "EV-a251b011afec190d",
@@ -3894,6 +4031,275 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-238b9cce7dee3a37",
+      "dataDate": "2026-09-25",
+      "date": "2026-09-24",
+      "updatedDate": "2026-09-25",
+      "eventType": "research_result",
+      "eventTypeLabel": "研究结果",
+      "eventGroup": "研究结果",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "PCIe显卡被低估了！内核补齐+通信重构，DeepSeek推理吞吐翻近7倍",
+      "originalTitle": "",
+      "subject": "是石科技",
+      "action": "research_result",
+      "object": "DeepSeek-V4.1-Flash推理吞吐",
+      "metrics": [
+        "27万",
+        "105万"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "deployment_location"
+        ],
+        "source_registry_ids": [
+          "cn-qbitai-rss"
+        ],
+        "claim_refs": [
+          "CL-a3892fef7068cdcd",
+          "CL-8c560fb5cb931da4",
+          "CL-694dc222eb8c99fa"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文",
+          "entityIds": [
+            "EN-3b2f42b25cad199c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-3b2f42b25cad199c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文",
+          "entityIds": [
+            "EN-3b2f42b25cad199c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-3b2f42b25cad199c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文",
+          "entityIds": [
+            "EN-3b2f42b25cad199c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-3b2f42b25cad199c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-3b2f42b25cad199c",
+        "EN-6f7ac1823da81d2e",
+        "EN-e1517be14d06cdb7",
+        "EN-ab03dea2d9bd6432"
+      ],
+      "entityNames": [
+        "是石科技",
+        "DeepSeek",
+        "MiniMax",
+        "DeepSeek-V4.1-Flash"
+      ],
+      "productName": "DeepSeek-V4.1-Flash",
+      "products": [
+        {
+          "name": "DeepSeek-V4.1-Flash",
+          "type": "产品/服务",
+          "ownerNames": [
+            "DeepSeek"
+          ]
+        }
+      ],
+      "sourceUrl": "https://qbitai.com/2026/09/496925.html",
+      "publisher": "量子位"
+    },
+    {
+      "id": "EV-76ede2fb00adc813",
+      "dataDate": "2026-09-25",
+      "date": "2026-09-24",
+      "updatedDate": "2026-09-25",
+      "eventType": "research_result",
+      "eventTypeLabel": "研究结果",
+      "eventGroup": "研究结果",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Google 用 AI video co-director 多智能体框架自动生成长视频",
+      "originalTitle": "",
+      "subject": "Google",
+      "action": "research_result",
+      "object": "AI video co-director",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-bbdefa2950f49882"
+      ],
+      "entityNames": [
+        "Google"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://research.google/blog/coherent-long-form-video-generation",
+      "publisher": "Google Research：Blog（网页）"
+    },
+    {
       "id": "EV-9766c0f1ac902595",
       "dataDate": "2026-08-18",
       "date": "2026-08-17",
@@ -4158,8 +4564,8 @@
       ],
       "eventIds": [
         "EV-d80c43b35418e74d",
-        "EV-2182e541e0fe6a82",
         "EV-293d6feac5b8efab",
+        "EV-2182e541e0fe6a82",
         "EV-b22136a993b21f0c",
         "EV-cff5848b8c5453af",
         "EV-5ede0f85a672441c",
@@ -4177,7 +4583,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-09-18"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "EN-047364b9be67f665",
@@ -4227,6 +4633,7 @@
         "EV-b99c318c66e1a295",
         "EV-3d9aa640411471ea",
         "EV-2a833330267cb2df",
+        "EV-293d6feac5b8efab",
         "EV-438b93c09aeb4264",
         "EV-8ca7036c405028d4",
         "EV-ae99edddf2ad4c24",
@@ -4325,7 +4732,7 @@
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-09-24",
+      "lastSeen": "2026-09-25",
       "organizationFamilyId": "EN-047364b9be67f665",
       "organizationRole": "group",
       "organizationFamilyEntityIds": [
@@ -4362,7 +4769,8 @@
         "EV-9da9d755019f241f",
         "EV-aae8b6aa0da7f103",
         "EV-20cdbe59ba2a1359",
-        "EV-d5daf0537fe7b2d7"
+        "EV-d5daf0537fe7b2d7",
+        "EV-238b9cce7dee3a37"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -4374,7 +4782,7 @@
         "EN-cf81a61e4eaef17c"
       ],
       "firstSeen": "2026-06-01",
-      "lastSeen": "2026-09-21"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "EN-d747d6f5125b6bee",
@@ -4474,28 +4882,6 @@
       "lastSeen": "2026-09-21"
     },
     {
-      "id": "EN-572e31f55b6ac1b1",
-      "name": "Arena",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-a251b011afec190d"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-product_form-model",
-        "TX-technology-video_generation"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-09-07",
-      "lastSeen": "2026-09-08"
-    },
-    {
       "id": "EN-bbdefa2950f49882",
       "name": "Google",
       "entityType": "organization_candidate",
@@ -4530,6 +4916,8 @@
         "EV-5762fe51987bc5ff",
         "EV-6cb8979f92cf74ce",
         "EV-ef1de880e4ef9f75",
+        "EV-76b340a187999c51",
+        "EV-73ad59f3fed520eb",
         "EV-67804da6b04fdcc5",
         "EV-4965305d57edf6dd",
         "EV-ec21501b02a611f6",
@@ -4548,6 +4936,8 @@
         "EV-cec235426920c522",
         "EV-051d1924db7ba65d",
         "EV-777eb5b7783b71fb",
+        "EV-8fb741b3f6af17ae",
+        "EV-76d9a509356f3cff",
         "EV-bbb3ed2040b40e3f",
         "EV-b67a95250d1aae8b",
         "EV-6379ee71e6029bd0",
@@ -4569,6 +4959,11 @@
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
         "EV-1b912ec16c50fc0f",
+        "EV-49ff4d7805d8516a",
+        "EV-96768694a18588be",
+        "EV-ba56c2356b17d979",
+        "EV-bba1ef7fda30e0f6",
+        "EV-c82473af0a147e3d",
         "EV-09898d5522f0db28",
         "EV-29c45021243dba2a",
         "EV-8058ddb115bdef47",
@@ -4747,6 +5142,7 @@
         "EV-a4f052325d0ef230",
         "EV-cb3cb11ff13f6069",
         "EV-8115dd18f2812a29",
+        "EV-76ede2fb00adc813",
         "EV-5b593a87f47334f9",
         "EV-36defc1d19f0ce5d",
         "EV-808c496734dae101",
@@ -4808,6 +5204,7 @@
         "TX-use_case-software_development",
         "TX-product_form-ai_compute_system",
         "TX-ai_market_application-computing_infrastructure",
+        "TX-industry-media_entertainment",
         "TX-use_case-security_operations",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
@@ -4816,6 +5213,7 @@
         "TX-technology-multimodal",
         "TX-technology-open_weights",
         "TX-technology-video_generation",
+        "TX-use_case-customer_support",
         "TX-technology-image_generation",
         "TX-technology-speech_audio",
         "TX-use_case-legal_compliance",
@@ -4846,7 +5244,29 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-25"
+    },
+    {
+      "id": "EN-572e31f55b6ac1b1",
+      "name": "Arena",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-a251b011afec190d"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-technology-video_generation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-07",
+      "lastSeen": "2026-09-08"
     },
     {
       "id": "EN-1ba4a2b10cfc1093",
@@ -5011,6 +5431,9 @@
         "EV-67ef7accd26a07a0",
         "EV-a7e1ecd212474e00",
         "EV-d961d3ad02f6ae14",
+        "EV-a1da145cb3f6b8ba",
+        "EV-ba56c2356b17d979",
+        "EV-f34e18f3e7e123a1",
         "EV-5edf45d6424e2154",
         "EV-da957eedfad908b6",
         "EV-606d3928fcd6a078",
@@ -5092,7 +5515,7 @@
         "EN-a3c3b987b09fc1bb"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-09-21"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "EN-01f1074bb52ff605",
@@ -5122,6 +5545,28 @@
       "lastSeen": "2026-07-15"
     },
     {
+      "id": "EN-3b2f42b25cad199c",
+      "name": "是石科技",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-238b9cce7dee3a37"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-video_generation",
+        "TX-technology-long_context"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-24",
+      "lastSeen": "2026-09-25"
+    },
+    {
       "id": "EN-5388bc10736a0eff",
       "name": "ByteDance",
       "entityType": "organization_candidate",
@@ -5141,6 +5586,7 @@
         "EV-97fdf068afbbe555",
         "EV-47a84a0f1a85c29c",
         "EV-6c361125c3f50bb6",
+        "EV-f34e18f3e7e123a1",
         "EV-10e1ebf738d9a122",
         "EV-650e4b23d45d5758",
         "EV-c157bdbedac35fa3",
@@ -5172,7 +5618,7 @@
         "EN-4f96127fdacbb405"
       ],
       "firstSeen": "2026-04-09",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-25"
     }
   ],
   "fde": [],

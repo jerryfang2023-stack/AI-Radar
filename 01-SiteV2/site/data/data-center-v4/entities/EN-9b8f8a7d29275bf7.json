@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-25T00:29:53.849Z",
+    "latestDataDate": "2026-09-25",
+    "currentDate": "2026-09-25",
+    "eventCount": 3599,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -63,6 +63,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-f337fdcdf92ec1e1",
       "EV-8dfe5703fea93b67"
     ],
     "viewpointIds": [],
@@ -71,11 +72,13 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-15",
-    "lastSeen": "2026-09-16",
+    "lastSeen": "2026-09-25",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
-      "deployments": [],
+      "deployments": [
+        "EV-f337fdcdf92ec1e1"
+      ],
       "partnerships": [],
       "productsServices": [],
       "hardware": [],
@@ -85,6 +88,23 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-f337fdcdf92ec1e1",
+        "dataDate": "2026-09-25",
+        "date": "2026-09-21",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "知识管理中的AI：22个真实部署",
+        "displayTags": [],
+        "entityIds": [
+          "EN-9b8f8a7d29275bf7",
+          "EN-c13e2f4a44bb01ed",
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
       {
         "id": "EV-8dfe5703fea93b67",
         "dataDate": "2026-09-16",
@@ -154,6 +174,7 @@
         "EV-0c06df62702d26ab",
         "EV-534dc9add1c0cc35",
         "EV-57f083a39393d841",
+        "EV-238b9cce7dee3a37",
         "EV-8dfe5703fea93b67",
         "EV-86537be17d50ff20"
       ],
@@ -175,15 +196,111 @@
         "EN-1d79127e9d90e89b",
         "EN-7d3194f79e645c42",
         "EN-3153ebda601cdb79",
+        "EN-3b2f42b25cad199c",
         "EN-9b8f8a7d29275bf7",
         "EN-6ac6ad44bb9995ca"
       ],
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-06-12",
-      "lastSeen": "2026-09-23"
+      "lastSeen": "2026-09-25"
     }
   ],
-  "fde": [],
-  "hardware": []
+  "fde": [
+    {
+      "id": "FDE-fdcff00cdefe42de",
+      "eventId": "EV-f337fdcdf92ec1e1",
+      "dataDate": "2026-09-25",
+      "date": "2026-09-21",
+      "title": "知识管理中的AI：22个真实部署",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Mistral-powered AI browsing assistant in Firefox Smart Window",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Deploying Mistral-powered AI browsing assistant in Firefox Smart Window with answer-checking, tab grouping, duplicate detection and visual history search",
+        "Samsung SDS is deploying Claude Enterprise and Claude Code across Samsung affiliates and training applied-AI engineers with Anthropic.",
+        "Mount Sinai integrated the OpenEvidence LLM clinical reference enterprise-wide inside its Epic EHR for physicians, nurses and pharmacists."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://aiweekly.co/ai-use-cases/function/knowledge-management",
+      "entityIds": [
+        "EN-9b8f8a7d29275bf7",
+        "EN-c13e2f4a44bb01ed",
+        "EN-c70eca6b0f88f44d"
+      ]
+    }
+  ],
+  "hardware": [],
+  "fdeDossiers": [
+    {
+      "id": "FDED-4dacd28cde8a1d97",
+      "implementationKey": "4dacd28cde8a1d97",
+      "eventId": "EV-f337fdcdf92ec1e1",
+      "eventIds": [
+        "EV-f337fdcdf92ec1e1"
+      ],
+      "dataDate": "2026-09-25",
+      "date": "2026-09-21",
+      "title": "Samsung SDS × 未披露：Mistral-powered AI browsing assistant in Firefox Smart Window",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Samsung SDS",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Mistral-powered AI browsing assistant in Firefox Smart Window",
+      "workflow": "未披露",
+      "systems": [
+        "Claude"
+      ],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.5,
+      "completenessPercent": 50,
+      "missingFields": [
+        "vendor",
+        "industry",
+        "workflow",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-982ba0961991db46",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-09-21",
+          "dataDate": "2026-09-25",
+          "eventId": "EV-f337fdcdf92ec1e1",
+          "eventTitle": "知识管理中的AI：22个真实部署",
+          "claimCount": 3,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://aiweekly.co/ai-use-cases/function/knowledge-management",
+      "entityIds": [
+        "EN-9b8f8a7d29275bf7",
+        "EN-c13e2f4a44bb01ed",
+        "EN-c70eca6b0f88f44d"
+      ]
+    }
+  ]
 }

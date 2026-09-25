@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-25T00:29:53.849Z",
+    "latestDataDate": "2026-09-25",
+    "currentDate": "2026-09-25",
+    "eventCount": 3599,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -63,6 +63,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-49ff4d7805d8516a",
       "EV-65baf4d62c3ae3a6",
       "EV-da957eedfad908b6",
       "EV-624ed5656504ddd2"
@@ -71,13 +72,14 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-15",
-    "lastSeen": "2026-09-18",
+    "lastSeen": "2026-09-25",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-49ff4d7805d8516a",
         "EV-65baf4d62c3ae3a6",
         "EV-da957eedfad908b6",
         "EV-624ed5656504ddd2"
@@ -87,6 +89,46 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-49ff4d7805d8516a",
+        "dataDate": "2026-09-25",
+        "date": "2026-09-24",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Google 发布 Gemini 3.8 Live with Live Avatar，为对话 AI 带来实时视觉形象",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "customer_support",
+            "name": "客户支持",
+            "entityIds": [
+              "EN-bbdefa2950f49882"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "video_generation",
+            "name": "视频生成",
+            "entityIds": [
+              "EN-bbdefa2950f49882"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-bbdefa2950f49882",
+          "EN-dfa0b001befb3fbd",
+          "EN-3f18cef2fb74e26f"
+        ]
+      },
       {
         "id": "EV-65baf4d62c3ae3a6",
         "dataDate": "2026-09-18",
