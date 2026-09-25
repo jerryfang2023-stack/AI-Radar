@@ -515,53 +515,111 @@
       }
     },
     "public_profile": {
-      "profile_type": "unverified",
-      "coverage_status": "activity_only",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "中金资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-31；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "中金资本官网所对应的公开实体为上海中金资本投资有限公司，成立于1997年，为中金投资（集团）有限公司旗下资本运作机构，聚焦老年健康产业，业务涵盖产业投资、战略并购、证券投资和创新投资。官网自报注册资本1亿元、50余名专业投资人员、管理资金规模约30亿元、累计投资金额超过20亿元；这些是该官网的机构披露数据。融资情报记录仅使用“中金资本”简称，具体基金或法律主体仍须逐轮依据融资原始公告确认。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "官网对应机构名称",
+          "value": "上海中金资本投资有限公司（中金资本）；本条简称可能覆盖不同基金主体，具体融资交易主体未逐轮核验。",
+          "source_id": "ccicapital_home"
+        },
+        {
+          "field": "founded",
+          "label": "成立年份",
+          "value": "1997年",
+          "source_id": "ccicapital_home"
+        },
+        {
+          "field": "registered_capital",
+          "label": "官网自报注册资本",
+          "value": "1亿元人民币",
+          "source_id": "ccicapital_home"
+        },
+        {
+          "field": "team_size",
+          "label": "官网自报专业投资人员",
+          "value": "50余人",
+          "source_id": "ccicapital_home"
+        },
+        {
+          "field": "aum",
+          "label": "官网自报管理资金规模",
+          "value": "约30亿元人民币；统计时点与口径未注明",
+          "source_id": "ccicapital_home"
+        },
+        {
+          "field": "invested_amount",
+          "label": "官网自报累计投资金额",
+          "value": "超过20亿元人民币；统计时点与口径未注明",
+          "source_id": "ccicapital_home"
+        },
+        {
+          "field": "parent_company",
+          "label": "集团关联",
+          "value": "官网称其为中金投资（集团）有限公司旗下资本运作专业机构；此处的中金集团指中金投资集团，不推断为其他同名金融机构。",
+          "source_id": "ccicapital_home"
+        },
+        {
+          "field": "sectors",
+          "label": "官网列示业务领域",
+          "value": [
+            "老年健康产业",
+            "产业投资",
+            "战略并购",
+            "证券投资",
+            "创新投资"
+          ],
+          "source_id": "ccicapital_home"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1997",
+          "description": "中金资本官网列示上海中金资本投资有限公司成立年份。",
+          "source_id": "ccicapital_home"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：松应科技 · 多轮融资 · 2026-08-31 · 本轮领投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1ae72db61aa80327"
-        },
-        {
-          "description": "融资来源记录：极佳视界 · B2轮 · 2026-06-15 · Pre-A+轮投资方 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-ce47b663ca256878"
-        },
-        {
-          "description": "融资来源记录：MemoraX AI · 种子轮 · 2026-05-20 · 本轮联合领投 · 数千万人民币。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-924702999fc88d2f"
+          "description": "官网自报累计投资金额超过20亿元及约30亿元管理资金规模；未披露基金级收益、退出倍数或IRR，不作为业绩回报指标。",
+          "source_id": "ccicapital_home"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "中金资本",
+          "url": "https://www.ccifund.com/",
+          "source_id": "ccicapital_home"
+        },
+        {
+          "kind": "phone",
+          "label": "官网公开联系电话",
+          "value": "+86 21 6270 5198",
+          "url": "https://www.ccifund.com/",
+          "source_id": "ccicapital_home"
+        },
+        {
+          "kind": "email",
+          "label": "官网公开邮箱",
+          "value": "ccig@ccig.com",
+          "url": "https://www.ccifund.com/",
+          "source_id": "ccicapital_home"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-1ae72db61aa80327",
-          "source_url": "https://m.sohu.com/a/1070029599_120285954?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
-          "source_title": "松应科技完成A轮、A1轮数亿元融资：「成物理AI时代安卓」",
-          "source_content_hash": "74d6b0dda1bd2148",
-          "quote": "本轮由中金资本、武汉洪山资本领投",
-          "quote_hash": "dd9d75ad7cd01080ce06111b58af4c07b7a99db8d909dcc19dc94980c7f5c7d6"
-        },
-        {
-          "source_id": "FISRC-ce47b663ca256878",
-          "source_url": "https://news.pedaily.cn/202606/565201.shtml",
-          "source_title": "首发| 极佳视界三个月融资35亿，投资人开抢物理世界OpenAI",
-          "source_content_hash": "a652909321da946b",
-          "quote": "Pre-A+轮融资由中金资本、广州产投、一村淞灵、华强资本投资",
-          "quote_hash": "3318c5d954cce0783546781182132aeeed02cbdd69b29c3a59a35e110176b847"
-        },
-        {
-          "source_id": "FISRC-924702999fc88d2f",
-          "source_url": "https://www.chinaventure.com.cn/news/116-20260520-391447.html",
-          "source_title": "「MemoraX AI」完成数千万人民币种子+轮融资",
-          "source_content_hash": "76bcd79d46511d45",
-          "quote": "本轮由中金资本、达泰资本、华业天成联合领投",
-          "quote_hash": "87dab2266ac0906c976ca534acc2aadbd10203242f22a09e359ab687abc46980"
+          "source_id": "ccicapital_home",
+          "source_url": "https://www.ccifund.com/",
+          "source_title": "中金资本官网首页",
+          "source_content_hash": "2c0011ece70084c774e28e331a1ad1d809677190c75cc6945d1ba6d4b46f8788",
+          "quote": "上海中金资本投资有限公司（中金资本）成立于1997年，公司注册资本1亿元。拥有50余名专业投资人员，管理资金规模约30亿元，累计投资金额超过20亿元。中金资本是中金投资（集团）有限公司（中金集团）旗下资本运作专业机构，聚焦于老年健康产业，业务领域涵盖产业投资、战略并购、证券投资、创新投资等业务板块。",
+          "quote_hash": "9eaacaf7782097da4e80fd6fac1856de57326c203c62a83814eeab3d3d1d8738"
         }
       ],
+      "coverage_status": "researched",
+      "coverage_note": "组织背景、业务、公开指标与联系方式来自中金资本官网。融资库名称为简称，因此档案对应官网同名机构作为参考实体，不声称每笔融资均由该公司或其管理基金实施；官网自报规模不代表基金回报率。",
       "last_verified_at": "2026-09-25"
     }
   }
