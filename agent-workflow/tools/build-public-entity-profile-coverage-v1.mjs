@@ -198,7 +198,7 @@ const pendingPeople = (entityData.people || [])
   }))
   .sort((a, b) => b.source_count - a.source_count || a.name.localeCompare(b.name, "zh-Hans-CN"));
 backlog.pending_identity_verification = (investorData.institutions || [])
-  .filter((investor) => !organizationKinds.has(investor.investor_kind) && investor.investor_kind !== "individual")
+  .filter((investor) => coverage.institutions[investor.id]?.identity_status === "pending_verification")
   .map((investor) => ({ id: investor.id, name: investor.name, investor_kind: investor.investor_kind || "unclassified", reason: "investor_identity_or_organization_type_not_independently_verified" }))
   .sort((a, b) => a.name.localeCompare(b.name, "zh-Hans-CN"));
 backlog.pending_investor_research = pendingInvestors;

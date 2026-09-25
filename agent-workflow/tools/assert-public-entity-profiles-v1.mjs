@@ -47,7 +47,7 @@ if (!backlog || !coverage) {
   const investors = investorData.institutions || [];
   const people = peopleIndex.people || [];
   assertSameIds("pending_identity_verification", backlog.pending_identity_verification,
-    investors.filter((row) => row.investor_kind !== "individual" && !organizationKinds.has(row.investor_kind)).map((row) => row.id));
+    investors.filter((row) => coverage.institutions?.[row.id]?.identity_status === "pending_verification").map((row) => row.id));
   assertSameIds("pending_investor_research", backlog.pending_investor_research,
     investors.filter((row) => (row.investor_kind === "individual" || organizationKinds.has(row.investor_kind))
       && coverage.institutions?.[row.id]?.coverage_status !== "researched").map((row) => row.id));
