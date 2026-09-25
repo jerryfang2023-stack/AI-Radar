@@ -53,6 +53,7 @@ Private evidence objects and exact Claim spans are the evidence layer. Public Ra
 - JSON Schema: `agent-workflow/product/data-center-v4.schema.json`
 - Entity history contract: `agent-workflow/product/entity-history-v1-contract.md`
 - Entity history schema: `agent-workflow/product/entity-history-v1.schema.json`
+- Public entity profile contract/schema: `agent-workflow/product/public-entity-profiles-v1-contract.md` and `agent-workflow/product/public-entity-profiles-v1.schema.json`
 - Targeted backfill contract: `agent-workflow/product/targeted-backfill-v1-contract.md`
 - Targeted backfill schema: `agent-workflow/product/targeted-backfill-v1.schema.json`
 - Tag taxonomy: `agent-workflow/product/tag-taxonomy-v4.json`

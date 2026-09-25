@@ -116,8 +116,61 @@
           }
         },
         "activities": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/activity" } },
-        "evidence": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/evidence" } }
+        "evidence": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/evidence" } },
+        "public_profile": { "$ref": "#/$defs/publicProfile" }
       },
+      "additionalProperties": false
+    },
+    "publicProfile": {
+      "type": "object",
+      "required": ["summary", "facts", "milestones", "track_record", "contacts", "sources", "last_verified_at"],
+      "properties": {
+        "profile_type": { "enum": ["organization", "person", "unverified"] },
+        "coverage_status": { "enum": ["researched", "activity_only", "self_declared_affiliation", "identity_unverified"] },
+        "coverage_note": { "type": "string" },
+        "summary": { "type": "string" },
+        "facts": { "type": "array", "items": { "type": "object", "required": ["field", "label", "value", "source_id"], "properties": { "field": { "type": "string" }, "label": { "type": "string" }, "value": { "type": ["string", "array"] }, "source_id": { "type": "string" } }, "additionalProperties": false } },
+        "milestones": { "type": "array", "items": { "type": "object", "required": ["date", "description", "source_id"], "properties": { "date": { "type": "string" }, "description": { "type": "string" }, "source_id": { "type": "string" } }, "additionalProperties": false } },
+        "track_record": { "type": "array", "items": { "type": "object", "required": ["description", "source_id"], "properties": { "description": { "type": "string" }, "source_id": { "type": "string" } }, "additionalProperties": false } },
+        "contacts": { "type": "array", "items": { "type": "object", "required": ["kind", "label", "value", "source_id"], "properties": { "kind": { "enum": ["website", "application", "email", "phone", "address", "contact_form", "social"] }, "label": { "type": "string" }, "value": { "type": "string" }, "url": { "type": "string", "format": "uri", "pattern": "^https?://" }, "source_id": { "type": "string" } }, "additionalProperties": false } },
+        "current_roles": { "type": "array", "items": { "$ref": "#/$defs/profileRole" } },
+        "career": { "type": "array", "items": { "$ref": "#/$defs/profileCareer" } },
+        "education": { "type": "array", "items": { "$ref": "#/$defs/profileEducation" } },
+        "experience_summary": { "type": "string" },
+        "sources": { "type": "array", "items": { "$ref": "#/$defs/profileSource" } },
+        "last_verified_at": { "type": "string", "format": "date" }
+      },
+      "additionalProperties": false
+    },
+    "profileSource": {
+      "type": "object",
+      "required": ["source_id", "source_url", "source_title", "source_content_hash", "quote", "quote_hash"],
+      "properties": {
+        "source_id": { "type": "string" },
+        "source_url": { "type": "string", "format": "uri", "pattern": "^https?://" },
+        "source_title": { "type": "string" },
+        "source_content_hash": { "type": "string", "pattern": "^(?:[a-f0-9]{16}|[a-f0-9]{64})$" },
+        "quote": { "type": "string", "minLength": 1 },
+        "quote_hash": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+      },
+      "additionalProperties": false
+    },
+    "profileRole": {
+      "type": "object",
+      "required": ["title", "organization", "source_id"],
+      "properties": { "title": { "type": "string" }, "organization": { "type": "string" }, "source_id": { "type": "string" } },
+      "additionalProperties": false
+    },
+    "profileCareer": {
+      "type": "object",
+      "required": ["organization", "title", "period", "description", "source_id"],
+      "properties": { "organization": { "type": "string" }, "title": { "type": "string" }, "period": { "type": "string" }, "description": { "type": "string" }, "source_id": { "type": "string" } },
+      "additionalProperties": false
+    },
+    "profileEducation": {
+      "type": "object",
+      "required": ["institution", "qualification", "source_id"],
+      "properties": { "institution": { "type": "string" }, "qualification": { "type": "string" }, "source_id": { "type": "string" } },
       "additionalProperties": false
     }
   }

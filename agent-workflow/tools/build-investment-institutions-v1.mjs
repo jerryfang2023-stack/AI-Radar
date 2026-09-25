@@ -16,10 +16,12 @@ function readJson(file, fallback = {}) {
 export function writeInvestmentInstitutionRegistry(projectRoot = defaultRoot) {
   const funding = readJson(path.join(projectRoot, "01-SiteV2/site/data/funding-insights-v1.json"), { meta: {}, cards: [] });
   const entityIndex = readJson(path.join(projectRoot, "01-SiteV2/site/data/data-center-v4/indexes/entities.json"), {});
+  const publicProfiles = readJson(path.join(projectRoot, "01-SiteV2/content/11-databases/public-entity-profiles-v1.json"), { institutions: {} });
   const registry = buildInvestmentInstitutionRegistry(
     funding.cards || [],
     entityIndex,
     funding.meta?.generated_at || "",
+    publicProfiles,
   );
   const output = path.join(projectRoot, "01-SiteV2/content/11-databases/investment-institutions-v1.json");
   fs.mkdirSync(path.dirname(output), { recursive: true });

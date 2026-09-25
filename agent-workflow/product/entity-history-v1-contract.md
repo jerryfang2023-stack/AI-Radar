@@ -46,7 +46,7 @@ Allowed predicates are `publishes`, `partners_with`, `acquires`, `serves`, `depl
 - The sidebar remains unchanged.
 - Entity Index covers organizations, products/models/services, people, technology, use cases, and industries.
 - Entity pages lead with dated event timelines and factual related-data groups.
-- Missing facts stay absent or disclosed as missing. Pages do not add overview prose, recommendations, rankings, opportunity scores, or inferred ownership.
+- Missing facts stay absent or disclosed as missing. Entity pages may show a concise sourced profile, background, track record, public contact details, and career/education history from `PUBLIC-ENTITY-PROFILES-V1.0`; each claim must resolve to a captured source and attributed excerpt. These descriptive profile assertions do not create CanonicalEvents or `RELATION-V2.1`. Pages must not add recommendations, rankings, opportunity scores, or inferred ownership.
 - Default list routes load compact per-column indexes. Entity and taxonomy details load their own files on demand.
 - Reviewed founder details may link to accepted Funding Insights cards and display bounded source excerpts. Unreviewed founder candidates are never public.
 

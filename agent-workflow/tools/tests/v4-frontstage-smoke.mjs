@@ -14,6 +14,9 @@ const screenshotDir = path.join(os.tmpdir(), "wavesight-v4-smoke");
 const entityIndex = JSON.parse(fs.readFileSync(path.join(siteDir, "data/data-center-v4/indexes/entities.json"), "utf8"));
 const smokeEntity = entityIndex.companies?.[0] || entityIndex.products?.[0] || entityIndex.people?.[0];
 const smokeFounder = entityIndex.people?.find((person) => person.fundingInsightIds?.length);
+const smokeInstitutionProfile = entityIndex.investors?.find((item) => item.investor_kind !== "individual" && item.public_profile);
+const smokeIndividualProfile = entityIndex.investors?.find((item) => item.investor_kind === "individual" && item.public_profile);
+const smokePersonProfile = entityIndex.people?.find((item) => item.public_profile);
 const smokeTaxonomy = entityIndex.taxonomyNodes?.[0];
 const cases = [
   ["data-center.html?view=events", "data-center.html?view=events"],
@@ -28,6 +31,9 @@ const cases = [
   ["data-center.html?view=relations", "data-center.html?view=relations"],
   [`data-center.html?view=index&detail=entity&id=${encodeURIComponent(smokeEntity.id)}`, "data-center.html?view=index"],
   [`data-center.html?view=index&detail=entity&id=${encodeURIComponent(smokeFounder.id)}`, "data-center.html?view=index"],
+  ...(smokeInstitutionProfile ? [[`data-center.html?view=index&detail=investor&id=${encodeURIComponent(smokeInstitutionProfile.id)}`, "data-center.html?view=index"]] : []),
+  ...(smokeIndividualProfile ? [[`data-center.html?view=index&detail=investor&id=${encodeURIComponent(smokeIndividualProfile.id)}`, "data-center.html?view=index"]] : []),
+  ...(smokePersonProfile ? [[`data-center.html?view=index&detail=entity&id=${encodeURIComponent(smokePersonProfile.id)}`, "data-center.html?view=index"]] : []),
   [`data-center.html?view=index&detail=taxonomy&id=${encodeURIComponent(smokeTaxonomy.id)}`, "data-center.html?view=index"],
   ["opportunity-map.html", "opportunity-map.html"],
   ["trend-radar.html", "trend-radar.html"],
@@ -90,6 +96,15 @@ async function main() {
           founderProfile = ["创始关联", "融资档案", "创始人证据"].every((token) => text.includes(token))
             && await page.locator('a[href^="funding-insights.html?id="]').count() > 0
             && await page.locator('a[target="_blank"][rel*="noopener"]').count() > 0;
+        }
+        let publicProfile = null;
+        const profileId = [smokeInstitutionProfile, smokeIndividualProfile, smokePersonProfile].find((item) => item && route.includes(`id=${encodeURIComponent(item.id)}`));
+        if (profileId) {
+          const text = await page.locator("main").innerText();
+          const isPerson = profileId.investor_kind === "individual" || profileId.sourceType === "person_candidate";
+          publicProfile = text.includes(isPerson ? "公开履历与背景" : "机构介绍与公开资料")
+            && text.includes("查看资料来源与摘录")
+            && await page.locator('.dc-public-profile a[target="_blank"][rel*="noopener"]').count() > 0;
         }
         const metrics = await page.evaluate(() => ({
           title: document.title,
@@ -197,6 +212,7 @@ async function main() {
           && metrics.reportSectionHeadAlignment?.ok !== false
           && metrics.eventMobileFilters?.ok !== false
           && founderProfile !== false
+          && publicProfile !== false
           && errors.length === 0;
         results.push({
           viewport: viewport.name,
@@ -205,6 +221,7 @@ async function main() {
           status: response?.status(),
           ...metrics,
           founderProfile,
+          publicProfile,
           errors,
           ok,
         });

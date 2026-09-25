@@ -792,6 +792,7 @@ export function buildFrontstageData(root = defaultRoot) {
   });
   const entityCollections = buildEntityCollections(entityHistory, eventsById, reviewDecisions);
   const viewpoints = buildViewpoints(root, entityHistory.profiles);
+  const publicEntityProfiles = readJson(path.join(root, "01-SiteV2/content/11-databases/public-entity-profiles-v1.json"), { institutions: {}, people: {} });
   const investmentInstitutionRegistry = readJson(
     path.join(root, "01-SiteV2/content/11-databases/investment-institutions-v1.json"),
     { meta: {}, institutions: [] },
@@ -800,9 +801,15 @@ export function buildFrontstageData(root = defaultRoot) {
   const translationRegistry = readPublicTranslationRegistry(root);
   const translatedCompanies = entityCollections.companies.map((item) => applyPublicZhTranslations(item, translationRegistry, { entityType: "company" }));
   const translatedProducts = entityCollections.products.map((item) => applyPublicZhTranslations(item, translationRegistry, { entityType: "product" }));
-  const translatedPeople = entityCollections.people.map((item) => applyPublicZhTranslations(item, translationRegistry, { entityType: "person" }));
+  const translatedPeople = entityCollections.people.map((item) => applyPublicZhTranslations({
+    ...item,
+    ...(publicEntityProfiles.people?.[item.id] ? { public_profile: publicEntityProfiles.people[item.id] } : {})
+  }, translationRegistry, { entityType: "person" }));
   const translatedInvestors = investors.map((item) => applyPublicZhTranslations(item, translationRegistry, { entityType: "institution" }));
-  const translatedEntityProfiles = entityHistory.profiles.map((item) => applyPublicZhTranslations(item, translationRegistry, { entityType: item.entityType || "entity" }));
+  const translatedEntityProfiles = entityHistory.profiles.map((item) => applyPublicZhTranslations({
+    ...item,
+    ...(publicEntityProfiles.people?.[item.id] ? { public_profile: publicEntityProfiles.people[item.id] } : {})
+  }, translationRegistry, { entityType: item.entityType || "entity" }));
   const translatedInstitutionRegistry = {
     ...investmentInstitutionRegistry,
     institutions: safeArray(investmentInstitutionRegistry.institutions)

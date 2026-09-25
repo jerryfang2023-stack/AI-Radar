@@ -160,7 +160,7 @@ function companiesEquivalent(left, right) {
   return shorter.length >= 5 && longer.includes(shorter);
 }
 
-export function buildInvestmentInstitutionRegistry(cards = [], entityIndex = {}, generatedAt = "") {
+export function buildInvestmentInstitutionRegistry(cards = [], entityIndex = {}, generatedAt = "", publicProfiles = {}) {
   const grouped = new Map();
   for (const card of cards) {
     for (const [scope, investors] of [
@@ -215,6 +215,7 @@ export function buildInvestmentInstitutionRegistry(cards = [], entityIndex = {},
     const chinaMarketActivities = currentActivities.filter((activity) => activity.china_market_match);
     const evidence = [...new Map(uniqueActivities.flatMap((activity) => activity.evidence)
       .map((item) => [`${item.source_id}|${item.quote_hash || item.quote}`, item])).values()];
+    const publicProfile = publicProfiles?.institutions?.[id] || publicProfiles?.people?.[id];
     return {
       id,
       name: identity.name,
@@ -246,6 +247,7 @@ export function buildInvestmentInstitutionRegistry(cards = [], entityIndex = {},
       ])).values()].sort((left, right) => left.name.localeCompare(right.name, "zh-CN")),
       activities: uniqueActivities,
       evidence,
+      ...(publicProfile ? { public_profile: publicProfile } : {}),
     };
   }).sort((left, right) => (
     right.current_round_count - left.current_round_count

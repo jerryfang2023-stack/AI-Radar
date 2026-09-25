@@ -2049,6 +2049,31 @@
 
   const fact = (label, value) => `<div class="dc-fact"><dt>${escapeHtml(label)}</dt><dd>${value === "" || value === null || value === undefined ? "未披露" : escapeHtml(Array.isArray(value) ? value.join("、") || "未披露" : value)}</dd></div>`;
 
+  function publicProfileSection(profile, kind) {
+    if (!profile) return "";
+    const sourceById = new Map((profile.sources || []).map((source) => [source.source_id, source]));
+    const sourceLink = (sourceId) => {
+      const source = sourceById.get(sourceId);
+      const href = safeExternalUrl(source?.source_url || "");
+      return href ? `<a class="dc-profile-source" href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.source_title || "来源")}</a>` : "";
+    };
+    const valueText = (value) => escapeHtml(Array.isArray(value) ? value.join("、") : value || "未披露");
+    const factRows = (profile.facts || []).map((item) => `<div class="dc-fact"><dt>${escapeHtml(item.label)}</dt><dd>${valueText(item.value)} ${sourceLink(item.source_id)}</dd></div>`).join("");
+    const milestones = (profile.milestones || []).map((item) => `<li><strong>${escapeHtml(item.date || "日期未披露")}</strong><span>${escapeHtml(item.description)}</span>${sourceLink(item.source_id)}</li>`).join("");
+    const achievements = (profile.track_record || []).map((item) => `<li><span>${escapeHtml(item.description)}</span>${sourceLink(item.source_id)}</li>`).join("");
+    const contacts = (profile.contacts || []).map((item) => {
+      const href = safeExternalUrl(item.url || "");
+      const value = item.kind === "email" && /^[^\s@]+@[^\s@]+\.[^\s@]+$/u.test(item.value) ? `<a href="mailto:${escapeHtml(item.value)}">${escapeHtml(item.value)}</a>` : href ? `<a href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.value)}</a>` : escapeHtml(item.value);
+      return `<div class="dc-fact"><dt>${escapeHtml(item.label)}</dt><dd>${value} ${sourceLink(item.source_id)}</dd></div>`;
+    }).join("");
+    const career = (profile.career || []).map((item) => `<li><strong>${escapeHtml(item.organization)} · ${escapeHtml(item.title)}</strong><span>${escapeHtml(item.period)}</span><span>${escapeHtml(item.description)}</span>${sourceLink(item.source_id)}</li>`).join("");
+    const roles = (profile.current_roles || []).map((item) => `<li><strong>${escapeHtml(item.title)}</strong><span>${escapeHtml(item.organization)}</span>${sourceLink(item.source_id)}</li>`).join("");
+    const education = (profile.education || []).map((item) => `<li><strong>${escapeHtml(item.institution)}</strong><span>${escapeHtml(item.qualification)}</span>${sourceLink(item.source_id)}</li>`).join("");
+    const sourceRows = (profile.sources || []).map((source) => `<li><a href="${escapeHtml(safeExternalUrl(source.source_url) || "#")}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.source_title)}</a><blockquote>${escapeHtml(source.quote)}</blockquote></li>`).join("");
+    const heading = kind === "person" ? "公开履历与背景" : kind === "unverified" ? "融资记录与身份核验" : "机构介绍与公开资料";
+    return `<section class="dc-related-section dc-public-profile"><h2>${heading}</h2><p class="dc-prose">${escapeHtml(profile.summary || "")}</p>${profile.coverage_note ? `<p class="dc-prose dc-profile-coverage-note">${escapeHtml(profile.coverage_note)}</p>` : ""}${profile.experience_summary ? `<p class="dc-prose">${escapeHtml(profile.experience_summary)}</p>` : ""}${roles ? `<h3>当前公开职务</h3><ul class="dc-entity-relations">${roles}</ul>` : ""}${career ? `<h3>职业经历</h3><ul class="dc-entity-relations">${career}</ul>` : ""}${education ? `<h3>教育背景</h3><ul class="dc-entity-relations">${education}</ul>` : ""}${factRows ? `<dl class="dc-facts">${factRows}</dl>` : ""}${milestones ? `<h3>发展节点</h3><ul class="dc-entity-relations">${milestones}</ul>` : ""}${achievements ? `<h3>公开成绩与案例</h3><ul class="dc-entity-relations">${achievements}</ul>` : ""}${contacts ? `<h3>公开联系方式</h3><dl class="dc-facts">${contacts}</dl>` : ""}${sourceRows ? `<details class="dc-profile-evidence"><summary>查看资料来源与摘录 · 更新于 ${escapeHtml(profile.last_verified_at || "未注明")}</summary><ul>${sourceRows}</ul></details>` : ""}</section>`;
+  }
+
   function breadcrumb(targetView, current) {
     return `<nav class="dc-breadcrumb" aria-label="面包屑"><a href="${escapeHtml(viewLink(targetView))}">数据中心 / ${escapeHtml(viewConfig[targetView].title)}</a> / ${escapeHtml(current)}</nav>`;
   }
@@ -2254,6 +2279,7 @@
           ${(payload.taxonomyNodes || []).length ? `<section class="dc-side-block"><h2>关联分类</h2><div class="dc-side-list">${payload.taxonomyNodes.map((node) => `<a href="${escapeHtml(detailLink("index", "taxonomy", node.id))}">${escapeHtml(node.name)}</a>`).join("")}</div></section>` : ""}
         </aside>
       </div>
+      ${publicProfileSection(entity.public_profile, entity.entityType === "person_candidate" ? "person" : "organization")}
       ${(payload.fdeDossiers || []).length ? `<section class="dc-related-section"><h2>FDE 实施</h2>${relatedRows(payload.fdeDossiers, "fde")}</section>` : ""}
       ${(payload.hardwareCatalog || []).length ? `<section class="dc-related-section"><h2>AI 硬件</h2>${relatedRows(payload.hardwareCatalog, "hardware")}</section>` : ""}
       ${founderEvidence.length ? `<section class="dc-related-section"><h2>创始人证据</h2><ul class="dc-entity-relations">${founderEvidence.join("")}</ul></section>` : ""}
@@ -2318,6 +2344,7 @@
           <section class="dc-side-block"><h2>数据边界</h2><p class="dc-prose">本档案由融资应用中的精确引文生成，不自动写入规范实体或事实关系。</p></section>
         </aside>
       </div>
+      ${publicProfileSection(institution.public_profile, institution.investor_kind === "individual" ? "person" : institution.investor_kind === "unverified_investor" ? "unverified" : "organization")}
       ${evidenceRows ? `<section class="dc-related-section"><h2>投资方证据</h2><ul class="dc-entity-relations">${evidenceRows}</ul></section>` : ""}
     `;
   }
