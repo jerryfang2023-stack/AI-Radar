@@ -29026,53 +29026,126 @@
         }
       ],
       "public_profile": {
-        "profile_type": "organization",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Peak XV Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "summary": "Peak XV Partners 是2023年 Sequoia Capital 全球业务重组后成立的独立机构，前身业务始于2006年的 Sequoia Capital India，后扩展至东南亚。官网自报管理资产超过100亿美元、累计投资450余家、组合企业在5个国家有36家IPO。该历史规模包含前身业务的累计口径，不能据此把Sequoia其他独立地区机构的投资业绩归入Peak XV。机构当前覆盖印度、亚太、美国等创新市场并跨阶段投资。",
+        "facts": [
+          {
+            "field": "history",
+            "label": "品牌沿革",
+            "value": "前身于2006年以Sequoia Capital India开始，后扩展至东南亚；2023年全球业务重组后成立Peak XV Partners独立机构。",
+            "source_id": "peakxv_about"
+          },
+          {
+            "field": "aum",
+            "label": "官网自报管理资产",
+            "value": "超过100亿美元（官网当前披露口径；未注明估值日期）",
+            "source_id": "peakxv_about"
+          },
+          {
+            "field": "portfolio_count",
+            "label": "官网自报累计投资",
+            "value": "450余家企业（含品牌前身累计口径）",
+            "source_id": "peakxv_about"
+          },
+          {
+            "field": "ipo_track_record",
+            "label": "官网自报IPO",
+            "value": "5个国家共36家IPO（含品牌前身累计口径）",
+            "source_id": "peakxv_about"
+          },
+          {
+            "field": "stages",
+            "label": "投资阶段",
+            "value": "跨投资阶段；官网未将其限定于单一轮次",
+            "source_id": "peakxv_about"
+          },
+          {
+            "field": "geographies",
+            "label": "投资地域",
+            "value": [
+              "印度",
+              "亚太",
+              "美国",
+              "其他全球创新中心"
+            ],
+            "source_id": "peakxv_about"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2006",
+            "description": "官网称其旅程始于Sequoia Capital India。",
+            "source_id": "peakxv_about"
+          },
+          {
+            "date": "2023",
+            "description": "Sequoia Capital全球业务重组，Peak XV Partners作为独立机构成立。",
+            "source_id": "peakxv_about"
+          }
+        ],
         "track_record": [
           {
-            "description": "融资来源记录：Ringg · A轮 · 2026-08-25 · 本轮领投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-355d8aee33bd32ed"
-          },
-          {
-            "description": "融资来源记录：Discovered Materials · 种子轮 · 2026-08-10 · 本轮参投 · $9 million。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-c3267e56ad969be2"
-          },
-          {
-            "description": "融资来源记录：Discovered Materials · 种子轮 · 2026-08-10 · 本轮参投 · $9 million。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-6ad648d48b556138"
+            "description": "Peak XV官网自报管理资产10B+美元、450+笔投资和5个国家36家IPO。官网同时说明这些数字跨越2006年开始的前身业务历史；这是管理人披露的累计组合数据，不是基金净回报或IRR，也不应覆盖其他独立Sequoia实体。",
+            "source_id": "peakxv_about"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "Peak XV Partners",
+            "url": "https://www.peakxv.com/",
+            "source_id": "peakxv_about"
+          },
+          {
+            "kind": "email",
+            "label": "一般联系",
+            "value": "contactus@peakxv.com",
+            "url": "https://www.peakxv.com/about-us",
+            "source_id": "peakxv_contact"
+          },
+          {
+            "kind": "email",
+            "label": "媒体联系",
+            "value": "pr@peakxv.com",
+            "url": "https://www.peakxv.com/about-us",
+            "source_id": "peakxv_contact"
+          },
+          {
+            "kind": "address",
+            "label": "官网列示办公室",
+            "value": "美国、印度、新加坡、阿联酋（页面未给出街道地址）",
+            "url": "https://www.peakxv.com/about-us",
+            "source_id": "peakxv_contact"
+          }
+        ],
         "sources": [
           {
-            "source_id": "FISRC-355d8aee33bd32ed",
-            "source_url": "https://techcrunch.com/2026/08/25/indias-ringg-gets-backing-from-peak-xv-as-it-pushes-voice-ai-past-the-phone-call/",
-            "source_title": "印度Ringg获Peak XV支持，推动语音AI超越电话通话",
-            "source_content_hash": "bd8d4c58629e67c5",
-            "quote": "The company said today it has landed $10 million from Peak XV Partners as an extension of its Series A.",
-            "quote_hash": "43ec6c02307a64e405126560d1fe2248eb9c318b190867c2afbfbd3ede7e60bb"
+            "source_id": "peakxv_about",
+            "source_url": "https://www.peakxv.com/about-us",
+            "source_title": "About Peak XV Partners | Our Story & Investment Approach",
+            "source_content_hash": "5464757b6bf99a39ef7950e6309e25812a82caf385c1fa47225cd09e5d49e16e",
+            "quote": "$10B+ assets under management, 450+ investments, 36 IPOs in 5 countries. We began our journey in 2006 as Sequoia Capital India, later expanding into Southeast Asia. In 2023, Sequoia Capital restructured its global business into independent entities, leading to the creation of Peak XV.",
+            "quote_hash": "d38946bbc464e453f204aef347bf49520e363b57b2652ae68097c5b324bb92bb"
           },
           {
-            "source_id": "FISRC-c3267e56ad969be2",
-            "source_url": "https://techcrunch.com/2026/08/10/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips/",
-            "source_title": "Discovered Materials 正玩 AI 打地鼠游戏，寻找更凉爽的芯片",
-            "source_content_hash": "c3f8c7225d49e92f",
-            "quote": "with investment from Peak XV Partners",
-            "quote_hash": "86555f8c52b345c108899bf4aee7acef5d74cf1473e4ca456d934e5410c68b4b"
+            "source_id": "peakxv_strategy",
+            "source_url": "https://www.peakxv.com/about-us",
+            "source_title": "About Peak XV Partners | Our Story & Investment Approach",
+            "source_content_hash": "5464757b6bf99a39ef7950e6309e25812a82caf385c1fa47225cd09e5d49e16e",
+            "quote": "Today, as Peak XV, we invest across India, APAC, the United States, and other global innovation hubs. We invest across stages and remain deeply committed through every phase of the journey",
+            "quote_hash": "edcea241b56ad0aebadf3347bd197959d96359466ee588d3d68a2e132b96fe15"
           },
           {
-            "source_id": "FISRC-6ad648d48b556138",
-            "source_url": "https://www.finsmes.com/2026/08/discovered-materials-raises-9m-in-seed-funding.html",
-            "source_title": "Discovered Materials Raises $9M in Seed Funding",
-            "source_content_hash": "bd47d3e50a1db886",
-            "quote": "with participation from Y Combinator and Peak XV Partners",
-            "quote_hash": "bfdb759d9e01c1cf272260d0da606631f85518f2a0fcaa9e0a95f0c2f7f544f0"
+            "source_id": "peakxv_contact",
+            "source_url": "https://www.peakxv.com/about-us",
+            "source_title": "About Peak XV Partners | Our Story & Investment Approach",
+            "source_content_hash": "5464757b6bf99a39ef7950e6309e25812a82caf385c1fa47225cd09e5d49e16e",
+            "quote": "For general inquiries, please email: contactus@peakxv.com",
+            "quote_hash": "67ccb303d7dacfc126f57f753798fc0534b52fe714db092b70ea868ceb16e9f8"
           }
         ],
+        "coverage_status": "researched",
+        "coverage_note": "沿革、规模、地域、一般及媒体邮箱来自Peak XV官网；规模统计为机构自报且包含前身业务历史，不归入其他Sequoia实体，不作为审计回报。",
         "last_verified_at": "2026-09-25"
       }
     },
@@ -31849,53 +31922,163 @@
         }
       ],
       "public_profile": {
-        "profile_type": "organization",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "华控基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "summary": "华控基金（T-Capital）是源自清华大学、成立于2007年的私募股权投资平台。官网称其管理基金规模超百亿元（未说明币种及统计基准），采用自上而下行业研究与组合投资，关注AI、具身智能、量子技术、可控核聚变、商业航天、低空经济和脑机接口。公开业绩与规模均为管理人自报口径；融资库中的“华控基金”名称不能单独确定实际参与交易的具体基金或法律主体。",
+        "facts": [
+          {
+            "field": "founded",
+            "label": "成立年份",
+            "value": "2007年",
+            "source_id": "tcapital_about"
+          },
+          {
+            "field": "origin",
+            "label": "机构渊源",
+            "value": "官网称源自清华大学的专业私募股权投资平台；不据此推断其法律隶属关系。",
+            "source_id": "tcapital_about"
+          },
+          {
+            "field": "aum",
+            "label": "官网披露管理基金规模",
+            "value": "超百亿元；官网未注明币种、统计日期及口径。",
+            "source_id": "tcapital_about"
+          },
+          {
+            "field": "experience",
+            "label": "官网自述投资经验",
+            "value": "19年私募股权投资经验（机构官网当前口径）。",
+            "source_id": "tcapital_about"
+          },
+          {
+            "field": "sectors",
+            "label": "官网列示重点领域",
+            "value": [
+              "人工智能",
+              "具身智能",
+              "量子技术",
+              "可控核聚变",
+              "商业航天",
+              "低空经济",
+              "脑机接口"
+            ],
+            "source_id": "tcapital_sectors"
+          },
+          {
+            "field": "investment_method",
+            "label": "投资方法",
+            "value": "自上而下分析行业周期，以组合投资布局高成长细分行业，专注投资细分行业龙头。",
+            "source_id": "tcapital_about"
+          },
+          {
+            "field": "leadership",
+            "label": "官网团队页列示核心领导",
+            "value": "张扬（创始合伙人、联席董事长）、华桦（合伙人、董事长）、董攀（创始合伙人）、李远烽（合伙人、副董事长）、金豫江（合伙人、CEO）。",
+            "source_id": "tcapital_team"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2007",
+            "description": "华控基金官网称机构于2007年成立。",
+            "source_id": "tcapital_about"
+          },
+          {
+            "date": "2017-11",
+            "description": "华控基金官网记载，其入围2017中国硬科技领域投资机构10强；该榜单由清科集团发布，按历史时点归档。",
+            "source_id": "tcapital_award"
+          }
+        ],
         "track_record": [
           {
-            "description": "融资来源记录：息壤开物 · 多轮融资 · 2026-09-23 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-41f074703465b30a"
+            "description": "华控基金官网于2026年9月报道，10个月内已投企业取得5个IPO，并列举信诺维登陆科创板。该统计与案例属于管理人新闻披露，未验证完整组合，也不代表基金净回报或IRR。",
+            "source_id": "tcapital_recent_exits"
           },
           {
-            "description": "融资来源记录：因克斯 · B轮 · 2026-09-15 · 老股东持续多轮追投 · 超3亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-d0c3dca85d845330"
-          },
-          {
-            "description": "融资来源记录：三启万物 · 战略融资 · 2026-07-02 · 本轮参投 · 10亿人民币。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-a4dbd49c64cb5834"
+            "description": "公司官网记录华控基金入围2017中国硬科技领域投资机构10强，属于当年行业榜单荣誉，不作为当前业绩指标。",
+            "source_id": "tcapital_award"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "华控基金 / T-Capital",
+            "url": "https://www.thcapital.com.cn/",
+            "source_id": "tcapital_about"
+          },
+          {
+            "kind": "email",
+            "label": "一般联系邮箱（官网公开；未说明为BP投递邮箱）",
+            "value": "contact@thcapital.com.cn",
+            "url": "https://en.thcapital.com.cn/contactus/",
+            "source_id": "tcapital_contact"
+          },
+          {
+            "kind": "phone",
+            "label": "官网公开电话",
+            "value": "+86-10-59761122",
+            "url": "https://en.thcapital.com.cn/contactus/",
+            "source_id": "tcapital_contact"
+          },
+          {
+            "kind": "address",
+            "label": "北京办公室",
+            "value": "18F, Building B, Ping An International Financial Center, 1-3 XinYuan Nan Lu, Chaoyang District, Beijing 100027, China",
+            "url": "https://en.thcapital.com.cn/contactus/",
+            "source_id": "tcapital_contact"
+          }
+        ],
         "sources": [
           {
-            "source_id": "FISRC-41f074703465b30a",
-            "source_url": "https://m.pedaily.cn/news/569562",
-            "source_title": "Physical AI创业公司息壤开物连获数亿元融资 AI 2026-09-23 16:38",
-            "source_content_hash": "5f3fdf302b68696b",
-            "quote": "由 敦鸿资产领投，华控基金、三花控股、银杏谷资本、泽然资本、本坚基金、上海天使会、标朴投资等知名机构跟投",
-            "quote_hash": "dd477a61ea1ba275edd33cd5c862253fc7e7e35e1a91cdb31079479ed163154e"
+            "source_id": "tcapital_about",
+            "source_url": "https://www.thcapital.com.cn/aboutus/",
+            "source_title": "关于我们｜华控基金",
+            "source_content_hash": "33c8de553af73ebbb366ba662ca375d17ff7230cfec0ee4d5848c1c160799c71",
+            "quote": "华控基金成立于2007年，是源自于清华大学的专业私募股权投资平台，拥有19年的私募股权投资经验，管理基金规模超百亿，致力于成为长期保持业绩一致的优秀私募股权投资机构。",
+            "quote_hash": "ec2e46547ee0078b81ade0f3fd3bfb9c4214aa0e076b6b8652fef327cac58830"
           },
           {
-            "source_id": "FISRC-d0c3dca85d845330",
-            "source_url": "https://news.pedaily.cn/202609/569015.shtml",
-            "source_title": "「因克斯ENCOS」完成3亿元B轮融资，深耕具身智能关节模组",
-            "source_content_hash": "e86bd6fffaf894b4",
-            "quote": "同时 复星创富、深创投、华控基金、锦秋基金、普华资本作为老股东持续多轮追投。",
-            "quote_hash": "0553874275a9d1405d1a0f8e1cc88e61b74f557cf7f1adcb9fac56dd7353f161"
+            "source_id": "tcapital_sectors",
+            "source_url": "https://www.thcapital.com.cn/aboutus/",
+            "source_title": "关于我们｜华控基金",
+            "source_content_hash": "33c8de553af73ebbb366ba662ca375d17ff7230cfec0ee4d5848c1c160799c71",
+            "quote": "基金专注投资细分行业龙头企业，重点关注：人工智能、具身智能、量子技术、可控核聚变、商业航天、低空经济、脑机接口等前沿科技领域。",
+            "quote_hash": "603a9066bc6bc2dca0f70185efb1f1cad6b35e9c16d08bb2004eee83dc38f478"
           },
           {
-            "source_id": "FISRC-a4dbd49c64cb5834",
-            "source_url": "https://news.pedaily.cn/202607/565779.shtml",
-            "source_title": "VAST完成超10亿元A3轮融资， 聚焦3D大模型及世界模型的算法及应用研究",
-            "source_content_hash": "3e7e05417d6a96b1",
-            "quote": "本轮融资由 吉利资本 等头部产业方， 四三九九、贪玩游戏、巨人网络 等游戏厂商， 某知名互联网战投，亦庄国投、基石资本、毅达资本、成都科创投、复星创富、华控基金、锡创投、慕华科创、策源资本 等一线投资机构及地方产业基金联合参投。",
-            "quote_hash": "7527f82237477a3a2ed0e5d30806255bdf065f05e531c3d003ce1bd49373de09"
+            "source_id": "tcapital_team",
+            "source_url": "https://www.thcapital.com.cn/team/",
+            "source_title": "团队介绍｜华控基金",
+            "source_content_hash": "ae1663ba3f1b4aa3eb8bcd4b3a3c7ededdeb133ee8b8c7ea064b06776bd38a7d",
+            "quote": "张扬创始合伙人 联席董事长 华桦合伙人 董事长 董攀创始合伙人 李远烽合伙人 副董事长 金豫江合伙人 CEO",
+            "quote_hash": "017eca9d3230ab171534828c361f6faab8357564876e317188549c75cd1db4bf"
+          },
+          {
+            "source_id": "tcapital_recent_exits",
+            "source_url": "https://www.thcapital.com.cn/",
+            "source_title": "华控基金官网主页",
+            "source_content_hash": "4205788520f238e2cabd674c8969fba644173e1c148f24779f7cd6cd095d05f8",
+            "quote": "10个月收获5个IPO！华控基金已投企业信诺维今日登陆科创板",
+            "quote_hash": "ba2f983742959e80be9c72025841b498201598b067610ca53b794938be763e87"
+          },
+          {
+            "source_id": "tcapital_contact",
+            "source_url": "https://en.thcapital.com.cn/contactus/",
+            "source_title": "Contact Us｜T-Capital",
+            "source_content_hash": "3ac3b38dd1116d051abd84876cc0c766553d8b389809bc13f4bbf5d300decc86",
+            "quote": "telephone: +86-10-59761122 e-mail: contact@thcapital.com.cn",
+            "quote_hash": "ae26512eb3f2f2320a4bdf44fac52f9a71e4bf85b5b1fa7c8464ad348841a1a9"
+          },
+          {
+            "source_id": "tcapital_award",
+            "source_url": "https://www.thcapital.com.cn/article/43.html",
+            "source_title": "华控基金入围2017中国硬科技领域投资机构10强",
+            "source_content_hash": "63c3e9e4a174231496acd0baf5832df84d0595bbb6b3cbccb05571e4743a9e08",
+            "quote": "华控基金入围2017中国硬科技领域投资机构10强",
+            "quote_hash": "ae12d66b5c3cb38e140f5523646ded4a8e8275d0fa34ef15692dc2fa995c89d1"
           }
         ],
+        "coverage_status": "researched",
+        "coverage_note": "机构背景、管理规模、投资方向、团队、行业荣誉、退出案例和联系信息来自华控基金官网。规模、投资案例统计为管理人披露，未将具体融资名称推定为某只基金或法人实体。",
         "last_verified_at": "2026-09-25"
       }
     },
@@ -38347,53 +38530,129 @@
         }
       ],
       "public_profile": {
-        "profile_type": "organization",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Intel Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "summary": "Intel Capital是Intel的企业风险投资机构，官网称其1991年创立。其投资面向早期AI与深科技企业，覆盖Cloud、Devices、Frontier和Silicon等计算领域。官网自报累计投资超过200亿美元、平均75%的交易由其领投，并有700余家投资组合企业完成IPO或并购；这些是机构累计披露口径，不代表单一基金的净回报。",
+        "facts": [
+          {
+            "field": "founded",
+            "label": "成立年份",
+            "value": "1991年（官网称为首家企业风险投资机构）",
+            "source_id": "intel_capital_about"
+          },
+          {
+            "field": "sectors",
+            "label": "官网列示投资领域",
+            "value": [
+              "Cloud",
+              "Devices",
+              "Frontier",
+              "Silicon",
+              "人工智能",
+              "深科技"
+            ],
+            "source_id": "intel_capital_about"
+          },
+          {
+            "field": "stage",
+            "label": "官网列示投资阶段",
+            "value": "早期投资为主",
+            "source_id": "intel_capital_about"
+          },
+          {
+            "field": "cumulative_investment",
+            "label": "官网自报累计投资金额",
+            "value": "超过200亿美元（未注明估值日期）",
+            "source_id": "intel_capital_about"
+          },
+          {
+            "field": "lead_rate",
+            "label": "官网自报领投比例",
+            "value": "平均75%的交易由Intel Capital领投",
+            "source_id": "intel_capital_about"
+          },
+          {
+            "field": "exits",
+            "label": "官网自报退出记录",
+            "value": "超过700家投资组合企业IPO或并购（累计口径）",
+            "source_id": "intel_capital_about"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "1991",
+            "description": "Intel Capital官网称其于1991年创立。",
+            "source_id": "intel_capital_about"
+          }
+        ],
         "track_record": [
           {
-            "description": "融资来源记录：Higgsfield · B轮 · 2026-08-17 · 本轮参投 · 4 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-b235ace767812393"
+            "description": "官网披露累计投资超过200亿美元、平均75%交易领投，并称投资组合企业完成700余家IPO或并购；这些是机构自报的累计数据，页面未披露基金级净回报或IRR。",
+            "source_id": "intel_capital_about"
           },
           {
-            "description": "融资来源记录：Prime Intellect · A轮 · 2026-07-08 · 本轮参投 · $130 million。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-fbda7a24ef3d8ef8"
-          },
-          {
-            "description": "融资来源记录：OXMIQ · A轮 · 2026-07-01 · 本轮参投（战略IP合作伙伴） · $35 million。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-2ac2183ceab4ddd7"
+            "description": "官网称其2025年为组合企业促成近1,000次Global 2000客户引荐，举办25场以上全球活动连接350余家独特客户，并配置250名Intel Embedded Experts及顾问。此为投资后组合支持活动数据，不是财务业绩。",
+            "source_id": "intel_capital_impact"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "Intel Capital",
+            "url": "https://www.intelcapital.com/",
+            "source_id": "intel_capital_about"
+          },
+          {
+            "kind": "contact_form",
+            "label": "创业者投资申请与商务咨询",
+            "value": "官网联系表单可选择“An entrepreneur looking for investors”并提交业务请求。",
+            "url": "https://www.intelcapital.com/contact/",
+            "source_id": "intel_capital_contact"
+          }
+        ],
         "sources": [
           {
-            "source_id": "FISRC-b235ace767812393",
-            "source_url": "https://siliconangle.com/2026/08/17/higgsfield-raises-400m-at-5-4-billion-valuation-to-scale-video-and-image-generation-platform/",
-            "source_title": "Higgsfield raises $400M at $5.4 billion valuation to scale video and image generation platform - SiliconANGLE",
-            "source_content_hash": "06ecfd55822882e3",
-            "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital and more than a half-dozen existing investors",
-            "quote_hash": "802b4e0ce5c62a28a2fc893e6f1263efeb759174a6c6e4d57e7a3f8a1aa7de8c"
+            "source_id": "intel_capital_about",
+            "source_url": "https://www.intelcapital.com/",
+            "source_title": "Intel Capital",
+            "source_content_hash": "e9ff19ffc8a1b5a4951e48a5f5c502c955a49ab26c0c8a481585d74bbac03941",
+            "quote": "Founded in 1991, as the first corporate venture capital firm, we’ve spent over three decades championing founders driving the next wave of innovation.",
+            "quote_hash": "b35c86070955974143389fc8a8500f9de661df7f2b3ad2899197fd032de44626"
           },
           {
-            "source_id": "FISRC-fbda7a24ef3d8ef8",
-            "source_url": "https://vtechxhub.com/insights/prime-intellect-raises-130m-series-power-enterprise-ai",
-            "source_title": "Prime Intellect Raises $130M for Enterprise AI Development 2026",
-            "source_content_hash": "56b4a47eeb530513",
-            "quote": "Radical Ventures led the charge, with Nvidia Ventures and Intel Capital jumping in.",
-            "quote_hash": "24bdc3b7a36b729c317ee6fed8d24a6aab20830cfcd7d9956ef47fab33d60d6b"
+            "source_id": "intel_capital_scale",
+            "source_url": "https://www.intelcapital.com/",
+            "source_title": "Intel Capital",
+            "source_content_hash": "e9ff19ffc8a1b5a4951e48a5f5c502c955a49ab26c0c8a481585d74bbac03941",
+            "quote": "With over $20B invested and 75% of deals led on average—resulting in more than 700 IPOs and mergers—we bring capital, conviction, and scale to the technologies powering the next era of compute.",
+            "quote_hash": "8f2335c3bbdc02ac6d3f6c74b072965b636b88ecbc4d9867f42bdfdac178a656"
           },
           {
-            "source_id": "FISRC-2ac2183ceab4ddd7",
-            "source_url": "https://oxmiq.ai/blog-oxmiq-raises-35m-series-a",
-            "source_title": "OXMIQ Raises $35 Million to Scale OxCore™ Architecture — OXMIQ",
-            "source_content_hash": "b11173439b5612a7",
-            "quote": "Intel Capital rounds out the group as a strategic IP partner, adding to OXMIQ's design and engineering depth.",
-            "quote_hash": "da54bd89e1be8487b6860476d59b89bb31508895b2f511f2c9110944d33f2d4c"
+            "source_id": "intel_capital_focus",
+            "source_url": "https://www.intelcapital.com/",
+            "source_title": "Intel Capital",
+            "source_content_hash": "e9ff19ffc8a1b5a4951e48a5f5c502c955a49ab26c0c8a481585d74bbac03941",
+            "quote": "We lead early-stage investments in emerging AI and deep tech category leaders redefining the future of Cloud, Devices, Frontier & Silicon.",
+            "quote_hash": "69482d8fc119b98998b3e28f739a8920b99dcebe45db711cf9544493dd6b7eda"
+          },
+          {
+            "source_id": "intel_capital_impact",
+            "source_url": "https://www.intelcapital.com/",
+            "source_title": "Intel Capital",
+            "source_content_hash": "e9ff19ffc8a1b5a4951e48a5f5c502c955a49ab26c0c8a481585d74bbac03941",
+            "quote": "in 2025 we delivered nearly 1,000 highly curated Global 2000 customer introductions, hosted more than 25 Intel Capital events worldwide that connected portfolio companies with over 350 unique customers",
+            "quote_hash": "77d991d4faa9f8c8c70e150235d4db41849b6dfcbf8c6183d7c3330170932549"
+          },
+          {
+            "source_id": "intel_capital_contact",
+            "source_url": "https://www.intelcapital.com/contact/",
+            "source_title": "Contact – Intel Capital",
+            "source_content_hash": "590941958ba28746e39befda25574984212a7a1f7f8a471d129d588fe2b73382",
+            "quote": "An entrepreneur looking for investors",
+            "quote_hash": "024caaeace6f7f1f2651d5257e90c4c8e986770dc72a59954463dde23b79b1aa"
           }
         ],
+        "coverage_status": "researched",
+        "coverage_note": "投资方向、累计规模和组合支持数据均来自Intel Capital官网；数字是机构自报的累计或年度活动披露，不代表基金净回报。投资申请渠道链接到官方联系表单。",
         "last_verified_at": "2026-09-25"
       }
     },

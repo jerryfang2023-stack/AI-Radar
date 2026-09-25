@@ -345,53 +345,129 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Intel Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Intel Capital是Intel的企业风险投资机构，官网称其1991年创立。其投资面向早期AI与深科技企业，覆盖Cloud、Devices、Frontier和Silicon等计算领域。官网自报累计投资超过200亿美元、平均75%的交易由其领投，并有700余家投资组合企业完成IPO或并购；这些是机构累计披露口径，不代表单一基金的净回报。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立年份",
+          "value": "1991年（官网称为首家企业风险投资机构）",
+          "source_id": "intel_capital_about"
+        },
+        {
+          "field": "sectors",
+          "label": "官网列示投资领域",
+          "value": [
+            "Cloud",
+            "Devices",
+            "Frontier",
+            "Silicon",
+            "人工智能",
+            "深科技"
+          ],
+          "source_id": "intel_capital_about"
+        },
+        {
+          "field": "stage",
+          "label": "官网列示投资阶段",
+          "value": "早期投资为主",
+          "source_id": "intel_capital_about"
+        },
+        {
+          "field": "cumulative_investment",
+          "label": "官网自报累计投资金额",
+          "value": "超过200亿美元（未注明估值日期）",
+          "source_id": "intel_capital_about"
+        },
+        {
+          "field": "lead_rate",
+          "label": "官网自报领投比例",
+          "value": "平均75%的交易由Intel Capital领投",
+          "source_id": "intel_capital_about"
+        },
+        {
+          "field": "exits",
+          "label": "官网自报退出记录",
+          "value": "超过700家投资组合企业IPO或并购（累计口径）",
+          "source_id": "intel_capital_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1991",
+          "description": "Intel Capital官网称其于1991年创立。",
+          "source_id": "intel_capital_about"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Higgsfield · B轮 · 2026-08-17 · 本轮参投 · 4 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b235ace767812393"
+          "description": "官网披露累计投资超过200亿美元、平均75%交易领投，并称投资组合企业完成700余家IPO或并购；这些是机构自报的累计数据，页面未披露基金级净回报或IRR。",
+          "source_id": "intel_capital_about"
         },
         {
-          "description": "融资来源记录：Prime Intellect · A轮 · 2026-07-08 · 本轮参投 · $130 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-fbda7a24ef3d8ef8"
-        },
-        {
-          "description": "融资来源记录：OXMIQ · A轮 · 2026-07-01 · 本轮参投（战略IP合作伙伴） · $35 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2ac2183ceab4ddd7"
+          "description": "官网称其2025年为组合企业促成近1,000次Global 2000客户引荐，举办25场以上全球活动连接350余家独特客户，并配置250名Intel Embedded Experts及顾问。此为投资后组合支持活动数据，不是财务业绩。",
+          "source_id": "intel_capital_impact"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Intel Capital",
+          "url": "https://www.intelcapital.com/",
+          "source_id": "intel_capital_about"
+        },
+        {
+          "kind": "contact_form",
+          "label": "创业者投资申请与商务咨询",
+          "value": "官网联系表单可选择“An entrepreneur looking for investors”并提交业务请求。",
+          "url": "https://www.intelcapital.com/contact/",
+          "source_id": "intel_capital_contact"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-b235ace767812393",
-          "source_url": "https://siliconangle.com/2026/08/17/higgsfield-raises-400m-at-5-4-billion-valuation-to-scale-video-and-image-generation-platform/",
-          "source_title": "Higgsfield raises $400M at $5.4 billion valuation to scale video and image generation platform - SiliconANGLE",
-          "source_content_hash": "06ecfd55822882e3",
-          "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital and more than a half-dozen existing investors",
-          "quote_hash": "802b4e0ce5c62a28a2fc893e6f1263efeb759174a6c6e4d57e7a3f8a1aa7de8c"
+          "source_id": "intel_capital_about",
+          "source_url": "https://www.intelcapital.com/",
+          "source_title": "Intel Capital",
+          "source_content_hash": "e9ff19ffc8a1b5a4951e48a5f5c502c955a49ab26c0c8a481585d74bbac03941",
+          "quote": "Founded in 1991, as the first corporate venture capital firm, we’ve spent over three decades championing founders driving the next wave of innovation.",
+          "quote_hash": "b35c86070955974143389fc8a8500f9de661df7f2b3ad2899197fd032de44626"
         },
         {
-          "source_id": "FISRC-fbda7a24ef3d8ef8",
-          "source_url": "https://vtechxhub.com/insights/prime-intellect-raises-130m-series-power-enterprise-ai",
-          "source_title": "Prime Intellect Raises $130M for Enterprise AI Development 2026",
-          "source_content_hash": "56b4a47eeb530513",
-          "quote": "Radical Ventures led the charge, with Nvidia Ventures and Intel Capital jumping in.",
-          "quote_hash": "24bdc3b7a36b729c317ee6fed8d24a6aab20830cfcd7d9956ef47fab33d60d6b"
+          "source_id": "intel_capital_scale",
+          "source_url": "https://www.intelcapital.com/",
+          "source_title": "Intel Capital",
+          "source_content_hash": "e9ff19ffc8a1b5a4951e48a5f5c502c955a49ab26c0c8a481585d74bbac03941",
+          "quote": "With over $20B invested and 75% of deals led on average—resulting in more than 700 IPOs and mergers—we bring capital, conviction, and scale to the technologies powering the next era of compute.",
+          "quote_hash": "8f2335c3bbdc02ac6d3f6c74b072965b636b88ecbc4d9867f42bdfdac178a656"
         },
         {
-          "source_id": "FISRC-2ac2183ceab4ddd7",
-          "source_url": "https://oxmiq.ai/blog-oxmiq-raises-35m-series-a",
-          "source_title": "OXMIQ Raises $35 Million to Scale OxCore™ Architecture — OXMIQ",
-          "source_content_hash": "b11173439b5612a7",
-          "quote": "Intel Capital rounds out the group as a strategic IP partner, adding to OXMIQ's design and engineering depth.",
-          "quote_hash": "da54bd89e1be8487b6860476d59b89bb31508895b2f511f2c9110944d33f2d4c"
+          "source_id": "intel_capital_focus",
+          "source_url": "https://www.intelcapital.com/",
+          "source_title": "Intel Capital",
+          "source_content_hash": "e9ff19ffc8a1b5a4951e48a5f5c502c955a49ab26c0c8a481585d74bbac03941",
+          "quote": "We lead early-stage investments in emerging AI and deep tech category leaders redefining the future of Cloud, Devices, Frontier & Silicon.",
+          "quote_hash": "69482d8fc119b98998b3e28f739a8920b99dcebe45db711cf9544493dd6b7eda"
+        },
+        {
+          "source_id": "intel_capital_impact",
+          "source_url": "https://www.intelcapital.com/",
+          "source_title": "Intel Capital",
+          "source_content_hash": "e9ff19ffc8a1b5a4951e48a5f5c502c955a49ab26c0c8a481585d74bbac03941",
+          "quote": "in 2025 we delivered nearly 1,000 highly curated Global 2000 customer introductions, hosted more than 25 Intel Capital events worldwide that connected portfolio companies with over 350 unique customers",
+          "quote_hash": "77d991d4faa9f8c8c70e150235d4db41849b6dfcbf8c6183d7c3330170932549"
+        },
+        {
+          "source_id": "intel_capital_contact",
+          "source_url": "https://www.intelcapital.com/contact/",
+          "source_title": "Contact – Intel Capital",
+          "source_content_hash": "590941958ba28746e39befda25574984212a7a1f7f8a471d129d588fe2b73382",
+          "quote": "An entrepreneur looking for investors",
+          "quote_hash": "024caaeace6f7f1f2651d5257e90c4c8e986770dc72a59954463dde23b79b1aa"
         }
       ],
+      "coverage_status": "researched",
+      "coverage_note": "投资方向、累计规模和组合支持数据均来自Intel Capital官网；数字是机构自报的累计或年度活动披露，不代表基金净回报。投资申请渠道链接到官方联系表单。",
       "last_verified_at": "2026-09-25"
     }
   }

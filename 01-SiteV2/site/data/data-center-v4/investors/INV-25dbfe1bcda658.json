@@ -417,53 +417,126 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Peak XV Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Peak XV Partners 是2023年 Sequoia Capital 全球业务重组后成立的独立机构，前身业务始于2006年的 Sequoia Capital India，后扩展至东南亚。官网自报管理资产超过100亿美元、累计投资450余家、组合企业在5个国家有36家IPO。该历史规模包含前身业务的累计口径，不能据此把Sequoia其他独立地区机构的投资业绩归入Peak XV。机构当前覆盖印度、亚太、美国等创新市场并跨阶段投资。",
+      "facts": [
+        {
+          "field": "history",
+          "label": "品牌沿革",
+          "value": "前身于2006年以Sequoia Capital India开始，后扩展至东南亚；2023年全球业务重组后成立Peak XV Partners独立机构。",
+          "source_id": "peakxv_about"
+        },
+        {
+          "field": "aum",
+          "label": "官网自报管理资产",
+          "value": "超过100亿美元（官网当前披露口径；未注明估值日期）",
+          "source_id": "peakxv_about"
+        },
+        {
+          "field": "portfolio_count",
+          "label": "官网自报累计投资",
+          "value": "450余家企业（含品牌前身累计口径）",
+          "source_id": "peakxv_about"
+        },
+        {
+          "field": "ipo_track_record",
+          "label": "官网自报IPO",
+          "value": "5个国家共36家IPO（含品牌前身累计口径）",
+          "source_id": "peakxv_about"
+        },
+        {
+          "field": "stages",
+          "label": "投资阶段",
+          "value": "跨投资阶段；官网未将其限定于单一轮次",
+          "source_id": "peakxv_about"
+        },
+        {
+          "field": "geographies",
+          "label": "投资地域",
+          "value": [
+            "印度",
+            "亚太",
+            "美国",
+            "其他全球创新中心"
+          ],
+          "source_id": "peakxv_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2006",
+          "description": "官网称其旅程始于Sequoia Capital India。",
+          "source_id": "peakxv_about"
+        },
+        {
+          "date": "2023",
+          "description": "Sequoia Capital全球业务重组，Peak XV Partners作为独立机构成立。",
+          "source_id": "peakxv_about"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Ringg · A轮 · 2026-08-25 · 本轮领投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-355d8aee33bd32ed"
-        },
-        {
-          "description": "融资来源记录：Discovered Materials · 种子轮 · 2026-08-10 · 本轮参投 · $9 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c3267e56ad969be2"
-        },
-        {
-          "description": "融资来源记录：Discovered Materials · 种子轮 · 2026-08-10 · 本轮参投 · $9 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-6ad648d48b556138"
+          "description": "Peak XV官网自报管理资产10B+美元、450+笔投资和5个国家36家IPO。官网同时说明这些数字跨越2006年开始的前身业务历史；这是管理人披露的累计组合数据，不是基金净回报或IRR，也不应覆盖其他独立Sequoia实体。",
+          "source_id": "peakxv_about"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Peak XV Partners",
+          "url": "https://www.peakxv.com/",
+          "source_id": "peakxv_about"
+        },
+        {
+          "kind": "email",
+          "label": "一般联系",
+          "value": "contactus@peakxv.com",
+          "url": "https://www.peakxv.com/about-us",
+          "source_id": "peakxv_contact"
+        },
+        {
+          "kind": "email",
+          "label": "媒体联系",
+          "value": "pr@peakxv.com",
+          "url": "https://www.peakxv.com/about-us",
+          "source_id": "peakxv_contact"
+        },
+        {
+          "kind": "address",
+          "label": "官网列示办公室",
+          "value": "美国、印度、新加坡、阿联酋（页面未给出街道地址）",
+          "url": "https://www.peakxv.com/about-us",
+          "source_id": "peakxv_contact"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-355d8aee33bd32ed",
-          "source_url": "https://techcrunch.com/2026/08/25/indias-ringg-gets-backing-from-peak-xv-as-it-pushes-voice-ai-past-the-phone-call/",
-          "source_title": "印度Ringg获Peak XV支持，推动语音AI超越电话通话",
-          "source_content_hash": "bd8d4c58629e67c5",
-          "quote": "The company said today it has landed $10 million from Peak XV Partners as an extension of its Series A.",
-          "quote_hash": "43ec6c02307a64e405126560d1fe2248eb9c318b190867c2afbfbd3ede7e60bb"
+          "source_id": "peakxv_about",
+          "source_url": "https://www.peakxv.com/about-us",
+          "source_title": "About Peak XV Partners | Our Story & Investment Approach",
+          "source_content_hash": "5464757b6bf99a39ef7950e6309e25812a82caf385c1fa47225cd09e5d49e16e",
+          "quote": "$10B+ assets under management, 450+ investments, 36 IPOs in 5 countries. We began our journey in 2006 as Sequoia Capital India, later expanding into Southeast Asia. In 2023, Sequoia Capital restructured its global business into independent entities, leading to the creation of Peak XV.",
+          "quote_hash": "d38946bbc464e453f204aef347bf49520e363b57b2652ae68097c5b324bb92bb"
         },
         {
-          "source_id": "FISRC-c3267e56ad969be2",
-          "source_url": "https://techcrunch.com/2026/08/10/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips/",
-          "source_title": "Discovered Materials 正玩 AI 打地鼠游戏，寻找更凉爽的芯片",
-          "source_content_hash": "c3f8c7225d49e92f",
-          "quote": "with investment from Peak XV Partners",
-          "quote_hash": "86555f8c52b345c108899bf4aee7acef5d74cf1473e4ca456d934e5410c68b4b"
+          "source_id": "peakxv_strategy",
+          "source_url": "https://www.peakxv.com/about-us",
+          "source_title": "About Peak XV Partners | Our Story & Investment Approach",
+          "source_content_hash": "5464757b6bf99a39ef7950e6309e25812a82caf385c1fa47225cd09e5d49e16e",
+          "quote": "Today, as Peak XV, we invest across India, APAC, the United States, and other global innovation hubs. We invest across stages and remain deeply committed through every phase of the journey",
+          "quote_hash": "edcea241b56ad0aebadf3347bd197959d96359466ee588d3d68a2e132b96fe15"
         },
         {
-          "source_id": "FISRC-6ad648d48b556138",
-          "source_url": "https://www.finsmes.com/2026/08/discovered-materials-raises-9m-in-seed-funding.html",
-          "source_title": "Discovered Materials Raises $9M in Seed Funding",
-          "source_content_hash": "bd47d3e50a1db886",
-          "quote": "with participation from Y Combinator and Peak XV Partners",
-          "quote_hash": "bfdb759d9e01c1cf272260d0da606631f85518f2a0fcaa9e0a95f0c2f7f544f0"
+          "source_id": "peakxv_contact",
+          "source_url": "https://www.peakxv.com/about-us",
+          "source_title": "About Peak XV Partners | Our Story & Investment Approach",
+          "source_content_hash": "5464757b6bf99a39ef7950e6309e25812a82caf385c1fa47225cd09e5d49e16e",
+          "quote": "For general inquiries, please email: contactus@peakxv.com",
+          "quote_hash": "67ccb303d7dacfc126f57f753798fc0534b52fe714db092b70ea868ceb16e9f8"
         }
       ],
+      "coverage_status": "researched",
+      "coverage_note": "沿革、规模、地域、一般及媒体邮箱来自Peak XV官网；规模统计为机构自报且包含前身业务历史，不归入其他Sequoia实体，不作为审计回报。",
       "last_verified_at": "2026-09-25"
     }
   }
