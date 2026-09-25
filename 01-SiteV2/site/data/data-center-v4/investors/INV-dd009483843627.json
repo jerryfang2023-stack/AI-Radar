@@ -391,51 +391,113 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "coverage_status": "activity_only",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "毅达资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "summary": "毅达资本由江苏高科技投资集团内部混合所有制改革组建，是以创业投资为主业的综合性投资机构，总部位于南京。官网当前称管理资产规模超过千亿元，基金产品覆盖天使期至成熟期，业务横跨健康产业、清洁技术、新材料、先进制造、消费服务、文化产业和 TMT。官网设有创业项目 BP、招聘和 LP 联络渠道。",
+      "facts": [
         {
-          "description": "融资来源记录：紫创智械 · 其他融资 · 2026-09-08 · 本轮参投 · 数千万。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c61be84890c6eecc"
+          "field": "founded",
+          "label": "机构设立",
+          "value": "2014 年由江苏高科技投资集团内部混合所有制改革组建。",
+          "source_id": "addor_report"
         },
         {
-          "description": "融资来源记录：三启万物 · 战略融资 · 2026-07-02 · 本轮参投 · 10亿人民币。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-a4dbd49c64cb5834"
+          "field": "assets_under_management",
+          "label": "管理资产规模",
+          "value": "超过 1000 亿元（官网当前自述）；官方 2022 年报告披露截至 2022 年 6 月累计管理规模 1218 亿元。两个数字口径和时点不同。",
+          "source_id": "addor_home"
         },
         {
-          "description": "融资来源记录：极佳视界 · B2轮 · 2026-06-15 · B1轮投资方 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-ce47b663ca256878"
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": [
+            "天使期",
+            "初创期",
+            "成长期",
+            "成熟期"
+          ],
+          "source_id": "addor_report"
+        },
+        {
+          "field": "focus_sectors",
+          "label": "投资领域",
+          "value": [
+            "清洁技术",
+            "健康产业",
+            "新材料",
+            "先进制造",
+            "消费服务",
+            "文化产业",
+            "TMT"
+          ],
+          "source_id": "addor_report"
+        },
+        {
+          "field": "historical_portfolio",
+          "label": "历史投资与上市项目",
+          "value": "截至 2022 年 6 月累计投资 1135 笔，助推 223 家企业登陆资本市场（官方历史报告口径）。",
+          "source_id": "addor_report"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2014",
+          "description": "由江苏高科技投资集团内部混合所有制改革组建。",
+          "source_id": "addor_report"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "官方 2022 年 ESG 报告称，截至 2022 年 6 月累计投资 1135 笔、助推 223 家企业登陆资本市场；为历史累计统计，不作为当前新增业绩。官网列出的组合案例包含多家上市企业。",
+          "source_id": "addor_report"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "毅达资本官方网站",
+          "value": "ADDOR CAPITAL",
+          "url": "https://www.addorcapital.com/",
+          "source_id": "addor_home"
+        },
+        {
+          "kind": "application",
+          "label": "商业计划书投递",
+          "value": "bp@addorcapital.com",
+          "url": "https://www.addorcapital.com/",
+          "source_id": "addor_home"
+        },
+        {
+          "kind": "email",
+          "label": "有限合伙人/投资者联系",
+          "value": "lp@addorcapital.com",
+          "url": "https://www.addorcapital.com/",
+          "source_id": "addor_home"
+        },
+        {
+          "kind": "email",
+          "label": "人才招聘联系",
+          "value": "hr@addorcapital.com",
+          "url": "https://www.addorcapital.com/",
+          "source_id": "addor_home"
+        }
+      ],
+      "coverage_status": "researched",
+      "coverage_note": "机构沿革、投资阶段、管理规模和联系邮箱来自毅达资本官网及官方 ESG 报告。1218 亿元、1135 笔和 223 家上市企业均按 2022 年 6 月报告日期标注为历史统计；官网当前 AUM 仅作机构当前自述。",
       "sources": [
         {
-          "source_id": "FISRC-c61be84890c6eecc",
-          "source_url": "https://news.pedaily.cn/202609/568683.shtml",
-          "source_title": "紫创智械完成数千万融资，专注于工程机械行业模型应用落地",
-          "source_content_hash": "9f86880decb8bf81",
-          "quote": "投资方包括 毅达资本及头部产业方 等。",
-          "quote_hash": "cbae709c15d782a29fb577cb245ed10ce4a581d63e1dafd826b6deca093823f5"
+          "source_id": "addor_home",
+          "source_url": "https://www.addorcapital.com/",
+          "source_title": "首页 - ADDOR CAPITAL 毅达资本",
+          "source_content_hash": "76105a510cf2a6d210a3ed293c42ad6611baab125d36376a2149bb9fa9892eca",
+          "quote": "毅达资本是一家以创业投资为主业的综合性投资机构，总部位于南京，目前管理资产规模超千亿元。BP 通道 bp@addorcapital.com；投资者通道 lp@addorcapital.com；加入我们 hr@addorcapital.com。",
+          "quote_hash": "951ca0b1a57ac913e8dd7c717dad80150fc8d882561026b1a7370a935f574898"
         },
         {
-          "source_id": "FISRC-a4dbd49c64cb5834",
-          "source_url": "https://news.pedaily.cn/202607/565779.shtml",
-          "source_title": "VAST完成超10亿元A3轮融资， 聚焦3D大模型及世界模型的算法及应用研究",
-          "source_content_hash": "3e7e05417d6a96b1",
-          "quote": "本轮融资由 吉利资本 等头部产业方， 四三九九、贪玩游戏、巨人网络 等游戏厂商， 某知名互联网战投，亦庄国投、基石资本、毅达资本、成都科创投、复星创富、华控基金、锡创投、慕华科创、策源资本 等一线投资机构及地方产业基金联合参投。",
-          "quote_hash": "7527f82237477a3a2ed0e5d30806255bdf065f05e531c3d003ce1bd49373de09"
-        },
-        {
-          "source_id": "FISRC-ce47b663ca256878",
-          "source_url": "https://news.pedaily.cn/202606/565201.shtml",
-          "source_title": "首发| 极佳视界三个月融资35亿，投资人开抢物理世界OpenAI",
-          "source_content_hash": "a652909321da946b",
-          "quote": "由某知名科技巨头、多个顶级国家队基金、伊利集团CVC健瓴资本、普华资本、华福投资、毅达资本、新型工业化基金、盛景嘉成、图灵资管、凯洋资本、武汉高科、贵阳金投、山东产投等顶尖国资平台、产业资本、双币财务机构共同投资",
-          "quote_hash": "966c8228f0c6115952a668797f27a44d85362cb757737cd818d741f386575f4c"
+          "source_id": "addor_report",
+          "source_url": "https://www.addorcapital.com/static/upload-addor/2025-02-14/1739527456997.pdf",
+          "source_title": "毅达资本 2020–2021 年度 ESG 投资报告及机构介绍",
+          "source_content_hash": "220d1e41f83ac9bc",
+          "quote": "毅达资本由江苏高科技投资集团内部混合所有制改革组建，2014 年正式成立。基金产品覆盖天使、初创、成长、成熟期，投资领域包括清洁技术、健康、新材料、先进制造、消费服务、文化产业和 TMT。报告数据截至 2022 年 6 月：管理团队累计管理规模 1218 亿元、累计投资项目 1135 笔、助推 223 家企业登陆资本市场。",
+          "quote_hash": "220d1e41f83ac9bc9385cf8c9def733f87af3093e6506609b1021ec1d30d1262"
         }
       ],
       "last_verified_at": "2026-09-25"

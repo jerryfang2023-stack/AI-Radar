@@ -479,51 +479,59 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "coverage_status": "activity_only",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "中芯聚源 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "中芯聚源（China Fortune-Tech Capital）是由国内集成电路产业龙头企业与资深投资团队发起设立的私募基金管理机构。机构专注半导体产业链投资，覆盖材料、芯片设计、设备、IP 和相关服务，并为被投企业提供增值服务及跨境并购整合支持。官网未在所查介绍页公开基金规模或创业项目联系渠道。",
+      "facts": [
+        {
+          "field": "organization_structure",
+          "label": "发起背景",
+          "value": "由集成电路产业龙头企业和资深投资团队发起，联合其他股东设立。",
+          "source_id": "cft_about"
+        },
+        {
+          "field": "focus_sectors",
+          "label": "投资领域",
+          "value": [
+            "半导体材料",
+            "芯片设计",
+            "半导体装备",
+            "IP",
+            "集成电路产业服务"
+          ],
+          "source_id": "cft_about"
+        },
+        {
+          "field": "value_added_services",
+          "label": "投后与跨境服务",
+          "value": "为被投资企业提供增值服务，并利用渠道资源开展国际市场技术筛选、跨境并购与整合。",
+          "source_id": "cft_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：奕行智能 · 轮次未披露 · 2026-09-18 · 本轮参投 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-ed0092859381f876"
-        },
-        {
-          "description": "融资来源记录：设序科技 · B轮 · 2026-09-17 · 产业资本 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-887f1542c828b426"
-        },
-        {
-          "description": "融资来源记录：极佳视界 · B2轮 · 2026-06-15 · Pre-B轮投资方 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-ce47b663ca256878"
+          "description": "官网将自身定位于集成电路产业链投资和生态建设，未在机构介绍页面披露完整组合或基金回报；本档案不把其他产业园平台披露的基金数据归属于中芯聚源。",
+          "source_id": "cft_about"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "中芯聚源官方网站",
+          "value": "China Fortune-Tech Capital",
+          "url": "https://cftcapital.com/about.aspx",
+          "source_id": "cft_about"
+        }
+      ],
+      "coverage_status": "researched",
+      "coverage_note": "机构法律名称、发起背景、赛道、增值服务和跨境投资方向均来自中芯聚源官网企业介绍。未检索到该页面发布的 BP 邮箱、基金规模或完整组合数据，因此仅提供官网入口。",
       "sources": [
         {
-          "source_id": "FISRC-ed0092859381f876",
-          "source_url": "https://news.pedaily.cn/202609/569236.shtml",
-          "source_title": "首发| 奕行智能完成新一轮20亿元融资，投后估值近150亿",
-          "source_content_hash": "299a9be6f63ac708",
-          "quote": "汇聚了 华泰创新、钟鼎资本、中芯聚源、九安医疗、仁爱资本、通富微电子、赛意产业基金、和利资本、芯鑫租赁、恒旭资本、尚颀资本、建广湛卢、容亿资本 等超20家知名投资机构",
-          "quote_hash": "b0ef77952d03ea1c5566ead5cfe16d66884042d81d7ffc1aad3f6f8c428adef1"
-        },
-        {
-          "source_id": "FISRC-887f1542c828b426",
-          "source_url": "https://news.pedaily.cn/202609/569177.shtml",
-          "source_title": "设序科技一连融资6轮，要做「工业界Anthropic」",
-          "source_content_hash": "7ba0fa9425a10e3a",
-          "quote": "也有 字节跳动、联想创投、中芯聚源 等产业资本",
-          "quote_hash": "45ca26aaa775fa6d9a569d2a449d8992a071e1de36df25698855abfd66d19d82"
-        },
-        {
-          "source_id": "FISRC-ce47b663ca256878",
-          "source_url": "https://news.pedaily.cn/202606/565201.shtml",
-          "source_title": "首发| 极佳视界三个月融资35亿，投资人开抢物理世界OpenAI",
-          "source_content_hash": "a652909321da946b",
-          "quote": "先是在今年3月初完成近10亿元Pre-B轮融资，投资方包括中芯聚源、上海半导体产投基金、临芯资本、星源资本、万林国际等顶尖芯片和汽车产业资本",
-          "quote_hash": "3b98336b325782885e9f0d273738cd088f0878a39496f13362ebfc0958287cd7"
+          "source_id": "cft_about",
+          "source_url": "https://cftcapital.com/about.aspx",
+          "source_title": "企业介绍 - 中芯聚源",
+          "source_content_hash": "160431cc8d11e08e",
+          "quote": "中芯聚源私募基金管理（上海）有限公司由国内集成电路产业龙头企业和资深投资团队发起设立。机构投资集成电路材料、设计、装备、IP 和服务等环节，并为企业提供增值服务，利用渠道优势为国际市场筛选团队和技术、提供跨境并购与整合服务。",
+          "quote_hash": "160431cc8d11e08e06772703fe9681c33161b1ad072dd86c060cab5a199dcdb6"
         }
       ],
       "last_verified_at": "2026-09-25"

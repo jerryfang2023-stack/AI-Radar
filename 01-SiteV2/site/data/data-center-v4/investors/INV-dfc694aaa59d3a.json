@@ -299,51 +299,101 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "光合创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "summary": "光合创投（GUANGHE VC）是一家专注中国市场、投资互联网消费和科技领域早期创业公司的风险投资机构。官网强调与创业者长期同行，并公开团队成员的互联网创业与运营背景、投资案例以及商业计划书邮箱。",
+      "facts": [
         {
-          "description": "融资来源记录：墨奇智能 · 天使轮 · 2026-07-09 · 本轮参投 · 10 亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-bea9d0be613bc1cd"
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": [
+            "早期"
+          ],
+          "source_id": "gh_home"
         },
         {
-          "description": "融资来源记录：天机 · 多轮融资 · 2026-05-25 · 本轮参投 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3e04e9bd8fc1ab06"
+          "field": "focus_sectors",
+          "label": "投资方向",
+          "value": [
+            "互联网",
+            "消费",
+            "科技"
+          ],
+          "source_id": "gh_home"
         },
         {
-          "description": "融资来源记录：生数科技 · B轮 · 2026-04-10 · 本轮参投 · 20亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-fd865802af815ab3"
+          "field": "investment_geography",
+          "label": "投资市场",
+          "value": "中国市场",
+          "source_id": "gh_home"
+        },
+        {
+          "field": "headquarters",
+          "label": "办公地址",
+          "value": "上海市万源路 2158 号泓毅大厦 906 室",
+          "source_id": "gh_home"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2020-01",
+          "description": "官网新闻记载光合创投于 2020 年入驻上海虹桥基金小镇。",
+          "source_id": "gh_home"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "官网投资组合列有拼便宜、九曳供应链、花加、垂衣、一家民宿等互联网、消费和科技企业案例；此为公开展示样本。",
+          "source_id": "gh_portfolio"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "光合创投官方网站",
+          "value": "GUANGHE VC",
+          "url": "https://www.ghvc.cn/",
+          "source_id": "gh_home"
+        },
+        {
+          "kind": "application",
+          "label": "商业计划书投递",
+          "value": "bp@ghvc.cn",
+          "url": "https://www.ghvc.cn/portfolio",
+          "source_id": "gh_portfolio"
+        },
+        {
+          "kind": "address",
+          "label": "上海办公室",
+          "value": "上海市万源路 2158 号泓毅大厦 906 室",
+          "url": "https://www.ghvc.cn/",
+          "source_id": "gh_home"
+        }
+      ],
+      "coverage_status": "researched",
+      "coverage_note": "机构投资阶段、赛道、办公地址和组合案例来自光合创投官网；组合企业为页面可见的展示样本。官网未披露当前基金规模与累计项目数量，故不补写第三方估算。",
       "sources": [
         {
-          "source_id": "FISRC-bea9d0be613bc1cd",
-          "source_url": "https://finance.sina.com.cn/roll/2026-07-09/doc-inihfazc5336299.shtml?froms=ggmp",
-          "source_title": "具身智能企业墨奇智能完成10亿元天使轮融资 - 新浪财经",
-          "source_content_hash": "311224a4dfb089df",
-          "quote": "蓝驰创投、君联资本、华业天成、高榕资本、中科创星、源码资本、光合创投、柏睿资本、58 产业基金等多家专业投资机构共同参与",
-          "quote_hash": "ec3f3255ca1ad3b762f10c8464560a301ec0efedbd9e312f027cac2f0749684b"
+          "source_id": "gh_home",
+          "source_url": "https://www.ghvc.cn/",
+          "source_title": "首页 | 光合创投 GUANGHE VC",
+          "source_content_hash": "aaec59f7eac0aab0f47e5b748573d36e03ebbc73fa644b1a16dbb95c1bd32b97",
+          "quote": "光合创投专注互联网消费和科技领域早期初创企业投资。官网列出上海办公室地址为上海市万源路 2158 号泓毅大厦 906 室，并提示优秀创业项目可联系机构。",
+          "quote_hash": "43d8346aabd73e68bd0aaf59991f5c0fa001bfbd3319341f2a5aa962282169b3"
         },
         {
-          "source_id": "FISRC-3e04e9bd8fc1ab06",
-          "source_url": "https://news.pedaily.cn/202605/564328.shtml",
-          "source_title": "天机智能完成10亿元融资，投后估值近百亿",
-          "source_content_hash": "18ebeb9db5460eb7",
-          "quote": "腾讯、高榕创投、光合创投、纪源资本 等联合跟投",
-          "quote_hash": "b66c51f927e3b697d5520929115dd73e1dc0a691e559c2552e7f6a867c0c05fc"
+          "source_id": "gh_portfolio",
+          "source_url": "https://www.ghvc.cn/portfolio",
+          "source_title": "投资业务 | 光合创投",
+          "source_content_hash": "aaec59f7eac0aab0f47e5b748573d36e03ebbc73fa644b1a16dbb95c1bd32b97",
+          "quote": "光合创投官网投资组合页公开展示拼便宜、九曳供应链、花加、垂衣、一家民宿等企业，并提供提交 BP 入口及邮箱 bp@ghvc.cn。",
+          "quote_hash": "8e4196ba6e9dd05c646e8debfa53991b5e003f221bb8350b824be88e0a209943"
         },
         {
-          "source_id": "FISRC-fd865802af815ab3",
-          "source_url": "https://news.pedaily.cn/202604/562614.shtml",
-          "source_title": "生数科技完成近20亿元B轮融资，阿里云领投",
-          "source_content_hash": "a281cc701a9028fb",
-          "quote": "中网投、九安海棠、好未来、光合创投等投资人战略投资",
-          "quote_hash": "71a2fddcd5c92c28433ef41fe27846beb520a6982c85bc3dd400328d55e096e4"
+          "source_id": "gh_team",
+          "source_url": "https://www.ghvc.cn/team",
+          "source_title": "团队介绍 | 光合创投",
+          "source_content_hash": "aaec59f7eac0aab0f47e5b748573d36e03ebbc73fa644b1a16dbb95c1bd32b97",
+          "quote": "光合创投核心团队来自互联网行业，具有创业经历及行业资源；官网介绍合伙人投资消费科技、互联网领域，并列出代表案例。",
+          "quote_hash": "c99d83c75bd64d0b6a6924c2f8bdeb9e694220a6d694d15e234e001344f5ef14"
         }
       ],
       "last_verified_at": "2026-09-25"
