@@ -313,54 +313,76 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "阿里巴巴 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "阿里巴巴集团官网记载公司成立于 1999 年，当前业务聚焦 AI、云计算与电商。官网介绍集团向消费者和企业提供从应用到算力基础设施的 AI 能力，并以 Qwen 系列模型支持多项服务。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立年份",
+          "value": "1999 年",
+          "source_id": "alibaba_group_profile"
+        },
+        {
+          "field": "business_focus",
+          "label": "当前业务重点",
+          "value": [
+            "AI",
+            "云计算",
+            "电商"
+          ],
+          "source_id": "alibaba_group_profile"
+        },
+        {
+          "field": "mission",
+          "label": "使命",
+          "value": "让天下没有难做的生意（英文官网表述：To make it easy to do business anywhere）",
+          "source_id": "alibaba_group_profile"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1999",
+          "description": "由 18 位创始团队成员在马云带领下成立。",
+          "source_id": "alibaba_group_profile"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：小鹏机器人业务 · 其他融资 · 2026-08-24 · 本轮参投 · 超9亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2ec9a5e83ce18f75"
-        },
-        {
-          "description": "融资来源记录：爱诗科技 · C轮 · 2026-07-14 · 本轮领投 · 29.8亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-9476e3eff9c1e8fe"
-        },
-        {
-          "description": "融资来源记录：墨奇智能 · 天使轮 · 2026-07-09 · 本轮联合领投 · 10 亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-bea9d0be613bc1cd"
+          "description": "阿里巴巴官网在 2026 年 2 月公司动态中称，面向消费者的 Qwen 在各平台月活跃用户超过 3 亿；这是公司官网披露的产品指标，不是独立审计数据。",
+          "source_id": "alibaba_group_qwen"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "阿里巴巴集团官方网站",
+          "value": "Alibaba Group",
+          "url": "https://home.alibabagroup.com/en-US/about-alibaba",
+          "source_id": "alibaba_group_profile"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-2ec9a5e83ce18f75",
-          "source_url": "https://www.xiaopeng.com/news/company_news/5585.html",
-          "source_title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
-          "source_content_hash": "b8e4f0b869df00ee",
-          "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持",
-          "quote_hash": "0c0e04917436353a249175e0fe3954233525524468f8b84521713be86611d620"
+          "source_id": "alibaba_group_profile",
+          "source_url": "https://home.alibabagroup.com/en-US/about-alibaba",
+          "source_title": "Introduction to Alibaba Group — Alibaba Group",
+          "source_content_hash": "fb89be7a24fdf3c994c273285d7ab288e86dccb27d6b6f6aa0bb265ff5d9d2a4",
+          "quote": "Alibaba Group was established in 1999 by 18 people led by Jack Ma, a former English teacher from Hangzhou, China. Now, Alibaba Group is a global technology company focused on AI + Cloud and commerce. We empower consumers and enterprises with our full-stack AI capabilities and services, from applications to compute infrastructure.",
+          "quote_hash": "629dc2340a08654e3ed92a5fa2542667c80569909a05d27d04ba2bd38083a40e"
         },
         {
-          "source_id": "FISRC-9476e3eff9c1e8fe",
-          "source_url": "https://news.pedaily.cn/202607/566238.shtml",
-          "source_title": "爱诗科技完成29.8亿元C轮融资，专注AI视频生成大模型",
-          "source_content_hash": "31557c2904ef4cb8",
-          "quote": "C+轮由 阿里巴巴 领投",
-          "quote_hash": "3e5df43945a441f039da1157abbc541648e67051726fd33eccee87f262c8fe45"
-        },
-        {
-          "source_id": "FISRC-bea9d0be613bc1cd",
-          "source_url": "https://finance.sina.com.cn/roll/2026-07-09/doc-inihfazc5336299.shtml?froms=ggmp",
-          "source_title": "具身智能企业墨奇智能完成10亿元天使轮融资 - 新浪财经",
-          "source_content_hash": "311224a4dfb089df",
-          "quote": "本次融资由阿里巴巴、腾讯联合领投",
-          "quote_hash": "98b7d1967cc53e05ee6fae09461995df935db30454c5bf6627dc724464483c92"
+          "source_id": "alibaba_group_qwen",
+          "source_url": "https://home.alibabagroup.com/en-US/about-alibaba",
+          "source_title": "Introduction to Alibaba Group — Alibaba Group",
+          "source_content_hash": "fb89be7a24fdf3c994c273285d7ab288e86dccb27d6b6f6aa0bb265ff5d9d2a4",
+          "quote": "In February, consumer-facing Qwen surpassed 300 million monthly active users across all platforms.",
+          "quote_hash": "6171b6f1792de9f8e0c65f558d9126c28f2ad00d0a714acf0848286965aa4015"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

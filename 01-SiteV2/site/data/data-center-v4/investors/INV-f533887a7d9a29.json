@@ -187,42 +187,74 @@
       }
     ],
     "public_profile": {
-      "profile_type": "person",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Geoffrey Hinton 当前按“个人投资者”收录。最新融资披露记录日期为 2026-06-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Geoffrey Hinton 是多伦多大学计算机科学荣休教授，长期从事神经网络与机器学习研究。其本人大学主页记录了从英国高校、卡内基梅隆大学、多伦多大学到 Google 的学术与产业经历。",
+      "current_roles": [
+        {
+          "title": "荣休杰出教授",
+          "organization": "多伦多大学",
+          "source_id": "hinton_toronto_bio"
+        }
+      ],
+      "career": [
+        {
+          "organization": "卡内基梅隆大学",
+          "title": "计算机科学系教师",
+          "period": "五年；具体起止年份在该简介中未列明",
+          "description": "本人大学主页记载其曾任职五年。",
+          "source_id": "hinton_toronto_bio"
+        },
+        {
+          "organization": "Gatsby 计算神经科学单位（伦敦大学学院）",
+          "title": "创建该研究单位",
+          "period": "1998–2001",
+          "description": "本人主页所列经历。",
+          "source_id": "hinton_toronto_bio"
+        },
+        {
+          "organization": "Google",
+          "title": "副总裁、工程研究员（半职）",
+          "period": "2013–2023",
+          "description": "本人主页所列产业任职。",
+          "source_id": "hinton_toronto_bio"
+        }
+      ],
+      "education": [
+        {
+          "institution": "剑桥大学",
+          "qualification": "实验心理学学士（1970）",
+          "source_id": "hinton_toronto_bio"
+        },
+        {
+          "institution": "爱丁堡大学",
+          "qualification": "人工智能博士（1978）",
+          "source_id": "hinton_toronto_bio"
+        }
+      ],
+      "experience_summary": "职业经历结合计算机科学学术研究、计算神经科学研究机构建设和大型科技公司工程研究；资料没有列出其作为个人投资者的投资组合。",
       "track_record": [
         {
-          "description": "融资来源记录：Etched · 多轮融资 · 2026-06-30 · 天使投资人 · $800 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-ec090e2bf0f8f6e9"
-        },
-        {
-          "description": "融资来源记录：Etched · 轮次未披露 · 2026-06-30 · 天使投资人 · $500 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b750a2ea9e7c7b76"
+          "description": "本人主页记载其为英国皇家学会、加拿大皇家学会及人工智能促进协会会士，并曾任认知科学学会主席。",
+          "source_id": "hinton_toronto_bio"
         }
       ],
-      "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-ec090e2bf0f8f6e9",
-          "source_url": "https://thenextweb.com/news/etched-800-million-jane-street-tsmc-inference-chip",
-          "source_title": "英伟达竞争对手Etched获8亿美元融资，简街与台积电关联基金参投",
-          "source_content_hash": "fa74de6f9a9e3ef8",
-          "quote": "Geoffrey Hinton, who won a Nobel Prize for foundational work in modern AI, is an investor.",
-          "quote_hash": "e3284780f4b58e0507b70a8e746e19926a935a0603cc8c4e28e18a939944b6a2"
-        },
-        {
-          "source_id": "FISRC-b750a2ea9e7c7b76",
-          "source_url": "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip",
-          "source_title": "AI芯片初创公司Etched获10亿美元订单，台积电已量产其芯片",
-          "source_content_hash": "ae0a2fdbd54bc340",
-          "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch, and Scott Wu.",
-          "quote_hash": "d2ce1c3e7bd92513c4e27af8a66e26707bb616f57c658da83f0153ffb0fc3afa"
+          "source_id": "hinton_toronto_bio",
+          "source_url": "https://www.cs.toronto.edu/~hinton/",
+          "source_title": "Geoffrey Hinton | University of Toronto",
+          "source_content_hash": "8c264b104c58e4b372f362270712994130e1104ba0059f0abd1651cb3fa664eb",
+          "quote": "Geoffrey Hinton received his BA in Experimental Psychology from Cambridge in 1970 and his PhD in Artificial Intelligence from Edinburgh in 1978. He did postdoctoral work at Sussex University and the University of California San Diego and spent five years as a faculty member in the Computer Science department at Carnegie-Mellon University. He then became a fellow of the Canadian Institute for Advanced Research and moved to the Department of Computer Science at the University of Toronto. He spent three years from 1998 until 2001 setting up the Gatsby Computational Neuroscience Unit at University College London and then returned to the University of Toronto where he is now an emeritus distinguished professor. From 2004 until 2013 he was the director of the program on \"Neural Computation and Adaptive Perception\" which is funded by the Canadian Institute for Advanced Research. From 2013 to 2023 he worked half-time at Google where he became a Vice President and Engineering Fellow. Geoffrey Hinton is a fellow of the UK Royal Society, the Royal Society of Canada, the Association for the Advancement of Artificial Intelligence and a former president of the Cognitive Science Society.",
+          "quote_hash": "ccf1355812804d2e10ddad5e7251af50fd603fcbb185e3791124ab512f61e5f2"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "facts": [],
+      "milestones": [],
+      "contacts": [],
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

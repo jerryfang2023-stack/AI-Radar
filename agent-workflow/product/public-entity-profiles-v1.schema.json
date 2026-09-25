@@ -61,6 +61,7 @@
         "milestones": { "type": "array", "items": { "$ref": "#/$defs/milestone" } },
         "track_record": { "type": "array", "items": { "$ref": "#/$defs/achievement" } },
         "profile_type": { "enum": ["organization", "person", "unverified"] },
+        "identity_status": { "enum": ["verified", "pending_verification"] },
         "coverage_status": { "enum": ["researched", "activity_only", "self_declared_affiliation", "identity_unverified"] },
         "coverage_note": { "type": "string" },
         "current_roles": { "type": "array", "items": { "$ref": "#/$defs/role" } },
@@ -94,6 +95,7 @@
       "properties": {
         "summary": { "type": "string" }, "current_roles": { "type": "array", "items": { "$ref": "#/$defs/role" } },
         "coverage_status": { "enum": ["researched", "activity_only", "self_declared_affiliation", "identity_unverified"] },
+        "identity_status": { "enum": ["verified", "pending_verification"] },
         "coverage_note": { "type": "string" },
         "career": { "type": "array", "items": { "$ref": "#/$defs/career" } },
         "education": { "type": "array", "items": { "$ref": "#/$defs/education" } },

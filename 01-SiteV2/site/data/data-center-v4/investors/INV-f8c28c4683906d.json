@@ -187,42 +187,88 @@
       }
     ],
     "public_profile": {
-      "profile_type": "person",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Fei-Fei Li 当前按“个人投资者”收录。最新融资披露记录日期为 2026-06-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Fei-Fei Li 是斯坦福大学计算机科学教授、斯坦福以人为本人工智能研究院（HAI）联合创始主任，并共同创办空间智能公司 World Labs。她的公开履历覆盖计算机视觉与机器学习研究、斯坦福学术领导，以及 Google Cloud AI/ML 工作。",
+      "current_roles": [
+        {
+          "title": "计算机科学教授、HAI 联合创始主任",
+          "organization": "斯坦福大学",
+          "source_id": "fei_stanford_roles"
+        },
+        {
+          "title": "联合创始人兼 CEO",
+          "organization": "World Labs",
+          "source_id": "fei_stanford_roles"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Google / Google Cloud",
+          "title": "副总裁、AI/ML 首席科学家",
+          "period": "2017–2018",
+          "description": "斯坦福个人主页所列行业任职；不延伸为其后续现职。",
+          "source_id": "fei_stanford_roles"
+        },
+        {
+          "organization": "斯坦福人工智能实验室（SAIL）",
+          "title": "主任",
+          "period": "2013–2018",
+          "description": "斯坦福个人主页所列学术领导经历。",
+          "source_id": "fei_stanford_roles"
+        }
+      ],
+      "education": [
+        {
+          "institution": "普林斯顿大学",
+          "qualification": "物理学学士，High Honors（1999）",
+          "source_id": "fei_stanford_education"
+        },
+        {
+          "institution": "加州理工学院",
+          "qualification": "电气工程博士（2005）",
+          "source_id": "fei_stanford_education"
+        }
+      ],
+      "experience_summary": "公开履历显示其长期从事计算机视觉、深度学习、机器人学习及空间智能研究，并兼有学术机构领导、产业研究和创业经历。",
       "track_record": [
         {
-          "description": "融资来源记录：Etched · 多轮融资 · 2026-06-30 · 天使投资人 · $800 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-ec090e2bf0f8f6e9"
-        },
-        {
-          "description": "融资来源记录：Etched · 轮次未披露 · 2026-06-30 · 天使投资人 · $500 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b750a2ea9e7c7b76"
+          "description": "斯坦福主页记载她发起 ImageNet 及 ImageNet Challenge，并发表 400 余篇科学论文。",
+          "source_id": "fei_stanford_achievement"
         }
       ],
-      "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-ec090e2bf0f8f6e9",
-          "source_url": "https://thenextweb.com/news/etched-800-million-jane-street-tsmc-inference-chip",
-          "source_title": "英伟达竞争对手Etched获8亿美元融资，简街与台积电关联基金参投",
-          "source_content_hash": "fa74de6f9a9e3ef8",
-          "quote": "So are computer vision pioneer Fei-Fei Li and hedge fund manager Stanley Druckenmiller.",
-          "quote_hash": "8cb5619f1d1778424ce9f51b1d4534660655d0afedfc5faa24b9bb31ed5a32e0"
+          "source_id": "fei_stanford_roles",
+          "source_url": "https://profiles.stanford.edu/fei-fei-li",
+          "source_title": "Fei-Fei Li's Profile | Stanford Profiles",
+          "source_content_hash": "78f84faca54166fd20b59e084329c49f0e4a7e8d8569166d42f4a9e382575d1a",
+          "quote": "Dr. Li is the inaugural Sequoia Professor in the Computer Science Department at Stanford University, and a Founding Co-Director of Stanford’s Human-Centered AI Institute. She served as the Director of Stanford’s AI Lab from 2013 to 2018. In industry, Dr. Li has served as a Vice President at Google and Chief Scientist of AI/ML at Google Cloud (2017-2018), board member or advisor in various public or private companies (notably Twitter). She is currently a Co-founder/CEO of World Labs, an AI company focusing on Spatial Intelligence and generative AI.",
+          "quote_hash": "b4a2a4b40d1ce9d00421268fb2b6e9240344c39d39e5fe6af2afe998fa6ccde0"
         },
         {
-          "source_id": "FISRC-b750a2ea9e7c7b76",
-          "source_url": "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip",
-          "source_title": "AI芯片初创公司Etched获10亿美元订单，台积电已量产其芯片",
-          "source_content_hash": "ae0a2fdbd54bc340",
-          "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch, and Scott Wu.",
-          "quote_hash": "d2ce1c3e7bd92513c4e27af8a66e26707bb616f57c658da83f0153ffb0fc3afa"
+          "source_id": "fei_stanford_education",
+          "source_url": "https://profiles.stanford.edu/fei-fei-li",
+          "source_title": "Fei-Fei Li's Profile | Stanford Profiles",
+          "source_content_hash": "78f84faca54166fd20b59e084329c49f0e4a7e8d8569166d42f4a9e382575d1a",
+          "quote": "Dr. Li obtained her B.A. degree in physics from Princeton in 1999 with High Honors, and her PhD degree in electrical engineering from California Institute of Technology (Caltech) in 2005.",
+          "quote_hash": "de31ccacd44be1eb48ed2e05ecfbe8fee4f2849ef5f540bf454d6587c1515d97"
+        },
+        {
+          "source_id": "fei_stanford_achievement",
+          "source_url": "https://profiles.stanford.edu/fei-fei-li",
+          "source_title": "Fei-Fei Li's Profile | Stanford Profiles",
+          "source_content_hash": "78f84faca54166fd20b59e084329c49f0e4a7e8d8569166d42f4a9e382575d1a",
+          "quote": "Dr. Li has published more than 400 scientific articles in top-tier journals and conferences in science, engineering and computer science, and is recognized as one of the most cited computer scientists. Dr. Li is the inventor of ImageNet and the ImageNet Challenge, a critical large-scale dataset and benchmarking effort that has been widely regarded as one of the three driving forces of the birth of modern AI and deep learning revolution.",
+          "quote_hash": "77743d5bcb9cc4df2da5b22e6420b8a4888bb8e5aa36faa64d29a3c6c4d2a278"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "facts": [],
+      "milestones": [],
+      "contacts": [],
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

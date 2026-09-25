@@ -186,42 +186,56 @@
       }
     ],
     "public_profile": {
-      "profile_type": "person",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Kunal Shah 当前按“个人投资者”收录。最新融资披露记录日期为 2026-08-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Kunal Shah 创办 CRED 并曾担任 CEO。CRED 于 2026 年 6 月公告称，他将退出日常运营 CEO 职务、保留个人持股，并转入 Meta 全球领导团队；公告未说明新职务范围或过渡完成日期。",
+      "current_roles": [
+        {
+          "title": "创始人、个人股东",
+          "organization": "CRED",
+          "source_id": "kunal_cred_2026"
+        }
+      ],
+      "career": [
+        {
+          "organization": "CRED",
+          "title": "创始人兼 CEO；公告宣布退出运营职务",
+          "period": "2018–2026-06（退出公告日期；实际交接时间未披露）",
+          "description": "公司公告称其将退出 CEO 日常运营职务，但保留个人持股。",
+          "source_id": "kunal_cred_2026"
+        },
+        {
+          "organization": "Meta",
+          "title": "公告称将转入全球领导团队；具体职位未披露",
+          "period": "2026-06 公告；生效时间未披露",
+          "description": "按公司公告原文记录未来转任，不推断其职责范围。",
+          "source_id": "kunal_cred_2026"
+        }
+      ],
+      "education": [],
+      "experience_summary": "公开一手资料支持其创办并领导 CRED，以及 2026 年宣布转向 Meta 全球领导团队；该公告没有提供教育履历、过往公司完整时间线或新岗位职责。",
       "track_record": [
         {
-          "description": "融资来源记录：Ringg · A轮 · 2026-08-25 · Series A参投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-5d8eb24ecea69660"
-        },
-        {
-          "description": "融资来源记录：Aina · 种子轮 · 2026-07-16 · 本轮天使投资人 · 550万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-9e755507b523ddb2"
+          "description": "CRED 2026 年公告自述其月活会员约 1,700 万、处理印度超过 40% 的信用卡账单支付，并报告约 3,200 亿卢比收入及盈利；均为公司披露口径，不作为独立审计结果。",
+          "source_id": "kunal_cred_2026"
         }
       ],
-      "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-5d8eb24ecea69660",
-          "source_url": "https://www.ringg.ai/blogs/ringg-ai-announcing-our-5-5-millon-usd-series-a",
-          "source_title": "Ringg AI Funding: $5.5M Series A for Voice AI Agents",
-          "source_content_hash": "64d3a17d3ff626b7",
-          "quote": "with participation from Groww Founder Fund, Kunal Shah, Whitecap Ventures, and Capital2B",
-          "quote_hash": "e3ad257b17e427286565efce38dfbfe55135f9bf9002bf584999a036a213838d"
-        },
-        {
-          "source_id": "FISRC-9e755507b523ddb2",
-          "source_url": "https://inc42.com/buzz/aina-raises-5-5-mn-from-info-edge-ventures-360-one-asset-to-build-ai-native-interfaces/",
-          "source_title": "Aina 从 Info Edge 等机构融资 550 万美元，用于构建 AI 硬件接口",
-          "source_content_hash": "495ca48cb14fa6d7",
-          "quote": "Angel investors included WhatsApp head Kunal Shah",
-          "quote_hash": "2ee6c270a9481b0c3ddc7a19bf2941b1f182dc0c7a41dfd89df46ff1fda97684"
+          "source_id": "kunal_cred_2026",
+          "source_url": "https://newsroom.cred.club/cred-to-raise-8-550-crore-us-900m-from-meta/",
+          "source_title": "CRED to raise ₹8,550 crore (~US$900M) from Meta",
+          "source_content_hash": "36900ccbad92ff301fe983e26d4aa6eedca5f500c3b2cce6ea5b45b39d9bba55",
+          "quote": "Founder Kunal Shah will step away from his operating role as CEO while retaining his personal shareholding in CRED. Kunal will transition to the global leadership team at Meta.",
+          "quote_hash": "be43805f0654016a92a18141e77de99105b7974c34d5395162ddab0885c1a024"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "facts": [],
+      "milestones": [],
+      "contacts": [],
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

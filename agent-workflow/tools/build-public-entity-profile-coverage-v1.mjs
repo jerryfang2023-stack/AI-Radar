@@ -9,6 +9,7 @@ const investorData = JSON.parse(fs.readFileSync(path.join(database, "investment-
 const entityData = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/site/data/data-center-v4/indexes/entities.json"), "utf8"));
 const curated = JSON.parse(fs.readFileSync(path.join(database, "public-entity-profiles-v1.json"), "utf8"));
 const investorById = new Map((investorData.institutions || []).map((item) => [item.id, item]));
+const organizationKinds = new Set(["investment_institution", "corporate_investor", "government_fund"]);
 const asOf = process.env.PUBLIC_PROFILE_AS_OF || "2026-09-25";
 const hashPattern = /^(?:[a-f0-9]{16}|[a-f0-9]{64})$/u;
 
@@ -56,7 +57,15 @@ function trackedActivity(activity, sourceId) {
 }
 
 const coverage = { schema_version: "PUBLIC-ENTITY-PROFILE-COVERAGE-V1.0", as_of: asOf, institutions: {}, people: {} };
-const backlog = { schema_version: "PUBLIC-ENTITY-PROFILE-BACKLOG-V1.0", as_of: asOf, unresolved_investors: [], unresolved_people: [] };
+const backlog = {
+  schema_version: "PUBLIC-ENTITY-PROFILE-BACKLOG-V1.0",
+  as_of: asOf,
+  pending_identity_verification: [],
+  pending_investor_research: [],
+  pending_people_research: [],
+  unresolved_investors: [],
+  unresolved_people: []
+};
 
 for (const investor of investorData.institutions || []) {
   const activityEvidence = evidenceFor(investor);
@@ -64,14 +73,15 @@ for (const investor of investorData.institutions || []) {
     backlog.unresolved_investors.push({ id: investor.id, name: investor.name, reason: "no_source_linked_financing_evidence" });
     continue;
   }
-  const kind = investor.investor_kind === "individual" ? "person" : investor.investor_kind === "unverified_investor" ? "unverified" : "organization";
-  const coverageStatus = "activity_only";
+  const kind = investor.investor_kind === "individual" ? "person" : organizationKinds.has(investor.investor_kind) ? "organization" : "unverified";
+  const coverageStatus = kind === "unverified" ? "identity_unverified" : "activity_only";
   const sources = activityEvidence.map((item) => item.source);
   const latest = investor.latest_disclosed_at || investor.first_disclosed_at || asOf;
   const details = activityEvidence.map(({ activity, source }) => trackedActivity(activity, source.source_id));
   const kindLabel = kind === "person" ? "个人投资者" : kind === "unverified" ? "主体类型待核验的投资者名称" : "投资组织";
   coverage.institutions[investor.id] = {
     profile_type: kind,
+    identity_status: kind === "unverified" ? "pending_verification" : "verified",
     coverage_status: coverageStatus,
     coverage_note: kind === "unverified"
       ? "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。"
@@ -149,10 +159,11 @@ for (const person of entityData.people || []) {
 
 for (const [id, profile] of Object.entries(curated.institutions || {})) {
   const investorKind = investorById.get(id)?.investor_kind;
-  const profileType = profile.profile_type || (investorKind === "individual" ? "person" : investorKind === "unverified_investor" ? "unverified" : "organization");
+  const profileType = profile.profile_type || (investorKind === "individual" ? "person" : organizationKinds.has(investorKind) ? "organization" : "unverified");
   coverage.institutions[id] = {
     ...profile,
     profile_type: profileType,
+    identity_status: profileType === "unverified" ? "pending_verification" : "verified",
     coverage_status: profile.coverage_status || "researched",
     coverage_note: profile.coverage_note || "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
   };
@@ -164,6 +175,34 @@ for (const [id, profile] of Object.entries(curated.people || {})) {
     coverage_note: profile.coverage_note || "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
   };
 }
+const pendingInvestors = (investorData.institutions || [])
+  .filter((investor) => (investor.investor_kind === "individual" || organizationKinds.has(investor.investor_kind)) && coverage.institutions[investor.id]?.coverage_status !== "researched")
+  .map((investor) => ({
+    id: investor.id,
+    name: investor.name,
+    investor_kind: investor.investor_kind || "unclassified",
+    profile_type: coverage.institutions[investor.id]?.profile_type || "unverified",
+    activity_count: (investor.activities || []).length,
+    website: investor.website || "",
+    reason: "official_background_and_track_record_not_yet_researched"
+  }))
+  .sort((a, b) => b.activity_count - a.activity_count || a.name.localeCompare(b.name, "zh-Hans-CN"));
+const pendingPeople = (entityData.people || [])
+  .filter((person) => coverage.people[person.id]?.coverage_status !== "researched")
+  .map((person) => ({
+    id: person.id,
+    name: person.name,
+    organization_names: person.organizationNames || [],
+    source_count: personEvidence(person).length,
+    reason: "first_party_career_and_education_sources_not_yet_researched"
+  }))
+  .sort((a, b) => b.source_count - a.source_count || a.name.localeCompare(b.name, "zh-Hans-CN"));
+backlog.pending_identity_verification = (investorData.institutions || [])
+  .filter((investor) => !organizationKinds.has(investor.investor_kind) && investor.investor_kind !== "individual")
+  .map((investor) => ({ id: investor.id, name: investor.name, investor_kind: investor.investor_kind || "unclassified", reason: "investor_identity_or_organization_type_not_independently_verified" }))
+  .sort((a, b) => a.name.localeCompare(b.name, "zh-Hans-CN"));
+backlog.pending_investor_research = pendingInvestors;
+backlog.pending_people_research = pendingPeople;
 backlog.unresolved_investors = backlog.unresolved_investors.filter((item) => !coverage.institutions[item.id]);
 backlog.unresolved_people = backlog.unresolved_people.filter((item) => !coverage.people[item.id]);
 
@@ -176,5 +215,8 @@ console.log(JSON.stringify({
   unresolvedInvestors: backlog.unresolved_investors.length,
   unresolvedPeople: backlog.unresolved_people.length,
   curatedInstitutionOverrides: Object.keys(curated.institutions || {}).length,
-  curatedPersonOverrides: Object.keys(curated.people || {}).length
+  curatedPersonOverrides: Object.keys(curated.people || {}).length,
+  pendingIdentityVerification: backlog.pending_identity_verification.length,
+  pendingInvestorResearch: backlog.pending_investor_research.length,
+  pendingPeopleResearch: backlog.pending_people_research.length
 }, null, 2));

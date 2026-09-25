@@ -339,54 +339,74 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "阿里云 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "阿里云是阿里巴巴集团云与 AI 业务基础设施主体，官网将其定位为全球 AI 基础设施服务商和集团的智能基础设施。公开资料显示其业务包括云计算及 AI 能力，并持续扩建跨区域基础设施。融资数据库中的参投记录不代表云业务本身管理基金。",
+      "facts": [
+        {
+          "field": "business_scope",
+          "label": "业务方向",
+          "value": [
+            "全栈云计算",
+            "AI 基础设施",
+            "企业 AI 服务"
+          ],
+          "source_id": "alicloud_press_2026"
+        },
+        {
+          "field": "global_footprint",
+          "label": "全球基础设施（2026-09-23）",
+          "value": "107 个可用区，分布于 31 个地区",
+          "source_id": "alicloud_press_2026"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026-09-23",
+          "description": "官网公布未来 12 个月计划在土耳其、芬兰和荷兰设立首批云区域，并扩展多个现有地区；此为已宣布计划，不表示已完成建设。",
+          "source_id": "alicloud_press_2026"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：贝联珠贯 · A轮 · 2026-07-30 · 本轮领投 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-66fcc0a528f97b62"
-        },
-        {
-          "description": "融资来源记录：硅基流动 · B轮 · 2026-06-16 · A轮领投 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c1c9258fc2a6aa50"
-        },
-        {
-          "description": "融资来源记录：生数科技 · B轮 · 2026-04-10 · 本轮领投 · 20亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-fd865802af815ab3"
+          "description": "阿里云官网于 2026-09-23 自述其运营 107 个可用区、覆盖 31 个地区；这是公司披露的运营规模，不是投资回报指标。",
+          "source_id": "alicloud_press_2026"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "label": "媒体联系（新闻稿披露）",
+          "value": "crystal.liu@alibaba-inc.com",
+          "source_id": "alicloud_press_2026"
+        },
+        {
+          "kind": "phone",
+          "label": "媒体联系（新闻稿披露）",
+          "value": "+852 63785626 / +86 18578497650",
+          "source_id": "alicloud_press_2026"
+        },
+        {
+          "kind": "website",
+          "label": "阿里云官方网站",
+          "value": "Alibaba Cloud",
+          "url": "https://www.alibabacloud.com/en/",
+          "source_id": "alicloud_press_2026"
+        }
+      ],
+      "coverage_note": "官网内容主要核实阿里云的业务、基础设施和公开媒体联系渠道；其融资活动可能由关联主体实施，本档案未将云业务运营规模表述为投资基金业绩。",
       "sources": [
         {
-          "source_id": "FISRC-66fcc0a528f97b62",
-          "source_url": "https://finance.sina.com.cn/wm/2026-07-28/doc-inikirnf2524923.shtml?froms=ggmp",
-          "source_title": "贝联珠贯获阿里云领投超亿元A轮融资，垂直领域AI Agent赛道再获认可_新浪财经_新浪网",
-          "source_content_hash": "c58547114571e365",
-          "quote": "本轮融资由阿里云领投，老股东红杉中国、元璟资本超额跟投",
-          "quote_hash": "6da574cfa371abdcd4cdd7ccfc11b39874030b6c8099dbf30746fbca1290d6dd"
-        },
-        {
-          "source_id": "FISRC-c1c9258fc2a6aa50",
-          "source_url": "https://c.m.163.com/news/a/KVI76U30051180F7.html",
-          "source_title": "超20亿！智谱投的AI云厂商融资了，跟阿里火山百度“抢肉”吃",
-          "source_content_hash": "39056b52b07178cc",
-          "quote": "去年6月完成 数亿元 A轮融资， 阿里云领投，创新工场跟投 。",
-          "quote_hash": "64a3067a87a0e55c3fd47cc4420d7451e4f30c738c3f277bd3264a4f5abc4c04"
-        },
-        {
-          "source_id": "FISRC-fd865802af815ab3",
-          "source_url": "https://news.pedaily.cn/202604/562614.shtml",
-          "source_title": "生数科技完成近20亿元B轮融资，阿里云领投",
-          "source_content_hash": "a281cc701a9028fb",
-          "quote": "本轮融资由 阿里云领投",
-          "quote_hash": "eefacfe9bad10e9bcac9bbc37a417cab9dcec3f9ae7c7fcbf67a496d74deb623"
+          "source_id": "alicloud_press_2026",
+          "source_url": "https://www.alibabacloud.com/en/press-room/alibaba-cloud-expands-global-infrastructure-and-ai?_p_lc=1",
+          "source_title": "Alibaba Cloud Expands Global Infrastructure and AI Portfolio to Accelerate Enterprise AI Adoption — Alibaba Cloud",
+          "source_content_hash": "a036ab109d6ebb98d3b0c893c6cced9cbfc03614bb440845b2ebcb73e8a5415b",
+          "quote": "Alibaba Cloud, a leading global provider of AI infrastructure and the intelligence backbone of Alibaba Group, today announced its latest global infrastructure expansion plan at the 2026 Apsara Conference, alongside a series of new AI capabilities designed to help enterprises build, deploy and scale AI applications more efficiently. The cloud leader currently operates 107 availability zones in 31 regions around the world.",
+          "quote_hash": "432e45a9b1e995e0c63d95ea09e055580031b12424be4920e7554d640a5fc89f"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched"
     }
   }
 }
