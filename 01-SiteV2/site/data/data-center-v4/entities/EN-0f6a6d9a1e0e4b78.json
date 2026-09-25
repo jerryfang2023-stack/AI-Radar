@@ -111,32 +111,82 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "姜大昕 的来源线索将其与StepFun（创始人兼CEO）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
+      "summary": "姜大昕是阶跃星辰创始人。高校讲者资料记载其获纽约州立大学布法罗分校计算机科学博士学位、曾任南洋理工大学助理教授；36氪访谈记载其2007年加入微软、经历约16年后创业。启明创投于2024年记载其为阶跃星辰创始人兼CEO。",
       "current_roles": [],
       "career": [
         {
-          "organization": "StepFun",
-          "title": "创始人兼CEO",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-0ecf15e1f4c18234"
+          "organization": "南洋理工大学",
+          "title": "计算机科学与工程学院助理教授",
+          "period": "具体年份未披露；发生于加入微软之前",
+          "description": "高校讲者简介记载的任职。",
+          "source_id": "jiang_daxin_bnu_speaker_bio_2018"
+        },
+        {
+          "organization": "微软 / 微软亚洲研究院",
+          "title": "研究员、微软全球副总裁及微软亚洲互联网工程院首席科学家（来源不同年份所载职衔）",
+          "period": "2007年加入；约16年后离开创业，确切任职起止年份未完整披露",
+          "description": "36氪采访记载其微软职业生涯；2018年高校讲者资料及2024年启明创投资料分别记录其微软研究院领导职务。",
+          "source_id": "jiang_daxin_36kr_interview_2024"
+        },
+        {
+          "organization": "阶跃星辰",
+          "title": "创始人兼CEO（2024年公开资料）",
+          "period": "2023年创立；任职终止时间未披露",
+          "description": "启明创投于2024年以被投企业身份介绍姜大昕为公司创始人兼CEO；本条按该来源日期记录。",
+          "source_id": "jiang_daxin_qiming_bio_2024"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "纽约州立大学布法罗分校",
+          "qualification": "计算机科学博士",
+          "source_id": "jiang_daxin_bnu_speaker_bio_2018"
+        },
+        {
+          "institution": "中国科学技术大学",
+          "qualification": "本科（启明创投人物介绍所载；专业未披露）",
+          "source_id": "jiang_daxin_qiming_bio_2024"
+        }
+      ],
+      "experience_summary": "其经历包括南洋理工大学计算机科学与工程学院任教、微软亚洲研究院及微软全球技术管理岗位，以及创办阶跃星辰。各职衔的具体起止时间和微软内部产品项目中的个人职责未充分披露。",
+      "track_record": [
+        {
+          "description": "36氪访谈报道将Bing、Cortana、Azure与Microsoft 365列为其微软时期参与研发的产品；报道未逐项说明个人职责，不据此认定其单独负责整个产品。",
+          "source_id": "jiang_daxin_36kr_interview_2024"
+        },
+        {
+          "description": "启明创投2024年记载其负责阶跃星辰战略规划及技术产品研发；公司模型与产品成绩不视为个人单独成果。",
+          "source_id": "jiang_daxin_qiming_bio_2024"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-0ecf15e1f4c18234",
-          "source_url": "https://chat.stepfun.com/share/137571643220078592?shareto_way=link",
-          "source_title": "融资披露来源",
-          "source_content_hash": "7d97927132815f0a0fa762774aeaa03421ed8ccb91fea61d61e6ab5961430469",
-          "quote": "阶跃星辰创始人、CEO 姜大昕博士入选 2025 IEEE Fellow",
-          "quote_hash": "89e5cd4bf2c9d9aa7355e09bb7a21936c8023078a93b282be50274200c4f6956"
+          "source_id": "jiang_daxin_36kr_interview_2024",
+          "source_url": "https://www.36kr.com/p/2702413037910148/",
+          "source_title": "闭关一年创业大模型，姜大昕站在AGI呼啸的风中 | 36氪",
+          "source_content_hash": "a7c393cdf104942137481a7f9a1f06acb08669f1619078242ce5e7ae5c5567e4",
+          "quote": "从加入微软到创业，姜大昕用了16年。",
+          "quote_hash": "f39bd8855b4726970bb282ba971a3835953a9418f8c7433b996ef22eaa7bd72c"
+        },
+        {
+          "source_id": "jiang_daxin_bnu_speaker_bio_2018",
+          "source_url": "https://xwcb.bnu.edu.cn/docs/2024-01/1d6f6cba6d284a39acd6a9b1654424c1.pdf",
+          "source_title": "北京师范大学人工智能与未来媒体大讲堂讲者资料",
+          "source_content_hash": "eeb6f69c53fb293aa07e8dabeb29d97b40981c6b2c09a469b9f73b11483da239",
+          "quote": "获得美国纽约州立大学布法罗分校计算机科学博士学位。曾任新加坡南洋理工大学计算机科学与工程学院助理教授。",
+          "quote_hash": "9ed0bc6faae69daf4bc47305a348b99272f54ffae5e4402666f80ecf83b4e45b"
+        },
+        {
+          "source_id": "jiang_daxin_qiming_bio_2024",
+          "source_url": "https://www.qimingvc.com/cn/news/%E5%90%AF%E6%98%8E%E6%98%9F-%E9%98%B6%E8%B7%83%E6%98%9F%E8%BE%B0%E5%A7%9C%E5%A4%A7%E6%98%95%EF%BC%9Aai%E6%8A%80%E6%9C%AF%E5%8A%A0%E9%80%9F%E5%8F%91%E5%B1%95%EF%BC%8Co1%E5%BC%80%E5%90%AFscaling-law%E6%96%B0%E8%8C%83%E5%BC%8F",
+          "source_title": "启明星｜阶跃星辰姜大昕：AI技术加速发展",
+          "source_content_hash": "3d8f2537d95f92bbb62ce5bc6db3fc5c427da98fdc7d8ba0db228830122e086f",
+          "quote": "阶跃星辰创始人、CEO姜大昕博士；曾担任微软全球副总裁、微软亚洲互联网工程院首席科学家。",
+          "quote_hash": "99019e418c54b31ac0b46aff86fa014901668e0d78e1017e45397ef88ec728f7"
         }
       ],
+      "coverage_status": "researched",
+      "coverage_note": "以高校讲者资料、创投机构人物介绍及对本人采访补充学历和职业经历；职衔按各来源年份记载，不推断尚未披露的精确任期或当前状态。",
       "last_verified_at": "2026-09-25"
     }
   },

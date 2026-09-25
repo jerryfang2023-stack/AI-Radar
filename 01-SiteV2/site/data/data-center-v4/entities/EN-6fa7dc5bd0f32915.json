@@ -111,32 +111,77 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "黄冠 的来源线索将其与极佳视界（创始人）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "黄冠是极佳视界创始人兼CEO，清华大学自动化系工程博士。上海证券交易所披露的债券募集说明书记载其曾在微软亚洲研究院、三星中国研究院工作，任地平线视觉感知技术负责人及鉴智机器人合伙人；公开材料未完整披露各段任期。",
+      "current_roles": [
+        {
+          "title": "创始人兼CEO",
+          "organization": "极佳视界",
+          "source_id": "huang_guan_sse_bond_prospectus_2026"
+        }
+      ],
       "career": [
         {
+          "organization": "微软亚洲研究院",
+          "title": "研究人员（募集说明书仅列机构，未披露具体职衔）",
+          "period": "任期未披露",
+          "description": "交易所披露文件列为既往研究机构经历。",
+          "source_id": "huang_guan_sse_bond_prospectus_2026"
+        },
+        {
+          "organization": "三星中国研究院",
+          "title": "研究人员（募集说明书仅列机构，未披露具体职衔）",
+          "period": "任期未披露",
+          "description": "交易所披露文件列为既往研究机构经历。",
+          "source_id": "huang_guan_sse_bond_prospectus_2026"
+        },
+        {
+          "organization": "地平线",
+          "title": "视觉感知技术负责人",
+          "period": "任期未披露",
+          "description": "交易所披露文件记载的过往职务。",
+          "source_id": "huang_guan_sse_bond_prospectus_2026"
+        },
+        {
+          "organization": "鉴智机器人",
+          "title": "合伙人",
+          "period": "任期未披露",
+          "description": "交易所披露文件记载的创业公司关联。",
+          "source_id": "huang_guan_sse_bond_prospectus_2026"
+        },
+        {
           "organization": "极佳视界",
-          "title": "创始人",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将黄冠与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-a1fb846b5355af64"
+          "title": "创始人兼CEO",
+          "period": "募集说明书于2026年9月披露；成立日期未由本来源确认",
+          "description": "公开融资及交易披露记载的创立与管理职务。",
+          "source_id": "huang_guan_sse_bond_prospectus_2026"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "清华大学自动化系",
+          "qualification": "创新领军工程博士（交易所披露文件所载）",
+          "source_id": "huang_guan_sse_bond_prospectus_2026"
+        }
+      ],
+      "experience_summary": "公开债券募集说明书支持其清华工程博士背景，以及微软亚洲研究院、三星中国研究院、地平线和鉴智机器人的职业关联，并记载其创立并领导极佳视界。除地平线和鉴智机器人职务外，其他机构岗位名称与任期未在该文件中细分。",
+      "track_record": [
+        {
+          "description": "该募集说明书介绍极佳视界围绕世界模型、具身基础模型及机器人本体开展业务。此为其领导公司的业务方向，不代表黄冠个人独立研发的成果。",
+          "source_id": "huang_guan_sse_bond_prospectus_2026"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-a1fb846b5355af64",
-          "source_url": "https://news.pedaily.cn/202604/562806.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "60f6c8807fbce9ac",
-          "quote": "2023年6月，黄冠再度带队创业，正式成立极佳视界",
-          "quote_hash": "c53b386e4d6aea72a79c8114c03cd98ac4157c7d9f6399e03da31af450f19ad2"
+          "source_id": "huang_guan_sse_bond_prospectus_2026",
+          "source_url": "https://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2026-09-08/246005_20260908_8OAX.pdf",
+          "source_title": "北京市首都科技发展集团有限公司2026年面向专业投资者公开发行科技创新公司债券（第一期）募集说明书",
+          "source_content_hash": "aede3b77cc5c04357ea67b68395eae6a835a9e174f0dfaccb58012a9de1339fb",
+          "quote": "创始人兼CEO黄冠博士是清华大学自动化系创新领军工程博士，曾担任地平线视觉感知技术负责人、鉴智机器人合伙人，并拥有微软亚洲研究院、三星中国研究院等顶尖研究机构工作经历。",
+          "quote_hash": "5ba6c5dcefc99ca5a0e5fc2bb362946d4ce983e85c96870c907759c5e715fffc"
         }
       ],
+      "coverage_status": "researched",
+      "coverage_note": "主要履历来自上海证券交易所披露的债券募集说明书，主体信息具有公开披露来源；未披露的具体任期、研究机构职级与个人量化业绩留空。",
       "last_verified_at": "2026-09-25"
     }
   },

@@ -121,40 +121,72 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "李晓飞 的来源线索将其与深朴智能（创始人兼CEO）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "李晓飞是深朴智能创始人兼CEO，清华大学博士，研究方向涉及AI与自动驾驶。公开采访记载他曾参与创办智行者并负责机器人相关业务，带领清扫、物流机器人经历研发和商业落地；任职起止年份未完整披露。",
+      "current_roles": [
+        {
+          "title": "创始人兼CEO",
+          "organization": "深朴智能",
+          "source_id": "li_xiaofei_21cbr_sina_interview_2026"
+        }
+      ],
       "career": [
+        {
+          "organization": "智行者",
+          "title": "联合创始人、机器人事业部负责人；2022年媒体报道记为产品副总裁",
+          "period": "2016年离开学校后加入；离职年份未披露",
+          "description": "21经济网2022年报道其为智行者产品副总裁；2026年专访记载其参与创办自动驾驶公司并负责机器人研发与商业化，相关报道未完整列出各职衔的先后时间。",
+          "source_id": "li_xiaofei_21jingji_2022"
+        },
         {
           "organization": "深朴智能",
           "title": "创始人兼CEO",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-9b5df3c62e6d64eb"
+          "period": "截至2026年9月公开专访；创立具体日期未在人物来源中确认",
+          "description": "专访记载其以创始人兼CEO身份介绍家庭机器人商业化路径、团队建设及产品迭代。",
+          "source_id": "li_xiaofei_21cbr_sina_interview_2026"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
-      "sources": [
+      "education": [
         {
-          "source_id": "FISRC-9b5df3c62e6d64eb",
-          "source_url": "https://m.rccaijing.com/news-7501479340573128467.html",
-          "source_title": "融资披露来源",
-          "source_content_hash": "39591d1b9dafdaaddc99ea269874734e44fa5c30bd5ef9b54cb8b5bb0b8e461d",
-          "quote": "公司创始人李晓飞，清华大学博士、“水木学者”博士后，长期聚焦物理AI长尾场景，师从李克强院士，曾在智行者将L4自动驾驶从零做到了落地",
-          "quote_hash": "10385fc1d37f3e12148b460f1387c7ead043c286b59bebdde81295b9f0d9b3f3"
+          "institution": "清华大学",
+          "qualification": "博士；公开报道记载其研究方向为AI与自动驾驶结合，导师为李克强院士",
+          "source_id": "li_xiaofei_21cbr_sina_interview_2026"
+        }
+      ],
+      "experience_summary": "公开报道支持其清华博士背景、自动驾驶技术研发与智行者机器人事业经历，后创立深朴智能并推进具身机器人研发和酒店场景验证。精确职级变动与任期、早期机器人销量数据尚无独立核验。",
+      "track_record": [
+        {
+          "description": "2026年专访记载其在智行者时期参与清扫、物流等机器人商业化；并称曾负责前沿技术研发。",
+          "source_id": "li_xiaofei_21cbr_sina_interview_2026"
         },
         {
-          "source_id": "FISRC-d3ed2da5812586ea",
-          "source_url": "https://caifuhao.eastmoney.com/news/20260906090920742991760",
-          "source_title": "融资披露来源",
-          "source_content_hash": "28bd9ee2b4d8b3a6001d25ebe09b1d63e1760237e91eea6947ac462bdd78b3ae",
-          "quote": "创始人兼CEO李晓飞毕业于清华大学汽车系，师从中国工程院院士李克强，曾任自动驾驶公司智行者联合创始人兼高级副总裁",
-          "quote_hash": "d92ebf48b9e3146352ed2761278c773d292ffd58d2b13cb449fe3543a6d5a079"
+          "description": "2022年21经济网报道记录其以智行者产品副总裁身份参与区域无人驾驶项目及多类型无人车落地介绍。",
+          "source_id": "li_xiaofei_21jingji_2022"
+        },
+        {
+          "description": "2026年专访记载深朴已在酒店场景开展POC验证，并由李晓飞介绍机器人操作能力与持续迭代计划；属于公司当前进展，不视为个人单独技术成果。",
+          "source_id": "li_xiaofei_21cbr_sina_interview_2026"
         }
       ],
+      "sources": [
+        {
+          "source_id": "li_xiaofei_21cbr_sina_interview_2026",
+          "source_url": "https://finance.sina.com.cn/roll/2026-09-23/doc-inisvivv6000030.shtml",
+          "source_title": "清华博士带着机器人，进酒店打工 | 新浪财经转载21创投专访",
+          "source_content_hash": "2f252b8afe5ef46d9f48c24ea389c3b864cab4d637fdce92f735539eeb753786",
+          "quote": "李晓飞2016年离开学校，参与创办自动驾驶公司，负责前沿技术研发及清扫、物流等多款机器人的商业化落地。",
+          "quote_hash": "11d2929ba5a7cf08286a9a6092dfdd3d4ecf278a7423a50feb36fb20f65e9732"
+        },
+        {
+          "source_id": "li_xiaofei_21jingji_2022",
+          "source_url": "https://www.21jingji.com/article/20220803/herald/d23f8e532b993530dc7f256e2b65663a.html",
+          "source_title": "合肥无人驾驶出租车10日投运 | 21经济网",
+          "source_content_hash": "a3fdfbc6d8dbcb35e66a34117a3b9135023b32c8612f2eb8b81bd1c9f7901261",
+          "quote": "智行者产品副总裁李晓飞告诉记者，将智行者区域总部项目落地包河。",
+          "quote_hash": "3f940630a453419f59835e9262d896edc51773aff9ed11fc7296306dc09a1e4c"
+        }
+      ],
+      "coverage_status": "researched",
+      "coverage_note": "履历依据21经济网历史报道和2026年对创始人的专访整理。清华博士及研究方向来自专访报道；清扫、物流机器人落地和酒店POC属于媒体报道的公司经历，未将未披露的量化销量归于个人。",
       "last_verified_at": "2026-09-25"
     }
   },

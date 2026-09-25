@@ -161,46 +161,59 @@
       }
     },
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "Stephen Haney 的来源线索将其与Paper（首席执行官）关联。来源日期：2026-07-28；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "Stephen Haney 是 Paper 创始人兼 CEO。他的本人访谈回顾了其早期编程与网页设计经历、独立游戏开发项目，以及工程、设计和产品工作的交叉背景。",
+      "coverage_status": "researched",
+      "coverage_note": "依据 2026 年 6 月本人访谈整理，访谈对创办前的经历作回顾；具体教育经历、过往雇主与任职年份未披露，未作推断。",
+      "current_roles": [
+        {
+          "title": "创始人兼 CEO",
+          "organization": "Paper",
+          "source_id": "stephen_haney_creative_conviction"
+        }
+      ],
       "career": [
         {
           "organization": "Paper",
-          "title": "首席执行官",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将Stephen Haney与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-6be00539e7d0e25e"
+          "title": "创始人兼 CEO",
+          "period": "截至 2026 年 6 月访谈时",
+          "description": "本人访谈介绍其创办 Paper，并参与设计产品；Paper 是基于 HTML 与 CSS 的无限画布设计工具。",
+          "source_id": "stephen_haney_creative_conviction"
+        },
+        {
+          "organization": "独立游戏开发项目（名称未披露）",
+          "title": "个人项目开发者",
+          "period": "时间未披露",
+          "description": "本人称曾进行独立游戏开发个人项目，并将画布技术与二维游戏世界及图形编程经验联系起来。",
+          "source_id": "stephen_haney_creative_conviction"
+        },
+        {
+          "organization": "未披露",
+          "title": "工程、设计与产品工作经历",
+          "period": "创办 Paper 之前；具体公司及时间未披露",
+          "description": "访谈引言概括其曾从事工程师、设计师、游戏开发和产品负责人相关工作，未列明对应雇主或任职时间。",
+          "source_id": "stephen_haney_creative_conviction"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "experience_summary": "本人访谈称其约 12 至 14 岁开始编程，同时接触 Photoshop 和网页设计，并通过复刻网站学习；后有独立游戏开发个人项目。访谈没有披露正式教育背景或此前任职公司。",
+      "track_record": [
+        {
+          "description": "创办 Paper，围绕创意专业人士开发基于 HTML/CSS 的无限画布设计工具；本人表示团队先建设面向人的设计工具，之后产品呈现出适合 AI agent 使用的特性。",
+          "source_id": "stephen_haney_creative_conviction"
+        },
+        {
+          "description": "本人称曾花约一个月开发 Paper 的 OKLCH 原生颜色选择器，并邀请 OKLCH 发明者 Björn Ottosson 评审；此为访谈中的本人陈述。",
+          "source_id": "stephen_haney_creative_conviction"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-6be00539e7d0e25e",
-          "source_url": "https://startupfortune.com/paper-raised-34m-on-the-exact-thesis-that-wiped-out-half-of-figmas-market-cap/",
-          "source_title": "融资披露来源",
-          "source_content_hash": "e33f25fc65f5596d",
-          "quote": "Paper was founded by CEO Stephen Haney",
-          "quote_hash": "6ef1b82df6c8b0b1900fc9be31f3f7d017f1ddab4dcecf25412058be31e9273c"
-        },
-        {
-          "source_id": "FISRC-1c3047d162f9931f",
-          "source_url": "https://valueaddvc.com/pulse/paper-34m-series-a-ai-design-platform-2026",
-          "source_title": "融资披露来源",
-          "source_content_hash": "527b8f798f6a48e3",
-          "quote": "Founder and CEO Stephen Haney built Paper around agent-native workflows",
-          "quote_hash": "643766ac2b4d7b303511d05ec5dce62fbf7c59d5cec433472c68e6db060cb75e"
-        },
-        {
-          "source_id": "FISRC-545ac2658d68b038",
-          "source_url": "https://www.citybiz.co/article/878792/accel-iconiq-join-34m-series-a-for-paper-design-platform-for-ai-era/",
-          "source_title": "融资披露来源",
-          "source_content_hash": "a9da415791e9a9f4",
-          "quote": "Paper founder and CEO Stephen Haney",
-          "quote_hash": "0d8be91cd2d608c080825785d5cc9ade653255cacd945f8bd4686b938ccd3a1e"
+          "source_id": "stephen_haney_creative_conviction",
+          "source_url": "https://creativeconviction.ai/interviews/stephen-haney/",
+          "source_title": "Care that compounds — Stephen Haney 访谈 | Creative Conviction",
+          "source_content_hash": "f265724ed752da27dcebe19e306bf156add1f465f6493138e492b7a751e5c54f",
+          "quote": "Prior to founding Paper, Stephen Haney spent his life refusing to pick a lane. He was coding by twelve, designing in Photoshop, and learning the web by trying to rebuild other people’s sites pixel for pixel. Engineer, designer, game dev, product lead.",
+          "quote_hash": "a7b796f02d563011bc39bca68b5e2c1b88e28e58ed063d832e4a839ff951fd8b"
         }
       ],
       "last_verified_at": "2026-09-25"
