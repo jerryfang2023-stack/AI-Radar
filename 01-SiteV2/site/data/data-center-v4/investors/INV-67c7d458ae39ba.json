@@ -416,53 +416,86 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "coverage_status": "activity_only",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Iconiq 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "summary": "ICONIQ官网将其介绍为全球投资公司，业务同时涉及投资管理、Venture & Growth、Real Assets及慈善协作。官网自报管理资产规模超过1000亿美元。融资情报站中的“Iconiq”交易名称未必能确认具体ICONIQ基金或关联主体，故不将活动记录自动归属于某支基金。",
+      "facts": [
         {
-          "description": "融资来源记录：Enveda · E轮 · 2026-09-23 · 本轮参投 · $311M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b2cab94e5375e0ba"
+          "field": "organization_type",
+          "label": "官网自述机构类型",
+          "value": "全球投资公司；提供投资组合管理，并设Venture & Growth等业务",
+          "source_id": "iconiq_official_home_2026"
         },
         {
-          "description": "融资来源记录：Anthropic · G轮 · 2026-08-10 · 本轮联合领投 · $30 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-077b1124fc8e9581"
+          "field": "reported_aum",
+          "label": "官网披露管理资产规模",
+          "value": "超过1000亿美元；官网未在该页面标出统计日期",
+          "source_id": "iconiq_official_home_2026"
         },
         {
-          "description": "融资来源记录：Paper · A轮 · 2026-07-23 · 本轮领投 · $34 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-6be00539e7d0e25e"
+          "field": "investment_approach",
+          "label": "Venture & Growth页面",
+          "value": "与创业者从早期构想阶段起合作；官网列示其Venture & Growth投资组合业务",
+          "source_id": "iconiq_venture_growth_2026"
+        },
+        {
+          "field": "entity_attribution",
+          "label": "名称归属说明",
+          "value": "融资披露中的“Iconiq”未必指向ICONIQ Capital集团、ICONIQ Growth或某一具体基金；需逐笔核对主体。",
+          "source_id": "iconiq_official_home_2026"
         }
       ],
-      "contacts": [],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "ICONIQ",
+          "url": "https://www.iconiq.com/",
+          "source_id": "iconiq_official_home_2026"
+        },
+        {
+          "kind": "website",
+          "label": "Venture & Growth业务",
+          "value": "ICONIQ Venture & Growth",
+          "url": "https://www.iconiq.com/growth",
+          "source_id": "iconiq_venture_growth_2026"
+        },
+        {
+          "kind": "email",
+          "label": "一般咨询邮箱（官网公开；未注明为项目提案或融资申请渠道）",
+          "value": "info@ICONIQCapital.com",
+          "url": "https://www.iconiq.com/email",
+          "source_id": "iconiq_contact_2026"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-b2cab94e5375e0ba",
-          "source_url": "https://techcrunch.com/2026/09/23/enveda-secures-311m-to-bring-more-nature-derived-ai-drugs-into-clinical-trials",
-          "source_title": "Enveda 获 3.11 亿美元 E 轮融资，推进天然来源 AI 药物进入临床试验",
-          "source_content_hash": "79b5761869f8dba5",
-          "quote": "The fresh funding, which was led by Catalio Capital Management, with participation from Iconiq and others",
-          "quote_hash": "4de0100c58ebb8c5bc3ca996fe00a665d79ecafef938ab278948ad6a72c3a4d4"
+          "source_id": "iconiq_official_home_2026",
+          "source_url": "https://www.iconiq.com/",
+          "source_title": "ICONIQ | Home",
+          "source_content_hash": "ca735d694145ac6002d8bfb553a016ae3224f18b92751c3195ecd8a0e68467a7",
+          "quote": "ICONIQ is a global investment firm catalyzing opportunity through extraordinary community. With over $100B assets under management.",
+          "quote_hash": "25ca221979bfd9686c7c4fbd635378f4cf8161be159df604e7cf06a6d700503c"
         },
         {
-          "source_id": "FISRC-077b1124fc8e9581",
-          "source_url": "https://sg.finance.yahoo.com/news/gic-backed-openai-rival-anthropic-202159553.html",
-          "source_title": "GIC-backed OpenAI rival Anthropic finalises US$30 bil funding at US$380 bil value",
-          "source_content_hash": "7ff9bbd6aca29214",
-          "quote": "DE Shaw & Co, Dragoneer Investment Group, Peter Thiel’s Founders Fund, Iconiq and MGX co-led the round",
-          "quote_hash": "bdfd56c7328c8886cb48b941b4f330aff7ca9c83b05f0664f43e60381537841f"
+          "source_id": "iconiq_venture_growth_2026",
+          "source_url": "https://www.iconiq.com/growth",
+          "source_title": "ICONIQ | Venture & Growth",
+          "source_content_hash": "47eb1d36638b985408508743b0fc086e387c0bcfab8be5f6f68f29aab712a214",
+          "quote": "We partner with founders from the aha moment onward.",
+          "quote_hash": "e15e767ca5a2741aca0029417f1cdf1316a9193ac7ce4b32dcf5e5e07dc13c5f"
         },
         {
-          "source_id": "FISRC-6be00539e7d0e25e",
-          "source_url": "https://startupfortune.com/paper-raised-34m-on-the-exact-thesis-that-wiped-out-half-of-figmas-market-cap/",
-          "source_title": "Paper 基于导致 Figma 市值腰斩的同一论点融资 3400 万美元",
-          "source_content_hash": "e33f25fc65f5596d",
-          "quote": "The round was led by Accel and ICONIQ",
-          "quote_hash": "88673e0bebde67d4cde3d38c1274f3a1e56f062d6a44aa252cf97d0d64b83014"
+          "source_id": "iconiq_contact_2026",
+          "source_url": "https://www.iconiq.com/email",
+          "source_title": "ICONIQ | Contact Us",
+          "source_content_hash": "d5c894b203262b68067bf29540ba5acd77d336c5892b0edd27be708b84de9bdd",
+          "quote": "For general inquires please email us at info@ICONIQCapital.com.",
+          "quote_hash": "a40d2805746de3f25346e3dc8f0f99673e8c9b4115105340dc59b962f384217a"
         }
       ],
+      "coverage_status": "researched",
+      "coverage_note": "已核实ICONIQ集团官网身份、业务分支及一般联络方式；AUM为官网自报且未在页面标注统计日期。“Iconiq”融资记录与具体基金/关联公司的匹配仍需逐条验证。",
       "last_verified_at": "2026-09-25"
     }
   }

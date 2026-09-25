@@ -5580,6 +5580,89 @@
       "coverage_status": "researched",
       "coverage_note": "组织背景、业务、公开指标与联系方式来自中金资本官网。融资库名称为简称，因此档案对应官网同名机构作为参考实体，不声称每笔融资均由该公司或其管理基金实施；官网自报规模不代表基金回报率。",
       "last_verified_at": "2026-09-25"
+    },
+    "INV-67c7d458ae39ba": {
+      "summary": "ICONIQ官网将其介绍为全球投资公司，业务同时涉及投资管理、Venture & Growth、Real Assets及慈善协作。官网自报管理资产规模超过1000亿美元。融资情报站中的“Iconiq”交易名称未必能确认具体ICONIQ基金或关联主体，故不将活动记录自动归属于某支基金。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网自述机构类型",
+          "value": "全球投资公司；提供投资组合管理，并设Venture & Growth等业务",
+          "source_id": "iconiq_official_home_2026"
+        },
+        {
+          "field": "reported_aum",
+          "label": "官网披露管理资产规模",
+          "value": "超过1000亿美元；官网未在该页面标出统计日期",
+          "source_id": "iconiq_official_home_2026"
+        },
+        {
+          "field": "investment_approach",
+          "label": "Venture & Growth页面",
+          "value": "与创业者从早期构想阶段起合作；官网列示其Venture & Growth投资组合业务",
+          "source_id": "iconiq_venture_growth_2026"
+        },
+        {
+          "field": "entity_attribution",
+          "label": "名称归属说明",
+          "value": "融资披露中的“Iconiq”未必指向ICONIQ Capital集团、ICONIQ Growth或某一具体基金；需逐笔核对主体。",
+          "source_id": "iconiq_official_home_2026"
+        }
+      ],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "ICONIQ",
+          "url": "https://www.iconiq.com/",
+          "source_id": "iconiq_official_home_2026"
+        },
+        {
+          "kind": "website",
+          "label": "Venture & Growth业务",
+          "value": "ICONIQ Venture & Growth",
+          "url": "https://www.iconiq.com/growth",
+          "source_id": "iconiq_venture_growth_2026"
+        },
+        {
+          "kind": "email",
+          "label": "一般咨询邮箱（官网公开；未注明为项目提案或融资申请渠道）",
+          "value": "info@ICONIQCapital.com",
+          "url": "https://www.iconiq.com/email",
+          "source_id": "iconiq_contact_2026"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "iconiq_official_home_2026",
+          "source_url": "https://www.iconiq.com/",
+          "source_title": "ICONIQ | Home",
+          "source_content_hash": "ca735d694145ac6002d8bfb553a016ae3224f18b92751c3195ecd8a0e68467a7",
+          "quote": "ICONIQ is a global investment firm catalyzing opportunity through extraordinary community. With over $100B assets under management.",
+          "quote_hash": "25ca221979bfd9686c7c4fbd635378f4cf8161be159df604e7cf06a6d700503c"
+        },
+        {
+          "source_id": "iconiq_venture_growth_2026",
+          "source_url": "https://www.iconiq.com/growth",
+          "source_title": "ICONIQ | Venture & Growth",
+          "source_content_hash": "47eb1d36638b985408508743b0fc086e387c0bcfab8be5f6f68f29aab712a214",
+          "quote": "We partner with founders from the aha moment onward.",
+          "quote_hash": "e15e767ca5a2741aca0029417f1cdf1316a9193ac7ce4b32dcf5e5e07dc13c5f"
+        },
+        {
+          "source_id": "iconiq_contact_2026",
+          "source_url": "https://www.iconiq.com/email",
+          "source_title": "ICONIQ | Contact Us",
+          "source_content_hash": "d5c894b203262b68067bf29540ba5acd77d336c5892b0edd27be708b84de9bdd",
+          "quote": "For general inquires please email us at info@ICONIQCapital.com.",
+          "quote_hash": "a40d2805746de3f25346e3dc8f0f99673e8c9b4115105340dc59b962f384217a"
+        }
+      ],
+      "coverage_status": "researched",
+      "coverage_note": "已核实ICONIQ集团官网身份、业务分支及一般联络方式；AUM为官网自报且未在页面标注统计日期。“Iconiq”融资记录与具体基金/关联公司的匹配仍需逐条验证。",
+      "last_verified_at": "2026-09-25"
     }
   },
   "people": {
