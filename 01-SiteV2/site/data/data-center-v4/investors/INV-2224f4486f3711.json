@@ -542,51 +542,97 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "coverage_status": "activity_only",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "同创伟业 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "summary": "深圳同创伟业资产管理股份有限公司（Cowin Capital）是从事创业投资及资产管理的市场化机构，以科技创新和战略性新兴产业为主要投资方向。2025 年年度报告称，公司开展股权投资、基金管理、投后赋能和退出业务，围绕高硬科技项目提供再融资、资本规划、培训和产业资源对接等支持。",
+      "facts": [
         {
-          "description": "融资来源记录：星际觅元 · 种子轮 · 2026-08-27 · 本轮领投 · 千万元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-21d53f49c93ea68c"
+          "field": "legal_name",
+          "label": "公司全称",
+          "value": "深圳同创伟业资产管理股份有限公司",
+          "source_id": "cowin_report"
         },
         {
-          "description": "融资来源记录：爱诗科技 · C轮 · 2026-07-14 · B+轮共同投资 · 29.8亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-09c3ca37737a71ce"
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2010 年 12 月 27 日（年报披露）",
+          "source_id": "cowin_report"
         },
         {
-          "description": "融资来源记录：鹏脑科技 · 战略融资 · 2026-07-14 · 天使轮独家注资 · 千万元人民币。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3f76476700958317"
+          "field": "investment_mandate",
+          "label": "主要业务",
+          "value": [
+            "创业投资",
+            "资产管理",
+            "基金管理",
+            "投后赋能"
+          ],
+          "source_id": "cowin_report"
+        },
+        {
+          "field": "focus_sectors",
+          "label": "投资方向",
+          "value": "新兴产业全产业链投资，聚焦科技创新与战略性新兴产业。",
+          "source_id": "cowin_report"
+        },
+        {
+          "field": "post_investment_support",
+          "label": "投后赋能",
+          "value": "提供再融资支持、资本规划、专业培训及产业落地资源对接。",
+          "source_id": "cowin_report"
+        },
+        {
+          "field": "headquarters",
+          "label": "注册地址",
+          "value": "广东省深圳市福田区金田路 3086 号大百汇广场 28 层 2802",
+          "source_id": "cowin_report"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2010-12-27",
+          "description": "2025 年年度报告记载公司成立日期。",
+          "source_id": "cowin_report"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "2025 年年度报告称公司通过“走进系列”产业对接活动帮助被投企业对接中际旭创、三花、荣耀等产业链企业，并与深交所科融通 V-Next 举办机器人和人工智能路演；该内容是机构年报自述。",
+          "source_id": "cowin_report"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "同创伟业官方网站",
+          "value": "Cowin Capital",
+          "url": "http://www.cowincapital.com.cn/",
+          "source_id": "cowin_home"
+        },
+        {
+          "kind": "address",
+          "label": "注册地址",
+          "value": "深圳市福田区福田街道岗厦社区金田路 3086 号大百汇广场 28 层 2802",
+          "url": "https://xinsanban.eastmoney.com/Article/NoticeContent?id=AN202604291821740249&pageIndex=3",
+          "source_id": "cowin_report"
+        }
+      ],
+      "coverage_status": "researched",
+      "coverage_note": "公司名称、注册信息和经营概况取自全国股转系统挂牌公司 2025 年年度报告的公开转载页；该报告为公司法定披露材料。投后服务和活动按年报自述描述；未从第三方投资数据库补写规模或收益。",
       "sources": [
         {
-          "source_id": "FISRC-21d53f49c93ea68c",
-          "source_url": "https://finance.sina.com.cn/jjxw/2026-08-27/doc-iniptnux5501287.shtml",
-          "source_title": "「星际觅元」完成千万元种子轮融资",
-          "source_content_hash": "9d467a65d3cd4704",
-          "quote": "由同创伟业领投 ，家庭具身智能 机器人 企业 卧安机器人和旭源资本 跟投",
-          "quote_hash": "c818f14cd31e8b8e275f032629a9e2e10622e930a6de0bdd8347e2d754eaeeb0"
+          "source_id": "cowin_report",
+          "source_url": "https://xinsanban.eastmoney.com/Article/NoticeContent?id=AN202604291821740249&pageIndex=3",
+          "source_title": "同创伟业 2025 年年度报告",
+          "source_content_hash": "3ff4e8a3cc4ad5582bcd7056266bcd2039c93697d71ffb94569357d77875975a",
+          "quote": "深圳同创伟业资产管理股份有限公司成立于 2010 年 12 月 27 日，主要从事创业投资等资产管理业务和投资业务，致力于新兴产业全产业链投资。2025 年公司聚焦硬核科技，提供再融资支持、资本规划、专业培训和产业落地等投后赋能。注册地址为深圳市福田区金田路 3086 号大百汇广场 28 层 2802。",
+          "quote_hash": "0cdb1d8f1b6d804831caf4b2bd660ab2654e7435c35aeeb5a760c1a692d917d6"
         },
         {
-          "source_id": "FISRC-09c3ca37737a71ce",
-          "source_url": "https://stcn.com/article/detail/3386786.html",
-          "source_title": "爱诗科技完成B+轮融资 ARR突破4000万美金",
-          "source_content_hash": "edea92990a31710b",
-          "quote": "10月17日，AI视频企业爱诗科技宣布完成1亿元人民币B+轮融资，由复星锐正、同创伟业、顺禧基金等共同投资。",
-          "quote_hash": "e9aae3ff1b77f083544e7ec6565ade2999a46e7937b2893111210677a5f7bd3e"
-        },
-        {
-          "source_id": "FISRC-3f76476700958317",
-          "source_url": "https://www.163.com/dy/article/KCSPC4MF0550WHYR.html",
-          "source_title": "鹏脑科技获同创伟业数千万元天使轮投资，加速非侵入式脑机接口研发|融资_网易订阅",
-          "source_content_hash": "9d14f458b17c4c1f",
-          "quote": "此次融资由同创伟业独家注资",
-          "quote_hash": "509f475c08e265c0eed5726e463a4855161e000440864c57818b27cda88025b7"
+          "source_id": "cowin_home",
+          "source_url": "http://www.cowincapital.com.cn/",
+          "source_title": "同创伟业官方网站",
+          "source_content_hash": "9de0e7ef04017bc4754dd6fa8692e1cd4888ccfdc6c4ff8ea278f75f3fc4a7c0",
+          "quote": "公司官网域名由 2025 年年报列示为 www.cowincapital.com.cn。",
+          "quote_hash": "1fa36be8a639ad29985391e79ce1b15ba1377d75075c36951e52e347c5f7a08f"
         }
       ],
       "last_verified_at": "2026-09-25"
