@@ -2,6 +2,535 @@
   "schema_version": "PUBLIC-ENTITY-PROFILES-V1.0",
   "as_of": "2026-09-25",
   "institutions": {
+    "INV-7e6d64394128e7": {
+      "summary": "红杉中国（HongShan）是专注科技、医疗和消费领域的私募股权投资机构。官网称其自 2005 年成立以来投资逾 1,800 家企业，并披露了成员企业上市与独角兽数量。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2005",
+          "source_id": "hongshan_about"
+        },
+        {
+          "field": "sectors",
+          "label": "重点领域",
+          "value": [
+            "科技",
+            "医疗",
+            "消费"
+          ],
+          "source_id": "hongshan_about"
+        },
+        {
+          "field": "investment_stages",
+          "label": "官网披露的投资阶段与策略",
+          "value": [
+            "种子期",
+            "成长期",
+            "并购",
+            "新基建",
+            "公开市场"
+          ],
+          "source_id": "hongshan_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2005",
+          "description": "红杉中国官网记载机构于 2005 年成立。",
+          "source_id": "hongshan_about"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "官网截至页面更新时披露，累计投资海内外逾 1,800 家企业；这是机构自述口径。",
+          "source_id": "hongshan_about"
+        },
+        {
+          "description": "官网披露超过 190 家成员企业成功上市，超过 140 家非上市公司已发展为独角兽；该数字为机构自述，页面未在该段标注统计基准日。",
+          "source_id": "hongshan_about"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "hongshan.com",
+          "url": "https://www.hongshan.com/about-us/",
+          "source_id": "hongshan_about"
+        },
+        {
+          "kind": "email",
+          "label": "融资计划与商业计划书",
+          "value": "bpchina@hongshan.com",
+          "url": "https://www.hongshan.com/about-us/",
+          "source_id": "hongshan_about"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "hongshan_about",
+          "source_url": "https://www.hongshan.com/about-us/",
+          "source_title": "关于我们 - 红杉",
+          "source_content_hash": "0482d4bdafa5319c5c30369758f287c50b0863a35226242f34c7b357771ff960",
+          "quote": "红杉中国是专注于投资科技、医疗、消费三大领域的私募股权投资机构。自2005年成立以来，红杉中国致力于发掘和培育创新和创业力量，在海内外投资了逾1800家企业。迄今为止，红杉中国有超过190家成员企业成功上市，超过140家非上市公司已发展成为独角兽。如有融资计划，请将您的信件和商业计划书发送至 bpchina@hongshan.com。",
+          "quote_hash": "f4d15ec4b3e8343bd9c848911b95fbf6648ba3eaa4b2a17ef1b4616f96e8143f"
+        }
+      ],
+      "last_verified_at": "2026-09-25"
+    },
+    "INV-581465289348eb": {
+      "summary": "IDG资本官网将机构历史追溯至 1993 年波士顿，并介绍其后进入中国市场；目前官网定位为覆盖多阶段、多策略的全球投资平台。以下仅列官网明确披露的机构背景和业务联系渠道。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "创立年份",
+          "value": "1993",
+          "source_id": "idg_about"
+        },
+        {
+          "field": "founded_location",
+          "label": "创立地点",
+          "value": "美国波士顿",
+          "source_id": "idg_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1993",
+          "description": "IDG资本官网记载其创立于波士顿，并于同年进入中国市场。",
+          "source_id": "idg_about"
+        }
+      ],
+      "track_record": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "IDG资本官网",
+          "url": "https://idgcapital.com/cn/home-cn/",
+          "source_id": "idg_about"
+        },
+        {
+          "kind": "email",
+          "label": "商务合作",
+          "value": "COOPERATION@IDGCAPITAL.COM",
+          "url": "https://en.idgcapital.com/contact-us/",
+          "source_id": "idg_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "香港中环The Center办公室",
+          "value": "+852-3903 1333",
+          "url": "https://en.idgcapital.com/contact-us/",
+          "source_id": "idg_contact"
+        },
+        {
+          "kind": "address",
+          "label": "香港中环The Center办公室",
+          "value": "Room 5505, 55 Floor, The Center, 99 Queen's Road Central, Hong Kong",
+          "url": "https://en.idgcapital.com/contact-us/",
+          "source_id": "idg_contact"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "idg_about",
+          "source_url": "https://idgcapital.com/cn/about-us-2/",
+          "source_title": "关于我们 - IDG Capital",
+          "source_content_hash": "18c1c27b13a37a88676bc69be866453089e8e04f5f7d5ce4ae3233d39eb34865",
+          "quote": "1993年，IDG资本创立于美国波士顿。",
+          "quote_hash": "187e7b59e9ad7bb839193107d4adba71ed2ca04909ea42f745b51426679552e0"
+        },
+        {
+          "source_id": "idg_contact",
+          "source_url": "https://en.idgcapital.com/contact-us/",
+          "source_title": "Contact Us - IDG Capital",
+          "source_content_hash": "af3075dc8f75ca2b873717a01022134483049ad482e02d8a41c6651aab8e9864",
+          "quote": "COOPERATION@IDGCAPITAL.COM. Room 5505, 55 Floor, The Center, 99 Queen's Road Central, Hong Kong. Tel: 852-3903 1333.",
+          "quote_hash": "55dbc765f313dcb1df7f0247e84a136cb6ba8b4e79eec87c4364570aa9ecee7a"
+        }
+      ],
+      "last_verified_at": "2026-09-25"
+    },
+    "INV-44257683c9946b": {
+      "summary": "启明创投是一家专注科技与医疗创新领域早期、成长期企业的风险投资机构。其官网公开机构成立时间、管理基金概况及创业项目联系渠道；规模类数字按官网自述呈现。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2006",
+          "source_id": "qiming_about"
+        },
+        {
+          "field": "investment_stages",
+          "label": "官网披露的投资阶段",
+          "value": [
+            "早期",
+            "成长期"
+          ],
+          "source_id": "qiming_about"
+        },
+        {
+          "field": "sectors",
+          "label": "官网披露的重点领域",
+          "value": [
+            "科技",
+            "医疗创新"
+          ],
+          "source_id": "qiming_about"
+        },
+        {
+          "field": "funds_under_management",
+          "label": "官网披露的基金数量",
+          "value": "11只美元基金、7只人民币基金",
+          "source_id": "qiming_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2006",
+          "description": "启明创投官网记载机构成立于 2006 年。",
+          "source_id": "qiming_about"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "官网称其投资组合中有企业在多地交易所上市或经并购退出，并披露了独角兽企业数量；因页面为滚动更新且未明确每项统计基准日，本档案不将这些机构自述数字作为独立核实的业绩。",
+          "source_id": "qiming_about"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "qimingvc.com",
+          "url": "https://www.qimingvc.com/cn/about",
+          "source_id": "qiming_about"
+        },
+        {
+          "kind": "email",
+          "label": "商业计划书投递",
+          "value": "BP@qimingvc.com",
+          "url": "https://www.qimingvc.com/cn/contact",
+          "source_id": "qiming_contact"
+        },
+        {
+          "kind": "email",
+          "label": "一般联系",
+          "value": "contactus@qimingvc.com",
+          "url": "https://www.qimingvc.com/cn/contact",
+          "source_id": "qiming_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "上海办公室",
+          "value": "+86 21 6101 6522",
+          "url": "https://www.qimingvc.com/cn/contact",
+          "source_id": "qiming_contact"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "qiming_about",
+          "source_url": "https://www.qimingvc.com/cn/about",
+          "source_title": "关于 | 启明创投",
+          "source_content_hash": "7e03b1afbc5657d500930bb574274d03b74290841ac9705162d1bf58244c8c42",
+          "quote": "启明创投成立于2006年。目前旗下管理11只美元基金、7只人民币基金。",
+          "quote_hash": "aaea1621e175c9884577492f25f5f841209cc8e1f563d4d5b040082cf46c482a"
+        },
+        {
+          "source_id": "qiming_contact",
+          "source_url": "https://www.qimingvc.com/cn/contact",
+          "source_title": "联系 | 启明创投",
+          "source_content_hash": "f507ba55dfacdc11b8f3c4565f4f6c6b4b94bc359fe1f5f2556f6cb936e6fea7",
+          "quote": "BP投递：BP@qimingvc.com。启明上海电话：+86 21 6101 6522。",
+          "quote_hash": "fef70ce02691f8382cf792462fbe4a833c4aa4594a0b72e9402c9fab2f0d8950"
+        }
+      ],
+      "last_verified_at": "2026-09-25"
+    },
+    "INV-901b0ed7b5c1cb": {
+      "summary": "深圳市创新投资集团有限公司（深创投）是以创业投资为核心的综合性投资集团。其 2024 年度报告披露了注册地址、公开服务邮箱和总机等企业信息。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构定位",
+          "value": "以创业投资为核心的综合性投资集团",
+          "source_id": "scgc_report"
+        }
+      ],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "szvc.com.cn",
+          "url": "https://www.szvc.com.cn/",
+          "source_id": "scgc_report"
+        },
+        {
+          "kind": "email",
+          "label": "公开服务邮箱",
+          "value": "service@szvc.com.cn",
+          "url": "https://www.szvc.com.cn/uploads/2025-06-30/696a71ea-4309-4a87-ad1b-6bc47452bc7e1751278504265.pdf",
+          "source_id": "scgc_report"
+        },
+        {
+          "kind": "phone",
+          "label": "公开联系电话",
+          "value": "0755-88993888",
+          "url": "https://www.szvc.com.cn/uploads/2025-06-30/696a71ea-4309-4a87-ad1b-6bc47452bc7e1751278504265.pdf",
+          "source_id": "scgc_report"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "scgc_report",
+          "source_url": "https://www.szvc.com.cn/uploads/2025-06-30/696a71ea-4309-4a87-ad1b-6bc47452bc7e1751278504265.pdf",
+          "source_title": "深圳市创新投资集团有限公司2024年度报告",
+          "source_content_hash": "695d6219518646fcf1ecb3d37ef26e65306678eb465432a87d464ff55efab128",
+          "quote": "经营范围：创业投资业务。联系电话：0755-88993888；电子信箱：service@szvc.com.cn。",
+          "quote_hash": "471328d4f4406107854ffe9575e9c659910a1d48b96c58c10f1523a459f760f3"
+        }
+      ],
+      "last_verified_at": "2026-09-25"
+    },
+    "INV-a5face706f8674": {
+      "summary": "广发信德投资管理有限公司是广发证券集团旗下从事股权投资的子公司。广发证券年报披露其设立时间、全资子公司关系及公司联系电话；此处不把参投交易列表当作其完整投资组合或投资业绩。",
+      "facts": [
+        {
+          "field": "founded_month",
+          "label": "设立时间",
+          "value": "2008年12月",
+          "source_id": "gf_2024_report"
+        },
+        {
+          "field": "parent_company",
+          "label": "股权关系",
+          "value": "广发证券股份有限公司全资子公司",
+          "source_id": "gf_2024_report"
+        },
+        {
+          "field": "business_scope",
+          "label": "主营业务",
+          "value": "股权投资；为客户提供股权投资财务顾问服务及监管许可的其他业务",
+          "source_id": "gf_2025_report"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2008-12",
+          "description": "广发证券年报列示广发信德于 2008 年 12 月设立。",
+          "source_id": "gf_2024_report"
+        }
+      ],
+      "track_record": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "母公司官方网站",
+          "value": "广发证券",
+          "url": "https://www.gf.com.cn/",
+          "source_id": "gf_2024_report"
+        },
+        {
+          "kind": "phone",
+          "label": "年报列示联系电话",
+          "value": "020-66338790",
+          "url": "https://ir.gf.com.cn/rest/file/download?file_id=67f5e519ce45d60012ba9348",
+          "source_id": "gf_2024_report"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "gf_2024_report",
+          "source_url": "https://ir.gf.com.cn/rest/file/download?file_id=67f5e519ce45d60012ba9348",
+          "source_title": "广发证券股份有限公司2024年度报告全文",
+          "source_content_hash": "630752e125cc24d8a7ed0ea1ae692e17b464d90397ed5076c5821167c782b4b2",
+          "quote": "广发信德 | 设立时间 2008.12 | 持股比例 100% | 020-66338790。",
+          "quote_hash": "5ae87580143b611af92330acb97dd515e95a32f5a58fa133455b548c09bf7d39"
+        },
+        {
+          "source_id": "gf_2025_report",
+          "source_url": "https://ir.gf.com.cn/rest/file/download?file_id=69e1de9b2cb0fa001a173f73",
+          "source_title": "广发证券股份有限公司2025年度报告全文",
+          "source_content_hash": "36bd16395730b08b270110f34c986e58e17ea3445a91cd8431319a6a22d1da31",
+          "quote": "公司名称：广发信德；公司类型：子公司；主要业务：股权投资。",
+          "quote_hash": "9d1eb4b896a2e21142b333a19ffd43fd8d5668309dd0de25d20beed1dbbac828"
+        }
+      ],
+      "last_verified_at": "2026-09-25"
+    },
+    "INV-d728862922bb4d": {
+      "summary": "达晨财智聚焦信息技术、智能制造、医疗健康、企业服务、文化传媒和军工等领域，投资阶段覆盖初创、成长与成熟期。其官网披露机构与品牌信息，上市公司公开文件披露投资规模与退出案例统计。",
+      "facts": [
+        {
+          "field": "sectors",
+          "label": "公开披露的关注领域",
+          "value": [
+            "信息技术",
+            "智能制造",
+            "医疗健康",
+            "企业服务",
+            "文化传媒",
+            "军工"
+          ],
+          "source_id": "dachen_cninfo"
+        },
+        {
+          "field": "investment_stages",
+          "label": "公开披露的投资阶段",
+          "value": [
+            "初创期",
+            "成长期",
+            "成熟期"
+          ],
+          "source_id": "dachen_cninfo"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "公开文件披露达晨资产管理规模近 660 亿元、投资 800 余家企业、成功退出 301 家；这是该文件所载统计口径，非独立审计的基金回报数据。",
+          "source_id": "dachen_cninfo"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "fortunevc.com",
+          "url": "https://www.fortunevc.com/",
+          "source_id": "dachen_home"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "dachen_home",
+          "source_url": "https://www.fortunevc.com/",
+          "source_title": "达晨财智官方网站",
+          "source_content_hash": "83e1e219f5984c8f06347ff44fb32d72682484b3946ee8b9106982f4c5e7c2cc",
+          "quote": "达晨财智创业投资管理有限公司。",
+          "quote_hash": "a86ec173149c536e86359017e3cd5ae64213c1f0dbbb3748d88e846290e44fee"
+        },
+        {
+          "source_id": "dachen_cninfo",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2025-10-30/1224777326.PDF",
+          "source_title": "达晨财智投资方向及公开业绩资料",
+          "source_content_hash": "dcd70a9647f2c54f5f990e121ec026163ea39f5bcb733309cd23fbfb6b4be6d4",
+          "quote": "资产管理规模近660亿元，投资800余家企业，成功退出301家。",
+          "quote_hash": "3dc873108a4d63df5651dbb301d7d4a38b85fd98f4f928fc674491788e341c82"
+        }
+      ],
+      "last_verified_at": "2026-09-25"
+    },
+    "INV-9eb2439d21a914": {
+      "summary": "Kleiner Perkins 是一家风险投资机构，官网称其五十年来持续与创业者合作，并覆盖从创业初期到 IPO 及之后的阶段。",
+      "facts": [
+        {
+          "field": "investment_stages",
+          "label": "官网披露的支持阶段",
+          "value": [
+            "创业初期",
+            "IPO 及之后"
+          ],
+          "source_id": "kp_about"
+        },
+        {
+          "field": "history",
+          "label": "机构历史",
+          "value": "官网称与创业者合作已有五十年",
+          "source_id": "kp_about"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "机构官网将其定位为跨行业、跨地区与创始人合作的投资者，并称合作可从创立初期延续至 IPO 及之后；官网另列有 Amazon、Twitter、Compaq 等案例。本档案不将案例列表视为完整投资组合或收益业绩。",
+          "source_id": "kp_about"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "kleinerperkins.com",
+          "url": "https://www.kleinerperkins.com/about/",
+          "source_id": "kp_about"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "kp_about",
+          "source_url": "https://www.kleinerperkins.com/about/",
+          "source_title": "About | Kleiner Perkins",
+          "source_content_hash": "31094c6fa781170a2251b675b59674f81031cbcebe495c8b2eec4f7115bd5f9f",
+          "quote": "For five decades we have partnered with intrepid founders to build iconic companies that made history. Today, Kleiner Perkins continues that legacy, investing in founders with bold ideas that span industries and continents, partnering with them from inception to IPO and beyond to maximize the potential of their ideas.",
+          "quote_hash": "ef9f5d49eeaa7661a644ec18334f865187a5bd9565cfd4e41c5149c6687ae704"
+        }
+      ],
+      "last_verified_at": "2026-09-25"
+    },
+    "INV-b78500cd12b6ee": {
+      "summary": "8VC 是一家科技投资机构，同时参与创建其希望支持的科技公司。官网列示医疗、生命科学、制造、企业软件、物流和国防等领域，并介绍其投资、投后支持与基金运营团队。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "科技投资机构，兼有公司创建业务",
+          "source_id": "8vc_home"
+        },
+        {
+          "field": "sectors",
+          "label": "官网列示领域",
+          "value": [
+            "生命科学",
+            "医疗",
+            "制造",
+            "企业软件",
+            "物流",
+            "国防"
+          ],
+          "source_id": "8vc_home"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "官网称，自 2016 年以来其已创建 42 家公司；该统计为机构网站自述。",
+          "source_id": "8vc_home"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "8vc.com",
+          "url": "https://8vc.com/",
+          "source_id": "8vc_home"
+        },
+        {
+          "kind": "address",
+          "label": "官网列示地址",
+          "value": "907 South Congress Avenue, Austin, TX 78704",
+          "url": "https://8vc.com/",
+          "source_id": "8vc_home"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "8vc_home",
+          "source_url": "https://8vc.com/",
+          "source_title": "8VC | A different kind of VC firm",
+          "source_content_hash": "37b77db4b5ee1fc557bdd02d29470c6f3fc438a6ad657b3c08e24c87261a10d3",
+          "quote": "8VC is a technology investment firm that builds and invests in the world’s most ambitious companies. Life Sciences. Healthcare. Manufacturing. Enterprise. Logistics. Defense. 42 companies founded since 2016. 907 South Congress Avenue, Austin, TX 78704.",
+          "quote_hash": "a31ee06d5e18ff38f682f7a36645d1791229e2a75c161746a7b8a3919ba675af"
+        }
+      ],
+      "last_verified_at": "2026-09-25"
+    },
     "INV-7a5c599caeb7de": {
       "summary": "Y Combinator 是面向初创公司的加速器和种子投资机构，按批次提供资金，并在项目期间与创始团队密集协作。",
       "facts": [
@@ -2254,6 +2783,140 @@
     }
   },
   "people": {
+    "EN-76321ef882a8d28c": {
+      "summary": "韩峰涛是千寻智能创始人兼 CEO。公司官方文章称其曾带领团队开发工业及协作机器人产品矩阵；公开资料未披露其过往任职机构与具体任期，本档案不据此补推履历。",
+      "current_roles": [
+        {
+          "title": "创始人兼首席执行官",
+          "organization": "千寻智能（Spirit AI）",
+          "source_id": "spirit_han"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "experience_summary": "公司官方简介提到其机器人产品开发与商业化经历，但未给出可核验的前雇主、职务或任职时间。",
+      "track_record": [
+        {
+          "description": "千寻智能官方文章称，在韩峰涛此前带领下，团队曾打造工业机器人与协作机器人产品矩阵，研发近百款机型并实现多行业商业化；该信息为公司自述。",
+          "source_id": "spirit_han"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "spirit_han",
+          "source_url": "https://www.spirit-ai.com/news/5",
+          "source_title": "仅成立一年冲刺独角兽！千寻智能实力上榜",
+          "source_content_hash": "824ebc89e1788b8ed54f7b9583bf63cde414cdfea104b255b6ab3e28c1279c16",
+          "quote": "千寻智能创始人兼CEO韩峰涛。",
+          "quote_hash": "66801417d1d3083bce8a805a0e91f6660ce8c84400b52ae4a7039d05dde6a8bf"
+        }
+      ],
+      "last_verified_at": "2026-09-25"
+    },
+    "EN-cff3f5ad4207bd3f": {
+      "summary": "高阳是千寻智能联合创始人及首席科学家，研究和工作方向涉及机器人学习与具身智能。投资机构高鹄资本发布的项目资料披露了其清华本科及加州大学伯克利分校博士研究经历。",
+      "current_roles": [
+        {
+          "title": "联合创始人、首席科学家",
+          "organization": "千寻智能（Spirit AI）",
+          "source_id": "spirit_han"
+        }
+      ],
+      "career": [
+        {
+          "organization": "加州大学伯克利分校",
+          "title": "博士研究人员",
+          "period": "具体任期未披露",
+          "description": "高鹄资本资料称其在 Trevor Darrell 团队攻读博士，并在博士后阶段与 Pieter Abbeel 团队合作；此处仅记录来源明确的研究经历。",
+          "source_id": "gaoyang_bio"
+        }
+      ],
+      "education": [
+        {
+          "institution": "清华大学",
+          "qualification": "本科；专业未披露",
+          "source_id": "gaoyang_bio"
+        },
+        {
+          "institution": "加州大学伯克利分校",
+          "qualification": "博士研究经历；学位授予信息未由该来源明确表述",
+          "source_id": "gaoyang_bio"
+        }
+      ],
+      "experience_summary": "公开资料支持其作为机器人学习与具身智能研究者及创业团队联合创始人的身份；导师合作与学历描述来自投资方发布资料。",
+      "track_record": [],
+      "sources": [
+        {
+          "source_id": "spirit_han",
+          "source_url": "https://www.spirit-ai.com/news/5",
+          "source_title": "仅成立一年冲刺独角兽！千寻智能实力上榜",
+          "source_content_hash": "824ebc89e1788b8ed54f7b9583bf63cde414cdfea104b255b6ab3e28c1279c16",
+          "quote": "联合创始人高阳。",
+          "quote_hash": "cfa483b9b2b8abc7c10a1e8af43324ae32f54aa415598bf55e31e401e75a5c6f"
+        },
+        {
+          "source_id": "gaoyang_bio",
+          "source_url": "https://www.cygnusequity.com/news/1115.html",
+          "source_title": "商业化落地驶入快车道，千寻智能完成天使+轮融资",
+          "source_content_hash": "a08e84225dc7061edf93070a2b137380dd5f377698eb2450fadecd5f6131e24f",
+          "quote": "联合创始人高阳，本科毕业于清华大学，在Trevor Darrell团队攻读博士。",
+          "quote_hash": "42af558a6149465009f6f3c1c9c23e25ea3d8cda748d83a9ec3e941559de77af"
+        }
+      ],
+      "last_verified_at": "2026-09-25"
+    },
+    "EN-afe83d67b608a913": {
+      "summary": "梅涛是智象未来创始人兼首席执行官、中国科学技术大学校友及加拿大工程院外籍院士。中国科大校友会资料还记录其曾在微软亚洲研究院从事多媒体分析与计算机视觉研究。",
+      "current_roles": [
+        {
+          "title": "创始人兼首席执行官",
+          "organization": "智象未来（HiDream.ai）",
+          "source_id": "meitao_ustc_current"
+        }
+      ],
+      "career": [
+        {
+          "organization": "微软亚洲研究院",
+          "title": "资深研究员",
+          "period": "加入京东前；具体任期未披露",
+          "description": "中国科大校友会资料记载，梅涛加入京东前曾任微软亚洲研究院资深研究员。",
+          "source_id": "meitao_ustc_bio"
+        }
+      ],
+      "education": [
+        {
+          "institution": "中国科学技术大学",
+          "qualification": "校友；院系与学位未在所引来源明确标注",
+          "source_id": "meitao_ustc_bio"
+        }
+      ],
+      "experience_summary": "公开校友资料记载其研究领域包括多媒体分析与计算机视觉，并列出 IEEE、IAPR 会士等专业身份；未据此推定未公开的学位或任期。",
+      "track_record": [
+        {
+          "description": "中国科大校友会资料称其在多媒体分析与应用领域发表论文 300 余篇并拥有 50 余项美国及国际专利；该页面未提供论文与专利清单，本条按来源自述呈现。",
+          "source_id": "meitao_ustc_bio"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "meitao_ustc_current",
+          "source_url": "https://aga.ustc.edu.cn/info/1197/35914.htm",
+          "source_title": "梅涛院士做客STIM²讲堂",
+          "source_content_hash": "1a1134000267eef8b7c36682f9cbfe57d54db06ab306e197f9e1d076d2f7e816",
+          "quote": "智象未来创始人兼首席执行官梅涛博士。",
+          "quote_hash": "cb0e67639b5fb889a195a6314e0a5350a1bfdf6ea9ead9c5251452f790b513af"
+        },
+        {
+          "source_id": "meitao_ustc_bio",
+          "source_url": "https://aga.ustc.edu.cn/info/1197/26144.htm",
+          "source_title": "梅涛当选加拿大工程院外籍院士 - 中国科学技术大学校友总会",
+          "source_content_hash": "f87a70da8f6d7417afba249986419f159e112c8c4862f1d628d9814f0fa0fe94",
+          "quote": "梅涛博士为我校9610校友；加入京东之前，曾担任微软亚洲研究院资深研究员。",
+          "quote_hash": "36d7120d9a2df0f554dfc0139e5eef564e9ff25b291f49c23a60180ed6a493fc"
+        }
+      ],
+      "last_verified_at": "2026-09-25"
+    },
     "EN-e3ab81e0f7bb06ad": {
       "summary": "Garry Tan 是 Y Combinator 总裁兼首席执行官及 General Partner；其经历包括创业、产品设计与工程管理、风险投资和加速器运营。",
       "current_roles": [

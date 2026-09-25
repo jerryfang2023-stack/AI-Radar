@@ -64,7 +64,7 @@ for (const investor of investorData.institutions || []) {
     continue;
   }
   const kind = investor.investor_kind === "individual" ? "person" : investor.investor_kind === "unverified_investor" ? "unverified" : "organization";
-  const coverageStatus = kind === "unverified" ? "identity_unverified" : "activity_only";
+  const coverageStatus = "activity_only";
   const sources = activityEvidence.map((item) => item.source);
   const latest = investor.latest_disclosed_at || investor.first_disclosed_at || asOf;
   const details = activityEvidence.map(({ activity, source }) => trackedActivity(activity, source.source_id));
@@ -73,7 +73,7 @@ for (const investor of investorData.institutions || []) {
     profile_type: kind,
     coverage_status: coverageStatus,
     coverage_note: kind === "unverified"
-      ? "目前只有融资披露中的参投记录，名称对应的法律主体、机构或个人身份尚未核实；请勿将本条视为已确认机构档案。"
+      ? "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。"
       : "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
     summary: `${investor.name} 当前按“${kindLabel}”收录。最新融资披露记录日期为 ${latest}；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。`,
     facts: [],

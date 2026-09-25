@@ -667,54 +667,53 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录，名称对应的法律主体、机构或个人身份尚未核实；请勿将本条视为已确认机构档案。",
-      "summary": "Kleiner Perkins 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Kleiner Perkins 是一家风险投资机构，官网称其五十年来持续与创业者合作，并覆盖从创业初期到 IPO 及之后的阶段。",
+      "facts": [
+        {
+          "field": "investment_stages",
+          "label": "官网披露的支持阶段",
+          "value": [
+            "创业初期",
+            "IPO 及之后"
+          ],
+          "source_id": "kp_about"
+        },
+        {
+          "field": "history",
+          "label": "机构历史",
+          "value": "官网称与创业者合作已有五十年",
+          "source_id": "kp_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Profound · D轮 · 2026-09-15 · 本轮联合领投 · $180M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-bed55d4f5e02a374"
-        },
-        {
-          "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮参投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-61aa8db010b34dfa"
-        },
-        {
-          "description": "融资来源记录：Etched · D轮 · 2026-08-19 · 本轮参投 · $700m。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-134a8e8124653c90"
+          "description": "机构官网将其定位为跨行业、跨地区与创始人合作的投资者，并称合作可从创立初期延续至 IPO 及之后；官网另列有 Amazon、Twitter、Compaq 等案例。本档案不将案例列表视为完整投资组合或收益业绩。",
+          "source_id": "kp_about"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "kleinerperkins.com",
+          "url": "https://www.kleinerperkins.com/about/",
+          "source_id": "kp_about"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-bed55d4f5e02a374",
-          "source_url": "https://techcrunch.com/2026/09/15/aeo-startup-profound-hits-unicorn-valuation-raises-180m-series-d-7-months-after-last-round",
-          "source_title": "AEO 创业公司 Profound 融资 1.8 亿美元，估值达 18 亿美元",
-          "source_content_hash": "8c26f4447adaeabc",
-          "quote": "Sequoia and Kleiner Perkins led the round",
-          "quote_hash": "d4d9e59aedc610a257eec88140bbe4eb526f5e2384d02fe9df4a43ae1ac2be3b"
-        },
-        {
-          "source_id": "FISRC-61aa8db010b34dfa",
-          "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
-          "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
-          "source_content_hash": "274ba4a54870c633",
-          "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
-          "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
-        },
-        {
-          "source_id": "FISRC-134a8e8124653c90",
-          "source_url": "https://www.verdict.co.uk/etched-bags-700m/",
-          "source_title": "Etched 以210亿美元估值融资7亿美元，向Jane Street交付首台机架",
-          "source_content_hash": "e0e9398bf1a24e32",
-          "quote": "The round was led by Jane Street, with participation from Sequoia Capital, Kleiner Perkins, Andreessen Horowitz, Bain Capital Ventures, Stripes, Positive Sum, Tiger Global, Neo, Primary, and Blackstone.",
-          "quote_hash": "0c948f9a83fe6bf02d914e718b9524770cd022630e09f51c42213bd98f467b90"
+          "source_id": "kp_about",
+          "source_url": "https://www.kleinerperkins.com/about/",
+          "source_title": "About | Kleiner Perkins",
+          "source_content_hash": "31094c6fa781170a2251b675b59674f81031cbcebe495c8b2eec4f7115bd5f9f",
+          "quote": "For five decades we have partnered with intrepid founders to build iconic companies that made history. Today, Kleiner Perkins continues that legacy, investing in founders with bold ideas that span industries and continents, partnering with them from inception to IPO and beyond to maximize the potential of their ideas.",
+          "quote_hash": "ef9f5d49eeaa7661a644ec18334f865187a5bd9565cfd4e41c5149c6687ae704"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-25",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

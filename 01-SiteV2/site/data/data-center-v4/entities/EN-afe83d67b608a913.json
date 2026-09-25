@@ -122,41 +122,58 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "梅涛 的来源线索将其与智象未来（创始人兼CEO）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "梅涛是智象未来创始人兼首席执行官、中国科学技术大学校友及加拿大工程院外籍院士。中国科大校友会资料还记录其曾在微软亚洲研究院从事多媒体分析与计算机视觉研究。",
+      "current_roles": [
+        {
+          "title": "创始人兼首席执行官",
+          "organization": "智象未来（HiDream.ai）",
+          "source_id": "meitao_ustc_current"
+        }
+      ],
       "career": [
         {
-          "organization": "智象未来",
-          "title": "创始人兼CEO",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将梅涛与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-9d4811d701a7c9af"
+          "organization": "微软亚洲研究院",
+          "title": "资深研究员",
+          "period": "加入京东前；具体任期未披露",
+          "description": "中国科大校友会资料记载，梅涛加入京东前曾任微软亚洲研究院资深研究员。",
+          "source_id": "meitao_ustc_bio"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "中国科学技术大学",
+          "qualification": "校友；院系与学位未在所引来源明确标注",
+          "source_id": "meitao_ustc_bio"
+        }
+      ],
+      "experience_summary": "公开校友资料记载其研究领域包括多媒体分析与计算机视觉，并列出 IEEE、IAPR 会士等专业身份；未据此推定未公开的学位或任期。",
+      "track_record": [
+        {
+          "description": "中国科大校友会资料称其在多媒体分析与应用领域发表论文 300 余篇并拥有 50 余项美国及国际专利；该页面未提供论文与专利清单，本条按来源自述呈现。",
+          "source_id": "meitao_ustc_bio"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-9d4811d701a7c9af",
-          "source_url": "https://finance.sina.com.cn/jjxw/2026-07-23/doc-iniitzpn4522804.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "e624d91e5d6eb536",
-          "quote": "智象未来创始人兼CEO梅涛",
-          "quote_hash": "cc4d134244c33259e32a557fb11f21f9e1a0447a6c4888b1393837d5236b2bde"
+          "source_id": "meitao_ustc_current",
+          "source_url": "https://aga.ustc.edu.cn/info/1197/35914.htm",
+          "source_title": "梅涛院士做客STIM²讲堂",
+          "source_content_hash": "1a1134000267eef8b7c36682f9cbfe57d54db06ab306e197f9e1d076d2f7e816",
+          "quote": "智象未来创始人兼首席执行官梅涛博士。",
+          "quote_hash": "cb0e67639b5fb889a195a6314e0a5350a1bfdf6ea9ead9c5251452f790b513af"
         },
         {
-          "source_id": "FISRC-4d687a4fc686b2ca",
-          "source_url": "https://news.pedaily.cn/202604/562811.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "851216ca8d305d29",
-          "quote": "智象未来创始人兼CEO梅涛博士表示",
-          "quote_hash": "131915f9eb1f3e6b7bdfc89a56a29fc7186ea62c9d833717e20fb04b9f6f9738"
+          "source_id": "meitao_ustc_bio",
+          "source_url": "https://aga.ustc.edu.cn/info/1197/26144.htm",
+          "source_title": "梅涛当选加拿大工程院外籍院士 - 中国科学技术大学校友总会",
+          "source_content_hash": "f87a70da8f6d7417afba249986419f159e112c8c4862f1d628d9814f0fa0fe94",
+          "quote": "梅涛博士为我校9610校友；加入京东之前，曾担任微软亚洲研究院资深研究员。",
+          "quote_hash": "36d7120d9a2df0f554dfc0139e5eef564e9ff25b291f49c23a60180ed6a493fc"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-25",
+      "coverage_status": "researched",
+      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
     }
   },
   "relatedEntities": [],

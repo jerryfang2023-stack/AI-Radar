@@ -646,54 +646,103 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "启明创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "启明创投是一家专注科技与医疗创新领域早期、成长期企业的风险投资机构。其官网公开机构成立时间、管理基金概况及创业项目联系渠道；规模类数字按官网自述呈现。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2006",
+          "source_id": "qiming_about"
+        },
+        {
+          "field": "investment_stages",
+          "label": "官网披露的投资阶段",
+          "value": [
+            "早期",
+            "成长期"
+          ],
+          "source_id": "qiming_about"
+        },
+        {
+          "field": "sectors",
+          "label": "官网披露的重点领域",
+          "value": [
+            "科技",
+            "医疗创新"
+          ],
+          "source_id": "qiming_about"
+        },
+        {
+          "field": "funds_under_management",
+          "label": "官网披露的基金数量",
+          "value": "11只美元基金、7只人民币基金",
+          "source_id": "qiming_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2006",
+          "description": "启明创投官网记载机构成立于 2006 年。",
+          "source_id": "qiming_about"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：讯兔科技 · B轮 · 2026-09-14 · 本轮参投 · 超3亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-9cb02e3c79eee3a9"
-        },
-        {
-          "description": "融资来源记录：讯兔科技 · B轮 · 2026-09-14 · A轮共同领投 · 超3亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-5a92715d1392fa36"
-        },
-        {
-          "description": "融资来源记录：天鹜科技 · A++轮 · 2026-07-13 · 老股东持续加注 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-a638483ec7304070"
+          "description": "官网称其投资组合中有企业在多地交易所上市或经并购退出，并披露了独角兽企业数量；因页面为滚动更新且未明确每项统计基准日，本档案不将这些机构自述数字作为独立核实的业绩。",
+          "source_id": "qiming_about"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "qimingvc.com",
+          "url": "https://www.qimingvc.com/cn/about",
+          "source_id": "qiming_about"
+        },
+        {
+          "kind": "email",
+          "label": "商业计划书投递",
+          "value": "BP@qimingvc.com",
+          "url": "https://www.qimingvc.com/cn/contact",
+          "source_id": "qiming_contact"
+        },
+        {
+          "kind": "email",
+          "label": "一般联系",
+          "value": "contactus@qimingvc.com",
+          "url": "https://www.qimingvc.com/cn/contact",
+          "source_id": "qiming_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "上海办公室",
+          "value": "+86 21 6101 6522",
+          "url": "https://www.qimingvc.com/cn/contact",
+          "source_id": "qiming_contact"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-9cb02e3c79eee3a9",
-          "source_url": "https://www.chinaventure.com.cn/news/113-20260914-393253.html",
-          "source_title": "讯兔科技（Alpha派）完成超3亿元B轮融资 - 投中网",
-          "source_content_hash": "8fe6314513f8ae80",
-          "quote": "同时获得启明创投、琥珀资本、嘉程资本、信宸资本、钟鼎资本等头部创投机构和老股东的鼎力支持。",
-          "quote_hash": "525d793492e8013463cac8e89c6155b24d4fb05faf0bd098107e4d08d67317b2"
+          "source_id": "qiming_about",
+          "source_url": "https://www.qimingvc.com/cn/about",
+          "source_title": "关于 | 启明创投",
+          "source_content_hash": "7e03b1afbc5657d500930bb574274d03b74290841ac9705162d1bf58244c8c42",
+          "quote": "启明创投成立于2006年。目前旗下管理11只美元基金、7只人民币基金。",
+          "quote_hash": "aaea1621e175c9884577492f25f5f841209cc8e1f563d4d5b040082cf46c482a"
         },
         {
-          "source_id": "FISRC-5a92715d1392fa36",
-          "source_url": "https://finance.sina.com.cn/wm/2026-03-26/doc-inhsiqkn0105281.shtml",
-          "source_title": "讯兔科技（Alpha派）完成近2亿元A轮融资：金融行业是AI垂直落地的最优赛道|AI_新浪财经_新浪网",
-          "source_content_hash": "788675d51c86fa8d",
-          "quote": "启明创投、红杉中国、高瓴创投共同领投",
-          "quote_hash": "f68859618444ccfdb00daa69a9581dc1aaaa5cce420db9e71307ab2c55cf9e1d"
-        },
-        {
-          "source_id": "FISRC-a638483ec7304070",
-          "source_url": "https://news.pedaily.cn/202607/566169.shtml",
-          "source_title": "「天鹜科技」完成数亿元A++轮融资，推进AI驱动蛋白质研发平台建设",
-          "source_content_hash": "06a0df416cf83674",
-          "quote": "老股东 启明创投、涌铧投资、金沙江联合资本润璞医疗基金、本草资本、上海科创基金持续加注",
-          "quote_hash": "cd2a756f5925f986d0e5a08c4a75bf5644810d1d8e4468c86a2f92d2cb53c7ce"
+          "source_id": "qiming_contact",
+          "source_url": "https://www.qimingvc.com/cn/contact",
+          "source_title": "联系 | 启明创投",
+          "source_content_hash": "f507ba55dfacdc11b8f3c4565f4f6c6b4b94bc359fe1f5f2556f6cb936e6fea7",
+          "quote": "BP投递：BP@qimingvc.com。启明上海电话：+86 21 6101 6522。",
+          "quote_hash": "fef70ce02691f8382cf792462fbe4a833c4aa4594a0b72e9402c9fab2f0d8950"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-25",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

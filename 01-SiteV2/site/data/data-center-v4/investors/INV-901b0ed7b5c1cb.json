@@ -646,54 +646,53 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "深创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "summary": "深圳市创新投资集团有限公司（深创投）是以创业投资为核心的综合性投资集团。其 2024 年度报告披露了注册地址、公开服务邮箱和总机等企业信息。",
+      "facts": [
         {
-          "description": "融资来源记录：因克斯 · B轮 · 2026-09-15 · 老股东持续多轮追投 · 超3亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-d0c3dca85d845330"
-        },
-        {
-          "description": "融资来源记录：爱诗科技 · C轮 · 2026-07-14 · B轮跟投 · 29.8亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-09c3ca37737a71ce"
-        },
-        {
-          "description": "融资来源记录：深度智控 · B轮 · 2026-07-09 · A+轮投资方 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-67ccadc4294defd6"
+          "field": "organization_type",
+          "label": "机构定位",
+          "value": "以创业投资为核心的综合性投资集团",
+          "source_id": "scgc_report"
         }
       ],
-      "contacts": [],
+      "milestones": [],
+      "track_record": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "szvc.com.cn",
+          "url": "https://www.szvc.com.cn/",
+          "source_id": "scgc_report"
+        },
+        {
+          "kind": "email",
+          "label": "公开服务邮箱",
+          "value": "service@szvc.com.cn",
+          "url": "https://www.szvc.com.cn/uploads/2025-06-30/696a71ea-4309-4a87-ad1b-6bc47452bc7e1751278504265.pdf",
+          "source_id": "scgc_report"
+        },
+        {
+          "kind": "phone",
+          "label": "公开联系电话",
+          "value": "0755-88993888",
+          "url": "https://www.szvc.com.cn/uploads/2025-06-30/696a71ea-4309-4a87-ad1b-6bc47452bc7e1751278504265.pdf",
+          "source_id": "scgc_report"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-d0c3dca85d845330",
-          "source_url": "https://news.pedaily.cn/202609/569015.shtml",
-          "source_title": "「因克斯ENCOS」完成3亿元B轮融资，深耕具身智能关节模组",
-          "source_content_hash": "e86bd6fffaf894b4",
-          "quote": "同时 复星创富、深创投、华控基金、锦秋基金、普华资本作为老股东持续多轮追投。",
-          "quote_hash": "0553874275a9d1405d1a0f8e1cc88e61b74f557cf7f1adcb9fac56dd7353f161"
-        },
-        {
-          "source_id": "FISRC-09c3ca37737a71ce",
-          "source_url": "https://stcn.com/article/detail/3386786.html",
-          "source_title": "爱诗科技完成B+轮融资 ARR突破4000万美金",
-          "source_content_hash": "edea92990a31710b",
-          "quote": "该轮融资由阿里巴巴领投，达晨财智、深创投、北京市AI基金、湖南电广传媒、巨人网络和Antler跟投。",
-          "quote_hash": "3e1964c5d30ce70d2f0eb1a20d63918f13352c60a9351bd4858c52ac3f5ff015"
-        },
-        {
-          "source_id": "FISRC-67ccadc4294defd6",
-          "source_url": "https://pitchhub.36kr.com/project/1958573801870344",
-          "source_title": "深度智控 | 项目信息-36氪",
-          "source_content_hash": "ed75aafa3d8feb1d",
-          "quote": "A+轮 2023-05 数亿人民币 深创投 ， 招商局创投 ， Forebright Capital ， HongShan红杉中国 ， 源码资本",
-          "quote_hash": "01231602863d5c406a1b7918938ddc5c99d1a6768495ed555c9506928ed11ad4"
+          "source_id": "scgc_report",
+          "source_url": "https://www.szvc.com.cn/uploads/2025-06-30/696a71ea-4309-4a87-ad1b-6bc47452bc7e1751278504265.pdf",
+          "source_title": "深圳市创新投资集团有限公司2024年度报告",
+          "source_content_hash": "695d6219518646fcf1ecb3d37ef26e65306678eb465432a87d464ff55efab128",
+          "quote": "经营范围：创业投资业务。联系电话：0755-88993888；电子信箱：service@szvc.com.cn。",
+          "quote_hash": "471328d4f4406107854ffe9575e9c659910a1d48b96c58c10f1523a459f760f3"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-25",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }
