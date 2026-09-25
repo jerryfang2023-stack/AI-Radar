@@ -27362,22 +27362,49 @@
         }
       ],
       "public_profile": {
-        "coverage_status": "activity_only",
-        "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-        "summary": "毛继明 的来源线索将其与极佳视界（合伙人&工程副总裁）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-        "current_roles": [],
-        "career": [
+        "summary": "毛继明现与极佳视界关联，公开履历包括百度Apollo仿真与云端工程架构、嬴彻架构工作，以及当前的工程管理职责。其演讲主题涉及分布式系统、自动驾驶仿真和世界模型；教育背景与完整任职年份未披露。",
+        "current_roles": [
           {
+            "title": "合伙人、工程副总裁",
             "organization": "极佳视界",
-            "title": "合伙人&工程副总裁",
-            "period": "来源记录于 2026-09-12；任职起止时间未披露",
-            "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
             "source_id": "FISRC-a1fb846b5355af64"
           }
         ],
+        "career": [
+          {
+            "organization": "百度自动驾驶事业部 / Apollo",
+            "title": "资深架构师、无人驾驶云端工程架构技术负责人",
+            "period": "2017年公开活动资料所载；起止时间未披露",
+            "description": "百度 Apollo 开发者活动介绍其负责云端工程架构并关注分布式无人车仿真云平台。",
+            "source_id": "mao_jiming_baidu_apollo_2017"
+          },
+          {
+            "organization": "嬴彻科技",
+            "title": "架构师",
+            "period": "具体任期未披露",
+            "description": "融资报道及公开人物资料列示的过往任职。",
+            "source_id": "FISRC-a1fb846b5355af64"
+          },
+          {
+            "organization": "极佳视界",
+            "title": "合伙人、工程副总裁",
+            "period": "公开报道于2026年记录；任期未披露",
+            "description": "公开资料记载其负责工程研发与架构相关工作。",
+            "source_id": "mao_jiming_speech_2025"
+          }
+        ],
         "education": [],
-        "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-        "track_record": [],
+        "experience_summary": "公开资料支持其在百度Apollo自动驾驶仿真与云端工程架构、嬴彻科技架构工作及极佳视界工程管理方面的经历。来源未提供学历、精确任期或各项目的个人贡献拆分。",
+        "track_record": [
+          {
+            "description": "百度 Apollo 活动页称其关注并负责建设分布式无人车仿真云平台；这反映其当时承担的技术方向。",
+            "source_id": "mao_jiming_baidu_apollo_2017"
+          },
+          {
+            "description": "其公开演讲介绍DriveDreamer系列世界模型研发与产业落地；对外材料称服务自动驾驶及机器人客户，具体个人贡献和客户清单未披露。",
+            "source_id": "mao_jiming_speech_2025"
+          }
+        ],
         "sources": [
           {
             "source_id": "FISRC-a1fb846b5355af64",
@@ -27394,8 +27421,26 @@
             "source_content_hash": "7d9409a9ba1e94fc",
             "quote": "合伙人&工程副总裁毛继明，曾任百度、嬴彻架构师，担任过百度Apollo仿真技术负责人。",
             "quote_hash": "c95c54a49064321c8f305bc47a6f8f7588d9eaf17667f961cd56bc33f5a05376"
+          },
+          {
+            "source_id": "mao_jiming_baidu_apollo_2017",
+            "source_url": "https://www.bagevent.com/event/apollo",
+            "source_title": "百度 Apollo 开发者公开课｜讲师介绍与活动资料",
+            "source_content_hash": "1145be3c137baeabab3adfd194065bea45a3c8cca7ccdd51d9ecb634694bf9ce",
+            "quote": "毛继明，百度自动驾驶事业部资深架构师，百度无人驾驶云端工程架构技术负责人。目前重点关注分布式无人车仿真云平台的构建。",
+            "quote_hash": "5a7a18cdc9cdabb34c1ba95279af7f9de9d4b8da0162ac482506804ebfb5d804"
+          },
+          {
+            "source_id": "mao_jiming_speech_2025",
+            "source_url": "https://www.sohu.com/a/858716200_121954550",
+            "source_title": "极佳科技毛继明详解：世界模型究竟是什么？有啥用？怎么用？",
+            "source_content_hash": "8dc9bf020b481130ff79037960cf4288f80099a5a6ea49d9372e97bd80d2c2d3",
+            "quote": "毛继明简介：极佳科技合伙人&副总裁，拥有超过16年的工程研发与架构经验，专注于大规模分布式系统和自动驾驶仿真技术。",
+            "quote_hash": "3ea033e42c9c377dce5cb26d50fd0b9ed8f5d5a21f0364d889592944712bf22d"
           }
         ],
+        "coverage_status": "researched",
+        "coverage_note": "百度Apollo活动资料核实其2017年前后技术职责，公开演讲材料补充工程方向；公司成果不视为个人独立成果。学历、具体任职时间待更多一手披露。",
         "last_verified_at": "2026-09-25"
       }
     },
@@ -29139,22 +29184,45 @@
         }
       ],
       "public_profile": {
-        "coverage_status": "activity_only",
-        "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-        "summary": "孙韶言 的来源线索将其与极佳视界（联合创始人）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-        "current_roles": [],
+        "summary": "孙韶言是极佳视界联合创始人。公开融资报道记载其曾任阿里云总监、地平线数据闭环产品线总经理，并负责大规模物理世界数据闭环产品与架构方向；学历、具体任期和可量化业绩未见可靠公开披露。",
+        "current_roles": [
+          {
+            "title": "联合创始人",
+            "organization": "极佳视界",
+            "source_id": "FISRC-a1fb846b5355af64"
+          }
+        ],
         "career": [
+          {
+            "organization": "阿里云",
+            "title": "总监",
+            "period": "具体任期未披露",
+            "description": "公开融资报道所列过往职务。",
+            "source_id": "FISRC-a1fb846b5355af64"
+          },
+          {
+            "organization": "地平线",
+            "title": "数据闭环产品线总经理",
+            "period": "具体任期未披露",
+            "description": "公开融资报道所列过往职务。",
+            "source_id": "FISRC-a1fb846b5355af64"
+          },
           {
             "organization": "极佳视界",
             "title": "联合创始人",
-            "period": "来源记录于 2026-09-12；任职起止时间未披露",
-            "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
+            "period": "公开报道于2026年记录；创立时间未披露",
+            "description": "公开融资报道将其列为公司联合创始人。",
             "source_id": "FISRC-a1fb846b5355af64"
           }
         ],
         "education": [],
-        "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-        "track_record": [],
+        "experience_summary": "公开融资材料概述其曾在阿里云和地平线负责管理及数据闭环产品，并以联合创始人身份参与极佳视界。没有核实到其学历、精确任职时间或完整公司关联记录。",
+        "track_record": [
+          {
+            "description": "公开人物资料称其在大规模物理世界数据闭环产品和架构方面具有经验，并曾负责相关系统落地；报道未提供可独立审计的效率提升数据。",
+            "source_id": "FISRC-fdfe58e2e68c7e9e"
+          }
+        ],
         "sources": [
           {
             "source_id": "FISRC-a1fb846b5355af64",
@@ -29173,6 +29241,8 @@
             "quote_hash": "5e32a93a8c034ed21fc53a6f0163124ca9eb55c0864dc5dab2ff69fdace96a20"
           }
         ],
+        "coverage_status": "researched",
+        "coverage_note": "以两篇独立融资报道交叉确认阿里云、地平线及极佳视界关联；尚无本人或前雇主一手人物档案，学历、任期及业绩数据留空。",
         "last_verified_at": "2026-09-25"
       }
     },
@@ -34012,22 +34082,52 @@
         }
       ],
       "public_profile": {
-        "coverage_status": "activity_only",
-        "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-        "summary": "朱政 的来源线索将其与极佳视界（联合创始人、首席科学家）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-        "current_roles": [],
-        "career": [
+        "summary": "朱政是极佳视界联合创始人、首席科学家，研究方向涵盖视觉感知、目标跟踪、自动驾驶感知与世界模型。中国科学院大学讲座报道其博士及博士后经历、论文与研究成果；统计口径按报道所载时间保留。",
+        "current_roles": [
           {
-            "organization": "极佳视界",
             "title": "联合创始人、首席科学家",
-            "period": "来源记录于 2026-09-12；任职起止时间未披露",
-            "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
+            "organization": "极佳视界",
             "source_id": "FISRC-a1fb846b5355af64"
           }
         ],
-        "education": [],
-        "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-        "track_record": [],
+        "career": [
+          {
+            "organization": "清华大学自动化系",
+            "title": "博士后研究人员",
+            "period": "2019年至2021年",
+            "description": "中国科学院大学讲座报道的科研经历。",
+            "source_id": "zheng_zheng_ucas_2026"
+          },
+          {
+            "organization": "极佳视界",
+            "title": "联合创始人、首席科学家",
+            "period": "公开报道于2026年记录；起始年份未披露",
+            "description": "负责世界模型及具身基础模型相关研究与技术工作；当前头衔由公开报道支持。",
+            "source_id": "FISRC-a1fb846b5355af64"
+          }
+        ],
+        "education": [
+          {
+            "institution": "中国科学院自动化研究所",
+            "qualification": "博士；2019年毕业",
+            "source_id": "zheng_zheng_ucas_2026"
+          }
+        ],
+        "experience_summary": "公开高校讲座材料记载其在视觉跟踪、自动驾驶感知与世界模型方向的研究经历，并报道了在清华大学自动化系开展博士后研究。该材料未披露博士专业细目、博士后之后的完整任职时间线。",
+        "track_record": [
+          {
+            "description": "高校讲座人物介绍称其发表论文70余篇、引用逾1.9万次，并连续4年入选全球前2%顶尖科学家；这些为来源页面截至发布时的统计口径。",
+            "source_id": "zheng_zheng_ucas_2026"
+          },
+          {
+            "description": "同一人物介绍列出SiamRPN、DaSiamRPN、BEVDet、WebFace260M等代表成果，并称部分研究被集成进OpenCV、产业方案或科研机构采用。",
+            "source_id": "zheng_zheng_ucas_2026"
+          },
+          {
+            "description": "中国科学院大学报道朱政介绍极佳视界的GigaBrain、GigaWorld与DriveDreamer系列研究；产品成果归属公司团队，不等同于个人单独成果。",
+            "source_id": "zheng_zheng_ucas_2026"
+          }
+        ],
         "sources": [
           {
             "source_id": "FISRC-a1fb846b5355af64",
@@ -34044,8 +34144,18 @@
             "source_content_hash": "7d9409a9ba1e94fc",
             "quote": "联合创始人、首席科学家朱政2019年博士毕业于中国科学院自动化研究所，此后在清华大学自动化系从事博士后研究",
             "quote_hash": "b642cb83b560fdf775c2b193a5c197d88145278ea78bd2a143ee42036fdb888b"
+          },
+          {
+            "source_id": "zheng_zheng_ucas_2026",
+            "source_url": "https://ai.ucas.ac.cn/index.php/zh-cn/kxyj/xsdt/7652-ai1",
+            "source_title": "中国科学院大学人工智能学院｜世界模型驱动的物理AI基础模型讲座",
+            "source_content_hash": "3564f2a2a0b06c62e81c9f6bf24ca7e5277ebedd81cd5464badf1164bc76e725",
+            "quote": "朱政，极佳科技联合创始人、首席科学家。2019年博士毕业于中国科学院自动化研究所；2019年至2021年在清华大学自动化系从事博士后研究。",
+            "quote_hash": "1a12f71fbfb644bc6b24c6efaaf5ea17901d5c7d86be2068e1c8a5e83f0a5298"
           }
         ],
+        "coverage_status": "researched",
+        "coverage_note": "以高校讲座报道补充教育、博士后与研究成果；履历统计和论文引用数按报道时间口径，不推断博士后之后的任职时间。",
         "last_verified_at": "2026-09-25"
       }
     },

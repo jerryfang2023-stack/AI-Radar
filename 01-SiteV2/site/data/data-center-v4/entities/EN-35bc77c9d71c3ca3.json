@@ -122,22 +122,52 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "朱政 的来源线索将其与极佳视界（联合创始人、首席科学家）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
-      "career": [
+      "summary": "朱政是极佳视界联合创始人、首席科学家，研究方向涵盖视觉感知、目标跟踪、自动驾驶感知与世界模型。中国科学院大学讲座报道其博士及博士后经历、论文与研究成果；统计口径按报道所载时间保留。",
+      "current_roles": [
         {
-          "organization": "极佳视界",
           "title": "联合创始人、首席科学家",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
+          "organization": "极佳视界",
           "source_id": "FISRC-a1fb846b5355af64"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "career": [
+        {
+          "organization": "清华大学自动化系",
+          "title": "博士后研究人员",
+          "period": "2019年至2021年",
+          "description": "中国科学院大学讲座报道的科研经历。",
+          "source_id": "zheng_zheng_ucas_2026"
+        },
+        {
+          "organization": "极佳视界",
+          "title": "联合创始人、首席科学家",
+          "period": "公开报道于2026年记录；起始年份未披露",
+          "description": "负责世界模型及具身基础模型相关研究与技术工作；当前头衔由公开报道支持。",
+          "source_id": "FISRC-a1fb846b5355af64"
+        }
+      ],
+      "education": [
+        {
+          "institution": "中国科学院自动化研究所",
+          "qualification": "博士；2019年毕业",
+          "source_id": "zheng_zheng_ucas_2026"
+        }
+      ],
+      "experience_summary": "公开高校讲座材料记载其在视觉跟踪、自动驾驶感知与世界模型方向的研究经历，并报道了在清华大学自动化系开展博士后研究。该材料未披露博士专业细目、博士后之后的完整任职时间线。",
+      "track_record": [
+        {
+          "description": "高校讲座人物介绍称其发表论文70余篇、引用逾1.9万次，并连续4年入选全球前2%顶尖科学家；这些为来源页面截至发布时的统计口径。",
+          "source_id": "zheng_zheng_ucas_2026"
+        },
+        {
+          "description": "同一人物介绍列出SiamRPN、DaSiamRPN、BEVDet、WebFace260M等代表成果，并称部分研究被集成进OpenCV、产业方案或科研机构采用。",
+          "source_id": "zheng_zheng_ucas_2026"
+        },
+        {
+          "description": "中国科学院大学报道朱政介绍极佳视界的GigaBrain、GigaWorld与DriveDreamer系列研究；产品成果归属公司团队，不等同于个人单独成果。",
+          "source_id": "zheng_zheng_ucas_2026"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-a1fb846b5355af64",
@@ -154,8 +184,18 @@
           "source_content_hash": "7d9409a9ba1e94fc",
           "quote": "联合创始人、首席科学家朱政2019年博士毕业于中国科学院自动化研究所，此后在清华大学自动化系从事博士后研究",
           "quote_hash": "b642cb83b560fdf775c2b193a5c197d88145278ea78bd2a143ee42036fdb888b"
+        },
+        {
+          "source_id": "zheng_zheng_ucas_2026",
+          "source_url": "https://ai.ucas.ac.cn/index.php/zh-cn/kxyj/xsdt/7652-ai1",
+          "source_title": "中国科学院大学人工智能学院｜世界模型驱动的物理AI基础模型讲座",
+          "source_content_hash": "3564f2a2a0b06c62e81c9f6bf24ca7e5277ebedd81cd5464badf1164bc76e725",
+          "quote": "朱政，极佳科技联合创始人、首席科学家。2019年博士毕业于中国科学院自动化研究所；2019年至2021年在清华大学自动化系从事博士后研究。",
+          "quote_hash": "1a12f71fbfb644bc6b24c6efaaf5ea17901d5c7d86be2068e1c8a5e83f0a5298"
         }
       ],
+      "coverage_status": "researched",
+      "coverage_note": "以高校讲座报道补充教育、博士后与研究成果；履历统计和论文引用数按报道时间口径，不推断博士后之后的任职时间。",
       "last_verified_at": "2026-09-25"
     }
   },

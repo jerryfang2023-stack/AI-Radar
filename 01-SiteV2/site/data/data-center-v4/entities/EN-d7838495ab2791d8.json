@@ -122,22 +122,49 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "毛继明 的来源线索将其与极佳视界（合伙人&工程副总裁）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
-      "career": [
+      "summary": "毛继明现与极佳视界关联，公开履历包括百度Apollo仿真与云端工程架构、嬴彻架构工作，以及当前的工程管理职责。其演讲主题涉及分布式系统、自动驾驶仿真和世界模型；教育背景与完整任职年份未披露。",
+      "current_roles": [
         {
+          "title": "合伙人、工程副总裁",
           "organization": "极佳视界",
-          "title": "合伙人&工程副总裁",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
           "source_id": "FISRC-a1fb846b5355af64"
         }
       ],
+      "career": [
+        {
+          "organization": "百度自动驾驶事业部 / Apollo",
+          "title": "资深架构师、无人驾驶云端工程架构技术负责人",
+          "period": "2017年公开活动资料所载；起止时间未披露",
+          "description": "百度 Apollo 开发者活动介绍其负责云端工程架构并关注分布式无人车仿真云平台。",
+          "source_id": "mao_jiming_baidu_apollo_2017"
+        },
+        {
+          "organization": "嬴彻科技",
+          "title": "架构师",
+          "period": "具体任期未披露",
+          "description": "融资报道及公开人物资料列示的过往任职。",
+          "source_id": "FISRC-a1fb846b5355af64"
+        },
+        {
+          "organization": "极佳视界",
+          "title": "合伙人、工程副总裁",
+          "period": "公开报道于2026年记录；任期未披露",
+          "description": "公开资料记载其负责工程研发与架构相关工作。",
+          "source_id": "mao_jiming_speech_2025"
+        }
+      ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "experience_summary": "公开资料支持其在百度Apollo自动驾驶仿真与云端工程架构、嬴彻科技架构工作及极佳视界工程管理方面的经历。来源未提供学历、精确任期或各项目的个人贡献拆分。",
+      "track_record": [
+        {
+          "description": "百度 Apollo 活动页称其关注并负责建设分布式无人车仿真云平台；这反映其当时承担的技术方向。",
+          "source_id": "mao_jiming_baidu_apollo_2017"
+        },
+        {
+          "description": "其公开演讲介绍DriveDreamer系列世界模型研发与产业落地；对外材料称服务自动驾驶及机器人客户，具体个人贡献和客户清单未披露。",
+          "source_id": "mao_jiming_speech_2025"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-a1fb846b5355af64",
@@ -154,8 +181,26 @@
           "source_content_hash": "7d9409a9ba1e94fc",
           "quote": "合伙人&工程副总裁毛继明，曾任百度、嬴彻架构师，担任过百度Apollo仿真技术负责人。",
           "quote_hash": "c95c54a49064321c8f305bc47a6f8f7588d9eaf17667f961cd56bc33f5a05376"
+        },
+        {
+          "source_id": "mao_jiming_baidu_apollo_2017",
+          "source_url": "https://www.bagevent.com/event/apollo",
+          "source_title": "百度 Apollo 开发者公开课｜讲师介绍与活动资料",
+          "source_content_hash": "1145be3c137baeabab3adfd194065bea45a3c8cca7ccdd51d9ecb634694bf9ce",
+          "quote": "毛继明，百度自动驾驶事业部资深架构师，百度无人驾驶云端工程架构技术负责人。目前重点关注分布式无人车仿真云平台的构建。",
+          "quote_hash": "5a7a18cdc9cdabb34c1ba95279af7f9de9d4b8da0162ac482506804ebfb5d804"
+        },
+        {
+          "source_id": "mao_jiming_speech_2025",
+          "source_url": "https://www.sohu.com/a/858716200_121954550",
+          "source_title": "极佳科技毛继明详解：世界模型究竟是什么？有啥用？怎么用？",
+          "source_content_hash": "8dc9bf020b481130ff79037960cf4288f80099a5a6ea49d9372e97bd80d2c2d3",
+          "quote": "毛继明简介：极佳科技合伙人&副总裁，拥有超过16年的工程研发与架构经验，专注于大规模分布式系统和自动驾驶仿真技术。",
+          "quote_hash": "3ea033e42c9c377dce5cb26d50fd0b9ed8f5d5a21f0364d889592944712bf22d"
         }
       ],
+      "coverage_status": "researched",
+      "coverage_note": "百度Apollo活动资料核实其2017年前后技术职责，公开演讲材料补充工程方向；公司成果不视为个人独立成果。学历、具体任职时间待更多一手披露。",
       "last_verified_at": "2026-09-25"
     }
   },
