@@ -50,6 +50,9 @@ for (const [id, profile] of Object.entries(data.institutions || {})) validatePro
 for (const [id, profile] of Object.entries(data.people || {})) validateProfile(profile, id);
 for (const [id, profile] of Object.entries(coverage?.institutions || {})) validateProfile(profile, id);
 for (const [id, profile] of Object.entries(coverage?.people || {})) validateProfile(profile, id);
+for (const [id, profile] of Object.entries(coverage?.institutions || {})) {
+  if (profile.coverage_status === "researched" && !profile.profile_type) problems.push(`missing_researched_profile_type:${id}`);
+}
 if (problems.length) {
   console.error(JSON.stringify({ ok: false, problems }, null, 2));
   process.exit(1);

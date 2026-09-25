@@ -8,6 +8,7 @@ const database = path.join(root, "01-SiteV2/content/11-databases");
 const investorData = JSON.parse(fs.readFileSync(path.join(database, "investment-institutions-v1.json"), "utf8"));
 const entityData = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/site/data/data-center-v4/indexes/entities.json"), "utf8"));
 const curated = JSON.parse(fs.readFileSync(path.join(database, "public-entity-profiles-v1.json"), "utf8"));
+const investorById = new Map((investorData.institutions || []).map((item) => [item.id, item]));
 const asOf = process.env.PUBLIC_PROFILE_AS_OF || "2026-09-25";
 const hashPattern = /^(?:[a-f0-9]{16}|[a-f0-9]{64})$/u;
 
@@ -147,8 +148,11 @@ for (const person of entityData.people || []) {
 }
 
 for (const [id, profile] of Object.entries(curated.institutions || {})) {
+  const investorKind = investorById.get(id)?.investor_kind;
+  const profileType = profile.profile_type || (investorKind === "individual" ? "person" : investorKind === "unverified_investor" ? "unverified" : "organization");
   coverage.institutions[id] = {
     ...profile,
+    profile_type: profileType,
     coverage_status: profile.coverage_status || "researched",
     coverage_note: profile.coverage_note || "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
   };
