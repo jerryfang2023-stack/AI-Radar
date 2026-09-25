@@ -353,54 +353,117 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Lux Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Lux Capital 是专注科学与技术前沿的风险投资机构，覆盖生命科学、物理科学及计算科学，并支持从早期孵化至成长阶段的公司。官网2026年1月宣布 Lux Ventures IX，基金承诺规模15亿美元；联系页当前披露AUM为70亿美元（统计时点未在页面标明），两项数据口径不同，不作累加。",
+      "facts": [
+        {
+          "field": "focus",
+          "label": "投资重点",
+          "value": [
+            "生命科学",
+            "物理科学",
+            "计算科学",
+            "AI 与计算基础设施",
+            "航空航天与国防",
+            "工业技术"
+          ],
+          "source_id": "lux_fund_ix"
+        },
+        {
+          "field": "stage",
+          "label": "投资阶段",
+          "value": "从早期孵化到扩张阶段，最新基金新闻聚焦科学与深科技创业者。",
+          "source_id": "lux_fund_ix"
+        },
+        {
+          "field": "latest_fund",
+          "label": "Lux Ventures IX",
+          "value": "15 亿美元承诺规模，2026-01-07 公告；官方称为其当时规模最大的基金。",
+          "source_id": "lux_fund_ix"
+        },
+        {
+          "field": "aum",
+          "label": "AUM",
+          "value": "70 亿美元（联系页当前披露，页面未标统计日期）",
+          "source_id": "lux_contact"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2000",
+          "description": "Lux Ventures IX 公告称 Lux 创立于2000年。",
+          "source_id": "lux_fund_ix"
+        },
+        {
+          "date": "2026-01-07",
+          "description": "宣布 Lux Ventures IX，承诺规模15亿美元。",
+          "source_id": "lux_fund_ix"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Enveda · E轮 · 2026-09-23 · 本轮参投 · $311M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-852df50f4128c47b"
-        },
-        {
-          "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮参投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-61aa8db010b34dfa"
-        },
-        {
-          "description": "融资来源记录：WindBorne Systems · B轮 · 2026-08-05 · 本轮参投 · $37 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2daabe6c0da09480"
+          "description": "官网组合目录列出 Anduril、Applied Intuition、Databricks、Cognition、Physical Intelligence、Ramp 等公司示例；该目录不是基金回报披露。",
+          "source_id": "lux_home"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Lux Capital",
+          "url": "https://www.luxcapital.com/",
+          "source_id": "lux_home"
+        },
+        {
+          "kind": "email",
+          "label": "一般联系",
+          "value": "info@luxcapital.com",
+          "url": "https://www.luxcapital.com/contact",
+          "source_id": "lux_contact"
+        },
+        {
+          "kind": "email",
+          "label": "媒体联系",
+          "value": "comms@luxcapital.com",
+          "url": "https://www.luxcapital.com/contact",
+          "source_id": "lux_contact"
+        },
+        {
+          "kind": "email",
+          "label": "募资与 LP 联系",
+          "value": "ir@luxcapital.com",
+          "url": "https://www.luxcapital.com/contact",
+          "source_id": "lux_contact"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-852df50f4128c47b",
-          "source_url": "https://www.bioxconomy.com/investment/enveda-s-311m-series-e-to-found-ai-driven-drug-discovery-platform",
-          "source_title": "Enveda's $311m Series E to fund AI-driven drug discovery",
-          "source_content_hash": "e6486e5f995e038e",
-          "quote": "Existing investors Baillie Gifford, Premji Invest, FPV Ventures, True Ventures, Kinnevik, Dimension, Lifeforce Capital, and Lux Capital also participated.",
-          "quote_hash": "882202cb44ad9d9c134b2a21b4c2fb2c2449305ea2081d7480583ed23e7792bf"
+          "source_id": "lux_home",
+          "source_url": "https://www.luxcapital.com/",
+          "source_title": "Lux Capital",
+          "source_content_hash": "de248cd2f4993f1ebf7229320341c5f3f62934c0f5f3b3d2d9f1162a844649e4",
+          "quote": "We believe before others understand.",
+          "quote_hash": "ccbc9da2db6c56346cb99351457f3a81e58314c5b50e46df7f3f5cb6ab3a1166"
         },
         {
-          "source_id": "FISRC-61aa8db010b34dfa",
-          "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
-          "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
-          "source_content_hash": "274ba4a54870c633",
-          "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
-          "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
+          "source_id": "lux_contact",
+          "source_url": "https://www.luxcapital.com/contact",
+          "source_title": "Get in touch | Lux Capital",
+          "source_content_hash": "1858feb7d5b166ca7c9cd69f459647512df2af6a6610b7b1fd4e566e59e28da6",
+          "quote": "Lux Capital is a venture capital firm based in New York City and Silicon Valley with $7 billion AUM.",
+          "quote_hash": "07f15997af508d2d712a01a67247d9d6c2af68046834f18a029f6be5cf06d05f"
         },
         {
-          "source_id": "FISRC-2daabe6c0da09480",
-          "source_url": "https://techcrunch.com/2026/08/05/ai-makes-weather-prediction-better-can-windborne-make-it-lucrative",
-          "source_title": "WindBorne Systems 完成 3700 万美元 B 轮融资，用 AI 气象模型让天气预报更赚钱",
-          "source_content_hash": "dcf3c391fcc5ef9d",
-          "quote": "with additional investments from Translink Capital, Lux Capital, and previous investors",
-          "quote_hash": "4e88ddb77f70111a514c20f1062d62d0dc0c067dc77fab1beccf099097f26e24"
+          "source_id": "lux_fund_ix",
+          "source_url": "https://www.luxcapital.com/news/announcing-lux-ventures-ix",
+          "source_title": "Announcing Lux Ventures IX | Lux Capital",
+          "source_content_hash": "a1d06782dec0ddea07270a28193eb1cafc6bd74af8fd5447861c331ac8a1cc61",
+          "quote": "We started Lux in 2000 with a simple conviction: the biggest opportunities lie at the frontier of science and technology.",
+          "quote_hash": "6b9451180acf913c2d479cc1d4ebaa1e3e3390f58f4fb6da897bd77683439079"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-25",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

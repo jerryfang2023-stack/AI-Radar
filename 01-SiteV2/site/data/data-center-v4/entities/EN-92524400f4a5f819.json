@@ -111,33 +111,71 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "陈亦伦 的来源线索将其与它石智航（创始人兼CEO）关联。来源日期：2026-08-03；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "陈亦伦是它石智航创始人兼 CEO。启明创投的公司人物专访记载，他曾任大疆机器视觉总工程师，参与华为第一代 ADS 自动驾驶系统全栈研发，随后在清华大学人工智能产业研究院从事教授、智能机器人专家及创新中心负责人工作；来源称他于2025年与团队创立它石智航。公开资料称清华为其母校，但未在该来源披露具体学位和毕业年份。",
+      "current_roles": [
+        {
+          "title": "创始人兼首席执行官",
+          "organization": "它石智航",
+          "source_id": "chen_yilun_qiming"
+        }
+      ],
       "career": [
         {
+          "organization": "大疆（DJI）",
+          "title": "机器视觉总工程师",
+          "period": "具体任期未披露",
+          "description": "启明创投人物文章记载的过往职务。",
+          "source_id": "chen_yilun_qiming"
+        },
+        {
+          "organization": "华为智能汽车解决方案 BU",
+          "title": "第一代 ADS 自动驾驶系统全栈研发负责人之一；来源未给出正式职级",
+          "period": "具体任期未披露",
+          "description": "报道记载其参与华为首代 ADS 全栈研发并设计算法系统、组建技术团队。",
+          "source_id": "chen_yilun_qiming"
+        },
+        {
+          "organization": "清华大学人工智能产业研究院",
+          "title": "教授、智能机器人首席专家、创新中心主任",
+          "period": "2022 年起（按来源表述）",
+          "description": "启明创投人物文章称其于2022年起在清华 AIR 任职，负责自动驾驶与机器人研发。",
+          "source_id": "chen_yilun_qiming"
+        },
+        {
           "organization": "它石智航",
-          "title": "创始人兼CEO",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将陈亦伦与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-b4d6b7523ee32ad7"
+          "title": "创始人兼 CEO",
+          "period": "2025 年创立（报道时间线）",
+          "description": "与百度前自动驾驶事业群负责人李震宇、丁文超等共同组建团队。",
+          "source_id": "chen_yilun_qiming"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "清华大学",
+          "qualification": "报道称回到母校任教；具体学位、专业及毕业年份未披露",
+          "source_id": "chen_yilun_qiming"
+        }
+      ],
+      "experience_summary": "履历横跨无人机机器视觉、自动驾驶系统、大学机器人研发和具身智能创业。任职时间仅在来源明确提及的2022年与2025年处标注，其余不推断。",
+      "track_record": [
+        {
+          "description": "启明创投文章记录他曾参与华为 ADS 自动驾驶方案及清华 AIR 机器人研发，并将其作为它石智航创建团队的背景；按投资方人物文章来源归属。",
+          "source_id": "chen_yilun_qiming"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-b4d6b7523ee32ad7",
-          "source_url": "https://news.pedaily.cn/202604/562863.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "0f321e5ffc10ea03",
-          "quote": "它石创始人兼CEO陈亦伦博士领衔的它石智航核心团队，在自动驾驶领域具有丰富的技术、工程化及商业化经验。",
-          "quote_hash": "abf2c70237996b3a65297af9f1857b2a13301140fc8d41f2b17f1ecb3774320a"
+          "source_id": "chen_yilun_qiming",
+          "source_url": "https://www.qimingvc.com/cn/news/%E5%90%AF%E6%98%8E%E6%98%9F-%E5%AE%83%E7%9F%B3%E6%99%BA%E8%88%AA%E9%99%88%E4%BA%A6%E4%BC%A6%EF%BC%9A%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%8C%91%E6%88%98%E4%B8%87%E4%BA%BF%E8%B5%9B%E9%81%93",
+          "source_title": "启明星 | 它石智航陈亦伦：第三次挑战万亿赛道 | 启明创投",
+          "source_content_hash": "a5980e3bb51ee0a4d32231c4b01e4c4b9d38aed4be52b97aad00bbe9ac871ce4",
+          "quote": "从大疆机器视觉总工程师，到华为第一代自动驾驶系统ADS 1.0全栈研发，再到组建清华大学智能产业研究院创新中心探索机器人前沿。",
+          "quote_hash": "7dcb1a2998630f7d7715c6acd0eff759bd0363859571cf036de6f2cafc82c62a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-25",
+      "coverage_status": "researched",
+      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
     }
   },
   "relatedEntities": [],

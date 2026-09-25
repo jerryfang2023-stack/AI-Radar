@@ -111,33 +111,63 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "郭彦东 的来源线索将其与智平方（创始人兼CEO）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "郭彦东是智平方（AI² Robotics）创始人兼 CEO。公司官网称其曾在微软、OPPO、小鹏负责核心研发，具备 AI、智能终端和机器人产业经验，并担任香港科技大学（广州）客座教授；公司对其主导系统规模的描述属于公司自述。官网未明确列出其博士毕业院校或任职年份。",
+      "current_roles": [
+        {
+          "title": "创始人兼首席执行官",
+          "organization": "智平方（AI² Robotics）",
+          "source_id": "guo_ai2_about"
+        },
+        {
+          "title": "客座副教授（Adjunct Professor）",
+          "organization": "香港科技大学（广州）",
+          "source_id": "guo_ai2_about"
+        }
+      ],
       "career": [
         {
-          "organization": "智平方",
-          "title": "创始人兼CEO",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-ad8ba39594cec38c"
+          "organization": "Microsoft",
+          "title": "核心研发工作（公司简介未说明职级）",
+          "period": "具体任期未披露",
+          "description": "智平方官网将其列为创立智平方前的核心研发经历之一。",
+          "source_id": "guo_ai2_about"
+        },
+        {
+          "organization": "OPPO",
+          "title": "核心研发工作（公司简介未说明职级）",
+          "period": "具体任期未披露",
+          "description": "智平方官网将其列为创立智平方前的核心研发经历之一。",
+          "source_id": "guo_ai2_about"
+        },
+        {
+          "organization": "小鹏汽车（XPENG）",
+          "title": "核心研发工作（公司简介未说明职级）",
+          "period": "具体任期未披露",
+          "description": "智平方官网将其列为创立智平方前的核心研发经历之一。",
+          "source_id": "guo_ai2_about"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
-      "sources": [
+      "experience_summary": "公司公开简介支持其曾在 Microsoft、OPPO、小鹏从事核心研发，现任智平方 CEO 并兼任港科大（广州）客座副教授；学历、各段职级和具体任期仍未由该官网披露。",
+      "track_record": [
         {
-          "source_id": "FISRC-ad8ba39594cec38c",
-          "source_url": "https://www.cls.cn/detail/2341170",
-          "source_title": "融资披露来源",
-          "source_content_hash": "0df608927ef662b2",
-          "quote": "公司创始人兼CEO郭彦东拥有智能驾驶背景，曾任小鹏汽车和OPPO的首席科学家与研发高管",
-          "quote_hash": "5ddfa211bd3fc4f0ec9b6384645fc6dfe8f0998f82d19f86cfdce0b92303be82"
+          "description": "智平方官网自述，由郭彦东领导的智能系统已部署于数十万台智能汽车、数亿台消费电子设备及机器人/Microsoft MaaS。此为公司对团队工作成果的归属说明，不作为独立审计数据。",
+          "source_id": "guo_ai2_about"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "sources": [
+        {
+          "source_id": "guo_ai2_about",
+          "source_url": "https://ai2robotics.com/about/",
+          "source_title": "关于我们 - 智平方科技",
+          "source_content_hash": "11b85ddb2fe44d2cae20405b19b51cd30f8ba9054037a9f6f6904b210c1e8b96",
+          "quote": "智平方科技由郭彦东博士创立并担任 CEO。郭博士长期在微软、OPPO、小鹏等全球领先的科技与智能终端企业负责核心研发。",
+          "quote_hash": "1af5f2d649a885efa4d7b59f22ec551a5feb4b3ff89c06134f17156bf6f38e38"
+        }
+      ],
+      "last_verified_at": "2026-09-25",
+      "coverage_status": "researched",
+      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
     }
   },
   "relatedEntities": [],

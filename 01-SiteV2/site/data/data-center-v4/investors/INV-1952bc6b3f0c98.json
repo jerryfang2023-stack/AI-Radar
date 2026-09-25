@@ -452,54 +452,111 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "线性资本 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "线性资本是一家2014年由王淮创立、专注前沿科技早期投资的机构。官网披露目前管理10支基金、规模超过人民币140亿元，投资方向包括 AI 软件及应用、机器人与 AI 硬件、AI for Science、能源、材料和生物医药；官网列出上海、香港办公室以及项目 BP 邮箱。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "创立时间与创始人",
+          "value": "2014 年；由王淮创立（官网简介）",
+          "source_id": "linear_about"
+        },
+        {
+          "field": "focus",
+          "label": "投资重点",
+          "value": [
+            "AI 软件及应用",
+            "机器人与 AI 硬件",
+            "AI for Science",
+            "能源",
+            "材料",
+            "生物医药"
+          ],
+          "source_id": "linear_about"
+        },
+        {
+          "field": "funds",
+          "label": "基金规模",
+          "value": "管理10支基金，合计规模超过人民币140亿元（官网当前披露口径）",
+          "source_id": "linear_about"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "前沿科技早期投资",
+          "source_id": "linear_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2014",
+          "description": "官网称线性资本由王淮创立。",
+          "source_id": "linear_about"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：地瓜机器人 · C轮 · 2026-09-17 · 本轮跟投（原有投资机构继续追加投资） · 4亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-517ef1b31eac6dd3"
-        },
-        {
-          "description": "融资来源记录：斜跃 · 天使+轮 · 2026-09-12 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-02a843e0049125fa"
-        },
-        {
-          "description": "融资来源记录：深朴智能 · Pre-A+轮 · 2026-09-04 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-a65ce425f6a14bd6"
+          "description": "官网自述曾连续多年获清科、投中、36氪、创业邦等早期投资机构评选认可；评选名称及年份应以原榜单为准，本档案不把奖项等同于基金回报数据。",
+          "source_id": "linear_about"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Linear Capital 线性资本",
+          "url": "https://www.linear.vc/about-cn",
+          "source_id": "linear_about"
+        },
+        {
+          "kind": "application",
+          "label": "项目 BP 投递",
+          "value": "bp@linear.vc",
+          "url": "https://www.linear.vc/about-cn",
+          "source_id": "linear_about"
+        },
+        {
+          "kind": "email",
+          "label": "媒体及市场合作",
+          "value": "fanghan@linear.vc",
+          "url": "https://www.linear.vc/team-cn",
+          "source_id": "linear_team"
+        },
+        {
+          "kind": "address",
+          "label": "上海办公室",
+          "value": "上海市长宁区番禺路381号幸福里E座5楼",
+          "url": "https://www.linear.vc/about-cn",
+          "source_id": "linear_about"
+        },
+        {
+          "kind": "address",
+          "label": "香港办公室",
+          "value": "香港中环花园道三号冠君大厦10楼11室",
+          "url": "https://www.linear.vc/about-cn",
+          "source_id": "linear_about"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-517ef1b31eac6dd3",
-          "source_url": "https://finance.sina.com.cn/roll/2026-09-17/doc-iniscekc4127167.shtml",
-          "source_title": "地瓜机器人完成4亿美元C轮融资 软硬一体基础设施支撑具身智能产业落地_新浪财经_新浪网",
-          "source_content_hash": "ffc4d665dce6209d",
-          "quote": "高瓴创投、五源资本、线性资本、淡马锡旗下Vertex Growth等多家原有投资机构继续追加投资。",
-          "quote_hash": "2e695e67eb318bb202681426003226fdafc284ca308890dae2f0111b03fe308e"
+          "source_id": "linear_about",
+          "source_url": "https://www.linear.vc/about-cn",
+          "source_title": "关于线性资本 | Linear Capital",
+          "source_content_hash": "b8a88e9f5db2dce96b4975dd309f3655d1a29bd0d8107e5d656f335adb6bf9d2",
+          "quote": "专注于前沿科技领域的早期投资机构，由Facebook首位中国籍研发经理王淮创立于2014年。",
+          "quote_hash": "c376bc01db2967f6f55270111268b02bde186b83a5684633f5b7ecd5381d161b"
         },
         {
-          "source_id": "FISRC-02a843e0049125fa",
-          "source_url": "https://news.pedaily.cn/202609/568914.shtml",
-          "source_title": "斜跃智能完成数亿元天使+轮融资，加速推进Duplex Reasoning全新范式具身基础模型",
-          "source_content_hash": "0a4a2e441433729d",
-          "quote": "线性资本、钧山资本、弘颐资本、隐山资本 等机构参与投资",
-          "quote_hash": "7887793bea5e88b2f273d8cdfc053010b057e75a9143c6cf5bc796c2a44317a2"
-        },
-        {
-          "source_id": "FISRC-a65ce425f6a14bd6",
-          "source_url": "https://news.pedaily.cn/202609/568532.shtml",
-          "source_title": "深朴智能完成数亿元Pre-A+轮融资，面向人类生活空间打造AI原生具身智能",
-          "source_content_hash": "34bcef102c1e755b",
-          "quote": "本轮融资获得 珂玺资本、上海科创旗下知识产权基金、金浦投资、亳州产投、上城资本、乾融资本，以及老股东线性资本的共同支持",
-          "quote_hash": "63cc64e026257c66ef879cdc3ec4b8d1d9c592b120f4c191292f6ba20fa7b625"
+          "source_id": "linear_team",
+          "source_url": "https://www.linear.vc/team-cn",
+          "source_title": "线性团队 | Linear Capital",
+          "source_content_hash": "7ee603edaf2958e3c64ebffc0eda421681553a5427fd670dc7ca367deda31007",
+          "quote": "媒体及市场合作欢迎联系：fanghan@linear.vc",
+          "quote_hash": "9fe07a9ce4ae60030a497d78dbeacd7e8541947077bcc631938bd5acc72b5024"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-25",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }
