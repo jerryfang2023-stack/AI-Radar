@@ -23436,32 +23436,81 @@
         }
       ],
       "public_profile": {
-        "coverage_status": "activity_only",
-        "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-        "summary": "高继扬 的来源线索将其与星海图（创始人兼CEO）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
+        "summary": "高继扬的公开访谈记载其曾在商汤、Waymo与Momenta从事人工智能及自动驾驶研发，2023年创立星海图。教育、职责和交付成绩按本人访谈自述标注；任期、正式职级和量化业绩口径仍有限。",
         "current_roles": [],
         "career": [
           {
-            "organization": "星海图",
-            "title": "创始人兼CEO",
-            "period": "来源记录于 2026-09-12；任职起止时间未披露",
-            "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-            "source_id": "FISRC-2707f48aa6e437b7"
+            "organization": "商汤科技",
+            "title": "实习生",
+            "period": "本科大四期间；年份未披露",
+            "description": "本人称参与人体关键点检测，首次接触人工智能与深度学习。",
+            "source_id": "gao_jiyang_talksai_interview_2025"
+          },
+          {
+            "organization": "Waymo",
+            "title": "感知研发（本人访谈表述）",
+            "period": "2018年博士毕业后；离职时间未披露",
+            "description": "本人称从事自动驾驶感知，并与合作者完成VectorNet研究；不推断正式职级或任期。",
+            "source_id": "gao_jiyang_talksai_interview_2025"
+          },
+          {
+            "organization": "Momenta",
+            "title": "研发及团队负责人（职责据本人访谈）",
+            "period": "Waymo之后至2023年离职；入职年份未披露",
+            "description": "本人称先后负责视觉感知、定位、规控、泊车、NOA及AI基础设施产品，并参与系统交付。",
+            "source_id": "gao_jiyang_talksai_interview_2025"
+          },
+          {
+            "organization": "星海图（北京）人工智能科技股份有限公司",
+            "title": "创始人；融资报道记载其为创始人兼CEO",
+            "period": "2023年9月创立；现任情况以最新披露为准",
+            "description": "本人访谈自述于2023年9月创立星海图；官网确认公司成立时间。",
+            "source_id": "galaxea_official_about_2026"
           }
         ],
-        "education": [],
-        "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-        "track_record": [],
+        "education": [
+          {
+            "institution": "清华大学",
+            "qualification": "本科；访谈称先读电子工程系，后转微纳电子系；2011年开始，毕业年份未披露",
+            "source_id": "gao_jiyang_talksai_interview_2025"
+          },
+          {
+            "institution": "南加州大学（USC）",
+            "qualification": "计算机视觉博士；本人访谈称2018年毕业",
+            "source_id": "gao_jiyang_talksai_interview_2025"
+          }
+        ],
+        "experience_summary": "本人公开访谈称其经历包括商汤人体关键点检测实习、Waymo自动驾驶感知研发、Momenta多条量产系统研发与交付，以及2023年创立星海图。职业职责和业绩为本人访谈自述；精确任期、正式职级及独立审计口径未充分披露。",
+        "track_record": [
+          {
+            "description": "本人称与Waymo及Google Research合作者完成VectorNet论文工作；论文署名与技术成果可由原论文另行核对。",
+            "source_id": "gao_jiyang_talksai_interview_2025"
+          },
+          {
+            "description": "本人称在Momenta负责泊车系统后约4个月将成功率由60%提升至95%，并称NOA系统于2023年4月交付上汽。以上是访谈自述，不代表独立审计结果。",
+            "source_id": "gao_jiyang_talksai_interview_2025"
+          }
+        ],
         "sources": [
           {
-            "source_id": "FISRC-2707f48aa6e437b7",
-            "source_url": "https://news.pedaily.cn/202602/560956.shtml",
-            "source_title": "融资披露来源",
-            "source_content_hash": "85e4d40faa23c515",
-            "quote": "先从创始人兼CEO 高继扬 说起。他出生于1992年，本科毕业于清华大学电子工程系，后在南加州大学计算机视觉读博士",
-            "quote_hash": "7954e92714a2799be16ae3b1aad1aa47c2eb9c8f6171236609e29c3f7fd1119e"
+            "source_id": "gao_jiyang_talksai_interview_2025",
+            "source_url": "https://www.talksai.cn/19566/",
+            "source_title": "清华系操盘手高继扬：92年通用机器人专家，顶级自动驾驶交付经历，风投巨头青睐",
+            "source_content_hash": "bd0733b57cd0ab80f1f5b17ac7fb3c2806ab38678acc88983d82c3512b962f88",
+            "quote": "我在Momenta最开始负责视觉感知，之后先后负责了定位、规控、泊车、NOA领航辅助系统、AI基础设施的产品。",
+            "quote_hash": "780c078b455dff73815ca671700fb962d1f9aea033b424d9f9f04de50219021f"
+          },
+          {
+            "source_id": "galaxea_official_about_2026",
+            "source_url": "https://galaxea-ai.com/cn/about",
+            "source_title": "星海图官网｜关于我们",
+            "source_content_hash": "6f491090e2ab6460a32fe3acd5bf07aeb7a7ebdb34b48ef869e78e4a23e508b9",
+            "quote": "星海图（北京）人工智能科技股份有限公司成立于2023年9月，是一家专注于具身智能基础模型及具身智能机器人自主研发的人工智能科技公司。",
+            "quote_hash": "97b934cff6eae37b045e4aca313ff105402aeb9135d069d110ff3fc788d032c8"
           }
         ],
+        "coverage_status": "researched",
+        "coverage_note": "补充本人访谈中的教育、工作经历与项目交付自述，并以公司官网核验星海图成立时间。履历及业绩属访谈自述；现任职务和完整任期仍须最新公司披露核实。",
         "last_verified_at": "2026-09-25"
       }
     },
