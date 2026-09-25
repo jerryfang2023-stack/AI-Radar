@@ -407,54 +407,102 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "AMD Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "AMD Ventures 是 AMD 的企业风险投资部门，聚焦 AI 生态，从硬件、模型与工具到垂直应用和 AI 云。官网在本次核验时披露其活跃组合企业70余家、AI 投资资本超过20亿美元，主要投资 A 至 C 轮、全球布局；这些是官网当前页面口径，页面未注明统计基准日。AMD 也公开计算资源、工程支持和市场拓展等投后支持。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "组织关系",
+          "value": "AMD 企业风险投资部门",
+          "source_id": "amd_ventures_about"
+        },
+        {
+          "field": "focus",
+          "label": "投资重点",
+          "value": "AI 生态，包括模型、平台工具、垂直 AI、AI 云、硅技术与互连",
+          "source_id": "amd_ventures"
+        },
+        {
+          "field": "portfolio_companies",
+          "label": "活跃组合企业",
+          "value": "70 余家（官网当前披露，页面未标统计日期）",
+          "source_id": "amd_ventures"
+        },
+        {
+          "field": "capital_invested",
+          "label": "AI 投资资本",
+          "value": "超过 20 亿美元（官网当前披露，页面未标统计日期）",
+          "source_id": "amd_ventures"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "A 至 C 轮",
+          "source_id": "amd_ventures"
+        },
+        {
+          "field": "geographic_focus",
+          "label": "地域",
+          "value": "全球",
+          "source_id": "amd_ventures"
+        },
+        {
+          "field": "portfolio_support",
+          "label": "投后支持",
+          "value": "提供 AMD 计算资源、工程和开发者支持、市场拓展及客户协同",
+          "source_id": "amd_ventures_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Stability AI · B轮 · 2026-08-25 · 本轮参投 · $76 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-e825eacb926a575f"
-        },
-        {
-          "description": "融资来源记录：River AI · 多轮融资 · 2026-08-11 · 本轮参投 · $1.1 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-0deb7f666bec5423"
-        },
-        {
-          "description": "融资来源记录：Odyssey ML · B轮 · 2026-06-17 · 本轮参投 · 3.1亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-e94365d0212a78f3"
+          "description": "AMD Ventures 官网展示 Hugging Face、Cohere、Runway、World Labs 等组合示例；该展示并非完整投资组合。",
+          "source_id": "amd_ventures"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "AMD Ventures 官网",
+          "value": "AMD Ventures",
+          "url": "https://www.amd.com/en/ventures.html",
+          "source_id": "amd_ventures"
+        },
+        {
+          "kind": "application",
+          "label": "AMD Ventures 联系表单",
+          "value": "官网 Contact AMD Ventures 表单",
+          "url": "https://www.amd.com/en/ventures/about.html",
+          "source_id": "amd_ventures_about"
+        },
+        {
+          "kind": "address",
+          "label": "AMD Ventures 地址",
+          "value": "2485 Augustine Drive, Santa Clara, CA 95054",
+          "url": "https://www.amd.com/en/ventures/about.html",
+          "source_id": "amd_ventures_about"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-e825eacb926a575f",
-          "source_url": "https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding",
-          "source_title": "Stability AI 获 7600 万美元 B 轮融资，环球音乐、索尼音乐、EA 参投",
-          "source_content_hash": "3f1c5718c2b6b5fd",
-          "quote": "Two investment firms, AMD Ventures and Pacific Alliance Ventures, also took part.",
-          "quote_hash": "4fb0689898de7c251bf6ce182549c3ddebb3bf4a41fe74e9b6afa2695d45a2f4"
+          "source_id": "amd_ventures",
+          "source_url": "https://www.amd.com/en/ventures.html",
+          "source_title": "AMD Ventures",
+          "source_content_hash": "25477c207bec73f26656b88edeeff9ec549f6cbdda19fea84b4118d657136fa8",
+          "quote": "70+ Active Portfolio Companies; $2B+ Capital Invested in AI; Series A-C; Global.",
+          "quote_hash": "e343f0cd92fca9cdc1b09ce82392b89c6a594c9b480d3041fccb3dc362ff4b0c"
         },
         {
-          "source_id": "FISRC-0deb7f666bec5423",
-          "source_url": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai",
-          "source_title": "General Catalyst 领投 River AI 11 亿美元融资",
-          "source_content_hash": "a44322af824e0f8f",
-          "quote": "with participation from Nvidia, AMD Ventures, Y Combinator, and Temasek",
-          "quote_hash": "2fea4aa95f455cf668da90f6bbb80a60ef5d93295e469d69604b0b43586f6284"
-        },
-        {
-          "source_id": "FISRC-e94365d0212a78f3",
-          "source_url": "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names",
-          "source_title": "世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元",
-          "source_content_hash": "75587989c4b9271c",
-          "quote": "with Amazon, AMD Ventures, GV, and others participating",
-          "quote_hash": "a36a967aacd4c90a1561022a9dc76b3a0a4d1cf9bc904ad059b99a95d150543b"
+          "source_id": "amd_ventures_about",
+          "source_url": "https://www.amd.com/en/ventures/about.html",
+          "source_title": "About AMD Ventures",
+          "source_content_hash": "63c58d695b39530557352fd0684254064fcab83903f5dde4a7b6d729de23026b",
+          "quote": "The corporate venture capital arm of AMD.",
+          "quote_hash": "ff54fe5b7ed163b9761067b040844631c73c3d7548587aeec11d7203d833a655"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-25",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

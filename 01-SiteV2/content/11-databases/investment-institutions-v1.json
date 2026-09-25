@@ -4296,54 +4296,85 @@
         }
       ],
       "public_profile": {
-        "profile_type": "organization",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Nvidia 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "summary": "NVIDIA 是一家设有企业投资职能并运营 NVentures 风险投资部门的科技公司。NVentures 官网介绍其面向 AI 基础设施、机器人、数字生物学、应用 AI 和前沿计算等领域投资。融资活动库中的“Nvidia”名称未必能单独确认交易由 NVentures 还是其他 NVIDIA 投资职能完成。",
+        "facts": [
+          {
+            "field": "venture_arm",
+            "label": "风险投资部门",
+            "value": "NVentures",
+            "source_id": "nvidia_nventures"
+          },
+          {
+            "field": "sectors",
+            "label": "NVentures 官网列示领域",
+            "value": [
+              "AI 基础设施",
+              "机器人",
+              "数字生物学",
+              "应用 AI",
+              "前沿计算"
+            ],
+            "source_id": "nvidia_nventures"
+          },
+          {
+            "field": "organization_structure",
+            "label": "投资职能区分",
+            "value": "NVIDIA 区分企业投资、NVentures 风险投资部门与 NVIDIA Inception 创业生态项目；融资记录名称不足以确认具体投资职能。",
+            "source_id": "nvidia_investments"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：Crusoe · F轮 · 2026-09-17 · 本轮参投 · $3.9B。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-5fc65e3f4fb1b347"
-          },
-          {
-            "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮参投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-61aa8db010b34dfa"
-          },
-          {
-            "description": "融资来源记录：Mistral AI · D轮 · 2026-09-08 · 本轮参投 · €3 billion。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-4d11ed62a144a3f4"
+            "description": "NVentures 官网列有其组合企业与技术领域案例。本库归在 NVIDIA 名称下的单笔融资不据此自动归属至 NVentures。",
+            "source_id": "nvidia_nventures"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "NVentures 官方介绍",
+            "value": "NVIDIA NVentures",
+            "url": "https://www.nvidia.com/en-us/startups/nventures/",
+            "source_id": "nvidia_nventures"
+          },
+          {
+            "kind": "email",
+            "label": "NVIDIA 媒体联系（非投资申请渠道）",
+            "value": "press@nvidia.com",
+            "url": "https://nvidianews.nvidia.com/contacts",
+            "source_id": "nvidia_press"
+          }
+        ],
         "sources": [
           {
-            "source_id": "FISRC-5fc65e3f4fb1b347",
-            "source_url": "https://kingliber.com/the-ai-infrastructure-boom-crusoe-secures-3-9-billion-series-f-at-a-30-9-billion-valuation-to-power-the-next-generation-of-compute/",
-            "source_title": "The AI Infrastructure Boom: Crusoe Secures $3.9 Billion Series F at a $30.9 Billion Valuation to Power the Next Generation of Compute – King Liber",
-            "source_content_hash": "a5d809d221408d5b",
-            "quote": "They were joined by a roster of elite institutional and corporate investors, including Founders Fund , GIC , Nvidia , the Qatar Investment Authority (QIA) , Radical Ventures , and TPG .",
-            "quote_hash": "f095cfa01d7214cc37d55b841ff30c29ca4c63f1172dcbde315aadbad247b8e2"
+            "source_id": "nvidia_nventures",
+            "source_url": "https://www.nvidia.com/en-us/startups/nventures/",
+            "source_title": "NVentures — NVIDIA’s Venture Capital Arm",
+            "source_content_hash": "d3359c5664cc0744c232347ec30517b0834e716c4a9808c4687212c848fb9be4",
+            "quote": "NVentures is NVIDIA’s venture capital arm. It focuses on AI infrastructure, robotics, digital biology, applied AI, and frontier compute.",
+            "quote_hash": "76a883d3cc2e85af162b76448500782412f39d28a282bb5e328113af0724ca27"
           },
           {
-            "source_id": "FISRC-61aa8db010b34dfa",
-            "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
-            "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
-            "source_content_hash": "274ba4a54870c633",
-            "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
-            "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
+            "source_id": "nvidia_investments",
+            "source_url": "https://blogs.nvidia.com/blog/nvidia-investments/",
+            "source_title": "How NVIDIA Fuels the AI Revolution With Investments",
+            "source_content_hash": "80a65457203d02c3a0dc7374f3b4d23df5b9a0f8db47e5d638bc78da21d5f47d",
+            "quote": "First, through NVIDIA’s corporate investments. Second, through NVentures, our venture capital arm.",
+            "quote_hash": "3ddbba673e7d60baa99d53e1ed1212a5a5e70e0e7bcc8f71deed25c2ec7af278"
           },
           {
-            "source_id": "FISRC-4d11ed62a144a3f4",
-            "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
-            "source_title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
-            "source_content_hash": "714c413ab36c1848",
-            "quote": "Existing investors a16z, ASML, Belfius, BNP Paribas CIB, Bpifrance, Carmignac, DST Global, Eurazeo, General Catalyst, Headline, Hillspire, Index Ventures, Korelya Capital, Lightspeed, NVIDIA, Phoenix Court's Solar fund (home to LocalGlobe, Latitude and Solar) and Salesforce Ventures participated in the round.",
-            "quote_hash": "1aea8271fecd0d55fa862c63b4b216ab8bda36b37c1200c16dd0db73697dfc25"
+            "source_id": "nvidia_press",
+            "source_url": "https://nvidianews.nvidia.com/contacts",
+            "source_title": "Press Contacts | NVIDIA Newsroom",
+            "source_content_hash": "e7685ee0e6b289b1f981e5ff98191c6dde923e9bdf7296e6fb71600a162d45dc",
+            "quote": "Corporate Communications: press@nvidia.com.",
+            "quote_hash": "ee1e54cd9f847ba4c9a860b598e9dfd0b8bd5688c398c80253a8a4aa8f1ef820"
           }
         ],
-        "last_verified_at": "2026-09-25"
+        "last_verified_at": "2026-09-25",
+        "coverage_status": "researched",
+        "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
       }
     },
     {
@@ -13631,54 +13662,99 @@
         }
       ],
       "public_profile": {
-        "profile_type": "organization",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Menlo Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "summary": "Menlo Ventures 是成立于 1976 年的风险投资机构，官网将策略划分为 inception、venture 和 inflection 阶段，并称其在种子期、A/B 轮及早期成长阶段支持公司。官网公布管理规模、上市与并购案例统计及办公室联系信息。",
+        "facts": [
+          {
+            "field": "founded_year",
+            "label": "成立年份",
+            "value": "1976",
+            "source_id": "menlo_about"
+          },
+          {
+            "field": "investment_stages",
+            "label": "官网披露的投资阶段",
+            "value": [
+              "Inception",
+              "Venture（A/B轮）",
+              "Inflection（早期成长）"
+            ],
+            "source_id": "menlo_about"
+          },
+          {
+            "field": "assets_under_management",
+            "label": "官网披露的管理规模",
+            "value": "超过 76 亿美元",
+            "source_id": "menlo_about"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "1976",
+            "description": "Menlo Ventures 官网记载机构成立于 1976 年。",
+            "source_id": "menlo_about"
+          }
+        ],
         "track_record": [
           {
-            "description": "融资来源记录：Higgsfield · B轮 · 2026-08-17 · 本轮参投 · 4 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-7c15ac15bf3d0b1a"
+            "description": "官网在当前介绍页列示 85 家以上上市公司、170 起以上并购案例和超过 76 亿美元管理规模；这些为机构披露口径，并非基金回报率。",
+            "source_id": "menlo_about"
           },
           {
-            "description": "融资来源记录：Higgsfield · B轮 · 2026-08-17 · 历史轮次参投 · 4 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-35d27946fd70aa42"
-          },
-          {
-            "description": "融资来源记录：Wispr · B轮 · 2026-08-17 · 本轮领投 · $280M。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-c7de0ac22c0c4ca3"
+            "description": "官网介绍其支持创业团队进行产品市场匹配、市场进入和组织扩张，并有专门的组合服务团队。",
+            "source_id": "menlo_about"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "menlovc.com",
+            "url": "https://menlovc.com/about/",
+            "source_id": "menlo_about"
+          },
+          {
+            "kind": "address",
+            "label": "旧金山办公室",
+            "value": "524 2nd Street, San Francisco, CA 94107",
+            "url": "https://menlovc.com/contact/",
+            "source_id": "menlo_contact"
+          },
+          {
+            "kind": "address",
+            "label": "门洛帕克办公室",
+            "value": "1300 El Camino Real, Suite 150, Menlo Park, CA 94025",
+            "url": "https://menlovc.com/contact/",
+            "source_id": "menlo_contact"
+          },
+          {
+            "kind": "phone",
+            "label": "办公室电话",
+            "value": "650-854-8540",
+            "url": "https://menlovc.com/contact/",
+            "source_id": "menlo_contact"
+          }
+        ],
         "sources": [
           {
-            "source_id": "FISRC-7c15ac15bf3d0b1a",
-            "source_url": "https://www.finsmes.com/2026/08/higgsfield-raises-400m-in-series-b-funding.html",
-            "source_title": "Higgsfield Raises $400M in Series B Funding",
-            "source_content_hash": "66d04514886f3d3e",
-            "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, NTT DOCOMO Ventures, Accel, Menlo Ventures, AI Capital Partners, GFT Ventures, Capra Ventures, BAM Corner Point, BroadLight Capital, and Natalia Vodianova Arnault",
-            "quote_hash": "f2d170b06d7d95a66bb1a37e76577ee8c44898a0f37d8ec63f1900d3f15ba92a"
+            "source_id": "menlo_about",
+            "source_url": "https://menlovc.com/about/",
+            "source_title": "Menlo Ventures | About Us",
+            "source_content_hash": "84c847c0ecc1c789ea1ed8d8f8f23fff4e66856d5b8832bf9095071f3fce5289",
+            "quote": "Established 1976. 85+ Public companies. 170+ Mergers + acquisitions. $7.6B+ Under management. We focus on inception, venture, and inflection stages.",
+            "quote_hash": "f424037eeac72b6ab21c6dad3a034c3cd14bd1592aaac488e6061f3dc9a5a503"
           },
           {
-            "source_id": "FISRC-35d27946fd70aa42",
-            "source_url": "https://techstartups.com/2026/01/15/ai-video-startup-higgsfield-raises-80m-at-1-3b-valuation-as-demand-for-generative-video-surges/",
-            "source_title": "AI video startup Higgsfield raises $80M at $1.3B valuation as demand for generative video surges - Tech Startups",
-            "source_content_hash": "0d8d55e9f8e4182e",
-            "quote": "with participation from BroadLight Capital, NextEquity, and Menlo Ventures",
-            "quote_hash": "cb6eb89aab7c1200185db653dfe353094ec3e34324d608d7317f91f876adc116"
-          },
-          {
-            "source_id": "FISRC-c7de0ac22c0c4ca3",
-            "source_url": "https://techcrunch.com/2026/08/17/wispr-raises-280m-at-2b-valuation-as-it-looks-beyond-dictation",
-            "source_title": "Wispr 获 2.8 亿美元 B 轮融资，估值 20 亿美元，业务拓展至会议记录",
-            "source_content_hash": "ee00eb4103124f93",
-            "quote": "raised $280 million in Series B funding, led by Menlo Ventures",
-            "quote_hash": "4ce46948a07016e67be78b2172659ab1be74d3b92043c967087099594a99c16c"
+            "source_id": "menlo_contact",
+            "source_url": "https://menlovc.com/contact/",
+            "source_title": "Menlo Ventures | Contact",
+            "source_content_hash": "f119121739f447a9172763d347a2274f510231a4a8e25a61fa35737c50f786c6",
+            "quote": "San Francisco: 524 2nd Street, San Francisco, CA 94107. Menlo Park: 1300 El Camino Real, Suite 150, Menlo Park, CA 94025. 650.854.8540.",
+            "quote_hash": "6b65a50b891d8c111e5bfd530d4bc9eb08bdefcd9718bf4b8706cad0502cd1ab"
           }
         ],
-        "last_verified_at": "2026-09-25"
+        "last_verified_at": "2026-09-25",
+        "coverage_status": "researched",
+        "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
       }
     },
     {
@@ -14156,54 +14232,104 @@
         }
       ],
       "public_profile": {
-        "profile_type": "organization",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Insight Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "summary": "Insight Partners 是一家全球软件与高增长科技投资机构，官方披露其支持企业从早期投资至 IPO。按其媒体页截至2025-12-31的披露，监管口径 AUM 超过900亿美元，投资企业超过900家，已有55家以上组合企业 IPO。",
+        "facts": [
+          {
+            "field": "focus",
+            "label": "投资重点",
+            "value": "全球软件、高增长科技与互联网创业及规模化公司",
+            "source_id": "insight_media"
+          },
+          {
+            "field": "investment_stages",
+            "label": "投资阶段",
+            "value": "官方称从早期投资延伸至成长、规模化阶段及 IPO",
+            "source_id": "insight_media"
+          },
+          {
+            "field": "aum",
+            "label": "监管口径资产管理规模",
+            "value": "超过 900 亿美元（截至 2025-12-31）",
+            "source_id": "insight_media"
+          },
+          {
+            "field": "companies_invested",
+            "label": "累计投资企业",
+            "value": "超过 900 家（截至 2025-12-31 官网口径）",
+            "source_id": "insight_media"
+          },
+          {
+            "field": "portfolio_ipos",
+            "label": "组合企业 IPO",
+            "value": "超过 55 家（截至 2025-12-31 官网口径）",
+            "source_id": "insight_media"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：Snorkel AI · E轮 · 2026-09-22 · 本轮领投 · $350 million。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-16afc5791c45315a"
-          },
-          {
-            "description": "融资来源记录：Wonderful · C轮 · 2026-09-02 · 本轮领投 · $550 million。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-3bc5a4e973b035eb"
-          },
-          {
-            "description": "融资来源记录：Fireworks AI Inc. · D轮 · 2026-07-16 · 本轮参投 · $1.505 billion。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-80d6b020dd75ac09"
+            "description": "公司官网截至2025-12-31披露投资超过900家企业、55家以上组合企业 IPO。官网同时声明，展示的案例并非完整或具代表性的组合样本，不能据此推断所有基金或未来投资回报。",
+            "source_id": "insight_media"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "Insight Partners",
+            "url": "https://www.insightpartners.com/",
+            "source_id": "insight_media"
+          },
+          {
+            "kind": "email",
+            "label": "媒体联系",
+            "value": "InsightPR@insightpartners.com",
+            "url": "https://www.insightpartners.com/about-us/media/",
+            "source_id": "insight_media"
+          },
+          {
+            "kind": "address",
+            "label": "总部",
+            "value": "1114 Avenue of the Americas, 36th Floor, New York, NY 10036",
+            "url": "https://www.insightpartners.com/contact/",
+            "source_id": "insight_contact"
+          },
+          {
+            "kind": "phone",
+            "label": "总部电话",
+            "value": "+1 212-230-9200",
+            "url": "https://www.insightpartners.com/contact/",
+            "source_id": "insight_contact"
+          },
+          {
+            "kind": "application",
+            "label": "联系及项目对接",
+            "value": "官网 Contact Us 表单",
+            "url": "https://www.insightpartners.com/contact/",
+            "source_id": "insight_contact"
+          }
+        ],
         "sources": [
           {
-            "source_id": "FISRC-16afc5791c45315a",
-            "source_url": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms",
-            "source_title": "Snorkel AI 完成 3.5 亿美元 E 轮融资，估值升至 35 亿美元",
-            "source_content_hash": "ad04baf1994708d0",
-            "quote": "The new round, which was led by Insight Partners and S32, valued the seven-year-old startup at nearly triple the $1.3 billion valuation it garnered when it raised $100 million in a Series D 17 months ago.",
-            "quote_hash": "570f3d38da98c770ed63b46c303f26eed84498a651974861af1f95116d94e3a2"
+            "source_id": "insight_media",
+            "source_url": "https://www.insightpartners.com/about-us/media/",
+            "source_title": "Media | Insight Partners",
+            "source_content_hash": "643dc20095dff581d2552ad6de53e3170a63371841ee4357385ec2fb37bcc5fb",
+            "quote": "As of December 31, 2025, the firm has over $90B in regulatory assets under management.",
+            "quote_hash": "4fdc9504498b399d2291bab6272e781fc3eaa88972cdaa312e09808122d76995"
           },
           {
-            "source_id": "FISRC-3bc5a4e973b035eb",
-            "source_url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
-            "source_title": "Wonderful 融资 5.5 亿美元，估值半年内翻倍至 50 亿美元",
-            "source_content_hash": "290d66b36443e7c5",
-            "quote": "Insight Partners returned to lead this round, too",
-            "quote_hash": "e83ddba2629ebc0a50266e83e0af77210dffaeef336e64cea6a1df209dc9e9de"
-          },
-          {
-            "source_id": "FISRC-80d6b020dd75ac09",
-            "source_url": "https://genztech.blog/p/fireworks-ai-1-5b-series-d-17-5b-valuation/",
-            "source_title": "Fireworks AI Raises $1.5B Series D at $17.5B Valuation",
-            "source_content_hash": "2ac54d2d554e9655",
-            "quote": "Bessemer, Insight Partners, Lightspeed, Menlo Ventures, NVIDIA, Ontario Teachers' Pension Plan, Sequoia-adjacent crossover funds and others all participated.",
-            "quote_hash": "e486b89bc988feaf5486b02bd4c675c44a2a357905efd88a5b5008cfa027b7a7"
+            "source_id": "insight_contact",
+            "source_url": "https://www.insightpartners.com/contact/",
+            "source_title": "Contact Us | Insight Partners",
+            "source_content_hash": "db1fbfcc0f74ee8439c3cf956d65ce1ec75938567f5f7b9120ca426e11412d0c",
+            "quote": "1114 Avenue of the Americas, 36th Floor; Phone: 212-230-9200.",
+            "quote_hash": "5384858027688c8f977287dfc08a527d40044033e1bf6d0114bdb609ec48472a"
           }
         ],
-        "last_verified_at": "2026-09-25"
+        "last_verified_at": "2026-09-25",
+        "coverage_status": "researched",
+        "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
       }
     },
     {
@@ -14864,54 +14990,92 @@
         }
       ],
       "public_profile": {
-        "profile_type": "organization",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Salesforce Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "summary": "Salesforce Ventures 是 Salesforce 的风险投资部门，2009 年推出，由 Salesforce 提供全部资金来源，聚焦企业软件。官网截至 2026 年 7 月披露其投资规模、投资组合退出数据及核心主题。",
+        "facts": [
+          {
+            "field": "founded_year",
+            "label": "推出年份",
+            "value": "2009",
+            "source_id": "sfv_about"
+          },
+          {
+            "field": "parent_company",
+            "label": "所属公司",
+            "value": "Salesforce；官网称 Salesforce 是其唯一资金来源",
+            "source_id": "sfv_about"
+          },
+          {
+            "field": "sectors",
+            "label": "官网列示核心主题",
+            "value": [
+              "生成式 AI",
+              "数据与基础设施",
+              "安全",
+              "垂直与水平应用",
+              "能源",
+              "太空"
+            ],
+            "source_id": "sfv_about"
+          },
+          {
+            "field": "investment_stages",
+            "label": "官网披露的支持阶段",
+            "value": [
+              "种子期至成长期；可参与后续轮次"
+            ],
+            "source_id": "sfv_about"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2009",
+            "description": "Salesforce Ventures 官网称该投资部门于 2009 年推出。",
+            "source_id": "sfv_about"
+          }
+        ],
         "track_record": [
           {
-            "description": "融资来源记录：Crusoe · F轮 · 2026-09-17 · Series E 参投方 · $3.9B。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-4afc17abd0ce2781"
-          },
-          {
-            "description": "融资来源记录：Mistral AI · D轮 · 2026-09-08 · 本轮参投 · €3 billion。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-4d11ed62a144a3f4"
-          },
-          {
-            "description": "融资来源记录：Centralize · A轮 · 2026-07-29 · 本轮参投 · $15 million。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-0232cca5ca9bf922"
+            "description": "截至 2026-07-31，官网披露投入资本超过 70 亿美元、投资超过 700 家企业、35 家 IPO 和 190 余起并购退出。这些为机构自述的累计指标，不等同于投资回报率。",
+            "source_id": "sfv_about"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "Salesforce Ventures",
+            "url": "https://salesforceventures.com/about/",
+            "source_id": "sfv_about"
+          },
+          {
+            "kind": "email",
+            "label": "一般联系邮箱（来源为 2024 年官方报告）",
+            "value": "salesforceventures@salesforce.com",
+            "url": "https://salesforceventures.com/wp-content/uploads/2024/11/15-Years-of-Salesforce-Ventures.pdf",
+            "source_id": "sfv_contact"
+          }
+        ],
         "sources": [
           {
-            "source_id": "FISRC-4afc17abd0ce2781",
-            "source_url": "https://sacra.com/c/crusoe/",
-            "source_title": "Crusoe revenue, valuation & funding | Sacra",
-            "source_content_hash": "031d223859c249dd",
-            "quote": "Its October 2025 Series E—oversubscribed and co-led by Valor Equity Partners and Mubadala Capital, with participation from NVIDIA, Fidelity, Founders Fund, Salesforce Ventures, Supermicro, T. Rowe Price, Tiger Global, Ribbit, Franklin Templeton, and Upper90, among others—was anticipated to total $1.375B and valued the company at over $10B.",
-            "quote_hash": "e78c455c702cb1c5edd7d55fa07af015b1b0db72944ba98fe163abcad48cc9e5"
+            "source_id": "sfv_about",
+            "source_url": "https://salesforceventures.com/about/",
+            "source_title": "Backing Enterprising Founders Worldwide | Salesforce Ventures",
+            "source_content_hash": "3fe4337599628a6d52317d8ab54b839c6c2706f326c86fe61e3244af2781ccda",
+            "quote": "Salesforce Ventures was launched as Salesforce’s venture arm in 2009. Salesforce is the sole source of capital for Salesforce Ventures. Portfolio metrics are as of 7/31/26.",
+            "quote_hash": "5581b56098c0d7624d321f29a1b80f0887c5e90660a2349f8254fa56159f202a"
           },
           {
-            "source_id": "FISRC-4d11ed62a144a3f4",
-            "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
-            "source_title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
-            "source_content_hash": "714c413ab36c1848",
-            "quote": "Existing investors a16z, ASML, Belfius, BNP Paribas CIB, Bpifrance, Carmignac, DST Global, Eurazeo, General Catalyst, Headline, Hillspire, Index Ventures, Korelya Capital, Lightspeed, NVIDIA, Phoenix Court's Solar fund (home to LocalGlobe, Latitude and Solar) and Salesforce Ventures participated in the round.",
-            "quote_hash": "1aea8271fecd0d55fa862c63b4b216ab8bda36b37c1200c16dd0db73697dfc25"
-          },
-          {
-            "source_id": "FISRC-0232cca5ca9bf922",
-            "source_url": "https://news.crunchbase.com/sales-marketing/centralize-enterprise-sales-gtm-startup-funding-slack-meta-alums/",
-            "source_title": "独家：前Meta和Slack工程师为初创公司Centralize筹集1500万美元，打造企业销售“交易GPS”",
-            "source_content_hash": "71082c4f5d29c731",
-            "quote": "The financing includes participation from Salesforce Ventures",
-            "quote_hash": "a8dbfb35d3438ca740d5203a49393ec2f3ce6550e5d4de9c7b80364b259a80f9"
+            "source_id": "sfv_contact",
+            "source_url": "https://salesforceventures.com/wp-content/uploads/2024/11/15-Years-of-Salesforce-Ventures.pdf",
+            "source_title": "15 Years of Salesforce Ventures",
+            "source_content_hash": "61085a8e8f58880566290d9cf0f3586e72ea0c1423a5a6fba525aabb9ece69e5",
+            "quote": "To get in touch, email us at salesforceventures@salesforce.com.",
+            "quote_hash": "08611ac76442a67a54131bc51f1ad1766b357f061c44472ec475bf4ed905e839"
           }
         ],
-        "last_verified_at": "2026-09-25"
+        "last_verified_at": "2026-09-25",
+        "coverage_status": "researched",
+        "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
       }
     },
     {
@@ -16058,54 +16222,102 @@
         }
       ],
       "public_profile": {
-        "profile_type": "organization",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Coatue 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "summary": "Coatue Management, L.L.C. 是横跨私募与公开市场的投资管理机构。官网将策略分为早期 Venture、晚期 Growth、Tactical 债务与股权解决方案，以及公开市场投资，并披露其活跃私募组合包含250多家科技公司。官网公开媒体邮箱和多个办公室地址；媒体邮箱不代表投资申请渠道。",
+        "facts": [
+          {
+            "field": "legal_name",
+            "label": "官网法律名称",
+            "value": "Coatue Management, L.L.C.",
+            "source_id": "coatue_home"
+          },
+          {
+            "field": "strategies",
+            "label": "官网列示策略",
+            "value": [
+              "Venture（早期）",
+              "Growth（晚期）",
+              "Tactical（债务与股权方案）",
+              "公开市场"
+            ],
+            "source_id": "coatue_home"
+          },
+          {
+            "field": "private_portfolio",
+            "label": "活跃私募组合",
+            "value": "超过250家科技公司（官网当前披露口径）",
+            "source_id": "coatue_home"
+          },
+          {
+            "field": "portfolio_examples",
+            "label": "官网精选组合示例",
+            "value": [
+              "Anthropic",
+              "OpenAI",
+              "Databricks",
+              "Stripe",
+              "SpaceX",
+              "Cursor"
+            ],
+            "source_id": "coatue_home"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：Stability AI · B轮 · 2026-08-25 · 2022 年 1.01 亿美元融资领投方 · $76 million。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-2a3c20bc832bd7ef"
-          },
-          {
-            "description": "融资来源记录：Anthropic · G轮 · 2026-08-10 · 本轮联合领投 · $30 billion。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-077b1124fc8e9581"
-          },
-          {
-            "description": "融资来源记录：Databricks · 战略融资 · 2026-07-17 · 本轮领投 · 约 30 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-4f2f10efb22c92e2"
+            "description": "官网展示 Anthropic、OpenAI、Databricks、Stripe、SpaceX、Cursor 等私募投资示例，并明确提示这些公司不是全部组合或任何单一基金的代表样本。",
+            "source_id": "coatue_home"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "Coatue",
+            "url": "https://www.coatue.com/",
+            "source_id": "coatue_home"
+          },
+          {
+            "kind": "email",
+            "label": "媒体联系（非投资申请渠道）",
+            "value": "media@coatue.com",
+            "url": "https://www.coatue.com/",
+            "source_id": "coatue_home"
+          },
+          {
+            "kind": "email",
+            "label": "招聘联系",
+            "value": "talent@coatue.com",
+            "url": "https://www.coatue.com/",
+            "source_id": "coatue_home"
+          },
+          {
+            "kind": "address",
+            "label": "纽约办公室",
+            "value": "9 W 57th Street, 25th Floor, New York, NY 10019",
+            "url": "https://www.coatue.com/",
+            "source_id": "coatue_home"
+          },
+          {
+            "kind": "address",
+            "label": "香港办公室",
+            "value": "Suite 6701/F2, International Finance Centre, 8 Finance Street, Hong Kong",
+            "url": "https://www.coatue.com/",
+            "source_id": "coatue_home"
+          }
+        ],
         "sources": [
           {
-            "source_id": "FISRC-2a3c20bc832bd7ef",
-            "source_url": "https://stability.ai/news-updates/stability-ai-announces-101-million-in-funding-for-open-source-artificial-intelligence",
-            "source_title": "Stability AI Announces $101 Million in Funding for Open-Source Artificial Intelligence &mdash; Stability AI",
-            "source_content_hash": "871d436c27d08479",
-            "quote": "The oversubscribed round was led by Coatue, Lightspeed Venture Partners, and O'Shaughnessy Ventures LLC.",
-            "quote_hash": "6341bc5bddb560309366a4d1adcc2ab034d9c2a252631e555b4517d61bddd331"
-          },
-          {
-            "source_id": "FISRC-077b1124fc8e9581",
-            "source_url": "https://sg.finance.yahoo.com/news/gic-backed-openai-rival-anthropic-202159553.html",
-            "source_title": "GIC-backed OpenAI rival Anthropic finalises US$30 bil funding at US$380 bil value",
-            "source_content_hash": "7ff9bbd6aca29214",
-            "quote": "Singapore’s sovereign wealth fund GIC and Coatue Management led the deal, Anthropic said on Thursday.",
-            "quote_hash": "ac5298f37850c97064e8b1fb759b846d39b392aa5084f25a2ff167911b5cee47"
-          },
-          {
-            "source_id": "FISRC-4f2f10efb22c92e2",
-            "source_url": "https://techcrunch.com/2026/07/17/databricks-hits-188b-valuation-extending-its-run-as-ais-favorite-second-act",
-            "source_title": "Databricks 估值达 1880 亿美元，Coatue 领投新一轮融资",
-            "source_content_hash": "905ee67082facdf9",
-            "quote": "The round was led by Coatue.",
-            "quote_hash": "fbe951c93654f636275f7cc1b5b0f2e96688afcfc3ab9681c40238e510d84e8e"
+            "source_id": "coatue_home",
+            "source_url": "https://www.coatue.com/",
+            "source_title": "Homepage | Coatue",
+            "source_content_hash": "31ef51fb937039852556f2d660c118130b9dbaf43a3b0d3c02a318785e9b31a3",
+            "quote": "Our active private portfolio includes over 250 tech companies.",
+            "quote_hash": "7d269a691e28d24667fba1220aa52921d36a066250ef7a113f3e6bfee4795916"
           }
         ],
-        "last_verified_at": "2026-09-25"
+        "last_verified_at": "2026-09-25",
+        "coverage_status": "researched",
+        "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
       }
     },
     {
@@ -19835,54 +20047,102 @@
         }
       ],
       "public_profile": {
-        "profile_type": "organization",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "AMD Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "summary": "AMD Ventures 是 AMD 的企业风险投资部门，聚焦 AI 生态，从硬件、模型与工具到垂直应用和 AI 云。官网在本次核验时披露其活跃组合企业70余家、AI 投资资本超过20亿美元，主要投资 A 至 C 轮、全球布局；这些是官网当前页面口径，页面未注明统计基准日。AMD 也公开计算资源、工程支持和市场拓展等投后支持。",
+        "facts": [
+          {
+            "field": "organization_type",
+            "label": "组织关系",
+            "value": "AMD 企业风险投资部门",
+            "source_id": "amd_ventures_about"
+          },
+          {
+            "field": "focus",
+            "label": "投资重点",
+            "value": "AI 生态，包括模型、平台工具、垂直 AI、AI 云、硅技术与互连",
+            "source_id": "amd_ventures"
+          },
+          {
+            "field": "portfolio_companies",
+            "label": "活跃组合企业",
+            "value": "70 余家（官网当前披露，页面未标统计日期）",
+            "source_id": "amd_ventures"
+          },
+          {
+            "field": "capital_invested",
+            "label": "AI 投资资本",
+            "value": "超过 20 亿美元（官网当前披露，页面未标统计日期）",
+            "source_id": "amd_ventures"
+          },
+          {
+            "field": "investment_stage",
+            "label": "投资阶段",
+            "value": "A 至 C 轮",
+            "source_id": "amd_ventures"
+          },
+          {
+            "field": "geographic_focus",
+            "label": "地域",
+            "value": "全球",
+            "source_id": "amd_ventures"
+          },
+          {
+            "field": "portfolio_support",
+            "label": "投后支持",
+            "value": "提供 AMD 计算资源、工程和开发者支持、市场拓展及客户协同",
+            "source_id": "amd_ventures_about"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：Stability AI · B轮 · 2026-08-25 · 本轮参投 · $76 million。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-e825eacb926a575f"
-          },
-          {
-            "description": "融资来源记录：River AI · 多轮融资 · 2026-08-11 · 本轮参投 · $1.1 billion。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-0deb7f666bec5423"
-          },
-          {
-            "description": "融资来源记录：Odyssey ML · B轮 · 2026-06-17 · 本轮参投 · 3.1亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-e94365d0212a78f3"
+            "description": "AMD Ventures 官网展示 Hugging Face、Cohere、Runway、World Labs 等组合示例；该展示并非完整投资组合。",
+            "source_id": "amd_ventures"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "AMD Ventures 官网",
+            "value": "AMD Ventures",
+            "url": "https://www.amd.com/en/ventures.html",
+            "source_id": "amd_ventures"
+          },
+          {
+            "kind": "application",
+            "label": "AMD Ventures 联系表单",
+            "value": "官网 Contact AMD Ventures 表单",
+            "url": "https://www.amd.com/en/ventures/about.html",
+            "source_id": "amd_ventures_about"
+          },
+          {
+            "kind": "address",
+            "label": "AMD Ventures 地址",
+            "value": "2485 Augustine Drive, Santa Clara, CA 95054",
+            "url": "https://www.amd.com/en/ventures/about.html",
+            "source_id": "amd_ventures_about"
+          }
+        ],
         "sources": [
           {
-            "source_id": "FISRC-e825eacb926a575f",
-            "source_url": "https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding",
-            "source_title": "Stability AI 获 7600 万美元 B 轮融资，环球音乐、索尼音乐、EA 参投",
-            "source_content_hash": "3f1c5718c2b6b5fd",
-            "quote": "Two investment firms, AMD Ventures and Pacific Alliance Ventures, also took part.",
-            "quote_hash": "4fb0689898de7c251bf6ce182549c3ddebb3bf4a41fe74e9b6afa2695d45a2f4"
+            "source_id": "amd_ventures",
+            "source_url": "https://www.amd.com/en/ventures.html",
+            "source_title": "AMD Ventures",
+            "source_content_hash": "25477c207bec73f26656b88edeeff9ec549f6cbdda19fea84b4118d657136fa8",
+            "quote": "70+ Active Portfolio Companies; $2B+ Capital Invested in AI; Series A-C; Global.",
+            "quote_hash": "e343f0cd92fca9cdc1b09ce82392b89c6a594c9b480d3041fccb3dc362ff4b0c"
           },
           {
-            "source_id": "FISRC-0deb7f666bec5423",
-            "source_url": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai",
-            "source_title": "General Catalyst 领投 River AI 11 亿美元融资",
-            "source_content_hash": "a44322af824e0f8f",
-            "quote": "with participation from Nvidia, AMD Ventures, Y Combinator, and Temasek",
-            "quote_hash": "2fea4aa95f455cf668da90f6bbb80a60ef5d93295e469d69604b0b43586f6284"
-          },
-          {
-            "source_id": "FISRC-e94365d0212a78f3",
-            "source_url": "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names",
-            "source_title": "世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元",
-            "source_content_hash": "75587989c4b9271c",
-            "quote": "with Amazon, AMD Ventures, GV, and others participating",
-            "quote_hash": "a36a967aacd4c90a1561022a9dc76b3a0a4d1cf9bc904ad059b99a95d150543b"
+            "source_id": "amd_ventures_about",
+            "source_url": "https://www.amd.com/en/ventures/about.html",
+            "source_title": "About AMD Ventures",
+            "source_content_hash": "63c58d695b39530557352fd0684254064fcab83903f5dde4a7b6d729de23026b",
+            "quote": "The corporate venture capital arm of AMD.",
+            "quote_hash": "ff54fe5b7ed163b9761067b040844631c73c3d7548587aeec11d7203d833a655"
           }
         ],
-        "last_verified_at": "2026-09-25"
+        "last_verified_at": "2026-09-25",
+        "coverage_status": "researched",
+        "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
       }
     },
     {
@@ -22592,54 +22852,161 @@
         }
       ],
       "public_profile": {
-        "profile_type": "organization",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "蓝驰创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "summary": "蓝驰创投是一家专注早期创业公司的风险投资机构。官网介绍页称其于2008年设立，而品牌历史文章称陈维广于2005年在中国创立团队；两种日期表述对应不同官方页面口径，本档案并列保留。官网列出人工智能、硬科技、消费科技和生物科技等投资领域，披露累计投资超过200家企业及在管资金规模超过人民币200亿元。其英文品牌于2023年改为 Lanchi Ventures；官网明确说明该品牌与硅谷 BlueRun Ventures 不再同名共享。",
+        "facts": [
+          {
+            "field": "founded",
+            "label": "设立时间",
+            "value": "2008 年",
+            "source_id": "lanchi_about"
+          },
+          {
+            "field": "investment_stage",
+            "label": "投资阶段",
+            "value": "早期创业投资",
+            "source_id": "lanchi_about"
+          },
+          {
+            "field": "sectors",
+            "label": "官网列示投资领域",
+            "value": [
+              "人工智能",
+              "硬科技",
+              "消费科技",
+              "生物科技"
+            ],
+            "source_id": "lanchi_about"
+          },
+          {
+            "field": "portfolio_count",
+            "label": "累计投资企业",
+            "value": "超过 200 家（官网披露口径）",
+            "source_id": "lanchi_about"
+          },
+          {
+            "field": "aum",
+            "label": "在管资金规模",
+            "value": "超过人民币 200 亿元（官网当前披露口径）",
+            "source_id": "lanchi_about"
+          },
+          {
+            "field": "latest_fund",
+            "label": "第四期双币基金",
+            "value": "约 5.6 亿美元，折合约人民币 39 亿元；公告日期 2026-04-13",
+            "source_id": "lanchi_2026_fund"
+          },
+          {
+            "field": "fund_duration",
+            "label": "平均基金存续期",
+            "value": "10 年（官网披露口径）",
+            "source_id": "lanchi_about"
+          },
+          {
+            "field": "brand_identity",
+            "label": "英文品牌说明",
+            "value": "2023 年起使用 Lanchi Ventures；官方说明不再与硅谷 BlueRun Ventures 同名共享。历史称谓不构成当前主体或组合关系证明。",
+            "source_id": "lanchi_brand"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2005",
+            "description": "品牌历史文章称陈维广于2005年在中国创立蓝驰创投团队。官网 About 页另将设立时间列为2008年；来源口径不同，不推断具体法律实体成立时间。",
+            "source_id": "lanchi_brand"
+          },
+          {
+            "date": "2008",
+            "description": "官网 About 页称蓝驰创投于2008年设立。品牌历史文章另称中国团队于2005年创立；并列保留官方页面的不同表述。",
+            "source_id": "lanchi_about"
+          },
+          {
+            "date": "2023-09-13",
+            "description": "英文品牌改为 Lanchi Ventures，并声明与硅谷 BlueRun Ventures 不再同名共享。",
+            "source_id": "lanchi_brand"
+          },
+          {
+            "date": "2026-04-13",
+            "description": "宣布完成第四期双币基金募集，规模约5.6亿美元（约人民币39亿元）。",
+            "source_id": "lanchi_2026_fund"
+          }
+        ],
         "track_record": [
           {
-            "description": "融资来源记录：千觉机器人 · 战略融资 · 2026-09-20 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-3a00c703054126cd"
+            "description": "官网披露累计投资超过200家创业企业，并列出清科、投中及 Preqin 等历史评选或排名；这些为机构自述/其引用的历史荣誉，不等同于经统一口径审计的基金回报。",
+            "source_id": "lanchi_about"
           },
           {
-            "description": "融资来源记录：墨奇智能 · 天使轮 · 2026-07-09 · 本轮参投 · 10 亿元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-bea9d0be613bc1cd"
-          },
-          {
-            "description": "融资来源记录：微纳核芯 · 多轮融资 · 2026-06-15 · 老股东继续加持 · 超10亿元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-b96684face6f5223"
+            "description": "官网2026年基金公告列举银河通用、智元机器人、月之暗面（Kimi）、Genspark 等投资案例；这些为该机构对其投资活动的披露，不代表本库记录的完整组合。",
+            "source_id": "lanchi_2026_fund"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "蓝驰创投 / Lanchi Ventures",
+            "url": "https://www.lanchivc.com/",
+            "source_id": "lanchi_about"
+          },
+          {
+            "kind": "application",
+            "label": "融资项目与 BP 提交",
+            "value": "官网融资意向表单",
+            "url": "https://www.lanchivc.com/connect/",
+            "source_id": "lanchi_contact"
+          },
+          {
+            "kind": "phone",
+            "label": "北京办公室",
+            "value": "+86 10 59695680",
+            "url": "https://www.lanchivc.com/connect/",
+            "source_id": "lanchi_contact"
+          },
+          {
+            "kind": "address",
+            "label": "北京办公室地址",
+            "value": "北京市朝阳区建国路81号华贸写字楼1座1308室",
+            "url": "https://www.lanchivc.com/connect/",
+            "source_id": "lanchi_contact"
+          }
+        ],
         "sources": [
           {
-            "source_id": "FISRC-3a00c703054126cd",
-            "source_url": "https://www.chinaventure.com.cn/news/114-20260920-393347.html",
-            "source_title": "千觉机器人宣布连续完成两轮数亿元战略融资 投资方包括知名双币基金蓝驰创投、中金资本旗下基金、靖亚资本等知名投资机构。 投中网 · 22小时前",
-            "source_content_hash": "3943ea5191d9c7eb",
-            "quote": "投资方包括知名双币基金蓝驰创投、中金资本旗下基金、靖亚资本等知名投资机构。",
-            "quote_hash": "b107f578d66cdfb0c455906070c8afb274d89805bad140a09769daf8c6fa1a89"
+            "source_id": "lanchi_about",
+            "source_url": "https://www.lanchivc.com/about/",
+            "source_title": "关于蓝驰 | 蓝驰创投",
+            "source_content_hash": "0b6098eefcbdd9ed186521251369af22660879fc214c39c8350317dc97ecd34f",
+            "quote": "蓝驰创投于2008年设立，是一家专注于早期创业公司的风险投资机构。",
+            "quote_hash": "b17e2cda984110bd5315b2759f17d8839e0d9d4b987cf9b270b507b9fff751f1"
           },
           {
-            "source_id": "FISRC-bea9d0be613bc1cd",
-            "source_url": "https://finance.sina.com.cn/roll/2026-07-09/doc-inihfazc5336299.shtml?froms=ggmp",
-            "source_title": "具身智能企业墨奇智能完成10亿元天使轮融资 - 新浪财经",
-            "source_content_hash": "311224a4dfb089df",
-            "quote": "蓝驰创投、君联资本、华业天成、高榕资本、中科创星、源码资本、光合创投、柏睿资本、58 产业基金等多家专业投资机构共同参与",
-            "quote_hash": "ec3f3255ca1ad3b762f10c8464560a301ec0efedbd9e312f027cac2f0749684b"
+            "source_id": "lanchi_contact",
+            "source_url": "https://www.lanchivc.com/connect/",
+            "source_title": "联系我们 | 蓝驰创投",
+            "source_content_hash": "0bfc28c07ca82fb6888e03a8ba1273c9797d90fcfed7b274d5901777e73eb7da",
+            "quote": "+86 10 59695680；北京市朝阳区建国路81号华贸写字楼1座1308室。",
+            "quote_hash": "cf1a485de33a6a36f7461b1726aa24ee606cb33c24afc80df384961703634260"
           },
           {
-            "source_id": "FISRC-b96684face6f5223",
-            "source_url": "https://finance.sina.com.cn/jjxw/2026-06-15/doc-inicnckx8338155.shtml",
-            "source_title": "微纳核芯完成超10亿元B轮系列融资",
-            "source_content_hash": "3001d7761836998ad785b02a8753e10abd430afc8267dd715a690f318b1cff60",
-            "quote": "中芯聚源、毅达资本、蓝驰创投、东方嘉富及 立讯精密 产投等老股东继续加持",
-            "quote_hash": "756b351a9fa6aa2ab3dfc4a87d296aea555b2d57dc75b235aa853a15a06db3cc"
+            "source_id": "lanchi_brand",
+            "source_url": "https://www.lanchivc.com/7238/",
+            "source_title": "崭新的Lanchi，不变的蓝驰 | 蓝驰创投",
+            "source_content_hash": "fbc9764a4c47ac80641d56568e9dd202fe71c257d608231775e5954df3c34531",
+            "quote": "从今天起，蓝驰创投的英文品牌将变更为「Lanchi Ventures」，不再与硅谷风险投资基金BlueRun Ventures同名共享。",
+            "quote_hash": "fec84a6ba895a0ae01647762834515565544122b9692d9ccc4b0b763db8ef5ae"
+          },
+          {
+            "source_id": "lanchi_2026_fund",
+            "source_url": "https://www.lanchivc.com/8850/",
+            "source_title": "蓝驰创投完成新一期39亿元双币基金募集 | 蓝驰创投",
+            "source_content_hash": "479962e384fcd0b2e7a2a7a86440f6888835be00754e99442b8f855739fb30ad",
+            "quote": "蓝驰创投近日已完成第四期双币基金的募集，基金总规模约5.6亿美元（折合人民币约39亿元）。",
+            "quote_hash": "2fb2778a7666c839f5901b593190a447d9817c0911b6fbf3b575d6d3098b8905"
           }
         ],
-        "last_verified_at": "2026-09-25"
+        "last_verified_at": "2026-09-25",
+        "coverage_status": "researched",
+        "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
       }
     },
     {

@@ -671,54 +671,102 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Coatue 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Coatue Management, L.L.C. 是横跨私募与公开市场的投资管理机构。官网将策略分为早期 Venture、晚期 Growth、Tactical 债务与股权解决方案，以及公开市场投资，并披露其活跃私募组合包含250多家科技公司。官网公开媒体邮箱和多个办公室地址；媒体邮箱不代表投资申请渠道。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "官网法律名称",
+          "value": "Coatue Management, L.L.C.",
+          "source_id": "coatue_home"
+        },
+        {
+          "field": "strategies",
+          "label": "官网列示策略",
+          "value": [
+            "Venture（早期）",
+            "Growth（晚期）",
+            "Tactical（债务与股权方案）",
+            "公开市场"
+          ],
+          "source_id": "coatue_home"
+        },
+        {
+          "field": "private_portfolio",
+          "label": "活跃私募组合",
+          "value": "超过250家科技公司（官网当前披露口径）",
+          "source_id": "coatue_home"
+        },
+        {
+          "field": "portfolio_examples",
+          "label": "官网精选组合示例",
+          "value": [
+            "Anthropic",
+            "OpenAI",
+            "Databricks",
+            "Stripe",
+            "SpaceX",
+            "Cursor"
+          ],
+          "source_id": "coatue_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Stability AI · B轮 · 2026-08-25 · 2022 年 1.01 亿美元融资领投方 · $76 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2a3c20bc832bd7ef"
-        },
-        {
-          "description": "融资来源记录：Anthropic · G轮 · 2026-08-10 · 本轮联合领投 · $30 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-077b1124fc8e9581"
-        },
-        {
-          "description": "融资来源记录：Databricks · 战略融资 · 2026-07-17 · 本轮领投 · 约 30 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-4f2f10efb22c92e2"
+          "description": "官网展示 Anthropic、OpenAI、Databricks、Stripe、SpaceX、Cursor 等私募投资示例，并明确提示这些公司不是全部组合或任何单一基金的代表样本。",
+          "source_id": "coatue_home"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Coatue",
+          "url": "https://www.coatue.com/",
+          "source_id": "coatue_home"
+        },
+        {
+          "kind": "email",
+          "label": "媒体联系（非投资申请渠道）",
+          "value": "media@coatue.com",
+          "url": "https://www.coatue.com/",
+          "source_id": "coatue_home"
+        },
+        {
+          "kind": "email",
+          "label": "招聘联系",
+          "value": "talent@coatue.com",
+          "url": "https://www.coatue.com/",
+          "source_id": "coatue_home"
+        },
+        {
+          "kind": "address",
+          "label": "纽约办公室",
+          "value": "9 W 57th Street, 25th Floor, New York, NY 10019",
+          "url": "https://www.coatue.com/",
+          "source_id": "coatue_home"
+        },
+        {
+          "kind": "address",
+          "label": "香港办公室",
+          "value": "Suite 6701/F2, International Finance Centre, 8 Finance Street, Hong Kong",
+          "url": "https://www.coatue.com/",
+          "source_id": "coatue_home"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-2a3c20bc832bd7ef",
-          "source_url": "https://stability.ai/news-updates/stability-ai-announces-101-million-in-funding-for-open-source-artificial-intelligence",
-          "source_title": "Stability AI Announces $101 Million in Funding for Open-Source Artificial Intelligence &mdash; Stability AI",
-          "source_content_hash": "871d436c27d08479",
-          "quote": "The oversubscribed round was led by Coatue, Lightspeed Venture Partners, and O'Shaughnessy Ventures LLC.",
-          "quote_hash": "6341bc5bddb560309366a4d1adcc2ab034d9c2a252631e555b4517d61bddd331"
-        },
-        {
-          "source_id": "FISRC-077b1124fc8e9581",
-          "source_url": "https://sg.finance.yahoo.com/news/gic-backed-openai-rival-anthropic-202159553.html",
-          "source_title": "GIC-backed OpenAI rival Anthropic finalises US$30 bil funding at US$380 bil value",
-          "source_content_hash": "7ff9bbd6aca29214",
-          "quote": "Singapore’s sovereign wealth fund GIC and Coatue Management led the deal, Anthropic said on Thursday.",
-          "quote_hash": "ac5298f37850c97064e8b1fb759b846d39b392aa5084f25a2ff167911b5cee47"
-        },
-        {
-          "source_id": "FISRC-4f2f10efb22c92e2",
-          "source_url": "https://techcrunch.com/2026/07/17/databricks-hits-188b-valuation-extending-its-run-as-ais-favorite-second-act",
-          "source_title": "Databricks 估值达 1880 亿美元，Coatue 领投新一轮融资",
-          "source_content_hash": "905ee67082facdf9",
-          "quote": "The round was led by Coatue.",
-          "quote_hash": "fbe951c93654f636275f7cc1b5b0f2e96688afcfc3ab9681c40238e510d84e8e"
+          "source_id": "coatue_home",
+          "source_url": "https://www.coatue.com/",
+          "source_title": "Homepage | Coatue",
+          "source_content_hash": "31ef51fb937039852556f2d660c118130b9dbaf43a3b0d3c02a318785e9b31a3",
+          "quote": "Our active private portfolio includes over 250 tech companies.",
+          "quote_hash": "7d269a691e28d24667fba1220aa52921d36a066250ef7a113f3e6bfee4795916"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-25",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

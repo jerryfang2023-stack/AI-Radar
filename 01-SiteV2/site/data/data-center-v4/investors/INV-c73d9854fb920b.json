@@ -1117,54 +1117,85 @@
       }
     },
     "public_profile": {
-      "profile_type": "organization",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Nvidia 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "NVIDIA 是一家设有企业投资职能并运营 NVentures 风险投资部门的科技公司。NVentures 官网介绍其面向 AI 基础设施、机器人、数字生物学、应用 AI 和前沿计算等领域投资。融资活动库中的“Nvidia”名称未必能单独确认交易由 NVentures 还是其他 NVIDIA 投资职能完成。",
+      "facts": [
+        {
+          "field": "venture_arm",
+          "label": "风险投资部门",
+          "value": "NVentures",
+          "source_id": "nvidia_nventures"
+        },
+        {
+          "field": "sectors",
+          "label": "NVentures 官网列示领域",
+          "value": [
+            "AI 基础设施",
+            "机器人",
+            "数字生物学",
+            "应用 AI",
+            "前沿计算"
+          ],
+          "source_id": "nvidia_nventures"
+        },
+        {
+          "field": "organization_structure",
+          "label": "投资职能区分",
+          "value": "NVIDIA 区分企业投资、NVentures 风险投资部门与 NVIDIA Inception 创业生态项目；融资记录名称不足以确认具体投资职能。",
+          "source_id": "nvidia_investments"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Crusoe · F轮 · 2026-09-17 · 本轮参投 · $3.9B。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-5fc65e3f4fb1b347"
-        },
-        {
-          "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮参投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-61aa8db010b34dfa"
-        },
-        {
-          "description": "融资来源记录：Mistral AI · D轮 · 2026-09-08 · 本轮参投 · €3 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-4d11ed62a144a3f4"
+          "description": "NVentures 官网列有其组合企业与技术领域案例。本库归在 NVIDIA 名称下的单笔融资不据此自动归属至 NVentures。",
+          "source_id": "nvidia_nventures"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "NVentures 官方介绍",
+          "value": "NVIDIA NVentures",
+          "url": "https://www.nvidia.com/en-us/startups/nventures/",
+          "source_id": "nvidia_nventures"
+        },
+        {
+          "kind": "email",
+          "label": "NVIDIA 媒体联系（非投资申请渠道）",
+          "value": "press@nvidia.com",
+          "url": "https://nvidianews.nvidia.com/contacts",
+          "source_id": "nvidia_press"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-5fc65e3f4fb1b347",
-          "source_url": "https://kingliber.com/the-ai-infrastructure-boom-crusoe-secures-3-9-billion-series-f-at-a-30-9-billion-valuation-to-power-the-next-generation-of-compute/",
-          "source_title": "The AI Infrastructure Boom: Crusoe Secures $3.9 Billion Series F at a $30.9 Billion Valuation to Power the Next Generation of Compute – King Liber",
-          "source_content_hash": "a5d809d221408d5b",
-          "quote": "They were joined by a roster of elite institutional and corporate investors, including Founders Fund , GIC , Nvidia , the Qatar Investment Authority (QIA) , Radical Ventures , and TPG .",
-          "quote_hash": "f095cfa01d7214cc37d55b841ff30c29ca4c63f1172dcbde315aadbad247b8e2"
+          "source_id": "nvidia_nventures",
+          "source_url": "https://www.nvidia.com/en-us/startups/nventures/",
+          "source_title": "NVentures — NVIDIA’s Venture Capital Arm",
+          "source_content_hash": "d3359c5664cc0744c232347ec30517b0834e716c4a9808c4687212c848fb9be4",
+          "quote": "NVentures is NVIDIA’s venture capital arm. It focuses on AI infrastructure, robotics, digital biology, applied AI, and frontier compute.",
+          "quote_hash": "76a883d3cc2e85af162b76448500782412f39d28a282bb5e328113af0724ca27"
         },
         {
-          "source_id": "FISRC-61aa8db010b34dfa",
-          "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
-          "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
-          "source_content_hash": "274ba4a54870c633",
-          "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
-          "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
+          "source_id": "nvidia_investments",
+          "source_url": "https://blogs.nvidia.com/blog/nvidia-investments/",
+          "source_title": "How NVIDIA Fuels the AI Revolution With Investments",
+          "source_content_hash": "80a65457203d02c3a0dc7374f3b4d23df5b9a0f8db47e5d638bc78da21d5f47d",
+          "quote": "First, through NVIDIA’s corporate investments. Second, through NVentures, our venture capital arm.",
+          "quote_hash": "3ddbba673e7d60baa99d53e1ed1212a5a5e70e0e7bcc8f71deed25c2ec7af278"
         },
         {
-          "source_id": "FISRC-4d11ed62a144a3f4",
-          "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
-          "source_title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
-          "source_content_hash": "714c413ab36c1848",
-          "quote": "Existing investors a16z, ASML, Belfius, BNP Paribas CIB, Bpifrance, Carmignac, DST Global, Eurazeo, General Catalyst, Headline, Hillspire, Index Ventures, Korelya Capital, Lightspeed, NVIDIA, Phoenix Court's Solar fund (home to LocalGlobe, Latitude and Solar) and Salesforce Ventures participated in the round.",
-          "quote_hash": "1aea8271fecd0d55fa862c63b4b216ab8bda36b37c1200c16dd0db73697dfc25"
+          "source_id": "nvidia_press",
+          "source_url": "https://nvidianews.nvidia.com/contacts",
+          "source_title": "Press Contacts | NVIDIA Newsroom",
+          "source_content_hash": "e7685ee0e6b289b1f981e5ff98191c6dde923e9bdf7296e6fb71600a162d45dc",
+          "quote": "Corporate Communications: press@nvidia.com.",
+          "quote_hash": "ee1e54cd9f847ba4c9a860b598e9dfd0b8bd5688c398c80253a8a4aa8f1ef820"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-25",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

@@ -722,54 +722,92 @@
       }
     },
     "public_profile": {
-      "profile_type": "organization",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Salesforce Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Salesforce Ventures 是 Salesforce 的风险投资部门，2009 年推出，由 Salesforce 提供全部资金来源，聚焦企业软件。官网截至 2026 年 7 月披露其投资规模、投资组合退出数据及核心主题。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "推出年份",
+          "value": "2009",
+          "source_id": "sfv_about"
+        },
+        {
+          "field": "parent_company",
+          "label": "所属公司",
+          "value": "Salesforce；官网称 Salesforce 是其唯一资金来源",
+          "source_id": "sfv_about"
+        },
+        {
+          "field": "sectors",
+          "label": "官网列示核心主题",
+          "value": [
+            "生成式 AI",
+            "数据与基础设施",
+            "安全",
+            "垂直与水平应用",
+            "能源",
+            "太空"
+          ],
+          "source_id": "sfv_about"
+        },
+        {
+          "field": "investment_stages",
+          "label": "官网披露的支持阶段",
+          "value": [
+            "种子期至成长期；可参与后续轮次"
+          ],
+          "source_id": "sfv_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2009",
+          "description": "Salesforce Ventures 官网称该投资部门于 2009 年推出。",
+          "source_id": "sfv_about"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Crusoe · F轮 · 2026-09-17 · Series E 参投方 · $3.9B。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-4afc17abd0ce2781"
-        },
-        {
-          "description": "融资来源记录：Mistral AI · D轮 · 2026-09-08 · 本轮参投 · €3 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-4d11ed62a144a3f4"
-        },
-        {
-          "description": "融资来源记录：Centralize · A轮 · 2026-07-29 · 本轮参投 · $15 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-0232cca5ca9bf922"
+          "description": "截至 2026-07-31，官网披露投入资本超过 70 亿美元、投资超过 700 家企业、35 家 IPO 和 190 余起并购退出。这些为机构自述的累计指标，不等同于投资回报率。",
+          "source_id": "sfv_about"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Salesforce Ventures",
+          "url": "https://salesforceventures.com/about/",
+          "source_id": "sfv_about"
+        },
+        {
+          "kind": "email",
+          "label": "一般联系邮箱（来源为 2024 年官方报告）",
+          "value": "salesforceventures@salesforce.com",
+          "url": "https://salesforceventures.com/wp-content/uploads/2024/11/15-Years-of-Salesforce-Ventures.pdf",
+          "source_id": "sfv_contact"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-4afc17abd0ce2781",
-          "source_url": "https://sacra.com/c/crusoe/",
-          "source_title": "Crusoe revenue, valuation & funding | Sacra",
-          "source_content_hash": "031d223859c249dd",
-          "quote": "Its October 2025 Series E—oversubscribed and co-led by Valor Equity Partners and Mubadala Capital, with participation from NVIDIA, Fidelity, Founders Fund, Salesforce Ventures, Supermicro, T. Rowe Price, Tiger Global, Ribbit, Franklin Templeton, and Upper90, among others—was anticipated to total $1.375B and valued the company at over $10B.",
-          "quote_hash": "e78c455c702cb1c5edd7d55fa07af015b1b0db72944ba98fe163abcad48cc9e5"
+          "source_id": "sfv_about",
+          "source_url": "https://salesforceventures.com/about/",
+          "source_title": "Backing Enterprising Founders Worldwide | Salesforce Ventures",
+          "source_content_hash": "3fe4337599628a6d52317d8ab54b839c6c2706f326c86fe61e3244af2781ccda",
+          "quote": "Salesforce Ventures was launched as Salesforce’s venture arm in 2009. Salesforce is the sole source of capital for Salesforce Ventures. Portfolio metrics are as of 7/31/26.",
+          "quote_hash": "5581b56098c0d7624d321f29a1b80f0887c5e90660a2349f8254fa56159f202a"
         },
         {
-          "source_id": "FISRC-4d11ed62a144a3f4",
-          "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
-          "source_title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
-          "source_content_hash": "714c413ab36c1848",
-          "quote": "Existing investors a16z, ASML, Belfius, BNP Paribas CIB, Bpifrance, Carmignac, DST Global, Eurazeo, General Catalyst, Headline, Hillspire, Index Ventures, Korelya Capital, Lightspeed, NVIDIA, Phoenix Court's Solar fund (home to LocalGlobe, Latitude and Solar) and Salesforce Ventures participated in the round.",
-          "quote_hash": "1aea8271fecd0d55fa862c63b4b216ab8bda36b37c1200c16dd0db73697dfc25"
-        },
-        {
-          "source_id": "FISRC-0232cca5ca9bf922",
-          "source_url": "https://news.crunchbase.com/sales-marketing/centralize-enterprise-sales-gtm-startup-funding-slack-meta-alums/",
-          "source_title": "独家：前Meta和Slack工程师为初创公司Centralize筹集1500万美元，打造企业销售“交易GPS”",
-          "source_content_hash": "71082c4f5d29c731",
-          "quote": "The financing includes participation from Salesforce Ventures",
-          "quote_hash": "a8dbfb35d3438ca740d5203a49393ec2f3ce6550e5d4de9c7b80364b259a80f9"
+          "source_id": "sfv_contact",
+          "source_url": "https://salesforceventures.com/wp-content/uploads/2024/11/15-Years-of-Salesforce-Ventures.pdf",
+          "source_title": "15 Years of Salesforce Ventures",
+          "source_content_hash": "61085a8e8f58880566290d9cf0f3586e72ea0c1423a5a6fba525aabb9ece69e5",
+          "quote": "To get in touch, email us at salesforceventures@salesforce.com.",
+          "quote_hash": "08611ac76442a67a54131bc51f1ad1766b357f061c44472ec475bf4ed905e839"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-25",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

@@ -739,54 +739,99 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Menlo Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Menlo Ventures 是成立于 1976 年的风险投资机构，官网将策略划分为 inception、venture 和 inflection 阶段，并称其在种子期、A/B 轮及早期成长阶段支持公司。官网公布管理规模、上市与并购案例统计及办公室联系信息。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "1976",
+          "source_id": "menlo_about"
+        },
+        {
+          "field": "investment_stages",
+          "label": "官网披露的投资阶段",
+          "value": [
+            "Inception",
+            "Venture（A/B轮）",
+            "Inflection（早期成长）"
+          ],
+          "source_id": "menlo_about"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "官网披露的管理规模",
+          "value": "超过 76 亿美元",
+          "source_id": "menlo_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1976",
+          "description": "Menlo Ventures 官网记载机构成立于 1976 年。",
+          "source_id": "menlo_about"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Higgsfield · B轮 · 2026-08-17 · 本轮参投 · 4 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-7c15ac15bf3d0b1a"
+          "description": "官网在当前介绍页列示 85 家以上上市公司、170 起以上并购案例和超过 76 亿美元管理规模；这些为机构披露口径，并非基金回报率。",
+          "source_id": "menlo_about"
         },
         {
-          "description": "融资来源记录：Higgsfield · B轮 · 2026-08-17 · 历史轮次参投 · 4 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-35d27946fd70aa42"
-        },
-        {
-          "description": "融资来源记录：Wispr · B轮 · 2026-08-17 · 本轮领投 · $280M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c7de0ac22c0c4ca3"
+          "description": "官网介绍其支持创业团队进行产品市场匹配、市场进入和组织扩张，并有专门的组合服务团队。",
+          "source_id": "menlo_about"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "menlovc.com",
+          "url": "https://menlovc.com/about/",
+          "source_id": "menlo_about"
+        },
+        {
+          "kind": "address",
+          "label": "旧金山办公室",
+          "value": "524 2nd Street, San Francisco, CA 94107",
+          "url": "https://menlovc.com/contact/",
+          "source_id": "menlo_contact"
+        },
+        {
+          "kind": "address",
+          "label": "门洛帕克办公室",
+          "value": "1300 El Camino Real, Suite 150, Menlo Park, CA 94025",
+          "url": "https://menlovc.com/contact/",
+          "source_id": "menlo_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "办公室电话",
+          "value": "650-854-8540",
+          "url": "https://menlovc.com/contact/",
+          "source_id": "menlo_contact"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-7c15ac15bf3d0b1a",
-          "source_url": "https://www.finsmes.com/2026/08/higgsfield-raises-400m-in-series-b-funding.html",
-          "source_title": "Higgsfield Raises $400M in Series B Funding",
-          "source_content_hash": "66d04514886f3d3e",
-          "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, NTT DOCOMO Ventures, Accel, Menlo Ventures, AI Capital Partners, GFT Ventures, Capra Ventures, BAM Corner Point, BroadLight Capital, and Natalia Vodianova Arnault",
-          "quote_hash": "f2d170b06d7d95a66bb1a37e76577ee8c44898a0f37d8ec63f1900d3f15ba92a"
+          "source_id": "menlo_about",
+          "source_url": "https://menlovc.com/about/",
+          "source_title": "Menlo Ventures | About Us",
+          "source_content_hash": "84c847c0ecc1c789ea1ed8d8f8f23fff4e66856d5b8832bf9095071f3fce5289",
+          "quote": "Established 1976. 85+ Public companies. 170+ Mergers + acquisitions. $7.6B+ Under management. We focus on inception, venture, and inflection stages.",
+          "quote_hash": "f424037eeac72b6ab21c6dad3a034c3cd14bd1592aaac488e6061f3dc9a5a503"
         },
         {
-          "source_id": "FISRC-35d27946fd70aa42",
-          "source_url": "https://techstartups.com/2026/01/15/ai-video-startup-higgsfield-raises-80m-at-1-3b-valuation-as-demand-for-generative-video-surges/",
-          "source_title": "AI video startup Higgsfield raises $80M at $1.3B valuation as demand for generative video surges - Tech Startups",
-          "source_content_hash": "0d8d55e9f8e4182e",
-          "quote": "with participation from BroadLight Capital, NextEquity, and Menlo Ventures",
-          "quote_hash": "cb6eb89aab7c1200185db653dfe353094ec3e34324d608d7317f91f876adc116"
-        },
-        {
-          "source_id": "FISRC-c7de0ac22c0c4ca3",
-          "source_url": "https://techcrunch.com/2026/08/17/wispr-raises-280m-at-2b-valuation-as-it-looks-beyond-dictation",
-          "source_title": "Wispr 获 2.8 亿美元 B 轮融资，估值 20 亿美元，业务拓展至会议记录",
-          "source_content_hash": "ee00eb4103124f93",
-          "quote": "raised $280 million in Series B funding, led by Menlo Ventures",
-          "quote_hash": "4ce46948a07016e67be78b2172659ab1be74d3b92043c967087099594a99c16c"
+          "source_id": "menlo_contact",
+          "source_url": "https://menlovc.com/contact/",
+          "source_title": "Menlo Ventures | Contact",
+          "source_content_hash": "f119121739f447a9172763d347a2274f510231a4a8e25a61fa35737c50f786c6",
+          "quote": "San Francisco: 524 2nd Street, San Francisco, CA 94107. Menlo Park: 1300 El Camino Real, Suite 150, Menlo Park, CA 94025. 650.854.8540.",
+          "quote_hash": "6b65a50b891d8c111e5bfd530d4bc9eb08bdefcd9718bf4b8706cad0502cd1ab"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-25",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }
