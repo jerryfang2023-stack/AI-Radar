@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-25T00:29:53.849Z",
+    "latestDataDate": "2026-09-25",
+    "currentDate": "2026-09-25",
+    "eventCount": 3599,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -86,6 +86,7 @@
       "EV-3e580ccbc11654cb",
       "EV-8a4e1df3760d9bea",
       "EV-1765fd690cff1cac",
+      "EV-79a0ee5a1daffb78",
       "EV-6e655c211bb0982a",
       "EV-fcf3c464260b6730",
       "EV-34a9773ebd5bbc97",
@@ -142,6 +143,7 @@
       "EV-acb2087779a8ea3c",
       "EV-6415a58637893b34",
       "EV-4faa2bcf2e42e60c",
+      "EV-aa858ac4f503c2a8",
       "EV-5a90068e9e762f94",
       "EV-d32e50951ff7f9a1",
       "EV-85ba013c379a9d3d",
@@ -196,6 +198,7 @@
       "EN-2505fe8a9e908e04",
       "EN-ee12ab249ba9a51f",
       "EN-2a5704f811f09cb8",
+      "EN-04e798f8f91ee67d",
       "EN-45e648a56b09477d",
       "EN-7ef08ef63597d47c",
       "EN-73424822d4b99926",
@@ -285,7 +288,7 @@
       "HW-1450585d9cd5879f"
     ],
     "firstSeen": "2026-01-12",
-    "lastSeen": "2026-09-24"
+    "lastSeen": "2026-09-25"
   },
   "events": [
     {
@@ -7639,6 +7642,163 @@
       "products": [],
       "sourceUrl": "https://qbitai.com/2026/08/472060.html",
       "publisher": "量子位"
+    },
+    {
+      "id": "EV-79a0ee5a1daffb78",
+      "dataDate": "2026-09-25",
+      "date": "2026-08-06",
+      "updatedDate": "2026-09-25",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Comfo Labs 从 Prodigy Investment 获得种子轮融资",
+      "originalTitle": "Comfo Labs raises seed round from Prodigy Investment - Dealroom",
+      "subject": "Comfo Labs",
+      "action": "raises",
+      "object": "seed round from Prodigy Investment - Dealroom",
+      "metrics": [
+        "$4.5M",
+        "$419.2K"
+      ],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-04e798f8f91ee67d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-04e798f8f91ee67d"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-04e798f8f91ee67d"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-04e798f8f91ee67d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-04e798f8f91ee67d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-04e798f8f91ee67d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-04e798f8f91ee67d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-04e798f8f91ee67d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-04e798f8f91ee67d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-04e798f8f91ee67d",
+        "EN-737f388fa36e18bf",
+        "EN-c92dedc5abec562f"
+      ],
+      "entityNames": [
+        "Comfo Labs",
+        "Comfo Labs Dealroom",
+        "Codebreaker Labs"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://dealroom.co/news/143383-comfo-labs-raises-seed-round-from-prodigy-investment",
+      "publisher": "dealroom.co"
     },
     {
       "id": "EV-6e655c211bb0982a",
@@ -20592,6 +20752,95 @@
       "publisher": "NVIDIA AI Blog"
     },
     {
+      "id": "EV-aa858ac4f503c2a8",
+      "dataDate": "2026-09-25",
+      "date": "2026-09-24",
+      "updatedDate": "2026-09-25",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "5分钟完成机器人纳管、10秒启动跨集群任务，清华大学联合无问芯穹开源具身智能云原生平台RLark",
+      "originalTitle": "",
+      "subject": "清华大学与无问芯穹",
+      "action": "model_release",
+      "object": "RLark",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [
+          "cn-qbitai-rss"
+        ],
+        "claim_refs": [
+          "CL-065368a310ce1b04"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-07a6d4925ba8369c",
+        "EN-0369c8fcda657a43"
+      ],
+      "entityNames": [
+        "清华大学",
+        "Infinigence AI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://qbitai.com/2026/09/496767.html",
+      "publisher": "量子位"
+    },
+    {
       "id": "EV-5a90068e9e762f94",
       "dataDate": "2026-09-15",
       "date": "2026-09-14",
@@ -25905,6 +26154,29 @@
       "lastSeen": "2026-09-12"
     },
     {
+      "id": "EN-04e798f8f91ee67d",
+      "name": "Comfo Labs",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-79a0ee5a1daffb78"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-physical_automation",
+        "TX-industry-manufacturing",
+        "TX-technology-embodied_ai"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-06",
+      "lastSeen": "2026-09-25"
+    },
+    {
       "id": "EN-45e648a56b09477d",
       "name": "PrimalVerse（元昊动力）",
       "entityType": "organization_candidate",
@@ -26377,6 +26649,8 @@
         "EV-5762fe51987bc5ff",
         "EV-6cb8979f92cf74ce",
         "EV-ef1de880e4ef9f75",
+        "EV-76b340a187999c51",
+        "EV-73ad59f3fed520eb",
         "EV-67804da6b04fdcc5",
         "EV-4965305d57edf6dd",
         "EV-ec21501b02a611f6",
@@ -26395,6 +26669,8 @@
         "EV-cec235426920c522",
         "EV-051d1924db7ba65d",
         "EV-777eb5b7783b71fb",
+        "EV-8fb741b3f6af17ae",
+        "EV-76d9a509356f3cff",
         "EV-bbb3ed2040b40e3f",
         "EV-b67a95250d1aae8b",
         "EV-6379ee71e6029bd0",
@@ -26416,6 +26692,11 @@
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
         "EV-1b912ec16c50fc0f",
+        "EV-49ff4d7805d8516a",
+        "EV-96768694a18588be",
+        "EV-ba56c2356b17d979",
+        "EV-bba1ef7fda30e0f6",
+        "EV-c82473af0a147e3d",
         "EV-09898d5522f0db28",
         "EV-29c45021243dba2a",
         "EV-8058ddb115bdef47",
@@ -26594,6 +26875,7 @@
         "EV-a4f052325d0ef230",
         "EV-cb3cb11ff13f6069",
         "EV-8115dd18f2812a29",
+        "EV-76ede2fb00adc813",
         "EV-5b593a87f47334f9",
         "EV-36defc1d19f0ce5d",
         "EV-808c496734dae101",
@@ -26655,6 +26937,7 @@
         "TX-use_case-software_development",
         "TX-product_form-ai_compute_system",
         "TX-ai_market_application-computing_infrastructure",
+        "TX-industry-media_entertainment",
         "TX-use_case-security_operations",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
@@ -26663,6 +26946,7 @@
         "TX-technology-multimodal",
         "TX-technology-open_weights",
         "TX-technology-video_generation",
+        "TX-use_case-customer_support",
         "TX-technology-image_generation",
         "TX-technology-speech_audio",
         "TX-use_case-legal_compliance",
@@ -26693,7 +26977,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "EN-998255d915da8953",
@@ -27857,7 +28141,9 @@
         "EV-f247eff115e840af",
         "EV-ed8260ee9a7a80af",
         "EV-df88363737beb880",
+        "EV-34a6d03b3142b97f",
         "EV-3ed4dfb4a164a3e0",
+        "EV-f337fdcdf92ec1e1",
         "EV-0b7dcbb44344e389",
         "EV-da26b43d3924136e",
         "EV-172660367138131c",
@@ -27889,6 +28175,7 @@
         "EV-3a704c40204ecfd9",
         "EV-94e0afb44c320c99",
         "EV-777eb5b7783b71fb",
+        "EV-8fb741b3f6af17ae",
         "EV-0f241385f0cd6c2d",
         "EV-bbb3ed2040b40e3f",
         "EV-d2247eeac1478994",
@@ -27918,6 +28205,8 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-a1da145cb3f6b8ba",
+        "EV-ba56c2356b17d979",
         "EV-74e87bba31270f42",
         "EV-8058ddb115bdef47",
         "EV-06b33a114cf6e513",
@@ -28336,7 +28625,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "EN-e3ce9cc5efa9354c",
@@ -28482,6 +28771,9 @@
         "EV-67ef7accd26a07a0",
         "EV-a7e1ecd212474e00",
         "EV-d961d3ad02f6ae14",
+        "EV-a1da145cb3f6b8ba",
+        "EV-ba56c2356b17d979",
+        "EV-f34e18f3e7e123a1",
         "EV-5edf45d6424e2154",
         "EV-da957eedfad908b6",
         "EV-606d3928fcd6a078",
@@ -28563,7 +28855,7 @@
         "EN-a3c3b987b09fc1bb"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-09-21"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "EN-b47de584b4515427",

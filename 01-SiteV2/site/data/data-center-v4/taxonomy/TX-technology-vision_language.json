@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-25T00:29:53.849Z",
+    "latestDataDate": "2026-09-25",
+    "currentDate": "2026-09-25",
+    "eventCount": 3599,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -62,6 +62,7 @@
       "EV-d051cfbe3fd7e80f",
       "EV-6f092cfc7a064d64",
       "EV-8077605769c4d4eb",
+      "EV-59e0e9a5e00ddddf",
       "EV-5ff63c4f72976e83",
       "EV-6a3286e2186e4774",
       "EV-7c53df0cdea33936",
@@ -77,6 +78,7 @@
     "entityIds": [
       "EN-f2b9106253663314",
       "EN-2b6e51bec93e86c1",
+      "EN-ee1e31ffef7dbe64",
       "EN-bdfc3c0aaa95272a",
       "EN-bae152c4560df38c",
       "EN-a658fbc24f5e3832",
@@ -90,7 +92,7 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-01-06",
-    "lastSeen": "2026-09-20"
+    "lastSeen": "2026-09-25"
   },
   "events": [
     {
@@ -869,6 +871,96 @@
       "products": [],
       "sourceUrl": "https://news.pedaily.cn/202601/559543.shtml",
       "publisher": "投资界"
+    },
+    {
+      "id": "EV-59e0e9a5e00ddddf",
+      "dataDate": "2026-09-25",
+      "date": "2026-09-24",
+      "updatedDate": "2026-09-25",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Sarvam Vision 2.1 发布：推动文档智能的帕累托前沿",
+      "originalTitle": "",
+      "subject": "Sarvam Vision 2.1",
+      "action": "发布",
+      "object": "：推动文档智能的帕累托前沿",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言",
+          "entityIds": [
+            "EN-ee1e31ffef7dbe64"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言",
+          "entityIds": [
+            "EN-ee1e31ffef7dbe64"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "vision_language",
+          "name": "视觉语言",
+          "entityIds": [
+            "EN-ee1e31ffef7dbe64"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-ee1e31ffef7dbe64",
+        "EN-10bf3c6bb4f65c1c"
+      ],
+      "entityNames": [
+        "Sarvam",
+        "Vision 2.1"
+      ],
+      "productName": "Vision 2.1",
+      "products": [
+        {
+          "name": "Vision 2.1",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Sarvam"
+          ]
+        }
+      ],
+      "sourceUrl": "https://sarvam.ai/blogs/sarvam-vision-2-1",
+      "publisher": "Sarvam AI（网页）"
     },
     {
       "id": "EV-5ff63c4f72976e83",
@@ -2458,6 +2550,9 @@
         "EV-67ef7accd26a07a0",
         "EV-a7e1ecd212474e00",
         "EV-d961d3ad02f6ae14",
+        "EV-a1da145cb3f6b8ba",
+        "EV-ba56c2356b17d979",
+        "EV-f34e18f3e7e123a1",
         "EV-5edf45d6424e2154",
         "EV-da957eedfad908b6",
         "EV-606d3928fcd6a078",
@@ -2539,7 +2634,42 @@
         "EN-a3c3b987b09fc1bb"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-09-21"
+      "lastSeen": "2026-09-25"
+    },
+    {
+      "id": "EN-ee1e31ffef7dbe64",
+      "name": "Sarvam",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-e3382d1c1d7db751",
+        "EV-715eb0debea4180c",
+        "EV-b9a1cba0b59a5354",
+        "EV-59e0e9a5e00ddddf"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-target_user-business_user",
+        "TX-ai_market_category-infrastructure_compute",
+        "TX-target_user-developer",
+        "TX-ai_market_application-models",
+        "TX-ai_market_subcategory-development_deployment",
+        "TX-product_form-model",
+        "TX-use_case-data_analysis",
+        "TX-industry-financial_services",
+        "TX-industry-government_public_sector",
+        "TX-use_case-knowledge_search",
+        "TX-use_case-content_creation",
+        "TX-technology-vision_language"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-15",
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "EN-bdfc3c0aaa95272a",

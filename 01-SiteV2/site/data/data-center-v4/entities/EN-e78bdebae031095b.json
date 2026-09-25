@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-25T00:29:53.849Z",
+    "latestDataDate": "2026-09-25",
+    "currentDate": "2026-09-25",
+    "eventCount": 3599,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -80,6 +80,7 @@
       "EV-edcb66d0401cfb8f",
       "EV-03f661e8dcdf1b58",
       "EV-ef7346378fcf9746",
+      "EV-76b340a187999c51",
       "EV-77092089644381a3",
       "EV-4da18f97771852a9",
       "EV-f949fd95df58d42d",
@@ -119,7 +120,7 @@
       "EN-6fcba5d96a4fadfd"
     ],
     "firstSeen": "2026-05-21",
-    "lastSeen": "2026-09-24",
+    "lastSeen": "2026-09-25",
     "relationIds": [
       "REL2-30051dc5d7668662"
     ],
@@ -147,6 +148,7 @@
         "EV-8973f8148205ed35"
       ],
       "deployments": [
+        "EV-76b340a187999c51",
         "EV-77092089644381a3",
         "EV-ecfc552af7344d65",
         "EV-4da18f97771852a9"
@@ -173,6 +175,22 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-76b340a187999c51",
+        "dataDate": "2026-09-25",
+        "date": "2026-09-25",
+        "eventType": "hardware_deployment",
+        "eventTypeLabel": "硬件部署",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "谷歌的Suncatcher项目旨在将AI数据中心送入轨道，由太阳能供电",
+        "displayTags": [],
+        "entityIds": [
+          "EN-bbdefa2950f49882",
+          "EN-e78bdebae031095b"
+        ]
+      },
       {
         "id": "EV-77092089644381a3",
         "dataDate": "2026-09-24",
@@ -1919,7 +1937,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "TX-use_case-physical_automation",
@@ -1985,6 +2003,7 @@
         "EV-ea916006167c6c43",
         "EV-3e580ccbc11654cb",
         "EV-1765fd690cff1cac",
+        "EV-79a0ee5a1daffb78",
         "EV-b116eafe60d71fbe",
         "EV-a99c491c33412dc2",
         "EV-d95c436efb0dd108",
@@ -2093,6 +2112,7 @@
         "EV-e4fec8a00b416d12",
         "EV-39848cdd62c00e59",
         "EV-4faa2bcf2e42e60c",
+        "EV-ef9e127aa8964431",
         "EV-5a90068e9e762f94",
         "EV-ba091f86fba39da0",
         "EV-66561ec28d8b1fec",
@@ -2199,6 +2219,7 @@
         "EN-fac803bdedac7e4e",
         "EN-b59ef7313eebea39",
         "EN-2505fe8a9e908e04",
+        "EN-04e798f8f91ee67d",
         "EN-373da2ec629326c0",
         "EN-ecf226574e481ea7",
         "EN-08e30f3f66c830cb",
@@ -2278,6 +2299,7 @@
         "EN-3e14bbbb0445c2de",
         "EN-7c5d04104b1d34e7",
         "EN-72138e570e5103e2",
+        "EN-febedfcafee9d610",
         "EN-69abd664ab1011d3",
         "EN-35826112ed957325",
         "EN-ec31d2be1b244616",
@@ -2291,7 +2313,6 @@
         "EN-2b6e51bec93e86c1",
         "EN-364df82f85761d58",
         "EN-8d57f84bd1847b24",
-        "EN-febedfcafee9d610",
         "EN-240389f4b730bad4",
         "EN-593d0361124f348f",
         "EN-a96df57737b74def",
@@ -2336,7 +2357,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "TX-product_form-model",
@@ -2460,6 +2481,7 @@
         "EV-bee8896bf7efa594",
         "EV-11e2a4e252d48f94",
         "EV-8077605769c4d4eb",
+        "EV-dbbfe87457c76852",
         "EV-261be266930904fd",
         "EV-a7568a8f75368e09",
         "EV-d1438a40de56f3ac",
@@ -2488,6 +2510,7 @@
         "EV-c81cb21337a9bb98",
         "EV-6c361125c3f50bb6",
         "EV-83b2e8f7fe679bc3",
+        "EV-8fb741b3f6af17ae",
         "EV-40f14150d6f622f5",
         "EV-129ffa6be41bb485",
         "EV-3d9aa640411471ea",
@@ -2497,6 +2520,8 @@
         "EV-2ffc3377977da114",
         "EV-2fd730d0ad452334",
         "EV-fd21441fb6e143c3",
+        "EV-ef9e127aa8964431",
+        "EV-293d6feac5b8efab",
         "EV-8ca7036c405028d4",
         "EV-c45b1098a3092e03",
         "EV-9ec1b90f071eef44",
@@ -2803,6 +2828,7 @@
         "EN-f0d59425e4c32abb",
         "EN-b5d7671990b8d4a8",
         "EN-f2b9106253663314",
+        "EN-eb302984269553e7",
         "EN-a377bedfcb73be99",
         "EN-a4916084455b1950",
         "EN-9a677023cc72cdd0",
@@ -2816,12 +2842,14 @@
         "EN-968e2d5b08687bf4",
         "EN-23929c7dca3eb576",
         "EN-bc8a00f7f6fb535f",
+        "EN-bbdefa2950f49882",
         "EN-22152786a70738a1",
         "EN-916a98f0fa2a39af",
         "EN-87c730bc4f32459e",
         "EN-88e2cce43eeadb36",
         "EN-c890cfa67d1da908",
         "EN-7df09a7717ef2feb",
+        "EN-febedfcafee9d610",
         "EN-c5da36ead951ea76",
         "EN-9c8ae69b84f21a2e",
         "EN-bae152c4560df38c",
@@ -2839,7 +2867,6 @@
         "EN-7d3194f79e645c42",
         "EN-ec31d2be1b244616",
         "EN-39ba5f9dcab4e98a",
-        "EN-bbdefa2950f49882",
         "EN-cbdc46f896784f98",
         "EN-da2f0f03bc3a24f5",
         "EN-35e36dc1a5213fa3",
@@ -2865,7 +2892,6 @@
         "EN-7f871cbf905f6e0c",
         "EN-2ee49ef51a776e2c",
         "EN-a89151ba4b5ac0f2",
-        "EN-febedfcafee9d610",
         "EN-d30e5ffc0ba9150b",
         "EN-0f553f48551aef83",
         "EN-a7b54a780af509be",
@@ -2956,7 +2982,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -3196,12 +3222,14 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-8183ec309f4e9ff7",
+        "EV-a5d3be58d302a847",
+        "EV-bddc994a070fe5f4",
         "EV-0d5a32aca724d30e",
         "EV-1873f3c6fa4bdedd",
         "EV-3bf02572d01ed324",
         "EV-b7808dc792664fa6",
         "EV-67de8f4c9ac5ce4d",
-        "EV-bddc994a070fe5f4",
         "EV-1e96f85d4c034559",
         "EV-d8739d5413d6530f",
         "EV-07c226b0ca5cb558",
@@ -3531,6 +3559,7 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-76ede2fb00adc813",
         "EV-9db14ad0d6fe3135",
         "EV-b8ea4c072c54167a",
         "EV-2c17183b71d8b7d1",
@@ -3747,6 +3776,7 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-8d3d0527c0f03837",
         "EN-f9768e4769ec9d14",
         "EN-0ed9e4984f0e77cf",
         "EN-c70eca6b0f88f44d",

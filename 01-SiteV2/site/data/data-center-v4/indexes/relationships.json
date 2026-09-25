@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-25T00:29:53.849Z",
+    "latestDataDate": "2026-09-25",
+    "currentDate": "2026-09-25",
+    "eventCount": 3599,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -53,6 +53,34 @@
     ]
   },
   "relationships": [
+    {
+      "relationship_id": "REL2-f890461d1f54b4f7",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-7d3194f79e645c42",
+      "object_type": "entity",
+      "event_id": "EV-76d9a509356f3cff",
+      "claim_refs": [
+        "CL-9011a8bbf70812c3",
+        "CL-2250bea62adecc4f",
+        "CL-37dc80df0461c573",
+        "CL-fa9fc6d9d807f9f4"
+      ],
+      "source_refs": [
+        "SA-8dc1f02f98dde930"
+      ],
+      "data_date": "2026-09-25",
+      "status": "verified",
+      "subjectName": "Apple",
+      "objectName": "OpenAI",
+      "predicateLabel": "合作",
+      "title": "Apple 合作 OpenAI",
+      "eventTitle": "OpenAI 称与苹果的 ChatGPT 合作表现远低于预期",
+      "eventDate": "2026-09-24",
+      "sourceCount": 1
+    },
     {
       "relationship_id": "REL2-6460871b6d621283",
       "relationship_version": "RELATION-V2.1",

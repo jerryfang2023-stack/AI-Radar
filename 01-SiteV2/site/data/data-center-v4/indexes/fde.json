@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-25T00:29:53.849Z",
+    "latestDataDate": "2026-09-25",
+    "currentDate": "2026-09-25",
+    "eventCount": 3599,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -53,6 +53,47 @@
     ]
   },
   "fde": [
+    {
+      "id": "FDE-fdcff00cdefe42de",
+      "eventId": "EV-f337fdcdf92ec1e1",
+      "dataDate": "2026-09-25",
+      "date": "2026-09-21",
+      "title": "知识管理中的AI：22个真实部署",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Mistral-powered AI browsing assistant in Firefox Smart Window",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Deploying Mistral-powered AI browsing assistant in Firefox Smart Window with answer-checking, tab grouping, duplicate detection and visual history search",
+        "Samsung SDS is deploying Claude Enterprise and Claude Code across Samsung affiliates and training applied-AI engineers with Anthropic.",
+        "Mount Sinai integrated the OpenEvidence LLM clinical reference enterprise-wide inside its Epic EHR for physicians, nurses and pharmacists."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://aiweekly.co/ai-use-cases/function/knowledge-management",
+      "entityIds": [
+        "EN-9b8f8a7d29275bf7",
+        "EN-c13e2f4a44bb01ed",
+        "EN-c70eca6b0f88f44d"
+      ]
+    },
     {
       "id": "FDE-0577244415a9270b",
       "eventId": "EV-faa25b0b9ffbaa30",
@@ -7770,6 +7811,57 @@
   ],
   "fdeDossiers": [
     {
+      "id": "FDED-4dacd28cde8a1d97",
+      "implementationKey": "4dacd28cde8a1d97",
+      "eventId": "EV-f337fdcdf92ec1e1",
+      "eventIds": [
+        "EV-f337fdcdf92ec1e1"
+      ],
+      "dataDate": "2026-09-25",
+      "date": "2026-09-21",
+      "title": "Samsung SDS × 未披露：Mistral-powered AI browsing assistant in Firefox Smart Window",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Samsung SDS",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Mistral-powered AI browsing assistant in Firefox Smart Window",
+      "workflow": "未披露",
+      "systems": [
+        "Claude"
+      ],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.5,
+      "completenessPercent": 50,
+      "missingFields": [
+        "vendor",
+        "industry",
+        "workflow",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-982ba0961991db46",
+          "type": "implementation_update",
+          "stage": "announced",
+          "date": "2026-09-21",
+          "dataDate": "2026-09-25",
+          "eventId": "EV-f337fdcdf92ec1e1",
+          "eventTitle": "知识管理中的AI：22个真实部署",
+          "claimCount": 3,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://aiweekly.co/ai-use-cases/function/knowledge-management",
+      "entityIds": [
+        "EN-9b8f8a7d29275bf7",
+        "EN-c13e2f4a44bb01ed",
+        "EN-c70eca6b0f88f44d"
+      ]
+    },
+    {
       "id": "FDED-4aba8b22b39a76c3",
       "implementationKey": "4aba8b22b39a76c3",
       "eventId": "EV-cc0d955aa68445ea",
@@ -11456,42 +11548,42 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-09-24",
-      "funnel_id": "LF-1cdf90bae6409fcd",
+      "data_date": "2026-09-25",
+      "funnel_id": "LF-b6fc4e55da7faba9",
       "lens": "fde",
-      "date": "2026-09-24",
+      "date": "2026-09-25",
       "monitoring_paths": [
         "fde_customer_case",
         "fde_earnings_disclosure",
         "fde_procurement_contract",
         "fde_production_rollout"
       ],
-      "raw_documents": 105,
-      "original_sources": 94,
-      "valid_claims": 62,
-      "observations": 3,
-      "canonical_events": 21,
+      "raw_documents": 122,
+      "original_sources": 104,
+      "valid_claims": 47,
+      "observations": 1,
+      "canonical_events": 19,
       "blocker_counts": {
-        "domestic_publication_date_unverified": 1,
-        "source_outside_daily_window": 47,
-        "no_source_bounded_event": 13,
-        "event_not_ai_relevant": 3,
-        "no_source_bounded_claim": 1,
-        "non_event_or_index_title": 3,
-        "homepage_requires_original_event_source": 1,
-        "documentation_index_not_event_source": 1,
-        "directory_page_not_event_source": 1,
+        "no_source_bounded_claim": 2,
+        "source_outside_daily_window": 60,
+        "no_source_bounded_event": 14,
+        "non_event_or_index_title": 6,
+        "event_not_ai_relevant": 1,
+        "event_entity_unresolved": 1,
+        "community_source_requires_original_event_source": 1,
+        "research_or_report_container_not_event_source": 1,
         "question_headline_not_event_specific": 1,
-        "index_or_listing_page_not_event_source": 1,
-        "raw_source_quality_block": 11
+        "multi_event_roundup_not_single_event_source": 1,
+        "raw_source_quality_block": 14,
+        "raw_document_not_auditable": 1
       },
       "rates": {
-        "original_source_rate": 0.8952380952380953,
-        "valid_claim_rate": 0.5904761904761905,
-        "observation_rate": 0.04838709677419355,
-        "event_conversion_rate": 0.3387096774193548
+        "original_source_rate": 0.8524590163934426,
+        "valid_claim_rate": 0.38524590163934425,
+        "observation_rate": 0.02127659574468085,
+        "event_conversion_rate": 0.40425531914893614
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-24/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-25/monitoring-funnel.json"
     }
   ]
 }

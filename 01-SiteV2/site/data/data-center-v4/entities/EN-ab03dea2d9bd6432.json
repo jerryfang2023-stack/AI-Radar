@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-25T00:29:53.849Z",
+    "latestDataDate": "2026-09-25",
+    "currentDate": "2026-09-25",
+    "eventCount": 3599,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -63,13 +63,14 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-0044c8acb4733273"
+      "EV-0044c8acb4733273",
+      "EV-238b9cce7dee3a37"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-14",
-    "lastSeen": "2026-09-15",
+    "lastSeen": "2026-09-25",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -80,9 +81,52 @@
       ],
       "hardware": [],
       "organizationPeople": [],
-      "other": []
+      "other": [
+        "EV-238b9cce7dee3a37"
+      ]
     },
     "timeline": [
+      {
+        "id": "EV-238b9cce7dee3a37",
+        "dataDate": "2026-09-25",
+        "date": "2026-09-24",
+        "eventType": "research_result",
+        "eventTypeLabel": "研究结果",
+        "eventGroup": "研究结果",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "PCIe显卡被低估了！内核补齐+通信重构，DeepSeek推理吞吐翻近7倍",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "long_context",
+            "name": "长上下文",
+            "entityIds": [
+              "EN-3b2f42b25cad199c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "video_generation",
+            "name": "视频生成",
+            "entityIds": [
+              "EN-3b2f42b25cad199c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-3b2f42b25cad199c",
+          "EN-6f7ac1823da81d2e",
+          "EN-e1517be14d06cdb7",
+          "EN-ab03dea2d9bd6432"
+        ]
+      },
       {
         "id": "EV-0044c8acb4733273",
         "dataDate": "2026-09-15",

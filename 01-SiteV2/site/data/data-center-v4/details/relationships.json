@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-25T00:29:53.849Z",
+    "latestDataDate": "2026-09-25",
+    "currentDate": "2026-09-25",
+    "eventCount": 3599,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -53,6 +53,76 @@
     ]
   },
   "relationships": [
+    {
+      "relationship_id": "REL2-f890461d1f54b4f7",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-7d3194f79e645c42",
+      "object_type": "entity",
+      "event_id": "EV-76d9a509356f3cff",
+      "claim_refs": [
+        "CL-9011a8bbf70812c3",
+        "CL-2250bea62adecc4f",
+        "CL-37dc80df0461c573",
+        "CL-fa9fc6d9d807f9f4"
+      ],
+      "source_refs": [
+        "SA-8dc1f02f98dde930"
+      ],
+      "data_date": "2026-09-25",
+      "status": "verified",
+      "subjectName": "Apple",
+      "objectName": "OpenAI",
+      "predicateLabel": "合作",
+      "title": "Apple 合作 OpenAI",
+      "eventTitle": "OpenAI 称与苹果的 ChatGPT 合作表现远低于预期",
+      "eventDate": "2026-09-24",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-9011a8bbf70812c3",
+          "subject": "OpenAI 称与苹果的 ChatGPT",
+          "object": "表现远低于预期",
+          "quote": "OpenAI 周三称，公司与苹果合作，通过 ChatGPT 为 iPhone 添加 AI 功能的业务在 2024 年推出后，“表现远低于预期”。"
+        },
+        {
+          "id": "CL-2250bea62adecc4f",
+          "subject": "OpenAI 称与苹果的 ChatGPT",
+          "object": "表现远低于预期",
+          "quote": "但 OpenAI 在首次公开评论这一合作时称，ChatGPT 被整合到数以百万计的苹果设备几乎没有带来什么实际好处。"
+        },
+        {
+          "id": "CL-37dc80df0461c573",
+          "subject": "OpenAI 称与苹果的 ChatGPT",
+          "object": "表现远低于预期",
+          "quote": "在经历了尴尬的两年延期后，苹果在今年 1 月与谷歌合作，使用其 Gemini 模型来支持完全重建的“Siri AI”。"
+        },
+        {
+          "id": "CL-fa9fc6d9d807f9f4",
+          "subject": "OpenAI 称与苹果的 ChatGPT",
+          "object": "表现远低于预期",
+          "quote": "文件称，OpenAI 高管还担心，苹果会“希望加快行动”，以尽快找到另一家 AI 合作伙伴，从而让 OpenAI 失去抢先接触苹果数十亿全球用户的机会。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-8dc1f02f98dde930",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/1/006/548.htm"
+        }
+      ],
+      "sourceExcerpt": "OpenAI 周三称，公司与苹果合作，通过 ChatGPT 为 iPhone 添加 AI 功能的业务在 2024 年推出后，“表现远低于预期”。",
+      "event": {
+        "id": "EV-76d9a509356f3cff",
+        "title": "OpenAI 称与苹果的 ChatGPT 合作表现远低于预期",
+        "originalTitle": "",
+        "date": "2026-09-24",
+        "dataDate": "2026-09-25",
+        "eventTypeLabel": "合作"
+      }
+    },
     {
       "relationship_id": "REL2-6460871b6d621283",
       "relationship_version": "RELATION-V2.1",

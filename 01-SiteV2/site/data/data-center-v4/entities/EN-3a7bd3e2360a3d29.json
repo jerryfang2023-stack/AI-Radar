@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-25T00:29:53.849Z",
+    "latestDataDate": "2026-09-25",
+    "currentDate": "2026-09-25",
+    "eventCount": 3599,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -78,6 +78,7 @@
       "EV-afcd5426f5c01dc7",
       "EV-f5a50f1fed72fec3",
       "EV-d116b0aa5bb292e2",
+      "EV-76d9a509356f3cff",
       "EV-e857f9d1c1478c70",
       "EV-fd21441fb6e143c3",
       "EV-f114a151829de349",
@@ -201,8 +202,9 @@
       "EN-45b5216872656eb3"
     ],
     "firstSeen": "2026-06-04",
-    "lastSeen": "2026-09-22",
+    "lastSeen": "2026-09-25",
     "relationIds": [
+      "REL2-f890461d1f54b4f7",
       "REL2-a3bd8b736cbfac80",
       "REL2-2c82bf25c532a4e1",
       "REL2-328522f06ece8143",
@@ -239,6 +241,7 @@
         "EV-d116b0aa5bb292e2"
       ],
       "partnerships": [
+        "EV-76d9a509356f3cff",
         "EV-e857f9d1c1478c70",
         "EV-fd21441fb6e143c3"
       ],
@@ -352,6 +355,25 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-76d9a509356f3cff",
+        "dataDate": "2026-09-25",
+        "date": "2026-09-24",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "OpenAI 称与苹果的 ChatGPT 合作表现远低于预期",
+        "displayTags": [],
+        "entityIds": [
+          "EN-ac304b92f04a6039",
+          "EN-7d3194f79e645c42",
+          "EN-b7134e0b69798b81",
+          "EN-3a7bd3e2360a3d29",
+          "EN-bbdefa2950f49882"
+        ]
+      },
       {
         "id": "EV-f114a151829de349",
         "dataDate": "2026-09-22",
@@ -3149,6 +3171,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-fe7445d005172a39",
         "EV-2470b13ea55496d0",
         "EV-c8871997cafcf846",
         "EV-e331c286836a80f3",
@@ -3237,6 +3260,7 @@
         "EV-8abf5adc3e72fbb8",
         "EV-3a704c40204ecfd9",
         "EV-777eb5b7783b71fb",
+        "EV-76d9a509356f3cff",
         "EV-09172b686d2b49de",
         "EV-bbb3ed2040b40e3f",
         "EV-20e076804a3000b4",
@@ -3268,6 +3292,10 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-482ed3a78c117cfc",
+        "EV-a1da145cb3f6b8ba",
+        "EV-ba56c2356b17d979",
+        "EV-d29cc3b49745d56d",
         "EV-57f3792e2324389e",
         "EV-74e87bba31270f42",
         "EV-c45ed9151e55246f",
@@ -3315,7 +3343,6 @@
         "EV-cb1bc28f78888566",
         "EV-4e31149f2cd129f7",
         "EV-7a7a5267ca73e44c",
-        "EV-293d6feac5b8efab",
         "EV-a474530ccf6cd872",
         "EV-1f88bfaf77dcfca3",
         "EV-2954a6f0220f5b18",
@@ -3542,6 +3569,8 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-3b9a80dacf25e596",
+        "EV-d3c3b8ef89894945",
         "EV-98a5bcde4600a029",
         "EV-82b8afc59e9be662",
         "EV-aed61f7e2ca28c38",
@@ -3710,10 +3739,10 @@
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
+        "EN-3a7bd3e2360a3d29",
         "EN-968e2d5b08687bf4",
         "EN-d1ad14d4ad57d207",
         "EN-6a50fbf0b970c03a",
-        "EN-3a7bd3e2360a3d29",
         "EN-916a98f0fa2a39af",
         "EN-8d4321d936320802",
         "EN-7839fb10a8f14c70",
@@ -3737,7 +3766,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "EN-e463d05a14e8697f",
@@ -3918,6 +3947,27 @@
     }
   ],
   "relationships": [
+    {
+      "relationship_id": "REL2-f890461d1f54b4f7",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-7d3194f79e645c42",
+      "object_type": "entity",
+      "event_id": "EV-76d9a509356f3cff",
+      "claim_refs": [
+        "CL-9011a8bbf70812c3",
+        "CL-2250bea62adecc4f",
+        "CL-37dc80df0461c573",
+        "CL-fa9fc6d9d807f9f4"
+      ],
+      "source_refs": [
+        "SA-8dc1f02f98dde930"
+      ],
+      "data_date": "2026-09-25",
+      "status": "verified"
+    },
     {
       "relationship_id": "REL2-a3bd8b736cbfac80",
       "relationship_version": "RELATION-V2.1",
@@ -4329,6 +4379,7 @@
         "EV-bee8896bf7efa594",
         "EV-11e2a4e252d48f94",
         "EV-8077605769c4d4eb",
+        "EV-dbbfe87457c76852",
         "EV-261be266930904fd",
         "EV-a7568a8f75368e09",
         "EV-d1438a40de56f3ac",
@@ -4357,6 +4408,7 @@
         "EV-c81cb21337a9bb98",
         "EV-6c361125c3f50bb6",
         "EV-83b2e8f7fe679bc3",
+        "EV-8fb741b3f6af17ae",
         "EV-40f14150d6f622f5",
         "EV-129ffa6be41bb485",
         "EV-3d9aa640411471ea",
@@ -4366,6 +4418,8 @@
         "EV-2ffc3377977da114",
         "EV-2fd730d0ad452334",
         "EV-fd21441fb6e143c3",
+        "EV-ef9e127aa8964431",
+        "EV-293d6feac5b8efab",
         "EV-8ca7036c405028d4",
         "EV-c45b1098a3092e03",
         "EV-9ec1b90f071eef44",
@@ -4672,6 +4726,7 @@
         "EN-f0d59425e4c32abb",
         "EN-b5d7671990b8d4a8",
         "EN-f2b9106253663314",
+        "EN-eb302984269553e7",
         "EN-a377bedfcb73be99",
         "EN-a4916084455b1950",
         "EN-9a677023cc72cdd0",
@@ -4685,12 +4740,14 @@
         "EN-968e2d5b08687bf4",
         "EN-23929c7dca3eb576",
         "EN-bc8a00f7f6fb535f",
+        "EN-bbdefa2950f49882",
         "EN-22152786a70738a1",
         "EN-916a98f0fa2a39af",
         "EN-87c730bc4f32459e",
         "EN-88e2cce43eeadb36",
         "EN-c890cfa67d1da908",
         "EN-7df09a7717ef2feb",
+        "EN-febedfcafee9d610",
         "EN-c5da36ead951ea76",
         "EN-9c8ae69b84f21a2e",
         "EN-bae152c4560df38c",
@@ -4708,7 +4765,6 @@
         "EN-7d3194f79e645c42",
         "EN-ec31d2be1b244616",
         "EN-39ba5f9dcab4e98a",
-        "EN-bbdefa2950f49882",
         "EN-cbdc46f896784f98",
         "EN-da2f0f03bc3a24f5",
         "EN-35e36dc1a5213fa3",
@@ -4734,7 +4790,6 @@
         "EN-7f871cbf905f6e0c",
         "EN-2ee49ef51a776e2c",
         "EN-a89151ba4b5ac0f2",
-        "EN-febedfcafee9d610",
         "EN-d30e5ffc0ba9150b",
         "EN-0f553f48551aef83",
         "EN-a7b54a780af509be",
@@ -4825,7 +4880,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -5065,12 +5120,14 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-8183ec309f4e9ff7",
+        "EV-a5d3be58d302a847",
+        "EV-bddc994a070fe5f4",
         "EV-0d5a32aca724d30e",
         "EV-1873f3c6fa4bdedd",
         "EV-3bf02572d01ed324",
         "EV-b7808dc792664fa6",
         "EV-67de8f4c9ac5ce4d",
-        "EV-bddc994a070fe5f4",
         "EV-1e96f85d4c034559",
         "EV-d8739d5413d6530f",
         "EV-07c226b0ca5cb558",
@@ -5400,6 +5457,7 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-76ede2fb00adc813",
         "EV-9db14ad0d6fe3135",
         "EV-b8ea4c072c54167a",
         "EV-2c17183b71d8b7d1",
@@ -5616,6 +5674,7 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-8d3d0527c0f03837",
         "EN-f9768e4769ec9d14",
         "EN-0ed9e4984f0e77cf",
         "EN-c70eca6b0f88f44d",
@@ -5878,6 +5937,7 @@
         "EV-9bade504e46219dd",
         "EV-d051cfbe3fd7e80f",
         "EV-c2718ea152dde192",
+        "EV-30d296e6f3687c6b",
         "EV-e084947e3f9e0667",
         "EV-a15da1b52d939967",
         "EV-736404028b8ad33e",
@@ -5924,6 +5984,7 @@
         "EN-955e510be03b9cc3",
         "EN-f2b9106253663314",
         "EN-10b106d9b0a27a4c",
+        "EN-ef926389dd200b8f",
         "EN-a35b80cf9d171015",
         "EN-48bebf25e5bd5aca",
         "EN-d37561692b664762",
@@ -5958,7 +6019,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-01-06",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "TX-deployment_model-edge_device",
@@ -5970,6 +6031,7 @@
         "EV-9bade504e46219dd",
         "EV-d051cfbe3fd7e80f",
         "EV-c2718ea152dde192",
+        "EV-30d296e6f3687c6b",
         "EV-e084947e3f9e0667",
         "EV-a15da1b52d939967",
         "EV-736404028b8ad33e",
@@ -6014,6 +6076,7 @@
         "EN-955e510be03b9cc3",
         "EN-f2b9106253663314",
         "EN-10b106d9b0a27a4c",
+        "EN-ef926389dd200b8f",
         "EN-a35b80cf9d171015",
         "EN-48bebf25e5bd5aca",
         "EN-d37561692b664762",
@@ -6048,7 +6111,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-01-06",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-25"
     },
     {
       "id": "TX-industry-food_hospitality",
