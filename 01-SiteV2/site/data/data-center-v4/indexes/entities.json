@@ -21973,32 +21973,69 @@
         }
       ],
       "public_profile": {
-        "coverage_status": "activity_only",
-        "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-        "summary": "陈建宇 的来源线索将其与星动纪元（创始人）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-        "current_roles": [],
+        "summary": "陈建宇在清华大学交叉信息研究院担任助理教授，并创立具身智能企业星动纪元。清华大学交叉信息研究院资料记载，他曾在加州大学伯克利分校攻读博士学位并师从Masayoshi Tomizuka教授；该报道未说明学位授予时间。其研究聚焦机器人、强化学习、控制理论和大模型。",
+        "current_roles": [
+          {
+            "title": "助理教授、智能系统与机器人实验室负责人",
+            "organization": "清华大学交叉信息研究院",
+            "source_id": "chen_jianyu_tsinghua"
+          },
+          {
+            "title": "创始人（清华大学2024年报道）",
+            "organization": "星动纪元（RobotEra）",
+            "source_id": "chen_jianyu_tsinghua"
+          }
+        ],
         "career": [
           {
-            "organization": "星动纪元",
+            "organization": "清华大学交叉信息研究院",
+            "title": "助理教授；主持智能系统与机器人实验室（ISR Lab）",
+            "period": "清华大学2024年5月报道其在任；具体入职年份未披露",
+            "description": "研究方向包括强化学习、机器人、控制理论和大模型；该来源未披露博士毕业后的完整职业时间线。",
+            "source_id": "chen_jianyu_tsinghua"
+          },
+          {
+            "organization": "星动纪元（RobotEra）",
             "title": "创始人",
-            "period": "来源报道日期；任职起止时间未披露",
-            "description": "融资来源将陈建宇与该公司的此项身份关联；不据此推断其目前仍在任。",
-            "source_id": "FISRC-8c073d38e1f34758"
+            "period": "截至清华大学2024年5月报道；创业起始年月未在该报道中说明",
+            "description": "清华大学交叉信息研究院将其介绍为星动纪元创始人；融资库中更具体的成立时间来自另一条融资报道，不在本档案中扩展。",
+            "source_id": "chen_jianyu_tsinghua"
           }
         ],
-        "education": [],
-        "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-        "track_record": [],
+        "education": [
+          {
+            "institution": "加州大学伯克利分校（UC Berkeley）",
+            "qualification": "攻读博士学位，师从Masayoshi Tomizuka教授；清华报道未说明授予学位及年份",
+            "source_id": "chen_jianyu_tsinghua"
+          }
+        ],
+        "experience_summary": "公开一手资料支持其高校科研与具身智能创业双重经历：任清华大学交叉信息研究院助理教授、主持ISR Lab，并创立星动纪元。清华报道确认其在伯克利攻读博士学位，但没有给出入职时间、学位授予状态或更早履历。",
+        "track_record": [
+          {
+            "description": "清华大学交叉信息研究院报道，陈建宇研究组联合星动纪元提出人形机器人去噪世界模型学习框架，相关论文被RSS接收；这是研究团队成果，不归为其个人独立成果。",
+            "source_id": "chen_jianyu_tsinghua_research"
+          }
+        ],
         "sources": [
           {
-            "source_id": "FISRC-8c073d38e1f34758",
-            "source_url": "https://news.pedaily.cn/202607/565883.shtml",
-            "source_title": "融资披露来源",
-            "source_content_hash": "38b0d26a979c4a8e",
-            "quote": "2023年8月，依托清华成果转化政策，北京星动纪元正式成立，这是清华大学唯 一直接持股的具身智能企业，陈建宇出任创始人。",
-            "quote_hash": "71139aa91757e55d549eb93e5407036fdb24b0fda9695e184d2fc92332abe448"
+            "source_id": "chen_jianyu_tsinghua",
+            "source_url": "https://iiis.tsinghua.edu.cn/info/1018/1208.htm",
+            "source_title": "陈建宇研究组发布新颖人形机器人学习算法框架｜清华大学交叉信息研究院",
+            "source_content_hash": "bb64ff5e77d7b69d14c48c8ca086ceb4bc4d8cd7a768653f4e23f46240d55164",
+            "quote": "陈建宇是清华大学交叉信息研究院助理教授，同时也是领先的具身智能企业星动纪元的创始人。他曾在美国加州大学伯克利分校攻读博士学位，师从美国工程院院士Masayoshi Tomizuka教授。",
+            "quote_hash": "c4dae4c1bc982ee0251ed540e27d17e07b7dd324a9c6eaad216ce47e1fd04dcb"
+          },
+          {
+            "source_id": "chen_jianyu_tsinghua_research",
+            "source_url": "https://iiis.tsinghua.edu.cn/info/1018/1208.htm",
+            "source_title": "陈建宇研究组发布新颖人形机器人学习算法框架｜清华大学交叉信息研究院",
+            "source_content_hash": "bb64ff5e77d7b69d14c48c8ca086ceb4bc4d8cd7a768653f4e23f46240d55164",
+            "quote": "近期，清华大学交叉信息研究院陈建宇研究组，联合星动纪元在具身智能领域取得重要突破，提出了一种新颖的人形机器人学习算法框架",
+            "quote_hash": "1213ffb55fd37266e5382a0844b7ebfc1d0deeacef14883447cb3cd668bd98ab"
           }
         ],
+        "coverage_status": "researched",
+        "coverage_note": "现任学术职务、创业关联、研究方向及博士阶段学习由清华大学交叉信息研究院一手报道支持；学历授予状态、此前任职与具体时间线未披露，未推断。",
         "last_verified_at": "2026-09-25"
       }
     },
@@ -24433,32 +24470,86 @@
         }
       ],
       "public_profile": {
-        "coverage_status": "activity_only",
-        "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-        "summary": "何小鹏 的来源线索将其与小鹏机器人业务（小鹏机器人业务CEO）关联。来源日期：2026-09-03；完整职业时间线仍待一手资料补充。",
-        "current_roles": [],
+        "summary": "何小鹏是小鹏集团联合创始人、董事长、执行董事兼CEO。小鹏集团投资者关系资料记载其此前联合创立UC优视并担任产品总裁，之后在阿里巴巴任移动事业群总裁、阿里游戏董事长及土豆网总裁；还曾任虎牙独立董事。他于1999年获华南理工大学计算机科学学士学位。当前档案将投资新闻中出现的人物线索与官方披露的集团职务区分，不推断其是小鹏机器人业务的具体负责人。",
+        "current_roles": [
+          {
+            "title": "联合创始人、董事长、执行董事兼首席执行官",
+            "organization": "小鹏集团（XPeng Inc.）",
+            "source_id": "xiaopeng_he_ir_role"
+          }
+        ],
         "career": [
           {
-            "organization": "小鹏机器人业务",
-            "title": "小鹏机器人业务CEO",
-            "period": "来源报道日期；任职起止时间未披露",
-            "description": "融资来源将何小鹏与该公司的此项身份关联；不据此推断其目前仍在任。",
-            "source_id": "FISRC-2b9c9aa0b968cbe6"
+            "organization": "UC优视（UCWeb）",
+            "title": "联合创始人、产品总裁",
+            "period": "联合创立于2004年；产品总裁任期为2005年1月至2014年6月",
+            "description": "小鹏集团投资者关系资料记载其联合创立UC优视并担任产品总裁；UC优视于2014年6月被阿里巴巴集团收购。",
+            "source_id": "xiaopeng_he_ir_career"
+          },
+          {
+            "organization": "阿里巴巴集团",
+            "title": "阿里巴巴移动事业群总裁、阿里游戏董事长、土豆网总裁",
+            "period": "2014年6月至2017年8月",
+            "description": "上述职务与任期来自小鹏集团投资者关系个人简介。",
+            "source_id": "xiaopeng_he_ir_career"
+          },
+          {
+            "organization": "小鹏集团（XPeng Inc.）",
+            "title": "联合创始人、董事长、执行董事兼CEO",
+            "period": "现任（官网当前董事及管理层简介）",
+            "description": "小鹏集团IR当前人物页列出的职务；未把集团职务扩写为机器人业务部门职务。",
+            "source_id": "xiaopeng_he_ir_role"
+          },
+          {
+            "organization": "虎牙公司（HUYA Inc.）",
+            "title": "独立董事、审核委员会成员",
+            "period": "2018年5月至2020年5月",
+            "description": "小鹏集团投资者关系资料记载的非执行董事职务。",
+            "source_id": "xiaopeng_he_ir_career"
           }
         ],
-        "education": [],
-        "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-        "track_record": [],
+        "education": [
+          {
+            "institution": "华南理工大学",
+            "qualification": "计算机科学学士，1999年7月",
+            "source_id": "xiaopeng_he_ir_education"
+          }
+        ],
+        "experience_summary": "职业经历涵盖UC优视创业与产品、阿里巴巴移动和数字内容业务、小鹏汽车创业及上市公司治理。小鹏集团官网个人页没有提供其在机器人业务部门的单独职务，因此不将融资报道索引中的“小鹏机器人业务CEO”延伸为该部门的正式头衔。",
+        "track_record": [
+          {
+            "description": "官方资料记载其联合创立UC优视，后由阿里巴巴收购；现任小鹏集团联合创始人及董事长兼CEO。该摘要描述履历关联，不据此量化个人投资回报。",
+            "source_id": "xiaopeng_he_ir_career"
+          }
+        ],
         "sources": [
           {
-            "source_id": "FISRC-2b9c9aa0b968cbe6",
-            "source_url": "https://eu.36kr.com/zh/p/3954397242473863",
-            "source_title": "融资披露来源",
-            "source_content_hash": "53298de93d50bd64ba20ee61bf9df87d3a54e5f082bdc9a61b23b4e07d247bb2",
-            "quote": "这一次，何小鹏亲自挂帅——他不仅是小鹏汽车创始人，目前也是小鹏机器人业务CEO",
-            "quote_hash": "55dc0df8e2589318ea5e32d212ec089d8d37fede900a36df79309a36fe489893"
+            "source_id": "xiaopeng_he_ir_role",
+            "source_url": "https://ir.xiaopeng.com/zh-hans/board-member-management/hexiaopengxiansheng",
+            "source_title": "何小鹏先生｜小鹏集团投资者关系",
+            "source_content_hash": "7d52dc424a711fb08a01ee65caf9c49bbc48391b95ba573efcf912250bf4d5da",
+            "quote": "何小鹏先生是我们的联合创始人、执行董事、董事长兼首席执行官。",
+            "quote_hash": "c23f8e01f8223095fd9338a1a6b2f92b6fb99c8e99b1486836a3957b132a52d7"
+          },
+          {
+            "source_id": "xiaopeng_he_ir_career",
+            "source_url": "https://ir.xiaopeng.com/zh-hans/board-member-management/hexiaopengxiansheng",
+            "source_title": "何小鹏先生｜小鹏集团投资者关系",
+            "source_content_hash": "7d52dc424a711fb08a01ee65caf9c49bbc48391b95ba573efcf912250bf4d5da",
+            "quote": "担任本公司董事长兼首席执行官前，何先生于2014年6月至2017年8月任职阿里巴巴集团（是于纽交所（代码：BABA)及香港联交所（股份代号：9988）上市的公众公司），包括担任阿里巴巴移动事业群总裁、阿里游戏董事长及土豆网总裁。于2004年，何小鹏先生联合创立UC优视公司（是中国一家提供移动互联网软件技术及服务的公司），于2005年1月至2014年6月担任产品总裁。于2014年6月，UC优视公司被阿里巴巴集团收购。何先生于2018年5月至2020年5月曾任虎牙公司的独立董事及审核委员会成员。",
+            "quote_hash": "0ba074f4442d625343b4c161a4d8ef4bb07a1918a86de13f54e2ed98f620ca08"
+          },
+          {
+            "source_id": "xiaopeng_he_ir_education",
+            "source_url": "https://ir.xiaopeng.com/zh-hans/board-member-management/hexiaopengxiansheng",
+            "source_title": "何小鹏先生｜小鹏集团投资者关系",
+            "source_content_hash": "7d52dc424a711fb08a01ee65caf9c49bbc48391b95ba573efcf912250bf4d5da",
+            "quote": "何先生于1999年7月获得华南理工大学计算机科学学士学位。何先生于2020年1月取得广东省人力资源和社会保障厅颁发的工商管理高级经济师（科技型企业家）资格证书。",
+            "quote_hash": "03b4f8068c661fe1907f6247618b904082c962304958691363d44acf66dd7f28"
           }
         ],
+        "coverage_status": "researched",
+        "coverage_note": "职务、公司关联、任期和学历来自小鹏集团投资者关系官方简介。未据融资报道中的部门性称谓推断正式任职。",
         "last_verified_at": "2026-09-25"
       }
     },
@@ -59738,53 +59829,107 @@
         }
       ],
       "public_profile": {
-        "profile_type": "organization",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "高榕创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "summary": "高榕创投（Gaorong Ventures）专注早期和成长期投资，官网列示新科技、互联网及新消费、医疗健康等方向。其官网展示成立于2014年、投资企业300余家、上市组合企业30余家，并公开BP邮箱及电话；统计为机构自报组合信息，不代表基金回报。",
+        "facts": [
+          {
+            "field": "founded",
+            "label": "成立年份",
+            "value": "2014年（官网口径）",
+            "source_id": "gaorong_profile"
+          },
+          {
+            "field": "stage",
+            "label": "投资阶段",
+            "value": "早期和成长期",
+            "source_id": "gaorong_profile"
+          },
+          {
+            "field": "sectors",
+            "label": "投资方向",
+            "value": [
+              "新科技",
+              "互联网及新消费",
+              "医疗健康"
+            ],
+            "source_id": "gaorong_profile"
+          },
+          {
+            "field": "portfolio_count",
+            "label": "官网自报投资企业",
+            "value": "300余家",
+            "source_id": "gaorong_profile"
+          },
+          {
+            "field": "listed_portfolio_count",
+            "label": "官网自报上市组合企业",
+            "value": "30余家",
+            "source_id": "gaorong_profile"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2014",
+            "description": "高榕官网将机构成立年份列为2014年。",
+            "source_id": "gaorong_profile"
+          }
+        ],
         "track_record": [
           {
-            "description": "融资来源记录：设序科技 · B轮 · 2026-09-17 · 天使轮投资方 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-887f1542c828b426"
-          },
-          {
-            "description": "融资来源记录：Anew Labs（新生实验室） · 其他融资 · 2026-09-16 · 本轮参投 · 2.9亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-a2c9854f5230d423"
-          },
-          {
-            "description": "融资来源记录：小鹏机器人业务 · 其他融资 · 2026-08-24 · 本轮参投 · 超9亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-2ec9a5e83ce18f75"
+            "description": "高榕官网展示投资企业300余家、上市组合企业30余家；这是机构官网截至本次核验时的自报组合统计，不等同于基金层面的投资回报或IRR。",
+            "source_id": "gaorong_profile"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "高榕创投",
+            "url": "https://www.gaorongvc.com/cn/",
+            "source_id": "gaorong_profile"
+          },
+          {
+            "kind": "email",
+            "label": "商业计划书联系邮箱（官网公开）",
+            "value": "bp@gaorongvc.com",
+            "url": "https://www.gaorongvc.com/cn/",
+            "source_id": "gaorong_contact"
+          },
+          {
+            "kind": "phone",
+            "label": "官网公开电话",
+            "value": "010-84442729",
+            "url": "https://www.gaorongvc.com/cn/",
+            "source_id": "gaorong_contact"
+          }
+        ],
         "sources": [
           {
-            "source_id": "FISRC-887f1542c828b426",
-            "source_url": "https://news.pedaily.cn/202609/569177.shtml",
-            "source_title": "设序科技一连融资6轮，要做「工业界Anthropic」",
-            "source_content_hash": "7ba0fa9425a10e3a",
-            "quote": "当年就拿下险峰长青、高榕资本、联想创投联合投资的数千万元天使轮。",
-            "quote_hash": "332e7f6a877a83ac23d5c1a12e8e0dd8d7f9d188e96a1e98d730e1c41628ad2b"
+            "source_id": "gaorong_profile",
+            "source_url": "https://www.gaorongvc.com/cn/",
+            "source_title": "高榕创投官网",
+            "source_content_hash": "a739c24c01c1bbf0a4298c3079ab6653db0552f86aa994679db4b2a02ef0c4a9",
+            "quote": "高榕创投专注于早期和成长期投资，重点投资新科技、互联网及新消费、医疗健康等创新创业领域。",
+            "quote_hash": "b6930894558b9d1f434d1b15700459ee9cf640205dd92ea5a2d9c3251e89a3fc"
           },
           {
-            "source_id": "FISRC-a2c9854f5230d423",
-            "source_url": "https://www.chinaventure.com.cn/news/111-20260921-393379.html",
-            "source_title": "张一鸣，又创造了一个100亿 首轮融资20亿元。 投中网 · 21小时前",
-            "source_content_hash": "2bb10add5e428ec5",
-            "quote": "涵盖了红杉中国、IDG资本、高瓴创投、五源资本、高榕创投、春华创投等头部投资机构",
-            "quote_hash": "b39561dd1ac0be7734491e6d8c5951e687ceff86f0fa6dbf11feced93e7c4b87"
+            "source_id": "gaorong_statistics",
+            "source_url": "https://www.gaorongvc.com/cn/",
+            "source_title": "高榕创投官网",
+            "source_content_hash": "a739c24c01c1bbf0a4298c3079ab6653db0552f86aa994679db4b2a02ef0c4a9",
+            "quote": "投资企业 300+ 成立时间 2014 上市 30+",
+            "quote_hash": "37f65515e6b459b54c3036bc305b94971d829bc6dd96e89daf9f2cd8c47506b4"
           },
           {
-            "source_id": "FISRC-2ec9a5e83ce18f75",
-            "source_url": "https://www.xiaopeng.com/news/company_news/5585.html",
-            "source_title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
-            "source_content_hash": "b8e4f0b869df00ee",
-            "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持",
-            "quote_hash": "0c0e04917436353a249175e0fe3954233525524468f8b84521713be86611d620"
+            "source_id": "gaorong_contact",
+            "source_url": "https://www.gaorongvc.com/cn/",
+            "source_title": "高榕创投官网",
+            "source_content_hash": "a739c24c01c1bbf0a4298c3079ab6653db0552f86aa994679db4b2a02ef0c4a9",
+            "quote": "bp@gaorongvc.com 010-84442729 010-84442279",
+            "quote_hash": "2f6c82bb79f2001ffcf08f40fbe9d1c3f68a63d2b23c7c18973755a7380337e7"
           }
         ],
+        "coverage_status": "researched",
+        "coverage_note": "机构战略、组合规模及公开联系方式来自高榕创投官网；组合规模为机构自报口径，未推断基金回报。",
         "last_verified_at": "2026-09-25"
       }
     },
@@ -73732,53 +73877,116 @@
         }
       ],
       "public_profile": {
-        "profile_type": "organization",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "联想创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "summary": "联想创投集团（Lenovo Capital and Incubator Group，LCIG）是联想集团旗下科技产业投资与孵化平台，2016年成立。官网列出的方向包括AI及行业应用、算力软硬件、具身智能、智慧医疗、先进制造和新能源；官网自报已投资超330家企业、其中26家IPO，并孵化10余家子公司与创新业务。这些是官网披露口径，不是对基金回报的审计。",
+        "facts": [
+          {
+            "field": "founded",
+            "label": "成立年份",
+            "value": "2016年",
+            "source_id": "lenovo_lcig_profile"
+          },
+          {
+            "field": "parent",
+            "label": "组织关系",
+            "value": "联想集团旗下全球科技产业基金 / 投资与孵化平台",
+            "source_id": "lenovo_lcig_profile"
+          },
+          {
+            "field": "sectors",
+            "label": "官网列示投资方向",
+            "value": [
+              "AI及行业应用",
+              "算力软硬件",
+              "具身智能",
+              "智慧医疗",
+              "先进制造",
+              "新能源"
+            ],
+            "source_id": "lenovo_lcig_profile"
+          },
+          {
+            "field": "portfolio_count",
+            "label": "官网自报已投资企业",
+            "value": "超过330家（官网当前简介口径）",
+            "source_id": "lenovo_lcig_profile"
+          },
+          {
+            "field": "listed_portfolio_count",
+            "label": "官网自报IPO企业",
+            "value": "26家（官网当前简介口径）",
+            "source_id": "lenovo_lcig_profile"
+          },
+          {
+            "field": "incubated_businesses",
+            "label": "孵化子公司与创新业务",
+            "value": "10余家（官网当前简介口径）",
+            "source_id": "lenovo_lcig_profile"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2016",
+            "description": "联想创投官网称LCIG成立于2016年。",
+            "source_id": "lenovo_lcig_profile"
+          }
+        ],
         "track_record": [
           {
-            "description": "融资来源记录：设序科技 · B轮 · 2026-09-17 · 天使轮投资方 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-887f1542c828b426"
-          },
-          {
-            "description": "融资来源记录：格通智联 · Pre-A轮 · 2026-08-25 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-2a3446f702110142"
-          },
-          {
-            "description": "融资来源记录：设序科技 · B轮 · 2026-07-23 · A轮老股东持续加注 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-7dfa7efaace4f3c8"
+            "description": "官网列举其投资超过330家企业及其中26家IPO，并称孵化10余家子公司和创新业务；这些是机构自报组合数据，不代表基金IRR或已实现回报。",
+            "source_id": "lenovo_lcig_profile"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "联想创投",
+            "url": "https://capital.lenovo.com/",
+            "source_id": "lenovo_lcig_profile"
+          },
+          {
+            "kind": "address",
+            "label": "北京、上海、深圳、香港、以色列及美国办公室",
+            "value": "北京：北京市海淀区西北旺东路10号院1号楼；上海：上海市浦东新区松涛路696号联想创新科技园A座13楼；深圳：深圳市南山区后海滨路3288号联想后海中心A座42F；香港：香港沙田白石角科学园科技大道东16号海滨大楼二座3楼；以色列特拉维夫；美国旧金山湾区。",
+            "url": "https://capital.lenovo.com/contact/contact.html",
+            "source_id": "lenovo_lcig_contact"
+          },
+          {
+            "kind": "social",
+            "label": "商业计划书投递",
+            "value": "关注联想创投官方微信公众号，发送“BP投递”获取官方邮箱；官网未直接展示投递邮箱。",
+            "url": "https://capital.lenovo.com/contact/contact.html",
+            "source_id": "lenovo_lcig_contact"
+          }
+        ],
         "sources": [
           {
-            "source_id": "FISRC-887f1542c828b426",
-            "source_url": "https://news.pedaily.cn/202609/569177.shtml",
-            "source_title": "设序科技一连融资6轮，要做「工业界Anthropic」",
-            "source_content_hash": "7ba0fa9425a10e3a",
-            "quote": "当年就拿下险峰长青、高榕资本、联想创投联合投资的数千万元天使轮。",
-            "quote_hash": "332e7f6a877a83ac23d5c1a12e8e0dd8d7f9d188e96a1e98d730e1c41628ad2b"
+            "source_id": "lenovo_lcig_profile",
+            "source_url": "https://capital.lenovo.com/team/lenovoteam.html",
+            "source_title": "联想创投简介｜Lenovo Capital and Incubator Group",
+            "source_content_hash": "3eb1848513ee658463e64a245e0cdb6e1245965a632f96669490bbaedb8f2f33",
+            "quote": "联想创投集团（Lenovo Capital and Incubator Group，简称LCIG）成立于2016年，作为联想集团旗下的全球科技产业基金，旨在融汇联想全球资源，以投资和孵化为手段，布局科技未来。联想创投专注于科技产业投资，主要投资方向包括：AI及行业应用、算力软硬件、具身智能、智慧医疗、先进制造、新能源等。",
+            "quote_hash": "c2f81b870db95ee604355d78d3ceed960393615453d9c4bd489e85af07285a51"
           },
           {
-            "source_id": "FISRC-2a3446f702110142",
-            "source_url": "https://news.pedaily.cn/202608/568060.shtml",
-            "source_title": "格通智联完成数亿元Pre A轮融资",
-            "source_content_hash": "98c49c9e9931e708",
-            "quote": "本轮融资由张江高科领投，壁仞科技、国开科创、新鼎资本、联想创投、尚融资本等知名产业方与投资机构跟投。",
-            "quote_hash": "f850c173b12fcf1c560b4cafd4cd1a72d412acf7ca3752964ad6e7e0faaa57c5"
+            "source_id": "lenovo_lcig_scale",
+            "source_url": "https://capital.lenovo.com/team/lenovoteam.html",
+            "source_title": "联想创投简介｜Lenovo Capital and Incubator Group",
+            "source_content_hash": "3eb1848513ee658463e64a245e0cdb6e1245965a632f96669490bbaedb8f2f33",
+            "quote": "目前，联想创投已投资超330家优秀企业，包括宁德时代、美团、蔚来、思特威，中控等26家IPO企业，同时孵化了SHAREit（茄子快传）、联想懂的通信、联想云科技、联想新视界、联晟智达等10余家子公司和创新业务。",
+            "quote_hash": "100d9000ee4bf33d8395a73acd783f318d2f56a1de020bcf05f68c00d63fa214"
           },
           {
-            "source_id": "FISRC-7dfa7efaace4f3c8",
-            "source_url": "https://news.pedaily.cn/202202/487236.shtml",
-            "source_title": "工业智能CAD厂商「设序科技」完成A轮投资，字节跳动领投_投资界",
-            "source_content_hash": "5c1b7fbf79c12864",
-            "quote": "老股东SIG、 险峰长青 、 高榕资本 、 联想创投 持续加注",
-            "quote_hash": "6e0944605f10f53334f72bbd7c6dcd9d6bf0cbd4d7686337eb3b786f2b37ed8b"
+            "source_id": "lenovo_lcig_contact",
+            "source_url": "https://capital.lenovo.com/contact/contact.html",
+            "source_title": "联系我们｜Lenovo Capital and Incubator Group",
+            "source_content_hash": "68885c7dc666c63fd3c2dcd120221aacd9c8363afcb7b64c910e5aede35fd1ba",
+            "quote": "扫描页面右侧二维码，关注官方公众号，发送[BP投递]，即可获得联想创投官方邮箱地址，更多相关信息和操作详见公众号",
+            "quote_hash": "8729c59480c30e9eb4668b63bb0ef37e3e15c680dd2d12fff401e2f1f12c24c5"
           }
         ],
+        "coverage_status": "researched",
+        "coverage_note": "机构概况、投资方向、组合规模及BP投递方式均来自联想创投官网；组合与IPO数字是官网自报，非独立审计业绩。",
         "last_verified_at": "2026-09-25"
       }
     },

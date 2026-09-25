@@ -532,53 +532,116 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "联想创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "联想创投集团（Lenovo Capital and Incubator Group，LCIG）是联想集团旗下科技产业投资与孵化平台，2016年成立。官网列出的方向包括AI及行业应用、算力软硬件、具身智能、智慧医疗、先进制造和新能源；官网自报已投资超330家企业、其中26家IPO，并孵化10余家子公司与创新业务。这些是官网披露口径，不是对基金回报的审计。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立年份",
+          "value": "2016年",
+          "source_id": "lenovo_lcig_profile"
+        },
+        {
+          "field": "parent",
+          "label": "组织关系",
+          "value": "联想集团旗下全球科技产业基金 / 投资与孵化平台",
+          "source_id": "lenovo_lcig_profile"
+        },
+        {
+          "field": "sectors",
+          "label": "官网列示投资方向",
+          "value": [
+            "AI及行业应用",
+            "算力软硬件",
+            "具身智能",
+            "智慧医疗",
+            "先进制造",
+            "新能源"
+          ],
+          "source_id": "lenovo_lcig_profile"
+        },
+        {
+          "field": "portfolio_count",
+          "label": "官网自报已投资企业",
+          "value": "超过330家（官网当前简介口径）",
+          "source_id": "lenovo_lcig_profile"
+        },
+        {
+          "field": "listed_portfolio_count",
+          "label": "官网自报IPO企业",
+          "value": "26家（官网当前简介口径）",
+          "source_id": "lenovo_lcig_profile"
+        },
+        {
+          "field": "incubated_businesses",
+          "label": "孵化子公司与创新业务",
+          "value": "10余家（官网当前简介口径）",
+          "source_id": "lenovo_lcig_profile"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2016",
+          "description": "联想创投官网称LCIG成立于2016年。",
+          "source_id": "lenovo_lcig_profile"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：设序科技 · B轮 · 2026-09-17 · 天使轮投资方 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-887f1542c828b426"
-        },
-        {
-          "description": "融资来源记录：格通智联 · Pre-A轮 · 2026-08-25 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2a3446f702110142"
-        },
-        {
-          "description": "融资来源记录：设序科技 · B轮 · 2026-07-23 · A轮老股东持续加注 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-7dfa7efaace4f3c8"
+          "description": "官网列举其投资超过330家企业及其中26家IPO，并称孵化10余家子公司和创新业务；这些是机构自报组合数据，不代表基金IRR或已实现回报。",
+          "source_id": "lenovo_lcig_profile"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "联想创投",
+          "url": "https://capital.lenovo.com/",
+          "source_id": "lenovo_lcig_profile"
+        },
+        {
+          "kind": "address",
+          "label": "北京、上海、深圳、香港、以色列及美国办公室",
+          "value": "北京：北京市海淀区西北旺东路10号院1号楼；上海：上海市浦东新区松涛路696号联想创新科技园A座13楼；深圳：深圳市南山区后海滨路3288号联想后海中心A座42F；香港：香港沙田白石角科学园科技大道东16号海滨大楼二座3楼；以色列特拉维夫；美国旧金山湾区。",
+          "url": "https://capital.lenovo.com/contact/contact.html",
+          "source_id": "lenovo_lcig_contact"
+        },
+        {
+          "kind": "social",
+          "label": "商业计划书投递",
+          "value": "关注联想创投官方微信公众号，发送“BP投递”获取官方邮箱；官网未直接展示投递邮箱。",
+          "url": "https://capital.lenovo.com/contact/contact.html",
+          "source_id": "lenovo_lcig_contact"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-887f1542c828b426",
-          "source_url": "https://news.pedaily.cn/202609/569177.shtml",
-          "source_title": "设序科技一连融资6轮，要做「工业界Anthropic」",
-          "source_content_hash": "7ba0fa9425a10e3a",
-          "quote": "当年就拿下险峰长青、高榕资本、联想创投联合投资的数千万元天使轮。",
-          "quote_hash": "332e7f6a877a83ac23d5c1a12e8e0dd8d7f9d188e96a1e98d730e1c41628ad2b"
+          "source_id": "lenovo_lcig_profile",
+          "source_url": "https://capital.lenovo.com/team/lenovoteam.html",
+          "source_title": "联想创投简介｜Lenovo Capital and Incubator Group",
+          "source_content_hash": "3eb1848513ee658463e64a245e0cdb6e1245965a632f96669490bbaedb8f2f33",
+          "quote": "联想创投集团（Lenovo Capital and Incubator Group，简称LCIG）成立于2016年，作为联想集团旗下的全球科技产业基金，旨在融汇联想全球资源，以投资和孵化为手段，布局科技未来。联想创投专注于科技产业投资，主要投资方向包括：AI及行业应用、算力软硬件、具身智能、智慧医疗、先进制造、新能源等。",
+          "quote_hash": "c2f81b870db95ee604355d78d3ceed960393615453d9c4bd489e85af07285a51"
         },
         {
-          "source_id": "FISRC-2a3446f702110142",
-          "source_url": "https://news.pedaily.cn/202608/568060.shtml",
-          "source_title": "格通智联完成数亿元Pre A轮融资",
-          "source_content_hash": "98c49c9e9931e708",
-          "quote": "本轮融资由张江高科领投，壁仞科技、国开科创、新鼎资本、联想创投、尚融资本等知名产业方与投资机构跟投。",
-          "quote_hash": "f850c173b12fcf1c560b4cafd4cd1a72d412acf7ca3752964ad6e7e0faaa57c5"
+          "source_id": "lenovo_lcig_scale",
+          "source_url": "https://capital.lenovo.com/team/lenovoteam.html",
+          "source_title": "联想创投简介｜Lenovo Capital and Incubator Group",
+          "source_content_hash": "3eb1848513ee658463e64a245e0cdb6e1245965a632f96669490bbaedb8f2f33",
+          "quote": "目前，联想创投已投资超330家优秀企业，包括宁德时代、美团、蔚来、思特威，中控等26家IPO企业，同时孵化了SHAREit（茄子快传）、联想懂的通信、联想云科技、联想新视界、联晟智达等10余家子公司和创新业务。",
+          "quote_hash": "100d9000ee4bf33d8395a73acd783f318d2f56a1de020bcf05f68c00d63fa214"
         },
         {
-          "source_id": "FISRC-7dfa7efaace4f3c8",
-          "source_url": "https://news.pedaily.cn/202202/487236.shtml",
-          "source_title": "工业智能CAD厂商「设序科技」完成A轮投资，字节跳动领投_投资界",
-          "source_content_hash": "5c1b7fbf79c12864",
-          "quote": "老股东SIG、 险峰长青 、 高榕资本 、 联想创投 持续加注",
-          "quote_hash": "6e0944605f10f53334f72bbd7c6dcd9d6bf0cbd4d7686337eb3b786f2b37ed8b"
+          "source_id": "lenovo_lcig_contact",
+          "source_url": "https://capital.lenovo.com/contact/contact.html",
+          "source_title": "联系我们｜Lenovo Capital and Incubator Group",
+          "source_content_hash": "68885c7dc666c63fd3c2dcd120221aacd9c8363afcb7b64c910e5aede35fd1ba",
+          "quote": "扫描页面右侧二维码，关注官方公众号，发送[BP投递]，即可获得联想创投官方邮箱地址，更多相关信息和操作详见公众号",
+          "quote_hash": "8729c59480c30e9eb4668b63bb0ef37e3e15c680dd2d12fff401e2f1f12c24c5"
         }
       ],
+      "coverage_status": "researched",
+      "coverage_note": "机构概况、投资方向、组合规模及BP投递方式均来自联想创投官网；组合与IPO数字是官网自报，非独立审计业绩。",
       "last_verified_at": "2026-09-25"
     }
   }

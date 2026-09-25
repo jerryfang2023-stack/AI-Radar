@@ -111,32 +111,86 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "何小鹏 的来源线索将其与小鹏机器人业务（小鹏机器人业务CEO）关联。来源日期：2026-09-03；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "何小鹏是小鹏集团联合创始人、董事长、执行董事兼CEO。小鹏集团投资者关系资料记载其此前联合创立UC优视并担任产品总裁，之后在阿里巴巴任移动事业群总裁、阿里游戏董事长及土豆网总裁；还曾任虎牙独立董事。他于1999年获华南理工大学计算机科学学士学位。当前档案将投资新闻中出现的人物线索与官方披露的集团职务区分，不推断其是小鹏机器人业务的具体负责人。",
+      "current_roles": [
+        {
+          "title": "联合创始人、董事长、执行董事兼首席执行官",
+          "organization": "小鹏集团（XPeng Inc.）",
+          "source_id": "xiaopeng_he_ir_role"
+        }
+      ],
       "career": [
         {
-          "organization": "小鹏机器人业务",
-          "title": "小鹏机器人业务CEO",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将何小鹏与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-2b9c9aa0b968cbe6"
+          "organization": "UC优视（UCWeb）",
+          "title": "联合创始人、产品总裁",
+          "period": "联合创立于2004年；产品总裁任期为2005年1月至2014年6月",
+          "description": "小鹏集团投资者关系资料记载其联合创立UC优视并担任产品总裁；UC优视于2014年6月被阿里巴巴集团收购。",
+          "source_id": "xiaopeng_he_ir_career"
+        },
+        {
+          "organization": "阿里巴巴集团",
+          "title": "阿里巴巴移动事业群总裁、阿里游戏董事长、土豆网总裁",
+          "period": "2014年6月至2017年8月",
+          "description": "上述职务与任期来自小鹏集团投资者关系个人简介。",
+          "source_id": "xiaopeng_he_ir_career"
+        },
+        {
+          "organization": "小鹏集团（XPeng Inc.）",
+          "title": "联合创始人、董事长、执行董事兼CEO",
+          "period": "现任（官网当前董事及管理层简介）",
+          "description": "小鹏集团IR当前人物页列出的职务；未把集团职务扩写为机器人业务部门职务。",
+          "source_id": "xiaopeng_he_ir_role"
+        },
+        {
+          "organization": "虎牙公司（HUYA Inc.）",
+          "title": "独立董事、审核委员会成员",
+          "period": "2018年5月至2020年5月",
+          "description": "小鹏集团投资者关系资料记载的非执行董事职务。",
+          "source_id": "xiaopeng_he_ir_career"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "华南理工大学",
+          "qualification": "计算机科学学士，1999年7月",
+          "source_id": "xiaopeng_he_ir_education"
+        }
+      ],
+      "experience_summary": "职业经历涵盖UC优视创业与产品、阿里巴巴移动和数字内容业务、小鹏汽车创业及上市公司治理。小鹏集团官网个人页没有提供其在机器人业务部门的单独职务，因此不将融资报道索引中的“小鹏机器人业务CEO”延伸为该部门的正式头衔。",
+      "track_record": [
+        {
+          "description": "官方资料记载其联合创立UC优视，后由阿里巴巴收购；现任小鹏集团联合创始人及董事长兼CEO。该摘要描述履历关联，不据此量化个人投资回报。",
+          "source_id": "xiaopeng_he_ir_career"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-2b9c9aa0b968cbe6",
-          "source_url": "https://eu.36kr.com/zh/p/3954397242473863",
-          "source_title": "融资披露来源",
-          "source_content_hash": "53298de93d50bd64ba20ee61bf9df87d3a54e5f082bdc9a61b23b4e07d247bb2",
-          "quote": "这一次，何小鹏亲自挂帅——他不仅是小鹏汽车创始人，目前也是小鹏机器人业务CEO",
-          "quote_hash": "55dc0df8e2589318ea5e32d212ec089d8d37fede900a36df79309a36fe489893"
+          "source_id": "xiaopeng_he_ir_role",
+          "source_url": "https://ir.xiaopeng.com/zh-hans/board-member-management/hexiaopengxiansheng",
+          "source_title": "何小鹏先生｜小鹏集团投资者关系",
+          "source_content_hash": "7d52dc424a711fb08a01ee65caf9c49bbc48391b95ba573efcf912250bf4d5da",
+          "quote": "何小鹏先生是我们的联合创始人、执行董事、董事长兼首席执行官。",
+          "quote_hash": "c23f8e01f8223095fd9338a1a6b2f92b6fb99c8e99b1486836a3957b132a52d7"
+        },
+        {
+          "source_id": "xiaopeng_he_ir_career",
+          "source_url": "https://ir.xiaopeng.com/zh-hans/board-member-management/hexiaopengxiansheng",
+          "source_title": "何小鹏先生｜小鹏集团投资者关系",
+          "source_content_hash": "7d52dc424a711fb08a01ee65caf9c49bbc48391b95ba573efcf912250bf4d5da",
+          "quote": "担任本公司董事长兼首席执行官前，何先生于2014年6月至2017年8月任职阿里巴巴集团（是于纽交所（代码：BABA)及香港联交所（股份代号：9988）上市的公众公司），包括担任阿里巴巴移动事业群总裁、阿里游戏董事长及土豆网总裁。于2004年，何小鹏先生联合创立UC优视公司（是中国一家提供移动互联网软件技术及服务的公司），于2005年1月至2014年6月担任产品总裁。于2014年6月，UC优视公司被阿里巴巴集团收购。何先生于2018年5月至2020年5月曾任虎牙公司的独立董事及审核委员会成员。",
+          "quote_hash": "0ba074f4442d625343b4c161a4d8ef4bb07a1918a86de13f54e2ed98f620ca08"
+        },
+        {
+          "source_id": "xiaopeng_he_ir_education",
+          "source_url": "https://ir.xiaopeng.com/zh-hans/board-member-management/hexiaopengxiansheng",
+          "source_title": "何小鹏先生｜小鹏集团投资者关系",
+          "source_content_hash": "7d52dc424a711fb08a01ee65caf9c49bbc48391b95ba573efcf912250bf4d5da",
+          "quote": "何先生于1999年7月获得华南理工大学计算机科学学士学位。何先生于2020年1月取得广东省人力资源和社会保障厅颁发的工商管理高级经济师（科技型企业家）资格证书。",
+          "quote_hash": "03b4f8068c661fe1907f6247618b904082c962304958691363d44acf66dd7f28"
         }
       ],
+      "coverage_status": "researched",
+      "coverage_note": "职务、公司关联、任期和学历来自小鹏集团投资者关系官方简介。未据融资报道中的部门性称谓推断正式任职。",
       "last_verified_at": "2026-09-25"
     }
   },

@@ -111,32 +111,69 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "陈建宇 的来源线索将其与星动纪元（创始人）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "陈建宇在清华大学交叉信息研究院担任助理教授，并创立具身智能企业星动纪元。清华大学交叉信息研究院资料记载，他曾在加州大学伯克利分校攻读博士学位并师从Masayoshi Tomizuka教授；该报道未说明学位授予时间。其研究聚焦机器人、强化学习、控制理论和大模型。",
+      "current_roles": [
+        {
+          "title": "助理教授、智能系统与机器人实验室负责人",
+          "organization": "清华大学交叉信息研究院",
+          "source_id": "chen_jianyu_tsinghua"
+        },
+        {
+          "title": "创始人（清华大学2024年报道）",
+          "organization": "星动纪元（RobotEra）",
+          "source_id": "chen_jianyu_tsinghua"
+        }
+      ],
       "career": [
         {
-          "organization": "星动纪元",
+          "organization": "清华大学交叉信息研究院",
+          "title": "助理教授；主持智能系统与机器人实验室（ISR Lab）",
+          "period": "清华大学2024年5月报道其在任；具体入职年份未披露",
+          "description": "研究方向包括强化学习、机器人、控制理论和大模型；该来源未披露博士毕业后的完整职业时间线。",
+          "source_id": "chen_jianyu_tsinghua"
+        },
+        {
+          "organization": "星动纪元（RobotEra）",
           "title": "创始人",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将陈建宇与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-8c073d38e1f34758"
+          "period": "截至清华大学2024年5月报道；创业起始年月未在该报道中说明",
+          "description": "清华大学交叉信息研究院将其介绍为星动纪元创始人；融资库中更具体的成立时间来自另一条融资报道，不在本档案中扩展。",
+          "source_id": "chen_jianyu_tsinghua"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "加州大学伯克利分校（UC Berkeley）",
+          "qualification": "攻读博士学位，师从Masayoshi Tomizuka教授；清华报道未说明授予学位及年份",
+          "source_id": "chen_jianyu_tsinghua"
+        }
+      ],
+      "experience_summary": "公开一手资料支持其高校科研与具身智能创业双重经历：任清华大学交叉信息研究院助理教授、主持ISR Lab，并创立星动纪元。清华报道确认其在伯克利攻读博士学位，但没有给出入职时间、学位授予状态或更早履历。",
+      "track_record": [
+        {
+          "description": "清华大学交叉信息研究院报道，陈建宇研究组联合星动纪元提出人形机器人去噪世界模型学习框架，相关论文被RSS接收；这是研究团队成果，不归为其个人独立成果。",
+          "source_id": "chen_jianyu_tsinghua_research"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-8c073d38e1f34758",
-          "source_url": "https://news.pedaily.cn/202607/565883.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "38b0d26a979c4a8e",
-          "quote": "2023年8月，依托清华成果转化政策，北京星动纪元正式成立，这是清华大学唯 一直接持股的具身智能企业，陈建宇出任创始人。",
-          "quote_hash": "71139aa91757e55d549eb93e5407036fdb24b0fda9695e184d2fc92332abe448"
+          "source_id": "chen_jianyu_tsinghua",
+          "source_url": "https://iiis.tsinghua.edu.cn/info/1018/1208.htm",
+          "source_title": "陈建宇研究组发布新颖人形机器人学习算法框架｜清华大学交叉信息研究院",
+          "source_content_hash": "bb64ff5e77d7b69d14c48c8ca086ceb4bc4d8cd7a768653f4e23f46240d55164",
+          "quote": "陈建宇是清华大学交叉信息研究院助理教授，同时也是领先的具身智能企业星动纪元的创始人。他曾在美国加州大学伯克利分校攻读博士学位，师从美国工程院院士Masayoshi Tomizuka教授。",
+          "quote_hash": "c4dae4c1bc982ee0251ed540e27d17e07b7dd324a9c6eaad216ce47e1fd04dcb"
+        },
+        {
+          "source_id": "chen_jianyu_tsinghua_research",
+          "source_url": "https://iiis.tsinghua.edu.cn/info/1018/1208.htm",
+          "source_title": "陈建宇研究组发布新颖人形机器人学习算法框架｜清华大学交叉信息研究院",
+          "source_content_hash": "bb64ff5e77d7b69d14c48c8ca086ceb4bc4d8cd7a768653f4e23f46240d55164",
+          "quote": "近期，清华大学交叉信息研究院陈建宇研究组，联合星动纪元在具身智能领域取得重要突破，提出了一种新颖的人形机器人学习算法框架",
+          "quote_hash": "1213ffb55fd37266e5382a0844b7ebfc1d0deeacef14883447cb3cd668bd98ab"
         }
       ],
+      "coverage_status": "researched",
+      "coverage_note": "现任学术职务、创业关联、研究方向及博士阶段学习由清华大学交叉信息研究院一手报道支持；学历授予状态、此前任职与具体时间线未披露，未推断。",
       "last_verified_at": "2026-09-25"
     }
   },
