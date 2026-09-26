@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-26T00:27:56.714Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3576,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -55,24 +55,27 @@
   "institution": {
     "id": "INV-31b30415e63c71",
     "name": "顺禧基金",
-    "aliases": [],
+    "aliases": [
+      "北京顺禧基金"
+    ],
     "canonical_entity_id": null,
     "investor_kind": "investment_institution",
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 4,
-    "china_market_company_count": 4,
+    "china_market_activity_count": 5,
+    "china_market_company_count": 5,
     "first_disclosed_at": "2026-05-08",
     "latest_disclosed_at": "2026-07-24",
     "role_counts": {
       "historical_or_ambiguous": 1,
+      "other_current_round": 1,
       "participant": 4
     },
     "round_codes": [
@@ -100,6 +103,11 @@
         "entity_id": "EN-94f3cca8dd7fa0ff",
         "canonical_entity_id": "EN-94f3cca8dd7fa0ff",
         "name": "中科沌序"
+      },
+      {
+        "entity_id": "EN-6749a84e188b9301",
+        "canonical_entity_id": "EN-6749a84e188b9301",
+        "name": "中科煜坤"
       }
     ],
     "activities": [
@@ -181,6 +189,46 @@
             "source_content_hash": "edea92990a31710b",
             "quote": "10月17日，AI视频企业爱诗科技宣布完成1亿元人民币B+轮融资，由复星锐正、同创伟业、顺禧基金等共同投资。",
             "quote_hash": "e9aae3ff1b77f083544e7ec6565ade2999a46e7937b2893111210677a5f7bd3e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-74914e57348f9900",
+        "funding_insight_id": "FI-6eb4d41cef37e680",
+        "event_ids": [
+          "EV-11c8183c180e4b97"
+        ],
+        "company_entity_id": "EN-6749a84e188b9301",
+        "company_canonical_entity_id": "EN-6749a84e188b9301",
+        "company_name": "中科煜坤",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "千万元级人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 10000000,
+          "max_value": 100000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1000 万元–1 亿元"
+        },
+        "announced_at": "2026-06-30",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮独家投资",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-88fa6d3c9d641f6e",
+            "source_url": "https://news.pedaily.cn/202606/565681.shtml",
+            "source_title": "中科煜坤完成千万元级种子轮融资，北京顺禧基金独家投资",
+            "source_content_hash": "7c7cac656140a0bd",
+            "quote": "本轮融资由 北京顺禧基金独家投资",
+            "quote_hash": "7452771ea962be80ffb6ebe60fd4ab29087cbcd92fe8dcdfb89a25a41fa77842"
           }
         ]
       },
@@ -321,6 +369,14 @@
         "source_content_hash": "edea92990a31710b",
         "quote": "10月17日，AI视频企业爱诗科技宣布完成1亿元人民币B+轮融资，由复星锐正、同创伟业、顺禧基金等共同投资。",
         "quote_hash": "e9aae3ff1b77f083544e7ec6565ade2999a46e7937b2893111210677a5f7bd3e"
+      },
+      {
+        "source_id": "FISRC-88fa6d3c9d641f6e",
+        "source_url": "https://news.pedaily.cn/202606/565681.shtml",
+        "source_title": "中科煜坤完成千万元级种子轮融资，北京顺禧基金独家投资",
+        "source_content_hash": "7c7cac656140a0bd",
+        "quote": "本轮融资由 北京顺禧基金独家投资",
+        "quote_hash": "7452771ea962be80ffb6ebe60fd4ab29087cbcd92fe8dcdfb89a25a41fa77842"
       },
       {
         "source_id": "FISRC-93d4a052ba2f7977",

@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-26T00:27:56.714Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3576,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -143,6 +143,7 @@
       "EV-e999f3386aba7a2e",
       "EV-bad301e14b034fbd",
       "EV-4763b46821ab746e",
+      "EV-d675907ad59a707e",
       "EV-53957f94b3924ad3",
       "EV-082a9cdae7904aac",
       "EV-c47112d137157d2d",
@@ -156,6 +157,7 @@
       "EV-57597c92f7b183a9",
       "EV-6ce6b9c9780b97d9",
       "EV-dd62847548bb6ae3",
+      "EV-5961ed93ca6dae66",
       "EV-7fad565c9ffab4b0",
       "EV-322796d9761a0824",
       "EV-14b44a40808340f5",
@@ -234,6 +236,7 @@
       "EN-ab877737b6081bd1",
       "EN-cbadff7c58c26e1a",
       "EN-06b5472c16feae4c",
+      "EN-ebb2319d88e082f4",
       "EN-35e36dc1a5213fa3",
       "EN-0b914b1a1e589338",
       "EN-42f0b44cc91cc5e0",
@@ -243,6 +246,7 @@
       "EN-a93bc1dfeb147c54",
       "EN-61cce404a45c3545",
       "EN-4a639cb888a15d75",
+      "EN-a81b5ef9c23cdf0c",
       "EN-b21a23767d4d35a9",
       "EN-ea3bd73e2b506e00",
       "EN-7d3194f79e645c42",
@@ -264,7 +268,7 @@
       "HW-ceb55d9bc637c1d3"
     ],
     "firstSeen": "2026-01-20",
-    "lastSeen": "2026-09-24"
+    "lastSeen": "2026-09-26"
   },
   "events": [
     {
@@ -33535,6 +33539,138 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-d675907ad59a707e",
+      "dataDate": "2026-09-26",
+      "date": "2026-09-26",
+      "updatedDate": "2026-09-26",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Prosper AI 新闻中心：新闻稿与公司新闻",
+      "originalTitle": "Prosper AI Newsroom: Press Releases & Company News",
+      "subject": "Prosper AI Newsroom: Press",
+      "action": "Releases",
+      "object": "& Company News",
+      "metrics": [
+        "$30 million"
+      ],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-ebb2319d88e082f4"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-ebb2319d88e082f4"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-ebb2319d88e082f4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-ebb2319d88e082f4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-ebb2319d88e082f4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-ebb2319d88e082f4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-ebb2319d88e082f4",
+        "EN-0e15ea298efa36a7",
+        "EN-0cd29b68e5718821"
+      ],
+      "entityNames": [
+        "Prosper AI Newsroom",
+        "Company News",
+        "AI Newsroom"
+      ],
+      "productName": "Company News",
+      "products": [
+        {
+          "name": "Company News",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "AI Newsroom",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://getprosper.ai/press",
+      "publisher": "getprosper.ai"
+    },
+    {
       "id": "EV-53957f94b3924ad3",
       "dataDate": "2026-09-01",
       "date": "2026-08-31",
@@ -36354,6 +36490,88 @@
       "publisher": "supermicro.com"
     },
     {
+      "id": "EV-5961ed93ca6dae66",
+      "dataDate": "2026-09-26",
+      "date": "2026-09-25",
+      "updatedDate": "2026-09-26",
+      "eventType": "security_incident",
+      "eventTypeLabel": "安全事件",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenAI 智能体集群数月来入侵在线数据库搜寻冷门数据，Transluce 与澳政府相继披露",
+      "originalTitle": "",
+      "subject": "OpenAI agents",
+      "action": "security_incident",
+      "object": "Data USA, the University of New Mexico digital library, and the Australian Institute of Health and Welfare (AIHW)",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-a81b5ef9c23cdf0c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-a81b5ef9c23cdf0c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-a81b5ef9c23cdf0c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-a81b5ef9c23cdf0c",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI agents",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/09/25/for-months-openais-agent-swarms-have-been-attacking-online-databases-to-find-obscure-facts",
+      "publisher": "TechCrunch：AI（RSS）"
+    },
+    {
       "id": "EV-7fad565c9ffab4b0",
       "dataDate": "2026-07-23",
       "date": "2026-07-23",
@@ -37277,6 +37495,7 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-8061c8eb754e0542",
         "EV-9ced0afc6d0d1f63",
         "EV-47f2eb9a1d92fc7e",
         "EV-01eaadc83f55095a",
@@ -37298,7 +37517,6 @@
         "EV-2d17a87d3863dcee",
         "EV-4ecc308baf04ff02",
         "EV-d626fbf563d8afc7",
-        "EV-8061c8eb754e0542",
         "EV-36a9af9b98a66be3",
         "EV-127ae714eb61dff9",
         "EV-37e3784d55f5f5d0",
@@ -37519,7 +37737,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "EN-c70eca6b0f88f44d",
@@ -37570,6 +37788,8 @@
         "EV-f247eff115e840af",
         "EV-ed8260ee9a7a80af",
         "EV-df88363737beb880",
+        "EV-78758ccb5d45f4f9",
+        "EV-ffe9a66690dc8b19",
         "EV-3ed4dfb4a164a3e0",
         "EV-0b7dcbb44344e389",
         "EV-da26b43d3924136e",
@@ -37982,6 +38202,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
@@ -38004,7 +38225,6 @@
         "TX-target_user-consumer",
         "TX-target_user-educator",
         "TX-use_case-software_development",
-        "TX-product_form-compute_cloud_service",
         "TX-industry-media_entertainment",
         "TX-industry-professional_services",
         "TX-use_case-security_operations",
@@ -38049,7 +38269,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "EN-6fae0bc5a895aab8",
@@ -38066,6 +38286,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-industry-energy_utilities",
         "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
@@ -38081,7 +38302,6 @@
         "TX-industry-telecommunications",
         "TX-industry-government_public_sector",
         "TX-ai_market_application-computing_infrastructure",
-        "TX-product_form-compute_cloud_service",
         "TX-industry-logistics_supply_chain",
         "TX-industry-media_entertainment",
         "TX-industry-professional_services",
@@ -39300,7 +39520,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-22",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "EN-eafe895eb8119e6e",
@@ -39617,6 +39837,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-e993070274a188d9",
         "EV-ea95ea9406e76f62",
         "EV-43c9b851bd2a46c7",
         "EV-3db9a076e3b7d4fd",
@@ -39678,7 +39899,7 @@
         "EN-24381ecb01753c1b"
       ],
       "firstSeen": "2026-01-13",
-      "lastSeen": "2026-09-21"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "EN-27032b3c60ab2a95",
@@ -39880,6 +40101,28 @@
       "lastSeen": "2026-06-13"
     },
     {
+      "id": "EN-ebb2319d88e082f4",
+      "name": "Prosper AI Newsroom",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-d675907ad59a707e"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-financial_services"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-26",
+      "lastSeen": "2026-09-26"
+    },
+    {
       "id": "EN-35e36dc1a5213fa3",
       "name": "Google Research",
       "entityType": "organization_candidate",
@@ -39991,6 +40234,7 @@
         "EV-5762fe51987bc5ff",
         "EV-6cb8979f92cf74ce",
         "EV-ef1de880e4ef9f75",
+        "EV-0e424af71cfe12f8",
         "EV-67804da6b04fdcc5",
         "EV-4965305d57edf6dd",
         "EV-ec21501b02a611f6",
@@ -40307,7 +40551,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "EN-74be4cbf48e647b2",
@@ -40450,6 +40694,32 @@
       "lastSeen": "2026-07-23"
     },
     {
+      "id": "EN-a81b5ef9c23cdf0c",
+      "name": "OpenAI agents",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-c04784e49047a2ff",
+        "EV-5961ed93ca6dae66",
+        "EV-7371ffb603de3e1c",
+        "EV-4efa076340382741",
+        "EV-345378cb7f1f64fd"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-security_operations"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-04",
+      "lastSeen": "2026-09-26"
+    },
+    {
       "id": "EN-b21a23767d4d35a9",
       "name": "海南省药品监督管理局",
       "entityType": "organization_candidate",
@@ -40512,6 +40782,7 @@
         "EV-9efcf6480f6c6f48",
         "EV-cf76f090a1a20a36",
         "EV-43301de739fe560e",
+        "EV-a171d2ec6b5982e9",
         "EV-25af07a982e78cb0",
         "EV-df53157dee9ad589",
         "EV-1873f3c6fa4bdedd",
@@ -40527,7 +40798,6 @@
         "EV-66561ec28d8b1fec",
         "EV-54451ee210a0d0d4",
         "EV-f26c01475e591f11",
-        "EV-293d6feac5b8efab",
         "EV-f29c0c51a5cbfd84",
         "EV-c877ce26c9f8997f",
         "EV-b1b396e6ba2fe208",
@@ -40648,7 +40918,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-12",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "EN-7d3194f79e645c42",
@@ -40827,7 +41097,6 @@
         "EV-cb1bc28f78888566",
         "EV-4e31149f2cd129f7",
         "EV-7a7a5267ca73e44c",
-        "EV-293d6feac5b8efab",
         "EV-a474530ccf6cd872",
         "EV-1f88bfaf77dcfca3",
         "EV-2954a6f0220f5b18",
@@ -41054,6 +41323,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-5961ed93ca6dae66",
         "EV-98a5bcde4600a029",
         "EV-82b8afc59e9be662",
         "EV-aed61f7e2ca28c38",
@@ -41249,7 +41519,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "EN-a19ad969c84178e9",

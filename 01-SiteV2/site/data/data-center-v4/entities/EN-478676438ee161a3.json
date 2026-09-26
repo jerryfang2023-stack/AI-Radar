@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-26T00:27:56.714Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3576,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -64,8 +64,8 @@
     ],
     "eventIds": [
       "EV-d80c43b35418e74d",
-      "EV-2182e541e0fe6a82",
       "EV-293d6feac5b8efab",
+      "EV-2182e541e0fe6a82",
       "EV-b22136a993b21f0c",
       "EV-cff5848b8c5453af",
       "EV-5ede0f85a672441c",
@@ -83,7 +83,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-03",
-    "lastSeen": "2026-09-18",
+    "lastSeen": "2026-09-26",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -92,8 +92,8 @@
       ],
       "partnerships": [],
       "productsServices": [
-        "EV-2182e541e0fe6a82",
         "EV-293d6feac5b8efab",
+        "EV-2182e541e0fe6a82",
         "EV-b22136a993b21f0c",
         "EV-5ede0f85a672441c",
         "EV-5c30f52112d92491",
@@ -109,6 +109,34 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-293d6feac5b8efab",
+        "dataDate": "2026-09-26",
+        "date": "2026-09-24",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "派早报：小米召开秋季新品发布会、千问发布 Qwen-Audio-3.1系列模型等",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-478676438ee161a3",
+          "EN-c608c4787821de1b",
+          "EN-047364b9be67f665",
+          "EN-644e3ce7b15ee21d"
+        ]
+      },
       {
         "id": "EV-2182e541e0fe6a82",
         "dataDate": "2026-09-18",
@@ -152,25 +180,6 @@
         "entityIds": [
           "EN-478676438ee161a3",
           "EN-9fbf261b62c1d7c0"
-        ]
-      },
-      {
-        "id": "EV-293d6feac5b8efab",
-        "dataDate": "2026-09-07",
-        "date": "2026-09-04",
-        "eventType": "model_release",
-        "eventTypeLabel": "模型发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "派早报：OpenAI 发布 GPT-6 Astra 模型、Meta 发布 Muse Spark 1.3 模型等",
-        "displayTags": [],
-        "entityIds": [
-          "EN-478676438ee161a3",
-          "EN-7d3194f79e645c42",
-          "EN-ea3bd73e2b506e00",
-          "EN-45ea02f28f8d8e50",
-          "EN-b1f973caf4a8c776"
         ]
       },
       {

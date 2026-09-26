@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-26T00:27:56.714Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3576,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -229,7 +229,6 @@
       "EV-cb1bc28f78888566",
       "EV-4e31149f2cd129f7",
       "EV-7a7a5267ca73e44c",
-      "EV-293d6feac5b8efab",
       "EV-a474530ccf6cd872",
       "EV-1f88bfaf77dcfca3",
       "EV-2954a6f0220f5b18",
@@ -456,6 +455,7 @@
       "EV-02b19ffbe883ee2e",
       "EV-cf496e0f8a56ca97",
       "EV-00834dd71037c7cc",
+      "EV-5961ed93ca6dae66",
       "EV-98a5bcde4600a029",
       "EV-82b8afc59e9be662",
       "EV-aed61f7e2ca28c38",
@@ -651,7 +651,7 @@
       "EN-b9db1ff13ae8496e"
     ],
     "firstSeen": "2022-10-01",
-    "lastSeen": "2026-09-24",
+    "lastSeen": "2026-09-26",
     "relationIds": [
       "REL2-39c721b66f466667",
       "REL2-8cc3dea2f3024fc2",
@@ -868,6 +868,7 @@
         "EV-66df35d14361a6cb"
       ],
       "productsServices": [
+        "EV-5961ed93ca6dae66",
         "EV-57f3792e2324389e",
         "EV-74e87bba31270f42",
         "EV-c45ed9151e55246f",
@@ -916,7 +917,6 @@
         "EV-d04298029a8ab693",
         "EV-2d17a87d3863dcee",
         "EV-54451ee210a0d0d4",
-        "EV-293d6feac5b8efab",
         "EV-7371ffb603de3e1c",
         "EV-39abdf174aa3aeec",
         "EV-cb1bc28f78888566",
@@ -1249,6 +1249,34 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-5961ed93ca6dae66",
+        "dataDate": "2026-09-26",
+        "date": "2026-09-25",
+        "eventType": "security_incident",
+        "eventTypeLabel": "安全事件",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "OpenAI 智能体集群数月来入侵在线数据库搜寻冷门数据，Transluce 与澳政府相继披露",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-a81b5ef9c23cdf0c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-a81b5ef9c23cdf0c",
+          "EN-7d3194f79e645c42"
+        ]
+      },
       {
         "id": "EV-57f3792e2324389e",
         "dataDate": "2026-09-24",
@@ -3617,25 +3645,6 @@
           "EN-bbdefa2950f49882",
           "EN-7d3194f79e645c42",
           "EN-45ea02f28f8d8e50"
-        ]
-      },
-      {
-        "id": "EV-293d6feac5b8efab",
-        "dataDate": "2026-09-07",
-        "date": "2026-09-04",
-        "eventType": "model_release",
-        "eventTypeLabel": "模型发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "派早报：OpenAI 发布 GPT-6 Astra 模型、Meta 发布 Muse Spark 1.3 模型等",
-        "displayTags": [],
-        "entityIds": [
-          "EN-478676438ee161a3",
-          "EN-7d3194f79e645c42",
-          "EN-ea3bd73e2b506e00",
-          "EN-45ea02f28f8d8e50",
-          "EN-b1f973caf4a8c776"
         ]
       },
       {
@@ -16809,6 +16818,7 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-8061c8eb754e0542",
         "EV-9ced0afc6d0d1f63",
         "EV-47f2eb9a1d92fc7e",
         "EV-01eaadc83f55095a",
@@ -16830,7 +16840,6 @@
         "EV-2d17a87d3863dcee",
         "EV-4ecc308baf04ff02",
         "EV-d626fbf563d8afc7",
-        "EV-8061c8eb754e0542",
         "EV-36a9af9b98a66be3",
         "EV-127ae714eb61dff9",
         "EV-37e3784d55f5f5d0",
@@ -17051,7 +17060,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "EN-7839fb10a8f14c70",
@@ -17120,6 +17129,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-e73afa921975ec85",
         "EV-ca2ab3833c31b91b",
         "EV-133a92cb6cb25a0c"
       ],
@@ -17129,7 +17139,7 @@
         "EN-7d3194f79e645c42"
       ],
       "firstSeen": "2026-07-22",
-      "lastSeen": "2026-08-31"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "EN-74692028630429c7",
@@ -17201,6 +17211,8 @@
         "EV-f247eff115e840af",
         "EV-ed8260ee9a7a80af",
         "EV-df88363737beb880",
+        "EV-78758ccb5d45f4f9",
+        "EV-ffe9a66690dc8b19",
         "EV-3ed4dfb4a164a3e0",
         "EV-0b7dcbb44344e389",
         "EV-da26b43d3924136e",
@@ -17613,6 +17625,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
@@ -17635,7 +17648,6 @@
         "TX-target_user-consumer",
         "TX-target_user-educator",
         "TX-use_case-software_development",
-        "TX-product_form-compute_cloud_service",
         "TX-industry-media_entertainment",
         "TX-industry-professional_services",
         "TX-use_case-security_operations",
@@ -17680,7 +17692,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "EN-52fc33ae4d101a5d",
@@ -17740,6 +17752,7 @@
         "EV-44a4e92c03a31ab1",
         "EV-ef1de880e4ef9f75",
         "EV-7585b033d4005977",
+        "EV-c7382536eddbbc85",
         "EV-67804da6b04fdcc5",
         "EV-eb282b4658bbdd7e",
         "EV-87c5f6dcc769999c",
@@ -17776,6 +17789,7 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-bd0b10ee8ccdff16",
         "EV-8058ddb115bdef47",
         "EV-d26f174b7e773bc3",
         "EV-67de8f4c9ac5ce4d",
@@ -17926,7 +17940,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "EN-4d748ebd71af03a7",
@@ -18037,10 +18051,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-target_user-business_user",
         "TX-industry-manufacturing",
         "TX-technology-agentic_execution",
-        "TX-product_form-compute_cloud_service",
         "TX-technology-guardrails_safety"
       ],
       "relatedEntityIds": [
@@ -18141,7 +18155,34 @@
         "Anthropic"
       ],
       "organization": "Anthropic",
-      "roleTitle": "芯片团队成员"
+      "roleTitle": "芯片团队成员",
+      "public_profile": {
+        "summary": "Clive Chan 的公开 GitHub 个人资料列出其组织为 Anthropic；资料未提供可核验的具体岗位、教育或职业时间线。",
+        "current_roles": [
+          {
+            "title": "公开资料列示关联",
+            "organization": "Anthropic",
+            "source_id": "github_clive_chan"
+          }
+        ],
+        "career": [],
+        "education": [],
+        "experience_summary": "目前仅能通过本人公开 GitHub 账号核验姓名与 Anthropic 关联，不推断具体岗位和历史雇主。",
+        "track_record": [],
+        "sources": [
+          {
+            "source_id": "github_clive_chan",
+            "source_url": "https://api.github.com/users/cchan",
+            "source_title": "cchan — GitHub public profile",
+            "source_content_hash": "a8784eb8ec20f84415c4d5bbb9f63e5ef96cfc609cec8da652990308fbc622d7",
+            "quote": "The public GitHub profile identifies the account holder as Clive Chan and lists the organization as @anthropic.",
+            "quote_hash": "3d60c7807d6cf5db16ab8bd72b839bace7dabbf3cfaab1fe5b183a9ee04473a4"
+          }
+        ],
+        "coverage_status": "self_declared_affiliation",
+        "coverage_note": "仅为个人公开账号自述的机构关联，具体岗位尚无机构官方资料核实。",
+        "last_verified_at": "2026-09-25"
+      }
     },
     {
       "id": "EN-fc0586e76f80f181",
@@ -19842,7 +19883,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "TX-target_user-business_user",
@@ -20204,6 +20245,7 @@
         "EV-22f0d8caaa65a6a2",
         "EV-7f2811d2272cf4a3",
         "EV-c0a65877001ed413",
+        "EV-b8eb460540c33d68",
         "EV-3bf02572d01ed324",
         "EV-c45b1098a3092e03",
         "EV-ae99edddf2ad4c24",
@@ -20552,7 +20594,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "TX-product_form-chip_accelerator",
@@ -21513,6 +21555,7 @@
         "EV-2ffc3377977da114",
         "EV-2fd730d0ad452334",
         "EV-fd21441fb6e143c3",
+        "EV-293d6feac5b8efab",
         "EV-8ca7036c405028d4",
         "EV-c45b1098a3092e03",
         "EV-9ec1b90f071eef44",
@@ -21972,7 +22015,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "TX-industry-retail_ecommerce",
@@ -22391,7 +22434,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "TX-ai_market_subcategory-productivity_enterprise_workflows",
@@ -22521,7 +22564,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "TX-use_case-productivity_enterprise_workflows",
@@ -22838,7 +22881,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -23078,6 +23121,7 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-b8eb460540c33d68",
         "EV-0d5a32aca724d30e",
         "EV-1873f3c6fa4bdedd",
         "EV-3bf02572d01ed324",
@@ -23972,6 +24016,7 @@
         "EV-e999f3386aba7a2e",
         "EV-bad301e14b034fbd",
         "EV-4763b46821ab746e",
+        "EV-d675907ad59a707e",
         "EV-53957f94b3924ad3",
         "EV-082a9cdae7904aac",
         "EV-c47112d137157d2d",
@@ -23985,6 +24030,7 @@
         "EV-57597c92f7b183a9",
         "EV-6ce6b9c9780b97d9",
         "EV-dd62847548bb6ae3",
+        "EV-5961ed93ca6dae66",
         "EV-7fad565c9ffab4b0",
         "EV-322796d9761a0824",
         "EV-14b44a40808340f5",
@@ -24063,6 +24109,7 @@
         "EN-ab877737b6081bd1",
         "EN-cbadff7c58c26e1a",
         "EN-06b5472c16feae4c",
+        "EN-ebb2319d88e082f4",
         "EN-35e36dc1a5213fa3",
         "EN-0b914b1a1e589338",
         "EN-42f0b44cc91cc5e0",
@@ -24072,6 +24119,7 @@
         "EN-a93bc1dfeb147c54",
         "EN-61cce404a45c3545",
         "EN-4a639cb888a15d75",
+        "EN-a81b5ef9c23cdf0c",
         "EN-b21a23767d4d35a9",
         "EN-ea3bd73e2b506e00",
         "EN-7d3194f79e645c42",
@@ -24093,7 +24141,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-01-20",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "TX-target_user-researcher",
@@ -24872,6 +24920,7 @@
         "EV-2c87c8ea47cbd1b6",
         "EV-97747aee0cafd9f3",
         "EV-bad301e14b034fbd",
+        "EV-d675907ad59a707e",
         "EV-45850ff01e177304",
         "EV-291060fb79c45357",
         "EV-21fcd6420d6ff726",
@@ -24964,6 +25013,7 @@
         "EN-2b1bf2dbb57b6603",
         "EN-bbdefa2950f49882",
         "EN-06b5472c16feae4c",
+        "EN-ebb2319d88e082f4",
         "EN-eaee1415bd59b210",
         "EN-74be4cbf48e647b2",
         "EN-0078ec52880eaa14",
@@ -24990,7 +25040,7 @@
         "HW-a033b945449628d5"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-09-23"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "TX-industry-government_public_sector",
@@ -26996,7 +27046,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "TX-technology-computer_use",
