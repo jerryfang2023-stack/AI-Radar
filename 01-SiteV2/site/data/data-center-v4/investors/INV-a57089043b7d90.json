@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-26T00:40:15.617Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3566,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -950,26 +950,6 @@
         "quote_hash": "a699890fc0e0b97e15420644c04df44c309258b692d953792bd33eab18bb2c63"
       }
     ],
-    "translations": {
-      "zh-CN": {
-        "activities[15].role": {
-          "text": "Pre-A轮领投",
-          "source_hash": "c61fa44ebf092b66526cb4a8de607b70e57d3e5006aa179d3a2b39fd8925f719",
-          "provider": "deepseek",
-          "model": "deepseek-v4-flash",
-          "translated_at": "2026-08-14T07:17:18.959Z",
-          "status": "translated"
-        },
-        "activities[16].role": {
-          "text": "Pre-B轮领投",
-          "source_hash": "aebf442c5143e180f2950bcaa72a692c16eb3617aebf8ba3bb3eb5171f29e2d6",
-          "provider": "deepseek",
-          "model": "deepseek-v4-flash",
-          "translated_at": "2026-08-14T07:17:21.597Z",
-          "status": "translated"
-        }
-      }
-    },
     "public_profile": {
       "summary": "高瓴创投（GL Ventures）是高瓴体系下的早期投资品牌。36氪机构资料称其于2020年推出，采用人民币/美元双币策略，重点覆盖生物医药与医疗器械、软件服务与原发科技创新、消费互联网与科技、新兴消费品牌与服务；该机构资料为第三方整理，未找到对应的高瓴官方独立档案页，规模与邮箱均按该来源谨慎标注。",
       "facts": [
@@ -1065,11 +1045,43 @@
           "quote_hash": "bd84d630669e917a6daeb10987340c8ef55e0c5336e6f24bf9c3ee10fa44d042"
         }
       ],
-      "last_verified_at": "2026-09-25",
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
+      "last_verified_at": "2026-09-25"
+    },
+    "translations": {
+      "zh-CN": {
+        "activities[15].role": {
+          "text": "Pre-A轮领投",
+          "source_hash": "c61fa44ebf092b66526cb4a8de607b70e57d3e5006aa179d3a2b39fd8925f719",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-08-14T07:17:18.959Z",
+          "status": "translated"
+        },
+        "activities[16].role": {
+          "text": "Pre-B轮领投",
+          "source_hash": "aebf442c5143e180f2950bcaa72a692c16eb3617aebf8ba3bb3eb5171f29e2d6",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-08-14T07:17:21.597Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "Hillhouse 官方网站（集团层面）",
+          "source_hash": "bb329e727bb0cd3e175ddd1878707b24b7096b4f4999c3881d96324c62300baf",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-26T00:39:31.567Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[2].label": {
+          "text": "Hillhouse 一般联系（集团层面，非经核验的 GL Ventures 投递渠道）",
+          "source_hash": "d1924ca0a79ff33f66ad867eb77aac0bda6a2f71474376d0f5431c2922a6e3f3",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-26T00:39:31.567Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

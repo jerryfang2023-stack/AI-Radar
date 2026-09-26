@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-26T00:40:15.617Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3566,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -375,9 +375,27 @@
       ],
       "coverage_status": "researched",
       "coverage_note": "官网支持成立年份、投资阶段、团队与投资区域；单笔投资按公司官方组合文章记录。官网未披露AUM和通用项目邮箱，不使用同名的Vine Ventures LLC等其他主体资料。",
-      "last_verified_at": "2026-09-25",
-      "profile_type": "organization",
-      "identity_status": "verified"
+      "last_verified_at": "2026-09-25"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.milestones[0].description": {
+          "text": "创始人Eric Reiner称Vine Ventures于2020年成立。",
+          "source_hash": "b7313fceaba47841c72193a27f0a441aecbc6e77cf11379fdd5b0982d06bd27d",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-26T00:39:37.357Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "官网列示Eric Reiner曾在Insight Venture Partners工作并投资Xamarin、1stdibs等；这些是其前职经历，不计入Vine Ventures业绩。",
+          "source_hash": "1b06f5e94c533cf04d989ed90095d0469e290b9c373b5544587f72b3e640d6de",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-26T00:39:37.358Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

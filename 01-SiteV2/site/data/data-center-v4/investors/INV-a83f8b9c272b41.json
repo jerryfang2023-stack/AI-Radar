@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-26T00:40:15.617Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3566,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -57,9 +57,9 @@
     "name": "BlackRock",
     "aliases": [],
     "canonical_entity_id": null,
-    "investor_kind": "unverified_investor",
-    "investor_kind_label": "投资方（类型待核验）",
-    "classification_confidence": "unverified",
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 6,
     "historical_or_ambiguous_count": 1,
@@ -564,8 +564,7 @@
           "quote": "BlackRock alternatives include private credit, infrastructure, private equity, real estate, hedge funds and alternative solutions.",
           "quote_hash": "2400755af3b5a43dcabe91f90d979f6c095b748d7d54cb89a1307a2097de8970"
         }
-      ],
-      "identity_status": "verified"
+      ]
     }
   }
 }

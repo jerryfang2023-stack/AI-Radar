@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-26T00:40:15.617Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3566,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -57,9 +57,9 @@
     "name": "Tiger Global",
     "aliases": [],
     "canonical_entity_id": null,
-    "investor_kind": "unverified_investor",
-    "investor_kind_label": "投资方（类型待核验）",
-    "classification_confidence": "unverified",
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 3,
     "historical_or_ambiguous_count": 1,
@@ -294,18 +294,6 @@
         "quote_hash": "e3f3d2d15b78bd35632ba28b62a2a86c87c45d4ecfbe8c86739628eb3f1b4eab"
       }
     ],
-    "translations": {
-      "zh-CN": {
-        "activities[0].role": {
-          "text": "Series E 参投方",
-          "source_hash": "4c5721848f6406bd6f2e84ed29d011b6af208116ac9cea44324fd35d85384690",
-          "provider": "deepseek",
-          "model": "deepseek-v4-flash",
-          "translated_at": "2026-09-18T02:49:06.821Z",
-          "status": "translated"
-        }
-      }
-    },
     "public_profile": {
       "profile_type": "organization",
       "coverage_status": "researched",
@@ -379,8 +367,19 @@
           "quote_hash": "c1993b4525cabc40054293c1a5e2bb8a8067d972eff38d6341634b905fd026a5"
         }
       ],
-      "last_verified_at": "2026-09-25",
-      "identity_status": "verified"
+      "last_verified_at": "2026-09-25"
+    },
+    "translations": {
+      "zh-CN": {
+        "activities[0].role": {
+          "text": "Series E 参投方",
+          "source_hash": "4c5721848f6406bd6f2e84ed29d011b6af208116ac9cea44324fd35d85384690",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-18T02:49:06.821Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

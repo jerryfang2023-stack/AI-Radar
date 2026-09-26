@@ -5,16 +5,16 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-09-24T02:18:04.445Z",
+    "generated_at": "2026-09-26T00:39:53.475Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 502,
-    "input_hash": "5e9087aa00ddaea0",
+    "decision_count": 503,
+    "input_hash": "fe6996bafc1a6972",
     "override_count": 18,
-    "needs_review_count": 55,
-    "low_confidence_count": 76
+    "needs_review_count": 56,
+    "low_confidence_count": 77
   },
   "decisions": [
     {
@@ -10037,6 +10037,27 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "Enveda 的核心产品是 AI 药物发现平台 PRISM，用于解析质谱数据、预测分子结构并指导实验，直接服务于生物医药研发流程，属于行业专属数据与工作流，因此归入行业应用而非基础设施或企业应用。"
+    },
+    {
+      "event_id": "EV-589b3b522be5b280",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "product_form_id": "model",
+      "use_case_ids": [
+        "research_discovery",
+        "data_analysis"
+      ],
+      "industry_ids": [
+        "professional_services"
+      ],
+      "target_user_ids": [
+        "developer",
+        "researcher"
+      ],
+      "confidence": 0.75,
+      "needs_review": true,
+      "rationale": "清醒异构发布量子启发视觉语言模型RiverONE，属于模型构建与开发部署，产品形态为模型。公司客户包括芯片与计算相关企业，但当前证据未明确显示物理AI机器人或自动驾驶等实体设备，因此归入infrastructure_compute/development_deployment/models。量子启发方法用于模型构建，训练后可在经典GPU推理，不涉及实时量子计算机或物理世界自主设备。"
     }
   ]
 }

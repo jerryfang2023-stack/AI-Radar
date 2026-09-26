@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-26T00:40:15.617Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3566,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -1082,11 +1082,27 @@
           "quote_hash": "381c5ad48bf7857bc3353c25d0ec1d2afd15ba56982fe80b56fae43affb697f6"
         }
       ],
-      "last_verified_at": "2026-09-25",
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
+      "last_verified_at": "2026-09-25"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.milestones[0].description": {
+          "text": "Vinod Khosla 的官方团队简介称，Khosla Ventures 于 2019 年成为 OpenAI 的首家风险投资机构。",
+          "source_hash": "cb96060d4ba27a85c0fa8288f924e7e5d6cab439f71efe800ce5c6ee2bb91e16",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-26T00:39:31.567Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "创始人 Vinod Khosla 的机构简介列出其早期投资案例，包括 OpenAI、Block、Stripe、Affirm、DoorDash、Instacart、Commonwealth Fusion、GitLab、QuantumScape 和 Rocket Lab；该名单不代表完整投资组合。",
+          "source_hash": "44fb48c7b7d1d9d53060a6a2b1d80e9fc6b097a44fce7190fa423846200cf347",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-26T00:39:31.567Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

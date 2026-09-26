@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-26T00:40:15.617Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3566,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -57,9 +57,9 @@
     "name": "DST Global",
     "aliases": [],
     "canonical_entity_id": null,
-    "investor_kind": "unverified_investor",
-    "investor_kind_label": "投资方（类型待核验）",
-    "classification_confidence": "unverified",
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 3,
     "historical_or_ambiguous_count": 2,
@@ -438,8 +438,19 @@
           "quote_hash": "e9c96030cc00ce2bc8bfd5f20d65cad25253164d3752dc440f5401fc795c236f"
         }
       ],
-      "last_verified_at": "2026-09-25",
-      "identity_status": "verified"
+      "last_verified_at": "2026-09-25"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "DST Global 是总部注册于开曼群岛基金体系的全球互联网投资机构。官网列其创始人为 Yuri Milner，联合创始人为 Saurabh Gupta、John Lindfors、Rahul Mehta 和 Tom Stafford；并明确表示不招揽或接受零售投资者。",
+          "source_hash": "bc386e53b57cd11af511676bc27a18c7048724b37820638ddb46aaab8ae1e95a",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-26T00:39:40.399Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

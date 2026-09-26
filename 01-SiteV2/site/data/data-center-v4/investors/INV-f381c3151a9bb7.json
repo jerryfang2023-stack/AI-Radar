@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-26T00:40:15.617Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3566,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -1043,10 +1043,35 @@
         }
       ],
       "last_verified_at": "2026-09-25",
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "researched",
-      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
+      "profile_type": "organization"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.track_record[0].description": {
+          "text": "General Catalyst 的种子投资介绍列出 Anduril、Applied Intuition、Deel、Helsing、Mistral、Stripe 和 Zepto 等合作企业，作为案例而非完整组合。",
+          "source_hash": "4dea6ca3615da8e410cd09170ce41e54565527318fa486722cb9fa99bcb85dd0",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-26T00:39:31.567Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[8].label": {
+          "text": "Jackson Hole 办公室",
+          "source_hash": "696b710de841082bda0e7f523ca31ec84f441346cce7a9ebade6523d94739a54",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-26T00:39:31.567Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[9].label": {
+          "text": "Bellevue 办公室",
+          "source_hash": "d1efcd45f48852cbec98fe32647d183075f4b8c780b75929602e88ff767c2176",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-26T00:39:31.567Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

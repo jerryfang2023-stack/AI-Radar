@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-26T00:40:15.617Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3566,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 1,
     "market_regions": [
       "CN"
@@ -70,9 +70,9 @@
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
     "first_disclosed_at": "2026-05-08",
-    "latest_disclosed_at": "2026-06-16",
+    "latest_disclosed_at": "2026-09-24",
     "role_counts": {
-      "historical_or_ambiguous": 1,
+      "historical_or_ambiguous": 2,
       "participant": 1
     },
     "round_codes": [
@@ -86,6 +86,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-59fdade14a398730",
+        "funding_insight_id": "FI-b6de4c88fe0455f3",
+        "event_ids": [
+          "EV-589b3b522be5b280"
+        ],
+        "company_entity_id": "EN-1067dd040b02ac41",
+        "company_canonical_entity_id": "",
+        "company_name": "清醒异构",
+        "round": "A+轮",
+        "round_code": "series_a_plus",
+        "round_original": "A+轮",
+        "amount_original": "近亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1 亿元"
+        },
+        "announced_at": "2026-09-24",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使+轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ec8473e1f5e395e8",
+            "source_url": "https://36kr.com/p/1773644071926018",
+            "source_title": "36氪首发｜「清醒异构」完成天使+轮融资，开发自动并行工具加速工业智能制造发展，释放更多异构算力-36氪",
+            "source_content_hash": "cf5a90511681af19",
+            "quote": "完成了由卓源资本、奇绩创坛、水木清华校友基金联合投资的天使+轮",
+            "quote_hash": "0271d5a501a8a2193a0f7e1fecd49f8b4150a91ada0cb0c4a10ef30d7bbee2de"
+          }
+        ]
+      },
       {
         "activity_id": "IA-74a19da46aa9d538",
         "funding_insight_id": "FI-a385248b0f830a67",
@@ -170,6 +210,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-ec8473e1f5e395e8",
+        "source_url": "https://36kr.com/p/1773644071926018",
+        "source_title": "36氪首发｜「清醒异构」完成天使+轮融资，开发自动并行工具加速工业智能制造发展，释放更多异构算力-36氪",
+        "source_content_hash": "cf5a90511681af19",
+        "quote": "完成了由卓源资本、奇绩创坛、水木清华校友基金联合投资的天使+轮",
+        "quote_hash": "0271d5a501a8a2193a0f7e1fecd49f8b4150a91ada0cb0c4a10ef30d7bbee2de"
+      },
+      {
         "source_id": "FISRC-c1c9258fc2a6aa50",
         "source_url": "https://c.m.163.com/news/a/KVI76U30051180F7.html",
         "source_title": "超20亿！智谱投的AI云厂商融资了，跟阿里火山百度“抢肉”吃",
@@ -185,45 +233,6 @@
         "quote": "顺禧基金、富华资本、万利达集团、长江创新投、水木清华校友基金、梅花创投等跟投",
         "quote_hash": "1268be5eb46af49b91553a5e559123a667d5373f1faaf25d9a7c3cfbcb145388"
       }
-    ],
-    "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "水木清华校友基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：硅基流动 · B轮 · 2026-06-16 · 天使+轮参投方 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c1c9258fc2a6aa50"
-        },
-        {
-          "description": "融资来源记录：容芯致远 · 天使轮 · 2026-05-08 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-ceee1629da3e3cce"
-        }
-      ],
-      "contacts": [],
-      "sources": [
-        {
-          "source_id": "FISRC-c1c9258fc2a6aa50",
-          "source_url": "https://c.m.163.com/news/a/KVI76U30051180F7.html",
-          "source_title": "超20亿！智谱投的AI云厂商融资了，跟阿里火山百度“抢肉”吃",
-          "source_content_hash": "39056b52b07178cc",
-          "quote": "今年2月完成 近亿元 天使+轮融资，参投方包括 智谱AI、360、水木清华校友基金 等",
-          "quote_hash": "ee72104da8e93385beaee36bae5f714884b696b63cb2cd5a5f5497a905763997"
-        },
-        {
-          "source_id": "FISRC-ceee1629da3e3cce",
-          "source_url": "https://news.pedaily.cn/202605/563553.shtml",
-          "source_title": "打造高性能国产AGI算力底座，容芯致远完成数亿元天使轮融资",
-          "source_content_hash": "ca2b772ff852bb28bd763b58c146b51cb79ce7f39e56ba7a416b2dfa01b2573a",
-          "quote": "顺禧基金、富华资本、万利达集团、长江创新投、水木清华校友基金、梅花创投等跟投",
-          "quote_hash": "1268be5eb46af49b91553a5e559123a667d5373f1faaf25d9a7c3cfbcb145388"
-        }
-      ],
-      "last_verified_at": "2026-09-26"
-    }
+    ]
   }
 }
