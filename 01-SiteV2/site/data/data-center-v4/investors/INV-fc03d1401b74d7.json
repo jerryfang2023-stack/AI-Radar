@@ -130,21 +130,109 @@
       }
     ],
     "public_profile": {
+      "summary": "夏尔巴投资（Sherpa Healthcare Partners）是专注医疗健康的投资机构，主要在大中华区投资早期和成长期企业，并选择性布局美国及其他市场。团队长期深耕生命科技、医药、医疗器械与诊断、医疗服务等细分赛道。",
+      "coverage_note": "官网的管理规模和组合企业数字截至2024年9月30日，且统计自2011年以来的团队管理经历，覆盖创立夏尔巴前的基金周期，不应理解为夏尔巴单只基金的AUM或投资回报。融资库的2026年德睿智药B轮记录引用的是2021年天使轮来源；本档案仅按历史来源记载夏尔巴领投天使轮，不据此声称参与B轮。",
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "夏尔巴医疗基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "facts": [
+        {
+          "field": "founding",
+          "label": "成立时间",
+          "value": "夏尔巴投资创立于2018年。",
+          "source_id": "sherpa_official_history"
+        },
+        {
+          "field": "strategy",
+          "label": "投资策略",
+          "value": "以价值投资为导向，聚焦大中华区医疗健康企业的早期和成长期股权投资，并选择性投资美国及其他地区。",
+          "source_id": "sherpa_official_en"
+        },
+        {
+          "field": "focus",
+          "label": "重点赛道",
+          "value": [
+            "生物科技与制药",
+            "医疗器械与诊断",
+            "医疗服务"
+          ],
+          "source_id": "sherpa_official_en"
+        },
+        {
+          "field": "team",
+          "label": "管理合伙人",
+          "value": "官网列示程星、欧阳湘宇和蔡大庆（Darren Cai）为管理合伙人。",
+          "source_id": "sherpa_official_team"
+        },
+        {
+          "field": "team_experience",
+          "label": "团队经验与历史组合",
+          "value": "截至2024年9月30日，官网称团队自2011年以来管理资金超过19亿美元、覆盖160家组合企业；该统计包括团队此前基金周期。",
+          "source_id": "sherpa_official_scale"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2018",
+          "description": "夏尔巴投资成立。",
+          "source_id": "sherpa_official_history"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：德睿智药 · B轮 · 2026-07-08 · 天使轮领投 · 5200万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "VCBeat报道夏尔巴医疗基金领投德睿智药2021年天使轮，融资额为人民币4,500万元。融资库2026年B轮记录引用的是历史天使轮来源，不能据此确认其参与B轮。",
           "source_id": "FISRC-c8803e2f7419599f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Official website",
+          "value": "Sherpa Healthcare Partners",
+          "url": "https://www.sherpahealthcarepartner.com/",
+          "source_id": "sherpa_official_en"
+        },
+        {
+          "kind": "email",
+          "label": "General inquiries",
+          "value": "info@sherpahp.com",
+          "url": "https://www.sherpahp.com/",
+          "source_id": "sherpa_public_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "sherpa_official_en",
+          "source_url": "https://www.sherpahealthcarepartner.com/",
+          "source_title": "Sherpa Healthcare Partners | Healthcare Investment",
+          "source_content_hash": "00419d68cd6606380ae907420bf78e1cc51b6193e88e849c1878cb220683b59d",
+          "quote": "Sherpa focuses on early- and growth-stage healthcare equity investments, primarily in Greater China and selectively in the U.S.",
+          "quote_hash": "1d529856875a545a534ad77cc401bf756203042487d7ad26601685f2181b01b0"
+        },
+        {
+          "source_id": "sherpa_official_team",
+          "source_url": "https://www.sherpahealthcarepartner.com/",
+          "source_title": "Sherpa Healthcare Partners | Healthcare Investment",
+          "source_content_hash": "00419d68cd6606380ae907420bf78e1cc51b6193e88e849c1878cb220683b59d",
+          "quote": "The website lists Cheng Xing, Xiangyu Ouyang and Daqing Cai as Managing Partners.",
+          "quote_hash": "cfaabb0846008facca6965f20ea59e8947568d13f6245fd79dde2e670fb190fd"
+        },
+        {
+          "source_id": "sherpa_official_history",
+          "source_url": "https://www.sherpahp.com/",
+          "source_title": "关于夏尔巴投资 - 夏尔巴投资",
+          "source_content_hash": "4fbbf28972cd20ff1e3fae70e0833423be04b733e5c4eaab60692142b65d0445",
+          "quote": "夏尔巴投资创立于2018年，专注生命科技、医药、器械诊断和医疗服务。",
+          "quote_hash": "a791c1dc026445a06b5da325ee334d21e7fa6f461dd97c661d380baefb2f536a"
+        },
+        {
+          "source_id": "sherpa_official_scale",
+          "source_url": "https://www.sherpahealthcarepartner.com/",
+          "source_title": "Sherpa Healthcare Partners | Healthcare Investment",
+          "source_content_hash": "00419d68cd6606380ae907420bf78e1cc51b6193e88e849c1878cb220683b59d",
+          "quote": "As of September 30, 2024, the team had managed over US$1.9 billion and worked with 160 portfolio companies since 2011.",
+          "quote_hash": "1d4f9d4dd3413c34cb8015c823eacc8d1b62b25ec49009b1644c661becc017fe"
+        },
         {
           "source_id": "FISRC-c8803e2f7419599f",
           "source_url": "https://www.vcbeathealth.com/article/59793",
@@ -152,9 +240,17 @@
           "source_content_hash": "674418393ee4156c",
           "quote": "in May 2021, it closed a RMB 45 million angel round led by Sherpa Medical Fund",
           "quote_hash": "e1522bd324136ecd88dda403c1bafeea77664775a1da1df6335f8e8db3ca9eb5"
+        },
+        {
+          "source_id": "sherpa_public_contact",
+          "source_url": "https://www.sherpahp.com/",
+          "source_title": "关于夏尔巴投资 - 夏尔巴投资",
+          "source_content_hash": "e6d6a4deb6f846372b9940d1465f12bd09ea85bd8b09de423a95808ad53cb9ea",
+          "quote": "商业计划书联系邮箱：info@sherpahp.com。",
+          "quote_hash": "4a68bcdb191d94dbe586c11d88c5f167870035dcbcf0db77761d0c9c9a517ff9"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }
