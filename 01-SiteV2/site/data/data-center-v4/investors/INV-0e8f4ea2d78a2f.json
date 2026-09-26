@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-26T00:40:15.617Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3566,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -260,10 +260,35 @@
           "quote_hash": "19e21ab31ce570bcdc8b81fae4de6f0aaa9ec58eaca2ab4d511d48af97d5291e"
         }
       ],
-      "last_verified_at": "2026-09-25",
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
+      "last_verified_at": "2026-09-25"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Paul Graham 是程序员、作家和投资人，联合创办 Viaweb（后被 Yahoo 收购）及 Y Combinator。",
+          "source_hash": "d3092656ade9d66332b85b12eaa5523efa6396b7dadbad92012504e282bd3149",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-26T00:39:40.399Z",
+          "status": "translated"
+        },
+        "public_profile.career[0].description": {
+          "text": "创业公司后被 Yahoo 收购，产品成为 Yahoo Store。",
+          "source_hash": "9da71c525489681883840962189f6037d261452b1307fe7f124aa9c939cfc26d",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-26T00:39:40.399Z",
+          "status": "translated"
+        },
+        "public_profile.career[1].description": {
+          "text": "创立创业公司孵化器 Y Combinator。",
+          "source_hash": "a7005219bf8e2fd8827692987f938ce5821c60d59c9c2743db01688bfe618966",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-26T00:39:40.399Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

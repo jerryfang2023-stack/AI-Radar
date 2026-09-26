@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-26T00:40:15.617Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3566,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -335,18 +335,6 @@
         "sourceUrl": "https://x.com/mattturck/status/2064806681612362113"
       }
     ],
-    "translations": {
-      "zh-CN": {
-        "role": {
-          "text": "FirstMarkCap风险投资人。主持：MAD播客；组织者：Data Driven NYC；作者：MAD Landscape。",
-          "source_hash": "8e361bd44ca711f99648c609e353acac6298135f5b52fec7b85760927d7063a0",
-          "provider": "deepseek",
-          "model": "deepseek-v4-flash",
-          "translated_at": "2026-08-14T07:17:59.800Z",
-          "status": "translated"
-        }
-      }
-    },
     "public_profile": {
       "summary": "Matt Turck 是 FirstMark 合伙人，投资企业软件；其经历包括创业、并购后在 Oracle 任职，以及创建 Bloomberg Ventures。",
       "current_roles": [
@@ -408,9 +396,43 @@
           "quote_hash": "7ab7f83c3edf982fd7832e718620b1182fe319139ff18227b64fe3a6d7d94f1d"
         }
       ],
-      "last_verified_at": "2026-09-25",
-      "coverage_status": "researched",
-      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
+      "last_verified_at": "2026-09-25"
+    },
+    "translations": {
+      "zh-CN": {
+        "role": {
+          "text": "FirstMarkCap风险投资人。主持：MAD播客；组织者：Data Driven NYC；作者：MAD Landscape。",
+          "source_hash": "8e361bd44ca711f99648c609e353acac6298135f5b52fec7b85760927d7063a0",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-08-14T07:17:59.800Z",
+          "status": "translated"
+        },
+        "public_profile.summary": {
+          "text": "Matt Turck 是 FirstMark 合伙人，投资企业软件；其经历包括创业、并购后在 Oracle 任职，以及创建 Bloomberg Ventures。",
+          "source_hash": "88a3dbd111f5db682b87a7d3b9f927be3f8cc20f0e120b4f21ad112332470103",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-26T00:39:26.621Z",
+          "status": "translated"
+        },
+        "public_profile.career[1].description": {
+          "text": "加入 Oracle 任职。",
+          "source_hash": "ad2722911caba1e5aa3dd4bfe0fff89ee1b20ad4bde984c1372b570122eb2831",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-26T00:39:26.621Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "FirstMark 官方列示其投资组合，并介绍其组织 Data Driven NYC 与出版 MAD Landscape 的行业活动。",
+          "source_hash": "63f2040298486325680dffb8709625841f5a8ff7d70161d16807696fcb1f5a15",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-26T00:39:26.621Z",
+          "status": "translated"
+        }
+      }
     }
   },
   "relatedEntities": [],

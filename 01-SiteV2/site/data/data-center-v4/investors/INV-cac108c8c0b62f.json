@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-26T00:40:15.617Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3566,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -57,9 +57,9 @@
     "name": "Headline",
     "aliases": [],
     "canonical_entity_id": null,
-    "investor_kind": "unverified_investor",
-    "investor_kind_label": "投资方（类型待核验）",
-    "classification_confidence": "unverified",
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 3,
     "historical_or_ambiguous_count": 2,
@@ -436,8 +436,19 @@
           "quote_hash": "59b674ed9ff992298c3212bfa4faf97a3df1308d20820e21e82ba9d97919fb26"
         }
       ],
-      "last_verified_at": "2026-09-25",
-      "identity_status": "verified"
+      "last_verified_at": "2026-09-25"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.track_record[0].description": {
+          "text": "美国基金官方页公开投资案例包括 Segment、Housecall Pro、Gopuff、Fetch、Heidi Health、Motion 等，并展示投资人团队；案例名单不代表完整组合或投资回报。",
+          "source_hash": "5365c9dd05358cab6ec01f860aeb772750bd21a0d7b4b2610282696675768761",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-26T00:39:40.399Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

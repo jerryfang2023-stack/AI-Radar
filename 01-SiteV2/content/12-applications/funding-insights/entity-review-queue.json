@@ -2,12 +2,12 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-ENTITY-REVIEW-V1.0",
     "funding_insight_version": "FUNDING-INSIGHT-V1.3",
-    "candidate_count": 1342,
-    "product_candidates": 799,
-    "person_candidates": 543,
-    "china_market_candidates": 458,
-    "china_market_product_candidates": 403,
-    "china_market_person_candidates": 55,
+    "candidate_count": 1344,
+    "product_candidates": 800,
+    "person_candidates": 544,
+    "china_market_candidates": 460,
+    "china_market_product_candidates": 404,
+    "china_market_person_candidates": 56,
     "rule": "Application evidence never mutates canonical V4 entities automatically."
   },
   "candidates": [
@@ -14677,6 +14677,34 @@
           "quote": "数巅智能创始人兼CEO 何昌华博士表示",
           "source_content_hash": "8dda700ee0f559df",
           "quote_hash": "94ea66d62c16ee60b6b912a91cb59d0ff29048957c4311e84d9de45b691a273b"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-95d7b246715d5394",
+      "candidate_kind": "person",
+      "research_name": "余腾",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-1067dd040b02ac41"
+      ],
+      "funding_insight_ids": [
+        "FI-c125fd9d45d6b383"
+      ],
+      "source_event_ids": [
+        "EV-589b3b522be5b280"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-735024582f88eccf",
+          "quote": "2021年，清华大学计算机系校友余腾带队创立清醒异构",
+          "source_content_hash": "a13785fb3b434348",
+          "quote_hash": "dec5fd509fa867d12ad643249e26f530d7d138bcea80fba70b7497b875203847"
         }
       ],
       "market_regions": [
@@ -31335,6 +31363,40 @@
         "GLOBAL"
       ],
       "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-425391b95df58650",
+      "candidate_kind": "product",
+      "research_name": "RiverONE",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-1067dd040b02ac41"
+      ],
+      "funding_insight_ids": [
+        "FI-c125fd9d45d6b383"
+      ],
+      "source_event_ids": [
+        "EV-589b3b522be5b280"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-735024582f88eccf",
+          "quote": "清醒异构正式发布 量子启发视觉语言模型RiverONE",
+          "source_content_hash": "a13785fb3b434348",
+          "quote_hash": "4e972b28d4e0e5dd41fd823170c90c2f460c1f27de47348d3e277665d6f456e9"
+        },
+        {
+          "source_id": "FISRC-735024582f88eccf",
+          "quote": "其在模型构建阶段使用模拟量子计算生成参数，训练完成后模型在经典GPU上推理，不需要量子计算机实时参与。",
+          "source_content_hash": "a13785fb3b434348",
+          "quote_hash": "1e645a493fd250dc9ef5013f7ffb10162141f4963f24fe7e96b17d423897f4f4"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
     },
     {
       "candidate_id": "FIER-dc2f5dc78a527bbf",

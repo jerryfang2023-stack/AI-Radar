@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-26T00:40:15.617Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3566,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -63,6 +63,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-589b3b522be5b280",
       "EV-ac5e79d96a009ee1",
       "EV-7f9ba35c163b3a90",
       "EV-32beac4380d1b253"
@@ -71,10 +72,11 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-04-30",
-    "lastSeen": "2026-09-12",
+    "lastSeen": "2026-09-26",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-589b3b522be5b280",
         "EV-ac5e79d96a009ee1",
         "EV-7f9ba35c163b3a90",
         "EV-32beac4380d1b253"
@@ -87,6 +89,132 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-589b3b522be5b280",
+        "dataDate": "2026-09-26",
+        "date": "2026-09-24",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "清醒异构完成A+轮融资，三个月两轮融资近亿元",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-1067dd040b02ac41"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-ad3b2247c6ca451e",
+            "fundingInsightId": "FI-c125fd9d45d6b383"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "development_deployment",
+            "name": "开发与部署",
+            "entityIds": [
+              "EN-1067dd040b02ac41"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-db2d22fb6b532c9c",
+            "fundingInsightId": "FI-c125fd9d45d6b383"
+          },
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "models",
+            "name": "模型",
+            "entityIds": [
+              "EN-1067dd040b02ac41"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-e8bf858c83732ba2",
+            "fundingInsightId": "FI-c125fd9d45d6b383"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-1067dd040b02ac41"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-d077b1952109fbd8",
+            "fundingInsightId": "FI-c125fd9d45d6b383"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "data_analysis",
+            "name": "数据分析",
+            "entityIds": [
+              "EN-1067dd040b02ac41"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-995c88ce5ee0b7f3",
+            "fundingInsightId": "FI-c125fd9d45d6b383"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "research_discovery",
+            "name": "科研与发现",
+            "entityIds": [
+              "EN-1067dd040b02ac41"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-e94a2cae57d0eb9c",
+            "fundingInsightId": "FI-c125fd9d45d6b383"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "professional_services",
+            "name": "专业服务",
+            "entityIds": [
+              "EN-1067dd040b02ac41"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-970acd9d6b368a3e",
+            "fundingInsightId": "FI-c125fd9d45d6b383"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-1067dd040b02ac41"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-ef8f65ec7a6ae4fe",
+            "fundingInsightId": "FI-c125fd9d45d6b383"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "researcher",
+            "name": "研究人员",
+            "entityIds": [
+              "EN-1067dd040b02ac41"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-cd188d33ffd73b63",
+            "fundingInsightId": "FI-c125fd9d45d6b383"
+          }
+        ],
+        "entityIds": [
+          "EN-1067dd040b02ac41",
+          "EN-00e2a65939d3e211",
+          "EN-fbfee02fa04929ab"
+        ]
+      },
       {
         "id": "EV-ac5e79d96a009ee1",
         "dataDate": "2026-09-12",

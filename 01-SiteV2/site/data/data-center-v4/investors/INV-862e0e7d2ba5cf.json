@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-26T00:40:15.617Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3566,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -1105,11 +1105,35 @@
           "quote_hash": "4a2f68c042b10690a950656cdd8c8d78ddbacadab8cdf2e8a4566b83347cc5ac"
         }
       ],
-      "last_verified_at": "2026-09-25",
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
+      "last_verified_at": "2026-09-25"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Sequoia Capital 是由 Don Valentine 于 1972 年创立的风险投资机构。其历史资料记载，早期基金投资了 Apple 和 Atari。",
+          "source_hash": "8bee5c2a97ec4e2a130ea37d6ac5e5d33f3bb01900d366e446770079cd4ce790",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-26T00:39:29.138Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[0].description": {
+          "text": "Don Valentine 创立 Sequoia Capital。",
+          "source_hash": "21b74167072f2c30a7111007b57f8bbf9e72f616f497d06335b185bd0660beda",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-26T00:39:29.138Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Sequoia 介绍其首支 300 万美元基金投资了 Apple 和 Atari；后续合作案例包括 Cisco、Google、Instagram、Airbnb 和 Stripe。",
+          "source_hash": "4c744e207c4f664851cd0ab7a07556982c3a00ba65cbe5893319082af2eeda4f",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-26T00:39:29.138Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

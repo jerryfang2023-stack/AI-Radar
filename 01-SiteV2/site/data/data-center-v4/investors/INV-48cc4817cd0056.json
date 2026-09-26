@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-26T00:40:15.617Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3566,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -401,8 +401,35 @@
         }
       ],
       "last_verified_at": "2026-09-25",
-      "profile_type": "unverified",
-      "identity_status": "pending_verification"
+      "profile_type": "organization"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.milestones[0].description": {
+          "text": "Gavin Baker 离开 Fidelity 后创立 Atreides Management。",
+          "source_hash": "a9a1e2e2ceb7ef56957f33f986d6f9c4db528e2d6b33e0639e5c151d050f95d0",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-26T00:39:33.794Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Gavin Baker 的官网履历记载其曾任 Fidelity OTC Portfolio、Select Wireless、Select Telecommunications 和 Select Pharmaceuticals 投资组合经理，并参与 Fidelity 风险投资业务；属于个人过往履历，不代表 Atreides 的基金业绩。",
+          "source_hash": "03d974c7f7955fa9a74450445fdf096d8f331d04110bd40e1eed03a15310646c",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-26T00:39:33.794Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "Atreides Management 官方网站",
+          "source_hash": "e04ff91aa7ef19dd4304e709775f5d8a9c15fceb6aeeba1404ab3605948eb6ae",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-26T00:39:37.357Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

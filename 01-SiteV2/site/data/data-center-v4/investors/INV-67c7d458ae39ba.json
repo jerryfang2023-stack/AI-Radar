@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-26T00:40:15.617Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3566,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -497,8 +497,27 @@
       "coverage_status": "researched",
       "coverage_note": "已核实ICONIQ集团官网身份、业务分支及一般联络方式；AUM为官网自报且未在页面标注统计日期。“Iconiq”融资记录与具体基金/关联公司的匹配仍需逐条验证。",
       "last_verified_at": "2026-09-25",
-      "profile_type": "unverified",
-      "identity_status": "pending_verification"
+      "profile_type": "organization"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.facts[2].label": {
+          "text": "Venture & Growth页面",
+          "source_hash": "4e0b7bb9cdbc715387de6c0c0884dc8b4ef6bf10bb02c65b4e76d8100fed4b6e",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-26T00:39:31.567Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[1].label": {
+          "text": "Venture & Growth业务",
+          "source_hash": "ab77a9f85d5ebf5916dddb8f552fbab3df063d8bd5e666ce36e3d41d4d6c94ae",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-26T00:39:31.567Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

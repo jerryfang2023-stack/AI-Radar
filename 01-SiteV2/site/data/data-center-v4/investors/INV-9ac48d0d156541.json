@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-26T00:40:15.617Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3566,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -377,8 +377,27 @@
           "quote": "Jeff Dean joined Google in 1999 and has held leadership roles driving innovations in Google infrastructure and AI development.",
           "quote_hash": "735ab87e2874c0f3418553ebccf97adbc6788ce371a70d1577bd19f498d14934"
         }
-      ],
-      "identity_status": "verified"
+      ]
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.career[0].description": {
+          "text": "长期参与Google基础设施及AI研究；2026年离开Google并共同创立Discovery Loop。",
+          "source_hash": "8291218bd2b34f2bf9f6de54e741b6c87b9a55298b944581efccba3ddb118486",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-26T00:39:37.358Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Discovery Loop官网将MapReduce、Bigtable、Spanner、TensorFlow、Pathways及TPU等系统和技术列入创始团队的共同成果清单；此为团队自述，并非将每一项单独归于Jeff Dean。",
+          "source_hash": "bb0a0f01a81b1f20542d59607007cc4c427159bd66bc0b69f8401ad205053824",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-26T00:39:37.358Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }
