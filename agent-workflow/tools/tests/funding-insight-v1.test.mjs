@@ -5,6 +5,8 @@ import os from "node:os";
 import path from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
+import Ajv2020 from "ajv/dist/2020.js";
+import addFormats from "ajv-formats";
 import {
   FUNDING_INDUSTRY_IDS,
   FUNDING_INSIGHT_VERSION,
@@ -272,6 +274,26 @@ import {
 } from "../../product/investment-institution-v1.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../..");
+
+test("investment institution schema accepts public profile identity status", () => {
+  const schema = JSON.parse(fs.readFileSync(path.join(root,
+    "agent-workflow/product/investment-institution-v1.schema.json"), "utf8"));
+  const data = JSON.parse(fs.readFileSync(path.join(root,
+    "01-SiteV2/content/11-databases/investment-institutions-v1.json"), "utf8"));
+  const institution = data.institutions.find((item) => item.public_profile);
+  assert.ok(institution, "expected a public investment institution profile fixture");
+  const ajv = new Ajv2020({ allErrors: true, strict: false });
+  addFormats(ajv);
+  const validate = ajv.compile(schema);
+  const fixture = {
+    ...data,
+    institutions: [{
+      ...institution,
+      public_profile: { ...institution.public_profile, identity_status: "verified" },
+    }],
+  };
+  assert.equal(validate(fixture), true, ajv.errorsText(validate.errors));
+});
 
 test("canonical funding amount repairs a truncated K metric from the complete event metric", () => {
   assert.equal(canonicalFundingEventAmount({ metrics: ["$800", "$800,000"] }), "$800,000");
