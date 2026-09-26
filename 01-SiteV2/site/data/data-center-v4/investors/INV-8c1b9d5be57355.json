@@ -138,21 +138,114 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Visible Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Visible Ventures 是一家面向美国和加拿大早期消费类公司的投资机构，重点支持改善新一代人群财富、健康与向上流动机会的企业。团队把商业化增长、商业关系和领导力辅导作为组合支持的三项能力，并设有面向 Gen Z 的顾问网络和校园观察网络。",
+      "coverage_note": "投资主题、早期消费投资范围、团队、公开联系邮箱和组合退出标记均来自 Visible 官方页面。组合页只展示部分公司，退出标记不提供投资成本或回报倍数。Archestra 的 1,000 万美元是公司种子轮总额，Visible Ventures 是参投方之一，不是领投方。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段与地域",
+          "value": "美国和加拿大的早期消费类企业。",
+          "source_id": "visible_pitch"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": [
+            "未来工作与就业",
+            "现代劳动者金融系统",
+            "预防性和个性化医疗健康"
+          ],
+          "source_id": "visible_home"
+        },
+        {
+          "field": "portfolio_support",
+          "label": "组合支持",
+          "value": [
+            "Visible Velocity：商业化与增长支持",
+            "Visible Connections：商业关系和合作引荐",
+            "Visible Leadership：Carolyn Everson 提供创始人领导力辅导"
+          ],
+          "source_id": "visible_home"
+        },
+        {
+          "field": "investment_team",
+          "label": "官网列示核心团队",
+          "value": [
+            "Lori Cashman（Managing Partner）",
+            "Carolyn Everson（Senior Advisor）",
+            "Alex Harris（Head of AI Engineering）",
+            "Molly Sellers（Head of Business Development）"
+          ],
+          "source_id": "visible_team"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Archestra · 种子轮 · 2026-06-02 · 本轮参投 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Visible 官方组合页把 Daily Harvest、Illumix、Mented、Parade 等公司标记为 Exit；网页未披露这些投资的具体回报或实现时间。",
+          "source_id": "visible_portfolio"
+        },
+        {
+          "description": "Archestra.AI 的官方融资公告称其完成 1,000 万美元种子轮，并将 Visible Ventures 列为参投者之一；金额是公司本轮总额，未披露 Visible 的单笔投资。",
           "source_id": "FISRC-08f2020b7eca8380"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Visible Ventures",
+          "url": "https://visibleventures.com/",
+          "source_id": "visible_home"
+        },
+        {
+          "kind": "email",
+          "label": "一般联系",
+          "value": "hello@visibleventures.com",
+          "url": "https://visibleventures.com/",
+          "source_id": "visible_home"
+        },
+        {
+          "kind": "application",
+          "label": "项目提交",
+          "value": "Visible Ventures Pitch Us 表单",
+          "url": "https://visibleventures.com/pitch/",
+          "source_id": "visible_pitch"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "visible_home",
+          "source_url": "https://visibleventures.com/",
+          "source_title": "Home - Visible Ventures",
+          "source_content_hash": "702dc9781701b446e5b3379347e9de2cb4020faa35e1e24f38b29e1c4f6a69b6",
+          "quote": "We invest in companies building better paths to wealth, health, and upward mobility for the generation reshaping the economy.",
+          "quote_hash": "9ddceea7a1f035fbf7fce4baa5308fcc0413c733fb14fd22882189ea8457decf"
+        },
+        {
+          "source_id": "visible_team",
+          "source_url": "https://visibleventures.com/team/",
+          "source_title": "Team - Visible Ventures",
+          "source_content_hash": "1ea8df14cdfd602c1d299b95f7c1530cc79a812b42ca75a0adb63a71b719285a",
+          "quote": "Lori Cashman Managing Partner; Carolyn Everson Senior Advisor; Alex Harris Head of AI Engineering; Molly Sellers Head of Business Development.",
+          "quote_hash": "0e75e46a6db029f1fea08d4845097cfa0b5ca870752b978b6032eecf21a5df69"
+        },
+        {
+          "source_id": "visible_pitch",
+          "source_url": "https://visibleventures.com/pitch/",
+          "source_title": "Pitch Us - Visible Ventures",
+          "source_content_hash": "a4c4e6dec535d956e92bf9e2518c9cd3d758b48478ea00b2d3c48ec8a718276d",
+          "quote": "We invest in early-stage consumer businesses based in the United States and Canada.",
+          "quote_hash": "44cf44086c3d534163d4999afa7d8760ea8a407636ab68217a420186c76b9215"
+        },
+        {
+          "source_id": "visible_portfolio",
+          "source_url": "https://visibleventures.com/portfolio/",
+          "source_title": "Portfolio - Visible Ventures",
+          "source_content_hash": "05a724c0eb9d570d3107286d46972d47a7c79321b4f40602f94859568277b380",
+          "quote": "Daily Harvest — Exit; Illumix — Exit; Mented — Exit; Parade — Exit.",
+          "quote_hash": "437807434b510d4c84d052e9cfc7a2db82d3015bf327f07b05c315793929b669"
+        },
         {
           "source_id": "FISRC-08f2020b7eca8380",
           "source_url": "https://tech.eu/2026/06/02/archestraai-raises-10m-to-unlock-next-gen-agentic-use-case/",
@@ -162,7 +255,10 @@
           "quote_hash": "242a2c1c6a5d17b7fca9f1f4377b04878743c57b2a39fb7652e0efe2293d2966"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-27"
     }
   }
 }

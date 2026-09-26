@@ -137,21 +137,129 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Sapphire Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-02-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Sapphire Ventures 是面向扩张期企业软件公司的全球风险投资机构，现阶段特别强调企业 AI 与已达到产品市场契合度的公司。机构称其通过高确信度投资及运营、市场拓展和领导力支持帮助组合公司成长。官网披露 100 亿美元以上管理规模，并列示多项 IPO 与退出统计。",
+      "coverage_note": "投资策略、办公室和规模数字来自 Sapphire 官方网站，均为机构披露口径；AUM 截止 2026-06-30，IPO 与退出数字统计 Sapphire 直接成长投资策略截至 2025-06 的结果，不等于基金回报率。Nino Marakovic 个人简介中的投资和退出数字属于其个人履历口径。Temporal 的 3 亿美元是公司 D 轮融资总额，Sapphire 被列为参投方。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "扩张期；官网重点描述已实现产品市场契合度的企业软件与企业 AI 公司。",
+          "source_id": "sapphire_home"
+        },
+        {
+          "field": "investment_approach",
+          "label": "支持方式",
+          "value": "以高确信度投资配合市场拓展、运营与领导力支持。",
+          "source_id": "sapphire_home"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "管理规模",
+          "value": "官网披露超过 100 亿美元的 firmwide AUM，截至 2026-06-30；这是监管口径管理规模，不是基金净资产回报。",
+          "source_id": "sapphire_home"
+        },
+        {
+          "field": "investment_team",
+          "label": "投资团队代表成员",
+          "value": [
+            "Nino Marakovic（Partner、CEO）",
+            "Jai Das（Partner、President）",
+            "Rajeev Dham（Partner）",
+            "Cathy Gao（Partner）",
+            "Anders Ranum（Partner）",
+            "Andreas Weiskam（Partner）"
+          ],
+          "source_id": "sapphire_team"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2011",
+          "description": "Nino Marakovic 的官方简介称原 SAP Ventures 团队于 2011 年分拆为独立风险投资机构。",
+          "source_id": "sapphire_nino"
+        },
+        {
+          "date": "2014",
+          "description": "Nino Marakovic 的官方简介称机构于 2014 年更名为 Sapphire Ventures。",
+          "source_id": "sapphire_nino"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Temporal Technologies · D轮 · 2026-02-17 · 本轮参投 · $300 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Sapphire 官网列示其直接成长投资组合累计 30 余家 IPO、80 余项退出，统计期从 2011 年机构成立至 2025 年 6 月；这些是机构披露的组合结果，不代表基金回报率。",
+          "source_id": "sapphire_home"
+        },
+        {
+          "description": "Sapphire CEO Nino Marakovic 的个人简介称，他曾支持 100 多家私营公司和风险投资基金，并与近 40 项 IPO 或并购退出有关；这是个人履历指标，不应与机构基金收益混为一谈。",
+          "source_id": "sapphire_nino"
+        },
+        {
+          "description": "Temporal 官方 D 轮公告列出 Sapphire Ventures 作为参投方；3 亿美元是 Temporal 公司本轮融资总额，未披露 Sapphire 的具体投资额。",
           "source_id": "FISRC-1f69885afd5fc439"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Sapphire Ventures",
+          "url": "https://sapphireventures.com/",
+          "source_id": "sapphire_home"
+        },
+        {
+          "kind": "address",
+          "label": "奥斯汀办公室",
+          "value": "801 W. 5th St., Ste 100, Austin, TX 78703, USA",
+          "url": "https://sapphireventures.com/team/",
+          "source_id": "sapphire_team"
+        },
+        {
+          "kind": "address",
+          "label": "旧金山办公室",
+          "value": "439 Bryant St, San Francisco, CA 94107, USA",
+          "url": "https://sapphireventures.com/team/",
+          "source_id": "sapphire_team"
+        },
+        {
+          "kind": "address",
+          "label": "门洛帕克办公室",
+          "value": "556 Santa Cruz Avenue, Ste. 200, Menlo Park, CA 94025, USA",
+          "url": "https://sapphireventures.com/team/",
+          "source_id": "sapphire_team"
+        },
+        {
+          "kind": "address",
+          "label": "伦敦办公室",
+          "value": "Mortimer House, 37-41 Mortimer Street, London, W1T 3JH",
+          "url": "https://sapphireventures.com/team/",
+          "source_id": "sapphire_team"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "sapphire_home",
+          "source_url": "https://sapphireventures.com/",
+          "source_title": "Sapphire Ventures | Enterprise AI VC",
+          "source_content_hash": "b1afce35b337d30002a44eb453d6244ebe8653000bfa44adf2557e0f59de8135",
+          "quote": "With more than 15 years of experience and over $10B in AUM, we invest with high conviction in a select number of post–product-market fit companies.",
+          "quote_hash": "5fe470967f8a6afff1fe34e9d664a6ab946c50793a255e10c78884beb2c2b085"
+        },
+        {
+          "source_id": "sapphire_team",
+          "source_url": "https://sapphireventures.com/team/",
+          "source_title": "Sapphire Ventures | Team",
+          "source_content_hash": "93a8409b4f522722673100d80c4b0e7b2f8e46531802c6f47d1470d9bf2d055c",
+          "quote": "Nino Marakovic Partner, CEO; Jai Das Partner, President; Rajeev Dham Partner; Cathy Gao Partner; Anders Ranum Partner; Andreas Weiskam Partner.",
+          "quote_hash": "213d1dc6782e3a493620469ad6151b071a5727ef18223d7c9d3dc9711a2ddc62"
+        },
+        {
+          "source_id": "sapphire_nino",
+          "source_url": "https://sapphireventures.com/team-member/nino-marakovic/",
+          "source_title": "Nino Marakovic | Sapphire Ventures",
+          "source_content_hash": "12dee48a93ba254242158fe915e1845d52c9f1a680130566401922a94b862ec0",
+          "quote": "In his 25 years of experience in investing and operating, Nino has backed more than 100 private companies and venture capital funds.",
+          "quote_hash": "3f1862c457d242bd780f89cfb02804027cb5659e6f6fdd2dee4031a3bb6724bc"
+        },
         {
           "source_id": "FISRC-1f69885afd5fc439",
           "source_url": "https://temporal.io/news/temporal-raises-300M-to-make-agentic-ai-real-for-companies",
@@ -161,7 +269,10 @@
           "quote_hash": "f8895a4709c47713dd1fc7e34361c9667b799054daba0bdb9f754386e07608f7"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-27"
     }
   }
 }

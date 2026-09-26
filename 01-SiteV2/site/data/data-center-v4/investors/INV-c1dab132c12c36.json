@@ -130,21 +130,104 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Shunwei Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-01-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Shunwei Capital（顺为资本）是 2011 年成立的早期至成长期风险投资机构，官网将其定位为投资颠覆性商业模式，并覆盖深科技、智能制造、互联网+、消费、企业服务和电动汽车生态。机构以资本、经验和创业者合作为公开主张，投资组合包括小米、九号公司、石头科技、小鹏汽车等。",
+      "coverage_note": "投资策略和联系方式来自顺为官网。2022 年官方文章称当时双币基金管理规模超过人民币 380 亿元，并列出部分代表性组合企业；该规模是 2022 年历史披露，不作为当前 AUM。StepFun 的融资来源文章把顺为列为第二轮较广投资人群中的一员；50 亿元是公司融资口径，具体轮次映射及顺为单笔投资额未由该来源确认。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2011 年；来自机构 2022 年官方文章。",
+          "source_id": "shunwei_history"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期至成长期，侧重颠覆性商业模式与科技创新。",
+          "source_id": "shunwei_strategy"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": [
+            "深科技",
+            "智能制造",
+            "互联网+",
+            "消费",
+            "企业服务",
+            "电动汽车生态"
+          ],
+          "source_id": "shunwei_strategy"
+        },
+        {
+          "field": "historical_aum",
+          "label": "历史管理规模披露",
+          "value": "2022 年官方文章称双币基金管理规模超过人民币 380 亿元；不是当前规模数据。",
+          "source_id": "shunwei_history"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2011",
+          "description": "顺为官方文章记载机构创立于 2011 年。",
+          "source_id": "shunwei_history"
+        },
+        {
+          "date": "2022-02-23",
+          "description": "启动总规模人民币 10 亿元的“顺为探索计划”，聚焦先进制造、前沿计算、双碳科技与生命科学。",
+          "source_id": "shunwei_history"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：StepFun · B+轮 · 2026-01-26 · 第二轮投资方 · 50 亿人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "顺为 2022 年官方文章列出小米、九号公司、石头科技、追觅科技、小鹏汽车和蔚来汽车等投资组合案例；这是选择性案例展示，不代表完整投资组合或投资回报率。",
+          "source_id": "shunwei_history"
+        },
+        {
+          "description": "KR-Asia 报道称顺为在 StepFun 第二轮较广的投资人群体中；数据库记录的 50 亿元对应公司融资口径，现有资料未确认顺为的单笔出资，也未完全解决其与 B+ 轮记录的时间映射。",
           "source_id": "FISRC-e424026c5a172d4b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Shunwei Capital / 顺为资本",
+          "url": "https://en.shunwei.com/",
+          "source_id": "shunwei_en"
+        },
+        {
+          "kind": "phone",
+          "label": "办公室电话",
+          "value": "(010) 85315100",
+          "url": "https://en.shunwei.com/",
+          "source_id": "shunwei_en"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "shunwei_en",
+          "source_url": "https://en.shunwei.com/",
+          "source_title": "Shunwei",
+          "source_content_hash": "dbaaab86b8afc86e3c323ea2fa0cf5a56441c0991a4e8a906dfa5d20b5b64514",
+          "quote": "With the aid of capital and experiences, we hope to partner with entrepreneurs to transform their ideas into world-leading enterprises.",
+          "quote_hash": "6c7572ff1766ee4cfd91767db1e0c757730c80c100fd05f443221c255428588d"
+        },
+        {
+          "source_id": "shunwei_strategy",
+          "source_url": "https://en.shunwei.com/portfolio",
+          "source_title": "Portfolio – Shunwei",
+          "source_content_hash": "10021b16d90cb2206a105384f67c0f38b84143f6ddc80f9ade7e0eb13e044d02",
+          "quote": "Shunwei Capital is a premier venture capital firm specializing in early to growth stage investments in disruptive business models.",
+          "quote_hash": "58e4baf887bcf98efb2a953bb0a2f66dde9e6383c134ad4571b4628eabc073aa"
+        },
+        {
+          "source_id": "shunwei_history",
+          "source_url": "https://shunwei.com/news/2095",
+          "source_title": "顺为资本前瞻性启动“顺为探索计划”",
+          "source_content_hash": "6b0da317a70fb4883dcffe64031fadf187d303d15d05892ab8d2ec9cb4adcb12",
+          "quote": "顺为资本创立于 2011 年，目前管理超过 380 亿人民币规模的美元和人民币双币基金。",
+          "quote_hash": "5e0860bcd148bf819137d786e908a1d5dad1be22e6eb82d5e744774e573a5b43"
+        },
         {
           "source_id": "FISRC-e424026c5a172d4b",
           "source_url": "https://kr-asia.com/as-ai-consolidates-what-makes-stepfun-worth-a-rmb-5-billion-raise",
@@ -154,7 +237,10 @@
           "quote_hash": "55d6169a15272cb1e4086e5aadba12e3d1ea72a411092f0bbd969ee15b8c6d5b"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-27"
     }
   }
 }

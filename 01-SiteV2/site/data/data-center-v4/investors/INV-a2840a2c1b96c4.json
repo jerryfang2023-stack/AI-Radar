@@ -137,21 +137,99 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Version One Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Version One Ventures 是一家投资北美早期创业公司的风险投资机构，公开简介称其十余年来投资了 100 多家公司，重点寻找在新兴领域创造新市场的使命驱动型创始人。创始合伙人 Boris Wertz 曾创业并运营被 AbeBooks 收购的线上书籍市场；合伙人 Angela Tran 具工程训练背景，曾参与创办 Insight Data Science。",
+      "coverage_note": "投资策略、团队背景与联系方式来自 Version One 官方人物页和联系页。Boris Wertz 的创业经历及 Angela Tran 的博士学历均按机构个人简介表述。Mowito 的 300 万美元是公司预种子轮总融资额，Version One 领投；机构没有披露单笔金额。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "北美早期阶段，官网称支持使命驱动、开创新市场的创业者。",
+          "source_id": "versionone_people"
+        },
+        {
+          "field": "portfolio_scale",
+          "label": "公开投资规模",
+          "value": "人物页介绍称十余年来投资 100 多家公司；为机构官网自述的累计数量。",
+          "source_id": "versionone_people"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网列示关注领域",
+          "value": [
+            "人工智能",
+            "深科技",
+            "机器人",
+            "气候与能源",
+            "生物与健康",
+            "开发者工具",
+            "企业软件"
+          ],
+          "source_id": "versionone_people"
+        },
+        {
+          "field": "leadership",
+          "label": "合伙人",
+          "value": [
+            "Boris Wertz（Founding Partner；曾创办并运营 AbeBooks 收购的线上书籍市场）",
+            "Angela Tran（General Partner；工程师背景，曾共同创办 Insight Data Science）"
+          ],
+          "source_id": "versionone_people"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Mowito · 预种子轮 · 2026-07-07 · 本轮领投 · $3M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Version One 宣布领投 Mowito 的 300 万美元预种子轮，面向制造业机械臂的 Physical AI；300 万美元是公司本轮融资总额，机构具体投资额未披露。",
           "source_id": "FISRC-5667d54cc3421916"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Version One Ventures",
+          "url": "https://versionone.ventures/",
+          "source_id": "versionone_people"
+        },
+        {
+          "kind": "application",
+          "label": "创始人联系建议",
+          "value": "官网建议通过熟悉的创业者或已投创始人建立可信引荐，并说明不接受直接发送商业计划书。",
+          "url": "https://versionone.vc/contact-us/",
+          "source_id": "versionone_contact"
+        },
+        {
+          "kind": "address",
+          "label": "旧金山办公室",
+          "value": "San Francisco, California, USA",
+          "url": "https://versionone.vc/contact-us/",
+          "source_id": "versionone_contact"
+        },
+        {
+          "kind": "address",
+          "label": "温哥华办公室",
+          "value": "Vancouver, British Columbia, Canada",
+          "url": "https://versionone.vc/contact-us/",
+          "source_id": "versionone_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "versionone_people",
+          "source_url": "https://versionone.ventures/people/",
+          "source_title": "People - Version One Ventures",
+          "source_content_hash": "045d10f91584e1d9db0b0aca651d932f54533893b760b5a814f1994b0251a11a",
+          "quote": "Boris is the founding partner of Version One. Angela Tran is a General Partner at Version One.",
+          "quote_hash": "d3d68594465741d343dc39a27e9bd77da22a462f23d16f94b5910bc6709a6cb9"
+        },
+        {
+          "source_id": "versionone_contact",
+          "source_url": "https://versionone.vc/contact-us/",
+          "source_title": "Contact - Version One Ventures",
+          "source_content_hash": "84524ae50b70fbd7e09b281e5298e616f3f018ef81d0f3631f3afe13c014a016",
+          "quote": "The best way to get in touch is through people who we know and trust.",
+          "quote_hash": "09486b1d041b4150cdae7eb3d33af6a06e99b45bd356d0ef4581098f184bac8d"
+        },
         {
           "source_id": "FISRC-5667d54cc3421916",
           "source_url": "https://versionone.vc/announcing-our-investment-in-mowito-physical-ai-for-robot-arms-in-manufacturing/",
@@ -161,7 +239,10 @@
           "quote_hash": "5e3fddb2479206d9932c06f4dd61cf5405a53cb0c1e18d73030bfe63a91032e1"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-27"
     }
   }
 }
