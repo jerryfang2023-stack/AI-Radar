@@ -162940,19 +162940,115 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Canaan Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "coverage_note": "数据库名称仍为Canaan Partners，机构当前官网品牌使用Canaan。基金规模、上市及并购统计均为机构官网披露口径；机构由多个独立基金法律实体组成。Actualyze AI的700万美元为公司种子轮总额。",
+        "summary": "Canaan（数据库历史名称：Canaan Partners）是一家独立风险投资机构，官网称其拥有近四十年投资历史，覆盖从基础科学到技术商业化的创业项目。官网强调与创始人长期合作、按行业经验提供策略和运营支持，并披露累计通过13期基金募集约70亿美元、投资组合产生73起IPO与152起并购案例。",
+        "facts": [
+          {
+            "field": "current_brand",
+            "label": "官网当前品牌",
+            "value": "Canaan；数据库保留历史名称Canaan Partners以对应既有融资记录。",
+            "source_id": "canaan_about"
+          },
+          {
+            "field": "investment_focus",
+            "label": "投资领域",
+            "value": "早期科技与医疗健康，覆盖基础科学、深科技、网络安全和人工智能等方向。",
+            "source_id": "canaan_companies"
+          },
+          {
+            "field": "investment_approach",
+            "label": "创始人支持方式",
+            "value": "官网强调长期、个性化合作，并调动整个团队提供招聘、运营建议和行业网络。",
+            "source_id": "canaan_about"
+          },
+          {
+            "field": "fundraising_history",
+            "label": "机构披露基金募集",
+            "value": "官网列示约70亿美元、13期基金。",
+            "source_id": "canaan_about"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：Actualyze AI · 种子轮 · 2026-08-03 · 本轮参投 · $7 million。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "官网介绍页披露73起IPO及152起并购案例；这些是机构公开的组合统计，不是单只基金回报数据。",
+            "source_id": "canaan_about"
+          },
+          {
+            "description": "Actualyze AI种子轮新闻稿称其获700万美元融资，投资方包括Canaan Partners；轮次总额并非该机构的单笔投资额。",
             "source_id": "FISRC-7d5911b83ac40a4d"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "Canaan",
+            "url": "https://www.canaan.com/",
+            "source_id": "canaan_about"
+          },
+          {
+            "kind": "email",
+            "label": "一般咨询",
+            "value": "hello@canaan.com",
+            "url": "https://www.canaan.com/contact",
+            "source_id": "canaan_contact"
+          },
+          {
+            "kind": "address",
+            "label": "康涅狄格州办公室",
+            "value": "700 Fairfield Avenue, Suite 1, Stamford, CT 06902, USA",
+            "url": "https://www.canaan.com/contact",
+            "source_id": "canaan_contact"
+          },
+          {
+            "kind": "phone",
+            "label": "康涅狄格州办公室电话",
+            "value": "+1 203-855-0400",
+            "url": "https://www.canaan.com/contact",
+            "source_id": "canaan_contact"
+          },
+          {
+            "kind": "address",
+            "label": "Menlo Park办公室",
+            "value": "855 Oak Grove, Suite 201, Menlo Park, CA 94025, USA",
+            "url": "https://www.canaan.com/contact",
+            "source_id": "canaan_contact"
+          },
+          {
+            "kind": "phone",
+            "label": "Menlo Park办公室电话",
+            "value": "+1 650-854-8092",
+            "url": "https://www.canaan.com/contact",
+            "source_id": "canaan_contact"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "canaan_about",
+            "source_url": "https://www.canaan.com/about",
+            "source_title": "About - Canaan",
+            "source_content_hash": "7b01c950bb01797115001532b23a969ea99b913850fef69fcc68ed61241b45b3",
+            "quote": "Nearly four decades of independent thinking, strong convictions, and showing up when it matters.",
+            "quote_hash": "18926c2d3b97837878478f9b44a6e3e44a64150309b0f394120d086bcb1c4f8d"
+          },
+          {
+            "source_id": "canaan_companies",
+            "source_url": "https://www.canaan.com/companies",
+            "source_title": "Companies - Canaan",
+            "source_content_hash": "66c9908bd801d79fabf31f0d51fa94917ffad87eea03688711354800627931cc",
+            "quote": "From fundamental science to transformative technology, we back founders shaping everyday life.",
+            "quote_hash": "4a6eab9fc1ae15a510df47259180a1c12a03c11d8d2f3261b90bd7cfb55c36c1"
+          },
+          {
+            "source_id": "canaan_contact",
+            "source_url": "https://www.canaan.com/contact",
+            "source_title": "Contact - Canaan",
+            "source_content_hash": "ae229ff3cc6db68877b502763e5c9c984dfd18e326be02c24fce31f436d41c20",
+            "quote": "General Inquiries hello@canaan.com. Connecticut: 700 Fairfield Avenue, Suite 1, Stamford, CT 06902. T: 203.855.0400. Menlo Park: 855 Oak Grove, Suite 201, Menlo Park, CA 94025. T: 650.854.8092",
+            "quote_hash": "2cfef4d25bc526c4ab01c3e90532e21a45a63ba9c28fa3afb2576dc61b207d31"
+          },
           {
             "source_id": "FISRC-7d5911b83ac40a4d",
             "source_url": "https://www.prnewswire.com/news-releases/actualyze-ai-emerges-from-stealth-with-7m-seed-round-to-deliver-enterprises-one-platform-for-every-ai-request-302840716.html",
@@ -162962,7 +163058,7 @@
             "quote_hash": "69cbee4b0d08b8459255ff8e36ce3e5276eb038abeb04a605510eef96a35dad6"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -167571,19 +167667,121 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Bullhound Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "coverage_note": "官方公告说明Bullhound Capital是GP Bullhound投资管理业务的独立品牌和法律实体，但仍与其共同拥有、紧密协同。管理规模、历史投资与组合案例为机构公开口径；Multiverse Computing的5.7亿美元/5亿欧元是公司C轮融资目标总额，不代表Bullhound Capital单笔支票。",
+        "summary": "Bullhound Capital 是科技投资机构，作为GP Bullhound投资管理业务以独立品牌和法律实体运营；双方仍为共同拥有且保持协同。官方材料称其累计投资超过10亿欧元、管理规模超过10亿欧元，投资组合案例包括Spotify、Klarna、Revolut、Slack、Unity、EcoVadis、Whoop、Q-CTRL与LeoLabs。公开的管理合伙人包括Per Roman、Hugh Campbell和Manish Madhvani。",
+        "facts": [
+          {
+            "field": "organization_structure",
+            "label": "与GP Bullhound的关系",
+            "value": "投资管理业务自2025年起使用独立品牌和法律实体Bullhound Capital；两家仍共同拥有并保持协同。",
+            "source_id": "bullhound_launch"
+          },
+          {
+            "field": "investment_focus",
+            "label": "投资方向",
+            "value": "科技公司，官方材料特别提及人工智能、量子、深科技及欧洲科技企业。",
+            "source_id": "bullhound_dual"
+          },
+          {
+            "field": "assets_under_management",
+            "label": "机构披露的管理规模",
+            "value": "超过10亿欧元（机构2025年公开材料口径）。",
+            "source_id": "bullhound_dual"
+          },
+          {
+            "field": "leadership",
+            "label": "创始管理合伙人",
+            "value": [
+              "Per Roman",
+              "Hugh Campbell",
+              "Manish Madhvani"
+            ],
+            "source_id": "bullhound_launch"
+          },
+          {
+            "field": "portfolio_examples",
+            "label": "官网案例",
+            "value": [
+              "Spotify",
+              "Klarna",
+              "Revolut",
+              "Slack",
+              "Unity",
+              "EcoVadis",
+              "Whoop",
+              "Q-CTRL",
+              "LeoLabs"
+            ],
+            "source_id": "bullhound_launch"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2025-04-22",
+            "description": "GP Bullhound宣布其投资管理业务以Bullhound Capital独立品牌和法律实体运营。",
+            "source_id": "bullhound_launch"
+          }
+        ],
         "track_record": [
           {
-            "description": "融资来源记录：Multiverse Computing · C轮 · 2026-07-27 · 本轮联合领投 · $570 million (€500M)。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "机构在品牌公告中称累计投资超过10亿欧元，并列出Spotify、Klarna、Revolut、Slack与Unity等投资案例；该口径不是基金回报率。",
+            "source_id": "bullhound_launch"
+          },
+          {
+            "description": "Multiverse Computing公告称其5亿欧元C轮融资目标由Bullhound Capital等机构联合领投；轮次总额不是Bullhound单笔投资额。",
             "source_id": "FISRC-fa5aeddf845d651b"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "Bullhound Capital官方网站",
+            "value": "Bullhound Capital",
+            "url": "https://bullhoundcapital.com/",
+            "source_id": "bullhound_home"
+          },
+          {
+            "kind": "email",
+            "label": "公开合伙人联系渠道（Jonathan Sibilia）",
+            "value": "jonathan.sibilia@bullhound.com",
+            "url": "https://bullhoundcapital.com/articles/bullhound-capital-welcomes-jonathan-sibilia-as-partner/",
+            "source_id": "bullhound_partner"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "bullhound_home",
+            "source_url": "https://bullhoundcapital.com/",
+            "source_title": "Bullhound Capital - Building with founders",
+            "source_content_hash": "84e76b57d30bd8d1a4d85d20019d1dc0ebcc785dba492507ab6fb919fc166e05",
+            "quote": "Bullhound Capital",
+            "quote_hash": "99e0ef0b104051de68109dd8a713abb01b3e90792d72a685e7b2759e2eb4d03b"
+          },
+          {
+            "source_id": "bullhound_launch",
+            "source_url": "https://www.gpbullhound.com/articles/introducing-our-next-chapter-meet-bullhound-capital/",
+            "source_title": "Introducing Our Next Chapter: Meet Bullhound Capital - GP Bullhound",
+            "source_content_hash": "7e8796e4132b5ce5e11d142eb1ac7094ebb0ea3dbcbf68ae33cf97f058ebdac3",
+            "quote": "Bullhound Capital has already invested over €1 billion in category-leading technology companies. The small team has built a successful track record with investments in global leaders such as Spotify, Klarna, Revolut, Slack, and Unity.",
+            "quote_hash": "26c842ae31832a0f9c6b0122dd79841710e27ee44bcb5ff25d58ce44ef7ddb7d"
+          },
+          {
+            "source_id": "bullhound_dual",
+            "source_url": "https://www.gpbullhound.com/articles/dual-is-deep-tech-expertise-the-key-to-european-sovereignty/",
+            "source_title": "Dual: Is Deep Tech Expertise the Key to European Sovereignty? - GP Bullhound",
+            "source_content_hash": "9197022be7bb45e54ce6d86bd743da153ce4cc7aebed6c33a48e6dac16197b52",
+            "quote": "With over €1 billion under management and 25 years of performance, it has invested in global leaders like Spotify, Klarna, Revolut, Slack, Unity, Connex.ai and EcoVadis.",
+            "quote_hash": "86e9fc158aaa24c09dbe5f3f25833c3129fb7df0d59101af7006d96bf1cd3db1"
+          },
+          {
+            "source_id": "bullhound_partner",
+            "source_url": "https://bullhoundcapital.com/articles/bullhound-capital-welcomes-jonathan-sibilia-as-partner/",
+            "source_title": "Bullhound Capital Welcomes Jonathan Sibilia as Partner - Bullhound Capital",
+            "source_content_hash": "bdb541c19432b1b9f9b7f05f8f1e6c38b35c4c8d311db2e586d5e65c4d4482ab",
+            "quote": "For inquiries, please contact: Jonathan Sibilia, Partner at jonathan.sibilia@bullhound.com",
+            "quote_hash": "525fe97cd24f267b1ee7af4ee8ea5e1ae2e1ed298ff24e3878a3e4f4a37e386a"
+          },
           {
             "source_id": "FISRC-fa5aeddf845d651b",
             "source_url": "https://www.globenewswire.com/news-release/2026/07/27/3333282/0/en/Multiverse-Computing-Announces-Series-C-Fundraising-Targeting-up-to-570M-500M-to-Power-Efficient-AI-from-Edge-to-Cloud.html",
@@ -167593,7 +167791,7 @@
             "quote_hash": "8e85acd628b7f9917626d1564bf68dc436dcb460a29e0a465c331a2feb341ac1"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -202848,19 +203046,113 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Chiratae Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "coverage_note": "机构规模、投资组合和团队情况均按Chiratae官网自述记录；官网不同页面的组合数可能随更新时间变化，本档案引用About页面的145+ investments口径。ContraVault AI的310万美元为公司Pre-A轮总额，不等于Chiratae单笔投资金额。",
+        "summary": "Chiratae Ventures 是印度本土科技风险投资机构，官网称其管理规模约14亿美元、覆盖七只基金，并披露145+项投资、89起退出、6家IPO及8家独角兽。投资主题包括移动科技、SaaS、消费与电商、教育、医疗、气候、金融、农业、B2B和深科技。创始人Sudhir Sethi与TC Meenakshisundaram分别担任Founder & Chairman、Founder & Vice Chairman。",
+        "facts": [
+          {
+            "field": "assets_under_management",
+            "label": "官网披露管理规模",
+            "value": "约14亿美元、覆盖7只基金；官网页面使用AUM口径。",
+            "source_id": "chiratae_about"
+          },
+          {
+            "field": "investment_focus",
+            "label": "投资领域",
+            "value": [
+              "移动科技",
+              "SaaS",
+              "消费科技",
+              "教育科技",
+              "医疗科技",
+              "气候科技",
+              "金融科技",
+              "农业科技",
+              "B2B",
+              "深科技"
+            ],
+            "source_id": "chiratae_about"
+          },
+          {
+            "field": "leadership",
+            "label": "创始人和董事长",
+            "value": "Sudhir Sethi；联合创始人兼副董事长为TC Meenakshisundaram。",
+            "source_id": "chiratae_team"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：ContraVault AI · Pre-A轮 · 2026-06-17 · 本轮领投 · $3.1 million。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "About页面披露145+项投资、89起退出、6家IPO及8家独角兽，均为机构官网统计口径，不代表基金净回报。",
+            "source_id": "chiratae_about"
+          },
+          {
+            "description": "公开融资报道显示，ContraVault AI的310万美元Pre-A轮由Chiratae Ventures领投；金额为公司融资总额。",
             "source_id": "FISRC-78278ca61a2d245e"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "Chiratae Ventures",
+            "url": "https://www.chiratae.com/about-us/",
+            "source_id": "chiratae_about"
+          },
+          {
+            "kind": "email",
+            "label": "一般咨询及投资支持",
+            "value": "contact@chiratae.com",
+            "url": "https://www.chiratae.com/contact/",
+            "source_id": "chiratae_contact"
+          },
+          {
+            "kind": "email",
+            "label": "媒体联系",
+            "value": "tanvi@chiratae.com",
+            "url": "https://www.chiratae.com/contact/",
+            "source_id": "chiratae_contact"
+          },
+          {
+            "kind": "phone",
+            "label": "Bengaluru办公室",
+            "value": "+91 80 4043 4836",
+            "url": "https://www.chiratae.com/contact/",
+            "source_id": "chiratae_contact"
+          },
+          {
+            "kind": "address",
+            "label": "Bengaluru办公室",
+            "value": "3rd Floor (A and B Wing), Sobha Pearl 1, Commissariat Road, Bengaluru, Karnataka 560025, India",
+            "url": "https://www.chiratae.com/contact/",
+            "source_id": "chiratae_contact"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "chiratae_about",
+            "source_url": "https://www.chiratae.com/about-us/",
+            "source_title": "About-us - Chiratae Ventures",
+            "source_content_hash": "24cafdc005f8ee04666ea93bb308745c35cf9df12488d848b1a6b0e7034cca80",
+            "quote": "20 Years In existence. $1.4 Billion AUM. 7 Funds. 145+ Investments. 89 Exits. 6 IPOs. 8 Unicorns.",
+            "quote_hash": "9992c7e96ba9523033ad211e430728a958dcb56ea61250c881e2825e0b3c6cf4"
+          },
+          {
+            "source_id": "chiratae_team",
+            "source_url": "https://www.chiratae.com/team/",
+            "source_title": "Team - Chiratae Ventures",
+            "source_content_hash": "4ad807b92119418b66bf3731771c94ec9a87094644287611c47447093c7279f9",
+            "quote": "Sudhir Sethi Founder & Chairman. TC Meenakshisundaram Founder & Vice Chairman.",
+            "quote_hash": "90b7723ee538a76521816652f718745c59a0fb4a6fb98dd57951c40b028ffeaf"
+          },
+          {
+            "source_id": "chiratae_contact",
+            "source_url": "https://www.chiratae.com/contact/",
+            "source_title": "Contact - Chiratae Ventures",
+            "source_content_hash": "7f361a280c019b0642f2f9d625fe5908e76e893a8c2528bf61364454a21fbae6",
+            "quote": "For general queries, contact us at contact@chiratae.com. Bengaluru: 3rd Floor (A and B Wing), Sobha Pearl 1, Commissariat Road, Bengaluru, Karnataka-560025. 080 4043 4836.",
+            "quote_hash": "5f57eec4a15cf79ad7baa3cc8989c9ccd0de418cc2b45fda1e04c417a91782b2"
+          },
           {
             "source_id": "FISRC-78278ca61a2d245e",
             "source_url": "https://startupsunion.com/contravault-ai-raises-3-1m-pre-series-a-to-revolutionize-procurement-intelligence/",
@@ -202870,7 +203162,7 @@
             "quote_hash": "b78361dd895764b35243b2678602a8fc30e72368c8f72c55514725d378c8f528"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -221020,19 +221312,71 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "B37 Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "coverage_note": "B37官网披露其位于旧金山，基金资本来自多个全球企业，并通过企业Champions网络协助创业公司验证产品市场匹配与商业化。Graphon AI的830万美元为公司种子轮总额，公开资料称B37参投但未披露该机构单笔金额。",
+        "summary": "B37 Ventures 是一家总部位于旧金山的早期风险投资机构，基金资金来自多个全球企业。其策略将早期投资与企业客户验证结合，通过Corporate Champions网络帮助创业公司接触潜在客户、验证产品市场匹配和企业销售路径。官网列示管理合伙人Rodrigo Sánchez Servitje与David Hite，投资领域包括企业SaaS、地球健康、物流交通、数据、金融和工程生物学等。",
+        "facts": [
+          {
+            "field": "headquarters",
+            "label": "总部",
+            "value": "旧金山。",
+            "source_id": "b37_about"
+          },
+          {
+            "field": "investment_focus",
+            "label": "投资阶段与领域",
+            "value": "早期科技公司，包括企业SaaS、Planetary Health、物流与交通、仓储、数据、金融和工程生物学。",
+            "source_id": "b37_about"
+          },
+          {
+            "field": "value_add",
+            "label": "企业商业化支持",
+            "value": "通过企业Corporate Champions网络提供潜在客户接触和产品市场匹配验证。",
+            "source_id": "b37_about"
+          },
+          {
+            "field": "leadership",
+            "label": "管理团队",
+            "value": [
+              "Rodrigo Sánchez Servitje（Managing Partner）",
+              "David Hite（Managing Partner）",
+              "Santiago Sánchez Badía（Partner）"
+            ],
+            "source_id": "b37_about"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：Graphon AI · 种子轮 · 2026-05-14 · 本轮参投 · $8.3 million。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "Graphon AI公布830万美元种子轮并列出B37 Ventures为参投方；轮次总额属于公司融资总额，未披露B37单笔支票。",
             "source_id": "FISRC-4c5668270b4cb456"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "B37 Ventures",
+            "url": "https://b37.vc/about/",
+            "source_id": "b37_about"
+          },
+          {
+            "kind": "address",
+            "label": "旧金山办公室",
+            "value": "315 Montgomery Street, Suite 900, San Francisco, CA 94104, USA",
+            "url": "https://b37.vc/about/",
+            "source_id": "b37_about"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "b37_about",
+            "source_url": "https://b37.vc/about/",
+            "source_title": "Venture Capital Innovation & Scale | B37",
+            "source_content_hash": "728efad4363bda0b5069104f6ed53d09a0377b92b0b5172046d47d7e86f6acc6",
+            "quote": "We’re a venture capital firm based in San Francisco. Our venture funds are fueled with capital from multiple global corporations. We invest in early-stage startups in technology sectors including Enterprise SaaS, Planetary Health, Logistics & Transportation, Warehouse & Logistics, Data, Finance, and Engineered Biology.",
+            "quote_hash": "517107449d09b53c753e0f2411b3215e3ed2f28adb121b9d8ab36622515a8ed0"
+          },
           {
             "source_id": "FISRC-4c5668270b4cb456",
             "source_url": "https://www.morningstar.com/news/business-wire/20260514783447/former-amazon-meta-scientists-unveil-graphon-ai-the-first-pre-model-intelligence-layer-with-83m-in-seed-funding",
@@ -221042,7 +221386,7 @@
             "quote_hash": "4776f530dc2b58ec2e3e8e4ea8b2e0fcafc9e2b62c79a44db8bd79ad1666a651"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -240106,19 +240450,88 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Brighton Park Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "coverage_note": "本档案依据Brighton Park Capital官网、团队页及Oro Labs融资报道。投资策略、顾问及运营资源是机构官网自述；Oro Labs的1亿美元是其C轮融资总额，不等于Brighton Park Capital单笔投资金额。",
+        "summary": "Brighton Park Capital（BPC）是一家专注企业软件与科技公司的成长股权投资机构，强调与创始团队建立长期合作，并提供产品创新、增长、人才、国际扩张和企业发展支持。官网列示创始人兼管理合伙人Mark F. Dzialga，并设有投资团队、公司运营基础设施以及独立的资深顾问网络。",
+        "facts": [
+          {
+            "field": "investment_focus",
+            "label": "投资方向",
+            "value": "成长股权投资，面向具有创新或颠覆性技术的创业者主导型公司。",
+            "source_id": "bpc_home"
+          },
+          {
+            "field": "investment_approach",
+            "label": "投资方式",
+            "value": "官网称每年只选择少数公司，并提供产品创新、增长、人才、国际拓展、运营和企业发展支持。",
+            "source_id": "bpc_approach"
+          },
+          {
+            "field": "leadership",
+            "label": "创始人兼管理合伙人",
+            "value": "Mark F. Dzialga。官网将Senior Advisors和Tech Advisors单独列示，不应与投资团队职位混为一谈。",
+            "source_id": "bpc_team"
+          },
+          {
+            "field": "offices",
+            "label": "官网列示地点",
+            "value": [
+              "纽约",
+              "伦敦",
+              "旧金山",
+              "格林尼治"
+            ],
+            "source_id": "bpc_home"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：Oro Labs · C轮 · 2026-03-12 · 本轮领投 · $100 million。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "融资报道显示，Oro Labs宣布完成1亿美元C轮融资，由Goldman Sachs Growth Equity与Brighton Park Capital领投；该金额为公司轮次总额。",
             "source_id": "FISRC-1347e63f3abd5d34"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "Brighton Park Capital",
+            "url": "https://www.bpc.com/",
+            "source_id": "bpc_home"
+          },
+          {
+            "kind": "application",
+            "label": "联系投资团队",
+            "value": "通过官网联系入口提交咨询。",
+            "url": "https://www.bpc.com/team",
+            "source_id": "bpc_team"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "bpc_home",
+            "source_url": "https://www.bpc.com/",
+            "source_title": "Brighton Park Capital | BPC | Home",
+            "source_content_hash": "a8f09925fe978bc3744aea4d96b486f92b84dd05bf725ff50be8a20dd48a7e39",
+            "quote": "Brighton Park Capital is growth equity reimagined. With unique experience and unshakeable empathy, we invest in entrepreneur inspired companies providing innovative and disruptive technology.",
+            "quote_hash": "74456f83e97a9c673e11f85e6ed1303b2b08545d51124271d5bc8286f12bfa06"
+          },
+          {
+            "source_id": "bpc_approach",
+            "source_url": "https://www.bpc.com/approach",
+            "source_title": "Brighton Park Capital | BPC | Approach",
+            "source_content_hash": "7ef304d19ed0ac199dbc4ad144903bb88b346e0493f2bee91b49e9ab16604b8e",
+            "quote": "A commitment to only investing in a handful of truly exceptional companies each year.",
+            "quote_hash": "38a1715e40b3eaa7f8f62db353f0647c4390351af39b78e799726f54b216f8ee"
+          },
+          {
+            "source_id": "bpc_team",
+            "source_url": "https://www.bpc.com/team",
+            "source_title": "Brighton Park Capital | BPC | Growth Equity | Team",
+            "source_content_hash": "9759ee38df99b67ee25b9371e0d3991fb901fb74235366089a2db565d285cd4b",
+            "quote": "Mark F. Dzialga Founder & Managing Partner",
+            "quote_hash": "8395547b61add34254a00cfac7c055423cf044da37658e0ed48928fd5029648c"
+          },
           {
             "source_id": "FISRC-1347e63f3abd5d34",
             "source_url": "https://fortune.com/2026/03/12/oro-labs-corporate-procurement-ai-efficiency/",
@@ -240128,7 +240541,7 @@
             "quote_hash": "e47704b1a9ba8d2709ed19de2422a8c2ce98b2b3fde7686d5697e31b7e17f3cb"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -271120,19 +271533,103 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Uncork Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "coverage_note": "基金规模、典型支票和组合结果按Uncork官网自述记录；$60B+ enterprise value created并非基金回报率、IRR或已实现退出金额。2026年官网公告披露总额3亿美元，分别对应种子基金和后续成长基金。未引用日期与数据库融资记录不一致的Arch Systems活动。",
+        "summary": "Uncork Capital 是一家专注种子期的风险投资机构，强调成为创业公司的首位机构投资者，官网称通常领投并投入约300万至500万美元。其投资组合覆盖软件基础设施、企业软件、人工智能和消费科技等领域。机构在2026年宣布募集3亿美元，包括2.25亿美元Uncork VIII种子基金与7500万美元Uncork Plus IV成长基金；团队包括Andy McLoughlin、Jeff Clavier、Amy Saper、Susan Liu和Tripp Jones。",
+        "facts": [
+          {
+            "field": "investment_stage",
+            "label": "投资阶段",
+            "value": "专注种子期，官网称该策略持续20年以上。",
+            "source_id": "uncork_approach"
+          },
+          {
+            "field": "typical_check_size",
+            "label": "典型首笔投资",
+            "value": "约300万至500万美元，机构官网自述。",
+            "source_id": "uncork_approach"
+          },
+          {
+            "field": "reported_track_record",
+            "label": "机构披露组合统计",
+            "value": "官网称已投资290余家公司、产生100多个重要结果，并创造超过600亿美元企业价值；这是机构自述统计，不是基金回报率。",
+            "source_id": "uncork_approach"
+          },
+          {
+            "field": "fundraising",
+            "label": "2026年新基金",
+            "value": "共募集3亿美元：Uncork VIII种子基金2.25亿美元，Uncork Plus IV成长基金7500万美元。",
+            "source_id": "uncork_fund"
+          },
+          {
+            "field": "leadership",
+            "label": "官网列示投资合伙人",
+            "value": [
+              "Andy McLoughlin",
+              "Jeff Clavier",
+              "Amy Saper",
+              "Susan Liu",
+              "Tripp Jones"
+            ],
+            "source_id": "uncork_home"
+          }
+        ],
         "milestones": [],
         "track_record": [
+          {
+            "description": "2026年官网公告披露Uncork募集3亿美元新资金，包含种子基金Uncork VIII和后续投资基金Uncork Plus IV。",
+            "source_id": "uncork_fund"
+          },
+          {
+            "description": "官网组合案例包括Tailscale、GPTZero、Loft Orbital、LaunchDarkly与SendGrid；所列公司为代表性组合案例，不代表完整组合。",
+            "source_id": "uncork_home"
+          },
           {
             "description": "融资来源记录：Arch Systems · 成长轮 · 2026-09-15 · 2022年7月融资种子轮领投方及现有投资方 · $30 Million。这是本库收录的披露案例，不代表完整投资组合。",
             "source_id": "FISRC-d7613d54dcfcb87f"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "Uncork Capital",
+            "url": "https://uncorkcapital.com/",
+            "source_id": "uncork_home"
+          },
+          {
+            "kind": "email",
+            "label": "创业项目提交",
+            "value": "pitches@uncorkcapital.com",
+            "url": "https://uncorkcapital.com/",
+            "source_id": "uncork_home"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "uncork_home",
+            "source_url": "https://uncorkcapital.com/",
+            "source_title": "Home | Uncork Capital",
+            "source_content_hash": "be0d7d31c6ac5babe5c979cf1c5e74db8c6031cdb72f606831d51793f1096649",
+            "quote": "Uncork is a seed-stage venture firm investing in founder potential long before it’s obvious. pitches@uncorkcapital.com",
+            "quote_hash": "de21d1bfcecb9677360f2ba50c3fdc9c6a6ab2ba651ba7624f941221899e8e2e"
+          },
+          {
+            "source_id": "uncork_approach",
+            "source_url": "https://uncorkcapital.com/approach",
+            "source_title": "Approach | Uncork Capital",
+            "source_content_hash": "b078c87f30fc897d1ab2177a65f19d5588ba198163691f7b1422576b2b8664f9",
+            "quote": "For more than 20 years, Uncork has focused on one stage: seed. Our partners have invested in over 290 companies, with more than 100 meaningful outcomes and $60B+ in enterprise value created. We’re the first major check on the cap table, often leading seed rounds with an initial investment of about $3-5M.",
+            "quote_hash": "be2fabe195ca5aea321680025009344cd66ca616c41905768f95368c6d3bf886"
+          },
+          {
+            "source_id": "uncork_fund",
+            "source_url": "https://uncorkcapital.com/blog/uncork-capital-closes-300m-to-support-early-stage-founders-e1015b772be1",
+            "source_title": "Uncork Capital Closes $300M to Support Early-Stage Founders - Uncork Capital",
+            "source_content_hash": "05611c77f053ee8f5f82f785921cfdab2c8db0bfc20ecaa28888ff448369362d",
+            "quote": "Uncork Capital has raised $300 million in new funds: Uncork VIII, a $225 million seed fund, and Uncork Plus IV, a $75 million fund dedicated to follow-on support for Uncork portfolio companies.",
+            "quote_hash": "9ec2224e52e0763ac59acdba1943335224c20a672e67da91990397aea55b6624"
+          },
           {
             "source_id": "FISRC-d7613d54dcfcb87f",
             "source_url": "https://www.prnewswire.com/news-releases/arch-systems-secures-15m-in-new-funding-led-by-two-bear-capital-301587244.html",
@@ -271142,7 +271639,7 @@
             "quote_hash": "dcd28102af80561b1a48553797ad91a282c90cf0231efab06cc0d4c207405274"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27"
       },
       "activity_count": 1,
       "portfolio_companies": [],
@@ -292816,19 +293313,108 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Celero Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "coverage_note": "官网显示Celero通常参与pre-seed和seed，并将创始人主导的GTM搭建作为主要支持。创始人此前参与MuleSoft、Databricks的运营和扩张是个人/运营履历，不视为Celero基金退出。Archestra.AI的1000万美元为公司种子轮总额，公告称早期投资者参与追加。",
+        "summary": "Celero Ventures 是由软件创业者和运营者创立的风险投资机构，主要投资pre-seed和seed阶段的技术公司。其差异化支持集中在创始人主导销售、首批GTM招聘、商业化工具与运营框架。创始人David Wyatt和Nick Cochran曾参与MuleSoft与Databricks的创业和规模化建设；机构官网列示其组合包括Pandatron、Reef.AI、Tower、Catio、HaizeLabs等。",
+        "facts": [
+          {
+            "field": "investment_stages",
+            "label": "投资阶段",
+            "value": "主要投资pre-seed与seed阶段。",
+            "source_id": "celero_home"
+          },
+          {
+            "field": "value_add",
+            "label": "投后支持",
+            "value": "从创始人主导销售到首批GTM招聘，提供工具、框架、创始人培训及运营网络支持。",
+            "source_id": "celero_home"
+          },
+          {
+            "field": "founders",
+            "label": "创始团队",
+            "value": "David Wyatt与Nick Cochran；两人有软件创业、早期员工及高管经验，并曾共同参与MuleSoft和Databricks业务扩张。",
+            "source_id": "celero_team"
+          },
+          {
+            "field": "portfolio_examples",
+            "label": "官网列示组合企业",
+            "value": [
+              "Pandatron",
+              "Reef.AI",
+              "Tower",
+              "Catio",
+              "HaizeLabs",
+              "Archestra.AI"
+            ],
+            "source_id": "celero_home"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：Archestra · 种子轮 · 2026-06-02 · 既有投资方（种子前轮） · $10M。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "官网披露创始人曾共同参与MuleSoft及Databricks的扩张，并列出Pandatron、Reef.AI、Tower、Catio、HaizeLabs等组合企业；创始人此前运营经历不等于Celero基金退出业绩。",
+            "source_id": "celero_home"
+          },
+          {
+            "description": "Archestra.AI称其1000万美元种子轮中，Celero Ventures等pre-seed投资方追加投资；该金额为公司融资总额。",
             "source_id": "FISRC-50130a45d72291a2"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "Celero Ventures",
+            "url": "https://celeroventures.com/",
+            "source_id": "celero_home"
+          },
+          {
+            "kind": "email",
+            "label": "创始人David Wyatt",
+            "value": "david@celeroventures.com",
+            "url": "https://celeroventures.com/teams",
+            "source_id": "celero_team"
+          },
+          {
+            "kind": "email",
+            "label": "创始人Nick Cochran",
+            "value": "nick@celeroventures.com",
+            "url": "https://celeroventures.com/teams",
+            "source_id": "celero_team"
+          },
+          {
+            "kind": "address",
+            "label": "泽西岛办公室",
+            "value": "Celero Ventures (LTD), c/o Zedra Office, 19–21 Broad Street, St Helier, Jersey JE2 3RR",
+            "url": "https://celeroventures.com/teams",
+            "source_id": "celero_team"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "celero_home",
+            "source_url": "https://celeroventures.com/",
+            "source_title": "Celero Ventures",
+            "source_content_hash": "7c16a969343f55d79ce5abab574538c2b832824a33dbe551bdda2c6d1f59792e",
+            "quote": "Celero invests from day 1. We specialise in helping technical founders build a strong go-to-market engine.",
+            "quote_hash": "853f7e60e450d8cba3939223348d283df8c86095d127116dc4413de4db9abdd6"
+          },
+          {
+            "source_id": "celero_team",
+            "source_url": "https://celeroventures.com/teams",
+            "source_title": "Teams",
+            "source_content_hash": "13851e7e67107c1c393734149eb6ce783f272024f9492b0421d7675d12fbac52",
+            "quote": "David Wyatt Founder Nick Cochran Founder. Dave & Nick have worked together for over 12 years.",
+            "quote_hash": "742263ef2aa707cc52fcfe62d8645ba76a9ff0766778b5e800f809514c7126c0"
+          },
+          {
+            "source_id": "celero_investors",
+            "source_url": "https://celeroventures.com/investors",
+            "source_title": "Investor Value | Celero Ventures",
+            "source_content_hash": "4007677c38caa62efa884c450ab92fe4838589f97f5bd552e7df8b9c8fcc0680",
+            "quote": "We are operators building alongside founders, that we invest in. To support this vision we have built an academy based on the success of Mulesoft & Databricks to help technical founders execute faster on GTM.",
+            "quote_hash": "8f67d0bb15382fcf3192ac69a5ff2e6ab3f04df2f4ce342357381eed9273a81d"
+          },
           {
             "source_id": "FISRC-50130a45d72291a2",
             "source_url": "https://archestra.ai/blog/archestra-announces-10m-seed",
@@ -292838,7 +293424,7 @@
             "quote_hash": "2f653aa9e0a1b1cead77e89e9a782db3c2fc2e35ebb2e67dc763689267e7fc34"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27"
       },
       "activity_count": 1,
       "portfolio_companies": [],
@@ -306357,19 +306943,86 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Ballistic Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-01-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "coverage_note": "本档案依据Ballistic官网、团队页及基金公告。基金募集和退出均为机构公开披露，不代表基金净回报；Witness AI融资来源只用于确认Ballistic曾联合领投其2024年A轮，后续轮次金额属于公司融资总额。",
+        "summary": "Ballistic Ventures 是专注网络安全的风险投资与创业孵化机构。官网称其只投网络安全创新，并以运营经验、行业网络和创业支持服务创始人。团队包括 Kevin Mandia、Barmak Meftah、Ted Schlein、Jake Seid 与 Roger Thornton 等普通合伙人。机构于2024年宣布完成3.6亿美元第二期基金。",
+        "facts": [
+          {
+            "field": "investment_focus",
+            "label": "投资方向",
+            "value": "专注网络安全创业企业与创新，兼有创业孵化支持。",
+            "source_id": "ballistic_about"
+          },
+          {
+            "field": "leadership",
+            "label": "普通合伙人",
+            "value": [
+              "Kevin Mandia",
+              "Barmak Meftah",
+              "Ted Schlein",
+              "Jake Seid",
+              "Roger Thornton"
+            ],
+            "source_id": "ballistic_team"
+          },
+          {
+            "field": "fundraising",
+            "label": "第二期基金",
+            "value": "2024年宣布完成3.6亿美元第二期基金；此为基金规模，不代表单笔投资额。",
+            "source_id": "ballistic_fund2"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2024-03-14",
+            "description": "宣布完成3.6亿美元第二期基金。",
+            "source_id": "ballistic_fund2"
+          }
+        ],
         "track_record": [
           {
-            "description": "融资来源记录：Witness AI · 战略融资 · 2026-01-13 · 既有投资方（A轮联合领投） · $58 million。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "基金公告称其投资组合公司Talon Cyber Security被Palo Alto Networks收购，并将其描述为2023年最大的一笔风投支持网络安全初创公司收购。",
+            "source_id": "ballistic_fund2"
+          },
+          {
+            "description": "Witness AI公司公告称Ballistic Ventures与GV联合领投其2024年A轮；该资料证明历史投资角色，不披露Ballistic单笔支票金额。",
             "source_id": "FISRC-4849ec2aa0a0f909"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "Ballistic Ventures",
+            "url": "https://ballisticventures.com/",
+            "source_id": "ballistic_about"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "ballistic_about",
+            "source_url": "https://ballisticventures.com/about/",
+            "source_title": "Venture Capital for Cybersecurity Entrepreneurs | Ballistic Ventures",
+            "source_content_hash": "44479ed2c2f21f727aa4239c547a56f16ecd9a6e16278d209e95dd8377ce79fc",
+            "quote": "Ballistic Ventures is a VC firm dedicated to funding and incubating innovations in cybersecurity and nothing else.",
+            "quote_hash": "40eb811c510a0c57384078f60db274f9152d853b5bbf1b398c3a637b71115adf"
+          },
+          {
+            "source_id": "ballistic_team",
+            "source_url": "https://ballisticventures.com/team/",
+            "source_title": "Ballistic Ventures | A Team of Respected Cybersecurity Leaders",
+            "source_content_hash": "5cf99a6f1fedfe4b6e5d0f4fcdf609835be34ed8308ce550a67a3dd948f1b300",
+            "quote": "Kevin Mandia General Partner Barmak Meftah General Partner Nicole Perlroth Venture Partner Ted Schlein General Partner Jake Seid General Partner Roger Thornton General Partner",
+            "quote_hash": "98f97a8ea4b951c9121cd278887532d4ed662df46f06af2721d87ba736b7e1f0"
+          },
+          {
+            "source_id": "ballistic_fund2",
+            "source_url": "https://ballisticventures.com/ballistic-ventures-closes-360-million-oversubscribed-fund-ii-to-fuel-the-next-generation-of-cybersecurity-innovation/",
+            "source_title": "Ballistic Ventures Closes $360 Million Oversubscribed Fund II to Fuel the Next Generation of Cybersecurity Innovation - Ballistic Ventures",
+            "source_content_hash": "342cf12ce6b50480a09f15d11553711d4c030cb7f12ec0d571ad1b894fb9a9fc",
+            "quote": "Ballistic Ventures today announced the close of its oversubscribed $360 million second fund.",
+            "quote_hash": "2092f2fcaea1f68d37d1629297c7a13aa8f8ae19ca204e979349ac641928b055"
+          },
           {
             "source_id": "FISRC-4849ec2aa0a0f909",
             "source_url": "https://witness.ai/resources/witnessai-raises-58-million-for-global-expansion-and-announces-new-ways-to-secure-ai-agents/",
@@ -306379,7 +307032,7 @@
             "quote_hash": "eaaece4b86e7686dbe9acf4743ba1557ba8c669cd23dae4c2f8b580b96ccb483"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27"
       },
       "activity_count": 1,
       "portfolio_companies": [],

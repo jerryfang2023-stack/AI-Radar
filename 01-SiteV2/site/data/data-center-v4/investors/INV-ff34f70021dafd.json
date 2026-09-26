@@ -139,19 +139,121 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Bullhound Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "官方公告说明Bullhound Capital是GP Bullhound投资管理业务的独立品牌和法律实体，但仍与其共同拥有、紧密协同。管理规模、历史投资与组合案例为机构公开口径；Multiverse Computing的5.7亿美元/5亿欧元是公司C轮融资目标总额，不代表Bullhound Capital单笔支票。",
+      "summary": "Bullhound Capital 是科技投资机构，作为GP Bullhound投资管理业务以独立品牌和法律实体运营；双方仍为共同拥有且保持协同。官方材料称其累计投资超过10亿欧元、管理规模超过10亿欧元，投资组合案例包括Spotify、Klarna、Revolut、Slack、Unity、EcoVadis、Whoop、Q-CTRL与LeoLabs。公开的管理合伙人包括Per Roman、Hugh Campbell和Manish Madhvani。",
+      "facts": [
+        {
+          "field": "organization_structure",
+          "label": "与GP Bullhound的关系",
+          "value": "投资管理业务自2025年起使用独立品牌和法律实体Bullhound Capital；两家仍共同拥有并保持协同。",
+          "source_id": "bullhound_launch"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "科技公司，官方材料特别提及人工智能、量子、深科技及欧洲科技企业。",
+          "source_id": "bullhound_dual"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "机构披露的管理规模",
+          "value": "超过10亿欧元（机构2025年公开材料口径）。",
+          "source_id": "bullhound_dual"
+        },
+        {
+          "field": "leadership",
+          "label": "创始管理合伙人",
+          "value": [
+            "Per Roman",
+            "Hugh Campbell",
+            "Manish Madhvani"
+          ],
+          "source_id": "bullhound_launch"
+        },
+        {
+          "field": "portfolio_examples",
+          "label": "官网案例",
+          "value": [
+            "Spotify",
+            "Klarna",
+            "Revolut",
+            "Slack",
+            "Unity",
+            "EcoVadis",
+            "Whoop",
+            "Q-CTRL",
+            "LeoLabs"
+          ],
+          "source_id": "bullhound_launch"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2025-04-22",
+          "description": "GP Bullhound宣布其投资管理业务以Bullhound Capital独立品牌和法律实体运营。",
+          "source_id": "bullhound_launch"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Multiverse Computing · C轮 · 2026-07-27 · 本轮联合领投 · $570 million (€500M)。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "机构在品牌公告中称累计投资超过10亿欧元，并列出Spotify、Klarna、Revolut、Slack与Unity等投资案例；该口径不是基金回报率。",
+          "source_id": "bullhound_launch"
+        },
+        {
+          "description": "Multiverse Computing公告称其5亿欧元C轮融资目标由Bullhound Capital等机构联合领投；轮次总额不是Bullhound单笔投资额。",
           "source_id": "FISRC-fa5aeddf845d651b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Bullhound Capital官方网站",
+          "value": "Bullhound Capital",
+          "url": "https://bullhoundcapital.com/",
+          "source_id": "bullhound_home"
+        },
+        {
+          "kind": "email",
+          "label": "公开合伙人联系渠道（Jonathan Sibilia）",
+          "value": "jonathan.sibilia@bullhound.com",
+          "url": "https://bullhoundcapital.com/articles/bullhound-capital-welcomes-jonathan-sibilia-as-partner/",
+          "source_id": "bullhound_partner"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "bullhound_home",
+          "source_url": "https://bullhoundcapital.com/",
+          "source_title": "Bullhound Capital - Building with founders",
+          "source_content_hash": "84e76b57d30bd8d1a4d85d20019d1dc0ebcc785dba492507ab6fb919fc166e05",
+          "quote": "Bullhound Capital",
+          "quote_hash": "99e0ef0b104051de68109dd8a713abb01b3e90792d72a685e7b2759e2eb4d03b"
+        },
+        {
+          "source_id": "bullhound_launch",
+          "source_url": "https://www.gpbullhound.com/articles/introducing-our-next-chapter-meet-bullhound-capital/",
+          "source_title": "Introducing Our Next Chapter: Meet Bullhound Capital - GP Bullhound",
+          "source_content_hash": "7e8796e4132b5ce5e11d142eb1ac7094ebb0ea3dbcbf68ae33cf97f058ebdac3",
+          "quote": "Bullhound Capital has already invested over €1 billion in category-leading technology companies. The small team has built a successful track record with investments in global leaders such as Spotify, Klarna, Revolut, Slack, and Unity.",
+          "quote_hash": "26c842ae31832a0f9c6b0122dd79841710e27ee44bcb5ff25d58ce44ef7ddb7d"
+        },
+        {
+          "source_id": "bullhound_dual",
+          "source_url": "https://www.gpbullhound.com/articles/dual-is-deep-tech-expertise-the-key-to-european-sovereignty/",
+          "source_title": "Dual: Is Deep Tech Expertise the Key to European Sovereignty? - GP Bullhound",
+          "source_content_hash": "9197022be7bb45e54ce6d86bd743da153ce4cc7aebed6c33a48e6dac16197b52",
+          "quote": "With over €1 billion under management and 25 years of performance, it has invested in global leaders like Spotify, Klarna, Revolut, Slack, Unity, Connex.ai and EcoVadis.",
+          "quote_hash": "86e9fc158aaa24c09dbe5f3f25833c3129fb7df0d59101af7006d96bf1cd3db1"
+        },
+        {
+          "source_id": "bullhound_partner",
+          "source_url": "https://bullhoundcapital.com/articles/bullhound-capital-welcomes-jonathan-sibilia-as-partner/",
+          "source_title": "Bullhound Capital Welcomes Jonathan Sibilia as Partner - Bullhound Capital",
+          "source_content_hash": "bdb541c19432b1b9f9b7f05f8f1e6c38b35c4c8d311db2e586d5e65c4d4482ab",
+          "quote": "For inquiries, please contact: Jonathan Sibilia, Partner at jonathan.sibilia@bullhound.com",
+          "quote_hash": "525fe97cd24f267b1ee7af4ee8ea5e1ae2e1ed298ff24e3878a3e4f4a37e386a"
+        },
         {
           "source_id": "FISRC-fa5aeddf845d651b",
           "source_url": "https://www.globenewswire.com/news-release/2026/07/27/3333282/0/en/Multiverse-Computing-Announces-Series-C-Fundraising-Targeting-up-to-570M-500M-to-Power-Efficient-AI-from-Edge-to-Cloud.html",
@@ -161,7 +263,7 @@
           "quote_hash": "8e85acd628b7f9917626d1564bf68dc436dcb460a29e0a465c331a2feb341ac1"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

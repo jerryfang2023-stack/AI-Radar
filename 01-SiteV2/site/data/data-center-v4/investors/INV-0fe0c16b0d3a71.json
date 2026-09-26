@@ -139,19 +139,115 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Canaan Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "数据库名称仍为Canaan Partners，机构当前官网品牌使用Canaan。基金规模、上市及并购统计均为机构官网披露口径；机构由多个独立基金法律实体组成。Actualyze AI的700万美元为公司种子轮总额。",
+      "summary": "Canaan（数据库历史名称：Canaan Partners）是一家独立风险投资机构，官网称其拥有近四十年投资历史，覆盖从基础科学到技术商业化的创业项目。官网强调与创始人长期合作、按行业经验提供策略和运营支持，并披露累计通过13期基金募集约70亿美元、投资组合产生73起IPO与152起并购案例。",
+      "facts": [
+        {
+          "field": "current_brand",
+          "label": "官网当前品牌",
+          "value": "Canaan；数据库保留历史名称Canaan Partners以对应既有融资记录。",
+          "source_id": "canaan_about"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资领域",
+          "value": "早期科技与医疗健康，覆盖基础科学、深科技、网络安全和人工智能等方向。",
+          "source_id": "canaan_companies"
+        },
+        {
+          "field": "investment_approach",
+          "label": "创始人支持方式",
+          "value": "官网强调长期、个性化合作，并调动整个团队提供招聘、运营建议和行业网络。",
+          "source_id": "canaan_about"
+        },
+        {
+          "field": "fundraising_history",
+          "label": "机构披露基金募集",
+          "value": "官网列示约70亿美元、13期基金。",
+          "source_id": "canaan_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Actualyze AI · 种子轮 · 2026-08-03 · 本轮参投 · $7 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "官网介绍页披露73起IPO及152起并购案例；这些是机构公开的组合统计，不是单只基金回报数据。",
+          "source_id": "canaan_about"
+        },
+        {
+          "description": "Actualyze AI种子轮新闻稿称其获700万美元融资，投资方包括Canaan Partners；轮次总额并非该机构的单笔投资额。",
           "source_id": "FISRC-7d5911b83ac40a4d"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Canaan",
+          "url": "https://www.canaan.com/",
+          "source_id": "canaan_about"
+        },
+        {
+          "kind": "email",
+          "label": "一般咨询",
+          "value": "hello@canaan.com",
+          "url": "https://www.canaan.com/contact",
+          "source_id": "canaan_contact"
+        },
+        {
+          "kind": "address",
+          "label": "康涅狄格州办公室",
+          "value": "700 Fairfield Avenue, Suite 1, Stamford, CT 06902, USA",
+          "url": "https://www.canaan.com/contact",
+          "source_id": "canaan_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "康涅狄格州办公室电话",
+          "value": "+1 203-855-0400",
+          "url": "https://www.canaan.com/contact",
+          "source_id": "canaan_contact"
+        },
+        {
+          "kind": "address",
+          "label": "Menlo Park办公室",
+          "value": "855 Oak Grove, Suite 201, Menlo Park, CA 94025, USA",
+          "url": "https://www.canaan.com/contact",
+          "source_id": "canaan_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "Menlo Park办公室电话",
+          "value": "+1 650-854-8092",
+          "url": "https://www.canaan.com/contact",
+          "source_id": "canaan_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "canaan_about",
+          "source_url": "https://www.canaan.com/about",
+          "source_title": "About - Canaan",
+          "source_content_hash": "7b01c950bb01797115001532b23a969ea99b913850fef69fcc68ed61241b45b3",
+          "quote": "Nearly four decades of independent thinking, strong convictions, and showing up when it matters.",
+          "quote_hash": "18926c2d3b97837878478f9b44a6e3e44a64150309b0f394120d086bcb1c4f8d"
+        },
+        {
+          "source_id": "canaan_companies",
+          "source_url": "https://www.canaan.com/companies",
+          "source_title": "Companies - Canaan",
+          "source_content_hash": "66c9908bd801d79fabf31f0d51fa94917ffad87eea03688711354800627931cc",
+          "quote": "From fundamental science to transformative technology, we back founders shaping everyday life.",
+          "quote_hash": "4a6eab9fc1ae15a510df47259180a1c12a03c11d8d2f3261b90bd7cfb55c36c1"
+        },
+        {
+          "source_id": "canaan_contact",
+          "source_url": "https://www.canaan.com/contact",
+          "source_title": "Contact - Canaan",
+          "source_content_hash": "ae229ff3cc6db68877b502763e5c9c984dfd18e326be02c24fce31f436d41c20",
+          "quote": "General Inquiries hello@canaan.com. Connecticut: 700 Fairfield Avenue, Suite 1, Stamford, CT 06902. T: 203.855.0400. Menlo Park: 855 Oak Grove, Suite 201, Menlo Park, CA 94025. T: 650.854.8092",
+          "quote_hash": "2cfef4d25bc526c4ab01c3e90532e21a45a63ba9c28fa3afb2576dc61b207d31"
+        },
         {
           "source_id": "FISRC-7d5911b83ac40a4d",
           "source_url": "https://www.prnewswire.com/news-releases/actualyze-ai-emerges-from-stealth-with-7m-seed-round-to-deliver-enterprises-one-platform-for-every-ai-request-302840716.html",
@@ -161,7 +257,7 @@
           "quote_hash": "69cbee4b0d08b8459255ff8e36ce3e5276eb038abeb04a605510eef96a35dad6"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

@@ -131,19 +131,86 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Ballistic Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-01-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案依据Ballistic官网、团队页及基金公告。基金募集和退出均为机构公开披露，不代表基金净回报；Witness AI融资来源只用于确认Ballistic曾联合领投其2024年A轮，后续轮次金额属于公司融资总额。",
+      "summary": "Ballistic Ventures 是专注网络安全的风险投资与创业孵化机构。官网称其只投网络安全创新，并以运营经验、行业网络和创业支持服务创始人。团队包括 Kevin Mandia、Barmak Meftah、Ted Schlein、Jake Seid 与 Roger Thornton 等普通合伙人。机构于2024年宣布完成3.6亿美元第二期基金。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "专注网络安全创业企业与创新，兼有创业孵化支持。",
+          "source_id": "ballistic_about"
+        },
+        {
+          "field": "leadership",
+          "label": "普通合伙人",
+          "value": [
+            "Kevin Mandia",
+            "Barmak Meftah",
+            "Ted Schlein",
+            "Jake Seid",
+            "Roger Thornton"
+          ],
+          "source_id": "ballistic_team"
+        },
+        {
+          "field": "fundraising",
+          "label": "第二期基金",
+          "value": "2024年宣布完成3.6亿美元第二期基金；此为基金规模，不代表单笔投资额。",
+          "source_id": "ballistic_fund2"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2024-03-14",
+          "description": "宣布完成3.6亿美元第二期基金。",
+          "source_id": "ballistic_fund2"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Witness AI · 战略融资 · 2026-01-13 · 既有投资方（A轮联合领投） · $58 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "基金公告称其投资组合公司Talon Cyber Security被Palo Alto Networks收购，并将其描述为2023年最大的一笔风投支持网络安全初创公司收购。",
+          "source_id": "ballistic_fund2"
+        },
+        {
+          "description": "Witness AI公司公告称Ballistic Ventures与GV联合领投其2024年A轮；该资料证明历史投资角色，不披露Ballistic单笔支票金额。",
           "source_id": "FISRC-4849ec2aa0a0f909"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Ballistic Ventures",
+          "url": "https://ballisticventures.com/",
+          "source_id": "ballistic_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "ballistic_about",
+          "source_url": "https://ballisticventures.com/about/",
+          "source_title": "Venture Capital for Cybersecurity Entrepreneurs | Ballistic Ventures",
+          "source_content_hash": "44479ed2c2f21f727aa4239c547a56f16ecd9a6e16278d209e95dd8377ce79fc",
+          "quote": "Ballistic Ventures is a VC firm dedicated to funding and incubating innovations in cybersecurity and nothing else.",
+          "quote_hash": "40eb811c510a0c57384078f60db274f9152d853b5bbf1b398c3a637b71115adf"
+        },
+        {
+          "source_id": "ballistic_team",
+          "source_url": "https://ballisticventures.com/team/",
+          "source_title": "Ballistic Ventures | A Team of Respected Cybersecurity Leaders",
+          "source_content_hash": "5cf99a6f1fedfe4b6e5d0f4fcdf609835be34ed8308ce550a67a3dd948f1b300",
+          "quote": "Kevin Mandia General Partner Barmak Meftah General Partner Nicole Perlroth Venture Partner Ted Schlein General Partner Jake Seid General Partner Roger Thornton General Partner",
+          "quote_hash": "98f97a8ea4b951c9121cd278887532d4ed662df46f06af2721d87ba736b7e1f0"
+        },
+        {
+          "source_id": "ballistic_fund2",
+          "source_url": "https://ballisticventures.com/ballistic-ventures-closes-360-million-oversubscribed-fund-ii-to-fuel-the-next-generation-of-cybersecurity-innovation/",
+          "source_title": "Ballistic Ventures Closes $360 Million Oversubscribed Fund II to Fuel the Next Generation of Cybersecurity Innovation - Ballistic Ventures",
+          "source_content_hash": "342cf12ce6b50480a09f15d11553711d4c030cb7f12ec0d571ad1b894fb9a9fc",
+          "quote": "Ballistic Ventures today announced the close of its oversubscribed $360 million second fund.",
+          "quote_hash": "2092f2fcaea1f68d37d1629297c7a13aa8f8ae19ca204e979349ac641928b055"
+        },
         {
           "source_id": "FISRC-4849ec2aa0a0f909",
           "source_url": "https://witness.ai/resources/witnessai-raises-58-million-for-global-expansion-and-announces-new-ways-to-secure-ai-agents/",
@@ -153,7 +220,7 @@
           "quote_hash": "eaaece4b86e7686dbe9acf4743ba1557ba8c669cd23dae4c2f8b580b96ccb483"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }
