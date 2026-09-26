@@ -139,19 +139,113 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Chiratae Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构规模、投资组合和团队情况均按Chiratae官网自述记录；官网不同页面的组合数可能随更新时间变化，本档案引用About页面的145+ investments口径。ContraVault AI的310万美元为公司Pre-A轮总额，不等于Chiratae单笔投资金额。",
+      "summary": "Chiratae Ventures 是印度本土科技风险投资机构，官网称其管理规模约14亿美元、覆盖七只基金，并披露145+项投资、89起退出、6家IPO及8家独角兽。投资主题包括移动科技、SaaS、消费与电商、教育、医疗、气候、金融、农业、B2B和深科技。创始人Sudhir Sethi与TC Meenakshisundaram分别担任Founder & Chairman、Founder & Vice Chairman。",
+      "facts": [
+        {
+          "field": "assets_under_management",
+          "label": "官网披露管理规模",
+          "value": "约14亿美元、覆盖7只基金；官网页面使用AUM口径。",
+          "source_id": "chiratae_about"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资领域",
+          "value": [
+            "移动科技",
+            "SaaS",
+            "消费科技",
+            "教育科技",
+            "医疗科技",
+            "气候科技",
+            "金融科技",
+            "农业科技",
+            "B2B",
+            "深科技"
+          ],
+          "source_id": "chiratae_about"
+        },
+        {
+          "field": "leadership",
+          "label": "创始人和董事长",
+          "value": "Sudhir Sethi；联合创始人兼副董事长为TC Meenakshisundaram。",
+          "source_id": "chiratae_team"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：ContraVault AI · Pre-A轮 · 2026-06-17 · 本轮领投 · $3.1 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "About页面披露145+项投资、89起退出、6家IPO及8家独角兽，均为机构官网统计口径，不代表基金净回报。",
+          "source_id": "chiratae_about"
+        },
+        {
+          "description": "公开融资报道显示，ContraVault AI的310万美元Pre-A轮由Chiratae Ventures领投；金额为公司融资总额。",
           "source_id": "FISRC-78278ca61a2d245e"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Chiratae Ventures",
+          "url": "https://www.chiratae.com/about-us/",
+          "source_id": "chiratae_about"
+        },
+        {
+          "kind": "email",
+          "label": "一般咨询及投资支持",
+          "value": "contact@chiratae.com",
+          "url": "https://www.chiratae.com/contact/",
+          "source_id": "chiratae_contact"
+        },
+        {
+          "kind": "email",
+          "label": "媒体联系",
+          "value": "tanvi@chiratae.com",
+          "url": "https://www.chiratae.com/contact/",
+          "source_id": "chiratae_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "Bengaluru办公室",
+          "value": "+91 80 4043 4836",
+          "url": "https://www.chiratae.com/contact/",
+          "source_id": "chiratae_contact"
+        },
+        {
+          "kind": "address",
+          "label": "Bengaluru办公室",
+          "value": "3rd Floor (A and B Wing), Sobha Pearl 1, Commissariat Road, Bengaluru, Karnataka 560025, India",
+          "url": "https://www.chiratae.com/contact/",
+          "source_id": "chiratae_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "chiratae_about",
+          "source_url": "https://www.chiratae.com/about-us/",
+          "source_title": "About-us - Chiratae Ventures",
+          "source_content_hash": "24cafdc005f8ee04666ea93bb308745c35cf9df12488d848b1a6b0e7034cca80",
+          "quote": "20 Years In existence. $1.4 Billion AUM. 7 Funds. 145+ Investments. 89 Exits. 6 IPOs. 8 Unicorns.",
+          "quote_hash": "9992c7e96ba9523033ad211e430728a958dcb56ea61250c881e2825e0b3c6cf4"
+        },
+        {
+          "source_id": "chiratae_team",
+          "source_url": "https://www.chiratae.com/team/",
+          "source_title": "Team - Chiratae Ventures",
+          "source_content_hash": "4ad807b92119418b66bf3731771c94ec9a87094644287611c47447093c7279f9",
+          "quote": "Sudhir Sethi Founder & Chairman. TC Meenakshisundaram Founder & Vice Chairman.",
+          "quote_hash": "90b7723ee538a76521816652f718745c59a0fb4a6fb98dd57951c40b028ffeaf"
+        },
+        {
+          "source_id": "chiratae_contact",
+          "source_url": "https://www.chiratae.com/contact/",
+          "source_title": "Contact - Chiratae Ventures",
+          "source_content_hash": "7f361a280c019b0642f2f9d625fe5908e76e893a8c2528bf61364454a21fbae6",
+          "quote": "For general queries, contact us at contact@chiratae.com. Bengaluru: 3rd Floor (A and B Wing), Sobha Pearl 1, Commissariat Road, Bengaluru, Karnataka-560025. 080 4043 4836.",
+          "quote_hash": "5f57eec4a15cf79ad7baa3cc8989c9ccd0de418cc2b45fda1e04c417a91782b2"
+        },
         {
           "source_id": "FISRC-78278ca61a2d245e",
           "source_url": "https://startupsunion.com/contravault-ai-raises-3-1m-pre-series-a-to-revolutionize-procurement-intelligence/",
@@ -161,7 +255,7 @@
           "quote_hash": "b78361dd895764b35243b2678602a8fc30e72368c8f72c55514725d378c8f528"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

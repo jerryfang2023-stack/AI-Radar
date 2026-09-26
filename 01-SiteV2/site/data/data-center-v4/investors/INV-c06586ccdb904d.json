@@ -131,19 +131,103 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Uncork Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "基金规模、典型支票和组合结果按Uncork官网自述记录；$60B+ enterprise value created并非基金回报率、IRR或已实现退出金额。2026年官网公告披露总额3亿美元，分别对应种子基金和后续成长基金。未引用日期与数据库融资记录不一致的Arch Systems活动。",
+      "summary": "Uncork Capital 是一家专注种子期的风险投资机构，强调成为创业公司的首位机构投资者，官网称通常领投并投入约300万至500万美元。其投资组合覆盖软件基础设施、企业软件、人工智能和消费科技等领域。机构在2026年宣布募集3亿美元，包括2.25亿美元Uncork VIII种子基金与7500万美元Uncork Plus IV成长基金；团队包括Andy McLoughlin、Jeff Clavier、Amy Saper、Susan Liu和Tripp Jones。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "专注种子期，官网称该策略持续20年以上。",
+          "source_id": "uncork_approach"
+        },
+        {
+          "field": "typical_check_size",
+          "label": "典型首笔投资",
+          "value": "约300万至500万美元，机构官网自述。",
+          "source_id": "uncork_approach"
+        },
+        {
+          "field": "reported_track_record",
+          "label": "机构披露组合统计",
+          "value": "官网称已投资290余家公司、产生100多个重要结果，并创造超过600亿美元企业价值；这是机构自述统计，不是基金回报率。",
+          "source_id": "uncork_approach"
+        },
+        {
+          "field": "fundraising",
+          "label": "2026年新基金",
+          "value": "共募集3亿美元：Uncork VIII种子基金2.25亿美元，Uncork Plus IV成长基金7500万美元。",
+          "source_id": "uncork_fund"
+        },
+        {
+          "field": "leadership",
+          "label": "官网列示投资合伙人",
+          "value": [
+            "Andy McLoughlin",
+            "Jeff Clavier",
+            "Amy Saper",
+            "Susan Liu",
+            "Tripp Jones"
+          ],
+          "source_id": "uncork_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "2026年官网公告披露Uncork募集3亿美元新资金，包含种子基金Uncork VIII和后续投资基金Uncork Plus IV。",
+          "source_id": "uncork_fund"
+        },
+        {
+          "description": "官网组合案例包括Tailscale、GPTZero、Loft Orbital、LaunchDarkly与SendGrid；所列公司为代表性组合案例，不代表完整组合。",
+          "source_id": "uncork_home"
+        },
         {
           "description": "融资来源记录：Arch Systems · 成长轮 · 2026-09-15 · 2022年7月融资种子轮领投方及现有投资方 · $30 Million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d7613d54dcfcb87f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Uncork Capital",
+          "url": "https://uncorkcapital.com/",
+          "source_id": "uncork_home"
+        },
+        {
+          "kind": "email",
+          "label": "创业项目提交",
+          "value": "pitches@uncorkcapital.com",
+          "url": "https://uncorkcapital.com/",
+          "source_id": "uncork_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "uncork_home",
+          "source_url": "https://uncorkcapital.com/",
+          "source_title": "Home | Uncork Capital",
+          "source_content_hash": "be0d7d31c6ac5babe5c979cf1c5e74db8c6031cdb72f606831d51793f1096649",
+          "quote": "Uncork is a seed-stage venture firm investing in founder potential long before it’s obvious. pitches@uncorkcapital.com",
+          "quote_hash": "de21d1bfcecb9677360f2ba50c3fdc9c6a6ab2ba651ba7624f941221899e8e2e"
+        },
+        {
+          "source_id": "uncork_approach",
+          "source_url": "https://uncorkcapital.com/approach",
+          "source_title": "Approach | Uncork Capital",
+          "source_content_hash": "b078c87f30fc897d1ab2177a65f19d5588ba198163691f7b1422576b2b8664f9",
+          "quote": "For more than 20 years, Uncork has focused on one stage: seed. Our partners have invested in over 290 companies, with more than 100 meaningful outcomes and $60B+ in enterprise value created. We’re the first major check on the cap table, often leading seed rounds with an initial investment of about $3-5M.",
+          "quote_hash": "be2fabe195ca5aea321680025009344cd66ca616c41905768f95368c6d3bf886"
+        },
+        {
+          "source_id": "uncork_fund",
+          "source_url": "https://uncorkcapital.com/blog/uncork-capital-closes-300m-to-support-early-stage-founders-e1015b772be1",
+          "source_title": "Uncork Capital Closes $300M to Support Early-Stage Founders - Uncork Capital",
+          "source_content_hash": "05611c77f053ee8f5f82f785921cfdab2c8db0bfc20ecaa28888ff448369362d",
+          "quote": "Uncork Capital has raised $300 million in new funds: Uncork VIII, a $225 million seed fund, and Uncork Plus IV, a $75 million fund dedicated to follow-on support for Uncork portfolio companies.",
+          "quote_hash": "9ec2224e52e0763ac59acdba1943335224c20a672e67da91990397aea55b6624"
+        },
         {
           "source_id": "FISRC-d7613d54dcfcb87f",
           "source_url": "https://www.prnewswire.com/news-releases/arch-systems-secures-15m-in-new-funding-led-by-two-bear-capital-301587244.html",
@@ -153,7 +237,7 @@
           "quote_hash": "dcd28102af80561b1a48553797ad91a282c90cf0231efab06cc0d4c207405274"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }
