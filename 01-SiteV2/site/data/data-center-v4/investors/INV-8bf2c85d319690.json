@@ -139,19 +139,60 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Accenture Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-11；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Accenture reports fund size and active investment count on its innovation page. The Replit financing source names Accenture but does not identify the internal investment unit or disclose an individual check.",
+      "summary": "Accenture Ventures is Accenture’s startup investment and engagement program, connecting emerging technology companies with Accenture expertise and enterprise clients. Accenture currently reports a $250 million fund and more than 70 active venture investments; those figures are company-reported, not returns.",
+      "facts": [
+        {
+          "field": "program",
+          "label": "Program",
+          "value": "Startup investment and engagement program focused on technology companies addressing enterprise innovation needs.",
+          "source_id": "accenture_innovation"
+        },
+        {
+          "field": "reported_fund_size",
+          "label": "Reported fund size",
+          "value": "$250 million, as reported by Accenture.",
+          "source_id": "accenture_innovation"
+        },
+        {
+          "field": "active_investments",
+          "label": "Reported active venture investments",
+          "value": "More than 70, as reported by Accenture.",
+          "source_id": "accenture_innovation"
+        },
+        {
+          "field": "engagement_model",
+          "label": "Engagement model",
+          "value": "Project Spotlight connects startups with Accenture expertise and enterprise client problems.",
+          "source_id": "accenture_innovation"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Replit · D轮 · 2026-03-11 · 本轮参投（战略投资） · $400M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "A report listed Accenture among strategic investors in Replit’s Series D. It does not identify the internal investment unit or disclose an individual amount.",
           "source_id": "FISRC-00ed3d8fd701898b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Official information",
+          "value": "Accenture Ventures and innovation program",
+          "source_id": "accenture_innovation",
+          "url": "https://www.accenture.com/en/about/accenture-innovation"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "accenture_innovation",
+          "source_url": "https://www.accenture.com/en/about/accenture-innovation",
+          "source_title": "Innovation at Accenture",
+          "source_content_hash": "3c242ca6d7e980a9c2765612b8baa5cc9b2abb3af2da9d067967024ed383e9eb",
+          "quote": "Accenture Ventures is at the forefront of shaping the future of technology, managing a $250M fund with 70+ active venture investments.",
+          "quote_hash": "6f615de5a3dfb95731bb6969f09da8d2e8e802bb216eeaefad50be47b908abd5"
+        },
         {
           "source_id": "FISRC-00ed3d8fd701898b",
           "source_url": "https://techstartups.com/2026/03/11/replit-raises-400m-at-9b-valuation-as-ai-coding-platform-surges-to-over-40m-users/",
@@ -161,7 +202,7 @@
           "quote_hash": "2a92d3648e85cfacdf3ad37c2766e637c846e12256cf248e68b79be36131c17a"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }
