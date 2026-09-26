@@ -132,62 +132,89 @@
       }
     ],
     "public_profile": {
-      "summary": "Amanda Askell 是哲学家，现于 Anthropic 从事模型微调与 AI 对齐研究；此前在 OpenAI 政策团队工作。",
+      "summary": "Amanda Askell 是哲学家与 AI 对齐研究者，现于 Anthropic 参与 Character 工作并主导 Claude Constitution；此前在 OpenAI 政策团队研究 AI 安全。",
+      "coverage_status": "researched",
+      "identity_status": "verified",
+      "coverage_note": "Anthropic 2026 年 Constitution 用于确认 Askell 当前主导 Character 工作及其主要作者身份；具体任职名称和 2021–至今任期来自本人公开 CV。教育学位、论文主题及此前 OpenAI 职务按本人 CV 记录。",
       "current_roles": [
         {
-          "title": "哲学家、模型微调与 AI 对齐研究",
+          "title": "Character 工作负责人、Claude Constitution 主要作者",
           "organization": "Anthropic",
-          "source_id": "amanda_site"
+          "source_id": "anthropic_constitution"
+        },
+        {
+          "title": "Alignment Finetuning Research Scientist（本人 CV 所列）",
+          "organization": "Anthropic",
+          "source_id": "amanda_cv"
         }
       ],
       "career": [
         {
           "organization": "Anthropic",
-          "title": "AI 对齐与微调研究",
-          "period": "本人简介当前表述；未披露起始时间",
-          "description": "负责训练模型的相关研究并探索可扩展的微调技术。",
-          "source_id": "amanda_site"
+          "title": "Research Scientist（Alignment Finetuning）",
+          "period": "2021–Present（本人 CV）",
+          "description": "公开 CV 将其研究方向列为模型对齐微调；Anthropic 2026 年资料确认其负责 Character 工作。",
+          "source_id": "amanda_cv"
         },
         {
           "organization": "OpenAI",
-          "title": "政策团队研究科学家",
-          "period": "此前经历；任职时间未披露",
-          "description": "参与 AI 安全辩论与模型表现基准研究。",
-          "source_id": "amanda_site"
+          "title": "Research Scientist（Policy）",
+          "period": "2018–2021",
+          "description": "本人 CV 所列研究岗位。",
+          "source_id": "amanda_cv"
         }
       ],
       "education": [
         {
           "institution": "New York University",
-          "qualification": "哲学博士",
-          "source_id": "amanda_site"
+          "qualification": "哲学博士，2011–2018；论文方向为无限伦理中的 Pareto 原则",
+          "source_id": "amanda_cv"
         },
         {
           "institution": "University of Oxford",
-          "qualification": "哲学 BPhil",
-          "source_id": "amanda_site"
+          "qualification": "哲学 BPhil，2009–2011",
+          "source_id": "amanda_cv"
         },
         {
           "institution": "University of Dundee",
-          "qualification": "哲学本科；简介未提供学位名称",
-          "source_id": "amanda_site"
+          "qualification": "哲学 MA (Hons)，2005–2009",
+          "source_id": "amanda_cv"
         }
       ],
-      "experience_summary": "本人简介披露其哲学、伦理学、决策理论与形式认识论研究背景。",
-      "track_record": [],
+      "experience_summary": "Askell 的研究背景包括哲学、伦理学与决策理论，职业经验涵盖 OpenAI 政策研究、Anthropic 模型对齐微调和 Claude Character 设计。",
+      "track_record": [
+        {
+          "description": "Anthropic 2026 年发布的 Claude Constitution 将 Askell 列为 Character 工作负责人和主要作者；Anthropic 称其撰写了大部分内容并领导多轮修订。",
+          "source_id": "anthropic_constitution"
+        }
+      ],
       "sources": [
         {
           "source_id": "amanda_site",
           "source_url": "https://askell.io/",
           "source_title": "About Me | Amanda Askell",
           "source_content_hash": "5022b82ecc3f1126a99bb90c5cbeaf8f100f8eec57c49f468f04378152531cb9",
-          "quote": "I’m a philosopher working on finetuning and AI alignment at Anthropic. Before this I worked as a research scientist on the policy team at OpenAI. I have a PhD in philosophy from NYU and a BPhil in philosophy from the University of Oxford. I did my undergraduate degree in Philosophy at the University of Dundee.",
-          "quote_hash": "c25cbbea30bc9a7f7c027455b2df54bb7720a17a7a14acf8fc1b58fb72ce3c83"
+          "quote": "I’m a philosopher working on finetuning and AI alignment at Anthropic.",
+          "quote_hash": "6fcefe879c86be3298bd7c46bb2c6a778493b1c8f555f766e10525ed2c54872c"
+        },
+        {
+          "source_id": "amanda_cv",
+          "source_url": "https://askell.io/cv/",
+          "source_title": "Curriculum Vitae | Amanda Askell",
+          "source_content_hash": "34e38f9fee5a1d454a86c4809ac1cbccdc862e8a9c496bccbdba382d9b2c90a5",
+          "quote": "Research Scientist (Alignment Finetuning), Anthropic, 2021 - Present; Research Scientist (Policy), OpenAI, 2018 - 2021.",
+          "quote_hash": "b114aeb5cbf93399841f27da541bffb006256bc0e4414c869e8329b30556aed0"
+        },
+        {
+          "source_id": "anthropic_constitution",
+          "source_url": "https://www.anthropic.com/constitution",
+          "source_title": "Claude’s Constitution | Anthropic",
+          "source_content_hash": "ced45d43c4b7b9e774a9d3bdf4f0774e1a1d937c8181925a2df2d3747c9aedc6",
+          "quote": "Amanda Askell leads Anthropic's Character work and is the primary author of this document.",
+          "quote_hash": "ff15ecd1fb518cda754ee2eae77b4b857e5ac8b5ca1b46ed10f18dc8b5480469"
         }
       ],
-      "last_verified_at": "2026-09-25",
-      "coverage_status": "researched",
-      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
+      "last_verified_at": "2026-09-27"
     },
     "translations": {
       "zh-CN": {

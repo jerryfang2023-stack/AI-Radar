@@ -1,6 +1,6 @@
 {
   "schema_version": "PUBLIC-ENTITY-PROFILES-V1.0",
-  "as_of": "2026-09-26",
+  "as_of": "2026-09-27",
   "institutions": {
     "INV-c73d9854fb920b": {
       "summary": "NVIDIA 是一家设有企业投资职能并运营 NVentures 风险投资部门的科技公司。NVentures 官网介绍其面向 AI 基础设施、机器人、数字生物学、应用 AI 和前沿计算等领域投资。融资活动库中的“Nvidia”名称未必能单独确认交易由 NVentures 还是其他 NVIDIA 投资职能完成。",
@@ -37446,6 +37446,482 @@
         }
       ],
       "last_verified_at": "2026-09-27"
+    },
+    "INV-0a20e835b42066": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "资产规模按官网合并口径和 2026-06-30 截止日呈现，其中包含 CI Financial、Corient 等关联业务。Crusoe 融资金额是公司轮次总额，不是 Mubadala Capital 的单笔出资；活动样本不代表完整组合或整体业绩。联系方式仅取官网公开的阿布扎比办公室。",
+      "summary": "Mubadala Capital 是具有主权股东背景的全球另类资产管理平台，业务覆盖私募股权、巴西特殊机会、信贷、解决方案和风险投资。官网披露，截至 2026-06-30，其平台及相关业务合计管理、顾问和行政管理资产超过 7550 亿美元；该口径包含 CI Financial、Corient 等业务，并非单体 Mubadala Capital AUM。",
+      "facts": [
+        {
+          "field": "platform",
+          "label": "机构定位",
+          "value": "全球另类资产管理平台，投资多个资产类别和地区；官网称其背后具有主权所有权背景。",
+          "source_id": "mubadala_ownership"
+        },
+        {
+          "field": "strategies",
+          "label": "投资策略",
+          "value": [
+            "私募股权",
+            "巴西特殊机会",
+            "信贷",
+            "解决方案",
+            "风险投资"
+          ],
+          "source_id": "mubadala_home"
+        },
+        {
+          "field": "assets_managed_advised_administered",
+          "label": "管理、顾问及行政管理资产",
+          "value": "官网披露平台管理、顾问和行政管理资产超过 7550 亿美元，截至 2026-06-30。",
+          "source_id": "mubadala_scale"
+        },
+        {
+          "field": "offices",
+          "label": "官网列示办公室",
+          "value": [
+            "阿布扎比",
+            "伦敦",
+            "纽约",
+            "里约热内卢",
+            "旧金山"
+          ],
+          "source_id": "mubadala_home"
+        },
+        {
+          "field": "assets_scope",
+          "label": "规模统计口径",
+          "value": "该数字包含 Mubadala Capital Alternative Investments、Abu Dhabi Catalyst Partners、CI Financial、Corient 及关联业务，不代表单体 AUM。",
+          "source_id": "mubadala_scope"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "本库记录：Crusoe 于 2026-09-17 完成 F 轮融资，Mubadala Capital 为联合领投方之一；3.9 billion 美元为公司本轮总额，单家投资者出资额未披露。",
+          "source_id": "FISRC-5fc65e3f4fb1b347"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Mubadala Capital",
+          "url": "https://www.mubadalacapital.ae/",
+          "source_id": "mubadala_home"
+        },
+        {
+          "kind": "address",
+          "label": "阿布扎比办公室",
+          "value": "Al Maryah Island, Al Sila Tower, 13th floor, Abu Dhabi, UAE",
+          "source_id": "mubadala_home"
+        },
+        {
+          "kind": "phone",
+          "label": "阿布扎比办公室电话",
+          "value": "+971 2 2361000",
+          "source_id": "mubadala_home"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "FISRC-5fc65e3f4fb1b347",
+          "source_url": "https://kingliber.com/the-ai-infrastructure-boom-crusoe-secures-3-9-billion-series-f-at-a-30-9-billion-valuation-to-power-the-next-generation-of-compute/",
+          "source_title": "The AI Infrastructure Boom: Crusoe Secures $3.9 Billion Series F at a $30.9 Billion Valuation to Power the Next Generation of Compute – King Liber",
+          "source_content_hash": "a5d809d221408d5b",
+          "quote": "The latest financing round was co-led by a powerhouse consortium of financial and strategic heavyweights: Atreides Management , Mubadala Capital , and Valor Equity Partners .",
+          "quote_hash": "832326ba36c3882371b66633ca7e475b4a2091c8b2e568a29eacf4bc6ec42202"
+        },
+        {
+          "source_id": "mubadala_home",
+          "source_url": "https://www.mubadalacapital.ae/",
+          "source_title": "Mubadala Capital | Global Alternative Asset Management",
+          "source_content_hash": "714b91964fa9c3e87994d5015d461a8a310136a3903e07dea771548a9fb21000",
+          "quote": "Mubadala Capital is a global alternative asset management platform investing across multiple asset classes and geographies.",
+          "quote_hash": "8cda034e3bcb429893f2dc27b499ef2f641ce5f97f11ffde4ec1a38b9e207c8d"
+        },
+        {
+          "source_id": "mubadala_scale",
+          "source_url": "https://www.mubadalacapital.ae/",
+          "source_title": "Mubadala Capital | Global Alternative Asset Management",
+          "source_content_hash": "714b91964fa9c3e87994d5015d461a8a310136a3903e07dea771548a9fb21000",
+          "quote": "$755bn+ In assets managed, advised and administered¹",
+          "quote_hash": "397793a7f1af9c757a6faef7569fbcb369fd967d703de99fc077715e441809cc"
+        },
+        {
+          "source_id": "mubadala_ownership",
+          "source_url": "https://www.mubadalacapital.ae/",
+          "source_title": "Mubadala Capital | Global Alternative Asset Management",
+          "source_content_hash": "714b91964fa9c3e87994d5015d461a8a310136a3903e07dea771548a9fb21000",
+          "quote": "Mubadala Capital combines the scale and stability of sovereign ownership with the agility and focus of a performance-driven global investment firm.",
+          "quote_hash": "6d5d47ac170c093d54e330a0ebe5cf0e2a95212e8215de1fb1b267d5f6b3d8dd"
+        },
+        {
+          "source_id": "mubadala_scope",
+          "source_url": "https://www.mubadalacapital.ae/",
+          "source_title": "Mubadala Capital | Global Alternative Asset Management",
+          "source_content_hash": "714b91964fa9c3e87994d5015d461a8a310136a3903e07dea771548a9fb21000",
+          "quote": "assets managed, advised and administered by CI Financial Corp and Corient Holding, LP, and their affiliates.",
+          "quote_hash": "6e4c1940db075bf3cc8f9adcd829a7d2de27f71753c726ad9937970a3ff124b0"
+        }
+      ],
+      "last_verified_at": "2026-09-27"
+    },
+    "INV-8059ff8a0d97cc": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "投资阶段、在管组合数量和案例来自机构官网自述。官网所列组合公司是选择性案例，不表示完整组合或投资回报；FintechOS 公布的 2800 万美元为股权与债务组合融资总额，Molten Ventures 单独出资额及具体分配未披露。官网开放 Pitch Deck 提交入口，具体联系方式如下。",
+      "summary": "Molten Ventures 是面向欧洲高成长科技公司的风险投资机构，官网称其拥有约 20 年投资历程，通常在企业达到 A 轮或 B 轮阶段后投资，并继续参与后续融资。其公开组合横跨企业软件、AI 与硬科技、消费科技和数字医疗。",
+      "facts": [
+        {
+          "field": "geography",
+          "label": "投资地区",
+          "value": "欧洲",
+          "source_id": "molten_about"
+        },
+        {
+          "field": "stage",
+          "label": "常见投资阶段",
+          "value": "通常投资于 A 轮及 B 轮阶段。",
+          "source_id": "molten_stage"
+        },
+        {
+          "field": "sectors",
+          "label": "官网列示重点领域",
+          "value": [
+            "企业软件与 SaaS",
+            "AI、硬件与深科技",
+            "消费科技",
+            "数字医疗"
+          ],
+          "source_id": "molten_sectors"
+        },
+        {
+          "field": "portfolio_scale",
+          "label": "官网披露组合规模",
+          "value": "官网当前披露组合中有 100 多家公司；数据会随投资与退出变化。",
+          "source_id": "molten_scale"
+        },
+        {
+          "field": "investment_model",
+          "label": "资本循环方式",
+          "value": "官网称退出所得会重新投入新的或后续投资机会。",
+          "source_id": "molten_reinvest"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "FintechOS 于 2026-09-21 公布 2800 万美元股权与债务组合融资，并将 Molten Ventures 列为现有股东之一；没有披露其单独出资额或该机构对应的融资份额。",
+          "source_id": "FISRC-ebb4cfeb462f5780"
+        },
+        {
+          "description": "官网列出的代表性组合案例包括 Aircall、Ledger、Revolut 与 Thought Machine；这是选择性案例，不是完整组合或回报证明。",
+          "source_id": "molten_track"
+        },
+        {
+          "description": "Molten Ventures 官网组合页列出 ICEYE，并标注其于 2018 年投资；这是单个组合案例，不说明投资金额或回报。",
+          "source_id": "molten_portfolio"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Molten Ventures",
+          "url": "https://www.moltenventures.com/",
+          "source_id": "molten_contact"
+        },
+        {
+          "kind": "application",
+          "label": "创业团队提交 Pitch Deck",
+          "value": "Send Your Pitch Deck；通过官网联系页面提交。",
+          "url": "https://www.moltenventures.com/contact",
+          "source_id": "molten_contact"
+        },
+        {
+          "kind": "address",
+          "label": "伦敦办公室",
+          "value": "20 Garrick Street, London WC2E 9BT",
+          "source_id": "molten_contact_office"
+        },
+        {
+          "kind": "address",
+          "label": "都柏林办公室",
+          "value": "The Merrion Buildings, 18–20 Merrion Street, Dublin D02 XH98",
+          "source_id": "molten_contact_dublin"
+        },
+        {
+          "kind": "phone",
+          "label": "公开办公室电话",
+          "value": "+44 (0) 20 7931 8800",
+          "source_id": "molten_contact_office"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "FISRC-ebb4cfeb462f5780",
+          "source_url": "https://fintechos.com/in-the-news/fintechos-secures-28m-in-combined-equity-and-debt-financing/",
+          "source_title": "FintechOS 获得 2800 万美元股权与债务组合融资",
+          "source_content_hash": "ffc50b05f8c9cdae",
+          "quote": "raised $28 million in combined equity and debt financing from its current shareholder base, including Bek Ventures, IFC, Cipio Partners and Molten Ventures, alongside a senior debt facility from Santander CIB",
+          "quote_hash": "dbe4affcdde93e87d3b166291082fcb242b3fe2b5d8d0e8c75bd211cb68787e6"
+        },
+        {
+          "source_id": "molten_about",
+          "source_url": "https://investors.moltenventures.com/about-molten",
+          "source_title": "About Molten Ventures Plc",
+          "source_content_hash": "0da7e1bd16f677fa2a61cf26952fb857eccd1a472c94e8a1cbea60b3a3048040",
+          "quote": "Molten Ventures is a leading venture capital firm with a twenty year track record of investing in high-growth private technology companies across Europe.",
+          "quote_hash": "25fb3ef6850872725c2a9243c3e57fbc12cf27212f07fe804fc2cc93a0a2c00b"
+        },
+        {
+          "source_id": "molten_portfolio",
+          "source_url": "https://www.moltenventures.com/portfolio/all",
+          "source_title": "Portfolio | Molten Ventures",
+          "source_content_hash": "0a799818ae5c0c9a6fa50fb80e793ab0027b3c18bc5b5f1364ff30787395c0b5",
+          "quote": "ICEYE operates the world’s largest synthetic aperture radar (SAR) satellite constellation … Invested In 2018",
+          "quote_hash": "f18610189ae377f6a1a3172a88d6ebd22ce1573fbb76c3ca7e0f191269907f04"
+        },
+        {
+          "source_id": "molten_contact",
+          "source_url": "https://www.moltenventures.com/contact",
+          "source_title": "Contact | Molten Ventures",
+          "source_content_hash": "38f196789dc0c4bbbdff91ccb1de11916d0369a058fab6334a330caaaba30216",
+          "quote": "Send us your pitch deck and tell us how you’re shaping the future of technology.",
+          "quote_hash": "74ba8e5f927849eaedbc3202d6ca4523dceeebbedbe7ee001ce301471776494b"
+        },
+        {
+          "source_id": "molten_scale",
+          "source_url": "https://investors.moltenventures.com/about-molten",
+          "source_title": "About Molten Ventures Plc",
+          "source_content_hash": "0da7e1bd16f677fa2a61cf26952fb857eccd1a472c94e8a1cbea60b3a3048040",
+          "quote": "over 100 companies currently",
+          "quote_hash": "eff08975b250aa4ea4f761189bf0fbd33186e74af3a39e510aa226d5d1995eda"
+        },
+        {
+          "source_id": "molten_stage",
+          "source_url": "https://investors.moltenventures.com/about-molten",
+          "source_title": "About Molten Ventures Plc",
+          "source_content_hash": "0da7e1bd16f677fa2a61cf26952fb857eccd1a472c94e8a1cbea60b3a3048040",
+          "quote": "We typically invest at the Series A and B stages where there is demonstrable value through proven demand.",
+          "quote_hash": "5db82ae82f63b659bfab7bf7d2ecfe1b3a6c89773d159679660ee6e74e6fd444"
+        },
+        {
+          "source_id": "molten_sectors",
+          "source_url": "https://investors.moltenventures.com/about-molten",
+          "source_title": "About Molten Ventures Plc",
+          "source_content_hash": "0da7e1bd16f677fa2a61cf26952fb857eccd1a472c94e8a1cbea60b3a3048040",
+          "quote": "Fintech; Climate Tech; Space Tech; and AI.",
+          "quote_hash": "3842a20e16e441534887a5301bbb60abcb5e42df73aa1553a55a4c39297b92aa"
+        },
+        {
+          "source_id": "molten_reinvest",
+          "source_url": "https://investors.moltenventures.com/about-molten",
+          "source_title": "About Molten Ventures Plc",
+          "source_content_hash": "0da7e1bd16f677fa2a61cf26952fb857eccd1a472c94e8a1cbea60b3a3048040",
+          "quote": "Returns are then reinvested to create ongoing growth and value creation.",
+          "quote_hash": "e8e2b196c74d88dcab4bcb03104dc3a8acae201eb983815434427e4f9ed39348"
+        },
+        {
+          "source_id": "molten_track",
+          "source_url": "https://investors.moltenventures.com/about-molten",
+          "source_title": "About Molten Ventures Plc",
+          "source_content_hash": "0da7e1bd16f677fa2a61cf26952fb857eccd1a472c94e8a1cbea60b3a3048040",
+          "quote": "We have backed some very notable names from early days to market leading positions.",
+          "quote_hash": "d240e29c77948edd89e4c2b8e797ba7e2f9e3b30217c5c3cb8cc1914e7e6bd97"
+        },
+        {
+          "source_id": "molten_contact_office",
+          "source_url": "https://www.moltenventures.com/contact",
+          "source_title": "Get in Touch | Contact Molten Ventures",
+          "source_content_hash": "38f196789dc0c4bbbdff91ccb1de11916d0369a058fab6334a330caaaba30216",
+          "quote": "London Office 20 Garrick Street, London WC2E 9BT +44 (0) 20 7931 8800",
+          "quote_hash": "580e8b9ef501a4decc0046e838e0c7d76d9dce1faa4ee75635752a3c0d342072"
+        },
+        {
+          "source_id": "molten_contact_dublin",
+          "source_url": "https://www.moltenventures.com/contact",
+          "source_title": "Get in Touch | Contact Molten Ventures",
+          "source_content_hash": "38f196789dc0c4bbbdff91ccb1de11916d0369a058fab6334a330caaaba30216",
+          "quote": "Dublin Office The Merrion Buildings, 18-20 Merrion Street, Dublin D02 XH98",
+          "quote_hash": "b67ea9814d05bde38e9304b13027d38ebb70f52cdcb1936271ecbbca8f948877"
+        }
+      ],
+      "last_verified_at": "2026-09-27"
+    },
+    "INV-d2859cc823accb": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "官网的 200+ 投资及 60+ IPO 数据为机构自报累计口径，官网未在该页面提供计算方法或基金回报数据。Avoca AI 的 1.25 亿美元以上为公司 B 轮总额，并非 Meritech Capital 单笔出资。已核验官方联系方式限于官网。",
+      "summary": "Meritech Capital 是与科技公司合作的投资机构，官网将其描述为小型、平等合伙制，强调低投资数量和高确信度，并由合伙人直接支持创业公司。官网自报自 1999 年以来在 200 多项投资中对应 60 多家 IPO；这些是机构披露的累计数据，不等同于基金回报率。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构定位",
+          "value": "科技投资机构，官网称其采用小型平等合伙制。",
+          "source_id": "meritech_home"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资方式",
+          "value": "官网强调低投资数量、高确信度，合伙人直接参与并与创业者建立长期关系。",
+          "source_id": "meritech_home"
+        },
+        {
+          "field": "self_reported_track_record",
+          "label": "官网自报累计记录",
+          "value": "自 1999 年以来在 200 多项投资中对应 60 多家 IPO；为机构自报数据，不代表基金收益率。",
+          "source_id": "meritech_home"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "Avoca AI 于 2026-04-27 公布超过 1.25 亿美元 B 轮融资，来源称本轮由 Meritech 与 General Catalyst 领投；披露金额为公司融资总额，Meritech 单笔出资未披露。",
+          "source_id": "FISRC-ce3d5e20846f6f71"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Meritech Capital",
+          "url": "https://www.meritechcapital.com/",
+          "source_id": "meritech_home"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "FISRC-ce3d5e20846f6f71",
+          "source_url": "https://www.prnewswire.com/news-releases/avoca-raises-125m-at-1b-valuation-to-power-americas-services-economy-with-ai-302753962.html",
+          "source_title": "Avoca 获投超1.25亿美元，估值达10亿美元，以AI驱动美国服务业经济",
+          "source_content_hash": "3fe3680f5835b8e221f8fb86df7befe7d39650d543b3c9aca986695aedac8491",
+          "quote": "The Series B funding was led by Meritech and General Catalyst",
+          "quote_hash": "bcb53c848d1b78b1efb58f1af73eaaa779195c1267261467e6639c004498f612"
+        },
+        {
+          "source_id": "meritech_home",
+          "source_url": "https://www.meritechcapital.com/",
+          "source_title": "Meritech Capital",
+          "source_content_hash": "e4379d11cb353ea2375bbd49cbaf5d31c8754813c951bc6c8caf22f162db7c24",
+          "quote": "Meritech is an investment firm that partners with companies redefining their markets through technology.",
+          "quote_hash": "39657e7af32029ab834dc7bf4a110170d0ba84ed5c5a75305f41e800ab8f8220"
+        },
+        {
+          "source_id": "meritech_record",
+          "source_url": "https://www.meritechcapital.com/",
+          "source_title": "Meritech Capital",
+          "source_content_hash": "e4379d11cb353ea2375bbd49cbaf5d31c8754813c951bc6c8caf22f162db7c24",
+          "quote": "60+ IPOs across 200+ investments since 1999.",
+          "quote_hash": "8369f5e4d49dbdb68541ef8c1312168378337b0ddd8a7a179f076cdbda41f878"
+        }
+      ],
+      "last_verified_at": "2026-09-27"
+    },
+    "INV-6f80ee9d4de758": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "2025 年的“至多 50 亿美元”是微软官方宣布的投资承诺上限，不应表述为已全部完成出资。Anthropic G 轮总额不等于微软投入金额。M12 是微软支持的风险投资组织，官网记录其早期名称和更名历史；M12 的组合规模和退出数据未计入 Microsoft Corp 档案。",
+      "summary": "Microsoft Corp 作为企业战略投资方出现在融资披露中。微软 2025 年宣布与 Anthropic 扩大合作，并承诺投资至多 50 亿美元；后续融资报道将 Microsoft Corp 列为 Anthropic G 轮参与方，但没有披露微软单独出资额。其企业风险投资组织 M12 与 Microsoft Corp 的直接投资分别记录。",
+      "facts": [
+        {
+          "field": "corporate_investment",
+          "label": "企业战略投资",
+          "value": "微软于 2025-11 宣布，在扩大与 Anthropic 的合作安排中承诺投资至多 50 亿美元；官方公告没有把上限表述为实际已出资金额。",
+          "source_id": "microsoft_anthropic_2025"
+        },
+        {
+          "field": "venture_arm_distinction",
+          "label": "企业风投组织说明",
+          "value": "M12 官网称其使命是通过投资、洞察和与微软的合作加速技术发展；其投资组合数据与 Microsoft Corp 直接投资分别统计。",
+          "source_id": "m12_mission"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2016",
+          "description": "M12 官网将 Microsoft Ventures 的成立年份列为 2016。",
+          "source_id": "m12_history"
+        },
+        {
+          "date": "2018",
+          "description": "M12 官网记载 Microsoft Ventures 于 2018 年更名为 M12。",
+          "source_id": "m12_rename"
+        },
+        {
+          "date": "2025-11-18",
+          "description": "微软宣布与 Anthropic、NVIDIA 建立战略合作，并承诺投资至多 50 亿美元；这是官方宣布的承诺上限。",
+          "source_id": "microsoft_anthropic_2025"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "2026-08-10 的 Anthropic G 轮披露将 Microsoft Corp 列为参与方；该轮总额为 300 亿美元，未披露微软单独出资额。",
+          "source_id": "FISRC-077b1124fc8e9581"
+        },
+        {
+          "description": "2025 年微软官方宣布承诺向 Anthropic 投资至多 50 亿美元，作为更广泛战略合作的一部分；这是上限承诺，不是已确认实际出资额。",
+          "source_id": "microsoft_anthropic_2025"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "微软官方网站",
+          "value": "Microsoft",
+          "url": "https://www.microsoft.com/",
+          "source_id": "microsoft_anthropic_2025"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "FISRC-077b1124fc8e9581",
+          "source_url": "https://sg.finance.yahoo.com/news/gic-backed-openai-rival-anthropic-202159553.html",
+          "source_title": "GIC-backed OpenAI rival Anthropic finalises US$30 bil funding at US$380 bil value",
+          "source_content_hash": "7ff9bbd6aca29214",
+          "quote": "along with participation from a who’s who of other investors, from Sequoia Capital and Lightspeed Venture Partners to Big Tech firms Nvidia Corp and Microsoft Corp.",
+          "quote_hash": "f9050f59785f6003fc0699c9f5dcec1c1613171131640d36bc3ece33945c5d82"
+        },
+        {
+          "source_id": "microsoft_anthropic_2025",
+          "source_url": "https://blogs.microsoft.com/blog/2025/11/18/microsoft-nvidia-and-anthropic-announce-strategic-partnerships/",
+          "source_title": "Microsoft, NVIDIA and Anthropic announce strategic partnerships | The Official Microsoft Blog",
+          "source_content_hash": "32203fccf3f98a2982da9bf7ee5def2f3e4e37664c1b35ca1adcd6fa2b1ff8c1",
+          "quote": "As part of the partnership, NVIDIA and Microsoft are committing to invest up to $10 billion and up to $5 billion respectively in Anthropic.",
+          "quote_hash": "453acb0eb87f9cc756945e7414bcd211a23f86e8e58844eefab9f3c069f3679b"
+        },
+        {
+          "source_id": "m12_history",
+          "source_url": "https://m12.vc/who-we-are/",
+          "source_title": "Who we are | M12",
+          "source_content_hash": "28c68cb4a704d3cc5a4ad01399aba2ab031b76c50eeef79532626b82cc3caa2f",
+          "quote": "Microsoft Ventures is born.",
+          "quote_hash": "182771940f15c27a1ef436de913f8926177169594d7b2250021f2bd85b4649ff"
+        },
+        {
+          "source_id": "m12_rename",
+          "source_url": "https://m12.vc/who-we-are/",
+          "source_title": "Who we are | M12",
+          "source_content_hash": "28c68cb4a704d3cc5a4ad01399aba2ab031b76c50eeef79532626b82cc3caa2f",
+          "quote": "Microsoft Ventures becomes M12",
+          "quote_hash": "502f2e9fea6e2d70910c20ca53c6f48f1ee14a4b299bd344d101a2fe33287c06"
+        },
+        {
+          "source_id": "m12_mission",
+          "source_url": "https://m12.vc/who-we-are/",
+          "source_title": "Who we are | M12",
+          "source_content_hash": "28c68cb4a704d3cc5a4ad01399aba2ab031b76c50eeef79532626b82cc3caa2f",
+          "quote": "Accelerate the future of technology through investments, insights, and meaningful partnership with Microsoft.",
+          "quote_hash": "1bac7756363152e52db7879fb20650e0f94f7f0e0401c3fb5ab82460df146f35"
+        }
+      ],
+      "last_verified_at": "2026-09-27"
     }
   },
   "people": {
@@ -37845,7 +38321,10 @@
       "last_verified_at": "2026-09-25"
     },
     "EN-e3ab81e0f7bb06ad": {
-      "summary": "Garry Tan 是 Y Combinator 总裁兼首席执行官及 General Partner；其经历包括创业、产品设计与工程管理、风险投资和加速器运营。",
+      "summary": "Garry Tan 现任 Y Combinator 总裁兼 CEO、General Partner，职业经历覆盖工程与设计、创业、早期投资和创业加速器运营；曾联合创办 Posterous 与 Initialized Capital。",
+      "coverage_status": "researched",
+      "identity_status": "verified",
+      "coverage_note": "职业经历和学历来自 Y Combinator 官方人物页。YC 页面披露的 2260 亿美元合计企业价值及 35 家以上独角兽建议经验属于 YC 机构口径，不能直接视为 Garry Tan 的个人投资回报。",
       "current_roles": [
         {
           "title": "总裁兼首席执行官、General Partner",
@@ -37855,31 +38334,31 @@
       ],
       "career": [
         {
-          "organization": "Palantir",
-          "title": "设计师、工程经理",
-          "period": "此前经历；具体任职时间未披露",
-          "description": "参与设计公司标识并担任工程管理职务。",
-          "source_id": "garry_yc"
-        },
-        {
-          "organization": "Posterous",
-          "title": "联合创始人",
-          "period": "此前经历；具体任职时间未披露",
-          "description": "联合创办博客平台 Posterous；YC 官方人物页称其后被 Twitter 收购。",
-          "source_id": "garry_yc"
-        },
-        {
           "organization": "Y Combinator",
           "title": "Partner",
           "period": "2011–2015",
-          "description": "参与构建 Bookface 和 Demo Day 网站等创始人项目体验。",
+          "description": "参与建设 Bookface 和 Demo Day 网站等创始人服务。",
           "source_id": "garry_yc"
         },
         {
           "organization": "Initialized Capital",
           "title": "联合创始人",
-          "period": "2015 年离开 YC 后专注该基金",
-          "description": "联合创立风险投资基金 Initialized Capital。",
+          "period": "2015 年离开 YC 后；具体创立日期未列明",
+          "description": "与他人共同创立早期风险投资机构。",
+          "source_id": "garry_yc"
+        },
+        {
+          "organization": "Posterous",
+          "title": "联合创始人",
+          "period": "YC S08；任职起止日期未披露",
+          "description": "创办博客平台 Posterous，该公司后来被 Twitter 收购。",
+          "source_id": "garry_yc"
+        },
+        {
+          "organization": "Palantir",
+          "title": "早期设计师、工程经理",
+          "period": "此前经历；任职日期未披露",
+          "description": "YC 官方人物页称其曾设计 Palantir 标识。",
           "source_id": "garry_yc"
         }
       ],
@@ -37890,11 +38369,15 @@
           "source_id": "garry_yc"
         }
       ],
-      "experience_summary": "职业经历横跨软件工程与设计、创业、早期投资及创业加速器运营；所列经历均来自 Y Combinator 官方人物页。",
+      "experience_summary": "Tan 的经历从软件工程与产品设计延伸到连续创业、风险投资和 YC 加速器领导；YC 官方资料亦披露他参与建设 YC 内部产品与创业者服务。",
       "track_record": [
         {
-          "description": "YC 官方人物页列出 Posterous、Initialized Capital，以及其在 YC 期间构建的 Bookface 和 Demo Day 网站。",
-          "source_id": "garry_yc"
+          "description": "YC 官方页面称其合作过的公司合计价值 2260 亿美元，并称他曾为 35 家以上独角兽公司提供建议；该统计由 YC 披露。",
+          "source_id": "garry_yc_stats"
+        },
+        {
+          "description": "YC 官方人物页列出 Posterous、Initialized Capital，以及他在 YC 期间搭建的 Bookface 和 Demo Day 网站。",
+          "source_id": "garry_yc_career"
         }
       ],
       "sources": [
@@ -37902,53 +38385,81 @@
           "source_id": "garry_yc",
           "source_url": "https://www.ycombinator.com/people/garry-tan",
           "source_title": "Garry Tan: YC Partner | Y Combinator",
-          "source_content_hash": "4c3eef47d9b1139f6e6c8539d94c0056241b9beed7b5593a99accfea19320bce",
-          "quote": "Garry Tan is president and CEO of Y Combinator and a General Partner. He was a partner at Y Combinator from 2011 to 2015, where he built key parts of the YC experience for founders including Bookface and the Demo Day website. Garry is the co-founder of Initialized Capital and Posterous (YC S08), a blog platform acquired by Twitter, and prior to that, he was an early designer and engineering manager at Palantir (NYSE:PLTR), where he designed the company logo. Garry holds a BS in Computer Systems Engineering from Stanford.",
-          "quote_hash": "59e8c3e73e4043e9d6a782c4f22afe157bd246ca8bb451127abdf5019fa93b47"
+          "source_content_hash": "cbebc6ac30fbfd3af14da7e722032c5d970bf38582e44c809950112cc95e87b5",
+          "quote": "Garry Tan is president and CEO of Y Combinator and a General Partner.",
+          "quote_hash": "b0f2dcfefac79536d106412a893b40cac796a71b530c1c394a075735d5402f13"
+        },
+        {
+          "source_id": "garry_yc_career",
+          "source_url": "https://www.ycombinator.com/people/garry-tan",
+          "source_title": "Garry Tan: YC Partner | Y Combinator",
+          "source_content_hash": "cbebc6ac30fbfd3af14da7e722032c5d970bf38582e44c809950112cc95e87b5",
+          "quote": "Garry is the co-founder of Initialized Capital and Posterous (YC S08), a blog platform acquired by Twitter.",
+          "quote_hash": "22dab7ebf5c203f0764c3d30f352370001236ea85e49523d1b2204b0899dfced"
+        },
+        {
+          "source_id": "garry_yc_stats",
+          "source_url": "https://www.ycombinator.com/people/garry-tan",
+          "source_title": "Garry Tan: YC Partner | Y Combinator",
+          "source_content_hash": "cbebc6ac30fbfd3af14da7e722032c5d970bf38582e44c809950112cc95e87b5",
+          "quote": "The companies Garry has worked with are worth a combined $226 billion. He's advised more than 35 unicorns.",
+          "quote_hash": "2ad56cf08462d944e2cca8d3a82f93d95f232ffa0fa82f839fd3ba9b7b42ecc9"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-27"
     },
     "EN-f9ab81cacb3507bd": {
-      "summary": "Guillermo Rauch 是软件工程师及 Vercel CEO，长期参与 JavaScript 开源项目、开发者工具和云基础设施建设。",
+      "summary": "Guillermo Rauch 是软件工程师、Vercel 创始人兼 CEO，长期参与 JavaScript 开源项目、开发者工具和云基础设施建设；曾创办 Cloudup，后由 Automattic 收购。",
       "coverage_status": "researched",
-      "coverage_note": "本档案结合本人公开简介及 Vercel 官方职位信息整理；履历范围和来源摘录见下方。",
+      "identity_status": "verified",
+      "coverage_note": "本人官网用于整理早期项目、创业经历及学历披露情况；Vercel 2026 年官方公告再次列出其创始人兼 CEO 职务。本人公开页面未披露正式教育经历，故学历留空；除已标明信息外，不推断其在各早期项目中的正式任职时间。",
       "current_roles": [
         {
-          "title": "CEO",
+          "title": "创始人兼首席执行官",
           "organization": "Vercel",
-          "source_id": "rauch_about"
+          "source_id": "vercel_betterauth_2026"
         }
       ],
       "career": [
         {
-          "organization": "MooTools",
-          "title": "核心团队成员",
-          "period": "早期经历；年份未披露",
-          "description": "本人简介称其在此后于 18 岁获得第一份全职前端工程师工作。",
-          "source_id": "rauch_about"
+          "organization": "Vercel",
+          "title": "创始人兼首席执行官",
+          "period": "现任；2026 年官方公告核验",
+          "description": "领导面向 Web 开发者的前端云平台 Vercel。",
+          "source_id": "vercel_betterauth_2026"
         },
         {
           "organization": "Cloudup",
-          "title": "创始人",
-          "period": "未披露",
-          "description": "后被 Automattic 收购，用于支持其编辑及建站技术。",
+          "title": "创办人",
+          "period": "任职年份未披露",
+          "description": "其个人介绍称 Cloudup 后被 Automattic 收购。",
           "source_id": "rauch_about"
         },
         {
-          "organization": "Vercel / Next.js",
-          "title": "创始人及开发者工具建设者",
-          "period": "未披露",
-          "description": "本人将 Next.js 与 Vercel 描述为开发 Web 工具及云基础设施机会下诞生的项目。",
+          "organization": "MooTools",
+          "title": "核心团队成员",
+          "period": "早期经历；年份未披露",
+          "description": "个人简介列出的早期 JavaScript 社区经历。",
+          "source_id": "rauch_about"
+        },
+        {
+          "organization": "Socket.IO、Mongoose、Next.js",
+          "title": "开源项目建设者",
+          "period": "项目时间线未在个人简介中完整列明",
+          "description": "本人介绍列出其参与创建的开源工具及后来建设的 Web 开发和云平台项目。",
           "source_id": "rauch_about"
         }
       ],
       "education": [],
-      "experience_summary": "本人简介强调其软件工程、开源及创业经历；未披露正式学历信息。",
+      "experience_summary": "其公开经历集中在软件工程、JavaScript 开源生态、开发者工具产品创业和云平台建设；未找到可靠的公开学历信息。",
       "track_record": [
         {
-          "description": "本人简介列出 Socket.IO、Mongoose 等开源项目，并称 Cloudup 后被 Automattic 收购。",
+          "description": "本人介绍称其创办的 Cloudup 后被 Automattic 收购，并列出 Socket.IO、Mongoose 等开源项目。",
           "source_id": "rauch_about"
+        },
+        {
+          "description": "Vercel 2026 年官方公告继续以 CEO and Founder 称呼 Guillermo Rauch。",
+          "source_id": "vercel_betterauth_2026"
         }
       ],
       "sources": [
@@ -37957,11 +38468,19 @@
           "source_url": "https://rauchg.com/about",
           "source_title": "About | Guillermo Rauch",
           "source_content_hash": "7e6f396830e994163179edc11be9ace14209bb7a2097d5a36a72dea4193332b7",
-          "quote": "I’m a software engineer and CEO of Vercel. I started my first company Cloudup in SF which was later acquired by Automattic. After being involved in creating numerous influential open source projects like Socket.IO and Mongoose, I saw the opportunity in creating tooling and cloud infrastructure to make the Web faster. Next.js and Vercel were born.",
-          "quote_hash": "174fffc4e94c3f180dc30793d1400423e831df0724b3ef3b96544f416160cbd5"
+          "quote": "I’m a software engineer and CEO of Vercel. I started my first company Cloudup in SF which was later acquired by Automattic.",
+          "quote_hash": "9c6b56d0f91463f488ad3937e70995423b33e467aecb13f7fd56146a36678679"
+        },
+        {
+          "source_id": "vercel_betterauth_2026",
+          "source_url": "https://vercel.com/blog/vercel-acquires-better-auth",
+          "source_title": "Vercel acquires Better Auth to accelerate open source auth",
+          "source_content_hash": "5ff55e4f9959077cdc17e4c9bfb1197af00a3e942d1734942827740b53c748e8",
+          "quote": "CEO and Founder, Vercel",
+          "quote_hash": "d91e72c88292a59a1688fe521076bfb069d2e9511cac089f7a369e81c6bc9230"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-27"
     },
     "EN-52279415a0ac4fc4": {
       "summary": "Aaron Levie 是 Box 联合创始人兼 CEO，长期负责企业内容云业务。",
@@ -38142,60 +38661,89 @@
       "last_verified_at": "2026-09-25"
     },
     "EN-cc1a23ffcf54716a": {
-      "summary": "Amanda Askell 是哲学家，现于 Anthropic 从事模型微调与 AI 对齐研究；此前在 OpenAI 政策团队工作。",
+      "summary": "Amanda Askell 是哲学家与 AI 对齐研究者，现于 Anthropic 参与 Character 工作并主导 Claude Constitution；此前在 OpenAI 政策团队研究 AI 安全。",
+      "coverage_status": "researched",
+      "identity_status": "verified",
+      "coverage_note": "Anthropic 2026 年 Constitution 用于确认 Askell 当前主导 Character 工作及其主要作者身份；具体任职名称和 2021–至今任期来自本人公开 CV。教育学位、论文主题及此前 OpenAI 职务按本人 CV 记录。",
       "current_roles": [
         {
-          "title": "哲学家、模型微调与 AI 对齐研究",
+          "title": "Character 工作负责人、Claude Constitution 主要作者",
           "organization": "Anthropic",
-          "source_id": "amanda_site"
+          "source_id": "anthropic_constitution"
+        },
+        {
+          "title": "Alignment Finetuning Research Scientist（本人 CV 所列）",
+          "organization": "Anthropic",
+          "source_id": "amanda_cv"
         }
       ],
       "career": [
         {
           "organization": "Anthropic",
-          "title": "AI 对齐与微调研究",
-          "period": "本人简介当前表述；未披露起始时间",
-          "description": "负责训练模型的相关研究并探索可扩展的微调技术。",
-          "source_id": "amanda_site"
+          "title": "Research Scientist（Alignment Finetuning）",
+          "period": "2021–Present（本人 CV）",
+          "description": "公开 CV 将其研究方向列为模型对齐微调；Anthropic 2026 年资料确认其负责 Character 工作。",
+          "source_id": "amanda_cv"
         },
         {
           "organization": "OpenAI",
-          "title": "政策团队研究科学家",
-          "period": "此前经历；任职时间未披露",
-          "description": "参与 AI 安全辩论与模型表现基准研究。",
-          "source_id": "amanda_site"
+          "title": "Research Scientist（Policy）",
+          "period": "2018–2021",
+          "description": "本人 CV 所列研究岗位。",
+          "source_id": "amanda_cv"
         }
       ],
       "education": [
         {
           "institution": "New York University",
-          "qualification": "哲学博士",
-          "source_id": "amanda_site"
+          "qualification": "哲学博士，2011–2018；论文方向为无限伦理中的 Pareto 原则",
+          "source_id": "amanda_cv"
         },
         {
           "institution": "University of Oxford",
-          "qualification": "哲学 BPhil",
-          "source_id": "amanda_site"
+          "qualification": "哲学 BPhil，2009–2011",
+          "source_id": "amanda_cv"
         },
         {
           "institution": "University of Dundee",
-          "qualification": "哲学本科；简介未提供学位名称",
-          "source_id": "amanda_site"
+          "qualification": "哲学 MA (Hons)，2005–2009",
+          "source_id": "amanda_cv"
         }
       ],
-      "experience_summary": "本人简介披露其哲学、伦理学、决策理论与形式认识论研究背景。",
-      "track_record": [],
+      "experience_summary": "Askell 的研究背景包括哲学、伦理学与决策理论，职业经验涵盖 OpenAI 政策研究、Anthropic 模型对齐微调和 Claude Character 设计。",
+      "track_record": [
+        {
+          "description": "Anthropic 2026 年发布的 Claude Constitution 将 Askell 列为 Character 工作负责人和主要作者；Anthropic 称其撰写了大部分内容并领导多轮修订。",
+          "source_id": "anthropic_constitution"
+        }
+      ],
       "sources": [
         {
           "source_id": "amanda_site",
           "source_url": "https://askell.io/",
           "source_title": "About Me | Amanda Askell",
           "source_content_hash": "5022b82ecc3f1126a99bb90c5cbeaf8f100f8eec57c49f468f04378152531cb9",
-          "quote": "I’m a philosopher working on finetuning and AI alignment at Anthropic. Before this I worked as a research scientist on the policy team at OpenAI. I have a PhD in philosophy from NYU and a BPhil in philosophy from the University of Oxford. I did my undergraduate degree in Philosophy at the University of Dundee.",
-          "quote_hash": "c25cbbea30bc9a7f7c027455b2df54bb7720a17a7a14acf8fc1b58fb72ce3c83"
+          "quote": "I’m a philosopher working on finetuning and AI alignment at Anthropic.",
+          "quote_hash": "6fcefe879c86be3298bd7c46bb2c6a778493b1c8f555f766e10525ed2c54872c"
+        },
+        {
+          "source_id": "amanda_cv",
+          "source_url": "https://askell.io/cv/",
+          "source_title": "Curriculum Vitae | Amanda Askell",
+          "source_content_hash": "34e38f9fee5a1d454a86c4809ac1cbccdc862e8a9c496bccbdba382d9b2c90a5",
+          "quote": "Research Scientist (Alignment Finetuning), Anthropic, 2021 - Present; Research Scientist (Policy), OpenAI, 2018 - 2021.",
+          "quote_hash": "b114aeb5cbf93399841f27da541bffb006256bc0e4414c869e8329b30556aed0"
+        },
+        {
+          "source_id": "anthropic_constitution",
+          "source_url": "https://www.anthropic.com/constitution",
+          "source_title": "Claude’s Constitution | Anthropic",
+          "source_content_hash": "ced45d43c4b7b9e774a9d3bdf4f0774e1a1d937c8181925a2df2d3747c9aedc6",
+          "quote": "Amanda Askell leads Anthropic's Character work and is the primary author of this document.",
+          "quote_hash": "ff15ecd1fb518cda754ee2eae77b4b857e5ac8b5ca1b46ed10f18dc8b5480469"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-27"
     },
     "EN-fd67ab47893c5a98": {
       "summary": "Amjad Masad 是 Replit 创始人兼 CEO，曾在 Facebook 负责 JavaScript 基础设施团队，并在 Codecademy 担任创始工程师。",
@@ -38245,8 +38793,16 @@
       "last_verified_at": "2026-09-25"
     },
     "EN-752ced3f98f1640f": {
-      "summary": "Andrej Karpathy 是 AI 研究者与教育者，曾为 OpenAI 创始成员、Tesla AI 负责人及 Stanford 深度学习课程主讲者。",
+      "summary": "Andrej Karpathy 是 AI 研究者与教育者，曾任 OpenAI 创始成员和 Tesla AI 负责人，负责 Autopilot 计算机视觉团队；此后回到 OpenAI 从事训练数据研究，并创办 AI 教育项目 Eureka Labs。",
+      "coverage_status": "researched",
+      "identity_status": "verified",
+      "coverage_note": "本人官网公开时间线最新分组为 2024 年起，本档案据此记录 AI 教育和 Eureka Labs 项目；未从公开页面推断其 2026 年后的新增任职。学历、CS231n 教学规模及实习经历均来自本人公开简历。",
       "current_roles": [
+        {
+          "title": "创办人",
+          "organization": "Eureka Labs",
+          "source_id": "karpathy_eureka"
+        },
         {
           "title": "AI 研究者与教育者",
           "organization": "独立研究与教育工作",
@@ -38255,57 +38811,189 @@
       ],
       "career": [
         {
+          "organization": "Eureka Labs",
+          "title": "创办人",
+          "period": "2024–；本人官网作为当前时间线列示",
+          "description": "发起 AI 教育公司，建设 AI-native 学校与课程项目。",
+          "source_id": "karpathy_eureka"
+        },
+        {
           "organization": "OpenAI",
-          "title": "创始成员",
-          "period": "本人履历所述历史经历；任期未列明",
-          "description": "个人网站列为 OpenAI founding member。",
-          "source_id": "karpathy_site"
+          "title": "研究团队负责人（midtraining 与合成数据）",
+          "period": "2023–2024",
+          "description": "本人时间线称其回到 OpenAI，组建团队从事 midtraining 与合成数据生成。",
+          "source_id": "karpathy_openai_2023"
         },
         {
           "organization": "Tesla",
-          "title": "AI 负责人",
-          "period": "本人履历所述历史经历；任期未列明",
-          "description": "领导 Autopilot 计算机视觉团队。",
-          "source_id": "karpathy_site"
+          "title": "AI 总监",
+          "period": "2017–2022",
+          "description": "领导 Tesla Autopilot 计算机视觉团队，负责数据标注、模型训练与部署。",
+          "source_id": "karpathy_timeline"
+        },
+        {
+          "organization": "OpenAI",
+          "title": "研究科学家、创始成员",
+          "period": "2015–2017",
+          "description": "本人时间线披露其作为研究科学家和创始成员加入 OpenAI。",
+          "source_id": "karpathy_openai_2015"
+        },
+        {
+          "organization": "DeepMind",
+          "title": "深度强化学习团队实习生",
+          "period": "2015",
+          "description": "本人官网列出其在 DeepMind 深度强化学习团队实习。",
+          "source_id": "karpathy_deepmind"
         },
         {
           "organization": "Stanford University",
-          "title": "深度学习课程架构者与主讲教师",
-          "period": "博士期间；具体年份未写于简介",
-          "description": "主导 CS231n 课程。",
-          "source_id": "karpathy_site"
+          "title": "CS231n 课程架构者与主讲教师",
+          "period": "2015 年起；博士期间",
+          "description": "设计并主讲卷积神经网络视觉识别课程。",
+          "source_id": "karpathy_cs231n"
+        },
+        {
+          "organization": "Google Research",
+          "title": "大规模监督学习研究实习生",
+          "period": "2013",
+          "description": "本人官网称其研究 YouTube 视频的大规模监督学习。",
+          "source_id": "karpathy_google"
+        },
+        {
+          "organization": "Google Brain",
+          "title": "无监督学习研究实习生",
+          "period": "2011",
+          "description": "本人官网称其研究视频的大规模无监督学习。",
+          "source_id": "karpathy_google"
         }
       ],
       "education": [
         {
           "institution": "Stanford University",
-          "qualification": "计算机科学博士",
-          "source_id": "karpathy_site"
+          "qualification": "计算机科学博士，2011–2015；导师 Fei-Fei Li（Stanford Vision Lab）",
+          "source_id": "karpathy_phd"
         },
         {
           "institution": "University of British Columbia",
-          "qualification": "理学硕士",
-          "source_id": "karpathy_site"
+          "qualification": "理学硕士，2009–2011；研究物理模拟人物的学习控制器",
+          "source_id": "karpathy_msc"
         },
         {
           "institution": "University of Toronto",
-          "qualification": "计算机科学与物理学双专业理学学士、数学辅修",
-          "source_id": "karpathy_site"
+          "qualification": "理学学士，2005–2009；计算机科学与物理学双专业、数学辅修",
+          "source_id": "karpathy_education"
         }
       ],
-      "experience_summary": "本人网站记录其 AI 研究、计算机视觉、深度学习教学与教育内容经历。",
-      "track_record": [],
+      "experience_summary": "经历涵盖深度学习研究、自动驾驶计算机视觉、模型训练、科研实习与高校课程设计；当前公开项目包括 AI 教育和线上课程。",
+      "track_record": [
+        {
+          "description": "本人官网称其设计并主讲 Stanford CS231n；课程招生人数由 2015 年的 150 人增加至 2016 年 330 人、2017 年 750 人。",
+          "source_id": "karpathy_cs231n"
+        },
+        {
+          "description": "Eureka Labs 官网介绍其 AI-native 学校方向，首个课程项目为 LLM101n。",
+          "source_id": "eureka_site"
+        }
+      ],
       "sources": [
         {
           "source_id": "karpathy_site",
           "source_url": "https://karpathy.ai/",
           "source_title": "Andrej Karpathy",
           "source_content_hash": "0c583717e0208480e7cf0a2560ed75479acb1b18a251070e5541657205be141d",
-          "quote": "Andrej Karpathy is an AI researcher and educator. He was a founding member of OpenAI and later the Director of AI at Tesla, where he led the computer vision team of the Autopilot. During his PhD at Stanford he was the architect and lead instructor of the first deep learning course at Stanford (CS231n). He received an MSc at the University of British Columbia and a BSc at the University of Toronto.",
-          "quote_hash": "82c7e81c5da1eceafba18fe55d928c3a9f4371f4d77505f0a25c8eda520590a0"
+          "quote": "Andrej Karpathy is an AI researcher and educator. He was a founding member of OpenAI.",
+          "quote_hash": "c0e737cca79844ff43dc6c000654368d435517bb905277b1287c6e71d622a240"
+        },
+        {
+          "source_id": "karpathy_timeline",
+          "source_url": "https://karpathy.ai/",
+          "source_title": "Andrej Karpathy",
+          "source_content_hash": "0c583717e0208480e7cf0a2560ed75479acb1b18a251070e5541657205be141d",
+          "quote": "2017 - 2022 I was the Director of AI at Tesla, where I led the computer vision team of Tesla Autopilot.",
+          "quote_hash": "4c289d1b6e70c0d0a4e71bbc50702c6dbccb2bc30f8570c3b9d13f9c295425b0"
+        },
+        {
+          "source_id": "karpathy_eureka",
+          "source_url": "https://karpathy.ai/",
+          "source_title": "Andrej Karpathy",
+          "source_content_hash": "0c583717e0208480e7cf0a2560ed75479acb1b18a251070e5541657205be141d",
+          "quote": "I started Eureka Labs, an AI+Education company.",
+          "quote_hash": "dceb174f33d79577a0463df63a4b11128ba4f5a08791671686511d2866cc7b4c"
+        },
+        {
+          "source_id": "eureka_site",
+          "source_url": "https://eurekalabs.ai/",
+          "source_title": "Introducing Eureka Labs",
+          "source_content_hash": "7dd89cb3e0861d67064f65092e83ea55aec59ac89665f2ba77337437210747eb",
+          "quote": "We are Eureka Labs and we are building a new kind of school that is AI native.",
+          "quote_hash": "b1ffc9f2aa5eae572e6bf6e786d2efd7ab8e613407ae58f61ed3a48209ce0415"
+        },
+        {
+          "source_id": "karpathy_openai_2015",
+          "source_url": "https://karpathy.ai/",
+          "source_title": "Andrej Karpathy",
+          "source_content_hash": "0c583717e0208480e7cf0a2560ed75479acb1b18a251070e5541657205be141d",
+          "quote": "2015 - 2017 I was a research scientist and a founding member at OpenAI.",
+          "quote_hash": "c9ac1428f1b6469c3178e6490d2003574a9881276d09753b4007dbb0d48a363c"
+        },
+        {
+          "source_id": "karpathy_openai_2023",
+          "source_url": "https://karpathy.ai/",
+          "source_title": "Andrej Karpathy",
+          "source_content_hash": "0c583717e0208480e7cf0a2560ed75479acb1b18a251070e5541657205be141d",
+          "quote": "2023 - 2024 I came back to OpenAI where I built a new team working on midtraining and synthetic data generation.",
+          "quote_hash": "59fb27e27639c99192ebd09f45b9f6f2b3d2c9d9e953b7fadb23a80190c59409"
+        },
+        {
+          "source_id": "karpathy_education",
+          "source_url": "https://karpathy.ai/",
+          "source_title": "Andrej Karpathy",
+          "source_content_hash": "0c583717e0208480e7cf0a2560ed75479acb1b18a251070e5541657205be141d",
+          "quote": "2005 - 2009 BSc at the University of Toronto with a double major in computer science and physics and a minor in math.",
+          "quote_hash": "4545d867d82b59fe954be2b911dacb9457781c00200f0ad29056a4316e1e1a30"
+        },
+        {
+          "source_id": "karpathy_phd",
+          "source_url": "https://karpathy.ai/",
+          "source_title": "Andrej Karpathy",
+          "source_content_hash": "0c583717e0208480e7cf0a2560ed75479acb1b18a251070e5541657205be141d",
+          "quote": "My adviser was Fei-Fei Li at the Stanford Vision Lab.",
+          "quote_hash": "9b6169cfcb10965e4caa70bbf797dd902470b8e67ec424dd3445aebaeab5bc77"
+        },
+        {
+          "source_id": "karpathy_msc",
+          "source_url": "https://karpathy.ai/",
+          "source_title": "Andrej Karpathy",
+          "source_content_hash": "0c583717e0208480e7cf0a2560ed75479acb1b18a251070e5541657205be141d",
+          "quote": "2009 - 2011 MSc at the University of British Columbia where I worked with Michiel van de Panne",
+          "quote_hash": "b39605da0f9fbbe1cd6891164c2813d7a52a50fa4f5a9b948dbba2d23191b9a3"
+        },
+        {
+          "source_id": "karpathy_cs231n",
+          "source_url": "https://karpathy.ai/",
+          "source_title": "Andrej Karpathy",
+          "source_content_hash": "0c583717e0208480e7cf0a2560ed75479acb1b18a251070e5541657205be141d",
+          "quote": "150 enrolled in 2015 to 330 students in 2016, and 750 students in 2017.",
+          "quote_hash": "f70112b449fbeb0ac41b1e3b5c6a8b577b0ac4130e32a9eab181f405e7c5763e"
+        },
+        {
+          "source_id": "karpathy_google",
+          "source_url": "https://karpathy.ai/",
+          "source_title": "Andrej Karpathy",
+          "source_content_hash": "0c583717e0208480e7cf0a2560ed75479acb1b18a251070e5541657205be141d",
+          "quote": "I squeezed in 3 internships at (baby) Google Brain in 2011 … Google Research in 2013.",
+          "quote_hash": "1221df3c8a4e83f649eccc47663af4affe5f485b178c0e249da6dab3f0cc5bfc"
+        },
+        {
+          "source_id": "karpathy_deepmind",
+          "source_url": "https://karpathy.ai/",
+          "source_title": "Andrej Karpathy",
+          "source_content_hash": "0c583717e0208480e7cf0a2560ed75479acb1b18a251070e5541657205be141d",
+          "quote": "DeepMind in 2015 working on the deep reinforcement learning team.",
+          "quote_hash": "f4bb57ab491db13e08079ddcc76ff9825684761428eaf8d7f7ab28da667d49c1"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-27"
     },
     "EN-a1b944b37228d951": {
       "summary": "Jack Clark 是 Anthropic 联合创始人、公共利益负责人及 Anthropic Institute 负责人。Anthropic 将该研究院定位为研究前沿 AI 对社会影响的机构，覆盖经济、就业、社会影响及法律议题。现职依据公司当前领导页核验；开始任职日期及教育背景未由这些来源披露。",
