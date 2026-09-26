@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-26T00:27:56.714Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3576,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -70,6 +70,7 @@
       "EV-3e449c3e9ad6a9e1",
       "EV-9c0552732b34f278",
       "EV-cec69087dc8992e0",
+      "EV-fc0e8b84c1c47f91",
       "EV-813ced5e5514d81b",
       "EV-b33256317fc8ef4f",
       "EV-7ddb091b3486341a"
@@ -84,7 +85,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-17",
-    "lastSeen": "2026-09-24",
+    "lastSeen": "2026-09-26",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -105,10 +106,27 @@
         "EV-7ddb091b3486341a"
       ],
       "other": [
+        "EV-fc0e8b84c1c47f91",
         "EV-813ced5e5514d81b"
       ]
     },
     "timeline": [
+      {
+        "id": "EV-fc0e8b84c1c47f91",
+        "dataDate": "2026-09-26",
+        "date": "2026-09-25",
+        "eventType": "research_result",
+        "eventTypeLabel": "研究结果",
+        "eventGroup": "研究结果",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Claude 完成 N=4 超对称 Yang-Mills 九圈振幅计算，物理学家 Matt von Hippel 复盘挑战始末",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c857d09db23e6822",
+          "EN-c9a7b9b2d48539e7"
+        ]
+      },
       {
         "id": "EV-813ced5e5514d81b",
         "dataDate": "2026-09-24",
@@ -874,6 +892,7 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-b8eb460540c33d68",
         "EV-0d5a32aca724d30e",
         "EV-1873f3c6fa4bdedd",
         "EV-3bf02572d01ed324",

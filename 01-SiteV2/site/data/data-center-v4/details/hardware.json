@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-26T00:27:56.714Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3576,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -18730,6 +18730,143 @@
     }
   ],
   "events": [
+    {
+      "id": "EV-95ba9cc4f4d52ea4",
+      "dataDate": "2026-09-26",
+      "date": "2026-09-25",
+      "updatedDate": "2026-09-26",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "英国AI新云公司Nscale在赴美IPO前获得33.6亿美元可转换融资",
+      "originalTitle": "Ahead of US IPO, British AI neocloud Nscale secures $3.36B in convertible financing",
+      "subject": "Ahead of US IPO, British AI neocloud Nscale",
+      "action": "secures",
+      "object": "$3.36B in convertible financing",
+      "metrics": [
+        "$3.36B",
+        "$3.36 billion",
+        "$35 billion",
+        "$3 billion"
+      ],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "compute_cloud_service",
+            "name": "算力云服务",
+            "entityIds": [
+              "EN-fc261198a189a8eb"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "compute_cloud_service",
+          "name": "算力云服务",
+          "entityIds": [
+            "EN-fc261198a189a8eb"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "compute_cloud_service",
+          "name": "算力云服务",
+          "entityIds": [
+            "EN-fc261198a189a8eb"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-fc261198a189a8eb",
+        "EN-1ee76e9f557ba6f9"
+      ],
+      "entityNames": [
+        "Ahead of US IPO, British AI neocloud Nscale",
+        "Ahead of US IPO"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/09/25/ahead-of-u-s-ipo-british-ai-neocloud-nscale-secures-3-36b-in-convertible-finacing",
+      "publisher": "TechCrunch AI"
+    },
+    {
+      "id": "EV-e993070274a188d9",
+      "dataDate": "2026-09-26",
+      "date": "2026-09-25",
+      "updatedDate": "2026-09-26",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "华为大模型双子星联手创业，要找物理世界的Scaling Law",
+      "originalTitle": "",
+      "subject": "息壤开物",
+      "action": "funding",
+      "object": "数亿元种子轮及天使轮融资",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-b81c8201acfc7639",
+        "EN-67895119a5182d06",
+        "EN-0de9103a2df32810"
+      ],
+      "entityNames": [
+        "Huawei",
+        "息壤开物",
+        "已经连续"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://qbitai.com/2026/09/497070.html",
+      "publisher": "量子位"
+    },
     {
       "id": "EV-0d0b83c319d971b0",
       "dataDate": "2026-09-24",
@@ -52017,9 +52154,9 @@
     },
     {
       "id": "EV-81bbaaec2965864a",
-      "dataDate": "2026-09-24",
+      "dataDate": "2026-09-26",
       "date": "2026-09-02",
-      "updatedDate": "2026-09-24",
+      "updatedDate": "2026-09-26",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
@@ -232083,6 +232220,243 @@
       "publisher": "front.ai"
     },
     {
+      "id": "EV-78758ccb5d45f4f9",
+      "dataDate": "2026-09-26",
+      "date": "2026-09-26",
+      "updatedDate": "2026-09-26",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Anthropic 为 Claude 上线限时免费额度重置功能，每位用户仅可用一次",
+      "originalTitle": "",
+      "subject": "Anthropic 为 Claude",
+      "action": "上线",
+      "object": "限时免费额度重置功能，每位用户仅可用一次",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-921b8acadc36ab7f"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "限时免费额度重置"
+      ],
+      "productName": "限时免费额度重置",
+      "products": [
+        {
+          "name": "限时免费额度重置",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/1/007/256.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-ffe9a66690dc8b19",
+      "dataDate": "2026-09-26",
+      "date": "2026-09-26",
+      "updatedDate": "2026-09-26",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Anthropic 与 Akamai 签署 7 年 116 亿美元 CPU 算力协议",
+      "originalTitle": "",
+      "subject": "Anthropic",
+      "action": "procurement_contract",
+      "object": "Akamai",
+      "metrics": [
+        "116 亿",
+        "779.2 亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/1/007/263.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-7d186033b26431e7",
+      "dataDate": "2026-09-26",
+      "date": "2026-09-25",
+      "updatedDate": "2026-09-26",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "eventGroup": "商业合作",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "Crusoe 放弃在 AI 数据中心使用 Boom 涡轮机的 $1.25B 计划",
+      "originalTitle": "Crusoe abandons $1.25B plan to use Boom turbines at AI data centers",
+      "subject": "Crusoe",
+      "action": "procurement_contract",
+      "object": "Boom Supersonic",
+      "metrics": [
+        "$1.25 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-d41ebd9f02722fc8"
+      ],
+      "entityNames": [
+        "Crusoe"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/09/25/crusoe-abandons-1-25b-plan-to-use-boom-turbines-at-ai-data-centers",
+      "publisher": "TechCrunch AI"
+    },
+    {
+      "id": "EV-c7382536eddbbc85",
+      "dataDate": "2026-09-26",
+      "date": "2026-09-25",
+      "updatedDate": "2026-09-26",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "微软 Copilot 进入组织架构图：职场智能体能否规模化落地",
+      "originalTitle": "",
+      "subject": "Microsoft",
+      "action": "落地",
+      "object": "微软 Copilot 进入组织架构图：职场智能体能否规模化落地",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "entityNames": [
+        "Microsoft"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://every.to/p/copilot-gets-a-seat-in-the-org-chart",
+      "publisher": "Every：最新文章（网页）"
+    },
+    {
+      "id": "EV-0e424af71cfe12f8",
+      "dataDate": "2026-09-26",
+      "date": "2026-09-24",
+      "updatedDate": "2026-09-26",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "eventGroup": "AI 硬件",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "Google Project Suncatcher 将发射搭载 TPU 的原型卫星测试太空 AI 算力",
+      "originalTitle": "",
+      "subject": "Google",
+      "action": "hardware_deployment",
+      "object": "prototype satellite with Tensor Processing Units",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-bbdefa2950f49882"
+      ],
+      "entityNames": [
+        "Google"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/google-research/google-project-suncatcher-facts",
+      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）"
+    },
+    {
       "id": "EV-1e3f8cd7c5b09d97",
       "dataDate": "2026-09-24",
       "date": "2026-09-23",
@@ -275531,17 +275905,17 @@
     },
     {
       "id": "EV-03992c9b7f8fef10",
-      "dataDate": "2026-09-24",
-      "date": "2026-09-24",
-      "updatedDate": "2026-09-24",
+      "dataDate": "2026-09-26",
+      "date": "2026-09-26",
+      "updatedDate": "2026-09-26",
       "eventType": "product_release",
       "eventTypeLabel": "产品发布",
       "eventGroup": "模型、产品与服务",
       "status": "announced",
       "statusLabel": "已公布",
       "publicationStatus": "verified",
-      "title": "推出 Awarded AI - Procurement Sciences",
-      "originalTitle": "Introducing, Awarded AI - Procurement Sciences",
+      "title": "推出获奖AI",
+      "originalTitle": "Introducing, Awarded AI",
       "subject": "Procurement Sciences",
       "action": "product_release",
       "object": "Awarded AI",
@@ -275584,24 +275958,212 @@
       "publisher": "procurementsciences.com"
     },
     {
-      "id": "EV-0d841753e8afa8f4",
-      "dataDate": "2026-09-24",
-      "date": "2026-09-24",
-      "updatedDate": "2026-09-24",
+      "id": "EV-8061c8eb754e0542",
+      "dataDate": "2026-09-26",
+      "date": "2026-09-26",
+      "updatedDate": "2026-09-26",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Cloudera AI 推理服务",
+      "originalTitle": "Cloudera AI Inference Service",
+      "subject": "Cloudera",
+      "action": "product_release",
+      "object": "Cloudera AI Inference service",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-2f265a693b2897f1",
+        "EN-8d4321d936320802",
+        "EN-ae11c0abf6288776"
+      ],
+      "entityNames": [
+        "Cloudera",
+        "NVIDIA",
+        "AI Inference"
+      ],
+      "productName": "AI Inference",
+      "products": [
+        {
+          "name": "AI Inference",
+          "type": "产品/服务",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        }
+      ],
+      "sourceUrl": "https://cloudera.com/products/enterprise-ai/ai/ai-inference-service.html",
+      "publisher": "cloudera.com"
+    },
+    {
+      "id": "EV-d675907ad59a707e",
+      "dataDate": "2026-09-26",
+      "date": "2026-09-26",
+      "updatedDate": "2026-09-26",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Prosper AI 新闻中心：新闻稿与公司新闻",
+      "originalTitle": "Prosper AI Newsroom: Press Releases & Company News",
+      "subject": "Prosper AI Newsroom: Press",
+      "action": "Releases",
+      "object": "& Company News",
+      "metrics": [
+        "$30 million"
+      ],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-ebb2319d88e082f4"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-ebb2319d88e082f4"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-ebb2319d88e082f4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-ebb2319d88e082f4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-ebb2319d88e082f4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-ebb2319d88e082f4"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-ebb2319d88e082f4",
+        "EN-0e15ea298efa36a7",
+        "EN-0cd29b68e5718821"
+      ],
+      "entityNames": [
+        "Prosper AI Newsroom",
+        "Company News",
+        "AI Newsroom"
+      ],
+      "productName": "Company News",
+      "products": [
+        {
+          "name": "Company News",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "AI Newsroom",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://getprosper.ai/press",
+      "publisher": "getprosper.ai"
+    },
+    {
+      "id": "EV-bd0b10ee8ccdff16",
+      "dataDate": "2026-09-26",
+      "date": "2026-09-25",
+      "updatedDate": "2026-09-26",
       "eventType": "product_release",
       "eventTypeLabel": "产品发布",
       "eventGroup": "模型、产品与服务",
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "高通发布第二代骁龙音频平台至尊版：AI 能力翻倍、功耗降低 40%",
+      "title": "微软发布新版 Copilot，引入 Home、Code 与 Autopilot",
       "originalTitle": "",
-      "subject": "高通",
+      "subject": "Microsoft",
       "action": "发布",
-      "object": "第二代骁龙音频平台至尊版：AI 能力翻倍、功耗降低 40%",
-      "metrics": [
-        "40%"
-      ],
+      "object": "新版 Copilot，引入 Home、Code 与 Autopilot",
+      "metrics": [],
       "locations": [],
       "missingFields": [],
       "conflicts": [],
@@ -275619,21 +276181,75 @@
       "classifications": [],
       "displayTags": [],
       "entityIds": [
-        "EN-42a64c68a4a98ad5"
+        "EN-9fbf261b62c1d7c0"
       ],
       "entityNames": [
-        "高通"
+        "Microsoft"
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://ithome.com/1/006/516.htm",
+      "sourceUrl": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot",
+      "publisher": "Microsoft：Official Blog（RSS）"
+    },
+    {
+      "id": "EV-e73afa921975ec85",
+      "dataDate": "2026-09-26",
+      "date": "2026-09-25",
+      "updatedDate": "2026-09-26",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "马斯克：若保持强劲加速度，SpaceX AI 约 6 个月后就能领跑",
+      "originalTitle": "",
+      "subject": "SpaceX",
+      "action": "model_release",
+      "object": "Fable / GPT-6 级别的模型",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-e78bdebae031095b",
+        "EN-3850792f618f534b"
+      ],
+      "entityNames": [
+        "SpaceX",
+        "GPT-6"
+      ],
+      "productName": "GPT-6",
+      "products": [
+        {
+          "name": "GPT-6",
+          "type": "模型",
+          "ownerNames": [
+            "SpaceX"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/1/007/069.htm",
       "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-1b912ec16c50fc0f",
-      "dataDate": "2026-09-24",
+      "dataDate": "2026-09-26",
       "date": "2026-09-24",
-      "updatedDate": "2026-09-24",
+      "updatedDate": "2026-09-26",
       "eventType": "model_release",
       "eventTypeLabel": "模型发布",
       "eventGroup": "模型、产品与服务",
@@ -275727,6 +276343,405 @@
       ],
       "sourceUrl": "https://simonwillison.net/2026/Sep/23/gemini-tts-playground",
       "publisher": "Simon Willison's Blog"
+    },
+    {
+      "id": "EV-293d6feac5b8efab",
+      "dataDate": "2026-09-26",
+      "date": "2026-09-24",
+      "updatedDate": "2026-09-26",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "派早报：小米召开秋季新品发布会、千问发布 Qwen-Audio-3.1系列模型等",
+      "originalTitle": "",
+      "subject": "派早报：小米召开秋季新品",
+      "action": "发布会、千问发布 Qwen-Audio-3.1系列模型",
+      "object": "等",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [
+          "cn-sspai-rss"
+        ],
+        "claim_refs": [
+          "CL-47f994bd1a6d682d",
+          "CL-5a3664b49aedd25c",
+          "CL-b4b20dffef44b12f",
+          "CL-714ef91d05205600"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-478676438ee161a3",
+        "EN-c608c4787821de1b",
+        "EN-047364b9be67f665",
+        "EN-644e3ce7b15ee21d"
+      ],
+      "entityNames": [
+        "派早报",
+        "Xiaomi",
+        "Alibaba",
+        "Qwen-Audio-3.1"
+      ],
+      "productName": "Qwen-Audio-3.1",
+      "products": [
+        {
+          "name": "Qwen-Audio-3.1",
+          "type": "模型",
+          "ownerNames": [
+            "Xiaomi"
+          ]
+        }
+      ],
+      "sourceUrl": "https://sspai.com/post/114913",
+      "publisher": "少数派"
+    },
+    {
+      "id": "EV-a171d2ec6b5982e9",
+      "dataDate": "2026-09-26",
+      "date": "2026-09-24",
+      "updatedDate": "2026-09-26",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Meta 将让你直接在手机上用 AI 构建游戏",
+      "originalTitle": "Meta is going to let you build games with AI right on your phone",
+      "subject": "Meta",
+      "action": "product_release",
+      "object": "Horizon Create",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-ea3bd73e2b506e00",
+        "EN-990efabf93c28971"
+      ],
+      "entityNames": [
+        "Meta",
+        "Horizon Create"
+      ],
+      "productName": "Horizon Create",
+      "products": [
+        {
+          "name": "Horizon Create",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Meta"
+          ]
+        }
+      ],
+      "sourceUrl": "https://theverge.com/games/999972/meta-horizon-create-studio-ai-games",
+      "publisher": "The Verge AI"
+    },
+    {
+      "id": "EV-b8eb460540c33d68",
+      "dataDate": "2026-09-26",
+      "date": "2026-09-24",
+      "updatedDate": "2026-09-26",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "出海Agent“小元AI”入驻腾讯WorkBuddy：找买家写开发信谈生意",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "出海Agent“小元AI”入驻腾讯WorkBuddy：找买家写开发信谈生意",
+      "metrics": [
+        "10亿"
+      ],
+      "locations": [
+        "中国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-047364b9be67f665",
+        "EN-9c8ae69b84f21a2e",
+        "EN-3ccbd9105a45d8fc",
+        "EN-c0fced8f2483e9f5"
+      ],
+      "entityNames": [
+        "Alibaba",
+        "Tencent",
+        "Salesforce",
+        "WorkBuddy"
+      ],
+      "productName": "WorkBuddy",
+      "products": [
+        {
+          "name": "WorkBuddy",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Alibaba"
+          ]
+        }
+      ],
+      "sourceUrl": "https://qbitai.com/2026/09/496961.html",
+      "publisher": "量子位"
+    },
+    {
+      "id": "EV-c8b9a7c94f70818a",
+      "dataDate": "2026-09-26",
+      "date": "2026-09-24",
+      "updatedDate": "2026-09-26",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "SAP 将 AI 智能体与业务流程及监督相连接",
+      "originalTitle": "SAP Links AI Agents to Business Processes and Oversight",
+      "subject": "SAP",
+      "action": "product_release",
+      "object": "Business Transformation Management portfolio updates",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7a9c94a8c201bcc2",
+        "EN-622eab02a2e606d9",
+        "EN-378508e9298faa17",
+        "EN-49019492d49fcfc1"
+      ],
+      "entityNames": [
+        "SAP",
+        "Business Transformation Management",
+        "Links AI",
+        "Business Processes"
+      ],
+      "productName": "Business Transformation Management",
+      "products": [
+        {
+          "name": "Business Transformation Management",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "Links AI",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "Business Processes",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://futurumgroup.com/insights/sap-links-ai-agents-to-business-processes-and-oversight",
+      "publisher": "futurumgroup.com"
+    },
+    {
+      "id": "EV-0d841753e8afa8f4",
+      "dataDate": "2026-09-24",
+      "date": "2026-09-24",
+      "updatedDate": "2026-09-24",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "高通发布第二代骁龙音频平台至尊版：AI 能力翻倍、功耗降低 40%",
+      "originalTitle": "",
+      "subject": "高通",
+      "action": "发布",
+      "object": "第二代骁龙音频平台至尊版：AI 能力翻倍、功耗降低 40%",
+      "metrics": [
+        "40%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-42a64c68a4a98ad5"
+      ],
+      "entityNames": [
+        "高通"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/1/006/516.htm",
+      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-25af07a982e78cb0",
@@ -277455,9 +278470,7 @@
         {
           "name": "Win11 Clipchamp",
           "type": "产品/服务",
-          "ownerNames": [
-            "Microsoft"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/1/006/371.htm",
@@ -281116,9 +282129,7 @@
         {
           "name": "Xing4.0-29B-A4B",
           "type": "模型",
-          "ownerNames": [
-            "Huawei"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/1/004/673.htm",
@@ -283378,9 +284389,7 @@
         {
           "name": "Peerium",
           "type": "产品/服务",
-          "ownerNames": [
-            "Huawei"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/1/003/910.htm",
@@ -292515,9 +293524,7 @@
         {
           "name": "Project Opal",
           "type": "产品/服务",
-          "ownerNames": [
-            "Microsoft"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/999/797.htm",
@@ -292602,7 +293609,7 @@
           "name": "Agent-Native",
           "type": "产品/服务",
           "ownerNames": [
-            "Huawei"
+            "Infinigence AI"
           ]
         }
       ],
@@ -293539,9 +294546,7 @@
         {
           "name": "HarmonyOS 7",
           "type": "产品/服务",
-          "ownerNames": [
-            "Huawei"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/999/277.htm",
@@ -294597,16 +295602,12 @@
         {
           "name": "WinUI",
           "type": "产品/服务",
-          "ownerNames": [
-            "Microsoft"
-          ]
+          "ownerNames": []
         },
         {
           "name": "WinUI 3",
           "type": "产品/服务",
-          "ownerNames": [
-            "Microsoft"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/999/015.htm",
@@ -295027,9 +296028,7 @@
         {
           "name": "MAI-Image-2.6-Flash",
           "type": "产品/服务",
-          "ownerNames": [
-            "Microsoft"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/998/747.htm",
@@ -295166,9 +296165,7 @@
         {
           "name": "Copilot Canvas AI",
           "type": "产品/服务",
-          "ownerNames": [
-            "Microsoft"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/998/693.htm",
@@ -295719,9 +296716,7 @@
         {
           "name": "Win11 Pro",
           "type": "产品/服务",
-          "ownerNames": [
-            "Microsoft"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/998/625.htm",
@@ -295800,64 +296795,6 @@
       ],
       "sourceUrl": "https://readhub.cn/daily",
       "publisher": "readhub.cn"
-    },
-    {
-      "id": "EV-8061c8eb754e0542",
-      "dataDate": "2026-09-05",
-      "date": "2026-09-05",
-      "updatedDate": "2026-09-05",
-      "eventType": "product_release",
-      "eventTypeLabel": "产品发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "Cloudera AI 推理服务",
-      "originalTitle": "Cloudera AI Inference Service",
-      "subject": "Cloudera",
-      "action": "product_release",
-      "object": "Cloudera AI Inference service",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [
-        "event_time"
-      ],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-2f265a693b2897f1",
-        "EN-8d4321d936320802",
-        "EN-ae11c0abf6288776"
-      ],
-      "entityNames": [
-        "Cloudera",
-        "NVIDIA",
-        "AI Inference"
-      ],
-      "productName": "AI Inference",
-      "products": [
-        {
-          "name": "AI Inference",
-          "type": "产品/服务",
-          "ownerNames": [
-            "NVIDIA"
-          ]
-        }
-      ],
-      "sourceUrl": "https://cloudera.com/products/machine-learning/ai-inference-service.html",
-      "publisher": "cloudera.com"
     },
     {
       "id": "EV-d5db0416bede29de",
@@ -295953,80 +296890,11 @@
         {
           "name": "Project Zenith",
           "type": "AI 硬件",
-          "ownerNames": [
-            "Microsoft"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://theverge.com/news/990051/microsoft-project-zenith-windows-developers",
       "publisher": "The Verge AI"
-    },
-    {
-      "id": "EV-293d6feac5b8efab",
-      "dataDate": "2026-09-07",
-      "date": "2026-09-04",
-      "updatedDate": "2026-09-07",
-      "eventType": "model_release",
-      "eventTypeLabel": "模型发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "派早报：OpenAI 发布 GPT-6 Astra 模型、Meta 发布 Muse Spark 1.3 模型等",
-      "originalTitle": "",
-      "subject": "派早报：OpenAI",
-      "action": "发布 GPT-6 Astra 模型、Meta 发布 Muse Spark 1.3 模型",
-      "object": "等",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-478676438ee161a3",
-        "EN-7d3194f79e645c42",
-        "EN-ea3bd73e2b506e00",
-        "EN-45ea02f28f8d8e50",
-        "EN-b1f973caf4a8c776"
-      ],
-      "entityNames": [
-        "派早报",
-        "OpenAI",
-        "Meta",
-        "GPT-6 Astra",
-        "Muse Spark 1.3"
-      ],
-      "productName": "GPT-6 Astra",
-      "products": [
-        {
-          "name": "GPT-6 Astra",
-          "type": "模型",
-          "ownerNames": [
-            "OpenAI"
-          ]
-        },
-        {
-          "name": "Muse Spark 1.3",
-          "type": "模型",
-          "ownerNames": [
-            "Meta"
-          ]
-        }
-      ],
-      "sourceUrl": "https://sspai.com/post/114164",
-      "publisher": "少数派"
     },
     {
       "id": "EV-4465e8bfd74508a6",
@@ -296695,9 +297563,7 @@
         {
           "name": "Project Zenith",
           "type": "AI 硬件",
-          "ownerNames": [
-            "Microsoft"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://theverge.com/news/990051/microsoft-project-zenith-windows-developers",
@@ -301206,16 +302072,12 @@
         {
           "name": "AI Connections",
           "type": "产品/服务",
-          "ownerNames": [
-            "Microsoft"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Procurement Gets New AI",
           "type": "产品/服务",
-          "ownerNames": [
-            "Microsoft"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://govtech.com/biz/procurement-gets-new-ai-connections-via-civic-marketplace",
@@ -317936,9 +318798,7 @@
         {
           "name": "Copilot Notebooks",
           "type": "产品/服务",
-          "ownerNames": [
-            "Microsoft"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/990/013.htm",
@@ -319660,9 +320520,7 @@
         {
           "name": "Clippy-like Mico",
           "type": "产品/服务",
-          "ownerNames": [
-            "Microsoft"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://theverge.com/tech/979871/microsoft-copilot-mico-retired",
@@ -321209,14 +322067,14 @@
           "name": "MAI Code 1.1",
           "type": "模型",
           "ownerNames": [
-            "Microsoft"
+            "DeepSeek"
           ]
         },
         {
           "name": "MAI Code 1.1 Flash",
           "type": "模型",
           "ownerNames": [
-            "Microsoft"
+            "DeepSeek"
           ]
         }
       ],
@@ -321276,7 +322134,7 @@
           "name": "Claude Code",
           "type": "产品/服务",
           "ownerNames": [
-            "Microsoft"
+            "European Union"
           ]
         }
       ],
@@ -326587,16 +327445,12 @@
         {
           "name": "Role",
           "type": "产品/服务",
-          "ownerNames": [
-            "Microsoft"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Open Source",
           "type": "产品/服务",
-          "ownerNames": [
-            "Microsoft"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://mlflow.org/articles/the-role-of-open-source-in-enterprise-ai-in-2026",
@@ -327776,16 +328630,12 @@
         {
           "name": "Windows 10",
           "type": "产品/服务",
-          "ownerNames": [
-            "Microsoft"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Windows 11",
           "type": "产品/服务",
-          "ownerNames": [
-            "Microsoft"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/987/274.htm",
@@ -329086,9 +329936,7 @@
         {
           "name": "HarmonyOS SDK",
           "type": "产品/服务",
-          "ownerNames": [
-            "Huawei"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/987/205.htm",
@@ -331148,23 +331996,17 @@
         {
           "name": "V5.0",
           "type": "产品/服务",
-          "ownerNames": [
-            "Huawei"
-          ]
+          "ownerNames": []
         },
         {
           "name": "ADS Pro V5.0",
           "type": "产品/服务",
-          "ownerNames": [
-            "Huawei"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Pro V5.0",
           "type": "产品/服务",
-          "ownerNames": [
-            "Huawei"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/986/192.htm",
@@ -332300,9 +333142,7 @@
         {
           "name": "MAI Realtime",
           "type": "产品/服务",
-          "ownerNames": [
-            "Microsoft"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/985/297.htm",
@@ -332780,16 +333620,12 @@
         {
           "name": "InfoQ",
           "type": "产品/服务",
-          "ownerNames": [
-            "Microsoft"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Agent Framework Harness",
           "type": "产品/服务",
-          "ownerNames": [
-            "Microsoft"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://infoq.com/news/2026/08/agent-framework-harness-ga",
@@ -334550,21 +335386,21 @@
           "name": "CPG Clients",
           "type": "产品/服务",
           "ownerNames": [
-            "Microsoft"
+            "Google"
           ]
         },
         {
           "name": "Agency Partner Program",
           "type": "产品/服务",
           "ownerNames": [
-            "Microsoft"
+            "Google"
           ]
         },
         {
           "name": "AI Agents for Agency",
           "type": "产品/服务",
           "ownerNames": [
-            "Microsoft"
+            "Google"
           ]
         }
       ],
@@ -337449,14 +338285,14 @@
           "name": "GitHub Copilot",
           "type": "产品/服务",
           "ownerNames": [
-            "Microsoft"
+            "xAI"
           ]
         },
         {
           "name": "Grok 4.5 AI",
           "type": "产品/服务",
           "ownerNames": [
-            "Microsoft"
+            "xAI"
           ]
         }
       ],
@@ -338191,9 +339027,7 @@
         {
           "name": "MAI-Cyber-1-Flash",
           "type": "模型",
-          "ownerNames": [
-            "Microsoft"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/07/28/microsoft-ai-releases-mai-cyber-1-flash-a-5b-active-parameter-cyber-model-that-pushes-mdash-to-95-95-on-cybergym",
@@ -339181,7 +340015,7 @@
           "name": "MAI-Cyber-1-Flash",
           "type": "模型",
           "ownerNames": [
-            "Microsoft"
+            "Anthropic"
           ]
         }
       ],
@@ -339468,7 +340302,7 @@
           "name": "MAI-Cyber-1-Flash",
           "type": "模型",
           "ownerNames": [
-            "Microsoft"
+            "OpenAI"
           ]
         }
       ],
@@ -340051,7 +340885,7 @@
           "name": "MAI-Cyber-1-Flash",
           "type": "产品/服务",
           "ownerNames": [
-            "Microsoft"
+            "Anthropic"
           ]
         }
       ],
@@ -343676,16 +344510,12 @@
         {
           "name": "Venice-X",
           "type": "产品/服务",
-          "ownerNames": [
-            "Microsoft"
-          ]
+          "ownerNames": []
         },
         {
           "name": "EPYC Venice-X",
           "type": "产品/服务",
-          "ownerNames": [
-            "Microsoft"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/980/871.htm",
@@ -343991,16 +344821,12 @@
         {
           "name": "MAI-Image-2.5-Pro",
           "type": "模型",
-          "ownerNames": [
-            "Microsoft"
-          ]
+          "ownerNames": []
         },
         {
           "name": "MAI-Voice-2-Flash",
           "type": "模型",
-          "ownerNames": [
-            "Microsoft"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/980/899.htm",
@@ -348119,16 +348945,12 @@
         {
           "name": "Win11 RP",
           "type": "产品/服务",
-          "ownerNames": [
-            "Microsoft"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Copilot",
           "type": "产品/服务",
-          "ownerNames": [
-            "Microsoft"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/979/968.htm",
@@ -351745,9 +352567,7 @@
         {
           "name": "Copilot AI",
           "type": "产品/服务",
-          "ownerNames": [
-            "Microsoft"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/979/297.htm",
@@ -354038,16 +354858,12 @@
         {
           "name": "HarmonyOS 6.1.0.135 SP8",
           "type": "产品/服务",
-          "ownerNames": [
-            "Huawei"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Pura 80",
           "type": "产品/服务",
-          "ownerNames": [
-            "Huawei"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/978/918.htm",
@@ -355975,21 +356791,21 @@
           "name": "Surface Laptop Ultra",
           "type": "产品/服务",
           "ownerNames": [
-            "Microsoft"
+            "NVIDIA"
           ]
         },
         {
           "name": "N1X",
           "type": "产品/服务",
           "ownerNames": [
-            "Microsoft"
+            "NVIDIA"
           ]
         },
         {
           "name": "Cinebench 2026",
           "type": "产品/服务",
           "ownerNames": [
-            "Microsoft"
+            "NVIDIA"
           ]
         }
       ],
@@ -360890,7 +361706,7 @@
           "name": "Visual Studio Code 1.129",
           "type": "产品/服务",
           "ownerNames": [
-            "Microsoft"
+            "Anthropic"
           ]
         }
       ],
@@ -369303,9 +370119,7 @@
         {
           "name": "Marketplace",
           "type": "产品/服务",
-          "ownerNames": [
-            "Microsoft"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://stactize.com/artikel/what-is-microsoft-marketplace",
@@ -373036,7 +373850,7 @@
           "name": "Foundry",
           "type": "模型",
           "ownerNames": [
-            "Microsoft"
+            "Anthropic"
           ]
         }
       ],
@@ -375292,9 +376106,7 @@
         {
           "name": "Maia 200",
           "type": "AI 硬件",
-          "ownerNames": [
-            "Microsoft"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/01/26/microsoft-announces-powerful-new-chip-for-ai-inference",
@@ -377290,7 +378102,7 @@
           "name": "AutoPilot",
           "type": "产品/服务",
           "ownerNames": [
-            "Microsoft"
+            "Intel"
           ]
         }
       ],
@@ -383263,16 +384075,12 @@
         {
           "name": "Learn",
           "type": "产品/服务",
-          "ownerNames": [
-            "Microsoft"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Visual Studio 2026",
           "type": "产品/服务",
-          "ownerNames": [
-            "Microsoft"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://learn.microsoft.com/en-us/visualstudio/releases/2026/release-notes",
@@ -388728,7 +389536,7 @@
           "name": "Foundry",
           "type": "产品/服务",
           "ownerNames": [
-            "Microsoft"
+            "Google"
           ]
         }
       ],
@@ -394408,9 +395216,7 @@
         {
           "name": "Marketplace",
           "type": "产品/服务",
-          "ownerNames": [
-            "Microsoft"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/artificial-intelligence-app-agent-publish-release",
@@ -397342,7 +398148,7 @@
           "name": "Intelligent Terminal",
           "type": "产品/服务",
           "ownerNames": [
-            "Microsoft"
+            "Intel"
           ]
         }
       ],
@@ -398050,9 +398856,7 @@
         {
           "name": "Artemis",
           "type": "产品/服务",
-          "ownerNames": [
-            "Microsoft"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://kore.ai/news/kore-ai-launches-artemis-the-new-generation-of-the-kore-ai-agent-platform-for-building-governing-and-optimizing-enterprise-ai",
@@ -398446,9 +399250,7 @@
         {
           "name": "HarmonyOS 7.0 Developer Beta",
           "type": "产品/服务",
-          "ownerNames": [
-            "Huawei"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/964/029.htm",
@@ -399047,9 +399849,7 @@
         {
           "name": "DevEco Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Huawei"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/963/943.htm",
@@ -400316,7 +401116,7 @@
           "name": "Chrome",
           "type": "产品/服务",
           "ownerNames": [
-            "Microsoft"
+            "Google"
           ]
         }
       ],
@@ -400502,9 +401302,7 @@
         {
           "name": "HiCar 7.0",
           "type": "产品/服务",
-          "ownerNames": [
-            "Huawei"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/963/222.htm",
@@ -406016,9 +406814,7 @@
         {
           "name": "MAI-Transcribe-1.5",
           "type": "模型",
-          "ownerNames": [
-            "Microsoft"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/06/08/microsoft-ai-introduces-mai-transcribe-1-5-2-4-wer-on-artificial-analysis-best-in-class-fleurs-accuracy-and-up-to-5x-faster-long-audio-transcription",
@@ -408676,16 +409472,12 @@
         {
           "name": "Agent Governance Toolkit",
           "type": "产品/服务",
-          "ownerNames": [
-            "Microsoft"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Open Source",
           "type": "产品/服务",
-          "ownerNames": [
-            "Microsoft"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://opensource.microsoft.com/blog/2026/04/02/introducing-the-agent-governance-toolkit-open-source-runtime-security-for-ai-agents",
@@ -410200,7 +410992,7 @@
           "name": "MAI-Thinking-1",
           "type": "模型",
           "ownerNames": [
-            "Microsoft"
+            "Intel"
           ]
         }
       ],
@@ -412577,9 +413369,7 @@
         {
           "name": "BitCPM-CANN",
           "type": "模型",
-          "ownerNames": [
-            "Huawei"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/954/759.htm",
@@ -412805,9 +413595,7 @@
         {
           "name": "Webwright",
           "type": "产品/服务",
-          "ownerNames": [
-            "Microsoft"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/05/24/microsoft-research-releases-webwright-a-terminal-native-web-agent-framework-that-scores-60-1-on-odysseys-up-from-base-gpt-5-4s-33-5",
@@ -416800,6 +417588,140 @@
       ],
       "sourceUrl": "https://simonwillison.net/2026/Jul/20/sam-altman",
       "publisher": "Simon Willison 博客"
+    },
+    {
+      "id": "EV-5961ed93ca6dae66",
+      "dataDate": "2026-09-26",
+      "date": "2026-09-25",
+      "updatedDate": "2026-09-26",
+      "eventType": "security_incident",
+      "eventTypeLabel": "安全事件",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenAI 智能体集群数月来入侵在线数据库搜寻冷门数据，Transluce 与澳政府相继披露",
+      "originalTitle": "",
+      "subject": "OpenAI agents",
+      "action": "security_incident",
+      "object": "Data USA, the University of New Mexico digital library, and the Australian Institute of Health and Welfare (AIHW)",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-a81b5ef9c23cdf0c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-a81b5ef9c23cdf0c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-a81b5ef9c23cdf0c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-a81b5ef9c23cdf0c",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI agents",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/09/25/for-months-openais-agent-swarms-have-been-attacking-online-databases-to-find-obscure-facts",
+      "publisher": "TechCrunch：AI（RSS）"
+    },
+    {
+      "id": "EV-fc0e8b84c1c47f91",
+      "dataDate": "2026-09-26",
+      "date": "2026-09-25",
+      "updatedDate": "2026-09-26",
+      "eventType": "research_result",
+      "eventTypeLabel": "研究结果",
+      "eventGroup": "研究结果",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Claude 完成 N=4 超对称 Yang-Mills 九圈振幅计算，物理学家 Matt von Hippel 复盘挑战始末",
+      "originalTitle": "",
+      "subject": "Claude",
+      "action": "research_result",
+      "object": "nine-loop amplitude in N=4 super-Yang-Mills",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c857d09db23e6822",
+        "EN-c9a7b9b2d48539e7"
+      ],
+      "entityNames": [
+        "Claude",
+        "Yang-Mills"
+      ],
+      "productName": "Yang-Mills",
+      "products": [
+        {
+          "name": "Yang-Mills",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://anthropic.com/research/yes-claude-can-do-nine-loops",
+      "publisher": "Anthropic：Research（发表成果 · 网页）"
     },
     {
       "id": "EV-0184e5d203d05229",

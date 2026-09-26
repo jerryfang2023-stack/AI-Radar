@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-26T00:27:56.714Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3576,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -67,6 +67,7 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [
+      "TX-product_form-compute_cloud_service",
       "TX-industry-energy_utilities",
       "TX-target_user-business_user",
       "TX-ai_market_category-infrastructure_compute",
@@ -82,7 +83,6 @@
       "TX-industry-telecommunications",
       "TX-industry-government_public_sector",
       "TX-ai_market_application-computing_infrastructure",
-      "TX-product_form-compute_cloud_service",
       "TX-industry-logistics_supply_chain",
       "TX-industry-media_entertainment",
       "TX-industry-professional_services",
@@ -419,6 +419,79 @@
   "relatedEntities": [],
   "relationships": [],
   "taxonomyNodes": [
+    {
+      "id": "TX-product_form-compute_cloud_service",
+      "name": "算力云服务",
+      "nodeType": "product_form",
+      "typeLabel": "产品形态",
+      "valueId": "compute_cloud_service",
+      "eventIds": [
+        "EV-95ba9cc4f4d52ea4",
+        "EV-40d4ce6d936d4d49",
+        "EV-26a5749d8604455a",
+        "EV-181cd28d97c4e61d",
+        "EV-2dea56b0e97c1685",
+        "EV-e3792591090281c6",
+        "EV-4eaf3aabecae6016",
+        "EV-6e516b6e68def9cf",
+        "EV-13ec78dfdbca678b",
+        "EV-7b1c734882fa1ea6",
+        "EV-327ba605bd9e8307",
+        "EV-24265c0f0fa45343",
+        "EV-4118202ed0f91895",
+        "EV-29eea3f4a8fcd6f5",
+        "EV-1abf0d076d30ec6d",
+        "EV-6011ab83ebd290bd",
+        "EV-bd5b6110559f2fda",
+        "EV-9fe6938336dea2a2",
+        "EV-70fd5918095d6ab8",
+        "EV-0121f0a9e9a975ec",
+        "EV-a86b04e679044c45",
+        "EV-f2750a3d66e06fe7",
+        "EV-49577d438cb6624b",
+        "EV-826c8088c4adf591",
+        "EV-0ec219a94317215f",
+        "EV-5493c61bcbe58aa2",
+        "EV-4b44f5eafecf4922",
+        "EV-a67071a8550cb1be"
+      ],
+      "entityIds": [
+        "EN-fc261198a189a8eb",
+        "EN-d41ebd9f02722fc8",
+        "EN-0b79cf2de0ee6b8e",
+        "EN-6fae0bc5a895aab8",
+        "EN-fdecfc27f301da9c",
+        "EN-0caee180da9d0f3f",
+        "EN-3c1ae4e6276005e7",
+        "EN-816bab802b34b308",
+        "EN-830cefea8ed73a00",
+        "EN-d1a61df8d3146e48",
+        "EN-c04bd5ebd10ab696",
+        "EN-07c370b082ffd370",
+        "EN-ce31f92c521b7b08",
+        "EN-c70eca6b0f88f44d",
+        "EN-8f5ef31ed5125786",
+        "EN-3c7a24d85b4a5835",
+        "EN-29b9f0cae32e7a8a",
+        "EN-7640da40298286a6",
+        "EN-373ac021a2c0bb2c",
+        "EN-ebf9032e4009b3d9",
+        "EN-042e9398f2cc8902",
+        "EN-9d07f526fab9cfe9",
+        "EN-18b4bbfd60f4137e",
+        "EN-a89a94ff38d4dc95"
+      ],
+      "fdeIds": [
+        "FDE-3c16927208b7ac37",
+        "FDE-5ea7f3d69a03d417"
+      ],
+      "hardwareIds": [
+        "HW-304c6370cc157449",
+        "HW-9a39a7f449362f96"
+      ],
+      "firstSeen": "2026-04-30",
+      "lastSeen": "2026-09-26"
+    },
     {
       "id": "TX-industry-energy_utilities",
       "name": "能源与公用事业",
@@ -866,6 +939,7 @@
         "EV-22f0d8caaa65a6a2",
         "EV-7f2811d2272cf4a3",
         "EV-c0a65877001ed413",
+        "EV-b8eb460540c33d68",
         "EV-3bf02572d01ed324",
         "EV-c45b1098a3092e03",
         "EV-ae99edddf2ad4c24",
@@ -1214,7 +1288,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "TX-ai_market_category-infrastructure_compute",
@@ -3371,7 +3445,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "TX-industry-healthcare_life_sciences",
@@ -3464,6 +3538,7 @@
         "EV-e999f3386aba7a2e",
         "EV-bad301e14b034fbd",
         "EV-4763b46821ab746e",
+        "EV-d675907ad59a707e",
         "EV-53957f94b3924ad3",
         "EV-082a9cdae7904aac",
         "EV-c47112d137157d2d",
@@ -3477,6 +3552,7 @@
         "EV-57597c92f7b183a9",
         "EV-6ce6b9c9780b97d9",
         "EV-dd62847548bb6ae3",
+        "EV-5961ed93ca6dae66",
         "EV-7fad565c9ffab4b0",
         "EV-322796d9761a0824",
         "EV-14b44a40808340f5",
@@ -3555,6 +3631,7 @@
         "EN-ab877737b6081bd1",
         "EN-cbadff7c58c26e1a",
         "EN-06b5472c16feae4c",
+        "EN-ebb2319d88e082f4",
         "EN-35e36dc1a5213fa3",
         "EN-0b914b1a1e589338",
         "EN-42f0b44cc91cc5e0",
@@ -3564,6 +3641,7 @@
         "EN-a93bc1dfeb147c54",
         "EN-61cce404a45c3545",
         "EN-4a639cb888a15d75",
+        "EN-a81b5ef9c23cdf0c",
         "EN-b21a23767d4d35a9",
         "EN-ea3bd73e2b506e00",
         "EN-7d3194f79e645c42",
@@ -3585,7 +3663,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-01-20",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "TX-industry-education",
@@ -3740,6 +3818,7 @@
         "EV-2c87c8ea47cbd1b6",
         "EV-97747aee0cafd9f3",
         "EV-bad301e14b034fbd",
+        "EV-d675907ad59a707e",
         "EV-45850ff01e177304",
         "EV-291060fb79c45357",
         "EV-21fcd6420d6ff726",
@@ -3832,6 +3911,7 @@
         "EN-2b1bf2dbb57b6603",
         "EN-bbdefa2950f49882",
         "EN-06b5472c16feae4c",
+        "EN-ebb2319d88e082f4",
         "EN-eaee1415bd59b210",
         "EN-74be4cbf48e647b2",
         "EN-0078ec52880eaa14",
@@ -3858,7 +3938,7 @@
         "HW-a033b945449628d5"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-09-23"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "TX-industry-telecommunications",
@@ -4136,77 +4216,6 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-01-06",
-      "lastSeen": "2026-09-19"
-    },
-    {
-      "id": "TX-product_form-compute_cloud_service",
-      "name": "算力云服务",
-      "nodeType": "product_form",
-      "typeLabel": "产品形态",
-      "valueId": "compute_cloud_service",
-      "eventIds": [
-        "EV-40d4ce6d936d4d49",
-        "EV-26a5749d8604455a",
-        "EV-181cd28d97c4e61d",
-        "EV-2dea56b0e97c1685",
-        "EV-e3792591090281c6",
-        "EV-4eaf3aabecae6016",
-        "EV-6e516b6e68def9cf",
-        "EV-13ec78dfdbca678b",
-        "EV-7b1c734882fa1ea6",
-        "EV-327ba605bd9e8307",
-        "EV-24265c0f0fa45343",
-        "EV-4118202ed0f91895",
-        "EV-29eea3f4a8fcd6f5",
-        "EV-1abf0d076d30ec6d",
-        "EV-6011ab83ebd290bd",
-        "EV-bd5b6110559f2fda",
-        "EV-9fe6938336dea2a2",
-        "EV-70fd5918095d6ab8",
-        "EV-0121f0a9e9a975ec",
-        "EV-a86b04e679044c45",
-        "EV-f2750a3d66e06fe7",
-        "EV-49577d438cb6624b",
-        "EV-826c8088c4adf591",
-        "EV-0ec219a94317215f",
-        "EV-5493c61bcbe58aa2",
-        "EV-4b44f5eafecf4922",
-        "EV-a67071a8550cb1be"
-      ],
-      "entityIds": [
-        "EN-d41ebd9f02722fc8",
-        "EN-0b79cf2de0ee6b8e",
-        "EN-6fae0bc5a895aab8",
-        "EN-fdecfc27f301da9c",
-        "EN-0caee180da9d0f3f",
-        "EN-3c1ae4e6276005e7",
-        "EN-816bab802b34b308",
-        "EN-830cefea8ed73a00",
-        "EN-d1a61df8d3146e48",
-        "EN-c04bd5ebd10ab696",
-        "EN-07c370b082ffd370",
-        "EN-ce31f92c521b7b08",
-        "EN-c70eca6b0f88f44d",
-        "EN-8f5ef31ed5125786",
-        "EN-3c7a24d85b4a5835",
-        "EN-29b9f0cae32e7a8a",
-        "EN-7640da40298286a6",
-        "EN-373ac021a2c0bb2c",
-        "EN-ebf9032e4009b3d9",
-        "EN-042e9398f2cc8902",
-        "EN-9d07f526fab9cfe9",
-        "EN-18b4bbfd60f4137e",
-        "EN-a89a94ff38d4dc95"
-      ],
-      "fdeIds": [
-        "FDE-3c16927208b7ac37",
-        "FDE-5ea7f3d69a03d417"
-      ],
-      "hardwareIds": [
-        "HW-304c6370cc157449",
-        "HW-9a39a7f449362f96"
-      ],
-      "firstSeen": "2026-04-30",
       "lastSeen": "2026-09-19"
     },
     {

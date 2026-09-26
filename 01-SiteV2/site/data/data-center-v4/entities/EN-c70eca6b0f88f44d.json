@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-26T00:27:56.714Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3576,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -101,6 +101,8 @@
       "EV-f247eff115e840af",
       "EV-ed8260ee9a7a80af",
       "EV-df88363737beb880",
+      "EV-78758ccb5d45f4f9",
+      "EV-ffe9a66690dc8b19",
       "EV-3ed4dfb4a164a3e0",
       "EV-0b7dcbb44344e389",
       "EV-da26b43d3924136e",
@@ -513,6 +515,7 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [
+      "TX-product_form-compute_cloud_service",
       "TX-product_form-enterprise_software_platform",
       "TX-target_user-business_user",
       "TX-ai_market_category-infrastructure_compute",
@@ -535,7 +538,6 @@
       "TX-target_user-consumer",
       "TX-target_user-educator",
       "TX-use_case-software_development",
-      "TX-product_form-compute_cloud_service",
       "TX-industry-media_entertainment",
       "TX-industry-professional_services",
       "TX-use_case-security_operations",
@@ -580,7 +582,7 @@
       "EN-da20c5952dba19d8"
     ],
     "firstSeen": "2025-09-04",
-    "lastSeen": "2026-09-24",
+    "lastSeen": "2026-09-26",
     "relationIds": [
       "REL2-6460871b6d621283",
       "REL2-02bdd133e9353ff7",
@@ -705,6 +707,8 @@
         "EV-ed8260ee9a7a80af"
       ],
       "deployments": [
+        "EV-78758ccb5d45f4f9",
+        "EV-ffe9a66690dc8b19",
         "EV-3ed4dfb4a164a3e0",
         "EV-0b7dcbb44344e389",
         "EV-da26b43d3924136e",
@@ -1103,6 +1107,37 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-78758ccb5d45f4f9",
+        "dataDate": "2026-09-26",
+        "date": "2026-09-26",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Anthropic 为 Claude 上线限时免费额度重置功能，每位用户仅可用一次",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-921b8acadc36ab7f"
+        ]
+      },
+      {
+        "id": "EV-ffe9a66690dc8b19",
+        "dataDate": "2026-09-26",
+        "date": "2026-09-26",
+        "eventType": "procurement_contract",
+        "eventTypeLabel": "采购合同",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Anthropic 与 Akamai 签署 7 年 116 亿美元 CPU 算力协议",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
       {
         "id": "EV-74e87bba31270f42",
         "dataDate": "2026-09-24",
@@ -14233,6 +14268,7 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-8061c8eb754e0542",
         "EV-9ced0afc6d0d1f63",
         "EV-47f2eb9a1d92fc7e",
         "EV-01eaadc83f55095a",
@@ -14254,7 +14290,6 @@
         "EV-2d17a87d3863dcee",
         "EV-4ecc308baf04ff02",
         "EV-d626fbf563d8afc7",
-        "EV-8061c8eb754e0542",
         "EV-36a9af9b98a66be3",
         "EV-127ae714eb61dff9",
         "EV-37e3784d55f5f5d0",
@@ -14475,7 +14510,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "EN-7d3194f79e645c42",
@@ -14654,7 +14689,6 @@
         "EV-cb1bc28f78888566",
         "EV-4e31149f2cd129f7",
         "EV-7a7a5267ca73e44c",
-        "EV-293d6feac5b8efab",
         "EV-a474530ccf6cd872",
         "EV-1f88bfaf77dcfca3",
         "EV-2954a6f0220f5b18",
@@ -14881,6 +14915,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-5961ed93ca6dae66",
         "EV-98a5bcde4600a029",
         "EV-82b8afc59e9be662",
         "EV-aed61f7e2ca28c38",
@@ -15076,7 +15111,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "EN-729324072d368379",
@@ -15640,7 +15675,34 @@
         "Anthropic"
       ],
       "organization": "Anthropic",
-      "roleTitle": "芯片团队成员"
+      "roleTitle": "芯片团队成员",
+      "public_profile": {
+        "summary": "Clive Chan 的公开 GitHub 个人资料列出其组织为 Anthropic；资料未提供可核验的具体岗位、教育或职业时间线。",
+        "current_roles": [
+          {
+            "title": "公开资料列示关联",
+            "organization": "Anthropic",
+            "source_id": "github_clive_chan"
+          }
+        ],
+        "career": [],
+        "education": [],
+        "experience_summary": "目前仅能通过本人公开 GitHub 账号核验姓名与 Anthropic 关联，不推断具体岗位和历史雇主。",
+        "track_record": [],
+        "sources": [
+          {
+            "source_id": "github_clive_chan",
+            "source_url": "https://api.github.com/users/cchan",
+            "source_title": "cchan — GitHub public profile",
+            "source_content_hash": "a8784eb8ec20f84415c4d5bbb9f63e5ef96cfc609cec8da652990308fbc622d7",
+            "quote": "The public GitHub profile identifies the account holder as Clive Chan and lists the organization as @anthropic.",
+            "quote_hash": "3d60c7807d6cf5db16ab8bd72b839bace7dabbf3cfaab1fe5b183a9ee04473a4"
+          }
+        ],
+        "coverage_status": "self_declared_affiliation",
+        "coverage_note": "仅为个人公开账号自述的机构关联，具体岗位尚无机构官方资料核实。",
+        "last_verified_at": "2026-09-25"
+      }
     }
   ],
   "relationships": [
@@ -16755,6 +16817,79 @@
   ],
   "taxonomyNodes": [
     {
+      "id": "TX-product_form-compute_cloud_service",
+      "name": "算力云服务",
+      "nodeType": "product_form",
+      "typeLabel": "产品形态",
+      "valueId": "compute_cloud_service",
+      "eventIds": [
+        "EV-95ba9cc4f4d52ea4",
+        "EV-40d4ce6d936d4d49",
+        "EV-26a5749d8604455a",
+        "EV-181cd28d97c4e61d",
+        "EV-2dea56b0e97c1685",
+        "EV-e3792591090281c6",
+        "EV-4eaf3aabecae6016",
+        "EV-6e516b6e68def9cf",
+        "EV-13ec78dfdbca678b",
+        "EV-7b1c734882fa1ea6",
+        "EV-327ba605bd9e8307",
+        "EV-24265c0f0fa45343",
+        "EV-4118202ed0f91895",
+        "EV-29eea3f4a8fcd6f5",
+        "EV-1abf0d076d30ec6d",
+        "EV-6011ab83ebd290bd",
+        "EV-bd5b6110559f2fda",
+        "EV-9fe6938336dea2a2",
+        "EV-70fd5918095d6ab8",
+        "EV-0121f0a9e9a975ec",
+        "EV-a86b04e679044c45",
+        "EV-f2750a3d66e06fe7",
+        "EV-49577d438cb6624b",
+        "EV-826c8088c4adf591",
+        "EV-0ec219a94317215f",
+        "EV-5493c61bcbe58aa2",
+        "EV-4b44f5eafecf4922",
+        "EV-a67071a8550cb1be"
+      ],
+      "entityIds": [
+        "EN-fc261198a189a8eb",
+        "EN-d41ebd9f02722fc8",
+        "EN-0b79cf2de0ee6b8e",
+        "EN-6fae0bc5a895aab8",
+        "EN-fdecfc27f301da9c",
+        "EN-0caee180da9d0f3f",
+        "EN-3c1ae4e6276005e7",
+        "EN-816bab802b34b308",
+        "EN-830cefea8ed73a00",
+        "EN-d1a61df8d3146e48",
+        "EN-c04bd5ebd10ab696",
+        "EN-07c370b082ffd370",
+        "EN-ce31f92c521b7b08",
+        "EN-c70eca6b0f88f44d",
+        "EN-8f5ef31ed5125786",
+        "EN-3c7a24d85b4a5835",
+        "EN-29b9f0cae32e7a8a",
+        "EN-7640da40298286a6",
+        "EN-373ac021a2c0bb2c",
+        "EN-ebf9032e4009b3d9",
+        "EN-042e9398f2cc8902",
+        "EN-9d07f526fab9cfe9",
+        "EN-18b4bbfd60f4137e",
+        "EN-a89a94ff38d4dc95"
+      ],
+      "fdeIds": [
+        "FDE-3c16927208b7ac37",
+        "FDE-5ea7f3d69a03d417"
+      ],
+      "hardwareIds": [
+        "HW-304c6370cc157449",
+        "HW-9a39a7f449362f96"
+      ],
+      "firstSeen": "2026-04-30",
+      "lastSeen": "2026-09-26"
+    },
+    {
       "id": "TX-product_form-enterprise_software_platform",
       "name": "企业软件平台",
       "nodeType": "product_form",
@@ -17132,7 +17267,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "TX-target_user-business_user",
@@ -17494,6 +17629,7 @@
         "EV-22f0d8caaa65a6a2",
         "EV-7f2811d2272cf4a3",
         "EV-c0a65877001ed413",
+        "EV-b8eb460540c33d68",
         "EV-3bf02572d01ed324",
         "EV-c45b1098a3092e03",
         "EV-ae99edddf2ad4c24",
@@ -17842,7 +17978,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "TX-ai_market_category-infrastructure_compute",
@@ -19574,6 +19710,7 @@
         "EV-2ffc3377977da114",
         "EV-2fd730d0ad452334",
         "EV-fd21441fb6e143c3",
+        "EV-293d6feac5b8efab",
         "EV-8ca7036c405028d4",
         "EV-c45b1098a3092e03",
         "EV-9ec1b90f071eef44",
@@ -20033,7 +20170,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "TX-industry-retail_ecommerce",
@@ -20548,7 +20685,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -20788,6 +20925,7 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-b8eb460540c33d68",
         "EV-0d5a32aca724d30e",
         "EV-1873f3c6fa4bdedd",
         "EV-3bf02572d01ed324",
@@ -21682,6 +21820,7 @@
         "EV-e999f3386aba7a2e",
         "EV-bad301e14b034fbd",
         "EV-4763b46821ab746e",
+        "EV-d675907ad59a707e",
         "EV-53957f94b3924ad3",
         "EV-082a9cdae7904aac",
         "EV-c47112d137157d2d",
@@ -21695,6 +21834,7 @@
         "EV-57597c92f7b183a9",
         "EV-6ce6b9c9780b97d9",
         "EV-dd62847548bb6ae3",
+        "EV-5961ed93ca6dae66",
         "EV-7fad565c9ffab4b0",
         "EV-322796d9761a0824",
         "EV-14b44a40808340f5",
@@ -21773,6 +21913,7 @@
         "EN-ab877737b6081bd1",
         "EN-cbadff7c58c26e1a",
         "EN-06b5472c16feae4c",
+        "EN-ebb2319d88e082f4",
         "EN-35e36dc1a5213fa3",
         "EN-0b914b1a1e589338",
         "EN-42f0b44cc91cc5e0",
@@ -21782,6 +21923,7 @@
         "EN-a93bc1dfeb147c54",
         "EN-61cce404a45c3545",
         "EN-4a639cb888a15d75",
+        "EN-a81b5ef9c23cdf0c",
         "EN-b21a23767d4d35a9",
         "EN-ea3bd73e2b506e00",
         "EN-7d3194f79e645c42",
@@ -21803,7 +21945,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-01-20",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "TX-target_user-researcher",
@@ -22401,6 +22543,7 @@
         "EV-2c87c8ea47cbd1b6",
         "EV-97747aee0cafd9f3",
         "EV-bad301e14b034fbd",
+        "EV-d675907ad59a707e",
         "EV-45850ff01e177304",
         "EV-291060fb79c45357",
         "EV-21fcd6420d6ff726",
@@ -22493,6 +22636,7 @@
         "EN-2b1bf2dbb57b6603",
         "EN-bbdefa2950f49882",
         "EN-06b5472c16feae4c",
+        "EN-ebb2319d88e082f4",
         "EN-eaee1415bd59b210",
         "EN-74be4cbf48e647b2",
         "EN-0078ec52880eaa14",
@@ -22519,7 +22663,7 @@
         "HW-a033b945449628d5"
       ],
       "firstSeen": "2025-08-27",
-      "lastSeen": "2026-09-23"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "TX-technology-embodied_ai",
@@ -23336,77 +23480,6 @@
       ],
       "firstSeen": "2023-04-27",
       "lastSeen": "2026-09-24"
-    },
-    {
-      "id": "TX-product_form-compute_cloud_service",
-      "name": "算力云服务",
-      "nodeType": "product_form",
-      "typeLabel": "产品形态",
-      "valueId": "compute_cloud_service",
-      "eventIds": [
-        "EV-40d4ce6d936d4d49",
-        "EV-26a5749d8604455a",
-        "EV-181cd28d97c4e61d",
-        "EV-2dea56b0e97c1685",
-        "EV-e3792591090281c6",
-        "EV-4eaf3aabecae6016",
-        "EV-6e516b6e68def9cf",
-        "EV-13ec78dfdbca678b",
-        "EV-7b1c734882fa1ea6",
-        "EV-327ba605bd9e8307",
-        "EV-24265c0f0fa45343",
-        "EV-4118202ed0f91895",
-        "EV-29eea3f4a8fcd6f5",
-        "EV-1abf0d076d30ec6d",
-        "EV-6011ab83ebd290bd",
-        "EV-bd5b6110559f2fda",
-        "EV-9fe6938336dea2a2",
-        "EV-70fd5918095d6ab8",
-        "EV-0121f0a9e9a975ec",
-        "EV-a86b04e679044c45",
-        "EV-f2750a3d66e06fe7",
-        "EV-49577d438cb6624b",
-        "EV-826c8088c4adf591",
-        "EV-0ec219a94317215f",
-        "EV-5493c61bcbe58aa2",
-        "EV-4b44f5eafecf4922",
-        "EV-a67071a8550cb1be"
-      ],
-      "entityIds": [
-        "EN-d41ebd9f02722fc8",
-        "EN-0b79cf2de0ee6b8e",
-        "EN-6fae0bc5a895aab8",
-        "EN-fdecfc27f301da9c",
-        "EN-0caee180da9d0f3f",
-        "EN-3c1ae4e6276005e7",
-        "EN-816bab802b34b308",
-        "EN-830cefea8ed73a00",
-        "EN-d1a61df8d3146e48",
-        "EN-c04bd5ebd10ab696",
-        "EN-07c370b082ffd370",
-        "EN-ce31f92c521b7b08",
-        "EN-c70eca6b0f88f44d",
-        "EN-8f5ef31ed5125786",
-        "EN-3c7a24d85b4a5835",
-        "EN-29b9f0cae32e7a8a",
-        "EN-7640da40298286a6",
-        "EN-373ac021a2c0bb2c",
-        "EN-ebf9032e4009b3d9",
-        "EN-042e9398f2cc8902",
-        "EN-9d07f526fab9cfe9",
-        "EN-18b4bbfd60f4137e",
-        "EN-a89a94ff38d4dc95"
-      ],
-      "fdeIds": [
-        "FDE-3c16927208b7ac37",
-        "FDE-5ea7f3d69a03d417"
-      ],
-      "hardwareIds": [
-        "HW-304c6370cc157449",
-        "HW-9a39a7f449362f96"
-      ],
-      "firstSeen": "2026-04-30",
-      "lastSeen": "2026-09-19"
     },
     {
       "id": "TX-industry-media_entertainment",

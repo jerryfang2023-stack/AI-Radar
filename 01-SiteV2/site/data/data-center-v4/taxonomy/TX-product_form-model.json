@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-26T00:27:56.714Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3576,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -211,6 +211,7 @@
       "EV-2ffc3377977da114",
       "EV-2fd730d0ad452334",
       "EV-fd21441fb6e143c3",
+      "EV-293d6feac5b8efab",
       "EV-8ca7036c405028d4",
       "EV-c45b1098a3092e03",
       "EV-9ec1b90f071eef44",
@@ -670,7 +671,7 @@
       "HW-19692cd9428f2e0f"
     ],
     "firstSeen": "2022-10-01",
-    "lastSeen": "2026-09-24"
+    "lastSeen": "2026-09-26"
   },
   "events": [
     {
@@ -41072,6 +41073,110 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-293d6feac5b8efab",
+      "dataDate": "2026-09-26",
+      "date": "2026-09-24",
+      "updatedDate": "2026-09-26",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "派早报：小米召开秋季新品发布会、千问发布 Qwen-Audio-3.1系列模型等",
+      "originalTitle": "",
+      "subject": "派早报：小米召开秋季新品",
+      "action": "发布会、千问发布 Qwen-Audio-3.1系列模型",
+      "object": "等",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [
+          "cn-sspai-rss"
+        ],
+        "claim_refs": [
+          "CL-47f994bd1a6d682d",
+          "CL-5a3664b49aedd25c",
+          "CL-b4b20dffef44b12f",
+          "CL-714ef91d05205600"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-478676438ee161a3",
+        "EN-c608c4787821de1b",
+        "EN-047364b9be67f665",
+        "EN-644e3ce7b15ee21d"
+      ],
+      "entityNames": [
+        "派早报",
+        "Xiaomi",
+        "Alibaba",
+        "Qwen-Audio-3.1"
+      ],
+      "productName": "Qwen-Audio-3.1",
+      "products": [
+        {
+          "name": "Qwen-Audio-3.1",
+          "type": "模型",
+          "ownerNames": [
+            "Xiaomi"
+          ]
+        }
+      ],
+      "sourceUrl": "https://sspai.com/post/114913",
+      "publisher": "少数派"
+    },
+    {
       "id": "EV-8ca7036c405028d4",
       "dataDate": "2026-09-24",
       "date": "2026-09-23",
@@ -41584,9 +41689,7 @@
         {
           "name": "Xing4.0-29B-A4B",
           "type": "模型",
-          "ownerNames": [
-            "Huawei"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/1/004/673.htm",
@@ -42930,7 +43033,7 @@
           "name": "Agent-Native",
           "type": "产品/服务",
           "ownerNames": [
-            "Huawei"
+            "Infinigence AI"
           ]
         }
       ],
@@ -64053,9 +64156,7 @@
         {
           "name": "BitCPM-CANN",
           "type": "模型",
-          "ownerNames": [
-            "Huawei"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/954/759.htm",
@@ -68321,6 +68422,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-e993070274a188d9",
         "EV-3c86fb0161715336",
         "EV-71d477e3af99ef9a"
       ],
@@ -68336,7 +68438,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-09-23",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "EN-bc06be2cba2b2f2c",
@@ -68709,6 +68811,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-ai_market_category-industry_applications",
         "TX-ai_market_subcategory-industrials",
         "TX-industry-energy_utilities",
@@ -68727,7 +68830,6 @@
         "TX-industry-financial_services",
         "TX-industry-government_public_sector",
         "TX-use_case-software_development",
-        "TX-product_form-compute_cloud_service",
         "TX-use_case-knowledge_search",
         "TX-use_case-content_creation",
         "TX-industry-professional_services",
@@ -69019,6 +69121,7 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-8061c8eb754e0542",
         "EV-9ced0afc6d0d1f63",
         "EV-47f2eb9a1d92fc7e",
         "EV-01eaadc83f55095a",
@@ -69040,7 +69143,6 @@
         "EV-2d17a87d3863dcee",
         "EV-4ecc308baf04ff02",
         "EV-d626fbf563d8afc7",
-        "EV-8061c8eb754e0542",
         "EV-36a9af9b98a66be3",
         "EV-127ae714eb61dff9",
         "EV-37e3784d55f5f5d0",
@@ -69261,7 +69363,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "EN-7dd2a89f628d7525",
@@ -69365,6 +69467,8 @@
         "EV-f247eff115e840af",
         "EV-ed8260ee9a7a80af",
         "EV-df88363737beb880",
+        "EV-78758ccb5d45f4f9",
+        "EV-ffe9a66690dc8b19",
         "EV-3ed4dfb4a164a3e0",
         "EV-0b7dcbb44344e389",
         "EV-da26b43d3924136e",
@@ -69777,6 +69881,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
@@ -69799,7 +69904,6 @@
         "TX-target_user-consumer",
         "TX-target_user-educator",
         "TX-use_case-software_development",
-        "TX-product_form-compute_cloud_service",
         "TX-industry-media_entertainment",
         "TX-industry-professional_services",
         "TX-use_case-security_operations",
@@ -69844,7 +69948,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "EN-d4ae6a7547092a6f",
@@ -71258,7 +71362,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-03",
-      "lastSeen": "2026-09-05"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "EN-bcfc3b314fa4ede5",
@@ -71963,6 +72067,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-e993070274a188d9",
         "EV-ea95ea9406e76f62",
         "EV-43c9b851bd2a46c7",
         "EV-3db9a076e3b7d4fd",
@@ -72024,7 +72129,7 @@
         "EN-24381ecb01753c1b"
       ],
       "firstSeen": "2026-01-13",
-      "lastSeen": "2026-09-21"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "EN-25465dbbb180e21b",
@@ -72096,6 +72201,8 @@
         "EV-b99c318c66e1a295",
         "EV-3d9aa640411471ea",
         "EV-2a833330267cb2df",
+        "EV-293d6feac5b8efab",
+        "EV-b8eb460540c33d68",
         "EV-438b93c09aeb4264",
         "EV-8ca7036c405028d4",
         "EV-ae99edddf2ad4c24",
@@ -72194,7 +72301,7 @@
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-09-24",
+      "lastSeen": "2026-09-26",
       "organizationFamilyId": "EN-047364b9be67f665",
       "organizationRole": "group",
       "organizationFamilyEntityIds": [
@@ -72238,6 +72345,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-target_user-business_user",
         "TX-product_form-chip_accelerator",
         "TX-target_user-developer",
@@ -72247,7 +72355,6 @@
         "TX-target_user-researcher",
         "TX-product_form-ai_infrastructure_software",
         "TX-product_form-ai_compute_system",
-        "TX-product_form-compute_cloud_service",
         "TX-technology-open_weights",
         "TX-technology-fine_tuning"
       ],
@@ -72673,6 +72780,7 @@
         "EV-be2f6bfcad93c42f",
         "EV-ceae771867a66bb5",
         "EV-c7b81290859057b0",
+        "EV-b8eb460540c33d68",
         "EV-74615e75b79f44eb",
         "EV-e496e24751712be7",
         "EV-411dc97b66bd8251",
@@ -72722,7 +72830,7 @@
         "EN-30a63b26b06e096e"
       ],
       "firstSeen": "2026-01-26",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "EN-bae152c4560df38c",
@@ -73038,6 +73146,7 @@
         "EV-f341178bd64e6ede",
         "EV-d80c43b35418e74d",
         "EV-53f08daddd011dbb",
+        "EV-293d6feac5b8efab",
         "EV-ba1b3b0b1dbb96d0",
         "EV-952a95bff6b05d4f",
         "EV-5d0f3f6556749dc5",
@@ -73070,7 +73179,7 @@
         "EN-ddf9916b459b6d77"
       ],
       "firstSeen": "2026-01-01",
-      "lastSeen": "2026-09-22"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "EN-67734881da046ff9",
@@ -73314,7 +73423,6 @@
         "EV-cb1bc28f78888566",
         "EV-4e31149f2cd129f7",
         "EV-7a7a5267ca73e44c",
-        "EV-293d6feac5b8efab",
         "EV-a474530ccf6cd872",
         "EV-1f88bfaf77dcfca3",
         "EV-2954a6f0220f5b18",
@@ -73541,6 +73649,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-5961ed93ca6dae66",
         "EV-98a5bcde4600a029",
         "EV-82b8afc59e9be662",
         "EV-aed61f7e2ca28c38",
@@ -73736,7 +73845,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "EN-ec31d2be1b244616",
@@ -73828,6 +73937,7 @@
         "EV-5762fe51987bc5ff",
         "EV-6cb8979f92cf74ce",
         "EV-ef1de880e4ef9f75",
+        "EV-0e424af71cfe12f8",
         "EV-67804da6b04fdcc5",
         "EV-4965305d57edf6dd",
         "EV-ec21501b02a611f6",
@@ -74144,7 +74254,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "EN-cbdc46f896784f98",
@@ -74491,6 +74601,7 @@
         "EV-9efcf6480f6c6f48",
         "EV-cf76f090a1a20a36",
         "EV-43301de739fe560e",
+        "EV-a171d2ec6b5982e9",
         "EV-25af07a982e78cb0",
         "EV-df53157dee9ad589",
         "EV-1873f3c6fa4bdedd",
@@ -74506,7 +74617,6 @@
         "EV-66561ec28d8b1fec",
         "EV-54451ee210a0d0d4",
         "EV-f26c01475e591f11",
-        "EV-293d6feac5b8efab",
         "EV-f29c0c51a5cbfd84",
         "EV-c877ce26c9f8997f",
         "EV-b1b396e6ba2fe208",
@@ -74627,7 +74737,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-12",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "EN-b93006774cbdd4b2",
@@ -75365,8 +75475,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
-        "TX-product_form-compute_cloud_service"
+        "TX-product_form-compute_cloud_service",
+        "TX-product_form-model"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-13",
@@ -75451,6 +75561,7 @@
         "EV-77092089644381a3",
         "EV-4da18f97771852a9",
         "EV-f949fd95df58d42d",
+        "EV-e73afa921975ec85",
         "EV-74db6c0f71f2dad2",
         "EV-a3b61b3529d9cf79",
         "EV-c3231f2ea0ae1ebc",
@@ -75487,7 +75598,7 @@
         "EN-6fcba5d96a4fadfd"
       ],
       "firstSeen": "2026-05-21",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "EN-cd6362472aea60ef",
@@ -76235,6 +76346,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-compute_cloud_service",
         "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
@@ -76242,7 +76354,6 @@
         "TX-product_form-model",
         "TX-product_form-ai_infrastructure_software",
         "TX-use_case-software_development",
-        "TX-product_form-compute_cloud_service",
         "TX-ai_market_application-model_deployment"
       ],
       "relatedEntityIds": [],
@@ -76374,6 +76485,7 @@
         "EV-44a4e92c03a31ab1",
         "EV-ef1de880e4ef9f75",
         "EV-7585b033d4005977",
+        "EV-c7382536eddbbc85",
         "EV-67804da6b04fdcc5",
         "EV-eb282b4658bbdd7e",
         "EV-87c5f6dcc769999c",
@@ -76410,6 +76522,7 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-bd0b10ee8ccdff16",
         "EV-8058ddb115bdef47",
         "EV-d26f174b7e773bc3",
         "EV-67de8f4c9ac5ce4d",
@@ -76560,7 +76673,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "EN-c3961295b7b3da96",
