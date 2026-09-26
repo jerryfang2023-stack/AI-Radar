@@ -178444,19 +178444,95 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Blossom Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "coverage_note": "Blossom’s founder support and portfolio details are firm-published. The portfolio is selected, not a complete audited performance record. Arrakis’s USD 38 million financing announcement includes a USD 30 million Series A led by Blossom; neither amount is Blossom’s individual check.",
+        "summary": "Blossom Capital is a Europe-focused venture firm that partners with ambitious European founders and supports companies through practical operating help and later fundraising. Managing Partner Ophelia Brown says her earlier venture experience included partnering with Robinhood and Supercell. The firm’s public portfolio spans enterprise software, security, AI, and consumer technology.",
+        "facts": [
+          {
+            "field": "geographic_focus",
+            "label": "Geographic focus",
+            "value": "European founders and technology companies seeking to scale globally.",
+            "source_id": "blossom_home"
+          },
+          {
+            "field": "leadership",
+            "label": "Managing partner",
+            "value": "Ophelia Brown founded Blossom Capital; the team also lists Investment Partner Maxim Frenkel and other operating leaders.",
+            "source_id": "blossom_team"
+          },
+          {
+            "field": "founder_background",
+            "label": "Ophelia Brown’s background",
+            "value": "She describes early venture experience partnering with teams including Robinhood and Supercell before founding Blossom.",
+            "source_id": "blossom_ophelia"
+          },
+          {
+            "field": "regulatory_status",
+            "label": "Regulatory status",
+            "value": "The founder profile states that Blossom is authorised and regulated by the UK Financial Conduct Authority (reference 1009865).",
+            "source_id": "blossom_ophelia"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：Arrakis · A轮 · 2026-07-22 · 本轮领投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "The firm’s portfolio page reports selected outcomes including Cado’s acquisition by Darktrace in 2025 and Blossom’s lead of Arrakis’s USD 30 million Series A.",
+            "source_id": "blossom_portfolio"
+          },
+          {
+            "description": "A July 2026 financing report names Blossom Capital as lead of Arrakis’s USD 30 million Series A. Arrakis announced USD 38 million in total financing; those are company financing amounts, not Blossom’s individual check.",
             "source_id": "FISRC-ac4fd601f33650ff"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "Official website and team",
+            "value": "Blossom Capital",
+            "source_id": "blossom_home",
+            "url": "https://www.blossomcap.com/"
+          },
+          {
+            "kind": "website",
+            "label": "Team and regulatory details",
+            "value": "Blossom Capital team",
+            "source_id": "blossom_ophelia",
+            "url": "https://www.blossomcap.com/team"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "blossom_home",
+            "source_url": "https://www.blossomcap.com/",
+            "source_title": "Blossom Capital",
+            "source_content_hash": "706cc21c62c72fcafa686bc874371befd004b327ecdf59b1f583f887780b3187",
+            "quote": "We bring relentless belief and powerful support to Europe’s most visionary founders.",
+            "quote_hash": "505f09185b77fec3f36a75650c189370d1b0f94cedd715c1d9f1812a9cb4fab2"
+          },
+          {
+            "source_id": "blossom_portfolio",
+            "source_url": "https://www.blossomcap.com/portfolio",
+            "source_title": "Portfolio | Blossom Capital",
+            "source_content_hash": "b4eebbabb5fc52784a06f51da14cd0f9c19bce1af596a5ed9179ccc4b03513c0",
+            "quote": "Blossom led Arrakis’s $30m Series A round.",
+            "quote_hash": "708c7ff12b580c55dfcef72f234f73898b45713d30c55091aedfb6b99776115f"
+          },
+          {
+            "source_id": "blossom_team",
+            "source_url": "https://www.blossomcap.com/team",
+            "source_title": "Team | Blossom Capital",
+            "source_content_hash": "d56d0198caf9812f5434914ba48eceb1c5bc1ba52b2788a9223d2f7541533a2a",
+            "quote": "Ophelia Brown Managing Partner.",
+            "quote_hash": "2ee426e777121f6de59873a7b57cfe7e7667f633afdb444cd09a58a6b9a8469c"
+          },
+          {
+            "source_id": "blossom_ophelia",
+            "source_url": "https://www.blossomcap.com/team/ophelia-brown",
+            "source_title": "Ophelia Brown | Blossom Capital",
+            "source_content_hash": "ce63dc7566426e742c277cc3e1d9a0d10cbea8364ed901629a570e6d6e9835bb",
+            "quote": "partnering with some of the most exceptional teams early in my career - including Robinhood and Supercell.",
+            "quote_hash": "777f3e42ae5c66bde8c775fae576ac3820d29ad7b847565d089629612cbeec67"
+          },
           {
             "source_id": "FISRC-ac4fd601f33650ff",
             "source_url": "https://www.financialcontent.com/article/bizwire-2026-7-22-arrakis-comes-out-of-stealth-with-38m-to-help-industrial-enterprises-compete-in-the-ai-era",
@@ -178466,7 +178542,7 @@
             "quote_hash": "0032fc03c758699a4a66af3c8bb1a51b712d26e09681c325bddd327665fb0009"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27"
       }
     },
     {
@@ -200930,19 +201006,104 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Bonfire Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "coverage_note": "Bonfire’s check range, exit-value figure, and investment activity are firm statements and do not constitute audited fund-level returns. Katalyze AI’s USD 10.5 million seed round is the company total, not Bonfire’s individual investment.",
+        "summary": "Bonfire Ventures is a seed-stage investor focused exclusively on B2B software, increasingly including AI-native products. It says it leads about 95% of rounds, typically invests USD 2–6 million at seed, backs 10–12 companies a year, and continues working with founders through Series A and beyond. The firm describes its team as experienced B2B software operators and investors.",
+        "facts": [
+          {
+            "field": "investment_focus",
+            "label": "Investment focus",
+            "value": "B2B software, including AI-native companies.",
+            "source_id": "bonfire_home"
+          },
+          {
+            "field": "typical_check_size",
+            "label": "Typical seed check",
+            "value": "USD 2–6 million, according to the firm.",
+            "source_id": "bonfire_home"
+          },
+          {
+            "field": "investment_model",
+            "label": "Investment model",
+            "value": "The firm says it leads about 95% of its rounds, often with a board seat, and backs 10–12 companies per year.",
+            "source_id": "bonfire_home"
+          },
+          {
+            "field": "leadership",
+            "label": "Co-founders",
+            "value": "Mark Mullen and Jim Andelman are co-founders; the team includes operators and investors with early-stage B2B software experience.",
+            "source_id": "bonfire_team"
+          },
+          {
+            "field": "reported_exit_value",
+            "label": "Reported portfolio exit value",
+            "value": "Bonfire says founders it backed have built more than USD 18 billion in exit value; this is not a fund-level return figure.",
+            "source_id": "bonfire_home"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：Katalyze AI · 种子轮 · 2026-07-06 · 本轮领投 · $10.5M。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "Bonfire Ventures led Katalyze AI’s USD 10.5 million seed round announced in July 2026. The figure is the company’s round total, not Bonfire’s disclosed individual check.",
             "source_id": "FISRC-d887dae741d872b9"
+          },
+          {
+            "description": "Bonfire cites selected exits including The Trade Desk, TaxJar, MNTN, and Scopely; these examples do not state fund-level performance.",
+            "source_id": "bonfire_home"
+          },
+          {
+            "description": "The firm announced Bonfire IV, a USD 245 million fund for B2B software investing.",
+            "source_id": "bonfire_fund4"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "application",
+            "label": "Founder pitch submissions",
+            "value": "Use the firm’s Pitch Us link to submit a company.",
+            "source_id": "bonfire_team",
+            "url": "https://bonfireventure.com/team"
+          },
+          {
+            "kind": "address",
+            "label": "Los Angeles office",
+            "value": "11611 San Vicente Blvd. #650, Los Angeles, CA 90049, USA",
+            "source_id": "bonfire_team"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "bonfire_home",
+            "source_url": "https://bonfireventure.com/",
+            "source_title": "Bonfire Ventures",
+            "source_content_hash": "aa2ea7713897091b072dfc91307dba7e27b1a63893a401c2bc09f713958858eb",
+            "quote": "Bonfire Ventures is a seed-stage venture capital firm backing founders building AI-native B2B software companies.",
+            "quote_hash": "93d6518322eab30b5010b163736a663df6a7d5c6a3831862241e933b19c7f2cb"
+          },
+          {
+            "source_id": "bonfire_team",
+            "source_url": "https://bonfireventure.com/team",
+            "source_title": "Team | Bonfire Ventures",
+            "source_content_hash": "494c4b1797e781d035c957412a8c2ff05bb4dc19c0f29da4c33bde2d84cae4de",
+            "quote": "Mark Mullen Co-Founder.",
+            "quote_hash": "4144e2842299f06a9c285b3fd1ebf647f8168eb23c435fe98bd65f154c592efd"
+          },
+          {
+            "source_id": "bonfire_companies",
+            "source_url": "https://bonfireventure.com/companies",
+            "source_title": "Portfolio Companies | Bonfire Ventures",
+            "source_content_hash": "ac5f9b7d1ce5ac8383329bf62d06f920996c9727816188c88ba94fa43fa62910",
+            "quote": "Founders we've backed have built more than $18 billion in exit value.",
+            "quote_hash": "8aa973fc1ac5c97d2c474a24c79b12bc328fc7bdb91a5d22e440594cd3a60057"
+          },
+          {
+            "source_id": "bonfire_fund4",
+            "source_url": "https://bonfireventure.com/news/bonfire-iv-245m-to-back-the-builders-reshaping-b2b-software",
+            "source_title": "Bonfire IV: USD 245 million fund | Bonfire Ventures",
+            "source_content_hash": "6032917696ce849df68e1529620732f8c83c5313cc4b180cf1adfb905637c292",
+            "quote": "Bonfire IV: $245M to Back the Builders Reshaping B2B Software.",
+            "quote_hash": "bd0c18daadf0767301e785ea8c1b289426a1fc2ddc60fdeb93c8346e06297d17"
+          },
           {
             "source_id": "FISRC-d887dae741d872b9",
             "source_url": "https://aijourn.com/katalyze-ai-raises-10-5m-led-by-bonfire-ventures-deploy-agentic-operating-system-for-pharma/",
@@ -200952,7 +201113,7 @@
             "quote_hash": "841d90fcc3204f35ae21d7650813c56853df4e66a5faa3d00214c22aba4d40f9"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27"
       }
     },
     {
@@ -208939,19 +209100,80 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "ARCH Venture Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "coverage_note": "The firm’s investment range and company-building description are self-reported. Portfolio examples do not establish fund-level returns. Trase’s USD 107 million seed round is the company total, not ARCH’s individual investment.",
+        "summary": "ARCH Venture Partners is a science-first venture firm that creates and backs companies around disruptive technologies, especially in life sciences. It describes more than three decades of company building and a flexible investment approach from early formation through later growth. Co-founders Robert Nelsen and Keith Crandell lead a broad investment team.",
+        "facts": [
+          {
+            "field": "firm_history",
+            "label": "Firm history",
+            "value": "ARCH says it has backed disruptive science companies for more than 30 years.",
+            "source_id": "arch_about"
+          },
+          {
+            "field": "investment_approach",
+            "label": "Investment approach",
+            "value": "The firm follows scientific advances, partners with founding teams, and sizes investment to company needs, from USD 50,000 to hundreds of millions per company.",
+            "source_id": "arch_about"
+          },
+          {
+            "field": "leadership",
+            "label": "Co-founders",
+            "value": "Robert Nelsen and Keith Crandell are co-founders and managing directors.",
+            "source_id": "arch_team"
+          },
+          {
+            "field": "investment_scope",
+            "label": "Company-building scope",
+            "value": "The firm supports companies through formation and growth using an extended network of partners.",
+            "source_id": "arch_about"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：Trase · 种子轮 · 2026-06-25 · 本轮领投 · 1.07 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "ARCH’s official portfolio includes companies such as Illumina, Alnylam Pharmaceuticals, Beam Therapeutics, and Aledade; its portfolio page is not an audited return record.",
+            "source_id": "arch_portfolio"
+          },
+          {
+            "description": "ARCH Venture Partners led Trase’s USD 107 million seed round announced in June 2026. The round amount is the company’s total financing, not ARCH’s individual check.",
             "source_id": "FISRC-9d8b3693de0579b6"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "Official website",
+            "value": "ARCH Venture Partners",
+            "source_id": "arch_about",
+            "url": "https://www.archventure.com/"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "arch_about",
+            "source_url": "https://www.archventure.com/about/",
+            "source_title": "About | ARCH Venture Partners",
+            "source_content_hash": "deb55381ce99fe0a50e94818a1f4d3724e4c4960368844b2ae6d4e32b64b92ee",
+            "quote": "Over 30 years, ARCH has backed disruptive science companies.",
+            "quote_hash": "ce126d1c52b8e40a3af87d82e1747f65604d1c78c57bf64cd22d35d455b38c9c"
+          },
+          {
+            "source_id": "arch_portfolio",
+            "source_url": "https://www.archventure.com/portfolio/",
+            "source_title": "Portfolio | ARCH Venture Partners",
+            "source_content_hash": "aab23a9a17a8559305bb3d855d3aab4d6ae917822d807d38db9b9f52f89152d0",
+            "quote": "We build disruptive companies. Meet them.",
+            "quote_hash": "56935328cf9d33692901e1b1ec461f921f8d3255b0bda2d8bcbf338e1c24ca78"
+          },
+          {
+            "source_id": "arch_team",
+            "source_url": "https://www.archventure.com/team/",
+            "source_title": "Team | ARCH Venture Partners",
+            "source_content_hash": "6d67448cd3f593650fcbbb0b623e7c306128a92aa2581e60bc9fdf5c355f539c",
+            "quote": "Robert Nelsen Co-founder & Managing Director.",
+            "quote_hash": "a5e045ec077216b2a4ba51c163c2c930c0a5df1270cc363d2783ff53e96d9fad"
+          },
           {
             "source_id": "FISRC-9d8b3693de0579b6",
             "source_url": "https://pulse2.com/trase-raises-107-million-seed-round-led-by-arch-venture-partners/",
@@ -208961,7 +209183,7 @@
             "quote_hash": "514fa3df43415253e44cb5d3bd2de167210aaffa5fd4216f6266c074ec84b63a"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27"
       }
     },
     {
@@ -213613,19 +213835,100 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Base10 Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "coverage_note": "Base10’s focus and team history are firm statements. Its June 2026 press page links to third-party reports about fundraising and AUM; those figures are reported by media, not audited fund performance. JustAI’s USD 17 million Series A is the company round total, not Base10’s check.",
+        "summary": "Base10 Partners is a venture firm investing in mission-aligned founders building technology for large, often under-served sectors of the real economy. Its team combines founders, investors, and researchers. Co-founder Adeyemi Ajao previously built and sold technology companies and led Workday Ventures; the firm says it applies research and operational support to portfolio companies.",
+        "facts": [
+          {
+            "field": "investment_focus",
+            "label": "Investment focus",
+            "value": "Companies applying technology to large sectors of the real economy and solving problems for the “99%.”",
+            "source_id": "base10_purpose"
+          },
+          {
+            "field": "leadership",
+            "label": "Co-founder and managing partner",
+            "value": "Adeyemi “Ade” Ajao co-founded Base10. His prior operating roles included co-founding Tuenti and Identified and leading Workday Ventures.",
+            "source_id": "base10_team"
+          },
+          {
+            "field": "team_model",
+            "label": "Team model",
+            "value": "The firm describes its team as founders, investors, and researchers; it reports more than USD 3 billion in realized investor returns, a self-reported firm figure rather than an audited fund-level metric.",
+            "source_id": "base10_team"
+          },
+          {
+            "field": "reported_fundraising",
+            "label": "Reported 2026 fundraising",
+            "value": "Base10’s press page points to June 2026 media reports of two funds totaling USD 850 million and USD 2.6 billion in reported AUM.",
+            "source_id": "base10_press"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：JustAI · A轮 · 2026-06-23 · 本轮领投 · $17 million。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "Base10 Partners led JustAI’s USD 17 million Series A in June 2026, according to a financing report. The amount is JustAI’s round total, not Base10’s individual check.",
             "source_id": "FISRC-058518ce11dc5f00"
+          },
+          {
+            "description": "The firm’s team biography says co-founder Adeyemi Ajao previously co-founded Tuenti, acquired by Telefónica, and Identified, acquired by Workday; these are founder operating outcomes, not Base10 fund returns.",
+            "source_id": "base10_team"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "email",
+            "label": "General and partnership inquiries",
+            "value": "partners@base10.vc",
+            "source_id": "base10_team"
+          },
+          {
+            "kind": "address",
+            "label": "San Francisco office",
+            "value": "101 Mission Street, Suite 1115, San Francisco, CA 94105, USA",
+            "source_id": "base10_team"
+          },
+          {
+            "kind": "website",
+            "label": "Official website",
+            "value": "Base10 Partners",
+            "source_id": "base10_purpose",
+            "url": "https://base10.vc/"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "base10_purpose",
+            "source_url": "https://base10.vc/purpose/",
+            "source_title": "Purpose | Base10 Partners",
+            "source_content_hash": "ced77121e299a124e8ac29ee202a17a28f62c4ddb99e16cb88446c98c61d107b",
+            "quote": "We invest in mission-aligned founders building companies solving problems for the 99%.",
+            "quote_hash": "da040fe6d480b7b7f313cb8537cd469eab57c244746861ad141ffdcee27ac775"
+          },
+          {
+            "source_id": "base10_team",
+            "source_url": "https://base10.vc/team/adeyemi-ajao/",
+            "source_title": "Adeyemi Ajao | Base10 Partners",
+            "source_content_hash": "314a4ac792d757972ae3c378c2fe5578a2a82eee75f3e507b9203d06f4d236e5",
+            "quote": "Adeyemi (“Ade”) is co-founder & Managing Partner at Base10 Partners.",
+            "quote_hash": "1ddfd70e9a4640c14d00b2b5fb0e674c3fba919b40ff541955045d2ef6600f56"
+          },
+          {
+            "source_id": "base10_press",
+            "source_url": "https://base10.vc/blog/esg/",
+            "source_title": "Press and media coverage | Base10 Partners",
+            "source_content_hash": "37e8b609c0b5cb9b1b36707dbd3e8847f3cc89e3a64919ded66d689755725fa7",
+            "quote": "June 2026 / Bloomberg Base10, Black-Led VC Firm, Boosts Managed Assets to $2.6 Billion.",
+            "quote_hash": "81d97905399aff7bb9ae8f269548a397c3ea5e332c2398bfeae7002b53f7d736"
+          },
+          {
+            "source_id": "base10_companies",
+            "source_url": "https://base10.vc/companies/",
+            "source_title": "Companies | Base10 Partners",
+            "source_content_hash": "85888678e951a7d9f57d0cd7180334dcd6e5359a1c77eb4954dfb854ebd07035",
+            "quote": "We invest in companies that are creating a positive impact for the largest sectors of the real economy.",
+            "quote_hash": "bce38691640d4a35f5c58fbdb8ea4e06badf03151f0de6bd960f8bd136029b89"
+          },
           {
             "source_id": "FISRC-058518ce11dc5f00",
             "source_url": "https://sg.finance.yahoo.com/news/justai-raises-17m-series-build-170000502.html",
@@ -213635,7 +213938,7 @@
             "quote_hash": "b268d7beb97b26faab0cea8b331fc0e2723c65c46e38dcc01d4429083ab013db"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27"
       }
     },
     {
@@ -245179,19 +245482,112 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "BMW i Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "coverage_note": "Fund size, total capital under management, stage, check range, and portfolio counts come from BMW Group or BMW i Ventures disclosures. Company portfolio exits are selected company outcomes, not an audited fund-level return record. Featherless.ai’s USD 20 million Series A is its round total, not BMW i Ventures’ individual check.",
+        "summary": "BMW i Ventures is the BMW Group-backed corporate venture capital firm investing in technologies for automotive, mobility, manufacturing, and supply chains. In April 2026 it launched a USD 300 million third fund focused on AI and industrial technologies, bringing stated capital under management to USD 1.1 billion. It invests from Seed through Series B in North America and Europe.",
+        "facts": [
+          {
+            "field": "parent",
+            "label": "Corporate backing",
+            "value": "Fully backed by BMW Group.",
+            "source_id": "bmwi_fund3"
+          },
+          {
+            "field": "fund_iii",
+            "label": "Fund III",
+            "value": "USD 300 million, launched in April 2026; BMW Group reports USD 1.1 billion in total capital under management.",
+            "source_id": "bmwi_fund3"
+          },
+          {
+            "field": "investment_stage",
+            "label": "Investment stage",
+            "value": "Seed through Series B, with initial checks up to USD 10 million.",
+            "source_id": "bmwi_about"
+          },
+          {
+            "field": "geography",
+            "label": "Geographic focus",
+            "value": "North America and Europe.",
+            "source_id": "bmwi_about"
+          },
+          {
+            "field": "leadership_background",
+            "label": "Managing partner experience",
+            "value": "Marcus Behrendt joined in 2018 after BMW and Mercedes-Benz product and operations roles; Kasper Sage joined in 2016 after venture investing and Deutsche Telekom business-development roles.",
+            "source_id": "bmwi_team"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2026-04-29",
+            "description": "BMW i Ventures launched its USD 300 million Fund III, bringing stated capital under management to USD 1.1 billion.",
+            "source_id": "bmwi_fund3"
+          }
+        ],
         "track_record": [
           {
-            "description": "融资来源记录：Featherless.ai · A轮 · 2026-04-30 · 本轮参投 · $20 million。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "BMW i Ventures’ portfolio page reports more than 90 investments and over 30 exits; the public list is not a fund-level performance statement.",
+            "source_id": "bmwi_portfolio"
+          },
+          {
+            "description": "BMW i Ventures participated in Featherless.ai’s USD 20 million Series A announced in April 2026. The amount is the company’s total round; its individual check was not disclosed.",
             "source_id": "FISRC-2abdb8003508dda6"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "address",
+            "label": "Mountain View headquarters",
+            "value": "2606 Bayshore Parkway, Mountain View, CA 94043, USA",
+            "source_id": "bmwi_about"
+          },
+          {
+            "kind": "address",
+            "label": "Munich office",
+            "value": "Freddie-Mercury-Strasse 5, 80797 Munich, Germany",
+            "source_id": "bmwi_about"
+          },
+          {
+            "kind": "website",
+            "label": "Official website",
+            "value": "BMW i Ventures",
+            "source_id": "bmwi_about",
+            "url": "https://www.bmwiventures.com/"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "bmwi_about",
+            "source_url": "https://www.bmwiventures.com/about-us",
+            "source_title": "About Us | BMW i Ventures",
+            "source_content_hash": "ed674679d1b31550a951da50f365f987301ad0c321dea59365feaf76bb6cca1c",
+            "quote": "We write early-stage checks up to $10M to support visionary founders dedicated to solving real-world challenges in large markets.",
+            "quote_hash": "8299f8f3965921f9808539b166a8a73b9dad65042b84f5284ecec8d33594f1fc"
+          },
+          {
+            "source_id": "bmwi_team",
+            "source_url": "https://www.bmwiventures.com/team",
+            "source_title": "Team | BMW i Ventures",
+            "source_content_hash": "09cc9e759f8d04c4d897ffa192ff3ecc81aabe151a9af2d7a579129ef8efd473",
+            "quote": "Marcus Behrendt has been a Managing Partner at BMW i Ventures since 2018.",
+            "quote_hash": "866412dfcb371032d4fe5462e71038b6b84f49a05bb2b5de1140f7fe5c865558"
+          },
+          {
+            "source_id": "bmwi_portfolio",
+            "source_url": "https://www.bmwiventures.com/portfolio",
+            "source_title": "Portfolio | BMW i Ventures",
+            "source_content_hash": "df5f557051c889b4eaea765a74ba0a3ebc19287275949f76f10d05990bfddc6b",
+            "quote": "We have invested in over 90 companies to-date, with over 30 exits.",
+            "quote_hash": "f68f5d5e59bd43baf1168ba8d86e05aa3c25647095656ffdbf8552b144dc6ef7"
+          },
+          {
+            "source_id": "bmwi_fund3",
+            "source_url": "https://www.press.bmwgroup.com/global/article/detail/T0457479EN/bmw-i-ventures-announces-300-million-fund-to-back-ai-startups-reshaping-the-automotive-ecosystem",
+            "source_title": "BMW i Ventures launches USD 300 million Fund III | BMW Group PressClub",
+            "source_content_hash": "754d4c0e904ddc18f9d2bffe59dcfea428b086903daae07a5fd21c8a8eb91a7d",
+            "quote": "BMW i Ventures today launched its third fund, putting $300 million behind a clear premise",
+            "quote_hash": "6e96a4aecfd70a83d80bfa60003473521d0070ccb5a8107ac0604d1cfdce42bf"
+          },
           {
             "source_id": "FISRC-2abdb8003508dda6",
             "source_url": "https://tech.eu/2026/04/30/featherlessai-secures-20m-to-expand-serverless-platform-for-open-source-ai/",
@@ -245201,7 +245597,7 @@
             "quote_hash": "67475342fca91e990ca60a5eb148915b5c54fe115e0c9d854fc7f35de22212e8"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27"
       }
     },
     {
@@ -276984,19 +277380,86 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Basis Set Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2025-10-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "coverage_note": "The fund stage, fund size, team biographies, and portfolio value statements are published by Basis Set and may be self-reported. Aggregate portfolio-company value and individual company financings are not fund-return multiples. Mem0’s USD 24 million Series A is the company round total, not Basis Set’s disclosed individual check.",
+        "summary": "Basis Set Ventures is an early-stage, AI-native venture firm founded in 2017 and based in San Francisco. It invests in founders working across artificial intelligence and software, and uses in-house engineering and AI tools to support recruiting, go-to-market work, and company building. Founder and partner Lan Xuezhao has a background in psychology research, entrepreneurship, McKinsey, and Dropbox corporate development.",
+        "facts": [
+          {
+            "field": "firm_positioning",
+            "label": "Firm positioning",
+            "value": "An AI-native early-stage venture fund founded in 2017.",
+            "source_id": "basis_home"
+          },
+          {
+            "field": "investment_stage",
+            "label": "Investment stage",
+            "value": "Early stage, as described in the firm FAQ.",
+            "source_id": "basis_faq"
+          },
+          {
+            "field": "founder_background",
+            "label": "Founder background",
+            "value": "Lan Xuezhao is an entrepreneur and investor with a PhD in psychology; her career included brain research, founding a company, McKinsey, and corporate development at Dropbox.",
+            "source_id": "basis_faq"
+          },
+          {
+            "field": "founder_support",
+            "label": "Founder support",
+            "value": "The firm describes an in-house engineering and AI stack and support with recruiting, go-to-market, sales, partnerships, expansion, and fundraising.",
+            "source_id": "basis_faq"
+          },
+          {
+            "field": "fund_iv",
+            "label": "Latest announced fund",
+            "value": "The website announces a USD 250 million Fund IV.",
+            "source_id": "basis_home"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：Mem0 · 多轮融资 · 2025-10-28 · 本轮（A轮）领投 · $24M。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "Basis Set Ventures led Mem0’s USD 24 million Series A announced in October 2025. The amount is Mem0’s total round, not Basis Set’s individual commitment.",
             "source_id": "FISRC-f3e9aa548f7703f9"
+          },
+          {
+            "description": "The firm’s FAQ says companies in which Lan Xuezhao made early investments grew to a combined value exceeding USD 20 billion; this is a founder biography claim, not a fund-level return figure.",
+            "source_id": "basis_faq"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "Official website",
+            "value": "Basis Set Ventures",
+            "source_id": "basis_home",
+            "url": "https://www.basisset.com/"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "basis_home",
+            "source_url": "https://www.basisset.com/",
+            "source_title": "Basis Set Ventures",
+            "source_content_hash": "5ddb00db54132a7f6127b7b68df532e14dc65a29209e8b2429a5238e11f4e8b0",
+            "quote": "An AI-native venture fund since 2017, born from the science of minds and machines.",
+            "quote_hash": "53137fc2ae62e74fdcd354dd88bfa3a8b8d67112bf90aa5ba10ae1dce5ab042a"
+          },
+          {
+            "source_id": "basis_faq",
+            "source_url": "https://www.basisset.com/basis-set-faq",
+            "source_title": "Basis Set FAQ",
+            "source_content_hash": "535d9ff0041d396fc0cf34dc23f93c448707c529ff7b2f3b208594888922e350",
+            "quote": "Basis Set is an early stage venture capital fund based in San Francisco, California.",
+            "quote_hash": "4e076bd0f087cb73dd0e91c4590d627b372125a59eb5fd4b2900fc2538289ece"
+          },
+          {
+            "source_id": "basis_team",
+            "source_url": "https://www.basisset.com/team",
+            "source_title": "Team | Basis Set Ventures",
+            "source_content_hash": "6200c2659e19f30d3caeac47fdf1067281434ea1283fc5ccde2df9509d33ff4b",
+            "quote": "Dr. Lan Xuezhao Founder & Partner.",
+            "quote_hash": "c3311ed876ecd6cccee722dd1b24f078865fe98c67ac55f07212ddf5315ef19b"
+          },
           {
             "source_id": "FISRC-f3e9aa548f7703f9",
             "source_url": "https://www.prnewswire.com/news-releases/mem0-raises-24m-series-a-to-build-memory-layer-for-ai-agents-302597157.html",
@@ -277006,7 +277469,7 @@
             "quote_hash": "860bcbeaef87e12c7529da9b94704c2d41e108994912623db9a054b4e82da771"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27"
       }
     },
     {
@@ -285923,30 +286386,109 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Anzu Partners 当前按“投资组织”收录。最新融资披露记录日期为 2022-12-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "coverage_note": "AUM and team-size figures are stated on Anzu Partners’ website and may change. Portfolio listings are selected company examples rather than audited fund performance. EnCharge AI’s USD 21.7 million Series A is the company financing total, not Anzu’s disclosed individual check.",
+        "summary": "Anzu Partners is an investment firm focused on breakthrough clean-tech, industrial, and life-sciences technologies. It operates venture, private-credit, and public-market strategies and reports about USD 1 billion in assets under management. The firm says its 50-plus investors, operators, consultants, scientists, and engineers provide hands-on company-building support.",
+        "facts": [
+          {
+            "field": "reported_aum",
+            "label": "Reported assets under management",
+            "value": "About USD 1 billion, as stated on the firm website; no as-of date is given.",
+            "source_id": "anzu_home"
+          },
+          {
+            "field": "investment_focus",
+            "label": "Investment focus",
+            "value": "Clean technology, industrial technology, and life-sciences technology.",
+            "source_id": "anzu_home"
+          },
+          {
+            "field": "investment_structures",
+            "label": "Investment structures",
+            "value": "Venture, private credit, and public-market strategies.",
+            "source_id": "anzu_home"
+          },
+          {
+            "field": "portfolio_support",
+            "label": "Portfolio support",
+            "value": "A team of 50+ experts supports business development, market positioning, global connectivity, operations, and commercialization.",
+            "source_id": "anzu_home"
+          },
+          {
+            "field": "leadership",
+            "label": "Firm leadership",
+            "value": "Managing partners listed by the firm include David Michael, David Seldin, and Whitney Haring-Smith.",
+            "source_id": "anzu_team"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：EnCharge AI · 多轮融资 · 2022-12-14 · 本轮领投 · $21.7 million。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-cb0549fad590a0ab"
+            "description": "The firm’s portfolio page lists active, exited, and IPO companies; examples span industrial materials, clean technology, and life sciences. The list is not a fund-return report.",
+            "source_id": "anzu_portfolio"
+          },
+          {
+            "description": "Anzu Partners led EnCharge AI’s USD 21.7 million Series A announced in December 2022. The amount is the company’s round total; the firm’s individual check was not disclosed.",
+            "source_id": "FISRC-81024928039bb6c1"
           },
           {
             "description": "融资来源记录：EnCharge AI · 多轮融资 · 2022-12-14 · 本轮领投 · $21.7 million。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-81024928039bb6c1"
+            "source_id": "FISRC-cb0549fad590a0ab"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "phone",
+            "label": "Main office phone",
+            "value": "+1 202-742-5870",
+            "source_id": "anzu_contact"
+          },
+          {
+            "kind": "address",
+            "label": "Boston-area office",
+            "value": "44 Manning Road, Billerica, MA 01821, USA",
+            "source_id": "anzu_contact"
+          },
+          {
+            "kind": "website",
+            "label": "Official website",
+            "value": "Anzu Partners",
+            "source_id": "anzu_home",
+            "url": "https://www.anzupartners.com/"
+          }
+        ],
         "sources": [
           {
-            "source_id": "FISRC-cb0549fad590a0ab",
-            "source_url": "https://www.techtimes.com/articles/284896/20221214/encharge-ai-raises-21-7m-produce-hardware-edge-computing.htm",
-            "source_title": "EnCharge AI Raises $21.7 Million to Produce AI Hardware for Edge Computing",
-            "source_content_hash": "ccb1b70704426c90",
-            "quote": "EnCharge AI announced Wednesday, Dec. 14, that it has raised $21.7 million in Series A investment led by Anzu Partners.",
-            "quote_hash": "caf6c1a4c3ce1a3eabd108ed94e058715357d51fa7dd4e8b54cb60008d1ca534"
+            "source_id": "anzu_home",
+            "source_url": "https://www.anzupartners.com/",
+            "source_title": "Anzu Partners | Breakthrough Industrial and Life Sciences Technologies",
+            "source_content_hash": "42090be9a2f9c2e70046cae670d636c003a2b99b42e7e8f5eaab3024beaf5942",
+            "quote": "Investing in clean tech, industrial, and life science technologies",
+            "quote_hash": "3bef1c3cd00feff9bad0e0cfdd9aacb65f53761451accad4d09f58643db51c5e"
+          },
+          {
+            "source_id": "anzu_portfolio",
+            "source_url": "https://www.anzupartners.com/portfolio/",
+            "source_title": "Portfolio | Anzu Partners",
+            "source_content_hash": "15ab56bc9c79be891a66f1ecf6867b09d1d06938288bf5674cb70aea00fa4fa5",
+            "quote": "6K Additive produces high-performance metal powders for additive manufacturing.",
+            "quote_hash": "5fb0a415996e70ff796985962a9eb27d3675244cc89fcc71cfad1f63175d83db"
+          },
+          {
+            "source_id": "anzu_team",
+            "source_url": "https://www.anzupartners.com/team/",
+            "source_title": "Team | Anzu Partners",
+            "source_content_hash": "cd6fef06d678b80cc7d51d5aa665c823f9b406c72de48f5cde362e0ca475f94b",
+            "quote": "David Michael Managing Partner.",
+            "quote_hash": "b85d41cfb6eac1ea95ed4bf68d5b5fe6cf606d35fd9f65449d2467534a5db45c"
+          },
+          {
+            "source_id": "anzu_contact",
+            "source_url": "https://www.anzupartners.com/contact/",
+            "source_title": "Contact | Anzu Partners",
+            "source_content_hash": "04f6cda50028c762cb4238358d805dee1e536ae1108096d65e08003a81c45d90",
+            "quote": "Phone (202) 742-5870.",
+            "quote_hash": "8b451050e6b6dcdc2709508dbcbf2c6e026a5d53e6fa6f3168b83a50b6b8a397"
           },
           {
             "source_id": "FISRC-81024928039bb6c1",
@@ -285955,9 +286497,17 @@
             "source_content_hash": "c31b380d03b8e095",
             "quote": "today announced it has raised $21.7M in Series A financing, led by Anzu Partners",
             "quote_hash": "2d524ee3a08cfadc9a23c7203998eb343d66be61a1cf743f13de664aca66b16b"
+          },
+          {
+            "source_id": "FISRC-cb0549fad590a0ab",
+            "source_url": "https://www.techtimes.com/articles/284896/20221214/encharge-ai-raises-21-7m-produce-hardware-edge-computing.htm",
+            "source_title": "EnCharge AI Raises $21.7 Million to Produce AI Hardware for Edge Computing",
+            "source_content_hash": "ccb1b70704426c90",
+            "quote": "EnCharge AI announced Wednesday, Dec. 14, that it has raised $21.7 million in Series A investment led by Anzu Partners.",
+            "quote_hash": "caf6c1a4c3ce1a3eabd108ed94e058715357d51fa7dd4e8b54cb60008d1ca534"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27"
       }
     },
     {
@@ -344546,19 +345096,80 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Betaworks Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2023-08-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "coverage_note": "Check sizes and investment themes are stated by Betaworks. Its 2025 Fund 3.0 announcement reports the fund’s size, not capital invested in an individual company. Hugging Face’s later USD 235 million Series D total is not Betaworks’ investment amount; the source describes Betaworks as the company’s first check.",
+        "summary": "Betaworks combines a startup studio, thematic investment, and Camp programs. Its current venture activity focuses on pre-seed and seed companies in AI, gaming, and decentralization, with typical checks of USD 250,000–750,000. The firm uses Camp as a cohort-based investment and product-development program for emerging technology categories.",
+        "facts": [
+          {
+            "field": "investment_stage",
+            "label": "Investment stage",
+            "value": "Pre-seed and seed.",
+            "source_id": "betaworks_companies"
+          },
+          {
+            "field": "typical_check_size",
+            "label": "Typical check size",
+            "value": "USD 250,000–750,000, according to the firm.",
+            "source_id": "betaworks_companies"
+          },
+          {
+            "field": "current_themes",
+            "label": "Current investment themes",
+            "value": "AI, gaming, and decentralization, including developer tools and open-source software.",
+            "source_id": "betaworks_companies"
+          },
+          {
+            "field": "camp_program",
+            "label": "Camp program",
+            "value": "A cohort-based investment and product-development program for building new technology categories.",
+            "source_id": "betaworks_companies"
+          },
+          {
+            "field": "fund_3",
+            "label": "Fund 3.0",
+            "value": "The firm announced a USD 66 million pre-seed and seed fund in July 2025.",
+            "source_id": "betaworks_fund3"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2025-07-22",
+            "description": "Betaworks announced the close of its USD 66 million Fund 3.0 for pre-seed and seed investing.",
+            "source_id": "betaworks_fund3"
+          }
+        ],
         "track_record": [
           {
-            "description": "融资来源记录：Hugging Face · D轮 · 2023-08-24 · 种子轮领投 · $235 million。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "Betaworks says Hugging Face received its first-ever check from Betaworks Ventures. The later USD 235 million Series D was raised by Hugging Face and is not Betaworks’ investment amount.",
             "source_id": "FISRC-3765d5d1c13d4da7"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "Official website",
+            "value": "Betaworks",
+            "source_id": "betaworks_companies",
+            "url": "https://www.betaworks.com/"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "betaworks_companies",
+            "source_url": "https://www.betaworks.com/companies",
+            "source_title": "Companies | Betaworks",
+            "source_content_hash": "e5d56ba9a45505952ebc959aaaae04869bb20b0e47743bdfb9749554a3413d1e",
+            "quote": "We invest at pre-seed and seed stage and our typical check size ranges from $250,000 to $750,000.",
+            "quote_hash": "f16f28b05218d6d9b18178e19f6424b5e6598b037820bd56ddcf38fe0f067a03"
+          },
+          {
+            "source_id": "betaworks_fund3",
+            "source_url": "https://www.betaworks.com/writing/announcing-betaworks-fund-3-0",
+            "source_title": "Announcing Betaworks Fund 3.0",
+            "source_content_hash": "75c4cee170ebff41ca365c43e4df7bfb4f2e9375b36c4cdb2ea0846054b5e470",
+            "quote": "Today, we’re thrilled to announce that we’ve closed $66 million for Betaworks Fund 3.0 — a pre-seed/seed stage venture fund.",
+            "quote_hash": "6e2c7b94163d8ac88e40031548a8535291fa8d9ba3d8fb0eed8e695f20ad817b"
+          },
           {
             "source_id": "FISRC-3765d5d1c13d4da7",
             "source_url": "https://techcrunch.com/2023/08/24/hugging-face-raises-235m-from-investors-including-salesforce-and-nvidia/",
@@ -344568,7 +345179,7 @@
             "quote_hash": "ccd7c25814dea7367afa9a462998fdc3d29e555f64a75f5ab7e72dafe194eb74"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27"
       }
     }
   ]

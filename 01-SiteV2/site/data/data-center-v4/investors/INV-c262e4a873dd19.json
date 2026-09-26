@@ -140,19 +140,112 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "BMW i Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "Fund size, total capital under management, stage, check range, and portfolio counts come from BMW Group or BMW i Ventures disclosures. Company portfolio exits are selected company outcomes, not an audited fund-level return record. Featherless.ai’s USD 20 million Series A is its round total, not BMW i Ventures’ individual check.",
+      "summary": "BMW i Ventures is the BMW Group-backed corporate venture capital firm investing in technologies for automotive, mobility, manufacturing, and supply chains. In April 2026 it launched a USD 300 million third fund focused on AI and industrial technologies, bringing stated capital under management to USD 1.1 billion. It invests from Seed through Series B in North America and Europe.",
+      "facts": [
+        {
+          "field": "parent",
+          "label": "Corporate backing",
+          "value": "Fully backed by BMW Group.",
+          "source_id": "bmwi_fund3"
+        },
+        {
+          "field": "fund_iii",
+          "label": "Fund III",
+          "value": "USD 300 million, launched in April 2026; BMW Group reports USD 1.1 billion in total capital under management.",
+          "source_id": "bmwi_fund3"
+        },
+        {
+          "field": "investment_stage",
+          "label": "Investment stage",
+          "value": "Seed through Series B, with initial checks up to USD 10 million.",
+          "source_id": "bmwi_about"
+        },
+        {
+          "field": "geography",
+          "label": "Geographic focus",
+          "value": "North America and Europe.",
+          "source_id": "bmwi_about"
+        },
+        {
+          "field": "leadership_background",
+          "label": "Managing partner experience",
+          "value": "Marcus Behrendt joined in 2018 after BMW and Mercedes-Benz product and operations roles; Kasper Sage joined in 2016 after venture investing and Deutsche Telekom business-development roles.",
+          "source_id": "bmwi_team"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026-04-29",
+          "description": "BMW i Ventures launched its USD 300 million Fund III, bringing stated capital under management to USD 1.1 billion.",
+          "source_id": "bmwi_fund3"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Featherless.ai · A轮 · 2026-04-30 · 本轮参投 · $20 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "BMW i Ventures’ portfolio page reports more than 90 investments and over 30 exits; the public list is not a fund-level performance statement.",
+          "source_id": "bmwi_portfolio"
+        },
+        {
+          "description": "BMW i Ventures participated in Featherless.ai’s USD 20 million Series A announced in April 2026. The amount is the company’s total round; its individual check was not disclosed.",
           "source_id": "FISRC-2abdb8003508dda6"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "address",
+          "label": "Mountain View headquarters",
+          "value": "2606 Bayshore Parkway, Mountain View, CA 94043, USA",
+          "source_id": "bmwi_about"
+        },
+        {
+          "kind": "address",
+          "label": "Munich office",
+          "value": "Freddie-Mercury-Strasse 5, 80797 Munich, Germany",
+          "source_id": "bmwi_about"
+        },
+        {
+          "kind": "website",
+          "label": "Official website",
+          "value": "BMW i Ventures",
+          "source_id": "bmwi_about",
+          "url": "https://www.bmwiventures.com/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "bmwi_about",
+          "source_url": "https://www.bmwiventures.com/about-us",
+          "source_title": "About Us | BMW i Ventures",
+          "source_content_hash": "ed674679d1b31550a951da50f365f987301ad0c321dea59365feaf76bb6cca1c",
+          "quote": "We write early-stage checks up to $10M to support visionary founders dedicated to solving real-world challenges in large markets.",
+          "quote_hash": "8299f8f3965921f9808539b166a8a73b9dad65042b84f5284ecec8d33594f1fc"
+        },
+        {
+          "source_id": "bmwi_team",
+          "source_url": "https://www.bmwiventures.com/team",
+          "source_title": "Team | BMW i Ventures",
+          "source_content_hash": "09cc9e759f8d04c4d897ffa192ff3ecc81aabe151a9af2d7a579129ef8efd473",
+          "quote": "Marcus Behrendt has been a Managing Partner at BMW i Ventures since 2018.",
+          "quote_hash": "866412dfcb371032d4fe5462e71038b6b84f49a05bb2b5de1140f7fe5c865558"
+        },
+        {
+          "source_id": "bmwi_portfolio",
+          "source_url": "https://www.bmwiventures.com/portfolio",
+          "source_title": "Portfolio | BMW i Ventures",
+          "source_content_hash": "df5f557051c889b4eaea765a74ba0a3ebc19287275949f76f10d05990bfddc6b",
+          "quote": "We have invested in over 90 companies to-date, with over 30 exits.",
+          "quote_hash": "f68f5d5e59bd43baf1168ba8d86e05aa3c25647095656ffdbf8552b144dc6ef7"
+        },
+        {
+          "source_id": "bmwi_fund3",
+          "source_url": "https://www.press.bmwgroup.com/global/article/detail/T0457479EN/bmw-i-ventures-announces-300-million-fund-to-back-ai-startups-reshaping-the-automotive-ecosystem",
+          "source_title": "BMW i Ventures launches USD 300 million Fund III | BMW Group PressClub",
+          "source_content_hash": "754d4c0e904ddc18f9d2bffe59dcfea428b086903daae07a5fd21c8a8eb91a7d",
+          "quote": "BMW i Ventures today launched its third fund, putting $300 million behind a clear premise",
+          "quote_hash": "6e96a4aecfd70a83d80bfa60003473521d0070ccb5a8107ac0604d1cfdce42bf"
+        },
         {
           "source_id": "FISRC-2abdb8003508dda6",
           "source_url": "https://tech.eu/2026/04/30/featherlessai-secures-20m-to-expand-serverless-platform-for-open-source-ai/",
@@ -162,7 +255,7 @@
           "quote_hash": "67475342fca91e990ca60a5eb148915b5c54fe115e0c9d854fc7f35de22212e8"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

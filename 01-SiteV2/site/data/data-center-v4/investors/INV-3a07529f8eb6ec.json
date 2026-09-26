@@ -131,19 +131,80 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Betaworks Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2023-08-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "Check sizes and investment themes are stated by Betaworks. Its 2025 Fund 3.0 announcement reports the fund’s size, not capital invested in an individual company. Hugging Face’s later USD 235 million Series D total is not Betaworks’ investment amount; the source describes Betaworks as the company’s first check.",
+      "summary": "Betaworks combines a startup studio, thematic investment, and Camp programs. Its current venture activity focuses on pre-seed and seed companies in AI, gaming, and decentralization, with typical checks of USD 250,000–750,000. The firm uses Camp as a cohort-based investment and product-development program for emerging technology categories.",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "Investment stage",
+          "value": "Pre-seed and seed.",
+          "source_id": "betaworks_companies"
+        },
+        {
+          "field": "typical_check_size",
+          "label": "Typical check size",
+          "value": "USD 250,000–750,000, according to the firm.",
+          "source_id": "betaworks_companies"
+        },
+        {
+          "field": "current_themes",
+          "label": "Current investment themes",
+          "value": "AI, gaming, and decentralization, including developer tools and open-source software.",
+          "source_id": "betaworks_companies"
+        },
+        {
+          "field": "camp_program",
+          "label": "Camp program",
+          "value": "A cohort-based investment and product-development program for building new technology categories.",
+          "source_id": "betaworks_companies"
+        },
+        {
+          "field": "fund_3",
+          "label": "Fund 3.0",
+          "value": "The firm announced a USD 66 million pre-seed and seed fund in July 2025.",
+          "source_id": "betaworks_fund3"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2025-07-22",
+          "description": "Betaworks announced the close of its USD 66 million Fund 3.0 for pre-seed and seed investing.",
+          "source_id": "betaworks_fund3"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Hugging Face · D轮 · 2023-08-24 · 种子轮领投 · $235 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Betaworks says Hugging Face received its first-ever check from Betaworks Ventures. The later USD 235 million Series D was raised by Hugging Face and is not Betaworks’ investment amount.",
           "source_id": "FISRC-3765d5d1c13d4da7"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Official website",
+          "value": "Betaworks",
+          "source_id": "betaworks_companies",
+          "url": "https://www.betaworks.com/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "betaworks_companies",
+          "source_url": "https://www.betaworks.com/companies",
+          "source_title": "Companies | Betaworks",
+          "source_content_hash": "e5d56ba9a45505952ebc959aaaae04869bb20b0e47743bdfb9749554a3413d1e",
+          "quote": "We invest at pre-seed and seed stage and our typical check size ranges from $250,000 to $750,000.",
+          "quote_hash": "f16f28b05218d6d9b18178e19f6424b5e6598b037820bd56ddcf38fe0f067a03"
+        },
+        {
+          "source_id": "betaworks_fund3",
+          "source_url": "https://www.betaworks.com/writing/announcing-betaworks-fund-3-0",
+          "source_title": "Announcing Betaworks Fund 3.0",
+          "source_content_hash": "75c4cee170ebff41ca365c43e4df7bfb4f2e9375b36c4cdb2ea0846054b5e470",
+          "quote": "Today, we’re thrilled to announce that we’ve closed $66 million for Betaworks Fund 3.0 — a pre-seed/seed stage venture fund.",
+          "quote_hash": "6e2c7b94163d8ac88e40031548a8535291fa8d9ba3d8fb0eed8e695f20ad817b"
+        },
         {
           "source_id": "FISRC-3765d5d1c13d4da7",
           "source_url": "https://techcrunch.com/2023/08/24/hugging-face-raises-235m-from-investors-including-salesforce-and-nvidia/",
@@ -153,7 +214,7 @@
           "quote_hash": "ccd7c25814dea7367afa9a462998fdc3d29e555f64a75f5ab7e72dafe194eb74"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }
