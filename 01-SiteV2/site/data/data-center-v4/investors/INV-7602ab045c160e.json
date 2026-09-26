@@ -131,20 +131,99 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "北京基石创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "“北京基石创投”对应基金管理人北京基石创业投资管理中心（有限合伙）；公开资料也披露“基石基金”系列载体。投资规模及上市项目数量按2023年北京市丰台区政府报道的系列基金口径记录，不能理解为管理人自有资产或单只基金回报。",
+      "summary": "北京基石创投的管理主体为北京基石创业投资管理中心（有限合伙），成立于2012年并于2014年完成私募基金管理人登记。其发展源自2011年设立的基石基金系列，长期围绕轨道交通产业布局，并延伸至新基建、信息技术、智能制造、新能源和新材料等领域。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "管理主体",
+          "value": "北京基石创业投资管理中心（有限合伙）；公开发行人文件列示其为基石智盈等基金的管理人。",
+          "source_id": "jishi_manager"
+        },
+        {
+          "field": "established",
+          "label": "管理主体成立时间",
+          "value": "2012年12月7日。",
+          "source_id": "jishi_manager"
+        },
+        {
+          "field": "registration",
+          "label": "私募基金管理人登记",
+          "value": "2014年4月21日在中国证券投资基金业协会登记，登记编号 P1000811；此为发行人披露文件记录。",
+          "source_id": "jishi_manager"
+        },
+        {
+          "field": "group_relationship",
+          "label": "股权及管理关系",
+          "value": "发行人披露，北京市基础设施投资有限公司持有北京基石基金管理有限公司70%股权；后者作为有限合伙人认缴北京基石创业投资管理中心出资总额的35%。管理主体与基金管理公司为不同法律主体。",
+          "source_id": "jishi_manager"
+        },
+        {
+          "field": "investment_scope",
+          "label": "公开披露的投资方向",
+          "value": [
+            "轨道交通相关核心产业",
+            "新基建",
+            "新一代信息技术",
+            "智能制造",
+            "新能源与新材料"
+          ],
+          "source_id": "jishi_manager"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2011",
+          "description": "北京市丰台区政府报道将基石基金系列沿革追溯至2011年。",
+          "source_id": "jishi_series"
+        },
+        {
+          "date": "2012-12-07",
+          "description": "北京基石创业投资管理中心（有限合伙）成立。",
+          "source_id": "jishi_manager"
+        },
+        {
+          "date": "2014-04-21",
+          "description": "北京基石创业投资管理中心完成私募股权、创业投资基金管理人登记。",
+          "source_id": "jishi_manager"
+        }
+      ],
       "track_record": [
+        {
+          "description": "北京市丰台区政府2023年报道，基石I至IV期系列基金投资规模约16亿元、投资项目66个；其中I期和II期有12家企业上市。报道中的系列规模和上市数量不是管理人自身业绩，也不是单只基金的投资回报。",
+          "source_id": "jishi_series"
+        },
         {
           "description": "融资来源记录：驰芯半导体 · A+轮 · 2026-09-23 · A轮参投 · 亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-cd5b0b79e0cacd63"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "address",
+          "label": "发行人文件披露的办公地址（2023年）",
+          "value": "北京市海淀区彩和坊路10号1+1大厦1305室",
+          "source_id": "jishi_manager"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "jishi_manager",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2023-12-05/1218509643.PDF",
+          "source_title": "九州一轨关于投资北京基石智盈创业投资中心暨关联交易的公告",
+          "source_content_hash": "d29588af93957e1ce308db3932ddc010d6b38f421b19e4342b166a16fde40d3b",
+          "quote": "北京基石创业投资管理中心（有限合伙）（以下简称“基石管理中心”）已于 2014 年 4 月 21 日在中国证券投资基金业协会备案登记成为私募基金管理人，登记编号为 P1000811。",
+          "quote_hash": "8c859c84e29bc3f70ff9899fcaa5d99e0a8070b526e1b22ab028169d33d2384a"
+        },
+        {
+          "source_id": "jishi_series",
+          "source_url": "https://www.bjft.gov.cn/ftq/bmdt/202301/35c1a5b01498462d92c7690cdfea4a28.shtml",
+          "source_title": "基石基金合伙人黄力波一行来园区交流研讨｜北京市丰台区人民政府",
+          "source_content_hash": "9292510a395cd3c577ab3682c194740331f971c6ec4b8418ce0f1acc978bdaef",
+          "quote": "基石基金成立于2011年，富丰集团作为园区监管的一级企业，先后参与了由京投公司、中科金公司等发起设立的基石I期、II期、III期、IV期基金，投资规模达到16亿元，投资项目66个，其中基石I期、II期已有12家企业成功上市。",
+          "quote_hash": "d8ad70a3d88722b5dcd560abe7585711b7731bb1c3da98e8b3f64024e9f7a0e4"
+        },
         {
           "source_id": "FISRC-cd5b0b79e0cacd63",
           "source_url": "https://news.pedaily.cn/202503/547159.shtml",
@@ -154,7 +233,8 @@
           "quote_hash": "947f78e911058631259b73771c06ee2cef87fdb2b2a28ec7b2b338e501dd7786"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified"
     }
   }
 }

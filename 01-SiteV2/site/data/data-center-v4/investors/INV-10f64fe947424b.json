@@ -130,13 +130,90 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "常熟国发创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "基金规模和荣誉来自常熟市投控系统2026年招聘材料，属于公司披露口径；2025年末累计管理基金规模与参投基金规模不是该机构自有资产或单只基金规模。2026年人工智能基金为与深圳前海琥珀资本共同管理的首期基金。",
+      "summary": "常熟市国发创业投资有限公司（国发创投）成立于2010年，是常熟市投资控股集团系统的核心成员企业，以私募股权投资为核心。公司材料披露其基金矩阵覆盖战略合作、市场化合作和自主管理基金，并布局新能源、高端装备、汽车及人工智能、生物医药、新材料、低空经济等产业。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "机构全称",
+          "value": "常熟市国发创业投资有限公司（国发创投）",
+          "source_id": "cs_gfct_2026"
+        },
+        {
+          "field": "group_relationship",
+          "label": "集团关系",
+          "value": "常熟市投资控股集团有限公司系统的核心成员企业。",
+          "source_id": "cs_gfct_2026"
+        },
+        {
+          "field": "established",
+          "label": "成立时间",
+          "value": "2010年。",
+          "source_id": "cs_gfct_2026"
+        },
+        {
+          "field": "business_lines",
+          "label": "基金管理模式",
+          "value": [
+            "战略合作基金",
+            "市场化合作基金",
+            "自主管理基金"
+          ],
+          "source_id": "cs_gfct_2026"
+        },
+        {
+          "field": "fund_scale",
+          "label": "基金规模（截至2025年末，公司披露）",
+          "value": "累计管理基金规模超过50亿元，参投基金总规模超过580亿元；两项均为公司材料所述管理/参投规模，不能解释为自身资产管理净值或单支基金规模。",
+          "source_id": "cs_gfct_2026"
+        },
+        {
+          "field": "investment_sectors",
+          "label": "投资布局",
+          "value": [
+            "新能源",
+            "高端装备",
+            "汽车及零部件",
+            "人工智能",
+            "生命健康",
+            "新材料",
+            "低空经济"
+          ],
+          "source_id": "cs_gfct_2026"
+        },
+        {
+          "field": "industry_awards",
+          "label": "公司材料披露的2025年荣誉",
+          "value": [
+            "FOFWEEKLY“市级母基金TOP30”",
+            "出类“中国最佳政府投资基金TOP50”"
+          ],
+          "source_id": "cs_gfct_2026"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2010",
+          "description": "常熟市国发创业投资有限公司成立。",
+          "source_id": "cs_gfct_2026"
+        },
+        {
+          "date": "2025-12-31",
+          "description": "公司材料披露累计管理基金规模超过50亿元、参投基金总规模超过580亿元。",
+          "source_id": "cs_gfct_2026"
+        },
+        {
+          "date": "2026-03",
+          "description": "常熟市人民政府报道常熟琥珀人工智能产业投资基金正式发布，由深圳前海琥珀资本与国发创投共同管理，首期规模3亿元。",
+          "source_id": "cs_amber_ai_fund"
+        }
+      ],
       "track_record": [
+        {
+          "description": "常熟市人民政府披露常熟琥珀人工智能产业投资基金首期规模3亿元、由深圳前海琥珀资本与常熟国发创投共同管理，聚焦人工智能和机器人。该金额为基金首期规模，不是国发创投单独出资额。",
+          "source_id": "cs_amber_ai_fund"
+        },
         {
           "description": "融资来源记录：瞬适科技 · 种子轮 · 2026-08-28 · 种子轮投资方（另一来源披露） · 千万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4b8e78c06499a369"
@@ -144,6 +221,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "cs_gfct_2026",
+          "source_url": "https://files.yccnc.com/data/cszp/files/2026/20260512174644_70640.pdf",
+          "source_title": "2026年常熟市投资控股集团有限公司（系统）招聘公告",
+          "source_content_hash": "4ede1ad213bf482a1a13d0b13c19e031be51322a3e4a5d9db6b518ebdaa3a853",
+          "quote": "截至 2025 年末，公司累计管理基金规模超 50 亿元，参投基金总规模超过 580 亿元",
+          "quote_hash": "25236e72ba7ef2eb80eccea20bf09f234b3d1f99192d5a0ee5f55c2244c4581f"
+        },
+        {
+          "source_id": "cs_amber_ai_fund",
+          "source_url": "https://www.changshu.gov.cn/zgcs/c100293/202603/f176b5b1ed6947df837580a8c425971e.shtml",
+          "source_title": "常熟智算未来城“云创算谷”招商推介活动暨燧弘华创签约仪式举行｜常熟市人民政府",
+          "source_content_hash": "80fc7934fb1a004c99e6bad429d765e7ecfb24af78286e02cd986905f8bfca7b",
+          "quote": "基金由深圳前海琥珀资本与常熟国发创投共同管理",
+          "quote_hash": "4996a461dae68920cf7d96998bb50621c07732352fec8e7790dde677c3f35776"
+        },
         {
           "source_id": "FISRC-4b8e78c06499a369",
           "source_url": "https://www.163.com/dy/article/L5FKCQUC05118K7K.html",
@@ -153,7 +246,8 @@
           "quote_hash": "a948d8138bdfb3f13e3cb87faf866a1a2cc0bd9eee0695f5da21028914e8d297"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified"
     }
   }
 }

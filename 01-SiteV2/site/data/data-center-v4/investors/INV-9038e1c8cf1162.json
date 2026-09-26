@@ -139,19 +139,156 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "爱杭基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "基金规模与带动投资额来自机构官网自述；2019年高校招聘页面作为历史资料，仅用于核验成立时间和当时披露的方向。官网团队页列出职务，未披露核心成员的完整履历和教育背景，本档案不据此推断个人经历。",
+      "summary": "爱杭基金是一家以私募股权投资为主的机构。官网自述聚焦中国战略新兴产业，当前页面披露在管基金实缴规模、历史管理基金规模及带动地方投资额；2019年浙江财经大学招聘资料记载其投资领域包括新能源、中医药、新一代信息技术、高端装备制造和基础设施，采用政府、社会与产业资本联动方式。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网定位",
+          "value": "聚焦中国战略新兴产业",
+          "source_id": "ihang_home_2026"
+        },
+        {
+          "field": "historical_managed_fund_scale",
+          "label": "历史管理基金规模（机构官网自述）",
+          "value": "50亿元以上",
+          "source_id": "ihang_home_2026"
+        },
+        {
+          "field": "paid_in_managed_fund_scale",
+          "label": "在管基金实缴规模（机构官网自述）",
+          "value": "40亿元以上；该口径为基金实缴规模，不等同于机构净资产或单只基金规模。",
+          "source_id": "ihang_home_2026"
+        },
+        {
+          "field": "local_investment_mobilized",
+          "label": "带动地方总投资（机构官网自述）",
+          "value": "300亿元以上；官网未在该处说明计算口径。",
+          "source_id": "ihang_home_2026"
+        },
+        {
+          "field": "historical_investment_sectors",
+          "label": "2019年公开披露的投资方向",
+          "value": [
+            "新能源",
+            "中医药",
+            "新一代信息技术",
+            "高端装备制造",
+            "基础设施"
+          ],
+          "source_id": "ihang_zufe_2019"
+        },
+        {
+          "field": "investment_model",
+          "label": "2019年公开披露的投资模式",
+          "value": "政府资本、社会资本与产业资本联动。",
+          "source_id": "ihang_zufe_2019"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2015",
+          "description": "浙江财经大学2019年招聘资料记载爱杭基金成立于2015年。",
+          "source_id": "ihang_zufe_2019"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "创始合伙人、执行董事、总经理",
+          "organization": "爱杭基金：何亮",
+          "source_id": "ihang_team_2026"
+        },
+        {
+          "title": "副总经理",
+          "organization": "爱杭基金：谢诚",
+          "source_id": "ihang_team_2026"
+        },
+        {
+          "title": "副总经理",
+          "organization": "爱杭基金：陈波",
+          "source_id": "ihang_team_2026"
+        },
+        {
+          "title": "基金投资部总经理",
+          "organization": "爱杭基金：孙雷",
+          "source_id": "ihang_team_2026"
+        }
+      ],
       "track_record": [
+        {
+          "description": "官网列示历史管理基金规模50亿元以上、在管基金实缴规模40亿元以上、带动地方总投资300亿元以上，均为机构自述的累计/规模指标，不是基金回报率。",
+          "source_id": "ihang_home_2026"
+        },
+        {
+          "description": "投资界2026年3月报道，爱杭基金参与立妙达亿元级A+轮融资；报道未披露爱杭基金的单独出资额。",
+          "source_id": "pedaily_limiaoda_2026"
+        },
         {
           "description": "融资来源记录：立妙达 · A+轮 · 2026-03-16 · 本轮参投 · 超亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f9d4572f4dc397ba"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "爱杭基金",
+          "url": "https://www.ihangcapital.com/",
+          "source_id": "ihang_home_2026"
+        },
+        {
+          "kind": "email",
+          "label": "商业计划书投递",
+          "value": "bp@ihangtech.com",
+          "source_id": "ihang_home_2026"
+        },
+        {
+          "kind": "email",
+          "label": "商业合作",
+          "value": "prompt@ihangtech.com",
+          "source_id": "ihang_home_2026"
+        },
+        {
+          "kind": "email",
+          "label": "售后服务",
+          "value": "service@ihangtech.com",
+          "source_id": "ihang_home_2026"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "ihang_home_2026",
+          "source_url": "https://www.ihangcapital.com/",
+          "source_title": "爱杭基金官方网站",
+          "source_content_hash": "b4bf9ce997ff2fc9a64229b1962b06f49c75f07f280bea8bdb9e6b742650a7f6",
+          "quote": "50 + 亿 历史管理基金规模 40 + 亿 在管基金实缴规模 300 + 亿 带动地方总投资；售后服务：service@ihangtech.com BP商业计划书：bp@ihangtech.com 商业合作：prompt@ihangtech.com",
+          "quote_hash": "a1e777d116a86551f01ac8252da2e16ccf3fec406b0fdf9413c7cb91023e4660"
+        },
+        {
+          "source_id": "ihang_team_2026",
+          "source_url": "https://ihangcapital.com/team",
+          "source_title": "爱杭基金团队介绍",
+          "source_content_hash": "fe9727aba555fd3288681b5c56fb787764777ce2f027e91cea34c2c06135b698",
+          "quote": "何亮 创始合伙人、执行董事、总经理；谢诚 副总经理；陈波 副总经理；孙雷 基金投资部总经理",
+          "quote_hash": "72f74a5272135fff6f2e3e9bf66293fe34a6743dfae4c986850b0a8f2cb5ec27"
+        },
+        {
+          "source_id": "ihang_zufe_2019",
+          "source_url": "https://gs.zufe.edu.cn/info/1042/3999.htm",
+          "source_title": "爱杭基金招聘宣讲会｜浙江财经大学研究生院",
+          "source_content_hash": "ee57d25b4b1c688068efdaf2062306432454650af50b6250acdbf890645c1955",
+          "quote": "爱杭基金成立于 2015年，管理人编号P1062177，管理各类基金总规模约40亿元；主要投资方向为新能源、中医药、新一代信息技术、高端装备制造和基础设施，投资模式通过政府资本+社会资本+产业资本联动的模式注入被投项目。",
+          "quote_hash": "ca74f1aba5364b4000ef5366b3521c8e743e59b078603b7e7bdea2dd7e472341"
+        },
+        {
+          "source_id": "pedaily_limiaoda_2026",
+          "source_url": "https://news.pedaily.cn/202603/561739.shtml",
+          "source_title": "打造AI+机器人全场景解决方案，立妙达完成亿元级A+轮融资｜投资界",
+          "source_content_hash": "20c687863021cb1a",
+          "quote": "本轮融资由 金沙江联合资本、宏沣资本、爱杭基金、嘉祐基金、鑫诚资本 共同出资。",
+          "quote_hash": "613435c511857287accb6916fdef6263d37bd1b277b20c11911d73730d4e54c0"
+        },
         {
           "source_id": "FISRC-f9d4572f4dc397ba",
           "source_url": "https://news.pedaily.cn/202603/561739.shtml",

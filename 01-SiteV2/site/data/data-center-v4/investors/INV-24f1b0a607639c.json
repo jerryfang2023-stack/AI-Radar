@@ -138,20 +138,130 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "杭州高新金投集团 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "融资披露使用简称“杭州高新金投集团”，与债券发行人“杭州高新金投控股集团有限公司”相符。集团信息、子公司投资业务和子公司财务数据分别标注；披露电话及邮箱是公司信息披露联系方式，未验证为投资项目投递渠道。",
+      "summary": "杭州高新金投控股集团有限公司是杭州市滨江区国资背景的投资控股平台。2026年债券募集说明书披露其2015年设立、注册资本15.663亿元，由滨江区财政局全资持有，经营涉及创业投资、股权投资和科技金融服务；科技产业投资由旗下杭州高新创业投资有限公司等子公司开展。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "发行人全称",
+          "value": "杭州高新金投控股集团有限公司。",
+          "source_id": "hangzhou_bond_2026"
+        },
+        {
+          "field": "ownership",
+          "label": "股权关系（截至2026年债券披露）",
+          "value": "杭州市滨江区财政局持有100%股权，发行文件将其列为国有独资企业。",
+          "source_id": "hangzhou_bond_2026"
+        },
+        {
+          "field": "registered_capital",
+          "label": "注册资本",
+          "value": "人民币156,630万元（15.663亿元）；2024年度报告另披露实缴资本154,130万元。",
+          "source_id": "hangzhou_bond_2026"
+        },
+        {
+          "field": "established",
+          "label": "设立日期",
+          "value": "2015年12月11日。",
+          "source_id": "hangzhou_bond_2026"
+        },
+        {
+          "field": "business_lines",
+          "label": "公开经营范围",
+          "value": [
+            "创业空间服务",
+            "股权投资",
+            "创业投资",
+            "科技中介与信息咨询"
+          ],
+          "source_id": "hangzhou_bond_2026"
+        },
+        {
+          "field": "investment_subsidiary",
+          "label": "科技产业投资平台",
+          "value": "杭州高新创业投资有限公司负责集团科技产业投资中的财务性直接投资及子基金投资业务。",
+          "source_id": "hangzhou_bond_2026"
+        },
+        {
+          "field": "subsidiary_financial_result",
+          "label": "2025年度子公司净利润（非集团合并口径）",
+          "value": "杭州高新创业投资有限公司2025年度净利润35,842.23万元（约3.584亿元）；发行文件说明投资收益与公允价值收益会随市场环境变化。",
+          "source_id": "hangzhou_bond_2026"
+        },
+        {
+          "field": "legal_representative",
+          "label": "法定代表人（2026年发行文件）",
+          "value": "王峰斌。",
+          "source_id": "hangzhou_bond_2026"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2015-12-11",
+          "description": "杭州高新金投控股集团有限公司成立。",
+          "source_id": "hangzhou_bond_2026"
+        },
+        {
+          "date": "2022-08",
+          "description": "发行文件记载控股股东由杭州高新国有控股集团有限公司变更回滨江区财政局。",
+          "source_id": "hangzhou_bond_2026"
+        }
+      ],
       "track_record": [
+        {
+          "description": "债券发行文件披露，集团全资子公司杭州高新创业投资有限公司2025年度净利润35,842.23万元。该指标属于子公司财务结果，且受投资收益与公允价值波动影响，不作为基金投资回报率。",
+          "source_id": "hangzhou_bond_2026"
+        },
         {
           "description": "融资来源记录：无问芯穹 · 基础设施融资 · 2026-05-07 · 本轮联合领投 · 7 亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e5d0583f94886034"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "债券年度报告披露的公司网址",
+          "value": "杭州高新金投控股集团有限公司",
+          "url": "http://www.hzgxcy.cn/",
+          "source_id": "hangzhou_bond_2024"
+        },
+        {
+          "kind": "email",
+          "label": "公司信息披露邮箱（未验证为投资申请渠道）",
+          "value": "gxjtjt2023@163.com",
+          "source_id": "hangzhou_bond_2024"
+        },
+        {
+          "kind": "phone",
+          "label": "信息披露事务负责人电话（未验证为投资项目申请电话）",
+          "value": "+86 571 8508 7775",
+          "source_id": "hangzhou_bond_2026"
+        },
+        {
+          "kind": "address",
+          "label": "债券发行文件披露的办公地址",
+          "value": "浙江省杭州市滨江区浦沿街道坚塔街768号贝遨大厦B幢6层601室",
+          "source_id": "hangzhou_bond_2026"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "hangzhou_bond_2026",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-08-12/1225469687.PDF",
+          "source_title": "杭州高新金投控股集团有限公司2026年公开发行公司债券募集说明书",
+          "source_content_hash": "fed19abe17bb1c5af580123b6b88b3be6e7952cde566dfe6a5569a4b16c34934",
+          "quote": "公司名称：杭州高新金投控股集团有限公司；注册资本：人民币 156,630.00 万元；设立日期：2015 年 12 月 11 日",
+          "quote_hash": "e8547cf615cb83316180588d452559ccca1ecde5ebb710542564d5f7b2549a19"
+        },
+        {
+          "source_id": "hangzhou_bond_2024",
+          "source_url": "https://static.sse.com.cn/disclosure/bond/announcement/corporate/c/new/2025-04-30/184703_20250430_CU0P.pdf",
+          "source_title": "杭州高新金投控股集团有限公司公司债券年度报告（2024年）",
+          "source_content_hash": "676bd35aa0e133537cf20fc8c4ccd6d91dd8109607f037f0e6bc5db9a4edba75",
+          "quote": "公司网址（如有）http://www.hzgxcy.cn/；电子信箱 gxjtjt2023@163.com",
+          "quote_hash": "c098c51049683911359b262b833f6d3b27d03f1ba258a37a952f2cee71618120"
+        },
         {
           "source_id": "FISRC-e5d0583f94886034",
           "source_url": "https://news.pedaily.cn/202605/563518.shtml",
@@ -161,7 +271,8 @@
           "quote_hash": "72a17306f79e02f78372eb98204c8475345e49dd01280bbce24d1adfa3d51dbe"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified"
     }
   }
 }

@@ -138,13 +138,71 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "驰星创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案依据思必驰科技股份有限公司招股说明书（2022年申报稿）重建驰星创投品牌及基金载体关系。投资案例、持股比例和募资状态均为该申报稿披露时点的历史信息，不能据此推断当前基金状态。",
+      "summary": "驰星创投是投资早期科技项目的产业基金，思必驰科技股份有限公司作为发起人之一参与设立。思必驰招股说明书披露，相关投资载体包括驰星睿远、驰星睿启，驰星泽和担任两只基金的执行事务合伙人；投资重点涉及人工智能及数据科学等高科技初创企业。",
+      "facts": [
+        {
+          "field": "fund_type",
+          "label": "机构性质",
+          "value": "投资早期科技项目的产业基金；此表述来自思必驰科技股份有限公司招股说明书。",
+          "source_id": "chixing_prospectus"
+        },
+        {
+          "field": "founding_participant",
+          "label": "发起方关系",
+          "value": "思必驰科技股份有限公司是驰星创投的发起人之一。",
+          "source_id": "chixing_prospectus"
+        },
+        {
+          "field": "fund_vehicles",
+          "label": "公开披露的投资载体",
+          "value": [
+            "苏州睿思通（过渡平台，2020年9月注销）",
+            "驰星睿远",
+            "驰星睿启（二期投资平台）"
+          ],
+          "source_id": "chixing_prospectus"
+        },
+        {
+          "field": "general_partner",
+          "label": "执行事务合伙人",
+          "value": "驰星泽和为驰星睿远及驰星睿启的执行事务合伙人。",
+          "source_id": "chixing_prospectus"
+        },
+        {
+          "field": "investment_scope",
+          "label": "公开披露的方向",
+          "value": [
+            "早期科技项目",
+            "人工智能",
+            "数据科学"
+          ],
+          "source_id": "chixing_prospectus"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2017-06",
+          "description": "思必驰招股说明书记载，驰星泽和于2017年6月设立。",
+          "source_id": "chixing_prospectus"
+        },
+        {
+          "date": "2020-09",
+          "description": "思必驰招股说明书记载，作为过渡平台的苏州睿思通于2020年9月注销。",
+          "source_id": "chixing_prospectus"
+        },
+        {
+          "date": "2022",
+          "description": "思必驰招股说明书申报稿将驰星睿启描述为二期投资平台，并称当时尚在募资；该状态为历史披露。",
+          "source_id": "chixing_prospectus"
+        }
+      ],
       "track_record": [
+        {
+          "description": "思必驰招股说明书披露，驰星睿远于2018年8月投资深聪半导体，申报稿时持有16.2291%股权；同月通过受让股权成为增强科技股东，申报稿时持有11.0714%。这是发行人披露的历史持股数据，不代表当前持股。",
+          "source_id": "chixing_prospectus"
+        },
         {
           "description": "融资来源记录：知跃空间智能 · 天使轮 · 2026-06-24 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-93d4a052ba2f7977"
@@ -152,6 +210,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "chixing_prospectus",
+          "source_url": "https://static.sse.com.cn/stock/disclosure/announcement/c/202207/001302_20220715_6AUW.pdf",
+          "source_title": "思必驰科技股份有限公司招股说明书（申报稿）",
+          "source_content_hash": "5daf68a33ca905ae64cfff9eb1372437b7775ae98b38b963de6ee4a932f029e6",
+          "quote": "驰星创投为一家投资于早期科技项目的产业基金，思必驰作为发起人之一参与了该基金的设立。该基金主要设立了苏州睿思通、驰星睿远以及驰星睿启三个投资主体。驰星泽和为驰星睿远及驰星睿启的执行事务合伙人。",
+          "quote_hash": "9f5d5565ce46abb241cad51cef9c81570521565c61f5b53daf1f45e6619c4708"
+        },
         {
           "source_id": "FISRC-93d4a052ba2f7977",
           "source_url": "https://news.pedaily.cn/20260623/132658.shtml",
@@ -161,7 +227,8 @@
           "quote_hash": "a7cd6670ff036681a3f895a23213bc306bc61a15c0892a8bd55e5d73acac0b1f"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified"
     }
   }
 }

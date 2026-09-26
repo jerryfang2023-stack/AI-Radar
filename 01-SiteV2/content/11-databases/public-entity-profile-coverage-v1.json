@@ -30073,13 +30073,68 @@
     },
     "INV-c132e027410e9d": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Qualcomm Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "融资库中的 Qualcomm Ventures 是机构品牌层级记录；其两笔融资活动由原融资来源支持。机构规模和历史成绩采用官网自报数据，未当作经审计基金收益。",
+      "summary": "Qualcomm Ventures 是 Qualcomm Incorporated 旗下的全球风险投资部门，官网将其使命概括为投资支持无线技术的发展与应用。2025年官网回顾披露其累计投资500余家公司、投入30亿美元以上并支持60余家独角兽；这些是机构自报的累计口径，不代表单只基金业绩。",
+      "facts": [
+        {
+          "field": "parent_company",
+          "label": "母公司/投资部门",
+          "value": "Qualcomm Ventures 是 Qualcomm Incorporated 旗下风险投资部门。",
+          "source_id": "qv_venture_origin"
+        },
+        {
+          "field": "investment_scope",
+          "label": "2025年新增投资方向",
+          "value": [
+            "人工智能",
+            "数据中心",
+            "边缘计算",
+            "机器人",
+            "互联智能"
+          ],
+          "source_id": "qv_2025_review"
+        },
+        {
+          "field": "platform_metrics",
+          "label": "官网累计口径（2025年回顾）",
+          "value": "官网称累计投资超过500家公司、部署资本超过30亿美元、支持60余家独角兽；此为机构自报累计指标，不是基金净回报或单只基金规模。",
+          "source_id": "qv_2025_review"
+        },
+        {
+          "field": "investment_team",
+          "label": "官网团队名录（2026-09-26核验）",
+          "value": [
+            "Quinn Li：高级副总裁、全球负责人",
+            "Song Mao：中国区董事总经理",
+            "Hanyang Wang：中国区董事"
+          ],
+          "source_id": "qv_team"
+        },
+        {
+          "field": "annual_activity",
+          "label": "2025年度投资与退出",
+          "value": "官网回顾称2025年投资16家新公司，并列出 Mountain Digital、Capillary Technologies、Unisound 上市及 Weights & Biases 被收购。",
+          "source_id": "qv_2025_review"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2000",
+          "description": "官网回顾称 Qualcomm Ventures 于2000年成立，投资全球科技企业以推动无线技术发展与应用。",
+          "source_id": "qv_venture_origin"
+        },
+        {
+          "date": "2025",
+          "description": "机构官网发布25周年年度回顾，披露2025年新增投资与累计组合指标。",
+          "source_id": "qv_2025_review"
+        }
+      ],
       "track_record": [
+        {
+          "description": "Qualcomm Ventures 官网2025年度回顾列出 Mountain Digital、Capillary Technologies、Unisound 上市，以及 Weights & Biases 被收购；这是机构年度回顾列出的组合公司退出案例，不构成完整退出清单。",
+          "source_id": "qv_2025_review"
+        },
         {
           "description": "融资来源记录：Hark · A轮 · 2026-05-21 · 本轮参投 · $700M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9b94f245fa27a161"
@@ -30089,8 +30144,40 @@
           "source_id": "FISRC-7e709202ce99cc8e"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Qualcomm Ventures 官方网站",
+          "value": "Qualcomm Ventures",
+          "url": "https://www.qualcommventures.com/",
+          "source_id": "qv_venture_origin"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "qv_venture_origin",
+          "source_url": "https://www.qualcommventures.com/insights/blog/qualcomm-ventures-two-decades-of-driving-innovation-in-mobile/",
+          "source_title": "Qualcomm Ventures: Two Decades of Driving Innovation in Mobile",
+          "source_content_hash": "8b46e367db7f4d4a03d1143858f7d0f3999e9d29fb012fd55de47f14b56d2a28",
+          "quote": "Qualcomm Ventures was formed to invest in companies globally to drive the advancement and adoption of wireless technology.",
+          "quote_hash": "d9ca090bfd3270729c7254f405f7c73b5c9dabf61e39f569c64ad9daaa2d8c14"
+        },
+        {
+          "source_id": "qv_2025_review",
+          "source_url": "https://www.qualcommventures.com/insights/blog/qualcomm-ventures-2025-year-in-review/",
+          "source_title": "Qualcomm Ventures' 2025 Year in Review",
+          "source_content_hash": "d0e5cb915d59866e4fb91a8ec47c9c448545eca6f4f4763283abb4c1df18f30c",
+          "quote": "investing in more than 500 companies globally, deploying over $3B in capital, and supporting 60+ unicorns",
+          "quote_hash": "5400b8f3322d5e35b29415af7d1348453929ad419b4899117c6b52528206e308"
+        },
+        {
+          "source_id": "qv_team",
+          "source_url": "https://www.qualcommventures.com/team/",
+          "source_title": "Team | Qualcomm Ventures",
+          "source_content_hash": "32b0b82f1a0050d3bbcd38ece07bc774af4072c94d32e53cb0e2e6ac6f2f1f8d",
+          "quote": "Quinn Li Senior Vice President & Global Head of Qualcomm Ventures",
+          "quote_hash": "966664064c2645c134da5027a77a2f9ebaa98ea11a87cbee3a6c790e8e242042"
+        },
         {
           "source_id": "FISRC-9b94f245fa27a161",
           "source_url": "https://www.intelcapital.com/hark-raises-700m-series-a-at-a-6b-valuation/",
@@ -30108,7 +30195,8 @@
           "quote_hash": "c255cf67574e4c0a61a71a835a9950747856dd3b6b1ee07474870bbba856720c"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified"
     },
     "INV-02ec858927c47b": {
       "profile_type": "person",
@@ -45948,19 +46036,134 @@
     "INV-e2ca9c1c84b534": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "合肥产投科创种子基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "15亿元是合肥科创集团运营的“1+1+3”合肥市种子基金群总规模，不是本档案对应单只基金规模；2023年10亿元为当时推动形成的全市种子基金总规模。公开资料尚未给出本基金单体规模。",
+      "summary": "合肥产投科创种子基金是合肥市科技成果转化与早期科技项目投资体系中的一支种子基金，由合肥市科创集团参与设立和运营，关注早期、硬科技项目。运营方的种子基金群已形成多项目决策和投后培育体系；单只基金规模未在所引公开资料中单独披露。",
+      "facts": [
+        {
+          "field": "operating_platform",
+          "label": "设立及运营平台",
+          "value": "合肥市科创集团有限公司参与设立并运营；集团为合肥市产业投资控股（集团）有限公司全资子公司。",
+          "source_id": "hfkc_overview_2026"
+        },
+        {
+          "field": "operator_founded",
+          "label": "运营机构成立时间",
+          "value": "合肥市科创集团有限公司成立于2021年4月。",
+          "source_id": "hfkc_overview_2026"
+        },
+        {
+          "field": "investment_approach",
+          "label": "运营方公开投资理念",
+          "value": [
+            "投早",
+            "投小",
+            "投长期",
+            "投硬科技"
+          ],
+          "source_id": "hfkc_overview_2026"
+        },
+        {
+          "field": "seed_fund_family_scale",
+          "label": "运营方种子基金群规模（非单只基金）",
+          "value": "15亿元；集团称基金群已立项投决近300个项目，其中超100家投后估值过亿元。",
+          "source_id": "hfkc_seed_family_2026"
+        },
+        {
+          "field": "city_seed_fund_scale_2023",
+          "label": "全市种子基金总规模（2023年历史披露）",
+          "value": "2023年基金设立会议与各市县（区）联动后，合肥市种子基金总规模增至10亿元；不是单只基金的规模。",
+          "source_id": "hfkc_history_2023"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2023-09-15",
+          "description": "合肥科创集团召开合肥产投科创种子基金设立暨第一次合伙人大会，并推动合肥市种子基金总规模增至10亿元。",
+          "source_id": "hfkc_history_2023"
+        },
+        {
+          "date": "2026-08-20",
+          "description": "合肥产投科创种子基金完成对京理飞动数百万元投资，包河区科创种子基金同步跟投。",
+          "source_id": "hfkc_jinglifeidong_2026"
+        }
+      ],
       "track_record": [
+        {
+          "description": "合肥科创集团官网2026年8月披露，基金完成对京理飞动数百万元投资、包河区科创种子基金同步跟投。这是公开披露的单个案例，不代表完整投资组合或基金回报。",
+          "source_id": "hfkc_jinglifeidong_2026"
+        },
+        {
+          "description": "投资界2026年7月报道，合肥产投科创种子基金领投Monstar梦塔科技超千万元种子+轮融资；报道未披露基金单独出资额。",
+          "source_id": "pedaily_monstar_seed_2026"
+        },
         {
           "description": "融资来源记录：梦塔科技 · 种子+轮 · 2026-07-29 · 本轮领投 · 超千万元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1c8eaea364bcdb2f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "运营机构官方网站",
+          "value": "合肥市科创集团有限公司",
+          "url": "https://www.hfkcjt.com.cn/",
+          "source_id": "hfkc_overview_2026"
+        },
+        {
+          "kind": "phone",
+          "label": "运营机构公开电话（非基金专属渠道）",
+          "value": "0551-63858275",
+          "source_id": "hfkc_overview_2026"
+        },
+        {
+          "kind": "address",
+          "label": "运营机构公开地址（非基金专属地址）",
+          "value": "合肥市蜀山区潜山路100号琥珀五环A座16楼",
+          "source_id": "hfkc_overview_2026"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "hfkc_overview_2026",
+          "source_url": "https://www.hfkcjt.com.cn/list/?web1=1229&web2=1598",
+          "source_title": "公司简介｜合肥市科创集团有限公司",
+          "source_content_hash": "0c61e0a8179251e8f10bdbe712c4e7d4781671122c30e665d17036fb4fdaa272",
+          "quote": "合肥市科创集团有限公司（简称“公司”）成立于2021年4月，注册资本11.7亿元，是合肥市产业投资控股（集团）有限公司的全资子公司。公司以推动科创与产业融合发展为核心使命，致力于打造国内一流的科创服务生态运营商。",
+          "quote_hash": "a9c94b30a2ab458e4bd28831d4dcc379cbc6133b70f3eaa5cbf3e66cddbf24f0"
+        },
+        {
+          "source_id": "hfkc_history_2023",
+          "source_url": "https://www.hfkcjt.com.cn/list/?web1=1229&web2=1883",
+          "source_title": "大事记｜合肥市科创集团有限公司",
+          "source_content_hash": "b35c5a59367cfbbda1dcd2f53392d2a7d5d5a4109d7a5dab161a2d183401c7ef",
+          "quote": "9月15日，组织召开合肥产投科创种子基金设立暨第一次合伙人大会，联手各市县（区）推动合肥市种子基金总规模增至10亿元。",
+          "quote_hash": "2422d0048245405b59a175629f9c1e3c9839799a7c01f52768032f694c5b54cc"
+        },
+        {
+          "source_id": "hfkc_seed_family_2026",
+          "source_url": "https://www.hfkcjt.com.cn/list/?web1=1229&web2=1598",
+          "source_title": "公司简介｜合肥市科创集团有限公司",
+          "source_content_hash": "0c61e0a8179251e8f10bdbe712c4e7d4781671122c30e665d17036fb4fdaa272",
+          "quote": "管理运营总规模15亿元的“1+1+3”合肥市种子基金群，已立项投决近300个项目，其中超100家投后估值过亿。",
+          "quote_hash": "7e1711278528f87fda523e2edf7d8b6c6f1c6cd41d6e7513aa6503e7a05edc4e"
+        },
+        {
+          "source_id": "hfkc_jinglifeidong_2026",
+          "source_url": "https://www.hfkcjt.com.cn/show/?12236.html",
+          "source_title": "合肥产投科创种子基金完成对京理飞动增资交割｜合肥市科创集团",
+          "source_content_hash": "5ce0a3547a170f98b758f026cc139eb21fb73cc91729e3bd8e4525bc337f866f",
+          "quote": "近日，合肥产投科创种子基金完成对合肥京理飞动科技有限公司（以下简称“京理飞动”）数百万元投资，包河区科创种子基金同步跟投。",
+          "quote_hash": "cb98cc375862e7bc62065ff0737b9feb25fc906ce075358e88736049588e54fc"
+        },
+        {
+          "source_id": "pedaily_monstar_seed_2026",
+          "source_url": "https://news.pedaily.cn/202607/566967.shtml",
+          "source_title": "Monstar梦塔科技完成超千万元种子+轮融资，构建AI数字生命新范式｜投资界",
+          "source_content_hash": "377c392d6365234a",
+          "quote": "Monstar梦塔科技已完成 超千万元种子+轮融资 ，由 合肥产投科创种子基金领投，小遛科技跟投，老股东奇绩创坛、启迪之星持续支持。",
+          "quote_hash": "37d1ec65c0044bab10ab122ddbca857a93366579cd3fdd3009924ca18ac010bb"
+        },
         {
           "source_id": "FISRC-1c8eaea364bcdb2f",
           "source_url": "https://news.pedaily.cn/202607/566967.shtml",
@@ -56722,13 +56925,71 @@
     },
     "INV-ede3ca23fc0550": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "驰星创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案依据思必驰科技股份有限公司招股说明书（2022年申报稿）重建驰星创投品牌及基金载体关系。投资案例、持股比例和募资状态均为该申报稿披露时点的历史信息，不能据此推断当前基金状态。",
+      "summary": "驰星创投是投资早期科技项目的产业基金，思必驰科技股份有限公司作为发起人之一参与设立。思必驰招股说明书披露，相关投资载体包括驰星睿远、驰星睿启，驰星泽和担任两只基金的执行事务合伙人；投资重点涉及人工智能及数据科学等高科技初创企业。",
+      "facts": [
+        {
+          "field": "fund_type",
+          "label": "机构性质",
+          "value": "投资早期科技项目的产业基金；此表述来自思必驰科技股份有限公司招股说明书。",
+          "source_id": "chixing_prospectus"
+        },
+        {
+          "field": "founding_participant",
+          "label": "发起方关系",
+          "value": "思必驰科技股份有限公司是驰星创投的发起人之一。",
+          "source_id": "chixing_prospectus"
+        },
+        {
+          "field": "fund_vehicles",
+          "label": "公开披露的投资载体",
+          "value": [
+            "苏州睿思通（过渡平台，2020年9月注销）",
+            "驰星睿远",
+            "驰星睿启（二期投资平台）"
+          ],
+          "source_id": "chixing_prospectus"
+        },
+        {
+          "field": "general_partner",
+          "label": "执行事务合伙人",
+          "value": "驰星泽和为驰星睿远及驰星睿启的执行事务合伙人。",
+          "source_id": "chixing_prospectus"
+        },
+        {
+          "field": "investment_scope",
+          "label": "公开披露的方向",
+          "value": [
+            "早期科技项目",
+            "人工智能",
+            "数据科学"
+          ],
+          "source_id": "chixing_prospectus"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2017-06",
+          "description": "思必驰招股说明书记载，驰星泽和于2017年6月设立。",
+          "source_id": "chixing_prospectus"
+        },
+        {
+          "date": "2020-09",
+          "description": "思必驰招股说明书记载，作为过渡平台的苏州睿思通于2020年9月注销。",
+          "source_id": "chixing_prospectus"
+        },
+        {
+          "date": "2022",
+          "description": "思必驰招股说明书申报稿将驰星睿启描述为二期投资平台，并称当时尚在募资；该状态为历史披露。",
+          "source_id": "chixing_prospectus"
+        }
+      ],
       "track_record": [
+        {
+          "description": "思必驰招股说明书披露，驰星睿远于2018年8月投资深聪半导体，申报稿时持有16.2291%股权；同月通过受让股权成为增强科技股东，申报稿时持有11.0714%。这是发行人披露的历史持股数据，不代表当前持股。",
+          "source_id": "chixing_prospectus"
+        },
         {
           "description": "融资来源记录：知跃空间智能 · 天使轮 · 2026-06-24 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-93d4a052ba2f7977"
@@ -56736,6 +56997,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "chixing_prospectus",
+          "source_url": "https://static.sse.com.cn/stock/disclosure/announcement/c/202207/001302_20220715_6AUW.pdf",
+          "source_title": "思必驰科技股份有限公司招股说明书（申报稿）",
+          "source_content_hash": "5daf68a33ca905ae64cfff9eb1372437b7775ae98b38b963de6ee4a932f029e6",
+          "quote": "驰星创投为一家投资于早期科技项目的产业基金，思必驰作为发起人之一参与了该基金的设立。该基金主要设立了苏州睿思通、驰星睿远以及驰星睿启三个投资主体。驰星泽和为驰星睿远及驰星睿启的执行事务合伙人。",
+          "quote_hash": "9f5d5565ce46abb241cad51cef9c81570521565c61f5b53daf1f45e6619c4708"
+        },
         {
           "source_id": "FISRC-93d4a052ba2f7977",
           "source_url": "https://news.pedaily.cn/20260623/132658.shtml",
@@ -56745,7 +57014,8 @@
           "quote_hash": "a7cd6670ff036681a3f895a23213bc306bc61a15c0892a8bd55e5d73acac0b1f"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified"
     },
     "INV-614b5219cb63fa": {
       "profile_type": "unverified",
@@ -63103,19 +63373,116 @@
     "INV-2655bea22ff442": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "广州越富基金管理有限公司 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "广州越富基金管理有限公司的历史股权关系依据越秀区审计局对越富投控2020—2022年度的审计结果；2020年47.17%股权受让信息和2022年末子公司口径不等同于当前持股比例。越秀区2026年招商报道中的生命健康专项基金属于区级基金，档案按“以越富基金为抓手”表述，不将所有项目自动归为管理公司的自有组合。",
+      "summary": "广州越富基金管理有限公司是越秀区属基金管理体系的重要主体。越秀区审计公告显示，区属一级企业广州越富投资控股有限公司于2020年受让越富基金47.17%股权，并在2022年末将其列入全资或控股子公司。越秀区金融工作报告披露，越富基金发起设立越富国科、越华产融等产业基金，投资过中科云图、广咨国际等区内项目。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "机构全称",
+          "value": "广州越富基金管理有限公司",
+          "source_id": "yuefu_audit_2024"
+        },
+        {
+          "field": "group_relationship",
+          "label": "区属国资关系（历史审计披露）",
+          "value": "越秀区属一级企业广州越富投资控股有限公司于2020年受让越富基金47.17%股权；越秀区审计局报告将其列入越富投控2022年末全资或控股子公司。该比例和状态不代表当前工商股权结构。",
+          "source_id": "yuefu_audit_2024"
+        },
+        {
+          "field": "investment_role",
+          "label": "区内投资职能",
+          "value": "越秀区金融工作报告称其发挥区属产业基金领投作用，并主导发起设立产业基金。",
+          "source_id": "yuefu_finance_bureau_2022"
+        },
+        {
+          "field": "healthcare_fund_role",
+          "label": "生命健康产业基金（政府报道）",
+          "value": "越秀区招商报道记载，以越富基金为抓手，与广州金控、广州产投合作组建区级生物医药与健康产业专项基金。",
+          "source_id": "yuefu_health_fund_2026"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2020-12",
+          "description": "越秀区审计局报告记载，越富投控受让广州越富基金管理有限公司47.17%股权。",
+          "source_id": "yuefu_audit_2024"
+        }
+      ],
       "track_record": [
+        {
+          "description": "越秀区金融工作报告称，越富基金主导发起越富国科、越华产融等产业基金，并投资辖内中科云图、广咨国际等项目。",
+          "source_id": "yuefu_finance_bureau_2022"
+        },
+        {
+          "description": "越秀区招商报道记载，区级生物医药与健康产业专项基金投资米戈思、万灵帮桥、睿心医疗等项目，累计撬动社会资本超过1亿元；报道未拆分单一管理机构或单个项目出资额。",
+          "source_id": "yuefu_health_fund_2026"
+        },
+        {
+          "description": "投资界2026年5月报道，广州越富基金管理有限公司跟投睿心医疗近亿元D轮融资；报道未披露越富基金的单独出资额。",
+          "source_id": "pedaily_ruixin_yuefu_2026"
+        },
         {
           "description": "融资来源记录：睿心医疗 · D轮 · 2026-05-27 · 本轮参投 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f9bb3bf014f3fdf8"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "label": "越秀区公开企业投融资服务电话（越富投控越富基金）",
+          "value": "020-87392591",
+          "source_id": "yuefu_service_contact_2026"
+        },
+        {
+          "kind": "website",
+          "label": "广州市越秀区政府企业服务页面",
+          "value": "越秀区营商微服务平台",
+          "url": "https://www.yuexiu.gov.cn/tzyx/ycwl/index.html",
+          "source_id": "yuefu_service_contact_2026"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "yuefu_audit_2024",
+          "source_url": "https://www.yuexiu.gov.cn/gzyxsj/attachment/7/7540/7540340/9446307.pdf",
+          "source_title": "广州越富投资控股有限公司2020至2022年度审计结果｜广州市越秀区审计局",
+          "source_content_hash": "ee2a4b580cbd5221a23bbb6cc24838948e56383974a5d88b17826f1b68924857",
+          "quote": "2020年12月，广州越富投资控股有限公司接受广州民间金融街管理有限公司100%股权及广州越富基金管理有限公司47.17%股权转让；截至2022年12月31日，越富基金公司为越富投控旗下全资或控股子公司之一。",
+          "quote_hash": "32ce5227ca97ea1ab7448f12cd53386453f22cda3a0ba50c58946a508be27804"
+        },
+        {
+          "source_id": "yuefu_finance_bureau_2022",
+          "source_url": "https://www.yuexiu.gov.cn/gzyxjr/gkmlpt/content/8/8873/post_8873308.html",
+          "source_title": "区金融局2022年工作总结和2023年工作安排｜广州市越秀区人民政府",
+          "source_content_hash": "6104f8c3cbf49a38d00a6aab2957779009ad64e602f87fb50cfa48a3614fb101",
+          "quote": "引导越富基金充分发挥区属产业基金领投作用，为辖内企业提供优质投融资服务，主导发起设立越富国科、越华产融等产业基金，已投资辖内中科云图、广咨国际等项目。",
+          "quote_hash": "980d6d826e963bfb6432cfafbfdc3df61bd644b8fd63c686880672af26f5e429"
+        },
+        {
+          "source_id": "yuefu_health_fund_2026",
+          "source_url": "https://www.yuexiu.gov.cn/ggfw/ztfw/zsyz/tzxx/content/post_10894145.html",
+          "source_title": "优质产业项目接连落地！越秀招商“上大分”｜广州市越秀区人民政府",
+          "source_content_hash": "1ae3ca54d30d217aa5474fad5b2e77d2bd0478924453371bae38ffd9699ec2f7",
+          "quote": "以区属越富基金为抓手，加大力度与广州金控、广州产投合作，组建区级生物医药与健康产业专项基金；该专项基金投资米戈思、万灵帮桥、睿心医疗等优质项目，累计撬动社会资本超1亿元。",
+          "quote_hash": "7818571ce0df7be233d10f61d6789dcfa6489c9ed3d71da47b67df81ac10fbee"
+        },
+        {
+          "source_id": "yuefu_service_contact_2026",
+          "source_url": "https://www.yuexiu.gov.cn/tzyx/ycwl/index.html",
+          "source_title": "越秀区营商微服务平台｜广州市越秀区人民政府",
+          "source_content_hash": "eff63358b95ffe59ae4c0ce99d593b80de8eb3afce7a03db08703f880c6a4fbc",
+          "quote": "协助引入投融资资源，协助优质项目联系潜在投资者、上下游产业资金，引导社会资本投向区内优质初创项目。对应部门：越富投控越富基金 020-87392591。",
+          "quote_hash": "0a06dae1cdf59d32b5712efb6e8e0cb1e4577e7dd142a574bd2edd3c4d6e6c90"
+        },
+        {
+          "source_id": "pedaily_ruixin_yuefu_2026",
+          "source_url": "https://news.pedaily.cn/202605/564464.shtml",
+          "source_title": "聚焦心血管精准诊疗赛道，睿心医疗完成近亿元D轮融资｜投资界",
+          "source_content_hash": "79dea96b7dc8102f",
+          "quote": "由 广州生物医药与健康产业投资有限公司（以下简称“广州健康产投”）领投、广州越富基金管理有限公司（以下简称“越富基金”）跟投",
+          "quote_hash": "1d413599da89517453fdfb7963303f432400dee64bfb53ca2d0eef2b56b8d59a"
+        },
         {
           "source_id": "FISRC-f9bb3bf014f3fdf8",
           "source_url": "https://news.pedaily.cn/202605/564464.shtml",
@@ -64959,19 +65326,109 @@
     "INV-b91546db3aec6b": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "贵州科创天使基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "贵州省科技创新天使股权投资基金亦简称“科创天使基金”，由贵州省科技风险创业投资有限公司担任基金管理人。10亿元是公开披露的首期规模；2026年指南中的规模、返投和投资阶段要求适用于参股子基金，不应理解为母基金单笔投资承诺。",
+      "summary": "贵州省科技创新天使股权投资基金是省级科技成果转化与早期科技投资基金，管理人为贵州省科技风险创业投资有限公司。贵州省科技厅2026年子基金申报指南强调投早、投小、投硬科技，并支持种子投资、天使投资和科技成果转化；省科技厅2025年披露该基金首期规模为10亿元。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "基金全称",
+          "value": "贵州省科技创新天使股权投资基金（简称“科创天使基金”）",
+          "source_id": "gz_science_angel_guide_2026"
+        },
+        {
+          "field": "fund_manager",
+          "label": "基金管理人",
+          "value": "贵州省科技风险创业投资有限公司。",
+          "source_id": "gz_science_angel_guide_2026"
+        },
+        {
+          "field": "first_close_scale",
+          "label": "首期规模（省科技厅2025年披露）",
+          "value": "人民币10亿元；为首期规模，不代表当前实缴或可投资余额。",
+          "source_id": "gz_science_angel_scale_2025"
+        },
+        {
+          "field": "investment_focus",
+          "label": "子基金投资方向要求（2026年指南）",
+          "value": [
+            "种子投资",
+            "天使投资",
+            "科技成果转化",
+            "重点产业和重大科技创新项目",
+            "硬科技"
+          ],
+          "source_id": "gz_science_angel_guide_2026"
+        },
+        {
+          "field": "subfund_policy",
+          "label": "2026年参股子基金要求",
+          "value": "单只子基金规模原则上不低于2亿元；种子期、初创期科技型企业投资金额不低于子基金规模的60%；投资贵州省内项目的金额不低于母基金对子基金的实缴出资额。",
+          "source_id": "gz_science_angel_guide_2026"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2025-12-02",
+          "description": "贵州省科技厅发布的科技创新成果报道披露基金首期规模10亿元。",
+          "source_id": "gz_science_angel_scale_2025"
+        }
+      ],
       "track_record": [
+        {
+          "description": "新浪财经2026年5月报道，贵州科创天使基金与华业天成作为老股东共同跟投小雨智造B+轮；报道未披露本基金单独出资额。",
+          "source_id": "sina_xiaoyu_angel_2026"
+        },
         {
           "description": "融资来源记录：小雨智造 · B+轮 · 2026-05-09 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7cae6e0a712567de"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "label": "基金管理人业务咨询邮箱（省科技厅指南公布）",
+          "value": "zltzb@gzstvc.com",
+          "source_id": "gz_science_angel_guide_2026"
+        },
+        {
+          "kind": "phone",
+          "label": "基金管理人业务咨询电话（省科技厅指南公布的联系人电话）",
+          "value": "18798053121",
+          "source_id": "gz_science_angel_guide_2026"
+        },
+        {
+          "kind": "address",
+          "label": "基金管理人业务联系地址",
+          "value": "贵州省贵阳市南垭路67号贵州金控集团5号楼4楼",
+          "source_id": "gz_science_angel_guide_2026"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "gz_science_angel_guide_2026",
+          "source_url": "https://kjt.guizhou.gov.cn/zwgk/xxgkml/zdlyxxgk/kyxmgl/sbzn/202604/t20260421_90026667.html",
+          "source_title": "贵州省科技创新天使股权投资基金2026年子基金申报指南｜贵州省科学技术厅",
+          "source_content_hash": "35940a3e4e534212c6bb2572681652cc76793eda8db412db76ab2be7c2e25145",
+          "quote": "科创天使基金子基金投向要求重点投早、投小、投硬科技，投向种子投资、天使投资、科技成果转化等领域；咨询对象：贵州省科技风险创业投资有限公司（科创天使基金管理人）；联系邮箱：zltzb@gzstvc.com。",
+          "quote_hash": "e0aef7e85f313bcf44bd009701caeb121fb74e499b6ec75d0a0821fc13760c87"
+        },
+        {
+          "source_id": "gz_science_angel_scale_2025",
+          "source_url": "https://kjt.guizhou.gov.cn/xwzx/mtjj/202512/t20251202_89007691.html",
+          "source_title": "贵州全社会研发经费支出及强度实现连续9年增长｜贵州省科学技术厅",
+          "source_content_hash": "4ccbed17a3e220d92dfd28899b29895191f6e8747d1a08a9603910aae8ca94ee",
+          "quote": "贵州省科技创新天使股权投资基金首期规模10亿元。",
+          "quote_hash": "a8b580dd1ebfd54c6467ff5db2e9e1a74694e2f397df8b8d2a6a54e62d3af02a"
+        },
+        {
+          "source_id": "sina_xiaoyu_angel_2026",
+          "source_url": "https://finance.sina.com.cn/roll/2026-05-09/doc-inhxhuvc1441707.shtml",
+          "source_title": "小雨智造完成数亿元B+轮融资",
+          "source_content_hash": "320a14d704f62a2d",
+          "quote": "老股东华业天成、贵州科创天使基金共同跟投",
+          "quote_hash": "46c5abda29dc5a4f9b36012fd8190fd437675ab2ad60fbe269108f4f57ef3601"
+        },
         {
           "source_id": "FISRC-7cae6e0a712567de",
           "source_url": "https://finance.sina.com.cn/roll/2026-05-09/doc-inhxhuvc1441707.shtml",
@@ -65341,20 +65798,130 @@
     },
     "INV-24f1b0a607639c": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "杭州高新金投集团 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "融资披露使用简称“杭州高新金投集团”，与债券发行人“杭州高新金投控股集团有限公司”相符。集团信息、子公司投资业务和子公司财务数据分别标注；披露电话及邮箱是公司信息披露联系方式，未验证为投资项目投递渠道。",
+      "summary": "杭州高新金投控股集团有限公司是杭州市滨江区国资背景的投资控股平台。2026年债券募集说明书披露其2015年设立、注册资本15.663亿元，由滨江区财政局全资持有，经营涉及创业投资、股权投资和科技金融服务；科技产业投资由旗下杭州高新创业投资有限公司等子公司开展。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "发行人全称",
+          "value": "杭州高新金投控股集团有限公司。",
+          "source_id": "hangzhou_bond_2026"
+        },
+        {
+          "field": "ownership",
+          "label": "股权关系（截至2026年债券披露）",
+          "value": "杭州市滨江区财政局持有100%股权，发行文件将其列为国有独资企业。",
+          "source_id": "hangzhou_bond_2026"
+        },
+        {
+          "field": "registered_capital",
+          "label": "注册资本",
+          "value": "人民币156,630万元（15.663亿元）；2024年度报告另披露实缴资本154,130万元。",
+          "source_id": "hangzhou_bond_2026"
+        },
+        {
+          "field": "established",
+          "label": "设立日期",
+          "value": "2015年12月11日。",
+          "source_id": "hangzhou_bond_2026"
+        },
+        {
+          "field": "business_lines",
+          "label": "公开经营范围",
+          "value": [
+            "创业空间服务",
+            "股权投资",
+            "创业投资",
+            "科技中介与信息咨询"
+          ],
+          "source_id": "hangzhou_bond_2026"
+        },
+        {
+          "field": "investment_subsidiary",
+          "label": "科技产业投资平台",
+          "value": "杭州高新创业投资有限公司负责集团科技产业投资中的财务性直接投资及子基金投资业务。",
+          "source_id": "hangzhou_bond_2026"
+        },
+        {
+          "field": "subsidiary_financial_result",
+          "label": "2025年度子公司净利润（非集团合并口径）",
+          "value": "杭州高新创业投资有限公司2025年度净利润35,842.23万元（约3.584亿元）；发行文件说明投资收益与公允价值收益会随市场环境变化。",
+          "source_id": "hangzhou_bond_2026"
+        },
+        {
+          "field": "legal_representative",
+          "label": "法定代表人（2026年发行文件）",
+          "value": "王峰斌。",
+          "source_id": "hangzhou_bond_2026"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2015-12-11",
+          "description": "杭州高新金投控股集团有限公司成立。",
+          "source_id": "hangzhou_bond_2026"
+        },
+        {
+          "date": "2022-08",
+          "description": "发行文件记载控股股东由杭州高新国有控股集团有限公司变更回滨江区财政局。",
+          "source_id": "hangzhou_bond_2026"
+        }
+      ],
       "track_record": [
+        {
+          "description": "债券发行文件披露，集团全资子公司杭州高新创业投资有限公司2025年度净利润35,842.23万元。该指标属于子公司财务结果，且受投资收益与公允价值波动影响，不作为基金投资回报率。",
+          "source_id": "hangzhou_bond_2026"
+        },
         {
           "description": "融资来源记录：无问芯穹 · 基础设施融资 · 2026-05-07 · 本轮联合领投 · 7 亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e5d0583f94886034"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "债券年度报告披露的公司网址",
+          "value": "杭州高新金投控股集团有限公司",
+          "url": "http://www.hzgxcy.cn/",
+          "source_id": "hangzhou_bond_2024"
+        },
+        {
+          "kind": "email",
+          "label": "公司信息披露邮箱（未验证为投资申请渠道）",
+          "value": "gxjtjt2023@163.com",
+          "source_id": "hangzhou_bond_2024"
+        },
+        {
+          "kind": "phone",
+          "label": "信息披露事务负责人电话（未验证为投资项目申请电话）",
+          "value": "+86 571 8508 7775",
+          "source_id": "hangzhou_bond_2026"
+        },
+        {
+          "kind": "address",
+          "label": "债券发行文件披露的办公地址",
+          "value": "浙江省杭州市滨江区浦沿街道坚塔街768号贝遨大厦B幢6层601室",
+          "source_id": "hangzhou_bond_2026"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "hangzhou_bond_2026",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-08-12/1225469687.PDF",
+          "source_title": "杭州高新金投控股集团有限公司2026年公开发行公司债券募集说明书",
+          "source_content_hash": "fed19abe17bb1c5af580123b6b88b3be6e7952cde566dfe6a5569a4b16c34934",
+          "quote": "公司名称：杭州高新金投控股集团有限公司；注册资本：人民币 156,630.00 万元；设立日期：2015 年 12 月 11 日",
+          "quote_hash": "e8547cf615cb83316180588d452559ccca1ecde5ebb710542564d5f7b2549a19"
+        },
+        {
+          "source_id": "hangzhou_bond_2024",
+          "source_url": "https://static.sse.com.cn/disclosure/bond/announcement/corporate/c/new/2025-04-30/184703_20250430_CU0P.pdf",
+          "source_title": "杭州高新金投控股集团有限公司公司债券年度报告（2024年）",
+          "source_content_hash": "676bd35aa0e133537cf20fc8c4ccd6d91dd8109607f037f0e6bc5db9a4edba75",
+          "quote": "公司网址（如有）http://www.hzgxcy.cn/；电子信箱 gxjtjt2023@163.com",
+          "quote_hash": "c098c51049683911359b262b833f6d3b27d03f1ba258a37a952f2cee71618120"
+        },
         {
           "source_id": "FISRC-e5d0583f94886034",
           "source_url": "https://news.pedaily.cn/202605/563518.shtml",
@@ -65364,7 +65931,8 @@
           "quote_hash": "72a17306f79e02f78372eb98204c8475345e49dd01280bbce24d1adfa3d51dbe"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified"
     },
     "INV-5ff84127eaef93": {
       "profile_type": "unverified",
@@ -68759,20 +69327,89 @@
     },
     "INV-123c68740ab286": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "达晨创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案区分“达晨创投”品牌历史与公开文件中的达晨财智管理主体；不把品牌名自动等同为每笔交易的法律出资人。2025年公司官网回顾案例可用于证明项目关联，不代表完整组合或当前管理规模。",
+      "summary": "达晨创投是深圳起步的本土创业投资品牌。官网历史回顾将其创业沿革追溯至2000年，公开发行人文件另列深圳市达晨财智创业投资管理有限公司这一管理主体。融资披露只使用“达晨创投”简称，具体出资基金和法律出资主体需以该轮原始披露为准。",
+      "facts": [
+        {
+          "field": "brand_history",
+          "label": "品牌沿革",
+          "value": "达晨官网历史文章将创业投资业务起步追溯至2000年4月19日。",
+          "source_id": "dachen_history"
+        },
+        {
+          "field": "related_management_entity",
+          "label": "公开披露的管理主体",
+          "value": "深圳市达晨财智创业投资管理有限公司；北交所发行人披露文件列示该主体成立于2008年12月15日、注册资本18,668.57万元。该主体信息用于背景识别，不据此推定单笔融资的基金层出资人。",
+          "source_id": "dachen_manager"
+        },
+        {
+          "field": "business_model",
+          "label": "官网历史披露的管理模式",
+          "value": "2009年前后，达晨通过品牌合作、有限合伙创投基金募资和专业化管理，向基金管理模式转型；此处为历史沿革，不代表当前基金管理规模。",
+          "source_id": "dachen_history"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2000-04-19",
+          "description": "达晨官网历史文章记载深圳市达晨创业投资有限公司于此日成立。",
+          "source_id": "dachen_history"
+        },
+        {
+          "date": "2008-12-15",
+          "description": "北交所发行人披露文件列示深圳市达晨财智创业投资管理有限公司成立。",
+          "source_id": "dachen_manager"
+        }
+      ],
       "track_record": [
+        {
+          "description": "达晨官网历史回顾列出同洲电子、拓维信息、圣农发展、亿纬锂能、爱尔眼科、网宿科技等早期上市退出案例；对应2006至2009年前后历史口径，不代表当前退出表现。",
+          "source_id": "dachen_history"
+        },
+        {
+          "description": "达晨官网2025年文章回顾称其于2017年投资康希诺；这是官网明确提到的组合案例，不代表该条融资记录的出资主体。",
+          "source_id": "dachen_cansino"
+        },
         {
           "description": "融资来源记录：深圳跃然创新科技有限公司 · A+轮 · 2026-03-30 · 本轮参投 · 未披露。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-47b1de868e5ddfe2"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "达晨创投官方网站",
+          "value": "达晨Family / 达晨创投",
+          "url": "https://www.fortunevc.com/",
+          "source_id": "dachen_history"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "dachen_history",
+          "source_url": "https://www.fortunevc.com/index.php/index/shownews/id/1309.html",
+          "source_title": "电广传媒：做强创业投资 做大传媒主业｜达晨创投",
+          "source_content_hash": "a8ddac6e301ec89d4aaa0db4579a626c5fe47113bc592ebb1406a25df58a2748",
+          "quote": "于2000年4月19日注册成立",
+          "quote_hash": "694382ad5302cf1c99abdfe67e6bbf5aea13b69c5cb07ef56a0aeab8f8ca9eeb"
+        },
+        {
+          "source_id": "dachen_manager",
+          "source_url": "https://www.bse.cn/disclosure/2023/2023-07-11/1689066728_025124.pdf",
+          "source_title": "北交所发行人披露文件｜达晨财智管理主体信息",
+          "source_content_hash": "ef2ba0a36f57c36934d21d92d62bf527b6e5cf58131c5eee1025675382fcc5d6",
+          "quote": "深圳市达晨财智创业投资管理有限公司；成立日期 2008 年 12 月 15 日；注册资本 18,668.57 万元",
+          "quote_hash": "eb243a2d2dc61cd72cf5afc160a3b9fe26b420e828fe88aff973fca2aecfc9dd"
+        },
+        {
+          "source_id": "dachen_cansino",
+          "source_url": "https://www.fortunevc.com/index/shownews/id/3788.html",
+          "source_title": "央视新质生产力中国行｜康希诺生物朱涛｜达晨Family",
+          "source_content_hash": "f57f9d537d1969d50754740ebc2e0d2bca1b4444dd25499ba435ffaa69001df3",
+          "quote": "达晨于2017年投资康希诺",
+          "quote_hash": "83e353721fe6472e12322b81fbe982ef70d2ee4f413e8f9187e00f99e2f59774"
+        },
         {
           "source_id": "FISRC-47b1de868e5ddfe2",
           "source_url": "https://finance.sina.cn/2026-03-30/detail-inhstxxe2822090.d.html",
@@ -68782,7 +69419,8 @@
           "quote_hash": "61e17cee984e02b8821d979716a37b36ec570b362c1bd1411e0ffe279aee64f9"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified"
     },
     "INV-f6879ffd60442b": {
       "profile_type": "unverified",
@@ -70245,19 +70883,156 @@
     "INV-9038e1c8cf1162": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "爱杭基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "基金规模与带动投资额来自机构官网自述；2019年高校招聘页面作为历史资料，仅用于核验成立时间和当时披露的方向。官网团队页列出职务，未披露核心成员的完整履历和教育背景，本档案不据此推断个人经历。",
+      "summary": "爱杭基金是一家以私募股权投资为主的机构。官网自述聚焦中国战略新兴产业，当前页面披露在管基金实缴规模、历史管理基金规模及带动地方投资额；2019年浙江财经大学招聘资料记载其投资领域包括新能源、中医药、新一代信息技术、高端装备制造和基础设施，采用政府、社会与产业资本联动方式。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网定位",
+          "value": "聚焦中国战略新兴产业",
+          "source_id": "ihang_home_2026"
+        },
+        {
+          "field": "historical_managed_fund_scale",
+          "label": "历史管理基金规模（机构官网自述）",
+          "value": "50亿元以上",
+          "source_id": "ihang_home_2026"
+        },
+        {
+          "field": "paid_in_managed_fund_scale",
+          "label": "在管基金实缴规模（机构官网自述）",
+          "value": "40亿元以上；该口径为基金实缴规模，不等同于机构净资产或单只基金规模。",
+          "source_id": "ihang_home_2026"
+        },
+        {
+          "field": "local_investment_mobilized",
+          "label": "带动地方总投资（机构官网自述）",
+          "value": "300亿元以上；官网未在该处说明计算口径。",
+          "source_id": "ihang_home_2026"
+        },
+        {
+          "field": "historical_investment_sectors",
+          "label": "2019年公开披露的投资方向",
+          "value": [
+            "新能源",
+            "中医药",
+            "新一代信息技术",
+            "高端装备制造",
+            "基础设施"
+          ],
+          "source_id": "ihang_zufe_2019"
+        },
+        {
+          "field": "investment_model",
+          "label": "2019年公开披露的投资模式",
+          "value": "政府资本、社会资本与产业资本联动。",
+          "source_id": "ihang_zufe_2019"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2015",
+          "description": "浙江财经大学2019年招聘资料记载爱杭基金成立于2015年。",
+          "source_id": "ihang_zufe_2019"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "创始合伙人、执行董事、总经理",
+          "organization": "爱杭基金：何亮",
+          "source_id": "ihang_team_2026"
+        },
+        {
+          "title": "副总经理",
+          "organization": "爱杭基金：谢诚",
+          "source_id": "ihang_team_2026"
+        },
+        {
+          "title": "副总经理",
+          "organization": "爱杭基金：陈波",
+          "source_id": "ihang_team_2026"
+        },
+        {
+          "title": "基金投资部总经理",
+          "organization": "爱杭基金：孙雷",
+          "source_id": "ihang_team_2026"
+        }
+      ],
       "track_record": [
+        {
+          "description": "官网列示历史管理基金规模50亿元以上、在管基金实缴规模40亿元以上、带动地方总投资300亿元以上，均为机构自述的累计/规模指标，不是基金回报率。",
+          "source_id": "ihang_home_2026"
+        },
+        {
+          "description": "投资界2026年3月报道，爱杭基金参与立妙达亿元级A+轮融资；报道未披露爱杭基金的单独出资额。",
+          "source_id": "pedaily_limiaoda_2026"
+        },
         {
           "description": "融资来源记录：立妙达 · A+轮 · 2026-03-16 · 本轮参投 · 超亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f9d4572f4dc397ba"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "爱杭基金",
+          "url": "https://www.ihangcapital.com/",
+          "source_id": "ihang_home_2026"
+        },
+        {
+          "kind": "email",
+          "label": "商业计划书投递",
+          "value": "bp@ihangtech.com",
+          "source_id": "ihang_home_2026"
+        },
+        {
+          "kind": "email",
+          "label": "商业合作",
+          "value": "prompt@ihangtech.com",
+          "source_id": "ihang_home_2026"
+        },
+        {
+          "kind": "email",
+          "label": "售后服务",
+          "value": "service@ihangtech.com",
+          "source_id": "ihang_home_2026"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "ihang_home_2026",
+          "source_url": "https://www.ihangcapital.com/",
+          "source_title": "爱杭基金官方网站",
+          "source_content_hash": "b4bf9ce997ff2fc9a64229b1962b06f49c75f07f280bea8bdb9e6b742650a7f6",
+          "quote": "50 + 亿 历史管理基金规模 40 + 亿 在管基金实缴规模 300 + 亿 带动地方总投资；售后服务：service@ihangtech.com BP商业计划书：bp@ihangtech.com 商业合作：prompt@ihangtech.com",
+          "quote_hash": "a1e777d116a86551f01ac8252da2e16ccf3fec406b0fdf9413c7cb91023e4660"
+        },
+        {
+          "source_id": "ihang_team_2026",
+          "source_url": "https://ihangcapital.com/team",
+          "source_title": "爱杭基金团队介绍",
+          "source_content_hash": "fe9727aba555fd3288681b5c56fb787764777ce2f027e91cea34c2c06135b698",
+          "quote": "何亮 创始合伙人、执行董事、总经理；谢诚 副总经理；陈波 副总经理；孙雷 基金投资部总经理",
+          "quote_hash": "72f74a5272135fff6f2e3e9bf66293fe34a6743dfae4c986850b0a8f2cb5ec27"
+        },
+        {
+          "source_id": "ihang_zufe_2019",
+          "source_url": "https://gs.zufe.edu.cn/info/1042/3999.htm",
+          "source_title": "爱杭基金招聘宣讲会｜浙江财经大学研究生院",
+          "source_content_hash": "ee57d25b4b1c688068efdaf2062306432454650af50b6250acdbf890645c1955",
+          "quote": "爱杭基金成立于 2015年，管理人编号P1062177，管理各类基金总规模约40亿元；主要投资方向为新能源、中医药、新一代信息技术、高端装备制造和基础设施，投资模式通过政府资本+社会资本+产业资本联动的模式注入被投项目。",
+          "quote_hash": "ca74f1aba5364b4000ef5366b3521c8e743e59b078603b7e7bdea2dd7e472341"
+        },
+        {
+          "source_id": "pedaily_limiaoda_2026",
+          "source_url": "https://news.pedaily.cn/202603/561739.shtml",
+          "source_title": "打造AI+机器人全场景解决方案，立妙达完成亿元级A+轮融资｜投资界",
+          "source_content_hash": "20c687863021cb1a",
+          "quote": "本轮融资由 金沙江联合资本、宏沣资本、爱杭基金、嘉祐基金、鑫诚资本 共同出资。",
+          "quote_hash": "613435c511857287accb6916fdef6263d37bd1b277b20c11911d73730d4e54c0"
+        },
         {
           "source_id": "FISRC-f9d4572f4dc397ba",
           "source_url": "https://news.pedaily.cn/202603/561739.shtml",
@@ -76832,20 +77607,99 @@
     },
     "INV-7602ab045c160e": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "北京基石创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "“北京基石创投”对应基金管理人北京基石创业投资管理中心（有限合伙）；公开资料也披露“基石基金”系列载体。投资规模及上市项目数量按2023年北京市丰台区政府报道的系列基金口径记录，不能理解为管理人自有资产或单只基金回报。",
+      "summary": "北京基石创投的管理主体为北京基石创业投资管理中心（有限合伙），成立于2012年并于2014年完成私募基金管理人登记。其发展源自2011年设立的基石基金系列，长期围绕轨道交通产业布局，并延伸至新基建、信息技术、智能制造、新能源和新材料等领域。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "管理主体",
+          "value": "北京基石创业投资管理中心（有限合伙）；公开发行人文件列示其为基石智盈等基金的管理人。",
+          "source_id": "jishi_manager"
+        },
+        {
+          "field": "established",
+          "label": "管理主体成立时间",
+          "value": "2012年12月7日。",
+          "source_id": "jishi_manager"
+        },
+        {
+          "field": "registration",
+          "label": "私募基金管理人登记",
+          "value": "2014年4月21日在中国证券投资基金业协会登记，登记编号 P1000811；此为发行人披露文件记录。",
+          "source_id": "jishi_manager"
+        },
+        {
+          "field": "group_relationship",
+          "label": "股权及管理关系",
+          "value": "发行人披露，北京市基础设施投资有限公司持有北京基石基金管理有限公司70%股权；后者作为有限合伙人认缴北京基石创业投资管理中心出资总额的35%。管理主体与基金管理公司为不同法律主体。",
+          "source_id": "jishi_manager"
+        },
+        {
+          "field": "investment_scope",
+          "label": "公开披露的投资方向",
+          "value": [
+            "轨道交通相关核心产业",
+            "新基建",
+            "新一代信息技术",
+            "智能制造",
+            "新能源与新材料"
+          ],
+          "source_id": "jishi_manager"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2011",
+          "description": "北京市丰台区政府报道将基石基金系列沿革追溯至2011年。",
+          "source_id": "jishi_series"
+        },
+        {
+          "date": "2012-12-07",
+          "description": "北京基石创业投资管理中心（有限合伙）成立。",
+          "source_id": "jishi_manager"
+        },
+        {
+          "date": "2014-04-21",
+          "description": "北京基石创业投资管理中心完成私募股权、创业投资基金管理人登记。",
+          "source_id": "jishi_manager"
+        }
+      ],
       "track_record": [
+        {
+          "description": "北京市丰台区政府2023年报道，基石I至IV期系列基金投资规模约16亿元、投资项目66个；其中I期和II期有12家企业上市。报道中的系列规模和上市数量不是管理人自身业绩，也不是单只基金的投资回报。",
+          "source_id": "jishi_series"
+        },
         {
           "description": "融资来源记录：驰芯半导体 · A+轮 · 2026-09-23 · A轮参投 · 亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-cd5b0b79e0cacd63"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "address",
+          "label": "发行人文件披露的办公地址（2023年）",
+          "value": "北京市海淀区彩和坊路10号1+1大厦1305室",
+          "source_id": "jishi_manager"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "jishi_manager",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2023-12-05/1218509643.PDF",
+          "source_title": "九州一轨关于投资北京基石智盈创业投资中心暨关联交易的公告",
+          "source_content_hash": "d29588af93957e1ce308db3932ddc010d6b38f421b19e4342b166a16fde40d3b",
+          "quote": "北京基石创业投资管理中心（有限合伙）（以下简称“基石管理中心”）已于 2014 年 4 月 21 日在中国证券投资基金业协会备案登记成为私募基金管理人，登记编号为 P1000811。",
+          "quote_hash": "8c859c84e29bc3f70ff9899fcaa5d99e0a8070b526e1b22ab028169d33d2384a"
+        },
+        {
+          "source_id": "jishi_series",
+          "source_url": "https://www.bjft.gov.cn/ftq/bmdt/202301/35c1a5b01498462d92c7690cdfea4a28.shtml",
+          "source_title": "基石基金合伙人黄力波一行来园区交流研讨｜北京市丰台区人民政府",
+          "source_content_hash": "9292510a395cd3c577ab3682c194740331f971c6ec4b8418ce0f1acc978bdaef",
+          "quote": "基石基金成立于2011年，富丰集团作为园区监管的一级企业，先后参与了由京投公司、中科金公司等发起设立的基石I期、II期、III期、IV期基金，投资规模达到16亿元，投资项目66个，其中基石I期、II期已有12家企业成功上市。",
+          "quote_hash": "d8ad70a3d88722b5dcd560abe7585711b7731bb1c3da98e8b3f64024e9f7a0e4"
+        },
         {
           "source_id": "FISRC-cd5b0b79e0cacd63",
           "source_url": "https://news.pedaily.cn/202503/547159.shtml",
@@ -76855,7 +77709,8 @@
           "quote_hash": "947f78e911058631259b73771c06ee2cef87fdb2b2a28ec7b2b338e501dd7786"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified"
     },
     "INV-d098eebc40b844": {
       "profile_type": "unverified",
@@ -79824,19 +80679,125 @@
     "INV-24c4ba7ffdfaf3": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "广州南沙区南金基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "南金基金的全称及股东合作关系来自南沙区国资局公开资料。2022年公示的1亿元规模是其担任管理机构的一支拟投子基金规模，不是管理公司自身资产管理规模；出资仍为拟议状态。2025年度TOP20为行业榜单荣誉，不是财务回报指标。集团电话和地址属于母集团公开联系方式。",
+      "summary": "广州南沙区南金基金管理有限公司（南金基金）是南沙科金控股集团与广州金控体系合作设立的股权投资管理机构，依托市场化基金机制投资南沙区优质企业，重点覆盖新一代信息技术、人工智能、生物医药和高端装备制造。南沙区国资局披露其获评2025年度中国成长型投资机构TOP20。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "机构全称",
+          "value": "广州南沙区南金基金管理有限公司",
+          "source_id": "nanjin_sasac_profile_2025"
+        },
+        {
+          "field": "shareholder_background",
+          "label": "设立背景",
+          "value": "由科金控股集团旗下广州南沙产业创业投资基金管理有限公司与广州金控集团旗下广州金控基金管理有限公司合作设立。",
+          "source_id": "nanjin_sasac_profile_2025"
+        },
+        {
+          "field": "investment_model",
+          "label": "投资方式",
+          "value": "通过市场化基金运作机制，对南沙区优质企业开展股权投资。",
+          "source_id": "nanjin_sasac_profile_2025"
+        },
+        {
+          "field": "investment_sectors",
+          "label": "重点关注领域",
+          "value": [
+            "新一代信息技术",
+            "人工智能",
+            "生物医药",
+            "高端装备制造"
+          ],
+          "source_id": "nanjin_sasac_profile_2025"
+        },
+        {
+          "field": "selected_managed_fund",
+          "label": "公开披露的受托管理案例（2022年拟投子基金）",
+          "value": "南沙区政府公示的一支由南金基金担任管理机构的子基金规模为1亿元，南沙创业投资引导基金计划出资2000万元；这是该支拟投基金规模，不是南金基金管理公司自身规模。",
+          "source_id": "nanjin_nansha_subfund_2022"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2025-10-13",
+          "description": "南沙区国资局公布，南金基金获评中国风险投资行业年度榜单“2025年度中国成长型投资机构TOP20”。",
+          "source_id": "nanjin_sasac_profile_2025"
+        }
+      ],
       "track_record": [
+        {
+          "description": "南沙区国资局披露，南金基金获得中国风险投资研究院2025年度中国成长型投资机构TOP20；这是行业榜单荣誉，不是回报率或退出业绩。",
+          "source_id": "nanjin_sasac_profile_2025"
+        },
+        {
+          "description": "南沙区2022年拟投子基金公示记录一支由南金基金管理、规模1亿元的基金，南沙引导基金计划出资2000万元；文件为拟投资公示，未证明最终交割。",
+          "source_id": "nanjin_nansha_subfund_2022"
+        },
+        {
+          "description": "36氪2023年报道，南金基金领投奕行智能上一轮融资；报道未披露南金基金单独出资额。",
+          "source_id": "tencent_yixing_nanjin_2023"
+        },
         {
           "description": "融资来源记录：奕行智能 · 轮次未披露 · 2026-09-18 · Pre-A+轮领投 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-44c45563314497fe"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "所属科金控股集团官方网站",
+          "value": "广州南沙科金控股集团有限公司",
+          "url": "https://www.nstfhg.com/",
+          "source_id": "nansha_kg_group_website"
+        },
+        {
+          "kind": "phone",
+          "label": "母集团公开电话（非南金基金直达渠道）",
+          "value": "020-84969502",
+          "source_id": "nansha_kg_group_website"
+        },
+        {
+          "kind": "address",
+          "label": "母集团公开地址（非南金基金办公地址）",
+          "value": "广州市南沙区横沥镇明珠湾区明珠一街一号",
+          "source_id": "nansha_kg_group_website"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "nanjin_sasac_profile_2025",
+          "source_url": "https://www.gzns.gov.cn/gznsjr/gkmlpt/content/10/10481/post_10481275.html",
+          "source_title": "喜讯丨科金控股集团旗下南金基金荣获评CVCRI 2025年度中国成长型投资机构TOP20｜南沙区国资局",
+          "source_content_hash": "1db9a325ca69f2eec2b988a7db5f8e7a4957b8515f1a558af9acf73055f057e1",
+          "quote": "广州南沙区南金基金管理有限公司是科金控股集团旗下广州南沙产业创业投资基金管理有限公司与广州金控集团旗下广州金控基金管理有限公司合作设立的股权投资管理机构，专注于对区内优质企业进行股权投资，重点关注新一代信息技术、人工智能、生物医药、高端装备制造等战略性新兴产业。",
+          "quote_hash": "596d420331095dafc4f5acd439a891814471ec37631b9ebdae1e001d718a2ce2"
+        },
+        {
+          "source_id": "nanjin_nansha_subfund_2022",
+          "source_url": "https://www.gzns.gov.cn/zwgk/tzgg/content/post_8661794.html",
+          "source_title": "关于广州南沙创业投资引导基金拟投资子基金的公示｜广州市南沙区人民政府",
+          "source_content_hash": "151c6df78fb63eb0badcf47045aa51bf7c808224df91c14526c69bee5940d9c2",
+          "quote": "基金管理机构：广州南沙区南金基金管理有限公司；投资方向：新一代集成电路、人工智能、元宇宙、数字孪生、量子信息、高端制造、医疗健康；基金规模：人民币1亿元；引导基金计划出资额度：人民币2000万元。",
+          "quote_hash": "b84c91e4890ed05984b3ce29e36bdf054486f82cc5aff042b736686bd33cb446"
+        },
+        {
+          "source_id": "tencent_yixing_nanjin_2023",
+          "source_url": "https://news.qq.com/rain/a/20231114A01CK700",
+          "source_title": "36氪首发｜奕行智能EVAS完成超亿元Pre-A+轮融资，将推出车用AI芯片｜腾讯新闻",
+          "source_content_hash": "5dbe7af466461203",
+          "quote": "本轮融资由广州南沙科金控股集团下属广州南沙区南金基金领投，华侨银行集团旗下狮城资本跟投",
+          "quote_hash": "c7ad01d438c488e3713c3c59adc74a0f39c03256cdb977948a0116b5a2b7c9ec"
+        },
+        {
+          "source_id": "nansha_kg_group_website",
+          "source_url": "https://www.nstfhg.com/",
+          "source_title": "广州南沙科金控股集团有限公司官方网站",
+          "source_content_hash": "093454dc91c783b507d17aa1a9d6f2083e0a1ce51ca4243b187d2c81c4e9102d",
+          "quote": "广州南沙科金控股集团有限公司成立于2018年6月22日，是南沙开发区管委会组建的国有投资公司；地址：广州市南沙区横沥镇明珠湾区明珠一街一号；电话：020-84969502。",
+          "quote_hash": "cf7a2458ce1d0a48bea5d7a135c44deac4e0854b0961db3d7b3eb41f75085480"
+        },
         {
           "source_id": "FISRC-44c45563314497fe",
           "source_url": "https://news.qq.com/rain/a/20231114A01CK700",
@@ -80841,12 +81802,89 @@
     "INV-c6a73a5a5da339": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "安华创投基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "注册资本35亿元是法律主体的注册资本，不代表当前管理规模、实缴金额或单只基金可投资金额。投资案例注明公告披露时的状态；2023年长飞先进半导体投资为拟出资计划。2020年中科类脑A轮来自36氪项目页的历史融资记录。",
+      "summary": "安华创投基金对应安徽安华创新风险投资基金有限公司，2017年在合肥高新区注册成立，由国元创新、华富嘉业、安徽交控、合肥市产业引导基金等多家机构共同出资。公司披露业务包括股权投资、债权投资及相关管理咨询；华安证券官网将其列为华安嘉业管理基金，并报道其通过宣城安华基金及安华创新基金参与国电高科投资。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "机构全称",
+          "value": "安徽安华创新风险投资基金有限公司",
+          "source_id": "anhua_guoyuan_annual_2023"
+        },
+        {
+          "field": "established",
+          "label": "成立日期",
+          "value": "2017年11月30日。",
+          "source_id": "anhua_guoyuan_annual_2023"
+        },
+        {
+          "field": "registered_capital",
+          "label": "注册资本（截至2023年末披露）",
+          "value": "人民币35亿元；不是当前基金管理规模或投资回报数据。",
+          "source_id": "anhua_guoyuan_annual_2023"
+        },
+        {
+          "field": "unified_social_credit_code",
+          "label": "统一社会信用代码",
+          "value": "91340100MA2RAP0C60",
+          "source_id": "anhua_guoyuan_annual_2023"
+        },
+        {
+          "field": "shareholder_background",
+          "label": "共同出资方（年报所列）",
+          "value": [
+            "国元创新投资有限公司",
+            "华富嘉业投资管理有限公司",
+            "安徽交控资本投资管理有限公司",
+            "安徽省盐业总公司",
+            "合肥市产业投资引导基金有限公司",
+            "时代出版传媒股份有限公司",
+            "安徽华文创业投资管理有限公司",
+            "阜阳市颍科创新投资有限公司",
+            "合肥高新建设投资集团公司",
+            "安徽省国有资产运营有限公司"
+          ],
+          "source_id": "anhua_guoyuan_annual_2023"
+        },
+        {
+          "field": "fund_management_relationship",
+          "label": "基金管理关系",
+          "value": "华安嘉业投资管理有限公司为招股说明书披露的基金管理人；华安证券官网亦称，华安嘉业通过所管理的安华创新基金投资国电高科。",
+          "source_id": "anhua_jinghe_prospectus_2023"
+        },
+        {
+          "field": "investment_scope",
+          "label": "公司披露的投资业务",
+          "value": "股权投资为主要业务，并开展债权投资、投资顾问、管理及咨询等业务。",
+          "source_id": "anhua_jinghe_prospectus_2023"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2017-11-30",
+          "description": "国元证券2023年年度报告记载安徽安华创新风险投资基金有限公司经合肥市高新区市场监管部门核准注册成立。",
+          "source_id": "anhua_guoyuan_annual_2023"
+        },
+        {
+          "date": "2023-06-26",
+          "description": "长飞光纤公告披露，安华创新拟出资1亿元参与长飞先进半导体A轮增资；公告说明该轮交易当时尚需履行后续程序。",
+          "source_id": "anhua_changfei_2023"
+        }
+      ],
       "track_record": [
+        {
+          "description": "长飞光纤2023年公告披露，安华创新拟出资1亿元参与长飞先进半导体A轮增资；该金额是公告披露时的拟出资计划，不据此认定已完成交割。",
+          "source_id": "anhua_changfei_2023"
+        },
+        {
+          "description": "华安证券官网称，华安嘉业通过所管理的宣城安华基金及安华创新基金投资国电高科；公开报道未列安华创新基金的单独投资金额。",
+          "source_id": "anhua_huaan_guodian_2025"
+        },
+        {
+          "description": "36氪项目页记录，安华创投基金出现在中科类脑2020年10月A轮投资方名单中；这是历史轮次资料，不表示其参与后续轮次。",
+          "source_id": "pitchhub_zhongkeleinao_2020"
+        },
         {
           "description": "融资来源记录：中科类脑 · B+轮 · 2026-09-07 · A轮投资方 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4cd330eaa5f3d5fc"
@@ -80854,6 +81892,46 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "anhua_guoyuan_annual_2023",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2024-03-26/1219404172.PDF",
+          "source_title": "国元证券股份有限公司2023年年度报告",
+          "source_content_hash": "e21bcc94978185330bf15780d74a49b2d26e1add6f553bfdaab862ca5f42582b",
+          "quote": "安徽安华创新风险投资基金有限公司系国元创新与华富嘉业投资管理有限公司、安徽交控资本投资管理有限公司、安徽省盐业总公司、合肥市产业投资引导基金有限公司、时代出版传媒股份有限公司、安徽华文创业投资管理有限公司、阜阳市颍科创新投资有限公司、合肥高新建设投资集团公司、安徽省国有资产运营有限公司共同出资组建，于 2017 年 11 月 30 日经合肥市高新开发区市场监督管理局核准注册成立，统一社会信用代码为 91340100MA2RAP0C60，注册资本为人民币 350,000.00 万元。截至 2023 年末，安徽安华创新风险投资基金有限公司注册资本为 35.00 亿元，国元创新持股比例为 17.46%。",
+          "quote_hash": "01259d475ea5f9d45c884c2da84e2273abd998bc2ada78b763d475579f2cfc35"
+        },
+        {
+          "source_id": "anhua_changfei_2023",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2023-06-27/1217138480.PDF",
+          "source_title": "长飞光纤光缆股份有限公司关于对外投资的公告",
+          "source_content_hash": "c71899dda67d5511b350a8dd6715372afea1704d1abc21af8fe3b60e4f43e469",
+          "quote": "安华创新及建信信托均拟出资人民币 10,000.0000 万元，各认购长飞先进半导体 440.1076 万元的新增注册资本。",
+          "quote_hash": "e3d515032c476172a50018d193cc8ceae52aeee2c2ff12a682e3d3d41466b7ed"
+        },
+        {
+          "source_id": "anhua_huaan_guodian_2025",
+          "source_url": "https://hazq.com/main/a/20250218/16493.shtml",
+          "source_title": "公司动态｜华安证券官网",
+          "source_content_hash": "7a18e73a3cc1c1bde941d2a36c128ca5d40cb37404bf701fffab3e3112a3acec",
+          "quote": "自 2023 年，华安证券全资子公司华安嘉业通过所管理宣城安华基金及安华创新基金分别投资国电高科，持续至今，已帮助企业实现新跨越。",
+          "quote_hash": "c483861ab5bce80d292eb7e146402d7688f7ebca0f673dfbc6cb234d5a2bf106"
+        },
+        {
+          "source_id": "pitchhub_zhongkeleinao_2020",
+          "source_url": "https://pitchhub.36kr.com/project/1678250824463368",
+          "source_title": "中科类脑｜项目信息-36氪",
+          "source_content_hash": "172b52b0715adcdc",
+          "quote": "A轮 2020-10 亿元人民币 合肥产投集团 ， 金科君创 ， 创东方投资 ， 华安嘉业 ， 量子基金 ， 国元股投 ， 华文投资 ， 合肥创新投资 ， 安华创投基金 ， 安徽省量子科学产业发展基金",
+          "quote_hash": "8c4596a390f6ae35cba538d7b05477bf2548bb2231d5cabd716f22c6c1a630da"
+        },
+        {
+          "source_id": "anhua_jinghe_prospectus_2023",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2023-04-26/1216593341.PDF",
+          "source_title": "合肥晶合集成电路股份有限公司首次公开发行股票并在科创板上市招股说明书",
+          "source_content_hash": "1c7ce1ee6390bd1b06f71382cd0d9eaa8619904e19833c07f8d4238d11abd43a",
+          "quote": "安徽安华创新风险投资基金有限公司经营范围为股权投资、债权投资、投资顾问、管理及咨询；其基金管理人为华安嘉业投资管理有限公司，基金备案编号为 SCJ944。",
+          "quote_hash": "1275858d0cd28f261536e512ffe3bb56fd164f2411f43b039e1a3f3f345b7bce"
+        },
         {
           "source_id": "FISRC-4cd330eaa5f3d5fc",
           "source_url": "https://pitchhub.36kr.com/project/1678250824463368",
@@ -82060,13 +83138,90 @@
     },
     "INV-10f64fe947424b": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "常熟国发创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "基金规模和荣誉来自常熟市投控系统2026年招聘材料，属于公司披露口径；2025年末累计管理基金规模与参投基金规模不是该机构自有资产或单只基金规模。2026年人工智能基金为与深圳前海琥珀资本共同管理的首期基金。",
+      "summary": "常熟市国发创业投资有限公司（国发创投）成立于2010年，是常熟市投资控股集团系统的核心成员企业，以私募股权投资为核心。公司材料披露其基金矩阵覆盖战略合作、市场化合作和自主管理基金，并布局新能源、高端装备、汽车及人工智能、生物医药、新材料、低空经济等产业。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "机构全称",
+          "value": "常熟市国发创业投资有限公司（国发创投）",
+          "source_id": "cs_gfct_2026"
+        },
+        {
+          "field": "group_relationship",
+          "label": "集团关系",
+          "value": "常熟市投资控股集团有限公司系统的核心成员企业。",
+          "source_id": "cs_gfct_2026"
+        },
+        {
+          "field": "established",
+          "label": "成立时间",
+          "value": "2010年。",
+          "source_id": "cs_gfct_2026"
+        },
+        {
+          "field": "business_lines",
+          "label": "基金管理模式",
+          "value": [
+            "战略合作基金",
+            "市场化合作基金",
+            "自主管理基金"
+          ],
+          "source_id": "cs_gfct_2026"
+        },
+        {
+          "field": "fund_scale",
+          "label": "基金规模（截至2025年末，公司披露）",
+          "value": "累计管理基金规模超过50亿元，参投基金总规模超过580亿元；两项均为公司材料所述管理/参投规模，不能解释为自身资产管理净值或单支基金规模。",
+          "source_id": "cs_gfct_2026"
+        },
+        {
+          "field": "investment_sectors",
+          "label": "投资布局",
+          "value": [
+            "新能源",
+            "高端装备",
+            "汽车及零部件",
+            "人工智能",
+            "生命健康",
+            "新材料",
+            "低空经济"
+          ],
+          "source_id": "cs_gfct_2026"
+        },
+        {
+          "field": "industry_awards",
+          "label": "公司材料披露的2025年荣誉",
+          "value": [
+            "FOFWEEKLY“市级母基金TOP30”",
+            "出类“中国最佳政府投资基金TOP50”"
+          ],
+          "source_id": "cs_gfct_2026"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2010",
+          "description": "常熟市国发创业投资有限公司成立。",
+          "source_id": "cs_gfct_2026"
+        },
+        {
+          "date": "2025-12-31",
+          "description": "公司材料披露累计管理基金规模超过50亿元、参投基金总规模超过580亿元。",
+          "source_id": "cs_gfct_2026"
+        },
+        {
+          "date": "2026-03",
+          "description": "常熟市人民政府报道常熟琥珀人工智能产业投资基金正式发布，由深圳前海琥珀资本与国发创投共同管理，首期规模3亿元。",
+          "source_id": "cs_amber_ai_fund"
+        }
+      ],
       "track_record": [
+        {
+          "description": "常熟市人民政府披露常熟琥珀人工智能产业投资基金首期规模3亿元、由深圳前海琥珀资本与常熟国发创投共同管理，聚焦人工智能和机器人。该金额为基金首期规模，不是国发创投单独出资额。",
+          "source_id": "cs_amber_ai_fund"
+        },
         {
           "description": "融资来源记录：瞬适科技 · 种子轮 · 2026-08-28 · 种子轮投资方（另一来源披露） · 千万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4b8e78c06499a369"
@@ -82074,6 +83229,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "cs_gfct_2026",
+          "source_url": "https://files.yccnc.com/data/cszp/files/2026/20260512174644_70640.pdf",
+          "source_title": "2026年常熟市投资控股集团有限公司（系统）招聘公告",
+          "source_content_hash": "4ede1ad213bf482a1a13d0b13c19e031be51322a3e4a5d9db6b518ebdaa3a853",
+          "quote": "截至 2025 年末，公司累计管理基金规模超 50 亿元，参投基金总规模超过 580 亿元",
+          "quote_hash": "25236e72ba7ef2eb80eccea20bf09f234b3d1f99192d5a0ee5f55c2244c4581f"
+        },
+        {
+          "source_id": "cs_amber_ai_fund",
+          "source_url": "https://www.changshu.gov.cn/zgcs/c100293/202603/f176b5b1ed6947df837580a8c425971e.shtml",
+          "source_title": "常熟智算未来城“云创算谷”招商推介活动暨燧弘华创签约仪式举行｜常熟市人民政府",
+          "source_content_hash": "80fc7934fb1a004c99e6bad429d765e7ecfb24af78286e02cd986905f8bfca7b",
+          "quote": "基金由深圳前海琥珀资本与常熟国发创投共同管理",
+          "quote_hash": "4996a461dae68920cf7d96998bb50621c07732352fec8e7790dde677c3f35776"
+        },
         {
           "source_id": "FISRC-4b8e78c06499a369",
           "source_url": "https://www.163.com/dy/article/L5FKCQUC05118K7K.html",
@@ -82083,7 +83254,8 @@
           "quote_hash": "a948d8138bdfb3f13e3cb87faf866a1a2cc0bd9eee0695f5da21028914e8d297"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified"
     },
     "INV-e812eed91f0849": {
       "profile_type": "organization",
@@ -86824,20 +87996,269 @@
     },
     "INV-7b964f23a41024": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "零以创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资规模、基金数量、团队履历和组合案例主要来自零一创投官网自述；“6支基金、投资超100个项目”是机构披露的当前累计口径，不等于已实现收益。团队职务与联系信息按官网2026-09-26核验。",
+      "summary": "零一创投成立于2015年，是专注供应链科技与国际化创新的双币早期投资机构。官网称其管理6支基金、投资超过100个早期项目，并列出物流科技、产业互联网、机器人自动化和跨境出海等布局；公开联系页提供商业计划书邮箱和上海办公室电话。",
+      "facts": [
+        {
+          "field": "established",
+          "label": "成立时间",
+          "value": "2015年。",
+          "source_id": "o1vc_about"
+        },
+        {
+          "field": "investment_stage_and_fund_type",
+          "label": "投资阶段与基金类型",
+          "value": "双币早期投资机构。",
+          "source_id": "o1vc_about"
+        },
+        {
+          "field": "investment_scope",
+          "label": "机构总体方向（官网披露）",
+          "value": [
+            "供应链科技",
+            "国际化创新"
+          ],
+          "source_id": "o1vc_about"
+        },
+        {
+          "field": "investment_scope_logistics",
+          "label": "具体投资领域",
+          "value": "物流科技。",
+          "source_id": "o1vc_logistics"
+        },
+        {
+          "field": "investment_scope_industry_internet",
+          "label": "具体投资领域",
+          "value": "产业互联网。",
+          "source_id": "o1vc_industry_internet"
+        },
+        {
+          "field": "investment_scope_robotics",
+          "label": "具体投资领域",
+          "value": "机器人自动化。",
+          "source_id": "o1vc_robotics"
+        },
+        {
+          "field": "investment_scope_crossborder",
+          "label": "具体投资领域",
+          "value": "跨境出海。",
+          "source_id": "o1vc_crossborder"
+        },
+        {
+          "field": "funds_and_activity",
+          "label": "官网累计口径（核验于2026-09-26）",
+          "value": "官网称目前管理6支基金、投资超过100个早期项目；属于机构自述的累计数据，不代表基金净回报或单只基金规模。",
+          "source_id": "o1vc_metrics"
+        },
+        {
+          "field": "representative_portfolio",
+          "label": "官网列出的代表案例（节选）",
+          "value": [
+            "货拉拉 Lalamove",
+            "海柔创新",
+            "XTransfer",
+            "Xendit",
+            "易买工品"
+          ],
+          "source_id": "o1vc_cases"
+        },
+        {
+          "field": "team_wuyunlong",
+          "label": "吴运龙｜创始管理合伙人",
+          "value": "官网介绍其拥有20余年早期投资经验，曾任经纬创投中国区合伙人、凯鹏华盈中国区合伙人和TDF资本合伙人；参与投资货拉拉、找钢网、百度、分众传媒等。官网列其澳大利亚莫道克大学商业学士学位及CPA、CFA资格。",
+          "source_id": "o1vc_team_wuyunlong"
+        },
+        {
+          "field": "team_zhaoyong",
+          "label": "赵勇｜创始合伙人",
+          "value": "官网介绍其2007—2009年任凯鹏华盈中国基金副总裁，2009年至2015年初任上海恺英网络联合创始人、COO；此前就职于麦肯锡和埃森哲。官网列其哥伦比亚大学MBA及清华大学双学士背景。",
+          "source_id": "o1vc_team_zhaoyong"
+        },
+        {
+          "field": "team_yulu",
+          "label": "余璐｜管理合伙人",
+          "value": "官网介绍其曾就职于华映资本，自零一创投早期加入，关注供应链科技、智能制造和物流科技，参与海柔创新、易买工品、汉德科技、塔斯克机器人等项目；官网列其英国莱斯特大学新媒体硕士。",
+          "source_id": "o1vc_team_yulu"
+        },
+        {
+          "field": "team_taoyangfeng",
+          "label": "陶洋峰｜执行董事",
+          "value": "官网介绍其曾任Realtek芯片数字验证工程师，关注品牌及服务出海早期投资，参与XTransfer、Xendit、TYMO和邦邦机器人等项目；官网列其东南大学集成电路设计硕士及四川大学医学信息工程学士。",
+          "source_id": "o1vc_team_taoyangfeng"
+        },
+        {
+          "field": "team_tanhua",
+          "label": "谭华｜财务及风控总监",
+          "value": "官网介绍其曾任普华永道审计人员，拥有财务管理、投资组合管理及双币基金运营合规经验；在零一主导50余个项目财务尽调、参与20余个项目退出及100余个项目投后管理。官网列其UIUC会计学硕士、CICPA及AICPA资格。",
+          "source_id": "o1vc_team_tanhua"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2015",
+          "description": "零一创投官网记载机构成立。",
+          "source_id": "o1vc_about"
+        }
+      ],
       "track_record": [
+        {
+          "description": "官网列出货拉拉、海柔创新、XTransfer、Xendit、易买工品等为代表案例；这是精选组合项目名单，不是完整投资清单或退出业绩。",
+          "source_id": "o1vc_cases"
+        },
         {
           "description": "融资来源记录：如身机器人 · Pre-A轮 · 2026-07-03 · 天使轮跟投 · 亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a6c76bf98227d92c"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "零一创投官方网站",
+          "value": "01VC",
+          "url": "https://www.01vc.com/",
+          "source_id": "o1vc_about"
+        },
+        {
+          "kind": "email",
+          "label": "商业计划书投递",
+          "value": "bp@01vc.com",
+          "source_id": "o1vc_bp"
+        },
+        {
+          "kind": "phone",
+          "label": "上海办公室电话",
+          "value": "+86 21-63136288",
+          "source_id": "o1vc_phone"
+        },
+        {
+          "kind": "address",
+          "label": "上海办公室地址",
+          "value": "上海市黄浦区湖滨路150号企业天地5号楼2802B",
+          "source_id": "o1vc_address"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "o1vc_about",
+          "source_url": "https://www.01vc.com/",
+          "source_title": "零一创投官方网站｜关于零一",
+          "source_content_hash": "0428ebce0331e8532734ede4a2cfc43d540be193914e9d5e04c4c2d9b8d58a61",
+          "quote": "零一创投成立于2015年，是专注于供应链科技与国际化创新的双币早期投资机构。",
+          "quote_hash": "0c8e5c25b51a55d65e5d4ea80a2fa7bbb19aebdf25789fa44d625172bec4230f"
+        },
+        {
+          "source_id": "o1vc_logistics",
+          "source_url": "https://www.01vc.com/",
+          "source_title": "零一创投官方网站｜投资领域：物流科技",
+          "source_content_hash": "0428ebce0331e8532734ede4a2cfc43d540be193914e9d5e04c4c2d9b8d58a61",
+          "quote": "我们深耕物流科技近十年。",
+          "quote_hash": "01b151cc3205b7a70b80261346fe4f59a3fcc20ca84a4285727c1efed89472cd"
+        },
+        {
+          "source_id": "o1vc_industry_internet",
+          "source_url": "https://www.01vc.com/",
+          "source_title": "零一创投官方网站｜投资领域：产业互联网",
+          "source_content_hash": "0428ebce0331e8532734ede4a2cfc43d540be193914e9d5e04c4c2d9b8d58a61",
+          "quote": "我们自机构成立之初就重点关注产业互联网的整体机会。",
+          "quote_hash": "f2c2676f289772572fc4a454ce8fe730577c53e9dee1a1af855c0d767a5d6157"
+        },
+        {
+          "source_id": "o1vc_robotics",
+          "source_url": "https://www.01vc.com/",
+          "source_title": "零一创投官方网站｜投资领域：机器人自动化",
+          "source_content_hash": "0428ebce0331e8532734ede4a2cfc43d540be193914e9d5e04c4c2d9b8d58a61",
+          "quote": "我们关注供需两端变化之下的机器人赛道机遇。",
+          "quote_hash": "628c1cc1446fc28e5a6ea62ef145f75876ee0eb98d4e6242d18822e4a878bea2"
+        },
+        {
+          "source_id": "o1vc_crossborder",
+          "source_url": "https://www.01vc.com/",
+          "source_title": "零一创投官方网站｜投资领域：跨境出海",
+          "source_content_hash": "0428ebce0331e8532734ede4a2cfc43d540be193914e9d5e04c4c2d9b8d58a61",
+          "quote": "我们的团队拥有多年跨境投资经验。",
+          "quote_hash": "a3639961a5fa587211a0fe04e2a9b0dcfb7bd688a3d8e5c3a52e71104d1788e1"
+        },
+        {
+          "source_id": "o1vc_metrics",
+          "source_url": "https://www.01vc.com/",
+          "source_title": "零一创投官方网站｜关于零一",
+          "source_content_hash": "0428ebce0331e8532734ede4a2cfc43d540be193914e9d5e04c4c2d9b8d58a61",
+          "quote": "目前共管理了6支基金，投资超100个早期项目。",
+          "quote_hash": "a619329efed3ee777dccce2f3523a5c1f0185f264dc2e593f8893bb0c9680766"
+        },
+        {
+          "source_id": "o1vc_cases",
+          "source_url": "https://www.01vc.com/",
+          "source_title": "零一创投官方网站｜代表案例",
+          "source_content_hash": "0428ebce0331e8532734ede4a2cfc43d540be193914e9d5e04c4c2d9b8d58a61",
+          "quote": "代表案例包括货拉拉Lalamove、海柔创新、XTransfer、 Xendit、易买工品",
+          "quote_hash": "a34262d69aad02f4deec00f54f273543495cef9032cc2a396bbddcc50495b4fd"
+        },
+        {
+          "source_id": "o1vc_team_wuyunlong",
+          "source_url": "https://01vc.com/team",
+          "source_title": "零一创投官方网站｜团队：吴运龙",
+          "source_content_hash": "0a81b95882502f20d544eb3dd1710766920efdf619e30e65866f4145406fea7b",
+          "quote": "吴运龙先生拥有20余年早期投资经验，曾任经纬创投中国区合伙人、凯鹏华盈（KPCB）中国区合伙人和TDF资本合伙人。",
+          "quote_hash": "cf2234edc3ab6118de95599a4deb6ee93b49a93184816c4cf307069c5ceceb74"
+        },
+        {
+          "source_id": "o1vc_team_zhaoyong",
+          "source_url": "https://01vc.com/team",
+          "source_title": "零一创投官方网站｜团队：赵勇",
+          "source_content_hash": "0a81b95882502f20d544eb3dd1710766920efdf619e30e65866f4145406fea7b",
+          "quote": "赵勇先生拥有15余年早期投资经验；2009年至2015年初作为联合创始人，于上海恺英网络任COO。",
+          "quote_hash": "65a469551aa169c5804f59f37094b443176020c982650fc2a6e55275d04a0e28"
+        },
+        {
+          "source_id": "o1vc_team_yulu",
+          "source_url": "https://01vc.com/team",
+          "source_title": "零一创投官方网站｜团队：余璐",
+          "source_content_hash": "0a81b95882502f20d544eb3dd1710766920efdf619e30e65866f4145406fea7b",
+          "quote": "余璐女士拥有12年早期投资经验。她曾就职于华映资本，自机构创立初期就加入零一创投。",
+          "quote_hash": "270e91917917f991b18b917509b8f08783d84e08f0d06e099bd1ab8eacdf7b26"
+        },
+        {
+          "source_id": "o1vc_team_taoyangfeng",
+          "source_url": "https://01vc.com/team",
+          "source_title": "零一创投官方网站｜团队：陶洋峰",
+          "source_content_hash": "0a81b95882502f20d544eb3dd1710766920efdf619e30e65866f4145406fea7b",
+          "quote": "陶洋峰先生拥有9年早期投资经验；在加入零一创投前，他曾就职于Realtek，担任芯片数字验证工程师。",
+          "quote_hash": "71bdce050bd0445fdb6262d6f31451830991a2b4912ebe9dffb6a6c5e10bbd3a"
+        },
+        {
+          "source_id": "o1vc_team_tanhua",
+          "source_url": "https://01vc.com/team",
+          "source_title": "零一创投官方网站｜团队：谭华",
+          "source_content_hash": "0a81b95882502f20d544eb3dd1710766920efdf619e30e65866f4145406fea7b",
+          "quote": "谭华女士拥有12年的财务管理、投资组合管理及双币基金运营合规管理经验；在2015年加入零一创投前，她曾就职于普华永道。",
+          "quote_hash": "4e0a863fe289846dafd376a98471c82376cf5ef2143291c5eea33fa54cea9333"
+        },
+        {
+          "source_id": "o1vc_bp",
+          "source_url": "https://01vc.com/contact",
+          "source_title": "零一创投官方网站｜联系：商业计划书投递",
+          "source_content_hash": "efdd39b521be92bfda7d80658933a46d4154f1dff73db4e49eea147717e079aa",
+          "quote": "商业计划书投递 bp@01vc.com",
+          "quote_hash": "30c6cfe6518c4ebdd64163fa5d96adc4ccad27c0978ff04da69bd3018d134fcd"
+        },
+        {
+          "source_id": "o1vc_phone",
+          "source_url": "https://01vc.com/contact",
+          "source_title": "零一创投官方网站｜联系：上海办公室电话",
+          "source_content_hash": "efdd39b521be92bfda7d80658933a46d4154f1dff73db4e49eea147717e079aa",
+          "quote": "+86 21-63136288",
+          "quote_hash": "8ca9667133139bb7ed3e7ddd1d88cc47cad3c6ce54782380b9155a97894b5c48"
+        },
+        {
+          "source_id": "o1vc_address",
+          "source_url": "https://01vc.com/contact",
+          "source_title": "零一创投官方网站｜联系：上海办公室地址",
+          "source_content_hash": "efdd39b521be92bfda7d80658933a46d4154f1dff73db4e49eea147717e079aa",
+          "quote": "上海市黄浦区湖滨路150号企业天地5号楼2802B",
+          "quote_hash": "349e9a64accebc40d636f84f01c298312a6b2b0e06f00179689daa296cb1fb19"
+        },
         {
           "source_id": "FISRC-a6c76bf98227d92c",
           "source_url": "https://pitchhub.36kr.com/project/2288218038024320",
@@ -86847,7 +88268,8 @@
           "quote_hash": "d1f5f3d74973c136dd6e33cea193780ffcb786fb26caf93b05e900bcc6ba0d7c"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified"
     },
     "INV-e8e089372299a0": {
       "profile_type": "unverified",
@@ -88396,13 +89818,72 @@
     },
     "INV-bfbf8b842f21e6": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "将门创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "融资库中的“将门创投”品牌与基金管理主体将门投资管理顾问（北京）有限公司关联。公开资料支持其管理人登记及参与一支杭州人工智能产业基金的方案；基金10亿元为方案目标规模，不是将门创投管理规模或已募规模。",
+      "summary": "将门创投的公开法律主体之一为将门投资管理顾问（北京）有限公司。浙江金投发布的基金方案披露，该公司成立于2015年、注册资本和实缴资本均为5000万元，并于2016年登记为私募股权、创业投资基金管理人。其后作为出资人参与一支目标规模10亿元、聚焦人工智能等领域的杭州产业基金方案。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "基金管理主体",
+          "value": "将门投资管理顾问（北京）有限公司。",
+          "source_id": "jiangmen_manager"
+        },
+        {
+          "field": "established",
+          "label": "成立时间",
+          "value": "2015年9月。",
+          "source_id": "jiangmen_manager"
+        },
+        {
+          "field": "registered_capital",
+          "label": "注册资本及实缴资本",
+          "value": "注册资本5000万元，实缴资本5000万元；来源为基金方案披露。",
+          "source_id": "jiangmen_manager"
+        },
+        {
+          "field": "registration",
+          "label": "私募基金管理人登记",
+          "value": "2016年7月20日登记为私募股权、创业投资基金管理人。",
+          "source_id": "jiangmen_manager"
+        },
+        {
+          "field": "fund_participation",
+          "label": "参与的人工智能基金方案",
+          "value": "将门投资认缴将门产融（杭州）人工智能产业创业投资合伙企业500万元，占方案目标规模0.5%；该方案目标规模10亿元，披露时仍属拟设基金方案，不能当作已募规模。",
+          "source_id": "jiangmen_ai_subscription"
+        },
+        {
+          "field": "investment_scope",
+          "label": "相关基金方案的方向",
+          "value": [
+            "新一代信息技术",
+            "人工智能"
+          ],
+          "source_id": "jiangmen_ai_fund"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2015-09",
+          "description": "将门投资管理顾问（北京）有限公司成立。",
+          "source_id": "jiangmen_manager"
+        },
+        {
+          "date": "2016-07-20",
+          "description": "将门投资登记成为私募股权、创业投资基金管理人。",
+          "source_id": "jiangmen_manager"
+        },
+        {
+          "date": "2024-08-06",
+          "description": "浙江金投发布浙江省科创母基金拟参股将门产融（杭州）人工智能产业创业投资合伙企业的投资方案。",
+          "source_id": "jiangmen_ai_fund"
+        }
+      ],
       "track_record": [
+        {
+          "description": "浙江金投公开的方案拟设一支目标规模10亿元的杭州人工智能产业基金，将门投资拟认缴500万元；此为方案披露的出资安排，不代表基金已经完成募集或投资退出业绩。",
+          "source_id": "jiangmen_ai_subscription"
+        },
         {
           "description": "融资来源记录：墨芯人工智能 · C轮 · 2026-05-29 · A+轮参投 · 近10亿人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fd6d552d3eca98a8"
@@ -88410,6 +89891,30 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "jiangmen_manager",
+          "source_url": "https://www.zjkim.com/informationDetails_136",
+          "source_title": "浙江省科创母基金参股将门产融（杭州）人工智能产业创业投资合伙企业投资方案｜浙江省创新产业私募基金管理有限公司",
+          "source_content_hash": "7988939cef781fa3de2545857da361d375c6549837b3d0e66cbebd4a4602a241",
+          "quote": "将门投资成立于2015年9月，注册资本5,000万元，实缴资本5,000万元。将门投资于2016年7月20日登记成为私募股权、创业投资基金管理人。",
+          "quote_hash": "b6ed7fbfea5888d190151774e32ee70dca71e69896e0edcc1830b2d4f6938940"
+        },
+        {
+          "source_id": "jiangmen_ai_fund",
+          "source_url": "https://www.zjkim.com/informationDetails_136",
+          "source_title": "浙江省科创母基金参股将门产融（杭州）人工智能产业创业投资合伙企业投资方案｜浙江省创新产业私募基金管理有限公司",
+          "source_content_hash": "7988939cef781fa3de2545857da361d375c6549837b3d0e66cbebd4a4602a241",
+          "quote": "目标规模10亿元，浙江省科创母基金拟出资基金最终规模的40.00%或10,000万元孰低。投资领域包含“互联网+”等新一代信息技术领域，重点围绕人工智能等细分行业范围进行投资。",
+          "quote_hash": "dfb31a4a2a050bcba8755b5912c53071e31b7e30093df686df7970afabec929c"
+        },
+        {
+          "source_id": "jiangmen_ai_subscription",
+          "source_url": "https://www.zjkim.com/informationDetails_136",
+          "source_title": "浙江省科创母基金参股将门产融（杭州）人工智能产业创业投资合伙企业投资方案｜浙江省创新产业私募基金管理有限公司",
+          "source_content_hash": "7988939cef781fa3de2545857da361d375c6549837b3d0e66cbebd4a4602a241",
+          "quote": "将门投资管理顾问（北京）有限公司（以下简称将门投资）认缴500万元，占基金目标规模的0.5%。",
+          "quote_hash": "63caff27820498585d91064d2c21e2bf9a268e58989df9c1d05d54ae165855ef"
+        },
         {
           "source_id": "FISRC-fd6d552d3eca98a8",
           "source_url": "https://news.qq.com/rain/a/20240410A04MKL00",
@@ -88419,7 +89924,8 @@
           "quote_hash": "04686a93eda901598248774052676b272b9fa67682c952680ba23d15b73682d6"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified"
     },
     "INV-74d03694b153dd": {
       "profile_type": "organization",
@@ -88753,13 +90259,58 @@
     },
     "INV-c756379e9d1f57": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "河南投资集团汇融基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "集团股权关系依据河南投资集团债券募集说明书中截至2022年末的子公司表；AI基金规模及管理人身份依据郑州高新区管委会2025年报道。不要与河南中金汇融私募基金管理有限公司混为同一法律主体。",
+      "summary": "河南投资集团汇融基金管理有限公司是河南投资集团全资子公司，公开披露业务为管理或受托管理非证券类股权投资及相关咨询。郑州高新区管委会2025年报道，该公司担任河南汇融人工智能产业投资基金管理人；该基金规模10亿元，是其与郑州高新产投合作设立的第三支产业基金。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "机构全称",
+          "value": "河南投资集团汇融基金管理有限公司。",
+          "source_id": "hnig_group"
+        },
+        {
+          "field": "ownership",
+          "label": "集团关系（截至2022年末披露）",
+          "value": "河南投资集团有限公司全资子公司；债券文件披露注册资本2亿元、集团持股和表决权比例均为100%。",
+          "source_id": "hnig_group"
+        },
+        {
+          "field": "business_scope",
+          "label": "公开披露的业务",
+          "value": "管理或受托管理非证券类股权投资及相关咨询服务。",
+          "source_id": "hnig_group"
+        },
+        {
+          "field": "ai_fund_manager",
+          "label": "河南汇融人工智能产业投资基金",
+          "value": "郑州高新区管委会2025年报道，该基金总规模10亿元，由汇融基金担任管理人，重点投向人工智能等前沿领域；此为单只基金规模，不是管理公司的在管总规模。",
+          "source_id": "hnig_ai_fund"
+        },
+        {
+          "field": "fund_cooperation",
+          "label": "地方产业合作",
+          "value": "郑州高新区管委会称，该基金是郑州高新产投基金与汇融基金联合发起的第三支产业基金；公告未披露两家管理/出资方各自的认缴金额。",
+          "source_id": "hnig_ai_cooperation"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2022-12-31",
+          "description": "河南投资集团债券文件的子公司表将汇融基金列为集团全资子公司，注册资本2亿元。",
+          "source_id": "hnig_group"
+        },
+        {
+          "date": "2025-11-10",
+          "description": "郑州高新区管委会报道河南汇融人工智能产业投资基金设立，规模10亿元，由汇融基金担任管理人。",
+          "source_id": "hnig_ai_fund"
+        }
+      ],
       "track_record": [
+        {
+          "description": "河南汇融人工智能产业投资基金于2025年设立，规模10亿元并由汇融基金管理；政府报道提及基金聚焦人工智能，未披露管理人的累计退出或收益指标。",
+          "source_id": "hnig_ai_fund"
+        },
         {
           "description": "融资来源记录：趋境科技 · Pre-A轮 · 2026-05-20 · A轮领投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-53ef187e17deac50"
@@ -88767,6 +90318,38 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "hnig_group",
+          "source_url": "https://static.sse.com.cn/bond/bridge2/disclosure/announcement/c/202403/042331_20240313_494N.pdf",
+          "source_title": "河南投资集团有限公司2024年面向专业投资者公开发行企业债券募集说明书",
+          "source_content_hash": "cff7537299114055499664ecc1337e0f70391b4def43f74ccdd363fc366d202a",
+          "quote": "河南投资集团汇融基金管理有限公司 管理或受托管理非证券类股权投资及相关咨询服务 20,000.00 100.00 100.00",
+          "quote_hash": "c89c77e6557924561d6057a16e1d3a449e649bb3de5e2c3c4bdc3a1fc03654d3"
+        },
+        {
+          "source_id": "hnig_ai_fund",
+          "source_url": "https://www.zzgx.gov.cn/qndt/9727081.jhtml",
+          "source_title": "规模10亿元！人工智能基金落地郑州高新区｜郑州高新技术产业开发区管理委员会",
+          "source_content_hash": "2a82f69538f9d968f1c420390a0e437c8d7646edb3a68b1eca0e237659664d48",
+          "quote": "11月10日，郑州高新产投基金联合省市区战新母基金及汇融基金成功设立河南汇融人工智能产业投资基金。这支总规模10亿元专项基金正式落地。",
+          "quote_hash": "bcc3342666e3e7844956cce9a31b1118b75b52bf509f2a348b3b1587017c5b1b"
+        },
+        {
+          "source_id": "hnig_ai_manager",
+          "source_url": "https://www.zzgx.gov.cn/qndt/9727081.jhtml",
+          "source_title": "规模10亿元！人工智能基金落地郑州高新区｜郑州高新技术产业开发区管理委员会",
+          "source_content_hash": "2a82f69538f9d968f1c420390a0e437c8d7646edb3a68b1eca0e237659664d48",
+          "quote": "该基金由汇融基金担任管理人，将锚定“核心技术突破+场景深度应用”双主线，重点投向人工智能等前沿领域。",
+          "quote_hash": "ec2c1407a88f114863bbf6fa525655375bc83204e6f55899c29158c39f7bc13f"
+        },
+        {
+          "source_id": "hnig_ai_cooperation",
+          "source_url": "https://www.zzgx.gov.cn/qndt/9727081.jhtml",
+          "source_title": "规模10亿元！人工智能基金落地郑州高新区｜郑州高新技术产业开发区管理委员会",
+          "source_content_hash": "2a82f69538f9d968f1c420390a0e437c8d7646edb3a68b1eca0e237659664d48",
+          "quote": "此次基金设立是郑州高新产投基金与汇融基金深化合作的重要成果，也是双方联合发起的第三支产业基金。",
+          "quote_hash": "c68f727d1bb805c800edfab7b73c04f17f521a37d2fff8f3d4b5e9747ebbbe13"
+        },
         {
           "source_id": "FISRC-53ef187e17deac50",
           "source_url": "https://unifuncs.com/s/lVd0EmYJ",
@@ -88776,7 +90359,8 @@
           "quote_hash": "6047beeead8aeb5d7ddb31db559888c53696f971ba90c0a5d64f5c0465bae72e"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified"
     },
     "INV-bd931615c61a49": {
       "profile_type": "organization",

@@ -131,20 +131,269 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "零以创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资规模、基金数量、团队履历和组合案例主要来自零一创投官网自述；“6支基金、投资超100个项目”是机构披露的当前累计口径，不等于已实现收益。团队职务与联系信息按官网2026-09-26核验。",
+      "summary": "零一创投成立于2015年，是专注供应链科技与国际化创新的双币早期投资机构。官网称其管理6支基金、投资超过100个早期项目，并列出物流科技、产业互联网、机器人自动化和跨境出海等布局；公开联系页提供商业计划书邮箱和上海办公室电话。",
+      "facts": [
+        {
+          "field": "established",
+          "label": "成立时间",
+          "value": "2015年。",
+          "source_id": "o1vc_about"
+        },
+        {
+          "field": "investment_stage_and_fund_type",
+          "label": "投资阶段与基金类型",
+          "value": "双币早期投资机构。",
+          "source_id": "o1vc_about"
+        },
+        {
+          "field": "investment_scope",
+          "label": "机构总体方向（官网披露）",
+          "value": [
+            "供应链科技",
+            "国际化创新"
+          ],
+          "source_id": "o1vc_about"
+        },
+        {
+          "field": "investment_scope_logistics",
+          "label": "具体投资领域",
+          "value": "物流科技。",
+          "source_id": "o1vc_logistics"
+        },
+        {
+          "field": "investment_scope_industry_internet",
+          "label": "具体投资领域",
+          "value": "产业互联网。",
+          "source_id": "o1vc_industry_internet"
+        },
+        {
+          "field": "investment_scope_robotics",
+          "label": "具体投资领域",
+          "value": "机器人自动化。",
+          "source_id": "o1vc_robotics"
+        },
+        {
+          "field": "investment_scope_crossborder",
+          "label": "具体投资领域",
+          "value": "跨境出海。",
+          "source_id": "o1vc_crossborder"
+        },
+        {
+          "field": "funds_and_activity",
+          "label": "官网累计口径（核验于2026-09-26）",
+          "value": "官网称目前管理6支基金、投资超过100个早期项目；属于机构自述的累计数据，不代表基金净回报或单只基金规模。",
+          "source_id": "o1vc_metrics"
+        },
+        {
+          "field": "representative_portfolio",
+          "label": "官网列出的代表案例（节选）",
+          "value": [
+            "货拉拉 Lalamove",
+            "海柔创新",
+            "XTransfer",
+            "Xendit",
+            "易买工品"
+          ],
+          "source_id": "o1vc_cases"
+        },
+        {
+          "field": "team_wuyunlong",
+          "label": "吴运龙｜创始管理合伙人",
+          "value": "官网介绍其拥有20余年早期投资经验，曾任经纬创投中国区合伙人、凯鹏华盈中国区合伙人和TDF资本合伙人；参与投资货拉拉、找钢网、百度、分众传媒等。官网列其澳大利亚莫道克大学商业学士学位及CPA、CFA资格。",
+          "source_id": "o1vc_team_wuyunlong"
+        },
+        {
+          "field": "team_zhaoyong",
+          "label": "赵勇｜创始合伙人",
+          "value": "官网介绍其2007—2009年任凯鹏华盈中国基金副总裁，2009年至2015年初任上海恺英网络联合创始人、COO；此前就职于麦肯锡和埃森哲。官网列其哥伦比亚大学MBA及清华大学双学士背景。",
+          "source_id": "o1vc_team_zhaoyong"
+        },
+        {
+          "field": "team_yulu",
+          "label": "余璐｜管理合伙人",
+          "value": "官网介绍其曾就职于华映资本，自零一创投早期加入，关注供应链科技、智能制造和物流科技，参与海柔创新、易买工品、汉德科技、塔斯克机器人等项目；官网列其英国莱斯特大学新媒体硕士。",
+          "source_id": "o1vc_team_yulu"
+        },
+        {
+          "field": "team_taoyangfeng",
+          "label": "陶洋峰｜执行董事",
+          "value": "官网介绍其曾任Realtek芯片数字验证工程师，关注品牌及服务出海早期投资，参与XTransfer、Xendit、TYMO和邦邦机器人等项目；官网列其东南大学集成电路设计硕士及四川大学医学信息工程学士。",
+          "source_id": "o1vc_team_taoyangfeng"
+        },
+        {
+          "field": "team_tanhua",
+          "label": "谭华｜财务及风控总监",
+          "value": "官网介绍其曾任普华永道审计人员，拥有财务管理、投资组合管理及双币基金运营合规经验；在零一主导50余个项目财务尽调、参与20余个项目退出及100余个项目投后管理。官网列其UIUC会计学硕士、CICPA及AICPA资格。",
+          "source_id": "o1vc_team_tanhua"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2015",
+          "description": "零一创投官网记载机构成立。",
+          "source_id": "o1vc_about"
+        }
+      ],
       "track_record": [
+        {
+          "description": "官网列出货拉拉、海柔创新、XTransfer、Xendit、易买工品等为代表案例；这是精选组合项目名单，不是完整投资清单或退出业绩。",
+          "source_id": "o1vc_cases"
+        },
         {
           "description": "融资来源记录：如身机器人 · Pre-A轮 · 2026-07-03 · 天使轮跟投 · 亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a6c76bf98227d92c"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "零一创投官方网站",
+          "value": "01VC",
+          "url": "https://www.01vc.com/",
+          "source_id": "o1vc_about"
+        },
+        {
+          "kind": "email",
+          "label": "商业计划书投递",
+          "value": "bp@01vc.com",
+          "source_id": "o1vc_bp"
+        },
+        {
+          "kind": "phone",
+          "label": "上海办公室电话",
+          "value": "+86 21-63136288",
+          "source_id": "o1vc_phone"
+        },
+        {
+          "kind": "address",
+          "label": "上海办公室地址",
+          "value": "上海市黄浦区湖滨路150号企业天地5号楼2802B",
+          "source_id": "o1vc_address"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "o1vc_about",
+          "source_url": "https://www.01vc.com/",
+          "source_title": "零一创投官方网站｜关于零一",
+          "source_content_hash": "0428ebce0331e8532734ede4a2cfc43d540be193914e9d5e04c4c2d9b8d58a61",
+          "quote": "零一创投成立于2015年，是专注于供应链科技与国际化创新的双币早期投资机构。",
+          "quote_hash": "0c8e5c25b51a55d65e5d4ea80a2fa7bbb19aebdf25789fa44d625172bec4230f"
+        },
+        {
+          "source_id": "o1vc_logistics",
+          "source_url": "https://www.01vc.com/",
+          "source_title": "零一创投官方网站｜投资领域：物流科技",
+          "source_content_hash": "0428ebce0331e8532734ede4a2cfc43d540be193914e9d5e04c4c2d9b8d58a61",
+          "quote": "我们深耕物流科技近十年。",
+          "quote_hash": "01b151cc3205b7a70b80261346fe4f59a3fcc20ca84a4285727c1efed89472cd"
+        },
+        {
+          "source_id": "o1vc_industry_internet",
+          "source_url": "https://www.01vc.com/",
+          "source_title": "零一创投官方网站｜投资领域：产业互联网",
+          "source_content_hash": "0428ebce0331e8532734ede4a2cfc43d540be193914e9d5e04c4c2d9b8d58a61",
+          "quote": "我们自机构成立之初就重点关注产业互联网的整体机会。",
+          "quote_hash": "f2c2676f289772572fc4a454ce8fe730577c53e9dee1a1af855c0d767a5d6157"
+        },
+        {
+          "source_id": "o1vc_robotics",
+          "source_url": "https://www.01vc.com/",
+          "source_title": "零一创投官方网站｜投资领域：机器人自动化",
+          "source_content_hash": "0428ebce0331e8532734ede4a2cfc43d540be193914e9d5e04c4c2d9b8d58a61",
+          "quote": "我们关注供需两端变化之下的机器人赛道机遇。",
+          "quote_hash": "628c1cc1446fc28e5a6ea62ef145f75876ee0eb98d4e6242d18822e4a878bea2"
+        },
+        {
+          "source_id": "o1vc_crossborder",
+          "source_url": "https://www.01vc.com/",
+          "source_title": "零一创投官方网站｜投资领域：跨境出海",
+          "source_content_hash": "0428ebce0331e8532734ede4a2cfc43d540be193914e9d5e04c4c2d9b8d58a61",
+          "quote": "我们的团队拥有多年跨境投资经验。",
+          "quote_hash": "a3639961a5fa587211a0fe04e2a9b0dcfb7bd688a3d8e5c3a52e71104d1788e1"
+        },
+        {
+          "source_id": "o1vc_metrics",
+          "source_url": "https://www.01vc.com/",
+          "source_title": "零一创投官方网站｜关于零一",
+          "source_content_hash": "0428ebce0331e8532734ede4a2cfc43d540be193914e9d5e04c4c2d9b8d58a61",
+          "quote": "目前共管理了6支基金，投资超100个早期项目。",
+          "quote_hash": "a619329efed3ee777dccce2f3523a5c1f0185f264dc2e593f8893bb0c9680766"
+        },
+        {
+          "source_id": "o1vc_cases",
+          "source_url": "https://www.01vc.com/",
+          "source_title": "零一创投官方网站｜代表案例",
+          "source_content_hash": "0428ebce0331e8532734ede4a2cfc43d540be193914e9d5e04c4c2d9b8d58a61",
+          "quote": "代表案例包括货拉拉Lalamove、海柔创新、XTransfer、 Xendit、易买工品",
+          "quote_hash": "a34262d69aad02f4deec00f54f273543495cef9032cc2a396bbddcc50495b4fd"
+        },
+        {
+          "source_id": "o1vc_team_wuyunlong",
+          "source_url": "https://01vc.com/team",
+          "source_title": "零一创投官方网站｜团队：吴运龙",
+          "source_content_hash": "0a81b95882502f20d544eb3dd1710766920efdf619e30e65866f4145406fea7b",
+          "quote": "吴运龙先生拥有20余年早期投资经验，曾任经纬创投中国区合伙人、凯鹏华盈（KPCB）中国区合伙人和TDF资本合伙人。",
+          "quote_hash": "cf2234edc3ab6118de95599a4deb6ee93b49a93184816c4cf307069c5ceceb74"
+        },
+        {
+          "source_id": "o1vc_team_zhaoyong",
+          "source_url": "https://01vc.com/team",
+          "source_title": "零一创投官方网站｜团队：赵勇",
+          "source_content_hash": "0a81b95882502f20d544eb3dd1710766920efdf619e30e65866f4145406fea7b",
+          "quote": "赵勇先生拥有15余年早期投资经验；2009年至2015年初作为联合创始人，于上海恺英网络任COO。",
+          "quote_hash": "65a469551aa169c5804f59f37094b443176020c982650fc2a6e55275d04a0e28"
+        },
+        {
+          "source_id": "o1vc_team_yulu",
+          "source_url": "https://01vc.com/team",
+          "source_title": "零一创投官方网站｜团队：余璐",
+          "source_content_hash": "0a81b95882502f20d544eb3dd1710766920efdf619e30e65866f4145406fea7b",
+          "quote": "余璐女士拥有12年早期投资经验。她曾就职于华映资本，自机构创立初期就加入零一创投。",
+          "quote_hash": "270e91917917f991b18b917509b8f08783d84e08f0d06e099bd1ab8eacdf7b26"
+        },
+        {
+          "source_id": "o1vc_team_taoyangfeng",
+          "source_url": "https://01vc.com/team",
+          "source_title": "零一创投官方网站｜团队：陶洋峰",
+          "source_content_hash": "0a81b95882502f20d544eb3dd1710766920efdf619e30e65866f4145406fea7b",
+          "quote": "陶洋峰先生拥有9年早期投资经验；在加入零一创投前，他曾就职于Realtek，担任芯片数字验证工程师。",
+          "quote_hash": "71bdce050bd0445fdb6262d6f31451830991a2b4912ebe9dffb6a6c5e10bbd3a"
+        },
+        {
+          "source_id": "o1vc_team_tanhua",
+          "source_url": "https://01vc.com/team",
+          "source_title": "零一创投官方网站｜团队：谭华",
+          "source_content_hash": "0a81b95882502f20d544eb3dd1710766920efdf619e30e65866f4145406fea7b",
+          "quote": "谭华女士拥有12年的财务管理、投资组合管理及双币基金运营合规管理经验；在2015年加入零一创投前，她曾就职于普华永道。",
+          "quote_hash": "4e0a863fe289846dafd376a98471c82376cf5ef2143291c5eea33fa54cea9333"
+        },
+        {
+          "source_id": "o1vc_bp",
+          "source_url": "https://01vc.com/contact",
+          "source_title": "零一创投官方网站｜联系：商业计划书投递",
+          "source_content_hash": "efdd39b521be92bfda7d80658933a46d4154f1dff73db4e49eea147717e079aa",
+          "quote": "商业计划书投递 bp@01vc.com",
+          "quote_hash": "30c6cfe6518c4ebdd64163fa5d96adc4ccad27c0978ff04da69bd3018d134fcd"
+        },
+        {
+          "source_id": "o1vc_phone",
+          "source_url": "https://01vc.com/contact",
+          "source_title": "零一创投官方网站｜联系：上海办公室电话",
+          "source_content_hash": "efdd39b521be92bfda7d80658933a46d4154f1dff73db4e49eea147717e079aa",
+          "quote": "+86 21-63136288",
+          "quote_hash": "8ca9667133139bb7ed3e7ddd1d88cc47cad3c6ce54782380b9155a97894b5c48"
+        },
+        {
+          "source_id": "o1vc_address",
+          "source_url": "https://01vc.com/contact",
+          "source_title": "零一创投官方网站｜联系：上海办公室地址",
+          "source_content_hash": "efdd39b521be92bfda7d80658933a46d4154f1dff73db4e49eea147717e079aa",
+          "quote": "上海市黄浦区湖滨路150号企业天地5号楼2802B",
+          "quote_hash": "349e9a64accebc40d636f84f01c298312a6b2b0e06f00179689daa296cb1fb19"
+        },
         {
           "source_id": "FISRC-a6c76bf98227d92c",
           "source_url": "https://pitchhub.36kr.com/project/2288218038024320",
@@ -154,7 +403,8 @@
           "quote_hash": "d1f5f3d74973c136dd6e33cea193780ffcb786fb26caf93b05e900bcc6ba0d7c"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified"
     }
   }
 }

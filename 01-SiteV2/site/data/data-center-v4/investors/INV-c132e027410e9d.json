@@ -193,13 +193,68 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Qualcomm Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "融资库中的 Qualcomm Ventures 是机构品牌层级记录；其两笔融资活动由原融资来源支持。机构规模和历史成绩采用官网自报数据，未当作经审计基金收益。",
+      "summary": "Qualcomm Ventures 是 Qualcomm Incorporated 旗下的全球风险投资部门，官网将其使命概括为投资支持无线技术的发展与应用。2025年官网回顾披露其累计投资500余家公司、投入30亿美元以上并支持60余家独角兽；这些是机构自报的累计口径，不代表单只基金业绩。",
+      "facts": [
+        {
+          "field": "parent_company",
+          "label": "母公司/投资部门",
+          "value": "Qualcomm Ventures 是 Qualcomm Incorporated 旗下风险投资部门。",
+          "source_id": "qv_venture_origin"
+        },
+        {
+          "field": "investment_scope",
+          "label": "2025年新增投资方向",
+          "value": [
+            "人工智能",
+            "数据中心",
+            "边缘计算",
+            "机器人",
+            "互联智能"
+          ],
+          "source_id": "qv_2025_review"
+        },
+        {
+          "field": "platform_metrics",
+          "label": "官网累计口径（2025年回顾）",
+          "value": "官网称累计投资超过500家公司、部署资本超过30亿美元、支持60余家独角兽；此为机构自报累计指标，不是基金净回报或单只基金规模。",
+          "source_id": "qv_2025_review"
+        },
+        {
+          "field": "investment_team",
+          "label": "官网团队名录（2026-09-26核验）",
+          "value": [
+            "Quinn Li：高级副总裁、全球负责人",
+            "Song Mao：中国区董事总经理",
+            "Hanyang Wang：中国区董事"
+          ],
+          "source_id": "qv_team"
+        },
+        {
+          "field": "annual_activity",
+          "label": "2025年度投资与退出",
+          "value": "官网回顾称2025年投资16家新公司，并列出 Mountain Digital、Capillary Technologies、Unisound 上市及 Weights & Biases 被收购。",
+          "source_id": "qv_2025_review"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2000",
+          "description": "官网回顾称 Qualcomm Ventures 于2000年成立，投资全球科技企业以推动无线技术发展与应用。",
+          "source_id": "qv_venture_origin"
+        },
+        {
+          "date": "2025",
+          "description": "机构官网发布25周年年度回顾，披露2025年新增投资与累计组合指标。",
+          "source_id": "qv_2025_review"
+        }
+      ],
       "track_record": [
+        {
+          "description": "Qualcomm Ventures 官网2025年度回顾列出 Mountain Digital、Capillary Technologies、Unisound 上市，以及 Weights & Biases 被收购；这是机构年度回顾列出的组合公司退出案例，不构成完整退出清单。",
+          "source_id": "qv_2025_review"
+        },
         {
           "description": "融资来源记录：Hark · A轮 · 2026-05-21 · 本轮参投 · $700M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9b94f245fa27a161"
@@ -209,8 +264,40 @@
           "source_id": "FISRC-7e709202ce99cc8e"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Qualcomm Ventures 官方网站",
+          "value": "Qualcomm Ventures",
+          "url": "https://www.qualcommventures.com/",
+          "source_id": "qv_venture_origin"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "qv_venture_origin",
+          "source_url": "https://www.qualcommventures.com/insights/blog/qualcomm-ventures-two-decades-of-driving-innovation-in-mobile/",
+          "source_title": "Qualcomm Ventures: Two Decades of Driving Innovation in Mobile",
+          "source_content_hash": "8b46e367db7f4d4a03d1143858f7d0f3999e9d29fb012fd55de47f14b56d2a28",
+          "quote": "Qualcomm Ventures was formed to invest in companies globally to drive the advancement and adoption of wireless technology.",
+          "quote_hash": "d9ca090bfd3270729c7254f405f7c73b5c9dabf61e39f569c64ad9daaa2d8c14"
+        },
+        {
+          "source_id": "qv_2025_review",
+          "source_url": "https://www.qualcommventures.com/insights/blog/qualcomm-ventures-2025-year-in-review/",
+          "source_title": "Qualcomm Ventures' 2025 Year in Review",
+          "source_content_hash": "d0e5cb915d59866e4fb91a8ec47c9c448545eca6f4f4763283abb4c1df18f30c",
+          "quote": "investing in more than 500 companies globally, deploying over $3B in capital, and supporting 60+ unicorns",
+          "quote_hash": "5400b8f3322d5e35b29415af7d1348453929ad419b4899117c6b52528206e308"
+        },
+        {
+          "source_id": "qv_team",
+          "source_url": "https://www.qualcommventures.com/team/",
+          "source_title": "Team | Qualcomm Ventures",
+          "source_content_hash": "32b0b82f1a0050d3bbcd38ece07bc774af4072c94d32e53cb0e2e6ac6f2f1f8d",
+          "quote": "Quinn Li Senior Vice President & Global Head of Qualcomm Ventures",
+          "quote_hash": "966664064c2645c134da5027a77a2f9ebaa98ea11a87cbee3a6c790e8e242042"
+        },
         {
           "source_id": "FISRC-9b94f245fa27a161",
           "source_url": "https://www.intelcapital.com/hark-raises-700m-series-a-at-a-6b-valuation/",
@@ -228,7 +315,8 @@
           "quote_hash": "c255cf67574e4c0a61a71a835a9950747856dd3b6b1ee07474870bbba856720c"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified"
     }
   }
 }

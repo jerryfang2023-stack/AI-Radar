@@ -131,12 +131,89 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "安华创投基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "注册资本35亿元是法律主体的注册资本，不代表当前管理规模、实缴金额或单只基金可投资金额。投资案例注明公告披露时的状态；2023年长飞先进半导体投资为拟出资计划。2020年中科类脑A轮来自36氪项目页的历史融资记录。",
+      "summary": "安华创投基金对应安徽安华创新风险投资基金有限公司，2017年在合肥高新区注册成立，由国元创新、华富嘉业、安徽交控、合肥市产业引导基金等多家机构共同出资。公司披露业务包括股权投资、债权投资及相关管理咨询；华安证券官网将其列为华安嘉业管理基金，并报道其通过宣城安华基金及安华创新基金参与国电高科投资。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "机构全称",
+          "value": "安徽安华创新风险投资基金有限公司",
+          "source_id": "anhua_guoyuan_annual_2023"
+        },
+        {
+          "field": "established",
+          "label": "成立日期",
+          "value": "2017年11月30日。",
+          "source_id": "anhua_guoyuan_annual_2023"
+        },
+        {
+          "field": "registered_capital",
+          "label": "注册资本（截至2023年末披露）",
+          "value": "人民币35亿元；不是当前基金管理规模或投资回报数据。",
+          "source_id": "anhua_guoyuan_annual_2023"
+        },
+        {
+          "field": "unified_social_credit_code",
+          "label": "统一社会信用代码",
+          "value": "91340100MA2RAP0C60",
+          "source_id": "anhua_guoyuan_annual_2023"
+        },
+        {
+          "field": "shareholder_background",
+          "label": "共同出资方（年报所列）",
+          "value": [
+            "国元创新投资有限公司",
+            "华富嘉业投资管理有限公司",
+            "安徽交控资本投资管理有限公司",
+            "安徽省盐业总公司",
+            "合肥市产业投资引导基金有限公司",
+            "时代出版传媒股份有限公司",
+            "安徽华文创业投资管理有限公司",
+            "阜阳市颍科创新投资有限公司",
+            "合肥高新建设投资集团公司",
+            "安徽省国有资产运营有限公司"
+          ],
+          "source_id": "anhua_guoyuan_annual_2023"
+        },
+        {
+          "field": "fund_management_relationship",
+          "label": "基金管理关系",
+          "value": "华安嘉业投资管理有限公司为招股说明书披露的基金管理人；华安证券官网亦称，华安嘉业通过所管理的安华创新基金投资国电高科。",
+          "source_id": "anhua_jinghe_prospectus_2023"
+        },
+        {
+          "field": "investment_scope",
+          "label": "公司披露的投资业务",
+          "value": "股权投资为主要业务，并开展债权投资、投资顾问、管理及咨询等业务。",
+          "source_id": "anhua_jinghe_prospectus_2023"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2017-11-30",
+          "description": "国元证券2023年年度报告记载安徽安华创新风险投资基金有限公司经合肥市高新区市场监管部门核准注册成立。",
+          "source_id": "anhua_guoyuan_annual_2023"
+        },
+        {
+          "date": "2023-06-26",
+          "description": "长飞光纤公告披露，安华创新拟出资1亿元参与长飞先进半导体A轮增资；公告说明该轮交易当时尚需履行后续程序。",
+          "source_id": "anhua_changfei_2023"
+        }
+      ],
       "track_record": [
+        {
+          "description": "长飞光纤2023年公告披露，安华创新拟出资1亿元参与长飞先进半导体A轮增资；该金额是公告披露时的拟出资计划，不据此认定已完成交割。",
+          "source_id": "anhua_changfei_2023"
+        },
+        {
+          "description": "华安证券官网称，华安嘉业通过所管理的宣城安华基金及安华创新基金投资国电高科；公开报道未列安华创新基金的单独投资金额。",
+          "source_id": "anhua_huaan_guodian_2025"
+        },
+        {
+          "description": "36氪项目页记录，安华创投基金出现在中科类脑2020年10月A轮投资方名单中；这是历史轮次资料，不表示其参与后续轮次。",
+          "source_id": "pitchhub_zhongkeleinao_2020"
+        },
         {
           "description": "融资来源记录：中科类脑 · B+轮 · 2026-09-07 · A轮投资方 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4cd330eaa5f3d5fc"
@@ -144,6 +221,46 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "anhua_guoyuan_annual_2023",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2024-03-26/1219404172.PDF",
+          "source_title": "国元证券股份有限公司2023年年度报告",
+          "source_content_hash": "e21bcc94978185330bf15780d74a49b2d26e1add6f553bfdaab862ca5f42582b",
+          "quote": "安徽安华创新风险投资基金有限公司系国元创新与华富嘉业投资管理有限公司、安徽交控资本投资管理有限公司、安徽省盐业总公司、合肥市产业投资引导基金有限公司、时代出版传媒股份有限公司、安徽华文创业投资管理有限公司、阜阳市颍科创新投资有限公司、合肥高新建设投资集团公司、安徽省国有资产运营有限公司共同出资组建，于 2017 年 11 月 30 日经合肥市高新开发区市场监督管理局核准注册成立，统一社会信用代码为 91340100MA2RAP0C60，注册资本为人民币 350,000.00 万元。截至 2023 年末，安徽安华创新风险投资基金有限公司注册资本为 35.00 亿元，国元创新持股比例为 17.46%。",
+          "quote_hash": "01259d475ea5f9d45c884c2da84e2273abd998bc2ada78b763d475579f2cfc35"
+        },
+        {
+          "source_id": "anhua_changfei_2023",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2023-06-27/1217138480.PDF",
+          "source_title": "长飞光纤光缆股份有限公司关于对外投资的公告",
+          "source_content_hash": "c71899dda67d5511b350a8dd6715372afea1704d1abc21af8fe3b60e4f43e469",
+          "quote": "安华创新及建信信托均拟出资人民币 10,000.0000 万元，各认购长飞先进半导体 440.1076 万元的新增注册资本。",
+          "quote_hash": "e3d515032c476172a50018d193cc8ceae52aeee2c2ff12a682e3d3d41466b7ed"
+        },
+        {
+          "source_id": "anhua_huaan_guodian_2025",
+          "source_url": "https://hazq.com/main/a/20250218/16493.shtml",
+          "source_title": "公司动态｜华安证券官网",
+          "source_content_hash": "7a18e73a3cc1c1bde941d2a36c128ca5d40cb37404bf701fffab3e3112a3acec",
+          "quote": "自 2023 年，华安证券全资子公司华安嘉业通过所管理宣城安华基金及安华创新基金分别投资国电高科，持续至今，已帮助企业实现新跨越。",
+          "quote_hash": "c483861ab5bce80d292eb7e146402d7688f7ebca0f673dfbc6cb234d5a2bf106"
+        },
+        {
+          "source_id": "pitchhub_zhongkeleinao_2020",
+          "source_url": "https://pitchhub.36kr.com/project/1678250824463368",
+          "source_title": "中科类脑｜项目信息-36氪",
+          "source_content_hash": "172b52b0715adcdc",
+          "quote": "A轮 2020-10 亿元人民币 合肥产投集团 ， 金科君创 ， 创东方投资 ， 华安嘉业 ， 量子基金 ， 国元股投 ， 华文投资 ， 合肥创新投资 ， 安华创投基金 ， 安徽省量子科学产业发展基金",
+          "quote_hash": "8c4596a390f6ae35cba538d7b05477bf2548bb2231d5cabd716f22c6c1a630da"
+        },
+        {
+          "source_id": "anhua_jinghe_prospectus_2023",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2023-04-26/1216593341.PDF",
+          "source_title": "合肥晶合集成电路股份有限公司首次公开发行股票并在科创板上市招股说明书",
+          "source_content_hash": "1c7ce1ee6390bd1b06f71382cd0d9eaa8619904e19833c07f8d4238d11abd43a",
+          "quote": "安徽安华创新风险投资基金有限公司经营范围为股权投资、债权投资、投资顾问、管理及咨询；其基金管理人为华安嘉业投资管理有限公司，基金备案编号为 SCJ944。",
+          "quote_hash": "1275858d0cd28f261536e512ffe3bb56fd164f2411f43b039e1a3f3f345b7bce"
+        },
         {
           "source_id": "FISRC-4cd330eaa5f3d5fc",
           "source_url": "https://pitchhub.36kr.com/project/1678250824463368",

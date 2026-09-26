@@ -139,19 +139,134 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "合肥产投科创种子基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "15亿元是合肥科创集团运营的“1+1+3”合肥市种子基金群总规模，不是本档案对应单只基金规模；2023年10亿元为当时推动形成的全市种子基金总规模。公开资料尚未给出本基金单体规模。",
+      "summary": "合肥产投科创种子基金是合肥市科技成果转化与早期科技项目投资体系中的一支种子基金，由合肥市科创集团参与设立和运营，关注早期、硬科技项目。运营方的种子基金群已形成多项目决策和投后培育体系；单只基金规模未在所引公开资料中单独披露。",
+      "facts": [
+        {
+          "field": "operating_platform",
+          "label": "设立及运营平台",
+          "value": "合肥市科创集团有限公司参与设立并运营；集团为合肥市产业投资控股（集团）有限公司全资子公司。",
+          "source_id": "hfkc_overview_2026"
+        },
+        {
+          "field": "operator_founded",
+          "label": "运营机构成立时间",
+          "value": "合肥市科创集团有限公司成立于2021年4月。",
+          "source_id": "hfkc_overview_2026"
+        },
+        {
+          "field": "investment_approach",
+          "label": "运营方公开投资理念",
+          "value": [
+            "投早",
+            "投小",
+            "投长期",
+            "投硬科技"
+          ],
+          "source_id": "hfkc_overview_2026"
+        },
+        {
+          "field": "seed_fund_family_scale",
+          "label": "运营方种子基金群规模（非单只基金）",
+          "value": "15亿元；集团称基金群已立项投决近300个项目，其中超100家投后估值过亿元。",
+          "source_id": "hfkc_seed_family_2026"
+        },
+        {
+          "field": "city_seed_fund_scale_2023",
+          "label": "全市种子基金总规模（2023年历史披露）",
+          "value": "2023年基金设立会议与各市县（区）联动后，合肥市种子基金总规模增至10亿元；不是单只基金的规模。",
+          "source_id": "hfkc_history_2023"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2023-09-15",
+          "description": "合肥科创集团召开合肥产投科创种子基金设立暨第一次合伙人大会，并推动合肥市种子基金总规模增至10亿元。",
+          "source_id": "hfkc_history_2023"
+        },
+        {
+          "date": "2026-08-20",
+          "description": "合肥产投科创种子基金完成对京理飞动数百万元投资，包河区科创种子基金同步跟投。",
+          "source_id": "hfkc_jinglifeidong_2026"
+        }
+      ],
       "track_record": [
+        {
+          "description": "合肥科创集团官网2026年8月披露，基金完成对京理飞动数百万元投资、包河区科创种子基金同步跟投。这是公开披露的单个案例，不代表完整投资组合或基金回报。",
+          "source_id": "hfkc_jinglifeidong_2026"
+        },
+        {
+          "description": "投资界2026年7月报道，合肥产投科创种子基金领投Monstar梦塔科技超千万元种子+轮融资；报道未披露基金单独出资额。",
+          "source_id": "pedaily_monstar_seed_2026"
+        },
         {
           "description": "融资来源记录：梦塔科技 · 种子+轮 · 2026-07-29 · 本轮领投 · 超千万元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1c8eaea364bcdb2f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "运营机构官方网站",
+          "value": "合肥市科创集团有限公司",
+          "url": "https://www.hfkcjt.com.cn/",
+          "source_id": "hfkc_overview_2026"
+        },
+        {
+          "kind": "phone",
+          "label": "运营机构公开电话（非基金专属渠道）",
+          "value": "0551-63858275",
+          "source_id": "hfkc_overview_2026"
+        },
+        {
+          "kind": "address",
+          "label": "运营机构公开地址（非基金专属地址）",
+          "value": "合肥市蜀山区潜山路100号琥珀五环A座16楼",
+          "source_id": "hfkc_overview_2026"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "hfkc_overview_2026",
+          "source_url": "https://www.hfkcjt.com.cn/list/?web1=1229&web2=1598",
+          "source_title": "公司简介｜合肥市科创集团有限公司",
+          "source_content_hash": "0c61e0a8179251e8f10bdbe712c4e7d4781671122c30e665d17036fb4fdaa272",
+          "quote": "合肥市科创集团有限公司（简称“公司”）成立于2021年4月，注册资本11.7亿元，是合肥市产业投资控股（集团）有限公司的全资子公司。公司以推动科创与产业融合发展为核心使命，致力于打造国内一流的科创服务生态运营商。",
+          "quote_hash": "a9c94b30a2ab458e4bd28831d4dcc379cbc6133b70f3eaa5cbf3e66cddbf24f0"
+        },
+        {
+          "source_id": "hfkc_history_2023",
+          "source_url": "https://www.hfkcjt.com.cn/list/?web1=1229&web2=1883",
+          "source_title": "大事记｜合肥市科创集团有限公司",
+          "source_content_hash": "b35c5a59367cfbbda1dcd2f53392d2a7d5d5a4109d7a5dab161a2d183401c7ef",
+          "quote": "9月15日，组织召开合肥产投科创种子基金设立暨第一次合伙人大会，联手各市县（区）推动合肥市种子基金总规模增至10亿元。",
+          "quote_hash": "2422d0048245405b59a175629f9c1e3c9839799a7c01f52768032f694c5b54cc"
+        },
+        {
+          "source_id": "hfkc_seed_family_2026",
+          "source_url": "https://www.hfkcjt.com.cn/list/?web1=1229&web2=1598",
+          "source_title": "公司简介｜合肥市科创集团有限公司",
+          "source_content_hash": "0c61e0a8179251e8f10bdbe712c4e7d4781671122c30e665d17036fb4fdaa272",
+          "quote": "管理运营总规模15亿元的“1+1+3”合肥市种子基金群，已立项投决近300个项目，其中超100家投后估值过亿。",
+          "quote_hash": "7e1711278528f87fda523e2edf7d8b6c6f1c6cd41d6e7513aa6503e7a05edc4e"
+        },
+        {
+          "source_id": "hfkc_jinglifeidong_2026",
+          "source_url": "https://www.hfkcjt.com.cn/show/?12236.html",
+          "source_title": "合肥产投科创种子基金完成对京理飞动增资交割｜合肥市科创集团",
+          "source_content_hash": "5ce0a3547a170f98b758f026cc139eb21fb73cc91729e3bd8e4525bc337f866f",
+          "quote": "近日，合肥产投科创种子基金完成对合肥京理飞动科技有限公司（以下简称“京理飞动”）数百万元投资，包河区科创种子基金同步跟投。",
+          "quote_hash": "cb98cc375862e7bc62065ff0737b9feb25fc906ce075358e88736049588e54fc"
+        },
+        {
+          "source_id": "pedaily_monstar_seed_2026",
+          "source_url": "https://news.pedaily.cn/202607/566967.shtml",
+          "source_title": "Monstar梦塔科技完成超千万元种子+轮融资，构建AI数字生命新范式｜投资界",
+          "source_content_hash": "377c392d6365234a",
+          "quote": "Monstar梦塔科技已完成 超千万元种子+轮融资 ，由 合肥产投科创种子基金领投，小遛科技跟投，老股东奇绩创坛、启迪之星持续支持。",
+          "quote_hash": "37d1ec65c0044bab10ab122ddbca857a93366579cd3fdd3009924ca18ac010bb"
+        },
         {
           "source_id": "FISRC-1c8eaea364bcdb2f",
           "source_url": "https://news.pedaily.cn/202607/566967.shtml",

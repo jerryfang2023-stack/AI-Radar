@@ -140,19 +140,116 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "广州越富基金管理有限公司 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "广州越富基金管理有限公司的历史股权关系依据越秀区审计局对越富投控2020—2022年度的审计结果；2020年47.17%股权受让信息和2022年末子公司口径不等同于当前持股比例。越秀区2026年招商报道中的生命健康专项基金属于区级基金，档案按“以越富基金为抓手”表述，不将所有项目自动归为管理公司的自有组合。",
+      "summary": "广州越富基金管理有限公司是越秀区属基金管理体系的重要主体。越秀区审计公告显示，区属一级企业广州越富投资控股有限公司于2020年受让越富基金47.17%股权，并在2022年末将其列入全资或控股子公司。越秀区金融工作报告披露，越富基金发起设立越富国科、越华产融等产业基金，投资过中科云图、广咨国际等区内项目。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "机构全称",
+          "value": "广州越富基金管理有限公司",
+          "source_id": "yuefu_audit_2024"
+        },
+        {
+          "field": "group_relationship",
+          "label": "区属国资关系（历史审计披露）",
+          "value": "越秀区属一级企业广州越富投资控股有限公司于2020年受让越富基金47.17%股权；越秀区审计局报告将其列入越富投控2022年末全资或控股子公司。该比例和状态不代表当前工商股权结构。",
+          "source_id": "yuefu_audit_2024"
+        },
+        {
+          "field": "investment_role",
+          "label": "区内投资职能",
+          "value": "越秀区金融工作报告称其发挥区属产业基金领投作用，并主导发起设立产业基金。",
+          "source_id": "yuefu_finance_bureau_2022"
+        },
+        {
+          "field": "healthcare_fund_role",
+          "label": "生命健康产业基金（政府报道）",
+          "value": "越秀区招商报道记载，以越富基金为抓手，与广州金控、广州产投合作组建区级生物医药与健康产业专项基金。",
+          "source_id": "yuefu_health_fund_2026"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2020-12",
+          "description": "越秀区审计局报告记载，越富投控受让广州越富基金管理有限公司47.17%股权。",
+          "source_id": "yuefu_audit_2024"
+        }
+      ],
       "track_record": [
+        {
+          "description": "越秀区金融工作报告称，越富基金主导发起越富国科、越华产融等产业基金，并投资辖内中科云图、广咨国际等项目。",
+          "source_id": "yuefu_finance_bureau_2022"
+        },
+        {
+          "description": "越秀区招商报道记载，区级生物医药与健康产业专项基金投资米戈思、万灵帮桥、睿心医疗等项目，累计撬动社会资本超过1亿元；报道未拆分单一管理机构或单个项目出资额。",
+          "source_id": "yuefu_health_fund_2026"
+        },
+        {
+          "description": "投资界2026年5月报道，广州越富基金管理有限公司跟投睿心医疗近亿元D轮融资；报道未披露越富基金的单独出资额。",
+          "source_id": "pedaily_ruixin_yuefu_2026"
+        },
         {
           "description": "融资来源记录：睿心医疗 · D轮 · 2026-05-27 · 本轮参投 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f9bb3bf014f3fdf8"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "label": "越秀区公开企业投融资服务电话（越富投控越富基金）",
+          "value": "020-87392591",
+          "source_id": "yuefu_service_contact_2026"
+        },
+        {
+          "kind": "website",
+          "label": "广州市越秀区政府企业服务页面",
+          "value": "越秀区营商微服务平台",
+          "url": "https://www.yuexiu.gov.cn/tzyx/ycwl/index.html",
+          "source_id": "yuefu_service_contact_2026"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "yuefu_audit_2024",
+          "source_url": "https://www.yuexiu.gov.cn/gzyxsj/attachment/7/7540/7540340/9446307.pdf",
+          "source_title": "广州越富投资控股有限公司2020至2022年度审计结果｜广州市越秀区审计局",
+          "source_content_hash": "ee2a4b580cbd5221a23bbb6cc24838948e56383974a5d88b17826f1b68924857",
+          "quote": "2020年12月，广州越富投资控股有限公司接受广州民间金融街管理有限公司100%股权及广州越富基金管理有限公司47.17%股权转让；截至2022年12月31日，越富基金公司为越富投控旗下全资或控股子公司之一。",
+          "quote_hash": "32ce5227ca97ea1ab7448f12cd53386453f22cda3a0ba50c58946a508be27804"
+        },
+        {
+          "source_id": "yuefu_finance_bureau_2022",
+          "source_url": "https://www.yuexiu.gov.cn/gzyxjr/gkmlpt/content/8/8873/post_8873308.html",
+          "source_title": "区金融局2022年工作总结和2023年工作安排｜广州市越秀区人民政府",
+          "source_content_hash": "6104f8c3cbf49a38d00a6aab2957779009ad64e602f87fb50cfa48a3614fb101",
+          "quote": "引导越富基金充分发挥区属产业基金领投作用，为辖内企业提供优质投融资服务，主导发起设立越富国科、越华产融等产业基金，已投资辖内中科云图、广咨国际等项目。",
+          "quote_hash": "980d6d826e963bfb6432cfafbfdc3df61bd644b8fd63c686880672af26f5e429"
+        },
+        {
+          "source_id": "yuefu_health_fund_2026",
+          "source_url": "https://www.yuexiu.gov.cn/ggfw/ztfw/zsyz/tzxx/content/post_10894145.html",
+          "source_title": "优质产业项目接连落地！越秀招商“上大分”｜广州市越秀区人民政府",
+          "source_content_hash": "1ae3ca54d30d217aa5474fad5b2e77d2bd0478924453371bae38ffd9699ec2f7",
+          "quote": "以区属越富基金为抓手，加大力度与广州金控、广州产投合作，组建区级生物医药与健康产业专项基金；该专项基金投资米戈思、万灵帮桥、睿心医疗等优质项目，累计撬动社会资本超1亿元。",
+          "quote_hash": "7818571ce0df7be233d10f61d6789dcfa6489c9ed3d71da47b67df81ac10fbee"
+        },
+        {
+          "source_id": "yuefu_service_contact_2026",
+          "source_url": "https://www.yuexiu.gov.cn/tzyx/ycwl/index.html",
+          "source_title": "越秀区营商微服务平台｜广州市越秀区人民政府",
+          "source_content_hash": "eff63358b95ffe59ae4c0ce99d593b80de8eb3afce7a03db08703f880c6a4fbc",
+          "quote": "协助引入投融资资源，协助优质项目联系潜在投资者、上下游产业资金，引导社会资本投向区内优质初创项目。对应部门：越富投控越富基金 020-87392591。",
+          "quote_hash": "0a06dae1cdf59d32b5712efb6e8e0cb1e4577e7dd142a574bd2edd3c4d6e6c90"
+        },
+        {
+          "source_id": "pedaily_ruixin_yuefu_2026",
+          "source_url": "https://news.pedaily.cn/202605/564464.shtml",
+          "source_title": "聚焦心血管精准诊疗赛道，睿心医疗完成近亿元D轮融资｜投资界",
+          "source_content_hash": "79dea96b7dc8102f",
+          "quote": "由 广州生物医药与健康产业投资有限公司（以下简称“广州健康产投”）领投、广州越富基金管理有限公司（以下简称“越富基金”）跟投",
+          "quote_hash": "1d413599da89517453fdfb7963303f432400dee64bfb53ca2d0eef2b56b8d59a"
+        },
         {
           "source_id": "FISRC-f9bb3bf014f3fdf8",
           "source_url": "https://news.pedaily.cn/202605/564464.shtml",

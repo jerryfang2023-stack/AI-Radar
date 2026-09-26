@@ -131,19 +131,125 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "广州南沙区南金基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "南金基金的全称及股东合作关系来自南沙区国资局公开资料。2022年公示的1亿元规模是其担任管理机构的一支拟投子基金规模，不是管理公司自身资产管理规模；出资仍为拟议状态。2025年度TOP20为行业榜单荣誉，不是财务回报指标。集团电话和地址属于母集团公开联系方式。",
+      "summary": "广州南沙区南金基金管理有限公司（南金基金）是南沙科金控股集团与广州金控体系合作设立的股权投资管理机构，依托市场化基金机制投资南沙区优质企业，重点覆盖新一代信息技术、人工智能、生物医药和高端装备制造。南沙区国资局披露其获评2025年度中国成长型投资机构TOP20。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "机构全称",
+          "value": "广州南沙区南金基金管理有限公司",
+          "source_id": "nanjin_sasac_profile_2025"
+        },
+        {
+          "field": "shareholder_background",
+          "label": "设立背景",
+          "value": "由科金控股集团旗下广州南沙产业创业投资基金管理有限公司与广州金控集团旗下广州金控基金管理有限公司合作设立。",
+          "source_id": "nanjin_sasac_profile_2025"
+        },
+        {
+          "field": "investment_model",
+          "label": "投资方式",
+          "value": "通过市场化基金运作机制，对南沙区优质企业开展股权投资。",
+          "source_id": "nanjin_sasac_profile_2025"
+        },
+        {
+          "field": "investment_sectors",
+          "label": "重点关注领域",
+          "value": [
+            "新一代信息技术",
+            "人工智能",
+            "生物医药",
+            "高端装备制造"
+          ],
+          "source_id": "nanjin_sasac_profile_2025"
+        },
+        {
+          "field": "selected_managed_fund",
+          "label": "公开披露的受托管理案例（2022年拟投子基金）",
+          "value": "南沙区政府公示的一支由南金基金担任管理机构的子基金规模为1亿元，南沙创业投资引导基金计划出资2000万元；这是该支拟投基金规模，不是南金基金管理公司自身规模。",
+          "source_id": "nanjin_nansha_subfund_2022"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2025-10-13",
+          "description": "南沙区国资局公布，南金基金获评中国风险投资行业年度榜单“2025年度中国成长型投资机构TOP20”。",
+          "source_id": "nanjin_sasac_profile_2025"
+        }
+      ],
       "track_record": [
+        {
+          "description": "南沙区国资局披露，南金基金获得中国风险投资研究院2025年度中国成长型投资机构TOP20；这是行业榜单荣誉，不是回报率或退出业绩。",
+          "source_id": "nanjin_sasac_profile_2025"
+        },
+        {
+          "description": "南沙区2022年拟投子基金公示记录一支由南金基金管理、规模1亿元的基金，南沙引导基金计划出资2000万元；文件为拟投资公示，未证明最终交割。",
+          "source_id": "nanjin_nansha_subfund_2022"
+        },
+        {
+          "description": "36氪2023年报道，南金基金领投奕行智能上一轮融资；报道未披露南金基金单独出资额。",
+          "source_id": "tencent_yixing_nanjin_2023"
+        },
         {
           "description": "融资来源记录：奕行智能 · 轮次未披露 · 2026-09-18 · Pre-A+轮领投 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-44c45563314497fe"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "所属科金控股集团官方网站",
+          "value": "广州南沙科金控股集团有限公司",
+          "url": "https://www.nstfhg.com/",
+          "source_id": "nansha_kg_group_website"
+        },
+        {
+          "kind": "phone",
+          "label": "母集团公开电话（非南金基金直达渠道）",
+          "value": "020-84969502",
+          "source_id": "nansha_kg_group_website"
+        },
+        {
+          "kind": "address",
+          "label": "母集团公开地址（非南金基金办公地址）",
+          "value": "广州市南沙区横沥镇明珠湾区明珠一街一号",
+          "source_id": "nansha_kg_group_website"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "nanjin_sasac_profile_2025",
+          "source_url": "https://www.gzns.gov.cn/gznsjr/gkmlpt/content/10/10481/post_10481275.html",
+          "source_title": "喜讯丨科金控股集团旗下南金基金荣获评CVCRI 2025年度中国成长型投资机构TOP20｜南沙区国资局",
+          "source_content_hash": "1db9a325ca69f2eec2b988a7db5f8e7a4957b8515f1a558af9acf73055f057e1",
+          "quote": "广州南沙区南金基金管理有限公司是科金控股集团旗下广州南沙产业创业投资基金管理有限公司与广州金控集团旗下广州金控基金管理有限公司合作设立的股权投资管理机构，专注于对区内优质企业进行股权投资，重点关注新一代信息技术、人工智能、生物医药、高端装备制造等战略性新兴产业。",
+          "quote_hash": "596d420331095dafc4f5acd439a891814471ec37631b9ebdae1e001d718a2ce2"
+        },
+        {
+          "source_id": "nanjin_nansha_subfund_2022",
+          "source_url": "https://www.gzns.gov.cn/zwgk/tzgg/content/post_8661794.html",
+          "source_title": "关于广州南沙创业投资引导基金拟投资子基金的公示｜广州市南沙区人民政府",
+          "source_content_hash": "151c6df78fb63eb0badcf47045aa51bf7c808224df91c14526c69bee5940d9c2",
+          "quote": "基金管理机构：广州南沙区南金基金管理有限公司；投资方向：新一代集成电路、人工智能、元宇宙、数字孪生、量子信息、高端制造、医疗健康；基金规模：人民币1亿元；引导基金计划出资额度：人民币2000万元。",
+          "quote_hash": "b84c91e4890ed05984b3ce29e36bdf054486f82cc5aff042b736686bd33cb446"
+        },
+        {
+          "source_id": "tencent_yixing_nanjin_2023",
+          "source_url": "https://news.qq.com/rain/a/20231114A01CK700",
+          "source_title": "36氪首发｜奕行智能EVAS完成超亿元Pre-A+轮融资，将推出车用AI芯片｜腾讯新闻",
+          "source_content_hash": "5dbe7af466461203",
+          "quote": "本轮融资由广州南沙科金控股集团下属广州南沙区南金基金领投，华侨银行集团旗下狮城资本跟投",
+          "quote_hash": "c7ad01d438c488e3713c3c59adc74a0f39c03256cdb977948a0116b5a2b7c9ec"
+        },
+        {
+          "source_id": "nansha_kg_group_website",
+          "source_url": "https://www.nstfhg.com/",
+          "source_title": "广州南沙科金控股集团有限公司官方网站",
+          "source_content_hash": "093454dc91c783b507d17aa1a9d6f2083e0a1ce51ca4243b187d2c81c4e9102d",
+          "quote": "广州南沙科金控股集团有限公司成立于2018年6月22日，是南沙开发区管委会组建的国有投资公司；地址：广州市南沙区横沥镇明珠湾区明珠一街一号；电话：020-84969502。",
+          "quote_hash": "cf7a2458ce1d0a48bea5d7a135c44deac4e0854b0961db3d7b3eb41f75085480"
+        },
         {
           "source_id": "FISRC-44c45563314497fe",
           "source_url": "https://news.qq.com/rain/a/20231114A01CK700",

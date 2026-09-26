@@ -139,19 +139,109 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "贵州科创天使基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "贵州省科技创新天使股权投资基金亦简称“科创天使基金”，由贵州省科技风险创业投资有限公司担任基金管理人。10亿元是公开披露的首期规模；2026年指南中的规模、返投和投资阶段要求适用于参股子基金，不应理解为母基金单笔投资承诺。",
+      "summary": "贵州省科技创新天使股权投资基金是省级科技成果转化与早期科技投资基金，管理人为贵州省科技风险创业投资有限公司。贵州省科技厅2026年子基金申报指南强调投早、投小、投硬科技，并支持种子投资、天使投资和科技成果转化；省科技厅2025年披露该基金首期规模为10亿元。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "基金全称",
+          "value": "贵州省科技创新天使股权投资基金（简称“科创天使基金”）",
+          "source_id": "gz_science_angel_guide_2026"
+        },
+        {
+          "field": "fund_manager",
+          "label": "基金管理人",
+          "value": "贵州省科技风险创业投资有限公司。",
+          "source_id": "gz_science_angel_guide_2026"
+        },
+        {
+          "field": "first_close_scale",
+          "label": "首期规模（省科技厅2025年披露）",
+          "value": "人民币10亿元；为首期规模，不代表当前实缴或可投资余额。",
+          "source_id": "gz_science_angel_scale_2025"
+        },
+        {
+          "field": "investment_focus",
+          "label": "子基金投资方向要求（2026年指南）",
+          "value": [
+            "种子投资",
+            "天使投资",
+            "科技成果转化",
+            "重点产业和重大科技创新项目",
+            "硬科技"
+          ],
+          "source_id": "gz_science_angel_guide_2026"
+        },
+        {
+          "field": "subfund_policy",
+          "label": "2026年参股子基金要求",
+          "value": "单只子基金规模原则上不低于2亿元；种子期、初创期科技型企业投资金额不低于子基金规模的60%；投资贵州省内项目的金额不低于母基金对子基金的实缴出资额。",
+          "source_id": "gz_science_angel_guide_2026"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2025-12-02",
+          "description": "贵州省科技厅发布的科技创新成果报道披露基金首期规模10亿元。",
+          "source_id": "gz_science_angel_scale_2025"
+        }
+      ],
       "track_record": [
+        {
+          "description": "新浪财经2026年5月报道，贵州科创天使基金与华业天成作为老股东共同跟投小雨智造B+轮；报道未披露本基金单独出资额。",
+          "source_id": "sina_xiaoyu_angel_2026"
+        },
         {
           "description": "融资来源记录：小雨智造 · B+轮 · 2026-05-09 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7cae6e0a712567de"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "label": "基金管理人业务咨询邮箱（省科技厅指南公布）",
+          "value": "zltzb@gzstvc.com",
+          "source_id": "gz_science_angel_guide_2026"
+        },
+        {
+          "kind": "phone",
+          "label": "基金管理人业务咨询电话（省科技厅指南公布的联系人电话）",
+          "value": "18798053121",
+          "source_id": "gz_science_angel_guide_2026"
+        },
+        {
+          "kind": "address",
+          "label": "基金管理人业务联系地址",
+          "value": "贵州省贵阳市南垭路67号贵州金控集团5号楼4楼",
+          "source_id": "gz_science_angel_guide_2026"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "gz_science_angel_guide_2026",
+          "source_url": "https://kjt.guizhou.gov.cn/zwgk/xxgkml/zdlyxxgk/kyxmgl/sbzn/202604/t20260421_90026667.html",
+          "source_title": "贵州省科技创新天使股权投资基金2026年子基金申报指南｜贵州省科学技术厅",
+          "source_content_hash": "35940a3e4e534212c6bb2572681652cc76793eda8db412db76ab2be7c2e25145",
+          "quote": "科创天使基金子基金投向要求重点投早、投小、投硬科技，投向种子投资、天使投资、科技成果转化等领域；咨询对象：贵州省科技风险创业投资有限公司（科创天使基金管理人）；联系邮箱：zltzb@gzstvc.com。",
+          "quote_hash": "e0aef7e85f313bcf44bd009701caeb121fb74e499b6ec75d0a0821fc13760c87"
+        },
+        {
+          "source_id": "gz_science_angel_scale_2025",
+          "source_url": "https://kjt.guizhou.gov.cn/xwzx/mtjj/202512/t20251202_89007691.html",
+          "source_title": "贵州全社会研发经费支出及强度实现连续9年增长｜贵州省科学技术厅",
+          "source_content_hash": "4ccbed17a3e220d92dfd28899b29895191f6e8747d1a08a9603910aae8ca94ee",
+          "quote": "贵州省科技创新天使股权投资基金首期规模10亿元。",
+          "quote_hash": "a8b580dd1ebfd54c6467ff5db2e9e1a74694e2f397df8b8d2a6a54e62d3af02a"
+        },
+        {
+          "source_id": "sina_xiaoyu_angel_2026",
+          "source_url": "https://finance.sina.com.cn/roll/2026-05-09/doc-inhxhuvc1441707.shtml",
+          "source_title": "小雨智造完成数亿元B+轮融资",
+          "source_content_hash": "320a14d704f62a2d",
+          "quote": "老股东华业天成、贵州科创天使基金共同跟投",
+          "quote_hash": "46c5abda29dc5a4f9b36012fd8190fd437675ab2ad60fbe269108f4f57ef3601"
+        },
         {
           "source_id": "FISRC-7cae6e0a712567de",
           "source_url": "https://finance.sina.com.cn/roll/2026-05-09/doc-inhxhuvc1441707.shtml",
