@@ -137,21 +137,99 @@
       }
     ],
     "public_profile": {
+      "summary": "融资记录中的“上海国际集团旗下国方创新”对应上海国际集团资产管理体系中的国际国方（上海国方私募基金管理公司）。机构成立于2017年，定位为科技产业投资平台，聚焦半导体、数字智能和生物医药，并代表集团管理上海市级及长三角产业基金。",
+      "coverage_note": "管理规模、培育企业数、上市数和专精特新企业数为上海国际集团资产管理公司官网披露的截至2025年末数据；它们是机构组合和管理口径，不代表基金IRR或单笔投资收益。融资记录中的融资总额属于被投企业轮次总额，不是国际国方单独出资额。",
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "上海国际集团旗下国方创新 当前按“投资组织”收录。最新融资披露记录日期为 2026-01-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "facts": [
+        {
+          "field": "identity",
+          "label": "机构主体与背景",
+          "value": "上海国方私募基金管理公司（国际国方），上海国际集团旗下科技产业投资机构，成立于2017年6月。",
+          "source_id": "sig_am_guofang_about"
+        },
+        {
+          "field": "focus",
+          "label": "重点领域",
+          "value": [
+            "半导体",
+            "数字智能",
+            "生物医药"
+          ],
+          "source_id": "sig_am_guofang_focus"
+        },
+        {
+          "field": "fund_management",
+          "label": "基金管理职责",
+          "value": "与华虹集团、石药集团、上海数据集团等产业链企业发起多支CVC基金，并代表集团管理上海产业转型升级二期基金及长三角产业基金一期、二期。",
+          "source_id": "sig_am_guofang_focus"
+        },
+        {
+          "field": "scale",
+          "label": "机构公布的组合数据",
+          "value": "截至2025年末，累计管理规模超过人民币330亿元，培育企业超过100家，其中13家上市、47家获评国家级专精特新“小巨人”。",
+          "source_id": "sig_am_guofang_scale"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2017-06",
+          "description": "国际国方成立。",
+          "source_id": "sig_am_guofang_about"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：长亭科技 · 其他融资 · 2026-01-29 · 本轮参投 · 5亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "官网列举燧原科技、盛合晶微、MiniMax、华大智造、企查查、龙图光罩、杰华特、微泰医疗和博睿康等代表性企业；该名单不等于完整组合。",
+          "source_id": "sig_am_guofang_scale"
+        },
+        {
+          "description": "2026年融资报道将上海国际集团旗下国方创新列为长亭科技5亿元融资的投资方之一。该金额是公司融资总额，未披露国方单独出资。",
           "source_id": "FISRC-4fe23845696fb5f2"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构与基金信息",
+          "value": "上海国际集团资产管理有限公司",
+          "url": "https://www.sig-am.com/html/business/industrial-funds/",
+          "source_id": "sig_am_guofang_about"
+        },
+        {
+          "kind": "phone",
+          "label": "平台总机",
+          "value": "021-62632222（上海国际集团资产管理有限公司公开总机）",
+          "url": "https://www.sig-am.com/html/business/industrial-funds/",
+          "source_id": "sig_am_public_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "sig_am_guofang_about",
+          "source_url": "https://www.sig-am.com/html/business/industrial-funds/",
+          "source_title": "产业基金 - 上海国际集团资产管理有限公司",
+          "source_content_hash": "625e1cf83a27e89f72c4b4eb0c404a564d266af309a51355a525bf0d0a92b71e",
+          "quote": "上海国方私募基金管理公司（国际国方）成立于2017年6月，是上海国际集团旗下科技产业投资机构。",
+          "quote_hash": "d6c5eca1a5972ef61e4fac7f324ae8a74a1702425ff66b84fcf21a48ef963f23"
+        },
+        {
+          "source_id": "sig_am_guofang_focus",
+          "source_url": "https://www.sig-am.com/html/business/industrial-funds/",
+          "source_title": "产业基金 - 上海国际集团资产管理有限公司",
+          "source_content_hash": "625e1cf83a27e89f72c4b4eb0c404a564d266af309a51355a525bf0d0a92b71e",
+          "quote": "国际国方聚焦半导体、数字智能、生物医药，联合产业链龙头设立多支CVC基金。",
+          "quote_hash": "58d6f5daa9fab50280b6fe0c737418f96b2f7cf8eaec643c10e5990742b073a9"
+        },
+        {
+          "source_id": "sig_am_guofang_scale",
+          "source_url": "https://www.sig-am.com/html/business/industrial-funds/",
+          "source_title": "产业基金 - 上海国际集团资产管理有限公司",
+          "source_content_hash": "625e1cf83a27e89f72c4b4eb0c404a564d266af309a51355a525bf0d0a92b71e",
+          "quote": "截至2025年末，国际国方累计管理规模超330亿元，培育超过100家科技企业，13家上市、47家获评国家级专精特新“小巨人”。",
+          "quote_hash": "0290ce2d6a4f2935d5f51400cd666fe07bc792acebbae41019b1421645d537ff"
+        },
         {
           "source_id": "FISRC-4fe23845696fb5f2",
           "source_url": "https://finance.sina.com.cn/tech/roll/2026-01-29/doc-inhiyffv6659017.shtml",
@@ -159,9 +237,17 @@
           "source_content_hash": "b764c6638c521cc9",
           "quote": "投资人包括国家人工智能产业投资基金，上海国际集团旗下国方创新，北京市人工智能产业投资基金。",
           "quote_hash": "d4e8f7444a626c3a00cf012a0115c7c61c1fe62a41056d12dba1084ec55a7289"
+        },
+        {
+          "source_id": "sig_am_public_contact",
+          "source_url": "https://www.sig-am.com/html/business/industrial-funds/",
+          "source_title": "产业基金 - 上海国际集团资产管理有限公司",
+          "source_content_hash": "625e1cf83a27e89f72c4b4eb0c404a564d266af309a51355a525bf0d0a92b71e",
+          "quote": "联系电话：021-62632222。",
+          "quote_hash": "db9bc0742095fd70c8d54bec5a93b950eaa2c496d76ff15c35f631842914d7e4"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

@@ -129,21 +129,77 @@
       }
     ],
     "public_profile": {
+      "summary": "新进创投（NewMargin China）是1999年成立的中国风险投资管理机构，官网介绍其管理境内外基金，投资覆盖科技、能源、消费、医疗和先进制造等领域。其英文网站同时介绍新加坡持牌关联公司，因此本档案仅采用该网站明确归属于NewMargin China的历史与投资组合数据。",
+      "coverage_note": "超过400家被投企业、超过90家上市及人民币500亿元以上投资额均为公司官网自报，并非独立审计的基金回报。网站还展示新加坡关联公司的牌照和集团数字；未将该关联公司的牌照或集团级“资本投资额”直接视作中国投资主体的数据。融资库的2026年共绩科技Pre-A记录引用的是2024年天使轮历史页面，尚不能据此确认新进创投参与Pre-A轮。",
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "新进创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "facts": [
+        {
+          "field": "founding",
+          "label": "成立时间",
+          "value": "NewMargin China官网介绍其成立于1999年。",
+          "source_id": "newmargin_china_official"
+        },
+        {
+          "field": "portfolio_scale",
+          "label": "机构自报组合记录",
+          "value": "官网称已投资超过400家公司，超过90家组合企业完成上市，累计投资金额超过人民币500亿元。以上是官网自报历史口径，不是基金收益率。",
+          "source_id": "newmargin_china_official"
+        },
+        {
+          "field": "investment_scope",
+          "label": "投资领域",
+          "value": "互联网与信息技术、环保、资源、消费、文化、医药和先进制造。",
+          "source_id": "newmargin_focus_official"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1999",
+          "description": "NewMargin China创立。",
+          "source_id": "newmargin_china_official"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：共绩科技 · Pre-A轮 · 2026-05-07 · 天使轮投资方 · 近亿人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "36氪项目页将新进创投列为共绩科技2024年天使轮投资方。融资库2026年Pre-A记录引用的是历史天使轮来源，未能确认其参与Pre-A轮。",
           "source_id": "FISRC-73d8bab6afc27534"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "NewMargin Ventures",
+          "url": "https://www.newmarginventures.sg/en/",
+          "source_id": "newmargin_china_official"
+        },
+        {
+          "kind": "email",
+          "label": "官网公布的联系邮箱",
+          "value": "info@newmargin.com",
+          "url": "https://www.newmarginventures.sg/en/",
+          "source_id": "newmargin_public_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "newmargin_china_official",
+          "source_url": "https://www.newmarginventures.sg/en/",
+          "source_title": "NewMargin Ventures Singapore | NewMargin Ventures",
+          "source_content_hash": "98e1f83db3c3ca8a52ef97a5aefebd282fec07ac9e19256f50255476be1ca2f0",
+          "quote": "NewMargin China was founded in 1999, has invested in over 400 companies, with total investments surpassing RMB 50 billion, and more than 90 portfolio companies have gone public.",
+          "quote_hash": "c5cd3a22422eb1d53a5ba33e235be6c3319e438a9306ac0568ed32ab7c2911c4"
+        },
+        {
+          "source_id": "newmargin_focus_official",
+          "source_url": "https://www.newmarginventures.sg/en/",
+          "source_title": "NewMargin Ventures Singapore | NewMargin Ventures",
+          "source_content_hash": "21677a270dd2b105cbb4975532699c78f26bb06b2ab815eef3c16a2aae1358f0",
+          "quote": "NewMargin China’s portfolio spans Internet IT, environmental protection, resources, consumer, culture, pharmaceuticals, and advanced manufacturing.",
+          "quote_hash": "7e6a83000885db3b5686b2c0f5678e1cd2feebbadc0d2aef24c3c4db5a03cd9a"
+        },
         {
           "source_id": "FISRC-73d8bab6afc27534",
           "source_url": "https://pitchhub.36kr.com/project/3003253486042881",
@@ -151,9 +207,17 @@
           "source_content_hash": "8558ef142ce6976a",
           "quote": "天使轮 2024-10 数千万人民币 水木创投 ， 奇绩创坛 ， 新进创投",
           "quote_hash": "92e8d80071db8d56ff76bc6a458e5e99fb325db230bc8f8b911130023977ad60"
+        },
+        {
+          "source_id": "newmargin_public_contact",
+          "source_url": "https://www.newmarginventures.sg/en/",
+          "source_title": "NewMargin Ventures Singapore | NewMargin Ventures",
+          "source_content_hash": "a0a1e5c4a1d5173df54f1c357181c4ed49ce2cecdd813b6630c4284487fc1780",
+          "quote": "NewMargin China contact: info@newmargin.com; offices in Shanghai and Beijing.",
+          "quote_hash": "caa4ce826069ab3f3cc309f0538f73318eb9d3440134804b868b9471b1ecd3ac"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }
