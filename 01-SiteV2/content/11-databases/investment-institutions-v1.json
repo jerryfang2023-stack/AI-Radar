@@ -128319,18 +128319,95 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Molten Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "coverage_note": "投资阶段、在管组合数量和案例来自机构官网自述。官网所列组合公司是选择性案例，不表示完整组合或投资回报；FintechOS 公布的 2800 万美元为股权与债务组合融资总额，Molten Ventures 单独出资额及具体分配未披露。官网开放 Pitch Deck 提交入口，具体联系方式如下。",
+        "summary": "Molten Ventures 是面向欧洲高成长科技公司的风险投资机构，官网称其拥有约 20 年投资历程，通常在企业达到 A 轮或 B 轮阶段后投资，并继续参与后续融资。其公开组合横跨企业软件、AI 与硬科技、消费科技和数字医疗。",
+        "facts": [
+          {
+            "field": "geography",
+            "label": "投资地区",
+            "value": "欧洲",
+            "source_id": "molten_about"
+          },
+          {
+            "field": "stage",
+            "label": "常见投资阶段",
+            "value": "通常投资于 A 轮及 B 轮阶段。",
+            "source_id": "molten_stage"
+          },
+          {
+            "field": "sectors",
+            "label": "官网列示重点领域",
+            "value": [
+              "企业软件与 SaaS",
+              "AI、硬件与深科技",
+              "消费科技",
+              "数字医疗"
+            ],
+            "source_id": "molten_sectors"
+          },
+          {
+            "field": "portfolio_scale",
+            "label": "官网披露组合规模",
+            "value": "官网当前披露组合中有 100 多家公司；数据会随投资与退出变化。",
+            "source_id": "molten_scale"
+          },
+          {
+            "field": "investment_model",
+            "label": "资本循环方式",
+            "value": "官网称退出所得会重新投入新的或后续投资机会。",
+            "source_id": "molten_reinvest"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：FintechOS · 债务融资 · 2026-09-21 · 本轮参投 · $28M。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "FintechOS 于 2026-09-21 公布 2800 万美元股权与债务组合融资，并将 Molten Ventures 列为现有股东之一；没有披露其单独出资额或该机构对应的融资份额。",
             "source_id": "FISRC-ebb4cfeb462f5780"
+          },
+          {
+            "description": "官网列出的代表性组合案例包括 Aircall、Ledger、Revolut 与 Thought Machine；这是选择性案例，不是完整组合或回报证明。",
+            "source_id": "molten_track"
+          },
+          {
+            "description": "Molten Ventures 官网组合页列出 ICEYE，并标注其于 2018 年投资；这是单个组合案例，不说明投资金额或回报。",
+            "source_id": "molten_portfolio"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "Molten Ventures",
+            "url": "https://www.moltenventures.com/",
+            "source_id": "molten_contact"
+          },
+          {
+            "kind": "application",
+            "label": "创业团队提交 Pitch Deck",
+            "value": "Send Your Pitch Deck；通过官网联系页面提交。",
+            "url": "https://www.moltenventures.com/contact",
+            "source_id": "molten_contact"
+          },
+          {
+            "kind": "address",
+            "label": "伦敦办公室",
+            "value": "20 Garrick Street, London WC2E 9BT",
+            "source_id": "molten_contact_office"
+          },
+          {
+            "kind": "address",
+            "label": "都柏林办公室",
+            "value": "The Merrion Buildings, 18–20 Merrion Street, Dublin D02 XH98",
+            "source_id": "molten_contact_dublin"
+          },
+          {
+            "kind": "phone",
+            "label": "公开办公室电话",
+            "value": "+44 (0) 20 7931 8800",
+            "source_id": "molten_contact_office"
+          }
+        ],
         "sources": [
           {
             "source_id": "FISRC-ebb4cfeb462f5780",
@@ -128339,9 +128416,89 @@
             "source_content_hash": "ffc50b05f8c9cdae",
             "quote": "raised $28 million in combined equity and debt financing from its current shareholder base, including Bek Ventures, IFC, Cipio Partners and Molten Ventures, alongside a senior debt facility from Santander CIB",
             "quote_hash": "dbe4affcdde93e87d3b166291082fcb242b3fe2b5d8d0e8c75bd211cb68787e6"
+          },
+          {
+            "source_id": "molten_about",
+            "source_url": "https://investors.moltenventures.com/about-molten",
+            "source_title": "About Molten Ventures Plc",
+            "source_content_hash": "0da7e1bd16f677fa2a61cf26952fb857eccd1a472c94e8a1cbea60b3a3048040",
+            "quote": "Molten Ventures is a leading venture capital firm with a twenty year track record of investing in high-growth private technology companies across Europe.",
+            "quote_hash": "25fb3ef6850872725c2a9243c3e57fbc12cf27212f07fe804fc2cc93a0a2c00b"
+          },
+          {
+            "source_id": "molten_portfolio",
+            "source_url": "https://www.moltenventures.com/portfolio/all",
+            "source_title": "Portfolio | Molten Ventures",
+            "source_content_hash": "0a799818ae5c0c9a6fa50fb80e793ab0027b3c18bc5b5f1364ff30787395c0b5",
+            "quote": "ICEYE operates the world’s largest synthetic aperture radar (SAR) satellite constellation … Invested In 2018",
+            "quote_hash": "f18610189ae377f6a1a3172a88d6ebd22ce1573fbb76c3ca7e0f191269907f04"
+          },
+          {
+            "source_id": "molten_contact",
+            "source_url": "https://www.moltenventures.com/contact",
+            "source_title": "Contact | Molten Ventures",
+            "source_content_hash": "38f196789dc0c4bbbdff91ccb1de11916d0369a058fab6334a330caaaba30216",
+            "quote": "Send us your pitch deck and tell us how you’re shaping the future of technology.",
+            "quote_hash": "74ba8e5f927849eaedbc3202d6ca4523dceeebbedbe7ee001ce301471776494b"
+          },
+          {
+            "source_id": "molten_scale",
+            "source_url": "https://investors.moltenventures.com/about-molten",
+            "source_title": "About Molten Ventures Plc",
+            "source_content_hash": "0da7e1bd16f677fa2a61cf26952fb857eccd1a472c94e8a1cbea60b3a3048040",
+            "quote": "over 100 companies currently",
+            "quote_hash": "eff08975b250aa4ea4f761189bf0fbd33186e74af3a39e510aa226d5d1995eda"
+          },
+          {
+            "source_id": "molten_stage",
+            "source_url": "https://investors.moltenventures.com/about-molten",
+            "source_title": "About Molten Ventures Plc",
+            "source_content_hash": "0da7e1bd16f677fa2a61cf26952fb857eccd1a472c94e8a1cbea60b3a3048040",
+            "quote": "We typically invest at the Series A and B stages where there is demonstrable value through proven demand.",
+            "quote_hash": "5db82ae82f63b659bfab7bf7d2ecfe1b3a6c89773d159679660ee6e74e6fd444"
+          },
+          {
+            "source_id": "molten_sectors",
+            "source_url": "https://investors.moltenventures.com/about-molten",
+            "source_title": "About Molten Ventures Plc",
+            "source_content_hash": "0da7e1bd16f677fa2a61cf26952fb857eccd1a472c94e8a1cbea60b3a3048040",
+            "quote": "Fintech; Climate Tech; Space Tech; and AI.",
+            "quote_hash": "3842a20e16e441534887a5301bbb60abcb5e42df73aa1553a55a4c39297b92aa"
+          },
+          {
+            "source_id": "molten_reinvest",
+            "source_url": "https://investors.moltenventures.com/about-molten",
+            "source_title": "About Molten Ventures Plc",
+            "source_content_hash": "0da7e1bd16f677fa2a61cf26952fb857eccd1a472c94e8a1cbea60b3a3048040",
+            "quote": "Returns are then reinvested to create ongoing growth and value creation.",
+            "quote_hash": "e8e2b196c74d88dcab4bcb03104dc3a8acae201eb983815434427e4f9ed39348"
+          },
+          {
+            "source_id": "molten_track",
+            "source_url": "https://investors.moltenventures.com/about-molten",
+            "source_title": "About Molten Ventures Plc",
+            "source_content_hash": "0da7e1bd16f677fa2a61cf26952fb857eccd1a472c94e8a1cbea60b3a3048040",
+            "quote": "We have backed some very notable names from early days to market leading positions.",
+            "quote_hash": "d240e29c77948edd89e4c2b8e797ba7e2f9e3b30217c5c3cb8cc1914e7e6bd97"
+          },
+          {
+            "source_id": "molten_contact_office",
+            "source_url": "https://www.moltenventures.com/contact",
+            "source_title": "Get in Touch | Contact Molten Ventures",
+            "source_content_hash": "38f196789dc0c4bbbdff91ccb1de11916d0369a058fab6334a330caaaba30216",
+            "quote": "London Office 20 Garrick Street, London WC2E 9BT +44 (0) 20 7931 8800",
+            "quote_hash": "580e8b9ef501a4decc0046e838e0c7d76d9dce1faa4ee75635752a3c0d342072"
+          },
+          {
+            "source_id": "molten_contact_dublin",
+            "source_url": "https://www.moltenventures.com/contact",
+            "source_title": "Get in Touch | Contact Molten Ventures",
+            "source_content_hash": "38f196789dc0c4bbbdff91ccb1de11916d0369a058fab6334a330caaaba30216",
+            "quote": "Dublin Office The Merrion Buildings, 18-20 Merrion Street, Dublin D02 XH98",
+            "quote_hash": "b67ea9814d05bde38e9304b13027d38ebb70f52cdcb1936271ecbbca8f948877"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27"
       }
     },
     {
@@ -132942,18 +133099,81 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Mubadala Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "coverage_note": "资产规模按官网合并口径和 2026-06-30 截止日呈现，其中包含 CI Financial、Corient 等关联业务。Crusoe 融资金额是公司轮次总额，不是 Mubadala Capital 的单笔出资；活动样本不代表完整组合或整体业绩。联系方式仅取官网公开的阿布扎比办公室。",
+        "summary": "Mubadala Capital 是具有主权股东背景的全球另类资产管理平台，业务覆盖私募股权、巴西特殊机会、信贷、解决方案和风险投资。官网披露，截至 2026-06-30，其平台及相关业务合计管理、顾问和行政管理资产超过 7550 亿美元；该口径包含 CI Financial、Corient 等业务，并非单体 Mubadala Capital AUM。",
+        "facts": [
+          {
+            "field": "platform",
+            "label": "机构定位",
+            "value": "全球另类资产管理平台，投资多个资产类别和地区；官网称其背后具有主权所有权背景。",
+            "source_id": "mubadala_ownership"
+          },
+          {
+            "field": "strategies",
+            "label": "投资策略",
+            "value": [
+              "私募股权",
+              "巴西特殊机会",
+              "信贷",
+              "解决方案",
+              "风险投资"
+            ],
+            "source_id": "mubadala_home"
+          },
+          {
+            "field": "assets_managed_advised_administered",
+            "label": "管理、顾问及行政管理资产",
+            "value": "官网披露平台管理、顾问和行政管理资产超过 7550 亿美元，截至 2026-06-30。",
+            "source_id": "mubadala_scale"
+          },
+          {
+            "field": "offices",
+            "label": "官网列示办公室",
+            "value": [
+              "阿布扎比",
+              "伦敦",
+              "纽约",
+              "里约热内卢",
+              "旧金山"
+            ],
+            "source_id": "mubadala_home"
+          },
+          {
+            "field": "assets_scope",
+            "label": "规模统计口径",
+            "value": "该数字包含 Mubadala Capital Alternative Investments、Abu Dhabi Catalyst Partners、CI Financial、Corient 及关联业务，不代表单体 AUM。",
+            "source_id": "mubadala_scope"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：Crusoe · F轮 · 2026-09-17 · 本轮联合领投 · $3.9B。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "本库记录：Crusoe 于 2026-09-17 完成 F 轮融资，Mubadala Capital 为联合领投方之一；3.9 billion 美元为公司本轮总额，单家投资者出资额未披露。",
             "source_id": "FISRC-5fc65e3f4fb1b347"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "Mubadala Capital",
+            "url": "https://www.mubadalacapital.ae/",
+            "source_id": "mubadala_home"
+          },
+          {
+            "kind": "address",
+            "label": "阿布扎比办公室",
+            "value": "Al Maryah Island, Al Sila Tower, 13th floor, Abu Dhabi, UAE",
+            "source_id": "mubadala_home"
+          },
+          {
+            "kind": "phone",
+            "label": "阿布扎比办公室电话",
+            "value": "+971 2 2361000",
+            "source_id": "mubadala_home"
+          }
+        ],
         "sources": [
           {
             "source_id": "FISRC-5fc65e3f4fb1b347",
@@ -132962,9 +133182,41 @@
             "source_content_hash": "a5d809d221408d5b",
             "quote": "The latest financing round was co-led by a powerhouse consortium of financial and strategic heavyweights: Atreides Management , Mubadala Capital , and Valor Equity Partners .",
             "quote_hash": "832326ba36c3882371b66633ca7e475b4a2091c8b2e568a29eacf4bc6ec42202"
+          },
+          {
+            "source_id": "mubadala_home",
+            "source_url": "https://www.mubadalacapital.ae/",
+            "source_title": "Mubadala Capital | Global Alternative Asset Management",
+            "source_content_hash": "714b91964fa9c3e87994d5015d461a8a310136a3903e07dea771548a9fb21000",
+            "quote": "Mubadala Capital is a global alternative asset management platform investing across multiple asset classes and geographies.",
+            "quote_hash": "8cda034e3bcb429893f2dc27b499ef2f641ce5f97f11ffde4ec1a38b9e207c8d"
+          },
+          {
+            "source_id": "mubadala_scale",
+            "source_url": "https://www.mubadalacapital.ae/",
+            "source_title": "Mubadala Capital | Global Alternative Asset Management",
+            "source_content_hash": "714b91964fa9c3e87994d5015d461a8a310136a3903e07dea771548a9fb21000",
+            "quote": "$755bn+ In assets managed, advised and administered¹",
+            "quote_hash": "397793a7f1af9c757a6faef7569fbcb369fd967d703de99fc077715e441809cc"
+          },
+          {
+            "source_id": "mubadala_ownership",
+            "source_url": "https://www.mubadalacapital.ae/",
+            "source_title": "Mubadala Capital | Global Alternative Asset Management",
+            "source_content_hash": "714b91964fa9c3e87994d5015d461a8a310136a3903e07dea771548a9fb21000",
+            "quote": "Mubadala Capital combines the scale and stability of sovereign ownership with the agility and focus of a performance-driven global investment firm.",
+            "quote_hash": "6d5d47ac170c093d54e330a0ebe5cf0e2a95212e8215de1fb1b267d5f6b3d8dd"
+          },
+          {
+            "source_id": "mubadala_scope",
+            "source_url": "https://www.mubadalacapital.ae/",
+            "source_title": "Mubadala Capital | Global Alternative Asset Management",
+            "source_content_hash": "714b91964fa9c3e87994d5015d461a8a310136a3903e07dea771548a9fb21000",
+            "quote": "assets managed, advised and administered by CI Financial Corp and Corient Holding, LP, and their affiliates.",
+            "quote_hash": "6e4c1940db075bf3cc8f9adcd829a7d2de27f71753c726ad9937970a3ff124b0"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27"
       }
     },
     {
@@ -165556,18 +165808,59 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Microsoft Corp 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
-        "track_record": [
+        "coverage_status": "researched",
+        "coverage_note": "2025 年的“至多 50 亿美元”是微软官方宣布的投资承诺上限，不应表述为已全部完成出资。Anthropic G 轮总额不等于微软投入金额。M12 是微软支持的风险投资组织，官网记录其早期名称和更名历史；M12 的组合规模和退出数据未计入 Microsoft Corp 档案。",
+        "summary": "Microsoft Corp 作为企业战略投资方出现在融资披露中。微软 2025 年宣布与 Anthropic 扩大合作，并承诺投资至多 50 亿美元；后续融资报道将 Microsoft Corp 列为 Anthropic G 轮参与方，但没有披露微软单独出资额。其企业风险投资组织 M12 与 Microsoft Corp 的直接投资分别记录。",
+        "facts": [
           {
-            "description": "融资来源记录：Anthropic · G轮 · 2026-08-10 · 本轮参投 · $30 billion。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-077b1124fc8e9581"
+            "field": "corporate_investment",
+            "label": "企业战略投资",
+            "value": "微软于 2025-11 宣布，在扩大与 Anthropic 的合作安排中承诺投资至多 50 亿美元；官方公告没有把上限表述为实际已出资金额。",
+            "source_id": "microsoft_anthropic_2025"
+          },
+          {
+            "field": "venture_arm_distinction",
+            "label": "企业风投组织说明",
+            "value": "M12 官网称其使命是通过投资、洞察和与微软的合作加速技术发展；其投资组合数据与 Microsoft Corp 直接投资分别统计。",
+            "source_id": "m12_mission"
           }
         ],
-        "contacts": [],
+        "milestones": [
+          {
+            "date": "2016",
+            "description": "M12 官网将 Microsoft Ventures 的成立年份列为 2016。",
+            "source_id": "m12_history"
+          },
+          {
+            "date": "2018",
+            "description": "M12 官网记载 Microsoft Ventures 于 2018 年更名为 M12。",
+            "source_id": "m12_rename"
+          },
+          {
+            "date": "2025-11-18",
+            "description": "微软宣布与 Anthropic、NVIDIA 建立战略合作，并承诺投资至多 50 亿美元；这是官方宣布的承诺上限。",
+            "source_id": "microsoft_anthropic_2025"
+          }
+        ],
+        "track_record": [
+          {
+            "description": "2026-08-10 的 Anthropic G 轮披露将 Microsoft Corp 列为参与方；该轮总额为 300 亿美元，未披露微软单独出资额。",
+            "source_id": "FISRC-077b1124fc8e9581"
+          },
+          {
+            "description": "2025 年微软官方宣布承诺向 Anthropic 投资至多 50 亿美元，作为更广泛战略合作的一部分；这是上限承诺，不是已确认实际出资额。",
+            "source_id": "microsoft_anthropic_2025"
+          }
+        ],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "微软官方网站",
+            "value": "Microsoft",
+            "url": "https://www.microsoft.com/",
+            "source_id": "microsoft_anthropic_2025"
+          }
+        ],
         "sources": [
           {
             "source_id": "FISRC-077b1124fc8e9581",
@@ -165576,9 +165869,41 @@
             "source_content_hash": "7ff9bbd6aca29214",
             "quote": "along with participation from a who’s who of other investors, from Sequoia Capital and Lightspeed Venture Partners to Big Tech firms Nvidia Corp and Microsoft Corp.",
             "quote_hash": "f9050f59785f6003fc0699c9f5dcec1c1613171131640d36bc3ece33945c5d82"
+          },
+          {
+            "source_id": "microsoft_anthropic_2025",
+            "source_url": "https://blogs.microsoft.com/blog/2025/11/18/microsoft-nvidia-and-anthropic-announce-strategic-partnerships/",
+            "source_title": "Microsoft, NVIDIA and Anthropic announce strategic partnerships | The Official Microsoft Blog",
+            "source_content_hash": "32203fccf3f98a2982da9bf7ee5def2f3e4e37664c1b35ca1adcd6fa2b1ff8c1",
+            "quote": "As part of the partnership, NVIDIA and Microsoft are committing to invest up to $10 billion and up to $5 billion respectively in Anthropic.",
+            "quote_hash": "453acb0eb87f9cc756945e7414bcd211a23f86e8e58844eefab9f3c069f3679b"
+          },
+          {
+            "source_id": "m12_history",
+            "source_url": "https://m12.vc/who-we-are/",
+            "source_title": "Who we are | M12",
+            "source_content_hash": "28c68cb4a704d3cc5a4ad01399aba2ab031b76c50eeef79532626b82cc3caa2f",
+            "quote": "Microsoft Ventures is born.",
+            "quote_hash": "182771940f15c27a1ef436de913f8926177169594d7b2250021f2bd85b4649ff"
+          },
+          {
+            "source_id": "m12_rename",
+            "source_url": "https://m12.vc/who-we-are/",
+            "source_title": "Who we are | M12",
+            "source_content_hash": "28c68cb4a704d3cc5a4ad01399aba2ab031b76c50eeef79532626b82cc3caa2f",
+            "quote": "Microsoft Ventures becomes M12",
+            "quote_hash": "502f2e9fea6e2d70910c20ca53c6f48f1ee14a4b299bd344d101a2fe33287c06"
+          },
+          {
+            "source_id": "m12_mission",
+            "source_url": "https://m12.vc/who-we-are/",
+            "source_title": "Who we are | M12",
+            "source_content_hash": "28c68cb4a704d3cc5a4ad01399aba2ab031b76c50eeef79532626b82cc3caa2f",
+            "quote": "Accelerate the future of technology through investments, insights, and meaningful partnership with Microsoft.",
+            "quote_hash": "1bac7756363152e52db7879fb20650e0f94f7f0e0401c3fb5ab82460df146f35"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27"
       }
     },
     {
@@ -246366,18 +246691,45 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Meritech Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "coverage_note": "官网的 200+ 投资及 60+ IPO 数据为机构自报累计口径，官网未在该页面提供计算方法或基金回报数据。Avoca AI 的 1.25 亿美元以上为公司 B 轮总额，并非 Meritech Capital 单笔出资。已核验官方联系方式限于官网。",
+        "summary": "Meritech Capital 是与科技公司合作的投资机构，官网将其描述为小型、平等合伙制，强调低投资数量和高确信度，并由合伙人直接支持创业公司。官网自报自 1999 年以来在 200 多项投资中对应 60 多家 IPO；这些是机构披露的累计数据，不等同于基金回报率。",
+        "facts": [
+          {
+            "field": "organization_type",
+            "label": "机构定位",
+            "value": "科技投资机构，官网称其采用小型平等合伙制。",
+            "source_id": "meritech_home"
+          },
+          {
+            "field": "investment_approach",
+            "label": "投资方式",
+            "value": "官网强调低投资数量、高确信度，合伙人直接参与并与创业者建立长期关系。",
+            "source_id": "meritech_home"
+          },
+          {
+            "field": "self_reported_track_record",
+            "label": "官网自报累计记录",
+            "value": "自 1999 年以来在 200 多项投资中对应 60 多家 IPO；为机构自报数据，不代表基金收益率。",
+            "source_id": "meritech_home"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：Avoca AI · 多轮融资 · 2026-04-27 · B轮领投 · 超过1.25亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "Avoca AI 于 2026-04-27 公布超过 1.25 亿美元 B 轮融资，来源称本轮由 Meritech 与 General Catalyst 领投；披露金额为公司融资总额，Meritech 单笔出资未披露。",
             "source_id": "FISRC-ce3d5e20846f6f71"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "Meritech Capital",
+            "url": "https://www.meritechcapital.com/",
+            "source_id": "meritech_home"
+          }
+        ],
         "sources": [
           {
             "source_id": "FISRC-ce3d5e20846f6f71",
@@ -246386,9 +246738,25 @@
             "source_content_hash": "3fe3680f5835b8e221f8fb86df7befe7d39650d543b3c9aca986695aedac8491",
             "quote": "The Series B funding was led by Meritech and General Catalyst",
             "quote_hash": "bcb53c848d1b78b1efb58f1af73eaaa779195c1267261467e6639c004498f612"
+          },
+          {
+            "source_id": "meritech_home",
+            "source_url": "https://www.meritechcapital.com/",
+            "source_title": "Meritech Capital",
+            "source_content_hash": "e4379d11cb353ea2375bbd49cbaf5d31c8754813c951bc6c8caf22f162db7c24",
+            "quote": "Meritech is an investment firm that partners with companies redefining their markets through technology.",
+            "quote_hash": "39657e7af32029ab834dc7bf4a110170d0ba84ed5c5a75305f41e800ab8f8220"
+          },
+          {
+            "source_id": "meritech_record",
+            "source_url": "https://www.meritechcapital.com/",
+            "source_title": "Meritech Capital",
+            "source_content_hash": "e4379d11cb353ea2375bbd49cbaf5d31c8754813c951bc6c8caf22f162db7c24",
+            "quote": "60+ IPOs across 200+ investments since 1999.",
+            "quote_hash": "8369f5e4d49dbdb68541ef8c1312168378337b0ddd8a7a179f076cdbda41f878"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27"
       }
     },
     {

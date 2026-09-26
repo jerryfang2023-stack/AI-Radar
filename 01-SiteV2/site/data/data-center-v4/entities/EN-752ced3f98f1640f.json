@@ -99,8 +99,16 @@
       }
     ],
     "public_profile": {
-      "summary": "Andrej Karpathy 是 AI 研究者与教育者，曾为 OpenAI 创始成员、Tesla AI 负责人及 Stanford 深度学习课程主讲者。",
+      "summary": "Andrej Karpathy 是 AI 研究者与教育者，曾任 OpenAI 创始成员和 Tesla AI 负责人，负责 Autopilot 计算机视觉团队；此后回到 OpenAI 从事训练数据研究，并创办 AI 教育项目 Eureka Labs。",
+      "coverage_status": "researched",
+      "identity_status": "verified",
+      "coverage_note": "本人官网公开时间线最新分组为 2024 年起，本档案据此记录 AI 教育和 Eureka Labs 项目；未从公开页面推断其 2026 年后的新增任职。学历、CS231n 教学规模及实习经历均来自本人公开简历。",
       "current_roles": [
+        {
+          "title": "创办人",
+          "organization": "Eureka Labs",
+          "source_id": "karpathy_eureka"
+        },
         {
           "title": "AI 研究者与教育者",
           "organization": "独立研究与教育工作",
@@ -109,59 +117,189 @@
       ],
       "career": [
         {
+          "organization": "Eureka Labs",
+          "title": "创办人",
+          "period": "2024–；本人官网作为当前时间线列示",
+          "description": "发起 AI 教育公司，建设 AI-native 学校与课程项目。",
+          "source_id": "karpathy_eureka"
+        },
+        {
           "organization": "OpenAI",
-          "title": "创始成员",
-          "period": "本人履历所述历史经历；任期未列明",
-          "description": "个人网站列为 OpenAI founding member。",
-          "source_id": "karpathy_site"
+          "title": "研究团队负责人（midtraining 与合成数据）",
+          "period": "2023–2024",
+          "description": "本人时间线称其回到 OpenAI，组建团队从事 midtraining 与合成数据生成。",
+          "source_id": "karpathy_openai_2023"
         },
         {
           "organization": "Tesla",
-          "title": "AI 负责人",
-          "period": "本人履历所述历史经历；任期未列明",
-          "description": "领导 Autopilot 计算机视觉团队。",
-          "source_id": "karpathy_site"
+          "title": "AI 总监",
+          "period": "2017–2022",
+          "description": "领导 Tesla Autopilot 计算机视觉团队，负责数据标注、模型训练与部署。",
+          "source_id": "karpathy_timeline"
+        },
+        {
+          "organization": "OpenAI",
+          "title": "研究科学家、创始成员",
+          "period": "2015–2017",
+          "description": "本人时间线披露其作为研究科学家和创始成员加入 OpenAI。",
+          "source_id": "karpathy_openai_2015"
+        },
+        {
+          "organization": "DeepMind",
+          "title": "深度强化学习团队实习生",
+          "period": "2015",
+          "description": "本人官网列出其在 DeepMind 深度强化学习团队实习。",
+          "source_id": "karpathy_deepmind"
         },
         {
           "organization": "Stanford University",
-          "title": "深度学习课程架构者与主讲教师",
-          "period": "博士期间；具体年份未写于简介",
-          "description": "主导 CS231n 课程。",
-          "source_id": "karpathy_site"
+          "title": "CS231n 课程架构者与主讲教师",
+          "period": "2015 年起；博士期间",
+          "description": "设计并主讲卷积神经网络视觉识别课程。",
+          "source_id": "karpathy_cs231n"
+        },
+        {
+          "organization": "Google Research",
+          "title": "大规模监督学习研究实习生",
+          "period": "2013",
+          "description": "本人官网称其研究 YouTube 视频的大规模监督学习。",
+          "source_id": "karpathy_google"
+        },
+        {
+          "organization": "Google Brain",
+          "title": "无监督学习研究实习生",
+          "period": "2011",
+          "description": "本人官网称其研究视频的大规模无监督学习。",
+          "source_id": "karpathy_google"
         }
       ],
       "education": [
         {
           "institution": "Stanford University",
-          "qualification": "计算机科学博士",
-          "source_id": "karpathy_site"
+          "qualification": "计算机科学博士，2011–2015；导师 Fei-Fei Li（Stanford Vision Lab）",
+          "source_id": "karpathy_phd"
         },
         {
           "institution": "University of British Columbia",
-          "qualification": "理学硕士",
-          "source_id": "karpathy_site"
+          "qualification": "理学硕士，2009–2011；研究物理模拟人物的学习控制器",
+          "source_id": "karpathy_msc"
         },
         {
           "institution": "University of Toronto",
-          "qualification": "计算机科学与物理学双专业理学学士、数学辅修",
-          "source_id": "karpathy_site"
+          "qualification": "理学学士，2005–2009；计算机科学与物理学双专业、数学辅修",
+          "source_id": "karpathy_education"
         }
       ],
-      "experience_summary": "本人网站记录其 AI 研究、计算机视觉、深度学习教学与教育内容经历。",
-      "track_record": [],
+      "experience_summary": "经历涵盖深度学习研究、自动驾驶计算机视觉、模型训练、科研实习与高校课程设计；当前公开项目包括 AI 教育和线上课程。",
+      "track_record": [
+        {
+          "description": "本人官网称其设计并主讲 Stanford CS231n；课程招生人数由 2015 年的 150 人增加至 2016 年 330 人、2017 年 750 人。",
+          "source_id": "karpathy_cs231n"
+        },
+        {
+          "description": "Eureka Labs 官网介绍其 AI-native 学校方向，首个课程项目为 LLM101n。",
+          "source_id": "eureka_site"
+        }
+      ],
       "sources": [
         {
           "source_id": "karpathy_site",
           "source_url": "https://karpathy.ai/",
           "source_title": "Andrej Karpathy",
           "source_content_hash": "0c583717e0208480e7cf0a2560ed75479acb1b18a251070e5541657205be141d",
-          "quote": "Andrej Karpathy is an AI researcher and educator. He was a founding member of OpenAI and later the Director of AI at Tesla, where he led the computer vision team of the Autopilot. During his PhD at Stanford he was the architect and lead instructor of the first deep learning course at Stanford (CS231n). He received an MSc at the University of British Columbia and a BSc at the University of Toronto.",
-          "quote_hash": "82c7e81c5da1eceafba18fe55d928c3a9f4371f4d77505f0a25c8eda520590a0"
+          "quote": "Andrej Karpathy is an AI researcher and educator. He was a founding member of OpenAI.",
+          "quote_hash": "c0e737cca79844ff43dc6c000654368d435517bb905277b1287c6e71d622a240"
+        },
+        {
+          "source_id": "karpathy_timeline",
+          "source_url": "https://karpathy.ai/",
+          "source_title": "Andrej Karpathy",
+          "source_content_hash": "0c583717e0208480e7cf0a2560ed75479acb1b18a251070e5541657205be141d",
+          "quote": "2017 - 2022 I was the Director of AI at Tesla, where I led the computer vision team of Tesla Autopilot.",
+          "quote_hash": "4c289d1b6e70c0d0a4e71bbc50702c6dbccb2bc30f8570c3b9d13f9c295425b0"
+        },
+        {
+          "source_id": "karpathy_eureka",
+          "source_url": "https://karpathy.ai/",
+          "source_title": "Andrej Karpathy",
+          "source_content_hash": "0c583717e0208480e7cf0a2560ed75479acb1b18a251070e5541657205be141d",
+          "quote": "I started Eureka Labs, an AI+Education company.",
+          "quote_hash": "dceb174f33d79577a0463df63a4b11128ba4f5a08791671686511d2866cc7b4c"
+        },
+        {
+          "source_id": "eureka_site",
+          "source_url": "https://eurekalabs.ai/",
+          "source_title": "Introducing Eureka Labs",
+          "source_content_hash": "7dd89cb3e0861d67064f65092e83ea55aec59ac89665f2ba77337437210747eb",
+          "quote": "We are Eureka Labs and we are building a new kind of school that is AI native.",
+          "quote_hash": "b1ffc9f2aa5eae572e6bf6e786d2efd7ab8e613407ae58f61ed3a48209ce0415"
+        },
+        {
+          "source_id": "karpathy_openai_2015",
+          "source_url": "https://karpathy.ai/",
+          "source_title": "Andrej Karpathy",
+          "source_content_hash": "0c583717e0208480e7cf0a2560ed75479acb1b18a251070e5541657205be141d",
+          "quote": "2015 - 2017 I was a research scientist and a founding member at OpenAI.",
+          "quote_hash": "c9ac1428f1b6469c3178e6490d2003574a9881276d09753b4007dbb0d48a363c"
+        },
+        {
+          "source_id": "karpathy_openai_2023",
+          "source_url": "https://karpathy.ai/",
+          "source_title": "Andrej Karpathy",
+          "source_content_hash": "0c583717e0208480e7cf0a2560ed75479acb1b18a251070e5541657205be141d",
+          "quote": "2023 - 2024 I came back to OpenAI where I built a new team working on midtraining and synthetic data generation.",
+          "quote_hash": "59fb27e27639c99192ebd09f45b9f6f2b3d2c9d9e953b7fadb23a80190c59409"
+        },
+        {
+          "source_id": "karpathy_education",
+          "source_url": "https://karpathy.ai/",
+          "source_title": "Andrej Karpathy",
+          "source_content_hash": "0c583717e0208480e7cf0a2560ed75479acb1b18a251070e5541657205be141d",
+          "quote": "2005 - 2009 BSc at the University of Toronto with a double major in computer science and physics and a minor in math.",
+          "quote_hash": "4545d867d82b59fe954be2b911dacb9457781c00200f0ad29056a4316e1e1a30"
+        },
+        {
+          "source_id": "karpathy_phd",
+          "source_url": "https://karpathy.ai/",
+          "source_title": "Andrej Karpathy",
+          "source_content_hash": "0c583717e0208480e7cf0a2560ed75479acb1b18a251070e5541657205be141d",
+          "quote": "My adviser was Fei-Fei Li at the Stanford Vision Lab.",
+          "quote_hash": "9b6169cfcb10965e4caa70bbf797dd902470b8e67ec424dd3445aebaeab5bc77"
+        },
+        {
+          "source_id": "karpathy_msc",
+          "source_url": "https://karpathy.ai/",
+          "source_title": "Andrej Karpathy",
+          "source_content_hash": "0c583717e0208480e7cf0a2560ed75479acb1b18a251070e5541657205be141d",
+          "quote": "2009 - 2011 MSc at the University of British Columbia where I worked with Michiel van de Panne",
+          "quote_hash": "b39605da0f9fbbe1cd6891164c2813d7a52a50fa4f5a9b948dbba2d23191b9a3"
+        },
+        {
+          "source_id": "karpathy_cs231n",
+          "source_url": "https://karpathy.ai/",
+          "source_title": "Andrej Karpathy",
+          "source_content_hash": "0c583717e0208480e7cf0a2560ed75479acb1b18a251070e5541657205be141d",
+          "quote": "150 enrolled in 2015 to 330 students in 2016, and 750 students in 2017.",
+          "quote_hash": "f70112b449fbeb0ac41b1e3b5c6a8b577b0ac4130e32a9eab181f405e7c5763e"
+        },
+        {
+          "source_id": "karpathy_google",
+          "source_url": "https://karpathy.ai/",
+          "source_title": "Andrej Karpathy",
+          "source_content_hash": "0c583717e0208480e7cf0a2560ed75479acb1b18a251070e5541657205be141d",
+          "quote": "I squeezed in 3 internships at (baby) Google Brain in 2011 … Google Research in 2013.",
+          "quote_hash": "1221df3c8a4e83f649eccc47663af4affe5f485b178c0e249da6dab3f0cc5bfc"
+        },
+        {
+          "source_id": "karpathy_deepmind",
+          "source_url": "https://karpathy.ai/",
+          "source_title": "Andrej Karpathy",
+          "source_content_hash": "0c583717e0208480e7cf0a2560ed75479acb1b18a251070e5541657205be141d",
+          "quote": "DeepMind in 2015 working on the deep reinforcement learning team.",
+          "quote_hash": "f4bb57ab491db13e08079ddcc76ff9825684761428eaf8d7f7ab28da667d49c1"
         }
       ],
-      "last_verified_at": "2026-09-25",
-      "coverage_status": "researched",
-      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
+      "last_verified_at": "2026-09-27"
     },
     "translations": {
       "zh-CN": {

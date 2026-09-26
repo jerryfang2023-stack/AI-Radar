@@ -140,18 +140,81 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Mubadala Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "资产规模按官网合并口径和 2026-06-30 截止日呈现，其中包含 CI Financial、Corient 等关联业务。Crusoe 融资金额是公司轮次总额，不是 Mubadala Capital 的单笔出资；活动样本不代表完整组合或整体业绩。联系方式仅取官网公开的阿布扎比办公室。",
+      "summary": "Mubadala Capital 是具有主权股东背景的全球另类资产管理平台，业务覆盖私募股权、巴西特殊机会、信贷、解决方案和风险投资。官网披露，截至 2026-06-30，其平台及相关业务合计管理、顾问和行政管理资产超过 7550 亿美元；该口径包含 CI Financial、Corient 等业务，并非单体 Mubadala Capital AUM。",
+      "facts": [
+        {
+          "field": "platform",
+          "label": "机构定位",
+          "value": "全球另类资产管理平台，投资多个资产类别和地区；官网称其背后具有主权所有权背景。",
+          "source_id": "mubadala_ownership"
+        },
+        {
+          "field": "strategies",
+          "label": "投资策略",
+          "value": [
+            "私募股权",
+            "巴西特殊机会",
+            "信贷",
+            "解决方案",
+            "风险投资"
+          ],
+          "source_id": "mubadala_home"
+        },
+        {
+          "field": "assets_managed_advised_administered",
+          "label": "管理、顾问及行政管理资产",
+          "value": "官网披露平台管理、顾问和行政管理资产超过 7550 亿美元，截至 2026-06-30。",
+          "source_id": "mubadala_scale"
+        },
+        {
+          "field": "offices",
+          "label": "官网列示办公室",
+          "value": [
+            "阿布扎比",
+            "伦敦",
+            "纽约",
+            "里约热内卢",
+            "旧金山"
+          ],
+          "source_id": "mubadala_home"
+        },
+        {
+          "field": "assets_scope",
+          "label": "规模统计口径",
+          "value": "该数字包含 Mubadala Capital Alternative Investments、Abu Dhabi Catalyst Partners、CI Financial、Corient 及关联业务，不代表单体 AUM。",
+          "source_id": "mubadala_scope"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Crusoe · F轮 · 2026-09-17 · 本轮联合领投 · $3.9B。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "本库记录：Crusoe 于 2026-09-17 完成 F 轮融资，Mubadala Capital 为联合领投方之一；3.9 billion 美元为公司本轮总额，单家投资者出资额未披露。",
           "source_id": "FISRC-5fc65e3f4fb1b347"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Mubadala Capital",
+          "url": "https://www.mubadalacapital.ae/",
+          "source_id": "mubadala_home"
+        },
+        {
+          "kind": "address",
+          "label": "阿布扎比办公室",
+          "value": "Al Maryah Island, Al Sila Tower, 13th floor, Abu Dhabi, UAE",
+          "source_id": "mubadala_home"
+        },
+        {
+          "kind": "phone",
+          "label": "阿布扎比办公室电话",
+          "value": "+971 2 2361000",
+          "source_id": "mubadala_home"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-5fc65e3f4fb1b347",
@@ -160,9 +223,41 @@
           "source_content_hash": "a5d809d221408d5b",
           "quote": "The latest financing round was co-led by a powerhouse consortium of financial and strategic heavyweights: Atreides Management , Mubadala Capital , and Valor Equity Partners .",
           "quote_hash": "832326ba36c3882371b66633ca7e475b4a2091c8b2e568a29eacf4bc6ec42202"
+        },
+        {
+          "source_id": "mubadala_home",
+          "source_url": "https://www.mubadalacapital.ae/",
+          "source_title": "Mubadala Capital | Global Alternative Asset Management",
+          "source_content_hash": "714b91964fa9c3e87994d5015d461a8a310136a3903e07dea771548a9fb21000",
+          "quote": "Mubadala Capital is a global alternative asset management platform investing across multiple asset classes and geographies.",
+          "quote_hash": "8cda034e3bcb429893f2dc27b499ef2f641ce5f97f11ffde4ec1a38b9e207c8d"
+        },
+        {
+          "source_id": "mubadala_scale",
+          "source_url": "https://www.mubadalacapital.ae/",
+          "source_title": "Mubadala Capital | Global Alternative Asset Management",
+          "source_content_hash": "714b91964fa9c3e87994d5015d461a8a310136a3903e07dea771548a9fb21000",
+          "quote": "$755bn+ In assets managed, advised and administered¹",
+          "quote_hash": "397793a7f1af9c757a6faef7569fbcb369fd967d703de99fc077715e441809cc"
+        },
+        {
+          "source_id": "mubadala_ownership",
+          "source_url": "https://www.mubadalacapital.ae/",
+          "source_title": "Mubadala Capital | Global Alternative Asset Management",
+          "source_content_hash": "714b91964fa9c3e87994d5015d461a8a310136a3903e07dea771548a9fb21000",
+          "quote": "Mubadala Capital combines the scale and stability of sovereign ownership with the agility and focus of a performance-driven global investment firm.",
+          "quote_hash": "6d5d47ac170c093d54e330a0ebe5cf0e2a95212e8215de1fb1b267d5f6b3d8dd"
+        },
+        {
+          "source_id": "mubadala_scope",
+          "source_url": "https://www.mubadalacapital.ae/",
+          "source_title": "Mubadala Capital | Global Alternative Asset Management",
+          "source_content_hash": "714b91964fa9c3e87994d5015d461a8a310136a3903e07dea771548a9fb21000",
+          "quote": "assets managed, advised and administered by CI Financial Corp and Corient Holding, LP, and their affiliates.",
+          "quote_hash": "6e4c1940db075bf3cc8f9adcd829a7d2de27f71753c726ad9937970a3ff124b0"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }
