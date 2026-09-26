@@ -4,6 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
+import { resolvePrivateEvidenceBackupRoot } from "./private-evidence-backup-paths.mjs";
 import { deepSeekJsonCompletion, deepSeekModels, sourceTextHash } from "./deepseek-translation-client.mjs";
 import {
   FUNDING_INDUSTRY_IDS,
@@ -56,6 +57,22 @@ const concurrency = Math.max(1, Math.min(4, Number(args.get("concurrency") || 2)
 const output = path.resolve(args.get("output")
   || path.join(root, "01-SiteV2/content/12-applications/funding-insights", `${date}.json`));
 const model = deepSeekModels().pro;
+
+// Explicit operator discovery can replace unavailable search APIs. Seeds are
+// URL metadata only: capturePage must still fetch the original, and all normal
+// identity, exact-quote, source-count and publication gates remain in force.
+export function reviewedResearchSeeds(manifest, event, company) {
+  if (!manifest || manifest.schema_version !== "FUNDING-RESEARCH-SEEDS-V1") throw new Error("invalid_research_seed_manifest");
+  const entry = manifest.events?.find((row) => row.event_id === event.event_id);
+  if (!entry || entry.company_name !== company.canonical_name) throw new Error("research_seed_identity_mismatch");
+  if (!entry.discovery_provider || !entry.queries?.length) throw new Error("research_seed_discovery_missing");
+  const seen = new Set();
+  return (entry.sources || []).map((source) => {
+    const url = new URL(source.url);
+    if (url.protocol !== "https:" || url.username || url.password || /^(?:localhost|127\.|10\.|192\.168\.|169\.254\.|\[)/u.test(url.hostname)) throw new Error("invalid_research_seed_url");
+    return { url: url.href, title: clean(source.title), provider: entry.discovery_provider, provider_body: "", source_class: "independent", intent: "funding", query: entry.queries.join("; ") };
+  }).filter((source) => !seen.has(source.url) && seen.add(source.url));
+}
 
 export function selectFundingEventsForGeneration(events = [], {
   currentCards = [],
@@ -244,6 +261,12 @@ async function searchExa(query, companyName) {
 }
 
 async function capturePage(result) {
+  const privateCache = args.get("research-seeds") ? path.join(resolvePrivateEvidenceBackupRoot(root, { required: true }), "funding-research", stableId("FISRC", result.url) + ".json") : "";
+  if (privateCache && fs.existsSync(privateCache)) {
+    const cached = readJson(privateCache, {});
+    if (cached.source_url === result.url && cached.capture_method === "direct_fetch"
+      && cached.body_clean?.length >= 300 && cached.content_hash === sourceTextHash(cached.body_clean)) return cached;
+  }
   let title = result.title;
   let body = "";
   let method = "";
@@ -269,7 +292,7 @@ async function capturePage(result) {
     method = `${result.provider}_captured_content`;
   }
   if (body.length < 300) return null;
-  return {
+  const source = {
     source_id: stableId("FISRC", result.url),
     source_url: result.url,
     title,
@@ -277,9 +300,11 @@ async function capturePage(result) {
     source_class: result.source_class,
     capture_method: method,
     captured_at: new Date().toISOString(),
-    content_hash: sourceTextHash(body),
+    content_hash: sourceTextHash(body.slice(0, 18000)),
     body_clean: body.slice(0, 18000),
   };
+  if (privateCache) writeJson(privateCache, source);
+  return source;
 }
 
 export function canonicalSources(bundle, event) {
@@ -364,9 +389,9 @@ function canonicalResearchProblems(payload, company, sources) {
   return problems;
 }
 
-function supplementalQuote(source, company, payload) {
+export function supplementalQuote(source, company, payload) {
   const body = String(source?.body_clean || "");
-  const names = [company?.canonical_name, payload?.company?.full_name]
+  const names = [company?.canonical_name, ...(company?.aliases || []), payload?.company?.full_name, payload?.company?.name]
     .map(clean)
     .filter((value, index, list) => value && list.indexOf(value) === index);
   const fundingSignal = /(?:funding|raised|raises|seed|series|venture funding|\$[\d,.]+|融资|筹集|募资)/iu;
@@ -380,14 +405,17 @@ function supplementalQuote(source, company, payload) {
         body.lastIndexOf(".", index - 1),
         body.lastIndexOf("!", index - 1),
         body.lastIndexOf("?", index - 1),
+        body.lastIndexOf("。", index - 1),
+        body.lastIndexOf("！", index - 1),
+        body.lastIndexOf("？", index - 1),
         body.lastIndexOf("\n", index - 1),
       ) + 1;
-      const ends = [".", "!", "?", "\n"]
+      const ends = [".", "!", "?", "。", "！", "？", "\n"]
         .map((marker) => body.indexOf(marker, index + name.length))
         .filter((value) => value >= 0);
       const end = ends.length ? Math.min(...ends) + 1 : Math.min(body.length, index + name.length + 360);
       const quote = body.slice(start, end).trim();
-      if (quote.length >= 40 && quote.length <= 500 && fundingSignal.test(quote) && productSignal.test(quote)) {
+      if (quote.length >= 40 && quote.length <= 500 && (fundingSignal.test(quote) || productSignal.test(quote))) {
         return quote;
       }
       from = index + name.length;
@@ -441,6 +469,19 @@ export function domesticFundingResearchQueries(companyName, amountHint, disclose
 
 async function researchSources(bundle, event, company) {
   const captured = canonicalSources(bundle, event);
+  if (args.get("research-seeds")) {
+    const manifest = readJson(path.resolve(root, args.get("research-seeds")), null);
+    const seeds = reviewedResearchSeeds(manifest, event, company);
+    const attempts = [];
+    for (const seed of seeds) {
+      if (captured.some((source) => normalizedUrlKey(source.source_url) === normalizedUrlKey(seed.url))) continue;
+      const source = await capturePage(seed);
+      attempts.push({ provider: seed.provider, query: seed.query, url: seed.url, status: source ? "completed" : "failed", error: source ? "" : "original_capture_failed" });
+      if (source) captured.push(source);
+      if (captured.length >= 8) break;
+    }
+    return { sources: captured, queries: [...new Set(seeds.map((seed) => seed.query))], attempts };
+  }
   const officialHosts = [...new Set(captured.map((source) => hostFor(source.source_url)).filter(Boolean))];
   const linkedHosts = [...new Set(captured
     .flatMap((source) => source.body_clean.match(/https?:\/\/[^\s<>"')\]]+/giu) || [])
@@ -1059,7 +1100,7 @@ async function main() {
     throw new Error("deepseek_key_missing_for_funding_insight");
   }
   const tavilyAvailable = Boolean(process.env.TAVILY_API_KEY) && process.env.TAVILY_DISABLED !== "true";
-  if (pending.length && !tavilyAvailable && !process.env.EXA_API_KEY) {
+  if (pending.length && !args.get("research-seeds") && !tavilyAvailable && !process.env.EXA_API_KEY) {
     throw new Error("funding_insight_search_provider_missing");
   }
   const results = pending.length
@@ -1154,7 +1195,7 @@ async function main() {
       date,
       generated_at: new Date().toISOString(),
       trigger: "verified_funding_events_with_three_month_backfill",
-      research_provider: "tavily+exa+deepseek",
+      research_provider: args.get("research-seeds") ? "reviewed-discovery+direct-fetch+deepseek" : "tavily+exa+deepseek",
       model,
       human_review_required: false,
       auto_publish_gate: FUNDING_INSIGHT_GATE_VERSION,

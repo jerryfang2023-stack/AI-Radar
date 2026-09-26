@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T00:27:56.714Z",
+    "generatedAt": "2026-09-26T05:32:44.840Z",
     "latestDataDate": "2026-09-26",
     "currentDate": "2026-09-26",
-    "eventCount": 3576,
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-f389faf9d7a68a79",
@@ -65,6 +65,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-52bafa1f7edd3231",
       "EV-be59d9048dd1b6a0",
       "EV-5bec025c9fd9ff0d",
       "EV-5071c68b40000d34",
@@ -111,6 +112,7 @@
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-52bafa1f7edd3231",
         "EV-5bec025c9fd9ff0d",
         "EV-5071c68b40000d34",
         "EV-f341178bd64e6ede",
@@ -151,6 +153,107 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-52bafa1f7edd3231",
+        "dataDate": "2026-09-26",
+        "date": "2026-08-17",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "一枚吊坠就是AI助手？前小米穿戴专家创业，已融资两轮",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "enterprise_applications",
+            "name": "企业级应用",
+            "entityIds": [
+              "EN-4e65b9e12aaa5d0e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-37dd04544684250b",
+            "fundingInsightId": "FI-ae2749f03cdcd717"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-4e65b9e12aaa5d0e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-c5e254f8f94dfbd0",
+            "fundingInsightId": "FI-ae2749f03cdcd717"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_device",
+            "name": "AI 设备",
+            "entityIds": [
+              "EN-4e65b9e12aaa5d0e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-537eeb7897d0514c",
+            "fundingInsightId": "FI-ae2749f03cdcd717"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "knowledge_search",
+            "name": "知识与搜索",
+            "entityIds": [
+              "EN-4e65b9e12aaa5d0e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-6dc228187c4e1039",
+            "fundingInsightId": "FI-ae2749f03cdcd717"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-4e65b9e12aaa5d0e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a52e88246973f5ba",
+            "fundingInsightId": "FI-ae2749f03cdcd717"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-4e65b9e12aaa5d0e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-5c83810f2f9e133b",
+            "fundingInsightId": "FI-ae2749f03cdcd717"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "consumer",
+            "name": "个人用户",
+            "entityIds": [
+              "EN-4e65b9e12aaa5d0e"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-8a7c93e65e51d8e9",
+            "fundingInsightId": "FI-ae2749f03cdcd717"
+          }
+        ],
+        "entityIds": [
+          "EN-4e65b9e12aaa5d0e",
+          "EN-c608c4787821de1b"
+        ]
+      },
       {
         "id": "EV-293d6feac5b8efab",
         "dataDate": "2026-09-26",
@@ -1054,6 +1157,7 @@
       "eventIds": [
         "EV-3c86fb0161715336",
         "EV-71d477e3af99ef9a",
+        "EV-86838cc774b85116",
         "EV-c96705c69e11c520",
         "EV-7eead74c2baae511",
         "EV-ef669a52c9a3f94f",
@@ -1167,6 +1271,7 @@
         "EV-bee8896bf7efa594",
         "EV-11e2a4e252d48f94",
         "EV-8077605769c4d4eb",
+        "EV-419ddb2d5cfc799a",
         "EV-261be266930904fd",
         "EV-a7568a8f75368e09",
         "EV-d1438a40de56f3ac",
@@ -1421,6 +1526,7 @@
       ],
       "entityIds": [
         "EN-67895119a5182d06",
+        "EN-573b998925ae7499",
         "EN-bc06be2cba2b2f2c",
         "EN-1d79127e9d90e89b",
         "EN-fba6bdd504fa7aff",
@@ -1511,6 +1617,7 @@
         "EN-f0d59425e4c32abb",
         "EN-b5d7671990b8d4a8",
         "EN-f2b9106253663314",
+        "EN-86b7b29d698963ef",
         "EN-a377bedfcb73be99",
         "EN-a4916084455b1950",
         "EN-9a677023cc72cdd0",

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T00:27:56.714Z",
+    "generatedAt": "2026-09-26T05:32:44.840Z",
     "latestDataDate": "2026-09-26",
     "currentDate": "2026-09-26",
-    "eventCount": 3576,
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-f389faf9d7a68a79",
@@ -61,23 +61,30 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
     "first_disclosed_at": "2026-07-23",
-    "latest_disclosed_at": "2026-07-23",
+    "latest_disclosed_at": "2026-09-10",
     "role_counts": {
-      "co_lead": 1
+      "co_lead": 2
     },
     "round_codes": [
+      "angel",
       "series_c"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-332fe6f7b211be4c",
+        "canonical_entity_id": "",
+        "name": "镭萌科技"
+      },
       {
         "entity_id": "EN-3f0cfc0d9c60b562",
         "canonical_entity_id": "EN-3f0cfc0d9c60b562",
@@ -85,6 +92,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-c20887fe41527684",
+        "funding_insight_id": "FI-8951b1ae982969ff",
+        "event_ids": [
+          "EV-41e71ae12a730f23"
+        ],
+        "company_entity_id": "EN-332fe6f7b211be4c",
+        "company_canonical_entity_id": "",
+        "company_name": "镭萌科技",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "千万级",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 10000000,
+          "max_value": 100000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1000 万元–1 亿元"
+        },
+        "announced_at": "2026-09-10",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-768fd2df3a0b8198",
+            "source_url": "https://finance.sina.com.cn/roll/2026-09-10/doc-inirinuw2911382.shtml",
+            "source_title": "镭萌科技完成千万级天使轮融资，时尚传媒集团与弘颐资管联合领投",
+            "source_content_hash": "15e6f5e872196d274edd5a3ed5bdc7ca457765eae281c19c65b9e2cea7b349ef",
+            "quote": "镭萌科技正式宣布完成千万级天使轮融资，由时尚传媒集团与弘颐资管联合领投。",
+            "quote_hash": "b5376d092e2783975adc8476932e8787a040d1d77d1e4127b2bcc3544dcd410b"
+          }
+        ]
+      },
       {
         "activity_id": "IA-1c91dbe03d72ce07",
         "funding_insight_id": "FI-111c093076dbcf41",
@@ -129,6 +176,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-768fd2df3a0b8198",
+        "source_url": "https://finance.sina.com.cn/roll/2026-09-10/doc-inirinuw2911382.shtml",
+        "source_title": "镭萌科技完成千万级天使轮融资，时尚传媒集团与弘颐资管联合领投",
+        "source_content_hash": "15e6f5e872196d274edd5a3ed5bdc7ca457765eae281c19c65b9e2cea7b349ef",
+        "quote": "镭萌科技正式宣布完成千万级天使轮融资，由时尚传媒集团与弘颐资管联合领投。",
+        "quote_hash": "b5376d092e2783975adc8476932e8787a040d1d77d1e4127b2bcc3544dcd410b"
+      },
+      {
         "source_id": "FISRC-9d4811d701a7c9af",
         "source_url": "https://finance.sina.com.cn/jjxw/2026-07-23/doc-iniitzpn4522804.shtml",
         "source_title": "智象未来完成15亿元C轮融资，三个月融三轮",
@@ -142,10 +197,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "弘颐资管 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "弘颐资管 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：镭萌科技 · 天使轮 · 2026-09-10 · 本轮联合领投 · 千万级。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-768fd2df3a0b8198"
+        },
         {
           "description": "融资来源记录：智象未来 · C轮 · 2026-07-23 · 本轮联合领投 · 15亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9d4811d701a7c9af"
@@ -153,6 +212,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-768fd2df3a0b8198",
+          "source_url": "https://finance.sina.com.cn/roll/2026-09-10/doc-inirinuw2911382.shtml",
+          "source_title": "镭萌科技完成千万级天使轮融资，时尚传媒集团与弘颐资管联合领投",
+          "source_content_hash": "15e6f5e872196d274edd5a3ed5bdc7ca457765eae281c19c65b9e2cea7b349ef",
+          "quote": "镭萌科技正式宣布完成千万级天使轮融资，由时尚传媒集团与弘颐资管联合领投。",
+          "quote_hash": "b5376d092e2783975adc8476932e8787a040d1d77d1e4127b2bcc3544dcd410b"
+        },
         {
           "source_id": "FISRC-9d4811d701a7c9af",
           "source_url": "https://finance.sina.com.cn/jjxw/2026-07-23/doc-iniitzpn4522804.shtml",

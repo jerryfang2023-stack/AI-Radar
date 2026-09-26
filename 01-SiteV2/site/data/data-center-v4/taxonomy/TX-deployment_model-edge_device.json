@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T00:27:56.714Z",
+    "generatedAt": "2026-09-26T05:32:44.840Z",
     "latestDataDate": "2026-09-26",
     "currentDate": "2026-09-26",
-    "eventCount": 3576,
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-f389faf9d7a68a79",
@@ -5699,7 +5699,9 @@
         {
           "name": "Siri AI",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Apple"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/963/722.htm",
@@ -5896,7 +5898,7 @@
           "name": "CoreAI",
           "type": "产品/服务",
           "ownerNames": [
-            "Alibaba"
+            "Apple"
           ]
         }
       ],
@@ -6067,7 +6069,7 @@
           "name": "Foundation",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Apple"
           ]
         }
       ],
@@ -7555,9 +7557,9 @@
       "classificationRefs": [
         "TX-product_form-chip_accelerator",
         "TX-product_form-model",
+        "TX-technology-multimodal",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
-        "TX-technology-multimodal",
         "TX-technology-vision_language"
       ],
       "relatedEntityIds": [],
@@ -7699,9 +7701,9 @@
       "classificationRefs": [
         "TX-product_form-model",
         "TX-technology-agentic_execution",
+        "TX-technology-multimodal",
         "TX-technology-on_device",
-        "TX-deployment_model-edge_device",
-        "TX-technology-multimodal"
+        "TX-deployment_model-edge_device"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-02-28",
@@ -7745,10 +7747,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-multimodal",
         "TX-technology-embodied_ai",
         "TX-technology-on_device",
-        "TX-deployment_model-edge_device",
-        "TX-technology-multimodal"
+        "TX-deployment_model-edge_device"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-04",
@@ -7841,9 +7843,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-product_form-model",
+        "TX-technology-multimodal",
         "TX-technology-on_device",
-        "TX-deployment_model-edge_device",
-        "TX-technology-multimodal"
+        "TX-deployment_model-edge_device"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-07",
@@ -8123,6 +8125,7 @@
         "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-use_case-research_discovery",
+        "TX-technology-multimodal",
         "TX-technology-embodied_ai",
         "TX-use_case-software_development",
         "TX-industry-media_entertainment",
@@ -8131,7 +8134,6 @@
         "TX-deployment_model-edge_device",
         "TX-industry-aerospace_defense",
         "TX-technology-code_generation",
-        "TX-technology-multimodal",
         "TX-technology-vision_language",
         "TX-technology-video_generation",
         "TX-technology-image_generation",
@@ -8517,9 +8519,10 @@
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-research_discovery",
         "TX-product_form-end_user_application",
+        "TX-target_user-consumer",
+        "TX-technology-multimodal",
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
-        "TX-target_user-consumer",
         "TX-use_case-software_development",
         "TX-product_form-ai_compute_system",
         "TX-ai_market_application-computing_infrastructure",
@@ -8528,7 +8531,6 @@
         "TX-deployment_model-edge_device",
         "TX-industry-aerospace_defense",
         "TX-technology-code_generation",
-        "TX-technology-multimodal",
         "TX-technology-open_weights",
         "TX-technology-video_generation",
         "TX-technology-image_generation",
@@ -8603,9 +8605,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-multimodal",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
-        "TX-technology-multimodal",
         "TX-technology-inference_optimization"
       ],
       "relatedEntityIds": [],
@@ -8629,6 +8631,7 @@
         "EV-56c0d1d5b0c07971",
         "EV-f282ab8740ff0096",
         "EV-2f0f3200b9800877",
+        "EV-545bef6ff60cf3b2",
         "EV-026b9b4462b4adc8",
         "EV-3ebefd784ba0afd0",
         "EV-5bbc509a032b8309",
@@ -8760,8 +8763,8 @@
         "EN-af3ceabbe048a291",
         "EN-45b5216872656eb3"
       ],
-      "firstSeen": "2026-06-04",
-      "lastSeen": "2026-09-22"
+      "firstSeen": "2026-03-12",
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "EN-dd920a8cd166f486",
@@ -9092,12 +9095,13 @@
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
         "TX-industry-education",
+        "TX-product_form-robotic_system",
+        "TX-technology-multimodal",
         "TX-product_form-ai_infrastructure_software",
         "TX-industry-financial_services",
         "TX-industry-telecommunications",
         "TX-technology-embodied_ai",
         "TX-industry-government_public_sector",
-        "TX-product_form-robotic_system",
         "TX-use_case-software_development",
         "TX-product_form-ai_compute_system",
         "TX-ai_market_application-computing_infrastructure",
@@ -9113,7 +9117,6 @@
         "TX-industry-food_hospitality",
         "TX-industry-legal_services",
         "TX-technology-code_generation",
-        "TX-technology-multimodal",
         "TX-product_form-model_api_service",
         "TX-technology-open_weights",
         "TX-use_case-customer_support",
@@ -9255,10 +9258,10 @@
         "TX-technology-agentic_execution",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
+        "TX-technology-multimodal",
         "TX-use_case-software_development",
         "TX-technology-on_device",
-        "TX-deployment_model-edge_device",
-        "TX-technology-multimodal"
+        "TX-deployment_model-edge_device"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-08",

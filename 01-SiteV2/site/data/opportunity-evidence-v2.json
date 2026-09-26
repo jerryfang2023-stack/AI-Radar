@@ -9,7 +9,7 @@
     "activeDate": "2026-09-26",
     "generatedAt": "2026-09-26T00:00:00.000Z",
     "windowDays": 30,
-    "evidenceCount": 987,
+    "evidenceCount": 998,
     "directionCardCount": 0,
     "sourceAdapter": "data-center-v4-canonical"
   },
@@ -271,6 +271,1305 @@
       }
     },
     {
+      "id": "EV-06d2ebc330c7fc37",
+      "event_id": "EV-06d2ebc330c7fc37",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "情感智能珠宝硬件公司完成天使轮融资，荣耀AI Connect生态企业等押注｜硬氪首发-36氪",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-26",
+      "event_time": "2026-09-12",
+      "sourceUrl": "https://www.36kr.com/p/3977590035119112",
+      "sourceName": "36氪",
+      "subject": "SHAKESPEARE莎士比亚",
+      "sourceExcerpt": "硬氪获悉，情感智能珠宝硬件企业SHAKESPEARE莎士比亚近日完成数千万元天使轮融资，由荣耀AI Connect生态企业极选智能、国内头部珠宝DP服务商瑞钰控股共同出资。势能资本长期担任公司独家财务顾问。融资资金将主要用于核心算法迭代、多模态情感交互模型开发、新品类的珠宝工艺研发及全球化渠道拓展。\n莎士比亚2025年成立于杭州，公司定位“情感智能珠宝”品牌，致力于将传统珠宝工艺与智能穿戴技术深度融合，为提供具备情感陪伴能力的智能珠宝产品。其首款产品为AI身心健康陪伴戒指，已于2026年4月在国内市场正式发售。\n",
+      "entity_refs": [
+        {
+          "entity_id": "EN-58e194f5f0d0d876",
+          "canonical_name": "SHAKESPEARE莎士比亚",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-a3eab03771126f39"
+      ],
+      "source_refs": [
+        "SA-61d661075a3b6f5d"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "ai_market_category",
+          "dimension_name": "AI 市场类别",
+          "value_id": "enterprise_applications",
+          "value_name": "企业级应用",
+          "entity_ids": [
+            "EN-58e194f5f0d0d876"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-6edbccf6f4960241"
+        },
+        {
+          "dimension_id": "ai_market_subcategory",
+          "dimension_name": "AI 市场子类",
+          "value_id": "productivity_enterprise_workflows",
+          "value_name": "生产力与企业工作流",
+          "entity_ids": [
+            "EN-58e194f5f0d0d876"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-44eb69d4565287b1"
+        },
+        {
+          "dimension_id": "industry",
+          "dimension_name": "行业",
+          "value_id": "retail_ecommerce",
+          "value_name": "零售与电商",
+          "entity_ids": [
+            "EN-58e194f5f0d0d876"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-9a6ee06bcdfcb5fe"
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "ai_device",
+          "value_name": "AI 设备",
+          "entity_ids": [
+            "EN-58e194f5f0d0d876"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-55acd41fc679f5ce"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "consumer",
+          "value_name": "个人用户",
+          "entity_ids": [
+            "EN-58e194f5f0d0d876"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-5126c831d9b3416c"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "productivity_enterprise_workflows",
+          "value_name": "生产力与企业工作流",
+          "entity_ids": [
+            "EN-58e194f5f0d0d876"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-353d4cfd520344ff"
+        },
+        {
+          "dimension_id": "technology",
+          "dimension_name": "技术",
+          "value_id": "multimodal",
+          "value_name": "多模态",
+          "entity_ids": [
+            "EN-58e194f5f0d0d876"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [
+          {
+            "value_id": "engineering_team",
+            "claim_ref": "CL-a3eab03771126f39",
+            "source_refs": [
+              "SA-61d661075a3b6f5d"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "team_or_function": [
+          {
+            "value_id": "engineering",
+            "claim_ref": "CL-a3eab03771126f39",
+            "source_refs": [
+              "SA-61d661075a3b6f5d"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-a3eab03771126f39",
+            "source_refs": [
+              "SA-61d661075a3b6f5d"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [
+            "engineering_team"
+          ],
+          "team_or_function": [
+            "engineering"
+          ],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-09b8a8e4ed03dd7f",
+      "event_id": "EV-09b8a8e4ed03dd7f",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "一家AI玩具公司获数千万元融资，核心产品销量翻五倍｜硬氪首发-36氪",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-26",
+      "event_time": "2026-01-30",
+      "sourceUrl": "https://www.36kr.com/p/3654915542130816",
+      "sourceName": "36氪",
+      "subject": "上海喜梨信息科技有限公司",
+      "sourceExcerpt": "硬氪获悉，AI玩具厂商上海喜梨信息科技有限公司（以下简称“FoloToy”）近日完成数千万元新一轮融资。指数资本担任公司独家财务顾问。我们总结了本轮融资信息和该公司几大亮点：\n融资金额及投资机构\n融资轮次：Pre-A轮/ Pre-A+轮\n融资规模：数千万元\n投资方：深创投、南山战新投、老股东火火兔\n资金用途：将重点用于加速技术研发与产品端持续迭代，并保障量产落地和规模化市场交付\n",
+      "entity_refs": [
+        {
+          "entity_id": "EN-04bd675006a7a1ed",
+          "canonical_name": "上海喜梨信息科技有限公司",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-42da0d146baafd20",
+          "canonical_name": "AI玩具厂商上海喜梨信息科技有限公司",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        }
+      ],
+      "claim_refs": [
+        "CL-5d435652f01a6bc4"
+      ],
+      "source_refs": [
+        "SA-1fdfbeb52054b9b1"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "ai_market_category",
+          "dimension_name": "AI 市场类别",
+          "value_id": "physical_ai",
+          "value_name": "Physical AI",
+          "entity_ids": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-9b23f88bfe58adc9"
+        },
+        {
+          "dimension_id": "industry",
+          "dimension_name": "行业",
+          "value_id": "education",
+          "value_name": "教育",
+          "entity_ids": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-606ad70fbfd77cbb"
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "robotic_system",
+          "value_name": "机器人系统",
+          "entity_ids": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-0f266f420b5a2f19"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "consumer",
+          "value_name": "个人用户",
+          "entity_ids": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-64d7872c57cdb860"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "student",
+          "value_name": "学生",
+          "entity_ids": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-cfe0605a9c7a564f"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "education_learning",
+          "value_name": "教育与学习",
+          "entity_ids": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-76fcc613ebc03271"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "physical_automation",
+          "value_name": "物理自动化",
+          "entity_ids": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-34beff58db7eea62"
+        },
+        {
+          "dimension_id": "industry",
+          "dimension_name": "行业",
+          "value_id": "financial_services",
+          "value_name": "金融服务",
+          "entity_ids": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [
+          {
+            "value_id": "engineering_team",
+            "claim_ref": "CL-5d435652f01a6bc4",
+            "source_refs": [
+              "SA-1fdfbeb52054b9b1"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "team_or_function": [
+          {
+            "value_id": "engineering",
+            "claim_ref": "CL-5d435652f01a6bc4",
+            "source_refs": [
+              "SA-1fdfbeb52054b9b1"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-5d435652f01a6bc4",
+            "source_refs": [
+              "SA-1fdfbeb52054b9b1"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [
+            "engineering_team"
+          ],
+          "team_or_function": [
+            "engineering"
+          ],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-419ddb2d5cfc799a",
+      "event_id": "EV-419ddb2d5cfc799a",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "雷鸟创新获移动、联通旗下基金投资，新一轮融资规模超 10 亿",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-26",
+      "event_time": "2026-01-05",
+      "sourceUrl": "https://www.ithome.com/0/910/387.htm",
+      "sourceName": "IT之家",
+      "subject": "雷鸟创新",
+      "sourceExcerpt": "2026 年 1 月 5 日 —— 全球领先消费级 AR 品牌雷鸟创新（RayNeo）宣布近期完成新一轮超 10 亿元融资。本轮融资由中国移动链长基金与中信金石（旗下茅台金石、金石成长等基金）领投，中国联通旗下联创创新基金等机构共同参与。\n此次融资标志着国内运营商首次战略投资智能眼镜赛道，意味着 AR 终端正式进入国家通信基础设施的战略视野。持续的资金注入，将为雷鸟创新的技术研发与全球市场拓展提供强劲动能，并推动公司加速跻身独角兽企业行列。\n同期，雷鸟创新预告将于 CES 2026 期间展示首款搭载 eSIM 的 AR 智能眼镜“雷鸟 X3 Pro Project eSIM”，产品采用双目全彩 MicroLED 显示方案、集成了 eSIM 通信模块与 4G 协议支持，展示智能眼镜的完整形态。\n十年轮回：运营商押注下一代“ iPhone ”\n十余年前，中国运营商作为关键推手，以基础网络建设、“充话费送手机”、生态共建等模式深度参与智能手机的爆发式普及，彻底改变了中国消费者的数字生活方式。如今，相似的场景正在 AR 领域重演。\n面对“空间计算时代”这一战略窗口，中国两大通信巨头联手注资雷鸟创新，背后是清晰的产业判断：在运营商的战略图谱中，AR 智能眼镜已不再是“极客玩具”，而是智能手机之后的下一代主流个人终端的既定答案。\n运营商入局带来的不仅是资本背书，也标志着双方正式建立起深度战略合作关系，后续将围绕市场渠道共建、商业模式创新与核心技术生态展开全方位协同：借助运营商覆盖全国的线下服务网点、数以亿计的用户基数，雷鸟 AR 智能眼镜将触达更广泛的消费群体；“充话费送眼镜”“合约机”等运营商擅长的服务模式，将大幅降低用户对 AR 智能眼镜的尝试门槛，成为后续市场爆发的关键推手。同时，运营商在 eSIM、5G 等关键通讯技术，AI 服务及内容生态等方面的资源，也将为雷鸟创新的产品演进提供强大支撑。\n即将在 CES 2026 亮相的雷鸟 X3 Pro Project eSIM，正是双方协同的重要成果。该产品集成了 eSIM 通信模块与 4G 协议支持，无需手机联网，即可实现包括拨打和接听电话、多模态 AI 对话、高质量 AI 实时翻译、在线流媒体音乐等多项功能，成为首款真正具备独立通信能力的消费级 AR 智能眼镜。\n过往，智能眼镜始终被诟病为“手机的附属品”—— 没有手机，眼镜便失去了大部分功能。而 eSIM 的加入将使眼镜进化为“完全体”：结合雷鸟在 AI 大模型、空间计算以及 AR 应用生态上的深厚积累，AR 智能眼镜将真正进化为一个全场景的个人计算中心，独立承载通信、计算、显示、交互的完整能力。\n",
+      "entity_refs": [
+        {
+          "entity_id": "EN-86b7b29d698963ef",
+          "canonical_name": "雷鸟创新",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-9f18eef5ec30b403"
+      ],
+      "source_refs": [
+        "SA-c764bb559d58389b"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "ai_market_category",
+          "dimension_name": "AI 市场类别",
+          "value_id": "enterprise_applications",
+          "value_name": "企业级应用",
+          "entity_ids": [
+            "EN-86b7b29d698963ef"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-5a7af8fecd3a77e2"
+        },
+        {
+          "dimension_id": "ai_market_subcategory",
+          "dimension_name": "AI 市场子类",
+          "value_id": "productivity_enterprise_workflows",
+          "value_name": "生产力与企业工作流",
+          "entity_ids": [
+            "EN-86b7b29d698963ef"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-c94853614d0c1bc5"
+        },
+        {
+          "dimension_id": "industry",
+          "dimension_name": "行业",
+          "value_id": "media_entertainment",
+          "value_name": "媒体与娱乐",
+          "entity_ids": [
+            "EN-86b7b29d698963ef"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-97b9207ed746186a"
+        },
+        {
+          "dimension_id": "industry",
+          "dimension_name": "行业",
+          "value_id": "retail_ecommerce",
+          "value_name": "零售与电商",
+          "entity_ids": [
+            "EN-86b7b29d698963ef"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-33452a562c02f4b2"
+        },
+        {
+          "dimension_id": "industry",
+          "dimension_name": "行业",
+          "value_id": "telecommunications",
+          "value_name": "电信",
+          "entity_ids": [
+            "EN-86b7b29d698963ef"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-adb649ac340f91de"
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "ai_device",
+          "value_name": "AI 设备",
+          "entity_ids": [
+            "EN-86b7b29d698963ef"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-c53b561e368965cd"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "business_user",
+          "value_name": "企业用户",
+          "entity_ids": [
+            "EN-86b7b29d698963ef"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-0c9a504ea852815c"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "consumer",
+          "value_name": "个人用户",
+          "entity_ids": [
+            "EN-86b7b29d698963ef"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-2da203d06467fb25"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "content_creation",
+          "value_name": "内容创作",
+          "entity_ids": [
+            "EN-86b7b29d698963ef"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-08309086ad6d4b2a"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "knowledge_search",
+          "value_name": "知识与搜索",
+          "entity_ids": [
+            "EN-86b7b29d698963ef"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-79a1c082529a43a8"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "productivity_enterprise_workflows",
+          "value_name": "生产力与企业工作流",
+          "entity_ids": [
+            "EN-86b7b29d698963ef"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-8904a5815b6c851f"
+        },
+        {
+          "dimension_id": "technology",
+          "dimension_name": "技术",
+          "value_id": "multimodal",
+          "value_name": "多模态",
+          "entity_ids": [
+            "EN-86b7b29d698963ef"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "model",
+          "value_name": "模型",
+          "entity_ids": [
+            "EN-86b7b29d698963ef"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [
+          {
+            "value_id": "engineering_team",
+            "claim_ref": "CL-9f18eef5ec30b403",
+            "source_refs": [
+              "SA-c764bb559d58389b"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "team_or_function": [
+          {
+            "value_id": "engineering",
+            "claim_ref": "CL-9f18eef5ec30b403",
+            "source_refs": [
+              "SA-c764bb559d58389b"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "specific_task": [],
+        "pain_or_constraint": [
+          {
+            "value_id": "latency_sensitive",
+            "claim_ref": "CL-9f18eef5ec30b403",
+            "source_refs": [
+              "SA-c764bb559d58389b"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-9f18eef5ec30b403",
+            "source_refs": [
+              "SA-c764bb559d58389b"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [
+            "engineering_team"
+          ],
+          "team_or_function": [
+            "engineering"
+          ],
+          "specific_task": [],
+          "pain_or_constraint": [
+            "latency_sensitive"
+          ],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-41e71ae12a730f23",
+      "event_id": "EV-41e71ae12a730f23",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "镭萌科技完成千万级天使轮融资，时尚传媒集团与弘颐资管联合领投",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-26",
+      "event_time": "2026-09-10",
+      "sourceUrl": "https://finance.sina.com.cn/roll/2026-09-10/doc-inirinuw2911382.shtml",
+      "sourceName": "封面新闻／新浪财经",
+      "subject": "镭萌科技",
+      "sourceExcerpt": "9月9日，在2026 Inclusion·外滩大会期间，镭萌科技正式宣布完成千万级天使轮融资，由时尚传媒集团与弘颐资管联合领投。本轮融资将主要用于产品研发迭代、内容生态建设及市场渠道拓展。\n同日，镭萌科技发布围绕非语言情感 机器人 bibo构建的“潮玩具身智能”开放生态，提出以“IP智能化、生活场景化、关系长期化”为三条发展主线，推进消费级具身智能的产品创新与商业化探索。\n",
+      "entity_refs": [
+        {
+          "entity_id": "EN-332fe6f7b211be4c",
+          "canonical_name": "镭萌科技",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-95c50ddb05f672c3"
+      ],
+      "source_refs": [
+        "SA-b32ba7fb659a2ea4"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "ai_market_category",
+          "dimension_name": "AI 市场类别",
+          "value_id": "physical_ai",
+          "value_name": "Physical AI",
+          "entity_ids": [
+            "EN-332fe6f7b211be4c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-9b82d92d3f4dd313"
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "robotic_system",
+          "value_name": "机器人系统",
+          "entity_ids": [
+            "EN-332fe6f7b211be4c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-ce10b3b775cf735f"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "consumer",
+          "value_name": "个人用户",
+          "entity_ids": [
+            "EN-332fe6f7b211be4c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-e33f687820586cf8"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "physical_automation",
+          "value_name": "物理自动化",
+          "entity_ids": [
+            "EN-332fe6f7b211be4c"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-0c12a9417a83dd11"
+        },
+        {
+          "dimension_id": "technology",
+          "dimension_name": "技术",
+          "value_id": "embodied_ai",
+          "value_name": "具身智能",
+          "entity_ids": [
+            "EN-332fe6f7b211be4c"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [
+          {
+            "value_id": "engineering_team",
+            "claim_ref": "CL-95c50ddb05f672c3",
+            "source_refs": [
+              "SA-b32ba7fb659a2ea4"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "team_or_function": [
+          {
+            "value_id": "engineering",
+            "claim_ref": "CL-95c50ddb05f672c3",
+            "source_refs": [
+              "SA-b32ba7fb659a2ea4"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-95c50ddb05f672c3",
+            "source_refs": [
+              "SA-b32ba7fb659a2ea4"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [
+            "engineering_team"
+          ],
+          "team_or_function": [
+            "engineering"
+          ],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-51d8aec94225e9c6",
+      "event_id": "EV-51d8aec94225e9c6",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "拓邦战略投资AI玩具先锋跃然创新，共拓AI智慧成长新蓝海",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-26",
+      "event_time": "2026-03-30",
+      "sourceUrl": "https://finance.sina.cn/2026-03-30/detail-inhstxxe2822090.d.html",
+      "sourceName": "拓邦股份／新浪财经",
+      "subject": "深圳跃然创新科技有限公司",
+      "sourceExcerpt": "近日，AI玩具公司深圳跃然创新科技有限公司（以下简称”跃然创新”）完成A+轮融资，由蚂蚁集团领投，达晨创投、尚 颀 资本、拓邦股份（002139.SZ，以下简称“拓邦”）、啟赋资本等机构参投。",
+      "entity_refs": [
+        {
+          "entity_id": "EN-78e778b471fd74fd",
+          "canonical_name": "深圳跃然创新科技有限公司",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-749c080b0853e3a2",
+          "canonical_name": "AI玩具公司深圳跃然创新科技有限公司",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        },
+        {
+          "entity_id": "EN-5a28a1a99a417ba5",
+          "canonical_name": "Ant Group",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        }
+      ],
+      "claim_refs": [
+        "CL-ff802cbe011d9493"
+      ],
+      "source_refs": [
+        "SA-e554b79242350d41"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "ai_market_category",
+          "dimension_name": "AI 市场类别",
+          "value_id": "industry_applications",
+          "value_name": "行业应用",
+          "entity_ids": [
+            "EN-78e778b471fd74fd"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-62c7c8a51f1e098e"
+        },
+        {
+          "dimension_id": "ai_market_subcategory",
+          "dimension_name": "AI 市场子类",
+          "value_id": "consumer_retail",
+          "value_name": "消费与零售",
+          "entity_ids": [
+            "EN-78e778b471fd74fd"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-8729c0e890402052"
+        },
+        {
+          "dimension_id": "industry",
+          "dimension_name": "行业",
+          "value_id": "retail_ecommerce",
+          "value_name": "零售与电商",
+          "entity_ids": [
+            "EN-78e778b471fd74fd"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-f8b950f399e00ddb"
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "ai_device",
+          "value_name": "AI 设备",
+          "entity_ids": [
+            "EN-78e778b471fd74fd"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-4a89f89d8801ace1"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "consumer",
+          "value_name": "个人用户",
+          "entity_ids": [
+            "EN-78e778b471fd74fd"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-3ad52d90c73a15fd"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "content_creation",
+          "value_name": "内容创作",
+          "entity_ids": [
+            "EN-78e778b471fd74fd"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-9385c64316fed3b0"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "education_learning",
+          "value_name": "教育与学习",
+          "entity_ids": [
+            "EN-78e778b471fd74fd"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-e6e366c76655ca18"
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-ff802cbe011d9493",
+            "source_refs": [
+              "SA-e554b79242350d41"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-52bafa1f7edd3231",
+      "event_id": "EV-52bafa1f7edd3231",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "一枚吊坠就是AI助手？前小米穿戴专家创业，已融资两轮",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-26",
+      "event_time": "2026-08-17",
+      "sourceUrl": "https://finance.sina.com.cn/tech/roll/2026-08-17/doc-ininrkkn9105526.shtml",
+      "sourceName": "亿邦动力／新浪科技",
+      "subject": "斯塔维科",
+      "sourceExcerpt": "斯塔维科是这条探索路径上的最新入局者。这家公司于2025年8月由真知创投孵化成立，2026年7月正式推出其首款硬件产品Actra智能磁吸AI吊坠。\n斯塔维科已完成两轮融资。2025年8月公司成立时获得真知创投天使轮孵化；2026年6月，BAI资本完成第二轮加注，具体金额未披露。创始人尹海田拥有10年硬件研发经验，长期深耕智能硬件赛道。\n",
+      "entity_refs": [
+        {
+          "entity_id": "EN-4e65b9e12aaa5d0e",
+          "canonical_name": "斯塔维科",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-c608c4787821de1b",
+          "canonical_name": "Xiaomi",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        }
+      ],
+      "claim_refs": [
+        "CL-92c2e92931e77f0e"
+      ],
+      "source_refs": [
+        "SA-9eb1c4ec61f6159a"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "ai_market_category",
+          "dimension_name": "AI 市场类别",
+          "value_id": "enterprise_applications",
+          "value_name": "企业级应用",
+          "entity_ids": [
+            "EN-4e65b9e12aaa5d0e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-37dd04544684250b"
+        },
+        {
+          "dimension_id": "ai_market_subcategory",
+          "dimension_name": "AI 市场子类",
+          "value_id": "productivity_enterprise_workflows",
+          "value_name": "生产力与企业工作流",
+          "entity_ids": [
+            "EN-4e65b9e12aaa5d0e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-c5e254f8f94dfbd0"
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "ai_device",
+          "value_name": "AI 设备",
+          "entity_ids": [
+            "EN-4e65b9e12aaa5d0e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-537eeb7897d0514c"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "business_user",
+          "value_name": "企业用户",
+          "entity_ids": [
+            "EN-4e65b9e12aaa5d0e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-5c83810f2f9e133b"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "consumer",
+          "value_name": "个人用户",
+          "entity_ids": [
+            "EN-4e65b9e12aaa5d0e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-8a7c93e65e51d8e9"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "knowledge_search",
+          "value_name": "知识与搜索",
+          "entity_ids": [
+            "EN-4e65b9e12aaa5d0e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-6dc228187c4e1039"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "productivity_enterprise_workflows",
+          "value_name": "生产力与企业工作流",
+          "entity_ids": [
+            "EN-4e65b9e12aaa5d0e"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-a52e88246973f5ba"
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [
+          {
+            "value_id": "engineering_team",
+            "claim_ref": "CL-92c2e92931e77f0e",
+            "source_refs": [
+              "SA-9eb1c4ec61f6159a"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "team_or_function": [
+          {
+            "value_id": "engineering",
+            "claim_ref": "CL-92c2e92931e77f0e",
+            "source_refs": [
+              "SA-9eb1c4ec61f6159a"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-92c2e92931e77f0e",
+            "source_refs": [
+              "SA-9eb1c4ec61f6159a"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [
+            "engineering_team"
+          ],
+          "team_or_function": [
+            "engineering"
+          ],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-545bef6ff60cf3b2",
+      "event_id": "EV-545bef6ff60cf3b2",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "Taya 融资 500 万美元，用于设计能捕捉你思绪而非房间的 AI 珠宝",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-26",
+      "event_time": "2026-03-12",
+      "sourceUrl": "https://www.prnewswire.com/news-releases/taya-raises-5m-for-ai-jewelry-designed-to-capture-your-thoughts-not-the-room-302711918.html",
+      "sourceName": "Taya / PR Newswire",
+      "subject": "SAN FRANCISCO",
+      "sourceExcerpt": "SAN FRANCISCO , March 12, 2026 /PRNewswire/ -- Taya today announced it has raised a $5 million seed round led by MaC Venture Capital and Female Founders Fund, with participation from a16z speedrun. Founded by Stanford-trained product designer and mechanical engineer Elena Wagenmans, previously at Apple, Taya is an AI necklace built to honor the social contract: intentional, single-player voice capture, not ambient recording of the room.",
+      "entity_refs": [
+        {
+          "entity_id": "EN-1a2290470e0aa754",
+          "canonical_name": "SAN FRANCISCO",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-6c42a85075d8a891",
+          "canonical_name": "Taya",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-3a7bd3e2360a3d29",
+          "canonical_name": "Apple",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        }
+      ],
+      "claim_refs": [
+        "CL-dbfd211688105823"
+      ],
+      "source_refs": [
+        "SA-567f7aa62b2f2052"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "ai_market_category",
+          "dimension_name": "AI 市场类别",
+          "value_id": "enterprise_applications",
+          "value_name": "企业级应用",
+          "entity_ids": [
+            "EN-6c42a85075d8a891"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-1f1ede5f1d3dc6e5"
+        },
+        {
+          "dimension_id": "ai_market_subcategory",
+          "dimension_name": "AI 市场子类",
+          "value_id": "productivity_enterprise_workflows",
+          "value_name": "生产力与企业工作流",
+          "entity_ids": [
+            "EN-6c42a85075d8a891"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-871fc4b4559ff5ae"
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "ai_device",
+          "value_name": "AI 设备",
+          "entity_ids": [
+            "EN-6c42a85075d8a891"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-ebb3c32996324b58"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "consumer",
+          "value_name": "个人用户",
+          "entity_ids": [
+            "EN-6c42a85075d8a891"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-550d8168cc730ec6"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "productivity_enterprise_workflows",
+          "value_name": "生产力与企业工作流",
+          "entity_ids": [
+            "EN-6c42a85075d8a891"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-049c98f178dd1e33"
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-dbfd211688105823",
+            "source_refs": [
+              "SA-567f7aa62b2f2052"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-60366423eaa67216",
+      "event_id": "EV-60366423eaa67216",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "Nothing 融资 2 亿美元，推动消费级 AI 进入下一阶段",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-26",
+      "event_time": "2025-09-16",
+      "sourceUrl": "https://tech.eu/2025/09/16/nothing-raises-200m-to-power-the-next-phase-of-consumer-ai/",
+      "sourceName": "Tech.eu",
+      "subject": "Nothing",
+      "sourceExcerpt": "closed $200 million in a Series C round at a $1.3 billion valuation . The",
+      "entity_refs": [
+        {
+          "entity_id": "EN-1785cfc3bc6ac773",
+          "canonical_name": "Nothing",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-a8e8e65eb823a69b"
+      ],
+      "source_refs": [
+        "SA-8147e07a1614d14b"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "ai_market_category",
+          "dimension_name": "AI 市场类别",
+          "value_id": "enterprise_applications",
+          "value_name": "企业级应用",
+          "entity_ids": [
+            "EN-1785cfc3bc6ac773"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-883b5c2fe048d498"
+        },
+        {
+          "dimension_id": "ai_market_subcategory",
+          "dimension_name": "AI 市场子类",
+          "value_id": "productivity_enterprise_workflows",
+          "value_name": "生产力与企业工作流",
+          "entity_ids": [
+            "EN-1785cfc3bc6ac773"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-dbd81768cbceb66a"
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "ai_device",
+          "value_name": "AI 设备",
+          "entity_ids": [
+            "EN-1785cfc3bc6ac773"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-a735b5ebdf56e9ad"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "consumer",
+          "value_name": "个人用户",
+          "entity_ids": [
+            "EN-1785cfc3bc6ac773"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-97d8b5a81df43b9c"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "content_creation",
+          "value_name": "内容创作",
+          "entity_ids": [
+            "EN-1785cfc3bc6ac773"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-a1e12ad96415b4eb"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "productivity_enterprise_workflows",
+          "value_name": "生产力与企业工作流",
+          "entity_ids": [
+            "EN-1785cfc3bc6ac773"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-963add02c0e6c763"
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-a8e8e65eb823a69b",
+            "source_refs": [
+              "SA-8147e07a1614d14b"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
       "id": "EV-81bbaaec2965864a",
       "event_id": "EV-81bbaaec2965864a",
       "event_type": "funding",
@@ -403,6 +1702,179 @@
       }
     },
     {
+      "id": "EV-86838cc774b85116",
+      "event_id": "EV-86838cc774b85116",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "范博特机器人完成千万级天使轮融资，押注「心理教练机器人」",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-26",
+      "event_time": "2026-09-22",
+      "sourceUrl": "https://news.pedaily.cn/202609/569503.shtml",
+      "sourceName": "投资界",
+      "subject": "深圳市范博特机器人有限公司",
+      "sourceExcerpt": "深圳市范博特机器人有限公司（下称“范博特机器人”）是一家专注于打造AI陪伴机器人的智能科技企业，公司聚焦人工智能、机器人与心理健康交叉领域，主营各类AI陪伴机器人以及自研多模态MoodLLM千亿参数心理大模型。投资界（ID：pedaily2012）9月22日消息，范博特机器人宣布 完成千万级天使轮融资 。",
+      "entity_refs": [
+        {
+          "entity_id": "EN-573b998925ae7499",
+          "canonical_name": "深圳市范博特机器人有限公司",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        }
+      ],
+      "claim_refs": [
+        "CL-7bea034519e6e1d7"
+      ],
+      "source_refs": [
+        "SA-e512f6f96bd949d3"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "ai_market_category",
+          "dimension_name": "AI 市场类别",
+          "value_id": "physical_ai",
+          "value_name": "Physical AI",
+          "entity_ids": [
+            "EN-573b998925ae7499"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-89e672e88c500c19"
+        },
+        {
+          "dimension_id": "industry",
+          "dimension_name": "行业",
+          "value_id": "education",
+          "value_name": "教育",
+          "entity_ids": [
+            "EN-573b998925ae7499"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-a5b1b7dd3ab8702d"
+        },
+        {
+          "dimension_id": "industry",
+          "dimension_name": "行业",
+          "value_id": "healthcare_life_sciences",
+          "value_name": "医疗与生命科学",
+          "entity_ids": [
+            "EN-573b998925ae7499"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-6ccc596d52e91cbd"
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "robotic_system",
+          "value_name": "机器人系统",
+          "entity_ids": [
+            "EN-573b998925ae7499"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-ed4ed0559908e345"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "consumer",
+          "value_name": "个人用户",
+          "entity_ids": [
+            "EN-573b998925ae7499"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-e2c1e155be80200c"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "student",
+          "value_name": "学生",
+          "entity_ids": [
+            "EN-573b998925ae7499"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-c9bef1f19d911170"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "education_learning",
+          "value_name": "教育与学习",
+          "entity_ids": [
+            "EN-573b998925ae7499"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-19e1a32e229b69db"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "physical_automation",
+          "value_name": "物理自动化",
+          "entity_ids": [
+            "EN-573b998925ae7499"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-177d4513d25270ae"
+        },
+        {
+          "dimension_id": "technology",
+          "dimension_name": "技术",
+          "value_id": "multimodal",
+          "value_name": "多模态",
+          "entity_ids": [
+            "EN-573b998925ae7499"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "model",
+          "value_name": "模型",
+          "entity_ids": [
+            "EN-573b998925ae7499"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-7bea034519e6e1d7",
+            "source_refs": [
+              "SA-e512f6f96bd949d3"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
       "id": "EV-95ba9cc4f4d52ea4",
       "event_id": "EV-95ba9cc4f4d52ea4",
       "event_type": "funding",
@@ -465,6 +1937,358 @@
             "claim_ref": "CL-e35afc9754c2bbb5",
             "source_refs": [
               "SA-621fd74540be97af"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-d4b0dd4de320089a",
+      "event_id": "EV-d4b0dd4de320089a",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "头部智能眼镜品牌完成近10亿C轮融资，已正式启动上市筹备工作｜硬氪首发-36氪",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-26",
+      "event_time": "2026-09-09",
+      "sourceUrl": "https://www.36kr.com/p/3974730056757511",
+      "sourceName": "36氪",
+      "subject": "硬氪",
+      "sourceExcerpt": "硬氪获悉，全球智能眼镜品牌「影目科技」近日完成C3轮融资，由四川振兴科创基金领投，静安资本、市北高新、广州产投、四川中试、眉山中试及东坡国投跟投。继年初完成C1、C2轮融资后，公司C轮融资累计金额近10亿元。\n本轮资金将主要用于新一代空间智能硬件产品线的研发落地，及INMO AIOS 系统的持续迭代升级，加强硬件与软件底层核心能力构建；同时，加大品牌建设与全渠道布局，完善商业化能力，推动产品破圈，实现业务加速增长。\n目前，影目科技已正式启动上市筹备工作，近年来公司营收增速连续保持200%以上。\n智能眼镜正在被推向消费电子领域最受关注的位置。IDC数据显示，2025年全球AI智能眼镜出货量同比增幅超过200%；中国市场增速更为显著，洛图科技统计显示，2026上半年国内智能眼镜全渠道销量已达90.9万台，同比增长85.5%，对应销售额18.8亿元，同比增长98.7%。\n市场规模快速抬升，但能够真正撬动大众用户心智的标杆级产品仍未出现。过去几年，行业主流产品形态始终停留在“让眼镜能显示”的初级阶段，普遍采用Birdbath方案加外接计算单元的组合，本质上是把“显示”做到了眼镜上，但“算力”仍依赖外部设备。\n影目科技创始人兼CEO杨龙昇指出，“显示本身并不构成独立的终端价值。用户真正需要的不是一个戴在脸上的屏幕，而是一个能脱离手机独立运作的智能体。市场需求正在经历从‘手机配件’向‘独立终端’的关键转折。”\n这一判断的背后，是产品结构的切实变化。2026年一季度，带屏AI智能眼镜销量占比已升至60%；一体式AR眼镜与分体式产品的销量占比，更从2025年一季度的9:91快速转变为2026年二季度的47:53。可以看到，用户对“独立终端”的接受度正处于迅猛提升态势。\n在杨龙昇看来，智能眼镜是否成为“下一代终端”，必须回答三个问题——它能不能脱离手机独立运行？它能不能提供手机给不了的价值？它能不能在日常佩戴中做到无感？\n它们的答案都指向同一个方向：一体化。\n影目科技成立于2020年底，作为国内最早入局消费级智能眼镜的品牌之一，团队一开始便坚定轻量一体化的技术路线，把光学显示、本地计算、AI感知算力收拢集成在眼镜机身之内，以摆脱对手机、外接主机等外部设备的依赖。\n",
+      "entity_refs": [
+        {
+          "entity_id": "EN-2c941e17c27e4ee9",
+          "canonical_name": "硬氪",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        },
+        {
+          "entity_id": "EN-461be9b4c2e89d0f",
+          "canonical_name": "影目科技",
+          "entity_type": "organization_candidate",
+          "verification_status": "candidate"
+        }
+      ],
+      "claim_refs": [
+        "CL-ce803a71f3b4432c"
+      ],
+      "source_refs": [
+        "SA-ce9594eb83db39e0"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "ai_market_category",
+          "dimension_name": "AI 市场类别",
+          "value_id": "enterprise_applications",
+          "value_name": "企业级应用",
+          "entity_ids": [
+            "EN-461be9b4c2e89d0f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-adc768008f5fefcc"
+        },
+        {
+          "dimension_id": "ai_market_subcategory",
+          "dimension_name": "AI 市场子类",
+          "value_id": "productivity_enterprise_workflows",
+          "value_name": "生产力与企业工作流",
+          "entity_ids": [
+            "EN-461be9b4c2e89d0f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-c791570495330f96"
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "ai_device",
+          "value_name": "AI 设备",
+          "entity_ids": [
+            "EN-461be9b4c2e89d0f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-7a6ec2205cdbfa45"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "business_user",
+          "value_name": "企业用户",
+          "entity_ids": [
+            "EN-461be9b4c2e89d0f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-99ce56fd8b6dd99f"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "consumer",
+          "value_name": "个人用户",
+          "entity_ids": [
+            "EN-461be9b4c2e89d0f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-82a48519de2cc661"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "content_creation",
+          "value_name": "内容创作",
+          "entity_ids": [
+            "EN-461be9b4c2e89d0f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-0a8ea7d6533b3272"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "knowledge_search",
+          "value_name": "知识与搜索",
+          "entity_ids": [
+            "EN-461be9b4c2e89d0f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-7e4e11ba44afe837"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "productivity_enterprise_workflows",
+          "value_name": "生产力与企业工作流",
+          "entity_ids": [
+            "EN-461be9b4c2e89d0f"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-ce72fc43bad90848"
+        },
+        {
+          "dimension_id": "technology",
+          "dimension_name": "技术",
+          "value_id": "agentic_execution",
+          "value_name": "智能体",
+          "entity_ids": [
+            "EN-461be9b4c2e89d0f"
+          ],
+          "provenance": "claim_assertion",
+          "assertion_ref": ""
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [
+          {
+            "value_id": "engineering_team",
+            "claim_ref": "CL-ce803a71f3b4432c",
+            "source_refs": [
+              "SA-ce9594eb83db39e0"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "team_or_function": [
+          {
+            "value_id": "engineering",
+            "claim_ref": "CL-ce803a71f3b4432c",
+            "source_refs": [
+              "SA-ce9594eb83db39e0"
+            ],
+            "provenance": "exact_claim_rule"
+          }
+        ],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-ce803a71f3b4432c",
+            "source_refs": [
+              "SA-ce9594eb83db39e0"
+            ],
+            "provenance": "event_type_rule"
+          }
+        ]
+      },
+      "opportunitySignals": {
+        "labels": {
+          "buyer_or_user": [
+            "engineering_team"
+          ],
+          "team_or_function": [
+            "engineering"
+          ],
+          "specific_task": [],
+          "pain_or_constraint": [],
+          "product_form": [],
+          "delivery_model": [],
+          "business_action": [
+            "funding_round"
+          ]
+        }
+      }
+    },
+    {
+      "id": "EV-e2a94eb223c11a66",
+      "event_id": "EV-e2a94eb223c11a66",
+      "event_type": "funding",
+      "publication_status": "verified",
+      "title": "首创“玩偶+主机”模式，多智能体儿童AI玩具品牌获数千万元融资-36氪",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "date": "2026-09-26",
+      "event_time": "2026-04-20",
+      "sourceUrl": "https://www.36kr.com/p/3774692365206280",
+      "sourceName": "36氪",
+      "subject": "北京灵机天赐科技有限责任公司",
+      "sourceExcerpt": "硬氪获悉，北京灵机天赐科技有限责任公司（下称“灵机天赐”）于过去一年内完成两轮数千万元人民币融资，天使轮由德联资本领投，小恐龙基金和瑞昇基金跟投，Pre-A轮由Implic Capital领投，两轮融资均由探奇资本担任公司独家财务顾问。",
+      "entity_refs": [
+        {
+          "entity_id": "EN-bd86ebd32193b381",
+          "canonical_name": "北京灵机天赐科技有限责任公司",
+          "entity_type": "organization_candidate",
+          "verification_status": "verified"
+        }
+      ],
+      "claim_refs": [
+        "CL-dfd4f1e449167c14"
+      ],
+      "source_refs": [
+        "SA-ade8b7fc5df62624"
+      ],
+      "taxonomy_version": "TAG-V4.1",
+      "classifications": [
+        {
+          "dimension_id": "ai_market_category",
+          "dimension_name": "AI 市场类别",
+          "value_id": "enterprise_applications",
+          "value_name": "企业级应用",
+          "entity_ids": [
+            "EN-bd86ebd32193b381"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-a2e6a44e58a53ad9"
+        },
+        {
+          "dimension_id": "ai_market_subcategory",
+          "dimension_name": "AI 市场子类",
+          "value_id": "productivity_enterprise_workflows",
+          "value_name": "生产力与企业工作流",
+          "entity_ids": [
+            "EN-bd86ebd32193b381"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-d805c8c342d74064"
+        },
+        {
+          "dimension_id": "industry",
+          "dimension_name": "行业",
+          "value_id": "education",
+          "value_name": "教育",
+          "entity_ids": [
+            "EN-bd86ebd32193b381"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-5efdcaf1426c00f3"
+        },
+        {
+          "dimension_id": "industry",
+          "dimension_name": "行业",
+          "value_id": "retail_ecommerce",
+          "value_name": "零售与电商",
+          "entity_ids": [
+            "EN-bd86ebd32193b381"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-b1b729d8b58bdac3"
+        },
+        {
+          "dimension_id": "product_form",
+          "dimension_name": "产品形态",
+          "value_id": "ai_device",
+          "value_name": "AI 设备",
+          "entity_ids": [
+            "EN-bd86ebd32193b381"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-56a10fd251bb0a0f"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "consumer",
+          "value_name": "个人用户",
+          "entity_ids": [
+            "EN-bd86ebd32193b381"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-0f6fb1a5ec6d926a"
+        },
+        {
+          "dimension_id": "target_user",
+          "dimension_name": "目标用户",
+          "value_id": "student",
+          "value_name": "学生",
+          "entity_ids": [
+            "EN-bd86ebd32193b381"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-7412eb168a8fff4b"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "content_creation",
+          "value_name": "内容创作",
+          "entity_ids": [
+            "EN-bd86ebd32193b381"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-89f834e4a1150587"
+        },
+        {
+          "dimension_id": "use_case",
+          "dimension_name": "应用场景",
+          "value_id": "education_learning",
+          "value_name": "教育与学习",
+          "entity_ids": [
+            "EN-bd86ebd32193b381"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "assertion_ref": "REC-6414680bf9853166"
+        }
+      ],
+      "application_assertions": {
+        "buyer_or_user": [],
+        "team_or_function": [],
+        "specific_task": [],
+        "pain_or_constraint": [],
+        "product_form": [],
+        "delivery_model": [],
+        "business_action": [
+          {
+            "value_id": "funding_round",
+            "claim_ref": "CL-dfd4f1e449167c14",
+            "source_refs": [
+              "SA-ade8b7fc5df62624"
             ],
             "provenance": "event_type_rule"
           }
@@ -11463,7 +13287,7 @@
           "entity_id": "EN-3a7bd3e2360a3d29",
           "canonical_name": "Apple",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-bbdefa2950f49882",
@@ -12011,7 +13835,7 @@
           "entity_id": "EN-3a7bd3e2360a3d29",
           "canonical_name": "Apple",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -12863,7 +14687,7 @@
           "entity_id": "EN-3a7bd3e2360a3d29",
           "canonical_name": "Apple",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-4df6f0f59120b360",
@@ -28310,7 +30134,7 @@
           "entity_id": "EN-3a7bd3e2360a3d29",
           "canonical_name": "Apple",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-bbdefa2950f49882",
@@ -29263,7 +31087,7 @@
           "entity_id": "EN-3a7bd3e2360a3d29",
           "canonical_name": "Apple",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-162c285ba170109d",
@@ -31897,7 +33721,7 @@
           "entity_id": "EN-3a7bd3e2360a3d29",
           "canonical_name": "Apple",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-1b8e01fe2073b142",
@@ -32206,7 +34030,7 @@
           "entity_id": "EN-3a7bd3e2360a3d29",
           "canonical_name": "Apple",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-bbdefa2950f49882",
@@ -32843,7 +34667,7 @@
           "entity_id": "EN-3a7bd3e2360a3d29",
           "canonical_name": "Apple",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -34839,7 +36663,7 @@
           "entity_id": "EN-3a7bd3e2360a3d29",
           "canonical_name": "Apple",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-af3ceabbe048a291",
@@ -36393,7 +38217,7 @@
           "entity_id": "EN-3a7bd3e2360a3d29",
           "canonical_name": "Apple",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-f426aa404fdfcce0",
@@ -79437,7 +81261,7 @@
           "entity_id": "EN-3a7bd3e2360a3d29",
           "canonical_name": "Apple",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-730c34b6d16d0ce0",
@@ -79624,7 +81448,7 @@
           "entity_id": "EN-3a7bd3e2360a3d29",
           "canonical_name": "Apple",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-a1d3b3832f620f7f",
@@ -80222,7 +82046,7 @@
           "entity_id": "EN-3a7bd3e2360a3d29",
           "canonical_name": "Apple",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-162c285ba170109d",
@@ -88822,7 +90646,7 @@
           "entity_id": "EN-3a7bd3e2360a3d29",
           "canonical_name": "Apple",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-0b9ca57f53ba758b",
@@ -89513,7 +91337,7 @@
           "entity_id": "EN-3a7bd3e2360a3d29",
           "canonical_name": "Apple",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-db36e7bd45191ce4",
@@ -91313,7 +93137,7 @@
           "entity_id": "EN-3a7bd3e2360a3d29",
           "canonical_name": "Apple",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         }
       ],
       "claim_refs": [
@@ -100511,7 +102335,7 @@
           "entity_id": "EN-3a7bd3e2360a3d29",
           "canonical_name": "Apple",
           "entity_type": "organization_candidate",
-          "verification_status": "candidate"
+          "verification_status": "verified"
         },
         {
           "entity_id": "EN-fc2dd90a306ec0ba",

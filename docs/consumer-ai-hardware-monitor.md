@@ -28,3 +28,9 @@
 `node --test agent-workflow/tools/tests/china-funding-lane.test.mjs agent-workflow/tools/tests/consumer-ai-hardware-monitor.test.mjs`
 
 `node agent-workflow/tools/run-guanlan-daily-monitor.mjs --query-selection-regression-fixtures=true`
+
+## 检索服务故障恢复
+
+Tavily/Exa不可用时，可使用网页搜索或公司、投资方官网导航发现来源，生成 `FUNDING-RESEARCH-SEEDS-V1` 清单。以事件ID和已核验公司名绑定每组URL，记录发现渠道和查询，不保存搜索摘要作为正文。运行融资生成器时传 `--research-seeds=<清单路径>`，即可跳过失效搜索API，直接抓取原始页面。正文缓存位于仓外私有证据库的 funding-research 目录，重试复用已抓取正文。仍执行公司身份、至少两份引用来源、逐项精确引用、金额和发布门禁。
+
+人工接受的qa_repair只有在来源散列和精确引用重新通过校验时才优先于标题规则；未审核或过期修复不生效。原文确认融资但未披露本轮金额时明确显示“未披露”；累计金额和估值不替代单轮金额。

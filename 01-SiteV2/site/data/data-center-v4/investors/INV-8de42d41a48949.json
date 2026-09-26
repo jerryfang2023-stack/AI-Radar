@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T00:27:56.714Z",
+    "generatedAt": "2026-09-26T05:32:44.840Z",
     "latestDataDate": "2026-09-26",
     "currentDate": "2026-09-26",
-    "eventCount": 3576,
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-f389faf9d7a68a79",
@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 5,
-    "historical_or_ambiguous_count": 3,
+    "historical_or_ambiguous_count": 4,
     "portfolio_company_count": 5,
     "market_regions": [
       "CN"
@@ -73,7 +73,7 @@
     "latest_disclosed_at": "2026-08-31",
     "role_counts": {
       "co_lead": 1,
-      "historical_or_ambiguous": 3,
+      "historical_or_ambiguous": 4,
       "lead": 1,
       "participant": 3
     },
@@ -395,6 +395,46 @@
         ]
       },
       {
+        "activity_id": "IA-bba33d181aaea9e6",
+        "funding_insight_id": "FI-4dd698330bc72de1",
+        "event_ids": [
+          "EV-51d8aec94225e9c6"
+        ],
+        "company_entity_id": "EN-78e778b471fd74fd",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳跃然创新科技有限公司",
+        "round": "A+轮",
+        "round_code": "series_a_plus",
+        "round_original": "A+轮",
+        "amount_original": "未披露",
+        "amount_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "unparsed",
+          "display_zh": "未披露"
+        },
+        "announced_at": "2026-03-30",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-c5b971b07e7344e1",
+            "source_url": "https://m.sohu.com/a/1000028992_112831",
+            "source_title": "蚂蚁集团入股跃然创新，后者首家线下门店将开业_玩具公司_产品_CocoMate",
+            "source_content_hash": "8e101d53ff314a01",
+            "quote": "2025年8月，跃然创新宣布完成 2 亿元 A 轮系列融资，由中金资本旗下基金、红杉中国、华山资本、愉悦资本领投，招银国际等共同参投，Brizan Ventures 等老股东持续加注。",
+            "quote_hash": "c03ad7bf0c5c08ba90e3a3b1f2780303d379c56602f9b11f3c90a8e797667252"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-e5a9e91ab0abc64f",
         "funding_insight_id": "FI-edc4e4cec2cd84bd",
         "event_ids": [
@@ -492,6 +532,14 @@
         "source_content_hash": "3702873b1eb4ff8e5e57340525e023aaebb06221f09393a8e2e6a2cdaa7d70cd",
         "quote": "私募股权基金则包括 中金资本 旗下基金、 普华资本 、 洪泰基金 、广发乾",
         "quote_hash": "3bdc1a33ff6a55bff382b7f49d6a83110fe46742929cbd7b25b235b1c4903305"
+      },
+      {
+        "source_id": "FISRC-c5b971b07e7344e1",
+        "source_url": "https://m.sohu.com/a/1000028992_112831",
+        "source_title": "蚂蚁集团入股跃然创新，后者首家线下门店将开业_玩具公司_产品_CocoMate",
+        "source_content_hash": "8e101d53ff314a01",
+        "quote": "2025年8月，跃然创新宣布完成 2 亿元 A 轮系列融资，由中金资本旗下基金、红杉中国、华山资本、愉悦资本领投，招银国际等共同参投，Brizan Ventures 等老股东持续加注。",
+        "quote_hash": "c03ad7bf0c5c08ba90e3a3b1f2780303d379c56602f9b11f3c90a8e797667252"
       },
       {
         "source_id": "FISRC-fdfe58e2e68c7e9e",

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T00:27:56.714Z",
+    "generatedAt": "2026-09-26T05:32:44.840Z",
     "latestDataDate": "2026-09-26",
     "currentDate": "2026-09-26",
-    "eventCount": 3576,
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-f389faf9d7a68a79",
@@ -61,27 +61,34 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
-    "first_disclosed_at": "2026-06-09",
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
+    "first_disclosed_at": "2026-04-20",
     "latest_disclosed_at": "2026-06-09",
     "role_counts": {
-      "co_lead": 1
+      "co_lead": 1,
+      "lead": 1
     },
     "round_codes": [
-      "angel"
+      "angel",
+      "multi_round"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-2d7f06eea6faf716",
         "canonical_entity_id": "EN-2d7f06eea6faf716",
         "name": "华超神控"
+      },
+      {
+        "entity_id": "EN-bd86ebd32193b381",
+        "canonical_entity_id": "",
+        "name": "灵机天赐"
       }
     ],
     "activities": [
@@ -124,6 +131,46 @@
             "quote_hash": "2542036de1821f5046832f7c50bbdf2a03dabd50f99e97d9183ee496859af3f8"
           }
         ]
+      },
+      {
+        "activity_id": "IA-b8632fb337b207ff",
+        "funding_insight_id": "FI-e72a9d23ed4e8b05",
+        "event_ids": [
+          "EV-e2a94eb223c11a66"
+        ],
+        "company_entity_id": "EN-bd86ebd32193b381",
+        "company_canonical_entity_id": "",
+        "company_name": "灵机天赐",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-04-20",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-4a75e97ab3db73ce",
+            "source_url": "https://www.36kr.com/p/3774692365206280",
+            "source_title": "36氪首发 | 首创“玩偶+主机”模式，多智能体儿童AI玩具品牌获数千万元融资-36氪",
+            "source_content_hash": "72c1f2f0410dadc0cd0d74a453f321805175f61b09fee6f5fd6790e21e0f625b",
+            "quote": "天使轮由德联资本领投，小恐龙基金和瑞昇基金跟投",
+            "quote_hash": "5dd0eb31246f0328811c28a27bf8925921fad675eb9e93461a3505c71fdb68ce"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +181,14 @@
         "source_content_hash": "6d658d71e68a7dd4",
         "quote": "天使轮融资由经纬创投领投，天使+轮由德联资本、道远资本联合领投",
         "quote_hash": "2542036de1821f5046832f7c50bbdf2a03dabd50f99e97d9183ee496859af3f8"
+      },
+      {
+        "source_id": "FISRC-4a75e97ab3db73ce",
+        "source_url": "https://www.36kr.com/p/3774692365206280",
+        "source_title": "36氪首发 | 首创“玩偶+主机”模式，多智能体儿童AI玩具品牌获数千万元融资-36氪",
+        "source_content_hash": "72c1f2f0410dadc0cd0d74a453f321805175f61b09fee6f5fd6790e21e0f625b",
+        "quote": "天使轮由德联资本领投，小恐龙基金和瑞昇基金跟投",
+        "quote_hash": "5dd0eb31246f0328811c28a27bf8925921fad675eb9e93461a3505c71fdb68ce"
       }
     ],
     "public_profile": {
@@ -148,6 +203,10 @@
         {
           "description": "融资来源记录：华超神控 · 天使轮 · 2026-06-09 · 本轮联合领投 · 亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-cb7eea4a6bd98034"
+        },
+        {
+          "description": "融资来源记录：灵机天赐 · 多轮融资 · 2026-04-20 · 本轮领投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-4a75e97ab3db73ce"
         }
       ],
       "contacts": [],
@@ -159,6 +218,14 @@
           "source_content_hash": "6d658d71e68a7dd4",
           "quote": "天使轮融资由经纬创投领投，天使+轮由德联资本、道远资本联合领投",
           "quote_hash": "2542036de1821f5046832f7c50bbdf2a03dabd50f99e97d9183ee496859af3f8"
+        },
+        {
+          "source_id": "FISRC-4a75e97ab3db73ce",
+          "source_url": "https://www.36kr.com/p/3774692365206280",
+          "source_title": "36氪首发 | 首创“玩偶+主机”模式，多智能体儿童AI玩具品牌获数千万元融资-36氪",
+          "source_content_hash": "72c1f2f0410dadc0cd0d74a453f321805175f61b09fee6f5fd6790e21e0f625b",
+          "quote": "天使轮由德联资本领投，小恐龙基金和瑞昇基金跟投",
+          "quote_hash": "5dd0eb31246f0328811c28a27bf8925921fad675eb9e93461a3505c71fdb68ce"
         }
       ],
       "last_verified_at": "2026-09-25"

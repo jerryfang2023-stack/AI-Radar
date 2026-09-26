@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T00:27:56.714Z",
+    "generatedAt": "2026-09-26T05:32:44.840Z",
     "latestDataDate": "2026-09-26",
     "currentDate": "2026-09-26",
-    "eventCount": 3576,
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-f389faf9d7a68a79",
@@ -62,16 +62,17 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 3,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-06-17",
+    "first_disclosed_at": "2025-09-16",
     "latest_disclosed_at": "2026-09-22",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "other_current_round": 2,
       "participant": 1
     },
@@ -217,6 +218,46 @@
             "quote_hash": "1dc60799a251a7ee9baca1d4db39e00312e6b360748a03aeaf7039b1ef047a15"
           }
         ]
+      },
+      {
+        "activity_id": "IA-d94ad59223df3689",
+        "funding_insight_id": "FI-e5aed52f8dab81de",
+        "event_ids": [
+          "EV-60366423eaa67216"
+        ],
+        "company_entity_id": "EN-1785cfc3bc6ac773",
+        "company_canonical_entity_id": "",
+        "company_name": "Nothing",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "amount_original": "$200 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2 亿美元"
+        },
+        "announced_at": "2025-09-16",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-f6fdd5655f9959e9",
+            "source_url": "https://nothing.tech/community-investment-3",
+            "source_title": "Community Investment (3) | Nothing | UK",
+            "source_content_hash": "f9b71df0af1c23e2",
+            "quote": "along with leading tech entrepreneurs like Tony Fadell (Future Shape, inventor of the iPod), Casey Neistat, Nikhil Kamath (co-founder Zerodha), Kevin Lin (co-founder of Twitch), Steve Huffman (CEO of Reddit), Garry Tan (CEO of Y Combinator), and many others.",
+            "quote_hash": "17236f745d8e9a6cbfb9326b7ef9d8ccbd3ec2f099f5183bbd9bdf02fe9eb78c"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -243,6 +284,14 @@
         "source_content_hash": "75587989c4b9271c",
         "quote": "These include Jeff Dean, Elad Gil, Garry Tan, Guillermo Rauch, and Cruise founder Kyle Vogt.",
         "quote_hash": "1dc60799a251a7ee9baca1d4db39e00312e6b360748a03aeaf7039b1ef047a15"
+      },
+      {
+        "source_id": "FISRC-f6fdd5655f9959e9",
+        "source_url": "https://nothing.tech/community-investment-3",
+        "source_title": "Community Investment (3) | Nothing | UK",
+        "source_content_hash": "f9b71df0af1c23e2",
+        "quote": "along with leading tech entrepreneurs like Tony Fadell (Future Shape, inventor of the iPod), Casey Neistat, Nikhil Kamath (co-founder Zerodha), Kevin Lin (co-founder of Twitch), Steve Huffman (CEO of Reddit), Garry Tan (CEO of Y Combinator), and many others.",
+        "quote_hash": "17236f745d8e9a6cbfb9326b7ef9d8ccbd3ec2f099f5183bbd9bdf02fe9eb78c"
       }
     ],
     "public_profile": {

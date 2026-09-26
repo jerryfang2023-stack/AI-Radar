@@ -263,10 +263,11 @@ function fundingAmountMentions(value = "") {
       /(?:完成|获得|获)[^，,：:；;。！？.!?]{0,32}$/u.test(before) && /^[^，,：:；;。！？.!?]{0,24}融资/u.test(after)
       ||
       /(?:融资|筹集|募资|raises?|raised|raising|secured|expanded\s+its\s+(?:seed\s+)?funding\s+by|funding\s+round|round\s+of)[^，,：:；;。！？.!?]{0,48}$/iu.test(before)
+      || (!/previously\s+(?:undisclosed|announced|raised)/iu.test(text) && /(?:closes?|closed)[^，,：:；;。！？.!?]{0,48}$/iu.test(before))
       || /^\s*(?:(?:的\s*)?(?:(?:(?:Pre[-\s]?)?[A-Z](?:\d+|\+)?|天使|种子|战略)\s*轮\s*)?融资|(?:funding\s+round|round)\b)/iu.test(after)
     );
     const qualifier = before.match(/(?:超过|超|逾|至少|接近|将近|近|约|\b(?:just over|over|more than|at least|about|approximately|nearly))\s*$/iu)?.[0] || "";
-    return { raw: clean(`${qualifier}${match[0]}`), valuation, round };
+    return { raw: clean(`${qualifier}${match[0]}`), valuation, cumulative, round };
   });
 }
 
@@ -304,7 +305,9 @@ function fundingEventAmountSemantics(event = {}, claims = []) {
     .flatMap((claim) => [claim.object, claim.source_quote])
     .map(clean)
     .filter(Boolean);
-  const texts = [event.object, ...claimTexts, event.display_title_zh].map(clean).filter(Boolean);
+  // Accepted original claims take precedence over compressed headlines, which
+  // can present cumulative proceeds as though they belong to this round.
+  const texts = [event.object, ...claimTexts, ...(!claimTexts.length ? [event.display_title_zh] : [])].map(clean).filter(Boolean);
   const preliminary = texts.some((text) => (
     /\bin talks\b|\btalking to\b|\b(?:seeking to|plans? to|aims? to|looking to|would)\s+(?:raise|secure)\b|拟融资|计划融资|寻求融资|融资洽谈|正在洽谈|正在谈判/iu.test(text)
   ));
@@ -316,7 +319,7 @@ function fundingEventAmountSemantics(event = {}, claims = []) {
       && normalizeFundingAmount(metric).status === normalizeFundingAmount(roundMention.raw).status) || roundMention.raw
     : "";
   return {
-    excluded: preliminary || (!roundAmount && mentions.some((mention) => mention.valuation)),
+    excluded: preliminary || (!roundAmount && mentions.some((mention) => mention.valuation || mention.cumulative)),
     roundAmount,
   };
 }
@@ -1120,6 +1123,10 @@ export function fundingEventCardConsistencyProblems(card = {}, event = {}, claim
     || isPendingFundingTitle(event.display_title_zh)) return ["funding_event_not_completed"];
   const acceptedClaims = claims.filter((claim) => (event.claim_refs || []).includes(claim.claim_id)
     && claim.claim_type === "funding" && claim.verification_status === "accepted");
+  if (!canonicalFundingEventAmount(event, claims) && normalizeFundingAmount(card.financing?.amount).currency
+    && acceptedClaims.some((claim) => fundingAmountMentions(claim.source_quote).some((mention) => mention.cumulative))) {
+    return ["funding_cumulative_amount_used_as_round"];
+  }
   if (acceptedClaims.some((claim) => /\bseries\s+[a-g]\s+\d+\s*(?:hours?|days?|weeks?|months?|years?)\b/iu.test(claim.source_quote || ""))
     && normalizeFundingRound(card.financing?.round).code !== canonicalFundingEventRound(event, claims).code) {
     return ["funding_current_round_label_mismatch"];
@@ -1153,6 +1160,7 @@ export function fundingEventCardConsistencyProblems(card = {}, event = {}, claim
   )));
   if (!companyClaims.length) return ["funding_event_company_claim_missing"];
   const canonicalAmount = canonicalFundingEventAmount(event, claims);
+  if (!canonicalAmount && !normalizeFundingAmount(card.financing?.amount).currency) return [];
   const primaryNamesRecipient = companyNames.some((name) => normalizedName(name).length >= 4
     && normalizedName(acceptedClaims[0]?.source_quote).includes(normalizedName(name)));
   if (canonicalAmount && normalizeFundingAmount(canonicalAmount).currency && primaryNamesRecipient
@@ -1368,6 +1376,9 @@ export function subjectCompanyForEvent(event, entities, entityIndex = {}, claims
       .filter((candidate) => candidate.matched);
     if (subjectMatches.length === 1) {
       const entity = subjectMatches[0].entity;
+      // Do not replace an exact accepted legal recipient with an appositive
+      // such as "AI玩具公司深圳…有限公司" captured by the broad prose regex.
+      if (claimInferredCompanyName && normalizedName(claimInferredCompanyName).endsWith(normalizedName(entity.canonical_name))) return entity;
       return claimInferredCompanyName
         ? {
             ...entity,
@@ -1449,6 +1460,11 @@ export function subjectCompanyForEvent(event, entities, entityIndex = {}, claims
 }
 
 export function isEligibleFundingInsightEvent(event = {}, claims = []) {
+  const amount = canonicalFundingEventAmount(event, claims);
+  const verifiedUndisclosed = !amount && claims.some((claim) => (event.claim_refs || []).includes(claim.claim_id)
+    && claim.claim_type === "funding" && claim.verification_status === "accepted"
+    && claim.qualifiers?.funding_amount_status === "not_disclosed"
+    && /(?:完成|获得|获|筹集).{0,40}(?:融资|投资)|\b(?:raised|raises|closed|secured)\b/iu.test(claim.source_quote || ""));
   return event.event_type === "funding"
     && (!event.event_status || ["announced", "completed"].includes(event.event_status))
     && event.publication_status === "verified"
@@ -1457,7 +1473,7 @@ export function isEligibleFundingInsightEvent(event = {}, claims = []) {
     && !isPendingFundingTitle(event.display_title_zh)
     && !fundingTrancheDisclosureNeedsReview(event, claims)
     && !fundingCombinedRoundsNeedReview(event, claims)
-    && Boolean(normalizeFundingAmount(canonicalFundingEventAmount(event, claims)).currency);
+    && (Boolean(normalizeFundingAmount(amount).currency) || verifiedUndisclosed);
 }
 
 export function evidenceProblems(evidenceRefs = [], sourceById = new Map(), prefix = "evidence") {
@@ -1660,18 +1676,13 @@ export function ensureCanonicalFundingEvidence(payload = {}, bundle = {}, event 
     }
   }
   const eventAmount = canonicalFundingEventAmount(event, bundle.claims || []);
-  const suppliedAmount = clean(payload.financing.amount);
   const eventNormalized = normalizeFundingAmount(eventAmount);
-  const suppliedNormalized = normalizeFundingAmount(suppliedAmount);
   if (eventNormalized.currency) {
     payload.financing.amount = eventAmount;
-  } else if (!suppliedNormalized.currency && !fundingEventAmountSemantics(event, bundle.claims || []).excluded) {
-    const claimAmount = (event.claim_refs || [])
-      .map((claimId) => claimById.get(claimId))
-      .filter((claim) => claim?.claim_type === "funding" && claim?.verification_status === "accepted")
-      .map((claim) => normalizeFundingAmount(claim.source_quote))
-      .find((amount) => amount.currency);
-    if (claimAmount) payload.financing.amount = claimAmount.display_zh;
+  } else {
+    // No source-bounded current-round amount: do not accept a model's total,
+    // valuation, registered capital or prior-round amount as current proceeds.
+    payload.financing.amount = "未披露";
   }
   if (/^\d{4}-\d{2}-\d{2}/u.test(clean(event.event_time))) {
     payload.financing.announced_at = clean(event.event_time).slice(0, 10);

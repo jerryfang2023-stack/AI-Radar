@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T00:27:56.714Z",
+    "generatedAt": "2026-09-26T05:32:44.840Z",
     "latestDataDate": "2026-09-26",
     "currentDate": "2026-09-26",
-    "eventCount": 3576,
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-f389faf9d7a68a79",
@@ -61,23 +61,31 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
-    "first_disclosed_at": "2026-09-15",
+    "first_disclosed_at": "2026-01-05",
     "latest_disclosed_at": "2026-09-15",
     "role_counts": {
+      "lead": 1,
       "participant": 1
     },
     "round_codes": [
-      "series_b"
+      "series_b",
+      "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-86b7b29d698963ef",
+        "canonical_entity_id": "",
+        "name": "雷鸟创新"
+      },
       {
         "entity_id": "EN-24dd6fa3e1cbba97",
         "canonical_entity_id": "",
@@ -124,6 +132,46 @@
             "quote_hash": "6c4c7e786af8f1c6a645b416c03de78fe56dc7c68a3fec952cdda6d739fdd0b4"
           }
         ]
+      },
+      {
+        "activity_id": "IA-ee8e9e25bb9af983",
+        "funding_insight_id": "FI-ab50ad0e4f5c4b52",
+        "event_ids": [
+          "EV-419ddb2d5cfc799a"
+        ],
+        "company_entity_id": "EN-86b7b29d698963ef",
+        "company_canonical_entity_id": "",
+        "company_name": "雷鸟创新",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮融资",
+        "amount_original": "超 10 亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": 1000000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 10 亿元"
+        },
+        "announced_at": "2026-01-05",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-65e5af72dd9fd1d7",
+            "source_url": "https://www.ithome.com/0/910/387.htm",
+            "source_title": "雷鸟创新获移动、联通旗下基金投资，新一轮融资规模超 10 亿",
+            "source_content_hash": "55f6b3711b400c2514c71ca290d985e8b760d997f355e1fbf3782df15e43a5be",
+            "quote": "本轮融资由中国移动链长基金与中信金石（旗下茅台金石、金石成长等基金）领投",
+            "quote_hash": "76fd28339449e22791553783ee384b9f17c0279ae426975cd81299720810cd08"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +182,14 @@
         "source_content_hash": "e86bd6fffaf894b4",
         "quote": "本轮投资方包括中信金石、纳爱斯、苏创投、华睿投资、南京交控、华瑞创投。",
         "quote_hash": "6c4c7e786af8f1c6a645b416c03de78fe56dc7c68a3fec952cdda6d739fdd0b4"
+      },
+      {
+        "source_id": "FISRC-65e5af72dd9fd1d7",
+        "source_url": "https://www.ithome.com/0/910/387.htm",
+        "source_title": "雷鸟创新获移动、联通旗下基金投资，新一轮融资规模超 10 亿",
+        "source_content_hash": "55f6b3711b400c2514c71ca290d985e8b760d997f355e1fbf3782df15e43a5be",
+        "quote": "本轮融资由中国移动链长基金与中信金石（旗下茅台金石、金石成长等基金）领投",
+        "quote_hash": "76fd28339449e22791553783ee384b9f17c0279ae426975cd81299720810cd08"
       }
     ],
     "public_profile": {
@@ -148,6 +204,10 @@
         {
           "description": "融资来源记录：因克斯 · B轮 · 2026-09-15 · 本轮参投 · 超3亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d0c3dca85d845330"
+        },
+        {
+          "description": "融资来源记录：雷鸟创新 · 轮次未披露 · 2026-01-05 · 本轮领投 · 超 10 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-65e5af72dd9fd1d7"
         }
       ],
       "contacts": [],
@@ -159,6 +219,14 @@
           "source_content_hash": "e86bd6fffaf894b4",
           "quote": "本轮投资方包括中信金石、纳爱斯、苏创投、华睿投资、南京交控、华瑞创投。",
           "quote_hash": "6c4c7e786af8f1c6a645b416c03de78fe56dc7c68a3fec952cdda6d739fdd0b4"
+        },
+        {
+          "source_id": "FISRC-65e5af72dd9fd1d7",
+          "source_url": "https://www.ithome.com/0/910/387.htm",
+          "source_title": "雷鸟创新获移动、联通旗下基金投资，新一轮融资规模超 10 亿",
+          "source_content_hash": "55f6b3711b400c2514c71ca290d985e8b760d997f355e1fbf3782df15e43a5be",
+          "quote": "本轮融资由中国移动链长基金与中信金石（旗下茅台金石、金石成长等基金）领投",
+          "quote_hash": "76fd28339449e22791553783ee384b9f17c0279ae426975cd81299720810cd08"
         }
       ],
       "last_verified_at": "2026-09-25"
