@@ -179782,19 +179782,126 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "深圳天使母基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "coverage_note": "本档案对应深圳市天使投资引导基金有限公司（简称“深圳天使母基金”），与受托运营的管理公司区分。官网披露规模100亿元，未披露实缴或可投资余额。2026年度指南中的子基金规模、出资比例等为申报规则，不代表母基金现有投资组合或业绩。无界智航为一笔公开融资案例，该轮近亿元融资额不等于母基金出资额。",
+        "summary": "深圳天使母基金是深圳市政府发起设立的战略性、政策性天使母基金，官网披露规模100亿元，主要通过投资天使子基金引导社会资本支持种子期、初创期企业及战略性新兴产业、未来产业。官方披露的管理公司由深投控和深创投联合设立并按市场化方式运营管理。公开融资记录列有其参与无界智航天使轮；该基金单独出资额未披露。",
+        "facts": [
+          {
+            "field": "legal_name",
+            "label": "基金全称与简称",
+            "value": "深圳市天使投资引导基金有限公司，简称“深圳天使母基金”。",
+            "source_id": "sz_angel_fund_overview_2026"
+          },
+          {
+            "field": "sponsor",
+            "label": "发起出资方",
+            "value": "深圳市引导基金投资有限公司出资设立。",
+            "source_id": "sz_angel_guideline_2026"
+          },
+          {
+            "field": "manager",
+            "label": "受托管理公司",
+            "value": "深圳市天使投资引导基金管理有限公司；该管理公司由深圳市投资控股有限公司与深圳市创新投资集团有限公司联合设立，按市场化方式运营管理。",
+            "source_id": "sz_angel_manager_2026"
+          },
+          {
+            "field": "fund_scale",
+            "label": "官网披露规模",
+            "value": "人民币100亿元；官网未同时披露实缴金额或可投资余额。",
+            "source_id": "sz_angel_fund_overview_2026"
+          },
+          {
+            "field": "investment_strategy",
+            "label": "投资方式与方向",
+            "value": "主要通过投资各类天使子基金引导社会资本投向天使类项目，并培育战略性新兴产业和未来产业。",
+            "source_id": "sz_angel_guideline_2026"
+          },
+          {
+            "field": "subfund_rules",
+            "label": "2026年子基金申报规则",
+            "value": "单支子基金出资规模原则上不超过2亿元；母基金出资比例原则上不超过子基金认缴总额的40%。这是子基金规则，不是母基金的单笔项目投资额。",
+            "source_id": "sz_angel_guideline_2026"
+          }
+        ],
         "milestones": [],
         "track_record": [
+          {
+            "description": "投资界2026年报道列示深圳天使母基金参与无界智航近亿元天使轮。报道未披露该母基金的单独出资额；融资轮次金额不代表基金投入金额。",
+            "source_id": "pedaily_xspark_wujiehang_2026"
+          },
           {
             "description": "融资来源记录：无界智航 · 天使轮 · 2026-07-10 · 本轮参投 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
             "source_id": "FISRC-086ff36dfb7673e8"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "管理公司官方网站",
+            "value": "深圳天使母基金管理公司",
+            "url": "https://www.tsfof.com/tsfof/tsfof-about/company/index.html",
+            "source_id": "sz_angel_manager_2026"
+          },
+          {
+            "kind": "phone",
+            "label": "管理公司公开联系电话",
+            "value": "0755-26165888",
+            "source_id": "sz_angel_manager_contact_2026"
+          },
+          {
+            "kind": "email",
+            "label": "管理公司公开邮箱",
+            "value": "tsfof@tsfof.com",
+            "source_id": "sz_angel_manager_contact_2026"
+          },
+          {
+            "kind": "address",
+            "label": "管理公司办公地址",
+            "value": "深圳市福田区深南大道1006号深圳国际创新中心B栋二十七层",
+            "source_id": "sz_angel_manager_contact_2026"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "sz_angel_fund_overview_2026",
+            "source_url": "https://www.tsfof.com/tsfof/tsfof-about/brief/index.html",
+            "source_title": "基金简介｜深圳市天使投资引导基金官方网站",
+            "source_content_hash": "a0f014908d7a5308c1602b55f33b0ccb5845422e66bd14ecc7fe4e7e3eb7e3fe",
+            "quote": "深圳市天使投资引导基金有限公司（简称“深圳天使母基金”）是深圳市人民政府投资发起设立的战略性、政策性基金；是深圳市对标国际一流，补齐创业投资短板，助力种子期、初创期企业发展的政策举措。深圳天使母基金由深圳市引导基金出资成立，目前规模100亿元，是国内规模最大的天使投资类政府引导基金。深圳天使母基金专注投资培育战略性新兴产业和未来产业",
+            "quote_hash": "4eaefa8e6fc3da1bea11cca56437cccc814e63549758312d92eb4e43416ee5f0"
+          },
+          {
+            "source_id": "sz_angel_manager_2026",
+            "source_url": "https://www.tsfof.com/tsfof/tsfof-about/company/index.html",
+            "source_title": "管理公司介绍｜深圳市天使投资引导基金官方网站",
+            "source_content_hash": "9131925dd273557f6325f635a332eb50aa8a6cf8f45683c33c125c6b0d671f54",
+            "quote": "深圳天使母基金委托由深投控和深创投联合设立的深圳市天使投资引导基金管理有限公司（简称“深圳天使母基金管理公司”）按市场化方式运营管理。",
+            "quote_hash": "314c2456a77bf22db8c0d6a43ff17d637af3f9321f2c0153b6b83af4eea0c426"
+          },
+          {
+            "source_id": "sz_angel_manager_contact_2026",
+            "source_url": "https://www.tsfof.com/tsfof/tsfof-about/company/index.html",
+            "source_title": "管理公司联系方式｜深圳市天使投资引导基金官方网站",
+            "source_content_hash": "9131925dd273557f6325f635a332eb50aa8a6cf8f45683c33c125c6b0d671f54",
+            "quote": "公司地址：深圳市福田区深南大道1006号深圳国际创新中心B栋二十七层 联系（投诉）电话：0755-26165888 邮箱：tsfof@tsfof.com",
+            "quote_hash": "14b685bd242029f53728570c382da99166a36039511f7687d5732332f4ee78b2"
+          },
+          {
+            "source_id": "sz_angel_guideline_2026",
+            "source_url": "https://www.tsfof.com/tsfof/tsfof-notice/notice/20260326/97494f59-77ae-44e8-a71b-5200a07bfc43.html",
+            "source_title": "深圳市天使投资引导基金申报指南及遴选办法（2026年版）",
+            "source_content_hash": "b8699a976a611228936d298d84db9c480ca0ba70b8ea5f8f1b4cb9730f6963d0",
+            "quote": "深圳市天使投资引导基金有限公司（以下简称“天使母基金”）由深圳市引导基金投资有限公司（以下简称“市引导基金”）出资设立，委托深圳市天使投资引导基金管理有限公司（以下简称“管理公司”）进行管理。天使母基金主要通过投资各类天使投资基金（以下简称“子基金”），发挥市场资源配置作用和财政资金引导放大作用，引导社会资本投向天使类项目，大力培育战略性新兴产业和未来产业，促进产业转型升级，助力深圳打造国际一流创新创业城市。",
+            "quote_hash": "4cf3b821c532858968ba457e6a86e2fcca233b0a5ffe1efcc65760ac5e0e6fee"
+          },
+          {
+            "source_id": "pedaily_xspark_wujiehang_2026",
+            "source_url": "https://news.pedaily.cn/202607/566101.shtml",
+            "source_title": "Xspark AI「无界智航」完成近亿元天使轮融资，加速Physical AI规模化落地｜投资界",
+            "source_content_hash": "d9771ea116d57f70",
+            "quote": "深圳天使母基金、水木校友种子基金等多家财务投资机构，以及北洋海棠基金、特步家办等产业方跟投",
+            "quote_hash": "54651cf92cd842b29f7774734acb91f2858e3248475b318f43f0f588873b701c"
+          },
           {
             "source_id": "FISRC-086ff36dfb7673e8",
             "source_url": "https://news.pedaily.cn/202607/566101.shtml",
