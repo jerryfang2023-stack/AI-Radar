@@ -1,0 +1,293 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-26T05:32:44.840Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
+    "quarantinedEventCount": 39,
+    "quarantinedEventIds": [
+      "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-cab18aa68c8ae551",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "entity": {
+    "id": "EN-2c941e17c27e4ee9",
+    "name": "硬氪",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-d4b0dd4de320089a"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-09",
+    "lastSeen": "2026-09-26",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-d4b0dd4de320089a"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-d4b0dd4de320089a",
+        "dataDate": "2026-09-26",
+        "date": "2026-09-09",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "头部智能眼镜品牌完成近10亿C轮融资，已正式启动上市筹备工作｜硬氪首发-36氪",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "enterprise_applications",
+            "name": "企业级应用",
+            "entityIds": [
+              "EN-461be9b4c2e89d0f"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-adc768008f5fefcc",
+            "fundingInsightId": "FI-dda12373316f0972"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-461be9b4c2e89d0f"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-c791570495330f96",
+            "fundingInsightId": "FI-dda12373316f0972"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_device",
+            "name": "AI 设备",
+            "entityIds": [
+              "EN-461be9b4c2e89d0f"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-7a6ec2205cdbfa45",
+            "fundingInsightId": "FI-dda12373316f0972"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "content_creation",
+            "name": "内容创作",
+            "entityIds": [
+              "EN-461be9b4c2e89d0f"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-0a8ea7d6533b3272",
+            "fundingInsightId": "FI-dda12373316f0972"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "knowledge_search",
+            "name": "知识与搜索",
+            "entityIds": [
+              "EN-461be9b4c2e89d0f"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-7e4e11ba44afe837",
+            "fundingInsightId": "FI-dda12373316f0972"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-461be9b4c2e89d0f"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-ce72fc43bad90848",
+            "fundingInsightId": "FI-dda12373316f0972"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-461be9b4c2e89d0f"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-461be9b4c2e89d0f"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-99ce56fd8b6dd99f",
+            "fundingInsightId": "FI-dda12373316f0972"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "consumer",
+            "name": "个人用户",
+            "entityIds": [
+              "EN-461be9b4c2e89d0f"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-82a48519de2cc661",
+            "fundingInsightId": "FI-dda12373316f0972"
+          }
+        ],
+        "entityIds": [
+          "EN-2c941e17c27e4ee9",
+          "EN-461be9b4c2e89d0f"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-96ee5d55283a5b86",
+      "snapshotKey": "96ee5d55283a5b86",
+      "snapshotId": "HWS-38b3776e32573592",
+      "eventId": "EV-d4b0dd4de320089a",
+      "eventIds": [
+        "EV-d4b0dd4de320089a"
+      ],
+      "dataDate": "2026-09-26",
+      "date": "2026-09-26",
+      "title": "硬氪",
+      "subject": "硬氪",
+      "productNames": [],
+      "hardwareType": "smart_glasses",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "10",
+          "unit": "亿",
+          "fact_ref": "HWF-85e10d13676a17b8"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-09-26",
+          "hardware_fact_id": "HWF-85e10d13676a17b8",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-09-09",
+          "subject_entity_id": "EN-2c941e17c27e4ee9",
+          "subject_name": "硬氪",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "smart_glasses",
+          "metric_value": "10",
+          "unit": "亿",
+          "source_quote": "硬氪获悉，全球智能眼镜品牌「影目科技」近日完成C3轮融资，由四川振兴科创基金领投，静安资本、市北高新、广州产投、四川中试、眉山中试及东坡国投跟投。继年初完成C1、C2轮融资后，公司C轮融资累计金额近10亿元。\n本轮资金将主要用于新一代空间智能硬件产品线的研发落地，及INMO AIOS 系统的持续迭代升级，加强硬件与软件底层核心能力构建；同时，加大品牌建设与全渠道布局，完善商业化能力，推动产品破圈，实现业务加速增长。\n目前，影目科技已正式启动上市筹备工作，近年来公司营收增速连续保持200%以上。\n智能眼镜正在被推向消费电子领域最受关注的位置。IDC数据显示，2025年全球AI智能眼镜出货量同比增幅超过200%；中国市场增速更为显著，洛图科技统计显示，2026上半年国内智能眼镜全渠道销量已达90.9万台，同比增长85.5%，对应销售额18.8亿元，同比增长98.7%。\n市场规模快速抬升，但能够真正撬动大众用户心智的标杆级产品仍未出现。过去几年，行业主流产品形态始终停留在“让眼镜能显示”的初级阶段，普遍采用Birdbath方案加外接计算单元的组合，本质上是把“显示”做到了眼镜上，但“算力”仍依赖外部设备。\n影目科技创始人兼CEO杨龙昇指出，“显示本身并不构成独立的终端价值。用户真正需要的不是一个戴在脸上的屏幕，而是一个能脱离手机独立运作的智能体。市场需求正在经历从‘手机配件’向‘独立终端’的关键转折。”\n这一判断的背后，是产品结构的切实变化。2026年一季度，带屏AI智能眼镜销量占比已升至60%；一体式AR眼镜与分体式产品的销量占比，更从2025年一季度的9:91快速转变为2026年二季度的47:53。可以看到，用户对“独立终端”的接受度正处于迅猛提升态势。\n在杨龙昇看来，智能眼镜是否成为“下一代终端”，必须回答三个问题——它能不能脱离手机独立运行？它能不能提供手机给不了的价值？它能不能在日常佩戴中做到无感？\n它们的答案都指向同一个方向：一体化。\n影目科技成立于2020年底，作为国内最早入局消费级智能眼镜的品牌之一，团队一开始便坚定轻量一体化的技术路线，把光学显示、本地计算、AI感知算力收拢集成在眼镜机身之内，以摆脱对手机、外接主机等外部设备的依赖。\n",
+          "event_refs": [
+            "EV-d4b0dd4de320089a"
+          ],
+          "claim_ref": "CL-ce803a71f3b4432c",
+          "source_refs": [
+            "SA-ce9594eb83db39e0"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-26/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-461be9b4c2e89d0f"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://www.36kr.com/p/3974730056757511",
+      "entityIds": [
+        "EN-2c941e17c27e4ee9",
+        "EN-461be9b4c2e89d0f"
+      ]
+    }
+  ]
+}

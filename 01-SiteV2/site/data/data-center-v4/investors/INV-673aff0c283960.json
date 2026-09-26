@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T00:27:56.714Z",
+    "generatedAt": "2026-09-26T05:32:44.840Z",
     "latestDataDate": "2026-09-26",
     "currentDate": "2026-09-26",
-    "eventCount": 3576,
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-f389faf9d7a68a79",
@@ -61,23 +61,24 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 7,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 2,
-    "china_market_company_count": 2,
+    "china_market_activity_count": 3,
+    "china_market_company_count": 3,
     "first_disclosed_at": "2026-02-11",
     "latest_disclosed_at": "2026-08-03",
     "role_counts": {
       "historical_or_ambiguous": 7,
-      "lead": 1,
+      "lead": 2,
       "participant": 1
     },
     "round_codes": [
       "pre_series_a",
+      "series_a_plus",
       "series_b_plus"
     ],
     "portfolio_companies": [
@@ -85,6 +86,11 @@
         "entity_id": "EN-634537cdabd4e325",
         "canonical_entity_id": "EN-634537cdabd4e325",
         "name": "乐享科技"
+      },
+      {
+        "entity_id": "EN-78e778b471fd74fd",
+        "canonical_entity_id": "",
+        "name": "深圳跃然创新科技有限公司"
       },
       {
         "entity_id": "EN-37ad0de3969166fa",
@@ -417,6 +423,46 @@
         ]
       },
       {
+        "activity_id": "IA-2407876756edfbd7",
+        "funding_insight_id": "FI-4dd698330bc72de1",
+        "event_ids": [
+          "EV-51d8aec94225e9c6"
+        ],
+        "company_entity_id": "EN-78e778b471fd74fd",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳跃然创新科技有限公司",
+        "round": "A+轮",
+        "round_code": "series_a_plus",
+        "round_original": "A+轮",
+        "amount_original": "未披露",
+        "amount_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "unparsed",
+          "display_zh": "未披露"
+        },
+        "announced_at": "2026-03-30",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-47b1de868e5ddfe2",
+            "source_url": "https://finance.sina.cn/2026-03-30/detail-inhstxxe2822090.d.html",
+            "source_title": "拓邦战略投资AI玩具先锋跃然创新，共拓AI智慧成长新蓝海",
+            "source_content_hash": "907ae8ff0db6a87bbd3822e3d07475bda216bf4ce32f463e1703f62f456fa7c6",
+            "quote": "近日，AI玩具公司深圳跃然创新科技有限公司（以下简称”跃然创新”）完成A+轮融资，由蚂蚁集团领投，达晨创投、尚 颀 资本、拓邦股份（002139.SZ，以下简称“拓邦”）、啟赋资本等机构参投。",
+            "quote_hash": "61e17cee984e02b8821d979716a37b36ec570b362c1bd1411e0ffe279aee64f9"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-a0941708bb7f265a",
         "funding_insight_id": "FI-d5293ab06cfaa935",
         "event_ids": [
@@ -523,6 +569,14 @@
         "quote_hash": "4553aa631d5770190d24c49f7268768953bdfd2941260fabfe47653a722ad735"
       },
       {
+        "source_id": "FISRC-47b1de868e5ddfe2",
+        "source_url": "https://finance.sina.cn/2026-03-30/detail-inhstxxe2822090.d.html",
+        "source_title": "拓邦战略投资AI玩具先锋跃然创新，共拓AI智慧成长新蓝海",
+        "source_content_hash": "907ae8ff0db6a87bbd3822e3d07475bda216bf4ce32f463e1703f62f456fa7c6",
+        "quote": "近日，AI玩具公司深圳跃然创新科技有限公司（以下简称”跃然创新”）完成A+轮融资，由蚂蚁集团领投，达晨创投、尚 颀 资本、拓邦股份（002139.SZ，以下简称“拓邦”）、啟赋资本等机构参投。",
+        "quote_hash": "61e17cee984e02b8821d979716a37b36ec570b362c1bd1411e0ffe279aee64f9"
+      },
+      {
         "source_id": "FISRC-2707f48aa6e437b7",
         "source_url": "https://news.pedaily.cn/202602/560956.shtml",
         "source_title": "清华90后带队，刚刚星海图又融10亿",
@@ -595,7 +649,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[8].role": {
+        "activities[9].role": {
           "text": "Pre-A轮领投",
           "source_hash": "c61fa44ebf092b66526cb4a8de607b70e57d3e5006aa179d3a2b39fd8925f719",
           "provider": "deepseek",

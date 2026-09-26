@@ -1,0 +1,167 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-26T05:32:44.840Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
+    "quarantinedEventCount": 39,
+    "quarantinedEventIds": [
+      "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-cab18aa68c8ae551",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "institution": {
+    "id": "INV-230ee5bdf61df8",
+    "name": "Female Founders Fund",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "GLOBAL"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-03-12",
+    "latest_disclosed_at": "2026-03-12",
+    "role_counts": {
+      "lead": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-6c42a85075d8a891",
+        "canonical_entity_id": "",
+        "name": "Taya"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-0a907e5932b03fd6",
+        "funding_insight_id": "FI-a497814e25dbcab1",
+        "event_ids": [
+          "EV-545bef6ff60cf3b2"
+        ],
+        "company_entity_id": "EN-6c42a85075d8a891",
+        "company_canonical_entity_id": "",
+        "company_name": "Taya",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$5 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 5000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "500 万美元"
+        },
+        "announced_at": "2026-03-12",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-4ec4178291982ae4",
+            "source_url": "https://www.prnewswire.com/news-releases/taya-raises-5m-for-ai-jewelry-designed-to-capture-your-thoughts-not-the-room-302711918.html",
+            "source_title": "Taya 融资 500 万美元，用于设计能捕捉你思绪而非房间的 AI 珠宝",
+            "source_content_hash": "b78c54740db46c4316d314be4c11f1cc1a37f0e635049a7661863a7e71e84ff7",
+            "quote": "Taya today announced it has raised a $5 million seed round led by MaC Venture Capital and Female Founders Fund, with participation from a16z speedrun.",
+            "quote_hash": "0a632c56cfbb4e44872d10b4c4d7118a5c285d0446981e4b38379a2f3f43ced6"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-4ec4178291982ae4",
+        "source_url": "https://www.prnewswire.com/news-releases/taya-raises-5m-for-ai-jewelry-designed-to-capture-your-thoughts-not-the-room-302711918.html",
+        "source_title": "Taya 融资 500 万美元，用于设计能捕捉你思绪而非房间的 AI 珠宝",
+        "source_content_hash": "b78c54740db46c4316d314be4c11f1cc1a37f0e635049a7661863a7e71e84ff7",
+        "quote": "Taya today announced it has raised a $5 million seed round led by MaC Venture Capital and Female Founders Fund, with participation from a16z speedrun.",
+        "quote_hash": "0a632c56cfbb4e44872d10b4c4d7118a5c285d0446981e4b38379a2f3f43ced6"
+      }
+    ],
+    "public_profile": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Female Founders Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Taya · 种子轮 · 2026-03-12 · 本轮领投 · $5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-4ec4178291982ae4"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-4ec4178291982ae4",
+          "source_url": "https://www.prnewswire.com/news-releases/taya-raises-5m-for-ai-jewelry-designed-to-capture-your-thoughts-not-the-room-302711918.html",
+          "source_title": "Taya 融资 500 万美元，用于设计能捕捉你思绪而非房间的 AI 珠宝",
+          "source_content_hash": "b78c54740db46c4316d314be4c11f1cc1a37f0e635049a7661863a7e71e84ff7",
+          "quote": "Taya today announced it has raised a $5 million seed round led by MaC Venture Capital and Female Founders Fund, with participation from a16z speedrun.",
+          "quote_hash": "0a632c56cfbb4e44872d10b4c4d7118a5c285d0446981e4b38379a2f3f43ced6"
+        }
+      ],
+      "last_verified_at": "2026-09-25"
+    }
+  }
+}

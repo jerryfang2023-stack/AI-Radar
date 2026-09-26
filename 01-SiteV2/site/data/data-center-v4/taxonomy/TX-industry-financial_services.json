@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T00:27:56.714Z",
+    "generatedAt": "2026-09-26T05:32:44.840Z",
     "latestDataDate": "2026-09-26",
     "currentDate": "2026-09-26",
-    "eventCount": 3576,
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-f389faf9d7a68a79",
@@ -126,6 +126,7 @@
       "EV-ef1de880e4ef9f75",
       "EV-6329f290aecc84da",
       "EV-d535e126615182f0",
+      "EV-09b8a8e4ed03dd7f",
       "EV-986ac3a819d23388",
       "EV-4eb0556b8c72d410",
       "EV-fd444ccd5831e77a",
@@ -224,6 +225,7 @@
       "EN-cecdd8369134f75e",
       "EN-7d3194f79e645c42",
       "EN-376967c5f350003c",
+      "EN-04bd675006a7a1ed",
       "EN-c189daf477a2d4ca",
       "EN-c71496986d06e3f2",
       "EN-098a40b4499d7512",
@@ -32517,6 +32519,357 @@
       "publisher": "新浪财经"
     },
     {
+      "id": "EV-09b8a8e4ed03dd7f",
+      "dataDate": "2026-09-26",
+      "date": "2026-01-30",
+      "updatedDate": "2026-09-26",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "一家AI玩具公司获数千万元融资，核心产品销量翻五倍｜硬氪首发-36氪",
+      "originalTitle": "",
+      "subject": "上海喜梨信息科技有限公司",
+      "action": "funding",
+      "object": "数千万元新一轮融资",
+      "metrics": [
+        "数千万元"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-5d435652f01a6bc4"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "physical_ai",
+            "name": "Physical AI",
+            "entityIds": [
+              "EN-04bd675006a7a1ed"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-9b23f88bfe58adc9",
+            "fundingInsightId": "FI-f595e80e9f143180"
+          }
+        ],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "robotic_system",
+            "name": "机器人系统",
+            "entityIds": [
+              "EN-04bd675006a7a1ed"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-0f266f420b5a2f19",
+            "fundingInsightId": "FI-f595e80e9f143180"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "education_learning",
+            "name": "教育与学习",
+            "entityIds": [
+              "EN-04bd675006a7a1ed"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-76fcc613ebc03271",
+            "fundingInsightId": "FI-f595e80e9f143180"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-04bd675006a7a1ed"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-34beff58db7eea62",
+            "fundingInsightId": "FI-f595e80e9f143180"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "education",
+            "name": "教育",
+            "entityIds": [
+              "EN-04bd675006a7a1ed"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-606ad70fbfd77cbb",
+            "fundingInsightId": "FI-f595e80e9f143180"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-04bd675006a7a1ed"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "consumer",
+            "name": "个人用户",
+            "entityIds": [
+              "EN-04bd675006a7a1ed"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-64d7872c57cdb860",
+            "fundingInsightId": "FI-f595e80e9f143180"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "student",
+            "name": "学生",
+            "entityIds": [
+              "EN-04bd675006a7a1ed"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-cfe0605a9c7a564f",
+            "fundingInsightId": "FI-f595e80e9f143180"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "physical_ai",
+          "name": "Physical AI",
+          "entityIds": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-9b23f88bfe58adc9",
+          "fundingInsightId": "FI-f595e80e9f143180"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "education",
+          "name": "教育",
+          "entityIds": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-606ad70fbfd77cbb",
+          "fundingInsightId": "FI-f595e80e9f143180"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "robotic_system",
+          "name": "机器人系统",
+          "entityIds": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-0f266f420b5a2f19",
+          "fundingInsightId": "FI-f595e80e9f143180"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "consumer",
+          "name": "个人用户",
+          "entityIds": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-64d7872c57cdb860",
+          "fundingInsightId": "FI-f595e80e9f143180"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "student",
+          "name": "学生",
+          "entityIds": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-cfe0605a9c7a564f",
+          "fundingInsightId": "FI-f595e80e9f143180"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "education_learning",
+          "name": "教育与学习",
+          "entityIds": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-76fcc613ebc03271",
+          "fundingInsightId": "FI-f595e80e9f143180"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-34beff58db7eea62",
+          "fundingInsightId": "FI-f595e80e9f143180"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "physical_ai",
+          "name": "Physical AI",
+          "entityIds": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-9b23f88bfe58adc9",
+          "fundingInsightId": "FI-f595e80e9f143180"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "robotic_system",
+          "name": "机器人系统",
+          "entityIds": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-0f266f420b5a2f19",
+          "fundingInsightId": "FI-f595e80e9f143180"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "education_learning",
+          "name": "教育与学习",
+          "entityIds": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-76fcc613ebc03271",
+          "fundingInsightId": "FI-f595e80e9f143180"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-34beff58db7eea62",
+          "fundingInsightId": "FI-f595e80e9f143180"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "education",
+          "name": "教育",
+          "entityIds": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-606ad70fbfd77cbb",
+          "fundingInsightId": "FI-f595e80e9f143180"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "consumer",
+          "name": "个人用户",
+          "entityIds": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-64d7872c57cdb860",
+          "fundingInsightId": "FI-f595e80e9f143180"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "student",
+          "name": "学生",
+          "entityIds": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-cfe0605a9c7a564f",
+          "fundingInsightId": "FI-f595e80e9f143180"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-04bd675006a7a1ed",
+        "EN-42da0d146baafd20"
+      ],
+      "entityNames": [
+        "上海喜梨信息科技有限公司",
+        "AI玩具厂商上海喜梨信息科技有限公司"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.36kr.com/p/3654915542130816",
+      "publisher": "36氪"
+    },
+    {
       "id": "EV-986ac3a819d23388",
       "dataDate": "2026-07-28",
       "date": "2025-09-10",
@@ -38069,10 +38422,10 @@
         "TX-industry-education",
         "TX-target_user-student",
         "TX-use_case-education_learning",
+        "TX-target_user-consumer",
         "TX-industry-financial_services",
         "TX-industry-telecommunications",
         "TX-industry-government_public_sector",
-        "TX-target_user-consumer",
         "TX-target_user-educator",
         "TX-use_case-software_development",
         "TX-use_case-knowledge_search",
@@ -38141,6 +38494,7 @@
         "TX-industry-automotive_transportation",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-use_case-data_analysis",
+        "TX-technology-multimodal",
         "TX-use_case-design_engineering",
         "TX-industry-financial_services",
         "TX-industry-government_public_sector",
@@ -38148,8 +38502,7 @@
         "TX-use_case-knowledge_search",
         "TX-use_case-content_creation",
         "TX-industry-professional_services",
-        "TX-industry-aerospace_defense",
-        "TX-technology-multimodal"
+        "TX-industry-aerospace_defense"
       ],
       "relatedEntityIds": [
         "EN-968e2d5b08687bf4",
@@ -38464,12 +38817,13 @@
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
         "TX-industry-education",
+        "TX-product_form-robotic_system",
+        "TX-technology-multimodal",
         "TX-product_form-ai_infrastructure_software",
         "TX-industry-financial_services",
         "TX-industry-telecommunications",
         "TX-technology-embodied_ai",
         "TX-industry-government_public_sector",
-        "TX-product_form-robotic_system",
         "TX-use_case-software_development",
         "TX-product_form-ai_compute_system",
         "TX-ai_market_application-computing_infrastructure",
@@ -38485,7 +38839,6 @@
         "TX-industry-food_hospitality",
         "TX-industry-legal_services",
         "TX-technology-code_generation",
-        "TX-technology-multimodal",
         "TX-product_form-model_api_service",
         "TX-technology-open_weights",
         "TX-use_case-customer_support",
@@ -39040,10 +39393,10 @@
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
         "TX-industry-education",
+        "TX-target_user-consumer",
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
         "TX-industry-government_public_sector",
-        "TX-target_user-consumer",
         "TX-target_user-educator",
         "TX-use_case-software_development",
         "TX-industry-media_entertainment",
@@ -39497,10 +39850,10 @@
         "TX-target_user-business_user",
         "TX-use_case-physical_automation",
         "TX-industry-retail_ecommerce",
-        "TX-industry-financial_services",
-        "TX-technology-embodied_ai",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system",
+        "TX-industry-financial_services",
+        "TX-technology-embodied_ai",
         "TX-industry-food_hospitality"
       ],
       "relatedEntityIds": [],
@@ -40043,8 +40396,8 @@
         "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
-        "TX-industry-financial_services",
         "TX-technology-multimodal",
+        "TX-industry-financial_services",
         "TX-technology-vision_language"
       ],
       "relatedEntityIds": [],
@@ -40426,9 +40779,9 @@
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
         "TX-product_form-end_user_application",
+        "TX-target_user-consumer",
         "TX-industry-financial_services",
         "TX-ai_market_subcategory-financial_services",
-        "TX-target_user-consumer",
         "TX-use_case-knowledge_search"
       ],
       "relatedEntityIds": [],
@@ -41195,9 +41548,10 @@
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
         "TX-product_form-end_user_application",
+        "TX-target_user-consumer",
+        "TX-technology-multimodal",
         "TX-industry-financial_services",
         "TX-industry-government_public_sector",
-        "TX-target_user-consumer",
         "TX-product_form-developer_tool",
         "TX-use_case-software_development",
         "TX-industry-media_entertainment",
@@ -41207,7 +41561,6 @@
         "TX-industry-aerospace_defense",
         "TX-industry-legal_services",
         "TX-technology-code_generation",
-        "TX-technology-multimodal",
         "TX-product_form-model_api_service",
         "TX-technology-open_weights",
         "TX-use_case-customer_support",
@@ -41283,6 +41636,34 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-03-24",
       "lastSeen": "2026-09-12"
+    },
+    {
+      "id": "EN-04bd675006a7a1ed",
+      "name": "上海喜梨信息科技有限公司",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-09b8a8e4ed03dd7f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-physical_automation",
+        "TX-industry-education",
+        "TX-target_user-student",
+        "TX-use_case-education_learning",
+        "TX-ai_market_category-physical_ai",
+        "TX-product_form-robotic_system",
+        "TX-target_user-consumer",
+        "TX-industry-financial_services"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-01-30",
+      "lastSeen": "2026-09-26"
     },
     {
       "id": "EN-c189daf477a2d4ca",
@@ -41928,9 +42309,10 @@
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-research_discovery",
         "TX-product_form-end_user_application",
+        "TX-target_user-consumer",
+        "TX-technology-multimodal",
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
-        "TX-target_user-consumer",
         "TX-use_case-software_development",
         "TX-product_form-ai_compute_system",
         "TX-ai_market_application-computing_infrastructure",
@@ -41939,7 +42321,6 @@
         "TX-deployment_model-edge_device",
         "TX-industry-aerospace_defense",
         "TX-technology-code_generation",
-        "TX-technology-multimodal",
         "TX-technology-open_weights",
         "TX-technology-video_generation",
         "TX-technology-image_generation",

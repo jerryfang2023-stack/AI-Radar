@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T00:27:56.714Z",
+    "generatedAt": "2026-09-26T05:32:44.840Z",
     "latestDataDate": "2026-09-26",
     "currentDate": "2026-09-26",
-    "eventCount": 3576,
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-f389faf9d7a68a79",
@@ -61,22 +61,71 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 0,
-    "china_market_company_count": 0,
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
     "first_disclosed_at": "2026-03-05",
-    "latest_disclosed_at": "2026-03-05",
+    "latest_disclosed_at": "2026-09-09",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 1,
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "series_c3"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-461be9b4c2e89d0f",
+        "canonical_entity_id": "",
+        "name": "影目科技"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-bde23067867d3659",
+        "funding_insight_id": "FI-017a8387972dfaf3",
+        "event_ids": [
+          "EV-d4b0dd4de320089a"
+        ],
+        "company_entity_id": "EN-461be9b4c2e89d0f",
+        "company_canonical_entity_id": "",
+        "company_name": "影目科技",
+        "round": "C3轮",
+        "round_code": "series_c3",
+        "round_original": "C3轮",
+        "amount_original": "未披露",
+        "amount_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "unparsed",
+          "display_zh": "未披露"
+        },
+        "announced_at": "2026-09-09",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-6acf14b7549af590",
+            "source_url": "https://www.36kr.com/p/3974730056757511",
+            "source_title": "头部智能眼镜品牌完成近10亿C轮融资，已正式启动上市筹备工作｜硬氪首发-36氪",
+            "source_content_hash": "084ae5885442e2331c62eb04635ba0cae0e4c7b89032ad0f04cb250f7a67fdbe",
+            "quote": "由四川振兴科创基金领投，静安资本、市北高新、广州产投、四川中试、眉山中试及东坡国投跟投",
+            "quote_hash": "d5864d9bcf14e6d4004c00aac6bc2d740768edf07a86434606e38b28ecc38d37"
+          }
+        ]
+      },
       {
         "activity_id": "IA-0200151a5de69b50",
         "funding_insight_id": "FI-edc4e4cec2cd84bd",
@@ -121,6 +170,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-6acf14b7549af590",
+        "source_url": "https://www.36kr.com/p/3974730056757511",
+        "source_title": "头部智能眼镜品牌完成近10亿C轮融资，已正式启动上市筹备工作｜硬氪首发-36氪",
+        "source_content_hash": "084ae5885442e2331c62eb04635ba0cae0e4c7b89032ad0f04cb250f7a67fdbe",
+        "quote": "由四川振兴科创基金领投，静安资本、市北高新、广州产投、四川中试、眉山中试及东坡国投跟投",
+        "quote_hash": "d5864d9bcf14e6d4004c00aac6bc2d740768edf07a86434606e38b28ecc38d37"
+      },
+      {
         "source_id": "FISRC-fdfe58e2e68c7e9e",
         "source_url": "https://news.pedaily.cn/202603/561389.shtml",
         "source_title": "首发|华为押注的机器人，极佳视界刚刚又融10亿",
@@ -134,10 +191,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "广州产投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-03-05；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "广州产投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：影目科技 · C3轮 · 2026-09-09 · 本轮参投 · 未披露。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6acf14b7549af590"
+        },
         {
           "description": "融资来源记录：极佳视界 · Pre-B轮 · 2026-03-05 · Pre-A+轮投资方 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fdfe58e2e68c7e9e"
@@ -145,6 +206,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-6acf14b7549af590",
+          "source_url": "https://www.36kr.com/p/3974730056757511",
+          "source_title": "头部智能眼镜品牌完成近10亿C轮融资，已正式启动上市筹备工作｜硬氪首发-36氪",
+          "source_content_hash": "084ae5885442e2331c62eb04635ba0cae0e4c7b89032ad0f04cb250f7a67fdbe",
+          "quote": "由四川振兴科创基金领投，静安资本、市北高新、广州产投、四川中试、眉山中试及东坡国投跟投",
+          "quote_hash": "d5864d9bcf14e6d4004c00aac6bc2d740768edf07a86434606e38b28ecc38d37"
+        },
         {
           "source_id": "FISRC-fdfe58e2e68c7e9e",
           "source_url": "https://news.pedaily.cn/202603/561389.shtml",

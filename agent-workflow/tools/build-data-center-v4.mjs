@@ -14,6 +14,7 @@ import {
   loadPrivateEvidenceEntries,
 } from "./lib/private-evidence-store.mjs";
 import { normalizeEvidenceBody } from "./lib/evidence-body-normalizer.mjs";
+import { evaluateModelAssistCandidate } from "./model-assist-v1.mjs";
 import { isWithdrawnFundingTitle, isPendingFundingTitle } from "./lib/funding-transaction-status.mjs";
 import {
   chinaMarketBasisType,
@@ -1131,7 +1132,8 @@ function buildModelClaim(rawId, proposed, evidence, index, status) {
     subject: cleanString(proposed.subject),
     predicate: proposed.event_type,
     object: cleanString(proposed.object),
-    qualifiers: { event_status: status, sequence: index + 1, model_candidate_id: proposed.model_candidate_id },
+    qualifiers: { event_status: status, sequence: index + 1, model_candidate_id: proposed.model_candidate_id,
+      ...(proposed.amount_disclosure === "not_disclosed" ? { funding_amount_status: "not_disclosed" } : {}) },
     source_span: { raw_id: rawId, start: evidence.start, end: evidence.end },
     source_quote: evidence.quote,
     extraction_method: "model_source_span",
@@ -1839,6 +1841,7 @@ function forbiddenKeys(value, trail = "", out = []) {
 }
 
 export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date().toISOString(), options = {}) {
+  const targetedFundingPolicy = readJson(path.join(outputRoot, date, "targeted-funding-authorization.json"), {});
   const historicalFundingPolicy = options.historicalFundingPolicy
     || readJson(path.join(outputRoot, date, "historical-funding-authorization.json"), {});
   // Keep already published identities stable while admitting new historical cases.
@@ -1907,19 +1910,28 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
       ...(acceptedAssistBySource.get(artifact.source_artifact_id) || []),
     ].sort((left, right) => Number(String(right.asset_id).startsWith("HISTORY-")) - Number(String(left.asset_id).startsWith("HISTORY-")))
       .find((candidate) => ["claim_extraction", "qa_repair"].includes(candidate.task_type) && candidate.proposal?.claims?.length);
+    const reviewedRepair = modelClaimCandidate?.task_type === "qa_repair"
+      && modelClaimCandidate.review?.decision === "accept"
+      && Boolean(modelClaimCandidate.review?.reviewer)
+      && evaluateModelAssistCandidate(modelClaimCandidate, bodyClean).length === 0;
     const normalizedModelProposal = preferredModelClaim(modelClaimCandidate?.proposal?.claims, modelClaimCandidate?.evidence);
     const proposedModelClaim = normalizedModelProposal.primary;
+    const targetedFundingAllowed = targetedFundingPolicy.schema_version === "TARGETED-FUNDING-AUTHORIZATION-V1"
+      && Boolean(targetedFundingPolicy.reviewed_by)
+      && targetedFundingPolicy.source_refs?.includes(artifact.source_artifact_id)
+      && cleanString(raw.published_at).slice(0, 10) >= targetedFundingPolicy.from
+      && cleanString(raw.published_at).slice(0, 10) <= targetedFundingPolicy.to;
     const sourceEligibility = eventSourceEligibility(raw, artifact, title, date, {
-      eventType: newHistoricalSources.has(artifact.source_artifact_id) ? "funding" : candidateDeterministicRule?.eventType || proposedModelClaim?.event_type || "",
-      allowHistoricalFunding: options.allowHistoricalFunding === true || historicalFundingAuthorized(raw, artifact, historicalFundingPolicy),
+      eventType: newHistoricalSources.has(artifact.source_artifact_id) ? "funding" : (reviewedRepair ? proposedModelClaim?.event_type : candidateDeterministicRule?.eventType) || proposedModelClaim?.event_type || "",
+      allowHistoricalFunding: options.allowHistoricalFunding === true || targetedFundingAllowed || historicalFundingAuthorized(raw, artifact, historicalFundingPolicy),
     });
     const authoritativeHistoryClaim = String(modelClaimCandidate?.asset_id || "").startsWith("HISTORY-")
       && historicalFundingAuthorized(raw, artifact, historicalFundingPolicy) && !stablePublishedSources.has(artifact.source_artifact_id);
     const requiresHistoryExtraction = newHistoricalSources.has(artifact.source_artifact_id);
-    const deterministicRule = sourceEligibility.accepted && !authoritativeHistoryClaim && !requiresHistoryExtraction ? candidateDeterministicRule : null;
+    const deterministicRule = sourceEligibility.accepted && !reviewedRepair && !authoritativeHistoryClaim && !requiresHistoryExtraction ? candidateDeterministicRule : null;
     const proposedModelEligibility = proposedModelClaim
       ? modelAssistedEventEligibility(raw, title, proposedModelClaim.event_type, date, {
-          allowHistoricalFunding: options.allowHistoricalFunding === true || historicalFundingAuthorized(raw, artifact, historicalFundingPolicy),
+          allowHistoricalFunding: options.allowHistoricalFunding === true || targetedFundingAllowed || historicalFundingAuthorized(raw, artifact, historicalFundingPolicy),
         })
       : { accepted: true, reason: "" };
     const rule = deterministicRule || (sourceEligibility.accepted && proposedModelClaim && proposedModelEligibility.accepted && (!requiresHistoryExtraction || authoritativeHistoryClaim)
@@ -1989,7 +2001,7 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
       if (rule.eventType === "deployment" && /\bThe Home Depot\b/iu.test(title)) {
         parsed.object = "Gemini Enterprise store phone support";
       }
-      const status = eventStatus(title, bodyClean.slice(0, 1600), rule.eventType);
+      const status = eventStatus(reviewedRepair ? `${parsed.subject} ${parsed.object}` : title, bodyClean.slice(0, 1600), rule.eventType);
       let spans = deterministicRule ? claimCandidates(bodyClean, title, rule, parsed.subject) : [];
       let eventClaimRows = spans.map((span, index) => buildClaim(rawId, rule.eventType, span, parsed, index, status));
       if (!eventClaimRows.length && modelClaimCandidate) {

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T00:27:56.714Z",
+    "generatedAt": "2026-09-26T05:32:44.840Z",
     "latestDataDate": "2026-09-26",
     "currentDate": "2026-09-26",
-    "eventCount": 3576,
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-f389faf9d7a68a79",
@@ -60,24 +60,30 @@
     "valueId": "student",
     "eventIds": [
       "EV-2470b13ea55496d0",
+      "EV-86838cc774b85116",
       "EV-ef669a52c9a3f94f",
       "EV-41c54c428d84cc1e",
       "EV-8eb0acb180b7ad9d",
+      "EV-e2a94eb223c11a66",
       "EV-435d7e7878b0c326",
+      "EV-09b8a8e4ed03dd7f",
       "EV-26439e34295a0519",
       "EV-58268b12aa406620"
     ],
     "entityIds": [
       "EN-0830e0bf8e8fa471",
+      "EN-573b998925ae7499",
       "EN-1d79127e9d90e89b",
       "EN-8dc72a4672894e0f",
       "EN-53b69ef92c836777",
-      "EN-a6e5382c05dd0d16"
+      "EN-bd86ebd32193b381",
+      "EN-a6e5382c05dd0d16",
+      "EN-04bd675006a7a1ed"
     ],
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-01-12",
-    "lastSeen": "2026-09-23"
+    "lastSeen": "2026-09-26"
   },
   "events": [
     {
@@ -359,6 +365,423 @@
       "products": [],
       "sourceUrl": "https://theverge.com/ai-artificial-intelligence/998813/andreessen-horowitz-ai-academy",
       "publisher": "The Verge AI"
+    },
+    {
+      "id": "EV-86838cc774b85116",
+      "dataDate": "2026-09-26",
+      "date": "2026-09-22",
+      "updatedDate": "2026-09-26",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "范博特机器人完成千万级天使轮融资，押注「心理教练机器人」",
+      "originalTitle": "",
+      "subject": "深圳市范博特机器人有限公司",
+      "action": "funding",
+      "object": "千万级天使轮融资",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-7bea034519e6e1d7"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-573b998925ae7499"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "physical_ai",
+            "name": "Physical AI",
+            "entityIds": [
+              "EN-573b998925ae7499"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-89e672e88c500c19",
+            "fundingInsightId": "FI-885ac0125d61faf8"
+          }
+        ],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "robotic_system",
+            "name": "机器人系统",
+            "entityIds": [
+              "EN-573b998925ae7499"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-ed4ed0559908e345",
+            "fundingInsightId": "FI-885ac0125d61faf8"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-573b998925ae7499"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "education_learning",
+            "name": "教育与学习",
+            "entityIds": [
+              "EN-573b998925ae7499"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-19e1a32e229b69db",
+            "fundingInsightId": "FI-885ac0125d61faf8"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-573b998925ae7499"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-177d4513d25270ae",
+            "fundingInsightId": "FI-885ac0125d61faf8"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "education",
+            "name": "教育",
+            "entityIds": [
+              "EN-573b998925ae7499"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a5b1b7dd3ab8702d",
+            "fundingInsightId": "FI-885ac0125d61faf8"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-573b998925ae7499"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-6ccc596d52e91cbd",
+            "fundingInsightId": "FI-885ac0125d61faf8"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "consumer",
+            "name": "个人用户",
+            "entityIds": [
+              "EN-573b998925ae7499"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-e2c1e155be80200c",
+            "fundingInsightId": "FI-885ac0125d61faf8"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "student",
+            "name": "学生",
+            "entityIds": [
+              "EN-573b998925ae7499"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-c9bef1f19d911170",
+            "fundingInsightId": "FI-885ac0125d61faf8"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "physical_ai",
+          "name": "Physical AI",
+          "entityIds": [
+            "EN-573b998925ae7499"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-89e672e88c500c19",
+          "fundingInsightId": "FI-885ac0125d61faf8"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "education",
+          "name": "教育",
+          "entityIds": [
+            "EN-573b998925ae7499"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-a5b1b7dd3ab8702d",
+          "fundingInsightId": "FI-885ac0125d61faf8"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-573b998925ae7499"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-6ccc596d52e91cbd",
+          "fundingInsightId": "FI-885ac0125d61faf8"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "robotic_system",
+          "name": "机器人系统",
+          "entityIds": [
+            "EN-573b998925ae7499"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-ed4ed0559908e345",
+          "fundingInsightId": "FI-885ac0125d61faf8"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "consumer",
+          "name": "个人用户",
+          "entityIds": [
+            "EN-573b998925ae7499"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-e2c1e155be80200c",
+          "fundingInsightId": "FI-885ac0125d61faf8"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "student",
+          "name": "学生",
+          "entityIds": [
+            "EN-573b998925ae7499"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-c9bef1f19d911170",
+          "fundingInsightId": "FI-885ac0125d61faf8"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "education_learning",
+          "name": "教育与学习",
+          "entityIds": [
+            "EN-573b998925ae7499"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-19e1a32e229b69db",
+          "fundingInsightId": "FI-885ac0125d61faf8"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-573b998925ae7499"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-177d4513d25270ae",
+          "fundingInsightId": "FI-885ac0125d61faf8"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-573b998925ae7499"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-573b998925ae7499"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "physical_ai",
+          "name": "Physical AI",
+          "entityIds": [
+            "EN-573b998925ae7499"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-89e672e88c500c19",
+          "fundingInsightId": "FI-885ac0125d61faf8"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "robotic_system",
+          "name": "机器人系统",
+          "entityIds": [
+            "EN-573b998925ae7499"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-ed4ed0559908e345",
+          "fundingInsightId": "FI-885ac0125d61faf8"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-573b998925ae7499"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "education_learning",
+          "name": "教育与学习",
+          "entityIds": [
+            "EN-573b998925ae7499"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-19e1a32e229b69db",
+          "fundingInsightId": "FI-885ac0125d61faf8"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-573b998925ae7499"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-177d4513d25270ae",
+          "fundingInsightId": "FI-885ac0125d61faf8"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-573b998925ae7499"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "education",
+          "name": "教育",
+          "entityIds": [
+            "EN-573b998925ae7499"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-a5b1b7dd3ab8702d",
+          "fundingInsightId": "FI-885ac0125d61faf8"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-573b998925ae7499"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-6ccc596d52e91cbd",
+          "fundingInsightId": "FI-885ac0125d61faf8"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "consumer",
+          "name": "个人用户",
+          "entityIds": [
+            "EN-573b998925ae7499"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-e2c1e155be80200c",
+          "fundingInsightId": "FI-885ac0125d61faf8"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "student",
+          "name": "学生",
+          "entityIds": [
+            "EN-573b998925ae7499"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-c9bef1f19d911170",
+          "fundingInsightId": "FI-885ac0125d61faf8"
+        }
+      ],
+      "entityIds": [
+        "EN-573b998925ae7499"
+      ],
+      "entityNames": [
+        "深圳市范博特机器人有限公司"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.pedaily.cn/202609/569503.shtml",
+      "publisher": "投资界"
     },
     {
       "id": "EV-ef669a52c9a3f94f",
@@ -2287,6 +2710,384 @@
       "publisher": "aifundingtracker.com"
     },
     {
+      "id": "EV-e2a94eb223c11a66",
+      "dataDate": "2026-09-26",
+      "date": "2026-04-20",
+      "updatedDate": "2026-09-26",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "首创“玩偶+主机”模式，多智能体儿童AI玩具品牌获数千万元融资-36氪",
+      "originalTitle": "36氪首发 | 首创“玩偶+主机”模式，多智能体儿童AI玩具品牌获数千万元融资-36氪",
+      "subject": "36氪首发 | 首创“玩偶+主机”模式，多智能体儿童AI玩具品牌获数千万元",
+      "action": "融资",
+      "object": "-36氪",
+      "metrics": [
+        "数千万元"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "enterprise_applications",
+            "name": "企业级应用",
+            "entityIds": [
+              "EN-bd86ebd32193b381"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-a2e6a44e58a53ad9",
+            "fundingInsightId": "FI-9b20d5553c8045f0"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-bd86ebd32193b381"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-d805c8c342d74064",
+            "fundingInsightId": "FI-9b20d5553c8045f0"
+          }
+        ],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_device",
+            "name": "AI 设备",
+            "entityIds": [
+              "EN-bd86ebd32193b381"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-56a10fd251bb0a0f",
+            "fundingInsightId": "FI-9b20d5553c8045f0"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "content_creation",
+            "name": "内容创作",
+            "entityIds": [
+              "EN-bd86ebd32193b381"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-89f834e4a1150587",
+            "fundingInsightId": "FI-9b20d5553c8045f0"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "education_learning",
+            "name": "教育与学习",
+            "entityIds": [
+              "EN-bd86ebd32193b381"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-6414680bf9853166",
+            "fundingInsightId": "FI-9b20d5553c8045f0"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "education",
+            "name": "教育",
+            "entityIds": [
+              "EN-bd86ebd32193b381"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-5efdcaf1426c00f3",
+            "fundingInsightId": "FI-9b20d5553c8045f0"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "retail_ecommerce",
+            "name": "零售与电商",
+            "entityIds": [
+              "EN-bd86ebd32193b381"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b1b729d8b58bdac3",
+            "fundingInsightId": "FI-9b20d5553c8045f0"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "consumer",
+            "name": "个人用户",
+            "entityIds": [
+              "EN-bd86ebd32193b381"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-0f6fb1a5ec6d926a",
+            "fundingInsightId": "FI-9b20d5553c8045f0"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "student",
+            "name": "学生",
+            "entityIds": [
+              "EN-bd86ebd32193b381"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-7412eb168a8fff4b",
+            "fundingInsightId": "FI-9b20d5553c8045f0"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "enterprise_applications",
+          "name": "企业级应用",
+          "entityIds": [
+            "EN-bd86ebd32193b381"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-a2e6a44e58a53ad9",
+          "fundingInsightId": "FI-9b20d5553c8045f0"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-bd86ebd32193b381"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-d805c8c342d74064",
+          "fundingInsightId": "FI-9b20d5553c8045f0"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "education",
+          "name": "教育",
+          "entityIds": [
+            "EN-bd86ebd32193b381"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-5efdcaf1426c00f3",
+          "fundingInsightId": "FI-9b20d5553c8045f0"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "EN-bd86ebd32193b381"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b1b729d8b58bdac3",
+          "fundingInsightId": "FI-9b20d5553c8045f0"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [
+            "EN-bd86ebd32193b381"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-56a10fd251bb0a0f",
+          "fundingInsightId": "FI-9b20d5553c8045f0"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "consumer",
+          "name": "个人用户",
+          "entityIds": [
+            "EN-bd86ebd32193b381"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-0f6fb1a5ec6d926a",
+          "fundingInsightId": "FI-9b20d5553c8045f0"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "student",
+          "name": "学生",
+          "entityIds": [
+            "EN-bd86ebd32193b381"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-7412eb168a8fff4b",
+          "fundingInsightId": "FI-9b20d5553c8045f0"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "content_creation",
+          "name": "内容创作",
+          "entityIds": [
+            "EN-bd86ebd32193b381"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-89f834e4a1150587",
+          "fundingInsightId": "FI-9b20d5553c8045f0"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "education_learning",
+          "name": "教育与学习",
+          "entityIds": [
+            "EN-bd86ebd32193b381"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-6414680bf9853166",
+          "fundingInsightId": "FI-9b20d5553c8045f0"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "enterprise_applications",
+          "name": "企业级应用",
+          "entityIds": [
+            "EN-bd86ebd32193b381"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-a2e6a44e58a53ad9",
+          "fundingInsightId": "FI-9b20d5553c8045f0"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-bd86ebd32193b381"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-d805c8c342d74064",
+          "fundingInsightId": "FI-9b20d5553c8045f0"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_device",
+          "name": "AI 设备",
+          "entityIds": [
+            "EN-bd86ebd32193b381"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-56a10fd251bb0a0f",
+          "fundingInsightId": "FI-9b20d5553c8045f0"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "content_creation",
+          "name": "内容创作",
+          "entityIds": [
+            "EN-bd86ebd32193b381"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-89f834e4a1150587",
+          "fundingInsightId": "FI-9b20d5553c8045f0"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "education_learning",
+          "name": "教育与学习",
+          "entityIds": [
+            "EN-bd86ebd32193b381"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-6414680bf9853166",
+          "fundingInsightId": "FI-9b20d5553c8045f0"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "education",
+          "name": "教育",
+          "entityIds": [
+            "EN-bd86ebd32193b381"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-5efdcaf1426c00f3",
+          "fundingInsightId": "FI-9b20d5553c8045f0"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "EN-bd86ebd32193b381"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b1b729d8b58bdac3",
+          "fundingInsightId": "FI-9b20d5553c8045f0"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "consumer",
+          "name": "个人用户",
+          "entityIds": [
+            "EN-bd86ebd32193b381"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-0f6fb1a5ec6d926a",
+          "fundingInsightId": "FI-9b20d5553c8045f0"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "student",
+          "name": "学生",
+          "entityIds": [
+            "EN-bd86ebd32193b381"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-7412eb168a8fff4b",
+          "fundingInsightId": "FI-9b20d5553c8045f0"
+        }
+      ],
+      "entityIds": [
+        "EN-bd86ebd32193b381"
+      ],
+      "entityNames": [
+        "北京灵机天赐科技有限责任公司"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.36kr.com/p/3774692365206280",
+      "publisher": "36氪"
+    },
+    {
       "id": "EV-435d7e7878b0c326",
       "dataDate": "2026-08-03",
       "date": "2026-04-02",
@@ -2717,6 +3518,357 @@
       "products": [],
       "sourceUrl": "https://companies.caixin.com/m/2026-04-02/102430123.html",
       "publisher": "财新"
+    },
+    {
+      "id": "EV-09b8a8e4ed03dd7f",
+      "dataDate": "2026-09-26",
+      "date": "2026-01-30",
+      "updatedDate": "2026-09-26",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "一家AI玩具公司获数千万元融资，核心产品销量翻五倍｜硬氪首发-36氪",
+      "originalTitle": "",
+      "subject": "上海喜梨信息科技有限公司",
+      "action": "funding",
+      "object": "数千万元新一轮融资",
+      "metrics": [
+        "数千万元"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-5d435652f01a6bc4"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "physical_ai",
+            "name": "Physical AI",
+            "entityIds": [
+              "EN-04bd675006a7a1ed"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-9b23f88bfe58adc9",
+            "fundingInsightId": "FI-f595e80e9f143180"
+          }
+        ],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "robotic_system",
+            "name": "机器人系统",
+            "entityIds": [
+              "EN-04bd675006a7a1ed"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-0f266f420b5a2f19",
+            "fundingInsightId": "FI-f595e80e9f143180"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "education_learning",
+            "name": "教育与学习",
+            "entityIds": [
+              "EN-04bd675006a7a1ed"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-76fcc613ebc03271",
+            "fundingInsightId": "FI-f595e80e9f143180"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-04bd675006a7a1ed"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-34beff58db7eea62",
+            "fundingInsightId": "FI-f595e80e9f143180"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "education",
+            "name": "教育",
+            "entityIds": [
+              "EN-04bd675006a7a1ed"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-606ad70fbfd77cbb",
+            "fundingInsightId": "FI-f595e80e9f143180"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-04bd675006a7a1ed"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "consumer",
+            "name": "个人用户",
+            "entityIds": [
+              "EN-04bd675006a7a1ed"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-64d7872c57cdb860",
+            "fundingInsightId": "FI-f595e80e9f143180"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "student",
+            "name": "学生",
+            "entityIds": [
+              "EN-04bd675006a7a1ed"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-cfe0605a9c7a564f",
+            "fundingInsightId": "FI-f595e80e9f143180"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "physical_ai",
+          "name": "Physical AI",
+          "entityIds": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-9b23f88bfe58adc9",
+          "fundingInsightId": "FI-f595e80e9f143180"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "education",
+          "name": "教育",
+          "entityIds": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-606ad70fbfd77cbb",
+          "fundingInsightId": "FI-f595e80e9f143180"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "robotic_system",
+          "name": "机器人系统",
+          "entityIds": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-0f266f420b5a2f19",
+          "fundingInsightId": "FI-f595e80e9f143180"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "consumer",
+          "name": "个人用户",
+          "entityIds": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-64d7872c57cdb860",
+          "fundingInsightId": "FI-f595e80e9f143180"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "student",
+          "name": "学生",
+          "entityIds": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-cfe0605a9c7a564f",
+          "fundingInsightId": "FI-f595e80e9f143180"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "education_learning",
+          "name": "教育与学习",
+          "entityIds": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-76fcc613ebc03271",
+          "fundingInsightId": "FI-f595e80e9f143180"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-34beff58db7eea62",
+          "fundingInsightId": "FI-f595e80e9f143180"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "physical_ai",
+          "name": "Physical AI",
+          "entityIds": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-9b23f88bfe58adc9",
+          "fundingInsightId": "FI-f595e80e9f143180"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "robotic_system",
+          "name": "机器人系统",
+          "entityIds": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-0f266f420b5a2f19",
+          "fundingInsightId": "FI-f595e80e9f143180"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "education_learning",
+          "name": "教育与学习",
+          "entityIds": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-76fcc613ebc03271",
+          "fundingInsightId": "FI-f595e80e9f143180"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-34beff58db7eea62",
+          "fundingInsightId": "FI-f595e80e9f143180"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "education",
+          "name": "教育",
+          "entityIds": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-606ad70fbfd77cbb",
+          "fundingInsightId": "FI-f595e80e9f143180"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "consumer",
+          "name": "个人用户",
+          "entityIds": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-64d7872c57cdb860",
+          "fundingInsightId": "FI-f595e80e9f143180"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "student",
+          "name": "学生",
+          "entityIds": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-cfe0605a9c7a564f",
+          "fundingInsightId": "FI-f595e80e9f143180"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "financial_services",
+          "name": "金融服务",
+          "entityIds": [
+            "EN-04bd675006a7a1ed"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-04bd675006a7a1ed",
+        "EN-42da0d146baafd20"
+      ],
+      "entityNames": [
+        "上海喜梨信息科技有限公司",
+        "AI玩具厂商上海喜梨信息科技有限公司"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.36kr.com/p/3654915542130816",
+      "publisher": "36氪"
     },
     {
       "id": "EV-26439e34295a0519",
@@ -3314,6 +4466,36 @@
       "lastSeen": "2026-09-23"
     },
     {
+      "id": "EN-573b998925ae7499",
+      "name": "深圳市范博特机器人有限公司",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-86838cc774b85116"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-physical_automation",
+        "TX-product_form-model",
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-education",
+        "TX-target_user-student",
+        "TX-use_case-education_learning",
+        "TX-ai_market_category-physical_ai",
+        "TX-product_form-robotic_system",
+        "TX-target_user-consumer",
+        "TX-technology-multimodal"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-22",
+      "lastSeen": "2026-09-26"
+    },
+    {
       "id": "EN-1d79127e9d90e89b",
       "name": "智谱AI",
       "entityType": "organization_candidate",
@@ -3366,10 +4548,10 @@
         "TX-industry-education",
         "TX-target_user-student",
         "TX-use_case-education_learning",
+        "TX-target_user-consumer",
         "TX-industry-financial_services",
         "TX-industry-telecommunications",
         "TX-industry-government_public_sector",
-        "TX-target_user-consumer",
         "TX-target_user-educator",
         "TX-use_case-software_development",
         "TX-use_case-knowledge_search",
@@ -3461,6 +4643,35 @@
       "lastSeen": "2026-07-27"
     },
     {
+      "id": "EN-bd86ebd32193b381",
+      "name": "北京灵机天赐科技有限责任公司",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-e2a94eb223c11a66"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-retail_ecommerce",
+        "TX-ai_market_category-enterprise_applications",
+        "TX-ai_market_subcategory-productivity_enterprise_workflows",
+        "TX-industry-education",
+        "TX-target_user-student",
+        "TX-use_case-education_learning",
+        "TX-target_user-consumer",
+        "TX-product_form-ai_device",
+        "TX-use_case-content_creation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-04-20",
+      "lastSeen": "2026-09-26"
+    },
+    {
       "id": "EN-a6e5382c05dd0d16",
       "name": "星海图",
       "entityType": "organization_candidate",
@@ -3490,15 +4701,43 @@
         "TX-target_user-researcher",
         "TX-industry-education",
         "TX-target_user-student",
-        "TX-technology-embodied_ai",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system",
+        "TX-technology-embodied_ai",
         "TX-target_user-educator",
         "TX-industry-logistics_supply_chain"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-01-12",
       "lastSeen": "2026-09-12"
+    },
+    {
+      "id": "EN-04bd675006a7a1ed",
+      "name": "上海喜梨信息科技有限公司",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-09b8a8e4ed03dd7f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-physical_automation",
+        "TX-industry-education",
+        "TX-target_user-student",
+        "TX-use_case-education_learning",
+        "TX-ai_market_category-physical_ai",
+        "TX-product_form-robotic_system",
+        "TX-target_user-consumer",
+        "TX-industry-financial_services"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-01-30",
+      "lastSeen": "2026-09-26"
     }
   ],
   "fde": [],

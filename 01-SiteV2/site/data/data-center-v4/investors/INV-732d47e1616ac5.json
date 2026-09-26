@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T00:27:56.714Z",
+    "generatedAt": "2026-09-26T05:32:44.840Z",
     "latestDataDate": "2026-09-26",
     "currentDate": "2026-09-26",
-    "eventCount": 3576,
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-f389faf9d7a68a79",
@@ -61,22 +61,24 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-02-17",
+    "first_disclosed_at": "2025-09-16",
     "latest_disclosed_at": "2026-09-17",
     "role_counts": {
       "historical_or_ambiguous": 1,
+      "lead": 1,
       "participant": 3
     },
     "round_codes": [
       "multi_round",
+      "series_c",
       "series_d"
     ],
     "portfolio_companies": [
@@ -84,6 +86,11 @@
         "entity_id": "FICO-etched",
         "canonical_entity_id": "",
         "name": "Etched"
+      },
+      {
+        "entity_id": "EN-1785cfc3bc6ac773",
+        "canonical_entity_id": "",
+        "name": "Nothing"
       },
       {
         "entity_id": "EN-e4540a7c8404b1be",
@@ -258,6 +265,46 @@
             "quote_hash": "e3f3d2d15b78bd35632ba28b62a2a86c87c45d4ecfbe8c86739628eb3f1b4eab"
           }
         ]
+      },
+      {
+        "activity_id": "IA-2ecffeb74be54b55",
+        "funding_insight_id": "FI-e5aed52f8dab81de",
+        "event_ids": [
+          "EV-60366423eaa67216"
+        ],
+        "company_entity_id": "EN-1785cfc3bc6ac773",
+        "company_canonical_entity_id": "",
+        "company_name": "Nothing",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "amount_original": "$200 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2 亿美元"
+        },
+        "announced_at": "2025-09-16",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-7e709202ce99cc8e",
+            "source_url": "https://tech.eu/2025/09/16/nothing-raises-200m-to-power-the-next-phase-of-consumer-ai/",
+            "source_title": "Nothing 融资 2 亿美元，推动消费级 AI 进入下一阶段",
+            "source_content_hash": "d716e99aea49a2f134ddf766ae332cbdb6bd4883970bee6325631bd0839ad6d1",
+            "quote": "The round was led by Tiger Global",
+            "quote_hash": "9eaaed652574b1beacba1844710f58106747549dba80d721fc0a8fcdeeb1d158"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -292,6 +339,14 @@
         "source_content_hash": "74cb86598e6c9021",
         "quote": "with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify",
         "quote_hash": "e3f3d2d15b78bd35632ba28b62a2a86c87c45d4ecfbe8c86739628eb3f1b4eab"
+      },
+      {
+        "source_id": "FISRC-7e709202ce99cc8e",
+        "source_url": "https://tech.eu/2025/09/16/nothing-raises-200m-to-power-the-next-phase-of-consumer-ai/",
+        "source_title": "Nothing 融资 2 亿美元，推动消费级 AI 进入下一阶段",
+        "source_content_hash": "d716e99aea49a2f134ddf766ae332cbdb6bd4883970bee6325631bd0839ad6d1",
+        "quote": "The round was led by Tiger Global",
+        "quote_hash": "9eaaed652574b1beacba1844710f58106747549dba80d721fc0a8fcdeeb1d158"
       }
     ],
     "public_profile": {

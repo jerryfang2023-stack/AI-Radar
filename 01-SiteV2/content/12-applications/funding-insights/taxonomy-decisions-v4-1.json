@@ -5,16 +5,16 @@
     "prompt_version": "FUNDING-TAXONOMY-V4.1-CB-2026-V1.0",
     "external_framework": "CB Insights AI 100 2026",
     "external_framework_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
-    "generated_at": "2026-09-24T02:18:04.445Z",
+    "generated_at": "2026-09-26T05:31:15.042Z",
     "model_provider": "deepseek",
     "models": [
       "deepseek-v4-pro"
     ],
-    "decision_count": 502,
-    "input_hash": "5e9087aa00ddaea0",
+    "decision_count": 513,
+    "input_hash": "4817ecd21eb4bfa8",
     "override_count": 18,
-    "needs_review_count": 55,
-    "low_confidence_count": 76
+    "needs_review_count": 62,
+    "low_confidence_count": 84
   },
   "decisions": [
     {
@@ -10037,6 +10037,225 @@
       "confidence": 0.9,
       "needs_review": false,
       "rationale": "Enveda 的核心产品是 AI 药物发现平台 PRISM，用于解析质谱数据、预测分子结构并指导实验，直接服务于生物医药研发流程，属于行业专属数据与工作流，因此归入行业应用而非基础设施或企业应用。"
+    },
+    {
+      "event_id": "EV-e2a94eb223c11a66",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "ai_device",
+      "use_case_ids": [
+        "education_learning",
+        "content_creation"
+      ],
+      "industry_ids": [
+        "education",
+        "retail_ecommerce"
+      ],
+      "target_user_ids": [
+        "consumer",
+        "student"
+      ],
+      "confidence": 0.75,
+      "needs_review": true,
+      "rationale": "Jollybubu is a children's AI smart hardware and content ecosystem with a 'host + doll' multi-agent interaction system. It is an AI device rather than physical AI because it is a user-operated interactive hardware/play companion, not an autonomous robot acting in the physical world. The current classification has enterprise_applications as market category, but the product is consumer/education-focused. I selected enterprise_applications > productivity_enterprise_workflows with empty application to match the allowed hierarchy while flagging for review because the product is not really an enterprise productivity workflow. Use cases include education_learning and content_creation; industries include education and retail_ecommerce; target users include consumer and student."
+    },
+    {
+      "event_id": "EV-52bafa1f7edd3231",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "ai_device",
+      "use_case_ids": [
+        "productivity_enterprise_workflows",
+        "knowledge_search"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user",
+        "consumer"
+      ],
+      "confidence": 0.7,
+      "needs_review": true,
+      "rationale": "产品是AI可穿戴硬件，但功能定位为主动式AI执行助理，接入Notion、Gmail、Slack等办公工具，属于跨行业生产力工作流，而非物理AI（无机器人/车辆自主行动）或基础设施。证据未明确行业属性，故归入企业应用。"
+    },
+    {
+      "event_id": "EV-419ddb2d5cfc799a",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "ai_device",
+      "use_case_ids": [
+        "productivity_enterprise_workflows",
+        "content_creation",
+        "knowledge_search"
+      ],
+      "industry_ids": [
+        "retail_ecommerce",
+        "media_entertainment",
+        "telecommunications"
+      ],
+      "target_user_ids": [
+        "consumer",
+        "business_user"
+      ],
+      "confidence": 0.75,
+      "needs_review": true,
+      "rationale": "雷鸟创新（RayNeo）专注于消费级AR智能眼镜，产品为AI设备（ai_device），不属于physical_ai。当前分类已标记为enterprise_applications，但产品主要面向消费者，且AR眼镜可用于多模态AI对话、实时翻译、流媒体等场景。由于缺少明确的行业应用层级，选择enterprise_applications/productivity_enterprise_workflows作为保守分类，并标记需人工复核。"
+    },
+    {
+      "event_id": "EV-41e71ae12a730f23",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "consumer"
+      ],
+      "confidence": 0.8,
+      "needs_review": false,
+      "rationale": "bibo通过多模态感知环境并以眼神、表情、动作等身体方式回应，属于感知-决策-行动闭环的物理AI，而非仅语音问答。"
+    },
+    {
+      "event_id": "EV-09b8a8e4ed03dd7f",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation",
+        "education_learning"
+      ],
+      "industry_ids": [
+        "education"
+      ],
+      "target_user_ids": [
+        "consumer",
+        "student"
+      ],
+      "confidence": 0.75,
+      "needs_review": false,
+      "rationale": "AI玩具通过本地部署的对话模型与硬件交互，具备感知和行动能力，属于物理AI；同时覆盖家庭陪伴与教育场景。"
+    },
+    {
+      "event_id": "EV-86838cc774b85116",
+      "market_category_id": "physical_ai",
+      "market_subcategory_id": "",
+      "market_application_id": "",
+      "product_form_id": "robotic_system",
+      "use_case_ids": [
+        "physical_automation",
+        "education_learning"
+      ],
+      "industry_ids": [
+        "healthcare_life_sciences",
+        "education"
+      ],
+      "target_user_ids": [
+        "student",
+        "consumer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "心理教练机器人通过硬件采集体征并作出情绪回应，属于感知-决策-行动的物理AI，聚焦学生心理健康。"
+    },
+    {
+      "event_id": "EV-51d8aec94225e9c6",
+      "market_category_id": "industry_applications",
+      "market_subcategory_id": "consumer_retail",
+      "market_application_id": "",
+      "product_form_id": "ai_device",
+      "use_case_ids": [
+        "content_creation",
+        "education_learning"
+      ],
+      "industry_ids": [
+        "retail_ecommerce"
+      ],
+      "target_user_ids": [
+        "consumer"
+      ],
+      "confidence": 0.85,
+      "needs_review": false,
+      "rationale": "AI情感陪伴玩具属于AI消费硬件，产品形态为AI设备（ai_device），面向消费者，主要应用于零售电商行业。使用场景包括内容创作（角色扮演对话）和教育学习（儿童互动）。"
+    },
+    {
+      "event_id": "EV-d4b0dd4de320089a",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "ai_device",
+      "use_case_ids": [
+        "productivity_enterprise_workflows",
+        "knowledge_search",
+        "content_creation"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "business_user",
+        "consumer"
+      ],
+      "confidence": 0.55,
+      "needs_review": true,
+      "rationale": "证据显示产品为消费级智能眼镜，GO系列聚焦AI能力，在翻译、提词等商务场景中验证，并作为Agent实体硬件完成订机票、查邮件、撰写会议纪要等跨行业办公任务，因此归入企业应用中的生产力工作流。但证据未明确其是否直接控制物理世界，且产品形态为AI设备，需人工复核。"
+    },
+    {
+      "event_id": "EV-60366423eaa67216",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "ai_device",
+      "use_case_ids": [
+        "productivity_enterprise_workflows",
+        "content_creation"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "consumer"
+      ],
+      "confidence": 0.55,
+      "needs_review": true,
+      "rationale": "证据显示Nothing主要销售智能手机、音频和智能手表等消费硬件，Essential Apps允许用户用自然语言创建应用，属于跨行业生产力工具而非单一行业工作流；但证据未明确其AI产品是面向企业还是消费者，且物理AI仅停留在未来规划，故归入企业应用并标记需复核。"
+    },
+    {
+      "event_id": "EV-06d2ebc330c7fc37",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "ai_device",
+      "use_case_ids": [
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "retail_ecommerce"
+      ],
+      "target_user_ids": [
+        "consumer"
+      ],
+      "confidence": 0.7,
+      "needs_review": true,
+      "rationale": "The company is an AI-powered emotional jewelry and smart wearable brand. Its first product is an AI physical and mental health companion ring, which is a user-operated AI device rather than physical AI. The current classification has product_form_id as ai_device, which is correct. However, the market category is enterprise_applications, but the product is a consumer wearable, so the hierarchy tuple should be a non-physical one. The allowed hierarchy tuple for enterprise_applications with productivity_enterprise_workflows is [\"enterprise_applications\",\"productivity_enterprise_workflows\",\"\"], but this is a consumer device, so the market category may need review. The use case is productivity_enterprise_workflows, but the product is more of a consumer health companion, so the use case may be better as consumer or health-related, but those are not in the allowed list. The industry is retail_ecommerce as it is a consumer product. Target user is consumer. Needs review because the market category and use case may not perfectly fit."
+    },
+    {
+      "event_id": "EV-545bef6ff60cf3b2",
+      "market_category_id": "enterprise_applications",
+      "market_subcategory_id": "productivity_enterprise_workflows",
+      "market_application_id": "",
+      "product_form_id": "ai_device",
+      "use_case_ids": [
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "consumer"
+      ],
+      "confidence": 0.4,
+      "needs_review": true,
+      "rationale": "证据仅显示这是一款AI项链硬件，强调定向麦克风和语音优先处理，但未明确其核心功能是面向企业工作流还是消费者场景。现有分类将其归为企业应用，但缺乏足够证据支持具体子类别，需人工复核。"
     }
   ]
 }

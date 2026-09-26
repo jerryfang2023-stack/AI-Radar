@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T00:27:56.714Z",
+    "generatedAt": "2026-09-26T05:32:44.840Z",
     "latestDataDate": "2026-09-26",
     "currentDate": "2026-09-26",
-    "eventCount": 3576,
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-f389faf9d7a68a79",
@@ -54,29 +54,80 @@
   },
   "institution": {
     "id": "INV-94cd7553f1db72",
-    "name": "a16z Speedrun",
-    "aliases": [],
+    "name": "a16z speedrun",
+    "aliases": [
+      "a16z Speedrun"
+    ],
     "canonical_entity_id": null,
     "investor_kind": "unverified_investor",
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-08-01",
-    "latest_disclosed_at": "2025-08-01",
+    "latest_disclosed_at": "2026-03-12",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 1,
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-6c42a85075d8a891",
+        "canonical_entity_id": "",
+        "name": "Taya"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-4da4a09ce9a274c3",
+        "funding_insight_id": "FI-a497814e25dbcab1",
+        "event_ids": [
+          "EV-545bef6ff60cf3b2"
+        ],
+        "company_entity_id": "EN-6c42a85075d8a891",
+        "company_canonical_entity_id": "",
+        "company_name": "Taya",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$5 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 5000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "500 万美元"
+        },
+        "announced_at": "2026-03-12",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-4ec4178291982ae4",
+            "source_url": "https://www.prnewswire.com/news-releases/taya-raises-5m-for-ai-jewelry-designed-to-capture-your-thoughts-not-the-room-302711918.html",
+            "source_title": "Taya 融资 500 万美元，用于设计能捕捉你思绪而非房间的 AI 珠宝",
+            "source_content_hash": "b78c54740db46c4316d314be4c11f1cc1a37f0e635049a7661863a7e71e84ff7",
+            "quote": "Taya today announced it has raised a $5 million seed round led by MaC Venture Capital and Female Founders Fund, with participation from a16z speedrun.",
+            "quote_hash": "0a632c56cfbb4e44872d10b4c4d7118a5c285d0446981e4b38379a2f3f43ced6"
+          }
+        ]
+      },
       {
         "activity_id": "IA-cd332e9e9c5793fe",
         "funding_insight_id": "FI-1064b8c5f69e8336",
@@ -120,6 +171,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-4ec4178291982ae4",
+        "source_url": "https://www.prnewswire.com/news-releases/taya-raises-5m-for-ai-jewelry-designed-to-capture-your-thoughts-not-the-room-302711918.html",
+        "source_title": "Taya 融资 500 万美元，用于设计能捕捉你思绪而非房间的 AI 珠宝",
+        "source_content_hash": "b78c54740db46c4316d314be4c11f1cc1a37f0e635049a7661863a7e71e84ff7",
+        "quote": "Taya today announced it has raised a $5 million seed round led by MaC Venture Capital and Female Founders Fund, with participation from a16z speedrun.",
+        "quote_hash": "0a632c56cfbb4e44872d10b4c4d7118a5c285d0446981e4b38379a2f3f43ced6"
+      },
+      {
         "source_id": "FISRC-3ac436d049634bc2",
         "source_url": "https://techcrunch.com/2025/08/01/fundamental-research-labs-nabs-33-million-from-prosus-to-build-ai-agents-for-multiple-verticals/",
         "source_title": "Fundamental Research Labs 获超 3000 万美元融资，用于跨垂直领域构建 AI 智能体",
@@ -133,10 +192,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "a16z Speedrun 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2025-08-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "a16z speedrun 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-03-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Taya · 种子轮 · 2026-03-12 · 本轮参投 · $5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-4ec4178291982ae4"
+        },
         {
           "description": "融资来源记录：Fundamental Research Labs · A轮 · 2025-08-01 · 种子轮参投 · $33 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3ac436d049634bc2"
@@ -144,6 +207,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-4ec4178291982ae4",
+          "source_url": "https://www.prnewswire.com/news-releases/taya-raises-5m-for-ai-jewelry-designed-to-capture-your-thoughts-not-the-room-302711918.html",
+          "source_title": "Taya 融资 500 万美元，用于设计能捕捉你思绪而非房间的 AI 珠宝",
+          "source_content_hash": "b78c54740db46c4316d314be4c11f1cc1a37f0e635049a7661863a7e71e84ff7",
+          "quote": "Taya today announced it has raised a $5 million seed round led by MaC Venture Capital and Female Founders Fund, with participation from a16z speedrun.",
+          "quote_hash": "0a632c56cfbb4e44872d10b4c4d7118a5c285d0446981e4b38379a2f3f43ced6"
+        },
         {
           "source_id": "FISRC-3ac436d049634bc2",
           "source_url": "https://techcrunch.com/2025/08/01/fundamental-research-labs-nabs-33-million-from-prosus-to-build-ai-agents-for-multiple-verticals/",

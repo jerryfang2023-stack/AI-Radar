@@ -519,7 +519,7 @@ window.WaveSightOpsConsole = {
   },
   "meta": {
     "version": "OPS-V3.8.0-engineering-integration",
-    "generatedAt": "2026-09-26T00:28:30.981Z",
+    "generatedAt": "2026-09-26T05:31:24.286Z",
     "date": "2026-09-26",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
@@ -1574,7 +1574,7 @@ window.WaveSightOpsConsole = {
       }
     ],
     "sourceQuality": {
-      "updatedAt": "2026-09-26T00:28:30.972Z",
+      "updatedAt": "2026-09-26T05:31:24.229Z",
       "sampleNote": "按最新 V4 RawDocument 的 acquisition_channel 聚合；样本量为已落盘 Raw 文档数。",
       "metricNote": "诊断分由可用率、全文率、高质提取率、可读性和事实命中率组成，仅用于运营观察，不参与来源准入、排序或事实门禁。",
       "rows": [
@@ -1633,6 +1633,20 @@ window.WaveSightOpsConsole = {
           "canonicalEvents": 0,
           "score": 53,
           "grade": "待改善"
+        },
+        {
+          "id": "targeted-backfill",
+          "label": "targeted-backfill",
+          "total": 11,
+          "eligibleRate": 100,
+          "fullTextRate": 100,
+          "highQualityRate": 82,
+          "readabilityScore": 0,
+          "factHitRate": 100,
+          "acceptedClaims": 11,
+          "canonicalEvents": 11,
+          "score": 81,
+          "grade": "良"
         }
       ]
     },
@@ -27833,6 +27847,6 @@ window.WaveSightOpsConsole = {
       }
     ],
     "catalogGeneratedAt": "2026-09-13 16:21:58",
-    "snapshotGeneratedAt": "2026-09-26T00:28:30.981Z"
+    "snapshotGeneratedAt": "2026-09-26T05:31:24.286Z"
   }
 };

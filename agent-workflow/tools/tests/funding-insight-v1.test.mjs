@@ -3010,3 +3010,43 @@ test("official corporate venture arm is classified as a corporate investor", () 
   assert.equal(registry.institutions[0].id, "INV-8e2043c5fb5fde");
   assert.equal(registry.institutions[0].investor_kind, "corporate_investor");
 });
+
+test("reviewed discovery is identity-bound URL metadata and never imports snippets as evidence", async () => {
+  const { reviewedResearchSeeds } = await import("../generate-funding-insights-deepseek.mjs");
+  const event = {event_id:"EV-test"}, company={canonical_name:"FoloToy"};
+  const manifest={schema_version:"FUNDING-RESEARCH-SEEDS-V1",events:[{event_id:event.event_id,company_name:"FoloToy",discovery_provider:"web",queries:["FoloToy funding"],sources:[{url:"https://example.com/original",title:"FoloToy funding",provider_body:"untrusted snippet"}]}]};
+  assert.equal(reviewedResearchSeeds(manifest,event,company)[0].provider_body, "");
+  assert.throws(()=>reviewedResearchSeeds(manifest,event,{canonical_name:"Other company"}),/identity_mismatch/);
+  manifest.events[0].sources[0].url="http://localhost/private";
+  assert.throws(()=>reviewedResearchSeeds(manifest,event,company),/invalid_research_seed_url/);
+});
+
+test("cumulative headline amounts cannot replace undisclosed current-round proceeds", async () => {
+  const { canonicalFundingEventAmount, ensureCanonicalFundingEvidence, isEligibleFundingInsightEvent, fundingEventCardConsistencyProblems } = await import("../funding-insight-v1-utils.mjs");
+  const claims=[{claim_id:"CL-review",claim_type:"funding",verification_status:"accepted",subject:"影目科技",object:"C3轮融资",qualifiers:{funding_amount_status:"not_disclosed"},source_quote:"影目科技近日完成C3轮融资。继年初完成C1、C2轮融资后，公司C轮融资累计金额近10亿元。"}];
+  const event={event_id:"EV-review",event_type:"funding",event_status:"completed",publication_status:"verified",display_title_zh:"头部智能眼镜品牌完成近10亿C轮融资",object:"C3轮融资",metrics:["10亿"],claim_refs:["CL-review"]};
+  assert.equal(canonicalFundingEventAmount(event,claims), "");
+  assert.equal(isEligibleFundingInsightEvent(event,claims), true);
+  const payload={financing:{amount:"近10亿元"}};
+  ensureCanonicalFundingEvidence(payload,{claims},event,[]);
+  assert.equal(payload.financing.amount,"未披露");
+  assert.deepEqual(fundingEventCardConsistencyProblems({company:{entity_id:"EN-review"},financing:{amount:"近10亿元"}},event,claims),["funding_cumulative_amount_used_as_round"]);
+  const unknownClaims=[{...claims[0],source_quote:"深圳跃然创新科技有限公司完成A+轮融资，由蚂蚁集团领投。",object:"A+轮融资"}];
+  assert.equal(isEligibleFundingInsightEvent({...event,object:"A+轮融资",metrics:[],display_title_zh:"跃然创新完成A+轮融资"},unknownClaims),true);
+});
+
+test("supplemental citations respect Chinese sentence boundaries and can corroborate financing alone", async () => {
+  const { supplementalQuote } = await import("../generate-funding-insights-deepseek.mjs");
+  const quote="智能眼镜品牌影目科技近日完成C3轮融资，由四川振兴科创基金领投，静安资本、市北高新等机构跟投。";
+  const body="导航".repeat(400)+"。"+quote+"后续无关内容。";
+  assert.equal(supplementalQuote({body_clean:body},{canonical_name:"影目科技"},{}),quote);
+  assert.equal(supplementalQuote({body_clean:body},{canonical_name:"另一家公司"},{}),"");
+});
+
+test("closed round proceeds remain distinct from the valuation", () => {
+  const claims = [{ claim_id: "CL-CLOSED", claim_type: "funding", verification_status: "accepted",
+    subject: "Nothing", object: "Series C financing",
+    source_quote: "Nothing has closed $200 million in Series C financing at a valuation of $1.3 billion." }];
+  const event = { claim_refs: ["CL-CLOSED"], metrics: ["$1.3 billion", "$200 million"] };
+  assert.equal(canonicalFundingEventAmount(event, claims), "$200 million");
+});

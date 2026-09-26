@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T00:27:56.714Z",
+    "generatedAt": "2026-09-26T05:32:44.840Z",
     "latestDataDate": "2026-09-26",
     "currentDate": "2026-09-26",
-    "eventCount": 3576,
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-f389faf9d7a68a79",
@@ -54,7 +54,7 @@
   },
   "entity": {
     "id": "EN-1a2290470e0aa754",
-    "name": "San Francisco",
+    "name": "SAN FRANCISCO",
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [],
@@ -65,16 +65,18 @@
     "eventIds": [
       "EV-181cd28d97c4e61d",
       "EV-3d93d1da8cb64462",
-      "EV-7f3298069258b3ea"
+      "EV-7f3298069258b3ea",
+      "EV-545bef6ff60cf3b2"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "2026-06-25",
-    "lastSeen": "2026-08-21",
+    "firstSeen": "2026-03-12",
+    "lastSeen": "2026-09-26",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-545bef6ff60cf3b2",
         "EV-181cd28d97c4e61d",
         "EV-3d93d1da8cb64462",
         "EV-7f3298069258b3ea"
@@ -87,6 +89,84 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-545bef6ff60cf3b2",
+        "dataDate": "2026-09-26",
+        "date": "2026-03-12",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Taya 融资 500 万美元，用于设计能捕捉你思绪而非房间的 AI 珠宝",
+        "displayTags": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "enterprise_applications",
+            "name": "企业级应用",
+            "entityIds": [
+              "EN-6c42a85075d8a891"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-1f1ede5f1d3dc6e5",
+            "fundingInsightId": "FI-39d5198a5b7b8894"
+          },
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-6c42a85075d8a891"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-871fc4b4559ff5ae",
+            "fundingInsightId": "FI-39d5198a5b7b8894"
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_device",
+            "name": "AI 设备",
+            "entityIds": [
+              "EN-6c42a85075d8a891"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-ebb3c32996324b58",
+            "fundingInsightId": "FI-39d5198a5b7b8894"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-6c42a85075d8a891"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-049c98f178dd1e33",
+            "fundingInsightId": "FI-39d5198a5b7b8894"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "consumer",
+            "name": "个人用户",
+            "entityIds": [
+              "EN-6c42a85075d8a891"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-550d8168cc730ec6",
+            "fundingInsightId": "FI-39d5198a5b7b8894"
+          }
+        ],
+        "entityIds": [
+          "EN-1a2290470e0aa754",
+          "EN-6c42a85075d8a891",
+          "EN-3a7bd3e2360a3d29"
+        ]
+      },
       {
         "id": "EV-181cd28d97c4e61d",
         "dataDate": "2026-08-21",

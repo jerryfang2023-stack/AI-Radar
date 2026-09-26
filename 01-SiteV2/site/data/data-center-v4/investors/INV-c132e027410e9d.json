@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T00:27:56.714Z",
+    "generatedAt": "2026-09-26T05:32:44.840Z",
     "latestDataDate": "2026-09-26",
     "currentDate": "2026-09-26",
-    "eventCount": 3576,
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-f389faf9d7a68a79",
@@ -61,27 +61,33 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-05-21",
+    "first_disclosed_at": "2025-09-16",
     "latest_disclosed_at": "2026-05-21",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "series_a"
+      "series_a",
+      "series_c"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-245f1e177c5169cb",
         "canonical_entity_id": "",
         "name": "Hark"
+      },
+      {
+        "entity_id": "EN-1785cfc3bc6ac773",
+        "canonical_entity_id": "",
+        "name": "Nothing"
       }
     ],
     "activities": [
@@ -125,6 +131,46 @@
             "quote_hash": "c3308a2da36a6975868dde894ce832cd0477fbdd5c8fd7b8c6ed3f7635039f98"
           }
         ]
+      },
+      {
+        "activity_id": "IA-c00d111fb2f7b2f2",
+        "funding_insight_id": "FI-e5aed52f8dab81de",
+        "event_ids": [
+          "EV-60366423eaa67216"
+        ],
+        "company_entity_id": "EN-1785cfc3bc6ac773",
+        "company_canonical_entity_id": "",
+        "company_name": "Nothing",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "amount_original": "$200 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2 亿美元"
+        },
+        "announced_at": "2025-09-16",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7e709202ce99cc8e",
+            "source_url": "https://tech.eu/2025/09/16/nothing-raises-200m-to-power-the-next-phase-of-consumer-ai/",
+            "source_title": "Nothing 融资 2 亿美元，推动消费级 AI 进入下一阶段",
+            "source_content_hash": "d716e99aea49a2f134ddf766ae332cbdb6bd4883970bee6325631bd0839ad6d1",
+            "quote": "alongside new strategic backing from Nikhil Kamath and Qualcomm Ventures",
+            "quote_hash": "c255cf67574e4c0a61a71a835a9950747856dd3b6b1ee07474870bbba856720c"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -135,6 +181,14 @@
         "source_content_hash": "e91739ca23d21469",
         "quote": "Qualcomm Ventures",
         "quote_hash": "c3308a2da36a6975868dde894ce832cd0477fbdd5c8fd7b8c6ed3f7635039f98"
+      },
+      {
+        "source_id": "FISRC-7e709202ce99cc8e",
+        "source_url": "https://tech.eu/2025/09/16/nothing-raises-200m-to-power-the-next-phase-of-consumer-ai/",
+        "source_title": "Nothing 融资 2 亿美元，推动消费级 AI 进入下一阶段",
+        "source_content_hash": "d716e99aea49a2f134ddf766ae332cbdb6bd4883970bee6325631bd0839ad6d1",
+        "quote": "alongside new strategic backing from Nikhil Kamath and Qualcomm Ventures",
+        "quote_hash": "c255cf67574e4c0a61a71a835a9950747856dd3b6b1ee07474870bbba856720c"
       }
     ],
     "public_profile": {
@@ -149,6 +203,10 @@
         {
           "description": "融资来源记录：Hark · A轮 · 2026-05-21 · 本轮参投 · $700M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9b94f245fa27a161"
+        },
+        {
+          "description": "融资来源记录：Nothing · C轮 · 2025-09-16 · 本轮参投 · $200 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-7e709202ce99cc8e"
         }
       ],
       "contacts": [],
@@ -160,6 +218,14 @@
           "source_content_hash": "e91739ca23d21469",
           "quote": "Qualcomm Ventures",
           "quote_hash": "c3308a2da36a6975868dde894ce832cd0477fbdd5c8fd7b8c6ed3f7635039f98"
+        },
+        {
+          "source_id": "FISRC-7e709202ce99cc8e",
+          "source_url": "https://tech.eu/2025/09/16/nothing-raises-200m-to-power-the-next-phase-of-consumer-ai/",
+          "source_title": "Nothing 融资 2 亿美元，推动消费级 AI 进入下一阶段",
+          "source_content_hash": "d716e99aea49a2f134ddf766ae332cbdb6bd4883970bee6325631bd0839ad6d1",
+          "quote": "alongside new strategic backing from Nikhil Kamath and Qualcomm Ventures",
+          "quote_hash": "c255cf67574e4c0a61a71a835a9950747856dd3b6b1ee07474870bbba856720c"
         }
       ],
       "last_verified_at": "2026-09-25"

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T00:27:56.714Z",
+    "generatedAt": "2026-09-26T05:32:44.840Z",
     "latestDataDate": "2026-09-26",
     "currentDate": "2026-09-26",
-    "eventCount": 3576,
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-f389faf9d7a68a79",
@@ -61,18 +61,18 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 6,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 6,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 5,
-    "china_market_company_count": 5,
+    "china_market_activity_count": 6,
+    "china_market_company_count": 6,
     "first_disclosed_at": "2026-01-12",
     "latest_disclosed_at": "2026-09-15",
     "role_counts": {
-      "co_lead": 1,
+      "co_lead": 2,
       "historical_or_ambiguous": 6,
       "participant": 4
     },
@@ -108,6 +108,11 @@
         "entity_id": "EN-8dc72a4672894e0f",
         "canonical_entity_id": "EN-8dc72a4672894e0f",
         "name": "自变量机器人"
+      },
+      {
+        "entity_id": "EN-04bd675006a7a1ed",
+        "canonical_entity_id": "",
+        "name": "FoloToy"
       }
     ],
     "activities": [
@@ -513,6 +518,46 @@
         ]
       },
       {
+        "activity_id": "IA-d5801fa7536ed695",
+        "funding_insight_id": "FI-60f3b8be148ee817",
+        "event_ids": [
+          "EV-09b8a8e4ed03dd7f"
+        ],
+        "company_entity_id": "EN-04bd675006a7a1ed",
+        "company_canonical_entity_id": "",
+        "company_name": "FoloToy",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "Pre-A轮/Pre-A+轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-01-30",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-d7c96804962827cf",
+            "source_url": "https://www.36kr.com/p/3654915542130816",
+            "source_title": "一家AI玩具公司获数千万元融资，核心产品销量翻五倍｜硬氪首发-36氪",
+            "source_content_hash": "f1ce876ef35c247587d664660c57d06e4a87fe526a44ba7dd66e7b39945922bb",
+            "quote": "投资方：深创投、南山战新投、老股东火火兔",
+            "quote_hash": "6f02a45cb65932eccb5cb91b23bf234a00d2b7a396c799776ff16dcfebac7751"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-8df215ff3f25247c",
         "funding_insight_id": "FI-e9bdd4e9374b04ca",
         "event_ids": [
@@ -635,6 +680,14 @@
         "source_content_hash": "f71a5fef7a18be7527726ba9b5eb5bd4aa7c2be242317d45634cf5ad0538d012",
         "quote": "新增深创投、创新工场、普华资本、钧山资本、雅瑞资本等加入。",
         "quote_hash": "8e9d10663fe3e1560634117b6891dc37bab1b356161cbcf0e51af36273fc4061"
+      },
+      {
+        "source_id": "FISRC-d7c96804962827cf",
+        "source_url": "https://www.36kr.com/p/3654915542130816",
+        "source_title": "一家AI玩具公司获数千万元融资，核心产品销量翻五倍｜硬氪首发-36氪",
+        "source_content_hash": "f1ce876ef35c247587d664660c57d06e4a87fe526a44ba7dd66e7b39945922bb",
+        "quote": "投资方：深创投、南山战新投、老股东火火兔",
+        "quote_hash": "6f02a45cb65932eccb5cb91b23bf234a00d2b7a396c799776ff16dcfebac7751"
       },
       {
         "source_id": "FISRC-449b969616ed1e95",

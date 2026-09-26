@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-26T05:32:44.840Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
+    "quarantinedEventCount": 39,
+    "quarantinedEventIds": [
+      "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-cab18aa68c8ae551",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "institution": {
+    "id": "INV-9fad0e54c5bf32",
+    "name": "Steve Huffman",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 0,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 0,
+    "market_regions": [
+      "GLOBAL"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2025-09-16",
+    "latest_disclosed_at": "2025-09-16",
+    "role_counts": {
+      "historical_or_ambiguous": 1
+    },
+    "round_codes": [],
+    "portfolio_companies": [],
+    "activities": [
+      {
+        "activity_id": "IA-7ba8e0ba236e719b",
+        "funding_insight_id": "FI-e5aed52f8dab81de",
+        "event_ids": [
+          "EV-60366423eaa67216"
+        ],
+        "company_entity_id": "EN-1785cfc3bc6ac773",
+        "company_canonical_entity_id": "",
+        "company_name": "Nothing",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "amount_original": "$200 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2 亿美元"
+        },
+        "announced_at": "2025-09-16",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-f6fdd5655f9959e9",
+            "source_url": "https://nothing.tech/community-investment-3",
+            "source_title": "Community Investment (3) | Nothing | UK",
+            "source_content_hash": "f9b71df0af1c23e2",
+            "quote": "along with leading tech entrepreneurs like Tony Fadell (Future Shape, inventor of the iPod), Casey Neistat, Nikhil Kamath (co-founder Zerodha), Kevin Lin (co-founder of Twitch), Steve Huffman (CEO of Reddit), Garry Tan (CEO of Y Combinator), and many others.",
+            "quote_hash": "17236f745d8e9a6cbfb9326b7ef9d8ccbd3ec2f099f5183bbd9bdf02fe9eb78c"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-f6fdd5655f9959e9",
+        "source_url": "https://nothing.tech/community-investment-3",
+        "source_title": "Community Investment (3) | Nothing | UK",
+        "source_content_hash": "f9b71df0af1c23e2",
+        "quote": "along with leading tech entrepreneurs like Tony Fadell (Future Shape, inventor of the iPod), Casey Neistat, Nikhil Kamath (co-founder Zerodha), Kevin Lin (co-founder of Twitch), Steve Huffman (CEO of Reddit), Garry Tan (CEO of Y Combinator), and many others.",
+        "quote_hash": "17236f745d8e9a6cbfb9326b7ef9d8ccbd3ec2f099f5183bbd9bdf02fe9eb78c"
+      }
+    ],
+    "public_profile": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "Steve Huffman 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2025-09-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Nothing · C轮 · 2025-09-16 · 历史投资方 · $200 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f6fdd5655f9959e9"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-f6fdd5655f9959e9",
+          "source_url": "https://nothing.tech/community-investment-3",
+          "source_title": "Community Investment (3) | Nothing | UK",
+          "source_content_hash": "f9b71df0af1c23e2",
+          "quote": "along with leading tech entrepreneurs like Tony Fadell (Future Shape, inventor of the iPod), Casey Neistat, Nikhil Kamath (co-founder Zerodha), Kevin Lin (co-founder of Twitch), Steve Huffman (CEO of Reddit), Garry Tan (CEO of Y Combinator), and many others.",
+          "quote_hash": "17236f745d8e9a6cbfb9326b7ef9d8ccbd3ec2f099f5183bbd9bdf02fe9eb78c"
+        }
+      ],
+      "last_verified_at": "2026-09-25"
+    }
+  }
+}
