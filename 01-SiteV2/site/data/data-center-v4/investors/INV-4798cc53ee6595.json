@@ -139,19 +139,80 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "ARCH Venture Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "The firm’s investment range and company-building description are self-reported. Portfolio examples do not establish fund-level returns. Trase’s USD 107 million seed round is the company total, not ARCH’s individual investment.",
+      "summary": "ARCH Venture Partners is a science-first venture firm that creates and backs companies around disruptive technologies, especially in life sciences. It describes more than three decades of company building and a flexible investment approach from early formation through later growth. Co-founders Robert Nelsen and Keith Crandell lead a broad investment team.",
+      "facts": [
+        {
+          "field": "firm_history",
+          "label": "Firm history",
+          "value": "ARCH says it has backed disruptive science companies for more than 30 years.",
+          "source_id": "arch_about"
+        },
+        {
+          "field": "investment_approach",
+          "label": "Investment approach",
+          "value": "The firm follows scientific advances, partners with founding teams, and sizes investment to company needs, from USD 50,000 to hundreds of millions per company.",
+          "source_id": "arch_about"
+        },
+        {
+          "field": "leadership",
+          "label": "Co-founders",
+          "value": "Robert Nelsen and Keith Crandell are co-founders and managing directors.",
+          "source_id": "arch_team"
+        },
+        {
+          "field": "investment_scope",
+          "label": "Company-building scope",
+          "value": "The firm supports companies through formation and growth using an extended network of partners.",
+          "source_id": "arch_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Trase · 种子轮 · 2026-06-25 · 本轮领投 · 1.07 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "ARCH’s official portfolio includes companies such as Illumina, Alnylam Pharmaceuticals, Beam Therapeutics, and Aledade; its portfolio page is not an audited return record.",
+          "source_id": "arch_portfolio"
+        },
+        {
+          "description": "ARCH Venture Partners led Trase’s USD 107 million seed round announced in June 2026. The round amount is the company’s total financing, not ARCH’s individual check.",
           "source_id": "FISRC-9d8b3693de0579b6"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Official website",
+          "value": "ARCH Venture Partners",
+          "source_id": "arch_about",
+          "url": "https://www.archventure.com/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "arch_about",
+          "source_url": "https://www.archventure.com/about/",
+          "source_title": "About | ARCH Venture Partners",
+          "source_content_hash": "deb55381ce99fe0a50e94818a1f4d3724e4c4960368844b2ae6d4e32b64b92ee",
+          "quote": "Over 30 years, ARCH has backed disruptive science companies.",
+          "quote_hash": "ce126d1c52b8e40a3af87d82e1747f65604d1c78c57bf64cd22d35d455b38c9c"
+        },
+        {
+          "source_id": "arch_portfolio",
+          "source_url": "https://www.archventure.com/portfolio/",
+          "source_title": "Portfolio | ARCH Venture Partners",
+          "source_content_hash": "aab23a9a17a8559305bb3d855d3aab4d6ae917822d807d38db9b9f52f89152d0",
+          "quote": "We build disruptive companies. Meet them.",
+          "quote_hash": "56935328cf9d33692901e1b1ec461f921f8d3255b0bda2d8bcbf338e1c24ca78"
+        },
+        {
+          "source_id": "arch_team",
+          "source_url": "https://www.archventure.com/team/",
+          "source_title": "Team | ARCH Venture Partners",
+          "source_content_hash": "6d67448cd3f593650fcbbb0b623e7c306128a92aa2581e60bc9fdf5c355f539c",
+          "quote": "Robert Nelsen Co-founder & Managing Director.",
+          "quote_hash": "a5e045ec077216b2a4ba51c163c2c930c0a5df1270cc363d2783ff53e96d9fad"
+        },
         {
           "source_id": "FISRC-9d8b3693de0579b6",
           "source_url": "https://pulse2.com/trase-raises-107-million-seed-round-led-by-arch-venture-partners/",
@@ -161,7 +222,7 @@
           "quote_hash": "514fa3df43415253e44cb5d3bd2de167210aaffa5fd4216f6266c074ec84b63a"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

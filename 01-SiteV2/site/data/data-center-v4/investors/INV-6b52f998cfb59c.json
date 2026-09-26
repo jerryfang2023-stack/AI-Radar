@@ -155,30 +155,109 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Anzu Partners 当前按“投资组织”收录。最新融资披露记录日期为 2022-12-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "AUM and team-size figures are stated on Anzu Partners’ website and may change. Portfolio listings are selected company examples rather than audited fund performance. EnCharge AI’s USD 21.7 million Series A is the company financing total, not Anzu’s disclosed individual check.",
+      "summary": "Anzu Partners is an investment firm focused on breakthrough clean-tech, industrial, and life-sciences technologies. It operates venture, private-credit, and public-market strategies and reports about USD 1 billion in assets under management. The firm says its 50-plus investors, operators, consultants, scientists, and engineers provide hands-on company-building support.",
+      "facts": [
+        {
+          "field": "reported_aum",
+          "label": "Reported assets under management",
+          "value": "About USD 1 billion, as stated on the firm website; no as-of date is given.",
+          "source_id": "anzu_home"
+        },
+        {
+          "field": "investment_focus",
+          "label": "Investment focus",
+          "value": "Clean technology, industrial technology, and life-sciences technology.",
+          "source_id": "anzu_home"
+        },
+        {
+          "field": "investment_structures",
+          "label": "Investment structures",
+          "value": "Venture, private credit, and public-market strategies.",
+          "source_id": "anzu_home"
+        },
+        {
+          "field": "portfolio_support",
+          "label": "Portfolio support",
+          "value": "A team of 50+ experts supports business development, market positioning, global connectivity, operations, and commercialization.",
+          "source_id": "anzu_home"
+        },
+        {
+          "field": "leadership",
+          "label": "Firm leadership",
+          "value": "Managing partners listed by the firm include David Michael, David Seldin, and Whitney Haring-Smith.",
+          "source_id": "anzu_team"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：EnCharge AI · 多轮融资 · 2022-12-14 · 本轮领投 · $21.7 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-cb0549fad590a0ab"
+          "description": "The firm’s portfolio page lists active, exited, and IPO companies; examples span industrial materials, clean technology, and life sciences. The list is not a fund-return report.",
+          "source_id": "anzu_portfolio"
+        },
+        {
+          "description": "Anzu Partners led EnCharge AI’s USD 21.7 million Series A announced in December 2022. The amount is the company’s round total; the firm’s individual check was not disclosed.",
+          "source_id": "FISRC-81024928039bb6c1"
         },
         {
           "description": "融资来源记录：EnCharge AI · 多轮融资 · 2022-12-14 · 本轮领投 · $21.7 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-81024928039bb6c1"
+          "source_id": "FISRC-cb0549fad590a0ab"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "label": "Main office phone",
+          "value": "+1 202-742-5870",
+          "source_id": "anzu_contact"
+        },
+        {
+          "kind": "address",
+          "label": "Boston-area office",
+          "value": "44 Manning Road, Billerica, MA 01821, USA",
+          "source_id": "anzu_contact"
+        },
+        {
+          "kind": "website",
+          "label": "Official website",
+          "value": "Anzu Partners",
+          "source_id": "anzu_home",
+          "url": "https://www.anzupartners.com/"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-cb0549fad590a0ab",
-          "source_url": "https://www.techtimes.com/articles/284896/20221214/encharge-ai-raises-21-7m-produce-hardware-edge-computing.htm",
-          "source_title": "EnCharge AI Raises $21.7 Million to Produce AI Hardware for Edge Computing",
-          "source_content_hash": "ccb1b70704426c90",
-          "quote": "EnCharge AI announced Wednesday, Dec. 14, that it has raised $21.7 million in Series A investment led by Anzu Partners.",
-          "quote_hash": "caf6c1a4c3ce1a3eabd108ed94e058715357d51fa7dd4e8b54cb60008d1ca534"
+          "source_id": "anzu_home",
+          "source_url": "https://www.anzupartners.com/",
+          "source_title": "Anzu Partners | Breakthrough Industrial and Life Sciences Technologies",
+          "source_content_hash": "42090be9a2f9c2e70046cae670d636c003a2b99b42e7e8f5eaab3024beaf5942",
+          "quote": "Investing in clean tech, industrial, and life science technologies",
+          "quote_hash": "3bef1c3cd00feff9bad0e0cfdd9aacb65f53761451accad4d09f58643db51c5e"
+        },
+        {
+          "source_id": "anzu_portfolio",
+          "source_url": "https://www.anzupartners.com/portfolio/",
+          "source_title": "Portfolio | Anzu Partners",
+          "source_content_hash": "15ab56bc9c79be891a66f1ecf6867b09d1d06938288bf5674cb70aea00fa4fa5",
+          "quote": "6K Additive produces high-performance metal powders for additive manufacturing.",
+          "quote_hash": "5fb0a415996e70ff796985962a9eb27d3675244cc89fcc71cfad1f63175d83db"
+        },
+        {
+          "source_id": "anzu_team",
+          "source_url": "https://www.anzupartners.com/team/",
+          "source_title": "Team | Anzu Partners",
+          "source_content_hash": "cd6fef06d678b80cc7d51d5aa665c823f9b406c72de48f5cde362e0ca475f94b",
+          "quote": "David Michael Managing Partner.",
+          "quote_hash": "b85d41cfb6eac1ea95ed4bf68d5b5fe6cf606d35fd9f65449d2467534a5db45c"
+        },
+        {
+          "source_id": "anzu_contact",
+          "source_url": "https://www.anzupartners.com/contact/",
+          "source_title": "Contact | Anzu Partners",
+          "source_content_hash": "04f6cda50028c762cb4238358d805dee1e536ae1108096d65e08003a81c45d90",
+          "quote": "Phone (202) 742-5870.",
+          "quote_hash": "8b451050e6b6dcdc2709508dbcbf2c6e026a5d53e6fa6f3168b83a50b6b8a397"
         },
         {
           "source_id": "FISRC-81024928039bb6c1",
@@ -187,9 +266,17 @@
           "source_content_hash": "c31b380d03b8e095",
           "quote": "today announced it has raised $21.7M in Series A financing, led by Anzu Partners",
           "quote_hash": "2d524ee3a08cfadc9a23c7203998eb343d66be61a1cf743f13de664aca66b16b"
+        },
+        {
+          "source_id": "FISRC-cb0549fad590a0ab",
+          "source_url": "https://www.techtimes.com/articles/284896/20221214/encharge-ai-raises-21-7m-produce-hardware-edge-computing.htm",
+          "source_title": "EnCharge AI Raises $21.7 Million to Produce AI Hardware for Edge Computing",
+          "source_content_hash": "ccb1b70704426c90",
+          "quote": "EnCharge AI announced Wednesday, Dec. 14, that it has raised $21.7 million in Series A investment led by Anzu Partners.",
+          "quote_hash": "caf6c1a4c3ce1a3eabd108ed94e058715357d51fa7dd4e8b54cb60008d1ca534"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

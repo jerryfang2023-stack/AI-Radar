@@ -139,19 +139,100 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Base10 Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Base10’s focus and team history are firm statements. Its June 2026 press page links to third-party reports about fundraising and AUM; those figures are reported by media, not audited fund performance. JustAI’s USD 17 million Series A is the company round total, not Base10’s check.",
+      "summary": "Base10 Partners is a venture firm investing in mission-aligned founders building technology for large, often under-served sectors of the real economy. Its team combines founders, investors, and researchers. Co-founder Adeyemi Ajao previously built and sold technology companies and led Workday Ventures; the firm says it applies research and operational support to portfolio companies.",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "Investment focus",
+          "value": "Companies applying technology to large sectors of the real economy and solving problems for the “99%.”",
+          "source_id": "base10_purpose"
+        },
+        {
+          "field": "leadership",
+          "label": "Co-founder and managing partner",
+          "value": "Adeyemi “Ade” Ajao co-founded Base10. His prior operating roles included co-founding Tuenti and Identified and leading Workday Ventures.",
+          "source_id": "base10_team"
+        },
+        {
+          "field": "team_model",
+          "label": "Team model",
+          "value": "The firm describes its team as founders, investors, and researchers; it reports more than USD 3 billion in realized investor returns, a self-reported firm figure rather than an audited fund-level metric.",
+          "source_id": "base10_team"
+        },
+        {
+          "field": "reported_fundraising",
+          "label": "Reported 2026 fundraising",
+          "value": "Base10’s press page points to June 2026 media reports of two funds totaling USD 850 million and USD 2.6 billion in reported AUM.",
+          "source_id": "base10_press"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：JustAI · A轮 · 2026-06-23 · 本轮领投 · $17 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Base10 Partners led JustAI’s USD 17 million Series A in June 2026, according to a financing report. The amount is JustAI’s round total, not Base10’s individual check.",
           "source_id": "FISRC-058518ce11dc5f00"
+        },
+        {
+          "description": "The firm’s team biography says co-founder Adeyemi Ajao previously co-founded Tuenti, acquired by Telefónica, and Identified, acquired by Workday; these are founder operating outcomes, not Base10 fund returns.",
+          "source_id": "base10_team"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "label": "General and partnership inquiries",
+          "value": "partners@base10.vc",
+          "source_id": "base10_team"
+        },
+        {
+          "kind": "address",
+          "label": "San Francisco office",
+          "value": "101 Mission Street, Suite 1115, San Francisco, CA 94105, USA",
+          "source_id": "base10_team"
+        },
+        {
+          "kind": "website",
+          "label": "Official website",
+          "value": "Base10 Partners",
+          "source_id": "base10_purpose",
+          "url": "https://base10.vc/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "base10_purpose",
+          "source_url": "https://base10.vc/purpose/",
+          "source_title": "Purpose | Base10 Partners",
+          "source_content_hash": "ced77121e299a124e8ac29ee202a17a28f62c4ddb99e16cb88446c98c61d107b",
+          "quote": "We invest in mission-aligned founders building companies solving problems for the 99%.",
+          "quote_hash": "da040fe6d480b7b7f313cb8537cd469eab57c244746861ad141ffdcee27ac775"
+        },
+        {
+          "source_id": "base10_team",
+          "source_url": "https://base10.vc/team/adeyemi-ajao/",
+          "source_title": "Adeyemi Ajao | Base10 Partners",
+          "source_content_hash": "314a4ac792d757972ae3c378c2fe5578a2a82eee75f3e507b9203d06f4d236e5",
+          "quote": "Adeyemi (“Ade”) is co-founder & Managing Partner at Base10 Partners.",
+          "quote_hash": "1ddfd70e9a4640c14d00b2b5fb0e674c3fba919b40ff541955045d2ef6600f56"
+        },
+        {
+          "source_id": "base10_press",
+          "source_url": "https://base10.vc/blog/esg/",
+          "source_title": "Press and media coverage | Base10 Partners",
+          "source_content_hash": "37e8b609c0b5cb9b1b36707dbd3e8847f3cc89e3a64919ded66d689755725fa7",
+          "quote": "June 2026 / Bloomberg Base10, Black-Led VC Firm, Boosts Managed Assets to $2.6 Billion.",
+          "quote_hash": "81d97905399aff7bb9ae8f269548a397c3ea5e332c2398bfeae7002b53f7d736"
+        },
+        {
+          "source_id": "base10_companies",
+          "source_url": "https://base10.vc/companies/",
+          "source_title": "Companies | Base10 Partners",
+          "source_content_hash": "85888678e951a7d9f57d0cd7180334dcd6e5359a1c77eb4954dfb854ebd07035",
+          "quote": "We invest in companies that are creating a positive impact for the largest sectors of the real economy.",
+          "quote_hash": "bce38691640d4a35f5c58fbdb8ea4e06badf03151f0de6bd960f8bd136029b89"
+        },
         {
           "source_id": "FISRC-058518ce11dc5f00",
           "source_url": "https://sg.finance.yahoo.com/news/justai-raises-17m-series-build-170000502.html",
@@ -161,7 +242,7 @@
           "quote_hash": "b268d7beb97b26faab0cea8b331fc0e2723c65c46e38dcc01d4429083ab013db"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

@@ -139,19 +139,86 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Basis Set Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2025-10-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "The fund stage, fund size, team biographies, and portfolio value statements are published by Basis Set and may be self-reported. Aggregate portfolio-company value and individual company financings are not fund-return multiples. Mem0’s USD 24 million Series A is the company round total, not Basis Set’s disclosed individual check.",
+      "summary": "Basis Set Ventures is an early-stage, AI-native venture firm founded in 2017 and based in San Francisco. It invests in founders working across artificial intelligence and software, and uses in-house engineering and AI tools to support recruiting, go-to-market work, and company building. Founder and partner Lan Xuezhao has a background in psychology research, entrepreneurship, McKinsey, and Dropbox corporate development.",
+      "facts": [
+        {
+          "field": "firm_positioning",
+          "label": "Firm positioning",
+          "value": "An AI-native early-stage venture fund founded in 2017.",
+          "source_id": "basis_home"
+        },
+        {
+          "field": "investment_stage",
+          "label": "Investment stage",
+          "value": "Early stage, as described in the firm FAQ.",
+          "source_id": "basis_faq"
+        },
+        {
+          "field": "founder_background",
+          "label": "Founder background",
+          "value": "Lan Xuezhao is an entrepreneur and investor with a PhD in psychology; her career included brain research, founding a company, McKinsey, and corporate development at Dropbox.",
+          "source_id": "basis_faq"
+        },
+        {
+          "field": "founder_support",
+          "label": "Founder support",
+          "value": "The firm describes an in-house engineering and AI stack and support with recruiting, go-to-market, sales, partnerships, expansion, and fundraising.",
+          "source_id": "basis_faq"
+        },
+        {
+          "field": "fund_iv",
+          "label": "Latest announced fund",
+          "value": "The website announces a USD 250 million Fund IV.",
+          "source_id": "basis_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Mem0 · 多轮融资 · 2025-10-28 · 本轮（A轮）领投 · $24M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Basis Set Ventures led Mem0’s USD 24 million Series A announced in October 2025. The amount is Mem0’s total round, not Basis Set’s individual commitment.",
           "source_id": "FISRC-f3e9aa548f7703f9"
+        },
+        {
+          "description": "The firm’s FAQ says companies in which Lan Xuezhao made early investments grew to a combined value exceeding USD 20 billion; this is a founder biography claim, not a fund-level return figure.",
+          "source_id": "basis_faq"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Official website",
+          "value": "Basis Set Ventures",
+          "source_id": "basis_home",
+          "url": "https://www.basisset.com/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "basis_home",
+          "source_url": "https://www.basisset.com/",
+          "source_title": "Basis Set Ventures",
+          "source_content_hash": "5ddb00db54132a7f6127b7b68df532e14dc65a29209e8b2429a5238e11f4e8b0",
+          "quote": "An AI-native venture fund since 2017, born from the science of minds and machines.",
+          "quote_hash": "53137fc2ae62e74fdcd354dd88bfa3a8b8d67112bf90aa5ba10ae1dce5ab042a"
+        },
+        {
+          "source_id": "basis_faq",
+          "source_url": "https://www.basisset.com/basis-set-faq",
+          "source_title": "Basis Set FAQ",
+          "source_content_hash": "535d9ff0041d396fc0cf34dc23f93c448707c529ff7b2f3b208594888922e350",
+          "quote": "Basis Set is an early stage venture capital fund based in San Francisco, California.",
+          "quote_hash": "4e076bd0f087cb73dd0e91c4590d627b372125a59eb5fd4b2900fc2538289ece"
+        },
+        {
+          "source_id": "basis_team",
+          "source_url": "https://www.basisset.com/team",
+          "source_title": "Team | Basis Set Ventures",
+          "source_content_hash": "6200c2659e19f30d3caeac47fdf1067281434ea1283fc5ccde2df9509d33ff4b",
+          "quote": "Dr. Lan Xuezhao Founder & Partner.",
+          "quote_hash": "c3311ed876ecd6cccee722dd1b24f078865fe98c67ac55f07212ddf5315ef19b"
+        },
         {
           "source_id": "FISRC-f3e9aa548f7703f9",
           "source_url": "https://www.prnewswire.com/news-releases/mem0-raises-24m-series-a-to-build-memory-layer-for-ai-agents-302597157.html",
@@ -161,7 +228,7 @@
           "quote_hash": "860bcbeaef87e12c7529da9b94704c2d41e108994912623db9a054b4e82da771"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

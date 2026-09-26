@@ -139,19 +139,104 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Bonfire Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Bonfire’s check range, exit-value figure, and investment activity are firm statements and do not constitute audited fund-level returns. Katalyze AI’s USD 10.5 million seed round is the company total, not Bonfire’s individual investment.",
+      "summary": "Bonfire Ventures is a seed-stage investor focused exclusively on B2B software, increasingly including AI-native products. It says it leads about 95% of rounds, typically invests USD 2–6 million at seed, backs 10–12 companies a year, and continues working with founders through Series A and beyond. The firm describes its team as experienced B2B software operators and investors.",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "Investment focus",
+          "value": "B2B software, including AI-native companies.",
+          "source_id": "bonfire_home"
+        },
+        {
+          "field": "typical_check_size",
+          "label": "Typical seed check",
+          "value": "USD 2–6 million, according to the firm.",
+          "source_id": "bonfire_home"
+        },
+        {
+          "field": "investment_model",
+          "label": "Investment model",
+          "value": "The firm says it leads about 95% of its rounds, often with a board seat, and backs 10–12 companies per year.",
+          "source_id": "bonfire_home"
+        },
+        {
+          "field": "leadership",
+          "label": "Co-founders",
+          "value": "Mark Mullen and Jim Andelman are co-founders; the team includes operators and investors with early-stage B2B software experience.",
+          "source_id": "bonfire_team"
+        },
+        {
+          "field": "reported_exit_value",
+          "label": "Reported portfolio exit value",
+          "value": "Bonfire says founders it backed have built more than USD 18 billion in exit value; this is not a fund-level return figure.",
+          "source_id": "bonfire_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Katalyze AI · 种子轮 · 2026-07-06 · 本轮领投 · $10.5M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Bonfire Ventures led Katalyze AI’s USD 10.5 million seed round announced in July 2026. The figure is the company’s round total, not Bonfire’s disclosed individual check.",
           "source_id": "FISRC-d887dae741d872b9"
+        },
+        {
+          "description": "Bonfire cites selected exits including The Trade Desk, TaxJar, MNTN, and Scopely; these examples do not state fund-level performance.",
+          "source_id": "bonfire_home"
+        },
+        {
+          "description": "The firm announced Bonfire IV, a USD 245 million fund for B2B software investing.",
+          "source_id": "bonfire_fund4"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "application",
+          "label": "Founder pitch submissions",
+          "value": "Use the firm’s Pitch Us link to submit a company.",
+          "source_id": "bonfire_team",
+          "url": "https://bonfireventure.com/team"
+        },
+        {
+          "kind": "address",
+          "label": "Los Angeles office",
+          "value": "11611 San Vicente Blvd. #650, Los Angeles, CA 90049, USA",
+          "source_id": "bonfire_team"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "bonfire_home",
+          "source_url": "https://bonfireventure.com/",
+          "source_title": "Bonfire Ventures",
+          "source_content_hash": "aa2ea7713897091b072dfc91307dba7e27b1a63893a401c2bc09f713958858eb",
+          "quote": "Bonfire Ventures is a seed-stage venture capital firm backing founders building AI-native B2B software companies.",
+          "quote_hash": "93d6518322eab30b5010b163736a663df6a7d5c6a3831862241e933b19c7f2cb"
+        },
+        {
+          "source_id": "bonfire_team",
+          "source_url": "https://bonfireventure.com/team",
+          "source_title": "Team | Bonfire Ventures",
+          "source_content_hash": "494c4b1797e781d035c957412a8c2ff05bb4dc19c0f29da4c33bde2d84cae4de",
+          "quote": "Mark Mullen Co-Founder.",
+          "quote_hash": "4144e2842299f06a9c285b3fd1ebf647f8168eb23c435fe98bd65f154c592efd"
+        },
+        {
+          "source_id": "bonfire_companies",
+          "source_url": "https://bonfireventure.com/companies",
+          "source_title": "Portfolio Companies | Bonfire Ventures",
+          "source_content_hash": "ac5f9b7d1ce5ac8383329bf62d06f920996c9727816188c88ba94fa43fa62910",
+          "quote": "Founders we've backed have built more than $18 billion in exit value.",
+          "quote_hash": "8aa973fc1ac5c97d2c474a24c79b12bc328fc7bdb91a5d22e440594cd3a60057"
+        },
+        {
+          "source_id": "bonfire_fund4",
+          "source_url": "https://bonfireventure.com/news/bonfire-iv-245m-to-back-the-builders-reshaping-b2b-software",
+          "source_title": "Bonfire IV: USD 245 million fund | Bonfire Ventures",
+          "source_content_hash": "6032917696ce849df68e1529620732f8c83c5313cc4b180cf1adfb905637c292",
+          "quote": "Bonfire IV: $245M to Back the Builders Reshaping B2B Software.",
+          "quote_hash": "bd0c18daadf0767301e785ea8c1b289426a1fc2ddc60fdeb93c8346e06297d17"
+        },
         {
           "source_id": "FISRC-d887dae741d872b9",
           "source_url": "https://aijourn.com/katalyze-ai-raises-10-5m-led-by-bonfire-ventures-deploy-agentic-operating-system-for-pharma/",
@@ -161,7 +246,7 @@
           "quote_hash": "841d90fcc3204f35ae21d7650813c56853df4e66a5faa3d00214c22aba4d40f9"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }
