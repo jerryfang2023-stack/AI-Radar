@@ -15,6 +15,7 @@ import {
 } from "./lib/source-intake-v1.mjs";
 import { selectImmutableSourceSnapshot } from "./lib/immutable-source-snapshot-v1.mjs";
 import { collectChinaFunding } from "./lib/china-funding-collector.mjs";
+import { consumerHardwareQueries, CONSUMER_HARDWARE_PATH } from "./lib/consumer-ai-hardware-monitor.mjs";
 import { chinaFundingArticleHtml } from "./lib/china-funding-html.mjs";
 import { sourceDiagnosticMarkdown } from "./lib/source-diagnostic-markdown.mjs";
 import {
@@ -323,7 +324,7 @@ function laneQueries(lane, fallbackQueries) {
     query_theme: "uncategorized",
     keyword_group: "fallback-seed",
   }));
-  return [...baseQueries, ...chinaMarketLaneQueries(chinaMarketConfig.monitoring, lane)];
+  return [...baseQueries, ...chinaMarketLaneQueries(chinaMarketConfig.monitoring, lane), ...(lane === "keyword_search" ? consumerHardwareQueries(root) : [])];
 }
 
 function themeLabel(themeId) {
@@ -3516,6 +3517,13 @@ const keywordSearchPaths = [
     querySuffix: "",
   },
   {
+    id: CONSUMER_HARDWARE_PATH,
+    label: "消费级 AI 智能硬件融资",
+    role: "discover consumer-device financing with independent category coverage",
+    method: "ddg",
+    querySuffix: "",
+  },
+  {
     id: "china_vertical_agent_funding",
     label: "中国垂直智能体融资路径",
     role: "collect China vertical-agent financing without changing source weights or event ranking",
@@ -3648,6 +3656,10 @@ function pathConfigById(id = "") {
 }
 
 function selectQueriesForPath(allQueries, pathConfig) {
+  if (pathConfig.id === CONSUMER_HARDWARE_PATH) {
+    // One query per configured category; the generic first-five cap must not hide categories.
+    return allQueries.filter((query) => query.search_paths?.includes(CONSUMER_HARDWARE_PATH));
+  }
   const limit = Math.max(searchPathQueryLimit, 1);
   if (chinaFundingSearchPathIds.has(pathConfig.id)) {
     return allQueries.filter((query) => query.search_paths?.includes(pathConfig.id)).slice(0, limit);
@@ -3730,6 +3742,7 @@ function selectQueriesForPath(allQueries, pathConfig) {
 
 function queryRecencyHintForPath(pathConfig, queryConfig = {}) {
   if (!new Set([
+    CONSUMER_HARDWARE_PATH,
     "official_original",
     "capital_startup",
     "industry_landing",
@@ -3749,6 +3762,14 @@ function querySuffixForPath(pathConfig, queryConfig = {}) {
 }
 
 async function runQuerySelectionRegressionFixtures() {
+  const consumerQueries = consumerHardwareQueries(root);
+  const selectedConsumer = selectQueriesForPath(laneQueries("keyword_search", []), pathConfigById(CONSUMER_HARDWARE_PATH));
+  if (selectedConsumer.length !== consumerQueries.length || selectedConsumer.length < 6) {
+    throw new Error("Consumer hardware categories were omitted from the daily query selection");
+  }
+  if (!queryRecencyHintForPath(pathConfigById(CONSUMER_HARDWARE_PATH))) {
+    throw new Error("Consumer hardware daily queries require a current-month hint");
+  }
   const queries = [
     { query: "AI product launch official", query_theme: "mature-commercial-signal" },
     { query: "AI developer SDK release", query_theme: "developer-ecosystem-signal" },

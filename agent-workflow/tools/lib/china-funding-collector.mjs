@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { consumerHardwareConfig } from "./consumer-ai-hardware-monitor.mjs";
 
 export const CHINA_FUNDING_CONFIG = "01-SiteV2/content/11-databases/china-funding-monitor-v1.json";
 export const fundingPattern = /融资|获投|获.{0,8}投资|完成.{0,10}轮|\b(?:funding|raised|raises|series [a-z])\b/iu;
@@ -46,6 +47,7 @@ export function listPageLeads(html, entry, source) {
 
 export async function collectChinaFunding({ root, date, search, fetcher = fetch, now = () => new Date().toISOString() }) {
   const config = JSON.parse(fs.readFileSync(path.join(root, CHINA_FUNDING_CONFIG), "utf8"));
+  const hardware = consumerHardwareConfig(root);
   const items = [], diagnostics = [], failures = [];
   // Each publisher owns a budget: no global first-N query truncation.
   for (const source of config.sources.filter((source) => source.enabled !== false)) {
@@ -76,14 +78,42 @@ export async function collectChinaFunding({ root, date, search, fetcher = fetch,
       } catch (error) { row.failures.push(`search ${query}: ${error.message}`); }
     }
     const unique = [...new Map(found.map((item) => [item.url, item])).values()];
-    row.discovered = unique.length;
-    row.candidates = Math.min(unique.length, config.per_source_limit);
-    row.capped = Math.max(0, unique.length - row.candidates);
-    row.status = row.successful_queries === 0 && row.list_pages_ok === 0 ? "failed" : row.failures.length ? "partial" : unique.length ? "collected" : "empty";
+    const selected = unique.slice(0, config.per_source_limit);
+    const categoryDiscovered = [];
+    row.consumer_hardware = [];
+    // Independent category budgets prevent broad funding/list pages from crowding out devices.
+    for (const category of hardware.enabled ? hardware.categories : []) {
+      const query = `site:${source.domains[0]} ${category.zh} ${date.slice(0, 7)}`;
+      const coverage = { category: category.id, query, status: "pending", discovered: 0, retained: 0, capped: 0 };
+      row.query_count += 1;
+      try {
+        const results = await search(query, config.results_per_query);
+        row.successful_queries += 1;
+        const leads = [...new Map(results.map((item) => normalizeChinaFundingLead(item, source)).filter(Boolean).map((item) => [item.url, item])).values()];
+        coverage.discovered = leads.length;
+        categoryDiscovered.push(...leads);
+        const retained = leads.slice(0, hardware.per_category_limit);
+        coverage.retained = retained.length;
+        coverage.capped = leads.length - retained.length;
+        coverage.status = leads.length ? "collected" : "empty";
+        selected.push(...retained);
+      } catch (error) {
+        coverage.status = "failed";
+        coverage.error = error.message;
+        row.failures.push(`search ${query}: ${error.message}`);
+      }
+      row.consumer_hardware.push(coverage);
+    }
+    const acceptedLeads = [...new Map(selected.map((item) => [item.url, item])).values()];
+    row.discovered = new Set([...unique, ...categoryDiscovered].map((item) => item.url)).size;
+    row.general_candidates = Math.min(unique.length, config.per_source_limit);
+    row.candidates = acceptedLeads.length;
+    row.capped = Math.max(0, unique.length - row.general_candidates) + row.consumer_hardware.reduce((sum, item) => sum + item.capped, 0);
+    row.status = row.successful_queries === 0 && row.list_pages_ok === 0 ? "failed" : row.failures.length ? "partial" : acceptedLeads.length ? "collected" : "empty";
     row.response_ms = Date.now() - started;
     row.completed_at = now();
     diagnostics.push(row);
-    items.push(...unique.slice(0, config.per_source_limit));
+    items.push(...acceptedLeads);
     failures.push(...row.failures.map((message) => `${source.id}: ${message}`));
   }
   return { items: [...new Map(items.map((item) => [item.url, item])).values()], failures, diagnostics };
