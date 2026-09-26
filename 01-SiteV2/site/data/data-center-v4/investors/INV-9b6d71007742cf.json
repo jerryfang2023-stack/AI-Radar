@@ -139,19 +139,100 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "AIX Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "AIX strategy, fund sizes and portfolio examples come from its own website and announcements. Fund sizes are fundraise disclosures, not capital currently available; portfolio examples are not returns. Illoca’s round total is not AIX’s check.",
+      "summary": "AIX Ventures is an AI-focused venture firm built around active AI practitioners and an investing team. It backs early-stage founders and pairs capital with technical and company-building expertise. The firm announced a $50 million Fund I in 2022 and a $202 million Fund II in 2024.",
+      "facts": [
+        {
+          "field": "focus",
+          "label": "Investment focus",
+          "value": "Early-stage AI companies and founders developing AI technology.",
+          "source_id": "aix_about"
+        },
+        {
+          "field": "model",
+          "label": "Operating model",
+          "value": "AI practitioners, founders and an investment team work with companies on technical and company-building challenges.",
+          "source_id": "aix_about"
+        },
+        {
+          "field": "fund_i",
+          "label": "Fund I",
+          "value": "$50 million, focused on pre-seed and seed startups, announced at the 2022 launch.",
+          "source_id": "aix_fund_news"
+        },
+        {
+          "field": "fund_ii",
+          "label": "Fund II",
+          "value": "$202 million announced in February 2024 for early-stage AI companies and future-of-work applications.",
+          "source_id": "aix_fund_news"
+        },
+        {
+          "field": "portfolio",
+          "label": "Selected portfolio",
+          "value": "The firm lists Hugging Face, You.com, Weights & Biases, Perplexity and Chroma.",
+          "source_id": "aix_fund_news"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2022-03-23",
+          "description": "AIX announced its launch with a $50 million Fund I focused on pre-seed and seed companies.",
+          "source_id": "aix_fund_news"
+        },
+        {
+          "date": "2024-02-13",
+          "description": "AIX announced a $202 million Fund II.",
+          "source_id": "aix_fund_news"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Illoca, Inc. · 种子轮 · 2026-05-06 · 本轮参投 · $13 Million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Illoca’s May 2026 seed announcement named AIX Ventures among participants. The $13 million amount is the company’s total round, not AIX’s individual check.",
           "source_id": "FISRC-af034b6014cc1e78"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Official website",
+          "value": "AIX Ventures",
+          "source_id": "aix_about",
+          "url": "https://www.aixventures.com/"
+        },
+        {
+          "kind": "contact_form",
+          "label": "Founder inquiries",
+          "value": "Connect with AIX",
+          "source_id": "aix_contact",
+          "url": "https://www.aixventures.com/contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "aix_about",
+          "source_url": "https://www.aixventures.com/about",
+          "source_title": "About AIX Ventures | AIX Ventures",
+          "source_content_hash": "912128a932d42a2f865b78feb0bcc29cc40feee1ee7029e1044f4ab413c86135",
+          "quote": "AIX is a new kind of venture firm where leaders in AI push the field forward together.",
+          "quote_hash": "fab4507310977c5e54145e845d44cf96ee75c54471dee19389ea39f81d0e974e"
+        },
+        {
+          "source_id": "aix_fund_news",
+          "source_url": "https://www.aixventures.com/fund-news",
+          "source_title": "Announcements | AIX Ventures",
+          "source_content_hash": "7fef5e1be85b8b3ef325779959196f8e63107abb675979c1412de441d2786e42",
+          "quote": "Today, we’re thrilled to announce our second fund of $202M to invest in early-stage AI companies.",
+          "quote_hash": "e3dc42162c5a852a873b19f763628b2b4c31f03953a13a561675d11d05fd8a26"
+        },
+        {
+          "source_id": "aix_contact",
+          "source_url": "https://www.aixventures.com/contact",
+          "source_title": "Contact | AIX Ventures",
+          "source_content_hash": "853a5fba0267f037d7ff47cdb6c12490ac57ead531f611cbdda5246ed3be9e81",
+          "quote": "Connect with AIX to turn your idea into a company that will last.",
+          "quote_hash": "0440c9099d251f797f9d939693a33f7f488a1694301a6e2798937bd83ce54704"
+        },
         {
           "source_id": "FISRC-af034b6014cc1e78",
           "source_url": "https://www.globenewswire.com/news-release/2026/05/06/3289008/0/en/Illoca-Raises-13-Million-Seed-Led-by-Bessemer-Venture-Partners-to-Launch-the-First-Intelligent-Interface-for-Architectural-Design.html",
@@ -161,7 +242,7 @@
           "quote_hash": "ce6d6d2d3b7e5b7ece49ab5debf7817f0ec5971a1e1edd48f5c37a7736e51298"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

@@ -131,19 +131,141 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Balaji Srinivasan 当前按“个人投资者”收录。最新融资披露记录日期为 2026-06-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "履历、教育和自述投资组合来自本人简介；融资案例仅按公开报道记录。该报道将其列为 Etched 的早期支持者，但没有披露个人金额或具体轮次。",
+      "summary": "Balaji Srinivasan 是科技创业者、研究者和个人投资者，现为 Network School 创办人，曾任 Coinbase 首席技术官及 Andreessen Horowitz 普通合伙人。本人简介列出其联合创办的企业、学术经历和投资项目；相关清单为本人披露，不代表完整组合或投资回报统计。",
+      "facts": [
+        {
+          "field": "research_background",
+          "label": "研究背景",
+          "value": "本人简介称其研究成果获 5,000+ 次引用，并列举医学、基因组学等期刊论文；该数据为本人披露。",
+          "source_id": "balaji_research"
+        },
+        {
+          "field": "company_building",
+          "label": "创业经历",
+          "value": "联合创办 Earn.com、Counsyl、Teleport 和 Coin Center；本人简介记载前三家公司分别被 Coinbase、Myriad 和 Topia 收购。",
+          "source_id": "balaji_companies"
+        }
+      ],
       "milestones": [],
+      "current_roles": [
+        {
+          "title": "创办人",
+          "organization": "Network School",
+          "source_id": "balaji_about"
+        },
+        {
+          "title": "董事会成员",
+          "organization": "Coin Center",
+          "source_id": "balaji_companies"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Coinbase",
+          "title": "首席技术官",
+          "period": "曾任；具体任期未在简介中列出",
+          "description": "本人简介称其曾任 Coinbase CTO，并负责推动 USDC 发布。",
+          "source_id": "balaji_usdc"
+        },
+        {
+          "organization": "Andreessen Horowitz",
+          "title": "普通合伙人",
+          "period": "曾任；具体任期未在简介中列出",
+          "description": "本人简介列其为前普通合伙人。",
+          "source_id": "balaji_career"
+        },
+        {
+          "organization": "Earn.com",
+          "title": "联合创办人",
+          "period": "具体任期未披露",
+          "description": "Earn.com 后被 Coinbase 收购。",
+          "source_id": "balaji_companies"
+        },
+        {
+          "organization": "Counsyl",
+          "title": "联合创办人",
+          "period": "具体任期未披露",
+          "description": "Counsyl 后被 Myriad 收购。",
+          "source_id": "balaji_companies"
+        },
+        {
+          "organization": "Teleport",
+          "title": "联合创办人",
+          "period": "具体任期未披露",
+          "description": "Teleport 后被 Topia 收购。",
+          "source_id": "balaji_companies"
+        }
+      ],
+      "education": [
+        {
+          "institution": "Stanford University",
+          "qualification": "电气工程学士、硕士、博士；化学工程硕士",
+          "source_id": "balaji_education"
+        }
+      ],
+      "experience_summary": "经历覆盖计算机与基因组学研究、科技公司创办、加密网络投资及创业公司技术领导。相关任职和成就主要依据本人公开简介；任期以来源未披露为准。",
       "track_record": [
         {
-          "description": "融资来源记录：Etched · 轮次未披露 · 2026-06-30 · 天使投资人 · $500 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "本人公开列举的早期科技及加密项目投资包括 Alchemy、Benchling、Coinbase、OpenSea、Perplexity、Polymarket、Replit 等；该清单为自述，未披露投资金额或完整回报。",
+          "source_id": "balaji_investments"
+        },
+        {
+          "description": "媒体将 Balaji Srinivasan 列为 Etched 的早期支持者；该报道未披露其个人出资金额，也未说明其对应的具体轮次。",
           "source_id": "FISRC-93ad55204895a7ae"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "个人官网与联系入口",
+          "value": "Balaji Srinivasan 官方简介",
+          "source_id": "balaji_about",
+          "url": "https://balajis.com/about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "balaji_about",
+          "source_url": "https://balajis.com/about",
+          "source_title": "About Balaji Srinivasan",
+          "source_content_hash": "cd6582fc8ed28e0daee764d0b1fd3ed07c4c9c1e1d2ff8665f7f8b9f42ef92a8",
+          "quote": "Balaji S. Srinivasan (@balajis) is founder of the Network School and WSJ-bestselling author (PDF) of The Network State.",
+          "quote_hash": "9d699fa7b74d5ae0f0711611d79761de40535c4d52987ef790dd5f29bc1c2db7"
+        },
+        {
+          "source_id": "balaji_career",
+          "source_url": "https://balajis.com/about",
+          "source_title": "About Balaji Srinivasan",
+          "source_content_hash": "cd6582fc8ed28e0daee764d0b1fd3ed07c4c9c1e1d2ff8665f7f8b9f42ef92a8",
+          "quote": "Formerly the CTO of Coinbase and General Partner at Andreessen Horowitz",
+          "quote_hash": "89f45317ba217ef81806d10fa615f91476e5e01adb221106fd93f45d521ca3f5"
+        },
+        {
+          "source_id": "balaji_education",
+          "source_url": "https://balajis.com/about",
+          "source_title": "About Balaji Srinivasan",
+          "source_content_hash": "cd6582fc8ed28e0daee764d0b1fd3ed07c4c9c1e1d2ff8665f7f8b9f42ef92a8",
+          "quote": "He holds a BS/MS/PhD in Electrical Engineering and an MS in Chemical Engineering from Stanford University.",
+          "quote_hash": "4d74491944d04530edd9e60fa33340493755d0a35faf674e02ad14603ce58c99"
+        },
+        {
+          "source_id": "balaji_companies",
+          "source_url": "https://balajis.com/about",
+          "source_title": "About Balaji Srinivasan",
+          "source_content_hash": "cd6582fc8ed28e0daee764d0b1fd3ed07c4c9c1e1d2ff8665f7f8b9f42ef92a8",
+          "quote": "Dr. Srinivasan was the cofounder of Earn.com (acquired by Coinbase), Counsyl (acquired by Myriad), Teleport (acquired by Topia), and Coin Center, where he serves on the board.",
+          "quote_hash": "f10ade3731e3aa3c7267b09e781fd72872a916e99e66c1e251126f3ec806b9b8"
+        },
+        {
+          "source_id": "balaji_investments",
+          "source_url": "https://balajis.com/about",
+          "source_title": "About Balaji Srinivasan",
+          "source_content_hash": "cd6582fc8ed28e0daee764d0b1fd3ed07c4c9c1e1d2ff8665f7f8b9f42ef92a8",
+          "quote": "he is an early investor in many successful tech companies and crypto protocols, including Alchemy, Benchling, CoinTracker, Digital Ocean, Luma, OpenGov, OpenSea, Orchid Health, Paradigm, Perplexity, Polychain, Polymarket, Prospera, Replit, Starkware, Stedi, Superhuman, Valar Atomic, Varda, Zodl, and Zora.",
+          "quote_hash": "5d5d4135828bb3a1eb3b55530d34bfb52ceb9dcf974c198281318b63df2b18d8"
+        },
         {
           "source_id": "FISRC-93ad55204895a7ae",
           "source_url": "https://techfundingnews.com/nvidia-rival-ai-chip-maker-etched-founded-by-harvard-dropouts-lands-500m-at-5b-valuation/",
@@ -151,9 +273,25 @@
           "source_content_hash": "ea6962ff49d28cc4",
           "quote": "Earlier supporters include Primary Venture Partners, along with notable angels such as GitHub CEO Thomas Dohmke and former Coinbase executive Balaji Srinivasan.",
           "quote_hash": "aa0b19af44eb2e8e91b81849ab52daa5abf617c83562ede7fe67e062900d6f20"
+        },
+        {
+          "source_id": "balaji_research",
+          "source_url": "https://balajis.com/about",
+          "source_title": "About Balaji Srinivasan",
+          "source_content_hash": "cd6582fc8ed28e0daee764d0b1fd3ed07c4c9c1e1d2ff8665f7f8b9f42ef92a8",
+          "quote": "As a research scientist, he has 5000+ citations, with papers in Nature Reviews Genetics, the New England Journal of Medicine, Genome Research, and Nature Biotechnology.",
+          "quote_hash": "8d7f81bd599daa7e4dc5fb85da33c1b0c6697ecdc1dfdd0eae480919add0594c"
+        },
+        {
+          "source_id": "balaji_usdc",
+          "source_url": "https://balajis.com/about",
+          "source_title": "About Balaji Srinivasan",
+          "source_content_hash": "cd6582fc8ed28e0daee764d0b1fd3ed07c4c9c1e1d2ff8665f7f8b9f42ef92a8",
+          "quote": "Balaji led the launch of USDC as Coinbase CTO",
+          "quote_hash": "88fcdd77d037d370bf27a6d04511e301f07be57e9025b12bb6009d87fd62f318"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

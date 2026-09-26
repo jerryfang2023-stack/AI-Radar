@@ -131,19 +131,104 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Air Street Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "Fund size, stages, geography and outcomes are firm-published. Portfolio examples are selected, not audited returns. The Odyssey ML record is historical seed participation, not a 2026 Series B check.",
+      "summary": "Air Street Capital is a venture firm founded and run by solo General Partner Nathan Benaich, investing in AI-first companies globally with a focus on North America and Europe. It primarily invests at pre-seed and seed, publishes the State of AI Report and announced a $232.3 million Fund III in March 2026.",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "Founded",
+          "value": "2019, according to the firm.",
+          "source_id": "airstreet_about"
+        },
+        {
+          "field": "focus",
+          "label": "Investment focus",
+          "value": "AI-first companies, including frontier models, infrastructure, developer tools, robotics, agents and TechBio.",
+          "source_id": "airstreet_about"
+        },
+        {
+          "field": "stage",
+          "label": "Investment stage",
+          "value": "Primarily pre-seed and seed, with selective growth investment.",
+          "source_id": "airstreet_about"
+        },
+        {
+          "field": "fund_iii",
+          "label": "Fund III",
+          "value": "$232,323,232 announced March 23, 2026; early-stage checks $500,000–$15 million and select growth checks up to $25 million.",
+          "source_id": "airstreet_fund_iii"
+        },
+        {
+          "field": "portfolio",
+          "label": "Portfolio",
+          "value": "The firm reports 60+ AI-first companies; selected examples include Synthesia, Black Forest Labs, Poolside and Profluent.",
+          "source_id": "airstreet_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2019",
+          "description": "Nathan Benaich founded Air Street as a venture firm dedicated to AI-first companies.",
+          "source_id": "airstreet_fund_iii"
+        },
+        {
+          "date": "2026-03-23",
+          "description": "The firm announced Fund III.",
+          "source_id": "airstreet_fund_iii"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Odyssey ML · B轮 · 2026-06-17 · 种子轮参投 · 3.1亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "The firm lists selected exits including Graphcore, Adept and Mapillary; examples are not audited fund performance.",
+          "source_id": "airstreet_about"
+        },
+        {
+          "description": "A report about Odyssey ML’s Series B lists Air Street Capital as an investor in an earlier seed round.",
           "source_id": "FISRC-413e994d081f8e0f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Official website",
+          "value": "Air Street Capital",
+          "source_id": "airstreet_about",
+          "url": "https://www.airstreet.com/"
+        },
+        {
+          "kind": "email",
+          "label": "Founder pitch submissions",
+          "value": "nathan@airstreet.com",
+          "source_id": "airstreet_about",
+          "url": "https://www.airstreet.com/ai-venture-capital"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "airstreet_about",
+          "source_url": "https://www.airstreet.com/ai-venture-capital",
+          "source_title": "Air Street Capital｜AI venture capital investing in AI-first companies",
+          "source_content_hash": "4b592daf58b982dcbccd3ed144c459ea7728aa20637c5a1fb07c2ec45b5ce8ca",
+          "quote": "Air Street Capital invests exclusively in AI-first companies and is founded and run by Nathan Benaich, solo General Partner.",
+          "quote_hash": "0972bcdfed688eff6745292fc4d5fe2dcfe478d6ae6737646aa194472a6b1892"
+        },
+        {
+          "source_id": "airstreet_fund_iii",
+          "source_url": "https://press.airstreet.com/p/fund-iii",
+          "source_title": "Air Street Capital Fund III: $232M for AI-first startups",
+          "source_content_hash": "0eaa8375c6caf49b5bb654f18366b8a15159fd89366b5ce350fa42c70a8b9d9e",
+          "quote": "Air Street Capital has raised a third fund of $232,323,232 to back AI-first companies from the earliest stages in North America and Europe.",
+          "quote_hash": "2c61252856af434633eeda634259683baedeeb121230a4899c4c57f53a714022"
+        },
+        {
+          "source_id": "airstreet_portfolio",
+          "source_url": "https://www.airstreet.com/portfolio",
+          "source_title": "Air Street Capital｜AI venture capital for AI-first companies",
+          "source_content_hash": "ac986fa91d7817c84fe86a29f1d4a351bb66d7ed86b09c1fcdabecd703dd48a1",
+          "quote": "Odyssey · World models (US/UK)",
+          "quote_hash": "8790a6ffc30900d3485829c84db3000add498ae32225640ce0d75149d4e01fa1"
+        },
         {
           "source_id": "FISRC-413e994d081f8e0f",
           "source_url": "https://awesomeagents.ai/news/odyssey-amazon-310m-world-models/",
@@ -153,7 +238,7 @@
           "quote_hash": "c72c02150af958eba4fc5f78b4a6886cfc8ef25883e8c439f9b74e131010d193"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

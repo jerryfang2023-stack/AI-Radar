@@ -139,19 +139,66 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Afore Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Fund size, check range, stage and approach are current statements on Afore’s own website. They are firm-level disclosures; the Thoughtly round amount is not Afore’s individual check.",
+      "summary": "Afore Capital is a venture firm focused on pre-seed companies, including teams that are pre-traction and still developing their initial product. Its website reports a $500 million fund and typical investments of $500,000 to $2 million or more, alongside hands-on product and company-building support.",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "Investment stage",
+          "value": "Pre-seed, including pre-traction companies.",
+          "source_id": "afore_home"
+        },
+        {
+          "field": "reported_fund_size",
+          "label": "Reported fund size",
+          "value": "$500 million; the page does not provide a vintage breakdown or as-of date.",
+          "source_id": "afore_home"
+        },
+        {
+          "field": "check_size",
+          "label": "Stated investment range",
+          "value": "$500,000 to $2 million or more, as stated by the firm.",
+          "source_id": "afore_home"
+        },
+        {
+          "field": "approach",
+          "label": "Investment approach",
+          "value": "High-conviction early investment with product and investment expertise for founders from Day 0.",
+          "source_id": "afore_home"
+        },
+        {
+          "field": "team",
+          "label": "Managing partners",
+          "value": "Gaurav Jain and Anamitra Banerji are listed as co-founders and managing partners.",
+          "source_id": "afore_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Thoughtly · 种子轮 · 2026-04-22 · 既有投资方，本轮参投 · $5.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Thoughtly’s April 2026 financing announcement named Afore Capital among returning investors. Its individual contribution was not disclosed.",
           "source_id": "FISRC-01d50cf4c52275e9"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Official website and founder resources",
+          "value": "Afore Capital",
+          "source_id": "afore_home",
+          "url": "https://www.afore.vc/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "afore_home",
+          "source_url": "https://www.afore.vc/",
+          "source_title": "Afore Capital",
+          "source_content_hash": "7d23f3c7066e56021a96c64cf23a57c3e38372c86c1ea03245e74dda68cfec26",
+          "quote": "We’re a $500M fund investing $500k - $2M+ with high conviction in pre-traction, pre-everything companies!",
+          "quote_hash": "80092e37d1a9b003db294ba87298fb57c46604b27dfba5954bfd0660f6626f9b"
+        },
         {
           "source_id": "FISRC-01d50cf4c52275e9",
           "source_url": "https://thoughtly.com/blog/thoughtly-raises-usd8m-to-build-omnichannel-agents-for-revenue-teams",
@@ -161,7 +208,7 @@
           "quote_hash": "8ade989f4db52563b4753209f1eea55f614d902291ce7a34a15cde0b2862c3ea"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }
