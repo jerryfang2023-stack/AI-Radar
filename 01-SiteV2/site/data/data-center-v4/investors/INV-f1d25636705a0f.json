@@ -137,21 +137,94 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Susa Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Susa Ventures 是一家美国风险投资机构，公开资料显示其同时管理种子期基金和面向现有组合公司的后续投资基金。公司 2021 年宣布募集 3.75 亿美元，分别配置于种子基金 Susa Ventures IV 和机会基金 Susa Opportunities II。其公开组合案例涵盖金融科技、医疗健康、供应链和企业软件。",
+      "coverage_note": "基金规模与投资区间来自 2021 年由 Susa 发布的募资公告，均为历史基金口径，不代表当前募资规模或基金回报。公司官网当前首页仅显示名称与团队名单；组合案例据发行方公告和被投公司融资发布稿整理。Qodo 7,000 万美元为公司 B 轮总额，公开公告列出 Susa 为参投方但未披露其单笔金额。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "2021 年募资公告披露 Susa Ventures IV 面向种子阶段；Susa Opportunities II 面向现有组合的 B、C 轮后续投资。",
+          "source_id": "susa_fund"
+        },
+        {
+          "field": "historical_fund_sizes",
+          "label": "2021 年基金规模",
+          "value": "Susa Ventures IV 为 1.25 亿美元；Susa Opportunities II 为 2.5 亿美元，合计 3.75 亿美元。",
+          "source_id": "susa_fund"
+        },
+        {
+          "field": "historical_check_sizes",
+          "label": "2021 年公告中的投资区间",
+          "value": "种子基金通常投资 100 万至 200 万美元；机会基金通常投资 1,000 万至 1,500 万美元，主要面向现有组合公司。",
+          "source_id": "susa_fund"
+        },
+        {
+          "field": "team_listing",
+          "label": "官网当前首页列示姓名",
+          "value": [
+            "Chad Byers",
+            "Pratyush Buddiga",
+            "Misha Gordon-Rowe",
+            "Shaheer Sandhu"
+          ],
+          "source_id": "susa_home"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2021-09-08",
+          "description": "宣布完成总计 3.75 亿美元的 Susa Ventures IV 和 Susa Opportunities II 募资。",
+          "source_id": "susa_fund"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Qodo · B轮 · 2026-03-30 · 本轮参投 · $70 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Susa 2021 年募资公告提及 Robinhood、Flexport、Mux、Newfront Insurance、Stord 和 Viz.ai 等组合企业；这是发行方选列案例，不代表完整组合或已实现投资收益。",
+          "source_id": "susa_fund"
+        },
+        {
+          "description": "Qodo 官方公告显示其 2026 年 B 轮融资总额为 7,000 万美元，Susa Ventures 被列为多家参投方之一；Susa 的单笔投资额未披露。",
+          "source_id": "qodo_round"
+        },
+        {
+          "description": "融资数据库也记录了 Susa 参与 Qodo B 轮的披露；该记录中的金额是公司融资总额，不是 Susa 的出资额。",
           "source_id": "FISRC-f001682a294672d5"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Susa Ventures",
+          "url": "https://susaventures.com/",
+          "source_id": "susa_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "susa_home",
+          "source_url": "https://susaventures.com/",
+          "source_title": "Susa Ventures",
+          "source_content_hash": "fed5cb9471e4fb68c0d46659227cb4817a4cc4983514b504c3d5c1ff93aa8384",
+          "quote": "Susa Ventures Chad Byers Pratyush Buddiga Misha Gordon-Rowe Shaheer Sandhu Blog",
+          "quote_hash": "f442d6e01e018fdea97d484aeb2653767311cb93e16c1b3028e1127417e1b553"
+        },
+        {
+          "source_id": "susa_fund",
+          "source_url": "https://www.prnewswire.com/news-releases/susa-ventures-closes-375-million-across-two-new-funds-301364529.html",
+          "source_title": "Susa Ventures Closes $375 Million Across Two New Funds",
+          "source_content_hash": "494b7d6a15a82fc24f12690f932328b724d139a6f09e29ff0c558f448a785a66",
+          "quote": "Susa Ventures closed $375 million across two new funds: a $125 million seed-stage fund and a $250 million opportunity fund.",
+          "quote_hash": "84e83b0b723ef566b10499e902c96a6332de50b83187354613fef2a60bd09c59"
+        },
+        {
+          "source_id": "qodo_round",
+          "source_url": "https://www.qodo.ai/blog/qodo-70m-series-b-shift-to-artificial-wisdom/",
+          "source_title": "Beyond Intelligence: Qodo’s $70M Series B and the Shift to Artificial Wisdom - Qodo",
+          "source_content_hash": "6fa4e25ff6030a6af91e16564d45a651c011b7ee620aaf3a3c177d644f37688d",
+          "quote": "Qodo has raised $70 million in Series B funding, bringing total capital raised to $120 million.",
+          "quote_hash": "30c11bc5382458023a66b831844f9c7a3fe81bf13c1b95eb7f9e849010076707"
+        },
         {
           "source_id": "FISRC-f001682a294672d5",
           "source_url": "https://techcrunch.com/2026/03/30/qodo-bets-on-code-verification-as-ai-coding-scales-raises-70m/",
@@ -161,7 +234,10 @@
           "quote_hash": "a027f2b22de724675eb349b0bafb306c4f586cad722a3279c84850378ab6a186"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-27"
     }
   }
 }
