@@ -1,5 +1,7 @@
 # 国内融资独立监测
 
+消费级 AI 智能硬件自 2026-09-26 增加六类独立检索与候选预算，覆盖眼镜、钥匙扣／挂件、玩具、手机、音频穿戴和家庭设备。配置、每日去重与验收规则见 [消费级硬件监测](consumer-ai-hardware-monitor.md)。
+
 国内链路由 `daily-persistent-assets-pr.yml` 调用 `china-funding-pr.yml`，与海外业务监测在 08:10 Morning Production Dispatch 同次触发。采集独立运行，只有共享事实与应用发布使用现有串行锁。无需新增 Windows 任务。手动补跑通过国内工作流，不必重跑海外。
 
 来源配置：`01-SiteV2/content/11-databases/china-funding-monitor-v1.json`。投资界、投中网、36氪、创业邦、财联社／科创板日报、量子位、机器之心各有独立列表页与两条检索预算。入口受限显示部分失败；媒体所在地只决定采集路由，不能证明公司属于中国区。
