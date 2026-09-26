@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
+    "generatedAt": "2026-09-26T00:33:55.289Z",
     "latestDataDate": "2026-09-24",
     "currentDate": "2026-09-24",
     "eventCount": 3561,
@@ -314,7 +314,7 @@
           "organization": "Google",
           "title": "研究与工程领导职务；曾任Google DeepMind及Google Research首席科学家",
           "period": "1999–2026",
-          "description": "长期参与Google基础设施及AI研究；2026年离开Google并共同创立Discovery Loop。",
+          "description": "长期参与 Google 基础设施及 AI 研究；2026 年离开 Google 并共同创立 Discovery Loop。",
           "source_id": "jeff_departure"
         },
         {
@@ -340,7 +340,7 @@
       "experience_summary": "研究与职业经验横跨分布式系统、计算基础设施和人工智能。Discovery Loop官网将Jeff Dean列入创始团队；校方及Google资料记录其在Google长期从事系统工程与AI工作。",
       "track_record": [
         {
-          "description": "Discovery Loop官网将MapReduce、Bigtable、Spanner、TensorFlow、Pathways及TPU等系统和技术列入创始团队的共同成果清单；此为团队自述，并非将每一项单独归于Jeff Dean。",
+          "description": "Discovery Loop 官网将 MapReduce、Bigtable、Spanner、TensorFlow、Pathways 及 TPU 等系统和技术列入创始团队的共同成果清单；此为团队自述，并非将每一项单独归于 Jeff Dean。",
           "source_id": "jeff_discovery"
         }
       ],
@@ -379,6 +379,26 @@
         }
       ],
       "identity_status": "verified"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.career[0].description": {
+          "text": "长期参与 Google 基础设施及 AI 研究；2026 年离开 Google 并共同创立 Discovery Loop。",
+          "source_hash": "8291218bd2b34f2bf9f6de54e741b6c87b9a55298b944581efccba3ddb118486",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-26T00:33:37.356Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Discovery Loop 官网将 MapReduce、Bigtable、Spanner、TensorFlow、Pathways 及 TPU 等系统和技术列入创始团队的共同成果清单；此为团队自述，并非将每一项单独归于 Jeff Dean。",
+          "source_hash": "bb0a0f01a81b1f20542d59607007cc4c427159bd66bc0b69f8401ad205053824",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-26T00:33:37.356Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }
