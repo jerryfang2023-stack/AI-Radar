@@ -139,19 +139,116 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "五源资本 (5Y Capital) 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "五源资本（5Y Capital）是一家风险投资机构，官网聚焦科技、生命科学和消费创新，称其管理来自全球投资者的资本超过50亿美元。官网列示的部分被投企业包括小米、快手、地平线和小鹏汽车；该列表不代表完整组合或基金回报。",
+      "facts": [
+        {
+          "field": "sectors",
+          "label": "官网披露的投资领域",
+          "value": [
+            "科技",
+            "生命科学",
+            "消费创新"
+          ],
+          "source_id": "5y_about_en_20260927"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "官网披露的管理规模",
+          "value": "超过 50 亿美元；官网页面未标注统计时点，按机构自述呈现",
+          "source_id": "5y_about_en_20260927"
+        },
+        {
+          "field": "responsible_investment",
+          "label": "负责任投资倡议",
+          "value": "官网称五源资本已签署联合国负责任投资原则（UN PRI）",
+          "source_id": "5y_about_en_20260927"
+        },
+        {
+          "field": "office_cities",
+          "label": "官网列示的办公城市",
+          "value": [
+            "上海",
+            "北京",
+            "深圳",
+            "香港"
+          ],
+          "source_id": "5y_contact_20260927"
+        },
+        {
+          "field": "investment_approach",
+          "label": "官网对机构工作的介绍",
+          "value": "寻找并支持创业者，提供经营层面的支持；属于机构自述",
+          "source_id": "5y_about_zh_20260927"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官网被投企业页列示的小米集团、快手、地平线、小鹏汽车、摩尔线程等为部分公开案例；不代表完整投资组合或基金回报率。",
+          "source_id": "5y_portfolio_20260927"
+        },
         {
           "description": "融资来源记录：Moonshot AI · 轮次未披露 · 2026-06-08 · 2026年2月轮次参投 · 20亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0199034a5417695f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "五源资本（5Y Capital）",
+          "url": "https://www.5ycap.com/",
+          "source_id": "5y_contact_20260927"
+        },
+        {
+          "kind": "social",
+          "label": "官方微信公众号",
+          "value": "五源资本 5Y Capital",
+          "url": "https://www.5ycap.com/contact/",
+          "source_id": "5y_contact_20260927"
+        },
+        {
+          "kind": "social",
+          "label": "官方微博",
+          "value": "五源资本5YCapital",
+          "url": "https://weibo.com/u/2319116771",
+          "source_id": "5y_contact_20260927"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "5y_about_en_20260927",
+          "source_url": "https://www.5ycap.com/en/about/",
+          "source_title": "About | 5Y Capital",
+          "source_content_hash": "c7fcf8753dda050d430a979cf619b5f558ae037fdfb924684c6995091c73024d",
+          "quote": "technology, life sciences, and consumer innovation sectors ... Today, 5Y Capital manages over US$5 billion in capital.",
+          "quote_hash": "e48001883b909d8a1dab0c3d600068da06570733eb87f6baa7d00701738c79f8"
+        },
+        {
+          "source_id": "5y_about_zh_20260927",
+          "source_url": "https://www.5ycap.com/about/",
+          "source_title": "关于我们 | 五源资本",
+          "source_content_hash": "b28bf5ae2cbbc8c79c7da5cd420a6fbaf79073df5a5fc46412d89f0ed750ed9c",
+          "quote": "五源寻找、支持、激励孤独的创业者，为其提供从精神到所有经营运作的支持。",
+          "quote_hash": "7d5a0cbc6775047a5e65323bf1149192da68826a59c425e38648871df9d12c9e"
+        },
+        {
+          "source_id": "5y_portfolio_20260927",
+          "source_url": "https://www.5ycap.com/portfolio/",
+          "source_title": "被投企业 | 五源资本",
+          "source_content_hash": "7385aa42a912588c746cc84b86c2034d78fd2f6137954247ab9f092eca9fdb7a",
+          "quote": "小米集团 (1810.HK） 快手（1024.HK） ... 地平线 (9660.HK) ... 小鹏汽车 (NYSE: XPEV / 9868.HK) ... 摩尔线程",
+          "quote_hash": "ebf10b8b6b5cbc9536660f0b95d432026c0bbe9207f5ce5e5e57d2da941f6e3d"
+        },
+        {
+          "source_id": "5y_contact_20260927",
+          "source_url": "https://www.5ycap.com/contact/",
+          "source_title": "联系我们 | 五源资本",
+          "source_content_hash": "741617bdc45a31a34a9ceeb59b28e7ece2a41d82481f4bd0f828cfb8785d6d8b",
+          "quote": "五源资本在上海、北京、深圳和香港都设有办公室。官网 www.5ycap.com；微博 https://weibo.com/u/2319116771。",
+          "quote_hash": "152b9e09fd5a39b2c359f171fe61929e8c331a1a6cd6eceb48450b5b2b5fa87e"
+        },
         {
           "source_id": "FISRC-0199034a5417695f",
           "source_url": "https://otontechnology.com/moonshot-ai-30-billion-valuation-funding-round/",
@@ -161,7 +258,8 @@
           "quote_hash": "02f88b3a1ec1f420e6ed67d4d60bd4eb3d98ec307d57db37222ebbc91fa4c0f6"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "coverage_note": "本档案引用五源资本（5Y Capital）官网的机构品牌资料。融资活动记录中的机构名称未必披露具体基金载体，单笔投资仍以各融资来源为准。"
     }
   }
 }

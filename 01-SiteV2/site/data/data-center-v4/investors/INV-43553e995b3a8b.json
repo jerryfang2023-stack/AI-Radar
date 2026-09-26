@@ -131,19 +131,146 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "真格基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "真格基金是一家专注早期阶段的天使投资机构。官网人物介绍记载，徐小平、王强和方爱之于2011年共同创立真格基金；机构自述坚持创业者友好、快速决策和友善条款。官网列示北京、上海、深圳办公室及公开商业计划书联系邮箱。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "官网记载的创立年份",
+          "value": "2011",
+          "source_id": "zhen_team_founders_20260927"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网披露的投资阶段",
+          "value": "专注早期阶段的天使投资",
+          "source_id": "zhen_team_stage_20260927"
+        },
+        {
+          "field": "investment_approach",
+          "label": "官网阐述的投资理念",
+          "value": "支持创业者，强调快速决策、友善条款和长期站在创业者一侧；属于机构自述",
+          "source_id": "zhen_home_approach_20260927"
+        },
+        {
+          "field": "office_cities",
+          "label": "官网列示的办公城市",
+          "value": [
+            "北京",
+            "上海",
+            "深圳"
+          ],
+          "source_id": "zhen_home_offices_20260927"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2011",
+          "description": "官网创始人介绍记载，徐小平、王强和方爱之于2011年共同创立真格基金。",
+          "source_id": "zhen_team_founders_20260927"
+        }
+      ],
       "track_record": [
+        {
+          "description": "真格官网人物介绍称机构陪伴上百家创业团队；方爱之的官方简介提及小红书、逸仙电商等公司。代表性公开案例不等于完整组合或基金回报数据。",
+          "source_id": "zhen_team_scale_20260927"
+        },
+        {
+          "description": "官网人物介绍举出小红书、逸仙电商等例子，并称其作为天使投资人为创业者开出第一张支票；这是机构人物介绍中的自述。",
+          "source_id": "zhen_team_cases_20260927"
+        },
         {
           "description": "融资来源记录：Moonshot AI · 轮次未披露 · 2026-05-07 · 天使轮参投 · 约20亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5d82f5dc9fc96ce5"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "真格基金",
+          "url": "https://www.zhenfund.com/",
+          "source_id": "zhen_home_contact_20260927"
+        },
+        {
+          "kind": "application",
+          "label": "商业计划书投递",
+          "value": "dream@zhenfund.com",
+          "url": "https://www.zhenfund.com/",
+          "source_id": "zhen_home_contact_20260927"
+        },
+        {
+          "kind": "application",
+          "label": "AI 相关商业计划书投递",
+          "value": "prompt@zhenfund.com",
+          "url": "https://www.zhenfund.com/",
+          "source_id": "zhen_home_contact_20260927"
+        },
+        {
+          "kind": "email",
+          "label": "媒体联系",
+          "value": "media@zhenfund.com",
+          "url": "https://www.zhenfund.com/",
+          "source_id": "zhen_home_contact_20260927"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "zhen_team_founders_20260927",
+          "source_url": "https://www.zhenfund.com/Team",
+          "source_title": "真格团队 | 真格基金",
+          "source_content_hash": "81da84fabbbd701935c4266609d688fcc115dc5cd11a6df1b670587f6f82e9a4",
+          "quote": "2011年，我和王强、方爱之成立了真格基金",
+          "quote_hash": "96a45d5c71654a020a79820500a0e414351389c61ff41d236ffd696e24d18b17"
+        },
+        {
+          "source_id": "zhen_team_stage_20260927",
+          "source_url": "https://www.zhenfund.com/Team",
+          "source_title": "真格团队 | 真格基金",
+          "source_content_hash": "81da84fabbbd701935c4266609d688fcc115dc5cd11a6df1b670587f6f82e9a4",
+          "quote": "专注早期阶段的天使投资机构",
+          "quote_hash": "4fd27cc5bae2eb3b62309053d2754467eb1e6354f0a35207ae7928f9c429d455"
+        },
+        {
+          "source_id": "zhen_team_scale_20260927",
+          "source_url": "https://www.zhenfund.com/Team",
+          "source_title": "真格团队 | 真格基金",
+          "source_content_hash": "81da84fabbbd701935c4266609d688fcc115dc5cd11a6df1b670587f6f82e9a4",
+          "quote": "陪伴了上百家创业团队成长",
+          "quote_hash": "bde7b2a171ba530785e7cb1db36bb408ccaf7183c226fe9b690f5411c702b92a"
+        },
+        {
+          "source_id": "zhen_team_cases_20260927",
+          "source_url": "https://www.zhenfund.com/Team",
+          "source_title": "真格团队 | 真格基金",
+          "source_content_hash": "81da84fabbbd701935c4266609d688fcc115dc5cd11a6df1b670587f6f82e9a4",
+          "quote": "小红书、逸仙电商等公司的创始人 ... 为他们开出了第一张支票",
+          "quote_hash": "d7079cae55f841f3949778fb13654a9ee8d69715b1f2253af835c1f589a1b163"
+        },
+        {
+          "source_id": "zhen_home_approach_20260927",
+          "source_url": "https://www.zhenfund.com/",
+          "source_title": "真格基金",
+          "source_content_hash": "c7b29ea070971decaa638d9bd479a4dabb3c39e8973774e17f49575df595b613",
+          "quote": "快速的决策，友善的条款",
+          "quote_hash": "c6154436cd634ccf44aef13bcd5fb2dd7ff64fc2ba4c1176225f0442460ac452"
+        },
+        {
+          "source_id": "zhen_home_contact_20260927",
+          "source_url": "https://www.zhenfund.com/",
+          "source_title": "真格基金",
+          "source_content_hash": "c7b29ea070971decaa638d9bd479a4dabb3c39e8973774e17f49575df595b613",
+          "quote": "dream@zhenfund.com ... prompt@zhenfund.com ... media@zhenfund.com",
+          "quote_hash": "99e47050102e236dee12443ec71c772d067684baae617f11d5260aea35d62c89"
+        },
+        {
+          "source_id": "zhen_home_offices_20260927",
+          "source_url": "https://www.zhenfund.com/",
+          "source_title": "真格基金",
+          "source_content_hash": "c7b29ea070971decaa638d9bd479a4dabb3c39e8973774e17f49575df595b613",
+          "quote": "北京 ... 上海 ... 深圳",
+          "quote_hash": "9c3dbb757f3eb470e966ed98345a6d6ab91940e1e2766bf6aa9d84fe2eef2a15"
+        },
         {
           "source_id": "FISRC-5d82f5dc9fc96ce5",
           "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
@@ -153,7 +280,8 @@
           "quote_hash": "b7c2e93816b3c8eb44d51b5751b42075e849620248e6d988c9db1ee968bc1491"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

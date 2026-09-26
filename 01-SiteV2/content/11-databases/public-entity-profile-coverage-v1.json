@@ -60596,19 +60596,116 @@
     "INV-1ee0408fd88d02": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "五源资本 (5Y Capital) 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "五源资本（5Y Capital）是一家风险投资机构，官网聚焦科技、生命科学和消费创新，称其管理来自全球投资者的资本超过50亿美元。官网列示的部分被投企业包括小米、快手、地平线和小鹏汽车；该列表不代表完整组合或基金回报。",
+      "facts": [
+        {
+          "field": "sectors",
+          "label": "官网披露的投资领域",
+          "value": [
+            "科技",
+            "生命科学",
+            "消费创新"
+          ],
+          "source_id": "5y_about_en_20260927"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "官网披露的管理规模",
+          "value": "超过 50 亿美元；官网页面未标注统计时点，按机构自述呈现",
+          "source_id": "5y_about_en_20260927"
+        },
+        {
+          "field": "responsible_investment",
+          "label": "负责任投资倡议",
+          "value": "官网称五源资本已签署联合国负责任投资原则（UN PRI）",
+          "source_id": "5y_about_en_20260927"
+        },
+        {
+          "field": "office_cities",
+          "label": "官网列示的办公城市",
+          "value": [
+            "上海",
+            "北京",
+            "深圳",
+            "香港"
+          ],
+          "source_id": "5y_contact_20260927"
+        },
+        {
+          "field": "investment_approach",
+          "label": "官网对机构工作的介绍",
+          "value": "寻找并支持创业者，提供经营层面的支持；属于机构自述",
+          "source_id": "5y_about_zh_20260927"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官网被投企业页列示的小米集团、快手、地平线、小鹏汽车、摩尔线程等为部分公开案例；不代表完整投资组合或基金回报率。",
+          "source_id": "5y_portfolio_20260927"
+        },
         {
           "description": "融资来源记录：Moonshot AI · 轮次未披露 · 2026-06-08 · 2026年2月轮次参投 · 20亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0199034a5417695f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "五源资本（5Y Capital）",
+          "url": "https://www.5ycap.com/",
+          "source_id": "5y_contact_20260927"
+        },
+        {
+          "kind": "social",
+          "label": "官方微信公众号",
+          "value": "五源资本 5Y Capital",
+          "url": "https://www.5ycap.com/contact/",
+          "source_id": "5y_contact_20260927"
+        },
+        {
+          "kind": "social",
+          "label": "官方微博",
+          "value": "五源资本5YCapital",
+          "url": "https://weibo.com/u/2319116771",
+          "source_id": "5y_contact_20260927"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "5y_about_en_20260927",
+          "source_url": "https://www.5ycap.com/en/about/",
+          "source_title": "About | 5Y Capital",
+          "source_content_hash": "c7fcf8753dda050d430a979cf619b5f558ae037fdfb924684c6995091c73024d",
+          "quote": "technology, life sciences, and consumer innovation sectors ... Today, 5Y Capital manages over US$5 billion in capital.",
+          "quote_hash": "e48001883b909d8a1dab0c3d600068da06570733eb87f6baa7d00701738c79f8"
+        },
+        {
+          "source_id": "5y_about_zh_20260927",
+          "source_url": "https://www.5ycap.com/about/",
+          "source_title": "关于我们 | 五源资本",
+          "source_content_hash": "b28bf5ae2cbbc8c79c7da5cd420a6fbaf79073df5a5fc46412d89f0ed750ed9c",
+          "quote": "五源寻找、支持、激励孤独的创业者，为其提供从精神到所有经营运作的支持。",
+          "quote_hash": "7d5a0cbc6775047a5e65323bf1149192da68826a59c425e38648871df9d12c9e"
+        },
+        {
+          "source_id": "5y_portfolio_20260927",
+          "source_url": "https://www.5ycap.com/portfolio/",
+          "source_title": "被投企业 | 五源资本",
+          "source_content_hash": "7385aa42a912588c746cc84b86c2034d78fd2f6137954247ab9f092eca9fdb7a",
+          "quote": "小米集团 (1810.HK） 快手（1024.HK） ... 地平线 (9660.HK) ... 小鹏汽车 (NYSE: XPEV / 9868.HK) ... 摩尔线程",
+          "quote_hash": "ebf10b8b6b5cbc9536660f0b95d432026c0bbe9207f5ce5e5e57d2da941f6e3d"
+        },
+        {
+          "source_id": "5y_contact_20260927",
+          "source_url": "https://www.5ycap.com/contact/",
+          "source_title": "联系我们 | 五源资本",
+          "source_content_hash": "741617bdc45a31a34a9ceeb59b28e7ece2a41d82481f4bd0f828cfb8785d6d8b",
+          "quote": "五源资本在上海、北京、深圳和香港都设有办公室。官网 www.5ycap.com；微博 https://weibo.com/u/2319116771。",
+          "quote_hash": "152b9e09fd5a39b2c359f171fe61929e8c331a1a6cd6eceb48450b5b2b5fa87e"
+        },
         {
           "source_id": "FISRC-0199034a5417695f",
           "source_url": "https://otontechnology.com/moonshot-ai-30-billion-valuation-funding-round/",
@@ -60618,7 +60715,8 @@
           "quote_hash": "02f88b3a1ec1f420e6ed67d4d60bd4eb3d98ec307d57db37222ebbc91fa4c0f6"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "coverage_note": "本档案引用五源资本（5Y Capital）官网的机构品牌资料。融资活动记录中的机构名称未必披露具体基金载体，单笔投资仍以各融资来源为准。"
     },
     "INV-2cdbd1163ea2d9": {
       "profile_type": "organization",
@@ -79216,19 +79314,136 @@
     "INV-ee67ad061aeba0": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "赛富基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "赛富（SAIF Partners）是聚焦大中华区的亚洲私募股权投资机构，官网介绍其投资科技、医疗健康、新材料和清洁技术等成长领域，也参与具备明显竞争优势的早期项目。机构表示会以本地团队参与被投企业经营发展；投资组合与回报数据仍以可核验的独立披露为准。",
+      "facts": [
+        {
+          "field": "sectors",
+          "label": "官网列示的重点领域",
+          "value": [
+            "互联网与 TMT",
+            "医疗健康",
+            "新材料",
+            "清洁技术"
+          ],
+          "source_id": "saif_about_20260927"
+        },
+        {
+          "field": "market_focus",
+          "label": "官网披露的主要市场",
+          "value": "大中华区",
+          "source_id": "saif_about_20260927"
+        },
+        {
+          "field": "investment_stages",
+          "label": "官网披露的投资阶段",
+          "value": [
+            "成长期行业领先企业",
+            "具备显著竞争优势的早期企业"
+          ],
+          "source_id": "saif_approach_20260927"
+        },
+        {
+          "field": "investment_approach",
+          "label": "官网披露的投资方式",
+          "value": "与本地创业者建立长期合作，作为积极的领投方，并参与企业经营、团队建设、业务拓展及治理改善；为机构自述",
+          "source_id": "saif_about_20260927"
+        },
+        {
+          "field": "office_cities",
+          "label": "官网列示的中国办公室",
+          "value": [
+            "北京",
+            "上海",
+            "深圳",
+            "厦门",
+            "青岛",
+            "南京"
+          ],
+          "source_id": "saif_about_20260927"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "SAIF 投资方法页面自述已投资 200 多家企业，主要位于中国或与中国具有较强联系；该页面页脚版权为 2020 年且未说明统计口径日期，不等同于基金回报率。",
+          "source_id": "saif_approach_20260927"
+        },
         {
           "description": "融资来源记录：数巅智能 · 多轮融资 · 2026-09-21 · pre-A轮联合领投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9ebda1057c2926b3"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "赛富中国官网",
+          "value": "SAIF Partners China",
+          "url": "https://www.saifpartners.com.cn/",
+          "source_id": "saif_about_20260927"
+        },
+        {
+          "kind": "contact_form",
+          "label": "官网咨询表单",
+          "value": "SAIF Partners 联系页面",
+          "url": "https://www.sbaif.com/contact-beijing.html",
+          "source_id": "saif_contact_20260927"
+        },
+        {
+          "kind": "email",
+          "label": "官网团队联系人邮箱",
+          "value": "info@sbaif.com",
+          "url": "https://www.sbaif.com/people.html",
+          "source_id": "saif_people_20260927"
+        },
+        {
+          "kind": "phone",
+          "label": "北京办公室电话",
+          "value": "+86 10 6563 0202",
+          "url": "https://www.sbaif.com/contact-beijing.html",
+          "source_id": "saif_contact_20260927"
+        },
+        {
+          "kind": "address",
+          "label": "官网联系页面所列北京办公室地址（页面页脚版权为2020，使用前建议复核）",
+          "value": "Suite 1001, 10/F, Tower D, Central International Trade Center, 6A Jianguomenwai Avenue, Chaoyang District, Beijing, China",
+          "url": "https://www.sbaif.com/contact-beijing.html",
+          "source_id": "saif_contact_20260927"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "saif_about_20260927",
+          "source_url": "https://www.sbaif.com/about-saif.html",
+          "source_title": "About SAIF Partners | SAIF Partners China",
+          "source_content_hash": "8ece5383e30bbd306970b9c95cefd5e7715076c046d099715ee9357d1cd06322",
+          "quote": "growth sectors, in particular internet+ & TMT, healthcare & new materials and clean technologies. SAIF focuses its efforts primarily on the greater China region.",
+          "quote_hash": "be042bf354b020823059d55e6afe645c97273dce8be4370847b58577193420cc"
+        },
+        {
+          "source_id": "saif_approach_20260927",
+          "source_url": "https://www.sbaif.com/investment-approach.html",
+          "source_title": "Investment Approach | SAIF Partners China",
+          "source_content_hash": "87f4cc92978a1caec9adbe6661e52ae1248c519978e8ecafdc53bca556655b43",
+          "quote": "promising early-stage companies that demonstrate an exceptional competitive advantage ... Having invested in over 200 companies",
+          "quote_hash": "be149c402b1938b59c470b4aafd47637d0fc5ed89c89475b992467868b7e04e9"
+        },
+        {
+          "source_id": "saif_contact_20260927",
+          "source_url": "https://www.sbaif.com/contact-beijing.html",
+          "source_title": "Contact | SAIF Partners China",
+          "source_content_hash": "d834880ffa3e02655e3cbbd7547bf66a9aab187a0f53704c586c8c100a759d47",
+          "quote": "Suite 1001, 10/F, Tower D, Central International Trade Center, 6A Jianguomenwai Avenue, Chao Yang District, Beijing 10002. Tel: 86.10.6563.0202.",
+          "quote_hash": "9af776d31d35c3641a6c470609f81c49616bc70e30055da2e88b91271ec4cb3e"
+        },
+        {
+          "source_id": "saif_people_20260927",
+          "source_url": "https://www.sbaif.com/people.html",
+          "source_title": "People | SAIF Partners China",
+          "source_content_hash": "5842620c99b4e9b1cd9beada0ec286badec6682ce428f0d950d82f89cf938186",
+          "quote": "contact me (info@sbaif.com)",
+          "quote_hash": "bc1cde06cc383806449d1fb73aa505d5fd1d8930f05ad3ea215112b4dfae21a7"
+        },
         {
           "source_id": "FISRC-9ebda1057c2926b3",
           "source_url": "https://industry.caijing.com.cn/20260707/5169223.shtml",
@@ -79238,7 +79453,8 @@
           "quote_hash": "fcd45a3c282bf9b19a1d8d9e69340a6f4c6018575e8aa1d26a10e45b7159d87b"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "coverage_note": "本档案引用赛富/SAIF Partners 的机构品牌资料，不将集团介绍自动等同于具体法定基金或管理人。单笔融资中的投资主体仍以对应融资来源为准；官网部分英文页面保留较早统计口径。"
     },
     "INV-2a2771718160de": {
       "profile_type": "unverified",
@@ -91423,19 +91639,146 @@
     "INV-43553e995b3a8b": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "真格基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "真格基金是一家专注早期阶段的天使投资机构。官网人物介绍记载，徐小平、王强和方爱之于2011年共同创立真格基金；机构自述坚持创业者友好、快速决策和友善条款。官网列示北京、上海、深圳办公室及公开商业计划书联系邮箱。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "官网记载的创立年份",
+          "value": "2011",
+          "source_id": "zhen_team_founders_20260927"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网披露的投资阶段",
+          "value": "专注早期阶段的天使投资",
+          "source_id": "zhen_team_stage_20260927"
+        },
+        {
+          "field": "investment_approach",
+          "label": "官网阐述的投资理念",
+          "value": "支持创业者，强调快速决策、友善条款和长期站在创业者一侧；属于机构自述",
+          "source_id": "zhen_home_approach_20260927"
+        },
+        {
+          "field": "office_cities",
+          "label": "官网列示的办公城市",
+          "value": [
+            "北京",
+            "上海",
+            "深圳"
+          ],
+          "source_id": "zhen_home_offices_20260927"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2011",
+          "description": "官网创始人介绍记载，徐小平、王强和方爱之于2011年共同创立真格基金。",
+          "source_id": "zhen_team_founders_20260927"
+        }
+      ],
       "track_record": [
+        {
+          "description": "真格官网人物介绍称机构陪伴上百家创业团队；方爱之的官方简介提及小红书、逸仙电商等公司。代表性公开案例不等于完整组合或基金回报数据。",
+          "source_id": "zhen_team_scale_20260927"
+        },
+        {
+          "description": "官网人物介绍举出小红书、逸仙电商等例子，并称其作为天使投资人为创业者开出第一张支票；这是机构人物介绍中的自述。",
+          "source_id": "zhen_team_cases_20260927"
+        },
         {
           "description": "融资来源记录：Moonshot AI · 轮次未披露 · 2026-05-07 · 天使轮参投 · 约20亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5d82f5dc9fc96ce5"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "真格基金",
+          "url": "https://www.zhenfund.com/",
+          "source_id": "zhen_home_contact_20260927"
+        },
+        {
+          "kind": "application",
+          "label": "商业计划书投递",
+          "value": "dream@zhenfund.com",
+          "url": "https://www.zhenfund.com/",
+          "source_id": "zhen_home_contact_20260927"
+        },
+        {
+          "kind": "application",
+          "label": "AI 相关商业计划书投递",
+          "value": "prompt@zhenfund.com",
+          "url": "https://www.zhenfund.com/",
+          "source_id": "zhen_home_contact_20260927"
+        },
+        {
+          "kind": "email",
+          "label": "媒体联系",
+          "value": "media@zhenfund.com",
+          "url": "https://www.zhenfund.com/",
+          "source_id": "zhen_home_contact_20260927"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "zhen_team_founders_20260927",
+          "source_url": "https://www.zhenfund.com/Team",
+          "source_title": "真格团队 | 真格基金",
+          "source_content_hash": "81da84fabbbd701935c4266609d688fcc115dc5cd11a6df1b670587f6f82e9a4",
+          "quote": "2011年，我和王强、方爱之成立了真格基金",
+          "quote_hash": "96a45d5c71654a020a79820500a0e414351389c61ff41d236ffd696e24d18b17"
+        },
+        {
+          "source_id": "zhen_team_stage_20260927",
+          "source_url": "https://www.zhenfund.com/Team",
+          "source_title": "真格团队 | 真格基金",
+          "source_content_hash": "81da84fabbbd701935c4266609d688fcc115dc5cd11a6df1b670587f6f82e9a4",
+          "quote": "专注早期阶段的天使投资机构",
+          "quote_hash": "4fd27cc5bae2eb3b62309053d2754467eb1e6354f0a35207ae7928f9c429d455"
+        },
+        {
+          "source_id": "zhen_team_scale_20260927",
+          "source_url": "https://www.zhenfund.com/Team",
+          "source_title": "真格团队 | 真格基金",
+          "source_content_hash": "81da84fabbbd701935c4266609d688fcc115dc5cd11a6df1b670587f6f82e9a4",
+          "quote": "陪伴了上百家创业团队成长",
+          "quote_hash": "bde7b2a171ba530785e7cb1db36bb408ccaf7183c226fe9b690f5411c702b92a"
+        },
+        {
+          "source_id": "zhen_team_cases_20260927",
+          "source_url": "https://www.zhenfund.com/Team",
+          "source_title": "真格团队 | 真格基金",
+          "source_content_hash": "81da84fabbbd701935c4266609d688fcc115dc5cd11a6df1b670587f6f82e9a4",
+          "quote": "小红书、逸仙电商等公司的创始人 ... 为他们开出了第一张支票",
+          "quote_hash": "d7079cae55f841f3949778fb13654a9ee8d69715b1f2253af835c1f589a1b163"
+        },
+        {
+          "source_id": "zhen_home_approach_20260927",
+          "source_url": "https://www.zhenfund.com/",
+          "source_title": "真格基金",
+          "source_content_hash": "c7b29ea070971decaa638d9bd479a4dabb3c39e8973774e17f49575df595b613",
+          "quote": "快速的决策，友善的条款",
+          "quote_hash": "c6154436cd634ccf44aef13bcd5fb2dd7ff64fc2ba4c1176225f0442460ac452"
+        },
+        {
+          "source_id": "zhen_home_contact_20260927",
+          "source_url": "https://www.zhenfund.com/",
+          "source_title": "真格基金",
+          "source_content_hash": "c7b29ea070971decaa638d9bd479a4dabb3c39e8973774e17f49575df595b613",
+          "quote": "dream@zhenfund.com ... prompt@zhenfund.com ... media@zhenfund.com",
+          "quote_hash": "99e47050102e236dee12443ec71c772d067684baae617f11d5260aea35d62c89"
+        },
+        {
+          "source_id": "zhen_home_offices_20260927",
+          "source_url": "https://www.zhenfund.com/",
+          "source_title": "真格基金",
+          "source_content_hash": "c7b29ea070971decaa638d9bd479a4dabb3c39e8973774e17f49575df595b613",
+          "quote": "北京 ... 上海 ... 深圳",
+          "quote_hash": "9c3dbb757f3eb470e966ed98345a6d6ab91940e1e2766bf6aa9d84fe2eef2a15"
+        },
         {
           "source_id": "FISRC-5d82f5dc9fc96ce5",
           "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
@@ -91445,7 +91788,8 @@
           "quote_hash": "b7c2e93816b3c8eb44d51b5751b42075e849620248e6d988c9db1ee968bc1491"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     },
     "INV-705ab548ebbd90": {
       "profile_type": "organization",
@@ -108335,10 +108679,10 @@
       "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
     },
     "EN-a1b944b37228d951": {
-      "summary": "Jack Clark 是 Anthropic 联合创始人，并负责 Anthropic Institute。其公开工作聚焦前沿 AI 对社会的影响。",
+      "summary": "Jack Clark 是 Anthropic 联合创始人、公共利益负责人及 Anthropic Institute 负责人。Anthropic 将该研究院定位为研究前沿 AI 对社会影响的机构，覆盖经济、就业、社会影响及法律议题。现职依据公司当前领导页核验；开始任职日期及教育背景未由这些来源披露。",
       "current_roles": [
         {
-          "title": "联合创始人、公共利益负责人",
+          "title": "联合创始人、公共利益负责人及 Anthropic Institute 负责人",
           "organization": "Anthropic",
           "source_id": "anthropic_leadership"
         }
@@ -108346,18 +108690,18 @@
       "career": [
         {
           "organization": "Anthropic",
-          "title": "联合创始人、公共利益负责人",
-          "period": "官方领导页列示；任职起始时间未披露",
-          "description": "Anthropic 官方领导页称 Jack Clark 共同创办 Anthropic，并领导 Anthropic Institute，研究前沿 AI 的社会影响。",
+          "title": "联合创始人、公共利益负责人及 Anthropic Institute 负责人",
+          "period": "当前（核验至 2026-09-27；起始时间未披露）",
+          "description": "Anthropic 当前领导页列出其现职；2026 年 3 月公告介绍了研究院的研究范围与组织职责。",
           "source_id": "anthropic_leadership"
         }
       ],
       "education": [],
-      "experience_summary": "Anthropic 官方领导页确认其联合创始人和公共利益负责人身份，并称其领导 Anthropic Institute；其他任职、任期和教育经历未据此推断。",
+      "experience_summary": "目前公开的一手履历可确认其共同创办 Anthropic，并负责公共利益及 Anthropic Institute。该研究院关注前沿 AI 对就业、经济、社会和法律的影响；其此前任职、学历和个人量化成果未由这些来源披露。",
       "track_record": [
         {
-          "description": "共同创办 Anthropic，并领导 Anthropic Institute。",
-          "source_id": "anthropic_leadership"
+          "description": "Anthropic 于 2026 年 3 月宣布成立 Anthropic Institute，并称其由 Jack Clark 领导；机构研究聚焦前沿 AI 对社会、经济、工作与法律的影响。此为公司对内部组织职责的自述。",
+          "source_id": "jack_anthropic_institute_20260927"
         }
       ],
       "sources": [
@@ -108365,14 +108709,22 @@
           "source_id": "anthropic_leadership",
           "source_url": "https://www.anthropic.com/company/leadership",
           "source_title": "Leadership at Anthropic | Anthropic",
-          "source_content_hash": "8589f23e500dc4969dbe26e9e6c806973a2f6e28e943fc705a8e0a6d3704a957",
-          "quote": "Jack Clark co-founded Anthropic and leads The Anthropic Institute, a think tank dedicated to producing research on the societal implications of frontier AI.",
-          "quote_hash": "b028da38293566621ef596ad6c43bcfcf2a448ae321053c30a4e9ef4ae3fd989"
+          "source_content_hash": "08e0dab4e1c826a99baa2950ccea7a7970375d47168e9d9c68182b7f5da56683",
+          "quote": "Co-Founder and Head of Public Benefit ... Jack Clark co-founded Anthropic and leads The Anthropic Institute",
+          "quote_hash": "00ef4b403167f5f65ed2aed6e3ad210d8b170d3b08922598e7aa887813a2179a"
+        },
+        {
+          "source_id": "jack_anthropic_institute_20260927",
+          "source_url": "https://www.anthropic.com/news/the-anthropic-institute",
+          "source_title": "Introducing The Anthropic Institute | Anthropic",
+          "source_content_hash": "c46fcd0d68dd13d60d3c008cd86b7126dbb038305d51ea1e80e141c7a0f26e42",
+          "quote": "The Institute is led by our co-founder Jack Clark ... studying how powerful AI will interact with the legal system.",
+          "quote_hash": "694b6aac18951ea59e8807d6ff3732852e1c410d4a8dbd8e10e3c33c95bb3dec"
         }
       ],
-      "last_verified_at": "2026-09-26",
+      "last_verified_at": "2026-09-27",
       "coverage_status": "researched",
-      "coverage_note": "现职与主要职责依据 Anthropic 官方领导页核实；未披露的任期、学历与其他经历保持未填写。"
+      "coverage_note": "现职依据 Anthropic 当前官方领导页核验，研究院职责依据 2026 年 3 月公司公告；未披露的任职起始日期、此前履历与教育背景保持空白。"
     },
     "EN-42f537bd07ee93cb": {
       "summary": "Boris Cherny 在 Anthropic Labs 担任技术人员，参与 Claude Code 的开发与对外介绍。",

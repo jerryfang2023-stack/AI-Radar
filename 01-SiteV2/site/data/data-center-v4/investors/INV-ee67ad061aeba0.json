@@ -131,19 +131,136 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "赛富基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "赛富（SAIF Partners）是聚焦大中华区的亚洲私募股权投资机构，官网介绍其投资科技、医疗健康、新材料和清洁技术等成长领域，也参与具备明显竞争优势的早期项目。机构表示会以本地团队参与被投企业经营发展；投资组合与回报数据仍以可核验的独立披露为准。",
+      "facts": [
+        {
+          "field": "sectors",
+          "label": "官网列示的重点领域",
+          "value": [
+            "互联网与 TMT",
+            "医疗健康",
+            "新材料",
+            "清洁技术"
+          ],
+          "source_id": "saif_about_20260927"
+        },
+        {
+          "field": "market_focus",
+          "label": "官网披露的主要市场",
+          "value": "大中华区",
+          "source_id": "saif_about_20260927"
+        },
+        {
+          "field": "investment_stages",
+          "label": "官网披露的投资阶段",
+          "value": [
+            "成长期行业领先企业",
+            "具备显著竞争优势的早期企业"
+          ],
+          "source_id": "saif_approach_20260927"
+        },
+        {
+          "field": "investment_approach",
+          "label": "官网披露的投资方式",
+          "value": "与本地创业者建立长期合作，作为积极的领投方，并参与企业经营、团队建设、业务拓展及治理改善；为机构自述",
+          "source_id": "saif_about_20260927"
+        },
+        {
+          "field": "office_cities",
+          "label": "官网列示的中国办公室",
+          "value": [
+            "北京",
+            "上海",
+            "深圳",
+            "厦门",
+            "青岛",
+            "南京"
+          ],
+          "source_id": "saif_about_20260927"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "SAIF 投资方法页面自述已投资 200 多家企业，主要位于中国或与中国具有较强联系；该页面页脚版权为 2020 年且未说明统计口径日期，不等同于基金回报率。",
+          "source_id": "saif_approach_20260927"
+        },
         {
           "description": "融资来源记录：数巅智能 · 多轮融资 · 2026-09-21 · pre-A轮联合领投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9ebda1057c2926b3"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "赛富中国官网",
+          "value": "SAIF Partners China",
+          "url": "https://www.saifpartners.com.cn/",
+          "source_id": "saif_about_20260927"
+        },
+        {
+          "kind": "contact_form",
+          "label": "官网咨询表单",
+          "value": "SAIF Partners 联系页面",
+          "url": "https://www.sbaif.com/contact-beijing.html",
+          "source_id": "saif_contact_20260927"
+        },
+        {
+          "kind": "email",
+          "label": "官网团队联系人邮箱",
+          "value": "info@sbaif.com",
+          "url": "https://www.sbaif.com/people.html",
+          "source_id": "saif_people_20260927"
+        },
+        {
+          "kind": "phone",
+          "label": "北京办公室电话",
+          "value": "+86 10 6563 0202",
+          "url": "https://www.sbaif.com/contact-beijing.html",
+          "source_id": "saif_contact_20260927"
+        },
+        {
+          "kind": "address",
+          "label": "官网联系页面所列北京办公室地址（页面页脚版权为2020，使用前建议复核）",
+          "value": "Suite 1001, 10/F, Tower D, Central International Trade Center, 6A Jianguomenwai Avenue, Chaoyang District, Beijing, China",
+          "url": "https://www.sbaif.com/contact-beijing.html",
+          "source_id": "saif_contact_20260927"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "saif_about_20260927",
+          "source_url": "https://www.sbaif.com/about-saif.html",
+          "source_title": "About SAIF Partners | SAIF Partners China",
+          "source_content_hash": "8ece5383e30bbd306970b9c95cefd5e7715076c046d099715ee9357d1cd06322",
+          "quote": "growth sectors, in particular internet+ & TMT, healthcare & new materials and clean technologies. SAIF focuses its efforts primarily on the greater China region.",
+          "quote_hash": "be042bf354b020823059d55e6afe645c97273dce8be4370847b58577193420cc"
+        },
+        {
+          "source_id": "saif_approach_20260927",
+          "source_url": "https://www.sbaif.com/investment-approach.html",
+          "source_title": "Investment Approach | SAIF Partners China",
+          "source_content_hash": "87f4cc92978a1caec9adbe6661e52ae1248c519978e8ecafdc53bca556655b43",
+          "quote": "promising early-stage companies that demonstrate an exceptional competitive advantage ... Having invested in over 200 companies",
+          "quote_hash": "be149c402b1938b59c470b4aafd47637d0fc5ed89c89475b992467868b7e04e9"
+        },
+        {
+          "source_id": "saif_contact_20260927",
+          "source_url": "https://www.sbaif.com/contact-beijing.html",
+          "source_title": "Contact | SAIF Partners China",
+          "source_content_hash": "d834880ffa3e02655e3cbbd7547bf66a9aab187a0f53704c586c8c100a759d47",
+          "quote": "Suite 1001, 10/F, Tower D, Central International Trade Center, 6A Jianguomenwai Avenue, Chao Yang District, Beijing 10002. Tel: 86.10.6563.0202.",
+          "quote_hash": "9af776d31d35c3641a6c470609f81c49616bc70e30055da2e88b91271ec4cb3e"
+        },
+        {
+          "source_id": "saif_people_20260927",
+          "source_url": "https://www.sbaif.com/people.html",
+          "source_title": "People | SAIF Partners China",
+          "source_content_hash": "5842620c99b4e9b1cd9beada0ec286badec6682ce428f0d950d82f89cf938186",
+          "quote": "contact me (info@sbaif.com)",
+          "quote_hash": "bc1cde06cc383806449d1fb73aa505d5fd1d8930f05ad3ea215112b4dfae21a7"
+        },
         {
           "source_id": "FISRC-9ebda1057c2926b3",
           "source_url": "https://industry.caijing.com.cn/20260707/5169223.shtml",
@@ -153,7 +270,8 @@
           "quote_hash": "fcd45a3c282bf9b19a1d8d9e69340a6f4c6018575e8aa1d26a10e45b7159d87b"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "coverage_note": "本档案引用赛富/SAIF Partners 的机构品牌资料，不将集团介绍自动等同于具体法定基金或管理人。单笔融资中的投资主体仍以对应融资来源为准；官网部分英文页面保留较早统计口径。"
     }
   }
 }
