@@ -189,13 +189,40 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "IVP 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "IVP（Institutional Venture Partners）是一家支持快速成长科技企业的风险投资机构。IVP官网介绍其在企业关键成长阶段投资，计划每年支持约10家公司，并以投资团队为创业者提供增长支持；官网组合页面列出多个科技行业和企业案例。机构官网提供美国及英国办公室地址、电话及媒体联络邮箱。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "风险投资机构",
+          "source_id": "ivp_approach"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资策略",
+          "value": "聚焦企业关键成长阶段，每年约支持10家公司（官网自述）。",
+          "source_id": "ivp_approach"
+        },
+        {
+          "field": "sectors",
+          "label": "官网组合行业筛选",
+          "value": [
+            "人工智能",
+            "消费",
+            "医疗",
+            "金融科技与加密资产",
+            "基础设施",
+            "应用软件"
+          ],
+          "source_id": "ivp_portfolio"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官网组合数据库按AI、消费、医疗、金融科技与加密资产、基础设施及应用软件分类展示公司；未将组合清单视为基金回报或完整投资记录。",
+          "source_id": "ivp_portfolio"
+        },
         {
           "description": "融资来源记录：Wonderful · C轮 · 2026-09-02 · 本轮参投 · $550 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3bc5a4e973b035eb"
@@ -205,8 +232,76 @@
           "source_id": "FISRC-c29f00f067579660"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "IVP",
+          "url": "https://www.ivp.com/",
+          "source_id": "ivp_approach"
+        },
+        {
+          "kind": "phone",
+          "label": "旧金山办公室",
+          "value": "415.432.4660",
+          "source_id": "ivp_contact"
+        },
+        {
+          "kind": "address",
+          "label": "旧金山办公室",
+          "value": "747 Front Street, Ste 100, San Francisco, CA 94111",
+          "source_id": "ivp_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "硅谷办公室",
+          "value": "650.854.0132",
+          "source_id": "ivp_contact"
+        },
+        {
+          "kind": "address",
+          "label": "硅谷办公室",
+          "value": "3000 Sand Hill Road, Bldg 2, Ste 250, Menlo Park, CA 94025",
+          "source_id": "ivp_contact"
+        },
+        {
+          "kind": "address",
+          "label": "伦敦办公室",
+          "value": "37-41 Mortimer Street, 1st Floor, S1, Fitzrovia, London, England W1T 3JH",
+          "source_id": "ivp_contact"
+        },
+        {
+          "kind": "email",
+          "label": "媒体联系邮箱",
+          "value": "pr@ivp.com",
+          "source_id": "ivp_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "ivp_approach",
+          "source_url": "https://www.ivp.com/team/approach/",
+          "source_title": "Our Approach - IVP",
+          "source_content_hash": "d19bfa44e85475e90f09370aa5fc399cb0af94cd5ee2a45971633e21741e8f87",
+          "quote": "IVP官网称其在企业关键成长阶段投资，每年约支持10家公司，并由团队提供主动增长支持。",
+          "quote_hash": "b34637e23ba13afa33f372770c1b250d0be0812bd7fb6aed5f3c11d6cb07aa1b"
+        },
+        {
+          "source_id": "ivp_portfolio",
+          "source_url": "https://www.ivp.com/portfolio/",
+          "source_title": "Portfolio - IVP",
+          "source_content_hash": "94fd0bf6fd43ed906c397e404591ec12bde7bfb8396316b84f2cf946a0d1e365",
+          "quote": "IVP官网组合页面按AI、消费、医疗、金融科技、基础设施等行业分类展示组合企业。",
+          "quote_hash": "98e5a5f3fd44ca56a69b11931f7d84d40b47bae3c3124bd82a4ab368b862f441"
+        },
+        {
+          "source_id": "ivp_contact",
+          "source_url": "https://www.ivp.com/contact/",
+          "source_title": "Contact - IVP",
+          "source_content_hash": "3cf17088df8473dac881575475094539705d7afdd386e6980adea4e29711ab85",
+          "quote": "IVP官网公布旧金山、硅谷及伦敦办公室地址，旧金山和硅谷电话及媒体邮箱。",
+          "quote_hash": "45c6d385cafc2c7c1cd89245ec618c98351dfe56932b158584276b61a1209828"
+        },
         {
           "source_id": "FISRC-3bc5a4e973b035eb",
           "source_url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
@@ -224,7 +319,10 @@
           "quote_hash": "4b692c3189d4f946e9961e92b0f637a386a65a07795ecd5b1e7edb1c27ae94d8"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "投资策略、行业与联系方式来自IVP官网；“每年约10家”是机构公开描述，不视为完整基金年度投资统计。",
+      "last_verified_at": "2026-09-26"
     }
   }
 }

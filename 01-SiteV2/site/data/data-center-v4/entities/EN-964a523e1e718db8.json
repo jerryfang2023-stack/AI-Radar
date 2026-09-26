@@ -118,41 +118,52 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "Dr. Dvir Ginzburg 的来源线索将其与Encore AI（创始人兼CEO）关联。来源日期：2026-07-30；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "coverage_status": "researched",
+      "summary": "Dr. Dvir Ginzburg 是 Encore AI 创始人兼 CEO。Team8 的人物介绍称他于 2022 年创立该企业 AI 公司，拥有几何深度学习博士学位，曾在 Microsoft 从事推荐系统研究；专利及技术关系按 Team8 公开介绍归属。",
+      "current_roles": [
+        {
+          "organization": "Encore AI",
+          "title": "创始人兼 CEO",
+          "source_id": "team8_dvir"
+        }
+      ],
       "career": [
         {
           "organization": "Encore AI",
-          "title": "创始人兼CEO",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将Dr. Dvir Ginzburg与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-6734ffb9c928450a"
+          "title": "创始人兼 CEO",
+          "period": "Team8 页面称公司创立于2022年；在任起止时间未披露",
+          "description": "创立企业 AI 公司，Team8 称其服务覆盖美国、以色列、欧盟和亚太地区。",
+          "source_id": "team8_dvir"
+        },
+        {
+          "organization": "Microsoft",
+          "title": "推荐系统研究员",
+          "period": "曾任；具体时间未披露",
+          "description": "Team8 页面称其曾从事推荐系统研究。",
+          "source_id": "team8_dvir"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
+      "education": [
+        {
+          "institution": "未注明院校",
+          "qualification": "几何深度学习博士",
+          "source_id": "team8_dvir"
+        }
+      ],
+      "experience_summary": "研究背景为几何深度学习与推荐系统。Team8 将 Encore 的技术基础和两项已授权专利与其研究方向关联；未据此补充专利号或专利权属细节。",
       "track_record": [],
       "sources": [
         {
-          "source_id": "FISRC-3740369ba57f1602",
-          "source_url": "https://techcrunch.com/2026/07/29/encore-ai-raises-30m-to-build-ai-agents-that-learn-from-customer-calls",
-          "source_title": "融资披露来源",
-          "source_content_hash": "2f8f1cbb0eaf55a8",
-          "quote": "Founded in 2022 as Insait IO by CEO Dvir Ginzburg",
-          "quote_hash": "98417ecbb87220f80ed3e88106c6ba13826221f698de6c951fcd62273c9a2501"
-        },
-        {
-          "source_id": "FISRC-6734ffb9c928450a",
-          "source_url": "https://www.prnewswire.com/news-releases/encore-ai-raises-30m-to-deploy-the-only-enterprise-ai-platform-built-to-generate-revenue-from-customer-interactions-302837694.html",
-          "source_title": "融资披露来源",
-          "source_content_hash": "d8522e9c55a7b156",
-          "quote": "said Dr. Dvir Ginzburg, Encore AI Founder and CEO.",
-          "quote_hash": "1fa1b1d88860f14502d63990d9ed88398cd068f120ed4015d1c75c2f14507e7b"
+          "source_id": "team8_dvir",
+          "source_url": "https://team8.vc/team/dvir-ginzburg/",
+          "source_title": "Dvir Ginzburg — Team8",
+          "source_content_hash": "52ffb0693aa0377f41dfffeba888c967a1f08e3f0bb965bacbb51d413387abd8",
+          "quote": "Dr. Dvir Ginzburg is founder and CEO of Encore AI, an enterprise AI company he founded in 2022. He holds a Ph.D. in Geometric Deep Learning and spent years as a recommendation-systems researcher at Microsoft, the foundation behind Encore’s technology and its two granted patents.",
+          "quote_hash": "58b87127dd55d07faf64c0b9440a6eff8e0a050501d76019b1c63fac187ed5f6"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
     }
   },
   "relatedEntities": [],

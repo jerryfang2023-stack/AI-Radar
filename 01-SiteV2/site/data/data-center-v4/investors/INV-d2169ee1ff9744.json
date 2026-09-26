@@ -192,13 +192,53 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Fin Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Fin Capital 是专注金融服务行业B2B科技公司的投资平台，官网称投资覆盖Pre-Seed至Pre-IPO阶段，主要关注美国市场，也选择性考虑其他地区。机构提供融资、商业拓展、并购和人才等投后支持；组合资料展示多家金融科技及企业软件公司。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "金融服务行业B2B科技",
+          "source_id": "fin_about"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Pre-Seed至Pre-IPO",
+          "source_id": "fin_about"
+        },
+        {
+          "field": "geography",
+          "label": "主要投资地区",
+          "value": "以美国为主，并选择性考虑其他全球市场",
+          "source_id": "fin_about"
+        },
+        {
+          "field": "capital_type",
+          "label": "投资类型",
+          "value": [
+            "直接投资",
+            "二级市场投资"
+          ],
+          "source_id": "fin_about"
+        },
+        {
+          "field": "portfolio_support",
+          "label": "投后支持",
+          "value": [
+            "商业拓展与市场进入",
+            "公司发展与并购",
+            "董事会指导",
+            "人才招聘"
+          ],
+          "source_id": "fin_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Fin Capital官网公开组合页列示金融科技与企业软件投资项目；组合列表为机构公开案例，不代表完整投资组合或基金回报。",
+          "source_id": "fin_portfolio"
+        },
         {
           "description": "融资来源记录：Harmony · 种子轮 · 2026-07-28 · 本轮参投 · $34 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fe66d902ece1db68"
@@ -208,8 +248,46 @@
           "source_id": "FISRC-d51cd72272f38425"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站、组合与团队",
+          "value": "Fin Capital",
+          "url": "https://fin.capital/about",
+          "source_id": "fin_about"
+        },
+        {
+          "kind": "address",
+          "label": "旧金山办公室",
+          "value": "One Sansome Street, Suite 3950, San Francisco, CA 94104",
+          "url": "https://fin.capital/about",
+          "source_id": "fin_about"
+        },
+        {
+          "kind": "address",
+          "label": "纽约办公室",
+          "value": "114 Crosby Street, Floor 12, New York, NY 10012",
+          "url": "https://fin.capital/about",
+          "source_id": "fin_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "fin_about",
+          "source_url": "https://fin.capital/about",
+          "source_title": "About | Fin Capital",
+          "source_content_hash": "ef277c6cc526eb3e8ea2823591354ba32cc88f850baa025af6be97fb0808f913",
+          "quote": "We back B2B Tech for the financial services industry full lifecycle pre-seed to pre-IPO",
+          "quote_hash": "1baffe01cba0fce667ceb6470fbcda0c473b87ebb6c62c53e138de2d47b647d4"
+        },
+        {
+          "source_id": "fin_portfolio",
+          "source_url": "https://fin.capital/portfolio",
+          "source_title": "Portfolio | Fin Capital",
+          "source_content_hash": "658fd434d9ad58c74e6a2cf820e01f04b9c2605b04d2e16c90803ac16a321f3e",
+          "quote": "Fin Capital’s portfolio page lists companies across fintech and enterprise software, including early and growth-stage businesses.",
+          "quote_hash": "0f3b3b376b23f74c0d534c247b5fdef2ab1f24a31e2794978910beead709e6d9"
+        },
         {
           "source_id": "FISRC-fe66d902ece1db68",
           "source_url": "https://www.businessinsider.com/harmony-pitch-deck-ai-startup-34-million-seed-founders-cisco-2026-7",
@@ -227,7 +305,10 @@
           "quote_hash": "d788f57626cfebe34363961abfadac01e11a37ed90ebbddb3589be781679f5e6"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

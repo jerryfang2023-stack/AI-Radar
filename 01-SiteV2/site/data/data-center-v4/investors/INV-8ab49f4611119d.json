@@ -191,12 +191,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "137 Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "137 Ventures 是一家美国多阶段投资机构，官网称其与具有长期增长潜力的科技公司及创始人合作，并提供投资组合、团队与 LP 投资者关系入口。官网说明 137 Ventures Management, LLC 为 SEC 注册投资顾问；官网同时提醒，注册不代表特定技能水平或业绩保证。",
+      "facts": [
+        {
+          "field": "investment_stages",
+          "label": "投资阶段",
+          "value": "多阶段投资",
+          "source_id": "137_home"
+        },
+        {
+          "field": "investment_focus",
+          "label": "机构自述投资方向",
+          "value": "具有长期成长潜力的科技公司及其创始人",
+          "source_id": "137_home"
+        },
+        {
+          "field": "regulatory_status",
+          "label": "监管披露",
+          "value": "137 Ventures Management, LLC 为 SEC 注册投资顾问；注册本身不代表特定技能或训练水平",
+          "source_id": "137_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -208,8 +223,46 @@
           "source_id": "FISRC-a7bbb48af7503bf0"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "137 Ventures",
+          "url": "https://www.137ventures.com/",
+          "source_id": "137_home"
+        },
+        {
+          "kind": "email",
+          "label": "通用联系邮箱",
+          "value": "info@137ventures.com",
+          "url": "https://www.137ventures.com/",
+          "source_id": "137_home"
+        },
+        {
+          "kind": "address",
+          "label": "合规联系邮寄地址",
+          "value": "137 Ventures Management LLC, 233 Post Street, 6th Floor, San Francisco, CA 94108",
+          "url": "https://www.137ventures.com/privacy",
+          "source_id": "137_privacy"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "137_home",
+          "source_url": "https://www.137ventures.com/",
+          "source_title": "Home | 137 Ventures",
+          "source_content_hash": "48167628592d34d1f6471fe70eb5bd82f98da8d935594ed20e03f60496c48433",
+          "quote": "We are a multi-stage investment firm that partners with generational technology companies and their founders. Contact: info@137Ventures.com. 137 Ventures Management, LLC is an SEC registered investment advisor. SEC registration does not indicate a certain level of skill or training.",
+          "quote_hash": "173b543e4446e99724813e2b1a570099fa1032a5f69e0eb9a9e5d8c3981ce439"
+        },
+        {
+          "source_id": "137_privacy",
+          "source_url": "https://www.137ventures.com/privacy",
+          "source_title": "Privacy | 137 Ventures",
+          "source_content_hash": "a291aca3ec92a29e6d6d2092d05e767cc856533dcbe6e709c09ea2f9a024ac2a",
+          "quote": "137 Ventures Management LLC, 233 Post Street, 6th Floor, San Francisco, CA 94108.",
+          "quote_hash": "9b729deea4fbf37a286c2b96b11eaf35f2b1cab9657f019256f1c11419ce92ae"
+        },
         {
           "source_id": "FISRC-0f7352be7c17ce49",
           "source_url": "https://news.crunchbase.com/venture/biggest-funding-rounds-june-5-2026/",
@@ -227,7 +280,11 @@
           "quote_hash": "e9c743427fb33e7babf1a1a5320728a23990e3e296f42978145c06f2b151a224"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

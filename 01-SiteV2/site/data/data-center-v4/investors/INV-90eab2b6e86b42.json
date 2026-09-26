@@ -186,12 +186,19 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "元石基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "极佳视界融资报道使用“元石基金”名称，但未给出管理人或基金全称。公开文件中另有一支元石（常州）创业投资基金，聚焦新一代人工智能及机器人等行业；目前没有公开证据证明它就是融资报道中的投资方，因此仅列作待核验候选，不作主体合并。",
+      "summary": "“元石基金”是极佳视界融资披露中的投资方标签，尚无法唯一映射到法律主体。上市公司披露存在一支名称近似、投向包含人工智能及机器人的元石（常州）创业投资基金，但这并不能证明二者为同一基金。",
+      "facts": [
+        {
+          "field": "unverified_identity_candidate",
+          "label": "名称近似的待核验主体",
+          "value": "润和软件公告设立的元石（常州）创业投资基金规模3亿元，投向新一代人工智能相关垂直产业，包括机器人和工业软件；目前没有来源将其与极佳视界融资报道中的“元石基金”直接关联。",
+          "source_id": "yuanshi_szse_candidate"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -202,6 +209,14 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "yuanshi_szse_candidate",
+          "source_url": "https://disc.static.szse.cn/disc/disk03/finalpage/2024-10-24/19c1049e-32bc-496a-bc2d-bfc3d17db8fb.PDF",
+          "source_title": "润和软件公告｜与专业机构共同设立元石（常州）创业投资基金",
+          "source_content_hash": "3c17ff0073d783eaf8fe106cfebd4df174837adcaaa567f1c905e4c6d2b0d67f",
+          "quote": "元石创投基金规模 30,000 万元，主要投资于新一代人工智能，即人工智能技术在智能制造、新能源、新一代通信技术、轨道交通、机器人以及工业软件等垂直领域的未上市企业。",
+          "quote_hash": "eec9476c92c7205a629f437b775d6eaeacb0501562c721d89fd2cba9dbb662c0"
+        },
+        {
           "source_id": "FISRC-ce47b663ca256878",
           "source_url": "https://news.pedaily.cn/202606/565201.shtml",
           "source_title": "首发| 极佳视界三个月融资35亿，投资人开抢物理世界OpenAI",
@@ -210,7 +225,7 @@
           "quote_hash": "d65491949cddef8dbbeb83255e6b1186dbf2888d42525d5dc2353472077af0ed"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

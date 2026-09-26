@@ -191,12 +191,33 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Susquehanna Venture Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Susquehanna Venture Capital 是与 Susquehanna International Group（SIG）相关的风险投资业务。SIG 官网将 Venture Capital 列入其全球私募投资业务，SVC 官网称其资本来自 SIG，并介绍自有资本、长期投资视角和跨成长阶段支持。公开融资记录中的机构名称不披露具体签约基金或法律主体。",
+      "facts": [
+        {
+          "field": "organization_relationship",
+          "label": "与 SIG 的公开关系",
+          "value": "SIG 官网将 Venture Capital 列在 Global Private Equity 业务项下；SVC 官网称资本来自 Susquehanna International Group。此关系确认投资平台归属，不据此推定具体融资的签约基金或法律主体。",
+          "source_id": "svc_sig_capital"
+        },
+        {
+          "field": "investment_approach",
+          "label": "资本与投资期限（机构自述）",
+          "value": "使用自有资本，强调长期投资视角。",
+          "source_id": "svc_own_capital"
+        },
+        {
+          "field": "investment_lifecycle",
+          "label": "投资阶段（机构自述）",
+          "value": "官网称可通过 Series A 至 IPO 阶段支持企业成长。",
+          "source_id": "svc_growth_stages"
+        },
+        {
+          "field": "geography",
+          "label": "官网展示的区域组合",
+          "value": "SIG Venture Capital 公司页展示东南亚与印度组合。",
+          "source_id": "svc_asia_portfolio"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -208,8 +229,59 @@
           "source_id": "FISRC-d87b08783c0a062f"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "coverage_note": "已核实 SIG 与其风险投资平台的公开关系及机构自述的投资方式；Runable、Zenskar 等融资活动按公开报道记录，未推定实际签约主体。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "SIG Venture Capital 官方网站",
+          "value": "SIG Venture Capital",
+          "url": "https://sig-asiavc.com/",
+          "source_id": "svc_sig_capital"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "svc_sig_capital",
+          "source_url": "https://sig-asiavc.com/about/",
+          "source_title": "About Us | SIG Venture Capital (SVC)",
+          "source_content_hash": "548475d5aa30387e83d86eaa1b4f06389f97350f5b7131d686941fe658267f89",
+          "quote": "Our capital comes from Susquehanna International Group, LLP (SIG)",
+          "quote_hash": "198befb4be347b0edacf6ef91fcedd2e58b1b8fdbd60cf4cce4b44a6f76d28f9"
+        },
+        {
+          "source_id": "svc_own_capital",
+          "source_url": "https://sig-asiavc.com/about/",
+          "source_title": "About Us | SIG Venture Capital (SVC)",
+          "source_content_hash": "548475d5aa30387e83d86eaa1b4f06389f97350f5b7131d686941fe658267f89",
+          "quote": "SIG invests our own capital which allows us to have a truly long term perspective.",
+          "quote_hash": "de997c30e51d542db3768dcaffa5be3c42dccb2d1c4f190199217703c659f7a3"
+        },
+        {
+          "source_id": "svc_growth_stages",
+          "source_url": "https://sig-asiavc.com/about/",
+          "source_title": "About Us | SIG Venture Capital (SVC)",
+          "source_content_hash": "548475d5aa30387e83d86eaa1b4f06389f97350f5b7131d686941fe658267f89",
+          "quote": "provide capital from Series A to IPO",
+          "quote_hash": "aa750bf17f2ab5df14641060455462d2fa5aceec6e7a35bc0faa39b48e1c1044"
+        },
+        {
+          "source_id": "sig_group_business",
+          "source_url": "https://sig.com/what-we-do/",
+          "source_title": "What We Do | Susquehanna",
+          "source_content_hash": "6afed8cab4c028b147ddc084450ddf2d6c96e8fdabccd1590bd5ab262ccd2648",
+          "quote": "Susquehanna's family of funds have an entrepreneur-centric approach to investing",
+          "quote_hash": "c419af9a5916fe3842713659052435e741af2f15ac21d84e1946932f91a3e9d8"
+        },
+        {
+          "source_id": "svc_asia_portfolio",
+          "source_url": "https://sig-asiavc.com/company/",
+          "source_title": "Companies | SIG Venture Capital (SVC)",
+          "source_content_hash": "90802fa49ecfee23e9fae675a075f0e1f1111d13bf18f022e66e351f814ada38",
+          "quote": "Our Southeast Asia and India Portfolio",
+          "quote_hash": "6a7d7665d4f6ed9772c149d7e20fca48c1e07d61be6c0f7e389e13ed4ee6538c"
+        },
         {
           "source_id": "FISRC-2d6054cc51934d57",
           "source_url": "https://techcrunch.com/2026/08/26/runable-hits-21m-to-bet-ai-agents-can-go-from-building-businesses-to-growing-them",
@@ -227,7 +299,8 @@
           "quote_hash": "52e32d0a079f35a8c6e1e93148a1c64d56fc49e5d00474343a2d58f96bb5b7c6"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified"
     }
   }
 }

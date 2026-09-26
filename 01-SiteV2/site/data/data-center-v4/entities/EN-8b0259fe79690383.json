@@ -111,33 +111,79 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "吴毅红 的来源线索将其与中科煜坤（创始人）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "吴毅红是中国科学院自动化研究所研究员、博士生导师，也是中科煜坤创始人。其公开学术主页记载，她2001年获中国科学院系统科学研究所博士学位，长期在自动化所从事研究，方向包括三维计算机视觉、多模态空间智能与机器人行为；截至公开主页所列，她已发表多篇CVPR、AAAI、ICCV、TRO等论文。公司创业身份由融资报道披露。",
+      "current_roles": [
+        {
+          "title": "研究员、博士生导师",
+          "organization": "中国科学院自动化研究所 / 多模态人工智能系统全国重点实验室",
+          "source_id": "wuyihong_ucas"
+        },
+        {
+          "title": "创始人",
+          "organization": "中科煜坤",
+          "source_id": "wuyihong_company"
+        }
+      ],
       "career": [
+        {
+          "organization": "中国科学院自动化研究所",
+          "title": "副研究员、研究员、硕士及博士生导师",
+          "period": "2001年6月至今（学术主页记录）",
+          "description": "长期开展三维计算机视觉、空间智能及机器人智能行为研究。",
+          "source_id": "wuyihong_ucas"
+        },
         {
           "organization": "中科煜坤",
           "title": "创始人",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将吴毅红与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-88fa6d3c9d641f6e"
+          "period": "2026年融资披露时在任",
+          "description": "公开融资报道介绍其创立了中科院自动化所孵化的时空智能企业。",
+          "source_id": "wuyihong_company"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "中国科学院系统科学研究所",
+          "qualification": "博士，1998年9月至2001年6月",
+          "source_id": "wuyihong_ucas"
+        }
+      ],
+      "experience_summary": "学术履历覆盖计算机视觉、三维空间智能、多模态理解及机器人行为；曾/现主持研究课题并在CVPR、AAAI、ICCV、TRO等发表研究成果。兼具研究所科研与科技创业经历。",
+      "track_record": [
+        {
+          "description": "公开学术主页列出其团队2025—2026年在CVPR、AAAI、ICCV、IEEE Transactions on Robotics等发表的成果；论文为团队研究，不归因于个人单独完成。",
+          "source_id": "wuyihong_ucas"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-88fa6d3c9d641f6e",
-          "source_url": "https://news.pedaily.cn/202606/565681.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "7c7cac656140a0bd",
-          "quote": "中科煜坤孵化自中国科学院自动化研究所，由中国科学院自动化研究所研究员、多模态人工智能系统全国重点实验室机器人视觉团队负责人吴毅红创立",
-          "quote_hash": "58ed3a87061a7db1db7c2c8010b5858a5d0bc7d8d1f55a53a6ccd2e44a78fb43"
+          "source_id": "wuyihong_ucas",
+          "source_url": "https://people.ucas.ac.cn/~wuyihong",
+          "source_title": "吴毅红个人学术主页 - 中国科学院大学",
+          "source_content_hash": "5601ee9837bf1ebf4158e20557c334593e04a9faa7789f0e29447a24bfc6d247",
+          "quote": "吴毅红研究员，博士生导师；2001年获中国科学院系统科学研究所博士学位，研究方向包括三维计算机视觉与空间智能。",
+          "quote_hash": "0a2352975e44f710ea700e876b4af5dae1aa3e1b245698be16998b8d5b82a691"
+        },
+        {
+          "source_id": "wuyihong_institute",
+          "source_url": "https://ia.cas.cn/rcdw/yjy/202404/t20240422_7129939.html",
+          "source_title": "吴毅红 - 中国科学院自动化研究所",
+          "source_content_hash": "790266135030ab1196829957ccfc7fa4d31641173372f74fa4e005f32f62d696",
+          "quote": "自动化所列吴毅红为研究员，隶属多模态人工智能系统全国重点实验室，并公布工作邮箱和通信地址。",
+          "quote_hash": "6f3dad1e52b02ae02b7d024aeaeeeee9e690e381c53abd407a00a76b503719a8"
+        },
+        {
+          "source_id": "wuyihong_company",
+          "source_url": "https://www.sohu.com/a/1043513733_121143780",
+          "source_title": "中科煜坤完成种子轮融资 - 教科精选转载",
+          "source_content_hash": "1ec95ef8065fd5d6dfce88d18430d5750e5e313db139df104a910adad8305849",
+          "quote": "报道介绍吴毅红研究员创立中科院自动化所孵化的中科煜坤，并概述其机器人视觉研究背景。",
+          "quote_hash": "3a53448f710daaa4c244fc0f189027fd6b676ee034138e3a6929bc6fddbf57d0"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "研究所及UCAS主页用于学术履历、成果和联系方式；创始人身份来自公司融资报道。个人学术主页由本人维护，研究成果按团队口径表述。",
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

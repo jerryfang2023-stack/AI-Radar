@@ -191,11 +191,45 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "壁仞科技 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "壁仞科技是2019年成立、总部位于中国的通用GPU芯片与智能计算解决方案企业，2026年1月在香港上市（06082.HK）。公司官网披露，2026年上半年营收12.36亿元、同比增长近2000%，截至2026年6月全球专利申请1917项、授权1006项；这些经营与专利数据是公司自报。融资数据库还记录壁仞科技以企业投资方身份参与若干人工智能芯片项目，未发现独立VC基金或对外投资申请页面。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2019年",
+          "source_id": "biren_about"
+        },
+        {
+          "field": "business",
+          "label": "主营业务",
+          "value": "通用GPU芯片、智能计算解决方案及相关研发服务",
+          "source_id": "biren_about"
+        },
+        {
+          "field": "listing",
+          "label": "上市信息",
+          "value": "2026年1月2日在香港联交所上市，代码06082.HK",
+          "source_id": "biren_about"
+        },
+        {
+          "field": "reported_performance",
+          "label": "经营表现（公司自报）",
+          "value": "2026年上半年营收12.36亿元，同比增加近2000%",
+          "source_id": "biren_about"
+        },
+        {
+          "field": "patents",
+          "label": "专利（公司自报，截至2026年6月末）",
+          "value": "全球专利申请1917项、全球授权1006项",
+          "source_id": "biren_about"
+        },
+        {
+          "field": "investment_structure",
+          "label": "投资职能说明",
+          "value": "官网介绍主营芯片与智能计算业务，未披露独立对外VC品牌；数据库交易记录按企业战略投资案例展示。",
+          "source_id": "biren_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -207,8 +241,36 @@
           "source_id": "FISRC-760e793448781182"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "壁仞科技",
+          "url": "https://www.birentech.com/",
+          "source_id": "biren_about"
+        },
+        {
+          "kind": "email",
+          "label": "商务合作（非投资申请渠道）",
+          "value": "business@birentech.com",
+          "source_id": "biren_about"
+        },
+        {
+          "kind": "phone",
+          "label": "公开咨询电话",
+          "value": "021-68773133",
+          "source_id": "biren_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "biren_about",
+          "source_url": "https://www.birentech.com/about",
+          "source_title": "关于我们 - 壁仞科技官网",
+          "source_content_hash": "7b1d7bb5ef4ff5852bbd3cf22a2b156770a7c79a85261519530a75e6c4a5fbfd",
+          "quote": "壁仞科技称公司2019年成立，2026年1月2日在香港联交所上市；官网列出2026年上半年营收及截至2026年6月末专利数据，并公开商务合作邮箱和咨询电话。",
+          "quote_hash": "d00b426746f662039efba0b33fa02cd8e16f9bf545c20686d93c8dc26f2129d5"
+        },
         {
           "source_id": "FISRC-2a3446f702110142",
           "source_url": "https://news.pedaily.cn/202608/568060.shtml",
@@ -226,7 +288,10 @@
           "quote_hash": "ad4cdec7019f2399d9eeb7f30e95e9276f95aea304853b693997f7d42cec5400"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "官网所列营收、专利与行业排名为公司自述，保留其口径和统计时点；商务邮箱未被描述为项目投递渠道。",
+      "last_verified_at": "2026-09-26"
     }
   }
 }

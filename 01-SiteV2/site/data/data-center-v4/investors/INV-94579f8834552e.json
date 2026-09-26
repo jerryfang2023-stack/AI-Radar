@@ -187,13 +187,45 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "赛富投资基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "赛富投资基金（SAIF Partners）是面向中国及亚洲市场的私募股权投资机构。其官网自述管理资产规模超过40亿美元、投资企业超过200家，覆盖成长期、早期及跨境机会；这些数字为机构自述，官网页面未标注统计日期，不能视为最新审计数据。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "私募股权与风险投资机构",
+          "source_id": "saif_about"
+        },
+        {
+          "field": "markets",
+          "label": "投资地域",
+          "value": "中国及亚洲市场，官网亦提及跨境投资",
+          "source_id": "saif_approach"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "管理资产规模（机构自述）",
+          "value": "超过40亿美元；官网页面未注明统计日期",
+          "source_id": "saif_about"
+        },
+        {
+          "field": "portfolio_scale",
+          "label": "投资企业数量（机构自述）",
+          "value": "超过200家；官网页面未注明统计日期",
+          "source_id": "saif_approach"
+        },
+        {
+          "field": "strategy",
+          "label": "投资策略",
+          "value": "投资成长期行业领先企业、优秀早期项目及跨境机会",
+          "source_id": "saif_approach"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资活动库记录赛富投资基金参与容芯致远融资；此为单笔融资报道，不代表完整投资组合。",
+          "source_id": "saif_rongxin_2026"
+        },
         {
           "description": "融资来源记录：天机 · 多轮融资 · 2026-05-25 · A轮投资方 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7ef228d0192ff7f5"
@@ -203,8 +235,54 @@
           "source_id": "FISRC-ceee1629da3e3cce"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "SAIF Partners",
+          "url": "https://www.sbaif.com/",
+          "source_id": "saif_home"
+        },
+        {
+          "kind": "email",
+          "label": "官网公开联系邮箱（未注明项目申请用途）",
+          "value": "info@sbaif.com",
+          "source_id": "saif_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "saif_about",
+          "source_url": "https://www.sbaif.com/about-saif.html",
+          "source_title": "About SAIF - 官方机构介绍",
+          "source_content_hash": "8ece5383e30bbd306970b9c95cefd5e7715076c046d099715ee9357d1cd06322",
+          "quote": "SAIF自述管理资产规模超过40亿美元。",
+          "quote_hash": "02b81eee6e594449a40e636e96840afe76070a91ce9c6e2ac64ecb9b9de1af26"
+        },
+        {
+          "source_id": "saif_approach",
+          "source_url": "https://www.sbaif.com/investment-approach.html",
+          "source_title": "Investment Approach - 官方投资策略",
+          "source_content_hash": "87f4cc92978a1caec9adbe6661e52ae1248c519978e8ecafdc53bca556655b43",
+          "quote": "官网称已投资超过200家公司，并关注成长期领先企业、优秀早期项目和跨境机会。",
+          "quote_hash": "2ffdf4b64149a267c0d0bee38d82eac72bc3bed34a725e6b08a5fe013c753785"
+        },
+        {
+          "source_id": "saif_home",
+          "source_url": "https://www.sbaif.com/",
+          "source_title": "SAIF Partners 官方网站",
+          "source_content_hash": "ff2515b7d7e4ac84cd85c32cb160d8ff920ff078502d2ec6e961a53115bb936d",
+          "quote": "官网列示机构联系方式 info@sbaif.com。",
+          "quote_hash": "8319f441517e0fef305f0467d23ac1445757892902e01b57e7fd6ea83c0724a6"
+        },
+        {
+          "source_id": "saif_rongxin_2026",
+          "source_url": "https://news.pedaily.cn/202605/563553.shtml",
+          "source_title": "容芯致远完成融资，赛富投资基金参与 - 投资界",
+          "source_content_hash": "8cd7c8b27deeb130b2e96059960f319260c41d18e02a0ae5a434cd855defc2a3",
+          "quote": "融资报道将赛富投资基金列为容芯致远本轮投资方。",
+          "quote_hash": "3a82f2c0e1d6c6eb0baeb2eeb99ba38c88026c73adb25de2990050a264557a6a"
+        },
         {
           "source_id": "FISRC-7ef228d0192ff7f5",
           "source_url": "https://pitchhub.36kr.com/project/1818784826380416",
@@ -222,7 +300,10 @@
           "quote_hash": "7f3b62693153e22b655d0cce2a3e9a8f433068ae8e69018f2adf9b7882084527"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-26",
+      "coverage_note": "机构规模及组合数量为官网自述，未标明统计时点；联系方式仅作为机构通用公开联系信息，不将其表述为项目申请入口。"
     }
   }
 }

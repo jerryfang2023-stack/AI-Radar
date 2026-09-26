@@ -111,33 +111,62 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "李士麒 的来源线索将其与比特无限（创始人）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "李士麒是比特无限创始人兼 CEO，拥有华盛顿大学学士学位与波士顿大学硕士学位。公开活动嘉宾简介称，他此前拥有约六年海外 AI 消费产品创业经验，曾在约六个月内将一款产品发展至 80 万月活和约 200 万美元 ARR；目前创办比特无限，开发面向工程制造的 AI 生成物理 3D 模型。",
+      "current_roles": [
+        {
+          "title": "创始人、CEO",
+          "organization": "比特无限（BitInf）",
+          "source_id": "li_shiqi_bio"
+        }
+      ],
       "career": [
         {
-          "organization": "比特无限",
-          "title": "创始人",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-30b12c73a020a729"
+          "organization": "海外 AI 消费产品创业项目（公司名称未披露）",
+          "title": "创始人/创业者",
+          "period": "约六年；公开简介未披露各公司名称与准确任期",
+          "description": "活动嘉宾简介称其曾在约六个月内将上一轮创业产品发展到 80 万月活与约 200 万美元 ARR；该数据为简介中的自述，未在来源注明具体公司名称。",
+          "source_id": "li_shiqi_bio"
+        },
+        {
+          "organization": "比特无限（BitInf）",
+          "title": "创始人、CEO",
+          "period": "2025 年起（公开报道）",
+          "description": "创立 AI 物理 3D 建模公司，推动由自然语言或图像生成具工程结构与物理语义的模型。",
+          "source_id": "li_shiqi_bio"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "华盛顿大学",
+          "qualification": "学士（学科未在活动简介中注明）",
+          "source_id": "li_shiqi_bio"
+        },
+        {
+          "institution": "波士顿大学",
+          "qualification": "硕士（学科未在活动简介中注明）",
+          "source_id": "li_shiqi_bio"
+        }
+      ],
+      "experience_summary": "结合海外 AI 消费产品创业经验与新一轮工业 AI 创业。活动简介中公布的用户与收入指标未注明产品名称或统计口径，应视为该来源所载的个人履历信息。",
+      "track_record": [
+        {
+          "description": "活动嘉宾简介披露其上一轮创业项目曾在约六个月内达成 80 万月活用户及约 200 万美元 ARR；公开来源未说明项目名称，未归属给比特无限。",
+          "source_id": "li_shiqi_bio"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-30b12c73a020a729",
-          "source_url": "https://www.cls.cn/detail/2478686",
-          "source_title": "融资披露来源",
-          "source_content_hash": "41ae3418cb565487",
-          "quote": "创始人李士麒拥有多年海外AI To C创业经验，曾打造两款百万月活AI工具，因捕捉到物理3D数据空白而创立公司。",
-          "quote_hash": "f1f4ac2cb41cda1b2a28885a7d05bdf002ae690da407afe865f59c25f5b6c62b"
+          "source_id": "li_shiqi_bio",
+          "source_url": "https://www.sohu.com/a/1075680519_122014422",
+          "source_title": "十五载·智投未来｜「兴证全球杯」模拟投资大赛9月18日启幕",
+          "source_content_hash": "64e9b9abebebab24af299343ece65066ee021dfee3843df1d4dc25a2a4fe6801",
+          "quote": "活动嘉宾简介称李士麒为比特无限创始人兼CEO，拥有华盛顿大学学士、波士顿大学硕士学历；此前约六年从事海外AI ToC创业，上一轮创业约六个月达到80万月活、200万美元ARR。",
+          "quote_hash": "17df563bdabac10f155057909dcce6b89cd1a4c8a10a7ba008948b54f2fce16a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
     }
   },
   "relatedEntities": [],

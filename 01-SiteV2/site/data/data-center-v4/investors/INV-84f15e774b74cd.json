@@ -204,10 +204,48 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Fidelity Investments 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "依据 Fidelity 官方公司介绍及 2025 年年报页面核实；资产管理规模与管理资产数据为集团口径，不代表本库任何具体基金业绩或独立 VC 部门。",
+      "summary": "Fidelity Investments 是一家 1946 年创立、总部位于波士顿的私人持有金融服务集团，服务个人、雇主、财富管理公司和机构客户。官网称其业务涵盖经纪、资产管理、退休福利、财富管理、托管清算及技术服务。融资情报库中的参投记录不单独证明由某一 Fidelity 子公司或风险投资基金完成。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "创立时间",
+          "value": "1946 年；官网称公司自创立以来保持私人持有。",
+          "source_id": "fidelity_about_2026"
+        },
+        {
+          "field": "headquarters",
+          "label": "总部",
+          "value": "美国马萨诸塞州波士顿。",
+          "source_id": "fidelity_about_2026"
+        },
+        {
+          "field": "business",
+          "label": "业务",
+          "value": [
+            "个人投资与经纪",
+            "退休计划",
+            "财富管理",
+            "机构服务",
+            "资产管理",
+            "托管与清算"
+          ],
+          "source_id": "fidelity_about_2026"
+        },
+        {
+          "field": "assets_under_administration_2025",
+          "label": "2025 年管理服务资产",
+          "value": "18.0 万亿美元（集团官网年报口径）",
+          "source_id": "fidelity_2025_annual_report"
+        },
+        {
+          "field": "managed_assets_2025",
+          "label": "2025 年管理资产",
+          "value": "7.1 万亿美元（集团官网年报口径）",
+          "source_id": "fidelity_2025_annual_report"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -219,7 +257,15 @@
           "source_id": "FISRC-1ab982a6ca2b36eb"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "公司官网",
+          "value": "Fidelity Investments",
+          "url": "https://about.fidelity.com/",
+          "source_id": "fidelity_about_2026"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-0349532f469a6b45",
@@ -236,9 +282,25 @@
           "source_content_hash": "1e910f33d65209e1",
           "quote": "Alongside Spark Capital, existing investors Kleiner Perkins, Mayfield and Fidelity Investments, all participated in the round",
           "quote_hash": "b2b8ad2c51cf0b632e237f394bf08ec6f30c2e818440badaa7f39a3bd09129d1"
+        },
+        {
+          "source_id": "fidelity_about_2026",
+          "source_url": "https://about.fidelity.com/",
+          "source_title": "We are Fidelity | About Fidelity",
+          "source_content_hash": "9830837343592d46dafa7fe895d0bd63742e71c9f0604344610f412a0c8ca634",
+          "quote": "Privately held since our founding in 1946, our goal has always been to bring unparalleled value to the people and companies we serve.",
+          "quote_hash": "380e7daeec247caa389e01dd526b3655e5a744cd5c996c43db6a4d1c15c888a0"
+        },
+        {
+          "source_id": "fidelity_2025_annual_report",
+          "source_url": "https://about.fidelity.com/data-and-insights/2025-annual-report",
+          "source_title": "2025 Annual Report | About Fidelity",
+          "source_content_hash": "6effc0fb0ee7870ea5a70591552fd2ba70ecde8b8ad9dd8c0a22c6343c02952c",
+          "quote": "In 2025, Fidelity reported $18.0 trillion in assets under administration and $7.1 trillion in managed assets.",
+          "quote_hash": "576951dcf7f0748bf3ef48b20c788b3bebd053af02aa4b86eba46af09037de3d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

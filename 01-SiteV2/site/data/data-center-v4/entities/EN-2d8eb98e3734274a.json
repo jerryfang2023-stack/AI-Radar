@@ -111,33 +111,71 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "兰宏志 的来源线索将其与睿心医疗（联合创始人&首席科学家）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "兰宏志是睿心医疗创始团队成员、首席科学家。公司官网将其列为 CEO 与创始人；科创板日报访谈称其为睿心创始人之一、首席科学家，并记载清华本硕、杜兰大学生物医学工程博士以及曾在斯坦福大学心血管仿真实验室从事研究。公司官网职务与媒体介绍存在侧重点差异，档案保留来源原称谓，不推断其当前组织架构。",
+      "current_roles": [
+        {
+          "title": "CEO、创始人（公司官网列示）",
+          "organization": "深圳睿心智能医疗科技有限公司",
+          "source_id": "lanhongzhi_surgiplan"
+        }
+      ],
       "career": [
         {
-          "organization": "睿心医疗",
-          "title": "联合创始人&首席科学家",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-747fad60c39e1d5f"
+          "organization": "斯坦福大学心血管仿真实验室",
+          "title": "研究人员（媒体报道所述）",
+          "period": "多年，具体时间未披露",
+          "description": "科创板日报访谈称其在该实验室从事多年研究，未提供具体职务和任期。",
+          "source_id": "lanhongzhi_cls"
+        },
+        {
+          "organization": "深圳睿心智能医疗科技有限公司",
+          "title": "创始团队成员；公司官网列 CEO",
+          "period": "具体任职时间未披露",
+          "description": "公司简介将兰宏志列为 CEO&创始人；科创板日报另称其为创始人之一、首席科学家。",
+          "source_id": "lanhongzhi_surgiplan"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "清华大学",
+          "qualification": "本科、硕士（媒体报道所述，专业未披露）",
+          "source_id": "lanhongzhi_cls"
+        },
+        {
+          "institution": "杜兰大学",
+          "qualification": "生物医学工程博士（媒体报道所述）",
+          "source_id": "lanhongzhi_cls"
+        }
+      ],
+      "experience_summary": "背景覆盖生物医学工程、心血管计算建模和医疗器械创业；官网确认其公司创始人及 CEO 身份，教育与实验室经历由科创板日报访谈提供。",
+      "track_record": [
+        {
+          "description": "睿心医疗官网称公司承担多项国家科技部、工信部及广东省重点研发计划；这是公司项目记录，未单独归属兰宏志。",
+          "source_id": "lanhongzhi_surgiplan"
+        }
+      ],
+      "coverage_status": "researched",
+      "identity_status": "verified",
+      "coverage_note": "CEO/创始人由公司官网列示；学历、研究经历由媒体访谈补充。职务称谓存在来源差异，任职年份未披露。",
       "sources": [
         {
-          "source_id": "FISRC-747fad60c39e1d5f",
-          "source_url": "https://pitchhub.36kr.com/project/1679658712355584",
-          "source_title": "融资披露来源",
-          "source_content_hash": "0b7672f34e03f8984b41abefde90e31216413aaea38cdb9ea7ac3da2140926be",
-          "quote": "兰宏志 联合创始人&首席科学家",
-          "quote_hash": "6f3b8546716f28c2aa2abd0fe60df918c86ee87a3457cb062e123876a6abba20"
+          "source_id": "lanhongzhi_surgiplan",
+          "source_url": "https://www.surgi-plan.com/company/view?id=373",
+          "source_title": "公司简介-深圳睿心智能医疗科技有限公司",
+          "source_content_hash": "f33f24e60e02ef827af6d349e7e940e90286851fed8c97df2b7abed2c0cde0e8",
+          "quote": "公司简介将兰宏志列为 CEO&创始人。",
+          "quote_hash": "e594c1bc971bdf00067a01c22d0ce1c5519eee204a847a48b4160b2a08461415"
+        },
+        {
+          "source_id": "lanhongzhi_cls",
+          "source_url": "https://www.cls.cn/detail/1221752",
+          "source_title": "睿心医疗CEO郑凌霄：释放创新力量，满足企业高速、高质增长|连线创始人",
+          "source_content_hash": "76f50bd2836d6d6e0250dd0674ef6d431a794dc4832a782605ae9f14ca6683d4",
+          "quote": "访谈称兰宏志为睿心创始人之一、首席科学家，具清华本硕及杜兰大学生物医学工程博士背景。",
+          "quote_hash": "79d5fcd1e023f3701d055a4e132d881592549d764d3790207c41f78605ab69fd"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

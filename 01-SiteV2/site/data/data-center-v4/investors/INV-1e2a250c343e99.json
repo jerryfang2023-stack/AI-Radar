@@ -131,19 +131,205 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "北京中移数字新经济产业基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "北京中移数字新经济产业基金合伙企业（有限合伙）成立于2022年8月，投资方向为数字经济和移动信息现代产业链项目。长飞光纤2023年10月在港交所公告中披露，该基金认缴出资总额为人民币73.75亿元，中移资本控股认缴67.7966%，基金管理人为和创数字私募股权基金管理（北京）有限公司。基金合同当时约定8年经营期限、前4年为投资期；所列规模和出资结构是2023年披露快照。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "基金全称",
+          "value": "北京中移数字新经济产业基金合伙企业（有限合伙）。",
+          "source_id": "cm_fund_legal_name"
+        },
+        {
+          "field": "established_date",
+          "label": "成立时间",
+          "value": "2022年8月26日。",
+          "source_id": "cm_fund_date"
+        },
+        {
+          "field": "subscription_scale",
+          "label": "认缴规模（2023年披露）",
+          "value": "2023年10月公告记载认缴出资总额737,500万元，即人民币73.75亿元；这是该公告披露时的合伙企业认缴总额，不等同于当前实缴或净资产规模。",
+          "source_id": "cm_fund_capital"
+        },
+        {
+          "field": "investment_manager",
+          "label": "基金管理人",
+          "value": "和创数字私募股权基金管理（北京）有限公司；普通合伙人及执行事务合伙人为北京朝和创数字经济企业管理合伙企业（有限合伙）。",
+          "source_id": "cm_fund_manager"
+        },
+        {
+          "field": "manager_ownership",
+          "label": "管理人股东结构（2023年披露）",
+          "value": [
+            "中移资本控股有限责任公司：40.0031%",
+            "诚通基金管理有限公司：17.9211%",
+            "上海桓远投资管理有限公司：14.0252%",
+            "深圳市鼎益华恒投资顾问有限公司：14.0252%",
+            "珠海恒荣信通管理咨询有限公司：14.0252%"
+          ],
+          "source_id": "cm_manager_shareholders"
+        },
+        {
+          "field": "fund_partners",
+          "label": "主要出资人及认缴比例（2023年公告）",
+          "value": [
+            "中移资本控股有限责任公司：500,000万元（67.7966%）",
+            "中国国有企业结构调整基金二期股份有限公司：99,000万元（13.4237%）",
+            "北京市经济和信息化局产业发展促进中心：50,000万元（6.7797%）",
+            "北京朝阳科技创新基金有限公司：50,000万元（6.7797%）",
+            "北银理财有限责任公司：16,500万元（2.2373%）",
+            "武汉市长飞资本管理有限责任公司：10,000万元（1.3559%）"
+          ],
+          "source_id": "cm_fund_partners"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向与方式",
+          "value": "面向数字经济和移动信息现代产业链领域的优质项目，以股权或合伙协议允许的其他方式投资，包括符合约定条件的可转债投资。",
+          "source_id": "cm_fund_focus"
+        },
+        {
+          "field": "fund_term",
+          "label": "合同期限",
+          "value": "公告披露基金经营期限为8年，自设立日起算；前4年为投资期，后续为退出期，可经全体合伙人一致同意延长。",
+          "source_id": "cm_fund_term"
+        },
+        {
+          "field": "distribution_terms",
+          "label": "分配机制（2023年合同披露）",
+          "value": "先返还全体合伙人实缴出资，再按年化8%复利门槛收益分配；剩余可分配收入按20%分配给普通合伙人、80%分配给有限合伙人。",
+          "source_id": "cm_fund_distribution"
+        },
+        {
+          "field": "manager_team_2023",
+          "label": "管理人公开团队信息（2023年公告）",
+          "value": "公告将张军列为和创数字私募股权基金管理（北京）有限公司法定代表人、总经理，卢曦列为合规风控负责人及信息填报负责人；资料为2023年公告快照，未提供二人的完整职业履历。",
+          "source_id": "cm_manager_people"
+        },
+        {
+          "field": "manager_registered_address",
+          "label": "管理人注册地址（2023年公告）",
+          "value": "北京市通州区榆景东路2号院7号楼8层802；这是管理人的登记地址，并非基金独立办公或客服地址。",
+          "source_id": "cm_manager_address"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2022-08-26",
+          "description": "北京中移数字新经济产业基金合伙企业（有限合伙）成立。",
+          "source_id": "cm_fund_date"
+        },
+        {
+          "date": "2023-10-31",
+          "description": "长飞光纤在港交所披露其子公司拟认购该基金份额，并公布当时认缴总额、管理人、合伙人结构和投资条款。",
+          "source_id": "cm_fund_capital"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：中科类脑 · B+轮 · 2026-09-07 · B轮独家战略投资 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-36b71011809b0324"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "address",
+          "label": "管理人注册地址（非基金直接联络地址）",
+          "value": "北京市通州区榆景东路2号院7号楼8层802",
+          "source_id": "cm_manager_address"
+        }
+      ],
+      "coverage_note": "本档案的法定名称、管理关系、认缴规模、出资人和合同条款来自长飞光纤2023年10月向港交所提交的上市公司公告。金额及人员信息均为该公告时点的披露，未据此推断2026年的现有实缴规模、管理团队或完整投资组合。基金官方电话、邮箱和独立网站未在该公告中披露；所列地址属于管理人注册地址。",
       "sources": [
+        {
+          "source_id": "cm_fund_legal_name",
+          "source_url": "https://www.hkexnews.hk/listedco/listconews/sehk/2023/1031/2023103101256_c.pdf",
+          "source_title": "长飞光纤关于全资子公司认购基金份额的公告（香港联交所，2023-10-31）",
+          "source_content_hash": "d408129b08a4107f9d8e4b5bfb997f7ce52c481bb5d9f4bbf6aa220cafd5265f",
+          "quote": "北京中移数字新经济产业基金合伙企业（有限合伙）",
+          "quote_hash": "41b58337826cdddd1b6a9819a3be8258efad7c0e71fc9e14d7fc16db87c04c75"
+        },
+        {
+          "source_id": "cm_fund_date",
+          "source_url": "https://www.hkexnews.hk/listedco/listconews/sehk/2023/1031/2023103101256_c.pdf",
+          "source_title": "长飞光纤关于全资子公司认购基金份额的公告（香港联交所，2023-10-31）",
+          "source_content_hash": "d408129b08a4107f9d8e4b5bfb997f7ce52c481bb5d9f4bbf6aa220cafd5265f",
+          "quote": "成立日期 2022 年 8 月 26 日",
+          "quote_hash": "ddda14763b6c7175899a31c433a26356fc6eeb8e895045643aca40efb22a49d5"
+        },
+        {
+          "source_id": "cm_fund_capital",
+          "source_url": "https://www.hkexnews.hk/listedco/listconews/sehk/2023/1031/2023103101256_c.pdf",
+          "source_title": "长飞光纤关于全资子公司认购基金份额的公告（香港联交所，2023-10-31）",
+          "source_content_hash": "d408129b08a4107f9d8e4b5bfb997f7ce52c481bb5d9f4bbf6aa220cafd5265f",
+          "quote": "有限合伙企业认缴出资总额为人民币 737,500 万元",
+          "quote_hash": "e603a1ce3f002b6f0eaf3ca5de52e38d098c46bfd98160d2809b04f85aa30412"
+        },
+        {
+          "source_id": "cm_fund_manager",
+          "source_url": "https://www.hkexnews.hk/listedco/listconews/sehk/2023/1031/2023103101256_c.pdf",
+          "source_title": "长飞光纤关于全资子公司认购基金份额的公告（香港联交所，2023-10-31）",
+          "source_content_hash": "d408129b08a4107f9d8e4b5bfb997f7ce52c481bb5d9f4bbf6aa220cafd5265f",
+          "quote": "有限合伙企业的管理人为和创数字私募股权基金管理（北京）有限公司，有限合伙企业的普通合伙人、执行事务合伙人为北京朝和创数字经济企业管理合伙企业（有限合伙）。",
+          "quote_hash": "7d8280282d5d6328d6170a2890f53e519524addcf4c5af86419595383cb0c36e"
+        },
+        {
+          "source_id": "cm_manager_shareholders",
+          "source_url": "https://www.hkexnews.hk/listedco/listconews/sehk/2023/1031/2023103101256_c.pdf",
+          "source_title": "长飞光纤关于全资子公司认购基金份额的公告（香港联交所，2023-10-31）",
+          "source_content_hash": "d408129b08a4107f9d8e4b5bfb997f7ce52c481bb5d9f4bbf6aa220cafd5265f",
+          "quote": "中移资本控股有限责任公司持有40.0031%股权；诚通基金管理有限公司持有17.9211%股权。",
+          "quote_hash": "187ada285e705bf304468c3bc64d8c498c39602943ccd482b87b0167c8d1d4a3"
+        },
+        {
+          "source_id": "cm_fund_partners",
+          "source_url": "https://www.hkexnews.hk/listedco/listconews/sehk/2023/1031/2023103101256_c.pdf",
+          "source_title": "长飞光纤关于全资子公司认购基金份额的公告（香港联交所，2023-10-31）",
+          "source_content_hash": "d408129b08a4107f9d8e4b5bfb997f7ce52c481bb5d9f4bbf6aa220cafd5265f",
+          "quote": "中移资本控股有限责任公司 500,000 万元 67.7966%；中国国有企业结构调整基金二期股份有限公司 99,000 万元 13.4237%。",
+          "quote_hash": "d11650967084628c69783d2d3a45765c9fcc591efedd9b7ef9391498fbf2836a"
+        },
+        {
+          "source_id": "cm_fund_focus",
+          "source_url": "https://www.hkexnews.hk/listedco/listconews/sehk/2023/1031/2023103101256_c.pdf",
+          "source_title": "长飞光纤关于全资子公司认购基金份额的公告（香港联交所，2023-10-31）",
+          "source_content_hash": "d408129b08a4107f9d8e4b5bfb997f7ce52c481bb5d9f4bbf6aa220cafd5265f",
+          "quote": "有限合伙企业的投资领域为数字经济和移动信息现代产业链领域的优质项目。",
+          "quote_hash": "33553472c5b7c0e3c4420b5dadc46659b66404d5405c946aafd56dde190de69e"
+        },
+        {
+          "source_id": "cm_fund_term",
+          "source_url": "https://www.hkexnews.hk/listedco/listconews/sehk/2023/1031/2023103101256_c.pdf",
+          "source_title": "长飞光纤关于全资子公司认购基金份额的公告（香港联交所，2023-10-31）",
+          "source_content_hash": "d408129b08a4107f9d8e4b5bfb997f7ce52c481bb5d9f4bbf6aa220cafd5265f",
+          "quote": "有限合伙企业的经营期限为8年，自有限合伙企业设立日起算。有限合伙企业设立日起的前4年为投资期。",
+          "quote_hash": "4d0a3a4979434f6438e77dff54f0f94da75309cd4f29e9bc1c1e42673e9dbfa2"
+        },
+        {
+          "source_id": "cm_fund_distribution",
+          "source_url": "https://www.hkexnews.hk/listedco/listconews/sehk/2023/1031/2023103101256_c.pdf",
+          "source_title": "长飞光纤关于全资子公司认购基金份额的公告（香港联交所，2023-10-31）",
+          "source_content_hash": "d408129b08a4107f9d8e4b5bfb997f7ce52c481bb5d9f4bbf6aa220cafd5265f",
+          "quote": "全体合伙人门槛收益按8%/年（复利）计算；剩余可分配收入的20%分配给普通合伙人、80%分配给全体有限合伙人。",
+          "quote_hash": "4456cb8ff9701a7724738b38eb93662d13b38dcb9a199cc72e5bf7b102528673"
+        },
+        {
+          "source_id": "cm_manager_people",
+          "source_url": "https://www.hkexnews.hk/listedco/listconews/sehk/2023/1031/2023103101256_c.pdf",
+          "source_title": "长飞光纤关于全资子公司认购基金份额的公告（香港联交所，2023-10-31）",
+          "source_content_hash": "d408129b08a4107f9d8e4b5bfb997f7ce52c481bb5d9f4bbf6aa220cafd5265f",
+          "quote": "张军（法定代表人、总经理）；卢曦（合规风控负责人、信息填报负责人）。",
+          "quote_hash": "26c1161dad4f6c1f65c3b2218e641cf0bc0522d598db7bace3ab751fded9531d"
+        },
+        {
+          "source_id": "cm_manager_address",
+          "source_url": "https://www.hkexnews.hk/listedco/listconews/sehk/2023/1031/2023103101256_c.pdf",
+          "source_title": "长飞光纤关于全资子公司认购基金份额的公告（香港联交所，2023-10-31）",
+          "source_content_hash": "d408129b08a4107f9d8e4b5bfb997f7ce52c481bb5d9f4bbf6aa220cafd5265f",
+          "quote": "注册地址 北京市通州区榆景东路2号院7号楼8层802",
+          "quote_hash": "703c8079aa1eb1f81098d6a2f5fbe9b093507a6236db7be0318a890999c51dfc"
+        },
         {
           "source_id": "FISRC-36b71011809b0324",
           "source_url": "https://news.pedaily.cn/202504/548571.shtml",
@@ -153,7 +339,7 @@
           "quote_hash": "4dc29bf49fa4edbf3f62d804bd01ce71ff986901d839f3425f8454287f2c27af"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

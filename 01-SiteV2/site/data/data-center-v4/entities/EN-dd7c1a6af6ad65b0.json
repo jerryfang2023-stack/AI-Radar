@@ -111,33 +111,58 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "郭人杰 的来源线索将其与乐享科技（创始人）关联。来源日期：2026-08-03；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "郭人杰是乐享科技创始人兼 CEO。其在中国家电网采访中自述，研究生阶段学习经济学，曾在追觅科技担任中国区总裁约三年半；采访另记载其早年学习能源动力工程。高校名称、学位类型与其在追觅的具体任期仍需更权威材料补足。",
+      "current_roles": [
+        {
+          "title": "创始人兼 CEO",
+          "organization": "乐享科技",
+          "source_id": "guorenjie_interview"
+        }
+      ],
       "career": [
         {
+          "organization": "追觅科技",
+          "title": "中国区总裁",
+          "period": "采访时回顾此前约三年半任职，起止年月未披露",
+          "description": "其在采访中称曾任追觅中国区总裁，并介绍任职期间推动中国区业务发展；业绩归因采用本人陈述口径。",
+          "source_id": "guorenjie_interview"
+        },
+        {
           "organization": "乐享科技",
-          "title": "创始人",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将郭人杰与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-670f261d0c740ea4"
+          "title": "创始人兼 CEO",
+          "period": "2026年3月采访时在任；创立具体年月由采访披露为2024年12月",
+          "description": "创建家庭具身智能机器人公司并负责产品与业务方向。",
+          "source_id": "guorenjie_interview"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "未披露",
+          "qualification": "本人采访称早年学习能源动力工程，研究生阶段学习经济学；学校和学位名称未披露",
+          "source_id": "guorenjie_interview"
+        }
+      ],
+      "experience_summary": "公开采访支持其早年学习能源动力工程及研究生阶段学习经济学，后任追觅中国区总裁并创办乐享科技。媒体对其年龄、学校和具体经营业绩的扩展信息暂未并入，避免以二手聚合页面作定论。",
+      "track_record": [
+        {
+          "description": "受访者称其在追觅中国区总裁任内持续推动中国区业务；这是本人在采访中的回顾，不作为独立审计经营数据。",
+          "source_id": "guorenjie_interview"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-670f261d0c740ea4",
-          "source_url": "https://www.cnfin.com/gs-lb/detail/20260702/4434609_1.html",
-          "source_title": "融资披露来源",
-          "source_content_hash": "62e2ce5bba0f19793e17ce12827afbfeab3186011072eff8b77ade4c444b2037",
-          "quote": "乐享科技创始人郭人杰表示：“本轮融资我们重点引入了战略投资及更多产业投资方",
-          "quote_hash": "6bf63e64e291fa96847c82a2ddeec73f17452b18ecc118bd401bedd4754479d1"
+          "source_id": "guorenjie_interview",
+          "source_url": "https://news.cheaa.com/2026/0318/653720.shtml",
+          "source_title": "乐享科技 郭人杰：类人机器人与人类：构建共生的未来 - 中国家电网",
+          "source_content_hash": "0f890cdf3ff2744ba2be5238737a41caa53c5bdc5f4b464ddd0c6bfbd980a0b2",
+          "quote": "郭人杰在采访中称乐享科技于2024年12月成立，他曾在追觅科技担任中国区总裁三年半，并介绍自己从能源动力工程到研究生阶段经济学的学习经历。",
+          "quote_hash": "8c9084b02b7229fa2a5c6c98bba45e424d852fd12f126d3be525539838522c91"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "职业和教育描述基于本人采访；学校、学位类别、任职年月及业绩数据未被采访明确说明，故留空或标注不详。",
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

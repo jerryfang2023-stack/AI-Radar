@@ -111,33 +111,45 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "苏睿 的来源线索将其与贻如（创始人、董事长兼CEO）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
-      "career": [
+      "summary": "贻如生物相关报道将苏睿列为创始人兼CEO，并记载其于2023年毕业于上海科技大学生物医学工程专业。相关报道介绍公司研发合成生物基新材料；荣誉榜单等内容按媒体披露处理。",
+      "current_roles": [
         {
-          "organization": "贻如",
-          "title": "创始人、董事长兼CEO",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将苏睿与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-320ae1ce12e8452e"
+          "title": "创始人兼CEO（报道口径）",
+          "organization": "贻如生物",
+          "source_id": "wenhui_su"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
+      "career": [
+        {
+          "organization": "贻如生物",
+          "title": "创始人兼CEO",
+          "period": "2021年前后创立；任职期限未披露",
+          "description": "媒体对创业身份的介绍。",
+          "source_id": "wenhui_su"
+        }
+      ],
+      "education": [
+        {
+          "institution": "上海科技大学",
+          "qualification": "生物医学工程专业毕业",
+          "source_id": "wenhui_su"
+        }
+      ],
+      "experience_summary": "其创业方向是合成生物学与生物基材料；现有来源支持公司身份与学历，但未披露更长的任职时间线。",
       "track_record": [],
       "sources": [
         {
-          "source_id": "FISRC-320ae1ce12e8452e",
-          "source_url": "https://news.pedaily.cn/202607/565881.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "7c21e03d610b0cdf",
-          "quote": "贻如创始人、董事长兼CEO苏睿表示",
-          "quote_hash": "b1e1377bb0a635fb8d659614eae257e9a225d02788d9a01be73637271a61a8be"
+          "source_id": "wenhui_su",
+          "source_url": "https://www.sohu.com/a/910948964_120244154",
+          "source_title": "创立公司三年多，成“2024胡润U25”最年轻在榜者",
+          "source_content_hash": "ef625fa66936481b8365b7d16e99eb0a124a95497f722c50dc5d3470757b21f1",
+          "quote": "上海贻如生物科技有限公司创始人兼首席执行官苏睿，2023年毕业于上海科技大学生物医学工程专业。",
+          "quote_hash": "0551ea3b59cbb87e7c602f7a005330ea2a2029101e37fa5ceab8ca43a49e044c"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
     }
   },
   "relatedEntities": [],

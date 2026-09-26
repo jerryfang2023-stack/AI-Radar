@@ -235,13 +235,43 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Prosperity7 Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Prosperity7 Ventures是Aramco Ventures旗下的全球化成长风险投资基金。官网披露其投资规模扩至30亿美元，在多地设办公室，关注人工智能与深科技、机器人、生物医疗、企业软件、金融科技及云计算等领域，并为被投企业提供国际市场资源。",
+      "facts": [
+        {
+          "field": "parent",
+          "label": "所属机构",
+          "value": "Aramco Ventures；其为Saudi Aramco旗下投资机构",
+          "source_id": "prosperity7_official_about_202609"
+        },
+        {
+          "field": "fund_size",
+          "label": "基金规模",
+          "value": "30亿美元；机构官网2024年1月宣布扩至该规模，不代表已投金额或可用余额",
+          "source_id": "prosperity7_official_about_202609"
+        },
+        {
+          "field": "investment_focus",
+          "label": "关注领域",
+          "value": [
+            "DeepTech与AI",
+            "机器人",
+            "医疗科技/生物科技",
+            "企业科技",
+            "金融科技",
+            "云计算",
+            "移动",
+            "电商"
+          ],
+          "source_id": "prosperity7_official_about_202609"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2024-01-17",
+          "description": "Prosperity7宣布基金规模由10亿美元增加到30亿美元。",
+          "source_id": "prosperity7_official_about_202609"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Upscale AI · 多轮融资 · 2026-06-22 · 既有投资方（本轮参投） · $190 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -256,8 +286,39 @@
           "source_id": "FISRC-b8b7d456eceee943"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "contact_form",
+          "label": "提交公司供评估",
+          "value": "官网提供的机构项目递交入口",
+          "url": "https://www.prosperity7vc.com/investment/",
+          "source_id": "prosperity7_official_investment_202609"
+        },
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "机构背景、投资组合与团队",
+          "url": "https://www.prosperity7vc.com/",
+          "source_id": "prosperity7_official_about_202609"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "prosperity7_official_about_202609",
+          "source_url": "https://www.prosperity7vc.com/",
+          "source_title": "About | Prosperity7 Ventures",
+          "source_content_hash": "b777cab23ab52dd92eb653a6b57b10580092004ed3c8434426e1273b62ceef09",
+          "quote": "Prosperity7官网将该机构描述为Aramco Ventures旗下多元化风险投资基金，官网当前披露基金规模30亿美元、全球长期投资策略及在Dhahran、北京、上海、纽约和旧金山设有办公室；所列投资领域包括DeepTech与AI、机器人、生物医药、移动、金融科技、云计算等。",
+          "quote_hash": "865c4c35c9185c2f8ed7bcd7e51dcaba281cbdc3f2d8d90d8cf1c7b62f6c2112"
+        },
+        {
+          "source_id": "prosperity7_official_investment_202609",
+          "source_url": "https://www.prosperity7vc.com/investment/",
+          "source_title": "Investment | Prosperity7 Ventures",
+          "source_content_hash": "f71187cf763526fc99a86c03afe58bb90b70fbd5dcc5bf6bcd0a96bbecbebeb5",
+          "quote": "Prosperity7投资页面介绍其关注企业科技、金融科技、深科技与AI、B2B/B2C及医疗科技，并提供“提交公司供评估”的官方入口；能源、油气与可再生能源项目转由关联基金Aramco Ventures。",
+          "quote_hash": "538850bbf67f8401921f14e6fb612aa6711ddb73de3fb6c88469620aea6569a0"
+        },
         {
           "source_id": "FISRC-7dcdc22c0b1702bf",
           "source_url": "https://upscale.com/blogs/upscale-ai-adds-190-million-in-extension-to-series-a-reaching-half-billion-dollars-in-total-funding?from_theconsensus=1",
@@ -283,7 +344,11 @@
           "quote_hash": "00d032ce01998fc3009e7662c7071edca6119fd19c4482cc7e193431f8df2ea5"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "coverage_note": "投资策略、基金规模和项目联系入口来自机构官网；规模按官网发布日期标注，未解读为当前未部署资金。",
+      "identity_status": "verified"
     },
     "translations": {
       "zh-CN": {

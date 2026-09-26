@@ -186,14 +186,38 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "创世伙伴创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "创世伙伴创投（CCV）是专注早期投资的创投机构。官网称其重点关注 AI、机器人、出海及全球前沿科技；官网投资案例涵盖京东、启明星辰、玩美移动、中文在线、瑞尔齿科、融 360、喜马拉雅、探探、数坤科技、灵心巧手、酷哇机器人及 PPIO 等。官网团队页列周炜为创始主管合伙人。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期投资（官网表述）",
+          "source_id": "ccv_investments"
+        },
+        {
+          "field": "investment_focus",
+          "label": "重点方向",
+          "value": [
+            "AI",
+            "机器人",
+            "中国企业出海",
+            "全球前沿科技"
+          ],
+          "source_id": "ccv_investments"
+        },
+        {
+          "field": "founding_managing_partner",
+          "label": "创始主管合伙人",
+          "value": "周炜",
+          "source_id": "ccv_team"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官网列示京东、启明星辰、玩美移动、中文在线、瑞尔齿科、融360、明略科技、喜马拉雅、探探、灵心巧手、数坤科技、酷哇机器人和PPIO等投资组合案例；组合案例不代表单项投资回报。",
+          "source_id": "ccv_investments"
+        },
         {
           "description": "融资来源记录：上海造父智能科技有限公司 · 轮次未披露 · 2026-09-16 · 本轮参投 · 约1亿美金。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fd74bfb93ef77cfc"
@@ -203,8 +227,65 @@
           "source_id": "FISRC-3bc1b2f58c3d4a86"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "投资方向、组合与团队信息来自创世伙伴官网。联系邮箱为官网公开的 BP 直达邮箱；基金规模及回报未在本档案中补录。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "创世伙伴创投官网",
+          "value": "创世伙伴创投",
+          "url": "https://www.ccvcap.cn/",
+          "source_id": "ccv_home"
+        },
+        {
+          "kind": "email",
+          "label": "官网公开商业计划直达邮箱",
+          "value": "bp@ccvcap.com",
+          "url": "https://www.ccvcap.cn/",
+          "source_id": "ccv_home"
+        },
+        {
+          "kind": "phone",
+          "label": "官网公开电话",
+          "value": "+86 10 84722390",
+          "url": "https://www.ccvcap.cn/",
+          "source_id": "ccv_home"
+        },
+        {
+          "kind": "address",
+          "label": "北京办公地址",
+          "value": "北京市朝阳区建国路79号华贸中心写字楼2座1003单元",
+          "url": "https://www.ccvcap.cn/",
+          "source_id": "ccv_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "ccv_home",
+          "source_url": "https://www.ccvcap.cn/",
+          "source_title": "创世伙伴创投",
+          "source_content_hash": "f2bda96626d5e82ac6069338636f3b999695efc7943e752cc5d74f23fef9ef26",
+          "quote": "官网公布 BP 直达邮箱 bp@ccvcap.com、电话 +86 10 84722390 及北京办公地址。",
+          "quote_hash": "5424e3ff104924ed0266362a8cd3685696af64809ae686ab4d285f75fbf932aa"
+        },
+        {
+          "source_id": "ccv_investments",
+          "source_url": "https://www.ccvcap.cn/Investment",
+          "source_title": "创世伙伴创投 - 投资",
+          "source_content_hash": "78d5e74100d70dbc6abbe633d0089198f43189df6c8b28133a9885776a6dc0fe",
+          "quote": "创世伙伴创投专注于AI、机器人、出海及全球前沿科技领域的早期投资；官网列示京东、启明星辰、喜马拉雅、探探、灵心巧手、数坤科技、酷哇机器人、PPIO等投资项目。",
+          "quote_hash": "2b99aa7be1f13c58c0c5c5bd20d385522c08c2830ac40f688a9e19467436f216"
+        },
+        {
+          "source_id": "ccv_team",
+          "source_url": "https://www.ccvcap.cn/team",
+          "source_title": "创世伙伴创投 - 团队",
+          "source_content_hash": "a61d812a67e0d387b81f68cb3e33ef78c13930785bc6ef8b9dad0a60c5b12c17",
+          "quote": "团队页面将周炜列为创始主管合伙人。",
+          "quote_hash": "4d039414461f68a4f0d56e58c2a2fa466a258047fec3d2bbc8fae70c773f16c5"
+        },
         {
           "source_id": "FISRC-fd74bfb93ef77cfc",
           "source_url": "https://news.pedaily.cn/202609/569083.shtml",
@@ -222,7 +303,7 @@
           "quote_hash": "6da2e6bd296ea8bf4a4b957b1f4808313ae6cda9109e9ec26e841ba0efd2192f"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

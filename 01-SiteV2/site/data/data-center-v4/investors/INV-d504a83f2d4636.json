@@ -186,21 +186,114 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Linear Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Linear Capital（线性资本）是专注前沿科技的风险投资机构。官网称其于2014年由Harry Wang创立，管理10支基金、AUM超过20亿美元，重点关注AI软件与应用、AI硬件与具身智能，以及AI for Science与制造业。官网公布BP投递、人才及投资者关系邮箱和上海、香港办公地址。上述基金规模、业绩称誉和投资案例均为机构自述。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立年份",
+          "value": "2014",
+          "source_id": "linear_about"
+        },
+        {
+          "field": "founder",
+          "label": "创始人",
+          "value": "Harry Wang",
+          "source_id": "linear_about"
+        },
+        {
+          "field": "funds",
+          "label": "管理基金",
+          "value": "10支",
+          "source_id": "linear_about"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "AUM（官网披露）",
+          "value": "超过20亿美元",
+          "source_id": "linear_about"
+        },
+        {
+          "field": "sectors",
+          "label": "关注领域",
+          "value": [
+            "AI软件与应用",
+            "AI硬件与具身智能",
+            "AI for Science与制造业",
+            "能源",
+            "材料",
+            "生物科技"
+          ],
+          "source_id": "linear_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2014",
+          "description": "官网称机构成立于2014年。",
+          "source_id": "linear_about"
+        }
+      ],
       "track_record": [
+        {
+          "description": "官网称其获多项中国早期投资机构行业认可，并展示多家组合公司及退出案例；奖项、基金规模与业绩为机构自述，不视为完整组合或独立审计业绩。",
+          "source_id": "linear_about"
+        },
         {
           "description": "融资来源记录：OdyssLife · 多轮融资 · 2026-08-17 · 本轮参投 · 近2亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-34ac4235c670177c"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Linear Capital",
+          "url": "https://www.linear.vc/about",
+          "source_id": "linear_about"
+        },
+        {
+          "kind": "email",
+          "label": "BP项目投递",
+          "value": "bp@linear.vc",
+          "url": "https://www.linear.vc/about",
+          "source_id": "linear_about"
+        },
+        {
+          "kind": "email",
+          "label": "投资者关系",
+          "value": "ir@linear.vc",
+          "url": "https://www.linear.vc/about",
+          "source_id": "linear_about"
+        },
+        {
+          "kind": "email",
+          "label": "招聘联系",
+          "value": "talent@linear.vc",
+          "url": "https://www.linear.vc/about",
+          "source_id": "linear_about"
+        },
+        {
+          "kind": "address",
+          "label": "上海办公室",
+          "value": "上海市长宁区番禺路381号幸福里E座5楼",
+          "source_id": "linear_about"
+        },
+        {
+          "kind": "address",
+          "label": "香港办公室",
+          "value": "香港中环花园道3号冠君大厦10楼1011室",
+          "source_id": "linear_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "linear_about",
+          "source_url": "https://www.linear.vc/about",
+          "source_title": "About Linear Capital | Frontier Tech Fund",
+          "source_content_hash": "ea71da45d49eb5b2b1eb3ff9bb9fca3ab08b9f05eeb2514014fe9c19a0b0c03f",
+          "quote": "Linear Capital is a Frontier Tech Fund founded in 2014 by Harry Wang, Facebook’s first Chinese R&D manager. We currently manage 10 funds with AUM of more than $2 billion.",
+          "quote_hash": "ea296d11c43733e45a48acc77ad273371ec08fbebe1d4f72d427361008bf503d"
+        },
         {
           "source_id": "FISRC-34ac4235c670177c",
           "source_url": "https://elsewhere.news/en/linearcapital/odysslife2-linear-portfolio",
@@ -210,7 +303,11 @@
           "quote_hash": "c798abe303f955d4ff9d092b8045b49c8f88a11ee51338c42ac592b89d7e1953"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

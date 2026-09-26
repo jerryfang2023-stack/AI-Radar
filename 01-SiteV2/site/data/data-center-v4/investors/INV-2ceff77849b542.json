@@ -131,19 +131,102 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "安徽省量子科学产业发展基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "安徽省级量子科技产业投资基金，2017 年设立，由安徽省创业投资有限公司管理，投资方向为量子及相关产业。安徽省投资集团经央广网 2026 年报道披露，截至当年 4 月该基金已投项目 12 个、金额近 9 亿元。历史资本数据口径不同：基金运营表、工商注册资本分别来自不同年份和文件，不能据此推算当前实缴规模。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "法定名称",
+          "value": "安徽省量子科学产业发展基金有限公司。",
+          "source_id": "quantum_cninfo_legal"
+        },
+        {
+          "field": "established_date",
+          "label": "设立日期",
+          "value": "2017-11-23。",
+          "source_id": "quantum_fund_table_2020"
+        },
+        {
+          "field": "manager",
+          "label": "基金管理人",
+          "value": "安徽省创业投资有限公司（2020 年基金运营表披露）。",
+          "source_id": "quantum_fund_table_2020"
+        },
+        {
+          "field": "sectors",
+          "label": "投资方向",
+          "value": "量子及相关产业。",
+          "source_id": "quantum_fund_table_2020"
+        },
+        {
+          "field": "fundraising_and_paid_in_2020",
+          "label": "2020 年末历史规模口径",
+          "value": "发行人基金表列募资规模 40 亿元、实缴规模 5 亿元；数据截止 2020 年末，不代表当前实缴或可投资余额。",
+          "source_id": "quantum_fund_table_2020"
+        },
+        {
+          "field": "registered_capital_2021",
+          "label": "2021 年上市公司公告披露注册资本",
+          "value": "20 亿元；这是公司注册资本，与基金募资规模、实缴规模不是同一口径。",
+          "source_id": "quantum_cninfo_legal"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2017-11-23",
+          "description": "基金设立。基金表将其列为安徽省“三重一创”基金参股子基金，由安徽省创业投资有限公司管理。",
+          "source_id": "quantum_fund_table_2020"
+        }
+      ],
       "track_record": [
+        {
+          "description": "伟时电子 2021 年增资东超科技公告将该基金列为早期投资人；公告所列增资后股权表显示其持有东超科技 3.1826%。",
+          "source_id": "quantum_eastchao_investment"
+        },
+        {
+          "description": "央广网 2026-04-15 转述安徽省投资集团信息：该集团称量子基金已投项目 12 个、金额近 9 亿元；这是集团报道口径，未逐项披露项目清单。",
+          "source_id": "quantum_portfolio_2026"
+        },
         {
           "description": "融资来源记录：中科类脑 · B+轮 · 2026-09-07 · A轮投资方 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4cd330eaa5f3d5fc"
         }
       ],
       "contacts": [],
+      "coverage_note": "2020 年基金运营表列募资规模 40 亿元、实缴 5 亿元；2021 年上市公司公告列注册资本 20 亿元，两类数字不可互换，当前认缴与实缴状态尚未通过最新基金备案资料核实。未查到当前官方融资项目投递渠道，2021 年公告的公司住所不作为现行联系方式展示。",
       "sources": [
+        {
+          "source_id": "quantum_fund_table_2020",
+          "source_url": "https://pdf.dfcfw.com/pdf/H2_AN202106301500982247_1.pdf?1625130020000.pdf=",
+          "source_title": "安徽省高新技术产业投资有限公司2020年债券信用评级报告（基金表数据截至2020年末）",
+          "source_content_hash": "c134c2160e71979ecf0ce1e004077275cc573966ac446dcf9c97cf4852bbc2ae",
+          "quote": "安徽省量子科学产业发展基金有限公司 安徽省创业投资有限公司 2017/11/23 10年 40.00 5.00 40.00 5.00 量子及相关产业",
+          "quote_hash": "f0096ca2123ddae6b30fef964045572913b6eae5eba29b8507343ec824385c3a"
+        },
+        {
+          "source_id": "quantum_cninfo_legal",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2021-10-27/1211385715.PDF",
+          "source_title": "伟时电子股份有限公司关于对东超科技增资暨对外投资的公告",
+          "source_content_hash": "0596070f5c20cca047560aeb16c7d7f3aa75591ef8081b4dc1b551c104abc980",
+          "quote": "安徽省量子科学产业发展基金有限公司 统一社会信用代码：91340100MA2RAD5FXE 注册资本：200,000万元人民币",
+          "quote_hash": "bd0b7d996dbfeee92946e186824ec5680429a5797bf65cd9a5f0cdb06eaafe74"
+        },
+        {
+          "source_id": "quantum_eastchao_investment",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2021-10-27/1211385715.PDF",
+          "source_title": "伟时电子股份有限公司关于对东超科技增资暨对外投资的公告",
+          "source_content_hash": "0596070f5c20cca047560aeb16c7d7f3aa75591ef8081b4dc1b551c104abc980",
+          "quote": "安徽省量子科学产业发展基金有限公司 24.2814 3.3501% 24.2814 3.1826% 货币",
+          "quote_hash": "24a0f4db79efd8521f1450d31162376821674e525dc7704a936a35ded13ee796"
+        },
+        {
+          "source_id": "quantum_portfolio_2026",
+          "source_url": "https://www.cnr.cn/ah/jhfc/20260415/t20260415_527586328.shtml",
+          "source_title": "向“新”而行 安徽省投资集团以创新思维回答创新之问",
+          "source_content_hash": "ffeeb9df4818e53808e0381f498a775a757c9536c434350872fb924f9f8085b7",
+          "quote": "2017年公司发起设立国内首只专业量子产业基金——安徽省量子科学产业发展基金，目前已投项目12个、金额近9亿元",
+          "quote_hash": "1a37c617f5ff832d7c2c96d0c4a9228e0d620cd1266f3cb424cf52c047d311df"
+        },
         {
           "source_id": "FISRC-4cd330eaa5f3d5fc",
           "source_url": "https://pitchhub.36kr.com/project/1678250824463368",
@@ -153,7 +236,7 @@
           "quote_hash": "8c4596a390f6ae35cba538d7b05477bf2548bb2231d5cabd716f22c6c1a630da"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

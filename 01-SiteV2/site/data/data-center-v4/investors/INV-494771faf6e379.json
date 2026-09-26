@@ -237,12 +237,26 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "1789 Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "1789 Capital 是一家美国成长型股权投资机构。其官网将投资对象表述为 Entrepreneurship, Innovation & Growth（EIG）经济中的企业；官网团队页列出创始人、投资负责人和合伙人。融资数据库中的参投名称未必能确认具体基金或法律实体。机构战略与团队信息为官网自述。",
+      "facts": [
+        {
+          "field": "investment_strategy",
+          "label": "投资定位（官网自述）",
+          "value": "成长型股权投资，向其定义的 Entrepreneurship, Innovation & Growth（EIG）经济企业提供融资。",
+          "source_id": "1789_profile"
+        },
+        {
+          "field": "team",
+          "label": "官网列示团队",
+          "value": "官网团队页列有创始人、首席投资官、总裁及多位合伙人；具体职务以来源页面为准。",
+          "source_id": "1789_team"
+        }
+      ],
       "milestones": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "公开资料支持其成长型股权投资定位与团队构成；尚未将媒体所报基金规模或单笔交易描述补作机构业绩指标。",
       "track_record": [
         {
           "description": "融资来源记录：Groq · A轮 · 2026-08-17 · 历史轮次投资方 · $350M。这是本库收录的披露案例，不代表完整投资组合。",
@@ -257,8 +271,32 @@
           "source_id": "FISRC-00ed3d8fd701898b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "1789 Capital",
+          "url": "https://1789capital.vc/",
+          "source_id": "1789_profile"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "1789_profile",
+          "source_url": "https://1789capital.vc/omeed-malik",
+          "source_title": "Omeed Malik — 1789 Capital",
+          "source_content_hash": "01aad8fa293ca826eada04c25e71d38dc2493793534f310eebd71e12da25906f",
+          "quote": "Omeed Malik is the President of 1789 Capital, a growth equity investment firm that provides financing to companies in the budding Entrepreneurship, Innovation & Growth (\"EIG\") economy.",
+          "quote_hash": "e60c88c572727d1da7782324cd31f853413b61444c2101cb6489effc884423cf"
+        },
+        {
+          "source_id": "1789_team",
+          "source_url": "https://1789capital.vc/1789team",
+          "source_title": "Team — 1789 Capital",
+          "source_content_hash": "669a5b96b776b393e843a251e63675deef997cb2aa919e86fa20356ca0fbc60d",
+          "quote": "Omeed Malik — Founder & President; Christopher Buskirk — Founder & CIO; Don Trump Jr — Partner; Rebekah Mercer — Founder; Paul Abrahimzadeh — Partner; Joe Voboril — Partner; Jordan Cohen — Partner & COO; Andy Nasser — Partner; Emanuel Zareh — Partner.",
+          "quote_hash": "ae8a1a7c9e71f71e026d0f5db8735d882903f90de8398ea8ddab56624bb6cbe2"
+        },
         {
           "source_id": "FISRC-28e142eb564f6762",
           "source_url": "https://www.verdict.co.uk/groq-obtains-750m-in-funding-ai-inference-technology/",
@@ -284,7 +322,10 @@
           "quote_hash": "43b6c52820315c7b7d8bb79333f9ec5196afe4add62139cb3c5f7ecaf9a3453a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

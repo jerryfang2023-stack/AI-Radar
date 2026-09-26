@@ -193,10 +193,39 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Liquid 2 Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "依据机构官网或正式公告核验；策略、统计数据和组合案例按来源方披露口径呈现，不据此推断基金回报。",
+      "summary": "Liquid 2 Ventures 是由运营者背景团队组成的风险投资机构。官网称其运营早期基金（Pre-seed、Seed）与成长基金（Series B 起），跨科技行业全球投资，并为被投团队提供创始人网络、客户与后续融资引荐支持。组合统计为机构自述数据。",
+      "facts": [
+        {
+          "field": "stage",
+          "label": "官方投资阶段",
+          "value": [
+            "Pre-seed",
+            "Seed",
+            "Series B 及以后"
+          ],
+          "source_id": "liquid2_home"
+        },
+        {
+          "field": "sector",
+          "label": "官方投资行业",
+          "value": "官网 FAQ 称跨科技行业广泛投资。",
+          "source_id": "liquid2_home"
+        },
+        {
+          "field": "geography",
+          "label": "官方覆盖范围",
+          "value": "官网 FAQ 称其为全球投资者。",
+          "source_id": "liquid2_home"
+        },
+        {
+          "field": "check_size",
+          "label": "典型支票额",
+          "value": "官网 FAQ 披露：早期轮通常为 25 万至 50 万美元；Series B 或以后通常为 200 万至 500 万美元。",
+          "source_id": "liquid2_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -206,9 +235,21 @@
         {
           "description": "融资来源记录：Venice AI · A轮 · 2026-07-01 · 本轮参投 · 6500万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d718182aef653666"
+        },
+        {
+          "description": "官网自述已种子投资 40 多家独角兽企业、相关企业总企业价值超过 2500 亿美元；该统计为机构口径，非基金回报或独立审计数据。",
+          "source_id": "liquid2_home"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Liquid 2 Ventures",
+          "url": "https://www.liquid2.vc/",
+          "source_id": "liquid2_home"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-efe4db4aff32c4ea",
@@ -225,9 +266,17 @@
           "source_content_hash": "8c7c2fd7220f54ed",
           "quote": "joined by Coinbase Ventures, North Island Ventures, Archetype, Morgan Creek Digital and Liquid 2 Ventures",
           "quote_hash": "463b5c688051af8f6a0fbebecb308f842788fbbf5c7c7b116eec43ae70cfdfb4"
+        },
+        {
+          "source_id": "liquid2_home",
+          "source_url": "https://www.liquid2.vc/",
+          "source_title": "Liquid 2 Ventures — Official Website",
+          "source_content_hash": "c8b3197fc31ee776c071d837d5d8799575fdfdab2431c6b4c314e8d40d7bec00",
+          "quote": "Liquid 2 is composed of two funds: an early-stage fund for pre-seed or seed founders, and a growth-stage fund that starts at Series B.",
+          "quote_hash": "dcc25193dae30698c68fc551387585033f642b755842b7181c92f50d3754fa06"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

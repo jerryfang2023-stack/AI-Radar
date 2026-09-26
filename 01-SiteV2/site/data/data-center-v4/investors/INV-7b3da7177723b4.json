@@ -142,19 +142,195 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "上海未来产业基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "上海未来启点私募投资基金合伙企业（有限合伙）以“上海未来产业基金”对外使用，是上海市财政全额出资的功能性母基金，由上海未来启点私募基金管理有限公司（上海国投未来）管理。上交所披露该基金2024年12月成立，初始规模100.01亿元，2025年9月扩募至150.01亿元，重点支持未来产业早期创新，采用直接投资与子基金投资双轨运作。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "法定名称",
+          "value": "上海未来启点私募投资基金合伙企业（有限合伙），简称“上海未来产业基金”。",
+          "source_id": "future_sse_vehicle"
+        },
+        {
+          "field": "established_date",
+          "label": "成立时间",
+          "value": "2024年12月。",
+          "source_id": "future_sse_vehicle"
+        },
+        {
+          "field": "capital_background",
+          "label": "出资背景",
+          "value": "上海市财政全额出资。",
+          "source_id": "future_sse_vehicle"
+        },
+        {
+          "field": "fund_scale",
+          "label": "基金规模变化",
+          "value": "初始规模100.01亿元，2025年9月扩募至150.01亿元。该数值来自2026年上交所债券披露文件对基金规模的回顾。",
+          "source_id": "future_sse_vehicle"
+        },
+        {
+          "field": "investment_manager",
+          "label": "基金管理人",
+          "value": "上海未来启点私募基金管理有限公司，上海国投公司称其品牌为“上海国投未来”。",
+          "source_id": "future_sse_vehicle"
+        },
+        {
+          "field": "fund_term_and_positioning",
+          "label": "存续周期与定位",
+          "value": "2025年1月发布投资策略时披露基金周期为15年，定位为逆周期耐心资本，聚焦上海和中国“0-1”原始创新成果转化。",
+          "source_id": "future_launch"
+        },
+        {
+          "field": "investment_strategy",
+          "label": "投资方向与方式",
+          "value": "采用直接投资与子基金投资双轨运作，重点布局未来信息、未来能源、未来健康、未来空间、未来制造和未来材料等领域，支持早期和原始创新。",
+          "source_id": "future_sse_operation"
+        },
+        {
+          "field": "manager_team_background",
+          "label": "管理人团队背景",
+          "value": "管理人官网自述其团队中海内外知名高校背景成员超过90%、90后成员占比超过70%、复合专业背景成员超过90%；这是基金管理公司的团队统计，并非基金出资人或投资团队全部履历。",
+          "source_id": "future_manager_team"
+        },
+        {
+          "field": "year_end_deployment",
+          "label": "截至2025年底的子基金出资",
+          "value": "已出资11支子基金，母基金认缴规模合计13.71亿元、实缴规模合计5.55亿元。",
+          "source_id": "future_sse_deployment"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2024-12",
+          "description": "法定基金载体成立。",
+          "source_id": "future_sse_vehicle"
+        },
+        {
+          "date": "2025-01-08",
+          "description": "基金发布投资策略；管理人总经理魏凡杰介绍定位、周期和重点领域。",
+          "source_id": "future_launch"
+        },
+        {
+          "date": "2025-09",
+          "description": "基金扩募至150.01亿元。",
+          "source_id": "future_sse_vehicle"
+        },
+        {
+          "date": "2025-12-31",
+          "description": "披露已出资11支子基金，认缴规模13.71亿元、实缴规模5.55亿元。",
+          "source_id": "future_sse_deployment"
+        },
+        {
+          "date": "2026-08-25",
+          "description": "上海市审计局报道调研基金运营和未来启点社区，并列出管理公司总经理魏凡杰。",
+          "source_id": "future_audit_visit"
+        }
+      ],
       "track_record": [
+        {
+          "description": "截至2025年末，基金已向11支子基金出资；母基金认缴合计13.71亿元、实缴合计5.55亿元。该组数据为上交所债券披露文件中的年度时点数据。",
+          "source_id": "future_sse_deployment"
+        },
         {
           "description": "融资来源记录：Anew Labs（新生实验室） · 其他融资 · 2026-09-16 · 本轮参投 · 2.9亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-55c913083e7dcd21"
         }
       ],
-      "contacts": [],
+      "current_roles": [
+        {
+          "title": "基金管理公司总经理",
+          "organization": "上海未来启点私募基金管理有限公司（上海国投未来）",
+          "source_id": "future_audit_visit"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "email",
+          "label": "管理公司公开邮箱",
+          "value": "SHEngineFund@enginefund.cn",
+          "source_id": "future_manager_team"
+        },
+        {
+          "kind": "address",
+          "label": "管理公司公开地址",
+          "value": "上海市黄浦区中山南路100号金外滩国际广场6楼",
+          "source_id": "future_manager_team"
+        },
+        {
+          "kind": "website",
+          "label": "管理人资料页",
+          "value": "上海国投未来（上海未来启点私募基金管理有限公司）",
+          "url": "https://www.sh-ssci.com/tdjs/gtwl/index.html",
+          "source_id": "future_manager_strategy"
+        }
+      ],
+      "coverage_note": "将“上海未来产业基金”与其法定合伙企业名称及管理公司关系按上交所披露文件核对。100.01亿元为初始规模，150.01亿元为2025年9月扩募后的规模；2025年末子基金出资数据为该年度时点统计。管理人官网展示的团队背景仅描述基金管理公司人员。融资数据库中另有一条二级来源投资方披露记录，不能据此视为基金官网的完整投资组合。",
       "sources": [
+        {
+          "source_id": "future_sse_vehicle",
+          "source_url": "https://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2026-07-29/240617_20260729_ALJZ.pdf",
+          "source_title": "上海国有资本投资有限公司公司债券信息披露文件（2026年7月）",
+          "source_content_hash": "2cdb1bd372f4d5bd34417abf64a88126fef02b4e82c5ceb816c2cb0d8c671d3e",
+          "quote": "上海未来启点私募投资基金合伙企业（有限合伙）（简称“上海未来产业基金”）成立于2024年12月，由上海市财政全额出资，初始规模100.01亿元，于2025年9月扩募至150.01亿元，该公司控股子公司国投未来为上海未来产业基金的管理人。",
+          "quote_hash": "3eecb2019e09bd266b1d48361090baf1edd1ad5c52a4856790ef0a82f126ff22"
+        },
+        {
+          "source_id": "future_sse_operation",
+          "source_url": "https://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2026-07-29/240617_20260729_ALJZ.pdf",
+          "source_title": "上海国有资本投资有限公司公司债券信息披露文件（2026年7月）",
+          "source_content_hash": "2cdb1bd372f4d5bd34417abf64a88126fef02b4e82c5ceb816c2cb0d8c671d3e",
+          "quote": "上海未来产业基金重点聚焦未来产业领域早期投资，采用“直接投资+子基金投资”双轨运作模式，协同各类资源，打造开放的投资验证孵化一体化平台。",
+          "quote_hash": "09a5548eb459e6c2873fdb90c9f01b34c7cdac53557d7418d79ff62b8847055b"
+        },
+        {
+          "source_id": "future_sse_deployment",
+          "source_url": "https://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2026-07-29/240617_20260729_ALJZ.pdf",
+          "source_title": "上海国有资本投资有限公司公司债券信息披露文件（2026年7月）",
+          "source_content_hash": "2cdb1bd372f4d5bd34417abf64a88126fef02b4e82c5ceb816c2cb0d8c671d3e",
+          "quote": "截至2025年末，上海未来产业基金已出资11支子基金，母基金认缴规模合计13.71亿元，实缴规模合计5.55亿元。",
+          "quote_hash": "f86fd93a5a06ac2f17b3249ca0dc315cc8601801f8a91a4a4b7eae46b760740a"
+        },
+        {
+          "source_id": "future_launch",
+          "source_url": "https://www.shkjdw.gov.cn/c/2025-01-09/532847.shtml",
+          "source_title": "上海未来产业基金投资策略发布 - 上海科技党建",
+          "source_content_hash": "61e1dfd5823f6db0d834cf34584a1ae2ea8d2083938feb71e7cadff437308ec4",
+          "quote": "上海未来产业基金规模100亿人民币，周期15年，基金将定位为逆周期耐心资本，聚焦在推动上海和中国“0-1”原始创新的转化。",
+          "quote_hash": "b424bfd96bd1822c3f312b84fa5ece1e6482edccf53f5962b013b56161d79022"
+        },
+        {
+          "source_id": "future_launch_speakers",
+          "source_url": "https://www.shkjdw.gov.cn/c/2025-01-09/532847.shtml",
+          "source_title": "上海未来产业基金投资策略发布 - 上海科技党建",
+          "source_content_hash": "61e1dfd5823f6db0d834cf34584a1ae2ea8d2083938feb71e7cadff437308ec4",
+          "quote": "上海未来产业基金的管理人，上海未来启点私募基金管理有限公司总经理魏凡杰介绍基金的投资策略。",
+          "quote_hash": "060aeba8384f1ce5e3902122675c2dffbf578e04c19d5a6bfd47fa600bee1487"
+        },
+        {
+          "source_id": "future_manager_strategy",
+          "source_url": "https://www.sh-ssci.com/tdjs/gtwl/index.html",
+          "source_title": "上海国投未来 - 上海国有资本投资有限公司",
+          "source_content_hash": "12c5da8941b345362881dbd7b3f4c78a9e801bb3b6798c244e40ed2991968b1f",
+          "quote": "上海未来启点私募基金管理有限公司（以下简称“上海国投未来”）定位于搭建推动颠覆式创新、多学科交叉创新以及前沿平台性技术方向孵化和早期投资的开放赋能平台，坚持耐心资本定位。",
+          "quote_hash": "8bed8ab664d5510d76e5c4c94c1ab8ea6d5c9e021d815cfa31d8058cba91989c"
+        },
+        {
+          "source_id": "future_manager_team",
+          "source_url": "https://www.sh-ssci.com/tdjs/gtwl/index.html",
+          "source_title": "上海国投未来 - 上海国有资本投资有限公司",
+          "source_content_hash": "12c5da8941b345362881dbd7b3f4c78a9e801bb3b6798c244e40ed2991968b1f",
+          "quote": "上海国投未来团队中拥有海内外知名高校背景的成员超90%，90后成员占比超70%，拥有复合专业背景成员超90%；联系邮箱SHEngineFund@enginefund.cn，地址上海市黄浦区中山南路100号金外滩国际广场6楼。",
+          "quote_hash": "4fd9946cbeed848ac8f8aa7711838ed2e7febc5a0ee88779b0ccefd16e7a3d5d"
+        },
+        {
+          "source_id": "future_audit_visit",
+          "source_url": "https://sjj.sh.gov.cn/n388/20260825/36b62ade97af4ced93f250dc780a7aca.html",
+          "source_title": "市审计局赴上海未来启点社区调研 - 上海市审计局",
+          "source_content_hash": "29838290cffb9c8df45a182a90a4641a612301dab31f93f97963ab9f8a018690",
+          "quote": "上海未来启点私募基金管理公司总经理、上海未来启点社区理事长魏凡杰介绍相关工作，调研组深入了解上海未来产业基金整体投资运营管理情况。",
+          "quote_hash": "9c56000fc451e34464a1b712e40dd3c366e1a04da7853e088863ae3f5d4306d5"
+        },
         {
           "source_id": "FISRC-55c913083e7dcd21",
           "source_url": "https://www.chinaventure.com.cn/news/111-20260917-393303.html",
@@ -164,7 +340,7 @@
           "quote_hash": "b3e33a531bf1d359d26fad5fe6a9e7c6cc2a2528e82d9b61df318b00c36ddd43"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

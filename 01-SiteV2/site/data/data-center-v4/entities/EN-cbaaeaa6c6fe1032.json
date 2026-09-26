@@ -128,33 +128,51 @@
       }
     },
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "Chris Zhu 的来源线索将其与Etched（联合创始人）关联。来源日期：2026-07-01；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "Chris Zhu 是 AI 芯片公司 Etched 联合创始人。Etched 官方招聘页面称其曾获 Thiel Fellowship，研究方向包括数学与高性能计算，并介绍其数学竞赛及研究背景；官方页面未列出完整教育时间线和任职履历。",
+      "current_roles": [
+        {
+          "title": "联合创始人",
+          "organization": "Etched",
+          "source_id": "chris_etched"
+        }
+      ],
       "career": [
         {
           "organization": "Etched",
           "title": "联合创始人",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将Chris Zhu与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-93ad55204895a7ae"
+          "period": "公司成立后；官方页面未列任职起始时间",
+          "description": "参与专注AI推理芯片的公司创建与发展。",
+          "source_id": "chris_etched"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "Harvard University",
+          "qualification": "曾就读；官网列其为Thiel Fellow，未在该页面说明是否毕业",
+          "source_id": "chris_etched"
+        }
+      ],
+      "experience_summary": "官方资料显示其兼有数学、高性能计算研究背景及创业经历；未推断其毕业状态、具体研究职位或其他雇佣经历。",
+      "track_record": [
+        {
+          "description": "Etched官网介绍其参与创建面向AI工作负载的芯片公司；技术进展与产品描述按公司自述口径。",
+          "source_id": "chris_etched"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-93ad55204895a7ae",
-          "source_url": "https://techfundingnews.com/nvidia-rival-ai-chip-maker-etched-founded-by-harvard-dropouts-lands-500m-at-5b-valuation/",
-          "source_title": "融资披露来源",
-          "source_content_hash": "ea6962ff49d28cc4",
-          "quote": "Etched was founded in 2022 by Chris Zhu , Gavin Uberti , and Robert Wachen",
-          "quote_hash": "81bc9377268cfde65c9a825bc26a94aac4c3b7178ae239a3b9075ce2001c5003"
+          "source_id": "chris_etched",
+          "source_url": "https://www.etched.com/join?trk=organization_guest_main-feed-card-text",
+          "source_title": "Etched 团队与招聘页面",
+          "source_content_hash": "4352cfe014b29f7de6e90048d0f02b6341ff205948a3ddcbef6ae214c75c1a39",
+          "quote": "Etched官方页面将Chris Zhu列为联合创始人，并介绍其Thiel Fellowship、数学及高性能计算研究背景。",
+          "quote_hash": "fa697cfedd5052f66c71b03ad16a657fa9d447b14ace04233d7a7986932dd0a6"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "职位、奖学金及研究背景来自Etched官方团队页面；未公开的教育完成状态和完整履历留空。",
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

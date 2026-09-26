@@ -178,24 +178,74 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "中金保时捷基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "数据库所称“中金保时捷基金”对应保时捷创投与中国国际金融股份有限公司共同设立的人民币创业投资基金。保时捷官方称该基金于2024年完成基金业协会备案，面向中国初创公司的早期股权投资，关注汽车与出行、智慧企业和可持续发展。官方未披露基金规模或回报数据。",
+      "facts": [
+        {
+          "field": "fund_partners",
+          "label": "共同设立方",
+          "value": [
+            "Porsche Ventures（保时捷创投）",
+            "中国国际金融股份有限公司（中金公司）"
+          ],
+          "source_id": "porsche_official"
+        },
+        {
+          "field": "currency",
+          "label": "基金币种",
+          "value": "人民币基金",
+          "source_id": "porsche_official"
+        },
+        {
+          "field": "filing",
+          "label": "备案情况",
+          "value": "2024年在中国证券投资基金业协会完成备案",
+          "source_id": "porsche_official"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": [
+            "早期股权投资"
+          ],
+          "source_id": "porsche_early_stage"
+        },
+        {
+          "field": "focus_sectors",
+          "label": "投资方向",
+          "value": [
+            "汽车与出行",
+            "智慧企业",
+            "可持续发展"
+          ],
+          "source_id": "porsche_focus"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2024-06-05",
+          "description": "保时捷公布与中金合作设立人民币创业投资基金并完成基金业协会备案。",
+          "source_id": "porsche_official"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：星海图 · B+轮 · 2026-04-02 · 历史轮次投资方 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资来源记录：星海图融资报道将中金保时捷基金列为参投方；报道没有披露单笔投资金额。",
           "source_id": "FISRC-7a614400d44a7041"
         },
         {
-          "description": "融资来源记录：星海图 · B轮 · 2026-02-11 · A4轮跟投 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资来源记录：另一篇星海图融资报道将中金保时捷基金列为A4轮跟投方。",
           "source_id": "FISRC-2707f48aa6e437b7"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "保时捷官方基金公告",
+          "value": "保时捷与中金合作设立人民币基金",
+          "url": "https://www.porsche.cn/china/zh/aboutporsche/pressreleases/?id=2024-06-05&lang=zh&pool=china",
+          "source_id": "porsche_official"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-7a614400d44a7041",
@@ -212,9 +262,37 @@
           "source_content_hash": "85e4d40faa23c515",
           "quote": "A4轮融资由今日资本、美团龙珠联合领投，中金保时捷基金、襄禾资本以及老股东跟投",
           "quote_hash": "2e8cd6494a2e5c5dab68672e688ff8331787979877abf6c390da7e48e31160a7"
+        },
+        {
+          "source_id": "porsche_official",
+          "source_url": "https://www.porsche.cn/china/zh/aboutporsche/pressreleases/?id=2024-06-05&lang=zh&pool=china",
+          "source_title": "保时捷与中金公司合作设立人民币基金，开启在华创投业务新篇章",
+          "source_content_hash": "f8379067507448aabc0724f4ca8a6c42afe9335bab6eca6a8fc7326533281be9",
+          "quote": "保时捷创投携手中国国际金融股份有限公司（“中金公司”）发起设立的首支人民币基金在中国证券投资基金业协会完成备案。",
+          "quote_hash": "dd4f1868073454d5747010fd90a62ae458243eff6fd20dd6695ff1e6d5fa2461"
+        },
+        {
+          "source_id": "porsche_early_stage",
+          "source_url": "https://www.porsche.cn/china/zh/aboutporsche/pressreleases/?id=2024-06-05&lang=zh&pool=china",
+          "source_title": "保时捷与中金公司合作设立人民币基金，开启在华创投业务新篇章",
+          "source_content_hash": "f8379067507448aabc0724f4ca8a6c42afe9335bab6eca6a8fc7326533281be9",
+          "quote": "未来数年保时捷在中国对初创公司进行早期股权投资的唯一渠道。",
+          "quote_hash": "f638488f212373213752eba294e56f3efa15ddc66de0485ad3e2587dd25b117e"
+        },
+        {
+          "source_id": "porsche_focus",
+          "source_url": "https://www.porsche.cn/china/zh/aboutporsche/pressreleases/?id=2024-06-05&lang=zh&pool=china",
+          "source_title": "保时捷与中金公司合作设立人民币基金，开启在华创投业务新篇章",
+          "source_content_hash": "f8379067507448aabc0724f4ca8a6c42afe9335bab6eca6a8fc7326533281be9",
+          "quote": "助力初创企业在汽车出行、智慧企业、可持续发展等领域的高质量发展。",
+          "quote_hash": "81f56bfaa03f723ca92a0ba4c13043970a62821ec8fbb792a5a5a080f526efb3"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "基金合作、备案及投资方向来自保时捷官方公告；融资参与案例来自媒体报道。保时捷中国公告中的媒体联系方式不是基金募资渠道，故未列为BP联系方式。",
+      "last_verified_at": "2026-09-26"
     }
   }
 }

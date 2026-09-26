@@ -118,41 +118,45 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "Gavin Uberti 的来源线索将其与Etched（联合创始人兼 CEO）关联。来源日期：2026-07-27；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "coverage_status": "researched",
+      "summary": "Gavin Uberti 是 Etched 联合创始人兼 CEO。公司领导团队页面称他曾获 Thiel Fellowship，是数学竞赛冠军及 Math 55 校友，专长 AI 编译器，并参与开发 TVM 的 Cortex-M 后端。相关成绩按公司官网自述记录。",
+      "current_roles": [
+        {
+          "organization": "Etched",
+          "title": "联合创始人兼首席执行官",
+          "source_id": "etched_leadership"
+        }
+      ],
       "career": [
         {
           "organization": "Etched",
           "title": "联合创始人兼 CEO",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将Gavin Uberti与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-0164bd71853acd7e"
+          "period": "公司官网现列；起始时间未披露",
+          "description": "公司官网将其描述为具备 AI 编译器专长，并称其开发了 TVM Cortex-M 后端。",
+          "source_id": "etched_leadership"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
+      "education": [
+        {
+          "institution": "Harvard University",
+          "qualification": "Math 55 校友；学位未披露",
+          "source_id": "etched_leadership"
+        }
+      ],
+      "experience_summary": "Etched 官网称其曾获 Thiel Fellowship、为数学竞赛冠军，并参与 TVM Cortex-M 后端开发；未补充具体竞赛或贡献范围。",
       "track_record": [],
       "sources": [
         {
-          "source_id": "FISRC-98b7c0b3b5f71805",
-          "source_url": "https://startupfortune.com/etched-raises-300m-at-a-103b-valuation-on-a-bet-that-transformer-only-chips-will-displace-nvidia-at-the-inference-layer/",
-          "source_title": "融资披露来源",
-          "source_content_hash": "b3842344845b7e31",
-          "quote": "Co-founder and CEO Gavin Uberti",
-          "quote_hash": "dc4a04302b5f24bd83132d9b36a4c762ad4e22dbbd228e6c66cdb515e0fbded4"
-        },
-        {
-          "source_id": "FISRC-0164bd71853acd7e",
-          "source_url": "https://www.hpcwire.com/off-the-wire/etched-raises-300m-to-scale-production-of-frontier-scale-inference-hardware/",
-          "source_title": "融资披露来源",
-          "source_content_hash": "acbb892603033145",
-          "quote": "Gavin Uberti, co-founder and CEO of Etched",
-          "quote_hash": "2cbcc3da8730ec088f801dfb16242832a5353f537757ad3774bec8cd639f347e"
+          "source_id": "etched_leadership",
+          "source_url": "https://www.etched.com/join/gtm",
+          "source_title": "Leadership Team — Etched",
+          "source_content_hash": "860454a9cf2491403b3f477982ceb457339602ca625fce2a4d116d310d97fc41",
+          "quote": "Gavin Uberti — Co-Founder & CEO. Harvard Thiel Fellow. World math champion, Math 55 alumnus, expert in AI compilers, developed the Cortex-M backend for TVM. Robert Wachen — Co-Founder & President. Harvard Thiel Fellow. Co-founded Prod ($100B+ cohort valuation) and Mentor Labs (acq. by Crimson Education).",
+          "quote_hash": "67fc0c2f6e555f6dcf2c1a9d71a0212400a1c35d474296af228ec28f37db52ad"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
     }
   },
   "relatedEntities": [],

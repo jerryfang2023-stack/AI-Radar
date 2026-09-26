@@ -111,33 +111,47 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "韩凯 的来源线索将其与基元律动（首席技术官）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "韩凯是基元律动联合创始人兼 CTO。界面新闻 2026 年 9 月报道其代表公司签署战略合作协议，并称其此前任华为诺亚方舟实验室首席研究员。其教育背景、具体研究成果和任职年份目前主要见公司自述页面，且页面文本存在明显编辑噪声，本档案暂不据此补录。",
+      "current_roles": [
+        {
+          "title": "联合创始人兼 CTO",
+          "organization": "上海基元律动科技有限公司",
+          "source_id": "hankai_jm_202609"
+        }
+      ],
       "career": [
         {
-          "organization": "基元律动",
-          "title": "首席技术官",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-f520919b3b468802"
+          "organization": "华为诺亚方舟实验室",
+          "title": "首席研究员（报道所述历史任职）",
+          "period": "具体任期未披露",
+          "description": "界面新闻称韩凯曾任华为诺亚方舟实验室首席研究员；未提供任职日期。",
+          "source_id": "hankai_jm_202609"
+        },
+        {
+          "organization": "上海基元律动科技有限公司",
+          "title": "联合创始人兼 CTO",
+          "period": "截至 2026 年 9 月",
+          "description": "在 2026 年 9 月公开报道的战略合作签约中代表基元律动签约。",
+          "source_id": "hankai_jm_202609"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
+      "experience_summary": "可核实资料支持其具有华为诺亚方舟实验室研究经历，并于 2026 年以基元律动联合创始人兼 CTO 身份公开活动；教育与具体技术成果待一手资料补证。",
       "track_record": [],
+      "coverage_status": "researched",
+      "identity_status": "verified",
+      "coverage_note": "仅录入界面新闻可核实的现任关联和历史任职，未采用公司人物故事页中无法独立验证的学历与成果描述。",
       "sources": [
         {
-          "source_id": "FISRC-f520919b3b468802",
-          "source_url": "https://www.itbear.com.cn/html/2026-08/1523509.html",
-          "source_title": "融资披露来源",
-          "source_content_hash": "18a9b52b0a810ded43ff3efaae2058ff201f4570ea2c0fcc4a1957035e64817e",
-          "quote": "首席技术官（CTO）韩凯是前华为诺亚方舟实验室首席研究员",
-          "quote_hash": "a494dfddd00d2519b9dae1d2d03d14d98b3fc0ab7b756b50546bfa36c99d9f70"
+          "source_id": "hankai_jm_202609",
+          "source_url": "https://www.jiemian.com/article/15103501.html",
+          "source_title": "无问芯穹与基元律动达成战略合作，以Agentic Infra加速企业级Agent规模化落地|界面新闻",
+          "source_content_hash": "2f038b5eabfbe47c90903cc607d8c14893dd13646b7878805d78cdad59061257",
+          "quote": "基元律动联合创始人兼CTO韩凯代表双方签署协议，曾任华为诺亚方舟实验室首席研究员。",
+          "quote_hash": "23e7454b7e4c77ff59a2b8196d4fa8279bef886c3ff9ba7a17f83f57c7c25a32"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

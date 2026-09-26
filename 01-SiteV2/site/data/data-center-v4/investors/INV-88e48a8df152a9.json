@@ -191,12 +191,21 @@
     ],
     "public_profile": {
       "profile_type": "person",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Frederic Kerrest 当前按“个人投资者”收录。最新融资披露记录日期为 2026-03-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "summary": "Frederic Kerrest 是 Okta 联合创始人、董事会副主席，曾于2009年至2023年11月担任首席运营官。加入 Okta 前，他曾在 Salesforce 从事销售与业务拓展，并在 Hummer Winblad Venture Partners 从事风险投资。",
       "facts": [],
-      "milestones": [],
+      "milestones": [
+        {
+          "date": "2009",
+          "description": "共同创立 Okta，并开始担任公司首席运营官。",
+          "source_id": "frederic_kerrest_okta"
+        },
+        {
+          "date": "2023-11",
+          "description": "结束 Okta 首席运营官任期；官网仍将其列为董事会副主席及联合创始人。",
+          "source_id": "frederic_kerrest_okta"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Sycamore · 种子轮 · 2026-03-30 · 本轮天使投资人 · $65 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -207,8 +216,80 @@
           "source_id": "FISRC-d354011359557f2f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Okta 官方领导团队简介",
+          "value": "Frederic Kerrest",
+          "url": "https://www.okta.com/en-gb/company/leadership/frederic-kerrest/",
+          "source_id": "frederic_kerrest_okta"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "董事会副主席、联合创始人",
+          "organization": "Okta",
+          "source_id": "frederic_kerrest_okta"
+        },
+        {
+          "title": "MIT Sloan 管理学院访问委员会成员",
+          "organization": "Massachusetts Institute of Technology",
+          "source_id": "frederic_kerrest_okta"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Okta",
+          "title": "联合创始人、董事会副主席；曾任首席运营官",
+          "period": "COO任期2009年至2023年11月",
+          "description": "Okta 官方人物简介介绍其负责公司日常运营，并参与企业战略、企业发展及合作关系。",
+          "source_id": "frederic_kerrest_okta"
+        },
+        {
+          "organization": "Salesforce",
+          "title": "销售与业务拓展",
+          "period": "加入 Okta 前；具体年份未披露",
+          "description": "Okta 官方人物简介所列此前工作经历。",
+          "source_id": "frederic_kerrest_okta"
+        },
+        {
+          "organization": "Hummer Winblad Venture Partners",
+          "title": "风险投资从业者",
+          "period": "加入 Okta 前；具体年份未披露",
+          "description": "Okta 官方人物简介所列此前风险投资经历。",
+          "source_id": "frederic_kerrest_okta"
+        }
+      ],
+      "education": [
+        {
+          "institution": "Stanford University",
+          "qualification": "计算机科学理学士",
+          "source_id": "frederic_kerrest_education"
+        },
+        {
+          "institution": "MIT Sloan School of Management",
+          "qualification": "创业与创新方向工商管理硕士",
+          "source_id": "frederic_kerrest_education"
+        }
+      ],
+      "experience_summary": "职业经历涵盖企业软件创业和经营、销售与业务拓展、风险投资及董事会治理；Okta 官网记载其为公司联合创始人和董事会副主席。",
       "sources": [
+        {
+          "source_id": "frederic_kerrest_okta",
+          "source_url": "https://www.okta.com/en-gb/company/leadership/frederic-kerrest/",
+          "source_title": "Frederic Kerrest | Okta",
+          "source_content_hash": "66afa3bbddc41dec4cd7f66133b6862944a1a9387c2e007f66772fd0b80dc2c6",
+          "quote": "Frederic Kerrest is Vice Chairman and co-founder of Okta. He served as Chief Operating Officer from 2009 to November 2023.",
+          "quote_hash": "d0a7496251da552147816167e4d3d192710c7046a134e0cf54ca9208eb8ef332"
+        },
+        {
+          "source_id": "frederic_kerrest_education",
+          "source_url": "https://www.okta.com/en-gb/company/leadership/frederic-kerrest/",
+          "source_title": "Frederic Kerrest | Okta",
+          "source_content_hash": "66afa3bbddc41dec4cd7f66133b6862944a1a9387c2e007f66772fd0b80dc2c6",
+          "quote": "Frederic earned a B.S. in computer science from Stanford University and an M.B.A. from MIT Sloan.",
+          "quote_hash": "7b50c5098ecc18ef4092915b5d1b012e37af9a940c039cb4339c506a9eb1da78"
+        },
         {
           "source_id": "FISRC-afa7f3db79250046",
           "source_url": "https://techcrunch.com/2026/03/30/former-coatue-partner-raises-huge-65m-seed-for-enterprise-ai-agent-startup/",
@@ -226,7 +307,9 @@
           "quote_hash": "9325486aa4b2dd0da6356f9b0043920a253600b917264f752a8bf72271d30b9d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

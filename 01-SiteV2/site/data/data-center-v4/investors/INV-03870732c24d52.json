@@ -245,14 +245,43 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Buckley Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Buckley Ventures 是由 Josh Buckley 领导的美国风险投资机构，官网介绍其集中投资互联网、软件和前沿科技领域的早期公司，并称其跨多支基金管理资产超过 10 亿美元。机构面向创业者提供创始人网络与运营支持；规模数字为公司自述。",
+      "facts": [
+        {
+          "field": "founder",
+          "label": "创始人/负责人",
+          "value": "Josh Buckley（官网所述）",
+          "source_id": "buckley_official"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期",
+          "source_id": "buckley_official"
+        },
+        {
+          "field": "sectors",
+          "label": "投资领域",
+          "value": [
+            "互联网",
+            "软件",
+            "前沿科技"
+          ],
+          "source_id": "buckley_official"
+        },
+        {
+          "field": "assets",
+          "label": "管理资产",
+          "value": "官网自述跨多支基金超过10亿美元；未独立核验口径及统计日期",
+          "source_id": "buckley_official"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官网称其组合覆盖多支早期科技基金及企业，未在本次档案中单独枚举项目，避免以非官方数据库推断组合完整性。",
+          "source_id": "buckley_official"
+        },
         {
           "description": "融资来源记录：Foundational Industries · 种子轮 · 2026-08-01 · 本轮参投 · $25 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e6ee0cd472bfb792"
@@ -266,8 +295,39 @@
           "source_id": "FISRC-62071134d28f47b9"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Buckley Ventures",
+          "url": "https://www.buckleyventures.com/",
+          "source_id": "buckley_official"
+        },
+        {
+          "kind": "email",
+          "label": "一般联系（非投资申请承诺）",
+          "value": "info@buckleyventures.com",
+          "url": "https://www.buckleyventures.com/contact",
+          "source_id": "buckley_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "buckley_official",
+          "source_url": "https://www.buckleyventures.com/",
+          "source_title": "Buckley Ventures - 官方网站",
+          "source_content_hash": "620df31a86c2fe120c97c8b881f49f5bb136bb963364a0e28280e89655892e26",
+          "quote": "Buckley Ventures官网称其为早期风险投资机构，集中投资互联网、软件及前沿科技领域，由Josh Buckley领导，跨多支基金管理资产超过10亿美元，并为创始人提供网络与公司建设支持。",
+          "quote_hash": "b5b153c3571ec894c6a0eb9ca86a6e531e9e9fc0851dcf709df44de915b41f45"
+        },
+        {
+          "source_id": "buckley_contact",
+          "source_url": "https://www.buckleyventures.com/contact",
+          "source_title": "Contact - Buckley Ventures",
+          "source_content_hash": "d5a689d797d1ad3f43410eaf3c9e47e785184eaddf11b75a8d01a1fb3c58d957",
+          "quote": "Buckley Ventures官网列出一般联系邮箱info@buckleyventures.com及媒体联系邮箱；本档案仅将一般邮箱作为公开联系入口，不表述为专门投资申请渠道。",
+          "quote_hash": "1fb2c5c0853440feed7dbf8ad6dbab27e05b3a6a03bac307d7d855f7cc603970"
+        },
         {
           "source_id": "FISRC-e6ee0cd472bfb792",
           "source_url": "https://aiweekly.co/alerts/foundational-industries-raises-25m-to-build-ai-run-factories",
@@ -293,7 +353,11 @@
           "quote_hash": "43b18a1ac783a5b2aecda37d5dfe5f4e674fa56f7f1ab21b2b165fded9ad59bb"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构定位、投资方向和管理规模均来自Buckley Ventures官网自述；超过10亿美元的资产规模未独立核验。邮箱为公开的一般联系入口，并非明确投资申请地址。",
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization"
     }
   }
 }

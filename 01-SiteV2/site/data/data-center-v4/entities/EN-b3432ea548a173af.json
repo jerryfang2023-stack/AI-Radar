@@ -108,33 +108,47 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "Antonio Mallia 的来源线索将其与Seltz（创始人兼CEO）关联。来源日期：2026-06-27；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "Seltz官网将Antonio Mallia列入公司团队成员名单，但未说明具体职务、任职时间、学历或此前公司。当前资料只确认其公开团队关联。",
+      "current_roles": [
+        {
+          "title": "团队成员（官网未列具体职称）",
+          "organization": "Seltz",
+          "source_id": "seltz_antonio_team"
+        }
+      ],
       "career": [
         {
           "organization": "Seltz",
-          "title": "创始人兼CEO",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将Antonio Mallia与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-2f4507e8abd3a500"
+          "title": "团队成员（官网未列具体职称）",
+          "period": "一手公开资料所示；起始时间未披露",
+          "description": "Seltz 官方 About 页面将 Antonio Mallia 列在团队成员名单中，但未披露其具体职称；不采用融资来源中的 CEO 标签覆盖这一差异。",
+          "source_id": "seltz_antonio_team"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
+      "experience_summary": "Seltz 官方 About 页面将 Antonio Mallia 列在团队成员名单中，但未披露其具体职称；不采用融资来源中的 CEO 标签覆盖这一差异。 当前可核实资料未披露完整任职起止时间和教育履历，相关字段不作推断。",
       "track_record": [],
       "sources": [
         {
-          "source_id": "FISRC-2f4507e8abd3a500",
-          "source_url": "https://fortune.com/2026/06/24/exclusive-seltz-a-startup-rebuilding-web-search-for-ai-agents-raises-12-5-million-in-seed-funding/",
-          "source_title": "融资披露来源",
-          "source_content_hash": "2159da855c1c45fd",
-          "quote": "Seltz founder and CEO Antonio Mallia",
-          "quote_hash": "d4efa49462b50750e4f5701136072000a7e1ef1ac88fed1e0d09985c8b859bab"
+          "source_id": "seltz_antonio",
+          "source_url": "https://seltz.ai/about",
+          "source_title": "About Us: Building Web Knowledge for the AI Era | Seltz",
+          "source_content_hash": "0f1ceda9ba1f7f0ebdcb59f8d19319e6ccd2ca840909f5b16b062c70944727d3",
+          "quote": "Seltz team member: Antonio Mallia.",
+          "quote_hash": "53fff35d26ac1c6ad1c4abc42254c74fc4b4b211e8da3e0745df06938b2783bc"
+        },
+        {
+          "source_id": "seltz_antonio_team",
+          "source_url": "https://seltz.ai/about",
+          "source_title": "About Seltz | Seltz",
+          "source_content_hash": "0f1ceda9ba1f7f0ebdcb59f8d19319e6ccd2ca840909f5b16b062c70944727d3",
+          "quote": "Built by Domain Experts — Antonio Mallia",
+          "quote_hash": "d4514e4f1eeee903a24939044562f015b30e18ea19b252cf8a0fa5038dee9c35"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "已核验该公开职业关联；未披露的任期、学历及其他履历保持未填写。"
     }
   },
   "relatedEntities": [],

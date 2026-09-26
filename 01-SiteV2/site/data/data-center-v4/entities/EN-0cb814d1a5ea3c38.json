@@ -111,33 +111,83 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "郭春雨 的来源线索将其与工至海洋（创始人兼董事长）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "郭春雨是工至海洋创始人，同时为哈尔滨工程大学在职教授、博士生导师，曾任青岛创新发展基地主任及船舶总体性能跨尺度测试分析团队负责人。校方报道显示他长期从事船舶水动力与水下推进科研，承担重点科研项目并获得国防科技进步等奖项；投资界2026年报道将其与工至海洋创业及深海装备商业化联系起来。",
+      "current_roles": [
+        {
+          "title": "教授、博士生导师（校方报道）",
+          "organization": "哈尔滨工程大学",
+          "source_id": "guochunyu_hrbeu"
+        },
+        {
+          "title": "创始人（2026年媒体报道）",
+          "organization": "工至海洋装备科技",
+          "source_id": "guochunyu_gongzhi_202609"
+        }
+      ],
       "career": [
         {
-          "organization": "工至海洋",
-          "title": "创始人兼董事长",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-74c8dd452bd30dd9"
+          "organization": "哈尔滨工程大学",
+          "title": "教授、博士生导师；船舶水动力与推进技术科研",
+          "period": "具体入职年份未披露",
+          "description": "校方报道列其为青岛创新发展基地主任及船舶总体性能跨尺度测试分析团队负责人，长期从事船舶水动力测试理论与方法研究。",
+          "source_id": "guochunyu_hrbeu"
+        },
+        {
+          "organization": "工至海洋装备科技",
+          "title": "创始人",
+          "period": "公司于2024年8月设立（媒体报道）；个人任职具体起始日未披露",
+          "description": "投资界将其列为创始人，报道方向为高端水下推进装备与仿生水下航行器研发制造。",
+          "source_id": "guochunyu_gongzhi_202609"
+        },
+        {
+          "organization": "上海交通大学",
+          "title": "博士后研究",
+          "period": "起止年份未披露",
+          "description": "投资界报道介绍其曾在上海交通大学从事博士后研究。",
+          "source_id": "guochunyu_gongzhi_202609"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "哈尔滨工程大学",
+          "qualification": "博士；校方报道确认其博士身份，专业和学位年份未披露",
+          "source_id": "guochunyu_hrbeu"
+        },
+        {
+          "institution": "University College London",
+          "qualification": "访问研究经历（媒体报道）；具体时间未披露",
+          "source_id": "guochunyu_gongzhi_202609"
+        }
+      ],
+      "experience_summary": "其学术与产业履历围绕船舶水动力、水下推进和极地船舶技术，兼具高校科研、科研平台管理与海洋装备创业经历。访问、博士后任期和项目个人贡献依现有公开来源标注，不作时间或贡献度外推。",
+      "track_record": [
+        {
+          "description": "哈尔滨工程大学报道列其主持国家级和重点科研项目，并获国防科技进步一等奖、海洋工程科学技术发明一等奖等奖项；按校方对个人及团队成果的归属呈现，不将团队成果都视为其个人独立完成。",
+          "source_id": "guochunyu_hrbeu"
+        }
+      ],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "高校身份、博士背景、研究方向和科研获奖来自哈尔滨工程大学新闻；工至海洋创始人及博士后、访问经历来自投资界报道。报道未明确教育和任职年份，故不补写具体时间。",
       "sources": [
         {
-          "source_id": "FISRC-74c8dd452bd30dd9",
-          "source_url": "https://www.lejucaijing.com/news-7501446247908832762.html",
-          "source_title": "融资披露来源",
-          "source_content_hash": "abc8d82b882b185aeaa1823ab9ae19f9c50bd280f0039fc1b1131992156e718b",
-          "quote": "而创始人兼董事长郭春雨为哈尔滨工程大学教授、博士生导师、国家杰出青年科学基金获得者。",
-          "quote_hash": "86484d17f4399f7e1f339ce08c34340fbaa79f35cba59dae9327ad464267f608"
+          "source_id": "guochunyu_hrbeu",
+          "source_url": "https://news.hrbeu.edu.cn/info/1141/73845.htm",
+          "source_title": "学校获批3个工信部重点实验室 - 哈尔滨工程大学新闻",
+          "source_content_hash": "da0f146606d3e5b3190e581f13586cfe6cb8c4bba80fb9d9e91763e4b1795dfb",
+          "quote": "哈尔滨工程大学新闻将郭春雨列为博士、教授、博士生导师、青岛创新发展基地主任及船舶总体性能跨尺度测试分析团队负责人，介绍其主持重点科研项目、从事船舶水动力测试，并获国防科技进步一等奖、海洋工程科学技术发明一等奖等奖励。",
+          "quote_hash": "2133a53bae15ee641cb5d65c9ec0531ac77a84cbbc58421001ab410560bca820"
+        },
+        {
+          "source_id": "guochunyu_gongzhi_202609",
+          "source_url": "https://news.pedaily.cn/202609/568489.shtml",
+          "source_title": "首发| 工至海洋融资近亿元，缔造深海最大天使轮 - 投资界",
+          "source_content_hash": "57cacd386e09eedb04f5ef9b0a1bdbdaa12a2afdbfb29b62d53ddcb34ff74885",
+          "quote": "投资界2026年报道将郭春雨称为工至海洋创始人，并介绍其哈尔滨工程大学本硕博、上海交通大学博士后及英国UCL访问经历，长期从事船舶推进、深海装备和极地技术研究；其参研蛟龙号和航母推进器等经历为该报道所述。",
+          "quote_hash": "ee211cbce808c1d1d750724c23f8c7387bddf4dff5f9216b6783fab8228bbf12"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

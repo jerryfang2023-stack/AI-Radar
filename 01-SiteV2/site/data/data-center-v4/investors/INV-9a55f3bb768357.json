@@ -139,19 +139,117 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "杭州科创集团 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "融资记录中列示杭州科创集团参与易启未来A轮联合投资；融资来源未披露具体管理基金或出资法律实体。官网另展示的科创金融平台统计没有标明统计截止日及是否仅对应该集团，故不将其解释为单只基金业绩。页面公开的0571-88030500为杭州资本网站总机，未证实是杭州科创集团独立投资申请电话。",
+      "summary": "杭州科创集团（杭州市科创集团有限公司）是杭州市国有资本投资运营有限公司全资拥有、以科技创新投资为主的国有投资公司。官网称其于2022年12月由杭高投与杭州投资发展公司整合组建，注册资本50亿元，按“投早、投小、投科、投未来”布局，并负责建设杭州科创基金及提供基金、股权、债权和科创金融服务。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "工商/官网名称",
+          "value": "杭州市科创集团有限公司（杭州科创）",
+          "source_id": "hz_scitech_official_profile"
+        },
+        {
+          "field": "ownership",
+          "label": "股权关系",
+          "value": "杭州市国有资本投资运营有限公司全资子公司。",
+          "source_id": "hz_scitech_official_profile"
+        },
+        {
+          "field": "registered_capital",
+          "label": "注册资本（官网披露）",
+          "value": "人民币50亿元。",
+          "source_id": "hz_scitech_official_profile"
+        },
+        {
+          "field": "investment_strategy",
+          "label": "投资原则",
+          "value": "投早、投小、投科、投未来；以政府引导、市场化运作为原则。",
+          "source_id": "hz_scitech_official_strategy"
+        },
+        {
+          "field": "business_lines",
+          "label": "业务板块",
+          "value": [
+            "科创基金管理",
+            "科创股权投资",
+            "科创债权融资",
+            "科创金融服务"
+          ],
+          "source_id": "hz_scitech_official_strategy"
+        },
+        {
+          "field": "platform_metrics",
+          "label": "官网科创金融赋能统计（未注明统计截止日）",
+          "value": "页面列示投资企业超2100家次、已投企业后轮融资超700亿元、批复基金超210支、基金规模超600亿元、培育上市公司118家；指标口径未进一步说明。",
+          "source_id": "hz_scitech_official_metrics"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2022-12-02",
+          "description": "以杭州市高科技投资有限公司和杭州投资发展有限公司为基础组建。",
+          "source_id": "hz_scitech_official_profile"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：易启未来 · A轮 · 2026-05-29 · 本轮联合投资 · 数千万。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "官网披露杭州科创基金规划规模为人民币1000亿元；官网“科创金融赋能”栏目另列多项平台级投资与服务指标，但未标明基准日期及单体口径。",
+          "source_id": "hz_scitech_official_strategy"
+        },
+        {
+          "description": "融资数据库收录：杭州科创集团被列为易启未来A轮联合投资方（2026-05-29，融资披露金额“数千万”）；原始融资来源未披露具体基金或法律出资主体。",
           "source_id": "FISRC-8dee449f158754f9"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方企业介绍（杭州资本网站）",
+          "value": "杭州市国有资本投资运营有限公司",
+          "url": "https://hzzbco.com/enterpriseTechnology",
+          "source_id": "hz_scitech_official_profile"
+        },
+        {
+          "kind": "phone",
+          "label": "杭州资本网站公开总机；未确认是杭州科创集团独立投资申请电话",
+          "value": "+86 571 8803 0500",
+          "source_id": "hz_capital_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "hz_scitech_official_profile",
+          "source_url": "https://hzzbco.com/enterpriseTechnology",
+          "source_title": "杭州市国有资本投资运营有限公司｜杭州科创集团企业简介",
+          "source_content_hash": "b5da4a1c0c641c1dac3b5c092c4ece7bee54785f8c659b3a8e8469cdbcaf4edc",
+          "quote": "杭州市科创集团有限公司（简称“杭州科创”）系杭州市国有资本投资运营有限公司全资子公司，于2022年12月2日以杭州市高科技投资有限公司（简称“杭高投”）和杭州投资发展有限公司（简称“杭投发”）为基础组建，功能定位以科创投资为主的国有投资公司，注册资金50亿元。",
+          "quote_hash": "7dad22bb170de288a8380164b09fc25333de8c15a7f59b60341ff1625aeb9016"
+        },
+        {
+          "source_id": "hz_scitech_official_strategy",
+          "source_url": "https://hzzbco.com/enterpriseTechnology",
+          "source_title": "杭州市国有资本投资运营有限公司｜杭州科创集团投资战略与业务",
+          "source_content_hash": "ec751e724793d608410d50b0525d614e6c4b4f4d0d937ca0014cc0edadb787e4",
+          "quote": "杭州科创坚持“投早投小投科投未来”原则，按照“政府引导，市场运作”方式，组建规模1000亿元的“杭州科创基金”，构建科创基金管理、科创股权投资、科创债权融资、科创金融服务四大业务版块。",
+          "quote_hash": "c2f9ce7bbb0cfeb1276274833ad00e438c17b4293cd2796f348674c0bdf937e2"
+        },
+        {
+          "source_id": "hz_scitech_official_metrics",
+          "source_url": "https://hzzbco.com/enterpriseTechnology",
+          "source_title": "杭州市国有资本投资运营有限公司｜科创金融赋能统计",
+          "source_content_hash": "92699f1bf080023aa9035474744bd43e3cbf010353ddd2e570c86b7d0307fd3c",
+          "quote": "官网“科创金融赋能”栏目列示：累计服务企业超10000家次，投资企业超2100家次，已投企业后轮融资超700亿元，批复基金超210支、基金规模超600亿元，培育上市公司118家，并捕获13家独角兽和205家准独角兽；页面未标明统计截止日。",
+          "quote_hash": "acb350d7f6da0b88127aedc4447f8d9027ad2d1969f82123fed7be19aaa3fd2a"
+        },
+        {
+          "source_id": "hz_capital_contact",
+          "source_url": "https://hzzbco.com/enterpriseTechnology",
+          "source_title": "杭州市国有资本投资运营有限公司｜网站联系方式",
+          "source_content_hash": "27c0516b6dd0b80935587d274fef27091b498b09b7bc4568410283c2327d241b",
+          "quote": "网站公开电话：0571-88030500。页面介绍杭州科创集团为杭州市国有资本投资运营有限公司全资子公司。",
+          "quote_hash": "52a8d10f1fef7a12d9562288a351354e4e2dbf0775b3ddee22b5a6912796b205"
+        },
         {
           "source_id": "FISRC-8dee449f158754f9",
           "source_url": "https://www.163.com/dy/article/KU5A7F9K05118K7K.html",
@@ -161,7 +259,7 @@
           "quote_hash": "935929a855326e91db9fbce28f1fdd3888c60666f0bb5405524e8f15668b7889"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

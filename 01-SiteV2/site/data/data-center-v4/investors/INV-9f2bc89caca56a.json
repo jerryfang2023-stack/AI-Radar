@@ -192,14 +192,42 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "HV Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "HV Capital is a European venture and growth investor. Its official site reports nine fund generations, approximately €2.8 billion AUM and investments in more than 290 companies. The firm states it backs founders from early venture through growth and cites companies including Zalando, Flix, Depop and Neura Robotics; these are firm-reported portfolio examples, not a complete investment list.",
+      "facts": [
+        {
+          "field": "fund_generations",
+          "label": "Fund generations",
+          "value": "9",
+          "source_id": "hv_capital_official"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "AUM（官网披露）",
+          "value": "约€2.8 billion",
+          "source_id": "hv_capital_official"
+        },
+        {
+          "field": "investment_count",
+          "label": "累计投资",
+          "value": "超过290家公司（官网口径）",
+          "source_id": "hv_capital_official"
+        },
+        {
+          "field": "stages",
+          "label": "投资阶段",
+          "value": [
+            "Venture",
+            "Growth"
+          ],
+          "source_id": "hv_capital_official"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "HV官网展示其投资组合中的Zalando、Flix、Depop、Neura Robotics等案例；公司规模与成果数字按基金官网自述，非本库完整投资组合或独立审计结果。",
+          "source_id": "hv_capital_official"
+        },
         {
           "description": "融资来源记录：Advanced Machine Intelligence Labs (AMI Labs) · 种子轮 · 2026-03-12 · 本轮联合领投 · 10.3亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6c35525e379488bf"
@@ -209,8 +237,24 @@
           "source_id": "FISRC-3b060063f33a012b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "HV Capital",
+          "url": "https://hvcapital.com/",
+          "source_id": "hv_capital_official"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "hv_capital_official",
+          "source_url": "https://hvcapital.com/",
+          "source_title": "HV Capital",
+          "source_content_hash": "cfccde2ec869a925bfa471e83d0f0d6964d3efde77a37dcde5cc9ce81b16bd10",
+          "quote": "With €2.8 billion in assets under management and a track record spanning nine fund generations, HV has invested in more than 290 companies across Europe, from consumer and software to deep tech and AI.",
+          "quote_hash": "9c07f2f988b43a2e3330430c94385f1e777a46b5ef3f817653dc9c5675feb5e1"
+        },
         {
           "source_id": "FISRC-6c35525e379488bf",
           "source_url": "https://futurumgroup.com/insights/yann-lecuns-ami-raises-1bn-seed-round-is-the-world-model-era-finally-here",
@@ -228,7 +272,11 @@
           "quote_hash": "a789bad22f9cd865b7693b62dac377a32df943daeb49e31344b27d827db6633c"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

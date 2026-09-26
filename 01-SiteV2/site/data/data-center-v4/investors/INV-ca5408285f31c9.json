@@ -296,13 +296,32 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "中国移动链长基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "融资披露中的“中国移动链长基金”是对中国移动产业链投资基金体系的简称，具体交易可能对应北京、上海或其他独立基金，不能仅凭简称当作单一法律基金。中国移动发挥现代产业链链长作用，采用产业基金和直投等方式围绕移动信息产业链、战略新兴产业及未来产业投资。",
+      "facts": [
+        {
+          "field": "sponsor",
+          "label": "发起/产业主体",
+          "value": "中国移动集团；单项基金的GP、管理人和LP结构需按具体基金核验",
+          "source_id": "chinamobile_hkex_annual_2025"
+        },
+        {
+          "field": "investment_focus",
+          "label": "产业方向",
+          "value": [
+            "移动信息产业链",
+            "战略性新兴产业",
+            "未来产业"
+          ],
+          "source_id": "chinamobile_hkex_annual_2025"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2022年前后",
+          "description": "中国移动公开资料显示其设立产业链链长基金并通过基金与直投协同开展产业投资；具体基金产品分别设立。",
+          "source_id": "chinamobile_hkex_annual_2025"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：弧光量子 · 战略融资 · 2026-09-18 · 本轮参投 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -317,8 +336,40 @@
           "source_id": "FISRC-b96684face6f5223"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "中国移动官网",
+          "value": "集团公开信息入口；未确认基金项目申请渠道",
+          "url": "https://www.chinamobile.com/",
+          "source_id": "chinamobile_site_202609"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "chinamobile_hkex_annual_2025",
+          "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0807/2025080700813_c.pdf",
+          "source_title": "中国移动有限公司2025年中期报告",
+          "source_content_hash": "c620dd2dfa8b744afc942cec5915a05768d3aa475c701f638cc779fcafcce844",
+          "quote": "中国移动2025年中期报告将产业链链长基金列为其产业投资布局方式之一，并记录集团通过基金投资与直投协同推进产业链投资。",
+          "quote_hash": "2547211c13aec527d10138ad9e933237beca0812dcd90443c9b530ed5e913404"
+        },
+        {
+          "source_id": "chinamobile_ir_annual_2024",
+          "source_url": "https://www.chinamobileltd.com/sc/ir/reports/sd2024_ashare.pdf",
+          "source_title": "中国移动2024年可持续发展报告",
+          "source_content_hash": "be39f9811099e337003bc30ea5248ce3cfdafb7e439cf7c9b68c79db7977c2c1",
+          "quote": "中国移动可持续发展报告介绍集团作为信息现代产业链链长推动产业生态、上下游协作与产业投资。",
+          "quote_hash": "5ec974d80e47e4dfffb6dc2d0bc4b112478f1e2b429a2215bb33c4667c217fd8"
+        },
+        {
+          "source_id": "chinamobile_site_202609",
+          "source_url": "https://www.chinamobile.com/",
+          "source_title": "中国移动官方网站",
+          "source_content_hash": "e6bdb3297cea5aea703e474650c6c541dfdd7c31c81273c9f48b14d7e4fef2e8",
+          "quote": "中国移动官网为集团公开网站和联系入口；本档案不将集团客服渠道标为基金项目申报渠道。",
+          "quote_hash": "a25b3583f963e40935b273fc3467ccce6b59a95723c19a3b1c4d626fdb83b5b9"
+        },
         {
           "source_id": "FISRC-b6f0082c9f0d425c",
           "source_url": "https://news.pedaily.cn/202609/569239.shtml",
@@ -344,7 +395,11 @@
           "quote_hash": "2c7a017683a1b0f38e874bdd012938f92c6ee4e7adca7b335d3537ae2cd74b61"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "coverage_note": "以中国移动上市公司及可持续发展报告为依据。融资库所用简称可能覆盖多个基金产品，未把产业投资总规模写作本基金规模，亦未将集团网站作为项目申报联系方式。",
+      "identity_status": "verified"
     }
   }
 }

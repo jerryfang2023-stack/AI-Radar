@@ -131,33 +131,46 @@
       }
     },
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "任瑜 的来源线索将其与开物纪（产业CTO）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "开物纪融资报道将任瑜博士列为产业CTO，称其有20余年产业落地经验，并曾在BASF负责战略选品、技术工程化和量产推进。报道未提供其完整任职时间线。",
+      "current_roles": [
+        {
+          "title": "产业CTO（报道口径）",
+          "organization": "开物纪",
+          "source_id": "pedaily_kaiwu"
+        }
+      ],
       "career": [
+        {
+          "organization": "BASF",
+          "title": "材料战略选品、工程化与量产相关工作（职级未详）",
+          "period": "任期未披露",
+          "description": "融资报道描述其长期负责的工作范围。",
+          "source_id": "pedaily_kaiwu"
+        },
         {
           "organization": "开物纪",
           "title": "产业CTO",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-3d10ec9bd5ef3ad4"
+          "period": "2026年融资报道时点",
+          "description": "以投资界报道口径列示；任职起止时间未披露。",
+          "source_id": "pedaily_kaiwu"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
+      "experience_summary": "报道强调其材料产业化与量产经验，未提供具体项目名称或独立验证的经营成绩。",
       "track_record": [],
       "sources": [
         {
-          "source_id": "FISRC-3d10ec9bd5ef3ad4",
+          "source_id": "pedaily_kaiwu",
           "source_url": "https://news.pedaily.cn/202603/562002.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "d5d8d61ad1133bc1",
-          "quote": "担任产业CTO的任瑜博士，则拥有20余年产业落地经验，曾于BASF等材料龙头企业长期负责战略选品、复杂技术体系的工程化与量产推进。",
-          "quote_hash": "a81262032cdbcf9e0aece12a4f4ca8e110852fd7a70435189e578f92b7221d47"
+          "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
+          "source_content_hash": "b35e078d36ea5c1c81efa816d118abf88cb3534d1c29e353bf807e99541d24a5",
+          "quote": "开物纪联合创始人杨孟洋博士曾任微软高级研究经理；担任产业CTO的任瑜博士拥有20余年产业落地经验，曾于BASF等材料龙头企业负责战略选品、复杂技术体系的工程化与量产推进。",
+          "quote_hash": "74b8739cab94c451b7dee315d8e972c71822ff2adae0bf296ea2d24ec5153cde"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
     }
   },
   "relatedEntities": [],

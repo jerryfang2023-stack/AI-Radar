@@ -187,12 +187,16 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "水木清华校友基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "unverified",
+      "summary": "“水木清华校友基金”与清华官方资料所称“水木清华校友种子基金”名称相近，但现有证据不足以确认二者为同一法律主体或基金产品。该记录在融资活动中与硅基流动、容芯致远等交易关联，不能仅凭名称相似合并至已核验的种子基金档案。",
+      "facts": [
+        {
+          "field": "identity_status",
+          "label": "主体身份",
+          "value": "待核验：需基金全称、管理人或官方披露确认与“水木清华校友种子基金”的关系。",
+          "source_id": "shuimu_name_candidate"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -205,7 +209,18 @@
         }
       ],
       "contacts": [],
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "名称近似仅作为核验线索；暂不复用相似基金的背景、联系方式或投资组合。",
       "sources": [
+        {
+          "source_id": "shuimu_name_candidate",
+          "source_url": "https://sanchuang.tsinghua.org.cn/home/detail/leading/1",
+          "source_title": "水木清华校友种子基金 - 清华校友三创大赛",
+          "source_content_hash": "7f13412f6a00aad1e56001ae286f6b67ee532078473cddc30cf494f199e1523d",
+          "quote": "清华官方页面使用的完整名称为“水木清华校友种子基金”；这不足以证明简称相似的其他数据库记录与其为同一基金。",
+          "quote_hash": "b64f06d2936d1d4929247e8dd14101b56133c60d0c69717f12ef69d9abecf06b"
+        },
         {
           "source_id": "FISRC-c1c9258fc2a6aa50",
           "source_url": "https://c.m.163.com/news/a/KVI76U30051180F7.html",
@@ -223,7 +238,7 @@
           "quote_hash": "1268be5eb46af49b91553a5e559123a667d5373f1faaf25d9a7c3cfbcb145388"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

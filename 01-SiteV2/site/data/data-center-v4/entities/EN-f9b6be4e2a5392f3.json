@@ -111,33 +111,46 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "温德亮 的来源线索将其与红熊AI（创始人兼CEO）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "SVTR人物页面列温德亮为红熊AI创始人、CEO及首席科学家，并记载其曾在阿里巴巴、盘石、复星担任副总裁、CTO或CIO等职务。具体公司对应职级和任职时间未在该页面逐一说明。",
+      "current_roles": [
+        {
+          "title": "创始人、CEO、首席科学家（人物资料口径）",
+          "organization": "红熊AI",
+          "source_id": "svtr_wen"
+        }
+      ],
       "career": [
         {
+          "organization": "阿里巴巴、盘石、复星",
+          "title": "曾任副总裁、CTO或CIO；具体对应关系未披露",
+          "period": "任期未披露",
+          "description": "依据人物资料的概括性描述，未将职级强行匹配到单一公司。",
+          "source_id": "svtr_wen"
+        },
+        {
           "organization": "红熊AI",
-          "title": "创始人兼CEO",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将温德亮与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-c85560272b80b0a0"
+          "title": "创始人、CEO、首席科学家",
+          "period": "人物资料披露时点",
+          "description": "企业级AI与记忆产品创业经历。",
+          "source_id": "svtr_wen"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
+      "experience_summary": "公开人物资料称其在企业数字化、技术交付方面有十余年经验；任职时间、教育经历和相关业绩口径仍需进一步核验。",
       "track_record": [],
       "sources": [
         {
-          "source_id": "FISRC-c85560272b80b0a0",
-          "source_url": "https://finance.sina.com.cn/stock/t/2026-01-05/doc-inhfhavn6757476.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "6283ceb69b58d1ada29281d367c6463ac54cbfb398e5062b93db70fac4d03263",
-          "quote": "红熊AI创始人兼CEO温德亮表示，AI竞争已进入基础科学与核心技术的“硬较量”阶段。",
-          "quote_hash": "49407d8c5fdb2595e728f1c94991e4b56e8d0cdfdb1d4bf94a4fba7ec359450e"
+          "source_id": "svtr_wen",
+          "source_url": "https://svtr.ai/persons/wen-deliang",
+          "source_title": "Wen Deliang · SVTR",
+          "source_content_hash": "14a52f0ccd9e4dadbca978e671c26564ad373f9081b0ad5dbd409e78c31cff4f",
+          "quote": "Wen Deliang, Founder/CEO and Chief Scientist of Red Bear AI. Previously served as Vice President, CTO, and CIO at Alibaba, Panshi, and Fosun.",
+          "quote_hash": "4af49f5588f9ff16d286a4cb371aec122d84da588acbb4410d9f9ce5f70a01f7"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
     }
   },
   "relatedEntities": [],

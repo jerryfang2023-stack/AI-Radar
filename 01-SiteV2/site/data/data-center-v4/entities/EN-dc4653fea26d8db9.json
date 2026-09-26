@@ -111,33 +111,46 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "温明星 的来源线索将其与星际觅元（创始人）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
-      "career": [
+      "summary": "温明星为星际觅元创始人。投资界公开公司简介称其为博士及中新国际联合研究院智能感知创新研发中心执行主任，并由其创立星际觅元；目前没有找到足以核验的公开一手个人履历、学历院校、研究成果或过往关联公司，因此本档案只确认报道中明确的身份。",
+      "current_roles": [
         {
-          "organization": "星际觅元",
           "title": "创始人",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-21d53f49c93ea68c"
+          "organization": "星际觅元",
+          "source_id": "wen_pedaily"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
+      "career": [
+        {
+          "organization": "中新国际联合研究院智能感知创新研发中心",
+          "title": "执行主任（媒体资料所述）",
+          "period": "报道时所述；任期未披露",
+          "description": "投资界公司简介称其担任中心执行主任，未提供可独立核实的任职起始时间或详细履历。",
+          "source_id": "wen_pedaily"
+        }
+      ],
+      "education": [
+        {
+          "institution": "未披露",
+          "qualification": "博士（报道所称）",
+          "source_id": "wen_pedaily"
+        }
+      ],
+      "experience_summary": "当前来源仅支持其博士身份、中心执行主任及星际觅元创始人身份；教育机构、学术成果、历史任职和其他公司关联仍待一手来源补充。",
       "track_record": [],
       "sources": [
         {
-          "source_id": "FISRC-21d53f49c93ea68c",
-          "source_url": "https://finance.sina.com.cn/jjxw/2026-08-27/doc-iniptnux5501287.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "9d467a65d3cd4704",
-          "quote": "由中新国际联合研究院智能感知创新研发中心执行主任温明星博士创立",
-          "quote_hash": "2a995b40c9efab0127b04768dd52638555903f3001ba0d16ac6f23ba890aa106"
+          "source_id": "wen_pedaily",
+          "source_url": "https://m.pedaily.cn/vc/company/902061.html",
+          "source_title": "投资界：星际觅元公司简介",
+          "source_content_hash": "f2ca32c73507f3b8fdb8156cfd63744344c7a36babeaeba30772df2098ccfa83",
+          "quote": "投资界资料称星际觅元由中新国际联合研究院智能感知创新研发中心执行主任温明星博士创立。",
+          "quote_hash": "bbf7419b4f1fec5336c854b9bfcbea32f22e2f5ec9265c97b84721bce1379f89"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "这是一份范围受限的公开资料档案；没有把新闻简历线索扩展成未经核验的完整履历。",
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

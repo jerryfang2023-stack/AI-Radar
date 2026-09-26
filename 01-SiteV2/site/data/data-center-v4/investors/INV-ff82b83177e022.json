@@ -191,12 +191,32 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "HubSpot Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "HubSpot Ventures是HubSpot关联的企业投资平台，面向全球种子至B轮创业公司，初始投资通常为50万至500万美元，重点支持面向中小企业的软件、AI与智能体、金融科技与商业、数据基础设施，并提供HubSpot商业生态、集成与运营资源。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "种子轮至B轮",
+          "source_id": "hubspot_ventures_official_202609"
+        },
+        {
+          "field": "initial_check",
+          "label": "初始投资区间",
+          "value": "50万至500万美元",
+          "source_id": "hubspot_ventures_official_202609"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": [
+            "面向中小企业的智能应用",
+            "金融科技与商业",
+            "AI与智能体开发",
+            "数据基础设施"
+          ],
+          "source_id": "hubspot_ventures_official_202609"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -208,8 +228,24 @@
           "source_id": "FISRC-fd79c7fe51adf731"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "HubSpot Ventures官方页面",
+          "value": "投资策略、组合公司与生态介绍",
+          "url": "https://www.hubspot.com/ventures",
+          "source_id": "hubspot_ventures_official_202609"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "hubspot_ventures_official_202609",
+          "source_url": "https://www.hubspot.com/ventures",
+          "source_title": "HubSpot Ventures",
+          "source_content_hash": "716a7721568634b4b85c6d2236c0f668082ee96e8061d41ac63a6e9582e6f46a",
+          "quote": "HubSpot Ventures官网称其面向种子至B轮、全球投资，初始支票通常为50万至500万美元，关注SMB智能应用、金融科技与商业、AI及智能体开发、数据基础设施，并以HubSpot生态支持被投公司。",
+          "quote_hash": "d55f0484de945272016873989aa86249a6a7ef4ccdf3072fb74294b6aec4b7ce"
+        },
         {
           "source_id": "FISRC-a7e59a61493f0ad8",
           "source_url": "https://www.prnewswire.com/news-releases/realm-raises-4-5m-to-bring-the-cursor-moment-to-enterprise-sales-302750020.html",
@@ -227,7 +263,11 @@
           "quote_hash": "483e88788c1a36c5ca0218faa015936d5b0a11f1028761b2d841abd0e7676d33"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "coverage_note": "阶段、金额范围和投资主题来自官网；未找到单独公开的BP邮箱，官网作为机构信息入口保留。",
+      "identity_status": "verified"
     }
   }
 }

@@ -111,33 +111,88 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "朱军 的来源线索将其与生数科技（创始人）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "朱军是清华大学计算机系教授、清华大学人工智能研究院副院长及生数科技创始人、首席科学家，研究领域包括机器学习、深度学习与数据挖掘。清华教师主页记录其计算机专业本科学位和博士学位均来自清华大学；清华新闻确认其参与生数科技创业并公开介绍Vidu视频生成模型。",
+      "current_roles": [
+        {
+          "title": "教授",
+          "organization": "清华大学计算机科学与技术系",
+          "source_id": "zhujun_tsinghua"
+        },
+        {
+          "title": "副院长",
+          "organization": "清华大学人工智能研究院",
+          "source_id": "zhujun_company"
+        },
+        {
+          "title": "创始人、首席科学家",
+          "organization": "生数科技",
+          "source_id": "zhujun_company"
+        }
+      ],
       "career": [
         {
+          "organization": "卡内基梅隆大学",
+          "title": "博士后研究员",
+          "period": "2009—2011年（清华主页及公开履历）",
+          "description": "从事计算机科学相关研究。",
+          "source_id": "zhujun_tsinghua"
+        },
+        {
+          "organization": "清华大学计算机科学与技术系",
+          "title": "教授",
+          "period": "2011年至今（教师主页及公开履历）",
+          "description": "开展机器学习基础理论、高效算法及应用研究。",
+          "source_id": "zhujun_tsinghua"
+        },
+        {
           "organization": "生数科技",
-          "title": "创始人",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将朱军与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-fd865802af815ab3"
+          "title": "创始人、首席科学家",
+          "period": "2023年公司创立后；2025—2026年清华公开报道确认",
+          "description": "推动视频生成模型Vidu研发及产业化。",
+          "source_id": "zhujun_company"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "清华大学",
+          "qualification": "计算机工学学士，2005年",
+          "source_id": "zhujun_tsinghua"
+        },
+        {
+          "institution": "清华大学",
+          "qualification": "计算机工学博士，2009年",
+          "source_id": "zhujun_tsinghua"
+        }
+      ],
+      "experience_summary": "学术工作聚焦机器学习、贝叶斯方法、深度学习与数据挖掘，并具有高校教研、国际学术服务和科技创业经历。",
+      "track_record": [
+        {
+          "description": "清华公开报道将其列为生数科技创始人，并记录其在中关村论坛介绍通用世界模型与Vidu相关技术方向；公司产品介绍按公开报道口径。",
+          "source_id": "zhujun_company"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-fd865802af815ab3",
-          "source_url": "https://news.pedaily.cn/202604/562614.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "a281cc701a9028fb",
-          "quote": "生数科技创始人朱军表示",
-          "quote_hash": "bc4d3da56d97f9558c6311d23c13cd31d5b30e457a31def253020d0626b9d603"
+          "source_id": "zhujun_tsinghua",
+          "source_url": "https://www.cs.tsinghua.edu.cn/info/1121/3551.htm",
+          "source_title": "朱军教师主页 - 清华大学计算机科学与技术系",
+          "source_content_hash": "65dc0069a4cfcd9b3937abbf658c857cf544b9a6fb3ed164a4ed1af8870b5301",
+          "quote": "清华教师主页列出朱军的教授职称、计算机学士及博士教育背景和机器学习研究领域。",
+          "quote_hash": "2c8fe953d4311ade849bbd8abe6d1e1d8daddbab6801ecf35df5b41a39701045"
+        },
+        {
+          "source_id": "zhujun_company",
+          "source_url": "https://www.tsinghua.edu.cn/info/1182/125075.htm",
+          "source_title": "朱军在2026中关村论坛介绍通用世界模型 - 清华大学",
+          "source_content_hash": "3c36ba0d1f71fe969846f607eb398ee73c4d49e5a5a912a1390613f72cc989d6",
+          "quote": "清华新闻将朱军称为生数科技创始人、清华人工智能研究院副院长，并记载其在论坛作主题演讲。",
+          "quote_hash": "603f3cd9cf3c0bb2a600eb62a8865993c613d5b132534add01f4c3aedc5c9dd6"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "教育与清华任职依据校方教师主页；企业创业和现任学术职务依据清华公开报道。",
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

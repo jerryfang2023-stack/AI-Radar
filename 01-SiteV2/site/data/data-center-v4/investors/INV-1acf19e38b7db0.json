@@ -186,14 +186,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Sound Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Sound Ventures 是一家风险投资机构。其 2026 年官方说明称，Guy Oseary 与 Effie Epstein 将继续领导机构，Ashton Kutcher 转任高级顾问；机构称其 AI 策略已向 Anthropic、OpenAI 与 World Labs 的早期集中头寸投入超过 8 亿美元。金额与组合描述为机构自述。",
+      "facts": [
+        {
+          "field": "leadership",
+          "label": "官网公布的领导安排（2026）",
+          "value": "Guy Oseary 与 Effie Epstein 继续领导；Ashton Kutcher 转任高级顾问。",
+          "source_id": "sound_news_2026"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026-05-21",
+          "description": "Sound Ventures 公告公布领导分工调整：Guy Oseary 与 Effie Epstein 继续领导，Ashton Kutcher 转任高级顾问。",
+          "source_id": "sound_news_2026"
+        }
+      ],
       "track_record": [
+        {
+          "description": "机构称其 AI 策略在 Anthropic、OpenAI、World Labs 早期集中投资中部署超过 8 亿美元；此为机构披露金额，不等于已实现收益或基金回报。",
+          "source_id": "sound_news_2026"
+        },
         {
           "description": "融资来源记录：Stability AI · B轮 · 2026-08-25 · 历史投资方 · $76 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-8dc1d59b723b2466"
@@ -203,8 +216,32 @@
           "source_id": "FISRC-d51cd72272f38425"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Sound Ventures",
+          "url": "https://www.soundventures.com/",
+          "source_id": "sound_team"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "sound_news_2026",
+          "source_url": "https://www.soundventures.com/news",
+          "source_title": "NEWS | Sound Ventures",
+          "source_content_hash": "f5fc84ec322c5b3653bc4b20fd0f8dcf19fcd205c9122bd35962032e09301ef2",
+          "quote": "Guy Oseary and Effie Epstein will continue leading Sound. Ashton Kutcher will transition to a senior advisory role. The firm says its AI strategy deployed over $800 million in concentrated early positions in Anthropic, OpenAI, and World Labs.",
+          "quote_hash": "258c865e62bb055ae3f1a07ae56c6cb89b6dfd1a73d91796818bf068d6c63ca6"
+        },
+        {
+          "source_id": "sound_team",
+          "source_url": "https://www.soundventures.com/team",
+          "source_title": "Team | Sound Ventures",
+          "source_content_hash": "3ddd170f2470d5044c640f338db5647bd7b9f6e69f13c92a475e4a5811d98f59",
+          "quote": "Sound Ventures team.",
+          "quote_hash": "19709ffa3039f7ef156367da8a5a94e82114a20d0aedd3beb547c7d2cd7c6c28"
+        },
         {
           "source_id": "FISRC-8dc1d59b723b2466",
           "source_url": "https://whbl.com/2024/05/16/stability-ai-in-talks-to-raise-money-from-investor-group/",
@@ -222,7 +259,11 @@
           "quote_hash": "2ea82ee3fbfb7e2d07754c259c9eaaff262042adcc5a4e49f9c497c09688f339"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

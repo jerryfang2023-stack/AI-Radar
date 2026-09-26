@@ -111,33 +111,46 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "幺宏顺 的来源线索将其与幻码跃迁（首席执行官）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "投资界公司融资披露将幺宏顺称为幻码跃迁CEO，并称其于2021年加入百度量子计算研究所、参与PaddleQuantum核心模块研发。该来源没有列明学位或任职起止时间。",
+      "current_roles": [
+        {
+          "title": "CEO（融资披露口径）",
+          "organization": "幻码跃迁",
+          "source_id": "pedaily_yaohongshun"
+        }
+      ],
       "career": [
         {
+          "organization": "百度量子计算研究所",
+          "title": "参与PaddleQuantum核心模块研发",
+          "period": "2021年加入；结束时间未披露",
+          "description": "来源仅称参与研发，不扩展具体贡献。",
+          "source_id": "pedaily_yaohongshun"
+        },
+        {
           "organization": "幻码跃迁",
-          "title": "首席执行官",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-7c0e1d89cdf9af82"
+          "title": "CEO",
+          "period": "融资披露时点；任期未披露",
+          "description": "投资界融资披露中的公司身份。",
+          "source_id": "pedaily_yaohongshun"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
+      "experience_summary": "目前可核验履历包括量子软件研发与创业管理两条线索；学历和更完整职业时间线未披露。",
       "track_record": [],
       "sources": [
         {
-          "source_id": "FISRC-7c0e1d89cdf9af82",
+          "source_id": "pedaily_yaohongshun",
           "source_url": "https://news.pedaily.cn/202607/566249.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "340f8c8784943503",
-          "quote": "CEO 幺宏顺 2021 年加入百度量子计算研究所参与 PaddleQuantum 核心模块研发",
-          "quote_hash": "b4d5f19b5257f414e5948c0a7b0de9a6f08b15783de84807b0e2a0c4c7e99265"
+          "source_title": "幻码跃迁融资披露 - 投资界",
+          "source_content_hash": "f840474a87d75d6ed24df2f3ab9c5ad33988880fd19bdd3192be76e6acd42ad0",
+          "quote": "CEO幺宏顺2021年加入百度量子计算研究所，参与PaddleQuantum核心模块研发。",
+          "quote_hash": "96b14ac71340cb80c8a9163c5c5548423ed018206ac2ba82d7331a1a6d3c3584"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
     }
   },
   "relatedEntities": [],

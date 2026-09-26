@@ -131,19 +131,175 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "北京经开区产业升级基金(亦国投) 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "北京经济技术开发区产业升级股权投资基金是北京经开区政府投资引导基金的专项子基金，采用有限合伙形式，首期规模20.01亿元，由北京亦庄国际产业投资管理有限公司担任基金管理人。该基金面向经开区重大产业项目进行直接股权投资，重点覆盖新一代信息技术、机器人与智能制造、生物医药、新能源智能汽车和数字经济，并要求投资与本地产业发展相衔接。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "基金全称",
+          "value": "北京经济技术开发区产业升级股权投资基金，简称“产业升级基金”。融资信息中的“北京经开区产业升级基金（亦国投）”为简称。",
+          "source_id": "bj_econ_fund"
+        },
+        {
+          "field": "fund_type_and_parent",
+          "label": "基金层级与用途",
+          "value": "北京经开区政府投资引导基金的专项子基金，设立目的之一是对经开区重大项目开展直接股权投资。",
+          "source_id": "bj_econ_parent"
+        },
+        {
+          "field": "initial_scale",
+          "label": "首期规模",
+          "value": "20.01亿元，设立信息于2023年4月由北京经开区公布。经开区政府投资引导基金首期规模100亿元为上层母基金数据，不能与本专项子基金规模混为一谈。",
+          "source_id": "bj_econ_fund"
+        },
+        {
+          "field": "investment_manager",
+          "label": "基金管理人",
+          "value": "北京亦庄国际产业投资管理有限公司，负责基金日常经营管理。",
+          "source_id": "bj_econ_manager"
+        },
+        {
+          "field": "investment_focus",
+          "label": "重点投资方向",
+          "value": "新一代信息技术、机器人与智能制造、生物技术与大健康、新能源智能汽车、数字经济等经开区重点产业。",
+          "source_id": "bj_econ_focus"
+        },
+        {
+          "field": "investment_rules",
+          "label": "项目与落地要求",
+          "value": "被投企业原则上需在北京经开区注册、纳税并纳入统计；投资后3年内新增在区内投资原则上不低于该基金股权投资金额的2倍；单个项目投资后持股比例原则上不超过30%，且不能成为第一大股东。",
+          "source_id": "bj_econ_rules"
+        },
+        {
+          "field": "return_and_governance",
+          "label": "收益与治理安排",
+          "value": "基金不设置门槛收益，投资收益全部分配给出资人，基金管理人不收取超额收益；经开区工委、管委会为最高决策机构。",
+          "source_id": "bj_econ_governance"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2023-04-07",
+          "description": "北京经开区公布产业升级基金设立信息，披露首期20.01亿元、主要投资方向和基金管理人。",
+          "source_id": "bj_econ_fund"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：奕行智能 · 轮次未披露 · 2026-09-18 · B轮联合领投 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-57fa132710ceea85"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "label": "管理人关联公司亦庄国投公开咨询热线",
+          "value": "010-81057999",
+          "source_id": "bj_econ_parent_phone"
+        },
+        {
+          "kind": "address",
+          "label": "管理人关联公司亦庄国投公开地址",
+          "value": "北京经济技术开发区荣华中路22号亦城财富中心A座23-25层",
+          "source_id": "bj_econ_parent_address"
+        },
+        {
+          "kind": "website",
+          "label": "基金设立信息",
+          "value": "北京经开区官方发布",
+          "url": "https://kfqgw.beijing.gov.cn/ywdt/tt/cxfw/202304/t20230407_4180165.html",
+          "source_id": "bj_econ_fund"
+        },
+        {
+          "kind": "website",
+          "label": "亦庄国投管理人关联公司网站",
+          "value": "北京亦庄国际投资发展有限公司",
+          "url": "https://www.etowncapital.com/",
+          "source_id": "bj_econ_contact"
+        }
+      ],
+      "coverage_note": "基金名称、首期规模、管理人和投资规则取自北京经开区官方发布。亦庄国投母基金网站披露的基金数量、基金总规模和投资案例属于上层母基金整体口径，本档案未将其归给本专项基金。公开电话和地址来自管理人关联公司的亦庄国投网站，不视为该有限合伙基金独立办公地址。融资数据库中奕行智能的投资记录来自二级新闻披露，并非基金官方完整组合。",
       "sources": [
+        {
+          "source_id": "bj_econ_fund",
+          "source_url": "https://kfqgw.beijing.gov.cn/ywdt/tt/cxfw/202304/t20230407_4180165.html",
+          "source_title": "首期规模20.01亿元 北京经开区特设产业升级股权投资基金 - 北京经开区",
+          "source_content_hash": "c2551ce6b152cee6be2ad7ea992585b39a53f242316de0223e8bcbe605c672e6",
+          "quote": "北京经开区设立北京经济技术开发区产业升级股权投资基金（以下简称“产业升级基金”），首期规模达20.01亿元。",
+          "quote_hash": "7fc64944dd105d1e1e42a8d23ecdccfd1a8040680076bc952ba530ce19ce17c2"
+        },
+        {
+          "source_id": "bj_econ_parent",
+          "source_url": "https://kfqgw.beijing.gov.cn/ywdt/tt/cxfw/202304/t20230407_4180165.html",
+          "source_title": "首期规模20.01亿元 北京经开区特设产业升级股权投资基金 - 北京经开区",
+          "source_content_hash": "c2551ce6b152cee6be2ad7ea992585b39a53f242316de0223e8bcbe605c672e6",
+          "quote": "产业升级基金属于引导基金的专项子基金，对事关北京经开区经济发展和产业促进的重大项目进行直接股权投资。",
+          "quote_hash": "a5c902732a6aafadd9d1fd1a218ebab3e4a76270d09a77cd19e6ab80490ee562"
+        },
+        {
+          "source_id": "bj_econ_manager",
+          "source_url": "https://kfqgw.beijing.gov.cn/ywdt/tt/cxfw/202304/t20230407_4180165.html",
+          "source_title": "首期规模20.01亿元 北京经开区特设产业升级股权投资基金 - 北京经开区",
+          "source_content_hash": "c2551ce6b152cee6be2ad7ea992585b39a53f242316de0223e8bcbe605c672e6",
+          "quote": "北京亦庄国际产业投资管理有限公司则是产业升级基金管理人，按照合伙协议的约定负责基金的日常经营管理。",
+          "quote_hash": "70b6c941821b0f015e32a9231aa316926bb25ba5f983e32da863546dfd5e5c92"
+        },
+        {
+          "source_id": "bj_econ_focus",
+          "source_url": "https://kfqgw.beijing.gov.cn/ywdt/tt/cxfw/202304/t20230407_4180165.html",
+          "source_title": "首期规模20.01亿元 北京经开区特设产业升级股权投资基金 - 北京经开区",
+          "source_content_hash": "c2551ce6b152cee6be2ad7ea992585b39a53f242316de0223e8bcbe605c672e6",
+          "quote": "产业升级基金聚焦新一代信息技术、机器人和智能制造、生物技术和大健康、新能源智能汽车、数字经济等符合北京经开区产业定位和相关产业政策的企业",
+          "quote_hash": "7b39a7967de324668600ad00862392927175e29181a1cf04a8ed4e41b4f21879"
+        },
+        {
+          "source_id": "bj_econ_rules",
+          "source_url": "https://kfqgw.beijing.gov.cn/ywdt/tt/cxfw/202304/t20230407_4180165.html",
+          "source_title": "首期规模20.01亿元 北京经开区特设产业升级股权投资基金 - 北京经开区",
+          "source_content_hash": "c2551ce6b152cee6be2ad7ea992585b39a53f242316de0223e8bcbe605c672e6",
+          "quote": "获得产业升级基金投资后三年内，被投资企业新增在北京经开区的投资原则上不应低于产业升级基金对其股权投资金额的2倍。",
+          "quote_hash": "5743191208acefa34e62746236a8f1be789e74f8dd680bacbb7991699f571bdc"
+        },
+        {
+          "source_id": "bj_econ_governance",
+          "source_url": "https://kfqgw.beijing.gov.cn/ywdt/tt/cxfw/202304/t20230407_4180165.html",
+          "source_title": "首期规模20.01亿元 北京经开区特设产业升级股权投资基金 - 北京经开区",
+          "source_content_hash": "c2551ce6b152cee6be2ad7ea992585b39a53f242316de0223e8bcbe605c672e6",
+          "quote": "产业升级基金不设置门槛收益，投资收益全部分配给出资人，基金管理人不收取超额收益。",
+          "quote_hash": "ca2382463f08e520b049fd30920c2cb04c25635f2a85fba910b5487c67dc5dea"
+        },
+        {
+          "source_id": "bj_econ_contact",
+          "source_url": "https://www.etowncapital.com/2023-12/04/c_180128.htm",
+          "source_title": "亦庄国投母基金 - 北京亦庄国际投资发展有限公司",
+          "source_content_hash": "068d9324b5e72308e766d9a184fb4f878d18713e27827499174dea6aab6e9efe",
+          "quote": "北京亦庄国际产业投资管理有限公司",
+          "quote_hash": "c837e4d7febeb1f6b9f22cacfa04e97bb9c95fe0a70c4504af593170fdef8aaf"
+        },
+        {
+          "source_id": "bj_econ_parent_context",
+          "source_url": "https://www.etowncapital.com/2023-12/04/c_180128.htm",
+          "source_title": "亦庄国投母基金 - 北京亦庄国际投资发展有限公司",
+          "source_content_hash": "068d9324b5e72308e766d9a184fb4f878d18713e27827499174dea6aab6e9efe",
+          "quote": "亦庄国投母基金为亦庄国投的核心业务板块，由亦庄国投的子公司北京亦庄国际产业投资管理有限公司（以下简称“亦庄产投”）进行管理。",
+          "quote_hash": "a9af7e639741c32b50552addfb32029692986d37d67acb4d4bd08777fbac8724"
+        },
+        {
+          "source_id": "bj_econ_parent_phone",
+          "source_url": "https://www.etowncapital.com/2023-12/04/c_180128.htm",
+          "source_title": "亦庄国投母基金 - 北京亦庄国际投资发展有限公司",
+          "source_content_hash": "068d9324b5e72308e766d9a184fb4f878d18713e27827499174dea6aab6e9efe",
+          "quote": "010-81057999",
+          "quote_hash": "8cb437b54291574993a82042af962777950e3267df1f8e641b7a79ebd4f5dca3"
+        },
+        {
+          "source_id": "bj_econ_parent_address",
+          "source_url": "https://www.etowncapital.com/2023-12/04/c_180128.htm",
+          "source_title": "亦庄国投母基金 - 北京亦庄国际投资发展有限公司",
+          "source_content_hash": "068d9324b5e72308e766d9a184fb4f878d18713e27827499174dea6aab6e9efe",
+          "quote": "北京经济技术开发区荣华中路22号亦城财富中心A座23-25层",
+          "quote_hash": "d6a1ab1bd7c8a7ef349ab836db0af8f278db985c6d3f408344503b7be14e1110"
+        },
         {
           "source_id": "FISRC-57fa132710ceea85",
           "source_url": "https://finance.sina.com.cn/tech/roll/2026-05-08/doc-inhxcyyr4353533.shtml",
@@ -153,7 +309,7 @@
           "quote_hash": "116269c4a7e2823f89d72a992d115671e4aea0670e17ae2d0cdbc0a418e2d8c6"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

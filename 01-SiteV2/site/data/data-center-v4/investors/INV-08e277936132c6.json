@@ -139,10 +139,29 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "1Password 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "依据公司官网核实企业背景；官网未确认独立 VC 基金，融资记录按披露名称解释。",
+      "summary": "1Password 是网络安全与身份访问管理公司，官网介绍其为个人和组织提供安全访问产品，并将产品定位扩展至 AI agents。官网回顾公司于 2005 年创立，联系页面列出多伦多地址。本库中的融资参与记录不等同于官网确认其拥有独立风险投资基金。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "官网回顾称 1Password 于 2005 年创立。",
+          "source_id": "onepassword_about"
+        },
+        {
+          "field": "business",
+          "label": "主营业务",
+          "value": "提供面向个人和组织的密码管理与安全访问产品；官网当前定位覆盖人员及 AI agents。",
+          "source_id": "onepassword_about"
+        },
+        {
+          "field": "investment_activity_caveat",
+          "label": "融资记录说明",
+          "value": "本库收录的融资参投名称仅代表披露记录；官网未在该页面说明独立风险投资部门或基金。",
+          "source_id": "onepassword_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,7 +169,21 @@
           "source_id": "FISRC-08365977cd80206b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "1Password",
+          "url": "https://1password.com/about",
+          "source_id": "onepassword_about"
+        },
+        {
+          "kind": "address",
+          "label": "官网公开地址",
+          "value": "4711 Yonge St, 10th Floor, Toronto, Ontario M2N 6K8, Canada",
+          "source_id": "onepassword_about"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-08365977cd80206b",
@@ -159,9 +192,17 @@
           "source_content_hash": "269f33be0068a71b",
           "quote": "Funding Partners: Alfred P. Sloan Foundation, American Express, Chainguard, Datadog, Herodevs, Kraken, Mayfield, Microsoft, Shopify, Stripe, Superbloom, Vercel, Zerodha, 1Password",
           "quote_hash": "57a3b10ecc8879baca9d411eb7712d020a1e7be6e0eca203be9e70272fc56400"
+        },
+        {
+          "source_id": "onepassword_about",
+          "source_url": "https://1password.com/about",
+          "source_title": "About 1Password | 1Password",
+          "source_content_hash": "a65ef4d19cc9ec5648ac8d428b302f872a9222a091158518e768872b70c4ca7e",
+          "quote": "1Password provides trusted access for people and AI agents. We unlock productivity by making security and privacy simple for every person and organization.",
+          "quote_hash": "2106833fc282fd55550b1b7c6f583caee6002a100568420d095cf78c695bc1da"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

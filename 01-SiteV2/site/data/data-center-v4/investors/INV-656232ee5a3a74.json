@@ -258,14 +258,62 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Valor Equity Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Valor Equity Partners（Valor 的商业名称）是一家以主动运营赋能为特色的私人投资机构。官网称其投资科技及科技赋能企业，并参与生物科学、交通、食品、健康等行业；其运营团队与被投公司并肩制定并推进增长计划。创始人 Antonio Gracias 于1995年创立该机构，官网履历列明其曾任 Tesla 董事（2007—2021）及 Goldman Sachs 任职经历。机构网站展示的投资组合明确不完整，基金投资资料通过私募发行文件提供。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "私人投资机构；Valor Equity Partners 为 Valor 商业名称",
+          "source_id": "valor_equity_terms"
+        },
+        {
+          "field": "founded",
+          "label": "创立年份",
+          "value": "1995",
+          "source_id": "valor_equity_antonio"
+        },
+        {
+          "field": "founder",
+          "label": "创始人",
+          "value": "Antonio Gracias（兼 CEO、CIO）",
+          "source_id": "valor_equity_antonio"
+        },
+        {
+          "field": "investment_focus",
+          "label": "公开投资领域",
+          "value": [
+            "科技及科技赋能企业",
+            "生物科学",
+            "交通",
+            "食品",
+            "健康与福祉"
+          ],
+          "source_id": "valor_equity_home"
+        },
+        {
+          "field": "value_add",
+          "label": "投后运营支持",
+          "value": "官网描述团队与被投企业管理层共同制定和执行运营计划，并提供增长与人才等支持。",
+          "source_id": "valor_equity_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1995",
+          "description": "机构创始人官方履历称 Valor 于1995年创立。",
+          "source_id": "valor_equity_antonio"
+        },
+        {
+          "date": "2007—2021",
+          "description": "Antonio Gracias 曾任 Tesla 董事；为个人履历，不表示 Valor 在整个期间持有该公司。",
+          "source_id": "valor_equity_antonio"
+        }
+      ],
       "track_record": [
+        {
+          "description": "官网展示精选成长投资及研发阶段投资名单，包括 SpaceX、Tesla、Reddit、Crusoe 等；机构条款明确组合页面并非完整清单，且展示本身不构成独立业绩审计。",
+          "source_id": "valor_equity_growth"
+        },
         {
           "description": "融资来源记录：Crusoe · F轮 · 2026-09-17 · 本轮联合领投 · $3.9B。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5fc65e3f4fb1b347"
@@ -273,14 +321,69 @@
         {
           "description": "融资来源记录：Positron AI · B轮 · 2026-02-04 · 既有投资方（本轮参投） · $230 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-272c28400131d6f2"
-        },
-        {
-          "description": "融资来源记录：Positron AI · B轮 · 2026-02-04 · 既有投资方（本轮参投） · $230 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-7ab329bc47036713"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构定位、创始人履历和投资组合均取自机构官网；投资组合为精选披露。官网未把一般联系邮箱标为投资申请渠道，基金投资资料仅通过私募发行文件提供。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网及精选投资组合",
+          "value": "Valor",
+          "url": "https://www.valorep.com/",
+          "source_id": "valor_equity_home"
+        },
+        {
+          "kind": "email",
+          "label": "网站隐私政策列示的一般联系邮箱（非公开投资申请渠道）",
+          "value": "info@valorep.com",
+          "url": "https://www.valorep.com/terms-and-conditions-1",
+          "source_id": "valor_equity_terms"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "valor_equity_home",
+          "source_url": "https://www.valorep.com/",
+          "source_title": "Valor",
+          "source_content_hash": "bbef56d2fc503c27a11d6a168d646177248ee6becdb18020e34268ea96dabe45",
+          "quote": "Valor describes itself as a private investment firm focused on operational growth and investing in technology and technology-enabled companies across sectors including biosciences, transportation, food, and health and wellness.",
+          "quote_hash": "d6fd24bd57715fd0367a6b907150131a470e469311d2293e325323e6c59a37bc"
+        },
+        {
+          "source_id": "valor_equity_about",
+          "source_url": "https://www.valorep.com/about",
+          "source_title": "About — Valor",
+          "source_content_hash": "a09101d0d941a2446458991ae44f7e0a9c67cb263e28379ec2e44a681836fb71",
+          "quote": "Valor says it works directly with portfolio-company management teams on operational plans and remains engaged from seed through growth and IPO; these are the firm’s descriptions of its value-add model.",
+          "quote_hash": "dd77844f4fc40058b417633f28fc5afbda29852b8cece61afa4564b77afca75e"
+        },
+        {
+          "source_id": "valor_equity_growth",
+          "source_url": "https://www.valorep.com/growth-investments",
+          "source_title": "Growth Investments — Valor",
+          "source_content_hash": "86e20a7c4741ee285ed2c78b0e77fed737b64c0ff14eaf5cd958bfc7b858c4c1",
+          "quote": "Valor publishes selected growth investments and states that the list is not a complete list of current and exited portfolio companies.",
+          "quote_hash": "0e5541e6c34e8d710b7c5ab561ba625db164a565de3e3e4cd2abd18f93319c01"
+        },
+        {
+          "source_id": "valor_equity_antonio",
+          "source_url": "https://www.valorep.com/team/antonio-gracias",
+          "source_title": "Antonio Gracias — Valor",
+          "source_content_hash": "1f27135cb9b2c4d2e95d8d4632720c7be41150303b369e9b5ae20c9ee2b94442",
+          "quote": "Valor identifies Antonio Gracias as founder, CEO and CIO, says he founded the firm in 1995, and lists prior MG Capital and Goldman Sachs experience; his biography also describes Tesla board service from 2007 to 2021.",
+          "quote_hash": "9ba390767a71625f507e6e37fde59cf97f4ae446a903c56ad19ed22c3f64f81d"
+        },
+        {
+          "source_id": "valor_equity_terms",
+          "source_url": "https://www.valorep.com/terms-and-conditions",
+          "source_title": "Terms and Conditions — Valor",
+          "source_content_hash": "02886e967be4a573e33a0abe07aa6377b18379c1969124a7f22b4a26f27b6188",
+          "quote": "Valor’s legal terms state that Valor Equity Partners is Valor’s trade name, that portfolio listings are not complete, and that information about investing in Valor funds is available through private placement memoranda and offering documents.",
+          "quote_hash": "50577f0c89b6140a27948814332c77e7db0e71c7a5ad693845f6d594f960a38e"
+        },
         {
           "source_id": "FISRC-5fc65e3f4fb1b347",
           "source_url": "https://kingliber.com/the-ai-infrastructure-boom-crusoe-secures-3-9-billion-series-f-at-a-30-9-billion-valuation-to-power-the-next-generation-of-compute/",
@@ -306,7 +409,7 @@
           "quote_hash": "ae596dcd76d7374cac3af9db38142d54ad3a8bd3c47828ea455bd5a4427a8230"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

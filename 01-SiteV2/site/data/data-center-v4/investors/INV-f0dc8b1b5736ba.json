@@ -131,19 +131,110 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "北京高精尖产业发展投资基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "北京市政府引导基金体系中的高精尖产业母基金。2015 年设立的母基金与 2023 年登记的有限合伙实体化基金属于同一政策品牌下不同层次的载体：后者规模 20 亿元，由北工投资管理。北京日报披露的超过 250 亿元认缴规模、子基金数量和投资带动数据，是母基金体系指标，不是该有限合伙实体单体业绩。融资数据库 2026 年奕行智能记录只披露基金简称，尚不能确认实际签约主体。",
+      "facts": [
+        {
+          "field": "fund_structure",
+          "label": "基金层级与主体",
+          "value": "2015 年设立政府引导母基金；2023 年登记北京高精尖产业发展投资基金（有限合伙）作为实体化运营主体。两者应区分。",
+          "source_id": "beijing_entity_2023"
+        },
+        {
+          "field": "historic_mother_fund_scale",
+          "label": "母基金历史设立口径",
+          "value": "北京市经信局 2022 年通知记载：母基金于 2015 年 8 月设立，设立规模 50 亿元，存续期 12 年；该为历史设立信息，不代表当前基金净规模。",
+          "source_id": "beijing_mother_2015"
+        },
+        {
+          "field": "entity_scale",
+          "label": "有限合伙实体化基金规模",
+          "value": "2023 年落地报道披露规模 20 亿元。",
+          "source_id": "beijing_entity_2023"
+        },
+        {
+          "field": "manager",
+          "label": "基金管理人",
+          "value": "北京工业发展投资管理有限公司（北工投资）。",
+          "source_id": "beijing_entity_2023"
+        },
+        {
+          "field": "sectors",
+          "label": "重点投资领域",
+          "value": [
+            "新一代信息技术",
+            "医药健康",
+            "集成电路",
+            "智能网联汽车",
+            "智能制造与装备",
+            "绿色能源与节能环保；前瞻布局光电子、前沿新材料、量子信息"
+          ],
+          "source_id": "beijing_sectors_2023"
+        },
+        {
+          "field": "parent_fund_ecosystem_metrics",
+          "label": "母基金体系公开业绩（截至 2023 年报道）",
+          "value": "认缴总规模超过 250 亿元、设立子基金 25 只、财政资金放大超过 6.6 倍、带动企业融资超过 500 亿元、16 家被投企业已 IPO 或 IPO 过会；统计范围为母基金体系。",
+          "source_id": "beijing_mother_metrics_2023"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2015-08",
+          "description": "北京高精尖产业发展基金母基金正式设立；2022 年政府通知记载设立规模 50 亿元、存续期 12 年。",
+          "source_id": "beijing_mother_2015"
+        },
+        {
+          "date": "2023-02",
+          "description": "北京高精尖产业发展投资基金（有限合伙）完成工商登记备案并落地，披露规模 20 亿元。",
+          "source_id": "beijing_entity_2023"
+        }
+      ],
       "track_record": [
+        {
+          "description": "北京日报 2023 年报道：母基金体系认缴规模超过 250 亿元、设立子基金 25 只，财政资金放大超过 6.6 倍，带动企业融资超过 500 亿元，16 家被投企业已 IPO 或 IPO 过会。以上均为体系层级统计。",
+          "source_id": "beijing_mother_metrics_2023"
+        },
         {
           "description": "融资来源记录：奕行智能 · 轮次未披露 · 2026-09-18 · B轮联合领投 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-57fa132710ceea85"
         }
       ],
       "contacts": [],
+      "coverage_note": "2026 年奕行智能融资报道以“北京高精尖产业发展投资基金”作为投资方简称，未披露具体基金合同主体；不将该活动强行归属到 2015 母基金或 2023 有限合伙单体。未核实到当前对外融资咨询渠道；2022 年管理机构征集通知上的联络信息已过时，因此不作为联系方式展示。",
       "sources": [
+        {
+          "source_id": "beijing_mother_2015",
+          "source_url": "https://www.beijing.gov.cn/fuwu/lqfw/gggs/202208/t20220830_2803718.html",
+          "source_title": "北京市经济和信息化局关于征集北京高精尖产业发展基金管理机构的通知",
+          "source_content_hash": "6837f9e55f151fe2d05e94db1b03dd7f36ee42ccb9c8dfb55272d5e1d62e405b",
+          "quote": "高精尖基金于2015年8月正式设立，基金规模50亿元，存续期12年",
+          "quote_hash": "6608e7b63ce94e5da5f9a70e8f6893e711e9693ce1d6ab9d960a898946897943"
+        },
+        {
+          "source_id": "beijing_entity_2023",
+          "source_url": "https://www.beijing.gov.cn/ywdt/gzdt/202302/t20230203_2911212.html",
+          "source_title": "助推北京高精尖产业提速发展 20亿元规模政府引导基金落地",
+          "source_content_hash": "8de4e882048632bc0d3a95a451744f9d19c2e897e4cfcc9fd429c13d8fdd6bde",
+          "quote": "由北工投资管理的北京市政府引导基金——北京高精尖产业发展投资基金（有限合伙）（简称高精尖实体化基金）完成工商登记备案，正式落地。高精尖实体化基金规模20亿元",
+          "quote_hash": "03a346f1f711156d51e408dc31f9a95d499702812dcb07d21e8e4e6cde22fe46"
+        },
+        {
+          "source_id": "beijing_sectors_2023",
+          "source_url": "https://www.beijing.gov.cn/ywdt/gzdt/202302/t20230203_2911212.html",
+          "source_title": "助推北京高精尖产业提速发展 20亿元规模政府引导基金落地",
+          "source_content_hash": "8de4e882048632bc0d3a95a451744f9d19c2e897e4cfcc9fd429c13d8fdd6bde",
+          "quote": "重点投资新一代信息技术、医药健康、集成电路、智能网联汽车、智能制造与装备、绿色能源与节能环保等优势产业，同时前瞻性布局“长安链”、光电子、前沿新材料、量子信息等领域未来前沿产业",
+          "quote_hash": "799743e2c430ed9fd76756dd88dac8da9d76d3830ce946b10ae358875b4cad19"
+        },
+        {
+          "source_id": "beijing_mother_metrics_2023",
+          "source_url": "https://www.beijing.gov.cn/ywdt/gzdt/202302/t20230203_2911212.html",
+          "source_title": "助推北京高精尖产业提速发展 20亿元规模政府引导基金落地",
+          "source_content_hash": "8de4e882048632bc0d3a95a451744f9d19c2e897e4cfcc9fd429c13d8fdd6bde",
+          "quote": "北京高精尖产业发展基金截至目前认缴总规模已超过250亿元，完成设立子基金25只，实现财政资金放大超6.6倍，直接带动企业融资规模超500亿元，间接融资放大近20倍，16家被投企业已IPO或IPO过会",
+          "quote_hash": "976dfac3b02eda14a0a2eb360da08494267b6e8379d308eab6503e7a7adba7b2"
+        },
         {
           "source_id": "FISRC-57fa132710ceea85",
           "source_url": "https://finance.sina.com.cn/tech/roll/2026-05-08/doc-inhxcyyr4353533.shtml",
@@ -153,7 +244,7 @@
           "quote_hash": "116269c4a7e2823f89d72a992d115671e4aea0670e17ae2d0cdbc0a418e2d8c6"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

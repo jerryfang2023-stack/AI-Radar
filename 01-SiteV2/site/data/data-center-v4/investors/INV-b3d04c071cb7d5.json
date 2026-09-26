@@ -186,14 +186,57 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "重庆产业投资母基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "重庆产业投资母基金是重庆市面向先进制造业与战略产业的政府产业母基金，采取“子基金+直投”方式，重点服务重庆产业布局。重庆市级部门2023年披露总规模2000亿元、管理人为重庆渝富资本股权投资基金管理有限公司；渝富控股后续公开资料称首期认缴规模800亿元，并披露其投资与子基金进展。不同发布时间披露口径须区分。",
+      "facts": [
+        {
+          "field": "fund_scale",
+          "label": "总体规模（2023年设立披露）",
+          "value": "2000亿元",
+          "source_id": "cq_fund_2023"
+        },
+        {
+          "field": "first_close",
+          "label": "首期认缴规模（渝富控股后续披露）",
+          "value": "800亿元",
+          "source_id": "cq_yufu_2025"
+        },
+        {
+          "field": "manager",
+          "label": "基金管理人",
+          "value": "重庆渝富资本股权投资基金管理有限公司（2023年市级部门披露）；后续管理架构由重庆渝富高质产业母基金私募股权投资基金管理有限公司承担专业管理",
+          "source_id": "cq_fund_2023"
+        },
+        {
+          "field": "investment_sectors",
+          "label": "投资重点",
+          "value": [
+            "先进制造业",
+            "数字经济",
+            "智能网联新能源汽车",
+            "新一代电子信息制造业",
+            "先进材料"
+          ],
+          "source_id": "cq_fund_2023"
+        },
+        {
+          "field": "investment_model",
+          "label": "运作方式",
+          "value": "子基金+直投",
+          "source_id": "cq_fund_2023"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2023-05-19",
+          "description": "重庆产业投资母基金成立；市地方金融管理局披露总规模2000亿元。",
+          "source_id": "cq_fund_2023"
+        }
+      ],
       "track_record": [
+        {
+          "description": "渝富控股后续公开披露基金已设立多支子基金并开展产业直投；因不同阶段与基金口径可能变化，本条不将后续在管规模、认缴规模与实缴规模混为一谈。",
+          "source_id": "cq_yufu_2025"
+        },
         {
           "description": "融资来源记录：千寻智能 · A+轮 · 2026-06-03 · 2026年2月轮次投资方 · 15亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b8b7d456eceee943"
@@ -203,8 +246,32 @@
           "source_id": "FISRC-ee3064edf7c871f4"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "管理集团信息公开",
+          "value": "重庆渝富控股集团",
+          "url": "https://www.cqyfkgjt.com/cqyfkgjt/xinxigongkai/gongsizhili1/gzjj/jingyingxinxi1111/index.html",
+          "source_id": "cq_yufu_2025"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "cq_fund_2023",
+          "source_url": "https://jrjgj.cq.gov.cn/zwxx_208/bmdt/sjdt/202305/t20230529_12007096_wap.html",
+          "source_title": "重庆设立2000亿元产业母基金 - 重庆市地方金融管理局",
+          "source_content_hash": "931de736a82f827c87ac5d8cece50b27e4760c3d052c6ae40ae10beb38c0f0d9",
+          "quote": "重庆市地方金融管理局披露，重庆产业投资母基金于2023年5月成立，总规模2000亿元，由渝富控股集团及两江新区、重庆高新区发起，重庆渝富资本股权投资基金管理有限公司担任管理人，采取子基金加直投模式，重点支持先进制造、数字经济等产业。",
+          "quote_hash": "5e13ca1872944e01f6d253de5fd64298f0d6c486c90ed475604d1b30cbaf0e85"
+        },
+        {
+          "source_id": "cq_yufu_2025",
+          "source_url": "https://www.cqyfkgjt.com/cqyfkgjt/xinxigongkai/gongsizhili1/gzjj/jingyingxinxi1111/index.html",
+          "source_title": "重庆渝富高质基金公司简介 - 重庆渝富控股集团信息公开",
+          "source_content_hash": "abb61eaf4677de7c885f8cf3f8b1627cc854be0edfc3bd33de119e824f0c3715",
+          "quote": "渝富控股信息公开页面称重庆产业投资母基金总规模2000亿元、首期规模800亿元，由渝富高质基金公司负责专业化管理，并采用子基金加直投模式，重点投资重庆现代制造业集群。",
+          "quote_hash": "a6477fb2b445833105de54e5684bf0f422a0913e28ec0e8e9799eb2a4c22c446"
+        },
         {
           "source_id": "FISRC-b8b7d456eceee943",
           "source_url": "https://news.pedaily.cn/202606/564786.shtml",
@@ -222,7 +289,11 @@
           "quote_hash": "53a6ab47c97f6f4e1840de2eeff98590ce901ff9eaaff6ffa04ac8896a21d8a8"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "成立、总规模及2023年管理人依据重庆市地方金融管理局；首期规模与后续管理架构依据渝富控股集团官网。2000亿元总规模、800亿元首期认缴与其他阶段的认缴/实缴数字按披露日期及口径分别标注。",
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization"
     }
   }
 }

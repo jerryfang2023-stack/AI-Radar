@@ -191,14 +191,66 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Vista Equity Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Vista Equity Partners 是成立于2000年的全球投资机构，专注企业软件，通过私募股权和私人信贷策略投资。官网截至2026年6月30日披露管理资产规模为1,030亿美元、组合公司超过85家；私募股权历史交易、投入与返还金额均为机构汇总口径，不代表未来表现。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2000年",
+          "source_id": "vista_numbers"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "企业软件",
+          "source_id": "vista_numbers"
+        },
+        {
+          "field": "strategies",
+          "label": "投资策略",
+          "value": [
+            "私募股权",
+            "私人信贷"
+          ],
+          "source_id": "vista_numbers"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "管理资产规模",
+          "value": "1,030亿美元（截至2026年6月30日）",
+          "source_id": "vista_numbers"
+        },
+        {
+          "field": "portfolio_companies",
+          "label": "组合公司",
+          "value": "超过85家（截至2026年6月30日）",
+          "source_id": "vista_numbers"
+        },
+        {
+          "field": "private_equity_track_record",
+          "label": "私募股权历史交易",
+          "value": "690余笔；对应交易价值超过3,500亿美元（截至2026年6月30日，官网汇总口径）",
+          "source_id": "vista_numbers"
+        },
+        {
+          "field": "private_equity_capital_returned",
+          "label": "私募股权历史资金返还",
+          "value": "超过660亿美元（截至2026年6月30日；官网注明不含费用及其他管理开支）",
+          "source_id": "vista_numbers"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2000",
+          "description": "机构成立。",
+          "source_id": "vista_numbers"
+        }
+      ],
       "track_record": [
+        {
+          "description": "官网汇总其私募股权平台历史交易超过690笔、对应交易价值超过3,500亿美元、累计投入超过800亿美元、累计返还超过660亿美元（截至2026年6月30日；交易口径包含已签约交易，历史数据不构成投资回报保证）。",
+          "source_id": "vista_numbers"
+        },
         {
           "description": "融资来源记录：SambaNova Systems · F轮 · 2026-07-08 · 本轮参投（新进或既有） · $1 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-dbf8259066547c8e"
@@ -208,8 +260,39 @@
           "source_id": "FISRC-6f0f12fb121fbd88"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站与团队信息",
+          "value": "Vista Equity Partners",
+          "url": "https://www.vistaequitypartners.com/",
+          "source_id": "vista_numbers"
+        },
+        {
+          "kind": "website",
+          "label": "联系入口",
+          "value": "机构联系与投资者信息",
+          "url": "https://www.vistaequitypartners.com/contact/",
+          "source_id": "vista_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "vista_numbers",
+          "source_url": "https://www.vistaequitypartners.com/by-the-numbers/",
+          "source_title": "Vista Equity Partners | Key Facts, Figures and Milestones",
+          "source_content_hash": "c3735ec2c08c72db7900cdb493426b0833a3ec3ba0ae72a3ba0efbb5e554239d",
+          "quote": "Founded in 2000, Vista Equity Partners (Vista) is a leading global investment firm that invests in enterprise software through private equity and private credit strategies.",
+          "quote_hash": "3afad0b6bec8edf2de6252f6679cb7757862089320984bfbd11d087c953b93c3"
+        },
+        {
+          "source_id": "vista_contact",
+          "source_url": "https://www.vistaequitypartners.com/contact/",
+          "source_title": "Contact - Vista Equity Partners",
+          "source_content_hash": "f26125d2480f6c688cdef7fc0a5e123a6399b22bcda4353ddc51b9534a69184c",
+          "quote": "If you are an individual investor, please contact your financial advisor to learn more about Vista’s private wealth solutions.",
+          "quote_hash": "bafc15e2ebcb7ade89f0f7572d9be34f2a6cc8a41d71fa61697962f7270e8de3"
+        },
         {
           "source_id": "FISRC-dbf8259066547c8e",
           "source_url": "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/",
@@ -227,7 +310,11 @@
           "quote_hash": "8675f498cc47f8b1b529cfa4f40c9f48d46b02c7ce2e8ac6c2303159a57740f2"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

@@ -195,11 +195,57 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "E14 Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "依据机构官网或正式公告核验；策略、统计数据和组合案例按来源方披露口径呈现，不据此推断基金回报。",
+      "summary": "E14 Fund 是与 MIT 官方关联的风险投资基金，官网称其投资 MIT 创业者创立的可规模化深科技公司，并通过社区项目支持 MIT 创业生态。官网披露其首期基金于 2017 年推出，并持续后续基金；金额和业绩均按机构披露口径。",
+      "facts": [
+        {
+          "field": "affiliation",
+          "label": "机构关联",
+          "value": "官网自述与 MIT 正式关联，投资对象包括 MIT 应届毕业生、教师和校友创业者。",
+          "source_id": "e14_about"
+        },
+        {
+          "field": "focus",
+          "label": "官方投资方向",
+          "value": "具备差异化科学或工程能力的深科技创业公司，通常面向企业客户。",
+          "source_id": "e14_about"
+        },
+        {
+          "field": "stage",
+          "label": "投资阶段",
+          "value": "官网称通常作为初始机构投资者，重点支持团队从科研/工程验证走向产品与市场。",
+          "source_id": "e14_about"
+        },
+        {
+          "field": "check_size",
+          "label": "官网披露投资额",
+          "value": "首笔投资最高可达 500 万美元，并可能后续追加；属于基金官网披露口径。",
+          "source_id": "e14_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2013",
+          "description": "MIT Media Lab 启动支持创业项目的实验。",
+          "source_id": "e14_about"
+        },
+        {
+          "date": "2017",
+          "description": "E14 Fund 推出首期基金。",
+          "source_id": "e14_about"
+        },
+        {
+          "date": "2020",
+          "description": "推出第二期基金。",
+          "source_id": "e14_about"
+        },
+        {
+          "date": "2023",
+          "description": "推出第三期基金。",
+          "source_id": "e14_about"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Sycamore · 种子轮 · 2026-03-30 · 本轮参投 · $65 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -208,9 +254,21 @@
         {
           "description": "融资来源记录：EnCharge AI · 多轮融资 · 2022-12-14 · 本轮参投 · $21.7 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-cb0549fad590a0ab"
+        },
+        {
+          "description": "官网称其收益的一大部分捐赠给 MIT；未将参投披露推断为基金回报。",
+          "source_id": "e14_about"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "E14 Fund",
+          "url": "https://www.e14.vc/about",
+          "source_id": "e14_about"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-d354011359557f2f",
@@ -227,9 +285,17 @@
           "source_content_hash": "ccb1b70704426c90",
           "quote": "It included contributions from AlleyCorp, Scout Ventures, Silicon Catalyst Angels, Schams Ventures, E14 Fund, and Alumni Ventures.",
           "quote_hash": "b99f0a2b7196b3b18420ffc6a155257fccb8adea7be2e2620c1daca7104040e6"
+        },
+        {
+          "source_id": "e14_about",
+          "source_url": "https://www.e14.vc/about",
+          "source_title": "About E14 VC Fund | E14",
+          "source_content_hash": "445fe4fb390d84db8e1063f8860b2dcbb233806eb3acbab1ce70ed989fbabc2c",
+          "quote": "Officially affiliated with MIT, E14 Fund invests in scalable, deep-tech startups tackling big, meaningful missions.",
+          "quote_hash": "fccbc5decea3dc4c470bdf359849ad5b2439807eb5c2a99959cebb321b59da93"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

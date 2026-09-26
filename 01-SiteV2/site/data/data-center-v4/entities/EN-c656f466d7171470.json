@@ -111,33 +111,53 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "卢立群 的来源线索将其与万卷智能（联合创始人兼CTO）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "卢立群是万卷智能联合创始人兼 CTO（凤凰网报道时的职务）。凤凰网资料称其为博士，曾担任阿里巴巴人工智能专家；未披露其学位院校、专业、任职年月或具体研究和产品贡献，现任情况需以最新公司资料复核。",
+      "current_roles": [
+        {
+          "title": "联合创始人兼 CTO（凤凰网报道时）",
+          "organization": "万卷智能（宁波）有限公司",
+          "source_id": "wanjuan_ifeng_founders"
+        }
+      ],
       "career": [
         {
-          "organization": "万卷智能",
-          "title": "联合创始人兼CTO",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-ef8d3e6bdcd3b9fd"
+          "organization": "阿里巴巴",
+          "title": "人工智能专家（报道对过往任职的描述）",
+          "period": "任职年份及团队未披露",
+          "description": "凤凰网融资报道介绍其曾担任阿里巴巴人工智能专家；未给出具体组织、职级或项目名称。",
+          "source_id": "wanjuan_ifeng_founders"
+        },
+        {
+          "organization": "万卷智能（宁波）有限公司",
+          "title": "联合创始人兼 CTO（报道时）",
+          "period": "报道发表于2024年；具体创立日期未披露",
+          "description": "凤凰网融资报道介绍其承担公司技术负责人角色；未列出技术成果或任职起止日期。",
+          "source_id": "wanjuan_ifeng_founders"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
+      "education": [
+        {
+          "institution": "未披露",
+          "qualification": "博士（报道未披露院校、专业和学位年份）",
+          "source_id": "wanjuan_ifeng_founders"
+        }
+      ],
+      "experience_summary": "目前公开资料仅能确认其博士背景、阿里人工智能任职经历和万卷智能技术负责人身份；更完整教育及技术履历尚无可核验资料。",
       "track_record": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "身份和履历来自凤凰网对融资事件的团队介绍；报道未给出本人简历或任职年份，职务按报道时点记录。",
       "sources": [
         {
-          "source_id": "FISRC-ef8d3e6bdcd3b9fd",
-          "source_url": "https://news.pedaily.cn/202608/567787.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "87d9c9e8de2d6b15",
-          "quote": "联合创始人兼CTO 卢立群博士毕业于伊利诺伊大学香槟分校，是前阿里AI高级专家",
-          "quote_hash": "5459459069367b1f9c66e9e908bb1e6a58414942b2d12a82dacc2bd4883f4006"
+          "source_id": "wanjuan_ifeng_founders",
+          "source_url": "https://ishare.ifeng.com/c/s/v002GDFAXbNbe5tmjhBKr7EzuWmHQ4C4zzMsO3rq2ry-_Fb0__",
+          "source_title": "浙大博士创业，万卷智能完成1000万天使轮融资 - 凤凰网",
+          "source_content_hash": "c637f0965dbb401025e282bb22fa91c6de600fb57f8723d7ea475e7fa4e03e8b",
+          "quote": "凤凰网报道介绍万卷智能创始人兼CEO李天翔毕业于浙江大学并在英属哥伦比亚大学联合培养，曾任职于新加坡仁恒置地集团；联合创始人兼CTO卢立群为博士，曾担任阿里巴巴人工智能专家，COO葛明辉曾任职于央企并有产业项目管理经验。具体任职年份未披露。",
+          "quote_hash": "d6dac9930d5b2c60a622ae98040c21283a8b15d3eeb76f5957fc5d15fdf4b818"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

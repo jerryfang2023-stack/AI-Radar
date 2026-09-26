@@ -114,33 +114,66 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "周昕宇 的来源线索将其与Moonshot AI（联合创始人）关联。来源日期：2026-06-09；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "周昕宇是Moonshot AI联合创始人及算法团队负责人。媒体报道记载他就读清华大学计算机系，毕业后加入旷视科技从事算法量产，并与旷视研究员共同完成ShuffleNet移动端模型研究；教育经历和早期任职目前来自媒体资料，未找到个人主页或雇主官方履历。",
+      "current_roles": [
+        {
+          "title": "联合创始人、算法团队负责人（媒体报道）",
+          "organization": "Moonshot AI",
+          "source_id": "zhou_xinyu_paper"
+        }
+      ],
       "career": [
         {
+          "organization": "旷视科技",
+          "title": "算法量产及移动端模型研究",
+          "period": "清华毕业后至加入Moonshot AI前；具体年份未披露",
+          "description": "参与ShuffleNet相关研究；成果为共同研究工作，不归因于个人单独完成。",
+          "source_id": "zhou_xinyu_sina"
+        },
+        {
           "organization": "Moonshot AI",
-          "title": "联合创始人",
-          "period": "来源记录于 2026-06-09；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-b8e88335555103fa"
+          "title": "联合创始人、算法团队负责人",
+          "period": "公司2023年成立后；公开报道时在任",
+          "description": "负责算法团队相关工作，职务来自媒体报道。",
+          "source_id": "zhou_xinyu_paper"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "清华大学计算机科学与技术系",
+          "qualification": "本科，2011级；毕业年份未独立确认",
+          "source_id": "zhou_xinyu_sina"
+        }
+      ],
+      "experience_summary": "公开职业信息集中在旷视算法研究与Moonshot AI算法团队建设。尚无足够来源支持更详细的教育学位、职位起止时间或其他公司关系。",
+      "track_record": [
+        {
+          "description": "与旷视研究院研究者共同完成ShuffleNet移动端模型论文，该工作发表于CVPR；为团队共同成果。",
+          "source_id": "zhou_xinyu_sina"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-b8e88335555103fa",
-          "source_url": "https://www.nbd.com.cn/articles/2024-02-27/3258628.html",
-          "source_title": "融资披露来源",
-          "source_content_hash": "eb8029378bcbcc612ea2a13d8a7ace1e789dee0ab8e41dcfa1965d5c810c69ac",
-          "quote": "月之暗面的两位联合创始人周昕宇和吴育昕也均出身清华大学",
-          "quote_hash": "de3f6de8132784fd1f87e98e0dd8199c30794449370839557aaab315afb3c042"
+          "source_id": "zhou_xinyu_sina",
+          "source_url": "https://finance.sina.com.cn/wm/2024-07-20/doc-inceummy4364480.shtml",
+          "source_title": "月之暗面核心团队介绍 - 新浪财经",
+          "source_content_hash": "ef16564a62915573a6949bb87ca3e20f9823cd1e80a196d76b1f28e56b7900e1",
+          "quote": "报道将周昕宇列为联合创始人，并介绍清华本科、旷视算法量产及ShuffleNet研究经历。",
+          "quote_hash": "33d4ae0f82e3a17a5f55b78d02da106c4f53e822716e525dc3a9154f249a9ce6"
+        },
+        {
+          "source_id": "zhou_xinyu_paper",
+          "source_url": "https://www.thepaper.cn/newsDetail_forward_28399967",
+          "source_title": "CV领域创业团队报道 - 澎湃新闻",
+          "source_content_hash": "f817c9a77766592a4d9fcd923a709ab8ee9a5f72188af535621656f91040c885",
+          "quote": "报道将周昕宇列为Moonshot AI联合创始人和算法负责人，并介绍其旷视研究经历。",
+          "quote_hash": "7f60ac599da6d2ece8f49404f7c1bf5424064262b6890fec6355a49b55013e7c"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "职务和履历基于新浪财经及澎湃新闻对团队的报道，未找到本人或雇主官方履历；任职起止时间留空。",
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

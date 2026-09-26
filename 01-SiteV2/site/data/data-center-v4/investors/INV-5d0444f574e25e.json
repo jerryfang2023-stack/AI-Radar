@@ -177,14 +177,62 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "北京人工智能产业投资基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "北京市人工智能产业投资基金（有限合伙）是北京市政府发起的人工智能产业基金。2023 年政府遴选公告设定目标总规模 100 亿元、首期目标 40 亿元，重点支持 AI 芯片、训练数据与软件、大模型、具身智能、可信 AI 及行业应用。北京经开区官方资料称该基金由北京国管协调所属管理公司与市场机构联合管理；2025 年北京市科委、中关村管委会资料披露基金追加投资智谱 2 亿元。",
+      "facts": [
+        {
+          "field": "fund_type",
+          "label": "基金性质",
+          "value": "北京市政府人工智能产业投资基金（有限合伙）",
+          "source_id": "aifund_ncsti_2023"
+        },
+        {
+          "field": "target_size",
+          "label": "目标总规模",
+          "value": "人民币 100 亿元；首期目标规模 40 亿元（2023 年公告口径）",
+          "source_id": "aifund_ncsti_2023"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": [
+            "人工智能芯片",
+            "训练数据及相关软件",
+            "大模型算法创新",
+            "具身智能",
+            "可信 AI",
+            "AI 产品及垂直行业应用"
+          ],
+          "source_id": "aifund_ncsti_2023"
+        },
+        {
+          "field": "management",
+          "label": "管理安排",
+          "value": "北京国管所属基金管理公司与优秀市场投资机构联合管理运营（政府披露）",
+          "source_id": "aifund_kfq_2024"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2023-09",
+          "description": "北京市科委、中关村管委会和北京市政府投资引导基金公开遴选基金管理机构，披露目标规模与方向。",
+          "source_id": "aifund_ncsti_2023"
+        },
+        {
+          "date": "2024-01",
+          "description": "北京经开区政府披露北京市人工智能产业投资基金（有限合伙）注册设立。",
+          "source_id": "aifund_kfq_2024"
+        },
+        {
+          "date": "2025-04",
+          "description": "北京市科委、中关村管委会披露基金追加投资智谱人民币 2 亿元。",
+          "source_id": "aifund_zhipu_2025"
+        }
+      ],
       "track_record": [
+        {
+          "description": "北京市科委、中关村管委会披露该基金追加投资智谱 2 亿元；属于公开交易记录，不代表基金整体投资收益。",
+          "source_id": "aifund_zhipu_2025"
+        },
         {
           "description": "融资来源记录：奕行智能 · 轮次未披露 · 2026-09-18 · B轮联合领投 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-57fa132710ceea85"
@@ -194,8 +242,36 @@
           "source_id": "FISRC-ed80aa770ae50f7c"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "基金规模为 2023 年公告的目标规模，不能解释为当前实缴规模。投资智谱交易来自市级科技部门公开报道。基金无对外项目申报专用联系方式来源。",
       "contacts": [],
       "sources": [
+        {
+          "source_id": "aifund_ncsti_2023",
+          "source_url": "https://www.ncsti.gov.cn/kjdt/tzgg/202309/t20230918_133890.html",
+          "source_title": "北京市科委等：公开遴选北京市人工智能产业投资基金管理机构公告",
+          "source_content_hash": "06bcce94fc16aad1c3a976f55c50aff09a90f7a6841712126648c0c3534a2b2f",
+          "quote": "基金目标总规模100亿元，首期目标规模40亿元，重点投向人工智能芯片、大模型算法创新、具身智能、可信AI及行业应用。",
+          "quote_hash": "31a9aaa3884a71641216ad78c871a3829979d798c97de393c54bd63d75177e9c"
+        },
+        {
+          "source_id": "aifund_kfq_2024",
+          "source_url": "https://kfqgw.beijing.gov.cn/ywdt/gdcyfzgd/zncx/202401/t20240110_4277334.html",
+          "source_title": "聚焦医药健康、人工智能、机器人和信息四大产业 我市设立500亿元政府投资基金_北京经开区",
+          "source_content_hash": "186b5b5702a6d7ed8c8aaa6fcf60cab33760e13c52ddfbd4855431c60e8d8b17",
+          "quote": "北京国管于近日注册设立北京市人工智能产业投资基金，并由所属基金管理公司与市场投资机构联合管理运营。",
+          "quote_hash": "746d93b5c1d45f79ef15c3b2ddd770d7913b7389876d533dddf7b5b13b0a58b8"
+        },
+        {
+          "source_id": "aifund_zhipu_2025",
+          "source_url": "https://kw.beijing.gov.cn/xwdt/kcyx/xwdtyqqy/202504/t20250418_4068820.html",
+          "source_title": "北京市人工智能产业投资基金追加投资智谱（Z.ai）2亿元",
+          "source_content_hash": "f341d4b1b0866ed67ba7235af03de1cbed239e7514a0133efc4503a75d7f9efa",
+          "quote": "北京市人工智能产业投资基金追加投资北京智谱华章科技股份有限公司2亿元。",
+          "quote_hash": "f4ded93bc100c2b1153e235209be1644ec88c5f92de859b03132a112d6896c3b"
+        },
         {
           "source_id": "FISRC-57fa132710ceea85",
           "source_url": "https://finance.sina.com.cn/tech/roll/2026-05-08/doc-inhxcyyr4353533.shtml",
@@ -213,7 +289,7 @@
           "quote_hash": "b5865ae83ac1f25b7336da19c26c0d11c7f93195923efbad4a5eb836e3c4c176"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

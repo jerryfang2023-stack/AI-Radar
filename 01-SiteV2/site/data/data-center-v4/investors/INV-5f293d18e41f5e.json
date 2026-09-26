@@ -311,12 +311,26 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Thrive Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-31；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Thrive Capital 官网介绍其投资并创建互联网、软件及技术赋能型企业，官方联系页列出纽约办公室及通用联系邮箱。其公开页面未在本次核验范围内披露可比较的基金业绩或完整组合指标。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官方业务描述",
+          "value": "投资并创建互联网、软件和技术赋能型企业。",
+          "source_id": "thrive_info"
+        },
+        {
+          "field": "headquarters",
+          "label": "官方联系页地点",
+          "value": "New York, New York。",
+          "source_id": "thrive_contact"
+        }
+      ],
       "milestones": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "官网公开内容支持其为科技领域投资机构，并提供一般联络渠道；未从第三方报道推断未披露的基金规模、个人履历或回报表现。",
       "track_record": [
         {
           "description": "融资来源记录：Ellis AI · 种子轮 · 2026-07-31 · 本轮参投 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
@@ -331,8 +345,46 @@
           "source_id": "FISRC-20776ee2d93a4e99"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "label": "一般联络邮箱",
+          "value": "info@thrivecap.com",
+          "url": "https://www.thrivecap.com/contact",
+          "source_id": "thrive_contact"
+        },
+        {
+          "kind": "email",
+          "label": "媒体与评论联络",
+          "value": "pr@thrivecap.com",
+          "url": "https://www.thrivecap.com/contact",
+          "source_id": "thrive_contact"
+        },
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "thrivecap.com",
+          "url": "https://www.thrivecap.com/info",
+          "source_id": "thrive_info"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "thrive_info",
+          "source_url": "https://www.thrivecap.com/info",
+          "source_title": "Thrive Capital - Info",
+          "source_content_hash": "f539412765f87a7c88555a9a776771a2757327697821b31f01323089f1abdfdd",
+          "quote": "Thrive Capital builds and invests in internet, software, and technology-enabled companies.",
+          "quote_hash": "c01132b389067d72c5e1d69ac68fedeed5f9b81bd3e848012e1982d9d3a797df"
+        },
+        {
+          "source_id": "thrive_contact",
+          "source_url": "https://www.thrivecap.com/contact",
+          "source_title": "Thrive Capital - Contact",
+          "source_content_hash": "113890d3680a02e95f3144d7bdf6a3e2822b611aa7469ab25c538e2d18a3b2e2",
+          "quote": "General correspondence: info@thrivecap.com. New York, New York.",
+          "quote_hash": "bf8f75c2a6fb056494a728ec92284b1773f900b34abf39f6e24f5a9f07235291"
+        },
         {
           "source_id": "FISRC-a8e6dd6c34cd416a",
           "source_url": "https://techcrunch.com/2026/07/31/repeat-founder-ryan-williams-raises-10m-seed-for-an-ai-startup-for-private-credit-managers/",
@@ -358,7 +410,10 @@
           "quote_hash": "547ec866b74fc8d07002d6005cd0c83d836c47624d3d0bc4b3eeb0ebae732bc3"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

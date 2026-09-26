@@ -111,33 +111,85 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "许闻达 的来源线索将其与无界动力（联合创始人兼CTO）关联。来源日期：2026-08-03；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "许闻达是无界动力联合创始人兼CTO。钛媒体报道其获卡内基梅隆大学机器人学博士，博士期间联合创办美国自动驾驶算法公司Ottomatika，后任卡尔动力自动驾驶副总裁及首席算法架构师；DoNews另报道其曾任Motional Fellow VP并负责自动驾驶算法团队。各段任期尚未找到可靠日期。",
+      "current_roles": [
+        {
+          "title": "联合创始人兼CTO",
+          "organization": "无界动力",
+          "source_id": "xu_tmtpost"
+        }
+      ],
       "career": [
+        {
+          "organization": "Ottomatika",
+          "title": "联合创始人",
+          "period": "博士期间；年份未披露",
+          "description": "钛媒体称其在美国联合创办自动驾驶算法公司；该报道将其商业运营成果归于团队，未单独量化个人贡献。",
+          "source_id": "xu_tmtpost"
+        },
+        {
+          "organization": "Motional",
+          "title": "Fellow VP、自动驾驶算法团队负责人",
+          "period": "在卡尔动力之前；年份未披露",
+          "description": "DoNews报道其负责自动驾驶算法团队及拉斯维加斯自动驾驶车队工程。",
+          "source_id": "xu_donews"
+        },
+        {
+          "organization": "卡尔动力（KargoBot）",
+          "title": "自动驾驶副总裁、首席算法架构师",
+          "period": "加入无界动力之前；年份未披露",
+          "description": "钛媒体报道其后任卡尔动力自动驾驶副总裁及首席算法架构师。",
+          "source_id": "xu_tmtpost"
+        },
         {
           "organization": "无界动力",
           "title": "联合创始人兼CTO",
-          "period": "来源记录于 2026-08-03；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-1ba0d3278a5daffa"
+          "period": "至少自2025年11月公开报道起；起始日未披露",
+          "description": "负责具身智能技术；具体职责范围未独立披露。",
+          "source_id": "xu_tmtpost"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "清华大学",
+          "qualification": "本科；报道未披露",
+          "source_id": "xu_donews"
+        },
+        {
+          "institution": "卡内基梅隆大学",
+          "qualification": "博士；机器人学（钛媒体）；电子与计算机工程（DoNews）",
+          "source_id": "xu_tmtpost"
+        }
+      ],
+      "experience_summary": "职业经历集中于自动驾驶算法、自动驾驶车队工程与创业，后转向具身智能；现有公开来源对Motional职级表述来自DoNews转载，建议后续以本人/雇主一手资料进一步核验。",
+      "track_record": [
+        {
+          "description": "参与Ottomatika自动驾驶算法创业，后在卡尔动力负责自动驾驶算法架构；报道提及其团队的商业化项目，未将团队成绩独立归因于个人。",
+          "source_id": "xu_tmtpost"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-1ba0d3278a5daffa",
-          "source_url": "https://www.163.com/dy/article/KRI6KTBP055651K9.html",
-          "source_title": "融资披露来源",
-          "source_content_hash": "f02077e900685240b9d8ced3e15c5f793c2a936f807c05d70a686b22e8f25ec5",
-          "quote": "联合创始人兼CTO许闻达为卡内基梅隆大学机器人学博士，有连续成功创业经历",
-          "quote_hash": "50ff82cc93c922b5bc79bcfa81acac678a3d266a45b6906e1c285f54e859fe8a"
+          "source_id": "xu_tmtpost",
+          "source_url": "https://www.tmtpost.com/7756068.html",
+          "source_title": "钛媒体：无界动力团队与创始成员介绍",
+          "source_content_hash": "5bb1f2ccaf2e7adb9a2233b0e3b607105d5b714eeadd4b2f57795aabd61aa713",
+          "quote": "钛媒体称许闻达拥有CMU机器人学博士，博士期间联合创办Ottomatika，之后担任卡尔动力自动驾驶副总裁及首席算法架构师。",
+          "quote_hash": "6a503427a945641498b775215d274d7ba216767ebe95f673bb43c80bad612b27"
+        },
+        {
+          "source_id": "xu_donews",
+          "source_url": "https://www.donews.com/news/detail/1/6231689.html",
+          "source_title": "DoNews：无界动力招揽前滴滴自动驾驶高管许闻达",
+          "source_content_hash": "535450b14db0aaa43f6f3f9c12ddd40c9377d8c59ec5cb1c68f4ecb707ec6937",
+          "quote": "DoNews报道许闻达曾任Motional Fellow VP并负责自动驾驶算法团队，本科毕业于清华大学自动化系。",
+          "quote_hash": "b5a231bdb266447923b3d55eaa913f4711598f2af15e241eef8579598dbfaaa5"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "主要职业路径来自钛媒体报道，Motional经历与清华本科信息来自DoNews转载；职位年份未披露，未推断。",
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

@@ -178,25 +178,95 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "无限基金SEE FUND 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "无限基金SEE Fund（该库两条名称变体分别收录）由清华大学电子工程系与天津电子院共同推动发起，关注高校教师与校友创业的早期前沿科技，方向包括信息科技、高端制造和医工结合。清华官网披露首期募集2亿元、第二期5.68亿元，并列出备案编号SNT727、STS289。",
+      "facts": [
+        {
+          "field": "initiators",
+          "label": "发起单位",
+          "value": [
+            "清华大学电子工程系",
+            "天津电子院"
+          ],
+          "source_id": "tsinghua_see_fund"
+        },
+        {
+          "field": "fund_sizes",
+          "label": "已披露基金募集规模",
+          "value": [
+            "首期2亿元",
+            "第二期5.68亿元"
+          ],
+          "source_id": "tsinghua_see_sizes"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": [
+            "早期"
+          ],
+          "source_id": "tsinghua_see_focus"
+        },
+        {
+          "field": "focus_sectors",
+          "label": "投资方向",
+          "value": [
+            "信息科技",
+            "高端制造",
+            "医工结合"
+          ],
+          "source_id": "tsinghua_see_focus"
+        },
+        {
+          "field": "filing_numbers",
+          "label": "基金备案编号（官网披露）",
+          "value": [
+            "SNT727",
+            "STS289"
+          ],
+          "source_id": "tsinghua_see_codes"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：星海图 · B+轮 · 2026-04-02 · 历史轮次投资方 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资来源记录：无界智航天使轮中，SEE Fund 无限基金被报道为联合领投方；这是已披露融资记录，不代表完整组合或基金回报。",
+          "source_id": "FISRC-086ff36dfb7673e8"
+        },
+        {
+          "description": "融资来源记录：星海图历史融资中列出“无限基金SEE FUND”；来源未披露该基金投资金额或退出回报。",
           "source_id": "FISRC-7a614400d44a7041"
         },
         {
-          "description": "融资来源记录：星海图 · B轮 · 2026-02-11 · 天使轮跟投 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资来源记录：星海图2024年天使轮第二轮将“无限基金SEE FUND”列为跟投方。",
           "source_id": "FISRC-2707f48aa6e437b7"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "清华大学电子工程系基金介绍",
+          "value": "SEE FUND官方介绍页",
+          "url": "https://www.ee.tsinghua.edu.cn/info/1375/3052.htm",
+          "source_id": "tsinghua_see_fund"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "tsinghua_see_fund",
+          "source_url": "https://www.ee.tsinghua.edu.cn/info/1375/3052.htm",
+          "source_title": "SEE FUND-清华大学电子工程系",
+          "source_content_hash": "1cd2789c64c6adcc26a67fccce73ee30f7b66147c124158f4ab684e39f0b2d25",
+          "quote": "无限基金SEE Fund是由清华大学电子工程系和天津电子院共同推动发起设立。",
+          "quote_hash": "9f2ca75f6686cab0cc36302c5b9ffbbb05296330ad0f450219729a068b307caa"
+        },
+        {
+          "source_id": "FISRC-086ff36dfb7673e8",
+          "source_url": "https://news.pedaily.cn/202607/566101.shtml",
+          "source_title": "Xspark AI「无界智航」完成近亿元天使轮融资，加速Physical AI规模化落地",
+          "source_content_hash": "d9771ea116d57f70",
+          "quote": "本轮融资由鼎晖VGC、初心资本、SEE Fund 无限基金联合领投",
+          "quote_hash": "d688d5d09fb7cb0f4140acb0a2e6afb3c7d9bd774ae068a653d5ba7df53e9f3d"
+        },
         {
           "source_id": "FISRC-7a614400d44a7041",
           "source_url": "https://news.pedaily.cn/202604/562366.shtml",
@@ -212,9 +282,37 @@
           "source_content_hash": "85e4d40faa23c515",
           "quote": "2024年1月，天使轮第二轮融资千万美金，由IDG资本领投，BV百度风投、无限基金SEE FUND、金沙江创投、七熹投资跟投",
           "quote_hash": "b6fdaa3f5a6c2e7d233c56ea352f73c00c806e8f3dc89f2497f13ad46b24688e"
+        },
+        {
+          "source_id": "tsinghua_see_sizes",
+          "source_url": "https://www.ee.tsinghua.edu.cn/info/1375/3052.htm",
+          "source_title": "SEE FUND-清华大学电子工程系",
+          "source_content_hash": "1cd2789c64c6adcc26a67fccce73ee30f7b66147c124158f4ab684e39f0b2d25",
+          "quote": "首期基金募集规模2亿元，第二期基金募集规模5.68亿元。",
+          "quote_hash": "d8de0aef4a0dd920505f5af3019ad16a21a4408ce7f6159bdd9dbf21509da5ed"
+        },
+        {
+          "source_id": "tsinghua_see_focus",
+          "source_url": "https://www.ee.tsinghua.edu.cn/info/1375/3052.htm",
+          "source_title": "SEE FUND-清华大学电子工程系",
+          "source_content_hash": "1cd2789c64c6adcc26a67fccce73ee30f7b66147c124158f4ab684e39f0b2d25",
+          "quote": "瞄准“信息科技、高端制造、医工结合”三个方向的早期项目。",
+          "quote_hash": "06cfd3bd44632e27d27c419176c8b90f64eb5a4c44bb3c221efe64fd9e124242"
+        },
+        {
+          "source_id": "tsinghua_see_codes",
+          "source_url": "https://www.ee.tsinghua.edu.cn/info/1375/3052.htm",
+          "source_title": "SEE FUND-清华大学电子工程系",
+          "source_content_hash": "1cd2789c64c6adcc26a67fccce73ee30f7b66147c124158f4ab684e39f0b2d25",
+          "quote": "基金备案编号分别为SNT727、STS289。",
+          "quote_hash": "9ef60ab7e31af9582a7b166f1c484ac3aaaf28117f8c2383aa5169026359334b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "清华大学电子工程系的基金介绍页确认SEE Fund的发起方、方向、募集规模与备案编号。清华院系邮箱和电话未作为基金募资联系方式收录。",
+      "last_verified_at": "2026-09-26"
     }
   }
 }

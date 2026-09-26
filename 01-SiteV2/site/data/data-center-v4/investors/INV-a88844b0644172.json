@@ -187,14 +187,39 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Italian Founders Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Italian Founders Fund 是面向具有意大利关联背景创业公司的创始人支持型风险投资基金，官网称投资阶段覆盖 Pre-Seed 至 A 轮，初始投资金额为25万至300万欧元。基金由 Koinos Capital SGR 管理；官网提供联系入口，未在所查页面公开项目投递专用邮箱。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Pre-Seed 至 Series A",
+          "source_id": "iff_home"
+        },
+        {
+          "field": "geographic_or_founder_focus",
+          "label": "项目关注条件",
+          "value": "企业具有意大利关联背景，包括在意大利创立或由意大利人创立的全球企业",
+          "source_id": "iff_home"
+        },
+        {
+          "field": "initial_investment",
+          "label": "官网披露初始投资规模",
+          "value": "25万至300万欧元",
+          "source_id": "iff_home"
+        },
+        {
+          "field": "manager",
+          "label": "基金管理人",
+          "value": "Koinos Capital SGR",
+          "source_id": "iff_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官网组合页展示 Jet HR、Sava、Mama Health、Pillar、Cato 等投资案例及相应融资阶段。该展示不代表完整投资组合或投资回报。",
+          "source_id": "iff_home"
+        },
         {
           "description": "融资来源记录：Cato · 种子轮 · 2026-09-07 · 领投pre-Seed轮融资 · €6 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-495f39954954d0bc"
@@ -204,8 +229,32 @@
           "source_id": "FISRC-05007e2b6b43ffda"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网联系入口",
+          "value": "Italian Founders Fund",
+          "url": "https://www.italianfoundersfund.com/",
+          "source_id": "iff_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "iff_home",
+          "source_url": "https://www.italianfoundersfund.com/",
+          "source_title": "Italian Founders Fund",
+          "source_content_hash": "bca6b5f7da8960d9226265a58293c76229f6839e7f51c119f6b3704a41d86b9e",
+          "quote": "Italian Founders Fund invests from Pre-Seed to Series A in companies with Italian DNA and offers initial investments of €250,000 to €3 million. It is managed by Koinos Capital SGR.",
+          "quote_hash": "f67bbb5a73a1fcf6f8360c57d31e45e18aa9c1a4b790c86d75446ec8c615ffae"
+        },
+        {
+          "source_id": "iff_story",
+          "source_url": "https://www.italianfoundersfund.com/our-story",
+          "source_title": "Our Story | Italian Founders Fund",
+          "source_content_hash": "44332e4be430368e548d4cbc1839517c0a5f6d99d5b962239da614d1b4052d6b",
+          "quote": "Italian Founders Fund was built as a founder-backed VC fund, with Koinos Capital SGR providing an institutional platform.",
+          "quote_hash": "76db0d84fb310938c205e95f102ea2a864456c0fc7bc3b9a0e65257afe8b256f"
+        },
         {
           "source_id": "FISRC-495f39954954d0bc",
           "source_url": "https://www.eu-startups.com/2026/09/milan-based-cato-raises-e6-million-to-help-companies-find-and-win-public-tenders-with-ai/",
@@ -223,7 +272,11 @@
           "quote_hash": "9317d27dcd44755a08a62438a5ebbfd6628ad5af27501300e72473c6cac0a332"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     },
     "translations": {
       "zh-CN": {

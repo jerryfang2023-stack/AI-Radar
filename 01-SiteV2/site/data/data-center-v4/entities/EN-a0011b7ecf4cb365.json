@@ -111,33 +111,69 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "张祥雨 的来源线索将其与StepFun（首席科学家）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "张祥雨是计算机视觉研究者，曾任旷视科技研究院基础模型组负责人，并于2026年融资报道中被列为阶跃星辰首席科学家。西安交通大学校友网记载其2017年博士毕业、参与ResNet与ShuffleNet研究，并获CVPR 2016最佳论文奖。",
+      "current_roles": [
+        {
+          "title": "首席科学家（2026年1月报道）",
+          "organization": "阶跃星辰（StepFun）",
+          "source_id": "zhangxiangyu_stepfun_202601"
+        }
+      ],
       "career": [
         {
-          "organization": "StepFun",
+          "organization": "旷视科技研究院",
+          "title": "基础模型组负责人",
+          "period": "至少截至2021年3月校友专访",
+          "description": "负责基础模型研究团队；此为当时职位记录，不推断其后任职时间。",
+          "source_id": "zhangxiangyu_xjtu_alumni_202103"
+        },
+        {
+          "organization": "阶跃星辰（StepFun）",
           "title": "首席科学家",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-4ae8171e86e3a055"
+          "period": "2026年1月融资报道所载",
+          "description": "由融资报道确认该报道时的职务；未找到公司官网人物页以独立确认。",
+          "source_id": "zhangxiangyu_stepfun_202601"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "西安交通大学",
+          "qualification": "2017年博士毕业；参与微软亚洲研究院联合培养博士生项目",
+          "source_id": "zhangxiangyu_xjtu_alumni_202103"
+        }
+      ],
+      "experience_summary": "研究方向涉及高性能卷积网络、轻量化网络和基础模型；履历结合高校校友资料与具日期的融资报道，现任职位的独立公司来源有限。",
+      "track_record": [
+        {
+          "description": "参与ResNet研究，是论文主要作者之一；该研究获CVPR 2016最佳论文奖，奖项属于研究团队。",
+          "source_id": "zhangxiangyu_xjtu_alumni_202103"
+        },
+        {
+          "description": "与合作者提出ShuffleNet轻量化网络系列；相关研究成果共同署名，不单独归因。",
+          "source_id": "zhangxiangyu_xjtu_alumni_202103"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-4ae8171e86e3a055",
+          "source_id": "zhangxiangyu_xjtu_alumni_202103",
+          "source_url": "https://alumni.xjtu.edu.cn/info/1042/5640.htm",
+          "source_title": "张祥雨：3年看1800篇论文，28岁掌舵旷视基础模型研究｜西安交通大学校友网",
+          "source_content_hash": "a0a247dfc0509b281999d969b3d86d261f09f4264c8204f396f5352721548c2d",
+          "quote": "西安交通大学校友网记载张祥雨2017年博士毕业，参加微软亚洲研究院联合培养博士生项目；是ResNet主要作者之一并参与ShuffleNet研究，曾任旷视科技研究院基础模型组负责人。",
+          "quote_hash": "01e4f0ed464ccf8a510b694adc0e45ced4a620319af60e633ec2120bc515abd3"
+        },
+        {
+          "source_id": "zhangxiangyu_stepfun_202601",
           "source_url": "https://news.pedaily.cn/202601/560382.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "b3815bfa4d27819c",
-          "quote": "首席科学家张祥⾬，则是一位90后AI大牛，也是著名论⽂ ResNet（残差网络）论⽂的四位作者之⼀",
-          "quote_hash": "84fd9bce1c7c8ada90b8736dfdb084ded06fafa0e41d1fb83191732d54ae1786"
+          "source_title": "50亿，阶跃星辰完成新年最大融资｜投资界",
+          "source_content_hash": "3289629a372df704d41f16fbe1b04008dd02798042f072b77d4b2b9d398f81d0",
+          "quote": "投资界2026年1月融资报道将张祥雨称为阶跃星辰首席科学家，并称其为ResNet论文作者之一。该报道用于核验当时职务，研究成就另以西安交通大学校友网为依据。",
+          "quote_hash": "0e9cabaaeab4c0576996877b0355a9cefe61eac667bae4d715766cbb2234714d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "学位及学术经历取自西安交通大学校友网；阶跃星辰职务仅由2026年1月融资报道确认，并保留来源日期限定。"
     }
   },
   "relatedEntities": [],

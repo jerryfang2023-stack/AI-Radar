@@ -186,14 +186,38 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "图灵基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "图灵基金官网介绍其成立于2021年，由投资、产业与学术背景人士联合发起。官网同时介绍图灵资管主体成立于2016年及其已参与的项目。两者属于相关品牌与管理主体的官网表述，融资库的具体交易仍以各条融资来源为准，不将组合项目视为完整业绩。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "官网披露成立年份",
+          "value": "2021",
+          "source_id": "turing_fund_official"
+        },
+        {
+          "field": "related_manager",
+          "label": "官网同时介绍的管理主体",
+          "value": "杭州图灵资产管理有限公司（成立于2016年）；该主体与图灵基金的法律关系未由本条资料进一步核验。",
+          "source_id": "turing_firm_profile"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2021",
+          "description": "官网称图灵基金成立。",
+          "source_id": "turing_fund_official"
+        },
+        {
+          "date": "2016",
+          "description": "官网称杭州图灵资产管理有限公司成立。",
+          "source_id": "turing_firm_profile"
+        }
+      ],
       "track_record": [
+        {
+          "description": "图灵资管官网列示网易云音乐、微众银行、菜鸟网络、长鑫存储、摩尔线程、优必选等参与项目；此为官网公开案例，未作收益或退出判断。",
+          "source_id": "turing_firm_profile"
+        },
         {
           "description": "融资来源记录：千寻智能 · A+轮 · 2026-06-03 · 2026年3月轮次投资方 · 15亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b8b7d456eceee943"
@@ -203,8 +227,47 @@
           "source_id": "FISRC-c7d67ad33d44d659"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "label": "官网公开联系邮箱",
+          "value": "li@turingpe.com",
+          "url": "https://www.turingpe.com/",
+          "source_id": "turing_contact"
+        },
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "杭州图灵资本",
+          "url": "https://www.turingpe.com/",
+          "source_id": "turing_fund_official"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "turing_fund_official",
+          "source_url": "https://www.turingpe.com/",
+          "source_title": "杭州图灵资本，图灵资产，图灵资管",
+          "source_content_hash": "3a72a2ca23c773f60e1f7eec5a896141f1350dae1fb5a05c5259843105a1b65c",
+          "quote": "图灵基金成立于2021年，由国内资深投行、职业投资人、知名实业家、金融/数学/会计专业顶尖学府人才联合发起成立。",
+          "quote_hash": "19417649ce9bb67bcbcf93acc0dacbe20d4c557b62447ae8693b2ec060381546"
+        },
+        {
+          "source_id": "turing_firm_profile",
+          "source_url": "https://www.turingpe.com/",
+          "source_title": "杭州图灵资本，图灵资产，图灵资管",
+          "source_content_hash": "3a72a2ca23c773f60e1f7eec5a896141f1350dae1fb5a05c5259843105a1b65c",
+          "quote": "杭州图灵资产管理有限公司成立于2016年。公司公开介绍其参与了网易云音乐、微众银行、菜鸟网络、长鑫存储、摩尔线程、优必选等项目。",
+          "quote_hash": "4cd6123d06f136ee7bd5d7d53abd6fa1808adce1687e5fa2dafc6ad96a170118"
+        },
+        {
+          "source_id": "turing_contact",
+          "source_url": "https://www.turingpe.com/",
+          "source_title": "杭州图灵资本，图灵资产，图灵资管",
+          "source_content_hash": "3a72a2ca23c773f60e1f7eec5a896141f1350dae1fb5a05c5259843105a1b65c",
+          "quote": "公开联系邮箱：li@turingpe.com。",
+          "quote_hash": "4787b1e3fa056825e588e87f780c0e46cbe1a2ee77419beb3f91661cd3c86c74"
+        },
         {
           "source_id": "FISRC-b8b7d456eceee943",
           "source_url": "https://news.pedaily.cn/202606/564786.shtml",
@@ -222,7 +285,11 @@
           "quote_hash": "2a4211059643fbc9e0b2bd8196d125cfc74e96aa1738bf9dd6392dac770a147f"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

@@ -188,12 +188,66 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Titan Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Titan Capital 是印度的创始人导向型早期风险投资机构，主要从种子阶段支持创业者，官网提供项目申请表。共同创始人 Kunal Bahl 与 Rohit Bansal 均自 2011 年开始投资，机构官网称他们各自支持过 300 多家种子期初创公司。公开组合及创始人案例包括 Razorpay、Urban Company、OfBusiness、Mamaearth 等。",
+      "facts": [
+        {
+          "field": "investment_strategy",
+          "label": "投资阶段与风格",
+          "value": "偏早期、种子轮投资，官网强调由有创业经历的合伙人提供创始人支持。",
+          "source_id": "titan_strategy_team"
+        },
+        {
+          "field": "focus_sectors",
+          "label": "重点领域",
+          "value": [
+            "消费科技",
+            "金融科技",
+            "SaaS",
+            "健康科技",
+            "消费品牌",
+            "B2B 服务"
+          ],
+          "source_id": "titan_kunal_bio"
+        },
+        {
+          "field": "founders",
+          "label": "共同创始人",
+          "value": [
+            "Kunal Bahl",
+            "Rohit Bansal"
+          ],
+          "source_id": "titan_founders"
+        },
+        {
+          "field": "kunal_bahl_background",
+          "label": "Kunal Bahl 履历",
+          "value": "科技创业者与投资人；自 2011 年投资，官网称其在种子阶段支持 300 多家初创公司；AceVector 联合创始人（旗下包括 Snapdeal、Unicommerce 和 Stellaro Brands）；职业早期任微软产品经理；宾夕法尼亚大学 Jerome Fisher 管理与技术项目毕业，获工程与商学学位。",
+          "source_id": "titan_kunal_bio"
+        },
+        {
+          "field": "rohit_bansal_background",
+          "label": "Rohit Bansal 履历",
+          "value": "运营者与投资人；自 2011 年投资，官网称其在种子阶段支持 300 多家初创公司；AceVector 联合创始人；曾任 FICCI 创业委员会主席；获印度理工学院德里分校计算机科学学士与硕士学位。",
+          "source_id": "titan_rohit_bio"
+        },
+        {
+          "field": "portfolio_network",
+          "label": "创业者网络",
+          "value": "官网称其创始人网络超过 650 人；这是网络规模，不等同于投资组合企业数。",
+          "source_id": "titan_founder_network"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官方组合页列出 Razorpay 为种子阶段投资项目，显示企业创立于 2013 年、Titan Capital 于 2015 年与其建立投资关系。",
+          "source_id": "titan_razorpay"
+        },
+        {
+          "description": "机构创始人案例页展示 Urban Company、Razorpay、OfBusiness、Mamaearth、Shadowfax、Credgenics 等创业者和组合故事；机构另称其创始人网络超过 650 人。",
+          "source_id": "titan_founder_network"
+        },
         {
           "description": "融资来源记录：ContraVault AI · Pre-A轮 · 2026-06-17 · 种子轮领投 · $3.1 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-78278ca61a2d245e"
@@ -203,8 +257,155 @@
           "source_id": "FISRC-3916f9c102f08152"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "application",
+          "label": "创业项目融资申请",
+          "value": "Titan Capital Get Investment 表单",
+          "url": "https://titancapital.vc/getinvestment",
+          "source_id": "titan_application"
+        },
+        {
+          "kind": "email",
+          "label": "机构公开邮箱",
+          "value": "info@titancapital.vc",
+          "source_id": "titan_team_contact"
+        },
+        {
+          "kind": "address",
+          "label": "办公室地址",
+          "value": "M3M Urbana, Sector 67, Gurugram, India",
+          "source_id": "titan_team_contact"
+        },
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "titancapital.vc",
+          "url": "https://titancapital.vc/",
+          "source_id": "titan_strategy_team"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "共同创始人",
+          "organization": "Titan Capital",
+          "source_id": "titan_kunal_bio"
+        },
+        {
+          "title": "共同创始人",
+          "organization": "Titan Capital",
+          "source_id": "titan_rohit_bio"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Microsoft",
+          "title": "产品经理",
+          "period": "职业早期；具体任期未披露",
+          "description": "Kunal Bahl 的官方人物简介称他职业早期曾任微软产品经理。",
+          "source_id": "titan_kunal_bio"
+        },
+        {
+          "organization": "AceVector Limited",
+          "title": "联合创始人",
+          "period": "官网未披露具体起始日期",
+          "description": "AceVector 是 Snapdeal、Unicommerce 和 Stellaro Brands 的控股公司。",
+          "source_id": "titan_kunal_bio"
+        },
+        {
+          "organization": "AceVector Limited",
+          "title": "联合创始人",
+          "period": "官网未披露具体起始日期",
+          "description": "AceVector 是 Snapdeal、Unicommerce 和 Stellaro Brands 的控股公司。",
+          "source_id": "titan_rohit_bio"
+        },
+        {
+          "organization": "FICCI Start-up Committee",
+          "title": "主席（过往职务）",
+          "period": "任期未披露",
+          "description": "Rohit Bansal 的官方人物简介称其曾任 FICCI 创业委员会主席。",
+          "source_id": "titan_rohit_bio"
+        }
+      ],
+      "education": [
+        {
+          "institution": "University of Pennsylvania, Jerome Fisher Program in Management and Technology / Wharton",
+          "qualification": "工程与商学学位；官方简介未列学位名称。",
+          "source_id": "titan_kunal_bio"
+        },
+        {
+          "institution": "Indian Institute of Technology Delhi",
+          "qualification": "计算机科学学士与硕士。",
+          "source_id": "titan_rohit_bio"
+        }
+      ],
+      "experience_summary": "Titan Capital 两位共同创始人均有早期投资经历。Kunal Bahl 早期曾任微软产品经理，并共同创立 AceVector；Rohit Bansal 是运营者与投资人，也共同创立 AceVector，并曾担任 FICCI 创业委员会主席。教育及经历按 Titan Capital 官网人物简介记录，未披露的任期保持未注明。",
+      "coverage_note": "创始人投资数量来自 Titan Capital 官网人物简介：两人分别被描述为投资过 300 多家种子期初创公司；由于未说明两人组合是否重叠，不合并计算。投资申请表和联系方式来自机构官网。",
       "sources": [
+        {
+          "source_id": "titan_strategy_team",
+          "source_url": "https://titancapital.vc/ourteam",
+          "source_title": "Meet The Team - Titan Capital",
+          "source_content_hash": "422f73e009bdff90865b415a13e9e8e2a0de5479f5d05b84d3c84f5a817e7fbf",
+          "quote": "Titan Capital is led by founders who have lived the journey.",
+          "quote_hash": "94efcf14ed57128a63949150cef84cb6210cce58736c8db3fbddc6c92cb8514a"
+        },
+        {
+          "source_id": "titan_founders",
+          "source_url": "https://titancapital.vc/ourteam",
+          "source_title": "Meet The Team - Titan Capital",
+          "source_content_hash": "422f73e009bdff90865b415a13e9e8e2a0de5479f5d05b84d3c84f5a817e7fbf",
+          "quote": "Kunal Bahl Co-Founder, Titan Capital; Rohit Bansal Co-Founder, Titan Capital",
+          "quote_hash": "65fa2329ad1a98deb9297e1081c109abb93092b7dd2811fa2c8559cd5d67cca2"
+        },
+        {
+          "source_id": "titan_kunal_bio",
+          "source_url": "https://titancapital.vc/founders/kunal-bahl",
+          "source_title": "Kunal Bahl - Co-Founder, Titan Capital",
+          "source_content_hash": "7bde36aced766ce2cb104ce7b29218d01627bbe3ae5ac24ae4b1171e05d6f6ac",
+          "quote": "He has been investing since 2011 and has backed over 300 startups at seed.",
+          "quote_hash": "b3b85802871f078eb79a280a815a0dd4a634f882f60e39c5472f68b790c09c96"
+        },
+        {
+          "source_id": "titan_rohit_bio",
+          "source_url": "https://titancapital.vc/founders/rohit-bansal",
+          "source_title": "Rohit Bansal - Co-Founder, Titan Capital",
+          "source_content_hash": "2bd68e3dced104ff1060354ef64573a185efe197e405a610bdf13cc11cc8d3c7",
+          "quote": "Since 2011 he has backed over 300 startups at seed.",
+          "quote_hash": "4ae62843d627e504fadaabb49d756a355b2faafab712fa4c521c54ae451fcf32"
+        },
+        {
+          "source_id": "titan_founder_network",
+          "source_url": "https://titancapital.vc/foundersstory",
+          "source_title": "Founders Stories - Titan Capital",
+          "source_content_hash": "c076d45e8221e0f4ae94c1ef2bd0c66e315e7954463c200125b9cee2fbb49770",
+          "quote": "650+ Founders. One Extended Team",
+          "quote_hash": "f7413a2cb2d8fad3a6f359418ec3f3b1cf64abea42ba8a37f9e152bade8bf1b9"
+        },
+        {
+          "source_id": "titan_application",
+          "source_url": "https://titancapital.vc/getinvestment",
+          "source_title": "Get Investment - Titan Capital",
+          "source_content_hash": "294752fa62400afe9527261eedefc6ea2d4343edfc19127c41ca94f6a1e56817",
+          "quote": "If you're building a company you'd give the next decade of your life to, we want to hear about it.",
+          "quote_hash": "d1833a1c0a59573101ca51a952ad83cde9c9657f11bc12e39edb30061bc57df8"
+        },
+        {
+          "source_id": "titan_team_contact",
+          "source_url": "https://titancapital.vc/ourteam",
+          "source_title": "Meet The Team - Titan Capital",
+          "source_content_hash": "422f73e009bdff90865b415a13a9e8e2a0de5479f5d05b84d3c84f5a817e7fbf",
+          "quote": "M3M Urbana, Sector 67, Gurugram, India info@titancapital.vc",
+          "quote_hash": "108540d38345d9e6630f5222957c4fb2caec255347b83822fdb7ebcf80f152db"
+        },
+        {
+          "source_id": "titan_razorpay",
+          "source_url": "https://titancapital.vc/portfolio/razorpay",
+          "source_title": "Razorpay - Titan Capital",
+          "source_content_hash": "4ae88efcf07b64336c4c26aa6a15b3ddb680560c2ccbf7054d5e96cf4176e564",
+          "quote": "Invested In Seed Founded 2013 Partnered 2015",
+          "quote_hash": "792fdd7a01d779f8ae06219f1d743b2ade5db8a651f196f9654bb8e750eaea55"
+        },
         {
           "source_id": "FISRC-78278ca61a2d245e",
           "source_url": "https://startupsunion.com/contravault-ai-raises-3-1m-pre-series-a-to-revolutionize-procurement-intelligence/",
@@ -222,7 +423,7 @@
           "quote_hash": "a66af8b3b780e7cadc01711b872d268899bd4b82167fdeffcddadc10ecd368f6"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

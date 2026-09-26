@@ -111,33 +111,68 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "李辉 的来源线索将其与深度智控（创始人兼CEO）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "李辉是深度智控创始人兼CEO，拥有清华大学博士学位，曾在美国劳伦斯伯克利国家实验室从事研究，专业背景为建筑与工业能源效率、暖通系统及能源智能控制。毕马威中国行业报告记录了其科研履历及相关奖项。",
+      "current_roles": [
+        {
+          "title": "创始人兼CEO",
+          "organization": "深度智控",
+          "source_id": "lihui_kpmg_new_energy50_2024"
+        }
+      ],
       "career": [
         {
-          "organization": "深度智控",
+          "organization": "美国劳伦斯伯克利国家实验室",
+          "title": "高级科学家",
+          "period": "此前任职；具体年月未由引用资料披露",
+          "description": "从事能效、建筑与能源系统相关研究。",
+          "source_id": "lihui_kpmg_new_energy50_2024"
+        },
+        {
+          "organization": "国际能源署 Annex 70",
+          "title": "中国区代表",
+          "period": "任职年份未由引用资料披露",
+          "description": "参与建筑能源及相关国际研究协作。",
+          "source_id": "lihui_kpmg_new_energy50_2024"
+        },
+        {
+          "organization": "南京深度智控科技有限公司",
           "title": "创始人兼CEO",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将李辉与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-03cb69a63e7d787b"
+          "period": "公司于2018年成立；2024年行业报告列示其职务",
+          "description": "推动将物理机理模型与AI用于工业、建筑及能源系统节能控制。",
+          "source_id": "lihui_kpmg_new_energy50_2024"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "清华大学",
+          "qualification": "博士；报告未列具体专业和毕业年份",
+          "source_id": "lihui_kpmg_new_energy50_2024"
+        }
+      ],
+      "experience_summary": "科研履历横跨高校、美国国家实验室和国际能源合作，之后回国创办深度智控。引用的毕马威行业报告未列各任职准确年月。",
+      "track_record": [
+        {
+          "description": "获美国2010年度AEE国家能效奖及中美CERC能效先锋奖；按报告记载为个人荣誉。",
+          "source_id": "lihui_kpmg_new_energy50_2024"
+        },
+        {
+          "description": "主持或参与国家重点科技课题、国家863计划及省部级攻关项目；项目成果由团队共同完成。",
+          "source_id": "lihui_kpmg_new_energy50_2024"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-03cb69a63e7d787b",
-          "source_url": "https://news.pedaily.cn/202607/566034.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "549472ef08c4ac5a",
-          "quote": "深度智控创始人兼CEO李辉博士表示",
-          "quote_hash": "1366a7d933dc696aca9e8ce64ac8e7e6e038f9bce325a642a9ec4b52016a4049"
+          "source_id": "lihui_kpmg_new_energy50_2024",
+          "source_url": "https://assets.kpmg.com/content/dam/kpmg/cn/pdf/zh/2024/06/new-energy-tech-50.pdf",
+          "source_title": "第一届新能源科技企业50｜毕马威中国",
+          "source_content_hash": "ee1fe86efd6cfacf913a0d9e736041a8b439093543aef4c7388afb7584bc305c",
+          "quote": "毕马威中国新能源科技企业报告介绍深度智控创始人兼CEO李辉拥有清华大学博士学位，曾任美国劳伦斯伯克利国家实验室高级科学家及国际能源署Annex70中国区代表，参与国家重点科技课题并获能源效率相关奖项。",
+          "quote_hash": "6945575f9a58fee1d1a2600f12af447577ec50da8798426ace03c440cf6150a5"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "履历来自毕马威中国行业报告；未找到所有经历的机构原始档案，任职日期缺失处明确留空。"
     }
   },
   "relatedEntities": [],

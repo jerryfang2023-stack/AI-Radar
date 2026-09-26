@@ -186,14 +186,53 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "九合创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "九合创投是一家成立于2011年的早期风险投资机构，由王啸创立。36氪机构资料将其描述为早期初创公司投资者，并列出消费互联网、企业服务、先进制造、汽车出行、医疗健康等公开组合案例。该资料页展示的行业标签和历史投资案例是媒体汇编，不能视作当前唯一投资策略或完整投资组合；数据库中同名融资标签也不能确认每笔投资所用的基金载体。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立年份",
+          "value": "2011",
+          "source_id": "jiuhe_36kr_profile"
+        },
+        {
+          "field": "founder",
+          "label": "创始人",
+          "value": "王啸（36氪机构资料）",
+          "source_id": "jiuhe_36kr_profile"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期投资（机构资料所述）",
+          "source_id": "jiuhe_36kr_profile"
+        },
+        {
+          "field": "investment_focus",
+          "label": "公开组合覆盖领域",
+          "value": [
+            "企业服务",
+            "前沿技术",
+            "物联网与硬件",
+            "先进制造",
+            "汽车出行",
+            "医疗健康",
+            "消费与文化"
+          ],
+          "source_id": "jiuhe_36kr_profile"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2011",
+          "description": "36氪机构资料记载九合创投成立。",
+          "source_id": "jiuhe_36kr_profile"
+        }
+      ],
       "track_record": [
+        {
+          "description": "媒体机构资料列示其历史投资企业包括36氪、下厨房、新片场、美餐、Airdoc和Momenta等；具体投资主体与投资轮次应以各项目公告核对。",
+          "source_id": "jiuhe_36kr_profile"
+        },
         {
           "description": "融资来源记录：欧拉万象 · 天使轮 · 2026-06-26 · 历史轮次投资方 · 超过亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-62bfb7c7dd37177e"
@@ -203,8 +242,28 @@
           "source_id": "FISRC-80b46378aae68c24"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案依据36氪机构资料整理，成立年份、创始人与组合均注明为媒体汇编；公开的投资申请邮箱、电话和办公地址尚未从现行机构官网独立确认。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "36氪资料所列官网",
+          "value": "九合创投官网",
+          "url": "https://www.unityvc.com/",
+          "source_id": "jiuhe_36kr_profile"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "jiuhe_36kr_profile",
+          "source_url": "https://pitchhub.36kr.com/organization/1678203789440008",
+          "source_title": "九合创投 | 投资机构信息 - 36氪",
+          "source_content_hash": "6889d48c23e399648d00f35ec692b6c65d4a0222f54316db207a49204a3723b3",
+          "quote": "36氪机构页介绍九合创投于2011年成立，由王啸创立，重点投资早期科技创业企业，并列举其公开组合案例；这些机构介绍及组合数据为媒体页面汇编，未逐一独立审计。",
+          "quote_hash": "4a6a63dee6cba78a4bc13a58021a02c20ac2cd5a57862d2ccc89007d5890b31b"
+        },
         {
           "source_id": "FISRC-62bfb7c7dd37177e",
           "source_url": "https://www.163.com/dy/article/KUTU3HNL05118HJE.html",
@@ -222,7 +281,7 @@
           "quote_hash": "904259116e332ef4c86f2cc478e1db6d17dbdceb4821cfd2cc9566bdd5a5c3e5"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

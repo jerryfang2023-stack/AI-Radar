@@ -247,14 +247,68 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "锡创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "无锡市创新投资集团有限公司（锡创投）是无锡国有创投机构，前身为无锡市金融创业投资集团。其基金体系覆盖种子、天使、创业投资、股权、并购和 S 基金，官网列示其通过全资或控股管理公司及混合所有制管理人开展投资，并在北京、上海、深圳、新加坡布局。集团重点关注生物医药、集成电路、低碳节能、先进制造和人工智能。2024 年可持续发展报告披露其当时基金管理规模超过 2,600 亿元、累计投资近 1,600 家企业、培育 110 多家上市公司；这些历史数据按报告年份标注。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构属性",
+          "value": "无锡市属国有创投机构",
+          "source_id": "wuxi_home"
+        },
+        {
+          "field": "investment_stages",
+          "label": "投资阶段与策略",
+          "value": [
+            "种子",
+            "天使",
+            "创业投资",
+            "股权投资",
+            "并购",
+            "S 基金"
+          ],
+          "source_id": "wuxi_home"
+        },
+        {
+          "field": "sectors",
+          "label": "重点产业领域",
+          "value": [
+            "生物医药",
+            "集成电路",
+            "双碳节能",
+            "先进制造",
+            "人工智能"
+          ],
+          "source_id": "wuxi_esg"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "截至 2024 年报告披露的管理基金总规模",
+          "value": "超过 2,600 亿元人民币",
+          "source_id": "wuxi_esg"
+        },
+        {
+          "field": "portfolio_count",
+          "label": "截至 2024 年报告披露的累计投资企业",
+          "value": "近 1,600 家",
+          "source_id": "wuxi_esg"
+        },
+        {
+          "field": "listed_portfolio_count",
+          "label": "截至 2024 年报告披露的培育上市公司",
+          "value": "超过 110 家",
+          "source_id": "wuxi_esg"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "锡创投 2024 年可持续发展报告介绍其推动中国国有企业结构调整基金二期落地，并管理市级天使投资引导基金及江苏省战略性新兴产业母基金。金额及规模应按该报告披露时期理解。",
+          "source_id": "wuxi_esg"
+        },
+        {
+          "description": "锡创投官网 2022 年报道其领投上海超硅半导体 B+ 轮，披露投资总额 10 亿元，并称截至当时已累计投资企业约 900 家、投资总额约 750 亿元，支持 100 多家企业实现 IPO。该组数据为 2022 年时点的机构口径。",
+          "source_id": "wuxi_track"
+        },
         {
           "description": "融资来源记录：三启万物 · 战略融资 · 2026-07-02 · 本轮参投 · 10亿人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a4dbd49c64cb5834"
@@ -268,8 +322,68 @@
           "source_id": "FISRC-449b969616ed1e95"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "锡创投",
+          "url": "https://www.wuxicapital.com.cn/",
+          "source_id": "wuxi_home"
+        },
+        {
+          "kind": "address",
+          "label": "无锡办公地址",
+          "value": "江苏省无锡市滨湖区金融一街 10 号",
+          "url": "https://www.wuxicapital.com.cn/",
+          "source_id": "wuxi_home"
+        },
+        {
+          "kind": "address",
+          "label": "上海办公地址",
+          "value": "上海市虹口区杨树浦路 188 弄 2 号楼 A 栋 7-8 层",
+          "url": "https://www.wuxicapital.com.cn/",
+          "source_id": "wuxi_home"
+        },
+        {
+          "kind": "address",
+          "label": "深圳办公地址",
+          "value": "深圳市前海深港合作区金融街 1 号弘毅大厦写字楼 14C2",
+          "url": "https://www.wuxicapital.com.cn/",
+          "source_id": "wuxi_home"
+        },
+        {
+          "kind": "address",
+          "label": "新加坡办公地址",
+          "value": "1 Fusionopolis Link #06-06, Singapore 138542",
+          "url": "https://www.wuxicapital.com.cn/",
+          "source_id": "wuxi_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "wuxi_home",
+          "source_url": "https://www.wuxicapital.com.cn/",
+          "source_title": "锡创投-无锡市创新投资集团有限公司",
+          "source_content_hash": "eea4964cdb702c9b417eb8e6e97f53aa78a823f78874f0fc624a45af42f0a7f4",
+          "quote": "无锡市创新投资集团有限公司（简称“锡创投”），前身为无锡市金融创业投资集团有限公司，是一家集种子、天使、创业、股权、并购、S基金为一体的国有创投机构。重点领域包括生物医药、集成电路、双碳节能、先进制造、人工智能。无锡地址：江苏省无锡市滨湖区金融一街10号。",
+          "quote_hash": "c0e3e78b05e1674403728603354f838dd108d749690bb3557b1ac6be838f4a5d"
+        },
+        {
+          "source_id": "wuxi_esg",
+          "source_url": "https://www.wuxicapital.com.cn/template/default/default/images/xct2024kcxfzcn.pdf",
+          "source_title": "锡创投2024年度可持续发展报告",
+          "source_content_hash": "5ce145bc160aa0602304f9169ce13c32e125ea3e57868c5d6f11160366a7f501",
+          "quote": "锡创投2024年度可持续发展报告披露：管理基金总规模超2,600亿元，管理基金累计投资企业近1,600家，参与培育上市公司超110家。",
+          "quote_hash": "8a001916d95ff857aa99ed89f43de4eca2e6a1ef888d31cbcd3dfc90a926058b"
+        },
+        {
+          "source_id": "wuxi_track",
+          "source_url": "https://www.wuxicapital.com.cn/news_59/123.html",
+          "source_title": "支持自主创新，从一次大胆的逆周期投资说起",
+          "source_content_hash": "476ecb1b081a92a7fba0bc927901bb98701c48d576de8909545a940878fdfb2a",
+          "quote": "2022年12月14日，锡创投披露领投上海超硅半导体B+轮，投资总额10亿元；截至该报道时累计投资企业约900家、投资总金额约750亿元，支持了新洁能、隆达股份等100多家企业实现IPO。",
+          "quote_hash": "3b057b5d53cb1a4ac08cc7d6d726587c5f5a5c503567173c3a5072811c170285"
+        },
         {
           "source_id": "FISRC-a4dbd49c64cb5834",
           "source_url": "https://news.pedaily.cn/202607/565779.shtml",
@@ -295,7 +409,11 @@
           "quote_hash": "2e2b6fbe0aae04e97855fa8f931a0f401d0a69c53851e388313a7896ddefb23e"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

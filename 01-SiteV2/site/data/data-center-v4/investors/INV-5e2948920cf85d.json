@@ -140,19 +140,180 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "诚通基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "诚通基金管理有限公司是中国诚通控股集团基金投资板块的核心子公司，2016 年成立并担任中国国有企业结构调整基金管理人。官方资料显示其管理规模超过 2,400 亿元，投资交割规模超过 1,500 亿元，投资项目超过 200 个；主要通过股权直投和子基金布局国资央企结构调整及战略性新兴产业。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "机构全称",
+          "value": "诚通基金管理有限公司，简称“诚通基金”。",
+          "source_id": "cct_company_profile"
+        },
+        {
+          "field": "established_date",
+          "label": "成立时间",
+          "value": "2016 年 3 月，北京。",
+          "source_id": "cct_company_profile"
+        },
+        {
+          "field": "registered_capital",
+          "label": "注册资本",
+          "value": "人民币 1.27 亿元（机构官网披露）。",
+          "source_id": "cct_company_profile"
+        },
+        {
+          "field": "ownership_and_role",
+          "label": "股东背景与职责",
+          "value": "中国诚通控股集团有限公司基金投资板块核心子公司；中国国有企业结构调整基金管理人。",
+          "source_id": "cct_company_profile"
+        },
+        {
+          "field": "scale_and_performance",
+          "label": "官网披露管理规模与投资数据",
+          "value": "管理基金总规模 2,400 亿元以上、投资交割规模 1,500 亿元以上、投资项目 200 个以上；官网未在该数据卡标注统计日期或各基金拆分口径。",
+          "source_id": "cct_scale_home"
+        },
+        {
+          "field": "investment_strategy",
+          "label": "投资方式与重点领域",
+          "value": "通过股权直投与子基金投资，围绕国资央企高质量发展、战略性新兴产业、产业链强链补链和原创技术策源地布局；重点包括绿色低碳、新一代信息技术、高端制造、生物技术、新材料和现代服务。",
+          "source_id": "cct_investment_strategy"
+        },
+        {
+          "field": "portfolio_examples",
+          "label": "官网披露的投资案例",
+          "value": [
+            "中国移动",
+            "中芯国际",
+            "商汤科技",
+            "长远锂科",
+            "中粮福临门",
+            "中国中铁",
+            "中国船舶",
+            "长鑫存储"
+          ],
+          "source_id": "cct_portfolio_examples"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2016-03",
+          "description": "诚通基金管理有限公司在北京成立。",
+          "source_id": "cct_company_profile"
+        },
+        {
+          "date": "2023-07",
+          "description": "中国国有企业结构调整基金二期协同发展基金成立，官网发展历程披露募集规模 315 亿元。",
+          "source_id": "cct_history_2023"
+        }
+      ],
       "track_record": [
+        {
+          "description": "机构官网统计管理基金规模超过 2,400 亿元、投资交割超过 1,500 亿元、投资项目超过 200 个；指标为公司官网汇总口径，未披露单笔投资数据。",
+          "source_id": "cct_scale_home"
+        },
+        {
+          "description": "官网案例页展示中国移动、中芯国际、商汤科技、长鑫存储等投资案例，覆盖通信、半导体、人工智能和新材料等战略领域。",
+          "source_id": "cct_portfolio_examples"
+        },
         {
           "description": "融资来源记录：星动纪元 · 轮次未披露 · 2026-07-06 · 本轮领投 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-8c073d38e1f34758"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "address",
+          "label": "官方网站公布地址",
+          "value": "北京市海淀区中关村南大街丙 12 号院 2 号楼，邮编 100081",
+          "source_id": "cct_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "官方网站公布电话",
+          "value": "010-83271700",
+          "source_id": "cct_contact"
+        },
+        {
+          "kind": "email",
+          "label": "官方网站公布邮箱",
+          "value": "cctfundinfo@cctfund.cn",
+          "source_id": "cct_contact"
+        },
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "cctfund.cn",
+          "url": "https://www.cctfund.cn/",
+          "source_id": "cct_company_profile"
+        }
+      ],
+      "coverage_note": "管理规模、投资交割和案例来自诚通基金官网机构介绍与案例页面，为机构自行披露的汇总数据；官网未说明各项数据对应的具体基金或统计时点。资料未据此推断诚通基金直接持有每一个官网所列案例企业。",
       "sources": [
+        {
+          "source_id": "cct_company_profile",
+          "source_url": "https://www.cctfund.cn/cctfund/gywm55/ctjj/index.html",
+          "source_title": "关于我们 - 诚通基金",
+          "source_content_hash": "e0ee6cb15eea50672b9eaef6e8144138f8edd7fbf334d2b8670c59cfc8e4bdbe",
+          "quote": "诚通基金管理有限公司（简称“诚通基金”）于2016年3月在北京成立，注册资本1.27亿元",
+          "quote_hash": "69c6daa3b84d11ffb4316c21fc1c12288bc59d2acf1284581cf72ae1a1dc86b5"
+        },
+        {
+          "source_id": "cct_management_role",
+          "source_url": "https://www.cctfund.cn/cctfund/gywm55/ctjj/index.html",
+          "source_title": "关于我们 - 诚通基金",
+          "source_content_hash": "e0ee6cb15eea50672b9eaef6e8144138f8edd7fbf334d2b8670c59cfc8e4bdbe",
+          "quote": "诚通基金是中国国有企业结构调整基金的管理人",
+          "quote_hash": "5dc3bfa2771779468157e427b9acba35bb05801e2f5a29272abedb852da4b094"
+        },
+        {
+          "source_id": "cct_scale_home",
+          "source_url": "https://www.cctfund.cn/",
+          "source_title": "诚通基金 - 官方网站",
+          "source_content_hash": "be062d55683279526729794a43ad722296753390a70182f63dc11bfcf107e79e",
+          "quote": "2400 管理基金总规模 亿元 1500 投资交割规模 亿元 200 投资项目数量 个",
+          "quote_hash": "80112f227c8097606643037a1f78ea70ec49a7867d9c38f1d2cc68842b14bb18"
+        },
+        {
+          "source_id": "cct_investment_strategy",
+          "source_url": "https://www.cctfund.cn/cctfund/gywm55/ctjj/index.html",
+          "source_title": "关于我们 - 诚通基金",
+          "source_content_hash": "e0ee6cb15eea50672b9eaef6e8144138f8edd7fbf334d2b8670c59cfc8e4bdbe",
+          "quote": "通过直接投资和基金投资，重点布局绿色低碳、新一代信息技术、高端制造、生物技术、新材料、现代服务等战略性新兴产业",
+          "quote_hash": "d5ec1727163320ca8bf04756c6fc90db7edeb806c8ca801ea801dc8d320671f1"
+        },
+        {
+          "source_id": "cct_portfolio_examples",
+          "source_url": "https://www.cctfund.cn/cctfund/gywm55/ctjj/index.html",
+          "source_title": "关于我们 - 诚通基金",
+          "source_content_hash": "e0ee6cb15eea50672b9eaef6e8144138f8edd7fbf334d2b8670c59cfc8e4bdbe",
+          "quote": "投资中国移动、中芯国际、商汤科技、长远锂科、中粮福临门等",
+          "quote_hash": "8093f2c531448fc87dd58d5bca842a676921e82f8f3ec6810b762fe3ae9e2bf7"
+        },
+        {
+          "source_id": "cct_history_2023",
+          "source_url": "https://www.cctfund.cn/cctfund/gywm55/ctjj/index.html",
+          "source_title": "关于我们 - 诚通基金",
+          "source_content_hash": "e0ee6cb15eea50672b9eaef6e8144138f8edd7fbf334d2b8670c59cfc8e4bdbe",
+          "quote": "2023.07 国调二期协同发展基金成立，募集规模315亿元",
+          "quote_hash": "12ea7c3f09fc87788a1f40265a80eaf48aa95bdd8cf3e9b444f1c76eee6d81a1"
+        },
+        {
+          "source_id": "cct_contact",
+          "source_url": "https://www.cctfund.cn/",
+          "source_title": "诚通基金 - 官方网站",
+          "source_content_hash": "be062d55683279526729794a43ad722296753390a70182f63dc11bfcf107e79e",
+          "quote": "地址：北京市海淀区中关村南大街丙12号院2号楼 电话：010-83271700 电子邮箱：cctfundinfo@cctfund.cn",
+          "quote_hash": "f5e2100d6859722626b7432131598a3a2b14c7c1c16a2a22ca109bb116fa3fe1"
+        },
+        {
+          "source_id": "cct_case_list",
+          "source_url": "https://www.cctfund.cn/cctfund/tzal/index.html",
+          "source_title": "投资案例 - 诚通基金",
+          "source_content_hash": "362cb97c519e9d6ba294bd1f2ed5ac1eaf428d02ef3391ef82560ea4ea4c8b9c",
+          "quote": "中国移动 中国联通 中芯国际 商汤科技 长鑫存储",
+          "quote_hash": "292ed8e48cb70c599bd8bb523dcfc242094c87a3511e2d1b3c97cf2c861fcf72"
+        },
         {
           "source_id": "FISRC-8c073d38e1f34758",
           "source_url": "https://news.pedaily.cn/202607/565883.shtml",
@@ -162,7 +323,7 @@
           "quote_hash": "ab8d83be7522c48a5350fc6c121d51cbfe79b23c7489bc8d6a08bfff9dd78398"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

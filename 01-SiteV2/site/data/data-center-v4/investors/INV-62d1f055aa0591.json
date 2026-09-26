@@ -186,13 +186,37 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Cisco Investments 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Cisco Investments是Cisco企业投资与战略合作部门，以投资补充企业技术创新和产品生态。官网列出的方向涵盖网络、安全、AI、数据中心、云、协作、IoT及半导体；全球AI基金计划规模10亿美元，目标支持可与Cisco基础设施形成战略协同的AI企业。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "核心领域",
+          "value": [
+            "AI",
+            "网络",
+            "安全",
+            "数据中心",
+            "云",
+            "协作",
+            "IoT",
+            "半导体"
+          ],
+          "source_id": "cisco_investments_official_202609"
+        },
+        {
+          "field": "global_ai_fund",
+          "label": "全球AI基金",
+          "value": "10亿美元规模；公开设立承诺，不代表已投资金额或基金剩余资本",
+          "source_id": "cisco_global_ai_fund_202406"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2024-06",
+          "description": "Cisco宣布设立10亿美元全球AI投资基金。",
+          "source_id": "cisco_global_ai_fund_202406"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Groq · 轮次未披露 · 2026-06-22 · D轮参投 · 6.5 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -203,8 +227,32 @@
           "source_id": "FISRC-ef9fd29dc050f7ca"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Cisco Investments官网",
+          "value": "投资领域、项目组合及联系入口",
+          "url": "https://www.ciscoinvestments.com/",
+          "source_id": "cisco_investments_official_202609"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "cisco_investments_official_202609",
+          "source_url": "https://www.ciscoinvestments.com/",
+          "source_title": "Cisco Investments官网",
+          "source_content_hash": "0466a1ff590d41e498d490b9528b78e36ef36159b4ef29b07dc775a903b06b88",
+          "quote": "Cisco Investments官网介绍其企业投资策略聚焦企业技术，包括AI应用、数据中心、网络、安全、云、协作、IoT及半导体，投资后可借助销售、市场、全球客户和企业平台支持被投公司。",
+          "quote_hash": "09198bc74b62a9a727e1b94c72dfb335742827d4f37f4243a8ab779a07d006d0"
+        },
+        {
+          "source_id": "cisco_global_ai_fund_202406",
+          "source_url": "https://www.ciscoinvestments.com/ai-fund",
+          "source_title": "Cisco Global AI Fund",
+          "source_content_hash": "103a9490857985dca7586a6360c237517379b01e2ecdede2dd27b01c1110f9ef",
+          "quote": "Cisco Investments宣布设立10亿美元全球AI投资基金，支持可融入Cisco现有基础设施与解决方案的安全、可信AI技术及创业生态。",
+          "quote_hash": "357d5b29db19fb8c8c313c43dc226a7834d394a796fec4c83bc76a51bc3efbf6"
+        },
         {
           "source_id": "FISRC-6ef693ebacbad168",
           "source_url": "https://economictimes.indiatimes.com/topic/investment-in-groq",
@@ -222,7 +270,11 @@
           "quote_hash": "f73de7a5c871cffe4272d9fa877b395f947a09f20b13cbc6da9c3bcc446c2a47"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "coverage_note": "投资方向及基金规模来自Cisco Investments官网；该基金目标是企业战略协同，不代表所有Cisco参投交易均经此基金完成。",
+      "identity_status": "verified"
     }
   }
 }

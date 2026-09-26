@@ -186,12 +186,36 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "S Capital VC 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "S Capital VC 是一家服务以色列创业者的风险投资机构。官网称团队依托企业经营和投资经验，为创始人提供公司建设能力、企业关系与早期创业支持；官网团队页列 Haim Sadger 与 Aya Peterburg 为管理合伙人。",
+      "facts": [
+        {
+          "field": "market",
+          "label": "主要服务对象（机构自述）",
+          "value": "官网称其重点支持以色列创业者。",
+          "source_id": "scapital_about"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段（机构自述）",
+          "value": "官网组合页将其定位为跨行业早期投资者。",
+          "source_id": "scapital_portfolio"
+        },
+        {
+          "field": "team",
+          "label": "官网列示的管理合伙人",
+          "value": [
+            "Haim Sadger",
+            "Aya Peterburg"
+          ],
+          "source_id": "scapital_team"
+        },
+        {
+          "field": "founder_support",
+          "label": "创业支持方式（机构自述）",
+          "value": "公司建设经验、创始人支持和企业关系网络。",
+          "source_id": "scapital_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -203,8 +227,58 @@
           "source_id": "FISRC-9fb1f37fe46c5a80"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "coverage_note": "发展背景、投资定位、团队职务和联系邮箱取自机构官网；融资活动作为公开披露案例呈现，不代表完整组合或经审计业绩。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "S Capital VC",
+          "url": "https://www.scapitalvc.com/",
+          "source_id": "scapital_about"
+        },
+        {
+          "kind": "email",
+          "label": "机构公开联系邮箱",
+          "value": "contact@scapitalvc.com",
+          "url": "https://www.scapitalvc.com/about",
+          "source_id": "scapital_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "scapital_about",
+          "source_url": "https://www.scapitalvc.com/about",
+          "source_title": "About | S Capital",
+          "source_content_hash": "b8bb97d696f833101b27f9adcf47a36ee01cd35ac955b59f12339f8894bc709a",
+          "quote": "Today we are dedicated to the success of our founders in every way.",
+          "quote_hash": "a4c25a85d85e0248a1051c12d3b63ad2246ee964917c7718701f0d5a70d4eb03"
+        },
+        {
+          "source_id": "scapital_portfolio",
+          "source_url": "https://www.scapitalvc.com/portfolio",
+          "source_title": "Portfolio | S Capital",
+          "source_content_hash": "0969d3bd23e5b5826c8167ecc1b7a68e4c965ff51705b35ff648b3c968bdfd58",
+          "quote": "We join extraordinary founders at the earliest stages across industries",
+          "quote_hash": "b9a6e8a1c8872c375edc3b444b761dca0d311bfef2a1d18cf4d7877afc073760"
+        },
+        {
+          "source_id": "scapital_team",
+          "source_url": "https://www.scapitalvc.com/our-team",
+          "source_title": "Team | S Capital",
+          "source_content_hash": "d510307a0a250552ab3a9ab107cafa29e22a76af20319abd4b5d954f767d40aa",
+          "quote": "HAIM SADGER MANAGING PARTNER; AYA PETERBURG MANAGING PARTNER",
+          "quote_hash": "c2c4a69223f6daaa1247078b00ba48604a4ed1e734967b0378598ecebf37dc23"
+        },
+        {
+          "source_id": "scapital_contact",
+          "source_url": "https://www.scapitalvc.com/about",
+          "source_title": "About | S Capital",
+          "source_content_hash": "b8bb97d696f833101b27f9adcf47a36ee01cd35ac955b59f12339f8894bc709a",
+          "quote": "contact@scapitalvc.com",
+          "quote_hash": "80cd34230c41ccdf36e2c3e8b8a26491c9cc5776d4ad2b6c6b672c601854e824"
+        },
         {
           "source_id": "FISRC-29a5cc0bbf402ca0",
           "source_url": "https://www.calcalistech.com/ctechnews/article/bkcksmp11gx",
@@ -222,7 +296,8 @@
           "quote_hash": "3380b397c2db4ddcae660fed8f92a6b99b2fcbb27d0cc722da152645225b9c7f"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified"
     }
   }
 }

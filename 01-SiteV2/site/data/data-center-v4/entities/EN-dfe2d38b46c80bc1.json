@@ -114,33 +114,65 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "梁文锋 的来源线索将其与DeepSeek（创始人兼CEO）关联。来源日期：2026-06-28；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "梁文锋是深度求索（DeepSeek）创始人，也是量化投资机构幻方的创办者之一。公开资料显示他毕业于浙江大学电子信息工程相关专业并完成信息与通信工程研究生学习；教育年限和专业表述按媒体引用的浙大院系资料记录。",
+      "current_roles": [
+        {
+          "title": "创始人",
+          "organization": "深度求索（DeepSeek）",
+          "source_id": "liang_hangzhou_gov"
+        }
+      ],
       "career": [
         {
-          "organization": "DeepSeek",
-          "title": "创始人兼CEO",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将梁文锋与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-20480dcf3f970893"
+          "organization": "幻方量化 / 杭州幻方艾氪科技有限公司",
+          "title": "创办者",
+          "period": "创立时间未由本次引用资料明确",
+          "description": "杭州市政府英文站称梁文锋创办量化金融公司幻方，之后转向人工智能。",
+          "source_id": "liang_hangzhou_gov"
+        },
+        {
+          "organization": "深度求索（DeepSeek）",
+          "title": "创始人",
+          "period": "截至2025年公开报道",
+          "description": "杭州市政府英文站在2025年报道中确认其为 DeepSeek 创始人。",
+          "source_id": "liang_hangzhou_gov"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "浙江大学",
+          "qualification": "电子信息工程本科、信息与通信工程研究生；院系方向及入学时间据公开报道引用浙大信息与通信工程系资料",
+          "source_id": "liang_zju_bio"
+        }
+      ],
+      "experience_summary": "公开履历连接机器视觉研究、量化投资与基础模型创业。DeepSeek 的模型表现、融资和经营结果属于公司层面，未归因于个人。",
+      "track_record": [
+        {
+          "description": "DeepSeek 技术成果属于团队及公司的产出；本档案仅记录梁文锋的创始人身份，不将模型成绩单独归功于个人。",
+          "source_id": "liang_hangzhou_gov"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-20480dcf3f970893",
-          "source_url": "https://ventureburn.com/deepseek-raises-7-4b-at-50b-in-founder-led-deal/",
-          "source_title": "融资披露来源",
-          "source_content_hash": "7131fc994a9b89bb33fa79d2284f9d2dbc9ea7182771cafba9317d85f0d6233d",
-          "quote": "DeepSeek founder and CEO Liang Wenfeng",
-          "quote_hash": "2e0d836b88c5860842a996971c565a111788b9324e3451452d6caaafc4b08d5e"
+          "source_id": "liang_hangzhou_gov",
+          "source_url": "https://www.ehangzhou.gov.cn/2025-01/22/c_292410.htm",
+          "source_title": "DeepSeek founder Liang Wenfeng joins premier’s roundtable | Hangzhou",
+          "source_content_hash": "8a9ce59ddedf7af195834117964e9c3b55994c87f77cccb420d477c3aaf8d9c8",
+          "quote": "杭州市政府英文站称梁文锋是 DeepSeek 创始人、浙江大学校友，并曾创办量化金融企业幻方。",
+          "quote_hash": "0d4ad87ab0abd734cbf9906fb8cf3a264c1f55d0e2bf955a841a19bd0c348962"
+        },
+        {
+          "source_id": "liang_zju_bio",
+          "source_url": "https://www.thepaper.cn/newsDetail_forward_30132149",
+          "source_title": "梁文锋导师项志宇引关注，个人主页满满都是对团队的祝贺表扬｜澎湃新闻",
+          "source_content_hash": "a5315a1acf2aadaf76d6abc35c19ce3521cdd4e6bbc75dc3f1ebe573a092acf5",
+          "quote": "澎湃新闻引述浙江大学信息与通信工程系资料称，梁文锋先后就读浙江大学电子信息工程专业及信息与通信工程专业研究生。",
+          "quote_hash": "93a148b74a5c328f836e70e676b9d15e76b7c823a2672d7c7bc6a20dca793bab"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "职业身份取自政府网站；学历信息来自媒体对浙大院系公开消息的转述，未扩写未获一手资料支持的任职日期。"
     }
   },
   "relatedEntities": [],

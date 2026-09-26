@@ -139,19 +139,101 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "龙岗引导基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-31；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "“龙岗引导基金”是政策基金体系的常用简称，融资来源没有指出具体基金法律主体或子基金，因此不把基金运营方龙岗金控等同于该笔直接出资实体。2026年政府报道的规模与投资成果为引导基金及其子基金合并口径。尚未找到经核验、现行且专用于项目申报的公开联系方式。",
+      "summary": "融资数据库中的“龙岗引导基金”可与龙岗区政策性投资引导基金对应。它是区级政府投资基金体系，通过与专业创投机构合作设立子基金，撬动社会资本支持龙岗产业；深圳市龙岗区人民政府2026年披露其合作子基金38支、总规模约998.55亿元，近三年布局半导体、人工智能、生物医药和机器人等方向。",
+      "facts": [
+        {
+          "field": "fund_identity",
+          "label": "基金身份",
+          "value": "区级政策性投资引导基金体系；融资数据库简称“龙岗引导基金”未指明某一只子基金或法律出资主体。",
+          "source_id": "lg_fund_framework"
+        },
+        {
+          "field": "policy_sponsor",
+          "label": "出资与政策定位",
+          "value": "由龙岗区人民政府出资，按照市场化方式运作，发挥财政资金引导作用，重点支持创新型中小企业和战略性新兴产业。",
+          "source_id": "lg_fund_framework"
+        },
+        {
+          "field": "manager",
+          "label": "运营管理主体（2026年政府披露）",
+          "value": "龙岗金融投资控股有限公司（龙岗金控）。管理主体与各笔融资记录中的直接法律出资主体应分别核对。",
+          "source_id": "lg_fund_2026_scale"
+        },
+        {
+          "field": "subfunds",
+          "label": "合作子基金（截至2026年8月）",
+          "value": "38支，合并总规模人民币998.55亿元；龙岗引导基金认缴人民币62.8亿元。",
+          "source_id": "lg_fund_2026_scale"
+        },
+        {
+          "field": "leverage",
+          "label": "资金放大效应（截至2026年8月）",
+          "value": "政府报道口径为15.9倍。",
+          "source_id": "lg_fund_2026_scale"
+        },
+        {
+          "field": "investment_focus",
+          "label": "近三年新增子基金方向",
+          "value": [
+            "半导体与集成电路",
+            "人工智能",
+            "生物医药",
+            "机器人"
+          ],
+          "source_id": "lg_fund_2026_track"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：中科欣扬 · 其他融资 · 2026-07-31 · 本轮参投 · 亿元级。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "截至2026年8月，政府披露引导基金及子基金累计投资企业超1300家，覆盖391家国家级专精特新“小巨人”企业，助力77家企业IPO上市；为基金体系合并口径。",
+          "source_id": "lg_fund_2026_track"
+        },
+        {
+          "description": "2023年曾公示拟与国信弘盛共同设立5亿元深圳湾生物医药基金，区引导基金拟认缴不超过1.25亿元；该公告为拟出资，不作为已完成出资证明。",
+          "source_id": "lg_fund_2023_notice"
+        },
+        {
+          "description": "融资数据库收录“龙岗引导基金”参投中科欣扬2026年亿元级融资；来源未识别其具体子基金或法律出资主体。",
           "source_id": "FISRC-8c121a58e2376a1d"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "lg_fund_framework",
+          "source_url": "https://www.lg.gov.cn/tzcy/zjfc/content/post_2793606.html",
+          "source_title": "深圳市龙岗区政府｜龙岗区创业投资引导基金管理暂行办法",
+          "source_content_hash": "4c88da958331d77548d1bd86b11a56cc975645e79fe12b4abb41e128d764aea7",
+          "quote": "办法将龙岗区创业投资引导基金界定为由龙岗区人民政府出资、市场化运作的政策性基金，旨在发挥财政资金杠杆作用，重点引导社会资金投向战略性新兴产业及小微型、中小型创新企业；基金主要通过参股子基金运作。",
+          "quote_hash": "bfb99fa56132f59c30e259f436088c45d8ec71c195b80ac1e61fce31f876b8a5"
+        },
+        {
+          "source_id": "lg_fund_2026_scale",
+          "source_url": "https://www.lg.gov.cn/gkmlpt/content/12/12925/post_12925604.html",
+          "source_title": "深圳市龙岗区人民政府｜龙岗引导基金拿下两项全国最佳",
+          "source_content_hash": "0418a5c6f9f71a3bf79db1ac9c4a471884812b687d6517028b38d740e38b187d",
+          "quote": "截至2026年8月，龙岗引导基金与深创投、盈富泰克、创东方等合作设立子基金38支、总规模998.55亿元，基金认缴出资62.8亿元，资金放大效应15.9倍；龙岗金控为龙岗区政策性投资引导基金运营管理主体。",
+          "quote_hash": "b9b7483e4b168eec9825de349d7fca2b5f1b86a3afa662c85a1a0708281a4e06"
+        },
+        {
+          "source_id": "lg_fund_2026_track",
+          "source_url": "https://www.lg.gov.cn/gkmlpt/content/12/12925/post_12925604.html",
+          "source_title": "深圳市龙岗区人民政府｜龙岗引导基金企业培育成果",
+          "source_content_hash": "248fa5384ec3ea17fb75681191f842e6f5016d736900b7d48c84aa1071f567ab",
+          "quote": "截至2026年8月，龙岗引导基金及子基金累计投资企业超1300家，覆盖国家级专精特新“小巨人”企业391家，助力77家企业IPO上市；近三年新参与设立19支子基金，主要投向半导体与集成电路、人工智能、生物医药、机器人。",
+          "quote_hash": "051de47e1a41bb0c0e1d58e524e74dc5079911304ffd6af1b90535dd8fcd9890"
+        },
+        {
+          "source_id": "lg_fund_2023_notice",
+          "source_url": "https://www.lg.gov.cn/bmzz/czj/xxgk/qt/tzgg/content/post_10649318.html",
+          "source_title": "深圳市龙岗区国资局｜政策性投资引导基金拟出资子基金公示",
+          "source_content_hash": "2e30ee20c4ad4045fcdcdbe8039d5fd4711c758a075506bf98a6cf46eff21892",
+          "quote": "2023年公示显示，区引导基金与国信弘盛私募基金管理有限公司拟共同设立总规模5亿元的深圳湾生物医药基金，区引导基金认缴比例不超过25%、出资金额不超过1.25亿元；公示表述为拟出资方案。",
+          "quote_hash": "144a328968d60d92679dce29c51fc99ca174d07dadbad2e396c21f60dc50175b"
+        },
         {
           "source_id": "FISRC-8c121a58e2376a1d",
           "source_url": "https://news.pedaily.cn/202607/567057.shtml",
@@ -161,7 +243,7 @@
           "quote_hash": "ff461b4de9a151f7c7778808a0a9c2a3f868d86cf430955b92e3e044c11ad1ee"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

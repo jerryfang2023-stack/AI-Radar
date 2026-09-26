@@ -129,21 +129,77 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "北京信息产业发展投资基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "北京信息产业发展基金是北京市政府设立的市级产业基金。2023 年北京市经信局遴选公告设定目标规模 100 亿元、北京市政府投资引导基金认缴不超过 30 亿元，投资产业互联网、网络安全和信创、北斗、互联网 3.0 等领域。北京市国资委 2026 年资料将北京信息产业发展投资基金列为北京国管管理基金之一，并披露其领投千寻位置新一轮战略融资。",
+      "facts": [
+        {
+          "field": "fund_type",
+          "label": "基金性质",
+          "value": "北京市市级政府产业投资基金",
+          "source_id": "infofund_jxj_2023"
+        },
+        {
+          "field": "target_size",
+          "label": "目标规模",
+          "value": "人民币 100 亿元；政府引导基金认缴不超过 30 亿元（2023 年公告口径）",
+          "source_id": "infofund_jxj_2023"
+        },
+        {
+          "field": "investment_focus",
+          "label": "重点领域",
+          "value": [
+            "产业互联网",
+            "网络安全和信创",
+            "北斗",
+            "互联网 3.0"
+          ],
+          "source_id": "infofund_jxj_2023"
+        },
+        {
+          "field": "management",
+          "label": "管理平台",
+          "value": "北京国管管理的市级政府投资基金之一",
+          "source_id": "infofund_gzw_2026"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2023-09",
+          "description": "北京市经信局和北京市政府投资引导基金发布管理机构公开遴选公告，披露基金目标规模及重点投资领域。",
+          "source_id": "infofund_jxj_2023"
+        }
+      ],
       "track_record": [
+        {
+          "description": "北京市国资委 2026 年报道披露北京信息产业发展投资基金领投千寻位置新一轮战略融资；该公开交易案例不代表基金整体回报。",
+          "source_id": "infofund_gzw_2026"
+        },
         {
           "description": "融资来源记录：奕行智能 · 轮次未披露 · 2026-09-18 · B轮联合领投 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-57fa132710ceea85"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "基金规模为 2023 年设立公告的目标数，不等同于实缴；投资案例来自北京市国资委 2026 年公开报道。未找到基金项目专用联系方式。 该活动记录使用“北京信息产业发展投资基金”名称；政府来源记载的基金全称亦有该表述。",
       "contacts": [],
       "sources": [
+        {
+          "source_id": "infofund_jxj_2023",
+          "source_url": "https://jxj.beijing.gov.cn/jxdt/tzgg/202309/t20230915_3260654.html",
+          "source_title": "北京市经信局：公开遴选北京信息产业发展基金管理机构的公告",
+          "source_content_hash": "f92b01a8756d07feef22986354be1702d33a102950ccca19e0d98bbef3a6ca56",
+          "quote": "基金目标规模为100亿元，重点投向产业互联网、网络安全和信创、北斗、互联网3.0等领域。",
+          "quote_hash": "4bd43941a66c1af93af471c0cf7882a7cf32a64337fa6fd4051804829277d6cb"
+        },
+        {
+          "source_id": "infofund_gzw_2026",
+          "source_url": "https://gzw.beijing.gov.cn/xxfb/gzyw/bjsgzdt/202604/t20260422_4601827.html",
+          "source_title": "北京国企助力2026亦庄人形机器人半马_北京市国资动态",
+          "source_content_hash": "986415d427d6608952d8e7c84d48106f312d8cc7d19dac3489e9707a581a6815",
+          "quote": "北京信息产业发展投资基金（北京国管管理基金之一）领投千寻位置新一轮战略融资。",
+          "quote_hash": "8109f1030a3f29c9057e1325c6e1c988d6eba8827dec07c2b0065fa1c0d5bbf1"
+        },
         {
           "source_id": "FISRC-57fa132710ceea85",
           "source_url": "https://finance.sina.com.cn/tech/roll/2026-05-08/doc-inhxcyyr4353533.shtml",
@@ -153,7 +209,7 @@
           "quote_hash": "116269c4a7e2823f89d72a992d115671e4aea0670e17ae2d0cdbc0a418e2d8c6"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

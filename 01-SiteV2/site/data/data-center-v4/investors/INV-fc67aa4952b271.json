@@ -138,20 +138,97 @@
     ],
     "public_profile": {
       "profile_type": "person",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Jeff Bezos 当前按“个人投资者”收录。最新融资披露记录日期为 2026-03-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "summary": "Jeff Bezos 是企业家和个人投资者。Amazon 官方资料记载他创立 Amazon；Bezos Expeditions 官网公开列出其精选投资项目，包括 Airbnb、Anduril、Figure、Perplexity、Uber 和 Workday。Bezos Earth Fund 官网将他列为该基金创始人及执行主席。精选项目清单不代表完整投资组合或回报。",
       "facts": [],
-      "milestones": [],
+      "milestones": [
+        {
+          "date": "1994",
+          "description": "Amazon 官方董事资料称 Jeff Bezos 于1994年创立 Amazon。",
+          "source_id": "jeff_bezos_amazon"
+        },
+        {
+          "date": "2020",
+          "description": "Bezos Earth Fund 官网称该基金于2020年启动。",
+          "source_id": "jeff_bezos_earthfund"
+        }
+      ],
       "track_record": [
+        {
+          "description": "Bezos Expeditions 官网精选投资列表包含 Airbnb、Anduril、Arrived、Contextual AI、Figure、Perplexity、Uber、Workday 等；该列表为精选展示，不代表完整组合或投资收益。",
+          "source_id": "jeff_bezos_expeditions"
+        },
         {
           "description": "融资来源记录：Advanced Machine Intelligence Labs (AMI Labs) · 种子轮 · 2026-03-12 · 本轮个人投资者 · 10.3亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6c35525e379488bf"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "公开精选投资及项目信息",
+          "value": "Bezos Expeditions",
+          "url": "https://www.bezosexpeditions.com/",
+          "source_id": "jeff_bezos_expeditions"
+        },
+        {
+          "kind": "website",
+          "label": "慈善项目官网",
+          "value": "Bezos Earth Fund",
+          "url": "https://www.bezosearthfund.org/our-journey",
+          "source_id": "jeff_bezos_earthfund"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "创始人、执行主席",
+          "organization": "Bezos Earth Fund",
+          "source_id": "jeff_bezos_earthfund"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Amazon",
+          "title": "创始人；后任首席执行官及执行董事长",
+          "period": "1994年创立；CEO任期至2021年，之后转任执行董事长（后续任期本档未独立核验）",
+          "description": "Amazon 官方公告记载 Bezos 创立公司，并宣布其由 CEO 转任董事会执行主席。",
+          "source_id": "jeff_bezos_amazon"
+        },
+        {
+          "organization": "Bezos Expeditions",
+          "title": "精选投资项目公开平台相关投资人",
+          "period": "公开投资活动持续中；起始年份未在官网该页注明",
+          "description": "Bezos Expeditions 官网公开精选投资组合；此页面未提供完整投资归属及回报口径。",
+          "source_id": "jeff_bezos_expeditions"
+        }
+      ],
+      "education": [],
+      "experience_summary": "公开资料可确认其创立 Amazon、长期参与公司领导，并设立 Bezos Earth Fund；Bezos Expeditions 官网列示其精选投资案例。教育经历未纳入本档，因为本批可核验一手页面未覆盖该项。",
       "sources": [
+        {
+          "source_id": "jeff_bezos_expeditions",
+          "source_url": "https://www.bezosexpeditions.com/",
+          "source_title": "Bezos Expeditions",
+          "source_content_hash": "8688cb005085b663412e648c205ef71fd9926adfaae53a6004f128a6d0fdf326",
+          "quote": "Selected Investments include Airbnb, Anduril, Arrived, Contextual AI, Figure, Perplexity, Uber and Workday.",
+          "quote_hash": "4e57d0a2c1756ce5b87934ebfb176e00e0048da937f73dbdc80194174bcf6405"
+        },
+        {
+          "source_id": "jeff_bezos_amazon",
+          "source_url": "https://www.aboutamazon.com/news/company-news/email-from-jeff-bezos-to-employees",
+          "source_title": "Email from Jeff Bezos to employees | About Amazon",
+          "source_content_hash": "61f459ac69462159989139e73f2ee123f3e83a4592f8492712a631330c6490b3",
+          "quote": "I’m Jeff Bezos. I founded Amazon 26 years ago with the long-term mission of making it Earth’s most customer-centric company.",
+          "quote_hash": "dc1958b09e07becbe2723bfab9ef817b210632d49e7ebac844eb0ab32b8c61fe"
+        },
+        {
+          "source_id": "jeff_bezos_earthfund",
+          "source_url": "https://www.bezosearthfund.org/our-journey",
+          "source_title": "Our Journey | Bezos Earth Fund",
+          "source_content_hash": "f624010c40102231112e3c16e6228a420728363c21435e71d4f05b0feded45dc",
+          "quote": "Earth Fund founder and executive chair Jeff Bezos.",
+          "quote_hash": "df45081c5205140b51cde9f740da4cf9098bafed2f306fd4bd12e9fb5f725cc9"
+        },
         {
           "source_id": "FISRC-6c35525e379488bf",
           "source_url": "https://futurumgroup.com/insights/yann-lecuns-ami-raises-1bn-seed-round-is-the-world-model-era-finally-here",
@@ -161,7 +238,9 @@
           "quote_hash": "60f42c380f06d6bfad4ffb0b92dfbc7d978e62e09c5c80452af8d9b4d7fea76a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

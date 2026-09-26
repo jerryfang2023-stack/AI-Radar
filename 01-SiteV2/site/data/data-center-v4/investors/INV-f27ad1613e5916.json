@@ -208,27 +208,106 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Phosphor Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-31；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "Phosphor Capital 是面向 Y Combinator 创业公司的早期投资机构，官网称会投资每一批次中的优秀创始人，并提供长期创业支持。官网披露其于 2024 年 1 月推出 1,700 万美元 Fund I，列出 Reducto、Gumloop、Diode Computers、AgentMail 等组合公司。当前公开资料没有说明 Fund I 后续募资或剩余可投资额度。",
+      "facts": [
+        {
+          "field": "investment_strategy",
+          "label": "投资策略",
+          "value": "在 Y Combinator 每个批次中投资优秀创始团队，偏早期并提供持续运营支持。",
+          "source_id": "phosphor_strategy"
+        },
+        {
+          "field": "fund_i",
+          "label": "首支基金",
+          "value": "官网介绍 Phosphor Capital 于 2024 年 1 月推出 Fund I，规模 1,700 万美元；未据此推断当前剩余资金。",
+          "source_id": "phosphor_fund_i"
+        },
+        {
+          "field": "founder_background",
+          "label": "创办团队经历（官网机构自述）",
+          "value": "机构创办人自述在 YC 生态参与 18 年、完成 200 多笔 YC 毕业后投资，并经历 Zeus Living 的创业、融资、业务调整及 2023 年出售。该经历来自机构官网叙述。",
+          "source_id": "phosphor_origin"
+        },
+        {
+          "field": "portfolio",
+          "label": "官网组合示例",
+          "value": [
+            "Reducto",
+            "Didit",
+            "Gumloop",
+            "Andon Labs",
+            "Diode Computers",
+            "AgentMail",
+            "Mastra"
+          ],
+          "source_id": "phosphor_portfolio"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2024-01",
+          "description": "官网披露 Phosphor Capital 推出规模 1,700 万美元的 Fund I。",
+          "source_id": "phosphor_fund_i"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Nexus Enterprises, Inc · 种子轮 · 2026-03-31 · 本轮参投 · $4.3M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-14ff8eaae437ca5e"
+          "description": "机构官网组合展示包括 Reducto、Didit、Gumloop、Andon Labs、Diode Computers、AgentMail 和 Mastra 等早期科技公司。",
+          "source_id": "phosphor_portfolio"
         },
         {
           "description": "融资来源记录：Nexus Enterprises, Inc · 种子轮 · 2026-03-31 · 本轮参投 · $4.3M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-21e200be4083b3a6"
+          "source_id": "FISRC-14ff8eaae437ca5e"
         },
         {
           "description": "融资来源记录：AgentMail · 种子轮 · 2026-03-10 · 本轮参投 · $6M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f961f60a13274764"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "phosphorcap.com",
+          "url": "https://phosphorcap.com/",
+          "source_id": "phosphor_strategy"
+        }
+      ],
+      "coverage_note": "机构官网提供投资策略、Fund I 初始规模和组合示例，但未公开当前基金规模、融资项目投递邮箱或申请表。本档案未将活动数据库中的每一笔融资新闻推断成基金正式披露的组合投资。",
       "sources": [
+        {
+          "source_id": "phosphor_strategy",
+          "source_url": "https://phosphorcap.com/",
+          "source_title": "Phosphor Capital - Official Website",
+          "source_content_hash": "d13edf62d32140e15f8461f682a27bf09941c9fffc41b5c661a8396a66afd339",
+          "quote": "Phosphor Capital invests in the top founders in each Y Combinator batch.",
+          "quote_hash": "c6450a26d08006015dda551e6a92502993b382cfbfcc6fd7f23ac9f9bafdfbea"
+        },
+        {
+          "source_id": "phosphor_fund_i",
+          "source_url": "https://phosphorcap.com/",
+          "source_title": "Phosphor Capital - Official Website",
+          "source_content_hash": "d13edf62d32140e15f8461f682a27bf09941c9fffc41b5c661a8396a66afd339",
+          "quote": "Phosphor Capital launched in January 2024 with a $17M Fund I.",
+          "quote_hash": "5e2d224998e8241f4b0affc1d38e2010e66982dc055623aab3e7ca8f745c80d6"
+        },
+        {
+          "source_id": "phosphor_origin",
+          "source_url": "https://phosphorcap.com/",
+          "source_title": "Phosphor Capital - Official Website",
+          "source_content_hash": "d13edf62d32140e15f8461f682a27bf09941c9fffc41b5c661a8396a66afd339",
+          "quote": "I've been a part of the YC ecosystem for 18 years, and written 200+ post YC checks.",
+          "quote_hash": "db66163273fb3b25b8dc91c9faf046ea0165f5fde1f89b126c265d839dcdcc18"
+        },
+        {
+          "source_id": "phosphor_portfolio",
+          "source_url": "https://phosphorcap.com/",
+          "source_title": "Phosphor Capital - Official Website",
+          "source_content_hash": "d13edf62d32140e15f8461f682a27bf09941c9fffc41b5c661a8396a66afd339",
+          "quote": "Portfolio Snapshot Reducto Didit Gumloop Andon Labs Corgi Deepnight Harper Diode Computers",
+          "quote_hash": "1aaf2b72034044b344c77e82300d7a439c780076a4f1d146e043e1f0839fec8c"
+        },
         {
           "source_id": "FISRC-14ff8eaae437ca5e",
           "source_url": "https://www.globenewswire.com/de/news-release/2026/03/31/3265301/0/en/Nexus-Raises-4-3M-Seed-Round-to-Help-Business-Teams-Deploy-AI-Agents.html",
@@ -254,7 +333,7 @@
           "quote_hash": "0fc95358d15cb214250546b894e9f86b4165069e09b4cc8f5bb04282d1e66f8f"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

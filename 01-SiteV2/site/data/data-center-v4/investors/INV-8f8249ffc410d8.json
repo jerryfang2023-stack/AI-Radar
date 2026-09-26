@@ -191,14 +191,50 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Snowflake Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Snowflake Ventures 是 Snowflake 面向 AI Data Cloud 生态的企业投资团队。官网披露其倾向投资已有 Snowflake 合作关系、具有客户牵引和产品集成度、并由知名机构领投的成长期公司；典型轮次为 A 轮至 IPO 前，单笔通常为 50万至100万美元。该条件与金额均为官网当前公开口径。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": [
+            "构建于 Snowflake AI Data Cloud 或扩展其能力的企业"
+          ],
+          "source_id": "snowflake_ventures"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "A 轮至 IPO 前；需有知名机构领投",
+          "source_id": "snowflake_ventures"
+        },
+        {
+          "field": "typical_check_size",
+          "label": "典型投资金额",
+          "value": "50万至100万美元",
+          "source_id": "snowflake_ventures"
+        },
+        {
+          "field": "investment_criteria",
+          "label": "投资条件",
+          "value": [
+            "已有合作伙伴关系",
+            "证明客户牵引及产品集成价值"
+          ],
+          "source_id": "snowflake_ventures"
+        },
+        {
+          "field": "ecosystem_reach",
+          "label": "生态规模（官网口径）",
+          "value": "超过12,000家 Snowflake 客户",
+          "source_id": "snowflake_ventures"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官网展示多家组合企业及其产品合作案例；这属于公开组合展示，不代表完整投资组合或基金回报。",
+          "source_id": "snowflake_ventures"
+        },
         {
           "description": "融资来源记录：Jedify · A轮 · 2026-06-10 · 本轮参投 · $24 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-26b4cf1fe2e20ea6"
@@ -208,8 +244,31 @@
           "source_id": "FISRC-4f876f1107004ec7"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站及组合企业",
+          "value": "Snowflake Ventures",
+          "url": "https://www.snowflake.com/en/why-snowflake/startup-program/snowflake-ventures/",
+          "source_id": "snowflake_ventures"
+        },
+        {
+          "kind": "email",
+          "label": "投资联系邮箱",
+          "value": "ventures@snowflake.com",
+          "url": "https://www.snowflake.com/en/why-snowflake/startup-program/snowflake-ventures/",
+          "source_id": "snowflake_ventures"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "snowflake_ventures",
+          "source_url": "https://www.snowflake.com/en/why-snowflake/startup-program/snowflake-ventures/",
+          "source_title": "Snowflake Ventures | Snowflake",
+          "source_content_hash": "23686b3c61868ea89f3a61cbfe91b79fd3b0f388641be92dcb0a151b7686f270",
+          "quote": "Typical investments range between $500K AND $1M. Growth stage: Must be raising a round of financing (Series A to pre-IPO) with a reputable lead investor.",
+          "quote_hash": "8c6989f648c248aba484434998c8078bdc611c35915df6fa4ff79aba3b635076"
+        },
         {
           "source_id": "FISRC-26b4cf1fe2e20ea6",
           "source_url": "https://workai.tv/news/2026/08/ai-news/jedify-raises-24-million-series-a-to-build-context-layer-for-enterprise-ai/",
@@ -227,7 +286,11 @@
           "quote_hash": "38dd5fa6d5cd432c5af614d02c6d040b3ae0029a4b61a90a6e328e952b5fc3c6"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

@@ -129,21 +129,185 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "创业接力集团 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-31；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "创业接力集团的法定主体为上海创业接力科技金融集团有限公司，成立于2010年。官网介绍其业务由基金投资管理、金融创新服务、科创服务平台构成；旗下接力资本受托管理上海市天使投资引导基金，并组合开展母基金、直投和S基金投资。官网业务页列示该引导基金一期管理规模35亿元、过会基金145家和5倍资金放大，但未标出统计截止日期。融资数据库还收录一条媒体称“创业接力集团”参与松应科技早期轮次的记录；该报道没有指出由集团还是哪只关联基金出资。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "法定主体",
+          "value": "上海创业接力科技金融集团有限公司",
+          "source_id": "step_group_about_2010"
+        },
+        {
+          "field": "founded_year",
+          "label": "官网记载成立年份",
+          "value": "2010",
+          "source_id": "step_group_about_2010"
+        },
+        {
+          "field": "business_lines",
+          "label": "官网列示的主营业务",
+          "value": [
+            "基金投资管理",
+            "金融创新服务",
+            "科创服务平台"
+          ],
+          "source_id": "step_group_about_2010"
+        },
+        {
+          "field": "investment_operator",
+          "label": "上海市天使投资引导基金业务主体",
+          "value": "官网称“接力资本”是创业接力集团受托管理上海市天使投资引导基金的业务经营主体，开展早期科技创业投资孵化业务。",
+          "source_id": "step_group_angel_operator"
+        },
+        {
+          "field": "investment_strategy",
+          "label": "官网列示的投资策略",
+          "value": "综合母基金关注早期股权基金；结合旗下直投基金开展母基金、直投和S基金（PSD）策略。官网列举青松基金、礼来亚洲、钟鼎基金、金沙江创投等参与案例。",
+          "source_id": "step_group_fof_strategy"
+        },
+        {
+          "field": "angel_fund_first_phase_metrics",
+          "label": "上海市天使投资引导基金一期公开口径（统计日期未标注）",
+          "value": "官网业务介绍列示一期管理规模35亿元、过会基金145家、资金放大5倍；该页未标注统计截止日期，不作为当前规模或收益率。",
+          "source_id": "step_group_angel_metrics"
+        },
+        {
+          "field": "related_business_sites",
+          "label": "集团官网列示的关联业务与网站",
+          "value": "官网列出上海市天使投资引导基金、接力天使、接力科创、接力服务和创业基金会等关联站点；除已明确的受托管理关系外，不据网站互链推断其法律股权关系。",
+          "source_id": "step_group_about_2010"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2010",
+          "description": "上海创业接力科技金融集团有限公司官网记载集团于2010年成立。",
+          "source_id": "step_group_about_2010"
+        },
+        {
+          "date": "2014",
+          "description": "集团官网业务介绍称，上海市天使投资引导基金自2014年成立以来承担优化区域创新创业生态、培育早期科创企业的政策定位。",
+          "source_id": "step_group_angel_metrics"
+        }
+      ],
       "track_record": [
+        {
+          "description": "集团官网业务页列示上海市天使投资引导基金一期管理规模35亿元、过会基金145家、资金放大5倍；网页未注明统计基准日，该组数据按官网页面口径收录，不代表当前规模、实缴额或投资回报。",
+          "source_id": "step_group_angel_metrics"
+        },
+        {
+          "description": "集团官网介绍综合母基金参与青松基金、礼来亚洲、钟鼎基金、金沙江创投等早期股权基金，并称其结合直投基金开展母基金、直投与S基金策略；该介绍未标注完整组合或统计日期。",
+          "source_id": "step_group_fof_strategy"
+        },
         {
           "description": "融资来源记录：松应科技 · 多轮融资 · 2026-08-31 · 天使轮投资方 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1ae72db61aa80327"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "已核实集团法定名称、设立年份、业务板块、上海市天使投资引导基金的受托管理关系、公开联系方式与官网列示的投资策略。官网一期数据没有统计截止日。库内“创业接力集团”参投记录来自第三方融资报道，未指明具体出资法律主体或关联基金，保留为来源线索，不据此认定为集团母公司直接投资。官网团队介绍页未检出可核验的文字履历，因此不补写管理人员名单。",
+      "current_roles": [
+        {
+          "title": "受托管理业务主体（集团官网所述）",
+          "organization": "上海市天使投资引导基金（接力资本）",
+          "source_id": "step_group_angel_operator"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "集团官网",
+          "value": "创业接力集团",
+          "url": "https://www.stepholdings.com/about.html",
+          "source_id": "step_group_contacts"
+        },
+        {
+          "kind": "email",
+          "label": "集团联系邮箱",
+          "value": "step@stepholdings.com",
+          "url": "https://www.stepholdings.com/about.html",
+          "source_id": "step_group_contacts"
+        },
+        {
+          "kind": "phone",
+          "label": "集团联系电话",
+          "value": "021-5523 5596",
+          "url": "https://www.stepholdings.com/about.html",
+          "source_id": "step_group_contacts"
+        },
+        {
+          "kind": "address",
+          "label": "集团地址",
+          "value": "上海市杨浦区伟成路70号1号楼3楼",
+          "url": "https://www.stepholdings.com/about.html",
+          "source_id": "step_group_contacts"
+        },
+        {
+          "kind": "email",
+          "label": "上海市天使投资引导基金申请联系（业务页公布）",
+          "value": "apply@sacgfund.org",
+          "url": "http://www.sacgfund.org.cn",
+          "source_id": "step_angel_fund_contacts"
+        },
+        {
+          "kind": "phone",
+          "label": "上海市天使投资引导基金业务咨询（业务页公布）",
+          "value": "021-55238613",
+          "url": "https://www.stepholdings.com/product.html?cid1=72339069014638592&cid2=72340168526266368",
+          "source_id": "step_angel_fund_contacts"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "step_group_about_2010",
+          "source_url": "https://www.stepholdings.com/about.html",
+          "source_title": "创业接力集团｜关于我们",
+          "source_content_hash": "dc84fd13d87ef8b5d2930c88e793032e1a6eae37a496a264c61675404996b361",
+          "quote": "上海创业接力科技金融集团有限公司（简称\"创业接力集团\"）成立于2010年。创业接力集团以“专注科技创业，接力企业成长”为使命，建立了以基金投资管理、金融创新服务、科创服务平台三大主营业务为核心的早期科创企业服务生态。",
+          "quote_hash": "821eb6f380fd7aabab2d011402366e091b5f18e7f0d453ff4a54a2b9a1e7d918"
+        },
+        {
+          "source_id": "step_group_contacts",
+          "source_url": "https://www.stepholdings.com/about.html",
+          "source_title": "创业接力集团｜关于我们",
+          "source_content_hash": "dc84fd13d87ef8b5d2930c88e793032e1a6eae37a496a264c61675404996b361",
+          "quote": "step@stepholdings.com；021-5523 5596；021-5523 8610；上海市杨浦区伟成路70号1号楼3楼。",
+          "quote_hash": "a69597af1a83f46792e45023cd02b714b5795f6e564dd4a2882d1149d3b79c4a"
+        },
+        {
+          "source_id": "step_group_angel_operator",
+          "source_url": "https://www.stepholdings.com/product.html?cid1=72339069014638592&cid2=72340168526266368",
+          "source_title": "创业接力集团｜业务布局：接力资本",
+          "source_content_hash": "3fa0856b98b90bd7dd3c7607c1e3f731aa59c854d26ceaf1099a7db5c2c778bc",
+          "quote": "接力资本是创业接力集团受托管理“上海市天使投资引导基金”（简称“天使引导基金”）的业务经营主体，以多产品组合，开展早期科技创业投资孵化业务。",
+          "quote_hash": "ff3352e155e4549286d971aef65c8f9613fcc5928dbe51e2af1ec0d888639fbb"
+        },
+        {
+          "source_id": "step_group_angel_metrics",
+          "source_url": "https://www.stepholdings.com/product.html?cid1=72339069014638592&cid2=72340168526266368",
+          "source_title": "创业接力集团｜业务布局：接力资本",
+          "source_content_hash": "3fa0856b98b90bd7dd3c7607c1e3f731aa59c854d26ceaf1099a7db5c2c778bc",
+          "quote": "天使引导基金自2014年成立以来，根据“优化区域创新创业生态、培育早期科创企业”的政策定位，以“政府引导社会资本共担创新风险，共享创新成果”为引导本质，发挥政府资金的杠杆效应和引领作用，杠杆更多社会资本投早、投小、投科技。一期管理规模35亿，过会基金145家，资金放大5倍。",
+          "quote_hash": "70343fdda1b1a6f1f3eacef2a5dd2c85ae2d6874a904d72e901cfd19158dbeeb"
+        },
+        {
+          "source_id": "step_group_fof_strategy",
+          "source_url": "https://www.stepholdings.com/product.html?cid1=72339069014638592&cid2=72340168526266368",
+          "source_title": "创业接力集团｜业务布局：接力资本",
+          "source_content_hash": "3fa0856b98b90bd7dd3c7607c1e3f731aa59c854d26ceaf1099a7db5c2c778bc",
+          "quote": "综合母基金专注于投资标签鲜明的早期股权基金。参与青松基金、礼来亚洲、钟鼎基金、金沙江创投等多家知名投资机构。结合接力资本旗下直投基金等多产品组合，实行PSD（母基金、直投、S基金）投资策略。",
+          "quote_hash": "01d9a7246bfd7b509508cd7091d65ca9c7f7a7dba1e25ff446732a74accde9d2"
+        },
+        {
+          "source_id": "step_angel_fund_contacts",
+          "source_url": "https://www.stepholdings.com/product.html?cid1=72339069014638592&cid2=72340168526266368",
+          "source_title": "创业接力集团｜业务布局：接力资本",
+          "source_content_hash": "3fa0856b98b90bd7dd3c7607c1e3f731aa59c854d26ceaf1099a7db5c2c778bc",
+          "quote": "联系方式：021-55238613；apply@sacgfund.org；官网：http://www.sacgfund.org.cn",
+          "quote_hash": "dd43c7d33143933ac8284fd7b8fb245ca04b3343c031160e0245af3165723cf2"
+        },
         {
           "source_id": "FISRC-1ae72db61aa80327",
           "source_url": "https://m.sohu.com/a/1070029599_120285954?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
@@ -153,7 +317,7 @@
           "quote_hash": "f2c07c8e65c6a838bbc6b0ad5eb71c2acc3709345078921ab540bde1dcb9efc2"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

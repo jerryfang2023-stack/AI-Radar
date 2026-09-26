@@ -137,21 +137,71 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "成都科创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "成都科创投集团是由成都市委、市政府设立的科技创新投资集团。官网披露集团成立于2021年3月、注册资本100亿元、主体信用评级AAA，围绕成都建圈强链战略，通过基金投资和直接投资支持科技项目。",
+      "facts": [
+        {
+          "field": "founded_date",
+          "label": "成立时间",
+          "value": "2021年3月",
+          "source_id": "chengdu_vc_home"
+        },
+        {
+          "field": "registered_capital",
+          "label": "注册资本",
+          "value": "100亿元人民币",
+          "source_id": "chengdu_vc_home"
+        },
+        {
+          "field": "credit_rating",
+          "label": "官网披露主体信用评级",
+          "value": "AAA",
+          "source_id": "chengdu_vc_home"
+        },
+        {
+          "field": "investment_approach",
+          "label": "业务方式",
+          "value": "基金投资与直接投资；立足成都、辐射四川、面向全国。",
+          "source_id": "chengdu_vc_home"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2021-03",
+          "description": "成都科创投集团成立。",
+          "source_id": "chengdu_vc_home"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：三启万物 · 战略融资 · 2026-07-02 · 本轮参投 · 10亿人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a4dbd49c64cb5834"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "address",
+          "label": "官网公布办公地址",
+          "value": "四川省成都市锦江区柳江街道永安路588号14楼–15楼",
+          "url": "https://cdvcg.cdcyjt.com/",
+          "source_id": "chengdu_vc_home"
+        },
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "成都科创投",
+          "url": "https://cdvcg.cdcyjt.com/",
+          "source_id": "chengdu_vc_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "chengdu_vc_home",
+          "source_url": "https://cdvcg.cdcyjt.com/",
+          "source_title": "成都科创投官网",
+          "source_content_hash": "f0d218dd5555c577c6512e19e5901407947f16d20382b80a9946923d061e2425",
+          "quote": "成都科创投集团成立于2021年3月，是成都市委市政府设立的科技创新投资集团，注册资本100亿元，主体信用评级AAA。公司地址：四川省成都市锦江区柳江街道永安路588号14楼-15楼。",
+          "quote_hash": "63e0f4cc9ec735587f288ffd2b7e8184dddcc9937baa617b8ccfdf2f3009eccc"
+        },
         {
           "source_id": "FISRC-a4dbd49c64cb5834",
           "source_url": "https://news.pedaily.cn/202607/565779.shtml",
@@ -161,7 +211,11 @@
           "quote_hash": "7527f82237477a3a2ed0e5d30806255bdf065f05e531c3d003ce1bd49373de09"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

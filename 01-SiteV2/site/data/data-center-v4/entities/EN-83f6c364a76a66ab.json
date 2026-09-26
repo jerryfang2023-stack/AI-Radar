@@ -111,33 +111,54 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "裴沵思 的来源线索将其与物自体科技（创始人兼CEO）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "裴沵思是物自体科技创始人兼CEO，曾任第四范式总裁、SAP全球副总裁。物自体科技官网访谈显示其专注AI原生品牌增长系统，覆盖小红书、抖音和TikTok等营销平台；公开报道将其To B行业经历描述为近20年。其学位背景尚未核实。",
+      "current_roles": [
+        {
+          "title": "创始人兼CEO",
+          "organization": "物自体科技（Noumena）",
+          "source_id": "pei_noumena"
+        }
+      ],
       "career": [
         {
-          "organization": "物自体科技",
+          "organization": "SAP",
+          "title": "全球副总裁",
+          "period": "加入第四范式之前；年份未披露",
+          "description": "公司官网访谈确认其曾任SAP全球副总裁。",
+          "source_id": "pei_noumena"
+        },
+        {
+          "organization": "第四范式",
+          "title": "总裁",
+          "period": "2019年至2024年1月离任（公开报道）",
+          "description": "公司官网访谈确认其曾任总裁；离任信息来自公开职业报道。",
+          "source_id": "pei_noumena"
+        },
+        {
+          "organization": "物自体科技（Noumena）",
           "title": "创始人兼CEO",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-4c6320de89936c7b"
+          "period": "2023年创立；2026年公开报道时在任",
+          "description": "建设AI原生增长智能系统，帮助品牌整合平台洞察、营销投放数据和效果反馈。",
+          "source_id": "pei_noumena"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
+      "experience_summary": "近20年To B软件、企业服务和商业增长经验，从SAP企业软件销售/管理到AI企业服务，再创立AI营销增长公司；公开官网访谈强调企业级营销决策和品牌增长系统。",
       "track_record": [],
       "sources": [
         {
-          "source_id": "FISRC-4c6320de89936c7b",
-          "source_url": "https://news.pedaily.cn/202609/568487.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "4aab0c4984cc55f6",
-          "quote": "Noumena 由前 SAP 全球副总裁、前第四范式总裁裴沵思于 2023 年创立",
-          "quote_hash": "ec79e8cf0cd2d82bf29a8d4dd2c1c25167381d54ff3e3dd8585948e6c4c37fdf"
+          "source_id": "pei_noumena",
+          "source_url": "https://www.noumena.com.cn/news/pei-interview.html",
+          "source_title": "物自体科技官网访谈：裴沵思谈AI增长智能",
+          "source_content_hash": "6001bdce374c925c3f7f17f137e781ae3d02fbb57de2c7c2c05cf08b54af646c",
+          "quote": "物自体科技官网访谈中，裴沵思介绍其SAP及第四范式经历，并说明公司聚焦AI原生品牌增长系统及多平台营销。",
+          "quote_hash": "5ecef50e54a8facd996aa1b1d01b9d7fd5139e798ea3402b0df68d27c9113421"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "职业经历由公司官网访谈支持；由于当前来源没有可靠学历信息，教育字段保持空白。",
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

@@ -311,13 +311,53 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Microsoft 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Microsoft 的风险投资平台 M12 由 Microsoft Ventures 更名而来。M12 官网介绍其投资种子期至 B 轮企业，重点覆盖 AI 应用、AI 安全、云基础设施、数据与模型、深科技与系统；“Microsoft”融资记录名称本身不证明每笔交易均由 M12 签约。",
+      "facts": [
+        {
+          "field": "corporate_venture_arm",
+          "label": "集团风险投资平台",
+          "value": "Microsoft 官方支持的风险投资平台 M12；官网时间线记载 Microsoft Ventures 于2018年更名为 M12。",
+          "source_id": "m12_about"
+        },
+        {
+          "field": "investment_stages",
+          "label": "投资阶段",
+          "value": "种子期至 B 轮。",
+          "source_id": "m12_home"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "AI 应用、AI 安全、AI 云基础设施、AI 数据与模型、深科技与系统。",
+          "source_id": "m12_home"
+        },
+        {
+          "field": "current_lead",
+          "label": "官网列示负责人",
+          "value": "Michelle Gonzalez，Corporate Vice President and Global Head, M12。",
+          "source_id": "m12_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2018",
+          "description": "Microsoft Ventures 更名为 M12。",
+          "source_id": "m12_about"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "M12 官网称其通过 Microsoft 的技术、客户与商业资源帮助被投企业，并保持与 Microsoft 战略方向的紧密联系。不能仅凭数据库中“Microsoft”名称将任何具体融资轮次归属于 M12。",
       "track_record": [
+        {
+          "description": "M12 官网自述累计投资数百家公司，其中包括15家独角兽和6家 IPO 企业；这是机构披露的组合数据，不是回报率或已实现收益。",
+          "source_id": "m12_portfolio"
+        },
+        {
+          "description": "官网展示超过140家活跃组合企业和50余项退出；退出数量未说明是否全部为 IPO 或其投资回报。",
+          "source_id": "m12_home"
+        },
         {
           "description": "融资来源记录：GitHub · 其他融资 · 2026-08-13 · 本轮参投 · $500,000。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-08365977cd80206b"
@@ -331,8 +371,47 @@
           "source_id": "FISRC-b58bb99dfec2e318"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "M12 官方网站",
+          "value": "m12.vc",
+          "url": "https://m12.vc/",
+          "source_id": "m12_home"
+        },
+        {
+          "kind": "website",
+          "label": "Microsoft 官方说明",
+          "value": "Microsoft Ventures / M12 历史与团队",
+          "url": "https://m12.vc/who-we-are/",
+          "source_id": "m12_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "m12_home",
+          "source_url": "https://m12.vc/",
+          "source_title": "M12 - Microsoft’s Venture Capital Fund",
+          "source_content_hash": "69372780e6188148547146fe3b1b17988a8665e1f935f8861d4d3cc3a6c7228e",
+          "quote": "We invest in promising seed through B-stage companies that are changing the way we live and work.",
+          "quote_hash": "c2c28468f133df0c0be6d56bc14d1b19534f7a8d51d0dc40ce2a7151a77e76d3"
+        },
+        {
+          "source_id": "m12_about",
+          "source_url": "https://m12.vc/who-we-are/",
+          "source_title": "About Microsoft’s Corporate VC Arm | M12 Venture Fund",
+          "source_content_hash": "d7b0e704e7f569151b90f08efb3ef75554478c08ee09645f69a61257eba5be13",
+          "quote": "2018: Microsoft Ventures becomes M12.",
+          "quote_hash": "3ddea06a43a7db84d50c4637de98cbef5a9ebbed948033c12026fba104990739"
+        },
+        {
+          "source_id": "m12_portfolio",
+          "source_url": "https://m12.vc/portfolio/",
+          "source_title": "Investment Portfolio of 100+ Startups | M12 Venture Fund",
+          "source_content_hash": "79bbf63ee7e426934c17e3a31f43db703e1f62b81346a1660520431b50baeb90",
+          "quote": "Since our founding 10 years ago, we’ve invested in hundreds of companies including 15 unicorns and 6 IPOs.",
+          "quote_hash": "582581d096b97828882fce99b8f6de16dfb26e68c94289ee727af79d74b5eeec"
+        },
         {
           "source_id": "FISRC-08365977cd80206b",
           "source_url": "https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era/",
@@ -358,7 +437,10 @@
           "quote_hash": "635e438e7bd38921cfa2ae7869a8f79b29944b74f036ad7ced7b851de3e986af"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

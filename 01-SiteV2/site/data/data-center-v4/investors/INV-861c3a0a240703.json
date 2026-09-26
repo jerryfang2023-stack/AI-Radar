@@ -131,19 +131,102 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "浪潮集团 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "融资数据库记录浪潮集团为硕橙科技C+轮（2025年5月）历史投资方，后在D+轮披露时被回溯提及；未披露具体基金/子公司或金额，不据此判断集团仍持有股份。集团官网另披露全资山东浪潮产业投资有限公司，但现有融资证据没有指明该子公司参与硕橙科技融资。集团公开邮箱和办公地址是公司总部联系信息，不是已确认的投资申请渠道。",
+      "summary": "浪潮集团有限公司（INSPUR GROUP CO., LTD.）是总部位于济南的新一代信息技术企业集团，业务覆盖算力基础设施、云服务、大数据、企业软件与数智化方案。官网称集团旗下有三家上市公司，业务服务全球120多个国家和地区。集团投资记录有时以“浪潮集团”整体名称出现，但集团公开资料显示其另设全资产业投资子公司，具体融资交易的出资实体需逐笔核实。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "企业名称",
+          "value": "浪潮集团有限公司；INSPUR GROUP CO., LTD.；统一社会信用代码913700001630477270。",
+          "source_id": "inspur_official_basic_info"
+        },
+        {
+          "field": "registered_capital",
+          "label": "注册资本（官网基本信息）",
+          "value": "人民币102437.6735万元。",
+          "source_id": "inspur_official_basic_info"
+        },
+        {
+          "field": "registered_address",
+          "label": "注册地址与办公地址",
+          "value": "山东省济南市高新区浪潮路1036号。",
+          "source_id": "inspur_official_basic_info"
+        },
+        {
+          "field": "business_scope",
+          "label": "官网披露的业务领域",
+          "value": [
+            "算力基础设施",
+            "智能云与大数据服务",
+            "数智化解决方案"
+          ],
+          "source_id": "inspur_official_overview"
+        },
+        {
+          "field": "investment_structure",
+          "label": "集团下属投资平台",
+          "value": "山东浪潮产业投资有限公司为浪潮集团全资子公司；其2023年公开信息列有创投业务部、资本市场部、产业资产部及协同发展部。未证明该子公司为本库所载硕橙科技投资的出资主体。",
+          "source_id": "inspur_official_investment_sub"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：硕橙科技 · D+轮 · 2026-08-18 · C+轮投资方 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "浪潮集团官网介绍其旗下有三家上市公司，覆盖云计算、数据中心、云服务、大数据、智慧城市和企业数字化等领域，并称服务覆盖全球120多个国家和地区。",
+          "source_id": "inspur_official_overview"
+        },
+        {
+          "description": "融资数据库记录：浪潮集团被列为硕橙科技2025年5月C+轮投资方，后续融资披露在2026年将该历史轮次回溯列出；未披露出资金额、具体基金/子公司或当前持股。",
           "source_id": "FISRC-c00e3514a8fe23f2"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "浪潮集团",
+          "url": "https://www.inspur.com/lcjtww/2314915/2315125/index.html",
+          "source_id": "inspur_official_overview"
+        },
+        {
+          "kind": "email",
+          "label": "官网基本信息公开邮箱；未标注为投资申请邮箱",
+          "value": "Langchao@inspur.com",
+          "source_id": "inspur_official_basic_info"
+        },
+        {
+          "kind": "address",
+          "label": "官网基本信息所列办公地址",
+          "value": "山东省济南市高新区浪潮路1036号浪潮科技园",
+          "source_id": "inspur_official_basic_info"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "inspur_official_overview",
+          "source_url": "https://inspur.com/eportal/ui?pageId=2315125",
+          "source_title": "浪潮集团｜官方集团简介",
+          "source_content_hash": "d48cffc9510dee6e2f931ef9212a48593f0bac2c49db06e398478801d084ab81",
+          "quote": "浪潮集团是中国领先的云计算、大数据服务商，旗下拥有3家上市公司。近年来，浪潮深耕算力基础设施、智能云与大数据服务、数智化解决方案三大业务板块，已为全球一百二十多个国家和地区提供IT产品和服务。",
+          "quote_hash": "c1aa10d85323cd46735ed9f2252d2ba888cb407b08d73cea3bb3df09a8eb94a8"
+        },
+        {
+          "source_id": "inspur_official_basic_info",
+          "source_url": "https://wap.inspur.com/eportal/ui?pageId=2605601",
+          "source_title": "浪潮集团｜官方基本情况",
+          "source_content_hash": "c119d2a073f6e70ec4c4a0073bdce6852d055faebc518459cac4a3621ea2327c",
+          "quote": "中文名称：浪潮集团有限公司；英文名称：INSPUR GROUP CO.,LTD.；统一社会信用代码：913700001630477270；注册资本102437.6735万元人民币；注册地址和办公地址为山东省济南市高新区浪潮路1036号；公开电子邮箱Langchao@inspur.com。",
+          "quote_hash": "45f6e00b77929bfec7e458b8b863dd7741a0082946c6d8afa89e22ada632ec35"
+        },
+        {
+          "source_id": "inspur_official_investment_sub",
+          "source_url": "https://www.inspur.com/lcjtww/fileDir/resource/cms/article/2605666/2851821/2024062714132496803.pdf",
+          "source_title": "浪潮集团｜山东浪潮产业投资有限公司2023年信息公开",
+          "source_content_hash": "f93f78c6d12435e43941fe42332303b5f3a6567c5cae47cbc8cdb532f27652d1",
+          "quote": "山东浪潮产业投资有限公司股东为浪潮集团有限公司，出资额7.7亿元人民币、持股比例100%；公司部门包括创投业务部、资本市场部、产业资产部和协同发展部。该集团子公司信息本身不能证明其为本库某一笔融资的出资主体。",
+          "quote_hash": "8c9f2a2160828fca9e7caba8b6790af70e644cecddb156ceaea95e4f08e821c5"
+        },
         {
           "source_id": "FISRC-c00e3514a8fe23f2",
           "source_url": "https://pitchhub.36kr.com/project/1679663815807751",
@@ -153,7 +236,7 @@
           "quote_hash": "d1e00773e0db185987a2f855072bfbcfba4affb4640fc704f11b84a69418479b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

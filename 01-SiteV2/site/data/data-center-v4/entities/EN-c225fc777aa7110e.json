@@ -111,33 +111,45 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "薛传奕 的来源线索将其与奇点逃逸（创始人兼CEO）关联。来源日期：2026-08-03；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "36氪访谈中薛传奕自述为清华大学自动化系在读博士、本科亦就读该系，当前研究Agent系统自进化，并将奇点逃逸列为相关创业实体。学历和研究方向采用本人采访陈述。",
+      "current_roles": [
+        {
+          "title": "创始人（采访主题所列）",
+          "organization": "奇点逃逸",
+          "source_id": "36kr_xue"
+        }
+      ],
       "career": [
         {
           "organization": "奇点逃逸",
-          "title": "创始人兼CEO",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将薛传奕与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-8f70de35939e4c3c"
+          "title": "创始人/创业者",
+          "period": "访谈时点；任期未披露",
+          "description": "访谈介绍其围绕Agent自进化与协作系统开展创业探索。",
+          "source_id": "36kr_xue"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
+      "education": [
+        {
+          "institution": "清华大学",
+          "qualification": "自动化专业本科；自动化系在读博士",
+          "source_id": "36kr_xue"
+        }
+      ],
+      "experience_summary": "其本人介绍当前关注Agent Harness层的自进化和人机协作系统；未在来源中声称产品已达成规模化成绩。",
       "track_record": [],
       "sources": [
         {
-          "source_id": "FISRC-8f70de35939e4c3c",
-          "source_url": "https://36kr.com/p/3919025939246727?f=rss",
-          "source_title": "融资披露来源",
-          "source_content_hash": "ef1aa49772b166b7",
-          "quote": "奇点逃逸创始人兼CEO薛传奕，本科、博士阶段均在清华大学就读",
-          "quote_hash": "99e94e5a5a03f20da03c9f188e224d744718a91cac15e5d4390cf56d22b5c949"
+          "source_id": "36kr_xue",
+          "source_url": "https://ad.36kr.com/p/3967334281631365",
+          "source_title": "X Field｜环境与协作，是我找到的 AI 自进化之锚——奇点逃逸薛传奕",
+          "source_content_hash": "2cf20bd2bf0efcf95a012f3eb065df437de6a708366eeafc5ac4190c28fe5545",
+          "quote": "薛传奕：我叫薛传奕，清华自动化系在读博士，本科也是清华自动化。现在做的事情是 Agent Harness 层的 Self-Evolution。",
+          "quote_hash": "1576c585c3b51705aa4642d1a45a8a7a3c987750dc8868a4f3a2be389aeaade6"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
     }
   },
   "relatedEntities": [],

@@ -130,20 +130,133 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "格力创投 当前按“投资组织”收录。最新融资披露记录日期为 2024-09-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "summary": "“格力创投”对应珠海格力创业投资有限公司，是珠海格力集团投资体系内从事创业投资与资产管理的法人主体。公开披露记录其2017年成立、注册资本人民币20亿元；壁仞科技港交所文件记载，格力创投在2023年4月壁仞科技改制为股份公司时持有约91.81万股、占2.7892%。该比例是2023年改制时数据，不能视作上市后的当前持股比例。",
+      "facts": [
         {
-          "description": "融资来源记录：壁仞科技 · 多轮融资 · 2024-09-12 · A轮参投 · 超过50亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-081c8476182d3ff7"
+          "field": "legal_name",
+          "label": "正式名称",
+          "value": "珠海格力创业投资有限公司",
+          "source_id": "gree_vc_registration"
+        },
+        {
+          "field": "established",
+          "label": "成立时间",
+          "value": "2017-07-21",
+          "source_id": "gree_vc_registration"
+        },
+        {
+          "field": "registered_capital",
+          "label": "注册资本（公开披露口径）",
+          "value": "人民币20亿元",
+          "source_id": "gree_vc_registration"
+        },
+        {
+          "field": "business_scope",
+          "label": "主营业务与经营范围",
+          "value": "创业投资、创业投资咨询与管理服务、未上市企业投资、投资管理和资产管理。",
+          "source_id": "gree_vc_registration"
+        },
+        {
+          "field": "ownership",
+          "label": "股权关系（公开披露时点）",
+          "value": "披露文件列示其由珠海格力金融投资管理有限公司持有100%，该管理公司由珠海格力集团持有100%，集团由珠海市国资委持有100%；珠海格力集团2022年度报告亦将其列为集团100%持股子公司。",
+          "source_id": "gree_vc_ownership"
+        },
+        {
+          "field": "financial_snapshot",
+          "label": "2022年度财务披露（人民币）",
+          "value": "总资产39.85亿元、净资产24.60亿元、主营业务收入0、主营业务利润2.91亿元；均为2022年历史数据。",
+          "source_id": "gree_vc_financials"
+        },
+        {
+          "field": "biren_historical_holding",
+          "label": "壁仞科技历史持股记录",
+          "value": "壁仞科技港交所文件记载，2023年4月30日改制时珠海格力创业投资有限公司认购约91.81万股，占当时股本2.7892%；该数据为历史时点。",
+          "source_id": "gree_vc_biren_shareholding"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2017-07-21",
+          "description": "珠海格力创业投资有限公司设立。",
+          "source_id": "gree_vc_registration"
+        },
+        {
+          "date": "2023-04-30",
+          "description": "壁仞科技改制为股份有限公司时，披露格力创投持有约91.81万股、占当时股本2.7892%。",
+          "source_id": "gree_vc_biren_shareholding"
+        },
+        {
+          "date": "2026-01-02",
+          "description": "壁仞科技在香港联合交易所主板上市；该事件不证明格力创投上市后仍持有相同比例股份。",
+          "source_id": "gree_vc_biren_listing"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "公开融资报道列格力创投为壁仞科技人民币11亿元A轮融资的参投方之一；壁仞科技后于2026年在香港上市。",
+          "source_id": "FISRC-081c8476182d3ff7"
+        },
+        {
+          "description": "壁仞科技上市文件回溯显示，格力创投在2023年4月公司改制时仍为股东，持股比例为2.7892%；该比例不是上市后当前持股披露。",
+          "source_id": "gree_vc_biren_shareholding"
+        },
+        {
+          "description": "珠海格力集团2022年债券年度报告将格力创投列为集团100%持股子公司，披露其主营为投资与资产管理。",
+          "source_id": "gree_vc_financials"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "母集团官方网站（未核实为格力创投投资申请渠道）",
+          "value": "珠海格力集团",
+          "url": "https://www.gree.cn/",
+          "source_id": "gree_vc_group_context"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "gree_vc_registration",
+          "source_url": "https://pdf.dfcfw.com/pdf/H2_AN202103231475125929_1.pdf?1616519796000.pdf=",
+          "source_title": "东方中科收购万里红｜格力创投基本情况及历史沿革披露",
+          "source_content_hash": "433fbaf7207382183b9a85fc6f9e67300c556664b0ec633ce6a81dbefd4e4b7c",
+          "quote": "企业名称珠海格力创业投资有限公司；统一社会信用代码91440400MA4WW7664P；注册资本200,000万元人民币；成立时间2017-07-21；经营范围包括创业投资、创业投资咨询、创业企业管理服务、未上市企业投资、投资管理和资产管理。",
+          "quote_hash": "90c0e47e2841196c1704cbd2c5de657cbe5d82575fc6dff8070ab4b645cb8cbf"
+        },
+        {
+          "source_id": "gree_vc_ownership",
+          "source_url": "https://pdf.dfcfw.com/pdf/H2_AN202103231475125929_1.pdf?1616519796000.pdf=",
+          "source_title": "东方中科收购万里红｜格力创投产权控制关系披露",
+          "source_content_hash": "23d88ba7f56f09daf7dfae3a340ff17298e1227ad33c3b94bd8b7e2d247d8576",
+          "quote": "格力创投由珠海格力金融投资管理有限公司持有100%；珠海格力金融投资管理有限公司由珠海格力集团有限公司持有100%；珠海格力集团有限公司由珠海市人民政府国有资产监督管理委员会持有100%。",
+          "quote_hash": "976e4f77e55ab9d9ff7d193af79728c6272142838b5cc1474600490c98d5da77"
+        },
+        {
+          "source_id": "gree_vc_financials",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2023-04-28/1216712593.pdf",
+          "source_title": "珠海格力集团有限公司｜2022年公司债券年度报告",
+          "source_content_hash": "469ea54178bb03926de41ad543c26a1e87c96cf26abbf60c2ce39a8fb3943a87",
+          "quote": "珠海格力创业投资有限公司：集团子公司，持股比例100.00%；主营业务为投资与资产管理；2022年总资产39.85亿元、净资产24.60亿元、主营业务收入0.00亿元、主营业务利润2.91亿元。",
+          "quote_hash": "4562d1430155871942474c22c8f5439d8a8231f834db4383c1c2de425367cb4b"
+        },
+        {
+          "source_id": "gree_vc_biren_shareholding",
+          "source_url": "https://www.hkexnews.hk/listedco/listconews/sehk/2025/1231/2025123100015.pdf",
+          "source_title": "上海壁仞科技股份有限公司｜全球发售文件：发起人及股份结构",
+          "source_content_hash": "1f6633c88b69e1b0af49162718de41bd19851e43c7f3d2527ea3690348512d26",
+          "quote": "No. 11 Zhuhai Gree Venture Capital Investment Co., Ltd. (珠海格力創業投資有限公司), 91.8093 ten thousand shares, conversion of net assets into shares, shareholding ratio 2.7892%, contribution date 2023.04.30.",
+          "quote_hash": "7171b6dfba4b61a8e901dd2fc79a785380fcf0413846741af51af8493ac16e76"
+        },
+        {
+          "source_id": "gree_vc_biren_listing",
+          "source_url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042200046_c.pdf",
+          "source_title": "上海壁仞科技股份有限公司｜2025年度报告",
+          "source_content_hash": "6dedfa09a16e454b3fddc84500bdce8b254da413bfeae05e51195cb53e2fe17e",
+          "quote": "On 2 January 2026, the Company successfully listed on the Main Board of The Stock Exchange of Hong Kong Limited.",
+          "quote_hash": "be118dc23580b345990f46ba28d074dcd821ddd95d64d694ec728a6140791247"
+        },
         {
           "source_id": "FISRC-081c8476182d3ff7",
           "source_url": "https://36kr.com/p/753999774079237",
@@ -151,9 +264,19 @@
           "source_content_hash": "48f7a6ff96b731e7",
           "quote": "格力创投、松禾资本、云晖资本、国开装备基金、华映资本、广微控股、耀途资本等知名投资机构和产业方联合参投",
           "quote_hash": "a0a875bf892469b0fe2386d4aeed2bb9ddc313654b1886f1e17f4b29ce6cc5e8"
+        },
+        {
+          "source_id": "gree_vc_group_context",
+          "source_url": "https://www.gree.cn/info/739.html",
+          "source_title": "珠海格力集团｜集团被投企业科技成果",
+          "source_content_hash": "be96fa05124d7694521773c01107e7f02c4da2541b0c7c13fe0fd646a534f060",
+          "quote": "格力集团旗下产业投资板块的核心企业格力金投和产投公司聚焦产业投资，持续培育科技创新企业；该报道提及格力创投及产业基金参与投资引进横乐医学。",
+          "quote_hash": "32d73b702f09e4fe4d6616acf6a4b0e78d7cc4a36e908e3c576e808cc8a600a7"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

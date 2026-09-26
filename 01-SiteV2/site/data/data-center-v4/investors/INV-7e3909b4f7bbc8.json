@@ -139,19 +139,165 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "美团龙珠投资 (Meituan Long-Z Investments) 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "美国证监会收录的2026年MINISO股东通函确认Long-Z原名美团龙珠资本，并披露创始合伙人朱拥华负责整体投资及其此前履历。TechCrunch于2026年5月引述Long-Z代表称其领投月之暗面融资。公开资料未核实到龙珠独立的项目投递邮箱；美团投资者关系邮箱不作为融资联系方式。此档案仅涵盖Long-Z，不将美团集团的其他战投并入其投资组合。",
+      "summary": "美团龙珠（Long-Z）是风险投资基金。MINISO向美国证监会提交的2026年股东通函称，该基金此前名为Meituan DragonBall Capital，并记载朱拥华自2017年1月起担任创始合伙人、负责整体投资。2026年5月，TechCrunch引述Long-Z代表称其领投月之暗面一轮融资；该单笔案例不代表基金完整业绩或完整组合。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构性质及名称沿革",
+          "value": "风险投资基金；Long-Z此前名为Meituan DragonBall Capital（美团龙珠资本）。",
+          "source_id": "longz_sec_identity"
+        },
+        {
+          "field": "investment_leadership",
+          "label": "投资负责人",
+          "value": "SEC收录的公司股东通函称，朱拥华自2017年1月起担任创始合伙人并负责Long-Z整体投资。",
+          "source_id": "longz_sec_identity"
+        },
+        {
+          "field": "meituan_relationship",
+          "label": "与美团的关系",
+          "value": "TechCrunch称Long-Z是美团的风险投资部门；SEC收录的股东通函同时披露朱拥华担任美团副总裁。该关系不代表美团集团每一笔投资都由Long-Z执行。",
+          "source_id": "longz_moonshot_lead"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2017-01",
+          "description": "SEC收录的2026年股东通函记载朱拥华自2017年1月起担任Long-Z创始合伙人并负责整体投资；该日期是其任职起点，不据此推定基金法律主体的成立日。",
+          "source_id": "longz_sec_identity"
+        }
+      ],
       "track_record": [
+        {
+          "description": "TechCrunch报道称，月之暗面2026年5月融资约20亿美元、估值约200亿美元；金额及估值依据该报道转述的财务顾问披露。",
+          "source_id": "longz_moonshot_amount"
+        },
+        {
+          "description": "TechCrunch引述Long-Z代表称，Long-Z领投了月之暗面2026年5月融资。",
+          "source_id": "longz_moonshot_lead"
+        },
         {
           "description": "融资来源记录：Moonshot AI · 轮次未披露 · 2026-06-08 · 2026年5月轮次领投 · 20亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0199034a5417695f"
         }
       ],
+      "current_roles": [
+        {
+          "title": "创始合伙人，负责整体投资",
+          "organization": "Long-Z（美团龙珠）",
+          "source_id": "longz_sec_identity"
+        },
+        {
+          "title": "副总裁",
+          "organization": "美团",
+          "source_id": "longz_sec_identity"
+        }
+      ],
+      "career": [
+        {
+          "organization": "朱拥华｜天图投资",
+          "title": "投资从业者；后任合伙人",
+          "period": "2007年7月—2014年10月；合伙人任期为2013年12月—2014年10月",
+          "description": "SEC收录的MINISO股东通函披露其任职时间和合伙人经历。",
+          "source_id": "longz_sec_tiantu"
+        },
+        {
+          "organization": "朱拥华｜联想控股现代农业与食品投资部",
+          "title": "执行董事",
+          "period": "2014年11月—2016年12月",
+          "description": "SEC收录的MINISO股东通函记载其负责现代农业与食品投资。",
+          "source_id": "longz_sec_legend"
+        },
+        {
+          "organization": "朱拥华｜Long-Z（美团龙珠）",
+          "title": "创始合伙人，负责整体投资",
+          "period": "2017年1月起；2026年股东通函仍列任该职",
+          "description": "MINISO提交SEC的股东通函将Long-Z称为风险投资基金，并记载朱拥华负责该基金整体投资。",
+          "source_id": "longz_sec_identity"
+        },
+        {
+          "organization": "朱拥华｜美团",
+          "title": "副总裁",
+          "period": "2026年股东通函列为现职；起始时间未披露",
+          "description": "SEC收录的MINISO股东通函披露其美团副总裁职务。",
+          "source_id": "longz_sec_identity"
+        },
+        {
+          "organization": "朱拥华｜MINISO Group Holding Limited",
+          "title": "独立董事（股东通函列为拟连任董事）",
+          "period": "2020年10月起；SEC股东通函日期为2026年4月",
+          "description": "该职务是朱拥华在MINISO的董事经历，不属于其在Long-Z的内部管理职务。",
+          "source_id": "longz_sec_miniso"
+        }
+      ],
+      "education": [
+        {
+          "institution": "Newcastle University",
+          "qualification": "金融学硕士，2005年12月取得",
+          "source_id": "longz_sec_education"
+        }
+      ],
+      "experience_summary": "朱拥华的公开履历覆盖天图投资、联想控股现代农业与食品投资部及Long-Z；公开文件还披露其担任美团副总裁和MINISO独立董事。基金投资策略细分、管理规模、完整组合与单支基金回报未据此推断。",
       "contacts": [],
       "sources": [
+        {
+          "source_id": "longz_sec_identity",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1815846/000110465926049046/tm2612678d1_ex99-4.htm",
+          "source_title": "MINISO 2026股东通函｜Long-Z及朱拥华履历",
+          "source_content_hash": "0b817ebcb0cc84dccc4ce6e479e8dfc4d93b2a57d10def9fab0a032a5e8c401a",
+          "quote": "Mr. Zhu has been the founding partner of Long-Z (formerly known as Meituan DragonBall Capital), a venture capital fund, since January 2017 in charge of the overall investment of Long-Z and a vice president of Meituan (HKEX: 3690) (formerly known as Meituan Dianping).",
+          "quote_hash": "ecc520a6678990c63fcd0f52510d7acf2e0bbe4ba7d57ac99edefbfad1ff9277"
+        },
+        {
+          "source_id": "longz_sec_tiantu",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1815846/000110465926049046/tm2612678d1_ex99-4.htm",
+          "source_title": "MINISO 2026股东通函｜朱拥华天图投资经历",
+          "source_content_hash": "0b817ebcb0cc84dccc4ce6e479e8dfc4d93b2a57d10def9fab0a032a5e8c401a",
+          "quote": "Mr. Zhu worked at Tiantu Capital, an investment management company, from July 2007 to October 2014 including as a partner from December 2013 to October 2014.",
+          "quote_hash": "b1d3eb9ed14181f20122c502057525985a06a691d69fef57cd5b160ba3a5bb07"
+        },
+        {
+          "source_id": "longz_sec_legend",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1815846/000110465926049046/tm2612678d1_ex99-4.htm",
+          "source_title": "MINISO 2026股东通函｜朱拥华联想控股经历",
+          "source_content_hash": "0b817ebcb0cc84dccc4ce6e479e8dfc4d93b2a57d10def9fab0a032a5e8c401a",
+          "quote": "Mr. Zhu served as an executive director of the department of investment in modern agriculture and food at Legend Holdings Corporation (HKEX: 3396), a leading industrial investment and operations company in China listed on the Main Board of the HKEX, from November 2014 to December 2016.",
+          "quote_hash": "85d1f093dbaa75e6a3fb98497156b6376b1c307d51724b574106073d424e4f54"
+        },
+        {
+          "source_id": "longz_sec_education",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1815846/000110465926049046/tm2612678d1_ex99-4.htm",
+          "source_title": "MINISO 2026股东通函｜朱拥华教育经历",
+          "source_content_hash": "0b817ebcb0cc84dccc4ce6e479e8dfc4d93b2a57d10def9fab0a032a5e8c401a",
+          "quote": "Mr. Zhu received a master’s degree in finance from Newcastle University in the United Kingdom in December 2005.",
+          "quote_hash": "10b3770823dc3535d5c56f56d0e1eb32545fc4e7fbb1b5d63a7c8da991494b86"
+        },
+        {
+          "source_id": "longz_sec_miniso",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1815846/000110465926049046/tm2612678d1_ex99-4.htm",
+          "source_title": "MINISO 2026股东通函｜朱拥华董事职务",
+          "source_content_hash": "0b817ebcb0cc84dccc4ce6e479e8dfc4d93b2a57d10def9fab0a032a5e8c401a",
+          "quote": "Mr. ZHU Yonghua (朱擁華), aged 45, has served as our independent Director since October 2020 and was re-designated as an independent non-executive Director with effect from the Listing Date.",
+          "quote_hash": "eea586a7fc764426987ce6868aa6afe15384f177434784835545a99117671da2"
+        },
+        {
+          "source_id": "longz_moonshot_amount",
+          "source_url": "https://techcrunch.com/2026/05/07/chinas-moonshot-ai-raises-2b-at-20b-valuation-as-demand-for-open-source-ai-skyrockets/",
+          "source_title": "China’s Moonshot AI raises $2B at $20B valuation｜TechCrunch",
+          "source_content_hash": "f76262753233ceab7be93264609f7f102b3b54ead6b607a5c3b73416dfe5c19b",
+          "quote": "Moonshot AI, the Beijing-based AI lab developing the popular Kimi series of open-weight large language models, has raised about $2 billion at a valuation of $20 billion, according to a post by Huafeng Capital.",
+          "quote_hash": "059deaeb0fb4cec4f4c4f1dadbd3e33ca662c108a0ba5aa5bc8360be208c7a1d"
+        },
+        {
+          "source_id": "longz_moonshot_lead",
+          "source_url": "https://techcrunch.com/2026/05/07/chinas-moonshot-ai-raises-2b-at-20b-valuation-as-demand-for-open-source-ai-skyrockets/",
+          "source_title": "China’s Moonshot AI raises $2B at $20B valuation｜TechCrunch",
+          "source_content_hash": "f76262753233ceab7be93264609f7f102b3b54ead6b607a5c3b73416dfe5c19b",
+          "quote": "The round was led by Chinese food delivery company Meituan’s VC arm, Long-Z Investments, a spokesperson told TechCrunch.",
+          "quote_hash": "137d5ae3797d6077eb8fcec86ad63adf32a9e0ef4639e3480d1d1f16686fe3e6"
+        },
         {
           "source_id": "FISRC-0199034a5417695f",
           "source_url": "https://otontechnology.com/moonshot-ai-30-billion-valuation-funding-round/",
@@ -161,7 +307,7 @@
           "quote_hash": "44e8fbd14ae37527131a0e76eddcaf3883ac164453daf98d0d7891dc69b88607"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

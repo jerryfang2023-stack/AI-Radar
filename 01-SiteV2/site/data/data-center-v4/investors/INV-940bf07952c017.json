@@ -191,12 +191,16 @@
     ],
     "public_profile": {
       "profile_type": "person",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Mike Knoop 当前按“个人投资者”收录。最新融资披露记录日期为 2026-03-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "summary": "Mike Knoop 是 Zapier 联合创始人，参与推动公司产品建设。Zapier 官方新闻资料称公司由 Wade Foster、Mike Knoop 与 Bryan Helmig 于2012年创立。公开资料未提供其完整教育与过往雇主履历。",
       "facts": [],
-      "milestones": [],
+      "milestones": [
+        {
+          "date": "2012",
+          "description": "共同创立 Zapier。",
+          "source_id": "mike_knoop_press"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Sycamore · 种子轮 · 2026-03-30 · 本轮天使投资人 · $65 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -207,8 +211,50 @@
           "source_id": "FISRC-d354011359557f2f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Zapier 官方人物页",
+          "value": "Mike Knoop",
+          "url": "https://zapier.com/blog/author/mike-knoop/",
+          "source_id": "mike_knoop_zapier"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "联合创始人；参与产品工作",
+          "organization": "Zapier",
+          "source_id": "mike_knoop_zapier"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Zapier",
+          "title": "联合创始人、产品负责人",
+          "period": "2012年共同创立；当前职责按公司人物页表述",
+          "description": "Zapier 官方作者简介称其为联合创始人并参与日常产品工作。",
+          "source_id": "mike_knoop_zapier"
+        }
+      ],
+      "education": [],
+      "experience_summary": "公开履历支持其 Zapier 联合创始人与产品建设经历；未找到足够一手材料确认其学历或此前任职。",
       "sources": [
+        {
+          "source_id": "mike_knoop_zapier",
+          "source_url": "https://zapier.com/blog/author/mike-knoop/",
+          "source_title": "Mike Knoop | Zapier",
+          "source_content_hash": "bb95c9f2566a039df6f058d5eed8983ac51ff8bc3032f32ad24eeb3a2971ee9c",
+          "quote": "Mike Knoop is a co-founder at Zapier. He helps drive day-to-day product.",
+          "quote_hash": "35fd5a50c9524b071515d862c90e4e973b099880e4b58d532dbdee45177ede95"
+        },
+        {
+          "source_id": "mike_knoop_press",
+          "source_url": "https://zapier.com/press",
+          "source_title": "Zapier Newsroom",
+          "source_content_hash": "bb95c9f2566a039df6f058d5eed8983ac51ff8bc3032f32ad24eeb3a2971ee9c",
+          "quote": "Zapier was founded in 2012 by Wade Foster, Mike Knoop, and Bryan Helmig.",
+          "quote_hash": "5832a86bfe73c3a58d032518361ae08eb18bc2cb54385649b801fbd4890b969f"
+        },
         {
           "source_id": "FISRC-afa7f3db79250046",
           "source_url": "https://techcrunch.com/2026/03/30/former-coatue-partner-raises-huge-65m-seed-for-enterprise-ai-agent-startup/",
@@ -226,7 +272,9 @@
           "quote_hash": "e738c438819557bce44ad40446b27fdffd161ebfad3fc76bb0ccf0bc4d980a23"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

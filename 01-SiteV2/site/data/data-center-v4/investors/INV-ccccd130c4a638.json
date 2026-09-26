@@ -192,14 +192,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "北洋海棠基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "北洋海棠基金是由天津大学校友企业家等发起设立的创业投资基金，官方定位为投资硬科技成果转化项目，并以基金带动创新创业生态建设。基金官网列明天津办公地址，并展示团队、投资方向、资讯及已投项目入口。天津经开区 2025 年公开报道显示，基金参与区域合作并计划共同设立聚焦新材料、新能源、生物制造、资源循环和节能减碳方向的“碳湾”基金。各子基金规模、在投状态及组合成绩应按对应基金披露分别核验。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "创业投资基金",
+          "source_id": "beiyanghaidian_home"
+        },
+        {
+          "field": "origin",
+          "label": "发起背景",
+          "value": "以天津大学校友企业家为主，并联合其他校友企业家设立",
+          "source_id": "beiyanghaidian_home"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "硬科技成果转化项目，包括天津大学教师、校友和学生项目",
+          "source_id": "beiyanghaidian_home"
+        },
+        {
+          "field": "ecosystem",
+          "label": "产业生态合作",
+          "value": "2025年与天津经开区合作筹备经开海河海棠“碳湾”基金，公开方向包括化工新材料、新能源、生物制造、资源循环和节能减碳",
+          "source_id": "beiyanghaidian_teda_202506"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2025-06",
+          "description": "天津经开区公开报道基金与园区签订合作框架，并计划设立办事处及共同设立碳湾基金。",
+          "source_id": "beiyanghaidian_teda_202506"
+        }
+      ],
       "track_record": [
+        {
+          "description": "基金官网设有已投项目展示；未将官网宣传榜单或子基金规模合并为管理规模，具体项目应对应各子基金公开信息核验。",
+          "source_id": "beiyanghaidian_home"
+        },
         {
           "description": "融资来源记录：MemoraX AI · 种子++轮 · 2026-08-12 · 本轮联合领投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4a456deffcbf4bfd"
@@ -209,8 +240,43 @@
           "source_id": "FISRC-086ff36dfb7673e8"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构定位、发起背景和地址来自基金官网；园区合作来自天津经开区政府报道。公开联系方式目前未确认投资申请邮箱，未猜测补入。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "基金官网",
+          "value": "北洋海棠基金",
+          "url": "https://byhtfund.com/",
+          "source_id": "beiyanghaidian_home"
+        },
+        {
+          "kind": "address",
+          "label": "官网公开地址",
+          "value": "天津市南开区鞍山西道286号启航大厦（天大科技园）",
+          "url": "https://byhtfund.com/",
+          "source_id": "beiyanghaidian_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "beiyanghaidian_home",
+          "source_url": "https://byhtfund.com/",
+          "source_title": "北洋海棠基金官网",
+          "source_content_hash": "c21f6ccdd0a48e7dd73f37fc2e64794a4f690b3b9eb950085fadf8fee1de5d25",
+          "quote": "北洋海棠基金官网称，其由天津大学校友企业家等共同设立，专注投资包括天津大学教师、校友和学生在内的硬科技项目，并以科技成果产业化和创业生态建设为目标；官网列出地址为天津市南开区鞍山西道286号启航大厦。",
+          "quote_hash": "9cad64de6cc9c7a5fccf3589d749a3aa7647a7baa4c1844ecd4da49acb8bf047"
+        },
+        {
+          "source_id": "beiyanghaidian_teda_202506",
+          "source_url": "https://www.teda.gov.cn/contents/13/89942.html",
+          "source_title": "共设基金 | 北洋海棠基金企业家走进天津经开区 - 天津经开区",
+          "source_content_hash": "ab1a483c71762ad66a4ef5b68e0b642f70dfa3a2ad3976473039db8fec879ea2",
+          "quote": "天津经开区 2025 年报道记载，北洋海棠基金与经开区签订合作框架，并计划设立办事处及共同设立经开海河海棠“碳湾”基金，方向包括化工新材料、新能源、生物制造、资源循环与节能减碳。",
+          "quote_hash": "513dc3075b3b0409e906713d127319573241e0ac9f6df0e02fc97f672d880421"
+        },
         {
           "source_id": "FISRC-4a456deffcbf4bfd",
           "source_url": "https://news.pedaily.cn/202608/567590.shtml",
@@ -228,7 +294,7 @@
           "quote_hash": "54651cf92cd842b29f7774734acb91f2858e3248475b318f43f0f588873b701c"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

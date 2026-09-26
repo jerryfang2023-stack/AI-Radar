@@ -138,21 +138,104 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "东软集团 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "东软集团（Neusoft Corporation，沪市代码600718）是成立于1991年的信息技术、产品与解决方案公司。官网称其是中国首家上市的软件公司，当前业务包括智能汽车互联、医疗健康、智慧城市、企业数字化转型和全球软件业务。融资披露将东软集团列作产业投资方，本档案介绍集团主体，不推定存在独立VC基金。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "1991年",
+          "source_id": "neusoft_about"
+        },
+        {
+          "field": "stock_code",
+          "label": "上市信息",
+          "value": "上海证券交易所：600718",
+          "source_id": "neusoft_about"
+        },
+        {
+          "field": "business_focus",
+          "label": "官网列示业务领域",
+          "value": [
+            "智能汽车互联",
+            "医疗健康",
+            "智慧城市",
+            "企业数字化与智能化转型",
+            "数字服务",
+            "全球软件业务"
+          ],
+          "source_id": "neusoft_about"
+        },
+        {
+          "field": "regional_network",
+          "label": "中国区域服务网络（官网披露）",
+          "value": "6个区域总部，覆盖中国60余座城市",
+          "source_id": "neusoft_contact"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1991",
+          "description": "东软集团成立；官网称其为中国首家上市软件公司。",
+          "source_id": "neusoft_about"
+        }
+      ],
       "track_record": [
+        {
+          "description": "东软集团官网介绍其在智能汽车、医疗、智慧城市、企业数字化及软件服务等领域提供产品与解决方案；本机构投资记录来自融资披露，未据此推断投资组合或基金回报。",
+          "source_id": "neusoft_about"
+        },
         {
           "description": "融资来源记录：智身科技（GENISOM AI） · B轮 · 2026-09-20 · 本轮参投 · 数亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fecad8ccb9a84a39"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Neusoft Corporation",
+          "url": "https://www.neusoft.com/About/",
+          "source_id": "neusoft_about"
+        },
+        {
+          "kind": "email",
+          "label": "集团商务联系邮箱",
+          "value": "bd@neusoft.com",
+          "url": "https://www.neusoft.com/Contact/",
+          "source_id": "neusoft_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "沈阳总部电话",
+          "value": "+86 24 83667788",
+          "url": "https://www.neusoft.com/Contact/",
+          "source_id": "neusoft_contact"
+        },
+        {
+          "kind": "address",
+          "label": "沈阳总部",
+          "value": "Neusoft Park, No.2 Xinxiu Street, Hunnan District, Shenyang 110179, China",
+          "url": "https://www.neusoft.com/Contact/",
+          "source_id": "neusoft_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "neusoft_about",
+          "source_url": "https://www.neusoft.com/About/",
+          "source_title": "About Neusoft – Neusoft",
+          "source_content_hash": "7f601a3ccce8b2993f2dd6afa0c6f34db0fa3a02c7b4e4f923cd359496277e02",
+          "quote": "Founded in 1991, Neusoft is the first listed software company in China.",
+          "quote_hash": "fe45902699fd39dba6cc1b495d646f6dca6c00380456503288d98e0563d7c05e"
+        },
+        {
+          "source_id": "neusoft_contact",
+          "source_url": "https://www.neusoft.com/Contact/",
+          "source_title": "Neusoft Worldwide – Neusoft",
+          "source_content_hash": "25d42c39dffb8b2cfced0e19d664cb2ee4afd2904c6eaa8082a51b554ef51956",
+          "quote": "Neusoft Park, No.2 Xinxiu Street, Hunnan District, Shenyang 110179, PRC. Tel: (86 24) 83667788. E-Mail: bd@neusoft.com.",
+          "quote_hash": "7ef0830c51e9befd73e68c73843b0642789a2165f118a7691cda015da5746bf5"
+        },
         {
           "source_id": "FISRC-fecad8ccb9a84a39",
           "source_url": "https://www.chinaventure.com.cn/news/114-20260920-393359.html",
@@ -162,7 +245,11 @@
           "quote_hash": "ec5d9bdbc2441058040753c6cf8e363b26fdf75debe18db0ba5922163b174b9f"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "identity_status": "verified",
+      "coverage_note": "集团背景、上市信息、业务和总部商务联系方式来自东软官网。融资库称其为产业投资方，但没有证据将此活动归属到单独VC基金。",
+      "last_verified_at": "2026-09-26"
     }
   }
 }

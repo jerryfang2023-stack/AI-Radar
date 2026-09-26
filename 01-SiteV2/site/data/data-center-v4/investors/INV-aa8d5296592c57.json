@@ -263,12 +263,33 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Nvidia Corp 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "NVIDIA是一家技术公司，其企业风险投资部门NVentures投资AI基础设施、机器人、数字生物学、应用AI与前沿计算等技术企业，并向被投公司提供技术及商业生态支持。融资数据中“Nvidia Corp”若指具体交易，仍应以交易披露核验由母公司直投还是NVentures出资。",
+      "facts": [
+        {
+          "field": "venture_arm",
+          "label": "企业投资部门",
+          "value": "NVentures（NVIDIA风险投资部门）",
+          "source_id": "nvidia_nventures_official_202609"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": [
+            "AI基础设施",
+            "机器人",
+            "数字生物学",
+            "应用AI",
+            "前沿计算"
+          ],
+          "source_id": "nvidia_nventures_official_202609"
+        },
+        {
+          "field": "startup_program_boundary",
+          "label": "创业支持计划边界",
+          "value": "NVIDIA Inception提供免费技术资源和云额度等支持；官网明确其不同于NVentures投资",
+          "source_id": "nvidia_nventures_official_202609"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -284,8 +305,31 @@
           "source_id": "FISRC-0d89e0712245c55b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "NVentures官方页面",
+          "value": "部门介绍、被投组合与企业联系入口",
+          "url": "https://www.nvidia.com/en-us/startups/nventures/",
+          "source_id": "nvidia_nventures_official_202609"
+        },
+        {
+          "kind": "website",
+          "label": "NVIDIA Inception创业支持计划",
+          "value": "面向各阶段创业公司提供技术支持；不是融资申请渠道",
+          "url": "https://www.nvidia.com/en-us/startups/",
+          "source_id": "nvidia_nventures_official_202609"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "nvidia_nventures_official_202609",
+          "source_url": "https://www.nvidia.com/en-us/startups/nventures/",
+          "source_title": "NVentures｜NVIDIA",
+          "source_content_hash": "a06f372ecb2075aa9a9c90fa6641da8930eee73ef689c675d57ee23303a8c563",
+          "quote": "NVIDIA官网将NVentures定义为公司的风险投资部门，支持AI基础设施、机器人、数字生物学、应用AI及前沿计算企业；与NVIDIA技术团队协作和市场支持并行，NVIDIA Inception是面向创业公司的免费技术支持项目，与投资职能不同。",
+          "quote_hash": "e00cb59fd098a9c40ac0c70a1e49f3bc34a2507d00e1a763d41b4410f3a21d08"
+        },
         {
           "source_id": "FISRC-077b1124fc8e9581",
           "source_url": "https://sg.finance.yahoo.com/news/gic-backed-openai-rival-anthropic-202159553.html",
@@ -311,7 +355,11 @@
           "quote_hash": "349e1d2de32bfca75897fb71f2ae9e309579714cee9cf6e5d66274d1f7cc4c43"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "coverage_note": "使用NVIDIA官网区分NVentures投资与Inception创业支持，不将母公司全部业务指标或交易自动视为该部门投资业绩。",
+      "identity_status": "verified"
     }
   }
 }

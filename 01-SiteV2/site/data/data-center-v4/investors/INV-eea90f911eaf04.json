@@ -187,13 +187,15 @@
       }
     ],
     "public_profile": {
-      "profile_type": "person",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Stanley Druckenmiller 当前按“个人投资者”收录。最新融资披露记录日期为 2026-06-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Stanley F. Druckenmiller 是投资人和慈善家。公开资料记载他创建 Duquesne Capital Management，曾在 Soros Fund Management 管理 Quantum Fund，并长期参与投资管理与慈善事务。CNBC Events 的嘉宾简介列其为 Duquesne Family Office 的董事长兼 CEO。",
       "facts": [],
-      "milestones": [],
+      "milestones": [
+        {
+          "date": "1981",
+          "description": "创建 Duquesne Capital Management。",
+          "source_id": "stanley_hcz_founding"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Etched · 多轮融资 · 2026-06-30 · 天使投资人 · $800 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -204,8 +206,96 @@
           "source_id": "FISRC-b750a2ea9e7c7b76"
         }
       ],
+      "profile_type": "person",
+      "coverage_status": "researched",
+      "coverage_note": "人物履历以高校档案、Harlem Children’s Zone 活动资料及 CNBC Events 嘉宾简介交叉整理；教育仅记公开来源明确列出的学校与届别。人物投资活动来自融资披露，不据此推断基金管理关系。",
+      "current_roles": [
+        {
+          "title": "董事长兼首席执行官",
+          "organization": "Duquesne Family Office LLC",
+          "source_id": "stanley_cnbc_role"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Duquesne Capital Management",
+          "title": "创始人、董事长兼 CEO",
+          "period": "至少截至 Bowdoin 2007 年荣誉学位简介发布时担任；结束日期未据此确认",
+          "description": "Bowdoin 的 2007 年简介称他为该机构创始人、董事长兼 CEO；Harlem Children’s Zone 的人物简介记载该机构于 1981 年创立。",
+          "source_id": "stanley_bowdoin"
+        },
+        {
+          "organization": "Soros Fund Management / Quantum Fund",
+          "title": "董事总经理、Quantum Fund 首席投资组合经理",
+          "period": "1988–2000",
+          "description": "Harlem Children’s Zone 的人物简介记载其在该期间担任 Soros Fund Management 董事总经理并负责 Quantum Fund。",
+          "source_id": "stanley_hcz_soros"
+        },
+        {
+          "organization": "Pittsburgh National Bank",
+          "title": "任职经历（来源未说明职级）",
+          "period": "具体任期未披露",
+          "description": "CNBC Events 简介将其列为早期职业经历，未给出具体职级或任期。",
+          "source_id": "stanley_cnbc_early"
+        },
+        {
+          "organization": "The Dreyfus Corporation",
+          "title": "任职经历（来源未说明职级）",
+          "period": "具体任期未披露",
+          "description": "CNBC Events 简介将其列为早期职业经历，未给出具体职级或任期。",
+          "source_id": "stanley_cnbc_early"
+        }
+      ],
+      "education": [
+        {
+          "institution": "Bowdoin College",
+          "qualification": "1975 届校友；所引校方资料未列学位类型与专业。",
+          "source_id": "stanley_bowdoin"
+        }
+      ],
+      "experience_summary": "履历包括创办并领导 Duquesne Capital Management、在 Soros Fund Management 任职并管理 Quantum Fund，以及早期在 Pittsburgh National Bank 和 The Dreyfus Corporation 工作。当前职务按 CNBC Events 嘉宾简介标注；各段经历未披露的任期与职级保持空缺。",
       "contacts": [],
       "sources": [
+        {
+          "source_id": "stanley_cnbc_role",
+          "source_url": "https://www.cnbcevents.com/speakers/stanley-druckenmiller-2/",
+          "source_title": "Stanley Druckenmiller — CNBC Events",
+          "source_content_hash": "1e00d201796ea057918d706c083107771a19feade3f718b2b8a3389360881eae",
+          "quote": "Chairman & CEO, Duquesne Family Office",
+          "quote_hash": "336cec5ba05eb2ac54d1d6e9c811ca69901f3b48b17d916805155c743c12440d"
+        },
+        {
+          "source_id": "stanley_cnbc_early",
+          "source_url": "https://www.cnbcevents.com/speakers/stanley-druckenmiller-2/",
+          "source_title": "Stanley Druckenmiller — CNBC Events",
+          "source_content_hash": "1e00d201796ea057918d706c083107771a19feade3f718b2b8a3389360881eae",
+          "quote": "Early on in his career, Stan worked at Pittsburgh National Bank and The Dreyfus Corporation.",
+          "quote_hash": "e19d0bf2e538d1581421643c83010cbc0ac798971abbe718a8b19b5091168e19"
+        },
+        {
+          "source_id": "stanley_bowdoin",
+          "source_url": "https://library.bowdoin.edu/arch/college-history-and-archives/honors/druckenmiller07.pdf",
+          "source_title": "The Honorands of the 2007 Commencement — Bowdoin College",
+          "source_content_hash": "51c164a14a6b020a41de1e04f920f859282ea3930095caef92a9035858c7b4cd",
+          "quote": "chairman, CEO, and founder of Duquesne Capital Management in New York City; member of the Bowdoin class of 1975",
+          "quote_hash": "6cadc2dd47f8340dfba1bd736c2b6de1f709f8cc09f676cc4b64badbfb68d10c"
+        },
+        {
+          "source_id": "stanley_hcz_soros",
+          "source_url": "https://hcz.org/wp-content/uploads/2021/02/RacePlace.pdf",
+          "source_title": "Race & Place event biographies — Harlem Children’s Zone",
+          "source_content_hash": "e17e82728ac8918aabebbabdc3325e6cea378cd14dbcd9f1b6516ee4cbb9263d",
+          "quote": "From 1988 to 2000, he was a Managing Director at Soros Fund Management",
+          "quote_hash": "fb7f7618d98938991bad4d61b9e01d33e90535db408d2ddaaeb265c0541379ac"
+        },
+        {
+          "source_id": "stanley_hcz_founding",
+          "source_url": "https://hcz.org/wp-content/uploads/2021/02/RacePlace.pdf",
+          "source_title": "Race & Place event biographies — Harlem Children’s Zone",
+          "source_content_hash": "e17e82728ac8918aabebbabdc3325e6cea378cd14dbcd9f1b6516ee4cbb9263d",
+          "quote": "founded Duquesne Capital Management in 1981",
+          "quote_hash": "77b4a10e6fbef19b4b24243bba82ba4eda805540660bec2cf6749fbd30ede463"
+        },
         {
           "source_id": "FISRC-ec090e2bf0f8f6e9",
           "source_url": "https://thenextweb.com/news/etched-800-million-jane-street-tsmc-inference-chip",
@@ -223,7 +313,8 @@
           "quote_hash": "9852627b60ea706872913c25702d4c735cc2449aa14d1b12db6b41fc75160882"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified"
     }
   }
 }

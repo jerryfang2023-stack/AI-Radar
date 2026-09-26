@@ -290,13 +290,61 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "水木创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "水木创投是北京水木国鼎投资管理有限公司使用的简称，也是北京清华工业开发研究院下设的科技成果产业化投资管理平台。清华工业开发研究院官网称其2012年7月创立，投资初创及成长期高科技企业，聚焦医疗健康、节能环保、集成电路、新能源、高端制造和人工智能。此档案专指该清华工业开发研究院平台，不与水木清华校友种子基金合并。",
+      "facts": [
+        {
+          "field": "legal_entity",
+          "label": "官网列示主体",
+          "value": "北京水木国鼎投资管理有限公司（简称水木创投）。",
+          "source_id": "tsinghua_industrial_shumu"
+        },
+        {
+          "field": "parent_company",
+          "label": "机构关系",
+          "value": "北京清华工业开发研究院下设的科技成果产业化专业投资管理平台。",
+          "source_id": "tsinghua_industrial_shumu"
+        },
+        {
+          "field": "founded",
+          "label": "创立时间",
+          "value": "2012年7月。",
+          "source_id": "tsinghua_industrial_shumu"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "初创期和成长期。",
+          "source_id": "tsinghua_industrial_shumu"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "医疗健康、节能环保、集成电路、新能源、高端制造、人工智能。",
+          "source_id": "tsinghua_industrial_shumu"
+        },
+        {
+          "field": "funds",
+          "label": "官网列示管理基金",
+          "value": "水木启程、水木扬帆、水木长风、水木愿景。",
+          "source_id": "tsinghua_industrial_shumu"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2012-07",
+          "description": "水木国鼎投资管理有限公司创立。",
+          "source_id": "tsinghua_industrial_shumu"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "清华工业开发研究院官网介绍其依托清华科研和人才资源推动技术成果产业化，已披露基金名称及组合案例；未推断完整退出或收益表现。",
       "track_record": [
+        {
+          "description": "官网列举品驰医疗、亿华通、华卓精科等累计投资案例；这是代表案例而非完整组合。",
+          "source_id": "tsinghua_industrial_shumu"
+        },
         {
           "description": "融资来源记录：悦点科技 · Pre-A轮 · 2026-09-16 · 本轮参投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3561e00f46398605"
@@ -310,8 +358,24 @@
           "source_id": "FISRC-8f70de35939e4c3c"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "清华工业开发研究院机构介绍",
+          "value": "水木创投",
+          "url": "https://gyy.tsinghua.edu.cn/kjfh/cxtz/smct.htm",
+          "source_id": "tsinghua_industrial_shumu"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "tsinghua_industrial_shumu",
+          "source_url": "https://gyy.tsinghua.edu.cn/kjfh/cxtz/smct.htm",
+          "source_title": "水木创投 — 北京清华工业开发研究院",
+          "source_content_hash": "a85086264acd53c9bb09f84b475c580c814e3f00c93d5760fe716ebf46c75a7e",
+          "quote": "北京水木国鼎投资管理有限公司（简称“水木创投”）创立于2012年7月，系北京清华工业开发研究院下设的科技成果产业化专业投资管理平台，重点投资于初创期和成长期的高科技、高成长企业。",
+          "quote_hash": "84db7750f8986fba3497009da20baf3c2612084613b4ab98a485eb6a7d7aaee6"
+        },
         {
           "source_id": "FISRC-3561e00f46398605",
           "source_url": "https://m.pedaily.cn/news/569132",
@@ -337,7 +401,10 @@
           "quote_hash": "ff1f4783d3bc8be27fc116fc21e2151f37466eb523e6f47974ecf93878c3cab5"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

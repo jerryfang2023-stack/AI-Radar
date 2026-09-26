@@ -111,33 +111,77 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "刘雨松 的来源线索将其与立妙达（创始人兼CEO）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "刘雨松是苏州立妙达智能创始人之一，浙江大学管理学博士。新华日报报道其早年获西南大学金融硕士，在外资银行从事风险管理和量化分析；2015年开始创业，2021年与岳石怡共同创办立妙达药物科技，后成立立妙达智能，转向AI+机器人与科学实验自动化。",
+      "current_roles": [
+        {
+          "title": "创始人之一",
+          "organization": "苏州立妙达智能科技有限公司",
+          "source_id": "liu_yusong_xinhua"
+        }
+      ],
       "career": [
         {
-          "organization": "立妙达",
-          "title": "创始人兼CEO",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将刘雨松与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-f9d4572f4dc397ba"
+          "organization": "外资银行（名称未披露）",
+          "title": "风险管理部量化分析",
+          "period": "2014年前后",
+          "description": "新华日报报道其获得西南大学金融硕士后赴厦门外资银行从事量化分析。",
+          "source_id": "liu_yusong_xinhua"
+        },
+        {
+          "organization": "创业项目（名称未披露）",
+          "title": "共同创业者",
+          "period": "2015年起",
+          "description": "与伙伴回到重庆开始创业；报道未列出早期项目的完整公司身份。",
+          "source_id": "liu_yusong_xinhua"
+        },
+        {
+          "organization": "苏州立妙达药物科技有限公司",
+          "title": "联合创始人",
+          "period": "2021年共同创立",
+          "description": "与岳石怡组建团队，以AI辅助小分子药物发现及转化。",
+          "source_id": "liu_yusong_xinhua"
+        },
+        {
+          "organization": "苏州立妙达智能科技有限公司",
+          "title": "创始人之一",
+          "period": "公司主体成立于2025年",
+          "description": "带团队面向AI+机器人、半导体制造及AI for Science解决方案。",
+          "source_id": "liu_yusong_xinhua"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "浙江大学",
+          "qualification": "管理学博士；报道未披露毕业年份及研究领域",
+          "source_id": "liu_yusong_xinhua"
+        },
+        {
+          "institution": "西南大学",
+          "qualification": "金融学硕士；报道未披露毕业年份",
+          "source_id": "liu_yusong_xinhua"
+        }
+      ],
+      "experience_summary": "职业经历跨金融风险分析、AI创业、计算机辅助药物研发和AI机器人产业化；多次创业形成从软件与算法研发到产业交付的路径。",
+      "track_record": [
+        {
+          "description": "参与创办立妙达药物科技并推进AI辅助小分子药物研发；2026年报道其后创办立妙达智能，公开披露的超亿元融资为公司融资事项，不归作个人成绩。",
+          "source_id": "liu_yusong_xinhua"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-f9d4572f4dc397ba",
-          "source_url": "https://news.pedaily.cn/202603/561739.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "20c687863021cb1a",
-          "quote": "立妙达创始人兼 CEO 刘雨松博士表示",
-          "quote_hash": "0bea00863f1aa4793b8e8d3cc0e2425ed6b822ee0b82bd5fd284d6efbc3e6a19"
+          "source_id": "liu_yusong_xinhua",
+          "source_url": "https://www.sohu.com/a/1007422194_121455647",
+          "source_title": "新华日报：立妙达智能创始人刘雨松经历与公司发展",
+          "source_content_hash": "03038682eb6feb6e2d152fb62a7a70b6263cf2de8551c3682be93525c0159817",
+          "quote": "新华日报报道刘雨松为浙江大学管理学博士，曾获西南大学金融硕士并从事外资银行量化分析，后于2021年共同创办立妙达药物科技。",
+          "quote_hash": "23f6ef46d6db2bc73f82cf772008c0c2fcd3b79a15d8ce0754d0031bb2495efd"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "主要依据新华日报人物/公司报道；早期创业公司名和未披露的任职年份维持未知，融资金额不归因为个人成就。",
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

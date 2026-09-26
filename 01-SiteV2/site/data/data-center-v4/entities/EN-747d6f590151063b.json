@@ -111,33 +111,94 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "王鑫 的来源线索将其与幻码跃迁（首席科学家）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "王鑫是香港科技大学（广州）人工智能学域副教授、幻码跃迁首席科学家，研究量子信息、量子算法、量子人工智能与量子软件。他2018年获悉尼科技大学博士学位，曾任马里兰大学 Hartree Fellow 和百度量子计算研究所资深研究员，参与百度量子平台及量桨研发。其个人主页列出90余篇论文、50余项中美专利等成果；这些为个人主页自述统计。",
+      "current_roles": [
+        {
+          "title": "副教授、研究组负责人",
+          "organization": "香港科技大学（广州）人工智能学域",
+          "source_id": "xinwang_personal"
+        },
+        {
+          "title": "首席科学家",
+          "organization": "幻码跃迁",
+          "source_id": "xinwang_pedaily"
+        }
+      ],
       "career": [
+        {
+          "organization": "马里兰大学量子信息与计算机科学联合中心",
+          "title": "Hartree Fellow",
+          "period": "2018年8月至2019年6月",
+          "description": "从事量子纠缠、容错量子计算、量子模拟及量子资源理论研究。",
+          "source_id": "xinwang_personal"
+        },
+        {
+          "organization": "百度量子计算研究所",
+          "title": "资深研究员、核心技术骨干",
+          "period": "2019年7月至2023年5月",
+          "description": "开展量子人工智能研究并参与百度量子平台开发，个人主页称其带领团队开发量桨。",
+          "source_id": "xinwang_personal"
+        },
+        {
+          "organization": "香港科技大学（广州）",
+          "title": "人工智能学域副教授",
+          "period": "2023年6月至今（个人主页记录）",
+          "description": "开展量子信息与量子人工智能研究。",
+          "source_id": "xinwang_personal"
+        },
         {
           "organization": "幻码跃迁",
           "title": "首席科学家",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-7c0e1d89cdf9af82"
+          "period": "2026年融资报道时在任",
+          "description": "为量子计算系统软件与AI融合方向提供科研与技术领导。",
+          "source_id": "xinwang_pedaily"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "悉尼科技大学",
+          "qualification": "量子信息与量子计算博士，2018年",
+          "source_id": "xinwang_personal"
+        },
+        {
+          "institution": "四川大学吴玉章荣誉学院",
+          "qualification": "数学学士，2014年",
+          "source_id": "xinwang_personal"
+        }
+      ],
+      "experience_summary": "从事量子信息论、量子算法及量子AI研究，经历包括马里兰大学、百度量子计算研究所与港科大（广州）；并参与初创企业幻码跃迁的科研团队建设。",
+      "track_record": [
+        {
+          "description": "个人主页列出其参与量桨量子机器学习平台研发及多篇量子信息论文；平台和论文均为团队成果，不归因于个人单独完成。",
+          "source_id": "xinwang_personal"
+        },
+        {
+          "description": "个人主页自述发表90余篇论文、申请及获授权50余项中美专利；未独立核查清单，作为个人公开统计口径展示。",
+          "source_id": "xinwang_personal"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-7c0e1d89cdf9af82",
+          "source_id": "xinwang_personal",
+          "source_url": "https://qclab.wang/",
+          "source_title": "王鑫个人学术主页",
+          "source_content_hash": "62b18bb29bba36e93aa9a3b856f17dbc791d990a81ad69c69c965f45c958246e",
+          "quote": "个人主页记录其2018年获悉尼科技大学博士学位，曾任马里兰大学Hartree Fellow及百度量子计算研究所资深研究员，现任港科大（广州）副教授。",
+          "quote_hash": "adc3289fd5c4fa9baf2fe8623f3a6c6e8c66b35cac771049ddbc280237951627"
+        },
+        {
+          "source_id": "xinwang_pedaily",
           "source_url": "https://news.pedaily.cn/202607/566249.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "340f8c8784943503",
-          "quote": "两位首席科学家提供关键技术纵深。王鑫曾任百度量子计算研究所Tech Leader，主导研发工业级量子软件平台“量桨”",
-          "quote_hash": "3f427968dd0584c029dc8ce8779edac762494cd66f70b08232890b0f3bdf712c"
+          "source_title": "幻码跃迁融资及核心团队介绍 - 投资界",
+          "source_content_hash": "f840474a87d75d6ed24df2f3ab9c5ad33988880fd19bdd3192be76e6acd42ad0",
+          "quote": "投资界报道将王鑫列为幻码跃迁首席科学家，并介绍其量桨研发与量子算法研究经历。",
+          "quote_hash": "33508772258de85b59ec6c5f5d9fbbf5f02f811af0d1cf972dab133aa2060bdc"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "学术履历依据本人维护的研究主页，幻码跃迁职务由融资报道确认；论文、专利与荣誉数量以个人主页统计口径呈现。",
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

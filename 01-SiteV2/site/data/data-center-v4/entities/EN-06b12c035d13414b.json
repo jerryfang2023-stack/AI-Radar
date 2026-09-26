@@ -111,33 +111,54 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "付智 的来源线索将其与共绩科技（创始人兼CEO）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "付智是共绩科技创始人兼CEO，在清华大学攻读博士，创业方向为闲时算力聚合与调度。北京官方人物报道介绍其提出“电网式算力调度网络”，公司通过“算了么”平台连接闲置算力，为AI推理等提供弹性资源。",
+      "current_roles": [
+        {
+          "title": "创始人兼CEO",
+          "organization": "共绩科技",
+          "source_id": "fuzhi_beijing_civilization_202609"
+        }
+      ],
       "career": [
         {
           "organization": "共绩科技",
           "title": "创始人兼CEO",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将付智与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-3e0fde80ebf2a574"
+          "period": "2023年创立公司；2026年官方人物报道确认职务",
+          "description": "聚焦分布式闲时算力调度，提出“电网式算力调度网络”方案，并运营算力共享平台。",
+          "source_id": "fuzhi_beijing_civilization_202609"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "清华大学",
+          "qualification": "建筑环境与能源应用工程专业博士研究生（来源报道时在读）",
+          "source_id": "fuzhi_beijing_civilization_202609"
+        }
+      ],
+      "experience_summary": "在校期间开展创业，研究与业务方向集中于分布式资源调度和闲时算力利用。来源是官方人物专题，涉及的公司规模及经营成绩按报道口径记录。",
+      "track_record": [
+        {
+          "description": "2024年中国国际大学生创新大赛全球总决赛亚军；奖项为参赛团队成果。",
+          "source_id": "fuzhi_beijing_civilization_202609"
+        },
+        {
+          "description": "报道时公司平台连接数十万台异构算力设备；此为报道中的公司运营数据。",
+          "source_id": "fuzhi_beijing_civilization_202609"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-3e0fde80ebf2a574",
-          "source_url": "https://www.36kr.com/p/3799065589406724",
-          "source_title": "融资披露来源",
-          "source_content_hash": "b4381a675aefc3d2a95cb1fcc273af5480df665793d08f9467c369b5fd1122aa",
-          "quote": "「共绩科技」创始人兼CEO付智解释道",
-          "quote_hash": "7705d082e4fb8a35d93b37aba3156344171670fbefb3c4337e02e8c26ea79afb"
+          "source_id": "fuzhi_beijing_civilization_202609",
+          "source_url": "https://www.bjwmb.gov.cn/byrw/bjby/10124356.html",
+          "source_title": "付智：从清华学子到算力先锋 以创新破解算力困局｜首都文明网",
+          "source_content_hash": "ece9eb49b9852de2112c000b2e13c92faee94bce6e42ef86029f1e4c6b515909",
+          "quote": "首都文明网人物报道介绍付智为北京共绩科技创始人兼CEO、清华大学建筑环境与能源应用工程专业博士研究生；称其创办闲时算力调度共享平台，团队接入数十万台异构算力设备。报道还记载公司融资、营收及其2024年中国国际大学生创新大赛全球总决赛亚军等信息。",
+          "quote_hash": "506c386e9819b324d99c72332a75f7998a0c77e9c03411a90b4c98de7410d202"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "职务、教育背景与平台业务来自首都文明网人物专题；公司经营数据保留为报道口径，奖项归属团队。"
     }
   },
   "relatedEntities": [],

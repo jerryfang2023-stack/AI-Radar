@@ -131,21 +131,32 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "无限基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "融资数据库使用的名称为“无限基金”。公开融资报道确认该名称出现在基元律动种子轮参投名单；清华大学电子工程系另有名称相近的“无限基金SEE Fund”，但现有资料不足以证明两者是同一主体，因此此条保持待核验。",
+      "facts": [
+        {
+          "field": "identity_note",
+          "label": "主体识别状态",
+          "value": "不能仅凭简称“无限基金”确定其为清华SEE Fund或其他具体基金。",
+          "source_id": "tsinghua_see_fund"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：基元律动 · 基础设施融资 · 2026-08-27 · 种子轮参投 · 数千万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资来源记录：基元律动种子轮报道将“无限基金”列为参投方；报道未提供基金管理人或法律实体全名。",
           "source_id": "FISRC-f23d61f5ed1d1ac1"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "tsinghua_see_fund",
+          "source_url": "https://www.ee.tsinghua.edu.cn/info/1375/3052.htm",
+          "source_title": "SEE FUND-清华大学电子工程系",
+          "source_content_hash": "1cd2789c64c6adcc26a67fccce73ee30f7b66147c124158f4ab684e39f0b2d25",
+          "quote": "无限基金SEE Fund是由清华大学电子工程系和天津电子院共同推动发起设立。",
+          "quote_hash": "9f2ca75f6686cab0cc36302c5b9ffbbb05296330ad0f450219729a068b307caa"
+        },
         {
           "source_id": "FISRC-f23d61f5ed1d1ac1",
           "source_url": "https://www.qbitai.com/2026/08/480079.html",
@@ -155,7 +166,11 @@
           "quote_hash": "3fd204915d433415c506545b5de000a0746aa9ad3b55be436294053ae07244cf"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "只有融资报道中的简称，没有管理人名称、基金备案编号或工商主体信息。清华SEE Fund资料仅用于说明相似名称，不作为两者同一性的证明。",
+      "last_verified_at": "2026-09-26"
     }
   }
 }

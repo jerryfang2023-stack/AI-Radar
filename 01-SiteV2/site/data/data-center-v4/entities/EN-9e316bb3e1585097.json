@@ -111,33 +111,70 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "浦群妍 的来源线索将其与寅成智能（创始人）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "浦群妍是寅成智能创始人，具有复旦大学计算机背景及卡内基梅隆大学深造经历。财经报道介绍她曾在Google工作，并作为创始团队成员加入美国无人配送企业Nuro，拥有AI算法和Robotaxi落地经历，2023年回国创办寅成智能。",
+      "current_roles": [
+        {
+          "title": "创始人",
+          "organization": "寅成智能",
+          "source_id": "puqunyan_sina"
+        }
+      ],
       "career": [
+        {
+          "organization": "Google",
+          "title": "AI相关岗位（报道未说明具体职称）",
+          "period": "任职时间未披露",
+          "description": "媒体报道提及其将多项AI技术转化为落地产品；具体项目和职务未公开。",
+          "source_id": "puqunyan_sina"
+        },
+        {
+          "organization": "Nuro",
+          "title": "创始团队成员",
+          "period": "创业阶段；具体任期未披露",
+          "description": "参与智能配送企业创业，职位及个人贡献边界未在报道中详列。",
+          "source_id": "puqunyan_sina"
+        },
         {
           "organization": "寅成智能",
           "title": "创始人",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将浦群妍与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-2eb0f3061c0992c0"
+          "period": "2023年创立",
+          "description": "创办通用拣选机器人公司。",
+          "source_id": "puqunyan_sina"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "复旦大学",
+          "qualification": "计算机相关本科，2004级",
+          "source_id": "puqunyan_sina"
+        },
+        {
+          "institution": "卡内基梅隆大学",
+          "qualification": "研究生阶段深造；学位信息未披露",
+          "source_id": "puqunyan_sina"
+        }
+      ],
+      "experience_summary": "从AI算法研究和Robotaxi产业化转向智能配送创业，再回国创办通用拣选机器人公司。AI及Robotaxi经验年限为公开媒体概括。",
+      "track_record": [
+        {
+          "description": "2023年创办寅成智能，媒体报道其机器人已进入多家物流客户场景并披露融资情况；客户与商业化进展按报道口径呈现。",
+          "source_id": "puqunyan_sina"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-2eb0f3061c0992c0",
+          "source_id": "puqunyan_sina",
           "source_url": "https://finance.sina.com.cn/tech/roll/2026-05-25/doc-inhzamvs3624738.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "b305b6f8f03a0db3",
-          "quote": "坐落于上海，寅成智能身后创始人是一位连续创业者——浦群妍",
-          "quote_hash": "5535be561a1afe504c6667b73b15ac310911226e4509883f29f28931cd0352ce"
+          "source_title": "寅成智能融资及创始人履历 - 新浪财经/投资界",
+          "source_content_hash": "e5f4b5c632ddcc925b2b7af2929bfb038868e62b9a90bee5d0196fc4cf3f0c37",
+          "quote": "报道介绍浦群妍的复旦及卡内基梅隆学习经历、Google和Nuro经历及2023年创业。",
+          "quote_hash": "2760acc1cd3b84fbb75a54194fead85695da8a08e597300c7b293eb0bc50ff2c"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "履历来自媒体对创始人的专访和融资报道；CMU学位与Google具体职务未公开，未作推断。",
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

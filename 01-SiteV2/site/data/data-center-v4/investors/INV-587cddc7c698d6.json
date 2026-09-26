@@ -187,11 +187,38 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "FirstMark Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "FirstMark Capital 是总部位于纽约的早期风险投资机构。官网说明其为创业公司提供创始人社区、客户拓展、人才招聘和专属活动支持，并把 Shopify、Pinterest 等列为创业者案例；官网还报道其组合公司 Momentum 被 Salesforce 收购。以上仅为精选案例，不代表完整组合或基金回报。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "早期风险投资机构",
+          "source_id": "firstmark_home"
+        },
+        {
+          "field": "headquarters",
+          "label": "总部",
+          "value": "纽约市",
+          "source_id": "firstmark_home"
+        },
+        {
+          "field": "founder_support",
+          "label": "创始人支持",
+          "value": [
+            "专家社区",
+            "客户拓展",
+            "专属峰会",
+            "全周期招聘"
+          ],
+          "source_id": "firstmark_home"
+        },
+        {
+          "field": "selected_outcome",
+          "label": "公开案例",
+          "value": "官网报道其投资的 Momentum 被 Salesforce 收购；Shopify、Pinterest 创始人也在官网分享与机构合作经历。",
+          "source_id": "firstmark_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -203,8 +230,24 @@
           "source_id": "FISRC-9af7e6a4d7b3d5e7"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "FirstMark Capital",
+          "url": "https://www.firstmark.com/",
+          "source_id": "firstmark_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "firstmark_home",
+          "source_url": "https://www.firstmark.com/",
+          "source_title": "FirstMark Capital 官方网站",
+          "source_content_hash": "e76b06b43504b25103adb0d6457a6ad19cafaf96ad8c559d0b1ac9a45385725d",
+          "quote": "FirstMark官网介绍其为纽约早期VC，说明组合公司平台服务，并列举Shopify、Pinterest及Momentum收购案例。",
+          "quote_hash": "0f5d07b1e096c0ff381390d53799088ec20f274a0431ba5c476018e9f7156d57"
+        },
         {
           "source_id": "FISRC-c9fd5fac8536f13d",
           "source_url": "https://techcrunch.com/2026/07/14/the-founder-of-hinge-raised-18m-to-build-a-new-ai-dating-service-overtone/",
@@ -222,7 +265,10 @@
           "quote_hash": "8a279183c65affc5bbc27dbf381db1b94f01e896b7ab8f45b484410fc650fb5d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "官网未在首页提供公开的项目申请邮箱或电话，联系方式留空。",
+      "last_verified_at": "2026-09-26"
     }
   }
 }

@@ -129,21 +129,171 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "北京信产基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "北京信产基金对应的正式主体是北京信息产业发展投资基金（有限合伙），2023年12月成立，注册资本100亿元。北京市经信局与北京市政府投资引导基金公布的设立方案将其定位为直接股权投资基金，计划规模100亿元、市级引导基金认缴不超过30亿元，重点覆盖产业互联网、网络安全和信创、北斗及互联网3.0。诚迈科技2024年公告披露了基金执行事务合伙人、政府引导基金99%的出资份额和当时未经审计的财务数据。公开投资记录包括对统信软件拟增资3亿元，以及2026年参与亮亮视野C+轮；后者报道未披露该基金的单笔金额。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "法定名称",
+          "value": "北京信息产业发展投资基金（有限合伙）",
+          "source_id": "bii_fund_legal_2024"
+        },
+        {
+          "field": "aliases",
+          "label": "融资数据库及公开材料简称",
+          "value": [
+            "北京信产基金",
+            "北京信息产业发展基金"
+          ],
+          "source_id": "bii_fund_legal_2024"
+        },
+        {
+          "field": "establishment",
+          "label": "成立时间与组织形式",
+          "value": "2023-12-28成立，有限合伙企业；统一社会信用代码91110113MAD7KL1BXJ。",
+          "source_id": "bii_fund_legal_2024"
+        },
+        {
+          "field": "registered_capital",
+          "label": "注册资本（2024年公告披露）",
+          "value": "人民币100亿元。此为工商注册资本，不等同于实缴金额、基金净资产或管理人AUM。",
+          "source_id": "bii_fund_legal_2024"
+        },
+        {
+          "field": "fund_target_scale",
+          "label": "北京市2023年设立方案中的目标规模",
+          "value": "目标规模100亿元；北京市政府投资引导基金认缴出资不超过30亿元。该公告为设立方案口径，不代表已实缴规模。",
+          "source_id": "bii_fund_policy_2023"
+        },
+        {
+          "field": "executive_partners",
+          "label": "执行事务合伙人（2024年上市公司公告披露）",
+          "value": [
+            "北京京国管置业管理有限公司",
+            "君联资本管理股份有限公司"
+          ],
+          "source_id": "bii_fund_legal_2024"
+        },
+        {
+          "field": "lp_structure",
+          "label": "上市公司公告列示的合伙人份额",
+          "value": "北京市政府投资引导基金（有限合伙）持股99%；北京京国管置业管理有限公司和君联资本管理股份有限公司各持股0.5%。这是2024年公告披露的份额口径。",
+          "source_id": "bii_fund_lp_2024"
+        },
+        {
+          "field": "investment_focus",
+          "label": "北京市经信局公布的重点投资方向",
+          "value": [
+            "产业互联网",
+            "网络安全和信息技术应用创新",
+            "北斗",
+            "互联网3.0"
+          ],
+          "source_id": "bii_fund_policy_2023"
+        },
+        {
+          "field": "historical_financial_position",
+          "label": "2024-02-29财务数据（未经审计）",
+          "value": "诚迈科技公告披露基金总资产和净资产均为人民币8.08亿元；这是2024年历史财务快照，不是当前管理规模。",
+          "source_id": "bii_fund_assets_2024"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2023-12-28",
+          "description": "正式法律名称、成立日期及组织形式由诚迈科技2024年公告披露。",
+          "source_id": "bii_fund_legal_2024"
+        },
+        {
+          "date": "2024-03-26",
+          "description": "诚迈科技公告披露，基金拟向统信软件B+轮增资3亿元；本次记录为拟议交易，公告提示具体交易以后续完成情况为准。",
+          "source_id": "bii_fund_uos_round_2024"
+        },
+        {
+          "date": "2026-09-08",
+          "description": "北京市政府门户网站报道，基金列入亮亮视野C+轮融资投资方名单；本基金出资金额未披露。",
+          "source_id": "bii_fund_llvision_2026"
+        }
+      ],
       "track_record": [
+        {
+          "description": "诚迈科技2024-03-26公告披露基金拟向统信软件B+轮增资3亿元；该公告记录的是拟议出资，未单独证明最终交割金额。",
+          "source_id": "bii_fund_uos_round_2024"
+        },
+        {
+          "description": "北京市政府门户网站于2026-09-08报道亮亮视野完成超3亿元C+轮融资，并将本基金列入投资方；报道未披露本基金的单笔金额或领投/跟投角色。",
+          "source_id": "bii_fund_llvision_2026"
+        },
         {
           "description": "融资来源记录：小雨智造 · B+轮 · 2026-05-09 · A轮及A+轮投资方 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5ddafcf5b1c1b90b"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "已由北京市经信局设立方案和诚迈科技上市公司公告核对法律名称、统一社会信用代码、成立日期、注册资本、执行事务合伙人和出资份额。100亿元同时出现于目标规模和注册资本口径，不能直接表述为实缴或当前AUM。2024财务数据未经审计且已过时；统信软件交易为当时拟议增资；2026亮亮视野报道只列出投资方，未披露本基金金额。未找到基金对外通用业务联系方式。",
+      "current_roles": [
+        {
+          "title": "执行事务合伙人（2024年公告披露）",
+          "organization": "北京京国管置业管理有限公司",
+          "source_id": "bii_fund_legal_2024"
+        },
+        {
+          "title": "执行事务合伙人（2024年公告披露）",
+          "organization": "君联资本管理股份有限公司",
+          "source_id": "bii_fund_legal_2024"
+        }
+      ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "bii_fund_policy_2023",
+          "source_url": "https://jxj.beijing.gov.cn/jxdt/tzgg/202309/t20230915_3260654.html",
+          "source_title": "北京市经济和信息化局、北京市政府投资引导基金关于公开遴选北京信息产业发展基金管理机构的公告",
+          "source_content_hash": "f92b01a8756d07feef22986354be1702d33a102950ccca19e0d98bbef3a6ca56",
+          "quote": "基金目标规模为100亿元，引导基金认缴出资不超过30亿元。基金围绕国家及北京市信息产业战略性布局开展直接股权投资，重点投向产业互联网、网络安全和信创、北斗、互联网3.0等领域。",
+          "quote_hash": "df9979c6807f70f7f1d041693dcf0485ad28dfc3e0ec0453222bd4c66c1b82c4"
+        },
+        {
+          "source_id": "bii_fund_legal_2024",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2024-03-26/1219407510.PDF",
+          "source_title": "诚迈科技（南京）股份有限公司关于放弃参股公司增资及股权转让优先认购权和优先购买权的公告",
+          "source_content_hash": "7207e7f2409a5b5ff2b5556c002786134cd28323a42bf878a492782de67a8a5d",
+          "quote": "企业名称：北京信息产业发展投资基金（有限合伙）；统一信用代码：91110113MAD7KL1BXJ；注册资本：1,000,000万元人民币；执行事务合伙人：北京京国管置业管理有限公司、君联资本管理股份有限公司；公司类型：有限合伙企业；成立日期：2023-12-28。",
+          "quote_hash": "ba27dfbb7b1708f35d16aea677f29bf80670fb665386f2a34f65fbb46265429a"
+        },
+        {
+          "source_id": "bii_fund_lp_2024",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2024-03-26/1219407510.PDF",
+          "source_title": "诚迈科技（南京）股份有限公司关于放弃参股公司增资及股权转让优先认购权和优先购买权的公告",
+          "source_content_hash": "7207e7f2409a5b5ff2b5556c002786134cd28323a42bf878a492782de67a8a5d",
+          "quote": "股东情况：北京市政府投资引导基金（有限合伙）（持股99%）、北京京国管置业管理有限公司（持股0.5%）、君联资本管理股份有限公司（持股0.5%）。",
+          "quote_hash": "5c8d0f2819fde3ccaba8f5e0a8cf977acc397dc49be94f829f25edb9a5dc146e"
+        },
+        {
+          "source_id": "bii_fund_assets_2024",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2024-03-26/1219407510.PDF",
+          "source_title": "诚迈科技（南京）股份有限公司关于放弃参股公司增资及股权转让优先认购权和优先购买权的公告",
+          "source_content_hash": "7207e7f2409a5b5ff2b5556c002786134cd28323a42bf878a492782de67a8a5d",
+          "quote": "截至2024年2月29日，北京信息产业发展投资基金（有限合伙）总资产为人民币8.08亿元、净资产为人民币8.08亿元（未经审计）。",
+          "quote_hash": "011296b33343dc3cce4070ff49aad05f2208b63eb87a23ae25c140f0e7eeba92"
+        },
+        {
+          "source_id": "bii_fund_uos_round_2024",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2024-03-26/1219407510.PDF",
+          "source_title": "诚迈科技（南京）股份有限公司关于放弃参股公司增资及股权转让优先认购权和优先购买权的公告",
+          "source_content_hash": "7207e7f2409a5b5ff2b5556c002786134cd28323a42bf878a492782de67a8a5d",
+          "quote": "北京信息产业发展投资基金（有限合伙）拟对统信软件B+轮增资人民币3亿元。",
+          "quote_hash": "7f03379bd904232a365fc962ba5520e24bd0ba27359ebdf7cdcdfed1828f5a84"
+        },
+        {
+          "source_id": "bii_fund_llvision_2026",
+          "source_url": "https://www.beijing.gov.cn/fuwu/lqfw/gggs/202609/t20260908_4855071.html",
+          "source_title": "北京产业资本出手！超3亿元加码智能眼镜赛道",
+          "source_content_hash": "13f8e38bc319fb36ec0297ae13b12e3e50d412d303315defade983b4c10cd763",
+          "quote": "9月8日，亮亮视野（LLVision）近日完成超3亿元C+轮融资，本轮投资方包括北京祥龙资产经营有限责任公司（简称“祥龙公司”）、北京信息产业发展投资基金和北京市新材料产业投资基金。",
+          "quote_hash": "7e02d0dc4cc79df6cca722441b2dc20b634ba4b6be7f87fd6ba7cef529d1cad6"
+        },
         {
           "source_id": "FISRC-5ddafcf5b1c1b90b",
           "source_url": "https://news.pedaily.cn/202507/552068.shtml",
@@ -153,7 +303,7 @@
           "quote_hash": "6c917174a7e2be0d125af7b47fcb7f64d4dd1173a2778a88cc1c4294dba70300"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

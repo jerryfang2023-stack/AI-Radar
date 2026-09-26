@@ -190,20 +190,76 @@
       }
     ],
     "public_profile": {
-      "profile_type": "person",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Bob McGrew 当前按“个人投资者”收录。最新融资披露记录日期为 2026-03-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Bob McGrew is a former Chief Research Officer at OpenAI. OpenAI’s public team material describes a decade leading engineering and product management at Palantir, earlier work on aerial robotics at Airware, and a Textile Engineering degree from North Carolina State University. A March 2026 company announcement lists him among Sycamore’s angel investors.",
+      "facts": [
+        {
+          "field": "former_role",
+          "label": "曾任职务",
+          "value": "OpenAI Chief Research Officer；2024年公开报道确认其离开OpenAI。",
+          "source_id": "ap_departure"
+        },
+        {
+          "field": "investor_activity",
+          "label": "公开天使投资记录",
+          "value": "Sycamore于2026年种子轮公告中列其为天使投资人。",
+          "source_id": "sycamore_press"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2024-09",
+          "description": "媒体报道Bob McGrew作为OpenAI Chief Research Officer离职。",
+          "source_id": "ap_departure"
+        },
+        {
+          "date": "2026-03-30",
+          "description": "Sycamore宣布6500万美元种子轮，并列出Bob McGrew为天使投资人。",
+          "source_id": "sycamore_press"
+        }
+      ],
+      "current_roles": [],
+      "career": [
+        {
+          "organization": "OpenAI",
+          "title": "Chief Research Officer",
+          "period": "截至2024年9月",
+          "description": "曾担任首席研究官；公开报道确认其于2024年离开OpenAI。",
+          "source_id": "ap_departure"
+        },
+        {
+          "organization": "Palantir Technologies",
+          "title": "工程与产品管理负责人",
+          "period": "约十年（OpenAI团队资料未给出起止年份）",
+          "description": "OpenAI团队资料称其带领工程和产品管理工作，任职期间公司员工人数从约10人增长至约1,500人。",
+          "source_id": "openai_team_career"
+        },
+        {
+          "organization": "Airware",
+          "title": "航空机器人相关工作",
+          "period": "Palantir之前，具体年份未披露",
+          "description": "OpenAI团队资料称其曾从事空中机器人工作。",
+          "source_id": "openai_team_career"
+        }
+      ],
+      "education": [
+        {
+          "institution": "North Carolina State University（北卡罗来纳州立大学）",
+          "qualification": "Textile Engineering学位",
+          "source_id": "openai_team_education"
+        }
+      ],
+      "experience_summary": "职业背景包含Airware航空机器人、Palantir工程与产品管理，以及OpenAI研究领导工作；公开资料显示他已离开OpenAI。2026年Sycamore融资公告将其列作天使投资人，但没有披露个人投资金额或当前全职职位。",
       "track_record": [
         {
-          "description": "融资来源记录：Sycamore · 种子轮 · 2026-03-30 · 本轮天使投资人 · $65 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Sycamore公司公告列Bob McGrew为其6500万美元种子轮天使投资人之一；公告没有披露其出资额。",
+          "source_id": "sycamore_press"
+        },
+        {
+          "description": "融资报道同样将其列为Sycamore种子轮天使投资者。",
           "source_id": "FISRC-afa7f3db79250046"
         },
         {
-          "description": "融资来源记录：Sycamore · 种子轮 · 2026-03-30 · 天使投资人 · $65 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "数据库记录显示其参与Sycamore种子轮；该记录不代表完整个人投资组合。",
           "source_id": "FISRC-d354011359557f2f"
         }
       ],
@@ -212,7 +268,7 @@
         {
           "source_id": "FISRC-afa7f3db79250046",
           "source_url": "https://techcrunch.com/2026/03/30/former-coatue-partner-raises-huge-65m-seed-for-enterprise-ai-agent-startup/",
-          "source_title": "前Coatue合伙人筹集6500万美元种子轮，用于企业AI智能体初创公司",
+          "source_title": "Former Coatue partner raises huge $65M seed for enterprise AI agent startup",
           "source_content_hash": "30d66410e025bf44",
           "quote": "a long list of angels including former OpenAI chief scientist Bob McGrew, Intel CEO Lip-Bu Tan, Databricks CEO Ali Ghodsi, and others.",
           "quote_hash": "094332c446066edecca1b7b6a7b3b71cde5d19f56591285ce5895bd45753465e"
@@ -220,13 +276,49 @@
         {
           "source_id": "FISRC-d354011359557f2f",
           "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
-          "source_title": "Sycamore融资6500万美元，为企业打造可信代理操作系统",
+          "source_title": "Sycamore Raises $65M to Build the Trusted Agent Operating System for the Enterprise",
           "source_content_hash": "7c851906b2d8f45f",
           "quote": "Bob McGrew (former Chief Research Officer at OpenAI)",
           "quote_hash": "7fb11ef0ec2c9573bf52a1edf3ae950490ccd96a5d9be0aba8dd6e41def48418"
+        },
+        {
+          "source_id": "sycamore_press",
+          "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
+          "source_title": "Sycamore Raises $65M to Build the Trusted Agent Operating System for the Enterprise",
+          "source_content_hash": "827a67357e0ec8a489084f12db1ce1394a09f47e315089be5364f5d8b0833785",
+          "quote": "Bob McGrew (former Chief Research Officer at OpenAI)",
+          "quote_hash": "7fb11ef0ec2c9573bf52a1edf3ae950490ccd96a5d9be0aba8dd6e41def48418"
+        },
+        {
+          "source_id": "openai_team_career",
+          "source_url": "https://openai.com/index/team-update-january/",
+          "source_title": "Team update | OpenAI",
+          "source_content_hash": "84d1d2313bc612bb0a7dcef342c22a19f8f6321276ac38ca2a37282f91e71262",
+          "quote": "Bob formerly led engineering and product management at Palantir, having worked there for a decade as it grew from 10 to 1,500 employees. Prior to that he worked on aerial robots at Airware.",
+          "quote_hash": "84d1d2313bc612bb0a7dcef342c22a19f8f6321276ac38ca2a37282f91e71262"
+        },
+        {
+          "source_id": "openai_team_education",
+          "source_url": "https://openai.com/index/team-update-january/",
+          "source_title": "Team update | OpenAI",
+          "source_content_hash": "757826e5975e82436979238d2e817f47dd0201526db7d8755ab8bd858f7b83a9",
+          "quote": "He has a degree in Textile Engineering from NCSU.",
+          "quote_hash": "757826e5975e82436979238d2e817f47dd0201526db7d8755ab8bd858f7b83a9"
+        },
+        {
+          "source_id": "ap_departure",
+          "source_url": "https://apnews.com/article/df75217584696b442935dbccc9b0347d",
+          "source_title": "OpenAI Chief Technology Officer Mira Murati and 2 other execs are leaving the ChatGPT maker",
+          "source_content_hash": "411f7ea62955a6687c15d9cbdb971db7282fd5afbcbf2a9cd558f66d4dd0119e",
+          "quote": "OpenAI’s Chief Research Officer Bob McGrew and another research leader, Barret Zoph, were also leaving the company.",
+          "quote_hash": "411f7ea62955a6687c15d9cbdb971db7282fd5afbcbf2a9cd558f66d4dd0119e"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "职业、教育资料来自OpenAI公开团队介绍和离职报道，2026天使投资记录来自Sycamore公司公告及融资报道；未找到可靠公开来源确认其当前全职职位。",
+      "last_verified_at": "2026-09-26"
     }
   }
 }

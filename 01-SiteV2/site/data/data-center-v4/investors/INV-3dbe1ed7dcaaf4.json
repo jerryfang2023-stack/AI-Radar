@@ -188,14 +188,39 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "三星 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "融资记录中的“三星”属于集团级投资方简称。Samsung Venture Investment Corporation（SVIC）是三星关联投资部门，运营面向技术和未来业务的投资基金；不同实体、基金与Samsung Electronics的直接投资需按每笔公告区分。",
+      "facts": [
+        {
+          "field": "venture_arm",
+          "label": "集团关联投资部门",
+          "value": "Samsung Venture Investment Corporation（SVIC）",
+          "source_id": "samsung_svic_news_201911"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "未来技术及可增强现有业务竞争力、识别未来增长机会的新技术领域",
+          "source_id": "samsung_svic_fund_disclosure_201607"
+        },
+        {
+          "field": "fund_example_size",
+          "label": "历史基金规模案例",
+          "value": "2016年SVIC 32目标规模2000亿韩元；三星电子披露出资1980亿韩元（99%），仅属该支历史基金",
+          "source_id": "samsung_svic_fund_disclosure_201607"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1999-10-08",
+          "description": "韩国金融监管公开公司资料将Samsung Venture Investment Corp.成立日期列为1999年10月8日。",
+          "source_id": "samsung_svic_news_201911"
+        }
+      ],
       "track_record": [
+        {
+          "description": "Samsung Newsroom于2019年披露SVIC在印度向四家初创企业投资合计850万美元。",
+          "source_id": "samsung_svic_news_201911"
+        },
         {
           "description": "融资来源记录：Euclyd · A轮 · 2026-09-15 · 本轮联合领投 · 2亿欧元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6cbfc1ea08a48a66"
@@ -205,8 +230,32 @@
           "source_id": "FISRC-8c073d38e1f34758"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Samsung Venture官网",
+          "value": "公司与投资组合信息入口；未发现明确公开的项目申请邮箱",
+          "url": "https://www.samsungventure.co.kr/english_portfolio.do",
+          "source_id": "samsung_svic_news_201911"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "samsung_svic_news_201911",
+          "source_url": "https://news.samsung.com/in/samsung-venture-makes-first-investments-in-india-invests-usd-8-5-million-in-four-startups",
+          "source_title": "Samsung Venture Investment Corporation在印度首次投资四家初创企业",
+          "source_content_hash": "15438f45e260700a711c8572ef9e405db06496df1e24bc3a2ba48d9a150c1859",
+          "quote": "Samsung Newsroom称Samsung Venture Investment Corporation（SVIC）为Samsung投资部门，并披露其在印度首次向四家初创企业投资850万美元。",
+          "quote_hash": "d041d022fde6ee412ed2823687e5cb97b364baabe3650784cadf242a8f75cceb"
+        },
+        {
+          "source_id": "samsung_svic_fund_disclosure_201607",
+          "source_url": "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.70681/",
+          "source_title": "Samsung Electronics对关联SVIC新技术投资基金的投资披露",
+          "source_content_hash": "e4b976df1f40d9471862fd63fc34ff799b512f3ba555177bd078cc66b4fe9011",
+          "quote": "Samsung Electronics披露向关联公司Samsung Venture Investment Corporation设立的新技术投资基金追加投资；SVIC 32基金目标规模为2000亿韩元，Samsung Electronics承诺出资1980亿韩元，占99%。该数字属于2016年特定基金，非集团整体或当前规模。",
+          "quote_hash": "1aace3f955ea398cc78b04399d4bfd6557ff0443ffbfc995c2ea32dbf17784f2"
+        },
         {
           "source_id": "FISRC-6cbfc1ea08a48a66",
           "source_url": "https://www.cls.cn/detail/2484090",
@@ -224,7 +273,11 @@
           "quote_hash": "f59e62a3d713b9108d3012048b52ce8aafea06a66518fe539ba3d75428d6ebe7"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "coverage_note": "集团名称与具体基金分开记录；SVIC 32规模和印度投资是有日期的个案，不作为当前总规模或整体回报。",
+      "identity_status": "verified"
     }
   }
 }

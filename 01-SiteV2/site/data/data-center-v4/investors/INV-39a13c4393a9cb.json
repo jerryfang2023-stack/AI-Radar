@@ -186,31 +186,120 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "中国-比利时基金(中比基金) 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "中国—比利时直接股权投资基金（中比基金）是经批准由中比两国政府部门及机构共同发起的产业投资基金，2004年在北京成立。海富基金官网称其为基金管理人；基金管理人公开资料描述其使命为支持中小企业发展。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "基金全称",
+          "value": "中国—比利时直接股权投资基金",
+          "source_id": "cninfo_sinobelgian"
+        },
+        {
+          "field": "established",
+          "label": "成立时间与地点",
+          "value": "2004年11月18日，北京（上市公司披露）",
+          "source_id": "cninfo_sino_established"
+        },
+        {
+          "field": "founding_background",
+          "label": "发起背景",
+          "value": "中国与比利时政府及机构共同发起设立",
+          "source_id": "hffund_sinobelgian"
+        },
+        {
+          "field": "manager",
+          "label": "基金管理人",
+          "value": "海富产业投资基金管理有限公司（海富基金）",
+          "source_id": "hffund_sinobelgian_manager"
+        },
+        {
+          "field": "mandate",
+          "label": "设立宗旨",
+          "value": "促进中小企业发展",
+          "source_id": "hffund_sinobelgian"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2004-11-18",
+          "description": "上市公司披露中比基金在北京成立。",
+          "source_id": "cninfo_sinobelgian"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：极佳视界 · B2轮 · 2026-06-15 · 本轮参投 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "海富基金官网称中比基金以良好业绩获得中比两国政府认可；该网页没有公开IRR或净回报率。",
+          "source_id": "hffund_sinobelgian_track"
+        },
+        {
+          "description": "融资来源记录：中比基金被报道参与极佳视界B2轮融资。",
           "source_id": "FISRC-ce47b663ca256878"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "基金管理人官网",
+          "value": "海富基金中比基金介绍",
+          "url": "https://www.hffund.com.cn/%E4%B8%AD%E6%AF%94%E5%9F%BA%E9%87%91/",
+          "source_id": "hffund_sinobelgian"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-ce47b663ca256878",
           "source_url": "https://news.pedaily.cn/202606/565201.shtml",
-          "source_title": "首发| 极佳视界三个月融资35亿，投资人开抢物理世界OpenAI",
-          "source_content_hash": "a652909321da946b",
-          "quote": "由新加坡顶级跨境投资机构狮城资本（多轮持续追投）、中国-比利时基金（中比基金）、建投投资、万向钱潮、复星锐正、华盖创赢、金创投、德屹资本、华仓资本、元石基金等全球顶级国家队基金、产业资本、财务机构、国资平台共同投资",
-          "quote_hash": "d65491949cddef8dbbeb83255e6b1186dbf2888d42525d5dc2353472077af0ed"
+          "source_title": "极佳视界三个月完成35亿元B轮系列融资",
+          "source_content_hash": "2e290bb988c15b09",
+          "quote": "极佳视界宣布又完成10亿元B2轮融资，由新加坡顶级跨境投资机构狮城资本（多轮持续追投）、中国-比利时基金（中比基金）、建投投资、万向钱潮、复星锐正、华盖创赢、金创投、德屹资本、华仓资本、元石基金等全球顶级国家队基金、产业资本、财务机构、国资平台共同投资",
+          "quote_hash": "112955cc40a01d0eba11b38fb949a218e91aafed2aa6ab7a2953c71a9b3b5e6b"
+        },
+        {
+          "source_id": "hffund_sinobelgian",
+          "source_url": "https://www.hffund.com.cn/%E4%B8%AD%E6%AF%94%E5%9F%BA%E9%87%91/",
+          "source_title": "中比基金 – 海富基金",
+          "source_content_hash": "cc17bb28853956fa0431c010c16ff3ec6fbb4a392d480bdd4fba2805bb0d5812",
+          "quote": "为促进中小企业发展而共同发起设立并出资的产业投资基金。",
+          "quote_hash": "b7eb08f1660b5f2a5bd1283eea65fca2235e313861cb8ec44d4be09d6c330c04"
+        },
+        {
+          "source_id": "cninfo_sinobelgian",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2013-10-25/63190719.PDF",
+          "source_title": "上市公司法律意见书：中比基金基本情况与管理关系",
+          "source_content_hash": "5476fd768d3dd348b4e3f1538facea008b1892ceebc61aef592cf0fdb09e0f62",
+          "quote": "中国—比利时直接股权投资基金",
+          "quote_hash": "9e6c90c4f4d6c6d68872549a75d28f7771a922e24f2c3f240d289ef602c87ca5"
+        },
+        {
+          "source_id": "cninfo_sino_established",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2013-10-25/63190719.PDF",
+          "source_title": "上市公司法律意见书：中比基金基本情况与管理关系",
+          "source_content_hash": "5476fd768d3dd348b4e3f1538facea008b1892ceebc61aef592cf0fdb09e0f62",
+          "quote": "于2004年11月18日在中国北京市成立的中外合资经营企业。",
+          "quote_hash": "5038fc8336abb97542863ef317a48df0e89d4deb2e13718c048251e4b7223e32"
+        },
+        {
+          "source_id": "hffund_sinobelgian_manager",
+          "source_url": "https://www.hffund.com.cn/%E5%85%AC%E5%8F%B8%E7%AE%80%E4%BB%8B/",
+          "source_title": "公司简介 – 海富基金",
+          "source_content_hash": "ffa473edaf8fbe5b3215e57002c601a02bc44aa6e926ca53c971398abad67311",
+          "quote": "目前管理中国-比利时直接股权投资基金和海富长江成长股权投资（湖北）合伙企业（有限合伙）两支基金。",
+          "quote_hash": "ffa473edaf8fbe5b3215e57002c601a02bc44aa6e926ca53c971398abad67311"
+        },
+        {
+          "source_id": "hffund_sinobelgian_track",
+          "source_url": "https://www.hffund.com.cn/%E6%A0%B8%E5%BF%83%E4%BC%98%E5%8A%BF/",
+          "source_title": "核心优势 – 海富基金",
+          "source_content_hash": "68a7611d34f3c6c77275074e1fd6e871a88e85effb8f4246f9c3f94d534d33bf",
+          "quote": "又以良好的业绩获得了中比两国政府的高度认可",
+          "quote_hash": "68a7611d34f3c6c77275074e1fd6e871a88e85effb8f4246f9c3f94d534d33bf"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "基金名称、成立信息与管理关系由海富基金官网及上市公司公开披露支持。历史出资人名单随时间可能变化，未将旧披露当作现行LP结构。",
+      "last_verified_at": "2026-09-26"
     }
   }
 }

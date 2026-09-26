@@ -190,10 +190,35 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Verissimo Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "依据机构官网策略、团队、组合或联系资料核实；机构自述指标与组合案例不视作基金回报。",
+      "summary": "Verissimo Ventures 是面向美国和以色列市场的早期风险投资基金。官网称其支持高潜力创始人，除资金外还参与财务、运营与产品市场匹配建设；机构官网设有公开投资申请表。",
+      "facts": [
+        {
+          "field": "stage",
+          "label": "投资阶段",
+          "value": "早期阶段。",
+          "source_id": "verissimo_focus"
+        },
+        {
+          "field": "geography",
+          "label": "地理范围",
+          "value": "美国与以色列。",
+          "source_id": "verissimo_focus"
+        },
+        {
+          "field": "strategy",
+          "label": "投后支持",
+          "value": "官网称协助创始团队推进财务、运营、产品市场匹配及规模化。",
+          "source_id": "verissimo_focus"
+        },
+        {
+          "field": "leadership",
+          "label": "官网列示团队",
+          "value": "Alex Oppenheimer（创始人兼 GP）；David Oppenheimer（合伙人兼 CFO）；另列 Head of Platform、Operating Partner 与顾问。",
+          "source_id": "verissimo_team"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -205,7 +230,22 @@
           "source_id": "FISRC-5824955e96dd97db"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Verissimo Ventures",
+          "url": "https://verissimo.vc/",
+          "source_id": "verissimo_focus"
+        },
+        {
+          "kind": "application",
+          "label": "投资申请表",
+          "value": "Investment Submission Form",
+          "url": "https://verissimo.vc/investment-submission-form",
+          "source_id": "verissimo_submit"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-9661f69b0104e76e",
@@ -222,9 +262,33 @@
           "source_content_hash": "f6524a7152f1902f",
           "quote": "Verissimo Ventures",
           "quote_hash": "88e927abc1c478d62aca65aee715eea5ec9e4ce9740583d2993b8f7e65d469be"
+        },
+        {
+          "source_id": "verissimo_focus",
+          "source_url": "https://verissimo.vc/mission-investment-focus",
+          "source_title": "Mission & Investment Focus | Verissimo Ventures",
+          "quote": "Verissimo invests in Israel and the US at the early stage.",
+          "source_content_hash": "a0aa40af3245f79235e5a938886c3885a957279bad199b02796d32d3b2f119c9",
+          "quote_hash": "02754babb719814e72300a052d8bdc496f4918d850f7e26c5fb4793eb4a102b3"
+        },
+        {
+          "source_id": "verissimo_team",
+          "source_url": "https://verissimo.vc/team",
+          "source_title": "Team | Verissimo Ventures",
+          "quote": "Alex Oppenheimer — Founder & GP; David Oppenheimer — Partner, CFO.",
+          "source_content_hash": "97b7bc355240351389c18444e60348640f118e3539e47e4170fdac9718c53a00",
+          "quote_hash": "cd6cbe1b7a0e600399fbe7a79058fa046e62d68897dc9330ef69c6a2e79329f6"
+        },
+        {
+          "source_id": "verissimo_submit",
+          "source_url": "https://verissimo.vc/investment-submission-form",
+          "source_title": "Investment Submission Form | Verissimo Ventures",
+          "quote": "Verissimo welcomes early founders seeking financial strategy, funding, or feedback through its investment submission form.",
+          "source_content_hash": "90d823b708a3b72507302857c1e57e6faee3bff962bcaf99f550bf31884f5da0",
+          "quote_hash": "6241b64cf57849e8398dd68cc6b613edd83b6743f6f046475911e91289b11f74"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

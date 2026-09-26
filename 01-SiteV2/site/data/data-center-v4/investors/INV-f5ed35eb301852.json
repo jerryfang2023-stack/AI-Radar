@@ -193,11 +193,37 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Emergence Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Emergence Capital 是专注企业软件与“未来工作”领域的风险投资机构，官网叙述其从早期支持 Salesforce、Veeva 等企业，现覆盖 AI 基础设施、实体世界 AI 和 AI 原生服务。官网自报超过九成早期投资获得后续融资、超过五分之一估值超过10亿美元、超过十分之一上市，并称已实现回报超过90亿美元、投资本金少于25亿美元；这些为机构自报口径，页面未标注统计日期。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "风险投资机构",
+          "source_id": "emergence_home"
+        },
+        {
+          "field": "focus",
+          "label": "关注领域",
+          "value": "企业软件、未来工作及AI基础设施、实体世界AI、AI原生服务",
+          "source_id": "emergence_home"
+        },
+        {
+          "field": "public_track_record",
+          "label": "官网公布业绩（机构自报）",
+          "value": "超过90%的早期投资获得后续融资；超过20%估值超过10亿美元；超过10%上市；已实现回报超过90亿美元、投资少于25亿美元。页面未注明统计时点。",
+          "source_id": "emergence_home"
+        },
+        {
+          "field": "selected_companies",
+          "label": "官网列举的代表性公司",
+          "value": [
+            "Salesforce",
+            "Veeva",
+            "Zoom"
+          ],
+          "source_id": "emergence_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -209,8 +235,50 @@
           "source_id": "FISRC-7f1c22fc0cc9f63f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Emergence Capital",
+          "url": "https://www.emcap.com/",
+          "source_id": "emergence_home"
+        },
+        {
+          "kind": "email",
+          "label": "官网公开项目接洽邮箱",
+          "value": "hello@emcap.com",
+          "source_id": "emergence_home"
+        },
+        {
+          "kind": "phone",
+          "label": "公开电话",
+          "value": "415-800-1077",
+          "source_id": "emergence_home"
+        },
+        {
+          "kind": "address",
+          "label": "公开办公地址",
+          "value": "Pier 5, Ste 102, San Francisco, CA 94111",
+          "source_id": "emergence_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "emergence_home",
+          "source_url": "https://www.emcap.com/",
+          "source_title": "Emergence Capital 官方网站",
+          "source_content_hash": "b24fb7f072469e60baf8bb0b31b784aaa01206b3ba18440199d054581945e7b0",
+          "quote": "Emergence官网自报早期投资后续融资、估值、上市及已实现回报数据，并公开关注领域、项目接洽邮箱、电话及地址。",
+          "quote_hash": "4e9ed2d9a118cb9dee3a8f5b8c0011d72dfbeb412ac765b8994adff3232b1b9e"
+        },
+        {
+          "source_id": "emergence_team",
+          "source_url": "https://www.emcap.com/team",
+          "source_title": "Emergence Capital 团队",
+          "source_content_hash": "354e95401230505838aa1be633a0a45caf0fdf52728d7d305b97f95f51da1f62",
+          "quote": "官网列示创始合伙人 Gordon Ritter 及投资团队成员。",
+          "quote_hash": "ff38a0733b8a4a824b0bb246dd0f8e8855bdf1444f593140261744552f2e537d"
+        },
         {
           "source_id": "FISRC-6f0f12fb121fbd88",
           "source_url": "https://techcrunch.com/2026/07/01/neocloud-together-ai-raises-800m-leaps-to-8-3b-valuation/",
@@ -228,7 +296,10 @@
           "quote_hash": "d3e1b77ed0fade26a6381708730595f6191b00a0f54c6425c255e8bbd6cb97ed"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "业绩比例、回报金额和投入本金来自机构官网宣传口径，且无公开统计基准日；不能与第三方净值或经审计数据等同。",
+      "last_verified_at": "2026-09-26"
     }
   }
 }

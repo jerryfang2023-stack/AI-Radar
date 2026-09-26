@@ -111,33 +111,51 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "徐晨 的来源线索将其与合木智能（创始人）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "投资界融资报道经搜狐转载，记载徐晨为合木智能创始人、东莞市新一代人工智能产业技术研究院创院院长，并称其长期从事智能制造和工业AI。报道未列出具体任职起止日期。",
+      "current_roles": [
+        {
+          "title": "创始人",
+          "organization": "合木智能",
+          "source_id": "sohu_hemu"
+        },
+        {
+          "title": "创院院长（报道口径）",
+          "organization": "东莞市新一代人工智能产业技术研究院",
+          "source_id": "sohu_hemu"
+        }
+      ],
       "career": [
+        {
+          "organization": "东莞市新一代人工智能产业技术研究院",
+          "title": "创院院长",
+          "period": "报道时点；任期未披露",
+          "description": "融资报道对其产业研究院职务的介绍。",
+          "source_id": "sohu_hemu"
+        },
         {
           "organization": "合木智能",
           "title": "创始人",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将徐晨与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-3c65ee6da5a2af99"
+          "period": "2026年成立后；具体任职时间未披露",
+          "description": "合木智能专注模具制造物理AI及制造语义计算。",
+          "source_id": "sohu_hemu"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
+      "experience_summary": "投资界报道表示其在智能制造和工业AI领域深耕15年以上；该年限为报道口径，未拆分具体雇主和项目。",
       "track_record": [],
       "sources": [
         {
-          "source_id": "FISRC-3c65ee6da5a2af99",
-          "source_url": "https://finance.sina.com.cn/jjxw/2026-09-03/doc-iniqpvfw6908238.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "355d3a13857ad0c5",
-          "quote": "合木智能创始人徐晨是东莞市新一代人工智能产业技术研究院的创院院长，在智能制造与工业AI领域深耕15年以上。",
-          "quote_hash": "dc5d069252c8e0eff19ce9225a0c414d50716d8a739d1e99e2e251c168791486"
+          "source_id": "sohu_hemu",
+          "source_url": "https://www.sohu.com/a/1071423885_439726",
+          "source_title": "合木智能完成种子轮千万级融资，瞄准模具制造领域物理AI研发",
+          "source_content_hash": "7d91056ee5796a50c04100b9a7d6fa77b47c4a88dc58efe8173b1a54cef33368",
+          "quote": "合木智能创始人徐晨是东莞市新一代人工智能产业技术研究院的创院院长，在智能制造与工业AI领域深耕15年以上。联合创始人邹䘵华在高端精密模具领域从业超20年。",
+          "quote_hash": "69979c56cfa6521e7e099eeca84ec0db465de524dbcdde94a376d5d48e052f2b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
     }
   },
   "relatedEntities": [],

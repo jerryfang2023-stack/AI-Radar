@@ -138,41 +138,52 @@
       }
     },
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "Christian Ferreira 的来源线索将其与Procurement Sciences（首席执行官兼创始人）关联。来源日期：2026-07-30；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "coverage_status": "researched",
+      "summary": "Christian Ferreira 是 Procurement Sciences 创始人兼 CEO。公司人物页介绍其从全栈软件工程师、解决方案架构师到业务战略总监的政府承包行业经历，并列出其军事服役与教育背景。履历内容为公司公开介绍。",
+      "current_roles": [
+        {
+          "organization": "Procurement Sciences",
+          "title": "创始人兼首席执行官",
+          "source_id": "procsciences_christian"
+        }
+      ],
       "career": [
         {
           "organization": "Procurement Sciences",
-          "title": "首席执行官兼创始人",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将Christian Ferreira与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-fa41049d7cbdf303"
+          "title": "创始人兼首席执行官",
+          "period": "公司人物页现列；任职起始时间未披露",
+          "description": "因本人政府承包项目经验而创建公司，开发面向政府承包商的 AI 平台。",
+          "source_id": "procsciences_christian"
+        },
+        {
+          "organization": "美国政府承包行业",
+          "title": "全栈软件工程师、解决方案架构师、业务战略总监",
+          "period": "公司人物页未披露",
+          "description": "曾开发政府机构关键系统、负责投标方案与合同争取，并带领跨职能团队赢得和交付合同。",
+          "source_id": "procsciences_christian"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
+      "education": [
+        {
+          "institution": "未注明院校",
+          "qualification": "创新与创业理学硕士（工程方向）、管理学学士、计算机科学副学士",
+          "source_id": "procsciences_christian"
+        }
+      ],
+      "experience_summary": "曾任美国海军陆战队中士并有海外部署经历；公司人物页列出 APMP 40 Under 40 与 AFCEA 40 Under 40 两项行业认可。以上均按公司自述记录。",
       "track_record": [],
       "sources": [
         {
-          "source_id": "FISRC-fa41049d7cbdf303",
-          "source_url": "https://finance.yahoo.com/news/procurement-sciences-closes-30-million-130000493.html",
-          "source_title": "融资披露来源",
-          "source_content_hash": "3b1619e1efabd120",
-          "quote": "Christian Ferreira, founder and CEO of Procurement Sciences",
-          "quote_hash": "06dc8a5cb995a2a98749ee7270e0eac53620557611ffd546a98102c327dc3838"
-        },
-        {
-          "source_id": "FISRC-5d2e4c7341b78ac8",
-          "source_url": "https://www.procurementsciences.com/about",
-          "source_title": "融资披露来源",
-          "source_content_hash": "0f0eb0857fae690f",
-          "quote": "Christian Ferreira CEO & Founder",
-          "quote_hash": "b49afc6ad8881de6245e7f14bf89a529c31b8def0ebcda3c3b62818dc690592f"
+          "source_id": "procsciences_christian",
+          "source_url": "https://www.procurementsciences.com/about/christian-ferreira",
+          "source_title": "Christian Ferreira — Procurement Sciences",
+          "source_content_hash": "ce1382e397f6d4714e31067832632223d4eab9ff5ea61705e5e2ab07111dde38",
+          "quote": "Christian Ferreira is the Founder and CEO of Procurement Sciences. His career spans roles as a Full Stack Software Engineer, Senior Solutions Architect, and Director of Business Strategy. He is a former U.S. Marine Corps Sergeant. His academic achievements include an MS in Innovation and Entrepreneurship with Engineering Concentration, a BS in Management, and an AS in Computer Science.",
+          "quote_hash": "392d6b920c242c6eb12a55d6a900347aae893b7cc3e8a5d18788e2494a8571c1"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
     }
   },
   "relatedEntities": [],

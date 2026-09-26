@@ -111,33 +111,52 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "葛明辉 的来源线索将其与万卷智能（联合创始人兼COO）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "葛明辉是万卷智能联合创始人兼COO，公开融资报道称其曾在一家未具名央企任职，具备十年以上产业项目管理经验。该报道未披露学历、企业名称、具体岗位或任职年份；相关空缺保留为未知。",
+      "current_roles": [
+        {
+          "title": "联合创始人、COO（投资界融资报道）",
+          "organization": "万卷智能",
+          "source_id": "geminghui_wanjuan_2026"
+        }
+      ],
       "career": [
         {
+          "organization": "未具名央企",
+          "title": "任职经历（职位未披露）",
+          "period": "具体年份未披露",
+          "description": "报道仅称其曾任职于知名央企并有十年以上产业项目管理经验。",
+          "source_id": "geminghui_wanjuan_2026"
+        },
+        {
           "organization": "万卷智能",
-          "title": "联合创始人兼COO",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-7f66bb9f079c7dc9"
+          "title": "联合创始人、COO",
+          "period": "2026年融资报道时在任",
+          "description": "投资界融资报道列其为联合创始人兼COO。",
+          "source_id": "geminghui_wanjuan_2026"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
-      "sources": [
+      "experience_summary": "其公开履历目前可确认的是央企产业项目管理经历及创业公司运营职务；学历、前雇主名称、岗位和任期尚未公开，避免基于姓名或报道泛称推断。",
+      "track_record": [
         {
-          "source_id": "FISRC-7f66bb9f079c7dc9",
-          "source_url": "https://news.pedaily.cn/202601/560484.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "31fc47b0d05d5ec396fe8f2671eab36c866f7b2e30cf0e9a60432cf5a96df191",
-          "quote": "联合创始人兼COO葛明辉曾任职于知名央企，具备10年以上产业项目管理经验。",
-          "quote_hash": "d90e80c8ffa0a5c1e8f991c4d52b8fc4cc04bd23ef893b2831676e62bb80bd60"
+          "description": "万卷智能聚焦工程师智能体，报道介绍其产品进入工程和产业客户试点；此为团队及公司的业务进展，不归因于葛明辉个人独立完成。",
+          "source_id": "geminghui_wanjuan_2026"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "目前仅找到投资界对公司融资及团队的报道，文中对葛明辉履历披露有限；无公开学历资料，未补造。",
+      "sources": [
+        {
+          "source_id": "geminghui_wanjuan_2026",
+          "source_url": "https://ishare.ifeng.com/c/s/v002GDFAXbNbe5tmjhBKr7EzuWmHQ4C4zzMsO3rq2ry-_Fb0__",
+          "source_title": "浙大博士创业，万卷智能完成1000万天使轮融资 - 凤凰网（投资界稿件）",
+          "source_content_hash": "feab7a82b4a59156d0a5b8d98b30f56948e8f66c4fdce3d7d7ac907fa4136405",
+          "quote": "投资界融资报道称万卷智能联合创始人兼COO葛明辉曾任职于知名央企，具有十年以上产业项目管理经验；前雇主名称、职务和教育背景未披露。",
+          "quote_hash": "232e0468642f40a2a23088c9f8f35d5cc2a3d44c621c999e105bbefa955bd09b"
+        }
+      ],
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

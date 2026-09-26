@@ -191,24 +191,100 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "芯能创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "芯能创投对应北京芯能创业投资有限公司，2022年成立并在中国证券投资基金业协会登记为私募股权、创业投资基金管理人。协会最近披露的管理规模区间为10亿至20亿元（信息更新于2025年12月）；管理合伙人访谈称其关注新能源、新材料、高端制造和半导体，并已有材料领域与商业航天投资。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "管理人全称",
+          "value": "北京芯能创业投资有限公司",
+          "source_id": "amac_identity"
+        },
+        {
+          "field": "registration",
+          "label": "基金管理人登记信息",
+          "value": "登记编号P1073542；登记时间2022年6月10日；成立时间2022年1月10日",
+          "source_id": "amac_registration"
+        },
+        {
+          "field": "manager_type",
+          "label": "机构类型",
+          "value": "私募股权、创业投资基金管理人；业务类型包括股权投资基金、股权FOF、创业投资基金及创业投资FOF。",
+          "source_id": "amac_business"
+        },
+        {
+          "field": "assets_under_management_range",
+          "label": "管理规模区间（协会信息更新于2025年12月30日）",
+          "value": "10亿至20亿元",
+          "source_id": "amac_scale"
+        },
+        {
+          "field": "staff",
+          "label": "协会备案员工信息（2025年12月30日更新）",
+          "value": "全职员工31人，其中29人取得基金从业资格。",
+          "source_id": "amac_staff"
+        },
+        {
+          "field": "actual_controller",
+          "label": "实际控制人及管理合伙人",
+          "value": "韩修良；协会登记页面同时列其为法定代表人、总经理和执行董事。",
+          "source_id": "amac_controller"
+        },
+        {
+          "field": "focus_sectors",
+          "label": "管理合伙人访谈所述投资方向",
+          "value": [
+            "新能源",
+            "新材料",
+            "高端制造",
+            "半导体"
+          ],
+          "source_id": "xinneng_strategy"
+        },
+        {
+          "field": "investment_method",
+          "label": "管理合伙人访谈所述新材料投资策略",
+          "value": "优先考虑平台型新材料公司，关注自主创新、技术迭代和能源换代。",
+          "source_id": "xinneng_strategy"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2022-01-10",
+          "description": "北京芯能创业投资有限公司成立。",
+          "source_id": "amac_registration"
+        },
+        {
+          "date": "2022-06-10",
+          "description": "在中国证券投资基金业协会完成管理人登记。",
+          "source_id": "amac_registration"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：灵御智能 · Pre-A轮 · 2026-08-26 · 本轮联合投资 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "管理合伙人裴婉辰在采访中称，芯能创投已在锂电、钠电、钙钛矿和第三代半导体材料等细分方向投资多家企业。",
+          "source_id": "xinneng_activity"
+        },
+        {
+          "description": "裴婉辰在采访中称，芯能创投投资了火箭发动机企业九州云箭。",
+          "source_id": "xinneng_jiuzhou"
+        },
+        {
+          "description": "融资来源记录：芯能创投出现在灵御智能Pre-A轮投资方名单中；该融资报道未披露其单笔投资金额。",
           "source_id": "FISRC-1ff3ce30945e8f13"
         },
         {
-          "description": "融资来源记录：华清未央 · Pre-A轮 · 2026-06-01 · 本轮参投 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资来源记录：芯能创投出现在华清未央Pre-A轮投资方名单中；该融资报道未披露其单笔投资金额。",
           "source_id": "FISRC-c8f7d3c7af4bc00a"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "address",
+          "label": "基金业协会登记办公地址（信息更新于2025年12月30日）",
+          "value": "北京市朝阳区建外永安东里甲3号院1号通用国际中心A座1505-2室",
+          "source_id": "amac_office"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-1ff3ce30945e8f13",
@@ -225,9 +301,93 @@
           "source_content_hash": "719dea70c671a252",
           "quote": "投资方包括安赐资本、华屹资本、盛世投资、芯能创投、洪泰基金、辛夷投资、海德资本、瀚晖资本等",
           "quote_hash": "e6f1ce4ea3834a3e001f0edae979a05a690aed6dd030ed064eee879a97c1273a"
+        },
+        {
+          "source_id": "amac_identity",
+          "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/manager/2201111928106725.html",
+          "source_title": "私募基金管理人公示 - 中国证券投资基金业协会",
+          "source_content_hash": "f634e3d986a69fb28e515d1cf4c7984fbfeb007ce1456bc1abd75cf659913395",
+          "quote": "基金管理人全称(中文)：北京芯能创业投资有限公司。",
+          "quote_hash": "63088fbe4685cf67718bec558e3c774e95fc1f2229e4814d3c60e8b70413fd51"
+        },
+        {
+          "source_id": "amac_registration",
+          "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/manager/2201111928106725.html",
+          "source_title": "私募基金管理人公示 - 中国证券投资基金业协会",
+          "source_content_hash": "f634e3d986a69fb28e515d1cf4c7984fbfeb007ce1456bc1abd75cf659913395",
+          "quote": "登记编号P1073542；登记时间2022-06-10；成立时间2022-01-10。",
+          "quote_hash": "1b7e4bef4c8b9ecd7a1f68adf8fc929bd2e330dc54be9f6b9604a05e117427da"
+        },
+        {
+          "source_id": "amac_business",
+          "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/manager/2201111928106725.html",
+          "source_title": "私募基金管理人公示 - 中国证券投资基金业协会",
+          "source_content_hash": "f634e3d986a69fb28e515d1cf4c7984fbfeb007ce1456bc1abd75cf659913395",
+          "quote": "机构类型：私募股权、创业投资基金管理人。",
+          "quote_hash": "9223e0b6efcfa2a4e0a47b1927afa8af10e1af22214e387e542b0e233bc498b7"
+        },
+        {
+          "source_id": "amac_scale",
+          "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/manager/2201111928106725.html",
+          "source_title": "私募基金管理人公示 - 中国证券投资基金业协会",
+          "source_content_hash": "f634e3d986a69fb28e515d1cf4c7984fbfeb007ce1456bc1abd75cf659913395",
+          "quote": "管理规模区间：10-20亿元。",
+          "quote_hash": "6e2b61f2aaf574f38b86184b4628e209e78a3c466a1544711daefddda831ce6f"
+        },
+        {
+          "source_id": "amac_staff",
+          "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/manager/2201111928106725.html",
+          "source_title": "私募基金管理人公示 - 中国证券投资基金业协会",
+          "source_content_hash": "f634e3d986a69fb28e515d1cf4c7984fbfeb007ce1456bc1abd75cf659913395",
+          "quote": "全职员工人数：31；取得基金从业资格人数：29。",
+          "quote_hash": "2baa0e6e12a72228283860b47586d65de4dcb3ddd6c03dd06dae018937211623"
+        },
+        {
+          "source_id": "amac_controller",
+          "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/manager/2201111928106725.html",
+          "source_title": "私募基金管理人公示 - 中国证券投资基金业协会",
+          "source_content_hash": "f634e3d986a69fb28e515d1cf4c7984fbfeb007ce1456bc1abd75cf659913395",
+          "quote": "实际控制人为韩修良；其职务为法定代表人、总经理、执行董事。",
+          "quote_hash": "b0477b001dea4fb78d7a63e2760707876fefed6b9b8aaae10e1a1877f8293383"
+        },
+        {
+          "source_id": "amac_office",
+          "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/manager/2201111928106725.html",
+          "source_title": "私募基金管理人公示 - 中国证券投资基金业协会",
+          "source_content_hash": "f634e3d986a69fb28e515d1cf4c7984fbfeb007ce1456bc1abd75cf659913395",
+          "quote": "办公地址：北京市朝阳区建外永安东里甲3号院1号通用国际中心A座1505-2室。",
+          "quote_hash": "81d61bb8794616667e65381f289497424426874bae71eb584889ad0b45e2a9af"
+        },
+        {
+          "source_id": "xinneng_strategy",
+          "source_url": "https://www.21jingji.com/article/20241025/herald/b2dc96eb66a09d80fd73bb68a4f9a418.html",
+          "source_title": "芯能创投裴婉辰：新材料细分领域众多，投资倾向于平台类创业公司",
+          "source_content_hash": "b567c7fb9c441fba7e76597145a49b3087bcafad04d1f9565f55720c626d66ad",
+          "quote": "芯能创投成立于2022年，专注于新能源、新材料、高端制造和半导体等硬科技领域的投资。",
+          "quote_hash": "84e0713274312bc43465592c84e96716604363030558444461957411ccbb7693"
+        },
+        {
+          "source_id": "xinneng_activity",
+          "source_url": "https://www.21jingji.com/article/20241025/herald/b2dc96eb66a09d80fd73bb68a4f9a418.html",
+          "source_title": "芯能创投裴婉辰：新材料细分领域众多，投资倾向于平台类创业公司",
+          "source_content_hash": "b567c7fb9c441fba7e76597145a49b3087bcafad04d1f9565f55720c626d66ad",
+          "quote": "过去两年时间里，芯能创投在新材料领域已经投资布局了多家企业，涉及锂电、钠电、钙钛矿、第三代半导体材料等多个细分赛道。",
+          "quote_hash": "0252dad6880154002feacf648d268833d274a31ebec6582de4437ef7c49d6080"
+        },
+        {
+          "source_id": "xinneng_jiuzhou",
+          "source_url": "https://www.21jingji.com/article/20241025/herald/b2dc96eb66a09d80fd73bb68a4f9a418.html",
+          "source_title": "芯能创投裴婉辰：新材料细分领域众多，投资倾向于平台类创业公司",
+          "source_content_hash": "b567c7fb9c441fba7e76597145a49b3087bcafad04d1f9565f55720c626d66ad",
+          "quote": "芯能创投近期对专注做火箭发动机的九州云箭进行了投资。",
+          "quote_hash": "10b3151bb1f76954f3c4897bf3e0190ed5c3aaf279ac400cdcae6e50c8e90f6a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "基金管理人身份、登记编号、管理规模区间、人员和登记办公地址来自基金业协会公示；规模和员工数是管理人报送数据（最新页面更新时间2025年12月30日），不代表审计确认的AUM。投资方向及九州云箭案例来自管理合伙人访谈；其他融资活动来自公开融资报道，不等于完整组合或基金回报。",
+      "last_verified_at": "2026-09-26"
     }
   }
 }

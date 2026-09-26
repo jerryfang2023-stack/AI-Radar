@@ -247,14 +247,64 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "苏创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "苏州创新投资集团有限公司（苏创投集团）是苏州市国有创新投资平台，成立于 2022 年 6 月，注册资本 180 亿元。官网介绍其管理规模超过 3,200 亿元、主体信用评级 AAA，并通过八家子公司布局母基金、产业投资、科技投资、天使投资及产业研究等业务。官网列示了集团在苏州产业创新与国有企业高质量发展方面的年度荣誉。规模和荣誉数据均为机构官网自述，未在页面逐项注明统计口径。",
+      "facts": [
+        {
+          "field": "founded_date",
+          "label": "成立日期",
+          "value": "2022-06-18",
+          "source_id": "suzhou_about"
+        },
+        {
+          "field": "registered_capital",
+          "label": "注册资本",
+          "value": "180 亿元人民币",
+          "source_id": "suzhou_about"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "官网介绍管理规模",
+          "value": "超过 3,200 亿元；机构官网未注明统计口径与截止日期",
+          "source_id": "suzhou_about"
+        },
+        {
+          "field": "credit_rating",
+          "label": "主体信用评级",
+          "value": "AAA（官网披露）",
+          "source_id": "suzhou_about"
+        },
+        {
+          "field": "subsidiaries",
+          "label": "官网列示子公司及业务平台",
+          "value": [
+            "国发创投",
+            "产投集团",
+            "市科创投",
+            "苏州天使母基金",
+            "苏州基金",
+            "市产研院",
+            "市科招中心",
+            "苏州战新基金"
+          ],
+          "source_id": "suzhou_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2022-06-18",
+          "description": "苏州创新投资集团官网记载集团成立日期。",
+          "source_id": "suzhou_about"
+        }
+      ],
       "track_record": [
+        {
+          "description": "官网列举集团及其负责人获得的年度荣誉，包含 2022、2023、2025 与 2026 年度称号；这些为机构自述的荣誉信息。",
+          "source_id": "suzhou_about"
+        },
+        {
+          "description": "集团官网介绍其负责推动苏州产业创新集群建设，并以母基金、科技投资和天使投资等平台覆盖创新资本服务。",
+          "source_id": "suzhou_about"
+        },
         {
           "description": "融资来源记录：因克斯 · B轮 · 2026-09-15 · 本轮参投 · 超3亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d0c3dca85d845330"
@@ -268,8 +318,31 @@
           "source_id": "FISRC-fdfe58e2e68c7e9e"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "苏州创新投资集团",
+          "url": "https://www.suzhoucg.com.cn/about/about01.html",
+          "source_id": "suzhou_about"
+        },
+        {
+          "kind": "address",
+          "label": "集团总部",
+          "value": "苏州市姑苏区东大街 101 号",
+          "url": "https://www.suzhoucg.com.cn/about/about01.html",
+          "source_id": "suzhou_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "suzhou_about",
+          "source_url": "https://www.suzhoucg.com.cn/about/about01.html",
+          "source_title": "苏州创新投资集团有限公司",
+          "source_content_hash": "65e2ca9d287726eb9978bb4a3a641bc9cbe4ca690a1acfccd7c41b9db9d7039d",
+          "quote": "苏州创新投资集团有限公司成立于2022年6月18日，总部位于苏州市姑苏区东大街101号，注册资本180亿元，管理规模超3200亿元，主体信用评级为AAA，旗下有国发创投、产投集团、市科创投、苏州天使母基金、苏州基金、市产研院、市科招中心、苏州战新基金8家子公司。",
+          "quote_hash": "31fed378a521f3bb5930d3562990252366298d9a51527bfe540a0e2c7841adec"
+        },
         {
           "source_id": "FISRC-d0c3dca85d845330",
           "source_url": "https://news.pedaily.cn/202609/569015.shtml",
@@ -295,7 +368,11 @@
           "quote_hash": "196c406b831d5518f67d8356458e255cad46250d147bf207e51f26e2eb2037f6"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

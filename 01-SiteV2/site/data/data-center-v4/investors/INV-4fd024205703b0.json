@@ -188,10 +188,29 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "BroadLight Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "依据机构官网的投资介绍、联系页和团队页核实；基金规模与组合统计均为机构自述，不代表投资回报。",
+      "summary": "BroadLight Capital 投资后期风险投资和成长阶段科技公司，并以其全球艺术家、运动员、创作者及娱乐行业人士网络协助被投企业扩大分发和客户触达。投资策略及组合案例按机构官网自述口径。",
+      "facts": [
+        {
+          "field": "stage",
+          "label": "投资阶段",
+          "value": "后期风险投资与成长阶段。",
+          "source_id": "broadlight_home"
+        },
+        {
+          "field": "strategy",
+          "label": "增值方式",
+          "value": "官网称利用艺术家、运动员、创作者和娱乐行业人士网络，协助组合公司获客、提升战略影响力并拓展机会。",
+          "source_id": "broadlight_home"
+        },
+        {
+          "field": "thesis",
+          "label": "投资主题",
+          "value": "高增长科技公司及现代注意力经济。",
+          "source_id": "broadlight_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -203,7 +222,14 @@
           "source_id": "FISRC-35d27946fd70aa42"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "label": "官网联系邮箱",
+          "value": "info@broadlightcapital.com",
+          "source_id": "broadlight_home"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-7c15ac15bf3d0b1a",
@@ -220,9 +246,17 @@
           "source_content_hash": "0d8d55e9f8e4182e",
           "quote": "with participation from BroadLight Capital, NextEquity, and Menlo Ventures",
           "quote_hash": "cb6eb89aab7c1200185db653dfe353094ec3e34324d608d7317f91f876adc116"
+        },
+        {
+          "source_id": "broadlight_home",
+          "source_url": "https://www.broadlightcapital.com/",
+          "source_title": "Home | BroadLight Capital",
+          "source_content_hash": "e665e60a28948738f3f43dc49c03ff56c66542219148beca037c5d52d64f43c8",
+          "quote": "BroadLight Capital invests in late-stage venture and growth-stage companies built to define what comes next.",
+          "quote_hash": "b0a323718147f869652fe15e158020519091506ab7aa44ded8df3ab63395d6a6"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

@@ -284,13 +284,55 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "伊利集团CVC健瓴资本 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "健瓴资本是伊利集团全资子公司，从事股权类私募基金投资与管理。官网资料显示其2019年成立并完成基金业协会备案，聚焦生命科学、食品科学及科技与商业模式结合的投资；规模数据为机构自述，记录中的具体基金主体仍按原始披露核对。",
+      "facts": [
+        {
+          "field": "parent_company",
+          "label": "股权关系",
+          "value": "伊利集团旗下全资子公司。",
+          "source_id": "jianling_about"
+        },
+        {
+          "field": "founded",
+          "label": "设立与备案",
+          "value": "官网称成立于2019年并在中国证券投资基金业协会完成备案。",
+          "source_id": "jianling_scale"
+        },
+        {
+          "field": "aum_self_reported",
+          "label": "资产管理规模（官网自述）",
+          "value": "超过40亿元人民币；官网未在本页说明具体统计时点或口径。",
+          "source_id": "jianling_scale"
+        },
+        {
+          "field": "fund_products",
+          "label": "基金产品",
+          "value": "官网列出健瓴风险投资基金一期、健瓴母基金、健瓴创新种子基金及美元风险投资基金。",
+          "source_id": "jianling_scale"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "科技与商业模式双驱动，聚焦生命科学和食品科学。",
+          "source_id": "jianling_strategy"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2019",
+          "description": "官网称健瓴资本于2019年成立并完成基金业协会备案。",
+          "source_id": "jianling_scale"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "官网介绍其依托伊利集团消费品和产业链资源，投资布局包括早期、成长期、并购及母基金；团队页自述成员具备十年以上股权投资或创业投资经验，未公开具名团队名单。",
       "track_record": [
+        {
+          "description": "官网自述资产管理规模超过40亿元人民币；该规模不是已实现投资回报或基金收益率。",
+          "source_id": "jianling_scale"
+        },
         {
           "description": "融资来源记录：极佳视界 · B2轮 · 2026-06-15 · B1轮投资方 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ce47b663ca256878"
@@ -304,8 +346,77 @@
           "source_id": "FISRC-4782a6093d519a4d"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "label": "投资与合作联系邮箱",
+          "value": "info@yjlcm.com",
+          "url": "https://www.yjlcm.com.cn/",
+          "source_id": "jianling_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "联系电话",
+          "value": "010-50947214",
+          "url": "https://www.yjlcm.com.cn/",
+          "source_id": "jianling_contact"
+        },
+        {
+          "kind": "address",
+          "label": "办公地址",
+          "value": "北京市朝阳区建国路81号华贸写字楼1座1402室",
+          "url": "https://www.yjlcm.com.cn/",
+          "source_id": "jianling_contact"
+        },
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "yjlcm.com.cn",
+          "url": "https://www.yjlcm.com.cn/",
+          "source_id": "jianling_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "jianling_about",
+          "source_url": "https://www.yjlcm.com.cn/",
+          "source_title": "健瓴资本",
+          "source_content_hash": "c1baa40184e83bc72444c21a8fcf2290b0fe23e90906c69ab88729f3de2d0881",
+          "quote": "健瓴资本是伊利集团旗下的全资子公司，专业从事股权类私募基金投资及管理业务。",
+          "quote_hash": "b0f224db16642e146d0c31602f3e1a4df143c0041bb9aaa5ecfacb8adcdb4b30"
+        },
+        {
+          "source_id": "jianling_scale",
+          "source_url": "https://www.yjlcm.com.cn/",
+          "source_title": "健瓴资本",
+          "source_content_hash": "c1baa40184e83bc72444c21a8fcf2290b0fe23e90906c69ab88729f3de2d0881",
+          "quote": "健瓴资本于2019成立，并在中国证券投资基金业协会完成备案；资产管理规模超40亿元人民币。",
+          "quote_hash": "061d63e754db6f22923ba5586fa29453690a3f74c534ee330f47c37c24a7d228"
+        },
+        {
+          "source_id": "jianling_strategy",
+          "source_url": "https://www.yjlcm.com.cn/",
+          "source_title": "健瓴资本",
+          "source_content_hash": "c1baa40184e83bc72444c21a8fcf2290b0fe23e90906c69ab88729f3de2d0881",
+          "quote": "专注科技+模式双驱动投资策略，聚焦生命科学和食品科学。",
+          "quote_hash": "f77ec5e9346125ca2672c3b9f1812fa50f42417cd7224ee06c41dbe35649e7c2"
+        },
+        {
+          "source_id": "jianling_team",
+          "source_url": "https://www.yjlcm.com.cn/h-col-117.html",
+          "source_title": "健瓴资本 - 投资团队",
+          "source_content_hash": "f12dbb055062acef9c9744d781e1e5a59fe861fc27fbbe211e9144538cd0f648",
+          "quote": "资深专业团队成员有着10年以上的股权投资、创业投资经验。",
+          "quote_hash": "8ee05b4a84436d4a6b9ac2465d6ecc27af7158d5d9ba1266879b1aa5610ba5df"
+        },
+        {
+          "source_id": "jianling_contact",
+          "source_url": "https://www.yjlcm.com.cn/",
+          "source_title": "健瓴资本",
+          "source_content_hash": "c1baa40184e83bc72444c21a8fcf2290b0fe23e90906c69ab88729f3de2d0881",
+          "quote": "请联系：info@yjlcm.com；电话：010-50947214。",
+          "quote_hash": "92029e18e9314d697f0c46679d0787e7d113d50c42135c0237c1fee36712a9f4"
+        },
         {
           "source_id": "FISRC-ce47b663ca256878",
           "source_url": "https://news.pedaily.cn/202606/565201.shtml",
@@ -331,7 +442,10 @@
           "quote_hash": "a9d3c79b14298f438828a94cf2eb3088528d6b88d628bc4f4c9fd7f3a826694e"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

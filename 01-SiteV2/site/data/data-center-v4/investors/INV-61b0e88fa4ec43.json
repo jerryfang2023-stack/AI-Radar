@@ -137,12 +137,30 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "468 Capital 当前按“投资组织”收录。最新融资披露记录日期为 2025-10-31；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "468 Capital 是一家通过德国基金管理主体运营的投资机构。其公开基金关键信息文件称，相关基金主要投资西欧和美国的创新型成长企业，管理人为 468 Management GmbH，并注明其在德国 BaFin 登记。官网披露办公室位于柏林、马德里和旧金山，并公开通用联系邮箱。引用的基金文件日期较早，适用范围仅限文件所述产品。",
+      "facts": [
+        {
+          "field": "manager",
+          "label": "基金管理人（所引产品文件）",
+          "value": "468 Management GmbH",
+          "source_id": "468_fund_kid"
+        },
+        {
+          "field": "regulatory_status",
+          "label": "产品文件披露登记信息",
+          "value": "文件称 468 Management GmbH 在德国 BaFin 登记；此项限于所引文件披露时点。",
+          "source_id": "468_fund_kid"
+        },
+        {
+          "field": "geographic_focus",
+          "label": "所引基金投资地域",
+          "value": [
+            "西欧",
+            "美国"
+          ],
+          "source_id": "468_fund_kid"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +168,46 @@
           "source_id": "FISRC-1e12e93a65d54b9a"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "label": "官网公开联系邮箱",
+          "value": "contact@468cap.com",
+          "url": "https://468cap.com/all_portfolio/the-portfolio-collective/",
+          "source_id": "468_portfolio_contact"
+        },
+        {
+          "kind": "address",
+          "label": "官网列示办公室",
+          "value": "Berlin; Madrid; San Francisco",
+          "url": "https://468cap.com/all_portfolio/the-portfolio-collective/",
+          "source_id": "468_portfolio_contact"
+        },
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "468 Capital",
+          "url": "https://468cap.com/",
+          "source_id": "468_portfolio_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "468_fund_kid",
+          "source_url": "https://468cap.com/wp-content/uploads/2026/02/2020-03-27-468_PRIIPS-BIB-en.pdf",
+          "source_title": "468 Capital Fund Key Information Document",
+          "source_content_hash": "a6bcfe3a200340ffe37b49245a68dafd16793a42f6cbe0165c491a35dd9c68c1",
+          "quote": "The fund invests in portfolio companies mainly from Western Europe and the US. The manager, 468 Management GmbH, is registered with the German Federal Financial Supervisory Authority (BaFin).",
+          "quote_hash": "034c8c189bd644957d3b91087875a96eeaccecc285e09b08b55610f7e3b20ec0"
+        },
+        {
+          "source_id": "468_portfolio_contact",
+          "source_url": "https://468cap.com/all_portfolio/the-portfolio-collective/",
+          "source_title": "The Portfolio Collective | 468 Capital",
+          "source_content_hash": "134cccdcf6b775e1872b10e143785d198ef7ebbda4fa6c7882379d92aabb4647",
+          "quote": "468 Capital publishes the contact email contact@468cap.com and lists offices in Berlin, Madrid and San Francisco.",
+          "quote_hash": "da3266c7b7833b6ea913f9ea57bf8a3155b0ca6cbdddaf360b6c8d1ea57ae380"
+        },
         {
           "source_id": "FISRC-1e12e93a65d54b9a",
           "source_url": "https://techcrunch.com/2025/10/31/yc-alum-adam-raises-4-1m-to-turn-viral-text-to-3d-tool-into-ai-copilot/",
@@ -161,7 +217,11 @@
           "quote_hash": "f0536b9c961091ce95590d648c6a2c990af8301a77fa34b3e75aa4ad11db85a9"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

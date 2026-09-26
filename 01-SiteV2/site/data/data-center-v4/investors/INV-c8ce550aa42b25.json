@@ -180,11 +180,68 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "智谱AI 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "依据智谱官网核实公司背景、发展历程及公开联系方式。融资库中的参投披露不单独证明由独立风险投资基金完成。",
+      "summary": "智谱（Z.AI，北京智谱华章科技有限公司）是一家源自清华大学计算机系知识工程实验室科研成果转化的人工智能公司，2019 年成立，专注于大模型与通用人工智能研发。官网展示 GLM 系列、模型框架及 AI 产品发展历程，并公开商务、媒体和投资者关系联系方式。其作为融资披露中的投资方不应与任何未核实的独立基金主体混同。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2019 年",
+          "source_id": "zhipu_official_about"
+        },
+        {
+          "field": "origin",
+          "label": "技术来源",
+          "value": "清华大学计算机系知识工程实验室（KEG）科研成果转化",
+          "source_id": "zhipu_official_about"
+        },
+        {
+          "field": "business",
+          "label": "主营方向",
+          "value": "大模型研发、预训练框架与国产硬件适配",
+          "source_id": "zhipu_official_about"
+        },
+        {
+          "field": "products",
+          "label": "公开产品与模型",
+          "value": [
+            "GLM 预训练框架",
+            "GLM-130B",
+            "ChatGLM",
+            "GLM-4",
+            "AutoGLM"
+          ],
+          "source_id": "zhipu_official_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2019",
+          "description": "智谱成立，源自清华大学计算机系知识工程实验室。",
+          "source_id": "zhipu_official_about"
+        },
+        {
+          "date": "2021-03",
+          "description": "发布自研预训练框架 GLM。",
+          "source_id": "zhipu_official_about"
+        },
+        {
+          "date": "2022-09",
+          "description": "发布 GLM-130B。",
+          "source_id": "zhipu_official_about"
+        },
+        {
+          "date": "2023-03",
+          "description": "发布 ChatGLM。",
+          "source_id": "zhipu_official_about"
+        },
+        {
+          "date": "2024-01",
+          "description": "发布 GLM-4。",
+          "source_id": "zhipu_official_about"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：硅基流动 · B轮 · 2026-06-16 · 天使+轮参投方 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -195,7 +252,45 @@
           "source_id": "FISRC-67d072b1aca37b5d"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "智谱 Z.AI",
+          "url": "https://www.zhipuai.cn/zh/about",
+          "source_id": "zhipu_official_about"
+        },
+        {
+          "kind": "phone",
+          "label": "官网联系电话",
+          "value": "400-6883-991",
+          "source_id": "zhipu_official_about"
+        },
+        {
+          "kind": "email",
+          "label": "商务合作",
+          "value": "service@zhipuai.cn",
+          "source_id": "zhipu_official_about"
+        },
+        {
+          "kind": "email",
+          "label": "市场公关",
+          "value": "pr@aminer.cn",
+          "source_id": "zhipu_official_about"
+        },
+        {
+          "kind": "email",
+          "label": "投资者关系",
+          "value": "ir@aminer.cn",
+          "source_id": "zhipu_official_about"
+        },
+        {
+          "kind": "address",
+          "label": "官网公开联系地址",
+          "value": "北京市海淀区中关村东路 1 号院 9 号楼 10 层",
+          "source_id": "zhipu_official_about"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-c1c9258fc2a6aa50",
@@ -212,9 +307,17 @@
           "source_content_hash": "56a87e89ab6a1ab2",
           "quote": "with support from major investors, including Chinese tech giant Baidu, Zhipu AI, and Sequoia China",
           "quote_hash": "5838c5af42c09dfd74a2b6534fd65b82678314880b4881423006371a77cb44bf"
+        },
+        {
+          "source_id": "zhipu_official_about",
+          "source_url": "https://www.zhipuai.cn/zh/about",
+          "source_title": "关于智谱 | Z.ai",
+          "source_content_hash": "7705abf617c31445594bc8859c7cf09689971a28b2777d789201f357b9b053a8",
+          "quote": "智谱（Z.AI）成立于 2019 年，由清华大学计算机系知识工程实验室（KEG）技术成果转化而来，具备从底层算法、预训练框架到国产硬件适配的大模型全链路自主研发能力。",
+          "quote_hash": "6538815583647a78ae3a618fb5cda08de2e95b3555e614a58aa5f2fa86269235"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

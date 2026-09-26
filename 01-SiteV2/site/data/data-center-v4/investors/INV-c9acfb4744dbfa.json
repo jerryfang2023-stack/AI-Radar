@@ -278,29 +278,142 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Battery Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Battery Ventures 是一家自 1983 年起全球投资科技公司的投资机构，投资阶段覆盖初创、成长和收购，领域包括应用软件、基础设施软件、消费、工业科技与生命科学工具。官网称其目前投资第十五支旗舰基金 Battery Ventures XV，规模为 32.5 亿美元；投资组合页面列示历史投资超过 450 家公司。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "1983",
+          "source_id": "battery_home"
+        },
+        {
+          "field": "investment_stages",
+          "label": "官网披露投资阶段",
+          "value": [
+            "初创期",
+            "成长期",
+            "收购"
+          ],
+          "source_id": "battery_company"
+        },
+        {
+          "field": "sectors",
+          "label": "官网披露领域",
+          "value": [
+            "应用软件",
+            "基础设施软件",
+            "消费",
+            "工业科技与生命科学工具"
+          ],
+          "source_id": "battery_home"
+        },
+        {
+          "field": "current_fund",
+          "label": "当前旗舰基金",
+          "value": "Battery Ventures XV，32.5 亿美元；官网当前披露",
+          "source_id": "battery_home"
+        },
+        {
+          "field": "portfolio_count",
+          "label": "历史投资组合规模",
+          "value": "超过 450 家公司；官网未给出统计截至日期",
+          "source_id": "battery_company"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1983",
+          "description": "官网记载 Battery Ventures 自 1983 年起投资科技公司。",
+          "source_id": "battery_home"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：AegisAI · A轮 · 2026-07-23 · 本轮领投 · $36 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-7a2e33bd2177a4c7"
+          "description": "官网公司目录称 Battery 在四十余年历史中投资超过 450 家公司；该数字为机构自述的历史累计值。",
+          "source_id": "battery_company"
+        },
+        {
+          "description": "官网列举投资范围包括应用软件、基础设施软件、消费、工业科技与生命科学工具，并覆盖初创、成长及收购阶段。",
+          "source_id": "battery_company"
         },
         {
           "description": "融资来源记录：AegisAI · A轮 · 2026-07-23 · 本轮领投 · $36 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-4b3af8138bc7fb99"
+          "source_id": "FISRC-7a2e33bd2177a4c7"
         },
         {
           "description": "融资来源记录：SambaNova Systems · F轮 · 2026-07-08 · 本轮参投（新进或既有） · $1 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-dbf8259066547c8e"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Battery Ventures",
+          "url": "https://www.battery.com/",
+          "source_id": "battery_home"
+        },
+        {
+          "kind": "address",
+          "label": "波士顿办公室",
+          "value": "One Marina Park Drive, Suite 1100, Boston, MA 02210",
+          "url": "https://www.battery.com/contact/",
+          "source_id": "battery_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "波士顿办公室电话",
+          "value": "+1 617-948-3600",
+          "url": "https://www.battery.com/contact/",
+          "source_id": "battery_contact"
+        },
+        {
+          "kind": "address",
+          "label": "旧金山办公室",
+          "value": "140 New Montgomery Street, Suite 1200, San Francisco, CA 94105",
+          "url": "https://www.battery.com/contact/",
+          "source_id": "battery_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "旧金山办公室电话",
+          "value": "+1 415-426-5900",
+          "url": "https://www.battery.com/contact/",
+          "source_id": "battery_contact"
+        },
+        {
+          "kind": "email",
+          "label": "合规联系（非融资申请渠道）",
+          "value": "compliance@battery.com",
+          "url": "https://www.battery.com/company/",
+          "source_id": "battery_company"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "battery_home",
+          "source_url": "https://www.battery.com/",
+          "source_title": "Battery Ventures",
+          "source_content_hash": "7c5f4799a5a9cedb93e7a936267ff38af82c058122bc3f6a154002b9e1f98bfc",
+          "quote": "Investing in technology companies globally since 1983. We are currently investing from our 15th flagship fund, Battery Ventures XV, which is capitalized at $3.25 billion.",
+          "quote_hash": "6b8c3ff426970577e74fab79676ec6bc0b2c9be8c6747ee950efbffdcb509abd"
+        },
+        {
+          "source_id": "battery_company",
+          "source_url": "https://www.battery.com/company/",
+          "source_title": "Companies - Battery Ventures",
+          "source_content_hash": "fd68f87dcacdc0c05f33c20848afffa839bd295f25169b02448040571de28a43",
+          "quote": "Battery has invested in more than 450 companies over our 40-year history. Sectors: Application Software, Infrastructure Software, Consumer, Industrial Tech + Life Science Tools. Stages: Early, Growth, Buyout.",
+          "quote_hash": "bffb619a6a11c75c8ddb05f0492adea2d91c26147d182abf96b1b797b3979d68"
+        },
+        {
+          "source_id": "battery_contact",
+          "source_url": "https://www.battery.com/contact/",
+          "source_title": "Contact - Battery Ventures",
+          "source_content_hash": "62f89013a02cfdedbeb7ae1c19d0c52240ecba452254aeb08733614e466c6431",
+          "quote": "Boston: One Marina Park Drive, Suite 1100, Boston, MA 02210; p: (617) 948-3600. San Francisco: 140 New Montgomery Street, Suite 1200, San Francisco, CA 94105; p: (415) 426-5900.",
+          "quote_hash": "abc8cfd33806d0c91159718c14f7544ac05f817502f2f099f26552079ec3f602"
+        },
         {
           "source_id": "FISRC-7a2e33bd2177a4c7",
           "source_url": "https://techcrunch.com/2026/07/23/aegisai-founded-by-former-google-security-execs-lands-36m-to-stop-ai-driven-spear-phishing/",
@@ -326,7 +439,11 @@
           "quote_hash": "607ccf988c140876e26b089c35fd3bdee680a6456f31ba9780aa4f36f6557598"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

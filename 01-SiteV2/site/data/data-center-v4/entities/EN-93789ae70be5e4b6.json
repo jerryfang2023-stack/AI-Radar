@@ -111,33 +111,71 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "陈曦 的来源线索将其与天机（法定代表人）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "陈曦是天机智能董事长及经营负责人，公开报道显示其2018年前后接手长盈精密体系内的自动化业务并推动其转向机器人核心部件与具身智能。长盈精密公告披露其为创始人陈奇星之女，并记载其英国约克大学数学学士及剑桥大学相关硕士教育背景；近年媒体报道称其曾从事投资相关工作并负责公司战略转型。",
+      "current_roles": [
+        {
+          "title": "董事长（2026年媒体报道）",
+          "organization": "天机智能",
+          "source_id": "chenxi_tianji_eastmoney"
+        }
+      ],
       "career": [
         {
-          "organization": "天机",
-          "title": "法定代表人",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-7ef228d0192ff7f5"
+          "organization": "国信证券、安邦资产",
+          "title": "投资相关工作（媒体报道）",
+          "period": "回国后、2012年进入长盈精密董事会前；具体任期未由雇主确认",
+          "description": "媒体报道其曾在两家机构从事投资相关工作，未提供正式职位名称。",
+          "source_id": "chenxi_tianji_eastmoney"
+        },
+        {
+          "organization": "天机智能/长盈精密相关业务",
+          "title": "董事会成员、业务转型负责人（历史及媒体所述）",
+          "period": "2012年进入长盈精密董事会；2018年起报道其接管自动化业务",
+          "description": "上市公司公告可确认董事会/股权相关信息；业务接管及战略转型细节来自媒体报道。",
+          "source_id": "chenxi_changying_filing"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "英国约克大学",
+          "qualification": "数学学士",
+          "source_id": "chenxi_changying_filing"
+        },
+        {
+          "institution": "剑桥大学",
+          "qualification": "房地产金融硕士",
+          "source_id": "chenxi_changying_filing"
+        }
+      ],
+      "experience_summary": "履历从金融投资转向制造业及机器人产业经营，推动公司从内部自动化部门发展为独立融资和运营的机器人业务。接管年份与转型过程按媒体报道呈现，未扩写未公开职务。",
+      "track_record": [
+        {
+          "description": "2026年媒体报道天机智能开展力控机器人及人形机器人相关业务并完成多轮融资；订单和交付数字为报道口径，不将其视作个人独立业绩。",
+          "source_id": "chenxi_tianji_eastmoney"
+        }
+      ],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "教育及家族/上市公司关系依据长盈精密公告；现任企业身份与转型经历来自2026年财经媒体报道。早期雇主和岗位细节尚无雇主官方履历核实。",
       "sources": [
         {
-          "source_id": "FISRC-7ef228d0192ff7f5",
-          "source_url": "https://pitchhub.36kr.com/project/1818784826380416",
-          "source_title": "融资披露来源",
-          "source_content_hash": "692147b904abe49f89b7b9d72993fc70d590a679370f8a0b9f3242611436e80d",
-          "quote": "法定代表人 陈曦",
-          "quote_hash": "54b1077df24a304bf077b3b695d54f8e14a82b52ace328fb313aa6f10283c110"
+          "source_id": "chenxi_changying_filing",
+          "source_url": "https://file.finance.sina.com.cn/211.154.219.97%3A9494/MRGG/CNSESZ_STOCK/2023/2023-12/2023-12-19/9719081.PDF",
+          "source_title": "长盈精密公告附件：陈曦个人简历及关联关系说明",
+          "source_content_hash": "15e3d130c8cb3da0b8de46ea6b88d7d392e0c817ce8c7bcc53435c61a677da5c",
+          "quote": "长盈精密公告附件记载陈曦毕业于英国约克大学数学系、剑桥大学相关硕士项目，并说明她与公司董事长、实际控制人陈奇星的亲属关系及2012年进入公司董事会。",
+          "quote_hash": "9b7b05a96be2f1c39f25a2eacc434217e9b86115dad446d549b9b901c2cae780"
+        },
+        {
+          "source_id": "chenxi_tianji_eastmoney",
+          "source_url": "https://caifuhao.eastmoney.com/news/20260909175444489899740",
+          "source_title": "80后果链创二代，干出百亿独角兽，蚂蚁、美团抢着投 - 东方财富号",
+          "source_content_hash": "a0e55447933d07300372f792212fdf1a7b48a5a9cfcc9b807e8300600cbbb6b8",
+          "quote": "财经媒体报道将陈曦称为天机智能掌舵人，称其2018年接手长盈精密自动化事业部并推动公司转向机器人业务；报道中的现职和经营数据按媒体口径呈现。",
+          "quote_hash": "e5b4f9e7adf36482b726edb8a12b783e77871fa6afd5f77f84142cc9c7983375"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

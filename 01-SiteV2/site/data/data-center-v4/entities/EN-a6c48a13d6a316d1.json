@@ -111,33 +111,70 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "于超 的来源线索将其与正行创新（联合发起人）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "于超是清华大学深圳国际研究生院具身决策智能实验室助理教授（特聘研究员）、JCES 主任及正行创新联合发起人，研究方向涉及强化学习和具身决策智能。现有资料为行业专访而非学校或公司官方个人主页，任职起始日期未披露。",
+      "current_roles": [
+        {
+          "title": "正行创新联合发起人",
+          "organization": "正行创新（Striding AI）",
+          "source_id": "huxiu_yuchao_profile"
+        },
+        {
+          "title": "清华大学深圳国际研究生院助理教授（特聘研究员）",
+          "organization": "清华大学深圳国际研究生院",
+          "source_id": "huxiu_yuchao_profile"
+        }
+      ],
       "career": [
         {
-          "organization": "正行创新",
+          "organization": "正行创新（Striding AI）",
           "title": "联合发起人",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-7896c13384a2de29"
+          "period": "报道发布时披露；任职起始时间未披露",
+          "description": "行业专访将于超列为正行创新联合发起人，研究方向包括强化学习与具身决策智能。",
+          "source_id": "huxiu_yuchao_profile"
+        },
+        {
+          "organization": "清华大学深圳国际研究生院",
+          "title": "助理教授（特聘研究员）、EDI Lab 成员",
+          "period": "报道发布时披露；任职起始时间未披露",
+          "description": "行业专访称其在具身决策智能实验室任助理教授（特聘研究员），并担任清华大学深圳国际研究生院与智元联合研究中心主任。",
+          "source_id": "huxiu_yuchao_profile"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "清华大学电子工程系",
+          "qualification": "博士（行业专访报道）",
+          "source_id": "huxiu_yuchao_profile"
+        }
+      ],
+      "experience_summary": "职业及教育信息依据虎嗅刊载的智源社区专访，属于采访来源而非学校或企业一手个人档案；任期未披露。",
+      "track_record": [
+        {
+          "description": "该专访报道其以第一作者或通讯作者发表论文 50 余篇，Google Scholar 引用逾 7,000 次，并介绍其 MAPPO 与 RLinf 相关工作；数据为专访发表时的公开口径。",
+          "source_id": "huxiu_yuchao_profile"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-7896c13384a2de29",
-          "source_url": "https://news.pedaily.cn/202606/565442.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "9d83916bd8fd460c",
-          "quote": "联合发起人于超博士长期深耕强化学习与机器人研究",
-          "quote_hash": "834a8fd08f2018b3c80b2b6b529682519078aad4390c3f695f361bc393b397af"
+          "source_id": "roboradar_yuchao",
+          "source_url": "https://theroboradar.com/people/yu-chao-2",
+          "source_title": "于超 · 联合发起人 · RoboRadar",
+          "source_content_hash": "92a1c70aafdb17c10b309a4a242f14ad3e642990800b2b9b9530a2e10f3bc52d",
+          "quote": "于超，正行创新联合发起人；人物档案列其为清华大学青年学者、博士学术带头人。",
+          "quote_hash": "195f748161e64af123d45de608480828a978b0f705323e3ddb42d09d4a98fe96"
+        },
+        {
+          "source_id": "huxiu_yuchao_profile",
+          "source_url": "https://www.huxiu.com/article/4880759.html?type=text",
+          "source_title": "正行创新、清华大学深圳国际研究生院 | 公开团队/人物资料",
+          "source_content_hash": "9db9b5ed5308172102acbb937a77ad51f37c0cbec47587fde74d75cb257f52d2",
+          "quote": "于超，清华大学电子工程系博士，现任清华大学深圳国际研究生院具身决策智能实验室（EDI Lab）助理教授（特聘研究员），并担任 JCES 主任；同时是正行创新联合发起人。",
+          "quote_hash": "243925c36f217f5bca74591df8af7b9522fe9a3732e2c861c8e5a59f7dd48b69"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "职业及教育信息依据虎嗅刊载的智源社区专访，属于采访来源而非学校或企业一手个人档案；任期未披露。"
     }
   },
   "relatedEntities": [],

@@ -256,14 +256,50 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "DST Global Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "DST Global 是专注互联网企业的投资机构。其官网称创办人为 Yuri Milner，联合创办人为 Saurabh Gupta、John Lindfors、Rahul Mehta 和 Tom Stafford；官网未披露基金规模或完整投资组合。DST Global 声明不面向零售投资者募资，基金注册办公地在开曼群岛。不要将同名的 DST Global Partners 或其他金融服务机构自动合并为同一实体。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网定位",
+          "value": "互联网投资机构；官网未列明细分阶段或地区策略",
+          "source_id": "dst_global_home"
+        },
+        {
+          "field": "founder",
+          "label": "创办人",
+          "value": "Yuri Milner",
+          "source_id": "dst_global_home"
+        },
+        {
+          "field": "cofounders",
+          "label": "联合创办人",
+          "value": [
+            "Saurabh Gupta",
+            "John Lindfors",
+            "Rahul Mehta",
+            "Tom Stafford"
+          ],
+          "source_id": "dst_global_home"
+        },
+        {
+          "field": "fund_domicile",
+          "label": "基金注册办公地",
+          "value": "Cayman Islands（官网表述）",
+          "source_id": "dst_global_home"
+        },
+        {
+          "field": "investor_eligibility",
+          "label": "零售投资者",
+          "value": "官网声明不招揽或接受零售投资者",
+          "source_id": "dst_global_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官网称其投资包含若干高速成长的互联网公司，但未在该页面列出完整组合或业绩数据。",
+          "source_id": "dst_global_home"
+        },
         {
           "description": "融资来源记录：Gradium · 种子轮 · 2026-07-09 · 种子轮参投（2025年12月首次披露） · $100 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9af7e6a4d7b3d5e7"
@@ -277,8 +313,35 @@
           "source_id": "FISRC-4f876f1107004ec7"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构资料来自其官方网站；官网信息较精简，未披露具体策略、基金规模、项目申请流程及完整组合，未据外部同名机构资料扩写。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "DST Global 官方网站",
+          "value": "DST Global",
+          "url": "https://dst-global.com/",
+          "source_id": "dst_global_home"
+        },
+        {
+          "kind": "email",
+          "label": "官网一般咨询邮箱（非公开投资申请渠道）",
+          "value": "info@dst-global.com",
+          "url": "https://dst-global.com/",
+          "source_id": "dst_global_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "dst_global_home",
+          "source_url": "https://dst-global.com/",
+          "source_title": "DST Global",
+          "source_content_hash": "f7d5a62383334954c9f304032f4541c44dd44e65b328eb7b8e75b6f0fa744a39",
+          "quote": "DST Global is one of the leading Internet investment firms globally. Its founder is Yuri Milner and its co-founders are Saurabh Gupta, John Lindfors, Rahul Mehta and Tom Stafford. DST Global does not solicit or accept retail investors. The registered office of the DST Global funds is in the Cayman Islands.",
+          "quote_hash": "745d3f816774810fe6f512a6ba9045f7a0f1e6ab7904cae91c6ff647c8349075"
+        },
         {
           "source_id": "FISRC-9af7e6a4d7b3d5e7",
           "source_url": "https://techcrunch.com/2026/07/09/paris-based-ai-voice-startup-gradium-raises-100m-seed-backed-by-nvidia",
@@ -304,7 +367,7 @@
           "quote_hash": "67122bc29299535c524ac600e2d6f781d2c4206148c3058e7f3a209c5466aaaa"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

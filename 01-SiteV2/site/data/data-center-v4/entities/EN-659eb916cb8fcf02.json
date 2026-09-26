@@ -111,33 +111,71 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "王云鹤 的来源线索将其与基元律动（首席执行官）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "王云鹤是上海基元律动创始人兼 CEO。界面新闻 2026 年 9 月报道确认其现任职务，并称其曾任华为诺亚方舟实验室主任、盘古大模型负责人。IT之家报道其本科就读西安电子科技大学数学与应用数学专业、2018 年获北京大学智能科学系博士学位，2017 年进入华为实习并于 2018 年正式入职；具体岗位升迁与项目贡献以报道为依据，未据此推断个人独占团队成果。",
+      "current_roles": [
+        {
+          "title": "创始人兼 CEO",
+          "organization": "上海基元律动科技有限公司",
+          "source_id": "wangyunhe_jm_202609"
+        }
+      ],
       "career": [
         {
-          "organization": "基元律动",
-          "title": "首席执行官",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-f520919b3b468802"
+          "organization": "华为诺亚方舟实验室",
+          "title": "主任；盘古大模型负责人（历史任职）",
+          "period": "截至 2026 年离职前；媒体报道提及 2025 年 3 月接任",
+          "description": "IT之家报道其 2017 年以实习生身份进入实验室、2018 年正式入职，后曾任算法应用部部长及实验室主任。岗位时间为媒体资料，华为官方履历尚未找到。",
+          "source_id": "wangyunhe_ithome_202603"
+        },
+        {
+          "organization": "上海基元律动科技有限公司",
+          "title": "创始人兼 CEO",
+          "period": "2026年至今（截至 2026-09 报道）",
+          "description": "界面新闻 2026 年 9 月报道其以创始人兼 CEO 身份出席公司战略合作签约。",
+          "source_id": "wangyunhe_jm_202609"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "西安电子科技大学",
+          "qualification": "数学与应用数学专业本科（媒体报道）",
+          "source_id": "wangyunhe_ithome_202603"
+        },
+        {
+          "institution": "北京大学智能科学系",
+          "qualification": "博士，2018 年毕业（媒体报道）",
+          "source_id": "wangyunhe_ithome_202603"
+        }
+      ],
+      "experience_summary": "经历涵盖计算机视觉、深度学习与模型压缩研究，以及华为 AI 研究团队和大模型项目管理；2026 年创办基元律动。学历和早期任职来自媒体报道，现任创业公司职位由 2026 年 9 月报道确认。",
+      "track_record": [
+        {
+          "description": "参与的 GhostNet 轻量级神经网络研究发表于 CVPR 2020；论文成果属于作者团队合作，不单独归功于个人。",
+          "source_id": "wangyunhe_ithome_202603"
+        }
+      ],
+      "coverage_status": "researched",
+      "identity_status": "verified",
+      "coverage_note": "现任创业职位由 2026 年 9 月报道确认；教育和华为任职资料由 IT之家报道，未找到华为或学校发布的个人官方履历。",
       "sources": [
         {
-          "source_id": "FISRC-f520919b3b468802",
-          "source_url": "https://www.itbear.com.cn/html/2026-08/1523509.html",
-          "source_title": "融资披露来源",
-          "source_content_hash": "18a9b52b0a810ded43ff3efaae2058ff201f4570ea2c0fcc4a1957035e64817e",
-          "quote": "公司CEO王云鹤曾担任前华为诺亚方舟实验室主任、盘古大模型负责人",
-          "quote_hash": "2ed6324655ff98ddbeba82f961de75d168b632cb354fb46bf27e52109931964f"
+          "source_id": "wangyunhe_jm_202609",
+          "source_url": "https://www.jiemian.com/article/15103501.html",
+          "source_title": "无问芯穹与基元律动达成战略合作，以Agentic Infra加速企业级Agent规模化落地|界面新闻",
+          "source_content_hash": "2f038b5eabfbe47c90903cc607d8c14893dd13646b7878805d78cdad59061257",
+          "quote": "界面新闻报道，基元律动创始人兼CEO王云鹤出席签约。",
+          "quote_hash": "e71964a058f2c0856fd99813a6721ff5a55f41358a29a111440f3ede7324ead7"
+        },
+        {
+          "source_id": "wangyunhe_ithome_202603",
+          "source_url": "https://www.ithome.com/0/933/594.htm",
+          "source_title": "华为诺亚方舟实验室主任、盘古大模型负责人王云鹤宣布离职 - IT之家",
+          "source_content_hash": "b6dd2c874d62b0997a281146de22f4853c2bbc9b153e9978fc83cc0aecf63a8d",
+          "quote": "本科就读于西安电子科技大学数学与应用数学专业，2018年博士毕业于北京大学智能科学系。",
+          "quote_hash": "54ee6675115ef8777fb6a4fa31414acc917db7cb7606e1aec9e414ee297bfc0b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

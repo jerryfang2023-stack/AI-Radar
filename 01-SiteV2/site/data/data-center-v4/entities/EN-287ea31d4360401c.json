@@ -111,33 +111,70 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "韩涵 的来源线索将其与中数睿智（创始人、董事长）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "韩涵是中数睿智创始人、董事长，长期从事大数据、人工智能与企业级智能体产业化。媒体专访披露其拥有清华大学电子工程系博士学位、曾为哥伦比亚大学高级访问学者，并于2020年创立中数睿智。",
+      "current_roles": [
+        {
+          "title": "董事长",
+          "organization": "北京中数睿智科技有限公司",
+          "source_id": "zhongshu_about"
+        }
+      ],
       "career": [
         {
-          "organization": "中数睿智",
-          "title": "创始人、董事长",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将韩涵与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-a57106724774253f"
+          "organization": "中国信息通信研究院",
+          "title": "研究员，后任研究部主任",
+          "period": "2012年博士毕业后至2020年创业前；报道未列具体离任日期",
+          "description": "公开专访称其从研究员成长为研究部主任，并参与大数据、人工智能政策研究。",
+          "source_id": "hanhan_profile"
+        },
+        {
+          "organization": "北京中数睿智科技有限公司",
+          "title": "创始人；现任董事长",
+          "period": "2020年创立；董事长身份见2026年公司官网",
+          "description": "创办面向企业级AI与智能体应用的科技公司。",
+          "source_id": "hanhan_profile"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "清华大学电子工程系",
+          "qualification": "工学博士",
+          "source_id": "hanhan_profile"
+        },
+        {
+          "institution": "哥伦比亚大学",
+          "qualification": "高级访问学者（非学位经历）",
+          "source_id": "hanhan_profile"
+        }
+      ],
+      "experience_summary": "履历包括中国信息通信研究院的研究与政策工作，以及企业级AI创业；本档案按公开报道和公司官网披露记录，未将中数睿智的公司成果全部归于个人。",
+      "track_record": [
+        {
+          "description": "2026年公司官网将韩涵列为董事长；其公开专访称公司聚焦企业级AI智能体基础设施。公司业绩数字未作为个人业绩收录。",
+          "source_id": "zhongshu_about"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-a57106724774253f",
-          "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-27/doc-inhvwwmk9150394.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "9491841eabf55f1c",
-          "quote": "中数睿智创始人、董事长韩涵向投资界聊起。",
-          "quote_hash": "093d35284e0adcc7a3dee7071b2473429cb45c68680a530ba0c317e40ed9abf1"
+          "source_id": "zhongshu_about",
+          "source_url": "https://www.zhongshuruizhi.com/gywm",
+          "source_title": "中数睿智官网：关于我们",
+          "source_content_hash": "7c9e671295e50afade77659b1bb352219c569921721d604322d0db2eac289a6a",
+          "quote": "中数睿智官网新闻介绍韩涵为公司董事长，并公布公司合作咨询与产品试用联系方式。",
+          "quote_hash": "e22f7f49d6e415e88b9c4cf570d531be8897860094cda3007593d61b75ab1c89"
+        },
+        {
+          "source_id": "hanhan_profile",
+          "source_url": "https://news.pedaily.cn/202604/563197.shtml",
+          "source_title": "清华女博士带队，中数睿智又融资数亿｜投资界",
+          "source_content_hash": "28da5d67be4b3c560630bb6be4cc7524a7a7f5ae74a48836a78770dd540255a1",
+          "quote": "韩涵是清华大学电子工程系博士、哥伦比亚大学高级访问学者；2012年博士毕业后进入中国信息通信研究院，从研究员成长为研究部主任，并于2020年4月创立中数睿智。",
+          "quote_hash": "2150e7e876d31b81c02d9a44bd4cf746fb0226f170ba577ec551572714473280"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "职务由公司官网核验；教育及历任工作信息来自公开媒体专访，任职日期只记录来源支持的时间范围。"
     }
   },
   "relatedEntities": [],

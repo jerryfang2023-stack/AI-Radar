@@ -111,33 +111,58 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "张靖 的来源线索将其与欧拉万象（联合创始人）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "张靖是欧拉万象联合创始人。公开公司融资报道记载其毕业于清华大学，曾在Amazon Web Services担任产品经理，参与构建面向客服中心的Amazon Connect服务；具体学位专业和任职时间未公开。",
+      "current_roles": [
+        {
+          "title": "联合创始人",
+          "organization": "欧拉万象",
+          "source_id": "zhangjing_penghoo"
+        }
+      ],
       "career": [
+        {
+          "organization": "Amazon Web Services",
+          "title": "产品经理",
+          "period": "任职起止时间未披露",
+          "description": "公开报道称其参与打造Amazon Connect客服中心软件服务。",
+          "source_id": "zhangjing_penghoo"
+        },
         {
           "organization": "欧拉万象",
           "title": "联合创始人",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-62bfb7c7dd37177e"
+          "period": "2026年公司融资报道时在任",
+          "description": "参与机器人创业及产品规划。",
+          "source_id": "zhangjing_penghoo"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "清华大学",
+          "qualification": "毕业；学位及专业未披露",
+          "source_id": "zhangjing_penghoo"
+        }
+      ],
+      "experience_summary": "职业线索包括云服务产品管理及机器人创业。更详细教育和完整任职时间线未公开。",
+      "track_record": [
+        {
+          "description": "曾参与Amazon Connect产品建设，工作内容与企业客服自动化相关；此为媒体报道所述，不独立归因具体产品指标。",
+          "source_id": "zhangjing_penghoo"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-62bfb7c7dd37177e",
-          "source_url": "https://www.163.com/dy/article/KUTU3HNL05118HJE.html",
-          "source_title": "融资披露来源",
-          "source_content_hash": "a54d75c4d3b7f57123d80c5eb586484d9da91aa534aa133431798f370e64acad",
-          "quote": "联合创始人张靖是前亚马逊 AWS 产品经理、华为创新云服务产品总监。",
-          "quote_hash": "068c614fae0bd93134297f09582c646e99600427ea862d8493d6afcf13365297"
+          "source_id": "zhangjing_penghoo",
+          "source_url": "https://www.penghoo.cn/a/10783.html",
+          "source_title": "欧拉万象融资与团队介绍 - 朋湖科创",
+          "source_content_hash": "f84c21ca95eeb6aae66aeb93de4070d8339a98e6c7c825f9cf950537403f8958",
+          "quote": "报道介绍欧拉万象联合创始人张靖的清华教育背景及其在AWS担任产品经理的经历。",
+          "quote_hash": "8fffd5c6319f370af9036fb1d5761ccd61e92a099969709c8da8e8df1b0bd749"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "公开资料来自公司融资报道；清华学位专业和AWS任期未披露，保留未注明状态。",
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

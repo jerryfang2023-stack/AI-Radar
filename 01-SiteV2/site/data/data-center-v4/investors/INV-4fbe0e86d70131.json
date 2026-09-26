@@ -187,11 +187,45 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "鼎峰科创(武岳峰创投) 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "鼎峰科创（数据库历史名称附注“武岳峰创投”）是一家专注硬科技的创业投资机构。官网列示新材料、气候技术、智能制造与高端装备、泛半导体、新一代信息技术及生物医疗等组合领域，并公开已投企业目录。官网荣誉页面记录其在2022—2025年获得多家行业榜单排名；这些排名属于媒体及行业机构评选，不等同基金回报。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "创业投资机构",
+          "source_id": "topview_about"
+        },
+        {
+          "field": "sectors",
+          "label": "官网组合领域",
+          "value": [
+            "新材料",
+            "气候技术",
+            "智能制造与高端装备",
+            "泛半导体电子",
+            "新一代信息技术",
+            "生物医疗"
+          ],
+          "source_id": "topview_portfolio"
+        },
+        {
+          "field": "public_track_record",
+          "label": "公开行业认可",
+          "value": "官网列示清科、投中、母基金周刊、企名片等机构2021—2025年榜单排名；各榜单年份与类别详见官网，不能据此推导基金收益。",
+          "source_id": "topview_about"
+        },
+        {
+          "field": "portfolio_examples",
+          "label": "官网已投企业目录示例",
+          "value": [
+            "北京海博思创",
+            "北京卫蓝新能源",
+            "江苏鑫华半导体",
+            "上海矽杰微电子"
+          ],
+          "source_id": "topview_portfolio"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -203,8 +237,46 @@
           "source_id": "FISRC-3277bcd28ace0609"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "鼎峰科创",
+          "url": "https://www.topviewinnovation.com/",
+          "source_id": "topview_home"
+        },
+        {
+          "kind": "email",
+          "label": "商业计划书公开投递邮箱",
+          "value": "VC-BP@summitviewcapital.com",
+          "source_id": "topview_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "topview_about",
+          "source_url": "https://www.topviewinnovation.com/about_us",
+          "source_title": "公司简介与荣誉 - 鼎峰科创官网",
+          "source_content_hash": "60b4d873afa66bdd0c2316618a3dddb7567c3838431d8ca08e4719c4f3b18481",
+          "quote": "官网列示鼎峰科创在清科、投中、母基金周刊等行业榜单中的2021—2025年排名。",
+          "quote_hash": "f8a083c636ea671a840fe5ec6954cc4ba0d54933c5cc515791a5142708b489f6"
+        },
+        {
+          "source_id": "topview_portfolio",
+          "source_url": "https://www.topviewinnovation.com/portfolio",
+          "source_title": "已投企业 - 鼎峰科创官网",
+          "source_content_hash": "80d9040b80a61a27136f947d5951495c7e32573577138e9e7a562d5b943474e4",
+          "quote": "官网按新材料、气候技术、智能制造、泛半导体、新一代信息技术和生物医疗展示已投企业。",
+          "quote_hash": "4c1ad0d57861cad411ce909ba33aef19faf6196b3e7b0ac2ae65e121acd8d8b4"
+        },
+        {
+          "source_id": "topview_home",
+          "source_url": "https://www.topviewinnovation.com/",
+          "source_title": "鼎峰科创官方网站与项目联系邮箱",
+          "source_content_hash": "ba73c242ff91995d2b69e6e4c11fd2eb4b7623471f5e955e91685d537b4cff6e",
+          "quote": "官网公开商业计划书邮箱 VC-BP@summitviewcapital.com。",
+          "quote_hash": "136182d4aafb26e1f0065a0d0e3cb1f1af660df98d19fffb290fbe2dd5d84341"
+        },
         {
           "source_id": "FISRC-3f6ac401bc9ed3ed",
           "source_url": "https://news.pedaily.cn/202606/565451.shtml",
@@ -222,7 +294,10 @@
           "quote_hash": "e560c5524bf33f5a62a0b4b4e13679cc1a924f530bba6a2f4427c9257f5fe203"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构业务、公开成绩和联系方式均按来源的披露范围记录；数据库中的融资案例由构建工具从对应融资证据自动合并。",
+      "last_verified_at": "2026-09-26"
     }
   }
 }

@@ -111,33 +111,81 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "牛张明 的来源线索将其与德睿智药（创始人兼CEO）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "牛张明是德睿智药创始人兼CEO，职业经历集中于人工智能制药与药物研发。杭州日报2026年采访称其带领约四十人的团队推进AI设计口服减重新药MDR-001进入Ⅲ期；行业会议嘉宾履历称其有欧美上市公司研发/管理及AI制药经验，并记载其为伦敦帝国理工博士候选人（非已获博士）。",
+      "current_roles": [
+        {
+          "title": "创始人、CEO（2026年采访）",
+          "organization": "德睿智药（MindRank）",
+          "source_id": "niuzhangming_hangzhou_202601"
+        }
+      ],
       "career": [
         {
-          "organization": "德睿智药",
-          "title": "创始人兼CEO",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将牛张明与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-e59652e6b200515c"
+          "organization": "欧美上市公司",
+          "title": "研发及管理岗位（大会嘉宾履历概述）",
+          "period": "累计12年经验；公司及年份未披露",
+          "description": "BioCon主办方嘉宾资料所述，未列公司名称。",
+          "source_id": "niuzhangming_biocon_2025"
+        },
+        {
+          "organization": "伦敦AI医疗初创公司",
+          "title": "CTO（媒体采访转述）",
+          "period": "2018年加入；具体任期未披露",
+          "description": "时代财经称其于2018年加入伦敦一家AI医疗初创公司并协助其在德国主板上市；公司未具名。",
+          "source_id": "niuzhangming_timesfinance_202608"
+        },
+        {
+          "organization": "德睿智药（MindRank）",
+          "title": "创始人、CEO",
+          "period": "2026年1月采访确认在任",
+          "description": "杭州市政协门户转载杭州日报的采访。",
+          "source_id": "niuzhangming_hangzhou_202601"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "伦敦帝国理工学院",
+          "qualification": "博士候选人（2025年大会嘉宾履历所述，不能认定已获博士）",
+          "source_id": "niuzhangming_biocon_2025"
+        }
+      ],
+      "experience_summary": "公开资料描述其从欧美企业研发管理和AI医疗创业转向AI药物研发；前雇主名称、学位取得状态及部分荣誉尚无授予方一手资料佐证。",
+      "track_record": [
+        {
+          "description": "杭州日报2026年采访称，德睿智药AI设计的口服减重新药MDR-001已启动Ⅲ期临床试验；这是公司项目进度，不等同于药品已获批或个人单独成果。",
+          "source_id": "niuzhangming_hangzhou_202601"
+        }
+      ],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "现职及项目进展来自杭州市政协门户转载杭州日报采访；早年经历和博士候选人身份来自大会主办方嘉宾履历及媒体报道，均按来源口径呈现。",
       "sources": [
         {
-          "source_id": "FISRC-e59652e6b200515c",
-          "source_url": "https://www.vbdata.cn/1519084434",
-          "source_title": "融资披露来源",
-          "source_content_hash": "6461ec5fc6fa20ad",
-          "quote": "德睿智药创始人兼CEO牛张明表示",
-          "quote_hash": "7bc40b9a0c87e3d3625b619e6dabc9dbe1385b307fa39aacd9ac916f0f1f4329"
+          "source_id": "niuzhangming_hangzhou_202601",
+          "source_url": "https://www.hzzx.gov.cn/cshz/content/2026-01/09/content_9159527.htm",
+          "source_title": "人工智能妙手“开”药方 中国首款AI设计减重药冲刺上市 - 杭州市政协门户（杭州日报采访）",
+          "source_content_hash": "2e1d57549963883479e8473bb74541915b2620d192180921c1c91ceaf75ef0e7",
+          "quote": "杭州日报采访称德睿智药创始人、CEO牛张明带领四十多人团队推进AI辅助设计的MDR-001，并报道该药于2026年1月启动Ⅲ期临床试验。",
+          "quote_hash": "2e6af662d1b4b7ca70966f7419ec3bd0c43e961d595397c87cdaa07e165ab7e7"
+        },
+        {
+          "source_id": "niuzhangming_biocon_2025",
+          "source_url": "https://finance.sina.com.cn/roll/2025-06-28/doc-infcquyp9782853.shtml",
+          "source_title": "德睿智药创始人牛张明博士确认出席BioCon - 新浪财经（会议主办方嘉宾资料）",
+          "source_content_hash": "c34c06eef4116cfa213562f3e6c9cec9bb55c5878797bad8da51eff7e84ccec0",
+          "quote": "BioCon China Expo 2025主办方嘉宾简介称牛张明为德睿智药创始人、CEO和伦敦帝国理工博士候选人，并介绍其欧美上市公司研发管理和AI制药经历；荣誉及成果尚未逐项由授予方核验。",
+          "quote_hash": "518f9c6e7a54d15ea9428bba56880fb79cb2106da0377792fa5466272bd50e2c"
+        },
+        {
+          "source_id": "niuzhangming_timesfinance_202608",
+          "source_url": "https://news.10jqka.com.cn/20260803/c678636593.shtml",
+          "source_title": "对话德睿智药牛张明：AI制药进入价值兑现期 - 时代财经（同花顺转载）",
+          "source_content_hash": "40801a85c11a99f668f2946a0b26108d224f0a38eb3c1b895c427bedc83a2d77",
+          "quote": "时代财经采访转述称牛张明曾于2018年加入伦敦AI医疗初创公司任CTO并协助其在德国主板上市；公司未具名。",
+          "quote_hash": "950f1746b81c22df6d403167bd32397cffb19837aee90278fd20e9c57ed6dec9"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

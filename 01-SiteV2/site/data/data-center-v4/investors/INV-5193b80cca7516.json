@@ -130,21 +130,88 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "IDG Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-01-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "IDG Capital是1993年创立的全球投资机构，业务包括风险投资、成长资本、收购、二级市场与公开市场投资。官网披露其在全球设有12个办公室、投资组合覆盖10余个市场。机构特别发布了反冒名声明，项目方应通过官网公布渠道联系。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "创立年份",
+          "value": "1993年在波士顿创立",
+          "source_id": "idg_official_home_202609"
+        },
+        {
+          "field": "headquarters",
+          "label": "总部",
+          "value": "香港（官网当前披露）",
+          "source_id": "idg_official_home_202609"
+        },
+        {
+          "field": "investment_activities",
+          "label": "投资业务",
+          "value": [
+            "风险投资",
+            "成长资本",
+            "收购",
+            "二级市场",
+            "公开市场"
+          ],
+          "source_id": "idg_official_home_202609"
+        },
+        {
+          "field": "global_presence",
+          "label": "全球办公室",
+          "value": "12个（官网当前披露）",
+          "source_id": "idg_official_home_202609"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官网披露组合覆盖10余个市场、1800余家企业及600余项退出；数据为机构整体自报，未转化为单支基金回报率。",
+          "source_id": "idg_official_home_202609"
+        },
         {
           "description": "融资来源记录：StepFun · B+轮 · 2026-01-26 · 首轮投资方 · 50 亿人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e424026c5a172d4b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "label": "商务合作邮箱",
+          "value": "cooperation@idgcapital.com",
+          "source_id": "idg_official_contact_202609"
+        },
+        {
+          "kind": "contact_form",
+          "label": "IDG Capital官方联系表单",
+          "value": "官网商务合作入口",
+          "url": "https://en.idgcapital.com/contact-us/",
+          "source_id": "idg_official_contact_202609"
+        },
+        {
+          "kind": "address",
+          "label": "香港The Center办公室",
+          "value": "Room 5505, 55/F, The Center, 99 Queen’s Road Central, Hong Kong",
+          "source_id": "idg_official_contact_202609"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "idg_official_home_202609",
+          "source_url": "https://en.idgcapital.com/",
+          "source_title": "IDG Capital官网",
+          "source_content_hash": "2fc862140e3b7de7482cadf8dd740eb0eca32433522c0d6a287c4d5eb328a5dd",
+          "quote": "IDG Capital官网称其1993年在波士顿创立、总部位于香港，在全球设有12个办公室，业务涵盖风险投资、成长资本、收购、二级市场及公开市场投资；官网披露投资组合覆盖10余个市场。",
+          "quote_hash": "b9c43d6364a4d9a9fe0cab70f2bbb1cbdab4c3ae09482ce8e3bf7217fbb3f984"
+        },
+        {
+          "source_id": "idg_official_contact_202609",
+          "source_url": "https://en.idgcapital.com/contact-us/",
+          "source_title": "Contact Us | IDG Capital",
+          "source_content_hash": "92334283d1c0f5c85e537c030a4e63e6c0e466477aceb0504bc02163f2e1429c",
+          "quote": "IDG Capital官网公布商务合作邮箱cooperation@idgcapital.com、香港办公地址与电话，并声明官方信息只通过其官网发布，以防仿冒。",
+          "quote_hash": "2d5c4dd8f7c70d021a1f6d6b0631257766dfa64f2db93a61e4bae42e3843e838"
+        },
         {
           "source_id": "FISRC-e424026c5a172d4b",
           "source_url": "https://kr-asia.com/as-ai-consolidates-what-makes-stepfun-worth-a-rmb-5-billion-raise",
@@ -154,7 +221,11 @@
           "quote_hash": "befa1e37800e3a886b0b0ec2505289bc025eea4af0deec98f7350714854ab469"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "coverage_note": "机构背景、业务范围与商务邮箱均取自IDG Capital官网；保留官网反诈骗提示，不采用第三方冒名站点联系方式。",
+      "identity_status": "verified"
     }
   }
 }

@@ -130,30 +130,139 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "商汤科技 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "summary": "“商汤科技”对应商汤集团股份有限公司（SenseTime Group Inc.），成立于2014年的人工智能软件公司，已在香港联合交易所上市，业务覆盖生成式AI、视觉AI和创新业务。融资报道将商汤科技列为上海达卯科技有限公司的现有股东，但未披露具体持股法人、取得股份的时间或金额；本档案不将该品牌名称推定为某一家境内子公司。",
+      "facts": [
         {
-          "description": "融资来源记录：上海达卯科技有限公司 · 轮次未披露 · 2026-09-23 · 股东方 · 约2亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "field": "listed_company_name",
+          "label": "上市集团名称",
+          "value": "商汤集团股份有限公司（SenseTime Group Inc.）；商汤科技为其品牌称呼。",
+          "source_id": "sensetime_official_profile"
+        },
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2014年",
+          "source_id": "sensetime_official_profile"
+        },
+        {
+          "field": "business_scope",
+          "label": "业务范围",
+          "value": [
+            "生成式AI",
+            "视觉AI",
+            "创新业务",
+            "人工智能算力基础设施"
+          ],
+          "source_id": "sensetime_official_profile"
+        },
+        {
+          "field": "technology_products",
+          "label": "官网介绍的核心平台",
+          "value": "SenseCore 商汤大装置连接算力、算法与平台；SenseNova 商汤日日新为其大模型体系。",
+          "source_id": "sensetime_official_profile"
+        },
+        {
+          "field": "company_reported_achievement",
+          "label": "官网转述的市场表现",
+          "value": "公司官网转述IDC《中国AI软件市场半年度追踪，2025 H2》称，商汤连续10年位居中国视觉AI市场份额榜首；此为官网引用的行业统计口径。",
+          "source_id": "sensetime_official_profile"
+        },
+        {
+          "field": "disclosure_boundary",
+          "label": "融资股东主体边界",
+          "value": "现有报道仅称“商汤科技”为达卯科技股东，未注明境内外具体法人、持股比例、取得股份日期或投资金额。",
           "source_id": "FISRC-23e3875ee86bc918"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2014",
+          "description": "商汤科技成立。",
+          "source_id": "sensetime_official_profile"
+        },
+        {
+          "date": "上市",
+          "description": "公司官网介绍商汤集团已在香港联合交易所上市。",
+          "source_id": "sensetime_official_profile"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "2026年9月达卯科技融资报道列商汤科技为该公司的现有股东之一，但没有披露持股法人、比例、投资时间或金额。",
+          "source_id": "FISRC-23e3875ee86bc918"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "商汤科技官网",
+          "value": "SenseTime",
+          "url": "https://www.sensetime.com/cn/",
+          "source_id": "sensetime_official_contacts"
+        },
+        {
+          "kind": "email",
+          "label": "官网公布的商务合作邮箱",
+          "value": "business@sensetime.com",
+          "source_id": "sensetime_official_contacts"
+        },
+        {
+          "kind": "phone",
+          "label": "官网公布的商务联系电话",
+          "value": "+86 400 900 5986",
+          "source_id": "sensetime_official_contacts"
+        },
+        {
+          "kind": "email",
+          "label": "官网公布的投资者关系邮箱",
+          "value": "ir@sensetime.com",
+          "source_id": "sensetime_official_investor_contact"
+        },
+        {
+          "kind": "address",
+          "label": "官网公布的上海办公地址",
+          "value": "上海市徐汇区虹梅路1900号商汤科技大厦",
+          "source_id": "sensetime_official_contacts"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "sensetime_official_profile",
+          "source_url": "https://www.sensetime.com/cn/",
+          "source_title": "商汤科技｜官网首页与公司介绍",
+          "source_content_hash": "03e39fee22e19abc05a612512ec41c765fcd445cfb9b9d5ef916cf5755de664f",
+          "quote": "商汤科技成立于2014年，是人工智能软件公司，业务涵盖生成式AI、视觉AI和创新业务。公司官网介绍SenseCore商汤大装置打通算力、算法和平台，并建立SenseNova商汤日日新大模型体系；官网转述IDC 2025 H2报告称公司连续10年位居中国视觉AI市场份额榜首。",
+          "quote_hash": "858cc26898c1b7b18d9283c8a29827d6dfe4d06b700c4325ab42e7d0f3aabf99"
+        },
         {
           "source_id": "FISRC-23e3875ee86bc918",
           "source_url": "https://www.qbitai.com/2026/09/496494.html",
-          "source_title": "达卯科技完成新一轮融资，算电协同核心软件层“稀缺标的”",
-          "source_content_hash": "b652dc815aea1925",
-          "quote": "目前，达卯科技股东阵容包含宁德时代、商汤科技、寒武纪等产业链龙头企业",
-          "quote_hash": "3ea31f36954c8902959b2b0d0e7a4636bb9a7524cc8abfbcde3f12b5937a02e9"
+          "source_title": "量子位｜达卯科技完成新一轮融资",
+          "source_content_hash": "b9a27a2d7ba41ebd0fc3fe14625f8c2d79fa14e3b054dbb98eba7ae6a18756c8",
+          "quote": "目前，达卯科技股东阵容包含宁德时代、商汤科技、寒武纪等产业链龙头企业。",
+          "quote_hash": "1aae790de4d982260dab751ec3d9515ee59eada50c2884782309188b5cb6b7b3"
+        },
+        {
+          "source_id": "sensetime_official_contacts",
+          "source_url": "https://www.sensetime.com/cn/",
+          "source_title": "商汤科技｜官网联系方式",
+          "source_content_hash": "2f6571aff71ee2d5207a3524e7baab66b501e63b132104b1a8bc9f520c6a002b",
+          "quote": "上海市徐汇区虹梅路1900号商汤科技大厦；商务合作 business@sensetime.com，电话400-900-5986。",
+          "quote_hash": "25957a9b2db9e31917611d8401bf921bd6941235cab77018a0f8169abd3ab741"
+        },
+        {
+          "source_id": "sensetime_official_investor_contact",
+          "source_url": "https://www.sensetime.com/hk/about",
+          "source_title": "商汤科技｜官网投资者关系联系方式",
+          "source_content_hash": "a749d327c699fb9b592b238518dcadf1af2c19578147e07f41b2301dd153b62d",
+          "quote": "投資者關係 ir@sensetime.com",
+          "quote_hash": "d05e12e5dbd46163c20e23578166bce715c3fb5e1451c3a40b4ea653c0749d8b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

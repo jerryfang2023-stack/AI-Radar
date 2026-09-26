@@ -129,21 +129,80 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "阿美风险投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "“阿美风险投资”对应沙特阿美官方中文资料所称的“沙特阿美风险投资公司”，其英文名称为 Aramco Ventures。该机构是沙特阿美的企业风险投资部门。官网称其采用长期、主题驱动的投资方式；沙特阿美2024年报告披露其管理多个风投项目，相关AUM约70亿美元，此为公司披露口径。",
+      "facts": [
+        {
+          "field": "parent_company",
+          "label": "所属企业",
+          "value": "Saudi Aramco（沙特阿美）",
+          "source_id": "aramco_ventures_home"
+        },
+        {
+          "field": "investment_approach",
+          "label": "官网披露投资方式",
+          "value": "长期、主题驱动，投资差异化技术和有潜力建立长期业务的团队。",
+          "source_id": "aramco_ventures_home"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "沙特阿美报告披露的管理规模",
+          "value": "约 70 亿美元（2024 年报告口径，含多个风险投资项目）",
+          "source_id": "aramco_ventures_report"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "沙特阿美 2024 年气候报告称 Aramco Ventures 管理多个风险投资项目，并列举其在能源转型与战略领域的投资活动；公司披露的 AUM 不等于已实现回报。",
+          "source_id": "aramco_ventures_report"
+        },
         {
           "description": "融资来源记录：深度智控 · B轮 · 2026-07-09 · B+轮投资方 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-67ccadc4294defd6"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Aramco Ventures",
+          "url": "https://aramcoventures.com/",
+          "source_id": "aramco_ventures_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "aramco_ventures_home",
+          "source_url": "https://aramcoventures.com/",
+          "source_title": "Home | Aramco Ventures",
+          "source_content_hash": "05f17cc9b6046d2a22711bcabb71171520e0ffc12d5907015b957f0e13a587be",
+          "quote": "We take a long-term, thesis-driven approach to investing, backing strong teams and differentiated technologies with the potential to build enduring businesses. Beyond capital, we bring global reach and local networks with technical expertise and patient capital.",
+          "quote_hash": "d2bfe3521835769e7898cb3a8b53561123bf7e907eb7e998c24709c537471ab7"
+        },
+        {
+          "source_id": "aramco_ventures_team",
+          "source_url": "https://aramcoventures.com/our-team/",
+          "source_title": "Our Team | Aramco Ventures",
+          "source_content_hash": "8ec4bf5bc613137233e69f659c59480857026d60a8c8d604e6fd0bf66bb0186a",
+          "quote": "Head of China Strategic Investment.",
+          "quote_hash": "5e9de03a1d22e421ee5554b0fc41521e79b7a1a090b688f413bea46d27bc1354"
+        },
+        {
+          "source_id": "aramco_ventures_report",
+          "source_url": "https://www.aramco.com/-/media/publications/corporate-reports/sustainability-reports/report-2024/english/2024-climate-change-and-the-energy-transition-en.pdf",
+          "source_title": "Climate Change and the Energy Transition Report 2024 | Aramco",
+          "source_content_hash": "59e94ad742201a14049e7a9003872a754abbf70a36e0934ac8dfffb3282ad2b4",
+          "quote": "Aramco Ventures serves as Aramco’s dynamic venturing arm, managing multiple venture capital programs with total assets under management (AUM) of $7 billion.",
+          "quote_hash": "36bd8ce92c9c6782362cfee306462aa0823238edd3a5177b57181ba482b3c932"
+        },
+        {
+          "source_id": "aramco_chinese_identity",
+          "source_url": "https://china.aramco.com/zh-cn/news-media/global-news/2024/aramco-expands-global-venture-capital-program-with-%244bn-funds-injection",
+          "source_title": "沙特阿美注资40亿美元，扩大全球风险投资规模 | 沙特阿美",
+          "source_content_hash": "19c6c2cac672e37e1e9a44facc43dd7f95f72e07151b9f7ab0118fe5c2ce4fdf",
+          "quote": "公司为风险投资机构“沙特阿美风险投资公司”增拨一倍以上的资金",
+          "quote_hash": "da8e656da86758e84efea47c6f38d68f48ba88837beaed08cec582752910f8ab"
+        },
         {
           "source_id": "FISRC-67ccadc4294defd6",
           "source_url": "https://pitchhub.36kr.com/project/1958573801870344",
@@ -153,7 +212,11 @@
           "quote_hash": "262d9e1980aabc396d208a46c39e53dcdb002c842dc4d7c4ab0d5576d78cc36d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

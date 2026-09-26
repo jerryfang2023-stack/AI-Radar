@@ -118,41 +118,47 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "Haya Odeh 的来源线索将其与Replit（联合创始人兼设计负责人）关联。来源日期：2026-07-27；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "coverage_status": "researched",
+      "summary": "Haya Odeh 是 Replit 联合创始人，承担设计领导职务。Replit 关于页列其为 VP of Design；2026年5月由其署名的 Replit 文章列为 Head of Design。页面职务名称略有不同，资料中保留两种原始表述。",
+      "current_roles": [
+        {
+          "organization": "Replit",
+          "title": "联合创始人；设计领导职务（官网分别列 VP of Design / Head of Design）",
+          "source_id": "replit_about"
+        }
+      ],
       "career": [
         {
           "organization": "Replit",
-          "title": "联合创始人兼设计负责人",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将Haya Odeh与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-9b0f32fe01d091cc"
+          "title": "联合创始人、VP of Design / Head of Design",
+          "period": "2026年5月文章及官网团队页列示；任职起始时间未披露",
+          "description": "Replit 团队页列 VP of Design，Haya Odeh 署名文章则列 Head of Design。",
+          "source_id": "replit_about"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
+      "experience_summary": "公开履历资料目前仅能确认其 Replit 联合创始人与设计负责人关联，未从其他同名资料推断教育和过往公司。",
       "track_record": [],
       "sources": [
         {
-          "source_id": "FISRC-9b0f32fe01d091cc",
-          "source_url": "https://techcrunch.com/2023/04/27/replit-funding-100m-generative-ai/",
-          "source_title": "融资披露来源",
-          "source_content_hash": "3b03664369ea0afe",
-          "quote": "Replit was co-founded by programmers Amjad Masad, Faris Masad and designer Haya Odeh in 2016.",
-          "quote_hash": "ad6b98a71d29ee3933330676b5037dd3e9506661551747fe01ba567967ad81f3"
+          "source_id": "replit_about",
+          "source_url": "https://ld.replit.com/about",
+          "source_title": "About Us — Replit",
+          "source_content_hash": "b98681d8b900f9a3f0a648acfab1c1d5e46dc81bbf1f90dd5818749426281340",
+          "quote": "Haya Odeh — Co-Founder, VP of Design. Replit is the AI platform that helps you turn your ideas into real outcomes.",
+          "quote_hash": "694797215a2b6e61e627905570756cd9f76e5570fb406cef6ebcd6c3ba302e8c"
         },
         {
-          "source_id": "FISRC-96403c3e6eeb4174",
-          "source_url": "https://technews180.com/funding-news/replit-raises-400m-series-d-at-9b-valuation/",
-          "source_title": "融资披露来源",
-          "source_content_hash": "406ec8f541f23974",
-          "quote": "Replit was founded by Amjad Masad and his wife Haya, who now serves as the company's head of design.",
-          "quote_hash": "d0a7d658933eb18608c9a77694d9cba2021dc1675540f1c54091bd8de8694fd1"
+          "source_id": "replit_haya_blog",
+          "source_url": "https://replit.com/blog/mothers-who-build",
+          "source_title": "Mothers who build — Replit",
+          "source_content_hash": "96e72e8db2dd14d549bea9a97e87be7abf3eb615f54982d2992c534af8e6238e",
+          "quote": "By Haya Odeh, Co-founder & Head of Design, Replit. May 2026.",
+          "quote_hash": "473cb80528c016dc8a343f9bec1bfd204d70b514d52d7a665916d143fa9b9bfb"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
     }
   },
   "relatedEntities": [],

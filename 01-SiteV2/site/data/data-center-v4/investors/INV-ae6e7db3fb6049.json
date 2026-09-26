@@ -191,14 +191,61 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Picus Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Picus Capital 是一家成立于2015年的早期科技投资机构，官网披露其已投资170余家公司，业务覆盖20多个国家。其投资主题包括能源与气候、金融科技、企业基础设施与网络安全、生成式人工智能及医疗健康；投资阶段以Pre-Seed、Seed和A轮为主。数据均为机构官网自述。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2015",
+          "source_id": "picus_overview"
+        },
+        {
+          "field": "investment_stage",
+          "label": "主要投资阶段",
+          "value": [
+            "Pre-Seed",
+            "Seed",
+            "Series A"
+          ],
+          "source_id": "picus_philosophy"
+        },
+        {
+          "field": "sectors",
+          "label": "投资方向",
+          "value": [
+            "能源与气候",
+            "金融科技",
+            "企业基础设施与网络安全",
+            "生成式人工智能",
+            "医疗健康"
+          ],
+          "source_id": "picus_philosophy"
+        },
+        {
+          "field": "investment_count",
+          "label": "官网披露投资数",
+          "value": "170余家",
+          "source_id": "picus_overview"
+        },
+        {
+          "field": "geographic_footprint",
+          "label": "官网披露覆盖国家",
+          "value": "20多个国家",
+          "source_id": "picus_overview"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2015",
+          "description": "官网披露 Picus Capital 于2015年成立。",
+          "source_id": "picus_overview"
+        }
+      ],
       "track_record": [
+        {
+          "description": "官网组合页将 Enpal、Personio 和 FINN 标记为独角兽企业。该标签按机构官网口径记录，不代表当前估值或投资回报。",
+          "source_id": "picus_portfolio"
+        },
         {
           "description": "融资来源记录：Compri · 种子轮 · 2026-06-24 · 本轮领投 · 320万欧元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0a3d4ca3b6256c1a"
@@ -208,8 +255,40 @@
           "source_id": "FISRC-62dc6d17f09030c0"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站与投资介绍",
+          "value": "Picus Capital",
+          "url": "https://www.picuscap.com/",
+          "source_id": "picus_overview"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "picus_overview",
+          "source_url": "https://www.picuscap.com/",
+          "source_title": "Picus Capital",
+          "source_content_hash": "37c7f766610f98ae2665a0eb896ecef09ece72f637aa1403096086a7701d2d1b",
+          "quote": "Picus Capital is an early-stage technology investment firm with a long-term investment philosophy. Picus states it was founded in 2015, has made 170+ investments, and operates across 20+ countries.",
+          "quote_hash": "44b4d11d8a00ead3a00c9e36be38095574dd43b02a34461c54b36fd24b2b2113"
+        },
+        {
+          "source_id": "picus_philosophy",
+          "source_url": "https://www.picuscap.com/philosophy/",
+          "source_title": "Philosophy | Picus Capital",
+          "source_content_hash": "35c11eb51b46ef9434b2f7e5354732641932565db692e8005368415c0ab0017d",
+          "quote": "Picus invests in early-stage technology ventures, predominantly at Pre-Seed, Seed and Series A, across energy and climate, fintech, enterprise infrastructure and cybersecurity, generative AI, and healthcare.",
+          "quote_hash": "10a9bff4c7daad1ba3a501b31657882109fcda3464c07e07751742adf37a3fc0"
+        },
+        {
+          "source_id": "picus_portfolio",
+          "source_url": "https://www.picuscap.com/portfolio",
+          "source_title": "Portfolio | Picus Capital",
+          "source_content_hash": "cc1ada784b8071c2a26750bfe3403a359819633c1d5b2b23c17b7960b5e8b004",
+          "quote": "The portfolio page identifies Enpal, Personio and FINN as unicorn portfolio companies.",
+          "quote_hash": "39fe5b87502a91d2349c8d73788968df32998ef8f4c49925e9c76d2cbd4e949d"
+        },
         {
           "source_id": "FISRC-0a3d4ca3b6256c1a",
           "source_url": "https://tech.eu/2026/06/24/compri-secures-eur32m-to-build-ai-powered-procurement-teams/",
@@ -227,7 +306,11 @@
           "quote_hash": "ac5b6d3b2d19e95d2e607c7dcef25640a6b13e17d7fa7a5d151d7a5c622797d2"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

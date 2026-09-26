@@ -137,21 +137,126 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "高榕资本 (Gaorong Capital) 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "高榕创投（融资记录中亦标作Gaorong Capital）是一家2014年成立的早期与成长期投资机构，由张震、高翔、岳斌三位创始合伙人创立。其官网重点覆盖新科技、互联网与新消费、医疗健康，展示了300余家投资企业、30余家上市企业和70余人团队等机构自报指标。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2014年1月",
+          "source_id": "gaorong_profile"
+        },
+        {
+          "field": "founders",
+          "label": "创始合伙人",
+          "value": [
+            "张震",
+            "高翔",
+            "岳斌"
+          ],
+          "source_id": "gaorong_profile"
+        },
+        {
+          "field": "investment_stages",
+          "label": "投资阶段",
+          "value": [
+            "早期",
+            "成长期"
+          ],
+          "source_id": "gaorong_profile"
+        },
+        {
+          "field": "focus_sectors",
+          "label": "重点领域",
+          "value": [
+            "新科技",
+            "互联网及新消费",
+            "医疗健康"
+          ],
+          "source_id": "gaorong_profile"
+        },
+        {
+          "field": "portfolio_count",
+          "label": "投资企业（官网指标，未注明基准日）",
+          "value": "300余家",
+          "source_id": "gaorong_profile"
+        },
+        {
+          "field": "listed_portfolio_count",
+          "label": "上市企业（官网指标，未注明基准日）",
+          "value": "30余家",
+          "source_id": "gaorong_profile"
+        },
+        {
+          "field": "team_size",
+          "label": "团队规模（官网指标，未注明基准日）",
+          "value": "70余人",
+          "source_id": "gaorong_profile"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2014-01",
+          "description": "由张震、高翔、岳斌三位创始合伙人创立。",
+          "source_id": "gaorong_profile"
+        }
+      ],
       "track_record": [
+        {
+          "description": "官网列示投资企业300余家、上市企业30余家，并展示拼多多、BOSS直聘、虎牙、石头科技及Nuro等案例；数字未注明统计基准日。",
+          "source_id": "gaorong_profile"
+        },
         {
           "description": "融资来源记录：Moonshot AI · 轮次未披露 · 2026-06-08 · 2024年8月轮次领投 · 20亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0199034a5417695f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "高榕创投",
+          "url": "https://www.gaorongvc.com/cn/",
+          "source_id": "gaorong_contact"
+        },
+        {
+          "kind": "application",
+          "label": "商业计划书邮箱",
+          "value": "bp@gaorongvc.com",
+          "url": "https://www.gaorongvc.com/cn/",
+          "source_id": "gaorong_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "办公室电话",
+          "value": "010-84442729",
+          "url": "https://www.gaorongvc.com/cn/",
+          "source_id": "gaorong_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "办公室传真",
+          "value": "010-84442279",
+          "url": "https://www.gaorongvc.com/cn/",
+          "source_id": "gaorong_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "gaorong_profile",
+          "source_url": "https://www.gaorongvc.com/cn/",
+          "source_title": "高榕创投官方网站",
+          "source_content_hash": "7ab7f6623b29287d74045b1ab1e83fea2ae8a4b92f8eb3361023f3c6d184df98",
+          "quote": "高榕创投由张震、高翔、岳斌三位创始合伙人于2014年1月创立。",
+          "quote_hash": "d691b5ba7595be859222b0fe4a0cd78f274c7b8df92829e153dd26f0b3359850"
+        },
+        {
+          "source_id": "gaorong_contact",
+          "source_url": "https://www.gaorongvc.com/cn/",
+          "source_title": "高榕创投官方网站 - 联系方式",
+          "source_content_hash": "7ab7f6623b29287d74045b1ab1e83fea2ae8a4b92f8eb3361023f3c6d184df98",
+          "quote": "BP邮箱bp@gaorongvc.com；办公室电话010-84442729。",
+          "quote_hash": "7d92867a79faa20f09f11db139dc6ea2685adda53bc953e1adde4c1c723d5232"
+        },
         {
           "source_id": "FISRC-0199034a5417695f",
           "source_url": "https://otontechnology.com/moonshot-ai-30-billion-valuation-funding-round/",
@@ -161,7 +266,11 @@
           "quote_hash": "8334bc38da345a08409c266b63643851c9df53bc43ad8bdbad61e534c5d6a65b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "identity_status": "verified",
+      "coverage_note": "机构背景、创始合伙人、投资方向、案例与联系方式来自高榕创投官网。组合数量、上市企业数及团队人数没有注明基准日，按官网自报指标呈现，不解释为基金回报。",
+      "last_verified_at": "2026-09-26"
     }
   }
 }

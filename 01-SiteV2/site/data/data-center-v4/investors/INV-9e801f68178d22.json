@@ -240,13 +240,44 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Qatar Investment Authority 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "卡塔尔投资局（QIA）是卡塔尔国的主权财富基金，2005 年设立，负责管理国家盈余资产并支持经济多元化。官方将其投资使命概括为为国家及后代创造长期价值、支持卡塔尔本土经济发展，并在必要时稳定本地经济。QIA 官网将科技、媒体与电信列为投资板块，覆盖 IT 与通信服务，并可在成长股权融资、IPO、公开市场及并购等阶段进行长期投资。融资数据中仅标注“Qatar Investment Authority”时，不能据此确认由 QIA 本体直接投资，需区分旗下平台及关联主体。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "卡塔尔国主权财富基金",
+          "source_id": "qia_about"
+        },
+        {
+          "field": "founded",
+          "label": "设立年份",
+          "value": "2005",
+          "source_id": "qia_about"
+        },
+        {
+          "field": "mandate",
+          "label": "投资使命",
+          "value": [
+            "为国家及未来世代创造长期价值",
+            "支持卡塔尔竞争性经济发展",
+            "必要时稳定本地经济"
+          ],
+          "source_id": "qia_about"
+        },
+        {
+          "field": "technology_strategy",
+          "label": "科技媒体通信投资",
+          "value": "投资 IT 与通信服务领域，涵盖成长股权融资、IPO、公开市场及并购，通常长期持有",
+          "source_id": "qia_tmt"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2005",
+          "description": "QIA 官方历史记载机构设立。",
+          "source_id": "qia_about"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Gatik · D轮 · 2026-08-26 · 本轮联合领投 · $200M。这是本库收录的披露案例，不代表完整投资组合。",
@@ -261,8 +292,72 @@
           "source_id": "FISRC-00ed3d8fd701898b"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构使命、成立年份与 TMT 投资策略来自官网；官网公开投资团队邮箱仅限 TMT 团队联系，不代表接受所有外部投资申请。一般邮箱及电话用于机构咨询。交易库名称无法判定直接或关联主体参与时，不推定为 QIA 本体。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "QIA 官网",
+          "value": "Qatar Investment Authority",
+          "url": "https://www.qia.qa/en/About/Pages/default.aspx",
+          "source_id": "qia_about"
+        },
+        {
+          "kind": "email",
+          "label": "一般咨询邮箱",
+          "value": "contactus@qia.qa",
+          "url": "https://qia.qa/Contact/Contact.aspx",
+          "source_id": "qia_contact"
+        },
+        {
+          "kind": "email",
+          "label": "TMT 投资团队邮箱（仅 TMT 方向）",
+          "value": "TMTwebsite@qia.qa",
+          "url": "https://www.qia.qa/en/portfolio/pages/tmt.aspx",
+          "source_id": "qia_tmt"
+        },
+        {
+          "kind": "phone",
+          "label": "官网公开总机",
+          "value": "+974 4499 5919 / +974 4499 5900 / +974 4499 5844",
+          "url": "https://qia.qa/Contact/Contact.aspx",
+          "source_id": "qia_contact"
+        },
+        {
+          "kind": "address",
+          "label": "多哈总部地址",
+          "value": "Ooredoo Tower (Building 14), Dafna Street (Street 801), Al Dafna District (Zone 61), Doha, P.O. Box 23224, Qatar",
+          "url": "https://qia.qa/Contact/Contact.aspx",
+          "source_id": "qia_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "qia_about",
+          "source_url": "https://www.qia.qa/en/About/Pages/default.aspx",
+          "source_title": "About | Qatar Investment Authority",
+          "source_content_hash": "2f6a2d48dc7ebf7fdf2ead48dfa64d088bbe5c330c80db9fb518e577294cec2c",
+          "quote": "Qatar Investment Authority is the sovereign wealth fund of the State of Qatar. QIA was established in 2005 to protect and grow Qatar’s financial assets and diversify the economy.",
+          "quote_hash": "11b3525eec565baadfb3892cb109b9e0795c3c6373e017706bff041a39a0d7a2"
+        },
+        {
+          "source_id": "qia_tmt",
+          "source_url": "https://www.qia.qa/en/portfolio/pages/tmt.aspx",
+          "source_title": "Technology, Media & Telecommunications | QIA",
+          "source_content_hash": "1f1cb42edf1a96652903ecd120382314ac3f9e99297ec6bed07743c4f040241f",
+          "quote": "The TMT team invests in information technology and communications services, including growth equity financing, IPOs, public markets and buyouts; TMTwebsite@qia.qa is its public contact.",
+          "quote_hash": "c125cc3a0b2cf8bb7ed52c6de3b9a98ad3a78e9b994047f0a5a7db463a480f6a"
+        },
+        {
+          "source_id": "qia_contact",
+          "source_url": "https://qia.qa/Contact/Contact.aspx",
+          "source_title": "Contact Us | Qatar Investment Authority",
+          "source_content_hash": "965dea492adb10f232e000bf9b1b0b7bb33c770e80bb4eae6bbb6b20308d65ce",
+          "quote": "General Information: contactus@qia.qa. Headquarters: Ooredoo Tower (Building 14), Doha, Qatar. Phone numbers: +974 4499 5919, +974 4499 5900, +974 4499 5844.",
+          "quote_hash": "14ae9149245b602c56cbcd301cd7620a2b999883fc4f95220e1708eb9c9490c0"
+        },
         {
           "source_id": "FISRC-36551c55b72c6244",
           "source_url": "https://www.artificialintelligence-news.com/news/gatik-200m-ai-autonomous-freight",
@@ -288,7 +383,7 @@
           "quote_hash": "43b6c52820315c7b7d8bb79333f9ec5196afe4add62139cb3c5f7ecaf9a3453a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

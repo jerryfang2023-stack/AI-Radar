@@ -111,33 +111,68 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "陈宇森 的来源线索将其与长亭科技（联合创始人）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
+      "summary": "陈宇森是网络安全创业者，浙江大学计算机科学与技术专业毕业，曾为美国西北大学访问学者。大学期间组建浙大 AAA 战队，后加入蓝莲花战队，并在 2014 年与队友联合创办长亭科技，担任 CEO、负责商业拓展。2017 年入选《福布斯》中国 30 位 30 岁以下精英。此履历依据 2015—2018 年公开报道，反映历史任职；不据此推断其当前职位。",
       "current_roles": [],
       "career": [
         {
           "organization": "长亭科技",
-          "title": "联合创始人",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-ea950b973036096e"
+          "title": "联合创始人、CEO",
+          "period": "2014—至少 2018 年（报道时）",
+          "description": "与蓝莲花战队队友共同创办网络安全公司；早期负责商业拓展并推动安全产品和服务商业化。2018 年报道仍称其为 CEO；本资料不代表其现任该职。",
+          "source_id": "chen_yusen_profile"
+        },
+        {
+          "organization": "蓝莲花（Blue-Lotus）网络安全战队",
+          "title": "战队成员",
+          "period": "大学期间至创业前后",
+          "description": "参与国内外攻防竞赛。媒体对其战队经历的报道记载，蓝莲花战队于 2013 年参加 DEF CON CTF 并获得全球第 11 名。",
+          "source_id": "chen_yusen_profile"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "浙江大学计算机学院",
+          "qualification": "计算机科学与技术专业；据 2018 年报道，免试保送竺可桢学院求是科学班",
+          "source_id": "chen_yusen_profile"
+        },
+        {
+          "institution": "美国西北大学",
+          "qualification": "访问学者（非学位经历）",
+          "source_id": "chen_yusen_profile"
+        }
+      ],
+      "experience_summary": "经历覆盖网络安全攻防竞赛、应用层防护产品研发与早期创业公司商业拓展。与队友创办长亭科技后，团队将安全研究产品化，曾推出 SQL 注入检测与防御引擎 SQLChop；相关产品于 2015 年登上 Black Hat。",
+      "track_record": [
+        {
+          "description": "2017 年入选《福布斯》中国 30 位 30 岁以下精英榜单（据 2018 年报道）。",
+          "source_id": "chen_yusen_profile"
+        },
+        {
+          "description": "长亭科技团队开发的 SQLChop 于 2015 年在 Black Hat 展示；报道将其作为该公司早期产品研发成果。",
+          "source_id": "chen_yusen_company"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-ea950b973036096e",
-          "source_url": "https://pitchhub.36kr.com/project/2144716750488835",
-          "source_title": "融资披露来源",
-          "source_content_hash": "8425056d913a657a57736d7de58fab2d85d9df124bdf0a7e4919439837868c86",
-          "quote": "陈宇森 联合创始人",
-          "quote_hash": "553a0ca14ec40c5a94eb0a90328d92223467479bd484d83835fd7971481ab0bc"
+          "source_id": "chen_yusen_profile",
+          "source_url": "https://www.thepaper.cn/newsDetail_forward_2305721",
+          "source_title": "福布斯榜上的浙大26岁校友陈宇森：从黑客到CEO",
+          "source_content_hash": "2fb4e12283090a6c1b2292cdbbfbf8b9a9daa4780d60d5f1364421f53fb16a40",
+          "quote": "2018年报道记载陈宇森毕业于浙江大学计算机学院，曾为美国西北大学访问学者，2017年入选福布斯中国30位30岁以下精英；报道当时称其为长亭科技CEO。",
+          "quote_hash": "a43f0350d491f5872e44cbae945e552263c795c900ba45a37e36c9ab99333ba1"
+        },
+        {
+          "source_id": "chen_yusen_company",
+          "source_url": "https://www.pencilnews.cn/p/720.html",
+          "source_title": "真格投他600万 4个黑客干了个网络安全公司 3个月已服务30家客户",
+          "source_content_hash": "9439abff4a1041961b12e218cfca06f325a1759a77bc39e2e98ca8a047fbbbff",
+          "quote": "2015年报道记载陈宇森与朱文雷等人于2014年共同成立长亭科技，团队于当年推出SQLChop并在Black Hat展示。",
+          "quote_hash": "3ad12cb147b02208c937c8995f0346a1e4af2694e56d13b9c74a81cf7982f6fc"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
     }
   },
   "relatedEntities": [],

@@ -108,33 +108,46 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "Stav Levi-Neumark 的来源线索将其与Alta（CEO 兼联合创始人）关联。来源日期：2026-07-13；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "Alta官网将Stav Levi-Neumark列为联合创始人兼CEO，并称其曾在monday.com担任增长负责人、构建助力公司扩展的数据产品。任职时间、学位等未在官网该页详细展开。",
+      "current_roles": [
+        {
+          "title": "联合创始人兼CEO",
+          "organization": "Alta",
+          "source_id": "alta_stav"
+        }
+      ],
       "career": [
         {
+          "organization": "monday.com",
+          "title": "增长负责人",
+          "period": "加入及离任时间未披露",
+          "description": "Alta官网介绍其曾构建业务数据产品，支持营收团队分析运营情况。",
+          "source_id": "alta_stav"
+        },
+        {
           "organization": "Alta",
-          "title": "CEO 兼联合创始人",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将Stav Levi-Neumark与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-9661f69b0104e76e"
+          "title": "联合创始人兼CEO",
+          "period": "官网披露时点",
+          "description": "AI驱动的销售及营收工作平台创业。",
+          "source_id": "alta_stav"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
+      "experience_summary": "Alta官网称其早期增长工作经历与公司业务扩展相关；具体营收规模属于公司简介口径。",
       "track_record": [],
       "sources": [
         {
-          "source_id": "FISRC-9661f69b0104e76e",
-          "source_url": "https://prnewswire.com/news-releases/alta-raises-25m-to-redefine-the-go-to-market-architecture-for-revenue-teams-302820618.html",
-          "source_title": "融资披露来源",
-          "source_content_hash": "36ef58eefd2bf0d4",
-          "quote": "Stav Levi-Neumark, CEO and Co-founder of Alta",
-          "quote_hash": "6b24c1d489de5fdce50f85a576ae9d1a2eeab87cc6a6f70bbca8453d7b1821c8"
+          "source_id": "alta_stav",
+          "source_url": "https://www.altahq.com/author/stav-neumark",
+          "source_title": "Stav Levi-Neumark | Alta",
+          "source_content_hash": "6f18ca7ab27e867b553fe232bc836c8f138f0ad9e72953b91b091daa9cde2f2b",
+          "quote": "Stav is the Co-founder and CEO of Alta. A former growth leader at monday.com, she built data products that helped scale the company to over $1B ARR.",
+          "quote_hash": "c27413b166ed707759709ad69a424b30f7f471774f6b195a5cafaee46f07030b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
     }
   },
   "relatedEntities": [],

@@ -111,33 +111,74 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "张玉峰 的来源线索将其与无界动力（创始人兼CEO）关联。来源日期：2026-08-03；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "张玉峰是无界动力创始人兼CEO。界面新闻报道其2017年加入地平线，先后担任副总裁、智能汽车事业部总裁、公司董事及经营管理委员会成员，2025年上半年离职创业。钛媒体对其早年Sony、ARM研发管理经历及地平线期间的团队和量产交付经验作了报道；相关公司业绩数据为媒体转述，非独立审计。",
+      "current_roles": [
+        {
+          "title": "创始人兼CEO",
+          "organization": "无界动力",
+          "source_id": "zhang_tmtpost"
+        }
+      ],
       "career": [
+        {
+          "organization": "Sony",
+          "title": "研发管理（具体职位未披露）",
+          "period": "加入地平线之前；年份未披露",
+          "description": "钛媒体报道其曾在Sony总部从事研发管理。",
+          "source_id": "zhang_tmtpost"
+        },
+        {
+          "organization": "ARM",
+          "title": "研发管理（具体职位未披露）",
+          "period": "加入地平线之前；年份未披露",
+          "description": "钛媒体报道其曾在ARM总部从事研发管理。",
+          "source_id": "zhang_tmtpost"
+        },
+        {
+          "organization": "地平线",
+          "title": "副总裁、智能汽车事业部总裁、董事及经营管理委员会成员",
+          "period": "2017年至2025年上半年",
+          "description": "负责智能汽车业务；界面新闻报道其带队经历从技术研发到规模化交付。",
+          "source_id": "zhang_jiemian"
+        },
         {
           "organization": "无界动力",
           "title": "创始人兼CEO",
-          "period": "来源记录于 2026-08-03；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-1ba0d3278a5daffa"
+          "period": "2025年创立；2026年报道时在任",
+          "description": "聚焦具身智能机器人的通用大脑与操作智能。",
+          "source_id": "zhang_jiemian"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
-      "sources": [
+      "experience_summary": "职业经历涵盖Sony、ARM研发管理，地平线智能汽车业务管理与规模化交付，以及具身智能创业；可核验来源未提供教育经历。",
+      "track_record": [
         {
-          "source_id": "FISRC-1ba0d3278a5daffa",
-          "source_url": "https://www.163.com/dy/article/KRI6KTBP055651K9.html",
-          "source_title": "融资披露来源",
-          "source_content_hash": "f02077e900685240b9d8ced3e15c5f793c2a936f807c05d70a686b22e8f25ec5",
-          "quote": "创始人兼CEO张玉峰为前地平线副总裁，曾将地平线智驾业务做到国内份额第一",
-          "quote_hash": "af5d665edd05d6c4b7a9afa5f5cba99bc7620f6489dc0da277bf52a1efb0f793"
+          "description": "界面新闻报道其带领地平线团队经历智驾技术研发至规模化交付；钛媒体转述其团队曾实现千万套级方案交付，该数量为媒体引用的公司/人士口径。",
+          "source_id": "zhang_jiemian"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "sources": [
+        {
+          "source_id": "zhang_jiemian",
+          "source_url": "https://www.jiemian.com/article/14975523.html",
+          "source_title": "界面新闻专访：无界动力张玉峰",
+          "source_content_hash": "76771879f983af379f855c14e23efbffee79eb45a016dc6a3753d6b6f25955f8",
+          "quote": "界面新闻称张玉峰2017年加入地平线，曾任副总裁、智能汽车事业部总裁、董事及经营管理委员会成员，并于2025年上半年离职创业。",
+          "quote_hash": "73e6324213bd54bd2bce912392e036289eb1cee9b8ce5008b9f6a9be9f444e7c"
+        },
+        {
+          "source_id": "zhang_tmtpost",
+          "source_url": "https://www.tmtpost.com/7756068.html",
+          "source_title": "钛媒体：地平线高管张玉峰创业具身智能",
+          "source_content_hash": "5bb1f2ccaf2e7adb9a2233b0e3b607105d5b714eeadd4b2f57795aabd61aa713",
+          "quote": "钛媒体报道张玉峰曾在Sony、ARM从事研发管理，2017年加入地平线，并创立无界动力担任CEO。",
+          "quote_hash": "2e1f98f0ed6c9c63703aa5cab9be6ce142e32627b069424d89549a185f3a2332"
+        }
+      ],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "以署名媒体专访和融资报道互证；业绩数字保留为报道转述，不将团队成果视为个人独立成果；教育信息未披露。",
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

@@ -186,14 +186,62 @@
       }
     ],
     "public_profile": {
+      "summary": "融资情报站以“国泰海通基金”标签收录该机构参与智平方B轮，但公开披露尚未指明具体出资基金。国泰海通开元官网确认其为国泰海通证券全资私募股权投资子公司，并披露母基金和直投业务、上市案例及管理团队。下列集团平台数据与具体参投基金的关系尚未核实，不作为该笔投资载体的单体规模或业绩。",
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "国泰海通基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-11；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "融资材料只以“国泰海通基金”称呼投资方，未公开具体基金法律名称或管理人，故不能确认本条记录对应国泰海通开元、海通创新、海通吉禾或其他子公司/单只基金。以下机构背景、管理规模、业绩和团队履历均来自国泰海通开元官网，代表集团旗下私募股权投资平台信息，不代表这笔智平方投资的具体载体。官网所列近1300亿元管理资金规模、基金数量和团队职务未标明统计或资料截止日；上市项目数字有明确的2024-12-31时点。",
+      "facts": [
+        {
+          "field": "group_platform_legal_name",
+          "label": "集团旗下私募股权投资平台",
+          "value": "国泰海通开元投资有限公司；官网称其成立于2008年，是国泰海通证券全资所有的私募投资基金子公司。此为集团平台背景，不等于确认融资数据库中的具体投资载体。",
+          "source_id": "gtht_kaiyuan_profile"
+        },
+        {
+          "field": "registered_capital",
+          "label": "注册资本",
+          "value": "国泰海通开元官网列示注册资本人民币55亿元；该数据属于集团私募股权投资子公司。",
+          "source_id": "gtht_kaiyuan_profile"
+        },
+        {
+          "field": "reported_managed_capital",
+          "label": "官网披露的管理资金规模（统计日期未注明）",
+          "value": "官网简介列示近人民币1300亿元，未注明统计时点及口径拆分；不能据此认定为“国泰海通基金”标签下具体基金的AUM。",
+          "source_id": "gtht_kaiyuan_profile"
+        },
+        {
+          "field": "fund_management_model",
+          "label": "业务模式与基金管理规模（官网页面未注明统计日期）",
+          "value": [
+            "母基金业务：官网称旗下设有7家基金管理子公司，共管理122余只基金。",
+            "直接投资业务：官网称投资团队直接管理19只私募股权投资基金。"
+          ],
+          "source_id": "gtht_kaiyuan_investment_model"
+        },
+        {
+          "field": "investment_approach",
+          "label": "官网介绍的投资理念",
+          "value": "发现价值和实现价值；关注具有良好诚信记录、商业模式清晰成熟、具备独特核心竞争力的成长型企业，并整合国泰海通证券资源提供投后及资本市场服务。",
+          "source_id": "gtht_kaiyuan_management_team"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2008",
+          "description": "国泰海通开元官网披露公司成立于2008年。",
+          "source_id": "gtht_kaiyuan_profile"
+        }
+      ],
       "track_record": [
+        {
+          "description": "截至2024年12月31日，国泰海通开元及旗下管理公司的被投资企业累计上市项目（含借壳、并购）逾130家；这是集团平台及旗下管理公司的合并口径，不是单只基金业绩。",
+          "source_id": "gtht_kaiyuan_listed_outcomes_2024"
+        },
+        {
+          "description": "官网列出的资本市场案例包括逸飞激光、陕西华达、康希通信、宏源药业、纳睿雷达等；页面未逐案标明具体基金或直接投资主体。",
+          "source_id": "gtht_kaiyuan_case_list"
+        },
         {
           "description": "融资来源记录：智平方 · B轮 · 2026-04-11 · 本轮参投 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-16a5b9f7da3616f3"
@@ -203,8 +251,264 @@
           "source_id": "FISRC-2b8807c0477dce70"
         }
       ],
-      "contacts": [],
+      "current_roles": [
+        {
+          "title": "韩志达｜董事长、法定代表人；国泰海通证券副总裁",
+          "organization": "国泰海通开元投资有限公司（官网列示，任职资料未标截止日）",
+          "source_id": "gtht_kaiyuan_management_team"
+        },
+        {
+          "title": "张均宇｜总经理",
+          "organization": "国泰海通开元投资有限公司（官网列示，任职资料未标截止日）",
+          "source_id": "gtht_kaiyuan_management_team"
+        },
+        {
+          "title": "张庆生｜副总经理、首席投资官",
+          "organization": "国泰海通开元投资有限公司（官网列示，任职资料未标截止日）",
+          "source_id": "gtht_kaiyuan_management_team"
+        },
+        {
+          "title": "胡曙光｜副总经理",
+          "organization": "国泰海通开元投资有限公司（官网列示，任职资料未标截止日）",
+          "source_id": "gtht_kaiyuan_management_team"
+        },
+        {
+          "title": "胡越｜副总经理",
+          "organization": "国泰海通开元投资有限公司（官网列示，任职资料未标截止日）",
+          "source_id": "gtht_kaiyuan_management_team"
+        },
+        {
+          "title": "曾文煜｜副总经理",
+          "organization": "国泰海通开元投资有限公司（官网列示，任职资料未标截止日）",
+          "source_id": "gtht_kaiyuan_management_team"
+        },
+        {
+          "title": "汪艳｜副总经理、合规总监",
+          "organization": "国泰海通开元投资有限公司（官网列示，任职资料未标截止日）",
+          "source_id": "gtht_kaiyuan_management_team"
+        },
+        {
+          "title": "胡炎｜总经理助理",
+          "organization": "国泰海通开元投资有限公司（官网列示，任职资料未标截止日）",
+          "source_id": "gtht_kaiyuan_management_team"
+        },
+        {
+          "title": "汪秉权｜总经理助理",
+          "organization": "国泰海通开元投资有限公司（官网列示，任职资料未标截止日）",
+          "source_id": "gtht_kaiyuan_management_team"
+        },
+        {
+          "title": "潘晓文｜业务总监",
+          "organization": "国泰海通开元投资有限公司（官网列示，任职资料未标截止日）",
+          "source_id": "gtht_kaiyuan_management_team"
+        },
+        {
+          "title": "崔巍｜行政总监",
+          "organization": "国泰海通开元投资有限公司（官网列示，任职资料未标截止日）",
+          "source_id": "gtht_kaiyuan_management_team"
+        },
+        {
+          "title": "朱砺之｜业务总监",
+          "organization": "国泰海通开元投资有限公司（官网列示，任职资料未标截止日）",
+          "source_id": "gtht_kaiyuan_management_team"
+        },
+        {
+          "title": "徐天云｜运营总监",
+          "organization": "国泰海通开元投资有限公司（官网列示，任职资料未标截止日）",
+          "source_id": "gtht_kaiyuan_management_team"
+        },
+        {
+          "title": "付峪｜业务总监",
+          "organization": "国泰海通开元投资有限公司（官网列示，任职资料未标截止日）",
+          "source_id": "gtht_kaiyuan_management_team"
+        },
+        {
+          "title": "芦伊莎｜首席风险官",
+          "organization": "国泰海通开元投资有限公司（官网列示，任职资料未标截止日）",
+          "source_id": "gtht_kaiyuan_management_team"
+        },
+        {
+          "title": "田鹰｜业务总监",
+          "organization": "国泰海通开元投资有限公司（官网列示，任职资料未标截止日）",
+          "source_id": "gtht_kaiyuan_management_team"
+        },
+        {
+          "title": "葛峰｜业务总监",
+          "organization": "国泰海通开元投资有限公司（官网列示，任职资料未标截止日）",
+          "source_id": "gtht_kaiyuan_management_team"
+        }
+      ],
+      "career": [
+        {
+          "organization": "韩志达",
+          "title": "历任国泰君安证券并购融资部董事总经理、北京投行一部行政负责人、战略发展部总经理、数字化转型办公室主任、政策研究院院长；曾任国泰君安证裕投资副董事长、总经理",
+          "period": "具体任期未披露",
+          "description": "官网列为国泰海通开元董事长、法定代表人及国泰海通证券副总裁；官网称其证券与投资从业逾20年。",
+          "source_id": "gtht_kaiyuan_management_team"
+        },
+        {
+          "organization": "张均宇",
+          "title": "历任海通证券股权融资部副总经理、投资银行办公室主任、投资银行部副总经理、海富产业投资基金管理有限公司总经理",
+          "period": "具体任期未披露",
+          "description": "官网列为国泰海通开元总经理，并称其拥有30年投资银行、股权投资等金融工作经验；另兼海富产业投资基金管理有限公司及海通新能源私募股权投资管理有限公司董事长、总经理。",
+          "source_id": "gtht_kaiyuan_management_team"
+        },
+        {
+          "organization": "张庆生",
+          "title": "历任健桥证券经纪业务总部总经理、海通证券西安营业部总经理、海通创新投资总监及副总经理",
+          "period": "具体任期未披露；官网注明2006年12月起任海通证券西安营业部总经理",
+          "description": "官网列为国泰海通开元副总经理、首席投资官；另兼海通创新私募基金管理有限公司董事长、总经理；官网称其金融工作经验30余年。",
+          "source_id": "gtht_kaiyuan_management_team"
+        },
+        {
+          "organization": "胡曙光",
+          "title": "历任海通证券投资管理部总经理助理、上海海通证券资产管理有限公司副总经理、海通创意私募基金管理有限公司总经理及董事长",
+          "period": "具体任期未披露",
+          "description": "官网列为国泰海通开元副总经理，并另列其兼任海通创意董事长；入选2020年上海领军金才、2024年东方英才领军项目。",
+          "source_id": "gtht_kaiyuan_management_team"
+        },
+        {
+          "organization": "胡越",
+          "title": "历任上海国际集团金融管理总部总经理助理、资本运营部副总经理；国泰君安证券董事会办公室副主任、资产管理业务委员会委员兼执行办公室主任",
+          "period": "具体任期未披露",
+          "description": "官网列为国泰海通开元副总经理，并兼任国泰君安创新投资有限公司执行委员会委员；官网称其金融行业工作经验21年。",
+          "source_id": "gtht_kaiyuan_management_team"
+        },
+        {
+          "organization": "曾文煜",
+          "title": "历任虹口区政府金融服务局副局长、上海证券交易所多个部门管理职务、德邦基金副总经理、上银瑞金资本董事长",
+          "period": "具体任期未披露",
+          "description": "官网列为国泰海通开元副总经理，并兼任国泰君安创新投资有限公司执行委员会委员；官网称其金融行业工作经验10年。",
+          "source_id": "gtht_kaiyuan_management_team"
+        },
+        {
+          "organization": "汪艳",
+          "title": "历任国泰海通开元合规总监兼首席风险官、合规风控部经理，交通银行总行风控经理",
+          "period": "具体任期未披露",
+          "description": "官网列为国泰海通开元副总经理、合规总监；拥有CPA证书，官网称相关金融经历逾16年。",
+          "source_id": "gtht_kaiyuan_management_team"
+        },
+        {
+          "organization": "胡炎",
+          "title": "历任上海市金融局地方金融管理处、金融创新处主任科员，上海自贸区基金总经理助理、管理合伙人，国泰君安创新投母基金部负责人、国君资管副总经理、国泰海通开元总裁助理",
+          "period": "具体任期未披露",
+          "description": "官网列为国泰海通开元总经理助理，并称其在母基金募集与运作方面积累了经验。",
+          "source_id": "gtht_kaiyuan_management_team"
+        },
+        {
+          "organization": "汪秉权",
+          "title": "历任上海银行总行投行部并购及股权团队负责人、上坤置业集团副总经理、长江养老保险另类投资中心股权投资部负责人",
+          "period": "具体任期未披露",
+          "description": "官网列为国泰海通开元总经理助理，并兼任国泰君安创新投资有限公司执行委员会委员；官网称其金融行业工作经验19年。",
+          "source_id": "gtht_kaiyuan_management_team"
+        },
+        {
+          "organization": "潘晓文",
+          "title": "历任海通证券投资银行部项目经理、交易总部高级研究员、并购融资部总经理助理",
+          "period": "具体任期未披露",
+          "description": "官网列为国泰海通开元业务总监，并兼任海通吉禾私募股权投资基金管理有限责任公司董事长、总经理；官网称其证券及投资领域经验逾29年。",
+          "source_id": "gtht_kaiyuan_management_team"
+        },
+        {
+          "organization": "崔巍",
+          "title": "历任海通证券计划财务部专务、国泰海通开元财务部经理兼风控部经理、总裁助理、副总裁、首席风险官",
+          "period": "具体任期未披露",
+          "description": "官网列为国泰海通开元行政总监，并称其证券市场从业经历近20年。",
+          "source_id": "gtht_kaiyuan_management_team"
+        },
+        {
+          "organization": "朱砺之",
+          "title": "历任海通资管投资经理助理、投资主办人、另类投资部总监助理，后任海通并购资本投资部门负责人、投资总监",
+          "period": "具体任期未披露",
+          "description": "官网列为国泰海通开元业务总监，并兼任海通并购（上海）私募基金管理有限公司执行董事、副总经理（主持工作）；官网称其具有权益投资、并购重组和基金运营经验。",
+          "source_id": "gtht_kaiyuan_management_team"
+        },
+        {
+          "organization": "徐天云",
+          "title": "历任毕马威会计师事务所审计部经理、国泰君安证券风险管理部风险控制专员、股权业务审核及国泰君安资本管理公司董事总经理兼合规风控负责人",
+          "period": "具体任期未披露",
+          "description": "官网列为国泰海通开元运营总监，并兼任国泰君安创新投资有限公司执行委员会委员、首席风险官兼合规总监；官网称金融工作经验21年。",
+          "source_id": "gtht_kaiyuan_management_team"
+        },
+        {
+          "organization": "付峪",
+          "title": "曾任海通创新私募基金管理有限公司投资经理",
+          "period": "具体任期未披露",
+          "description": "官网列为国泰海通开元业务总监，并兼任海通创新投资总监；官网称其在股权投资领域从业14年，具有产业投资和基金运营经验。",
+          "source_id": "gtht_kaiyuan_management_team"
+        },
+        {
+          "organization": "芦伊莎",
+          "title": "历任海通创新私募合规经理、国泰海通开元投后督导、合规风控部副经理、海通创新私募首席风险官",
+          "period": "具体任期未披露",
+          "description": "官网列为国泰海通开元首席风险官，并兼任海通创新私募基金管理有限公司首席风险官；官网称其从事私募基金子公司合规风控管理逾15年。",
+          "source_id": "gtht_kaiyuan_management_team"
+        },
+        {
+          "organization": "田鹰",
+          "title": "历任国泰海通开元投资岗、基金部部门经理、海通新能源总经理助理",
+          "period": "具体任期未披露",
+          "description": "官网列为国泰海通开元业务总监，并兼任海通新能源私募股权投资管理有限公司总经理助理、投资总监；官网称其有15年私募股权基金经验及超过5年审计、并购咨询经验。",
+          "source_id": "gtht_kaiyuan_management_team"
+        },
+        {
+          "organization": "葛峰",
+          "title": "历任STG软件技术、亚开资讯、摩托罗拉中国软件工程师，摩根士丹利美国固定收益部数量分析师、Amundi Alternative Investments对冲基金组合投资及风险管理高级分析师、浙商银行投行总部高级经理",
+          "period": "具体任期未披露",
+          "description": "官网列为国泰海通开元业务总监，并兼任国泰君安创新投资有限公司执行委员会委员；官网称其金融行业工作经验20年。",
+          "source_id": "gtht_kaiyuan_management_team"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "国泰海通开元官方网站",
+          "value": "国泰海通开元投资有限公司官网",
+          "url": "https://www.htcc.fund/",
+          "source_id": "gtht_kaiyuan_profile"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "gtht_kaiyuan_profile",
+          "source_url": "https://www.htcc.fund/zh/gywm/index.shtml",
+          "source_title": "国泰海通开元投资有限公司｜公司简介",
+          "source_content_hash": "3c352f675851e6bc6002c06db980627770200a41b271b729e491fdb2c041eb99",
+          "quote": "国泰海通开元投资有限公司（简称“国泰海通开元”）成立于2008年，是国泰海通证券全资所有的私募投资基金子公司，注册资本为55亿元，管理资金规模近1300亿元。",
+          "quote_hash": "0fbd838232b16f6cb65b995207dcdaa07ced8b236e2a06417baf66b876deafca"
+        },
+        {
+          "source_id": "gtht_kaiyuan_investment_model",
+          "source_url": "https://www.htcc.fund/zh/gywm/index.shtml",
+          "source_title": "国泰海通开元投资有限公司｜业务模式",
+          "source_content_hash": "3c352f675851e6bc6002c06db980627770200a41b271b729e491fdb2c041eb99",
+          "quote": "国泰海通开元的业务模式分为两类：一是，国泰海通开元以母基金形式发起设立私募股权投资基金，并控股相应的基金管理人。目前，国泰海通开元旗下设有7家基金管理子公司，共管理122余只基金的投资运作；二是，国泰海通开元作为国泰海通证券的私募投资基金子公司，直接从事一级市场私募股权投资基金管理业务。目前，国泰海通开元投资团队直接管理的私募股权投资基金为19只。",
+          "quote_hash": "65d4012e3c9a116c696dedbbe2810a38eb09cc14e68a7e73f299e8a426ba1ecb"
+        },
+        {
+          "source_id": "gtht_kaiyuan_listed_outcomes_2024",
+          "source_url": "https://www.htcc.fund/zh/gywm/index.shtml",
+          "source_title": "国泰海通开元投资有限公司｜截至2024年底的上市案例数据",
+          "source_content_hash": "3c352f675851e6bc6002c06db980627770200a41b271b729e491fdb2c041eb99",
+          "quote": "截至2024年12月31日，国泰海通开元及旗下管理公司的被投资企业中，累计上市项目（含借壳、并购）逾130家。",
+          "quote_hash": "56d5592a862d1088f66ca7ac3beaba1e8537980373bcac3f063032d1c85f4029"
+        },
+        {
+          "source_id": "gtht_kaiyuan_case_list",
+          "source_url": "https://www.htcc.fund/zh/gywm/index.shtml",
+          "source_title": "国泰海通开元投资有限公司｜资本市场案例",
+          "source_content_hash": "3c352f675851e6bc6002c06db980627770200a41b271b729e491fdb2c041eb99",
+          "quote": "逸飞激光 688646.SH 陕西华达 301517.SZ 康希通信 688653.SH 宏源药业 301246.SZ 纳睿雷达 688522.SH",
+          "quote_hash": "e3a771707598048a3df43f7f1e224baba6af18341f39c900b138971588204e0b"
+        },
+        {
+          "source_id": "gtht_kaiyuan_management_team",
+          "source_url": "https://www.htcc.fund/zh/gltd/index.shtml",
+          "source_title": "国泰海通开元投资有限公司｜管理团队",
+          "source_content_hash": "9a8e25d7fe7cee4e84310819710d646eae6fede7597690a7bf912278142bf68e",
+          "quote": "国泰海通开元投资管理团队具备深厚的专业知识、广阔的投资视野、稳健的投资风格和多年市场磨砺的深刻经验，通过整合国泰海通证券“一体化”资源、发扬自身优势和特点，为被投资企业提供增值及全方位的资本市场服务。",
+          "quote_hash": "3602ab6fb6c0907a97010beb7aff9f0777f11002b0268e653996ec7950cc955b"
+        },
         {
           "source_id": "FISRC-16a5b9f7da3616f3",
           "source_url": "https://www.robothub.app/zh/companies/zhipingfang",
@@ -222,7 +526,7 @@
           "quote_hash": "bda5f9cfb59b9cae2d95b5d29f6b83c2024aed8b21c13bfc78e9f6a135c00717"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

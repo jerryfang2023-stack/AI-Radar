@@ -283,13 +283,59 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "招商局创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "招商局创投是招商局集团于2015年设立的企业创投平台，以投资推动产业与科技创新融合。招商局集团官网称其截至2024年底管理资产规模超过160亿元、累计投资项目180余个；基金管理、投资领域和奖项信息均为集团公开披露，不作为基金回报率。",
+      "facts": [
+        {
+          "field": "legal_entity",
+          "label": "运营主体",
+          "value": "招商局创新投资管理有限责任公司（简称招商局创投）。",
+          "source_id": "cmhk_profile"
+        },
+        {
+          "field": "founded",
+          "label": "设立时间",
+          "value": "2015年。",
+          "source_id": "cmhk_profile"
+        },
+        {
+          "field": "parent_company",
+          "label": "集团关系",
+          "value": "招商局集团企业创投平台。",
+          "source_id": "cmhk_profile"
+        },
+        {
+          "field": "funds",
+          "label": "基金结构（集团披露）",
+          "value": "自有资金创投基金、“双GP”产业生态创新基金和市场化募集基金三类，共8支基金；业务包括母基金投资及项目直接投资。",
+          "source_id": "cmhk_profile"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "集团主业相关的交通物流、综合金融、地产园区，以及数智科技、绿色科技、生命科技等战略性新兴产业。",
+          "source_id": "cmhk_focus"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2015",
+          "description": "招商局集团设立招商局创新投资管理有限责任公司。",
+          "source_id": "cmhk_profile"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "集团官网介绍其以早期和成长期VC基金及项目为主，兼顾母基金与直接投资，并围绕招商局产业价值链发掘产业科技创新项目。",
       "track_record": [
+        {
+          "description": "招商局集团官网披露，截至2024年底管理资产规模超过160亿元、累计投资项目180余个；此为规模和项目数量，不等于基金收益。",
+          "source_id": "cmhk_metrics"
+        },
+        {
+          "description": "集团官网列出2024年度投资行业奖项，并称5家被投企业入选清科2024 Venture 50；这是集团披露的获奖与组合信息，不代表完整投资组合或退出表现。",
+          "source_id": "cmhk_awards"
+        },
         {
           "description": "融资来源记录：深度智控 · B+轮 · 2026-09-08 · B轮老股东持续加码 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-67ccadc4294defd6"
@@ -303,8 +349,48 @@
           "source_id": "FISRC-aad97c1f07ceb5c6"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "招商局集团官方机构介绍",
+          "value": "招商局创投",
+          "url": "https://www.cmhk.com/main/ywfw/xcy/zsct/content/1953024066001248258_1953024066013831169.html",
+          "source_id": "cmhk_profile"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "cmhk_profile",
+          "source_url": "https://www.cmhk.com/main/ywfw/xcy/zsct/content/1953024066001248258_1953024066013831169.html",
+          "source_title": "招商局创投 - 招商局集团",
+          "source_content_hash": "584d85c00bb8361ff407147d736e3e8e891c69ebc786065277b94934a546cf73",
+          "quote": "招商局创新投资管理有限责任公司（简称“招商局创投”）设立于2015年，是招商局集团的企业创投平台。",
+          "quote_hash": "7d3a493e2f2145a78ed5f7ad22b250de3c75a91209f0514b48cf7453fd5ea77f"
+        },
+        {
+          "source_id": "cmhk_metrics",
+          "source_url": "https://www.cmhk.com/main/ywfw/xcy/zsct/content/1953024066001248258_1953024066013831169.html",
+          "source_title": "招商局创投 - 招商局集团",
+          "source_content_hash": "584d85c00bb8361ff407147d736e3e8e891c69ebc786065277b94934a546cf73",
+          "quote": "截至2024年底，招商局创投资产管理规模超过160亿元，累计投资项目180余个。",
+          "quote_hash": "6ebfc0e49fae36763451b2007851181820a16cca8e7318274c54cd9b2fb0b6f5"
+        },
+        {
+          "source_id": "cmhk_focus",
+          "source_url": "https://www.cmhk.com/main/ywfw/xcy/zsct/content/1953024066001248258_1953024066013831169.html",
+          "source_title": "招商局创投 - 招商局集团",
+          "source_content_hash": "584d85c00bb8361ff407147d736e3e8e891c69ebc786065277b94934a546cf73",
+          "quote": "投资领域覆盖交通物流、综合金融、地产园区、数智科技、绿色科技、生命科技。",
+          "quote_hash": "a701e11e81975dac9dae1d303f1ce059e87941b1249e7f4fad9adc1f8dfbe62b"
+        },
+        {
+          "source_id": "cmhk_awards",
+          "source_url": "https://www.cmhk.com/main/ywfw/xcy/zsct/content/1953024066001248258_1953024066013831169.html",
+          "source_title": "招商局创投 - 招商局集团",
+          "source_content_hash": "584d85c00bb8361ff407147d736e3e8e891c69ebc786065277b94934a546cf73",
+          "quote": "2024年度中国最佳企业直投TOP50；5家被投企业上榜清科2024 Venture 50榜单。",
+          "quote_hash": "7bd148d27d4771f3d6d1ee57ebd88d74fad8f1bdc45ff76bd4bf927602da3a88"
+        },
         {
           "source_id": "FISRC-67ccadc4294defd6",
           "source_url": "https://pitchhub.36kr.com/project/1958573801870344",
@@ -330,7 +416,10 @@
           "quote_hash": "8edd3a415182b0bb5eb87fd118477bebb65363f5f2881869f694d2ce5cdfd1b0"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     },
     "translations": {
       "zh-CN": {

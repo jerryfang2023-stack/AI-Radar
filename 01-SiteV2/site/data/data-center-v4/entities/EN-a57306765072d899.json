@@ -111,33 +111,67 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "茹立云 的来源线索将其与智推时代（联合创始人）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
+      "summary": "茹立云是计算机与互联网企业经营者。清华校友总会 2019 年人物专访记载其清华计算机系本硕博背景、2005 年加入搜狗、曾任搜狗副总裁及 COO，后创办葡萄智学。2026 年商业媒体报道将其列为智推时代首席科学家；智推时代官网未见对应个人页面，故该关联仅标为媒体所述。",
       "current_roles": [],
       "career": [
         {
+          "organization": "搜狗",
+          "title": "搜索产品及技术管理岗位，后任副总裁、COO",
+          "period": "2005—2018（校友专访记载）",
+          "description": "清华校友总会专访介绍其从技术员工成长至搜索事业部负责人、副总裁和 COO，参与搜狗搜索产品发展；用户规模等数字属于专访所述公司成果。",
+          "source_id": "ruliyun_tsinghua_201901"
+        },
+        {
+          "organization": "葡萄智学",
+          "title": "创始人兼 CEO",
+          "period": "2018 年起（截至 2019 年专访）",
+          "description": "清华校友总会专访记载其 2018 年离开搜狗后创办葡萄智学。",
+          "source_id": "ruliyun_tsinghua_201901"
+        },
+        {
           "organization": "智推时代",
-          "title": "联合创始人",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将茹立云与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-602fdc3dbd5462df"
+          "title": "首席科学家（媒体报道所述，待一手来源确认）",
+          "period": "截至 2026 年 9 月报道",
+          "description": "商业媒体人物介绍将其列为智推时代首席科学家；公司官网未列出该职位，故暂不作为已独立验证的现任职务。",
+          "source_id": "ruliyun_ifeng_202609"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "清华大学计算机系",
+          "qualification": "本科、硕士、博士（清华校友总会人物专访）",
+          "source_id": "ruliyun_tsinghua_201901"
+        }
+      ],
+      "experience_summary": "职业经历覆盖搜索技术、产品与大型互联网团队管理，以及人工智能教育创业。搜狗任职经历和教育背景来自清华校友总会专访；智推时代关联来自 2026 年商业报道，尚无公司官方个人资料确认。",
+      "track_record": [
+        {
+          "description": "清华校友总会专访称其在搜狗任职期间参与搜索产品升级和产品创新，并报道搜狗搜索用户规模；该业绩归于团队与企业，不视为个人独立成果。",
+          "source_id": "ruliyun_tsinghua_201901"
+        }
+      ],
+      "coverage_status": "researched",
+      "identity_status": "verified",
+      "coverage_note": "现有主要依据为清华校友总会 2019 年人物专访。近年任职情况不完整；智推时代职务仅由商业媒体报道，待一手来源补充。",
       "sources": [
         {
-          "source_id": "FISRC-602fdc3dbd5462df",
-          "source_url": "https://news.pedaily.cn/202607/565918.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "939f8ade087f52a4",
-          "quote": "2025年5月，陈缪喆决定下场，智推时代从上海长宁一处共享办公空间起步，很快聚起一支联创团队：茹立云是搜狗前COO、百川智能联合创始人，清华大学计算机博士，深耕AI与搜索产业20多年；于大川参与创办豌豆思维，曾主导近4亿美元融资及超6亿美元并购；刘文明则是连续创业者。",
-          "quote_hash": "66e7b5d7b8e3f9f8b6cfa8f5c6085836b028cb17f9d587069101082606ea121c"
+          "source_id": "ruliyun_tsinghua_201901",
+          "source_url": "https://www.tsinghua.org.cn/info/1953/13723.htm",
+          "source_title": "茹立云：心之所向，步履不停-清华校友总会",
+          "source_content_hash": "43f31c5310243a19334f2379b8951cc28e90a85b1e55ad45acfe3a1a1599a868",
+          "quote": "茹立云，1998年考入清华大学计算机系，并在清华攻读到博士学位。2005年加入搜狗，曾任搜狗公司副总裁、COO等职位。",
+          "quote_hash": "64990c7d7ad615d3033392ecb15a8b3f9b3ce2bc84aeb47ff34c2e971a4dede1"
+        },
+        {
+          "source_id": "ruliyun_ifeng_202609",
+          "source_url": "https://biz.ifeng.com/c/8wdPkYg3LLC",
+          "source_title": "智推时代——技术AI原生型GEO综合服务商的交付答卷_凤凰网",
+          "source_content_hash": "28260073cd5cf4592a9ab509d3e92ac99471d761eae41dc3fdb165ddeee97543",
+          "quote": "报道称智推时代首席科学家茹立云为清华大学计算机博士、前搜狗COO。",
+          "quote_hash": "6c4719de65b5fc759547985fc7b88b6422a67d8ce66d7f3cec08828914fd1c56"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

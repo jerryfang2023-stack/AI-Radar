@@ -209,13 +209,54 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "SoftBank 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "SoftBank Group 是以投资为核心的战略控股集团，1981年创立，当前公开战略强调投资信息革命与AI相关企业，并通过集团直接投资、SoftBank Vision Funds及其他基金布局。集团基金管理主体包括负责SVF1及SVF2的不同子公司，因此融资数据库中的“SoftBank”表示集团层面的投资方标签，不应自动等同于某一具体基金或法人主体。官网提供投资者及媒体在线联系表单。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "创立年份",
+          "value": "1981年",
+          "source_id": "softbank_who"
+        },
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "战略投资控股集团；旗下基金通过独立管理主体运营",
+          "source_id": "softbank_group"
+        },
+        {
+          "field": "investment_strategy",
+          "label": "投资策略",
+          "value": "直接投资与旗下Vision Funds等基金共同布局全球信息科技和AI企业。",
+          "source_id": "softbank_who"
+        },
+        {
+          "field": "funds",
+          "label": "旗下基金示例",
+          "value": [
+            "SoftBank Vision Fund 1",
+            "SoftBank Vision Fund 2",
+            "Latin American Funds"
+          ],
+          "source_id": "softbank_group"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1981",
+          "description": "Masayoshi Son创立SoftBank Japan。",
+          "source_id": "softbank_who"
+        },
+        {
+          "date": "2017",
+          "description": "推出SoftBank Vision Fund 1。",
+          "source_id": "softbank_who"
+        }
+      ],
       "track_record": [
+        {
+          "description": "集团公开历史披露包括1995年投资Yahoo!及2000年投资Alibaba等早期案例；这些为集团/基金的历史披露，不代表由单一基金完成。",
+          "source_id": "softbank_who"
+        },
         {
           "description": "融资来源记录：Thrive Holdings · 轮次未披露 · 2026-08-12 · 本轮参投 · $2B。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0afb458e7b0878f0"
@@ -223,14 +264,56 @@
         {
           "description": "融资来源记录：OpenAI · F轮 · 2026-03-31 · 本轮联合领投 · $1220亿。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1e2b3bad243bd066"
-        },
-        {
-          "description": "融资来源记录：OpenAI · F轮 · 2026-03-31 · 本轮联合领投 · $1220亿。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b86e0fbe62dfd3dc"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "集团官方网站",
+          "value": "SoftBank Group",
+          "url": "https://group.softbank/en/",
+          "source_id": "softbank_group"
+        },
+        {
+          "kind": "contact_form",
+          "label": "投资者与媒体联系表单",
+          "value": "官网在线联系入口",
+          "url": "https://group.softbank/en/contact",
+          "source_id": "softbank_contact"
+        },
+        {
+          "kind": "website",
+          "label": "Vision Funds官网",
+          "value": "SoftBank Vision Funds",
+          "url": "https://visionfund.com/",
+          "source_id": "softbank_group"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "softbank_who",
+          "source_url": "https://group.softbank/en/ir/financials/annual_reports/2026/who_we_are",
+          "source_title": "Who We Are - SoftBank Group Report 2026",
+          "source_content_hash": "3f33d715d611c1c11090eafbe4b94af64434a3eae7e56611aa8d77f528b15a10",
+          "quote": "SoftBank官方报告将集团定义为战略投资控股公司，记载其1981年创立及通过直接投资与基金投资AI企业。",
+          "quote_hash": "114017c915dd69d49972c8ec403c3815bd7503062ba2087849d8f1c51446d92a"
+        },
+        {
+          "source_id": "softbank_group",
+          "source_url": "https://group.softbank/en/about/group",
+          "source_title": "Group Companies - SoftBank Group",
+          "source_content_hash": "0e6e03d8e26e4f02abae779c5e38ab30ba1bb9ad74561f16f920b16aee6dfe2c",
+          "quote": "官网列出负责Vision Fund管理的集团公司及旗下投资基金。",
+          "quote_hash": "b50f51630344ed3a2813e5ee1070edf3643dc2302078e558114f35f8d3133215"
+        },
+        {
+          "source_id": "softbank_contact",
+          "source_url": "https://group.softbank/en/contact",
+          "source_title": "Contact Us - SoftBank Group",
+          "source_content_hash": "43c517a54044567fcd32c180947389179f7ff3f84114db08393563b176576bce",
+          "quote": "官网提供投资者、分析师及媒体就集团或集团公司提交咨询的在线表单。",
+          "quote_hash": "f9269336da61e9f2d960f3acfd7c29bcf61491c2fe6a8dc826d24ce999aa9ec4"
+        },
         {
           "source_id": "FISRC-0afb458e7b0878f0",
           "source_url": "https://techcrunch.com/2026/08/12/openai-backed-thrive-holdings-raises-2b-to-bring-ai-to-the-enterprise/",
@@ -256,7 +339,10 @@
           "quote_hash": "eb1a353f262c6b5f36cf042c55381d3642167f0b24ec4185728cb1f48dbe89f2"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案描述SoftBank集团层级；具体交易应进一步区分集团直接投资与各Vision Fund实体。联系方式为官网表单，未发现公开项目投递邮箱。",
+      "last_verified_at": "2026-09-26"
     }
   }
 }

@@ -129,21 +129,100 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "北京机器人产业基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-02-11；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "北京机器人产业发展投资基金（有限合伙）是北京市设立的市级政府产业基金，目标规模 100 亿元。2023 年政府遴选公告确定其围绕机器人本体、产业链零部件及产业应用开展直接股权投资；2026 年北京市国资委资料称基金由北京国管所属京国瑞与首钢集团所属京西创投共同管理，布局具身智能、核心部件、智能算力及医疗机器人。官方 2026 年资料列举宇树科技、银河通用、松延动力、星动纪元、云深处、自变量、万勋科技、星海图和云鲸等投资案例。",
+      "facts": [
+        {
+          "field": "fund_type",
+          "label": "基金性质",
+          "value": "北京市市级政府产业投资基金（有限合伙）",
+          "source_id": "robotfund_beijing_2024"
+        },
+        {
+          "field": "target_size",
+          "label": "目标规模",
+          "value": "人民币 100 亿元（设立目标；并非已实缴金额）",
+          "source_id": "robotfund_jxj_2023"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": [
+            "机器人本体",
+            "产业链零部件",
+            "产业链创新应用",
+            "具身智能",
+            "智能算力",
+            "医疗机器人"
+          ],
+          "source_id": "robotfund_gzw_202608"
+        },
+        {
+          "field": "managers",
+          "label": "管理机构",
+          "value": [
+            "北京国管所属京国瑞",
+            "首钢集团所属京西创投"
+          ],
+          "source_id": "robotfund_gzw_202608"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2023-09",
+          "description": "北京市经济和信息化局及北京市政府投资引导基金公开遴选管理机构，披露基金目标规模与投资方向。",
+          "source_id": "robotfund_jxj_2023"
+        },
+        {
+          "date": "2024-01",
+          "description": "北京市政府报道基金以 100 亿元目标规模注册落地经开区。",
+          "source_id": "robotfund_beijing_2024"
+        },
+        {
+          "date": "2026-08",
+          "description": "北京市国资委资料披露基金管理机构及产业布局，并列举多家已投机器人企业。",
+          "source_id": "robotfund_gzw_202608"
+        }
+      ],
       "track_record": [
+        {
+          "description": "北京市国资委 2026 年资料列举基金投资宇树科技、银河通用、松延动力、星动纪元、云深处科技、自变量、万勋科技、星海图、云鲸等企业，属于政府来源披露的组合案例，未据此推断退出或投资回报。",
+          "source_id": "robotfund_gzw_202608"
+        },
         {
           "description": "融资来源记录：星海图 · B轮 · 2026-02-11 · A5轮超额加注 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2707f48aa6e437b7"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "基金规模使用“目标规模”口径，不等同于实际认缴或实缴；管理人与组合案例来自北京市国资委 2026 年资料，政策公告仅用于记录设立目标和策略。未找到基金项目申报的当前专用联系方式。 该活动记录使用“北京机器人产业基金”简称；依据政府名称与投资方向，档案引用北京市机器人产业发展投资基金公开资料。",
       "contacts": [],
       "sources": [
+        {
+          "source_id": "robotfund_jxj_2023",
+          "source_url": "https://jxj.beijing.gov.cn/jxdt/tzgg/202309/t20230915_3260651.html",
+          "source_title": "北京市经信局：公开遴选北京机器人产业发展基金管理机构公告",
+          "source_content_hash": "0fa7c2a8b8e7c27ca9776ae21b2cdd73f9637d7e02f64cfc589a7b68fbbe02ae",
+          "quote": "基金目标规模100亿元，重点投向机器人本体、产业链零部件及产业链创新应用。",
+          "quote_hash": "f2d7a04d2f731ef4dd89c54789772e5d68562a6de12e25ae11ba023344f14de2"
+        },
+        {
+          "source_id": "robotfund_beijing_2024",
+          "source_url": "https://www.beijing.gov.cn/ywdt/gzdt/202401/t20240115_3534599.html",
+          "source_title": "百亿基金落地经开区 本市加速布局人形机器人产业_首都之窗",
+          "source_content_hash": "c771d7525dfaa2351af2c140d6d55acae41dfc5c493d1db1b0ee173673f4f264",
+          "quote": "政府来源称北京机器人产业发展投资基金目标规模100亿元，已注册落地经开区。",
+          "quote_hash": "771d4af3378bb0378e1b75cffd4ee6c9ece982a9ad23319dd0eefa5c858c7536"
+        },
+        {
+          "source_id": "robotfund_gzw_202608",
+          "source_url": "https://gzw.beijing.gov.cn/xxfb/gzyw/bjsgzdt/202608/t20260826_4837167.html",
+          "source_title": "北京国资国企的“全链条答卷”_北京市国资动态",
+          "source_content_hash": "bb18137ddfbdff9c3ad7d0b6f2ade5f88385a1e7668c209528d140ddff2be260",
+          "quote": "由北京国管所属京国瑞和首钢集团所属京西创投共同管理，覆盖具身智能、核心零部件、智能算力、医疗机器人等关键方向。",
+          "quote_hash": "89bac539bdac653ce752902794ab45ec0897de7b9f3e0b6b14b586a5a4b03f91"
+        },
         {
           "source_id": "FISRC-2707f48aa6e437b7",
           "source_url": "https://news.pedaily.cn/202602/560956.shtml",
@@ -153,7 +232,7 @@
           "quote_hash": "8f2a47a84a3c10d8d2a780f399c270ef702b0247b8017d3d915350a363602f83"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

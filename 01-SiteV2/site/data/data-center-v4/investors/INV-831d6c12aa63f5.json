@@ -235,13 +235,49 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "英诺基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "英诺基金成立于2013年4月，官网称其是专注早期科技投资的平台，基金投资业务分为英诺科创基金与英诺天使基金两个品牌，团队相对独立、共享中后台；因此数据库保留总品牌与子品牌不同投资方名称。官网自述投资500余个创新项目，但未提供完整计算时点或收益率。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2013年4月。",
+          "source_id": "inno_home"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "早期科技投资；英诺官网另介绍其覆盖前沿科技领域。",
+          "source_id": "inno_home"
+        },
+        {
+          "field": "fund_structure",
+          "label": "品牌与基金结构",
+          "value": "根据投资金额划分为英诺科创基金、英诺天使基金两个子品牌，拥有相对独立团队并共享中后台。",
+          "source_id": "inno_home"
+        },
+        {
+          "field": "reported_aum",
+          "label": "官网披露管理规模",
+          "value": "数十亿元人民币；官网未标注统计时点。",
+          "source_id": "inno_home"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2013-04",
+          "description": "英诺基金成立。",
+          "source_id": "inno_home"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "英诺基金强调早期科技投资、数字化基金管理和投后服务。官网列示奖项与组合案例属于机构自述。",
       "track_record": [
+        {
+          "description": "官网称已投资超过500个创新项目、多个项目实现IPO；未提供完整组合或回报率口径。",
+          "source_id": "inno_home"
+        },
         {
           "description": "融资来源记录：PureblueAI清蓝 · 天使+轮 · 2026-08-28 · 天使轮跟投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fa0e608145757727"
@@ -255,8 +291,46 @@
           "source_id": "FISRC-0b807b7fa8b0845a"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "英诺基金",
+          "url": "https://www.innoangel.com/",
+          "source_id": "inno_home"
+        },
+        {
+          "kind": "email",
+          "label": "创业项目投递",
+          "value": "bp@innoangel.com",
+          "url": "https://www.innoangel.com/",
+          "source_id": "inno_contacts"
+        },
+        {
+          "kind": "address",
+          "label": "北京总部",
+          "value": "北京市海淀区中关村梦想实验室7层",
+          "url": "https://www.innoangel.com/",
+          "source_id": "inno_contacts"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "inno_home",
+          "source_url": "https://www.innoangel.com/",
+          "source_title": "英诺基金-首页",
+          "source_content_hash": "7aaa2ca296b62c9f0a5fae4638c46a02ff994e0f394459f00f0a83110cf5be89",
+          "quote": "英诺基金成立于2013年4月，管理规模达数十亿人民币，目前已投资超过500个创新项目，多个项目实现IPO。根据投资金额划分，下设英诺科创基金、英诺天使基金两个子品牌，拥有相对独立的投资团队。",
+          "quote_hash": "f7d8ef20ba8893000055d662da6ee2aa47e75c911cb6fb99bbaa8d23f227010c"
+        },
+        {
+          "source_id": "inno_contacts",
+          "source_url": "https://www.innoangel.com/",
+          "source_title": "英诺基金-首页",
+          "source_content_hash": "7aaa2ca296b62c9f0a5fae4638c46a02ff994e0f394459f00f0a83110cf5be89",
+          "quote": "创业项目投递 bp@innoangel.com；北京总部：北京市海淀区中关村梦想实验室7层。",
+          "quote_hash": "fb1f256d9b4d25281eef9e9848c8ce4c3cbb8734f09ac059988c9ce74d12648c"
+        },
         {
           "source_id": "FISRC-fa0e608145757727",
           "source_url": "https://www.pureblueai.com/about-us",
@@ -282,7 +356,10 @@
           "quote_hash": "7e2eccb466a27ee65bf5e6dc9ba46669e8e2d59ae9cf4f59452db9847e45e152"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

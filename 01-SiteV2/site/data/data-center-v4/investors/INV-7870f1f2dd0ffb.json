@@ -193,10 +193,65 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Together Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "依据机构官网的投资介绍、联系页和团队页核实；基金规模与组合统计均为机构自述，不代表投资回报。",
+      "summary": "Together Fund 是一支以运营者为主导、专注 AI 原生初创企业的风险投资基金，面向美印走廊投资。官网称基金创立于 2021 年，重点覆盖 Seed 与 Series A，并为被投公司提供产品、市场拓展、招聘和规模化运营支持。AUM、组合数量和跟投比例均为基金自述数据。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "官网称 Together 于 2021 年开始。",
+          "source_id": "together_fund_about"
+        },
+        {
+          "field": "geography",
+          "label": "地理范围",
+          "value": "美国—印度走廊。",
+          "source_id": "together_fund_about"
+        },
+        {
+          "field": "focus",
+          "label": "投资领域",
+          "value": "AI 原生创业公司，涵盖横向应用、垂直方案、医疗、基础设施和消费场景。",
+          "source_id": "together_fund_about"
+        },
+        {
+          "field": "stage",
+          "label": "阶段与节奏",
+          "value": "官网 FAQ 称主要投资 Seed 和 Series A，通常首笔投资 100 万至 1,000 万美元，每年选择约 8–10 家。",
+          "source_id": "together_fund_about"
+        },
+        {
+          "field": "aum",
+          "label": "管理规模",
+          "value": "官网披露 AUM 超过 2 亿美元；属于基金自述数据。",
+          "source_id": "together_fund_about"
+        },
+        {
+          "field": "portfolio",
+          "label": "组合统计",
+          "value": "官网披露 35+ 家组合公司、40%+ 组合公司获得后续融资；属于基金自述统计。",
+          "source_id": "together_fund_about"
+        },
+        {
+          "field": "partners",
+          "label": "管理团队",
+          "value": "官网列示 Girish Mathrubootham、Manav Garg 为联合创始人兼管理合伙人，并列有 Lakshmi Shankar 等投资团队成员。",
+          "source_id": "together_fund_about"
+        },
+        {
+          "field": "contact_channels",
+          "label": "公开联系渠道",
+          "value": "投资联系邮箱 deals@together.fund；一般咨询 hello@together.fund。",
+          "source_id": "together_fund_contact"
+        },
+        {
+          "field": "leadership",
+          "label": "官网列示管理团队",
+          "value": "Girish Mathrubootham、Manav Garg（联合创始人兼管理合伙人）；Shubham Gupta（Founding General Partner）；Lakshmi Shankar（General Partner）。",
+          "source_id": "together_fund_team"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -208,7 +263,38 @@
           "source_id": "FISRC-2e7a3713da8f3e54"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "label": "投资联系",
+          "value": "deals@together.fund",
+          "source_id": "together_fund_contact"
+        },
+        {
+          "kind": "email",
+          "label": "一般咨询",
+          "value": "hello@together.fund",
+          "source_id": "together_fund_contact"
+        },
+        {
+          "kind": "address",
+          "label": "Bengaluru 办公地址",
+          "value": "299, 6th Main Road, HAL, 2nd Stage, Indiranagar, Bengaluru, Karnataka 560038",
+          "source_id": "together_fund_contact"
+        },
+        {
+          "kind": "address",
+          "label": "Chennai 办公地址",
+          "value": "3rd Floor, 77 & 79(44 &45), Chamiers Rd, Austin Nagar, Raja Annamalaipuram, Chennai, Tamil Nadu 600028",
+          "source_id": "together_fund_contact"
+        },
+        {
+          "kind": "address",
+          "label": "Palo Alto 办公地址",
+          "value": "530 Lytton Ave, Suite 304, Palo Alto, California 94301",
+          "source_id": "together_fund_contact"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-2d6054cc51934d57",
@@ -225,9 +311,33 @@
           "source_content_hash": "affdfd9a0ccfb188",
           "quote": "alongside new backers such as Acrew, Forerunner, Goodwater, Peak XV, Together Fund, and PLUS Capital",
           "quote_hash": "f1995f23145981836125a9b8df4e53f839291e05ffb8820c3b8d82b423ccdfc3"
+        },
+        {
+          "source_id": "together_fund_about",
+          "source_url": "https://www.together.fund/about",
+          "source_title": "About Together | Together Fund",
+          "source_content_hash": "878ea022fc75f7f90e524d88716af5ed7de70bcb52f1344c87b22f4b09cd1b58",
+          "quote": "We are India’s first operator-led, AI-first venture capital fund in the US-India corridor that partners with ambitious, purpose-driven founders.",
+          "quote_hash": "1069c4d6ecef0ae13fd3e0674bf252959018a4e0f1a60bc4c00673a86e4f1b33"
+        },
+        {
+          "source_id": "together_fund_contact",
+          "source_url": "https://www.together.fund/contact",
+          "source_title": "Contact Together Fund",
+          "source_content_hash": "3c2e4dea90ef61fea5e9b834c39737128c73bdfbf270a6abb9c8ec2a8e2b1911",
+          "quote": "For Investments deals@together.fund. For General Inquiries hello@together.fund.",
+          "quote_hash": "bbc7198670842ce8c80fb09b2bc49f93da9d35d51aaec6a4bab40fe04fda041a"
+        },
+        {
+          "source_id": "together_fund_team",
+          "source_url": "https://www.together.fund/team",
+          "source_title": "Meet the Together Team",
+          "source_content_hash": "0e886018284869b47fb4c39b39962118ee8afbecdf7b3d64149c95632696a073",
+          "quote": "Girish Mathrubootham — Co-founder & Managing Partner; Manav Garg — Co-founder & Managing Partner.",
+          "quote_hash": "01b71c40141b333fd274530f8608cde411f6386d8637f29f10292e74f2824600"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

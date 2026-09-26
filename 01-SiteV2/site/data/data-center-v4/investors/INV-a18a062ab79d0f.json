@@ -284,12 +284,38 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "经纬创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "经纬创投官网称其创立于2008年，长期投资早期和早成长期项目，关注新技术、硬科技、产业数字化、医疗、前沿科技和新消费。官网披露的管理规模和团队人数属于机构自述；本页不据此推断基金回报。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2008年（官网资料）",
+          "source_id": "matrix_about"
+        },
+        {
+          "field": "aum_self_reported",
+          "label": "管理规模（官网自述）",
+          "value": "超过700亿元人民币；口径和统计时点以机构公布内容为准。",
+          "source_id": "matrix_about"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向（官网概述）",
+          "value": "新技术、硬科技、产业数字化、医疗、前沿科技、新消费，聚焦早期和早成长期。",
+          "source_id": "matrix_about"
+        },
+        {
+          "field": "team_self_reported",
+          "label": "团队配置（官网自述）",
+          "value": "官网介绍30余人的投资团队及60人的投后服务团队。",
+          "source_id": "matrix_about"
+        }
+      ],
       "milestones": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "官网介绍其在中国聚焦早期投资，并设有覆盖战略、运营和人才等职能的投后服务团队。公开页面未提供可独立比较的基金净回报或退出率。",
       "track_record": [
         {
           "description": "融资来源记录：上海宇道生物技术有限公司 · C1轮 · 2026-09-15 · A+轮老股东持续加码 · 数千万美元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -304,8 +330,82 @@
           "source_id": "FISRC-cb7eea4a6bd98034"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "address",
+          "label": "北京办公室",
+          "value": "北京市朝阳区东三环北路38号院1号楼泰康金融大厦2601室（100026）",
+          "url": "https://www.mpc.vc/contact-us",
+          "source_id": "matrix_contact_bj"
+        },
+        {
+          "kind": "phone",
+          "label": "北京办公室电话",
+          "value": "+86-10-6500-0088",
+          "url": "https://www.mpc.vc/contact-us",
+          "source_id": "matrix_contact_bj"
+        },
+        {
+          "kind": "email",
+          "label": "北京办公室邮箱",
+          "value": "info@mpc.vc",
+          "url": "https://www.mpc.vc/contact-us",
+          "source_id": "matrix_contact_bj"
+        },
+        {
+          "kind": "address",
+          "label": "上海办公室",
+          "value": "上海市黄浦区湖滨路222号领展企业广场一座910室",
+          "url": "https://www.mpc.vc/contact-us",
+          "source_id": "matrix_contact_sh"
+        },
+        {
+          "kind": "phone",
+          "label": "上海办公室电话",
+          "value": "+86-21-6162-0600",
+          "url": "https://www.mpc.vc/contact-us",
+          "source_id": "matrix_contact_sh"
+        },
+        {
+          "kind": "email",
+          "label": "上海办公室邮箱",
+          "value": "info@mpc.vc",
+          "url": "https://www.mpc.vc/contact-us",
+          "source_id": "matrix_contact_sh"
+        },
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "mpc.vc",
+          "url": "https://www.mpc.vc/about",
+          "source_id": "matrix_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "matrix_about",
+          "source_url": "https://www.mpc.vc/about",
+          "source_title": "关于我们 - 经纬创投",
+          "source_content_hash": "59e54cf919ca526104bb82ee6d02b01f382f316907194ae8f010d232d163dc0a",
+          "quote": "经纬创投创立于2008年，管理规模超过700亿人民币。",
+          "quote_hash": "b0762ed1b8c3fef29649cd1a86c8b6aac00122425c3ff798c8465fa2611b75e0"
+        },
+        {
+          "source_id": "matrix_contact_bj",
+          "source_url": "https://www.mpc.vc/contact-us",
+          "source_title": "联系我们 - 经纬创投",
+          "source_content_hash": "8bbb2ff175b76005c12d600578a21174fcf50b25ade010c39261660da25d2d6d",
+          "quote": "北京：泰康金融大厦2601室；电话 +86-10-6500-0088；Email: info@mpc.vc。",
+          "quote_hash": "7b6e8bc879089c3f9bec76e90ef6f244cf34d0e502fc1214627a654df2d1657d"
+        },
+        {
+          "source_id": "matrix_contact_sh",
+          "source_url": "https://www.mpc.vc/contact-us",
+          "source_title": "联系我们 - 经纬创投",
+          "source_content_hash": "8bbb2ff175b76005c12d600578a21174fcf50b25ade010c39261660da25d2d6d",
+          "quote": "上海：湖滨路222号领展企业广场一座910室；电话 +86-21-6162-0600。",
+          "quote_hash": "32767d22e4e00b33c6594d020b0f092d13288de9be1493e7d7a3ee6ea6d2a7df"
+        },
         {
           "source_id": "FISRC-163d5b5325339f27",
           "source_url": "https://www.vbdata.cn/54325",
@@ -331,7 +431,10 @@
           "quote_hash": "2542036de1821f5046832f7c50bbdf2a03dabd50f99e97d9183ee496859af3f8"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     },
     "translations": {
       "zh-CN": {

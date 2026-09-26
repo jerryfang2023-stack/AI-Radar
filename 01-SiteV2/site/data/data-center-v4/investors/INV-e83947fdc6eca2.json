@@ -241,12 +241,35 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "力合创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-31；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "融资数据中的“力合创投”属于力合科创科技投资孵化体系。力合科创是深圳清华大学研究院相关的上市科技创新服务企业，科技创投布局从成果验证和种子投资延伸至企业孵化；集团科技创投公开领域包括AI、机器人、光芯片、低空经济、新能源材料及创新药。该档案未将集团所投项目全部当作力合创投单一基金组合。",
+      "facts": [
+        {
+          "field": "parent_group",
+          "label": "关联集团",
+          "value": "力合科创集团／深圳市力合科创股份有限公司；具体参投法律主体以单项融资公告为准",
+          "source_id": "lihe_kechuang_annual_report_2025"
+        },
+        {
+          "field": "investment_focus",
+          "label": "科技创投方向",
+          "value": [
+            "AI",
+            "机器人",
+            "光芯片",
+            "低空经济",
+            "固态电池",
+            "创新药",
+            "未来能源"
+          ],
+          "source_id": "lihe_kechuang_annual_report_2025"
+        },
+        {
+          "field": "investment_stages",
+          "label": "投资孵化阶段",
+          "value": "集团披露覆盖概念验证、种子基金及企业孵化；不代表每一子基金均覆盖全阶段",
+          "source_id": "lihe_kechuang_annual_report_2025"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -262,8 +285,32 @@
           "source_id": "FISRC-0b807b7fa8b0845a"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "力合科创官网",
+          "value": "上市集团官网及联系入口",
+          "url": "https://leaguer.com.cn/",
+          "source_id": "lihe_kechuang_site_202609"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "lihe_kechuang_annual_report_2025",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-03-27/1225034005.PDF",
+          "source_title": "深圳市力合科创股份有限公司2025年可持续发展报告",
+          "source_content_hash": "013f5d94027c47f840e07161da9fbaa4688c4cdc52d22e2c5a95677627f6d40d",
+          "quote": "力合科创2025年可持续发展报告披露，其科技创投布局涵盖AI、机器人、光芯片、低空经济、固态电池、创新药与未来能源，并建立概念验证基金、种子基金及AI垂直孵化器。",
+          "quote_hash": "2f4d19fa9206ef504a925a861353e9f875696f35c4d318865a155d709bcd242d"
+        },
+        {
+          "source_id": "lihe_kechuang_site_202609",
+          "source_url": "https://leaguer.com.cn/",
+          "source_title": "深圳市力合科创股份有限公司官网",
+          "source_content_hash": "c035bc8155f4011fee7f0e9b67fe904c40c8fe3f900816a5197f9869202e1d31",
+          "quote": "力合科创官网介绍集团科技服务、科技金融、科技产业和创新基地业务；集团公开网站提供公司信息入口。",
+          "quote_hash": "acace6ecb18b767cd45db52a07f6ba3644286fbef5edda5bec8f2c5a8156d1c2"
+        },
         {
           "source_id": "FISRC-3d6690cf8399d45f",
           "source_url": "https://www.sohu.com/a/1069898850_439726",
@@ -289,7 +336,11 @@
           "quote_hash": "7e2eccb466a27ee65bf5e6dc9ba46669e8e2d59ae9cf4f59452db9847e45e152"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "coverage_note": "行业方向与基金/孵化体系来自集团2025可持续发展报告；没有把集团规模、关联企业或集团所有投资直接归于单一力合创投基金。",
+      "identity_status": "verified"
     }
   }
 }

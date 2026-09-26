@@ -129,21 +129,321 @@
       }
     ],
     "public_profile": {
+      "summary": "融资数据库中的“阿里”按阿里巴巴集团（Alibaba Group Holding Limited）归档。集团官方资料显示其是聚焦AI、云计算和电商的全球科技公司，并通过战略投资、并购和联盟强化业务生态及协同。投资界曾报道阿里是月之暗面2026年初融资的老股东，但未披露具体投资实体、轮次分配或金额；不能据此将该记录归到某一支基金。",
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "阿里 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "本条对应企业集团层面的“阿里”投资方标签，并非一个已核实的独立VC品牌或法律基金。公开融资报道将阿里列为月之暗面历史融资的老股东，但没有披露参与投资的集团子公司、基金或资金金额。蔡崇信、吴泳铭的履历及现职是集团管理信息，公开资料未说明他们直接负责或批准该笔具体投资。investor@alibaba-inc.com是集团投资者关系邮箱，用于股东、年度报告等咨询，官网没有把它列为项目融资投递渠道。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "主体性质",
+          "value": "阿里巴巴集团控股有限公司的集团层面企业投资方标签；不对应已确认的独立投资基金。",
+          "source_id": "ali_about"
+        },
+        {
+          "field": "founded_year",
+          "label": "成立时间",
+          "value": "1999年；由18位创始成员在杭州创立。",
+          "source_id": "ali_about"
+        },
+        {
+          "field": "business_focus",
+          "label": "当前业务重点",
+          "value": "集团官方将阿里巴巴描述为聚焦AI、云计算和电商的全球科技公司。",
+          "source_id": "ali_business_scope"
+        },
+        {
+          "field": "investment_strategy",
+          "label": "集团战略投资逻辑",
+          "value": "官方年报称战略投资与并购服务于强化生态、创造业务协同并提升集团整体价值；也会从少数股权投资开始，视业务协同和战略价值逐步深化合作。",
+          "source_id": "ali_investment_strategy"
+        },
+        {
+          "field": "disclosed_investment_example",
+          "label": "公开融资参与案例",
+          "value": "媒体报道阿里是月之暗面2026年初融资中的老股东；投资载体和具体出资金额未披露。",
+          "source_id": "ali_moonshot"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1999",
+          "description": "阿里巴巴集团在杭州成立。",
+          "source_id": "ali_about"
+        }
+      ],
       "track_record": [
+        {
+          "description": "阿里巴巴集团年报披露其战略投资、并购与联盟的集团级方法，目标是强化业务生态与协同；这描述的是战略，不代表某一投资基金的独立业绩。",
+          "source_id": "ali_investment_strategy"
+        },
+        {
+          "description": "投资界2026年7月报道，阿里、腾讯和五源资本等是月之暗面2026年初连续融资的老股东。报道没有说明阿里通过哪一实体投资，不能用作特定基金的投资或回报记录。",
+          "source_id": "ali_moonshot"
+        },
         {
           "description": "融资来源记录：Moonshot AI · F轮 · 2026-07-30 · 2026年前两个月连续三轮融资老股东持续加码 · 35亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-773362f4e07cd598"
         }
       ],
-      "contacts": [],
+      "current_roles": [
+        {
+          "title": "蔡崇信｜董事长",
+          "organization": "阿里巴巴集团",
+          "source_id": "ali_joe_role"
+        },
+        {
+          "title": "吴泳铭｜董事、首席执行官",
+          "organization": "阿里巴巴集团",
+          "source_id": "ali_eddie_role"
+        },
+        {
+          "title": "蔡崇信｜阿里巴巴合伙人；蚂蚁集团董事",
+          "organization": "蚂蚁集团（阿里官方页面称其为集团关联公司）",
+          "source_id": "ali_joe_ant"
+        }
+      ],
+      "career": [
+        {
+          "organization": "蔡崇信｜Investor AB",
+          "title": "亚洲私募股权投资人",
+          "period": "1995—1999",
+          "description": "阿里官方人物页记载其加入阿里前在Investor AB负责亚洲私募股权投资。",
+          "source_id": "ali_joe_career"
+        },
+        {
+          "organization": "蔡崇信｜Rosecliff, Inc.",
+          "title": "总法律顾问",
+          "period": "任职年份未披露；在加入阿里前",
+          "description": "阿里官方人物页称Rosecliff是一家管理层收购公司，并记载蔡崇信曾任其总法律顾问。",
+          "source_id": "ali_joe_legal"
+        },
+        {
+          "organization": "蔡崇信｜Sullivan & Cromwell LLP",
+          "title": "税务业务律师",
+          "period": "1990—1993",
+          "description": "阿里官方人物页记载其曾在该所税务业务组任律师。",
+          "source_id": "ali_joe_sullivan"
+        },
+        {
+          "organization": "蔡崇信｜阿里巴巴集团",
+          "title": "创始团队成员；前CFO、前执行副董事长；现任董事长",
+          "period": "1999年至今；CFO任期至2013年，执行副董事长任期至2023年9月",
+          "description": "阿里官方人物页记载其1999年加入创始团队，并说明其CFO、执行副董事长和现任董事长的任职情况。",
+          "source_id": "ali_joe_role"
+        },
+        {
+          "organization": "蔡崇信｜Yale College、Yale Law School",
+          "title": "经济学与东亚研究学士；法学博士（JD）",
+          "period": "毕业年份未披露",
+          "description": "阿里官方人物页列出其耶鲁本科学位及耶鲁法学院JD。",
+          "source_id": "ali_joe_education"
+        },
+        {
+          "organization": "吴泳铭｜阿里巴巴、支付宝",
+          "title": "联合创始人；阿里早期技术负责人、支付宝CTO",
+          "period": "阿里技术负责人：1999年起；支付宝CTO：2004年12月起；结束年份未披露",
+          "description": "阿里官方人物页记载吴泳铭是联合创始人，早期担任集团技术负责人，后任支付宝CTO。",
+          "source_id": "ali_eddie_career"
+        },
+        {
+          "organization": "吴泳铭｜阿里妈妈（Alimama）",
+          "title": "业务负责人、总经理",
+          "period": "业务负责人：2005年11月起；2007年12月晋升总经理；结束年份未披露",
+          "description": "阿里官方人物页记载其先负责集团商业化平台阿里妈妈业务，后晋升为总经理。",
+          "source_id": "ali_eddie_alimama"
+        },
+        {
+          "organization": "吴泳铭｜淘宝及阿里集团搜索、广告、移动业务",
+          "title": "淘宝CTO；后任集团搜索、广告和移动业务负责人",
+          "period": "淘宝CTO：2008年起；集团业务负责人：2011年起；结束年份未披露",
+          "description": "阿里官方人物页记载其先任淘宝CTO，后负责集团搜索、广告和移动业务。",
+          "source_id": "ali_eddie_taobao"
+        },
+        {
+          "organization": "吴泳铭｜Vision Plus Capital",
+          "title": "创始人；机构定位为投资先进技术、企业服务和数字医疗的风险投资公司",
+          "period": "2015年创立；目前是否继续任职未披露",
+          "description": "该机构为吴泳铭的个人创业投资经历，不等同于阿里巴巴集团的投资部门。",
+          "source_id": "ali_eddie_vpc"
+        },
+        {
+          "organization": "吴泳铭｜Alibaba Health Information Technology Limited",
+          "title": "非执行董事、董事长",
+          "period": "非执行董事：2015年4月—2021年10月；董事长：2015年4月—2020年3月",
+          "description": "阿里官方人物页披露了其在阿里健康的过往任职。",
+          "source_id": "ali_eddie_health"
+        },
+        {
+          "organization": "吴泳铭｜浙江工业大学信息工程学院",
+          "title": "信息工程专业毕业",
+          "period": "1996年",
+          "description": "阿里官方人物页披露其于1996年毕业。",
+          "source_id": "ali_eddie_education"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "阿里巴巴集团官方网站",
+          "value": "alibabagroup.com",
+          "url": "https://www.alibabagroup.com/en-US/about-alibaba",
+          "source_id": "ali_about"
+        },
+        {
+          "kind": "email",
+          "label": "集团投资者关系（股东及年报咨询；非项目融资投递渠道）",
+          "value": "investor@alibaba-inc.com",
+          "url": "https://www.alibabagroup.com/en-US/faqs-financial-reporting",
+          "source_id": "ali_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "ali_about",
+          "source_url": "https://www.alibabagroup.com/en-US/about-alibaba",
+          "source_title": "Introduction to Alibaba Group｜Alibaba Group",
+          "source_content_hash": "fb89be7a24fdf3c994c273285d7ab288e86dccb27d6b6f6aa0bb265ff5d9d2a4",
+          "quote": "Alibaba Group was established in 1999 by 18 people led by Jack Ma, a former English teacher from Hangzhou, China.",
+          "quote_hash": "9137a32f6a87778d7d768a4ddcaf0d47e8f096842ac5ffc5709f26233ae43568"
+        },
+        {
+          "source_id": "ali_business_scope",
+          "source_url": "https://www.alibabagroup.com/en-US/about-alibaba",
+          "source_title": "Introduction to Alibaba Group｜业务重点",
+          "source_content_hash": "fb89be7a24fdf3c994c273285d7ab288e86dccb27d6b6f6aa0bb265ff5d9d2a4",
+          "quote": "Now, Alibaba Group is a global technology company focused on AI + Cloud and commerce.",
+          "quote_hash": "d8a9ba0bbf2e94d3b9cd2ecdd5363a6b59ad0e985cca80c67ed2cc5147ca8b62"
+        },
+        {
+          "source_id": "ali_investment_strategy",
+          "source_url": "https://static.alibabagroup.com/reports/fy2024/ar/ebook/EN/86/index.html",
+          "source_title": "Alibaba Group Fiscal Year 2024 Annual Report｜Strategic Investments and Acquisitions",
+          "source_content_hash": "b9fc73fc1c8999f3018944ebf3a948aa04cd590c44a831e7fc098288ea1f76b7",
+          "quote": "Our investment and acquisition strategy is focused on strengthening our ecosystem, creating strategic synergies across our businesses, and enhancing our overall value.",
+          "quote_hash": "a3a1eb033d3afe521be42f9beba7196f88246f0a7eedd7e723bb37248636ce39"
+        },
+        {
+          "source_id": "ali_moonshot",
+          "source_url": "https://news.pedaily.cn/202607/566986.shtml",
+          "source_title": "月之暗面完成超35亿美元F轮融资｜投资界",
+          "source_content_hash": "ca9862d2b98579296881abba64263358b755b0cfe33dba251f67fb8bb1d3c4d2",
+          "quote": "今年前两个月，公司还连续完成5亿、7亿、7亿美元三轮融资，估值从100亿美元攀升至180亿美元，阿里、腾讯、五源资本等老股东持续加码。",
+          "quote_hash": "1b04f6348a3383cbbcda8ce26c8dbd8a0f223287a55894621d0ba47dce291306"
+        },
+        {
+          "source_id": "ali_eddie_role",
+          "source_url": "https://home.alibabagroup.com/en-US/about-alibaba-leadership-1637927598568767488",
+          "source_title": "EDDIE WU｜Alibaba Group官方简介",
+          "source_content_hash": "870f2063a68f3098d9e1e084c9c99eb882acab233f5efc6c2e83de8b92cc51b9",
+          "quote": "Eddie Yongming WU has served as our Chief Executive Officer and director since September 2023.",
+          "quote_hash": "56daccb6fec55bdd177c99c2c459d19cea2a5c88385117b22a1a670beab374bd"
+        },
+        {
+          "source_id": "ali_eddie_career",
+          "source_url": "https://home.alibabagroup.com/en-US/about-alibaba-leadership-1637927598568767488",
+          "source_title": "EDDIE WU｜早期业务履历",
+          "source_content_hash": "870f2063a68f3098d9e1e084c9c99eb882acab233f5efc6c2e83de8b92cc51b9",
+          "quote": "Mr. Wu was technology director of Alibaba at the company’s inception in 1999. He served as chief technology officer of Alipay from December 2004.",
+          "quote_hash": "61e1142096357effa06685fc6ec8807099e790b356ea5b016a5f100e13d31f0e"
+        },
+        {
+          "source_id": "ali_eddie_alimama",
+          "source_url": "https://home.alibabagroup.com/en-US/about-alibaba-leadership-1637927598568767488",
+          "source_title": "EDDIE WU｜阿里妈妈履历",
+          "source_content_hash": "870f2063a68f3098d9e1e084c9c99eb882acab233f5efc6c2e83de8b92cc51b9",
+          "quote": "He became business director of our monetization platform, Alimama, in November 2005 and was promoted to its general manager in December 2007.",
+          "quote_hash": "bc6b733b23affebe7baa60e8501e93513f5a6178453dd4c25c2e7f954a77c357"
+        },
+        {
+          "source_id": "ali_eddie_taobao",
+          "source_url": "https://home.alibabagroup.com/en-US/about-alibaba-leadership-1637927598568767488",
+          "source_title": "EDDIE WU｜淘宝及集团业务履历",
+          "source_content_hash": "870f2063a68f3098d9e1e084c9c99eb882acab233f5efc6c2e83de8b92cc51b9",
+          "quote": "In September 2008, he became chief technology officer of Taobao, and in October 2011 he took on the role of head of Alibaba Group’s search, advertising and mobile business.",
+          "quote_hash": "b4a650b0489978d9b43da5fd8dad927e5130dcac756515665fb9f995266ab021"
+        },
+        {
+          "source_id": "ali_eddie_vpc",
+          "source_url": "https://home.alibabagroup.com/en-US/about-alibaba-leadership-1637927598568767488",
+          "source_title": "EDDIE WU｜Vision Plus Capital",
+          "source_content_hash": "870f2063a68f3098d9e1e084c9c99eb882acab233f5efc6c2e83de8b92cc51b9",
+          "quote": "In August 2015, Mr. Wu founded Vision Plus Capital",
+          "quote_hash": "458718598231cc413a3abfe77603c112eac1b6544b5e1a877d716a665ca2db5b"
+        },
+        {
+          "source_id": "ali_eddie_health",
+          "source_url": "https://home.alibabagroup.com/en-US/about-alibaba-leadership-1637927598568767488",
+          "source_title": "EDDIE WU｜Alibaba Health过往任职",
+          "source_content_hash": "870f2063a68f3098d9e1e084c9c99eb882acab233f5efc6c2e83de8b92cc51b9",
+          "quote": "Mr. Wu served as a non-executive director of Alibaba Health Information Technology Limited",
+          "quote_hash": "71a8774c0a6470d0a95d290ee81d85e5c8fc6d1e1b66f6ff60d0ca2ed60ce54c"
+        },
+        {
+          "source_id": "ali_eddie_education",
+          "source_url": "https://home.alibabagroup.com/en-US/about-alibaba-leadership-1637927598568767488",
+          "source_title": "EDDIE WU｜教育经历",
+          "source_content_hash": "870f2063a68f3098d9e1e084c9c99eb882acab233f5efc6c2e83de8b92cc51b9",
+          "quote": "Mr. Wu graduated from the College of Information Engineering of Zhejiang University of Technology in June 1996.",
+          "quote_hash": "d1c06d6fe4a758ad8515c2a28721a77e988847cf224f5665e347d782d88399d7"
+        },
+        {
+          "source_id": "ali_joe_role",
+          "source_url": "https://home.alibabagroup.com/en-US/about-alibaba-leadership-1493301768354791424",
+          "source_title": "JOE TSAI｜Alibaba Group官方简介",
+          "source_content_hash": "033ce167c75699d1eec661a22a6abefffeb4e5b1da98280c05f5ca1567485a51",
+          "quote": "Joe Tsai joined Alibaba in 1999 as a member of the founding team and has served on the Company’s board of directors since inception. He was chief financial officer until 2013, our executive vice chairman until September 2023 and currently serves as our Chairman.",
+          "quote_hash": "ab9405fd3dfcb47991ff482d3e5594260da68a14eb01c50c8b7d6fdd76517040"
+        },
+        {
+          "source_id": "ali_joe_career",
+          "source_url": "https://home.alibabagroup.com/en-US/about-alibaba-leadership-1493301768354791424",
+          "source_title": "JOE TSAI｜Investor AB经历",
+          "source_content_hash": "033ce167c75699d1eec661a22a6abefffeb4e5b1da98280c05f5ca1567485a51",
+          "quote": "From 1995 to 1999, Mr. Tsai was a private equity investor based in Asia with Investor AB of Sweden’s Wallenberg family.",
+          "quote_hash": "fc9a4bd86d2219d38dd1cea049bcf6121861de6231591baab3e5fcdaef4e1ef8"
+        },
+        {
+          "source_id": "ali_joe_legal",
+          "source_url": "https://home.alibabagroup.com/en-US/about-alibaba-leadership-1493301768354791424",
+          "source_title": "JOE TSAI｜法律及管理经历",
+          "source_content_hash": "033ce167c75699d1eec661a22a6abefffeb4e5b1da98280c05f5ca1567485a51",
+          "quote": "Prior to that, he was general counsel of Rosecliff, Inc., a management buyout firm based in New York.",
+          "quote_hash": "85db33c4b0022683631b6e14fd5a0c2d9675924b582a5fac2cf4c3d05ee5b1d6"
+        },
+        {
+          "source_id": "ali_joe_sullivan",
+          "source_url": "https://home.alibabagroup.com/en-US/about-alibaba-leadership-1493301768354791424",
+          "source_title": "JOE TSAI｜Sullivan & Cromwell履历",
+          "source_content_hash": "033ce167c75699d1eec661a22a6abefffeb4e5b1da98280c05f5ca1567485a51",
+          "quote": "From 1990 to 1993, Mr. Tsai was an associate attorney in the tax group of Sullivan & Cromwell LLP, a New York-based international law firm.",
+          "quote_hash": "812acc77fca0418c0d86713b8e82658cd8072c1f2036f176658ce8f4a799bd72"
+        },
+        {
+          "source_id": "ali_joe_education",
+          "source_url": "https://home.alibabagroup.com/en-US/about-alibaba-leadership-1493301768354791424",
+          "source_title": "JOE TSAI｜教育经历",
+          "source_content_hash": "033ce167c75699d1eec661a22a6abefffeb4e5b1da98280c05f5ca1567485a51",
+          "quote": "Mr. Tsai received his bachelor’s degree in Economics and East Asian Studies from Yale College and a juris doctor degree from Yale Law School.",
+          "quote_hash": "aeca4af4b418457194f6f3c9d887a9d555653a97e1b47b9f361a992c3544f56c"
+        },
+        {
+          "source_id": "ali_joe_ant",
+          "source_url": "https://home.alibabagroup.com/en-US/about-alibaba-leadership-1493301768354791424",
+          "source_title": "JOE TSAI｜蚂蚁集团董事职务",
+          "source_content_hash": "033ce167c75699d1eec661a22a6abefffeb4e5b1da98280c05f5ca1567485a51",
+          "quote": "Mr. Tsai is a founding member of the Alibaba Partnership and a board member of our affiliate Ant Group.",
+          "quote_hash": "1b4e5e28f41a0a66e9e9f0852c0fb2487e2da6c3dbcb35a267cc438671dc522a"
+        },
+        {
+          "source_id": "ali_contact",
+          "source_url": "https://www.alibabagroup.com/en-US/faqs-financial-reporting",
+          "source_title": "FAQs｜Alibaba Group Investor Relations contact",
+          "source_content_hash": "29156109f14c40df0a5fa2a22591522254be74a44215dbc4e13e2052f32833ae",
+          "quote": "Requests should be directed to Investor Relations Department, investor@alibaba-inc.com.",
+          "quote_hash": "dfaa376eb936b78fdb5d7476b9725c5552199af1b403be3849fb60f074e8095f"
+        },
         {
           "source_id": "FISRC-773362f4e07cd598",
           "source_url": "https://news.pedaily.cn/202607/566986.shtml",
@@ -153,7 +453,7 @@
           "quote_hash": "1b04f6348a3383cbbcda8ce26c8dbd8a0f223287a55894621d0ba47dce291306"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

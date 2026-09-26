@@ -111,33 +111,69 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "周谷越 的来源线索将其与求之科技（创始人兼首席科学家）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
-      "career": [
+      "summary": "清华大学智能产业研究院（AIR）官网介绍周谷越博士现任AIR副教授、DISCOVER Lab主任及求之科技首席科学家，并披露其香港科技大学博士教育背景和大疆研发、产品经历。官网还列出其产品研发、论文、专利和科研项目情况。",
+      "current_roles": [
         {
+          "title": "副教授、实验室主任",
+          "organization": "清华大学智能产业研究院 / DISCOVER Lab",
+          "source_id": "tsinghua_zhou"
+        },
+        {
+          "title": "创始人、首席科学家",
           "organization": "求之科技",
-          "title": "创始人兼首席科学家",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-d45f7a4d8fd76b88"
+          "source_id": "tsinghua_zhou"
+        },
+        {
+          "title": "院长",
+          "organization": "清华大学-戴尔乐具身与协同机器人联合研究院",
+          "source_id": "tsinghua_zhou"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
+      "career": [
+        {
+          "organization": "DJI大疆创新",
+          "title": "计算机视觉及智能制造相关研发、产品管理",
+          "period": "2012年起近10年（AIR官网披露）",
+          "description": "AIR官网列出其曾负责视觉研发、智能制造等部门和多款产品技术研发。",
+          "source_id": "tsinghua_zhou"
+        },
+        {
+          "organization": "清华大学智能产业研究院",
+          "title": "副教授、DISCOVER Lab主任",
+          "period": "官网披露时点；2020年前后加入",
+          "description": "从事机器人、计算机视觉与智能制造研究。",
+          "source_id": "tsinghua_zhou"
+        },
+        {
+          "organization": "求之科技",
+          "title": "创立发起人、首席科学家",
+          "period": "公司2023年孵化成立",
+          "description": "AIR官网记载公司由其所在研究院孵化。",
+          "source_id": "tsinghua_zhou"
+        }
+      ],
+      "education": [
+        {
+          "institution": "香港科技大学",
+          "qualification": "博士（2014年）",
+          "source_id": "tsinghua_zhou"
+        }
+      ],
+      "experience_summary": "AIR官网列明其参与民用无人机导航、教育机器人等技术产品研发，并记载80余篇论文和70余项授权专利等成果数字；这些数字按高校公开简介引用。",
       "track_record": [],
       "sources": [
         {
-          "source_id": "FISRC-d45f7a4d8fd76b88",
-          "source_url": "https://www.sohu.com/a/1044130792_120109837",
-          "source_title": "融资披露来源",
-          "source_content_hash": "ef8ed950cecf5cd3",
-          "quote": "创始人兼首席科学家周谷越博士，是业内极为稀缺的兼具顶尖学术造诣与大规模产业落地经验的复合型领军人物。",
-          "quote_hash": "6615e68e92eec83db333a33e92136924ee1267cd69e0231bd40cfaf2ab119f1a"
+          "source_id": "tsinghua_zhou",
+          "source_url": "https://air.tsinghua.edu.cn/yjhzdw/qzkj.htm",
+          "source_title": "求之科技-清华大学智能产业研究院",
+          "source_content_hash": "91ceb5b9848abd2456fa297d09b586cf91405e60c9dd6dc27878cd86c02a1a1f",
+          "quote": "周谷越博士现任清华大学智能产业研究院副教授；2014年取得香港科技大学博士学位；自2012年加入大疆创新，曾负责视觉研发和智能制造相关部门。",
+          "quote_hash": "efd15b50b0120e3a109365950be537632a209fae074680cba16e70dbbee642c6"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
     }
   },
   "relatedEntities": [],

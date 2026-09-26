@@ -188,10 +188,29 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Cerca Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "依据机构官网策略、团队、组合或联系资料核实；机构自述指标与组合案例不视作基金回报。",
+      "summary": "Cerca Partners 是以色列科技初创企业的联合投资型 VC 基金，官网称其与全球及本地领先 VC 共同投资，并通过 Nextage 的金融服务网络及创业者、高管社群支持被投企业；投资领域不限定单一垂直赛道。",
+      "facts": [
+        {
+          "field": "investment_strategy",
+          "label": "联合投资",
+          "value": "与全球及本地领先 VC 共同投资以色列科技创业公司。",
+          "source_id": "cerca_official"
+        },
+        {
+          "field": "background",
+          "label": "机构背景",
+          "value": "由 Nextage 创立；官网称 Nextage 深耕高科技领域金融服务超过 20 年。",
+          "source_id": "cerca_community"
+        },
+        {
+          "field": "leadership",
+          "label": "官网列示管理团队",
+          "value": "Ofer Katz（创始人、普通合伙人）；Haleli Barath（创始人、管理普通合伙人）；另列 Ronnie Zahavi（合伙人）。",
+          "source_id": "cerca_team"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -203,7 +222,33 @@
           "source_id": "FISRC-9fb1f37fe46c5a80"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Cerca Partners",
+          "url": "https://cerca-partners.com/",
+          "source_id": "cerca_official"
+        },
+        {
+          "kind": "email",
+          "label": "官方联系邮箱",
+          "value": "info@cerca-partners.com",
+          "source_id": "cerca_official"
+        },
+        {
+          "kind": "phone",
+          "label": "官方联系电话",
+          "value": "+972-9-7442274",
+          "source_id": "cerca_official"
+        },
+        {
+          "kind": "address",
+          "label": "官网公开地址",
+          "value": "4 HaSheizaf Street, Ra’anana 4366411, Israel",
+          "source_id": "cerca_official"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-29a5cc0bbf402ca0",
@@ -220,9 +265,33 @@
           "source_content_hash": "b9053d363a504063",
           "quote": "Jedify previously raised an $8.5 million seed round in September 2023, led by S Capital VC with participation from Cerca Partners",
           "quote_hash": "3380b397c2db4ddcae660fed8f92a6b99b2fcbb27d0cc722da152645225b9c7f"
+        },
+        {
+          "source_id": "cerca_official",
+          "source_url": "https://cerca-partners.com/",
+          "source_title": "Cerca Partners | Official Website",
+          "quote": "Cerca Partners is a co-investment VC fund investing alongside top-tier funds in Israeli technology startups.",
+          "source_content_hash": "3e3f75c29c10325067826eaee2767a93cf508ce30cb1b6bf678fe5e8466b32ad",
+          "quote_hash": "11eae0be5f297a139310c734e24b8a7e34b47816c1eaed27e8191c560b983647"
+        },
+        {
+          "source_id": "cerca_community",
+          "source_url": "https://cerca-partners.com/community/",
+          "source_title": "Community | Cerca Partners",
+          "quote": "Cerca Partners was founded by Nextage, a global financial services firm specializing in the high-tech sector.",
+          "source_content_hash": "9169dfd3fd2393200d19e218338c52c6725040835867adcd77f4063eb20a0c5b",
+          "quote_hash": "4b3a049a9753b3a762a2e3039236cd9d9a1be1cc4aedc2f1706e90e64b41f75c"
+        },
+        {
+          "source_id": "cerca_team",
+          "source_url": "https://cerca-partners.com/our-team/",
+          "source_title": "Team | Cerca Partners",
+          "quote": "Ofer Katz — Founder and General Partner; Haleli Barath — Founder and Managing General Partner.",
+          "source_content_hash": "6c680ddfd5ba0e2ed02ef0d6b7032859c339e9aaec42a8a8580035ca39f048fb",
+          "quote_hash": "ccedf1193d73f3030130da6868ab06150437ecb1e7bf30c8c10a342de08fb28d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

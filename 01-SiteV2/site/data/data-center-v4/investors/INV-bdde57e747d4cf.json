@@ -186,12 +186,41 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Bosch Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Bosch Ventures（Robert Bosch Venture Capital）是博世集团企业风险投资机构，全球投资深科技公司，重点包括AI、自动化、电气化、半导体、先进制造、移动、能源效率及医疗。除资金外，可为被投企业提供博世商业网络与合作资源。",
+      "facts": [
+        {
+          "field": "parent",
+          "label": "母集团",
+          "value": "Robert Bosch GmbH／博世集团",
+          "source_id": "bosch_ventures_strategy_202609"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期为主，也参与选定的种子及后期轮次",
+          "source_id": "bosch_ventures_strategy_202609"
+        },
+        {
+          "field": "maximum_per_company",
+          "label": "单家公司投资上限",
+          "value": "最高2500万欧元（官网口径）",
+          "source_id": "bosch_ventures_strategy_202609"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": [
+            "AI与深度学习",
+            "自动化与数字化",
+            "半导体及新一代计算",
+            "先进制造",
+            "移动",
+            "能源效率",
+            "医疗"
+          ],
+          "source_id": "bosch_ventures_strategy_202609"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -203,8 +232,44 @@
           "source_id": "FISRC-fa41049d7cbdf303"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "label": "斯图加特总部投资联系邮箱",
+          "value": "Info.RBVC@de.bosch.com",
+          "source_id": "bosch_ventures_contact_202609"
+        },
+        {
+          "kind": "address",
+          "label": "斯图加特总部",
+          "value": "Robert Bosch Venture Capital GmbH, Mittlerer Pfad 2, 70499 Stuttgart-Weilimdorf, Germany",
+          "source_id": "bosch_ventures_contact_202609"
+        },
+        {
+          "kind": "website",
+          "label": "Bosch Ventures官网",
+          "value": "投资策略、团队与投资组合",
+          "url": "https://bosch.ventures/",
+          "source_id": "bosch_ventures_contact_202609"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "bosch_ventures_strategy_202609",
+          "source_url": "https://bosch.ventures/investment-strategy/",
+          "source_title": "Investment Strategy | Bosch Ventures",
+          "source_content_hash": "702028f799ae190c50a3386becbe49602f1ace52c09dab146a77fb7420e4400c",
+          "quote": "Bosch Ventures官网称其投资早期深科技公司，并选择性参与种子轮或后期轮次，可领投、联合领投或跟投。重点领域包括AI、自动化、电气化、半导体、先进制造、移动、能源效率及医疗；单家公司投资可达2500万欧元。",
+          "quote_hash": "9cde62fc8311883ea541f0a8e59783e5b876a9cc05c97b5c7d7c7e1d9e105b4b"
+        },
+        {
+          "source_id": "bosch_ventures_contact_202609",
+          "source_url": "https://bosch.ventures/",
+          "source_title": "Bosch Ventures官网及团队联系信息",
+          "source_content_hash": "c6483f72324638cf1e61d620bf029a398fc96a7c8207977c0ffbf41e99e4724e",
+          "quote": "Bosch Ventures官网列出德国、美国、以色列、中国等投资办公室及联系人，并公布斯图加特总部邮箱Info.RBVC@de.bosch.com和地址。",
+          "quote_hash": "f260bb0deebf9ad8e55455f0cda527602021bc3c846d84d6837311dbedf3df0f"
+        },
         {
           "source_id": "FISRC-f9990b5df3232b99",
           "source_url": "https://www.prnewswire.com/news-releases/whale-raises-40m-series-c3-extension-bringing-total-series-c-to-100m-to-scale-global-enterprise-ai-operations-302827069.html",
@@ -222,7 +287,11 @@
           "quote_hash": "fa8893112d87b7782b21a1bfe7fb38d3b508fcc351c4a8a60f17db326afb1933"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "coverage_note": "投资方向、阶段、投资上限和公开办公联系方式来自机构官网；不将母集团业务指标写作基金业绩。",
+      "identity_status": "verified"
     }
   }
 }

@@ -187,13 +187,21 @@
     ],
     "public_profile": {
       "profile_type": "person",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Soumith Chintala 当前按“个人投资者”收录。最新融资披露记录日期为 2026-07-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "summary": "Soumith Chintala 是 PyTorch 创始贡献者和 AI 工程师。PyTorch 官方页面记录他曾任 Meta AI 工程总监及项目主要维护者；PyTorch 开发者公告称，2026年5月项目首席核心维护职责移交给 Alban Desmaison。现有来源未核实其此后的 Meta 职务变化，因此不标注为当前职位。",
       "facts": [],
-      "milestones": [],
+      "milestones": [
+        {
+          "date": "2026-05",
+          "description": "PyTorch 开发者公告称首席核心维护职责移交给 Alban Desmaison。",
+          "source_id": "soumith_maintainer_transition"
+        }
+      ],
       "track_record": [
+        {
+          "description": "作为 PyTorch 共同创建者之一参与该机器学习框架建设；此为软件与开源项目经历，不代表个人投资业绩。",
+          "source_id": "soumith_pytorch_founder"
+        },
         {
           "description": "融资来源记录：Mowito · 预种子轮 · 2026-07-07 · 天使投资人 · $3M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5667d54cc3421916"
@@ -203,8 +211,59 @@
           "source_id": "FISRC-9dd8630200082b4c"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "PyTorch 官方项目资料",
+          "value": "PyTorch",
+          "url": "https://pytorch.org/",
+          "source_id": "soumith_meta_pytorch"
+        }
+      ],
+      "current_roles": [],
+      "career": [
+        {
+          "organization": "Meta AI",
+          "title": "工程总监、PyTorch 主要维护者",
+          "period": "PyTorch 官方文章发表于2022年；具体雇佣起止时间未披露",
+          "description": "PyTorch 官方文章署名说明其当时担任 Meta AI 工程总监和 PyTorch lead maintainer。",
+          "source_id": "soumith_meta_pytorch"
+        },
+        {
+          "organization": "PyTorch",
+          "title": "首席核心维护者（至2026年5月）",
+          "period": "至2026年5月职责移交",
+          "description": "项目开发者公告记录该职责移交给 Alban Desmaison。",
+          "source_id": "soumith_maintainer_transition"
+        }
+      ],
+      "education": [],
+      "experience_summary": "公开可确认的经历集中于 Meta AI 工程工作及 PyTorch 开源项目创建、维护；现任雇主职位和教育经历未由当前资料充分确认。",
       "sources": [
+        {
+          "source_id": "soumith_meta_pytorch",
+          "source_url": "https://pytorch.org/blog/democratizing-ai-with-pytorch/",
+          "source_title": "Democratizing AI with PyTorch Foundation and ROCm support for PyTorch",
+          "source_content_hash": "8c5e8e851df348953e019605960488afbf82cf4908c80de0ad9a6677959fbe29",
+          "quote": "Soumith Chintala, PyTorch lead-maintainer and Director of Engineering, Meta AI.",
+          "quote_hash": "9780be4974395ae745d0f287a764aae14a066a770312503f30345289469ecd1d"
+        },
+        {
+          "source_id": "soumith_maintainer_transition",
+          "source_url": "https://dev-discuss.pytorch.org/t/lead-core-maintainer-change/3381",
+          "source_title": "Lead Core Maintainer Change | PyTorch Developer Mailing List",
+          "source_content_hash": "68f875ae6f578ba83c8099d38fc45defbbf1380b13a39aab691e8bf701467aa7",
+          "quote": "The lead core maintainer torch has been passed on from Soumith Chintala to Alban Desmaison.",
+          "quote_hash": "a78e115ee0266d269b0955a5537c3233cddd78585dc9af8ec702325904b5ba37"
+        },
+        {
+          "source_id": "soumith_pytorch_founder",
+          "source_url": "https://pytorch.org/blog/amd-journey/",
+          "source_title": "AMD’s Journey to Openness and Performance | PyTorch",
+          "source_content_hash": "326bd87cf28dd1ed0fbb2c0b2aadefa6dfd8b4bfb9398802052c4eba942449ae",
+          "quote": "Soumith Chintala, the founder of PyTorch, discussed advancements and integration between AMD and PyTorch.",
+          "quote_hash": "a0b7ceb52626770f258a9e4513657eb9a803d53c40671ba8807149bbd3722227"
+        },
         {
           "source_id": "FISRC-5667d54cc3421916",
           "source_url": "https://versionone.vc/announcing-our-investment-in-mowito-physical-ai-for-robot-arms-in-manufacturing/",
@@ -222,7 +281,9 @@
           "quote_hash": "af96c9b1d07b0dc39776de5cc000d6a8869b670b5a7c266648edea3a5433670f"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

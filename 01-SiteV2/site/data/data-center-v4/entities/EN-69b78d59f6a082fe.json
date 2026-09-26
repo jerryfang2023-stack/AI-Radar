@@ -111,33 +111,77 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "李震宇 的来源线索将其与它石智航（联合创始人）关联。来源日期：2026-08-03；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "李震宇是人工智能、智能驾驶与具身智能领域管理者和创业者，现任上海它石智航技术有限公司董事长，并于 2024 年 9 月起担任长安汽车独立董事。长安汽车公开披露的履历显示，他曾任百度集团智能驾驶事业群及自动驾驶业务多个负责人职务，2024 年时任百度集团资深副总裁、CEO 助理。",
+      "current_roles": [
+        {
+          "title": "董事长",
+          "organization": "上海它石智航技术有限公司",
+          "source_id": "li_zhenyu_2026"
+        },
+        {
+          "title": "独立董事",
+          "organization": "重庆长安汽车股份有限公司",
+          "source_id": "li_zhenyu_2026"
+        }
+      ],
       "career": [
         {
-          "organization": "它石智航",
-          "title": "联合创始人",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将李震宇与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-c76fbd65c11c8a49"
+          "organization": "百度在线网络技术（北京）有限公司（百度集团）",
+          "title": "资深副总裁、CEO 助理；曾任智能驾驶事业群总裁、自动驾驶事业部总经理等",
+          "period": "截至 2024 年披露；具体起止时间未在公司候选人简历中完整列明",
+          "description": "公开的上市公司董事候选人简历列举其曾任智能驾驶事业群常务副总经理、自动驾驶事业部总经理及智能驾驶事业群总经理等职务。",
+          "source_id": "li_zhenyu_baidu"
+        },
+        {
+          "organization": "上海它石智航技术有限公司",
+          "title": "董事长、联合创始人",
+          "period": "董事长身份由 2026 年 4 月披露；创立团队相关报道发表于 2025 年",
+          "description": "从百度智能驾驶管理岗位转向具身智能创业；公司聚焦具身智能及机器人方向。",
+          "source_id": "li_zhenyu_2026"
+        },
+        {
+          "organization": "重庆长安汽车股份有限公司",
+          "title": "独立董事",
+          "period": "2024-09 至至少 2026-04",
+          "description": "公开年度履职报告载明其自 2024 年 9 月起任长安汽车独立董事。",
+          "source_id": "li_zhenyu_2026"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "未在所引官方公司披露中注明",
+          "qualification": "工学硕士；长安汽车 2024 年公开董事候选人简历",
+          "source_id": "li_zhenyu_baidu"
+        }
+      ],
+      "experience_summary": "履历横跨百度自动驾驶与智能驾驶业务管理、具身智能创业及汽车公司治理。长安汽车披露其主要研究及专业方向为人工智能、具身智能与机器人、智能驾驶。公开资料未注明其硕士就读院校。",
+      "track_record": [
+        {
+          "description": "公开公司履历列示其曾负责百度智能驾驶事业群与自动驾驶业务；本资料仅确认职务经历，不将百度产品或业务业绩全部归因于个人。",
+          "source_id": "li_zhenyu_baidu"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-c76fbd65c11c8a49",
-          "source_url": "https://www.163.com/dy/article/KQKSQSCO05198CJN.html",
-          "source_title": "融资披露来源",
-          "source_content_hash": "49ac3f719143ea9a5b96d73634d7a058f4e5a53525baa4f03dbee5c8383c80bd",
-          "quote": "它石智航成立于2024年，由华为车BU前首席科学家陈亦伦和百度智能驾驶业务前总经理李震宇联合创立。",
-          "quote_hash": "63700bc8266e8cfffb18c00435591671029566d3fc3fd74da25000641ec043bd"
+          "source_id": "li_zhenyu_2026",
+          "source_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-04-11/26e46152-e296-4f38-8555-8c70a7526c2a.PDF",
+          "source_title": "长安汽车2025年度独立董事述职报告（李震宇）",
+          "source_content_hash": "2faf9092c9ac87ed3ba93ba542cc8ef329d6efd9cde4e4c9fad5987535d1f28d",
+          "quote": "长安汽车2025年度独立董事述职报告记载：李震宇现任上海它石智航技术有限公司董事长，自2024年9月起任长安汽车独立董事；其专业方向涉及人工智能、具身智能、机器人和智能驾驶。",
+          "quote_hash": "9ab4bc9280afdce3f1826fea6886f756c93c76f2c86a97d99008eb90e61a55bb"
+        },
+        {
+          "source_id": "li_zhenyu_baidu",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2024-08-31/1221142251.PDF",
+          "source_title": "长安汽车2024年第三次临时股东大会资料",
+          "source_content_hash": "6ee49e1bcf5462847d060bd973b7b51a2f612f989af26c48cafa2e796eb02a86",
+          "quote": "长安汽车2024年董事候选人简历记载，李震宇为工学硕士，时任百度集团资深副总裁、CEO助理；曾任智能驾驶事业群与自动驾驶业务多项管理职务。",
+          "quote_hash": "931379651fcf04a543b851f45d5b2a62fae8a07461d215110d1d40298d4471b2"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
     }
   },
   "relatedEntities": [],

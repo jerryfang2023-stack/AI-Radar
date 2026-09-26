@@ -111,33 +111,90 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "刘知远 的来源线索将其与面壁智能（联合创始人、首席科学家）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "刘知远是清华大学计算机系教授、自然语言处理研究者及面壁智能联合创始人兼首席科学家。研究方向包括知识图谱与语义计算、社会计算及基础大模型；清华大学资料记载其在 ACL、EMNLP、IJCAI、AAAI 等会议与期刊发表论文百余篇，曾参与“悟道 2.0”大模型工作。",
+      "current_roles": [
+        {
+          "title": "教授",
+          "organization": "清华大学计算机科学与技术系",
+          "source_id": "liu_tsinghua"
+        },
+        {
+          "title": "联合创始人、首席科学家",
+          "organization": "面壁智能",
+          "source_id": "liu_matrix"
+        }
+      ],
       "career": [
+        {
+          "organization": "清华大学计算机科学与技术系",
+          "title": "教授、研究者",
+          "period": "资料更新至 2026 年；起始年份未在现有来源披露",
+          "description": "研究知识图谱、语义计算、社会计算与基础大模型；公开资料列有百余篇论文及相关奖项。",
+          "source_id": "liu_tsinghua"
+        },
         {
           "organization": "面壁智能",
           "title": "联合创始人、首席科学家",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-5e868b9dacd5325c"
+          "period": "至少自 2022 年起；报道更新至 2026 年",
+          "description": "参与端侧与基础大模型研发及创业，公司围绕高效大模型开展技术研究。",
+          "source_id": "liu_matrix"
+        },
+        {
+          "organization": "北京智源人工智能研究院",
+          "title": "研究合作参与者",
+          "period": "悟道 2.0 项目阶段；具体任期未披露",
+          "description": "清华大学报道记载其参与由智源研究院发布的“悟道 2.0”大模型。",
+          "source_id": "liu_matrix"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "清华大学",
+          "qualification": "工学学士，计算机科学，2006",
+          "source_id": "liu_tsinghua"
+        },
+        {
+          "institution": "清华大学",
+          "qualification": "工学博士，计算机科学，2011",
+          "source_id": "liu_tsinghua"
+        }
+      ],
+      "experience_summary": "从事自然语言处理、知识图谱与大模型研究，并参与学术成果向创业产品转化。公开学术页称其发表论文百余篇，Google Scholar 引用近 4.1 万次（页面自述统计），并列出多项学术和教学荣誉。",
+      "track_record": [
+        {
+          "description": "清华大学教师主页列示其发表 ACL、EMNLP、IJCAI、AAAI 等论文百余篇；网页列举的 Google Scholar 引用量为近 4.1 万次，引用数随时间变化。",
+          "source_id": "liu_tsinghua"
+        },
+        {
+          "description": "清华大学官方报道记载，刘知远参与智源研究院发布的“悟道 2.0”万亿参数大模型研发。",
+          "source_id": "liu_matrix"
+        },
+        {
+          "description": "清华大学教师主页列示其获得 2023 年高等学校科学研究优秀成果奖自然科学一等奖（排名第二）及多项学术、教学荣誉。",
+          "source_id": "liu_tsinghua"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-5e868b9dacd5325c",
-          "source_url": "https://finance.sina.com.cn/stock/t/2026-04-09/doc-inhtwhrc8925749.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "21fcbff02b369abf",
-          "quote": "另一名联合创始人、首席科学家刘知远，则是清华大学计算机科学与技术系教授。",
-          "quote_hash": "12d7e0a31b03424f99cda654120165aecf83a4d2d32a58e71cbbd7b5a75475c0"
+          "source_id": "liu_tsinghua",
+          "source_url": "https://www.cs.tsinghua.edu.cn/info/1121/7037.htm",
+          "source_title": "刘知远-清华大学计算机科学与技术系",
+          "source_content_hash": "daa93ab4648f412d15835daa02882b36096bf6ec7b51e16601ad42db66d99bd6",
+          "quote": "清华大学教师主页列明刘知远为教授，2006年获清华大学计算机科学工学学士、2011年获清华大学计算机科学工学博士；研究方向包括知识图谱与语义计算、社会计算与计算社会科学。",
+          "quote_hash": "20799372a6da76145d247ea525467bc0d153138c16e8070a8f663323128a5121"
+        },
+        {
+          "source_id": "liu_matrix",
+          "source_url": "https://www.tsinghua.edu.cn/info/1182/118675.htm",
+          "source_title": "对话刘知远：通往AGI不易，长跑要顶住资本寒冬-清华大学",
+          "source_content_hash": "9aa955ed8e6b566074af3d444d3434b01c6fc3dcdc266cfc0d52e89d505671fc",
+          "quote": "清华大学报道称刘知远为清华大学副教授、面壁智能联合创始人兼首席科学家，并记载他参与智源研究院发布的“悟道2.0”大模型。",
+          "quote_hash": "a1f6ce22d1a2b4b37e172d5c287046b4d9c211f592d1f134238cc94d599135a3"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
     }
   },
   "relatedEntities": [],

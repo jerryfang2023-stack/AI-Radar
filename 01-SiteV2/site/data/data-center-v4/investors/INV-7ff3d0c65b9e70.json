@@ -247,12 +247,29 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "九坤创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "九坤创投是由量化投资机构九坤投资创始团队打造的科技投资平台，以母基金投资和早期项目直投为主，重点关注人工智能、机器人、航空航天和消费电子。九坤投资量化资管与九坤创投分别记录，不合并其基金规模或业绩。",
+      "facts": [
+        {
+          "field": "investment_strategy",
+          "label": "投资方式",
+          "value": [
+            "母基金投资",
+            "早期项目直接投资"
+          ],
+          "source_id": "ubiquantvc_official_202609"
+        },
+        {
+          "field": "investment_focus",
+          "label": "关注领域",
+          "value": [
+            "人工智能",
+            "机器人",
+            "航空航天",
+            "消费电子"
+          ],
+          "source_id": "ubiquantvc_official_202609"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -268,8 +285,52 @@
           "source_id": "FISRC-b96684face6f5223"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "label": "商业计划书邮箱",
+          "value": "bp@ubiquantvc.com",
+          "source_id": "ubiquantvc_official_202609"
+        },
+        {
+          "kind": "address",
+          "label": "办公地址",
+          "value": "北京市海淀区中关村东路1号8号楼B座赛尔大厦2层",
+          "source_id": "ubiquantvc_official_202609"
+        },
+        {
+          "kind": "website",
+          "label": "九坤创投官网",
+          "value": "机构官网",
+          "url": "https://www.ubiquantpartners.com/",
+          "source_id": "ubiquantvc_official_202609"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "ubiquantvc_official_202609",
+          "source_url": "https://www.ubiquantpartners.com/",
+          "source_title": "九坤创投｜官方介绍",
+          "source_content_hash": "17efe8e5521e0829773d5209fab9389da1ec5cfde9f41c8c84601adf8866aaca",
+          "quote": "九坤创投官网称其由九坤投资创始人打造，是以母基金投资及早期项目直投为主的科技投资平台，关注人工智能、机器人、航空航天、消费电子等领域；官网公开商业计划书邮箱bp@ubiquantvc.com及北京地址。",
+          "quote_hash": "e7bf71f6a55d30ef09bdb4733b6b2bcb233ca03f8ec7e563873886e49692b889"
+        },
+        {
+          "source_id": "ubiquant_group_about_202609",
+          "source_url": "https://www.ubiquant.com/website/about",
+          "source_title": "关于九坤｜九坤投资官网",
+          "source_content_hash": "efce1c0f2746bc3ed4166097a21ac21a436cb6dbeed9b0477ef4d34112562289",
+          "quote": "九坤投资官网介绍其2012年成立、从事量化投资；截至2025年第四季度官网披露管理规模约800亿元。该规模属于量化资管机构，并非九坤创投基金管理规模。",
+          "quote_hash": "607dc12f34632e06b55ff3d25cc8885f7cdaf22cf832be8685287e73f12d3087"
+        },
+        {
+          "source_id": "ubiquant_ir_contact_202609",
+          "source_url": "https://www.ubiquant.com/website/investorRelation",
+          "source_title": "投资者关系与联系方式｜九坤投资官网",
+          "source_content_hash": "275ea98aefb3258662160cfdc399258d4a4718201dd975d7812daed6e888e7a0",
+          "quote": "九坤投资官网公布投资者关系热线010-63824894，用于旗下产品投资者服务。",
+          "quote_hash": "03af00d1fe8511c2623a9aab230909dff672396fc6a0b3b69fe3a030b8cfe720"
+        },
         {
           "source_id": "FISRC-ee42dc11e9aa441b",
           "source_url": "https://www.cjcn.com.cn/news/show-475659.html",
@@ -295,7 +356,11 @@
           "quote_hash": "2c7a017683a1b0f38e874bdd012938f92c6ee4e7adca7b335d3537ae2cd74b61"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "coverage_note": "投资策略、关注领域、BP邮箱及办公地址取自九坤创投官网；九坤投资资管规模仅用于说明关联背景，未归入九坤创投。",
+      "identity_status": "verified"
     }
   }
 }

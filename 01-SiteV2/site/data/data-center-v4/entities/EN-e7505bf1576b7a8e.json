@@ -111,33 +111,54 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "隋小波 的来源线索将其与跨赴科技（首席技术官）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "隋小波是跨赴科技 CTO 及联合创始团队成员。融资披露关联的创业项目资料记载，他有10年以上软件工程经验，曾为腾讯T11级技术专家，并负责滴滴研发效能平台；目前未找到可独立确认的教育经历和这些职位的具体任期。",
+      "current_roles": [
+        {
+          "title": "首席技术官",
+          "organization": "跨赴科技",
+          "source_id": "sui_emergeia_profile"
+        }
+      ],
       "career": [
         {
+          "organization": "腾讯",
+          "title": "T11级技术专家",
+          "period": "任职时间未披露",
+          "description": "项目资料记载其拥有腾讯T11级技术专家经历。",
+          "source_id": "sui_emergeia_profile"
+        },
+        {
+          "organization": "滴滴",
+          "title": "研发效能平台负责人",
+          "period": "任职时间未披露",
+          "description": "项目资料记载其曾负责滴滴研发效能平台。",
+          "source_id": "sui_emergeia_profile"
+        },
+        {
           "organization": "跨赴科技",
-          "title": "首席技术官",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-12c5d319a424ca26"
+          "title": "首席技术官、联合创始团队成员",
+          "period": "2023年8月起；现任状态按公开资料记录",
+          "description": "参与创办聚焦AI软件开发的平台公司。",
+          "source_id": "sui_emergeia_profile"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
+      "experience_summary": "公开项目资料支持其在软件工程、腾讯研发及滴滴研发效能方面的经历。具体任职起止年份、学校及学位信息尚未披露。",
       "track_record": [],
       "sources": [
         {
-          "source_id": "FISRC-12c5d319a424ca26",
+          "source_id": "sui_emergeia_profile",
           "source_url": "https://emergeia.com/project/2024S-046",
-          "source_title": "融资披露来源",
+          "source_title": "项目资料 - EmergeIA",
           "source_content_hash": "e47319385004570b36be07f8a2672699a9840e4cd537f7119ede9c047afb3b87",
-          "quote": "隋小波 CTO 10年+ 软件工程经验，前腾讯 T11 级技术专家，DevOps Master 认证，前滴滴研发效能平台负责人。",
-          "quote_hash": "cffd1cfee1b4d3aa9e826cc02d541c25ff479beb12938afcd6252bbbb1595f3e"
+          "quote": "隋小波任跨赴科技CTO，拥有10年以上软件工程经验，曾任腾讯T11级技术专家及滴滴研发效能平台负责人。",
+          "quote_hash": "c7e1b05574beae6febcc2747ead9ea8f093d74abba30cd4c6255aaeff1e3dd0c"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "职务及技术经历来自公开项目档案，任期、教育经历和个人联系方式没有可核验披露。",
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

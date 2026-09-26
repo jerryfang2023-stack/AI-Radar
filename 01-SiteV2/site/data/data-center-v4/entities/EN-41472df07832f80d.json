@@ -111,33 +111,66 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "刘金国 的来源线索将其与幻码跃迁（首席科学家）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "刘金国是幻码跃迁联合创始人及首席科学家，长期研究中性原子量子计算、量子算法与组合优化。投资界对公司的融资报道介绍，他曾在哈佛大学 Lukin 研究组从事博士后研究，后任 QuEra 全职顾问并参与团队组建和软件栈建设，也是 Yao.jl 主要贡献者之一。详细学位、任职时间线未公开。",
+      "current_roles": [
+        {
+          "title": "联合创始人、首席科学家",
+          "organization": "幻码跃迁",
+          "source_id": "liujinguo_pedaily_2026"
+        }
+      ],
       "career": [
         {
+          "organization": "哈佛大学 Lukin 研究组",
+          "title": "博士后研究人员",
+          "period": "任期未披露",
+          "description": "报道记载其参与中性原子量子计算相关研究。",
+          "source_id": "liujinguo_pedaily_2026"
+        },
+        {
+          "organization": "QuEra",
+          "title": "全职顾问",
+          "period": "任期未披露",
+          "description": "报道记载其参与团队组建及软件栈建设。",
+          "source_id": "liujinguo_pedaily_2026"
+        },
+        {
+          "organization": "Yao.jl",
+          "title": "主要贡献者",
+          "period": "贡献时间未披露",
+          "description": "公开报道将其列为量子计算开源软件Yao.jl主要贡献者之一。",
+          "source_id": "liujinguo_pedaily_2026"
+        },
+        {
           "organization": "幻码跃迁",
-          "title": "首席科学家",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-7c0e1d89cdf9af82"
+          "title": "联合创始人、首席科学家",
+          "period": "2026年融资报道时在任",
+          "description": "参与量子计算软件与AI融合基础设施建设。",
+          "source_id": "liujinguo_pedaily_2026"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
-      "sources": [
+      "experience_summary": "履历横跨中性原子量子研究、商业量子计算软件团队和开源社区；学校学位、博士后起止年月及 QuEra 顾问任期仍未由公开报道详细列明。",
+      "track_record": [
         {
-          "source_id": "FISRC-7c0e1d89cdf9af82",
-          "source_url": "https://news.pedaily.cn/202607/566249.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "340f8c8784943503",
-          "quote": "两位首席科学家提供关键技术纵深。王鑫曾任百度量子计算研究所Tech Leader，主导研发工业级量子软件平台“量桨”，长期从事量子算法、量子信息与量子人工智能研究，在PRL、PRX Quantum、Nature Computational Science、IEEE TIT、NeurIPS、AAAI、ISCA、HPCA、MICRO 等顶刊和顶会发表论文百余篇，主持和参与量子算法与量超融合方向的国自然重大研究计划和国家重点研发计划。刘金国曾在全球中性原子量子计算领军团队——哈佛大学 Lukin 组从事博士后研究，并在其孵化的全球头部中性原子量子计算公司QuEra 任全职顾问，深度参与QuEra 团队组建与软件栈建设，系统积累了从理论、软件到硬件映射的复合经验。刘金国长期深耕中性原子体系模拟、量子算法和组合优化，是国内量子软件开源社区核心布道者之一，也是 Yao.jl 主要贡献者之一。",
-          "quote_hash": "41fcec79ad8e11907b6d5178e29efb2199f5a35eab800cca37f14959091c4d1b"
+          "description": "公开报道列出其在中性原子系统模拟、量子算法和组合优化方面的研究经历及开源贡献；未将团队成果单独归因于个人。",
+          "source_id": "liujinguo_pedaily_2026"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "sources": [
+        {
+          "source_id": "liujinguo_pedaily_2026",
+          "source_url": "https://news.pedaily.cn/202607/566249.shtml",
+          "source_title": "幻码跃迁融资与团队介绍 - 投资界",
+          "source_content_hash": "340f8c8784943503",
+          "quote": "刘金国曾在哈佛Lukin组从事博士后研究、任QuEra全职顾问，并参与量子算法及开源软件工作。",
+          "quote_hash": "89f2257eb9fb2b7c5c39e8bf273f23b47bb926e31aa84ba2ef450646339ef683"
+        }
+      ],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "人物关联和履历来自公司融资报道，教育机构之外的学位与各段任职年份未披露。",
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

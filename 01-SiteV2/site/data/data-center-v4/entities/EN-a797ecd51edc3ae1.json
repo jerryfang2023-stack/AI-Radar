@@ -111,33 +111,81 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "邹郢路 的来源线索将其与PureblueAI清蓝（联合创始人兼COO）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "邹郢路是PureblueAI清蓝联合创始人兼COO，负责公司产品与商业化工作。公司融资报道介绍其曾在蚂蚁集团从事技术工作，并曾任头部广告公司AI营销产品负责人；公司招聘资料列其毕业于解放军信息工程大学，属于公开招聘平台收录信息，尚无学校或本人履历页交叉核验。",
+      "current_roles": [
+        {
+          "title": "联合创始人、COO、海外业务负责人",
+          "organization": "PureblueAI清蓝",
+          "source_id": "zouyinglu_boss"
+        }
+      ],
       "career": [
         {
+          "organization": "蚂蚁集团",
+          "title": "技术专家",
+          "period": "早期职业阶段；时间及团队未披露",
+          "description": "公司创始人访谈提及其过往技术经历。",
+          "source_id": "zouyinglu_niutoushe"
+        },
+        {
+          "organization": "头部广告公司",
+          "title": "AI营销产品负责人",
+          "period": "加入PureblueAI前两年；公司及具体任职时间未公开",
+          "description": "公司创始人访谈以概括方式介绍其AI营销产品经历。",
+          "source_id": "zouyinglu_niutoushe"
+        },
+        {
           "organization": "PureblueAI清蓝",
-          "title": "联合创始人兼COO",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-937426ecdaae19a2"
+          "title": "联合创始人、COO",
+          "period": "公司创立后；2026年公司公开资料确认",
+          "description": "参与产品、运营及商业化建设。",
+          "source_id": "zouyinglu_company"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "解放军信息工程大学",
+          "qualification": "毕业；学位、专业和年份未披露（招聘平台资料）",
+          "source_id": "zouyinglu_boss"
+        }
+      ],
+      "experience_summary": "职业线索涵盖技术、AI营销产品与创业运营，具体雇主、职务时间及个人业绩披露有限。",
+      "track_record": [
+        {
+          "description": "联合创立PureblueAI清蓝并担任COO；公司官网介绍其GEO及AI营销业务，相关市场表现按公司自述口径。",
+          "source_id": "zouyinglu_company"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-937426ecdaae19a2",
-          "source_url": "https://tech.china.com/articles/20260827/202608271952181.html",
-          "source_title": "融资披露来源",
-          "source_content_hash": "3d5a720c46029d854fd289e269e6fd42dd23b5852fd009fce0626f51d0725acf",
-          "quote": "联合创始人兼COO邹郢路，前浙文互联AI营销产品“好奇飞梭”负责人",
-          "quote_hash": "3eb9e6d5fb69f3669fbe94751970c01a2b91c12b2d4798b7037da9666d8edea7"
+          "source_id": "zouyinglu_company",
+          "source_url": "https://www.pureblueai.com/about-us",
+          "source_title": "关于我们 - PureblueAI清蓝",
+          "source_content_hash": "347a880ad2a758cac16b5194398a932b98c3f6c1f4b6c692fc3f59bec841c815",
+          "quote": "PureblueAI官网介绍公司业务方向、融资历程、办公布局及公开联系渠道。",
+          "quote_hash": "290f9e595b41a5f10ccc2caca495c01aed8963129766e58c7cf2dc643f44b824"
+        },
+        {
+          "source_id": "zouyinglu_boss",
+          "source_url": "https://m.zhipin.com/companys/4ac23898f1c1955003J83dm0Els~.html",
+          "source_title": "PureblueAI清蓝招聘及团队介绍 - BOSS直聘",
+          "source_content_hash": "8e2c8ac3de172ce0278a6354ddaee0b2296b7479a038dcbdd3234750f682bc42",
+          "quote": "招聘平台资料将邹郢路列为COO，并介绍其解放军信息工程大学教育背景。",
+          "quote_hash": "90d04cf52e3082dacbc2d52bf58c8127fff13fb8330f8de091d6cea2285662c3"
+        },
+        {
+          "source_id": "zouyinglu_niutoushe",
+          "source_url": "https://www.niutoushe.com/98845",
+          "source_title": "PureblueAI清蓝创始团队访谈 - 牛透社",
+          "source_content_hash": "04da77398b1fee4d1e6b16cbf3a9a0d4fe9beddab331a951c6dd175e831791a3",
+          "quote": "公司创始人访谈介绍COO邹郢路曾任蚂蚁技术专家及AI营销产品负责人。",
+          "quote_hash": "11db2ea656d69b25d4d15c123abd6036868756b3b9d975c9847d5a73cc0ef20a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "任职方向来自公司创始人访谈，现职和业务由公司官网支持；学校信息来自招聘平台资料并注明待一手交叉核验。",
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

@@ -241,13 +241,39 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Amazon 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Amazon 是全球科技与零售企业，拥有多个业务部门和投资项目。其官方开发者网站介绍 Alexa Fund：该风险投资基金于2015年推出，最初支持语音和智能设备创新，之后扩展至人工智能、硬件与娱乐。融资数据库中的“Amazon”记录未必能单独确认由 Alexa Fund 或其他投资职能完成。",
+      "facts": [
+        {
+          "field": "venture_arm",
+          "label": "公开风险投资项目",
+          "value": "Alexa Fund；仅作为 Amazon 旗下公开投资项目之一",
+          "source_id": "amazon_alexa_fund"
+        },
+        {
+          "field": "active_since",
+          "label": "Alexa Fund 推出时间",
+          "value": "2015年",
+          "source_id": "amazon_alexa_fund"
+        },
+        {
+          "field": "sectors",
+          "label": "Alexa Fund 官网披露领域",
+          "value": [
+            "语音与智能设备",
+            "人工智能",
+            "硬件",
+            "娱乐"
+          ],
+          "source_id": "amazon_alexa_fund"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2015",
+          "description": "Amazon 推出 Alexa Fund，以支持语音和智能设备创新。",
+          "source_id": "amazon_alexa_fund"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Odyssey ML · B轮 · 2026-06-17 · 本轮参投 · 3.1亿美元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -262,8 +288,24 @@
           "source_id": "FISRC-52917ea3c077fbf0"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Alexa Fund 官方介绍及投资组合",
+          "value": "Amazon Alexa Fund",
+          "url": "https://developer.amazon.com/en-US/alexa/alexa-fund-venture-capital",
+          "source_id": "amazon_alexa_fund"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "amazon_alexa_fund",
+          "source_url": "https://developer.amazon.com/en-US/alexa/alexa-fund-venture-capital",
+          "source_title": "Alexa Fund Venture Capital | Amazon Developer",
+          "source_content_hash": "85dc00f2d283615090cd1b8c86e35daee4ac908592851fe61c6ed90d886702b1",
+          "quote": "Amazon 官方称 Alexa Fund 于2015年推出，最初推动语音和智能设备创新，随后支持人工智能、硬件与娱乐领域创业者。",
+          "quote_hash": "00b0363d98092dd5a61d3c99868dcd2c775b5b7c043f6f83ca21d26e1fa532b7"
+        },
         {
           "source_id": "FISRC-e94365d0212a78f3",
           "source_url": "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names",
@@ -289,7 +331,11 @@
           "quote_hash": "d80cb5ad1b5c00ed6444a5e1e4d7454b23b4d0e906de4d9d8275f1be5ec53c62"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "coverage_note": "Amazon 的公开投资职能不止一个；本档案只介绍官网可核验的 Alexa Fund，不将融资记录中的 Amazon 名称自动归于该基金。",
+      "identity_status": "verified"
     }
   }
 }

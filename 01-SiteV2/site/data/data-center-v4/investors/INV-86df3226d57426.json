@@ -132,20 +132,93 @@
     ],
     "public_profile": {
       "profile_type": "person",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "John Nay 当前按“个人投资者”收录。最新融资披露记录日期为 2026-03-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "summary": "John L. Hennessy 是计算机科学家与 Stanford University 荣休校长，长期从事计算机体系结构研究。他共同创立 MIPS Computer Systems，并于2000至2016年担任 Stanford 第十任校长。所列奖项与教育信息依据 Stanford 官方人物资料。",
       "facts": [],
-      "milestones": [],
+      "milestones": [
+        {
+          "date": "2000–2016",
+          "description": "担任 Stanford University 第十任校长。",
+          "source_id": "john_hennessy_stanford"
+        },
+        {
+          "date": "1984",
+          "description": "共同创立 MIPS Computer Systems。",
+          "source_id": "john_hennessy_stanford"
+        }
+      ],
       "track_record": [
+        {
+          "description": "Stanford 官方人物简介记录其获得 IEEE Medal of Honor、ACM Eckert–Mauchly Award 等计算机工程领域荣誉；未在此将学术荣誉解释为投资业绩。",
+          "source_id": "john_hennessy_stanford"
+        },
         {
           "description": "融资来源记录：Sycamore · 种子轮 · 2026-03-30 · 天使投资人 · $65 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d354011359557f2f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Stanford 官方人物档案",
+          "value": "John Hennessy",
+          "url": "https://cap.stanford.edu/profiles/frdActionServlet?choiceId=printerprofile&profileId=41555&profileversion=full",
+          "source_id": "john_hennessy_stanford"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "President Emeritus；Knight-Hennessy Scholars 项目主任；教授",
+          "organization": "Stanford University",
+          "source_id": "john_hennessy_stanford"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Stanford University",
+          "title": "教授、系主任、工程学院院长、教务长、校长；现为荣休校长",
+          "period": "加入教职1977年；校长任期2000–2016年",
+          "description": "Stanford 官方资料记载其历任计算机系统实验室主任、计算机科学系主任、工程学院院长及教务长，并于2000至2016年任校长。",
+          "source_id": "john_hennessy_stanford"
+        },
+        {
+          "organization": "MIPS Computer Systems",
+          "title": "联合创始人",
+          "period": "1984年创立",
+          "description": "共同创立微处理器设计公司 MIPS Computer Systems。",
+          "source_id": "john_hennessy_stanford"
+        }
+      ],
+      "education": [
+        {
+          "institution": "Villanova University",
+          "qualification": "电气工程学士",
+          "source_id": "john_hennessy_education"
+        },
+        {
+          "institution": "State University of New York at Stony Brook",
+          "qualification": "计算机科学硕士、博士",
+          "source_id": "john_hennessy_education"
+        }
+      ],
+      "experience_summary": "履历涵盖大学教研与管理、计算机体系结构研究、RISC技术产业转化及芯片公司创业；其 Stanford 官方简介列有多项工程学术荣誉。",
       "sources": [
+        {
+          "source_id": "john_hennessy_stanford",
+          "source_url": "https://cap.stanford.edu/profiles/frdActionServlet?choiceId=printerprofile&profileId=41555&profileversion=full",
+          "source_title": "John Hennessy | Stanford Profiles",
+          "source_content_hash": "f0875695ebd0c7412171d2901418be776f9985cc0b67824aa29f059387de35b4",
+          "quote": "John L. Hennessy joined Stanford’s faculty in 1977 as an assistant professor of electrical engineering.",
+          "quote_hash": "94de86045aaf663a304e927c4aaabf41981b62a32b01cfd61302b9d4b0bc77b6"
+        },
+        {
+          "source_id": "john_hennessy_education",
+          "source_url": "https://cap.stanford.edu/profiles/frdActionServlet?choiceId=printerprofile&profileId=41555&profileversion=full",
+          "source_title": "John Hennessy | Stanford Profiles",
+          "source_content_hash": "f0875695ebd0c7412171d2901418be776f9985cc0b67824aa29f059387de35b4",
+          "quote": "He earned his bachelor’s degree in electrical engineering from Villanova University and his master’s and doctoral degrees in computer science from the State University of New York at Stony Brook.",
+          "quote_hash": "81845cfd59f03aedaaa457c43b104e5f8b27eed86c8f1cbfa371b4a2b87b25c2"
+        },
         {
           "source_id": "FISRC-d354011359557f2f",
           "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
@@ -155,7 +228,9 @@
           "quote_hash": "515038e634e89695755f43b8f84ec8758b5ffe916299c689ef100763f6da9f6c"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

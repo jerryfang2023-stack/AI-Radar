@@ -204,29 +204,85 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Entrée Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Entrée Capital is a global venture capital firm founded in 2010, with offices in Tel Aviv, London and New York, according to its official site. It reports $1.5 billion AUM, 11 funds and more than 180 portfolio companies; it invests from pre-seed through Series B and describes its operating approach as founder-led. Public contact is available through its official website; no direct investment-submission email was confirmed in the inspected page.",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立年份",
+          "value": "2010",
+          "source_id": "entree_about"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "AUM（官网披露）",
+          "value": "$1.5 billion",
+          "source_id": "entree_about"
+        },
+        {
+          "field": "funds",
+          "label": "基金数量",
+          "value": "11",
+          "source_id": "entree_about"
+        },
+        {
+          "field": "portfolio_companies",
+          "label": "组合企业数量",
+          "value": "180+",
+          "source_id": "entree_about"
+        },
+        {
+          "field": "investment_stages",
+          "label": "投资阶段",
+          "value": "Pre-Seed至Series B",
+          "source_id": "entree_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2010",
+          "description": "官网称Entrée Capital成立于2010年。",
+          "source_id": "entree_about"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Alta · A轮 · 2026-07-08 · 既有投资方（种子轮及本轮参投） · 2500万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-9661f69b0104e76e"
+          "description": "官网介绍其投资组合包含monday.com、Deliveroo、Coupang、Riskified、PillPack等公司案例；IPO、收购及组合规模为基金自述，非完整组合。",
+          "source_id": "entree_about"
         },
         {
           "description": "融资来源记录：Alta · A轮 · 2026-07-08 · 既有投资方（种子轮及本轮参投） · 2500万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-5d43345a21f12bb8"
+          "source_id": "FISRC-9661f69b0104e76e"
         },
         {
           "description": "融资来源记录：Alta · A轮 · 2026-07-08 · 既有投资方 · 2500万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5824955e96dd97db"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Entrée Capital",
+          "url": "https://entreecap.com/we",
+          "source_id": "entree_about"
+        },
+        {
+          "kind": "contact_form",
+          "label": "官网联系入口",
+          "value": "Entrée Capital官网",
+          "url": "https://entreecap.com/we",
+          "source_id": "entree_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "entree_about",
+          "source_url": "https://entreecap.com/we",
+          "source_title": "About - Entrée Capital",
+          "source_content_hash": "32c3f4b290f1ff45733be000289348e7a3d68e22d812f6a988913e76ff3e7cd1",
+          "quote": "We manage $1.5bn today and have invested in over 180 startups, many of which have gone on to be IPO’d or acquired by the world’s leading technology companies.",
+          "quote_hash": "a5a99b98d0521a6be2a2a2ec5ba7b46a96d42d31157ec39d773270562d1427c4"
+        },
         {
           "source_id": "FISRC-9661f69b0104e76e",
           "source_url": "https://prnewswire.com/news-releases/alta-raises-25m-to-redefine-the-go-to-market-architecture-for-revenue-teams-302820618.html",
@@ -252,7 +308,11 @@
           "quote_hash": "8b8eb8ba8bcd1114a8ee668214a1c1a63643cb422c52b80bcf17bd80ee875d93"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

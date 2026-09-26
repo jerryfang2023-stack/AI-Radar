@@ -187,13 +187,72 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "C资本(C Capital) 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-11；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "C Capital 是一家聚焦亚太市场的私人市场投资平台，官网称其成立于2017年，覆盖风险投资至成长期私募股权，并参与私人信贷及实物资产控股类投资。官网自报累计私人市场管理资产超过12亿美元、组合公司40余家；这些为机构披露口径，不等于已实现回报。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2017年",
+          "source_id": "c_capital_home"
+        },
+        {
+          "field": "geography",
+          "label": "重点区域",
+          "value": "亚太地区",
+          "source_id": "c_capital_home"
+        },
+        {
+          "field": "investment_stage",
+          "label": "私募股权投资阶段",
+          "value": "风险投资至成长期",
+          "source_id": "c_capital_home"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资领域",
+          "value": [
+            "消费",
+            "消费科技",
+            "深科技",
+            "新兴科技"
+          ],
+          "source_id": "c_capital_home"
+        },
+        {
+          "field": "strategies",
+          "label": "投资策略",
+          "value": [
+            "私募股权",
+            "私人信贷",
+            "实物资产控股类投资"
+          ],
+          "source_id": "c_capital_home"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "累计私人市场管理资产",
+          "value": "超过12亿美元（官网自报）",
+          "source_id": "c_capital_home"
+        },
+        {
+          "field": "portfolio_companies",
+          "label": "组合公司",
+          "value": "40余家（官网自报）",
+          "source_id": "c_capital_home"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2017",
+          "description": "C Capital官网称平台于2017年成立。",
+          "source_id": "c_capital_home"
+        }
+      ],
       "track_record": [
+        {
+          "description": "C Capital官网组合页展示其对Agibot、Biren、XPeng等企业的投资案例；官网另自报组合公司40余家及16家独角兽企业，属于机构披露口径，不代表完整投资组合或基金回报。",
+          "source_id": "c_capital_portfolio"
+        },
         {
           "description": "融资来源记录：听象科技 · A2轮 · 2026-09-11 · 本轮领投 · 数千万人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5ba892cc4cd3496f"
@@ -203,8 +262,39 @@
           "source_id": "FISRC-bc47ac346570c548"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站、团队与投资组合",
+          "value": "C Capital",
+          "url": "https://c.capital/",
+          "source_id": "c_capital_home"
+        },
+        {
+          "kind": "address",
+          "label": "香港办公室",
+          "value": "Suite 4301, Level 43, Jardine House, 1 Connaught Place, Central, Hong Kong",
+          "url": "https://c.capital/",
+          "source_id": "c_capital_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "c_capital_home",
+          "source_url": "https://c.capital/",
+          "source_title": "C Capital — the APAC specialist",
+          "source_content_hash": "c84a10295aa650543532a61a54dec715b0940f15b8a1e75a61a52e5a93e55299",
+          "quote": "C Capital, established in 2017, is a leading private markets platform focused on APAC-centric investments with over US$1.2 billion AUM.",
+          "quote_hash": "bedb5cb8a8ec340c4386dffc75aecce5959d51424076df382c005f5d71da3a4c"
+        },
+        {
+          "source_id": "c_capital_portfolio",
+          "source_url": "https://c.capital/portfolio",
+          "source_title": "Portfolio | C Capital",
+          "source_content_hash": "25d4e939a979aab5f0abef84eaaf69d198701f68496fe1f8f631cb909439b80a",
+          "quote": "C Capital has 16 unicorn companies and 40+ portfolio companies.",
+          "quote_hash": "0586957cd27c734a48e7770e597e10f17d0fa8e40aea59b1ac68546dc1e0b147"
+        },
         {
           "source_id": "FISRC-5ba892cc4cd3496f",
           "source_url": "https://www.cyzone.cn/article/846160.html",
@@ -222,7 +312,10 @@
           "quote_hash": "92af83f6aa18e53578d8da7cd27e2588e33c9b290dc7e5ff7043d87378c9859d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

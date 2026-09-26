@@ -111,33 +111,66 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "吴祖煊 的来源线索将其与新智具身（首席科学家）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "投资界融资报道将吴祖煊列为新智具身首席科学家，并称其为复旦大学可信具身智能研究院副院长、曾任Meta职务。复旦大学新闻资料确认其研究院研究员身份及计算机视觉、多模态AI研究方向；Meta任职细节尚未取得其雇主一手来源。",
+      "current_roles": [
+        {
+          "title": "首席科学家（融资报道口径）",
+          "organization": "新智具身",
+          "source_id": "pedaily_wuzuxuan"
+        },
+        {
+          "title": "研究员",
+          "organization": "复旦大学可信具身智能研究院",
+          "source_id": "fudan_wuzuxuan"
+        }
+      ],
       "career": [
+        {
+          "organization": "Meta",
+          "title": "曾任职；具体职务、时间未披露",
+          "period": "融资报道提及；日期未详",
+          "description": "因缺少Meta或本人履历来源，只保留融资报道中的一般关联。",
+          "source_id": "pedaily_wuzuxuan"
+        },
+        {
+          "organization": "复旦大学可信具身智能研究院",
+          "title": "研究员",
+          "period": "2025年学校报道时点",
+          "description": "复旦大学报道记载其从事计算机视觉与多模态人工智能研究。",
+          "source_id": "fudan_wuzuxuan"
+        },
         {
           "organization": "新智具身",
           "title": "首席科学家",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将吴祖煊与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-e666934339b27e85"
+          "period": "2026年融资报道时点",
+          "description": "投资界融资报道所列企业关联。",
+          "source_id": "pedaily_wuzuxuan"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
+      "experience_summary": "学校报道支持其从事计算机视觉与多模态人工智能研究；来源未披露其教育履历与可量化个人成果。",
       "track_record": [],
       "sources": [
         {
-          "source_id": "FISRC-e666934339b27e85",
+          "source_id": "pedaily_wuzuxuan",
           "source_url": "https://news.pedaily.cn/202605/564455.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "a3d55e3960392661",
-          "quote": "新智具身 首席科学家吴祖煊 ，是复旦大学可信具身智能研究院副院长、曾任职Meta",
-          "quote_hash": "d346e5c1ef74d1a77026f1721007e342a6f837fb82b5772c8aea85d4ab28d008"
+          "source_title": "新智具身融资披露 - 投资界",
+          "source_content_hash": "5196e1995ff076b37f73d83e0bb2349132edb46c35f53b3d76287b6979dc0f64",
+          "quote": "新智具身首席科学家吴祖煊，是复旦大学可信具身智能研究院副院长、曾任职Meta。",
+          "quote_hash": "a407ae4421b1c13a3b71716d805927f7a64509987391436a169bef3116ff94a5"
+        },
+        {
+          "source_id": "fudan_wuzuxuan",
+          "source_url": "https://news.fudan.edu.cn/2025/1223/c3488a147868/page.htm",
+          "source_title": "吴祖煊：在“玩”中为机器人打造超级“大脑”",
+          "source_content_hash": "6f6c8467e3fd6224756ffc671e11e69a6da8d3fa84d4189f7b9a4da0a8a3fbc4",
+          "quote": "复旦大学可信具身智能研究院研究员吴祖煊，活跃在人工智能与具身智能研究前沿。",
+          "quote_hash": "24c9fa97ea4ed980d44b7075802f7f0a10835520241f78f08b668d23c7070a3a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
     }
   },
   "relatedEntities": [],

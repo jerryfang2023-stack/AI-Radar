@@ -246,14 +246,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "SOMA Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Soma Capital 是一家总部位于美国旧金山的风险投资机构，官网介绍其创立者为 Aneel Ranadive，并称团队约 20 人、管理资产规模约 10 亿美元。机构官网展示其投资组合，并强调从创业早期与创始人建立合作关系。管理规模、团队规模和组合估值均按官网自述记录，未经独立审计；数据库同名记录不自动等于由管理公司直接投资。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "风险投资机构",
+          "source_id": "somacap_about"
+        },
+        {
+          "field": "founder",
+          "label": "创始人",
+          "value": "Aneel Ranadive",
+          "source_id": "somacap_about"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "官网自述管理资产规模",
+          "value": "约 10 亿美元；机构自报，未独立审计",
+          "source_id": "somacap_about"
+        },
+        {
+          "field": "team_size",
+          "label": "官网自述团队规模",
+          "value": "约 20 人；机构自报",
+          "source_id": "somacap_about"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资方式",
+          "value": "机构官网强调从早期阶段与创始人建立长期合作；各基金具体策略和阶段应以基金文件为准。",
+          "source_id": "somacap_portfolio"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Soma Capital 官网列示投资组合公司及估值分组；相关组合和估值数据为机构公开展示，未在本档案独立审计。",
+          "source_id": "somacap_portfolio"
+        },
         {
           "description": "融资来源记录：Monogram AI, Inc. · 种子轮 · 2026-06-30 · 本轮参投 · $40M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-907e4297862ddd8c"
@@ -267,8 +298,36 @@
           "source_id": "FISRC-3bb261b30faf2efa"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构介绍、创始人、团队及管理规模来自官网自述；本次未发现官网公开办公地址或投资申请邮箱，故不补录推测联系方式。数据库同名投资方标签不足以确认具体基金或特殊目的载体。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网及组合信息",
+          "value": "Soma Capital",
+          "url": "https://somacap.com/",
+          "source_id": "somacap_portfolio"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "somacap_about",
+          "source_url": "https://somacap.com/about",
+          "source_title": "About | Soma Capital",
+          "source_content_hash": "b6fb6fddaed03f14fb903bdd3f345f86d61f1b7f1a9e0f914d56fc0620f3cb92",
+          "quote": "Soma Capital states that Aneel Ranadive founded the firm about a decade ago, that it has a team of 20, and that it manages $1 billion in assets. These are firm-reported figures.",
+          "quote_hash": "09232fb63963c7bb00903db029b3f0819f3c960cda2a8ff0150d01bce5881cd8"
+        },
+        {
+          "source_id": "somacap_portfolio",
+          "source_url": "https://somacap.com/",
+          "source_title": "Portfolio | Soma Capital",
+          "source_content_hash": "363a3d3dd9d7ba6f55bac96055900d2f3e5ccf4b9a5552088a62eae1f72380ef",
+          "quote": "Soma Capital publishes portfolio companies across multiple valuation groupings and describes its mission as building long-term founder relationships from day one. Portfolio and valuation figures are firm-published, not independently audited here.",
+          "quote_hash": "8cf5bbb1cb76fe339b48a81123e8251e2e9856c2bc710b8e91ff341a2e041b9f"
+        },
         {
           "source_id": "FISRC-907e4297862ddd8c",
           "source_url": "https://www.thesaasnews.com/news/monogram-raises-40m-seed/",
@@ -294,7 +353,7 @@
           "quote_hash": "910c2d34c389aa7e90cfaa57d5c64dcdefffb1a4955dac810e8b8403bfc676c5"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

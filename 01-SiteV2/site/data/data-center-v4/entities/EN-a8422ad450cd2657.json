@@ -111,33 +111,82 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "师云雷 的来源线索将其与如身机器人（创始人&CEO）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "如身机器人联合创始人兼CEO师云雷的公开人物介绍记载其曾在Agile Robots及微创医疗机器人负责机械控制、机器人产品等工作，并列出汉堡大学博士、天津大学硕士及郑州大学本科学历。上海市政府2025年度项目名单另将师云雷列为康养护理机器人项目负责人。",
+      "current_roles": [
+        {
+          "title": "联合创始人兼CEO",
+          "organization": "上海如身机器人科技有限公司",
+          "source_id": "svtr_shi_yunlei"
+        }
+      ],
       "career": [
         {
-          "organization": "如身机器人",
-          "title": "创始人&CEO",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将师云雷与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-58759cf0f45e7a08"
+          "organization": "上海如身机器人科技有限公司",
+          "title": "联合创始人兼CEO",
+          "period": "公开介绍时点；任期未披露",
+          "description": "公开人物资料所列当前身份。",
+          "source_id": "svtr_shi_yunlei"
+        },
+        {
+          "organization": "Agile Robots AG",
+          "title": "机械与控制团队负责人、联合创始人",
+          "period": "任期未披露",
+          "description": "人物资料所列过往任职。",
+          "source_id": "svtr_shi_yunlei"
+        },
+        {
+          "organization": "上海微创医疗机器人（集团）股份有限公司",
+          "title": "控制团队负责人、产品经理",
+          "period": "任期未披露",
+          "description": "人物资料所列过往任职。",
+          "source_id": "svtr_shi_yunlei"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "汉堡大学",
+          "source_id": "svtr_shi_yunlei",
+          "qualification": "计算机科学博士"
+        },
+        {
+          "institution": "天津大学",
+          "source_id": "svtr_shi_yunlei",
+          "qualification": "机械工程硕士"
+        },
+        {
+          "institution": "郑州大学",
+          "source_id": "svtr_shi_yunlei",
+          "qualification": "能源与动力工程学士"
+        }
+      ],
+      "experience_summary": "具医疗机器人控制与产品经历；公开简介称其创立如身机器人前，曾在Agile Robots AG与微创医疗机器人任机械控制相关负责人。上海市政府项目名单将其列为康养护理机器人项目负责人，证明项目关联，不等同于项目已完成或产品已获认证。",
+      "track_record": [
+        {
+          "description": "上海市政府公布的2025年度生命科技领域定向项目名单将“基于具身智能的康养护理机器人”项目列入上海如身机器人科技有限公司，项目负责人为师云雷。",
+          "source_id": "shanghai_2025_life_science_projects"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-58759cf0f45e7a08",
-          "source_url": "https://news.pedaily.cn/202510/555664.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "7e88f1b8b50dc057f31a2d37dd96e22f4b518bc37466295cc0ba51fde2cae9d3",
-          "quote": "如身机器人创始人&CEO师云雷博士 表示",
-          "quote_hash": "8eb5aa9e2760b8150502338c5082ea8ad974c74926fb103f929f029c21e6c825"
+          "source_id": "svtr_shi_yunlei",
+          "source_url": "https://svtr.ai/persons/shi-yunlei",
+          "source_title": "师云雷 · SVTR",
+          "source_content_hash": "99d429c3124948a52ca58edcd8ad37abead0cb21b3a6ae0988259237d0043408",
+          "quote": "师云雷，上海如身机器人科技有限公司联合创始人兼CEO。曾是Agile Robots AG的机械与控制团队负责人及联合创始人，曾是上海微创医疗机器人（集团）股份有限公司的控制团队负责人及产品经理。曾就读于汉堡大学，获得计算机科学博士学位；天津大学，获得机械工程硕士学位；郑州大学，获得能源与动力工程学士学位。",
+          "quote_hash": "b0a96cc18b7e48cf4b32d5802d19d86f82b0750047aa8eedccb8e579796d711a"
+        },
+        {
+          "source_id": "shanghai_2025_life_science_projects",
+          "source_url": "https://www.shanghai.gov.cn/cmsres/92/92fa6379d2a84328a4ecce534e75f3f4/3f0e2d6ed3d914888f9c6bd3a1e4f06c.pdf",
+          "source_title": "上海市2025年度生命科技领域定向项目名单",
+          "source_content_hash": "9c287621e2e4e16979ab6e2c4846a0c7c97c3933b2d150121b7dd5966f8788d2",
+          "quote": "项目名称：基于具身智能的康养护理机器人；承担单位：上海如身机器人科技有限公司；项目负责人：师云雷。",
+          "quote_hash": "083c4b5acae82efa8881e017d8a16d5a3c689d27ddc579d120f7ade4a0dadc0b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
     }
   },
   "relatedEntities": [],

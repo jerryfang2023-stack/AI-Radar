@@ -111,33 +111,46 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "张睿 的来源线索将其与星熠智能（联合创始人）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "投资界融资披露将张睿列为星熠智能联合创始人，并称其具有连锁餐饮品牌联合创始人背景，但未提供具体品牌名称。考虑到同名可能性，未匹配其他张睿的教育或工作履历。",
+      "current_roles": [
+        {
+          "title": "联合创始人（融资报道口径）",
+          "organization": "星熠智能",
+          "source_id": "pedaily_zhangrui"
+        }
+      ],
       "career": [
+        {
+          "organization": "连锁餐饮品牌",
+          "title": "联合创始人；具体品牌未披露",
+          "period": "任期未披露",
+          "description": "仅保留融资报道的概括性职业背景，不猜测品牌。",
+          "source_id": "pedaily_zhangrui"
+        },
         {
           "organization": "星熠智能",
           "title": "联合创始人",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-b28cfdc86e1c7c16"
+          "period": "2026年融资报道时点；任期未披露",
+          "description": "投资界融资报道所列身份。",
+          "source_id": "pedaily_zhangrui"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
+      "experience_summary": "公开履历较少；现有融资报道只给出其创业身份和此前餐饮行业经历的概括。",
       "track_record": [],
       "sources": [
         {
-          "source_id": "FISRC-b28cfdc86e1c7c16",
+          "source_id": "pedaily_zhangrui",
           "source_url": "https://news.pedaily.cn/202606/565533.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "73a5594e54d6952f",
-          "quote": "联合创始人张睿拥有连锁餐饮品牌联合创始人背景",
-          "quote_hash": "9d62a6a6d800fdcdaf00e8dd289dea431aa7b175c58af82bdfe4bb2671fed9e0"
+          "source_title": "星熠智能融资披露 - 投资界",
+          "source_content_hash": "20ac7c0699d973f2a31003b508c9d681596668fd77a8cbfdab57ea0e1d1684b3",
+          "quote": "联合创始人张睿拥有连锁餐饮品牌联合创始人背景。",
+          "quote_hash": "04bcdd3e8d8c5789b7a7bb76b07a8bb3cd5c7bea4576604742f302379e4487b2"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
     }
   },
   "relatedEntities": [],

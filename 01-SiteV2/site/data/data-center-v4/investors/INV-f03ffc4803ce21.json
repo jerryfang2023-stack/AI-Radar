@@ -290,12 +290,20 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "金沙江创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "金沙江创投官网将其团队描述为由企业家、工程师、医师和企业高管组成，并列出北京、香港和新加坡办公室。此档案仅对应 gsrventureschina.com 所示金沙江创投；不与其他“金沙江”品牌或法律主体合并。融资记录中的具体投资基金或签约实体未必能由披露名称确定。",
+      "facts": [
+        {
+          "field": "team_background",
+          "label": "团队背景",
+          "value": "官网介绍团队成员具有企业家、工程师、医师和企业管理经历。",
+          "source_id": "gsr_team"
+        }
+      ],
       "milestones": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "官网介绍其团队由多元行业背景人士组成，并以创业者伙伴身份提供支持；该表述属于机构自述。",
       "track_record": [
         {
           "description": "融资来源记录：Noiz AI · 种子轮 · 2026-08-10 · 本轮参投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -310,8 +318,90 @@
           "source_id": "FISRC-7a614400d44a7041"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "address",
+          "label": "北京办公室",
+          "value": "北京市朝阳区建国门外大街1号，国贸大厦三期A座3818室",
+          "url": "https://gsrventureschina.com/team",
+          "source_id": "gsr_beijing"
+        },
+        {
+          "kind": "phone",
+          "label": "北京办公室电话",
+          "value": "+86-10-5706-9898",
+          "url": "https://gsrventureschina.com/team",
+          "source_id": "gsr_beijing"
+        },
+        {
+          "kind": "address",
+          "label": "香港办公室",
+          "value": "香港中环干诺道中41号，盈置大厦1602室",
+          "url": "https://gsrventureschina.com/team",
+          "source_id": "gsr_hongkong"
+        },
+        {
+          "kind": "phone",
+          "label": "香港办公室电话",
+          "value": "+852 3757 9478",
+          "url": "https://gsrventureschina.com/team",
+          "source_id": "gsr_hongkong"
+        },
+        {
+          "kind": "address",
+          "label": "新加坡办公室",
+          "value": "88 Market Street #21-01, 048948, Singapore",
+          "url": "https://gsrventureschina.com/team",
+          "source_id": "gsr_singapore"
+        },
+        {
+          "kind": "phone",
+          "label": "新加坡办公室电话",
+          "value": "+65-6514-0023",
+          "url": "https://gsrventureschina.com/team",
+          "source_id": "gsr_singapore"
+        },
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "gsrventureschina.com",
+          "url": "https://gsrventureschina.com/team",
+          "source_id": "gsr_team"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "gsr_team",
+          "source_url": "https://gsrventureschina.com/team",
+          "source_title": "团队 – 金沙江创投",
+          "source_content_hash": "5f41718e5775ee026828c41d29e25da4cd793f92830c6e64df054d94f6adcb6d",
+          "quote": "我们的团队中汇聚了企业家、工程师、医师和企业高管。",
+          "quote_hash": "21c293960ce2fe8fdefe0098446392fbd3ed474daba4378ef94dd070fdd0bd76"
+        },
+        {
+          "source_id": "gsr_beijing",
+          "source_url": "https://gsrventureschina.com/team",
+          "source_title": "团队 – 金沙江创投",
+          "source_content_hash": "5f41718e5775ee026828c41d29e25da4cd793f92830c6e64df054d94f6adcb6d",
+          "quote": "北京市朝阳区建国门外大街1号，国贸大厦三期A座3818室；电话 +86-10-5706-9898。",
+          "quote_hash": "66f03660ae713ad2dbe5bc45049ed6f8bf7270200fe2267b295fa8ae568222bc"
+        },
+        {
+          "source_id": "gsr_hongkong",
+          "source_url": "https://gsrventureschina.com/team",
+          "source_title": "团队 – 金沙江创投",
+          "source_content_hash": "5f41718e5775ee026828c41d29e25da4cd793f92830c6e64df054d94f6adcb6d",
+          "quote": "香港中环干诺道中41号，盈置大厦1602室；电话 +852 3757 9478。",
+          "quote_hash": "914ad7a89e1adf4cade743225ab45f340b72f324269a5791ff891d4c334e8156"
+        },
+        {
+          "source_id": "gsr_singapore",
+          "source_url": "https://gsrventureschina.com/team",
+          "source_title": "团队 – 金沙江创投",
+          "source_content_hash": "5f41718e5775ee026828c41d29e25da4cd793f92830c6e64df054d94f6adcb6d",
+          "quote": "88 Market Street #21-01, 048948, Singapore; Tel: +65-6514-0023.",
+          "quote_hash": "e3a8091dd79cc49d7e04bf3f11470e6eca370d3afc681184b00277460d85e8ba"
+        },
         {
           "source_id": "FISRC-4dbba5d9789ac616",
           "source_url": "https://news.pedaily.cn/202608/567481.shtml",
@@ -337,7 +427,10 @@
           "quote_hash": "d965a45e9e1fdee372f02819e678ec3a3d834f345bda20958143a8a32b78fb26"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

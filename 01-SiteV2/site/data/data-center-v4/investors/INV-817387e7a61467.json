@@ -203,21 +203,103 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Airbus Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Airbus Ventures是与Airbus集团相关的风险投资机构。Airbus官方2016年资料记录其设立了面向全球航空航天生态的早期投资基金，集团曾承诺出资1.5亿美元；当前机构官网称其投资关键工业系统、国防与全球商业基础设施。历史集团承诺不代表当前基金可投资余额。",
+      "facts": [
+        {
+          "field": "historical_parent_commitment",
+          "label": "Airbus Group历史承诺",
+          "value": "2016年公告披露1.5亿美元承诺，用于当时的早期基金；非当前AUM或可投资余额",
+          "source_id": "airbus_ventures_history_201601"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期投资（当前官网口径）",
+          "source_id": "airbus_ventures_current_website_202609"
+        },
+        {
+          "field": "investment_focus",
+          "label": "关注领域",
+          "value": [
+            "航空航天及关键工业系统",
+            "国防与安全",
+            "全球商业基础设施"
+          ],
+          "source_id": "airbus_ventures_current_website_202609"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2015-12",
+          "description": "Airbus Group公布设立硅谷风险投资基金及创新中心计划。",
+          "source_id": "airbus_ventures_history_201601"
+        },
+        {
+          "date": "2016-01",
+          "description": "Airbus公告称基金已全面运营，Airbus Group承诺出资1.5亿美元。",
+          "source_id": "airbus_ventures_history_201601"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Featherless.ai · A轮 · 2026-04-30 · 本轮联合领投，种子轮投资方 · $20 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f5176e2201593c8e"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "contact_form",
+          "label": "Airbus Ventures联系表单",
+          "value": "官网通用联系入口",
+          "url": "https://www.airbusventures.vc/contact",
+          "source_id": "airbus_ventures_contact_202609"
+        },
+        {
+          "kind": "address",
+          "label": "Menlo Park办公室",
+          "value": "3000 Sand Hill Road, Building 1, Suite 120, Menlo Park, CA 94025",
+          "source_id": "airbus_ventures_contact_202609"
+        },
+        {
+          "kind": "email",
+          "label": "日本投资者Article 63文件请求",
+          "value": "office@airbusventures.vc（仅该特定用途）",
+          "source_id": "airbus_ventures_contact_202609"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "airbus_ventures_history_201601",
+          "source_url": "https://www.airbus.com/en/newsroom/press-releases/2016-01-airbus-group-becomes-fully-operational-in-silicon-valley",
+          "source_title": "Airbus Group在硅谷全面启动风险投资业务",
+          "source_content_hash": "92ad87366b4e552e8ea72d4774ae375c248353273bc7d6573349e0bc795e23bb",
+          "quote": "Airbus官网2016年公告称Airbus Ventures在硅谷运营独立风险投资基金，Airbus Group最初承诺出资1.5亿美元，基金投资全球航空航天生态中的早期创业公司。",
+          "quote_hash": "0cb7cafdc1f67bbb33a3759df0d97914d5e36ca4280d0df9c9ccca80e013ccc1"
+        },
+        {
+          "source_id": "airbus_ventures_leadership_201610",
+          "source_url": "https://www.airbus.com/en/newsroom/press-releases/2016-10-airbus-group-appoints-francois-auque-and-thomas-dhalluin-to-lead",
+          "source_title": "Airbus Ventures任命欧美风险投资负责人",
+          "source_content_hash": "6ab5d49e7a8eee77f7e397a58313371e636eabca8e6a596677bd86fe0b50d70b",
+          "quote": "Airbus官网将欧洲及美国风险投资活动列为Airbus Ventures全球投资计划的一部分，并记载美国管理公司CEO与欧洲负责人任命。",
+          "quote_hash": "5162b60fa95687ba764c6894babd56ed3699448b759c8f0c610c8f8ea5e3fd72"
+        },
+        {
+          "source_id": "airbus_ventures_current_website_202609",
+          "source_url": "https://www.airbusventures.vc/about",
+          "source_title": "About | Airbus Ventures",
+          "source_content_hash": "573e3d31396fdf511fb3784ad00722a05fc7cc6cd3ea568d42e6f06552e6626e",
+          "quote": "Airbus Ventures官网当前自述专注早期投资，聚焦关键工业系统、国防安全与全球商业基础设施等长期技术方向，并按互补投资组合构建策略。",
+          "quote_hash": "a66490672afdfa5657e7ff81323f96f694907635b81586b736f893123e1323e7"
+        },
+        {
+          "source_id": "airbus_ventures_contact_202609",
+          "source_url": "https://www.airbusventures.vc/contact",
+          "source_title": "Contact | Airbus Ventures",
+          "source_content_hash": "c06781ab5ff5099781ad68bc1c8eb2197a47ea11d6ee3d660334160c298c5130",
+          "quote": "Airbus Ventures官网公布联系表单与Menlo Park办公地址；页面邮箱office@airbusventures.vc仅针对日本投资人Article 63文件请求，不是一般项目申请邮箱。",
+          "quote_hash": "6779117681d804d03582825b9e3325bcf103402ec84a7c85c581ed9cbd098639"
+        },
         {
           "source_id": "FISRC-f5176e2201593c8e",
           "source_url": "https://techfundingnews.com/featherless-ai-20m-series-a-amd-airbus-open-source-ai-infrastructure/",
@@ -227,7 +309,11 @@
           "quote_hash": "61042ef1b031096ded1062a4e4013c5d79cc58a7c7c2e785b6f73637995ba297"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "coverage_note": "区分Airbus集团2016年历史承诺和现行机构官网投资策略；公开邮箱限定为特定合规资料请求，不误标为BP邮箱。",
+      "identity_status": "verified"
     }
   }
 }

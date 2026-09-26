@@ -111,33 +111,59 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "张潇 的来源线索将其与密瓜智能（创始人兼 CEO）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "张潇是密瓜智能（Dynamia）创始人兼 CEO，也是开源项目 HAMi 的早期共同开源者和 Maintainer。公司官网称其此前担任 DaoCloud 容器团队负责人；未披露任职年份和教育经历。",
+      "current_roles": [
+        {
+          "title": "创始人兼 CEO",
+          "organization": "正行创新（Striding AI）",
+          "source_id": "dynamia_zhangxiao_official"
+        }
+      ],
       "career": [
         {
-          "organization": "密瓜智能",
-          "title": "创始人兼 CEO",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将张潇与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-04376bee59ee7c19"
+          "organization": "密瓜智能（Dynamia）",
+          "title": "创始人兼 CEO、HAMi Maintainer",
+          "period": "公司官网当前团队简介；起始时间未披露",
+          "description": "密瓜智能官网将张潇列为创始人兼 CEO、HAMi Maintainer，并称其为早期共同开源者。",
+          "source_id": "dynamia_zhangxiao_official"
+        },
+        {
+          "organization": "DaoCloud",
+          "title": "容器团队负责人",
+          "period": "官网回溯履历；任职时间未披露",
+          "description": "密瓜智能官网简介称其曾任 DaoCloud 容器团队负责人。",
+          "source_id": "dynamia_zhangxiao_official"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
-      "sources": [
+      "experience_summary": "现职及既往团队职务依据密瓜智能官网团队简介；官网未披露任职年份与学历。",
+      "track_record": [
         {
-          "source_id": "FISRC-04376bee59ee7c19",
-          "source_url": "https://news.pedaily.cn/202601/559551.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "0da15a2de9a64982",
-          "quote": "密瓜智能创始人兼 CEO 张潇表示",
-          "quote_hash": "0ac9818be904dbf22efe906fb003e1214557ed6226abd13cdb878e2c2b1e2f08"
+          "description": "密瓜智能官网将其列为 HAMi 早期共同开源者和项目 Maintainer；开源项目成绩按公司官网陈述。",
+          "source_id": "dynamia_zhangxiao_official"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "sources": [
+        {
+          "source_id": "aidd_zhangxiao",
+          "source_url": "https://www.aidd.vip/dhjb-sz2025",
+          "source_title": "AiDD研发数字峰会—深圳站大会嘉宾",
+          "source_content_hash": "e84f54fed8466223f9681afb77510e8681a22827987cd96e0f0d4cdb5feb6f3a",
+          "quote": "张潇，密瓜智能创始人&CEO。",
+          "quote_hash": "28fbc2ac480ffd30a54ebab9feef881c5322676498f0a440ca6b3e3aa270aa48"
+        },
+        {
+          "source_id": "dynamia_zhangxiao_official",
+          "source_url": "https://dynamia.ai/zh/company",
+          "source_title": "密瓜智能（Dynamia） | 公开团队/人物资料",
+          "source_content_hash": "1c35e0d39448dad3ede9471e7c296e5ae3e0769859e1342d954bcd4fa76dd6aa",
+          "quote": "张潇，开源软件开发者、科技创业者，密瓜智能创始人兼 CEO，HAMi 早期版本共同开源者、项目 Maintainer；曾任 DaoCloud 容器团队负责人。",
+          "quote_hash": "ea889a8420a71efbbc22156e958540cd09f610ca2a05e0e5626b1d119bb8e724"
+        }
+      ],
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "现职及既往团队职务依据密瓜智能官网团队简介；官网未披露任职年份与学历。"
     }
   },
   "relatedEntities": [],

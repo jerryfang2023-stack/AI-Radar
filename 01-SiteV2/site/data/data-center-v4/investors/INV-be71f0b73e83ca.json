@@ -191,14 +191,49 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Obvious Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Obvious Ventures 是一家早期风险投资机构，官网称其围绕人类健康、地球健康和经济健康三大主题投资，支持试图解决重大社会与产业问题的创业者。官网回顾称机构于2014年创立；其投资理念强调将商业回报与社会及环境目标结合。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "创立年份",
+          "value": "2014年",
+          "source_id": "obvious_history"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期；官网回顾称其常领投种子轮和A轮",
+          "source_id": "obvious_history"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资主题",
+          "value": [
+            "人类健康",
+            "地球健康",
+            "经济健康"
+          ],
+          "source_id": "obvious_about"
+        },
+        {
+          "field": "investment_philosophy",
+          "label": "投资理念",
+          "value": "支持以商业方式解决重大社会与产业问题的创业者，并将目的与盈利结合",
+          "source_id": "obvious_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2014",
+          "description": "创立Obvious Ventures，围绕人类健康、地球健康和经济健康进行投资。",
+          "source_id": "obvious_history"
+        }
+      ],
       "track_record": [
+        {
+          "description": "官网组合页列示其投资组合及退出企业；官网历史文章称首期基金曾投资多个早期项目。公开组合列表不代表完整业绩或基金回报。",
+          "source_id": "obvious_portfolio"
+        },
         {
           "description": "融资来源记录：Gritt · 多轮融资 · 2026-07-21 · 本轮领投 · $32.4M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e5ce259c107507e9"
@@ -208,8 +243,55 @@
           "source_id": "FISRC-d81171d6c6910b85"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站、团队及投资主题",
+          "value": "Obvious Ventures",
+          "url": "https://obvious.com/about/",
+          "source_id": "obvious_about"
+        },
+        {
+          "kind": "address",
+          "label": "旧金山办公室",
+          "value": "190 Pacific Avenue, San Francisco, CA 94111",
+          "url": "https://obvious.com/press/",
+          "source_id": "obvious_press"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "obvious_about",
+          "source_url": "https://obvious.com/about/",
+          "source_title": "About - Obvious",
+          "source_content_hash": "0303a19d3f9021dafb8342337a7247edd86c0a50f6d25a8ff5f2c1a287235b73",
+          "quote": "We back exceptional founders tackling the world’s biggest problems across planetary health, human health, and economic health.",
+          "quote_hash": "cf1510ff0aad6676f64aefd22902119ec2866e3980fe24cd36200f5431aa8709"
+        },
+        {
+          "source_id": "obvious_history",
+          "source_url": "https://obvious.com/ideas/obvious-in-hindsight/",
+          "source_title": "Obvious, in Hindsight - Obvious",
+          "source_content_hash": "69db79f0ff813df60329f850a3dac11a5b24ac5f5cb86307a7f6876b0eb04446",
+          "quote": "Today Obvious often leads Series Seed and Series A rounds.",
+          "quote_hash": "48bcfb5f9cd73c5b4845467181656191d9fd5e1e2e940856c4885110e266d4c4"
+        },
+        {
+          "source_id": "obvious_portfolio",
+          "source_url": "https://obvious.com/portfolio/",
+          "source_title": "Portfolio - Obvious",
+          "source_content_hash": "8cc09e4bbe8445ef10c99efe913d07d795c29d7754fb1264d597c0df3a6a8d11",
+          "quote": "Explore the Obvious portfolio and learn about the companies driving humanity forward across economic health, human health, and planetary health.",
+          "quote_hash": "6a2674b2733b174637074f02ec789d8e374cff6324a8b916b64687f4d0d4dfb8"
+        },
+        {
+          "source_id": "obvious_press",
+          "source_url": "https://obvious.com/press/",
+          "source_title": "Press - Obvious",
+          "source_content_hash": "8225fc0d5c88741224dd2e7749b691c6768b2d19381027ee4ab55a4d7508e134",
+          "quote": "190 Pacific Avenue San Francisco, CA 94111",
+          "quote_hash": "097ee875da41c14abfcb74ec5d4e21bd8261fb2aa0246ad1eaef2b97e7df41bf"
+        },
         {
           "source_id": "FISRC-e5ce259c107507e9",
           "source_url": "https://www.gritt.ai/news/gritt-launches-physical-ai",
@@ -227,7 +309,11 @@
           "quote_hash": "4636d7c23a6d69264a46ff39f704b7c8896df4fa1a4d36fe839d301fa14eeb37"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

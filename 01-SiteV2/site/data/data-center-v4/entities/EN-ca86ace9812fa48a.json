@@ -111,33 +111,97 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "陈天行 的来源线索将其与无界智航（联合创始人）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "陈天行是香港大学 MMLab 博士生、Xspark AI（无界智航）联合创始人兼 CTO，也是 Lumina 具身智能社区创办者。他本科毕业于深圳大学计算机科学与技术专业，研究聚焦具身智能基础设施、机器人基础模型、数据生成与评测。其个人主页列有在 ByteDance、上海人工智能实验室及上海交通大学的研究实习经历，并披露多项机器人与具身智能竞赛和论文奖项。",
+      "current_roles": [
+        {
+          "title": "联合创始人、CTO",
+          "organization": "Xspark AI（无界智航）",
+          "source_id": "chen_tianxing_home"
+        },
+        {
+          "title": "博士生",
+          "organization": "香港大学 MMLab",
+          "source_id": "chen_tianxing_home"
+        },
+        {
+          "title": "创办者",
+          "organization": "Lumina 具身智能社区",
+          "source_id": "chen_tianxing_home"
+        }
+      ],
       "career": [
         {
-          "organization": "无界智航",
-          "title": "联合创始人",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-086ff36dfb7673e8"
+          "organization": "Xspark AI（无界智航）",
+          "title": "联合创始人、CTO",
+          "period": "2026-03 至资料页面当前",
+          "description": "负责具身智能基础设施、机器人基础模型、数据生成与评测等技术方向；具体职责依据本人公开履历。",
+          "source_id": "chen_tianxing_home"
+        },
+        {
+          "organization": "Lumina 具身智能社区",
+          "title": "创办者",
+          "period": "2025-05 至资料页面当前",
+          "description": "创办具身智能研究与实践社区。",
+          "source_id": "chen_tianxing_home"
+        },
+        {
+          "organization": "ByteDance Seed",
+          "title": "研究实习生",
+          "period": "2025—2026",
+          "description": "个人主页列示其在 Edge Team 从事 VLA 训练、仿真数据扩展与评测。",
+          "source_id": "chen_tianxing_home"
+        },
+        {
+          "organization": "上海人工智能实验室 OpenGVLab",
+          "title": "研究实习生",
+          "period": "2024-01 至 2025",
+          "description": "个人主页列示其参与操作策略及仿真评测研究。",
+          "source_id": "chen_tianxing_home"
+        },
+        {
+          "organization": "上海交通大学 ScaleLab",
+          "title": "研究实习生",
+          "period": "2025",
+          "description": "个人主页列示其参与仿真数据扩展与评测研究。",
+          "source_id": "chen_tianxing_home"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "深圳大学计算机与软件学院",
+          "qualification": "计算机科学与技术工学学士（2021-09 至 2025-07；优秀班）",
+          "source_id": "chen_tianxing_home"
+        },
+        {
+          "institution": "香港大学计算与数据科学学院 MMLab",
+          "qualification": "博士生，导师罗平教授（2025-10 起，预计 2029-06）",
+          "source_id": "chen_tianxing_home"
+        }
+      ],
+      "experience_summary": "研究方向包括具身 AI 基础设施、机器人基础模型、数据生成与评测，并具备学术研究与创业经历。个人主页列示其组织具身智能开源项目和学术活动，并在多项机器人挑战赛中获奖；竞赛结果、论文奖、开源下载及关注度等信息均为本人主页自述，随着后续成果可能变化。",
+      "track_record": [
+        {
+          "description": "个人主页自述：在 ICRA 2026 ViTac Workshop 与 ECCV 2024 MAAS Workshop 获最佳论文奖；在 ECCV 2026 DexGraspMotion Challenge 获冠军、NeurIPS 2025 MARS Challenge 获冠军、IROS 2025 AgiBot World Challenge 获季军。",
+          "source_id": "chen_tianxing_home"
+        },
+        {
+          "description": "个人主页自述获红杉中国与《麻省理工科技评论》中国评选的 AI25；截至页面更新时，相关开源项目接近 20,000 GitHub stars、模型下载超过 100 万次。",
+          "source_id": "chen_tianxing_home"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-086ff36dfb7673e8",
-          "source_url": "https://news.pedaily.cn/202607/566101.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "d9771ea116d57f70",
-          "quote": "Xspark AI 由前蔚来汽车自动驾驶核心高管熊祺、清华大学长聘副教授丁文伯，以及香港大学 MMLab 00 后博士生陈天行联合创立",
-          "quote_hash": "4b1c198be7500336bb8ad4fd0eac5fc21f445454d502aa3b15b34b7da687cf1e"
+          "source_id": "chen_tianxing_home",
+          "source_url": "https://tianxingchen.github.io/",
+          "source_title": "Tianxing Chen (陈天行)",
+          "source_content_hash": "2c67985be3f1e97fb216c4430afb745de182c59a41e5176cd7beb8f5f5b48286",
+          "quote": "Tianxing Chen is a Co-Founder and CTO of Xspark AI and a PhD student at MMLab@HKU, supervised by Prof. Ping Luo.",
+          "quote_hash": "50b17247483d9d89c65cccee5845b55b5934c7ed895e64ba63c1a5cd75850f36"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
     }
   },
   "relatedEntities": [],

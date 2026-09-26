@@ -241,12 +241,39 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Nexus Venture Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Nexus Venture Partners是2006年创立的跨美印早期风险投资机构，官网称其专注种子轮与A轮，管理基金资本约32亿美元。当前策略侧重美国的AI与软件公司，以及印度的数字原生企业；机构自述强调从早期阶段参与产品型公司成长。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立年份",
+          "value": "2006",
+          "source_id": "nexus_official_about_202609"
+        },
+        {
+          "field": "capital_managed",
+          "label": "管理基金资本",
+          "value": "约32亿美元；机构官网口径",
+          "source_id": "nexus_official_about_202609"
+        },
+        {
+          "field": "investment_stage",
+          "label": "阶段",
+          "value": [
+            "种子轮",
+            "A轮"
+          ],
+          "source_id": "nexus_official_about_202609"
+        },
+        {
+          "field": "investment_focus",
+          "label": "地域与领域",
+          "value": [
+            "美国：AI与软件",
+            "印度：数字原生企业"
+          ],
+          "source_id": "nexus_official_about_202609"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -262,8 +289,44 @@
           "source_id": "FISRC-2315f11e10b4df0e"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "address",
+          "label": "硅谷办公室",
+          "value": "3000 Sand Hill Road, Building 1, Suite 260, Menlo Park, CA 94025",
+          "source_id": "nexus_official_team_202609"
+        },
+        {
+          "kind": "address",
+          "label": "班加罗尔办公室",
+          "value": "137, 1st Cross Rd, KHB Colony, 5th Block, Koramangala, Bengaluru 560095, India",
+          "source_id": "nexus_official_team_202609"
+        },
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "机构策略、投资组合及联系入口",
+          "url": "https://nexusvp.com/",
+          "source_id": "nexus_official_about_202609"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "nexus_official_about_202609",
+          "source_url": "https://nexusvp.com/about/",
+          "source_title": "About | Nexus Venture Partners",
+          "source_content_hash": "19e4768c273e6e7cd130fdba13b5bad7db6b412b4265f3a19796961318e63ebd",
+          "quote": "Nexus官网称其2006年创立，投资美国与印度的种子轮及A轮企业，管理基金资本约32亿美元；在美国重点关注AI与软件，在印度关注数字原生企业。",
+          "quote_hash": "52ef6f44152c4e2756ad4cabfcd05f46e5e169b589c7ff044c08363d95a8df02"
+        },
+        {
+          "source_id": "nexus_official_team_202609",
+          "source_url": "https://nexusvp.com/team/",
+          "source_title": "Team & Offices | Nexus Venture Partners",
+          "source_content_hash": "92897830af283156d186f3564c1f878bac90dfb2355bf9a3f0fee24ee47085c9",
+          "quote": "Nexus官网列出Menlo Park、San Francisco、Bengaluru和Mumbai办公室及地址，并公开投资团队名录。",
+          "quote_hash": "15d438c53f5f01684842be1d1a0666152091ef14f28b17770da509f306ac4f9a"
+        },
         {
           "source_id": "FISRC-2d6054cc51934d57",
           "source_url": "https://techcrunch.com/2026/08/26/runable-hits-21m-to-bet-ai-agents-can-go-from-building-businesses-to-growing-them",
@@ -289,7 +352,11 @@
           "quote_hash": "3b2ea162be295ee50d93b66c82bdf36dc8bcf135b660987a22e1b0e42e25919f"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "coverage_note": "策略、规模和成立年份使用机构官网表述；基金资本规模不等同单支基金认缴额或已投资组合估值。",
+      "identity_status": "verified"
     }
   }
 }

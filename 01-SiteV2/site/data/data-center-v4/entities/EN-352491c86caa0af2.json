@@ -111,33 +111,40 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "顾祥昆 的来源线索将其与神奕科技（创始人）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "顾祥昆是神奕科技创始人。动脉网 2026 年采访记录其围绕 AI 与脑科学、非侵入式脑机接口及脑功能监测干预产品化的观点，并介绍公司业务方向。现有公开来源未披露其学历、此前任职公司或相关项目业绩，故不补写推断性履历。",
+      "current_roles": [
+        {
+          "title": "创始人（媒体采访身份）",
+          "organization": "深圳神奕科技有限公司",
+          "source_id": "guxiangkun_vbdata"
+        }
+      ],
       "career": [
         {
-          "organization": "神奕科技",
+          "organization": "深圳神奕科技有限公司",
           "title": "创始人",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将顾祥昆与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-3d6690cf8399d45f"
+          "period": "报道发表于 2026 年；起始时间未披露",
+          "description": "动脉网采访以创始人身份介绍其对公司产品路径的判断；业务发展情况按采访报道呈现。",
+          "source_id": "guxiangkun_vbdata"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
+      "experience_summary": "目前可核实公开履历集中于创办神奕科技及其脑机接口产品方向；教育经历、此前公司任职和可量化个人成绩尚无可靠公开来源。",
       "track_record": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "创始人身份、公司方向和观点来自行业媒体采访；采访未披露教育及过往履历，故保留空白。",
       "sources": [
         {
-          "source_id": "FISRC-3d6690cf8399d45f",
-          "source_url": "https://www.sohu.com/a/1069898850_439726",
-          "source_title": "融资披露来源",
-          "source_content_hash": "4e1b0f5f32304fe6",
-          "quote": "神奕科技创始人顾祥昆表示：AI正在成为推动脑机接口普惠化的重要力量。",
-          "quote_hash": "c1ad20b78aae8da6013c699b9f02dc3dacdfc30f7ac468ddafd1039d28197829"
+          "source_id": "guxiangkun_vbdata",
+          "source_url": "https://www.vbdata.cn/1519095521",
+          "source_title": "脑机接口不只拼参数，从睡眠到抑郁症，神奕科技开始押注“产品化” - 动脉网",
+          "source_content_hash": "778241ddc573a4535701dd3b8a05c161559999f08b9b1dda7b4bd25c0d24e77b",
+          "quote": "动脉网对神奕科技创始人顾祥昆进行采访，介绍公司在非侵入式脑机接口、脑功能监测与干预方向的产品化路径；文章中的观点为受访者陈述，未提供其教育和此前任职履历。",
+          "quote_hash": "063f26f57c388b7c2113d0de18759aff3c58db85d3bb08cceb5d5bc6d21ce3b1"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

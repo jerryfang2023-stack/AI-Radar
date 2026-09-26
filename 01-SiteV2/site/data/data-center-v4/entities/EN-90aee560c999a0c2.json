@@ -128,33 +128,48 @@
       }
     },
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "Vishal Dugar 的来源线索将其与Gritt（CTO兼联合创始人）关联。来源日期：2026-07-26；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "Vishal Dugar 是Gritt CTO及联合创始人，具备机器人和AI背景。公司官网将其描述为来自Carnegie Mellon University Robotics Institute的机器人与AI专家，曾参与自动驾驶卡车车队及自主飞行器的部署；未披露具体前雇主、学位与任期。",
+      "current_roles": [
+        {
+          "title": "首席技术官",
+          "organization": "Gritt",
+          "source_id": "gritt_vishal_team"
+        }
+      ],
       "career": [
         {
           "organization": "Gritt",
-          "title": "CTO兼联合创始人",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将Vishal Dugar与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-e5ce259c107507e9"
+          "title": "首席技术官",
+          "period": "一手公开资料所示；起始时间未披露",
+          "description": "Gritt 官方团队页列其为 CTO，并自述其有 CMU Robotics Institute 背景，曾部署自动驾驶卡车车队和自主飞行器；来源未说明学位或具体任职年份。",
+          "source_id": "gritt_vishal_team"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
+      "experience_summary": "Gritt 官方团队页列其为 CTO，并自述其有 CMU Robotics Institute 背景，曾部署自动驾驶卡车车队和自主飞行器；来源未说明学位或具体任职年份。 当前可核实资料未披露完整任职起止时间和教育履历，相关字段不作推断。",
       "track_record": [],
       "sources": [
         {
-          "source_id": "FISRC-e5ce259c107507e9",
-          "source_url": "https://www.gritt.ai/news/gritt-launches-physical-ai",
-          "source_title": "融资披露来源",
-          "source_content_hash": "6af714d5b7bb5158",
-          "quote": "said Vishal Dugar, CTO and co-founder at Gritt",
-          "quote_hash": "d7b82cc37ba5e14c32d52e87def3898db76536f4b6678f3d26ff4a86fe448133"
+          "source_id": "vishal_gritt",
+          "source_url": "https://www.gritt.ai/team",
+          "source_title": "Gritt官网团队页：Vishal Dugar",
+          "source_content_hash": "037c5b868ff89c37b96fd7ec18aa8d35b512296f6efb852ab1b2f372d1cdb189",
+          "quote": "Gritt官网称Vishal Dugar担任CTO，具备CMU机器人研究所背景，并曾部署自动驾驶卡车车队及自主飞行器。",
+          "quote_hash": "d85d6cf10da638f8ab4d504ee274b16d0cd5fc117ca021c8f57bd15892969cb3"
+        },
+        {
+          "source_id": "gritt_vishal_team",
+          "source_url": "https://www.gritt.ai/team",
+          "source_title": "Team | Gritt",
+          "source_content_hash": "037c5b868ff89c37b96fd7ec18aa8d35b512296f6efb852ab1b2f372d1cdb189",
+          "quote": "Vishal Dugar — CTO. Robotics and AI expert from CMU RI. Deployed autonomous trucking fleets and self-piloting aircraft.",
+          "quote_hash": "20dfc080fb9d933f2e33491ee7b01f8420528bbb2675826e5457fb5d0842618f"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "已核验该公开职业关联；未披露的任期、学历及其他履历保持未填写。",
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

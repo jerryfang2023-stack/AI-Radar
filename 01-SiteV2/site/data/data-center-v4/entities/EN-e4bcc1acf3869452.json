@@ -111,33 +111,46 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "宋紫薇 的来源线索将其与薇光点亮（创始人）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "宋紫薇是薇光点亮创始人，媒体报道其此前担任vivo手机产品经理，并于2024年进入AI智能硬件创业。公开资料显示公司围绕AI Agent与消费硬件探索产品方向；融资金额和未发布产品细节仍以公司正式披露为准。",
+      "current_roles": [
+        {
+          "title": "创始人",
+          "organization": "薇光点亮",
+          "source_id": "songziwei_36kr_202603"
+        }
+      ],
       "career": [
+        {
+          "organization": "vivo",
+          "title": "手机产品经理",
+          "period": "此前任职；公开报道未列具体年月",
+          "description": "媒体将其经历概括为手机产品管理及消费品牌发布活动。",
+          "source_id": "songziwei_36kr_202603"
+        },
         {
           "organization": "薇光点亮",
           "title": "创始人",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-80b46378aae68c24"
+          "period": "2024年开始创业；36氪于2026年3月报道",
+          "description": "创业方向聚焦AI Agent消费硬件；报道所述产品形态为研发中的规划，不视为已上市产品。",
+          "source_id": "songziwei_36kr_202603"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
+      "experience_summary": "公开履历主要为消费电子产品管理和AI硬件创业；学历及其它关联公司尚未由可靠公开来源核实。",
       "track_record": [],
       "sources": [
         {
-          "source_id": "FISRC-80b46378aae68c24",
-          "source_url": "https://finance.sina.com.cn/roll/2026-03-16/doc-inhrevaq9814436.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "3f3e3c82d29ac541",
-          "quote": "公司创始人宋紫薇，是科技圈明星产品经理，毕业于上海大学应用物理学专业，曾先后在多家知名企业担任重要职位。",
-          "quote_hash": "0fedafa80db0816d993315f53cdc0174db62d938ecb6c02131360743f908147a"
+          "source_id": "songziwei_36kr_202603",
+          "source_url": "https://www.36kr.com/p/3714480200085633",
+          "source_title": "前vivo手机产品经理宋紫薇创办薇光点亮，获超亿元融资｜36氪",
+          "source_content_hash": "388864087a6bd617721aca7f1ff875e737acd130988f37c9347c8c2e5aee0a74",
+          "quote": "36氪2026年3月报道记载宋紫薇曾任vivo手机产品经理，2024年10月宣布投身AI智能硬件创业并创办薇光点亮；公司核心团队具消费硬件产品经验，融资金额与产品规划按媒体报道口径记录。",
+          "quote_hash": "cdf8a24251cab2875bbc2639c19195096f00e9e9119a711f9e676210bd501679"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "目前依赖36氪报道整理基础职业信息；未补写未核实的学历、加入/离开日期或产品商业化结果。"
     }
   },
   "relatedEntities": [],

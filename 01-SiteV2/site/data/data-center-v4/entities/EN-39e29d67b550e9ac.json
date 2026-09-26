@@ -111,33 +111,81 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "武永卫 的来源线索将其与趋境科技（首席科学家）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "武永卫是清华大学计算机科学与技术系教授、博士生导师，研究并行与分布式处理、云计算及存储系统。清华大学教师主页记载其本科和硕士毕业于兰州大学，博士毕业于中国科学院系统科学研究所，并列出多项学术服务和科技奖励。趋境科技相关联合发起身份按融资报道记录。",
+      "current_roles": [
+        {
+          "title": "教授、博士生导师",
+          "organization": "清华大学计算机科学与技术系",
+          "source_id": "wuyongwei_tsinghua"
+        },
+        {
+          "title": "趋境科技联合发起人（媒体报道）",
+          "organization": "趋境科技",
+          "source_id": "wuyongwei_qijing"
+        }
+      ],
       "career": [
         {
+          "organization": "清华大学计算机科学与技术系",
+          "title": "教授、博士生导师",
+          "period": "教师主页当前记录；具体入职年份未列",
+          "description": "研究并行与分布式处理、云计算和存储系统。",
+          "source_id": "wuyongwei_tsinghua"
+        },
+        {
           "organization": "趋境科技",
-          "title": "首席科学家",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将武永卫与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-0a40102abd985684"
+          "title": "联合发起人",
+          "period": "2023年底公司发起后（媒体报道）",
+          "description": "与任旭阳共同发起AI基础设施企业；公司关联由媒体资料确认。",
+          "source_id": "wuyongwei_qijing"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "兰州大学",
+          "qualification": "计算数学理学学士，1996年",
+          "source_id": "wuyongwei_tsinghua"
+        },
+        {
+          "institution": "兰州大学",
+          "qualification": "计算数学理学硕士，1999年",
+          "source_id": "wuyongwei_tsinghua"
+        },
+        {
+          "institution": "中国科学院系统科学研究所",
+          "qualification": "应用数学博士，2002年",
+          "source_id": "wuyongwei_tsinghua"
+        }
+      ],
+      "experience_summary": "长期从事并行与分布式系统、云计算及存储系统研究；清华主页列出IEEE Fellow、AAIA Fellow及国家技术发明二等奖等学术荣誉。",
+      "track_record": [
+        {
+          "description": "清华教师主页列出其团队相关科技奖励，包括国家技术发明二等奖（2015）、中国电子学会科技进步特等奖（2017）等；奖项按团队项目口径展示。",
+          "source_id": "wuyongwei_tsinghua"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-0a40102abd985684",
-          "source_url": "https://news.pedaily.cn/202605/564126.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "0ed32dd4d2b1a439",
-          "quote": "趋境科技首席科学家武永卫教授长期深耕分布式与存储系统，曾获得多项国家级科技大奖",
-          "quote_hash": "be226f4099c98aa791ef81fc70130420cc6ea1cc5700fb1537847374a3d57644"
+          "source_id": "wuyongwei_tsinghua",
+          "source_url": "https://www.cs.tsinghua.edu.cn/info/1107/3508.htm",
+          "source_title": "武永卫教师主页 - 清华大学计算机科学与技术系",
+          "source_content_hash": "ca599f6244ff8357bff944b230da3a6b6728aec5cd140eeb30b627ca2bea96a2",
+          "quote": "清华大学教师主页列出其职称、研究方向、兰州大学及中科院博士教育经历和学术奖励。",
+          "quote_hash": "32921ea59a6bf11693c54f98e7112e907724a8acf0afa1dfe563bb9db55cc475"
+        },
+        {
+          "source_id": "wuyongwei_qijing",
+          "source_url": "https://finance.sina.com.cn/tech/roll/2026-07-01/doc-inifhvws1004550.shtml",
+          "source_title": "趋境科技发展及发起团队报道 - 新浪财经",
+          "source_content_hash": "a0883da2542f9b6b25b7bcc9267b423004f54d55b8978b20dd7aed97d97c1fc9",
+          "quote": "报道记载清华大学教授武永卫与任旭阳共同发起趋境科技。",
+          "quote_hash": "a8d46a8f6c0711f47068116ce3b467c6693edce86c4a737e321d6bded715b7f4"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "任职、教育及奖项以清华大学教师主页为依据；企业关联来自媒体报道。团队奖项按团队口径表述。",
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

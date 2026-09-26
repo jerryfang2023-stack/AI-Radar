@@ -187,13 +187,60 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "飞图创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "飞图创投对应飞图创业投资（北京）有限公司，是2015年成立、总部位于北京的早期投资机构，公开机构介绍称其聚焦TMT及科技项目。投资界机构页列出其法律主体、基金管理信息及早期投资方向；36氪机构页显示其投资网络已扩展到医疗健康、企业服务、前沿技术等领域。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "机构主体",
+          "value": "飞图创业投资（北京）有限公司",
+          "source_id": "flyfot_pedaily"
+        },
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2015年3月20日",
+          "source_id": "flyfot_36kr"
+        },
+        {
+          "field": "headquarters",
+          "label": "所在地",
+          "value": "北京市",
+          "source_id": "flyfot_36kr"
+        },
+        {
+          "field": "investment_focus",
+          "label": "早期投资方向",
+          "value": [
+            "TMT",
+            "O2O",
+            "B2B",
+            "互联网金融",
+            "在线教育",
+            "移动医疗",
+            "大数据与人工智能",
+            "虚拟现实与增强现实"
+          ],
+          "source_id": "flyfot_pedaily"
+        },
+        {
+          "field": "platform_track_record",
+          "label": "平台收录投资事件",
+          "value": "36氪机构页面显示77项历史投资事件；属第三方数据库动态收录数，不代表完整投资组合或基金回报。",
+          "source_id": "flyfot_36kr"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2015-03-20",
+          "description": "飞图创业投资（北京）有限公司成立。",
+          "source_id": "flyfot_36kr"
+        }
+      ],
       "track_record": [
+        {
+          "description": "投资界页面收录其投资案例及科技领域投资方向；具体投资活动以各项目融资公告为准。",
+          "source_id": "flyfot_pedaily"
+        },
         {
           "description": "融资来源记录：灵御智能 · Pre-A轮 · 2026-08-26 · 本轮联合投资 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1ff3ce30945e8f13"
@@ -203,8 +250,32 @@
           "source_id": "FISRC-c00e3514a8fe23f2"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构微博",
+          "value": "飞图创投官方微博（平台收录）",
+          "url": "https://weibo.com/flyfotvc",
+          "source_id": "flyfot_pedaily"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "flyfot_pedaily",
+          "source_url": "https://vc.pedaily.cn/vc/106368.html",
+          "source_title": "飞图创投机构介绍 - 投资界",
+          "source_content_hash": "354d1044ba8d90ab6e5beb0a9d9e4b6162153665e2026637fd16c7bdd2fb0b2d",
+          "quote": "机构资料列出飞图创投的法律主体、成立时间和TMT早期投资方向。",
+          "quote_hash": "bb82c1ab8af319a671b1afe0bd100604c8e9a3338658f4e43d3a6d7a185a47b6"
+        },
+        {
+          "source_id": "flyfot_36kr",
+          "source_url": "https://pitchhub.36kr.com/organization/1678246029440001",
+          "source_title": "飞图创投机构页 - 36氪创投平台",
+          "source_content_hash": "6230e82b54816fc73e0f8d20f95a990748dbbd33505ed9e809926822db012d3a",
+          "quote": "36氪机构资料列出其北京所在地、成立日期及平台收录的投资事件。",
+          "quote_hash": "ddd1fb514964db70352594bbe0adc3d7509f99ff07ccfa9f4d49a15084977733"
+        },
         {
           "source_id": "FISRC-1ff3ce30945e8f13",
           "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprivs1014861.shtml",
@@ -222,7 +293,10 @@
           "quote_hash": "09cb9e2523380f0b2eb0586ac2a30d1d2528d377f5867ffeb37702d0e2be27a2"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构身份由投资界和36氪机构档案交叉对应；投资领域、成立资料及投资事件数来自第三方数据库，未发现可访问的机构官网，暂无经核实的电话或邮箱。",
+      "last_verified_at": "2026-09-26"
     }
   }
 }

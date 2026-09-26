@@ -192,13 +192,56 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "OpenAI 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "OpenAI于2015年以非营利组织形式创立，官方使命是确保通用人工智能造福全人类。官网记载其2019年设立营利子公司，并于2025年完成更新后的组织架构：非营利实体为OpenAI Foundation，营利实体为OpenAI Group PBC，前者继续控制后者。融资情报库中以“OpenAI”标注的交易仍按披露名称展示，不擅自改记为OpenAI Startup Fund或其他关联实体。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "创立年份",
+          "value": "2015年",
+          "source_id": "openai_structure_official"
+        },
+        {
+          "field": "initial_structure",
+          "label": "初始组织形式",
+          "value": "非营利组织",
+          "source_id": "openai_structure_official"
+        },
+        {
+          "field": "for_profit_subsidiary",
+          "label": "营利实体设立",
+          "value": "2019年设立营利子公司以支持研究和部署；当时由非营利实体治理并控制",
+          "source_id": "openai_structure_official"
+        },
+        {
+          "field": "current_structure",
+          "label": "2025年组织架构",
+          "value": "OpenAI Foundation控制OpenAI Group PBC",
+          "source_id": "openai_structure_official"
+        },
+        {
+          "field": "mission",
+          "label": "使命",
+          "value": "确保通用人工智能造福全人类",
+          "source_id": "openai_structure_official"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2015",
+          "description": "OpenAI以非营利组织形式创立。",
+          "source_id": "openai_structure_official"
+        },
+        {
+          "date": "2019",
+          "description": "设立营利子公司以扩大研究与部署工作。",
+          "source_id": "openai_structure_official"
+        },
+        {
+          "date": "2025-10-28",
+          "description": "官网公布更新后的组织架构：OpenAI Foundation继续控制OpenAI Group PBC。",
+          "source_id": "openai_structure_official"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Thrive Holdings · 轮次未披露 · 2026-08-12 · 本轮参投 · $2B。这是本库收录的披露案例，不代表完整投资组合。",
@@ -209,8 +252,24 @@
           "source_id": "FISRC-1da4b36f3c2caa81"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "OpenAI",
+          "url": "https://openai.com/",
+          "source_id": "openai_structure_official"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "openai_structure_official",
+          "source_url": "https://openai.com/our-structure/",
+          "source_title": "Our Structure | OpenAI",
+          "source_content_hash": "edd84579b64b3147f06ecd94792d9a776dadf92d94dd7c10e12df379b07f7edc",
+          "quote": "OpenAI was founded in 2015 as a nonprofit. The nonprofit is now the OpenAI Foundation. The for-profit is now a public benefit corporation, called OpenAI Group PBC.",
+          "quote_hash": "06de9d06bbe9c83b91f06be4af99c9d8f3576138255d644ea5fbd393a0f2afd9"
+        },
         {
           "source_id": "FISRC-d07c57474d0d2a62",
           "source_url": "https://ecmsource.com/thrive-holdings-2-billion-openai-softbank-august-2026/",
@@ -228,7 +287,11 @@
           "quote_hash": "4642a4cccc4e453f294929216377918a655227c89c89a3d454d915261fb06bc1"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "identity_status": "verified",
+      "coverage_note": "组织架构与使命来自OpenAI官网。融资数据仅显示部分轮次来源将“OpenAI”列为投资者，公开记录没有在此处确认专属基金或投资团队，因此活动仍保留原始归属名称。",
+      "last_verified_at": "2026-09-26"
     }
   }
 }

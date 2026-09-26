@@ -111,33 +111,61 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "杨坤 的来源线索将其与长亭科技（联合创始人）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
+      "summary": "杨坤是网络安全研究与创业者。国家科技传播中心 2024 年人物报道将其称为长亭科技联合创始人、首席安全研究员，并记载其清华大学计算机系博士、加州大学伯克利分校访问学者经历，以及参与蓝莲花战队和 Real World CTF 的经历。报道为人物专题，未找到公司或高校发布的现职和完整履历，因此不据此断言 2026 年仍在任。",
       "current_roles": [],
       "career": [
         {
           "organization": "长亭科技",
-          "title": "联合创始人",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-ea950b973036096e"
+          "title": "联合创始人、首席安全研究员（来源报道时）",
+          "period": "截至 2024 年报道",
+          "description": "国家科技传播中心人物报道以该职务介绍杨坤；该资料不证明其当前任职状态。",
+          "source_id": "yangkun_ncsti_202411"
+        },
+        {
+          "organization": "蓝莲花战队（Blue-Lotus）",
+          "title": "队长",
+          "period": "年份未详",
+          "description": "报道记载其曾任战队队长，带队参加 DEFCON CTF。",
+          "source_id": "yangkun_ncsti_202411"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "清华大学计算机系",
+          "qualification": "博士（来源报道所述）",
+          "source_id": "yangkun_ncsti_202411"
+        },
+        {
+          "institution": "加州大学伯克利分校",
+          "qualification": "访问学者（非学位项目）",
+          "source_id": "yangkun_ncsti_202411"
+        }
+      ],
+      "experience_summary": "公开报道显示其经历连接网络安全竞赛、漏洞研究、企业安全产品和创业；其任长亭科技联合创始人及首席安全研究员的说法以 2024 年人物报道为时间边界。",
+      "track_record": [
+        {
+          "description": "国家科技传播中心报道记载其参与蓝莲花战队在 DEFCON CTF 获得全球第二，并参与创办 Real World CTF。属于团队成果，不单独归为个人成果。",
+          "source_id": "yangkun_ncsti_202411"
+        },
+        {
+          "description": "同一报道记载其带领研究团队参加 Pwn2Own、GeekPwn 等攻防赛事；未补录具体名次以外的未核实细节。",
+          "source_id": "yangkun_ncsti_202411"
+        }
+      ],
+      "coverage_status": "researched",
+      "identity_status": "verified",
+      "coverage_note": "已核实公开人物报道中的主要背景；现职、教育时间和任职年份仍缺少公司或学校一手履历。",
       "sources": [
         {
-          "source_id": "FISRC-ea950b973036096e",
-          "source_url": "https://pitchhub.36kr.com/project/2144716750488835",
-          "source_title": "融资披露来源",
-          "source_content_hash": "8425056d913a657a57736d7de58fab2d85d9df124bdf0a7e4919439837868c86",
-          "quote": "杨坤 联合创始人",
-          "quote_hash": "9a7585bf80d4a978a58e1c4cdf3cd83340dea4c3ddd2922f20b55d68d2b9546a"
+          "source_id": "yangkun_ncsti_202411",
+          "source_url": "https://www.ncsti.gov.cn/kjdt/xwjj/202411/t20241129_187648.html",
+          "source_title": "Cool～现实版“韩商言”战队来了！｜创事纪",
+          "source_content_hash": "302fc7dc2312a6dd66f5dabbbbf47930dd5f9233ffcde5e20edca7e399cdee79",
+          "quote": "报道介绍杨坤为长亭科技联合创始人、首席安全研究员，并记载其清华博士、伯克利访问学者经历。",
+          "quote_hash": "afdf26919205f4a33333ae5beca655bc7189fd42d8740b172d075dd272647972"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

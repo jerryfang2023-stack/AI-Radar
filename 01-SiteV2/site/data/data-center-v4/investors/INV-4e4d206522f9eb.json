@@ -194,10 +194,41 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Tenacity Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "依据机构官网策略、团队、组合或联系资料核实；机构自述指标与组合案例不视作基金回报。",
+      "summary": "Tenacity Capital 是 AJ Tennant 创立的 AI 风险投资机构，聚焦产品市场匹配开始显现、需要加强销售与市场拓展的 AI 原生企业。官网将其定位为 GTM 增长伙伴，且列出 Archestra 等组合公司；同名实体仍须按交易来源区分。",
+      "facts": [
+        {
+          "field": "thesis",
+          "label": "投资主题",
+          "value": "AI 原生公司，尤其产品市场匹配开始显现、销售与市场拓展成为增长瓶颈的阶段。",
+          "source_id": "tenacity_cap_official"
+        },
+        {
+          "field": "value_add",
+          "label": "投后支持",
+          "value": "官网将其定位为 GTM 合作伙伴，协助创始团队构建可规模化增长引擎。",
+          "source_id": "tenacity_cap_official"
+        },
+        {
+          "field": "founder",
+          "label": "创始人",
+          "value": "AJ Tennant；官网介绍其曾在 Facebook、Slack 和 Glean 担任销售与增长相关职务。",
+          "source_id": "tenacity_cap_official"
+        },
+        {
+          "field": "founder_record",
+          "label": "创始人经历",
+          "value": "官网称 AJ Tennant 是 Facebook 内部销售组织的创始成员，曾参与扩大收入与销售团队规模；为公司官网陈述。",
+          "source_id": "tenacity_cap_official"
+        },
+        {
+          "field": "portfolio_examples",
+          "label": "官网组合案例",
+          "value": "官网列示 Archestra 等公司；与本库融资条目名称一致，不据此推断具体投资份额。",
+          "source_id": "tenacity_cap_official"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -209,7 +240,27 @@
           "source_id": "FISRC-ce83b857608dabeb"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Tenacity Capital",
+          "url": "https://www.tenacity-cap.com/",
+          "source_id": "tenacity_cap_official"
+        },
+        {
+          "kind": "email",
+          "label": "创始人与投资业务联系",
+          "value": "aj@tenacity-cap.com",
+          "source_id": "tenacity_cap_official"
+        },
+        {
+          "kind": "phone",
+          "label": "官网公开电话",
+          "value": "+1 650 229 8634",
+          "source_id": "tenacity_cap_official"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-08f2020b7eca8380",
@@ -226,9 +277,17 @@
           "source_content_hash": "bc6dd70ea1b6ac85",
           "quote": "with participation from Bek Ventures, Kaya VC, Inovo VC and Tenacity Capital",
           "quote_hash": "6752f5a8c3985f31ec1fa15bf73da45d97784fec886f5e9c584f7f85a880fab6"
+        },
+        {
+          "source_id": "tenacity_cap_official",
+          "source_url": "https://www.tenacity-cap.com/",
+          "source_title": "Tenacity | Turns belief into velocity",
+          "quote": "We invest at the inflection point when product-market fit is emerging and back AI-native, visionary founders.",
+          "source_content_hash": "bcbf9e7aeed3929d86e3aefc92f1c18653c14135979ce6f2c807bc17cee7ddef",
+          "quote_hash": "3899d10641d430f99d0908dc7246f91cbc3a8bd2f66e583b3fc565ad1f6a7a9d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

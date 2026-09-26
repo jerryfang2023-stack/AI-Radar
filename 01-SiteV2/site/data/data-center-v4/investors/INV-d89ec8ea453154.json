@@ -241,14 +241,33 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "TCL创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "TCL 创投是 TCL 产业金融与股权投资平台体系中的投资品牌。TCL 集团 2018 年上市公司公告将宁波 TCL 股权投资有限公司称为“TCL 创投”，并记载该主体参与设立目标规模 5.01 亿元的常州创动创业投资基金、认缴 2 亿元；TCL 科技集团官网目前仍将 TCL 创投列入产业金融板块。不同年份及地区下“TCL 创投”可能指品牌、管理主体或基金载体，历史披露不应当作当前基金规模。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构属性",
+          "value": "TCL 产业金融板块中的创业投资平台/品牌",
+          "source_id": "tcltech_business"
+        },
+        {
+          "field": "historical_fund_investment",
+          "label": "2018年基金案例",
+          "value": "参与设立目标规模 5.01 亿元的常州创动创业投资基金；宁波 TCL 股权投资有限公司认缴 2 亿元",
+          "source_id": "tclvc_2018_disclosure"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2018",
+          "description": "TCL 集团公告披露通过宁波 TCL 股权投资有限公司参与设立常州创动创业投资基金。",
+          "source_id": "tclvc_2018_disclosure"
+        }
+      ],
       "track_record": [
+        {
+          "description": "上市公司公告记录一笔基金设立及认缴案例；该历史案例不能代表当前管理规模或完整组合。",
+          "source_id": "tclvc_2018_disclosure"
+        },
         {
           "description": "融资来源记录：千寻智能 · A+轮 · 2026-06-03 · 2026年2月轮次投资方 · 15亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b8b7d456eceee943"
@@ -262,8 +281,36 @@
           "source_id": "FISRC-ee3064edf7c871f4"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "平台归属由 TCL 科技官网确认；法律实体与历史基金认缴以 TCL 集团上市公司公告为准。未找到可确认属于该投资主体的公开投资申请联系方式，因此不使用集团客户服务邮箱替代。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "TCL科技产业与投资平台信息",
+          "value": "TCL科技官网",
+          "url": "https://tcltech.com/business/",
+          "source_id": "tcltech_business"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "tclvc_2018_disclosure",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2018-08-29/1205350232.PDF",
+          "source_title": "关于设立创业投资基金的公告 - TCL集团股份有限公司",
+          "source_content_hash": "ac5e46b35340048ef74ac1ee7e8587e8b8f2561335065a111d5f71fb81c37fe4",
+          "quote": "TCL 集团 2018 年公告记载，公司通过全资子公司宁波 TCL 股权投资有限公司（公告简称“TCL 创投”）与合作方设立目标规模 5.01 亿元的创投基金；TCL 创投作为有限合伙人认缴 2 亿元。",
+          "quote_hash": "419ef49be74465811c82dce2b467b006f59c6f7b6c0ecc059b3a7372d482fa67"
+        },
+        {
+          "source_id": "tcltech_business",
+          "source_url": "https://tcltech.com/business/",
+          "source_title": "TCL科技集团股份有限公司",
+          "source_content_hash": "85899688c661d7084d6e50dc497a0d218258359ed84cb46e4a12c46647d795b7",
+          "quote": "TCL 科技集团官网将“TCL 创投”列入产业金融业务板块；官网未在该页面披露当前基金规模、具体基金清单或管理团队。",
+          "quote_hash": "d41e3a0178cb72dc2d919af726d93439d49c7fc0e4c224506c03023e0bc0292e"
+        },
         {
           "source_id": "FISRC-b8b7d456eceee943",
           "source_url": "https://news.pedaily.cn/202606/564786.shtml",
@@ -289,7 +336,7 @@
           "quote_hash": "aef719c255af9df7e1c1ef3f9938119055452cda9225472631673f1eaaf4da04"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

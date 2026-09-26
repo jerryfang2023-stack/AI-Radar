@@ -111,33 +111,59 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "刘进治 的来源线索将其与博伦智汇（首席执行官）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "刘进治是博伦智汇CEO，曾任英特尔亚太研发中心相关负责人并负责硅谷分布式系统软件中国业务。瑞财经报道其职业经历还涉及早期NLP创业公司和NVIDIA SuperPOD训练集群建设；其中团队项目业绩按媒体报道口径记录，未独立归因个人。",
+      "current_roles": [
+        {
+          "title": "CEO",
+          "organization": "博伦智汇",
+          "source_id": "liu_jinzhi_leju"
+        }
+      ],
       "career": [
         {
+          "organization": "英特尔亚太研发中心",
+          "title": "硅谷分布式系统软件中国负责人（媒体报道表述）",
+          "period": "此前经历；年份未披露",
+          "description": "瑞财经报道其曾在英特尔亚太研发中心负责相关业务。",
+          "source_id": "liu_jinzhi_leju"
+        },
+        {
+          "organization": "AI初创企业（名称未披露）",
+          "title": "核心成员，专注自然语言处理",
+          "period": "2016年",
+          "description": "瑞财经称其曾是全球较早专注NLP的AI初创企业核心成员；公司名称未披露。",
+          "source_id": "liu_jinzhi_leju"
+        },
+        {
           "organization": "博伦智汇",
-          "title": "首席执行官",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将刘进治与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-2d2a643fca72bfe6"
+          "title": "CEO",
+          "period": "2026年8月融资报道时在任",
+          "description": "负责异构算力调度基础设施公司。",
+          "source_id": "liu_jinzhi_leju"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
-      "sources": [
+      "experience_summary": "职业经历围绕分布式系统、NLP及AI算力基础设施；教育经历及英特尔具体职级仍未披露。",
+      "track_record": [
         {
-          "source_id": "FISRC-2d2a643fca72bfe6",
-          "source_url": "https://www.aigc.bar/AI%E8%B5%84%E8%AE%AF%E6%96%87%E7%AB%A0/2026/08/28/bolun-zhihui-ai-infrastructure-funding",
-          "source_title": "融资披露来源",
-          "source_content_hash": "b0d1f40813729b2971ee47164abc86020c6de952990288a58744dd7ccb2e35ef",
-          "quote": "博伦智汇CEO刘进治毕业于浙江大学，硕士毕业于墨尔本大学市场营销专业，曾任职于英特尔、摩托罗拉并担任团队负责人，推动硅谷分布式系统软件公司WANdisco在中国落地。",
-          "quote_hash": "cf0dedfa2611fc74d437193fb7093c5172a5050651886d3dc177ae721d4623f5"
+          "description": "瑞财经报道其参与搭建早期NVIDIA SuperPOD训练集群并支持大模型研发；此为媒体转述的团队经历，不视作个人独立成果。",
+          "source_id": "liu_jinzhi_leju"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "sources": [
+        {
+          "source_id": "liu_jinzhi_leju",
+          "source_url": "https://www.lejucaijing.com/news-7498249972904294153.html",
+          "source_title": "瑞财经：博伦智汇完成天使轮融资，CEO刘进治曾任职英特尔",
+          "source_content_hash": "e14c35c42ae18f93f27ed8f9dd76d3e92fac8b1257da003e24631f785d4030cc",
+          "quote": "瑞财经报道博伦智汇CEO刘进治曾任英特尔亚太研发中心硅谷分布式系统软件中国负责人，并参与早期NLP创业和NVIDIA SuperPOD集群建设。",
+          "quote_hash": "64de4ee188d1f47347d29815ec05eec4e72a3be0ae49b872b64f9aa5c929a11e"
+        }
+      ],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "仅依署名行业报道整理职业线索；对匿名早期公司和团队项目保留其来源表述，缺少年份的任职不臆定。",
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

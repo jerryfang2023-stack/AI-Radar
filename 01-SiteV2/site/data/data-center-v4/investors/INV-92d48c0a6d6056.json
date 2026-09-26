@@ -139,30 +139,183 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "湖北长江产业投资集团 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "coverage_note": "融资报道使用“湖北长江产业投资集团”这一简称。上交所2026年募集说明书记载，发行人曾用名“湖北省长江产业投资集团有限公司”，2022年2月更名为“长江产业投资集团有限公司”；官方沿革支持将该简称按现行集团档案整理。集团官网概况页把336亿元标为注册资本，而2026年募集说明书列示注册资本32.505亿元、实缴资本336.395615亿元；本档案分开记录法定注册和实缴口径。",
+      "summary": "长江产业投资集团有限公司（长江产业集团）是湖北省属国有产业投资运营集团。上交所2026年发行文件记载，其前身于2010年设立，曾用名“湖北省长江产业投资集团有限公司”，2022年2月更为现名；集团官网介绍其于2022年整合多家省属产业与基金平台组建。官网披露的集团业务覆盖产业投资、资本运营和基金管理。2026年融资报道将其列为智象未来15亿元C轮融资的跟投方。",
+      "facts": [
         {
-          "description": "融资来源记录：智象未来 · C轮 · 2026-07-23 · 本轮参投 · 15亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-9d4811d701a7c9af"
+          "field": "legal_name",
+          "label": "现行法定名称",
+          "value": "长江产业投资集团有限公司；融资报道使用“湖北长江产业投资集团”简称。",
+          "source_id": "cjt_bond_history"
+        },
+        {
+          "field": "unified_social_credit_code",
+          "label": "统一社会信用代码",
+          "value": "91420000562732692H",
+          "source_id": "cjt_bond_registration"
+        },
+        {
+          "field": "ownership",
+          "label": "国有出资关系",
+          "value": "湖北省人民政府出资设立的国有独资企业，由湖北省国资委代表省政府履行出资人职责。",
+          "source_id": "cjt_bond_control"
+        },
+        {
+          "field": "registered_capital",
+          "label": "注册资本（2026年募集说明书）",
+          "value": "人民币32.505亿元（325,050万元）",
+          "source_id": "cjt_bond_registration"
+        },
+        {
+          "field": "paid_in_capital",
+          "label": "实缴资本（2026年募集说明书）",
+          "value": "人民币336.395615亿元",
+          "source_id": "cjt_bond_registration"
+        },
+        {
+          "field": "registered_address",
+          "label": "注册住所",
+          "value": "武汉市武昌区民主路782号洪广宝座11—12楼",
+          "source_id": "cjt_bond_registration"
+        },
+        {
+          "field": "business_scope",
+          "label": "主要业务",
+          "value": [
+            "对湖北长江经济带新兴产业和基础设施、汽车、石油化工、电子信息产业投资",
+            "风险投资、实业投资与资产管理",
+            "产业投资基金及国有资本运营"
+          ],
+          "source_id": "cjt_bond_registration"
+        },
+        {
+          "field": "group_scale",
+          "label": "集团官网集团概况（截至2024年8月）",
+          "value": "注册资本口径见本档案备注；官网另披露资产总额超过人民币4,900亿元、旗下认缴基金规模超过人民币7,000亿元、实际控制二级子公司23家。",
+          "source_id": "cjt_group_overview"
+        },
+        {
+          "field": "portfolio_and_results",
+          "label": "官网列示的控股及战略投资企业（截至2024年8月）",
+          "value": [
+            "控股广济药业、万润科技、双环科技、奥特佳4家上市公司",
+            "战略性投资长江存储、大冶有色、长江证券"
+          ],
+          "source_id": "cjt_group_overview"
+        },
+        {
+          "field": "investment_strategy",
+          "label": "集团功能与产业方向",
+          "value": "履行省级战略性新兴产业投资运营主体和省级产业投资基金投资管理主体功能，重点覆盖汽车及高端装备、现代化工、生命健康、光电子信息、北斗数字、新能源、新材料、生态环保等产业。",
+          "source_id": "cjt_group_overview"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2010-06",
+          "description": "湖北省政府出资设立前身湖北省长江产业投资有限公司。",
+          "source_id": "cjt_bond_history"
+        },
+        {
+          "date": "2014-04",
+          "description": "更名为湖北省长江产业投资集团有限公司。",
+          "source_id": "cjt_bond_history"
+        },
+        {
+          "date": "2022-01-25",
+          "description": "集团官网记载，长江产业集团由原长江产业投资集团等多家省属产业与基金平台整合组建。",
+          "source_id": "cjt_group_overview"
+        },
+        {
+          "date": "2022-02",
+          "description": "上交所募集说明书记载，公司更名为现行法定名称长江产业投资集团有限公司并完成工商变更。",
+          "source_id": "cjt_bond_history"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "智象未来2026年7月15亿元C轮融资报道列“湖北长江产业投资集团”为跟投机构之一；来源未披露该机构具体出资载体或金额。",
+          "source_id": "FISRC-9d4811d701a7c9af"
+        },
+        {
+          "description": "集团官网列示其控股4家上市公司、战略性投资长江存储、大冶有色和长江证券；数据为官网概况页截至2024年8月的口径。",
+          "source_id": "cjt_group_overview"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "长江产业投资集团",
+          "url": "https://www.cjtouzi.com/",
+          "source_id": "cjt_group_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "官网公开联系电话",
+          "value": "+86 27 8725 5666",
+          "source_id": "cjt_group_contact"
+        },
+        {
+          "kind": "address",
+          "label": "官网公开联系地址",
+          "value": "武汉市武昌区中北路166号长江产业大厦",
+          "source_id": "cjt_group_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "cjt_bond_history",
+          "source_url": "https://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2026-08-28/245996_20260828_YNSZ.pdf",
+          "source_title": "长江产业投资集团有限公司｜2026年可续期公司债券募集说明书",
+          "source_content_hash": "8e1a2bbd97efa779b317e9d28d37e01fc5a27a0e90f0eb7b8b75716d9cbb97c5",
+          "quote": "发行人于2010年6月设立，2014年4月更名为湖北省长江产业投资集团有限公司，2022年2月更名为长江产业投资集团有限公司并完成工商变更。",
+          "quote_hash": "eb3b983e8d788b4d162b9e723708de39f5ea1520653b924d864ad5fb8608af37"
+        },
+        {
+          "source_id": "cjt_bond_registration",
+          "source_url": "https://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2026-08-28/245996_20260828_YNSZ.pdf",
+          "source_title": "长江产业投资集团有限公司｜2026年可续期公司债券募集说明书",
+          "source_content_hash": "0cb9b4d07f2315194880ff689b13d3dc58f688e77f8da79ce6e328526d12897c",
+          "quote": "注册名称长江产业投资集团有限公司；法定代表人黎苑楚；注册资本325,050万元；实缴资本3,363,956.15万元；统一社会信用代码91420000562732692H；注册地武汉市武昌区民主路782号洪广宝座11—12楼；经营范围包括对新兴产业、基础设施、汽车、石油化工、电子信息产业投资，风险投资、实业投资与资产管理。",
+          "quote_hash": "4c9a325b9d8c99d2d98ae1d8baff939512e2eb45f11607293f512d596437b39e"
+        },
+        {
+          "source_id": "cjt_bond_control",
+          "source_url": "https://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2026-08-28/245996_20260828_YNSZ.pdf",
+          "source_title": "长江产业投资集团有限公司｜2026年可续期公司债券募集说明书",
+          "source_content_hash": "25641676eec3a4586cb08cad5091a38cb7a8bb6f5cfc831c97f65a18dbd85091",
+          "quote": "公司作为湖北省人民政府出资成立的国有独资企业，由湖北省国资委代表湖北省人民政府履行出资人职责。",
+          "quote_hash": "c2c8a9c70ecee100938a9c115084b699db6c6e567ab5fcae8ed27b028592260e"
+        },
+        {
+          "source_id": "cjt_group_overview",
+          "source_url": "https://www.cjtouzi.com/zjjt/jtgk/index.shtml",
+          "source_title": "长江产业投资集团｜集团概况",
+          "source_content_hash": "908ffdcec06b9483b4e9f74e3f4236b4e1aa1fddb1cc75bec8c25dc159c341db",
+          "quote": "长江产业集团成立于2022年1月25日，由原湖北省长江产业投资集团有限公司、原湖北省高新产业投资集团有限公司、原湖北省长江经济带产业基金管理有限公司、原湖北省兴楚国有资产经营管理有限公司以及湖北宏泰国有资本投资运营集团有限公司优势产业板块合并组建而成。集团资产总额超4900亿元，旗下认缴基金规模超7000亿元；截至2024年8月，控股4家上市公司并战略性投资长江存储、大冶有色、长江证券。",
+          "quote_hash": "635640d0008982a9590ed1b19e99828bbbbea3a8a92c1a882fa0d0ff05e9dbeb"
+        },
         {
           "source_id": "FISRC-9d4811d701a7c9af",
           "source_url": "https://finance.sina.com.cn/jjxw/2026-07-23/doc-iniitzpn4522804.shtml",
-          "source_title": "智象未来完成15亿元C轮融资，三个月融三轮",
-          "source_content_hash": "e624d91e5d6eb536",
-          "quote": "厦门国贸 资本、上影新视野基金、湖北长江产业投资集团、 华策影视 、航源资本、创云海资本、华福投资、余杭金控股份、交银资本、若松基金等 多家机构跟投",
-          "quote_hash": "bd068025322f5afbcb8de752e20877f75655e2501a442bbe2a818d7c45ca4cc1"
+          "source_title": "新浪财经｜智象未来完成15亿元C轮融资",
+          "source_content_hash": "e3b1ba3939ba01ffa6e470508c382c93d2823a83a53d7c7a95ed1c21b3c11291",
+          "quote": "厦门国贸资本、上影新视野基金、湖北长江产业投资集团、华策影视、航源资本、创云海资本、华福投资、余杭金控股份、交银资本、若松基金等多家机构跟投。",
+          "quote_hash": "c8e0b5d72f3c672809d90a6ae9a6b735b5c1d149f7f19765df109bfa6b699218"
+        },
+        {
+          "source_id": "cjt_group_contact",
+          "source_url": "https://www.cjtouzi.com/jrwm/lxwm/",
+          "source_title": "长江产业投资集团｜联系我们",
+          "source_content_hash": "3bc3765f9be00fa1ce5be4deda977570e1ea3076dc7c29ccba74bd005f5b044b",
+          "quote": "公司地址：武汉市武昌区中北路166号长江产业大厦；联系电话：027-87255666。",
+          "quote_hash": "94112bc67230460e59d78c23fcac4a663eaf4c8a063f1409f95ab77631ae9701"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified"
     }
   }
 }

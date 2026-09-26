@@ -111,33 +111,64 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "刘海峰 的来源线索将其与中科类脑（董事长兼CEO）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
+      "summary": "刘海峰是类脑智能领域科研成果产业化与创业者。中国科学技术大学校友总会人物报道记载其获中国科大本科生最高荣誉郭沫若奖学金、曾在微软亚洲研究院攻读联合培养博士学位；2017 年博士毕业后任类脑智能技术及应用国家工程实验室产业化负责人，并组建合肥中科类脑智能技术有限公司。来源发表于 2021 年前后，未确认其 2026 年现职。",
       "current_roles": [],
       "career": [
         {
-          "organization": "中科类脑",
-          "title": "董事长兼CEO",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将刘海峰与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-4cd330eaa5f3d5fc"
+          "organization": "微软亚洲研究院（MSRA）",
+          "title": "联合培养博士研究经历",
+          "period": "具体年份未披露",
+          "description": "中国科大校友报道提及其在微软亚洲研究院攻读联合培养博士学位，未说明完整联合培养单位及时间。",
+          "source_id": "liuhaifeng_ustc_alumni"
+        },
+        {
+          "organization": "类脑智能技术及应用国家工程实验室",
+          "title": "产业化负责人",
+          "period": "2017 年起（报道所述）",
+          "description": "毕业后承担该国家工程实验室的产业化工作。",
+          "source_id": "liuhaifeng_ustc_alumni"
+        },
+        {
+          "organization": "合肥中科类脑智能技术有限公司",
+          "title": "创始团队负责人（报道称公司董事长）",
+          "period": "2017 年起；当前任职待核",
+          "description": "校友会报道记载其组建公司并担任董事长；不将历史称谓推定为 2026 年现职。",
+          "source_id": "liuhaifeng_ustc_alumni"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "中国科学技术大学",
+          "qualification": "本科；曾获郭沫若奖学金，报道未说明专业",
+          "source_id": "liuhaifeng_ustc_alumni"
+        },
+        {
+          "institution": "微软亚洲研究院及联合培养院校",
+          "qualification": "联合培养博士，2017 年毕业；另一培养院校未在该报道中明确",
+          "source_id": "liuhaifeng_ustc_alumni"
+        }
+      ],
+      "experience_summary": "履历显示其从事类脑智能科研平台成果转化，并创办科技企业；公开校友资料主要是 2017—2021 年阶段信息，现任职和后续公司成绩需另行核验。",
+      "track_record": [
+        {
+          "description": "中国科大校友会报道记载中科类脑入选“2020 中国隐形独角兽 500 强”；为公司入选记录，不归作个人独立成就。",
+          "source_id": "liuhaifeng_ustc_alumni"
+        }
+      ],
+      "coverage_status": "researched",
+      "identity_status": "verified",
+      "coverage_note": "以中国科大校友总会专题报道为主要来源。因资料时间较早，当前职务和最新经历尚未确认。",
       "sources": [
         {
-          "source_id": "FISRC-4cd330eaa5f3d5fc",
-          "source_url": "https://pitchhub.36kr.com/project/1678250824463368",
-          "source_title": "融资披露来源",
-          "source_content_hash": "172b52b0715adcdcc90b92bf4ac40d8fe653ab5b952dbdca180fbcd81dfda38f",
-          "quote": "刘海峰 CEO 刘海峰，博士学历。本科毕业于中国科学技术大学。曾在中科大从事博士后研究。现任合肥中科类脑智能技术有限公司董事长兼CEO。",
-          "quote_hash": "d43941ffec85a9f39d2f8886328f905e23588fc6476a4dcc34afdedf47d1c510"
+          "source_id": "liuhaifeng_ustc_alumni",
+          "source_url": "https://aga.ustc.edu.cn/info/1198/25472.htm",
+          "source_title": "3年挤进“500强”！85后校友抢占类脑智能赛道-中国科学技术大学校友总会",
+          "source_content_hash": "034cf11ba1dc01c80df811b1d6121e3702e15602ef93e2a0094d6e20e631e3d7",
+          "quote": "报道记载其获中国科大郭沫若奖学金，在微软亚洲研究院攻读联合培养博士，并于2017年博士毕业后组建中科类脑。",
+          "quote_hash": "eb803531a604800fbec3fd6ea15fb269558831486d4b900a62ebe2b53c067fe8"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

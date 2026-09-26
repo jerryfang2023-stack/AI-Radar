@@ -177,13 +177,58 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "阿里巴巴集团 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "阿里巴巴集团是一家1999年成立的全球科技公司，当前官网强调人工智能、云计算与商业业务。集团2015年发起阿里巴巴创业者基金，为香港和台湾地区的创业者提供投资支持；该公益性创业计划是集团公开投资项目之一，不能据此将所有以“阿里巴巴集团”披露的交易归入该基金。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立年份",
+          "value": "1999年",
+          "source_id": "alibaba_about"
+        },
+        {
+          "field": "current_business_focus",
+          "label": "官网业务重点",
+          "value": [
+            "AI",
+            "云计算",
+            "商业"
+          ],
+          "source_id": "alibaba_about"
+        },
+        {
+          "field": "venture_program",
+          "label": "旗下公开创业投资计划",
+          "value": "Alibaba Entrepreneurs Fund；2015年发起",
+          "source_id": "alibaba_ent_fund"
+        },
+        {
+          "field": "fund_size",
+          "label": "创业基金官网披露规模",
+          "value": "香港10亿港元；台湾100亿新台币",
+          "source_id": "alibaba_ent_fund"
+        },
+        {
+          "field": "investment_geography",
+          "label": "创业基金服务地域",
+          "value": [
+            "香港",
+            "台湾"
+          ],
+          "source_id": "alibaba_ent_fund"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1999",
+          "description": "阿里巴巴集团官网记载集团于1999年成立。",
+          "source_id": "alibaba_about"
+        },
+        {
+          "date": "2015",
+          "description": "Alibaba Entrepreneurs Fund 官网称该计划由阿里巴巴集团于2015年发起。",
+          "source_id": "alibaba_ent_fund"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：上海造父智能科技有限公司 · 轮次未披露 · 2026-09-16 · 战略投资 · 约1亿美金。这是本库收录的披露案例，不代表完整投资组合。",
@@ -194,8 +239,32 @@
           "source_id": "FISRC-e3b51be471b79167"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Alibaba Entrepreneurs Fund 官方介绍",
+          "value": "创业基金计划、投资范围与支持方式",
+          "url": "https://www.ent-fund.org/en/about",
+          "source_id": "alibaba_ent_fund"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "alibaba_about",
+          "source_url": "https://home.alibabagroup.com/en-US/about-alibaba",
+          "source_title": "Introduction to Alibaba Group | Alibaba Group",
+          "source_content_hash": "fb89be7a24fdf3c994c273285d7ab288e86dccb27d6b6f6aa0bb265ff5d9d2a4",
+          "quote": "Alibaba Group 官网称集团成立于1999年，目前是一家聚焦 AI、云计算和商业的全球科技公司。",
+          "quote_hash": "23ee1e3a97a6485872e228fb3b0c80c71881dd1c75865cf0464f3d72db9fc3d9"
+        },
+        {
+          "source_id": "alibaba_ent_fund",
+          "source_url": "https://www.ent-fund.org/en/about",
+          "source_title": "About Our Vision & Mission | Alibaba Entrepreneurs Fund",
+          "source_content_hash": "094657b0baa04c916a1d271c20d3504afc6b4e351ea6ed7d98e1b6298f4eb84c",
+          "quote": "Alibaba Entrepreneurs Fund 官网称该非营利计划由阿里巴巴集团于2015年发起，在香港设立10亿港元基金、在台湾设立100亿新台币基金，支持当地创业者。",
+          "quote_hash": "2e9485ec261d9722fb9eb24080bf0e6054002c8836ee07bb8af9129b10686102"
+        },
         {
           "source_id": "FISRC-fd74bfb93ef77cfc",
           "source_url": "https://news.pedaily.cn/202609/569083.shtml",
@@ -213,7 +282,11 @@
           "quote_hash": "51972a2bcdf7e26966adf9b94b89d74fbbcd82502e3fb422b66d9c4d7f848b3c"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "coverage_note": "阿里巴巴创业者基金只作为集团旗下公开计划单独说明；具体交易归属须以单笔披露中的投资主体为准。",
+      "identity_status": "verified"
     }
   }
 }

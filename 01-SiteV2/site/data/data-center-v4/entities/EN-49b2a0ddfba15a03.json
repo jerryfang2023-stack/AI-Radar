@@ -111,33 +111,45 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "赵欢 的来源线索将其与物自体科技（联合创始人兼首席科学家）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
-      "career": [
+      "summary": "物自体官网将赵欢列为联合创始人、首席科学家，并介绍其拥有香港科技大学计算机博士背景，曾任第四范式推荐系统专家。公司官网未给出具体任职年份。",
+      "current_roles": [
         {
-          "organization": "物自体科技",
-          "title": "联合创始人兼首席科学家",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-4c6320de89936c7b"
+          "title": "联合创始人、首席科学家",
+          "organization": "物自体（Noumena）",
+          "source_id": "noumena_about"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
+      "career": [
+        {
+          "organization": "第四范式",
+          "title": "推荐系统专家",
+          "period": "任职时间未披露",
+          "description": "物自体官网披露的过往经历。",
+          "source_id": "noumena_about"
+        }
+      ],
+      "education": [
+        {
+          "institution": "香港科技大学",
+          "source_id": "noumena_about",
+          "qualification": "计算机博士"
+        }
+      ],
+      "experience_summary": "官网披露其具备计算机博士背景及推荐系统专业经历；没有公开具体任期或更多关联公司。",
       "track_record": [],
       "sources": [
         {
-          "source_id": "FISRC-4c6320de89936c7b",
-          "source_url": "https://news.pedaily.cn/202609/568487.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "4aab0c4984cc55f6",
-          "quote": "Noumena 联合创始人兼首席科学家赵欢表示",
-          "quote_hash": "3c6f59a90cfc31959f313064ae38b19f6793fb8e5848940a20cce2c2269066d4"
+          "source_id": "noumena_about",
+          "source_url": "https://www.noumena.com.cn/about-us/",
+          "source_title": "关于物自体 · Noumena",
+          "source_content_hash": "18c5edae6630f3e84f5e22983f437e92a15e408a006847a693792eb5f43a065e",
+          "quote": "赵欢 Huan Zhao，联合创始人 · 首席科学家；香港科技大学计算机博士；第四范式推荐系统专家。",
+          "quote_hash": "26044f2ac3feb10319fc7d6b7a8949a4c93f9f486948e41c5db41d9d50af7638"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
     }
   },
   "relatedEntities": [],

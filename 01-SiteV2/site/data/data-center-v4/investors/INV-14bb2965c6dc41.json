@@ -129,21 +129,152 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "百度 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "百度（Baidu, Inc.）于2000年成立，是以互联网业务为基础、持续发展人工智能业务的科技公司。官网介绍其AI技术栈涵盖云基础设施、飞桨深度学习框架、文心基础模型和应用，业务包括移动生态、AI云与智能驾驶。此档案对应百度公司本身，与独立运营的BV百度风投区分；融资数据中的百度公司名称也不自动等同于百度风投或百度战投。",
+      "facts": [
+        {
+          "field": "incorporated_year",
+          "label": "成立年份",
+          "value": "2000年",
+          "source_id": "baidu_investor_faq"
+        },
+        {
+          "field": "business_focus",
+          "label": "官网列示业务",
+          "value": [
+            "移动生态",
+            "AI云",
+            "智能驾驶及其他增长业务"
+          ],
+          "source_id": "baidu_company_overview"
+        },
+        {
+          "field": "ai_stack",
+          "label": "官网介绍的AI技术栈",
+          "value": [
+            "云基础设施",
+            "飞桨深度学习框架",
+            "文心基础模型",
+            "应用"
+          ],
+          "source_id": "baidu_company_overview"
+        },
+        {
+          "field": "ai_investment_since",
+          "label": "AI投入起始年份（公司自述）",
+          "value": "2010年",
+          "source_id": "baidu_company_overview"
+        },
+        {
+          "field": "headquarters",
+          "label": "总部",
+          "value": "北京市海淀区",
+          "source_id": "baidu_investor_faq"
+        },
+        {
+          "field": "employees",
+          "label": "全职员工（截至2025-12-31）",
+          "value": "约33,500人",
+          "source_id": "baidu_investor_faq"
+        },
+        {
+          "field": "public_markets",
+          "label": "上市市场",
+          "value": [
+            "纳斯达克（2005年上市）",
+            "香港联交所（2021年上市）"
+          ],
+          "source_id": "baidu_company_overview"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2000",
+          "description": "百度公司成立并开始运营。",
+          "source_id": "baidu_investor_faq"
+        },
+        {
+          "date": "2010",
+          "description": "百度官网称公司自2010年起持续投入人工智能。",
+          "source_id": "baidu_company_overview"
+        },
+        {
+          "date": "2005-08",
+          "description": "百度在纳斯达克上市；2021年在香港联交所上市。",
+          "source_id": "baidu_company_overview"
+        }
+      ],
       "track_record": [
+        {
+          "description": "百度官网称其提供从云基础设施、飞桨、文心模型到应用的AI技术栈；这是公司公开披露的业务与能力介绍，不代表投资基金业绩。",
+          "source_id": "baidu_company_overview"
+        },
         {
           "description": "融资来源记录：无问芯穹 · 基础设施融资 · 2026-05-07 · 早期投资方 · 7 亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-67d072b1aca37b5d"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站及投资者关系",
+          "value": "Baidu Inc",
+          "url": "https://ir.baidu.com/company-overview",
+          "source_id": "baidu_company_overview"
+        },
+        {
+          "kind": "email",
+          "label": "投资者关系邮箱",
+          "value": "ir@baidu.com",
+          "url": "https://ir.baidu.com/shareholder-services/investor-faqs",
+          "source_id": "baidu_ir_contact"
+        },
+        {
+          "kind": "email",
+          "label": "媒体联系邮箱",
+          "value": "intlcomm@baidu.com",
+          "url": "https://ir.baidu.com/shareholder-services/investor-faqs",
+          "source_id": "baidu_ir_contact"
+        },
+        {
+          "kind": "address",
+          "label": "百度校园",
+          "value": "No. 10, Shangdi 10th Street, Haidian District, Beijing 100085, China",
+          "url": "https://ir.baidu.com/shareholder-services/investor-faqs",
+          "source_id": "baidu_ir_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "投资者关系电话",
+          "value": "+86-10-5992-8888",
+          "url": "https://ir.baidu.com/shareholder-services/investor-faqs",
+          "source_id": "baidu_ir_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "baidu_company_overview",
+          "source_url": "https://ir.baidu.com/company-overview",
+          "source_title": "Company Overview | Baidu Inc",
+          "source_content_hash": "89d6b21b4506f1aee98c90ada6db8d7d50fa42b807c814b892f821b0c1988835",
+          "quote": "We are a leading AI company with a strong internet foundation. We have been consistently investing in AI since 2010.",
+          "quote_hash": "465ec2f5258b47d7a714e67cdeb65c47421dacbe1cf308ab9807bc8238830c76"
+        },
+        {
+          "source_id": "baidu_investor_faq",
+          "source_url": "https://ir.baidu.com/shareholder-services/investor-faqs",
+          "source_title": "Investor FAQs | Baidu Inc",
+          "source_content_hash": "f419501bdec87a1d2ee148f83eb59c77b98819127761784750b145cb928d628d",
+          "quote": "Baidu was incorporated in 2000. We had approximately 33,500 full time employees as of December 31, 2025.",
+          "quote_hash": "b77790576feeb235614c4cced1508707670ea6df5caf6bfb83cf3cd402a1539b"
+        },
+        {
+          "source_id": "baidu_ir_contact",
+          "source_url": "https://ir.baidu.com/shareholder-services/investor-faqs",
+          "source_title": "Investor FAQs | Baidu Inc",
+          "source_content_hash": "f419501bdec87a1d2ee148f83eb59c77b98819127761784750b145cb928d628d",
+          "quote": "Investor inquiries can be directed to ir@baidu.com; media inquiries can be directed to intlcomm@baidu.com.",
+          "quote_hash": "76f702d3e614f608737b7576dd7e66d3ecea08ac4fc70b1062ae9f8ac05e0e5c"
+        },
         {
           "source_id": "FISRC-67d072b1aca37b5d",
           "source_url": "https://www.tmtpost.com/7235681.html",
@@ -153,7 +284,11 @@
           "quote_hash": "5838c5af42c09dfd74a2b6534fd65b82678314880b4881423006371a77cb44bf"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "identity_status": "verified",
+      "coverage_note": "公司概况、AI技术栈和上市信息来自百度投资者关系官网；员工数标注官方统计日期。此档案描述百度公司，不替代BV百度风投档案，也不将融资新闻中“百度战投”名称擅自认定为独立基金。",
+      "last_verified_at": "2026-09-26"
     }
   }
 }

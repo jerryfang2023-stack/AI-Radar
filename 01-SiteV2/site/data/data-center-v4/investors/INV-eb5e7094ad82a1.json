@@ -137,21 +137,133 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "淡马锡旗下Vertex Growth 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Vertex Growth是新加坡的成长期风险投资基金，为临近规模化阶段的企业提供扩张资本。其官网展示2019年成立、管理规模7.6亿美元、组合公司30余家和独角兽8家等指标，但未标注统计基准日；Vertex Holdings官网说明Vertex Growth属于其全球网络基金之一，各基金由本地团队独立管理。Vertex Holdings由淡马锡全资持有，不能将母集团的资产规模或业绩直接算作Vertex Growth基金自身数据。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份（官网展示）",
+          "value": "2019年",
+          "source_id": "vertex_growth_profile"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "成长期；为临近规模化企业提供扩张资本",
+          "source_id": "vertex_growth_profile"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "管理规模（官网页面展示，未标注日期）",
+          "value": "7.6亿美元",
+          "source_id": "vertex_growth_profile"
+        },
+        {
+          "field": "portfolio_count",
+          "label": "组合公司数量（官网页面展示，未标注日期）",
+          "value": "30余家",
+          "source_id": "vertex_growth_profile"
+        },
+        {
+          "field": "unicorn_count",
+          "label": "独角兽数量（官网页面展示，未标注日期）",
+          "value": "8家",
+          "source_id": "vertex_growth_profile"
+        },
+        {
+          "field": "parent_network",
+          "label": "基金网络关系",
+          "value": "Vertex Holdings网络中的独立管理成长期基金；Vertex Holdings为Temasek全资子公司",
+          "source_id": "vertex_holdings_structure"
+        },
+        {
+          "field": "investment_team",
+          "label": "官网团队页列示",
+          "value": [
+            "CHUA Kee Lock — Chairman",
+            "James LEE — General Partner",
+            "TAM Hock Chuan — General Partner",
+            "Jeff CHANG — General Partner"
+          ],
+          "source_id": "vertex_growth_profile"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2019",
+          "description": "Vertex Growth官网页面列示基金成立于2019年。",
+          "source_id": "vertex_growth_profile"
+        },
+        {
+          "date": "2025-04-15",
+          "description": "Vertex Holdings公布Vertex Growth向Dolphin Semiconductor承诺投资1000万欧元，用于企业扩张。",
+          "source_id": "vertex_growth_2025"
+        }
+      ],
       "track_record": [
+        {
+          "description": "Vertex Holdings披露Vertex Growth于2025年承诺向Dolphin Semiconductor投资1000万欧元；这是单笔扩张融资案例。官网另展示30余家组合公司及8家独角兽，但未给出统计日期。",
+          "source_id": "vertex_growth_2025"
+        },
         {
           "description": "融资来源记录：地瓜机器人 · C轮 · 2026-09-17 · 本轮跟投（原有投资机构继续追加投资） · 4亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-517ef1b31eac6dd3"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Vertex Growth",
+          "url": "https://www.vertexgrowth.com/",
+          "source_id": "vertex_growth_profile"
+        },
+        {
+          "kind": "email",
+          "label": "一般联系邮箱",
+          "value": "hello@vertexgrowth.com",
+          "url": "https://www.vertexgrowth.com/",
+          "source_id": "vertex_growth_profile"
+        },
+        {
+          "kind": "phone",
+          "label": "新加坡办公室电话",
+          "value": "+65 6828 8088",
+          "url": "https://www.vertexgrowth.com/",
+          "source_id": "vertex_growth_profile"
+        },
+        {
+          "kind": "address",
+          "label": "新加坡办公室",
+          "value": "250 North Bridge Road, #11-01 Raffles City Tower, Singapore 179101",
+          "url": "https://www.vertexgrowth.com/",
+          "source_id": "vertex_growth_profile"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "vertex_growth_profile",
+          "source_url": "https://www.vertexgrowth.com/",
+          "source_title": "Vertex Growth | Official Website",
+          "source_content_hash": "261897d749f4eb918af546e71a5c9631fb8e5feb6edf8fcc16eb9d69abc51076",
+          "quote": "Vertex Growth Fund is dedicated to partnering with exceptional entrepreneurs and promising companies on the cusp of growth.",
+          "quote_hash": "ab94a4437b595de4211001ac78220728e4eeb687097dcbe61d078822839ac435"
+        },
+        {
+          "source_id": "vertex_growth_2025",
+          "source_url": "https://vertexholdings.com/news/vertex-growth-announces-commitment-of-euro10m-investment-in-dolphin-semiconductor-to-accelerate-growth-strategy/",
+          "source_title": "Vertex Growth announces commitment of €10M investment in Dolphin Semiconductor",
+          "source_content_hash": "79d03caa8abaa07bc9ddbc600d12e38274891b627782cdf31b57f40ba78b9145",
+          "quote": "Vertex Growth, a Singapore-based growth-stage venture capital fund, announced a commitment of €10M in Dolphin Semiconductor.",
+          "quote_hash": "978449690195c35d42458fc0350a31ac42866ba0f2d1388862498b379dadafe8"
+        },
+        {
+          "source_id": "vertex_holdings_structure",
+          "source_url": "https://vertexholdings.com/news/vertex-holdings-appoints-dilhan-pillay-sandrasegara-as-chairman-reports-strong-fy2025-performance/",
+          "source_title": "Vertex Holdings: FY2025 performance and fund structure",
+          "source_content_hash": "2816b57377b795c16fbc071eaa4cd1ab652dcaed516ee5a257454c84a53b11df",
+          "quote": "Each Vertex fund operates independently, with separate local teams that raise and manage their respective funds.",
+          "quote_hash": "455218b5280ca7e7d7f57edca0e7cff0fe95624bd193ac0a4cd9022f8f15fbc5"
+        },
         {
           "source_id": "FISRC-517ef1b31eac6dd3",
           "source_url": "https://finance.sina.com.cn/roll/2026-09-17/doc-iniscekc4127167.shtml",
@@ -161,7 +273,11 @@
           "quote_hash": "2e695e67eb318bb202681426003226fdafc284ca308890dae2f0111b03fe308e"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "identity_status": "verified",
+      "coverage_note": "基金定位、网站展示数据与联系方式来自Vertex Growth官网；7.6亿美元、30余家和8家独角兽均未标注统计日期，按未注明基准日的官网自报指标展示。Temasek与Vertex Growth之间通过Vertex Holdings连接；未把集团AUM或整体退出业绩归给本基金。",
+      "last_verified_at": "2026-09-26"
     }
   }
 }

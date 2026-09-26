@@ -143,41 +143,86 @@
       }
     },
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "Enrique Lizaso 的来源线索将其与Multiverse Computing（联合创始人兼首席执行官）关联。来源日期：2026-07-29；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
-      "career": [
+      "coverage_status": "researched",
+      "summary": "Enrique Lizaso 是 Multiverse Computing 联合创始人兼 CEO。公司官网列出其数学、计算机工程、医学、博士及 MBA 教育背景，以及银行业、大学教学和创业经历；其 QuIC 职务按官网当前简介记录。",
+      "current_roles": [
         {
           "organization": "Multiverse Computing",
           "title": "联合创始人兼首席执行官",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将Enrique Lizaso与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-fa5aeddf845d651b"
+          "source_id": "multiverse_team"
+        },
+        {
+          "organization": "European Quantum Industry Consortium (QuIC)",
+          "title": "司库、领导团队及理事会成员；共同牵头 SMEs & Funding 工作组",
+          "source_id": "multiverse_team"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
+      "career": [
+        {
+          "organization": "Multiverse Computing",
+          "title": "联合创始人兼 CEO",
+          "period": "公司官网现列；任职起始时间未披露",
+          "description": "负责量子计算与 AI 模型压缩软件企业的经营管理。",
+          "source_id": "multiverse_team"
+        },
+        {
+          "organization": "Unnim Bank",
+          "title": "副首席执行官",
+          "period": "曾任；具体时间未披露",
+          "description": "公司官网称其在金融和银行领域拥有二十余年经验。",
+          "source_id": "multiverse_team"
+        },
+        {
+          "organization": "Universitat Autònoma de Barcelona",
+          "title": "工程、机电、统计、金融与市场营销领域大学教师",
+          "period": "曾任；具体时间未披露",
+          "description": "任教方向按公司官网公开简介列示。",
+          "source_id": "multiverse_team"
+        },
+        {
+          "organization": "BlockTac；OmnixHealth",
+          "title": "创业者",
+          "period": "曾参与创办；具体时间未披露",
+          "description": "公司官网将其创业经历分别关联区块链和国际健康保险领域。",
+          "source_id": "multiverse_team"
+        }
+      ],
+      "education": [
+        {
+          "institution": "University of Barcelona",
+          "qualification": "数学学士及博士",
+          "source_id": "multiverse_team"
+        },
+        {
+          "institution": "UNED",
+          "qualification": "计算机工程",
+          "source_id": "multiverse_team"
+        },
+        {
+          "institution": "University of Navarra",
+          "qualification": "医学博士（M.D.）",
+          "source_id": "multiverse_team"
+        },
+        {
+          "institution": "IESE Business School",
+          "qualification": "工商管理硕士（MBA）",
+          "source_id": "multiverse_team"
+        }
+      ],
+      "experience_summary": "兼具银行金融、大学教学与创业经历；现参与欧洲量子产业协会 QuIC 的治理和中小企业融资工作。",
       "track_record": [],
       "sources": [
         {
-          "source_id": "FISRC-fa5aeddf845d651b",
-          "source_url": "https://www.globenewswire.com/news-release/2026/07/27/3333282/0/en/Multiverse-Computing-Announces-Series-C-Fundraising-Targeting-up-to-570M-500M-to-Power-Efficient-AI-from-Edge-to-Cloud.html",
-          "source_title": "融资披露来源",
-          "source_content_hash": "070cd1b0f627dcdf",
-          "quote": "Enrique Lizaso, co-founder and CEO of Multiverse Computing",
-          "quote_hash": "92b9ef29e6b893ca973dd0e15f67a762caa945f3f0dde8fa1fc285f1875c541a"
-        },
-        {
-          "source_id": "FISRC-ec66bd3ab9da8317",
-          "source_url": "https://multiversecomputing.com/resources/multiverse-computing-announces-series-c-fundraising-targeting-up-to-usd570m-eur500m-to-power",
-          "source_title": "融资披露来源",
-          "source_content_hash": "c6efbd1a58ae661a",
-          "quote": "Enrique Lizaso, co-founder and CEO of Multiverse Computing",
-          "quote_hash": "92b9ef29e6b893ca973dd0e15f67a762caa945f3f0dde8fa1fc285f1875c541a"
+          "source_id": "multiverse_team",
+          "source_url": "https://multiversecomputing.com/our-team",
+          "source_title": "Our company — Multiverse Computing",
+          "source_content_hash": "f7e314209b4d3f32222d6c7555de3803dbae2d9fa2b0071e5a3bbf8b498674ca",
+          "quote": "Enrique Lizaso is Founder and CEO of Multiverse Computing. He is Treasurer, a member of the Leadership Team and Governing Board of the European Quantum Industry Consortium (QuIC), and co-leads its SMEs & Funding Workgroup. He holds degrees in mathematics, computer engineering, medicine, a PhD and an MBA; he was Deputy CEO of Unnim Bank and has more than 20 years of finance and banking experience. He previously founded BlockTac and OmnixHealth.",
+          "quote_hash": "6b7c4e308efe1ddc34f9ad590a20d493f9c451200f9992586ac3b49d1031aa37"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
     }
   },
   "relatedEntities": [],

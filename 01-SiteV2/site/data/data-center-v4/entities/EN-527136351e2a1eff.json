@@ -111,33 +111,70 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "马骏 的来源线索将其与睿心医疗（联合创始人&CTO）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "马骏是睿心医疗CTO、联合创始人，拥有清华大学本科及约翰斯·霍普金斯大学博士背景。公司官方介绍称其曾在GE、西门子和达芬奇手术机器人相关团队任职，后受聘中国科学院深圳先进技术研究院，工作聚焦手术机器人、深度学习和医学图像处理。",
+      "current_roles": [
+        {
+          "title": "CTO、联合创始人（公司官网）",
+          "organization": "深圳睿心智能医疗科技有限公司",
+          "source_id": "majun_surgiplan_official"
+        }
+      ],
       "career": [
         {
-          "organization": "睿心医疗",
-          "title": "联合创始人&CTO",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-747fad60c39e1d5f"
+          "organization": "GE、西门子",
+          "title": "工程/研发任职（公司官网概述）",
+          "period": "具体职务及年份未披露",
+          "description": "官网称其曾先后就职于GE和西门子，未提供具体团队或任职起止时间。",
+          "source_id": "majun_surgiplan_official"
+        },
+        {
+          "organization": "Intuitive Surgical（达芬奇手术机器人）",
+          "title": "算法研发（公司官网概述）",
+          "period": "年份未披露",
+          "description": "官网称其在达芬奇期间负责新款Da Vinci Ion的人工智能和影像引导手术算法。",
+          "source_id": "majun_surgiplan_official"
+        },
+        {
+          "organization": "中国科学院深圳先进技术研究院",
+          "title": "受聘人员",
+          "period": "年份及具体岗位未披露",
+          "description": "睿心医疗官网称其受聘于该院，未说明具体岗位及在职状态。",
+          "source_id": "majun_surgiplan_official"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "清华大学",
+          "qualification": "本科；专业及毕业年份未披露",
+          "source_id": "majun_surgiplan_official"
+        },
+        {
+          "institution": "约翰斯·霍普金斯大学",
+          "qualification": "博士；专业及毕业年份未披露",
+          "source_id": "majun_surgiplan_official"
+        }
+      ],
+      "experience_summary": "经历横跨医疗器械研发、手术机器人算法与医疗AI创业；具体前雇主职务及任期未公开。",
+      "track_record": [
+        {
+          "description": "睿心医疗官网称其拥有10多年手术机器人、深度学习及图像处理经验，并参与Da Vinci Ion人工智能和影像引导手术算法研发。",
+          "source_id": "majun_surgiplan_official"
+        }
+      ],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "学历、任职概述和技术经历来自睿心医疗官网团队介绍；该一手来源未披露前雇主精确职务、任期或学历年份。",
       "sources": [
         {
-          "source_id": "FISRC-747fad60c39e1d5f",
-          "source_url": "https://pitchhub.36kr.com/project/1679658712355584",
-          "source_title": "融资披露来源",
-          "source_content_hash": "0b7672f34e03f8984b41abefde90e31216413aaea38cdb9ea7ac3da2140926be",
-          "quote": "马骏 联合创始人&CTO",
-          "quote_hash": "79e06b7984dd9dda2530bdbb7722324aacf9487016047e8368cb9ff1a23cd0e5"
+          "source_id": "majun_surgiplan_official",
+          "source_url": "https://www.surgi-plan.com/company/view?id=373",
+          "source_title": "关于睿心 / 睿心团队 - 深圳睿心智能医疗科技有限公司",
+          "source_content_hash": "f33f24e60e02ef827af6d349e7e940e90286851fed8c97df2b7abed2c0cde0e8",
+          "quote": "睿心医疗官网列马骏为CTO、联合创始人，称其清华本科、约翰斯·霍普金斯大学博士，曾就职于GE、西门子及达芬奇手术机器人相关团队，受聘中国科学院深圳先进技术研究院，拥有10多年手术机器人、深度学习与图像处理经验。",
+          "quote_hash": "ce5e68d39b3adc2eaf7ef76028c6641a3cb65e6901389f1ae2478d8e329fade2"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

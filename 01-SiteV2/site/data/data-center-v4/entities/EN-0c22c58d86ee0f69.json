@@ -111,33 +111,59 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "张文广 的来源线索将其与星迹互动（创始人）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "张文广是星迹互动创始人兼CEO，曾任二更联合创始人及微梦传媒高级副总裁。36氪融资报道介绍星迹互动在AI影视、IP开发运营方面的业务，并称公司核心团队参与AI影片制作；未披露张文广学历和这些项目的个人具体分工。",
+      "current_roles": [
+        {
+          "title": "创始人兼CEO",
+          "organization": "星迹互动",
+          "source_id": "zhang_wenguang_36kr"
+        }
+      ],
       "career": [
         {
+          "organization": "二更",
+          "title": "联合创始人",
+          "period": "加入星迹互动之前；年份未披露",
+          "description": "36氪融资报道将其列为二更联合创始人。",
+          "source_id": "zhang_wenguang_36kr"
+        },
+        {
+          "organization": "微梦传媒",
+          "title": "高级副总裁",
+          "period": "加入星迹互动之前；年份未披露",
+          "description": "36氪融资报道提及其曾任微梦传媒高级副总裁。",
+          "source_id": "zhang_wenguang_36kr"
+        },
+        {
           "organization": "星迹互动",
-          "title": "创始人",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将张文广与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-467859f48eda89e6"
+          "title": "创始人兼CEO",
+          "period": "公司成立于2025年；2026年4月报道时在任",
+          "description": "带领公司开展AI驱动的IP开发运营、AI影视内容制作与出海业务。",
+          "source_id": "zhang_wenguang_36kr"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
-      "sources": [
+      "experience_summary": "职业背景涵盖短视频内容创业、媒体管理及AI数字文娱创业；公开资料未提供学历、具体任职年份。",
+      "track_record": [
         {
-          "source_id": "FISRC-467859f48eda89e6",
-          "source_url": "https://news.pedaily.cn/202604/563258.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "c167e175fb9c1a9a",
-          "quote": "星迹互动创始人张文广是连续创业者，曾是二更联合创始人、微梦传媒高级副总裁",
-          "quote_hash": "e158afbe10c1145908f1145889ac674a76eb6d2041c9dc8f116d62720baf3f4e"
+          "description": "36氪报道星迹互动2025年实现百万元以上收入，并称2026年目标为千万元级收入；均为报道披露的公司经营口径，不视为审计数据。",
+          "source_id": "zhang_wenguang_36kr"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "sources": [
+        {
+          "source_id": "zhang_wenguang_36kr",
+          "source_url": "https://www.sohu.com/a/1015473651_114778",
+          "source_title": "36氪：用AI做IP，星迹互动完成天使轮融资",
+          "source_content_hash": "1b43def6325968ce59089f2ae7fd2f2bfa6d0a9b0df584e1569e34e20e6a8653",
+          "quote": "36氪报道张文广为星迹互动创始人，曾任二更联合创始人和微梦传媒高级副总裁。",
+          "quote_hash": "fd4733c0b3a4e4a2ca8fa4d518c4bd6d0f24a6cf82314fb4f3425c82cb404d2f"
+        }
+      ],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "职业经历来自36氪融资报道；营收及发展数据保留为公司/媒体披露口径，未添加无来源个人信息。",
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

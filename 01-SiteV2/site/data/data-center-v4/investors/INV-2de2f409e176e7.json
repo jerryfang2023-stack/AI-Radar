@@ -290,13 +290,37 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "凯辉基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "凯辉基金官网称其成立于2006年，在四大洲投资近300家企业，并将业务定位为连接资本、产业资源和企业成长。管理规模、投资企业数量等均为官网自述；“凯辉基金”融资记录未必能确认到旗下某一具体基金或关联法人。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2006年（官网资料）",
+          "source_id": "cathay_about"
+        },
+        {
+          "field": "aum_self_reported",
+          "label": "累计管理规模（官网自述）",
+          "value": "超过60亿欧元；官方页面未在本次引用中说明统计口径或时点。",
+          "source_id": "cathay_about"
+        },
+        {
+          "field": "portfolio_self_reported",
+          "label": "投资企业与地域（官网自述）",
+          "value": "官网称在四大洲投资近300家企业；属于机构自述，不是收益或退出表现。",
+          "source_id": "cathay_about"
+        }
+      ],
       "milestones": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "官网介绍其通过资本与产业生态支持企业国际化、数字化转型和跨区域发展；凯辉旗下业务品牌包括私募股权与风险投资，公开融资披露中的具体关联主体需逐轮核对。",
       "track_record": [
+        {
+          "description": "官网自述在四大洲投资近300家企业；该数字是投资覆盖规模披露，不代表基金回报、退出率或完整组合。",
+          "source_id": "cathay_about"
+        },
         {
           "description": "融资来源记录：地瓜机器人 · C轮 · 2026-09-17 · 本轮参投 · 4亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-517ef1b31eac6dd3"
@@ -310,8 +334,53 @@
           "source_id": "FISRC-2707f48aa6e437b7"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "label": "总部联系电话",
+          "value": "+33 1 42 25 28 00",
+          "url": "https://www.cathaycapital.com/cn/our-obsession/",
+          "source_id": "cathay_contact"
+        },
+        {
+          "kind": "email",
+          "label": "总部联系邮箱",
+          "value": "contact@cathay.fr",
+          "url": "https://www.cathaycapital.com/cn/our-obsession/",
+          "source_id": "cathay_contact"
+        },
+        {
+          "kind": "address",
+          "label": "巴黎办公室",
+          "value": "52 Rue d’Anjou, 75008 Paris, France",
+          "url": "https://www.cathaycapital.com/cn/our-obsession/",
+          "source_id": "cathay_contact"
+        },
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "cathaycapital.com",
+          "url": "https://www.cathaycapital.com/cn/our-obsession/",
+          "source_id": "cathay_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "cathay_about",
+          "source_url": "https://www.cathaycapital.com/cn/our-obsession/",
+          "source_title": "Cathay Capital - 为何选择凯辉",
+          "source_content_hash": "f85b4b42e61074094703c63c47a0bc5d1b4dff2ac89cac410504eadea5cfb029",
+          "quote": "凯辉基金创立于2006年，目前累计管理规模超60亿欧元，已在四大洲投资近300家企业。",
+          "quote_hash": "dff091d88c6bd79326bb953294ec3d434235a7342b88b435832eee86a1f9bddb"
+        },
+        {
+          "source_id": "cathay_contact",
+          "source_url": "https://www.cathaycapital.com/cn/our-obsession/",
+          "source_title": "Cathay Capital - 为何选择凯辉",
+          "source_content_hash": "f85b4b42e61074094703c63c47a0bc5d1b4dff2ac89cac410504eadea5cfb029",
+          "quote": "+33 1 42 25 28 00；contact@cathay.fr；52 Rue d’Anjou, 75008 Paris, France。",
+          "quote_hash": "33ceabe3aff7a57b3523c0512cfcec6c16bcd183453d5427462b2813ec0d1381"
+        },
         {
           "source_id": "FISRC-517ef1b31eac6dd3",
           "source_url": "https://finance.sina.com.cn/roll/2026-09-17/doc-iniscekc4127167.shtml",
@@ -337,7 +406,10 @@
           "quote_hash": "f1ac7ba61a81f0b508053b00072c9796e40b7d27a78bb01f6c2a48f4cbfeffc1"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

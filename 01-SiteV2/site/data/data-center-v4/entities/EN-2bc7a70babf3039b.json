@@ -111,33 +111,40 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "王成江 的来源线索将其与容芯致远（首席执行官）关联。来源日期：2026-08-03；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "王成江是容芯致远CEO。深圳市人工智能产业协会走访报道介绍其接待协会考察并参与智能芯片企业交流；报道描述公司研发RISC-V智算架构、GPU高可用和国产AI一体机。其个人教育背景及过往任职尚未找到可靠来源。",
+      "current_roles": [
+        {
+          "title": "CEO",
+          "organization": "容芯致远",
+          "source_id": "wang_szaic"
+        }
+      ],
       "career": [
         {
           "organization": "容芯致远",
-          "title": "首席执行官",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将王成江与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-83b43ce2cb476c45"
+          "title": "CEO",
+          "period": "2026年8月协会报道时在任",
+          "description": "公开活动报道记录其以CEO身份参与企业接待和产业交流。",
+          "source_id": "wang_szaic"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
+      "experience_summary": "现有资料仅确认其担任容芯致远CEO；公司研发路线和产品信息属于机构资料，未作为个人成绩归因。",
       "track_record": [],
       "sources": [
         {
-          "source_id": "FISRC-83b43ce2cb476c45",
-          "source_url": "https://www.163.com/dy/article/K02OO3PV05118HJE.html",
-          "source_title": "融资披露来源",
-          "source_content_hash": "953eb679f5401cea95eafdc844dd5e606986a9c3c34bc0851738d8fa27b89d14",
-          "quote": "容芯致远CEO 王成江表示",
-          "quote_hash": "1a6ddb73417eb0dd5a3c0b441d37381f24e2e91d980763823fcfeb43c93e4450"
+          "source_id": "wang_szaic",
+          "source_url": "https://www.szaicx.com/xhhd/23610.html",
+          "source_title": "深圳市人工智能产业协会：走访容芯致远",
+          "source_content_hash": "5b8e84e2e50e404f07fc0e45a31cb0c89c235f871a3303e85570d56a8c9cd4ab",
+          "quote": "深圳市人工智能产业协会报道将王成江列为容芯致远CEO，并记载其参与协会走访交流。",
+          "quote_hash": "7aa15a68ad6c6303c0fc4011eb80e72be89717bd6656026fcb67a4bbd4ba3f37"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "以行业协会公开活动核实当前职务；公司技术成果不个人化，其他履历待公开来源补充。",
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

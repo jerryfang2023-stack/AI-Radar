@@ -111,33 +111,72 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "李广宇 的来源线索将其与鲸跃动力（首席执行官）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "李广宇是鲸跃动力创始人兼 CEO。36氪报道介绍其毕业于南加州大学电子工程系，曾任北京人形机器人创新中心具身数据与灵巧操作负责人，并在滴滴、轻舟智航参与自动驾驶数据闭环与仿真系统建设。履历细节来自企业提供的团队资料经媒体报道，公开材料未列出任职年份。",
+      "current_roles": [
+        {
+          "title": "创始人兼 CEO（媒体报道）",
+          "organization": "鲸跃动力",
+          "source_id": "liguangyu_36kr"
+        }
+      ],
       "career": [
         {
+          "organization": "北京人形机器人创新中心",
+          "title": "具身数据与灵巧操作负责人",
+          "period": "任职年份未披露",
+          "description": "36氪报道的企业团队资料称其从 0 到 1 组建具身数据及灵巧操作团队，并参与 RoboMIND 数据集和慧思开物具身智能体项目。",
+          "source_id": "liguangyu_36kr"
+        },
+        {
+          "organization": "滴滴",
+          "title": "自动驾驶数据闭环及仿真系统相关工作",
+          "period": "任职年份及职级未披露",
+          "description": "36氪报道的团队介绍称其参与建设百万级自动驾驶数据闭环与仿真系统。",
+          "source_id": "liguangyu_36kr"
+        },
+        {
+          "organization": "轻舟智航",
+          "title": "自动驾驶数据闭环及仿真系统相关工作",
+          "period": "任职年份及职级未披露",
+          "description": "36氪报道的团队介绍称其曾在轻舟智航主导相关系统建设，未披露具体任期。",
+          "source_id": "liguangyu_36kr"
+        },
+        {
           "organization": "鲸跃动力",
-          "title": "首席执行官",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将李广宇与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-a613b9328225b67f"
+          "title": "创始人兼 CEO",
+          "period": "报道发表于 2026 年；创立日期未在该来源精确说明",
+          "description": "36氪融资报道将其称为公司创始人兼 CEO。",
+          "source_id": "liguangyu_36kr"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "南加州大学",
+          "qualification": "电子工程系毕业；具体学位和年份未披露",
+          "source_id": "liguangyu_36kr"
+        }
+      ],
+      "experience_summary": "其公开履历横跨自动驾驶数据闭环、具身数据与灵巧操作，以及具身机器人创业；任职时间和完整职位名称未公开。",
+      "track_record": [
+        {
+          "description": "36氪报道的企业团队资料称其参与搭建 RoboMIND 多模态具身数据集、慧思开物具身智能体，以及自动驾驶数据闭环与仿真系统；作为媒体转述的企业资料记录，不代表独立审计。",
+          "source_id": "liguangyu_36kr"
+        }
+      ],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "教育与过往经历来自 36氪对企业团队资料的报道；任职年份、职级边界和项目贡献尚无独立一手文件交叉验证。",
       "sources": [
         {
-          "source_id": "FISRC-a613b9328225b67f",
-          "source_url": "https://news.pedaily.cn/202605/564081.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "3768fe22ceabbf98",
-          "quote": "鲸跃动力CEO李广宇博士毕业于美国南加州大学（USC）电子工程系，曾任北京人形机器人创新中心具身数据与灵巧操作负责人",
-          "quote_hash": "1b3931b67b3f905dcc1a3f82e78a9b8a8b880ceb351081b9e65aaddd55807a12"
+          "source_id": "liguangyu_36kr",
+          "source_url": "https://www.36kr.com/p/3814860909600261",
+          "source_title": "鲸跃动力获星海图数千万元种子轮投资，用「数据+模型+末端执行」打造开箱即用的Robo Labor丨涌现新项目 - 36氪",
+          "source_content_hash": "77fd47b7409d6287eecd67a102eaa5fda6b583b173cea786da90939f3384c671",
+          "quote": "36氪报道将李广宇称为鲸跃动力创始人兼 CEO，称其毕业于南加州大学电子工程系，曾任北京人形机器人创新中心具身数据与灵巧操作负责人，并在滴滴、轻舟智航从事自动驾驶数据闭环和仿真系统工作；报道说明团队资料由企业提供。",
+          "quote_hash": "67720f151e1ebe6ab0cfa3ab4a45310e6fa14c945484aa91642c06afd5332e1b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

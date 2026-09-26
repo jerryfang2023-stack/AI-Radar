@@ -130,21 +130,130 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "阿米巴资本 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "阿米巴资本成立于2011年，官网将其定位为专注中国企业服务和新一代信息技术的“行业内基金”，投资阶段覆盖早期至成长期，领域包括AI、SaaS、医疗、教育、新能源等。官网展示的历史项目包括滴滴快的、蘑菇街、聚水潭等。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2011年",
+          "source_id": "ameba_about"
+        },
+        {
+          "field": "management_entity_reference",
+          "label": "官网所述发起主体",
+          "value": "上海阿米巴佰晖创业投资合伙企业（有限合伙）",
+          "source_id": "ameba_about"
+        },
+        {
+          "field": "investment_stages",
+          "label": "投资阶段",
+          "value": [
+            "早期",
+            "成长期"
+          ],
+          "source_id": "ameba_about"
+        },
+        {
+          "field": "fund_positioning",
+          "label": "官网定位",
+          "value": "行业内基金；面向中国企业服务及新一代信息技术创业企业",
+          "source_id": "ameba_about"
+        },
+        {
+          "field": "focus_sectors",
+          "label": "投资方向",
+          "value": [
+            "教育",
+            "医疗",
+            "互联网金融",
+            "人工智能",
+            "大数据",
+            "SaaS",
+            "社交",
+            "广告技术",
+            "企业服务",
+            "新能源"
+          ],
+          "source_id": "ameba_about"
+        },
+        {
+          "field": "portfolio_examples",
+          "label": "官网列示项目",
+          "value": [
+            "滴滴快的",
+            "蘑菇街",
+            "威马汽车",
+            "小药药",
+            "聚水潭",
+            "乐言科技"
+          ],
+          "source_id": "ameba_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2011",
+          "description": "阿米巴资本官网称机构于2011年成立。",
+          "source_id": "ameba_about"
+        }
+      ],
       "track_record": [
+        {
+          "description": "官网列举滴滴快的、蘑菇街、威马汽车、聚水潭等项目作为投资案例；该页面未披露基金回报或项目统计口径。",
+          "source_id": "ameba_about"
+        },
         {
           "description": "融资来源记录：设序科技 · B轮 · 2026-09-17 · 财务投资机构 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-887f1542c828b426"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Ameba Capital 阿米巴资本",
+          "url": "https://www.amebacapital.com/",
+          "source_id": "ameba_contact"
+        },
+        {
+          "kind": "application",
+          "label": "商业计划书投递",
+          "value": "amebacapital@amebacapital.com",
+          "url": "https://www.amebacapital.com/",
+          "source_id": "ameba_contact"
+        },
+        {
+          "kind": "address",
+          "label": "官网列示办公地址",
+          "value": "上海市浦东新区世纪大道8号国金中心二期11楼",
+          "url": "https://www.amebacapital.com/",
+          "source_id": "ameba_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "官网列示联系号码（页面未提供区号）",
+          "value": "60613627",
+          "url": "https://www.amebacapital.com/",
+          "source_id": "ameba_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "ameba_about",
+          "source_url": "https://www.amebacapital.com/",
+          "source_title": "阿米巴资本官方网站",
+          "source_content_hash": "b518826ae73a725eb5616b8e3e6550b756f9a53753d17c17eb5361132df7f6b1",
+          "quote": "阿米巴资本成立于2011年，专注于中国企业服务及新一代信息技术行业的风险投资，阶段覆盖从早期至成长期。",
+          "quote_hash": "9c97c42a3ca121783627dd5db1629b912ce5bac8da54660578e1bcc043b6ab0b"
+        },
+        {
+          "source_id": "ameba_contact",
+          "source_url": "https://www.amebacapital.com/",
+          "source_title": "阿米巴资本官方网站 - 联系方式",
+          "source_content_hash": "b518826ae73a725eb5616b8e3e6550b756f9a53753d17c17eb5361132df7f6b1",
+          "quote": "商业计划书请投递至amebacapital@amebacapital.com。",
+          "quote_hash": "d2d9b7ffa1e2af20cdd62f0ef088057335d5599eff2716e6187c288f446b5eb1"
+        },
         {
           "source_id": "FISRC-887f1542c828b426",
           "source_url": "https://news.pedaily.cn/202609/569177.shtml",
@@ -154,7 +263,11 @@
           "quote_hash": "ec16150a628316289f5c18fc079cff45cffa721e3bf0521dcfa6aa1fa57c8f2f"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "identity_status": "verified",
+      "coverage_note": "背景、投资方向、案例与联系方式来自阿米巴资本官网。官网联系方式中的号码没有标注国家或区号，原样保留；案例是官网列举项目，不代表完整组合或投资回报。",
+      "last_verified_at": "2026-09-26"
     }
   }
 }

@@ -111,33 +111,67 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "苗健彰 的来源线索将其与听象科技（首席执行官）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
-      "career": [
+      "summary": "公开企业档案将苗健彰列为听象科技法定代表人；过往机器听觉创业报道将其列为大象声科创始人兼CEO，并披露其UBC软件工程硕士背景及RBC、IBM任职经历。两家公司为其不同阶段的关联企业，资料不推断其在大象声科仍任职。",
+      "current_roles": [
         {
-          "organization": "听象科技",
-          "title": "首席执行官",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将苗健彰与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-a70066d2f0bb1189"
+          "title": "法定代表人",
+          "organization": "听象科技（深圳）有限公司",
+          "source_id": "pedaily_miao"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
+      "career": [
+        {
+          "organization": "大象声科",
+          "title": "创始人兼CEO",
+          "period": "2018年报道时点",
+          "description": "投资报道中的早期创业与管理经历；任期未披露。",
+          "source_id": "pencilnews_miao"
+        },
+        {
+          "organization": "听象科技（深圳）有限公司",
+          "title": "法定代表人",
+          "period": "2023年公司登记",
+          "description": "投资界公司档案所列工商身份，不等同于CEO职务。",
+          "source_id": "pedaily_miao"
+        },
+        {
+          "organization": "RBC、IBM",
+          "title": "曾任职；职级未披露",
+          "period": "任期未披露",
+          "description": "大象声科创业报道所载此前工作经历。",
+          "source_id": "pencilnews_miao"
+        }
+      ],
+      "education": [
+        {
+          "institution": "University of British Columbia",
+          "qualification": "软件工程硕士",
+          "source_id": "pencilnews_miao"
+        }
+      ],
+      "experience_summary": "苗健彰的职业经历覆盖机器听觉及助听设备创业；现有来源支持听象科技工商身份和较早的大象声科创业经历，不能据此确认当前经营职务。",
       "track_record": [],
       "sources": [
         {
-          "source_id": "FISRC-a70066d2f0bb1189",
-          "source_url": "https://www.baijing.cn/article/55956",
-          "source_title": "融资披露来源",
-          "source_content_hash": "237a8f73da6a6da5a197c64d5f7edab4772a61f88e1e2d6586ce3755a4061727",
-          "quote": "对话嘉宾： 听象科技 （ 深圳 ） 有限公司 CEO 苗健彰",
-          "quote_hash": "57ec8733287bcae5c26c75f8570460ad4432dd0ec54d86189c8baa9372d11027"
+          "source_id": "pedaily_miao",
+          "source_url": "https://m.pedaily.cn/vc/company/701281.html",
+          "source_title": "听象科技_投资界",
+          "source_content_hash": "e859f11362ec3d477d61424c3f269bbd440783de4b93a9468b41ebf7444ffa30",
+          "quote": "听象科技（深圳）有限公司成立于2023年09月27日，法定代表人苗健彰。",
+          "quote_hash": "d0f940b7014c3a7d610cae080a9f8a821b73e7707cdf1813f06328da1fbf6534"
+        },
+        {
+          "source_id": "pencilnews_miao",
+          "source_url": "https://www.pencilnews.cn/p/19899.html",
+          "source_title": "机器听觉解决方案供应商“大象声科”获小米和高通创投数千万元战略投资",
+          "source_content_hash": "f8afb782add82da1cfb62110c1b763669a9d4922a5d593a94f6e30381f0abd20",
+          "quote": "大象声科创始人兼CEO苗健彰，UBC软件工程学硕士毕业，曾就职于RBC、IBM。",
+          "quote_hash": "3b684987862511585ee1c21ac26601b4b37d067c7e42d9007f5e720c0720997f"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
     }
   },
   "relatedEntities": [],

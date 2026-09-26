@@ -111,33 +111,82 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "丁文超 的来源线索将其与它石智航（首席科学家）关联。来源日期：2026-08-03；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "丁文超是具身智能研究者及创业者，现任复旦大学智能机器人与先进制造创新学院青年研究员、博士生导师，并担任它石智航（TARS）联合创始人兼首席科学家。此前在华为车 BU 从事智能驾驶预测决策，参与 ADS 1.0 与 2.0 研发，提出的预测决策耦合技术应用于北汽、问界等车型。",
+      "current_roles": [
+        {
+          "title": "青年研究员、博士生导师",
+          "organization": "复旦大学智能机器人与先进制造创新学院",
+          "source_id": "ding_fudan"
+        },
+        {
+          "title": "联合创始人、首席科学家",
+          "organization": "它石智航（TARS）",
+          "source_id": "ding_fudan"
+        }
+      ],
       "career": [
         {
-          "organization": "它石智航",
-          "title": "首席科学家",
-          "period": "来源记录于 2026-08-03；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "SA-f8446ff64460fec9"
+          "organization": "华为车 BU（智能汽车解决方案 BU）",
+          "title": "预测领域技术专家",
+          "period": "2020—2023",
+          "description": "参与华为 ADS 1.0 与 ADS 2.0 智能驾驶系统研发，研究预测决策耦合算法并推动技术在量产车型应用。",
+          "source_id": "ding_fudan"
+        },
+        {
+          "organization": "复旦大学智能机器人与先进制造创新学院",
+          "title": "青年研究员、博士生导师",
+          "period": "2023—资料更新至 2026-09",
+          "description": "开展具身智能与物理 AI 研究，指导研究生并推动相关算法在实体机器人平台验证。",
+          "source_id": "ding_fudan"
+        },
+        {
+          "organization": "它石智航（TARS）",
+          "title": "联合创始人、首席科学家",
+          "period": "资料更新至 2026-09；公司成立日期未在该来源中明确",
+          "description": "提出以人为中心的数据采集范式与 AI 世界引擎具身模型 AWE，推动具身模型在工业场景中的应用。",
+          "source_id": "ding_fudan"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "华中科技大学",
+          "qualification": "电子信息专业本科，2015 年毕业",
+          "source_id": "ding_fudan"
+        },
+        {
+          "institution": "香港科技大学",
+          "qualification": "博士（2015 年本科毕业后直博；来源未注明毕业年份）",
+          "source_id": "ding_fudan"
+        }
+      ],
+      "experience_summary": "研究方向从无人机、自动驾驶延展至具身智能与物理 AI。曾参与华为智能驾驶系统研发并推动算法量产；加入复旦后开展数据驱动决策研究，创业阶段聚焦以人类交互数据训练可在真实环境工作的机器人。",
+      "track_record": [
+        {
+          "description": "复旦大学 2026 年人物报道记载其预测决策耦合算法实现量产并应用于北汽、问界等车型。",
+          "source_id": "ding_fudan"
+        },
+        {
+          "description": "2026 年复旦大学报道记载其入选《麻省理工科技评论》2025 年度 TR35 中国区名单“发明家”类别。",
+          "source_id": "ding_fudan"
+        },
+        {
+          "description": "带领团队提出以人为中心的具身数据采集方法与 AI World Engine（AWE），并开发可穿戴数据采集设备 SenseHub。",
+          "source_id": "ding_fudan"
+        }
+      ],
       "sources": [
         {
-          "source_id": "SA-f8446ff64460fec9",
-          "source_url": "https://www.qbitai.com/2026/04/402388.html",
-          "source_title": "融资披露来源",
-          "source_content_hash": "bd91f8b1551d98d1",
-          "quote": "它石首席科学家丁文超直言",
-          "quote_hash": "93c04749e3e7b44179e3e2d37c1add13932c1771cf4f47d8c58e18b6dfe1fdba"
+          "source_id": "ding_fudan",
+          "source_url": "https://news.fudan.edu.cn/2026/0918/c31a150381/page.htm",
+          "source_title": "一年融资数十亿！90后的他加入复旦再创业-复旦大学",
+          "source_content_hash": "e26afc40697a8aabf75552ed4b438d97e6ed0c32ff502b008bd3f47b63d76821",
+          "quote": "复旦大学2026年报道记载：丁文超2015年本科毕业于华中科技大学电子信息专业，随后直博香港科技大学；2020年加入华为车BU参与ADS研发，2023年加入复旦，并任它石智航联合创始人兼首席科学家。",
+          "quote_hash": "566b9d5a2bd50e5f142f290215e42603f3590f22cee64a45ef3307a7decac91d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
     }
   },
   "relatedEntities": [],

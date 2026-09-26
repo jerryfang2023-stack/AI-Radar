@@ -114,33 +114,74 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "吴育昕 的来源线索将其与Moonshot AI（联合创始人）关联。来源日期：2026-06-09；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "吴育昕（Yuxin Wu）是计算机视觉与深度学习研究者，目前在 Moonshot AI 从事基础模型研发。其个人学术主页记载曾任 Google Brain 与 Facebook AI Research 研究人员，拥有清华大学计算机学士及卡内基梅隆大学计算机视觉硕士学位，并创建了 Detectron2。成果及经历由本人主页披露；Moonshot AI 当前职务尚未由公司官网团队页独立确认。",
+      "current_roles": [
+        {
+          "title": "基础模型研发人员（本人主页表述）",
+          "organization": "Moonshot AI",
+          "source_id": "wuyuxin_home"
+        }
+      ],
       "career": [
         {
+          "organization": "Facebook AI Research",
+          "title": "计算机视觉研究人员",
+          "period": "截至加入 Google Brain 之前；具体任期未披露",
+          "description": "本人主页将其列为既往研究经历。",
+          "source_id": "wuyuxin_home"
+        },
+        {
+          "organization": "Google Brain",
+          "title": "基础模型研究人员",
+          "period": "加入 Moonshot AI 之前；具体任期未披露",
+          "description": "本人主页称其曾在 Google Brain 从事基础模型研究。",
+          "source_id": "wuyuxin_home"
+        },
+        {
           "organization": "Moonshot AI",
-          "title": "联合创始人",
-          "period": "来源记录于 2026-06-09；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-b8e88335555103fa"
+          "title": "基础模型研发",
+          "period": "截至个人主页最近更新",
+          "description": "本人主页写明目前在 Moonshot AI 构建基础模型。",
+          "source_id": "wuyuxin_home"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "清华大学",
+          "qualification": "计算机科学学士，2015 年",
+          "source_id": "wuyuxin_home"
+        },
+        {
+          "institution": "卡内基梅隆大学",
+          "qualification": "计算机视觉硕士，2016 年",
+          "source_id": "wuyuxin_home"
+        }
+      ],
+      "experience_summary": "研究方向涵盖计算机视觉、深度学习研究基础设施和基础模型。其公开经历横跨清华、Facebook AI Research、Google Brain 与 Moonshot AI。",
+      "track_record": [
+        {
+          "description": "创建 Detectron2 计算机视觉项目；本人主页称其支持 Meta 多项产品与服务。",
+          "source_id": "wuyuxin_home"
+        },
+        {
+          "description": "本人主页记载其合作论文获 ECCV 2018 最佳论文荣誉提名、CVPR 2020 最佳论文提名及 ICCV 2021 Mark Everingham Prize；成果应视为共同作者/项目团队成果。",
+          "source_id": "wuyuxin_home"
+        }
+      ],
+      "coverage_status": "researched",
+      "identity_status": "verified",
+      "coverage_note": "资料以本人学术主页为主，页面列出的教育与研究经历较完整；Moonshot AI 职务为本人主页自述，未找到该公司公开的团队名录作独立交叉确认。",
       "sources": [
         {
-          "source_id": "FISRC-b8e88335555103fa",
-          "source_url": "https://www.nbd.com.cn/articles/2024-02-27/3258628.html",
-          "source_title": "融资披露来源",
-          "source_content_hash": "eb8029378bcbcc612ea2a13d8a7ace1e789dee0ab8e41dcfa1965d5c810c69ac",
-          "quote": "月之暗面的两位联合创始人周昕宇和吴育昕也均出身清华大学",
-          "quote_hash": "de3f6de8132784fd1f87e98e0dd8199c30794449370839557aaab315afb3c042"
+          "source_id": "wuyuxin_home",
+          "source_url": "https://www.ppwwyyxx.com/",
+          "source_title": "Yuxin Wu — Personal Homepage",
+          "source_content_hash": "66822110a2dcf8500c2203b4400414db3f2796acf3fc666570cf0cdef65f6e7d",
+          "quote": "I’m building foundation models at Moonshot AI. Prior to this, I worked at Google Brain and Facebook AI Research. I received a master’s from Carnegie Mellon University and a bachelor’s from Tsinghua University.",
+          "quote_hash": "d5b5900077762f57eb642eaa12e8f46ba2ec878236d4cd899a3b76cd1aaf18f2"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

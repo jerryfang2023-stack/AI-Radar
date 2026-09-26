@@ -111,33 +111,70 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "谢晨 的来源线索将其与光轮智能（创始人）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "谢晨是光轮智能创始人兼CEO，具有北京大学物理专业本科及哥伦比亚大学数量金融博士背景。本人访谈介绍其曾在Cruise和英伟达负责自动驾驶仿真相关业务，2023年创立光轮智能，探索仿真与合成数据在具身智能中的应用。",
+      "current_roles": [
+        {
+          "title": "创始人、CEO",
+          "organization": "光轮智能",
+          "source_id": "xiechen_bydrug"
+        }
+      ],
       "career": [
         {
+          "organization": "Cruise",
+          "title": "自动驾驶仿真相关业务负责人",
+          "period": "任期未披露",
+          "description": "本人访谈中说明曾负责自动驾驶仿真业务。",
+          "source_id": "xiechen_bydrug"
+        },
+        {
+          "organization": "NVIDIA",
+          "title": "自动驾驶仿真相关业务负责人",
+          "period": "任期未披露",
+          "description": "本人访谈中说明曾负责自动驾驶仿真业务。",
+          "source_id": "xiechen_bydrug"
+        },
+        {
           "organization": "光轮智能",
-          "title": "创始人",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将谢晨与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "SA-e7d4f386a751ef2c"
+          "title": "创始人、CEO",
+          "period": "2023年起",
+          "description": "将仿真与合成数据应用于具身智能及机器人训练。",
+          "source_id": "xiechen_bydrug"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "北京大学",
+          "qualification": "物理学本科",
+          "source_id": "xiechen_bydrug"
+        },
+        {
+          "institution": "哥伦比亚大学",
+          "qualification": "数量金融博士",
+          "source_id": "xiechen_bydrug"
+        }
+      ],
+      "experience_summary": "融合物理、数量金融、自动驾驶仿真和合成数据经历，长期从事自动驾驶与机器人仿真相关工作。",
+      "track_record": [
+        {
+          "description": "2023年创立光轮智能，访谈中介绍其合成数据服务客户及公司技术方向；客户名单和业务成效为本人公开陈述。",
+          "source_id": "xiechen_bydrug"
+        }
+      ],
       "sources": [
         {
-          "source_id": "SA-e7d4f386a751ef2c",
-          "source_url": "https://news.pedaily.cn/202603/561585.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "668f58f50193e7a9",
-          "quote": "光轮智能创始人谢晨博士表示",
-          "quote_hash": "2dee49c677f31f4150d7d64ff90075b15c99cfcbed16ff3d3a1841f76d9d5e3d"
+          "source_id": "xiechen_bydrug",
+          "source_url": "https://bydrug.pharmcube.com/news/detail/61e8e4b86d40db9915f57017f94f28db",
+          "source_title": "光轮智能谢晨访谈 - 医药魔方/OMEGA",
+          "source_content_hash": "73eefa1b996bd13e5884d4ba0801df4bdf339ddf08012ef950a8de0989d5390b",
+          "quote": "谢晨在本人访谈中介绍北大物理本科、哥伦比亚大学博士及Cruise和英伟达仿真业务经历。",
+          "quote_hash": "17bffa081d7c6e7eab4e3d43a3c2f7625e79c050b64f420aad7a460046a8af5c"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "教育、职业方向和创业信息来自本人访谈；具体任职时间未公开，未补造时间线。",
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

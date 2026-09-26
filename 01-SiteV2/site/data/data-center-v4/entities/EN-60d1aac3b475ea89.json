@@ -111,33 +111,66 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "朱亦博 的来源线索将其与StepFun（首席技术官）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "朱亦博是阶跃星辰联合创始人，负责AI基础设施相关工作。公开访谈记载他早年在微软研究院从事分布式系统研究，2018年前后转至字节跳动负责AI基础设施，之后短暂任职Google，并于2023年初离开后参与创立阶跃星辰。访谈未核实其教育背景及Google具体职位。",
+      "current_roles": [
+        {
+          "title": "联合创始人、AI基础设施负责人",
+          "organization": "阶跃星辰（StepFun）",
+          "source_id": "zhu_yibo_scripod"
+        }
+      ],
       "career": [
         {
-          "organization": "StepFun",
-          "title": "首席技术官",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-4ae8171e86e3a055"
+          "organization": "微软研究院",
+          "title": "分布式系统研究",
+          "period": "早期职业阶段；年份未披露",
+          "description": "公开访谈中本人回顾其研究方向。",
+          "source_id": "zhu_yibo_scripod"
+        },
+        {
+          "organization": "字节跳动",
+          "title": "AI基础设施负责人",
+          "period": "约2018年至2023年初（本人访谈）",
+          "description": "参与构建字节跳动AI基础设施。",
+          "source_id": "zhu_yibo_scripod"
+        },
+        {
+          "organization": "Google",
+          "title": "任职（访谈未披露具体职位）",
+          "period": "2023年前后短暂任职；日期未披露",
+          "description": "本人访谈提及曾短暂在Google工作。",
+          "source_id": "zhu_yibo_scripod"
+        },
+        {
+          "organization": "阶跃星辰",
+          "title": "联合创始人、AI基础设施负责人",
+          "period": "2023年创立后；公开访谈时在任",
+          "description": "负责支持大模型研发的基础设施工作。",
+          "source_id": "zhu_yibo_scripod"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
-      "sources": [
+      "experience_summary": "职业经历聚焦分布式系统、互联网大规模AI基础设施及大模型工程系统，具体学历与早期任职年份尚缺本人或机构资料核验。",
+      "track_record": [
         {
-          "source_id": "FISRC-4ae8171e86e3a055",
-          "source_url": "https://news.pedaily.cn/202601/560382.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "b3815bfa4d27819c",
-          "quote": "CTO朱亦博职业生涯同样起步于微软研究院，后加⼊字节跳动任 AI Infra 负责⼈",
-          "quote_hash": "db91185814627e389b1f472b927d94a424b04460e4e3e6645d2b5dc46e2c4bfe"
+          "description": "参与构建字节跳动AI基础设施，并在阶跃星辰推进大模型基础设施工程化；内容据本人访谈，不归因具体模型效果。",
+          "source_id": "zhu_yibo_scripod"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "sources": [
+        {
+          "source_id": "zhu_yibo_scripod",
+          "source_url": "https://scripod.com/episode/98miusjxzbos5oxgz6twhmaf",
+          "source_title": "对谈阶跃星辰联合创始人朱亦博 - Scripod",
+          "source_content_hash": "c14ec2934c37683d7bb2281c2d387863b7a37d9967e8ad8fdf603ec25c6cee1b",
+          "quote": "朱亦博在访谈中回顾微软研究院、字节跳动、Google及阶跃星辰的经历，并介绍其负责AI基础设施。",
+          "quote_hash": "2a335432be49db9e738b5c12717efeee395f146b6ff7e2ac2a194dd8ffb2788b"
+        }
+      ],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "职业线索来自本人访谈转录；未披露的教育、具体头衔和时间均留空或标注近似。",
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

@@ -114,33 +114,78 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "杨植麟 的来源线索将其与Moonshot AI（创始人兼CEO）关联。来源日期：2026-06-09；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "杨植麟是月之暗面创始人和自然语言处理研究者。清华大学报道记载，他在长期从事自然语言处理研究后，于2023年4月领衔创立月之暗面；Carnegie Mellon University 官方博士论文档案确认其获得计算机科学博士学位，研究涉及 Transformer-XL 与 XLNet。",
+      "current_roles": [
+        {
+          "title": "创始人",
+          "organization": "月之暗面（Moonshot AI）",
+          "source_id": "yang_tsinghua_2026"
+        }
+      ],
       "career": [
         {
-          "organization": "Moonshot AI",
-          "title": "创始人兼CEO",
-          "period": "来源记录于 2026-06-09；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-5d82f5dc9fc96ce5"
+          "organization": "月之暗面（Moonshot AI）",
+          "title": "创始人",
+          "period": "2023年4月创立；现任情况按2026年清华大学报道",
+          "description": "公司开发 Kimi 系列智能助手和基础模型；成果属团队，不作个人业绩归因。",
+          "source_id": "yang_tsinghua_2026"
+        },
+        {
+          "organization": "自然语言处理研究",
+          "title": "研究者",
+          "period": "清华大学报道截至2026年称其从业约10年",
+          "description": "清华大学报道将其研究领域概括为自然语言处理。",
+          "source_id": "yang_tsinghua_2026"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "清华大学",
+          "qualification": "计算机相关专业本科校友；2011级（具体学位名称以本人档案为准）",
+          "source_id": "yang_tsinghua_alumni"
+        },
+        {
+          "institution": "Carnegie Mellon University 语言技术研究所",
+          "qualification": "计算机科学哲学博士；博士论文《Advances in Generative Feature Learning》，2019年",
+          "source_id": "yang_cmu_thesis"
+        }
+      ],
+      "experience_summary": "学术研究与基础模型创业并行，博士研究涵盖 Transformer-XL、XLNet 等生成式特征学习工作。已核验资料未确认其在 Google Brain、Meta 等机构的具体任职时期，故未加入职业时间线。",
+      "track_record": [
+        {
+          "description": "CMU博士论文记录其博士研究与 Transformer-XL、XLNet；这是学术成果背景，不代表对后续模型产品业绩的个人归因。",
+          "source_id": "yang_cmu_thesis"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-5d82f5dc9fc96ce5",
-          "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
-          "source_title": "融资披露来源",
-          "source_content_hash": "ed52c0e4bdd288d59bf76e5a85336feb746a80e5be8d21e665277eb13b56fbe4",
-          "quote": "月之暗面 CEO杨植麟在全员信中表示，已完成5亿美元 C轮融资",
-          "quote_hash": "1fbd58c88b75ac127f2fdd33c67db7ad002f33a05360e7b2706339da2bdf794c"
+          "source_id": "yang_tsinghua_2026",
+          "source_url": "https://www.tsinghua.edu.cn/info/1182/124486.htm",
+          "source_title": "领跑全国，AI企业的深耕与坚守｜清华大学转载科技日报报道",
+          "source_content_hash": "5f2ff891bef2d873fbbf1dd1efea02e3715062e73a1719261ab853cc95bfc50f",
+          "quote": "清华大学转载报道记载，杨植麟从事自然语言处理研究约十年，并于2023年4月领衔创立月之暗面。",
+          "quote_hash": "097ee22834f4b8f50dbd7812c1e36ea8ef2e138d98dd4edfd26bf1603ae39d21"
+        },
+        {
+          "source_id": "yang_tsinghua_alumni",
+          "source_url": "https://www.tsinghua-hb.com.cn/__local/B/23/80/356B2D2615FF45A4E77662C78DC_12088CCF_2BE83A.pdf",
+          "source_title": "2024年第15期清华校友通讯",
+          "source_content_hash": "7628e681ad89047cbead52464c318f975d7cf1481c50a780829cd0c53e424c95",
+          "quote": "清华校友通讯将月之暗面创始人兼CEO杨植麟列为2011级计算机校友。",
+          "quote_hash": "f76ed891796797f259e1255e4e37f817702e22179ceab1f758b118ec8ad8dc5f"
+        },
+        {
+          "source_id": "yang_cmu_thesis",
+          "source_url": "https://www.lti.cs.cmu.edu/people/alumni/alumni-thesis/yang-zhilin-thesis.pdf",
+          "source_title": "Advances in Generative Feature Learning | Carnegie Mellon University",
+          "source_content_hash": "8637e8e17ee713aed7dfdf330b8d10ee7b149b470b9eac7cce1e7e0e6661047d",
+          "quote": "Carnegie Mellon University 博士论文题名为 Advances in Generative Feature Learning，作者为 Zhilin Yang，论文记载提交以满足哲学博士学位要求。",
+          "quote_hash": "77776c94ce34c916aff6d4af036ce489f89897f210a1d7acde04c8a0c5d3829c"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "创立时间和研究方向取自大学转载报道；博士学位由CMU官方论文档案核验。Google、Meta等关联任职未列入，因为当前引用材料无法确认具体职位与日期。"
     }
   },
   "relatedEntities": [],

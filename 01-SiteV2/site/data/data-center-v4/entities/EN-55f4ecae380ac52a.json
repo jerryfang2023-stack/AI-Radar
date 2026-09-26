@@ -111,33 +111,66 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "李昕 的来源线索将其与华超神控（创始人）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "李昕是华超神控创始人兼 CEO。公开资料介绍其为中国科学院与德国Fraunhofer IGD联合培养的生物医学工程博士，2015年加入GE医疗，曾负责GE全球研发中心中国区，并在此之前创办过创新科技及医疗企业。报道未披露其博士学位授予单位、此前各创业公司名称及任职年份；现阶段公司专注非侵入式AI脑机接口、超声神经调控与临床转化。",
+      "current_roles": [
+        {
+          "title": "创始人兼CEO（2026年媒体报道）",
+          "organization": "华超神控（上海）科技有限公司",
+          "source_id": "lixin_leiphone_202609"
+        }
+      ],
       "career": [
         {
-          "organization": "华超神控",
-          "title": "创始人",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将李昕与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-cb7eea4a6bd98034"
+          "organization": "GE医疗",
+          "title": "全球研发中心中国区负责人",
+          "period": "2015年加入；具体离职时间未披露",
+          "description": "媒体资料称其于2015年加入GE医疗，后负责全球研发中心中国区；职务及成长路径未见雇主官方履历核实。",
+          "source_id": "lixin_leiphone_202609"
+        },
+        {
+          "organization": "华超神控（上海）科技有限公司",
+          "title": "创始人兼CEO",
+          "period": "公司于2025年创立；个人现职见2026年报道",
+          "description": "投资界工商资料列其为公司法定代表人及创始人，雷峰网2026年报道称其为创始人兼CEO。",
+          "source_id": "lixin_huachao_company"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "中国科学院与德国Fraunhofer IGD联合培养",
+          "qualification": "生物医学工程博士；公开资料未明确学位授予机构和具体毕业年份",
+          "source_id": "lixin_huachao_company"
+        }
+      ],
+      "experience_summary": "职业经历横跨GE医疗研发管理、医疗影像与AI相关连续创业、脑机接口产业转化；此前企业名称、具体项目和任职年月尚未由本人简历或原雇主资料确认。",
+      "track_record": [
+        {
+          "description": "华超神控围绕超声神经调控、多模态读脑、AI神经解码及科研、临床产品推进；为公司当前业务路径，不等同于个人独立技术业绩或已获批临床效果。",
+          "source_id": "lixin_leiphone_202609"
+        }
+      ],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "人物教育及GE经历来自投资界和雷峰网的媒体资料，暂未找到GE医疗官网确认个人任职的来源；创业公司名称及具体任期未披露，保持为空。",
       "sources": [
         {
-          "source_id": "FISRC-cb7eea4a6bd98034",
-          "source_url": "https://news.pedaily.cn/202606/565032.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "6d658d71e68a7dd4",
-          "quote": "华超神控由连续创业者李昕博士于2025年创立。",
-          "quote_hash": "f78a57ab5a2406042c1306d62d3591d580c1f6776b9aa65b034e8361f6703c55"
+          "source_id": "lixin_huachao_company",
+          "source_url": "https://m.pedaily.cn/vc/company/896306.html",
+          "source_title": "华超神控 - 投资界",
+          "source_content_hash": "51264d4cb35844810e66b0ceb497a068c3a8b0fcfb2b8d5ab80026533e51eef2",
+          "quote": "投资界公司页称华超神控创始人为李昕，记载其为中科院与德国Fraunhofer IGD联合培养的生物医学工程博士，曾任GE医疗全球研发中心中国区负责人，并于2025年创立华超神控；页面工商信息列其为法定代表人。",
+          "quote_hash": "e425153863630bc873eb77a06e54c980ae62efa850fa1ce09b8603093c4a74f3"
+        },
+        {
+          "source_id": "lixin_leiphone_202609",
+          "source_url": "https://www.leiphone.com/category/aihealth/cZ1cYOXpoBGSfj45.html",
+          "source_title": "红杉、云启领投，华超神控完成2亿元Pre-A轮融资，押注非侵入式AI脑机接口 - 雷峰网",
+          "source_content_hash": "c72699bf65696f7fce1deed7274ce2eb3a033c50630649782e555af2b5743006",
+          "quote": "雷峰网2026年报道将李昕称为华超神控创始人兼CEO，称其2015年加入GE医疗并成为全球研发中心中国区负责人，曾连续创立创新科技及医疗公司；报道未列各公司的正式名称及任期。",
+          "quote_hash": "9743dd75729943ceb66508708eec5b8ff4a207bb2b00e131b7f629ba5085c466"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

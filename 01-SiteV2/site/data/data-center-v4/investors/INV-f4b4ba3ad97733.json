@@ -186,24 +186,76 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "新型工业化基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "新型工业化基金对应贵州省新型工业化发展股权投资基金合伙企业（有限合伙），是贵州省政府背景的私募股权投资基金。上市公司2025年披露其成立于2021年、基金备案编号SQH282、由贵州省贵鑫瑞和创业投资管理有限责任公司管理，文件所列合伙人出资额合计约280.01亿元。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "基金全称",
+          "value": "贵州省新型工业化发展股权投资基金合伙企业（有限合伙）",
+          "source_id": "guizhou_industrial_fund"
+        },
+        {
+          "field": "established",
+          "label": "成立日期",
+          "value": "2021年3月29日",
+          "source_id": "gzif_established"
+        },
+        {
+          "field": "registration_code",
+          "label": "统一社会信用代码",
+          "value": "91520115MAAKDY7A35",
+          "source_id": "gzif_established"
+        },
+        {
+          "field": "fund_number",
+          "label": "基金备案编号",
+          "value": "SQH282",
+          "source_id": "gzif_manager"
+        },
+        {
+          "field": "manager",
+          "label": "基金管理人",
+          "value": "贵州省贵鑫瑞和创业投资管理有限责任公司（登记编号P1020585）",
+          "source_id": "gzif_manager"
+        },
+        {
+          "field": "partner_contributions_total",
+          "label": "合伙人出资表合计（并非实缴规模）",
+          "value": "约280.01亿元",
+          "source_id": "gzif_total"
+        },
+        {
+          "field": "control",
+          "label": "国资背景（2025年披露）",
+          "value": "普通合伙人实际控制人为贵州省财政厅；有限合伙人一方由贵州省国资委实际控制。",
+          "source_id": "gzif_control"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2021-03-29",
+          "description": "基金在贵州省贵阳市成立。",
+          "source_id": "guizhou_industrial_fund"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：极佳视界 · B1轮 · 2026-04-16 · 本轮参投 · 15亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资来源记录：新型工业化基金被报道参与极佳视界B1轮融资；报道未披露该基金单笔出资额。",
           "source_id": "FISRC-a1fb846b5355af64"
         },
         {
-          "description": "融资来源记录：极佳视界 · 多轮融资 · 2026-04-16 · 本轮参投 · 近15亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "另一篇融资报道亦将新型工业化基金列为极佳视界15亿元B1轮投资方；这是公开融资活动记录，不代表完整组合或基金回报。",
           "source_id": "FISRC-4782a6093d519a4d"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "address",
+          "label": "基金主要经营场所（上市公司披露）",
+          "value": "贵州省贵阳市观山湖区长岭北路55号贵州金融城中央商务区10号楼9层9001号",
+          "source_id": "gzif_address"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-a1fb846b5355af64",
@@ -220,9 +272,61 @@
           "source_content_hash": "1249ab9a7b5d09d0d0f4f5724c90445e53a54409c6821fa0e8f197a595dca320",
           "quote": "由某知名科技巨头、多个顶级国家队基金、伊利集团CVC健瓴资本、普华资本、华福投资、毅达资本、新型工业化基金、乾融资本、盛景嘉成、图灵资管、凯洋资本、武汉高科、贵阳金投、山东产投等顶尖国资平台、产业资本、双币财务机构共同投资",
           "quote_hash": "a9d3c79b14298f438828a94cf2eb3088528d6b88d628bc4f4c9fd7f3a826694e"
+        },
+        {
+          "source_id": "guizhou_industrial_fund",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2025-04-09/1223030628.PDF",
+          "source_title": "贵州燃气发行股份购买资产预案：新型工业化基金基本情况",
+          "source_content_hash": "bb1ff959a2a17021b23b2dea5a12dec1357ff73139d72f82073522ffc52aad46",
+          "quote": "贵州省新型工业化发展股权投资基金合伙企业（有限合伙）",
+          "quote_hash": "693d5cb47f32dd9ca8a183b13932a7b85d44f5f3ba0577f9ffbe64c6d754a560"
+        },
+        {
+          "source_id": "gzif_established",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2025-04-09/1223030628.PDF",
+          "source_title": "贵州燃气发行股份购买资产预案：新型工业化基金基本情况",
+          "source_content_hash": "bb1ff959a2a17021b23b2dea5a12dec1357ff73139d72f82073522ffc52aad46",
+          "quote": "成立日期为2021年3月29日，统一社会信用代码为91520115MAAKDY7A35。",
+          "quote_hash": "e87f578942cb6ae9648a33a6e8066400c4b6fdffd89131b91a3b9a14d9508f2b"
+        },
+        {
+          "source_id": "gzif_manager",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2025-04-09/1223030628.PDF",
+          "source_title": "贵州燃气发行股份购买资产预案：新型工业化基金基本情况",
+          "source_content_hash": "bb1ff959a2a17021b23b2dea5a12dec1357ff73139d72f82073522ffc52aad46",
+          "quote": "基金编号：SQH282；其基金管理人为贵州省贵鑫瑞和创业投资管理有限责任公司，登记编号：P1020585。",
+          "quote_hash": "59b044c182dc047de298b30f4b98fbef4ec48da5cdcdbb79036d1f9d1b383a5f"
+        },
+        {
+          "source_id": "gzif_total",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2025-04-09/1223030628.PDF",
+          "source_title": "贵州燃气发行股份购买资产预案：新型工业化基金基本情况",
+          "source_content_hash": "bb1ff959a2a17021b23b2dea5a12dec1357ff73139d72f82073522ffc52aad46",
+          "quote": "合计2,800,100.00万元。",
+          "quote_hash": "a58088d552995577c8a3a013ef10c59653132bbd90b8d75f9442782cd14e9879"
+        },
+        {
+          "source_id": "gzif_control",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2025-04-09/1223030628.PDF",
+          "source_title": "贵州燃气发行股份购买资产预案：新型工业化基金基本情况",
+          "source_content_hash": "bb1ff959a2a17021b23b2dea5a12dec1357ff73139d72f82073522ffc52aad46",
+          "quote": "普通合伙人的实际控制人为贵州省财政厅。",
+          "quote_hash": "ab2585972caee00c322d794198077cefe8e329707107d9f6e5f84c23e718d454"
+        },
+        {
+          "source_id": "gzif_address",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2025-04-09/1223030628.PDF",
+          "source_title": "贵州燃气发行股份购买资产预案：新型工业化基金基本情况",
+          "source_content_hash": "bb1ff959a2a17021b23b2dea5a12dec1357ff73139d72f82073522ffc52aad46",
+          "quote": "贵州省贵阳市观山湖区长岭北路55号贵州金融城中央商务区10号楼9层9001号。",
+          "quote_hash": "b62665c03c48164a13d786500d8254088abe3c5fe8c5f13a1030f3ce63dce38a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "正式名称、基金编号、管理人及出资结构来自上市公司公开文件；基金规模按该文件的出资表计算，不是已实缴金额。地址是工商主要经营场所，不作为项目申请地址或募资联系方式。",
+      "last_verified_at": "2026-09-26"
     }
   }
 }

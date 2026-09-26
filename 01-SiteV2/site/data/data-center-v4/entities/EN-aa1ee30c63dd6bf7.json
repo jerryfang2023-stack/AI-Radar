@@ -111,33 +111,74 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "李希卓 的来源线索将其与九爪智能（创始人/CEO）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "李希卓是广州九爪智能创始人兼董事长，公开履历称其拥有瑞典林奈大学电子工程硕士背景，曾在华为等大型企业从事物联网软件和智能设备研发近十年，之后创业进入环保与资源回收装备领域。其团队面向固废处理场景研发AI与多模态传感智能分选设备。",
+      "current_roles": [
+        {
+          "title": "创始人、董事长（公司及活动方资料）",
+          "organization": "广州九爪智能科技有限公司",
+          "source_id": "lixizhu_justra_official"
+        }
+      ],
       "career": [
         {
-          "organization": "九爪智能",
-          "title": "创始人/CEO",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-11805a259de5b45c"
+          "organization": "华为等大型企业",
+          "title": "物联网软件与智能设备研发",
+          "period": "近10年；精确任职年份未披露",
+          "description": "行业活动方人物简介所述，尚无雇主履历进一步确认。",
+          "source_id": "lixizhu_adsale_2026"
+        },
+        {
+          "organization": "广州九爪智能科技有限公司",
+          "title": "创始人、董事长",
+          "period": "公司成立于2021年；个人创业起始日未披露",
+          "description": "公司官网及活动方介绍确认其创始人/董事长身份。",
+          "source_id": "lixizhu_justra_official"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "瑞典林奈大学",
+          "qualification": "电子工程硕士；毕业年份未披露",
+          "source_id": "lixizhu_adsale_2026"
+        }
+      ],
+      "experience_summary": "从大型企业物联网及智能设备研发转向环保行业连续创业，兼具软件、设备研发与环卫资源回收场景经验；个人在各个示范项目中的职责未逐项披露。",
+      "track_record": [
+        {
+          "description": "活动方人物简介称其带领团队建设多项AI智能分选示范项目，包括生活垃圾智能分选、建筑装修垃圾分选及“压缩—分选”一体化项目；按活动资料表述，不将团队项目作为个人独立成果。",
+          "source_id": "lixizhu_adsale_2026"
+        }
+      ],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "创始人/董事长身份由九爪智能官网和36氪项目页确认；教育、华为经历及示范项目由行业展会活动方人物简介提供，尚未由学校或华为单独核实。",
       "sources": [
         {
-          "source_id": "FISRC-11805a259de5b45c",
-          "source_url": "https://news.pedaily.cn/202601/559747.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "0a3303471dd1ee69",
-          "quote": "公司创始人李希卓，瑞典林奈大学电子工程硕士，曾在华为等大型企业从事物联网软件、智能设备研发工作近10年",
-          "quote_hash": "b553701713be60d0d8145f529d2225a6444a3c946109367939bace24b9236bf4"
+          "source_id": "lixizhu_justra_official",
+          "source_url": "https://www.justra-gz.com/newsinfo67.html",
+          "source_title": "九爪智能乔迁新址 开启智选新未来 - 九爪智能官网",
+          "source_content_hash": "a895910ebfe93a9cfbde41f57c94c1318c39c22d62c990bc0b7990c02be25e9e",
+          "quote": "九爪智能官网将李希卓称为公司董事长，并介绍公司专注AI与多模态传感融合的智能分选设备及解决方案。",
+          "quote_hash": "0eef9a04eeb6de98490cce07a51390cbf9e2a6c3dfc83d9df119864a3aa93b21"
+        },
+        {
+          "source_id": "lixizhu_36kr",
+          "source_url": "https://pitchhub.36kr.com/project/3596483491133058",
+          "source_title": "九爪智能 - 项目信息 - 36氪",
+          "source_content_hash": "ede87dda50fd91afc09d09633d55b7bda5a92d071e6861e582bde3ad9ed7b002",
+          "quote": "36氪项目页列李希卓为九爪智能CEO及法定代表人，并记载其持股和公司成立信息；页面亦介绍企业的AI与多模态传感智能分选业务。",
+          "quote_hash": "3fce67c0d65a9ae81ba6bd3e5503f8b50c03cb2e5d5431ec5c7c57f13d9f6b3e"
+        },
+        {
+          "source_id": "lixizhu_adsale_2026",
+          "source_url": "https://www.adsalecprj.com/live_project/project_live/154/1053.html",
+          "source_title": "广州九爪智能科技有限公司董事长李希卓 - 雅式橡塑网展会人物介绍",
+          "source_content_hash": "53c69a633b3b4091c5d6250a8440ddee577f7231a8ef44c9aa897a44edcd33f2",
+          "quote": "展会人物介绍称李希卓拥有瑞典林奈大学电子工程硕士背景，曾在华为等大型企业从事物联网软件和智能设备研发近十年，并带队完成多个AI智能分选示范项目。",
+          "quote_hash": "da5a09beca29f724930df81afe9fbb921045642aba1cef5fad2b406630174e8c"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

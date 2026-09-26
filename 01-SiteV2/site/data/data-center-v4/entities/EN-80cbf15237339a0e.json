@@ -128,33 +128,68 @@
       }
     },
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "Raja Koduri 的来源线索将其与OXMIQ Labs Inc.（创始人兼首席执行官）关联。来源日期：2026-07-11；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "Raja Koduri 是 GPU 架构师及 Oxmiq Labs 创始人兼 CEO，拥有近三十年的图形处理器行业经历。本人公开履历列出其曾在 ATI、AMD、Apple 和 Intel 任职；Oxmiq 官网介绍公司开发可授权 GPU IP、芯粒平台及软件栈。教育背景未在本次核验的一手来源中确认。",
+      "current_roles": [
+        {
+          "title": "创始人兼CEO",
+          "organization": "Oxmiq Labs",
+          "source_id": "oxmiq_about"
+        }
+      ],
       "career": [
         {
-          "organization": "OXMIQ Labs Inc.",
-          "title": "创始人兼首席执行官",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将Raja Koduri与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-b7d7449114c23ca5"
+          "organization": "ATI Technologies / AMD",
+          "title": "GPU 架构与 Radeon 图形产品相关管理经历",
+          "period": "个人公开履历所述；具体年份未在所引网页逐段列出",
+          "description": "个人履历将其与 Polaris、Vega、Navi 架构联系；属本人发布的履历表述。",
+          "source_id": "raja_bio"
+        },
+        {
+          "organization": "Apple",
+          "title": "图形硬件相关工作经历",
+          "period": "个人公开履历所述；具体年份未披露",
+          "description": "个人履历描述其参与图形硬件工作；未进一步扩写未由一手材料证实的产品贡献。",
+          "source_id": "raja_bio"
+        },
+        {
+          "organization": "Intel",
+          "title": "架构、图形及软件高级管理职务",
+          "period": "个人公开履历所述；具体年份未披露",
+          "description": "个人履历称其担任首席架构师及图形与软件执行副总裁，并参与 Intel Arc 与 Xe 架构。",
+          "source_id": "raja_bio"
+        },
+        {
+          "organization": "Oxmiq Labs",
+          "title": "创始人兼CEO",
+          "period": "2023年创立；现职由公司官网列示",
+          "description": "公司开发可授权 GPU IP、模块化芯粒平台与软件栈。",
+          "source_id": "oxmiq_about"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
+      "experience_summary": "履历横跨 ATI、AMD、Apple、Intel 和半导体创业。过往职位细节来自本人公开履历，未核实的学历与任职日期留空。",
       "track_record": [],
       "sources": [
         {
-          "source_id": "FISRC-b7d7449114c23ca5",
-          "source_url": "https://www.hpcwire.com/off-the-wire/oxmiq-raises-35m-to-scale-oxcoretm-architecture/",
-          "source_title": "融资披露来源",
-          "source_content_hash": "7277428ab4a1fd81",
-          "quote": "OXMIQ Labs Inc. , a unified GPU and AI architecture company founded by Raja Koduri",
-          "quote_hash": "53e07de7c88e9a171f8924a6dc81cb172889ab7fd53baa17a43eec6943ce87a1"
+          "source_id": "oxmiq_about",
+          "source_url": "https://oxmiq.ai/about",
+          "source_title": "About | OXMIQ",
+          "source_content_hash": "a2222a0a6e2e0d8d57454363dd58d70d159cc1c87cf0323fc19cd47c67c9468e",
+          "quote": "Oxmiq Labs 官网称公司由 Raja Koduri 创立，开发可授权 GPU IP、模块化芯粒平台和软件栈。",
+          "quote_hash": "a250f2eaf01325a96abdd76d8222ed0b1de01d5feb586c23accfd33c41b6a532"
+        },
+        {
+          "source_id": "raja_bio",
+          "source_url": "https://rajakoduri15.b-cdn.net/",
+          "source_title": "Raja Koduri | Founder & CEO Oxmiq Labs | GPU Architecture Pioneer",
+          "source_content_hash": "afff04ad8139480de01cc2092591fadef5fd4db52e374805a82ab7e25f351888",
+          "quote": "Raja Koduri 的个人公开履历列出其在 ATI、AMD、Apple、Intel 的 GPU 架构经历，并记载其于2023年创立 Oxmiq Labs。",
+          "quote_hash": "572b38db15a3fb99c001f01b4054b42074369f7440cd5ab21e6be979b5008de8"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "当前身份由公司官网核验；过往经历取自本人发布的履历，未将其对公司或产品成果的自述扩写为独立业绩验证。"
     }
   },
   "relatedEntities": [],

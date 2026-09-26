@@ -177,14 +177,49 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Google Ventures (GV) 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "GV（Google Ventures）是Alphabet旗下风险投资机构，2009年以Google Ventures名称成立，官网称Alphabet为唯一有限合伙人。其投资覆盖科技与生命科学，从种子轮到成长期，并为创业团队提供运营支持。官网披露资产管理规模超过130亿美元及400家活跃组合公司。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立年份",
+          "value": "2009；当时名为Google Ventures",
+          "source_id": "gv_official_about_202609"
+        },
+        {
+          "field": "limited_partner",
+          "label": "有限合伙人",
+          "value": "Alphabet为唯一LP（机构官网口径）",
+          "source_id": "gv_official_about_202609"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "管理资产",
+          "value": "超过130亿美元；官网当前披露，未注明估值时点",
+          "source_id": "gv_official_about_202609"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资领域及阶段",
+          "value": [
+            "科技",
+            "生命科学",
+            "种子轮至成长阶段"
+          ],
+          "source_id": "gv_official_about_202609"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2009",
+          "description": "以Google Ventures名称成立。",
+          "source_id": "gv_official_about_202609"
+        }
+      ],
       "track_record": [
+        {
+          "description": "官网列示400家活跃投资组合公司以及Uber、Nest、Slack、GitLab等已退出或上市案例；属组合整体记录，非单支基金回报指标。",
+          "source_id": "gv_official_about_202609"
+        },
         {
           "description": "融资来源记录：Odyssey ML · B轮 · 2026-06-17 · 种子轮领投 · 3.1亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-413e994d081f8e0f"
@@ -194,8 +229,24 @@
           "source_id": "FISRC-4849ec2aa0a0f909"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "GV官方网站",
+          "value": "投资策略、团队与组合信息",
+          "url": "https://www.gv.com/",
+          "source_id": "gv_official_about_202609"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "gv_official_about_202609",
+          "source_url": "https://www.gv.com/about",
+          "source_title": "About GV",
+          "source_content_hash": "87aa314942f4f35bb70eb362de8edeafd135bfa0a17bb4ff1cefa02582dd018d",
+          "quote": "GV官网称其于2009年以Google Ventures名称成立，Alphabet是唯一LP；在北美、欧洲和以色列投资科技与生命科学种子至成长期企业。官网当前列示管理资产超130亿美元、400家活跃组合公司。",
+          "quote_hash": "976f4e8e4a5c1f3d890414adef14168351b45187f0b703a63abb133a6d050a40"
+        },
         {
           "source_id": "FISRC-413e994d081f8e0f",
           "source_url": "https://awesomeagents.ai/news/odyssey-amazon-310m-world-models/",
@@ -213,7 +264,11 @@
           "quote_hash": "eaaece4b86e7686dbe9acf4743ba1557ba8c669cd23dae4c2f8b580b96ccb483"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "coverage_note": "Alphabet关系、投资阶段和当前规模来自GV官网；组合退出案例不解读为整体回报率。",
+      "identity_status": "verified"
     }
   }
 }

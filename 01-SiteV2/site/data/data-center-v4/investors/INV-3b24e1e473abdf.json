@@ -188,14 +188,57 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "中关村科学城公司 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "北京中关村科学城创新发展有限公司是海淀区支持中关村科学城创新生态的市场化产业投资与科技服务平台。官网列示科技产业全周期资本业务，涵盖科技成长基金系、科技创新基金系及海淀引导基金系，同时提供产业平台、国际科创与创业服务。英文官网披露公司于2019年成立、注册资本60亿元，并自述科技创新基金规模55亿元；基金规模和历史组合属于平台公开口径，未在此处独立审计。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "区属市场化科技产业投资与创新服务平台",
+          "source_id": "zgccity_english"
+        },
+        {
+          "field": "founded",
+          "label": "成立年份",
+          "value": "2019",
+          "source_id": "zgccity_english"
+        },
+        {
+          "field": "registered_capital",
+          "label": "注册资本",
+          "value": "人民币60亿元（公司官网披露）",
+          "source_id": "zgccity_english"
+        },
+        {
+          "field": "business_lines",
+          "label": "业务板块",
+          "value": [
+            "科技成长基金系",
+            "科技创新基金系",
+            "海淀引导基金系",
+            "科技创新生态服务",
+            "产业投资"
+          ],
+          "source_id": "zgccity_home"
+        },
+        {
+          "field": "science_fund_scale",
+          "label": "科技创新基金规模",
+          "value": "人民币55亿元（英文官网披露）",
+          "source_id": "zgccity_english"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2019",
+          "description": "公司英文官网记载成立。",
+          "source_id": "zgccity_english"
+        }
+      ],
       "track_record": [
+        {
+          "description": "英文官网列出其参与的科技创新基金、子基金及历史引导基金组合案例；组合数量与企业服务数据属于平台官网自述。",
+          "source_id": "zgccity_english"
+        },
         {
           "description": "融资来源记录：智谱AI · 其他融资 · 2026-09-13 · 领投 · 50 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4b5b536102d7731e"
@@ -205,8 +248,50 @@
           "source_id": "FISRC-4177e5ca07c921a5"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "公司基本信息、业务条线和联系方式来自官网；不同基金系、基金管理主体与被投基金是不同实体，融资库名称不能据此合并法律主体。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "公司官网",
+          "value": "北京中关村科学城创新发展有限公司",
+          "url": "https://m.zgccity.com/",
+          "source_id": "zgccity_home"
+        },
+        {
+          "kind": "phone",
+          "label": "官网公开联系电话",
+          "value": "010-68410552",
+          "url": "https://m.zgccity.com/",
+          "source_id": "zgccity_home"
+        },
+        {
+          "kind": "address",
+          "label": "官网公开地址",
+          "value": "北京市海淀区阜成路73号裕惠大厦A座11层",
+          "url": "https://m.zgccity.com/",
+          "source_id": "zgccity_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "zgccity_home",
+          "source_url": "https://m.zgccity.com/",
+          "source_title": "北京中关村科学城创新发展有限公司",
+          "source_content_hash": "7f0c08efef4c5b991a8d112d95602759d1ed463c8ae45c220afa8f57ab1528e5",
+          "quote": "中关村科学城创新发展有限公司官网将业务分为科技创新生态服务与科技产业全周期资本，列出科技成长基金系、科技创新基金系和海淀引导基金系，并公开总机010-68410552及海淀区阜成路73号裕惠大厦A座11层地址。",
+          "quote_hash": "2d88df08436bf8b6ccc9fbcac7cf35a639a1ed279ff691b195094e607862734c"
+        },
+        {
+          "source_id": "zgccity_english",
+          "source_url": "https://www.zgccity.com/english.html",
+          "source_title": "Company Profile - Zhongguancun Science City Innovation Development Co., Ltd.",
+          "source_content_hash": "c39aa561f69707e62a6f3ce72175c2708576a0a94481ceebd14f4ae5bbbb0549",
+          "quote": "公司英文官网称其2019年成立、注册资本人民币60亿元，提供产业投资与创新服务，并称科技创新基金规模55亿元；其增长基金覆盖AI、大数据、新材料、集成电路和生命科学，部分过往引导基金组合数据按官网自述记录。",
+          "quote_hash": "85cc9de1c0ad22c088fc6e6eabf1687998d505d73516fe87e6c5851e1fdd15af"
+        },
         {
           "source_id": "FISRC-4b5b536102d7731e",
           "source_url": "https://finance.sina.com.cn/tech/roll/2024-09-18/doc-incpqqsn4446116.shtml",
@@ -224,7 +309,7 @@
           "quote_hash": "6d1cbcf2aa8a47a0b5abc4725a927f5a4880b7092a67ef2a1056257ceed9d578"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

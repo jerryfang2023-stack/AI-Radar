@@ -108,33 +108,45 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "Paul Eremenko 的来源线索将其与P-1 AI, Inc.（联合创始人兼CEO）关联。来源日期：2026-07-30；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "Paul Eremenko 是 P-1 AI 联合创始人兼CEO。P-1 AI官网将其列为公司核心团队成员；公司致力于把AI工程智能体用于复杂系统工程。官网未提供其完整教育经历及此前任职时间线。",
+      "current_roles": [
+        {
+          "title": "联合创始人、CEO",
+          "organization": "P-1 AI",
+          "source_id": "paul_p1"
+        }
+      ],
       "career": [
         {
-          "organization": "P-1 AI, Inc.",
-          "title": "联合创始人兼CEO",
-          "period": "来源记录于 2026-07-30；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-2fad84309f732cda"
+          "organization": "P-1 AI",
+          "title": "联合创始人、CEO",
+          "period": "公司创建后；官网当前列示",
+          "description": "领导工业及复杂系统工程领域的AI产品开发。",
+          "source_id": "paul_p1"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
-      "sources": [
+      "experience_summary": "官方资料确认其创办并领导P-1 AI；此前在航空航天、汽车或科技公司的经历虽有公开报道线索，但本档案暂不补录未经一手资料核验的时间线。",
+      "track_record": [
         {
-          "source_id": "FISRC-2fad84309f732cda",
-          "source_url": "https://tech.yahoo.com/ai/meta-ai/articles/could-agentic-ai-bring-american-123000675.html",
-          "source_title": "融资披露来源",
-          "source_content_hash": "eb500aed36566823",
-          "quote": "P-1 AI's co-founder and CEO Paul Eremenko, who was previously the CTO of Airbus",
-          "quote_hash": "a731adbf4fec516a6696fffaf3b76ef23f86158f05a38629233d3b1184db7452"
+          "description": "P-1 AI官网介绍其团队研发面向工程组织的AI工程师产品；产品能力为公司公开说明。",
+          "source_id": "paul_p1"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "sources": [
+        {
+          "source_id": "paul_p1",
+          "source_url": "https://p-1.ai/",
+          "source_title": "P-1 AI 官方网站",
+          "source_content_hash": "0eb2c0b220e253442736cfcaf6fbedf3d5ccadd31995d11d4580af72437cdac7",
+          "quote": "P-1 AI官网列出Paul Eremenko为团队成员，并介绍公司面向复杂系统工程的AI产品。",
+          "quote_hash": "248a7e5c1b4c905c012cc470416c0e9e847fe1b3982be329193338e4dc981f4f"
+        }
+      ],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "当前职务及公司业务来自P-1 AI官网；教育和早期职业时间线未找到足够一手来源，暂留空。",
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

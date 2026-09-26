@@ -138,13 +138,43 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "国家人工智能产业基金(大基金三期全资基金) 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "国家人工智能产业投资基金合伙企业（有限合伙）是由国智投（上海）私募基金管理有限公司与国家集成电路产业投资基金三期股份有限公司发起设立的国家级人工智能产业基金。上海市政府2025年1月公布其出资额为人民币600亿元；2026年福建省商务厅披露其通过该基金参与银河通用融资。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "正式名称",
+          "value": "国家人工智能产业投资基金合伙企业（有限合伙）",
+          "source_id": "national_ai_fund_registration"
+        },
+        {
+          "field": "sponsors",
+          "label": "发起设立方",
+          "value": [
+            "国智投（上海）私募基金管理有限公司",
+            "国家集成电路产业投资基金三期股份有限公司"
+          ],
+          "source_id": "national_ai_fund_registration"
+        },
+        {
+          "field": "contribution_amount",
+          "label": "官方公布出资额",
+          "value": "人民币600亿元（2025年1月公布；来源未说明实缴进度）",
+          "source_id": "national_ai_fund_registration"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2025-01",
+          "description": "上海市政府披露基金落地徐汇，公布出资额人民币600亿元。",
+          "source_id": "national_ai_fund_registration"
+        }
+      ],
       "track_record": [
+        {
+          "description": "福建省商务厅2026年3月披露，国家人工智能产业投资基金参与银河通用新一轮融资；该报道将其称为“大基金首次通过国家人工智能产业投资基金布局具身智能赛道”。",
+          "source_id": "national_ai_fund_galaxy_investment"
+        },
         {
           "description": "融资来源记录：银河通用 · 轮次未披露 · 2026-03-02 · 本轮参投 · 25亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-adaac360139469bd"
@@ -152,6 +182,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "national_ai_fund_registration",
+          "source_url": "https://www.shanghai.gov.cn/nw15343/20250123/76167eae0a624d569fc71fe6627e5334.html",
+          "source_title": "上海市人民政府｜600亿国家大基金落地徐汇",
+          "source_content_hash": "3fd0ee04d7d778e58e8592dba2ce72efc91173600405c808fbc1a2ebf3a80514",
+          "quote": "由国智投（上海）私募基金管理有限公司（以下简称“国智投”）和国家集成电路产业投资基金三期股份有限公司（以下简称“大基金三期”）发起设立的国家人工智能产业投资基金合伙企业（有限合伙）近日落地徐汇，出资额600亿元。",
+          "quote_hash": "63e795eb876eb7b2bc656d103090ffc58704e73e9778ded434bd0b66bab0e6b3"
+        },
+        {
+          "source_id": "national_ai_fund_galaxy_investment",
+          "source_url": "https://swt.fujian.gov.cn/xxgk/jgzn/jgcs/zsxdc/tzdt/202603/t20260313_7109852.htm",
+          "source_title": "福建省商务厅｜参投头部具身智能企业！全省首支试点AIC基金投出“开门红”",
+          "source_content_hash": "683ef8718d315a3b64e29410370c549a08bfdf87da0c029f9e7e6f739fbc8016",
+          "quote": "本轮融资由国家人工智能产业基金（大基金三期全资基金）、中国石化、中信集团投资控股、中国银行、福建产投等多家国资与产业资本联合注资。这也是大基金首次通过国家人工智能产业投资基金布局具身智能赛道，行业标杆性意义显著。",
+          "quote_hash": "22fd0adce281690829dc57530cac9beddfc70bf15f28274a48508b7334110a99"
+        },
         {
           "source_id": "FISRC-adaac360139469bd",
           "source_url": "https://www.cls.cn/detail/2300238",
@@ -161,7 +207,9 @@
           "quote_hash": "96a3aef27d592b0706f6bf7a6b0f44a71d2e784c11c23523af9bf03b4f18a45d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

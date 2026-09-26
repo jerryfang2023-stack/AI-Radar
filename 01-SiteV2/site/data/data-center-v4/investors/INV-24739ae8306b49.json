@@ -177,14 +177,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "上海半导体产投基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "上海半导体产投基金聚焦半导体装备、材料及核心零部件，官网称基金立足上海、面向全国并开展境内外投资和资源整合。基金官网披露总规模200亿元、首期规模50亿元，并列出多家机构投资人。基金管理公司上海半导体装备材料产业投资管理有限公司另行披露其成立于2018年及自身管理的基金和项目，管理公司与具体基金的规模口径不能混用。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "半导体装备、材料及核心零部件，兼顾产业链上下游",
+          "source_id": "shanghai_semicon_fund"
+        },
+        {
+          "field": "fund_size",
+          "label": "基金总规模",
+          "value": "人民币200亿元（基金官网披露）",
+          "source_id": "shanghai_semicon_fund"
+        },
+        {
+          "field": "first_phase_size",
+          "label": "首期规模",
+          "value": "人民币50亿元（基金官网披露）",
+          "source_id": "shanghai_semicon_fund"
+        },
+        {
+          "field": "management_company",
+          "label": "管理公司",
+          "value": "上海半导体装备材料产业投资管理有限公司；官网称由浦科投资牵头组建",
+          "source_id": "shanghai_semicon_manager"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2018-01",
+          "description": "基金管理公司官网记载管理公司成立于2018年1月。",
+          "source_id": "shanghai_semicon_manager"
+        }
+      ],
       "track_record": [
+        {
+          "description": "管理公司官网自述累计投资半导体项目50余个，涉及装备、材料、零部件、EDA、设计、制造与封测；此为管理公司组合汇总口径。",
+          "source_id": "shanghai_semicon_manager"
+        },
         {
           "description": "融资来源记录：极佳视界 · B2轮 · 2026-06-15 · Pre-B轮投资方 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ce47b663ca256878"
@@ -194,8 +225,58 @@
           "source_id": "FISRC-4782a6093d519a4d"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "基金规模和方向来自基金官网；管理公司成立时间、基金管理情况和已投项目数来自管理公司官网自述；官方网站联系页公布电话 +86-21 5027 6328。管理公司与具体基金的规模口径分开记录。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "基金官方介绍",
+          "value": "上海半导体装备材料产业投资基金",
+          "url": "https://www.pdsti.com/Pc/ssemc/index.html",
+          "source_id": "shanghai_semicon_fund"
+        },
+        {
+          "kind": "website",
+          "label": "基金管理公司介绍",
+          "value": "上海半导体装备材料产业投资管理有限公司",
+          "url": "https://www.pdsti.com/ssemc/",
+          "source_id": "shanghai_semicon_manager"
+        },
+        {
+          "kind": "phone",
+          "label": "官网公开联系电话",
+          "value": "+86-21 5027 6328",
+          "url": "https://www.pdsti.com/Pc/ssemc/contactUs.html",
+          "source_id": "shanghai_semicon_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "shanghai_semicon_manager",
+          "source_url": "https://www.pdsti.com/ssemc/",
+          "source_title": "上海半导体装备材料产业投资管理有限公司",
+          "source_content_hash": "0db4652d2b199ada8fa39e5006037264edc3850d5f8b2fdddd9999037cdc7505",
+          "quote": "上海半导体产投官网称其于2018年成立，聚焦半导体装备、材料及核心零部件，并管理上海半导体装备材料产业投资基金和项目制基金；公司自述管理规模超过80亿元、已投项目50余个，覆盖装备、材料、零部件、EDA、设计、制造和封测。",
+          "quote_hash": "14c1d656328ab82cca6091b6809333839d74d86650d0d3a84b376a7fbac18d73"
+        },
+        {
+          "source_id": "shanghai_semicon_fund",
+          "source_url": "https://www.pdsti.com/Pc/ssemc/index.html",
+          "source_title": "上海半导体装备材料产业投资基金",
+          "source_content_hash": "78fef9491b40b975688ced64d1145cfe2a37d99dc596c12c108e4a31924112c8",
+          "quote": "基金官网称上海半导体装备材料产业投资基金总规模200亿元、首期规模50亿元，面向半导体装备、材料及核心零部件，并列出多家机构投资人；相关规模为基金官网披露口径。",
+          "quote_hash": "51c4c844d4bc41fbbf0cab655e5f92bd7b53ce0d658a7a38d0e7ae530ceabd31"
+        },
+        {
+          "source_id": "shanghai_semicon_contact",
+          "source_url": "https://www.pdsti.com/Pc/ssemc/contactUs.html",
+          "source_title": "联系方式 - 上海半导体装备材料产业投资基金",
+          "source_content_hash": "08f8ce02bf40c0f4b2314d264edd3b9280d1dd9bf9300fb7426afcd46271d072",
+          "quote": "上海半导体装备材料产业投资基金官网联系方式页面公布联系电话 +86-21 5027 6328。",
+          "quote_hash": "9005d007f62788ccd337d899332f78710a79edeeb9da34c10e35adddf54ffa60"
+        },
         {
           "source_id": "FISRC-ce47b663ca256878",
           "source_url": "https://news.pedaily.cn/202606/565201.shtml",
@@ -213,7 +294,7 @@
           "quote_hash": "b6f57d95d963728c4d43c47ed9870de651f0c354cf8395d2fef343766a57704f"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

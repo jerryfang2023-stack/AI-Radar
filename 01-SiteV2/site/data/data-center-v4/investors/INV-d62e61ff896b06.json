@@ -129,21 +129,89 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "国海创新资本 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-19；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "国海创新资本投资管理有限公司成立于2012年，是国海证券从事一级市场股权投资基金管理业务的平台。官网披露注册资本20亿元、截至2024年末累计管理规模超过208亿元，累计投资逾百家企业；规模和案例数据均为机构自述。",
+      "facts": [
+        {
+          "field": "founded_date",
+          "label": "成立时间",
+          "value": "2012年1月",
+          "source_id": "guohai_official"
+        },
+        {
+          "field": "parent_company",
+          "label": "所属集团",
+          "value": "国海证券",
+          "source_id": "guohai_official"
+        },
+        {
+          "field": "registered_capital",
+          "label": "注册资本",
+          "value": "20亿元人民币",
+          "source_id": "guohai_official"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "官网披露累计资产管理规模",
+          "value": "超过208亿元（截至2024年末）",
+          "source_id": "guohai_official"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": [
+            "医疗健康",
+            "新能源",
+            "新材料",
+            "新一代信息技术",
+            "半导体",
+            "军工"
+          ],
+          "source_id": "guohai_business"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2012-01",
+          "description": "公司注册成立。",
+          "source_id": "guohai_official"
+        }
+      ],
       "track_record": [
+        {
+          "description": "官网称其累计投资逾百家企业，并列出多个投资机构奖项；此为机构自行公布的数量和荣誉，不代表投资回报。",
+          "source_id": "guohai_business"
+        },
         {
           "description": "融资来源记录：灵御智能 · 天使+轮 · 2026-05-19 · 天使轮投资机构 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-72156fa3f46ebcb1"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站及联系入口",
+          "value": "国海创新资本",
+          "url": "https://www.ghcxzb.com/",
+          "source_id": "guohai_official"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "guohai_official",
+          "source_url": "https://www.ghcxzb.com/",
+          "source_title": "国海创新资本官网",
+          "source_content_hash": "61d506a6a97941885a4dfaa09d866a551188254d9513c293c18d4dac286cacb0",
+          "quote": "国海创新资本投资管理有限公司成立于2012年1月，是国海证券从事一级市场股权投资基金管理业务的平台，注册资本20亿元；官网称截至2024年末累计资产管理规模超208亿元。",
+          "quote_hash": "bfbd2999fdfee2c1a3775f9141ec775968354410413267abf92a3b00dd08fe44"
+        },
+        {
+          "source_id": "guohai_business",
+          "source_url": "https://www.ghcxzb.com/business/3.html",
+          "source_title": "核心优势 | 国海创新资本",
+          "source_content_hash": "667c11ed82c91004a2f23f11eb68fb6503533a9b89b6d32e3e97173f6d6539ce",
+          "quote": "国海创新资本长期围绕医疗健康、新能源、新材料、新一代信息技术、半导体、军工等领域开展股权投资，官网称累计投资逾百家企业。",
+          "quote_hash": "4f58cabf9b79e4b03b44abe0c5a2a5773eed5de0561513a6e0d1a96d9706d920"
+        },
         {
           "source_id": "FISRC-72156fa3f46ebcb1",
           "source_url": "https://www.163.com/dy/article/KNTCC29Q0519QIKK.html",
@@ -153,7 +221,11 @@
           "quote_hash": "0e4edf9ff030ca4f49744d0501f6a772f8fd92bc0a55c58e2863097a7494f403"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

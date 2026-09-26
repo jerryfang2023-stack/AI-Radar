@@ -111,33 +111,84 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "蒲志强 的来源线索将其与中科沌序（创始人、董事长）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
-      "career": [
+      "summary": "中国科学院自动化研究所官网列出蒲志强的教育与研究任职；央广网采访将其称为沌序科技创始人、董事长。其研究方向包括群体智能、强化学习和无人集群决策。",
+      "current_roles": [
         {
-          "organization": "中科沌序",
-          "title": "创始人、董事长",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-7a9a5b8f84e844d6"
+          "title": "研究员",
+          "organization": "中国科学院自动化研究所",
+          "source_id": "cas_pu"
+        },
+        {
+          "title": "创始人、董事长（媒体采访口径）",
+          "organization": "沌序科技",
+          "source_id": "cnr_pu"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
+      "career": [
+        {
+          "organization": "中国科学院自动化研究所",
+          "title": "助理研究员",
+          "period": "2014-07至2016-10",
+          "description": "自动化所个人简历。",
+          "source_id": "cas_pu"
+        },
+        {
+          "organization": "中国科学院自动化研究所",
+          "title": "副研究员",
+          "period": "2016-11至2022-06",
+          "description": "自动化所个人简历。",
+          "source_id": "cas_pu"
+        },
+        {
+          "organization": "中国科学院自动化研究所",
+          "title": "研究员",
+          "period": "2022-07起（官网披露）",
+          "description": "复杂系统认知与决策重点实验室。",
+          "source_id": "cas_pu"
+        },
+        {
+          "organization": "沌序科技",
+          "title": "创始人、董事长",
+          "period": "2026年采访披露",
+          "description": "央广网报道所列创业身份；未据此推断企业业绩。",
+          "source_id": "cnr_pu"
+        }
+      ],
+      "education": [
+        {
+          "institution": "中国科学院大学",
+          "qualification": "工学博士",
+          "source_id": "cas_pu"
+        },
+        {
+          "institution": "武汉大学",
+          "qualification": "自动化系工学学士",
+          "source_id": "cas_pu"
+        }
+      ],
+      "experience_summary": "具备群体智能、无人集群和强化学习研究背景；自动化所官网记载其主持多项科研课题，具体论文、专利和研究项目以机构主页为准。",
       "track_record": [],
       "sources": [
         {
-          "source_id": "FISRC-7a9a5b8f84e844d6",
-          "source_url": "https://news.pedaily.cn/202605/564241.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "dea6b78e354b8fac",
-          "quote": "公司创始人、董事长蒲志强，系该实验室副主任、国家优秀青年科学基金获得者、中国科学院大学人工智能学院首席岗位教授，是国内最早从事群体智能研究的学者之一",
-          "quote_hash": "b1fc869910e1a731ed874f8efa87e86415f3b21ad3d9c087e0916e62aff51294"
+          "source_id": "cas_pu",
+          "source_url": "https://ia.cas.cn/rcdw/qch/202404/t20240422_7129831.html",
+          "source_title": "蒲志强-中国科学院自动化研究所",
+          "source_content_hash": "d344e31bc1069f6d34fd9f302ed55a4f506dabf849aaeffe0e43b4bfddbe1588",
+          "quote": "蒲志强，2005.9—2009.6武汉大学自动化系工学学士；2009.9—2014.6中国科学院大学工学博士。2022-07至今任中国科学院自动化研究所研究员。",
+          "quote_hash": "279e3eb56b1f9c1a960a0a080c0573691931fe2b92c84261c4ec37ab81116d99"
+        },
+        {
+          "source_id": "cnr_pu",
+          "source_url": "https://finance.cnr.cn/ycbd/20260819/t20260819_527782502.shtml",
+          "source_title": "专访蒲志强：中科院自动化所新孵化的AI公司为何选了“群体智能”赛道",
+          "source_content_hash": "cf92d387ce6c1a856b5af08fa1165bdf6745ae9cd8ee1ecf56fc00987d009ebf",
+          "quote": "沌序科技创始人、董事长蒲志强在接受央广网记者专访时指出；蒲志强是中国科学院自动化研究所研究员、复杂系统认知与决策国家级重点实验室副主任。",
+          "quote_hash": "bb37052f2da93cee8b2c401dd89920bd5f48de87686f25f54536011965461cb7"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
     }
   },
   "relatedEntities": [],

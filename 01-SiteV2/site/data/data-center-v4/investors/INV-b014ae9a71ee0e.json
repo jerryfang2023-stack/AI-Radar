@@ -178,13 +178,62 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "同歌创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "青岛同歌创业投资管理有限公司（同歌创投）是私募基金管理人。歌尔股份2022年公告披露，歌尔股份当时持有其51%股权；同歌创投作为执行事务合伙人参与设立同歌一期基金。该基金认缴规模5.5556亿元，投资方向包括先进制造、智能网联汽车、增强现实/虚拟现实和半导体。以上股权与基金规模信息反映公告时点，不应外推为当前管理规模。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "工商名称",
+          "value": "青岛同歌创业投资管理有限公司",
+          "source_id": "tongge_goertek_2022"
+        },
+        {
+          "field": "fund_manager_status",
+          "label": "管理人登记",
+          "value": "歌尔股份公告称已在中国证券投资基金业协会登记为私募基金管理人（公告披露时）",
+          "source_id": "tongge_goertek_2022"
+        },
+        {
+          "field": "parent_company",
+          "label": "股权关联（公告时）",
+          "value": "歌尔股份持股51%",
+          "source_id": "tongge_goertek_2022"
+        },
+        {
+          "field": "fund_relationship",
+          "label": "管理基金案例",
+          "value": "作为执行事务合伙人及基金管理人参与设立青岛同歌一期创业投资基金合伙企业（有限合伙）",
+          "source_id": "tongge_goertek_2022"
+        },
+        {
+          "field": "fund_size",
+          "label": "同歌一期认缴规模",
+          "value": "人民币5.5556亿元",
+          "source_id": "tongge_goertek_2022"
+        },
+        {
+          "field": "investment_focus",
+          "label": "同歌一期投资方向",
+          "value": [
+            "先进制造",
+            "智能网联汽车",
+            "增强现实/虚拟现实",
+            "半导体"
+          ],
+          "source_id": "tongge_goertek_2022"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2022-02-09",
+          "description": "歌尔股份公告披露青岛同歌创业投资管理有限公司成立时间为2022年2月9日。",
+          "source_id": "tongge_goertek_2022"
+        },
+        {
+          "date": "2022-07-18",
+          "description": "参与签署同歌一期基金合伙协议；一期基金认缴规模5.5556亿元。",
+          "source_id": "tongge_goertek_2022"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：星海图 · B+轮 · 2026-04-02 · 历史轮次投资方 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -195,8 +244,24 @@
           "source_id": "FISRC-2707f48aa6e437b7"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "股东及管理关系披露来源",
+          "value": "歌尔股份官方网站",
+          "url": "https://www.goertek.com/",
+          "source_id": "tongge_goertek_2022"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "tongge_goertek_2022",
+          "source_url": "https://www.goertek.com/Upload/202209/20220914154544_0865.PDF",
+          "source_title": "歌尔股份：关于与子公司合作投资的公告（2022-053）",
+          "source_content_hash": "97a7e6b97331ae6f243904b587947239220df7c244b50969647b1d4c0d144067",
+          "quote": "本合伙企业将对先进制造、智能网联汽车、增强现实/虚拟现实、半导体领域的未上市创业企业进行股权或准股权投资。",
+          "quote_hash": "81a7e9d3706dd17f436859199a633fb365360b55d0799e9b095c1dbd41f88d02"
+        },
         {
           "source_id": "FISRC-7a614400d44a7041",
           "source_url": "https://news.pedaily.cn/202604/562366.shtml",
@@ -214,7 +279,11 @@
           "quote_hash": "e5444bec673d96fac26adbeaf60ee6448ecf4736d55fe8154e2ddcfef313da89"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     },
     "translations": {
       "zh-CN": {

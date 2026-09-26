@@ -138,20 +138,125 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "上海国投先导人工智能产业母基金 当前按“投资组织”收录。最新融资披露记录日期为 2024-09-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "上海人工智能母基金由上海国投先导管理，总规模为人民币225亿元，面向上海人工智能产业生态建设。管理方公开的重点方向包括通用人工智能、智能算力、人形机器人、垂类大模型和端侧AI；上海市国资委披露其已投资布局具身智能项目它石智航。",
+      "facts": [
+        {
+          "field": "manager",
+          "label": "管理人",
+          "value": "上海国投先导私募基金管理有限公司（上海国投先导）",
+          "source_id": "shanghai_ai_mother_fund_manager"
+        },
+        {
+          "field": "fund_scale",
+          "label": "基金总规模",
+          "value": "人民币225亿元（截至2026年7月官方披露）",
+          "source_id": "shanghai_ai_mother_fund_scale"
+        },
+        {
+          "field": "investment_focus",
+          "label": "管理方公布的重点方向",
+          "value": [
+            "通用人工智能",
+            "智能算力系统",
+            "人形机器人",
+            "垂类大模型",
+            "端侧AI及跨学科应用"
+          ],
+          "source_id": "shanghai_ai_mother_fund_focus"
+        },
+        {
+          "field": "management_company_background",
+          "label": "管理公司背景",
+          "value": "上海国投先导成立于2024年5月，是上海国有资本投资有限公司在市国资委指导下设立的全资子公司；该日期和股权关系指管理公司，不代表母基金的设立日期。",
+          "source_id": "shanghai_ai_mother_fund_manager"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2024-05",
+          "description": "管理公司上海国投先导成立；此为管理公司节点，不作为母基金设立日期。",
+          "source_id": "shanghai_ai_mother_fund_manager"
+        }
+      ],
       "track_record": [
+        {
+          "description": "上海市国资委报道披露，上海国投先导人工智能母基金参与布局它石智航；该公司于2026年4月宣布完成4.55亿美元Pre-A轮融资。报道将其描述为基金在具身智能方向的重要投资落子。",
+          "source_id": "shanghai_ai_mother_fund_its"
+        },
         {
           "description": "融资来源记录：壁仞科技 · 多轮融资 · 2024-09-12 · 本轮联合领投 · 超过50亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-8a38ca95373e5124"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "管理公司官网",
+          "value": "上海国投先导",
+          "url": "https://www.ssci-leadingfund.com/",
+          "source_id": "shanghai_ai_mother_fund_contact"
+        },
+        {
+          "kind": "email",
+          "label": "管理公司公开邮箱（未注明为融资申请专线）",
+          "value": "contact@sscilf.com",
+          "source_id": "shanghai_ai_mother_fund_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "管理公司公开电话",
+          "value": "+86 21 6321 2188",
+          "source_id": "shanghai_ai_mother_fund_contact"
+        },
+        {
+          "kind": "address",
+          "label": "管理公司公开地址",
+          "value": "上海市黄浦区外马路688号7楼",
+          "source_id": "shanghai_ai_mother_fund_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "shanghai_ai_mother_fund_manager",
+          "source_url": "https://www.ssci-leadingfund.com/",
+          "source_title": "上海国投先导｜企业介绍",
+          "source_content_hash": "13e52ffa46a6e91f8016ef73599350f54ec2e0b5229a2b2d7736da53c207f444",
+          "quote": "上海国投先导私募基金管理有限公司（简称“上海国投先导”）成立于2024年5月，是上海国有资本投资有限公司在市国资委指导下设立的全资子公司，通过专业化的基金管理，组建三大先导产业母基金，发挥对上海市三大先导产业创新发展的战略引导功能。",
+          "quote_hash": "f9df1fbd6b1c2d7de41468fafa29291752e47440d4a52fdca90c20974c484267"
+        },
+        {
+          "source_id": "shanghai_ai_mother_fund_scale",
+          "source_url": "https://www.gzw.sh.gov.cn/shgzw_zxzx_gqdt/20260720/73e1e569b365420b9ee83fb115411c0d.html",
+          "source_title": "上海市国资委｜上海国投公司构建AI产业创新生态",
+          "source_content_hash": "762a5b203e54124074e85617916c00406d1d7daec575aa552a5f3a14a193b43d",
+          "quote": "母基金端，上海人工智能母基金由上海国投先导管理，总规模225亿元，紧扣上海人工智能高地建设要求，依托国有资本产业牵引、生态培育双重功能，搭建前瞻性、体系化产业生态，形成覆盖算力、数据、模型、具身、端侧、应用的全栈式布局，以资本矩阵赋能人工智能产业高质量发展。",
+          "quote_hash": "bbf1fe140f6b2dda31359951829dce0581a3fad292533860b881b13569a1a95e"
+        },
+        {
+          "source_id": "shanghai_ai_mother_fund_focus",
+          "source_url": "https://www.ssci-leadingfund.com/",
+          "source_title": "上海国投先导｜人工智能母基金",
+          "source_content_hash": "13e52ffa46a6e91f8016ef73599350f54ec2e0b5229a2b2d7736da53c207f444",
+          "quote": "人工智能母基金重点投向：通用人工智能、智能算力系统、人形机器人、垂类大模型、端侧 AI等核心技术和跨学科应用领域。",
+          "quote_hash": "56ab9c11eb0ff58fe529957c707e7f865737f6c6b9a318477cf8be568c908681"
+        },
+        {
+          "source_id": "shanghai_ai_mother_fund_its",
+          "source_url": "https://www.gzw.sh.gov.cn/shgzw_zxzx_gqdt/20260720/73e1e569b365420b9ee83fb115411c0d.html",
+          "source_title": "上海市国资委｜上海国投公司构建AI产业创新生态",
+          "source_content_hash": "762a5b203e54124074e85617916c00406d1d7daec575aa552a5f3a14a193b43d",
+          "quote": "4月16日，它石智航宣布完成4.55亿美元Pre-A轮融资，刷新中国具身智能领域最高单轮融资纪录，这是上海国投先导人工智能母基金在具身智能赛道进入多技术路线、多层次梯队化布局的重要落子。",
+          "quote_hash": "768c75ac98cdb5bd67ff34ae1fdb23dddb292582b82d32537829e774dd59a82c"
+        },
+        {
+          "source_id": "shanghai_ai_mother_fund_contact",
+          "source_url": "https://www.ssci-leadingfund.com/",
+          "source_title": "上海国投先导｜联系我们",
+          "source_content_hash": "13e52ffa46a6e91f8016ef73599350f54ec2e0b5229a2b2d7736da53c207f444",
+          "quote": "86 021-63212188；上海市黄浦区外马路688号7楼；contact@sscilf.com。",
+          "quote_hash": "65a8f087516b87c0cf25327d1abed64f5b57aeeae11317b49071a4add025a228"
+        },
         {
           "source_id": "FISRC-8a38ca95373e5124",
           "source_url": "https://www.eefocus.com/article/1814720.html",
@@ -161,7 +266,9 @@
           "quote_hash": "ba9bb2957eeb356c61db29a1d695d506f695179767076f4c4c058b06b667a98e"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

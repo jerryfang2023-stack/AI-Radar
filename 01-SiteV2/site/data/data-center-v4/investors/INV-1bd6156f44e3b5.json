@@ -129,21 +129,71 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "36氪 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "36氪是以媒体为核心的新经济服务与商业信息平台，官网列出的服务包括融资及上市辅导、投资机构连接、项目库和投融资信息服务。公开资料证明其经营创投相关服务，但未能证明“36氪”这个品牌名称本身对应一个独立直接投资基金；融资数据库中的“投资方”归属需按具体主体进一步核实。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "科技商业媒体与新经济企业服务平台",
+          "source_id": "36kr_about"
+        },
+        {
+          "field": "services",
+          "label": "官网列示服务",
+          "value": [
+            "融资及上市辅导",
+            "投资机构连接",
+            "项目库",
+            "投融资信息服务",
+            "企业品牌与商业服务"
+          ],
+          "source_id": "36kr_about"
+        },
+        {
+          "field": "public_listing",
+          "label": "上市信息",
+          "value": "36氪官网称公司于2019年11月8日在纳斯达克上市，股票代码KRKR",
+          "source_id": "36kr_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2019-11-08",
+          "description": "官网称36氪登陆美国纳斯达克。",
+          "source_id": "36kr_about"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：PureblueAI清蓝 · 天使+轮 · 2026-08-28 · 天使轮跟投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fa0e608145757727"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站及企业服务入口",
+          "value": "36氪",
+          "url": "https://36kr.com/pages/about",
+          "source_id": "36kr_about"
+        },
+        {
+          "kind": "email",
+          "label": "商务联系邮箱",
+          "value": "marketing@36kr.com",
+          "url": "https://36kr.com/pages/about",
+          "source_id": "36kr_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "36kr_about",
+          "source_url": "https://36kr.com/pages/about",
+          "source_title": "关于我们_创投_资讯_科技_36氪",
+          "source_content_hash": "db202c5bbbaaae5d77bcbc2a8741335476a86481cab5154c729d49954c05a535",
+          "quote": "36氪是一家以媒体为旗帜的新经济服务平台",
+          "quote_hash": "9c907c270154f3dca39e41355a0b33271cb46f7fc285199f8a22b1227f04cb41"
+        },
         {
           "source_id": "FISRC-fa0e608145757727",
           "source_url": "https://www.pureblueai.com/about-us",
@@ -153,7 +203,11 @@
           "quote_hash": "44c30a2a6f7890790b2be4be4fdcfb833f29a0da36056ff196fb2740acfb90d6"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

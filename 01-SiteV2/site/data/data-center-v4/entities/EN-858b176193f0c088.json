@@ -111,33 +111,52 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "Will Wang 的来源线索将其与Even Realities Technology（创始人兼CEO）关联。来源日期：2026-09-05；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "王骁逸（Will Wang）是深圳智能眼镜公司Even Realities创始人兼CEO。TechCrunch报道其曾参与Apple Watch和iPhone相关工作；公司于2023年成立，主打带抬头显示的轻量智能眼镜，并强调隐私设计。公开来源未确认其完整教育履历和Apple具体职级。",
+      "current_roles": [
+        {
+          "title": "创始人兼CEO",
+          "organization": "Even Realities",
+          "source_id": "will_even_tc"
+        }
+      ],
       "career": [
         {
-          "organization": "Even Realities Technology",
+          "organization": "Apple",
+          "title": "硬件工程工作，参与Apple Watch和iPhone相关产品",
+          "period": "加入Even Realities之前；具体年份未披露",
+          "description": "TechCrunch报道其曾在Apple从事相关研发/产品工作，未披露具体职级和任期。",
+          "source_id": "will_even_tc"
+        },
+        {
+          "organization": "Even Realities",
           "title": "创始人兼CEO",
-          "period": "来源记录于 2026-09-05；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-14c7002d9d31f5c4"
+          "period": "公司于2023年成立；2026年报道时在任",
+          "description": "负责智能眼镜公司发展；对产品路线和隐私设计的描述来自其接受媒体采访。",
+          "source_id": "will_even_tc"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
-      "sources": [
+      "experience_summary": "从Apple消费电子产品研发经历转向可穿戴显示设备创业；教育背景和更早职业经历尚未由可靠公开来源证实。",
+      "track_record": [
         {
-          "source_id": "FISRC-14c7002d9d31f5c4",
-          "source_url": "https://www.idnfinancials.com/cn/news/65720/%E5%89%8D%E8%8B%B9%E6%9E%9C%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%9A%84ai%E7%9C%BC%E9%95%9C%E8%8E%B7%E5%BE%971-5%E4%BA%BF%E7%BE%8E%E5%85%83%E8%9E%8D%E8%B5%84",
-          "source_title": "融资披露来源",
-          "source_content_hash": "3135decac0924349",
-          "quote": "Even Realities的创始人兼首席执行官Will Wang曾于2016年至2018年在苹果公司工作",
-          "quote_hash": "dca422a2bde677b13bc7ebe1d2fb5add59aa1cbc3801411b2825971eb6e9b30b"
+          "description": "TechCrunch称Even Realities于2024年推出G1并超过一万副销售目标；此为CEO向媒体提供的公司经营数据。",
+          "source_id": "will_even_tc"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "sources": [
+        {
+          "source_id": "will_even_tc",
+          "source_url": "https://techcrunch.com/2026/07/06/smart-glasses-maker-even-realities-hits-1b-valuation-with-150m-funding-led-by-meituan-tencent/",
+          "source_title": "TechCrunch：Even Realities融资与创始人Will Wang",
+          "source_content_hash": "0dc46086fb41fca883899a9adc22ed38ab071baf883b0541bb982bb541579417",
+          "quote": "TechCrunch报道王骁逸（Will Wang）为Even Realities创始人兼CEO，曾在Apple参与Apple Watch和iPhone相关工作，公司于2023年成立。",
+          "quote_hash": "b5222823b74d7ca96f4fca9d1351d3f1e7ee8bbc7032b7ae4adb0389b51e27a2"
+        }
+      ],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "使用TechCrunch对创始人采访及融资报道；关于销售情况标记为公司CEO披露，未写入未核实的学历、具体职级或此前公司。",
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

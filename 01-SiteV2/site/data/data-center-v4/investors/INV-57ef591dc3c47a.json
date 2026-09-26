@@ -137,21 +137,153 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "博世创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "博世创投（Bosch Ventures，法定名称Robert Bosch Venture Capital GmbH）是博世集团的企业风险投资公司，面向全球深科技初创企业投资。其官网列出的重点涉及AI、自动化、电气化、先进制造、半导体、气候科技和医疗健康；博世2025年公告披露新一轮约2.5亿欧元创业投资承诺。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "法定名称",
+          "value": "Robert Bosch Venture Capital GmbH",
+          "source_id": "bosch_venture_press"
+        },
+        {
+          "field": "parent_company",
+          "label": "母集团",
+          "value": "Bosch Group（博世集团）",
+          "source_id": "bosch_venture_press"
+        },
+        {
+          "field": "investment_stages",
+          "label": "投资阶段",
+          "value": [
+            "早期",
+            "部分种子期",
+            "后续阶段"
+          ],
+          "source_id": "bosch_strategy"
+        },
+        {
+          "field": "focus_sectors",
+          "label": "官网列示投资方向",
+          "value": [
+            "AI与深度学习",
+            "自动化与数字化",
+            "半导体与下一代计算",
+            "先进制造",
+            "出行",
+            "气候科技",
+            "医疗健康"
+          ],
+          "source_id": "bosch_strategy"
+        },
+        {
+          "field": "fund_commitment",
+          "label": "新一轮投资承诺（2025年公告）",
+          "value": "约2.5亿欧元（公告同时折合约2.7亿美元）",
+          "source_id": "bosch_venture_press"
+        },
+        {
+          "field": "active_investments",
+          "label": "活跃组合（公告披露）",
+          "value": "60余项",
+          "source_id": "bosch_venture_press"
+        },
+        {
+          "field": "cumulative_investments",
+          "label": "全球累计投资（机构披露）",
+          "value": "100余项",
+          "source_id": "bosch_venture_press"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2007",
+          "description": "博世官方资料记载Bosch Ventures自2007年成立以来已在全球投资100余家企业。",
+          "source_id": "bosch_venture_press"
+        },
+        {
+          "date": "2018",
+          "description": "博世官方资料记载Open Bosch项目于2018年启动，为初创企业与博世业务单元提供合作通道。",
+          "source_id": "bosch_venture_press"
+        },
+        {
+          "date": "2025",
+          "description": "博世公告宣布向新一轮国际创业投资承诺约2.5亿欧元。",
+          "source_id": "bosch_venture_press"
+        }
+      ],
       "track_record": [
+        {
+          "description": "博世官方公告称其累计全球投资超过100项，当前超过60项活跃投资，并列举Xometry、IonQ等上市退出案例；相关数字及案例为机构披露，不等同于基金回报率。",
+          "source_id": "bosch_venture_press"
+        },
         {
           "description": "融资来源记录：博银合创 · Pre-A轮 · 2026-05-15 · 本轮参投 · 3亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-957ccf12eb78ad84"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Bosch Ventures",
+          "url": "https://bosch.ventures/",
+          "source_id": "bosch_contact"
+        },
+        {
+          "kind": "email",
+          "label": "斯图加特办公室一般联系",
+          "value": "Info.RBVC@de.bosch.com",
+          "url": "https://bosch.ventures/",
+          "source_id": "bosch_contact"
+        },
+        {
+          "kind": "address",
+          "label": "斯图加特办公室",
+          "value": "Mittlerer Pfad 2, 70499 Stuttgart-Weilimdorf, Germany",
+          "url": "https://bosch.ventures/",
+          "source_id": "bosch_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "上海办公室电话",
+          "value": "+86 (21) 2218-1094",
+          "url": "https://bosch.ventures/",
+          "source_id": "bosch_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "bosch_venture_press",
+          "source_url": "https://us.bosch-press.com/pressportal/us/en/press-release-27392.html",
+          "source_title": "Bosch strengthens startups with new round of ~$270 million in sixth venture capital fund",
+          "source_content_hash": "7c3673757b9fb3460be67491d20a0c50239eca69f0ee2085f68ab0823d404ae6",
+          "quote": "Bosch Ventures, a Bosch subsidiary, announces an international venture capital commitment of around $270 million USD (250 million euros) to startups.",
+          "quote_hash": "6af6c0437eb05370534e8a57f7066f777deb511265d0f039c9e7550f4432404a"
+        },
+        {
+          "source_id": "bosch_venture_portfolio",
+          "source_url": "https://us.bosch-press.com/pressportal/us/en/press-release-27392.html",
+          "source_title": "Bosch Ventures portfolio and exits",
+          "source_content_hash": "7c3673757b9fb3460be67491d20a0c50239eca69f0ee2085f68ab0823d404ae6",
+          "quote": "The Bosch Ventures portfolio currently consists of more than 60 active investments.",
+          "quote_hash": "c8d33e2fb997aa7c17d804f32c91faf5e7b2973df2f27fd9fbd222827e88b0c2"
+        },
+        {
+          "source_id": "bosch_strategy",
+          "source_url": "https://bosch.ventures/investment-strategy/",
+          "source_title": "Investment Strategy | Bosch Ventures",
+          "source_content_hash": "5e3da6686d60cab9d757dc0c8bb0cd62a8540dfbc35ce30e82800790e69dd110",
+          "quote": "Having our investment sweet spot in early stage we are also looking into later stage companies, as well as seed stage in selected cases.",
+          "quote_hash": "641a297c568aac6ea284219930436b3f2da428b07bd52192e58b57f59009e3cf"
+        },
+        {
+          "source_id": "bosch_contact",
+          "source_url": "https://bosch.ventures/",
+          "source_title": "Home | Bosch Ventures",
+          "source_content_hash": "35129b4c8a79e3b217d7d15bf699bcd050dd965c9f51b41f63d38c7e18431f8a",
+          "quote": "Stuttgart: Robert Bosch Venture Capital GmbH, Mittlerer Pfad 2; Info.RBVC@de.bosch.com; +49 (711) 811-54613.",
+          "quote_hash": "219ad29d0cffef24431359dab02e506985b40ddb743d9b7d4f5c39ec6ca0e06e"
+        },
         {
           "source_id": "FISRC-957ccf12eb78ad84",
           "source_url": "https://news.pedaily.cn/202605/563918.shtml",
@@ -161,7 +293,11 @@
           "quote_hash": "5834c5ba243ef0633917ac76154b2c5b967c085df3dbe6e5017708196318f003"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "identity_status": "verified",
+      "coverage_note": "投资策略、基金承诺、组合统计与退出案例均来自博世或博世创投官方资料；组合数量和投资承诺是机构披露口径。联系邮箱标记为斯图加特办公室一般联系，并非公开BP专用邮箱。",
+      "last_verified_at": "2026-09-26"
     }
   }
 }

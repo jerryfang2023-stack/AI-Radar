@@ -131,19 +131,104 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "合肥产投集团 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "本库关联的中科类脑记录指向该集团被列为2020年A轮历史投资方；2026年B+轮报道提及的是历史股东，不能据此视为集团参与B+轮。未披露2020年投资所用基金、子公司、金额或当前持股状态。联系方式为集团官网一般联系方式，不是已确认的项目申报专线。",
+      "summary": "合肥市产业投资控股（集团）有限公司（合肥产投集团）是合肥市属国有资本投资平台，2015年由合肥市国有资产控股有限公司与合肥市工业投资控股有限公司合并组建，围绕产业投融资、基金运营、科技创新和产业平台建设开展工作。集团自述其自主管理基金、累计投资企业及IPO成果规模较大，相关口径均保留发布机构和统计时点。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "企业名称",
+          "value": "合肥市产业投资控股（集团）有限公司",
+          "source_id": "hf_industry_group_overview"
+        },
+        {
+          "field": "ownership_and_role",
+          "label": "股权背景与平台定位",
+          "value": "由合肥市国有资产控股有限公司、合肥市工业投资控股有限公司合并组建；合肥市属国有资本投资公司，聚焦产业投融资与创新推进。",
+          "source_id": "hf_industry_group_overview"
+        },
+        {
+          "field": "registered_capital",
+          "label": "注册资本（集团2025年公告）",
+          "value": "人民币175.77亿元。",
+          "source_id": "hf_industry_group_overview"
+        },
+        {
+          "field": "financial_scale",
+          "label": "财务规模（截至2024年12月底）",
+          "value": "集团披露资产总额人民币1228亿元、净资产人民币552亿元。",
+          "source_id": "hf_industry_group_overview"
+        },
+        {
+          "field": "fund_platform",
+          "label": "基金管理与覆盖范围（集团披露）",
+          "value": "自主管理基金61支、总规模超人民币1000亿元、累计投资企业近1000家。",
+          "source_id": "hf_industry_group_fund_track"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2015-03",
+          "description": "由合肥市国有资产控股有限公司与合肥市工业投资控股有限公司合并组建。",
+          "source_id": "hf_industry_group_overview"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：中科类脑 · B+轮 · 2026-09-07 · A轮投资方 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "集团2025年招聘公告披露：累计投资企业近1000家，51个项目实现IPO或借壳上市，25家企业登陆科创板；这是集团整体统计，不等同于单只基金业绩。",
+          "source_id": "hf_industry_group_fund_track"
+        },
+        {
+          "description": "融资数据库所引用的历史轮次资料显示，合肥产投集团被列为中科类脑2020年10月A轮投资方；该记录没有披露集团使用的基金载体或投资金额，不能据此认定其参与后续B+轮。",
           "source_id": "FISRC-4cd330eaa5f3d5fc"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "合肥产投集团",
+          "url": "https://www.hfctjt.com/",
+          "source_id": "hf_industry_group_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "集团官网公开总机",
+          "value": "+86 551 6264 7739",
+          "source_id": "hf_industry_group_contact"
+        },
+        {
+          "kind": "address",
+          "label": "集团官网公开地址",
+          "value": "合肥市政务区潜山路100号琥珀五环国际A座21—23楼",
+          "source_id": "hf_industry_group_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "hf_industry_group_overview",
+          "source_url": "https://www.hfctjt.com/detail/17403",
+          "source_title": "合肥产投集团｜2025年社会招聘公告（公司简介）",
+          "source_content_hash": "18badba448b25a5ed5ad03b35a1bc5e7b1360a5b46d03d363d506bc4b562295d",
+          "quote": "合肥市产业投资控股（集团）有限公司成立于2015年3月，由合肥市国有资产控股有限公司和合肥市工业投资控股有限公司合并组建，是合肥市属国有资本投资公司，定位于产业投融资和创新推进的国有资本投资平台。集团注册资本175.77亿元，国内主体信用评级AAA级，国际信用评级BBB级。截至2024年12月底，集团资产总额达到1228亿元，净资产总额552亿元。",
+          "quote_hash": "901d2484660c3577f12a6ae51faa10b4a7d750f37c43bcb809c0499eac6d0900"
+        },
+        {
+          "source_id": "hf_industry_group_fund_track",
+          "source_url": "https://www.hfctjt.com/detail/17403",
+          "source_title": "合肥产投集团｜基金运营与投资成果（2025年公告）",
+          "source_content_hash": "4473cc00396b9239c6739e0f3f8781429161867e71d13df56b42c85579189c1e",
+          "quote": "集团设立自主管理型基金61支，总规模超千亿元，累计投资企业近千家，其中51个项目实现IPO或借壳上市，25家企业登陆科创板。",
+          "quote_hash": "6133c107de1e1d1ebfa10e4044cef2347643485c8dcb19205fb46f61ff0507b7"
+        },
+        {
+          "source_id": "hf_industry_group_contact",
+          "source_url": "https://www.hfctjt.com/list/001010",
+          "source_title": "合肥产投集团｜官网成员单位与联系方式",
+          "source_content_hash": "629e98b1f1c38bde1c6e2f1d959782ba2af61f1e882d0ef9b50fb7e7a4494cbf",
+          "quote": "合肥市产业投资控股（集团）有限公司官网公开地址为合肥市政务区潜山路100号琥珀五环国际A座21—23楼，电话0551-62647739。",
+          "quote_hash": "83e50c8297ec0165921d0f3e1f5906a7eb74bde1a848b2f9188caf1517185236"
+        },
         {
           "source_id": "FISRC-4cd330eaa5f3d5fc",
           "source_url": "https://pitchhub.36kr.com/project/1678250824463368",
@@ -153,7 +238,7 @@
           "quote_hash": "8c4596a390f6ae35cba538d7b05477bf2548bb2231d5cabd716f22c6c1a630da"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

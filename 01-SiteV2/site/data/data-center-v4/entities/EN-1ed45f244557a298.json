@@ -111,33 +111,78 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "赵世豪 的来源线索将其与新智具身（首席执行官）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "赵世豪是新智具身创始人兼CEO，研究背景涉及视频世界模型和生成式模型。公开融资报道介绍其本科、硕士毕业于复旦大学，博士阶段就读香港大学，创业前曾在微软全球研究院及阿里通义实验室从事研究。",
+      "current_roles": [
+        {
+          "title": "创始人、CEO",
+          "organization": "新智具身",
+          "source_id": "zhaoshihao_sina"
+        }
+      ],
       "career": [
         {
+          "organization": "微软全球研究院",
+          "title": "核心研究员",
+          "period": "创业前；具体任职时间未披露",
+          "description": "公开报道所述前期研究经历。",
+          "source_id": "zhaoshihao_sina"
+        },
+        {
+          "organization": "阿里通义实验室",
+          "title": "核心研究员",
+          "period": "创业前；具体任职时间未披露",
+          "description": "公开报道所述前期研究经历，研究方向包括视频世界模型和生成式模型。",
+          "source_id": "zhaoshihao_sina"
+        },
+        {
           "organization": "新智具身",
-          "title": "首席执行官",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-e666934339b27e85"
+          "title": "创始人、CEO",
+          "period": "2026年公开融资报道时在任",
+          "description": "从事触觉具身智能及机器人技术创业。",
+          "source_id": "zhaoshihao_company"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "复旦大学",
+          "qualification": "本科、硕士",
+          "source_id": "zhaoshihao_sina"
+        },
+        {
+          "institution": "香港大学",
+          "qualification": "博士阶段学习；学位尚未完成或取得的状态未公开，故不标注博士学位",
+          "source_id": "zhaoshihao_sina"
+        }
+      ],
+      "experience_summary": "公开报道描述其具有高校研究训练及微软、阿里研究机构经历，研究兴趣涵盖视频世界模型与生成式模型；履历来自公司融资报道，未获得本人或前雇主履历页交叉核验。",
+      "track_record": [
+        {
+          "description": "作为新智具身创始人公开推进触觉作为具身智能输入模态的技术方向；公司产品和融资数据依公开报道，不作为独立性能评估。",
+          "source_id": "zhaoshihao_company"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-e666934339b27e85",
-          "source_url": "https://news.pedaily.cn/202605/564455.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "a3d55e3960392661",
-          "quote": "CEO赵世豪出生于1997年，本硕毕业于复旦大学，博士就读于香港大学。",
-          "quote_hash": "ed3b85fbe20534dfbdcb92074393f5fe914f81f0008c5b8ff90dfc30321b7dee"
+          "source_id": "zhaoshihao_sina",
+          "source_url": "https://finance.sina.com.cn/roll/2026-05-27/doc-inhzieiu0899612.shtml",
+          "source_title": "新智具身融资及团队背景报道 - 新浪财经",
+          "source_content_hash": "29a931fb49d20dcfb6f8380bf2e85fd19ada604be320bbba7286ec27ad32f9af",
+          "quote": "融资报道介绍赵世豪的复旦大学、香港大学学习经历及微软全球研究院、阿里通义实验室研究经历。",
+          "quote_hash": "7d6025a3d80eb4486cb5fa904bfb00580e6c82a0b0150ed395add87a82fa81d6"
+        },
+        {
+          "source_id": "zhaoshihao_company",
+          "source_url": "https://neoteai.com/",
+          "source_title": "新智具身官方网站",
+          "source_content_hash": "da75c885f9241095569407b3862f5c7cc0466d6cb52bc9e373ab96a10bef516b",
+          "quote": "官网介绍新智具身的触觉具身智能方向，并记录赵世豪参与公司公开活动。",
+          "quote_hash": "628d0b116a11b918cb1f140567c488980d3fb0fcc4fa992b502a5d5661cd54a0"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "教育和早期履历依据融资报道，尚无校方或前雇主资料交叉核验；博士阶段只记为就读，不推断已获学位。",
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

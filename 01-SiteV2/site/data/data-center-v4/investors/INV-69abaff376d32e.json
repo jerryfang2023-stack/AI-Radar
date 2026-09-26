@@ -186,14 +186,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Better Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Better Capital 是一家面向印度及全球创业者的风险投资机构，官网将其定位为支持企业从创立初期（day zero）起步的投资方。官网自述组合覆盖200多家公司和700多位创始人，列示的组合涵盖AI与软件、金融服务、气候与可持续、消费、深科技等领域；统计数据与企业估值属于官网自述。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段定位",
+          "value": "创立初期（day zero）",
+          "source_id": "better_home"
+        },
+        {
+          "field": "portfolio_count",
+          "label": "组合公司（官网自述）",
+          "value": "200+",
+          "source_id": "better_home"
+        },
+        {
+          "field": "founder_count",
+          "label": "支持创始人（官网自述）",
+          "value": "700+",
+          "source_id": "better_home"
+        },
+        {
+          "field": "sectors",
+          "label": "官网展示领域",
+          "value": [
+            "AI与软件",
+            "金融服务与基础设施",
+            "气候与可持续",
+            "消费",
+            "深科技、科学与工程"
+          ],
+          "source_id": "better_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官网展示Slice、Teachmint、Varaha、SolarSquare、Yulu、Rupeek等组合案例，并将其按企业估值区间分类；估值和组合表现为官网展示口径，未独立核验。",
+          "source_id": "better_home"
+        },
         {
           "description": "融资来源记录：Smallest.ai · A轮 · 2026-08-01 · 本轮参投 · 1300万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6b1944359351ee14"
@@ -203,8 +234,24 @@
           "source_id": "FISRC-30eaf94a55c202d8"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Better Capital",
+          "url": "https://www.bettercapital.vc/",
+          "source_id": "better_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "better_home",
+          "source_url": "https://www.bettercapital.vc/",
+          "source_title": "Better Capital - 官方网站",
+          "source_content_hash": "01db3e90cd4ee8e3a1232c7e708593a9739099521ab6335c8d247bea9a0457b4",
+          "quote": "Better Capital官网称其为面向创立初期创新者的全球风险投资机构，自述支持200多家公司和700多位创始人，并展示AI与软件、金融服务、气候、消费及深科技等组合领域。",
+          "quote_hash": "3ce3e92a48478e77046f2240841b62e197ca8e780e31c8ee6f5f835cac96823f"
+        },
         {
           "source_id": "FISRC-6b1944359351ee14",
           "source_url": "https://www.cmswire.com/customer-experience/smallestai-lands-13m-series-a-for-voice-ai/",
@@ -222,7 +269,11 @@
           "quote_hash": "5d5aad7fcded66830bdae4cc4f0a666f9603e5e98df892d7aa2435e00d256abe"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构定位、组合规模和行业分类来自Better Capital官网自述；公司数、创始人数及其估值分类未独立核验。",
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization"
     }
   }
 }

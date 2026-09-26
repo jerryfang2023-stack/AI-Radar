@@ -190,14 +190,57 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Hitachi Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Hitachi Ventures GmbH是日立的战略企业风险投资部门。日立官网2025年披露其管理资产规模为10亿美元，主要投资对日立具有战略意义的早期和成长期科技公司，方向包括环境与循环经济、能源、出行、AI与数字技术、工业自动化及生命科学。日立于2025年宣布设立第四只企业风险投资基金，基金规模4亿美元。基金和投资业绩为公司披露口径。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构性质",
+          "value": "日立战略企业风险投资部门",
+          "source_id": "hitachi_ventures_press_2025"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "管理资产（官网披露）",
+          "value": "10亿美元",
+          "source_id": "hitachi_ventures_press_2025"
+        },
+        {
+          "field": "focus",
+          "label": "投资方向",
+          "value": [
+            "环境与循环经济",
+            "能源",
+            "出行",
+            "AI与数字技术",
+            "工业自动化",
+            "生命科学"
+          ],
+          "source_id": "hitachi_ventures_press_2025"
+        },
+        {
+          "field": "fund_iv",
+          "label": "HV Fund IV",
+          "value": "4亿美元；公告时为计划于2025-04-01设立",
+          "source_id": "hitachi_ventures_press_2025"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2019-06-01",
+          "description": "日立官方公告列Hitachi Ventures GmbH成立日期为2019年6月1日。",
+          "source_id": "hitachi_ventures_press_2025"
+        },
+        {
+          "date": "2025-02-05",
+          "description": "日立宣布第四只企业风险投资基金HV Fund IV，规模4亿美元，公告计划于2025年4月设立。",
+          "source_id": "hitachi_ventures_press_2025"
+        }
+      ],
       "track_record": [
+        {
+          "description": "日立官方披露HV Fund III规模3亿美元，HV Fund IV计划规模4亿美元；官网首页展示其组合企业和AUM指标。基金规模与组合数据均为日立/基金自述。",
+          "source_id": "hitachi_ventures_press_2025"
+        },
         {
           "description": "融资来源记录：Harmony · 种子轮 · 2026-07-28 · 本轮参投 · $34 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fe66d902ece1db68"
@@ -207,8 +250,39 @@
           "source_id": "FISRC-9c4c0f115d1f38be"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Hitachi Ventures官网",
+          "value": "Hitachi Ventures",
+          "url": "https://www.hitachi-ventures.com/",
+          "source_id": "hitachi_ventures_official"
+        },
+        {
+          "kind": "contact_form",
+          "label": "日立企业投资业务咨询",
+          "value": "Hitachi Corporate Venturing Inquiry",
+          "url": "https://www8.hitachi.co.jp/inquiry/hitachi-ltd/hqrd/corporateventuring/en/form.jsp",
+          "source_id": "hitachi_ventures_press_2025"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "hitachi_ventures_official",
+          "source_url": "https://www.hitachi-ventures.com/",
+          "source_title": "Hitachi Ventures GmbH",
+          "source_content_hash": "4afd86283de729b59f2cc7d0d68cfa68a5d05e47b8064b609ccb47c7dacfa5cf",
+          "quote": "Hitachi Ventures is a corporate venture capital firm investing in the Industry 4.0 paradigm shift.",
+          "quote_hash": "73096143b9788555c38b1bad2e40bce938ffc1806ff48cecfc5953406fb8d772"
+        },
+        {
+          "source_id": "hitachi_ventures_press_2025",
+          "source_url": "https://www.hitachi.com/New/cnews/month/2025/02/250205a.html",
+          "source_title": "Hitachi establishes its fourth Corporate Venture Capital Fund",
+          "source_content_hash": "37d559c93c6e7bb715d393046d954f690c39f63c17c34e4301647a469e61f6b5",
+          "quote": "Hitachi Ventures is the corporate venture capital arm of Hitachi Ltd. With 1 billion USD assets under management, we focus on investing in early-stage and growth-stage technology companies with strategic relevance to Hitachi.",
+          "quote_hash": "7c097cfa6dfedac13dd10565bc80abf5489fb4c83879c78796ef6b3764a0fbde"
+        },
         {
           "source_id": "FISRC-fe66d902ece1db68",
           "source_url": "https://www.businessinsider.com/harmony-pitch-deck-ai-startup-34-million-seed-founders-cisco-2026-7",
@@ -226,7 +300,11 @@
           "quote_hash": "7c176b4b41b7098a91cc6bee2d0e11583636621116a7d1b03812d837f992c5a8"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

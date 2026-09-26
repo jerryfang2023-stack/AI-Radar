@@ -178,13 +178,43 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "理想汽车 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "理想汽车是中国新能源汽车设计、研发、制造和销售企业，也以企业战略投资方身份参与部分产业融资。公开报道将其列为千觉机器人及斜跃智能融资的产业方/战略投资者。现有官方资料未显示独立、面向外部创业项目的风险投资品牌或公开项目申请渠道，因此本档案不将其描述为传统VC基金。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "主体类型",
+          "value": "新能源汽车企业、企业战略投资方",
+          "source_id": "li_auto_ir"
+        },
+        {
+          "field": "business",
+          "label": "主营业务",
+          "value": "设计、研发、制造和销售智能电动汽车",
+          "source_id": "li_auto_ir"
+        },
+        {
+          "field": "headquarters",
+          "label": "总部地址",
+          "value": "北京市顺义区文良街11号理想汽车研发总部",
+          "source_id": "li_auto_ir"
+        },
+        {
+          "field": "venture_arm",
+          "label": "独立投资品牌",
+          "value": "已查官方投资者资料未披露面向外部创业项目的独立风险投资品牌；目前公开融资信息中的身份为企业战略投资方。",
+          "source_id": "li_auto_ir"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "投中网2026年报道将理想汽车列为参与千觉机器人融资的产业方；这是新闻披露的单轮投资案例。",
+          "source_id": "li_qianjue_202609"
+        },
+        {
+          "description": "自动化网2026年报道引述融资工商变更信息，称理想汽车与元璟资本联合投资斜跃智能；不据此推断存在专设VC基金。",
+          "source_id": "li_xieyue_2026"
+        },
         {
           "description": "融资来源记录：千觉机器人 · 战略融资 · 2026-09-20 · 股东 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3a00c703054126cd"
@@ -194,8 +224,62 @@
           "source_id": "FISRC-c721ebc5120776a7"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "公司官网",
+          "value": "理想汽车",
+          "url": "https://www.lixiang.com/",
+          "source_id": "li_auto_home"
+        },
+        {
+          "kind": "address",
+          "label": "总部地址（官方投资者FAQ）",
+          "value": "北京市顺义区文良街11号理想汽车研发总部",
+          "url": "https://ir.lixiang.com/zh-hans/touzizhechangjianwenti",
+          "source_id": "li_auto_ir"
+        },
+        {
+          "kind": "email",
+          "label": "投资者关系（股东/证券事务，不是项目投资申请入口）",
+          "value": "ir@lixiang.com",
+          "url": "https://ir.lixiang.com/zh-hans/touzizhechangjianwenti",
+          "source_id": "li_auto_ir"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "li_auto_ir",
+          "source_url": "https://ir.lixiang.com/zh-hans/touzizhechangjianwenti",
+          "source_title": "投资者资源 - Li Auto Inc.",
+          "source_content_hash": "c29983c611a657483efa922b62c30368cdd0d3a7763f250b4028e86895689b87",
+          "quote": "理想汽车投资者关系FAQ介绍公司设计、研发、制造和销售智能电动车，列出北京顺义总部地址及投资者关系邮箱ir@lixiang.com。邮箱用于投资者关系，不代表被投项目的申请渠道。",
+          "quote_hash": "d20e8a7121b6cc8d8254a73c5decb8efb4e5bb611b7b659e4aefbfa569bb8c99"
+        },
+        {
+          "source_id": "li_auto_home",
+          "source_url": "https://www.lixiang.com/",
+          "source_title": "理想汽车官网",
+          "source_content_hash": "dfec0a1df8fffaeb8888eeb653217bb59e9552e1af9ccc4ea2eac042cd709b94",
+          "quote": "理想汽车官网公开公司产品及品牌信息，并提供客户服务热线及媒体联系渠道。",
+          "quote_hash": "6daa6fbe34020f3264a63b661cc886071f4d58df6ec4644a03198848ff98048d"
+        },
+        {
+          "source_id": "li_qianjue_202609",
+          "source_url": "https://www.chinaventure.com.cn/news/114-20260920-393347.html",
+          "source_title": "千觉机器人宣布连续完成两轮数亿元战略融资 - 投中网",
+          "source_content_hash": "61ee9c43966a4d2ba9543d31c9251637e0822de97d1f0e17959b358b84d89e24",
+          "quote": "投中网2026年报道引述融资信息称，理想汽车与智元机器人、吉德电器等具身与工业领域产业方参与千觉机器人融资。",
+          "quote_hash": "55b3acf8b22c613afcfa8d9b83abe119d3861215c22d5237d99ce8ac8372e4f5"
+        },
+        {
+          "source_id": "li_xieyue_2026",
+          "source_url": "https://www.zidonghua.com.cn/m/news/Finance/83627.html",
+          "source_title": "斜跃智能获元璟与理想汽车投资 - 自动化网",
+          "source_content_hash": "b692b15740cd41f664b094ee0ee68ef4cb9c5fba988a14500db1d86ba7f1ab9a",
+          "quote": "自动化网2026年报道引述斜跃智能首轮融资工商变更信息，称理想汽车与元璟资本联合投资。",
+          "quote_hash": "6713a3167d28ea8d771da8682cff28a755ea0bcde1008bfdddcba54cfdc8c2b6"
+        },
         {
           "source_id": "FISRC-3a00c703054126cd",
           "source_url": "https://www.chinaventure.com.cn/news/114-20260920-393347.html",
@@ -213,7 +297,10 @@
           "quote_hash": "b1fc62e98c15024da7f2b11650756ea68a07d130572e63a8c0bc38eb0b08329f"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "公司主营业务、总部和投资者关系邮箱来自理想汽车官方投资者网站；战略投资案例来自具名财经报道。已区分上市公司投资者关系邮箱与项目投资申请入口。",
+      "last_verified_at": "2026-09-26"
     }
   }
 }

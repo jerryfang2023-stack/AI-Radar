@@ -111,33 +111,61 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "周平义 的来源线索将其与比特无限（联合创始人）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "周平义是比特无限联合创始人及预训练负责人，拥有武汉大学工学博士学位。公开报道将其描述为华为盘古大模型早期创始成员、第二代盘古万亿 MoE 模型核心研发人员，参与多个版本模型训练；报道称其发表顶会论文 25 篇，并有美国专利。",
+      "current_roles": [
+        {
+          "title": "联合创始人、预训练负责人",
+          "organization": "比特无限（BitInf）",
+          "source_id": "zhou_pingyi_profile"
+        }
+      ],
       "career": [
         {
-          "organization": "比特无限",
-          "title": "联合创始人",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-30b12c73a020a729"
+          "organization": "华为盘古大模型团队",
+          "title": "联合创始成员、核心研发人员",
+          "period": "任职年份未披露；参与多个模型版本研发",
+          "description": "媒体报道指其参与 Pangu Alpha 200B Dense、Pangu Sigma 万亿参数 MoE 等版本研发；职务描述为报道所载，未披露正式职位名称。",
+          "source_id": "zhou_pingyi_profile"
+        },
+        {
+          "organization": "比特无限（BitInf）",
+          "title": "联合创始人、预训练负责人",
+          "period": "2025 年起（公开报道）",
+          "description": "率队开展 AI 生成矢量 3D 模型相关研发，团队方向聚焦物理 3D 数据与工程模型生成。",
+          "source_id": "zhou_pingyi_profile"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "武汉大学",
+          "qualification": "工学博士（公开报道）",
+          "source_id": "zhou_pingyi_profile"
+        }
+      ],
+      "experience_summary": "经历覆盖大模型预训练研发与工业物理 3D 生成创业。公开报道列示其有约 25 篇顶会论文、Google Scholar 引用 1,000 余次和两项美国专利；这些履历指标来自媒体采访报道，未在此次数据中逐项校对论文、引用或专利记录。",
+      "track_record": [
+        {
+          "description": "公开报道将其与华为盘古 Alpha 200B Dense、Sigma 万亿参数 MoE 等模型研发关联。",
+          "source_id": "zhou_pingyi_profile"
+        },
+        {
+          "description": "媒体报道披露其发表顶会论文 25 篇、Google Scholar 引用超过 1,000 次、美国专利 2 项；指标随时间变化且尚未逐项独立核对。",
+          "source_id": "zhou_pingyi_profile"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-30b12c73a020a729",
-          "source_url": "https://www.cls.cn/detail/2478686",
-          "source_title": "融资披露来源",
-          "source_content_hash": "41ae3418cb565487",
-          "quote": "联合创始人周平义系华为盘古大模型二号位",
-          "quote_hash": "43b19d4d67f826a7d8299388c6d8ef28380b5f718f2e66b805ba68b6af6f60c5"
+          "source_id": "zhou_pingyi_profile",
+          "source_url": "https://m.21jingji.com/article/20260724/herald/7622b789eccb2acfa81e4ae0431de698.html",
+          "source_title": "首发| 华为盘古2号位创业，三个月估值涨10倍 - 21财经",
+          "source_content_hash": "502e5e3693a8b11bcb9bc36304a07d76f03fae14540d12e6c6cbf0e6ab725762",
+          "quote": "21世纪经济报道记载周平义为武汉大学工学博士、华为盘古大模型初代创始成员及万亿MoE模型核心研发人员，后加入比特无限任联合创始人；报道列出其论文、引用与专利数量。",
+          "quote_hash": "9c575f93ac3c21e12b3deed33e135396b27e634b3a094dbc3dead86457bd9e74"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
     }
   },
   "relatedEntities": [],

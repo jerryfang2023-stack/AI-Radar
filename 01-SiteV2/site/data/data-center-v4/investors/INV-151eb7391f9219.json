@@ -241,12 +241,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "美团 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "美团是中国服务类电子商务平台。其公开投资者关系页面介绍集团治理、业务信息和财务披露，并提供资本市场投资者联系邮箱。融资记录中的“美团”名称可能指集团直接投资或关联投资主体；本档案不据此推定具体基金或全部投资策略。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "公司定位",
+          "value": "中国服务类电子商务平台",
+          "source_id": "meituan_ir"
+        },
+        {
+          "field": "founder",
+          "label": "官网公司治理页面列示创始人",
+          "value": "王兴；2025-04-30页面更新时任董事长、CEO及执行董事",
+          "source_id": "meituan_ir"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -262,8 +271,24 @@
           "source_id": "FISRC-5d82f5dc9fc96ce5"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "label": "投资者关系（资本市场咨询，不是创业融资渠道）",
+          "value": "ir@meituan.com",
+          "url": "https://www.meituan.com/investor-relations",
+          "source_id": "meituan_ir"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "meituan_ir",
+          "source_url": "https://www.meituan.com/investor-relations",
+          "source_title": "投资者关系｜美团",
+          "source_content_hash": "973bddc3b8b9d8386286117d028eb1b7a1fc866fff8b662bd8c14a8bb8280ee0",
+          "quote": "美团投资者关系页面将公司称为中国领先的服务类电子商务平台，页面列出创始人王兴及投资者关系邮箱 ir@meituan.com。",
+          "quote_hash": "bc7ef03fe79c917492b715b5af6dab82820dd67443525188633df41e55417ebc"
+        },
         {
           "source_id": "FISRC-517ef1b31eac6dd3",
           "source_url": "https://finance.sina.com.cn/roll/2026-09-17/doc-iniscekc4127167.shtml",
@@ -289,7 +314,11 @@
           "quote_hash": "967724e8986cf9493a8a6ffd499c20ba098e825f3384fac3e33dda94328b56dd"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "coverage_note": "官网公开页面主要面向资本市场投资者；未将该邮箱描述为项目融资联系方式，也未推断具体集团投资基金。",
+      "identity_status": "verified"
     }
   }
 }

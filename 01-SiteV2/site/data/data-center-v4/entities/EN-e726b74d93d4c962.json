@@ -111,33 +111,60 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "刘智攀 的来源线索将其与复鞍智能（创始人）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "刘智攀是复鞍智能创始人、首席科学家及复旦大学化学系教授，长期从事理论计算方法、材料与催化研究，带队开发LASP大规模原子模拟神经网络势函数算法引擎。LASP推广规模及论文影响为技术与用户团队成果，不单独归因于个人。",
+      "current_roles": [
+        {
+          "title": "创始人、首席科学家",
+          "organization": "复鞍智能",
+          "source_id": "liuzhipan_jingan_202607"
+        },
+        {
+          "title": "教授",
+          "organization": "复旦大学化学系",
+          "source_id": "liuzhipan_jingan_202607"
+        }
+      ],
       "career": [
         {
-          "organization": "复鞍智能",
-          "title": "创始人",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-55041228ee583f8a"
+          "organization": "复旦大学化学系",
+          "title": "教授、研究团队负责人",
+          "period": "2005年入职；2026年政府报道仍列任职",
+          "description": "研究理论计算方法及其在材料、催化领域的应用；长期带队开发LASP。",
+          "source_id": "liuzhipan_jingan_202607"
+        },
+        {
+          "organization": "上海复鞍智能科技有限公司",
+          "title": "创始人、首席科学家",
+          "period": "团队于2025年5月发起成立；2026年政府报道仍列任职",
+          "description": "推动LASP算法引擎云端化，推出LASPAI物质科学智能研究云平台。",
+          "source_id": "liuzhipan_jingan_202607"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
-      "sources": [
+      "experience_summary": "公开政府资料可核验其自2005年起在复旦大学化学系任职、约二十年理论计算与材料催化研究，以及科研成果产业化路径；该来源未披露其学历，故不补写。",
+      "track_record": [
         {
-          "source_id": "FISRC-55041228ee583f8a",
-          "source_url": "https://finance.sina.com.cn/jjxw/2026-05-14/doc-inhxwenh8729004.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "0ccbefed99e236b4",
-          "quote": "创始人刘智攀教授是国内 AI for Chemistry 领域的学术前沿引领者",
-          "quote_hash": "26410d76bb8b4ab776111b5435d001af99eacc0a95a8aeb114fa61114f27f0e9"
+          "description": "带队自主研发LASP大规模原子模拟神经网络势函数算法引擎；政府报道记载其自2018年市场化推广并扩展至全球30余个国家和地区。",
+          "source_id": "liuzhipan_jingan_202607"
+        },
+        {
+          "description": "截至2026年报道，使用LASP的科研团队发表高水平论文250余篇；此为用户群体成果指标。",
+          "source_id": "liuzhipan_jingan_202607"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "sources": [
+        {
+          "source_id": "liuzhipan_jingan_202607",
+          "source_url": "https://www.jingan.gov.cn/rmtzx/003001/20260710/d06d2f9f-af4a-41b4-8fcc-6b7f92f7c3e9.html",
+          "source_title": "静安AI4S生力军亮相全市科学智能“百团百项”研讨会，复鞍智能跑出科研范式变革加速度",
+          "source_content_hash": "363a17270de528865a6d43dfc58548e4c67f5fee1e8978090b6a5dd17ea5edb9",
+          "quote": "静安区政府报道确认刘智攀为复旦大学化学系教授、复鞍智能创始人和首席科学家；其自2005年入职复旦，长期研究理论计算、材料与催化，并带队研发LASP。报道记载LASP自2018年市场化推广，覆盖30余个国家和地区、3000多名用户，相关科研团队发表论文250余篇；这些属于技术及使用团队成果。",
+          "quote_hash": "6348a3eaecb6a7e803b12f94eb296a1bfecabb9ead20fa27afbe8aa7bc49193d"
+        }
+      ],
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "职务与技术背景来自静安区政府报道；该来源未披露教育经历，不以同名或推测补足。"
     }
   },
   "relatedEntities": [],

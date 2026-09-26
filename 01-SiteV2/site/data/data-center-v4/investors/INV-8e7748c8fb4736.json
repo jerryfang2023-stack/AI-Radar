@@ -240,14 +240,58 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Sierra Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Sierra Ventures 是专注企业科技与前沿技术的早期风险投资机构。官网披露其投资覆盖公司创立至 A 轮，拥有四十余年投资经验、超过 20 亿美元管理资产，并列出 35 家 IPO 和数百个退出案例。机构还维护由大型企业科技负责人组成的 CXO 顾问网络，为创业公司提供行业洞察与客户连接。",
+      "facts": [
+        {
+          "field": "investment_stages",
+          "label": "官网披露投资阶段",
+          "value": "公司创立至 Series A",
+          "source_id": "sierra_press"
+        },
+        {
+          "field": "sectors",
+          "label": "机构关注方向",
+          "value": [
+            "企业科技",
+            "前沿技术"
+          ],
+          "source_id": "sierra_press"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "官网自述管理资产",
+          "value": "超过 20 亿美元；官网未标注统计日期",
+          "source_id": "sierra_press"
+        },
+        {
+          "field": "experience",
+          "label": "投资经验",
+          "value": "超过四十年",
+          "source_id": "sierra_press"
+        },
+        {
+          "field": "ipo_count",
+          "label": "官网列示上市案例",
+          "value": "35 家 IPO",
+          "source_id": "sierra_home"
+        },
+        {
+          "field": "exit_count",
+          "label": "官网列示退出案例",
+          "value": "数百个退出案例",
+          "source_id": "sierra_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Sierra Ventures 官网列示 35 家 IPO 与数百个退出案例；属于机构自述，未提供逐项业绩或统计区间。",
+          "source_id": "sierra_home"
+        },
+        {
+          "description": "官网介绍其 CXO 顾问委员会由财富 1000 强科技企业领导者构成，并用于帮助早期公司获取企业洞察、设计合作方与客户反馈。",
+          "source_id": "sierra_press"
+        },
         {
           "description": "融资来源记录：Smallest.ai · A轮 · 2026-08-01 · 本轮参投 · 1300万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1284a14893cb26a9"
@@ -261,8 +305,60 @@
           "source_id": "FISRC-a279a9a1c8543f67"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Sierra Ventures",
+          "url": "https://www.sierraventures.com/",
+          "source_id": "sierra_home"
+        },
+        {
+          "kind": "email",
+          "label": "通用联系邮箱",
+          "value": "info@sierraventures.com",
+          "url": "https://www.sierraventures.com/",
+          "source_id": "sierra_home"
+        },
+        {
+          "kind": "email",
+          "label": "媒体联系邮箱",
+          "value": "anne@sierraventures.com",
+          "url": "https://www.sierraventures.com/press-kit",
+          "source_id": "sierra_press"
+        },
+        {
+          "kind": "phone",
+          "label": "办公室电话",
+          "value": "+1 650-854-1000",
+          "url": "https://www.sierraventures.com/press-kit",
+          "source_id": "sierra_press"
+        },
+        {
+          "kind": "address",
+          "label": "办公室地址",
+          "value": "1400 Fashion Island Blvd. Ste. 1010, San Mateo, CA 94404",
+          "url": "https://www.sierraventures.com/press-kit",
+          "source_id": "sierra_press"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "sierra_press",
+          "source_url": "https://www.sierraventures.com/press-kit",
+          "source_title": "Sierra Ventures Logo and Press Kit",
+          "source_content_hash": "9ba0528c9f0311c7d8704c12a74dc0a53c6cf06c149ba7e5be20dea585c83073",
+          "quote": "Sierra Ventures is an early-stage venture firm focused on the future of enterprise and frontier technologies. With over four decades of experience and more than $2 billion in assets under management, Sierra partners with founders from formation through Series A.",
+          "quote_hash": "af38f204583f68046564de66564c797ac9dc937512392d1f114325f28314ec33"
+        },
+        {
+          "source_id": "sierra_home",
+          "source_url": "https://www.sierraventures.com/",
+          "source_title": "Sierra Ventures - Conviction Before Consensus",
+          "source_content_hash": "a145734628196d36b7496413f8a170dbdcd7b2e3a4ebc8fd211ad892b547e066",
+          "quote": "40+ years of Inception-to-Series A investing, 35 IPOs, hundreds of exits. info@sierraventures.com. +1 650 854 1000. 1400 Fashion Island Blvd. Ste. 1010, San Mateo, CA 94404.",
+          "quote_hash": "b56f09f3c9123b8087efc04e6d1217060b4bb85f327165d7714c6b9a2dc7d3fd"
+        },
         {
           "source_id": "FISRC-1284a14893cb26a9",
           "source_url": "https://thecatalystonline.com/investment-funding/smallest-ai-expands-enterprise-voice-ai-with-new-funding/",
@@ -288,7 +384,11 @@
           "quote_hash": "e28b4d241dcb3013bdf96da218497e0325e8c4b258c736181c53cdc38c6c8c1a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

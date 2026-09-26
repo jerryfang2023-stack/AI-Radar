@@ -114,33 +114,46 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "毕玄 的来源线索将其与贝联珠贯（创始人）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "coverage_status": "researched",
+      "summary": "毕玄（林昊）是贝联珠贯创始人兼 CEO，曾任阿里技术专家。极客邦科技的人物介绍称其在阿里工作十四年，参与多轮技术架构演进，包括打造 HSF、异地多活架构和统一资源调度；未据此推断其在阿里各项目中的个人贡献边界。",
+      "current_roles": [
+        {
+          "organization": "贝联珠贯",
+          "title": "创始人兼 CEO",
+          "source_id": "geekbang_bixuan"
+        }
+      ],
       "career": [
         {
           "organization": "贝联珠贯",
-          "title": "创始人",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将毕玄与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-66fcc0a528f97b62"
+          "title": "创始人兼 CEO",
+          "period": "公开人物介绍当前列示；起始时间未披露",
+          "description": "目前创业方向与企业运维服务及 AI Agent 相关；具体产品业务以公司官网为准。",
+          "source_id": "geekbang_bixuan"
+        },
+        {
+          "organization": "阿里巴巴",
+          "title": "技术专家（P10）",
+          "period": "约十四年；确切起止时间未列明",
+          "description": "人物介绍称其参与、主导设计和落地多轮架构演进，包括 HSF、异地多活和统一资源调度。",
+          "source_id": "geekbang_bixuan"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
+      "experience_summary": "职业经历集中于大规模互联网系统架构与企业运维方向。已找到的公开人物资料未提供可核验教育信息，故留空。",
       "track_record": [],
       "sources": [
         {
-          "source_id": "FISRC-66fcc0a528f97b62",
-          "source_url": "https://finance.sina.com.cn/wm/2026-07-28/doc-inikirnf2524923.shtml?froms=ggmp",
-          "source_title": "融资披露来源",
-          "source_content_hash": "c58547114571e365fcb8bbe1d5556e63481b9677c989deab6bd578834feeebc7",
-          "quote": "贝联珠贯创始人毕玄（林昊）表示",
-          "quote_hash": "cb9fae8a1e368ef0b07da2863a428668f74e79eaac8af713f5b03c4b1fa615b4"
+          "source_id": "geekbang_bixuan",
+          "source_url": "https://time.geekbang.org/column/intro/100122701/comment",
+          "source_title": "超级访谈：对话毕玄 — 极客邦科技",
+          "source_content_hash": "3cd3b5e6dcdceb2579a0a29839afea8022db4d825eb6e97e0d2eea9b1b002e19",
+          "quote": "毕玄为贝联珠贯创始人兼CEO、前阿里P10。其在阿里工作十四年，参与和主导多轮技术架构演进，包括从0到1打造HSF、设计并带领团队落地电商异地多活及统一资源调度。当前创办贝联珠贯。",
+          "quote_hash": "b14ab5cf5d7288b2c0121fc7ba65d4ebc4f798a360dee6dc698efb61e320bc8c"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
     }
   },
   "relatedEntities": [],

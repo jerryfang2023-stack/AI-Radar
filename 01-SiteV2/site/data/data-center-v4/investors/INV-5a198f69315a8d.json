@@ -140,19 +140,115 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "广州生物医药与健康产业投资有限公司 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "融资数据库收录广州健康产投领投睿心医疗2026年D轮，金额约近亿元；该笔记录来源为投资媒体，未披露具体基金载体。集团官网所列热线属于生物健康产业服务入口，页面未说明为投资项目申报渠道，且公开页面内容较旧。",
+      "summary": "广州生物医药与健康产业投资有限公司（广州健康产投）是广州金融控股集团旗下聚焦生命健康产业的国有投资与服务平台，由广州生物工程中心转企改制形成。广州市国资委披露其投资达安基因、万孚生物、广州金域等生命健康企业，并建设产业技术转化、创新药临床试验服务平台。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "公司名称与统一社会信用代码",
+          "value": "广州生物医药与健康产业投资有限公司；统一社会信用代码91440101MA5D1RGK27。",
+          "source_id": "gz_health_legal_info"
+        },
+        {
+          "field": "ownership",
+          "label": "股权背景",
+          "value": "广州金融控股集团有限公司全资子公司。",
+          "source_id": "gz_health_legal_info"
+        },
+        {
+          "field": "registered_capital",
+          "label": "注册资本（2025年债券披露）",
+          "value": "人民币1000万元。",
+          "source_id": "gz_health_legal_info"
+        },
+        {
+          "field": "registered_address",
+          "label": "注册地址（2025年债券披露）",
+          "value": "广州市天河区龙口东路34号301房。",
+          "source_id": "gz_health_legal_info"
+        },
+        {
+          "field": "investment_focus",
+          "label": "产业定位",
+          "value": "生命健康与生物医药产业投资，并联动成果转化、创新药临床试验等产业服务平台。",
+          "source_id": "gz_health_official_portfolio"
+        },
+        {
+          "field": "portfolio_scale",
+          "label": "已投企业数量（广州市国资委2025年披露）",
+          "value": "近年来投资达安基因、万孚生物、广州金域等10家生命健康领域企业；统计期未在原文中明确。",
+          "source_id": "gz_health_official_portfolio"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2019-11-18",
+          "description": "以广州生物工程中心有限公司名义注册成立，后转企改制为广州金控集团全资子公司。",
+          "source_id": "gz_health_legal_info"
+        },
+        {
+          "date": "2023-11-28",
+          "description": "公司名称变更为广州生物医药与健康产业投资有限公司。",
+          "source_id": "gz_health_legal_info"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：睿心医疗 · D轮 · 2026-05-27 · 本轮领投 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "广州市国资委披露其投资达安基因、万孚生物、广州金域等10家生命健康企业，并运营生命健康产业技术转化中心、创新药临床试验服务中心。",
+          "source_id": "gz_health_official_portfolio"
+        },
+        {
+          "description": "融资数据库收录广州健康产投领投睿心医疗D轮（2026-05-27，报道金额为近亿元）；本轮所用基金或法律出资主体未披露。",
           "source_id": "FISRC-f9bb3bf014f3fdf8"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "公司主办的广州生物与健康产业信息网",
+          "value": "广州生物医药与健康产业投资有限公司",
+          "url": "https://www.gzbio.org.cn/",
+          "source_id": "gz_health_official_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "网站公开产业服务热线；未证实为投资申报渠道",
+          "value": "+86 20 8756 8623-305",
+          "source_id": "gz_health_official_contact"
+        },
+        {
+          "kind": "email",
+          "label": "网站公开产业服务邮箱；未证实为投资申报邮箱",
+          "value": "cxf@gzbio.org",
+          "source_id": "gz_health_official_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "gz_health_legal_info",
+          "source_url": "https://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2025-10-10/243903_20251010_H229.pdf",
+          "source_title": "广州金融控股集团有限公司2025年科技创新公司债券募集说明书｜子公司基本资料",
+          "source_content_hash": "a1ae56521c3a343dd64ea6ddda2e97192243aa9ddd00e6784fd3f07c3e470d00",
+          "quote": "广州生物医药与健康产业投资有限公司（曾用名：广州生物工程中心有限公司）是广州金融控股集团有限公司全资子公司，注册成立于2019年11月18日，统一社会信用代码91440101MA5D1RGK27，注册资本人民币1000万元，注册地址为广州市天河区龙口东路34号301房；2023年11月28日更名。",
+          "quote_hash": "3746992b68a2030c2c600d5199ce293ed57f2fdf4dcdfc01eb05f1b91ef7f6ca"
+        },
+        {
+          "source_id": "gz_health_official_portfolio",
+          "source_url": "https://gzw.gz.gov.cn/gk/jyta/content/post_10355242.html",
+          "source_title": "广州市国资委｜关于市政协十四届四次会议第2051号提案答复的函",
+          "source_content_hash": "7b4df82f5ed612442502c196ead30a7e8253211e21c419c6543535bf38e8c747",
+          "quote": "广州金控集团推动广州生物工程中心转企改制，改组为下属全资子企业广州生物医药与健康产业投资有限公司；近年来已投资达安基因、万孚生物、广州金域等10家生命健康领域企业，并建设运营粤港澳大湾区生命健康产业技术转化中心和广州市创新药物临床试验服务中心。",
+          "quote_hash": "4fff80e348f18ba7f41d5cf60bf6db67a87c421fdd75e8ba754ac97bf9f5d788"
+        },
+        {
+          "source_id": "gz_health_official_contact",
+          "source_url": "https://www.gzbio.org.cn/",
+          "source_title": "广州生物与健康产业信息网｜主办单位与公开服务联系方式",
+          "source_content_hash": "17b1b0cf6b1786b873d8cac4d1cdc4258c948b1a261aedc9acb8c30094254c58",
+          "quote": "广州生物与健康产业信息网注明主办单位为广州生物医药与健康产业投资有限公司；网站公开服务热线020-87568623-305、邮箱cxf@gzbio.org。该联系方式为产业公共服务渠道，网站未说明其为投资申请渠道。",
+          "quote_hash": "aff349a45101c22bfddf362cc837c6b0c9aa99e7fbe9ef7e67276d76e67129b1"
+        },
         {
           "source_id": "FISRC-f9bb3bf014f3fdf8",
           "source_url": "https://news.pedaily.cn/202605/564464.shtml",
@@ -162,7 +258,7 @@
           "quote_hash": "1d413599da89517453fdfb7963303f432400dee64bfb53ca2d0eef2b56b8d59a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

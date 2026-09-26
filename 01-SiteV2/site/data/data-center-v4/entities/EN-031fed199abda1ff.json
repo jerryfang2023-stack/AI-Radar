@@ -111,33 +111,66 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "李强 的来源线索将其与昆腾动力（创始人兼CEO）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "李强是昆腾动力创始人兼 CEO。36氪硬氪报道记载，他在阿里巴巴体系工作17年，曾任菜鸟集团 CTO、阿里巴巴国际数字商业板块 CTO，并兼任菜鸟无人车总经理；此前负责物流技术、国际化业务及无人车研发商业化。该履历来自媒体对公司与创始人的采访报道，任职年月和教育经历仍未公开核验。",
+      "current_roles": [
+        {
+          "title": "创始人兼 CEO",
+          "organization": "昆腾动力",
+          "source_id": "liqiang_36kr_2026"
+        }
+      ],
       "career": [
         {
-          "organization": "昆腾动力",
-          "title": "创始人兼CEO",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将李强与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-acc5f267b943773d"
+          "organization": "阿里巴巴集团",
+          "title": "集团技术与业务管理岗位（具体岗位及任期未完整披露）",
+          "period": "累计17年，起止年月未披露",
+          "description": "报道概述其经历覆盖淘宝天猫、菜鸟、国际化业务及无人车业务，并承担体系搭建和运营管理工作。",
+          "source_id": "liqiang_36kr_2026"
+        },
+        {
+          "organization": "菜鸟集团",
+          "title": "首席技术官",
+          "period": "任职年月未披露",
+          "description": "报道记载其曾任菜鸟集团 CTO，参与物流技术与自动化业务建设。",
+          "source_id": "liqiang_36kr_2026"
+        },
+        {
+          "organization": "阿里巴巴国际数字商业",
+          "title": "首席技术官",
+          "period": "任职年月未披露",
+          "description": "报道记载其曾任阿里巴巴国际数字商业板块 CTO。",
+          "source_id": "liqiang_36kr_2026"
+        },
+        {
+          "organization": "菜鸟无人车",
+          "title": "总经理",
+          "period": "任职年月未披露",
+          "description": "报道记载其兼任菜鸟无人车总经理，统筹自动驾驶技术研发与商业化推进。",
+          "source_id": "liqiang_36kr_2026"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
-      "sources": [
+      "experience_summary": "媒体报道支持其拥有17年阿里体系经历及物流科技、国际化、无人车研发与商业化管理经验。教育背景、具体任职日期和可独立归因的业绩指标尚无一手公开履历。",
+      "track_record": [
         {
-          "source_id": "FISRC-acc5f267b943773d",
-          "source_url": "https://news.pedaily.cn/202607/567074.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "291f515f8155da84",
-          "quote": "昆腾动力创始人兼CEO李强在阿里巴巴集团任职17年",
-          "quote_hash": "2ac475fdc1fd26a616806266eb7d8522f9ac9b1a1986805103c47b572bd31f49"
+          "description": "报道提到其团队在菜鸟时期运营千台规模无人车队并建设技术体系；该成果为团队及组织业绩，不归因于个人独立完成。",
+          "source_id": "liqiang_36kr_2026"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "sources": [
+        {
+          "source_id": "liqiang_36kr_2026",
+          "source_url": "https://www.36kr.com/p/3917874427555457",
+          "source_title": "菜鸟CTO李强创业做Physical AI平台，获云启、商汤超亿元种子轮融资 - 36氪硬氪",
+          "source_content_hash": "f69cc505cf6740c00382239ac036ec470757cf949dea82fae373800b7e9ffe89",
+          "quote": "昆腾动力创始人兼CEO李强在阿里巴巴集团任职17年，曾任菜鸟集团CTO、阿里巴巴国际数字商业板块CTO，并兼任菜鸟无人车总经理。",
+          "quote_hash": "408c501c86ce7733cdd82f8805ca94cb8b33ea4965caa734b07000c2c57a70dc"
+        }
+      ],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "职业经历依据36氪对创始人及公司的报道整理，职位任期、教育背景未在该报道中完整披露；团队成果不归因于个人独立完成。",
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

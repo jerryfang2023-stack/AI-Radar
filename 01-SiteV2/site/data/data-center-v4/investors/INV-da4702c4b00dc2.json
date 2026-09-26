@@ -137,21 +137,93 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "4DX Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-04；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "4DX Ventures 是一家专注非洲科技企业的风险投资机构，官网称其投资阶段覆盖 Pre-Seed、Seed 和 A 轮，并提供战略、运营与技术支持。机构官网自报拥有十年以上投资记录、50余家组合企业，业务覆盖20多个国家；这些数字属于机构披露，不等于投资回报。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网披露投资阶段",
+          "value": [
+            "Pre-Seed",
+            "Seed",
+            "Series A"
+          ],
+          "source_id": "four_dx_about"
+        },
+        {
+          "field": "geographic_focus",
+          "label": "地域方向",
+          "value": "非洲科技企业",
+          "source_id": "four_dx_about"
+        },
+        {
+          "field": "portfolio_count",
+          "label": "官网披露组合企业数",
+          "value": "50余家",
+          "source_id": "four_dx_home"
+        },
+        {
+          "field": "operating_countries",
+          "label": "官网披露运营国家数",
+          "value": "20多个",
+          "source_id": "four_dx_home"
+        },
+        {
+          "field": "offices",
+          "label": "官网列示办公室",
+          "value": [
+            "Accra",
+            "Cairo",
+            "Nairobi",
+            "New York"
+          ],
+          "source_id": "four_dx_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官网组合页列示 Flutterwave、mPharma、Yoco、Wasoko、Andela 等非洲科技公司作为投资组合案例。",
+          "source_id": "four_dx_portfolio"
+        },
         {
           "description": "融资来源记录：AethexAI · 预种子轮 · 2026-06-04 · 本轮领投 · $3 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-aa1f19ff48642176"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站与联系入口",
+          "value": "4DX Ventures",
+          "url": "https://www.4dxventures.com/about",
+          "source_id": "four_dx_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "four_dx_about",
+          "source_url": "https://www.4dxventures.com/about",
+          "source_title": "4DX | About",
+          "source_content_hash": "273813a7a9eded15b5e9afc2610c95b58c235614bc5c1f35ef8437863f83beff",
+          "quote": "4DX invests early in African technology companies and targets Pre-Seed, Seed and Series A. The firm says it provides strategic, operational and technical support.",
+          "quote_hash": "9380280a2cfcd0d9a43426d73988b1d765b65b3302afb1bdec152b6e2825a968"
+        },
+        {
+          "source_id": "four_dx_home",
+          "source_url": "https://www.4dxventures.com/",
+          "source_title": "4DX | Home",
+          "source_content_hash": "eee65846b6f44e1584935df390c6bc8bf817ab5e4a935123d64b844e43c625ff",
+          "quote": "4DX reports a 10+ year track record, 50+ portfolio companies, and operations across 20+ countries. Its listed offices are Accra, Cairo, Nairobi and New York.",
+          "quote_hash": "73bc5572f9c6e525cc4a862c943482a1560d7d2ce89524643216df621e9ecde2"
+        },
+        {
+          "source_id": "four_dx_portfolio",
+          "source_url": "https://www.4dxventures.com/portfolio",
+          "source_title": "4DX | Portfolio",
+          "source_content_hash": "ac468cb8560e927314ee919cedb661b24c1f0b9cd4e4c67adfa24561dd6219d4",
+          "quote": "The official portfolio includes Flutterwave, mPharma, Yoco, Wasoko, Andela and other African technology companies.",
+          "quote_hash": "02c4b3eb46bc12679f895f2e6b157a2252752f5d93f700bc549c883d65e0b4fb"
+        },
         {
           "source_id": "FISRC-aa1f19ff48642176",
           "source_url": "https://techafricanews.com/2026/06/04/aethexai-launches-with-3m-pre-seed-to-scale-enterprise-voice-ai-across-africa-and-the-middle-east/",
@@ -161,7 +233,11 @@
           "quote_hash": "f73830b8b3e98e925f05cebd5216207aa9c43a8bcf8b4b1d285570194968138a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

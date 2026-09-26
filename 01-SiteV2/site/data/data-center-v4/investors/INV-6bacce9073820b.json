@@ -138,12 +138,31 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "2100 Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "2100 Ventures 是一家支持欧洲创业者的早期投资基金。官网列出的主题包括数据驱动的新价值创造、传统产业数字化及脱碳转型。官网公开联系邮箱与米兰地址；页面展示的团队履历包含策略咨询、法律、投资和企业运营经历，但部分成员仅以名字展示，未据此扩写其完整身份。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期",
+          "source_id": "2100_home"
+        },
+        {
+          "field": "geographic_focus",
+          "label": "地域方向",
+          "value": "欧洲创业公司",
+          "source_id": "2100_home"
+        },
+        {
+          "field": "investment_themes",
+          "label": "投资主题",
+          "value": [
+            "数据驱动的新价值创造",
+            "传统产业数字化",
+            "脱碳转型"
+          ],
+          "source_id": "2100_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,8 +170,46 @@
           "source_id": "FISRC-05007e2b6b43ffda"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "label": "官网公开联系邮箱",
+          "value": "hello@2100.vc",
+          "url": "https://www.2100.vc/",
+          "source_id": "2100_contact"
+        },
+        {
+          "kind": "address",
+          "label": "官网公开地址",
+          "value": "Via Giuseppe Mazzini 9, 20123 Milano MI, Italy",
+          "url": "https://www.2100.vc/",
+          "source_id": "2100_contact"
+        },
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "2100 Ventures",
+          "url": "https://www.2100.vc/",
+          "source_id": "2100_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "2100_home",
+          "source_url": "https://www.2100.vc/",
+          "source_title": "2100 Ventures",
+          "source_content_hash": "f29c5ed12dc71fee5e2129cc2befb8b921f93edd9d3826089a0f661a21bdbbe9",
+          "quote": "2100 is an early-stage fund supporting European founders. Its stated themes are data-driven new units of value, digitisation of traditional industries, and decarbonisation.",
+          "quote_hash": "6f2d6dc99794bbd1cc7c1a23de859547c5d6a19a9aec700b1d8c380f289b9d14"
+        },
+        {
+          "source_id": "2100_contact",
+          "source_url": "https://www.2100.vc/",
+          "source_title": "2100 Ventures terms and contact information",
+          "source_content_hash": "f29c5ed12dc71fee5e2129cc2befb8b921f93edd9d3826089a0f661a21bdbbe9",
+          "quote": "Owner contact email: hello@2100.vc. 2100 Ventures, Via Giuseppe Mazzini 9, 20123 Milano MI, Italy.",
+          "quote_hash": "7ddc65cd96a46316ebe2e716a37f07bd5d926b4a8b2f840b88b33b00c691e283"
+        },
         {
           "source_id": "FISRC-05007e2b6b43ffda",
           "source_url": "https://siliconangle.com/2026/06/24/agentic-infrastructure-startup-seltz-raises-12-5m-help-ai-agents-search-web-answers/",
@@ -162,7 +219,11 @@
           "quote_hash": "9317d27dcd44755a08a62438a5ebbfd6628ad5af27501300e72473c6cac0a332"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

@@ -194,11 +194,44 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Forgepoint Capital International 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "依据机构官网或正式公告核验；策略、统计数据和组合案例按来源方披露口径呈现，不据此推断基金回报。",
+      "summary": "Forgepoint Capital International 是 Forgepoint Capital 于 2024 年宣布设立的国际投资管理平台，聚焦欧洲、拉丁美洲和以色列的网络安全、AI 与基础设施软件机会。官方公告称其与 Forgepoint、Banco Santander 的战略联盟协作；此处描述不代表两者法律主体或基金完全相同。",
+      "facts": [
+        {
+          "field": "established",
+          "label": "设立公告",
+          "value": "2024 年 10 月宣布设立国际管理公司并建立伦敦枢纽；未披露独立法律实体的注册日期。",
+          "source_id": "forgepoint_intl_2024_announcement"
+        },
+        {
+          "field": "focus",
+          "label": "官方投资领域",
+          "value": [
+            "网络安全",
+            "人工智能",
+            "基础设施软件"
+          ],
+          "source_id": "forgepoint_intl_2024_announcement"
+        },
+        {
+          "field": "geography",
+          "label": "官方目标市场",
+          "value": [
+            "欧洲",
+            "拉丁美洲",
+            "以色列"
+          ],
+          "source_id": "forgepoint_intl_2024_announcement"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2024-10-22",
+          "description": "Forgepoint 宣布国际扩张，在伦敦设立团队与欧洲枢纽。",
+          "source_id": "forgepoint_intl_2024_announcement"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Multiverse Computing · C轮 · 2026-07-27 · 本轮联合领投 · $570 million (€500M)。这是本库收录的披露案例，不代表完整投资组合。",
@@ -207,9 +240,21 @@
         {
           "description": "融资来源记录：Maisa AI · 种子轮 · 2025-08-27 · 本轮参投 · $25 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f154528a83a385f1"
+        },
+        {
+          "description": "官方公告列举 AlienVault、Constella Intelligence、BehavioSec、Lynx Technologies、ReversingLabs 等过往投资案例；属于机构自述案例，不代表完整组合或基金回报。",
+          "source_id": "forgepoint_intl_2024_announcement"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Forgepoint Capital International",
+          "url": "https://forgepointcap.com/perspectives/forgepoint-capital-expands-globally-to-invest-in-next-generation-cybersecurity-and-artificial-intelligence-companies-with-the-support-of-banco-santander/",
+          "source_id": "forgepoint_intl_2024_announcement"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-fa5aeddf845d651b",
@@ -226,9 +271,17 @@
           "source_content_hash": "8c799b616e20ea1d",
           "quote": "U.S. firm Forgepoint Capital International participated in this new round via its European joint venture with Spanish bank Banco Santander",
           "quote_hash": "3359bd74f01ce8dc52dc2c32c41ba97e63e26e75448bfd6ba9d255bb9dc5e6a5"
+        },
+        {
+          "source_id": "forgepoint_intl_2024_announcement",
+          "source_url": "https://forgepointcap.com/perspectives/forgepoint-capital-expands-globally-to-invest-in-next-generation-cybersecurity-and-artificial-intelligence-companies-with-the-support-of-banco-santander/",
+          "source_title": "Forgepoint Capital expands globally | Forgepoint Capital",
+          "source_content_hash": "0fe5cfc72fcdf9cd60bfd4addba33c067d594917832719766794f7925663daa9",
+          "quote": "Forgepoint Capital announced an international management company, a dedicated team and a London hub targeting Europe, Latin America and Israel.",
+          "quote_hash": "99bda27a5bc99e8d2933aca9900a4b31d87dbcee38bbfad87f7f97dde4bde707"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

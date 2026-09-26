@@ -108,33 +108,59 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "Daniela Amodei 的来源线索将其与Anthropic（联合创始人）关联。来源日期：2026-06-01；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "Daniela Amodei 是 Anthropic 联合创始人兼总裁，并担任公司董事会主席。她的公开访谈提到文学学习背景及早期在全球健康和政治领域的工作；具体学校、学位和任职时间未公开。",
+      "current_roles": [
+        {
+          "title": "联合创始人兼总裁、董事会主席",
+          "organization": "Anthropic",
+          "source_id": "anthropic_leadership"
+        }
+      ],
       "career": [
         {
           "organization": "Anthropic",
-          "title": "联合创始人",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将Daniela Amodei与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-a98314ad7e652ee7"
+          "title": "联合创始人；现任总裁、董事会主席",
+          "period": "联合创立以来；官网未列任职起始日期",
+          "description": "负责公司研究、工程、产品、治理及商业执行等工作。",
+          "source_id": "anthropic_leadership"
+        },
+        {
+          "organization": "全球健康与政治领域",
+          "title": "早期职业经历",
+          "period": "Anthropic成立以前；机构及任职时间未在访谈中披露",
+          "description": "本人访谈提到其职业生涯早期从事全球健康与政治相关工作。",
+          "source_id": "daniela_interview"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
-      "sources": [
+      "experience_summary": "公开资料显示其从全球健康与政治领域转向人工智能公司管理。访谈提及文学学习，但未披露院校或具体学历，故未填入学历字段。",
+      "track_record": [
         {
-          "source_id": "FISRC-a98314ad7e652ee7",
-          "source_url": "https://zestlab.io/en/trends/anthropic-30b-funding-2026",
-          "source_title": "融资披露来源",
-          "source_content_hash": "d046b2aa08e71bfe",
-          "quote": "Dario Amodei, Daniela Amodei and six former OpenAI researchers found Anthropic.",
-          "quote_hash": "086c8199496da0d425ad2787d25485be22266116c006b3108fc2c29c8b0ec3fb"
+          "description": "Anthropic 官网列明她负责跨研究、工程、产品、治理及商业职能；该描述仅记录职责，不代表公司整体业绩可归因于个人。",
+          "source_id": "anthropic_leadership"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "sources": [
+        {
+          "source_id": "anthropic_leadership",
+          "source_url": "https://www.anthropic.com/company/leadership",
+          "source_title": "Leadership at Anthropic | Anthropic",
+          "source_content_hash": "08e0dab4e1c826a99baa2950ccea7a7970375d47168e9d9c68182b7f5da56683",
+          "quote": "Anthropic 官网介绍 Daniela Amodei 为公司联合创始人兼总裁，并称她担任董事会主席。",
+          "quote_hash": "6fabee377a091f3020abc3a334c7c44d2bd3adb35a7d836f323ac0d94cc1266b"
+        },
+        {
+          "source_id": "daniela_interview",
+          "source_url": "https://www.marieclaire.com/culture/changemakers-2025/",
+          "source_title": "Introducing Our 2025 Changemakers | Marie Claire",
+          "source_content_hash": "4f8873d1ed77168414d4f0513cc16fe86f750ba23560f64cc12287ff349482f5",
+          "quote": "Daniela Amodei 在访谈中表示，她学习文学，职业生涯始于全球健康与政治领域。",
+          "quote_hash": "7b45e502d501496e16302989c951bf346f36747b448097b5d5df4cc60ec77171"
+        }
+      ],
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "现任职务取自 Anthropic 官网；职业早期信息来自本人访谈。学校、学位及具体任期未披露。"
     }
   },
   "relatedEntities": [],

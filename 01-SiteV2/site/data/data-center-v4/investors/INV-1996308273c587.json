@@ -299,14 +299,53 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Benchmark 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Benchmark 是总部位于加州的风险投资机构，长期投资早期科技公司。2026年媒体报道指出，该机构新设一支7.5亿美元早期基金及一支12.5亿美元成长基金；这标志着其首次设立成长基金。媒体还报道 Benchmark 曾投资 eBay、Snap、Uber、Twitter 与 Cerebras 等公司。报道中的单项回报数字不等于基金整体业绩。",
+      "facts": [
+        {
+          "field": "headquarters",
+          "label": "官网列示办公地点",
+          "value": [
+            "140 New Montgomery Street, San Francisco, CA 94105",
+            "2965 Woodside Road, Woodside, CA 94062"
+          ],
+          "source_id": "benchmark_home"
+        },
+        {
+          "field": "investment_stages",
+          "label": "媒体报道的投资阶段",
+          "value": [
+            "早期",
+            "成长期（2026年首次设立成长基金）"
+          ],
+          "source_id": "benchmark_2026"
+        },
+        {
+          "field": "new_funds",
+          "label": "2026年新基金报道规模",
+          "value": "两支基金合计约20亿美元：7.5亿美元早期基金及12.5亿美元成长基金；媒体报道口径",
+          "source_id": "benchmark_2026"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026-06",
+          "description": "媒体报道 Benchmark 完成7.5亿美元早期基金及12.5亿美元成长基金募集。",
+          "source_id": "benchmark_2026"
+        }
+      ],
       "track_record": [
+        {
+          "description": "TechCrunch报道列举 Benchmark 对 eBay、Snap、Uber、Twitter 的早期投资。",
+          "source_id": "benchmark_2026"
+        },
+        {
+          "description": "TechCrunch报道表示 Cerebras IPO 按发行价计算为 Benchmark 带来约32.5亿美元回报；这是媒体报道的单一投资结果，不代表基金整体回报率。",
+          "source_id": "benchmark_2026"
+        },
+        {
+          "description": "2026年融资报道将 Benchmark 列为 Instinct 融资轮联合领投方。",
+          "source_id": "benchmark_instinct"
+        },
         {
           "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮参投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-61aa8db010b34dfa"
@@ -320,8 +359,54 @@
           "source_id": "FISRC-745d673f45eb476d"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Benchmark",
+          "url": "https://www.benchmark.com/",
+          "source_id": "benchmark_home"
+        },
+        {
+          "kind": "address",
+          "label": "旧金山办公室",
+          "value": "140 New Montgomery Street, San Francisco, California 94105",
+          "url": "https://www.benchmark.com/",
+          "source_id": "benchmark_home"
+        },
+        {
+          "kind": "address",
+          "label": "Woodside办公室",
+          "value": "2965 Woodside Road, Woodside, California 94062",
+          "url": "https://www.benchmark.com/",
+          "source_id": "benchmark_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "benchmark_home",
+          "source_url": "https://www.benchmark.com/",
+          "source_title": "Benchmark",
+          "source_content_hash": "1f7e71b7cf9c13dde9c4f586a01cf29b6e7b312f6a284cc01ec599eee62e9d4c",
+          "quote": "Benchmark 官网列示旧金山 140 New Montgomery Street 及 Woodside 2965 Woodside Road 两处办公地址。",
+          "quote_hash": "6c8ad24cd3dea5cd4060327d73881953a64dae79871893175ccc8c88f170d8e4"
+        },
+        {
+          "source_id": "benchmark_2026",
+          "source_url": "https://techcrunch.com/2026/06/03/benchmark-raises-its-first-ever-growth-fund-as-part-of-2b-capital-raise/",
+          "source_title": "Benchmark raises its first-ever growth fund as part of $2B capital haul | TechCrunch",
+          "source_content_hash": "68f5a265afc9e42e3db2d691ad590ae6e59315cebe48b974910dcefa0242d87c",
+          "quote": "TechCrunch 报道 Benchmark 新基金合计约20亿美元，包括7.5亿美元早期基金和12.5亿美元成长基金；报道列举其对 eBay、Snap、Uber、Twitter、Cerebras 等公司的投资。",
+          "quote_hash": "2f9b2ff9d6897b23a89d7adeae399512061aa077c1906e272dde36871ce60134"
+        },
+        {
+          "source_id": "benchmark_instinct",
+          "source_url": "https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation/",
+          "source_title": "Viral AI startup Instinct has raised $350M at a $2.5B valuation | TechCrunch",
+          "source_content_hash": "28377be7f767ea42403462607928add95907a070fab77b20440999d53d22da65",
+          "quote": "TechCrunch 报道，Instinct 2026年B轮由 Index Ventures 与 Benchmark 联合领投。",
+          "quote_hash": "670df8237bdcca7f69e9383728e8fb609db69e4dc603334230596f80fba3706c"
+        },
         {
           "source_id": "FISRC-61aa8db010b34dfa",
           "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
@@ -347,7 +432,11 @@
           "quote_hash": "46643d92ebdeb1c973ce2321599e5ea69f52c9ecff4626d3f7cc700daf6937f0"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "coverage_note": "规模和投资结果取自媒体报道，官网公开页仅核验办公地点；未据单笔回报推算机构整体回报率。",
+      "identity_status": "verified"
     }
   }
 }

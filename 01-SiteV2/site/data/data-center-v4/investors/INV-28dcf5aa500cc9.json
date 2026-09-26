@@ -284,13 +284,50 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "云锋基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "云锋基金是一家由企业家共同发起的私募投资机构。未来科学大奖基金会的公开人物资料称，虞锋与马云于2010年联合发起云锋基金，机构关注硬科技、企业服务、绿色能源、现代农业、生物科技和消费等领域。云锋基金与在香港上市、从事保险及金融科技业务的云锋金融集团名称相近，但属于不同机构。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "发起年份",
+          "value": "2010年",
+          "source_id": "yunfeng_founders"
+        },
+        {
+          "field": "founders",
+          "label": "联合发起人",
+          "value": [
+            "虞锋",
+            "马云"
+          ],
+          "source_id": "yunfeng_founders"
+        },
+        {
+          "field": "sectors",
+          "label": "公开披露关注领域",
+          "value": [
+            "硬科技",
+            "企业服务",
+            "绿色能源",
+            "现代农业",
+            "生物科技",
+            "消费"
+          ],
+          "source_id": "yunfeng_founders"
+        },
+        {
+          "field": "identity_distinction",
+          "label": "相近名称辨析",
+          "value": "云锋金融集团（00376.HK）是开展保险、证券经纪、资产管理和金融科技业务的上市公司；不要将其直接等同于云锋基金。",
+          "source_id": "yunfeng_financial"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2010",
+          "description": "虞锋与马云联合发起成立云锋基金。",
+          "source_id": "yunfeng_founders"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：地瓜机器人 · C轮 · 2026-09-17 · 老股东持续加码 · 4亿美元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -305,8 +342,40 @@
           "source_id": "FISRC-fc5617428a7935ed"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "云锋基金公开介绍",
+          "value": "未来科学大奖基金会所载创办人及基金简介",
+          "url": "https://www.futureprize.org/cn/donors/founder-detail/714.html",
+          "source_id": "yunfeng_founders"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "yunfeng_founders",
+          "source_url": "https://www.futureprize.org/cn/donors/founder-detail/714.html",
+          "source_title": "虞锋｜未来科学大奖",
+          "source_content_hash": "117402a8ad9fde7eaad34c94e0e85ce1cd02826938783546337c2e88f3d57c19",
+          "quote": "未来科学大奖基金会公开资料称，虞锋与马云于2010年联合发起成立云锋基金；基金关注硬科技、企业服务、绿色能源、现代农业、生物科技和消费等领域。",
+          "quote_hash": "ba41e41edfb3b84a9ba51a01835c6b62a3cd023783cbe2520712666ba12581be"
+        },
+        {
+          "source_id": "yunfeng_financial",
+          "source_url": "https://www.yff.com/aboutYunfeng",
+          "source_title": "关于云锋金融｜云锋金融",
+          "source_content_hash": "f6b12fd02e65c3f9cf2a8ac1c049224c93ca17cc1e43e3842dc148295cf71494",
+          "quote": "云锋金融集团有限公司（股份代号00376.HK）是创新型金融科技公司，业务涵盖保险、证券经纪、资产管理和金融科技。",
+          "quote_hash": "b8c814830552b41be2d4be5c42c9f5f703b09c222a3ea22015a0be2f4dd12ca6"
+        },
+        {
+          "source_id": "yunfeng_fund3",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2018-07-21/1205219372.PDF",
+          "source_title": "基金名称、管理模式及投资方向｜中国证券监督管理委员会指定信息披露平台",
+          "source_content_hash": "da60db9f78fcf98e84e9844d790279bca5048afa087d137dae5edf6d25adc430",
+          "quote": "云锋基金III披露其主要投资对象为在大中华地区有重要经营或拓展潜力，或对大中华区业务有战略意义的公司。",
+          "quote_hash": "a60470f7bbe167307d58e64a3ccdb2fb58689d36f06f0f4ea5b576fbab1b9368"
+        },
         {
           "source_id": "FISRC-9addb049f2438939",
           "source_url": "https://www.163.com/dy/article/L71BBKKG0511A8SL.html",
@@ -332,7 +401,11 @@
           "quote_hash": "8445397bb38fdfaed62a63a987ce32a622be2525e7415323ab0bcb42d4fe69c8"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "coverage_note": "创办信息和行业领域依据公开资料；单支基金的投资方向按该支基金自身披露，不泛化为云锋基金所有基金的统一策略。",
+      "identity_status": "verified"
     }
   }
 }

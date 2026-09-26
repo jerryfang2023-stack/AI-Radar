@@ -236,11 +236,39 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "金创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "金创投是金华市创新投资发展有限公司的简称。公开机构资料称公司为金华市金投集团旗下的国资基金管理平台，并担任双龙人才基金管理人。投资界机构页列出其参与极佳视界、智象未来、非攻机械、格陆博等项目融资；机构规模和基金数量目前只按该机构页披露，不视作审计或现行备案数据。",
+      "facts": [
+        {
+          "field": "official_name",
+          "label": "机构全称",
+          "value": "金华市创新投资发展有限公司",
+          "source_id": "jinchuang_pedaily"
+        },
+        {
+          "field": "parent_company",
+          "label": "股东背景（公开机构资料）",
+          "value": "金华市金投集团有限公司旗下子公司",
+          "source_id": "jinchuang_pedaily"
+        },
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "地方国资基金管理与股权投资平台",
+          "source_id": "jinchuang_pedaily"
+        },
+        {
+          "field": "fund_manager_role",
+          "label": "基金管理角色（公开机构资料）",
+          "value": "金华市双龙人才基金管理人",
+          "source_id": "jinchuang_pedaily"
+        },
+        {
+          "field": "reported_scale",
+          "label": "基金管理规模（第三方机构页披露）",
+          "value": "主动管理规模超60亿元、管理及参与组建基金近20支；页面未标明该组数据的统计日期，需以最新官方披露复核。",
+          "source_id": "jinchuang_pedaily"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -252,8 +280,24 @@
           "source_id": "FISRC-6d78d6f795c322a1"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "投资界机构档案（非官方）",
+          "value": "金创投机构资料",
+          "url": "https://m.pedaily.cn/vc/vc/818268.html",
+          "source_id": "jinchuang_pedaily"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "jinchuang_pedaily",
+          "source_url": "https://m.pedaily.cn/vc/vc/818268.html",
+          "source_title": "金创投机构资料 - 投资界",
+          "source_content_hash": "660c756726ed6f438f928f0635485ed424363cfe781a1636a69d36312dbc20c5",
+          "quote": "投资界机构资料称金创投为金华市创新投资发展有限公司简称，介绍其股东背景、双龙人才基金管理角色和基金管理规模，并列出多个融资案例。",
+          "quote_hash": "98d32595b02189871a22a074dff20ae07d740ccdeb6d609b943a84c939ea746c"
+        },
         {
           "source_id": "FISRC-ce47b663ca256878",
           "source_url": "https://news.pedaily.cn/202606/565201.shtml",
@@ -271,7 +315,10 @@
           "quote_hash": "f7fc58c7fe3411442d6690eb0b26d4d41e2aed0156a184186f887df16b61666b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "当前找到的主体背景和规模来自第三方投资机构档案，尚未找到公司官方站点；以“第三方披露”标注，不把其规模或案例表述为独立核验结论。",
+      "last_verified_at": "2026-09-26"
     }
   }
 }

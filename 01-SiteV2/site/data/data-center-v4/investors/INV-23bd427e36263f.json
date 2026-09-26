@@ -239,14 +239,53 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Link Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Link Ventures 是位于美国马萨诸塞州剑桥 Kendall Square 的风险投资机构，官网称其聚焦 AI 技术创业团队，提供 Pre-Seed、Seed 和 Series A 阶段资金，并配套孵化、运营指导和产业网络。官网介绍创始人及普通合伙人 Dave Blundin 长期参与创业和董事会工作；相关组合公司数量及估值表现属于机构自述。数据库中的同名融资记录仍应按每笔披露来源确认具体基金或关联载体。",
+      "facts": [
+        {
+          "field": "headquarters",
+          "label": "所在地",
+          "value": "One Kendall Square, Cambridge, Massachusetts, United States",
+          "source_id": "linkventures_home"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": [
+            "人工智能",
+            "机器学习",
+            "数据科学"
+          ],
+          "source_id": "linkventures_home"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": [
+            "Pre-Seed",
+            "Seed",
+            "Series A"
+          ],
+          "source_id": "linkventures_home"
+        },
+        {
+          "field": "value_add",
+          "label": "投后支持",
+          "value": "官网列示孵化空间、运营指导、市场拓展、人才及创始人网络等支持。",
+          "source_id": "linkventures_home"
+        },
+        {
+          "field": "founder",
+          "label": "创始人",
+          "value": "Dave Blundin（官网列为 Founder and General Partner）",
+          "source_id": "linkventures_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官网展示投资组合和创业孵化案例；其展示的估值及组合成绩为机构公开陈述，未在本档案中独立审计。",
+          "source_id": "linkventures_home"
+        },
         {
           "description": "融资来源记录：Ornn AI Inc. · 种子轮 · 2026-06-24 · 既有投资方（本轮参投） · $33M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-44c6debf2c528a2a"
@@ -260,8 +299,43 @@
           "source_id": "FISRC-4b3f6b59387f35f7"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "投资策略、阶段、办公地址与创始人身份来自机构官网。官网提供联系入口和地址，未找到明确标注为投资申请渠道的公开邮箱；融资数据库中的名称也不足以识别具体基金载体。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网及联系入口",
+          "value": "Link Ventures",
+          "url": "https://linkventures.com/",
+          "source_id": "linkventures_home"
+        },
+        {
+          "kind": "address",
+          "label": "官网公开地址",
+          "value": "One Kendall Square, Building 200 - Suite B2201, Cambridge, MA 02139, United States",
+          "url": "https://linkventures.com/",
+          "source_id": "linkventures_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "linkventures_home",
+          "source_url": "https://linkventures.com/",
+          "source_title": "Link Ventures | Backing AI founders from MIT, Harvard, and beyond",
+          "source_content_hash": "073121264c5943a6a035f97967b6f0bf249108acd5512831018925b050e31ba9",
+          "quote": "Link Ventures describes itself as a Kendall Square venture capital firm investing in technical founders building AI technologies, with early-stage funding from Pre-Seed through Series A and incubation and operating support.",
+          "quote_hash": "2c514c1e7d998449e68e73ec35d0612bdd269de2c36b812f0a5f76a33ea22772"
+        },
+        {
+          "source_id": "linkventures_about",
+          "source_url": "https://www.linkventures.com/about",
+          "source_title": "About Us | Link Ventures",
+          "source_content_hash": "7936033d6294687107086631384c747f75996646cda877447b8e22b7b681b05e",
+          "quote": "The firm identifies Dave Blundin as Founder and General Partner and says he is Managing Partner at Link Ventures; its biography reports 23 co-founded companies and board service at 21 private and public companies. These are firm-published biographical claims.",
+          "quote_hash": "59ca18ce1f44c06c07239089c80e87d95c0d7c7b6f21d9ade50e6f2919e20c8a"
+        },
         {
           "source_id": "FISRC-44c6debf2c528a2a",
           "source_url": "https://siliconangle.com/2026/06/24/ornn-raises-33m-help-companies-buy-sell-ai-compute-commodity-like-oil/",
@@ -287,7 +361,7 @@
           "quote_hash": "048f43627c9f8b05bbeabdec070ecd51344aedf9a169825c1f5790b694d13920"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

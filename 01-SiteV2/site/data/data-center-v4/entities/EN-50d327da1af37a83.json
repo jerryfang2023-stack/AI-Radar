@@ -111,33 +111,65 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "夏中谱 的来源线索将其与无界动力（联合创始人兼联席CTO）关联。来源日期：2026-08-03；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "夏中谱是无界动力联合创始人兼联席CTO，负责世界模型具身智能多模态模型、数据闭环与云端仿真。新京报报道其获中国科学院自动化研究所博士学位；曾在理想汽车负责端到端智驾技术，在百度L4团队搭建Apollo预测模块并推进决策规划算法数据驱动升级。报道未披露其各段任职年份。",
+      "current_roles": [
+        {
+          "title": "联合创始人兼联席CTO",
+          "organization": "无界动力",
+          "source_id": "xia_bjnews"
+        }
+      ],
       "career": [
+        {
+          "organization": "百度L4自动驾驶团队",
+          "title": "Apollo预测模块研发；决策规划算法",
+          "period": "加入理想汽车之前；具体年份未披露",
+          "description": "新京报报道其从零搭建Apollo预测模块框架，并主导核心决策规划算法向数据驱动范式升级。",
+          "source_id": "xia_bjnews"
+        },
+        {
+          "organization": "理想汽车",
+          "title": "智能驾驶端到端技术负责人",
+          "period": "加入无界动力之前；具体年份未披露",
+          "description": "新京报报道其带领团队实现端到端智驾方案规模化量产落地。",
+          "source_id": "xia_bjnews"
+        },
         {
           "organization": "无界动力",
           "title": "联合创始人兼联席CTO",
-          "period": "来源记录于 2026-08-03；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-979aba054bdec86d"
+          "period": "2026年3月加入；报道时在任",
+          "description": "负责基于世界模型的具身多模态模型研发及数据闭环、云端仿真等基础设施。",
+          "source_id": "xia_bjnews"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "中国科学院自动化研究所",
+          "qualification": "博士；报道未披露",
+          "source_id": "xia_bjnews"
+        }
+      ],
+      "experience_summary": "履历连接自动驾驶预测/规划、端到端量产智驾与具身智能世界模型研发；目前公开来源未提供任职年份、博士研究方向及可量化个人业绩。",
+      "track_record": [
+        {
+          "description": "在理想汽车带队实现端到端智驾方案规模化量产；此前在百度L4团队搭建Apollo预测模块并推动算法数据驱动升级。以上为媒体转述的职业成果。",
+          "source_id": "xia_bjnews"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-979aba054bdec86d",
-          "source_url": "https://invest.beijing.gov.cn/tcgz/mjtz/202605/t20260506_4638014.html",
-          "source_title": "融资披露来源",
-          "source_content_hash": "25e391cfb79a8b1717d1d7e4c70eb75a73e88d0545783086a66e5cb9dc342a13",
-          "quote": "联合创始人兼联席CTO夏中谱作为国内最早的世界模型和强化学习研究者，有超过十五年的深厚经验",
-          "quote_hash": "4e8a547b15ba52d8178328ccaa298b1a4faef938b88818dab3aa8bcd33294f66"
+          "source_id": "xia_bjnews",
+          "source_url": "https://www.bjnews.com.cn/detail/1774790261129271.html",
+          "source_title": "新京报：夏中谱出任无界动力联合创始人兼联席CTO",
+          "source_content_hash": "9b24c6809dcfbcd4e7b77cd93ea62b0adc8c1c69c0957e446deecbdbe57c447c",
+          "quote": "新京报报道夏中谱为中科院自动化所博士，曾负责理想汽车端到端智驾，并在百度L4团队搭建Apollo预测模块。",
+          "quote_hash": "bbc01fe08b154594e71881ca7b0678be1bad92c041aa3a55bc6ddb068f7b9dcc"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "使用有署名媒体报道核对当前职务和主要职业经历；报道未给出的任职年份、学位研究领域均未推断。",
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

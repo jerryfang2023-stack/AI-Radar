@@ -111,33 +111,73 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "王维 的来源线索将其与墨芯人工智能（创始人&CEO）关联。来源日期：2026-08-03；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "王维是墨芯人工智能创始人兼 CEO。无锡市梁溪区政府 2025 年 12 月报道记载其以创始人、CEO 身份率团队交流项目合作；集微网对墨芯首席科学家严恩勖的专访称王维为其卡内基梅隆大学校友，并介绍其曾任 Intel、高通核心架构师及 CPU 高速链路架构师。后者为公司首席科学家访谈所述，任职日期和具体岗位仍待本人或原雇主资料进一步核验。",
+      "current_roles": [
+        {
+          "title": "创始人兼 CEO（政府报道截至 2025-12 确认）",
+          "organization": "墨芯人工智能科技（深圳）有限公司",
+          "source_id": "wangwei_wuxi_202512"
+        }
+      ],
       "career": [
         {
-          "organization": "墨芯人工智能",
-          "title": "创始人&CEO",
-          "period": "来源记录于 2026-08-03；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-0334f57604eea0b0"
+          "organization": "Intel",
+          "title": "核心架构师（公司首席科学家访谈所述）",
+          "period": "具体任期未披露",
+          "description": "集微网对墨芯首席科学家的访谈称其曾担任 Intel 核心架构师并参与多代 CPU 研发；为受访者转述。",
+          "source_id": "wangwei_ijiwei_2021"
+        },
+        {
+          "organization": "高通（Qualcomm）",
+          "title": "核心架构师（公司首席科学家访谈所述）",
+          "period": "具体任期未披露",
+          "description": "集微网对墨芯首席科学家的访谈提及其曾任高通核心架构师，未提供任期及项目资料。",
+          "source_id": "wangwei_ijiwei_2021"
+        },
+        {
+          "organization": "墨芯人工智能科技（深圳）有限公司",
+          "title": "创始人兼 CEO",
+          "period": "2025 年 12 月政府报道确认",
+          "description": "梁溪区政府报道其作为墨芯创始人、CEO率团队访问并洽谈项目合作。",
+          "source_id": "wangwei_wuxi_202512"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "卡内基梅隆大学",
+          "qualification": "校友（公司首席科学家访谈提及，专业与学历未披露）",
+          "source_id": "wangwei_ijiwei_2021"
+        }
+      ],
+      "experience_summary": "已公开资料显示其背景包括计算机体系结构与半导体研发，并创办墨芯开展稀疏计算和 AI 推理芯片业务；教育专业、各段任职时间及个人技术贡献尚无足够独立资料。",
+      "track_record": [
+        {
+          "description": "公司首席科学家访谈称王维参与多代 Intel CPU 研发；这是访谈对其经历的转述，未按独立业绩审计处理。",
+          "source_id": "wangwei_ijiwei_2021"
+        }
+      ],
+      "coverage_status": "researched",
+      "identity_status": "verified",
+      "coverage_note": "创始人及 CEO 身份由梁溪区政府 2025 年报道确认。早期技术职业经历来自公司首席科学家的媒体采访，具体任期及量产成绩未独立核实。当前角色最近一次确认时间为 2025 年 12 月。",
       "sources": [
         {
-          "source_id": "FISRC-0334f57604eea0b0",
-          "source_url": "https://pitchhub.36kr.com/project/1817518442563465",
-          "source_title": "融资披露来源",
-          "source_content_hash": "21f5d9cb80d22a2f81261c9b4a504c17b29af8639636ea44decf33e59922432b",
-          "quote": "王维，创始人&CEO，卡内基梅隆大学 | ECE硕士，拥有15年经验的硅谷数模混合电路专家",
-          "quote_hash": "a9bcd3d9081a9e67fbda5508d8326a9dec24ce70c707ff50088d56e673cc9cc5"
+          "source_id": "wangwei_wuxi_202512",
+          "source_url": "https://www.wxlx.gov.cn/doc/2025/12/23/4706087.shtml",
+          "source_title": "墨芯高层来访梁溪-无锡市梁溪区人民政府",
+          "source_content_hash": "878955c0165bd5cfc603c265bb0107fe957589723d9cf4a89e2bc9f1e8e769a9",
+          "quote": "梁溪区政府报道将王维称为墨芯创始人、CEO，并记载其率团队洽谈项目合作。",
+          "quote_hash": "778a7a310c78c160f6ff5564c2a03cc922d8df9fea99158d6ac8bebc9836715f"
+        },
+        {
+          "source_id": "wangwei_ijiwei_2021",
+          "source_url": "https://www.ijiwei.com/n/825189",
+          "source_title": "集微网专访墨芯人工智能首席科学家严恩勖",
+          "source_content_hash": "b274c92da2d4ae848ecb287b93058aaf797d633c28470f2ec74277fe81cecb88",
+          "quote": "墨芯首席科学家严恩勖在采访中称，王维是其卡内基梅隆大学校友，曾任Intel、高通核心架构师。",
+          "quote_hash": "c4feaa7fd4263c73a9367cbaee2c4b0e42c1d20ec200aa4f9f2fb9cd3b4cbf41"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

@@ -138,41 +138,63 @@
       }
     },
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "Alex Dimakis 的来源线索将其与Bespoke Labs（联合创始人兼首席科学官）关联。来源日期：2026-07-26；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "coverage_status": "researched",
+      "summary": "Alex Dimakis 在 Bespoke Labs 官网列为首席科学官；公司官网称其为教授。德克萨斯大学奥斯汀分校的院系页面另列其为电气与计算机工程兼职教授，并记载其在 UC Berkeley 与雅典国立理工大学的学位。两处对其教授任职机构的表述不一致，暂不将存在冲突的校级现职判断合并。",
+      "current_roles": [
+        {
+          "organization": "Bespoke Labs",
+          "title": "首席科学官（CSO）",
+          "source_id": "bespoke_about"
+        },
+        {
+          "organization": "University of Texas at Austin",
+          "title": "电气与计算机工程兼职教授（UT Austin院系页面列示）",
+          "source_id": "utexas_alex"
+        }
+      ],
       "career": [
         {
           "organization": "Bespoke Labs",
-          "title": "联合创始人兼首席科学官",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将Alex Dimakis与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-b675439a45a13649"
+          "title": "首席科学官",
+          "period": "公司官网现列；起始时间未披露",
+          "description": "Bespoke Labs 官网将 Alex Dimakis 列为 CSO。该页面同时将其教授头衔标为 UC Berkeley；UT Austin 院系页面另列兼职教授，教授任职存在口径差异。",
+          "source_id": "bespoke_about"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
+      "education": [
+        {
+          "institution": "University of California, Berkeley",
+          "qualification": "电气工程与计算机科学博士（2008）及硕士（2005）",
+          "source_id": "utexas_alex"
+        },
+        {
+          "institution": "National Technical University of Athens",
+          "qualification": "电气与计算机工程文凭（2003）",
+          "source_id": "utexas_alex"
+        }
+      ],
+      "experience_summary": "研究方向包括信息论、编码理论、信号处理、网络、分布式存储与分布式推理；教育和学术任职按 UT Austin 院系公开简历记录。",
       "track_record": [],
       "sources": [
         {
-          "source_id": "FISRC-338676825311d210",
-          "source_url": "https://techfundingnews.com/backed-by-anthropic-openai-and-meta-insiders-bespoke-labs-raises-40m-can-better-environments-beat-bigger-models/",
-          "source_title": "融资披露来源",
-          "source_content_hash": "5b6857fa049ce39e",
-          "quote": "Founded in 2024 by Sathiamoorthy and Alex Dimakis",
-          "quote_hash": "c2a44f5ab713c157a8bfb25ae7979f90c57abae3aab05e88f256f8fecf57192a"
+          "source_id": "bespoke_about",
+          "source_url": "https://bespokelabs.ai/about",
+          "source_title": "About — Bespoke Labs",
+          "source_content_hash": "7bd5f50e00e6d2dcb6cce90d4c61e9885df87f8eea99b3fb07be3b1a76b62a7f",
+          "quote": "Alex Dimakis — CSO [Professor, UC Berkeley].",
+          "quote_hash": "ac5b93a0bf3f9084be0b56219f63b69e3f55737e08658e31c131ad476c394ad1"
         },
         {
-          "source_id": "FISRC-b675439a45a13649",
-          "source_url": "https://www.morningstar.com/news/business-wire/20260706827813/bespoke-labs-announces-40m-to-build-the-environments-that-train-reliable-agents",
-          "source_title": "融资披露来源",
-          "source_content_hash": "c06a19f9bdff08b6",
-          "quote": "Alex Dimakis, co-founder and Chief Science Officer of Bespoke Labs",
-          "quote_hash": "7eac07c13ef3db800882f5ee7834a23c727c85f67b2a048f793af46c2216eaca"
+          "source_id": "utexas_alex",
+          "source_url": "https://ece.utexas.edu/people/faculty/alex-dimakis",
+          "source_title": "Alex Dimakis | Texas ECE",
+          "source_content_hash": "bccf9a12fc91c9d03d41dfc30f3c89857655c08e4a3c8a664298029a90b7ca32",
+          "quote": "Alex Dimakis is an adjunct professor in the Chandra Family Department of Electrical and Computer Engineering at The University of Texas at Austin. Prof. Dimakis received his Ph.D. in 2008 and M.S. degree in 2005 in electrical engineering and computer sciences from UC Berkeley and the Diploma degree from the National Technical University of Athens in 2003.",
+          "quote_hash": "c1a2b2d77741a906bc5a554f493b3ec8055970039b6534c94a3b11946d5ddfc9"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
     }
   },
   "relatedEntities": [],

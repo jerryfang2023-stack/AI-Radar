@@ -130,21 +130,115 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "5Y Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-01-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "五源资本（5Y Capital）官网将其定位为支持创业者的投资机构，并展示携程、小米、快手、微医、金山办公、地平线、小鹏汽车、小马智行等历史投资/陪伴案例；页面按“开始”年份标注相应企业与轮次，属于官网展示的品牌历史，不代表完整投资组合或基金回报。官网公开其在上海、北京、深圳和香港设有办公室；本次未找到可直接引用的公开募资/项目投递专用邮箱。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "官网投资理念",
+          "value": "寻找、支持并激励创业者，为其提供精神与经营运作方面的支持。",
+          "source_id": "5y_about"
+        },
+        {
+          "field": "portfolio_examples",
+          "label": "官网展示历史投资案例",
+          "value": [
+            "携程（2000年A轮开始）",
+            "小米（2010年A轮开始）",
+            "快手（2011年天使轮开始）",
+            "微医（2012年A轮开始）",
+            "金山办公（2013年A轮开始）",
+            "地平线（2015年种子轮开始）",
+            "小鹏汽车（2017年A+轮开始）",
+            "小马智行（2018年B轮开始）"
+          ],
+          "source_id": "5y_home"
+        },
+        {
+          "field": "offices",
+          "label": "官网列示办公城市",
+          "value": [
+            "上海",
+            "北京",
+            "深圳",
+            "香港"
+          ],
+          "source_id": "5y_contact"
+        },
+        {
+          "field": "responsible_investment",
+          "label": "负责任投资倡议",
+          "value": "官网声明已加入联合国支持的负责任投资原则组织（UN PRI）。",
+          "source_id": "5y_contact"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2000",
+          "description": "官网将携程A轮列为其投资开始案例之一；此为机构官网历史展示口径。",
+          "source_id": "5y_home"
+        },
+        {
+          "date": "2010",
+          "description": "官网将小米A轮列为其投资开始案例之一；此为机构官网历史展示口径。",
+          "source_id": "5y_home"
+        },
+        {
+          "date": "2015",
+          "description": "官网将地平线种子轮列为其投资开始案例之一；此为机构官网历史展示口径。",
+          "source_id": "5y_home"
+        }
+      ],
       "track_record": [
+        {
+          "description": "五源官网展示的历史案例包括携程、小米、快手、微医、金山办公、地平线、小鹏汽车和小马智行；这些是机构官网选择展示的投资/创业陪伴案例，不代表完整组合、退出倍数或基金净回报。",
+          "source_id": "5y_home"
+        },
         {
           "description": "融资来源记录：StepFun · B+轮 · 2026-01-26 · 第二轮投资方 · 50 亿人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e424026c5a172d4b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "五源资本 / 5Y Capital",
+          "url": "https://www.5ycap.com/",
+          "source_id": "5y_home"
+        },
+        {
+          "kind": "address",
+          "label": "官网列示办公城市",
+          "value": "上海、北京、深圳、香港（官网未披露街道地址）",
+          "url": "https://www.5ycap.com/contact/",
+          "source_id": "5y_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "5y_about",
+          "source_url": "https://www.5ycap.com/about/",
+          "source_title": "关于我们｜五源资本",
+          "source_content_hash": "b28bf5ae2cbbc8c79c7da5cd420a6fbaf79073df5a5fc46412d89f0ed750ed9c",
+          "quote": "五源寻找、支持、激励孤独的创业者，为其提供从精神到所有经营运作的支持。",
+          "quote_hash": "7d5a0cbc6775047a5e65323bf1149192da68826a59c425e38648871df9d12c9e"
+        },
+        {
+          "source_id": "5y_home",
+          "source_url": "https://www.5ycap.com/",
+          "source_title": "五源资本官网首页",
+          "source_content_hash": "d1d07136710b73481e172f134c9bea07bfaea42dd0853a8e8709e64a2d576444",
+          "quote": "2000年A轮开始 梁建章 携程；2010年A轮开始 雷军 小米；2011年天使轮开始 宿华 快手；2012年A轮开始 廖杰远 微医；2013年A轮开始 章庆元 金山办公；2015年种子轮开始 余凯 地平线；2017年A+轮开始 何小鹏 小鹏汽车；2018年B轮开始 彭军 小马智行。",
+          "quote_hash": "0607a9a43b4cea45faaf820971a6541fe37bd81f8ec7067d14a9facafe8fd3b1"
+        },
+        {
+          "source_id": "5y_contact",
+          "source_url": "https://www.5ycap.com/contact/",
+          "source_title": "联系我们｜五源资本",
+          "source_content_hash": "741617bdc45a31a34a9ceeb59b28e7ece2a41d82481f4bd0f828cfb8785d6d8b",
+          "quote": "五源资本在上海、北京、深圳和香港都设有办公室。五源资本已加入UN PRI（联合国支持的负责任投资原则组织）。",
+          "quote_hash": "717d7cea204abf0cf2fe51edae10f609c79035ff4924f31b029a3cefc1bcfe1d"
+        },
         {
           "source_id": "FISRC-e424026c5a172d4b",
           "source_url": "https://kr-asia.com/as-ai-consolidates-what-makes-stepfun-worth-a-rmb-5-billion-raise",
@@ -154,7 +248,11 @@
           "quote_hash": "bf077857a49e3226b45d077812681ff19fef33d75e911c341600ea3e749642ee"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "coverage_status": "researched",
+      "coverage_note": "该记录的5Y Capital名称与五源资本官网自称的5Y Capital一致。档案仅收录官网披露的投资理念、办公城市及代表性历史案例；不代表完整组合、退出倍数或基金净回报。",
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "identity_status": "verified"
     }
   }
 }

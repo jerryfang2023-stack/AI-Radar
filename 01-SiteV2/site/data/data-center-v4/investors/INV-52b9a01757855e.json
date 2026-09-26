@@ -189,14 +189,52 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Samsung Catalyst Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Samsung Catalyst Fund 是 Samsung Electronics 全资持有、在美国注册并进行全球投资的战略投资基金。官网称基金拥有独立投资决策权，并对组合公司承担受托责任；关注数据中心与云、人工智能、网络与5G、汽车、传感器、量子计算等技术。",
+      "facts": [
+        {
+          "field": "parent_company",
+          "label": "所属公司",
+          "value": "Samsung Electronics",
+          "source_id": "samsung_catalyst"
+        },
+        {
+          "field": "headquarters",
+          "label": "基金注册与运营所在地",
+          "value": "美国",
+          "source_id": "samsung_catalyst"
+        },
+        {
+          "field": "geography",
+          "label": "投资地域",
+          "value": "全球",
+          "source_id": "samsung_catalyst"
+        },
+        {
+          "field": "investment_focus",
+          "label": "关注领域",
+          "value": [
+            "数据中心与云",
+            "人工智能",
+            "网络与5G",
+            "汽车",
+            "传感器",
+            "量子计算"
+          ],
+          "source_id": "samsung_catalyst"
+        },
+        {
+          "field": "decision_governance",
+          "label": "决策与受托责任",
+          "value": "官网称基金拥有独立投资决策权，并对组合公司承担受托责任",
+          "source_id": "samsung_catalyst"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官网组合展示覆盖 AI 计算、AI 基础设施、互连、核心技术及 LP 基金投资等类别。官网新闻记录其参与 IonQ 5,500 万美元融资；该案例为单笔披露，不代表完整组合或基金回报。",
+          "source_id": "samsung_catalyst"
+        },
         {
           "description": "融资来源记录：OXMIQ · A轮 · 2026-07-01 · 本轮联合领投 · $35 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b7d7449114c23ca5"
@@ -206,8 +244,38 @@
           "source_id": "FISRC-6ef693ebacbad168"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站、团队与组合企业",
+          "value": "Samsung Catalyst Fund",
+          "url": "https://samsungcatalyst.com/",
+          "source_id": "samsung_catalyst"
+        },
+        {
+          "kind": "email",
+          "label": "创业项目联系邮箱",
+          "value": "catalyst@samsung.com",
+          "url": "https://samsungcatalyst.com/",
+          "source_id": "samsung_catalyst"
+        },
+        {
+          "kind": "address",
+          "label": "美国办公室",
+          "value": "3655 N 1st St, San Jose, CA 95134, USA",
+          "url": "https://samsungcatalyst.com/",
+          "source_id": "samsung_catalyst"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "samsung_catalyst",
+          "source_url": "https://samsungcatalyst.com/",
+          "source_title": "Samsung Catalyst Fund",
+          "source_content_hash": "d4eddd43466def6f375a09d78992361841f8e5fca27e41ed592cf384d8c599ca",
+          "quote": "Samsung Catalyst Fund is a U.S.-based fund that invests globally—fully owned by Samsung Electronics with a charter to make independent investment decisions and assume fiduciary responsibility to our portfolio companies.",
+          "quote_hash": "5ba8315bbeced6698650b7a7966d64c777742bbf2c4dcd929648d088801c7815"
+        },
         {
           "source_id": "FISRC-b7d7449114c23ca5",
           "source_url": "https://www.hpcwire.com/off-the-wire/oxmiq-raises-35m-to-scale-oxcoretm-architecture/",
@@ -225,7 +293,11 @@
           "quote_hash": "4176996439738f8e3f1f9bb2ded34c557750df899e0a00fcca208a70bcb8785f"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

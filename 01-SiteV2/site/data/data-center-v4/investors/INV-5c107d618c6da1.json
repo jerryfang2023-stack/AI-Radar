@@ -191,14 +191,50 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Bek Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Bek Ventures 是一家专注于早期创业公司的风险投资机构，官网称其进入第二个运营十年，通过小而集中的组合为少数创始团队提供长期支持。官网还自述单支基金约投资20家公司、组合企业90%以上获得其后续支票，并称过去十年实现回报24亿美元；这些绩效指标未独立核验且官网未在摘录处标示统计截止日。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期",
+          "source_id": "bek_home"
+        },
+        {
+          "field": "portfolio_size",
+          "label": "单支基金组合数量（官网自述）",
+          "value": "约20家公司",
+          "source_id": "bek_home"
+        },
+        {
+          "field": "follow_on_rate",
+          "label": "组合后续投资比例（官网自述）",
+          "value": "90%以上",
+          "source_id": "bek_home"
+        },
+        {
+          "field": "realized_returns",
+          "label": "过去十年实现回报（官网自述）",
+          "value": "24亿美元；未独立核验，统计截止时间未标明",
+          "source_id": "bek_home"
+        },
+        {
+          "field": "offices",
+          "label": "官网联系页列示城市",
+          "value": [
+            "纽约",
+            "伊斯坦布尔",
+            "伦敦",
+            "卢森堡"
+          ],
+          "source_id": "bek_contact"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官网披露其组合覆盖早期企业，并发布组合公司案例及创始人故事；本条不将选择性展示解释为完整投资清单。",
+          "source_id": "bek_home"
+        },
         {
           "description": "融资来源记录：FintechOS · 债务融资 · 2026-09-21 · 本轮参投 · $28M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ebb4cfeb462f5780"
@@ -208,8 +244,46 @@
           "source_id": "FISRC-ce83b857608dabeb"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Bek Ventures",
+          "url": "https://www.bekventures.com/",
+          "source_id": "bek_home"
+        },
+        {
+          "kind": "email",
+          "label": "投资申请",
+          "value": "investment@bekventures.com",
+          "url": "https://www.bekventures.com/contact",
+          "source_id": "bek_contact"
+        },
+        {
+          "kind": "email",
+          "label": "一般联系",
+          "value": "contact@bekventures.com",
+          "url": "https://www.bekventures.com/contact",
+          "source_id": "bek_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "bek_home",
+          "source_url": "https://www.bekventures.com/",
+          "source_title": "Bek Ventures - 官方网站",
+          "source_content_hash": "152cb764375a7c9d4436acd883af761dea84f29e5d17be3701a22aca7704f358",
+          "quote": "Bek官网称其是陪伴早期创始人的风险投资机构，已进入第二个十年；官网自述每支基金投资约20家公司、超过90%的组合公司获得其后续支票，过去十年实现回报24亿美元。",
+          "quote_hash": "72d2aa93771b1de77563519061fd158a85105308b292876e941411ab1b0d7a1b"
+        },
+        {
+          "source_id": "bek_contact",
+          "source_url": "https://www.bekventures.com/contact",
+          "source_title": "Connect with us - Bek Ventures",
+          "source_content_hash": "f438c3357aefef209267ff1c708b554e9aee90be4716c4c8987ef6114d6f4a12",
+          "quote": "Bek Ventures联系页公开投资申请邮箱investment@bekventures.com、一般联系邮箱contact@bekventures.com，并列出纽约、伊斯坦布尔、伦敦和卢森堡。",
+          "quote_hash": "dfb123226095e727cd22d289d25d59f5830b1d61910d828d0356c2f701694928"
+        },
         {
           "source_id": "FISRC-ebb4cfeb462f5780",
           "source_url": "https://fintechos.com/in-the-news/fintechos-secures-28m-in-combined-equity-and-debt-financing/",
@@ -227,7 +301,11 @@
           "quote_hash": "c2ab11526d7c8fb7f371528c4b6a1045dc8928a0014227deef5dc5ca2a146f2e"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "投资阶段、组合策略和回报/跟投比例来自Bek Ventures官网自述，业绩指标未独立核验且未显示统计截止日；投资申请邮箱由官网明确标注。",
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization"
     }
   }
 }

@@ -111,33 +111,70 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "王潜 的来源线索将其与自变量机器人（创始人兼CEO）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "王潜是自变量机器人创始人兼CEO，清华大学本硕校友，曾在南加州大学攻读博士并从事机器人学习、人机交互研究。清华大学资料确认其创业职务及校友背景；技术观点和公司产品成绩不作为个人独立业绩。",
+      "current_roles": [
+        {
+          "title": "创始人兼首席执行官",
+          "organization": "自变量机器人",
+          "source_id": "wangqian_tsinghua_202604"
+        }
+      ],
       "career": [
         {
           "organization": "自变量机器人",
-          "title": "创始人兼CEO",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-449b969616ed1e95"
+          "title": "创始人兼首席执行官",
+          "period": "2026年4月清华报道确认在任",
+          "description": "带领团队开展具身智能基础模型及通用机器人研发。",
+          "source_id": "wangqian_tsinghua_202604"
+        },
+        {
+          "organization": "南加州大学机器人研究",
+          "title": "博士研究人员",
+          "period": "清华校友资料提及；任读年份未公开于所引资料",
+          "description": "研究机器人学习、人机交互、机器人操作及家庭服务机器人。",
+          "source_id": "wangqian_tsinghua_202504"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "清华大学电子工程系",
+          "qualification": "本科、硕士；2007级本科校友",
+          "source_id": "wangqian_tsinghua_202604"
+        },
+        {
+          "institution": "南加州大学",
+          "qualification": "博士阶段学习；所引资料未确认毕业时间及学位授予状态",
+          "source_id": "wangqian_tsinghua_202504"
+        }
+      ],
+      "experience_summary": "由电子信息与机器人学术研究转向具身智能创业；公开教育材料称其为清华本硕、曾在南加州大学攻读博士，具体学位状态按来源保留限定。",
+      "track_record": [
+        {
+          "description": "清华校友资料称其属于较早在神经网络研究中引入注意力机制的研究者之一；原始论文与作者贡献仍应以学术出版记录逐项核对。",
+          "source_id": "wangqian_tsinghua_202504"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-449b969616ed1e95",
-          "source_url": "https://www.36kr.com/p/3636080421586182",
-          "source_title": "融资披露来源",
-          "source_content_hash": "abef77aff9b6b68f",
-          "quote": "创始人兼CEO 王潜 ，本硕毕业于清华大学，后在美国南加州大学攻读博士，研究方向为 Robotics Learning。",
-          "quote_hash": "0c5f988d9e997b084b4b43829027cd64d0ed63d95f4df2a9512772e745f77a90"
+          "source_id": "wangqian_tsinghua_202504",
+          "source_url": "https://www.ee.tsinghua.edu.cn/info/1076/4774.htm",
+          "source_title": "机器人行业奋斗中的清华人｜第二、三讲回顾-清华大学电子工程系",
+          "source_content_hash": "d5fba4ebc6ef1f78b58f3e47440cd93a7e538bdb54c184b972d075ae46f02d5f",
+          "quote": "清华大学电子工程系将王潜列为自变量机器人创始人兼CEO，记载其为清华大学本硕校友、曾在南加州大学攻读博士并参与机器人学习与人机交互研究。",
+          "quote_hash": "3126e4f3d7a5a1535c8bcbcc2f0953e4fe1ae926174495d92ae92d193ced9823"
+        },
+        {
+          "source_id": "wangqian_tsinghua_202604",
+          "source_url": "https://www.ee.tsinghua.edu.cn/info/1076/5182.htm",
+          "source_title": "清华大学-自变量机器人下一代具身基座模型产学研专项启动会",
+          "source_content_hash": "3dd3c7eaa3d10e72836e6c096afac69997fe3525de515c08dc7514caa75a2f12",
+          "quote": "清华大学电子工程系2026年报道确认王潜为自变量机器人创始人兼首席执行官、专项指导委员会主任，并称其为电子系2007级本科校友。",
+          "quote_hash": "bd91ec4859622cb66087ba720d06504aece09b5a3dd691fcc4fa8c516599a063"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "职务与校友身份由清华大学院系直接确认；博士经历按“攻读博士”表述，不擅自写成已获得博士学位。"
     }
   },
   "relatedEntities": [],

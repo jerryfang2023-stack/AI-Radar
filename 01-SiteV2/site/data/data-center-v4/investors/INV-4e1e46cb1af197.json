@@ -240,14 +240,51 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "First Round Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-31；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "First Round Capital 是面向公司创立最早阶段的风险投资机构，关注天使、Pre-seed 与 Seed 阶段，并为早期团队提供招聘、市场进入及产品市场匹配等运营支持。官网称其与 500 多支早期团队合作，并表示投资团队成员均有创办公司经历。",
+      "facts": [
+        {
+          "field": "investment_stages",
+          "label": "官网披露投资阶段",
+          "value": [
+            "天使",
+            "Pre-seed",
+            "Seed"
+          ],
+          "source_id": "firstround_who"
+        },
+        {
+          "field": "founder_support",
+          "label": "官网披露的创始人支持",
+          "value": [
+            "招聘",
+            "市场营销与销售策略",
+            "产品市场匹配支持"
+          ],
+          "source_id": "firstround_work"
+        },
+        {
+          "field": "portfolio_count",
+          "label": "官网披露合作团队数量",
+          "value": "500 多支早期团队；机构自述，未标注统计日期",
+          "source_id": "firstround_who"
+        },
+        {
+          "field": "investment_geography",
+          "label": "官网披露地域重点",
+          "value": "主要关注美国公司；官网称对少数美国以外公司有例外投资",
+          "source_id": "firstround_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官网展示投资组合创始人案例，包括 Uber、Square、Looker、Roblox 与 Notion；此为官网列举案例，不代表投资业绩保证。",
+          "source_id": "firstround_who"
+        },
+        {
+          "description": "First Round 官网披露与 500 多支早期团队合作。",
+          "source_id": "firstround_who"
+        },
         {
           "description": "融资来源记录：Ellis AI · 种子轮 · 2026-07-31 · 本轮参投 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a8e6dd6c34cd416a"
@@ -261,8 +298,68 @@
           "source_id": "FISRC-03b9d51b95b8c6ce"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "First Round",
+          "url": "https://www.firstround.com/",
+          "source_id": "firstround_home"
+        },
+        {
+          "kind": "contact_form",
+          "label": "融资联系与投资流程说明",
+          "value": "官网建议创始人向投资团队介绍项目；具体联系入口见官网 Who We Back 页面",
+          "url": "https://www.firstround.com/who-we-back",
+          "source_id": "firstround_who"
+        },
+        {
+          "kind": "address",
+          "label": "旧金山办公室",
+          "value": "921 Front Street, San Francisco, CA 94111",
+          "url": "https://www.firstround.com/who-we-back",
+          "source_id": "firstround_who"
+        },
+        {
+          "kind": "address",
+          "label": "纽约办公室",
+          "value": "165 Mercer Street, Floor 2, New York, NY 10012",
+          "url": "https://www.firstround.com/who-we-back",
+          "source_id": "firstround_who"
+        },
+        {
+          "kind": "address",
+          "label": "费城办公室",
+          "value": "2400 Market St, Suite 237, Philadelphia, PA 19103",
+          "url": "https://www.firstround.com/who-we-back",
+          "source_id": "firstround_who"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "firstround_who",
+          "source_url": "https://www.firstround.com/who-we-back",
+          "source_title": "Who We Back | First Round",
+          "source_content_hash": "5f824e317ed8b55c33e1e0d6a823b7c80417f7038332b3f60964c783ccbe51b4",
+          "quote": "We back founders who go unreasonably deep to get their beginnings right. We have worked with 500+ early teams. We are focused on being the world’s best partner for founders at the very first stages of company creation.",
+          "quote_hash": "7ee6d9eaee7fecb06f847c734503a96cbacafbe78dab566a2f3e91098b7541b4"
+        },
+        {
+          "source_id": "firstround_work",
+          "source_url": "https://www.firstround.com/how-we-work",
+          "source_title": "How We Work | First Round",
+          "source_content_hash": "6cc3a06f44a5302b5ef3dbfd526385c27b1f83c10b8d8c2538801a9ea5b1bbdc",
+          "quote": "We’re focused on being the world’s best partner for founders at the very first stages of company creation. We work with founders on product-market fit, team building, recruiting and early marketing.",
+          "quote_hash": "7aca1eb68ee9bba770c4b284462def172bcda0d1450d0b7935d01b70fecb91c9"
+        },
+        {
+          "source_id": "firstround_home",
+          "source_url": "https://www.firstround.com/",
+          "source_title": "Home | First Round",
+          "source_content_hash": "70e20fc889b99f5d50352691d2ead72fc63c1da0b9ba81f16ebe3079470681b8",
+          "quote": "We don’t see divisions between angel, pre-seed and seed — we’re interested across the board. We tend to focus exclusively on companies based in the U.S., with a few exceptions. Our offices are in San Francisco, New York, and Philadelphia.",
+          "quote_hash": "761f05201de282f24f4ba605b1a81e7a2c3e67b38526412e93069c51490e4cb0"
+        },
         {
           "source_id": "FISRC-a8e6dd6c34cd416a",
           "source_url": "https://techcrunch.com/2026/07/31/repeat-founder-ryan-williams-raises-10m-seed-for-an-ai-startup-for-private-credit-managers/",
@@ -288,7 +385,11 @@
           "quote_hash": "3b6a63c25ba8b8d8e2fd847a93d7b9bfba14d69d63bd14ce73e0b2435993fa28"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

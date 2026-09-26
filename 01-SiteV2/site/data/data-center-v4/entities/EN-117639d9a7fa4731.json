@@ -111,33 +111,59 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "董亮 的来源线索将其与中科欣扬（创始人）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
+      "summary": "董亮是深圳中科欣扬联合创始人及生物技术创业者。公司官网2021年回顾称其参与创办公司；龙岗区政府报道介绍其为中科院微生物所博士，并记录了其参与海洋科考与微生物资源研究。",
       "current_roles": [],
       "career": [
         {
-          "organization": "中科欣扬",
-          "title": "创始人",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将董亮与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-8c121a58e2376a1d"
+          "organization": "中国科学院微生物研究所相关科考团队",
+          "title": "科研人员/科考参与者",
+          "period": "2014—2015年相关科考；来源未披露任职关系",
+          "description": "公司公开材料称其参加“大洋一号”科考并在西南印度洋热液羽流区采集微生物资源；此处只记录科考经历，不推定正式任职。",
+          "source_id": "dongliang_gov"
+        },
+        {
+          "organization": "深圳中科欣扬生物科技有限公司",
+          "title": "联合创始人；公司于2021年材料中称其为CEO",
+          "period": "2015年至至少2021年公开报道",
+          "description": "与董欣欣共同创办公司，开展微生物酶及生物活性物质研发与产业化。",
+          "source_id": "siyobio_2021"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "中国科学院微生物研究所",
+          "qualification": "博士（地方政府公开报道披露）",
+          "source_id": "dongliang_gov"
+        }
+      ],
+      "experience_summary": "公开材料显示其科研经历与合成生物学创业相连接；2015年科考和样本采集由公司与地方政府报道记载。当前职务未据旧报道外推。",
+      "track_record": [
+        {
+          "description": "中科欣扬2021年公司新闻回顾其六年发展及生物科技产品商业化进程；该公司自述不作为对董亮个人业绩的独立评估。",
+          "source_id": "siyobio_2021"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-8c121a58e2376a1d",
-          "source_url": "https://news.pedaily.cn/202607/567057.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "b053cba718882f51",
-          "quote": "中科欣扬创始人董亮 表示",
-          "quote_hash": "488727166ad92ace6a76de3d8d9aa403a7b1bacd664043eb1a0edaf80a1b2600"
+          "source_id": "siyobio_2021",
+          "source_url": "https://www.siyobio.com/company-news/53.html",
+          "source_title": "同心追梦，向阳而生丨中科欣扬六周年庆典",
+          "source_content_hash": "958fbde559c3cad89d6ae0da5a41b9bb2986a3b8c63d0e0842293b8ac3c1be1e",
+          "quote": "中科欣扬公司新闻称，2015年董亮与董欣欣共同创办公司，2021年为联合创始人兼CEO。",
+          "quote_hash": "d0a7327940a00832a6b5219b9cedf3cb5f84bf31cf8b045e6c48a34b119e93a3"
+        },
+        {
+          "source_id": "dongliang_gov",
+          "source_url": "https://www.lg.gov.cn/bmzz/czj/xxgk/gyqy/qyxx/content/post_8278154.html",
+          "source_title": "中科欣扬，用合成生物学打造生物制造“芯片”｜深圳市龙岗区政府",
+          "source_content_hash": "659e1fd98e4eea924f842320dc3563e3cf0a7e08ba4e6e585dd7adc38f3c2670",
+          "quote": "深圳市龙岗区政府报道介绍董亮为中国科学院微生物研究所博士，并称其与董欣欣共同创办中科欣扬；报道记载他参与海洋科考与极端环境微生物资源采集。",
+          "quote_hash": "dc2454914053b1cda600ac23f72a54df81db3b6c78d1c23d587db9e5b71fa418"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "现任职务未使用2021年旧报道推断；教育与科考经历按地方政府公开报道记录。"
     }
   },
   "relatedEntities": [],

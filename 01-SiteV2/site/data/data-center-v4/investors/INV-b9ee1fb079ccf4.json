@@ -178,24 +178,86 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "茅台基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "融资数据库中的“茅台基金”是来源使用的简称，尚不能锁定为唯一法律主体。茅台集团官方确认其旗下茅台（贵州）私募基金管理有限公司于2014年成立并从事市场化股权投资；上市公司披露还存在茅台招华、茅台金石等具体基金。因此本页提供可核实的管理平台及关联基金背景，但不将融资记录强行绑定到某一只基金。",
+      "facts": [
+        {
+          "field": "database_label",
+          "label": "数据库名称口径",
+          "value": "茅台基金（交易来源简称，具体法律主体待核验）",
+          "source_id": "moutai_group_profile"
+        },
+        {
+          "field": "manager_company",
+          "label": "茅台集团投资管理平台",
+          "value": "茅台（贵州）私募基金管理有限公司",
+          "source_id": "moutai_group_profile"
+        },
+        {
+          "field": "parent_company",
+          "label": "集团关系",
+          "value": "中国贵州茅台酒厂（集团）有限责任公司旗下子公司",
+          "source_id": "moutai_group_profile"
+        },
+        {
+          "field": "established",
+          "label": "管理公司成立时间",
+          "value": "2014年9月",
+          "source_id": "moutai_group_profile"
+        },
+        {
+          "field": "business",
+          "label": "管理公司业务",
+          "value": "市场化股权投资业务",
+          "source_id": "moutai_group_profile"
+        },
+        {
+          "field": "related_fund_vehicle",
+          "label": "贵州茅台披露的相关基金（不代表交易记录对应关系）",
+          "value": "茅台招华（贵州）产业发展基金合伙企业（有限合伙）",
+          "source_id": "moutai_fund_name_zhaohua"
+        },
+        {
+          "field": "related_fund_vehicle",
+          "label": "贵州茅台披露的相关基金（不代表交易记录对应关系）",
+          "value": "茅台金石（贵州）产业发展基金合伙企业（有限合伙）",
+          "source_id": "moutai_fund_name_jinshi"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2014-09",
+          "description": "茅台集团招聘公告介绍茅台（贵州）私募基金管理有限公司成立。",
+          "source_id": "moutai_group_profile"
+        },
+        {
+          "date": "2023-08",
+          "description": "贵州茅台披露茅台招华基金、茅台金石基金完成登记和备案。",
+          "source_id": "moutai_fund_registration"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：智身科技（GENISOM AI） · B轮 · 2026-09-20 · 历史轮次投资方 · 数亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资来源记录：智身科技A+轮信息将“茅台基金”列为投资方，尚无所引来源披露该简称背后的基金全名。",
           "source_id": "FISRC-750c27d055174535"
         },
         {
-          "description": "融资来源记录：小雨智造 · B+轮 · 2026-05-09 · B轮投资方 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资来源记录：小雨智造B轮信息将“茅台基金”列为跟投方，尚无所引来源披露该简称背后的基金全名。",
           "source_id": "FISRC-d53187e629e482f0"
+        },
+        {
+          "description": "截至2024年6月30日，贵州茅台半年度报告披露茅台金石基金累计投资3个项目，合计投资金额2.3亿元；该数据仅属于具名基金。",
+          "source_id": "moutai_fund_report"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "茅台集团官网（母集团）",
+          "value": "中国贵州茅台酒厂（集团）有限责任公司",
+          "url": "https://www.moutai.com.cn/",
+          "source_id": "moutai_group_profile"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-750c27d055174535",
@@ -212,9 +274,61 @@
           "source_content_hash": "2287537540d10b6a",
           "quote": "B 轮 数亿元 2026-03 华业天成领投，招银国际、茅台基金、贵州科创天使基金跟投",
           "quote_hash": "3ad99f55f8125a47d02e825cdb9b9baf5ab71d4fc3dc90ac5690ad8d47c40d8b"
+        },
+        {
+          "source_id": "moutai_group_profile",
+          "source_url": "https://www.moutai.com.cn/mtjt/2023-04/23/article_2023111312124294061.html",
+          "source_title": "茅台（贵州）私募基金管理有限公司2023年社会招聘公告",
+          "source_content_hash": "346867b923b4260d4b613af52d0bf09c48e480823d20f9cc752db5081168a8d0",
+          "quote": "茅台（贵州）私募基金管理有限公司成立于2014年9月，是中国贵州茅台酒厂（集团）有限责任公司旗下子公司，主要从事市场化的股权投资业务。",
+          "quote_hash": "6bac051f11ff6d9bfbbb0d008a8b2f5e3ee159b0d8036a459c0741bc13e147a1"
+        },
+        {
+          "source_id": "moutai_group_disclosure",
+          "source_url": "https://www.moutaichina.com/eportal/fileDir/maotaigf/resource/cms/article/408428/559704/2023060614143257837.pdf",
+          "source_title": "贵州茅台2022年度股东大会资料：茅台基金公司基本情况",
+          "source_content_hash": "d8b0107d9b746700ef6fc930c41ff1e5e86b4bc6892dfcb22ae24fbb6da2a3f6",
+          "quote": "茅台（贵州）私募基金管理有限公司",
+          "quote_hash": "ea62d69f5afcfa98b7599ff864fa362680a9187918a1b9fc4e414a0a16c00bad"
+        },
+        {
+          "source_id": "moutai_fund_report",
+          "source_url": "https://dataclouds.cninfo.com.cn/shgonggao/2024/2024-08-09/94b0f19e557811ef92d8fa163e26e5de.pdf",
+          "source_title": "贵州茅台2024年半年度报告：私募基金投资情况",
+          "source_content_hash": "898b37d6529d0042aa66461bae11b84a47f9337c2ff1d572155bfa71fca77c58",
+          "quote": "茅台金石基金累计投资3个项目，合计投资金额2.3亿元。",
+          "quote_hash": "35406a83568f6a86ea7df95594c86ccbd744408174df7d2cf05396fbba32ca37"
+        },
+        {
+          "source_id": "moutai_fund_name_zhaohua",
+          "source_url": "https://dataclouds.cninfo.com.cn/shgonggao/2024/2024-08-09/94b0f19e557811ef92d8fa163e26e5de.pdf",
+          "source_title": "贵州茅台2024年半年度报告：私募基金投资情况",
+          "source_content_hash": "898b37d6529d0042aa66461bae11b84a47f9337c2ff1d572155bfa71fca77c58",
+          "quote": "茅台招华（贵州）产业发展基金合伙企业（有限合伙）",
+          "quote_hash": "97cd6cdf16e4d128432bebab8d689544cfc472564f063ac74359e1438cbb91f8"
+        },
+        {
+          "source_id": "moutai_fund_name_jinshi",
+          "source_url": "https://dataclouds.cninfo.com.cn/shgonggao/2024/2024-08-09/94b0f19e557811ef92d8fa163e26e5de.pdf",
+          "source_title": "贵州茅台2024年半年度报告：私募基金投资情况",
+          "source_content_hash": "898b37d6529d0042aa66461bae11b84a47f9337c2ff1d572155bfa71fca77c58",
+          "quote": "茅台金石（贵州）产业发展基金合伙企业（有限合伙）",
+          "quote_hash": "36ee3e5bc1e81eefc3d32cc1703aaabceb2c3fdadf38011b01cd357be030f047"
+        },
+        {
+          "source_id": "moutai_fund_registration",
+          "source_url": "https://dataclouds.cninfo.com.cn/shgonggao/2024/2024-08-09/94b0f19e557811ef92d8fa163e26e5de.pdf",
+          "source_title": "贵州茅台2024年半年度报告：私募基金投资情况",
+          "source_content_hash": "898b37d6529d0042aa66461bae11b84a47f9337c2ff1d572155bfa71fca77c58",
+          "quote": "茅台招华基金2023年8月2日完成工商登记，2023年8月25日完成基金备案。",
+          "quote_hash": "bccf995351ca4e5a0d22b34000d24eb634e07e8b25035dab7e56600de3a15958"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "交易记录只给出“茅台基金”简称。茅台集团旗下有管理公司及多个投资基金；目前没有原始融资文件将本库每笔交易里的该简称对应到具体法律实体。官方招聘邮箱仅用于招聘，不作为投资联系渠道。",
+      "last_verified_at": "2026-09-26"
     }
   }
 }

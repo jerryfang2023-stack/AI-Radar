@@ -190,14 +190,73 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "645 Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-31；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "645 Ventures 是一家总部位于纽约与旧金山的早期风险投资机构，主要投资 Seed 与 Series A，也可在后续阶段继续支持组合公司。官网披露其领域包括企业软件、深科技、AI 基础设施与开发工具、金融科技、消费、网络安全及健康科技，并通过招聘、客户引荐、市场进入和融资支持帮助创始团队。",
+      "facts": [
+        {
+          "field": "headquarters",
+          "label": "官网列示基地",
+          "value": [
+            "纽约",
+            "旧金山"
+          ],
+          "source_id": "645_home"
+        },
+        {
+          "field": "investment_stages",
+          "label": "官网披露投资阶段",
+          "value": [
+            "Seed",
+            "Series A",
+            "成长及后期"
+          ],
+          "source_id": "645_home"
+        },
+        {
+          "field": "investment_check_size",
+          "label": "官网披露投资金额区间",
+          "value": [
+            "Seed：100万至500万美元",
+            "Series A：500万至1,000万美元",
+            "成长及后期：500万至1,500万美元"
+          ],
+          "source_id": "645_home"
+        },
+        {
+          "field": "sectors",
+          "label": "官网列示关注领域",
+          "value": [
+            "企业软件",
+            "深科技",
+            "AI 基础设施与开发工具",
+            "金融科技",
+            "消费",
+            "网络安全",
+            "健康科技"
+          ],
+          "source_id": "645_home"
+        },
+        {
+          "field": "founder_support",
+          "label": "官网披露的创始人支持",
+          "value": [
+            "招聘",
+            "客户引荐",
+            "市场进入策略",
+            "后续融资与交易结构"
+          ],
+          "source_id": "645_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "645 Ventures 官网举例称曾支持组合企业 Squire 制定疫情期间的客户保障与政策方案，并在 Inner Balance 的市场进入和合作伙伴引荐方面提供支持；相关描述来自组合创始人反馈。",
+          "source_id": "645_home"
+        },
+        {
+          "description": "该机构自述其运营 Voyager 专有软件、结合主题研究进行初创项目筛选，并为创始人提供公司发展支持。",
+          "source_id": "645_thesis"
+        },
         {
           "description": "融资来源记录：Ellis AI · 种子轮 · 2026-07-31 · 本轮参投 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a8e6dd6c34cd416a"
@@ -207,8 +266,39 @@
           "source_id": "FISRC-2513b5897a02dd3c"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "645 Ventures",
+          "url": "https://645ventures.com/",
+          "source_id": "645_home"
+        },
+        {
+          "kind": "contact_form",
+          "label": "项目与合作联系入口",
+          "value": "Get in Touch 在线表单",
+          "url": "https://airtable.com/appGb8jJGlicUkjgn/pagSRwwW1RXpwNtZr/form",
+          "source_id": "645_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "645_home",
+          "source_url": "https://645ventures.com/",
+          "source_title": "645 Ventures — Early-Stage Venture Capital",
+          "source_content_hash": "dc69cfca7773f8be46c34f0c55499bd3362d8b489d377c0f3f509e01e02e56cb",
+          "quote": "645 Ventures is a New York and San Francisco-based early-stage venture firm. It invests $1–5M at Seed, $5–10M at Series A, and $5–15M in growth and late-stage rounds across enterprise, deep tech, AI infrastructure / DevTools, fintech, consumer, cybersecurity and health tech.",
+          "quote_hash": "db336532d8989315f679b337ea483a8aa4077a14942f2b7c9d84146bf275c9ae"
+        },
+        {
+          "source_id": "645_thesis",
+          "source_url": "https://www.645ventures.com/founder-paradigms",
+          "source_title": "Founder Paradigms — 645 Ventures",
+          "source_content_hash": "8d67dedcaed1f69cc3cbec57ef8929ecb23bfa669594d47ba96116544f0bfdc1",
+          "quote": "645 Ventures describes itself as a research-driven and founder-focused venture capital firm with a concentrated portfolio, using thematic research and its proprietary software Voyager to identify startups. Its listed entry stage is Seed / Series A and its investment role is Lead / Co-lead.",
+          "quote_hash": "a0156f189b9e3ae63bf9f6736583d114365a9506b1de2ce4a6ecbe1b2ee6ca82"
+        },
         {
           "source_id": "FISRC-a8e6dd6c34cd416a",
           "source_url": "https://techcrunch.com/2026/07/31/repeat-founder-ryan-williams-raises-10m-seed-for-an-ai-startup-for-private-credit-managers/",
@@ -226,7 +316,11 @@
           "quote_hash": "a9cb7cc5de15f5d2027a5c8fa856be08ef0254d044fb84b2ccae3bd0ba874959"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

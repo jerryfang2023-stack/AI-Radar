@@ -111,33 +111,89 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "鲁扬 的来源线索将其与PureblueAI清蓝（创始人兼CEO）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
-      "career": [
+      "summary": "鲁扬是 PureblueAI 清蓝创始人兼 CEO，毕业于清华大学中文系，拥有20余年科技与市场营销经验。公开采访和行业报告记载，他曾在 IBM、联想、京东从事营销，后任字节跳动火山引擎市场总经理及豆包大模型市场负责人，并于2023年前后创办清蓝。年份细节按受访资料披露，不推定具体任期。",
+      "current_roles": [
         {
-          "organization": "PureblueAI清蓝",
-          "title": "创始人兼CEO",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-937426ecdaae19a2"
+          "title": "创始人兼 CEO",
+          "organization": "PureblueAI 清蓝",
+          "source_id": "luyang_iresearch_2026"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
+      "career": [
+        {
+          "organization": "IBM",
+          "title": "市场营销岗位（具体职务未披露）",
+          "period": "任期未披露",
+          "description": "本人访谈及行业报告记载其早年曾在IBM工作。",
+          "source_id": "luyang_interview"
+        },
+        {
+          "organization": "联想",
+          "title": "市场营销岗位（具体职务未披露）",
+          "period": "任期未披露",
+          "description": "本人访谈及行业报告记载其曾在联想从事营销。",
+          "source_id": "luyang_interview"
+        },
+        {
+          "organization": "京东",
+          "title": "市场营销岗位（具体职务未披露）",
+          "period": "任期未披露",
+          "description": "本人访谈及行业报告记载其曾在京东从事营销。",
+          "source_id": "luyang_interview"
+        },
+        {
+          "organization": "字节跳动火山引擎",
+          "title": "市场总经理",
+          "period": "具体任期未披露",
+          "description": "公开资料称其后负责火山引擎市场工作。",
+          "source_id": "luyang_interview"
+        },
+        {
+          "organization": "豆包大模型",
+          "title": "市场负责人",
+          "period": "具体任期未披露",
+          "description": "公开资料称其曾负责豆包大模型市场。",
+          "source_id": "luyang_interview"
+        },
+        {
+          "organization": "PureblueAI 清蓝",
+          "title": "创始人兼 CEO",
+          "period": "2025年前后创办，资料日期不一",
+          "description": "创办专注于生成式引擎优化及AI口碑营销的公司。",
+          "source_id": "luyang_interview"
+        }
+      ],
+      "education": [
+        {
+          "institution": "清华大学中文系",
+          "qualification": "中文系毕业；学位层级未披露",
+          "source_id": "luyang_iresearch_2026"
+        }
+      ],
+      "experience_summary": "清华中文系背景，拥有20余年科技行业经验；职业主线包括IBM、联想、京东市场营销，火山引擎市场管理、豆包大模型市场工作及创办PureblueAI清蓝。任职年月和各岗位正式职级仍未完整披露。",
       "track_record": [],
       "sources": [
         {
-          "source_id": "FISRC-937426ecdaae19a2",
-          "source_url": "https://tech.china.com/articles/20260827/202608271952181.html",
-          "source_title": "融资披露来源",
-          "source_content_hash": "3d5a720c46029d854fd289e269e6fd42dd23b5852fd009fce0626f51d0725acf",
-          "quote": "创始人兼CEO鲁扬，毕业于清华大学中文系，前字节跳动火山引擎市场总经理、豆包大模型市场负责人",
-          "quote_hash": "a541b86e4df77137da878e40abdf054a44c713014cc26da55b535ec002ba9c44"
+          "source_id": "luyang_iresearch_2026",
+          "source_url": "https://img.traveldaily.cn/company/report/2026/0402d4b4df88f5959df8.pdf",
+          "source_title": "AI企业实践与判断：2026旅游业AI营销白皮书（艾瑞咨询专家访谈）",
+          "source_content_hash": "024fa240ec9cd7fab5c37463de661f9d37a501b74c194cf86b7f91d2951aafd3",
+          "quote": "鲁扬，PureblueAI清蓝创始人兼CEO，毕业于清华大学中文系，拥有20余年科技行业经验。",
+          "quote_hash": "71db6339b763e938ae68e58698c6dcda5a2668dd199cbd1f849fb009a76e7442"
+        },
+        {
+          "source_id": "luyang_interview",
+          "source_url": "https://ishare.ifeng.com/c/s/v0029Uy8V1UNCA7YMQTlY9Q-_wjZNrUi0CE5qycR3RSlefxA__",
+          "source_title": "帮品牌做GEO：对话PureblueAI清蓝创始人鲁扬 - 亿邦动力",
+          "source_content_hash": "cc6194e1f9ffbb4fcb1cca4326e9928e5d48d47401c3d39d5daa97a002d86a4a",
+          "quote": "采访记载鲁扬曾在IBM、联想、京东从事营销，后任火山引擎市场总经理及豆包大模型市场负责人。",
+          "quote_hash": "608d12539ba6653225b072d507771c5af85522a9a16eaf123421053674bbc049"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "人物履历依据本人访谈与行业报告；任职起止时间、早期岗位级别及学位层级未披露。",
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

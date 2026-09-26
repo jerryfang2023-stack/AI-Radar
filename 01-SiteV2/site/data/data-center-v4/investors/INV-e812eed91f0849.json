@@ -227,12 +227,44 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "水木清华校友种子基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "水木清华校友种子基金是面向清华学生及年轻校友创业项目的早期基金。清华校友总会资料记载基金于2014年10月发起成立并专注硬科技早期投资；清华校友三创大赛页面进一步列出种子/天使阶段与新能源、新一代信息技术、新材料、半导体、生命科学等方向。该主体与名称相近的其他“水木创投”分开管理。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "发起成立时间",
+          "value": "2014年10月22日。",
+          "source_id": "tsinghua_fund"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "种子期或天使期。",
+          "source_id": "tsinghua_fund_scope"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "新能源、新一代信息技术、新材料、半导体、生命科学。",
+          "source_id": "tsinghua_fund_scope"
+        },
+        {
+          "field": "target_founders",
+          "label": "支持对象",
+          "value": "清华校友创业项目，重点支持在校学生及年轻校友创业起步。",
+          "source_id": "tsinghua_fund"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2014-10-22",
+          "description": "水木清华理事会发起成立水木清华校友种子基金。",
+          "source_id": "tsinghua_fund"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "基金公开介绍强调清华校友网络和硬科技早期投资；未从公开报道推断基金当前规模或总体收益。",
       "track_record": [
         {
           "description": "融资来源记录：PureblueAI清蓝 · 天使+轮 · 2026-08-28 · 种子轮跟投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -247,8 +279,32 @@
           "source_id": "FISRC-57aa18abc9964b6e"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "清华校友三创大赛机构介绍",
+          "value": "水木清华校友种子基金",
+          "url": "https://sanchuang.tsinghua.org.cn/home/detail/leading/1",
+          "source_id": "tsinghua_fund_scope"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "tsinghua_fund",
+          "source_url": "https://www.tsinghua.org.cn/info/2184/26061.htm",
+          "source_title": "水木清华校友种子基金成立 — 清华校友总会",
+          "source_content_hash": "051be494db9f90f9f0cf81a0576a4b01e151bd41e2d602ea712345820131fdaf",
+          "quote": "2014年10月22日，水木清华理事会正式发起成立水木清华校友种子基金，基金专注早期、专注硬科技方向投资，杜艳成为创始合伙人之一。",
+          "quote_hash": "fbf0b397de6649c5c9c7b8c1b6a751eb767a0143f0a1a203f8f5803ef6037648"
+        },
+        {
+          "source_id": "tsinghua_fund_scope",
+          "source_url": "https://sanchuang.tsinghua.org.cn/home/detail/leading/1",
+          "source_title": "清华校友三创大赛：水木清华校友种子基金",
+          "source_content_hash": "7f13412f6a00aad1e56001ae286f6b67ee532078473cddc30cf494f199e1523d",
+          "quote": "水木清华校友种子基金成立于2014年10月，深度挖掘种子期或天使期的清华校友创业项目，重点投资新能源、新一代信息技术、新材料、半导体、生命科学领域。",
+          "quote_hash": "631b1480bac320dbe39ccc4ad69d71965e1c7f6e363a82653c3b40ce2ad07da8"
+        },
         {
           "source_id": "FISRC-fa0e608145757727",
           "source_url": "https://www.pureblueai.com/about-us",
@@ -274,7 +330,10 @@
           "quote_hash": "b17d1dacb1b8aa93de1cdef202377cbffee56a43fe1ad5311b859a8b5c4a2083"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

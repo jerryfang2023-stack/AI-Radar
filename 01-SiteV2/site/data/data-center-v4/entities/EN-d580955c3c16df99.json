@@ -111,33 +111,78 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "金戈 的来源线索将其与灵御智能（创始人兼CEO）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "金戈是灵御智能创始人兼CEO，清华大学自动化系学士、清华经管MBA。公开采访介绍其曾任远镜创投管理合伙人和奥量光子副总裁，具备硬科技投资和企业经营经历；媒体称其曾投资点我达、花加、码隆科技、有货等项目。2025年转向具身智能创业，与清华自动化系莫一林共同创办灵御智能。",
+      "current_roles": [
+        {
+          "title": "创始人兼CEO",
+          "organization": "灵御智能",
+          "source_id": "jin_ge_tmtpost_2026"
+        }
+      ],
       "career": [
         {
+          "organization": "远镜创投",
+          "title": "管理合伙人",
+          "period": "任职年份未披露；2025年前转向创业",
+          "description": "公开访谈及媒体报道列其曾任远镜创投管理合伙人。",
+          "source_id": "jin_ge_tmtpost_2026"
+        },
+        {
+          "organization": "奥量光子",
+          "title": "副总裁",
+          "period": "任职年份未披露",
+          "description": "公开访谈列为此前任职；未披露具体职能及任期。",
+          "source_id": "jin_ge_tmtpost_2026"
+        },
+        {
           "organization": "灵御智能",
-          "title": "创始人兼CEO",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将金戈与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-39b53072a5b4622a"
+          "title": "联合创始人、CEO",
+          "period": "2025年共同创办；公司官网职位及媒体采访确认其创业身份",
+          "description": "灵御官网招聘资料说明团队扎根清华自动化系；媒体访谈称金戈负责公司商业化、生产、融资及组织建设。",
+          "source_id": "jin_ge_tmtpost_2026"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "清华大学自动化系",
+          "qualification": "学士；年份未披露",
+          "source_id": "jin_ge_tmtpost_2026"
+        },
+        {
+          "institution": "清华大学经济管理学院",
+          "qualification": "MBA；年份未披露",
+          "source_id": "jin_ge_tmtpost_2026"
+        }
+      ],
+      "experience_summary": "从早期风险投资与硬科技企业管理转向具身智能创业，兼具投资判断、商业化和组织建设经验；对既往项目的投资关系来自采访报道，具体投资时间、轮次和回报未核实。",
+      "track_record": [
+        {
+          "description": "媒体采访称其曾参与投资点我达、Flowerplus花加、码隆科技、有货Yoho!、环球黑卡及全爱工匠等项目；此为采访中的职业履历，不代表完整投资清单或退出业绩。",
+          "source_id": "jin_ge_sina_202606"
+        }
+      ],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "教育背景、远镜创投和奥量光子任职来自媒体对金戈的直接采访；既往投资项目来自烯牛数据访谈转述，未逐项通过被投公司/基金公告交叉核实。",
       "sources": [
         {
-          "source_id": "FISRC-39b53072a5b4622a",
+          "source_id": "jin_ge_tmtpost_2026",
           "source_url": "https://www.tmtpost.com/7981455.html",
-          "source_title": "融资披露来源",
-          "source_content_hash": "3b263250296ef997a78ded0dbbb1117e4b9add3410097b3283a45826d586ab2f",
-          "quote": "灵御智能创始人兼CEO金戈表示",
-          "quote_hash": "8edf579dbee4deecf9b674ccb07385fce72a80352190916620df7d22aa0456b8"
+          "source_title": "独家对话灵御智能：百万小时真机数据，喂出具身智能的“云端大脑” - 钛媒体",
+          "source_content_hash": "875149f562b14b62b2f969f7843f2fa4c5d206ebdde8aa8134f1d436ac059972",
+          "quote": "钛媒体对莫一林、金戈的访谈中，金戈称自己毕业于清华自动化系并获清华经管MBA，曾任远镜创投管理合伙人、奥量光子副总裁；2025年与莫一林创办灵御智能，他负责商业化、生产、融资和组织建设。",
+          "quote_hash": "60ffb02d2f6610e1763df8fe6ba99203cef0c3ac401cb1649b112b4e6953c26d"
+        },
+        {
+          "source_id": "jin_ge_sina_202606",
+          "source_url": "https://finance.sina.com.cn/wm/2026-06-14/doc-inickvrn7222706.shtml",
+          "source_title": "从VC到CEO，20年VC老兵投身进了一年融5轮的疯狂赛道 - 新浪财经（烯牛数据访谈）",
+          "source_content_hash": "7bdad6228283da50cdf96f61a83c012cb2bd788e560712b073e1e9cd45ef7a76",
+          "quote": "烯牛数据访谈将金戈称为灵御智能创始人兼CEO，报道其近20年投资经验及曾投资点我达、花加、码隆科技、有货等项目；既往投资名单为媒体采访口径。",
+          "quote_hash": "d6b26f7d659a7543f12ff11e556fc22d7f5f99680dee55c1bfc1040f4395b553"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

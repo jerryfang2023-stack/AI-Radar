@@ -137,21 +137,97 @@
       }
     ],
     "public_profile": {
+      "summary": "高瓴创投（GL Ventures）是融资数据库中单独记录的投资品牌。香港理工大学2023年的官方新闻稿记载，GL Ventures与理大建立科研商业化合作，并披露六家被投企业代表参与生物医药和可持续创新交流。现有一手公开资料未披露该投资品牌单独的基金规模、完整团队或专属融资联系渠道。",
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "高瓴创投(GL Ventures) 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案只记录官方高校来源明确提及的GL Ventures及合作案例。新闻稿中的李良、李艳任职表述是其在高瓴的职务，不能据此认定为GL Ventures专属基金团队；同理，不把高瓴整体的资产规模、投资组合和人员数量归入GL Ventures。六家企业为2023年合作活动公开列举的历史组合样本，不代表完整或当前组合。未找到公开的一手GL Ventures独立融资邮箱或联系电话。",
+      "facts": [
+        {
+          "field": "research_commercialization_partnership",
+          "label": "科研成果转化合作",
+          "value": "2023年与香港理工大学合作，目标包括培育高潜力研究团队和初创企业，并推动科研成果商业化。",
+          "source_id": "gl_polyu_goal"
+        },
+        {
+          "field": "public_portfolio_examples",
+          "label": "公开活动列举的被投企业样本",
+          "value": "ATLATL、Helixon、Elpiscience、Yaoneng Technology、CIQTEQ、CarbonStop；这是2023年合作活动中的六家历史样本，不是完整或当前组合清单。",
+          "source_id": "gl_polyu_portfolio"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2023-03-24",
+          "description": "与香港理工大学建立策略合作，推动科研与创新产业结合。",
+          "source_id": "gl_polyu_mou"
+        }
+      ],
       "track_record": [
+        {
+          "description": "香港理工大学公开列出六家GL Ventures被投企业代表，分别参与生物医药和可持续创新主题交流；这只能证明该次活动中的组合案例，不能用来推算机构整体投资成绩。",
+          "source_id": "gl_polyu_portfolio"
+        },
         {
           "description": "融资来源记录：趋境科技 · Pre-A轮 · 2026-05-20 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0a40102abd985684"
         }
       ],
+      "current_roles": [
+        {
+          "title": "李良｜高瓴创始合伙人；出席GL Ventures与理大合作签约活动",
+          "organization": "高瓴（官方来源未确认其属于GL Ventures专属团队）",
+          "source_id": "gl_luke_li"
+        },
+        {
+          "title": "李艳｜高瓴合伙人；代表高瓴签署GL Ventures与理大合作备忘录",
+          "organization": "高瓴（官方来源未确认其属于GL Ventures专属团队）",
+          "source_id": "gl_yan_li"
+        }
+      ],
+      "career": [],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "gl_polyu_mou",
+          "source_url": "https://www.polyu.edu.hk/en/media/media-releases/2023/0324_polyu-and-gl-ventures-to-promote-the-integration-of-the-universitys-scientific-research/",
+          "source_title": "PolyU and GL Ventures to promote the integration of the University’s scientific research with innovative industries",
+          "source_content_hash": "f5dca34f8b2c3d4faf4fee8d6689a989f12698cf0c2bb9ff20feffd1a2596999",
+          "quote": "The Hong Kong Polytechnic University (PolyU) and GL Ventures entered into a strategic partnership to promote the integration of the University’s scientific research with innovative industries.",
+          "quote_hash": "94fdd0c313d011de43e40be74defad6785b1893c50a93f082a430b2a64bed2c9"
+        },
+        {
+          "source_id": "gl_polyu_goal",
+          "source_url": "https://www.polyu.edu.hk/en/media/media-releases/2023/0324_polyu-and-gl-ventures-to-promote-the-integration-of-the-universitys-scientific-research/",
+          "source_title": "PolyU and GL Ventures｜合作目标",
+          "source_content_hash": "f5dca34f8b2c3d4faf4fee8d6689a989f12698cf0c2bb9ff20feffd1a2596999",
+          "quote": "aiming to nurture PolyU research teams and high-potential start-ups, while advancing the transformation of the University’s scientific research into practical applications and the commercialisation of technology",
+          "quote_hash": "e0bf4cc85348db39e6db555fc1c3788e77828de0ad64ce9f985d6e0dac5fcfb9"
+        },
+        {
+          "source_id": "gl_polyu_portfolio",
+          "source_url": "https://www.polyu.edu.hk/en/media/media-releases/2023/0324_polyu-and-gl-ventures-to-promote-the-integration-of-the-universitys-scientific-research/",
+          "source_title": "PolyU and GL Ventures｜公开被投企业样本",
+          "source_content_hash": "f5dca34f8b2c3d4faf4fee8d6689a989f12698cf0c2bb9ff20feffd1a2596999",
+          "quote": "representatives from six GL Ventures’ investees engaged in roundtable discussions on biomedical innovation and sustainable innovation",
+          "quote_hash": "d34bffb8f99320258f784b2f7a9eea3ba0e8a3341c16766fd726639cba60fb2c"
+        },
+        {
+          "source_id": "gl_luke_li",
+          "source_url": "https://www.polyu.edu.hk/en/media/media-releases/2023/0324_polyu-and-gl-ventures-to-promote-the-integration-of-the-universitys-scientific-research/",
+          "source_title": "PolyU and GL Ventures｜合作签约活动嘉宾",
+          "source_content_hash": "f5dca34f8b2c3d4faf4fee8d6689a989f12698cf0c2bb9ff20feffd1a2596999",
+          "quote": "Mr Luke Li, Founding Partner of Hillhouse",
+          "quote_hash": "1f9a3240a352e2256341f597ccd845f835a47254f57631784b523df50fa4cfdd"
+        },
+        {
+          "source_id": "gl_yan_li",
+          "source_url": "https://www.polyu.edu.hk/en/media/media-releases/2023/0324_polyu-and-gl-ventures-to-promote-the-integration-of-the-universitys-scientific-research/",
+          "source_title": "PolyU and GL Ventures｜合作备忘录签署方",
+          "source_content_hash": "f5dca34f8b2c3d4faf4fee8d6689a989f12698cf0c2bb9ff20feffd1a2596999",
+          "quote": "Ms Yan Li, Partner of Hillhouse",
+          "quote_hash": "0c77949a582310728c49d2f818959b22c580634b443a13679e3d43afaa972142"
+        },
         {
           "source_id": "FISRC-0a40102abd985684",
           "source_url": "https://news.pedaily.cn/202605/564126.shtml",
@@ -161,7 +237,7 @@
           "quote_hash": "7f3312a250a9bb0429e31afd20808ce3652b5d3b5cd8c9724ddf67ed16fad278"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

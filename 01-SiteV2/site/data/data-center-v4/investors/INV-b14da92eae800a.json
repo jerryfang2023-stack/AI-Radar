@@ -131,19 +131,262 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "碧桂园创投 当前按“投资组织”收录。最新融资披露记录日期为 2024-09-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "碧桂园创投的官方网站以深圳市碧桂园创新投资有限公司作为版权主体。机构聚焦科技、消费、产业链与健康领域，覆盖早期VC至中后期PE，并以产业赋能和价值共创为投资理念。官网自报已投企业、IPO和独角兽数据；团队页面还公开了管理合伙人和董事总经理的教育、从业经历及代表项目。",
+      "facts": [
+        {
+          "field": "legal_entity",
+          "label": "官网版权主体",
+          "value": "深圳市碧桂园创新投资有限公司。官网未在介绍页披露该公司的股权结构或控制关系。",
+          "source_id": "cgvc_about"
+        },
+        {
+          "field": "investment_strategy",
+          "label": "投资主题与理念",
+          "value": "聚焦科技、消费、产业链与健康，强调依托产业场景和资源赋能，促进被投企业价值提升。",
+          "source_id": "cgvc_strategy"
+        },
+        {
+          "field": "investment_stages",
+          "label": "投资阶段",
+          "value": "覆盖早期VC及中后期PE。",
+          "source_id": "cgvc_strategy"
+        },
+        {
+          "field": "official_track_record",
+          "label": "官网披露投资成绩",
+          "value": "官网自报已投资90余家企业，其中10家IPO、26家独角兽，另有13家完成下一轮募资；页面未标注统计日期。",
+          "source_id": "cgvc_results"
+        },
+        {
+          "field": "leadership_dai",
+          "label": "代永波｜管理合伙人履历",
+          "value": "官网称其拥有15年以上金融和产业投资经验，曾在中信建投、申银万国投行部门任职，参与或主导融资逾120亿元；上海财经大学管理学硕士、保荐代表人。官网列出其团队代表项目包括贝壳、蜂巢能源、医联健康、蓝晶微生物、新瑞鹏、菜鸟网络和追觅科技。任职年份未披露。",
+          "source_id": "cgvc_dai_bio"
+        },
+        {
+          "field": "leadership_niu",
+          "label": "牛若磊｜管理合伙人履历",
+          "value": "官网称其曾任职ING资产管理、招商基金及招商资产管理（香港），有18年以上境内外证券投资和公募基金经验，获悉尼大学金融硕士；其团队代表项目包括紫光展锐、蓝箭航天、比亚迪半导体、长鑫存储、盛合晶微、遇见小面和茶里。",
+          "source_id": "cgvc_niu_bio"
+        },
+        {
+          "field": "leadership_shen",
+          "label": "沈烨｜管理合伙人履历",
+          "value": "官网称其就读北京大学、伦敦大学学院和伦敦政治经济学院，获法律及会计学硕士，曾在君信律师事务所和海岸投资任职；在交易结构、项目执行与退出、跨境投资、法律合规方面有22年以上经验。",
+          "source_id": "cgvc_shen_bio"
+        },
+        {
+          "field": "leadership_lisi",
+          "label": "李思龙｜董事总经理履历",
+          "value": "官网称其有普华永道和碧桂园集团15年工作经验，曾负责投资者关系及产业链投资，参与募集超30亿美元并完成地产产业链投资超50亿元；中国及香港注册会计师，主导投资贝壳、追觅科技和丰翼科技。",
+          "source_id": "cgvc_lisi_bio"
+        },
+        {
+          "field": "leadership_wei",
+          "label": "韦毅｜董事总经理履历",
+          "value": "官网称其曾在毕马威伦敦和万达集团任职，毕业于华威大学及伦敦政治经济学院，具英国特许会计师资格，并有15年投资并购、管理咨询和创业经历；代表项目包括蜂巢能源、欣旺达动力、秦淮数据、众纳能源和墨睿科技。",
+          "source_id": "cgvc_wei_bio"
+        },
+        {
+          "field": "leadership_du",
+          "label": "杜浩｜董事总经理履历",
+          "value": "官网称其曾任职微软、毕马威和招商资产管理，从业12年，拥有浙江大学工学学士、香港中文大学信息工程硕士及香港注册会计师资格；在CGVC主导投资蓝箭航天、紫光展锐、壁仞科技、合肥长鑫和盛合晶微等项目。",
+          "source_id": "cgvc_du_bio"
+        },
+        {
+          "field": "leadership_sun",
+          "label": "孙梁浩｜董事总经理履历",
+          "value": "官网称其曾任职中植产业投资，有10年投资经验，毕业于伦敦政治经济学院地产经济学与金融硕士；关注生命科技、生物材料、互联网医疗、医疗服务和医疗器械，团队代表项目包括中科国生、创领心律、亚心医疗、医联健康、新瑞鹏和远也科技。",
+          "source_id": "cgvc_sun_bio"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "碧桂园创投官网自报已投企业90余家、IPO项目10家、独角兽企业26家及完成下一轮募资的企业13家；未标注统计截至时间。",
+          "source_id": "cgvc_results"
+        },
+        {
+          "description": "官网管理团队履历列举的代表项目涉及贝壳、菜鸟、追觅科技、蜂巢能源、紫光展锐、蓝箭航天、壁仞科技、长鑫存储、盛合晶微和医疗健康企业；这些为团队页面所列案例，并非完整组合。",
+          "source_id": "cgvc_team_intro"
+        },
         {
           "description": "融资来源记录：壁仞科技 · 多轮融资 · 2024-09-12 · B轮联合领投 · 超过50亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d13c49d0024ccf9b"
         }
       ],
-      "contacts": [],
+      "current_roles": [
+        {
+          "title": "代永波｜管理合伙人",
+          "organization": "碧桂园创投",
+          "source_id": "cgvc_dai_bio"
+        },
+        {
+          "title": "牛若磊｜管理合伙人",
+          "organization": "碧桂园创投",
+          "source_id": "cgvc_niu_bio"
+        },
+        {
+          "title": "沈烨｜管理合伙人",
+          "organization": "碧桂园创投",
+          "source_id": "cgvc_shen_bio"
+        },
+        {
+          "title": "李思龙｜董事总经理",
+          "organization": "碧桂园创投",
+          "source_id": "cgvc_lisi_bio"
+        },
+        {
+          "title": "韦毅｜董事总经理",
+          "organization": "碧桂园创投",
+          "source_id": "cgvc_wei_bio"
+        },
+        {
+          "title": "杜浩｜董事总经理",
+          "organization": "碧桂园创投",
+          "source_id": "cgvc_du_bio"
+        },
+        {
+          "title": "孙梁浩｜董事总经理",
+          "organization": "碧桂园创投",
+          "source_id": "cgvc_sun_bio"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "phone",
+          "label": "官网公开联系电话",
+          "value": "+86 755 8837 7052",
+          "source_id": "cgvc_contact"
+        },
+        {
+          "kind": "email",
+          "label": "官网公开邮箱",
+          "value": "cgvc@countrygarden.com.cn",
+          "source_id": "cgvc_contact_email"
+        },
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "碧桂园创新投资",
+          "url": "https://cgvcap.com/",
+          "source_id": "cgvc_about"
+        },
+        {
+          "kind": "website",
+          "label": "官网团队介绍",
+          "value": "管理团队与代表项目",
+          "url": "https://cgvcap.com/team.html",
+          "source_id": "cgvc_team_intro"
+        }
+      ],
+      "coverage_note": "业绩数字及管理团队履历来自机构官网自述，网页没有给出业绩统计时点或个人任职年份；已按官网口径转述，未把团队履历改写为完整职业年表。官网版权主体为深圳市碧桂园创新投资有限公司，但机构介绍页未说明其具体股权控制关系，因此不据品牌推断母子公司持股关系。",
       "sources": [
+        {
+          "source_id": "cgvc_about",
+          "source_url": "https://cgvcap.com/about.html?slide=about",
+          "source_title": "关于我们 - 碧桂园创新投资",
+          "source_content_hash": "77eb5ea00ef0eb73a934b87bb14f6aee3dca94f4bf82a4d0ab15c683dc6bf563",
+          "quote": "深圳市碧桂园创新投资有限公司",
+          "quote_hash": "120638183cc19a8881db588cc460be7d1c65febc3ea34e9ccfa1cca6cfa729e3"
+        },
+        {
+          "source_id": "cgvc_strategy",
+          "source_url": "https://cgvcap.com/about.html?slide=about",
+          "source_title": "关于我们 - 碧桂园创新投资",
+          "source_content_hash": "77eb5ea00ef0eb73a934b87bb14f6aee3dca94f4bf82a4d0ab15c683dc6bf563",
+          "quote": "碧桂园创投以“产业赋能、价值共创”为战略牵引，聚焦科技、消费、产业链、健康等投资主题，覆盖早期VC及中后期PE等阶段进行投资，已形成分阶段、专赛道、多层次的投资组合。",
+          "quote_hash": "ddb04f1b44b9548b3712f2a38c2147345dd0cd96941232874b4fb1f2797a499b"
+        },
+        {
+          "source_id": "cgvc_results",
+          "source_url": "https://cgvcap.com/about.html?slide=about",
+          "source_title": "关于我们 - 碧桂园创新投资",
+          "source_content_hash": "77eb5ea00ef0eb73a934b87bb14f6aee3dca94f4bf82a4d0ab15c683dc6bf563",
+          "quote": "历经三年发展，碧桂园创投已投资超90家企业，其中包括10个IPO，26家独角兽，另有13家已完成下一轮募资。",
+          "quote_hash": "42fc09c37edb9f229a46eb6bc85176a34a7fad579ed72e1263a77b7f5ab485f3"
+        },
+        {
+          "source_id": "cgvc_team_intro",
+          "source_url": "https://cgvcap.com/team.html",
+          "source_title": "投资团队 - 碧桂园创新投资",
+          "source_content_hash": "66289dfbf5c868fa8b58f242e050515dac7fe1278683db28d0270b54174cf4ee",
+          "quote": "团队成员均来自国际国内一线投行、基金等金融机构，具备国际化视野和深厚的产业背景，拥有丰富的投资经验。",
+          "quote_hash": "2b511aaa0c32c2f32f016d898ef836cfd884d05725abc1a3c1f6de06847042c8"
+        },
+        {
+          "source_id": "cgvc_dai_bio",
+          "source_url": "https://cgvcap.com/team.html",
+          "source_title": "投资团队 - 碧桂园创新投资",
+          "source_content_hash": "66289dfbf5c868fa8b58f242e050515dac7fe1278683db28d0270b54174cf4ee",
+          "quote": "拥有超15年金融和产业投资从业经验，先后服务于中信建投投资银行部、申银万国证券投资银行部，主导或参与完成超120亿元融资。",
+          "quote_hash": "fd93616868ae9fbc156bcc9007bf4b9377df7dd2529584639f5c8d6519053ec8"
+        },
+        {
+          "source_id": "cgvc_niu_bio",
+          "source_url": "https://cgvcap.com/team.html",
+          "source_title": "投资团队 - 碧桂园创新投资",
+          "source_content_hash": "66289dfbf5c868fa8b58f242e050515dac7fe1278683db28d0270b54174cf4ee",
+          "quote": "在证券投资领域深耕多年，具有超18年境内外证券投资和公募基金从业经验，带领团队投出了紫光展锐、蓝箭航天、比亚迪半导体、长鑫存储、盛合晶微、遇见小面、茶里等项目。",
+          "quote_hash": "d2279ad0ce2e181ee92ae2081f5dc9838e82618d7fa92b4360c9ca15ad28f952"
+        },
+        {
+          "source_id": "cgvc_shen_bio",
+          "source_url": "https://cgvcap.com/team.html",
+          "source_title": "投资团队 - 碧桂园创新投资",
+          "source_content_hash": "66289dfbf5c868fa8b58f242e050515dac7fe1278683db28d0270b54174cf4ee",
+          "quote": "在交易结构设计、项目执行及退出、跨境投资管理、法律及合规方面拥有深厚的专业知识和超22年的经验积累。",
+          "quote_hash": "a920a24f8e9d1fa233ff418d29ebfca7bafb75ba34283c01e05469d0d36f0df9"
+        },
+        {
+          "source_id": "cgvc_lisi_bio",
+          "source_url": "https://cgvcap.com/team.html",
+          "source_title": "投资团队 - 碧桂园创新投资",
+          "source_content_hash": "66289dfbf5c868fa8b58f242e050515dac7fe1278683db28d0270b54174cf4ee",
+          "quote": "拥有普华永道、碧桂园集团的十五年工作经验，曾负责碧桂园投资者关系及产业链投资工作，主导实现超30亿美元募集及超50亿人民币地产产业链投资。",
+          "quote_hash": "bd4ba626893656fa5d8d867e2d55f3303eec9207e42142ce8052a31256b97648"
+        },
+        {
+          "source_id": "cgvc_wei_bio",
+          "source_url": "https://cgvcap.com/team.html",
+          "source_title": "投资团队 - 碧桂园创新投资",
+          "source_content_hash": "66289dfbf5c868fa8b58f242e050515dac7fe1278683db28d0270b54174cf4ee",
+          "quote": "拥有华威大学制造工程学士及伦敦经济政治学院运筹学硕士学位，英国皇家特许会计师资格，拥有15年投资并购、管理咨询及创业经历。",
+          "quote_hash": "b7c6ec05f2d9d0666e08894816d31746107b5e912d8b1c6e06f3f9e262e20643"
+        },
+        {
+          "source_id": "cgvc_du_bio",
+          "source_url": "https://cgvcap.com/team.html",
+          "source_title": "投资团队 - 碧桂园创新投资",
+          "source_content_hash": "66289dfbf5c868fa8b58f242e050515dac7fe1278683db28d0270b54174cf4ee",
+          "quote": "曾任职微软、毕马威及招商资产管理，参与多只境内外一二级市场基金的募投管退。从业12年，有丰富投资和创业管理经验。",
+          "quote_hash": "a7d66f2bc0ae61f780f70bf6a0c927c208d02f876a21d33895fe7ee7fae9ada4"
+        },
+        {
+          "source_id": "cgvc_sun_bio",
+          "source_url": "https://cgvcap.com/team.html",
+          "source_title": "投资团队 - 碧桂园创新投资",
+          "source_content_hash": "66289dfbf5c868fa8b58f242e050515dac7fe1278683db28d0270b54174cf4ee",
+          "quote": "曾任职中植产业投资，拥有10年投资工作经验。",
+          "quote_hash": "ed4f10dbb8cc8999fdb5671d3c0c4873e0be0a9c1957f1ee1ab6be4ebe776bab"
+        },
+        {
+          "source_id": "cgvc_contact",
+          "source_url": "https://cgvcap.com/contact.html",
+          "source_title": "联系我们 - 碧桂园创新投资",
+          "source_content_hash": "c50b982b239007a78151ee3a9ad69206c4107ccc6b7ce76646be119a535f3359",
+          "quote": "+86 755 8837 7052",
+          "quote_hash": "4a931eee123995baedccabaca5188884d5558bb245d965da6d0a534883bca990"
+        },
+        {
+          "source_id": "cgvc_contact_email",
+          "source_url": "https://cgvcap.com/contact.html",
+          "source_title": "联系我们 - 碧桂园创新投资",
+          "source_content_hash": "c50b982b239007a78151ee3a9ad69206c4107ccc6b7ce76646be119a535f3359",
+          "quote": "cgvc@countrygarden.com.cn",
+          "quote_hash": "6e2131bf7943e05c6860a48a51e147d6976e8729a7759085ee01705dc64dd300"
+        },
         {
           "source_id": "FISRC-d13c49d0024ccf9b",
           "source_url": "https://36kr.com/p/3225593100057736",
@@ -153,7 +396,7 @@
           "quote_hash": "37f36b74f042ee8b26b38b5e883e828ee3a8627a4d6d8c5c0db95451601e18c2"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

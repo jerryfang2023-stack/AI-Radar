@@ -187,11 +187,51 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "水木校友种子基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "水木校友种子基金的正式名称为水木清华校友种子基金，是清华校友体系发起、面向清华学生和年轻校友创业项目的早期投资基金。清华校友三创大赛官方页面记载基金于2014年10月成立，聚焦新能源、新一代信息技术、新材料、半导体和生命科学等硬科技方向；其项目资格具有清华校友背景要求。",
+      "facts": [
+        {
+          "field": "official_name",
+          "label": "官方名称",
+          "value": "水木清华校友种子基金",
+          "source_id": "shuimu_competition"
+        },
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2014年10月",
+          "source_id": "shuimu_competition"
+        },
+        {
+          "field": "stage",
+          "label": "投资阶段",
+          "value": "种子轮、天使轮",
+          "source_id": "shuimu_competition"
+        },
+        {
+          "field": "eligibility",
+          "label": "项目范围",
+          "value": "清华学生及年轻校友创业项目",
+          "source_id": "shuimu_competition"
+        },
+        {
+          "field": "sectors",
+          "label": "重点领域",
+          "value": [
+            "新能源",
+            "新一代信息技术",
+            "新材料",
+            "半导体",
+            "生命科学"
+          ],
+          "source_id": "shuimu_competition"
+        },
+        {
+          "field": "fund_base",
+          "label": "基金发起资料",
+          "value": "清华校友总会资料记载启动时校友出资规模为人民币3000万元；该历史启动规模不代表当前基金规模。",
+          "source_id": "shuimu_alumni_pdf"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -203,8 +243,32 @@
           "source_id": "FISRC-53ef187e17deac50"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "清华校友三创大赛基金介绍",
+          "value": "水木清华校友种子基金",
+          "url": "https://sanchuang.tsinghua.org.cn/home/detail/leading/1",
+          "source_id": "shuimu_competition"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "shuimu_competition",
+          "source_url": "https://sanchuang.tsinghua.org.cn/home/detail/leading/1",
+          "source_title": "水木清华校友种子基金 - 清华校友三创大赛",
+          "source_content_hash": "7f13412f6a00aad1e56001ae286f6b67ee532078473cddc30cf494f199e1523d",
+          "quote": "基金于2014年10月发起，开展种子及天使投资，主要面向清华学生和年轻校友的硬科技项目。",
+          "quote_hash": "8b6d6ef199a445efd4f152133ee2c17b5e6154815d10f5c31c47d4feb7e59272"
+        },
+        {
+          "source_id": "shuimu_alumni_pdf",
+          "source_url": "https://www.tsinghua.org.cn/upload/file/1460389623312.pdf",
+          "source_title": "清华校友总会关于水木清华校友种子基金的资料",
+          "source_content_hash": "73e89840f765091186292973160c653c01d98fd21e7dfd709880023e38961b63",
+          "quote": "基金启动时校友出资规模为人民币3000万元。",
+          "quote_hash": "74df238dee809de88a1a940e37e64857a26643d3b2de6b0950248ebc1642c6f7"
+        },
         {
           "source_id": "FISRC-086ff36dfb7673e8",
           "source_url": "https://news.pedaily.cn/202607/566101.shtml",
@@ -222,7 +286,10 @@
           "quote_hash": "1f6ec18f0ef23f2f8a0c02f654ea9a97edaf9ebf8045621021f1a3e02e5d3ebb"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-26",
+      "coverage_note": "将数据库短名称映射到清华官方所用“水木清华校友种子基金”。与名称相近的“水木清华校友基金”保持分开，未确认二者为同一主体。"
     }
   }
 }

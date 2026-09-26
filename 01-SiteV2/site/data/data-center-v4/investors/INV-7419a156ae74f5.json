@@ -283,13 +283,31 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Cisco 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Cisco Investments 是 Cisco 的企业投资部门，Cisco 官方资料说明它通过风险投资和投资支持的战略联盟推动技术与市场创新。其官网公开的组合覆盖 AI/ML、云计算、安全、可持续发展等领域，并提供创业公司联系表单。官网展示的组合数量、年度投资规模是机构自述指标，不是基金回报。",
+      "facts": [
+        {
+          "field": "corporate_venture_arm",
+          "label": "企业投资职能",
+          "value": "Cisco 官方将 Cisco Investments 列为 Corporate Development 下的风险投资与投资支持联盟职能。",
+          "source_id": "cisco_about"
+        },
+        {
+          "field": "investment_sectors",
+          "label": "组合赛道",
+          "value": "官网组合分类包括 AI/ML、云计算、安全、可持续发展、硅与光学等。",
+          "source_id": "cisco_portfolio"
+        }
+      ],
       "milestones": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "Cisco Investments 与 Cisco 的 Corporate Development、业务部门合作，并强调投资与并购、产品技术和商业拓展之间的协同；具体融资披露仍需核对实际签约主体。",
       "track_record": [
+        {
+          "description": "官网自述每年投资数亿美元、组合企业超过100家、投资50余支风险基金；这些是机构展示的规模数据，不代表已实现回报或退出收益。",
+          "source_id": "cisco_about"
+        },
         {
           "description": "融资来源记录：Starcloud · A轮扩展 · 2026-08-21 · 本轮参投 · $250 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-05f582b31c0a37a3"
@@ -303,8 +321,47 @@
           "source_id": "FISRC-85e8550490e53490"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "contact_form",
+          "label": "创业公司联系表单",
+          "value": "官方表单面向寻求改变行业的创业公司。",
+          "url": "https://www.ciscoinvestments.com/contact-us",
+          "source_id": "cisco_contact"
+        },
+        {
+          "kind": "website",
+          "label": "官方组合与机构网站",
+          "value": "ciscoinvestments.com",
+          "url": "https://www.ciscoinvestments.com/",
+          "source_id": "cisco_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "cisco_about",
+          "source_url": "https://www.ciscoinvestments.com/",
+          "source_title": "Home | Cisco Investments",
+          "source_content_hash": "0466a1ff590d41e498d490b9528b78e36ef36159b4ef29b07dc775a903b06b88",
+          "quote": "Cisco Investments, Corporate Development, and our domain businesses work with you throughout your journey.",
+          "quote_hash": "e58bfa363127d5fc7ebb97f47cc8a511d517a210fbdb91ed4e2de69e1e28c140"
+        },
+        {
+          "source_id": "cisco_contact",
+          "source_url": "https://www.ciscoinvestments.com/contact-us",
+          "source_title": "Contact Us | Cisco Investments",
+          "source_content_hash": "797c72ab7c010424af4dc8c6a82ffd75238a338894af32f5606012cf0cfbffca",
+          "quote": "We are looking for startups that transform their industries. Send us a message and we’ll get in touch.",
+          "quote_hash": "de44503a10208d0dd72f3dca1f6d1ce8499ca977ad1803008dd4f5a6458b22b7"
+        },
+        {
+          "source_id": "cisco_portfolio",
+          "source_url": "https://www.ciscoinvestments.com/portfolio",
+          "source_title": "Investment Portfolio | Cisco Investments",
+          "source_content_hash": "aa1a5f5f10e976698c3a318c93f9c0a42ac1763a777fec0b56d335f0c3623389",
+          "quote": "Sectors include AI/ML, Cloud Computing, Security, Sustainability, and Silicon and Optics.",
+          "quote_hash": "cc6d0eb14687b3e3a2f888350a4f7663511eb00c83222fab86db272b3d4d3f86"
+        },
         {
           "source_id": "FISRC-05f582b31c0a37a3",
           "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
@@ -330,7 +387,10 @@
           "quote_hash": "e9d6c950ecfcf10df612acb50b9000d5111cfce790af32af95a51c83ef1ee077"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

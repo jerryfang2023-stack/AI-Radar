@@ -242,13 +242,43 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "北京市人工智能产业投资基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "北京市人工智能产业投资基金是经北京市政府批准，由北京市政府投资引导基金联合社会资本设立的市级产业基金。官方设立方案提出目标总规模100亿元、首期目标40亿元，采用直接股权投资，重点支持人工智能底层技术、大模型算法、具身智能、可信AI及垂直行业应用。北京市科委2026年4月底数据披露累计投决64个项目。",
+      "facts": [
+        {
+          "field": "sponsor_structure",
+          "label": "发起与资金来源",
+          "value": "北京市政府投资引导基金拟联合社会资本组建；官方文件说明由北京市政府批准。",
+          "source_id": "beijing_ai_fund_notice"
+        },
+        {
+          "field": "target_size",
+          "label": "目标总规模",
+          "value": "100亿元；首期目标规模40亿元。",
+          "source_id": "beijing_ai_fund_notice"
+        },
+        {
+          "field": "investment_strategy",
+          "label": "投资方式",
+          "value": "直接股权投资。",
+          "source_id": "beijing_ai_fund_notice"
+        },
+        {
+          "field": "investment_focus",
+          "label": "重点方向",
+          "value": "人工智能芯片、训练数据及软件、大模型算法创新、具身智能、可信AI、AI产品开发及垂直行业应用。",
+          "source_id": "beijing_ai_fund_notice"
+        }
+      ],
       "milestones": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "市级政府产业投资基金，重点扶持人工智能产业关键技术和应用。区分“目标规模”与实际出资、决策金额。",
       "track_record": [
+        {
+          "description": "北京市科委截至2026年4月底披露，累计投决64个项目，投决金额64.58亿元、出资46.13亿元，撬动社会资本超400亿元；这是政府披露的项目和资金进度，不是投资回报指标。",
+          "source_id": "beijing_ai_fund_status"
+        },
         {
           "description": "融资来源记录：面壁智能 · 轮次未披露 · 2026-04-09 · 北京国资持续加注 · 数亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5e868b9dacd5325c"
@@ -262,8 +292,32 @@
           "source_id": "FISRC-4fe23845696fb5f2"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "北京市科委官方公告",
+          "value": "北京市人工智能产业投资基金设立与管理机构遴选公告",
+          "url": "https://www.ncsti.gov.cn/kjdt/tzgg/202309/t20230918_133890.html",
+          "source_id": "beijing_ai_fund_notice"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "beijing_ai_fund_notice",
+          "source_url": "https://www.ncsti.gov.cn/kjdt/tzgg/202309/t20230918_133890.html",
+          "source_title": "关于公开遴选北京市人工智能产业投资基金管理机构的公告 — 北京市科委、中关村管委会",
+          "source_content_hash": "06bcce94fc16aad1c3a976f55c50aff09a90f7a6841712126648c0c3534a2b2f",
+          "quote": "基金目标总规模为100亿元，其中引导基金出资不超过30亿元；基金围绕北京市人工智能领域总体布局开展直接股权投资。",
+          "quote_hash": "c0fe7276422003e79c4a21981d9ac2537c702f0b3b0b27103086a504b16525d7"
+        },
+        {
+          "source_id": "beijing_ai_fund_status",
+          "source_url": "https://kw.beijing.gov.cn/xwdt/kcyx/xwdtcyfz/202607/t20260720_4771862.html",
+          "source_title": "北京将打造人工智能万亿级产业集群 — 北京市科委、中关村管委会",
+          "source_content_hash": "cf8f8bdc9e13e54dc48b0005104d90f00b8eae879b857df4967852c6e6f12064",
+          "quote": "截至2026年4月底，市级人工智能基金累计投资决策64个项目，投决金额64.58亿元，出资金额46.13亿元，撬动社会资本超400亿元。",
+          "quote_hash": "e5a7a2fea2932e03032496aa7adf96ff75d63da39aa681c7c10c8c87e37f1d0a"
+        },
         {
           "source_id": "FISRC-5e868b9dacd5325c",
           "source_url": "https://finance.sina.com.cn/stock/t/2026-04-09/doc-inhtwhrc8925749.shtml",
@@ -289,7 +343,10 @@
           "quote_hash": "d4e8f7444a626c3a00cf012a0115c7c61c1fe62a41056d12dba1084ec55a7289"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

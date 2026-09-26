@@ -111,33 +111,62 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "高文礼 的来源线索将其与墨奇智能（首席执行官）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "高文礼是深圳墨奇智能技术有限公司的创始人。投资界页面的工商信息将其列为法定代表人，并称其为跨境物流公司 iMile 联合创始人；大河财立方援引投资方柏睿资本消息称，他曾在华为运营商业务线负责海外市场。其任职年份、教育背景和可量化经营成绩尚未由一手履历资料核实。",
+      "current_roles": [
+        {
+          "title": "创始人（工商及融资报道所述）",
+          "organization": "深圳墨奇智能技术有限公司",
+          "source_id": "gaowenli_morphi_companyinfo"
+        }
+      ],
       "career": [
         {
-          "organization": "墨奇智能",
-          "title": "首席执行官",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-bea9d0be613bc1cd"
+          "organization": "iMile",
+          "title": "联合创始人（媒体资料所述）",
+          "period": "起止时间未披露",
+          "description": "投资界公司资料称其为 iMile 联合创始人；未提供具体职务范围、任职日期或独立核验材料。",
+          "source_id": "gaowenli_morphi_companyinfo"
+        },
+        {
+          "organization": "华为运营商业务线",
+          "title": "海外市场相关工作（投资方消息经媒体转述）",
+          "period": "报道未披露任职年份",
+          "description": "大河财立方援引投资方柏睿资本消息介绍其曾在华为运营商业务线负责海外市场。",
+          "source_id": "gaowenli_morphi_202607"
+        },
+        {
+          "organization": "深圳墨奇智能技术有限公司",
+          "title": "创始人",
+          "period": "公司于 2025 年设立；个人任职起始日未披露",
+          "description": "公司资料及工商信息记载其与墨奇智能的创始人关联。",
+          "source_id": "gaowenli_morphi_companyinfo"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
+      "experience_summary": "目前可确认的公开线索集中于 iMile 创业、华为海外业务经历及墨奇智能创立；具体时间线、学历和本人公开简历未找到可交叉验证的资料。",
       "track_record": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "人物与墨奇智能的关系由投资界页面工商信息和融资报道支持；华为经历属于投资方消息经媒体转述，未由本人或华为公开资料独立核实。",
       "sources": [
         {
-          "source_id": "FISRC-bea9d0be613bc1cd",
-          "source_url": "https://finance.sina.com.cn/roll/2026-07-09/doc-inihfazc5336299.shtml?froms=ggmp",
-          "source_title": "融资披露来源",
-          "source_content_hash": "311224a4dfb089df",
-          "quote": "高文礼担任首席执行官，统筹企业商业化运营与市场拓展工作",
-          "quote_hash": "1ccffedd08a3a687d3030f073fe7e3976026857b87fd2d84981abd91d48c749e"
+          "source_id": "gaowenli_morphi_companyinfo",
+          "source_url": "https://m.pedaily.cn/vc/company/890842.html",
+          "source_title": "墨奇智能 - 投资界",
+          "source_content_hash": "e725d16544a82db03f4ce245da363b4465cb625a989b97e32e8a39b87a21e94e",
+          "quote": "投资界页面引用工商信息称深圳墨奇智能技术有限公司法定代表人为高文礼，并介绍他为 iMile 联合创始人；该页面的媒体资料和工商字段分别处理，未将其余未经独立核实的履历扩写。",
+          "quote_hash": "dcdcc60cfbeabd2b6b311bc4e57b6ef44344aed4a511709b40ae93c7e4ae640a"
+        },
+        {
+          "source_id": "gaowenli_morphi_202607",
+          "source_url": "https://finance.eastmoney.com/a/202607063795138419.html",
+          "source_title": "华为“天才少年”入局的具身智能企业，完成超10亿元融资 - 大河财立方/东方财富",
+          "source_content_hash": "969a2cecc219a44613bea028b8860a164cfd39f0ab4cece0c8ecda6ee02f522b",
+          "quote": "大河财立方报道援引柏睿资本消息，称墨奇智能由高文礼与黄青虬联合创立，高文礼曾在华为运营商业务线负责海外市场11年；报道未提供具体任职起止年份。",
+          "quote_hash": "631340ef6280771c90cd519f548bca6cb0451da11f7b5862211bf4fbc1431a8f"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

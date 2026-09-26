@@ -245,13 +245,37 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "春华创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "春华资本是立足中国、覆盖亚太的投资管理机构，管理人民币和美元基金，投资范围涵盖早期风险投资、成长资本、并购及控股型投资、私募债权投资。官网列出消费、服务、科技及绿色低碳主题，并公布北京、香港、硅谷、新加坡办公室和投资者、媒体、BP邮箱。",
+      "facts": [
+        {
+          "field": "investment_types",
+          "label": "投资类型",
+          "value": "早期风险投资、中后期成长型投资、并购与控股型投资、私募债权投资。",
+          "source_id": "primavera_about"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资主题",
+          "value": "消费引领、服务驱动、科技赋能、绿色低碳。",
+          "source_id": "primavera_portfolio"
+        },
+        {
+          "field": "geography",
+          "label": "覆盖区域",
+          "value": "根植中国，布局亚太，并设硅谷办公室。",
+          "source_id": "primavera_contact"
+        }
+      ],
       "milestones": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "春华官网强调其投资策略基于中国经济与资本市场研究及长期投资经验，提供资源、知识和技术支持。官网介绍的投资组合是示例，不视为完整组合或业绩表。",
       "track_record": [
+        {
+          "description": "官网介绍其截至2023年已投资100多家企业；属于机构公布的累计覆盖数，并非回报率。",
+          "source_id": "primavera_about"
+        },
         {
           "description": "融资来源记录：Anew Labs（新生实验室） · 其他融资 · 2026-09-16 · 本轮参投 · 2.9亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a2c9854f5230d423"
@@ -265,8 +289,68 @@
           "source_id": "FISRC-5e868b9dacd5325c"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "春华资本",
+          "url": "https://www.primavera-capital.com/zh-hans/",
+          "source_id": "primavera_about"
+        },
+        {
+          "kind": "email",
+          "label": "投资者关系",
+          "value": "ir@primavera-capital.com",
+          "url": "https://www.primavera-capital.com/zh-hans/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC/",
+          "source_id": "primavera_contact"
+        },
+        {
+          "kind": "email",
+          "label": "媒体联系",
+          "value": "media@primavera-capital.com",
+          "url": "https://www.primavera-capital.com/zh-hans/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC/",
+          "source_id": "primavera_contact"
+        },
+        {
+          "kind": "email",
+          "label": "商业计划书",
+          "value": "vcbp@primavera-capital.com",
+          "url": "https://www.primavera-capital.com/zh-hans/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC/",
+          "source_id": "primavera_contact"
+        },
+        {
+          "kind": "address",
+          "label": "官网列示办公室",
+          "value": "北京、香港、硅谷、新加坡（未列具体街道地址）。",
+          "url": "https://www.primavera-capital.com/zh-hans/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC/",
+          "source_id": "primavera_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "primavera_about",
+          "source_url": "https://www.primavera-capital.com/zh-hans/%E5%85%B3%E4%BA%8E%E6%98%A5%E5%8D%8E/",
+          "source_title": "关于春华 — 春华资本",
+          "source_content_hash": "923bc4833f7c6ccb649227c5811048a08d8a63f3f96e86f27ce5d5501597ad40",
+          "quote": "春华资本通过旗下人民币和美元基金为全球机构、企业及家族办公室等管理资产；投资范围涵盖早期风险投资、中后期成长型投资、并购与控股型投资、私募债权投资。",
+          "quote_hash": "6898a1e246d9b989fdadfc778d44f9ab798a4754753a4b6547b1b8af46a8fe82"
+        },
+        {
+          "source_id": "primavera_portfolio",
+          "source_url": "https://www.primavera-capital.com/zh-hans/%E6%8A%95%E8%B5%84%E7%BB%84%E5%90%88/",
+          "source_title": "投资组合 — 春华",
+          "source_content_hash": "8a73b3403563aad2d7f181d90d6287acd6c59b96adfee82d2d8f535900d3cd1c",
+          "quote": "春华资本聚焦消费引领、服务驱动、科技赋能、绿色低碳四大投资主题。",
+          "quote_hash": "1e6dce00309f7e86f83ab3f94291b52936e13309f9d84cb810258d447efb3748"
+        },
+        {
+          "source_id": "primavera_contact",
+          "source_url": "https://www.primavera-capital.com/zh-hans/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC/",
+          "source_title": "联系我们 — 春华",
+          "source_content_hash": "f9145d741f8762667eb9b1acb4887e07f8bf7f631c20d10a4508ceba4e8235ae",
+          "quote": "春华资本在北京、香港、硅谷、新加坡设有办公室；投资者关系 ir@primavera-capital.com；媒体联系 media@primavera-capital.com；商业计划书 vcbp@primavera-capital.com。",
+          "quote_hash": "3dca6f0c632dcb4cfae7b8b5365a2d15ec185ae0dfbf7137b36e4d7e67af762e"
+        },
         {
           "source_id": "FISRC-a2c9854f5230d423",
           "source_url": "https://www.chinaventure.com.cn/news/111-20260921-393379.html",
@@ -292,7 +376,10 @@
           "quote_hash": "9317204ad4e9d5a3542398a8719e4a36d827ec98c648abc08eff56120d4de99d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

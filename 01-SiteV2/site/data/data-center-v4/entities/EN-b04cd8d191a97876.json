@@ -111,33 +111,81 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "王长虎 的来源线索将其与爱诗科技（创始人兼CEO）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "王长虎是爱诗科技创始人兼CEO，拥有中国科学技术大学博士学位，长期从事计算机视觉和人工智能。公开报道记载他早期在微软亚洲研究院担任主管研究员，后于2017年加入字节跳动，担任AI Lab总监及集团视觉技术负责人，参与搭建视觉技术团队并支持抖音、TikTok等产品发展。",
+      "current_roles": [
+        {
+          "title": "创始人、CEO",
+          "organization": "爱诗科技",
+          "source_id": "wangchanghu_cls"
+        }
+      ],
       "career": [
         {
+          "organization": "微软亚洲研究院",
+          "title": "主管研究员",
+          "period": "2004年起；结束时间公开资料存在差异，未作推断",
+          "description": "从事计算机视觉与人工智能研究，媒体报道提及其发表国际论文。",
+          "source_id": "wangchanghu_cls"
+        },
+        {
+          "organization": "字节跳动",
+          "title": "AI Lab总监、集团视觉技术负责人",
+          "period": "2017年至2023年创业前（公开报道）",
+          "description": "搭建视觉技术团队及平台，支持抖音、TikTok等产品发展；具体项目贡献按报道口径描述。",
+          "source_id": "wangchanghu_stcn"
+        },
+        {
           "organization": "爱诗科技",
-          "title": "创始人兼CEO",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将王长虎与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-9476e3eff9c1e8fe"
+          "title": "创始人、CEO",
+          "period": "2023年3月/4月创立；2026年公开报道时在任",
+          "description": "创立多模态视频模型及生成产品公司。",
+          "source_id": "wangchanghu_cls"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "中国科学技术大学",
+          "qualification": "博士；专业及授予年份未在所用公开来源中明确",
+          "source_id": "wangchanghu_cls"
+        }
+      ],
+      "experience_summary": "具有计算机视觉研究、短视频平台视觉技术研发与团队管理、AI视频创业经历。媒体资料披露的微软任职起始年份有2004年与其他报道口径差异，因此仅列2004年起并不推断离职时间。",
+      "track_record": [
+        {
+          "description": "在字节跳动期间参与建设视觉技术团队和平台，并于2023年创立爱诗科技；公司产品及业务成绩按公司和媒体报道口径呈现。",
+          "source_id": "wangchanghu_cls"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-9476e3eff9c1e8fe",
-          "source_url": "https://news.pedaily.cn/202607/566238.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "31557c2904ef4cb8",
-          "quote": "爱诗科技创始人兼CEO 王长虎表示",
-          "quote_hash": "b2746cc1d817da4b5ae7978b260a51f6991b116db901905c80ad1ad8b4c730a8"
+          "source_id": "wangchanghu_cls",
+          "source_url": "https://www.cls.cn/detail/2426300",
+          "source_title": "爱诗科技融资及创始团队履历 - 财联社",
+          "source_content_hash": "b26ebc1c0b0f004f2ae50f1867605668a5a9684d1623401b01e55c89021b9d7a",
+          "quote": "报道记载王长虎的中科大博士背景、微软亚洲研究院和字节跳动经历及创办爱诗科技。",
+          "quote_hash": "8281a092951cb011304560935d175dd54c6fe618a6410cf71de0be3a499e8cc2"
+        },
+        {
+          "source_id": "wangchanghu_36kr",
+          "source_url": "https://pitchhub.36kr.com/project/2377597355576199?header=hide&specialWeb=1",
+          "source_title": "爱诗科技项目与创始人资料 - 36氪创投平台",
+          "source_content_hash": "6c22c4cf31c130241d1a2f0585274ff0c3c3d180b46b4d19b7fbbcfa09cb356e",
+          "quote": "36氪机构资料列王长虎为爱诗科技创始人兼CEO，并记载微软、字节跳动经历。",
+          "quote_hash": "62f0358f8edc9217e7d8a1102195f2f4813780a4594fe4ac78ce2e5779d94922"
+        },
+        {
+          "source_id": "wangchanghu_stcn",
+          "source_url": "https://www.stcn.com/article/detail/1144066.html",
+          "source_title": "爱诗科技融资及创始人职业经历 - 证券时报",
+          "source_content_hash": "baa085d87561ee4349356b9622fa9cf8eaa319f7a9339617eec1669bd259d1b7",
+          "quote": "证券时报报道记载王长虎于2009年从中科大博士毕业，曾任微软亚洲研究院主管研究员，并于2017年加入字节跳动担任AI Lab总监和视觉技术负责人。",
+          "quote_hash": "20d8fe04c10ce3e3ef277ecbb654dcc66aa0a0dcd49a799902da4a78784315a0"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "职业与教育信息来自财联社和36氪公开人物资料；微软任职终止时间未能独立确认，故不作推定。",
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

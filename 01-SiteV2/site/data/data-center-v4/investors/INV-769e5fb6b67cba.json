@@ -186,14 +186,61 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "3one4 Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "3one4 Capital 是一家总部位于印度、专注印度早期公司的风险投资机构，强调深度参与式创始人支持。官网目前列示 SaaS、消费互联网、金融科技、数字健康和企业及中小企业数字化等方向，并披露组合公司后续融资、独角兽数量及已承诺资本等机构自述指标。",
+      "facts": [
+        {
+          "field": "investment_stages",
+          "label": "投资阶段",
+          "value": "早期投资；官网表示从首笔投资陪伴组合公司至 IPO",
+          "source_id": "3one4_home"
+        },
+        {
+          "field": "geography",
+          "label": "主要投资地域",
+          "value": "印度",
+          "source_id": "3one4_home"
+        },
+        {
+          "field": "sectors",
+          "label": "官网列示重点领域",
+          "value": [
+            "SaaS",
+            "消费互联网",
+            "金融科技",
+            "数字健康",
+            "企业与中小企业数字化"
+          ],
+          "source_id": "3one4_home"
+        },
+        {
+          "field": "committed_capital",
+          "label": "官网披露已承诺资本",
+          "value": "5.70 亿美元；官网未标明统计基准日期",
+          "source_id": "3one4_home"
+        },
+        {
+          "field": "portfolio_follow_on_funding",
+          "label": "官网披露组合后续融资",
+          "value": "24.7 亿美元；机构自述，页面未标明统计截止日期",
+          "source_id": "3one4_home"
+        },
+        {
+          "field": "unicorn_count",
+          "label": "官网披露组合独角兽数量",
+          "value": "5 家；机构自述，页面未标明统计截止日期",
+          "source_id": "3one4_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官网列出 Licious、Scimplify、Raise 与 Darwinbox 等组合公司案例，并披露组合公司累计后续融资 24.7 亿美元及 5 家独角兽；属于 3one4 自述指标，页面未注明统计截止日。",
+          "source_id": "3one4_home"
+        },
+        {
+          "description": "官网称其为印度首个加入全球 PRI 的风险投资机构；该信息来自机构网站“Milestones”栏，并链接至外部报道。",
+          "source_id": "3one4_home"
+        },
         {
           "description": "融资来源记录：Smallest.ai · A轮 · 2026-08-01 · 本轮参投 · 1300万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1284a14893cb26a9"
@@ -203,8 +250,53 @@
           "source_id": "FISRC-30eaf94a55c202d8"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "3one4 Capital",
+          "url": "https://www.3one4capital.com/",
+          "source_id": "3one4_home"
+        },
+        {
+          "kind": "email",
+          "label": "通用联系邮箱",
+          "value": "hello@3one4capital.com",
+          "url": "https://www.3one4capital.com/",
+          "source_id": "3one4_home"
+        },
+        {
+          "kind": "application",
+          "label": "项目提交入口",
+          "value": "Pitch To Us 在线申请",
+          "url": "https://www.3one4capital.com/contact-us",
+          "source_id": "3one4_contact"
+        },
+        {
+          "kind": "contact_form",
+          "label": "通用联系表单",
+          "value": "3one4 Capital Contact Us",
+          "url": "https://www.3one4capital.com/contact-us",
+          "source_id": "3one4_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "3one4_home",
+          "source_url": "https://www.3one4capital.com/",
+          "source_title": "Transformative Capital For the New Indian Economy",
+          "source_content_hash": "57bbf5979785fb2893e2b2bfee40e2f72c73cc5cffffa2b69177e56e3d9c583d",
+          "quote": "3one4 partners with early-stage companies from India. The site lists $570m committed capital, $2.47b raised in follow-on funding by the portfolio, and 5 unicorns. Focus areas include SaaS, consumer internet, fintech, digital health, and enterprise and SMB digitization. Contact: hello@3one4capital.com.",
+          "quote_hash": "e233ee5b3ebd2549d0ac679c3b20a5eb9c513927d953520e5be4ff4bbf4aabb6"
+        },
+        {
+          "source_id": "3one4_contact",
+          "source_url": "https://www.3one4capital.com/contact-us",
+          "source_title": "Contact Us | 3One4Capital",
+          "source_content_hash": "d936c3af0538557671cbb4d6a27bd3ff23a4855b1ddf229799cd8915b68f1b8d",
+          "quote": "3one4 Capital provides a “Write to us” form for general queries and a company pitch submission form that requests company, industry, website, team size, location, company information, and pitch deck.",
+          "quote_hash": "a0469d1ab14e3aa8296e61c5b5daefba93c0163507d75025cd97f082b8892176"
+        },
         {
           "source_id": "FISRC-1284a14893cb26a9",
           "source_url": "https://thecatalystonline.com/investment-funding/smallest-ai-expands-enterprise-voice-ai-with-new-funding/",
@@ -222,7 +314,11 @@
           "quote_hash": "5d5aad7fcded66830bdae4cc4f0a666f9603e5e98df892d7aa2435e00d256abe"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

@@ -241,13 +241,55 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "D1 Capital Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "D1 Capital Partners 是一家总部位于纽约、投资公开市场与私募市场的全球投资机构，由 Daniel Sundheim 于2018年创立。组合公司 Instacart 的董事简介称 Sundheim 为 D1 创始人兼首席投资官，并记载他此前在 Viking Global Investors 工作15年，早年在 Bear Stearns 商业银行部开展私募股权研究与交易。档案不将 D1 简化为纯风险投资基金。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立年份",
+          "value": "2018年",
+          "source_id": "d1_instacart_bio"
+        },
+        {
+          "field": "founder",
+          "label": "创始人、首席投资官",
+          "value": "Daniel Sundheim",
+          "source_id": "d1_instacart_bio"
+        },
+        {
+          "field": "markets",
+          "label": "投资市场",
+          "value": "公开市场与私募市场",
+          "source_id": "d1_instacart_bio"
+        },
+        {
+          "field": "sectors",
+          "label": "公司简介所述关注领域",
+          "value": [
+            "互联网",
+            "科技",
+            "电信",
+            "媒体",
+            "消费",
+            "医疗健康",
+            "金融",
+            "工业",
+            "房地产"
+          ],
+          "source_id": "d1_instacart_bio"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2018",
+          "description": "Daniel Sundheim创立D1 Capital Partners。",
+          "source_id": "d1_instacart_bio"
+        }
+      ],
       "track_record": [
+        {
+          "description": "融资数据库把D1列为Anthropic PBC与Thrive Holdings等融资的参与投资者；Thrive Holdings 2026年融资报道将D1列为新一轮参投者。案例来源只支持对应交易，不代表D1完整组合。",
+          "source_id": "d1_thrive_2026"
+        },
         {
           "description": "融资来源记录：Thrive Holdings · 轮次未披露 · 2026-08-12 · 本轮参投 · $2B。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0afb458e7b0878f0"
@@ -261,8 +303,40 @@
           "source_id": "FISRC-52917ea3c077fbf0"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "address",
+          "label": "SEC申报文件所列主要营业地址（2023年申报，不是投资申请地址）",
+          "value": "9 West 57th Street, 36th Floor, New York, NY 10019",
+          "url": "https://www.sec.gov/Archives/edgar/data/1477815/000090266423001648/p23-0545sc13ga.htm",
+          "source_id": "d1_sec_filing"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "d1_instacart_bio",
+          "source_url": "https://company.instacart.ca/about-us/daniel-sundheim",
+          "source_title": "Daniel Sundheim - Instacart董事简介",
+          "source_content_hash": "7d3c61181727a58d7350ce71a6f3dcc96c0d5b95c51d137dc443ea8196a66d3e",
+          "quote": "Instacart董事简介称Daniel Sundheim是D1 Capital Partners创始人兼首席投资官；D1成立于2018年，投资公开市场和私募市场，覆盖互联网、科技、电信、媒体、消费、医疗健康、金融、工业及房地产。该简介还记载他此前在Viking Global工作15年及早年在Bear Stearns商业银行部任职。",
+          "quote_hash": "02d360870558f942e185dfef9e80ab6f41df176177404caef32a7b0d4a3435eb"
+        },
+        {
+          "source_id": "d1_sec_filing",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1477815/000090266423001648/p23-0545sc13ga.htm",
+          "source_title": "Schedule 13G/A - SEC EDGAR",
+          "source_content_hash": "5c278717f04c6fa15e4f31890b791ef83ee2bb175725be68c6c0b77e34c0bf86",
+          "quote": "D1 Capital Partners L.P.向美国SEC提交的Schedule 13G/A列出其主要营业地址为纽约West 57th Street地址，并显示其以投资管理人身份参与相关证券申报。",
+          "quote_hash": "0cbd8a6412bd1339707da09d64298f19cc5ffe53a5e50a73c2c8c8c32cdac62b"
+        },
+        {
+          "source_id": "d1_thrive_2026",
+          "source_url": "https://techcrunch.com/2026/08/12/openai-backed-thrive-holdings-raises-2b-to-bring-ai-to-the-enterprise/",
+          "source_title": "OpenAI-backed Thrive Holdings raises $2B - TechCrunch",
+          "source_content_hash": "250a43fbc91f9ea0",
+          "quote": "TechCrunch 2026年融资报道将D1 Capital Partners列为Thrive Holdings新一轮20亿美元融资的参与投资者；该报道只支持此轮交易，不代表机构的完整投资组合。",
+          "quote_hash": "1df00a60fbc01bba540532e00066763589daab5a447822ad30edc061bf3401a6"
+        },
         {
           "source_id": "FISRC-0afb458e7b0878f0",
           "source_url": "https://techcrunch.com/2026/08/12/openai-backed-thrive-holdings-raises-2b-to-bring-ai-to-the-enterprise/",
@@ -288,7 +362,10 @@
           "quote_hash": "b6a7c1a96202c070c7844ca8f575954e5708e3527595fbd4d6510df17ee37161"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "D1市场类型、成立时间、负责人和其职业履历由组合公司Instacart董事简介支持；监管地址来自SEC申报文件，仅作为历史备案地址展示。公开资料未确认其专用VC申请邮箱或联系人，故不推定。",
+      "last_verified_at": "2026-09-26"
     }
   }
 }

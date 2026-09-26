@@ -186,21 +186,80 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Asylum Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Asylum Ventures 是位于纽约的早期风险投资合伙机构，官网以支持具有原创想法的创始人为定位，公开组合包括早期创业项目。团队成员 Nicholas Chirls 曾在 betaworks 负责种子投资并共同创立 Notation Capital；投资项目与团队履历均按官网公开口径呈现。",
+      "facts": [
+        {
+          "field": "headquarters",
+          "label": "所在地",
+          "value": "Brooklyn, New York",
+          "source_id": "asylum_team"
+        },
+        {
+          "field": "investment_stage",
+          "label": "阶段线索",
+          "value": "官网公司页列示Pre-Seed和Seed投资案例；未披露统一阶段政策",
+          "source_id": "asylum_companies"
+        },
+        {
+          "field": "team",
+          "label": "团队",
+          "value": [
+            "Nicholas Chirls",
+            "Mackenzie Regent",
+            "Lola Wajskop"
+          ],
+          "source_id": "asylum_team"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官网列示对Ark Robotics的Seed II领投、The Clearing Company的Seed投资及其他早期项目；该选择性页面并非完整投资组合。",
+          "source_id": "asylum_companies"
+        },
+        {
+          "description": "官网团队页称Nicholas Chirls曾在betaworks从事种子投资并共同创立Notation Capital。",
+          "source_id": "asylum_team"
+        },
         {
           "description": "融资来源记录：Aranya Inc. · 种子轮 · 2026-09-01 · 本轮参投 · $11M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-89934e15127d3d0d"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Asylum Ventures",
+          "url": "https://www.asylum.vc/",
+          "source_id": "asylum_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "asylum_home",
+          "source_url": "https://www.asylum.vc/",
+          "source_title": "Asylum Ventures - 官网",
+          "source_content_hash": "ab7a15c75913c7cca7173dbf255b8cff8eeb46d9befb6dc66e9c4b190d58117c",
+          "quote": "Asylum Ventures官网表示其投资理念是支持提出新颖想法、长期构建公司的创始人。",
+          "quote_hash": "ad4f2e419440da71b4020865a0de3d09b88ba6c947401a10def863608f4e52fa"
+        },
+        {
+          "source_id": "asylum_team",
+          "source_url": "https://www.asylum.vc/team",
+          "source_title": "Asylum Ventures / Team",
+          "source_content_hash": "c20d62722e57af8b1cb8058d7f4fffc73b4cd0675f226b7b82a3238b997e6560",
+          "quote": "Asylum团队页称其为位于纽约的小型合伙机构；Nicholas Chirls曾在betaworks负责早期种子投资，并共同创立Notation Capital，之后加入Asylum。",
+          "quote_hash": "d740e50f26f0249a578f35b70882a9cbd9a9857ddb16eab86501f2cc09ed3733"
+        },
+        {
+          "source_id": "asylum_companies",
+          "source_url": "https://www.asylum.vc/companies",
+          "source_title": "Asylum Ventures / Companies",
+          "source_content_hash": "621b06c7ee433ebd3a93029456c31c69b6660371692ea128b5b1ca95dc293f28",
+          "quote": "Asylum公司组合页列出Ark Robotics的Seed II领投、The Clearing Company的Seed投资等案例；页面为选择性组合展示。",
+          "quote_hash": "11882f045e50e7ba2132f11c0cb117ed06dda2fe4f9be2b635da3400a56cd66b"
+        },
         {
           "source_id": "FISRC-89934e15127d3d0d",
           "source_url": "https://siliconangle.com/2026/09/01/aranya-raises-11m-to-turn-bare-metal-servers-into-ai-clusters-in-less-than-48-hours/",
@@ -210,7 +269,11 @@
           "quote_hash": "311e56ff80aa1bddaf01f365e7a7fe50bfe7b2fc6c80c0cd3cd079537584f4cd"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构定位、团队、投资案例来自Asylum Ventures官网。页面未披露基金规模、单笔支票范围或完整组合，故不推断；投资案例仅作官网列示，不声称完整。",
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization"
     }
   }
 }

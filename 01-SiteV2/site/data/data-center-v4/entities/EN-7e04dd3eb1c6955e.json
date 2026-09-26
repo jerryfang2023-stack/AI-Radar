@@ -128,33 +128,60 @@
       }
     },
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "Jason Goodison 的来源线索将其与General Compute（首席技术官）关联。来源日期：2026-07-08；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
-      "career": [
+      "summary": "Jason Goodison 是 General Compute CTO及联合创始人，负责推理平台架构和开发。公司团队页称其毕业于滑铁卢大学计算机科学专业，曾在Microsoft从事分布式系统工作四年，并曾创办一家Y Combinator支持的公司；公司名称和任期未披露。",
+      "current_roles": [
         {
+          "title": "CTO兼联合创始人",
           "organization": "General Compute",
-          "title": "首席技术官",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将Jason Goodison与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-7f85c191231c7c71"
+          "source_id": "jason_gc"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
+      "career": [
+        {
+          "organization": "Microsoft",
+          "title": "软件工程师，分布式系统",
+          "period": "约四年；具体起止日期未披露",
+          "description": "参与服务数百万用户的分布式系统开发。",
+          "source_id": "jason_gc"
+        },
+        {
+          "organization": "创业项目（公司名称未披露）",
+          "title": "创始人",
+          "period": "加入General Compute之前；年份未披露",
+          "description": "公司团队页称其曾创办一家获得Y Combinator支持的公司。",
+          "source_id": "jason_gc"
+        },
+        {
+          "organization": "General Compute",
+          "title": "CTO兼联合创始人",
+          "period": "公司成立以来；具体起始日期未披露",
+          "description": "负责AI推理平台的架构与开发。",
+          "source_id": "jason_gc"
+        }
+      ],
+      "education": [
+        {
+          "institution": "滑铁卢大学",
+          "qualification": "计算机科学专业毕业；学位及毕业年份未披露",
+          "source_id": "jason_gc"
+        }
+      ],
+      "experience_summary": "职业经历涵盖大规模分布式系统工程、创业和AI推理平台技术架构；早期创业项目身份未公开。",
       "track_record": [],
       "sources": [
         {
-          "source_id": "FISRC-7f85c191231c7c71",
-          "source_url": "https://techcrunch.com/2026/05/28/has-the-hunt-for-ai-compute-uncovered-the-next-cerebras/",
-          "source_title": "融资披露来源",
-          "source_content_hash": "e665c69377d47ba3",
-          "quote": "the co-founders of General Compute, CEO Finn Puklowski and CTO Jason Goodison",
-          "quote_hash": "c7f29573c7276febd42ab62b18c9d0920c3c5c386dbf38e3155680bf5f45bca4"
+          "source_id": "jason_gc",
+          "source_url": "https://www.generalcompute.com/team",
+          "source_title": "General Compute官网团队页：Jason Goodison",
+          "source_content_hash": "304eef54a7a83587f0d2854a01e32edda1052dc2a8d7d6e423a046a6defacdbd",
+          "quote": "General Compute官网称Jason Goodison负责推理平台架构，毕业于滑铁卢大学计算机科学专业，曾在Microsoft做分布式系统并创办Y Combinator支持的公司。",
+          "quote_hash": "7bc1473b0602149315e4425ba59260c820f4d4f11a3597110bc479a7da2fecff"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "公司官网确认当前职责、学历类别及过往职业线索；未披露的雇主名称和年份不作推断。",
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

@@ -193,10 +193,47 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Script Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "依据机构官网策略、团队、组合或联系资料核实；机构自述指标与组合案例不视作基金回报。",
+      "summary": "Script Capital 是总部位于旧金山的早期风险投资基金，专注互联网和软件创业公司。官网称其自 2015 年开始投资，与技术型创始人合作，主要投资 Pre-seed 与 Seed，通常首笔支票为 25 万至 50 万美元。",
+      "facts": [
+        {
+          "field": "headquarters",
+          "label": "总部",
+          "value": "美国旧金山。",
+          "source_id": "script_home"
+        },
+        {
+          "field": "focus",
+          "label": "投资领域",
+          "value": "互联网与软件创业公司。",
+          "source_id": "script_home"
+        },
+        {
+          "field": "stage",
+          "label": "投资阶段",
+          "value": "Pre-seed 与 Seed。",
+          "source_id": "script_home"
+        },
+        {
+          "field": "check_size",
+          "label": "常见支票金额",
+          "value": "官网披露通常为 25 万至 50 万美元。",
+          "source_id": "script_home"
+        },
+        {
+          "field": "history",
+          "label": "投资历史",
+          "value": "官网称自 2015 年开始投资。",
+          "source_id": "script_primer"
+        },
+        {
+          "field": "portfolio_examples",
+          "label": "官网组合案例",
+          "value": "官网列有 Pangram、Adam 等组合公司；此为网站列示案例，不代表完整组合或基金回报。",
+          "source_id": "script_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -208,7 +245,15 @@
           "source_id": "FISRC-1e12e93a65d54b9a"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Script Capital",
+          "url": "https://script.capital/",
+          "source_id": "script_home"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-d8e4be597a9ace83",
@@ -225,9 +270,25 @@
           "source_content_hash": "49f3c01467bded27",
           "quote": "Besides TQ and participating funds 468 Capital, Pioneer, Script Capital, and Transpose Platform",
           "quote_hash": "f0536b9c961091ce95590d648c6a2c990af8301a77fa34b3e75aa4ad11db85a9"
+        },
+        {
+          "source_id": "script_home",
+          "source_url": "https://script.capital/",
+          "source_title": "Script Capital | Official Website",
+          "quote": "Script is a venture fund based in San Francisco focused on early-stage internet and software startups.",
+          "source_content_hash": "ce790395588c9fe0db3b35e66cc526086d51522159bc3133550396e93b072e00",
+          "quote_hash": "a693cfd93ce1273597d1cf8d8a22cbdbb0a2cddf76601dc0e6f600d187b71fac"
+        },
+        {
+          "source_id": "script_primer",
+          "source_url": "https://script.capital/notes/primer/",
+          "source_title": "A Primer | Script Capital",
+          "quote": "We have covered a lot of ground as investors since we started investing in 2015.",
+          "source_content_hash": "de8d175e5fba7b424dab48ecf930ecdd5a4af41d567e9f76eb76c3cbba018a4b",
+          "quote_hash": "e3402c87c498d6387e16688d136a040dc0cfa4956255e9d16582746c20bf0433"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

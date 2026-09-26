@@ -186,14 +186,31 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Cyanhill Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "青山资本（Cyanhill Capital）是一家中国消费领域早期投资机构。官网介绍其投资找靓机、PIDAN、花点时间、bosie、每日黑巧等项目，并公开项目投递邮箱与办公电话。投资案例和荣誉均按官网披露口径呈现，不代表完整投资组合或基金回报。",
+      "facts": [
+        {
+          "field": "focus",
+          "label": "官网披露的投资方向",
+          "value": "消费领域早期投资",
+          "source_id": "cyanhill_about"
+        },
+        {
+          "field": "founder",
+          "label": "创始人",
+          "value": "张野",
+          "source_id": "cyanhill_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官网列示找靓机、PIDAN、花点时间、bosie、每日黑巧、鲨鱼菲特、本来生活、小赢科技及驭势科技等项目。",
+          "source_id": "cyanhill_portfolio"
+        },
+        {
+          "description": "官网列出2019至2021年间多项行业榜单与机构奖项；未在此推断投资回报。",
+          "source_id": "cyanhill_portfolio"
+        },
         {
           "description": "融资来源记录：Even Realities Technology · Pre-B轮 · 2026-07-07 · 本轮参投 · 1.5亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e9b7c7aa8538dbf1"
@@ -203,8 +220,54 @@
           "source_id": "FISRC-340182e8dcb597a3"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "label": "项目投递",
+          "value": "bp@cyanhillcapital.com",
+          "url": "https://www.cyanhillcapital.com/index.php?a=lists&c=index&catid=1&m=content",
+          "source_id": "cyanhill_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "办公电话",
+          "value": "010-85910317",
+          "url": "https://www.cyanhillcapital.com/index.php?a=lists&c=index&catid=1&m=content",
+          "source_id": "cyanhill_contact"
+        },
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "青山资本",
+          "url": "https://www.cyanhillcapital.com/?language=chinese",
+          "source_id": "cyanhill_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "cyanhill_about",
+          "source_url": "https://www.cyanhillcapital.com/?language=chinese",
+          "source_title": "关于青山 | 青山资本",
+          "source_content_hash": "a9d3b7a64aa650831671596e506d371129cbba324bd5a5bcb80acf931164f7d8",
+          "quote": "青山资本是一家专注于消费领域的早期投资机构，深度扎根中国市场与创新生态。张野是青山资本创始人。",
+          "quote_hash": "ce86649b8b801b30573c3535a4fc9d519cf0a6c5ce732c76448e89ae88866213"
+        },
+        {
+          "source_id": "cyanhill_portfolio",
+          "source_url": "https://www.cyanhillcapital.com/index.php?a=lists&c=index&catid=1&m=content",
+          "source_title": "关于青山 | 青山资本",
+          "source_content_hash": "a9d3b7a64aa650831671596e506d371129cbba324bd5a5bcb80acf931164f7d8",
+          "quote": "成立至今，青山资本已投资找靓机、PIDAN、花点时间、bosie、每日黑巧、鲨鱼菲特、本来生活、小赢科技、驭势科技等项目；官网还列出多项2019至2021年行业榜单荣誉。",
+          "quote_hash": "d208bcfa7df0ddb02b491e6973064e39cc9b4d9ceccebf5fc4ad9d45ccddefc8"
+        },
+        {
+          "source_id": "cyanhill_contact",
+          "source_url": "https://www.cyanhillcapital.com/index.php?a=lists&c=index&catid=1&m=content",
+          "source_title": "关于青山 | 青山资本",
+          "source_content_hash": "a9d3b7a64aa650831671596e506d371129cbba324bd5a5bcb80acf931164f7d8",
+          "quote": "项目投递：bp@cyanhillcapital.com；办公电话：010-85910317。",
+          "quote_hash": "807f7cd7fb33138191f2e2494c852e14a1ba9b6b1b9b6d40bd7262285881d5f1"
+        },
         {
           "source_id": "FISRC-e9b7c7aa8538dbf1",
           "source_url": "https://siliconvalleyinvestclub.com/hi/2026/08/31/interview-with-will-wang-founder-ceo-of-even-realities-150m-raise-at-1b-valuation/",
@@ -222,7 +285,11 @@
           "quote_hash": "ec94d96b08f5c55efa4344b591c4722d26e4e68c37ba1ba5da7bbde8161ce74f"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

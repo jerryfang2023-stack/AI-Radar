@@ -137,21 +137,105 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "百度风投 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "“百度风投”与融资库中的“BV百度风投”指向同一官方风险投资机构，官网名称为BV百度风投（Baidu Ventures）。该融资来源标签仍单独保留；档案按官网披露的AI早期投资策略、组合与联系方式整理。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "设立时间",
+          "value": "2017 年由百度集团发起设立；现以独立风险投资机构身份运营。",
+          "source_id": "bv_about"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": [
+            "早期",
+            "创业第一天"
+          ],
+          "source_id": "bv_about"
+        },
+        {
+          "field": "focus_sectors",
+          "label": "重点领域",
+          "value": [
+            "AIGC",
+            "具身智能",
+            "自动驾驶",
+            "先进计算",
+            "生命科学"
+          ],
+          "source_id": "bv_about"
+        },
+        {
+          "field": "fund_structure",
+          "label": "基金结构",
+          "value": "管理多支美元及人民币基金（官网未披露当前规模）",
+          "source_id": "bv_about"
+        },
+        {
+          "field": "portfolio_count",
+          "label": "累计投资企业",
+          "value": "全球 200 余家（机构官网自述）",
+          "source_id": "bv_about"
+        },
+        {
+          "field": "headquarters",
+          "label": "官网列示地址",
+          "value": "北京市海淀区科学院南路 2 号融科资讯中心 C 座",
+          "source_id": "bv_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2017",
+          "description": "由百度集团发起设立，成为专注人工智能的独立风险投资机构。",
+          "source_id": "bv_about"
+        }
+      ],
       "track_record": [
+        {
+          "description": "BV 官网展示跨 AIGC、具身智能、自动驾驶、先进计算及生命科学领域的投资案例，并自述累计投资企业超过 200 家；该数字为机构自报口径。",
+          "source_id": "bv_about"
+        },
         {
           "description": "融资来源记录：欧拉万象 · 天使轮 · 2026-06-26 · 本轮参投 · 超过亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-aad97c1f07ceb5c6"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "BV百度风投官网",
+          "value": "BV百度风投",
+          "url": "https://www.baidu-venture.com/bv/",
+          "source_id": "bv_about"
+        },
+        {
+          "kind": "application",
+          "label": "商业计划书投递",
+          "value": "bp@baidu-ventures.com",
+          "url": "https://www.baidu-venture.com/bv/",
+          "source_id": "bv_about"
+        },
+        {
+          "kind": "email",
+          "label": "人才招聘联系",
+          "value": "hr@baidu-ventures.com",
+          "url": "https://www.baidu-venture.com/bv/",
+          "source_id": "bv_about"
+        }
+      ],
+      "coverage_status": "researched",
+      "coverage_note": "百度风投与BV百度风投由官方名称及官网核实为同一机构；本库保留不同融资来源的原始标签，未改写历史来源。投资组合数量为机构自述口径。",
       "sources": [
+        {
+          "source_id": "bv_about",
+          "source_url": "https://www.baidu-venture.com/bv/",
+          "source_title": "关于BV_百度集团发起的独立风险投资机构",
+          "source_content_hash": "530711d532083b7f",
+          "quote": "BV百度风投是由百度集团于 2017 年发起设立的独立风险投资机构。机构创立伊始便聚焦人工智能，投资方向覆盖 AIGC、具身智能、自动驾驶、先进计算、生命科学等领域。旗下管理多支双币基金，全球累计投资 200 余家企业。商业计划书投递 bp@baidu-ventures.com，简历投递 hr@baidu-ventures.com。",
+          "quote_hash": "530711d532083b7fad610c3dba95897713fa15d88d7a4e814f46e0bc20130d20"
+        },
         {
           "source_id": "FISRC-aad97c1f07ceb5c6",
           "source_url": "https://www.sohu.com/a/1041806074_120109837",
@@ -161,7 +245,9 @@
           "quote_hash": "c339f97068fae4fed428375d7d7d2247ab186257c87a3dc89b1ef9e256c737f3"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "identity_status": "verified"
     }
   }
 }

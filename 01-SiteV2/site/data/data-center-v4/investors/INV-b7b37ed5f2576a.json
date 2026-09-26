@@ -191,20 +191,77 @@
       }
     ],
     "public_profile": {
-      "profile_type": "person",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Abhishek Goyal 当前按“个人投资者”收录。最新融资披露记录日期为 2025-07-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Abhishek Goyal is a Tracxn co-founder and current Vice Chairman and Executive Director. Tracxn’s public filings describe earlier work at Yahoo and Amazon, venture investing at Accel India, a computer science and engineering degree from IIT Kanpur, and early investments in Flipkart and CommonFloor. He is also named in recent angel financing reports.",
+      "facts": [
+        {
+          "field": "founder",
+          "label": "公司经历",
+          "value": "Tracxn联合创始人",
+          "source_id": "tracxn_board_role"
+        },
+        {
+          "field": "prior_investment",
+          "label": "早期投资经历",
+          "value": "曾在Accel India担任投资人；参与对Flipkart、CommonFloor的早期投资。",
+          "source_id": "tracxn_annual_investments"
+        },
+        {
+          "field": "recognition",
+          "label": "公开荣誉",
+          "value": "Fortune India 40 Under 40（2018、2019）",
+          "source_id": "tracxn_annual_award"
+        }
+      ],
       "milestones": [],
+      "current_roles": [
+        {
+          "title": "Vice Chairman and Executive Director",
+          "organization": "Tracxn Technologies Limited",
+          "source_id": "tracxn_board_role"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Tracxn Technologies Limited",
+          "title": "联合创始人、Vice Chairman and Executive Director",
+          "period": "现任（公司官网资料）",
+          "description": "共同创办私营企业市场情报平台Tracxn，并担任公司董事会副主席及执行董事。",
+          "source_id": "tracxn_board_role"
+        },
+        {
+          "organization": "Accel India",
+          "title": "投资人",
+          "period": "此前，具体年份未披露",
+          "description": "在进入创业阶段前从事风险投资；Tracxn年报称其参与了Flipkart和CommonFloor早期投资。",
+          "source_id": "tracxn_annual_career"
+        },
+        {
+          "organization": "Yahoo Software Development India / Amazon Development Centre India",
+          "title": "科技公司任职（具体职务未披露）",
+          "period": "此前，具体年份未披露",
+          "description": "公司董事介绍列出其曾在Yahoo和Amazon相关机构任职。",
+          "source_id": "tracxn_annual_career"
+        }
+      ],
+      "education": [
+        {
+          "institution": "Indian Institute of Technology Kanpur（印度理工学院坎普尔分校）",
+          "qualification": "Technology学士，Computer Science and Engineering方向",
+          "source_id": "tracxn_board_education"
+        }
+      ],
+      "experience_summary": "其经历横跨软件与互联网公司、风险投资和创业：曾在Yahoo、Amazon相关机构工作，随后在Accel India从事投资，后共同创办Tracxn。年报特别提到Flipkart和CommonFloor为其参与早期投资的项目。",
       "track_record": [
         {
-          "description": "融资来源记录：Heizen · 预种子轮 · 2025-07-30 · 本轮参投（天使投资人） · $500,000。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Tracxn年报称，他在Accel团队期间参与向Flipkart和CommonFloor开出早期投资支票。",
+          "source_id": "tracxn_annual_investments"
+        },
+        {
+          "description": "融资报道将Abhishek Goyal列为Heizen种子前轮天使投资人之一；不是完整个人投资组合。",
           "source_id": "FISRC-3916f9c102f08152"
         },
         {
-          "description": "融资来源记录：Quash · 预种子轮 · 2024-08-20 · 本轮天使投资人 · $635,000。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资报道称其参与Quash种子前轮投资；该报道未披露个人出资金额。",
           "source_id": "FISRC-70b20379e494fa2f"
         }
       ],
@@ -225,9 +282,61 @@
           "source_content_hash": "1d7bff75e7129429",
           "quote": "Abhishek Goyal, a co-founder of Tracxn, have also contributed.",
           "quote_hash": "d427d45ab2395b9dc8245a626f5417341df4042e5e309f6c485424b6b668e14e"
+        },
+        {
+          "source_id": "tracxn_board_role",
+          "source_url": "https://w.tracxn.com/investor-relations/corporate-governance/board-of-directors/abhishek-goyal",
+          "source_title": "Abhishek Goyal | Tracxn",
+          "source_content_hash": "9fe5d4ffe4b45fb8e8b354424f79380d28aea4e554d5907713326b53f7588ad7",
+          "quote": "Abhishek Goyal is the Vice Chairman and Executive Director on the Board of our Company and is a founder of our Company.",
+          "quote_hash": "356c052ae2f228bcca838e1968a5cf6980e6c11b0c82938c40c5f991b303bf0e"
+        },
+        {
+          "source_id": "tracxn_board_education",
+          "source_url": "https://w.tracxn.com/investor-relations/corporate-governance/board-of-directors/abhishek-goyal",
+          "source_title": "Abhishek Goyal | Tracxn",
+          "source_content_hash": "9fe5d4ffe4b45fb8e8b354424f79380d28aea4e554d5907713326b53f7588ad7",
+          "quote": "He holds a bachelor’s degree in technology, specialising in computer science and engineering, from the Indian Institute of Technology, Kanpur.",
+          "quote_hash": "ff9e0bc7857a3ffcf519645fa855bd3d73e022a478d5619630ca4dcb989a5014"
+        },
+        {
+          "source_id": "tracxn_board_career",
+          "source_url": "https://w.tracxn.com/investor-relations/corporate-governance/board-of-directors/abhishek-goyal",
+          "source_title": "Abhishek Goyal | Tracxn",
+          "source_content_hash": "9fe5d4ffe4b45fb8e8b354424f79380d28aea4e554d5907713326b53f7588ad7",
+          "quote": "He has previously served as a consultant with 3i Infotech Limited and Erasmic Consulting Private Limited.",
+          "quote_hash": "56d33bb55e020d60f726bc827a421c037b8a81901d3fd27582c7a6532b60483f"
+        },
+        {
+          "source_id": "tracxn_annual_investments",
+          "source_url": "https://cdn.tracxn.com/marketing-campaigns/Annual_Report_-_FY_24-25_iWaG6LetuoE8P4de2VJLl.pdf",
+          "source_title": "TRACXN TECHNOLOGIES LIMITED Annual Report FY 2024-25",
+          "source_content_hash": "6703aaeda0fac3a35a1d79688fe8b5f6ce36e1396e6e29748e7ccf8b646c79ec",
+          "quote": "During his time at Accel, Abhishek was part of the deal team that wrote the first cheques to companies such as Flipkart and CommonFloor.",
+          "quote_hash": "80193ff0dd12e0729d32677e92c5d28ac50746fa7b97eb206719ce6f4cbbd288"
+        },
+        {
+          "source_id": "tracxn_annual_award",
+          "source_url": "https://cdn.tracxn.com/marketing-campaigns/Annual_Report_-_FY_24-25_iWaG6LetuoE8P4de2VJLl.pdf",
+          "source_title": "TRACXN TECHNOLOGIES LIMITED Annual Report FY 2024-25",
+          "source_content_hash": "6703aaeda0fac3a35a1d79688fe8b5f6ce36e1396e6e29748e7ccf8b646c79ec",
+          "quote": "being featured in the Fortune 40 Under 40 list consecutively in 2018 and 2019.",
+          "quote_hash": "1090966555b479d694ae0fd3e6295d8bcc4169b9ac254c186ef1cb8e2f225fd5"
+        },
+        {
+          "source_id": "tracxn_annual_career",
+          "source_url": "https://cdn.tracxn.com/marketing-campaigns/Annual_Report_-_FY_24-25_iWaG6LetuoE8P4de2VJLl.pdf",
+          "source_title": "TRACXN TECHNOLOGIES LIMITED Annual Report FY 2024-25",
+          "source_content_hash": "6703aaeda0fac3a35a1d79688fe8b5f6ce36e1396e6e29748e7ccf8b646c79ec",
+          "quote": "He began his career with technology giants Yahoo and Amazon, before moving into venture capital as an investor at Accel Partners.",
+          "quote_hash": "cb9645c6231b43fec4465cec81eadf1ead8d8c192cc996735298bd4291d5fce4"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "职位、学历和过往任职以Tracxn公司官网及年报为准；投资案例来自公司年报或融资来源记录，不能据此推断完整个人投资组合。",
+      "last_verified_at": "2026-09-26"
     }
   }
 }

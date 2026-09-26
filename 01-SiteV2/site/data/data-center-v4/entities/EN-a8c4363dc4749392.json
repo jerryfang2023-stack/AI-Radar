@@ -108,33 +108,40 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "Martha Stewart 的来源线索将其与Hint（联合创始人）关联。来源日期：2026-07-30；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "Martha Stewart 是Hint联合创始人，参与产品开发、家庭维护知识及品牌语言审核。TechCrunch报道称她持有公司股权并实际参与工作，但不是Hint的财务投资人；此档案不将其误标为融资投资方。",
+      "current_roles": [
+        {
+          "title": "联合创始人",
+          "organization": "Hint",
+          "source_id": "martha_tc"
+        }
+      ],
       "career": [
         {
           "organization": "Hint",
-          "title": "联合创始人",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将Martha Stewart与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-7fb90907dc18444a"
+          "title": "联合创始人、产品与内容顾问",
+          "period": "2026年7月产品发布时在任",
+          "description": "TechCrunch报道她参与应用内容、家庭维护建议、设计及品牌语言反馈，并明确称其不是财务投资人。",
+          "source_id": "martha_tc"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
+      "experience_summary": "本数据库关联仅限其与Hint的联合创始和产品参与关系；不据此构造完整个人商业履历。",
       "track_record": [],
       "sources": [
         {
-          "source_id": "FISRC-7fb90907dc18444a",
-          "source_url": "https://techcrunch.com/2026/07/29/hint-a-new-ai-startup-co-founded-by-martha-stewart-offers-an-ai-assistant-for-homeowners",
-          "source_title": "融资披露来源",
-          "source_content_hash": "6c8f13ea3672da72",
-          "quote": "Martha Stewart is entering the AI software era in the most Martha Stewart way possible: She has joined the co-founding team at Hint",
-          "quote_hash": "e026d7cc4ec8a0e8cfd333eef334245d9c637f54a6ccde2c04f8a05461a8adcd"
+          "source_id": "martha_tc",
+          "source_url": "https://techcrunch.com/2026/07/29/hint-a-new-ai-startup-co-founded-by-martha-stewart-offers-an-ai-assistant-for-homeowners/",
+          "source_title": "TechCrunch：Martha Stewart参与创办Hint",
+          "source_content_hash": "bf1b5275ab303e0ef20f0a5e4734f8eb8009d38efee50b1c84263170a2a9d669",
+          "quote": "TechCrunch报道Martha Stewart是Hint联合创始人，持有股权并参与产品工作，但并非该公司的财务投资人。",
+          "quote_hash": "d3e07c29e953406aed1898113178f4a52270eedd41385d14cb02c20d89a0a56e"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "只记录其在融资情报相关企业中的有来源关联；明确区分创始人股权与财务投资。",
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

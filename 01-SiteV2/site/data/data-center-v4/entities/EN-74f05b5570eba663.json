@@ -111,33 +111,46 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "陈立韬 的来源线索将其与比特无限（首席技术官）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "陈立韬是比特无限首席技术官。2026年融资报道将其描述为具有约6年华为仿真及后训练全栈经验；公开来源未披露其教育背景和具体任职年份。",
+      "current_roles": [
+        {
+          "title": "首席技术官",
+          "organization": "上海比特无限人工智能科技有限公司",
+          "source_id": "chen_litao_2026"
+        }
+      ],
       "career": [
         {
-          "organization": "比特无限",
+          "organization": "华为",
+          "title": "仿真与后训练相关工作经历",
+          "period": "约6年；具体起止日期未披露",
+          "description": "2026年融资报道概括其具备华为仿真与后训练全栈经验；未据此推定具体部门或职级。",
+          "source_id": "chen_litao_2026"
+        },
+        {
+          "organization": "上海比特无限人工智能科技有限公司",
           "title": "首席技术官",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-30b12c73a020a729"
+          "period": "截至2026-09报道",
+          "description": "公司对外报道列其为CTO，负责AI生成3D方向的技术工作。",
+          "source_id": "chen_litao_2026"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
+      "experience_summary": "现有公开报道可核验其华为仿真与后训练经验及在比特无限担任CTO，具体年表、教育经历和更多关联公司尚无可靠公开来源。",
       "track_record": [],
       "sources": [
         {
-          "source_id": "FISRC-30b12c73a020a729",
-          "source_url": "https://www.cls.cn/detail/2478686",
-          "source_title": "融资披露来源",
-          "source_content_hash": "41ae3418cb565487",
-          "quote": "CTO陈立韬具备6年华为仿真与后训练全栈经验",
-          "quote_hash": "d12e95673e4eeec4dbf9544afb1f433c888404b11cc63e1e9d0289463b6b869f"
+          "source_id": "chen_litao_2026",
+          "source_url": "https://m.cls.cn/detail/2478686",
+          "source_title": "比特无限完成数千万元Pre-A轮融资 老股东超额追投｜财联社",
+          "source_content_hash": "f2b79573e5a2d6b988698833bfc2b994750421fba5baf6657485324eaa16b520",
+          "quote": "报道指出比特无限CTO陈立韬具备6年华为仿真与后训练全栈经验。",
+          "quote_hash": "daac594ba827ca0e439cdb26d7339e07112a12f2f7c51612f1d57053300c0632"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "公开报道没有披露教育信息与华为任职的准确起止日期，相关字段留空或按报道口径描述。"
     }
   },
   "relatedEntities": [],

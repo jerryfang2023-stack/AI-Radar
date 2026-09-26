@@ -192,14 +192,56 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "58产业基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "58产业基金（亦称神骐资本）是58集团旗下中早期投资机构，与58集团内部战略投资部门需分开识别。公开机构资料将其方向概括为新服务、教育培训及科技创新；2019年机构代表曾披露重点关注新服务、职业教育和下沉市场，主要投资AB轮及更早期企业。该历史规模和阶段为当时口径，不代表当前基金规模。基金曾通过地方合作基金拓展募资和投资；每笔融资记录应区分基金法律主体及58集团直接战略投资。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "58集团旗下的中早期投资机构（公开机构资料）",
+          "source_id": "58industry_fund_profile"
+        },
+        {
+          "field": "founded",
+          "label": "成立年份",
+          "value": "2018（第三方机构资料）",
+          "source_id": "58industry_fund_profile"
+        },
+        {
+          "field": "investment_stage",
+          "label": "历史投资阶段",
+          "value": "AB轮及中早期项目（2019年机构代表访谈）",
+          "source_id": "58industry_fund_interview_2019"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": [
+            "新服务",
+            "职业教育",
+            "下沉市场",
+            "科技创新"
+          ],
+          "source_id": "58industry_fund_interview_2019"
+        },
+        {
+          "field": "historical_aum",
+          "label": "历史管理规模",
+          "value": "2019年受访者称当时约20亿元、两支基金运作；不得视作当前规模",
+          "source_id": "58industry_fund_interview_2019"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2018",
+          "description": "第三方机构资料记载58产业基金成立。",
+          "source_id": "58industry_fund_profile"
+        }
+      ],
       "track_record": [
+        {
+          "description": "第三方机构资料列出牛客网、轻氧洗衣、UU跑腿、爱泊车等投资案例；部分交易主体可能为地方合作基金，不能一概归为58集团直接投资。",
+          "source_id": "58industry_fund_profile"
+        },
         {
           "description": "融资来源记录：西湖心辰 · B+轮 · 2026-08-03 · 本轮参投 · 数亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-312cccaedbeb2478"
@@ -209,8 +251,44 @@
           "source_id": "FISRC-bea9d0be613bc1cd"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "投资方向和历史管理规模来自2019年机构代表论坛发言；近年机构概况及组合来自第三方汇编。2024年媒体报道明确区分神骐资本基金与58内部战投。未找到可核实的独立投资申请渠道、公开邮箱或电话。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "58集团官网（母集团）",
+          "value": "58同城",
+          "url": "https://about.58.com/",
+          "source_id": "58industry_fund_profile"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "58industry_fund_profile",
+          "source_url": "https://climateinvestors.newenergynexus.cn/investors/109?locale=zh-CN",
+          "source_title": "神骐资本（58产业基金） - 气候投资者",
+          "source_content_hash": "376d9d5fa60a5d45dfc221322150e7f5b3d56c8dd6bb45bd03f7359e488590d8",
+          "quote": "该机构资料将神骐资本称为58集团旗下中早期投资机构，称其2018年成立，关注新服务、教育培训和科技创新，并列有牛客网、轻氧洗衣、UU跑腿、爱泊车等投资案例；此为第三方资料汇编。",
+          "quote_hash": "62a9cb5d6df744b5dba34afb7595c1edc84eacd673d2cfe26ae96494e3d8f1fe"
+        },
+        {
+          "source_id": "58industry_fund_interview_2019",
+          "source_url": "https://www.thecapital.com.cn/newsDetail/31480",
+          "source_title": "辑志协力，CVC投资推动产业协同创新发展 - 融中财经",
+          "source_content_hash": "6438b600e6cafdc0968ffd66afcadc08f3277e4099fcf208e067a5ff8e353e7c",
+          "quote": "融中财经2019年论坛实录中，58产业基金代表李纳称当时机构有两支运作基金、管理规模20亿元，主要投AB轮中早期项目，重点方向为新服务、职业教育和下沉市场。该规模和策略为2019年受访者所述历史口径。",
+          "quote_hash": "671f4d4de1c405d75b1bff2b1c47ded6c710d96a3fe3a8fcd410815ec13c4b5a"
+        },
+        {
+          "source_id": "58industry_fund_2026",
+          "source_url": "https://finance.sina.com.cn/stock/observe/2024-03-22/doc-inapfafn8107329.shtml",
+          "source_title": "CVC机构盘点 | 58集团：神骐资本专向地方政府募资 - 新浪财经",
+          "source_content_hash": "2aa311bba3b46af281e99cea061b03059c6bb9c94848852872b444c90d4794e4",
+          "quote": "新浪财经报道基于企业登记和基金业协会公开资料，区分58集团旗下的神骐资本及集团内部战略投资部门，并列出若干地方合作基金；该报道提醒二者募资来源和投资职能并不相同。",
+          "quote_hash": "5b207d39e5937b3973677b9f09f549b7d18252686a37ab6731ab43b2bca49ffb"
+        },
         {
           "source_id": "FISRC-312cccaedbeb2478",
           "source_url": "https://news.pedaily.cn/202608/567151.shtml",
@@ -228,7 +306,7 @@
           "quote_hash": "ec3f3255ca1ad3b762f10c8464560a301ec0efedbd9e312f027cac2f0749684b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

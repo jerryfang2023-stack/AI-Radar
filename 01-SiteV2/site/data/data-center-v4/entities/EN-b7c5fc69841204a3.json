@@ -111,33 +111,78 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "许华哲 的来源线索将其与星海图（联合创始人）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "许华哲是清华大学交叉信息研究院助理教授，研究方向包括强化学习、机器人学、计算机视觉和触觉。清华校友总会 2025 年报道记载其本科毕业于清华电子系、获加州大学伯克利分校博士学位并曾在斯坦福从事博士后研究；同一报道介绍其参与星海图早期团队创业。档案不将“参与创办”扩展为未经证实的具体公司职衔。",
+      "current_roles": [
+        {
+          "title": "助理教授",
+          "organization": "清华大学交叉信息研究院",
+          "source_id": "xuhuazhe_tsinghua"
+        },
+        {
+          "title": "实验室研究负责人（个人主页链接指向其实验室；具体头衔未由本院页面注明）",
+          "organization": "清华大学具身智能研究团队",
+          "source_id": "xuhuazhe_tsinghua"
+        }
+      ],
       "career": [
         {
-          "organization": "星海图",
-          "title": "联合创始人",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-2707f48aa6e437b7"
+          "organization": "星海图（XRobot）",
+          "title": "早期机器人创业团队成员（报道表述）",
+          "period": "2023 年起，至少截至 2025 年报道",
+          "description": "清华校友总会报道将许华哲列为星海图团队核心成员，并称其与团队成员于 2023 年开启机器人创业；没有据此推定其公司法定职务或当前在职状态。",
+          "source_id": "xuhuazhe_alumni"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "清华大学电子工程系",
+          "qualification": "本科（清华校友总会报道）",
+          "source_id": "xuhuazhe_alumni"
+        },
+        {
+          "institution": "加州大学伯克利分校",
+          "qualification": "博士（清华校友总会报道）",
+          "source_id": "xuhuazhe_alumni"
+        },
+        {
+          "institution": "斯坦福大学",
+          "qualification": "博士后研究经历（清华校友总会报道）",
+          "source_id": "xuhuazhe_alumni"
+        }
+      ],
+      "experience_summary": "学术研究专注强化学习、机器人学、视觉与触觉；公开资料显示其从清华与伯克利研究经历延伸至机器人创业和具身智能研发。星海图经历仅记录为团队创业参与，具体职务与离职时间未独立核实。",
+      "track_record": [
+        {
+          "description": "清华研究院资料记载其研究涵盖深度强化学习、机器人学、计算机视觉与触觉；研究成果应按团队共同工作理解。",
+          "source_id": "xuhuazhe_tsinghua"
+        },
+        {
+          "description": "清华校友总会报道介绍星海图团队开展机器人研发，但未将具体产品或公司融资单独归因于许华哲。",
+          "source_id": "xuhuazhe_alumni"
+        }
+      ],
+      "coverage_status": "researched",
+      "identity_status": "verified",
+      "coverage_note": "当前学术职务、研究方向由清华大学官方师资页确认；学历与星海图参与创业经历来自清华校友总会人物报道。公司头衔未被现有资料确认。",
       "sources": [
         {
-          "source_id": "FISRC-2707f48aa6e437b7",
-          "source_url": "https://news.pedaily.cn/202602/560956.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "85e4d40faa23c515",
-          "quote": "“创业四人组”的另一位联创是 许华哲 ，他与赵行曾是清华的同事，还是清华大学具身智能实验室负责人。",
-          "quote_hash": "48822b2d8ec78603d0f4a67757ae20edfa227bcd6f325591330de002a9a513fd"
+          "source_id": "xuhuazhe_tsinghua",
+          "source_url": "https://iiis.tsinghua.edu.cn/rydw/qzjs/xuhuazhe.htm",
+          "source_title": "许华哲-清华大学交叉信息研究院",
+          "source_content_hash": "155ae293a43b3451c77b8020c92624ba47edaf4245f6db038bd7644f3fc14436",
+          "quote": "清华大学交叉信息研究院页面列许华哲为助理教授，研究方向包括深度强化学习、机器人学、计算机视觉和计算机触觉。",
+          "quote_hash": "c441a8a731ef82af23b19e074646f7ff553ef0899e6f950289091bd7ae5ff289"
+        },
+        {
+          "source_id": "xuhuazhe_alumni",
+          "source_url": "https://m.thepaper.cn/newsDetail_forward_32629082",
+          "source_title": "清华机器人，许你美好生活！-澎湃新闻（清华校友总会供稿）",
+          "source_content_hash": "502d272d3db45655f407cefdb85970bc399891cf521384055e488e147976ff59",
+          "quote": "清华校友总会报道记载许华哲本科毕业于清华电子系、博士毕业于UC Berkeley，曾在Stanford从事博士后研究，并参与星海图团队创业。",
+          "quote_hash": "15b160cdd0a0096fef9fce922471bcf4084a2b207764df934ea13766e425bb41"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

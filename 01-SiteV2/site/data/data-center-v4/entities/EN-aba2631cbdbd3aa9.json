@@ -111,33 +111,60 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "马帅 的来源线索将其与鹏脑科技（创始人）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "马帅是鹏脑科技总经理。公司访谈称鹏脑科技成立于2024年、隶属创维集团酷开科技，聚焦非侵入式脑机接口及脑健康应用。公开可查资料目前主要支持其在鹏脑科技的管理身份与业务方向，尚未找到可靠的个人教育及完整职业履历。",
+      "current_roles": [
+        {
+          "title": "总经理",
+          "organization": "鹏脑科技",
+          "source_id": "mashuai_36kr"
+        }
+      ],
       "career": [
         {
           "organization": "鹏脑科技",
-          "title": "创始人",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将马帅与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-e263856014e36ffb"
+          "title": "总经理",
+          "period": "2025年公开访谈时在任",
+          "description": "代表公司介绍非侵入式脑机接口、脑健康产品方向及酷开生态关联。未据此推断其任职起始时间。",
+          "source_id": "mashuai_36kr"
+        },
+        {
+          "organization": "创维集团酷开科技",
+          "title": "鹏脑科技所属企业关联",
+          "period": "公司报道记载",
+          "description": "此为公司组织归属关系，不作为马帅个人在创维或酷开任职的证据。",
+          "source_id": "mashuai_36kr"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
-      "sources": [
+      "experience_summary": "截至本次公开资料检索，未发现可核验的教育经历或此前任职；保留为空，不以公司业务报道推断个人背景。",
+      "track_record": [
         {
-          "source_id": "FISRC-e263856014e36ffb",
-          "source_url": "https://news.pedaily.cn/202607/566286.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "09fa647cb896c9db",
-          "quote": "鹏脑科技创始人马帅表示",
-          "quote_hash": "5fed855d80e6f9232cbd1840b4035cc3dc38c93b7afde7ecf97f6252f935aa6c"
+          "description": "在公开访谈中介绍鹏脑科技的非侵入式脑机接口路线、产品场景及公司规划；内容为公司管理层陈述，产品表现未经独立评估。",
+          "source_id": "mashuai_36kr"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "sources": [
+        {
+          "source_id": "mashuai_36kr",
+          "source_url": "https://www.36kr.com/p/3551100808738693",
+          "source_title": "鹏脑科技总经理马帅访谈 - 36氪",
+          "source_content_hash": "292edeb6e9a8e09dfbf6894496b33d3af5bb8144ab44a89de20a81b688bb9278",
+          "quote": "访谈将马帅列为鹏脑科技总经理，并由其介绍公司成立时间、酷开关联及业务方向。",
+          "quote_hash": "2b07cf96181525d2d05f01f34ab066319e5d197542291cfff8a486ddd69c2877"
+        },
+        {
+          "source_id": "mashuai_coocaa",
+          "source_url": "https://www.coocaabci.com/info/media_report/?page=4",
+          "source_title": "酷开官方媒体报道页",
+          "source_content_hash": "091b6373f79eff36efe9bee118477075d798cbbb35fd80ea8130f2e6b9b08f14",
+          "quote": "酷开官方页面报道马帅受聘为上海大学悉商创新创业导师；未提供其教育或完整职业履历。",
+          "quote_hash": "6bb3a648910749280a4e4a4d243d4ae71a76b169ee7c62e1e280c49587c0a34a"
+        }
+      ],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "已核验公开职务、公司业务及其公开活动线索；目前没有可靠公开教育和完整履历资料，相关字段如实留空。",
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

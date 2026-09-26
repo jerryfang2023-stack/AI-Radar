@@ -128,33 +128,59 @@
       }
     },
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "Eugene Cheah 的来源线索将其与Featherless.ai（CEO兼联合创始人）关联。来源日期：2026-06-15；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "Eugene Cheah 是 Featherless.ai 联合创始人兼CEO，参与RWKV开源项目；AI Engineer人物资料记载他2016年与Shi Ling Tai共同创办UI-licious并任CTO。公司融资、产品规模和研究工作均按公开采访/会议资料口径描述。",
+      "current_roles": [
+        {
+          "title": "联合创始人兼CEO",
+          "organization": "Featherless.ai",
+          "source_id": "eugene_ai_eng"
+        }
+      ],
       "career": [
         {
+          "organization": "UI-licious",
+          "title": "联合创始人兼CTO",
+          "period": "2016年共同创立；具体离任时间未披露",
+          "description": "AI Engineer人物资料称其与Shi Ling Tai共同创办新加坡自动化网站测试公司。",
+          "source_id": "eugene_ai_eng"
+        },
+        {
+          "organization": "RWKV开源项目",
+          "title": "共同负责人及研究参与者",
+          "period": "Featherless.ai之前及其后；具体年份未披露",
+          "description": "参与RWKV开源项目，并合作撰写高效序列模型相关研究。",
+          "source_id": "eugene_ai_eng"
+        },
+        {
           "organization": "Featherless.ai",
-          "title": "CEO兼联合创始人",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将Eugene Cheah与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-2abdb8003508dda6"
+          "title": "联合创始人兼CEO",
+          "period": "公司创立于2024年；2026年公开资料在任",
+          "description": "提供开源模型推理托管服务；AI Engineer资料记录其2025年种子轮及2026年A轮信息。",
+          "source_id": "eugene_ai_eng"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
-      "sources": [
+      "experience_summary": "经历从自动化软件测试创业延伸至RWKV开源模型研究及开源模型推理基础设施创业；目前采用的来源未披露其学历。",
+      "track_record": [
         {
-          "source_id": "FISRC-2abdb8003508dda6",
-          "source_url": "https://tech.eu/2026/04/30/featherlessai-secures-20m-to-expand-serverless-platform-for-open-source-ai/",
-          "source_title": "融资披露来源",
-          "source_content_hash": "7b38f6d68d7f8881",
-          "quote": "Eugene Cheah, CEO and co-founder of Featherless.ai",
-          "quote_hash": "2c10f523a1693718662a5550754d3d27e70c83decab1d0796b543ecd3e7c83de"
+          "description": "AI Engineer人物页收录其共同创办UI-licious、RWKV研究工作及Featherless融资与产品发展情况；轮次和模型数量按该资料的报道时点理解。",
+          "source_id": "eugene_ai_eng"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "sources": [
+        {
+          "source_id": "eugene_ai_eng",
+          "source_url": "https://ai.engineer/speakers/eugene-cheah",
+          "source_title": "AI Engineer：Eugene Cheah 人物与项目资料",
+          "source_content_hash": "1e2e387a0785d18d5525a8e5cbd01663d2e5a06a7a07ad639265a350af718922",
+          "quote": "AI Engineer资料称Eugene Cheah共同创办UI-licious并任CTO，后参与RWKV并共同创办Featherless.ai担任CEO。",
+          "quote_hash": "972e2941ffe1ad863e9ecdefe58dc0a5c6a6eaf2a4d8cacf080ae4de211ab2a4"
+        }
+      ],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "基于会议组织方人物与项目资料；未补入未经核验的学历和传记细节。",
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

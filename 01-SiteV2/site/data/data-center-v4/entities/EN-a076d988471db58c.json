@@ -111,33 +111,63 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "李孟轩 的来源线索将其与密瓜智能（联合创始人）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "李孟轩是密瓜智能联合创始人兼 CTO，长期从事云原生与异构算力虚拟化。他毕业于清华大学计算机系，曾负责第四范式异构算力技术，并参与 HAMi 开源项目早期开发和维护；密瓜智能官网与技术大会讲者资料一致记录了这些经历。",
+      "current_roles": [
+        {
+          "title": "联合创始人兼 CTO",
+          "organization": "密瓜智能",
+          "source_id": "limengxuan_dynamia"
+        },
+        {
+          "title": "HAMi Maintainer / 维护者",
+          "organization": "HAMi 开源项目",
+          "source_id": "limengxuan_dynamia"
+        }
+      ],
       "career": [
         {
-          "organization": "密瓜智能",
-          "title": "联合创始人",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-04376bee59ee7c19"
+          "organization": "第四范式",
+          "title": "异构算力技术负责人",
+          "period": "任职时间未披露",
+          "description": "密瓜智能官网称其此前负责第四范式异构算力技术。",
+          "source_id": "limengxuan_dynamia"
+        },
+        {
+          "organization": "HAMi 开源项目",
+          "title": "早期共同开发者、项目 Maintainer",
+          "period": "起止时间未披露",
+          "description": "参与云原生 GPU 共享与异构算力相关开源工作。",
+          "source_id": "limengxuan_dynamia"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "清华大学计算机系",
+          "qualification": "毕业于计算机系；官网未披露具体学位层级",
+          "source_id": "limengxuan_dynamia"
+        }
+      ],
+      "experience_summary": "公开履历支持其清华计算机系背景、第四范式异构算力技术负责人经历及 HAMi 开源贡献。任职起止年份、专利列表与更早经历尚无完整一手时间线。",
+      "track_record": [
+        {
+          "description": "作为 HAMi 早期共同开发者与维护者参与开源异构算力项目；项目成果不归因于个人单独完成。",
+          "source_id": "limengxuan_dynamia"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-04376bee59ee7c19",
-          "source_url": "https://news.pedaily.cn/202601/559551.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "0da15a2de9a64982",
-          "quote": "创始人张潇和联合创始人李孟轩是 HAMi 的作者",
-          "quote_hash": "d90abb4b9552fe6f79506e825eb5592f0efdaa9ac6cd49bd0742a7c6d5b92df8"
+          "source_id": "limengxuan_dynamia",
+          "source_url": "https://dynamia.ai/zh/company",
+          "source_title": "公司简介与创始团队 - 密瓜智能",
+          "source_content_hash": "1c35e0d39448dad3ede9471e7c296e5ae3e0769859e1342d954bcd4fa76dd6aa",
+          "quote": "密瓜智能官网称李孟轩毕业于清华大学计算机系，现任联合创始人兼 CTO，曾任第四范式异构算力技术负责人，并为 HAMi 早期共同开源者及 Maintainer。",
+          "quote_hash": "3175e410711c1908170c4e89339ae815dcaef7a2646307487615bf492cf0025d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "以密瓜智能官网为主要依据，学历学位层级和职业任期只写入来源明确披露的部分。",
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

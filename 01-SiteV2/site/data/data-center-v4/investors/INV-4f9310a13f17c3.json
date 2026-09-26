@@ -247,12 +247,26 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Altimeter Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Altimeter Capital Management, LP 是以科技领域为重点的投资机构。其官网称机构由创业者创立，管理投资公开与私募市场的多类基金，并登记为 SEC 投资顾问。官网提供硅谷与波士顿办公地址及投资者关系邮箱；融资条目未必能确认具体基金。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资领域",
+          "value": "科技领域；官网称其基金参与公开市场及私人市场投资。",
+          "source_id": "altimeter_home"
+        },
+        {
+          "field": "regulatory_status",
+          "label": "登记信息",
+          "value": "Altimeter Capital Management, LP 官网称其为 SEC 注册投资顾问。",
+          "source_id": "altimeter_home"
+        }
+      ],
       "milestones": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "官网将 Altimeter 描述为支持企业各成长阶段的长期合作伙伴。其管理多类基金，故具体一笔融资所涉基金需依据交易披露单独确认。",
       "track_record": [
         {
           "description": "融资来源记录：Thrive Holdings · 轮次未披露 · 2026-08-12 · 本轮参投 · $2B。这是本库收录的披露案例，不代表完整投资组合。",
@@ -267,8 +281,59 @@
           "source_id": "FISRC-0a52165fbfc8575b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Altimeter",
+          "url": "https://www.altimeter.com/",
+          "source_id": "altimeter_home"
+        },
+        {
+          "kind": "address",
+          "label": "Silicon Valley office",
+          "value": "2550 Sand Hill Road, Suite 150, Menlo Park, CA 94025",
+          "url": "https://www.altimeter.com/",
+          "source_id": "altimeter_home"
+        },
+        {
+          "kind": "address",
+          "label": "Boston office",
+          "value": "One International Place, Suite 4610, Boston, MA 02110",
+          "url": "https://www.altimeter.com/",
+          "source_id": "altimeter_home"
+        },
+        {
+          "kind": "phone",
+          "label": "官网联系电话",
+          "value": "+1 617-310-6180",
+          "url": "https://www.altimeter.com/",
+          "source_id": "altimeter_home"
+        },
+        {
+          "kind": "email",
+          "label": "投资者关系",
+          "value": "IR@altimeter.com",
+          "url": "https://www.altimeter.com/",
+          "source_id": "altimeter_home"
+        },
+        {
+          "kind": "email",
+          "label": "媒体联系",
+          "value": "press@altimeter.com",
+          "url": "https://www.altimeter.com/",
+          "source_id": "altimeter_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "altimeter_home",
+          "source_url": "https://www.altimeter.com/",
+          "source_title": "Home — Altimeter",
+          "source_content_hash": "f724d7e0ece2ade9141f0ca1713fa0292a6ec60bd4228f6edcf4634babc8c71f",
+          "quote": "Altimeter is a technology-focused investment firm built by a founder for founders. Altimeter manages a variety of funds that invest in the public and private markets. Altimeter Capital Management, LP (“Altimeter”) is an SEC-registered investment adviser.",
+          "quote_hash": "3bd21e1482b4efdce2a79e9ef6819cdaa0a1755d71fe3cd67710cb21b9adbc8c"
+        },
         {
           "source_id": "FISRC-0afb458e7b0878f0",
           "source_url": "https://techcrunch.com/2026/08/12/openai-backed-thrive-holdings-raises-2b-to-bring-ai-to-the-enterprise/",
@@ -294,7 +359,10 @@
           "quote_hash": "14665b57fd112e3e955a3420968f8a312cf7bd39cf3e20d11b1cfae32c05027f"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

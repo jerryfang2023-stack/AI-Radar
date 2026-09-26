@@ -111,33 +111,58 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "乔忠良 的来源线索将其与小雨智造（创始人兼CEO）关联。来源日期：2026-08-03；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "乔忠良是小雨智造创始人兼 CEO，毕业于北京航空航天大学计算机科学与技术专业并获硕士学位。公司官网介绍，他2010年作为首位应届生加入小米，曾任 MIUI 研发总经理，参与智能相册、安全隐私体系及小米生态操作系统建设；2023年创办小雨智造，投入工业具身智能与通用机器人平台。官网还列有其获得的行业奖项和内部表彰。",
+      "current_roles": [
+        {
+          "title": "创始人、CEO",
+          "organization": "小雨智造",
+          "source_id": "xiaoyu_team_official"
+        }
+      ],
       "career": [
         {
+          "organization": "小米集团",
+          "title": "MIUI研发总经理；早期软件与系统研发负责人",
+          "period": "2010年至2023年前（结束年份未披露）",
+          "description": "官网称其作为首位应届生加入小米，参与MIUI、智能相册、安全隐私体系及AIoT操作系统相关研发。",
+          "source_id": "xiaoyu_team_official"
+        },
+        {
           "organization": "小雨智造",
-          "title": "创始人兼CEO",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将乔忠良与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-5ddafcf5b1c1b90b"
+          "title": "创始人、CEO",
+          "period": "2023年起",
+          "description": "创办工业具身智能与通用机器人公司，提出“一脑多形”技术方向。",
+          "source_id": "xiaoyu_team_official"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "北京航空航天大学",
+          "qualification": "计算机科学与技术专业硕士",
+          "source_id": "xiaoyu_team_official"
+        }
+      ],
+      "experience_summary": "拥有AI与操作系统研发、智能终端及机器人创业经历；官网可核验小米任职及创业时间，但各项早期产品成果以公司介绍为依据，不代表独立审计。",
+      "track_record": [
+        {
+          "description": "小米任职期间参与主导智能防骚扰系统、智能相册、安全隐私体系和AIoT操作系统研发；公司官网所述团队研发贡献不视为个人独立完成。",
+          "source_id": "xiaoyu_team_official"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-5ddafcf5b1c1b90b",
-          "source_url": "https://news.pedaily.cn/202507/552068.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "220c0abd4893cc527b064c644660014ab16dbfef01e622b1624bf65918306f22",
-          "quote": "小雨智造创始人兼 CEO 乔忠良是小米的初创成员之一，曾经是 MIUI 研发负责人",
-          "quote_hash": "85d49a163604f2542fa7abb93eadad71a405c3e0ba4de796076c3f5b1e16615d"
+          "source_id": "xiaoyu_team_official",
+          "source_url": "https://www.xiaoyubot.com/zh/about",
+          "source_title": "关于我们 - 小雨智造官方网站",
+          "source_content_hash": "9a81f1adf1f7caba0c9063aef753c53694a3fd849a4efe103454fa9825bb0793",
+          "quote": "小雨智造官网列明乔忠良和王文林的学历、当前职务及此前在小米、微软、雅虎的工作经历。",
+          "quote_hash": "49f0c84d8a9122c9c6548311aefc5ad0be77014d1eac4896ad4637bdd21d4ad5"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "学历、职务和时间线依据本人现任公司官网；荣誉和技术成果采用公司披露口径。",
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

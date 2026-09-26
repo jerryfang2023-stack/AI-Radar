@@ -132,19 +132,172 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "包河创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "“包河创投”对应合肥市包河区领航创业投资基金合伙企业（有限合伙），是合肥包河区的创业投资基金。2025 年法律意见书披露该基金认缴出资总额 5 亿元，区属合肥市包河区高质量发展基金有限公司持有 99% 有限合伙份额，合肥包河创新投资私募基金管理有限公司为普通合伙人及管理人。管理人协会公示截至 2026-03-03 显示 21 名全职员工、管理规模 10–20 亿元，并公开办公地址。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "法定名称",
+          "value": "合肥市包河区领航创业投资基金合伙企业（有限合伙）；投资披露中简称“包河创投”。",
+          "source_id": "baohe_identity_2025"
+        },
+        {
+          "field": "legal_form_and_scale",
+          "label": "企业类型与认缴规模",
+          "value": "有限合伙企业；出资总额 50,000 万元（5 亿元）。",
+          "source_id": "baohe_capital_2025"
+        },
+        {
+          "field": "partnership_structure",
+          "label": "出资结构",
+          "value": [
+            "普通合伙人/执行事务合伙人：合肥包河创新投资私募基金管理有限公司，出资 500 万元、占 1%。",
+            "有限合伙人：合肥市包河区高质量发展基金有限公司，出资 49,500 万元、占 99%。"
+          ],
+          "source_id": "baohe_structure_2025"
+        },
+        {
+          "field": "established_date",
+          "label": "设立与备案",
+          "value": "2023-10-10 成立；2023-11-06 完成私募基金备案，基金编号 SACE76。",
+          "source_id": "baohe_address_2025"
+        },
+        {
+          "field": "manager_registration",
+          "label": "基金管理人登记",
+          "value": "合肥包河创新投资私募基金管理有限公司；中国证券投资基金业协会管理人登记编号 P1074369，成立于 2021-03-03，登记于 2023-02-24。",
+          "source_id": "baohe_manager_id_amac"
+        },
+        {
+          "field": "manager_capacity",
+          "label": "管理人公开规模与团队（更新至 2026-03-03）",
+          "value": "协会公示全职员工 21 人、基金从业资格人员 20 人，管理规模区间 10–20 亿元。此为管理人整体数据，不是本基金规模。",
+          "source_id": "baohe_manager_stats_amac"
+        },
+        {
+          "field": "registered_address",
+          "label": "基金登记地址",
+          "value": "安徽省合肥市包河区黑龙江路 8 号滨湖金融小镇 BH280。",
+          "source_id": "baohe_address_2025"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2023-10-10",
+          "description": "基金设立。",
+          "source_id": "baohe_address_2025"
+        },
+        {
+          "date": "2023-11-06",
+          "description": "基金在中国证券投资基金业协会办理备案，基金编号 SACE76。",
+          "source_id": "baohe_filing_2025"
+        }
+      ],
       "track_record": [
+        {
+          "description": "上市公司交易公告披露：2025 年 1 月，简称“包河创投”的该基金签署对深圳新声半导体有限公司增资协议，投资 2,000 万元。",
+          "source_id": "baohe_newvoice_2025"
+        },
         {
           "description": "融资来源记录：弋途科技 · Pre-B轮 · 2026-09-21 · A轮首关跟投 · 近亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-08be95e2b95904af"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "address",
+          "label": "基金登记地址（2025 年法律意见书披露）",
+          "value": "安徽省合肥市包河区黑龙江路 8 号滨湖金融小镇 BH280",
+          "source_id": "baohe_address_2025"
+        },
+        {
+          "kind": "address",
+          "label": "基金管理人公开办公地址（协会公示；办公地址，不是项目投递渠道）",
+          "value": "安徽省合肥市包河区龙川路 99 号中国视界 A1 栋 3 楼",
+          "source_id": "baohe_manager_address_amac"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "基金管理人、执行事务合伙人",
+          "organization": "合肥包河创新投资私募基金管理有限公司",
+          "source_id": "baohe_structure_2025"
+        }
+      ],
+      "coverage_note": "“包河创投”这一简称由 2025 年上市公司交易公告直接定义为本档案法定主体的简称。档案区分基金出资结构与管理人整体经营数据；协会公示地址是管理人办公地址，没有查到经核实的公开电话、邮箱或融资申请入口。",
       "sources": [
+        {
+          "source_id": "baohe_identity_2025",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2025-05-27/1223684761.PDF",
+          "source_title": "安徽天禾律师事务所关于富煌钢构发行股份及支付现金购买资产并募集配套资金暨关联交易的法律意见书",
+          "source_content_hash": "2262975ac098ba596fd12555946cc6e109e73de2cb3357a313fe0438552b826e",
+          "quote": "合肥市包河区领航创业投资基金合伙企业（有限合伙）",
+          "quote_hash": "0d3f05c0dfa448456b4139a2d633f613692649f238555a06ceee94990511f16d"
+        },
+        {
+          "source_id": "baohe_capital_2025",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2025-05-27/1223684761.PDF",
+          "source_title": "安徽天禾律师事务所关于富煌钢构发行股份及支付现金购买资产并募集配套资金暨关联交易的法律意见书",
+          "source_content_hash": "2262975ac098ba596fd12555946cc6e109e73de2cb3357a313fe0438552b826e",
+          "quote": "企业类型 有限合伙企业 出资总额 50,000万元",
+          "quote_hash": "ac1bafc25bed0622b8fc2a57ad07865f9239ab6f24aa6cc3e13be76d7eed61a9"
+        },
+        {
+          "source_id": "baohe_structure_2025",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2025-05-27/1223684761.PDF",
+          "source_title": "安徽天禾律师事务所关于富煌钢构发行股份及支付现金购买资产并募集配套资金暨关联交易的法律意见书",
+          "source_content_hash": "2262975ac098ba596fd12555946cc6e109e73de2cb3357a313fe0438552b826e",
+          "quote": "执行事务合伙人 合肥包河创新投资私募基金管理有限公司 500 1 普通合伙人 合肥市包河区高质量发展基金有限公司 49,500 99 有限合伙人",
+          "quote_hash": "a83f7dca249d30ed2502c15bbe8fbca6df950a300532af31bf948fce05a3f451"
+        },
+        {
+          "source_id": "baohe_address_2025",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2025-05-27/1223684761.PDF",
+          "source_title": "安徽天禾律师事务所关于富煌钢构发行股份及支付现金购买资产并募集配套资金暨关联交易的法律意见书",
+          "source_content_hash": "2262975ac098ba596fd12555946cc6e109e73de2cb3357a313fe0438552b826e",
+          "quote": "注册地址 安徽省合肥市包河区黑龙江路8号滨湖金融小镇BH280 成立时间 2023年10月10日",
+          "quote_hash": "429cfdb2c7e9eced492687d0e6c3133a23aed3ea0b170a7596bd3b753e44080a"
+        },
+        {
+          "source_id": "baohe_filing_2025",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2025-05-27/1223684761.PDF",
+          "source_title": "安徽天禾律师事务所关于富煌钢构发行股份及支付现金购买资产并募集配套资金暨关联交易的法律意见书",
+          "source_content_hash": "2262975ac098ba596fd12555946cc6e109e73de2cb3357a313fe0438552b826e",
+          "quote": "已于2023年11月6日在中国证券投资基金业协会办理了私募基金备案（基金编号：SACE76）",
+          "quote_hash": "a137a0302433993ed08f1a584700d44832512ec9a4e4331b2c4c8777b2dcaa33"
+        },
+        {
+          "source_id": "baohe_newvoice_2025",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2025-08-11/1224442946.PDF",
+          "source_title": "广东世运电路科技股份有限公司关于拟投资深圳新声半导体有限公司暨关联交易的公告",
+          "source_content_hash": "fc072d7feb2c6d353929f6a87fbc214d8186aff8037664fc53eaa4554f2f3b67",
+          "quote": "2025年1月26日，新声半导体及其他相关方与合肥市包河区领航创业投资基金合伙企业（有限合伙）（下称“包河创投”）签署了《深圳新声半导体有限公司增资协议》；包河创投向新声半导体投资2,000万元",
+          "quote_hash": "ce05d09b2866a0c6e0f453bf90cfd0a1632eed1a9117d143f927c4fdc7789c45"
+        },
+        {
+          "source_id": "baohe_manager_id_amac",
+          "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/manager/2103191045105366.html",
+          "source_title": "私募基金管理人公示 - 中国证券投资基金业协会",
+          "source_content_hash": "0edcd1b2a216a1d76f07f1a1d972945d5194e2708374237d4794e1bd0c108574",
+          "quote": "基金管理人全称(中文) 合肥包河创新投资私募基金管理有限公司 登记编号 P1074369 登记时间 2023-02-24 成立时间 2021-03-03",
+          "quote_hash": "8142872d789ff946972d36e9c2c43a110f914ed53564f43762d2d3ab90695b7c"
+        },
+        {
+          "source_id": "baohe_manager_stats_amac",
+          "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/manager/2103191045105366.html",
+          "source_title": "私募基金管理人公示 - 中国证券投资基金业协会",
+          "source_content_hash": "0edcd1b2a216a1d76f07f1a1d972945d5194e2708374237d4794e1bd0c108574",
+          "quote": "全职员工人数 21 取得基金从业人数 20 管理规模区间 10-20亿元 机构信息最后更新时间 2026-03-03",
+          "quote_hash": "86d3466f0cae148c6772552ce666b85079dbf2bc8870b9c4bbb5659fe50cbd7b"
+        },
+        {
+          "source_id": "baohe_manager_address_amac",
+          "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/manager/2103191045105366.html",
+          "source_title": "私募基金管理人公示 - 中国证券投资基金业协会",
+          "source_content_hash": "0edcd1b2a216a1d76f07f1a1d972945d5194e2708374237d4794e1bd0c108574",
+          "quote": "办公地址 安徽省合肥市包河区龙川路99号中国视界A1栋3楼",
+          "quote_hash": "8cd261474d55ed8c89885551a49aa434fad0ff43c22234655012e2d558c1202d"
+        },
         {
           "source_id": "FISRC-08be95e2b95904af",
           "source_url": "https://www.lejucaijing.com/news-7507630694257588011.html",
@@ -154,7 +307,7 @@
           "quote_hash": "5cac0e8f48412384b8ef672778833eb6e02ef4bec657435f2faa9918f597104e"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

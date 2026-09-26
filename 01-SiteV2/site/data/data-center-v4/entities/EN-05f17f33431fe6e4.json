@@ -121,33 +121,58 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "孙舶寒 的来源线索将其与知跃空间智能（联合创始人）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "孙舶寒是知跃空间智能联合创始人，关注类脑智能与机器人运动控制。媒体报道记载其本科就读北京大学元培实验班、后在哥伦比亚大学攻读机械工程，并曾在小米参与早期机器狗算法研发；相关履历尚缺本人或校方主页交叉核验。",
+      "current_roles": [
+        {
+          "title": "联合创始人",
+          "organization": "知跃空间智能",
+          "source_id": "sunbohan_sohu"
+        }
+      ],
       "career": [
+        {
+          "organization": "小米",
+          "title": "机器狗算法研发相关工作（媒体报道）",
+          "period": "具体任职时间未披露",
+          "description": "媒体报道将其与小米早期机器狗算法研发关联，缺少雇主或本人履历页面交叉核验。",
+          "source_id": "sunbohan_sohu"
+        },
         {
           "organization": "知跃空间智能",
           "title": "联合创始人",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-a95bc04f597cc922"
+          "period": "2024年公司成立后",
+          "description": "参与类脑智能机器人技术创业。",
+          "source_id": "sunbohan_sohu"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
+      "education": [
+        {
+          "institution": "北京大学元培学院",
+          "qualification": "本科（专业及毕业年份未披露）",
+          "source_id": "sunbohan_sohu"
+        },
+        {
+          "institution": "哥伦比亚大学",
+          "qualification": "机械工程学习经历；学位及毕业年份未披露",
+          "source_id": "sunbohan_sohu"
+        }
+      ],
+      "experience_summary": "公开报道描述其具有机器人算法研发和运动控制经验；学历与小米任职信息来自媒体人物报道，尚无一手履历材料交叉核验。",
       "track_record": [],
       "sources": [
         {
-          "source_id": "FISRC-a95bc04f597cc922",
-          "source_url": "https://www.xhby.net/content/s69de2be0e4b0bea6a5ad2846.html",
-          "source_title": "融资披露来源",
-          "source_content_hash": "b6a8e7d8576cb1e193fa577ace00c94ce89d17f74767d9b3d53b5de2ba57a840",
-          "quote": "创始人钱琳瑞和联合创始人孙舶寒，既是哥伦比亚大学的校友，也同为北大毕业生",
-          "quote_hash": "25fea7686509d94ac33b7aeaacb6d26a2d400c9e60356376bd880eec3c9d08af"
+          "source_id": "sunbohan_sohu",
+          "source_url": "https://m.sohu.com/a/1009525623_121455647",
+          "source_title": "知跃空间智能创始团队报道 - 搜狐",
+          "source_content_hash": "2e71a318abbabde7d9e80b35695c54a6b6038866e651ae47c101aadf1bc2bf3c",
+          "quote": "报道介绍孙舶寒的北大、哥伦比亚大学学习经历及其在小米参与机器人算法研发。",
+          "quote_hash": "608b1235cfc5ffa667f087e498d13ff3c579af20d0683203c45eb9aebba63077"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "当前公开履历来自媒体采访报道，学校、雇主或本人主页尚未交叉核验；未公开的信息留空。",
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

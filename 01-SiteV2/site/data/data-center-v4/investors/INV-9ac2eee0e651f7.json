@@ -178,14 +178,61 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "无锡创投集团 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "无锡市创新投资集团有限公司（锡创投）是无锡市属国有创投平台，覆盖种子、天使、创业投资、股权、并购和S基金投资，并通过全资、控股及混合所有制管理机构构建基金体系。公司官方与无锡市国资委资料称其聚焦集成电路、物联网、先进制造、绿色低碳，并布局人工智能、人形机器人和低空经济。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构性质",
+          "value": "市属国有创投机构",
+          "source_id": "wuxicapital_home"
+        },
+        {
+          "field": "investment_stages",
+          "label": "投资阶段",
+          "value": [
+            "种子",
+            "天使",
+            "创业投资",
+            "成长股权",
+            "并购",
+            "S基金"
+          ],
+          "source_id": "wuxicapital_home"
+        },
+        {
+          "field": "subsidiaries",
+          "label": "全资或控股管理机构（官网列示）",
+          "value": [
+            "金投资本",
+            "国联产投",
+            "国联资本",
+            "华莱坞私募",
+            "无锡战新",
+            "一村资本"
+          ],
+          "source_id": "wuxicapital_home"
+        },
+        {
+          "field": "sectors",
+          "label": "重点领域",
+          "value": [
+            "集成电路",
+            "物联网",
+            "先进制造",
+            "绿色低碳",
+            "人工智能",
+            "人形机器人",
+            "低空经济"
+          ],
+          "source_id": "wuxicapital_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "无锡市国资委2025年披露集团累计发起产业基金49支、合计规模近170亿元，投资项目500余个，投资金额近百亿元，45家被投企业实现IPO；属于截至该报道时点的累计披露。",
+          "source_id": "wuxi_sasac_2025"
+        },
         {
           "description": "融资来源记录：星海图 · B+轮 · 2026-04-02 · 历史轮次投资方 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7a614400d44a7041"
@@ -195,8 +242,46 @@
           "source_id": "FISRC-2707f48aa6e437b7"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "锡创投",
+          "url": "https://www.wuxicapital.com.cn/",
+          "source_id": "wuxicapital_home"
+        },
+        {
+          "kind": "address",
+          "label": "无锡办公地址（官网）",
+          "value": "江苏省无锡市滨湖区金融一街10号",
+          "url": "https://www.wuxicapital.com.cn/",
+          "source_id": "wuxicapital_home"
+        },
+        {
+          "kind": "address",
+          "label": "上海办公地址（官网）",
+          "value": "上海市虹口区杨树浦路188弄2号楼A栋7-8层",
+          "url": "https://www.wuxicapital.com.cn/",
+          "source_id": "wuxicapital_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "wuxicapital_home",
+          "source_url": "https://www.wuxicapital.com.cn/",
+          "source_title": "锡创投 - 无锡市创新投资集团有限公司",
+          "source_content_hash": "eea4964cdb702c9b417eb8e6e97f53aa78a823f78874f0fc624a45af42f0a7f4",
+          "quote": "锡创投官网称无锡市创新投资集团有限公司为覆盖种子、天使、创业投资、股权、并购和S基金的国有创投机构，列示全资或控股管理机构及北京、上海、深圳、新加坡办公布局，并公布无锡和上海办公地址。",
+          "quote_hash": "b9fcbee2856e674c59e612506124aef076b59ec98551e19b91e0e4a73fd8e40e"
+        },
+        {
+          "source_id": "wuxi_sasac_2025",
+          "source_url": "https://gzw.wuxi.gov.cn/doc/2025/09/29/4659430.shtml",
+          "source_title": "创投集团“基金+直投”双轮驱动深化产融协同 - 无锡市国资委",
+          "source_content_hash": "23c04e96f36caae0b110e0c8a457726f0fd6404caf736cf0b6d5ed7e3bf23d89",
+          "quote": "无锡市国资委2025年报道介绍创投集团聚焦集成电路、物联网、先进制造、绿色低碳及AI、人形机器人、低空经济，并披露累计发起产业基金49支、基金规模近170亿元、投资项目500余个、45家被投企业IPO。",
+          "quote_hash": "60e21e789cf4fdb3de966adde3c6b5f777889280b876b60223c11c30a4e9c1bf"
+        },
         {
           "source_id": "FISRC-7a614400d44a7041",
           "source_url": "https://news.pedaily.cn/202604/562366.shtml",
@@ -214,7 +299,11 @@
           "quote_hash": "e5444bec673d96fac26adbeaf60ee6448ecf4736d55fe8154e2ddcfef313da89"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构结构和办公地址来自锡创投官网；基金及投资累计数据来自无锡市国资委2025年报道，均按官方披露时点表述。名称“无锡创投集团”按官网简称映射至无锡市创新投资集团有限公司。",
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization"
     },
     "translations": {
       "zh-CN": {

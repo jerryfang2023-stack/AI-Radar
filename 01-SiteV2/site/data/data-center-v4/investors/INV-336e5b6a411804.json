@@ -188,10 +188,44 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Scout Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "依据机构官网核实投资阶段、策略与领域；金额为机构自述。",
+      "summary": "Scout Ventures（Scout VC）是一家聚焦前沿技术的风险投资机构。官网称其主要支持来自军方、情报界及国家研究实验室背景的创业者，重点关注 AI、机器学习、量子计算、机器人、先进材料、安全、航天航空和先进能源。投资阶段、支票额和组合成果按官网自述呈现。",
+      "facts": [
+        {
+          "field": "stage",
+          "label": "官网披露投资阶段",
+          "value": "官网称主要领投种子轮，并预留后续投资资金至 Series B。",
+          "source_id": "scout_ventures_official"
+        },
+        {
+          "field": "check_size",
+          "label": "官网披露支票额",
+          "value": "官网称种子轮支票通常为 200 万至 500 万美元。",
+          "source_id": "scout_ventures_official"
+        },
+        {
+          "field": "sectors",
+          "label": "官网列示领域",
+          "value": [
+            "人工智能",
+            "机器学习",
+            "量子计算",
+            "机器人",
+            "先进材料",
+            "安全",
+            "航天与航空",
+            "先进能源"
+          ],
+          "source_id": "scout_ventures_official"
+        },
+        {
+          "field": "founder_background",
+          "label": "创始团队偏好",
+          "value": "官网称其关注具有军方、情报界或国家研究实验室背景的前沿技术创始人。",
+          "source_id": "scout_ventures_official"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -203,7 +237,15 @@
           "source_id": "FISRC-cb0549fad590a0ab"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Scout Ventures",
+          "url": "https://scoutventures.com/",
+          "source_id": "scout_ventures_official"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-421464cceb98eeb4",
@@ -220,9 +262,17 @@
           "source_content_hash": "ccb1b70704426c90",
           "quote": "It included contributions from AlleyCorp, Scout Ventures, Silicon Catalyst Angels, Schams Ventures, E14 Fund, and Alumni Ventures.",
           "quote_hash": "b99f0a2b7196b3b18420ffc6a155257fccb8adea7be2e2620c1daca7104040e6"
+        },
+        {
+          "source_id": "scout_ventures_official",
+          "source_url": "https://scoutventures.com/",
+          "source_title": "Scout Ventures | Official Website",
+          "source_content_hash": "1c602dcfdd3a1f85b20483c55c8bdffb4c3292e32a25527b2dda7be82cb3ffb1",
+          "quote": "Scout VC is a venture capital firm that invests in frontier technologies built by founders from the military, its intelligence community, and national research labs.",
+          "quote_hash": "fe720de78540786d2286306bc733f984d58e003b1e13727db1a458b46d755f47"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

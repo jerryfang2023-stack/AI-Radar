@@ -189,12 +189,46 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Monolith Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Monolith Capital 是 Monolith Management 旗下的风险投资业务，官网称采用研究驱动的主题投资方式，关注下一代互联网、前沿技术、面向全球市场的 B2B/B2C 创新和智能制造。官网团队页列曹曦、Tim Wang 为创始管理合伙人；管理公司披露的逾 100 亿元管理资产为跨业务口径，并非单一 VC 基金规模。官网投资组合包括月之暗面、Even Realities、沐曦等。",
+      "facts": [
+        {
+          "field": "manager_brand",
+          "label": "机构品牌/管理平台",
+          "value": "Monolith Management（砺思资本）；其官网将风险投资业务称为 Monolith Capital。",
+          "source_id": "monolith_venture_strategy"
+        },
+        {
+          "field": "investment_strategy",
+          "label": "投资策略",
+          "value": "研究驱动的主题投资，关注下一代互联网平台、前沿技术、全球市场 B2B/B2C 服务和智能制造。",
+          "source_id": "monolith_portfolio_strategy"
+        },
+        {
+          "field": "business_lines",
+          "label": "业务线",
+          "value": "官网分别介绍风险投资基金与科技主题公开市场股票基金；公司整体管理规模披露超过人民币 100 亿元，不等同于风险投资基金规模。",
+          "source_id": "monolith_products_aum"
+        },
+        {
+          "field": "founding_partner_cao_xi",
+          "label": "创始管理合伙人：曹曦",
+          "value": "官网称其曾在腾讯工作，2013 年加入红杉资本中国，后任红杉中国基金合伙人并参与设立红杉中国种子基金；公开投资经历包括快手、宇树科技、斗鱼、腾讯音乐、剂泰医药、沐曦等。",
+          "source_id": "monolith_team_cao"
+        },
+        {
+          "field": "founding_partner_tim_wang",
+          "label": "创始管理合伙人：Tim Wang",
+          "value": "官网称其曾任博裕资本合伙人，并为博裕公开市场投资团队创始成员；加入博裕之前曾任高盛分析师。",
+          "source_id": "monolith_team_tim"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官网投资组合列有月之暗面、Even Realities、沐曦、地瓜机器人等科技公司；这是机构自行公布的组合名单，未披露该基金对各项目的轮次与投资额。",
+          "source_id": "monolith_portfolio_companies"
+        },
         {
           "description": "融资来源记录：Even Realities Technology · Pre-B轮 · 2026-07-07 · 早期轮次投资方 · 1.5亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-cea4a6d222abf61e"
@@ -204,8 +238,168 @@
           "source_id": "FISRC-cb79cada9cfde759"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "address",
+          "label": "北京办公室",
+          "value": "北京市朝阳区亮马桥大厦 31 层 3103 室",
+          "source_id": "monolith_contact_beijing"
+        },
+        {
+          "kind": "phone",
+          "label": "北京办公室电话",
+          "value": "+86 010 6506 0536",
+          "source_id": "monolith_contact_beijing"
+        },
+        {
+          "kind": "address",
+          "label": "上海办公室",
+          "value": "上海市静安区静安嘉里中心二座 3104 室",
+          "source_id": "monolith_contact_shanghai"
+        },
+        {
+          "kind": "phone",
+          "label": "上海办公室电话",
+          "value": "+86 010 6506 0536",
+          "source_id": "monolith_contact_shanghai"
+        },
+        {
+          "kind": "address",
+          "label": "香港办公室",
+          "value": "香港花园道 3 号冠君大厦 43 楼 33 室",
+          "source_id": "monolith_contact_hk"
+        },
+        {
+          "kind": "phone",
+          "label": "香港办公室电话",
+          "value": "+852 2158 9120",
+          "source_id": "monolith_contact_hk"
+        },
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "monolithmgt.com",
+          "url": "https://www.monolithmgt.com/en/",
+          "source_id": "monolith_venture_strategy"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "创始人、管理合伙人",
+          "organization": "Monolith Management",
+          "source_id": "monolith_team_cao"
+        },
+        {
+          "title": "创始人、管理合伙人",
+          "organization": "Monolith Management",
+          "source_id": "monolith_team_tim"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Tencent",
+          "title": "任职经历（官网未列职级）",
+          "period": "任职时间未披露",
+          "description": "官网人物简介记载曹曦创立 Monolith 前曾在腾讯工作。",
+          "source_id": "monolith_team_cao"
+        },
+        {
+          "organization": "Sequoia Capital China",
+          "title": "合伙人",
+          "period": "2013 年加入；结束时间未披露",
+          "description": "官网人物简介称曹曦 2013 年加入红杉资本中国，后成为红杉中国基金合伙人，并参与设立红杉中国种子基金。",
+          "source_id": "monolith_team_cao"
+        },
+        {
+          "organization": "Boyu Capital",
+          "title": "合伙人、公开市场投资团队创始成员",
+          "period": "2014 年起为公开市场投资团队成员；结束时间未披露",
+          "description": "官网人物简介记载 Tim Wang 自 2014 年起参与建立博裕公开市场投资业务，并在七年内由分析师晋升为合伙人。",
+          "source_id": "monolith_team_tim"
+        },
+        {
+          "organization": "Goldman Sachs",
+          "title": "分析师",
+          "period": "具体任期未披露",
+          "description": "官网人物简介称 Tim Wang 加入博裕资本之前曾在高盛任分析师。",
+          "source_id": "monolith_team_tim"
+        }
+      ],
+      "experience_summary": "管理团队背景覆盖腾讯、红杉中国、博裕资本和高盛。以上履历来自机构官网团队介绍，未公开具体任职起止日期。",
+      "coverage_note": "官网将 Monolith Capital 作为风险投资业务品牌，同时公司还经营公开市场投资业务；超过人民币 100 亿元为管理平台总规模口径，不应误写成 VC 单支基金规模。办公室电话号码和地址按官网联系页面记录；网站未公开融资项目专用邮箱。",
       "sources": [
+        {
+          "source_id": "monolith_venture_strategy",
+          "source_url": "https://www.monolithmgt.com/en/products/",
+          "source_title": "ABOUT US - Monolith Management",
+          "source_content_hash": "219f8f73e5508054b0bac50e6914e33acb7f67fdc94e1f67dc1eb8af3ee0a4e8",
+          "quote": "Monolith Management's VC fund, specializing in technology-driven commercial innovations",
+          "quote_hash": "cbf91d4a1903caeccc64e951fc61dbc38fdd55a6220cbb809af59dbecb02cf92"
+        },
+        {
+          "source_id": "monolith_products_aum",
+          "source_url": "https://www.monolithmgt.com/en/products/",
+          "source_title": "ABOUT US - Monolith Management",
+          "source_content_hash": "219f8f73e5508054b0bac50e6914e33acb7f67fdc94e1f67dc1eb8af3ee0a4e8",
+          "quote": "As of now, Monolith manages more than RMB 10 billion in assets.",
+          "quote_hash": "716743d0efbc1f94caed7c1508573b6bdec9ac2761d842bc1fbf3261b8f0ce63"
+        },
+        {
+          "source_id": "monolith_portfolio_strategy",
+          "source_url": "https://www.monolithmgt.com/en/portfolio/",
+          "source_title": "PORTFOLIO - Monolith Management",
+          "source_content_hash": "3061db8f82e1c12d64852dde7c012b70138d182ab33325f21a4462fcda038732",
+          "quote": "Next-generation internet platforms, cutting-edge technologies, and B2B and B2C services targeting global markets",
+          "quote_hash": "c6202eaa0540be9aab9d7dbd084297efa84ad86f0e266232c2bb95722e07ee9b"
+        },
+        {
+          "source_id": "monolith_portfolio_companies",
+          "source_url": "https://www.monolithmgt.com/en/portfolio/",
+          "source_title": "PORTFOLIO - Monolith Management",
+          "source_content_hash": "3061db8f82e1c12d64852dde7c012b70138d182ab33325f21a4462fcda038732",
+          "quote": "Moonshot AI",
+          "quote_hash": "cab25613465a0d825a7aa904e9bd80f16c35bb2d87eefa1cdc0472b955ff4a72"
+        },
+        {
+          "source_id": "monolith_team_cao",
+          "source_url": "https://monolithmgt.com/en/team/",
+          "source_title": "TEAM - Monolith Management",
+          "source_content_hash": "ffc9fb04b0d65e31b8fb5dda810c82abf9ba479be7acdc2ff4c40b133ad42b71",
+          "quote": "Prior to founding Monolith Management, Cao Xi had worked at Tencent and joined Sequoia Capital in 2013.",
+          "quote_hash": "d27e8e6e2a73b70207522da0c443fb9e0defe5a1a7747f56699c642f02ac48da"
+        },
+        {
+          "source_id": "monolith_team_tim",
+          "source_url": "https://monolithmgt.com/en/team/",
+          "source_title": "TEAM - Monolith Management",
+          "source_content_hash": "ffc9fb04b0d65e31b8fb5dda810c82abf9ba479be7acdc2ff4c40b133ad42b71",
+          "quote": "Tim Wang had extensive experience in public equity investments in the technology and consumer sectors as a former partner of Boyu Capital.",
+          "quote_hash": "da4a4da481075e441f015bfa62e0dab27906b802f6597e7665e10cb1144de307"
+        },
+        {
+          "source_id": "monolith_contact_beijing",
+          "source_url": "https://www.monolithmgt.com/en/contact/",
+          "source_title": "CONTACT - Monolith Management",
+          "source_content_hash": "abe6c86beb8c4ef95b9514ee1453deabcfe2ddc935ec7ea4d6b5d7abf9b0999e",
+          "quote": "BEIJING Room 3103, 31st Floor, Radiance Building, Chaoyang District, Beijing Tel: +86 010 6506 0536",
+          "quote_hash": "e424abf42cf9f9a80a724528dc5eb747a6ca7310dba85e6a4dc2e28922b3f2b4"
+        },
+        {
+          "source_id": "monolith_contact_shanghai",
+          "source_url": "https://www.monolithmgt.com/en/contact/",
+          "source_title": "CONTACT - Monolith Management",
+          "source_content_hash": "abe6c86beb8c4ef95b9514ee1453deabcfe2ddc935ec7ea4d6b5d7abf9b0999e",
+          "quote": "SHANGHAI Room 3104, Tower 2, Jing'an Kerry Centre, Jing'an, Shanghai Tel: +86 010 6506 0536",
+          "quote_hash": "6b73e40ad2c5c664d7da8b03e8aa58b0fb3c033ba571e4f7912551c94eaa6049"
+        },
+        {
+          "source_id": "monolith_contact_hk",
+          "source_url": "https://www.monolithmgt.com/en/contact/",
+          "source_title": "CONTACT - Monolith Management",
+          "source_content_hash": "abe6c86beb8c4ef95b9514ee1453deabcfe2ddc935ec7ea4d6b5d7abf9b0999e",
+          "quote": "HONGKONG Room 33, 43/F, Champion Tower, 3 Garden Road, Hong Kong Tel: +852 2158 9120",
+          "quote_hash": "47b1195a27d012b1a91ce864b1934c7a0309a92efe4ef1255a65581f87af6b17"
+        },
         {
           "source_id": "FISRC-cea4a6d222abf61e",
           "source_url": "https://techfundingnews.com/even-realities-1b-valuation-camera-free-glasses/",
@@ -223,7 +417,7 @@
           "quote_hash": "e84f2fa665381e39626afa907b0dd5ade66ddb91acd5530ec578ab6b3cf7cdf0"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

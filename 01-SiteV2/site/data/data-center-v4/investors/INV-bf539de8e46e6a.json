@@ -186,14 +186,40 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "GFT Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "GFT Ventures 是一家主要在美国和以色列投资的早期前沿科技风险投资机构。官网列出的兴趣领域包括人工智能与数据科学、自主机器及其他前沿技术；其“数十年投资记录”属于机构自述，不能据此推断基金回报。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期",
+          "source_id": "gft_about"
+        },
+        {
+          "field": "geography",
+          "label": "主要投资地区",
+          "value": [
+            "美国",
+            "以色列"
+          ],
+          "source_id": "gft_about"
+        },
+        {
+          "field": "sectors",
+          "label": "官网列示关注领域",
+          "value": [
+            "人工智能与数据科学",
+            "自主机器",
+            "其他前沿技术"
+          ],
+          "source_id": "gft_areas"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官网称团队投资记录跨越三十年；该陈述为机构自述，未披露统一统计口径或基金回报数据。融资库单笔参投记录仍单独列示，不视作完整组合。",
+          "source_id": "gft_areas"
+        },
         {
           "description": "融资来源记录：Higgsfield · B轮 · 2026-08-17 · 本轮参投 · 4 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7c15ac15bf3d0b1a"
@@ -203,8 +229,32 @@
           "source_id": "FISRC-35d27946fd70aa42"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站与联系入口",
+          "value": "GFT Ventures",
+          "url": "https://www.gft.vc/about",
+          "source_id": "gft_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "gft_about",
+          "source_url": "https://www.gft.vc/about",
+          "source_title": "About | GFT Ventures",
+          "source_content_hash": "66e0c472a9a92bf960c106a422862798f0696f6950310e143e38acb59835721a",
+          "quote": "We are an early stage frontier technology-focused VC firm investing primarily in the US and Israel. We invest in category leading startups developing disruptive technologies that solve the world's hardest problems.",
+          "quote_hash": "1c977bdb3b2910ed9bf046cf15aa0b1c13ad4df8d93a753ba60740efd4b3b06a"
+        },
+        {
+          "source_id": "gft_areas",
+          "source_url": "https://www.gft.vc/about",
+          "source_title": "About | GFT Ventures",
+          "source_content_hash": "66e0c472a9a92bf960c106a422862798f0696f6950310e143e38acb59835721a",
+          "quote": "AI & Data Science; Autonomous Machines; Other Frontier. Track records spanning three decades.",
+          "quote_hash": "7c361a882b834034fce5db4eeee7c499215e27451e99f87cd03606abc9aa65d0"
+        },
         {
           "source_id": "FISRC-7c15ac15bf3d0b1a",
           "source_url": "https://www.finsmes.com/2026/08/higgsfield-raises-400m-in-series-b-funding.html",
@@ -222,7 +272,11 @@
           "quote_hash": "bf92515a204d3a8a4e8299356bae49d254592f97c1e88f55a5e23901502fcd57"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

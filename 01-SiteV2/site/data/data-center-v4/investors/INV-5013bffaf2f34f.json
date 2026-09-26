@@ -153,25 +153,141 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "工业母机产业投资基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "工业母机产业投资基金（有限合伙）是聚焦工业母机全产业链的产业基金，重点支持产业补短板、锻长板和核心技术发展。苏州创新投资集团2026年公司债募集说明书披露基金规模为150亿元、基金管理人为国器元禾私募基金管理有限公司，并披露其出资方结构和备案情况。苏州创新投资集团2023年公司债券年度报告称，截至2023年底基金累计投资14个项目、投资金额17.15亿元；这是历史披露口径，不代表当前实缴规模、净资产或投资回报率。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "基金法律名称",
+          "value": "工业母机产业投资基金（有限合伙）",
+          "source_id": "mother_machine_fund_sse_2026_size"
+        },
+        {
+          "field": "fund_manager",
+          "label": "基金管理人（2026年募集说明书披露）",
+          "value": "国器元禾私募基金管理有限公司",
+          "source_id": "mother_machine_fund_sse_2026_size"
+        },
+        {
+          "field": "fund_size",
+          "label": "2026年募集说明书披露的基金规模",
+          "value": "150.00亿元；该披露为基金规模，不等同于已实缴资本、当前净资产或管理人AUM。",
+          "source_id": "mother_machine_fund_sse_2026_size"
+        },
+        {
+          "field": "lp_structure",
+          "label": "募集说明书披露的认缴出资结构",
+          "value": "国家制造业转型升级基金股份有限公司认缴49.80%；苏州工业园区元禾工业母机股权投资合伙企业（有限合伙）认缴29.20%；江苏省政府投资基金（有限合伙）和苏州创新投资集团有限公司各认缴10.00%；管理人国器元禾私募基金管理有限公司认缴1.00%。",
+          "source_id": "mother_machine_fund_sse_2026_lp_structure"
+        },
+        {
+          "field": "investment_focus",
+          "label": "产业定位",
+          "value": "聚焦工业母机产业补短板、锻长板，以专业化、市场化融资支持核心产品技术发展和企业竞争力提升。",
+          "source_id": "mother_machine_fund_sse_2026_focus"
+        },
+        {
+          "field": "fund_classification",
+          "label": "披露的基金性质与备案信息",
+          "value": "苏州创新投资集团2026年募集说明书称其为经国家发展改革委备案的政府出资产业基金，已完成中国证券投资基金业协会备案，备案类型为股权投资基金，编号SZJ510。",
+          "source_id": "mother_machine_fund_sse_2026_registration"
+        },
+        {
+          "field": "exit_methods",
+          "label": "募集说明书列示的退出方式",
+          "value": "被投项目上市、股权转让或回购。",
+          "source_id": "mother_machine_fund_sse_2026_exit"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2023-12-31",
+          "description": "苏州创新投资集团2023年公司债券年度报告披露，截至年末基金累计投资项目14个、投资金额17.15亿元。",
+          "source_id": "mother_machine_fund_suzhou_2023_activity"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：硕橙科技 · D+轮 · 2026-08-18 · 本轮独家投资 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-a72d8732b819b541"
+          "description": "截至2023年底累计投资14个项目、投资金额17.15亿元，为苏州创新投资集团年度报告披露的历史数据；不能据此推断当前规模或投资回报。",
+          "source_id": "mother_machine_fund_suzhou_2023_activity"
+        },
+        {
+          "description": "同一年度报告将冈田智能（江苏）股份有限公司、北平机床（浙江）股份有限公司和广州市型腔模具制造有限公司列作部分项目示例；这不是完整投资组合。",
+          "source_id": "mother_machine_fund_suzhou_2023_portfolio"
         },
         {
           "description": "融资来源记录：硕橙科技 · D+轮 · 2026-08-18 · 本轮独家投资 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b6356e84b08d6197"
+          "source_id": "FISRC-a72d8732b819b541"
+        }
+      ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "已由上交所披露文件核对基金法律名称、管理人、认缴结构、投资方向及备案信息。150亿元是募集说明书披露的基金规模；2023年投资项目数与金额为历史数据；公开材料列出的企业仅是项目示例。",
+      "current_roles": [
+        {
+          "title": "基金管理人（2026年募集说明书披露）",
+          "organization": "国器元禾私募基金管理有限公司",
+          "source_id": "mother_machine_fund_sse_2026_size"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "mother_machine_fund_sse_2026_size",
+          "source_url": "https://static.sse.com.cn/bond/bridge2/disclosure/announcement/c/202603/022d2a_20260320_09O2.pdf",
+          "source_title": "苏州创新投资集团有限公司2026年面向专业投资者公开发行公司债券募集说明书",
+          "source_content_hash": "3982bcc8d7be3f38a6b94d0c545f702738bdca3ba5eadd9f9efd24c2610681d3",
+          "quote": "截至本募集说明书签署日，工业母机产业投资基金(有限合伙)的合伙协议已签订，基金管理人为国器元禾私募基金管理有限公司。基金规模为150.00亿元，苏创投认缴比例为10.00%。",
+          "quote_hash": "e557cc76ea5fed4552b00a98a515d60a0ceff66496b3592d2999080f42e5d375"
+        },
+        {
+          "source_id": "mother_machine_fund_sse_2026_lp_structure",
+          "source_url": "https://static.sse.com.cn/bond/bridge2/disclosure/announcement/c/202603/022d2a_20260320_09O2.pdf",
+          "source_title": "苏州创新投资集团有限公司2026年面向专业投资者公开发行公司债券募集说明书",
+          "source_content_hash": "3982bcc8d7be3f38a6b94d0c545f702738bdca3ba5eadd9f9efd24c2610681d3",
+          "quote": "单位：万元、% 合伙人名称 认缴金额 出资比例 国器元禾私募基金管理有限公司 15,000.00 1.00 国家制造业转型升级基金股份有限公司 747,000.00 49.80 苏州工业园区元禾工业母机股权投资合伙企业（有限合伙） 438,000.00 29.20 江苏省政府投资基金（有限合伙） 150,000.00 10.00 苏州创新投资集团有限公司 150,000.00 10.00 合计 1,500,000.00 100.00",
+          "quote_hash": "1a71250e29b8ae54d5f41151330a6b656708ca5c8b31af70c92cc9dfc7e57cd1"
+        },
+        {
+          "source_id": "mother_machine_fund_sse_2026_focus",
+          "source_url": "https://static.sse.com.cn/bond/bridge2/disclosure/announcement/c/202603/022d2a_20260320_09O2.pdf",
+          "source_title": "苏州创新投资集团有限公司2026年面向专业投资者公开发行公司债券募集说明书",
+          "source_content_hash": "3982bcc8d7be3f38a6b94d0c545f702738bdca3ba5eadd9f9efd24c2610681d3",
+          "quote": "工业母机产业投资基金(有限合伙)是专注支持工业母机产业高质量发展的产业基金，聚焦国内工业母机产业补短板、锻长板，通过专业化、市场化的融资支持，助力推动核心产品技术发展，提升企业竞争力。",
+          "quote_hash": "124f7de43fa625376897d89a530b95e8988bec17769102560fb7daefabe55738"
+        },
+        {
+          "source_id": "mother_machine_fund_sse_2026_registration",
+          "source_url": "https://static.sse.com.cn/bond/bridge2/disclosure/announcement/c/202603/022d2a_20260320_09O2.pdf",
+          "source_title": "苏州创新投资集团有限公司2026年面向专业投资者公开发行公司债券募集说明书",
+          "source_content_hash": "3982bcc8d7be3f38a6b94d0c545f702738bdca3ba5eadd9f9efd24c2610681d3",
+          "quote": "工业母机产业投资基金(有限合伙)为经过发改委备案的政府出资产业基金，且投资方向符合国家产业方向和公司债支持领域。同时，工业母机产业投资基金(有限合伙)已完成中基协备案，备案类型为股权投资基金，基金编号为SZJ510。",
+          "quote_hash": "5643262fde289e4c1b2f53f9f26ffe4c2c7bea4e8b466368f85de88a2fe21818"
+        },
+        {
+          "source_id": "mother_machine_fund_sse_2026_exit",
+          "source_url": "https://static.sse.com.cn/bond/bridge2/disclosure/announcement/c/202603/022d2a_20260320_09O2.pdf",
+          "source_title": "苏州创新投资集团有限公司2026年面向专业投资者公开发行公司债券募集说明书",
+          "source_content_hash": "3982bcc8d7be3f38a6b94d0c545f702738bdca3ba5eadd9f9efd24c2610681d3",
+          "quote": "该基金主要通过被投项目上市、股权转让或回购实现退出。",
+          "quote_hash": "e65ef62757d18b4bfe056a13527f980cda9cef9da8b2564275c914e822718bf4"
+        },
+        {
+          "source_id": "mother_machine_fund_suzhou_2023_activity",
+          "source_url": "https://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2024-04-30/240568_20240430_ZFC7.pdf",
+          "source_title": "苏州创新投资集团有限公司公司债券年度报告（2023年）",
+          "source_content_hash": "76737ed043993ede14161d039788c8004137136e22f3e9b1417ae7673a0a2938",
+          "quote": "截至 2023 年底，工业母机产业投资基金(有限合伙)累计投资项目 14 个，投资金额 17.15 亿元。",
+          "quote_hash": "5369f27ac85436b125ee7fcb4d477735b550f3b2180b8d88b0477b1be526ee1b"
+        },
+        {
+          "source_id": "mother_machine_fund_suzhou_2023_portfolio",
+          "source_url": "https://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2024-04-30/240568_20240430_ZFC7.pdf",
+          "source_title": "苏州创新投资集团有限公司公司债券年度报告（2023年）",
+          "source_content_hash": "76737ed043993ede14161d039788c8004137136e22f3e9b1417ae7673a0a2938",
+          "quote": "其中部分项目有：1、冈田智能（江苏）股份有限公司；主营业务为高端刀库、精密主轴、数控转台等产品的研发、生产和销售；2、北平机床（浙江）股份有限公司：内技术领先的五轴联动数控床和五轴磨削技术方案提供商；3、广州市型腔模具制造有限公司：主营业务是一体化压铸模具。",
+          "quote_hash": "2d3fe8ccbfe4f7887bacb283fecb7e700bbb394c99e35bc61e9301caeeca3546"
+        },
         {
           "source_id": "FISRC-a72d8732b819b541",
           "source_url": "https://news.pedaily.cn/202608/567800.shtml",
@@ -189,7 +305,7 @@
           "quote_hash": "19168a2f01fd10968c4957ed41d57961458e53294c60f07026150db139cb975b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

@@ -111,33 +111,97 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "莫一林 的来源线索将其与灵御智能（联合创始人兼首席科学家）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "莫一林是清华大学自动化系副教授、博士生导师，也是灵御智能联合创始人及技术负责人。清华官方履历显示其获清华本科和卡内基梅隆大学电子与计算机工程博士，曾在卡内基梅隆及加州理工从事博士后研究、在南洋理工大学任助理教授；研究聚焦信息物理系统和网络化控制。",
+      "current_roles": [
+        {
+          "title": "副教授、博士生导师",
+          "organization": "清华大学自动化系",
+          "source_id": "moyilin_tsinghua"
+        },
+        {
+          "title": "联合创始人、CTO（媒体报道）",
+          "organization": "灵御智能",
+          "source_id": "moyilin_tmtpost"
+        }
+      ],
       "career": [
         {
+          "organization": "卡内基梅隆大学",
+          "title": "博士后",
+          "period": "2013年4月至2013年6月",
+          "description": "清华大学官方履历所列。",
+          "source_id": "moyilin_tsinghua"
+        },
+        {
+          "organization": "加州理工学院",
+          "title": "博士后",
+          "period": "2013年7月至2015年4月",
+          "description": "清华大学官方履历所列，合作导师Richard M. Murray。",
+          "source_id": "moyilin_tsinghua"
+        },
+        {
+          "organization": "南洋理工大学",
+          "title": "电子与电气工程学院助理教授",
+          "period": "2015年5月至2018年7月",
+          "description": "清华大学官方履历所列。",
+          "source_id": "moyilin_tsinghua"
+        },
+        {
+          "organization": "清华大学自动化系",
+          "title": "副教授",
+          "period": "2018年8月至今（清华主页所列）",
+          "description": "校方个人主页当前列其为副教授，研究网络化控制系统等。",
+          "source_id": "moyilin_tsinghua"
+        },
+        {
           "organization": "灵御智能",
-          "title": "联合创始人兼首席科学家",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将莫一林与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-39b53072a5b4622a"
+          "title": "联合创始人、技术合伙人",
+          "period": "公司于2025年2月成立（媒体采访）；具体任职日未单独披露",
+          "description": "公司成立及创业角色来自媒体对莫一林的直接采访；现任公司管理职务由采访描述。",
+          "source_id": "moyilin_tmtpost"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "清华大学自动化系",
+          "qualification": "学士，2003年8月至2007年7月",
+          "source_id": "moyilin_tsinghua"
+        },
+        {
+          "institution": "卡内基梅隆大学电子与计算机工程系",
+          "qualification": "博士，2007年8月至2012年12月（校方页面年份标注首位带问号，准确性按官方页面保留）",
+          "source_id": "moyilin_tsinghua"
+        }
+      ],
+      "experience_summary": "学术研究和产业创业围绕信息物理系统、网络化控制与具身智能机器人；曾与企业合作自动驾驶项目，并将软硬件协同作为机器人创业的重要技术判断。",
+      "track_record": [
+        {
+          "description": "清华大学官方履历列出其主持或参与新加坡科研计划及控制系统研究；媒体采访称其与滴滴、美团、华为开展过自动驾驶相关项目。合作内容和个人贡献边界依来源口径呈现。",
+          "source_id": "moyilin_tsinghua"
+        }
+      ],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "教育与历任教职来自清华大学自动化系官方个人主页；灵御智能创业经历及产业合作来自钛媒体对本人访谈。清华主页博士开始年份原文带问号，保留此不确定标识。",
       "sources": [
         {
-          "source_id": "FISRC-39b53072a5b4622a",
+          "source_id": "moyilin_tsinghua",
+          "source_url": "https://www.au.tsinghua.edu.cn/info/1076/3152.htm",
+          "source_title": "莫一林 - 清华大学自动化系",
+          "source_content_hash": "bebd88e27ee85c9b52d31e321a1c09ace0ba64c949e5fbba71864ed7991552d7",
+          "quote": "清华大学自动化系主页列莫一林为副教授，记载其清华自动化系学士、卡内基梅隆大学电子与计算机工程博士，并列出卡内基梅隆及加州理工博士后、南洋理工助理教授和2018年起清华任职经历。",
+          "quote_hash": "eba3b8a1aea1e388618142b2e309fa21f697d26556c50f93deb32f35f56cd4c2"
+        },
+        {
+          "source_id": "moyilin_tmtpost",
           "source_url": "https://www.tmtpost.com/7981455.html",
-          "source_title": "融资披露来源",
-          "source_content_hash": "3b263250296ef997a78ded0dbbb1117e4b9add3410097b3283a45826d586ab2f",
-          "quote": "灵御智能联合创始人兼首席科学家莫一林告诉智客ZhiKer",
-          "quote_hash": "3f9fe4052749938481d3e9bf4a401d0943fb70faa8ecaab45760e0d7e9e7526c"
+          "source_title": "独家对话灵御智能：百万小时真机数据，喂出具身智能的“云端大脑” - 钛媒体",
+          "source_content_hash": "875149f562b14b62b2f969f7843f2fa4c5d206ebdde8aa8134f1d436ac059972",
+          "quote": "钛媒体采访中莫一林称其于2025年2月成立灵御智能，曾与滴滴、美团、华为合作自动驾驶相关项目，并介绍了其由学术研究转向具身智能创业的原因。",
+          "quote_hash": "09bdc9b7a2dd01de9555bd027b793a8df5e7bfab254c12f63efd5c888658ce49"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

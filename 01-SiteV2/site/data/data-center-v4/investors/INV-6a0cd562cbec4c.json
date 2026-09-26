@@ -284,12 +284,20 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "京东 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "京东集团投资者关系官网将 JD.com 描述为技术驱动型电商和零售基础设施服务商，并提供投资者关系联络方式。融资记录中的“京东”仅按披露名称保留，未据此推断具体出资子公司、基金或法律主体。",
+      "facts": [
+        {
+          "field": "business",
+          "label": "官网公司简介",
+          "value": "技术驱动型电商和零售基础设施服务商；此为京东官网对集团业务的描述。",
+          "source_id": "jd_ir"
+        }
+      ],
       "milestones": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "本条核验集团官网公司简介与投资者关系渠道；集团旗下投资职能及融资记录对应的具体出资主体，须以各轮原始披露为准。",
       "track_record": [
         {
           "description": "融资来源记录：千寻智能 · A+轮 · 2026-06-03 · Pre-A+轮领投 · 15亿元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -304,8 +312,39 @@
           "source_id": "FISRC-fc5617428a7935ed"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "label": "投资者关系",
+          "value": "IR@jd.com",
+          "url": "https://ir.jd.com/zh-hans/investor-overview?items_per_page=25&page=0",
+          "source_id": "jd_contact"
+        },
+        {
+          "kind": "website",
+          "label": "投资者关系官网",
+          "value": "ir.jd.com",
+          "url": "https://ir.jd.com/zh-hans/investor-overview?items_per_page=25&page=0",
+          "source_id": "jd_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "jd_ir",
+          "source_url": "https://ir.jd.com/zh-hans/investor-overview?items_per_page=25&page=0",
+          "source_title": "投资者首页 | JD.com, Inc.",
+          "source_content_hash": "ce162eef75dfce50307b5081d7897c5f1018a2998c0cc82101c43429a8e82256",
+          "quote": "京东（JD.COM）是中国领先的技术驱动型电商和零售基础设施服务商。",
+          "quote_hash": "58c591e0993956e0de5def77cab29e5f5f1b88724590a658f3afccf993bc8757"
+        },
+        {
+          "source_id": "jd_contact",
+          "source_url": "https://ir.jd.com/zh-hans/investor-overview?items_per_page=25&page=0",
+          "source_title": "投资者首页 | JD.com, Inc.",
+          "source_content_hash": "ce162eef75dfce50307b5081d7897c5f1018a2998c0cc82101c43429a8e82256",
+          "quote": "投资者关系: IR@jd.com",
+          "quote_hash": "5df42f7b6eb523d2e75c8ee462db07656ebed1f92e0e2585442754a7152bd342"
+        },
         {
           "source_id": "FISRC-b8b7d456eceee943",
           "source_url": "https://news.pedaily.cn/202606/564786.shtml",
@@ -331,7 +370,10 @@
           "quote_hash": "3bdea4c62b0a51235195c01cc415d8544dc4a1522e00e6a2322589dd3cb7f58b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     },
     "translations": {
       "zh-CN": {

@@ -190,14 +190,99 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "正大集团 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "正大集团（Charoen Pokphand Group，CP Group；泰国亦称卜蜂集团）成立于1921年，是谢易初创办的多元化跨国集团。其核心业务涵盖农牧食品、批发零售、电信电视，并经营金融、地产、制药、机械加工等多个领域。集团官网披露业务覆盖100多个国家和地区，2025年全球销售额为1114亿美元。融资情报库的“正大集团”参投记录仅对应公开披露中的集团名称，尚不能确定具体出资子公司或基金。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "1921年",
+          "source_id": "cpgroup_about_official"
+        },
+        {
+          "field": "founder",
+          "label": "创办人",
+          "value": "谢易初",
+          "source_id": "cpgroup_about_official"
+        },
+        {
+          "field": "aliases",
+          "label": "名称",
+          "value": [
+            "Charoen Pokphand Group",
+            "CP Group",
+            "卜蜂集团"
+          ],
+          "source_id": "cpgroup_about_official"
+        },
+        {
+          "field": "core_businesses",
+          "label": "核心事业",
+          "value": [
+            "农牧食品",
+            "批发零售",
+            "电信电视"
+          ],
+          "source_id": "cpgroup_about_official"
+        },
+        {
+          "field": "other_business_sectors",
+          "label": "其他业务领域",
+          "value": [
+            "金融",
+            "地产",
+            "制药",
+            "机械加工"
+          ],
+          "source_id": "cpgroup_about_official"
+        },
+        {
+          "field": "global_presence",
+          "label": "业务覆盖",
+          "value": "全球100多个国家和地区；官网称在22个国家投资",
+          "source_id": "cpgroup_about_official"
+        },
+        {
+          "field": "global_employees",
+          "label": "全球员工（官网披露）",
+          "value": "超过46万人",
+          "source_id": "cpgroup_about_official"
+        },
+        {
+          "field": "global_sales_2025",
+          "label": "2025年全球销售额（官网披露）",
+          "value": "1114亿美元",
+          "source_id": "cpgroup_about_official"
+        },
+        {
+          "field": "china_enterprises",
+          "label": "中国企业数量（官网披露）",
+          "value": "670家",
+          "source_id": "cpgroup_china_official"
+        },
+        {
+          "field": "china_sales_2025",
+          "label": "2025年中国营业额（官网披露）",
+          "value": "超过2200亿元人民币",
+          "source_id": "cpgroup_china_official"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1921",
+          "description": "谢易初在泰国创办正大集团。",
+          "source_id": "cpgroup_about_official"
+        },
+        {
+          "date": "1979",
+          "description": "正大集团官网记载集团进入中国大陆投资；集团自述其为改革开放后第一家进入中国大陆的外资企业。",
+          "source_id": "cpgroup_china_official"
+        }
+      ],
       "track_record": [
+        {
+          "description": "集团官网披露2025年全球销售额1114亿美元、中国营业额超过2200亿元人民币；这些是多元化集团业务指标，不代表基金管理规模或投资回报。",
+          "source_id": "cpgroup_about_official"
+        },
         {
           "description": "融资来源记录：正行创新 · 天使轮 · 2026-06-23 · 本轮参投 · 近亿。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7896c13384a2de29"
@@ -207,8 +292,61 @@
           "source_id": "FISRC-467859f48eda89e6"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "正大集团",
+          "url": "https://www.cpgroup.cn/",
+          "source_id": "cpgroup_about_official"
+        },
+        {
+          "kind": "email",
+          "label": "北京总部投诉举报邮箱（非融资申请渠道）",
+          "value": "idea@cpgroup.cn",
+          "url": "https://www.cpgroup.cn/column/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC-219",
+          "source_id": "cpgroup_contact_official"
+        },
+        {
+          "kind": "phone",
+          "label": "集团官网列示咨询服务电话（非融资申请渠道）",
+          "value": "400-858-1717；400-930-8000",
+          "url": "https://www.cpgroup.cn/column/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC-219",
+          "source_id": "cpgroup_contact_official"
+        },
+        {
+          "kind": "address",
+          "label": "北京总部投诉信件收件地址",
+          "value": "北京市朝阳区光华路10号正大中心南塔40-41层，邮编100020",
+          "url": "https://www.cpgroup.cn/column/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC-219",
+          "source_id": "cpgroup_contact_official"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "cpgroup_about_official",
+          "source_url": "https://www.cpgroup.cn/column/83/",
+          "source_title": "正大集团 - 正大集团官网",
+          "source_content_hash": "e3486ed88dd3bd09e3aeeeaf1b531e83ffb5280591c02a6b7e0703b002a3e888",
+          "quote": "正大集团成立于1921年，是泰籍华人谢易初先生创办的知名跨国企业，简称CP Group。集团业务遍及全球100多个国家和地区，2025年全球销售额1114亿美元。",
+          "quote_hash": "683797ac78ed4e4eff92734d7238e0b0c5e1f5af2ce1a4a6fae730170b6787a7"
+        },
+        {
+          "source_id": "cpgroup_china_official",
+          "source_url": "https://www.cpgroup.cn/column/84/",
+          "source_title": "正大中国 - 正大集团官网",
+          "source_content_hash": "996823cf776d02ce5cd1726105ec5c402c774619a1ed162372955538ffa73182",
+          "quote": "截至目前，正大集团在中国设立企业670家，拥有员工超8万人，2025年总营业额超2200亿元人民币。",
+          "quote_hash": "c28dbc6631be89916dec9c7c9fa6f725274a01a0a59a270c5aa0295fbca25e72"
+        },
+        {
+          "source_id": "cpgroup_contact_official",
+          "source_url": "https://www.cpgroup.cn/column/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC-219",
+          "source_title": "联系我们 - 正大集团官网",
+          "source_content_hash": "b1cd670fa0dfbffa8b4713ac513835138f139adf27176a1691fd1f2138eb4088",
+          "quote": "投诉信箱：idea@cpgroup.cn；咨询服务电话：400-858-1717、400-930-8000。",
+          "quote_hash": "257a883c553eaa7f10728cfedc7a8c8dc39391a8c358377d04beb40ce0df1f6c"
+        },
         {
           "source_id": "FISRC-7896c13384a2de29",
           "source_url": "https://news.pedaily.cn/202606/565442.shtml",
@@ -226,7 +364,11 @@
           "quote_hash": "f5f75acc9db6018c561f87d3759c600a8bdab0a4837462a909c8733219323ad3"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "identity_status": "verified",
+      "coverage_note": "机构身份及集团背景来自正大集团官网。员工、营收与全球布局数字按官网自述口径记录；融资披露未指出具体投资子公司或基金，因此不把参投活动归入某一集团投资主体。联系方式标明为投诉举报或咨询渠道，不作为融资申请渠道。",
+      "last_verified_at": "2026-09-26"
     }
   }
 }

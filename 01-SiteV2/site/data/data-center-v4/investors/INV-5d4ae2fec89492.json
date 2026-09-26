@@ -137,21 +137,83 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "北京绿色能源和低碳产业基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "北京市绿色能源和低碳产业投资基金是北京市八支市级政府投资基金之一，面向氢能、储能、可再生能源、低碳技术、绿色能源汽车等领域。北京市经信局 2025 年项目储备通知将其纳入总初始规模 1000 亿元的八支基金体系，并开放常态化储备项目申报；北京市发改委同年将其称为百亿级基金。单只基金已实缴金额及具体管理机构未由本档案采用的政府来源明确披露。",
+      "facts": [
+        {
+          "field": "fund_type",
+          "label": "基金性质",
+          "value": "北京市市级政府产业投资基金",
+          "source_id": "greenfund_jxj_2025"
+        },
+        {
+          "field": "fund_scale",
+          "label": "规模口径",
+          "value": "北京市发改委称为百亿级；单只基金初始认缴、实缴数字未在本来源中列出",
+          "source_id": "greenfund_fgw_2025"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": [
+            "氢能",
+            "储能",
+            "可再生能源",
+            "低碳新技术",
+            "绿色低碳融合",
+            "绿色能源汽车及应用"
+          ],
+          "source_id": "greenfund_jxj_2025"
+        },
+        {
+          "field": "application",
+          "label": "项目储备申报",
+          "value": "北京市经信局发布常态化储备项目申报通知，申报企业须注册在北京或计划在京布局",
+          "source_id": "greenfund_jxj_2025"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2025-02",
+          "description": "北京市经信局发布八支市级政府基金储备项目常态化申报通知，其中包括绿色能源和低碳产业基金。",
+          "source_id": "greenfund_jxj_2025"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：容芯致远 · 天使轮 · 2026-05-08 · 本轮领投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ceee1629da3e3cce"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "官方来源支持基金所属体系、投资领域和申报机制；规模仅有“百亿级”政府报道表述，未推断为实缴规模。未找到公开投资组合清单或基金专属联系方式。",
+      "contacts": [
+        {
+          "kind": "application",
+          "label": "北京市级政府投资基金储备项目申报通知（非基金直联）",
+          "value": "常态化储备项目申报",
+          "url": "https://jxj.beijing.gov.cn/jxdt/tzgg/202503/t20250306_4027900.html",
+          "source_id": "greenfund_jxj_2025"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "greenfund_jxj_2025",
+          "source_url": "https://jxj.beijing.gov.cn/jxdt/tzgg/202503/t20250306_4027900.html",
+          "source_title": "北京市经信局：常态化组织企业申报新设八支政府投资基金储备项目的通知",
+          "source_content_hash": "9406009cf2f644e3d30bd836b9257d04cae312b992d91b7a75673e26413aed8e",
+          "quote": "绿色能源和低碳基金重点关注氢能、储能、可再生能源、低碳新技术、绿色能源汽车及相关应用；申报企业应注册在北京或有计划在北京布局。",
+          "quote_hash": "aa6bca810a269d90e7a48e945be4d0207006d18f02b4596f3f01c73f0bf6761b"
+        },
+        {
+          "source_id": "greenfund_fgw_2025",
+          "source_url": "https://fgw.beijing.gov.cn/gzdt/fgzs/mtbdx/bzwlxw/202505/t20250526_4097620.htm",
+          "source_title": "北京将推进能源科技创新和绿色低碳深度转型-北京市发展和改革委员会",
+          "source_content_hash": "e14c68c14a060b66db76b636e37f484b154c45d5e02380beef3f2a782924f5ec",
+          "quote": "北京市发展和改革委员会称将发挥百亿级北京市绿色能源和低碳产业投资基金引导作用。",
+          "quote_hash": "ffa0d2679c02907289733ba258c3551db6416486746b87549e34c6f4ab917710"
+        },
         {
           "source_id": "FISRC-ceee1629da3e3cce",
           "source_url": "https://news.pedaily.cn/202605/563553.shtml",
@@ -161,7 +223,7 @@
           "quote_hash": "7f3b62693153e22b655d0cce2a3e9a8f433068ae8e69018f2adf9b7882084527"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

@@ -187,13 +187,51 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "CDH Investments 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "CDH Investments（鼎晖投资）成立于2002年，是中国本土另类资产管理机构之一，业务覆盖私募股权、风险投资与成长资本、私募信贷、公开市场股权及不动产。官网披露其截至2025年底管理资产约162.6亿美元，累计投资350余家公司，协助100余家企业上市；均为机构自报统计。官网提供香港、北京、上海、新加坡办公室地址及公开邮箱和电话。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立年份",
+          "value": "2002年",
+          "source_id": "cdh_about"
+        },
+        {
+          "field": "investment_strategy",
+          "label": "业务与投资资产类别",
+          "value": [
+            "私募股权",
+            "风险投资与成长资本",
+            "私募信贷",
+            "公开市场股权",
+            "不动产"
+          ],
+          "source_id": "cdh_about"
+        },
+        {
+          "field": "aum",
+          "label": "管理资产规模（机构自报）",
+          "value": "截至2025年底约162.6亿美元",
+          "source_id": "cdh_about"
+        },
+        {
+          "field": "portfolio",
+          "label": "投资及退出记录（机构自报）",
+          "value": "累计投资350余家公司，协助100余家在境内外上市；组合企业员工超过310万人。",
+          "source_id": "cdh_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2002",
+          "description": "CDH Investments成立。",
+          "source_id": "cdh_about"
+        }
+      ],
       "track_record": [
+        {
+          "description": "官网披露累计投资350余家公司并协助100余家企业上市；指标为机构自报，未独立核对底层投资和退出清单。",
+          "source_id": "cdh_about"
+        },
         {
           "description": "融资来源记录：Even Realities Technology · Pre-B轮 · 2026-07-07 · 本轮参投 · 1.5亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e9b7c7aa8538dbf1"
@@ -203,8 +241,80 @@
           "source_id": "FISRC-340182e8dcb597a3"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "CDH Investments",
+          "url": "https://www.cdhfund.com/en/about-en/",
+          "source_id": "cdh_about"
+        },
+        {
+          "kind": "email",
+          "label": "一般联系邮箱",
+          "value": "cdh@cdhfund.com",
+          "source_id": "cdh_contact"
+        },
+        {
+          "kind": "email",
+          "label": "投资者关系邮箱",
+          "value": "cdhir@cdhfund.com",
+          "source_id": "cdh_contact"
+        },
+        {
+          "kind": "email",
+          "label": "媒体邮箱",
+          "value": "prteam@cdhfund.com",
+          "source_id": "cdh_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "电话",
+          "value": "+86 10 8507 6998",
+          "source_id": "cdh_contact"
+        },
+        {
+          "kind": "address",
+          "label": "香港办公室",
+          "value": "1503 International Commerce Center, 1 Austin Road West, Kowloon, Hong Kong",
+          "source_id": "cdh_contact"
+        },
+        {
+          "kind": "address",
+          "label": "北京办公室",
+          "value": "25/F, Fortune Financial Center, 5 Dong San Huan Central Road, Chaoyang District, Beijing",
+          "source_id": "cdh_contact"
+        },
+        {
+          "kind": "address",
+          "label": "上海办公室",
+          "value": "Room 3003, 30/F, K. Wah Center, 1010 Huai Hai Zhong Road, Shanghai",
+          "source_id": "cdh_contact"
+        },
+        {
+          "kind": "address",
+          "label": "新加坡办公室",
+          "value": "One George Street, #07-04, Singapore 049145",
+          "source_id": "cdh_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "cdh_about",
+          "source_url": "https://www.cdhfund.com/en/about-en/",
+          "source_title": "About Us - CDH Investments",
+          "source_content_hash": "748cc5d19ae4c6e813d63f43ffff1aa34f066b65ce4cbe31ab307e048de52c76",
+          "quote": "CDH官网介绍其2002年成立、另类资产管理业务布局及截至2025年底的管理规模和组合统计。",
+          "quote_hash": "618e4d12b975d33b06b67a32fc7e0917e703cb1650e44163dfc71155fd5e9057"
+        },
+        {
+          "source_id": "cdh_contact",
+          "source_url": "https://www.cdhfund.com/en/contact-en/",
+          "source_title": "Contact Us - CDH Investments",
+          "source_content_hash": "b172629e24ce723d124b39b017c493e681205d30a102acb35e2e6bcd6938c594",
+          "quote": "官网公开列出香港、北京、上海、新加坡办公室地址及一般、投资者关系、媒体邮箱和联系电话。",
+          "quote_hash": "7bb93702cb6019b16e6ff3078cad0230e733b5dd61d96452731f991af3745994"
+        },
         {
           "source_id": "FISRC-e9b7c7aa8538dbf1",
           "source_url": "https://siliconvalleyinvestclub.com/hi/2026/08/31/interview-with-will-wang-founder-ceo-of-even-realities-150m-raise-at-1b-valuation/",
@@ -222,7 +332,10 @@
           "quote_hash": "ec94d96b08f5c55efa4344b591c4722d26e4e68c37ba1ba5da7bbde8161ce74f"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构背景、组合规模、退出数和管理规模均按官网自报口径并标注时间；联系方式直接来自官网联系页。",
+      "last_verified_at": "2026-09-26"
     }
   }
 }

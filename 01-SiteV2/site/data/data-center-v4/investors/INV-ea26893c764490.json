@@ -137,21 +137,154 @@
       }
     ],
     "public_profile": {
+      "summary": "M13 是美国早期风险投资机构，官方网站列出的方向覆盖 AI 应用与基础设施、区块链、气候与能源、商业、消费、企业软件、金融科技、政府科技和医疗健康。该机构称由 Carter Reum 与 Courtney Reum 于2016年共同创立，创办人此前有 Goldman Sachs 投行和 VEEV Spirits 创业经历。官网自述其在种子或A轮阶段支持的独角兽达到18家；该业绩为机构自述且未注明统计日。",
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "M13 Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "本条对应融资数据库中领投 Rime A 轮的 M13 Ventures。投资方向、管理团队和投资成绩来自M13官方网站；18家独角兽为官网自述，未标明统计时点及定义，不视为独立核验的完整业绩。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网列出的投资方向",
+          "value": [
+            "AI应用",
+            "AI基础设施",
+            "区块链",
+            "气候与能源",
+            "商业",
+            "消费",
+            "企业软件",
+            "金融科技",
+            "政府科技",
+            "医疗健康"
+          ],
+          "source_id": "m13_approach"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网将其描述为早期风险投资机构；本数据库另有其领投Rime A轮的披露记录。",
+          "source_id": "m13_approach"
+        },
+        {
+          "field": "self_reported_outcomes",
+          "label": "机构自述的投资成绩（统计日未注明）",
+          "value": "官网称M13在种子轮或A轮阶段支持的独角兽企业达到18家；该数字为机构自述，页面未给出统计日期、企业名单或独角兽定义。",
+          "source_id": "m13_outcomes"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2016",
+          "description": "Carter Reum与Courtney Reum共同创立M13。",
+          "source_id": "m13_carter_profile"
+        }
+      ],
       "track_record": [
+        {
+          "description": "M13官网自述其在种子轮或A轮阶段支持了18家独角兽；统计口径和时点未披露。",
+          "source_id": "m13_carter_profile"
+        },
         {
           "description": "融资来源记录：Rime · A轮 · 2026-07-15 · 本轮领投 · $24M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7814afd7c39e886d"
         }
       ],
-      "contacts": [],
+      "current_roles": [
+        {
+          "title": "Carter Reum｜联合创始人、管理合伙人",
+          "organization": "M13",
+          "source_id": "m13_team"
+        },
+        {
+          "title": "Courtney Reum｜联合创始人、管理合伙人",
+          "organization": "M13",
+          "source_id": "m13_team"
+        },
+        {
+          "title": "Karl Alomar｜管理合伙人",
+          "organization": "M13",
+          "source_id": "m13_team"
+        },
+        {
+          "title": "Latif Peracha｜管理合伙人",
+          "organization": "M13",
+          "source_id": "m13_team"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Carter Reum",
+          "title": "Goldman Sachs投资银行家；VEEV Spirits联合创办人；M13联合创办人、管理合伙人",
+          "period": "2016年创办M13；其他任期未披露",
+          "description": "M13本人简介称，他与兄弟Courtney在建立并出售VEEV Spirits后共同创立M13，并曾在Goldman Sachs任职。",
+          "source_id": "m13_carter_profile"
+        },
+        {
+          "organization": "Courtney Reum",
+          "title": "Goldman Sachs投资银行家；VEEV Spirits联合创办人；M13联合创办人、管理合伙人",
+          "period": "2016年创办M13；其他任期未披露",
+          "description": "M13本人简介称，他与兄弟Carter在建立并出售VEEV Spirits后共同创立M13。",
+          "source_id": "m13_courtney_profile"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "M13官方网站",
+          "value": "M13",
+          "url": "https://www.m13.co/",
+          "source_id": "m13_approach"
+        },
+        {
+          "kind": "email",
+          "label": "媒体联系（非项目投资申请渠道）",
+          "value": "press@m13.co",
+          "url": "https://www.m13.co/people/carter-reum",
+          "source_id": "m13_carter_profile"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "m13_approach",
+          "source_url": "https://www.m13.co/approach",
+          "source_title": "M13｜投资策略",
+          "source_content_hash": "730b7fc9f2516d22ac80c7de411fe3903c0273859d41e81430ff5304de9fff92",
+          "quote": "We study the forces reshaping technology, culture and opportunity, and we support founders bold enough to move before the future becomes obvious.",
+          "quote_hash": "528238f5eedc916075b2ffa0580079f9d5fe0021015f4349019357a3643137c9"
+        },
+        {
+          "source_id": "m13_team",
+          "source_url": "https://www.m13.co/team",
+          "source_title": "M13｜管理团队",
+          "source_content_hash": "540ff641761bb2f525913789a604748d3a84ae94069978d54ee4edafa4dd6165",
+          "quote": "Co-founder, Managing Partner",
+          "quote_hash": "b1a71ecf40334142ba826e075b431431edd68e7040609d9e01270d442c31afc6"
+        },
+        {
+          "source_id": "m13_carter_profile",
+          "source_url": "https://www.m13.co/people/carter-reum",
+          "source_title": "Carter Reum｜M13官方简介",
+          "source_content_hash": "dccb13e8904a6cb4247b1a56bd8076bce2521959a803bd8596ed962cc46ee406",
+          "quote": "After building and selling VEEV Spirits, Carter and his brother Courtney co-founded M13 in 2016, designing it as the firm they wanted as founders.",
+          "quote_hash": "58b76b4894140a1ae4792d52f9f58b5da8b001b1f26a321fded3fe7adf4eeea0"
+        },
+        {
+          "source_id": "m13_courtney_profile",
+          "source_url": "https://www.m13.co/people/courtney-reum",
+          "source_title": "Courtney Reum｜M13官方简介",
+          "source_content_hash": "4abfa68857bc1e55150c5755759ffa7f9072335c7fb634200b5198df08945c68",
+          "quote": "After building and selling VEEV Spirits, Courtney and his brother Carter co-founded M13 in 2016, designing it as the firm they would have wanted as founders.",
+          "quote_hash": "673f80495a97f409530c8a4d837de82ceacb038853026a112890f456f7383fb7"
+        },
+        {
+          "source_id": "m13_outcomes",
+          "source_url": "https://www.m13.co/people/carter-reum",
+          "source_title": "Carter Reum｜M13官网业绩自述",
+          "source_content_hash": "dccb13e8904a6cb4247b1a56bd8076bce2521959a803bd8596ed962cc46ee406",
+          "quote": "M13 has since backed 18 unicorns at seed or Series A.",
+          "quote_hash": "638b785c1a0b1dbd8e767b9e46132973a8791c3d0af3d61b4f837ff49ada7762"
+        },
         {
           "source_id": "FISRC-7814afd7c39e886d",
           "source_url": "https://techcrunch.com/2026/07/15/rime-picks-up-24m-series-a-to-help-enterprises-field-customer-calls",
@@ -161,7 +294,7 @@
           "quote_hash": "6c08951613eb8664268a1b1597f5f45ad119e874c74e70179a613c5f9777409e"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

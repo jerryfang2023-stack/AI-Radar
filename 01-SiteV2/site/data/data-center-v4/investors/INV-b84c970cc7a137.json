@@ -241,14 +241,42 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Spark Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Spark Capital 是美国风险投资机构 Spark Capital（官网列示波士顿与旧金山相关团队及历史投资）。机构官网记载其 2008 年领投 Twitter B 轮，并提供创始人及普通合伙人的职业背景和组合案例；官网联系邮箱为 contactus@sparkcapital.com。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "美国风险投资机构（以其官方域名与官网团队、投资案例页面识别）",
+          "source_id": "spark_home"
+        },
+        {
+          "field": "investment_example",
+          "label": "官网披露的历史投资案例",
+          "value": "2008 年领投 Twitter Series B",
+          "source_id": "spark_home"
+        },
+        {
+          "field": "geography",
+          "label": "官网涉及地区",
+          "value": [
+            "波士顿",
+            "旧金山"
+          ],
+          "source_id": "spark_home"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2008",
+          "description": "Spark 官网介绍其在 2008 年领投 Twitter 的 B 轮融资。",
+          "source_id": "spark_home"
+        }
+      ],
       "track_record": [
+        {
+          "description": "Spark 官网的 Alex Finkelstein 合伙人页面将 Cruise、Discord 等列为其投资组合案例，页面分别记载 Cruise Series A（2015）及 Discord Series C（2016）。",
+          "source_id": "spark_partner"
+        },
         {
           "description": "融资来源记录：Lumilens Inc. · C轮 · 2026-08-06 · 本轮联合领投 · $900M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a967da2448674734"
@@ -262,8 +290,54 @@
           "source_id": "FISRC-f1b764e21138a412"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Spark Capital",
+          "url": "https://www.sparkcapital.com/",
+          "source_id": "spark_home"
+        },
+        {
+          "kind": "email",
+          "label": "通用联系邮箱",
+          "value": "contactus@sparkcapital.com",
+          "url": "https://www.sparkcapital.com/contact",
+          "source_id": "spark_contact"
+        },
+        {
+          "kind": "contact_form",
+          "label": "联系页面",
+          "value": "Spark Capital Contact",
+          "url": "https://www.sparkcapital.com/contact",
+          "source_id": "spark_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "spark_home",
+          "source_url": "https://www.sparkcapital.com/",
+          "source_title": "Spark Capital",
+          "source_content_hash": "3d2374a9dff07a23f8faf88282121d37a1b5b66aeb6740f40e08ebd761e8fee8",
+          "quote": "In 2008, Spark led Twitter’s Series B. We invest in ambition, brains, guts, people, crazy dreams, idealists, optimism, resolve, independence, reinvention, action, systems, clarity and complexity.",
+          "quote_hash": "67adeafcc8ed9db7addadb392022a07fbb6d9725b33199ae934849159bf124e2"
+        },
+        {
+          "source_id": "spark_contact",
+          "source_url": "https://www.sparkcapital.com/contact",
+          "source_title": "Contact",
+          "source_content_hash": "593c0f296bcaddd628351719e66aa7d3c1b153d7597024f47905e1fc9334e52e",
+          "quote": "contactus@sparkcapital.com",
+          "quote_hash": "22c7a8dac6cc163f1d388b8cc3eff0d30c78edc410f53dfd3ceff5aa5d949b48"
+        },
+        {
+          "source_id": "spark_partner",
+          "source_url": "https://www.sparkcapital.com/team-members/alex-finkelstein",
+          "source_title": "Alex Finkelstein | Spark Capital",
+          "source_content_hash": "42577ff985751951b920dea449022595e05eac4d597ff0ea2ff8b614c7e14c75",
+          "quote": "Alex Finkelstein is Co-founder & General Partner, Early. He began his career at Cambridge Associates, joined two SoftBank venture capital funds, and later co-founded Spark Capital. His listed investments include Cruise, which Spark led in Series A in 2015, and Discord, where it led Series C in 2016.",
+          "quote_hash": "d8cebc182257144e675c36c81540abca987cb50c3db630736c4156910e7e7e84"
+        },
         {
           "source_id": "FISRC-a967da2448674734",
           "source_url": "https://siliconangle.com/2026/08/06/optical-networking-startup-lumilens-launches-900m-funding/",
@@ -289,7 +363,11 @@
           "quote_hash": "53e2bd7c87ca8e0e9a8e8e0f4cbe7262792ba3560253ad1a76794588f3bf594d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

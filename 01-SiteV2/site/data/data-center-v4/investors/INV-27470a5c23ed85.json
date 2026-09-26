@@ -207,12 +207,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Merlin Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Merlin Ventures 是一家以网络安全与 AI 原生创业团队为重点的投资机构。其官网介绍了 CISO 专家网络、网络安全行业经验及面向美国联邦和公共部门的市场拓展支持。本库收录的融资记录是已披露案例，不代表完整投资组合。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网当前定位",
+          "value": "面向 AI 原生创业团队，并强调网络安全行业经验。官网未在当前页面披露投资阶段或单笔投资金额。",
+          "source_id": "merlin_team"
+        },
+        {
+          "field": "founder_support",
+          "label": "投后支持方式（机构自述）",
+          "value": "CISO 专家网络与商业拓展支持；官网称其网络覆盖 100 多位 CISO。",
+          "source_id": "merlin_team"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -222,14 +231,37 @@
         {
           "description": "融资来源记录：Neo Security, Inc. · 多轮融资 · 2026-07-20 · 种子轮和A轮参投 · 1亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9a07ea732902851d"
-        },
-        {
-          "description": "融资来源记录：Neo Security, Inc. · 多轮融资 · 2026-07-20 · 种子轮和A轮参投 · 1亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-7490da5364b4f477"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "coverage_note": "投资方向和支持能力取自 Merlin Ventures 官网自述；融资案例仍按融资披露来源记录，不将官网宣传表述视为独立业绩审计。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Merlin Ventures",
+          "url": "https://merlin.vc/",
+          "source_id": "merlin_team"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "merlin_team",
+          "source_url": "https://merlin.vc/team",
+          "source_title": "About Us — Merlin Ventures",
+          "source_content_hash": "6a30a8beb9987ab3bd6620cd68577254b14bca06264e8081d613de1b2fd1fd2c",
+          "quote": "Merlin Ventures partners with forward-leaning, AI-native founders. Through our deep domain expertise, network of over hundred of CISOs, go-to-market muscle",
+          "quote_hash": "fbe6aebd8b529de929d69721e914c32f696c7f4ea3a7d2c1042e83b0d30b7f30"
+        },
+        {
+          "source_id": "merlin_torq",
+          "source_url": "https://merlin.vc/team",
+          "source_title": "About Us — Merlin Ventures",
+          "source_content_hash": "6a30a8beb9987ab3bd6620cd68577254b14bca06264e8081d613de1b2fd1fd2c",
+          "quote": "Our partnership with Merlin Ventures is the definitive signal that the company is ready to scale its AI security platform",
+          "quote_hash": "090e90b61f838a51395717da49329eb2313a8dd25fb9f7e567b5c3078b0af7b4"
+        },
         {
           "source_id": "FISRC-1bf4ecd2fae97f0b",
           "source_url": "https://siliconangle.com/2026/07/20/neo-security-bags-100m-build-secure-control-layer-enterprise-ai-agents/",
@@ -255,7 +287,8 @@
           "quote_hash": "df06e69243a39164e8528caa007419909973f14b062c9f87e5f6bef33d7a838b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified"
     }
   }
 }

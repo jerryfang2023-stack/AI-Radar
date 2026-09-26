@@ -191,11 +191,30 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Costanoa Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Costanoa Ventures 是一家总部位于旧金山湾区的早期风险投资机构，官网强调与少数高增长企业长期合作，并为创始团队提供运营经验、客户关系、人才和社区支持。其官网展示 Vannevar、Lively 等组合公司及创始人反馈；这类展示说明合作案例，不代表完整投资组合或基金回报。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "早期风险投资机构",
+          "source_id": "costanoa_home"
+        },
+        {
+          "field": "strategy",
+          "label": "投资理念",
+          "value": "选择解决复杂问题的早期公司，与创始人长期合作并提供运营支持",
+          "source_id": "costanoa_home"
+        },
+        {
+          "field": "public_portfolio_examples",
+          "label": "官网案例",
+          "value": [
+            "Vannevar",
+            "Lively"
+          ],
+          "source_id": "costanoa_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -207,8 +226,42 @@
           "source_id": "FISRC-1bd630ac44028d8a"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Costanoa Ventures",
+          "url": "https://www.costanoa.vc/",
+          "source_id": "costanoa_home"
+        },
+        {
+          "kind": "email",
+          "label": "一般联系邮箱（官网公开，非明确投资申请专用）",
+          "value": "info@costanoa.vc",
+          "source_id": "costanoa_home"
+        },
+        {
+          "kind": "phone",
+          "label": "公开电话",
+          "value": "(650) 388-9310",
+          "source_id": "costanoa_home"
+        },
+        {
+          "kind": "address",
+          "label": "公开办公地址",
+          "value": "185 Berry St., Lobby 3, Suite 2300, San Francisco, CA 94107；160 Forest Ave, Palo Alto, CA 94301",
+          "source_id": "costanoa_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "costanoa_home",
+          "source_url": "https://www.costanoa.vc/",
+          "source_title": "Costanoa Ventures 官方网站",
+          "source_content_hash": "936576adc7ef90d2c0c0cd4183f45cf495537e3cf8e934542403b73457c0bc0d",
+          "quote": "Costanoa称其投资少数具有长期发展潜力的公司，并公开列出创始人支持方式、组合案例、电话、邮箱和办公地址。",
+          "quote_hash": "c6241de1f4c98fb80d181fccf8773ecd8c9722fc9ceb42a36b5468bc8c049e15"
+        },
         {
           "source_id": "FISRC-65020b3601939429",
           "source_url": "https://www.manifold.security/blog/manifold-raises-8m-seed-funding",
@@ -226,7 +279,10 @@
           "quote_hash": "68f7c4d03d1d24835006e70e711a75729c5633a52e978d0c6a047cb69ea057e7"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "以官网披露为准；没有补写未公开的基金规模、投资年限或收益数据。",
+      "last_verified_at": "2026-09-26"
     }
   }
 }

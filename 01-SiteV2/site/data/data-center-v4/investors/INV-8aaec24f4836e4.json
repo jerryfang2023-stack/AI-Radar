@@ -244,13 +244,31 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "弘晖基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "弘晖基金是一家以科技创新和实体经济长期价值投资为定位的机构，官网列出医疗健康与科技制造两类投资方向。其研究基础包括化学、生物学、材料等学科，官网披露累计投资企业数和上市企业数作为组合概况；这些数字不是收益率。总部位于上海，在北京、深圳等地设有办公室。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "医疗健康与科技制造；官网细分涉及生物技术、医药工业、精密仪器、半导体、先进制造、新材料、人工智能和机器人。",
+          "source_id": "hlc_about"
+        },
+        {
+          "field": "research_capability",
+          "label": "研究基础",
+          "value": "官网称其团队基于化学、生物学、材料工程等领域认知开展独立研究与体系化赋能。",
+          "source_id": "hlc_about"
+        }
+      ],
       "milestones": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "弘晖官网介绍核心团队具有投资及产业经验，以独立研究和产业赋能服务组合企业。",
       "track_record": [
+        {
+          "description": "官网披露累计投资超过120家企业；官网首页另列200+被投企业和30+ IPO，统计口径存在页面差异，因此档案采用较保守的120+说法并将全部数字视为机构公开自述。",
+          "source_id": "hlc_about"
+        },
         {
           "description": "融资来源记录：基元律动 · 基础设施融资 · 2026-08-27 · 本轮领投 · 数千万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f23d61f5ed1d1ac1"
@@ -264,8 +282,53 @@
           "source_id": "FISRC-ee3064edf7c871f4"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "弘晖基金",
+          "url": "https://www.hlc.com.cn/",
+          "source_id": "hlc_about"
+        },
+        {
+          "kind": "email",
+          "label": "投资与合作 / BP",
+          "value": "contact@hlc.com.cn",
+          "url": "https://www.hlc.com.cn/message/",
+          "source_id": "hlc_contact"
+        },
+        {
+          "kind": "email",
+          "label": "招聘",
+          "value": "hr@hlc.com.cn",
+          "url": "https://www.hlc.com.cn/message/",
+          "source_id": "hlc_contact"
+        },
+        {
+          "kind": "address",
+          "label": "办公室分布",
+          "value": "总部上海，北京、深圳等地设办公室；官网未在联系页列出街道地址。",
+          "url": "https://www.hlc.com.cn/message/",
+          "source_id": "hlc_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "hlc_about",
+          "source_url": "https://www.hlc.com.cn/article/11.html",
+          "source_title": "关于弘晖 — 弘晖基金",
+          "source_content_hash": "67a4eceb0a4fb4d11d44efd5988b2c3ef6bf0a221015d02e4fc5a0f415b81f94",
+          "quote": "弘晖基金专注发掘和实现科学技术的恒久价值；基于化学、生物学和材料工程学等核心领域的认知，立足独立深度研究和体系化赋能服务。累计投资超过120家优质企业。",
+          "quote_hash": "824467854652983f6d2a8f728276029db541fa4140f103829b938db3abc1b9c2"
+        },
+        {
+          "source_id": "hlc_contact",
+          "source_url": "https://www.hlc.com.cn/message/",
+          "source_title": "联系我们 — 弘晖基金",
+          "source_content_hash": "2e29ffcbe32e6d530df12c8b98b4f8ad8e8146ee2533900cde0f8d647c46040e",
+          "quote": "弘晖基金总部位于上海，在北京、深圳等地设有办公室；投资与合作请发送至 contact@hlc.com.cn。",
+          "quote_hash": "b3732f0d2f21d6b6e8758cbfdfdadd09d908e23e977ae7bbe6d83fa261196783"
+        },
         {
           "source_id": "FISRC-f23d61f5ed1d1ac1",
           "source_url": "https://www.qbitai.com/2026/08/480079.html",
@@ -291,7 +354,10 @@
           "quote_hash": "7856dba9de35c6cfdd0403af562bc80983a2b76d4818fc5468e4da4cf874099d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

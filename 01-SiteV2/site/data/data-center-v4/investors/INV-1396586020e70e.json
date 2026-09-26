@@ -209,29 +209,85 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Dell Technologies Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Dell Technologies Capital（DTC）是Dell Technologies的企业风险投资团队，主要支持企业技术创业公司，通常从种子轮或A轮开始投资。官网列出的重点包括安全、AI/机器学习、边缘与物流、数据与分析、开发者工具、基础设施和芯片；并以Dell企业客户网络帮助组合公司拓展市场。",
+      "facts": [
+        {
+          "field": "parent",
+          "label": "母公司",
+          "value": "Dell Technologies",
+          "source_id": "delltechcapital_official_202609"
+        },
+        {
+          "field": "investment_stage",
+          "label": "常见首投阶段",
+          "value": [
+            "种子轮",
+            "A轮"
+          ],
+          "source_id": "delltechcapital_official_202609"
+        },
+        {
+          "field": "investment_focus",
+          "label": "关注领域",
+          "value": [
+            "网络安全",
+            "AI/机器学习",
+            "边缘与物流",
+            "数据与分析",
+            "开发者工具",
+            "基础设施",
+            "芯片"
+          ],
+          "source_id": "delltechcapital_official_202609"
+        },
+        {
+          "field": "cumulative_invested",
+          "label": "累计投资",
+          "value": "自2012年以来超过17亿美元；官网口径，非管理规模",
+          "source_id": "delltechcapital_official_202609"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2012",
+          "description": "Dell Tech Capital官网将投资团队起始时间列为2012年。",
+          "source_id": "delltechcapital_official_202609"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Prime Intellect · A轮 · 2026-07-08 · 本轮参投 · $130 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-afe2544836558c64"
         },
         {
-          "description": "融资来源记录：Prime Intellect · A轮 · 2026-07-08 · 本轮参投 · $130 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3b1f1aee6b1a3091"
-        },
-        {
           "description": "融资来源记录：Sycamore · 种子轮 · 2026-03-30 · 本轮参投 · $65 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d354011359557f2f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "label": "项目联系邮箱",
+          "value": "delltechcapital@dell.com",
+          "source_id": "delltechcapital_official_202609"
+        },
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "团队、投资领域及联系方式",
+          "url": "https://www.delltechnologiescapital.com/",
+          "source_id": "delltechcapital_official_202609"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "delltechcapital_official_202609",
+          "source_url": "https://www.delltechnologiescapital.com/",
+          "source_title": "Dell Technologies Capital官网",
+          "source_content_hash": "f7395257d1caaf1e049387a4b632020d48a56890c38ba347a3a5e6f1e8070f80",
+          "quote": "Dell Technologies Capital官网将其定义为Dell Technologies风险投资团队，通常在种子轮或A轮首次投资，关注网络安全、AI/机器学习、边缘与物流、数据分析、开发者工具、基础设施和芯片；官网称自2012年以来累计投资超过17亿美元。",
+          "quote_hash": "7e9e235706eec5711c05ae022faf513bdde39650a0415d2f5c17d0faa2ce05a0"
+        },
         {
           "source_id": "FISRC-afe2544836558c64",
           "source_url": "https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents/",
@@ -257,7 +313,11 @@
           "quote_hash": "e443cbfb7f795d800b13ba7a1cba8c2f429b60d8881136f8543d2e9968332aca"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "coverage_note": "投资阶段、方向、联系方式和累计金额来自DTC官网；金额不是AUM或未部署资本。",
+      "identity_status": "verified"
     }
   }
 }

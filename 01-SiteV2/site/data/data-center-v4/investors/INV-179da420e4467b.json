@@ -131,20 +131,201 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "上海国有资本投资有限公司 当前按“投资组织”收录。最新融资披露记录日期为 2026-01-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "上海国有资本投资有限公司（上海国投公司）是上海市三大国有资本投资运营专业平台之一，定位于基金管理、创新孵化、产业投资和资本运营，公开表述的投资策略为“投早、投小、投长期、投硬科技”。上海市国资委2026年9月披露，公司在人工智能领域总投资超过210亿元，通过基金投资与直接投资累计服务人工智能企业超过400家；这些是集团层面口径，不等于本条融资记录的单笔直接投资金额。",
+      "facts": [
+        {
+          "field": "platform_role",
+          "label": "平台定位",
+          "value": "上海市三大国有资本投资运营专业平台之一；聚焦基金管理、创新孵化、产业投资和资本运营。",
+          "source_id": "shanghai_soi_official_about"
+        },
+        {
+          "field": "investment_strategy",
+          "label": "投资策略",
+          "value": "投早、投小、投长期、投硬科技。",
+          "source_id": "shanghai_soi_official_about"
+        },
+        {
+          "field": "shareholder",
+          "label": "股东（2024年度信息公开报告）",
+          "value": "上海市国有资产监督管理委员会，持股100%。",
+          "source_id": "shanghai_soi_2024_disclosure"
+        },
+        {
+          "field": "total_investment_scale",
+          "label": "累计投资与上市成果（截至2026年7月报道）",
+          "value": "累计总投资规模突破人民币2000亿元；全体系投资项目近3000个；培育上市企业超过160家，其中科创板上市企业90余家。",
+          "source_id": "shanghai_soi_2026_innovation_metrics"
+        },
+        {
+          "field": "ai_investment_scale",
+          "label": "人工智能领域投资（截至2026年9月7日）",
+          "value": "人工智能领域总投资金额超过人民币210亿元；通过基金投资与直接投资累计服务人工智能企业超过400家。来源统计的是集团总投资和服务范围，并非全部为直接持股。",
+          "source_id": "shanghai_soi_2026_ai_investment"
+        },
+        {
+          "field": "ai_portfolio_examples",
+          "label": "官方报道列示的人工智能企业案例",
+          "value": [
+            "壁仞科技",
+            "燧原科技",
+            "阶跃星辰",
+            "MiniMax",
+            "智元机器人",
+            "苏度科技",
+            "天鹜科技"
+          ],
+          "source_id": "shanghai_soi_2026_ai_investment"
+        },
+        {
+          "field": "leadership_snapshot",
+          "label": "公司官网当前列示领导及职务（2026年9月核对）",
+          "value": [
+            "袁国华：党委书记、董事长",
+            "戴敏敏：党委副书记、总裁、董事",
+            "郑杨：副董事长",
+            "刘炜：党委副书记、工会主席",
+            "李鑫：副总裁",
+            "陆雯：党委委员、副总裁",
+            "杜松杨：党委委员、纪委书记",
+            "许业荣：副总裁",
+            "朱民：科创总监、上海科创集团党委书记、董事长",
+            "曹庆伟：投资总监",
+            "胡曙光：总法律顾问",
+            "席宇：人力资源总监",
+            "沈会丰：金融总监"
+          ],
+          "source_id": "shanghai_soi_official_leadership"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2021-01",
+          "description": "上海市国资委2025年报道记载，上海国投公司自2021年初组建以来发展为市级国有资本投资运营平台。",
+          "source_id": "shanghai_soi_2021_formation"
+        },
+        {
+          "date": "2024",
+          "description": "公司与上海科创集团完成联合重组；公司年度信息公开报告称，重组后资产总额、资金配置、融资能力和业务能级得到提升。",
+          "source_id": "shanghai_soi_2024_disclosure"
+        },
+        {
+          "date": "2026-09-03",
+          "description": "发行规模人民币30亿元、期限10年的人工智能产业链科创债；上海市国资委称其为全国首单超长期限用于人工智能产业链的科创债。",
+          "source_id": "shanghai_soi_2026_ai_bond"
+        }
+      ],
       "track_record": [
+        {
+          "description": "2026年9月债券发行：人民币30亿元，期限10年，票面利率2.02%，全场认购倍数3.44倍；募集资金重点布局人工智能产业链关键核心领域。",
+          "source_id": "shanghai_soi_2026_ai_bond"
+        },
+        {
+          "description": "上海市国资委披露，公司在人工智能领域投资超过人民币210亿元，并通过基金投资与直接投资累计服务超过400家AI企业；报道列举壁仞科技、燧原科技、阶跃星辰、MiniMax、智元机器人、苏度科技和天鹜科技等案例。",
+          "source_id": "shanghai_soi_2026_ai_investment"
+        },
+        {
+          "description": "融资报道将上海国有资本投资有限公司及其旗下基金列为阶跃星辰B轮核心投资方，未拆分本条融资记录中公司与各旗下基金的具体出资载体。",
+          "source_id": "shanghai_soi_stepfun_activity"
+        },
         {
           "description": "融资来源记录：StepFun · B+轮 · 2026-01-26 · B轮核心投资方 · 50 亿人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6c9e96fcafd6e74f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "上海国投公司",
+          "url": "https://www.sh-ssci.com/",
+          "source_id": "shanghai_soi_2024_disclosure"
+        },
+        {
+          "kind": "email",
+          "label": "2024年度信息公开报告所列公司邮箱",
+          "value": "ssci@sh-ssci.com",
+          "source_id": "shanghai_soi_2024_disclosure"
+        },
+        {
+          "kind": "phone",
+          "label": "2024年度信息公开报告所列信息披露电话",
+          "value": "+86 21 6321 2188",
+          "source_id": "shanghai_soi_2024_disclosure"
+        },
+        {
+          "kind": "address",
+          "label": "2024年度信息公开报告所列办公地址",
+          "value": "上海市黄浦区外马路688号（邮编200010）",
+          "source_id": "shanghai_soi_2024_disclosure"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "shanghai_soi_official_about",
+          "source_url": "https://www.sh-ssci.com/gsjs/gsjj/index.html",
+          "source_title": "上海国有资本投资有限公司｜公司简介",
+          "source_content_hash": "296827407163f182ee43e64d9495ef6f2de216707fc595856a3825aeebc629dd",
+          "quote": "上海国有资本投资有限公司，简称“上海国投公司”，是上海市三大国有资本投资运营专业平台之一。公司定位于“基金管理+创新孵化”，专注“投早、投小、投长期、投硬科技”，开展战略持股企业价值维护，承担服务本市国资国企改革大局、优化国有资本布局、提升国有资本运营效率、实现国有资产保值增值、助力国资监管等责任。",
+          "quote_hash": "c8784a9f7efbe081a3784ff5d40e1a53d86b23a5307c6ff42fdabd53c672578f"
+        },
+        {
+          "source_id": "shanghai_soi_2024_disclosure",
+          "source_url": "https://www.sh-ssci.com/xxgk/jbxx/20250822/855/f355c34b6bac42e4835a88319dcc54bf.pdf",
+          "source_title": "上海国投公司｜2024年度信息公开报告",
+          "source_content_hash": "9b161b374cef04beb7be6ec6a74e8e5744e64b3e39cad5b5087b1f06dea937ab",
+          "quote": "公司办公地址：上海市黄浦区外马路688号；公司网址：www.sh-ssci.com；公司电子邮箱：ssci@sh-ssci.com。报告列示信息披露电话021-63212188，股东为上海市国资委、持股100%；2024年末公司资产总额1504.67亿元，归属于母公司所有者净利润40.27亿元。",
+          "quote_hash": "f642793e6590c326e6e5377b87f2832aac42a6bb13dc15c3215661f37a0334f3"
+        },
+        {
+          "source_id": "shanghai_soi_2026_innovation_metrics",
+          "source_url": "https://www.gzw.sh.gov.cn/shgzw_zxzx_gqdt/20260720/73e1e569b365420b9ee83fb115411c0d.html",
+          "source_title": "上海市国资委｜上海国投公司构建AI产业创新生态",
+          "source_content_hash": "762a5b203e54124074e85617916c00406d1d7daec575aa552a5f3a14a193b43d",
+          "quote": "自成立以来，上海国投持续布局集成电路、生物医药、人工智能三大先导产业，累计总投资规模突破2000亿元，全体系投资项目近3000个，培育上市企业超过160家，其中科创板上市企业90余家。",
+          "quote_hash": "64cbbda2ce6da858f8c73f2c51fa7c4cb21e43d45ee4576e0d387616cf9af1e1"
+        },
+        {
+          "source_id": "shanghai_soi_2026_ai_investment",
+          "source_url": "https://www.gzw.sh.gov.cn/shgzw_zxzx_gqdt/20260907/e9e910bc6db7410c97da3eba715878e1.html",
+          "source_title": "上海市国资委｜上海国投发行人工智能产业链科创债",
+          "source_content_hash": "f74a75f41f2a2f9841b16f7b7ae42df09448e927bd1e09eae50b13c298c314d5",
+          "quote": "截至目前，公司在人工智能领域的总投资金额超过210亿元，通过基金投资与直接投资累计服务人工智能企业超过400家，深度布局算力芯片、大模型与算法、具身智能、AI4S等赛道，投资培育了壁仞科技、燧原科技、阶跃星辰、MiniMax、智元机器人、苏度科技、天鹜科技等一批优质企业。",
+          "quote_hash": "57d1c636dd99fbf7597481fb9514b15547c161b263103accd1486290535ee7ff"
+        },
+        {
+          "source_id": "shanghai_soi_official_leadership",
+          "source_url": "https://www.sh-ssci.com/gsjs/gsjj/index.html",
+          "source_title": "上海国有资本投资有限公司｜公司简介与领导",
+          "source_content_hash": "ae07f78b2233c42f187e62693e0bb3d4636359d2c72b88319ed6bd558499a27e",
+          "quote": "袁国华：党委书记、董事长；戴敏敏：党委副书记、总裁、董事；郑杨：副董事长；刘炜：党委副书记、工会主席；李鑫：副总裁；陆雯：党委委员、副总裁；杜松杨：党委委员、纪委书记；许业荣：副总裁；朱民：科创总监、上海科创集团党委书记、董事长；曹庆伟：投资总监；胡曙光：总法律顾问；席宇：人力资源总监；沈会丰：金融总监。",
+          "quote_hash": "4666b0208b85acb81e212cd193f3fd01e266e82a9c104c8b6220493acf91e074"
+        },
+        {
+          "source_id": "shanghai_soi_2021_formation",
+          "source_url": "https://www.gzw.sh.gov.cn/shgzw_xwzx_gzyw/20250917/6566de7489124b4f8d64709b9fa8b48b.html",
+          "source_title": "上海市国资委｜市长龚正调研上海国投",
+          "source_content_hash": "52042815bfa04a983845f8793cf14d4e1513053493fe60b2136e48f4752eeba5",
+          "quote": "上海国投是上海三大国有资本投资运营平台公司之一，2021年初组建以来，公司资产总额超1600亿元，在管基金认缴规模超2500亿元，投资硬科技企业超2000家。",
+          "quote_hash": "dea706926852745780195285fd0b1e34de2b1046e34c1839db6521ea952e4162"
+        },
+        {
+          "source_id": "shanghai_soi_2026_ai_bond",
+          "source_url": "https://www.gzw.sh.gov.cn/shgzw_zxzx_gqdt/20260907/e9e910bc6db7410c97da3eba715878e1.html",
+          "source_title": "上海市国资委｜上海国投发行人工智能产业链科创债",
+          "source_content_hash": "f74a75f41f2a2f9841b16f7b7ae42df09448e927bd1e09eae50b13c298c314d5",
+          "quote": "9月3日，上海国投公司在上海证券交易所成功发行全国首单超长期限用于人工智能产业链科创债。债券简称“沪国投 K2”，期限10年，发行规模30亿元，票面利率2.02%，全场认购倍数3.44倍。",
+          "quote_hash": "762895500debb42a38eb25385d04efa93a83cd9665ddfa14f2e95f53edc44c75"
+        },
+        {
+          "source_id": "shanghai_soi_stepfun_activity",
+          "source_url": "https://m.cls.cn/detail/2269386",
+          "source_title": "财联社｜阶跃星辰完成融资，核心投资方包括上海国投公司及其旗下基金",
+          "source_content_hash": "ecc822215cc145f584927fdfb0e65ae80fffdcad8411f9e9aa114e9528ebffe7",
+          "quote": "2024年12月，阶跃星辰宣布完成B轮融资，总融资金额达数亿美元，核心投资方包括上海国有资本投资有限公司及其旗下基金。",
+          "quote_hash": "9169c4b339d226b7278c0bc79df74392afa532e1e47c4c4fc1021504b8648a7f"
+        },
         {
           "source_id": "FISRC-6c9e96fcafd6e74f",
           "source_url": "https://m.cls.cn/detail/2269386",
@@ -154,7 +335,9 @@
           "quote_hash": "93d2e2316ba8436d3b9c2060917fe404b1442c07ba94f061daf0888fdf6e76e2"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

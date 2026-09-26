@@ -193,11 +193,39 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Premji Invest 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Premji Invest 是由 Azim Premji 发起的长期投资机构，2006年设立，投资收益主要用于支持 Azim Premji Foundation 的公益工作。官网称其拥有超过150亿美元常青资本、累计投资160余项，组合公司总收入超过200亿美元，并记录12次IPO和7次并购；这些为机构自报的组合汇总指标，页面未标注统计口径及截止日。官网介绍投资覆盖金融服务、科技、消费、医疗健康与工业，并设有公开办公室地址及一般联系邮箱。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "设立年份",
+          "value": "2006年",
+          "source_id": "premji_purpose"
+        },
+        {
+          "field": "purpose",
+          "label": "机构使命",
+          "value": "以长期投资支持Azim Premji Foundation公益事业，官网称基金大部分收益流入公益资金池。",
+          "source_id": "premji_purpose"
+        },
+        {
+          "field": "sectors",
+          "label": "核心投资领域",
+          "value": [
+            "金融服务",
+            "科技",
+            "消费",
+            "医疗健康",
+            "工业"
+          ],
+          "source_id": "premji_purpose"
+        },
+        {
+          "field": "public_track_record",
+          "label": "组合规模与成果（机构自报）",
+          "value": "超过150亿美元常青资本、160余项投资、组合公司总收入超过200亿美元、12次IPO及7次并购；官网未标明统计截止日。",
+          "source_id": "premji_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -209,8 +237,50 @@
           "source_id": "FISRC-7dcdc22c0b1702bf"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Premji Invest",
+          "url": "https://in.premjiinvest.com/",
+          "source_id": "premji_home"
+        },
+        {
+          "kind": "email",
+          "label": "一般联系邮箱（官网公开，非项目申请渠道）",
+          "value": "contact@premjiinvest.com",
+          "source_id": "premji_home"
+        },
+        {
+          "kind": "address",
+          "label": "印度办公室",
+          "value": "134, Doddakannelli, Sarjapur Road, Bangalore, Karnataka 560035",
+          "source_id": "premji_home"
+        },
+        {
+          "kind": "address",
+          "label": "美国办公室",
+          "value": "2180 Sand Hill Road, Suite 100, Menlo Park, California 94025",
+          "source_id": "premji_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "premji_home",
+          "source_url": "https://in.premjiinvest.com/",
+          "source_title": "Premji Invest 官方网站",
+          "source_content_hash": "091594455d0f010513e0d5679864fd902a06a02ec9130e8dd909f0ca1d18e504",
+          "quote": "官网公布其常青资本、投资数量、组合公司收入、IPO及并购统计，并列出办公室地址与一般邮箱。",
+          "quote_hash": "e998c90e1d54df6bed3b27cb6bf0ea872653fdcec3bdfbb059c84c9d2f0cb41c"
+        },
+        {
+          "source_id": "premji_purpose",
+          "source_url": "https://in.premjiinvest.com/purpose",
+          "source_title": "Our Purpose - Premji Invest",
+          "source_content_hash": "e0f8aa544a5bc932e914a0f10e18e0cdd24f7ae720c3bd1704fb8acf77e5721b",
+          "quote": "官网称Premji Invest于2006年设立，旨在支持Azim Premji Foundation，并投资金融服务、科技、消费、医疗健康和工业领域。",
+          "quote_hash": "4526d04e278c97b0e375c17c63dc63c1a15c030cb464cfdce3e36d65487f12fc"
+        },
         {
           "source_id": "FISRC-852df50f4128c47b",
           "source_url": "https://www.bioxconomy.com/investment/enveda-s-311m-series-e-to-found-ai-driven-drug-discovery-platform",
@@ -228,7 +298,10 @@
           "quote_hash": "bc528b10ef7cf201e43a02dd127ae1d446150320a90391b10ae0ebc3b2330db3"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "规模、组合数据与公益资金流向均为官网自报；官网同时提醒公众谨防冒用机构员工身份的投资诈骗。",
+      "last_verified_at": "2026-09-26"
     }
   }
 }

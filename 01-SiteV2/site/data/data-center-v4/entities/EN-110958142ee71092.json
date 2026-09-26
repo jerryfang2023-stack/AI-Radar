@@ -111,33 +111,63 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "董道国 的来源线索将其与新智具身（首席运营官）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "董道国是具身智能企业新智具身 COO，兼具产业工程与科研经历。投资界 2026 年报道记载其有近 20 年产业经验，曾任华为荣耀 Magic 一代首席架构师，现为复旦大学可信具身智能研究院研究员；在新智具身主要负责技术商业化。公开资料尚未披露其教育背景及完整任职年份。",
+      "current_roles": [
+        {
+          "title": "首席运营官",
+          "organization": "新智具身（上海新智具身智能科技有限公司）",
+          "source_id": "dong_daoguo_profile"
+        },
+        {
+          "title": "研究员",
+          "organization": "复旦大学可信具身智能研究院",
+          "source_id": "dong_daoguo_profile"
+        }
+      ],
       "career": [
+        {
+          "organization": "华为荣耀",
+          "title": "Magic 一代首席架构师",
+          "period": "任职年份未披露",
+          "description": "投资界报道将其过往产业经历与荣耀 Magic 一代产品架构工作相关联。",
+          "source_id": "dong_daoguo_profile"
+        },
+        {
+          "organization": "复旦大学可信具身智能研究院",
+          "title": "研究员",
+          "period": "至少截至 2026-05",
+          "description": "参与具身智能相关科研，研究院团队孵化新智具身。",
+          "source_id": "dong_daoguo_profile"
+        },
         {
           "organization": "新智具身",
           "title": "首席运营官",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-e666934339b27e85"
+          "period": "至少截至 2026-05",
+          "description": "负责公司技术商业化工作。",
+          "source_id": "dong_daoguo_profile"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
-      "sources": [
+      "experience_summary": "来源披露近 20 年产业经历，横跨消费电子产品架构与具身智能研究成果转化。教育背景与更早的雇主、任期尚无可核验公开资料。",
+      "track_record": [
         {
-          "source_id": "FISRC-e666934339b27e85",
-          "source_url": "https://news.pedaily.cn/202605/564455.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "a3d55e3960392661",
-          "quote": "COO董道国则是兼具学术与产业经验的跨界人才，具有近20年的产业界经历，曾任华为荣耀Magic一代首席架构师",
-          "quote_hash": "2212abcab5cfdb489ab8b4d34e4c44bd2e78c0eb63e0432240fbbc7da3863a47"
+          "description": "参与复旦大学可信具身智能研究院衍生创业项目新智具身，报道时负责将研究成果推进商业化；不据融资新闻推断个人融资业绩。",
+          "source_id": "dong_daoguo_profile"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "sources": [
+        {
+          "source_id": "dong_daoguo_profile",
+          "source_url": "https://news.pedaily.cn/202605/564455.shtml",
+          "source_title": "首发| 让机器人拥有触觉，新智具身天使轮融资近亿_投资界",
+          "source_content_hash": "5196e1995ff076b37f73d83e0bb2349132edb46c35f53b3d76287b6979dc0f64",
+          "quote": "投资界2026年报道记载，COO董道国有近20年产业经历，曾任华为荣耀Magic一代首席架构师，现为复旦大学可信具身智能研究院研究员。",
+          "quote_hash": "73b86ffe464c06f044c0ebe7118b27b663ac96eb55db9a2fe714bf47c7cd1698"
+        }
+      ],
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
     }
   },
   "relatedEntities": [],

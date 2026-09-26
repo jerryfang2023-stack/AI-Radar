@@ -186,12 +186,22 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "尚贤湖基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "unverified",
+      "summary": "“尚贤湖基金”出现在中数睿智融资报道中，但目前公开材料不足以确认它对应的具体基金产品、管理人或法律主体。无锡尚贤湖基金公园是由多个基金和管理人构成的产业集群，不能据此把“尚贤湖基金”直接等同于园区运营公司或某一支基金。",
+      "facts": [
+        {
+          "field": "identity_status",
+          "label": "主体身份",
+          "value": "待核验：现有融资报道仅使用“尚贤湖基金”简称，未披露可唯一识别的基金产品及管理人。",
+          "source_id": "shangxian_financing"
+        },
+        {
+          "field": "name_collision",
+          "label": "相关名称说明",
+          "value": "无锡尚贤湖基金公园介绍的是基金集群与园区运营主体，无法单独证明其与融资报道中的投资方简称为同一主体。",
+          "source_id": "shangxian_park"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -204,7 +214,26 @@
         }
       ],
       "contacts": [],
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "保持待核验；不将园区、园区运营公司或同名机构并作投资方，不生成未经确认的投资组合。",
       "sources": [
+        {
+          "source_id": "shangxian_financing",
+          "source_url": "https://news.pedaily.cn/202608/568010.shtml",
+          "source_title": "中数睿智完成B轮融资 - 投资界",
+          "source_content_hash": "bdeb82efdf4ca21387e9018a359a1137710395f5013c045462764c2588c877c4",
+          "quote": "融资报道将“尚贤湖基金”列为本轮投资方，但没有给出基金产品全称或管理人。",
+          "quote_hash": "93ce1e8c348c090659eabd5aea3c1383a4dc93b9dca99e25a93fb72517283f2a"
+        },
+        {
+          "source_id": "shangxian_park",
+          "source_url": "https://www.wuxifundpark.com/about",
+          "source_title": "关于尚贤湖基金公园 - 官方介绍",
+          "source_content_hash": "cac68d551bafe2aa1a8d264ef45e80af413a79edf83c60ff48e08be92083c1b8",
+          "quote": "尚贤湖基金公园由多个基金及管理机构组成，并由尚贤湖投资公司运营。",
+          "quote_hash": "a874d6ece0cb8c6038025639e976e7c6e1679e4c2090bd4338788533bdc4783c"
+        },
         {
           "source_id": "FISRC-9d2d4022c60030f2",
           "source_url": "https://news.pedaily.cn/202608/568010.shtml",
@@ -222,7 +251,7 @@
           "quote_hash": "0f3daecd89794b253c3f5f44f145a3ea27d26bb286b400ce2f368849a03b09ec"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

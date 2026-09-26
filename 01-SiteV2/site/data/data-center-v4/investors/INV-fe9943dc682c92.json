@@ -235,13 +235,37 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "北极光创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "北极光创投官网介绍其长期聚焦中国早期投资，覆盖新消费、新技术与医疗健康。官网列出的管理资产规模、投资公司数和退出数截至2022年12月，属于机构披露的历史运营概况；不等同于基金回报率。公开网站提供不同领域的项目联系邮箱。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网定位为早期投资。",
+          "source_id": "nlvc_home"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "新消费、新技术、医疗健康；新技术领域官网列有人工智能、物联网、机器人、先进制造等。",
+          "source_id": "nlvc_home"
+        },
+        {
+          "field": "office_locations",
+          "label": "官网列示办公城市",
+          "value": "北京、上海、苏州、深圳、香港及 Menlo Park；官网未提供各地的具体地址。",
+          "source_id": "nlvc_home"
+        }
+      ],
       "milestones": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "北极光创投自述以早期投资为主并提供投后支持。机构公布的历史规模和退出项目数按网页标注截至2022年12月记录。",
       "track_record": [
+        {
+          "description": "官网披露截至2022年12月管理资产约300亿元、投资创业公司400余家、成功退出60余家；此为机构历史运营数量，不代表基金收益率。",
+          "source_id": "nlvc_home"
+        },
         {
           "description": "融资来源记录：上海宇道生物技术有限公司 · C1轮 · 2026-09-15 · A+轮老股东持续加码 · 数千万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-163d5b5325339f27"
@@ -255,8 +279,45 @@
           "source_id": "FISRC-4dbba5d9789ac616"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "北极光创投",
+          "url": "https://nlvc.com.cn/",
+          "source_id": "nlvc_home"
+        },
+        {
+          "kind": "email",
+          "label": "新消费项目联系",
+          "value": "consumer@nlvc.com.cn",
+          "url": "https://nlvc.com.cn/",
+          "source_id": "nlvc_home"
+        },
+        {
+          "kind": "email",
+          "label": "新技术项目联系",
+          "value": "enterprise@nlvc.com.cn",
+          "url": "https://nlvc.com.cn/",
+          "source_id": "nlvc_home"
+        },
+        {
+          "kind": "email",
+          "label": "医疗健康项目联系",
+          "value": "healthcare@nlvc.com.cn",
+          "url": "https://nlvc.com.cn/",
+          "source_id": "nlvc_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "nlvc_home",
+          "source_url": "https://nlvc.com.cn/",
+          "source_title": "欢迎光临 北极光创投 | 北极光创投",
+          "source_content_hash": "2cbbef8e6ec4c18a4aa46fa240cad6507ae8af992ea05f8d6af0c76065848d97",
+          "quote": "北极光创投官网：300亿管理资产、400+投资创业公司、60+成功退出（截至2022年12月）；投资新消费、新技术、医疗健康；公开项目联络邮箱 consumer@nlvc.com.cn、enterprise@nlvc.com.cn、healthcare@nlvc.com.cn。",
+          "quote_hash": "1e8ad10bef192b4b5eb560910e92b4ceeda5c8242e4da325a93dc882756feda8"
+        },
         {
           "source_id": "FISRC-163d5b5325339f27",
           "source_url": "https://www.vbdata.cn/54325",
@@ -282,7 +343,10 @@
           "quote_hash": "e7e793a691529ef9b820b87302a1db772414fe2c34d4df496626b0d1f4733c1e"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

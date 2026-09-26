@@ -192,14 +192,48 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "国家人工智能产业投资基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "国家人工智能产业投资基金的登记法律主体为国家人工智能产业投资基金合伙企业（有限合伙），于2025年1月17日设立，公开登记信息列示出资额人民币600.6亿元。公开资料列出的合伙人包括国智投（上海）私募基金管理有限公司和国家集成电路产业投资基金三期股份有限公司。科大讯飞2026年半年度报告记录该基金获配定向发行股份，是可核对的公开持股案例。基金完整投资策略、管理团队和对外申报联系方式尚未从基金本身的一手网站核实，不根据名称推断具体产业投资范围。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "登记主体",
+          "value": "国家人工智能产业投资基金合伙企业（有限合伙）",
+          "source_id": "national_ai_fund_registration"
+        },
+        {
+          "field": "founded",
+          "label": "设立日期",
+          "value": "2025-01-17（公开登记资料）",
+          "source_id": "national_ai_fund_registration"
+        },
+        {
+          "field": "contributed_capital",
+          "label": "登记出资额",
+          "value": "人民币600.6亿元；登记出资额不等同于实缴资本或已投资金额",
+          "source_id": "national_ai_fund_registration"
+        },
+        {
+          "field": "partners",
+          "label": "公开登记合伙人",
+          "value": [
+            "国智投（上海）私募基金管理有限公司",
+            "国家集成电路产业投资基金三期股份有限公司"
+          ],
+          "source_id": "national_ai_fund_registration"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2025-01-17",
+          "description": "公开登记资料显示基金合伙企业设立。",
+          "source_id": "national_ai_fund_registration"
+        }
+      ],
       "track_record": [
+        {
+          "description": "科大讯飞2026年半年度报告披露该基金获配定向发行股份19,174,374股，锁定期截至2026年10月26日。此项只表示公开持股/配售案例，不代表完整投资组合。",
+          "source_id": "national_ai_fund_2026_shareholder"
+        },
         {
           "description": "融资来源记录：DeepSeek · 首次外部融资 · 2026-06-03 · 本轮参投（唯一拥有直接投票权的投资方） · 约74亿美元（约500亿元人民币）。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d2c8c841370ed82a"
@@ -209,8 +243,28 @@
           "source_id": "FISRC-4fe23845696fb5f2"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "登记信息来自新华财经对企业登记资料的转述；持股案例来自上市公司定期报告。600.6亿元为登记出资额，并非已缴规模。未找到基金本体官网、公开投资申报邮箱或电话，避免误用LP、GP或关联机构的联系渠道。",
       "contacts": [],
       "sources": [
+        {
+          "source_id": "national_ai_fund_registration",
+          "source_url": "https://www.cnfin.com/kx/detail/20250120/4176924_1.html",
+          "source_title": "国家人工智能产业投资基金合伙企业（有限合伙）成立 - 新华财经",
+          "source_content_hash": "b980ed0a77bf814675d77ea57754abc2cb1a6283ea6ff9bd88d99a516e81934a",
+          "quote": "新华财经转述企业登记信息称，国家人工智能产业投资基金合伙企业（有限合伙）于2025年1月17日设立，出资额600.6亿元，经营范围包括私募基金股权投资、投资管理和资产管理；登记信息列出国智投（上海）私募基金管理有限公司与国家集成电路产业投资基金三期股份有限公司为合伙人。",
+          "quote_hash": "b12ab5ada8fde6bb29dffecf097eb771d3bcb94384a605d569985d42042b4a23"
+        },
+        {
+          "source_id": "national_ai_fund_2026_shareholder",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-08-21/1225485550.PDF",
+          "source_title": "科大讯飞股份有限公司2026年半年度报告",
+          "source_content_hash": "27b67fc2618ae8097e22b060580e8ebd0616d061af1d6118f057b43773406150",
+          "quote": "科大讯飞2026年半年度报告披露，国家人工智能产业投资基金合伙企业（有限合伙）获配公司定向发行股份19,174,374股，锁定期截至2026年10月26日；这是其一项可核对的公开持股案例。",
+          "quote_hash": "23bae83eca5c1fe681e9f1e041f6c3c1c06adea2ada2894336acd4aafacc1a9d"
+        },
         {
           "source_id": "FISRC-d2c8c841370ed82a",
           "source_url": "https://ashareinsights.com/deepseek-7-billion-funding-term-sheet-control/",
@@ -228,7 +282,7 @@
           "quote_hash": "d4e8f7444a626c3a00cf012a0115c7c61c1fe62a41056d12dba1084ec55a7289"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

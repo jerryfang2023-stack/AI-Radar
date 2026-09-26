@@ -121,41 +121,72 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "周顺波 的来源线索将其与欧拉万象（创始人兼CEO）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "coverage_status": "researched",
+      "summary": "周顺波是欧拉万象创始人兼 CEO，研究背景为机器人学。每日经济新闻2026年专访回溯其博士阶段、一次早期创业尝试及在华为近五年的经历；五源资本的融资公告补充其在华为具身智能团队与 CloudRobo 平台上的工作。任职与业绩均按对应来源归属，未将团队成绩写作其个人独立成果。",
+      "current_roles": [
+        {
+          "organization": "欧拉万象（Ola Dimensions）",
+          "title": "创始人兼 CEO",
+          "source_id": "5y_ola_shunbo"
+        }
+      ],
       "career": [
         {
-          "organization": "欧拉万象",
-          "title": "创始人兼CEO",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将周顺波与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-aad97c1f07ceb5c6"
-        }
-      ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
-      "sources": [
-        {
-          "source_id": "FISRC-aad97c1f07ceb5c6",
-          "source_url": "https://www.sohu.com/a/1041806074_120109837",
-          "source_title": "融资披露来源",
-          "source_content_hash": "2af3607d3a79e574",
-          "quote": "欧拉万象创始人兼CEO周顺波表示",
-          "quote_hash": "80be404c83a303a10261ee02223614918e892901cd5240eace3349f49c5b8cee"
+          "organization": "欧拉万象（Ola Dimensions）",
+          "title": "创始人兼 CEO",
+          "period": "2026年3月创立；当前职务来源于融资公告",
+          "description": "面向家庭具身智能方向创业。",
+          "source_id": "5y_ola_shunbo"
         },
         {
-          "source_id": "FISRC-62bfb7c7dd37177e",
-          "source_url": "https://www.163.com/dy/article/KUTU3HNL05118HJE.html",
-          "source_title": "融资披露来源",
-          "source_content_hash": "a54d75c4d3b7f57123d80c5eb586484d9da91aa534aa133431798f370e64acad",
-          "quote": "创始人周顺波曾是华为具身智能领域的1号员工、公司级首席专家，也是华为唯一一位以“智能机器人”作为课题引入的“天才少年”。",
-          "quote_hash": "16acc628c6673dd0e174e5770512b594e13c2b10eea209fd0ef592781d285d98"
+          "organization": "华为",
+          "title": "具身智能团队负责人、华为云物理智能创新实验室负责人 / 首席专家",
+          "period": "约2021年至2026年3月；报道概述近五年",
+          "description": "每日经济新闻报道其负责组建并带领具身智能研发团队、推出 CloudRobo 平台并推进工业场景技术验证和客户交付；五源资本亦披露其在华为的相关团队工作。团队规模和平台成果按来源归属，不外推为其个人独立成果。",
+          "source_id": "nbd_zhou_shunbo"
+        },
+        {
+          "organization": "机器人创业项目（未披露公司名称）",
+          "title": "全职筹备创业项目",
+          "period": "2020年博士毕业后约一年",
+          "description": "每日经济新闻专访称其曾完成原型系统，但项目未继续；因未披露公司或法律实体，不收录为正式公司关联。",
+          "source_id": "nbd_zhou_shunbo"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "education": [
+        {
+          "institution": "香港中文大学",
+          "qualification": "机器人学博士阶段研究；公开来源明确称博士毕业，未在该采访中标明授予时间或学位名称细节。",
+          "source_id": "nbd_zhou_shunbo"
+        }
+      ],
+      "experience_summary": "具备机器人学研究与机器人产品工程化经历。五源资本2026年融资公告称其曾是华为具身智能“1号员工”和公司级首席专家，并参与团队建设与 CloudRobo 平台研发；2026年从华为离职后创立欧拉万象。",
+      "track_record": [
+        {
+          "description": "报道记载其参与构建华为具身智能团队并负责CloudRobo平台相关工作；引用为华为任职经历，不表示独立发明或全部成果归属个人。",
+          "source_id": "5y_ola_shunbo"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "nbd_zhou_shunbo",
+          "source_url": "https://www.nbd.com.cn/articles/2026-08-12/4539791.html",
+          "source_title": "每日经济新闻：周顺波专访",
+          "source_content_hash": "2c499294359fd5dec33d70698fb292d5e955a105002bb897d4bcf58c22e69d0c",
+          "quote": "周顺波与机器人的羁绊早在读博阶段便已开始；他在香港中文大学机器人学博士求学期间进行机器人研究。2020年博士毕业后，他先筹备机器人创业项目，后于2021年进入华为；2026年3月离职并创立欧拉万象。",
+          "quote_hash": "ed7746ec7ea11d94583ad544a9c5985fcce041a1eac6b855efb9001f89e5e24a"
+        },
+        {
+          "source_id": "5y_ola_shunbo",
+          "source_url": "https://elsewhere.news/zh/5ycapital/5y-news",
+          "source_title": "5Y News：欧拉万象融资公告（五源资本供稿）",
+          "source_content_hash": "c7a18c0aa8058637efac1d01ac96e6b86a36b26055633f157aa9ba6f38f6b15b",
+          "quote": "公司创始人周顺波曾是华为具身智能领域的1号员工、公司级首席专家，也是华为唯一一位以“智能机器人”作为课题引入的“天才少年”。他曾主导搭建华为最大具身智能团队并研发CloudRobo平台。",
+          "quote_hash": "93c532edcf6a1d64c32de78ccde729640d8bd1a9dac0712b577db5240c483db5"
+        }
+      ],
+      "last_verified_at": "2026-09-26",
+      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
     }
   },
   "relatedEntities": [],

@@ -111,33 +111,58 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "李睿潜 的来源线索将其与光啾科技（联合创始人）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "李睿潜是光啾科技联合创始人，上海科技大学信息科学与技术学院博士研究生，研究方向包括光计算与储备池计算。校方资料记载其参与开发深度储备池光计算机并作为相关 Optica 论文第二作者；2026 年公开报道将其与光啾科技关联。",
+      "current_roles": [
+        {
+          "title": "联合创始人",
+          "organization": "光啾科技",
+          "source_id": "li_ruiqian_company"
+        }
+      ],
       "career": [
         {
           "organization": "光啾科技",
           "title": "联合创始人",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将李睿潜与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-f0b114ff988b4668"
+          "period": "公开报道于 2026 年关联；任职起始日期未披露",
+          "description": "参与基于深度储备池光计算技术的边缘 AI 处理器创业项目。",
+          "source_id": "li_ruiqian_company"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "上海科技大学信息科学与技术学院",
+          "qualification": "博士研究生，2022 级（校方 2024 年科研报道）",
+          "source_id": "li_ruiqian_research"
+        }
+      ],
+      "experience_summary": "经历连接光学计算科研与创业项目。校方资料记载其参与王成课题组研究，作为深度光子储备池计算论文第二作者；2026 年报道将其身份描述为光啾科技联合创始人，具体任期和其他雇主尚未披露。",
+      "track_record": [
+        {
+          "description": "作为第二作者参与的深度光子储备池计算研究发表于 Optica。上海科技大学介绍，该系统具有四层全光架构并用于光纤通信非线性信道均衡。",
+          "source_id": "li_ruiqian_research"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-f0b114ff988b4668",
+          "source_id": "li_ruiqian_company",
           "source_url": "https://www.163.com/dy/article/KSMH0F6Q05198JD9.html",
-          "source_title": "融资披露来源",
+          "source_title": "融资报道：李睿潜与光啾科技",
           "source_content_hash": "e947d6034eda6ae86fb2e47fc53b794effaa6598349b20a2216596703f8a6f29",
           "quote": "李睿潜（光啾科技联合创始人），一个敢碰最硬骨头的00后",
           "quote_hash": "29678b2bed08c3dabc22b8e6281050ac53238dd8af3d5430b358bff9c3019ff3"
+        },
+        {
+          "source_id": "li_ruiqian_research",
+          "source_url": "https://www.shanghaitech.edu.cn/2024/0102/c1001a1087482/page.htm",
+          "source_title": "信息学院王成课题组开发出深度储备池光计算机-上海科技大学",
+          "source_content_hash": "cc267982a995ae0b13db25742733570c373872eb59746cc78333ef4f886dc7cf",
+          "quote": "上海科技大学为该研究成果的第一完成单位。2022级博士生李睿潜（虞晶怡教授联培生）位列论文第二作者。该成果在Optica发表，团队开发了四层全光深度储备池计算机并应用于光纤通信非线性信道均衡。",
+          "quote_hash": "7a1d64d01563eb10c8a4619547e4a935dacd9a6bcc86617c0b9f6ad35bdcf151"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
     }
   },
   "relatedEntities": [],

@@ -178,13 +178,61 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Deutsche Telekom Capital Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Deutsche Telekom Capital Partners（DTCP）是 Deutsche Telekom 于2014年宣布设立的风险投资与创新投资团队；DTCP现行官网以 Digital Transformation Capital Partners 品牌运营，覆盖数字基础设施、成长型企业软件与防务投资策略。DTCP官网当前自报70余笔投资、25余笔退出及50亿欧元管理资产；这些是平台汇总口径，不代表单一基金业绩。",
+      "facts": [
+        {
+          "field": "historical_name",
+          "label": "原始名称",
+          "value": "Deutsche Telekom Capital Partners（DTCP）",
+          "source_id": "dtcp_telekom"
+        },
+        {
+          "field": "established",
+          "label": "设立时间",
+          "value": "Deutsche Telekom于2014年宣布设立该投资团队；DTCP官网将平台成立年份列为2015年",
+          "source_id": "dtcp_telekom"
+        },
+        {
+          "field": "parent_relationship",
+          "label": "历史关联",
+          "value": "最初由Deutsche Telekom设立并作为其外部创新投资平台；集团同时为DTCP基金提供锚定投资",
+          "source_id": "dtcp_telekom"
+        },
+        {
+          "field": "investment_strategies",
+          "label": "现行投资策略",
+          "value": [
+            "数字基础设施",
+            "成长型企业软件",
+            "防务与韧性科技"
+          ],
+          "source_id": "dtcp_home"
+        },
+        {
+          "field": "aum",
+          "label": "平台管理资产",
+          "value": "50亿欧元（DTCP官网当前自报）",
+          "source_id": "dtcp_home"
+        },
+        {
+          "field": "investment_count",
+          "label": "平台投资记录",
+          "value": "70余笔投资、25余笔退出（DTCP官网当前自报）",
+          "source_id": "dtcp_home"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2014-11",
+          "description": "Deutsche Telekom宣布设立名为Deutsche Telekom Capital Partners（DTCP）的专业投资团队。",
+          "source_id": "dtcp_telekom"
+        }
+      ],
       "track_record": [
+        {
+          "description": "DTCP官网列示70余笔投资及25余笔退出；集团披露的历史案例包括Aircall、Arctic Wolf、Auth0、Cognigy、LeanIX、Pipedrive和Signavio。上述为机构平台汇总披露，不等于特定基金回报。",
+          "source_id": "dtcp_home"
+        },
         {
           "description": "融资来源记录：Groq · A轮 · 2026-08-17 · 历史轮次投资方 · $350M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-28e142eb564f6762"
@@ -194,8 +242,32 @@
           "source_id": "FISRC-85e8550490e53490"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "DTCP官方网站、策略及团队",
+          "value": "Digital Transformation Capital Partners",
+          "url": "https://www.dtcp.capital/",
+          "source_id": "dtcp_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "dtcp_telekom",
+          "source_url": "https://www.telekom.com/en/newsroom/latest-updates/media-information/2014/11/deutsche-telekom-capital-partners",
+          "source_title": "Deutsche Telekom sets up one of the largest investment funds in Europe | Deutsche Telekom",
+          "source_content_hash": "db557b9054b8dbca36a558b9096b47a9234fa7a54e215b3b2f3f1da82eec12f8",
+          "quote": "The Supervisory Board of Deutsche Telekom AG has approved the setup of a specialist team of investment managers in a newly formed company called Deutsche Telekom Capital Partners (DTCP).",
+          "quote_hash": "d5bed27741e7f5fb4c6222ef65c07e845d8ba4ad0f7be76d5c3e044c228f5de1"
+        },
+        {
+          "source_id": "dtcp_home",
+          "source_url": "https://www.dtcp.capital/",
+          "source_title": "DTCP | Driving Digital Transformation: Innovative Investment Strategies by DTCP",
+          "source_content_hash": "517c0ae8f3e8b6cfac845ae62b59998834c551e5942ca269950ccb469fe514bb",
+          "quote": "DTCP reports 70+ investments, 25+ exits and €5 billion in assets under management.",
+          "quote_hash": "01b8e0863719275ab78b4c32ca3009c9fd0d25fa685b152f7512e37ba9a187db"
+        },
         {
           "source_id": "FISRC-28e142eb564f6762",
           "source_url": "https://www.verdict.co.uk/groq-obtains-750m-in-funding-ai-inference-technology/",
@@ -213,7 +285,10 @@
           "quote_hash": "1ab9a3e89cdba5fc45b86870174a402aea545f82fdce6c59c536a1a228b3080a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

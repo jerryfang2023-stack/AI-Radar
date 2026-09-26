@@ -111,33 +111,75 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "卢策吾 的来源线索将其与穹彻智能（创始人）关联。来源日期：2026-08-03；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "卢策吾是上海交通大学人工智能学院教授及穹彻智能联合创始人，研究计算机视觉与机器人。高校官网列出其学术奖励、论文和开源项目；穹彻智能官网披露其斯坦福博士后经历和创业关联。",
+      "current_roles": [
+        {
+          "title": "教授",
+          "organization": "上海交通大学人工智能学院",
+          "source_id": "lucewu_sjtu_profile_202609"
+        },
+        {
+          "title": "联合创始人",
+          "organization": "穹彻智能（Noematrix）",
+          "source_id": "lucewu_noematrix_official"
+        }
+      ],
       "career": [
         {
+          "organization": "斯坦福大学人工智能实验室",
+          "title": "博士后研究员",
+          "period": "回国前；确切日期未见所引资料",
+          "description": "公司官方人物简介称其博士后期间师从李飞飞与Leonidas Guibas。",
+          "source_id": "lucewu_noematrix_official"
+        },
+        {
+          "organization": "上海交通大学",
+          "title": "教授",
+          "period": "2016年回国后任教；现职由学院官网列示",
+          "description": "研究计算机视觉与机器人学。",
+          "source_id": "lucewu_sjtu_profile_202609"
+        },
+        {
           "organization": "穹彻智能",
-          "title": "创始人",
-          "period": "来源报道日期；任职起止时间未披露",
-          "description": "融资来源将卢策吾与该公司的此项身份关联；不据此推断其目前仍在任。",
-          "source_id": "FISRC-4104103d0341371a"
+          "title": "联合创始人",
+          "period": "公司官方资料列示；成立和个人加入的具体日期未在该页面说明",
+          "description": "参与具身智能研发；公司产品指标归属于团队与公司。",
+          "source_id": "lucewu_noematrix_official"
         }
       ],
       "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
-      "sources": [
+      "experience_summary": "从事计算机视觉和机器人研究，学术任职与创业经历由上海交通大学和穹彻智能各自官网支持。公开引用资料没有确认其博士学位学校，故教育经历留空。",
+      "track_record": [
         {
-          "source_id": "FISRC-4104103d0341371a",
-          "source_url": "https://news.pedaily.cn/202606/565336.shtml",
-          "source_title": "融资披露来源",
-          "source_content_hash": "2f5aee29d4ab72af455c0fe89063f39d7749629cb42467511c01ee1a396f84af",
-          "quote": "穹彻智能由该院副院长卢策吾教授创立",
-          "quote_hash": "1c95e3d4f0d7437e9e549a003fcfc61ad4d00678cbbf769f3b18616ca3605285"
+          "description": "上海交通大学列出的代表性工作包括AlphaPose、HAKE和GraspNet开源系统；科研贡献按团队/项目表述。",
+          "source_id": "lucewu_sjtu_profile_202609"
+        },
+        {
+          "description": "获得科学探索奖、MIT TR35中国区入选等荣誉；详情按上海交大官方人物简介记录。",
+          "source_id": "lucewu_sjtu_profile_202609"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "sources": [
+        {
+          "source_id": "lucewu_sjtu_profile_202609",
+          "source_url": "https://sai.sjtu.edu.cn/cn/facultydetails/jgsz/lucewu",
+          "source_title": "卢策吾｜上海交通大学人工智能学院",
+          "source_content_hash": "ef0171fd0ece209f3406f59d257f15269630da79f8814a84a6c95743780a1120",
+          "quote": "上海交通大学人工智能学院将卢策吾列为教授，介绍其从事计算机视觉和机器人研究，获科学探索奖、MIT TR35等荣誉，并开发AlphaPose、HAKE、GraspNet等开源系统。",
+          "quote_hash": "bacb60e4a0e2fd7aca423d224c7194e44b3cc4a1ca83d1e92212f515d4bb95b6"
+        },
+        {
+          "source_id": "lucewu_noematrix_official",
+          "source_url": "https://www.noematrix.ai/news/noematrix_pre-a%2B",
+          "source_title": "穹彻智能1年内揽获3轮融资，红杉中国领投｜穹彻智能",
+          "source_content_hash": "e9d98a34cb1c0c1002dcca8aefc70ef6ee661d1dff78a78835507ad1b69e226c",
+          "quote": "穹彻智能官网称卢策吾为公司联合创始人，曾任斯坦福大学人工智能实验室博士后，2016年回国并担任上海交通大学教授；公司简介亦将其与具身智能研究关联。",
+          "quote_hash": "e89bb3d31a6d09213efb8dbcc41ea091dbed00d00ed144b0e34ae83a3bbbecd4"
+        }
+      ],
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "教授职务、荣誉及研究项目来自上海交大官网；穹彻智能联合创始人与博士后经历来自公司官网。学历留空以避免从同名资料推断。"
     }
   },
   "relatedEntities": [],

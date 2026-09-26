@@ -191,13 +191,50 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "软银 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "融资信息中的“软银”属于集团层级简称，不能与SoftBank Vision Fund、管理公司或日本电信运营商SoftBank Corp混为一谈。SoftBank Group通过不同投资基金和子公司投资技术企业；Vision Fund聚焦长期科技投资，SVF1、SVF2及拉美基金由不同管理实体负责。",
+      "facts": [
+        {
+          "field": "investment_platforms",
+          "label": "主要基金及管理主体",
+          "value": [
+            "SVF1—SoftBank Investment Advisers",
+            "SVF2及拉美基金—SB Global Advisers"
+          ],
+          "source_id": "softbank_group_funds_202608"
+        },
+        {
+          "field": "investment_focus",
+          "label": "Vision Fund公开投资方向",
+          "value": [
+            "人工智能",
+            "机器人",
+            "物联网",
+            "移动计算与通信基础设施",
+            "云软件",
+            "生物计算",
+            "金融科技"
+          ],
+          "source_id": "softbank_visionfund_launch_201610"
+        },
+        {
+          "field": "investment_scope",
+          "label": "基金投资方式",
+          "value": "可对私营或上市技术企业进行少数股权或控股投资；属于基金策略，不代表每一项集团投资都由同一基金完成",
+          "source_id": "softbank_visionfund_close_201705"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2016-10-14",
+          "description": "SoftBank Group宣布设立SoftBank Vision Fund。",
+          "source_id": "softbank_visionfund_launch_201610"
+        },
+        {
+          "date": "2017-05-22",
+          "description": "SoftBank Group公告Vision Fund首次主要交割。",
+          "source_id": "softbank_visionfund_close_201705"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Noetra Corp. · 政府及产业融资 · 2026-07-22 · 本轮参投 · 超过3800亿日元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -208,8 +245,47 @@
           "source_id": "FISRC-b4ba4f68908fa080"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "SoftBank Group官网",
+          "value": "集团及旗下基金结构、公告和联系信息",
+          "url": "https://group.softbank/en/",
+          "source_id": "softbank_group_funds_202608"
+        },
+        {
+          "kind": "website",
+          "label": "Vision Fund组合查询",
+          "value": "基金组合企业目录；不作为投资申请入口",
+          "url": "https://www.visionfund.com/portfolio",
+          "source_id": "softbank_group_funds_202608"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "softbank_visionfund_launch_201610",
+          "source_url": "https://group.softbank/en/news/press/20161014",
+          "source_title": "SoftBank Group宣布设立Vision Fund",
+          "source_content_hash": "842ce5267b6be13eeaaa2adca12b4132b90ae7bea1e45669955aad03fdce3f31",
+          "quote": "SoftBank Group 2016年公告宣布设立SoftBank Vision Fund，面向技术领域进行长期投资，覆盖物联网、人工智能、机器人、移动计算、通信基础设施、生物计算、云软件及金融科技等方向。",
+          "quote_hash": "b69d89a82818e1bfef89abfe8dee3c70fddfefaca05de6abad4801392c5df5d0"
+        },
+        {
+          "source_id": "softbank_visionfund_close_201705",
+          "source_url": "https://group.softbank/en/news/press/20170522",
+          "source_title": "SoftBank Vision Fund首次主要交割",
+          "source_content_hash": "d3f737122a4c30d8b5958dbea6bb4473cbe84f2cfc7a2d9ab99905e7dea6f1d5",
+          "quote": "SoftBank Group公告披露Vision Fund首次主要交割，并说明由SoftBank及其合作方支持；公告阐明基金投资技术企业和基础平台业务，可持有少数股权或控股权益。",
+          "quote_hash": "8695c82918d334451878f164cead9a91e20a51041f76226a14d47ed26aa13b05"
+        },
+        {
+          "source_id": "softbank_group_funds_202608",
+          "source_url": "https://group.softbank/en/about/group",
+          "source_title": "SoftBank Group公司与基金架构｜截至2026年8月",
+          "source_content_hash": "1fbc5b6fb0f4ba677f784ccb5357244e24f5fb2f9841bcc9c8959850ac113931",
+          "quote": "SoftBank Group官网截至2026年8月将SoftBank Investment Advisers列为SVF1管理机构，将SB Global Advisers列为SVF2及拉美基金管理机构，并把相关Vision Fund有限合伙基金分别列示。",
+          "quote_hash": "85f83e3d62860d88d9ff39732b8ce425000656ae001f961c6ef384a0f03d50b1"
+        },
         {
           "source_id": "FISRC-990ec5e1d34ab9a7",
           "source_url": "https://www.ithome.com/0/980/066.htm",
@@ -227,7 +303,11 @@
           "quote_hash": "639b183425a70db37a19304cbbc805e327cc088460b67d4d406f76bfdd2079b5"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "coverage_note": "使用SoftBank Group官方公告及集团公司目录区分集团、基金、管理人与日本电信运营商。融资库的集团级标签不等同某一支基金。",
+      "identity_status": "verified"
     }
   }
 }

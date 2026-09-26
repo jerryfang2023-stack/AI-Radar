@@ -111,33 +111,81 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "袁进辉 的来源线索将其与硅基流动（创始人、CEO）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "袁进辉是硅基流动创始人兼CEO，曾任微软亚洲研究院研究员并创办深度学习框架公司OneFlow。港交所上市申请版本载明其本科、博士教育及主要任职时间；申请版本仍属审核中的披露文件。",
+      "current_roles": [
+        {
+          "title": "创始人兼CEO；港交所申请版本另列董事长、执行董事及总经理",
+          "organization": "硅基流动",
+          "source_id": "yuan_hkex_application_202606"
+        }
+      ],
       "career": [
         {
+          "organization": "微软亚洲研究院",
+          "title": "首席研究员",
+          "period": "2013年6月至2016年10月",
+          "description": "港交所上市申请版本载明其任职时间；硅基流动官网亦确认其曾任该院主管研究员。",
+          "source_id": "yuan_hkex_application_202606"
+        },
+        {
+          "organization": "OneFlow",
+          "title": "创始人",
+          "period": "2017年创办；港交所申请版本列示2017年1月至2023年12月",
+          "description": "带队研发深度学习框架；其作为创办人的经历由公司官方融资报道及港交所申请版本支持。",
+          "source_id": "yuan_hkex_application_202606"
+        },
+        {
           "organization": "硅基流动",
-          "title": "创始人、CEO",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-c1c9258fc2a6aa50"
+          "title": "创始人兼CEO",
+          "period": "2023年8月加入；官方公司报道确认",
+          "description": "带领生成式AI基础设施平台发展；不把公司产品表现等同个人业绩。",
+          "source_id": "yuan_siliconflow_official_202407"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "西安电子科技大学",
+          "qualification": "计算机科学与技术学士，2003年",
+          "source_id": "yuan_hkex_application_202606"
+        },
+        {
+          "institution": "清华大学",
+          "qualification": "计算机科学与技术博士，2008年",
+          "source_id": "yuan_hkex_application_202606"
+        }
+      ],
+      "experience_summary": "职业经历覆盖微软亚洲研究院机器学习研究、开源深度学习框架创业及生成式AI推理基础设施创业。港交所申请版本为2026年6月披露草案，任职与学历信息需以最终发行文件为准。",
+      "track_record": [
+        {
+          "description": "港交所申请版本记载其主导微软亚洲研究院LightLDA项目；硅基流动官网也将LightLDA列为其研究成果。",
+          "source_id": "yuan_hkex_application_202606"
+        },
+        {
+          "description": "创办OneFlow并带队开发深度学习框架；这是团队研发成果，不单独归因于个人。",
+          "source_id": "yuan_hkex_application_202606"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-c1c9258fc2a6aa50",
-          "source_url": "https://c.m.163.com/news/a/KVI76U30051180F7.html",
-          "source_title": "融资披露来源",
-          "source_content_hash": "a53bc07af27b7247bec23f82516128250cb8de39ce39ed9309bb3233891bbff6",
-          "quote": "其创始人、CEO 袁进辉 师从中国人工智能奠基者张钹院士，2008年7月在清华大学计算机系获得工学博士学位，他曾担任微软亚洲研究院主管研究员，2016年选择离职创业。",
-          "quote_hash": "27526038bca2e95431d82a00890829f9856f8aa0a26f8017f05f1f9237563e32"
+          "source_id": "yuan_hkex_application_202606",
+          "source_url": "https://www1.hkexnews.hk/app/sehk/2026/108701/a134761/sehk26063002981.pdf",
+          "source_title": "北京硅基流动科技集团股份有限公司上市申请版本（董事履历）",
+          "source_content_hash": "1e29f243c555a0aee72ab647ef67d7c3dcba5a311a6c5e8ab7890a20e8e206e0",
+          "quote": "港交所2026年上市申请版本记载：袁进辉于2003年获西安电子科技大学计算机科学与技术学士学位、2008年获清华大学同专业博士学位；2013年6月至2016年10月任微软亚洲研究院首席研究员，2017年创办OneFlow，2023年8月加入硅基流动集团并担任董事长、CEO等职务。此为尚待上市审核的申请版本。",
+          "quote_hash": "1615a3a5247d0bf92474512dbefe2de616d8c3a0a39fd1457371026ed804fe2a"
+        },
+        {
+          "source_id": "yuan_siliconflow_official_202407",
+          "source_url": "https://siliconflow.cn/news/wmqrg0qcwzp8z5qiq685l4q1",
+          "source_title": "硅基流动完成近亿元融资：加速生成式 AI 技术普惠进程",
+          "source_content_hash": "24c176e74a29c329282aec545410c1e1eaf2a654a4afd9d0c4c4e03475af62c9",
+          "quote": "硅基流动官网称公司成立于2023年8月，袁进辉为创始人兼CEO，曾任微软亚洲研究院主管研究员、创办OneFlow，并发明LightLDA。",
+          "quote_hash": "09cc70bbc43fade404c3658ee9551a85380444bdfc0d4bc5186a381213882d9b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "教育与任职日期采用港交所上市申请版本，并注明其草案状态；当前硅基流动职务同时由公司官网确认。"
     }
   },
   "relatedEntities": [],

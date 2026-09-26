@@ -129,21 +129,178 @@
       }
     ],
     "public_profile": {
+      "summary": "红杉中国种子基金是红杉中国单列的早期投资序列。红杉官网回顾其自2018年单列，并披露剂泰科技的天使+轮投资、后续加注和2026年IPO；官网称该IPO按开盘价计算将使红杉种子一期实现回本。该业绩为管理方公开口径，不能代表多期基金的整体净回报。",
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "红杉中国种子基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "本记录对应融资数据库中的“红杉中国种子基金”。官网将它描述为红杉中国单列的早期投资序列，未披露独立法人、当前基金规模或完整的最新专属团队名单。剂泰科技IPO和HSG Seed Fund I回本信息均为红杉中国自述；回本按上市首日开盘价计算，不是经审计或独立核验的IRR，也不代表其他基金。",
+      "facts": [
+        {
+          "field": "investment_start",
+          "label": "单列时间",
+          "value": "2018年",
+          "source_id": "hongshan_seed_ipo"
+        },
+        {
+          "field": "investment_stage",
+          "label": "公开案例阶段",
+          "value": "早期投资；剂泰科技案例为天使+轮",
+          "source_id": "hongshan_seed_angel"
+        },
+        {
+          "field": "investment_method",
+          "label": "早期项目决策方式",
+          "value": "官网称红杉种子针对极早期项目建立了快速决策机制",
+          "source_id": "hongshan_seed_decision"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2018",
+          "description": "红杉种子基金单列为早期投资序列。",
+          "source_id": "hongshan_seed_ipo"
+        },
+        {
+          "date": "2026-05-13",
+          "description": "红杉中国官网称红杉种子自2018年单列以来获得首个IPO。",
+          "source_id": "hongshan_seed_ipo"
+        }
+      ],
       "track_record": [
+        {
+          "description": "红杉官网披露，红杉种子于2019年底在天使+轮投资剂泰科技，是公司最早的外部投资人之一；此后六年持续加注五轮。",
+          "source_id": "hongshan_seed_angel"
+        },
+        {
+          "description": "官网称剂泰科技港股IPO是红杉种子一期（HSG Seed Fund I）的首个IPO项目，并按上市首日开盘价口径称整支基金将实现回本；这不是经审计的基金整体回报数据。",
+          "source_id": "hongshan_seed_return"
+        },
+        {
+          "description": "红杉官网公开复盘红杉种子对宇树科技的早期投资，将其作为非共识机器人项目案例；公开文章未披露该笔投资金额或当前持股。",
+          "source_id": "hongshan_unitree"
+        },
         {
           "description": "融资来源记录：深度智控 · B轮 · 2026-07-09 · Pre-A+轮投资方 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-67ccadc4294defd6"
         }
       ],
-      "contacts": [],
+      "current_roles": [
+        {
+          "title": "公元｜红杉中国合伙人；红杉种子对剂泰科技的早期投资决策人",
+          "organization": "红杉中国（官网披露其参与红杉种子基金剂泰科技项目）",
+          "source_id": "hongshan_seed_gong_decision"
+        },
+        {
+          "title": "顾翠萍｜红杉中国董事总经理；剂泰科技项目另一位负责人",
+          "organization": "红杉中国（官网披露其参与红杉种子基金剂泰科技项目）",
+          "source_id": "hongshan_seed_gu_role"
+        }
+      ],
+      "career": [
+        {
+          "organization": "公元｜红杉中国",
+          "title": "合伙人；参与AI制药等科技项目的早期投资判断与支持",
+          "period": "剂泰科技投资发生于2019年底；官网于2026年回顾",
+          "description": "红杉官网记载，公元在与剂泰创始人交流后作出早期投资决定；后续由科技投资与医疗投资团队协作支持公司发展。官网未披露其此前的具体雇主和完整任职年份。",
+          "source_id": "hongshan_seed_gong_decision"
+        },
+        {
+          "organization": "礼来 → 红杉中国",
+          "title": "医药产品研发合作、项目引进与管理；后转入医疗投资",
+          "period": "2012年加入红杉中国（官网2022年采访回顾）",
+          "description": "顾翠萍在红杉中国官网采访中回顾，加入投资行业前曾在礼来参与产品在中国的研发合作、项目引进与管理；加入红杉后覆盖医药、器械、诊断和医疗服务投资，公开案例包括基因治疗、基因编辑、PROTAC及干细胞项目。",
+          "source_id": "hongshan_gu_career"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "红杉中国官方网站",
+          "value": "hongshan.com",
+          "url": "https://www.hongshan.com/",
+          "source_id": "hongshan_contact"
+        },
+        {
+          "kind": "email",
+          "label": "融资计划与商业计划书投递（红杉中国通用入口；官网称将阅读并回复）",
+          "value": "bpchina@hongshan.com",
+          "url": "https://www.hongshan.com/about-us/",
+          "source_id": "hongshan_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "hongshan_contact",
+          "source_url": "https://www.hongshan.com/about-us/",
+          "source_title": "关于我们｜红杉中国",
+          "source_content_hash": "686788d69b2f85c745161c3f9035e1abab4efdb9e1688355e2d316c9ca3bc672",
+          "quote": "如有融资计划，请将您的信件和商业计划书发送至 bpchina@hongshan.com",
+          "quote_hash": "00357243daae11b86b5c3fe08f9f1863db31515e43035973582d6d144beec208"
+        },
+        {
+          "source_id": "hongshan_seed_ipo",
+          "source_url": "https://www.hongshan.com/article/from-seed-to-ipo%EF%BC%8C%E7%BA%A2%E6%9D%89%E7%A7%8D%E5%AD%90%E5%BC%80%E5%A7%8B%E4%BA%A4%E5%8D%B7%E4%BA%86/",
+          "source_title": "From seed to IPO，红杉种子开始交卷了｜红杉中国",
+          "source_content_hash": "4dced08d726cd51c76416901897b9970f76e9652a9ece39e0dbb3958f127ec41",
+          "quote": "自2018年单列以来，红杉种子收获了有史以来第一个IPO。",
+          "quote_hash": "cbd5b395e0c32ea1c74fe12dd11336f36e5d014f370272c3888d1000c355bccc"
+        },
+        {
+          "source_id": "hongshan_seed_angel",
+          "source_url": "https://www.hongshan.com/article/from-seed-to-ipo%EF%BC%8C%E7%BA%A2%E6%9D%89%E7%A7%8D%E5%AD%90%E5%BC%80%E5%A7%8B%E4%BA%A4%E5%8D%B7%E4%BA%86/",
+          "source_title": "From seed to IPO，红杉种子开始交卷了｜剂泰科技案例",
+          "source_content_hash": "4dced08d726cd51c76416901897b9970f76e9652a9ece39e0dbb3958f127ec41",
+          "quote": "2019年底，红杉种子在天使+轮投资了剂泰，是公司最早的外部投资人之一；六年来，红杉对剂泰连续进行了5轮加持，是支持轮次最多的投资机构，也是上市前持股比例第二大的机构股东。",
+          "quote_hash": "487f2bb413e552a50ed27978482393ea3b22b713b3d1cb8b0de0a14049f458a5"
+        },
+        {
+          "source_id": "hongshan_seed_return",
+          "source_url": "https://www.hongshan.com/article/from-seed-to-ipo%EF%BC%8C%E7%BA%A2%E6%9D%89%E7%A7%8D%E5%AD%90%E5%BC%80%E5%A7%8B%E4%BA%A4%E5%8D%B7%E4%BA%86/",
+          "source_title": "From seed to IPO，红杉种子开始交卷了｜HSG Seed Fund I披露",
+          "source_content_hash": "4dced08d726cd51c76416901897b9970f76e9652a9ece39e0dbb3958f127ec41",
+          "quote": "这也直接使得剂泰成为红杉种子一期（HSG Seed Fund I）的第一个“全垒打”项目——按照开盘价计算，整支基金将实现回本。",
+          "quote_hash": "ca49d780cd72d227b0e11ad910c29ac1620149bf552e740fa4b813b33c406d90"
+        },
+        {
+          "source_id": "hongshan_seed_decision",
+          "source_url": "https://www.hongshan.com/article/from-seed-to-ipo%EF%BC%8C%E7%BA%A2%E6%9D%89%E7%A7%8D%E5%AD%90%E5%BC%80%E5%A7%8B%E4%BA%A4%E5%8D%B7%E4%BA%86/",
+          "source_title": "From seed to IPO，红杉种子开始交卷了｜早期决策机制",
+          "source_content_hash": "4dced08d726cd51c76416901897b9970f76e9652a9ece39e0dbb3958f127ec41",
+          "quote": "红杉种子当时刚刚成立一年多，有别于传统的投资流程，而是对极早期项目建立了一个快速决策的特殊机制。",
+          "quote_hash": "d708ae6478585e2ddce6dabc9af019af31ff2ece680d3d21830992652a02aa4b"
+        },
+        {
+          "source_id": "hongshan_seed_gong_decision",
+          "source_url": "https://www.hongshan.com/article/from-seed-to-ipo%EF%BC%8C%E7%BA%A2%E6%9D%89%E7%A7%8D%E5%AD%90%E5%BC%80%E5%A7%8B%E4%BA%A4%E5%8D%B7%E4%BA%86/",
+          "source_title": "From seed to IPO，红杉种子开始交卷了｜公元与剂泰科技",
+          "source_content_hash": "4dced08d726cd51c76416901897b9970f76e9652a9ece39e0dbb3958f127ec41",
+          "quote": "红杉中国合伙人公元回忆。红杉种子当时刚刚成立一年多，有别于传统的投资流程，而是对极早期项目建立了一个快速决策的特殊机制。公元表示：“和Chris聊完后，我们当场就决定给了TS，这在当时是个no-brainer的决定。”",
+          "quote_hash": "750b26e75bd1f35f6f7eed0c563703091b41c2a8c2bfb0da498d0f8beca54ba1"
+        },
+        {
+          "source_id": "hongshan_seed_gu_role",
+          "source_url": "https://www.hongshan.com/article/from-seed-to-ipo%EF%BC%8C%E7%BA%A2%E6%9D%89%E7%A7%8D%E5%AD%90%E5%BC%80%E5%A7%8B%E4%BA%A4%E5%8D%B7%E4%BA%86/",
+          "source_title": "From seed to IPO，红杉种子开始交卷了｜顾翠萍与剂泰科技",
+          "source_content_hash": "4dced08d726cd51c76416901897b9970f76e9652a9ece39e0dbb3958f127ec41",
+          "quote": "红杉中国董事总经理顾翠萍是剂泰科技项目的另一位负责人。",
+          "quote_hash": "1631c7ad5b081a74713c2c52047e67235087799ec9d7dfbbcc129a1f851d1026"
+        },
+        {
+          "source_id": "hongshan_gu_career",
+          "source_url": "https://www.hongshan.com/article/%E7%BA%A2%E6%9D%89%E4%B8%AD%E5%9B%BD%E9%A1%BE%E7%BF%A0%E8%90%8D%EF%BC%9A%E5%A5%BD%E7%9A%84ceo%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%86%B3%E7%AD%96%E6%9C%BA%E5%88%B6%EF%BC%8C%E5%AF%B9%E6%97%A9%E6%9C%9F/",
+          "source_title": "红杉中国顾翠萍：好的CEO+系统的决策机制，对早期创业至关重要",
+          "source_content_hash": "f60a151d276bcec987999359fa2a1a04f7e01e5e92740f987a4ed8bd6cb616f1",
+          "quote": "当时我还在礼来，主要参与一些产品在中国的研发合作、项目引进与管理工作",
+          "quote_hash": "fcba710c5f6908de29530a0a05740157ff44c5874f466f835ffde1893c9c5ade"
+        },
+        {
+          "source_id": "hongshan_unitree",
+          "source_url": "https://www.hongshan.com/article/%E4%BB%8A%E5%A4%A9%EF%BC%8C%E6%88%91%E4%BB%AC%E5%85%AC%E5%BC%80%E4%BA%86%E6%8A%95%E8%B5%84%E5%AE%87%E6%A0%91%E7%9A%84%E4%B8%80%E9%A1%B5%E7%BA%B8/",
+          "source_title": "今天，我们公开了投资宇树的“一页纸”｜红杉中国",
+          "source_content_hash": "3d89581e16ff11b9489972e8f3e1f4f81935cabd4615fe5afa1ce02924a213fc",
+          "quote": "红杉种子基金在一些非共识方向上的决策流程和投资风格与venture、growth阶段的投资不完全一样",
+          "quote_hash": "6d302a4ce674c657c5da5c1041f9b00953868511041d1f3e7b59429a1720cf5c"
+        },
         {
           "source_id": "FISRC-67ccadc4294defd6",
           "source_url": "https://pitchhub.36kr.com/project/1958573801870344",
@@ -153,7 +310,7 @@
           "quote_hash": "c67153b487a2e277a234ccde38c7d6e2f8c54c26c076f2df3329056d74d7d1fd"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

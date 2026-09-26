@@ -132,19 +132,111 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "麓谷发展集团 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "集团身份、业务及基本资料由上交所债券披露文件核验。另有一条数据库融资关系称麓谷发展集团参与驰芯半导体2025年A+轮，但来源是需登录的第三方融资页面，未找到独立原始报道或集团公告，故只作为待复核数据库线索，不计为已确认投资业绩。公开电话来自2023年债券文件的信息披露联系方式，不是确认中的投资申请热线。",
+      "summary": "湖南麓谷发展集团有限公司是长沙高新区直属国有平台，2020年设立，统筹产业投资、创业与股权投资、科技金融、园区开发建设和资产运营。集团2023年债券文件列示注册资本人民币200亿元、实缴资本人民币145.882749亿元，并公开总部地址、官网与信息披露电话。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "企业名称与统一社会信用代码",
+          "value": "湖南麓谷发展集团有限公司；统一社会信用代码91430100MA4RM6QQ3L。",
+          "source_id": "lggroup_sse_profile"
+        },
+        {
+          "field": "ownership",
+          "label": "企业性质",
+          "value": "国有独资有限责任公司。",
+          "source_id": "lggroup_sse_business"
+        },
+        {
+          "field": "registered_capital",
+          "label": "注册资本（2023年债券文件）",
+          "value": "人民币200亿元；同一文件列示实缴资本人民币145.882749亿元。",
+          "source_id": "lggroup_sse_profile"
+        },
+        {
+          "field": "business_scope",
+          "label": "投资与产业职能",
+          "value": [
+            "城市建设投资",
+            "产业投资",
+            "创业投资",
+            "股权投资",
+            "科技企业扶持与服务",
+            "园区建设和运营"
+          ],
+          "source_id": "lggroup_sse_business"
+        },
+        {
+          "field": "investment_record_scale",
+          "label": "集团及相关子公司投资统计",
+          "value": "上市申报文件记载近两年对外投资68.89亿元，其中产业投资65.67亿元、市场化投资3.2154亿元；口径包含相关子公司。",
+          "source_id": "lggroup_industry_track"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2020-08-31",
+          "description": "集团设立，成为长沙高新区直属国有平台。",
+          "source_id": "lggroup_sse_profile"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：驰芯半导体 · A+轮 · 2026-09-23 · A+轮投资 · 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "上市申报文件列示，湖南麓谷及相关子公司近两年完成产业投资65.67亿元、市场化投资3.2154亿元，属于集团及相关子公司的合并口径。",
+          "source_id": "lggroup_industry_track"
+        },
+        {
+          "description": "融资数据库待复核线索：第三方需登录页面将麓谷发展集团列为驰芯半导体2025年A+轮投资方；当前未找到独立原始来源，不能视为已核验的参投业绩。",
           "source_id": "FISRC-d7c3cbdfafeaf4fc"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网（2023年债券文件列示）",
+          "value": "湖南麓谷发展集团",
+          "url": "https://www.lgfzgroup.com/",
+          "source_id": "lggroup_sse_profile"
+        },
+        {
+          "kind": "phone",
+          "label": "2023年债券文件所列信息披露电话；未确认是投资项目联络方式",
+          "value": "+86 731 8899 5680",
+          "source_id": "lggroup_sse_profile"
+        },
+        {
+          "kind": "address",
+          "label": "总部地址（2023年债券文件）",
+          "value": "长沙高新开发区岳麓西大道2450号环创园B1栋2101—2107号",
+          "source_id": "lggroup_sse_profile"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "lggroup_sse_profile",
+          "source_url": "https://static.sse.com.cn/bond/bridge2/disclosure/announcement/c/202310/035609_20231023_2T0Z.pdf",
+          "source_title": "上海证券交易所｜2023年湖南麓谷发展集团有限公司公司债券募集说明书",
+          "source_content_hash": "7421c045ac480fa14ffcc60cb0c215ce46b6b16a099d5b69ba5c0f0a8f556989",
+          "quote": "湖南麓谷发展集团有限公司成立于2020年8月31日，注册资本人民币200亿元、实缴资本人民币145.882749亿元；统一社会信用代码91430100MA4RM6QQ3L，住所为长沙高新开发区岳麓西大道2450号环创园B1栋2101—2107号，官网www.lgfzgroup.com，信息披露电话0731-88995680。",
+          "quote_hash": "4b21dce922391defb024fddad4b48b1ae91f80583cb10c63ea3f3704710346c5"
+        },
+        {
+          "source_id": "lggroup_sse_business",
+          "source_url": "https://static.sse.com.cn/bond/bridge2/disclosure/announcement/c/202310/035609_20231023_OWSF.pdf",
+          "source_title": "上海证券交易所｜湖南麓谷发展集团有限公司财务报表附注",
+          "source_content_hash": "a09e6746e650d32c87afa4b6e0c2be6abd6bf5f652a5d2e71a8f049872af7a55",
+          "quote": "湖南麓谷发展集团有限公司为国有独资有限责任公司，主营业务包括以自有资金从事城市建设投资、产业投资、创业投资和股权投资，以及众创空间运营、高新技术企业服务、科技企业扶持和信息技术咨询等。",
+          "quote_hash": "006e988222d3d01750688fb7ec795b8ffd5fd08561e7d9595118f218587dcc46"
+        },
+        {
+          "source_id": "lggroup_industry_track",
+          "source_url": "https://disc.static.szse.cn/disc/disk03/finalpage/2022-07-25/99884e15-ffd7-4b17-ac04-49e522967be5.PDF",
+          "source_title": "深圳证券交易所｜被投企业上市申报文件中的麓谷投资数据",
+          "source_content_hash": "36297ea9c51eeb644ba0b3a4f93e622b55524d4a9317e1d092f74ec22fc1d96d",
+          "quote": "公开上市申报文件记载，湖南麓谷及相关子公司近两年完成对外投资68.89亿元，其中产业投资65.67亿元、市场化投资3.2154亿元；该数据为集团及相关子公司合并口径。",
+          "quote_hash": "0632e168ae22322e14666396910de8a067fe75ca18c7574f63fc62081bef6204"
+        },
         {
           "source_id": "FISRC-d7c3cbdfafeaf4fc",
           "source_url": "https://m.jobui.com/company/16905688/financing/",
@@ -154,7 +246,7 @@
           "quote_hash": "6767e75b2593984dfcaefbe2001e8a72f177bb33dc0f57ec3197467a830b56d4"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26"
     }
   }
 }

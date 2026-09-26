@@ -111,33 +111,87 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "郑凌霄 的来源线索将其与睿心医疗（创始人&CEO）关联。来源日期：2026-09-12；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "郑凌霄是睿心医疗创始人兼CEO，具有工程力学、流体力学与医疗AI交叉背景。公司官网介绍其本科毕业于北京航空航天大学、获约翰斯·霍普金斯大学博士及美国中北大学MBA，曾任达索系统技术销售专家、博郡汽车仿真部门总监。",
+      "current_roles": [
+        {
+          "title": "CEO、创始人",
+          "organization": "睿心医疗",
+          "source_id": "zhenglingxiao_company"
+        }
+      ],
       "career": [
         {
+          "organization": "达索系统",
+          "title": "技术销售专家",
+          "period": "任职起止时间未披露",
+          "description": "公司官网履历所列职业经历。",
+          "source_id": "zhenglingxiao_company"
+        },
+        {
+          "organization": "博郡汽车",
+          "title": "仿真部门总监",
+          "period": "任职起止时间未披露",
+          "description": "公司官网履历所列职业经历。",
+          "source_id": "zhenglingxiao_company"
+        },
+        {
           "organization": "睿心医疗",
-          "title": "创始人&CEO",
-          "period": "来源记录于 2026-09-12；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-747fad60c39e1d5f"
+          "title": "创始人、CEO",
+          "period": "2017年创立；2025年报道仍为CEO",
+          "description": "联合马骏、兰宏志创立，以工程计算与AI技术开展心血管医疗产品研发。",
+          "source_id": "zhenglingxiao_cls"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "北京航空航天大学",
+          "qualification": "工程力学本科",
+          "source_id": "zhenglingxiao_company"
+        },
+        {
+          "institution": "约翰斯·霍普金斯大学",
+          "qualification": "博士；研究方向与流体力学相关",
+          "source_id": "zhenglingxiao_company"
+        },
+        {
+          "institution": "美国中北大学",
+          "qualification": "MBA",
+          "source_id": "zhenglingxiao_company"
+        }
+      ],
+      "experience_summary": "具有工程仿真、汽车仿真及医疗AI创业经历。公司官网自述其发表论文41篇、拥有专利54项，该数量按官网统计口径列示，未逐项独立核验。",
+      "track_record": [
+        {
+          "description": "与联合创始团队于2017年共同创立睿心医疗；相关创始经历得到财经媒体报道支持。",
+          "source_id": "zhenglingxiao_cls"
+        },
+        {
+          "description": "官网列出论文41篇、专利54项等个人成果统计，尚未逐项核验。",
+          "source_id": "zhenglingxiao_company"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-747fad60c39e1d5f",
-          "source_url": "https://pitchhub.36kr.com/project/1679658712355584",
-          "source_title": "融资披露来源",
-          "source_content_hash": "0b7672f34e03f8984b41abefde90e31216413aaea38cdb9ea7ac3da2140926be",
-          "quote": "郑凌霄 创始人&CEO",
-          "quote_hash": "4bd2d779c307bd9d189ab281f9686302d96add138334718027ebcba9e1b95c01"
+          "source_id": "zhenglingxiao_company",
+          "source_url": "https://www.surgi-plan.com/company/view?id=373",
+          "source_title": "公司简介及创始人履历 - 睿心医疗",
+          "source_content_hash": "f33f24e60e02ef827af6d349e7e940e90286851fed8c97df2b7abed2c0cde0e8",
+          "quote": "公司官网介绍郑凌霄为CEO兼创始人，并列出北航、约翰斯·霍普金斯及中北大学教育和过往任职经历。",
+          "quote_hash": "c1c5352cedcb4db8074abfe02294ec95126e3c92a961d063fc435eba21a417f4"
+        },
+        {
+          "source_id": "zhenglingxiao_cls",
+          "source_url": "https://www.cls.cn/detail/1221752/",
+          "source_title": "睿心医疗CEO郑凌霄专访 - 财联社",
+          "source_content_hash": "76f50bd2836d6d6e0250dd0674ef6d431a794dc4832a782605ae9f14ca6683d4",
+          "quote": "专访介绍郑凌霄与联合创始人于2017年共同创立睿心医疗。",
+          "quote_hash": "925e23d183058ddce4c4f2007752abd938853bdf62ff34c0afac42593c848698"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "个人履历来自睿心医疗官网，创办经历有财经媒体交叉支持；论文与专利数量按公司公开口径。",
+      "last_verified_at": "2026-09-26"
     }
   },
   "relatedEntities": [],

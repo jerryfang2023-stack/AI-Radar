@@ -192,14 +192,54 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Tribe Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Tribe Capital 是一家以数据驱动投资为特色的风险投资机构。官网称其2018年由 Arjun Sethi、Jonathan Hsu 和 Ted Maidenberg 创立，投资范围跨行业、从种子期到成长期；机构披露管理资产超过22亿美元。资产规模为机构自述，不代表已实现收益。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2018",
+          "source_id": "tribe_about"
+        },
+        {
+          "field": "founders",
+          "label": "创始人",
+          "value": [
+            "Arjun Sethi",
+            "Jonathan Hsu",
+            "Ted Maidenberg"
+          ],
+          "source_id": "tribe_about"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "种子期至成长期；官网称跨行业投资",
+          "source_id": "tribe_about"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "官网披露管理资产",
+          "value": "超过22亿美元",
+          "source_id": "tribe_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2018",
+          "description": "官网称 Tribe Capital 成立。",
+          "source_id": "tribe_about"
+        },
+        {
+          "date": "2025",
+          "description": "机构官网时间线称其管理资产规模达到20亿美元。",
+          "source_id": "tribe_milestones"
+        }
+      ],
       "track_record": [
+        {
+          "description": "官网团队页列举其投资 Block、OpenAI、Rippling 和 xAI 等案例；案例来自机构自身介绍，不表示完整组合或回报统计。",
+          "source_id": "tribe_team"
+        },
         {
           "description": "融资来源记录：Higgsfield · B轮 · 2026-08-17 · 本轮参投 · 4 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b235ace767812393"
@@ -209,8 +249,47 @@
           "source_id": "FISRC-199e9e6224efb819"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "label": "官网联系邮箱",
+          "value": "hello@tribecap.co",
+          "url": "https://tribecap.co/about",
+          "source_id": "tribe_about"
+        },
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Tribe Capital",
+          "url": "https://tribecap.co/",
+          "source_id": "tribe_milestones"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "tribe_about",
+          "source_url": "https://tribecap.co/about",
+          "source_title": "About - Tribe Capital",
+          "source_content_hash": "069ab55276cdc7d05bb4409dc3aa95ca5f91f1b3e69f49e9e3e6241c7d305304",
+          "quote": "Tribe Capital was founded in 2018 by Arjun Sethi, Jonathan Hsu, and Ted Maidenberg. The firm is sector and stage agnostic, investing in seed to growth-stage technology companies, and reports over $2.2B in assets under management.",
+          "quote_hash": "1d5883ab2529596baaada5d52104c44cbdb3aa85d41007e11c7596766f3207e2"
+        },
+        {
+          "source_id": "tribe_team",
+          "source_url": "https://tribecap.co/team",
+          "source_title": "Team - Tribe Capital",
+          "source_content_hash": "f0c5daf2d481119ff348d7e72930bfa9b2f58cd71a3d0ca1bab4eb1b30d7a7d3",
+          "quote": "Arjun Sethi is co-founder and chairman of Tribe Capital. The team biography says he previously was a partner at Social Capital, co-founded LOLapps and MessageMe, and held leadership roles at Yahoo.",
+          "quote_hash": "10ccf81850ff742e8389db7dcdbf7e65cc22549b10447e400820d294883d5fbc"
+        },
+        {
+          "source_id": "tribe_milestones",
+          "source_url": "https://tribecap.co/",
+          "source_title": "Tribe Capital",
+          "source_content_hash": "1bef50fbacc328fca1e4d58a7bf3d8482c97359713baa13cdca591816aff93c7",
+          "quote": "Tribe Capital states it achieved $2B in assets under management in 2025.",
+          "quote_hash": "dfc58478538622edeb2b5a403055e4a67282ec10c787a68815c01d29bd3923b8"
+        },
         {
           "source_id": "FISRC-b235ace767812393",
           "source_url": "https://siliconangle.com/2026/08/17/higgsfield-raises-400m-at-5-4-billion-valuation-to-scale-video-and-image-generation-platform/",
@@ -228,7 +307,11 @@
           "quote_hash": "a5880d880abafd8424ab9f4776b34b24620ee2e685cef88a96b23d75a879c367"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }
