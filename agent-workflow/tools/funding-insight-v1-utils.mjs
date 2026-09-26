@@ -1114,6 +1114,10 @@ export function fundingTrancheDisclosureNeedsReview(event = {}, claims = []) {
 
 export function fundingEventCardConsistencyProblems(card = {}, event = {}, claims = [], entities = []) {
   if (!card?.company?.entity_id || !event?.event_id) return [];
+  if ((card.financing?.investors || []).some((investor) => (
+    /(?:集团|公司|资本|基金|投资|创投|控股|机构)(?:联合)?创始人$/u.test(clean(investor?.name))
+      || /^(?:联合)?创始人$/u.test(clean(investor?.name))
+  ))) return ["funding_investor_identity_unidentified"];
   if (fundingTrancheDisclosureNeedsReview(event, claims)) return ["funding_capped_tranche_requires_review"];
   if (fundingCombinedRoundsNeedReview(event, claims)) return ["funding_combined_rounds_requires_review"];
   // Recheck persisted/recovered cards, not only fresh generation eligibility.
