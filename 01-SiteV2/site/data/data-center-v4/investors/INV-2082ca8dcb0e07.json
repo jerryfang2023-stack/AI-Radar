@@ -139,19 +139,88 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Alpha Intelligence Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Investment strategy, team, and contact information are from Alpha Intelligence Capital’s official pages. AMI Labs’ reported $1.03 billion seed round is the company total; the LinkedIn source does not disclose AIC’s individual commitment.",
+      "summary": "Alpha Intelligence Capital is an entrepreneur-led family of global venture funds focused on deep AI and machine-learning companies. It invests from seed through Series B and describes its team as distributed across the United States, Singapore, and Europe.",
+      "facts": [
+        {
+          "field": "focus",
+          "label": "Investment focus",
+          "value": "Deep AI and machine-learning technology companies applying algorithmic expertise to real business problems.",
+          "source_id": "aic_home"
+        },
+        {
+          "field": "stage",
+          "label": "Investment stage",
+          "value": "Seed through Series B.",
+          "source_id": "aic_home"
+        },
+        {
+          "field": "team",
+          "label": "Team background",
+          "value": "The firm says its team and advisors have worked on AI for more than 30 years collectively.",
+          "source_id": "aic_team"
+        },
+        {
+          "field": "geography",
+          "label": "Geographic presence",
+          "value": "United States, Singapore, and Europe.",
+          "source_id": "aic_team"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Advanced Machine Intelligence Labs (AMI Labs) · 种子轮 · 2026-03-12 · 本轮参投 · 10.3亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Alpha Intelligence Capital announced that it co-led DeepOpinion’s €11 million financing with Red River West; the round amount is the company total.",
+          "source_id": "aic_deepopinion"
+        },
+        {
+          "description": "A Toyota Ventures post on AMI Labs’ 2026 seed round names Alpha Intelligence Capital among investors. The reported $1.03 billion is the company’s total round, not AIC’s individual check.",
           "source_id": "FISRC-115626db07e52373"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "label": "Founder inquiries",
+          "value": "info@aicapital.ai",
+          "source_id": "aic_contact",
+          "url": "https://aicapital.ai/contact-us/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "aic_home",
+          "source_url": "https://aicapital.ai/",
+          "source_title": "Alpha Intelligence Capital",
+          "source_content_hash": "7d90fccc47135eeec773d8bea0d89f2ae1ac7efeaf5a194e5c6115aaddcd9847",
+          "quote": "We invest in Seed to Series B, deep Artificial Intelligence/Machine Learning (AI/ML) technology-based companies.",
+          "quote_hash": "5e1a36fda2f3b652b0210eca3c8bca304a5529758ae0bfc87767f7d75e3c936c"
+        },
+        {
+          "source_id": "aic_team",
+          "source_url": "https://aicapital.ai/our-team",
+          "source_title": "Our Team | Alpha Intelligence Capital",
+          "source_content_hash": "15d511b76af960f60feca98bc09d04cc94e1abc3a656418e131fe0f3fbb4b51b",
+          "quote": "Our team is globally distributed with offices in the United States, Singapore, and Europe.",
+          "quote_hash": "95031199e51708c44fa28e0bc24ba32aec374d56554624418f90ad7cf0468f1d"
+        },
+        {
+          "source_id": "aic_contact",
+          "source_url": "https://aicapital.ai/contact-us/",
+          "source_title": "Contact Us | Alpha Intelligence Capital",
+          "source_content_hash": "526006be12eccb11825603eb6417b6c4a01efd93f851591bb303c55fa6a50090",
+          "quote": "info@aicapital.ai",
+          "quote_hash": "0ef24f27be3ed13c9ec80d780eca7ff96698b61bb118d2ce8f6e30a98ce16632"
+        },
+        {
+          "source_id": "aic_deepopinion",
+          "source_url": "https://aicapital.ai/our-musings/why-we-invested-in-deepopinion/",
+          "source_title": "Why we invested in DeepOpinion | Alpha Intelligence Capital",
+          "source_content_hash": "62b489014fd9b4589be11a5ec5ec367e461bba615f7d139c49afa8a1a4968b5b",
+          "quote": "an €11 million funding round co-led by Alpha Intelligence Capital and Red River West",
+          "quote_hash": "32ce0f1b435eb8c57fee818248788a2535bd4c39c6f9e360b8e8f0651ca37910"
+        },
         {
           "source_id": "FISRC-115626db07e52373",
           "source_url": "https://www.linkedin.com/posts/toyota-ventures_ami-labs-activity-7437189879689629697-0_Rg",
@@ -161,7 +230,7 @@
           "quote_hash": "1b41a8f53ba1a57b297b2cc3a4e6e6ef73e263c74af20154ccdf884069e038eb"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }
