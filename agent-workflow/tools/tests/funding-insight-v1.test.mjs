@@ -211,6 +211,18 @@ test("multi-company canonical funding events cannot publish a mismatched company
   );
 });
 
+test("funding cards reject an unnamed founder role as a named investor", () => {
+  const card = {
+    company: { entity_id: "EN-CLEAR-MORPH", name: "清醒异构", canonical_entity_consistent: true },
+    financing: { investors: [{ name: "泾东集团创始人", role: "本轮参投" }] },
+    triggered_by_event_id: "EV-CLEAR-MORPH",
+  };
+  assert.deepEqual(
+    fundingEventCardConsistencyProblems(card, { event_id: "EV-CLEAR-MORPH" }),
+    ["funding_investor_identity_unidentified"],
+  );
+});
+
 test("multi-company funding cards can use the exact source quote when claim object is truncated", () => {
   const card = {
     company: { entity_id: "EN-LUMILENS", name: "Lumilens" },
