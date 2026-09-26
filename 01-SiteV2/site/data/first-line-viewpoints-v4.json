@@ -1,26 +1,26 @@
 {
   "meta": {
-    "generatedAt": "2026-09-25T08:13:07.174Z",
+    "generatedAt": "2026-09-26T00:33:05.126Z",
     "earliestDate": "2026-06-01",
-    "latestDate": "2026-09-24",
+    "latestDate": "2026-09-25",
     "sourcePolicy": "Current and committed historical morning RSS/X records share the Chinese translation and public-page gate. Afternoon follow-builders Skill intake is independently preserved, deduplicated by original URL, and cannot bypass the Chinese, AI-relevance, tag, or source gates.",
     "history": {
       "dataFile": "01-SiteV2/site/data/first-line-viewpoints-history.json",
-      "generatedAt": "2026-09-24T00:33:53.351Z",
-      "sourceCommits": 159,
-      "published": 1407,
-      "pendingTranslation": 820
+      "generatedAt": "2026-09-26T00:33:05.007Z",
+      "sourceCommits": 160,
+      "published": 1417,
+      "pendingTranslation": 822
     },
     "lanes": {
       "morning": {
         "id": "morning-rss",
         "dataFile": "01-SiteV2/site/data/follow-builders-daily.json",
         "historyFile": "01-SiteV2/site/data/first-line-viewpoints-history.json",
-        "generatedAt": "2026-09-24T00:31:39.797Z",
-        "collected": 1435,
-        "published": 1417,
-        "currentPublished": 34,
-        "historicalPublished": 1383,
+        "generatedAt": "2026-09-26T00:31:16.158Z",
+        "collected": 1436,
+        "published": 1425,
+        "currentPublished": 20,
+        "historicalPublished": 1405,
         "builders": 34
       },
       "afternoon": {
@@ -30,29 +30,29 @@
         "date": "2026-09-25",
         "declaredCount": 25,
         "intakeCount": 25,
-        "overlapCount": 0,
-        "intakeOnlyCount": 25
+        "overlapCount": 14,
+        "intakeOnlyCount": 11
       }
     }
   },
   "stats": {
     "builders": 34,
-    "remarks": 1417,
-    "podcasts": 2,
-    "morningIntake": 1435,
-    "morningPublished": 1417,
-    "currentMorningPublished": 34,
-    "historicalPublished": 1383,
+    "remarks": 1425,
+    "podcasts": 1,
+    "morningIntake": 1436,
+    "morningPublished": 1425,
+    "currentMorningPublished": 20,
+    "historicalPublished": 1405,
     "afternoonIntake": 25,
-    "dualCovered": 0,
-    "intakeOnly": 25
+    "dualCovered": 14,
+    "intakeOnly": 11
   },
   "builders": [
     {
       "name": "Peter Yang",
       "handle": "petergyang",
       "role": "Practical AI tutorials and interviews for busy people",
-      "count": 135
+      "count": 137
     },
     {
       "name": "Guillermo Rauch",
@@ -76,7 +76,13 @@
       "name": "Amjad Masad",
       "handle": "amasad",
       "role": "ceo replit. civilizationist",
-      "count": 75
+      "count": 76
+    },
+    {
+      "name": "Thariq",
+      "handle": "trq212",
+      "role": "Claude Code anthropicai. prev YC W20, southpkcommons, medialab",
+      "count": 67
     },
     {
       "name": "Zara Zhang",
@@ -91,12 +97,6 @@
       "count": 64
     },
     {
-      "name": "Thariq",
-      "handle": "trq212",
-      "role": "Claude Code anthropicai. prev YC W20, southpkcommons, medialab",
-      "count": 64
-    },
-    {
       "name": "Dan Shipper",
       "handle": "danshipper",
       "role": "ceo every",
@@ -106,7 +106,7 @@
       "name": "TLDR AI Newsletter",
       "handle": "tldr.tech",
       "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
-      "count": 60
+      "count": 61
     },
     {
       "name": "Madhu Guru",
@@ -115,16 +115,16 @@
       "count": 56
     },
     {
-      "name": "Simon Willison's Blog",
-      "handle": "simonwillison.net",
-      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "count": 54
-    },
-    {
       "name": "Peter Steinberger",
       "handle": "steipete",
       "role": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world.",
-      "count": 53
+      "count": 55
+    },
+    {
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "count": 51
     },
     {
       "name": "Garry Tan",
@@ -142,7 +142,7 @@
       "name": "Nikunj Kothari",
       "handle": "nikunj",
       "role": "partner fpvventures - investing in seed/A. previous: early hire meter, opendoor, atlassian & others. love shimoleejhaveri + 👦👧",
-      "count": 44
+      "count": 45
     },
     {
       "name": "Boris Cherny",
@@ -220,7 +220,7 @@
       "name": "Ben's Bites AI Newsletter",
       "handle": "bensbites.com",
       "role": "Daily AI news curation: product launches, funding, models, tools, industry highlights.",
-      "count": 5
+      "count": 6
     },
     {
       "name": "Amanda Askell",
@@ -255,6 +255,504 @@
   ],
   "remarks": [
     {
+      "id": "2103360292973633770",
+      "source": "x",
+      "name": "Nikunj Kothari",
+      "handle": "nikunj",
+      "role": "partner fpvventures - investing in seed/A. previous: early hire meter, opendoor, atlassian & others. love shimoleejhaveri + 👦👧",
+      "text": "“we believe that every small business owner, specifically for us in the trades, will have bespoke software, \n\nand that last mile is actually where differentiation can become, where you can provide a unique experience to your customers, to your employees” https://t.co/WhBtmHmGqZ https://t.co/IIQ90vD7mZ",
+      "translation": "“我们相信，每一位小企业主，特别是对我们所在的行业而言，都将拥有定制软件，而最后一公里实际上正是差异化得以形成的地方，正是你可以为客户、为员工提供独特体验的地方” https://t.co/WhBtmHmGqZ https://t.co/IIQ90vD7mZ",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "topic": "AI 编程",
+      "columnTags": [
+        {
+          "id": "opinion-ai-coding",
+          "name": "AI Coding 观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-coding",
+          "name": "AI Coding",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 AI 编程工具、设计到代码流程和软件生产方式的变化；需要结合产品发布或文档再做事实判断。",
+      "createdAt": "2026-09-25T05:45:47.000Z",
+      "date": "2026-09-25",
+      "url": "https://x.com/nikunj/status/2103360292973633770",
+      "likes": 4,
+      "retweets": 0,
+      "replies": 0,
+      "historical": false,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260925-15",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2103318850641260959",
+      "source": "x",
+      "name": "Peter Yang",
+      "handle": "petergyang",
+      "role": "Practical AI tutorials and interviews for busy people",
+      "text": "Astra blew up 3D models\nThen Opus blew up videos\nI don’t even know what’s next anymore https://t.co/CGJDOoGvYQ",
+      "translation": "Astra炸掉了3D模型，然后Opus炸掉了视频，我都不知道接下来还会发生什么了 https://t.co/CGJDOoGvYQ",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-25T03:01:06.000Z",
+      "date": "2026-09-25",
+      "url": "https://x.com/petergyang/status/2103318850641260959",
+      "likes": 12,
+      "retweets": 0,
+      "replies": 2,
+      "historical": false,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260925-05",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2103310612864569388",
+      "source": "x",
+      "name": "Peter Yang",
+      "handle": "petergyang",
+      "role": "Practical AI tutorials and interviews for busy people",
+      "text": "This is called stroking the AI's ego and it works https://t.co/CpSvOv3kmF",
+      "translation": "这被称为给AI戴高帽，而且很管用 https://t.co/CpSvOv3kmF",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-25T02:28:22.000Z",
+      "date": "2026-09-25",
+      "url": "https://x.com/petergyang/status/2103310612864569388",
+      "likes": 17,
+      "retweets": 0,
+      "replies": 9,
+      "historical": false,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260925-07",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "https://simonwillison.net/2026/Sep/24/harder/",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Note on 24th September 2026",
+      "content": "The more time I spend working with coding agents, the more convinced I am that they make software engineering even harder. We can do amazing things with them, but unlocking their full potential requires extraordinary discipline and knowledge. Tags: <a href=\"https://simonwilliso",
+      "contentTranslation": "我花越多时间与编码代理打交道，就越发确信它们让软件工程变得愈发困难。借助它们，我们能成就非凡之事，但要想充分释放其潜力，则需要非凡的自律与知识。标签：<a href=\"https://simonwilliso",
+      "contentTranslationStatus": "translated",
+      "translation": "关于2026年9月24日的说明",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-24T23:31:08+00:00",
+      "date": "2026-09-25",
+      "url": "https://simonwillison.net/2026/Sep/24/harder/",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "historical": false,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2103259550325575806",
+      "source": "x",
+      "name": "Thariq",
+      "handle": "trq212",
+      "role": "Claude Code anthropicai. prev YC W20, spc, medialab",
+      "text": "incredibly thoughtful piece on AI and creativity\n\nhopefully we can make our producst better at enabling and amplifying creatives https://t.co/SeI25wbaI7",
+      "translation": "关于人工智能与创造力的思考极为深刻，希望我们能不断优化产品，更好地赋能并放大创作者的创造力 https://t.co/SeI25wbaI7",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-24T23:05:28.000Z",
+      "date": "2026-09-25",
+      "url": "https://x.com/trq212/status/2103259550325575806",
+      "likes": 518,
+      "retweets": 12,
+      "replies": 24,
+      "historical": false,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260925-08",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2103212051065921632",
+      "source": "x",
+      "name": "Thariq",
+      "handle": "trq212",
+      "role": "Claude Code anthropicai. prev YC W20, spc, medialab",
+      "text": "lots feedback here, many of you are planning yourself & don't need plan mode\n\nothers prefer the UX of entering a mode where Claude is just thinking & brainstorming with you\n\nmy plan is to:\n- make plan mode into a built-in mod\n- allow mods to add new modes or override shift+tab https://t.co/SL1IzLvb17",
+      "translation": "这里有很多反馈，你们中的许多人都在自己规划，不需要计划模式，而另一些人则更喜欢进入一种模式的用户体验，在这种模式下，Claude 只是和你一起思考和头脑风暴。我的计划是：- 把计划模式变成一个内置 mod - 允许 mod 添加新模式或覆盖 shift+tab https://t.co/SL1IzLvb17",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-24T19:56:43.000Z",
+      "date": "2026-09-25",
+      "url": "https://x.com/trq212/status/2103212051065921632",
+      "likes": 1654,
+      "retweets": 29,
+      "replies": 193,
+      "historical": false,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260925-10",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2103212052391354794",
+      "source": "x",
+      "name": "Thariq",
+      "handle": "trq212",
+      "role": "Claude Code anthropicai. prev YC W20, spc, medialab",
+      "text": "this should let you customize the plan mode prompt, create + share your own modes or just ignore it and rebind shift+tab to something else all together",
+      "translation": "这应该能让你自定义计划模式提示，创建并分享你自己的模式，或者干脆忽略它，把shift+tab重新绑定到别的功能上。",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-24T19:56:43.000Z",
+      "date": "2026-09-25",
+      "url": "https://x.com/trq212/status/2103212052391354794",
+      "likes": 137,
+      "retweets": 0,
+      "replies": 13,
+      "historical": false,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260925-09",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "https://www.bensbites.com/p/back-to-claude",
+      "source": "blog",
+      "name": "Ben's Bites AI Newsletter",
+      "handle": "bensbites.com",
+      "role": "Daily AI news curation: product launches, funding, models, tools, industry highlights.",
+      "text": "Back to Claude",
+      "content": "GPT-6 Sol and Luna got cheaper",
+      "contentTranslation": "GPT-6 Sol和Luna变得更便宜了",
+      "contentTranslationStatus": "translated",
+      "translation": "返回 Claude\n\n之前的翻译未通过以下检查：缺少中文翻译。请再次翻译完整源文本，并将所有列出的 URL、账号、话题标签、数字、金额、百分比和版本原样复制到译文中。",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-pro",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "Thu, 24 Sep 2026 13:04:08 GMT",
+      "date": "2026-09-24",
+      "url": "https://www.bensbites.com/p/back-to-claude",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "historical": false,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "https://tldr.tech/ai/2026-09-24",
+      "source": "blog",
+      "name": "TLDR AI Newsletter",
+      "handle": "tldr.tech",
+      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
+      "text": "Gemini TTS 🗣️, Claude’s novel enzyme 🧬, Google private memory 🔒",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "translation": "Gemini TTS 🗣️，Claude的新型酶 🧬，Google私人记忆 🔒",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "Thu, 24 Sep 2026 00:00:00 GMT",
+      "date": "2026-09-24",
+      "url": "https://tldr.tech/ai/2026-09-24",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "historical": false,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2103150483062014436",
+      "source": "x",
+      "name": "Peter Steinberger",
+      "handle": "steipete",
+      "role": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world.",
+      "text": "Afghanistan is more excited about AI than we are? https://t.co/rbkSf8pUkM",
+      "translation": "阿富汗对AI的热情比我们还高？https://t.co/rbkSf8pUkM",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-24T15:52:04.000Z",
+      "date": "2026-09-24",
+      "url": "https://x.com/steipete/status/2103150483062014436",
+      "likes": 317,
+      "retweets": 14,
+      "replies": 58,
+      "historical": false,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260925-19",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2103148444701610233",
+      "source": "x",
+      "name": "Peter Steinberger",
+      "handle": "steipete",
+      "role": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world.",
+      "text": "If you just tell the agent to clean up, it will stop far too early. Give it an ambitious goal. Try \"remove 20% of the least useful tests while maintaining code coverage within 2%\"",
+      "translation": "如果你只是告诉智能体去清理，它会过早停下。给它一个宏大的目标。试试“移除20%最没用的测试，同时保持代码覆盖率在2%以内”",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-09-24T15:43:58.000Z",
+      "date": "2026-09-24",
+      "url": "https://x.com/steipete/status/2103148444701610233",
+      "likes": 316,
+      "retweets": 10,
+      "replies": 12,
+      "historical": false,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260925-20",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2103129037011120525",
+      "source": "x",
+      "name": "Amjad Masad",
+      "handle": "amasad",
+      "role": "ceo replit. civilizationist",
+      "text": "Muse can now make apps on Replit https://t.co/AColbWFCEN",
+      "translation": "Muse现在可以在Replit上制作应用了 https://t.co/AColbWFCEN",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "topic": "AI 编程",
+      "columnTags": [
+        {
+          "id": "opinion-ai-coding",
+          "name": "AI Coding 观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-coding",
+          "name": "AI Coding",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 AI 编程工具、设计到代码流程和软件生产方式的变化；需要结合产品发布或文档再做事实判断。",
+      "createdAt": "2026-09-24T14:26:51.000Z",
+      "date": "2026-09-24",
+      "url": "https://x.com/amasad/status/2103129037011120525",
+      "likes": 1674,
+      "retweets": 50,
+      "replies": 100,
+      "historical": false,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260925-11",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
       "id": "https://simonwillison.net/2026/Sep/23/shadow-roots/",
       "source": "blog",
       "name": "Simon Willison's Blog",
@@ -262,7 +760,7 @@
       "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "text": "Shadow roots, explained with live examples",
       "content": "Tool: Shadow roots, explained with live examples Prompt to Fable 5.1 Medium: Build an artifact to explain shadow roots in CSS with interactive examples",
-      "contentTranslation": "工具：Shadow roots，用实时示例讲解 给 Fable 5.1 Medium 的提示词：构建一个工件，用交互式示例讲解 CSS 中的 shadow roots",
+      "contentTranslation": "工具：Shadow roots，配合实时示例讲解 给 Fable 5.1 Medium 的提示词：构建一个工件，用交互式示例讲解 CSS 中的 shadow roots",
       "contentTranslationStatus": "translated",
       "translation": "Shadow roots，通过实时示例进行解释",
       "translationStatus": "translated",
@@ -307,7 +805,7 @@
       "content": "",
       "contentTranslation": "",
       "contentTranslationStatus": "unavailable",
-      "translation": "GPT-6 ⚡，Opus 5.5 🧠，AI领袖齐聚联合国 🌐",
+      "translation": "GPT-6 ⚡、Opus 5.5 🧠、AI领袖齐聚联合国 🌐",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
@@ -347,10 +845,17 @@
       "handle": "rauchg",
       "role": "vercel CEO",
       "text": "Software will never die again. You liked Google Reader? Cool, you can generate and deploy your own. Yours, forever.",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "软件将永远不会再次消亡。你喜欢Google Reader吗？酷，你可以生成并部署你自己的版本。永远属于你。",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "e472c0f34c548013",
       "topic": "AI 编程",
       "columnTags": [
         {
@@ -372,12 +877,14 @@
       "likes": 1045,
       "retweets": 33,
       "replies": 76,
-      "historical": false,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -388,7 +895,7 @@
       "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "text": "SF October 14th: A Birds of a Feather Session on Agentic Engineering",
       "content": "SF October 14th: A Birds of a Feather Session on Agentic Engineering I'm hosting an evening event with Jesse Vincent in San Francisco on Wednesday 14th October for people who are building weird and interesting things with and on top of",
-      "contentTranslation": "旧金山10月14日：一场关于智能体工程的“物以类聚”交流会。我将于10月14日星期三晚上与Jesse Vincent在旧金山举办一场活动，面向那些正在用以下技术并在其之上构建奇特而有趣事物的人：",
+      "contentTranslation": "旧金山10月14日：一场关于智能体工程的“物以类聚”交流会。我将于10月14日星期三晚上在旧金山与Jesse Vincent共同举办一场活动，面向那些正在用以下技术、并在此基础上构建奇特而有趣事物的人：",
       "contentTranslationStatus": "translated",
       "translation": "SF 10月14日：关于智能体工程的“物以类聚”交流会",
       "translationStatus": "translated",
@@ -429,11 +936,18 @@
       "name": "Peter Yang",
       "handle": "petergyang",
       "role": "Practical AI tutorials and interviews for busy people",
-      "text": "@claudeai If you enjoyed this, sign up for free to my newsletter to get my best AI and product guides.\n\nJoin 110,000+ subscribers here:\nhttps://t.co/yz9xcsfrhF",
+      "text": "@claudeai If you enjoyed this, sign up for free to my newsletter to get my best AI and product guides. Join 110,000+ subscribers here: https://t.co/yz9xcsfrhF",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "@claudeai 如果你喜欢这个，免费订阅我的新闻通讯，获取我最棒的AI和产品指南。加入110,000+订阅者，点击这里：https://t.co/yz9xcsfrhF",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "d522c103435767f5",
       "topic": "产品与创业",
       "columnTags": [
         {
@@ -455,12 +969,14 @@
       "likes": 1,
       "retweets": 0,
       "replies": 0,
-      "historical": false,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -470,10 +986,17 @@
       "handle": "petergyang",
       "role": "Practical AI tutorials and interviews for busy people",
       "text": "I talk about why Opus 5.5 is the most excited I've been about a Claude model in awhile here: https://t.co/PBxPzE43Ud",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "我在这里谈论了为什么Opus 5.5是我一段时间以来对Claude模型最兴奋的一次：https://t.co/PBxPzE43Ud",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "4b911db47c31be69",
       "topic": "AI 基础设施",
       "columnTags": [
         {
@@ -495,12 +1018,14 @@
       "likes": 3,
       "retweets": 0,
       "replies": 0,
-      "historical": false,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -510,10 +1035,17 @@
       "handle": "_catwu",
       "role": "claude code + cowork anthropicai, prev: dagster, scale_ai",
       "text": "If you’re looking for ways to try Opus 5.5 and Claude Tag in Slack… https://t.co/PpwztYQx2o",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "如果你正在寻找在Slack中试用Opus 5.5和Claude Tag的方法…… https://t.co/PpwztYQx2o",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "0b24a45ad6d86923",
       "topic": "产品与创业",
       "columnTags": [
         {
@@ -535,12 +1067,14 @@
       "likes": 119,
       "retweets": 2,
       "replies": 7,
-      "historical": false,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -593,10 +1127,17 @@
       "handle": "garrytan",
       "role": "President & CEO ycombinator —Founder garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
       "text": "Capy (@capydotai) lets me drop PRs much much faster than I would with Codex or Claude Code alone https://t.co/s6xeWJahvJ",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "Capy（@capydotai）让我提交 PR 的速度比单用 Codex 或 Claude Code 快得多 https://t.co/s6xeWJahvJ",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "22eac0fc69928c3a",
       "topic": "AI 编程",
       "columnTags": [
         {
@@ -618,12 +1159,14 @@
       "likes": 111,
       "retweets": 9,
       "replies": 29,
-      "historical": false,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -632,11 +1175,18 @@
       "name": "Boris Cherny",
       "handle": "bcherny",
       "role": "Claude Code anthropicai",
-      "text": "I used Opus 5.5 to formally verify the Claude Agent SDK using Lean. A couple short prompts = 16 PRs fixing various bugs and race conditions. Video attached.\n\nTLA+ also works well. I sometimes combine Lean and TLA+ to look for issues around data flow, concurrency, and state mgmt.\n\nI don't know either language well, but Claude is excellent at both. This approach is super useful for formally modeling your code and finding bugs that a human probably wouldn't have spotted.\n\nIs formal verification the future of coding (or at least, bug finding)?",
+      "text": "I used Opus 5.5 to formally verify the Claude Agent SDK using Lean. A couple short prompts = 16 PRs fixing various bugs and race conditions. Video attached. TLA+ also works well. I sometimes combine Lean and TLA+ to look for issues around data flow, concurrency, and state mgmt. I don't know either language well, but Claude is excellent at both. This approach is super useful for formally modeling your code and finding bugs that a human probably wouldn't have spotted. Is formal verification the future of coding (or at least, bug finding)?",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "我使用 Opus 5.5 通过 Lean 对 Claude Agent SDK 进行了形式化验证。几个简短的提示词 = 16 个 PR，修复了各种 bug 和竞态条件。视频附上。TLA+ 也同样效果很好。我有时会结合 Lean 和 TLA+ 来查找数据流、并发和状态管理方面的问题。我对这两种语言都不太熟悉，但 Claude 对两者都很擅长。这种方法对于对你的代码进行形式化建模，并发现人类可能不会察觉的 bug 非常有用。形式化验证是编程的未来吗（或者至少，是发现 bug 的未来）？",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "b71b1bc0613a6742",
       "topic": "Agent",
       "columnTags": [
         {
@@ -658,12 +1208,14 @@
       "likes": 3324,
       "retweets": 165,
       "replies": 258,
-      "historical": false,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -672,11 +1224,18 @@
       "name": "Guillermo Rauch",
       "handle": "rauchg",
       "role": "vercel CEO",
-      "text": "We ran fresh Next.js evals. The tally:\n① Opus 5.5    [𝟿𝟽%]\n② GPT 6 Sol   [𝟿𝟽%]\n③ Fable 5.1     [𝟿𝟽%]\n④ Grok 4.7     [𝟿𝟺%]\n\nNotably, Grok is 2x-7x cheaper https://t.co/BAUg14981G",
+      "text": "We ran fresh Next.js evals. The tally: ① Opus 5.5 [𝟿𝟽%] ② GPT 6 Sol [𝟿𝟽%] ③ Fable 5.1 [𝟿𝟽%] ④ Grok 4.7 [𝟿𝟺%] Notably, Grok is 2x-7x cheaper https://t.co/BAUg14981G",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "我们重新跑了 Next.js 评测。结果如下：① Opus 5.5 [𝟿𝟽%] ② GPT 6 Sol [𝟿𝟽%] ③ Fable 5.1 [𝟿𝟽%] ④ Grok 4.7 [𝟿𝟺%] 值得注意的是，Grok 便宜 2x-7x https://t.co/BAUg14981G",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-pro",
+      "translationSourceHash": "cd010a4258856055",
       "topic": "产品与创业",
       "columnTags": [
         {
@@ -698,12 +1257,14 @@
       "likes": 1087,
       "retweets": 55,
       "replies": 133,
-      "historical": false,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -712,11 +1273,18 @@
       "name": "Garry Tan",
       "handle": "garrytan",
       "role": "President & CEO ycombinator —Founder garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
-      "text": "We need to teach the world to prompt and maximally use AI: to help all people see the way it can give you wings in all your pursuits \n\nThen we need yearn to solve more problems for ourselves and for one another https://t.co/e7yOADOf6s",
+      "text": "We need to teach the world to prompt and maximally use AI: to help all people see the way it can give you wings in all your pursuits Then we need yearn to solve more problems for ourselves and for one another https://t.co/e7yOADOf6s",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "我们需要教会世界如何提示并最大限度地利用AI：帮助所有人看到，它能在你的一切追求中为你插上翅膀。然后，我们需要渴望为自己、也为彼此解决更多问题 https://t.co/e7yOADOf6s",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "0ae96b50dd9ee58a",
       "topic": "产品与创业",
       "columnTags": [
         {
@@ -738,12 +1306,14 @@
       "likes": 144,
       "retweets": 17,
       "replies": 31,
-      "historical": false,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -753,10 +1323,17 @@
       "handle": "trq212",
       "role": "Claude Code anthropicai. prev YC W20, spc, medialab",
       "text": "workflows are a huge part of how I use Claude these days, I'm glad we have Fable-like intelligence that works with workflows from a cost perspective",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "如今，工作流是我使用 Claude 的重要方式之一，我很高兴我们拥有类似 Fable 的智能，从成本角度来看，它能与工作流配合使用。",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "074442cfe68d2210",
       "topic": "产品与创业",
       "columnTags": [
         {
@@ -778,12 +1355,14 @@
       "likes": 73,
       "retweets": 0,
       "replies": 5,
-      "historical": false,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -792,11 +1371,18 @@
       "name": "Aaron Levie",
       "handle": "levie",
       "role": "ceo box - your business lives in content. unleash it with AI",
-      "text": "What an insane day in AI. The frontier models just became substantially cheaper, with the Opus 5.5 price cuts, and now with GPT-6 Sol and Luna dropping token prices by 50%.\n\nThe rate at which the cost per task (on a like-for-like basis) drops in AI is unlike any other type of technology in history. And every time the cost of AI drops, the use-cases you can deploy agents against dramatically increase. This is Jevons paradox applied to agents.\n\nThese improvements will directly lead to broader diffusion of AI in the economy as we can use agents to process all of our data, scan our code for security issues, read through all log data to make decisions, have agent swarms in workflows, and much more. The cost of tokens is directly correlated to these use-cases being opened up at scale.",
+      "text": "What an insane day in AI. The frontier models just became substantially cheaper, with the Opus 5.5 price cuts, and now with GPT-6 Sol and Luna dropping token prices by 50%. The rate at which the cost per task (on a like-for-like basis) drops in AI is unlike any other type of technology in history. And every time the cost of AI drops, the use-cases you can deploy agents against dramatically increase. This is Jevons paradox applied to agents. These improvements will directly lead to broader diffusion of AI in the economy as we can use agents to process all of our data, scan our code for security issues, read through all log data to make decisions, have agent swarms in workflows, and much more. The cost of tokens is directly correlated to these use-cases being opened up at scale.",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "AI领域真是疯狂的一天。前沿模型刚刚大幅降价，Opus 5.5价格下调，现在GPT-6 Sol和Luna又把token价格降低了50%。AI中每个任务成本（在同类对比基础上）下降的速度，是历史上任何其他技术都无法比拟的。而每当AI成本下降，你可以部署智能体来应对的用例就会急剧增加。这就是杰文斯悖论在智能体上的应用。这些改进将直接推动AI在经济中更广泛地扩散，因为我们可以用智能体来处理我们所有的数据、扫描代码中的安全问题、通读所有日志数据来做决策、在工作流中部署智能体集群，等等。token成本与这些用例能否大规模开放直接相关。",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-pro",
+      "translationSourceHash": "5e9f96b71ade1102",
       "topic": "Agent",
       "columnTags": [
         {
@@ -818,12 +1404,14 @@
       "likes": 655,
       "retweets": 69,
       "replies": 68,
-      "historical": false,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -833,10 +1421,17 @@
       "handle": "claudeai",
       "role": "Claude is an AI assistant built by anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app.",
       "text": "Claude Opus 5.5 is available today. What will you explore?",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "Claude Opus 5.5今日已上线。你将探索什么？",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "3cbcaf2a1fe41258",
       "topic": "产品与创业",
       "columnTags": [
         {
@@ -858,12 +1453,14 @@
       "likes": 226,
       "retweets": 5,
       "replies": 28,
-      "historical": false,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -873,10 +1470,17 @@
       "handle": "claudeai",
       "role": "Claude is an AI assistant built by anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app.",
       "text": "A toy brick-building app. Turn a photo or a description into a buildable model with custom instructions. https://t.co/zDFMIKuXLP",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "一款玩具积木拼搭应用。将照片或描述转化为可拼搭的模型，并附上定制说明。https://t.co/zDFMIKuXLP",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "110cea5e064579ee",
       "topic": "AI 基础设施",
       "columnTags": [
         {
@@ -898,12 +1502,14 @@
       "likes": 257,
       "retweets": 7,
       "replies": 4,
-      "historical": false,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -912,11 +1518,18 @@
       "name": "Sam Altman",
       "handle": "sama",
       "role": "The mission of OpenAI is to ensure that AGI benefits all of humanity",
-      "text": "michelle embodies this as much as anyone\n\nopenai is so, so lucky to have benefited from everything she has done so far and i think people will be quite pleased to see what she + team have cooking next! https://t.co/AVZAtyk6Uc",
+      "text": "michelle embodies this as much as anyone openai is so, so lucky to have benefited from everything she has done so far and i think people will be quite pleased to see what she + team have cooking next! https://t.co/AVZAtyk6Uc",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "michelle最能体现这一点，openai能受益于她迄今为止所做的一切，真是太幸运了，我想人们会非常高兴看到她和团队接下来准备的东西！https://t.co/AVZAtyk6Uc",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "c0ebce572f82d233",
       "topic": "产品与创业",
       "columnTags": [
         {
@@ -938,12 +1551,14 @@
       "likes": 2124,
       "retweets": 58,
       "replies": 121,
-      "historical": false,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -952,11 +1567,18 @@
       "name": "Alex Albert",
       "handle": "alexalbert__",
       "role": "Research AnthropicAI. Opinions are my own!",
-      "text": "Prompt in Claude Tag\n\n\"Recreate Market Street, San Francisco as it stood on April 17, 1906, the afternoon before the earthquake, in Blender.\n\nScope: the Ferry Building up Market to Fifth Street, including the Palace Hotel, the Call Building, the Chronicle Building, Lotta's Fountain and the Emporium.\n\nBefore modeling anything, build a source file from: the 1899-1905 Sanborn fire insurance maps (footprints, heights, materials, occupants), the Miles Brothers film \"A Trip Down Market Street\" (April 1906), period photographs from OpenSFHistory, the Library of Congress and the David Rumsey collection, and USGS topography. Record every building with footprint, height, facade material, occupant, and the source for each fact with a confidence level.\n\nBuild everything in Blender Python. No downloaded meshes, textures or HDRIs. Write reusable generators (Victorian commercial facade, mansard roof, bay windows, awnings, painted signage, gas and electric street lamps, cable car, horse-drawn wagon, early automobile) and assemble the street from the source file, so every building traces back to data.\n\nProvide a 10 second video up the street.\"",
+      "text": "Prompt in Claude Tag \"Recreate Market Street, San Francisco as it stood on April 17, 1906, the afternoon before the earthquake, in Blender. Scope: the Ferry Building up Market to Fifth Street, including the Palace Hotel, the Call Building, the Chronicle Building, Lotta's Fountain and the Emporium. Before modeling anything, build a source file from: the 1899-1905 Sanborn fire insurance maps (footprints, heights, materials, occupants), the Miles Brothers film \"A Trip Down Market Street\" (April 1906), period photographs from OpenSFHistory, the Library of Congress and the David Rumsey collection, and USGS topography. Record every building with footprint, height, facade material, occupant, and the source for each fact with a confidence level. Build everything in Blender Python. No downloaded meshes, textures or HDRIs. Write reusable generators (Victorian commercial facade, mansard roof, bay windows, awnings, painted signage, gas and electric street lamps, cable car, horse-drawn wagon, early automobile) and assemble the street from the source file, so every building traces back to data. Provide a 10 second video up the street.\"",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "提示词（Claude标签）：“在Blender中重建1906年4月17日下午地震前的旧金山市场街。范围：从渡轮大厦沿市场街到第五街，包括皇宫酒店、呼叫大楼、纪事报大楼、洛塔喷泉和恩波里姆百货。在建模任何内容之前，请先根据以下资料建立源文件：1899—1905年桑伯恩火灾保险地图（占地轮廓、高度、材料、使用单位）、迈尔斯兄弟影片《市场街之旅》（1906年4月）、OpenSFHistory、国会图书馆和戴维·拉姆齐收藏中的历史照片，以及USGS地形数据。记录每栋建筑的占地轮廓、高度、立面材料、使用单位，并为每项事实注明来源和置信度。全部使用Blender Python构建。不得下载网格、纹理或HDRI。编写可复用的生成器（维多利亚式商业立面、孟莎屋顶、凸窗、遮阳篷、彩绘招牌、煤气灯和电灯路灯、缆车、马拉货车、早期汽车），并根据源文件组装街道，使每栋建筑都能追溯到数据。提供一段沿街向上的10秒视频。”",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-pro",
+      "translationSourceHash": "46caca5d4e617914",
       "topic": "产品与创业",
       "columnTags": [
         {
@@ -978,12 +1600,14 @@
       "likes": 73,
       "retweets": 1,
       "replies": 4,
-      "historical": false,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -992,11 +1616,18 @@
       "name": "Alex Albert",
       "handle": "alexalbert__",
       "role": "Research AnthropicAI. Opinions are my own!",
-      "text": "I've been on a Blender kick with Opus 5.5. Its better 3D modeling and vision mean you can build an entire world from a single prompt.\n\nHistorically accurate San Francisco Market street in 1906, pre-earthquake https://t.co/aisvFLFGy3",
+      "text": "I've been on a Blender kick with Opus 5.5. Its better 3D modeling and vision mean you can build an entire world from a single prompt. Historically accurate San Francisco Market street in 1906, pre-earthquake https://t.co/aisvFLFGy3",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "我最近迷上了用Opus 5.5玩Blender。它更出色的3D建模和视觉能力意味着你可以仅凭一条提示词就构建出整个完整世界。1906年地震前、历史上准确的旧金山市场街 https://t.co/aisvFLFGy3",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "f35ef50fe50acac5",
       "topic": "产品与创业",
       "columnTags": [
         {
@@ -1018,12 +1649,14 @@
       "likes": 890,
       "retweets": 40,
       "replies": 54,
-      "historical": false,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -1032,11 +1665,18 @@
       "name": "Thibault Sottiaux",
       "handle": "thsottiaux",
       "role": "Codex & ChatGPT OpenAI",
-      "text": "GPT-6 Sol and Luna are out. Not only are they a very significant improvement across the board, but also in writing and general \"you know when you try it\" quality. \n\nWe are also permanently reducing the API price by 50% making both of them viable for a ton of new usecases and making your usage go further too, even on the subscriptions.\n\nAnd one more thing. We are loading a banked reset into all accounts of our Plus, Pro and Business users. Let's go!\n\nhttps://t.co/00DRh1sRrO",
+      "text": "GPT-6 Sol and Luna are out. Not only are they a very significant improvement across the board, but also in writing and general \"you know when you try it\" quality. We are also permanently reducing the API price by 50% making both of them viable for a ton of new usecases and making your usage go further too, even on the subscriptions. And one more thing. We are loading a banked reset into all accounts of our Plus, Pro and Business users. Let's go! https://t.co/00DRh1sRrO",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "GPT-6 Sol 和 Luna 已发布。它们不仅在各方面的提升都非常显著，而且在写作和整体“你一试就知道”的质量上也是如此。我们还永久将 API 价格降低 50%，使这两者都能适用于大量新用例，也让你的使用更持久，即使在订阅上也是如此。还有一件事。我们正在为所有 Plus、Pro 和 Business 用户账户加载一次存储的重置。冲吧！https://t.co/00DRh1sRrO",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "c99a6eb123a09042",
       "topic": "AI 基础设施",
       "columnTags": [
         {
@@ -1058,12 +1698,14 @@
       "likes": 23309,
       "retweets": 1512,
       "replies": 2806,
-      "historical": false,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -1072,11 +1714,18 @@
       "name": "Aaron Levie",
       "handle": "levie",
       "role": "ceo box - your business lives in content. unleash it with AI",
-      "text": "At Box, we've been testing Opus 5.5 on a variety of complex enterprise knowledge work tasks dealing with unstructured data with the Box Agent.  \n\nOverall, we saw frontier capability levels, with major performance improvements over Opus 5. 63% fewer tokens used, 42% less verbosity, and 30% faster vs. Opus 5. And the model itself is cheaper, so this is a major win for any agentic computer use, coding, analytics, or data work that enterprises will be doing.\n\nHere are some examples of the task wins and performance gains across a variety of industry tests that we performed:\n\n• Financial services - due diligence (+39% task accuracy): A year of transaction records, with the job of finding every miscalculation in an acquisition target's pricing tool. Opus 5.5 scored a perfect result on every  attempt in half the words Opus 5 used, consuming 82% fewer tokens overall.\n\n• Technology - cloud cost analysis (+65% task accuracy): Work out what a company should actually change about its cloud spend. Opus 5.5 picked the right basis for the retention calculation and kept the source data's unit conventions straight all the way through, so the number at the end actually holds up. It took half the time Opus 5 took, with 70% fewer tokens.\n\n• Consumer products - client account analysis (+17% task accuracy): Set the onboarding targets for a client account, reading across the signed contract, a satisfaction tracker and a team metrics sheet. The contract never states a senior/junior split, so Opus 5.5 derived it from the 18-person roster and showed the rule it used; several clients had a perfect 10 on individual survey questions, so it averaged each client's responses instead of crowning the single 10. It finished this one in half the time, on 78% fewer tokens. \n\n• Clinical diagnostics - data analysis (+15% task accuracy): Malaria rapid-test performance across a dry and a wet season: build the patient records out of two clinical PDFs, compute positive test rates by season and gender, and test whether parasite counts really differ between test-positive and test-negative patients. Opus 5.5 caught that the two groups' standard deviations differed more than 100-fold, re-ran it the right way, and found the dry-season difference didn't hold up after all. This accuracy gain came with a final answer that was half the length of Opus 5's, and also needed 78% fewer tokens end to end. \n\nCustomers will be able to build AI Agents with Opus 5.5 shortly in the Box AI Studio.",
+      "text": "At Box, we've been testing Opus 5.5 on a variety of complex enterprise knowledge work tasks dealing with unstructured data with the Box Agent. Overall, we saw frontier capability levels, with major performance improvements over Opus 5. 63% fewer tokens used, 42% less verbosity, and 30% faster vs. Opus 5. And the model itself is cheaper, so this is a major win for any agentic computer use, coding, analytics, or data work that enterprises will be doing. Here are some examples of the task wins and performance gains across a variety of industry tests that we performed: • Financial services - due diligence (+39% task accuracy): A year of transaction records, with the job of finding every miscalculation in an acquisition target's pricing tool. Opus 5.5 scored a perfect result on every attempt in half the words Opus 5 used, consuming 82% fewer tokens overall. • Technology - cloud cost analysis (+65% task accuracy): Work out what a company should actually change about its cloud spend. Opus 5.5 picked the right basis for the retention calculation and kept the source data's unit conventions straight all the way through, so the number at the end actually holds up. It took half the time Opus 5 took, with 70% fewer tokens. • Consumer products - client account analysis (+17% task accuracy): Set the onboarding targets for a client account, reading across the signed contract, a satisfaction tracker and a team metrics sheet. The contract never states a senior/junior split, so Opus 5.5 derived it from the 18-person roster and showed the rule it used; several clients had a perfect 10 on individual survey questions, so it averaged each client's responses instead of crowning the single 10. It finished this one in half the time, on 78% fewer tokens. • Clinical diagnostics - data analysis (+15% task accuracy): Malaria rapid-test performance across a dry and a wet season: build the patient records out of two clinical PDFs, compute positive test rates by season and gender, and test whether parasite counts really differ between test-positive and test-negative patients. Opus 5.5 caught that the two groups' standard deviations differed more than 100-fold, re-ran it the right way, and found the dry-season difference didn't hold up after all. This accuracy gain came with a final answer that was half the length of Opus 5's, and also needed 78% fewer tokens end to end. Customers will be able to build AI Agents with Opus 5.5 shortly in the Box AI Studio.",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "在Box，我们一直在使用Box Agent测试Opus 5.5处理各种涉及非结构化数据的复杂企业知识工作任务。总体而言，我们看到了前沿能力水平，与Opus 5相比性能有了重大提升。与Opus 5相比，使用的token减少了63%，冗长度降低了42%，速度提升了30%。而且模型本身也更便宜，因此对于企业将要进行的任何智能体计算机使用、编码、分析或数据工作来说，这都是一个重大胜利。以下是我们执行的各种行业测试中任务成功和性能提升的一些示例：• 金融服务——尽职调查（任务准确率+39%）：一年的交易记录，任务是找出收购目标定价工具中的每一处计算错误。Opus 5.5在每次尝试中都取得了满分结果，所用字数仅为Opus 5的一半，总体消耗的token减少了82%。• 技术——云成本分析（任务准确率+65%）：确定一家公司实际应当对其云支出做出哪些改变。Opus 5.5为留存计算选择了正确的基础，并全程保持了源数据单位约定的一致性，因此最终得出的数字确实站得住脚。它所用时间仅为Opus 5的一半，token减少了70%。• 消费品——客户账户分析（任务准确率+17%）：为某个客户账户设定引导目标，需要综合已签署合同、满意度追踪表和团队指标表。合同从未说明高级/初级人员比例，因此Opus 5.5从18人名单中推导出了这一比例，并展示了它所使用的规则；若干客户在个别调查问题上获得了满分10分，因此它对每位客户的回答进行了平均，而不是只选出单个10分。它用一半时间完成了这项任务，token减少了78%。• 临床诊断——数据分析（任务准确率+15%）：疟疾快速检测在旱季和雨季的表现：根据两份临床PDF构建患者记录，按季节和性别计算阳性检测率，并检验检测阳性患者与检测阴性患者之间的寄生虫计数是否确实存在差异。Opus 5.5发现两组的标准差相差超过100倍，于是以正确方式重新运行，并发现旱季差异终究并不成立。这一准确率提升的同时，最终答案长度仅为Opus 5的一半，而且端到端所需token也减少了78%。客户很快就能在Box AI Studio中使用Opus 5.5构建AI智能体。",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-pro",
+      "translationSourceHash": "d4871c16caf7040d",
       "topic": "Agent",
       "columnTags": [
         {
@@ -1098,12 +1747,14 @@
       "likes": 232,
       "retweets": 23,
       "replies": 40,
-      "historical": false,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -1112,11 +1763,18 @@
       "name": "Thibault Sottiaux",
       "handle": "thsottiaux",
       "role": "Codex & ChatGPT OpenAI",
-      "text": "We have been focusing on efficiency and intelligence for all. \n\nVery proud of the team. Only possible when you have incredible models at the top end of the capability that you can then use to make a big difference in everything else.",
+      "text": "We have been focusing on efficiency and intelligence for all. Very proud of the team. Only possible when you have incredible models at the top end of the capability that you can then use to make a big difference in everything else.",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "我们一直专注于为所有人提升效率和智能。为团队感到非常自豪。只有当你拥有能力顶尖的出色模型，并能借此在其他所有方面产生巨大影响时，这一切才有可能实现。",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "1655a8024133bc31",
       "topic": "产品与创业",
       "columnTags": [
         {
@@ -1138,12 +1796,14 @@
       "likes": 12590,
       "retweets": 317,
       "replies": 1698,
-      "historical": false,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -1152,11 +1812,18 @@
       "name": "Guillermo Rauch",
       "handle": "rauchg",
       "role": "vercel CEO",
-      "text": "Love the tastefulness with which anthropic ships. \n\nMain reason I got excited about 'headless' for the web is that any given page could take whatever whimsical or unique shape you wanted. With AI, there's no excuse not to push the design frontier.\n\nThis is @nextjs at its finest:\nhttps://t.co/uXM96EijiW",
+      "text": "Love the tastefulness with which anthropic ships. Main reason I got excited about 'headless' for the web is that any given page could take whatever whimsical or unique shape you wanted. With AI, there's no excuse not to push the design frontier. This is @nextjs at its finest: https://t.co/uXM96EijiW",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "喜爱 anthropic 发布产品时的那份品味。让我对网络“无头”模式感到兴奋的主要原因是，任何一个页面都可以呈现出你想要的任何奇思妙想或独特形态。有了 AI，就没有借口不去推动设计的前沿。这就是 @nextjs 最出色的表现：https://t.co/uXM96EijiW",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "5b8e2e896b14fe1b",
       "topic": "产品与创业",
       "columnTags": [
         {
@@ -1178,12 +1845,14 @@
       "likes": 1418,
       "retweets": 34,
       "replies": 63,
-      "historical": false,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -1192,11 +1861,18 @@
       "name": "Cat Wu",
       "handle": "_catwu",
       "role": "claude code + cowork anthropicai, prev: dagster, scale_ai",
-      "text": "Claude Opus 5.5 is now the default model in Claude Code and the Claude app, including Cowork, for Pro, Max, and Team plans. I’ve been using Opus 5.5 as a daily driver and love its clear communication skills and ability to write in my style.\n\nWe’re defaulting to effort medium across products, which is comparable to Fable 5.1 on intelligence but faster. Your rate limits will go 25% further on Opus 5.5 compared to Opus 5.\n\nGive Opus 5.5 an ambitious task and let us know what you think!",
+      "text": "Claude Opus 5.5 is now the default model in Claude Code and the Claude app, including Cowork, for Pro, Max, and Team plans. I’ve been using Opus 5.5 as a daily driver and love its clear communication skills and ability to write in my style. We’re defaulting to effort medium across products, which is comparable to Fable 5.1 on intelligence but faster. Your rate limits will go 25% further on Opus 5.5 compared to Opus 5. Give Opus 5.5 an ambitious task and let us know what you think!",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "Claude Opus 5.5 现已成为 Claude Code 和 Claude 应用（包括 Cowork）中 Pro、Max 和 Team 计划的默认模型。我一直将 Opus 5.5 作为日常主力使用，很喜欢它清晰的沟通能力以及用我的风格写作的本领。我们在各产品中默认采用 effort medium，其智能水平与 Fable 5.1 相当，但速度更快。相比 Opus 5，你的速率限制在 Opus 5.5 上将多出 25%。给 Opus 5.5 一个雄心勃勃的任务，然后告诉我们你的想法！",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "f3ef3a3075bf76bb",
       "topic": "Agent",
       "columnTags": [
         {
@@ -1218,12 +1894,14 @@
       "likes": 1308,
       "retweets": 35,
       "replies": 72,
-      "historical": false,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -1232,11 +1910,18 @@
       "name": "Aditya Agarwal",
       "handle": "adityaag",
       "role": "General Partner SPC, Co-Founder Bevel_Health",
-      "text": "In the mad dash for productivity...we often forget that AI products should be delightful and FUN.\n\nI have had so many magic moments of delight on Sentience.\n\nHighly recommend trying it out. https://t.co/i8pKw19PKq",
+      "text": "In the mad dash for productivity...we often forget that AI products should be delightful and FUN. I have had so many magic moments of delight on Sentience. Highly recommend trying it out. https://t.co/i8pKw19PKq",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "在疯狂追求生产力的过程中……我们常常忘记，AI产品应该是令人愉悦且有趣的。在Sentience上，我经历过太多令人惊喜的奇妙时刻。强烈推荐大家试一试。https://t.co/i8pKw19PKq",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "cc72b75f624ef0b7",
       "topic": "产品与创业",
       "columnTags": [
         {
@@ -1258,12 +1943,14 @@
       "likes": 23,
       "retweets": 1,
       "replies": 4,
-      "historical": false,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -1519,7 +2206,7 @@
       "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "text": "Jev introduces a new shape of LLM - System One, aka Decision Models",
       "content": "Last week TypeSafe AI unveiled Jev , their first example of a new category of model that they are calling \"System One models\" (I'm with Maggie Appleton, I think \"decision models\" is <a h",
-      "contentTranslation": "上周，TypeSafe AI 发布了 Jev，这是他们所称的“System One 模型”这一新类别模型的首个示例（我和 Maggie Appleton 看法一致，认为“决策模型”是<a h",
+      "contentTranslation": "上周，TypeSafe AI 发布了 Jev，这是他们所称的“System One 模型”这一新类别模型的首个示例（我赞同 Maggie Appleton 的看法，我认为“决策模型”是<a h",
       "contentTranslationStatus": "translated",
       "translation": "Jev推出了一种新形态的LLM——System One，又称决策模型",
       "translationStatus": "translated",
@@ -1942,9 +2629,9 @@
       "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "text": "MCP was always a bad idea?",
       "content": "My comment on MCP was always a bad idea? &mdash; Hacker News. This article entirely misses the value that MCP brings today. Sure, there's almost no reason",
-      "contentTranslation": "我对MCP的评论一直是个坏主意？—— Hacker News。这篇文章完全忽略了MCP今天所带来的价值。当然，几乎没有理由",
+      "contentTranslation": "我对MCP的评论一直是个坏主意？——Hacker News。这篇文章完全忽略了MCP如今带来的价值。当然，几乎没有理由",
       "contentTranslationStatus": "translated",
-      "translation": "MCP一直是个坏主意吗？",
+      "translation": "MCP一直是个糟糕的主意吗？",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
@@ -2419,49 +3106,6 @@
       "publicationStatus": "published"
     },
     {
-      "id": "https://simonwillison.net/2026/Sep/18/gemini-hacked-three-companies/",
-      "source": "blog",
-      "name": "Simon Willison's Blog",
-      "handle": "simonwillison.net",
-      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "text": "Gemini Hacked Three Companies in First Known Breakout by Google’s AI",
-      "content": "Gemini Hacked Three Companies in First Known Breakout by Google’s AI Gemini finally caught up on Felony Bench !",
-      "contentTranslation": "Gemini入侵了三家公司，这是已知首例由谷歌AI Gemini实现的突破。Gemini终于在重罪基准测试上赶了上来！",
-      "contentTranslationStatus": "translated",
-      "translation": "Gemini入侵了三家公司，这是已知首例谷歌AI的突破事件",
-      "translationStatus": "translated",
-      "translationMethod": "deepseek_translation",
-      "translationModel": "deepseek-v4-flash",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "blog",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-09-18T23:57:57+00:00",
-      "date": "2026-09-19",
-      "url": "https://simonwillison.net/2026/Sep/18/gemini-hacked-three-companies/",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0,
-      "historical": false,
-      "laneCoverage": [
-        "morning-rss"
-      ],
-      "afternoonStableId": "",
-      "aiRelevant": true,
-      "publicationStatus": "published"
-    },
-    {
       "id": "2101097330107875437",
       "source": "x",
       "name": "Aditya Agarwal",
@@ -2557,49 +3201,6 @@
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "publicationStatus": "published"
-    },
-    {
-      "id": "https://simonwillison.net/2026/Sep/18/thariq-shihipar/",
-      "source": "blog",
-      "name": "Simon Willison's Blog",
-      "handle": "simonwillison.net",
-      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "text": "Quoting Thariq Shihipar",
-      "content": "We're adding support for AGENTS.md to Claude Code. Starting today in version 2.1.277, if there is no CLAUDE.md in a folder, Claude will check for and use AGENTS.md. AGENTS.md support is built off of Claude Cod",
-      "contentTranslation": "我们正在为 Claude Code 添加对 AGENTS.md 的支持。从今天的 2.1.277 版本开始，如果某个文件夹中没有 CLAUDE.md，Claude 将检查并使用 AGENTS.md。AGENTS.md 支持是基于 Claude Cod",
-      "contentTranslationStatus": "translated",
-      "translation": "引用塔里克·希希帕尔",
-      "translationStatus": "translated",
-      "translationMethod": "deepseek_translation",
-      "translationModel": "deepseek-v4-pro",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "blog",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-09-18T19:09:27+00:00",
-      "date": "2026-09-19",
-      "url": "https://simonwillison.net/2026/Sep/18/thariq-shihipar/",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0,
-      "historical": false,
-      "laneCoverage": [
-        "morning-rss"
-      ],
-      "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -2759,10 +3360,14 @@
       "content": "",
       "contentTranslation": "",
       "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "Claude Projects v2 💼，Google 家庭智能体 👨‍👩‍👧‍👦，",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "ebd05dc334ecd46d",
       "topic": "Agent",
       "columnTags": [
         {
@@ -2784,55 +3389,14 @@
       "likes": 0,
       "retweets": 0,
       "replies": 0,
-      "historical": false,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": true,
-      "publicationStatus": "published"
-    },
-    {
-      "id": "https://simonwillison.net/2026/Sep/17/how-to-write-with-an-llm/",
-      "source": "blog",
-      "name": "Simon Willison's Blog",
-      "handle": "simonwillison.net",
-      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "text": "How To Write With An LLM",
-      "content": "How To Write With An LLM Thomas Ptacek on using LLMs as copyeditors, not as writing assistants: Rule Number One: You may not use a single word an LLM suggests to you.</s",
-      "contentTranslation": "如何用LLM写作 Thomas Ptacek谈把LLM当作文字编辑，而不是写作助手：第一条规则：LLM向你建议的任何一个词，你都不能用。</s>",
-      "contentTranslationStatus": "translated",
-      "translation": "如何用LLM写作",
-      "translationStatus": "translated",
-      "translationMethod": "deepseek_translation",
-      "translationModel": "deepseek-v4-flash",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "blog",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-09-17T23:37:27+00:00",
-      "date": "2026-09-18",
-      "url": "https://simonwillison.net/2026/Sep/17/how-to-write-with-an-llm/",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0,
-      "historical": false,
-      "laneCoverage": [
-        "morning-rss"
-      ],
-      "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -2931,49 +3495,6 @@
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "publicationStatus": "published"
-    },
-    {
-      "id": "https://simonwillison.net/2026/Sep/17/compaction-summaries/",
-      "source": "blog",
-      "name": "Simon Willison's Blog",
-      "handle": "simonwillison.net",
-      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "text": "Self-generated prompt injections in compaction summaries",
-      "content": "Self-generated prompt injections in compaction summaries In Our framework for r",
-      "contentTranslation": "压缩摘要中的自生成提示注入 在我们的r框架中",
-      "contentTranslationStatus": "translated",
-      "translation": "压缩摘要中的自生成提示注入",
-      "translationStatus": "translated",
-      "translationMethod": "deepseek_translation",
-      "translationModel": "deepseek-v4-flash",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "blog",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-09-17T20:57:55+00:00",
-      "date": "2026-09-18",
-      "url": "https://simonwillison.net/2026/Sep/17/compaction-summaries/",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0,
-      "historical": false,
-      "laneCoverage": [
-        "morning-rss"
-      ],
-      "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -69425,33 +69946,808 @@
     {
       "source": "podcast",
       "name": "Latent Space",
-      "title": "🔬“我们有语言的基础模型，但没有物理学的基础模型”——Anima Anandkumar，计算学Bren讲席教授",
-      "originalTitle": "🔬“We have foundation models for language, not for physics” — Anima Anandkumar, Bren Professor of Computing",
-      "titleTranslationMethod": "deepseek_translation",
-      "titleTranslationModel": "deepseek-v4-flash",
-      "url": "https://www.latent.space/p/anima",
-      "publishedAt": "Wed, 26 Aug 2026 15:15:00 GMT",
-      "excerpt": "几年前，加州理工学院教授、Accelerated Understanding联合创始人Anima Anandkumar着手开发首个基于AI的开源天气模型。在与该领域专家交流时，她遭遇了质疑。天气是混沌的，物理模拟很难，已经发展了几十年，需要超级计算机，数据根本不够。尽管有这些保留意见，Anima还是坚持前行并着手构建。不到一年，她的团队就开发出了FourCastNet，一个能与现有最佳物理模拟相媲美的预测模型。多亏了Anima及其后续工作，现在任何人都可以使用消费级GPU在短时间尺度上准确预测天气。在我们发布的约十五期科学类节目中，<a target=\"_blank\" href=\"http://latent.…",
-      "originalExcerpt": "A few years ago, Caltech Prof. and co-founder of Accelerated Understanding, Anima Anandkumar set out to develop the first open-source weather model with AI. Talking to experts in the field, she was met with skepticism. Weather is chaotic, physics simulations are hard, have been developed for decades, and require supercomputers, the data just isn’t there. Despite reservations, Anima went forth and built. Within a year her team had developed FourCastNet, a predictive model that is competitive with the best physics-based simulations available. Thanks to Anima, and her follow up work, anyone can now predict weather accurately over a short timescale using consumer grade GPUs. In the fifteen or so science episodes we’ve released on <a target=\"_blank\" href=\"http://latent.…",
-      "excerptTranslationMethod": "deepseek_translation",
-      "excerptTranslationModel": "deepseek-v4-pro"
-    },
-    {
-      "source": "podcast",
-      "name": "Latent Space",
       "title": "🔬生物安全是一场AI军备竞赛——Eric Nguyen（Radical Numerics首席执行官）",
       "originalTitle": "🔬Bio-security is an AI Arms Race - Eric Nguyen (CEO, Radical Numerics)",
       "titleTranslationMethod": "deepseek_translation",
       "titleTranslationModel": "deepseek-v4-flash",
       "url": "https://www.latent.space/p/bio-security-is-an-ai-arms-race-eric",
       "publishedAt": "Wed, 23 Sep 2026 13:27:18 GMT",
-      "excerpt": "OpenAI 对 Hugging Face 的攻击让人们不禁发问：“我们还需要担心什么？”而 Anthropic 的过滤器标出了两个领域：网络安全和生物学。随之而来的自然问题是：那么生物安全呢？Clem Delangue 认为，网络战的防御能力需要保持开放，并跟上前沿模型攻击能力的步伐。Radical Numerics 联合创始人 Eric Nguyen 与我们坐下来聊了聊，解释了为什么那些提升生物能力的模型，同样也能让防御不至于落后。\n\n从零开始构建病毒\n在斯坦福期间，Eric 有很长一段时间无法在基因组语言模型（GLM）上取得进展。生物学家们不相信这能行得通，不认为他们能验证输出结果，也看不到超出他们现有能力之外的重要应用。他持续推动，最终参与领导了 Evo 的开发，并贡献了……",
+      "excerpt": "OpenAI → Hugging Face 攻击事件让人们不禁发问：“我们还需要担心什么？”而Anthropic的过滤器标记出了两个领域：网络安全和生物学。随之而来的自然问题是：那么生物安全呢？Clem Delangue认为，网络战的防御能力需要保持开放，并跟上前沿模型攻击能力的步伐。Radical Numerics联合创始人Eric Nguyen与我们坐下来，解释了为什么那些提升生物能力的模型，同样也能让防御不至于落后。\n\n从零开始构建病毒\n在斯坦福期间，Eric在基因组语言模型（GLM）上很长一段时间都难以取得进展。生物学家们不相信这能行得通，不认为他们能验证输出结果，也看不到超出他们现有能力之外的重要应用。他持续推动，最终帮助领导了Evo的开发，并贡献了……",
       "originalExcerpt": "The OpenAI → Hugging Face attack has people asking “what else do we need to worry about?” and Anthropic’s filters flag two things: cyber-security and biology. The natural question is: what about bio-security, then? Clem Delangue argues that cyber-warfare defensive capabilities need to be open and to keep pace with frontier models’ attack capabilitiesRadical Numerics co-founder Eric Nguyen sat down with us and explained why the same models that increase biological capability can also keep defense from falling behind.Building a virus from scratchWhile he was at Stanford, Eric couldn’t get traction on Genomic Language Models (GLMs) for a long time. Biologists didn’t believe it would work, didn’t think they could verify the output, and didn’t see important applications beyond what they could already do. He kept pushing, eventually helping lead the development of Evo and contribut…",
       "excerptTranslationMethod": "deepseek_translation",
       "excerptTranslationModel": "deepseek-v4-pro"
     }
   ],
   "morningIntake": [
+    {
+      "id": "https://simonwillison.net/2026/Sep/25/john-gruber/",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Quoting John Gruber",
+      "content": "Muse is getting a lot of attention — including mine — because it’s both groundbreaking technically (each user gets their own entire persistent Linux VM running in Meta’s cloud) and because it’s packaged in an easy-",
+      "contentTranslation": "Muse正受到大量关注——包括我的关注——因为它在技术上具有开创性（每个用户都能获得一个运行在Meta云端的、属于自己的完整持久Linux虚拟机），并且因为它被打包成一个易于-",
+      "contentTranslationStatus": "translated",
+      "translation": "引用约翰·格鲁伯",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-25T17:22:01+00:00",
+      "date": "2026-09-26",
+      "url": "https://simonwillison.net/2026/Sep/25/john-gruber/",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "historical": false,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": false,
+      "publicationStatus": "intake_only_non_ai"
+    },
+    {
+      "id": "2103360292973633770",
+      "source": "x",
+      "name": "Nikunj Kothari",
+      "handle": "nikunj",
+      "role": "partner fpvventures - investing in seed/A. previous: early hire meter, opendoor, atlassian & others. love shimoleejhaveri + 👦👧",
+      "text": "“we believe that every small business owner, specifically for us in the trades, will have bespoke software, \n\nand that last mile is actually where differentiation can become, where you can provide a unique experience to your customers, to your employees” https://t.co/WhBtmHmGqZ https://t.co/IIQ90vD7mZ",
+      "translation": "“我们相信，每一位小企业主，特别是对我们所在的行业而言，都将拥有定制软件，而最后一公里实际上正是差异化得以形成的地方，正是你可以为客户、为员工提供独特体验的地方” https://t.co/WhBtmHmGqZ https://t.co/IIQ90vD7mZ",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "topic": "AI 编程",
+      "columnTags": [
+        {
+          "id": "opinion-ai-coding",
+          "name": "AI Coding 观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-coding",
+          "name": "AI Coding",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 AI 编程工具、设计到代码流程和软件生产方式的变化；需要结合产品发布或文档再做事实判断。",
+      "createdAt": "2026-09-25T05:45:47.000Z",
+      "date": "2026-09-25",
+      "url": "https://x.com/nikunj/status/2103360292973633770",
+      "likes": 4,
+      "retweets": 0,
+      "replies": 0,
+      "historical": false,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260925-15",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2103318850641260959",
+      "source": "x",
+      "name": "Peter Yang",
+      "handle": "petergyang",
+      "role": "Practical AI tutorials and interviews for busy people",
+      "text": "Astra blew up 3D models\nThen Opus blew up videos\nI don’t even know what’s next anymore https://t.co/CGJDOoGvYQ",
+      "translation": "Astra炸掉了3D模型，然后Opus炸掉了视频，我都不知道接下来还会发生什么了 https://t.co/CGJDOoGvYQ",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-25T03:01:06.000Z",
+      "date": "2026-09-25",
+      "url": "https://x.com/petergyang/status/2103318850641260959",
+      "likes": 12,
+      "retweets": 0,
+      "replies": 2,
+      "historical": false,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260925-05",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2103310612864569388",
+      "source": "x",
+      "name": "Peter Yang",
+      "handle": "petergyang",
+      "role": "Practical AI tutorials and interviews for busy people",
+      "text": "This is called stroking the AI's ego and it works https://t.co/CpSvOv3kmF",
+      "translation": "这被称为给AI戴高帽，而且很管用 https://t.co/CpSvOv3kmF",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-25T02:28:22.000Z",
+      "date": "2026-09-25",
+      "url": "https://x.com/petergyang/status/2103310612864569388",
+      "likes": 17,
+      "retweets": 0,
+      "replies": 9,
+      "historical": false,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260925-07",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "https://simonwillison.net/2026/Sep/25/sighting-403293902/",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Northern Gannet, Great Blue Heron, California Brown Pelican",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "translation": "北方塘鹅、大蓝鹭、加州褐鹈鹕",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-25T02:07:04+00:00",
+      "date": "2026-09-25",
+      "url": "https://simonwillison.net/2026/Sep/25/sighting-403293902/",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "historical": false,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": false,
+      "publicationStatus": "intake_only_non_ai"
+    },
+    {
+      "id": "https://simonwillison.net/2026/Sep/24/harder/",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Note on 24th September 2026",
+      "content": "The more time I spend working with coding agents, the more convinced I am that they make software engineering even harder. We can do amazing things with them, but unlocking their full potential requires extraordinary discipline and knowledge. Tags: <a href=\"https://simonwilliso",
+      "contentTranslation": "我花越多时间与编码代理打交道，就越发确信它们让软件工程变得愈发困难。借助它们，我们能成就非凡之事，但要想充分释放其潜力，则需要非凡的自律与知识。标签：<a href=\"https://simonwilliso",
+      "contentTranslationStatus": "translated",
+      "translation": "关于2026年9月24日的说明",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-24T23:31:08+00:00",
+      "date": "2026-09-25",
+      "url": "https://simonwillison.net/2026/Sep/24/harder/",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "historical": false,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2103259550325575806",
+      "source": "x",
+      "name": "Thariq",
+      "handle": "trq212",
+      "role": "Claude Code anthropicai. prev YC W20, spc, medialab",
+      "text": "incredibly thoughtful piece on AI and creativity\n\nhopefully we can make our producst better at enabling and amplifying creatives https://t.co/SeI25wbaI7",
+      "translation": "关于人工智能与创造力的思考极为深刻，希望我们能不断优化产品，更好地赋能并放大创作者的创造力 https://t.co/SeI25wbaI7",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-24T23:05:28.000Z",
+      "date": "2026-09-25",
+      "url": "https://x.com/trq212/status/2103259550325575806",
+      "likes": 518,
+      "retweets": 12,
+      "replies": 24,
+      "historical": false,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260925-08",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2103230206005612661",
+      "source": "x",
+      "name": "Aditya Agarwal",
+      "handle": "adityaag",
+      "role": "General Partner SPC, Co-Founder Bevel_Health",
+      "text": "It was great speaking with @SteveHiltonx at @spc for a conversation on California's future.\n\nWe have more work to do. Onwards. https://t.co/tEXWt8Xfhd",
+      "translation": "很高兴在@spc与@SteveHiltonx就加州的未来进行了交谈。我们还有更多工作要做。继续前进。https://t.co/tEXWt8Xfhd",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-24T21:08:51.000Z",
+      "date": "2026-09-25",
+      "url": "https://x.com/adityaag/status/2103230206005612661",
+      "likes": 7,
+      "retweets": 2,
+      "replies": 0,
+      "historical": false,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260925-23",
+      "aiRelevant": false,
+      "publicationStatus": "intake_only_non_ai"
+    },
+    {
+      "id": "2103223477130129726",
+      "source": "x",
+      "name": "Swyx",
+      "handle": "swyx",
+      "role": "achieve ambition with intentionality, intensity, integrity & insanity.",
+      "text": "more conferences could implement this. so much high value time wasted without thought https://t.co/jn93l7JyoH",
+      "translation": "更多会议可以实施这一点。没有经过思考，浪费了太多高价值的时间 https://t.co/jn93l7JyoH",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-24T20:42:07.000Z",
+      "date": "2026-09-25",
+      "url": "https://x.com/swyx/status/2103223477130129726",
+      "likes": 504,
+      "retweets": 29,
+      "replies": 45,
+      "historical": false,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260925-02",
+      "aiRelevant": false,
+      "publicationStatus": "intake_only_non_ai"
+    },
+    {
+      "id": "2103218709234172252",
+      "source": "x",
+      "name": "Nikunj Kothari",
+      "handle": "nikunj",
+      "role": "partner fpvventures - investing in seed/A. previous: early hire meter, opendoor, atlassian & others. love shimoleejhaveri + 👦👧",
+      "text": "We are in that stage of the \"revenue\" lifecycle.. https://t.co/2uEqADj9un",
+      "translation": "我们正处于“收入”生命周期的那个阶段.. https://t.co/2uEqADj9un",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-24T20:23:10.000Z",
+      "date": "2026-09-25",
+      "url": "https://x.com/nikunj/status/2103218709234172252",
+      "likes": 9,
+      "retweets": 0,
+      "replies": 3,
+      "historical": false,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260925-17",
+      "aiRelevant": false,
+      "publicationStatus": "intake_only_non_ai"
+    },
+    {
+      "id": "2103212051065921632",
+      "source": "x",
+      "name": "Thariq",
+      "handle": "trq212",
+      "role": "Claude Code anthropicai. prev YC W20, spc, medialab",
+      "text": "lots feedback here, many of you are planning yourself & don't need plan mode\n\nothers prefer the UX of entering a mode where Claude is just thinking & brainstorming with you\n\nmy plan is to:\n- make plan mode into a built-in mod\n- allow mods to add new modes or override shift+tab https://t.co/SL1IzLvb17",
+      "translation": "这里有很多反馈，你们中的许多人都在自己规划，不需要计划模式，而另一些人则更喜欢进入一种模式的用户体验，在这种模式下，Claude 只是和你一起思考和头脑风暴。我的计划是：- 把计划模式变成一个内置 mod - 允许 mod 添加新模式或覆盖 shift+tab https://t.co/SL1IzLvb17",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-24T19:56:43.000Z",
+      "date": "2026-09-25",
+      "url": "https://x.com/trq212/status/2103212051065921632",
+      "likes": 1654,
+      "retweets": 29,
+      "replies": 193,
+      "historical": false,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260925-10",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2103212052391354794",
+      "source": "x",
+      "name": "Thariq",
+      "handle": "trq212",
+      "role": "Claude Code anthropicai. prev YC W20, spc, medialab",
+      "text": "this should let you customize the plan mode prompt, create + share your own modes or just ignore it and rebind shift+tab to something else all together",
+      "translation": "这应该能让你自定义计划模式提示，创建并分享你自己的模式，或者干脆忽略它，把shift+tab重新绑定到别的功能上。",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-24T19:56:43.000Z",
+      "date": "2026-09-25",
+      "url": "https://x.com/trq212/status/2103212052391354794",
+      "likes": 137,
+      "retweets": 0,
+      "replies": 13,
+      "historical": false,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260925-09",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2103182635992514569",
+      "source": "x",
+      "name": "Josh Woodward",
+      "handle": "joshwoodward",
+      "role": "VP, Google GoogleLabs GeminiApp GoogleAIStudio",
+      "text": "Dreambeans is one of our newer experiments in @GoogleLabs. It has a growing cult following. \n\nIt’s simple: a fixed number of “beans” brew every morning. They point you at the real world, with real people, doing things you care about together.\n\nGive it a try! https://t.co/cUVgf5wn5b",
+      "translation": "Dreambeans 是我们在 @GoogleLabs 中较新的实验之一。它正吸引着越来越多的小众追随者。很简单：每天早上会固定数量地“冲泡”出一些“豆子”。它们将你引向真实世界，那里有真实的人，一起做着你在意的事情。试试看吧！https://t.co/cUVgf5wn5b",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-24T17:59:50.000Z",
+      "date": "2026-09-25",
+      "url": "https://x.com/joshwoodward/status/2103182635992514569",
+      "likes": 149,
+      "retweets": 5,
+      "replies": 16,
+      "historical": false,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260925-04",
+      "aiRelevant": false,
+      "publicationStatus": "intake_only_non_ai"
+    },
+    {
+      "id": "2103167536141353053",
+      "source": "x",
+      "name": "Matt Turck",
+      "handle": "mattturck",
+      "role": "VC at FirstMarkCap.  Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD Landscape.",
+      "text": "This conversation with the excellent Renen Hallak of @VAST_Data is also available on Spotify, Apple Podcasts and here on YouTube (like and subcribe!):\n\nhttps://t.co/mViKG7e172",
+      "translation": "与@VAST_Data的杰出人士Renen Hallak的这次对话也可在Spotify、Apple Podcasts以及YouTube上收听（请点赞和订阅！）：https://t.co/mViKG7e172",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-24T16:59:50.000Z",
+      "date": "2026-09-25",
+      "url": "https://x.com/mattturck/status/2103167536141353053",
+      "likes": 18,
+      "retweets": 1,
+      "replies": 3,
+      "historical": false,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260925-13",
+      "aiRelevant": false,
+      "publicationStatus": "intake_only_non_ai"
+    },
+    {
+      "id": "https://www.bensbites.com/p/back-to-claude",
+      "source": "blog",
+      "name": "Ben's Bites AI Newsletter",
+      "handle": "bensbites.com",
+      "role": "Daily AI news curation: product launches, funding, models, tools, industry highlights.",
+      "text": "Back to Claude",
+      "content": "GPT-6 Sol and Luna got cheaper",
+      "contentTranslation": "GPT-6 Sol和Luna变得更便宜了",
+      "contentTranslationStatus": "translated",
+      "translation": "返回 Claude\n\n之前的翻译未通过以下检查：缺少中文翻译。请再次翻译完整源文本，并将所有列出的 URL、账号、话题标签、数字、金额、百分比和版本原样复制到译文中。",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-pro",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "Thu, 24 Sep 2026 13:04:08 GMT",
+      "date": "2026-09-24",
+      "url": "https://www.bensbites.com/p/back-to-claude",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "historical": false,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "https://tldr.tech/ai/2026-09-24",
+      "source": "blog",
+      "name": "TLDR AI Newsletter",
+      "handle": "tldr.tech",
+      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
+      "text": "Gemini TTS 🗣️, Claude’s novel enzyme 🧬, Google private memory 🔒",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "translation": "Gemini TTS 🗣️，Claude的新型酶 🧬，Google私人记忆 🔒",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "Thu, 24 Sep 2026 00:00:00 GMT",
+      "date": "2026-09-24",
+      "url": "https://tldr.tech/ai/2026-09-24",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "historical": false,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2103150483062014436",
+      "source": "x",
+      "name": "Peter Steinberger",
+      "handle": "steipete",
+      "role": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world.",
+      "text": "Afghanistan is more excited about AI than we are? https://t.co/rbkSf8pUkM",
+      "translation": "阿富汗对AI的热情比我们还高？https://t.co/rbkSf8pUkM",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-24T15:52:04.000Z",
+      "date": "2026-09-24",
+      "url": "https://x.com/steipete/status/2103150483062014436",
+      "likes": 317,
+      "retweets": 14,
+      "replies": 58,
+      "historical": false,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260925-19",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2103148444701610233",
+      "source": "x",
+      "name": "Peter Steinberger",
+      "handle": "steipete",
+      "role": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world.",
+      "text": "If you just tell the agent to clean up, it will stop far too early. Give it an ambitious goal. Try \"remove 20% of the least useful tests while maintaining code coverage within 2%\"",
+      "translation": "如果你只是告诉智能体去清理，它会过早停下。给它一个宏大的目标。试试“移除20%最没用的测试，同时保持代码覆盖率在2%以内”",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-09-24T15:43:58.000Z",
+      "date": "2026-09-24",
+      "url": "https://x.com/steipete/status/2103148444701610233",
+      "likes": 316,
+      "retweets": 10,
+      "replies": 12,
+      "historical": false,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260925-20",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2103129037011120525",
+      "source": "x",
+      "name": "Amjad Masad",
+      "handle": "amasad",
+      "role": "ceo replit. civilizationist",
+      "text": "Muse can now make apps on Replit https://t.co/AColbWFCEN",
+      "translation": "Muse现在可以在Replit上制作应用了 https://t.co/AColbWFCEN",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "topic": "AI 编程",
+      "columnTags": [
+        {
+          "id": "opinion-ai-coding",
+          "name": "AI Coding 观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-coding",
+          "name": "AI Coding",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 AI 编程工具、设计到代码流程和软件生产方式的变化；需要结合产品发布或文档再做事实判断。",
+      "createdAt": "2026-09-24T14:26:51.000Z",
+      "date": "2026-09-24",
+      "url": "https://x.com/amasad/status/2103129037011120525",
+      "likes": 1674,
+      "retweets": 50,
+      "replies": 100,
+      "historical": false,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260925-11",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
     {
       "id": "https://simonwillison.net/2026/Sep/23/shadow-roots/",
       "source": "blog",
@@ -69460,7 +70756,7 @@
       "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "text": "Shadow roots, explained with live examples",
       "content": "Tool: Shadow roots, explained with live examples Prompt to Fable 5.1 Medium: Build an artifact to explain shadow roots in CSS with interactive examples",
-      "contentTranslation": "工具：Shadow roots，用实时示例讲解 给 Fable 5.1 Medium 的提示词：构建一个工件，用交互式示例讲解 CSS 中的 shadow roots",
+      "contentTranslation": "工具：Shadow roots，配合实时示例讲解 给 Fable 5.1 Medium 的提示词：构建一个工件，用交互式示例讲解 CSS 中的 shadow roots",
       "contentTranslationStatus": "translated",
       "translation": "Shadow roots，通过实时示例进行解释",
       "translationStatus": "translated",
@@ -69505,7 +70801,7 @@
       "content": "",
       "contentTranslation": "",
       "contentTranslationStatus": "unavailable",
-      "translation": "GPT-6 ⚡，Opus 5.5 🧠，AI领袖齐聚联合国 🌐",
+      "translation": "GPT-6 ⚡、Opus 5.5 🧠、AI领袖齐聚联合国 🌐",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
@@ -69539,56 +70835,23 @@
       "publicationStatus": "published"
     },
     {
-      "id": "2102628682301046875",
-      "source": "x",
-      "name": "Peter Yang",
-      "handle": "petergyang",
-      "role": "Practical AI tutorials and interviews for busy people",
-      "text": "Just randomly played this Australian show on Apple TV and it’s another banger https://t.co/Cp2vUitABa https://t.co/mpOYshnd0G",
-      "translation": "刚在Apple TV上随便点开了一部澳大利亚节目，又是一部神作 https://t.co/Cp2vUitABa https://t.co/mpOYshnd0G",
-      "translationStatus": "translated",
-      "translationMethod": "deepseek_translation",
-      "translationModel": "deepseek-v4-flash",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "social",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-09-23T05:18:37.000Z",
-      "date": "2026-09-23",
-      "url": "https://x.com/petergyang/status/2102628682301046875",
-      "likes": 19,
-      "retweets": 0,
-      "replies": 5,
-      "historical": false,
-      "laneCoverage": [
-        "morning-rss"
-      ],
-      "afternoonStableId": "",
-      "aiRelevant": false,
-      "publicationStatus": "intake_only_non_ai"
-    },
-    {
       "id": "2102594015669756323",
       "source": "x",
       "name": "Guillermo Rauch",
       "handle": "rauchg",
       "role": "vercel CEO",
       "text": "Software will never die again. You liked Google Reader? Cool, you can generate and deploy your own. Yours, forever.",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "软件将永远不会再次消亡。你喜欢Google Reader吗？酷，你可以生成并部署你自己的版本。永远属于你。",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "e472c0f34c548013",
       "topic": "AI 编程",
       "columnTags": [
         {
@@ -69610,12 +70873,14 @@
       "likes": 1045,
       "retweets": 33,
       "replies": 76,
-      "historical": false,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -69626,7 +70891,7 @@
       "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "text": "SF October 14th: A Birds of a Feather Session on Agentic Engineering",
       "content": "SF October 14th: A Birds of a Feather Session on Agentic Engineering I'm hosting an evening event with Jesse Vincent in San Francisco on Wednesday 14th October for people who are building weird and interesting things with and on top of",
-      "contentTranslation": "旧金山10月14日：一场关于智能体工程的“物以类聚”交流会。我将于10月14日星期三晚上与Jesse Vincent在旧金山举办一场活动，面向那些正在用以下技术并在其之上构建奇特而有趣事物的人：",
+      "contentTranslation": "旧金山10月14日：一场关于智能体工程的“物以类聚”交流会。我将于10月14日星期三晚上在旧金山与Jesse Vincent共同举办一场活动，面向那些正在用以下技术、并在此基础上构建奇特而有趣事物的人：",
       "contentTranslationStatus": "translated",
       "translation": "SF 10月14日：关于智能体工程的“物以类聚”交流会",
       "translationStatus": "translated",
@@ -69667,11 +70932,18 @@
       "name": "Peter Yang",
       "handle": "petergyang",
       "role": "Practical AI tutorials and interviews for busy people",
-      "text": "@claudeai If you enjoyed this, sign up for free to my newsletter to get my best AI and product guides.\n\nJoin 110,000+ subscribers here:\nhttps://t.co/yz9xcsfrhF",
+      "text": "@claudeai If you enjoyed this, sign up for free to my newsletter to get my best AI and product guides. Join 110,000+ subscribers here: https://t.co/yz9xcsfrhF",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "@claudeai 如果你喜欢这个，免费订阅我的新闻通讯，获取我最棒的AI和产品指南。加入110,000+订阅者，点击这里：https://t.co/yz9xcsfrhF",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "d522c103435767f5",
       "topic": "产品与创业",
       "columnTags": [
         {
@@ -69693,12 +70965,14 @@
       "likes": 1,
       "retweets": 0,
       "replies": 0,
-      "historical": false,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -69708,10 +70982,17 @@
       "handle": "petergyang",
       "role": "Practical AI tutorials and interviews for busy people",
       "text": "I talk about why Opus 5.5 is the most excited I've been about a Claude model in awhile here: https://t.co/PBxPzE43Ud",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "我在这里谈论了为什么Opus 5.5是我一段时间以来对Claude模型最兴奋的一次：https://t.co/PBxPzE43Ud",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "4b911db47c31be69",
       "topic": "AI 基础设施",
       "columnTags": [
         {
@@ -69733,12 +71014,14 @@
       "likes": 3,
       "retweets": 0,
       "replies": 0,
-      "historical": false,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -69748,10 +71031,17 @@
       "handle": "_catwu",
       "role": "claude code + cowork anthropicai, prev: dagster, scale_ai",
       "text": "If you’re looking for ways to try Opus 5.5 and Claude Tag in Slack… https://t.co/PpwztYQx2o",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "如果你正在寻找在Slack中试用Opus 5.5和Claude Tag的方法…… https://t.co/PpwztYQx2o",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "0b24a45ad6d86923",
       "topic": "产品与创业",
       "columnTags": [
         {
@@ -69773,53 +71063,15 @@
       "likes": 119,
       "retweets": 2,
       "replies": 7,
-      "historical": false,
-      "laneCoverage": [
-        "morning-rss"
-      ],
-      "afternoonStableId": "",
       "aiRelevant": true,
-      "publicationStatus": "published"
-    },
-    {
-      "id": "2102549030303867257",
-      "source": "x",
-      "name": "Thariq",
-      "handle": "trq212",
-      "role": "Claude Code anthropicai. prev YC W20, spc, medialab",
-      "text": "if you want to make games, 3d generation is a great capability to help you imagine your game come to life\n\nbut you should figure out how to make a good, satisfying game loop first\n\n(talking to myself here)",
-      "translation": "如果你想做游戏，3D生成是一项很棒的能力，能帮你想象游戏成真的样子，但你应该先弄清楚如何做出一个好的、令人满意的游戏循环（这里是在对自己说）。",
-      "translationStatus": "translated",
-      "translationMethod": "deepseek_translation",
-      "translationModel": "deepseek-v4-flash",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "social",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-09-23T00:02:06.000Z",
-      "date": "2026-09-23",
-      "url": "https://x.com/trq212/status/2102549030303867257",
-      "likes": 254,
-      "retweets": 5,
-      "replies": 10,
-      "historical": false,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": false,
-      "publicationStatus": "intake_only_non_ai"
+      "publicationStatus": "published"
     },
     {
       "id": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/",
@@ -69871,10 +71123,17 @@
       "handle": "garrytan",
       "role": "President & CEO ycombinator —Founder garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
       "text": "Capy (@capydotai) lets me drop PRs much much faster than I would with Codex or Claude Code alone https://t.co/s6xeWJahvJ",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "Capy（@capydotai）让我提交 PR 的速度比单用 Codex 或 Claude Code 快得多 https://t.co/s6xeWJahvJ",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "22eac0fc69928c3a",
       "topic": "AI 编程",
       "columnTags": [
         {
@@ -69896,12 +71155,14 @@
       "likes": 111,
       "retweets": 9,
       "replies": 29,
-      "historical": false,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -69910,11 +71171,18 @@
       "name": "Boris Cherny",
       "handle": "bcherny",
       "role": "Claude Code anthropicai",
-      "text": "I used Opus 5.5 to formally verify the Claude Agent SDK using Lean. A couple short prompts = 16 PRs fixing various bugs and race conditions. Video attached.\n\nTLA+ also works well. I sometimes combine Lean and TLA+ to look for issues around data flow, concurrency, and state mgmt.\n\nI don't know either language well, but Claude is excellent at both. This approach is super useful for formally modeling your code and finding bugs that a human probably wouldn't have spotted.\n\nIs formal verification the future of coding (or at least, bug finding)?",
+      "text": "I used Opus 5.5 to formally verify the Claude Agent SDK using Lean. A couple short prompts = 16 PRs fixing various bugs and race conditions. Video attached. TLA+ also works well. I sometimes combine Lean and TLA+ to look for issues around data flow, concurrency, and state mgmt. I don't know either language well, but Claude is excellent at both. This approach is super useful for formally modeling your code and finding bugs that a human probably wouldn't have spotted. Is formal verification the future of coding (or at least, bug finding)?",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "我使用 Opus 5.5 通过 Lean 对 Claude Agent SDK 进行了形式化验证。几个简短的提示词 = 16 个 PR，修复了各种 bug 和竞态条件。视频附上。TLA+ 也同样效果很好。我有时会结合 Lean 和 TLA+ 来查找数据流、并发和状态管理方面的问题。我对这两种语言都不太熟悉，但 Claude 对两者都很擅长。这种方法对于对你的代码进行形式化建模，并发现人类可能不会察觉的 bug 非常有用。形式化验证是编程的未来吗（或者至少，是发现 bug 的未来）？",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "b71b1bc0613a6742",
       "topic": "Agent",
       "columnTags": [
         {
@@ -69936,133 +71204,15 @@
       "likes": 3324,
       "retweets": 165,
       "replies": 258,
-      "historical": false,
-      "laneCoverage": [
-        "morning-rss"
-      ],
-      "afternoonStableId": "",
       "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
       "publicationStatus": "published"
-    },
-    {
-      "id": "2102543350436180277",
-      "source": "x",
-      "name": "Boris Cherny",
-      "handle": "bcherny",
-      "role": "Claude Code anthropicai",
-      "text": "Opus made an infographic https://t.co/w9fMWqB7HA",
-      "translation": "Opus制作了一张信息图 https://t.co/w9fMWqB7HA",
-      "translationStatus": "translated",
-      "translationMethod": "deepseek_translation",
-      "translationModel": "deepseek-v4-flash",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "social",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-09-22T23:39:32.000Z",
-      "date": "2026-09-23",
-      "url": "https://x.com/bcherny/status/2102543350436180277",
-      "likes": 117,
-      "retweets": 1,
-      "replies": 5,
-      "historical": false,
-      "laneCoverage": [
-        "morning-rss"
-      ],
-      "afternoonStableId": "",
-      "aiRelevant": false,
-      "publicationStatus": "intake_only_non_ai"
-    },
-    {
-      "id": "2102537390774759761",
-      "source": "x",
-      "name": "Garry Tan",
-      "handle": "garrytan",
-      "role": "President & CEO ycombinator —Founder garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
-      "text": "If you're working on something cool, GStack does actually tell you to apply to YC :-) https://t.co/G4jWbqwINt",
-      "translation": "如果你正在做一些很酷的事情，GStack 确实会建议你申请 YC :-) https://t.co/G4jWbqwINt",
-      "translationStatus": "translated",
-      "translationMethod": "deepseek_translation",
-      "translationModel": "deepseek-v4-flash",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "social",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-09-22T23:15:51.000Z",
-      "date": "2026-09-23",
-      "url": "https://x.com/garrytan/status/2102537390774759761",
-      "likes": 155,
-      "retweets": 3,
-      "replies": 23,
-      "historical": false,
-      "laneCoverage": [
-        "morning-rss"
-      ],
-      "afternoonStableId": "",
-      "aiRelevant": false,
-      "publicationStatus": "intake_only_non_ai"
-    },
-    {
-      "id": "2102534909076349291",
-      "source": "x",
-      "name": "Nikunj Kothari",
-      "handle": "nikunj",
-      "role": "partner fpvventures - investing in seed/A. previous: early hire meter, opendoor, atlassian & others. love shimoleejhaveri + 👦👧",
-      "text": "The amount of SPVs organzied by even the “best” investors is simply mind boggling..\n\nTo the point that if you read headlines of a large fundraise, you can be reasonably sure now that a large amount of it came from SPVs even though the headlines say something else. \n\nCombine that with tranched valuations and revenue not being the same, all I’ll say don’t believe the headlines anymore. \n\nProof is in the pudding and the pudding is not publicly visible anywhere.",
-      "translation": "即便是由所谓“最优秀”的投资者所组织的SPV数量，也简直令人难以置信……以至于现在当你读到某笔大规模融资的头条新闻时，你几乎可以合理确定其中很大一部分资金来自SPV，尽管头条上说的完全是另一回事。再叠加上分轮估值以及收入并不等同这些因素，我只能说：别再相信头条新闻了。证据就在布丁里，而这块布丁在任何公开场合都看不到。",
-      "translationStatus": "translated",
-      "translationMethod": "deepseek_translation",
-      "translationModel": "deepseek-v4-flash",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "social",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-09-22T23:06:00.000Z",
-      "date": "2026-09-23",
-      "url": "https://x.com/nikunj/status/2102534909076349291",
-      "likes": 34,
-      "retweets": 0,
-      "replies": 5,
-      "historical": false,
-      "laneCoverage": [
-        "morning-rss"
-      ],
-      "afternoonStableId": "",
-      "aiRelevant": false,
-      "publicationStatus": "intake_only_non_ai"
     },
     {
       "id": "2102519097770885231",
@@ -70070,11 +71220,18 @@
       "name": "Guillermo Rauch",
       "handle": "rauchg",
       "role": "vercel CEO",
-      "text": "We ran fresh Next.js evals. The tally:\n① Opus 5.5    [𝟿𝟽%]\n② GPT 6 Sol   [𝟿𝟽%]\n③ Fable 5.1     [𝟿𝟽%]\n④ Grok 4.7     [𝟿𝟺%]\n\nNotably, Grok is 2x-7x cheaper https://t.co/BAUg14981G",
+      "text": "We ran fresh Next.js evals. The tally: ① Opus 5.5 [𝟿𝟽%] ② GPT 6 Sol [𝟿𝟽%] ③ Fable 5.1 [𝟿𝟽%] ④ Grok 4.7 [𝟿𝟺%] Notably, Grok is 2x-7x cheaper https://t.co/BAUg14981G",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "我们重新跑了 Next.js 评测。结果如下：① Opus 5.5 [𝟿𝟽%] ② GPT 6 Sol [𝟿𝟽%] ③ Fable 5.1 [𝟿𝟽%] ④ Grok 4.7 [𝟿𝟺%] 值得注意的是，Grok 便宜 2x-7x https://t.co/BAUg14981G",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-pro",
+      "translationSourceHash": "cd010a4258856055",
       "topic": "产品与创业",
       "columnTags": [
         {
@@ -70096,93 +71253,15 @@
       "likes": 1087,
       "retweets": 55,
       "replies": 133,
-      "historical": false,
-      "laneCoverage": [
-        "morning-rss"
-      ],
-      "afternoonStableId": "",
       "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
       "publicationStatus": "published"
-    },
-    {
-      "id": "2102512794235207758",
-      "source": "x",
-      "name": "Sam Altman",
-      "handle": "sama",
-      "role": "The mission of OpenAI is to ensure that AGI benefits all of humanity",
-      "text": "argh i meant VOICE not video :(\n\nsorry to dissapoint",
-      "translation": "啊，我指的是语音不是视频 :( 抱歉让你失望了",
-      "translationStatus": "translated",
-      "translationMethod": "deepseek_translation",
-      "translationModel": "deepseek-v4-flash",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "social",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-09-22T21:38:07.000Z",
-      "date": "2026-09-23",
-      "url": "https://x.com/sama/status/2102512794235207758",
-      "likes": 855,
-      "retweets": 16,
-      "replies": 101,
-      "historical": false,
-      "laneCoverage": [
-        "morning-rss"
-      ],
-      "afternoonStableId": "",
-      "aiRelevant": false,
-      "publicationStatus": "intake_only_non_ai"
-    },
-    {
-      "id": "2102509507415048245",
-      "source": "x",
-      "name": "Thibault Sottiaux",
-      "handle": "thsottiaux",
-      "role": "Codex & ChatGPT OpenAI",
-      "text": "Maybe our cutest launch so far. But still packing the biggest punch. https://t.co/LVYOxpH0Wi",
-      "translation": "也许是我们迄今为止最可爱的发布。但依然最具冲击力。https://t.co/LVYOxpH0Wi",
-      "translationStatus": "translated",
-      "translationMethod": "deepseek_translation",
-      "translationModel": "deepseek-v4-flash",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "social",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-09-22T21:25:03.000Z",
-      "date": "2026-09-23",
-      "url": "https://x.com/thsottiaux/status/2102509507415048245",
-      "likes": 6045,
-      "retweets": 134,
-      "replies": 817,
-      "historical": false,
-      "laneCoverage": [
-        "morning-rss"
-      ],
-      "afternoonStableId": "",
-      "aiRelevant": false,
-      "publicationStatus": "intake_only_non_ai"
     },
     {
       "id": "2102501556348440983",
@@ -70190,11 +71269,18 @@
       "name": "Garry Tan",
       "handle": "garrytan",
       "role": "President & CEO ycombinator —Founder garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
-      "text": "We need to teach the world to prompt and maximally use AI: to help all people see the way it can give you wings in all your pursuits \n\nThen we need yearn to solve more problems for ourselves and for one another https://t.co/e7yOADOf6s",
+      "text": "We need to teach the world to prompt and maximally use AI: to help all people see the way it can give you wings in all your pursuits Then we need yearn to solve more problems for ourselves and for one another https://t.co/e7yOADOf6s",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "我们需要教会世界如何提示并最大限度地利用AI：帮助所有人看到，它能在你的一切追求中为你插上翅膀。然后，我们需要渴望为自己、也为彼此解决更多问题 https://t.co/e7yOADOf6s",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "0ae96b50dd9ee58a",
       "topic": "产品与创业",
       "columnTags": [
         {
@@ -70216,53 +71302,15 @@
       "likes": 144,
       "retweets": 17,
       "replies": 31,
-      "historical": false,
-      "laneCoverage": [
-        "morning-rss"
-      ],
-      "afternoonStableId": "",
       "aiRelevant": true,
-      "publicationStatus": "published"
-    },
-    {
-      "id": "2102489320766800002",
-      "source": "x",
-      "name": "Amjad Masad",
-      "handle": "amasad",
-      "role": "ceo replit. civilizationist",
-      "text": "Your intelligence is fake. It’s artificial.\n\nMine? It’s super. Super Intelligence. Aka SI. https://t.co/oTWHfUUpDP",
-      "translation": "你的智能是假的。它是人工的。我的呢？它是超级的。超级智能。又名SI。https://t.co/oTWHfUUpDP",
-      "translationStatus": "translated",
-      "translationMethod": "deepseek_translation",
-      "translationModel": "deepseek-v4-flash",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "social",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-09-22T20:04:51.000Z",
-      "date": "2026-09-23",
-      "url": "https://x.com/amasad/status/2102489320766800002",
-      "likes": 935,
-      "retweets": 37,
-      "replies": 107,
-      "historical": false,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": false,
-      "publicationStatus": "intake_only_non_ai"
+      "publicationStatus": "published"
     },
     {
       "id": "2102477527688388752",
@@ -70271,10 +71319,17 @@
       "handle": "trq212",
       "role": "Claude Code anthropicai. prev YC W20, spc, medialab",
       "text": "workflows are a huge part of how I use Claude these days, I'm glad we have Fable-like intelligence that works with workflows from a cost perspective",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "如今，工作流是我使用 Claude 的重要方式之一，我很高兴我们拥有类似 Fable 的智能，从成本角度来看，它能与工作流配合使用。",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "074442cfe68d2210",
       "topic": "产品与创业",
       "columnTags": [
         {
@@ -70296,12 +71351,14 @@
       "likes": 73,
       "retweets": 0,
       "replies": 5,
-      "historical": false,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -70310,11 +71367,18 @@
       "name": "Aaron Levie",
       "handle": "levie",
       "role": "ceo box - your business lives in content. unleash it with AI",
-      "text": "What an insane day in AI. The frontier models just became substantially cheaper, with the Opus 5.5 price cuts, and now with GPT-6 Sol and Luna dropping token prices by 50%.\n\nThe rate at which the cost per task (on a like-for-like basis) drops in AI is unlike any other type of technology in history. And every time the cost of AI drops, the use-cases you can deploy agents against dramatically increase. This is Jevons paradox applied to agents.\n\nThese improvements will directly lead to broader diffusion of AI in the economy as we can use agents to process all of our data, scan our code for security issues, read through all log data to make decisions, have agent swarms in workflows, and much more. The cost of tokens is directly correlated to these use-cases being opened up at scale.",
+      "text": "What an insane day in AI. The frontier models just became substantially cheaper, with the Opus 5.5 price cuts, and now with GPT-6 Sol and Luna dropping token prices by 50%. The rate at which the cost per task (on a like-for-like basis) drops in AI is unlike any other type of technology in history. And every time the cost of AI drops, the use-cases you can deploy agents against dramatically increase. This is Jevons paradox applied to agents. These improvements will directly lead to broader diffusion of AI in the economy as we can use agents to process all of our data, scan our code for security issues, read through all log data to make decisions, have agent swarms in workflows, and much more. The cost of tokens is directly correlated to these use-cases being opened up at scale.",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "AI领域真是疯狂的一天。前沿模型刚刚大幅降价，Opus 5.5价格下调，现在GPT-6 Sol和Luna又把token价格降低了50%。AI中每个任务成本（在同类对比基础上）下降的速度，是历史上任何其他技术都无法比拟的。而每当AI成本下降，你可以部署智能体来应对的用例就会急剧增加。这就是杰文斯悖论在智能体上的应用。这些改进将直接推动AI在经济中更广泛地扩散，因为我们可以用智能体来处理我们所有的数据、扫描代码中的安全问题、通读所有日志数据来做决策、在工作流中部署智能体集群，等等。token成本与这些用例能否大规模开放直接相关。",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-pro",
+      "translationSourceHash": "5e9f96b71ade1102",
       "topic": "Agent",
       "columnTags": [
         {
@@ -70336,53 +71400,15 @@
       "likes": 655,
       "retweets": 69,
       "replies": 68,
-      "historical": false,
-      "laneCoverage": [
-        "morning-rss"
-      ],
-      "afternoonStableId": "",
       "aiRelevant": true,
-      "publicationStatus": "published"
-    },
-    {
-      "id": "2102471889092276516",
-      "source": "x",
-      "name": "Claude",
-      "handle": "claudeai",
-      "role": "Claude is an AI assistant built by anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app.",
-      "text": "An algorithmic drawing program created by @kevin_t_ngo. Every drawing is based on a different seed. https://t.co/3qZFPs9mGc",
-      "translation": "由@kevin_t_ngo创建的一款算法绘图程序。每幅画都基于不同的种子。https://t.co/3qZFPs9mGc",
-      "translationStatus": "translated",
-      "translationMethod": "deepseek_translation",
-      "translationModel": "deepseek-v4-flash",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "social",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-09-22T18:55:35.000Z",
-      "date": "2026-09-23",
-      "url": "https://x.com/claudeai/status/2102471889092276516",
-      "likes": 261,
-      "retweets": 7,
-      "replies": 4,
-      "historical": false,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": false,
-      "publicationStatus": "intake_only_non_ai"
+      "publicationStatus": "published"
     },
     {
       "id": "2102471892099866883",
@@ -70391,10 +71417,17 @@
       "handle": "claudeai",
       "role": "Claude is an AI assistant built by anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app.",
       "text": "Claude Opus 5.5 is available today. What will you explore?",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "Claude Opus 5.5今日已上线。你将探索什么？",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "3cbcaf2a1fe41258",
       "topic": "产品与创业",
       "columnTags": [
         {
@@ -70416,12 +71449,14 @@
       "likes": 226,
       "retweets": 5,
       "replies": 28,
-      "historical": false,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -70431,10 +71466,17 @@
       "handle": "claudeai",
       "role": "Claude is an AI assistant built by anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app.",
       "text": "A toy brick-building app. Turn a photo or a description into a buildable model with custom instructions. https://t.co/zDFMIKuXLP",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "一款玩具积木拼搭应用。将照片或描述转化为可拼搭的模型，并附上定制说明。https://t.co/zDFMIKuXLP",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "110cea5e064579ee",
       "topic": "AI 基础设施",
       "columnTags": [
         {
@@ -70456,53 +71498,15 @@
       "likes": 257,
       "retweets": 7,
       "replies": 4,
-      "historical": false,
-      "laneCoverage": [
-        "morning-rss"
-      ],
-      "afternoonStableId": "",
       "aiRelevant": true,
-      "publicationStatus": "published"
-    },
-    {
-      "id": "2102469008079679640",
-      "source": "x",
-      "name": "Sam Altman",
-      "handle": "sama",
-      "role": "The mission of OpenAI is to ensure that AGI benefits all of humanity",
-      "text": "Startups are naturally good at this; it is hard to keep a bigger company good at this and i think an underexplored space. https://t.co/Sr48wgC0lL",
-      "translation": "初创公司天生擅长这一点；要让一家规模更大的公司也擅长这一点很难，而我认为这是一个尚未被充分探索的领域。https://t.co/Sr48wgC0lL",
-      "translationStatus": "translated",
-      "translationMethod": "deepseek_translation",
-      "translationModel": "deepseek-v4-flash",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "social",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-09-22T18:44:08.000Z",
-      "date": "2026-09-23",
-      "url": "https://x.com/sama/status/2102469008079679640",
-      "likes": 3675,
-      "retweets": 123,
-      "replies": 272,
-      "historical": false,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": false,
-      "publicationStatus": "intake_only_non_ai"
+      "publicationStatus": "published"
     },
     {
       "id": "2102468713866055872",
@@ -70510,11 +71514,18 @@
       "name": "Sam Altman",
       "handle": "sama",
       "role": "The mission of OpenAI is to ensure that AGI benefits all of humanity",
-      "text": "michelle embodies this as much as anyone\n\nopenai is so, so lucky to have benefited from everything she has done so far and i think people will be quite pleased to see what she + team have cooking next! https://t.co/AVZAtyk6Uc",
+      "text": "michelle embodies this as much as anyone openai is so, so lucky to have benefited from everything she has done so far and i think people will be quite pleased to see what she + team have cooking next! https://t.co/AVZAtyk6Uc",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "michelle最能体现这一点，openai能受益于她迄今为止所做的一切，真是太幸运了，我想人们会非常高兴看到她和团队接下来准备的东西！https://t.co/AVZAtyk6Uc",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "c0ebce572f82d233",
       "topic": "产品与创业",
       "columnTags": [
         {
@@ -70536,12 +71547,14 @@
       "likes": 2124,
       "retweets": 58,
       "replies": 121,
-      "historical": false,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -70550,11 +71563,18 @@
       "name": "Alex Albert",
       "handle": "alexalbert__",
       "role": "Research AnthropicAI. Opinions are my own!",
-      "text": "Prompt in Claude Tag\n\n\"Recreate Market Street, San Francisco as it stood on April 17, 1906, the afternoon before the earthquake, in Blender.\n\nScope: the Ferry Building up Market to Fifth Street, including the Palace Hotel, the Call Building, the Chronicle Building, Lotta's Fountain and the Emporium.\n\nBefore modeling anything, build a source file from: the 1899-1905 Sanborn fire insurance maps (footprints, heights, materials, occupants), the Miles Brothers film \"A Trip Down Market Street\" (April 1906), period photographs from OpenSFHistory, the Library of Congress and the David Rumsey collection, and USGS topography. Record every building with footprint, height, facade material, occupant, and the source for each fact with a confidence level.\n\nBuild everything in Blender Python. No downloaded meshes, textures or HDRIs. Write reusable generators (Victorian commercial facade, mansard roof, bay windows, awnings, painted signage, gas and electric street lamps, cable car, horse-drawn wagon, early automobile) and assemble the street from the source file, so every building traces back to data.\n\nProvide a 10 second video up the street.\"",
+      "text": "Prompt in Claude Tag \"Recreate Market Street, San Francisco as it stood on April 17, 1906, the afternoon before the earthquake, in Blender. Scope: the Ferry Building up Market to Fifth Street, including the Palace Hotel, the Call Building, the Chronicle Building, Lotta's Fountain and the Emporium. Before modeling anything, build a source file from: the 1899-1905 Sanborn fire insurance maps (footprints, heights, materials, occupants), the Miles Brothers film \"A Trip Down Market Street\" (April 1906), period photographs from OpenSFHistory, the Library of Congress and the David Rumsey collection, and USGS topography. Record every building with footprint, height, facade material, occupant, and the source for each fact with a confidence level. Build everything in Blender Python. No downloaded meshes, textures or HDRIs. Write reusable generators (Victorian commercial facade, mansard roof, bay windows, awnings, painted signage, gas and electric street lamps, cable car, horse-drawn wagon, early automobile) and assemble the street from the source file, so every building traces back to data. Provide a 10 second video up the street.\"",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "提示词（Claude标签）：“在Blender中重建1906年4月17日下午地震前的旧金山市场街。范围：从渡轮大厦沿市场街到第五街，包括皇宫酒店、呼叫大楼、纪事报大楼、洛塔喷泉和恩波里姆百货。在建模任何内容之前，请先根据以下资料建立源文件：1899—1905年桑伯恩火灾保险地图（占地轮廓、高度、材料、使用单位）、迈尔斯兄弟影片《市场街之旅》（1906年4月）、OpenSFHistory、国会图书馆和戴维·拉姆齐收藏中的历史照片，以及USGS地形数据。记录每栋建筑的占地轮廓、高度、立面材料、使用单位，并为每项事实注明来源和置信度。全部使用Blender Python构建。不得下载网格、纹理或HDRI。编写可复用的生成器（维多利亚式商业立面、孟莎屋顶、凸窗、遮阳篷、彩绘招牌、煤气灯和电灯路灯、缆车、马拉货车、早期汽车），并根据源文件组装街道，使每栋建筑都能追溯到数据。提供一段沿街向上的10秒视频。”",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-pro",
+      "translationSourceHash": "46caca5d4e617914",
       "topic": "产品与创业",
       "columnTags": [
         {
@@ -70576,12 +71596,14 @@
       "likes": 73,
       "retweets": 1,
       "replies": 4,
-      "historical": false,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -70590,11 +71612,18 @@
       "name": "Alex Albert",
       "handle": "alexalbert__",
       "role": "Research AnthropicAI. Opinions are my own!",
-      "text": "I've been on a Blender kick with Opus 5.5. Its better 3D modeling and vision mean you can build an entire world from a single prompt.\n\nHistorically accurate San Francisco Market street in 1906, pre-earthquake https://t.co/aisvFLFGy3",
+      "text": "I've been on a Blender kick with Opus 5.5. Its better 3D modeling and vision mean you can build an entire world from a single prompt. Historically accurate San Francisco Market street in 1906, pre-earthquake https://t.co/aisvFLFGy3",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "我最近迷上了用Opus 5.5玩Blender。它更出色的3D建模和视觉能力意味着你可以仅凭一条提示词就构建出整个完整世界。1906年地震前、历史上准确的旧金山市场街 https://t.co/aisvFLFGy3",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "f35ef50fe50acac5",
       "topic": "产品与创业",
       "columnTags": [
         {
@@ -70616,12 +71645,14 @@
       "likes": 890,
       "retweets": 40,
       "replies": 54,
-      "historical": false,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -70630,11 +71661,18 @@
       "name": "Thibault Sottiaux",
       "handle": "thsottiaux",
       "role": "Codex & ChatGPT OpenAI",
-      "text": "GPT-6 Sol and Luna are out. Not only are they a very significant improvement across the board, but also in writing and general \"you know when you try it\" quality. \n\nWe are also permanently reducing the API price by 50% making both of them viable for a ton of new usecases and making your usage go further too, even on the subscriptions.\n\nAnd one more thing. We are loading a banked reset into all accounts of our Plus, Pro and Business users. Let's go!\n\nhttps://t.co/00DRh1sRrO",
+      "text": "GPT-6 Sol and Luna are out. Not only are they a very significant improvement across the board, but also in writing and general \"you know when you try it\" quality. We are also permanently reducing the API price by 50% making both of them viable for a ton of new usecases and making your usage go further too, even on the subscriptions. And one more thing. We are loading a banked reset into all accounts of our Plus, Pro and Business users. Let's go! https://t.co/00DRh1sRrO",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "GPT-6 Sol 和 Luna 已发布。它们不仅在各方面的提升都非常显著，而且在写作和整体“你一试就知道”的质量上也是如此。我们还永久将 API 价格降低 50%，使这两者都能适用于大量新用例，也让你的使用更持久，即使在订阅上也是如此。还有一件事。我们正在为所有 Plus、Pro 和 Business 用户账户加载一次存储的重置。冲吧！https://t.co/00DRh1sRrO",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "c99a6eb123a09042",
       "topic": "AI 基础设施",
       "columnTags": [
         {
@@ -70656,53 +71694,15 @@
       "likes": 23309,
       "retweets": 1512,
       "replies": 2806,
-      "historical": false,
-      "laneCoverage": [
-        "morning-rss"
-      ],
-      "afternoonStableId": "",
       "aiRelevant": true,
-      "publicationStatus": "published"
-    },
-    {
-      "id": "2102458350348935454",
-      "source": "x",
-      "name": "Alex Albert",
-      "handle": "alexalbert__",
-      "role": "Research AnthropicAI. Opinions are my own!",
-      "text": "need to make sure you've been updated to this (rolling out to everyone soon if you haven't!) https://t.co/fjCAQKazVs",
-      "translation": "需要确保你已经更新到这个版本（如果你还没有的话，很快就会向所有人推出！）https://t.co/fjCAQKazVs",
-      "translationStatus": "translated",
-      "translationMethod": "deepseek_translation",
-      "translationModel": "deepseek-v4-flash",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "social",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-09-22T18:01:47.000Z",
-      "date": "2026-09-23",
-      "url": "https://x.com/alexalbert__/status/2102458350348935454",
-      "likes": 31,
-      "retweets": 0,
-      "replies": 1,
-      "historical": false,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": false,
-      "publicationStatus": "intake_only_non_ai"
+      "publicationStatus": "published"
     },
     {
       "id": "2102448415775051790",
@@ -70710,11 +71710,18 @@
       "name": "Aaron Levie",
       "handle": "levie",
       "role": "ceo box - your business lives in content. unleash it with AI",
-      "text": "At Box, we've been testing Opus 5.5 on a variety of complex enterprise knowledge work tasks dealing with unstructured data with the Box Agent.  \n\nOverall, we saw frontier capability levels, with major performance improvements over Opus 5. 63% fewer tokens used, 42% less verbosity, and 30% faster vs. Opus 5. And the model itself is cheaper, so this is a major win for any agentic computer use, coding, analytics, or data work that enterprises will be doing.\n\nHere are some examples of the task wins and performance gains across a variety of industry tests that we performed:\n\n• Financial services - due diligence (+39% task accuracy): A year of transaction records, with the job of finding every miscalculation in an acquisition target's pricing tool. Opus 5.5 scored a perfect result on every  attempt in half the words Opus 5 used, consuming 82% fewer tokens overall.\n\n• Technology - cloud cost analysis (+65% task accuracy): Work out what a company should actually change about its cloud spend. Opus 5.5 picked the right basis for the retention calculation and kept the source data's unit conventions straight all the way through, so the number at the end actually holds up. It took half the time Opus 5 took, with 70% fewer tokens.\n\n• Consumer products - client account analysis (+17% task accuracy): Set the onboarding targets for a client account, reading across the signed contract, a satisfaction tracker and a team metrics sheet. The contract never states a senior/junior split, so Opus 5.5 derived it from the 18-person roster and showed the rule it used; several clients had a perfect 10 on individual survey questions, so it averaged each client's responses instead of crowning the single 10. It finished this one in half the time, on 78% fewer tokens. \n\n• Clinical diagnostics - data analysis (+15% task accuracy): Malaria rapid-test performance across a dry and a wet season: build the patient records out of two clinical PDFs, compute positive test rates by season and gender, and test whether parasite counts really differ between test-positive and test-negative patients. Opus 5.5 caught that the two groups' standard deviations differed more than 100-fold, re-ran it the right way, and found the dry-season difference didn't hold up after all. This accuracy gain came with a final answer that was half the length of Opus 5's, and also needed 78% fewer tokens end to end. \n\nCustomers will be able to build AI Agents with Opus 5.5 shortly in the Box AI Studio.",
+      "text": "At Box, we've been testing Opus 5.5 on a variety of complex enterprise knowledge work tasks dealing with unstructured data with the Box Agent. Overall, we saw frontier capability levels, with major performance improvements over Opus 5. 63% fewer tokens used, 42% less verbosity, and 30% faster vs. Opus 5. And the model itself is cheaper, so this is a major win for any agentic computer use, coding, analytics, or data work that enterprises will be doing. Here are some examples of the task wins and performance gains across a variety of industry tests that we performed: • Financial services - due diligence (+39% task accuracy): A year of transaction records, with the job of finding every miscalculation in an acquisition target's pricing tool. Opus 5.5 scored a perfect result on every attempt in half the words Opus 5 used, consuming 82% fewer tokens overall. • Technology - cloud cost analysis (+65% task accuracy): Work out what a company should actually change about its cloud spend. Opus 5.5 picked the right basis for the retention calculation and kept the source data's unit conventions straight all the way through, so the number at the end actually holds up. It took half the time Opus 5 took, with 70% fewer tokens. • Consumer products - client account analysis (+17% task accuracy): Set the onboarding targets for a client account, reading across the signed contract, a satisfaction tracker and a team metrics sheet. The contract never states a senior/junior split, so Opus 5.5 derived it from the 18-person roster and showed the rule it used; several clients had a perfect 10 on individual survey questions, so it averaged each client's responses instead of crowning the single 10. It finished this one in half the time, on 78% fewer tokens. • Clinical diagnostics - data analysis (+15% task accuracy): Malaria rapid-test performance across a dry and a wet season: build the patient records out of two clinical PDFs, compute positive test rates by season and gender, and test whether parasite counts really differ between test-positive and test-negative patients. Opus 5.5 caught that the two groups' standard deviations differed more than 100-fold, re-ran it the right way, and found the dry-season difference didn't hold up after all. This accuracy gain came with a final answer that was half the length of Opus 5's, and also needed 78% fewer tokens end to end. Customers will be able to build AI Agents with Opus 5.5 shortly in the Box AI Studio.",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "在Box，我们一直在使用Box Agent测试Opus 5.5处理各种涉及非结构化数据的复杂企业知识工作任务。总体而言，我们看到了前沿能力水平，与Opus 5相比性能有了重大提升。与Opus 5相比，使用的token减少了63%，冗长度降低了42%，速度提升了30%。而且模型本身也更便宜，因此对于企业将要进行的任何智能体计算机使用、编码、分析或数据工作来说，这都是一个重大胜利。以下是我们执行的各种行业测试中任务成功和性能提升的一些示例：• 金融服务——尽职调查（任务准确率+39%）：一年的交易记录，任务是找出收购目标定价工具中的每一处计算错误。Opus 5.5在每次尝试中都取得了满分结果，所用字数仅为Opus 5的一半，总体消耗的token减少了82%。• 技术——云成本分析（任务准确率+65%）：确定一家公司实际应当对其云支出做出哪些改变。Opus 5.5为留存计算选择了正确的基础，并全程保持了源数据单位约定的一致性，因此最终得出的数字确实站得住脚。它所用时间仅为Opus 5的一半，token减少了70%。• 消费品——客户账户分析（任务准确率+17%）：为某个客户账户设定引导目标，需要综合已签署合同、满意度追踪表和团队指标表。合同从未说明高级/初级人员比例，因此Opus 5.5从18人名单中推导出了这一比例，并展示了它所使用的规则；若干客户在个别调查问题上获得了满分10分，因此它对每位客户的回答进行了平均，而不是只选出单个10分。它用一半时间完成了这项任务，token减少了78%。• 临床诊断——数据分析（任务准确率+15%）：疟疾快速检测在旱季和雨季的表现：根据两份临床PDF构建患者记录，按季节和性别计算阳性检测率，并检验检测阳性患者与检测阴性患者之间的寄生虫计数是否确实存在差异。Opus 5.5发现两组的标准差相差超过100倍，于是以正确方式重新运行，并发现旱季差异终究并不成立。这一准确率提升的同时，最终答案长度仅为Opus 5的一半，而且端到端所需token也减少了78%。客户很快就能在Box AI Studio中使用Opus 5.5构建AI智能体。",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-pro",
+      "translationSourceHash": "d4871c16caf7040d",
       "topic": "Agent",
       "columnTags": [
         {
@@ -70736,12 +71743,14 @@
       "likes": 232,
       "retweets": 23,
       "replies": 40,
-      "historical": false,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -70750,11 +71759,18 @@
       "name": "Thibault Sottiaux",
       "handle": "thsottiaux",
       "role": "Codex & ChatGPT OpenAI",
-      "text": "We have been focusing on efficiency and intelligence for all. \n\nVery proud of the team. Only possible when you have incredible models at the top end of the capability that you can then use to make a big difference in everything else.",
+      "text": "We have been focusing on efficiency and intelligence for all. Very proud of the team. Only possible when you have incredible models at the top end of the capability that you can then use to make a big difference in everything else.",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "我们一直专注于为所有人提升效率和智能。为团队感到非常自豪。只有当你拥有能力顶尖的出色模型，并能借此在其他所有方面产生巨大影响时，这一切才有可能实现。",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "1655a8024133bc31",
       "topic": "产品与创业",
       "columnTags": [
         {
@@ -70776,12 +71792,14 @@
       "likes": 12590,
       "retweets": 317,
       "replies": 1698,
-      "historical": false,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -70790,11 +71808,18 @@
       "name": "Guillermo Rauch",
       "handle": "rauchg",
       "role": "vercel CEO",
-      "text": "Love the tastefulness with which anthropic ships. \n\nMain reason I got excited about 'headless' for the web is that any given page could take whatever whimsical or unique shape you wanted. With AI, there's no excuse not to push the design frontier.\n\nThis is @nextjs at its finest:\nhttps://t.co/uXM96EijiW",
+      "text": "Love the tastefulness with which anthropic ships. Main reason I got excited about 'headless' for the web is that any given page could take whatever whimsical or unique shape you wanted. With AI, there's no excuse not to push the design frontier. This is @nextjs at its finest: https://t.co/uXM96EijiW",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "喜爱 anthropic 发布产品时的那份品味。让我对网络“无头”模式感到兴奋的主要原因是，任何一个页面都可以呈现出你想要的任何奇思妙想或独特形态。有了 AI，就没有借口不去推动设计的前沿。这就是 @nextjs 最出色的表现：https://t.co/uXM96EijiW",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "5b8e2e896b14fe1b",
       "topic": "产品与创业",
       "columnTags": [
         {
@@ -70816,12 +71841,14 @@
       "likes": 1418,
       "retweets": 34,
       "replies": 63,
-      "historical": false,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -70830,11 +71857,18 @@
       "name": "Cat Wu",
       "handle": "_catwu",
       "role": "claude code + cowork anthropicai, prev: dagster, scale_ai",
-      "text": "Claude Opus 5.5 is now the default model in Claude Code and the Claude app, including Cowork, for Pro, Max, and Team plans. I’ve been using Opus 5.5 as a daily driver and love its clear communication skills and ability to write in my style.\n\nWe’re defaulting to effort medium across products, which is comparable to Fable 5.1 on intelligence but faster. Your rate limits will go 25% further on Opus 5.5 compared to Opus 5.\n\nGive Opus 5.5 an ambitious task and let us know what you think!",
+      "text": "Claude Opus 5.5 is now the default model in Claude Code and the Claude app, including Cowork, for Pro, Max, and Team plans. I’ve been using Opus 5.5 as a daily driver and love its clear communication skills and ability to write in my style. We’re defaulting to effort medium across products, which is comparable to Fable 5.1 on intelligence but faster. Your rate limits will go 25% further on Opus 5.5 compared to Opus 5. Give Opus 5.5 an ambitious task and let us know what you think!",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "Claude Opus 5.5 现已成为 Claude Code 和 Claude 应用（包括 Cowork）中 Pro、Max 和 Team 计划的默认模型。我一直将 Opus 5.5 作为日常主力使用，很喜欢它清晰的沟通能力以及用我的风格写作的本领。我们在各产品中默认采用 effort medium，其智能水平与 Fable 5.1 相当，但速度更快。相比 Opus 5，你的速率限制在 Opus 5.5 上将多出 25%。给 Opus 5.5 一个雄心勃勃的任务，然后告诉我们你的想法！",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "f3ef3a3075bf76bb",
       "topic": "Agent",
       "columnTags": [
         {
@@ -70856,12 +71890,14 @@
       "likes": 1308,
       "retweets": 35,
       "replies": 72,
-      "historical": false,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -70872,7 +71908,7 @@
       "role": "Daily AI news curation: product launches, funding, models, tools, industry highlights.",
       "text": "What can you build with Jev",
       "content": "Muse is off to a good start",
-      "contentTranslation": "缪斯开局良好",
+      "contentTranslation": "Muse开局良好",
       "contentTranslationStatus": "translated",
       "translation": "你能用Jev构建什么？",
       "translationStatus": "translated",
@@ -70956,11 +71992,18 @@
       "name": "Aditya Agarwal",
       "handle": "adityaag",
       "role": "General Partner SPC, Co-Founder Bevel_Health",
-      "text": "In the mad dash for productivity...we often forget that AI products should be delightful and FUN.\n\nI have had so many magic moments of delight on Sentience.\n\nHighly recommend trying it out. https://t.co/i8pKw19PKq",
+      "text": "In the mad dash for productivity...we often forget that AI products should be delightful and FUN. I have had so many magic moments of delight on Sentience. Highly recommend trying it out. https://t.co/i8pKw19PKq",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "在疯狂追求生产力的过程中……我们常常忘记，AI产品应该是令人愉悦且有趣的。在Sentience上，我经历过太多令人惊喜的奇妙时刻。强烈推荐大家试一试。https://t.co/i8pKw19PKq",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "cc72b75f624ef0b7",
       "topic": "产品与创业",
       "columnTags": [
         {
@@ -70982,53 +72025,15 @@
       "likes": 23,
       "retweets": 1,
       "replies": 4,
-      "historical": false,
-      "laneCoverage": [
-        "morning-rss"
-      ],
-      "afternoonStableId": "",
       "aiRelevant": true,
-      "publicationStatus": "published"
-    },
-    {
-      "id": "2102409907278602622",
-      "source": "x",
-      "name": "Nikunj Kothari",
-      "handle": "nikunj",
-      "role": "partner fpvventures - investing in seed/A. previous: early hire meter, opendoor, atlassian & others. love shimoleejhaveri + 👦👧",
-      "text": "Now also on YouTube: https://t.co/U3O2vY7Z66",
-      "translation": "现在也可以在YouTube上观看：https://t.co/U3O2vY7Z66",
-      "translationStatus": "translated",
-      "translationMethod": "deepseek_translation",
-      "translationModel": "deepseek-v4-flash",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "social",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-09-22T14:49:17.000Z",
-      "date": "2026-09-22",
-      "url": "https://x.com/nikunj/status/2102409907278602622",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0,
-      "historical": false,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": false,
-      "publicationStatus": "intake_only_non_ai"
+      "publicationStatus": "published"
     },
     {
       "id": "2102253246807261579",
@@ -71283,7 +72288,7 @@
       "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "text": "Jev introduces a new shape of LLM - System One, aka Decision Models",
       "content": "Last week TypeSafe AI unveiled Jev , their first example of a new category of model that they are calling \"System One models\" (I'm with Maggie Appleton, I think \"decision models\" is <a h",
-      "contentTranslation": "上周，TypeSafe AI 发布了 Jev，这是他们所称的“System One 模型”这一新类别模型的首个示例（我和 Maggie Appleton 看法一致，认为“决策模型”是<a h",
+      "contentTranslation": "上周，TypeSafe AI 发布了 Jev，这是他们所称的“System One 模型”这一新类别模型的首个示例（我赞同 Maggie Appleton 的看法，我认为“决策模型”是<a h",
       "contentTranslationStatus": "translated",
       "translation": "Jev推出了一种新形态的LLM——System One，又称决策模型",
       "translationStatus": "translated",
@@ -71328,7 +72333,7 @@
       "content": "Cloudflare Python Workers are now generally available After a two year preview, Cloudflare's support for running Python code in their server-side Workers platform is now stable: \"Python is now a first-class, fully s",
       "contentTranslation": "Cloudflare Python Workers现已正式可用。经过两年的预览，Cloudflare对其服务器端Workers平台运行Python代码的支持现已稳定：“Python现在是一等公民，完全",
       "contentTranslationStatus": "translated",
-      "translation": "Cloudflare Python Workers现已正式发布",
+      "translation": "Cloudflare Python Workers现已正式可用",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
@@ -71749,9 +72754,9 @@
       "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "text": "MCP was always a bad idea?",
       "content": "My comment on MCP was always a bad idea? &mdash; Hacker News. This article entirely misses the value that MCP brings today. Sure, there's almost no reason",
-      "contentTranslation": "我对MCP的评论一直是个坏主意？—— Hacker News。这篇文章完全忽略了MCP今天所带来的价值。当然，几乎没有理由",
+      "contentTranslation": "我对MCP的评论一直是个坏主意？——Hacker News。这篇文章完全忽略了MCP如今带来的价值。当然，几乎没有理由",
       "contentTranslationStatus": "translated",
-      "translation": "MCP一直是个坏主意吗？",
+      "translation": "MCP一直是个糟糕的主意吗？",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
@@ -72269,49 +73274,6 @@
       "publicationStatus": "published"
     },
     {
-      "id": "https://simonwillison.net/2026/Sep/18/gemini-hacked-three-companies/",
-      "source": "blog",
-      "name": "Simon Willison's Blog",
-      "handle": "simonwillison.net",
-      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "text": "Gemini Hacked Three Companies in First Known Breakout by Google’s AI",
-      "content": "Gemini Hacked Three Companies in First Known Breakout by Google’s AI Gemini finally caught up on Felony Bench !",
-      "contentTranslation": "Gemini入侵了三家公司，这是已知首例由谷歌AI Gemini实现的突破。Gemini终于在重罪基准测试上赶了上来！",
-      "contentTranslationStatus": "translated",
-      "translation": "Gemini入侵了三家公司，这是已知首例谷歌AI的突破事件",
-      "translationStatus": "translated",
-      "translationMethod": "deepseek_translation",
-      "translationModel": "deepseek-v4-flash",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "blog",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-09-18T23:57:57+00:00",
-      "date": "2026-09-19",
-      "url": "https://simonwillison.net/2026/Sep/18/gemini-hacked-three-companies/",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0,
-      "historical": false,
-      "laneCoverage": [
-        "morning-rss"
-      ],
-      "afternoonStableId": "",
-      "aiRelevant": true,
-      "publicationStatus": "published"
-    },
-    {
       "id": "2101097330107875437",
       "source": "x",
       "name": "Aditya Agarwal",
@@ -72407,92 +73369,6 @@
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "publicationStatus": "published"
-    },
-    {
-      "id": "https://simonwillison.net/2026/Sep/18/probably-gonna-eat-you/",
-      "source": "blog",
-      "name": "Simon Willison's Blog",
-      "handle": "simonwillison.net",
-      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "text": "Note on 18th September 2026",
-      "content": "Being a computer scientist who refuses to find anything about LLMs interesting right now is a bit like being a geneticist who refuses to find anything interesting about the recently opened Jurassic Park. Skeptical geneticist: \"pfft, it's just frog DNA. And they deliberately let them eat pe",
-      "contentTranslation": "作为一名计算机科学家，如果现在拒绝觉得LLM有任何有趣之处，那就有点像一位遗传学家拒绝觉得最近开放的侏罗纪公园有任何有趣之处。持怀疑态度的遗传学家：“切，不过是青蛙DNA罢了。而且他们还故意让它们吃人。”",
-      "contentTranslationStatus": "translated",
-      "translation": "关于2026年9月18日的说明",
-      "translationStatus": "translated",
-      "translationMethod": "deepseek_translation",
-      "translationModel": "deepseek-v4-flash",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "blog",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-09-18T19:21:32+00:00",
-      "date": "2026-09-19",
-      "url": "https://simonwillison.net/2026/Sep/18/probably-gonna-eat-you/",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0,
-      "historical": false,
-      "laneCoverage": [
-        "morning-rss"
-      ],
-      "afternoonStableId": "",
-      "aiRelevant": false,
-      "publicationStatus": "intake_only_non_ai"
-    },
-    {
-      "id": "https://simonwillison.net/2026/Sep/18/thariq-shihipar/",
-      "source": "blog",
-      "name": "Simon Willison's Blog",
-      "handle": "simonwillison.net",
-      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "text": "Quoting Thariq Shihipar",
-      "content": "We're adding support for AGENTS.md to Claude Code. Starting today in version 2.1.277, if there is no CLAUDE.md in a folder, Claude will check for and use AGENTS.md. AGENTS.md support is built off of Claude Cod",
-      "contentTranslation": "我们正在为 Claude Code 添加对 AGENTS.md 的支持。从今天的 2.1.277 版本开始，如果某个文件夹中没有 CLAUDE.md，Claude 将检查并使用 AGENTS.md。AGENTS.md 支持是基于 Claude Cod",
-      "contentTranslationStatus": "translated",
-      "translation": "引用塔里克·希希帕尔",
-      "translationStatus": "translated",
-      "translationMethod": "deepseek_translation",
-      "translationModel": "deepseek-v4-pro",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "blog",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-09-18T19:09:27+00:00",
-      "date": "2026-09-19",
-      "url": "https://simonwillison.net/2026/Sep/18/thariq-shihipar/",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0,
-      "historical": false,
-      "laneCoverage": [
-        "morning-rss"
-      ],
-      "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -72652,10 +73528,14 @@
       "content": "",
       "contentTranslation": "",
       "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
       "translation": "Claude Projects v2 💼，Google 家庭智能体 👨‍👩‍👧‍👦，",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "ebd05dc334ecd46d",
       "topic": "Agent",
       "columnTags": [
         {
@@ -72677,98 +73557,14 @@
       "likes": 0,
       "retweets": 0,
       "replies": 0,
-      "historical": false,
-      "laneCoverage": [
-        "morning-rss"
-      ],
-      "afternoonStableId": "",
       "aiRelevant": true,
-      "publicationStatus": "published"
-    },
-    {
-      "id": "https://simonwillison.net/2026/Sep/17/targeted-attacks-on-rustaceans/",
-      "source": "blog",
-      "name": "Simon Willison's Blog",
-      "handle": "simonwillison.net",
-      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "text": "Be alert: targeted attacks on prominent Rustaceans",
-      "content": "Be alert: targeted attacks on prominent Rustaceans Important warning from Adam Harvey and the crates security team: We believe that there is an ongoing campaign targeting rust-lang membe",
-      "contentTranslation": "保持警惕：针对知名Rustaceans的定向攻击 来自Adam Harvey和crates安全团队的重要警告：我们相信，目前存在一场针对rust-lang成员的持续攻击活动",
-      "contentTranslationStatus": "translated",
-      "translation": "保持警惕：针对知名Rustaceans的定向攻击",
-      "translationStatus": "translated",
-      "translationMethod": "deepseek_translation",
-      "translationModel": "deepseek-v4-flash",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "blog",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-09-17T23:59:19+00:00",
-      "date": "2026-09-18",
-      "url": "https://simonwillison.net/2026/Sep/17/targeted-attacks-on-rustaceans/",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0,
-      "historical": false,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c",
       "laneCoverage": [
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "aiRelevant": false,
-      "publicationStatus": "intake_only_non_ai"
-    },
-    {
-      "id": "https://simonwillison.net/2026/Sep/17/how-to-write-with-an-llm/",
-      "source": "blog",
-      "name": "Simon Willison's Blog",
-      "handle": "simonwillison.net",
-      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "text": "How To Write With An LLM",
-      "content": "How To Write With An LLM Thomas Ptacek on using LLMs as copyeditors, not as writing assistants: Rule Number One: You may not use a single word an LLM suggests to you.</s",
-      "contentTranslation": "如何用LLM写作 Thomas Ptacek谈把LLM当作文字编辑，而不是写作助手：第一条规则：LLM向你建议的任何一个词，你都不能用。</s>",
-      "contentTranslationStatus": "translated",
-      "translation": "如何用LLM写作",
-      "translationStatus": "translated",
-      "translationMethod": "deepseek_translation",
-      "translationModel": "deepseek-v4-flash",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "blog",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-09-17T23:37:27+00:00",
-      "date": "2026-09-18",
-      "url": "https://simonwillison.net/2026/Sep/17/how-to-write-with-an-llm/",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0,
-      "historical": false,
-      "laneCoverage": [
-        "morning-rss"
-      ],
-      "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -72867,49 +73663,6 @@
         "morning-rss"
       ],
       "afternoonStableId": "",
-      "publicationStatus": "published"
-    },
-    {
-      "id": "https://simonwillison.net/2026/Sep/17/compaction-summaries/",
-      "source": "blog",
-      "name": "Simon Willison's Blog",
-      "handle": "simonwillison.net",
-      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "text": "Self-generated prompt injections in compaction summaries",
-      "content": "Self-generated prompt injections in compaction summaries In Our framework for r",
-      "contentTranslation": "压缩摘要中的自生成提示注入 在我们的r框架中",
-      "contentTranslationStatus": "translated",
-      "translation": "压缩摘要中的自生成提示注入",
-      "translationStatus": "translated",
-      "translationMethod": "deepseek_translation",
-      "translationModel": "deepseek-v4-flash",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "blog",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-09-17T20:57:55+00:00",
-      "date": "2026-09-18",
-      "url": "https://simonwillison.net/2026/Sep/17/compaction-summaries/",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0,
-      "historical": false,
-      "laneCoverage": [
-        "morning-rss"
-      ],
-      "afternoonStableId": "",
-      "aiRelevant": true,
       "publicationStatus": "published"
     },
     {
@@ -139403,7 +140156,7 @@
         "afternoon-skill"
       ],
       "publicationStatus": "intake_only",
-      "coveredByMorning": false,
+      "coveredByMorning": true,
       "publishedViaMorningGate": false
     },
     {
@@ -139451,7 +140204,7 @@
         "afternoon-skill"
       ],
       "publicationStatus": "intake_only",
-      "coveredByMorning": false,
+      "coveredByMorning": true,
       "publishedViaMorningGate": false
     },
     {
@@ -139474,9 +140227,9 @@
       "laneCoverage": [
         "afternoon-skill"
       ],
-      "publicationStatus": "intake_only",
-      "coveredByMorning": false,
-      "publishedViaMorningGate": false
+      "publicationStatus": "published_via_morning_gate",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": true
     },
     {
       "id": "BP-20260925-06",
@@ -139522,9 +140275,9 @@
       "laneCoverage": [
         "afternoon-skill"
       ],
-      "publicationStatus": "intake_only",
-      "coveredByMorning": false,
-      "publishedViaMorningGate": false
+      "publicationStatus": "published_via_morning_gate",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": true
     },
     {
       "id": "BP-20260925-08",
@@ -139546,9 +140299,9 @@
       "laneCoverage": [
         "afternoon-skill"
       ],
-      "publicationStatus": "intake_only",
-      "coveredByMorning": false,
-      "publishedViaMorningGate": false
+      "publicationStatus": "published_via_morning_gate",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": true
     },
     {
       "id": "BP-20260925-09",
@@ -139570,9 +140323,9 @@
       "laneCoverage": [
         "afternoon-skill"
       ],
-      "publicationStatus": "intake_only",
-      "coveredByMorning": false,
-      "publishedViaMorningGate": false
+      "publicationStatus": "published_via_morning_gate",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": true
     },
     {
       "id": "BP-20260925-10",
@@ -139594,9 +140347,9 @@
       "laneCoverage": [
         "afternoon-skill"
       ],
-      "publicationStatus": "intake_only",
-      "coveredByMorning": false,
-      "publishedViaMorningGate": false
+      "publicationStatus": "published_via_morning_gate",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": true
     },
     {
       "id": "BP-20260925-11",
@@ -139618,9 +140371,9 @@
       "laneCoverage": [
         "afternoon-skill"
       ],
-      "publicationStatus": "intake_only",
-      "coveredByMorning": false,
-      "publishedViaMorningGate": false
+      "publicationStatus": "published_via_morning_gate",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": true
     },
     {
       "id": "BP-20260925-12",
@@ -139667,7 +140420,7 @@
         "afternoon-skill"
       ],
       "publicationStatus": "intake_only",
-      "coveredByMorning": false,
+      "coveredByMorning": true,
       "publishedViaMorningGate": false
     },
     {
@@ -139714,9 +140467,9 @@
       "laneCoverage": [
         "afternoon-skill"
       ],
-      "publicationStatus": "intake_only",
-      "coveredByMorning": false,
-      "publishedViaMorningGate": false
+      "publicationStatus": "published_via_morning_gate",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": true
     },
     {
       "id": "BP-20260925-16",
@@ -139763,7 +140516,7 @@
         "afternoon-skill"
       ],
       "publicationStatus": "intake_only",
-      "coveredByMorning": false,
+      "coveredByMorning": true,
       "publishedViaMorningGate": false
     },
     {
@@ -139810,9 +140563,9 @@
       "laneCoverage": [
         "afternoon-skill"
       ],
-      "publicationStatus": "intake_only",
-      "coveredByMorning": false,
-      "publishedViaMorningGate": false
+      "publicationStatus": "published_via_morning_gate",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": true
     },
     {
       "id": "BP-20260925-20",
@@ -139834,9 +140587,9 @@
       "laneCoverage": [
         "afternoon-skill"
       ],
-      "publicationStatus": "intake_only",
-      "coveredByMorning": false,
-      "publishedViaMorningGate": false
+      "publicationStatus": "published_via_morning_gate",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": true
     },
     {
       "id": "BP-20260925-21",
@@ -139907,7 +140660,7 @@
         "afternoon-skill"
       ],
       "publicationStatus": "intake_only",
-      "coveredByMorning": false,
+      "coveredByMorning": true,
       "publishedViaMorningGate": false
     },
     {

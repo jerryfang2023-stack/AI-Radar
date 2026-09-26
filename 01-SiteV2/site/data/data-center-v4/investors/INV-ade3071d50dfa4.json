@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
+    "generatedAt": "2026-09-26T00:33:55.289Z",
     "latestDataDate": "2026-09-24",
     "currentDate": "2026-09-24",
     "eventCount": 3561,
@@ -709,18 +709,6 @@
         "quote_hash": "dc679f5e5dedcbaac48269cd2e5d3992c2bbd56ef48c91e73fa4fb29cf203c21"
       }
     ],
-    "translations": {
-      "zh-CN": {
-        "activities[0].role": {
-          "text": "Series E 参投方",
-          "source_hash": "4c5721848f6406bd6f2e84ed29d011b6af208116ac9cea44324fd35d85384690",
-          "provider": "deepseek",
-          "model": "deepseek-v4-flash",
-          "translated_at": "2026-09-18T02:49:06.821Z",
-          "status": "translated"
-        }
-      }
-    },
     "public_profile": {
       "summary": "Salesforce Ventures 是 Salesforce 的风险投资部门，2009 年推出，由 Salesforce 提供全部资金来源，聚焦企业软件。官网截至 2026 年 7 月披露其投资规模、投资组合退出数据及核心主题。",
       "facts": [
@@ -810,6 +798,26 @@
       "identity_status": "verified",
       "coverage_status": "researched",
       "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
+    },
+    "translations": {
+      "zh-CN": {
+        "activities[0].role": {
+          "text": "Series E 参投方",
+          "source_hash": "4c5721848f6406bd6f2e84ed29d011b6af208116ac9cea44324fd35d85384690",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-18T02:49:06.821Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[0].description": {
+          "text": "Salesforce Ventures 官网称该投资部门于 2009 年推出。",
+          "source_hash": "94b81c52047639cb6f52e392d719440666ad08c02776fdfdf8fdcb29d5885b34",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-26T00:33:31.545Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

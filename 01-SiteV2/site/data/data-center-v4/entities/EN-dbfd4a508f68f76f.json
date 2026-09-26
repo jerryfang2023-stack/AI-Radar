@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
+    "generatedAt": "2026-09-26T00:33:55.289Z",
     "latestDataDate": "2026-09-24",
     "currentDate": "2026-09-24",
     "eventCount": 3561,
@@ -67,15 +67,12 @@
     ],
     "eventIds": [],
     "viewpointIds": [
+      "https://simonwillison.net/2026/Sep/24/harder/",
       "https://simonwillison.net/2026/Sep/23/shadow-roots/",
       "https://simonwillison.net/2026/Sep/23/bof-agentic-engineering/",
       "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/",
       "https://simonwillison.net/2026/Sep/21/jev/",
       "https://simonwillison.net/2026/Sep/20/hn-49779718/",
-      "https://simonwillison.net/2026/Sep/18/gemini-hacked-three-companies/",
-      "https://simonwillison.net/2026/Sep/18/thariq-shihipar/",
-      "https://simonwillison.net/2026/Sep/17/how-to-write-with-an-llm/",
-      "https://simonwillison.net/2026/Sep/17/compaction-summaries/",
       "https://simonwillison.net/2026/Jul/17/llm-cliche-highlighter/#atom-everything",
       "https://simonwillison.net/2026/Jul/16/kimi-k3/#atom-everything",
       "https://simonwillison.net/2026/Jul/16/bad-codex-bug/#atom-everything",
@@ -125,7 +122,7 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-01",
-    "lastSeen": "2026-09-24",
+    "lastSeen": "2026-09-25",
     "handle": "simonwillison.net",
     "role": "AI编码工具、LLM发布说明、提示工程、datasette生态系统、开发者工作流观察。",
     "organization": "",
@@ -157,6 +154,12 @@
     "timeline": [],
     "viewpoints": [
       {
+        "id": "https://simonwillison.net/2026/Sep/24/harder/",
+        "date": "2026-09-25",
+        "title": "关于2026年9月24日的说明",
+        "sourceUrl": "https://simonwillison.net/2026/Sep/24/harder/"
+      },
+      {
         "id": "https://simonwillison.net/2026/Sep/23/shadow-roots/",
         "date": "2026-09-24",
         "title": "Shadow roots，通过实时示例进行解释",
@@ -183,32 +186,8 @@
       {
         "id": "https://simonwillison.net/2026/Sep/20/hn-49779718/",
         "date": "2026-09-21",
-        "title": "MCP一直是个坏主意吗？",
+        "title": "MCP一直是个糟糕的主意吗？",
         "sourceUrl": "https://simonwillison.net/2026/Sep/20/hn-49779718/"
-      },
-      {
-        "id": "https://simonwillison.net/2026/Sep/18/gemini-hacked-three-companies/",
-        "date": "2026-09-19",
-        "title": "Gemini入侵了三家公司，这是已知首例谷歌AI的突破事件",
-        "sourceUrl": "https://simonwillison.net/2026/Sep/18/gemini-hacked-three-companies/"
-      },
-      {
-        "id": "https://simonwillison.net/2026/Sep/18/thariq-shihipar/",
-        "date": "2026-09-19",
-        "title": "引用塔里克·希希帕尔",
-        "sourceUrl": "https://simonwillison.net/2026/Sep/18/thariq-shihipar/"
-      },
-      {
-        "id": "https://simonwillison.net/2026/Sep/17/how-to-write-with-an-llm/",
-        "date": "2026-09-18",
-        "title": "如何用LLM写作",
-        "sourceUrl": "https://simonwillison.net/2026/Sep/17/how-to-write-with-an-llm/"
-      },
-      {
-        "id": "https://simonwillison.net/2026/Sep/17/compaction-summaries/",
-        "date": "2026-09-18",
-        "title": "压缩摘要中的自生成提示注入",
-        "sourceUrl": "https://simonwillison.net/2026/Sep/17/compaction-summaries/"
       },
       {
         "id": "https://simonwillison.net/2026/Jul/17/llm-cliche-highlighter/#atom-everything",
@@ -481,18 +460,6 @@
         "sourceUrl": "https://simonwillison.net/2026/Jun/1/hackers-simply-asked-meta-ai/#atom-everything"
       }
     ],
-    "translations": {
-      "zh-CN": {
-        "role": {
-          "text": "AI编码工具、LLM发布说明、提示工程、datasette生态系统、开发者工作流观察。",
-          "source_hash": "15096b66c7e1dd939fdea4666dfe619f93132dc3f3cb843f763faca813ffdd51",
-          "provider": "deepseek",
-          "model": "deepseek-v4-flash",
-          "translated_at": "2026-08-14T07:17:59.800Z",
-          "status": "translated"
-        }
-      }
-    },
     "public_profile": {
       "summary": "Simon Willison 是 Datasette 开源工具的创建者、Django Web 框架共同创建者及独立开源开发者；曾任 Eventbrite 工程总监，并共同创办 Lanyrd。",
       "current_roles": [
@@ -543,9 +510,43 @@
           "quote_hash": "8a4c4a926fd5701b1db7932fb018094ef865d3afa1980483a05fd17ddb91ef34"
         }
       ],
-      "last_verified_at": "2026-09-25",
-      "coverage_status": "researched",
-      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
+      "last_verified_at": "2026-09-25"
+    },
+    "translations": {
+      "zh-CN": {
+        "role": {
+          "text": "AI编码工具、LLM发布说明、提示工程、datasette生态系统、开发者工作流观察。",
+          "source_hash": "15096b66c7e1dd939fdea4666dfe619f93132dc3f3cb843f763faca813ffdd51",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-08-14T07:17:59.800Z",
+          "status": "translated"
+        },
+        "public_profile.summary": {
+          "text": "Simon Willison 是 Datasette 开源工具的创建者、Django Web 框架共同创建者及独立开源开发者；曾任 Eventbrite 工程总监，并共同创办 Lanyrd。",
+          "source_hash": "1b1b21bcdfbafd7074a5976d05a91d4a8397738b74af579dc128be53ded3c58e",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-26T00:33:29.266Z",
+          "status": "translated"
+        },
+        "public_profile.career[0].description": {
+          "text": "通过 Eventbrite 收购 Lanyrd 后加入 Eventbrite。",
+          "source_hash": "9435bf9fc7f5abcdb2925d57de9cc9da9826857fd724f835f2ca78fe5acd30eb",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-26T00:33:29.266Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "创建 Datasette，并共同创建 Django Web Framework。",
+          "source_hash": "96ba0e0f511f42445c12e773d3bc80335db610531339a548212cea8560176282",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-26T00:33:29.266Z",
+          "status": "translated"
+        }
+      }
     }
   },
   "relatedEntities": [],

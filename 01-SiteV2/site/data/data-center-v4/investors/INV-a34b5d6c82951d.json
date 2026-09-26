@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
+    "generatedAt": "2026-09-26T00:33:55.289Z",
     "latestDataDate": "2026-09-24",
     "currentDate": "2026-09-24",
     "eventCount": 3561,
@@ -55,24 +55,26 @@
   "institution": {
     "id": "INV-a34b5d6c82951d",
     "name": "孚腾资本",
-    "aliases": [],
+    "aliases": [
+      "Fortera Capital"
+    ],
     "canonical_entity_id": null,
-    "investor_kind": "unverified_investor",
-    "investor_kind_label": "投资方（类型待核验）",
-    "classification_confidence": "unverified",
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 5,
-    "historical_or_ambiguous_count": 2,
+    "historical_or_ambiguous_count": 3,
     "portfolio_company_count": 5,
     "market_regions": [
       "CN"
     ],
     "china_market_activity_count": 5,
     "china_market_company_count": 5,
-    "first_disclosed_at": "2026-04-16",
+    "first_disclosed_at": "2026-01-26",
     "latest_disclosed_at": "2026-09-20",
     "role_counts": {
-      "historical_or_ambiguous": 2,
+      "historical_or_ambiguous": 3,
       "lead": 1,
       "participant": 4
     },
@@ -391,6 +393,47 @@
             "quote_hash": "98283f62fdc1f099a463b6ddcadde3f558c7320eaabe074bee13e6968378fbb8"
           }
         ]
+      },
+      {
+        "activity_id": "IA-baa5e8253fe844dd",
+        "funding_insight_id": "FI-74076c9ab29354a8",
+        "event_ids": [
+          "EV-df37e9341b5c7f04",
+          "EV-794f0a86004da0c9"
+        ],
+        "company_entity_id": "EN-2c348893efb2316e",
+        "company_canonical_entity_id": "EN-2c348893efb2316e",
+        "company_name": "StepFun",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
+        "round_original": "B+轮",
+        "amount_original": "50 亿人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 5000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "50 亿元"
+        },
+        "announced_at": "2026-01-26",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "B轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-2a290bc55630db75",
+            "source_url": "https://siliconangle.com/2024/12/26/chinese-ai-model-maker-stepfun-raises-hundreds-millions-series-b-funding",
+            "source_title": "Chinese AI model maker Stepfun raises hundreds of millions in Series B funding - SiliconANGLE",
+            "source_content_hash": "a96179357a475138",
+            "quote": "The round was led by Fortera Capital, which is the private equity arm of the Shanghai state-owned group Capital Investment Co.",
+            "quote_hash": "eeb30da1418b0a559a813e24c639f809f863811aedb0a01c389c1ea2bd983e66"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -449,6 +492,14 @@
         "source_content_hash": "0f321e5ffc10ea03",
         "quote": "TCL创投、孚腾资本、首程控股（0697.HK）、建发新兴投资、恒旭资本、国汽投资进一步投资入局",
         "quote_hash": "98283f62fdc1f099a463b6ddcadde3f558c7320eaabe074bee13e6968378fbb8"
+      },
+      {
+        "source_id": "FISRC-2a290bc55630db75",
+        "source_url": "https://siliconangle.com/2024/12/26/chinese-ai-model-maker-stepfun-raises-hundreds-millions-series-b-funding",
+        "source_title": "Chinese AI model maker Stepfun raises hundreds of millions in Series B funding - SiliconANGLE",
+        "source_content_hash": "a96179357a475138",
+        "quote": "The round was led by Fortera Capital, which is the private equity arm of the Shanghai state-owned group Capital Investment Co.",
+        "quote_hash": "eeb30da1418b0a559a813e24c639f809f863811aedb0a01c389c1ea2bd983e66"
       }
     ],
     "public_profile": {
