@@ -139,19 +139,86 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Active Impact Investments 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "The firm’s seed-fund positioning and climate focus are self-descriptions on its website. Fund portfolios are selected company examples, not audited performance. Gritt’s $32.4 million financing total is not Active Impact’s individual contribution.",
+      "summary": "Active Impact Investments is a Canadian climate-tech seed investor. The firm says it backs capital-efficient, market-ready companies that address environmental challenges and supports founders with sales, talent, fundraising, and an operator network.",
+      "facts": [
+        {
+          "field": "firm_positioning",
+          "label": "Firm positioning",
+          "value": "Describes itself as Canada’s largest climate-tech seed fund.",
+          "source_id": "active_impact_home"
+        },
+        {
+          "field": "investment_focus",
+          "label": "Investment focus",
+          "value": "Climate and sustainability solutions across clean energy and transportation, infrastructure and carbon, sustainable food and water, and circular and sharing economy.",
+          "source_id": "active_impact_home"
+        },
+        {
+          "field": "investment_approach",
+          "label": "Investment approach",
+          "value": "Capital-efficient, market-ready products and services with an emphasis on customer value and environmental impact.",
+          "source_id": "active_impact_home"
+        },
+        {
+          "field": "founder_support",
+          "label": "Founder support",
+          "value": "The firm lists sales, talent, and fundraising support through its network of operators and investors.",
+          "source_id": "active_impact_home"
+        },
+        {
+          "field": "funds",
+          "label": "Fund series",
+          "value": "The public portfolio is organized into Fund I, Fund II, and Fund III.",
+          "source_id": "active_impact_portfolio"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Gritt · 多轮融资 · 2026-07-21 · 本轮参投 · $32.4M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "The firm’s public site organizes selected portfolio companies under Funds I–III; it does not present these company lists as audited performance.",
+          "source_id": "active_impact_portfolio"
+        },
+        {
+          "description": "Gritt’s July 2026 announcement names Active Impact Investments among participants in a $32.4 million financing. The reported total is the company’s round, not the firm’s individual check.",
           "source_id": "FISRC-e5ce259c107507e9"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "application",
+          "label": "Climate venture submissions",
+          "value": "Submit a climate venture through the official entrepreneur page.",
+          "source_id": "active_impact_entrepreneurs",
+          "url": "https://www.activeimpactinvestments.com/entrepreneurs"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "active_impact_home",
+          "source_url": "https://www.activeimpactinvestments.com/",
+          "source_title": "Active Impact Investments",
+          "source_content_hash": "f4180df1f730d019d37e810a786e796071649339ea3bf5843510141aaf53cfe1",
+          "quote": "Active Impact Investments is Canada’s largest climate tech seed fund. We invest in the reimagining of every industry to solve supply constraints through innovation.",
+          "quote_hash": "dc326cd8dc88f67bd71880e4834035f73a78143fac06e9ce0f85d9f4fe315d87"
+        },
+        {
+          "source_id": "active_impact_portfolio",
+          "source_url": "https://www.activeimpactinvestments.com/portfolio",
+          "source_title": "Portfolio | Active Impact Investments",
+          "source_content_hash": "155cdde1c4fd4956f2aa8b9a7b3f4011a9ff7d002ba2a6d1ba96598f1d46e77c",
+          "quote": "Fund III Fund II Fund I",
+          "quote_hash": "3481aeddb1939db034640daf62c9720366973036f6f6cbd1a577e79db238bde5"
+        },
+        {
+          "source_id": "active_impact_entrepreneurs",
+          "source_url": "https://www.activeimpactinvestments.com/entrepreneurs",
+          "source_title": "Work With Us: Entrepreneurs | Active Impact Investments",
+          "source_content_hash": "e7dad161768e6c93a4355ee2734e1837c7c0a0dd5eb17cd8b64b8dd6e2e984e6",
+          "quote": "Submit your CLIMATE VENTURE",
+          "quote_hash": "46fdd831efd8be2e6ecdcde12433df6547662b650da4d2cbe25a974287c5f103"
+        },
         {
           "source_id": "FISRC-e5ce259c107507e9",
           "source_url": "https://www.gritt.ai/news/gritt-launches-physical-ai",
@@ -161,7 +228,7 @@
           "quote_hash": "4109f5add97a3833f94113a1a1bae808679ecafe980337ec572ccdaf5c63ecec"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

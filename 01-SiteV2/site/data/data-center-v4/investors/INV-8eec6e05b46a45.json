@@ -139,19 +139,74 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Act One Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Investment thesis, stage, and portfolio examples are drawn from Act One Ventures’ current website. The logcat.ai financing source lists Act One Ventures among participants but does not disclose its individual check.",
+      "summary": "Act One Ventures is a San Francisco-based, AI-native venture firm investing at pre-seed and seed. Its current thesis focuses on founders rebuilding enterprise systems and AI-native services; the firm describes its portfolio as spanning foundational enterprise software and newer AI-native companies.",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "Investment stage",
+          "value": "Pre-seed and seed.",
+          "source_id": "actone_home"
+        },
+        {
+          "field": "focus",
+          "label": "Investment focus",
+          "value": "AI-native enterprise companies, including agent infrastructure and operating systems or services that re-architect industries.",
+          "source_id": "actone_home"
+        },
+        {
+          "field": "portfolio_model",
+          "label": "Founder support",
+          "value": "The firm says it combines founding experience, AI-native operations, customer introductions, and hands-on support.",
+          "source_id": "actone_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：logcat.ai · 预种子轮 · 2026-07-16 · 本轮参投 · $2.55M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "The firm’s portfolio page highlights earlier investments and notes that several were acquired; it does not publish fund-level return figures on that page.",
+          "source_id": "actone_portfolio"
+        },
+        {
+          "description": "A July 2026 company announcement lists Act One Ventures among participants in logcat.ai’s $2.55 million pre-seed round. The round total is not Act One’s individual check.",
           "source_id": "FISRC-adb92a0723de45a1"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "contact_form",
+          "label": "Founder pitch submissions",
+          "value": "Act One Ventures says it accepts pitches through this form.",
+          "source_id": "actone_contact",
+          "url": "https://www.actoneventures.com/contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "actone_home",
+          "source_url": "https://www.actoneventures.com/",
+          "source_title": "Act One Ventures",
+          "source_content_hash": "bbde6bf0047276cf97909985f3fc76cc2fc0142835a119f58fd628345136ed82",
+          "quote": "Act One Ventures is an AI-native venture firm in San Francisco, investing at pre-seed and seed.",
+          "quote_hash": "9c930d7bbf9a3c3a4376e35bc63b5a6f2818655b965e46de47f65a96e544eb1a"
+        },
+        {
+          "source_id": "actone_portfolio",
+          "source_url": "https://www.actoneventures.com/portfolio",
+          "source_title": "Portfolio | Act One Ventures",
+          "source_content_hash": "ac50cd09e870dd89fefe41fc0cccf1a1538112244776e784f0974ee17e87df23",
+          "quote": "Earlier Investments. The companies that built our track record before the AI-native era. Several acquired, all formative.",
+          "quote_hash": "d99be2c22fa74ebd011de763c1e404f60650a4a9cbd3a55ff125067a0cfc1c95"
+        },
+        {
+          "source_id": "actone_contact",
+          "source_url": "https://www.actoneventures.com/contact",
+          "source_title": "Contact | Act One Ventures",
+          "source_content_hash": "9914acd66f4e2a313adc09ecd31d1ced23549f77a743674dee33d5b18cba7192",
+          "quote": "If you’re building an AI-native company, we’d love to hear about it. We only accept pitches through this form.",
+          "quote_hash": "e8b972dd0270851f9f49e2676b1a74831d734bf281e5fc8dd5b8a32d16c28a28"
+        },
         {
           "source_id": "FISRC-adb92a0723de45a1",
           "source_url": "https://blog.logcat.ai/2026/07/16/logcat.ai-raises-2.55m-to-build-the-future-of-device-systems-engineering/",
@@ -161,7 +216,7 @@
           "quote_hash": "4203370d402238a15912e531fe70d3001f6dd4f8566c942b203406c38e70dbf9"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

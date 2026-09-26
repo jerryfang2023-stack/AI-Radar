@@ -139,19 +139,66 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "AME Cloud Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "The firm’s official website describes its data and cloud investment focus and lists portfolio examples. The page footer is dated 2017, so portfolio and team details may be incomplete or dated. Actualyze AI’s $7 million seed amount is the company’s total round, not AME Cloud’s individual check.",
+      "summary": "AME Cloud Ventures is a venture fund led by Yahoo! co-founder Jerry Yang. Its website describes investments from seed to later stages in companies building around data infrastructure, cloud, hardware, and applications. The public portfolio list is selected and may not be current.",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "Investment focus",
+          "value": "Data-oriented companies building infrastructure and value chains across the data stack.",
+          "source_id": "ame_home"
+        },
+        {
+          "field": "stage",
+          "label": "Investment stage",
+          "value": "Seed through later stages, as described by the firm.",
+          "source_id": "ame_home"
+        },
+        {
+          "field": "portfolio_examples",
+          "label": "Selected portfolio examples",
+          "value": "The firm lists Nervana Systems, Freenome, Elementum, Synthego, and Rigetti Quantum Computing.",
+          "source_id": "ame_portfolio"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Actualyze AI · 种子轮 · 2026-08-03 · 本轮参投 · $7 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "AME Cloud Ventures’ public portfolio page lists selected companies including Nervana Systems, Freenome, Synthego, and Rigetti; this is not a complete portfolio or returns record.",
+          "source_id": "ame_portfolio"
+        },
+        {
+          "description": "A PR Newswire release says Actualyze AI launched with $7 million in seed funding backed by AME Cloud Ventures and other investors. The total is the company’s round, not AME’s individual commitment.",
           "source_id": "FISRC-7d5911b83ac40a4d"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Official website",
+          "value": "AME Cloud Ventures",
+          "source_id": "ame_home",
+          "url": "https://www.amecloudventures.com/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "ame_home",
+          "source_url": "https://www.amecloudventures.com/",
+          "source_title": "AME Cloud Ventures",
+          "source_content_hash": "1e62c55bfeb0ce6f2d24f705e4418bd44a954733a6d6e5aaf43cb872c2c06f55",
+          "quote": "AME Cloud Ventures focuses on seed to later stage companies building infrastructure and value chains around data.",
+          "quote_hash": "50d994f0971ee53a3916548f2ad29a2199b6b5756888eb0ed38530d48889a0b6"
+        },
+        {
+          "source_id": "ame_portfolio",
+          "source_url": "https://www.amecloudventures.com/portfolio",
+          "source_title": "AME Cloud Ventures Portfolio",
+          "source_content_hash": "b1d2b1b7e2495f74b60c54526b902cc2223cbab52b4d887068060ab24a9604d3",
+          "quote": "Select Portfolio Companies: Nervana Systems, Freenome, Elementum, Synthego, Rigetti Quantum Computing",
+          "quote_hash": "1f4d79217e6d779bfc7e01ee53e03a813314665bc9f62b79308314273b104a39"
+        },
         {
           "source_id": "FISRC-7d5911b83ac40a4d",
           "source_url": "https://www.prnewswire.com/news-releases/actualyze-ai-emerges-from-stealth-with-7m-seed-round-to-deliver-enterprises-one-platform-for-every-ai-request-302840716.html",
@@ -161,7 +208,7 @@
           "quote_hash": "69cbee4b0d08b8459255ff8e36ce3e5276eb038abeb04a605510eef96a35dad6"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

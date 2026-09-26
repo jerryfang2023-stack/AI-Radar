@@ -139,19 +139,80 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Adverb Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Firm strategy, team, and portfolio examples come from Adverb’s official pages. Acquisition examples are selected portfolio outcomes, not fund-return data. The Foundational Industries report does not disclose Adverb’s individual commitment.",
+      "summary": "Adverb Ventures is an early-stage venture firm co-founded by April Underwood and Jessica Verrilli. It says typical investments range from $500,000 to $5 million and that it works with founders from a company’s earliest stages.",
+      "facts": [
+        {
+          "field": "founders",
+          "label": "Co-founders",
+          "value": "April Underwood and Jessica Verrilli are listed as co-founders and managing directors.",
+          "source_id": "adverb_team"
+        },
+        {
+          "field": "investment_stage",
+          "label": "Investment stage",
+          "value": "The firm invests at the earliest stages of company building.",
+          "source_id": "adverb_portfolio"
+        },
+        {
+          "field": "check_size",
+          "label": "Typical investment range",
+          "value": "$500,000–$5 million, according to the firm.",
+          "source_id": "adverb_portfolio"
+        },
+        {
+          "field": "approach",
+          "label": "Founder support",
+          "value": "Adverb says it invests in and advises founders with distinctive insight into their market, audience, or problem.",
+          "source_id": "adverb_portfolio"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Foundational Industries · 种子轮 · 2026-08-01 · 本轮参投 · $25 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Adverb’s portfolio page marks Cove as acquired by Microsoft AI; this is a selected company outcome, not a disclosed fund return.",
+          "source_id": "adverb_exits"
+        },
+        {
+          "description": "An August 2026 report lists Adverb Ventures among participants in Foundational Industries’ $25 million seed round. The amount is the company’s round total, not Adverb’s individual check.",
           "source_id": "FISRC-e6ee0cd472bfb792"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Official website",
+          "value": "Adverb Ventures",
+          "source_id": "adverb_portfolio",
+          "url": "https://www.adverb.vc/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "adverb_team",
+          "source_url": "https://www.adverb.vc/our-team",
+          "source_title": "Our Team | Adverb",
+          "source_content_hash": "5a5dfc0c03e435ad8c862917f73afeac764cd2c9d720e34484363d7193866875",
+          "quote": "April Underwood Co-founder & Managing Director Jessica Verrilli Co-founder & Managing Director",
+          "quote_hash": "e5240517d3fa82703e1709d3fe63528b00648bb941736ce13929ba7438b4cdc2"
+        },
+        {
+          "source_id": "adverb_portfolio",
+          "source_url": "https://www.adverb.vc/portfolio",
+          "source_title": "Portfolio | Adverb",
+          "source_content_hash": "cbc919590ceceb13ad14baef23b6210f2cab3bfa533d49f074d3634a0fd32438",
+          "quote": "Our typical investments are between $500k and $5M, in a company’s earliest stages.",
+          "quote_hash": "e9a86bc65338c48060d957671e7191c767e64db542457c471c44faf2407b0782"
+        },
+        {
+          "source_id": "adverb_exits",
+          "source_url": "https://www.adverb.vc/portfolio",
+          "source_title": "Portfolio | Adverb",
+          "source_content_hash": "cbc919590ceceb13ad14baef23b6210f2cab3bfa533d49f074d3634a0fd32438",
+          "quote": "Cove (acq. by Microsoft AI)",
+          "quote_hash": "e642d23704374ba05f59e44918d6e9918e5f96f03b329888e2cd7ccd432c065b"
+        },
         {
           "source_id": "FISRC-e6ee0cd472bfb792",
           "source_url": "https://aiweekly.co/alerts/foundational-industries-raises-25m-to-build-ai-run-factories",
@@ -161,7 +222,7 @@
           "quote_hash": "2ce0e9be3cf5e9aed5bc990ee0d49022addc2585f7073b8da73d3d987b45a249"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

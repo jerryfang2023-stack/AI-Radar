@@ -139,19 +139,94 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "American Family Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2025-09-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Launch date, AUM, stage, and check range are AFV’s website disclosures and may change. Portfolio acquisitions are selected company outcomes and do not establish fund-level returns. Pathwork’s $3.5 million seed amount is the company total, not AFV’s individual check.",
+      "summary": "American Family Ventures (AFV) is an insurance-focused venture firm launched in 2010. It says it evolved from an insurer-backed investment team into a multi-LP model, combining carrier perspective with startup investing across insurance, adjacent markets, and enabling technologies.",
+      "facts": [
+        {
+          "field": "launched",
+          "label": "Launched",
+          "value": "2010, according to the firm.",
+          "source_id": "afv_home"
+        },
+        {
+          "field": "reported_aum",
+          "label": "Reported assets under management",
+          "value": "More than $700 million, as stated on AFV’s website; the site does not give an as-of date.",
+          "source_id": "afv_home"
+        },
+        {
+          "field": "investment_focus",
+          "label": "Investment focus",
+          "value": "Insurance product lines, adjacent vertical markets, and enabling technologies.",
+          "source_id": "afv_about"
+        },
+        {
+          "field": "stage",
+          "label": "Investment stage",
+          "value": "Incubation through growth.",
+          "source_id": "afv_about"
+        },
+        {
+          "field": "check_size",
+          "label": "Stated first-check range",
+          "value": "$250,000–$10 million, according to the firm.",
+          "source_id": "afv_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Pathwork · 种子轮 · 2025-09-09 · 本轮参投 · $3.5M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "AFV’s portfolio page reports that Bold Penguin was acquired by American Family Insurance in 2021; this is a selected company outcome, not a disclosed fund return.",
+          "source_id": "afv_portfolio"
+        },
+        {
+          "description": "Pathwork’s 2025 seed announcement names American Family Ventures among participants in a $3.5 million round. The amount is the company’s total financing, not AFV’s individual check.",
           "source_id": "FISRC-1bd630ac44028d8a"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "contact_form",
+          "label": "Contact AFV",
+          "value": "Use the official form to reach AFV or a team member.",
+          "source_id": "afv_contact",
+          "url": "https://www.amfamventures.com/contact/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "afv_home",
+          "source_url": "https://www.amfamventures.com/",
+          "source_title": "American Family Ventures | Investing in the future of insurance",
+          "source_content_hash": "8110fab329abdd64f5d95da4444279031c6d9a0349c0d3544cfddb59c4744762",
+          "quote": "Launched in 2010. Over $700 million AUM. LPs represent $70 billion in premium.",
+          "quote_hash": "ff84454a0ea84de02105f785f7915a3be9b22e4b3ba863107f64b15ecf5e163b"
+        },
+        {
+          "source_id": "afv_about",
+          "source_url": "https://www.amfamventures.com/about/",
+          "source_title": "About | American Family Ventures",
+          "source_content_hash": "f57013f9ab7b81b1dbdb357a9286c0310faf983ff371dd14b10de80e038a5f8e",
+          "quote": "First checks often range from $250,000 to $10 million",
+          "quote_hash": "d1c8374f5b65185ac97473eea0e97ee3723af33f98049c83db83290c415bb950"
+        },
+        {
+          "source_id": "afv_portfolio",
+          "source_url": "https://www.amfamventures.com/portfolio/",
+          "source_title": "Portfolio | American Family Ventures",
+          "source_content_hash": "6fa21b32da7361394f0596416763166a0e782fa06acfb00313105272ffe06475",
+          "quote": "Bold Penguin was acquired by American Family Insurance in 2021.",
+          "quote_hash": "4b812fefe01354ee1b6321af821a7906c18803c6a042b40205e7bad386a0325a"
+        },
+        {
+          "source_id": "afv_contact",
+          "source_url": "https://www.amfamventures.com/contact/",
+          "source_title": "Contact | American Family Ventures",
+          "source_content_hash": "bd445f38ff76f906f399be8318794cfe010a0b4d56d6a4b93aea0c016cf5309e",
+          "quote": "Reach out to AFV or one of our team members through the fields below.",
+          "quote_hash": "23c6f32ce52d5d54c424ae1fe2b4d7c6266f7ae4d1064deb63124c0d285d513b"
+        },
         {
           "source_id": "FISRC-1bd630ac44028d8a",
           "source_url": "https://www.pathwork.com/resources/announcing-pathworks-seed-investment",
@@ -161,7 +236,7 @@
           "quote_hash": "1328b321bc2d43405b2d09f90ebdb2f6317c15ee519cc8a19d18d3f414a1d5fd"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }
