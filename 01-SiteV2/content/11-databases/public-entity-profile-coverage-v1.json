@@ -63702,19 +63702,111 @@
     "INV-526f4a58cf3ce6": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "上海科创集团 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构介绍、规模和业绩指标来自上海科创集团官网，按官网截至2026年2月的自述口径呈现；上市企业累计数不等同于投资回报率。该融资记录披露的是集团品牌层面的投资参与，未说明具体基金载体或单独出资额。",
+      "summary": "上海科创集团是上海国有资本投资有限公司下属的科创投资机构，官网称其成立于1992年，重点支持早期、硬科技和长周期创新。官网截至2026年2月披露总资产950亿元、管理规模1080亿元，历史累计培育上市公司超过200家，其中科创板上市105家；这些指标为机构自述，不代表基金回报率。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "官网披露的成立年份",
+          "value": "1992年",
+          "source_id": "shstvc_group_overview_20260927"
+        },
+        {
+          "field": "parent_company",
+          "label": "所属企业",
+          "value": "上海国有资本投资有限公司",
+          "source_id": "shstvc_group_overview_20260927"
+        },
+        {
+          "field": "investment_strategy",
+          "label": "官网阐述的投资理念",
+          "value": "投早、投小、投长期、投硬科技",
+          "source_id": "shstvc_group_overview_20260927"
+        },
+        {
+          "field": "total_assets",
+          "label": "官网披露的总资产",
+          "value": "950亿元；截至2026年2月，机构自述",
+          "source_id": "shstvc_group_overview_20260927"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "官网披露的管理规模",
+          "value": "1080亿元；截至2026年2月，机构自述",
+          "source_id": "shstvc_group_overview_20260927"
+        },
+        {
+          "field": "listed_portfolio_companies",
+          "label": "官网披露的累计培育上市公司",
+          "value": "超过200家，其中科创板上市105家；截至2026年2月，机构自述，不代表投资收益率",
+          "source_id": "shstvc_group_overview_20260927"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1992",
+          "description": "上海科技创业投资（集团）有限公司成立。",
+          "source_id": "shstvc_group_overview_20260927"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：新智具身 · 天使轮 · 2026-05-27 · 本轮联合领投 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "官网截至2026年2月称集团历史累计培育上市公司超过200家，其中科创板上市105家；这是机构自述的企业培育指标，不是基金回报率。",
+          "source_id": "shstvc_group_overview_20260927"
+        },
+        {
+          "description": "融资来源记录：新智具身 · 天使轮 · 2026-05-27 · 联合领投 · 约1亿元。这是单条披露记录，不代表完整投资组合或集团单独出资额。",
           "source_id": "FISRC-e666934339b27e85"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "上海科技创业投资（集团）有限公司",
+          "url": "https://www.shstvc.com.cn/",
+          "source_id": "shstvc_contact_20260927"
+        },
+        {
+          "kind": "email",
+          "label": "官网公开邮箱",
+          "value": "info@shstvc.com.cn",
+          "url": "https://www.shstvc.com.cn/",
+          "source_id": "shstvc_contact_20260927"
+        },
+        {
+          "kind": "phone",
+          "label": "官网公开电话",
+          "value": "021-22302800",
+          "url": "https://www.shstvc.com.cn/",
+          "source_id": "shstvc_contact_20260927"
+        },
+        {
+          "kind": "address",
+          "label": "官网列示地址",
+          "value": "上海市静安区铜仁路269号",
+          "url": "https://www.shstvc.com.cn/",
+          "source_id": "shstvc_contact_20260927"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "shstvc_group_overview_20260927",
+          "source_url": "https://www.shstvc.com.cn/group-overview",
+          "source_title": "集团简介｜上海科技创业投资（集团）有限公司",
+          "source_content_hash": "186c777e8ff2b150acf60ff851440d0056b0f82d9ce455563780305999e2d569",
+          "quote": "上海科技创业投资（集团）有限公司是上海国有资本投资有限公司下属企业，成立于1992年。秉持“投早投小投长期投硬科技”核心理念。截至2026年2月，总资产950亿元，管理规模1080亿元，历史累计培育上市公司超过200家，其中科创板上市105家，约占科创板总数的18%。",
+          "quote_hash": "186c777e8ff2b150acf60ff851440d0056b0f82d9ce455563780305999e2d569"
+        },
+        {
+          "source_id": "shstvc_contact_20260927",
+          "source_url": "https://www.shstvc.com.cn/",
+          "source_title": "上海科技创业投资（集团）有限公司官网",
+          "source_content_hash": "65df22b835110d3e51e9eec08cdbb5b0e35af093a18046d530fce3c78820f506",
+          "quote": "地址：上海市静安区铜仁路269号；电话：021-22302800；邮箱：info@shstvc.com.cn",
+          "quote_hash": "65df22b835110d3e51e9eec08cdbb5b0e35af093a18046d530fce3c78820f506"
+        },
         {
           "source_id": "FISRC-e666934339b27e85",
           "source_url": "https://news.pedaily.cn/202605/564455.shtml",
@@ -63724,7 +63816,7 @@
           "quote_hash": "a48247a13b3e5d8796103000c085404f8869646a8d4a74f21ef4427981deadea"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     },
     "INV-f98af55db9b92b": {
       "profile_type": "organization",
@@ -79233,29 +79325,111 @@
     "INV-3c120e1342fb7a": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "火山引擎 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "火山引擎官网将其介绍为字节跳动旗下云服务平台。融资报道列名不等于该业务平台是独立基金；公开来源未披露其基金规模或投资回报，单笔融资仍按原报道口径记录。",
+      "summary": "火山引擎是字节跳动旗下的云服务平台，向企业开放其技术能力、数据工具和云产品，覆盖云基础、人工智能、视频与内容分发等企业服务。公开融资报道曾将火山引擎列为弋途科技A轮联合领投方，但没有披露其单独出资额；官网资料也未表明其为独立基金。",
+      "facts": [
+        {
+          "field": "parent_company",
+          "label": "官网披露的所属企业",
+          "value": "字节跳动",
+          "source_id": "volc_about_20260927"
+        },
+        {
+          "field": "organization_type",
+          "label": "官网对组织的描述",
+          "value": "面向企业提供云服务的平台",
+          "source_id": "volc_about_20260927"
+        },
+        {
+          "field": "service_focus",
+          "label": "官网列示的服务方向",
+          "value": [
+            "云基础设施",
+            "人工智能与大模型",
+            "视频与内容分发",
+            "数据与智能应用"
+          ],
+          "source_id": "volc_about_20260927"
+        },
+        {
+          "field": "business_support",
+          "label": "官网公开的售前服务",
+          "value": "在线咨询、售前电话及咨询工单；官网称提供多渠道产品顾问支持。",
+          "source_id": "volc_contact_20260927"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：弋途科技 · Pre-B轮 · 2026-09-21 · A轮联合领投 · 近亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资来源报道将火山引擎列为弋途科技A轮联合领投方；报道没有披露火山引擎单独出资额。该记录是融资披露，不构成其完整投资组合或投资业绩。",
           "source_id": "FISRC-08be95e2b95904af"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "火山引擎",
+          "url": "https://www.volcengine.com/",
+          "source_id": "volc_about_20260927"
+        },
+        {
+          "kind": "email",
+          "label": "业务咨询",
+          "value": "service@volcengine.com",
+          "url": "https://www.volcengine.com/contact/trae",
+          "source_id": "volc_contact_20260927"
+        },
+        {
+          "kind": "email",
+          "label": "市场合作",
+          "value": "marketing@volcengine.com",
+          "url": "https://www.volcengine.com/contact/trae",
+          "source_id": "volc_contact_20260927"
+        },
+        {
+          "kind": "phone",
+          "label": "公开服务热线",
+          "value": "400-034-7888",
+          "url": "https://www.volcengine.com/contact/trae",
+          "source_id": "volc_contact_20260927"
+        },
+        {
+          "kind": "address",
+          "label": "官网联系页列示办公地址",
+          "value": "北京市海淀区北三环西路甲18号院大钟寺广场1号楼",
+          "url": "https://www.volcengine.com/contact/trae",
+          "source_id": "volc_contact_20260927"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "volc_about_20260927",
+          "source_url": "https://www.volcengine.com/about",
+          "source_title": "为什么选火山｜火山引擎",
+          "source_content_hash": "70ad04d19cd81ab130a81c517364dbdc299ec36ba909dfeb84444141078c598c",
+          "quote": "火山引擎是字节跳动旗下的云服务平台，将字节跳动快速发展过程中积累的增长方法、技术能力和应用工具开放给外部企业，帮助企业构建体验创新、数据驱动和敏捷迭代等数字化能力，实现业务可持续增长。",
+          "quote_hash": "2100c628aa2e88bfd0ba0fa289c19cbb9ad40b7bd5f72cbe039b89a22592595e"
+        },
+        {
+          "source_id": "volc_contact_20260927",
+          "source_url": "https://www.volcengine.com/contact/trae",
+          "source_title": "联系我们｜火山引擎",
+          "source_content_hash": "848ca7c874e2259c3831d0a04bedd73187ae4546f1f83e5a12ed44c1850120e5",
+          "quote": "业务咨询：service@volcengine.com；市场合作：marketing@volcengine.com；电话：400-034-7888；地址：北京市海淀区北三环西路甲18号院大钟寺广场1号楼。",
+          "quote_hash": "114f8182dd32e2e1cb20006d2c0517a0d6aa04d9ba393e51b6355f7c791550d2"
+        },
         {
           "source_id": "FISRC-08be95e2b95904af",
           "source_url": "https://www.lejucaijing.com/news-7507630694257588011.html",
-          "source_title": "年内第三轮、弋途科技完成Pre-B轮融资，上海半导体参投-乐居财经",
+          "source_title": "年内第三轮、弋途科技完成Pre-B轮融资，上海半导体参投｜乐居财经",
           "source_content_hash": "c2b3a4f00a437876",
           "quote": "1月，A轮首关，火山引擎与瑞丞基金联合领投，包河创投跟投，云启、以骏、基石等老股东持续加码",
           "quote_hash": "b33cd0a6997dc4da93ba19201ded2e788ea7cad6f9ff5b1df84798ac9db8cb0f"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     },
     "INV-d91a74676abf92": {
       "profile_type": "organization",
@@ -109030,7 +109204,7 @@
       "coverage_note": "已核验该公开职业关联；未披露的任期、学历及其他履历保持未填写。"
     },
     "EN-3ed55c0c72931e4b": {
-      "summary": "Sam Altman 是 OpenAI 联合创始人兼首席执行官；此前于 2014–2019 年担任 Y Combinator 总裁。",
+      "summary": "Sam Altman 是 OpenAI 联合创始人兼首席执行官。Y Combinator 的公开介绍记载，他于2014至2019年担任 YC 总裁，并在斯坦福大学学习计算机科学、曾在校内人工智能实验室工作；该来源未说明是否取得学位。",
       "current_roles": [
         {
           "title": "联合创始人、首席执行官",
@@ -109043,16 +109217,26 @@
           "organization": "Y Combinator",
           "title": "总裁",
           "period": "2014–2019",
-          "description": "OpenAI Forum 人物介绍所载。",
-          "source_id": "openai_sam_altman"
+          "description": "Y Combinator 官方作者简介记载。",
+          "source_id": "sam_altman_yc_bio_20260927"
         }
       ],
-      "education": [],
-      "experience_summary": "其公开履历包括创业加速器管理和 AI 研究机构创立与经营。",
+      "education": [
+        {
+          "institution": "斯坦福大学",
+          "qualification": "学习计算机科学；YC 来源未披露所获学位。",
+          "source_id": "sam_altman_yc_bio_20260927"
+        }
+      ],
+      "experience_summary": "其公开履历包括创业加速器管理和人工智能公司的创立与经营。现职依据 OpenAI 官方页面；YC 任期与斯坦福学习经历依据 Y Combinator 官方作者简介。",
       "track_record": [
         {
-          "description": "2015 年共同创办 OpenAI；其使命和组织治理仍以 OpenAI 的官方介绍为准。",
+          "description": "2015年共同创办 OpenAI；OpenAI 官方人物简介将其称为联合创始人兼CEO，并描述公司最初以非营利研究实验室形式成立。",
           "source_id": "openai_sam_altman"
+        },
+        {
+          "description": "2014至2019年担任 Y Combinator 总裁，曾在斯坦福大学人工智能实验室工作；据 YC 官方作者简介。",
+          "source_id": "sam_altman_yc_bio_20260927"
         }
       ],
       "sources": [
@@ -109063,11 +109247,19 @@
           "source_content_hash": "eeba0d4114093c44add000919c23c233f09f4a10849cac684b2df4c50566581d",
           "quote": "Sam Altman is the co-founder and CEO of OpenAI. Sam was president of the early-stage startup accelerator Y Combinator from 2014 to 2019. In 2015, Sam co-founded OpenAI as a nonprofit research lab.",
           "quote_hash": "dddde21f8f98c8d9b55050aba35ae2d9905e850638f01b16ed372ad4aab16e80"
+        },
+        {
+          "source_id": "sam_altman_yc_bio_20260927",
+          "source_url": "https://www.ycombinator.com/blog/the-yc-board-of-overseers",
+          "source_title": "The YC Board of Overseers｜Y Combinator",
+          "source_content_hash": "5ec9df3b73b7b6b15039e1db097013638d696a4171a5a7d9f093fe0d186a3586",
+          "quote": "Sam Altman is the CEO of OpenAI. He was the president of YC from 2014-2019. He studied computer science at Stanford, and while there, worked in the AI lab.",
+          "quote_hash": "6f99ac519e3fe93f494247e848c9248236f350f3f46b2dcb82cc27dbceb24470"
         }
       ],
-      "last_verified_at": "2026-09-25",
-      "coverage_status": "researched",
-      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
+      "last_verified_at": "2026-09-27",
+      "coverage_note": "OpenAI 当前职务与创立经历依据 OpenAI 官方页面；YC 任期及斯坦福学习经历依据 Y Combinator 官方简介。来源未说明学位，未推断毕业时间。",
+      "coverage_status": "researched"
     },
     "EN-dbfd4a508f68f76f": {
       "summary": "Simon Willison 是 Datasette 开源工具的创建者、Django Web 框架共同创建者及独立开源开发者；曾任 Eventbrite 工程总监，并共同创办 Lanyrd。",

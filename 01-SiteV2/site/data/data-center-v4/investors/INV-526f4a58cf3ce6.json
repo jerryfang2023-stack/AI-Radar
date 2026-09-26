@@ -139,19 +139,111 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "上海科创集团 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构介绍、规模和业绩指标来自上海科创集团官网，按官网截至2026年2月的自述口径呈现；上市企业累计数不等同于投资回报率。该融资记录披露的是集团品牌层面的投资参与，未说明具体基金载体或单独出资额。",
+      "summary": "上海科创集团是上海国有资本投资有限公司下属的科创投资机构，官网称其成立于1992年，重点支持早期、硬科技和长周期创新。官网截至2026年2月披露总资产950亿元、管理规模1080亿元，历史累计培育上市公司超过200家，其中科创板上市105家；这些指标为机构自述，不代表基金回报率。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "官网披露的成立年份",
+          "value": "1992年",
+          "source_id": "shstvc_group_overview_20260927"
+        },
+        {
+          "field": "parent_company",
+          "label": "所属企业",
+          "value": "上海国有资本投资有限公司",
+          "source_id": "shstvc_group_overview_20260927"
+        },
+        {
+          "field": "investment_strategy",
+          "label": "官网阐述的投资理念",
+          "value": "投早、投小、投长期、投硬科技",
+          "source_id": "shstvc_group_overview_20260927"
+        },
+        {
+          "field": "total_assets",
+          "label": "官网披露的总资产",
+          "value": "950亿元；截至2026年2月，机构自述",
+          "source_id": "shstvc_group_overview_20260927"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "官网披露的管理规模",
+          "value": "1080亿元；截至2026年2月，机构自述",
+          "source_id": "shstvc_group_overview_20260927"
+        },
+        {
+          "field": "listed_portfolio_companies",
+          "label": "官网披露的累计培育上市公司",
+          "value": "超过200家，其中科创板上市105家；截至2026年2月，机构自述，不代表投资收益率",
+          "source_id": "shstvc_group_overview_20260927"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1992",
+          "description": "上海科技创业投资（集团）有限公司成立。",
+          "source_id": "shstvc_group_overview_20260927"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：新智具身 · 天使轮 · 2026-05-27 · 本轮联合领投 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "官网截至2026年2月称集团历史累计培育上市公司超过200家，其中科创板上市105家；这是机构自述的企业培育指标，不是基金回报率。",
+          "source_id": "shstvc_group_overview_20260927"
+        },
+        {
+          "description": "融资来源记录：新智具身 · 天使轮 · 2026-05-27 · 联合领投 · 约1亿元。这是单条披露记录，不代表完整投资组合或集团单独出资额。",
           "source_id": "FISRC-e666934339b27e85"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "上海科技创业投资（集团）有限公司",
+          "url": "https://www.shstvc.com.cn/",
+          "source_id": "shstvc_contact_20260927"
+        },
+        {
+          "kind": "email",
+          "label": "官网公开邮箱",
+          "value": "info@shstvc.com.cn",
+          "url": "https://www.shstvc.com.cn/",
+          "source_id": "shstvc_contact_20260927"
+        },
+        {
+          "kind": "phone",
+          "label": "官网公开电话",
+          "value": "021-22302800",
+          "url": "https://www.shstvc.com.cn/",
+          "source_id": "shstvc_contact_20260927"
+        },
+        {
+          "kind": "address",
+          "label": "官网列示地址",
+          "value": "上海市静安区铜仁路269号",
+          "url": "https://www.shstvc.com.cn/",
+          "source_id": "shstvc_contact_20260927"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "shstvc_group_overview_20260927",
+          "source_url": "https://www.shstvc.com.cn/group-overview",
+          "source_title": "集团简介｜上海科技创业投资（集团）有限公司",
+          "source_content_hash": "186c777e8ff2b150acf60ff851440d0056b0f82d9ce455563780305999e2d569",
+          "quote": "上海科技创业投资（集团）有限公司是上海国有资本投资有限公司下属企业，成立于1992年。秉持“投早投小投长期投硬科技”核心理念。截至2026年2月，总资产950亿元，管理规模1080亿元，历史累计培育上市公司超过200家，其中科创板上市105家，约占科创板总数的18%。",
+          "quote_hash": "186c777e8ff2b150acf60ff851440d0056b0f82d9ce455563780305999e2d569"
+        },
+        {
+          "source_id": "shstvc_contact_20260927",
+          "source_url": "https://www.shstvc.com.cn/",
+          "source_title": "上海科技创业投资（集团）有限公司官网",
+          "source_content_hash": "65df22b835110d3e51e9eec08cdbb5b0e35af093a18046d530fce3c78820f506",
+          "quote": "地址：上海市静安区铜仁路269号；电话：021-22302800；邮箱：info@shstvc.com.cn",
+          "quote_hash": "65df22b835110d3e51e9eec08cdbb5b0e35af093a18046d530fce3c78820f506"
+        },
         {
           "source_id": "FISRC-e666934339b27e85",
           "source_url": "https://news.pedaily.cn/202605/564455.shtml",
@@ -161,7 +253,7 @@
           "quote_hash": "a48247a13b3e5d8796103000c085404f8869646a8d4a74f21ef4427981deadea"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

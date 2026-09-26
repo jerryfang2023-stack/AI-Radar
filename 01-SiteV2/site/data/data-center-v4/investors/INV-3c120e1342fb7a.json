@@ -132,29 +132,111 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "火山引擎 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "火山引擎官网将其介绍为字节跳动旗下云服务平台。融资报道列名不等于该业务平台是独立基金；公开来源未披露其基金规模或投资回报，单笔融资仍按原报道口径记录。",
+      "summary": "火山引擎是字节跳动旗下的云服务平台，向企业开放其技术能力、数据工具和云产品，覆盖云基础、人工智能、视频与内容分发等企业服务。公开融资报道曾将火山引擎列为弋途科技A轮联合领投方，但没有披露其单独出资额；官网资料也未表明其为独立基金。",
+      "facts": [
+        {
+          "field": "parent_company",
+          "label": "官网披露的所属企业",
+          "value": "字节跳动",
+          "source_id": "volc_about_20260927"
+        },
+        {
+          "field": "organization_type",
+          "label": "官网对组织的描述",
+          "value": "面向企业提供云服务的平台",
+          "source_id": "volc_about_20260927"
+        },
+        {
+          "field": "service_focus",
+          "label": "官网列示的服务方向",
+          "value": [
+            "云基础设施",
+            "人工智能与大模型",
+            "视频与内容分发",
+            "数据与智能应用"
+          ],
+          "source_id": "volc_about_20260927"
+        },
+        {
+          "field": "business_support",
+          "label": "官网公开的售前服务",
+          "value": "在线咨询、售前电话及咨询工单；官网称提供多渠道产品顾问支持。",
+          "source_id": "volc_contact_20260927"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：弋途科技 · Pre-B轮 · 2026-09-21 · A轮联合领投 · 近亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资来源报道将火山引擎列为弋途科技A轮联合领投方；报道没有披露火山引擎单独出资额。该记录是融资披露，不构成其完整投资组合或投资业绩。",
           "source_id": "FISRC-08be95e2b95904af"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "火山引擎",
+          "url": "https://www.volcengine.com/",
+          "source_id": "volc_about_20260927"
+        },
+        {
+          "kind": "email",
+          "label": "业务咨询",
+          "value": "service@volcengine.com",
+          "url": "https://www.volcengine.com/contact/trae",
+          "source_id": "volc_contact_20260927"
+        },
+        {
+          "kind": "email",
+          "label": "市场合作",
+          "value": "marketing@volcengine.com",
+          "url": "https://www.volcengine.com/contact/trae",
+          "source_id": "volc_contact_20260927"
+        },
+        {
+          "kind": "phone",
+          "label": "公开服务热线",
+          "value": "400-034-7888",
+          "url": "https://www.volcengine.com/contact/trae",
+          "source_id": "volc_contact_20260927"
+        },
+        {
+          "kind": "address",
+          "label": "官网联系页列示办公地址",
+          "value": "北京市海淀区北三环西路甲18号院大钟寺广场1号楼",
+          "url": "https://www.volcengine.com/contact/trae",
+          "source_id": "volc_contact_20260927"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "volc_about_20260927",
+          "source_url": "https://www.volcengine.com/about",
+          "source_title": "为什么选火山｜火山引擎",
+          "source_content_hash": "70ad04d19cd81ab130a81c517364dbdc299ec36ba909dfeb84444141078c598c",
+          "quote": "火山引擎是字节跳动旗下的云服务平台，将字节跳动快速发展过程中积累的增长方法、技术能力和应用工具开放给外部企业，帮助企业构建体验创新、数据驱动和敏捷迭代等数字化能力，实现业务可持续增长。",
+          "quote_hash": "2100c628aa2e88bfd0ba0fa289c19cbb9ad40b7bd5f72cbe039b89a22592595e"
+        },
+        {
+          "source_id": "volc_contact_20260927",
+          "source_url": "https://www.volcengine.com/contact/trae",
+          "source_title": "联系我们｜火山引擎",
+          "source_content_hash": "848ca7c874e2259c3831d0a04bedd73187ae4546f1f83e5a12ed44c1850120e5",
+          "quote": "业务咨询：service@volcengine.com；市场合作：marketing@volcengine.com；电话：400-034-7888；地址：北京市海淀区北三环西路甲18号院大钟寺广场1号楼。",
+          "quote_hash": "114f8182dd32e2e1cb20006d2c0517a0d6aa04d9ba393e51b6355f7c791550d2"
+        },
         {
           "source_id": "FISRC-08be95e2b95904af",
           "source_url": "https://www.lejucaijing.com/news-7507630694257588011.html",
-          "source_title": "年内第三轮、弋途科技完成Pre-B轮融资，上海半导体参投-乐居财经",
+          "source_title": "年内第三轮、弋途科技完成Pre-B轮融资，上海半导体参投｜乐居财经",
           "source_content_hash": "c2b3a4f00a437876",
           "quote": "1月，A轮首关，火山引擎与瑞丞基金联合领投，包河创投跟投，云启、以骏、基石等老股东持续加码",
           "quote_hash": "b33cd0a6997dc4da93ba19201ded2e788ea7cad6f9ff5b1df84798ac9db8cb0f"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }
