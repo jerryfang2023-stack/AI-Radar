@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
+    "generatedAt": "2026-09-27T00:52:58.639Z",
     "latestDataDate": "2026-09-26",
     "currentDate": "2026-09-26",
     "eventCount": 3587,
@@ -187,14 +187,14 @@
       "contacts": [
         {
           "kind": "website",
-          "label": "Official website",
+          "label": "官方网站",
           "value": "Sherpa Healthcare Partners",
           "url": "https://www.sherpahealthcarepartner.com/",
           "source_id": "sherpa_official_en"
         },
         {
           "kind": "email",
-          "label": "General inquiries",
+          "label": "一般咨询",
           "value": "info@sherpahp.com",
           "url": "https://www.sherpahp.com/",
           "source_id": "sherpa_public_contact"
@@ -251,6 +251,26 @@
         }
       ],
       "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.contacts[0].label": {
+          "text": "官方网站",
+          "source_hash": "b16446d4331ad20b13b3c92866fa00eb15a0df69d7efc5dfdf9eca066ccae501",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T00:52:11.431Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[1].label": {
+          "text": "一般咨询",
+          "source_hash": "ec67d3373648313636f56b89eec4e687bc6227e135f7f04e5152e7883cfedace",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T00:52:42.207Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

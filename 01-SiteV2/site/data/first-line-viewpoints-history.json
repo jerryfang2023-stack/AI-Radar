@@ -1,24 +1,24 @@
 {
   "meta": {
-    "generatedAt": "2026-09-24T00:33:53.351Z",
+    "generatedAt": "2026-09-27T00:51:20.677Z",
     "sourceFile": "01-SiteV2/site/data/follow-builders-daily.json",
-    "sourceCommits": 159,
-    "sourceSnapshots": 160,
+    "sourceCommits": 160,
+    "sourceSnapshots": 161,
     "earliestDate": "2026-06-01",
-    "latestDate": "2026-09-23",
+    "latestDate": "2026-09-26",
     "dedupeKey": "original_url",
     "sourcePolicy": "Historical records are reconstructed from committed morning-lane snapshots and retain their original URL and source snapshot.",
     "translationPolicy": "Only complete approved Chinese translations with matching source hashes are published."
   },
   "stats": {
-    "discovered": 2941,
-    "aiRelevant": 1630,
-    "alreadyApproved": 810,
+    "discovered": 2968,
+    "aiRelevant": 1643,
+    "alreadyApproved": 821,
     "translatedThisRun": 0,
-    "pendingTranslation": 820,
-    "published": 1407,
+    "pendingTranslation": 822,
+    "published": 1418,
     "pendingReasons": {
-      "translation_gate_failed": 161,
+      "translation_gate_failed": 163,
       "mymemory": 634,
       "static_blog_title": 14,
       "none": 4,
@@ -26,6 +26,490 @@
     }
   },
   "remarks": [
+    {
+      "id": "2103696644558704796",
+      "source": "x",
+      "name": "Peter Yang",
+      "handle": "petergyang",
+      "role": "Practical AI tutorials and interviews for busy people",
+      "text": "I think Muse has an incredible UI and mascot but the underlying model it’s questionable how smart it is. Makes sense if it’s not that smart since this is meant to scale to a billion people",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "我觉得Muse的UI和吉祥物非常出色，但底层模型有多聪明就值得怀疑了。如果它没那么聪明也说得通，因为这东西本来就是要扩展到十亿用户的。",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "856dd0a4064ae4a7",
+      "topic": "AI 基础设施",
+      "columnTags": [
+        {
+          "id": "opinion-model-infra",
+          "name": "模型基础设施观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察模型运行、算力、存储、sandbox 或开发平台基础设施的变化；后续事实判断需回到原始公告或技术文档。",
+      "createdAt": "2026-09-26T04:02:19.000Z",
+      "date": "2026-09-26",
+      "url": "https://x.com/petergyang/status/2103696644558704796",
+      "likes": 12,
+      "retweets": 1,
+      "replies": 1,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2103648679169257737",
+      "source": "x",
+      "name": "Peter Steinberger",
+      "handle": "steipete",
+      "role": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world.",
+      "text": "The biggest design mistake I made when we moved OC to sqlite: using sync db access. When it was just an agent that reports to you on Slack or iMessage this was fine; now that one agent might do 50 sessions in parallel and the whole team works on it, it is limiting. I have a /goal with Astra that so far landed 575 PRs to move everything to to async workers. We ship these improvements as we make progress. Pretty insane how even huge refactors are no longer scary.",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "当我们把 OC 迁移到 sqlite 时，我犯的最大设计错误是：使用了同步数据库访问。当它只是一个通过 Slack 或 iMessage 向你汇报的 agent 时，这没问题；现在一个 agent 可能会并行执行 50 个会话，而且整个团队都在用它，这就成了限制。我和 Astra 有一个 /goal，到目前为止已经提交了 575 个 PR，把所有东西都迁移到异步 worker。我们一边取得进展，一边发布这些改进。相当疯狂的是，现在连巨大的重构都不再可怕了。",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "d140b29e92c3a4a9",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-09-26T00:51:43.000Z",
+      "date": "2026-09-26",
+      "url": "https://x.com/steipete/status/2103648679169257737",
+      "likes": 1043,
+      "retweets": 46,
+      "replies": 82,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2103637477760311522",
+      "source": "x",
+      "name": "Thibault Sottiaux",
+      "handle": "thsottiaux",
+      "role": "Codex & ChatGPT OpenAI",
+      "text": "o yes… we’re back in action and we’ll reset usage limits for all paid users across codex and ChatGPT work sorry about the brief disruption! (and yes we have a special spare codex when things are down to help us out) https://t.co/Qy0da4L1jq",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "哦是的……我们回来了，我们将为codex和ChatGPT work的所有付费用户重置使用限制，抱歉短暂的中断！（是的，当出现故障时，我们有一个特殊的备用codex来帮助我们）https://t.co/Qy0da4L1jq",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "716f6dad6d8bedb5",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-26T00:07:13.000Z",
+      "date": "2026-09-26",
+      "url": "https://x.com/thsottiaux/status/2103637477760311522",
+      "likes": 12780,
+      "retweets": 671,
+      "replies": 2196,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2103632415185133992",
+      "source": "x",
+      "name": "Amjad Masad",
+      "handle": "amasad",
+      "role": "ceo replit. civilizationist",
+      "text": "We’ve been thinking a lot about what it means to build the self-driving company. A big part of that is putting the ability to understand a business in everyone's hands. Atta has built a beautiful approach to business analysis and data visualization, and they share our belief that useful intelligence should be accessible to everyone. Welcoming Omar, Amine, and the Atta team to Replit!",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "我们一直在深入思考，打造自动驾驶公司意味着什么。其中很重要的一点，就是让每个人都拥有理解业务的能力。Atta 在业务分析和数据可视化方面打造了一套出色的方法，他们与我们一样相信，有用的智能应当人人可用。欢迎 Omar、Amine 以及 Atta 团队加入 Replit！",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "ca54a96bac66d540",
+      "topic": "AI 编程",
+      "columnTags": [
+        {
+          "id": "opinion-ai-coding",
+          "name": "AI Coding 观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-coding",
+          "name": "AI Coding",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 AI 编程工具、设计到代码流程和软件生产方式的变化；需要结合产品发布或文档再做事实判断。",
+      "createdAt": "2026-09-25T23:47:06.000Z",
+      "date": "2026-09-26",
+      "url": "https://x.com/amasad/status/2103632415185133992",
+      "likes": 242,
+      "retweets": 10,
+      "replies": 24,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2103629073595728372",
+      "source": "x",
+      "name": "Aaron Levie",
+      "handle": "levie",
+      "role": "ceo box - your business lives in content. unleash it with AI",
+      "text": "You can’t automate what you can’t measure. This means that evals are one of the gates to diffusion of AI in the enterprise. We can test our deterministic processes through software, but most enterprises have no useful way of understanding how their non-deterministic processes are working today. Specifically the work that agents are doing for them. Evals are mission critical for enterprises adopting AI because you have no other way of knowing what’s working, what’s broken, what changed, what improved, what you can do more of, etc. if you don’t have a good sense of how agents work in your environment today. All changes, upgrades, and deployments are downstream from good evals. Not only are we going to get vastly more domain specific evals over time for the labs and across the industry, but every enterprise will also need a clear sense of how agents are performing in their environment as well. Huge opportunity.",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "你无法自动化你无法衡量的东西。这意味着评估是企业中AI扩散的门槛之一。我们可以通过软件测试确定性流程，但大多数企业目前没有有效的方法来理解其非确定性流程的运作情况。具体来说，就是智能体为他们所做的工作。评估对于采用AI的企业至关重要，因为如果你对智能体在当前环境中的工作方式没有良好的认知，你就无法知道什么在起作用、什么出了问题、什么发生了变化、什么得到了改进、你可以更多地做什么等等。所有的变更、升级和部署都依赖于良好的评估。随着时间的推移，我们不仅会为实验室和整个行业获得大量更具领域针对性的评估，而且每个企业也需要清楚地了解智能体在其环境中的表现。巨大的机会。",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-pro",
+      "translationSourceHash": "3b155d567e5a490e",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-09-25T23:33:49.000Z",
+      "date": "2026-09-26",
+      "url": "https://x.com/levie/status/2103629073595728372",
+      "likes": 195,
+      "retweets": 22,
+      "replies": 45,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2103620061156290622",
+      "source": "x",
+      "name": "Thibault Sottiaux",
+      "handle": "thsottiaux",
+      "role": "Codex & ChatGPT OpenAI",
+      "text": "We are aware that codex is down and are working hard to bring back normal service.",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "我们已知悉codex出现故障，并正在努力恢复正常服务。",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "b4085daac03cf1dd",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-09-25T22:58:00.000Z",
+      "date": "2026-09-26",
+      "url": "https://x.com/thsottiaux/status/2103620061156290622",
+      "likes": 10596,
+      "retweets": 574,
+      "replies": 2255,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2103567198690349362",
+      "source": "x",
+      "name": "Sam Altman",
+      "handle": "sama",
+      "role": "The mission of OpenAI is to ensure that AGI benefits all of humanity",
+      "text": "There is an extensive and ongoing review related to our agents’ use of internet access during training and evaluation. We’ve been publishing summaries at the link below and will continue to. We have not been as fast as we would have liked but we are trying to balance our desire for transparency with gaining a clear understanding from petabytes of agent activity logs, and working with impacted organizations. We are prioritizing as best as we can based on severity, and adding resources. Hugging Face is still the most severe event we’ve seen. We will be as transparent as we can be subject to things like vulnerabilities in other companies that our agents have found, which will be their call to disclose or not.",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "关于我们的智能体在训练和评估期间使用互联网访问的情况，正在进行广泛且持续的审查。我们一直在下方链接发布摘要，并将继续这样做。我们的速度没有我们希望的那么快，但我们正努力在透明度的愿望与从数PB的智能体活动日志中获得清晰理解以及与受影响组织合作之间取得平衡。我们正根据严重程度尽最大努力确定优先级，并增加资源。Hugging Face 仍然是我们见过的最严重的事件。我们将在受制于诸如我们的智能体发现的其他公司漏洞等事项的前提下尽可能保持透明，是否披露将由这些公司决定。",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-pro",
+      "translationSourceHash": "3d2afb65cf8a547f",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-09-25T19:27:57.000Z",
+      "date": "2026-09-26",
+      "url": "https://x.com/sama/status/2103567198690349362",
+      "likes": 4856,
+      "retweets": 311,
+      "replies": 782,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2103564484602384855",
+      "source": "x",
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "role": "vercel CEO",
+      "text": "We're helping world-class organizations like @klaviyo build agentic deployment platforms. ① Connect every agent (claude, codex, cursor…) ② Configure SSO via their IDP (Okta, Entra) ③ Now everyone can cook, securely® What happens to SaaS once every company sets this up? I get this question a lot 😁 First, the data must come from somewhere. These apps only work if they can be infused with business data. This is why we see the big enterprise SaaS players suddenly prioritize shipping CLIs and MCPs. Or dust off APIs they were neglecting for years. The new 'procurement bar' will be how ergonomic your product is for *agents*, rather than humans. How easily they can navigate your ontology and work with your data. Once that's in place, there's a long tail of SaaS applications that I suspect will never be bought again. They'll be generated. They'll be more secure, more performant, more modern, and tailored to each company's and employee's needs.",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "我们正在帮助像@klaviyo这样的世界级组织构建智能体部署平台。① 连接每一个智能体（claude、codex、cursor……）② 通过他们的IDP（Okta、Entra）配置SSO ③ 现在每个人都能安全地“烹饪”了® 一旦每家公司都完成这样的设置，SaaS会变成什么样？这个问题我经常被问到😁 首先，数据必须来自某个地方。这些应用只有在能够注入业务数据时才能发挥作用。这就是为什么我们看到大型企业SaaS厂商突然优先发布CLI和MCP，或者重新拾起他们多年来忽视的API。新的“采购门槛”将取决于你的产品对*智能体*（而非人类）的易用程度，以及它们能多轻松地浏览你的本体并与你的数据协作。一旦这一点到位，我认为将有一大批长尾SaaS应用再也不会被购买。它们将被生成出来。它们会更安全、性能更好、更现代，并且针对每家公司和每位员工的需求量身定制。",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-pro",
+      "translationSourceHash": "dab10221f2da44cd",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-09-25T19:17:10.000Z",
+      "date": "2026-09-26",
+      "url": "https://x.com/rauchg/status/2103564484602384855",
+      "likes": 183,
+      "retweets": 14,
+      "replies": 47,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2103543983557517340",
+      "source": "x",
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "role": "vercel CEO",
+      "text": "The growth of https://t.co/5JpYvhlpkR has been mind-boggling. I watched it grow from idea, to first ship, to 𝚗𝚙𝚡 𝚜𝚔𝚒𝚕𝚕𝚜 being on every README of the internet. We used to write code, now we write English. https://t.co/jrmPFjQKms",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "https://t.co/5JpYvhlpkR 的增长令人难以置信。我看着它从一个想法，到首次发布，再到 𝚗𝚙𝚡 𝚜𝚔𝚒𝚕𝚕𝚜 出现在互联网上每一个 README 中。我们过去写代码，现在我们写英文。https://t.co/jrmPFjQKms",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "0cdb916ee980b2fc",
+      "topic": "AI 编程",
+      "columnTags": [
+        {
+          "id": "opinion-ai-coding",
+          "name": "AI Coding 观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-coding",
+          "name": "AI Coding",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 AI 编程工具、设计到代码流程和软件生产方式的变化；需要结合产品发布或文档再做事实判断。",
+      "createdAt": "2026-09-25T17:55:42.000Z",
+      "date": "2026-09-26",
+      "url": "https://x.com/rauchg/status/2103543983557517340",
+      "likes": 331,
+      "retweets": 7,
+      "replies": 43,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "2103538666597691552",
+      "source": "x",
+      "name": "Boris Cherny",
+      "handle": "bcherny",
+      "role": "Claude Code anthropicai",
+      "text": "Tag writes >50% of my PRs every day. It also does ~100% of my data analysis, and fixes most of our product feedback + bugs. It's not like a regular Slack bot. It is proactive, programmable, it has memory, it has access to your connectors. With Opus 5.5 and Fable 5.1, it has strong judgement. Example prompts I use: - \"@Claude react to threads in this channel with ✅ when resolved\" - \"@Claude from now on, attempt to repro every bug in this channel end to end, running the full app. once you reproduce the bug, put up a pr to fix it and tag the right team for code review\" - \"@Claude brainstorm ~100 hypotheses for what could explain this weird data, use a workflow to in/validate. spend 10m tokens or so digging very deep. draw a chart with the result.\" - \"@Claude make me an interactive game explaining how this part of the code works, then make a slide deck explaining it for others on the team\" https://t.co/gmsALM8Lvs",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "Tag 每天撰写我超过 50% 的 PR。它还完成我约 100% 的数据分析，并修复我们大部分的产品反馈和 bug。它不像普通的 Slack 机器人。它是主动的、可编程的，有记忆，可以访问你的连接器。借助 Opus 5.5 和 Fable 5.1，它拥有很强的判断力。我使用的示例提示： - “@Claude 对这个频道中的话题做出反应，当已解决时用 ✅ 标记” - “@Claude 从现在开始，尝试端到端复现这个频道中的每个 bug，运行完整应用。一旦你复现了 bug，就提交一个 PR 来修复它，并标记合适的团队进行代码审查” - “@Claude 头脑风暴约 100 个假设来解释这个奇怪的数据，使用工作流来验证/否定。花费大约 10m 个 token 深入挖掘。用图表展示结果。” - “@Claude 给我做一个互动游戏，解释这部分代码是如何工作的，然后做一个幻灯片来向团队中的其他人解释” https://t.co/gmsALM8Lvs",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-pro",
+      "translationSourceHash": "e5ac23a7a4419592",
+      "topic": "AI 编程",
+      "columnTags": [
+        {
+          "id": "opinion-ai-coding",
+          "name": "AI Coding 观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-coding",
+          "name": "AI Coding",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 AI 编程工具、设计到代码流程和软件生产方式的变化；需要结合产品发布或文档再做事实判断。",
+      "createdAt": "2026-09-25T17:34:34.000Z",
+      "date": "2026-09-26",
+      "url": "https://x.com/bcherny/status/2103538666597691552",
+      "likes": 1096,
+      "retweets": 52,
+      "replies": 159,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
+    {
+      "id": "https://tldr.tech/ai/2026-09-24",
+      "source": "blog",
+      "name": "TLDR AI Newsletter",
+      "handle": "tldr.tech",
+      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
+      "text": "Gemini TTS 🗣️, Claude’s novel enzyme 🧬, Google private memory 🔒",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "contentTranslationMethod": "",
+      "contentTranslationModel": "",
+      "contentTranslationSourceHash": "",
+      "translation": "Gemini TTS 🗣️，Claude的新型酶 🧬，Google私人记忆 🔒",
+      "translationStatus": "translated",
+      "translationMethod": "deepseek_translation",
+      "translationModel": "deepseek-v4-flash",
+      "translationSourceHash": "eddea51d924204c6",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "Thu, 24 Sep 2026 00:00:00 GMT",
+      "date": "2026-09-24",
+      "url": "https://tldr.tech/ai/2026-09-24",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "aiRelevant": true,
+      "historical": true,
+      "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
+      "historySnapshot": "working-tree"
+    },
     {
       "id": "https://tldr.tech/ai/2026-09-23",
       "source": "blog",
@@ -112,7 +596,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102589061445939508",
@@ -156,7 +640,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102577425838485916",
@@ -200,7 +684,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102569951974584612",
@@ -244,7 +728,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102544711647129902",
@@ -288,7 +772,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102543349102338309",
@@ -332,7 +816,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102519097770885231",
@@ -376,7 +860,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102501556348440983",
@@ -420,7 +904,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102477527688388752",
@@ -464,7 +948,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102477253070430322",
@@ -508,7 +992,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102471892099866883",
@@ -552,7 +1036,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102471885061812714",
@@ -596,7 +1080,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102468713866055872",
@@ -640,7 +1124,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102466524934271381",
@@ -684,7 +1168,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102466523164274839",
@@ -728,7 +1212,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102463847714247142",
@@ -772,7 +1256,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102448415775051790",
@@ -816,7 +1300,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102440619616682120",
@@ -860,7 +1344,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102438365455167883",
@@ -904,7 +1388,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102437713781944397",
@@ -948,7 +1432,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102421668509733058",
@@ -992,7 +1476,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2102253246807261579",
@@ -1359,7 +1843,7 @@
       "contentTranslationMethod": "",
       "contentTranslationModel": "",
       "contentTranslationSourceHash": "",
-      "translation": "Muse 连接器 🤖，Meta SAM 3.1 🖼️，Gemini 入侵公司 🔓",
+      "translation": "Muse连接器 🤖，Meta SAM 3.1 🖼️，Gemini入侵公司 🔓",
       "translationStatus": "translated",
       "translationMethod": "deepseek_translation",
       "translationModel": "deepseek-v4-flash",
@@ -2180,7 +2664,7 @@
       "aiRelevant": true,
       "historical": true,
       "historySource": "01-SiteV2/site/data/follow-builders-daily.json",
-      "historySnapshot": "working-tree"
+      "historySnapshot": "13465b7ccecea5e3157456880cdcee09ae134f7c"
     },
     {
       "id": "2100718806004064730",

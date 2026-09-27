@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
+    "generatedAt": "2026-09-27T00:52:58.639Z",
     "latestDataDate": "2026-09-26",
     "currentDate": "2026-09-26",
     "eventCount": 3587,
@@ -216,35 +216,52 @@
       "organization": "Entire",
       "roleTitle": "创始人",
       "public_profile": {
-        "summary": "Thomas Dohmke 创办 Entire 并担任 CEO；此前为 GitHub CEO，并有 Atlassian 开发者工具经验。Entire 专注人类与智能体协作的开发平台。",
+        "summary": "Thomas Dohmke 是开发者平台 Entire 的创始人兼首席执行官。此前他于2021至2025年担任 GitHub 首席执行官，并负责推动 GitHub Copilot、Copilot Workspace 和 GitHub Models 等产品发布。GitHub 官方人物简介还确认其拥有格拉斯哥大学机械工程博士学位。",
         "current_roles": [
           {
-            "title": "创始人、首席执行官",
+            "title": "创始人兼首席执行官",
             "organization": "Entire",
             "source_id": "entire_thomas_launch"
           }
         ],
         "career": [
           {
-            "organization": "GitHub",
-            "title": "首席执行官",
-            "period": "此前",
-            "description": "领导开发者平台公司 GitHub。",
+            "organization": "Entire",
+            "title": "创始人兼首席执行官",
+            "period": "公司2026年团队介绍所示现职；起始时间未披露",
+            "description": "开发面向人与 AI 智能体协作的软件开发平台。",
             "source_id": "entire_thomas_launch"
           },
           {
+            "organization": "GitHub",
+            "title": "首席执行官",
+            "period": "2021–2025",
+            "description": "GitHub 官方简介称其任内推动了 Copilot、Copilot Workspace 和 GitHub Models 等产品发布。",
+            "source_id": "thomas_github_bio_20260927"
+          },
+          {
             "organization": "Atlassian",
-            "title": "开发者工具相关经历",
-            "period": "此前",
-            "description": "Entire 新闻稿称其团队曾在 Atlassian 构建开发者工具。",
+            "title": "开发者工具相关经历；具体职称未披露",
+            "period": "加入 Entire 之前；年份未披露",
+            "description": "Entire 创业公告提到其团队曾在 GitHub 和 Atlassian 构建开发者工具，但没有列出其在 Atlassian 的具体职务。",
             "source_id": "entire_thomas_launch"
           }
         ],
-        "education": [],
-        "experience_summary": "履历集中于开发者平台和工程工具；2026 年创立 Entire，种子轮获 6,000 万美元融资、公告估值 3 亿美元。",
+        "education": [
+          {
+            "institution": "格拉斯哥大学",
+            "qualification": "机械工程博士",
+            "source_id": "thomas_github_bio_20260927"
+          }
+        ],
+        "experience_summary": "其职业经历集中于开发者工具与 AI 辅助软件开发：先领导 GitHub 至2025年，后创办 Entire。GitHub 官方人物简介记录其机械工程博士学历，所查来源未披露毕业年份。",
         "track_record": [
           {
-            "description": "Entire 公告其 6,000 万美元种子轮由 Felicis 领投，另有多家机构参与；此为 Entire 融资信息，不代表 Thomas 的个人投资业绩。",
+            "description": "担任 GitHub 首席执行官期间，推动 GitHub Copilot、Copilot Workspace 和 GitHub Models 等产品发布。",
+            "source_id": "thomas_github_bio_20260927"
+          },
+          {
+            "description": "Entire 宣布完成6,000万美元种子轮融资，公告估值为3亿美元；这是公司融资信息，不代表 Thomas Dohmke 个人投资业绩。",
             "source_id": "entire_thomas_launch"
           }
         ],
@@ -256,9 +273,47 @@
             "source_content_hash": "a9afda3e91ed26b4e8322bb1937a3d864eb809d53e71ab52424d99ad1569d267",
             "quote": "Former GitHub CEO Thomas Dohmke today announced the launch of Entire, a new developer platform designed for human-agent collaboration, backed by a $60 million seed round at a $300 million valuation. Entire is remote-first and globally distributed, with experience building developer tools at GitHub and Atlassian.",
             "quote_hash": "2ea4e85f9a8ac4c99722b98f5f53b589f73af6b026e5be43a21609d0fc56d74e"
+          },
+          {
+            "source_id": "thomas_github_bio_20260927",
+            "source_url": "https://github.blog/news-insights/company-news/goodbye-github/",
+            "source_title": "Auf Wiedersehen, GitHub | The GitHub Blog",
+            "source_content_hash": "5ec370c46d1710f73b6f6a8c4234584f09a93d19589c36be3e0d76d441286659",
+            "quote": "Previously, Thomas was the Chief Executive Officer of GitHub (2021-2025) where he oversaw the rise of the world’s most widely adopted AI developer tools—including the launches of GitHub Copilot, Copilot Workspace, and GitHub Models. Thomas has also been a celebrated TED speaker and holds a PhD in mechanical engineering from University of Glasgow, UK.",
+            "quote_hash": "63a5b4f5dc8504cdf9d70550c12cad04cec033c9c88bf4ac101fb2d8825d3015"
           }
         ],
-        "last_verified_at": "2026-09-25"
+        "last_verified_at": "2026-09-27",
+        "coverage_status": "researched",
+        "coverage_note": "当前职务及 Entire 的融资依据该公司公告；GitHub 于2025年发布的离职文章提供其前任首席执行官任期、产品发布和博士学历信息。相关来源未披露博士毕业年份或其在 Atlassian 的具体职称。"
+      },
+      "translations": {
+        "zh-CN": {
+          "public_profile.summary": {
+            "text": "Thomas Dohmke 是开发者平台 Entire 的创始人兼首席执行官。此前他于2021至2025年担任 GitHub 首席执行官，并负责推动 GitHub Copilot、Copilot Workspace 和 GitHub Models 等产品发布。GitHub 官方人物简介还确认其拥有格拉斯哥大学机械工程博士学位。",
+            "source_hash": "77eedb0029957f5a2eef57a4e1cedf5ec454989eab3253bf12aed8fcd6554c4e",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-09-27T00:51:48.018Z",
+            "status": "translated"
+          },
+          "public_profile.career[1].description": {
+            "text": "GitHub 官方简介称其任内推动了 Copilot、Copilot Workspace 和 GitHub Models 等产品发布。",
+            "source_hash": "7e50b3b6996971a335b4c5c939c391c10145610f2ba56191fa724630906f0733",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-09-27T00:51:48.018Z",
+            "status": "translated"
+          },
+          "public_profile.track_record[0].description": {
+            "text": "担任 GitHub 首席执行官期间，推动 GitHub Copilot、Copilot Workspace 和 GitHub Models 等产品发布。",
+            "source_hash": "22bfbb2c7207ae82dffc695fafbd545060483d2b15f8abbd940979ffd9b345d0",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-09-27T00:51:48.018Z",
+            "status": "translated"
+          }
+        }
       }
     }
   ],
