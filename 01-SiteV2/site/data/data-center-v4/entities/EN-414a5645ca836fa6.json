@@ -108,7 +108,7 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "summary": "Faris Masad 是 Replit 的 founding engineer。Replit 官方作者页面列出其公司职务并记载其参与多项产品与工程项目；未找到Replit官方资料将其称为联合创始人，因此此档案不沿用第三方来源中的创始人头衔。",
+      "summary": "Faris Masad 是 Replit 的 founding engineer / Member of Technical Staff。Replit 官方作者页收录其自 2016 年起的工程文章；他还与 Luis Héctor Chávez 合著了 AI Agent Code Execution API 文章，介绍供 AI agent 调用的沙箱代码执行方案。官方页面未披露其学历或其他雇主。",
       "current_roles": [
         {
           "title": "Founding Engineer / Member of Technical Staff",
@@ -120,33 +120,45 @@
         {
           "organization": "Replit",
           "title": "Founding Engineer、Member of Technical Staff",
-          "period": "官方作者页面持续记录；具体起止时间未披露",
-          "description": "参与Replit开发工具及开发者平台的工程工作，官方作者页列出多篇技术文章。",
+          "period": "Replit 官方作者页当前列示；具体任职起止时间未披露",
+          "description": "参与 Replit 开发工具、开发者平台及 AI agent 代码执行能力的工程工作；其中 AI Agent Code Execution API 文章为与 Luis Héctor Chávez 合著。",
           "source_id": "faris_replit"
         }
       ],
       "education": [],
-      "experience_summary": "公开一手资料确认其在Replit担任 founding engineer 并参与产品工程；教育及其他公司经历没有用非官方线索补录。",
+      "experience_summary": "公开一手资料确认其在 Replit 担任 founding engineer，并持续撰写开发者工具与 AI agent 运行时相关工程内容。当前资料未公开学历或其他公司履历。",
       "track_record": [
         {
-          "description": "Replit 官方作者页收录其关于代码执行API、开发工具和编辑器的多篇技术文章。",
+          "description": "Replit 官方作者页列出其关于代码自动补全、VS Code 智能能力、多人协作、移动端编辑器、浏览器开发工具和 AI Agent Code Execution API 的工程文章（2016–2023）。",
           "source_id": "faris_replit"
+        },
+        {
+          "description": "与 Luis Héctor Chávez 合著 Replit 的 AI Agent Code Execution API 文章，说明如何在沙箱中执行模型生成的代码，并以 Python 数学求值 API 为例。",
+          "source_id": "faris_code_exec"
         }
       ],
       "sources": [
         {
           "source_id": "faris_replit",
           "source_url": "https://replit.com/blog/author/faris-masad",
-          "source_title": "Faris Masad - Replit 官方作者页",
-          "source_content_hash": "98acbf652b9e22c8c3836f42ff1352a6b48560c4529b5be52899d9713ad0be0d",
-          "quote": "Replit官方作者页称Faris Masad为founding engineer及Member of Technical Staff。",
-          "quote_hash": "98c3e3e833a2a79c0e421284bf3d5a231cecebe7428aee1c6ce729aef18f3200"
+          "source_title": "Faris Masad | Replit",
+          "source_content_hash": "97dc01b23e40b7b553f01e8aa3207438a5d031f6dd36dc149e86e3b3d24179c6",
+          "quote": "Faris is a founding engineer at Replit.",
+          "quote_hash": "c6c5321a92e4727534d8b272d16f67b107e81aee44c3444306f416a0159a8354"
+        },
+        {
+          "source_id": "faris_code_exec",
+          "source_url": "https://replit.com/blog/ai-agents-code-execution",
+          "source_title": "AI Agent Code Execution API | Replit",
+          "source_content_hash": "b113d7691c86770b62e035754e4081efd75b53cb74b5f84d725c9b834a5c3a77",
+          "quote": "Faris Masad",
+          "quote_hash": "a549ec0cf6b0bfa5d0864ff7db9be15d0baf3378c6f869cef999d2a7d5f7619d"
         }
       ],
       "identity_status": "verified",
       "coverage_status": "researched",
-      "coverage_note": "采用Replit官方作者页对职位的原始表述；教育背景和其他关联公司未找到足够一手证据。",
-      "last_verified_at": "2026-09-26"
+      "coverage_note": "职务和文章列表来自 Replit 官方作者页；AI Agent Code Execution API 的合著关系与技术范围来自 Replit 原文。教育背景、其他雇主及任职起止时间未由这些官方来源披露。",
+      "last_verified_at": "2026-09-27"
     }
   },
   "relatedEntities": [],
