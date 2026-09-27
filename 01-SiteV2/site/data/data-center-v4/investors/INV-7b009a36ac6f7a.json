@@ -137,21 +137,148 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Northern Light Venture Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "北极光创投（Northern Light Venture Capital）是 2005 年创立、专注早期投资的中国风险投资机构，覆盖新技术、医疗健康与新消费，并在投资后为企业提供支持。机构官网将其投资方向和组合案例描述为中国科技、互联网、消费及健康医疗领域。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "创立年份",
+          "value": "2005 年，由邓锋创立；清华大学公开简介称其于 2005 年创建北极光创投。",
+          "source_id": "nlvc_deng_tsinghua"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网称自创立以来坚持早期投资策略；项目阶段比例自报为 A 轮约 70%、B 轮及以后约 20%、种子期约 10%。",
+          "source_id": "nlvc_home"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资领域",
+          "value": [
+            "新技术：人工智能、物联网、机器人、先进制造与企业数字化",
+            "医疗健康：创新药、生物技术、器械、IVD、数字医疗与医疗服务",
+            "新消费：新零售、互联网保险、本土品牌、出海与新能源汽车"
+          ],
+          "source_id": "nlvc_home"
+        },
+        {
+          "field": "historical_firm_scale",
+          "label": "机构规模（官网截至 2022-12 自报）",
+          "value": "管理资产约人民币 300 亿元；官网列有 6 支美元基金和 4 支人民币基金、投资创业公司 400 多家、成功退出 60 多家。",
+          "source_id": "nlvc_home"
+        },
+        {
+          "field": "founder_background",
+          "label": "创始人邓锋履历与关联企业",
+          "value": "邓锋拥有计算机、通信和数据网络领域技术管理经历；1997 年共同创立 NetScreen，该公司 2001 年在纳斯达克上市、2004 年被 Juniper Networks 以 42 亿美元收购。其后创立北极光创投。",
+          "source_id": "nlvc_deng_tsinghua"
+        },
+        {
+          "field": "founder_education",
+          "label": "创始人邓锋教育经历",
+          "value": [
+            "清华大学电子工程专业学士、硕士",
+            "南加州大学计算机工程硕士",
+            "宾夕法尼亚大学沃顿商学院 MBA"
+          ],
+          "source_id": "nlvc_deng_tsinghua"
+        },
+        {
+          "field": "portfolio_examples",
+          "label": "官网及创始人简介列举的组合公司",
+          "value": [
+            "美团",
+            "中科创达",
+            "兆易创新",
+            "山石网科",
+            "展讯通信",
+            "腾讯音乐",
+            "中文在线",
+            "华大基因",
+            "燃石医学",
+            "太美医疗"
+          ],
+          "source_id": "nlvc_deng_tsinghua"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2005",
+          "description": "邓锋创立北极光创投。",
+          "source_id": "nlvc_deng_tsinghua"
+        },
+        {
+          "date": "2022-12",
+          "description": "官网截至该时点披露管理资产约人民币 300 亿元、投资 400 多家创业公司及 60 多家成功退出。",
+          "source_id": "nlvc_home"
+        }
+      ],
       "track_record": [
+        {
+          "description": "创始人公开简介列出的投资与投后管理公司包括美团、中科创达、兆易创新、山石网科、展讯通信、腾讯音乐、华大基因、泽璟制药、燃石医学及太美医疗；这是个人履历中列举的部分案例。",
+          "source_id": "nlvc_deng_tsinghua"
+        },
+        {
+          "description": "机构官网截至 2022-12 自报 60 多家成功退出；该机构层面数量不代表基金净回报或 LP 收益。",
+          "source_id": "nlvc_home"
+        },
         {
           "description": "融资来源记录：Even Realities Technology · Pre-B轮 · 2026-07-07 · 本轮参投 · 1.5亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e9b7c7aa8538dbf1"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "管理资产、基金数量、投资创业公司及退出数量是北极光官网标注截至 2022 年 12 月的机构自报数据。邓锋的创业、教育和任职背景来自清华大学药学院公开简介。官网列出的公司案例为部分组合样本，不是完整组合或基金回报。",
+      "experience_summary": "创始人邓锋的公开履历覆盖科技创业、通信与网络技术管理及风险投资；NetScreen 的上市和并购经历按清华大学公开简介记录。机构官网另披露覆盖早期科技、医疗健康和新消费的投资团队。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站与 BP 入口",
+          "value": "北极光创投",
+          "url": "https://nlvc.com.cn/",
+          "source_id": "nlvc_home"
+        },
+        {
+          "kind": "email",
+          "label": "企业与新技术方向联系",
+          "value": "enterprise@nlvc.com.cn",
+          "url": "https://nlvc.com.cn/",
+          "source_id": "nlvc_home"
+        },
+        {
+          "kind": "email",
+          "label": "医疗健康方向联系",
+          "value": "healthcare@nlvc.com.cn",
+          "url": "https://nlvc.com.cn/",
+          "source_id": "nlvc_home"
+        },
+        {
+          "kind": "email",
+          "label": "新消费方向联系",
+          "value": "consumer@nlvc.com.cn",
+          "url": "https://nlvc.com.cn/",
+          "source_id": "nlvc_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "nlvc_home",
+          "source_url": "https://nlvc.com.cn/",
+          "source_title": "欢迎光临 北极光创投 | 北极光创投",
+          "source_content_hash": "b79bebce241d46dabc02ab8df8fe6f835066102e865e44a8cdf84a7c092b396d",
+          "quote": "300 亿 管理资产 400+ 投资创业公司 60+ 成功退出 截至2022年12月",
+          "quote_hash": "ebf6db26f588dff69d406ccd39f47a18f78fd825312fd5c97618b687e52b6672"
+        },
+        {
+          "source_id": "nlvc_deng_tsinghua",
+          "source_url": "https://www.sps.tsinghua.edu.cn/info/1051/1374.htm",
+          "source_title": "邓锋-清华大学药学院",
+          "source_content_hash": "89dab517c6ad126c3cb455f2b8cab74f9d3e53ec8490518d0739b0c2c6c25148",
+          "quote": "邓锋先生于2005年创立北极光创投",
+          "quote_hash": "f52e5900389e8a1e9289be4e500ac931373958d3d24baf497c0ffabbf5434963"
+        },
         {
           "source_id": "FISRC-e9b7c7aa8538dbf1",
           "source_url": "https://siliconvalleyinvestclub.com/hi/2026/08/31/interview-with-will-wang-founder-ceo-of-even-realities-150m-raise-at-1b-valuation/",
@@ -161,7 +288,7 @@
           "quote_hash": "b398caa9341a8e9cbbab1698bc128b1674c45390e734bbe8ffa85bc80ccf700a"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

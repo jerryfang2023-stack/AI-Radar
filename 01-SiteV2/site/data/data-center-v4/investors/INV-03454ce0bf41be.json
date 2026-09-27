@@ -129,21 +129,171 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "OTB Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "summary": "OTB Ventures 是一家泛欧洲深科技风险投资机构，重点投资后产品阶段、具备收入增长并准备国际扩张的欧洲科技公司。官网称其成立于 2017 年，管理资产超过 3.5 亿美元，投资覆盖晚期种子轮、A 轮和早期成长阶段。",
+      "facts": [
         {
-          "description": "融资来源记录：FintechOS · 债务融资 · 2026-09-21 · 历史轮次参投 · $28M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-39755042b7f329d6"
+          "field": "founded_and_scale",
+          "label": "成立时间与规模（机构官网披露）",
+          "value": "成立于 2017 年；官网称管理资产超过 3.5 亿美元。",
+          "source_id": "otb_about"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "晚期种子轮、Series A 与早期成长阶段；关注已有产品、收入增长并准备国际扩张的公司。",
+          "source_id": "otb_about"
+        },
+        {
+          "field": "investment_scope",
+          "label": "官网投资垂直领域",
+          "value": [
+            "旧版 About 页面：AI 与自动化、金融科技、SpaceTech、网络安全",
+            "当前首页：AI 与新型计算、SpaceTech、Physical AI"
+          ],
+          "source_id": "otb_about"
+        },
+        {
+          "field": "geography_and_check_size",
+          "label": "投资地域与规模",
+          "value": "主要投资欧洲科技公司；初始投资通常为 100 万至 700 万欧元，按多轮投资后对单家组合公司最多可投资 2500 万欧元。",
+          "source_id": "otb_about"
+        },
+        {
+          "field": "leadership_adam_niewinski",
+          "label": "联合创始人 Adam Niewiński 履历与关联公司",
+          "value": "官网简介称其有 20 多年创业及高级经营管理经验、十年以上投资经验；曾任 Boston Consulting Group 顾问，创办 Expander、Platinum Bank，担任 UniCredit 集团创业公司 Xelion CEO，并任 PEKAO 副 CEO。官网还列出其参与 ICEYE、Silent Eight、KYP.ai、Hydrosat 与 FintechOS 董事会。",
+          "source_id": "otb_adam"
+        },
+        {
+          "field": "leadership_marcin_hejka",
+          "label": "联合创始人 Marcin Hejka 履历与关联公司",
+          "value": "创办 OTB 前在 Intel Capital 工作 18 年，曾任 VP、全球投资委员会成员及管理董事，负责欧洲、以色列、中东、非洲与印度；官网称其完成 50 多笔投资与退出，其中包括五家独角兽或十角兽公司。其 OTB 组合董事会关联包括 Apheris、Plumerai 与 MatrixSpace，已退出案例包括 BabbleLabs 与 Minit。",
+          "source_id": "otb_marcin"
+        },
+        {
+          "field": "portfolio_examples",
+          "label": "官网列出的组合公司",
+          "value": [
+            "ICEYE",
+            "Hydrosat",
+            "FintechOS",
+            "Apheris",
+            "Synthara",
+            "Minit",
+            "BabbleLabs"
+          ],
+          "source_id": "otb_portfolio"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2017",
+          "description": "OTB Ventures 官网记载机构于 2017 年成立。",
+          "source_id": "otb_about"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "官网组合案例包括 ICEYE、Hydrosat、FintechOS、Apheris 与 Synthara；页面所列案例是部分组合，不是完整清单。",
+          "source_id": "otb_portfolio"
+        },
+        {
+          "description": "联合创始人 Marcin Hejka 的官网简介列出 Minit 与 BabbleLabs 为已退出组合公司；OTB 新闻与简介记录 Minit 被 Microsoft 收购、BabbleLabs 被 Cisco 收购。",
+          "source_id": "otb_marcin"
+        },
+        {
+          "description": "FintechOS · 2021 年 Series B · FinTech Global 2021-04-26 的融资综述称，FintechOS 完成由 Draper Esprit 领投的 6000 万美元 Series B，既有投资人中包括 OTB Ventures；6000 万美元是融资总额，不是 OTB 的单笔出资。",
+          "source_id": "FISRC-39755042b7f329d6"
+        },
+        {
+          "description": "FintechOS · 2026-09-21 · 公司官方公告称其完成 2800 万美元股权与债务融资，公告列出的股东投资方为 Bek Ventures、IFC、Cipio Partners 和 Molten Ventures，债务方为 Santander CIB，未列出 OTB Ventures；这与 OTB 参与的 2021 年历史轮次不同。",
+          "source_id": "otb_fintechos_2026"
+        }
+      ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "成立时间、管理资产、投资阶段、地域与投资额为 OTB 官网披露。官网策略页面与当前首页对垂直领域的分类不完全一致：旧版 About 页列四类，当前首页聚焦 AI/新型计算、SpaceTech 与 Physical AI；资料保留这项页面口径差异。创始人履历和退出案例来自 OTB 本人简介，属于机构自述。FintechOS 2021 年融资报道列出 OTB 为历史投资方；FintechOS 2026-09-21 官方公告列明的新一轮投资方中未列出 OTB，两笔融资不可混为一笔。",
+      "experience_summary": "OTB 两位联合创始人的公开履历分别覆盖创业与银行经营、咨询、企业科技投资及全球风险投资管理。官网称 Marcin Hejka 在 Intel Capital 任职 18 年，Adam Niewiński 具企业经营和创业经历；这些为机构发布的个人履历。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站与投资标准",
+          "value": "OTB Ventures",
+          "url": "https://otb.vc/about/",
+          "source_id": "otb_about"
+        },
+        {
+          "kind": "email",
+          "label": "公开联系邮箱",
+          "value": "contact@otb.vc",
+          "url": "https://otb.vc/contact/",
+          "source_id": "otb_contact"
+        },
+        {
+          "kind": "address",
+          "label": "Amsterdam 办公室",
+          "value": "Strawinskylaan 1457, Tower Ten, 14th Floor, 1077 XX Amsterdam, Netherlands",
+          "url": "https://otb.vc/contact/",
+          "source_id": "otb_contact"
+        },
+        {
+          "kind": "address",
+          "label": "Warsaw 办公室",
+          "value": "Twarda 4, 00-105 Warsaw, Poland",
+          "url": "https://otb.vc/contact/",
+          "source_id": "otb_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "otb_about",
+          "source_url": "https://otb.vc/about/",
+          "source_title": "About - OTB Ventures",
+          "source_content_hash": "375d9e31b262615d352ccbbcac613f39f78c3fb068686084cc39dec21ad722f8",
+          "quote": "Established in 2017, OTB Ventures currently manages over $350 million and has offices in Amsterdam, the Netherlands, and Warsaw, Poland.",
+          "quote_hash": "65453fcef04663cde31f23cf4b012ad804b780147839ba6390fc6e4aa56f1d50"
+        },
+        {
+          "source_id": "otb_people",
+          "source_url": "https://otb.vc/people/",
+          "source_title": "People - OTB Ventures",
+          "source_content_hash": "9c19156693a2355fa7253f976c886d85cfc9e1b08f572e463daa84d0062f4521",
+          "quote": "Meet our team Adam Niewiński Co-founder Managing Partner",
+          "quote_hash": "2f1bfe2b5adeb0cd6c3c46ed929129a20139dafc2e08c7f7712f22394c23c727"
+        },
+        {
+          "source_id": "otb_adam",
+          "source_url": "https://otb.vc/people/adam-niewinski/",
+          "source_title": "Adam Niewiński - OTB Ventures",
+          "source_content_hash": "3e12b4711011da6bce62efabe7da2eed47c5d38111ed3aaba71898aab099b0cd",
+          "quote": "Adam has over 20 years of experience as an entrepreneur and senior executive, and more than a decade as an investor.",
+          "quote_hash": "eeb2642d69bee0ad36be7d806a9c29e29d48b11685ad3457ebbcfc23ace256d0"
+        },
+        {
+          "source_id": "otb_marcin",
+          "source_url": "https://otb.vc/people/marcin-hejka/",
+          "source_title": "Marcin Hejka - OTB Ventures",
+          "source_content_hash": "cc4114a6c612252a04272a07f68d9d588dd5fa4853530cdf73e5f80a1a01b96b",
+          "quote": "Before co-founding OTB Ventures, Marcin spent 18 years at Intel Capital as VP, Global Investment Committee Member, and Managing Director.",
+          "quote_hash": "e44dabe32974a9b2c86e69e4105634470c55908364e25bc1f5ab4d8bed82b321"
+        },
+        {
+          "source_id": "otb_portfolio",
+          "source_url": "https://otb.vc/portfolio/",
+          "source_title": "Portfolio - OTB Ventures",
+          "source_content_hash": "9ba0e61038e07665387fc90562e2217ec44fd6f2fc286a73b6725208fcd89f0e",
+          "quote": "Apheris is at the heart of a federated AI setup.",
+          "quote_hash": "66edad688c9c91fbaf44639f8f53997c7a63afb428e45d34ed8b64c52d6d1c18"
+        },
+        {
+          "source_id": "otb_contact",
+          "source_url": "https://otb.vc/contact/",
+          "source_title": "Contact - OTB Ventures",
+          "source_content_hash": "5653ca3e5cf13c09f811158a40e9e5364a81861a128b7dd149742666d8df17f8",
+          "quote": "Get in touch contact@otb.vc",
+          "quote_hash": "b2cd05a6e961fac436a30b995d4fdb5801a8433db624191f3a632f9975b4359b"
+        },
         {
           "source_id": "FISRC-39755042b7f329d6",
           "source_url": "https://fintech.global/2021/04/26/the-34-fintech-rounds-from-the-last-week-you-cant-afford-to-miss/",
@@ -151,9 +301,17 @@
           "source_content_hash": "7df514a750613ace",
           "quote": "with participation from existing investors Earlybird Digital East, Gapminder Ventures, LAUNCHub Ventures and OTB Ventures",
           "quote_hash": "2ec5063fe68b5e7db534d2c70019f6756a6fac8bcefc74abbb6b119d713ef81d"
+        },
+        {
+          "source_id": "otb_fintechos_2026",
+          "source_url": "https://fintechos.com/in-the-news/fintechos-secures-28m-in-combined-equity-and-debt-financing/",
+          "source_title": "FintechOS Secures $28M in Combined Equity and Debt Financing - FintechOS",
+          "source_content_hash": "d512551df45fd3d4ea83a043f8e64d30b56f55ad21720a3a4ec2af3c66d13d11",
+          "quote": "including Bek Ventures, IFC, Cipio Partners and Molten Ventures, alongside a senior debt facility from Santander CIB.",
+          "quote_hash": "859260e4245477298272dd14981c43b47069c41e09aec953842f1478d4222731"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

@@ -45319,21 +45319,123 @@
       "last_verified_at": "2026-09-26"
     },
     "INV-919b0301e2fdad": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Notable Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Notable Capital 是一家以美国为核心、面向全球创业者的早期风险投资机构。官网称其有超过 25 年投资经验、管理资产超过 50 亿美元，投资覆盖公司早期至退出阶段，并以人才招聘、策略与市场拓展支持组合企业。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网称与早期创业者合作，并支持公司从早期发展到退出。",
+          "source_id": "notable_about"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "管理规模（机构自报）",
+          "value": "官网披露管理资产超过 50 亿美元；网页未注明该数字的统计时点。",
+          "source_id": "notable_about"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资与创始人支持",
+          "value": "官网介绍其通过高确信度投资、人才招聘、策略支持、市场传播和全球网络协助创业团队。",
+          "source_id": "notable_about"
+        },
+        {
+          "field": "leadership_team",
+          "label": "官网列出的投资合伙人",
+          "value": [
+            "Glenn Solomon — Managing Partner",
+            "Hans Tung — Managing Partner",
+            "Jeff Richards — Managing Partner",
+            "Oren Yunger — Managing Partner"
+          ],
+          "source_id": "notable_team"
+        },
+        {
+          "field": "hans_tung_background",
+          "label": "Hans Tung 履历与关联公司",
+          "value": "官网称其早年在华尔街覆盖台湾半导体产业，曾共同创办两家硅谷关联创业公司，之后在亚洲从事投资；其投资组合案例包括 Airbnb、Coinbase、Slack、ByteDance、Anthropic、Affirm 与 Poshmark。",
+          "source_id": "notable_hans"
+        },
+        {
+          "field": "reported_outcomes",
+          "label": "机构自报历史成果",
+          "value": "官网首页列出 32 次 IPO；这是机构的组合公司成果口径，不等于基金净回报或 LP 回报。",
+          "source_id": "notable_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Wispr · B轮 · 2026-08-17 · 本轮参投 · $280M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Wispr · Series B · 2026-08-17 · 报道称 Notable Capital 是参与本轮的既有投资人之一；2.8 亿美元为该轮融资总额，不是 Notable 的单笔出资。",
           "source_id": "FISRC-2e7a3713da8f3e54"
+        },
+        {
+          "description": "官网以 Airbnb、Square、HashiCorp 等公司展示组合历史，并自报 32 次 IPO；这些为机构层面的精选成果，不代表完整组合或基金回报率。",
+          "source_id": "notable_home"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "管理资产、IPO 数量与历史年限均为 Notable 官网自报数据；官网未标注具体财务审计口径。2026 年 Wispr 的 2.8 亿美元为 B 轮融资总额，Notable 作为既有投资人参与，单笔金额未披露。",
+      "experience_summary": "官网披露的投资合伙人经验覆盖风险投资、创业公司经营与全球市场投资；Hans Tung 的官方简介列出华尔街研究、创业经历及 Airbnb、Coinbase、Slack 等投资组合关联。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站与投资方向",
+          "value": "Notable Capital",
+          "url": "https://www.notablecap.com/about-us",
+          "source_id": "notable_about"
+        },
+        {
+          "kind": "contact_form",
+          "label": "一般联系与商务咨询",
+          "value": "Notable Capital 联系表单",
+          "url": "https://www.notablecap.com/contact",
+          "source_id": "notable_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "notable_about",
+          "source_url": "https://www.notablecap.com/about-us",
+          "source_title": "About Us | Notable Capital",
+          "source_content_hash": "7474c9f474243030bc826db4c350c7b5dc799faf039dba37132f7b92ac99a811",
+          "quote": "With over 25 years of experience and $5B+ in assets under management, we partner with early-stage founders scaling bold ideas into category-defining companies.",
+          "quote_hash": "57c1b37d0f0ba0b7b8335c3dbdc013f71b9edcc662e878538e6616b22b5c0926"
+        },
+        {
+          "source_id": "notable_home",
+          "source_url": "https://www.notablecap.com/",
+          "source_title": "Notable Capital",
+          "source_content_hash": "a1d07c66215be2d96a048d22fed920c1076d31439402d3c66c77fcf6ca998c0b",
+          "quote": "32 IPOs From Airbnb to Square to HashiCorp, Notable founders delivered iconic IPOs that redefined categories and set new global benchmarks.",
+          "quote_hash": "69cc03f36162201b720220bbde2e7c2d7b734002c8762a3d9eab412f73ac3890"
+        },
+        {
+          "source_id": "notable_team",
+          "source_url": "https://www.notablecap.com/team",
+          "source_title": "Team | Notable Capital",
+          "source_content_hash": "a76da4fec753007d65c29208e06f854103d47f5d5834677ee6f00dc2cf1b88e9",
+          "quote": "Glenn Solomon Investment Hans Tung Investment Jeff Richards Investment Oren Yunger Investment",
+          "quote_hash": "bb234f53aeb647a50b8dbc659df92641f0af2b2e2cd66720a3d5415c4e418982"
+        },
+        {
+          "source_id": "notable_hans",
+          "source_url": "https://www.notablecap.com/team/hans-tung",
+          "source_title": "Hans Tung | Notable Capital",
+          "source_content_hash": "30c8727a8390f28d7911e45541e00766fd2ada8783b35e85c9d6e6fdf4f51ee1",
+          "quote": "Hans Tung is a Managing Partner at Notable Capital, where he leads the firm’s AI-driven Prosumer, Commerce, and Fintech practice.",
+          "quote_hash": "9ae7fefe74df7d3944caae3bccca45c28cc3fbbb35972efc8d76bac4a38bbb34"
+        },
+        {
+          "source_id": "notable_contact",
+          "source_url": "https://www.notablecap.com/contact",
+          "source_title": "Contact | Notable Capital",
+          "source_content_hash": "7b90bad532272825eddb5addf7205af4327c2b9c4215568f77d56c51dd4ee30b",
+          "quote": "Please send a note and we will get back to you.",
+          "quote_hash": "c350022b3aa7e0d344219e17aa6b75994b36ac68412395d21a61ee1c10bda850"
+        },
         {
           "source_id": "FISRC-2e7a3713da8f3e54",
           "source_url": "https://www.gate.com/news/detail/wispr-raises-280m-in-series-b-funding-led-by-menlo-ventures-valuation-hits-23514139",
@@ -45343,7 +45445,7 @@
           "quote_hash": "aba568fee486e1922b966cf3934b60f576f64daef335bb8592e1d089190091dd"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     },
     "INV-2c275bc24ed1e7": {
       "profile_type": "organization",
@@ -57475,21 +57577,148 @@
       "last_verified_at": "2026-09-26"
     },
     "INV-7b009a36ac6f7a": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Northern Light Venture Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "北极光创投（Northern Light Venture Capital）是 2005 年创立、专注早期投资的中国风险投资机构，覆盖新技术、医疗健康与新消费，并在投资后为企业提供支持。机构官网将其投资方向和组合案例描述为中国科技、互联网、消费及健康医疗领域。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "创立年份",
+          "value": "2005 年，由邓锋创立；清华大学公开简介称其于 2005 年创建北极光创投。",
+          "source_id": "nlvc_deng_tsinghua"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网称自创立以来坚持早期投资策略；项目阶段比例自报为 A 轮约 70%、B 轮及以后约 20%、种子期约 10%。",
+          "source_id": "nlvc_home"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资领域",
+          "value": [
+            "新技术：人工智能、物联网、机器人、先进制造与企业数字化",
+            "医疗健康：创新药、生物技术、器械、IVD、数字医疗与医疗服务",
+            "新消费：新零售、互联网保险、本土品牌、出海与新能源汽车"
+          ],
+          "source_id": "nlvc_home"
+        },
+        {
+          "field": "historical_firm_scale",
+          "label": "机构规模（官网截至 2022-12 自报）",
+          "value": "管理资产约人民币 300 亿元；官网列有 6 支美元基金和 4 支人民币基金、投资创业公司 400 多家、成功退出 60 多家。",
+          "source_id": "nlvc_home"
+        },
+        {
+          "field": "founder_background",
+          "label": "创始人邓锋履历与关联企业",
+          "value": "邓锋拥有计算机、通信和数据网络领域技术管理经历；1997 年共同创立 NetScreen，该公司 2001 年在纳斯达克上市、2004 年被 Juniper Networks 以 42 亿美元收购。其后创立北极光创投。",
+          "source_id": "nlvc_deng_tsinghua"
+        },
+        {
+          "field": "founder_education",
+          "label": "创始人邓锋教育经历",
+          "value": [
+            "清华大学电子工程专业学士、硕士",
+            "南加州大学计算机工程硕士",
+            "宾夕法尼亚大学沃顿商学院 MBA"
+          ],
+          "source_id": "nlvc_deng_tsinghua"
+        },
+        {
+          "field": "portfolio_examples",
+          "label": "官网及创始人简介列举的组合公司",
+          "value": [
+            "美团",
+            "中科创达",
+            "兆易创新",
+            "山石网科",
+            "展讯通信",
+            "腾讯音乐",
+            "中文在线",
+            "华大基因",
+            "燃石医学",
+            "太美医疗"
+          ],
+          "source_id": "nlvc_deng_tsinghua"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2005",
+          "description": "邓锋创立北极光创投。",
+          "source_id": "nlvc_deng_tsinghua"
+        },
+        {
+          "date": "2022-12",
+          "description": "官网截至该时点披露管理资产约人民币 300 亿元、投资 400 多家创业公司及 60 多家成功退出。",
+          "source_id": "nlvc_home"
+        }
+      ],
       "track_record": [
+        {
+          "description": "创始人公开简介列出的投资与投后管理公司包括美团、中科创达、兆易创新、山石网科、展讯通信、腾讯音乐、华大基因、泽璟制药、燃石医学及太美医疗；这是个人履历中列举的部分案例。",
+          "source_id": "nlvc_deng_tsinghua"
+        },
+        {
+          "description": "机构官网截至 2022-12 自报 60 多家成功退出；该机构层面数量不代表基金净回报或 LP 收益。",
+          "source_id": "nlvc_home"
+        },
         {
           "description": "融资来源记录：Even Realities Technology · Pre-B轮 · 2026-07-07 · 本轮参投 · 1.5亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e9b7c7aa8538dbf1"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "管理资产、基金数量、投资创业公司及退出数量是北极光官网标注截至 2022 年 12 月的机构自报数据。邓锋的创业、教育和任职背景来自清华大学药学院公开简介。官网列出的公司案例为部分组合样本，不是完整组合或基金回报。",
+      "experience_summary": "创始人邓锋的公开履历覆盖科技创业、通信与网络技术管理及风险投资；NetScreen 的上市和并购经历按清华大学公开简介记录。机构官网另披露覆盖早期科技、医疗健康和新消费的投资团队。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站与 BP 入口",
+          "value": "北极光创投",
+          "url": "https://nlvc.com.cn/",
+          "source_id": "nlvc_home"
+        },
+        {
+          "kind": "email",
+          "label": "企业与新技术方向联系",
+          "value": "enterprise@nlvc.com.cn",
+          "url": "https://nlvc.com.cn/",
+          "source_id": "nlvc_home"
+        },
+        {
+          "kind": "email",
+          "label": "医疗健康方向联系",
+          "value": "healthcare@nlvc.com.cn",
+          "url": "https://nlvc.com.cn/",
+          "source_id": "nlvc_home"
+        },
+        {
+          "kind": "email",
+          "label": "新消费方向联系",
+          "value": "consumer@nlvc.com.cn",
+          "url": "https://nlvc.com.cn/",
+          "source_id": "nlvc_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "nlvc_home",
+          "source_url": "https://nlvc.com.cn/",
+          "source_title": "欢迎光临 北极光创投 | 北极光创投",
+          "source_content_hash": "b79bebce241d46dabc02ab8df8fe6f835066102e865e44a8cdf84a7c092b396d",
+          "quote": "300 亿 管理资产 400+ 投资创业公司 60+ 成功退出 截至2022年12月",
+          "quote_hash": "ebf6db26f588dff69d406ccd39f47a18f78fd825312fd5c97618b687e52b6672"
+        },
+        {
+          "source_id": "nlvc_deng_tsinghua",
+          "source_url": "https://www.sps.tsinghua.edu.cn/info/1051/1374.htm",
+          "source_title": "邓锋-清华大学药学院",
+          "source_content_hash": "89dab517c6ad126c3cb455f2b8cab74f9d3e53ec8490518d0739b0c2c6c25148",
+          "quote": "邓锋先生于2005年创立北极光创投",
+          "quote_hash": "f52e5900389e8a1e9289be4e500ac931373958d3d24baf497c0ffabbf5434963"
+        },
         {
           "source_id": "FISRC-e9b7c7aa8538dbf1",
           "source_url": "https://siliconvalleyinvestclub.com/hi/2026/08/31/interview-with-will-wang-founder-ceo-of-even-realities-150m-raise-at-1b-valuation/",
@@ -57499,7 +57728,7 @@
           "quote_hash": "b398caa9341a8e9cbbab1698bc128b1674c45390e734bbe8ffa85bc80ccf700a"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     },
     "INV-3be79c7cc3b9a2": {
       "profile_type": "organization",
@@ -60095,25 +60324,117 @@
       "last_verified_at": "2026-09-26"
     },
     "INV-c351ed34200804": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "North Island Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "North Island Ventures（NIV）是 2020 年成立的早期科技投资机构，创始团队由 Travis Scher、James Hutchins 和 Glenn Hutchins 组成。其网站披露的投资范围包括区块链、加密货币、金融科技、企业软件及数字资产，典型支票为 50 万至 500 万美元。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2020 年，由 Travis Scher、James Hutchins 与 Glenn Hutchins 创立。",
+          "source_id": "northisland_team"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段与支票范围",
+          "value": "早期公司；官网披露的投资额通常为 50 万至 500 万美元。",
+          "source_id": "northisland_portfolio"
+        },
+        {
+          "field": "investment_scope",
+          "label": "投资范围",
+          "value": [
+            "区块链",
+            "加密货币与数字资产",
+            "金融科技",
+            "企业软件",
+            "早期科技公司"
+          ],
+          "source_id": "northisland_privacy"
+        },
+        {
+          "field": "leadership_team",
+          "label": "创始管理团队",
+          "value": [
+            "Travis Scher — 联合创始人、Managing Partner",
+            "James Hutchins — 联合创始人、General Partner",
+            "Glenn Hutchins — 联合创始人、董事长"
+          ],
+          "source_id": "northisland_team"
+        },
+        {
+          "field": "glenn_hutchins_background",
+          "label": "Glenn Hutchins 履历与关联机构",
+          "value": "官网简介称 Glenn Hutchins 曾共同创办私募股权公司 Silver Lake；目前担任 Santander、CoreWeave 董事，并参与 GIC 投资委员会及国际顾问委员会等机构职务。",
+          "source_id": "northisland_team"
+        },
+        {
+          "field": "portfolio_examples",
+          "label": "官网组合方向示例",
+          "value": [
+            "全球支付与银行基础设施",
+            "稳定币支付与实时支付",
+            "AI 投资工具",
+            "消费应用",
+            "链上银行"
+          ],
+          "source_id": "northisland_portfolio"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2020",
+          "description": "Travis Scher、James Hutchins 与 Glenn Hutchins 创立 North Island Ventures。",
+          "source_id": "northisland_team"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Venice AI · A轮 · 2026-07-01 · 本轮参投 · 6500万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Venice AI · Series A · 2026-07-01 · TechCrunch 与 The Block 分别报道 North Island Ventures 参与其 6500 万美元融资；两篇报道指向同一轮融资，金额是轮次总额，并非 North Island 的单笔投资。",
           "source_id": "FISRC-41cdbf30cbfd4eed"
         },
         {
-          "description": "融资来源记录：Venice AI · A轮 · 2026-07-01 · 本轮参投 · 6500万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "The Block 对 Venice AI 同一笔 Series A 的报道也列出 North Island Ventures；这是交叉佐证，不另计一笔投资。",
           "source_id": "FISRC-831c2961f3373587"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "创立信息、团队履历、投资阶段和支票范围来自 North Island 官网及其隐私政策。Venice AI 2026 年 6500 万美元为 Series A 总额，North Island Ventures 被两家媒体列为参投方；The Block 报道是同一轮的交叉佐证，不是第二笔融资。",
+      "experience_summary": "创始团队公开履历涵盖风险投资、创业及大型私募股权投资。Glenn Hutchins 曾创立 Silver Lake，官网另列其在 Santander、CoreWeave、GIC 等机构的现任职务。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站与投资组合",
+          "value": "North Island Ventures",
+          "url": "https://northisland.ventures/",
+          "source_id": "northisland_portfolio"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "northisland_team",
+          "source_url": "https://northisland.ventures/team",
+          "source_title": "Team | North Island Ventures",
+          "source_content_hash": "b31ea041400b80ea85d091dc90d8a474d81854bd6893bd9f7f23605b7228a430",
+          "quote": "NIV was founded in 2020 by Travis Scher, James Hutchins, and Glenn Hutchins.",
+          "quote_hash": "2e38937d338fafb60c7526a42a6b5dcd841895d2355f59186b04385130191e3b"
+        },
+        {
+          "source_id": "northisland_portfolio",
+          "source_url": "https://northisland.ventures/portfolio",
+          "source_title": "Portfolio | North Island Ventures",
+          "source_content_hash": "a51785d92af7111b662677521caf7c447c0a3665c8524a8cad4aaa697127b954",
+          "quote": "We invest $500k-$5M checks in early-stage companies that align with this mission.",
+          "quote_hash": "dba35248f68103045217a9823d8f4ac41bfa865a06c74d64ad4212eb23f4b244"
+        },
+        {
+          "source_id": "northisland_privacy",
+          "source_url": "https://northisland.ventures/privacy-policy",
+          "source_title": "Privacy Policy | North Island Ventures",
+          "source_content_hash": "9c1737c692a2d14da68775c336c03b7deb852a77aff1005fc4fac97a8e730b4e",
+          "quote": "We are a venture capital firm that invests in early stage, technology-related companies including, without limitation, those in the blockchain, cryptocurrency, fintech, and enterprise software sectors.",
+          "quote_hash": "0de2bbead0f2aff1a4dd6ff30e4691d0b9dfbc312f58957d163591cfeb115523"
+        },
         {
           "source_id": "FISRC-41cdbf30cbfd4eed",
           "source_url": "https://techcrunch.com/2026/07/01/venice-ai-becomes-a-unicorn-with-65m-series-a-as-its-privacy-first-ai-platform-takes-off",
@@ -60131,7 +60452,7 @@
           "quote_hash": "f99d233087df9c799c8e8b7c994fd15a7ddc145d8d594f19c79d263532ad40c3"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     },
     "INV-9228e8ad594ee0": {
       "profile_type": "organization",
@@ -69950,21 +70271,131 @@
       "last_verified_at": "2026-09-26"
     },
     "INV-7cb4fb0d6fbbad": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Notion Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Notion Capital 是一家聚焦欧洲企业软件和 B2B SaaS 的早期投资机构。其团队由创业者与经营者组成，强调长期陪伴和帮助企业从早期收入阶段成长；组合支持包括运营平台、人才网络、培训和 go-to-market 资源。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资领域",
+          "value": "欧洲企业软件与 B2B 软件公司。",
+          "source_id": "notion_home"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网定位为欧洲早期企业软件投资机构，重点陪伴创始团队成长。",
+          "source_id": "notion_home"
+        },
+        {
+          "field": "founder_support",
+          "label": "组合支持",
+          "value": "提供面向创始团队的学习培训、人才与专家连接、领导力项目及运营支持。",
+          "source_id": "notion_home"
+        },
+        {
+          "field": "leadership_team",
+          "label": "管理与投资团队",
+          "value": [
+            "Stephen Chandler — Managing Partner；共同创办 Notion，曾任 MessageLabs CFO。",
+            "Jos White — General Partner；共同创办 MessageLabs。",
+            "Chris Tottman — General Partner。",
+            "Patrick Norris — General Partner。",
+            "Itxaso del Palacio — General Partner。",
+            "Kamil Mieczakowski — General Partner。"
+          ],
+          "source_id": "notion_team"
+        },
+        {
+          "field": "founder_track_record",
+          "label": "创始团队经营经历",
+          "value": "Stephen Chandler 的官网简介称，他作为 MessageLabs CFO 参与公司经营，MessageLabs 后以约 7 亿美元出售给 Symantec；这是团队创办机构前的企业经历。",
+          "source_id": "notion_team"
+        },
+        {
+          "field": "portfolio_examples",
+          "label": "官网选列的组合公司",
+          "value": [
+            "Mews",
+            "GoCardless",
+            "YuLife",
+            "Paddle",
+            "Currencycloud",
+            "Quantum Systems",
+            "Upvest"
+          ],
+          "source_id": "notion_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Pivot · B轮 · 2026-05-21 · 本轮领投 · $40m。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Pivot · Series B · 2026-05-21 · Forestay Capital 与 Notion Capital 共同领投其 4000 万美元融资；该数字为轮次总额，Notion 的单笔出资未披露。",
           "source_id": "FISRC-58b2708f2adcb70e"
+        },
+        {
+          "description": "官网组合页面列出的代表性公司包括 Mews、GoCardless、Paddle、Currencycloud 与 Quantum Systems；这是选择性展示，不是完整投资清单或回报数据。",
+          "source_id": "notion_home"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "投资方向、团队简介、组合公司与联系方式来自 Notion Capital 官网。Pivot 于 2026 年披露的 4000 万美元为 B 轮融资总额，Forestay Capital 与 Notion Capital 共同领投；Notion 的单笔出资未披露。",
+      "experience_summary": "团队官网自述成员多为创业者与运营者。Stephen Chandler 与 Jos White 的公开履历包含 MessageLabs 创业与经营经历，Notion 的平台团队提供组合公司的运营支持。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站与投资方向",
+          "value": "Notion Capital",
+          "url": "https://www.notioncapital.com/",
+          "source_id": "notion_home"
+        },
+        {
+          "kind": "application",
+          "label": "投资申请入口",
+          "value": "Looking for investment? 在线申请",
+          "url": "https://www.notioncapital.com/connect",
+          "source_id": "notion_connect"
+        },
+        {
+          "kind": "email",
+          "label": "公开联系邮箱",
+          "value": "info@notion.vc",
+          "url": "https://www.notioncapital.com/connect",
+          "source_id": "notion_connect"
+        },
+        {
+          "kind": "address",
+          "label": "注册及伦敦办公地址",
+          "value": "91 Wimpole Street, London, W1G 0EF",
+          "url": "https://www.notioncapital.com/connect",
+          "source_id": "notion_connect"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "notion_home",
+          "source_url": "https://www.notioncapital.com/",
+          "source_title": "Notion Capital - Europe’s Leading Early-Stage Business Software Investor",
+          "source_content_hash": "497d1ef3b0626e3f00ef24a29b33e877cf0c73aae16d2f170c28195914f8c7b2",
+          "quote": "We invest in what we know and love: European business software companies.",
+          "quote_hash": "6edc83878a5c0bc29e0b268bad6e3b16fb9d548bec6a53ad306bbf1111f7c7b5"
+        },
+        {
+          "source_id": "notion_team",
+          "source_url": "https://www.notioncapital.com/team",
+          "source_title": "The Notion Capital Team | The B2B Software VC, Built by Operators",
+          "source_content_hash": "933d04d283ce94157e0e3c5475134fbb7effe2ce45b4e7f150933d9db9552405",
+          "quote": "Stephen Chandler is Managing Partner at Notion Capital. He co-founded the firm after leading MessageLabs’ $700m Symantec exit as CFO.",
+          "quote_hash": "7b29c44753699c91d0c8485e9b833becc36024c9f6f82e62e33f7edc6954c148"
+        },
+        {
+          "source_id": "notion_connect",
+          "source_url": "https://www.notioncapital.com/connect",
+          "source_title": "Connect | Notion",
+          "source_content_hash": "03090be3d67b2de1cd2df9f3e5ef57a43d8cd1b61151ed09d8fe653980b4e1fb",
+          "quote": "Notion Capital Managers LLP (OC364955) is Authorised and Regulated by the Financial Conduct Authority.",
+          "quote_hash": "308d683e82f1349e80bcc88c38b41579d800800b27325476b2a5976e72e536d5"
+        },
         {
           "source_id": "FISRC-58b2708f2adcb70e",
           "source_url": "https://thenextweb.com/news/pivot-40m-series-b-agentic-ai-procurement-operating-system",
@@ -69974,7 +70405,7 @@
           "quote_hash": "17b6e623e7eae5e5597b6fbff227feabc152ea69596a740e7b1bfd850e684029"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     },
     "INV-9c9a3143d2080f": {
       "profile_type": "organization",
@@ -78792,21 +79223,150 @@
       "last_verified_at": "2026-09-26"
     },
     "INV-c32a5d22270d7c": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Norwest Venture Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Norwest Venture Partners（NVP）是 Norwest 的风险投资业务，覆盖早期至后期、多个行业，并在北美、印度和以色列开展投资。机构为创始人提供投资资金及人才、销售、市场和运营等组合支持。",
+      "facts": [
+        {
+          "field": "investment_stages",
+          "label": "投资阶段",
+          "value": [
+            "Early stage",
+            "Growth",
+            "Late stage"
+          ],
+          "source_id": "norwest_venture"
+        },
+        {
+          "field": "investment_check_size",
+          "label": "官网披露的股权投资范围",
+          "value": "官网称投资金额从 100 万至 3000 万美元，具体取决于阶段与轮次。",
+          "source_id": "norwest_venture"
+        },
+        {
+          "field": "geography",
+          "label": "投资地域",
+          "value": [
+            "北美",
+            "印度",
+            "以色列"
+          ],
+          "source_id": "norwest_venture"
+        },
+        {
+          "field": "sector_focus",
+          "label": "官网列出的行业",
+          "value": [
+            "Technology",
+            "Information Services",
+            "Business Services",
+            "Financial Services",
+            "Consumer Products and Services",
+            "Healthcare",
+            "Life Sciences",
+            "Biotech"
+          ],
+          "source_id": "norwest_venture"
+        },
+        {
+          "field": "firm_scale",
+          "label": "机构规模（官网自报）",
+          "value": "官网页面披露管理资产 155 亿美元、当前基金规模 30 亿美元、累计投资 700 多家公司，其中约 200 家仍在运营；访问官网日期为 2026-09-27。",
+          "source_id": "norwest_venture"
+        },
+        {
+          "field": "team_roster",
+          "label": "官网列示的风险投资团队成员",
+          "value": [
+            "Jeff Crowe — Senior Managing Partner",
+            "Tiba Aynechi, Ph.D. — General Partner",
+            "Dror Nahumi — General Partner",
+            "Assaf Harel — Partner",
+            "Lisa Wu — Partner",
+            "Promod Haque — Venture Partner"
+          ],
+          "source_id": "norwest_venture"
+        },
+        {
+          "field": "portfolio_examples",
+          "label": "官网展示的组合公司",
+          "value": [
+            "LlamaIndex",
+            "Gong",
+            "Ritual",
+            "Rain"
+          ],
+          "source_id": "norwest_venture"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Oro Labs · C轮 · 2026-03-12 · 既有投资方，本轮参投 · $100 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Oro Labs · Series C · 2026-03-12 · 报道称既有投资人 Norwest Venture Partners 参与其 1 亿美元融资；1 亿美元是轮次总额，不是 Norwest 的单笔出资。",
           "source_id": "FISRC-1347e63f3abd5d34"
+        },
+        {
+          "description": "官网称 Norwest 曾投资 700 多家公司，并列出 LlamaIndex、Gong、Ritual 与 Rain 等案例；这些数据是机构自报的组合概况，不代表投资回报。",
+          "source_id": "norwest_venture"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "管理规模、当前基金规模、投资公司数与支票区间均为 Norwest 官网访问时披露的机构自报数据，可能随时间变化。Oro Labs 的 1 亿美元为 2026 年 Series C 总额；Norwest 是既有投资人之一，单笔金额未披露。",
+      "experience_summary": "官网将投资团队描述为由有创业、经营和投资经验的合伙人组成，并提供人才、销售市场、产品技术及企业发展支持服务；这里只收录官网公开的职务与组合服务。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站与投资策略",
+          "value": "Norwest Venture Partners",
+          "url": "https://www.norwest.com/venture/",
+          "source_id": "norwest_venture"
+        },
+        {
+          "kind": "address",
+          "label": "Menlo Park 办公室",
+          "value": "1300 El Camino Real, Suite 200, Menlo Park, CA 94025",
+          "url": "https://www.norwest.com/contact/",
+          "source_id": "norwest_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "Menlo Park 电话",
+          "value": "+1 650 321 8000",
+          "url": "https://www.norwest.com/contact/",
+          "source_id": "norwest_contact"
+        },
+        {
+          "kind": "address",
+          "label": "San Francisco 办公室",
+          "value": "2 South Park Street, 3rd Floor, San Francisco, CA 94107",
+          "url": "https://www.norwest.com/contact/",
+          "source_id": "norwest_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "San Francisco 电话",
+          "value": "+1 415 918 5010",
+          "url": "https://www.norwest.com/contact/",
+          "source_id": "norwest_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "norwest_venture",
+          "source_url": "https://www.norwest.com/venture/",
+          "source_title": "Norwest Venture Capital | Early-Stage to Growth",
+          "source_content_hash": "001d5d628ac641562f67db6c46f0fd567f242b52e81a77942b600f5af52a7f10",
+          "quote": "Norwest’s Venture Capital (NVP) team invests in early- to late-stage companies across industries, providing $1M–$30M equity checks and hands-on support to help founders scale.",
+          "quote_hash": "65af50bc6cf3e045e35553351d84b1cbe576850c43f232230dac8f8a62d90b94"
+        },
+        {
+          "source_id": "norwest_contact",
+          "source_url": "https://www.norwest.com/contact/",
+          "source_title": "Contact Norwest | Venture Capital & Growth Equity",
+          "source_content_hash": "e77e0c4a09e54e01243a6acd2e1439940daac404d56a29f99ed634ec53eaa184",
+          "quote": "1300 El Camino Real, Suite 200 Menlo Park, CA 94025 +1.650.321.8000",
+          "quote_hash": "44c7d5134eaf1d4556758ee32f1e47e2d285dbbb5caa19339fdca8dd3f71bb69"
+        },
         {
           "source_id": "FISRC-1347e63f3abd5d34",
           "source_url": "https://fortune.com/2026/03/12/oro-labs-corporate-procurement-ai-efficiency/",
@@ -78816,7 +79376,7 @@
           "quote_hash": "2758854e444ab6df3eb9d32daef6307353e57d69fcf49c16a5361ca212a26c43"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     },
     "INV-36ec012c5383a6": {
       "profile_type": "unverified",
@@ -79292,21 +79852,88 @@
       "last_verified_at": "2026-09-26"
     },
     "INV-0e6b83b314d4f1": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Okta Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-11；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Okta Ventures 是 Okta 的企业风险投资部门，投资并支持身份、安全与隐私技术公司。它与其他主投方共同投资，不单独领投；投资覆盖创业公司多个阶段，并通过 Okta 的 API、集成网络、客户资源和工程能力为组合企业提供商业化支持。",
+      "facts": [
+        {
+          "field": "parent_and_structure",
+          "label": "机构性质",
+          "value": "Okta, Inc. 旗下创业投资部门，专注支持身份与安全技术创业公司。",
+          "source_id": "okta_ventures"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": [
+            "现代身份技术",
+            "隐私",
+            "以用户为中心的安全",
+            "身份驱动型企业技术"
+          ],
+          "source_id": "okta_ventures"
+        },
+        {
+          "field": "investment_stages",
+          "label": "投资阶段",
+          "value": "官网称覆盖创业公司全生命周期；典型早期投资低于 100 万美元，后续阶段金额取决于轮次结构。",
+          "source_id": "okta_ventures"
+        },
+        {
+          "field": "investment_role",
+          "label": "投资方式",
+          "value": "官网称 Okta Ventures 不领投，只与其他主投方共同投资，并保留后续投资资金。",
+          "source_id": "okta_ventures"
+        },
+        {
+          "field": "geography",
+          "label": "地理覆盖",
+          "value": "官网称会投资美国以外注册的公司。",
+          "source_id": "okta_ventures"
+        },
+        {
+          "field": "founder_support",
+          "label": "创业支持",
+          "value": "可接入 Okta API、技术和工程资源、Okta Integration Network 联合营销及客户/商业化渠道。",
+          "source_id": "okta_ventures"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官网列举的历史组合与退出案例包括 Trusted Key（2019 年被 Workday 收购）、Tessian（2023 年被 Proofpoint 收购）、Dig Security（2023 年被 Palo Alto Networks 收购）、Adaptive Shield（2024 年被 CrowdStrike 收购）及 Prompt Security（2025 年被 SentinelOne 收购）。这些是官网展示的选例，不代表完整组合或投资回报。",
+          "source_id": "okta_ventures"
+        },
+        {
+          "description": "官网组合页面还展示 Ockam、DataGrail、Oyster、Drata、Crossbeam、Replit、Together AI 等企业；展示名单不应视为完整组合。",
+          "source_id": "okta_ventures"
+        },
         {
           "description": "融资来源记录：Replit · D轮 · 2026-03-11 · 本轮参投（战略投资） · $400M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-00ed3d8fd701898b"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "策略、阶段、典型早期支票范围和所列并购案例均来自 Okta Ventures 官网。官网未给出当前团队完整名录。组合名单及退出案例是官网选择性展示，不构成完整投资组合或基金回报。",
+      "experience_summary": "Okta Ventures 的公开资料重点介绍母公司技术、集成网络和商业化资源，没有披露完整的投资团队履历；本页只记录官网明确发布的策略和支持方式。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站与投资策略",
+          "value": "Okta Ventures",
+          "url": "https://www.okta.com/company/okta-ventures/",
+          "source_id": "okta_ventures"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "okta_ventures",
+          "source_url": "https://www.okta.com/company/okta-ventures/",
+          "source_title": "Okta Ventures",
+          "source_content_hash": "6f1dd904002b3c0a2a78c43f181f26310f8501493848b5666f2fe78e56cb79e3",
+          "quote": "We invest and support companies creating cutting edge technologies enabled by identity, security, and privacy.",
+          "quote_hash": "951ba94e5a2f13df85c1b9886226cdd79d7148a1e25065dd4346ee4b244113e9"
+        },
         {
           "source_id": "FISRC-00ed3d8fd701898b",
           "source_url": "https://techstartups.com/2026/03/11/replit-raises-400m-at-9b-valuation-as-ai-coding-platform-surges-to-over-40m-users/",
@@ -79316,7 +79943,7 @@
           "quote_hash": "2a92d3648e85cfacdf3ad37c2766e637c846e12256cf248e68b79be36131c17a"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     },
     "INV-c64f6b4a81f848": {
       "profile_type": "organization",
@@ -88429,21 +89056,171 @@
       "last_verified_at": "2026-09-26"
     },
     "INV-03454ce0bf41be": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "OTB Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "summary": "OTB Ventures 是一家泛欧洲深科技风险投资机构，重点投资后产品阶段、具备收入增长并准备国际扩张的欧洲科技公司。官网称其成立于 2017 年，管理资产超过 3.5 亿美元，投资覆盖晚期种子轮、A 轮和早期成长阶段。",
+      "facts": [
         {
-          "description": "融资来源记录：FintechOS · 债务融资 · 2026-09-21 · 历史轮次参投 · $28M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-39755042b7f329d6"
+          "field": "founded_and_scale",
+          "label": "成立时间与规模（机构官网披露）",
+          "value": "成立于 2017 年；官网称管理资产超过 3.5 亿美元。",
+          "source_id": "otb_about"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "晚期种子轮、Series A 与早期成长阶段；关注已有产品、收入增长并准备国际扩张的公司。",
+          "source_id": "otb_about"
+        },
+        {
+          "field": "investment_scope",
+          "label": "官网投资垂直领域",
+          "value": [
+            "旧版 About 页面：AI 与自动化、金融科技、SpaceTech、网络安全",
+            "当前首页：AI 与新型计算、SpaceTech、Physical AI"
+          ],
+          "source_id": "otb_about"
+        },
+        {
+          "field": "geography_and_check_size",
+          "label": "投资地域与规模",
+          "value": "主要投资欧洲科技公司；初始投资通常为 100 万至 700 万欧元，按多轮投资后对单家组合公司最多可投资 2500 万欧元。",
+          "source_id": "otb_about"
+        },
+        {
+          "field": "leadership_adam_niewinski",
+          "label": "联合创始人 Adam Niewiński 履历与关联公司",
+          "value": "官网简介称其有 20 多年创业及高级经营管理经验、十年以上投资经验；曾任 Boston Consulting Group 顾问，创办 Expander、Platinum Bank，担任 UniCredit 集团创业公司 Xelion CEO，并任 PEKAO 副 CEO。官网还列出其参与 ICEYE、Silent Eight、KYP.ai、Hydrosat 与 FintechOS 董事会。",
+          "source_id": "otb_adam"
+        },
+        {
+          "field": "leadership_marcin_hejka",
+          "label": "联合创始人 Marcin Hejka 履历与关联公司",
+          "value": "创办 OTB 前在 Intel Capital 工作 18 年，曾任 VP、全球投资委员会成员及管理董事，负责欧洲、以色列、中东、非洲与印度；官网称其完成 50 多笔投资与退出，其中包括五家独角兽或十角兽公司。其 OTB 组合董事会关联包括 Apheris、Plumerai 与 MatrixSpace，已退出案例包括 BabbleLabs 与 Minit。",
+          "source_id": "otb_marcin"
+        },
+        {
+          "field": "portfolio_examples",
+          "label": "官网列出的组合公司",
+          "value": [
+            "ICEYE",
+            "Hydrosat",
+            "FintechOS",
+            "Apheris",
+            "Synthara",
+            "Minit",
+            "BabbleLabs"
+          ],
+          "source_id": "otb_portfolio"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2017",
+          "description": "OTB Ventures 官网记载机构于 2017 年成立。",
+          "source_id": "otb_about"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "官网组合案例包括 ICEYE、Hydrosat、FintechOS、Apheris 与 Synthara；页面所列案例是部分组合，不是完整清单。",
+          "source_id": "otb_portfolio"
+        },
+        {
+          "description": "联合创始人 Marcin Hejka 的官网简介列出 Minit 与 BabbleLabs 为已退出组合公司；OTB 新闻与简介记录 Minit 被 Microsoft 收购、BabbleLabs 被 Cisco 收购。",
+          "source_id": "otb_marcin"
+        },
+        {
+          "description": "FintechOS · 2021 年 Series B · FinTech Global 2021-04-26 的融资综述称，FintechOS 完成由 Draper Esprit 领投的 6000 万美元 Series B，既有投资人中包括 OTB Ventures；6000 万美元是融资总额，不是 OTB 的单笔出资。",
+          "source_id": "FISRC-39755042b7f329d6"
+        },
+        {
+          "description": "FintechOS · 2026-09-21 · 公司官方公告称其完成 2800 万美元股权与债务融资，公告列出的股东投资方为 Bek Ventures、IFC、Cipio Partners 和 Molten Ventures，债务方为 Santander CIB，未列出 OTB Ventures；这与 OTB 参与的 2021 年历史轮次不同。",
+          "source_id": "otb_fintechos_2026"
+        }
+      ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "成立时间、管理资产、投资阶段、地域与投资额为 OTB 官网披露。官网策略页面与当前首页对垂直领域的分类不完全一致：旧版 About 页列四类，当前首页聚焦 AI/新型计算、SpaceTech 与 Physical AI；资料保留这项页面口径差异。创始人履历和退出案例来自 OTB 本人简介，属于机构自述。FintechOS 2021 年融资报道列出 OTB 为历史投资方；FintechOS 2026-09-21 官方公告列明的新一轮投资方中未列出 OTB，两笔融资不可混为一笔。",
+      "experience_summary": "OTB 两位联合创始人的公开履历分别覆盖创业与银行经营、咨询、企业科技投资及全球风险投资管理。官网称 Marcin Hejka 在 Intel Capital 任职 18 年，Adam Niewiński 具企业经营和创业经历；这些为机构发布的个人履历。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站与投资标准",
+          "value": "OTB Ventures",
+          "url": "https://otb.vc/about/",
+          "source_id": "otb_about"
+        },
+        {
+          "kind": "email",
+          "label": "公开联系邮箱",
+          "value": "contact@otb.vc",
+          "url": "https://otb.vc/contact/",
+          "source_id": "otb_contact"
+        },
+        {
+          "kind": "address",
+          "label": "Amsterdam 办公室",
+          "value": "Strawinskylaan 1457, Tower Ten, 14th Floor, 1077 XX Amsterdam, Netherlands",
+          "url": "https://otb.vc/contact/",
+          "source_id": "otb_contact"
+        },
+        {
+          "kind": "address",
+          "label": "Warsaw 办公室",
+          "value": "Twarda 4, 00-105 Warsaw, Poland",
+          "url": "https://otb.vc/contact/",
+          "source_id": "otb_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "otb_about",
+          "source_url": "https://otb.vc/about/",
+          "source_title": "About - OTB Ventures",
+          "source_content_hash": "375d9e31b262615d352ccbbcac613f39f78c3fb068686084cc39dec21ad722f8",
+          "quote": "Established in 2017, OTB Ventures currently manages over $350 million and has offices in Amsterdam, the Netherlands, and Warsaw, Poland.",
+          "quote_hash": "65453fcef04663cde31f23cf4b012ad804b780147839ba6390fc6e4aa56f1d50"
+        },
+        {
+          "source_id": "otb_people",
+          "source_url": "https://otb.vc/people/",
+          "source_title": "People - OTB Ventures",
+          "source_content_hash": "9c19156693a2355fa7253f976c886d85cfc9e1b08f572e463daa84d0062f4521",
+          "quote": "Meet our team Adam Niewiński Co-founder Managing Partner",
+          "quote_hash": "2f1bfe2b5adeb0cd6c3c46ed929129a20139dafc2e08c7f7712f22394c23c727"
+        },
+        {
+          "source_id": "otb_adam",
+          "source_url": "https://otb.vc/people/adam-niewinski/",
+          "source_title": "Adam Niewiński - OTB Ventures",
+          "source_content_hash": "3e12b4711011da6bce62efabe7da2eed47c5d38111ed3aaba71898aab099b0cd",
+          "quote": "Adam has over 20 years of experience as an entrepreneur and senior executive, and more than a decade as an investor.",
+          "quote_hash": "eeb2642d69bee0ad36be7d806a9c29e29d48b11685ad3457ebbcfc23ace256d0"
+        },
+        {
+          "source_id": "otb_marcin",
+          "source_url": "https://otb.vc/people/marcin-hejka/",
+          "source_title": "Marcin Hejka - OTB Ventures",
+          "source_content_hash": "cc4114a6c612252a04272a07f68d9d588dd5fa4853530cdf73e5f80a1a01b96b",
+          "quote": "Before co-founding OTB Ventures, Marcin spent 18 years at Intel Capital as VP, Global Investment Committee Member, and Managing Director.",
+          "quote_hash": "e44dabe32974a9b2c86e69e4105634470c55908364e25bc1f5ab4d8bed82b321"
+        },
+        {
+          "source_id": "otb_portfolio",
+          "source_url": "https://otb.vc/portfolio/",
+          "source_title": "Portfolio - OTB Ventures",
+          "source_content_hash": "9ba0e61038e07665387fc90562e2217ec44fd6f2fc286a73b6725208fcd89f0e",
+          "quote": "Apheris is at the heart of a federated AI setup.",
+          "quote_hash": "66edad688c9c91fbaf44639f8f53997c7a63afb428e45d34ed8b64c52d6d1c18"
+        },
+        {
+          "source_id": "otb_contact",
+          "source_url": "https://otb.vc/contact/",
+          "source_title": "Contact - OTB Ventures",
+          "source_content_hash": "5653ca3e5cf13c09f811158a40e9e5364a81861a128b7dd149742666d8df17f8",
+          "quote": "Get in touch contact@otb.vc",
+          "quote_hash": "b2cd05a6e961fac436a30b995d4fdb5801a8433db624191f3a632f9975b4359b"
+        },
         {
           "source_id": "FISRC-39755042b7f329d6",
           "source_url": "https://fintech.global/2021/04/26/the-34-fintech-rounds-from-the-last-week-you-cant-afford-to-miss/",
@@ -88451,9 +89228,17 @@
           "source_content_hash": "7df514a750613ace",
           "quote": "with participation from existing investors Earlybird Digital East, Gapminder Ventures, LAUNCHub Ventures and OTB Ventures",
           "quote_hash": "2ec5063fe68b5e7db534d2c70019f6756a6fac8bcefc74abbb6b119d713ef81d"
+        },
+        {
+          "source_id": "otb_fintechos_2026",
+          "source_url": "https://fintechos.com/in-the-news/fintechos-secures-28m-in-combined-equity-and-debt-financing/",
+          "source_title": "FintechOS Secures $28M in Combined Equity and Debt Financing - FintechOS",
+          "source_content_hash": "d512551df45fd3d4ea83a043f8e64d30b56f55ad21720a3a4ec2af3c66d13d11",
+          "quote": "including Bek Ventures, IFC, Cipio Partners and Molten Ventures, alongside a senior debt facility from Santander CIB.",
+          "quote_hash": "859260e4245477298272dd14981c43b47069c41e09aec953842f1478d4222731"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     },
     "INV-381d21cec8e7cb": {
       "profile_type": "unverified",
@@ -93078,21 +93863,108 @@
       "last_verified_at": "2026-09-26"
     },
     "INV-ebbc229ff198b1": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "O'Shaughnessy Ventures LLC 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "O’Shaughnessy Ventures（OSV）是 Jim O’Shaughnessy 创立的家族办公室投资与控股公司，也经营面向创作者的出版、影视、媒体和奖助项目。官网称其会早期支持尚未广为人知的公司与创作者；其公开投资案例覆盖 AI、企业软件、教育和神经科技等。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构性质",
+          "value": "官网将 OSV 描述为家族办公室投资与控股公司，同时运营创作者支持项目。",
+          "source_id": "osv_home"
+        },
+        {
+          "field": "investment_strategy",
+          "label": "投资策略",
+          "value": "官网表示会尽早支持有大胆构想的创业者及创作者；没有在该页面公布基金阶段或支票区间。",
+          "source_id": "osv_home"
+        },
+        {
+          "field": "business_lines",
+          "label": "业务板块",
+          "value": [
+            "早期公司投资",
+            "图书出版",
+            "电影制作",
+            "播客与通讯媒体",
+            "奖助与 Fellowships"
+          ],
+          "source_id": "osv_home"
+        },
+        {
+          "field": "team_and_background",
+          "label": "核心团队与履历",
+          "value": [
+            "Jim O’Shaughnessy — 创始人兼 CEO；此前创立并担任 O’Shaughnessy Asset Management CEO，著有多本投资与商业书籍。",
+            "Chris Denny-Brown — 战略项目董事总经理；负责评估投资机会并为组合公司提供运营与财务支持。",
+            "Nick Tawil — 董事总经理，关注早期公司与媒体投资；此前从事科技和媒体投资银行业务、风险投资，并曾服役于美国海军。",
+            "Michael Breitenbach — 董事总经理，关注风险投资、区块链与生成式 AI。",
+            "Jean-Marc Daecius — Chief of Staff，负责在 OSV 各业务板块推动 AI 运营。"
+          ],
+          "source_id": "osv_home"
+        },
+        {
+          "field": "portfolio_examples",
+          "label": "官网选列的公司投资案例",
+          "value": [
+            "Stability AI",
+            "Prefect",
+            "Synthesis School",
+            "Hegel AI",
+            "Prophetic",
+            "Furno Materials",
+            "Affinity"
+          ],
+          "source_id": "osv_adventures"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Stability AI · B轮 · 2026-08-25 · 2022 年 1.01 亿美元融资领投方 · $76 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Stability AI · 2022-10 · 官方融资公告称，公司完成 1.01 亿美元融资，Coatue、Lightspeed Venture Partners 与 O’Shaughnessy Ventures LLC 共同领投；该金额是融资总额，不是 OSV 的单笔出资。",
           "source_id": "FISRC-2a3c20bc832bd7ef"
+        },
+        {
+          "description": "OSV 官网列出的精选公司案例包括 Stability AI、Prefect、Synthesis School 与 Hegel AI；这是部分展示名单，不是完整组合或回报清单。",
+          "source_id": "osv_adventures"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "OSV 将自身描述为家族办公室投资与控股公司，业务范围宽于传统风险基金。团队履历、投资方向及组合案例来自 OSV 官网；Stability AI 2022 年 1.01 亿美元为该融资总额，OSV 的单笔投资额未披露。",
+      "experience_summary": "OSV 核心团队背景涵盖投资管理、科技与媒体投行、海军服役、AI/软件工程、出版与创作者项目；公开页面没有披露完整投资组合与基金回报数据。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站与业务入口",
+          "value": "O’Shaughnessy Ventures",
+          "url": "https://www.osv.llc/",
+          "source_id": "osv_home"
+        },
+        {
+          "kind": "website",
+          "label": "公司投资与组合案例",
+          "value": "Infinite Adventures",
+          "url": "https://www.osv.llc/adventures",
+          "source_id": "osv_adventures"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "osv_home",
+          "source_url": "https://www.osv.llc/",
+          "source_title": "Unleash Your Infinite Potential | O’Shaughnessy Ventures",
+          "source_content_hash": "8a5ea44af286fd09fc7670c1485337c60b2fb10fc316df3423b6bbe4c6fee661",
+          "quote": "Leads OSV, a family office investment and holding company.",
+          "quote_hash": "863e45754fa42048998171a8611e500d2c4a982433c73f16ed337ac65dc761e7"
+        },
+        {
+          "source_id": "osv_adventures",
+          "source_url": "https://www.osv.llc/adventures",
+          "source_title": "Infinite Adventures | O’Shaughnessy Ventures",
+          "source_content_hash": "ed24da2c2ef621aaab5c934648d1a83cdc62fed471264671e92f53f27c85ec14",
+          "quote": "Select Portfolio Investments Affinity is a compliance training platform built for regulated industries.",
+          "quote_hash": "557385dd110496ed5e916f3a7e63255c112b6f507936e5544883c0e10a76fc2f"
+        },
         {
           "source_id": "FISRC-2a3c20bc832bd7ef",
           "source_url": "https://stability.ai/news-updates/stability-ai-announces-101-million-in-funding-for-open-source-artificial-intelligence",
@@ -93102,7 +93974,7 @@
           "quote_hash": "6341bc5bddb560309366a4d1adcc2ab034d9c2a252631e555b4517d61bddd331"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     },
     "INV-840396b6ad1149": {
       "profile_type": "organization",
