@@ -32701,30 +32701,100 @@
     },
     "INV-7e84fa44f90372": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "长沙麓山投资控股集团有限公司 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "长沙麓山投资控股集团有限公司是长沙市岳麓区的国有投资与城市建设平台。上海证券交易所2023年债券募集说明书披露其成立时间、注册资本、股东关系和业务范围；2026年9月融资报道将其列为驰芯半导体A+轮联合投资方。",
+      "coverage_note": "公司沿革、股权、注册资本和联络信息取自2023年债券募集说明书，属于该时点披露，不能自动视为当前最新工商与联系人信息。驰芯半导体A+轮报道的“超2亿元”是整轮规模区间，不是麓山控股的出资额；其个人投资金额未披露。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "主体名称",
+          "value": "长沙麓山投资控股集团有限公司",
+          "source_id": "lushan_bond_2023"
+        },
+        {
+          "field": "ownership",
+          "label": "股权关系（2023年披露）",
+          "value": "债券募集说明书列示为岳麓区政府全资持有的区属国有企业。",
+          "source_id": "lushan_bond_2023"
+        },
+        {
+          "field": "established",
+          "label": "成立时间",
+          "value": "2001年9月7日",
+          "source_id": "lushan_bond_2023"
+        },
+        {
+          "field": "capital",
+          "label": "注册资本（2023年披露）",
+          "value": "人民币10亿元",
+          "source_id": "lushan_bond_2023"
+        },
+        {
+          "field": "business_scope",
+          "label": "公开业务范围（2023年披露）",
+          "value": "城市基础设施投资、土地整理、房地产及酒店相关业务等。",
+          "source_id": "lushan_bond_2023"
+        },
+        {
+          "field": "registered_address",
+          "label": "公开披露地址（2023年募集说明书）",
+          "value": "长沙市岳麓大道385号3楼",
+          "source_id": "lushan_bond_2023"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2001-09-07",
+          "description": "公司成立。",
+          "source_id": "lushan_bond_2023"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：驰芯半导体 · A+轮 · 2026-09-23 · 本轮参投 · 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "2026年9月融资报道将麓山控股列为驰芯半导体A+轮联合参投方。报道披露该轮融资超过2亿元，但没有披露麓山控股的单家出资额。",
           "source_id": "FISRC-adff65727174a119"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "label": "公司公开联系电话（2023年募集说明书）",
+          "value": "0731-88672835",
+          "source_id": "lushan_bond_2023"
+        },
+        {
+          "kind": "phone",
+          "label": "债券信息披露联系人周玉林（2023年材料所列）",
+          "value": "0731-85519878",
+          "source_id": "lushan_bond_2023"
+        },
+        {
+          "kind": "address",
+          "label": "公司公开地址（2023年募集说明书）",
+          "value": "长沙市岳麓大道385号3楼",
+          "source_id": "lushan_bond_2023"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "lushan_bond_2023",
+          "source_url": "https://static.sse.com.cn/bond/bridge2/disclosure/announcement/c/202312/035219_20231214_JPDI.pdf",
+          "source_title": "上海证券交易所：长沙麓山投资控股集团有限公司公司债券募集说明书",
+          "source_content_hash": "a81f6c6083d79b01f731ef20b65f4db93af66a15eef4a8c9c87d2942939b8228",
+          "quote": "长沙麓山投资控股集团有限公司。",
+          "quote_hash": "9cc17a6de7bc40d4d6cde546fae6b9ff833fcf1ec05f8cc954406bc8d02603f2"
+        },
         {
           "source_id": "FISRC-adff65727174a119",
           "source_url": "https://news.pedaily.cn/202609/569521.shtml",
-          "source_title": "驰芯半导体完成超两亿元A+轮融资，致力于构筑物理世界智能化的感知底座",
+          "source_title": "驰芯半导体完成超两亿元A+轮融资",
           "source_content_hash": "03e6bfdfc45c129c",
-          "quote": "湖南金霞盛世股权投资基金合伙企业（有限合伙）（下称“金霞盛世”）、上海移远通信技术股份有限公司（下称“移远通信”）、长沙麓山投资控股集团有限公司（下称“麓山控股”）联合参投",
-          "quote_hash": "11ca97fbe8513dc5e03a93bc6adb01108880c7cc8d01ab11f897958826f6b0b2"
+          "quote": "长沙麓山投资控股集团有限公司",
+          "quote_hash": "35e213acf6c4047b81e79dd5a7781ea4576c0374a4cf1a43f04b7cb18457a110"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "identity_status": "verified"
     },
     "INV-972f57e753eb8f": {
       "profile_type": "unverified",
@@ -77153,30 +77223,121 @@
     },
     "INV-3a53f7639f4d77": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "央视融媒体产业投资基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "央视融媒体产业投资基金（有限合伙）是一只已在中国证券投资基金业协会备案的私募股权投资基金，由海通创意私募基金管理有限公司担任管理人。该基金以媒体融合和文化科技产业为主题，公开资料披露基金总规模100亿元、首期规模37.125亿元，布局包括人工智能与媒体科技。",
+      "coverage_note": "法律名称、基金类型、备案与运作状态以中基协公示为准；规模、发起背景和投向来自基金管理人公开材料。公开报道中的基金投资方向和上市项目不能当作投资回报。灵初智能报道列基金参与天使轮，但20亿元是公司多轮融资合计，不是基金出资额。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "备案名称",
+          "value": "央视融媒体产业投资基金（有限合伙）",
+          "source_id": "cctv_fund_amac"
+        },
+        {
+          "field": "fund_type",
+          "label": "基金类型与运作状态",
+          "value": "私募股权投资基金；中基协页面显示“正在运作”。",
+          "source_id": "cctv_fund_amac"
+        },
+        {
+          "field": "manager",
+          "label": "基金管理人",
+          "value": "海通创意私募基金管理有限公司",
+          "source_id": "cctv_fund_amac"
+        },
+        {
+          "field": "scale",
+          "label": "公开规模",
+          "value": "总规模人民币100亿元，首期规模37.125亿元（管理人2022年披露）。",
+          "source_id": "cctv_fund_manager"
+        },
+        {
+          "field": "sponsors",
+          "label": "发起背景",
+          "value": "由中央广播电视总台、中国电信集团、中国文化产业投资母基金及海通证券等共同作为基石发起设立。",
+          "source_id": "cctv_fund_manager"
+        },
+        {
+          "field": "investment_focus",
+          "label": "公开投资方向",
+          "value": [
+            "媒体融合",
+            "人工智能",
+            "云计算",
+            "机器视觉",
+            "自然语言处理",
+            "5G与超高清技术应用"
+          ],
+          "source_id": "cctv_ai_portfolio"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2021-12-16",
+          "description": "中基协公示登记基金成立日期。",
+          "source_id": "cctv_fund_amac"
+        },
+        {
+          "date": "2022-02-22",
+          "description": "完成中基协备案并进入投资运作阶段。",
+          "source_id": "cctv_fund_manager"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：灵初智能 · 多轮融资 · 2026-03-10 · 本轮参投 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "上海市国资委2023年简报称，基金已在基础算力、云计算、机器视觉、自然语言处理等人工智能产业链环节完成投资布局；这是组合方向披露，不是收益率或完整项目清单。",
+          "source_id": "cctv_ai_portfolio"
+        },
+        {
+          "description": "2026年融资报道将央视融媒体产业投资基金列为灵初智能天使轮投资方之一。报道中的20亿元覆盖公司多轮融资，未披露该基金单家出资额。",
           "source_id": "FISRC-10c7fcf01fad4e2f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "基金管理人官方信息（未核实为基金项目申请渠道）",
+          "value": "海通创意",
+          "url": "https://www.htcc.fund/",
+          "source_id": "cctv_fund_manager"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "cctv_fund_amac",
+          "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/subfund/2202220839105174.html",
+          "source_title": "中国证券投资基金业协会：央视融媒体产业投资基金备案公示",
+          "source_content_hash": "ebaed0b98313d0ccab08a8eeba44d996671315621b42505adeb2f781f1e22d8f",
+          "quote": "产品名称 央视融媒体产业投资基金（有限合伙）；管理人名称 海通创意私募基金管理有限公司。",
+          "quote_hash": "b29b15feedbea864f201ca5288158c4a82c84120e4db460ad614cca2ecf70f4d"
+        },
+        {
+          "source_id": "cctv_fund_manager",
+          "source_url": "https://www.htcc.fund/htcy/gsdt/news/news20220226.shtml",
+          "source_title": "海通创意：央视融媒体产业投资基金备案成功",
+          "source_content_hash": "25ecd5577f394c386bb2366c1e43e32364b0f0e00d691cc9bf8fbf8a99bb4b63",
+          "quote": "基金总规模100亿元，首期规模37.125亿元。",
+          "quote_hash": "e9681b26187c88a84b5a4e0df0ab08eafed9fefc5082f6005e1356f7e112592b"
+        },
+        {
+          "source_id": "cctv_ai_portfolio",
+          "source_url": "https://www.gzw.sh.gov.cn/shgzw_zxzx_xxjb/20230417/bafa4090f7c049f3b9042869d57c9336.html",
+          "source_title": "上海市国资委：央视融媒体产业基金在人工智能领域积极布局",
+          "source_content_hash": "501f7df2d5986136444d9420676129bfc93fe148beaa60f862ffdeb7c14f6b1a",
+          "quote": "基础算力、云计算、机器视觉、自然语言处理等关键节点的投资布局。",
+          "quote_hash": "73a4c71663eaff6480d671dd33146cfd5449cb8cf1f9435e201fdc04a7baa0d3"
+        },
         {
           "source_id": "FISRC-10c7fcf01fad4e2f",
           "source_url": "https://finance.sina.com.cn/cj/2026-03-10/doc-inhqnmhx6407658.shtml",
-          "source_title": "灵初智能已完成20亿融资，获“国家队”资本重磅投资，助力中国具身智能高质量发展 | 华兴交易",
+          "source_title": "灵初智能融资报道：华兴交易",
           "source_content_hash": "20f81c1ca1ce317a8829a288b011283ff55820a5b683df55a4b9078e8f2ce857",
-          "quote": "天使轮由 国开金融 、国中资本、央视融媒体产业投资基金等 国家级“国家队”资本， 某数千亿上市公司旗下战投、 长飞光纤 旗下基金，两大核心产业龙头资本，沃德尔等 知名产业资本，及 元生创投、珠海科技产业集团、钧山投资、燕缘创投、大米资本、沃赋资本、彬复资本等 多家知名基金共同投资。",
-          "quote_hash": "b8fab44b0c0d4b539d3c01fb2e3ba601725d5487a4f3a6e99f4d4916f5cca200"
+          "quote": "天使轮由国开金融、国中资本、央视融媒体产业投资基金等国家级“国家队”资本共同投资。",
+          "quote_hash": "8286ac933e74af5a143d15d14c180b0a6e68eb0d42bcc0c85f30b26311e3ce2e"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "identity_status": "verified"
     },
     "INV-b1bb60a6680155": {
       "profile_type": "organization",
@@ -77801,30 +77962,103 @@
     },
     "INV-1a40ef0294ce1a": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "上汽集团金控 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "summary": "融资报道中的“上汽集团金控”对应上汽金融板块的投资与金融管理平台上汽金控。上汽集团官网将其法定主体列为上海汽车集团金控管理有限公司，称其为上汽集团全资子公司，2016年设立，承担产业金融投资与金融业务管理职能。",
+      "coverage_note": "主体名称、集团关系与历史业绩数据来自上汽集团官网。官网列示的投资管理资产和上市企业数量截至2023年6月末，是当时平台口径，不代表当前资产规模或收益率。银河通用融资披露的是25亿元整轮融资额，不是上汽金控的单笔出资额。",
+      "facts": [
         {
-          "description": "融资来源记录：银河通用 · 轮次未披露 · 2026-03-02 · 本轮参投 · 25亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-adaac360139469bd"
+          "field": "legal_entity",
+          "label": "对应主体",
+          "value": "上海汽车集团金控管理有限公司（融资披露简称“上汽集团金控”）",
+          "source_id": "saic_finance_official"
+        },
+        {
+          "field": "ownership",
+          "label": "股权关系",
+          "value": "上汽集团全资子公司",
+          "source_id": "saic_finance_official"
+        },
+        {
+          "field": "established",
+          "label": "成立时间",
+          "value": "2016年6月6日",
+          "source_id": "saic_finance_official"
+        },
+        {
+          "field": "capital",
+          "label": "注册资本",
+          "value": "官网披露实缴注册资本100.5亿元；该页面未标注统计日期。",
+          "source_id": "saic_finance_official"
+        },
+        {
+          "field": "mandate",
+          "label": "平台职能",
+          "value": "上汽集团产业金融投资与金融业务管理平台；集团战略直投由上汽金控直接运营，并承担一级市场投资管理协同职能。",
+          "source_id": "saic_finance_official"
+        },
+        {
+          "field": "historical_metrics",
+          "label": "历史业绩口径（截至2023年6月末）",
+          "value": "官网当时披露产业金融投资管理资产规模超过570亿元、战略直投管理资产超过150亿元，已有10家企业成功上市；以上均为平台自报历史口径。",
+          "source_id": "saic_finance_official"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2016-06-06",
+          "description": "上海汽车集团金控管理有限公司成立，并与上汽集团金融事业部一体化运作。",
+          "source_id": "saic_finance_official"
+        },
+        {
+          "date": "2021-01",
+          "description": "上汽集团启动战略直投业务，由上汽金控直接运营。",
+          "source_id": "saic_finance_official"
+        },
+        {
+          "date": "2021-05",
+          "description": "上汽金控承担集团一级市场投资管理协同职能，推动战略直投与市场化基金并行。",
+          "source_id": "saic_finance_official"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "2026年3月，报道将上汽集团金控列为银河通用融资的联合投资方之一。报道披露的25亿元为整轮融资总额，未披露该机构的单家出资额。",
+          "source_id": "FISRC-adaac360139469bd"
+        },
+        {
+          "description": "上汽集团官网截至2023年6月末披露，产业金融投资平台已有10家企业成功上市；该数字为历史平台口径，不代表当前组合或已实现收益。",
+          "source_id": "saic_finance_official"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "上汽金融官方介绍（非投资申请渠道）",
+          "value": "上汽集团官网·上汽金融",
+          "url": "https://www.saicmotor.com/m/gsgk/sqjr/index.shtml",
+          "source_id": "saic_finance_official"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "saic_finance_official",
+          "source_url": "https://www.saicmotor.com/m/gsgk/sqjr/index.shtml",
+          "source_title": "上汽集团官网：上汽金融发展历程与成员企业",
+          "source_content_hash": "2b64d44dc523ccbb0c9db0a1db9052ebc937c42a8222e1cad093da9fe26978b4",
+          "quote": "上海汽车集团金控管理有限公司，成立于2016年6月6日，现有实缴注册资本100.5亿元，是上汽集团的全资子公司。",
+          "quote_hash": "ecdb3ebd71966fd1f1700860f4846836069551fb7848dc99b46dc32a5db827be"
+        },
         {
           "source_id": "FISRC-adaac360139469bd",
           "source_url": "https://www.cls.cn/detail/2300238",
           "source_title": "开年最大融资诞生！银河通用再融25亿 国家大基金首投具身智能",
           "source_content_hash": "b2eacae148179fb9ea2302fcd22d73b4b29b0f56ffb1c8400c5764c9a8cdbdcd",
-          "quote": "由国家人工智能产业基金（大基金三期全资基金）、中国石化、中信集团投资控股、中国银行、上汽集团金控、中芯聚源、亦庄国投、未来产业投资、鲲鹏基金、无锡创投、福建产投联合投资",
-          "quote_hash": "96a3aef27d592b0706f6bf7a6b0f44a71d2e784c11c23523af9bf03b4f18a45d"
+          "quote": "上汽集团金控",
+          "quote_hash": "f420f9ef0eafc327586712ab9ab72fd8b68a7f8bd41fe071191f9f1a6b7a0e24"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "identity_status": "verified"
     },
     "INV-343893031efc61": {
       "profile_type": "unverified",
@@ -77855,30 +78089,137 @@
     },
     "INV-bc3bee921910a6": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "无锡创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "融资数据库使用的简称“无锡创投”对应无锡创业投资集团有限公司；该公司已于2026年5月9日正式更名为无锡市高科技投资集团有限公司，官方公告称公司主体资格及法律地位保持不变。集团隶属无锡产业发展集团，2000年设立，采用母基金与直投并行方式支持早期、硬科技项目。",
+      "coverage_note": "历史融资披露使用旧称“无锡创投”。2026年更名、主体连续性和当前联系信息依据公司公告与官网。上市项目只列官网示例，不代表完整组合或已实现投资收益；银河通用25亿元是本轮融资总额，不是该集团的单家出资额。",
+      "facts": [
+        {
+          "field": "current_legal_name",
+          "label": "当前名称（自2026年5月9日起）",
+          "value": "无锡市高科技投资集团有限公司；品牌简称“锡高投”",
+          "source_id": "wuxi_name_change_official"
+        },
+        {
+          "field": "former_name",
+          "label": "融资披露名称与原公司名",
+          "value": "融资披露简称“无锡创投”；更名前公司全称为无锡创业投资集团有限公司。",
+          "source_id": "wuxi_name_change_official"
+        },
+        {
+          "field": "ownership",
+          "label": "股权关系",
+          "value": "隶属于无锡产业发展集团有限公司；无锡市政协官网2024年资料称其为无锡产业集团一级子公司。",
+          "source_id": "wuxi_cppcc"
+        },
+        {
+          "field": "established",
+          "label": "成立时间",
+          "value": "2000年8月",
+          "source_id": "wuxi_current_site"
+        },
+        {
+          "field": "capital",
+          "label": "注册资本",
+          "value": "人民币12.521008亿元（无锡市政协官网2024年披露为125210.08万元；公司官网按12.52亿元取整）。",
+          "source_id": "wuxi_cppcc"
+        },
+        {
+          "field": "investment_strategy",
+          "label": "投资方式与方向",
+          "value": "坚持投早、投小、投长期、投硬科技，以母基金和直接投资双轮驱动；公司公告称现阶段进一步聚焦集成电路、人工智能、先进制造和高端装备。",
+          "source_id": "wuxi_name_change_official"
+        },
+        {
+          "field": "portfolio_examples",
+          "label": "官网列示上市项目示例",
+          "value": [
+            "德方纳米（300769）",
+            "捷佳伟创（300724）",
+            "海兰信（300065）"
+          ],
+          "source_id": "wuxi_current_site"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2000-08",
+          "description": "前身无锡创业投资有限责任公司成立，是无锡市较早设立的市级股权与创业投资机构之一。",
+          "source_id": "wuxi_cppcc"
+        },
+        {
+          "date": "2026-05-09",
+          "description": "公司名称由无锡创业投资集团有限公司变更为无锡市高科技投资集团有限公司；公司公告称本次仅更名和更新品牌标识，主体资格及法律地位不变。",
+          "source_id": "wuxi_name_change_official"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：银河通用 · 轮次未披露 · 2026-03-02 · 本轮参投 · 25亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "集团官网列示德方纳米、捷佳伟创、海兰信等上市项目示例；这是选择性公开组合展示，不代表完整投资组合或收益数据。",
+          "source_id": "wuxi_current_site"
+        },
+        {
+          "description": "2026年3月，融资报道将无锡创投列为银河通用联合投资方之一。25亿元为报道披露的整轮融资额，未披露该集团的单家出资额。",
           "source_id": "FISRC-adaac360139469bd"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "无锡市高科技投资集团有限公司官网",
+          "value": "无锡市高科技投资集团有限公司",
+          "url": "https://www.wxvcg.com/",
+          "source_id": "wuxi_current_site"
+        },
+        {
+          "kind": "email",
+          "label": "集团官网公开邮箱",
+          "value": "bying@wxvcg.com",
+          "source_id": "wuxi_current_site"
+        },
+        {
+          "kind": "contact_form",
+          "label": "集团官网在线留言",
+          "value": "在线留言",
+          "url": "https://www.wxvcg.com/",
+          "source_id": "wuxi_current_site"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "wuxi_current_site",
+          "source_url": "https://www.wxvcg.com/",
+          "source_title": "无锡市高科技投资集团有限公司官网：集团简介与上市项目",
+          "source_content_hash": "0b235d3dba58632d28fc7d7085327d81eef04511f571f2b667ce09b657b05d1e",
+          "quote": "成立于2000年8月，是无锡市委市政府部署下最早设立的无锡市级股权和创业投资机构之一。注册资本12.52亿元。",
+          "quote_hash": "70313395ca16156488abfb348bf9d12f31ab54345d560e3708e5e94800e4fb91"
+        },
+        {
+          "source_id": "wuxi_name_change_official",
+          "source_url": "https://www.wxvcg.com/news.asp?nlt=233&none=18",
+          "source_title": "无锡市高科技投资集团公告：公司名称及品牌标识变更",
+          "source_content_hash": "ee797562a7510b5784624713c6bf089fbcd4840200ee12974b19a4c9d1fdda89",
+          "quote": "自2026年5月9日起，公司名称由“无锡创业投资集团有限公司”正式变更为“无锡市高科技投资集团有限公司”。",
+          "quote_hash": "5a65367834466018a0a79723dcca1d7677d56393c873d99a339b7dd061a560d0"
+        },
+        {
+          "source_id": "wuxi_cppcc",
+          "source_url": "https://zx.wuxi.gov.cn/doc/2024/08/02/4365318.shtml",
+          "source_title": "政协无锡市委员会：走访无锡创业投资集团",
+          "source_content_hash": "aad8d338ac7f4d73346f1943ad2c42b44bbd9ddba6a788508bb4162ebb3d6893",
+          "quote": "注册资本125210.08万元；以股权投资方式支持科技创新创业。",
+          "quote_hash": "b881ab1a64f9813c57aea11a453cd4e175c098ff789db779ae4d0ea4dd4815e2"
+        },
         {
           "source_id": "FISRC-adaac360139469bd",
           "source_url": "https://www.cls.cn/detail/2300238",
           "source_title": "开年最大融资诞生！银河通用再融25亿 国家大基金首投具身智能",
           "source_content_hash": "b2eacae148179fb9ea2302fcd22d73b4b29b0f56ffb1c8400c5764c9a8cdbdcd",
-          "quote": "由国家人工智能产业基金（大基金三期全资基金）、中国石化、中信集团投资控股、中国银行、上汽集团金控、中芯聚源、亦庄国投、未来产业投资、鲲鹏基金、无锡创投、福建产投联合投资",
-          "quote_hash": "96a3aef27d592b0706f6bf7a6b0f44a71d2e784c11c23523af9bf03b4f18a45d"
+          "quote": "无锡创投",
+          "quote_hash": "293a5d780e4a4f7d2f4ec37354bcf2378f0815346edb90bb527680559cacfa8d"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "identity_status": "verified"
     },
     "INV-7a05c8d89227c7": {
       "profile_type": "unverified",
@@ -77936,30 +78277,147 @@
     },
     "INV-1f59be1145d24d": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "中信集团投资控股 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "中信投资控股有限公司是中信集团一级全资子公司，2006年注册成立，2021年成为集团战略投资平台，采用“基金+直投”方式布局战略性新兴产业。融资披露中的“中信集团投资控股”与这一平台名称相符；基金投资由其全资子公司中信私募基金管理有限公司运营，子公司的管理规模不等于中信投资控股的直投资产或单笔出资额。",
+      "coverage_note": "主体关系、投资方向、历程与现任管理人员依据中信投资控股官网；联系方式来自中信集团公开总机，并非单笔投资申请渠道。官网披露的管理规模属于基金投资运营子公司，不能转写成该集团投资控股主体的资产规模。融资记录披露的是银河通用一轮总额，未披露中信集团投资控股的单家出资额。",
+      "facts": [
+        {
+          "field": "legal_entity",
+          "label": "主体身份",
+          "value": "中信投资控股有限公司；中信集团一级全资子公司",
+          "source_id": "citic_profile_official"
+        },
+        {
+          "field": "investment_role",
+          "label": "集团定位",
+          "value": "中信集团战略投资平台；采用“基金+直投”双轮驱动",
+          "source_id": "citic_profile_official"
+        },
+        {
+          "field": "sectors",
+          "label": "官网列示投资领域",
+          "value": [
+            "新一代信息技术",
+            "人工智能",
+            "新能源",
+            "新材料",
+            "低空经济"
+          ],
+          "source_id": "citic_profile_official"
+        },
+        {
+          "field": "public_leadership",
+          "label": "官网公开领导名单",
+          "value": "梁惠江（党委书记、董事长）；宋军（党委副书记、总经理）。",
+          "source_id": "citic_leadership_official"
+        },
+        {
+          "field": "fund_platform",
+          "label": "基金投资运营主体",
+          "value": "全资子公司中信私募基金管理有限公司；官网披露其截至2025年底管理资金规模近300亿元，该数字属于子公司口径。",
+          "source_id": "citic_fund_platform"
+        },
+        {
+          "field": "historical_background",
+          "label": "历史沿革",
+          "value": "官网记载公司于2006年注册成立，承接中信兴业投资有限责任公司的相关资产与负债。",
+          "source_id": "citic_profile_official"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2006-06",
+          "description": "中信投资控股有限公司注册成立。",
+          "source_id": "citic_profile_official"
+        },
+        {
+          "date": "2021-03",
+          "description": "成为中信集团战略投资平台。",
+          "source_id": "citic_profile_official"
+        },
+        {
+          "date": "2022-08",
+          "description": "设立全资子公司中信私募基金管理有限公司，布局私募股权基金投资。",
+          "source_id": "citic_fund_platform"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：银河通用 · 轮次未披露 · 2026-03-02 · 本轮参投 · 25亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "2026年3月，融资报道将“中信集团投资控股”列为银河通用本轮联合投资方之一。报道披露的25亿元是该轮融资总额，未披露本机构单家出资额；该记录也不能据此归到中信私募子公司。",
           "source_id": "FISRC-adaac360139469bd"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "label": "中信集团公开总机（非投资申请专线）",
+          "value": "+86-10-64661710",
+          "source_id": "citic_contact_public"
+        },
+        {
+          "kind": "email",
+          "label": "中信集团公开联系邮箱（非投资申请邮箱）",
+          "value": "g-contact@citic.com",
+          "source_id": "citic_contact_public"
+        },
+        {
+          "kind": "address",
+          "label": "中信集团公开地址",
+          "value": "北京市朝阳区光华路中信大厦",
+          "source_id": "citic_contact_public"
+        },
+        {
+          "kind": "website",
+          "label": "中信投资控股官网",
+          "value": "中信投资控股",
+          "url": "https://www.invest.citic/",
+          "source_id": "citic_profile_official"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "citic_profile_official",
+          "source_url": "https://www.invest.citic/p/guanyuwomen.html",
+          "source_title": "中信投资控股官网：公司介绍与发展历程",
+          "source_content_hash": "088ceae06c2ce18090c597e974eb86be1189a40d1609b581d34e2c882ef4f2f7",
+          "quote": "中信投资控股是中信集团一级全资子公司。",
+          "quote_hash": "1227ea77d993c276df959b61eec676df2d94ae98a1c4a701e816e1163d60a7dd"
+        },
+        {
+          "source_id": "citic_leadership_official",
+          "source_url": "https://www.invest.citic/p/guanyuwomen.html",
+          "source_title": "中信投资控股官网：公司领导",
+          "source_content_hash": "2803124ab32d35af2616eea427a5e637107b93af2392094b5bb750031836af95",
+          "quote": "梁惠江 党委书记、董事长；宋军 党委副书记、总经理。",
+          "quote_hash": "12fc4d6389075ccda10ca5ee5d072e34f0041cfe6b25b301825efe5a69138fb6"
+        },
+        {
+          "source_id": "citic_fund_platform",
+          "source_url": "https://www.invest.citic/",
+          "source_title": "中信投资控股官网：基金投资平台",
+          "source_content_hash": "30827444a1efb2f90100a779ddd94add2109cac2700a9f268c60991d1b8ac88e",
+          "quote": "截至2025年底，管理资金规模近300亿元。",
+          "quote_hash": "c6e02a5dab05273cdc25ae9bfda5a906ab024dbee22defb376bb422b2a0d3614"
+        },
+        {
+          "source_id": "citic_contact_public",
+          "source_url": "https://www.citic.com/html/",
+          "source_title": "中信集团官网：公开联系信息",
+          "source_content_hash": "86bff9fbbedcf28564555fc66d79cb02ea1f634fd0f2710af8447036da6c1e28",
+          "quote": "电话:86-10-64661710；邮箱:g-contact@citic.com",
+          "quote_hash": "58a2a4ecb3c06765fe8d93dfd33ee39bfdfe8b69b05dcba0a73d44f74d4ce0f6"
+        },
         {
           "source_id": "FISRC-adaac360139469bd",
           "source_url": "https://www.cls.cn/detail/2300238",
           "source_title": "开年最大融资诞生！银河通用再融25亿 国家大基金首投具身智能",
           "source_content_hash": "b2eacae148179fb9ea2302fcd22d73b4b29b0f56ffb1c8400c5764c9a8cdbdcd",
-          "quote": "由国家人工智能产业基金（大基金三期全资基金）、中国石化、中信集团投资控股、中国银行、上汽集团金控、中芯聚源、亦庄国投、未来产业投资、鲲鹏基金、无锡创投、福建产投联合投资",
-          "quote_hash": "96a3aef27d592b0706f6bf7a6b0f44a71d2e784c11c23523af9bf03b4f18a45d"
+          "quote": "中信集团投资控股",
+          "quote_hash": "bfbdb265e2c7c7f743ec404765188e7e2e7924f04b1aa364193ac5f20872e128"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "identity_status": "verified"
     },
     "INV-b6fa62a0812000": {
       "profile_type": "organization",
@@ -98610,30 +99068,123 @@
     },
     "INV-50471ced0100de": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "社保基金中关村自主创新投资基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "summary": "社保基金中关村自主创新专项基金是全国社会保障基金理事会与北京市合作设立的科技创新专项基金，融资数据库的名称省略了“专项”二字。官方资料披露基金于2023年启动、首期规模50亿元，由君联资本按市场化、专业化方式管理，期限超过10年，重点支持北京科技创新及前沿产业。",
+      "coverage_note": "基金名称、规模、管理人、期限和投资领域由全国社保基金会与君联资本母公司公开资料交叉核验。钛媒体2024年9月报道该基金与启明创投、洪泰基金联合领投无问芯穹近5亿元A轮，但该金额是融资总额而非该基金单独出资额。融资索引中同一来源关联的2026-05-07和7亿元与原文日期、金额不一致；本档案以原始报道日期和金额口径为准，不采用索引中的该笔日期或金额。",
+      "facts": [
         {
-          "description": "融资来源记录：无问芯穹 · 基础设施融资 · 2026-05-07 · A轮领投 · 7 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "field": "official_name",
+          "label": "官方名称",
+          "value": "社保基金中关村自主创新专项基金（融资库简写为“社保基金中关村自主创新投资基金”）",
+          "source_id": "ssf_2023_fund"
+        },
+        {
+          "field": "established",
+          "label": "启动时间",
+          "value": "2023年7月19日举行启动会；基金正式成立。",
+          "source_id": "ssf_2023_fund"
+        },
+        {
+          "field": "scale",
+          "label": "首期规模",
+          "value": "人民币50亿元",
+          "source_id": "ssf_2023_fund"
+        },
+        {
+          "field": "manager",
+          "label": "管理人",
+          "value": "君联资本；按市场化、专业化方式管理。",
+          "source_id": "legend_2023_fund"
+        },
+        {
+          "field": "term",
+          "label": "基金期限",
+          "value": "超过10年",
+          "source_id": "legend_2023_fund"
+        },
+        {
+          "field": "investment_focus",
+          "label": "公开投资领域",
+          "value": [
+            "数字经济",
+            "软件与半导体",
+            "先进制造",
+            "医疗健康",
+            "互联网3.0",
+            "绿色能源与“双碳”",
+            "前沿新材料"
+          ],
+          "source_id": "legend_2023_fund"
+        },
+        {
+          "field": "geographic_focus",
+          "label": "区域与使命",
+          "value": "立足北京，服务科技创新和中关村科创企业发展。",
+          "source_id": "ssf_2023_fund"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2023-07-19",
+          "description": "社保基金会与北京市合作设立的专项基金举行启动会并正式成立。",
+          "source_id": "ssf_2023_fund"
+        },
+        {
+          "date": "2024-09-03",
+          "description": "钛媒体刊发无问芯穹A轮融资报道，列该专项基金为联合领投方之一。",
           "source_id": "FISRC-67d072b1aca37b5d"
         }
       ],
-      "contacts": [],
+      "track_record": [
+        {
+          "description": "钛媒体2024年9月3日报道，基金与启明创投、洪泰基金联合领投无问芯穹近5亿元A轮；报道的近5亿元是整轮融资总额，基金单笔出资额未披露。该报道与融资索引关联记录所列的2026年日期及7亿元金额不一致。",
+          "source_id": "FISRC-67d072b1aca37b5d"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "全国社会保障基金会基金设立公告（非项目申请渠道）",
+          "value": "全国社会保障基金理事会",
+          "url": "https://www.ssf.gov.cn/portal/hndt/hndt/webinfo/2023/07/1691512254673870.htm",
+          "source_id": "ssf_2023_fund"
+        },
+        {
+          "kind": "website",
+          "label": "基金管理人君联资本官网",
+          "value": "君联资本 / Legend Capital",
+          "url": "https://www.legendholdings.com.cn/",
+          "source_id": "legend_2023_fund"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "ssf_2023_fund",
+          "source_url": "https://www.ssf.gov.cn/portal/hndt/hndt/webinfo/2023/07/1691512254673870.htm",
+          "source_title": "全国社会保障基金理事会：社保基金中关村自主创新专项基金正式启动",
+          "source_content_hash": "ba177c98508a6dc59f5b8dd2914669d57f85809def671ee7c4a6bbe60141d8e6",
+          "quote": "基金首期规模50亿元，由君联资本按照市场化、专业化方式开展投资。",
+          "quote_hash": "77a44cddae7e566ae20e4cd2cd2d65c580073857b5eb92e5fdf3c2ea038d0b10"
+        },
+        {
+          "source_id": "legend_2023_fund",
+          "source_url": "https://www.legendholdings.com.cn/News/detail.aspx?contentid=2203&nodeid=1124&page=ContentPage",
+          "source_title": "联想控股：社保基金中关村自主创新专项基金成立，君联任管理人",
+          "source_content_hash": "460785862f80721123de7e6c24efb19b356b097118e0400f6acf5131dbeab645",
+          "quote": "专项基金期限超过10年，聚焦数字经济、软件和半导体、先进制造、医疗健康等重点领域。",
+          "quote_hash": "0e8a210888bf9d91e7b7f6b4ddd7352de1dba83f5894af5dedf39d2942e0112f"
+        },
         {
           "source_id": "FISRC-67d072b1aca37b5d",
           "source_url": "https://www.tmtpost.com/7235681.html",
           "source_title": "Infinigence AI Raises US$ 70.2 Million in Series A Funding Round-钛媒体官方网站",
           "source_content_hash": "56a87e89ab6a1ab2",
-          "quote": "The funding round was led by Social Security Fund Zhongguancun Independent Innovation Investment Fund, Qiming Venture Partners, and Hongtai Aplus",
-          "quote_hash": "1c3b3a91fa81d51a25c78aa620aca81e93e67c3c2d74dadadc01c13fea0d1024"
+          "quote": "The funding round was led by Social Security Fund Zhongguancun Independent Innovation Investment Fund, Qiming Venture Partners, and Hongtai Aplus.",
+          "quote_hash": "f0b7624e9b6a94a2b13bac56dfd2f2801377955cf87b4e046f1a0caa503e17ed"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "identity_status": "verified"
     },
     "INV-c4be8ad1593827": {
       "profile_type": "unverified",
