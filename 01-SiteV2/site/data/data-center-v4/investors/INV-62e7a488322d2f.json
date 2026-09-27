@@ -138,20 +138,94 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "T. Rowe Price Investment Management 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "T. Rowe Price Investment Management, Inc. 是 T. Rowe Price 的投资顾问子公司。SEC 文件确认该公司为 T. Rowe Price 子公司并提供投资管理服务；母公司自 1937 年起开展全球主动投资管理。Enveda 官方公告的精确表述是“由 T. Rowe Price Investment Management 提供咨询的账户”参与其 E 轮，因此不能据此认定管理人以自有资产出资。",
+      "coverage_note": "机构主体关系和业务边界依据 T. Rowe Price 官网及 SEC 文件。Enveda 公告说的是由该公司提供咨询的账户参与，不是明确说 T. Rowe Price Investment Management 以自有资本直接投资；数据库原记录与公告表述保持区分。未披露单一账户的出资额。",
+      "facts": [
+        {
+          "field": "legal_entity",
+          "label": "主体关系",
+          "value": "T. Rowe Price Investment Management, Inc. 是 T. Rowe Price 的投资顾问实体之一，负责 T. Rowe Price 策略和共同基金的投资顾问工作。",
+          "source_id": "trowe_entity"
+        },
+        {
+          "field": "business_background",
+          "label": "母公司历史与业务",
+          "value": "T. Rowe Price 自 1937 年起开展投资管理；公司官网称其向个人与机构客户提供多资产类别的投资管理服务。",
+          "source_id": "trowe_about"
+        },
+        {
+          "field": "investment_attribution",
+          "label": "Enveda 融资中的归因口径",
+          "value": "Enveda 称参与者为由 T. Rowe Price Investment Management 提供咨询的账户；公告没有说管理人以自有资本直接出资。",
+          "source_id": "trowe_series_e"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1937",
+          "description": "T. Rowe Price 母公司成立；该日期不代表 Investment Management 子公司成立时间。",
+          "source_id": "trowe_about"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Enveda · E轮 · 2026-09-23 · 本轮参投 · $311M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "2026 年 9 月 23 日，Enveda 官方公告称由 T. Rowe Price Investment Management 提供咨询的账户参与 3.11 亿美元 E 轮；公告未披露账户身份或单一账户出资额。",
+          "source_id": "trowe_series_e"
+        },
+        {
+          "description": "融资数据库记录亦将其关联至 Enveda 2026 年 9 月 23 日 E 轮（accounts advised）。原报道未披露其单笔出资金额。",
           "source_id": "FISRC-852df50f4128c47b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "T. Rowe Price 官网",
+          "value": "T. Rowe Price",
+          "url": "https://www.troweprice.com/",
+          "source_id": "trowe_about"
+        },
+        {
+          "kind": "address",
+          "label": "SEC 文件列示的 T. Rowe Price Investment Management 办公地址",
+          "value": "1307 Point Street, Baltimore, Maryland 21231, United States",
+          "source_id": "trowe_sec_subsidiary"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "trowe_about",
+          "source_url": "https://www.troweprice.com/en/us/institutional/about-us",
+          "source_title": "T. Rowe Price 官网：公司历史与投资管理业务",
+          "source_content_hash": "8fd1a5bd9f24b5f179e99e023f140435593b3479b0a7d324478c9763644f981d",
+          "quote": "Since 1937, T. Rowe Price has been there…guiding clients, seeking to stay ahead of what’s next, and staying true to our purpose…to identify and actively invest in opportunities to help people thrive in an evolving world.",
+          "quote_hash": "60cd21c4d08f4e1e8aa4ee93f5b8861891ad51555fc0009156c3b751cab4502d"
+        },
+        {
+          "source_id": "trowe_entity",
+          "source_url": "https://www.troweprice.com/en/us/institutional/about-us",
+          "source_title": "T. Rowe Price 官网：投资顾问实体说明",
+          "source_content_hash": "8fd1a5bd9f24b5f179e99e023f140435593b3479b0a7d324478c9763644f981d",
+          "quote": "T. Rowe Price Associates, Inc. and T. Rowe Price Investment Management, Inc., investment advisers of T. Rowe Price strategies and mutual funds.",
+          "quote_hash": "bbe5d86462140b35da21838ef5bca572ccab3b60a882013df06070a8a413b998"
+        },
+        {
+          "source_id": "trowe_sec_subsidiary",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1012968/000199937126004114/ief-485bpos_030126.htm",
+          "source_title": "SEC 文件：T. Rowe Price Investment Management 子公司及办公室",
+          "source_content_hash": "032e22bf159165a0fb4b8a2dbaa44db91e43f5b5b5f72f3452354e27d6e6e3d8",
+          "quote": "Price Investment Management is a subsidiary of T. Rowe Price and its address is 1307 Point Street, Baltimore, Maryland 21231.",
+          "quote_hash": "667ccd314dbfc2df27818ce54eceb781b0262dc37f2f325ba9125c6493edb278"
+        },
+        {
+          "source_id": "trowe_series_e",
+          "source_url": "https://enveda.com/news/enveda-raises-311-million/",
+          "source_title": "Enveda 官方公告：3.11 亿美元 E 轮融资",
+          "source_content_hash": "ec51f348211e2c008689e4152af53b1fd946099dde8b1719a88704418696826c",
+          "quote": "accounts advised by T. Rowe Price Investment Management",
+          "quote_hash": "1b0e5f53e642e47fa1d138386a8e1a184235e04eae715bf93a42c0e915b99d65"
+        },
         {
           "source_id": "FISRC-852df50f4128c47b",
           "source_url": "https://www.bioxconomy.com/investment/enveda-s-311m-series-e-to-found-ai-driven-drug-discovery-platform",
@@ -161,7 +235,8 @@
           "quote_hash": "3cbfe761b6de0bfc87604c270fdc50a1ccdfe84427307a732532acbdb8ace223"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "identity_status": "verified"
     }
   }
 }
