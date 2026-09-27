@@ -139,19 +139,154 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "All In Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资策略、创始人经历、SEBI 注册信息和公开联络方式来自 All In Capital 官网。官网主页披露的 USD 250K–600K 常见单笔区间与申请页 FAQ 的 USD 250K–500K 口径不一致；本档案并列保留并提示需向机构核对。Mowito 的 300 万美元为融资总额，不是 All In Capital 单独出资额。",
+      "summary": "All In Capital 是一家投资印度初创公司的早期基金和创始人社群，由 Kushal Bhagia 与 Aditya Singh 创立。官网称其通常在预种子和种子阶段出手、经常担任首笔机构支票，并通过创始人网络和公司建设支持组合企业。官网主页与申请页对常见投资金额的披露不同，因此金额应以机构最新确认口径为准。",
+      "facts": [
+        {
+          "field": "investment_geography",
+          "label": "投资地域",
+          "value": "印度初创公司。",
+          "source_id": "allin_strategy"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "预种子轮与种子轮；官网称通常领投，并经常作为最早承诺出资的一方。",
+          "source_id": "allin_strategy"
+        },
+        {
+          "field": "check_size_homepage",
+          "label": "主页披露的常见单笔投资额",
+          "value": "USD 250K–600K；为官网主页自述。",
+          "source_id": "allin_home_check"
+        },
+        {
+          "field": "check_size_application_page",
+          "label": "申请页 FAQ 披露的常见首轮投资额",
+          "value": "USD 250K–500K；与官网主页的 USD 250K–600K 口径不同，需向机构确认适用范围和最新口径。",
+          "source_id": "allin_apply_check"
+        },
+        {
+          "field": "founder_community",
+          "label": "创始人社群与支持",
+          "value": "官网称已与 150 多位创始人合作，并提供创始人社群、投资人引荐和公司建设支持。",
+          "source_id": "allin_founders"
+        },
+        {
+          "field": "founder_background",
+          "label": "Kushal Bhagia 的公开履历",
+          "value": "创始合伙人；官网称其参与科技初创公司建设或投资始于 2010 年，曾创立 Nayi Disha Studios、任 upGrad 首位业务拓展员工，并创建 First Cheque。",
+          "source_id": "allin_kushal_bio"
+        },
+        {
+          "field": "founder_background",
+          "label": "Aditya Singh 的公开履历",
+          "value": "创始合伙人；官网称其于 2012 年进入创业生态，参与创建 BookMyForex（后被 MakeMyTrip 收购），曾在 Amazon 从事初创业务拓展，并任 Stride Ventures 创始 principal。",
+          "source_id": "allin_aditya_bio"
+        },
+        {
+          "field": "fund_registration",
+          "label": "基金注册信息",
+          "value": "官网披露 All In Capital Fund II 于 2024-05-06 起在印度证券交易委员会注册为 Category II Alternative Investment Fund；Founder Capital Advisors LLP 为投资管理人，KRB Ventures LLP 为发起人。",
+          "source_id": "allin_registration"
+        }
+      ],
       "milestones": [],
+      "experience_summary": "两位创始合伙人的官网简介显示其在初创公司建设、业务拓展、天使投资和创投债务领域具有从业经历。Kushal Bhagia 与 Aditya Singh 的职业信息和机构成果均按 All In Capital 自述呈现，未推断个人投资回报。",
       "track_record": [
         {
-          "description": "融资来源记录：Mowito · 预种子轮 · 2026-07-07 · 本轮参投 · $3M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资记录：Mowito · 预种子轮 · 2026-07-07 · 参投；公开披露本轮为 300 万美元，未披露 All In Capital 单独出资额。此为本库收录案例，不代表完整投资组合。",
           "source_id": "FISRC-5667d54cc3421916"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "All In Capital",
+          "url": "https://www.allincapital.vc/",
+          "source_id": "allin_strategy"
+        },
+        {
+          "kind": "application",
+          "label": "创始人项目申请入口",
+          "value": "All In Capital application form",
+          "url": "https://www.allincapital.vc/apply_now",
+          "source_id": "allin_apply"
+        },
+        {
+          "kind": "email",
+          "label": "创始合伙人公开联系邮箱",
+          "value": "kb@allincapital.vc",
+          "url": "https://www.allincapital.vc/",
+          "source_id": "allin_kushal_contact"
+        },
+        {
+          "kind": "email",
+          "label": "创始合伙人公开联系邮箱",
+          "value": "as@allincapital.vc",
+          "url": "https://www.allincapital.vc/",
+          "source_id": "allin_aditya_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "allin_strategy",
+          "source_url": "https://www.allincapital.vc/",
+          "source_title": "All In Capital | Going all in on founders who go all in",
+          "source_content_hash": "b80c0fc24061b6ba058d123e93508344e4f98d14af67164cc4ce6f514d5ae9ef",
+          "quote": "We invest USD 250K to 600K and lead pre-seed/seed rounds in Indian startups.",
+          "quote_hash": "1db4f6095857cc8c370ed3276bf69d270cdd9f269e491cb347476d57f09df6d1"
+        },
+        {
+          "source_id": "allin_home_check",
+          "source_url": "https://www.allincapital.vc/",
+          "source_title": "All In Capital | Going all in on founders who go all in",
+          "source_content_hash": "b80c0fc24061b6ba058d123e93508344e4f98d14af67164cc4ce6f514d5ae9ef",
+          "quote": "We invest USD 250K to 600K and lead pre-seed/seed rounds in Indian startups.",
+          "quote_hash": "1db4f6095857cc8c370ed3276bf69d270cdd9f269e491cb347476d57f09df6d1"
+        },
+        {
+          "source_id": "allin_founders",
+          "source_url": "https://www.allincapital.vc/",
+          "source_title": "All In Capital | Going all in on founders who go all in",
+          "source_content_hash": "b80c0fc24061b6ba058d123e93508344e4f98d14af67164cc4ce6f514d5ae9ef",
+          "quote": "Founded by Kushal Bhagia & Aditya Singh, we've partnered with 150+ founders so far.",
+          "quote_hash": "81a049e7734901d7be1aad91f61800f1dbc59468decca26dcdbe271474e3f2fd"
+        },
+        {
+          "source_id": "allin_apply",
+          "source_url": "https://www.allincapital.vc/apply_now",
+          "source_title": "All In Capital | Apply Now",
+          "source_content_hash": "4cb5328746b129cb8a063658b121032702f1a5f1e8b03e66c06c410c9a636ca0",
+          "quote": "Applying via our Application Form",
+          "quote_hash": "13373b7851f7f9a95db109691cff5e246529a449e822e2df853be2e1af0a8717"
+        },
+        {
+          "source_id": "allin_apply_check",
+          "source_url": "https://www.allincapital.vc/apply_now",
+          "source_title": "All In Capital | Apply Now",
+          "source_content_hash": "4cb5328746b129cb8a063658b121032702f1a5f1e8b03e66c06c410c9a636ca0",
+          "quote": "We typically invest $250 to $500K in your first round.",
+          "quote_hash": "2df55e0d6fa6e543ad3d8eb8a738cc255c34eef98c6fd29914b852d2cc3cb7ea"
+        },
+        {
+          "source_id": "allin_kushal_contact",
+          "source_url": "https://www.allincapital.vc/",
+          "source_title": "All In Capital | Going all in on founders who go all in",
+          "source_content_hash": "b80c0fc24061b6ba058d123e93508344e4f98d14af67164cc4ce6f514d5ae9ef",
+          "quote": "You can reach him on kb@allincapital.vc!",
+          "quote_hash": "b6c715a67054cae312b0642169094f18602023b891ef07a932431e4e47761225"
+        },
+        {
+          "source_id": "allin_aditya_contact",
+          "source_url": "https://www.allincapital.vc/",
+          "source_title": "All In Capital | Going all in on founders who go all in",
+          "source_content_hash": "b80c0fc24061b6ba058d123e93508344e4f98d14af67164cc4ce6f514d5ae9ef",
+          "quote": "You can reach him on as@allincapital.vc!",
+          "quote_hash": "1f96beeeb7e3010785fba4eb5359f8fe69e26872fc7e13e3db0fc9ee2b3ba8ad"
+        },
         {
           "source_id": "FISRC-5667d54cc3421916",
           "source_url": "https://versionone.vc/announcing-our-investment-in-mowito-physical-ai-for-robot-arms-in-manufacturing/",
@@ -159,9 +294,33 @@
           "source_content_hash": "66a29d7fc8fabd22",
           "quote": "with participation from All In Capital, Unisol, and iSeed",
           "quote_hash": "f6222b2558dc4dc10922a0085dfea19336a0031f805ccf41ce0fd09e8a6f4e7e"
+        },
+        {
+          "source_id": "allin_kushal_bio",
+          "source_url": "https://www.allincapital.vc/",
+          "source_title": "All In Capital | Going all in on founders who go all in",
+          "source_content_hash": "b80c0fc24061b6ba058d123e93508344e4f98d14af67164cc4ce6f514d5ae9ef",
+          "quote": "working with tech startups - either as a builder or as an investor since 2010",
+          "quote_hash": "b03459e9d88d10dee350da99c12d7936cae5eb9d3de67b2683317723fdfc38fc"
+        },
+        {
+          "source_id": "allin_aditya_bio",
+          "source_url": "https://www.allincapital.vc/",
+          "source_title": "All In Capital | Going all in on founders who go all in",
+          "source_content_hash": "b80c0fc24061b6ba058d123e93508344e4f98d14af67164cc4ce6f514d5ae9ef",
+          "quote": "He started his journey in the startup ecosystem in 2012 as an entrepreneur.",
+          "quote_hash": "e17295f0ede3feabd1ec6840568e9dacdb97fbff259a1c437ea4fd2361f81ea9"
+        },
+        {
+          "source_id": "allin_registration",
+          "source_url": "https://www.allincapital.vc/",
+          "source_title": "All In Capital | Going all in on founders who go all in",
+          "source_content_hash": "b80c0fc24061b6ba058d123e93508344e4f98d14af67164cc4ce6f514d5ae9ef",
+          "quote": "registered with SEBI as a Category II Alternative Investment Fund with effect from 6th May 2024",
+          "quote_hash": "63d9d0d993830f2e0d1e5de7cb5391d131d9a3e034dc54dca9c58e27a351e131"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

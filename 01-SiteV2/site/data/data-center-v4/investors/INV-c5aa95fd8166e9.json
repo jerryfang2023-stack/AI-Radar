@@ -139,19 +139,122 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Angel Invest 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构活动量、单笔金额、组合表现和退出数据均为 Angel Invest 官网自述；官网没有在这些页面统一标注统计时点或计算口径。INXM 的 €5.7m 是融资总额，不代表 Angel Invest 单家出资额。",
+      "summary": "Angel Invest 是一家总部信息与公开团队集中于欧洲的早期投资机构。官网自称是欧洲最活跃的超级天使基金之一，称每年投资约 75 家初创企业，典型支票约 €125k，并在投资后辅导创始团队。其公开关注方向包括 AI、金融科技和深科技，也会投资其他领域的团队。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "天使轮、预种子轮和种子轮；官网称可在公司成立前投资。",
+          "source_id": "angel_overview"
+        },
+        {
+          "field": "typical_check_size",
+          "label": "官网自述的典型支票",
+          "value": "约 EUR 125K。",
+          "source_id": "angel_overview"
+        },
+        {
+          "field": "investment_volume",
+          "label": "官网自述的投资活动量",
+          "value": "约每年投资 75 家初创企业。",
+          "source_id": "angel_overview"
+        },
+        {
+          "field": "sectors",
+          "label": "公开关注领域",
+          "value": [
+            "人工智能",
+            "金融科技",
+            "深科技"
+          ],
+          "source_id": "angel_overview"
+        },
+        {
+          "field": "founder_support",
+          "label": "创始人支持方式",
+          "value": "官网称投资后至少辅导团队一年，提供股权及债务融资网络和后续投资人连接。",
+          "source_id": "angel_overview"
+        },
+        {
+          "field": "leadership",
+          "label": "官网列示的团队成员",
+          "value": [
+            "Jens Lapinski — Founding Partner",
+            "Oliver Clasen — Founding Partner",
+            "Nazanin Daneshvar — Partner",
+            "Jag Singh — Partner",
+            "John von Berenberg-Consbruch — Partner；官网另列多位 Venture Partners 与顾问。"
+          ],
+          "source_id": "angel_team"
+        }
+      ],
       "milestones": [],
+      "experience_summary": "Angel Invest 官网称其每位合伙人此前都曾创建初创企业并成功退出，并将创始人辅导、产品市场匹配和 Series A 融资支持列为投后工作。以上是机构的公开自述，未独立核验每位合伙人的完整履历。",
       "track_record": [
         {
-          "description": "融资来源记录：INXM · 预种子轮 · 2026-06-03 · 本轮参投 · €5.7 Million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "官网自述：Angel Invest 已投资 250 多家初创企业，组合企业后续融资超过 €2bn，约 60% 的组合公司进入 Series A；官网未在该页面说明统计时点与计算口径，不代表基金回报率。",
+          "source_id": "angel_overview"
+        },
+        {
+          "description": "官网组合页将 INXM 列为组合企业，描述为企业 AI 编排层；本库融资记录显示 Angel Invest 参与其 €5.7m 预种子轮，单家出资额未披露。",
+          "source_id": "angel_portfolio"
+        },
+        {
+          "description": "融资记录：INXM · 预种子轮 · 2026-06-03 · 参投；融资总额 €5.7m，未披露 Angel Invest 单独出资额。此为本库收录案例，不代表完整投资组合。",
           "source_id": "FISRC-8b3715219a93e9b2"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Angel Invest",
+          "url": "https://angelinvest.ventures/",
+          "source_id": "angel_overview"
+        },
+        {
+          "kind": "email",
+          "label": "官网公开融资项目联系邮箱",
+          "value": "hello@angelinvest.ventures",
+          "url": "https://angelinvest.ventures/portfolio",
+          "source_id": "angel_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "angel_overview",
+          "source_url": "https://angelinvest.ventures/",
+          "source_title": "Angel Invest – Europe's most active early-stage investor",
+          "source_content_hash": "26eab0aec3c1f22d5e6e0e550cf9a3be6417a7b4a5381cc3d3eb596692c0565b",
+          "quote": "We’re the most active Super Angel Fund in Europe, investing in 75 startups each year. Our typical check size is €125k.",
+          "quote_hash": "4f1c06f2fa902c9bce5c96e74267ffc58130f54cbad38ac99144695597b9b638"
+        },
+        {
+          "source_id": "angel_team",
+          "source_url": "https://angelinvest.ventures/",
+          "source_title": "Angel Invest – Europe's most active early-stage investor",
+          "source_content_hash": "26eab0aec3c1f22d5e6e0e550cf9a3be6417a7b4a5381cc3d3eb596692c0565b",
+          "quote": "Every one of our partners has built a startup before and successfully exited.",
+          "quote_hash": "f5e9e83eb4b1b174da0a151904a7fe4875e50001e98283831d221cd1816f8392"
+        },
+        {
+          "source_id": "angel_portfolio",
+          "source_url": "https://angelinvest.ventures/portfolio",
+          "source_title": "Angel Invest portfolio companies highlights.",
+          "source_content_hash": "c8beb0e6cb89a6ba6846d45dff42f2df0235e640f589d0c765bd317082e80a13",
+          "quote": "Enterprise AI orchestration layer",
+          "quote_hash": "c66acb7cac3a5c14acfeab7a4a5a7cd11180fe0a2989c54a346b192ade6e959d"
+        },
+        {
+          "source_id": "angel_contact",
+          "source_url": "https://angelinvest.ventures/portfolio",
+          "source_title": "Angel Invest portfolio companies highlights.",
+          "source_content_hash": "c8beb0e6cb89a6ba6846d45dff42f2df0235e640f589d0c765bd317082e80a13",
+          "quote": "Submit your pitch deck (hello@angelinvest.ventures)",
+          "quote_hash": "22db4be53892b63e7a4c54a1a5c9a58d240dc758d63cda9cc404e96769c27657"
+        },
         {
           "source_id": "FISRC-8b3715219a93e9b2",
           "source_url": "https://pulse2.com/inxm-raises-e5-7-million-pre-seed-to-bridge-the-gap-between-enterprise-ai-demos-and-real-operational-deployment/",
@@ -161,7 +264,7 @@
           "quote_hash": "417c916e4c339c007c54e734feb79c028ba0045ab64344aa646baeb5e24594d9"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }
