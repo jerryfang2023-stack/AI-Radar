@@ -1,0 +1,64 @@
+{
+  "event_id": "EV-a34885dc37f590c5",
+  "company_name": "DeepSeek",
+  "status": "blocked",
+  "problems": [
+    "research_sources_insufficient"
+  ],
+  "queries": [
+    "\"DeepSeek\" 2026 融资 轮次 金额 投资方",
+    "\"DeepSeek\" \"75亿美元\" 本轮融资 领投 跟投",
+    "\"DeepSeek\" 产品 服务 创始人 总部",
+    "\"DeepSeek\" 投资机构 投资原因 融资用途"
+  ],
+  "attempts": [
+    {
+      "provider": "tavily",
+      "query": "\"DeepSeek\" 2026 融资 轮次 金额 投资方",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "provider": "exa",
+      "query": "\"DeepSeek\" 2026 融资 轮次 金额 投资方",
+      "status": "failed",
+      "error": "exa_402"
+    },
+    {
+      "provider": "tavily",
+      "query": "\"DeepSeek\" \"75亿美元\" 本轮融资 领投 跟投",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "provider": "exa",
+      "query": "\"DeepSeek\" \"75亿美元\" 本轮融资 领投 跟投",
+      "status": "failed",
+      "error": "exa_402"
+    },
+    {
+      "provider": "tavily",
+      "query": "\"DeepSeek\" 产品 服务 创始人 总部",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "provider": "exa",
+      "query": "\"DeepSeek\" 产品 服务 创始人 总部",
+      "status": "failed",
+      "error": "exa_402"
+    },
+    {
+      "provider": "tavily",
+      "query": "\"DeepSeek\" 投资机构 投资原因 融资用途",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "provider": "exa",
+      "query": "\"DeepSeek\" 投资机构 投资原因 融资用途",
+      "status": "failed",
+      "error": "exa_402"
+    }
+  ]
+}
