@@ -137,21 +137,42 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Fifth Wall 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：Higgsfield · B轮 · 2026-08-17 · 本轮参投 · 4 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b235ace767812393"
-        }
-      ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
       "sources": [
+        {
+          "source_id": "higgsfield_series_b_2026",
+          "source_url": "https://www.prnewswire.com/news-releases/higgsfield-raises-400-million-series-b-financing-at-5-4-billion-valuation-with-annualized-revenue-reaching-700-million-302852430.html",
+          "source_title": "Higgsfield Raises $400 Million Series B Financing at $5.4 Billion Valuation",
+          "source_content_hash": "6ca2492542cba497424d291c5b0b6295cadfc8c1ddb26044409ff4ea2161e85d",
+          "quote": "The round was led by DST Global, with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, and NTT DOCOMO Ventures.",
+          "quote_hash": "c788152a6003fac547e7c26d1e3dc8c5b81adbfcc7e3eb0db9282b13cb495a62"
+        },
+        {
+          "source_id": "fifthwall_about",
+          "source_url": "https://www.fifthwall.com/about",
+          "source_title": "Fifth Wall — about and investment focus",
+          "source_content_hash": "4a25917f42367d3c896dd795e38a8dc4ad477dcf16868559352c68981e6587ca",
+          "quote": "Founded in 2016, Fifth Wall set out to address the collision happening between real estate and technology helping to define PropTech as an investment category.",
+          "quote_hash": "a1a0c13fda2db010e0fac47570953ae6ad5c7cc7556cf2005a0be5594bd7990c"
+        },
+        {
+          "source_id": "fifthwall_scale",
+          "source_url": "https://www.fifthwall.com/about",
+          "source_title": "Fifth Wall — about and investment focus",
+          "source_content_hash": "4a25917f42367d3c896dd795e38a8dc4ad477dcf16868559352c68981e6587ca",
+          "quote": "The Firm is driving the growth of ~170 companies, backing category-defining PropTech leaders such as Opendoor, Procore, Blend, Hippo, and Bilt Rewards.",
+          "quote_hash": "d30caa4715f6d93690079da14049e1ee0c89089aacc27311c2710417fa21e295"
+        },
+        {
+          "source_id": "fifthwall_contact",
+          "source_url": "https://www.fifthwall.com/contact",
+          "source_title": "Fifth Wall — contact, pitch and investor-relations contacts",
+          "source_content_hash": "2f176193016e06681e530d00137b020458ff8585fc7ee012da1133c8e3afd345",
+          "quote": "Pitch Us: ideas@fifthwall.com Partner With Us: investorrelations@fifthwall.com",
+          "quote_hash": "22d00514741c96c8695014f9873b9c290f703236d6f4c552cf18d875ff900ea0"
+        },
         {
           "source_id": "FISRC-b235ace767812393",
           "source_url": "https://siliconangle.com/2026/08/17/higgsfield-raises-400m-at-5-4-billion-valuation-to-scale-video-and-image-generation-platform/",
@@ -161,7 +182,82 @@
           "quote_hash": "802b4e0ce5c62a28a2fc893e6f1263efeb759174a6c6e4d57e7a3f8a1aa7de8c"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "summary": "Fifth Wall 是聚焦建成环境技术的投资机构，2016 年成立，总部位于洛杉矶，另在旧金山和伦敦设办公室。其官网将投资重点描述为房地产与科技交汇处的 PropTech / Built World，并列示约 170 家组合公司；这些规模数字为机构自述。",
+      "coverage_note": "成立年份、投资方向、办公地点、组合规模和联系渠道来自 Fifth Wall 官网。组合数量与案例是官网自述且会随时间变化，不代表投资回报或完整投资组合。Higgsfield 公告披露本轮整轮融资 4 亿美元，未披露 Fifth Wall 单笔投资额。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2016 年。",
+          "source_id": "fifthwall_about"
+        },
+        {
+          "field": "investment_thesis",
+          "label": "投资方向",
+          "value": "房地产与科技交汇处的建成环境技术，重点关注 PropTech / Built World。",
+          "source_id": "fifthwall_about"
+        },
+        {
+          "field": "firm_background",
+          "label": "机构背景",
+          "value": "总部位于洛杉矶，另有旧金山和伦敦办公室；官网将其定位为聚焦建成环境科技的投资机构。",
+          "source_id": "fifthwall_about"
+        },
+        {
+          "field": "selected_portfolio",
+          "label": "官网自述组合规模与案例",
+          "value": "官网称组合约 170 家公司，并列示 Opendoor、Procore、Blend、Hippo、Bilt Rewards 等；该数字和名单不代表完整组合或回报。",
+          "source_id": "fifthwall_scale"
+        },
+        {
+          "field": "leadership",
+          "label": "创办人",
+          "value": "官网称 Fifth Wall 由 Brendan Wallace 创立。",
+          "source_id": "fifthwall_about"
+        }
+      ],
+      "current_roles": [],
+      "milestones": [
+        {
+          "date": "2016",
+          "description": "Fifth Wall 官网称机构于 2016 年成立，聚焦房地产与科技交叉领域。",
+          "source_id": "fifthwall_about"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "Higgsfield named this institution among participants in its $400 million Series B announced on 2026-08-17. The $400 million is the total round size; the institution's individual investment amount was not disclosed.",
+          "source_id": "FISRC-b235ace767812393"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Fifth Wall official website",
+          "value": "Fifth Wall",
+          "url": "https://www.fifthwall.com/about",
+          "source_id": "fifthwall_about"
+        },
+        {
+          "kind": "email",
+          "label": "官网公开投资项目提交邮箱",
+          "value": "ideas@fifthwall.com",
+          "source_id": "fifthwall_contact"
+        },
+        {
+          "kind": "email",
+          "label": "官网公开投资人关系邮箱",
+          "value": "investorrelations@fifthwall.com",
+          "source_id": "fifthwall_contact"
+        },
+        {
+          "kind": "address",
+          "label": "官网列示洛杉矶办公室",
+          "value": "301 N Canon Dr #325, Beverly Hills, CA 90210",
+          "source_id": "fifthwall_contact"
+        }
+      ],
+      "last_verified_at": "2026-09-27"
     }
   }
 }

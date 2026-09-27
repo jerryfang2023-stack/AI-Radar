@@ -139,19 +139,40 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Mirae Asset Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：Higgsfield · B轮 · 2026-08-17 · 本轮参投 · 4 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-7c15ac15bf3d0b1a"
-        }
-      ],
-      "contacts": [],
+      "coverage_status": "researched",
       "sources": [
+        {
+          "source_id": "higgsfield_series_b_2026",
+          "source_url": "https://www.prnewswire.com/news-releases/higgsfield-raises-400-million-series-b-financing-at-5-4-billion-valuation-with-annualized-revenue-reaching-700-million-302852430.html",
+          "source_title": "Higgsfield Raises $400 Million Series B Financing at $5.4 Billion Valuation",
+          "source_content_hash": "6ca2492542cba497424d291c5b0b6295cadfc8c1ddb26044409ff4ea2161e85d",
+          "quote": "The round was led by DST Global, with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, and NTT DOCOMO Ventures.",
+          "quote_hash": "c788152a6003fac547e7c26d1e3dc8c5b81adbfcc7e3eb0db9282b13cb495a62"
+        },
+        {
+          "source_id": "mirae_home",
+          "source_url": "https://vc.miraeassetcapital.com/",
+          "source_title": "Mirae Asset Capital — venture and new-growth investment",
+          "source_content_hash": "e7191f7809a8123b45eef90827208627c518d344c2b92639867fb6a83bfd7ea2",
+          "quote": "customized financing solutions",
+          "quote_hash": "476d82086a25ad591029690b85e0718329b73e39df1aab39dcd04c7685a3c92e"
+        },
+        {
+          "source_id": "mirae_venture",
+          "source_url": "https://vc.miraeassetcapital.com/",
+          "source_title": "Mirae Asset Capital — venture and new-growth investment",
+          "source_content_hash": "e7191f7809a8123b45eef90827208627c518d344c2b92639867fb6a83bfd7ea2",
+          "quote": "Investing in the next generation of disruptors",
+          "quote_hash": "bbf71d619975144d578acb27076666bd8007117c98d1013e0d6ac76075e28e31"
+        },
+        {
+          "source_id": "mirae_address",
+          "source_url": "https://vc.miraeassetcapital.com/",
+          "source_title": "Mirae Asset Capital — venture and new-growth investment",
+          "source_content_hash": "e7191f7809a8123b45eef90827208627c518d344c2b92639867fb6a83bfd7ea2",
+          "quote": "18F, Parnas Tower, 521, Teheran-ro, Gangnam-gu, Seoul, 06164",
+          "quote_hash": "d819e424378dcf2c9562f36ec005cde83bae6f8c659bcd6ac0d52655f46d307e"
+        },
         {
           "source_id": "FISRC-7c15ac15bf3d0b1a",
           "source_url": "https://www.finsmes.com/2026/08/higgsfield-raises-400m-in-series-b-funding.html",
@@ -159,9 +180,112 @@
           "source_content_hash": "66d04514886f3d3e",
           "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, NTT DOCOMO Ventures, Accel, Menlo Ventures, AI Capital Partners, GFT Ventures, Capra Ventures, BAM Corner Point, BroadLight Capital, and Natalia Vodianova Arnault",
           "quote_hash": "f2d170b06d7d95a66bb1a37e76577ee8c44898a0f37d8ec63f1900d3f15ba92a"
+        },
+        {
+          "source_id": "mirae_growth",
+          "source_url": "https://vc.miraeassetcapital.com/",
+          "source_title": "Mirae Asset Capital — venture and new-growth investment",
+          "source_content_hash": "e7191f7809a8123b45eef90827208627c518d344c2b92639867fb6a83bfd7ea2",
+          "quote": "while facilitating investment in new growth areas",
+          "quote_hash": "a80726347c8f7907e5302f3581e2288ed3e41aba19f749353f73360d8a667937"
+        },
+        {
+          "source_id": "mirae_tmt",
+          "source_url": "https://vc.miraeassetcapital.com/",
+          "source_title": "Mirae Asset Capital — portfolio categories",
+          "source_content_hash": "e7191f7809a8123b45eef90827208627c518d344c2b92639867fb6a83bfd7ea2",
+          "quote": "TMT Portfolio",
+          "quote_hash": "5983185d939c209e8b3d632da17dc8973576d409003b239b7eab49258fce3c8a"
+        },
+        {
+          "source_id": "mirae_blockchain",
+          "source_url": "https://vc.miraeassetcapital.com/",
+          "source_title": "Mirae Asset Capital — portfolio categories",
+          "source_content_hash": "e7191f7809a8123b45eef90827208627c518d344c2b92639867fb6a83bfd7ea2",
+          "quote": "Blockchain Portfolio",
+          "quote_hash": "eaed9dde93b1691cf5a6ae4f76978966f61e01065f6e1839e7a2d30fb1a22372"
+        },
+        {
+          "source_id": "mirae_emerging",
+          "source_url": "https://vc.miraeassetcapital.com/",
+          "source_title": "Mirae Asset Capital — portfolio categories",
+          "source_content_hash": "e7191f7809a8123b45eef90827208627c518d344c2b92639867fb6a83bfd7ea2",
+          "quote": "Emerging Business Portfolio",
+          "quote_hash": "03d7f971539297b81afaf7762ef298557f994afff899caa323af74dcf505b419"
+        },
+        {
+          "source_id": "mirae_healthcare",
+          "source_url": "https://vc.miraeassetcapital.com/",
+          "source_title": "Mirae Asset Capital — portfolio categories",
+          "source_content_hash": "e7191f7809a8123b45eef90827208627c518d344c2b92639867fb6a83bfd7ea2",
+          "quote": "Life Sciences/Healthcare Portfolio",
+          "quote_hash": "2594caacb9d6fe755ff0423613d34288c3e7558746f2bd288893d9843a2b527e"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "summary": "Mirae Asset Capital 官网将其定位为提供定制融资方案、同时投资新增长领域的机构；官网分列 Venture Investment 与 New Growth Investment，并展示 TMT、区块链、新兴业务及生命科学/医疗健康组合板块。官网列示办公地址在韩国首尔。",
+      "coverage_note": "机构描述、投资板块和办公地址来自 Mirae Asset Capital 官网。官网动态页面未提供可稳定核验的规模数据或公开投资团队履历，因此本档案不推测其管理规模、个人职责或 Higgsfield 单笔出资额。融资公告披露的 4 亿美元为整轮规模。",
+      "facts": [
+        {
+          "field": "business_profile",
+          "label": "机构介绍",
+          "value": "官网介绍其提供定制融资方案，并促进对新增长领域的投资。",
+          "source_id": "mirae_growth"
+        },
+        {
+          "field": "investment_platforms",
+          "label": "投资业务",
+          "value": "官网分别列出 Venture Investment 与 New Growth Investment。",
+          "source_id": "mirae_venture"
+        },
+        {
+          "field": "portfolio_sector",
+          "label": "Officially listed portfolio category",
+          "value": "The official website maintains a TMT portfolio category.",
+          "source_id": "mirae_tmt"
+        },
+        {
+          "field": "portfolio_sector",
+          "label": "Officially listed portfolio category",
+          "value": "The official website maintains a blockchain portfolio category.",
+          "source_id": "mirae_blockchain"
+        },
+        {
+          "field": "portfolio_sector",
+          "label": "Officially listed portfolio category",
+          "value": "The official website maintains a emerging businesses portfolio category.",
+          "source_id": "mirae_emerging"
+        },
+        {
+          "field": "portfolio_sector",
+          "label": "Officially listed portfolio category",
+          "value": "The official website maintains a life sciences and healthcare portfolio category.",
+          "source_id": "mirae_healthcare"
+        }
+      ],
+      "current_roles": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "Higgsfield named this institution among participants in its $400 million Series B announced on 2026-08-17. The $400 million is the total round size; the institution's individual investment amount was not disclosed.",
+          "source_id": "FISRC-7c15ac15bf3d0b1a"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Mirae Asset Capital official website",
+          "value": "Mirae Asset Capital",
+          "url": "https://vc.miraeassetcapital.com/",
+          "source_id": "mirae_home"
+        },
+        {
+          "kind": "address",
+          "label": "官网列示办公地址",
+          "value": "18F, Parnas Tower, 521 Teheran-ro, Gangnam-gu, Seoul 06164, South Korea",
+          "source_id": "mirae_address"
+        }
+      ],
+      "last_verified_at": "2026-09-27"
     }
   }
 }
