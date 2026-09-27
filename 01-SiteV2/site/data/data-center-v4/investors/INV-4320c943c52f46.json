@@ -139,19 +139,82 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "万利达集团 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "万利达官网企业简介将该组织称为“万利达集团”，并自述成立于1984年；所披露的品牌、产品和生产基地信息来自集团官网自述，未以审计报表或工商档案独立验证。融资报道将“万利达集团”列为容芯致远天使轮跟投方，但未披露实际出资的法律实体、基金载体或单独金额；报道中的“数亿元”是该轮融资金额，不是万利达集团出资额。当前可追溯活动仅此一例，不代表完整投资组合。官网联系信息未能确认专属投资申请渠道。",
+      "summary": "万利达集团官网自述创立于1984年，专注智能消费电子及显示产品的研发、生产和销售，并持续提升工业自动化服务能力。官网称集团拥有万利达（Malata）、盈趣（Intretech）、厦华（Prima）三大品牌，在厦门、深圳、漳州设有生产及研发运营设施，旗下企业产品销往70多个国家和地区。投资界2026年报道将万利达集团列为容芯致远数亿元天使轮跟投方之一，但未披露万利达的具体出资额或投资载体。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份（集团官网自述）",
+          "value": "1984年。",
+          "source_id": "malata_group_profile"
+        },
+        {
+          "field": "business_scope",
+          "label": "官网介绍的业务范围",
+          "value": "智能消费类电子及显示产品的研发、生产和销售，并持续提升工业自动化服务能力；官网列示厨卫电器、智能商显、移动通信、智能控制和环境电器等业务方向。",
+          "source_id": "malata_group_profile"
+        },
+        {
+          "field": "brands",
+          "label": "官网列示的品牌",
+          "value": "万利达（Malata）、盈趣（Intretech）、厦华（Prima）。官网以“品牌”表述，未据此推断三者的法律持股或集团并表关系。",
+          "source_id": "malata_group_brands"
+        },
+        {
+          "field": "operations_and_market_reach",
+          "label": "总部、生产与研发运营布局（集团官网自述）",
+          "value": "总部位于厦门；官网称在深圳、漳州、厦门设有三大专业生产基地和两大研发管理运营中心，旗下企业产品销往70多个国家和地区。",
+          "source_id": "malata_group_scale"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1984",
+          "description": "万利达集团官网记载集团创立于1984年。",
+          "source_id": "malata_group_profile"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：容芯致远 · 天使轮 · 2026-05-08 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "容芯致远天使轮：投资界2026年5月报道将万利达集团列为跟投方之一。报道所称本轮融资为数亿元，但未披露万利达集团的单独出资金额、投资法人或基金载体；该单笔记录不代表完整投资组合。",
           "source_id": "FISRC-ceee1629da3e3cce"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "万利达集团企业简介（官网品牌站）",
+          "value": "zsmalata.com",
+          "url": "https://www.zsmalata.com/news-list-cid-8",
+          "source_id": "malata_group_profile"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "malata_group_profile",
+          "source_url": "https://www.zsmalata.com/news-list-cid-8",
+          "source_title": "企业简介-万利达厨电|万利达厨卫|万利达厨房电器官方网站",
+          "source_content_hash": "9096e91f527b650a695d7e0944ee8cb15819c50d6c550da54004a3aaaed883a9",
+          "quote": "万利达集团创立于1984年，是国内工业化和信息化智能制造领域领先的科技企业集团。多年来，集团持续专注于智能消费类电子及显示产品的研、产、销，并不断提升工业自动化服务能力。目前，集团旗下拥有万利达（malata）、盈趣（intretech）、厦华（prima）三大品牌，形成以厨卫电器、智能商显、移动通信、智能控制、环境电器等为主的多元化产业集群。集团总部位于中国厦门，在深圳、漳州、厦门等地设有三大专业规模生产基地，两大研发管理运营中心。凭借自身过硬的制造实力和完善的服务体系，旗下企业产品销往全球70多个国家和地区。",
+          "quote_hash": "ae58a0a61379de760adb16179ab20374150c7f43a83f519c81b253d08342b83d"
+        },
+        {
+          "source_id": "malata_group_brands",
+          "source_url": "https://www.zsmalata.com/news-list-cid-8",
+          "source_title": "企业简介-万利达厨电|万利达厨卫|万利达厨房电器官方网站",
+          "source_content_hash": "9096e91f527b650a695d7e0944ee8cb15819c50d6c550da54004a3aaaed883a9",
+          "quote": "目前，集团旗下拥有万利达（malata）、盈趣（intretech）、厦华（prima）三大品牌，形成以厨卫电器、智能商显、移动通信、智能控制、环境电器等为主的多元化产业集群。",
+          "quote_hash": "40717412a3f948dbfe75338c9fe4c2617e4a95c0115c0976ea4110c3d7fc0b1e"
+        },
+        {
+          "source_id": "malata_group_scale",
+          "source_url": "https://www.zsmalata.com/news-list-cid-8",
+          "source_title": "企业简介-万利达厨电|万利达厨卫|万利达厨房电器官方网站",
+          "source_content_hash": "9096e91f527b650a695d7e0944ee8cb15819c50d6c550da54004a3aaaed883a9",
+          "quote": "集团总部位于中国厦门，在深圳、漳州、厦门等地设有三大专业规模生产基地，两大研发管理运营中心。凭借自身过硬的制造实力和完善的服务体系，旗下企业产品销往全球70多个国家和地区。",
+          "quote_hash": "f37a0b7b407ab685b8db9eb3c6276402f5c2c61267890747e7577e3619e66911"
+        },
         {
           "source_id": "FISRC-ceee1629da3e3cce",
           "source_url": "https://news.pedaily.cn/202605/563553.shtml",
@@ -161,7 +224,7 @@
           "quote_hash": "1268be5eb46af49b91553a5e559123a667d5373f1faaf25d9a7c3cfbcb145388"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28"
     }
   }
 }
