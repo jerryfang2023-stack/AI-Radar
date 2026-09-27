@@ -130,30 +130,123 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "社保基金中关村自主创新投资基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "summary": "社保基金中关村自主创新专项基金是全国社会保障基金理事会与北京市合作设立的科技创新专项基金，融资数据库的名称省略了“专项”二字。官方资料披露基金于2023年启动、首期规模50亿元，由君联资本按市场化、专业化方式管理，期限超过10年，重点支持北京科技创新及前沿产业。",
+      "coverage_note": "基金名称、规模、管理人、期限和投资领域由全国社保基金会与君联资本母公司公开资料交叉核验。钛媒体2024年9月报道该基金与启明创投、洪泰基金联合领投无问芯穹近5亿元A轮，但该金额是融资总额而非该基金单独出资额。融资索引中同一来源关联的2026-05-07和7亿元与原文日期、金额不一致；本档案以原始报道日期和金额口径为准，不采用索引中的该笔日期或金额。",
+      "facts": [
         {
-          "description": "融资来源记录：无问芯穹 · 基础设施融资 · 2026-05-07 · A轮领投 · 7 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "field": "official_name",
+          "label": "官方名称",
+          "value": "社保基金中关村自主创新专项基金（融资库简写为“社保基金中关村自主创新投资基金”）",
+          "source_id": "ssf_2023_fund"
+        },
+        {
+          "field": "established",
+          "label": "启动时间",
+          "value": "2023年7月19日举行启动会；基金正式成立。",
+          "source_id": "ssf_2023_fund"
+        },
+        {
+          "field": "scale",
+          "label": "首期规模",
+          "value": "人民币50亿元",
+          "source_id": "ssf_2023_fund"
+        },
+        {
+          "field": "manager",
+          "label": "管理人",
+          "value": "君联资本；按市场化、专业化方式管理。",
+          "source_id": "legend_2023_fund"
+        },
+        {
+          "field": "term",
+          "label": "基金期限",
+          "value": "超过10年",
+          "source_id": "legend_2023_fund"
+        },
+        {
+          "field": "investment_focus",
+          "label": "公开投资领域",
+          "value": [
+            "数字经济",
+            "软件与半导体",
+            "先进制造",
+            "医疗健康",
+            "互联网3.0",
+            "绿色能源与“双碳”",
+            "前沿新材料"
+          ],
+          "source_id": "legend_2023_fund"
+        },
+        {
+          "field": "geographic_focus",
+          "label": "区域与使命",
+          "value": "立足北京，服务科技创新和中关村科创企业发展。",
+          "source_id": "ssf_2023_fund"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2023-07-19",
+          "description": "社保基金会与北京市合作设立的专项基金举行启动会并正式成立。",
+          "source_id": "ssf_2023_fund"
+        },
+        {
+          "date": "2024-09-03",
+          "description": "钛媒体刊发无问芯穹A轮融资报道，列该专项基金为联合领投方之一。",
           "source_id": "FISRC-67d072b1aca37b5d"
         }
       ],
-      "contacts": [],
+      "track_record": [
+        {
+          "description": "钛媒体2024年9月3日报道，基金与启明创投、洪泰基金联合领投无问芯穹近5亿元A轮；报道的近5亿元是整轮融资总额，基金单笔出资额未披露。该报道与融资索引关联记录所列的2026年日期及7亿元金额不一致。",
+          "source_id": "FISRC-67d072b1aca37b5d"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "全国社会保障基金会基金设立公告（非项目申请渠道）",
+          "value": "全国社会保障基金理事会",
+          "url": "https://www.ssf.gov.cn/portal/hndt/hndt/webinfo/2023/07/1691512254673870.htm",
+          "source_id": "ssf_2023_fund"
+        },
+        {
+          "kind": "website",
+          "label": "基金管理人君联资本官网",
+          "value": "君联资本 / Legend Capital",
+          "url": "https://www.legendholdings.com.cn/",
+          "source_id": "legend_2023_fund"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "ssf_2023_fund",
+          "source_url": "https://www.ssf.gov.cn/portal/hndt/hndt/webinfo/2023/07/1691512254673870.htm",
+          "source_title": "全国社会保障基金理事会：社保基金中关村自主创新专项基金正式启动",
+          "source_content_hash": "ba177c98508a6dc59f5b8dd2914669d57f85809def671ee7c4a6bbe60141d8e6",
+          "quote": "基金首期规模50亿元，由君联资本按照市场化、专业化方式开展投资。",
+          "quote_hash": "77a44cddae7e566ae20e4cd2cd2d65c580073857b5eb92e5fdf3c2ea038d0b10"
+        },
+        {
+          "source_id": "legend_2023_fund",
+          "source_url": "https://www.legendholdings.com.cn/News/detail.aspx?contentid=2203&nodeid=1124&page=ContentPage",
+          "source_title": "联想控股：社保基金中关村自主创新专项基金成立，君联任管理人",
+          "source_content_hash": "460785862f80721123de7e6c24efb19b356b097118e0400f6acf5131dbeab645",
+          "quote": "专项基金期限超过10年，聚焦数字经济、软件和半导体、先进制造、医疗健康等重点领域。",
+          "quote_hash": "0e8a210888bf9d91e7b7f6b4ddd7352de1dba83f5894af5dedf39d2942e0112f"
+        },
         {
           "source_id": "FISRC-67d072b1aca37b5d",
           "source_url": "https://www.tmtpost.com/7235681.html",
           "source_title": "Infinigence AI Raises US$ 70.2 Million in Series A Funding Round-钛媒体官方网站",
           "source_content_hash": "56a87e89ab6a1ab2",
-          "quote": "The funding round was led by Social Security Fund Zhongguancun Independent Innovation Investment Fund, Qiming Venture Partners, and Hongtai Aplus",
-          "quote_hash": "1c3b3a91fa81d51a25c78aa620aca81e93e67c3c2d74dadadc01c13fea0d1024"
+          "quote": "The funding round was led by Social Security Fund Zhongguancun Independent Innovation Investment Fund, Qiming Venture Partners, and Hongtai Aplus.",
+          "quote_hash": "f0b7624e9b6a94a2b13bac56dfd2f2801377955cf87b4e046f1a0caa503e17ed"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "identity_status": "verified"
     }
   }
 }
