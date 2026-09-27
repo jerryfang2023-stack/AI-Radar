@@ -131,18 +131,7 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Vicus Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：Avoca AI · 多轮融资 · 2026-04-27 · 既有投资方 · 超过1.25亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3b2454278fe6d93e"
-        }
-      ],
-      "contacts": [],
+      "coverage_status": "researched",
       "sources": [
         {
           "source_id": "FISRC-3b2454278fe6d93e",
@@ -151,9 +140,78 @@
           "source_content_hash": "0eedb637d7c86cdc",
           "quote": "Manraj Singh Sandhu ( Vicus Ventures )",
           "quote_hash": "689746bfb7528e3b1f6c993d47424a40b72a2c40adf425253511eaeaa8148a0e"
+        },
+        {
+          "source_id": "vicus_home",
+          "source_url": "https://www.vicusventures.com/",
+          "source_title": "Vicus Ventures",
+          "source_content_hash": "f80b0217430085fb0861cbe28a74af0ea7ad898c3972246e6b3f2f24600fdc96",
+          "quote": "BUILT ON TRUST",
+          "quote_hash": "c3ce599aa4c9aba68bf0c1af6b9646fa55d55c88286f07a802f2d5b6b89f503d"
+        },
+        {
+          "source_id": "vicus_sec_form_d_2024",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2023812/000202381224000001/0002023812-24-000001-index.htm",
+          "source_title": "SEC EDGAR — Vicus Ventures Fund 1 LP Form D filing",
+          "source_content_hash": "9bf5ee9c6a8fc0553fa069d33a6bae02b272537eb8323c768bad8613c8ebac06",
+          "quote": "Vicus Ventures Fund 1 LP",
+          "quote_hash": "3af66c8dfa1bfe4966d4bb3b4e9bc17537e6485634b1409770a29c2e48513a7f"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "summary": "Vicus Ventures’ public site states “Built on trust, driven by excellence.” A 2024 SEC Form D filing separately records an issuer named Vicus Ventures Fund 1 LP; the filing does not disclose a fund size or investment performance in the record used here.",
+      "coverage_note": "官网提供的机构背景文字有限。SEC 于 2024 年接受的 Form D 记录了 Vicus Ventures Fund 1 LP 的备案名称、营业地址和电话；该备案单独证明基金载体信息，不足以推算管理规模、组合业绩或其对 Avoca 的单笔投资。Capital 49 合伙人的帖子将 Manraj Singh Sandhu 与 Vicus Ventures 一同列在投资人/支持者名单中。",
+      "facts": [
+        {
+          "field": "public_description",
+          "label": "官网自述",
+          "value": "Vicus 官网以“Built on trust, driven by excellence”描述其投资理念。",
+          "source_id": "vicus_home"
+        },
+        {
+          "field": "fund_vehicle",
+          "label": "基金载体",
+          "value": "SEC 2024 年备案列出 Vicus Ventures Fund 1 LP；备案本身未给出本档案可用的基金规模或业绩数据。",
+          "source_id": "vicus_sec_form_d_2024"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "milestones": [
+        {
+          "date": "2024-05-21",
+          "description": "SEC EDGAR 记录并接受 Vicus Ventures Fund 1 LP 的 Form D 备案。",
+          "source_id": "vicus_sec_form_d_2024"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "Capital 49 合伙人的公开帖子将 Manraj Singh Sandhu 与 Vicus Ventures 列在 Avoca 更广泛的投资人/支持者名单中；没有披露 Vicus Ventures Fund 1 LP 对 Avoca 的单笔投资或金额。",
+          "source_id": "FISRC-3b2454278fe6d93e"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Vicus Ventures 官方网站",
+          "value": "Vicus Ventures",
+          "url": "https://www.vicusventures.com/",
+          "source_id": "vicus_home"
+        },
+        {
+          "kind": "address",
+          "label": "2024 年 SEC 备案中的 Vicus Ventures Fund 1 LP 营业地址（不确认是否仍有效）",
+          "value": "606 W 57th Street, New York, NY 10019",
+          "source_id": "vicus_sec_form_d_2024"
+        },
+        {
+          "kind": "phone",
+          "label": "2024 年 SEC 备案中的 Vicus Ventures Fund 1 LP 电话（不确认是否仍有效）",
+          "value": "+1 252 292 9209",
+          "source_id": "vicus_sec_form_d_2024"
+        }
+      ],
+      "last_verified_at": "2026-09-27"
     }
   }
 }

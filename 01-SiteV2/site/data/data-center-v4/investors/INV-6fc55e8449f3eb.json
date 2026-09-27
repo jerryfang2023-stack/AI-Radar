@@ -131,18 +131,7 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Pathlight Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：Avoca AI · 多轮融资 · 2026-04-27 · 既有投资方 · 超过1.25亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3b2454278fe6d93e"
-        }
-      ],
-      "contacts": [],
+      "coverage_status": "researched",
       "sources": [
         {
           "source_id": "FISRC-3b2454278fe6d93e",
@@ -151,9 +140,62 @@
           "source_content_hash": "0eedb637d7c86cdc",
           "quote": "Charley Ma (Pathlight Ventures)",
           "quote_hash": "dcac59e0ad23f5b094ef125a979c5e162a790b8b22a9bf5e20d91290f97c82b9"
+        },
+        {
+          "source_id": "pathlight_home",
+          "source_url": "https://pathlight.vc/",
+          "source_title": "Pathlight — Early-Stage Venture Fund",
+          "source_content_hash": "24fef3cbd7ebaa6a16807926685e630bbcd076df84936d05d354c02489ae6795",
+          "quote": "We are low volume, high conviction, early-stage investors.",
+          "quote_hash": "b69de9e060445ed6bc5903577c26697698db70e00dd7651b0c617cf5281825f8"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "summary": "Pathlight is an early-stage venture fund that describes its approach as low-volume and high-conviction. It lists Avoca in its physical-world portfolio and says it helps founders with early customers, hiring, introductions, and tactical advice.",
+      "coverage_note": "投资阶段、策略、公开组合与创始人支持方式来自 Pathlight 官网；Avoca 被列在 Physical World 组合板块。Capital 49 合伙人的投资人帖子也将 Charley Ma 与 Pathlight Ventures 一同列出，但不披露该基金对 Avoca 的单笔金额。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期风险投资。",
+          "source_id": "pathlight_home"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资方式",
+          "value": "官网自述为低数量、高信念投资，并采取主题与客户驱动的市场选择方式。",
+          "source_id": "pathlight_home"
+        },
+        {
+          "field": "founder_support",
+          "label": "创始人支持",
+          "value": "官网列出早期客户引荐、首批招聘、投资人介绍与战术建议等支持。",
+          "source_id": "pathlight_home"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "Pathlight 官网在 Physical World 组合中列出 Avoca；Capital 49 合伙人的帖子另将 Charley Ma 与 Pathlight Ventures 联系起来，但未披露单笔投资金额。",
+          "source_id": "pathlight_home"
+        },
+        {
+          "description": "融资来源记录：Avoca AI · 多轮融资 · 2026-04-27 · 既有投资方 · 超过1.25亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-3b2454278fe6d93e"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Pathlight Ventures 官方网站及创业者联系入口",
+          "value": "Pathlight",
+          "url": "https://pathlight.vc/",
+          "source_id": "pathlight_home"
+        }
+      ],
+      "last_verified_at": "2026-09-27"
     }
   }
 }
