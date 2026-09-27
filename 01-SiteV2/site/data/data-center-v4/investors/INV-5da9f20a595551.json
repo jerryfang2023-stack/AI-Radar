@@ -139,19 +139,118 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "新希望集团 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-11；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "主体对应为新希望集团有限公司。公开债券年报提供截至2022年报告期的注册信息、控股关系及经营数据；融资报道将“新希望集团”列为光轮智能A+++轮产业投资方，但未披露集团单独出资金额。2022年报告列出的公共邮箱不是经确认的融资BP投递渠道，完整投资组合、投资团队及专属融资申请方式未在本次核验的来源中披露。",
+      "summary": "新希望集团有限公司（NewHope Group Co.,Ltd）是以农牧食品为核心的企业集团。其2022年债券年报列示注册资本和实缴资本均为32亿元，披露饲料、养殖、禽业和食品等业务及相应年度经营数据。投资界2026年报道将新希望集团列入光轮智能A+++轮产业投资方之一，但未披露单独出资额；这是一条可追溯参投记录，不代表完整投资组合。",
+      "facts": [
+        {
+          "field": "legal_identity",
+          "label": "法定主体与注册资本（2022年年报）",
+          "value": "法定名称：新希望集团有限公司；英文名称：NewHope Group Co.,Ltd；法定代表人：刘永好；注册资本、实缴资本均为人民币32亿元。",
+          "source_id": "newhope_2022_bond_filing_company_information"
+        },
+        {
+          "field": "ownership_as_of_2022",
+          "label": "控股股东与实际控制人（截至2022年报告期末）",
+          "value": "控股股东为新希望控股集团有限公司，持有75%；实际控制人为刘永好，年报披露其持有89.6%。该口径为2022年报告期末披露。",
+          "source_id": "newhope_2022_bond_filing_control"
+        },
+        {
+          "field": "feed_volume_2022",
+          "label": "2022年饲料业务销量",
+          "value": "销售各类饲料产品2,842万吨。",
+          "source_id": "newhope_2022_bond_filing_business"
+        },
+        {
+          "field": "feed_revenue_2022",
+          "label": "2022年饲料业务营业收入",
+          "value": "791.78亿元，属于业务分部收入，不是集团合并收入。",
+          "source_id": "newhope_2022_bond_filing_feed_revenue"
+        },
+        {
+          "field": "food_revenue_2022",
+          "label": "2022年食品业务营业收入",
+          "value": "108.51亿元，属于业务分部收入，不是集团合并收入。",
+          "source_id": "newhope_2022_bond_filing_food_revenue"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：光轮智能 · A+++轮 · 2026-03-11 · 本轮参投 · 10 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "投资界于2026年3月报道光轮智能完成10亿元A+++轮融资，并将新希望集团列为产业投资方之一；来源未披露新希望集团的单独出资额。该报道仅支持这一笔可追溯案例，不代表完整投资组合。",
           "source_id": "FISRC-a7ac3aedf1b697d8"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "集团官方网站（2022年债券年报所列）",
+          "value": "http://www.newhopegroup.com",
+          "url": "http://www.newhopegroup.com",
+          "source_id": "newhope_2022_bond_filing_public_contact"
+        },
+        {
+          "kind": "email",
+          "label": "集团公开邮箱（2022年债券年报所列；未注明为投资项目投递邮箱）",
+          "value": "contact@newhope.cn",
+          "source_id": "newhope_2022_bond_filing_public_contact"
+        },
+        {
+          "kind": "address",
+          "label": "注册地址（2022年债券年报）",
+          "value": "四川省成都市武侯区人民南路4段45号",
+          "source_id": "newhope_2022_bond_filing_company_information"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "newhope_2022_bond_filing_company_information",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2023-04-28/1216725923.pdf",
+          "source_title": "新希望集团有限公司公司债券年度报告（2022年）",
+          "source_content_hash": "d774ef5c221188c45105622d19798a3d1fb9c42569907b35d019a95d333628a8",
+          "quote": "中文名称 新希望集团有限公司 中文简称 新希望集团 外文名称（如有） NewHope Group Co.,Ltd 法定代表人 刘永好 注册资本（万元） 320,000 实缴资本（万元） 320,000",
+          "quote_hash": "7bed52a82d61c7c5b1e95570ac98dc0bdc9b9545045fc77f6ff8b0c8b8797a48"
+        },
+        {
+          "source_id": "newhope_2022_bond_filing_control",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2023-04-28/1216725923.pdf",
+          "source_title": "新希望集团有限公司公司债券年度报告（2022年）",
+          "source_content_hash": "d774ef5c221188c45105622d19798a3d1fb9c42569907b35d019a95d333628a8",
+          "quote": "报告期末控股股东名称：新希望控股集团有限公司 报告期末实际控制人名称：刘永好 控股股东持有75% 实际控制人持有89.6%",
+          "quote_hash": "a401e4c1cbfb47790e794208c47f373494bfad3e5d586fcab0e620c2ac21de81"
+        },
+        {
+          "source_id": "newhope_2022_bond_filing_business",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2023-04-28/1216725923.pdf",
+          "source_title": "新希望集团有限公司公司债券年度报告（2022年）",
+          "source_content_hash": "d774ef5c221188c45105622d19798a3d1fb9c42569907b35d019a95d333628a8",
+          "quote": "饲料业务：公司共销售各类饲料产品 2,842 万吨，同比增长 18 万吨，增幅为 1%",
+          "quote_hash": "5545995e59aa0483daeab96865f222ae1c2e40f9dc31c6f42e2231a3a3e7e364"
+        },
+        {
+          "source_id": "newhope_2022_bond_filing_feed_revenue",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2023-04-28/1216725923.pdf",
+          "source_title": "新希望集团有限公司公司债券年度报告（2022年）",
+          "source_content_hash": "d774ef5c221188c45105622d19798a3d1fb9c42569907b35d019a95d333628a8",
+          "quote": "实现营业收入 791.78 亿元，同比增加 83.61 亿元，增幅为 11.81%",
+          "quote_hash": "25072d2f4a1b6f5627e1ac1134f4e1f101411a010fb4e75b79a6340012ed98ac"
+        },
+        {
+          "source_id": "newhope_2022_bond_filing_food_revenue",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2023-04-28/1216725923.pdf",
+          "source_title": "新希望集团有限公司公司债券年度报告（2022年）",
+          "source_content_hash": "d774ef5c221188c45105622d19798a3d1fb9c42569907b35d019a95d333628a8",
+          "quote": "实现营业收入 108.51 亿元，同比增加 18.11 亿元，增幅为 20.03%",
+          "quote_hash": "f15af5c3d1d2a0caf76871c44bfc7520db9efefab1386da520460f7c1d7b1dc2"
+        },
+        {
+          "source_id": "newhope_2022_bond_filing_public_contact",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2023-04-28/1216725923.pdf",
+          "source_title": "新希望集团有限公司公司债券年度报告（2022年）",
+          "source_content_hash": "d774ef5c221188c45105622d19798a3d1fb9c42569907b35d019a95d333628a8",
+          "quote": "公司网址（如有） http://www.newhopegroup.com 电子信箱 contact@newhope.cn",
+          "quote_hash": "0776cbad683b8e59a44702c59e50c5189511248ee3313ef2f67ed8d5e60a8c0e"
+        },
         {
           "source_id": "FISRC-a7ac3aedf1b697d8",
           "source_url": "https://news.pedaily.cn/202603/561585.shtml",
@@ -161,7 +260,7 @@
           "quote_hash": "41d6c3188c9986e479c68e45629be28b3168e3539bcec1e8c8610bf502d45a21"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28"
     }
   }
 }

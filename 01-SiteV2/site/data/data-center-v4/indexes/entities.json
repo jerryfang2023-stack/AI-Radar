@@ -250366,19 +250366,118 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "新希望集团 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-11；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "coverage_note": "主体对应为新希望集团有限公司。公开债券年报提供截至2022年报告期的注册信息、控股关系及经营数据；融资报道将“新希望集团”列为光轮智能A+++轮产业投资方，但未披露集团单独出资金额。2022年报告列出的公共邮箱不是经确认的融资BP投递渠道，完整投资组合、投资团队及专属融资申请方式未在本次核验的来源中披露。",
+        "summary": "新希望集团有限公司（NewHope Group Co.,Ltd）是以农牧食品为核心的企业集团。其2022年债券年报列示注册资本和实缴资本均为32亿元，披露饲料、养殖、禽业和食品等业务及相应年度经营数据。投资界2026年报道将新希望集团列入光轮智能A+++轮产业投资方之一，但未披露单独出资额；这是一条可追溯参投记录，不代表完整投资组合。",
+        "facts": [
+          {
+            "field": "legal_identity",
+            "label": "法定主体与注册资本（2022年年报）",
+            "value": "法定名称：新希望集团有限公司；英文名称：NewHope Group Co.,Ltd；法定代表人：刘永好；注册资本、实缴资本均为人民币32亿元。",
+            "source_id": "newhope_2022_bond_filing_company_information"
+          },
+          {
+            "field": "ownership_as_of_2022",
+            "label": "控股股东与实际控制人（截至2022年报告期末）",
+            "value": "控股股东为新希望控股集团有限公司，持有75%；实际控制人为刘永好，年报披露其持有89.6%。该口径为2022年报告期末披露。",
+            "source_id": "newhope_2022_bond_filing_control"
+          },
+          {
+            "field": "feed_volume_2022",
+            "label": "2022年饲料业务销量",
+            "value": "销售各类饲料产品2,842万吨。",
+            "source_id": "newhope_2022_bond_filing_business"
+          },
+          {
+            "field": "feed_revenue_2022",
+            "label": "2022年饲料业务营业收入",
+            "value": "791.78亿元，属于业务分部收入，不是集团合并收入。",
+            "source_id": "newhope_2022_bond_filing_feed_revenue"
+          },
+          {
+            "field": "food_revenue_2022",
+            "label": "2022年食品业务营业收入",
+            "value": "108.51亿元，属于业务分部收入，不是集团合并收入。",
+            "source_id": "newhope_2022_bond_filing_food_revenue"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：光轮智能 · A+++轮 · 2026-03-11 · 本轮参投 · 10 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "投资界于2026年3月报道光轮智能完成10亿元A+++轮融资，并将新希望集团列为产业投资方之一；来源未披露新希望集团的单独出资额。该报道仅支持这一笔可追溯案例，不代表完整投资组合。",
             "source_id": "FISRC-a7ac3aedf1b697d8"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "集团官方网站（2022年债券年报所列）",
+            "value": "http://www.newhopegroup.com",
+            "url": "http://www.newhopegroup.com",
+            "source_id": "newhope_2022_bond_filing_public_contact"
+          },
+          {
+            "kind": "email",
+            "label": "集团公开邮箱（2022年债券年报所列；未注明为投资项目投递邮箱）",
+            "value": "contact@newhope.cn",
+            "source_id": "newhope_2022_bond_filing_public_contact"
+          },
+          {
+            "kind": "address",
+            "label": "注册地址（2022年债券年报）",
+            "value": "四川省成都市武侯区人民南路4段45号",
+            "source_id": "newhope_2022_bond_filing_company_information"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "newhope_2022_bond_filing_company_information",
+            "source_url": "https://static.cninfo.com.cn/finalpage/2023-04-28/1216725923.pdf",
+            "source_title": "新希望集团有限公司公司债券年度报告（2022年）",
+            "source_content_hash": "d774ef5c221188c45105622d19798a3d1fb9c42569907b35d019a95d333628a8",
+            "quote": "中文名称 新希望集团有限公司 中文简称 新希望集团 外文名称（如有） NewHope Group Co.,Ltd 法定代表人 刘永好 注册资本（万元） 320,000 实缴资本（万元） 320,000",
+            "quote_hash": "7bed52a82d61c7c5b1e95570ac98dc0bdc9b9545045fc77f6ff8b0c8b8797a48"
+          },
+          {
+            "source_id": "newhope_2022_bond_filing_control",
+            "source_url": "https://static.cninfo.com.cn/finalpage/2023-04-28/1216725923.pdf",
+            "source_title": "新希望集团有限公司公司债券年度报告（2022年）",
+            "source_content_hash": "d774ef5c221188c45105622d19798a3d1fb9c42569907b35d019a95d333628a8",
+            "quote": "报告期末控股股东名称：新希望控股集团有限公司 报告期末实际控制人名称：刘永好 控股股东持有75% 实际控制人持有89.6%",
+            "quote_hash": "a401e4c1cbfb47790e794208c47f373494bfad3e5d586fcab0e620c2ac21de81"
+          },
+          {
+            "source_id": "newhope_2022_bond_filing_business",
+            "source_url": "https://static.cninfo.com.cn/finalpage/2023-04-28/1216725923.pdf",
+            "source_title": "新希望集团有限公司公司债券年度报告（2022年）",
+            "source_content_hash": "d774ef5c221188c45105622d19798a3d1fb9c42569907b35d019a95d333628a8",
+            "quote": "饲料业务：公司共销售各类饲料产品 2,842 万吨，同比增长 18 万吨，增幅为 1%",
+            "quote_hash": "5545995e59aa0483daeab96865f222ae1c2e40f9dc31c6f42e2231a3a3e7e364"
+          },
+          {
+            "source_id": "newhope_2022_bond_filing_feed_revenue",
+            "source_url": "https://static.cninfo.com.cn/finalpage/2023-04-28/1216725923.pdf",
+            "source_title": "新希望集团有限公司公司债券年度报告（2022年）",
+            "source_content_hash": "d774ef5c221188c45105622d19798a3d1fb9c42569907b35d019a95d333628a8",
+            "quote": "实现营业收入 791.78 亿元，同比增加 83.61 亿元，增幅为 11.81%",
+            "quote_hash": "25072d2f4a1b6f5627e1ac1134f4e1f101411a010fb4e75b79a6340012ed98ac"
+          },
+          {
+            "source_id": "newhope_2022_bond_filing_food_revenue",
+            "source_url": "https://static.cninfo.com.cn/finalpage/2023-04-28/1216725923.pdf",
+            "source_title": "新希望集团有限公司公司债券年度报告（2022年）",
+            "source_content_hash": "d774ef5c221188c45105622d19798a3d1fb9c42569907b35d019a95d333628a8",
+            "quote": "实现营业收入 108.51 亿元，同比增加 18.11 亿元，增幅为 20.03%",
+            "quote_hash": "f15af5c3d1d2a0caf76871c44bfc7520db9efefab1386da520460f7c1d7b1dc2"
+          },
+          {
+            "source_id": "newhope_2022_bond_filing_public_contact",
+            "source_url": "https://static.cninfo.com.cn/finalpage/2023-04-28/1216725923.pdf",
+            "source_title": "新希望集团有限公司公司债券年度报告（2022年）",
+            "source_content_hash": "d774ef5c221188c45105622d19798a3d1fb9c42569907b35d019a95d333628a8",
+            "quote": "公司网址（如有） http://www.newhopegroup.com 电子信箱 contact@newhope.cn",
+            "quote_hash": "0776cbad683b8e59a44702c59e50c5189511248ee3313ef2f67ed8d5e60a8c0e"
+          },
           {
             "source_id": "FISRC-a7ac3aedf1b697d8",
             "source_url": "https://news.pedaily.cn/202603/561585.shtml",
@@ -250388,7 +250487,7 @@
             "quote_hash": "41d6c3188c9986e479c68e45629be28b3168e3539bcec1e8c8610bf502d45a21"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-28"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -299014,19 +299113,74 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "顺丰集团 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "coverage_note": "官方年报确认“顺丰集团”品牌主体创立于1993年，并披露集团综合物流业务与服务网络。投资界报道将“顺丰集团”称为星动纪元2026年4月2亿美元融资的领投方，但没有披露实际出资的法律实体、基金载体或单独金额；本档案不据此把该投资归属于顺丰控股上市公司或其子公司。未找到公开的集团投资申请联系方式；顺丰控股证券事务联系渠道不作为投资项目联系方式收录。",
+        "summary": "顺丰集团是成立于1993年的综合物流服务品牌，官方2025年年报摘要称其服务超过235万企业客户、超过8亿个人消费者，国内业务覆盖所有城市，国际物流网络覆盖多个国家和地区。年报亦披露顺丰控股上市公司的业务与财务信息，相关数据不代表本融资记录中尚未披露的具体出资载体。投资界报道曾称顺丰集团领投星动纪元2026年4月一笔2亿美元融资，但未披露法律出资主体或投资金额。",
+        "facts": [
+          {
+            "field": "history",
+            "label": "集团创立时间",
+            "value": "顺丰集团成立于1993年。",
+            "source_id": "sf_2025_annual_report_group_overview"
+          },
+          {
+            "field": "service_scale",
+            "label": "2025年报披露的服务规模",
+            "value": "服务超过235万企业客户及超过8亿个人消费者；业务包括时效快递、经济快递、快运、冷运及医药、同城即时配送、供应链与国际物流。",
+            "source_id": "sf_2025_annual_report_business"
+          },
+          {
+            "field": "network_coverage",
+            "label": "物流网络覆盖",
+            "value": "官方2025年年报摘要称，国内业务覆盖所有城市；国际快递、货代及供应链业务覆盖95个国家和地区，国际小包业务覆盖200个国家和地区。",
+            "source_id": "sf_2025_annual_report_network"
+          },
+          {
+            "field": "market_position",
+            "label": "市场地位（公司年报引述第三方研究）",
+            "value": "顺丰控股2025年年报摘要引述弗若斯特沙利文报告称，顺丰集团按2024年收入统计为亚洲最大、全球第四大综合物流服务提供商；榜单口径按年报脚注所示。",
+            "source_id": "sf_2025_annual_report_group_overview"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "1993",
+            "description": "顺丰集团创立。",
+            "source_id": "sf_2025_annual_report_group_overview"
+          }
+        ],
         "track_record": [
           {
-            "description": "融资来源记录：星动纪元 · 轮次未披露 · 2026-07-06 · 2026年4月2亿美元融资领投 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "投资界2026年7月报道回顾称，顺丰集团领投星动纪元2026年4月完成的一笔2亿美元融资；报道未披露具体出资法人、基金载体或顺丰单独出资金额。该报道日期与其描述的融资发生时间不同，本条按报道明确表述记录，不视为顺丰控股上市公司经年报确认的投资。",
             "source_id": "FISRC-8c073d38e1f34758"
           }
         ],
         "contacts": [],
         "sources": [
+          {
+            "source_id": "sf_2025_annual_report_group_overview",
+            "source_url": "https://disc.static.szse.cn/disc/disk03/finalpage/2026-03-31/f0d9b4ab-8f78-4be7-b133-0e07b7869915.PDF",
+            "source_title": "顺丰控股股份有限公司2025年年度报告摘要",
+            "source_content_hash": "69c9658a1a0964916be33d14fd741ec846fa1b6249b38cff39e614c43160428f",
+            "quote": "顺丰集团成立于 1993 年，经过三十三年发展，已成长为亚洲最大、全球第四大综合物流服务提供商，在《财富》世界500强企业榜单中位列第393位。",
+            "quote_hash": "a24e3dd0788f22a4324dafdd097184ca3f58e2e062af3faa928ed4bc3d748b77"
+          },
+          {
+            "source_id": "sf_2025_annual_report_network",
+            "source_url": "https://disc.static.szse.cn/disc/disk03/finalpage/2026-03-31/f0d9b4ab-8f78-4be7-b133-0e07b7869915.PDF",
+            "source_title": "顺丰控股股份有限公司2025年年度报告摘要",
+            "source_content_hash": "69c9658a1a0964916be33d14fd741ec846fa1b6249b38cff39e614c43160428f",
+            "quote": "公司拥有广泛的全球物流服务网络，国内业务覆盖所有城市，国际快递、货代及供应链业务覆盖95个国家和地区，国际小包业务覆盖200个国家和地区。",
+            "quote_hash": "a3b327d2e1d48a798cff795262e967f5cfdb5bb49b29ab88450f774b79042a9a"
+          },
+          {
+            "source_id": "sf_2025_annual_report_business",
+            "source_url": "https://disc.static.szse.cn/disc/disk03/finalpage/2026-03-31/f0d9b4ab-8f78-4be7-b133-0e07b7869915.PDF",
+            "source_title": "顺丰控股股份有限公司2025年年度报告摘要",
+            "source_content_hash": "69c9658a1a0964916be33d14fd741ec846fa1b6249b38cff39e614c43160428f",
+            "quote": "顺丰服务于超过235万企业客户及超过8亿个人消费者，提供包括时效快递、经济快递、快运、冷运及医药、同城即时配送、供应链及国际物流服务。",
+            "quote_hash": "fccc185c7bae89b3c110b108f14a589d2bdefbd39216a1933c31c79e9b455c25"
+          },
           {
             "source_id": "FISRC-8c073d38e1f34758",
             "source_url": "https://news.pedaily.cn/202607/565883.shtml",
@@ -299036,7 +299190,7 @@
             "quote_hash": "3022384b433c37d55327275d07ba6ebb52912ae5559ba84f6eeeeb7f2c306922"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-28"
       },
       "activity_count": 1,
       "portfolio_companies": [],
