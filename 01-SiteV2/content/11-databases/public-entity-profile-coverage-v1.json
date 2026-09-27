@@ -40083,19 +40083,163 @@
     "INV-186a6d2f1f06fb": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "四川振兴科创基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "coverage_note": "“四川振兴科创基金”为简称；全称、备案与注册规模来自四川产业振兴基金投资集团公开资料。50.55亿元是基金注册规模，不代表实缴资本、已投资金额或管理规模。四川聚信致远的在管基金数、管理规模、投资规模及退出案例属于管理人整体自述，不代表本基金单体业绩。联系信息也属于基金管理人公开渠道，不是已确认的基金专属申报渠道。",
+      "summary": "四川振兴科创基金的法律名称为四川振兴科创股权投资基金合伙企业（有限合伙）。四川产业振兴基金投资集团披露，该基金于2026年5月8日在中国证券投资基金业协会完成备案，注册规模为50.55亿元，由四川聚信致远私募基金管理有限公司担任管理人，重点面向技术已验证、市场需求明确的高成长科技项目及具备高技术壁垒的早期项目。该注册规模不等同于实缴资本、资产管理规模或投资业绩。",
+      "facts": [
         {
-          "description": "融资来源记录：影目科技 · C3轮 · 2026-09-09 · 本轮领投 · 未披露。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-6acf14b7549af590"
+          "field": "legal_name",
+          "label": "基金法律名称",
+          "value": "四川振兴科创股权投资基金合伙企业（有限合伙）",
+          "source_id": "sichuan_spark_fund_filing"
+        },
+        {
+          "field": "fund_registration",
+          "label": "中基协备案",
+          "value": "基金管理人官网于2026年5月9日公告：基金于2026年5月8日完成中国证券投资基金业协会备案。",
+          "source_id": "sichuan_spark_fund_filing"
+        },
+        {
+          "field": "registered_scale",
+          "label": "注册规模",
+          "value": "人民币 50.55 亿元（约人民币 50.55 亿；CNY 5.055 billion）。这是注册规模口径，不代表实缴资本、管理规模或该基金已投资金额。",
+          "source_id": "sichuan_spark_fund_filing"
+        },
+        {
+          "field": "fund_sponsors_and_manager",
+          "label": "共同出资方与管理人",
+          "value": "公告列示共同出资方包括四川社保科创股权投资基金合伙企业（有限合伙）、四川聚信致远私募基金管理有限公司及建信金投私募基金管理（北京）有限公司；四川聚信致远私募基金管理有限公司担任管理人。",
+          "source_id": "sichuan_spark_fund_manager_relation"
+        },
+        {
+          "field": "investment_focus",
+          "label": "公开披露的投资方向",
+          "value": [
+            "关键技术已验证且市场需求明确的高成长项目",
+            "细分领域具有高技术壁垒的项目"
+          ],
+          "source_id": "sichuan_spark_fund_strategy"
+        },
+        {
+          "field": "manager_background",
+          "label": "管理人背景（非本基金单体指标）",
+          "value": "基金管理人四川聚信致远官网披露：注册资本人民币1亿元，系四川产业基金全资子公司；在管基金20余支、管理规模超过人民币200亿元、投资规模超过人民币100亿元。以上均为管理人整体口径。",
+          "source_id": "sichuan_juxin_manager_scale"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2026-05-08",
+          "description": "四川产业振兴基金投资集团公告该基金在中国证券投资基金业协会完成备案。",
+          "source_id": "sichuan_spark_fund_filing"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "融资披露记录：影目科技 · C3轮 · 2026-09-09 · 四川振兴科创基金领投 · 融资总额未披露。本库来源未披露基金单独出资额。",
+          "source_id": "FISRC-6acf14b7549af590"
+        },
+        {
+          "description": "管理人整体业绩披露：四川聚信致远称其培育的企业中包括锦欣生殖等在A股或港交所上市；此为管理人自述的整体案例，不代表该基金投资或退出记录。",
+          "source_id": "sichuan_juxin_manager_track"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "基金管理人四川聚信致远公司介绍",
+          "value": "四川聚信致远私募基金管理有限公司",
+          "url": "https://www.sccyzxjj.com/jx/",
+          "source_id": "sichuan_juxin_manager"
+        },
+        {
+          "kind": "phone",
+          "label": "基金管理人公开服务电话（非基金专属申报热线）",
+          "value": "028-85323121",
+          "url": "https://www.sccyzxjj.com/member/",
+          "source_id": "sichuan_juxin_public_phone"
+        },
+        {
+          "kind": "address",
+          "label": "基金管理人办公地址（非基金注册地）",
+          "value": "成都高新区益州大道中段999号四川振兴（高新）双创基地14楼",
+          "url": "https://www.sccyzxjj.com/member/",
+          "source_id": "sichuan_juxin_public_address"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "sichuan_spark_fund_filing",
+          "source_url": "https://www.sccyzxjj.com/fund-hydt/7662.html",
+          "source_title": "四川振兴科创基金完成中基协备案-工作动态-四川产业振兴基金投资集团有限公司",
+          "source_content_hash": "9916ef1506519c4f15494d61a98163e5cdb085c7394e8336508ce1ef5f4d00be",
+          "quote": "注册规模50.55亿元的四川振兴科创股权投资基金合伙企业（有限合伙）成功在中基协完成备案。",
+          "quote_hash": "83d1b8db06a6f5297dd2b2dd1ba6a6aa9470095146979d644d8f87d59029aa35"
+        },
+        {
+          "source_id": "sichuan_spark_fund_strategy",
+          "source_url": "https://www.sccyzxjj.com/fund-hydt/7662.html",
+          "source_title": "四川振兴科创基金完成中基协备案-工作动态-四川产业振兴基金投资集团有限公司",
+          "source_content_hash": "9916ef1506519c4f15494d61a98163e5cdb085c7394e8336508ce1ef5f4d00be",
+          "quote": "重点投资关键技术已验证、市场需求明确且具备资本化预期的高成长项目，同时兼顾细分领域具备高技术壁垒的优质早期项目。",
+          "quote_hash": "5f795987f03b97ffafd9b17d2f81d4db9a463099afd1fb705a0319eda6e93f68"
+        },
+        {
+          "source_id": "sichuan_spark_fund_manager_relation",
+          "source_url": "https://www.sccyzxjj.com/fund-hydt/7662.html",
+          "source_title": "四川振兴科创基金完成中基协备案-工作动态-四川产业振兴基金投资集团有限公司",
+          "source_content_hash": "9916ef1506519c4f15494d61a98163e5cdb085c7394e8336508ce1ef5f4d00be",
+          "quote": "四川聚信致远私募基金管理有限公司担任管理人。",
+          "quote_hash": "191f8d5028ce301114da4309a6a5506403e9d72cd0411996078a5084cbd7f7ce"
+        },
+        {
+          "source_id": "sichuan_juxin_manager_scale",
+          "source_url": "https://www.sccyzxjj.com/jx/",
+          "source_title": "四川聚信致远私募基金管理有限公司｜四川产业振兴基金投资集团有限公司",
+          "source_content_hash": "40ce22c4eada3f0a37c71191fc3b6d8161eded800afac01f42c3a36cb8fe75c3",
+          "quote": "目前，公司在管四川省绿色低碳产业基金等政府引导基金、四川振兴科创基金等市场化产业基金共20余支，管理规模超过200亿元，投资规模超过100亿元。",
+          "quote_hash": "417323fd2f75c2686bb4664fcfea75cc4ab133383d873107a1bd5e7e3f4617ea"
+        },
+        {
+          "source_id": "sichuan_juxin_manager_track",
+          "source_url": "https://www.sccyzxjj.com/jx/",
+          "source_title": "四川聚信致远私募基金管理有限公司｜四川产业振兴基金投资集团有限公司",
+          "source_content_hash": "40ce22c4eada3f0a37c71191fc3b6d8161eded800afac01f42c3a36cb8fe75c3",
+          "quote": "培育了锦欣生殖等一批优质企业在国内A股或港交所上市。",
+          "quote_hash": "413c48dfa40cd0c40bf8e324b840c9d57972adc321ceb13d2b32f90ceac05773"
+        },
+        {
+          "source_id": "sichuan_juxin_public_phone",
+          "source_url": "https://www.sccyzxjj.com/member/",
+          "source_title": "核心企业｜四川产业振兴基金投资集团有限公司",
+          "source_content_hash": "d807e67bb82c62ec9d8b4dd08ba7aff6e5d80f264844a206f412e4ff20b6909c",
+          "quote": "服务电话：028-85323121。",
+          "quote_hash": "e764c1a281450aa761d87b40fa8dfd36f5d49a33e6ea9ef1cf285ba1658257a3"
+        },
+        {
+          "source_id": "sichuan_juxin_public_address",
+          "source_url": "https://www.sccyzxjj.com/member/",
+          "source_title": "核心企业｜四川产业振兴基金投资集团有限公司",
+          "source_content_hash": "d807e67bb82c62ec9d8b4dd08ba7aff6e5d80f264844a206f412e4ff20b6909c",
+          "quote": "成都高新区益州大道中段999号四川振兴（高新）双创基地14楼。",
+          "quote_hash": "6c88a3c7234643c36064f96509918f6de81a7e7b8cac02a895b43fd52d1b5e77"
+        },
+        {
+          "source_id": "sichuan_juxin_manager",
+          "source_url": "https://www.sccyzxjj.com/jx/",
+          "source_title": "四川聚信致远私募基金管理有限公司｜四川产业振兴基金投资集团有限公司",
+          "source_content_hash": "40ce22c4eada3f0a37c71191fc3b6d8161eded800afac01f42c3a36cb8fe75c3",
+          "quote": "四川聚信注册资本1亿元，系四川产业基金全资子公司。",
+          "quote_hash": "ca5f6fe3b9c95a8d50f696a6e102c65b30e5c229ec71ecf6057e1003e25c881f"
+        },
+        {
+          "source_id": "sichuan_juxin_public_contact",
+          "source_url": "https://www.sccyzxjj.com/member/",
+          "source_title": "核心企业｜四川产业振兴基金投资集团有限公司",
+          "source_content_hash": "d807e67bb82c62ec9d8b4dd08ba7aff6e5d80f264844a206f412e4ff20b6909c",
+          "quote": "四川聚信致远私募基金管理有限公司 成都高新区益州大道中段999号四川振兴（高新）双创基地14楼 服务电话：028-85323121。",
+          "quote_hash": "025af827f1ed71b778270881bf267d9f8b4dcb0100fcb4f0ff1b83eef6e35cce"
+        },
         {
           "source_id": "FISRC-6acf14b7549af590",
           "source_url": "https://www.36kr.com/p/3974730056757511",
@@ -40105,7 +40249,7 @@
           "quote_hash": "d5864d9bcf14e6d4004c00aac6bc2d740768edf07a86434606e38b28ecc38d37"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     },
     "INV-e01f14460f5bac": {
       "profile_type": "unverified",
@@ -51004,19 +51148,59 @@
     "INV-ed26f67a4ec07e": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "徐汇科创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "徐汇区政府公开资料确认2023年设立“徐汇科创投基金”，并披露其投资取向。公开资料未确认融资数据库简称“徐汇科创投”对应的具体基金法律主体、现任管理人、基金规模、投资回报或项目申报渠道；本档案不推定其与其他徐汇区国资机构为同一法律主体。",
+      "summary": "“徐汇科创投”在本库作为投资组织名称收录。徐汇区政府公开资料称，区政府于2023年出资设立“徐汇科创投基金”，聚焦投早、投小、投硬科技，关注不同发展阶段的科技型企业及科创项目。公开资料尚不足以确认该简称对应的具体基金法律主体、管理人、基金规模或回报表现。",
+      "facts": [
+        {
+          "field": "fund_formation",
+          "label": "设立背景",
+          "value": "徐汇区政府公开答复称，徐汇区于2023年出资设立“徐汇科创投基金”；融资数据库中的“徐汇科创投”按该基金品牌名称收录，不据此推定其具体法律主体。",
+          "source_id": "xuhui_fund_district_reply"
+        },
+        {
+          "field": "investment_focus",
+          "label": "公开披露的投资方向",
+          "value": [
+            "投早",
+            "投小",
+            "投硬科技",
+            "关注处于各发展阶段的科技型企业或科创项目"
+          ],
+          "source_id": "xuhui_fund_district_reply"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2023",
+          "description": "徐汇区政府公开资料记载，徐汇区于2023年出资设立“徐汇科创投基金”。",
+          "source_id": "xuhui_fund_district_reply"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：元川微 · Pre-A轮 · 2026-07-24 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资披露记录：元川微 · Pre-A轮 · 2026-07-24 · 本轮参投 · 融资金额披露为数亿元。本库来源列徐汇科创投为联合投资方；公开材料未披露该笔投资的单独出资额。",
           "source_id": "FISRC-ee42dc11e9aa441b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "徐汇区政府公开资料（非基金项目申请渠道）",
+          "value": "上海市徐汇区人民政府",
+          "url": "https://www.xuhui.gov.cn/xxgk/portal/article/detail?id=8a4c0c069010d7ca019153ffd1640a15",
+          "source_id": "xuhui_fund_district_reply"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "xuhui_fund_district_reply",
+          "source_url": "https://www.xuhui.gov.cn/xxgk/portal/article/detail?id=8a4c0c069010d7ca019153ffd1640a15",
+          "source_title": "关注股权投资市场“明股实债”风险，确保科创金融安全的建议｜上海市徐汇区人民政府",
+          "source_content_hash": "62998a84470e52641268901fee4816c7727f488b1d0fdfc03a368604a2c6b68b",
+          "quote": "在2023年出资设立“徐汇科创投基金”，聚焦“投早投小投硬”，关注处于各发展阶段的科技型企业（或科创项目）。",
+          "quote_hash": "6c5d7cbbe6dad97619b3b28c886b8e030926409ea47db67417dc4d97575f0cf3"
+        },
         {
           "source_id": "FISRC-ee42dc11e9aa441b",
           "source_url": "https://www.cjcn.com.cn/news/show-475659.html",
@@ -51026,7 +51210,7 @@
           "quote_hash": "4fc479d899c2302755938d07a87f5969b837f37def30907e2dc06841881dd454"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     },
     "INV-5611d6c674ea2f": {
       "profile_type": "unverified",
@@ -64440,19 +64624,126 @@
     "INV-8640d5346f9c43": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "无锡数据集团 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "coverage_note": "机构背景来自国联集团公开资料；投资案例只列有融资来源支持的披露记录。与具身智能企业的战略合作为产业合作，不计作融资投资。",
+      "summary": "无锡数据集团有限公司前身为无锡市大数据集团有限公司，于2024年9月更名。国联集团将其介绍为国有全资、具有功能保障属性的市场竞争类企业，围绕数据资产、数字基础设施、数字政府服务、数字产业投资和数字生态开展业务。本库收录的融资记录显示其参与穹彻智能一轮融资；这不代表其完整投资组合。",
+      "facts": [
         {
-          "description": "融资来源记录：穹彻智能 · 轮次未披露 · 2026-06-18 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-e3b51be471b79167"
+          "field": "corporate_history",
+          "label": "成立与更名",
+          "value": "前身无锡市大数据集团有限公司于2023年2月16日揭牌成立；经无锡市人民政府批准，2024年9月更名为无锡数据集团有限公司。",
+          "source_id": "wuxi_data_group_official"
+        },
+        {
+          "field": "ownership_and_status",
+          "label": "企业属性",
+          "value": "国有全资，具有功能保障属性的市场竞争类企业。",
+          "source_id": "wuxi_data_group_official"
+        },
+        {
+          "field": "registered_capital",
+          "label": "注册资本",
+          "value": "人民币 29,205.16 万元（约人民币 2.920516 亿元）。",
+          "source_id": "wuxi_data_group_official"
+        },
+        {
+          "field": "business_positioning",
+          "label": "官方介绍的业务定位",
+          "value": [
+            "数据资产开发运营商",
+            "数字基础设施承建商",
+            "数字政府服务商",
+            "数字产业投资商",
+            "数字生态集聚商"
+          ],
+          "source_id": "wuxi_data_group_business"
+        },
+        {
+          "field": "organization_scale",
+          "label": "官网披露的组织规模",
+          "value": "国联集团页面列示下设7家子企业（其中2家瞪羚企业），在数据治理、平台研发、城市数字化、智能传感设备四个领域拥有340人专业团队。该为页面核验时的机构自述。",
+          "source_id": "wuxi_data_group_scale"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2023-02-16",
+          "description": "前身无锡市大数据集团有限公司揭牌成立。",
+          "source_id": "wuxi_data_group_official"
+        },
+        {
+          "date": "2024-09",
+          "description": "经无锡市人民政府批准，更名为无锡数据集团有限公司。",
+          "source_id": "wuxi_data_group_official"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "融资披露记录：穹彻智能 · 2026-06-18 · 本轮参投 · 融资金额为数亿元（来源原文未提供无锡数据集团的单独投资额）。这是本库检索到的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e3b51be471b79167"
+        },
+        {
+          "description": "产业合作：2026年8月14日与北京渊澈太初智能科技有限公司签署战略合作协议，合作涉及肌电感知硬件、高维数据采集与具身智能数据治理；该事件属于战略合作，不是融资投资。",
+          "source_id": "wuxi_data_group_embodied_ai"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "国联集团官网中的无锡数据集团介绍",
+          "value": "无锡数据集团有限公司",
+          "url": "https://www.glgc.com.cn/jtcy/glsy/702992715673669.shtml",
+          "source_id": "wuxi_data_group_official"
+        },
+        {
+          "kind": "address",
+          "label": "公司地址（国联集团官网）",
+          "value": "无锡市金融一街8号国联金融大厦",
+          "url": "https://www.glgc.com.cn/jtcy/glsy/702992715673669.shtml",
+          "source_id": "wuxi_data_group_address"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "wuxi_data_group_official",
+          "source_url": "https://www.glgc.com.cn/jtcy/glsy/702992715673669.shtml",
+          "source_title": "无锡数据集团有限公司｜国联集团",
+          "source_content_hash": "95596eed43c475c34e4883b1ca7ab658a1ff66ed401b7ef84a4b49190ea61e98",
+          "quote": "无锡市大数据集团有限公司于2023年2月16日揭牌成立，为国有全资具有功能保障属性的市场竞争类企业，注册资本29205.16万元。经无锡市人民政府批准，2024年9月更名为无锡数据集团有限公司。",
+          "quote_hash": "6529e0ab377a02d1ca2ed6bd1302e5b3c4f54a89f5b9723e8f794a19924c0848"
+        },
+        {
+          "source_id": "wuxi_data_group_business",
+          "source_url": "https://www.glgc.com.cn/jtcy/glsy/702992715673669.shtml",
+          "source_title": "无锡数据集团有限公司｜国联集团",
+          "source_content_hash": "95596eed43c475c34e4883b1ca7ab658a1ff66ed401b7ef84a4b49190ea61e98",
+          "quote": "无锡数据集团定位为数据资产开发运营商、数字基础设施承建商、数字政府服务商、数字产业投资商和数字生态集聚商。",
+          "quote_hash": "a4ffa8c4b3fec0855ea6ced3705a5f625736a7622b2211ee941933d5edee87f9"
+        },
+        {
+          "source_id": "wuxi_data_group_scale",
+          "source_url": "https://www.glgc.com.cn/jtcy/glsy/702992715673669.shtml",
+          "source_title": "无锡数据集团有限公司｜国联集团",
+          "source_content_hash": "95596eed43c475c34e4883b1ca7ab658a1ff66ed401b7ef84a4b49190ea61e98",
+          "quote": "公司下设7家子企业（其中2家瞪羚企业），拥有数据治理、平台研发、城市数字化、智能传感设备四大领域专业团队340人。",
+          "quote_hash": "d50923a307bda9ab874e615e78f2a479263ee70475d5d4c383df31648d2b3574"
+        },
+        {
+          "source_id": "wuxi_data_group_address",
+          "source_url": "https://www.glgc.com.cn/jtcy/glsy/702992715673669.shtml",
+          "source_title": "无锡数据集团有限公司｜国联集团",
+          "source_content_hash": "95596eed43c475c34e4883b1ca7ab658a1ff66ed401b7ef84a4b49190ea61e98",
+          "quote": "公司地址：无锡市金融一街8号国联金融大厦。",
+          "quote_hash": "b7b0aa100a39cb651fb8fff0c3bcf11d49d4c8e72af8650ce589ad880e273071"
+        },
+        {
+          "source_id": "wuxi_data_group_embodied_ai",
+          "source_url": "https://zx.wuxi.gov.cn/doc/2026/08/15/4818584.shtml",
+          "source_title": "“千企百万小时”计划再添技术伙伴｜政协无锡市委员会",
+          "source_content_hash": "f1589ee55b3708c7b22bc2b7f3f87ba98e7815639069e2f9b19957a6c00b5d68",
+          "quote": "8月14日，无锡数据集团与前沿感知领军企业北京渊澈太初智能科技有限公司签署战略合作协议。",
+          "quote_hash": "5bfb9050c0f505163751d44abd2deb13735411b3752d2e2d09f6e7eecb0be14a"
+        },
         {
           "source_id": "FISRC-e3b51be471b79167",
           "source_url": "https://www.wuxicapital.com.cn/news_59/575.html",
@@ -64462,7 +64753,7 @@
           "quote_hash": "9a56d47990c9b47b90dd3b1b9aa7578bbbecb53cd57d2bce6b90d2cd9b0972cf"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     },
     "INV-c3175b1800c06c": {
       "profile_type": "organization",
