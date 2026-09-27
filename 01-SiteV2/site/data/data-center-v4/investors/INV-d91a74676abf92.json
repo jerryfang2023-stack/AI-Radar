@@ -131,12 +131,56 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "济和创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "历史股权、注册信息来自较早的上市公司招股文件，仅代表文件签署时状态，未能确认为当前工商信息。2025年融资报道把济和创投董事长王学超与其人工智能软件投资方向联系起来。融资库链接的2026年文章是对2025年10月Pre-A轮的回顾，不能作为2026年新一轮投资或当前融资金额。",
+      "summary": "济和创投是一家由王学超领导的投资机构。历史上市公司文件显示，相关济和创投主体于2011年设立并曾持有贝达药业股份；2025年融资报道将其列为北京数巅科技Pre-A轮联合领投方。报道中济和创投董事长王学超称，通用人工智能是其长期布局方向，并将数巅称为其人工智能软件领域的代表性投资。",
+      "facts": [
+        {
+          "field": "historical_company_details",
+          "label": "历史公司信息（IPO文件披露时）",
+          "value": "贝达药业2022年发行文件记载浙江济和创业投资有限公司成立于2011年7月15日，注册资本人民币3,000万元，法定代表人为王学超；这是文件披露时的信息，不代表当前工商状态。",
+          "source_id": "jihe_2022_company"
+        },
+        {
+          "field": "historical_ownership",
+          "label": "历史股权结构（IPO文件披露时）",
+          "value": "贝达药业2022年发行文件列示，截至2022年9月30日王学超认缴2,700万元、持股90%，沈其芬和济和集团各持股5%；该比例不是当前股权结论。",
+          "source_id": "jihe_2022_ownership"
+        },
+        {
+          "field": "leadership",
+          "label": "公开报道提及的负责人",
+          "value": "2025年数巅融资报道称济和创投董事长为王学超，并引述其谈论该笔投资。",
+          "source_id": "jihe_shudian_leader"
+        },
+        {
+          "field": "investment_focus",
+          "label": "公开投资方向表述",
+          "value": "2025年报道中，济和创投董事长王学超称通用人工智能是机构坚定布局的长期赛道。",
+          "source_id": "jihe_shudian_wang"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2011-07-15",
+          "description": "贝达药业2022年发行文件记载浙江济和创业投资有限公司成立于2011年7月15日；现存主体沿革仍需以工商登记核验。",
+          "source_id": "jihe_2022_company"
+        },
+        {
+          "date": "2025-10-28",
+          "description": "数巅科技宣布完成数亿元人民币Pre-A轮，济和创投与赛富基金联合领投。",
+          "source_id": "jihe_shudian_round"
+        }
+      ],
       "track_record": [
+        {
+          "description": "贝达药业首次公开发行文件列示，济和创投在该招股文件签署时持有贝达药业15.96%股份。这是历史持股记录，不代表当前持股或实现回报。",
+          "source_id": "jihe_beda_shareholder"
+        },
+        {
+          "description": "2025年数巅科技数亿元人民币Pre-A轮联合领投方。该轮金额为整轮融资规模，不是济和创投的单笔出资额。数据库还链接了一篇2026年回顾报道，其文中“去年10月”指2025年10月。",
+          "source_id": "jihe_shudian_round"
+        },
         {
           "description": "融资来源记录：数巅智能 · 多轮融资 · 2026-09-21 · pre-A轮联合领投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9ebda1057c2926b3"
@@ -151,9 +195,57 @@
           "source_content_hash": "6e9cfd36fd6943c7",
           "quote": "公司去年10月完成数亿元人民币pre-A轮融资，由济和创投和赛富基金联合领投，北京市信息产业发展投资基金、广州红鸟启航基金、上海领屹投资等机构跟投，老股东君联资本等也持续加码。",
           "quote_hash": "fcd45a3c282bf9b19a1d8d9e69340a6f4c6018575e8aa1d26a10e45b7159d87b"
+        },
+        {
+          "source_id": "jihe_shudian_round",
+          "source_url": "https://news.newseed.cn/p/1376504",
+          "source_title": "数巅完成数亿元Pre-A轮融资，济和创投和赛富基金联合领投 · 新芽NewSeed",
+          "source_content_hash": "0ef24637212695aa65bfcb51dcc6c24cd7728a2df8a0e93c26cdb09046ed947e",
+          "quote": "近日，北京数巅科技有限公司（以下简称“数巅”）宣布完成数亿元人民币pre-A轮融资，由济和创投和赛富基金联合领投，北京市信息产业发展投资基金、广州红鸟启航基金、上海领屹投资等机构跟投，老股东君联资本等也持续加码。",
+          "quote_hash": "9d74a21a1505bc753d0d212342c0c50cd94436ba4a92520365980e25c8fb73b6"
+        },
+        {
+          "source_id": "jihe_shudian_wang",
+          "source_url": "https://news.newseed.cn/p/1376504",
+          "source_title": "济和创投董事长谈数巅投资 · 新芽NewSeed",
+          "source_content_hash": "0ef24637212695aa65bfcb51dcc6c24cd7728a2df8a0e93c26cdb09046ed947e",
+          "quote": "通用人工智能是我们坚定布局的长期赛道，而技术落地路径的选择直接决定公司成败。",
+          "quote_hash": "2505692a29c55d4d8e61ca178b46d519cee1c58283b706632126bda3b4c1bba9"
+        },
+        {
+          "source_id": "jihe_2022_company",
+          "source_url": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?CompanyCode=80088820&gather=1&id=8699088",
+          "source_title": "贝达药业2022年度向特定对象发行A股股票募集说明书 · 新浪财经公告库",
+          "source_content_hash": "c47272e298e51b0b",
+          "quote": "浙江济和创业投资有限公司；法定代表人王学超；成立日期2011年7月15日；注册资本3,000万元；统一社会信用代码91330000580362138K。",
+          "quote_hash": "d81d54945a1e042b00046ba3a676e9a94c0d2cd53cb6985e075ec154d498b78b"
+        },
+        {
+          "source_id": "jihe_2022_ownership",
+          "source_url": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?CompanyCode=80088820&gather=1&id=8699088",
+          "source_title": "济和创投截至2022年9月30日的股东及出资比例 · 新浪财经公告库",
+          "source_content_hash": "c47272e298e51b0b",
+          "quote": "截至2022年9月30日，济和创投股东及认缴出资额：王学超2,700.00万元、90.00%；沈其芬150.00万元、5.00%；济和集团150.00万元、5.00%。",
+          "quote_hash": "a3a840d163958e8578a8e0aae877b983bf3b7cdf394ad3951e019e2c3238f15e"
+        },
+        {
+          "source_id": "jihe_beda_shareholder",
+          "source_url": "https://stock.tianyancha.com/Announcement/cninfo/945982e394a4865f9af145d448a3e2df.pdf",
+          "source_title": "贝达药业首次公开发行股票招股文件 · 公司公告镜像",
+          "source_content_hash": "1a390ac1911289f6",
+          "quote": "济和创投 23,940,000 15.9600%",
+          "quote_hash": "2e9b50b7253e3c41a6293b7edf4b26955c3e48d8e6f04dd0cf580fbc6637d632"
+        },
+        {
+          "source_id": "jihe_shudian_leader",
+          "source_url": "https://news.newseed.cn/p/1376504",
+          "source_title": "济和创投董事长王学超谈数巅投资 · 新芽NewSeed",
+          "source_content_hash": "0ef24637212695aa",
+          "quote": "对于本轮投资，济和创投董事长王学超表示",
+          "quote_hash": "c891bf54290fef37da97f6bed5d641580e3da7ee8331d3ae326c2d2627217f41"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

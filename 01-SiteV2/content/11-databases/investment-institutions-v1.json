@@ -132103,18 +132103,95 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "华美国际投资集团 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
-        "track_record": [
+        "coverage_status": "researched",
+        "coverage_note": "公司背景、网站和电话来自投资界/清科私募通机构页面，联系方式尚未通过集团官方渠道复核。2024年上市公司定向发行文件反映当时的注册信息；地瓜机器人C轮的4亿美元是整轮金额，不是华美国际单笔出资。集团教育及地产等业务不能直接视作股权投资业绩。",
+        "summary": "华美国际投资集团有限公司是一家总部位于广州的综合投资集团，公开机构资料将其业务概括为教育、金融证券和股权投资，并涉及商业地产。上市公司披露文件显示，集团名下设有证券私募投资基金并参与定向发行。融资报道另将华美国际列为地瓜机器人2026年C轮参投方；公开来源未披露其具体出资额。",
+        "facts": [
           {
-            "description": "融资来源记录：地瓜机器人 · C轮 · 2026-09-17 · 本轮参投 · 4亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-517ef1b31eac6dd3"
+            "field": "established",
+            "label": "成立时间",
+            "value": "投资界/清科机构资料列示为2000年。",
+            "source_id": "huamei_pedaily"
+          },
+          {
+            "field": "business",
+            "label": "公开业务板块",
+            "value": [
+              "教育",
+              "金融证券",
+              "股权投资",
+              "商业地产"
+            ],
+            "source_id": "huamei_pedaily"
+          },
+          {
+            "field": "subsidiaries",
+            "label": "公开列示的关联单位",
+            "value": [
+              "广州华美英语实验学校",
+              "天津英华国际学校",
+              "广东华美雅思教育服务有限公司",
+              "广州香雪城",
+              "内蒙古华美国际汽配城"
+            ],
+            "source_id": "huamei_pedaily_affiliates"
+          },
+          {
+            "field": "registered_details",
+            "label": "上市公司披露的公司信息（2024年文件）",
+            "value": "统一社会信用代码 91440101719286783K；法定代表人祝丽娜；注册资本人民币1.38亿元；经营范围包括企业自有资金投资、资产管理和投资管理服务。该组数据是2024年发行文件所载信息。",
+            "source_id": "huamei_cninfo"
+          },
+          {
+            "field": "fund_activity",
+            "label": "证券投资基金活动",
+            "value": "上市公司定向发行文件列出华美国际投资集团关联的华美对冲策略证券私募投资基金作为发行对象；这是投资活动记录，不代表收益。",
+            "source_id": "huamei_cninfo_funds"
           }
         ],
-        "contacts": [],
+        "milestones": [
+          {
+            "date": "2000",
+            "description": "投资界/清科机构页面列示集团创立于2000年。",
+            "source_id": "huamei_pedaily"
+          },
+          {
+            "date": "2024-06-14",
+            "description": "上市公司定向发行文件列出与集团关联的华美对冲策略证券私募投资基金作为发行对象。",
+            "source_id": "huamei_cninfo_funds"
+          }
+        ],
+        "track_record": [
+          {
+            "description": "融资披露记录：华美国际投资集团被列为地瓜机器人2026年C轮参投方；融资报道披露整轮规模为4亿美元，未披露华美国际的单笔金额。",
+            "source_id": "FISRC-517ef1b31eac6dd3"
+          },
+          {
+            "description": "上市公司定向发行文件记录了与华美国际投资集团关联的私募证券基金参与配售。这是公开投资活动记录，不代表基金收益或完整投资组合。",
+            "source_id": "huamei_cninfo_funds"
+          }
+        ],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "投资界机构页面列示的网站，当前可用性未复核",
+            "value": "华美国际投资集团",
+            "url": "http://www.huameigroup.com.cn",
+            "source_id": "huamei_pedaily_website"
+          },
+          {
+            "kind": "phone",
+            "label": "投资界机构页面公开电话，尚未通过集团官方渠道复核",
+            "value": "+86 20 8721 0388",
+            "source_id": "huamei_pedaily_contact"
+          },
+          {
+            "kind": "address",
+            "label": "2024年上市公司发行文件所载注册地址（需核验是否仍为现址）",
+            "value": "广州市黄埔区荔红二路9号1栋3012室",
+            "source_id": "huamei_cninfo"
+          }
+        ],
         "sources": [
           {
             "source_id": "FISRC-517ef1b31eac6dd3",
@@ -132123,9 +132200,57 @@
             "source_content_hash": "ffc4d665dce6209d",
             "quote": "凯辉基金、华美国际投资集团、广发信德、超越摩尔、启航投资芯创二期基金等机构联合跟投",
             "quote_hash": "7bdc9a76799f80a936bb33aab97e75cdc6b2fb6eefbdb8fa5fd4e6dd135c0809"
+          },
+          {
+            "source_id": "huamei_pedaily",
+            "source_url": "https://zdb.pedaily.cn/company/show12711/",
+            "source_title": "华美国际投资集团有限公司 · 投资界/清科私募通",
+            "source_content_hash": "bd30df7a1033b0a1",
+            "quote": "华美国际投资集团有限公司创立于2000年，发展至今已成为一家以教育、金融证券、股权投资为主，商业地产为辅的知名国际投资集团，主营业务分为华美教育和华美投资两大板块。",
+            "quote_hash": "3d18d2a77f0e3238e87a00dfa10ccef416f518c3581d9b04927e8bcfef1fb7bf"
+          },
+          {
+            "source_id": "huamei_cninfo",
+            "source_url": "https://static.cninfo.com.cn/finalpage/2024-06-14/1220347629.PDF",
+            "source_title": "上市公司向特定对象发行股票发行情况报告书 · 巨潮资讯网",
+            "source_content_hash": "73c1ab0f4288b7b043c37db6ddc8669c53ca389638ff20aa8da34d75358e3879",
+            "quote": "公司名称 华美国际投资集团有限公司（华美对冲策略证券私募投资基金） 企业性质 其他有限责任公司 统一社会信用代码 91440101719286783K 法定代表人 祝丽娜 住所 广州市黄埔区荔红二路 9 号 1 栋 3012 室 注册资本 13,800.00 万元人民币 经营范围 企业自有资金投资;资产管理（不含许可审批项目）;投资管理服务",
+            "quote_hash": "8242bd5c15435d92bed3087d7ea86cb0f8253550f0a5ee9daec847bdb3809f3b"
+          },
+          {
+            "source_id": "huamei_pedaily_affiliates",
+            "source_url": "https://zdb.pedaily.cn/company/show12711/",
+            "source_title": "华美国际投资集团关联单位 · 投资界/清科私募通",
+            "source_content_hash": "bd30df7a1033b0a1",
+            "quote": "旗下已拥有广州华美英语实验学校（1993年6月创办，为中国创办早的私立学校）、天津英华国际学校、广东华美雅思教育服务有限公司、广州香雪城、内蒙古华美国际汽配城等十余家下属单位。",
+            "quote_hash": "f0c4ac7589885ba12afc61282e91721105e8792411867d71f970466e33ea4650"
+          },
+          {
+            "source_id": "huamei_pedaily_contact",
+            "source_url": "https://zdb.pedaily.cn/company/show12711/",
+            "source_title": "华美国际投资集团联系方式 · 投资界/清科私募通",
+            "source_content_hash": "bd30df7a1033b0a1",
+            "quote": "电 话：020-87210388",
+            "quote_hash": "6b8f3ab966087406e63d517718ab40035854376390002a327a28eef53ba0a9c7"
+          },
+          {
+            "source_id": "huamei_pedaily_website",
+            "source_url": "https://zdb.pedaily.cn/company/show12711/",
+            "source_title": "华美国际投资集团官网条目 · 投资界/清科私募通",
+            "source_content_hash": "bd30df7a1033b0a1",
+            "quote": "官方网站：www.huameigroup.com.cn",
+            "quote_hash": "725def771cd3635b6b656091c0976badb9a132a3623aed24a16a2fcb8617816a"
+          },
+          {
+            "source_id": "huamei_cninfo_funds",
+            "source_url": "https://static.cninfo.com.cn/finalpage/2024-06-14/1220347629.PDF",
+            "source_title": "华美关联私募证券基金配售记录 · 巨潮资讯网",
+            "source_content_hash": "73c1ab0f4288b7b043c37db6ddc8669c53ca389638ff20aa8da34d75358e3879",
+            "quote": "华美国际投资集团有限公司（华美对冲策略证券私募投资基金）",
+            "quote_hash": "cf3cddf1a36adf70709f57cb4224a1552e8a89c8e0fa9080fc4c2969265e92ec"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27"
       }
     },
     {
@@ -132643,18 +132768,106 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "启航投资芯创二期基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
-        "track_record": [
+        "coverage_status": "researched",
+        "coverage_note": "融资数据库名称“启航投资芯创二期基金”在公开资料中对应“启航芯创二期基金”或“IC PARK芯创二期基金”，公开全称为北京中发芯创集成电路科技创业投资基金（有限合伙）。过往35.3%毛IRR及被投企业“小巨人”比例属于芯创一期基金，不能代表二期业绩。地瓜机器人4亿美元为整轮融资规模，未披露二期基金的单笔出资额。",
+        "summary": "启航芯创二期基金（IC PARK芯创二期基金）是面向硬科技的产业基金，公开资料将其全称列为北京中发芯创集成电路科技创业投资基金（有限合伙），由中关村集成电路设计园（IC PARK）与启航投资共同发起，基金规模为人民币5亿元。管理人为中关村发展集团成员单位北京启航创业投资管理有限公司，重点关注集成电路核心技术、前沿科技和先进制造。",
+        "facts": [
           {
-            "description": "融资来源记录：地瓜机器人 · C轮 · 2026-09-17 · 本轮参投 · 4亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-517ef1b31eac6dd3"
+            "field": "fund_name",
+            "label": "公开全称及常用名称",
+            "value": "北京中发芯创集成电路科技创业投资基金（有限合伙）；公开资料亦称启航芯创二期基金、IC PARK芯创二期基金。",
+            "source_id": "qihang_fund_profile"
+          },
+          {
+            "field": "fund_size",
+            "label": "基金规模",
+            "value": "人民币5亿元。",
+            "source_id": "qihang_fund_profile"
+          },
+          {
+            "field": "sponsors",
+            "label": "发起方",
+            "value": [
+              "中关村集成电路设计园（IC PARK）",
+              "启航投资"
+            ],
+            "source_id": "qihang_digua_fund"
+          },
+          {
+            "field": "manager",
+            "label": "基金管理人",
+            "value": "北京启航创业投资管理有限公司，为中关村发展集团成员单位。",
+            "source_id": "qihang_fund_profile"
+          },
+          {
+            "field": "manager_background",
+            "label": "管理团队机构背景",
+            "value": "园区平台资料称启航投资成立于2016年8月，团队来自投资机构、律所、投行及产业企业，关注新一代信息技术和智能制造等硬科技。",
+            "source_id": "qihang_investment_team"
+          },
+          {
+            "field": "investment_focus",
+            "label": "投资方向",
+            "value": [
+              "集成电路核心技术",
+              "前沿科技",
+              "先进制造"
+            ],
+            "source_id": "qihang_ncsti"
+          },
+          {
+            "field": "phase_one_performance",
+            "label": "一期基金公开数据（不代表二期）",
+            "value": "科技创新中心平台报道，截至2023年底，芯创一期基金毛内部收益率为35.3%；此为一期历史数据，不代表芯创二期业绩。",
+            "source_id": "qihang_ncsti_phase1"
+          },
+          {
+            "field": "portfolio_company",
+            "label": "公开披露的投资企业",
+            "value": "中关村发展集团及IC PARK官方信息将地瓜机器人列为芯创基金投资企业，并披露芯创二期基金参与其2026年C轮。",
+            "source_id": "qihang_digua_official"
           }
         ],
-        "contacts": [],
+        "milestones": [
+          {
+            "date": "2016-08",
+            "description": "未来科学城平台资料列示管理人启航投资成立于2016年8月；此为管理人时间，不是基金成立时间。",
+            "source_id": "qihang_investment_team"
+          },
+          {
+            "date": "2024-03",
+            "description": "中关村发展集团企业大事记记载IC PARK芯创二期基金完成设立。",
+            "source_id": "qihang_zgc_timeline"
+          },
+          {
+            "date": "2026-09-17",
+            "description": "地瓜机器人完成4亿美元C轮，官方公告列出芯创二期基金为联合跟投机构。",
+            "source_id": "qihang_digua_official"
+          }
+        ],
+        "track_record": [
+          {
+            "description": "地瓜机器人2026年C轮参投方；融资披露的4亿美元是整轮融资总额，基金单笔金额未披露。",
+            "source_id": "FISRC-517ef1b31eac6dd3"
+          },
+          {
+            "description": "中关村发展集团与IC PARK官方公告称芯创基金投资企业地瓜机器人完成4亿美元C轮，并列出芯创二期基金为联合跟投方。",
+            "source_id": "qihang_digua_official"
+          },
+          {
+            "description": "作为历史背景，芯创一期基金披露过35.3%的毛IRR等数据；这些数据属于一期，不能作为本基金二期回报。",
+            "source_id": "qihang_ncsti_phase1"
+          }
+        ],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "基金发起方公开信息页（不是基金直联申请入口）",
+            "value": "中关村发展集团 / IC PARK",
+            "url": "https://www.zgcgroup.com.cn/xwzx/jtyw/art/2026/art_259cff1720224070879ebead65427b22.html",
+            "source_id": "qihang_digua_official"
+          }
+        ],
         "sources": [
           {
             "source_id": "FISRC-517ef1b31eac6dd3",
@@ -132663,9 +132876,65 @@
             "source_content_hash": "ffc4d665dce6209d",
             "quote": "凯辉基金、华美国际投资集团、广发信德、超越摩尔、启航投资芯创二期基金等机构联合跟投",
             "quote_hash": "7bdc9a76799f80a936bb33aab97e75cdc6b2fb6eefbdb8fa5fd4e6dd135c0809"
+          },
+          {
+            "source_id": "qihang_fund_profile",
+            "source_url": "https://www.kechuangfuwu.com/vue/news?id=8376&menu=%E8%B5%B0%E8%BF%9B%E5%9B%AD%E5%8C%BA",
+            "source_title": "启航芯创二期基金与能源及制造母基金完成投资交割 · 未来科学城科创服务平台",
+            "source_content_hash": "66b50971150518bb0985de69a13b6205baad2a54f0ae06bb67cecd05a52d2b4e",
+            "quote": "启航芯创二期基金由中关村发展集团成员单位北京启航创业投资管理有限公司（以下简称“启航投资”）担任管理人，基金规模5亿元。该基金紧密围绕北京市战略部署，以提升创新活力、赋能企业成长为核心，重点聚焦前沿科技、先进制造领域。",
+            "quote_hash": "2e6be73512cee0ad67ce4c50b59b8323d9c8c6819e7b635e11f35201e9d8f854"
+          },
+          {
+            "source_id": "qihang_ncsti",
+            "source_url": "https://www.ncsti.gov.cn/kjdt/yqdy/yqdt/202404/t20240415_153596.html",
+            "source_title": "集成电路设计园芯创二期基金设立，规模5亿元 · 国际科技创新中心网络服务平台",
+            "source_content_hash": "c6b644bc493cc90777a575d5555cf9641c503ac9e9a49b696ecfe31d45aac538",
+            "quote": "近期，中关村集成电路设计园完成了IC PARK芯创二期基金的设立，总规模达5亿元人民币，该基金重点关注并投资集成电路领域中掌握核心技术的优秀创业企业，意在助力这些初创企业成长为硬科技行业的领军者。",
+            "quote_hash": "9067005a1d63c10eb852f90e36c9de04f677d8165d1fca80d3c9cf2c57b86ba8"
+          },
+          {
+            "source_id": "qihang_digua_official",
+            "source_url": "https://www.zgcgroup.com.cn/xwzx/jtyw/art/2026/art_259cff1720224070879ebead65427b22.html",
+            "source_title": "芯创基金投资企业地瓜机器人完成4亿美元C轮融资 · 中关村发展集团/IC PARK",
+            "source_content_hash": "1ece6c2fd0a6c494f14d828a3aa04f39a8c5f037901f94131cc662a101b9a9e8",
+            "quote": "芯创二期基金、凯辉基金、华美国际投资集团有限公司、广发信德、超越摩尔等一线投资机构联合跟投",
+            "quote_hash": "4aa2a7bef2cc78718b01b21f219bc3f5c89def83c73882496d66bfeb397bdec2"
+          },
+          {
+            "source_id": "qihang_zgc_timeline",
+            "source_url": "https://zgcgroup.com.cn/gywm/qydsj/index.html",
+            "source_title": "企业大事记 · 中关村发展集团",
+            "source_content_hash": "b9c730700006a2643073bff198073b15962d4c52bb4efede5bf8bfe80428f0a8",
+            "quote": "2024-03-31 3月，IC PARK芯创二期基金-北京中发芯创集成电路科技创业基金（有限合伙）设立。",
+            "quote_hash": "11ee4a87e13c6493b231478c2b0ac16ebc051fa3977f19ce3bc7c6a354cb7773"
+          },
+          {
+            "source_id": "qihang_investment_team",
+            "source_url": "https://www.kechuangfuwu.com/vue/news?id=8376&menu=%E8%B5%B0%E8%BF%9B%E5%9B%AD%E5%8C%BA",
+            "source_title": "启航投资管理团队简介 · 未来科学城科创服务平台",
+            "source_content_hash": "66b50971150518bb0985de69a13b6205baad2a54f0ae06bb67cecd05a52d2b4e",
+            "quote": "启航投资，成立于2016年8月，核心团队汇聚了来自国内顶尖投行、投资机构、律所及产业龙头的资深人士。团队不仅在新一代信息技术、智能制造等硬科技领域具备深厚的研究积淀和丰富的投资实战经验。",
+            "quote_hash": "0aa1d4de3a88f7384e07bce5b50a43d2a9dfda60498d941fe34b1606dff0d8e1"
+          },
+          {
+            "source_id": "qihang_ncsti_phase1",
+            "source_url": "https://www.ncsti.gov.cn/kjdt/yqdy/yqdt/202404/t20240415_153596.html",
+            "source_title": "芯创一期基金历史回报披露 · 国际科技创新中心网络服务平台",
+            "source_content_hash": "c6b644bc493cc90777a575d5555cf9641c503ac9e9a49b696ecfe31d45aac538",
+            "quote": "截至去年年底，芯创一期基金的毛内部收益率高达35.3%，显示出了优秀的投资回报率。",
+            "quote_hash": "a3e817cf13c2699204e9a45c3dbcccad00a0339fbe7403eb6545737d720b38f2"
+          },
+          {
+            "source_id": "qihang_digua_fund",
+            "source_url": "https://www.zgcgroup.com.cn/xwzx/jtyw/art/2026/art_259cff1720224070879ebead65427b22.html",
+            "source_title": "芯创基金发起方与投资方向 · 中关村发展集团/IC PARK",
+            "source_content_hash": "1ece6c2fd0a6c494f14d828a3aa04f39a8c5f037901f94131cc662a101b9a9e8",
+            "quote": "芯创基金是一支由IC PARK、启航投资共同发起设立的专业产业基金，坚持“投早、投小、投硬科技”，重点投资集成电路领域掌握核心技术的优秀创业企业。",
+            "quote_hash": "08015c3b31dd9d2fa65f8bec443d8bee23500bbf81f660d8d9e2628384bd02f5"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27"
       }
     },
     {
@@ -136477,15 +136746,82 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "华瑞创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "coverage_note": "档案按公开资料中“华瑞创投”对应南京华瑞私募基金管理有限公司整理。华瑞时尚集团的实业规模与成果属于母公司背景，不等同于该基金管理人的投资业绩；因克斯B轮融资披露金额为整轮金额，并非华瑞创投的单笔出资。暂无已核实的基金直联电话或邮箱。",
+        "summary": "华瑞创投对应南京华瑞私募基金管理有限公司，是华瑞时尚集团孵化的硬科技投资平台。公开资料显示，管理人于2024年成立并完成私募管理人备案，聚焦早期、长期和硬科技投资，并结合产业空间、供应链和科创服务支持项目。母公司华瑞时尚集团长期经营服装外贸与供应链业务，近年通过高校成果转化合作开展产业投资。",
+        "facts": [
+          {
+            "field": "legal_manager",
+            "label": "管理人主体",
+            "value": "南京华瑞私募基金管理有限公司（公开资料称“华瑞创投”）",
+            "source_id": "huarui_manager_zhaopin"
+          },
+          {
+            "field": "manager_registration",
+            "label": "私募管理人备案",
+            "value": "中基协登记编号 P1074862；公开招聘资料称于2024年9月完成备案。",
+            "source_id": "huarui_registration"
+          },
+          {
+            "field": "established",
+            "label": "管理人成立时间",
+            "value": "2024年4月28日（企业信息页面所列，需以工商/中基协实时登记为准）",
+            "source_id": "huarui_manager_zhaopin"
+          },
+          {
+            "field": "investment_focus",
+            "label": "公开投资方向",
+            "value": [
+              "前沿科技",
+              "硬科技",
+              "早期与长期投资"
+            ],
+            "source_id": "huarui_manager_zhaopin"
+          },
+          {
+            "field": "investment_model",
+            "label": "投资与赋能方式",
+            "value": "公开介绍称其除投资外，也依托产业空间、产业资源和科创服务陪伴企业成长，并与江宁区国企投资基金协同。",
+            "source_id": "huarui_jiangning"
+          },
+          {
+            "field": "parent_background",
+            "label": "母公司背景",
+            "value": "华瑞时尚集团成立于1993年，长期经营服装外贸与供应链业务；该信息描述母公司，不代表基金管理人的规模或投资回报。",
+            "source_id": "huarui_parent_background"
+          },
+          {
+            "field": "founder_background",
+            "label": "创始人背景",
+            "value": "江宁区政府和南京航空航天大学资料将康宜华介绍为华瑞时尚集团创始人、南京航空航天大学1980级校友；其创业经历属于母公司背景。",
+            "source_id": "huarui_nuaa_founder"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2024-04-28",
+            "description": "南京华瑞私募基金管理有限公司成立。",
+            "source_id": "huarui_manager_zhaopin"
+          },
+          {
+            "date": "2024-11-18",
+            "description": "华瑞时尚集团与南京航空航天大学第二届“华瑞杯”成果转化项目团队签订投资合作协议；这是母公司合作记录，不单独归为管理人直投。",
+            "source_id": "huarui_nuaa"
+          },
+          {
+            "date": "2026-09-02",
+            "description": "江宁区政府介绍华瑞创投与区级国企基金协作布局本地硬科技。",
+            "source_id": "huarui_jiangning"
+          }
+        ],
         "track_record": [
           {
-            "description": "融资来源记录：因克斯 · B轮 · 2026-09-15 · 本轮参投 · 超3亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "融资披露记录：因克斯 B轮，2026-09-15，华瑞创投被列为本轮参投方。报道中的“超3亿元”为该轮融资规模下限，不是华瑞创投单笔出资。",
             "source_id": "FISRC-d0c3dca85d845330"
+          },
+          {
+            "description": "华瑞时尚集团与南京航空航天大学可穿戴肺功能实时成像仪项目团队签署投资协议；此为母公司成果转化投资案例，不作为华瑞创投基金业绩。",
+            "source_id": "huarui_nuaa"
           }
         ],
         "contacts": [],
@@ -136497,9 +136833,57 @@
             "source_content_hash": "e86bd6fffaf894b4",
             "quote": "本轮投资方包括中信金石、纳爱斯、苏创投、华睿投资、南京交控、华瑞创投。",
             "quote_hash": "6c4c7e786af8f1c6a645b416c03de78fe56dc7c68a3fec952cdda6d739fdd0b4"
+          },
+          {
+            "source_id": "huarui_jiangning",
+            "source_url": "https://www.jiangning.gov.cn/xwzx/jrjn/202609/t20260902_5903723.html",
+            "source_title": "从“织布”到“织梦”，这家企业跨界当好“耐心陪跑者” · 南京市江宁区人民政府",
+            "source_content_hash": "2650b5846bc8b6162144ad9551fcb864ca71b3369fc100ed06e4f350f758d8ac",
+            "quote": "企业依托旗下南京华瑞私募基金管理有限公司（华瑞创投），联合江宁区国企投资基金，秉持“产业为本、资本为翼、长期陪跑”理念，深耕硬科技投资、盘活优质产业载体、输出全方位科创赋能服务",
+            "quote_hash": "55d437dfc4919ac8d2981f05860336fc29098a3800f79b1aa3de5c948afb31ad"
+          },
+          {
+            "source_id": "huarui_manager_zhaopin",
+            "source_url": "https://www.zhaopin.com/jobdetail/CCL1495496720J40769963808.htm",
+            "source_title": "南京华瑞私募基金管理有限公司招聘 · 智联招聘",
+            "source_content_hash": "48860215e99e0f0c779512c0a369e5b2b2b816412dd777221a87221e47950058",
+            "quote": "南京华瑞私募基金管理有限公司（备案号：P1074862）是一家专注于私募股权投资的专业机构，坚持市场化、专业化的投资理念，聚焦前沿科技创新，投早、投小、投长期、投硬科技。",
+            "quote_hash": "74e4b43aae634acda6567a0b3b92d8fb81a6ef1c4f22ff9402fcdd940ed2049b"
+          },
+          {
+            "source_id": "huarui_nuaa",
+            "source_url": "https://www.nuaa.edu.cn/2024/1120/c852a358838/page.htm",
+            "source_title": "我校举行第二届“华瑞杯”科创融合成果转化大赛颁奖仪式 · 南京航空航天大学",
+            "source_content_hash": "913cfdae2554767b70d3bba25aa012892757c8423bc82720a20405e4b9cebb7c",
+            "quote": "华瑞时尚集团与华瑞创新奖项目团队达成投资合作并签订投资协议。",
+            "quote_hash": "22a2af2ed974b5e6c8cbceaf90ef174f0c60cb3bbf7722f78da10be315bf32a1"
+          },
+          {
+            "source_id": "huarui_registration",
+            "source_url": "https://www.jiangning.gov.cn/xwzx/jrjn/202609/t20260902_5903723.html",
+            "source_title": "华瑞创投管理人备案信息 · 南京市江宁区人民政府",
+            "source_content_hash": "2650b5846bc8b6162144ad9551fcb864ca71b3369fc100ed06e4f350f758d8ac",
+            "quote": "于2024年4月成立华瑞创投，同年9月通过中基协备案。",
+            "quote_hash": "7d758e47a62bee434c54cce49bd3a5e17004d83c31354c22616e8e11485e9bb9"
+          },
+          {
+            "source_id": "huarui_parent_background",
+            "source_url": "https://www.jiangning.gov.cn/xwzx/jrjn/202609/t20260902_5903723.html",
+            "source_title": "华瑞时尚集团背景 · 南京市江宁区人民政府",
+            "source_content_hash": "2650b5846bc8b6162144ad9551fcb864ca71b3369fc100ed06e4f350f758d8ac",
+            "quote": "1993年成立的华瑞时尚集团，是江苏民营服装外贸行业先行者，深耕实业三十余年，扎根江宁、布局全球，搭建了成熟的供应链体系。",
+            "quote_hash": "654914e4fefdb306bcb971a74a86c2ea45e0c94775621ef521cc677ce52ec7d6"
+          },
+          {
+            "source_id": "huarui_nuaa_founder",
+            "source_url": "https://www.nuaa.edu.cn/2024/1120/c852a358838/page.htm",
+            "source_title": "康宜华履历 · 南京航空航天大学",
+            "source_content_hash": "913cfdae2554767b70d3bba25aa012892757c8423bc82720a20405e4b9cebb7c",
+            "quote": "华瑞时尚集团创始人、我校1980级校友康宜华。",
+            "quote_hash": "ad86aa82527ce365826565b245fe1942ae5aea1c6219fbc96274b94cf857e85e"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27"
       }
     },
     {
@@ -232843,18 +233227,116 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "凯旋创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
-        "track_record": [
+        "coverage_status": "researched",
+        "coverage_note": "机构及团队、联系方式和历史投资记录主要来自投资界/清科私募通和白鲸出海机构目录；网页未说明资料更新时间，电话、地址、人员任职应联系机构前再次核验。历史融资轮次总额不是凯旋创投的单笔出资，披露案例不代表完整组合或投资回报。",
+        "summary": "凯旋创投（KeyTone Ventures，凯旋通（北京）投资顾问有限公司）是一家成立于2008年的科技风险投资机构。公开机构资料关注物联网、人工智能、智能硬件、先进医疗等领域，投资阶段覆盖种子期至成熟期。机构目录将周志雄列为创始合伙人，并记载其此前在软银、SAIF和凯鹏华盈中国基金的经历；这些人员信息未能独立核验其当前任职状态。",
+        "facts": [
           {
-            "description": "融资来源记录：墨芯人工智能 · C轮 · 2026-05-29 · 本轮参投 · 近10亿人民币。这是本库收录的披露案例，不代表完整投资组合。",
+            "field": "legal_name",
+            "label": "机构名称",
+            "value": "凯旋通（北京）投资顾问有限公司；品牌名 KeyTone Ventures / 凯旋创投。",
+            "source_id": "keytone_pedaily_basics"
+          },
+          {
+            "field": "founded",
+            "label": "成立时间",
+            "value": "2008年（投资界/清科私募通资料）。",
+            "source_id": "keytone_pedaily_basics"
+          },
+          {
+            "field": "investment_focus",
+            "label": "公开关注领域",
+            "value": [
+              "物联网",
+              "人工智能",
+              "智能硬件",
+              "先进医疗"
+            ],
+            "source_id": "keytone_pedaily"
+          },
+          {
+            "field": "additional_published_focus",
+            "label": "另一机构资料列示领域",
+            "value": [
+              "清洁能源",
+              "高科技",
+              "媒体",
+              "消费服务"
+            ],
+            "source_id": "keytone_baijing"
+          },
+          {
+            "field": "stages",
+            "label": "公开投资阶段",
+            "value": [
+              "种子期",
+              "初创期",
+              "扩张期",
+              "成熟期"
+            ],
+            "source_id": "keytone_pedaily_basics"
+          },
+          {
+            "field": "founding_partner",
+            "label": "创始合伙人经历（机构目录资料，当前任职未复核）",
+            "value": "周志雄；资料记载其曾负责软银中国北京业务，加入软银亚洲基础设施基金并任软银赛富（SAIF）合伙人，后参与创立凯鹏华盈首支中国基金。",
+            "source_id": "keytone_pe_team"
+          },
+          {
+            "field": "fundraising",
+            "label": "历史基金募集记录",
+            "value": "投资界/清科机构页面列示，凯旋创投基金I于2008年完成2亿美元募集；此为历史基金规模，不是当前管理资产。",
+            "source_id": "keytone_pedaily_fund"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2008",
+            "description": "凯旋创投成立；机构页面记录基金I于当年完成2亿美元募集。",
+            "source_id": "keytone_pedaily_basics"
+          },
+          {
+            "date": "2017-08-12",
+            "description": "机构目录列示参与魔视智能A轮融资。",
+            "source_id": "keytone_pedaily"
+          },
+          {
+            "date": "2026-05-29",
+            "description": "融资披露称凯旋创投作为老股东参与墨芯人工智能C轮。",
             "source_id": "FISRC-6202f2642c216aa5"
           }
         ],
-        "contacts": [],
+        "track_record": [
+          {
+            "description": "投资界/清科机构页列出凯旋创投参与魔视智能A轮及Moffett AI天使轮等历史融资。页面中的轮次金额是项目融资披露，不是凯旋创投的单笔出资或回报。",
+            "source_id": "keytone_pedaily_investment"
+          },
+          {
+            "description": "融资披露记录：墨芯人工智能2026年C轮，报道将凯旋创投列为参与方之一，并称其为老股东；报道未披露该机构本轮出资额。",
+            "source_id": "FISRC-6202f2642c216aa5"
+          }
+        ],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "投资界/清科机构页面列示的官网，当前可用性未复核",
+            "value": "KeyTone Ventures",
+            "url": "http://www.keytonevc.com",
+            "source_id": "keytone_pedaily_website"
+          },
+          {
+            "kind": "phone",
+            "label": "投资界/清科机构页面列示电话，尚未复核是否仍有效",
+            "value": "+86 10 8519 2581",
+            "source_id": "keytone_pedaily_contact"
+          },
+          {
+            "kind": "address",
+            "label": "投资界/清科机构页面列示地址，尚未复核是否仍为现址",
+            "value": "北京市建国门外大街1号国贸三期A座50层5021单元",
+            "source_id": "keytone_pedaily_contact"
+          }
+        ],
         "sources": [
           {
             "source_id": "FISRC-6202f2642c216aa5",
@@ -232863,9 +233345,81 @@
             "source_content_hash": "acb7f98eff8e5a18cafd8588c7b7e359b5aeab6222f18d676e54328e28236b61",
             "quote": "老股东凯旋创投、创享投资、盛景嘉成共同参与",
             "quote_hash": "3cdb9ac4d7a2162b6a494f02b2e826fb5e1f4cc707e928f2fdd599cebe5ec000"
+          },
+          {
+            "source_id": "keytone_pedaily",
+            "source_url": "https://zdb.pedaily.cn/company/show5314/",
+            "source_title": "凯旋通（北京）投资顾问有限公司 · 投资界/清科私募通",
+            "source_content_hash": "296c443a58d7a3b9",
+            "quote": "凯旋创投，成立于2008年，是中国优秀的高科技创业投资基金之一。凯旋创投深耕高科技领域，致力于寻找早中期和成长期的高潜力科技企业，在战略新兴产业中的物联网、人工智能、智能硬件、先进医疗等主要关注领域，持续挖掘投资机会，团队拥有丰富的技术行业经验和坚实的高科技产业背景，积累了大量的投资经验，具备跨越周期的投资能力。",
+            "quote_hash": "65d83224b1cb809bda4ab1b8e6a8005c2cc125256760ffa70d5f2633d073c90e"
+          },
+          {
+            "source_id": "keytone_pe_team",
+            "source_url": "https://zdb.pedaily.cn/company/show5314/",
+            "source_title": "凯旋创投管理团队资料 · 投资界/清科私募通",
+            "source_content_hash": "296c443a58d7a3b9",
+            "quote": "周志雄，凯旋创投创始合伙人，是中国最活跃的风险投资人之一。专注于寻找技术驱动型的投资机会，尤其关注人工智能、云技术与大数据、半导体、先进医疗等领域。曾任职于软银中国风险投资基金负责北京业务，2001年加入软银亚洲基础设施基金，后担任软银赛富（SAIF）基金合伙人，并参与创立凯鹏华盈首支中国基金并任合伙人。",
+            "quote_hash": "b98b1d9245610e8e26e27cd4d947f58929d93ada72fe82f9c2f4842fec58c3fc"
+          },
+          {
+            "source_id": "keytone_baijing",
+            "source_url": "https://www.baijing.cn/people/38949",
+            "source_title": "凯旋创投 · 白鲸出海机构资料",
+            "source_content_hash": "e4541c6a10584b90",
+            "quote": "凯旋创投（KeyTone Ventures）专注于投资清洁能源、高科技、媒体、消费服务等领域的高速成长企业。",
+            "quote_hash": "202c5ec83439aa71d2560a2b9eb12aa506a4c843535889321fcf0a9396b0c644"
+          },
+          {
+            "source_id": "keytone_pedaily_fund",
+            "source_url": "https://zdb.pedaily.cn/company/show5314/",
+            "source_title": "凯旋创投基金募集记录 · 投资界/清科私募通",
+            "source_content_hash": "296c443a58d7a3b9",
+            "quote": "凯旋创投基金I 2亿美元已募完 管理机构：凯旋创投 2008年10月10日",
+            "quote_hash": "91eb3c679a7ab16e3514d24c7aeaa4071c1e1d176e03fd1684560728ef128d57"
+          },
+          {
+            "source_id": "keytone_pedaily_contact",
+            "source_url": "https://zdb.pedaily.cn/company/show5314/",
+            "source_title": "凯旋创投联系方式 · 投资界/清科私募通",
+            "source_content_hash": "296c443a58d7a3b9",
+            "quote": "电 话：010-85192581 传真：86-10-8519-2584 地 址：北京市建国门外大街一号国贸三期A座50层5021单元 邮 编：100005",
+            "quote_hash": "8e63740a001e376aedae9ed3074a5080734b8d6d520ba53c7872e4bd6354bc74"
+          },
+          {
+            "source_id": "keytone_pedaily_website",
+            "source_url": "https://zdb.pedaily.cn/company/show5314/",
+            "source_title": "凯旋创投官网条目 · 投资界/清科私募通",
+            "source_content_hash": "296c443a58d7a3b9",
+            "quote": "官方网站：www.keytonevc.com",
+            "quote_hash": "fceea32e9f7b45631d3164b3eb0a97f2eb01256a1550cc4702c30b11223929df"
+          },
+          {
+            "source_id": "keytone_pedaily_investment",
+            "source_url": "https://zdb.pedaily.cn/company/show5314/",
+            "source_title": "凯旋创投历史投资记录 · 投资界/清科私募通",
+            "source_content_hash": "296c443a58d7a3b9",
+            "quote": "魔视智能 A轮 USD数百万 澜亭资本 / 凯旋创投 2017年08月12日",
+            "quote_hash": "b1c08c8c65265a3927f99ff7c2cd06bff528f16558e4e6be1ccf88806a3f77d6"
+          },
+          {
+            "source_id": "keytone_pedaily_moffett",
+            "source_url": "https://zdb.pedaily.cn/company/show5314/",
+            "source_title": "凯旋创投历史投资记录 · 投资界/清科私募通",
+            "source_content_hash": "296c443a58d7a3b9",
+            "quote": "Moffett AI 天使轮 USD数千万 商盈投资 / 云天使基金 / 凯旋创投 2020年03月06日",
+            "quote_hash": "21732577f99a999db74bbe483198974df7c7d60f5fa261e02afbf706f890b040"
+          },
+          {
+            "source_id": "keytone_pedaily_basics",
+            "source_url": "https://zdb.pedaily.cn/company/show5314/",
+            "source_title": "凯旋创投机构基础资料 · 投资界/清科私募通",
+            "source_content_hash": "296c443a58d7a3b9",
+            "quote": "凯旋通（北京）投资顾问有限公司 凯旋创投 Keytone Ventures 机构性质：VC 注册地点：朝阳区 成立时间：2008年 机构总部：北京市 官方网站：www.keytonevc.com 投资阶段：种子期、初创期、扩张期、成熟期",
+            "quote_hash": "697882c3820c5bf98e997f7a77eabb1f5b472ce3886e2bf74d8d33c4cd763ceb"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27"
       }
     },
     {
@@ -294180,12 +294734,56 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "济和创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "coverage_note": "历史股权、注册信息来自较早的上市公司招股文件，仅代表文件签署时状态，未能确认为当前工商信息。2025年融资报道把济和创投董事长王学超与其人工智能软件投资方向联系起来。融资库链接的2026年文章是对2025年10月Pre-A轮的回顾，不能作为2026年新一轮投资或当前融资金额。",
+        "summary": "济和创投是一家由王学超领导的投资机构。历史上市公司文件显示，相关济和创投主体于2011年设立并曾持有贝达药业股份；2025年融资报道将其列为北京数巅科技Pre-A轮联合领投方。报道中济和创投董事长王学超称，通用人工智能是其长期布局方向，并将数巅称为其人工智能软件领域的代表性投资。",
+        "facts": [
+          {
+            "field": "historical_company_details",
+            "label": "历史公司信息（IPO文件披露时）",
+            "value": "贝达药业2022年发行文件记载浙江济和创业投资有限公司成立于2011年7月15日，注册资本人民币3,000万元，法定代表人为王学超；这是文件披露时的信息，不代表当前工商状态。",
+            "source_id": "jihe_2022_company"
+          },
+          {
+            "field": "historical_ownership",
+            "label": "历史股权结构（IPO文件披露时）",
+            "value": "贝达药业2022年发行文件列示，截至2022年9月30日王学超认缴2,700万元、持股90%，沈其芬和济和集团各持股5%；该比例不是当前股权结论。",
+            "source_id": "jihe_2022_ownership"
+          },
+          {
+            "field": "leadership",
+            "label": "公开报道提及的负责人",
+            "value": "2025年数巅融资报道称济和创投董事长为王学超，并引述其谈论该笔投资。",
+            "source_id": "jihe_shudian_leader"
+          },
+          {
+            "field": "investment_focus",
+            "label": "公开投资方向表述",
+            "value": "2025年报道中，济和创投董事长王学超称通用人工智能是机构坚定布局的长期赛道。",
+            "source_id": "jihe_shudian_wang"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2011-07-15",
+            "description": "贝达药业2022年发行文件记载浙江济和创业投资有限公司成立于2011年7月15日；现存主体沿革仍需以工商登记核验。",
+            "source_id": "jihe_2022_company"
+          },
+          {
+            "date": "2025-10-28",
+            "description": "数巅科技宣布完成数亿元人民币Pre-A轮，济和创投与赛富基金联合领投。",
+            "source_id": "jihe_shudian_round"
+          }
+        ],
         "track_record": [
+          {
+            "description": "贝达药业首次公开发行文件列示，济和创投在该招股文件签署时持有贝达药业15.96%股份。这是历史持股记录，不代表当前持股或实现回报。",
+            "source_id": "jihe_beda_shareholder"
+          },
+          {
+            "description": "2025年数巅科技数亿元人民币Pre-A轮联合领投方。该轮金额为整轮融资规模，不是济和创投的单笔出资额。数据库还链接了一篇2026年回顾报道，其文中“去年10月”指2025年10月。",
+            "source_id": "jihe_shudian_round"
+          },
           {
             "description": "融资来源记录：数巅智能 · 多轮融资 · 2026-09-21 · pre-A轮联合领投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
             "source_id": "FISRC-9ebda1057c2926b3"
@@ -294200,9 +294798,57 @@
             "source_content_hash": "6e9cfd36fd6943c7",
             "quote": "公司去年10月完成数亿元人民币pre-A轮融资，由济和创投和赛富基金联合领投，北京市信息产业发展投资基金、广州红鸟启航基金、上海领屹投资等机构跟投，老股东君联资本等也持续加码。",
             "quote_hash": "fcd45a3c282bf9b19a1d8d9e69340a6f4c6018575e8aa1d26a10e45b7159d87b"
+          },
+          {
+            "source_id": "jihe_shudian_round",
+            "source_url": "https://news.newseed.cn/p/1376504",
+            "source_title": "数巅完成数亿元Pre-A轮融资，济和创投和赛富基金联合领投 · 新芽NewSeed",
+            "source_content_hash": "0ef24637212695aa65bfcb51dcc6c24cd7728a2df8a0e93c26cdb09046ed947e",
+            "quote": "近日，北京数巅科技有限公司（以下简称“数巅”）宣布完成数亿元人民币pre-A轮融资，由济和创投和赛富基金联合领投，北京市信息产业发展投资基金、广州红鸟启航基金、上海领屹投资等机构跟投，老股东君联资本等也持续加码。",
+            "quote_hash": "9d74a21a1505bc753d0d212342c0c50cd94436ba4a92520365980e25c8fb73b6"
+          },
+          {
+            "source_id": "jihe_shudian_wang",
+            "source_url": "https://news.newseed.cn/p/1376504",
+            "source_title": "济和创投董事长谈数巅投资 · 新芽NewSeed",
+            "source_content_hash": "0ef24637212695aa65bfcb51dcc6c24cd7728a2df8a0e93c26cdb09046ed947e",
+            "quote": "通用人工智能是我们坚定布局的长期赛道，而技术落地路径的选择直接决定公司成败。",
+            "quote_hash": "2505692a29c55d4d8e61ca178b46d519cee1c58283b706632126bda3b4c1bba9"
+          },
+          {
+            "source_id": "jihe_2022_company",
+            "source_url": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?CompanyCode=80088820&gather=1&id=8699088",
+            "source_title": "贝达药业2022年度向特定对象发行A股股票募集说明书 · 新浪财经公告库",
+            "source_content_hash": "c47272e298e51b0b",
+            "quote": "浙江济和创业投资有限公司；法定代表人王学超；成立日期2011年7月15日；注册资本3,000万元；统一社会信用代码91330000580362138K。",
+            "quote_hash": "d81d54945a1e042b00046ba3a676e9a94c0d2cd53cb6985e075ec154d498b78b"
+          },
+          {
+            "source_id": "jihe_2022_ownership",
+            "source_url": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?CompanyCode=80088820&gather=1&id=8699088",
+            "source_title": "济和创投截至2022年9月30日的股东及出资比例 · 新浪财经公告库",
+            "source_content_hash": "c47272e298e51b0b",
+            "quote": "截至2022年9月30日，济和创投股东及认缴出资额：王学超2,700.00万元、90.00%；沈其芬150.00万元、5.00%；济和集团150.00万元、5.00%。",
+            "quote_hash": "a3a840d163958e8578a8e0aae877b983bf3b7cdf394ad3951e019e2c3238f15e"
+          },
+          {
+            "source_id": "jihe_beda_shareholder",
+            "source_url": "https://stock.tianyancha.com/Announcement/cninfo/945982e394a4865f9af145d448a3e2df.pdf",
+            "source_title": "贝达药业首次公开发行股票招股文件 · 公司公告镜像",
+            "source_content_hash": "1a390ac1911289f6",
+            "quote": "济和创投 23,940,000 15.9600%",
+            "quote_hash": "2e9b50b7253e3c41a6293b7edf4b26955c3e48d8e6f04dd0cf580fbc6637d632"
+          },
+          {
+            "source_id": "jihe_shudian_leader",
+            "source_url": "https://news.newseed.cn/p/1376504",
+            "source_title": "济和创投董事长王学超谈数巅投资 · 新芽NewSeed",
+            "source_content_hash": "0ef24637212695aa",
+            "quote": "对于本轮投资，济和创投董事长王学超表示",
+            "quote_hash": "c891bf54290fef37da97f6bed5d641580e3da7ee8331d3ae326c2d2627217f41"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27"
       }
     },
     {
