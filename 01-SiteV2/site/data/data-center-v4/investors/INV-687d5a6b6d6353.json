@@ -139,19 +139,72 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Salesforce 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-28",
+      "coverage_note": "本条记录对应 Salesforce 公司本体。融资报道写明 Salesforce 首次在该轮投资 Wonderful，但没有把投资主体称为 Salesforce Ventures，也未披露 Salesforce 单独出资额；5.5 亿美元是 Wonderful 全轮融资额。",
+      "summary": "Salesforce 是一家创立于 1999 年的企业软件公司，主营云端客户关系管理（CRM），目前官网将 Agentforce 与 AI CRM 作为产品重点。2026 年 9 月的融资报道将 Salesforce 列为 Wonderful 的新投资方；该记录保留为公司本体的融资披露，不将其改记为 Salesforce Ventures。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "1999；公司官网历史页面记载其于 1999 年成立。",
+          "source_id": "salesforce_story"
+        },
+        {
+          "field": "business",
+          "label": "主营业务",
+          "value": "企业云软件和客户关系管理（CRM）；官网介绍其服务销售、服务、市场营销、商务及 IT 等企业职能。",
+          "source_id": "salesforce_story"
+        },
+        {
+          "field": "products_and_ai",
+          "label": "产品与 AI",
+          "value": "官网将 Agentforce 描述为可与员工协作的自主智能体产品，并将其纳入 AI CRM 叙事。",
+          "source_id": "salesforce_story"
+        },
+        {
+          "field": "customer_scale",
+          "label": "官网披露的客户规模",
+          "value": "官网称全球超过 150,000 家公司使用 Salesforce；此为公司自述客户数，不是投资组合数量。",
+          "source_id": "salesforce_story"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1999",
+          "description": "Salesforce 官网记载公司于 1999 年创立，并以 SaaS 方式将 CRM 带入云端。",
+          "source_id": "salesforce_story"
+        },
+        {
+          "date": "2024",
+          "description": "官网历史页面将 Agentforce 列为其客户互动产品演进的重要节点。",
+          "source_id": "salesforce_story"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Wonderful · C轮 · 2026-09-02 · 本轮参投 · $550 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "TechCrunch 报道称 Salesforce 首次在 2026 年 9 月的 C 轮投资 Wonderful。该轮 5.5 亿美元为公司全轮规模，未披露 Salesforce 的单笔金额；报道没有指明 Salesforce Ventures。",
           "source_id": "FISRC-3bc5a4e973b035eb"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Salesforce 官方网站",
+          "value": "Salesforce",
+          "url": "https://www.salesforce.com/",
+          "source_id": "salesforce_story"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "salesforce_story",
+          "source_url": "https://www.salesforce.com/ap/company/our-story/",
+          "source_title": "Salesforce develops the technology, the partnerships, and the communities that help companies connect with customers. | Salesforce AP",
+          "source_content_hash": "955a66b938df6120561a9b23896135f9ef42ca4ef5a8d99e9f2cb4cda2657a13",
+          "quote": "Since we opened our doors in 1999, we’ve had a singular focus — helping our customers improve their customer relationships.",
+          "quote_hash": "2a255f756f298e595555c7a8174e5ca908a0ee86c3e77ea53c7cb7c82fd412e3"
+        },
         {
           "source_id": "FISRC-3bc5a4e973b035eb",
           "source_url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
@@ -160,8 +213,7 @@
           "quote": "Salesforce is investing in the company for the first time in this round.",
           "quote_hash": "02773655320bf00e0bd4ccf2d0888f6fc2810941bf9a7f76546a6a664cf87768"
         }
-      ],
-      "last_verified_at": "2026-09-26"
+      ]
     }
   }
 }
