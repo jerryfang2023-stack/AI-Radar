@@ -137,21 +137,159 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Crane Venture Partners 当前按“投资组织”收录。最新融资披露记录日期为 2025-08-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "summary": "Crane Venture Partners 是一家全球布局的早期风险投资机构，官网称其从 inception 至 seed 支持构建基础技术的公司，投资主题涵盖 AI 基础设施、半导体、开发者技术、企业系统与硬科技。机构强调与创始团队长期合作，并提供 go-to-market、客户拓展与运营支持。",
+      "facts": [
         {
-          "description": "融资来源记录：SRE.ai · 种子轮 · 2025-08-20 · 本轮领投 · $7.2 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-68a8dc57ec8eec7f"
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2015；由 Krishna Visvanathan 与 Scott Sage 发起。",
+          "source_id": "crane_story"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": [
+            "Inception",
+            "Pre-seed",
+            "Seed"
+          ],
+          "source_id": "crane_home"
+        },
+        {
+          "field": "investment_themes",
+          "label": "投资主题",
+          "value": [
+            "AI 基础设施",
+            "半导体",
+            "开发者技术",
+            "企业系统",
+            "硬科技"
+          ],
+          "source_id": "crane_story"
+        },
+        {
+          "field": "geography",
+          "label": "全球布局",
+          "value": [
+            "欧洲",
+            "北美",
+            "印度",
+            "亚太"
+          ],
+          "source_id": "crane_fundraise"
+        },
+        {
+          "field": "platform_support",
+          "label": "创业支持",
+          "value": "提供 go-to-market、销售策略、关键人才招聘支持，并通过 CXO 与 CISO 顾问网络连接创业者。",
+          "source_id": "crane_home"
+        },
+        {
+          "field": "leadership_experience",
+          "label": "管理团队履历",
+          "value": [
+            "Krishna Visvanathan — 联合创始人、合伙人；官网称其有 27 年支持欧洲创业者的经历，投资前曾参与创办深科技企业。",
+            "Scott Sage — 联合创始人、合伙人；官网称其有 20 年支持欧洲创业者的经历，进入风险投资前从事市场、战略、研究与金融工作。",
+            "Anandamoy Roychowdhary（Roy）— 印度与亚太区董事总经理；此前在 Sequoia Capital India & Southeast Asia（现 Peak XV）从事早期投资，负责 AI 与深科技。",
+            "Carlos Jo-Loo — 合伙人、亚太区负责人；此前任 MassMutual Ventures Principal，并曾在 BCG 与 BMO Capital Markets 工作。"
+          ],
+          "source_id": "crane_team"
+        },
+        {
+          "field": "fundraise_2026",
+          "label": "2026 年募集规模",
+          "value": "2026-09-21 公布四个投资载体合计募集 4.84 亿美元：Crane III 1.69 亿、Crane APAC I 1.5 亿、Crane US I 1 亿、Crane Opportunity Fund I 6,500 万美元。该数字为多支基金募集总额，不是管理资产或单笔投资。",
+          "source_id": "crane_fundraise"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2015",
+          "description": "Krishna Visvanathan 与 Scott Sage 发起 Crane Venture Partners。",
+          "source_id": "crane_story"
+        },
+        {
+          "date": "2026-09-21",
+          "description": "机构宣布四个投资载体募集合计 4.84 亿美元，形成覆盖欧洲、北美、印度与亚太的投资平台。",
+          "source_id": "crane_fundraise"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "SRE.ai · Seed · 2025-08-20 · 7.2 百万美元融资由 Salesforce Ventures 与 Crane Venture Partners 共同领投；金额为本轮总额，Crane 单笔出资未披露。",
+          "source_id": "FISRC-68a8dc57ec8eec7f"
+        },
+        {
+          "description": "官网组合覆盖 AI 与自动化、数据基础设施、深科技、企业生产力、金融系统、健康和安全等主题；公开列表为组合页面展示，不构成完整投资清单。",
+          "source_id": "crane_portfolio"
+        }
+      ],
+      "experience_summary": "Crane 创始合伙人披露的经验覆盖欧洲早期投资、深科技创业及市场与战略工作；亚太管理团队还公开披露了风险投资、咨询和股权研究经历。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站与组合清单",
+          "value": "Crane Venture Partners",
+          "url": "https://crane.vc/",
+          "source_id": "crane_home"
+        },
+        {
+          "kind": "contact_form",
+          "label": "一般联系与项目沟通",
+          "value": "官网联系表单；官网列示伦敦、旧金山、纽约、新加坡和班加罗尔办公室。",
+          "url": "https://crane.vc/contact",
+          "source_id": "crane_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "crane_home",
+          "source_url": "https://crane.vc/",
+          "source_title": "Crane Venture Partners",
+          "source_content_hash": "506b630fe270fba976f0a7c7696f8096d4aaff9dee4347829905dce32fe4d31c",
+          "quote": "Inception through seed. Foundational technology. Global from day one. Offering strategic guidance and go-to-market expertise throughout a company’s journey.",
+          "quote_hash": "21c97b38e8b7661654fa251c3ef5d026ff07a2427a3d30f8396d68c2968006ef"
+        },
+        {
+          "source_id": "crane_story",
+          "source_url": "https://crane.vc/our-story/",
+          "source_title": "Our Story | Crane Venture Partners",
+          "source_content_hash": "1a3044bec23f1cc8c447ae410fabd7eaba3eacdcad06f9dc3974d7d30c4783f4",
+          "quote": "2015 - Present",
+          "quote_hash": "ab4bf8df85504c054a47aba3e4d81a182dbbf008ee86f160102b3c9c6995c849"
+        },
+        {
+          "source_id": "crane_team",
+          "source_url": "https://crane.vc/team",
+          "source_title": "Team | Crane Venture Partners",
+          "source_content_hash": "91de10ac1f7c37992606e34e406af0db164b063b5f50a84acb3257b735153ac6",
+          "quote": "Krishna co-founded Crane and has been fortunate to have had the opportunity to back European founders for 27 years, investing across every layer of the enterprise stack. Prior to VC, he had several operational roles including co-founding a deep tech start-up. … Scott co-founded Crane and has been backing European founders for 20 years. He previously spent time in marketing, strategy, research and finance roles before becoming a venture capitalist. … Carlos is Head of APAC and Partner at Crane Venture Partners, based in Singapore. Previously, he served as a Principal at MassMutual Ventures, where he helped establish the firm's presence in the APAC and Europe. … Roy is a Managing Director at Crane, where he leads investments in AI and Deeptech across India and APAC. He joins Crane following over a decade at Sequoia Capital India & Southeast Asia (now Peak XV), where he was an early-stage investor and a key contributor to the Surge program.",
+          "quote_hash": "b5dedf4c4af886376dc1c9318f05c8f9adee1a963391a7283e6513c7c79a5e35"
+        },
+        {
+          "source_id": "crane_portfolio",
+          "source_url": "https://crane.vc/portfolio/",
+          "source_title": "Portfolio | Crane Venture Partners",
+          "source_content_hash": "ac1c73bcc8f96ba529d184fcd4c825580972540381c89d4e0b04036cc1ef9852",
+          "quote": "AI & Automation Data Infrastructure Deep Tech & Hard Science Enterprise Productivity Financial Systems Health & Bio Security",
+          "quote_hash": "dd5735cffba6394f2d8a546adf44c9256399d29d0d9065c82ff3f711a0b70c2e"
+        },
+        {
+          "source_id": "crane_contact",
+          "source_url": "https://crane.vc/contact",
+          "source_title": "Contact | Crane Venture Partners",
+          "source_content_hash": "8867a96a3bfe61d820df733cd782cec3451a41c153ed1d2458a85db6930098c5",
+          "quote": "London San Francisco New York Singapore Bangalore Send us a message",
+          "quote_hash": "c54e1b6e1f1e239d575f054e56a588c7428d680fcc030ddec55714abce4bbc33"
+        },
+        {
+          "source_id": "crane_fundraise",
+          "source_url": "https://crane.vc/ideas/big-week-for-crane-even-bigger-for-founders",
+          "source_title": "Big Week for Crane. Even Bigger for Founders. | Crane Venture Partners",
+          "source_content_hash": "6755350fc82a7e8c7bc15bf8975b21361eaf6023a7c3ce3e681094e6b54c9d7d",
+          "quote": "The announcement brought together Crane III ($169M), Crane APAC I ($150M), Crane US I ($100M), and Crane Opportunity Fund I ($65M) — $484 million of capital across a platform spanning Europe, North America, India and Asia-Pacific.",
+          "quote_hash": "b88cbd801181f64df4ac91cd90958b738be52ec95b04e7db794c44ddf2194cd3"
+        },
         {
           "source_id": "FISRC-68a8dc57ec8eec7f",
           "source_url": "https://techcrunch.com/2025/08/20/sre-ai-launches-to-automate-complex-enterprise-workflows/",
@@ -161,7 +299,11 @@
           "quote_hash": "beab4efc3d4169df015244aacfae369b78d49a23a6bd8e7e96f7d21a10515d1d"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "coverage_note": "机构策略、人员履历和联系渠道按公开官网资料整理；融资案例为本库收录的可追溯样本，不代表完整投资组合或机构回报。人物经历嵌入机构资料，仅记录官网披露且能确认角色的人员；未把轮次总额写成机构单笔出资。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched"
     }
   }
 }

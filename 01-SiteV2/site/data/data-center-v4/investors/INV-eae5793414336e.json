@@ -137,21 +137,116 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Cervin Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "summary": "Cervin Ventures 是一家专注企业软件的早期风险投资机构。官网称其通过产品与市场策略、领域专家网络、客户引荐及投后服务支持创业公司，并公开展示企业应用、基础设施、数据与安全等组合公司。",
+      "facts": [
         {
-          "description": "融资来源记录：Lemma · 预种子轮 · 2026-08-07 · 本轮参投 · $2.3M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-efe4db4aff32c4ea"
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期企业软件公司；官网称其关注具有独特市场洞察、以资本效率推进业务的团队。",
+          "source_id": "cervin_fund"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": [
+            "企业应用",
+            "企业软件与基础设施",
+            "数据基础设施",
+            "云软件",
+            "AI 企业应用"
+          ],
+          "source_id": "cervin_team"
+        },
+        {
+          "field": "founder_support_strategy",
+          "label": "创业支持：策略咨询",
+          "value": "官网称团队与创始人并肩工作，为产品和市场策略提供指导。",
+          "source_id": "cervin_home"
+        },
+        {
+          "field": "founder_support_platform",
+          "label": "创业支持：组合服务",
+          "value": "2023 年公告称其组合服务团队提供 go-to-market 策略、业务拓展与市场研究支持。",
+          "source_id": "cervin_fund"
+        },
+        {
+          "field": "leadership_experience",
+          "label": "团队履历",
+          "value": [
+            "Neeraj Gupta — 联合创始人、合伙人；此前创立并管理 Nexient，亦创立 Cymbal（后被 Patni/Cap Gemini 收购）。",
+            "Shirish Sathaye — 合伙人；官网列出的投资方向包括企业软件、云软件、AI 企业、数据基础设施与网络系统。",
+            "Taylor Oliver — 合伙人；关注 B2B 商务、金融科技与供应链，加入 Cervin 前参与创设两支早期基金。",
+            "Scott Brown — 合伙人、平台负责人；官网称其有超过 25 年 B2B 营销经历，曾在 Google、Facebook、Cisco 等高增长企业任职。"
+          ],
+          "source_id": "cervin_team"
+        },
+        {
+          "field": "self_reported_scale",
+          "label": "历史基金披露",
+          "value": "2023 年官网宣布募集 1.62 亿美元新资本并推出组合服务团队；同一公告称管理资产超过 3.35 亿美元。该数字为 2023 年时点的机构披露。",
+          "source_id": "cervin_fund"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2023-09-14",
+          "description": "官网宣布募集 1.62 亿美元新资本，并成立由 Scott Brown 负责的 portfolio services 团队。",
+          "source_id": "cervin_fund"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "Lemma · Pre-seed · 2026-08-07 · 融资来源列出 Cervin Ventures 为参投机构；公开总额 230 万美元，不代表 Cervin 的单笔投资额。",
+          "source_id": "FISRC-efe4db4aff32c4ea"
+        },
+        {
+          "description": "官网展示的代表性组合公司包括 AiFi、ArmorCode、Celona、Paystand、Remi 与 Stream Security；属于官网选列案例，不是完整组合清单。",
+          "source_id": "cervin_portfolio"
+        }
+      ],
+      "experience_summary": "Cervin 的团队成员具有创办企业、企业软件经营、B2B 营销和基金管理经历；上述经历来自机构自述，未据此推断未公开的个人投资业绩。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站与团队资料",
+          "value": "Cervin Ventures",
+          "url": "https://www.cervinventures.com/",
+          "source_id": "cervin_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "cervin_home",
+          "source_url": "https://www.cervinventures.com/",
+          "source_title": "Cervin",
+          "source_content_hash": "86406e4c89c938872150012237232f3299dfb4dc3489a1cfe1a93ca63d2bdc6f",
+          "quote": "We work side by side with our founders and provide guidance on product and market strategy.",
+          "quote_hash": "1c8d972374fc12bb76d13c8eafe35327daa471022b8f4ee396e0c1f7a118c654"
+        },
+        {
+          "source_id": "cervin_team",
+          "source_url": "https://www.cervinventures.com/team",
+          "source_title": "Team | Cervin",
+          "source_content_hash": "15f5420db9b1e926f28583f38003f8fcd8f4de786f3d43ee1af64a09d0f217cc",
+          "quote": "Neeraj Gupta is a Co-Founder and Partner at Cervin. Previously, Neeraj was the founder and CEO of Nexient, a digital experience consulting firm, and Cymbal, a telecommunications consultancy (acquired by Patni/Cap Gemini). He also held engineering and product management positions at Octel and Genesys. … For 20+ years, Shirish has served as a General Partner across several venture firms. Prior to joining Cervin, he spent 10 years at Matrix Partners, 3 years at Khosla Ventures, and the remainder at Formation 8. … Before joining Cervin, Taylor played an integral role in launching two separate first time funds, the Plug & Play Supply Chain Fund and Tenacity Venture Capital. … Scott Brown is a partner at Cervin leading the firm’s portfolio services team delivering pre and post-investment support to both portfolio companies and the investing team. Scott has more than 25 years of B2B marketing experience in both start-ups and hypergrowth companies like Google, Facebook and Cisco.",
+          "quote_hash": "9e4ebff581252cf9ee5669e8f936ab9844fb18a816647c6e7f9ceb11fc6dca9c"
+        },
+        {
+          "source_id": "cervin_fund",
+          "source_url": "https://www.cervinventures.com/news/investing-in-the-future-of-enterprise-software-entrepreneurs",
+          "source_title": "Investing in the future of enterprise software, entrepreneurs | Cervin",
+          "source_content_hash": "de2f973e82fc55be0e7576b3c652e778bf17083d253b2638bc2777351bbb0275",
+          "quote": "This morning Cervin Ventures announced the close of $162 million of new capital for us to invest in enterprise startups. In addition, we’re excited to announce the launch of our portfolio services team, led by Silicon Valley veteran Scott Brown, to help our entrepreneurs accelerate the growth of their businesses. … Grown our Assets Under Management (AUM) to more than $335 million. … We remain dedicated to helping founders of early-stage, enterprise software companies in their quest to build enduring companies. We are looking for entrepreneurs with unique insights on how to disrupt markets and the grit to execute on their vision in a capital efficient manner.",
+          "quote_hash": "fa1953491a46b3b7bdf52dff1ee8867cebebb4f553de3ae40a4ca15e66921667"
+        },
+        {
+          "source_id": "cervin_portfolio",
+          "source_url": "https://www.cervinventures.com/portfolio",
+          "source_title": "Portfolio | Cervin",
+          "source_content_hash": "efd52722cedf4aa3f36d857d49444a9b1e969f0d00fcb1bd44d2340a06260bab",
+          "quote": "AiFi ArmorCode Kapital Celona Paystand Redo Remi Stream Security",
+          "quote_hash": "594f9c9061dbb9eae0c59f052b908a968fee53dff3beba6d2c7004c4bfe24c49"
+        },
         {
           "source_id": "FISRC-efe4db4aff32c4ea",
           "source_url": "https://dealroom.co/news/143810-lemma-raises-2-3m-pre-seed-to-catch-ai-agents-that-fail-silently/",
@@ -161,7 +256,11 @@
           "quote_hash": "60fc32eb93501fcfef0515f038fb96c35932dd7c57afe62466545b100412d8fc"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "coverage_note": "机构策略、人员履历和联系渠道按公开官网资料整理；融资案例为本库收录的可追溯样本，不代表完整投资组合或机构回报。人物经历嵌入机构资料，仅记录官网披露且能确认角色的人员；未把轮次总额写成机构单笔出资。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched"
     }
   }
 }

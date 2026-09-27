@@ -129,21 +129,104 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Convective Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-05；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Convective Capital 是一家聚焦灾害韧性与实体世界风险的投资机构。官网称其投资硬件、软件和金融服务；策略从野火防范延伸到电网、林业、保险、供应链与基础设施等韧性主题。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资主题",
+          "value": [
+            "灾害韧性",
+            "野火与林业",
+            "电网与公用事业",
+            "保险与风险管理",
+            "实体基础设施"
+          ],
+          "source_id": "convective_home"
+        },
+        {
+          "field": "fund_ii",
+          "label": "第二期基金披露",
+          "value": "创始人于 2026-05-21 宣布 Fund II 募集 8,500 万美元，计划投资约 18 家公司，阶段覆盖 pre-seed、seed 和 Series A；该金额为基金募集规模，不是对单家公司的出资。",
+          "source_id": "convective_fund2"
+        },
+        {
+          "field": "founder_support_network",
+          "label": "行业网络与组合支持",
+          "value": "机构称 Updraft 韧性实践者网络超过 10,000 人，并已为组合公司带来超过 1 亿美元收入；均为机构自报口径。",
+          "source_id": "convective_fund2"
+        },
+        {
+          "field": "leadership_experience",
+          "label": "团队履历",
+          "value": [
+            "Bill Clerico — 创始人、管理合伙人；此前共同创办并担任 WePay CEO，该公司于 2017 年被 JPMorgan Chase 收购；亦为 YC 兼职合伙人。",
+            "Kat Mañalac — 合伙人；此前在 Y Combinator 任职十余年，负责创业项目与创始人社群。",
+            "Mike Trapanese — 合伙人，关注运营和战略资本；经历包括私募股权和企业运营。",
+            "Jay Ribakove — Principal；此前在 Munich Re Ventures 投资气候及建成环境风险领域公司。"
+          ],
+          "source_id": "convective_team"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026-05-21",
+          "description": "创始人 Bill Clerico 宣布第二期基金募集 8,500 万美元，并将投资主题由野火科技扩展到更广泛的灾害韧性。",
+          "source_id": "convective_fund2"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：WindBorne Systems · B轮 · 2026-08-05 · A 轮参投方 · $37 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "官网当前展示的组合案例包括 Burnbot（机器人燃料管理）、Gridware（电网保护）、Pano（野火早期探测）、Seneca（消防无人机）、Stand（韧性住房保险）与 The Lumber Manufactory；为精选展示，不代表完整组合或投资回报。",
+          "source_id": "convective_portfolio"
+        },
+        {
+          "description": "待校正的注册表关联：当前把 Convective 与 WindBorne Systems 的 2026 年 B 轮相连，但所附来源报道的是 2024 年 Series A；轮次和来源年份冲突，因此不将其作为 Convective 已核实投资。",
           "source_id": "FISRC-5f5111750b24d3d3"
         }
       ],
-      "contacts": [],
+      "experience_summary": "管理团队披露的经历包括金融科技创业与并购、Y Combinator 创业者支持、私募股权运营以及气候和建成环境风险投资。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站与组合列表",
+          "value": "Convective Capital",
+          "url": "https://www.convectivecapital.com/",
+          "source_id": "convective_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "convective_home",
+          "source_url": "https://www.convectivecapital.com/",
+          "source_title": "Convective | Investing in a More Resilient World",
+          "source_content_hash": "e25c14fed1b5f1e80de885ef3db8201e0af7cfcb51d191cebd9a27ff43f430b7",
+          "quote": "Convective invests in hardware, software and financial services that manage risk in the physical world.",
+          "quote_hash": "9c32b529b9354c22d9cb407852da42cd80012e0b2cf9d2cd0a5bf3f13cf12bdd"
+        },
+        {
+          "source_id": "convective_team",
+          "source_url": "https://www.convectivecapital.com/team",
+          "source_title": "The Team | Convective",
+          "source_content_hash": "1905e240be366b2a77e2c470a2ee2eafc4a709f37546c5a30d93eeb4b0328510",
+          "quote": "Prior to Convective, Bill was co-founder & CEO of WePay, a fintech company that was acquired by J.P. Morgan Chase in 2017, an angel investor in over 60 startups and a part-time partner at Y Combinator. … Previously, Kat spent more than a decade as a partner at Y Combinator, where she built programs and communities that helped thousands of founders scale their startups into companies worth billions. … Mike is a partner at Convective Capital focused on operations and strategic capital. Previously, Mike held diverse private equity and operating roles. … Prior to Convective, Jay was an investor at Munich Re Ventures, backing companies reducing risk in climate and the built environment.",
+          "quote_hash": "4a05b1de65a66c81e3cd68d4b7caaa6fb4f27e3941695cfad2a2a1b48b703797"
+        },
+        {
+          "source_id": "convective_portfolio",
+          "source_url": "https://www.convectivecapital.com/portfolio",
+          "source_title": "Portfolio | Convective",
+          "source_content_hash": "4b3d2a8fc897065f02db095d02745ab2e80248eba52c6ae2f3200be099de72ca",
+          "quote": "Our companies protect the systems that keep the world running. … Robotic Fuels Management Burnbot Protecting the Grid Gridware Early Wildfire Detection Pano Firefighting Drones Seneca Insurance for Resilient Homes Stand Sawmills of the Future The Lumber Manufactory",
+          "quote_hash": "b9068fc712aca335fc01c65c4ee567bcf0cad2f61c002348be047b8848ad22f3"
+        },
+        {
+          "source_id": "convective_fund2",
+          "source_url": "https://convective.substack.com/p/fund-ii-85m-for-disaster-resilience",
+          "source_title": "Fund II: $85M for Disaster Resilience | Bill Clerico",
+          "source_content_hash": "451fd460df32eb2a9505f7521e4fe115701c21cd268251187ee5b9f9675da68d",
+          "quote": "That’s why we’re excited to announce that we’ve raised $85M for our second fund. We’ll make a similar number of investments (~18) as in Fund I, but we’re writing bigger checks across pre-seed, seed and Series A and expanding our focus from wildfire to the disaster resilience market. … Updraft, our network of practitioners in the physical world, is now 10,000 people strong and has generated over $100M in revenue for our portfolio companies.",
+          "quote_hash": "98c6cd9132d3b8d6ad587664b16d432ee065af3ce98dbb4c5d6ba3b351f6686e"
+        },
         {
           "source_id": "FISRC-5f5111750b24d3d3",
           "source_url": "https://parsers.vc/news/240605-windborne-systems-takes-flight-with-15/",
@@ -153,7 +236,11 @@
           "quote_hash": "8023b80146dd21ae9133d41cbd3bd534abb4a1bb0ff5b6a882a2428157bc4482"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "coverage_note": "机构策略、人员履历和联系渠道按公开官网资料整理；融资案例为本库收录的可追溯样本，不代表完整投资组合或机构回报。人物经历嵌入机构资料，仅记录官网披露且能确认角色的人员；未把轮次总额写成机构单笔出资。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched"
     }
   }
 }
