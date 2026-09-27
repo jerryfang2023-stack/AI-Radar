@@ -185856,21 +185856,88 @@
         "angel"
       ],
       "public_profile": {
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "上海知识产权基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "summary": "融资库中的“上海知识产权基金”与上市公司公告披露的上海知识产权基金相对应；其由上海科创集团全资子公司持股30%并与社会资本共同设立。融资披露还列明其参与智推时代天使轮。母集团及管理体系数据不代表该单只基金规模，整轮融资总额不等于本基金出资额。",
+        "facts": [
+          {
+            "field": "official_identity",
+            "label": "公开披露名称",
+            "value": "上海知识产权基金；融资记录使用简称“上海科创旗下知识产权基金”。",
+            "source_id": "sh_ip_fund_filing"
+          },
+          {
+            "field": "founded",
+            "label": "成立时间",
+            "value": "2016年",
+            "source_id": "sh_ip_fund_filing"
+          },
+          {
+            "field": "ownership",
+            "label": "设立关系",
+            "value": "上海科创集团全资子公司上海战新投资持股30%，并与社会民营资本共同设立。",
+            "source_id": "sh_ip_fund_filing"
+          },
+          {
+            "field": "manager_activity_2025",
+            "label": "管理体系2025年活动",
+            "value": "披露新设5支基金、总规模10.39亿元，累计投资14个项目；属管理体系披露，不是该单只基金的规模或收益。",
+            "source_id": "sh_ip_fund_filing"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：智推时代 · 天使轮 · 2026-07-07 · 本轮参投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "投资界2026年7月报道智推时代完成数千万元天使轮，上海知识产权基金为参与方之一；“数千万元”是整轮融资额，未披露本基金的单独出资金额。",
             "source_id": "FISRC-602fdc3dbd5462df"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "上海科创集团官网",
+            "value": "上海科技创业投资（集团）有限公司",
+            "url": "https://www.shstvc.com.cn/",
+            "source_id": "sh_stvc_contact"
+          },
+          {
+            "kind": "phone",
+            "label": "母集团公开总机（非基金专线）",
+            "value": "021-22302800",
+            "url": "https://www.shstvc.com.cn/",
+            "source_id": "sh_stvc_contact"
+          },
+          {
+            "kind": "email",
+            "label": "母集团公开邮箱（非基金专属）",
+            "value": "info@shstvc.com.cn",
+            "url": "https://www.shstvc.com.cn/",
+            "source_id": "sh_stvc_contact"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "sh_ip_fund_filing",
+            "source_url": "https://static.cninfo.com.cn/finalpage/2025-12-31/1224910242.PDF",
+            "source_title": "上市公司公告：参与投资策源一期基金",
+            "source_content_hash": "aa3b07303f422fd3e2e792d7dfcc24ffc157f3a5d4d39a1b337ae7cb8d182709",
+            "quote": "上海知识产权基金成立于2016年，由上海科创集团全资子公司上海战新投资作为持股30%的国有股东与社会民营资本共同设立。",
+            "quote_hash": "aa3b07303f422fd3e2e792d7dfcc24ffc157f3a5d4d39a1b337ae7cb8d182709"
+          },
+          {
+            "source_id": "sh_stvc_history",
+            "source_url": "https://www.shstvc.com.cn/gywm/fzlc/",
+            "source_title": "上海科技创业投资集团｜发展历程",
+            "source_content_hash": "a04344058cea63e1ea9b77d9eeaf16b6f5d0602e19c7a47c506df0b59fba488b",
+            "quote": "2016年发起设立并管理上海知识产权扶持基金。",
+            "quote_hash": "a04344058cea63e1ea9b77d9eeaf16b6f5d0602e19c7a47c506df0b59fba488b"
+          },
+          {
+            "source_id": "sh_stvc_contact",
+            "source_url": "https://www.shstvc.com.cn/",
+            "source_title": "上海科技创业投资（集团）有限公司｜官方主页",
+            "source_content_hash": "42091d9b6ac2137648961e6a34cbb5a39dcd0abe1573888619e17ae35791e7e1",
+            "quote": "地址：上海市静安区铜仁路269号；电话：021-22302800；邮箱：info@shstvc.com.cn。",
+            "quote_hash": "42091d9b6ac2137648961e6a34cbb5a39dcd0abe1573888619e17ae35791e7e1"
+          },
           {
             "source_id": "FISRC-602fdc3dbd5462df",
             "source_url": "https://news.pedaily.cn/202607/565918.shtml",
@@ -185880,7 +185947,11 @@
             "quote_hash": "38a3453c6027233044d8f2e5fa4a5815ec37189fdb1c7083f4a6d3387a8a3ebf"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27",
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched",
+        "coverage_note": "该名称与上海科创集团公开历史及上市公司公告所称上海知识产权基金相符。管理体系的基金数量、规模或累计投资数据不等同于该单只基金数据。融资披露只确认其参与智推时代天使轮，未披露该基金具体出资额。"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -202891,21 +202962,66 @@
         "undisclosed"
       ],
       "public_profile": {
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "上海交大AI未来基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "summary": "上海交大AI未来基金由上海交通大学人工智能学院发起、校友支持，围绕“科研+科创”双轮驱动青年AI人才与成果转化。官方资料称基金包含科研支持计划及面向创业师生的天使投资计划；公开来源未披露基金规模或单项目投资额。",
+        "facts": [
+          {
+            "field": "initiator_and_support",
+            "label": "发起与支持方",
+            "value": "由上海交通大学人工智能学院发起，交大海内外杰出校友共同助力。",
+            "source_id": "sjtu_ai_fund"
+          },
+          {
+            "field": "research_program",
+            "label": "科研种子计划",
+            "value": "面向学院青年科学家，提供收入支持并支持科研团队组建。",
+            "source_id": "sjtu_ai_programs"
+          },
+          {
+            "field": "startup_program",
+            "label": "科创种子计划",
+            "value": "面向全校创业师生，通过天使投资支持创新创业和科技成果转化。",
+            "source_id": "sjtu_ai_programs"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2025-07-26",
+            "description": "上海交大在世界人工智能大会期间发布AI未来基金。",
+            "source_id": "sjtu_ai_fund"
+          }
+        ],
         "track_record": [
           {
-            "description": "融资来源记录：穹彻智能 · 轮次未披露 · 2026-06-18 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "无锡市太湖新城发展集团旗下无锡资本的融资报道将上海交大AI未来基金列为穹彻智能新一轮投资方；报道没有披露该基金的单独投资金额。",
             "source_id": "FISRC-e3b51be471b79167"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "发起学院官方网站（非基金专属联络渠道）",
+            "value": "上海交通大学人工智能学院",
+            "url": "https://ai.sjtu.edu.cn/",
+            "source_id": "sjtu_ai_fund"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "sjtu_ai_fund",
+            "source_url": "https://news.sjtu.edu.cn/mtjj/20250728/213328.html",
+            "source_title": "上海交通大学新闻学术网｜发布AI未来基金",
+            "source_content_hash": "60acfc1bb2474e035b42f72aad7670740313997485d8262db03a0e1034b6203c",
+            "quote": "该基金由上海交大人工智能学院发起、上海交大海内外杰出校友共同助力，重点关注全球青年AI人才链接。",
+            "quote_hash": "60acfc1bb2474e035b42f72aad7670740313997485d8262db03a0e1034b6203c"
+          },
+          {
+            "source_id": "sjtu_ai_programs",
+            "source_url": "https://news.sjtu.edu.cn/mtjj/20250728/213328.html",
+            "source_title": "上海交通大学新闻学术网｜AI未来基金科研与科创计划",
+            "source_content_hash": "df49e962736b39e5b728d7cb3a67f839173d4270bf61b7bc171384233a294114",
+            "quote": "科研种子计划面向学院青年科学家；科创种子计划面向全校创业师生，通过天使投资夯实创新创业与成果转化基础。",
+            "quote_hash": "df49e962736b39e5b728d7cb3a67f839173d4270bf61b7bc171384233a294114"
+          },
           {
             "source_id": "FISRC-e3b51be471b79167",
             "source_url": "https://www.wuxicapital.com.cn/news_59/575.html",
@@ -202915,7 +203031,11 @@
             "quote_hash": "9a56d47990c9b47b90dd3b1b9aa7578bbbecb53cd57d2bce6b90d2cd9b0972cf"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "coverage_note": "该基金为上海交大人工智能学院发起的科研与创业支持项目。公开资料未披露独立法律主体、管理人、基金规模或具体出资额；不将穹彻智能融资总额归为该基金投资金额。",
+        "last_verified_at": "2026-09-27",
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -216484,21 +216604,82 @@
         "angel"
       ],
       "public_profile": {
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "策源基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "summary": "融资披露将策源基金称为上海科创集团旗下基金。上海科创集团公开披露的投资方向为投早、投小、投长期、投硬科技；截至2026年2月，集团披露管理规模1080亿元。该规模和集团业绩属于母集团，不代表策源基金单只基金的规模、出资额或回报。",
+        "facts": [
+          {
+            "field": "group_relationship",
+            "label": "公开披露的集团关系",
+            "value": "融资来源称策源基金为上海科创集团旗下基金；尚未从公开材料核到该笔投资对应的具体基金载体。",
+            "source_id": "FISRC-e666934339b27e85"
+          },
+          {
+            "field": "parent_investment_focus",
+            "label": "母集团公开投资方向",
+            "value": "投早、投小、投长期、投硬科技。",
+            "source_id": "stvc_strategy_2026"
+          },
+          {
+            "field": "parent_group_scale",
+            "label": "母集团披露规模（截至2026年2月）",
+            "value": "上海科创集团披露总资产950亿元、管理规模1080亿元；该数据为集团口径。",
+            "source_id": "stvc_overview_2026"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：新智具身 · 天使轮 · 2026-05-27 · 本轮参投 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "融资披露显示策源基金参与新智具身天使轮；近亿元为该轮融资总额，披露未给出策源基金的单独出资金额。",
             "source_id": "FISRC-e666934339b27e85"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "母集团官网（非基金专属）",
+            "value": "上海科技创业投资（集团）有限公司",
+            "url": "https://www.shstvc.com.cn/",
+            "source_id": "stvc_contact_2026"
+          },
+          {
+            "kind": "phone",
+            "label": "母集团公开总机（非基金专线）",
+            "value": "021-22302800",
+            "url": "https://www.shstvc.com.cn/",
+            "source_id": "stvc_contact_2026"
+          },
+          {
+            "kind": "email",
+            "label": "母集团公开邮箱（非基金专属）",
+            "value": "info@shstvc.com.cn",
+            "url": "https://www.shstvc.com.cn/",
+            "source_id": "stvc_contact_2026"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "stvc_overview_2026",
+            "source_url": "https://www.shstvc.com.cn/",
+            "source_title": "上海科技创业投资（集团）有限公司｜官方主页",
+            "source_content_hash": "0334a21a049338a3368752d7ca7350b5dabed19ee348fd8bfa44cbe9b2264439",
+            "quote": "截至2026年2月，上海科创集团总资产950亿元，管理规模1080亿元，历史累计培育上市公司超过200家，其中科创板上市105家。",
+            "quote_hash": "0334a21a049338a3368752d7ca7350b5dabed19ee348fd8bfa44cbe9b2264439"
+          },
+          {
+            "source_id": "stvc_strategy_2026",
+            "source_url": "https://www.shstvc.com.cn/",
+            "source_title": "上海科技创业投资（集团）有限公司｜官方主页",
+            "source_content_hash": "165a657b03e9fa4e6e2a951f4f7ce88a08b84eb3dfe543401fb64fb3fb1e0921",
+            "quote": "秉持“投早投小投长期投硬科技”核心理念。",
+            "quote_hash": "165a657b03e9fa4e6e2a951f4f7ce88a08b84eb3dfe543401fb64fb3fb1e0921"
+          },
+          {
+            "source_id": "stvc_contact_2026",
+            "source_url": "https://www.shstvc.com.cn/",
+            "source_title": "上海科技创业投资（集团）有限公司｜官方主页",
+            "source_content_hash": "42091d9b6ac2137648961e6a34cbb5a39dcd0abe1573888619e17ae35791e7e1",
+            "quote": "地址：上海市静安区铜仁路269号；电话：021-22302800；邮箱：info@shstvc.com.cn。",
+            "quote_hash": "42091d9b6ac2137648961e6a34cbb5a39dcd0abe1573888619e17ae35791e7e1"
+          },
           {
             "source_id": "FISRC-e666934339b27e85",
             "source_url": "https://news.pedaily.cn/202605/564455.shtml",
@@ -216508,7 +216689,11 @@
             "quote_hash": "fd32646d691c32c4b456ffe2d688c77f78f12fabd156fb996c5137eabc1d0ce3"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "coverage_note": "集团官网的资产、管理规模和上市案例为上海科创集团整体口径，不能视作策源基金单只基金的数据。当前可核实的联系方式属于母集团。融资来源支持策源基金参与新智具身天使轮，但未披露该基金的具体出资额或对应基金载体。",
+        "last_verified_at": "2026-09-27",
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -263739,21 +263924,66 @@
       },
       "round_codes": [],
       "public_profile": {
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "昆高新集团 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "summary": "昆高新集团通过全资子公司昆山高新创业投资有限公司开展股权投资及基金合作。昆山市政府披露，子公司与市场化机构设立的顺融启进四期基金目标规模6亿元，聚焦数字经济、新材料、新能源及智能制造等方向；该数字属于具体子基金，不是集团管理规模。",
+        "facts": [
+          {
+            "field": "investment_platform",
+            "label": "集团股权投资平台",
+            "value": "昆山高新创业投资有限公司是昆高新集团全资子公司，专业从事股权投资。",
+            "source_id": "kunshan_lp_2025"
+          },
+          {
+            "field": "fund_cooperation",
+            "label": "基金合作案例",
+            "value": "昆山高新创投联合顺融投资管理有限公司及多家市场机构设立顺融启进四期基金，目标规模6亿元。",
+            "source_id": "kunshan_group_fund_2024"
+          },
+          {
+            "field": "fund_strategy",
+            "label": "上述基金方向",
+            "value": [
+              "数字经济",
+              "新材料",
+              "新能源",
+              "智能制造",
+              "低空经济",
+              "人形机器人",
+              "半导体"
+            ],
+            "source_id": "kunshan_group_fund_2024"
+          },
+          {
+            "field": "subsidiary_track",
+            "label": "子公司基金合作披露",
+            "value": "2025年政府报道：昆高新创投参与设立30只基金，基金规模合计超过420亿元；数据属于全资子公司，非集团单只基金规模。",
+            "source_id": "kunshan_lp_2025"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：驰芯半导体 · A+轮 · 2026-09-23 · A+轮投资 · 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "数据库关联的驰芯半导体A+轮来源页面标注日期为2024年9月19日、金额未公开；融资库记录日期为2026年9月23日。该来源只支持页面所载历史披露，不能独立证明2026年有新一轮出资。",
             "source_id": "FISRC-d7c3cbdfafeaf4fc"
           }
         ],
         "contacts": [],
         "sources": [
+          {
+            "source_id": "kunshan_group_fund_2024",
+            "source_url": "https://www.ks.gov.cn/kss/ttxw/202405/02ccc277f2674126820b30a93a87a432.shtml",
+            "source_title": "昆山市人民政府｜昆高新集团下好资本招商先手棋",
+            "source_content_hash": "e68e86b4db3e75836506a2b1e500defadf205610b38ee84ae58977feef73c0e4",
+            "quote": "昆山高新创业投资有限公司联合苏州顺融投资管理有限公司与多家市场机构参股设立基金，目标基金规模6亿元。",
+            "quote_hash": "e68e86b4db3e75836506a2b1e500defadf205610b38ee84ae58977feef73c0e4"
+          },
+          {
+            "source_id": "kunshan_lp_2025",
+            "source_url": "https://data.ks.gov.cn/kss/ksyw/202504/2c1cd1f7eb8f4fb99377cf0fcebd48f0.shtml",
+            "source_title": "昆山市人民政府｜昆高新创投荣登2024年度中国最佳国资LP榜单",
+            "source_content_hash": "40ea28337897524d83eb6b1e0384d1ee45238db6725b220af5956a81209b46b3",
+            "quote": "昆高新创投作为昆高新集团专业从事股权投资的全资子公司，与市场机构参与设立30只基金，基金规模超420亿元。",
+            "quote_hash": "40ea28337897524d83eb6b1e0384d1ee45238db6725b220af5956a81209b46b3"
+          },
           {
             "source_id": "FISRC-d7c3cbdfafeaf4fc",
             "source_url": "https://m.jobui.com/company/16905688/financing/",
@@ -263763,7 +263993,11 @@
             "quote_hash": "eaecb19ffe4336c4b7b1b934ae3331d0e70aaa8a6da3118abbd80e9bc7cd9fa7"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "coverage_note": "基金规模、基金合作及投资平台业绩需区分昆高新集团与其全资子公司昆山高新创投；6亿元是顺融启进四期目标规模，420亿元是子公司参与设立基金的合计规模。驰芯半导体关联来源显示2024年9月19日，和融资库所列2026年9月23日不同，未将其解释为新的2026年投资。",
+        "last_verified_at": "2026-09-27",
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched"
       },
       "activity_count": 1,
       "portfolio_companies": [],
@@ -263825,21 +264059,62 @@
       },
       "round_codes": [],
       "public_profile": {
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "昆山高新创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "summary": "昆山高新创投的公开身份对应昆山高新创业投资有限公司，是昆高新集团全资股权投资子公司。政府披露其参与设立多只基金、对昆山产业项目进行资本赋能，也共同出资成立智能算力网络企业中科算网。数据库当前关联的驰芯半导体A+轮来源实际报道的是华毅瀛飞2025年A轮，故不将该引文作为驰芯投资证据。",
+        "facts": [
+          {
+            "field": "legal_name",
+            "label": "公开主体名称",
+            "value": "昆山高新创业投资有限公司（政府报道简称“昆高新创投”）。",
+            "source_id": "kunshan_lp_2025"
+          },
+          {
+            "field": "ownership",
+            "label": "集团关系",
+            "value": "昆高新集团全资子公司，专业从事股权投资。",
+            "source_id": "kunshan_lp_2025"
+          },
+          {
+            "field": "fund_activity",
+            "label": "基金合作",
+            "value": "2025年政府报道披露与IDG、深创投、元禾原点等参与设立30只基金，基金规模合计超过420亿元。",
+            "source_id": "kunshan_lp_2025"
+          },
+          {
+            "field": "portfolio_company",
+            "label": "公开披露的共同投资项目",
+            "value": "昆山高新创投与中国科学技术大学苏州高等研究院等共同出资成立中科算网；算力中心峰值算力500P为被投企业运营数据。",
+            "source_id": "kunshan_computing_2025"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：驰芯半导体 · A+轮 · 2026-09-23 · A轮参投 · 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "昆山市政府报道昆山高新创投与中科大苏州高等研究院等共同出资成立中科算网；500P为中科算网运营的昆山智能计算中心峰值算力，不是基金投资额或昆高新创投自身资产。",
+            "source_id": "kunshan_computing_2025"
+          },
+          {
+            "description": "融资库关联的投资界来源记录昆山高新创投参与华毅瀛飞2025年A轮，整轮接近2亿元但未披露其单独出资额；该来源与数据库当前关联的驰芯半导体2026年A+轮不一致。",
             "source_id": "FISRC-cd5b0b79e0cacd63"
           }
         ],
         "contacts": [],
         "sources": [
+          {
+            "source_id": "kunshan_lp_2025",
+            "source_url": "https://data.ks.gov.cn/kss/ksyw/202504/2c1cd1f7eb8f4fb99377cf0fcebd48f0.shtml",
+            "source_title": "昆山市人民政府｜昆高新创投荣登2024年度中国最佳国资LP榜单",
+            "source_content_hash": "40ea28337897524d83eb6b1e0384d1ee45238db6725b220af5956a81209b46b3",
+            "quote": "昆高新创投作为昆高新集团专业从事股权投资的全资子公司，与市场机构参与设立30只基金，基金规模超420亿元。",
+            "quote_hash": "40ea28337897524d83eb6b1e0384d1ee45238db6725b220af5956a81209b46b3"
+          },
+          {
+            "source_id": "kunshan_computing_2025",
+            "source_url": "https://data.ks.gov.cn/kss/qzkx/202511/c0fbf0a63ada45c5b337d5587257b5d6.shtml",
+            "source_title": "昆山市人民政府｜中科算网落户新址",
+            "source_content_hash": "17fb5b90f9e1dd8623227e16d0398e3779084d4ba5b9ac218109585e8e3f3f15",
+            "quote": "中科算网科技有限公司由昆山高新创业投资有限公司、中国科学技术大学苏州高等研究院等共同出资成立。",
+            "quote_hash": "17fb5b90f9e1dd8623227e16d0398e3779084d4ba5b9ac218109585e8e3f3f15"
+          },
           {
             "source_id": "FISRC-cd5b0b79e0cacd63",
             "source_url": "https://news.pedaily.cn/202503/547159.shtml",
@@ -263849,7 +264124,11 @@
             "quote_hash": "947f78e911058631259b73771c06ee2cef87fdb2b2a28ec7b2b338e501dd7786"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "coverage_note": "昆山高新创投与母集团分开记录；基金合计规模和LP榜单为子公司口径，被投企业算力数据不代表基金收益。需复核融资库中驰芯半导体A+轮的投资方映射：当前引用的原文实际描述华毅瀛飞2025年A轮。",
+        "last_verified_at": "2026-09-27",
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched"
       },
       "activity_count": 1,
       "portfolio_companies": [],
@@ -266222,21 +266501,58 @@
       },
       "round_codes": [],
       "public_profile": {
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "广州红鸟启航基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "summary": "香港科技大学（广州）公开资料将钟潜凯列为广州红鸟启航基金创始合伙人，并列出其代表投资项目及过往职业经历。融资披露将该基金列为数巅智能先前Pre-A轮跟投方；该报道中的数亿元为整轮金额，未披露基金单独出资额。",
+        "facts": [
+          {
+            "field": "founding_partner",
+            "label": "公开披露的创始合伙人",
+            "value": "钟潜凯（Allan QianKai Zhong）；资料来自香港科技大学（广州）未来技术学院。",
+            "source_id": "redbird_founder_profile"
+          },
+          {
+            "field": "founder_background",
+            "label": "创始合伙人过往经历",
+            "value": "港科大资料称其曾任职美国硅谷科技投行、华为战略与咨询、北电及西门子；这是个人履历，不是基金团队完整名单。",
+            "source_id": "redbird_founder_profile"
+          },
+          {
+            "field": "selected_investments",
+            "label": "创始合伙人资料列举的代表项目",
+            "value": [
+              "移远通信",
+              "汇量科技",
+              "嘉元科技",
+              "数巅科技",
+              "拓元智慧"
+            ],
+            "source_id": "redbird_portfolio_examples"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：数巅智能 · 多轮融资 · 2026-09-21 · pre-A轮跟投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "财经网报道数巅智能在2025年10月完成Pre-A轮，广州红鸟启航基金为跟投机构之一；报道所述数亿元是整轮融资金额，未披露单家投资额。该披露对应历史Pre-A轮，不是数据库所列2026年多轮融资的逐轮证明。",
             "source_id": "FISRC-9ebda1057c2926b3"
           }
         ],
         "contacts": [],
         "sources": [
+          {
+            "source_id": "redbird_founder_profile",
+            "source_url": "https://cft.hkust-gz.edu.cn/zh/2026/08/31/%E9%92%9F%E6%BD%9C%E5%87%AF%EF%BC%88allan%EF%BC%89/",
+            "source_title": "香港科技大学（广州）未来技术学院｜钟潜凯",
+            "source_content_hash": "3db276dce4b6deede0ac8ad9232d6f8c4f808b6f89c7e0e6d1e4734a05fd052a",
+            "quote": "香港科技大学的校友，广州红鸟启航基金创始合伙人，港科广、港科大霍英东研究院、港科大百万奖金创业大赛导师及评委。",
+            "quote_hash": "3db276dce4b6deede0ac8ad9232d6f8c4f808b6f89c7e0e6d1e4734a05fd052a"
+          },
+          {
+            "source_id": "redbird_portfolio_examples",
+            "source_url": "https://cft.hkust-gz.edu.cn/zh/2026/08/31/%E9%92%9F%E6%BD%9C%E5%87%AF%EF%BC%88allan%EF%BC%89/",
+            "source_title": "香港科技大学（广州）未来技术学院｜钟潜凯",
+            "source_content_hash": "479c17325d69a4ea78a560dc5e3dfe424b7cd8805663c50da42d42dbbf5afb25",
+            "quote": "代表投资项目：移远通信（A股）、汇量科技（港股独角兽）、嘉元科技、开思时代、赛昉科技、英韧科技、智科自动化、数巅科技、拓元智慧等。",
+            "quote_hash": "479c17325d69a4ea78a560dc5e3dfe424b7cd8805663c50da42d42dbbf5afb25"
+          },
           {
             "source_id": "FISRC-9ebda1057c2926b3",
             "source_url": "https://industry.caijing.com.cn/20260707/5169223.shtml",
@@ -266246,7 +266562,11 @@
             "quote_hash": "fcd45a3c282bf9b19a1d8d9e69340a6f4c6018575e8aa1d26a10e45b7159d87b"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "coverage_note": "已核验到创始合伙人公开资料，但未找到可独立确认的基金官网、完整团队名单、基金规模或公开业务联系方式。港科广资料列出的项目是代表案例，不等于完整组合或基金整体回报。融资报道只证明其参与数巅智能较早Pre-A轮。",
+        "last_verified_at": "2026-09-27",
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched"
       },
       "activity_count": 1,
       "portfolio_companies": [],
@@ -267895,21 +268215,77 @@
       },
       "round_codes": [],
       "public_profile": {
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "贵安鲲鹏基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "summary": "贵安新区鲲鹏私募基金管理有限公司是贵安新区国有基金市场化运营平台，成立于2020年。贵阳人才集团2026年招聘公告披露，该管理人当时管理2只基金、管理规模160亿元，投资企业33家；这些为管理人/基金体系口径，不是某只基金或某一项目的出资额。",
+        "facts": [
+          {
+            "field": "legal_manager",
+            "label": "核验到的管理主体",
+            "value": "贵安新区鲲鹏私募基金管理有限公司（登记编号P1071903）。",
+            "source_id": "guian_manager_2026"
+          },
+          {
+            "field": "established",
+            "label": "成立时间及出资关系",
+            "value": "2020年11月成立，由贵安新区管委会100%出资，并由贵安新区财政金融工作局直属管理。",
+            "source_id": "guian_manager_2026"
+          },
+          {
+            "field": "manager_scale_2026",
+            "label": "管理人披露数据",
+            "value": "2026年招聘公告称在管基金2只、管理规模160亿元、已完成项目投资超过90亿元、投资企业33家；属管理人层面。",
+            "source_id": "guian_activity_2026"
+          },
+          {
+            "field": "sectors",
+            "label": "公开投资方向",
+            "value": [
+              "大数据和人工智能",
+              "先进装备制造",
+              "新能源电池及材料",
+              "电子信息制造"
+            ],
+            "source_id": "guian_manager_2026"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2020-11",
+            "description": "管理公司成立。",
+            "source_id": "guian_manager_2026"
+          }
+        ],
         "track_record": [
           {
-            "description": "融资来源记录：智身科技（GENISOM AI） · B轮 · 2026-09-20 · 历史轮次投资方 · 数亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "GENISOM融资披露将贵安鲲鹏列入较早的A+轮投资方；披露的“数亿元”是该轮总额范围，不是基金的单笔出资额。该来源不支持把贵安鲲鹏列为2026年B轮新投资方。",
             "source_id": "FISRC-750c27d055174535"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "phone",
+            "label": "2026年公开招聘咨询电话（非投资业务专线）",
+            "value": "0851-84793156",
+            "url": "https://www.gyrcjt.cn/recruitment/recruitmentproject/details/50",
+            "source_id": "guian_manager_2026"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "guian_manager_2026",
+            "source_url": "https://www.gyrcjt.cn/recruitment/recruitmentproject/details/50",
+            "source_title": "贵阳人才集团｜贵安新区鲲鹏私募基金管理有限公司2026年招聘公告",
+            "source_content_hash": "1e20e689dcef9b1690a8f1376199ceddf306fcfc87f75722e9725718166cf493",
+            "quote": "贵安新区鲲鹏私募基金管理有限公司成立于2020年11月，是由贵安新区管委会100%出资设立并由贵安新区财政金融工作局直属管理的国有企业。",
+            "quote_hash": "1e20e689dcef9b1690a8f1376199ceddf306fcfc87f75722e9725718166cf493"
+          },
+          {
+            "source_id": "guian_activity_2026",
+            "source_url": "https://www.gyrcjt.cn/recruitment/recruitmentproject/details/50",
+            "source_title": "贵阳人才集团｜贵安新区鲲鹏私募基金管理有限公司2026年招聘公告",
+            "source_content_hash": "1136554ae91e3373c769dabe08cf347fecbb5fd4ed040c68bdd0e19386ea0c13",
+            "quote": "公司在管基金2只，管理规模160亿元，已完成超过90亿元的项目投资，已投资企业33家。",
+            "quote_hash": "1136554ae91e3373c769dabe08cf347fecbb5fd4ed040c68bdd0e19386ea0c13"
+          },
           {
             "source_id": "FISRC-750c27d055174535",
             "source_url": "https://www.taibo.cn/company/122078",
@@ -267919,7 +268295,11 @@
             "quote_hash": "73abb7c1bbe47bb43dd8c46edcbd43f4329e879b481d278a3f2572e24a4b6895"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "coverage_note": "“贵安鲲鹏基金”在融资库中关联到管理公司贵安新区鲲鹏私募基金管理有限公司。160亿元及项目投资统计均为管理人/管理基金体系数据。招聘咨询号码只按其原始用途标注。GENISOM来源提及历史A+轮，不支持当前数据库将其列为B轮本轮出资方。",
+        "last_verified_at": "2026-09-27",
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched"
       },
       "activity_count": 1,
       "portfolio_companies": [],
@@ -271898,21 +272278,84 @@
       },
       "round_codes": [],
       "public_profile": {
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "锦秋基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "summary": "锦秋基金官网称其成立于2022年，专注早期投资，关注产业跃迁和拓展人类能力边界的创业公司。官网列出团队成员、代表性组合公司并提供商务合作邮箱。融资披露将其列为因克斯B轮的既有股东之一；该轮融资总额超过3亿元，但未披露锦秋基金单独出资金额。",
+        "facts": [
+          {
+            "field": "established",
+            "label": "成立时间",
+            "value": "2022年。",
+            "source_id": "jinqiu_home"
+          },
+          {
+            "field": "stage_and_thesis",
+            "label": "投资阶段与方向",
+            "value": "专注早期投资，关注推动产业跃迁、拓展人类能力边界的创业公司。",
+            "source_id": "jinqiu_home"
+          },
+          {
+            "field": "team",
+            "label": "官网列出的创始合伙人",
+            "value": "杨洁（创始合伙人）；官网同时列出其他合伙人与投资人。",
+            "source_id": "jinqiu_home"
+          },
+          {
+            "field": "portfolio_examples",
+            "label": "官网列出的组合案例",
+            "value": [
+              "宇树科技",
+              "Momenta",
+              "生数科技",
+              "地平线"
+            ],
+            "source_id": "jinqiu_home"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2022",
+            "description": "锦秋基金成立。",
+            "source_id": "jinqiu_home"
+          }
+        ],
         "track_record": [
           {
-            "description": "融资来源记录：因克斯 · B轮 · 2026-09-15 · 老股东持续多轮追投 · 超3亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "投资界2026年9月报道因克斯完成超3亿元B轮，并称复星创富、深创投、华控基金、锦秋基金、普华资本等老股东持续多轮追投；超3亿元为整轮金额，未披露锦秋基金本轮出资额。",
             "source_id": "FISRC-d0c3dca85d845330"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "锦秋基金",
+            "url": "https://jinqiucapital.com/",
+            "source_id": "jinqiu_home"
+          },
+          {
+            "kind": "email",
+            "label": "官网商务合作及通用咨询邮箱",
+            "value": "ai@jinqiucapital.com",
+            "url": "https://jinqiucapital.com/contact",
+            "source_id": "jinqiu_contact"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "jinqiu_home",
+            "source_url": "https://jinqiucapital.com/",
+            "source_title": "锦秋基金｜官方网站",
+            "source_content_hash": "fbb642c2ef3fc443e4470ee20acf26c21b91b16dfaadef1186f350d18f5ee70f",
+            "quote": "锦秋基金成立于2022年，专注早期，投资那些推动产业跃迁、拓展人类能力边界的创业公司。",
+            "quote_hash": "fbb642c2ef3fc443e4470ee20acf26c21b91b16dfaadef1186f350d18f5ee70f"
+          },
+          {
+            "source_id": "jinqiu_contact",
+            "source_url": "https://jinqiucapital.com/contact",
+            "source_title": "锦秋基金｜联系方式",
+            "source_content_hash": "53e25aeb2ca9da01ac531f4807d45a6a032fabc0942040b02a873513fd66328e",
+            "quote": "商务合作 / 通用咨询：ai@jinqiucapital.com。",
+            "quote_hash": "53e25aeb2ca9da01ac531f4807d45a6a032fabc0942040b02a873513fd66328e"
+          },
           {
             "source_id": "FISRC-d0c3dca85d845330",
             "source_url": "https://news.pedaily.cn/202609/569015.shtml",
@@ -271922,7 +272365,11 @@
             "quote_hash": "0553874275a9d1405d1a0f8e1cc88e61b74f557cf7f1adcb9fac56dd7353f161"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "coverage_note": "成立时间、投资方向、团队和组合案例来自基金官网；官网展示案例不是完整组合或业绩回报。融资报道中的超3亿元为因克斯B轮总额，不是锦秋基金的单独出资金额。",
+        "last_verified_at": "2026-09-27",
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched"
       },
       "activity_count": 1,
       "portfolio_companies": [],
@@ -301365,21 +301812,104 @@
       },
       "round_codes": [],
       "public_profile": {
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "湖北省长江电影集团有限公司 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "summary": "湖北省长江电影集团有限公司是省属大型国有文化企业，业务覆盖影视创作生产、发行放映及新型业态。集团公开披露了影片及剧集制作、票房和奖项等成果，并称已战略投资多模态生成式AI企业智象未来。融资库关联来源记录的是智象未来2024年12月A轮历史投资，未披露集团单笔金额。",
+        "facts": [
+          {
+            "field": "established",
+            "label": "组建时间",
+            "value": "湖北省政府于2012年8月批准组建；前身为1950年创建的中南影片经理公司。",
+            "source_id": "hbfilm_profile"
+          },
+          {
+            "field": "ownership",
+            "label": "企业性质",
+            "value": "省属大型国有文化企业。",
+            "source_id": "hbfilm_profile"
+          },
+          {
+            "field": "subsidiaries",
+            "label": "组织规模",
+            "value": "集团公开资料列有34家全资、控股子公司和2家分公司。",
+            "source_id": "hbfilm_profile"
+          },
+          {
+            "field": "production_record",
+            "label": "影视制作成果",
+            "value": "集团公开资料称独立或参与制作影视作品100余部；近两年投资出品影视剧46部。",
+            "source_id": "hbfilm_profile"
+          },
+          {
+            "field": "ai_development",
+            "label": "AI影视布局",
+            "value": "集团称已战略投资智象未来，并拓展AI影视内容制作、影片修复和智能影视教育培训等业务。",
+            "source_id": "hbfilm_ai"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2012-08",
+            "description": "湖北省政府批准组建湖北长江电影集团。",
+            "source_id": "hbfilm_profile"
+          }
+        ],
         "track_record": [
           {
-            "description": "融资来源记录：智象未来 · 轮次未披露 · 2026-04-16 · A轮投资方 · 5亿元。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "集团公开披露近两年出品电影23部，其中17部已上映，票房合计89.12亿元；这是集团电影作品的合计票房，不是集团投资回报。",
+            "source_id": "hbfilm_profile"
+          },
+          {
+            "description": "融资库关联来源记录集团为智象未来2024年12月25日A轮投资方，轮次融资金额为数亿人民币级；金额是整轮口径，未披露集团出资额，亦非数据库显示的2026年新一轮5亿元融资。",
             "source_id": "FISRC-6d78d6f795c322a1"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "湖北长江电影集团",
+            "url": "https://www.hbfilm.com.cn/",
+            "source_id": "hbfilm_contact"
+          },
+          {
+            "kind": "phone",
+            "label": "集团办公电话",
+            "value": "027-82819470",
+            "url": "https://www.hbfilm.com.cn/",
+            "source_id": "hbfilm_contact"
+          },
+          {
+            "kind": "address",
+            "label": "集团办公地址",
+            "value": "湖北省武汉市武昌区公正路9号",
+            "url": "https://www.hbfilm.com.cn/",
+            "source_id": "hbfilm_contact"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "hbfilm_profile",
+            "source_url": "https://www.hbfilm.com.cn/AboutCom/2020061714522475579516",
+            "source_title": "湖北长江电影集团｜公司简介",
+            "source_content_hash": "665c72b1145e6e65e4b20b5a915d68640aa7a269dfe2a868e9394490848c5ceb",
+            "quote": "湖北省政府批准组建湖北长江电影集团有限责任公司，公司性质为省属大型国有文化企业。",
+            "quote_hash": "665c72b1145e6e65e4b20b5a915d68640aa7a269dfe2a868e9394490848c5ceb"
+          },
+          {
+            "source_id": "hbfilm_ai",
+            "source_url": "https://www.hbfilm.com.cn/News/2025112708580755569721",
+            "source_title": "湖北长江电影集团｜推动电影与科技融合",
+            "source_content_hash": "63aa9833c37cd0b535d4e21c8359ecda7ae4b8230f150bfc64b73d003cccde5f",
+            "quote": "我们战略投资了多模态生成式人工智能企业智象未来，与北京清博智能成立合资公司。",
+            "quote_hash": "63aa9833c37cd0b535d4e21c8359ecda7ae4b8230f150bfc64b73d003cccde5f"
+          },
+          {
+            "source_id": "hbfilm_contact",
+            "source_url": "https://www.hbfilm.com.cn/",
+            "source_title": "湖北长江电影集团｜官方网站",
+            "source_content_hash": "ad053b954c8f86f650603668eb28890553acfc7db9c03c849587ee913f180981",
+            "quote": "地址：湖北省武汉市武昌区公正路9号；办公电话：027-82819470。",
+            "quote_hash": "ad053b954c8f86f650603668eb28890553acfc7db9c03c849587ee913f180981"
+          },
           {
             "source_id": "FISRC-6d78d6f795c322a1",
             "source_url": "https://m.pedaily.cn/vc/company/679431.html",
@@ -301389,7 +301919,11 @@
             "quote_hash": "559cd5f97540e9cb9c8a3404974246e15f261d8ad231c33c35ad294be75cc73d"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "coverage_note": "影视作品数量和票房均为集团披露的经营数据，不等于基金投资回报。融资库关联的可核验历史来源指向2024年12月25日智象未来A轮；它不证明湖北长江电影集团参与数据库所列2026年新一轮融资，也没有披露集团单笔出资金额。",
+        "last_verified_at": "2026-09-27",
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched"
       },
       "activity_count": 1,
       "portfolio_companies": [],
@@ -301535,21 +302069,72 @@
       },
       "round_codes": [],
       "public_profile": {
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "荷塘创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "summary": "荷塘创投公开资料称其专注投资核心硬技术创新企业。其管理的荷塘创新二期基金于2023年备案、目标规模5亿元，主要策略为科技成果转化与首创技术投资；该规模属于该只基金，不能等同于管理人全部在管规模。",
+        "facts": [
+          {
+            "field": "investment_focus",
+            "label": "公开投资方向",
+            "value": "核心硬技术创新企业，强调科技成果转化和首创技术投资。",
+            "source_id": "hetang_home"
+          },
+          {
+            "field": "named_fund",
+            "label": "公开披露的一只在管基金",
+            "value": "杭州荷塘创新杭实成果转化创业投资合伙企业（有限合伙），即荷塘创新二期基金；2023年5月5日备案，目标规模5亿元。",
+            "source_id": "hetang_fund_2023"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2023-05-05",
+            "description": "荷塘创新二期基金完成备案，公开目标规模5亿元。",
+            "source_id": "hetang_fund_2023"
+          }
+        ],
         "track_record": [
           {
-            "description": "融资来源记录：华毅瀛飞 · Pre-A轮 · 2026-04-13 · 天使轮投资方 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "荷塘创投官网2026年7月报道其领投五针松医药天使轮；公开报道只披露整轮为数千万元级，没有披露荷塘创投单独出资额。",
+            "source_id": "hetang_2026_news"
+          },
+          {
+            "description": "融资库关联的36氪项目页记录荷塘创投参与华毅瀛飞2019年12月天使轮；这条来源是历史天使轮，不支持数据库当前2026年Pre-A轮归因。",
             "source_id": "FISRC-a5da955737170458"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "荷塘创业投资管理（北京）有限公司",
+            "url": "https://www.tsinghua-vc.com/",
+            "source_id": "hetang_home"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "hetang_home",
+            "source_url": "https://www.tsinghua-vc.com/",
+            "source_title": "荷塘创业投资管理（北京）有限公司｜官方网站",
+            "source_content_hash": "b87a498b193d096a2a11a16f90a1493df987a0e3739c4c362fab9b9cb705dcce",
+            "quote": "支持技术创新驱动为核心目标，一直专注于投资拥有核心硬技术的创新型企业。",
+            "quote_hash": "b87a498b193d096a2a11a16f90a1493df987a0e3739c4c362fab9b9cb705dcce"
+          },
+          {
+            "source_id": "hetang_fund_2023",
+            "source_url": "https://www.tsinghua-vc.com/newsinfo/6879096.html",
+            "source_title": "荷塘创投｜荷塘创新二期基金与浙江省科创母基金签约",
+            "source_content_hash": "cb737e99f415f22fe11f35c46901cd3e94afc262adc046009ee29a0aecc711e7",
+            "quote": "荷塘创新二期基金于2023年5月5日完成备案，目标规模5亿元，以科技成果转化及首创技术投资为主要策略。",
+            "quote_hash": "cb737e99f415f22fe11f35c46901cd3e94afc262adc046009ee29a0aecc711e7"
+          },
+          {
+            "source_id": "hetang_2026_news",
+            "source_url": "https://www.tsinghua-vc.com/xwzx",
+            "source_title": "荷塘创投｜新闻中心",
+            "source_content_hash": "f5e71fc6fc6b17c5927fd5fb5cc230b6abf5a93253d3ab848c28a8863a00baa9",
+            "quote": "2026年7月28日，五针松医药宣布完成天使轮融资，本轮融资由荷塘创投领投。",
+            "quote_hash": "f5e71fc6fc6b17c5927fd5fb5cc230b6abf5a93253d3ab848c28a8863a00baa9"
+          },
           {
             "source_id": "FISRC-a5da955737170458",
             "source_url": "https://pitchhub.36kr.com/project/2032495895234948",
@@ -301559,7 +302144,11 @@
             "quote_hash": "69dd7eeae8009a08c91695f1fb11e3c4a2ada2b386569e9206f569eeba8bedf5"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "coverage_note": "荷塘创新二期基金的5亿元为该只基金的目标规模，不是荷塘创投管理人的总体规模。当前融资库关联的华毅瀛飞来源明确指向2019年12月天使轮；该来源不支持数据库2026年Pre-A轮的投资方归因。官网披露的五针松医药案例为另一笔2026年天使轮。",
+        "last_verified_at": "2026-09-27",
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched"
       },
       "activity_count": 1,
       "portfolio_companies": [],

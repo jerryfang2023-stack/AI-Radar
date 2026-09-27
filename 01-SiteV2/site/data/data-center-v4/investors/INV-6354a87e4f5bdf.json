@@ -129,21 +129,72 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "荷塘创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "荷塘创投公开资料称其专注投资核心硬技术创新企业。其管理的荷塘创新二期基金于2023年备案、目标规模5亿元，主要策略为科技成果转化与首创技术投资；该规模属于该只基金，不能等同于管理人全部在管规模。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "公开投资方向",
+          "value": "核心硬技术创新企业，强调科技成果转化和首创技术投资。",
+          "source_id": "hetang_home"
+        },
+        {
+          "field": "named_fund",
+          "label": "公开披露的一只在管基金",
+          "value": "杭州荷塘创新杭实成果转化创业投资合伙企业（有限合伙），即荷塘创新二期基金；2023年5月5日备案，目标规模5亿元。",
+          "source_id": "hetang_fund_2023"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2023-05-05",
+          "description": "荷塘创新二期基金完成备案，公开目标规模5亿元。",
+          "source_id": "hetang_fund_2023"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：华毅瀛飞 · Pre-A轮 · 2026-04-13 · 天使轮投资方 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "荷塘创投官网2026年7月报道其领投五针松医药天使轮；公开报道只披露整轮为数千万元级，没有披露荷塘创投单独出资额。",
+          "source_id": "hetang_2026_news"
+        },
+        {
+          "description": "融资库关联的36氪项目页记录荷塘创投参与华毅瀛飞2019年12月天使轮；这条来源是历史天使轮，不支持数据库当前2026年Pre-A轮归因。",
           "source_id": "FISRC-a5da955737170458"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "荷塘创业投资管理（北京）有限公司",
+          "url": "https://www.tsinghua-vc.com/",
+          "source_id": "hetang_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "hetang_home",
+          "source_url": "https://www.tsinghua-vc.com/",
+          "source_title": "荷塘创业投资管理（北京）有限公司｜官方网站",
+          "source_content_hash": "b87a498b193d096a2a11a16f90a1493df987a0e3739c4c362fab9b9cb705dcce",
+          "quote": "支持技术创新驱动为核心目标，一直专注于投资拥有核心硬技术的创新型企业。",
+          "quote_hash": "b87a498b193d096a2a11a16f90a1493df987a0e3739c4c362fab9b9cb705dcce"
+        },
+        {
+          "source_id": "hetang_fund_2023",
+          "source_url": "https://www.tsinghua-vc.com/newsinfo/6879096.html",
+          "source_title": "荷塘创投｜荷塘创新二期基金与浙江省科创母基金签约",
+          "source_content_hash": "cb737e99f415f22fe11f35c46901cd3e94afc262adc046009ee29a0aecc711e7",
+          "quote": "荷塘创新二期基金于2023年5月5日完成备案，目标规模5亿元，以科技成果转化及首创技术投资为主要策略。",
+          "quote_hash": "cb737e99f415f22fe11f35c46901cd3e94afc262adc046009ee29a0aecc711e7"
+        },
+        {
+          "source_id": "hetang_2026_news",
+          "source_url": "https://www.tsinghua-vc.com/xwzx",
+          "source_title": "荷塘创投｜新闻中心",
+          "source_content_hash": "f5e71fc6fc6b17c5927fd5fb5cc230b6abf5a93253d3ab848c28a8863a00baa9",
+          "quote": "2026年7月28日，五针松医药宣布完成天使轮融资，本轮融资由荷塘创投领投。",
+          "quote_hash": "f5e71fc6fc6b17c5927fd5fb5cc230b6abf5a93253d3ab848c28a8863a00baa9"
+        },
         {
           "source_id": "FISRC-a5da955737170458",
           "source_url": "https://pitchhub.36kr.com/project/2032495895234948",
@@ -153,7 +204,11 @@
           "quote_hash": "69dd7eeae8009a08c91695f1fb11e3c4a2ada2b386569e9206f569eeba8bedf5"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "coverage_note": "荷塘创新二期基金的5亿元为该只基金的目标规模，不是荷塘创投管理人的总体规模。当前融资库关联的华毅瀛飞来源明确指向2019年12月天使轮；该来源不支持数据库2026年Pre-A轮的投资方归因。官网披露的五针松医药案例为另一笔2026年天使轮。",
+      "last_verified_at": "2026-09-27",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched"
     }
   }
 }

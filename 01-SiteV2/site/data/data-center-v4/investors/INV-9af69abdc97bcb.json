@@ -130,21 +130,77 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "贵安鲲鹏基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "贵安新区鲲鹏私募基金管理有限公司是贵安新区国有基金市场化运营平台，成立于2020年。贵阳人才集团2026年招聘公告披露，该管理人当时管理2只基金、管理规模160亿元，投资企业33家；这些为管理人/基金体系口径，不是某只基金或某一项目的出资额。",
+      "facts": [
+        {
+          "field": "legal_manager",
+          "label": "核验到的管理主体",
+          "value": "贵安新区鲲鹏私募基金管理有限公司（登记编号P1071903）。",
+          "source_id": "guian_manager_2026"
+        },
+        {
+          "field": "established",
+          "label": "成立时间及出资关系",
+          "value": "2020年11月成立，由贵安新区管委会100%出资，并由贵安新区财政金融工作局直属管理。",
+          "source_id": "guian_manager_2026"
+        },
+        {
+          "field": "manager_scale_2026",
+          "label": "管理人披露数据",
+          "value": "2026年招聘公告称在管基金2只、管理规模160亿元、已完成项目投资超过90亿元、投资企业33家；属管理人层面。",
+          "source_id": "guian_activity_2026"
+        },
+        {
+          "field": "sectors",
+          "label": "公开投资方向",
+          "value": [
+            "大数据和人工智能",
+            "先进装备制造",
+            "新能源电池及材料",
+            "电子信息制造"
+          ],
+          "source_id": "guian_manager_2026"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2020-11",
+          "description": "管理公司成立。",
+          "source_id": "guian_manager_2026"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：智身科技（GENISOM AI） · B轮 · 2026-09-20 · 历史轮次投资方 · 数亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "GENISOM融资披露将贵安鲲鹏列入较早的A+轮投资方；披露的“数亿元”是该轮总额范围，不是基金的单笔出资额。该来源不支持把贵安鲲鹏列为2026年B轮新投资方。",
           "source_id": "FISRC-750c27d055174535"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "label": "2026年公开招聘咨询电话（非投资业务专线）",
+          "value": "0851-84793156",
+          "url": "https://www.gyrcjt.cn/recruitment/recruitmentproject/details/50",
+          "source_id": "guian_manager_2026"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "guian_manager_2026",
+          "source_url": "https://www.gyrcjt.cn/recruitment/recruitmentproject/details/50",
+          "source_title": "贵阳人才集团｜贵安新区鲲鹏私募基金管理有限公司2026年招聘公告",
+          "source_content_hash": "1e20e689dcef9b1690a8f1376199ceddf306fcfc87f75722e9725718166cf493",
+          "quote": "贵安新区鲲鹏私募基金管理有限公司成立于2020年11月，是由贵安新区管委会100%出资设立并由贵安新区财政金融工作局直属管理的国有企业。",
+          "quote_hash": "1e20e689dcef9b1690a8f1376199ceddf306fcfc87f75722e9725718166cf493"
+        },
+        {
+          "source_id": "guian_activity_2026",
+          "source_url": "https://www.gyrcjt.cn/recruitment/recruitmentproject/details/50",
+          "source_title": "贵阳人才集团｜贵安新区鲲鹏私募基金管理有限公司2026年招聘公告",
+          "source_content_hash": "1136554ae91e3373c769dabe08cf347fecbb5fd4ed040c68bdd0e19386ea0c13",
+          "quote": "公司在管基金2只，管理规模160亿元，已完成超过90亿元的项目投资，已投资企业33家。",
+          "quote_hash": "1136554ae91e3373c769dabe08cf347fecbb5fd4ed040c68bdd0e19386ea0c13"
+        },
         {
           "source_id": "FISRC-750c27d055174535",
           "source_url": "https://www.taibo.cn/company/122078",
@@ -154,7 +210,11 @@
           "quote_hash": "73abb7c1bbe47bb43dd8c46edcbd43f4329e879b481d278a3f2572e24a4b6895"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "coverage_note": "“贵安鲲鹏基金”在融资库中关联到管理公司贵安新区鲲鹏私募基金管理有限公司。160亿元及项目投资统计均为管理人/管理基金体系数据。招聘咨询号码只按其原始用途标注。GENISOM来源提及历史A+轮，不支持当前数据库将其列为B轮本轮出资方。",
+      "last_verified_at": "2026-09-27",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched"
     }
   }
 }

@@ -129,21 +129,58 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "广州红鸟启航基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "香港科技大学（广州）公开资料将钟潜凯列为广州红鸟启航基金创始合伙人，并列出其代表投资项目及过往职业经历。融资披露将该基金列为数巅智能先前Pre-A轮跟投方；该报道中的数亿元为整轮金额，未披露基金单独出资额。",
+      "facts": [
+        {
+          "field": "founding_partner",
+          "label": "公开披露的创始合伙人",
+          "value": "钟潜凯（Allan QianKai Zhong）；资料来自香港科技大学（广州）未来技术学院。",
+          "source_id": "redbird_founder_profile"
+        },
+        {
+          "field": "founder_background",
+          "label": "创始合伙人过往经历",
+          "value": "港科大资料称其曾任职美国硅谷科技投行、华为战略与咨询、北电及西门子；这是个人履历，不是基金团队完整名单。",
+          "source_id": "redbird_founder_profile"
+        },
+        {
+          "field": "selected_investments",
+          "label": "创始合伙人资料列举的代表项目",
+          "value": [
+            "移远通信",
+            "汇量科技",
+            "嘉元科技",
+            "数巅科技",
+            "拓元智慧"
+          ],
+          "source_id": "redbird_portfolio_examples"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：数巅智能 · 多轮融资 · 2026-09-21 · pre-A轮跟投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "财经网报道数巅智能在2025年10月完成Pre-A轮，广州红鸟启航基金为跟投机构之一；报道所述数亿元是整轮融资金额，未披露单家投资额。该披露对应历史Pre-A轮，不是数据库所列2026年多轮融资的逐轮证明。",
           "source_id": "FISRC-9ebda1057c2926b3"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "redbird_founder_profile",
+          "source_url": "https://cft.hkust-gz.edu.cn/zh/2026/08/31/%E9%92%9F%E6%BD%9C%E5%87%AF%EF%BC%88allan%EF%BC%89/",
+          "source_title": "香港科技大学（广州）未来技术学院｜钟潜凯",
+          "source_content_hash": "3db276dce4b6deede0ac8ad9232d6f8c4f808b6f89c7e0e6d1e4734a05fd052a",
+          "quote": "香港科技大学的校友，广州红鸟启航基金创始合伙人，港科广、港科大霍英东研究院、港科大百万奖金创业大赛导师及评委。",
+          "quote_hash": "3db276dce4b6deede0ac8ad9232d6f8c4f808b6f89c7e0e6d1e4734a05fd052a"
+        },
+        {
+          "source_id": "redbird_portfolio_examples",
+          "source_url": "https://cft.hkust-gz.edu.cn/zh/2026/08/31/%E9%92%9F%E6%BD%9C%E5%87%AF%EF%BC%88allan%EF%BC%89/",
+          "source_title": "香港科技大学（广州）未来技术学院｜钟潜凯",
+          "source_content_hash": "479c17325d69a4ea78a560dc5e3dfe424b7cd8805663c50da42d42dbbf5afb25",
+          "quote": "代表投资项目：移远通信（A股）、汇量科技（港股独角兽）、嘉元科技、开思时代、赛昉科技、英韧科技、智科自动化、数巅科技、拓元智慧等。",
+          "quote_hash": "479c17325d69a4ea78a560dc5e3dfe424b7cd8805663c50da42d42dbbf5afb25"
+        },
         {
           "source_id": "FISRC-9ebda1057c2926b3",
           "source_url": "https://industry.caijing.com.cn/20260707/5169223.shtml",
@@ -153,7 +190,11 @@
           "quote_hash": "fcd45a3c282bf9b19a1d8d9e69340a6f4c6018575e8aa1d26a10e45b7159d87b"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "coverage_note": "已核验到创始合伙人公开资料，但未找到可独立确认的基金官网、完整团队名单、基金规模或公开业务联系方式。港科广资料列出的项目是代表案例，不等于完整组合或基金整体回报。融资报道只证明其参与数巅智能较早Pre-A轮。",
+      "last_verified_at": "2026-09-27",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched"
     },
     "translations": {
       "zh-CN": {
