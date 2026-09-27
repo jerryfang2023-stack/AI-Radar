@@ -39591,19 +39591,132 @@
     "INV-ba0a1fb3f78a75": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Somerset Capital Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-28",
+      "coverage_note": "Somerset describes itself as a family-owned investment firm. The published investment-round totals below are company-wide figures; Somerset’s individual commitments were not disclosed. The cited transactions are selected public examples, not a complete portfolio or audited performance record.",
+      "summary": "Somerset Capital Partners is a family-owned investment firm investing in public and private companies. Its stated fields include real estate, the energy transition, internet, software and technology-enabled industries. It launched its public-equity business in 2008 and has invested in European private companies from Series A to pre-IPO since 2015.",
+      "facts": [
+        {
+          "field": "ownership",
+          "label": "Ownership",
+          "value": "Family-owned investment firm, according to Somerset.",
+          "source_id": "somerset_official_2026"
+        },
+        {
+          "field": "investment_scope",
+          "label": "Investment scope",
+          "value": "Public and private companies.",
+          "source_id": "somerset_official_2026"
+        },
+        {
+          "field": "sector_focus",
+          "label": "Stated focus areas",
+          "value": [
+            "Real estate",
+            "Energy transition",
+            "Internet",
+            "Software",
+            "Technology-enabled industries"
+          ],
+          "source_id": "somerset_official_2026"
+        },
+        {
+          "field": "public_equity_strategy",
+          "label": "Public-equity strategy",
+          "value": "Launched in 2008; Somerset describes its approach as fundamental and long-term.",
+          "source_id": "somerset_official_2026"
+        },
+        {
+          "field": "private_equity_strategy",
+          "label": "Private-equity strategy",
+          "value": "Since 2015, investments in European companies from Series A to pre-IPO.",
+          "source_id": "somerset_official_2026"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2008",
+          "description": "Somerset says its public-equity business was launched.",
+          "source_id": "somerset_official_2026"
+        },
+        {
+          "date": "2015",
+          "description": "Somerset says its private-equity business began investing in European companies.",
+          "source_id": "somerset_official_2026"
+        }
+      ],
       "track_record": [
+        {
+          "description": "EUCLYD Series A (15 September 2026): EUCLYD announced a company-wide round of more than €200 million, co-led by Somerset and three other investors. Somerset’s individual investment amount was not disclosed.",
+          "source_id": "euclyd_somerset_round_2026"
+        },
+        {
+          "description": "Somerset’s company announcement describes an investment supporting the growth of hotel operator Black Label Hospitality; the amount and investment return were not disclosed.",
+          "source_id": "somerset_black_label_case"
+        },
         {
           "description": "融资来源记录：Euclyd · A轮 · 2026-09-15 · 本轮联合领投 · 2亿欧元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6cbfc1ea08a48a66"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Official website",
+          "value": "Somerset Capital Partners",
+          "url": "https://www.somerset.eu/",
+          "source_id": "somerset_official_2026"
+        },
+        {
+          "kind": "email",
+          "label": "General contact",
+          "value": "capitalpartners@somerset.eu",
+          "source_id": "somerset_official_2026"
+        },
+        {
+          "kind": "email",
+          "label": "Media enquiries",
+          "value": "media.enquiries@somerset.eu",
+          "source_id": "somerset_official_2026"
+        },
+        {
+          "kind": "phone",
+          "label": "Main office phone",
+          "value": "+31 (0)13 523 1700",
+          "source_id": "somerset_official_2026"
+        },
+        {
+          "kind": "address",
+          "label": "Office",
+          "value": "SCP Management B.V., De Lind 39, 5061 HT Oisterwijk, The Netherlands",
+          "source_id": "somerset_official_2026"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "somerset_official_2026",
+          "source_url": "https://www.somerset.eu/",
+          "source_title": "Home - Somerset",
+          "source_content_hash": "07f6065efaaabfcd06131f2bfe247ca60155f2b70478fa0c6145068afa3f50c2",
+          "quote": "Somerset Capital Partners is a family-owned investment firm, focused on private and public companies, in the real estate, energy transition, internet, software and technology-enabled industries. Launched in 2008, our public equity business applies a fundamentally oriented, long-term investment approach. Since 2015, our private equity business has invested in companies across Europe, including investments ranging from Series A to pre-IPO. Media enquiries: media.enquiries@somerset.eu. SCP Management B.V., De Lind 39, 5061 HT Oisterwijk, The Netherlands. T. +31 (0)13 - 523 1700 E. capitalpartners@somerset.eu.",
+          "quote_hash": "4f6a18ed14ddef3f20434770c12fca5bb8befdb51c3fa389682e0952a86c21e2"
+        },
+        {
+          "source_id": "euclyd_somerset_round_2026",
+          "source_url": "https://www.euclyd.ai/press-release",
+          "source_title": "EUCLYD Raises Over €200 Million to Break the AI Efficiency Wall | Euclyd",
+          "source_content_hash": "29dfe4ae495f94bc02f788ebdee84beba5daee5f47f85932a99a009e3d46039a",
+          "quote": "EUCLYD has signed a Series A financing round of more than €200 million. The round is co-led by Samsung, Somerset Capital Partners, Scaleup Europe Fund, which is managed by EQT, and Innovation Industries.",
+          "quote_hash": "4f54046478b2d5410e74db5b41ee577cb38586ba375f33d53400f5ed9287c697"
+        },
+        {
+          "source_id": "somerset_black_label_case",
+          "source_url": "https://www.somerset.eu/somerset-capital-partners-invests-in-black-label-hospitality/",
+          "source_title": "Somerset Capital Partners invests in accelerated growth of hotel operator Black Label Hospitality - Somerset",
+          "source_content_hash": "e3c3ef7bef15763b18a12a06b873cbecc3f923c6e0fe10bdb8c777655795c6f8",
+          "quote": "We are very pleased to support a strong and fast growing company like BLH in its next growth phase, said Joes Daemen, founder of SCP.",
+          "quote_hash": "8ebb460b955710dcf3397eb04569d0ed33a08cf36379187d0258ae9c2a7b9ad7"
+        },
         {
           "source_id": "FISRC-6cbfc1ea08a48a66",
           "source_url": "https://www.cls.cn/detail/2484090",
@@ -39612,8 +39725,7 @@
           "quote": "三星、Somerset Capital Partners、EQT旗下Scaleup Europe Fund以及Innovation Industries共同领投",
           "quote_hash": "05040103b8eb124e57e50a7a08bd5189f9de6a169757e0c2708bfb3ebf04d7f2"
         }
-      ],
-      "last_verified_at": "2026-09-26"
+      ]
     },
     "INV-5a23b303f149e7": {
       "profile_type": "unverified",
@@ -39711,19 +39823,128 @@
     "INV-7349d368e2b4aa": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "IAG Capital Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-28",
+      "coverage_note": "IAG describes itself as a venture-capital firm leading rounds from Seed to Series D. The listed portfolio categories and deal announcements are firm-published examples, not a complete audited portfolio or performance record. Company-round totals are not IAG’s disclosed individual investment amounts.",
+      "summary": "IAG Capital Partners is a venture-capital firm that says it leads rounds from Seed to Series D. It lists offices in Charleston, New York and London. Its published portfolio categories include AI and data, hardware, next-generation compute, life sciences, financial services, cybersecurity and spatial computing.",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "Investment stages",
+          "value": "Seed through Series D; IAG says it leads rounds at these stages.",
+          "source_id": "iag_home_2026"
+        },
+        {
+          "field": "offices",
+          "label": "Offices",
+          "value": [
+            "Charleston, South Carolina",
+            "New York, New York",
+            "London, United Kingdom"
+          ],
+          "source_id": "iag_home_2026"
+        },
+        {
+          "field": "portfolio_categories",
+          "label": "Published portfolio categories",
+          "value": [
+            "AI & Data",
+            "Hardware",
+            "Next-Gen Compute",
+            "Life Sciences",
+            "Financial Services",
+            "Cybersecurity",
+            "Spatial Computing"
+          ],
+          "source_id": "iag_portfolio_2026"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Miris seed round: IAG’s announcement says the company raised $26 million and identifies IAG Capital Partners as the lead investor. The figure is the company-wide round total; IAG’s individual amount was not disclosed.",
+          "source_id": "iag_miris_2024"
+        },
+        {
+          "description": "Cornelis funding (14 September 2026): Cornelis announced $205 million in company-wide funding and quoted IAG Partner Joel Whitley. Techweekly separately reported that IAG led the round; Cornelis’s announcement itself does not identify the lead. IAG’s individual contribution was not disclosed.",
+          "source_id": "iag_cornelis_coverage_2026"
+        },
         {
           "description": "融资来源记录：Cornelis · 基础设施融资 · 2026-09-14 · 本轮领投 · $205 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-83d998cb19896193"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Official website",
+          "value": "IAG Capital Partners",
+          "url": "https://www.iagcapitalpartners.com/",
+          "source_id": "iag_home_2026"
+        },
+        {
+          "kind": "contact_form",
+          "label": "General enquiries",
+          "value": "IAG Capital Partners contact form; the site says relevant communications are reviewed and answered within 48 hours.",
+          "url": "https://www.iagcapitalpartners.com/contact",
+          "source_id": "iag_contact_2026"
+        },
+        {
+          "kind": "address",
+          "label": "Charleston office",
+          "value": "198 East Bay Street, Suite 200, Charleston, SC 29401, United States",
+          "source_id": "iag_home_2026"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "iag_home_2026",
+          "source_url": "https://www.iagcapitalpartners.com/",
+          "source_title": "IAG Capital Partners",
+          "source_content_hash": "c23365bc28a2ce59db704b68798d9a2d143b009b84dd0a4fd7d1f003efd072fa",
+          "quote": "IAG Capital Partners is a Venture Capital firm that leads rounds from Seed to Series D. IAG has offices in Charleston, SC; New York, NY; and London, UK. IAG Capital Partners, 198 East Bay Street, Suite 200, Charleston, SC 29401.",
+          "quote_hash": "738bf2fc2878d5c27cc3068b87f9cd99f2ac33c65d84125f38f44e42b3a6912b"
+        },
+        {
+          "source_id": "iag_portfolio_2026",
+          "source_url": "https://www.iagcapitalpartners.com/portfolio",
+          "source_title": "Portfolio — IAG Capital Partners",
+          "source_content_hash": "08af2b758be7f615b41f74f10291113ea17a952e6b15512c829fda8a55d64ee8",
+          "quote": "IAG’s public portfolio is organized under categories including AI & Data, Hardware, Next-Gen Compute, Life Sciences, Financial Services, Cybersecurity and Spatial Computing.",
+          "quote_hash": "00c8b4a71316e2999582f6f1d0c07b51e7a680f3f630617663169f55511c8ed1"
+        },
+        {
+          "source_id": "iag_contact_2026",
+          "source_url": "https://www.iagcapitalpartners.com/contact",
+          "source_title": "Contact — IAG Capital Partners",
+          "source_content_hash": "1fde3f28a07f9d5e056d6f30cbd83cee36b78fca112d079b1ca2e98c73a6ef48",
+          "quote": "Please complete the form below. We’ll review your message and respond to relevant communications within 48 hours.",
+          "quote_hash": "6f8636599fd35f90601899fc99cbf4b3196f780d1ebf3c5af91cf715d6cdd587"
+        },
+        {
+          "source_id": "iag_miris_2024",
+          "source_url": "https://www.iagcapitalpartners.com/news/miris-26m-stealth",
+          "source_title": "Miris emerges from stealth with $26M in funding for spatial streaming — IAG Capital Partners",
+          "source_content_hash": "9ee45b0a1a5bba9f3b0ea886ae1a57f380a5e3a0be8779f5683ee2412a2e3577",
+          "quote": "Miris today emerged from stealth and revealed its technology. It also announced it has raised $26 million in its seed round of funding, with IAG Capital Partners leading the round.",
+          "quote_hash": "317721c7cdec186d1ccfd2fd4fef7a5753fb9eb43dde87e098c8c4c6a1558d64"
+        },
+        {
+          "source_id": "cornelis_announcement_2026",
+          "source_url": "https://www.cornelis.com/stories/cornelis-expands-into-scaleup-networking-with-active-compute-fabric",
+          "source_title": "Cornelis Expands into Scale-Up Networking with Active Compute Fabric, $205M in Funding, and Qualcomm Collaboration at AI Infra Summit - The Future of High Performance Fabrics | Cornelis Networks",
+          "source_content_hash": "74d9412a241c7b2deaa7aba5b27a5289e04a807d06c6265d3d6a346810075a94",
+          "quote": "Cornelis announced $205 million in funding. “Open-standard scale-up and scale-out networking for AI represents more than $55 billion of opportunity by 2030,” said Joel Whitley, Partner at IAG Capital Partners.",
+          "quote_hash": "feb4f0d9aa9f5c24a265577ec05fb16bcf7cb3e9e8c99c8de70f8fc83336038c"
+        },
+        {
+          "source_id": "iag_cornelis_coverage_2026",
+          "source_url": "https://techweekly.co.za/2026/09/14/cornelis-secures-205m-in-funding-to-challenge-nvidias-dominance-in-ai-infrastructure/",
+          "source_title": "Cornelis 获 2.05 亿美元融资，挑战 Nvidia 在 AI 基础设施领域的主导地位",
+          "source_content_hash": "b407088c7d51f10a",
+          "quote": "it has secured $205 million in a funding round led by IAG Capital Partners",
+          "quote_hash": "39d680d9b18dde1807f51da419d33c20173b63edb4c0d78af437d95804864cd1"
+        },
         {
           "source_id": "FISRC-83d998cb19896193",
           "source_url": "https://techweekly.co.za/2026/09/14/cornelis-secures-205m-in-funding-to-challenge-nvidias-dominance-in-ai-infrastructure/",
@@ -39732,8 +39953,7 @@
           "quote": "it has secured $205 million in a funding round led by IAG Capital Partners",
           "quote_hash": "39d680d9b18dde1807f51da419d33c20173b63edb4c0d78af437d95804864cd1"
         }
-      ],
-      "last_verified_at": "2026-09-26"
+      ]
     },
     "INV-c7871b03497f59": {
       "profile_type": "unverified",
@@ -41706,29 +41926,150 @@
     "INV-de89084b13cddd": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Phoenix Court's Solar fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-28",
+      "coverage_note": "Phoenix Court’s current website describes a multi-stage platform and lists LocalGlobe, Latitude, Solar and Basecamp. Solar is its scale-up fund. The revenue and employment figures cited are Phoenix Court’s reported portfolio aggregates, not investment returns; disclosed company-round totals are not Solar’s individual contributions.",
+      "summary": "Phoenix Court is a multi-stage investment platform whose funds include LocalGlobe, Latitude, Solar and Basecamp. Solar backs scale-up companies. Phoenix Court’s 2026 public update reported 18 companies in the Solar pilot portfolio, with £5 billion in aggregate revenue and more than 8,500 jobs; these are firm-reported portfolio metrics, not fund returns.",
+      "facts": [
+        {
+          "field": "platform_structure",
+          "label": "Platform and funds",
+          "value": "Phoenix Court lists LocalGlobe, Latitude, Solar and Basecamp as funds on its current website.",
+          "source_id": "phoenix_home_2026"
+        },
+        {
+          "field": "solar_stage",
+          "label": "Solar investment stage",
+          "value": "Scale-up companies.",
+          "source_id": "phoenix_solar_2026"
+        },
+        {
+          "field": "solar_examples",
+          "label": "Selected Solar portfolio examples",
+          "value": [
+            "Monzo",
+            "Moove",
+            "Raspberry Pi",
+            "Fuse",
+            "Raisin",
+            "M-Kopa",
+            "Tide",
+            "Perk"
+          ],
+          "source_id": "phoenix_solar_2026"
+        },
+        {
+          "field": "solar_focus",
+          "label": "Solar context",
+          "value": "Phoenix Court positions Solar at the scale-up stage and says this is where domestic growth capital is scarce in its region.",
+          "source_id": "phoenix_solar_2026"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2005",
+          "description": "Phoenix Court’s timeline says LocalGlobe was founded by Robin and Saul Klein.",
+          "source_id": "phoenix_history_2026"
+        },
+        {
+          "date": "2019",
+          "description": "Phoenix Court’s timeline records the launch of Latitude.",
+          "source_id": "phoenix_history_2026"
+        },
+        {
+          "date": "2023",
+          "description": "Phoenix Court’s timeline records the launch of the Solar pilot fund.",
+          "source_id": "phoenix_history_2026"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Mistral AI · D轮 · 2026-09-08 · 本轮参投 · €3 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Solar pilot portfolio (reported 22 September 2026): Phoenix Court said it had backed 18 companies, with £5 billion in aggregate revenue, 14 companies above £100 million in annual revenue, and more than 8,500 jobs. These are portfolio aggregates reported by Phoenix Court, not fund returns.",
+          "source_id": "phoenix_solar_aggregate_2026"
+        },
+        {
+          "description": "Mistral AI Series D (8 September 2026): Mistral’s funding announcement listed Phoenix Court’s Solar fund as a participant in the company-wide €3 billion round. Solar’s individual contribution was not disclosed.",
           "source_id": "FISRC-4d11ed62a144a3f4"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Official website",
+          "value": "Phoenix Court",
+          "url": "https://www.phoenixcourt.vc/",
+          "source_id": "phoenix_home_2026"
+        },
+        {
+          "kind": "email",
+          "label": "General enquiries",
+          "value": "hello@phoenixcourt.co",
+          "source_id": "phoenix_contact_2026"
+        },
+        {
+          "kind": "address",
+          "label": "Office",
+          "value": "2 Brill Place, London NW1 1DX, United Kingdom",
+          "source_id": "phoenix_contact_2026"
+        },
+        {
+          "kind": "contact_form",
+          "label": "Contact page",
+          "value": "Phoenix Court contact page",
+          "url": "https://www.phoenixcourt.vc/contact",
+          "source_id": "phoenix_contact_2026"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "phoenix_home_2026",
+          "source_url": "https://www.phoenixcourt.vc/",
+          "source_title": "Phoenix Court",
+          "source_content_hash": "7dc93a806c588bdd3f1adb10b2646ef0b0b45aa4361ccf956ae79913f4b6e02c",
+          "quote": "Phoenix Court is a multi-stage investment company, home to LocalGlobe, Latitude, Solar and Basecamp.",
+          "quote_hash": "33a8378f7dd6f0e865b72a6931866e8fd72de5806e134a84fa152b11448b0e40"
+        },
+        {
+          "source_id": "phoenix_history_2026",
+          "source_url": "https://www.phoenixcourt.vc/about",
+          "source_title": "About Us | Phoenix Court",
+          "source_content_hash": "b72c381320c9f8e372626c0ac5e0c1d7418bb0a292459178cceb384a4e75c374",
+          "quote": "2005 LocalGlobe founded by Robin & Saul Klein. 2018 Phoenix Court opened in Somers Town. 2019 Latitude launched. 2023 Solar pilot fund launch.",
+          "quote_hash": "a8a15a33744317f1230ca98a6be22b1a459789ed9ab574e878843a6d645d5075"
+        },
+        {
+          "source_id": "phoenix_solar_2026",
+          "source_url": "https://www.phoenixcourt.vc/funds/solar",
+          "source_title": "Solar | Phoenix Court",
+          "source_content_hash": "6855e7422f065fd7631862121d4fc9226cd1f86dbdb1b3316e7fcda4597f2a89",
+          "quote": "For founders at the scaleup stage who believe that early is a state of mind, and that success doesn’t stop compounding. This is where domestic capital is scarcest in our region, and where too many companies are pushed overseas to find the funding they need to keep growing. Monzo, Moove, Raspberry Pi, Fuse, Raisin, M-Kopa, Tide and Perk are listed as companies backed at this stage.",
+          "quote_hash": "d61f7a79b4ae650c6c7913eb3e1822443e6beb0c8e4017e3c54955dc3b854cbf"
+        },
+        {
+          "source_id": "phoenix_solar_aggregate_2026",
+          "source_url": "https://www.phoenixcourt.vc/news/why-britain-needs-to-back-britain",
+          "source_title": "Why Britain needs to back Britain | Phoenix Court",
+          "source_content_hash": "9b14fac5cd9ff69c258bab7a97e8b771dbd6750243cff712a9bbc0d5bb84c820",
+          "quote": "Our Solar pilot fund has backed 18 companies. Together these 18 companies have an aggregate revenue of £5bn, with 14 of them generating over £100M in annual revenue. They’ve created more than 8,500 high value new jobs across the country.",
+          "quote_hash": "9e961816f7a76ef64a3cd5158de0752cc28980a4b95665a587b9a75de51ee667"
+        },
         {
           "source_id": "FISRC-4d11ed62a144a3f4",
           "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
-          "source_title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
+          "source_title": "Mistral raises €3B to make sovereign, open-weight AI the technology frontier",
           "source_content_hash": "714c413ab36c1848",
           "quote": "Existing investors a16z, ASML, Belfius, BNP Paribas CIB, Bpifrance, Carmignac, DST Global, Eurazeo, General Catalyst, Headline, Hillspire, Index Ventures, Korelya Capital, Lightspeed, NVIDIA, Phoenix Court's Solar fund (home to LocalGlobe, Latitude and Solar) and Salesforce Ventures participated in the round.",
           "quote_hash": "1aea8271fecd0d55fa862c63b4b216ab8bda36b37c1200c16dd0db73697dfc25"
+        },
+        {
+          "source_id": "phoenix_contact_2026",
+          "source_url": "https://www.phoenixcourt.vc/contact",
+          "source_title": "Contact | Phoenix Court",
+          "source_content_hash": "a0f49f2d5077d6a0c845b6cbca4532a4a64f73df3a76ef725b927ebffdffbab9",
+          "quote": "General enquiries: hello@phoenixcourt.co. Somers Town / King’s Cross, 2 Brill Place, London NW1 1DX.",
+          "quote_hash": "32e79d3156a25694ce977b782b58b1623c8e0014d1ae83eaf3186c95feeb3c17"
         }
-      ],
-      "last_verified_at": "2026-09-26"
+      ]
     },
     "INV-3f35e3b6ed6665": {
       "profile_type": "unverified",

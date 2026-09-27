@@ -139,19 +139,128 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "IAG Capital Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-28",
+      "coverage_note": "IAG describes itself as a venture-capital firm leading rounds from Seed to Series D. The listed portfolio categories and deal announcements are firm-published examples, not a complete audited portfolio or performance record. Company-round totals are not IAG’s disclosed individual investment amounts.",
+      "summary": "IAG Capital Partners is a venture-capital firm that says it leads rounds from Seed to Series D. It lists offices in Charleston, New York and London. Its published portfolio categories include AI and data, hardware, next-generation compute, life sciences, financial services, cybersecurity and spatial computing.",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "Investment stages",
+          "value": "Seed through Series D; IAG says it leads rounds at these stages.",
+          "source_id": "iag_home_2026"
+        },
+        {
+          "field": "offices",
+          "label": "Offices",
+          "value": [
+            "Charleston, South Carolina",
+            "New York, New York",
+            "London, United Kingdom"
+          ],
+          "source_id": "iag_home_2026"
+        },
+        {
+          "field": "portfolio_categories",
+          "label": "Published portfolio categories",
+          "value": [
+            "AI & Data",
+            "Hardware",
+            "Next-Gen Compute",
+            "Life Sciences",
+            "Financial Services",
+            "Cybersecurity",
+            "Spatial Computing"
+          ],
+          "source_id": "iag_portfolio_2026"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Miris seed round: IAG’s announcement says the company raised $26 million and identifies IAG Capital Partners as the lead investor. The figure is the company-wide round total; IAG’s individual amount was not disclosed.",
+          "source_id": "iag_miris_2024"
+        },
+        {
+          "description": "Cornelis funding (14 September 2026): Cornelis announced $205 million in company-wide funding and quoted IAG Partner Joel Whitley. Techweekly separately reported that IAG led the round; Cornelis’s announcement itself does not identify the lead. IAG’s individual contribution was not disclosed.",
+          "source_id": "iag_cornelis_coverage_2026"
+        },
         {
           "description": "融资来源记录：Cornelis · 基础设施融资 · 2026-09-14 · 本轮领投 · $205 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-83d998cb19896193"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Official website",
+          "value": "IAG Capital Partners",
+          "url": "https://www.iagcapitalpartners.com/",
+          "source_id": "iag_home_2026"
+        },
+        {
+          "kind": "contact_form",
+          "label": "General enquiries",
+          "value": "IAG Capital Partners contact form; the site says relevant communications are reviewed and answered within 48 hours.",
+          "url": "https://www.iagcapitalpartners.com/contact",
+          "source_id": "iag_contact_2026"
+        },
+        {
+          "kind": "address",
+          "label": "Charleston office",
+          "value": "198 East Bay Street, Suite 200, Charleston, SC 29401, United States",
+          "source_id": "iag_home_2026"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "iag_home_2026",
+          "source_url": "https://www.iagcapitalpartners.com/",
+          "source_title": "IAG Capital Partners",
+          "source_content_hash": "c23365bc28a2ce59db704b68798d9a2d143b009b84dd0a4fd7d1f003efd072fa",
+          "quote": "IAG Capital Partners is a Venture Capital firm that leads rounds from Seed to Series D. IAG has offices in Charleston, SC; New York, NY; and London, UK. IAG Capital Partners, 198 East Bay Street, Suite 200, Charleston, SC 29401.",
+          "quote_hash": "738bf2fc2878d5c27cc3068b87f9cd99f2ac33c65d84125f38f44e42b3a6912b"
+        },
+        {
+          "source_id": "iag_portfolio_2026",
+          "source_url": "https://www.iagcapitalpartners.com/portfolio",
+          "source_title": "Portfolio — IAG Capital Partners",
+          "source_content_hash": "08af2b758be7f615b41f74f10291113ea17a952e6b15512c829fda8a55d64ee8",
+          "quote": "IAG’s public portfolio is organized under categories including AI & Data, Hardware, Next-Gen Compute, Life Sciences, Financial Services, Cybersecurity and Spatial Computing.",
+          "quote_hash": "00c8b4a71316e2999582f6f1d0c07b51e7a680f3f630617663169f55511c8ed1"
+        },
+        {
+          "source_id": "iag_contact_2026",
+          "source_url": "https://www.iagcapitalpartners.com/contact",
+          "source_title": "Contact — IAG Capital Partners",
+          "source_content_hash": "1fde3f28a07f9d5e056d6f30cbd83cee36b78fca112d079b1ca2e98c73a6ef48",
+          "quote": "Please complete the form below. We’ll review your message and respond to relevant communications within 48 hours.",
+          "quote_hash": "6f8636599fd35f90601899fc99cbf4b3196f780d1ebf3c5af91cf715d6cdd587"
+        },
+        {
+          "source_id": "iag_miris_2024",
+          "source_url": "https://www.iagcapitalpartners.com/news/miris-26m-stealth",
+          "source_title": "Miris emerges from stealth with $26M in funding for spatial streaming — IAG Capital Partners",
+          "source_content_hash": "9ee45b0a1a5bba9f3b0ea886ae1a57f380a5e3a0be8779f5683ee2412a2e3577",
+          "quote": "Miris today emerged from stealth and revealed its technology. It also announced it has raised $26 million in its seed round of funding, with IAG Capital Partners leading the round.",
+          "quote_hash": "317721c7cdec186d1ccfd2fd4fef7a5753fb9eb43dde87e098c8c4c6a1558d64"
+        },
+        {
+          "source_id": "cornelis_announcement_2026",
+          "source_url": "https://www.cornelis.com/stories/cornelis-expands-into-scaleup-networking-with-active-compute-fabric",
+          "source_title": "Cornelis Expands into Scale-Up Networking with Active Compute Fabric, $205M in Funding, and Qualcomm Collaboration at AI Infra Summit - The Future of High Performance Fabrics | Cornelis Networks",
+          "source_content_hash": "74d9412a241c7b2deaa7aba5b27a5289e04a807d06c6265d3d6a346810075a94",
+          "quote": "Cornelis announced $205 million in funding. “Open-standard scale-up and scale-out networking for AI represents more than $55 billion of opportunity by 2030,” said Joel Whitley, Partner at IAG Capital Partners.",
+          "quote_hash": "feb4f0d9aa9f5c24a265577ec05fb16bcf7cb3e9e8c99c8de70f8fc83336038c"
+        },
+        {
+          "source_id": "iag_cornelis_coverage_2026",
+          "source_url": "https://techweekly.co.za/2026/09/14/cornelis-secures-205m-in-funding-to-challenge-nvidias-dominance-in-ai-infrastructure/",
+          "source_title": "Cornelis 获 2.05 亿美元融资，挑战 Nvidia 在 AI 基础设施领域的主导地位",
+          "source_content_hash": "b407088c7d51f10a",
+          "quote": "it has secured $205 million in a funding round led by IAG Capital Partners",
+          "quote_hash": "39d680d9b18dde1807f51da419d33c20173b63edb4c0d78af437d95804864cd1"
+        },
         {
           "source_id": "FISRC-83d998cb19896193",
           "source_url": "https://techweekly.co.za/2026/09/14/cornelis-secures-205m-in-funding-to-challenge-nvidias-dominance-in-ai-infrastructure/",
@@ -160,8 +269,7 @@
           "quote": "it has secured $205 million in a funding round led by IAG Capital Partners",
           "quote_hash": "39d680d9b18dde1807f51da419d33c20173b63edb4c0d78af437d95804864cd1"
         }
-      ],
-      "last_verified_at": "2026-09-26"
+      ]
     }
   }
 }
