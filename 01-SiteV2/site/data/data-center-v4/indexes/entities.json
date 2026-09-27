@@ -126486,20 +126486,99 @@
       ],
       "public_profile": {
         "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Digitalis Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "summary": "Digitalis Ventures 是聚焦生物医学与健康的投资机构。官网称其投资突破性科学驱动的生物技术，以及借助科技改善医疗可及性、健康结果和成本的方案；其 Companion Funds 关注动物健康。Enveda 官方公告将其列为 2026 年 E 轮新投资者，但没有披露其单笔出资额。",
+        "coverage_note": "投资领域、公开办公信息及邮箱依据机构官网；Enveda 参投身份依据被投公司公告并由融资报道交叉印证。官网邮箱是公开联系邮箱，未标注为投资申请渠道；网站未披露可比基金收益或单笔投资金额。",
+        "facts": [
+          {
+            "field": "investment_focus",
+            "label": "官网列示投资领域",
+            "value": [
+              "生物医学",
+              "人类健康生物技术",
+              "技术驱动的医疗可及性与健康结果",
+              "动物健康（Companion Funds）"
+            ],
+            "source_id": "digitalis_human_health"
+          },
+          {
+            "field": "investment_approach",
+            "label": "投资思路",
+            "value": "关注未满足需求，并投资以突破性科学或技术改善医疗结果、降低医疗系统与个人成本的方案。",
+            "source_id": "digitalis_human_health"
+          },
+          {
+            "field": "headquarters",
+            "label": "官网公开办公地址",
+            "value": "11 Times Square, Suite 1500A, New York, NY 10036",
+            "source_id": "digitalis_official"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：Enveda · E轮 · 2026-09-23 · 本轮参投 · $311M。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "2026 年 9 月 23 日，Enveda 官方公告将 Digitalis Ventures 列为其 3.11 亿美元 E 轮新投资者。3.11 亿美元是整轮融资额，未披露该机构单独出资额。",
+            "source_id": "digitalis_series_e"
+          },
+          {
+            "description": "融资数据库记录亦将其关联至 Enveda 2026 年 9 月 23 日 E 轮（new investor）。原报道未披露其单笔出资金额。",
             "source_id": "FISRC-852df50f4128c47b"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "Digitalis Ventures 官网",
+            "value": "Digitalis Ventures",
+            "url": "https://www.digitalisventures.com/",
+            "source_id": "digitalis_official"
+          },
+          {
+            "kind": "email",
+            "label": "官网公开邮箱（未说明为投资申请邮箱）",
+            "value": "info@digitalisventures.com",
+            "source_id": "digitalis_official"
+          },
+          {
+            "kind": "address",
+            "label": "官网公开办公地址",
+            "value": "11 Times Square, Suite 1500A, New York, NY 10036",
+            "source_id": "digitalis_official"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "digitalis_official",
+            "source_url": "https://www.digitalisventures.com/",
+            "source_title": "Digitalis Ventures 官方网站：投资领域与联系信息",
+            "source_content_hash": "4c2c8c2913621c97b56c061e281b5dd8616f6e7410fe49f8c3176caedb50e4ee",
+            "quote": "Investing in solutions to unmet needs in biomedicine and health.",
+            "quote_hash": "03b18fb564589477b49ea3e13673365179a6a23260bc022418ef195a3fe98dc9"
+          },
+          {
+            "source_id": "digitalis_human_health",
+            "source_url": "https://www.digitalisventures.com/",
+            "source_title": "Digitalis Ventures 官方网站：人类健康投资范围",
+            "source_content_hash": "4c2c8c2913621c97b56c061e281b5dd8616f6e7410fe49f8c3176caedb50e4ee",
+            "quote": "We invest in biotechnology companies leveraging breakthrough science to improve human health, and in companies building novel technology-enabled solutions to improve access to care and health outcomes while reducing costs to individuals and the healthcare system.",
+            "quote_hash": "312bacedcbf8e99d1159d6c00e72994ee6d3bbfb3749f8deb95928ae9bfa7077"
+          },
+          {
+            "source_id": "digitalis_animal_health",
+            "source_url": "https://www.digitalisventures.com/",
+            "source_title": "Digitalis Ventures 官方网站：动物健康投资范围",
+            "source_content_hash": "4c2c8c2913621c97b56c061e281b5dd8616f6e7410fe49f8c3176caedb50e4ee",
+            "quote": "Through our Companion Funds, we invest in companies leveraging science, technology, and design to improve animal health.",
+            "quote_hash": "b08a316c398ab2b180aa45017f3eb70c6c2cc94622eb48273e1ade82fe246afd"
+          },
+          {
+            "source_id": "digitalis_series_e",
+            "source_url": "https://enveda.com/news/enveda-raises-311-million/",
+            "source_title": "Enveda 官方公告：3.11 亿美元 E 轮融资",
+            "source_content_hash": "ec51f348211e2c008689e4152af53b1fd946099dde8b1719a88704418696826c",
+            "quote": "Digitalis Ventures",
+            "quote_hash": "7d5d79b0995baf03b9d400feb2b47959c6c2bcc410323ff893683d190f6c8061"
+          },
           {
             "source_id": "FISRC-852df50f4128c47b",
             "source_url": "https://www.bioxconomy.com/investment/enveda-s-311m-series-e-to-found-ai-driven-drug-discovery-platform",
@@ -126509,7 +126588,8 @@
             "quote_hash": "3cbfe761b6de0bfc87604c270fdc50a1ccdfe84427307a732532acbdb8ace223"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27",
+        "identity_status": "verified"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -126672,20 +126752,94 @@
       ],
       "public_profile": {
         "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Durable Capital Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "summary": "Durable Capital Partners LP 是一家由 Henry Ellenbogen 创立的投资顾问机构。公司主页公开定位为帮助构建长久企业；公司 LinkedIn 页面进一步称其关注公募与私募市场中的小盘和中盘复利型企业。SEC 投资顾问公开数据库列示其于 2019 年获准登记。Enveda 官方公告将其列为 E 轮新投资者，未披露单笔出资额。",
+        "coverage_note": "法律实体与登记状态来自美国 SEC 投资顾问公开数据库；创始人、策略和总部信息来自机构公司主页维护的 LinkedIn 页面，并非 SEC 对策略或业绩的背书。机构官网公开页面没有给出可比基金收益或投资组合完整清单；融资轮总额不等于该机构出资额。",
+        "facts": [
+          {
+            "field": "legal_entity",
+            "label": "法律主体与登记",
+            "value": "Durable Capital Partners LP；SEC 投资顾问公开数据库列示 SEC 登记状态为 Approved，生效日为 2019-10-15。",
+            "source_id": "durable_sec_iapd"
+          },
+          {
+            "field": "founder",
+            "label": "公司主页列示创办人",
+            "value": "Henry Ellenbogen",
+            "source_id": "durable_company_profile"
+          },
+          {
+            "field": "investment_focus",
+            "label": "公司主页自述投资策略",
+            "value": "在公募和私募市场中寻找小盘与中盘复利型企业。",
+            "source_id": "durable_company_profile"
+          },
+          {
+            "field": "headquarters",
+            "label": "公司主页列示总部",
+            "value": "Chevy Chase, Maryland, United States",
+            "source_id": "durable_company_profile"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2019-10-15",
+            "description": "SEC 投资顾问公开数据库列示该机构登记生效日期。",
+            "source_id": "durable_sec_iapd"
+          }
+        ],
         "track_record": [
           {
-            "description": "融资来源记录：Enveda · E轮 · 2026-09-23 · 本轮参投 · $311M。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "2026 年 9 月 23 日，Enveda 官方公告将 Durable Capital Partners 列为 3.11 亿美元 E 轮新投资者；该金额为整轮融资额，未披露本机构单独出资额。",
+            "source_id": "durable_series_e"
+          },
+          {
+            "description": "融资数据库记录亦将其关联至 Enveda 2026 年 9 月 23 日 E 轮（new investor）。原报道未披露其单笔出资金额。",
             "source_id": "FISRC-852df50f4128c47b"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "Durable Capital Partners 官网",
+            "value": "Durable Capital Partners",
+            "url": "https://www.durablecap.com/",
+            "source_id": "durable_official"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "durable_official",
+            "source_url": "https://www.durablecap.com/",
+            "source_title": "Durable Capital Partners 官方网站",
+            "source_content_hash": "4d5ad2f77cc46eade092f488ead78cc7d6565c86545dd1000ff98d6e88c6ea49",
+            "quote": "The right elements build businesses that last.",
+            "quote_hash": "5c06606eb44d05e9a9022006b6cd34a1e925c46fb9d0000287f1c02ebe528258"
+          },
+          {
+            "source_id": "durable_company_profile",
+            "source_url": "https://www.linkedin.com/company/durable-capital-partners-lp",
+            "source_title": "Durable Capital Partners LP 公司主页：机构介绍与投资策略",
+            "source_content_hash": "cb5ddd33388d38daa41e7284cb9f73491612d4d5fd97567c1945dcaaf200ee89",
+            "quote": "Durable Capital Partners LP is an investment adviser founded by Henry Ellenbogen. Durable Capital Partners LP's investment philosophy is grounded in sourcing small-cap and mid-cap compounders in both the private and public markets.",
+            "quote_hash": "cde008c4719ead864e7711805d5005c73cd5ad34627ddc66cfcb28ba446a0747"
+          },
+          {
+            "source_id": "durable_sec_iapd",
+            "source_url": "https://adviserinfo.sec.gov/firm/summary/305221",
+            "source_title": "美国 SEC 投资顾问公开数据库：Durable Capital Partners LP",
+            "source_content_hash": "a4e202ac629a73fcb0116d5a4fc9050e709f5dfa7f62250f489b423d747c5d45",
+            "quote": "DURABLE CAPITAL PARTNERS LP (CRD # 305221/SEC#:801-117448). SEC | Approved | 10/15/2019",
+            "quote_hash": "e2951f466cb25affa7d9cd74012ad5f6c427935525988e82b74166aa38b60ac9"
+          },
+          {
+            "source_id": "durable_series_e",
+            "source_url": "https://enveda.com/news/enveda-raises-311-million/",
+            "source_title": "Enveda 官方公告：3.11 亿美元 E 轮融资",
+            "source_content_hash": "ec51f348211e2c008689e4152af53b1fd946099dde8b1719a88704418696826c",
+            "quote": "Durable Capital Partners",
+            "quote_hash": "fbaa4db45f1ff54adc8f86dd313b264d4ae13aac2adc3b38a8c570d2af0d1367"
+          },
           {
             "source_id": "FISRC-852df50f4128c47b",
             "source_url": "https://www.bioxconomy.com/investment/enveda-s-311m-series-e-to-found-ai-driven-drug-discovery-platform",
@@ -126695,7 +126849,8 @@
             "quote_hash": "3cbfe761b6de0bfc87604c270fdc50a1ccdfe84427307a732532acbdb8ace223"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27",
+        "identity_status": "verified"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -126765,20 +126920,109 @@
       ],
       "public_profile": {
         "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "FPV Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "summary": "FPV Ventures 是面向使命驱动型创始人的早期投资机构。官网强调从创始人起步阶段长期陪伴，并列出联合创始人兼管理合伙人 Pegah Ebrahimi 与 Wesley Chan。官网团队介绍显示，Ebrahimi 曾在 Morgan Stanley 与 Cisco 担任运营和技术相关领导职务；Chan 曾在 Google 工作 14 年并参与创办 Google Analytics 与 Google Voice。Enveda 官方公告将 FPV Ventures 列为既有投资者。",
+        "coverage_note": "机构策略、合伙人履历和组合案例来自 FPV Ventures 官网；履历采用公司自述口径。Enveda 参投身份来自 Enveda 官方融资公告并由融资报道交叉印证。相关融资额为 Enveda 整轮金额，不代表 FPV Ventures 的单独出资或基金业绩。",
+        "facts": [
+          {
+            "field": "investment_approach",
+            "label": "官网列示投资理念",
+            "value": "以创始人服务为核心，关注使命驱动、对目标有强烈信念的创始人，并从早期阶段持续陪伴。",
+            "source_id": "fpv_about"
+          },
+          {
+            "field": "leadership",
+            "label": "官网列示联合创始人及管理合伙人",
+            "value": "Pegah Ebrahimi；Wesley Chan。",
+            "source_id": "fpv_team"
+          },
+          {
+            "field": "leadership_background",
+            "label": "官网披露的合伙人经历",
+            "value": "Ebrahimi 曾任 Morgan Stanley 科技投行 COO、Cisco Collaboration 业务 COO，并曾任 Morgan Stanley Bank 全球 CIO；Chan 曾在 Google 任职 14 年并参与创办 Google Analytics 与 Google Voice。以上为公司官网人物简介口径。",
+            "source_id": "fpv_pegah_bio"
+          },
+          {
+            "field": "selected_portfolio",
+            "label": "官网展示组合案例",
+            "value": [
+              "Enveda",
+              "Canva",
+              "Flexport",
+              "Databricks"
+            ],
+            "source_id": "fpv_home"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：Enveda · E轮 · 2026-09-23 · 本轮参投 · $311M。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "FPV Ventures 官网组合展示列有 Enveda；Enveda 2026 年 9 月 23 日公告将 FPV Ventures 列为既有投资者，并未披露其单笔出资额。",
+            "source_id": "fpv_series_e"
+          },
+          {
+            "description": "融资数据库记录亦将其关联至 Enveda 2026 年 9 月 23 日 E 轮（existing investor）。原报道未披露其单笔出资金额。",
             "source_id": "FISRC-852df50f4128c47b"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "FPV Ventures 官网",
+            "value": "FPV Ventures",
+            "url": "https://fpvventures.com/",
+            "source_id": "fpv_home"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "fpv_about",
+            "source_url": "https://fpvventures.com/about/",
+            "source_title": "FPV Ventures 官网：投资理念与创始人服务",
+            "source_content_hash": "03b6610e3329e46428c181a94140cd98278c0a226cf1d96a72b7e2b408205d65",
+            "quote": "At FPV, we’re with them from the start, and we’re here to support them along the way — all the way.",
+            "quote_hash": "9a601f5dc831d0238061ec38c3565b884c409ca78f4efc41c2109e12bd161dd3"
+          },
+          {
+            "source_id": "fpv_team",
+            "source_url": "https://fpvventures.com/team/",
+            "source_title": "FPV Ventures 官网：联合创始人及管理合伙人",
+            "source_content_hash": "e9627c9f5422ecc3a827504f23959be6d4a54a2034cf932d134af84cbbe886c0",
+            "quote": "Pegah Ebrahimi | Co-founder & Managing Partner; Wesley Chan | Co-founder & Managing Partner",
+            "quote_hash": "dcd77ad3e3848edbfcd334fd82dbe18e4d2fe97bacfe4cdc6e0b9d9ba8d340bd"
+          },
+          {
+            "source_id": "fpv_pegah_bio",
+            "source_url": "https://fpvventures.com/team/",
+            "source_title": "FPV Ventures 官网：Pegah Ebrahimi 履历",
+            "source_content_hash": "6e0a9896d38eb2684dce3a0a6da379232feedf6b4dc4d0d9e4a75b6f6643dec4",
+            "quote": "She developed her expertise during her tenure as COO of Morgan Stanley’s Technology Investment Banking, COO of Cisco’s multi-billion dollar Collaboration business, and the youngest global CIO of Morgan Stanley Bank.",
+            "quote_hash": "4464cca5500b9b744eb5987854dddb20f1ea6102a754aa50f8a398648d772bab"
+          },
+          {
+            "source_id": "fpv_wesley_bio",
+            "source_url": "https://fpvventures.com/team/",
+            "source_title": "FPV Ventures 官网：Wesley Chan 履历",
+            "source_content_hash": "28aa0eb60c20f8ba620a00c62f997d7708c10cbe687dd917f1eed884b0ac31b0",
+            "quote": "He founded Google Analytics and Google Voice during his 14 year career at Google.",
+            "quote_hash": "27c570e3b33c9d3d7b8f238ab8dd6f3a3a9f1af5b39f4659117ff41857211157"
+          },
+          {
+            "source_id": "fpv_home",
+            "source_url": "https://fpvventures.com/",
+            "source_title": "FPV Ventures 官网：组合公司展示",
+            "source_content_hash": "1bc50a15dd428d50b0f814399c57371fc84d00f24c620a59b10f2d799aa2c22f",
+            "quote": "Enveda",
+            "quote_hash": "fd85b0f814d34bead7662839e922d919181b064af1e175969bd3cd1ec8396694"
+          },
+          {
+            "source_id": "fpv_series_e",
+            "source_url": "https://enveda.com/news/enveda-raises-311-million/",
+            "source_title": "Enveda 官方公告：3.11 亿美元 E 轮融资",
+            "source_content_hash": "ec51f348211e2c008689e4152af53b1fd946099dde8b1719a88704418696826c",
+            "quote": "Existing investors Baillie Gifford, Premji Invest, FPV Ventures, True Ventures, Kinnevik, Dimension, Lifeforce Capital, and Lux Capital also participated.",
+            "quote_hash": "882202cb44ad9d9c134b2a21b4c2fb2c2449305ea2081d7480583ed23e7792bf"
+          },
           {
             "source_id": "FISRC-852df50f4128c47b",
             "source_url": "https://www.bioxconomy.com/investment/enveda-s-311m-series-e-to-found-ai-driven-drug-discovery-platform",
@@ -126788,7 +127032,8 @@
             "quote_hash": "882202cb44ad9d9c134b2a21b4c2fb2c2449305ea2081d7480583ed23e7792bf"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27",
+        "identity_status": "verified"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -126994,20 +127239,78 @@
       ],
       "public_profile": {
         "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Lifeforce Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "summary": "Lifeforce Capital 是一家关注医疗服务创新与 techbio 的投资机构。官网称其组合企业通过新技术和新型服务模式改善医疗服务，并以软件优先的 techbio 平台推动传统生物技术转型；其组合页面列有 Enveda。Enveda 官方公告将 Lifeforce Capital 列为 2026 年 E 轮既有投资者，未披露单笔出资额。",
+        "coverage_note": "投资主题与组合案例依据 Lifeforce Capital 官网；融资参投信息依据 Enveda 公司公告并由融资报道交叉印证。网站未公开该机构的可比基金收益，也未披露其参与本轮的单笔金额。",
+        "facts": [
+          {
+            "field": "investment_focus",
+            "label": "官网列示投资主题",
+            "value": [
+              "医疗服务交付",
+              "新型医疗服务模式",
+              "软件优先的 techbio 平台"
+            ],
+            "source_id": "lifeforce_thesis"
+          },
+          {
+            "field": "investment_approach",
+            "label": "官网自述投资方向",
+            "value": "通过新技术和新型服务模式改善医疗服务，并以软件优先平台推动传统生物技术转型。",
+            "source_id": "lifeforce_thesis"
+          },
+          {
+            "field": "selected_portfolio",
+            "label": "官网组合案例",
+            "value": "Enveda",
+            "source_id": "lifeforce_portfolio"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：Enveda · E轮 · 2026-09-23 · 本轮参投 · $311M。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "Lifeforce Capital 官网组合页列有 Enveda；Enveda 官方公告将 Lifeforce Capital 列为其 2026 年 E 轮既有投资者，未披露单笔金额。",
+            "source_id": "lifeforce_series_e"
+          },
+          {
+            "description": "融资数据库记录亦将其关联至 Enveda 2026 年 9 月 23 日 E 轮（existing investor）。原报道未披露其单笔出资金额。",
             "source_id": "FISRC-852df50f4128c47b"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "Lifeforce Capital 官网",
+            "value": "Lifeforce Capital",
+            "url": "https://www.lifeforcecap.com/",
+            "source_id": "lifeforce_thesis"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "lifeforce_thesis",
+            "source_url": "https://www.lifeforcecap.com/techbio",
+            "source_title": "Lifeforce Capital 官网：Care Delivery 与 techbio 投资主题",
+            "source_content_hash": "989ad9cab5b72c3b25773c8cbe9d79ac2fd5af9e206afe242b034c2b16562dc1",
+            "quote": "Our companies advance care delivery through new technologies and care models, and drive a paradigm shift away from traditional biotechnology with software-first techbio platforms.",
+            "quote_hash": "8c5bade33d7b2fb329fdfb85cfcdaff5ece3056d04bc97de83b7f2822c5bc5c4"
+          },
+          {
+            "source_id": "lifeforce_portfolio",
+            "source_url": "https://www.lifeforcecap.com/all",
+            "source_title": "Lifeforce Capital 官网组合页面",
+            "source_content_hash": "271425d1386f5d616bf4bbaec7717787adeccd44fbeb7aea04c57a81b3391232",
+            "quote": "Image: Enveda.png",
+            "quote_hash": "214c1d5360de4a94086b3e7e72260946e135bce1e616b0028320e18cb419ad3d"
+          },
+          {
+            "source_id": "lifeforce_series_e",
+            "source_url": "https://enveda.com/news/enveda-raises-311-million/",
+            "source_title": "Enveda 官方公告：3.11 亿美元 E 轮融资",
+            "source_content_hash": "ec51f348211e2c008689e4152af53b1fd946099dde8b1719a88704418696826c",
+            "quote": "Existing investors Baillie Gifford, Premji Invest, FPV Ventures, True Ventures, Kinnevik, Dimension, Lifeforce Capital, and Lux Capital also participated.",
+            "quote_hash": "882202cb44ad9d9c134b2a21b4c2fb2c2449305ea2081d7480583ed23e7792bf"
+          },
           {
             "source_id": "FISRC-852df50f4128c47b",
             "source_url": "https://www.bioxconomy.com/investment/enveda-s-311m-series-e-to-found-ai-driven-drug-discovery-platform",
@@ -127017,7 +127320,8 @@
             "quote_hash": "882202cb44ad9d9c134b2a21b4c2fb2c2449305ea2081d7480583ed23e7792bf"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27",
+        "identity_status": "verified"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -127180,20 +127484,110 @@
       ],
       "public_profile": {
         "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Surveyor Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "summary": "Surveyor Capital 是 Citadel 旗下的基本面股票投资策略，并非公开定位为传统风险投资基金。Citadel 官网称该策略于 2008 年设立，覆盖多行业，以基本面研究、市场中性风险框架和多空股票及股权资本市场策略开展投资；截至 2026 年 7 月官网列有 110 多位投资专业人士。Enveda 官方公告将 Surveyor Capital 列为新投资者，但没有披露投资载体或单笔金额。",
+        "coverage_note": "策略、成立年份、团队负责人及规模来自 Citadel 官网；人员数量标注为官网截至 2026 年 7 月口径。Enveda 参投身份来自被投公司公告，不能据此推断其投资结构、持股或单笔出资额。",
+        "facts": [
+          {
+            "field": "organization_identity",
+            "label": "机构定位",
+            "value": "Citadel 旗下基本面股票投资策略；Enveda 公告也将其标注为 Citadel 公司。",
+            "source_id": "surveyor_official"
+          },
+          {
+            "field": "strategy",
+            "label": "官网列示策略",
+            "value": [
+              "基本面多空股票",
+              "股权资本市场"
+            ],
+            "source_id": "surveyor_strategy"
+          },
+          {
+            "field": "sectors",
+            "label": "官网列示覆盖行业",
+            "value": [
+              "消费",
+              "金融",
+              "医疗健康",
+              "工业",
+              "能源",
+              "科技、媒体与电信"
+            ],
+            "source_id": "surveyor_strategy"
+          },
+          {
+            "field": "team_scale",
+            "label": "官网披露的团队规模",
+            "value": "110 多位投资专业人士；截至 2026 年 7 月。",
+            "source_id": "surveyor_official"
+          },
+          {
+            "field": "leadership",
+            "label": "官网列示负责人",
+            "value": "Phillip Lee，Surveyor Capital 负责人。",
+            "source_id": "surveyor_team"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2008",
+            "description": "Citadel 官网记载 Surveyor Capital 于 2008 年设立。",
+            "source_id": "surveyor_official"
+          }
+        ],
         "track_record": [
           {
-            "description": "融资来源记录：Enveda · E轮 · 2026-09-23 · 本轮参投 · $311M。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "2026 年 9 月 23 日，Enveda 官方公告将 Surveyor Capital（Citadel 旗下）列为 3.11 亿美元 E 轮新投资者；该轮公告未披露其投资载体或单家出资金额。",
+            "source_id": "surveyor_series_e"
+          },
+          {
+            "description": "融资数据库记录亦将其关联至 Enveda 2026 年 9 月 23 日 E 轮（new investor）。原报道未披露其单笔出资金额。",
             "source_id": "FISRC-852df50f4128c47b"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "Citadel 官网 Surveyor Capital 页面（未列独立投资申请渠道）",
+            "value": "Surveyor Capital at Citadel",
+            "url": "https://www.citadel.com/what-we-do/equities/surveyor-capital/",
+            "source_id": "surveyor_official"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "surveyor_official",
+            "source_url": "https://www.citadel.com/what-we-do/equities/surveyor-capital/",
+            "source_title": "Citadel 官网：Surveyor Capital 策略介绍",
+            "source_content_hash": "37c6d7ae537b3ce76d045f0848802323ddbf7131104e98e037e0620f066bcb94",
+            "quote": "Surveyor Capital is a longstanding fundamental equities strategy at Citadel, established in 2008.",
+            "quote_hash": "cc06a5104452e315e3ad1ee57ed27316eab13fef0c3b0cbb854baf66a65e2246"
+          },
+          {
+            "source_id": "surveyor_strategy",
+            "source_url": "https://www.citadel.com/what-we-do/equities/surveyor-capital/",
+            "source_title": "Citadel 官网：Surveyor Capital 策略与行业范围",
+            "source_content_hash": "998c2148e4c08a4cc10bafe546822aca19f46453b24cd578e889ae5f256aed1c",
+            "quote": "Fundamental long/short; Equity capital markets; Consumer; Financials; Healthcare; Industrials; Energy; Technology, Media & Telecom.",
+            "quote_hash": "d4c15c79198e61f5362f33f6d039355d7e72ede314b7e8b857247753f16a58bc"
+          },
+          {
+            "source_id": "surveyor_team",
+            "source_url": "https://www.citadel.com/what-we-do/equities/surveyor-capital/",
+            "source_title": "Citadel 官网：Surveyor Capital 团队负责人",
+            "source_content_hash": "80e85f2d28b22b153b445c418549f009dbdfb6fa7f3cacb1ccf6fed6c46288d3",
+            "quote": "Phillip Lee | Head of Surveyor Capital",
+            "quote_hash": "d566e18f4dcf4c026bc15ef238fdb00c7dff226ef959c4cc03c3eee60aced72c"
+          },
+          {
+            "source_id": "surveyor_series_e",
+            "source_url": "https://enveda.com/news/enveda-raises-311-million/",
+            "source_title": "Enveda 官方公告：3.11 亿美元 E 轮融资",
+            "source_content_hash": "ec51f348211e2c008689e4152af53b1fd946099dde8b1719a88704418696826c",
+            "quote": "Surveyor Capital (a Citadel company)",
+            "quote_hash": "4cc4ef8b1040115e47a8e630de4cf160203995707ae00c98d91c0e39d76b0c65"
+          },
           {
             "source_id": "FISRC-852df50f4128c47b",
             "source_url": "https://www.bioxconomy.com/investment/enveda-s-311m-series-e-to-found-ai-driven-drug-discovery-platform",
@@ -127203,7 +127597,8 @@
             "quote_hash": "3cbfe761b6de0bfc87604c270fdc50a1ccdfe84427307a732532acbdb8ace223"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27",
+        "identity_status": "verified"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -127273,20 +127668,94 @@
       ],
       "public_profile": {
         "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "T. Rowe Price Investment Management 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "summary": "T. Rowe Price Investment Management, Inc. 是 T. Rowe Price 的投资顾问子公司。SEC 文件确认该公司为 T. Rowe Price 子公司并提供投资管理服务；母公司自 1937 年起开展全球主动投资管理。Enveda 官方公告的精确表述是“由 T. Rowe Price Investment Management 提供咨询的账户”参与其 E 轮，因此不能据此认定管理人以自有资产出资。",
+        "coverage_note": "机构主体关系和业务边界依据 T. Rowe Price 官网及 SEC 文件。Enveda 公告说的是由该公司提供咨询的账户参与，不是明确说 T. Rowe Price Investment Management 以自有资本直接投资；数据库原记录与公告表述保持区分。未披露单一账户的出资额。",
+        "facts": [
+          {
+            "field": "legal_entity",
+            "label": "主体关系",
+            "value": "T. Rowe Price Investment Management, Inc. 是 T. Rowe Price 的投资顾问实体之一，负责 T. Rowe Price 策略和共同基金的投资顾问工作。",
+            "source_id": "trowe_entity"
+          },
+          {
+            "field": "business_background",
+            "label": "母公司历史与业务",
+            "value": "T. Rowe Price 自 1937 年起开展投资管理；公司官网称其向个人与机构客户提供多资产类别的投资管理服务。",
+            "source_id": "trowe_about"
+          },
+          {
+            "field": "investment_attribution",
+            "label": "Enveda 融资中的归因口径",
+            "value": "Enveda 称参与者为由 T. Rowe Price Investment Management 提供咨询的账户；公告没有说管理人以自有资本直接出资。",
+            "source_id": "trowe_series_e"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "1937",
+            "description": "T. Rowe Price 母公司成立；该日期不代表 Investment Management 子公司成立时间。",
+            "source_id": "trowe_about"
+          }
+        ],
         "track_record": [
           {
-            "description": "融资来源记录：Enveda · E轮 · 2026-09-23 · 本轮参投 · $311M。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "2026 年 9 月 23 日，Enveda 官方公告称由 T. Rowe Price Investment Management 提供咨询的账户参与 3.11 亿美元 E 轮；公告未披露账户身份或单一账户出资额。",
+            "source_id": "trowe_series_e"
+          },
+          {
+            "description": "融资数据库记录亦将其关联至 Enveda 2026 年 9 月 23 日 E 轮（accounts advised）。原报道未披露其单笔出资金额。",
             "source_id": "FISRC-852df50f4128c47b"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "T. Rowe Price 官网",
+            "value": "T. Rowe Price",
+            "url": "https://www.troweprice.com/",
+            "source_id": "trowe_about"
+          },
+          {
+            "kind": "address",
+            "label": "SEC 文件列示的 T. Rowe Price Investment Management 办公地址",
+            "value": "1307 Point Street, Baltimore, Maryland 21231, United States",
+            "source_id": "trowe_sec_subsidiary"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "trowe_about",
+            "source_url": "https://www.troweprice.com/en/us/institutional/about-us",
+            "source_title": "T. Rowe Price 官网：公司历史与投资管理业务",
+            "source_content_hash": "8fd1a5bd9f24b5f179e99e023f140435593b3479b0a7d324478c9763644f981d",
+            "quote": "Since 1937, T. Rowe Price has been there…guiding clients, seeking to stay ahead of what’s next, and staying true to our purpose…to identify and actively invest in opportunities to help people thrive in an evolving world.",
+            "quote_hash": "60cd21c4d08f4e1e8aa4ee93f5b8861891ad51555fc0009156c3b751cab4502d"
+          },
+          {
+            "source_id": "trowe_entity",
+            "source_url": "https://www.troweprice.com/en/us/institutional/about-us",
+            "source_title": "T. Rowe Price 官网：投资顾问实体说明",
+            "source_content_hash": "8fd1a5bd9f24b5f179e99e023f140435593b3479b0a7d324478c9763644f981d",
+            "quote": "T. Rowe Price Associates, Inc. and T. Rowe Price Investment Management, Inc., investment advisers of T. Rowe Price strategies and mutual funds.",
+            "quote_hash": "bbe5d86462140b35da21838ef5bca572ccab3b60a882013df06070a8a413b998"
+          },
+          {
+            "source_id": "trowe_sec_subsidiary",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1012968/000199937126004114/ief-485bpos_030126.htm",
+            "source_title": "SEC 文件：T. Rowe Price Investment Management 子公司及办公室",
+            "source_content_hash": "032e22bf159165a0fb4b8a2dbaa44db91e43f5b5b5f72f3452354e27d6e6e3d8",
+            "quote": "Price Investment Management is a subsidiary of T. Rowe Price and its address is 1307 Point Street, Baltimore, Maryland 21231.",
+            "quote_hash": "667ccd314dbfc2df27818ce54eceb781b0262dc37f2f325ba9125c6493edb278"
+          },
+          {
+            "source_id": "trowe_series_e",
+            "source_url": "https://enveda.com/news/enveda-raises-311-million/",
+            "source_title": "Enveda 官方公告：3.11 亿美元 E 轮融资",
+            "source_content_hash": "ec51f348211e2c008689e4152af53b1fd946099dde8b1719a88704418696826c",
+            "quote": "accounts advised by T. Rowe Price Investment Management",
+            "quote_hash": "1b0e5f53e642e47fa1d138386a8e1a184235e04eae715bf93a42c0e915b99d65"
+          },
           {
             "source_id": "FISRC-852df50f4128c47b",
             "source_url": "https://www.bioxconomy.com/investment/enveda-s-311m-series-e-to-found-ai-driven-drug-discovery-platform",
@@ -127296,7 +127765,8 @@
             "quote_hash": "3cbfe761b6de0bfc87604c270fdc50a1ccdfe84427307a732532acbdb8ace223"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27",
+        "identity_status": "verified"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -127366,20 +127836,100 @@
       ],
       "public_profile": {
         "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "True Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "summary": "True Ventures 是一家与早期创始人合作的投资机构，官网称其自 2005 年以来持续在创始人早期阶段提供支持。官网自报承诺资本总额 40 亿美元、支持 1,050 多位创始人并投资 500 多家公司；其组合展示中包括 Enveda。Enveda 官方公告将 True Ventures 列为 2026 年 E 轮既有投资者。上述规模指标不是投资回报，单笔融资金额也未公开。",
+        "coverage_note": "投资风格、年限、组合展示及规模指标来自 True Ventures 官网自述；规模不是业绩或投资回报指标。Enveda 参投身份依据公司官方公告并由融资报道交叉印证。官网公布的法律联系邮箱用于条款及网站服务咨询，不是投资申请邮箱。",
+        "facts": [
+          {
+            "field": "investment_approach",
+            "label": "官网列示投资风格",
+            "value": "自 2005 年起与早期创始人合作，陪伴其开发首批产品、解决关键问题并建立新类别。",
+            "source_id": "true_home"
+          },
+          {
+            "field": "scale",
+            "label": "官网自报规模指标",
+            "value": "承诺资本 40 亿美元；1,050 多位创始人；500 多家公司。该公司指标不等同于收益或基金业绩。",
+            "source_id": "true_scale"
+          },
+          {
+            "field": "selected_portfolio",
+            "label": "官网展示组合案例",
+            "value": "Enveda（官网同时声明展示的公司并非完整投资清单）。",
+            "source_id": "true_home"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2005",
+            "description": "True Ventures 官网称其自 2005 年起与早期创始人合作。",
+            "source_id": "true_home"
+          }
+        ],
         "track_record": [
           {
-            "description": "融资来源记录：Enveda · E轮 · 2026-09-23 · 本轮参投 · $311M。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "True Ventures 官网组合展示包括 Enveda；Enveda 官方公告将 True Ventures 列为其 2026 年 E 轮既有投资者，未披露该机构单笔出资额。",
+            "source_id": "true_series_e"
+          },
+          {
+            "description": "融资数据库记录亦将其关联至 Enveda 2026 年 9 月 23 日 E 轮（existing investor）。原报道未披露其单笔出资金额。",
             "source_id": "FISRC-852df50f4128c47b"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "True Ventures 官网",
+            "value": "True Ventures",
+            "url": "https://www.trueventures.com/",
+            "source_id": "true_home"
+          },
+          {
+            "kind": "email",
+            "label": "网站条款与服务咨询邮箱（非投资申请邮箱）",
+            "value": "legal@trueventures.com",
+            "source_id": "true_terms_contact"
+          },
+          {
+            "kind": "address",
+            "label": "官网条款页公开地址（法律联系）",
+            "value": "575 High Street, Suite 400, Palo Alto, CA 94301",
+            "source_id": "true_terms_contact"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "true_home",
+            "source_url": "https://www.trueventures.com/",
+            "source_title": "True Ventures 官网：投资历史与组合展示",
+            "source_content_hash": "a96c875a7416108a1e515abbe5441e74ecb1c72db379eac9e7eb0684e28c0e4f",
+            "quote": "Since 2005, we’ve partnered with founders at the earliest moments—through first products, hard decisions, and the work of creating new categories.",
+            "quote_hash": "56803e6d3bdc308c42803e9969a2807d96295334fd767d314c8b7599b5e5338b"
+          },
+          {
+            "source_id": "true_scale",
+            "source_url": "https://www.trueventures.com/",
+            "source_title": "True Ventures 官网：公开规模指标",
+            "source_content_hash": "a96c875a7416108a1e515abbe5441e74ecb1c72db379eac9e7eb0684e28c0e4f",
+            "quote": "$4B Committed Capital; 1,050+ Founders; 500+ Companies.",
+            "quote_hash": "983498d1df2ff947e4cd14f782c3294ca7012e6df61145339cc30be05712fba9"
+          },
+          {
+            "source_id": "true_terms_contact",
+            "source_url": "https://www.trueventures.com/terms-of-use",
+            "source_title": "True Ventures 官网使用条款：公开联系信息",
+            "source_content_hash": "254702da81c8793424b8bc75fbc55a47436c44503f27d31e2011f49c19572c3c",
+            "quote": "For questions about these Terms or the Services: Email: legal@trueventures.com; Address: 575 High Street, Suite 400, Palo Alto, CA 94301.",
+            "quote_hash": "5dda96febb7274b7f19550dfd503f9dee730b8188ba28f2d2402a276fff011d0"
+          },
+          {
+            "source_id": "true_series_e",
+            "source_url": "https://enveda.com/news/enveda-raises-311-million/",
+            "source_title": "Enveda 官方公告：3.11 亿美元 E 轮融资",
+            "source_content_hash": "ec51f348211e2c008689e4152af53b1fd946099dde8b1719a88704418696826c",
+            "quote": "Existing investors Baillie Gifford, Premji Invest, FPV Ventures, True Ventures, Kinnevik, Dimension, Lifeforce Capital, and Lux Capital also participated.",
+            "quote_hash": "882202cb44ad9d9c134b2a21b4c2fb2c2449305ea2081d7480583ed23e7792bf"
+          },
           {
             "source_id": "FISRC-852df50f4128c47b",
             "source_url": "https://www.bioxconomy.com/investment/enveda-s-311m-series-e-to-found-ai-driven-drug-discovery-platform",
@@ -127389,7 +127939,8 @@
             "quote_hash": "882202cb44ad9d9c134b2a21b4c2fb2c2449305ea2081d7480583ed23e7792bf"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27",
+        "identity_status": "verified"
       },
       "activity_count": 1,
       "portfolio_companies": [

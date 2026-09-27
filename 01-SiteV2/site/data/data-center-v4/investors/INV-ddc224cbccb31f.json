@@ -138,20 +138,78 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Lifeforce Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Lifeforce Capital 是一家关注医疗服务创新与 techbio 的投资机构。官网称其组合企业通过新技术和新型服务模式改善医疗服务，并以软件优先的 techbio 平台推动传统生物技术转型；其组合页面列有 Enveda。Enveda 官方公告将 Lifeforce Capital 列为 2026 年 E 轮既有投资者，未披露单笔出资额。",
+      "coverage_note": "投资主题与组合案例依据 Lifeforce Capital 官网；融资参投信息依据 Enveda 公司公告并由融资报道交叉印证。网站未公开该机构的可比基金收益，也未披露其参与本轮的单笔金额。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网列示投资主题",
+          "value": [
+            "医疗服务交付",
+            "新型医疗服务模式",
+            "软件优先的 techbio 平台"
+          ],
+          "source_id": "lifeforce_thesis"
+        },
+        {
+          "field": "investment_approach",
+          "label": "官网自述投资方向",
+          "value": "通过新技术和新型服务模式改善医疗服务，并以软件优先平台推动传统生物技术转型。",
+          "source_id": "lifeforce_thesis"
+        },
+        {
+          "field": "selected_portfolio",
+          "label": "官网组合案例",
+          "value": "Enveda",
+          "source_id": "lifeforce_portfolio"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Enveda · E轮 · 2026-09-23 · 本轮参投 · $311M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Lifeforce Capital 官网组合页列有 Enveda；Enveda 官方公告将 Lifeforce Capital 列为其 2026 年 E 轮既有投资者，未披露单笔金额。",
+          "source_id": "lifeforce_series_e"
+        },
+        {
+          "description": "融资数据库记录亦将其关联至 Enveda 2026 年 9 月 23 日 E 轮（existing investor）。原报道未披露其单笔出资金额。",
           "source_id": "FISRC-852df50f4128c47b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Lifeforce Capital 官网",
+          "value": "Lifeforce Capital",
+          "url": "https://www.lifeforcecap.com/",
+          "source_id": "lifeforce_thesis"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "lifeforce_thesis",
+          "source_url": "https://www.lifeforcecap.com/techbio",
+          "source_title": "Lifeforce Capital 官网：Care Delivery 与 techbio 投资主题",
+          "source_content_hash": "989ad9cab5b72c3b25773c8cbe9d79ac2fd5af9e206afe242b034c2b16562dc1",
+          "quote": "Our companies advance care delivery through new technologies and care models, and drive a paradigm shift away from traditional biotechnology with software-first techbio platforms.",
+          "quote_hash": "8c5bade33d7b2fb329fdfb85cfcdaff5ece3056d04bc97de83b7f2822c5bc5c4"
+        },
+        {
+          "source_id": "lifeforce_portfolio",
+          "source_url": "https://www.lifeforcecap.com/all",
+          "source_title": "Lifeforce Capital 官网组合页面",
+          "source_content_hash": "271425d1386f5d616bf4bbaec7717787adeccd44fbeb7aea04c57a81b3391232",
+          "quote": "Image: Enveda.png",
+          "quote_hash": "214c1d5360de4a94086b3e7e72260946e135bce1e616b0028320e18cb419ad3d"
+        },
+        {
+          "source_id": "lifeforce_series_e",
+          "source_url": "https://enveda.com/news/enveda-raises-311-million/",
+          "source_title": "Enveda 官方公告：3.11 亿美元 E 轮融资",
+          "source_content_hash": "ec51f348211e2c008689e4152af53b1fd946099dde8b1719a88704418696826c",
+          "quote": "Existing investors Baillie Gifford, Premji Invest, FPV Ventures, True Ventures, Kinnevik, Dimension, Lifeforce Capital, and Lux Capital also participated.",
+          "quote_hash": "882202cb44ad9d9c134b2a21b4c2fb2c2449305ea2081d7480583ed23e7792bf"
+        },
         {
           "source_id": "FISRC-852df50f4128c47b",
           "source_url": "https://www.bioxconomy.com/investment/enveda-s-311m-series-e-to-found-ai-driven-drug-discovery-platform",
@@ -161,7 +219,8 @@
           "quote_hash": "882202cb44ad9d9c134b2a21b4c2fb2c2449305ea2081d7480583ed23e7792bf"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "identity_status": "verified"
     }
   }
 }

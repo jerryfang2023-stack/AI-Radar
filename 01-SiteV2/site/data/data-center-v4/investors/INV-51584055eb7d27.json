@@ -138,20 +138,94 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Durable Capital Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "Durable Capital Partners LP 是一家由 Henry Ellenbogen 创立的投资顾问机构。公司主页公开定位为帮助构建长久企业；公司 LinkedIn 页面进一步称其关注公募与私募市场中的小盘和中盘复利型企业。SEC 投资顾问公开数据库列示其于 2019 年获准登记。Enveda 官方公告将其列为 E 轮新投资者，未披露单笔出资额。",
+      "coverage_note": "法律实体与登记状态来自美国 SEC 投资顾问公开数据库；创始人、策略和总部信息来自机构公司主页维护的 LinkedIn 页面，并非 SEC 对策略或业绩的背书。机构官网公开页面没有给出可比基金收益或投资组合完整清单；融资轮总额不等于该机构出资额。",
+      "facts": [
+        {
+          "field": "legal_entity",
+          "label": "法律主体与登记",
+          "value": "Durable Capital Partners LP；SEC 投资顾问公开数据库列示 SEC 登记状态为 Approved，生效日为 2019-10-15。",
+          "source_id": "durable_sec_iapd"
+        },
+        {
+          "field": "founder",
+          "label": "公司主页列示创办人",
+          "value": "Henry Ellenbogen",
+          "source_id": "durable_company_profile"
+        },
+        {
+          "field": "investment_focus",
+          "label": "公司主页自述投资策略",
+          "value": "在公募和私募市场中寻找小盘与中盘复利型企业。",
+          "source_id": "durable_company_profile"
+        },
+        {
+          "field": "headquarters",
+          "label": "公司主页列示总部",
+          "value": "Chevy Chase, Maryland, United States",
+          "source_id": "durable_company_profile"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2019-10-15",
+          "description": "SEC 投资顾问公开数据库列示该机构登记生效日期。",
+          "source_id": "durable_sec_iapd"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Enveda · E轮 · 2026-09-23 · 本轮参投 · $311M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "2026 年 9 月 23 日，Enveda 官方公告将 Durable Capital Partners 列为 3.11 亿美元 E 轮新投资者；该金额为整轮融资额，未披露本机构单独出资额。",
+          "source_id": "durable_series_e"
+        },
+        {
+          "description": "融资数据库记录亦将其关联至 Enveda 2026 年 9 月 23 日 E 轮（new investor）。原报道未披露其单笔出资金额。",
           "source_id": "FISRC-852df50f4128c47b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Durable Capital Partners 官网",
+          "value": "Durable Capital Partners",
+          "url": "https://www.durablecap.com/",
+          "source_id": "durable_official"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "durable_official",
+          "source_url": "https://www.durablecap.com/",
+          "source_title": "Durable Capital Partners 官方网站",
+          "source_content_hash": "4d5ad2f77cc46eade092f488ead78cc7d6565c86545dd1000ff98d6e88c6ea49",
+          "quote": "The right elements build businesses that last.",
+          "quote_hash": "5c06606eb44d05e9a9022006b6cd34a1e925c46fb9d0000287f1c02ebe528258"
+        },
+        {
+          "source_id": "durable_company_profile",
+          "source_url": "https://www.linkedin.com/company/durable-capital-partners-lp",
+          "source_title": "Durable Capital Partners LP 公司主页：机构介绍与投资策略",
+          "source_content_hash": "cb5ddd33388d38daa41e7284cb9f73491612d4d5fd97567c1945dcaaf200ee89",
+          "quote": "Durable Capital Partners LP is an investment adviser founded by Henry Ellenbogen. Durable Capital Partners LP's investment philosophy is grounded in sourcing small-cap and mid-cap compounders in both the private and public markets.",
+          "quote_hash": "cde008c4719ead864e7711805d5005c73cd5ad34627ddc66cfcb28ba446a0747"
+        },
+        {
+          "source_id": "durable_sec_iapd",
+          "source_url": "https://adviserinfo.sec.gov/firm/summary/305221",
+          "source_title": "美国 SEC 投资顾问公开数据库：Durable Capital Partners LP",
+          "source_content_hash": "a4e202ac629a73fcb0116d5a4fc9050e709f5dfa7f62250f489b423d747c5d45",
+          "quote": "DURABLE CAPITAL PARTNERS LP (CRD # 305221/SEC#:801-117448). SEC | Approved | 10/15/2019",
+          "quote_hash": "e2951f466cb25affa7d9cd74012ad5f6c427935525988e82b74166aa38b60ac9"
+        },
+        {
+          "source_id": "durable_series_e",
+          "source_url": "https://enveda.com/news/enveda-raises-311-million/",
+          "source_title": "Enveda 官方公告：3.11 亿美元 E 轮融资",
+          "source_content_hash": "ec51f348211e2c008689e4152af53b1fd946099dde8b1719a88704418696826c",
+          "quote": "Durable Capital Partners",
+          "quote_hash": "fbaa4db45f1ff54adc8f86dd313b264d4ae13aac2adc3b38a8c570d2af0d1367"
+        },
         {
           "source_id": "FISRC-852df50f4128c47b",
           "source_url": "https://www.bioxconomy.com/investment/enveda-s-311m-series-e-to-found-ai-driven-drug-discovery-platform",
@@ -161,7 +235,8 @@
           "quote_hash": "3cbfe761b6de0bfc87604c270fdc50a1ccdfe84427307a732532acbdb8ace223"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "identity_status": "verified"
     }
   }
 }
