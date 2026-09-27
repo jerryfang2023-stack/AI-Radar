@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
+    "generatedAt": "2026-09-27T00:52:58.639Z",
     "latestDataDate": "2026-09-26",
     "currentDate": "2026-09-26",
     "eventCount": 3587,
@@ -141,11 +141,11 @@
       "identity_status": "verified",
       "coverage_status": "researched",
       "coverage_note": "AIX strategy, fund sizes and portfolio examples come from its own website and announcements. Fund sizes are fundraise disclosures, not capital currently available; portfolio examples are not returns. Illoca’s round total is not AIX’s check.",
-      "summary": "AIX Ventures is an AI-focused venture firm built around active AI practitioners and an investing team. It backs early-stage founders and pairs capital with technical and company-building expertise. The firm announced a $50 million Fund I in 2022 and a $202 million Fund II in 2024.",
+      "summary": "AIX Ventures 是一家专注于 AI 的风险投资机构，围绕活跃的 AI 从业者和投资团队构建。它支持早期创始人，并将资本与技术及公司建设专长相结合。该机构于 2022 年宣布设立 5000 万美元的 Fund I，并于 2024 年宣布设立 2.02 亿美元的 Fund II。",
       "facts": [
         {
           "field": "focus",
-          "label": "Investment focus",
+          "label": "投资重点",
           "value": "Early-stage AI companies and founders developing AI technology.",
           "source_id": "aix_about"
         },
@@ -169,7 +169,7 @@
         },
         {
           "field": "portfolio",
-          "label": "Selected portfolio",
+          "label": "精选投资组合",
           "value": "The firm lists Hugging Face, You.com, Weights & Biases, Perplexity and Chroma.",
           "source_id": "aix_fund_news"
         }
@@ -177,32 +177,32 @@
       "milestones": [
         {
           "date": "2022-03-23",
-          "description": "AIX announced its launch with a $50 million Fund I focused on pre-seed and seed companies.",
+          "description": "AIX 宣布成立，首期基金规模 5000 万美元，专注于 pre-seed 和种子阶段公司。",
           "source_id": "aix_fund_news"
         },
         {
           "date": "2024-02-13",
-          "description": "AIX announced a $202 million Fund II.",
+          "description": "AIX 宣布成立 2.02 亿美元的二期基金。",
           "source_id": "aix_fund_news"
         }
       ],
       "track_record": [
         {
-          "description": "Illoca’s May 2026 seed announcement named AIX Ventures among participants. The $13 million amount is the company’s total round, not AIX’s individual check.",
+          "description": "Illoca 于 2026 年 5 月公布的种子轮公告将 AIX Ventures 列为参与方之一。1300 万美元为公司本轮融资总额，而非 AIX 的单笔投资。",
           "source_id": "FISRC-af034b6014cc1e78"
         }
       ],
       "contacts": [
         {
           "kind": "website",
-          "label": "Official website",
+          "label": "官方网站",
           "value": "AIX Ventures",
           "source_id": "aix_about",
           "url": "https://www.aixventures.com/"
         },
         {
           "kind": "contact_form",
-          "label": "Founder inquiries",
+          "label": "创始人咨询",
           "value": "Connect with AIX",
           "source_id": "aix_contact",
           "url": "https://www.aixventures.com/contact"
@@ -243,6 +243,74 @@
         }
       ],
       "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "AIX Ventures 是一家专注于 AI 的风险投资机构，围绕活跃的 AI 从业者和投资团队构建。它支持早期创始人，并将资本与技术及公司建设专长相结合。该机构于 2022 年宣布设立 5000 万美元的 Fund I，并于 2024 年宣布设立 2.02 亿美元的 Fund II。",
+          "source_hash": "59f26969378aedcf36648431df097cd8bf9fcb8b5619c05d022074ab46725090",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T00:52:26.476Z",
+          "status": "translated"
+        },
+        "public_profile.facts[0].label": {
+          "text": "投资重点",
+          "source_hash": "63796d28455af159b2fd7937e8ba9bbcee96a13223afbec9e4a33ff9ba65b2d4",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T00:52:11.431Z",
+          "status": "translated"
+        },
+        "public_profile.facts[4].label": {
+          "text": "精选投资组合",
+          "source_hash": "79ca9a2051168647113f0549923f59e2053ca43ce9230c8fa0ac35b97bad1f30",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T00:52:29.726Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[0].description": {
+          "text": "AIX 宣布成立，首期基金规模 5000 万美元，专注于 pre-seed 和种子阶段公司。",
+          "source_hash": "a555aa7c92749df55af66ab755bc765d37b98a1a26ee6809000d43068cf14bf4",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T00:52:29.726Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[1].description": {
+          "text": "AIX 宣布成立 2.02 亿美元的二期基金。",
+          "source_hash": "b7a5561a3934d4bbfac81774de772982a315c30363cb8562f488ced2a3a7eb8b",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T00:52:29.726Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Illoca 于 2026 年 5 月公布的种子轮公告将 AIX Ventures 列为参与方之一。1300 万美元为公司本轮融资总额，而非 AIX 的单笔投资。",
+          "source_hash": "508604c177aeff8b514dbc1827631a51f894b794523c4e28be4793804f87eccf",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T00:52:29.726Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "官方网站",
+          "source_hash": "b16446d4331ad20b13b3c92866fa00eb15a0df69d7efc5dfdf9eca066ccae501",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T00:52:11.431Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[1].label": {
+          "text": "创始人咨询",
+          "source_hash": "7379271b97de95cd9bb95e9dcb42f0ca553979f982e9bebe7d85f623ce662550",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T00:52:29.726Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

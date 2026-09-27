@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
+    "generatedAt": "2026-09-27T00:52:58.639Z",
     "latestDataDate": "2026-09-26",
     "currentDate": "2026-09-26",
     "eventCount": 3587,
@@ -65,6 +65,8 @@
     ],
     "eventIds": [],
     "viewpointIds": [
+      "2103564484602384855",
+      "2103543983557517340",
       "2102594015669756323",
       "2102519097770885231",
       "2102438365455167883",
@@ -194,11 +196,14 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-05",
-    "lastSeen": "2026-09-23",
+    "lastSeen": "2026-09-26",
     "handle": "rauchg",
     "role": "vercel 首席执行官",
     "organization": "Vercel",
     "viewpointTags": [
+      "Agent",
+      "Agent 工作流观点",
+      "Agentic AI",
       "AI 编程",
       "AI Coding 观点",
       "AI Coding",
@@ -207,9 +212,6 @@
       "AI 应用与平台",
       "AI 基础设施",
       "模型基础设施观点",
-      "Agent",
-      "Agent 工作流观点",
-      "Agentic AI",
       "企业工作流",
       "Builder 观点"
     ],
@@ -236,6 +238,18 @@
     },
     "timeline": [],
     "viewpoints": [
+      {
+        "id": "2103564484602384855",
+        "date": "2026-09-26",
+        "title": "我们正在帮助像@klaviyo这样的世界级组织构建智能体部署平台。① 连接每一个智能体（claude、codex、cursor……）② 通过他们的IDP（Okta、Entra）配置SSO ③ 现在每个人都能安全地“烹饪”了® 一旦每家公司都完成这样的设置，SaaS会变成什么样？这个问题我经常被问到😁 首先，数据必须来自某个地方。这些应用只有在能够注入业务数据时才能发挥作用。这就是为什么我们看到大型企业SaaS厂商突然优先发布CLI和MCP，或者重新拾起他们多年来忽视的API。新的“采购门槛”将取决于你的产品对*智能体*（而非人类）的易用程度，以及它们能多轻松地浏览你的本体并与你的数据协作。一旦这一点到位，我认为将有一大批长尾SaaS应用再也不会被购买。它们将被生成出来。它们会更安全、性能更好、更现代，并且针对每家公司和每位员工的需求量身定制。",
+        "sourceUrl": "https://x.com/rauchg/status/2103564484602384855"
+      },
+      {
+        "id": "2103543983557517340",
+        "date": "2026-09-26",
+        "title": "https://t.co/5JpYvhlpkR 的增长令人难以置信。我看着它从一个想法，到首次发布，再到 𝚗𝚙𝚡 𝚜𝚔𝚒𝚕𝚕𝚜 出现在互联网上每一个 README 中。我们过去写代码，现在我们写英文。https://t.co/jrmPFjQKms",
+        "sourceUrl": "https://x.com/rauchg/status/2103543983557517340"
+      },
       {
         "id": "2102594015669756323",
         "date": "2026-09-23",
@@ -1077,6 +1091,38 @@
           "provider": "deepseek",
           "model": "deepseek-v4-flash",
           "translated_at": "2026-08-14T08:40:15.817Z",
+          "status": "translated"
+        },
+        "public_profile.summary": {
+          "text": "Guillermo Rauch 是软件工程师、Vercel 创始人兼 CEO，长期参与 JavaScript 开源项目、开发者工具和云基础设施建设；曾创办 Cloudup，后由 Automattic 收购。",
+          "source_hash": "7e61ee173c10af41cfd284aa85c6fa52ff03efcd41aff9d2e91cf4653c4dc97c",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T00:51:45.257Z",
+          "status": "translated"
+        },
+        "public_profile.career[1].description": {
+          "text": "其个人介绍称 Cloudup 后被 Automattic 收购。",
+          "source_hash": "9f595627e9c864cf624019fb1b617cba9110d895af009566be69b5ae67f2cd14",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T00:51:45.257Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "本人介绍称其创办的 Cloudup 后被 Automattic 收购，并列出 Socket.IO、Mongoose 等开源项目。",
+          "source_hash": "fd29774cc290d643ff70dcd61a8c4418183bc6e6c589a0d3a31d9fdc15f65e3a",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T00:51:45.257Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "Vercel 2026 年官方公告继续以 CEO and Founder 称呼 Guillermo Rauch。",
+          "source_hash": "ba32e8d970765fe84b39c5b66f9d229f038ce15588fa4403372863b77f72d055",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T00:51:45.257Z",
           "status": "translated"
         }
       }
