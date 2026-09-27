@@ -140,19 +140,64 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "无锡梁溪基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-01-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "“无锡梁溪基金”是融资情报站的机构简称。无锡市政协2026年1月27日的融资报道将具体参投基金写作“无锡市梁溪科技城溪沄数字经济创业投资基金”，并披露该基金出资3亿元。当前公开资料未披露该基金的完整工商名称、基金管理人、基金规模、完整组合或基金专属联系方式；区域“以投促引、以投促产”机制说明不等同于基金完整投资策略。",
+      "summary": "融资情报站使用“无锡梁溪基金”这一简称记录阶跃星辰B+轮。无锡市政协的官方报道披露，具体参投主体为无锡市梁溪科技城溪沄数字经济创业投资基金，投资金额3亿元；报道将此项目描述为梁溪区、梁溪科技城“以投促引、以投促产”招投联动的案例。公开资料尚未披露该基金的管理人、完整规模或其他完整投资组合。",
+      "facts": [
+        {
+          "field": "reported_fund_vehicle",
+          "label": "官方融资报道披露的具体基金",
+          "value": "无锡市梁溪科技城溪沄数字经济创业投资基金（报道未披露完整工商登记名称或管理人）。",
+          "source_id": "liangxi_stepfun_announcement"
+        },
+        {
+          "field": "reported_investment_amount",
+          "label": "阶跃星辰B+轮参投金额",
+          "value": "人民币3亿元。此为该基金在单笔融资中的出资，不是基金规模或管理规模。",
+          "source_id": "liangxi_stepfun_announcement"
+        },
+        {
+          "field": "regional_mechanism",
+          "label": "项目联动背景",
+          "value": "无锡市政协将该笔投资描述为梁溪区、梁溪科技城“以投促引、以投促产”招投联动机制的案例；不代表基金完整投资策略。",
+          "source_id": "liangxi_stepfun_announcement"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026-01-27",
+          "description": "无锡市政协发布阶跃星辰B+轮融资消息，披露溪沄数字经济创业投资基金参投3亿元。",
+          "source_id": "liangxi_stepfun_announcement"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：StepFun · B+轮 · 2026-01-26 · 本轮参投 · 50 亿人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资情报站记录：阶跃星辰 · B+轮 · 2026-01-26 · 本轮参投。融资情报站引用来源未披露该机构的单独出资额；无锡市政协次日发布的一手报道补充披露金额为3亿元。",
           "source_id": "FISRC-de3bb93d57d25bdf"
+        },
+        {
+          "description": "无锡市政协披露：无锡市梁溪科技城溪沄数字经济创业投资基金向阶跃星辰B+轮投资3亿元。该笔披露案例不代表基金全部投资组合。",
+          "source_id": "liangxi_stepfun_announcement"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "liangxi_stepfun_announcement",
+          "source_url": "https://zx.wuxi.gov.cn/doc/2026/01/27/4723971.shtml",
+          "source_title": "阶跃星辰获超50亿元B+轮融资 梁溪基金参投赋能AI产业生态",
+          "source_content_hash": "ad7859bd7d366e7582ab8758cdbfdf497dfc2941035117702b6b0ba51f665003",
+          "quote": "无锡市梁溪科技城溪沄数字经济创业投资基金参投3亿元",
+          "quote_hash": "6a45112450cfaaaca634222a2777b21544b33419b65c65208d0e64946e7f8c68"
+        },
+        {
+          "source_id": "liangxi_stepfun_strategy_context",
+          "source_url": "https://zx.wuxi.gov.cn/doc/2026/01/27/4723971.shtml",
+          "source_title": "阶跃星辰获超50亿元B+轮融资 梁溪基金参投赋能AI产业生态",
+          "source_content_hash": "ad7859bd7d366e7582ab8758cdbfdf497dfc2941035117702b6b0ba51f665003",
+          "quote": "此次梁溪基金参投阶跃星辰，是梁溪区、梁溪科技城“以投促引、以投促产”招投联动机制的生动实践。",
+          "quote_hash": "423c9ed6220b7ebcbb92a23618e183ea64d768cd7349ea7eee833262bf44a02e"
+        },
         {
           "source_id": "FISRC-de3bb93d57d25bdf",
           "source_url": "https://www.cyzone.cn/article/822685.html",
@@ -162,7 +207,7 @@
           "quote_hash": "f7ef53522aea45928eba53deb0ba7cdf5dcbe8cc3badeae684c82ba9683bc546"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28"
     }
   }
 }
