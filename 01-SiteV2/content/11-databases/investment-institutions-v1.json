@@ -73761,14 +73761,62 @@
         }
       ],
       "public_profile": {
-        "profile_type": "unverified",
-        "identity_status": "pending_verification",
-        "coverage_status": "identity_unverified",
-        "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "高榕资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched",
+        "coverage_note": "机构背景、投资方向、累计组合指标和联系方式来自高榕创投官网。官网公开的组合规模与上市企业数量为机构自述指标，不等同于基金回报率；具体项目案例以融资情报库可追溯记录为准。",
+        "summary": "数据表使用名称为“高榕资本”，机构官网使用“高榕创投”品牌。官网称机构于2014年1月创立，专注早期和成长期投资，重点覆盖新科技、互联网及新消费、医疗健康。官网公开披露投资企业300余家、上市企业30余家；这些累计指标不代表基金收益率。",
+        "facts": [
+          {
+            "field": "public_brand",
+            "label": "官网使用品牌",
+            "value": "高榕创投",
+            "source_id": "gaorong_home_2026"
+          },
+          {
+            "field": "founded_date",
+            "label": "创立时间",
+            "value": "2014年1月",
+            "source_id": "gaorong_home_2026"
+          },
+          {
+            "field": "investment_stages",
+            "label": "官网披露投资阶段",
+            "value": [
+              "早期",
+              "成长期"
+            ],
+            "source_id": "gaorong_home_2026"
+          },
+          {
+            "field": "sectors",
+            "label": "官网披露投资领域",
+            "value": [
+              "新科技",
+              "互联网及新消费",
+              "医疗健康"
+            ],
+            "source_id": "gaorong_home_2026"
+          },
+          {
+            "field": "portfolio_metrics",
+            "label": "官网披露累计组合指标",
+            "value": "投资企业300余家；上市企业30余家。统计口径为机构官网自述，非基金回报数据。",
+            "source_id": "gaorong_metrics_2026"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2014-01",
+            "description": "高榕创投官网记载机构于2014年1月创立。",
+            "source_id": "gaorong_home_2026"
+          }
+        ],
         "track_record": [
+          {
+            "description": "官网公开指标显示投资企业300余家、上市企业30余家；这是机构累计数量，不是基金IRR或完整回报率。",
+            "source_id": "gaorong_metrics_2026"
+          },
           {
             "description": "融资来源记录：浙江晶能微电子股份有限公司 · C轮 · 2026-09-20 · A轮领投方 · 6.3亿元。这是本库收录的披露案例，不代表完整投资组合。",
             "source_id": "FISRC-8ffab0ff3ac3652d"
@@ -73782,8 +73830,61 @@
             "source_id": "FISRC-7dfa7efaace4f3c8"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "高榕创投",
+            "url": "https://www.gaorongvc.com/cn/",
+            "source_id": "gaorong_home_2026"
+          },
+          {
+            "kind": "email",
+            "label": "官网公开邮箱（用途未单独说明）",
+            "value": "bp@gaorongvc.com",
+            "url": "https://www.gaorongvc.com/team.html",
+            "source_id": "gaorong_contact_2026"
+          },
+          {
+            "kind": "phone",
+            "label": "官网公开电话",
+            "value": "010-84442729",
+            "url": "https://www.gaorongvc.com/team.html",
+            "source_id": "gaorong_contact_2026"
+          },
+          {
+            "kind": "phone",
+            "label": "官网公开传真",
+            "value": "010-84442279",
+            "url": "https://www.gaorongvc.com/team.html",
+            "source_id": "gaorong_contact_2026"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "gaorong_home_2026",
+            "source_url": "https://www.gaorongvc.com/cn/",
+            "source_title": "高榕创投官网首页",
+            "source_content_hash": "a739c24c01c1bbf0a4298c3079ab6653db0552f86aa994679db4b2a02ef0c4a9",
+            "quote": "高榕创投于2014年1月创立，专注于早期和成长期投资，重点投资新科技、互联网及新消费、医疗健康等创新创业领域。",
+            "quote_hash": "17406dc8fa4bd5a76ed5877341f760b58570e8a68633bc7ecef6c0fa396a37f9"
+          },
+          {
+            "source_id": "gaorong_metrics_2026",
+            "source_url": "https://www.gaorongvc.com/cn/",
+            "source_title": "高榕创投官网首页",
+            "source_content_hash": "a739c24c01c1bbf0a4298c3079ab6653db0552f86aa994679db4b2a02ef0c4a9",
+            "quote": "300+ 2014 30+",
+            "quote_hash": "7ba56764fb168227d6a9de784c08815745aa04efe000dc17f922ed67f07f378e"
+          },
+          {
+            "source_id": "gaorong_contact_2026",
+            "source_url": "https://www.gaorongvc.com/team.html",
+            "source_title": "高榕创投官网团队与联系方式",
+            "source_content_hash": "5add0f83a07ed0a5685b80e839ac5e17d5a47ff1e30f85a85dbc1d2cb04d6125",
+            "quote": "中文 English bp@gaorongvc.com 010-84442729 010-84442279",
+            "quote_hash": "0f855ce465017d4376b8745592ce225385601f732e40802e8104d0e075cd069b"
+          },
           {
             "source_id": "FISRC-8ffab0ff3ac3652d",
             "source_url": "https://www.geener.cn/energy/company",
@@ -73809,7 +73910,7 @@
             "quote_hash": "6e0944605f10f53334f72bbd7c6dcd9d6bf0cbd4d7686337eb3b786f2b37ed8b"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27"
       }
     },
     {
@@ -74386,14 +74487,65 @@
         }
       ],
       "public_profile": {
-        "profile_type": "unverified",
-        "identity_status": "pending_verification",
-        "coverage_status": "identity_unverified",
-        "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "东方富海 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched",
+        "coverage_note": "东方富海官网在本次核验中未能加载。机构背景与历史规模引用合作方远致富海官网、上海证券报采访及证券时报报道；36氪档案与这些来源的管理规模数字不一致（36氪列示超过214亿元，合作方页面/2026年1月采访列示350亿元），统计口径和时点未能统一。公开BP邮箱及地址来自36氪档案，时效未独立确认。所有基金规模、项目和退出数字均非基金收益率。",
+        "summary": "东方富海是2006年设立的深圳创业投资机构。不同公开来源对其管理规模披露并不一致：远致富海合作方官网及2026年1月采访列示约350亿元，36氪机构档案当前列示超过214亿元，不能在缺少统一时点与口径时合并。2026年4月证券时报报道，东方富海投资项目超过700个、其中92家企业上市退出；这些均为规模或项目数据，不是基金回报率。",
+        "facts": [
+          {
+            "field": "official_name",
+            "label": "公开披露机构名称",
+            "value": "深圳市东方富海投资管理股份有限公司",
+            "source_id": "ofc_partner_overview"
+          },
+          {
+            "field": "founded_date",
+            "label": "成立时间",
+            "value": "2006年10月",
+            "source_id": "ofc_partner_overview"
+          },
+          {
+            "field": "leadership",
+            "label": "董事长（媒体采访时）",
+            "value": "陈玮",
+            "source_id": "ofc_chairman_interview_2026"
+          },
+          {
+            "field": "fund_count_and_aum",
+            "label": "远致富海官网介绍东方富海",
+            "value": "管理基金60余支，管理规模350亿元；该页为合作方远致富海官网披露。",
+            "source_id": "ofc_partner_overview"
+          },
+          {
+            "field": "fund_aum_alternative",
+            "label": "36氪机构档案当前列示规模",
+            "value": "超过214亿元人民币；与其他来源数字存在差异，未作口径合并。",
+            "source_id": "ofc_36kr_profile"
+          },
+          {
+            "field": "investment_strategy",
+            "label": "2026年1月采访披露",
+            "value": "投资金额约60%投向中早期项目；重点布局人工智能、半导体、新能源、新材料、生物医药。",
+            "source_id": "ofc_chairman_interview_2026"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2006-10",
+            "description": "远致富海官网将东方富海介绍为2006年10月成立的专业创业投资管理公司。",
+            "source_id": "ofc_partner_overview"
+          }
+        ],
         "track_record": [
+          {
+            "description": "2026年4月证券时报报道，东方富海管理规模约350亿元，累计投资超过700个项目、超过200个项目退出，其中92家企业通过上市退出；这些是报道的累计项目数据，不代表基金回报率。",
+            "source_id": "ofc_securities_times_2026"
+          },
+          {
+            "description": "远致富海官网对东方富海的介绍称其管理超过60支基金、投资项目超过600个、退出超过150个且近90家通过上市退出；这是合作方页面的披露口径，与后续媒体报道的计数时点不同。",
+            "source_id": "ofc_partner_overview"
+          },
           {
             "description": "融资来源记录：奕行智能 · 轮次未披露 · 2026-09-18 · Pre-A轮联合领投 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
             "source_id": "FISRC-afa0818eda6a6b72"
@@ -74407,8 +74559,62 @@
             "source_id": "FISRC-9d4811d701a7c9af"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "36氪机构档案列示官网（本次官网访问超时）",
+            "value": "东方富海官网",
+            "url": "http://www.ofcapital.com/",
+            "source_id": "ofc_36kr_profile"
+          },
+          {
+            "kind": "email",
+            "label": "36氪机构档案列示BP邮箱（有效性未独立确认）",
+            "value": "bp@ofcapital.com",
+            "url": "https://pitchhub.36kr.com/organization/1678207208616963",
+            "source_id": "ofc_36kr_profile"
+          },
+          {
+            "kind": "address",
+            "label": "36氪机构档案列示办公地址（现时性未独立确认）",
+            "value": "广东省深圳市福田区深南西路天安数码时代大厦A座2501",
+            "url": "https://pitchhub.36kr.com/organization/1678207208616963",
+            "source_id": "ofc_36kr_profile"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "ofc_partner_overview",
+            "source_url": "https://www.cmafsz.com/about-us",
+            "source_title": "关于我们｜深圳市远致富海投资管理有限公司",
+            "source_content_hash": "2f4d366a606fab981394cddad79ab4287ed756d2f8062187cc55974bff896dea",
+            "quote": "市场化机构 深圳市东方富海投资管理股份有限公司 东方富海成立于2006年10月，是国内知名的专业性创业投资管理公司。目前管理着超过60支基金，基金规模达350亿元人民币，公司在管基金累计投资项目超过600个，超150个退出，近90家通过上市退出。",
+            "quote_hash": "e68b8ebc08ed6b27cfffdbce731e926c592f210d0487672881119785f7d49794"
+          },
+          {
+            "source_id": "ofc_chairman_interview_2026",
+            "source_url": "https://finance.eastmoney.com/a/202601233628357844.html",
+            "source_title": "董事长专访｜东方富海董事长陈玮：专业是创投机构的生存之本｜东方财富网（来源：上海证券报）",
+            "source_content_hash": "bc7d860ba73b7977be38a56f889fa96c9ff22416988a8c8c1e5ccef38c668d4e",
+            "quote": "目前东方富海累计管理基金超60只，管理规模达到350亿元，投资金额的60%投向了中早期项目，重点布局人工智能、半导体、新能源、新材料、生物医药等领域，投资项目中超90家通过上市退出。",
+            "quote_hash": "5cdbf3259291090811300e27ec8d8e923032786ddd717ec1d047ffc4a3d27d5f"
+          },
+          {
+            "source_id": "ofc_securities_times_2026",
+            "source_url": "https://finance.sina.com.cn/jjxw/2026-04-16/doc-inhurihp8129475.shtml",
+            "source_title": "“以前赚非共识的钱，现在要赚共识的钱”｜陈玮｜证券时报",
+            "source_content_hash": "a7af6f9abf5cb0731e1700377879f8467dab1019c3a45c573a3a8c690a3d37ae",
+            "quote": "东方富海如今的基金管理规模达350亿元，投资超过700个项目，超过200个项目已退出，其中92家企业通过上市退出。",
+            "quote_hash": "3e3861f54faa389a5cf073ac7aef32d4a6f01431f2e556f602069f17cbfe591d"
+          },
+          {
+            "source_id": "ofc_36kr_profile",
+            "source_url": "https://pitchhub.36kr.com/organization/1678207208616963",
+            "source_title": "东方富海｜投资机构信息｜36氪",
+            "source_content_hash": "a320aaa02e605e8034481621e7dd507082f056e01f54f065b1bb6344812c9d9f",
+            "quote": "官网： http://www.ofcapital.com/ 电话： - 邮箱： bp@ofcapital.com 地址： 广东省深圳市福田区深南西路天安数码时代大厦A座2501",
+            "quote_hash": "0239291222ce6bf4a89d5cedb9ee2265f4eb12d85c23f5e9ab7aa2197236b8da"
+          },
           {
             "source_id": "FISRC-afa0818eda6a6b72",
             "source_url": "https://news.pedaily.cn/202210/502518.shtml",
@@ -74434,7 +74640,7 @@
             "quote_hash": "b2f9ab57aa10cd02fbe1ea158d8e74af1c4a84f96d03a457f2d3958d7ad65d81"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27"
       }
     },
     {
@@ -86708,14 +86914,79 @@
         }
       ],
       "public_profile": {
-        "profile_type": "unverified",
-        "identity_status": "pending_verification",
-        "coverage_status": "identity_unverified",
-        "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "创新工场 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched",
+        "coverage_note": "机构背景、投资方向、团队和公开联系方式来自创新工场官网。所列项目为官网公开案例或孵化项目，不代表完整投资组合或基金回报率；本次官网页面未披露机构整体基金IRR。联系方式按官网栏目标注用途，不将投资者关系邮箱称作项目投递渠道。",
+        "summary": "创新工场由李开复博士于2009年9月创立，是提供创业平台、资金支持和投后服务的科技投资机构。官网重点列出人工智能与硬科技、机器人与自动化、通用科技和医疗科技等领域，并展示其投资与孵化项目。官网当前团队页列出李开复、汪华、陶宁、杨小龙等管理成员；职位以该页面核验日期为准。",
+        "facts": [
+          {
+            "field": "founded_date",
+            "label": "创立时间",
+            "value": "2009年9月",
+            "source_id": "sinovation_home_2026"
+          },
+          {
+            "field": "founder",
+            "label": "创始人",
+            "value": "李开复",
+            "source_id": "sinovation_home_2026"
+          },
+          {
+            "field": "investment_focus",
+            "label": "官网披露重点领域",
+            "value": [
+              "人工智能与硬科技",
+              "机器人与自动化",
+              "通用科技",
+              "医疗科技"
+            ],
+            "source_id": "sinovation_home_2026"
+          },
+          {
+            "field": "platform_services",
+            "label": "官网披露服务模式",
+            "value": "创业平台、资金支持及投后服务；另提供融资/上市、财务税务、法律、人才、品牌、业务对接和CEO社群等创业服务。",
+            "source_id": "sinovation_service_2026"
+          },
+          {
+            "field": "management_snapshot",
+            "label": "官网团队页列示管理成员（页面快照）",
+            "value": [
+              "李开复：董事长/首席执行官",
+              "汪华：管理合伙人",
+              "陶宁：总裁/合伙人",
+              "杨小龙：管理合伙人"
+            ],
+            "source_id": "sinovation_team_2026"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2009-09",
+            "description": "创新工场官网称由李开复博士创立。",
+            "source_id": "sinovation_home_2026"
+          },
+          {
+            "date": "2016-09",
+            "description": "创新工场人工智能工程院成立，官网列示其研发、人才培养、孵化和科研商业转化使命。",
+            "source_id": "sinovation_ai_institute_2026"
+          },
+          {
+            "date": "2017",
+            "description": "创新工场发起DeeCamp人工智能训练营；官网称截至当前页面介绍已举办七届。",
+            "source_id": "sinovation_deecamp_2026"
+          }
+        ],
         "track_record": [
+          {
+            "description": "创新工场人工智能工程院官网列出零一万物、澜舟科技和创新奇智（2121.HK）等孵化项目；这是官网列出的示例，不代表完整组合。",
+            "source_id": "sinovation_ai_portfolio_2026"
+          },
+          {
+            "description": "创新工场官网报道创新奇智在港交所上市，并称其为“AI+制造”孵化项目；这是单个项目案例，不代表基金回报。",
+            "source_id": "sinovation_portfolio_news_2026"
+          },
           {
             "description": "融资来源记录：合木智能 · 种子轮 · 2026-09-03 · 本轮投资方 · 千万级。这是本库收录的披露案例，不代表完整投资组合。",
             "source_id": "FISRC-3c65ee6da5a2af99"
@@ -86729,8 +87000,102 @@
             "source_id": "FISRC-daccbed46498e19c"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "创新工场",
+            "url": "https://www.chuangxin.com/",
+            "source_id": "sinovation_home_2026"
+          },
+          {
+            "kind": "email",
+            "label": "官网投资人关系邮箱（不是项目投递渠道）",
+            "value": "ir@chuangxin.com",
+            "url": "https://www.chuangxin.com/contact",
+            "source_id": "sinovation_contact_ir_2026"
+          },
+          {
+            "kind": "phone",
+            "label": "官网北京办公室公开电话",
+            "value": "010-57525200",
+            "url": "https://www.chuangxin.com/contact",
+            "source_id": "sinovation_contact_phone_2026"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "sinovation_home_2026",
+            "source_url": "https://www.chuangxin.com/",
+            "source_title": "关于创新工场｜创新工场官网",
+            "source_content_hash": "6e837259fe64a1d354ab209e22b05612f053102dfebbd3e2c3027ea8e5c16565",
+            "quote": "创新工场由李开复博士创办于2009年9月，作为国内领先的技术型创业投资机构，创新工场深耕在人工智能与硬科技、机器人与自动化、通用科技、医疗科技等领域，并不断探索与创新，致力于打造集创业平台、资金支持、投后服务等的全方位生态投资服务平台。",
+            "quote_hash": "cebe6a0471e18cf172c0d0a06714f6652a6ceaa55bb700c84cae2a1582a44ca1"
+          },
+          {
+            "source_id": "sinovation_team_2026",
+            "source_url": "https://www.chuangxin.com/team",
+            "source_title": "团队介绍｜创新工场官网",
+            "source_content_hash": "d32b6effb3760107329068c5261f422b03c9a4e57b98180db9c0a1ccf649c559",
+            "quote": "投资团队 董事长/首席执行官 李开复 管理合伙人 汪华 总裁/合伙人 陶宁 管理合伙人 杨小龙 合伙人/华南区总经理 熊昊 合伙人 申文超 合伙人 张鹰 合伙人 郎春晖 合伙人 张丽君 执行董事/前沿科技基金总经理 任博冰",
+            "quote_hash": "d4cfbcb201c3d266d80e787f11d6710a0946a64828989bb987cc5a95ba415d73"
+          },
+          {
+            "source_id": "sinovation_contact_ir_2026",
+            "source_url": "https://www.chuangxin.com/contact",
+            "source_title": "联系我们｜创新工场官网",
+            "source_content_hash": "d99c85fb6683fb680cfb756e20878920c98f8627429801962eabc8b2b0b89a68",
+            "quote": "投资人关系 ir@chuangxin.com",
+            "quote_hash": "803602a631bd5b1dc41de2d26b387a488c0361a3c7373ad133834299d0efc6e6"
+          },
+          {
+            "source_id": "sinovation_contact_phone_2026",
+            "source_url": "https://www.chuangxin.com/contact",
+            "source_title": "联系我们｜创新工场官网",
+            "source_content_hash": "d99c85fb6683fb680cfb756e20878920c98f8627429801962eabc8b2b0b89a68",
+            "quote": "北京办公室 海淀区海淀大街3号鼎好DH3大厦A座20层 010-57525200",
+            "quote_hash": "9c1482d4560bb4f8d23fa13c6d3b8a4cb07024a5f7865315b557d10f663c4f1e"
+          },
+          {
+            "source_id": "sinovation_service_2026",
+            "source_url": "https://www.chuangxin.com/service",
+            "source_title": "创业服务｜创新工场官网",
+            "source_content_hash": "c73e473120e570646d4f1195d5cdfe6062af68b8a6ef8dbb120e2628e7a74557",
+            "quote": "再融资 IPO 融资/股权/上市新规研讨会 资产管理、融资及上市对接 财务税务咨询 构建完善的财务与合规培训 辅助招聘专业财务、CFO社群 法律保驾护航 每月电子报、专家律所网络 法律讲堂与培训、法务社群 人才发展 高端人才猎头资源、校园招聘 用工劳动咨询、DeeCamp训练营 品牌 CEO媒体培训营 品牌定位、融资助跑、市场社群 业务对接、国际资源 垂直行业峰会、行业资源、落地对接 国际资源介绍与对接 CEO社群 创新工场兄弟会 塔尖孵化 深度技术孵化、全面产研赋能、全链条护航科学家创业",
+            "quote_hash": "1ad72442ffe937caf6fcea70cc71ae76d3ec64180fa42841ac46b557bb9effed"
+          },
+          {
+            "source_id": "sinovation_ai_institute_2026",
+            "source_url": "https://www.chuangxin.com/ai",
+            "source_title": "人工智能工程院｜创新工场官网",
+            "source_content_hash": "2fef908c3a16bf1cad2ddab2a4bb135fe1ea9e85879f362ca1add7bf1ed34364",
+            "quote": "2016年9月，创新工场人工智能工程院成立，李开复博士亲任院长，王咏刚担任执行院长，与来自世界顶级机构的著名工程师和顶尖科学家共同探索技术、数据、人才、商业价值的结合，推进人工智能在科学研究与商业领域的实践探索，致力于打造人工智能领域的科研转化实验室。",
+            "quote_hash": "1ab61e13fbb8b90fdb28e2c58d84c7414b455b82825ffb3dbb52f0906e6b7a36"
+          },
+          {
+            "source_id": "sinovation_deecamp_2026",
+            "source_url": "https://www.chuangxin.com/ai",
+            "source_title": "人工智能工程院｜创新工场官网",
+            "source_content_hash": "2fef908c3a16bf1cad2ddab2a4bb135fe1ea9e85879f362ca1add7bf1ed34364",
+            "quote": "DeeCamp 人工智能训练营 由创新工场于 2017 年发起的大型公益人才培训项目，已举办七届，面向热爱AI技术、具备计算机基础的青年人才。",
+            "quote_hash": "d356479b888a87e028fc0cba2543f3c49033127d6ae8056b5998831ac6771ff4"
+          },
+          {
+            "source_id": "sinovation_ai_portfolio_2026",
+            "source_url": "https://www.chuangxin.com/ai",
+            "source_title": "人工智能工程院｜创新工场官网",
+            "source_content_hash": "2fef908c3a16bf1cad2ddab2a4bb135fe1ea9e85879f362ca1add7bf1ed34364",
+            "quote": "塔尖孵化项目 创新工场人工智能工程院塔尖孵化项目 零一万物 打造 AI 2.0 平台和应用的 全球公司 澜舟科技 用自然语言技术赋能商业数字化 转型的下一代认知智能 创新奇智（2121.HK） 提供企业级 AI 解决方案 聚焦”AI+制造业”",
+            "quote_hash": "1f944283e1d452fbf0d7648f04da4a01271b26583bb87be014b0b5911c23e647"
+          },
+          {
+            "source_id": "sinovation_portfolio_news_2026",
+            "source_url": "https://www.chuangxin.com/",
+            "source_title": "创新工场官网最新动态",
+            "source_content_hash": "6e837259fe64a1d354ab209e22b05612f053102dfebbd3e2c3027ea8e5c16565",
+            "quote": "恭喜创新奇智港交所上市！创新工场塔尖孵化“AI+制造”第一股",
+            "quote_hash": "e93f9838aa8941742e9bfc956a482fba3b1848fde41eb12cdd292f799191835d"
+          },
           {
             "source_id": "FISRC-3c65ee6da5a2af99",
             "source_url": "https://finance.sina.com.cn/jjxw/2026-09-03/doc-iniqpvfw6908238.shtml",
@@ -86756,7 +87121,7 @@
             "quote_hash": "8e9d10663fe3e1560634117b6891dc37bab1b356161cbcf0e51af36273fc4061"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27"
       }
     },
     {

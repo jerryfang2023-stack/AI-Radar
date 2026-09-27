@@ -242,14 +242,79 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "创新工场 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构背景、投资方向、团队和公开联系方式来自创新工场官网。所列项目为官网公开案例或孵化项目，不代表完整投资组合或基金回报率；本次官网页面未披露机构整体基金IRR。联系方式按官网栏目标注用途，不将投资者关系邮箱称作项目投递渠道。",
+      "summary": "创新工场由李开复博士于2009年9月创立，是提供创业平台、资金支持和投后服务的科技投资机构。官网重点列出人工智能与硬科技、机器人与自动化、通用科技和医疗科技等领域，并展示其投资与孵化项目。官网当前团队页列出李开复、汪华、陶宁、杨小龙等管理成员；职位以该页面核验日期为准。",
+      "facts": [
+        {
+          "field": "founded_date",
+          "label": "创立时间",
+          "value": "2009年9月",
+          "source_id": "sinovation_home_2026"
+        },
+        {
+          "field": "founder",
+          "label": "创始人",
+          "value": "李开复",
+          "source_id": "sinovation_home_2026"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露重点领域",
+          "value": [
+            "人工智能与硬科技",
+            "机器人与自动化",
+            "通用科技",
+            "医疗科技"
+          ],
+          "source_id": "sinovation_home_2026"
+        },
+        {
+          "field": "platform_services",
+          "label": "官网披露服务模式",
+          "value": "创业平台、资金支持及投后服务；另提供融资/上市、财务税务、法律、人才、品牌、业务对接和CEO社群等创业服务。",
+          "source_id": "sinovation_service_2026"
+        },
+        {
+          "field": "management_snapshot",
+          "label": "官网团队页列示管理成员（页面快照）",
+          "value": [
+            "李开复：董事长/首席执行官",
+            "汪华：管理合伙人",
+            "陶宁：总裁/合伙人",
+            "杨小龙：管理合伙人"
+          ],
+          "source_id": "sinovation_team_2026"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2009-09",
+          "description": "创新工场官网称由李开复博士创立。",
+          "source_id": "sinovation_home_2026"
+        },
+        {
+          "date": "2016-09",
+          "description": "创新工场人工智能工程院成立，官网列示其研发、人才培养、孵化和科研商业转化使命。",
+          "source_id": "sinovation_ai_institute_2026"
+        },
+        {
+          "date": "2017",
+          "description": "创新工场发起DeeCamp人工智能训练营；官网称截至当前页面介绍已举办七届。",
+          "source_id": "sinovation_deecamp_2026"
+        }
+      ],
       "track_record": [
+        {
+          "description": "创新工场人工智能工程院官网列出零一万物、澜舟科技和创新奇智（2121.HK）等孵化项目；这是官网列出的示例，不代表完整组合。",
+          "source_id": "sinovation_ai_portfolio_2026"
+        },
+        {
+          "description": "创新工场官网报道创新奇智在港交所上市，并称其为“AI+制造”孵化项目；这是单个项目案例，不代表基金回报。",
+          "source_id": "sinovation_portfolio_news_2026"
+        },
         {
           "description": "融资来源记录：合木智能 · 种子轮 · 2026-09-03 · 本轮投资方 · 千万级。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3c65ee6da5a2af99"
@@ -263,8 +328,102 @@
           "source_id": "FISRC-daccbed46498e19c"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "创新工场",
+          "url": "https://www.chuangxin.com/",
+          "source_id": "sinovation_home_2026"
+        },
+        {
+          "kind": "email",
+          "label": "官网投资人关系邮箱（不是项目投递渠道）",
+          "value": "ir@chuangxin.com",
+          "url": "https://www.chuangxin.com/contact",
+          "source_id": "sinovation_contact_ir_2026"
+        },
+        {
+          "kind": "phone",
+          "label": "官网北京办公室公开电话",
+          "value": "010-57525200",
+          "url": "https://www.chuangxin.com/contact",
+          "source_id": "sinovation_contact_phone_2026"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "sinovation_home_2026",
+          "source_url": "https://www.chuangxin.com/",
+          "source_title": "关于创新工场｜创新工场官网",
+          "source_content_hash": "6e837259fe64a1d354ab209e22b05612f053102dfebbd3e2c3027ea8e5c16565",
+          "quote": "创新工场由李开复博士创办于2009年9月，作为国内领先的技术型创业投资机构，创新工场深耕在人工智能与硬科技、机器人与自动化、通用科技、医疗科技等领域，并不断探索与创新，致力于打造集创业平台、资金支持、投后服务等的全方位生态投资服务平台。",
+          "quote_hash": "cebe6a0471e18cf172c0d0a06714f6652a6ceaa55bb700c84cae2a1582a44ca1"
+        },
+        {
+          "source_id": "sinovation_team_2026",
+          "source_url": "https://www.chuangxin.com/team",
+          "source_title": "团队介绍｜创新工场官网",
+          "source_content_hash": "d32b6effb3760107329068c5261f422b03c9a4e57b98180db9c0a1ccf649c559",
+          "quote": "投资团队 董事长/首席执行官 李开复 管理合伙人 汪华 总裁/合伙人 陶宁 管理合伙人 杨小龙 合伙人/华南区总经理 熊昊 合伙人 申文超 合伙人 张鹰 合伙人 郎春晖 合伙人 张丽君 执行董事/前沿科技基金总经理 任博冰",
+          "quote_hash": "d4cfbcb201c3d266d80e787f11d6710a0946a64828989bb987cc5a95ba415d73"
+        },
+        {
+          "source_id": "sinovation_contact_ir_2026",
+          "source_url": "https://www.chuangxin.com/contact",
+          "source_title": "联系我们｜创新工场官网",
+          "source_content_hash": "d99c85fb6683fb680cfb756e20878920c98f8627429801962eabc8b2b0b89a68",
+          "quote": "投资人关系 ir@chuangxin.com",
+          "quote_hash": "803602a631bd5b1dc41de2d26b387a488c0361a3c7373ad133834299d0efc6e6"
+        },
+        {
+          "source_id": "sinovation_contact_phone_2026",
+          "source_url": "https://www.chuangxin.com/contact",
+          "source_title": "联系我们｜创新工场官网",
+          "source_content_hash": "d99c85fb6683fb680cfb756e20878920c98f8627429801962eabc8b2b0b89a68",
+          "quote": "北京办公室 海淀区海淀大街3号鼎好DH3大厦A座20层 010-57525200",
+          "quote_hash": "9c1482d4560bb4f8d23fa13c6d3b8a4cb07024a5f7865315b557d10f663c4f1e"
+        },
+        {
+          "source_id": "sinovation_service_2026",
+          "source_url": "https://www.chuangxin.com/service",
+          "source_title": "创业服务｜创新工场官网",
+          "source_content_hash": "c73e473120e570646d4f1195d5cdfe6062af68b8a6ef8dbb120e2628e7a74557",
+          "quote": "再融资 IPO 融资/股权/上市新规研讨会 资产管理、融资及上市对接 财务税务咨询 构建完善的财务与合规培训 辅助招聘专业财务、CFO社群 法律保驾护航 每月电子报、专家律所网络 法律讲堂与培训、法务社群 人才发展 高端人才猎头资源、校园招聘 用工劳动咨询、DeeCamp训练营 品牌 CEO媒体培训营 品牌定位、融资助跑、市场社群 业务对接、国际资源 垂直行业峰会、行业资源、落地对接 国际资源介绍与对接 CEO社群 创新工场兄弟会 塔尖孵化 深度技术孵化、全面产研赋能、全链条护航科学家创业",
+          "quote_hash": "1ad72442ffe937caf6fcea70cc71ae76d3ec64180fa42841ac46b557bb9effed"
+        },
+        {
+          "source_id": "sinovation_ai_institute_2026",
+          "source_url": "https://www.chuangxin.com/ai",
+          "source_title": "人工智能工程院｜创新工场官网",
+          "source_content_hash": "2fef908c3a16bf1cad2ddab2a4bb135fe1ea9e85879f362ca1add7bf1ed34364",
+          "quote": "2016年9月，创新工场人工智能工程院成立，李开复博士亲任院长，王咏刚担任执行院长，与来自世界顶级机构的著名工程师和顶尖科学家共同探索技术、数据、人才、商业价值的结合，推进人工智能在科学研究与商业领域的实践探索，致力于打造人工智能领域的科研转化实验室。",
+          "quote_hash": "1ab61e13fbb8b90fdb28e2c58d84c7414b455b82825ffb3dbb52f0906e6b7a36"
+        },
+        {
+          "source_id": "sinovation_deecamp_2026",
+          "source_url": "https://www.chuangxin.com/ai",
+          "source_title": "人工智能工程院｜创新工场官网",
+          "source_content_hash": "2fef908c3a16bf1cad2ddab2a4bb135fe1ea9e85879f362ca1add7bf1ed34364",
+          "quote": "DeeCamp 人工智能训练营 由创新工场于 2017 年发起的大型公益人才培训项目，已举办七届，面向热爱AI技术、具备计算机基础的青年人才。",
+          "quote_hash": "d356479b888a87e028fc0cba2543f3c49033127d6ae8056b5998831ac6771ff4"
+        },
+        {
+          "source_id": "sinovation_ai_portfolio_2026",
+          "source_url": "https://www.chuangxin.com/ai",
+          "source_title": "人工智能工程院｜创新工场官网",
+          "source_content_hash": "2fef908c3a16bf1cad2ddab2a4bb135fe1ea9e85879f362ca1add7bf1ed34364",
+          "quote": "塔尖孵化项目 创新工场人工智能工程院塔尖孵化项目 零一万物 打造 AI 2.0 平台和应用的 全球公司 澜舟科技 用自然语言技术赋能商业数字化 转型的下一代认知智能 创新奇智（2121.HK） 提供企业级 AI 解决方案 聚焦”AI+制造业”",
+          "quote_hash": "1f944283e1d452fbf0d7648f04da4a01271b26583bb87be014b0b5911c23e647"
+        },
+        {
+          "source_id": "sinovation_portfolio_news_2026",
+          "source_url": "https://www.chuangxin.com/",
+          "source_title": "创新工场官网最新动态",
+          "source_content_hash": "6e837259fe64a1d354ab209e22b05612f053102dfebbd3e2c3027ea8e5c16565",
+          "quote": "恭喜创新奇智港交所上市！创新工场塔尖孵化“AI+制造”第一股",
+          "quote_hash": "e93f9838aa8941742e9bfc956a482fba3b1848fde41eb12cdd292f799191835d"
+        },
         {
           "source_id": "FISRC-3c65ee6da5a2af99",
           "source_url": "https://finance.sina.com.cn/jjxw/2026-09-03/doc-iniqpvfw6908238.shtml",
@@ -290,7 +449,7 @@
           "quote_hash": "8e9d10663fe3e1560634117b6891dc37bab1b356161cbcf0e51af36273fc4061"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }
