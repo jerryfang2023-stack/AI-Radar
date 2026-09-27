@@ -33150,20 +33150,121 @@
     },
     "INV-5a6158590d6dd6": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "上海沿浦精工科技(集团)股份有限公司 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "根据上海证券交易所披露的2025年年度报告及公开融资披露整理。经营与专利数字均注明对应报告期；投资案例不代表公司完整投资组合或投资回报。",
+      "summary": "上海沿浦精工科技（集团）股份有限公司（英文名：Shanghai Yanpu Precision Technology (Group) Co., Ltd.）是上海证券交易所上市的汽车零部件企业，主营汽车座椅零部件研发、生产与销售，重点能力覆盖座椅骨架、精密冲压和模具开发。公司年报还披露其向汽车整椅、高铁整椅及机器人核心零部件方向拓展。",
+      "facts": [
+        {
+          "field": "founded_date",
+          "label": "有限公司成立日期",
+          "value": "1999-04-19",
+          "source_id": "yanpu_ar_2025"
+        },
+        {
+          "field": "listed_security",
+          "label": "上市信息",
+          "value": "上海证券交易所 A 股，股票代码 605128；上市日期 2020-09-15",
+          "source_id": "yanpu_ar_2025"
+        },
+        {
+          "field": "principal_business",
+          "label": "主营业务",
+          "value": "汽车座椅零部件的研发、生产与销售",
+          "source_id": "yanpu_ar_2025"
+        },
+        {
+          "field": "products_and_capabilities",
+          "label": "产品与技术能力",
+          "value": [
+            "汽车座椅骨架及零部件",
+            "座椅功能件",
+            "精密冲压与成型",
+            "模具及工装开发",
+            "机器人焊接和自动化制造"
+          ],
+          "source_id": "yanpu_ar_2025"
+        },
+        {
+          "field": "business_expansion",
+          "label": "年报披露的拓展方向",
+          "value": [
+            "汽车整椅",
+            "高铁整椅",
+            "机器人核心零部件"
+          ],
+          "source_id": "yanpu_ar_2025"
+        },
+        {
+          "field": "technical_team",
+          "label": "研发与工程团队",
+          "value": "公司在2025年年报中称团队近200人；该数字为公司披露口径",
+          "source_id": "yanpu_ar_2025"
+        },
+        {
+          "field": "patents_as_of_2025_12_31",
+          "label": "专利（截至2025-12-31）",
+          "value": "公司及子公司合计121项实用新型专利、6项发明专利",
+          "source_id": "yanpu_ar_2025"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1999-04-19",
+          "description": "公司年报记载的有限公司成立日。",
+          "source_id": "yanpu_ar_2025"
+        },
+        {
+          "date": "2020-09-15",
+          "description": "上海证券交易所 A 股上市。",
+          "source_id": "yanpu_ar_2025"
+        }
+      ],
       "track_record": [
+        {
+          "description": "2025年度公司披露营业收入约24.19亿元、归属于母公司股东的净利润约1.88亿元、经营活动现金流量净额约3.77亿元；分别同比增长6.28%、36.93%和48.99%。以上是年报口径，不代表未来业绩。",
+          "source_id": "yanpu_ar_2025"
+        },
         {
           "description": "融资来源记录：驰芯半导体 · A+轮 · 2026-09-23 · 本轮领投 · 亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-adff65727174a119"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "公司官网",
+          "value": "Shanghai Yanpu Precision Technology (Group) Co., Ltd.",
+          "url": "https://www.shyanpu.com/",
+          "source_id": "yanpu_ar_2025"
+        },
+        {
+          "kind": "phone",
+          "label": "董事会秘书及证券事务联系（年报披露）",
+          "value": "021-64918973 转 8101",
+          "source_id": "yanpu_ar_2025"
+        },
+        {
+          "kind": "email",
+          "label": "投资者关系 / 董事会秘书联系邮箱",
+          "value": "ypgf@shyanpu.com",
+          "source_id": "yanpu_ar_2025"
+        },
+        {
+          "kind": "address",
+          "label": "注册及办公地址（年报披露）",
+          "value": "上海市闵行区浦江镇江凯路128号",
+          "source_id": "yanpu_ar_2025"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "yanpu_ar_2025",
+          "source_url": "https://big5.sse.com.cn/site/cht/www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-04-17/605128_20260417_L5W2.pdf",
+          "source_title": "上海沿浦精工科技（集团）股份有限公司2025年年度报告",
+          "source_content_hash": "c4eb8d9b2781e774416b0c7f301a138f418933db5152ff794918eedfa8b93c78",
+          "quote": "公司主营业务为汽车座椅零部件的研发、生产与销售。",
+          "quote_hash": "04af3f7618cf37335bc430de33243baf76a5101d1765fe3831f526a90e73c8e8"
+        },
         {
           "source_id": "FISRC-adff65727174a119",
           "source_url": "https://news.pedaily.cn/202609/569521.shtml",
@@ -33173,7 +33274,8 @@
           "quote_hash": "64dd659d75a0fcc73ae2de4248c5fa6dc637e45b0d61c514261418271abfaa20"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "identity_status": "verified"
     },
     "INV-8101f69e2277ff": {
       "profile_type": "organization",
@@ -94339,20 +94441,144 @@
     },
     "INV-3aa8a408059cca": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "深圳高性能医疗器械国家研究院有限公司 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-31；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "档案主体为深圳高性能医疗器械国家研究院有限公司。其官网招聘资料说明该公司是国家高性能医疗器械创新中心的企业化运营主体；中心品牌与运营公司是相关但不同的名称。技术成果为中心官网自述。",
+      "summary": "深圳高性能医疗器械国家研究院有限公司是国家高性能医疗器械创新中心的企业化运营主体。该中心于2020年4月获工业和信息化部批复建设，围绕高端医学影像、体外诊断、先进治疗、医用材料与植介入器械、康复与健康信息开展共性技术研发和成果转化，并建立研发、检测、中试、工程转化及设备共享等平台。官方招聘资料列出的股东包括中科院深圳先进技术研究院、迈瑞、联影、先健科技、哈尔滨工业大学和中国医学装备协会。",
+      "facts": [
+        {
+          "field": "operating_entity_for",
+          "label": "运营关系",
+          "value": "国家高性能医疗器械创新中心；中心官网招聘资料说明由本公司实行企业化运营",
+          "source_id": "nmed_center_operation"
+        },
+        {
+          "field": "center_approval",
+          "label": "创新中心批复建设时间",
+          "value": "2020年4月，工业和信息化部批复建设",
+          "source_id": "nmed_center_about"
+        },
+        {
+          "field": "shareholders_listed_by_center",
+          "label": "官网招聘资料列出的股东",
+          "value": [
+            "中国科学院深圳先进技术研究院",
+            "深圳迈瑞生物医疗电子股份有限公司",
+            "上海联影医疗科技股份有限公司",
+            "先健科技（深圳）有限公司",
+            "哈尔滨工业大学",
+            "中国医学装备协会"
+          ],
+          "source_id": "nmed_center_operation"
+        },
+        {
+          "field": "focus_areas",
+          "label": "重点技术方向",
+          "value": [
+            "高端医学影像",
+            "体外诊断与生命体征监测",
+            "先进治疗",
+            "医用材料与植介入器械",
+            "康复与健康信息"
+          ],
+          "source_id": "nmed_center_about"
+        },
+        {
+          "field": "innovation_platforms",
+          "label": "创新与产业服务平台",
+          "value": [
+            "关键共性技术研发",
+            "检验测试",
+            "中试",
+            "工程转化及生产制造",
+            "设备共享",
+            "CRO综合服务",
+            "CDMO定制生产",
+            "投资孵化与资本运作"
+          ],
+          "source_id": "nmed_center_operation"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2020-04",
+          "description": "国家高性能医疗器械创新中心获工业和信息化部批复建设。",
+          "source_id": "nmed_center_about"
+        }
+      ],
       "track_record": [
+        {
+          "description": "创新中心官网招聘资料自述，中心研制了首个国产自主知识产权 ECMO 设备及耗材套包，并研发全球首台5.0T人体全身医学磁共振成像系统；此处按机构公开自述记录，未视作独立认证结论。",
+          "source_id": "nmed_center_operation"
+        },
         {
           "description": "融资来源记录：神奕科技 · 天使轮 · 2026-08-31 · 创始股东 · 超千万元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-20e8d24368075c32"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "国家高性能医疗器械创新中心官网",
+          "value": "nmed.org.cn",
+          "url": "https://www.nmed.org.cn/",
+          "source_id": "nmed_center_about"
+        },
+        {
+          "kind": "phone",
+          "label": "中心联系电话",
+          "value": "0755-26920180",
+          "source_id": "nmed_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "中心传真",
+          "value": "0755-28194192",
+          "source_id": "nmed_contact"
+        },
+        {
+          "kind": "address",
+          "label": "研发平台",
+          "value": "深圳市龙华区汇德大厦38–41层（深圳北站附近）",
+          "source_id": "nmed_contact"
+        },
+        {
+          "kind": "address",
+          "label": "中试平台",
+          "value": "深圳市龙华区观澜街道新澜社区观光路1301-76号银星智界二期1号楼A101",
+          "source_id": "nmed_contact"
+        },
+        {
+          "kind": "address",
+          "label": "协同平台",
+          "value": "深圳市南山区西丽深圳大学城学苑大道1068号（中科院深圳先进院）",
+          "source_id": "nmed_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "nmed_center_about",
+          "source_url": "https://www.nmed.org.cn/Content/gyzx/zxjj/index.html",
+          "source_title": "中心简介 - 国家高性能医疗器械创新中心",
+          "source_content_hash": "9c1f516aa50396789b604833b68af56be42738abf065bfeb60e6af0811cab971",
+          "quote": "于2020年4月获工业和信息化部批复建设",
+          "quote_hash": "2eee0150e8f446ffda510e09d4a13090a0166e8e02b770c47622a1e98c096997"
+        },
+        {
+          "source_id": "nmed_center_operation",
+          "source_url": "https://www.nmed.org.cn/Content/jrwm/zpxx/kyxl/2024-03/146998.html",
+          "source_title": "国家高性能医疗器械创新中心招聘简章 - 国家高性能医疗器械创新中心",
+          "source_content_hash": "05a62601f83b6ab8a3825880a8fb3000918cc7407e562d505e6f9ee2c6b54658",
+          "quote": "实行企业化运营",
+          "quote_hash": "b8d9b2e005e9d391bb8a60ff298c7b47db1ad1c2fb9a08a265195f5737e3f3ea"
+        },
+        {
+          "source_id": "nmed_contact",
+          "source_url": "https://www.nmed.org.cn/Content/jrwm/lxwm/index.html",
+          "source_title": "联系我们 - 国家高性能医疗器械创新中心",
+          "source_content_hash": "6718b024910b113191d2f56ef6c7ded6ca6c23eca71ee54e47dc4adfc340730f",
+          "quote": "联系电话：0755-26920180",
+          "quote_hash": "b4ce9c683ee04a5b73da83419138c2059ac193732dab6a4ddb7dca7b19edcdb8"
+        },
         {
           "source_id": "FISRC-20e8d24368075c32",
           "source_url": "https://eu.36kr.com/zh/p/3963142866369923",
@@ -94362,7 +94588,8 @@
           "quote_hash": "1e9ee052ac696e57ad0af35e617ef0377c86265661c7e8d9f3163d83e84f7d62"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "identity_status": "verified"
     },
     "INV-7f626d8f9a48cd": {
       "profile_type": "organization",
@@ -110808,20 +111035,123 @@
     },
     "INV-a76fddcbe44ba3": {
       "profile_type": "person",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Bob Young 当前按“个人投资者”收录。最新融资披露记录日期为 2023-12-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "根据 Red Hat 官方历史与新闻稿、Lulu 公司简介、Hamilton Tiger-Cats 人物介绍及 Liquid AI 融资公告整理。Red Hat 两则官方历史资料对公司成立年份的表述不一，因此不将单一年份写成无争议事实；Tiger-Cats 的球队所有权资料为2017年简介，未据此断言当前职务。",
+      "summary": "Bob Young 是科技创业者和个人投资者，曾创办计算机租赁业务，与 Marc Ewing 联合创办 Red Hat 并担任 CEO，之后创办自助出版平台 Lulu。Lulu 官网称他为公司创办人；Red Hat 的历史资料记载其在创办期担任 CEO，并称其任职至1999年。2017年 Hamilton Tiger-Cats 人物简介记载他曾在安大略从事14年电脑硬件租赁，并于1976年毕业于多伦多大学（未列明学位）。Liquid AI 的2023年种子轮公告将他列为投资人，但未披露其个人投资金额。",
+      "current_roles": [],
+      "career": [
+        {
+          "organization": "Hamilton Rentals / Vernon Computer Rentals and Sales",
+          "title": "创办并经营电脑硬件租赁业务",
+          "period": "迁居美国前；球队人物简介称其在该行业从业14年，未列具体年份",
+          "description": "Hamilton Tiger-Cats 2017年人物简介记载其在安大略电脑硬件租赁行业的经历及所创企业。",
+          "source_id": "bob_ticats_bio"
+        },
+        {
+          "organization": "Red Hat",
+          "title": "联合创办人、CEO",
+          "period": "1995年公司历史所记载的成立期；后续任职年份见另列公司新闻稿",
+          "description": "Red Hat 官方品牌历史记载 Red Hat Software 于1995年成立，并由 Young 担任 CEO。",
+          "source_id": "bob_redhat_history"
+        },
+        {
+          "organization": "Red Hat",
+          "title": "前任公司高管",
+          "period": "至1999年（Red Hat 2005年新闻稿口径）",
+          "description": "Red Hat 2005年新闻稿称 Young 任公司高管至1999年，并将公司创办年份记为1993年；Red Hat 官方品牌历史将 Red Hat Software 成立年份记为1995年，因此公司创立年份存在官方来源差异。",
+          "source_id": "bob_redhat_release"
+        },
+        {
+          "organization": "Lulu Press / Lulu",
+          "title": "创办人",
+          "period": "Red Hat 1999年IPO之后；Lulu官网未列确切创办年份",
+          "description": "Lulu 官方公司介绍将 Bob Young 称为创办人，并以其 Red Hat 经历作为公司起源背景。",
+          "source_id": "bob_lulu_about"
+        },
+        {
+          "organization": "Center for the Public Domain",
+          "title": "创办人",
+          "period": "1999年",
+          "description": "Hamilton Tiger-Cats 人物简介列出其在1999年创办该机构。",
+          "source_id": "bob_ticats_bio"
+        },
+        {
+          "organization": "Hamilton Tiger-Cats",
+          "title": "Owner and Caretaker（球队所有者及管理人）",
+          "period": "球队于2003年介绍其接任；当前任职情况未由本次核对的近期来源确认",
+          "description": "该协会来自 Hamilton Tiger-Cats 的2017年人物简介，仅作为历史职业关联记录。",
+          "source_id": "bob_ticats_bio"
+        },
+        {
+          "organization": "Canadian Premier League",
+          "title": "创始合作伙伴",
+          "period": "具体年份未披露",
+          "description": "Hamilton Tiger-Cats 人物简介将其列为 Canadian Premier League 的创始合作伙伴。",
+          "source_id": "bob_ticats_bio"
+        }
+      ],
+      "education": [
+        {
+          "institution": "University of Toronto",
+          "qualification": "1976年毕业；资料未说明学位或专业",
+          "source_id": "bob_ticats_bio"
+        }
+      ],
+      "experience_summary": "职业背景横跨电脑硬件租赁、开源企业软件、线上自助出版和体育组织。Red Hat 的官方资料支持其联合创办人及 CEO 经历；Lulu 官网确认其创办人身份。其公开融资关联包括 Liquid AI 的2023年种子轮，个人出资规模和回报未披露。",
       "track_record": [
+        {
+          "description": "Liquid AI 2023年种子轮公告将 Bob Young 列为投资人；公司公告与同期报道未披露其个人投资金额、持股比例或投资回报。",
+          "source_id": "bob_liquid_seed"
+        },
         {
           "description": "融资来源记录：Liquid AI · 种子轮 · 2023-12-06 · 天使投资人 · 3750万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d1080395d67df2c7"
         }
       ],
+      "facts": [],
+      "milestones": [],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "bob_redhat_release",
+          "source_url": "https://www.redhat.com/en/about/press-releases/young",
+          "source_title": "Bob Young to Resign From Red Hat Board - Red Hat",
+          "source_content_hash": "93514b56dcf48a2cd72e3e0916381e451285835dcf0204d5ba9d43e27f44c75a",
+          "quote": "Young, who founded the company in 1993, served as an executive at Red Hat until 1999.",
+          "quote_hash": "2f1f96c69753011ea31e573776866f2b9b3e21085e51c712188baad3c00cb18e"
+        },
+        {
+          "source_id": "bob_redhat_history",
+          "source_url": "https://www.redhat.com/zh-cn/about/brand/standards/history",
+          "source_title": "红帽的发展历史 - 红帽",
+          "source_content_hash": "2dbd45ce09dcac671daeb189aeabbf615ce8f5276822658c4a6ef726a557a36f",
+          "quote": "1995 年红帽软件公司成立，Young 任首席执行官。",
+          "quote_hash": "b694497580bdee65d1d35e00c8fe04eccaf35b15f8f7a238c6507d58856b6a8a"
+        },
+        {
+          "source_id": "bob_ticats_bio",
+          "source_url": "https://cdn.ticats.ca/app/uploads/ticats/2019/06/26143200/Bob-Young-bio.pdf",
+          "source_title": "Bob Young Biography - Hamilton Tiger-Cats (2017 team profile)",
+          "source_content_hash": "96432316543e111d0d928b19baac01c8a416be056a87b45e6a6f7b6df57abd1d",
+          "quote": "He graduated from the University of Toronto in 1976.",
+          "quote_hash": "ee86fdcf3c7bf95aa1b0ebf58d033563b99bf1450b4a278a6ccfa217c61c63b6"
+        },
+        {
+          "source_id": "bob_lulu_about",
+          "source_url": "https://www.lulu.com/about-us",
+          "source_title": "Lulu’s Company Profile & Mission - Lulu",
+          "source_content_hash": "b0d3aca61286ca82d916ba5544ce2fc31ce85bafc7e9692a1f6039445aeaac8c",
+          "quote": "our founder, Bob Young",
+          "quote_hash": "84ee5a507d11537dbef61282225ac2df17ccc79aeff33ef977b0453670f29ac2"
+        },
+        {
+          "source_id": "bob_liquid_seed",
+          "source_url": "https://www.liquid.ai/blog/new-generation-of-ai-models-from-first-principles",
+          "source_title": "Liquid AI: A New Generation of AI Models from First Principles",
+          "source_content_hash": "8e76c388a9b54a89feca9c5a4c23e690115a3fbf4fc137f92c1f8400785da861",
+          "quote": "Bob Young (Red Hat Co-founder)",
+          "quote_hash": "564e2483f99341a82e7612b637b04bc018aee4e88188cb42627136e8a6066cd6"
+        },
         {
           "source_id": "FISRC-d1080395d67df2c7",
           "source_url": "https://techcrunch.com/2023/12/06/liquid-ai-a-new-mit-spinoff-wants-to-build-an-entirely-new-type-of-ai/",
@@ -110831,7 +111161,8 @@
           "quote_hash": "40059774cffd29c59b680e0aa7c30000415ef845fec66fd80a9e6df1cb732aa8"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "identity_status": "verified"
     },
     "INV-b405f1087982e4": {
       "profile_type": "person",
