@@ -39389,19 +39389,141 @@
     "INV-9f7235951c15de": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "EQT旗下Scaleup Europe Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-28",
+      "coverage_note": "Scaleup Europe Fund’s €5 billion is a target, not a final close or current assets-under-management figure; the European Commission’s €1 billion is its disclosed contribution. The fund is managed by EQT, while other public and private investors participate as investors. EUCLYD’s September 2026 announcement reports a €200 million-plus company-wide Series A co-led by the fund; the fund’s individual commitment was not disclosed. EQT’s fund page describes the mandate and target but does not disclose an operating balance or individual investments.",
+      "summary": "Scaleup Europe Fund is a European growth and late-stage technology fund managed by EQT and backed by the European Commission and institutional investors. It targets €5 billion and focuses on strategic technologies from Series B through pre-IPO. In September 2026, EUCLYD announced a €200 million-plus Series A co-led by the fund; no individual commitment was disclosed.",
+      "facts": [
         {
-          "description": "融资来源记录：Euclyd · A轮 · 2026-09-15 · 本轮联合领投 · 2亿欧元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-6cbfc1ea08a48a66"
+          "field": "fund_manager",
+          "label": "Fund manager",
+          "value": "EQT manages the Scaleup Europe Fund after being selected by the European Innovation Council Fund Board.",
+          "source_id": "eic_scaleup_manager_2026"
+        },
+        {
+          "field": "target_size",
+          "label": "Target fund size",
+          "value": "The fund targets €5 billion. This is a target, not a confirmed final close or current assets under management.",
+          "source_id": "eqt_scaleup_fund_2026"
+        },
+        {
+          "field": "european_commission_commitment",
+          "label": "European Commission contribution",
+          "value": "The European Commission disclosed a €1 billion contribution to the fund.",
+          "source_id": "eic_scaleup_ec_commitment_2026"
+        },
+        {
+          "field": "investment_stage",
+          "label": "Investment stage and size",
+          "value": "Growth and late-stage investments, generally from Series B through pre-IPO; EIC materials describe investments of €100 million and above, including follow-ons.",
+          "source_id": "eqt_scaleup_fund_2026"
+        },
+        {
+          "field": "sector_focus",
+          "label": "Strategic technology focus",
+          "value": "AI, quantum technologies, robotics, clean energy, space, biotechnology, advanced industrial systems and related strategic technology areas.",
+          "source_id": "eqt_scaleup_fund_2026"
+        },
+        {
+          "field": "founding_investors",
+          "label": "Founding investors named by EQT",
+          "value": "European Commission, Novo Holdings, Allianz, APG, EIFO, CriteriaCaixa, Santander/Mouro Capital, Fondazione Compagnia San Paolo, Intesa Sanpaolo and Fondazione Cariplo.",
+          "source_id": "eqt_scaleup_founders_2026"
+        },
+        {
+          "field": "investment_independence",
+          "label": "Investment governance",
+          "value": "EQT describes the fund manager as market-based and independent; investment decisions are made by EQT on commercial and merit-based grounds.",
+          "source_id": "eic_scaleup_manager_2026"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2026-06-03",
+          "description": "The fund and EQT as its manager were publicly presented at the European Innovation Council Summit.",
+          "source_id": "eic_scaleup_manager_2026"
+        },
+        {
+          "date": "2026-09-15",
+          "description": "EUCLYD announced a €200 million-plus Series A co-led by Scaleup Europe Fund, which it identified as managed by EQT.",
+          "source_id": "euclyd_scaleup_investment_2026"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "EUCLYD Series A (September 2026): the company announced more than €200 million in total financing, co-led by Samsung, Somerset Capital Partners, Scaleup Europe Fund and Innovation Industries. The fund’s individual contribution was not disclosed.",
+          "source_id": "FISRC-6cbfc1ea08a48a66"
+        },
+        {
+          "description": "Euclyd’s primary announcement independently identifies Scaleup Europe Fund as an EQT-managed co-lead in the same company-wide round; the disclosed total is not the fund’s individual investment amount.",
+          "source_id": "euclyd_scaleup_investment_2026"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Official fund website",
+          "value": "Scaleup Europe Fund",
+          "url": "https://scaleupeuropefund.eu",
+          "source_id": "eqt_scaleup_fund_2026"
+        },
+        {
+          "kind": "website",
+          "label": "European Commission fund information",
+          "value": "European Innovation Council",
+          "url": "https://eic.ec.europa.eu/eic-fund/scaleup-europe-fund_en",
+          "source_id": "eic_scaleup_manager_2026"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "eqt_scaleup_fund_2026",
+          "source_url": "https://eqtgroup.com/about/scaleup-europe",
+          "source_title": "Scaleup Europe Fund",
+          "source_content_hash": "0308d5d7501a8422da9377ffaef49bc62a9068ece25eeddc67d80bb08d173919",
+          "quote": "Scaleup Europe Fund is targeting €5bn to support Europe’s most promising technology companies from Series B through to pre-IPO. Investments will focus on strategic sectors including AI applications, deep AI, quantum, robotics, clean energy, space, biotech, advanced industrial systems and beyond.",
+          "quote_hash": "3e47fb47b6b60a59a7397437bc35c3808ffc4068bd3482de3d6fe13f18c2c899"
+        },
+        {
+          "source_id": "eqt_scaleup_founders_2026",
+          "source_url": "https://eqtgroup.com/about/scaleup-europe",
+          "source_title": "Scaleup Europe Fund",
+          "source_content_hash": "0308d5d7501a8422da9377ffaef49bc62a9068ece25eeddc67d80bb08d173919",
+          "quote": "Founded by the European Commission, alongside Novo Holdings, Allianz, APG, EIFO, CriteriaCaixa, Santander/Mouro Capital, Fondazione Compagnia San Paolo, Intesa Sanpaolo and Fondazione Cariplo.",
+          "quote_hash": "a0b468120e458d4c36b75a97ccca30865b885b999e54b0e36052aec29cf392e5"
+        },
+        {
+          "source_id": "eic_scaleup_manager_2026",
+          "source_url": "https://eic.ec.europa.eu/eic-fund/scaleup-europe-fund_en",
+          "source_title": "Scaleup Europe Fund - European Innovation Council - European Commission",
+          "source_content_hash": "b9091cd70101a0eb71294fd7f909a5cf54a487395a860644c554e0afd2bb0173",
+          "quote": "EQT was selected as preferred Fund Manager following a competitive public call for expressions of interest.",
+          "quote_hash": "cb25e1b493ec28d66cc86d1c3e816b7f245ed1d1f5a100ab3b2974189ec10b24"
+        },
+        {
+          "source_id": "eic_scaleup_ec_commitment_2026",
+          "source_url": "https://eic.ec.europa.eu/eic-fund/scaleup-europe-fund_en",
+          "source_title": "Scaleup Europe Fund - European Innovation Council - European Commission",
+          "source_content_hash": "b9091cd70101a0eb71294fd7f909a5cf54a487395a860644c554e0afd2bb0173",
+          "quote": "The European Commission has committed to contribute EUR 1 billion to the fund.",
+          "quote_hash": "2882b675e3d679e0e2c07869db15995a3eb9560c5ad297991b6d8e84dc20b457"
+        },
+        {
+          "source_id": "euclyd_scaleup_investment_2026",
+          "source_url": "https://www.euclyd.ai/press-release",
+          "source_title": "EUCLYD Raises Over €200 Million to Break the AI Efficiency Wall | Euclyd",
+          "source_content_hash": "29dfe4ae495f94bc02f788ebdee84beba5daee5f47f85932a99a009e3d46039a",
+          "quote": "The round is co-led by Samsung, Somerset Capital Partners, Scaleup Europe Fund, which is managed by EQT, and Innovation Industries, with participation from EIFO, the Export and Investment Fund of Denmark, imec.xpand, Brabant Development Agency (BOM), and Quadri.",
+          "quote_hash": "05a5ddda53f3c58079b2f76b9de5bf14af82e3d55243067cdd1edb706a79e2a9"
+        },
+        {
+          "source_id": "euclyd_scaleup_fund_background_2026",
+          "source_url": "https://www.euclyd.ai/press-release",
+          "source_title": "EUCLYD Raises Over €200 Million to Break the AI Efficiency Wall | Euclyd",
+          "source_content_hash": "29dfe4ae495f94bc02f788ebdee84beba5daee5f47f85932a99a009e3d46039a",
+          "quote": "The Scaleup Europe Fund, managed by EQT, is a commercially driven alternative investment fund backing ambitious European technology companies with the potential to become global leaders. Targeting €5 billion, the Fund brings together public and private capital and invests across Deeptech, AI and Life Sciences.",
+          "quote_hash": "e6a89c8e0a5a28e22edebf711cc2e9b4efddf34dd83362f35c00dce287e0b742"
+        },
         {
           "source_id": "FISRC-6cbfc1ea08a48a66",
           "source_url": "https://www.cls.cn/detail/2484090",
@@ -39410,8 +39532,7 @@
           "quote": "三星、Somerset Capital Partners、EQT旗下Scaleup Europe Fund以及Innovation Industries共同领投",
           "quote_hash": "05040103b8eb124e57e50a7a08bd5189f9de6a169757e0c2708bfb3ebf04d7f2"
         }
-      ],
-      "last_verified_at": "2026-09-26"
+      ]
     },
     "INV-c514b4f4bb70e3": {
       "profile_type": "organization",
@@ -41839,19 +41960,220 @@
     "INV-995a482db2eac9": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Keen Venture Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-28",
+      "coverage_note": "Keen’s current website describes its areas of interest, team and selected portfolio; it does not disclose a current fund size in the reviewed pages. The €6 million Cato amount is the company’s total seed round led by Keen, not Keen’s individual contribution. Cato’s official announcement says total funding since founding was €7.6 million. Listed office addresses and the pitch-submission form come from Keen’s public contact page.",
+      "summary": "Keen Venture Partners is a Europe-focused venture capital firm backing early-stage technology companies, with current themes in AI for small and medium-sized businesses and defence and security. The firm describes its approach as investing time and support alongside capital. In September 2026, it led Cato’s €6 million seed round for AI software serving public-sector sales.",
+      "facts": [
         {
-          "description": "融资来源记录：Cato · 种子轮 · 2026-09-07 · 本轮领投 · €6 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-495f39954954d0bc"
+          "field": "investment_geography",
+          "label": "Geography",
+          "value": "Backs technology founders across Europe.",
+          "source_id": "keen_focus_2026"
+        },
+        {
+          "field": "sector_focus",
+          "label": "Current areas of interest",
+          "value": "AI solutions for small and medium-sized businesses, and defence and security technologies.",
+          "source_id": "keen_focus_2026"
+        },
+        {
+          "field": "investment_stage",
+          "label": "Stage",
+          "value": "Focuses on fast-growing European technology companies at relatively early stages.",
+          "source_id": "keen_stage_2026"
+        },
+        {
+          "field": "investment_approach",
+          "label": "Founder support approach",
+          "value": "The firm says it invests time first and money later, building relationships and sharing its network and experience before an investment decision.",
+          "source_id": "keen_approach_2026"
+        },
+        {
+          "field": "team",
+          "label": "Current team shown on the firm website",
+          "value": "The public team roster includes General Partners Briehan Burke, Alexander Ribbink, Ben Verwaayen and Robert Verwaayen, alongside investment, operating and finance team members.",
+          "source_id": "keen_team_2026"
+        },
+        {
+          "field": "portfolio_examples",
+          "label": "Selected portfolio",
+          "value": "The firm’s current website highlights Cato, Kelluu and AirHub, among other active and exited investments.",
+          "source_id": "keen_home_2026"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2026-09-07",
+          "description": "Keen announced that it led Cato’s €6 million seed round for AI-enabled public-sector sales software.",
+          "source_id": "keen_cato_2026"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "Cato (September 2026): Keen Venture Partners led the company’s €6 million seed round. Cato’s announcement says the company had raised €7.6 million in total since it was founded; Keen’s individual contribution was not disclosed.",
+          "source_id": "FISRC-495f39954954d0bc"
+        },
+        {
+          "description": "Cato is listed by Keen as an active seed-stage portfolio company headquartered in Milan, with Briehan Burke and Stephanie Davis named as the firm’s contacts for the investment.",
+          "source_id": "keen_home_2026"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Official website",
+          "value": "keenventurepartners.com",
+          "url": "https://www.keenventurepartners.com/",
+          "source_id": "keen_home_2026"
+        },
+        {
+          "kind": "application",
+          "label": "Pitch submission",
+          "value": "Online pitch form on the official contact page",
+          "url": "https://www.keenventurepartners.com/contact",
+          "source_id": "keen_contact_2026"
+        },
+        {
+          "kind": "address",
+          "label": "Amsterdam office",
+          "value": "Passeerdersgracht 19A, 1016XG Amsterdam, The Netherlands",
+          "source_id": "keen_amsterdam_contact_2026"
+        },
+        {
+          "kind": "address",
+          "label": "London office",
+          "value": "Michelin House, Office 12181, Fulham Road, SW3 6RD London, United Kingdom",
+          "source_id": "keen_london_contact_2026"
+        },
+        {
+          "kind": "email",
+          "label": "General contact",
+          "value": "info@keenventurepartners.com",
+          "source_id": "keen_contact_2026"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "keen_home_2026",
+          "source_url": "https://www.keenventurepartners.com/",
+          "source_title": "Home | Keen",
+          "source_content_hash": "185c8864e225225f2a76b0bb00ebcffdc931f2de20c82ba3b71fa525d95bbf95",
+          "quote": "The radically human venture capital firm.",
+          "quote_hash": "5eea48977159942ea2129996c272163c604a5b4bfb4b27259d9cfa7ebe8e597a"
+        },
+        {
+          "source_id": "keen_focus_2026",
+          "source_url": "https://www.keenventurepartners.com/",
+          "source_title": "Home | Keen",
+          "source_content_hash": "185c8864e225225f2a76b0bb00ebcffdc931f2de20c82ba3b71fa525d95bbf95",
+          "quote": "Backing founders building AI solutions for SMEs across Europe.",
+          "quote_hash": "9aa5757513291ecf058a1b228e3e75af9b45f108f637e918367210445b419bc3"
+        },
+        {
+          "source_id": "keen_team_2026",
+          "source_url": "https://www.keenventurepartners.com/",
+          "source_title": "Home | Keen",
+          "source_content_hash": "185c8864e225225f2a76b0bb00ebcffdc931f2de20c82ba3b71fa525d95bbf95",
+          "quote": "Briehan Burke General Partner",
+          "quote_hash": "5ae8d75988b404ac0be5fe33fa0729e2cd2c2e84586203f810abd6abc99bd557"
+        },
+        {
+          "source_id": "keen_team_alexander_2026",
+          "source_url": "https://www.keenventurepartners.com/",
+          "source_title": "Home | Keen",
+          "source_content_hash": "185c8864e225225f2a76b0bb00ebcffdc931f2de20c82ba3b71fa525d95bbf95",
+          "quote": "Alexander Ribbink General Partner",
+          "quote_hash": "47fa5bb2fdb7ef195f16ad8f88dc20e54867ebef1182ba94070858312bfd600b"
+        },
+        {
+          "source_id": "keen_team_ben_2026",
+          "source_url": "https://www.keenventurepartners.com/",
+          "source_title": "Home | Keen",
+          "source_content_hash": "185c8864e225225f2a76b0bb00ebcffdc931f2de20c82ba3b71fa525d95bbf95",
+          "quote": "Ben Verwaayen General Partner",
+          "quote_hash": "cbd5c5c3bb2c3fc1b237958d213bdfb8fb48918460b20016b1d0bd21c126f45d"
+        },
+        {
+          "source_id": "keen_team_robert_2026",
+          "source_url": "https://www.keenventurepartners.com/",
+          "source_title": "Home | Keen",
+          "source_content_hash": "185c8864e225225f2a76b0bb00ebcffdc931f2de20c82ba3b71fa525d95bbf95",
+          "quote": "Robert Verwaayen General Partner",
+          "quote_hash": "9b1e427e7c3caf8b8e70243984d6ec2272e4bc60dbd24ab6e6c4046342e60e12"
+        },
+        {
+          "source_id": "keen_cato_partners_2026",
+          "source_url": "https://www.keenventurepartners.com/",
+          "source_title": "Home | Keen",
+          "source_content_hash": "185c8864e225225f2a76b0bb00ebcffdc931f2de20c82ba3b71fa525d95bbf95",
+          "quote": "Keen: Briehan and Stephanie",
+          "quote_hash": "15ab6d1f3cb582e653a669bc0d1bdc517d18178e1a20b8c437fd7bc7ea9633a5"
+        },
+        {
+          "source_id": "keen_approach_2026",
+          "source_url": "https://www.keenventurepartners.com/about-us",
+          "source_title": "About us | Keen",
+          "source_content_hash": "9c384c04e4f4d1aacedf7ae8ed2ae55c103b87ef469caf9d7173867a5c3dc583",
+          "quote": "We invest time first, money later.",
+          "quote_hash": "93f7168987f6a1b99bf02be625587a1b31c29995efe30806316776e8b2845427"
+        },
+        {
+          "source_id": "keen_stage_2026",
+          "source_url": "https://www.keenventurepartners.com/about-us",
+          "source_title": "About us | Keen",
+          "source_content_hash": "9c384c04e4f4d1aacedf7ae8ed2ae55c103b87ef469caf9d7173867a5c3dc583",
+          "quote": "You're at the (relatively) early stages of your journey.",
+          "quote_hash": "c50a6bb6c485a7f7aad878ed22a5898f9d88addfa4039e710cc94753022f620d"
+        },
+        {
+          "source_id": "keen_cato_2026",
+          "source_url": "https://www.keenventurepartners.com/posts/why-we-invested-in-cato",
+          "source_title": "Why we invested in Cato",
+          "source_content_hash": "226f49763d5ebd0f076fd6f9764947789aee030993362cf59bc6c616b7c76b54",
+          "quote": "the €6m seed round is led by Keen Venture Partners",
+          "quote_hash": "2dafae8e51876f5603b345e5391825aaf37f8f55fb89d88d5384ff5a05d14093"
+        },
+        {
+          "source_id": "keen_cato_total_2026",
+          "source_url": "https://www.keenventurepartners.com/posts/why-we-invested-in-cato",
+          "source_title": "Why we invested in Cato",
+          "source_content_hash": "226f49763d5ebd0f076fd6f9764947789aee030993362cf59bc6c616b7c76b54",
+          "quote": "Cato has raised €7.6m in funding since founding in late 2025",
+          "quote_hash": "2d9ef63f6dfc90fc344b34e2b9a01281db13558675778208f1ec6591889f3b60"
+        },
+        {
+          "source_id": "keen_contact_2026",
+          "source_url": "https://www.keenventurepartners.com/contact",
+          "source_title": "Contact | Keen",
+          "source_content_hash": "b2963249968a52a31b581f6147a41844d1f4b6dfbf50917e83cd0b4f58033974",
+          "quote": "Send us your pitch using the Typeform below:",
+          "quote_hash": "5e08ec854fc91ff58c9dc0927da75e31b789612b12f7acacdbd51595dc930128"
+        },
+        {
+          "source_id": "keen_email_contact_2026",
+          "source_url": "https://www.keenventurepartners.com/contact",
+          "source_title": "Contact | Keen",
+          "source_content_hash": "b2963249968a52a31b581f6147a41844d1f4b6dfbf50917e83cd0b4f58033974",
+          "quote": "info@keenventurepartners.com",
+          "quote_hash": "bedd367d71d87899bb8b405365af15ac8d78a9b43834c475c7b5775d7ac8a294"
+        },
+        {
+          "source_id": "keen_amsterdam_contact_2026",
+          "source_url": "https://www.keenventurepartners.com/contact",
+          "source_title": "Contact | Keen",
+          "source_content_hash": "b2963249968a52a31b581f6147a41844d1f4b6dfbf50917e83cd0b4f58033974",
+          "quote": "Passeerdersgracht 19A 1016XG Amsterdam The Netherlands",
+          "quote_hash": "4f2a1fd931a89100fb296f307b85260dae0bd74f1821f05f7efa9a3ad7f502b0"
+        },
+        {
+          "source_id": "keen_london_contact_2026",
+          "source_url": "https://www.keenventurepartners.com/contact",
+          "source_title": "Contact | Keen",
+          "source_content_hash": "b2963249968a52a31b581f6147a41844d1f4b6dfbf50917e83cd0b4f58033974",
+          "quote": "Michelin House, Office 12181 Fulham Road SW3 6RD London United Kingdom",
+          "quote_hash": "dc7798aba67f4231e02f3fa3ff7323a2165655683a537c1d79dda00a2f7c4b59"
+        },
         {
           "source_id": "FISRC-495f39954954d0bc",
           "source_url": "https://www.eu-startups.com/2026/09/milan-based-cato-raises-e6-million-to-help-companies-find-and-win-public-tenders-with-ai/",
@@ -41860,8 +42182,7 @@
           "quote": "has raised a €6 million Seed round led by Keen Venture Partners",
           "quote_hash": "88c6b41473369bdaa03ce5c07ceef3f15378635f3d5b101a02dd54e7eb3af2eb"
         }
-      ],
-      "last_verified_at": "2026-09-26"
+      ]
     },
     "INV-5e67a0ab8f3544": {
       "profile_type": "organization",
@@ -42366,19 +42687,228 @@
     "INV-777c853f04f599": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "UVC Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-28",
+      "coverage_note": "UVC Partners reports more than €700 million in assets under management and €400 million in newly raised capital for founders in 2026; the €400 million figure is not firm-wide AUM. Its stated €150 million growth allocation and portfolio-level investment limits are fund strategy terms, not commitments to a particular company. UVC’s Atira announcement describes a $17.5 million total company round led by Accel and says UVC increased its prior investment; UVC’s individual contribution was not disclosed. The portfolio and performance examples are selected disclosures, not a complete audited record.",
+      "summary": "UVC Partners is a Munich- and Berlin-based European venture firm investing in B2B technology from early stages through growth. Founded in 2011, it focuses on DeepTech, ClimateTech, Mobility and Software/AI, and works closely with the UnternehmerTUM ecosystem. In 2026 the firm reported more than €700 million in assets under management and €400 million in newly raised capital for technology founders.",
+      "facts": [
         {
-          "description": "融资来源记录：Atira · 种子轮 · 2026-09-03 · 本轮参投 · $15 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-dfab45611a59a6cf"
+          "field": "founded_year",
+          "label": "Founded",
+          "value": "Founded in 2011; the firm says its partners collectively have more than 100 years of investing, exit and company-building experience.",
+          "source_id": "uvc_experience_2026"
+        },
+        {
+          "field": "headquarters",
+          "label": "Locations",
+          "value": "Munich and Berlin, Germany; the headquarters is in Garching near Munich.",
+          "source_id": "uvc_contact_2026"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "Assets under management (firm-reported, 2026)",
+          "value": "More than €700 million, according to the firm’s March 2026 announcement.",
+          "source_id": "uvc_fund_profile_2026"
+        },
+        {
+          "field": "new_capital_2026",
+          "label": "Newly raised capital (2026)",
+          "value": "The firm reported €400 million in newly raised capital for founders, including an additional €150 million earmarked for growth-stage investments. This is not the same as assets under management.",
+          "source_id": "uvc_fund_growth_2026"
+        },
+        {
+          "field": "investment_stage",
+          "label": "Stages and investment sizes",
+          "value": "B2B technology investments from early stage through Series B and beyond. Initial tickets can reach €10 million; each fund can allocate up to €30 million to one portfolio company.",
+          "source_id": "uvc_fund_followon_2026"
+        },
+        {
+          "field": "follow_on_reserve",
+          "label": "Follow-on strategy",
+          "value": "The firm states that more than 50% of its funds are reserved for follow-on financing.",
+          "source_id": "uvc_fund_followon_2026"
+        },
+        {
+          "field": "sector_focus",
+          "label": "Sector focus",
+          "value": "DeepTech, ClimateTech, Mobility, Software and AI.",
+          "source_id": "uvc_fund_profile_2026"
+        },
+        {
+          "field": "portfolio_examples",
+          "label": "Selected portfolio companies",
+          "value": "The firm lists Flix, Isar Aerospace, planqc, Proxima Fusion, Reverion, Tacto, FINN and DeepDrive among portfolio examples.",
+          "source_id": "uvc_portfolio_2026"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2011",
+          "description": "UVC Partners was founded.",
+          "source_id": "uvc_experience_2026"
+        },
+        {
+          "date": "2024",
+          "description": "UVC Fund IV completed its final close, according to the firm’s 2026 fund update.",
+          "source_id": "uvc_fund_growth_2026"
+        },
+        {
+          "date": "2026-03-12",
+          "description": "The firm announced an additional €150 million growth allocation, bringing newly raised capital for founders to €400 million.",
+          "source_id": "uvc_fund_growth_2026"
+        },
+        {
+          "date": "2026-09-03",
+          "description": "UVC Partners announced its participation in Atira’s $17.5 million round and said it increased its investment from the earlier pre-seed round.",
+          "source_id": "uvc_atira_round_2026"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "Atira (September 2026): UVC Partners is listed as a participant in the company’s $17.5 million round, which was led by Accel. The disclosed amount is the company-wide round total, not UVC’s individual investment.",
+          "source_id": "FISRC-dfab45611a59a6cf"
+        },
+        {
+          "description": "Atira (September 2026): UVC says it first invested in the company’s $2.5 million pre-seed round and increased its commitment in the later seed round; no individual check size was disclosed.",
+          "source_id": "uvc_atira_2026"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Official website",
+          "value": "uvcpartners.com",
+          "url": "https://www.uvcpartners.com/",
+          "source_id": "uvc_fund_profile_2026"
+        },
+        {
+          "kind": "email",
+          "label": "General inquiries and pitch contact",
+          "value": "pitch@uvcpartners.com",
+          "source_id": "uvc_contact_2026"
+        },
+        {
+          "kind": "address",
+          "label": "Headquarters",
+          "value": "Lichtenbergstr. 6, 85748 Garching, Germany",
+          "source_id": "uvc_hq_contact_2026"
+        },
+        {
+          "kind": "address",
+          "label": "Munich office",
+          "value": "Munich Urban Colab, Freddie-Mercury-Str. 5, 80797 Munich, Germany",
+          "source_id": "uvc_munich_contact_2026"
+        },
+        {
+          "kind": "address",
+          "label": "Berlin office",
+          "value": "Friedrichstr. 68, 10117 Berlin, Germany",
+          "source_id": "uvc_berlin_contact_2026"
+        },
+        {
+          "kind": "phone",
+          "label": "Main phone (legal disclosure)",
+          "value": "+49 89 18 94 69-0",
+          "source_id": "uvc_privacy_contact_2026"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "uvc_fund_profile_2026",
+          "source_url": "https://www.uvcpartners.com/blog/uvc-partners-expands-new-fund-to-eu400-million-adding-growth-capital",
+          "source_title": "UVC Partners expands new fund to €400 million, adding growth capital",
+          "source_content_hash": "903fc3eadefdf0b9ac557e9c63cf8b4a09adf6baa223b752b2eb808b940ed3e9",
+          "quote": "With more than €700 million in assets under management, the VC initially invests ticket sizes of up to €10 million across DeepTech, ClimateTech, Mobility, and Software/AI.",
+          "quote_hash": "0c4f695585f5c788af269e09b452f6360805be0acb871442249baf1cfe7a4479"
+        },
+        {
+          "source_id": "uvc_fund_growth_2026",
+          "source_url": "https://www.uvcpartners.com/blog/uvc-partners-expands-new-fund-to-eu400-million-adding-growth-capital",
+          "source_title": "UVC Partners expands new fund to €400 million, adding growth capital",
+          "source_content_hash": "903fc3eadefdf0b9ac557e9c63cf8b4a09adf6baa223b752b2eb808b940ed3e9",
+          "quote": "Today, the DeepTech B2B investor announces an additional €150 million earmarked for growth-stage investments. This will bring the total amount of newly raised capital for technology founders to €400 million.",
+          "quote_hash": "1affc23999bb2f2eae6cb38c637012a1b4280f003ee53e78b9ac89fb18fa8271"
+        },
+        {
+          "source_id": "uvc_fund_followon_2026",
+          "source_url": "https://www.uvcpartners.com/blog/uvc-partners-expands-new-fund-to-eu400-million-adding-growth-capital",
+          "source_title": "UVC Partners expands new fund to €400 million, adding growth capital",
+          "source_content_hash": "903fc3eadefdf0b9ac557e9c63cf8b4a09adf6baa223b752b2eb808b940ed3e9",
+          "quote": "Each fund can allocate in aggregate up to €30 million in a single portfolio company. Overall, more than 50 percent of the funds are reserved for follow-on financing rounds.",
+          "quote_hash": "44d673b7b4a4d333f48976d7aa34676ba2625037d6c4b3f7dfacadd4ad092099"
+        },
+        {
+          "source_id": "uvc_experience_2026",
+          "source_url": "https://www.uvcpartners.com/blog/uvc-partners-expands-new-fund-to-eu400-million-adding-growth-capital",
+          "source_title": "UVC Partners expands new fund to €400 million, adding growth capital",
+          "source_content_hash": "903fc3eadefdf0b9ac557e9c63cf8b4a09adf6baa223b752b2eb808b940ed3e9",
+          "quote": "Founded in 2011, the firm’s partners collectively bring more than 100 years of experience in investing, exits, and company building, along with deep sector expertise.",
+          "quote_hash": "fc13bb098ecec80c03abb9c81b8656c0ac1b3bbebcc2a421cb249189842cea40"
+        },
+        {
+          "source_id": "uvc_portfolio_2026",
+          "source_url": "https://www.uvcpartners.com/blog/uvc-partners-expands-new-fund-to-eu400-million-adding-growth-capital",
+          "source_title": "UVC Partners expands new fund to €400 million, adding growth capital",
+          "source_content_hash": "903fc3eadefdf0b9ac557e9c63cf8b4a09adf6baa223b752b2eb808b940ed3e9",
+          "quote": "UVC Partners' investment portfolio includes Flix, Isar Aerospace, planqc, Proxima Fusion, Reverion, Tacto, FINN, DeepDrive, and many more.",
+          "quote_hash": "e9683809bd012f999a0d0e37e1564fa52cdf427e9fc9e84d968a7f8d444dd6bf"
+        },
+        {
+          "source_id": "uvc_atira_2026",
+          "source_url": "https://www.uvcpartners.com/blog/uvc-partners-invests-in-atira",
+          "source_title": "UVC Partners backs Atira's $17.5 million round - a commercial operating system for complex B2B manufacturing",
+          "source_content_hash": "2b6f0468c7fdf238c46a1b0a7a2ce2b80b1f9d08871443061eff9648246571c5",
+          "quote": "UVC Partners first backed Atira in its $2.5M Pre-Seed round and has since significantly increased that commitment through its recent Seed round.",
+          "quote_hash": "de5c467f546b2c488ff54aa9f1c36d7ac59f57e6b5242a7541b2bde86ac94a12"
+        },
+        {
+          "source_id": "uvc_atira_round_2026",
+          "source_url": "https://www.uvcpartners.com/blog/uvc-partners-invests-in-atira",
+          "source_title": "UVC Partners backs Atira's $17.5 million round - a commercial operating system for complex B2B manufacturing",
+          "source_content_hash": "2b6f0468c7fdf238c46a1b0a7a2ce2b80b1f9d08871443061eff9648246571c5",
+          "quote": "Atira, a Munich-based AI company building the orchestration layer for industrial sales engineering, has raised $17.5 million led by Accel.",
+          "quote_hash": "80e20dcf1b79718ea81008bcb15d80ea9194109d1a3445dc2494eaead3001f18"
+        },
+        {
+          "source_id": "uvc_contact_2026",
+          "source_url": "https://www.uvcpartners.com/contact",
+          "source_title": "Contact | UVC Partners",
+          "source_content_hash": "dc8f1dd6281d06cdb48fc7c60e03bfbe3689206e6cdf24eee07a132128b005c8",
+          "quote": "General Inquiries (pitch@uvcpartners.com)",
+          "quote_hash": "836d4062873e5e47dc15876d7c0eda30cffa9e1c81869a147c03f41ba0ccb2ef"
+        },
+        {
+          "source_id": "uvc_hq_contact_2026",
+          "source_url": "https://www.uvcpartners.com/contact",
+          "source_title": "Contact | UVC Partners",
+          "source_content_hash": "dc8f1dd6281d06cdb48fc7c60e03bfbe3689206e6cdf24eee07a132128b005c8",
+          "quote": "Lichtenbergstr. 6 85748 Garching",
+          "quote_hash": "f46f94a9aaeb1dc86ee17f5be6665835248eb178b935fdf66107e5df736f4ef8"
+        },
+        {
+          "source_id": "uvc_munich_contact_2026",
+          "source_url": "https://www.uvcpartners.com/contact",
+          "source_title": "Contact | UVC Partners",
+          "source_content_hash": "dc8f1dd6281d06cdb48fc7c60e03bfbe3689206e6cdf24eee07a132128b005c8",
+          "quote": "Munich Urban Colab Freddie-Mercury-Str. 5 80797 Munich",
+          "quote_hash": "636af90ee1540382bfaecf0f83fd0c0c34074146c96c918d7feab293ec295c89"
+        },
+        {
+          "source_id": "uvc_berlin_contact_2026",
+          "source_url": "https://www.uvcpartners.com/contact",
+          "source_title": "Contact | UVC Partners",
+          "source_content_hash": "dc8f1dd6281d06cdb48fc7c60e03bfbe3689206e6cdf24eee07a132128b005c8",
+          "quote": "Friedrichstr. 68 10117 Berlin",
+          "quote_hash": "a18724b6d0a94cdd295021622b724835df3732afb1790302da992b9b55037af0"
+        },
+        {
+          "source_id": "uvc_privacy_contact_2026",
+          "source_url": "https://www.uvcpartners.com/privacy-policy",
+          "source_title": "Privacy Policy | UVC",
+          "source_content_hash": "69e174524859a725c5b986b1b9f469ededa865861a514b3ce8a07bcc20f5a5e5",
+          "quote": "Telephone: 0049-89-18 94 69-0",
+          "quote_hash": "02a33911bb435616c954d05c12dbaf16bc6f70fee43097d72ed8ca4a2a2b15a4"
+        },
         {
           "source_id": "FISRC-dfab45611a59a6cf",
           "source_url": "https://fortune.com/2026/09/03/exclusive-german-ai-startup-atira-raises-17-5-million-to-unclog-the-paperwork-bottleneck-in-industrial-dealmaking/",
@@ -42387,8 +42917,7 @@
           "quote": "UVC Partners, Fortino, and BOOOM also invested, alongside individual investors that included, among others, Whirlpool chairman and CEO Marc Bitzer and Bastian Nominacher, co-founder and co-CEO of process-mining company Celonis.",
           "quote_hash": "a7350adc3548469bf9854d18554f075c91786719e60015be6c0830e47f511e8d"
         }
-      ],
-      "last_verified_at": "2026-09-26"
+      ]
     },
     "INV-1bba61cf27836f": {
       "profile_type": "unverified",
