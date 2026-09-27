@@ -62587,6 +62587,946 @@
       "identity_status": "verified",
       "coverage_status": "researched",
       "coverage_note": "背景、策略、人员及联系渠道按官网或官方公开页面整理；业绩数字标为机构自述，融资案例仅代表本库核验到的公开披露，不代表完整投资组合或基金回报。"
+    },
+    "INV-a0e3b8423ff96a": {
+      "summary": "AMD（Advanced Micro Devices）是高性能与自适应计算公司，官网称其产品与服务覆盖数据中心、嵌入式、游戏和 PC 等市场，创立于 1969 年。本库一条融资披露的原文将参投方明确写作 AMD 的风险投资部门；该部门 AMD Ventures 已另立档案。此处保留母公司主体与其投资部门的关系，不把部门组合、统计或支票金额直接归给 AMD 母公司。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "组织关系",
+          "value": "Advanced Micro Devices, Inc.（AMD）；其企业风险投资部门为 AMD Ventures",
+          "source_id": "amd_venture_about"
+        },
+        {
+          "field": "founded",
+          "label": "创立时间",
+          "value": "1969 年",
+          "source_id": "amd_parent_history"
+        },
+        {
+          "field": "business_scope",
+          "label": "业务领域",
+          "value": "数据中心、嵌入式、游戏和 PC 计算市场",
+          "source_id": "amd_parent_markets"
+        },
+        {
+          "field": "investment_arm",
+          "label": "投资部门",
+          "value": "AMD Ventures，AMD 的企业风险投资部门；AI 投资重点、阶段和组合另见 AMD Ventures 档案",
+          "source_id": "amd_venture_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1969",
+          "description": "AMD 官网公司介绍称公司创立于 1969 年。",
+          "source_id": "amd_parent_history"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "融资披露：2026-05-13 有关 Recursive Superintelligence 的报道写明 Nvidia 与 Advanced Micro Devices 旗下风险投资部门参投。该轮总额为 6.5 亿美元；来源没有披露 AMD Ventures 的支票金额，也不能据此确认由 AMD 母公司直接出资。",
+          "source_id": "FISRC-61b930049ee4e86e"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "AMD 官网",
+          "value": "About AMD",
+          "url": "https://www.amd.com/en/corporate.html",
+          "source_id": "amd_parent_about"
+        },
+        {
+          "kind": "application",
+          "label": "AMD Ventures 联系表单",
+          "value": "联系 AMD Ventures 投资团队；此为 AMD 投资部门渠道",
+          "url": "https://www.amd.com/en/ventures/contact-us.html",
+          "source_id": "amd_venture_contact"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "amd_parent_about",
+          "source_url": "https://www.amd.com/en/corporate.html",
+          "source_title": "About AMD",
+          "source_content_hash": "7a40abb9f65837cdb7e9d99ff1d691430a4650b1c52c6cad14ae687bce55a32f",
+          "quote": "AMD is the high performance and adaptive computing leader, powering the products and services that help solve the world’s most important challenges.",
+          "quote_hash": "8c941fed1e3ec376b52557bf7dd5051d7f4b8611ca2ce8093e6f065ca7673037"
+        },
+        {
+          "source_id": "amd_venture_about",
+          "source_url": "https://www.amd.com/en/ventures/about.html",
+          "source_title": "About AMD Ventures",
+          "source_content_hash": "7111e9e9e60f44cbd3181b77f4cc32946ca37bc9bef045613cf6edf4e3223043",
+          "quote": "The corporate venture capital arm of AMD, the leader in high performance and adaptive computing systems",
+          "quote_hash": "7e26cd3811e4e06bf020e4eca4dd288e8e75a9be826f1601fa416d150063fc9d"
+        },
+        {
+          "source_id": "amd_venture_contact",
+          "source_url": "https://www.amd.com/en/ventures/contact-us.html",
+          "source_title": "Contact AMD Ventures",
+          "source_content_hash": "398b1a0f1981b8f704b5a0d314e671bef9c66c8901e7e73a5ed480939569feda",
+          "quote": "Please complete the fields and a member of AMD Ventures will reply as soon as possible.",
+          "quote_hash": "8cb41339447f91703d620436fecd70da41a2207914e81e6e930cff24a8f115eb"
+        },
+        {
+          "source_id": "FISRC-61b930049ee4e86e",
+          "source_url": "https://siliconangle.com/2026/05/13/recursive-superintelligence-raises-650m-build-self-improving-ai-models/",
+          "source_title": "Recursive Superintelligence raises $650M to build self-improving AI models - SiliconANGLE",
+          "source_content_hash": "926edc21ca4613eb",
+          "quote": "They were joined by Nvidia Corp. and Advanced Micro Devices Inc.’s venture capital arm.",
+          "quote_hash": "e27009a9dd08a65b25b7a316ddb093d3d3ba0b0cfe2445ed4d9e9b504c7901e3"
+        },
+        {
+          "source_id": "amd_parent_history",
+          "source_url": "https://www.amd.com/en/corporate.html",
+          "source_title": "About AMD",
+          "source_content_hash": "7a40abb9f65837cdb7e9d99ff1d691430a4650b1c52c6cad14ae687bce55a32f",
+          "quote": "Founded in 1969 as a Silicon Valley start-up.",
+          "quote_hash": "8d989b21a15115f58163057eadb833370f2b19f365468fccf879ef5d9126c25d"
+        },
+        {
+          "source_id": "amd_parent_markets",
+          "source_url": "https://www.amd.com/en/corporate.html",
+          "source_title": "About AMD",
+          "source_content_hash": "7a40abb9f65837cdb7e9d99ff1d691430a4650b1c52c6cad14ae687bce55a32f",
+          "quote": "Our technologies advance the future of the data center, embedded, gaming and PC markets.",
+          "quote_hash": "25d82d77affa4ecd3d48ba2ebc46274b5fb44f2af899d0af9997be0becf5497e"
+        }
+      ],
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "公司背景来自 AMD 官网；融资活动原文明确指向 AMD 的风险投资部门，投资部门与母公司分别建档。此项披露确认参投主体范围，不披露 AMD Ventures 的单笔出资额。"
+    },
+    "INV-8f9df0a33ce977": {
+      "summary": "旭化成（Asahi Kasei Corporation）是总部位于东京的多元化全球企业，业务分为健康、住宅和材料三大领域；公司称其起源于 1922 年，法人设立于 1931 年。本库收录其作为 Noetra 产业融资参与企业之一的披露，原文未给出旭化成单独出资金额；目前没有据此确认其存在独立 CVC。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "日本多元化产业集团；本库记录为企业投资参与方，不等同于独立风险投资基金",
+          "source_id": "asahi_sector"
+        },
+        {
+          "field": "founded",
+          "label": "集团创立",
+          "value": "1922 年",
+          "source_id": "asahi_history"
+        },
+        {
+          "field": "incorporated",
+          "label": "法人设立",
+          "value": "1931 年 5 月 21 日",
+          "source_id": "asahi_profile"
+        },
+        {
+          "field": "business_scope",
+          "label": "业务领域",
+          "value": "健康、住宅、材料",
+          "source_id": "asahi_sector"
+        },
+        {
+          "field": "employees",
+          "label": "员工人数",
+          "value": "47,895 人（合并口径，截至 2026-03-31）",
+          "source_id": "asahi_profile"
+        },
+        {
+          "field": "headquarters",
+          "label": "总部地址",
+          "value": "Hibiya Mitsui Tower, 1-1-2 Yurakucho, Chiyoda-ku, Tokyo 100-0006, Japan",
+          "source_id": "asahi_profile"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1922",
+          "description": "旭化成官网将集团创立时间记为 1922 年；法人设立日期为 1931-05-21。",
+          "source_id": "asahi_history"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "融资披露：Noetra 于 2026-07-16 发布的英文公告称其获得 44 家机构投资，并将 Asahi Kasei Corporation 列入主要参与企业。公告未披露旭化成的单独出资金额或角色；融资活动库中标注的 Noetra 整体金额不能视作旭化成投入。",
+          "source_id": "FISRC-e2099306a92fc69f"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "旭化成官网",
+          "value": "Asahi Kasei",
+          "url": "https://www.asahi-kasei.com/",
+          "source_id": "asahi_profile"
+        },
+        {
+          "kind": "phone",
+          "label": "总机",
+          "value": "+81-(0)3-6699-3000",
+          "url": "https://www.asahi-kasei.com/company/profile",
+          "source_id": "asahi_profile"
+        },
+        {
+          "kind": "contact_form",
+          "label": "企业信息咨询",
+          "value": "官网 Corporate Information Inquiry 表单",
+          "url": "https://www.asahi-kasei.com/contact-us",
+          "source_id": "asahi_contact"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "asahi_profile",
+          "source_url": "https://www.asahi-kasei.com/company/profile",
+          "source_title": "Corporate Profile | Asahi Kasei",
+          "source_content_hash": "1e77e0e8c81fe40a3bc347d61b5b328ee230a711254c38186740581736f8fb91",
+          "quote": "Trade name Asahi Kasei Corp. Establishment May 21, 1931 Head Office Hibiya Mitsui Tower 1-1-2 Yurakucho, Chiyoda-ku, Tokyo 100-0006 Employees 47,895 (consolidated) Phone +81-(0)3-6699-3000 (consolidated, as of March 31, 2026)",
+          "quote_hash": "24c284ede3ef523064147629b4f5c30dbf21e16824a678bf85c3ffca73f73eb1"
+        },
+        {
+          "source_id": "asahi_sector",
+          "source_url": "https://www.asahi-kasei.com/contact-us/faq",
+          "source_title": "Frequently Asked Questions | Asahi Kasei",
+          "source_content_hash": "c9af83a99138ec08a7ed624fb2b717c462474c0ed49ff440209dd8e82204900c",
+          "quote": "Asahi Kasei is a diversified global company that operates in the 3 business sectors of Healthcare, Homes, and Material.",
+          "quote_hash": "6201a30addb5462ac2292b3e228b0aab7a91327605b8128ad0bd3bbcd9969a33"
+        },
+        {
+          "source_id": "asahi_contact",
+          "source_url": "https://www.asahi-kasei.com/contact-us",
+          "source_title": "Inquiries | Asahi Kasei",
+          "source_content_hash": "5734b23134f541c33abca0a17b6b395db80c9e24f0698f900b99790d4eef114e",
+          "quote": "For inquiries about IR, sustainability, careers, press releases, or this website, please contact us via the web or by phone.",
+          "quote_hash": "75bfd6a464d41b70aaeb6b112b23e6fec451926416e0f74084b8d5e3f6216b17"
+        },
+        {
+          "source_id": "FISRC-e2099306a92fc69f",
+          "source_url": "https://www.noetra.co.jp/news/press/20260716_01-en/",
+          "source_title": "Noetra Launches Full-Scale R&D for Japan-Developed Multimodal Foundation Model | Noetra Corp.",
+          "source_content_hash": "36d62b636988f260",
+          "quote": "Major participating companies (in alphabetical order) Asahi Kasei Corporation",
+          "quote_hash": "50432b4b1ac1df365b838ac0dfc27c6ce644826690320231aafe0d6c986561b7"
+        },
+        {
+          "source_id": "asahi_history",
+          "source_url": "https://www.asahi-kasei.com/company/about",
+          "source_title": "At a Glance | Asahi Kasei",
+          "source_content_hash": "23649a878243e84915bd01fbcdb0a12bc169761ef6851df34dab79e3055769a1",
+          "quote": "Since its founding in 1922, Asahi Kasei has continued to create various innovations that address the world’s evolving needs as the times have changed.",
+          "quote_hash": "3cc201f1c1d66d636854e27711d840f6f789fe0ee0777568afa7aaf3f96c5725"
+        }
+      ],
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "公司背景、人数、地址和联系方式来自旭化成官网。Noetra 的 2026-07-16 公告确认旭化成是主要参与企业之一，但没有拆分其投资工具、单笔金额或领投身份；融资活动库中 Noetra 的整体金额不能解释为旭化成出资额。目前未找到足以确认独立 CVC 的一手证据。"
+    },
+    "INV-85daf1c17a6e43": {
+      "summary": "Array Ventures 是面向企业软件、AI 与深科技创始人的早期投资机构，官网与招聘页面描述其投资从 Day 0／pre-seed 延伸至 A 轮，并强调为创始人连接下一阶段客户。官网招聘页自述旗下四只基金管理资产超过 2.5 亿美元、投资 80 余家企业；其主页当前列出 63 家活跃投资和 16 个退出。上述统计均为机构自述，页面未给出一致的统计基准日。",
+      "facts": [
+        {
+          "field": "investment_thesis",
+          "label": "投资方向",
+          "value": "企业软件、AI 与深科技；官网强调技术型创始人及从 Day 0 到 A 轮的早期支持",
+          "source_id": "array_careers"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Pre-seed／Day 0 至 A 轮",
+          "source_id": "array_careers"
+        },
+        {
+          "field": "aum",
+          "label": "管理规模",
+          "value": "官网招聘页面自述四只基金合计 AUM 超过 2.5 亿美元；未标统计日期",
+          "source_id": "array_careers"
+        },
+        {
+          "field": "portfolio_size",
+          "label": "投资与退出统计",
+          "value": "招聘页自述投资 80 余家；主页当前展示 63 家活跃投资、16 个退出。页面口径与日期各异，不能据此相加为完整组合数",
+          "source_id": "array_home_counts"
+        },
+        {
+          "field": "founder_experience",
+          "label": "团队公开履历（Shruti Gandhi）",
+          "value": "官网个人简介称其有 100 余笔投资和 15 个退出；该数字为个人履历自述，不等同于 Array Ventures 基金业绩",
+          "source_id": "array_shruti_bio"
+        },
+        {
+          "field": "portfolio_support",
+          "label": "投后支持",
+          "value": "官网称其拥有 500 余名行业专家网络，可作为天使投资人、顾问或客户，并帮助组合公司建立客户关系",
+          "source_id": "array_home"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资披露：Runable 于 2026-08-26 宣布 2,100 万美元 A 轮，TechCrunch 报道称 Array VC 与 Together Fund 等既有投资方参投；该金额为整轮金额，不是 Array 的单笔支票金额。",
+          "source_id": "FISRC-2d6054cc51934d57"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Array Ventures",
+          "url": "https://www.array.vc/",
+          "source_id": "array_home"
+        },
+        {
+          "kind": "email",
+          "label": "创业项目联系邮箱",
+          "value": "deals@array.vc",
+          "url": "https://www.array.vc/",
+          "source_id": "array_home"
+        },
+        {
+          "kind": "address",
+          "label": "办公室",
+          "value": "San Francisco, California",
+          "url": "https://www.array.vc/",
+          "source_id": "array_home"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "array_home",
+          "source_url": "https://www.array.vc/",
+          "source_title": "Array Ventures | Preseed & Early Stage VC for Enterprise Software",
+          "source_content_hash": "c263198ffbb26ff92ca78c183d2fe9a5f146fa44586d099ab859f2b5498f79e0",
+          "quote": "Our network includes 500+ industry experts who serve as angel investors, advisors, and customers. We have successfully brought customers to many of our portfolio companies through strategic introductions and partnerships. Email: deals@array.vc. Office: San Francisco, California.",
+          "quote_hash": "961364f50e50d05ac7b071bd9cece030be968aabf1781701a7a0f1d90e1f2c03"
+        },
+        {
+          "source_id": "array_careers",
+          "source_url": "https://www.array.vc/careers/ai-analyst",
+          "source_title": "AI Analyst | Array Ventures Careers",
+          "source_content_hash": "5be71ee5f67f7ae3f8af182665c0f8497f3a2d2adc8c1d36f4b4d8bdae843e07",
+          "quote": "With $250M+ AUM across 4 funds and 80+ investments",
+          "quote_hash": "767d042c99c195c2f88a611fc6cd9bd46c1229d88b0c16d7be722608bb2113bc"
+        },
+        {
+          "source_id": "FISRC-2d6054cc51934d57",
+          "source_url": "https://techcrunch.com/2026/08/26/runable-hits-21m-to-bet-ai-agents-can-go-from-building-businesses-to-growing-them",
+          "source_title": "Runable hits $21M to bet AI agents can go from building businesses to growing them | TechCrunch",
+          "source_content_hash": "c050b0e757896e5c",
+          "quote": "with existing investors Together Fund and Array VC also participating",
+          "quote_hash": "03b68feed21c22339a50f810c91ab23ddebc6fd66a6ff00d76bff117c4332ef8"
+        },
+        {
+          "source_id": "array_home_counts",
+          "source_url": "https://www.array.vc/",
+          "source_title": "Array Ventures | Preseed & Early Stage VC for Enterprise Software",
+          "source_content_hash": "c263198ffbb26ff92ca78c183d2fe9a5f146fa44586d099ab859f2b5498f79e0",
+          "quote": "Active Investments (63)Exits (16)",
+          "quote_hash": "ca5037ea71ca5806be376b81a7229a9547130a642191fd00ee744de7dbd7e76b"
+        },
+        {
+          "source_id": "array_shruti_bio",
+          "source_url": "https://www.array.vc/",
+          "source_title": "Array Ventures | Preseed & Early Stage VC for Enterprise Software",
+          "source_content_hash": "c263198ffbb26ff92ca78c183d2fe9a5f146fa44586d099ab859f2b5498f79e0",
+          "quote": "Engineer turned founder and investor with over 100 investments and 15 exits to Apple, Amazon, Paypal, ServiceNow, Gartner, and JAMF.",
+          "quote_hash": "4bffbe11e6802214bfea77692d3db4201cb6d97c4e424380c6ff60e851809b39"
+        }
+      ],
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "战略、规模、组合数量、退出数量和团队履历均按 Array Ventures 官网自述呈现，且保留原页面不同口径；官网统计没有统一日期。融资案例只证明披露的参投关系，不代表机构完整组合或基金回报。"
+    },
+    "INV-ef0310203c74aa": {
+      "summary": "Behind Genius Ventures 是一家由 Paige Finn Doherty 创立并管理的早期风险投资机构。官网介绍其投资故事与创始人写作、WorkOS 早期任职经历有关，并在首页宣布 1,500 万美元 Fund 2；目前官网披露的投资地域为美国和加拿大。官网组合页列出 Hostie 等公司，近期公开内容涉及应用 AI 与 AI-native services。",
+      "facts": [
+        {
+          "field": "funding_vehicle",
+          "label": "基金信息",
+          "value": "官网首页宣布 1,500 万美元 Fund 2；页面标题未单独说明最终募集完成情况",
+          "source_id": "behind_home"
+        },
+        {
+          "field": "geographic_focus",
+          "label": "投资地域",
+          "value": "当前仅投资总部位于美国和加拿大的公司（官网联系页面口径）",
+          "source_id": "behind_contact"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资与运营特点",
+          "value": "官网近期内容聚焦技术型创始人、应用 AI 与 AI-native services；这些内容反映公开主题，不等同于完整投资政策",
+          "source_id": "behind_ai_content"
+        },
+        {
+          "field": "founder_background",
+          "label": "创始人背景（Paige Finn Doherty）",
+          "value": "官网称其曾在 WorkOS 早期任职，并通过撰写风险投资主题儿童读物进入投资领域",
+          "source_id": "behind_paige_bio"
+        },
+        {
+          "field": "core_team",
+          "label": "官网列示团队",
+          "value": [
+            "Paige Finn Doherty — Founding Partner",
+            "Andy Sran — Investment Associate",
+            "Chinwuba Eze-Sike — Investment Analyst"
+          ],
+          "source_id": "behind_team"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资披露：Hostie 于 2026-07-08 宣布 1,200 万美元 A 轮，PR Newswire 报道列出 Behind Genius Ventures 为参投方。该金额为整轮融资额，未披露其单笔投资金额。",
+          "source_id": "FISRC-d81171d6c6910b85"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Behind Genius Ventures",
+          "url": "https://www.behindgeniusventures.com/",
+          "source_id": "behind_home"
+        },
+        {
+          "kind": "application",
+          "label": "创始人融资申请",
+          "value": "官网 founder investment form；当前只接受美国与加拿大公司",
+          "url": "https://www.behindgeniusventures.com/contact",
+          "source_id": "behind_contact"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "behind_home",
+          "source_url": "https://www.behindgeniusventures.com/",
+          "source_title": "Behind Genius Ventures | Home",
+          "source_content_hash": "a52a48fed1659634e0e0fba62210df92bf2161194edd2dd4ca7346f516cfdcb2",
+          "quote": "Announcing our $15M Fund 2",
+          "quote_hash": "a6648eb4fe572401715e271f0f0afbcb159c29be2619d9bae99dbd8e4c423f12"
+        },
+        {
+          "source_id": "behind_team",
+          "source_url": "https://www.behindgeniusventures.com/about",
+          "source_title": "About | Behind Genius Ventures",
+          "source_content_hash": "7356638a3cde3fe88a130af6c6b0c8040d8e6634f1d990cd5d87d703153c3e4f",
+          "quote": "Paige Finn Doherty Founding Partner Andy Sran Investment Associate Chinwuba Eze-Sike Investment Analyst",
+          "quote_hash": "e9094ac0acb992e35ab09377297f561f967c673b920f1ef08a80792d56492443"
+        },
+        {
+          "source_id": "behind_contact",
+          "source_url": "https://www.behindgeniusventures.com/contact",
+          "source_title": "Contact | Behind Genius Ventures",
+          "source_content_hash": "ead1ae9dfdef7749eac5c49ab8ae3fe3b17ee46edebb70a8c8fc943d094d0110",
+          "quote": "Please note we are only investing in US & Canada-based companies at the moment.",
+          "quote_hash": "6c5d744568053870ef88fcea2d9f75855908007702800a396479d25a9553f15c"
+        },
+        {
+          "source_id": "FISRC-d81171d6c6910b85",
+          "source_url": "https://www.prnewswire.com/news-releases/hostie-raises-12m-series-a-to-power-the-future-of-restaurant-hospitality-302820521.html",
+          "source_title": "Hostie Raises $12M Series A to Power the Future of Restaurant Hospitality | PRNewswire",
+          "source_content_hash": "d7c2bb0b4010c680",
+          "quote": "with participation from Gradient, Scribble Ventures, Burst Capital, and Behind Genius Ventures",
+          "quote_hash": "8b99c57ea941638ff9932a3b0a80a037314fb5f9d4a578561dbd7e1312b0e84e"
+        },
+        {
+          "source_id": "behind_ai_content",
+          "source_url": "https://www.behindgeniusventures.com/",
+          "source_title": "Behind Genius Ventures | Home",
+          "source_content_hash": "a52a48fed1659634e0e0fba62210df92bf2161194edd2dd4ca7346f516cfdcb2",
+          "quote": "A Primer on AI Roll-ups vs AI-Native Services",
+          "quote_hash": "6f162819978d8872b425bffc418c111cc7eb4312aedc9f4f086eaee673353079"
+        },
+        {
+          "source_id": "behind_paige_bio",
+          "source_url": "https://www.behindgeniusventures.com/",
+          "source_title": "Behind Genius Ventures | Home",
+          "source_content_hash": "a52a48fed1659634e0e0fba62210df92bf2161194edd2dd4ca7346f516cfdcb2",
+          "quote": "An engineer and writer, Paige Finn Doherty got into investing by writing a children's book about venture while an early employee at WorkOS.",
+          "quote_hash": "39ef8932c43caaf1c91c2f62227121d4184f71a52a8ef4c749d8f064582a9489"
+        }
+      ],
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "团队、基金宣传、申请地域与投资案例根据机构官网和融资公告整理。$15M 是官网首页对 Fund 2 的宣传标题，不推断为已完成募集金额；融资报道的轮次总额不是机构出资额。"
+    },
+    "INV-3db48d898529f8": {
+      "summary": "Aurum Partners LLC 是与旧金山 49ers 所有者相关联的多家族办公室投资基金。49ers 官方管理层简介称其共同创始人及管理合伙人 Brano Perkovich 负责体育、科技及相邻消费领域的战略投资机会；该简介记录其此前在 Menlo Park 和伦敦从事科技投资银行业务，累计完成交易金额超过 150 亿美元，并曾在 Boston Consulting Group 工作。后者是个人职业经历，不是 Aurum 的基金业绩。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "多家族办公室投资基金，与旧金山 49ers 所有者相关联",
+          "source_id": "aurum_bio"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资领域",
+          "value": "体育、科技及战略相邻的消费市场；关注组合公司借助 49ers 和 Aurum 网络推动产品采用与增长",
+          "source_id": "aurum_strategy"
+        },
+        {
+          "field": "leadership",
+          "label": "共同创始人及管理合伙人",
+          "value": "Brano Perkovich；该职位由 49ers 官方管理层简介披露",
+          "source_id": "aurum_bio"
+        },
+        {
+          "field": "leader_experience",
+          "label": "管理合伙人过往交易经验",
+          "value": "Brano Perkovich 过往科技投行交易累计超过 150 亿美元；此为其个人任职经历，不代表 Aurum 业绩",
+          "source_id": "aurum_leader_experience"
+        },
+        {
+          "field": "leader_education",
+          "label": "管理合伙人教育背景",
+          "value": "加州大学伯克利分校电气工程与计算机科学学士；斯坦福商学院 MBA",
+          "source_id": "aurum_leader_education"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资披露：Graphon AI 于 2026-05-14 公布 830 万美元种子轮，新闻稿列出 Aurum Partners 为参投方。该金额为整轮总额；目前未找到可确认 Aurum 单笔出资额或基金回报的一手披露。",
+          "source_id": "FISRC-4c5668270b4cb456"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "aurum_bio",
+          "source_url": "https://www.49ers.com/team/front-office-roster/brano-perkovich",
+          "source_title": "Brano Perkovich | San Francisco 49ers",
+          "source_content_hash": "84d76825ac809229417c8b3515330f2cd4a05d5f9e6a9559ccfc25d6f1f25b4c",
+          "quote": "Perkovich also serves as a co-founder and managing partner at Aurum Partners LLC, the multi-family office investment fund affiliated with the owners of the San Francisco 49ers.",
+          "quote_hash": "0513f116335faf44ef21b8f0795bd5c1e33bd352054b959a0f997dd13a10394e"
+        },
+        {
+          "source_id": "FISRC-4c5668270b4cb456",
+          "source_url": "https://www.morningstar.com/news/business-wire/20260514783447/former-amazon-meta-scientists-unveil-graphon-ai-the-first-pre-model-intelligence-layer-with-83m-in-seed-funding",
+          "source_title": "Former Amazon, Meta Scientists Unveil Graphon AI with $8.3M in Seed Funding | Morningstar",
+          "source_content_hash": "d4c067cbdae72c67",
+          "quote": "with participation from Perplexity Fund, Samsung Next, GS Futures, Hitachi Ventures, Gaia Ventures, B37 Ventures, and Aurum Partners",
+          "quote_hash": "4776f530dc2b58ec2e3e8e4ea8b2e0fcafc9e2b62c79a44db8bd79ad1666a651"
+        },
+        {
+          "source_id": "aurum_strategy",
+          "source_url": "https://www.49ers.com/team/front-office-roster/brano-perkovich",
+          "source_title": "Brano Perkovich | San Francisco 49ers",
+          "source_content_hash": "84d76825ac809229417c8b3515330f2cd4a05d5f9e6a9559ccfc25d6f1f25b4c",
+          "quote": "Perkovich focuses on new strategic business initiatives and early stage/growth equity investment opportunities in sports, technology, and strategically adjacent consumer markets where the portfolio companies can leverage the 49ers and Aurum Partners access and network to help drive product adoption and accelerate growth.",
+          "quote_hash": "ddb5e23eb476092b98fa023c379933bc4e5c96011408bfd51aef4953128c918d"
+        },
+        {
+          "source_id": "aurum_leader_experience",
+          "source_url": "https://www.49ers.com/team/front-office-roster/brano-perkovich",
+          "source_title": "Brano Perkovich | San Francisco 49ers",
+          "source_content_hash": "84d76825ac809229417c8b3515330f2cd4a05d5f9e6a9559ccfc25d6f1f25b4c",
+          "quote": "He completed numerous M&A, private and public equity, and debt transactions with $15-plus billion in aggregate value.",
+          "quote_hash": "7783ac2519244c4191da060895a1cb6468090e0fce783d72eea60a3d5337b85e"
+        },
+        {
+          "source_id": "aurum_leader_education",
+          "source_url": "https://www.49ers.com/team/front-office-roster/brano-perkovich",
+          "source_title": "Brano Perkovich | San Francisco 49ers",
+          "source_content_hash": "84d76825ac809229417c8b3515330f2cd4a05d5f9e6a9559ccfc25d6f1f25b4c",
+          "quote": "Perkovich holds a B.S. in electrical engineering and computer science from the University of California at Berkeley and an MBA from Stanford Business School.",
+          "quote_hash": "35b9cef0da32c715e39a29fa23592400e828b8d2e1df9b3fa9f72c666cfe45a6"
+        }
+      ],
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "Aurum 缺少可访问的机构官网资料，本档案依据 49ers 官方高管履历核验机构关系、策略与管理合伙人经历，并以融资披露核验单笔参投。未找到官方联系方式；个人过往交易金额不作为 Aurum 投资业绩。"
+    },
+    "INV-b589b7440c714c": {
+      "summary": "Baron Capital 是成立于 1982 年、专注长期成长型股票与成长股权策略的资产管理机构。公司官网披露截至 2026-06-30 管理资产 697 亿美元，且称自 1992 年以来为投资者实现与未实现收益合计 712 亿美元；这些是公司自述口径，不代表单一基金表现。本库的 SpaceX IPO 记录来自二手报道，出资主体在报道中指向 Ron Baron 个人或 Baron Capital，尚未核实到具体基金；750 亿美元为整笔 IPO 披露口径而非 Baron 单笔金额。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "成长股权与长期成长型股票投资管理机构",
+          "source_id": "baron_about"
+        },
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "1982 年",
+          "source_id": "baron_history"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资理念",
+          "value": "长期投资具有持续成长潜力、耐久竞争优势和优秀管理团队的企业",
+          "source_id": "baron_strategy"
+        },
+        {
+          "field": "aum",
+          "label": "管理资产规模",
+          "value": "697 亿美元（截至 2026-06-30；公司自述，包含客户及自有账户）",
+          "source_id": "baron_about"
+        },
+        {
+          "field": "realized_unrealized_gains",
+          "label": "累计实现及未实现收益",
+          "value": "712 亿美元（自 1992 年以来，截至 2026-06-30；公司披露，非单只基金收益）",
+          "source_id": "baron_message_metrics"
+        },
+        {
+          "field": "leadership",
+          "label": "创始人、CEO 与投资组合经理",
+          "value": "Ronald Baron",
+          "source_id": "baron_people"
+        },
+        {
+          "field": "senior_team",
+          "label": "主要管理团队",
+          "value": [
+            "David Baron、Michael Baron — Co-Presidents",
+            "Cliff Greenberg、Andrew Peck — Co-CIOs"
+          ],
+          "source_id": "baron_message"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1982",
+          "description": "Baron Capital 官网将机构起源记为 1982 年。",
+          "source_id": "baron_about"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "公司 2026 年第二季度公开信称，截至 2026-06-30，SpaceX 是 Baron Capital 最大持仓，占公司约 690 亿美元 AUM 的略高于 30%；这是公司整体口径，不能据此推断所有 Baron 基金持有相同比例。",
+          "source_id": "baron_q2_letter"
+        },
+        {
+          "description": "Motley Fool 的报道标题将 IPO 投入归于 Ron Baron，并称金额为 10 亿美元；该报道未在本档案中证明具体投资工具或基金载体。",
+          "source_id": "FISRC-70b91157a7013cad"
+        },
+        {
+          "description": "另一则 syndicated 报道称 Baron Capital 在 SpaceX IPO 提交了 10 亿美元订单，但没有披露最终配售或具体基金；该订单金额与融资数据库记录的 750 亿美元整笔交易金额不可混为一谈。",
+          "source_id": "FISRC-9adefaf867df19d6"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Baron Capital",
+          "url": "https://www.baroncapitalgroup.com/",
+          "source_id": "baron_contact"
+        },
+        {
+          "kind": "email",
+          "label": "机构总联系邮箱",
+          "value": "info@baroncapitalgroup.com",
+          "url": "https://www.baroncapitalgroup.com/",
+          "source_id": "baron_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "电话",
+          "value": "+1 212-583-2000",
+          "url": "https://www.baroncapitalgroup.com/",
+          "source_id": "baron_contact"
+        },
+        {
+          "kind": "address",
+          "label": "地址",
+          "value": "767 Fifth Avenue, New York, NY 10153",
+          "url": "https://www.baroncapitalgroup.com/",
+          "source_id": "baron_contact"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "baron_about",
+          "source_url": "https://www.baroncapitalgroup.com/about-us",
+          "source_title": "Growth Equity Specialists | Baron Funds",
+          "source_content_hash": "20991664d2c75cf5f25b808d450078c4f54ef0b7490f07926a422d516f7f4e3d",
+          "quote": "Baron Capital's assets under management have grown from $100 million in 1992 to $69.7* billion as of June 30, 2026.",
+          "quote_hash": "d856ea7c928c8b81b75570b8f80b9c0fd5efd12c05f23d7c18fbcce45d3e08c4"
+        },
+        {
+          "source_id": "baron_people",
+          "source_url": "https://www.baroncapitalgroup.com/our-people",
+          "source_title": "We Believe People Are the Drivers of a Successful Business | Baron Funds",
+          "source_content_hash": "b2d80291c5bccf2153589ce3e54f7afd1e86edd5617927e2b03810dbfe96796d",
+          "quote": "Ronald Baron Founder, CEO, and Portfolio Manager",
+          "quote_hash": "2204a2c077f81f12d1e65caaed01c166bbf53a867910ea8e5d5d7466a93853e2"
+        },
+        {
+          "source_id": "baron_message",
+          "source_url": "https://www.baroncapitalgroup.com/article/message-from-ron-baron",
+          "source_title": "A Message from Ron | Baron Funds",
+          "source_content_hash": "4755855dd9206d6bd54d59fea1ca7f0779f037f9f43fd3b0396bb28f04e7b6f1",
+          "quote": "As the Firm continues to grow, our next generation of portfolio managers and executives—led by my sons, Co-Presidents David and Michael, each with more than 23 years of experience, and our Co-CIOs Cliff Greenberg and Andrew Peck, with 42 and 30 years of experience, respectively—are all assuming more responsibilities for our businesses.",
+          "quote_hash": "81fef159f5b1e9eae4da99a94350c2ef5061dd23261ac6503b99c41bc00a1741"
+        },
+        {
+          "source_id": "baron_q2_letter",
+          "source_url": "https://www.baroncapitalgroup.com/article/letter-ron-q2-2026",
+          "source_title": "Letter from Ron | Q2 2026 | Baron Funds",
+          "source_content_hash": "ef31cfd075dd416419508bfe9f19f0d416de9fb9305114f61e688445d368e1ef",
+          "quote": "SpaceX is Baron Capital's largest holding and represents a little more than 30% of our Firm's $69 billion assets under management on June 30.",
+          "quote_hash": "bfe659906072e7063a1a57b7bb1c3c672ca3132e1f139e5287533deb285dd753"
+        },
+        {
+          "source_id": "baron_contact",
+          "source_url": "https://www.baroncapitalgroup.com/",
+          "source_title": "Baron Capital - Asset Management for Growth Equity Investments",
+          "source_content_hash": "2ad247031282fff9185e7506e18113caaf2818a444c60aa64f89012eab442d04",
+          "quote": "Phone 212-583-2000; Email info@baroncapitalgroup.com; Address 767 Fifth Avenue, New York, NY 10153.",
+          "quote_hash": "1aad39e79ce62a277fe66bce8cd16f568eb93f45a1941d00b1ba8a87d4e60aa6"
+        },
+        {
+          "source_id": "FISRC-70b91157a7013cad",
+          "source_url": "https://www.fool.com/investing/2026/06/18/spacex-stock-1-billion-ipo-buy-mistake/",
+          "source_title": "Billionaire Ron Baron Put $1 Billion Into SpaceX at the IPO | The Motley Fool",
+          "source_content_hash": "a23bc17d1a408325",
+          "quote": "Billionaire Ron Baron Put $1 Billion Into SpaceX at the IPO.",
+          "quote_hash": "5144d6cd354049217c8415ea27737536becf697c38df3c3583c4ec8354ab8782"
+        },
+        {
+          "source_id": "FISRC-9adefaf867df19d6",
+          "source_url": "https://www.tradingview.com/news/stocktwits:c3fb917f9094b:0-spacex-will-be-largest-most-profitable-company-on-the-planet-says-veteran-elon-musk-bull-whose-funds-trail-us-markets/",
+          "source_title": "SpaceX Will Be 'Largest, Most Profitable Company On The Planet,' Says Veteran Elon Musk Bull | TradingView News",
+          "source_content_hash": "3549f091090ec02b",
+          "quote": "Baron Capital has submitted a $1 billion order in the upcoming SpaceX IPO.",
+          "quote_hash": "e9e6aa400ba72e89e811139da45cef3b45fe9cfcde4b3551824cb7abba145c2d"
+        },
+        {
+          "source_id": "baron_history",
+          "source_url": "https://www.baroncapitalgroup.com/about-us",
+          "source_title": "Growth Equity Specialists | Baron Funds",
+          "source_content_hash": "20991664d2c75cf5f25b808d450078c4f54ef0b7490f07926a422d516f7f4e3d",
+          "quote": "The story of Baron Capital begins long before the founding of the company in 1982.",
+          "quote_hash": "3f15416965f59d28b96317857f928d1057a139da5e175a9e0f84235d29b31e61"
+        },
+        {
+          "source_id": "baron_strategy",
+          "source_url": "https://www.baroncapitalgroup.com/about-us",
+          "source_title": "Growth Equity Specialists | Baron Funds",
+          "source_content_hash": "20991664d2c75cf5f25b808d450078c4f54ef0b7490f07926a422d516f7f4e3d",
+          "quote": "At Baron Capital, our entire organization is aligned behind a single investment approach and shared objective. We are long-term investors in secular growth businesses that are run by great management teams and offer durable competitive advantages.",
+          "quote_hash": "7cd4792d0c369e44cb3e2d4c8744137d527babdba05fe044e6c7e86a39cc1381"
+        },
+        {
+          "source_id": "baron_message_metrics",
+          "source_url": "https://www.baroncapitalgroup.com/article/message-from-ron-baron",
+          "source_title": "A Message from Ron | Baron Funds",
+          "source_content_hash": "4755855dd9206d6bd54d59fea1ca7f0779f037f9f43fd3b0396bb28f04e7b6f1",
+          "quote": "Today, our assets under management total $69.7 billion (6/30/2026), and we have earned more than $71.2 billion (6/30/2026) in realized and unrealized gains for our investors.",
+          "quote_hash": "c6970ca02a8f7220fb6c96e424f3e2c25a0f01f5ec318eaa9928b49721cb9b27"
+        }
+      ],
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "AUM 与累计收益是 Baron Capital 官方披露，按公司整体口径并保留统计日期。SpaceX IPO 参投信息来自二手报道，当前来源无法确认订单主体、最终配售或具体基金；不可将 750 亿美元整笔 IPO 规模或个人报道视作 Baron 的投资金额或基金业绩。"
+    },
+    "INV-a72561349dc394": {
+      "summary": "Arāya Ventures 是一家面向全球 pre-seed 与 seed 创业团队的早期投资机构，官网列出 AI、医疗健康、商业、金融科技和未来工作等方向，并披露 Super Angel、Global、Arāya Sie 三只基金或投资载体的规模分别为 2,630 万、3,000 万和 2,000 万美元。该页面没有把这些载体说明为可相加的统一 AUM。创始人及管理合伙人为 Rupa Popat；官网团队页还列出不同基金和地区的投资负责人。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "全球 pre-seed 与 seed",
+          "source_id": "araya_home"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "AI、医疗健康、商业、金融科技和未来工作",
+          "source_id": "araya_home"
+        },
+        {
+          "field": "regulatory_relationship",
+          "label": "英国监管关系",
+          "value": "Araya Ventures Limited 官网称其为 The Fund Incubator 的 Appointed Representative；本描述不代表其自身为 FCA 直接授权主体",
+          "source_id": "araya_legal"
+        },
+        {
+          "field": "core_team",
+          "label": "官网列示核心团队",
+          "value": [
+            "Rupa Popat — Founder and Managing Partner",
+            "Mitul Ruparelia — Partner, Global",
+            "Martin Carruthers — Partner, Super Angel",
+            "Triin Linamagi — Managing Partner, Arāya Sie"
+          ],
+          "source_id": "araya_team"
+        },
+        {
+          "field": "extended_team",
+          "label": "官网列示其他团队成员",
+          "value": [
+            "Kavit Haria — CEO & Partner, House of Arāya",
+            "Manny Singh — Investment Principal",
+            "Kamyaar Butt — Investment Lead, GCC",
+            "Vicky Stogiannidou — Investment Associate",
+            "Soizic Le Lasseur — Operations Manager",
+            "Nayla Waly — Investment Associate"
+          ],
+          "source_id": "araya_team_extended"
+        },
+        {
+          "field": "fund_super_angel",
+          "label": "Super Angel 基金",
+          "value": "2,630 万美元；官网称 80% 投向英国，20% 投向高确信度的全球机会",
+          "source_id": "araya_super_angel"
+        },
+        {
+          "field": "fund_global",
+          "label": "Global 基金",
+          "value": "3,000 万美元；面向欧洲、海湾地区和亚洲 seed 阶段，40% 预留给高确信度组合的 A 轮跟投",
+          "source_id": "araya_global"
+        },
+        {
+          "field": "fund_araya_sie",
+          "label": "Arāya Sie 基金",
+          "value": "2,000 万美元；支持英国女性创办的 pre-seed／seed 企业",
+          "source_id": "araya_sie"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资披露：First Concepts 于 2026-03-17 公布 100 万美元 pre-seed 轮，Tech.eu 称该轮由 Arāya Ventures 与 Antler 共同领投。100 万美元是整轮金额，来源未披露 Arāya 单独出资额。",
+          "source_id": "FISRC-e713775ebfd9779c"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Arāya Ventures",
+          "url": "https://www.araya.ventures/",
+          "source_id": "araya_home"
+        },
+        {
+          "kind": "email",
+          "label": "创始人融资与合作联系",
+          "value": "hello@araya.ventures",
+          "url": "https://www.araya.ventures/contact",
+          "source_id": "araya_contact"
+        },
+        {
+          "kind": "email",
+          "label": "职业申请邮箱",
+          "value": "careers@araya.ventures",
+          "url": "https://www.araya.ventures/contact",
+          "source_id": "araya_contact_careers"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "araya_home",
+          "source_url": "https://www.araya.ventures/",
+          "source_title": "Arāya Ventures — Pre-Seed and Seed Ventures",
+          "source_content_hash": "8727ef1829222a5ae4f89c4afd065f66504fdf35966092c01e56457ad4bab52b",
+          "quote": "We invest in exceptional founders globally at the pre-seed and seed stage across AI, healthcare, commerce, fintech and the future of work.",
+          "quote_hash": "d973694ba2c5567a79188888a07dbceaf08ddfb325853f63a3823fc1e93d93cc"
+        },
+        {
+          "source_id": "araya_team",
+          "source_url": "https://www.araya.ventures/team",
+          "source_title": "Our Team — Arāya Ventures",
+          "source_content_hash": "cc98e5b05df600553921346fe86fa65f35d28f2ded913b169d4fdd333703ed70",
+          "quote": "Rupa Popat Founder and Managing Partner Mitul Ruparelia Partner, Global Martin Carruthers Partner, Super Angel Triin Linamagi Managing Partner, Arāya Sie",
+          "quote_hash": "5bd71e6649e08c6f09b99a90e466c2e4d2acaef80c795e998eabc9ecda32a3aa"
+        },
+        {
+          "source_id": "araya_contact",
+          "source_url": "https://www.araya.ventures/contact",
+          "source_title": "Contact — Arāya Ventures",
+          "source_content_hash": "5f344a37e22870247d29282351604145277e7ad7218bb9b9999d05078e094cea",
+          "quote": "Pitch to Us hello@araya.ventures",
+          "quote_hash": "9456549a600db973a758695ff0b3ccb012a00e89dd3d56ce6bd9714432efc5b2"
+        },
+        {
+          "source_id": "araya_portfolio",
+          "source_url": "https://www.araya.ventures/portfolio",
+          "source_title": "The ARĀYA Portfolio — Arāya Ventures",
+          "source_content_hash": "43f52247e0f0d961565efa258dafea291219e5f69e80d04d8b95c7c26692cd72",
+          "quote": "First Concepts AI · Future of Work · Active · Super Angel",
+          "quote_hash": "b0fbd58aa08f6523b480d5082540a1e298426e4d2fc083fec58b54002b3aa27d"
+        },
+        {
+          "source_id": "FISRC-e713775ebfd9779c",
+          "source_url": "https://tech.eu/2026/03/17/first-concepts-raises-1m-to-develop-ai-native-os-for-creative-work/",
+          "source_title": "First Concepts Raises $1M to Develop AI-Native OS for Creative Work | Tech.eu",
+          "source_content_hash": "290464341ec7404f",
+          "quote": "The round was led by Arāya Ventures alongside Antler",
+          "quote_hash": "aa214732f07a6c804bf8a1c3e894b2f54de97e4bd169a531a71821b23f0ebb5f"
+        },
+        {
+          "source_id": "araya_team_extended",
+          "source_url": "https://www.araya.ventures/team",
+          "source_title": "Our Team — Arāya Ventures",
+          "source_content_hash": "cc98e5b05df600553921346fe86fa65f35d28f2ded913b169d4fdd333703ed70",
+          "quote": "Kavit Haria CEO & Partner, House of Arāya Manny Singh Investment Principal Kamyaar Butt Investment Lead, GCC Vicky Stogiannidou Investment Associate Soizic Le Lasseur Operations Manager Nayla Waly Investment Associate",
+          "quote_hash": "7af807664a9736937e132edfb8f4ed96195a25edec5aec16b7986eaac1ae3bb5"
+        },
+        {
+          "source_id": "araya_contact_careers",
+          "source_url": "https://www.araya.ventures/contact",
+          "source_title": "Contact — Arāya Ventures",
+          "source_content_hash": "5f344a37e22870247d29282351604145277e7ad7218bb9b9999d05078e094cea",
+          "quote": "careers@araya.ventures",
+          "quote_hash": "36765787363fc9051c87e6d81b5b04d47242735326e7beeb0f04e3bde1139058"
+        },
+        {
+          "source_id": "araya_legal",
+          "source_url": "https://www.araya.ventures/contact",
+          "source_title": "Contact — Arāya Ventures",
+          "source_content_hash": "5f344a37e22870247d29282351604145277e7ad7218bb9b9999d05078e094cea",
+          "quote": "Araya Ventures Limited is an Appointed Representative of The Fund Incubator, which is authorised and regulated by the Financial Conduct Authority with firm reference number 208716.",
+          "quote_hash": "4bac498f1279be091ed3671c85c497d9b6ab136b426a2bb4816d52366f254da0"
+        },
+        {
+          "source_id": "araya_super_angel",
+          "source_url": "https://www.araya.ventures/",
+          "source_title": "Arāya Ventures — Pre-Seed and Seed Ventures",
+          "source_content_hash": "8727ef1829222a5ae4f89c4afd065f66504fdf35966092c01e56457ad4bab52b",
+          "quote": "Super Angel $26.3M An S/EIS-qualifying fund backing exceptional pre-seed and seed founders across the UK and beyond, with 80% deployed domestically and 20% into high-conviction global opportunities.",
+          "quote_hash": "8b7dc5d2db7a3c334fac1ac3db1134966054827ed8048358360c3b07ef48e976"
+        },
+        {
+          "source_id": "araya_global",
+          "source_url": "https://www.araya.ventures/",
+          "source_title": "Arāya Ventures — Pre-Seed and Seed Ventures",
+          "source_content_hash": "8727ef1829222a5ae4f89c4afd065f66504fdf35966092c01e56457ad4bab52b",
+          "quote": "Global $30M A global seed-stage fund investing across Europe, the GCC, and Asia, with 40% of capital reserved for Series A follow-on investments into our highest-conviction portfolio companies.",
+          "quote_hash": "2377c0b41e8762f90b17a712dca3982ba2874b926ec08f4ed6bdc97cabbc01eb"
+        },
+        {
+          "source_id": "araya_sie",
+          "source_url": "https://www.araya.ventures/",
+          "source_title": "Arāya Ventures — Pre-Seed and Seed Ventures",
+          "source_content_hash": "8727ef1829222a5ae4f89c4afd065f66504fdf35966092c01e56457ad4bab52b",
+          "quote": "Arāya Sie $20M A dedicated fund backing exceptional women-led startups at pre-seed and seed stage, focused on healthcare, climate, fintech, and deeptech/AI",
+          "quote_hash": "c372518ab3d838b605af2f0d3d3639f82aeecb46d011ce099fb33065984c5c18"
+        }
+      ],
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "基金规模、策略、团队及联系方式均来自 Arāya Ventures 官网自述。各基金数字分项列示，不相加推定为统一 AUM；融资案例的总额不是机构单笔支票或投资回报。"
     }
   },
   "people": {

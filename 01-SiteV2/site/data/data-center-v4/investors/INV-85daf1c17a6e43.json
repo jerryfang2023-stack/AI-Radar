@@ -137,31 +137,122 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Array VC 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Array Ventures 是面向企业软件、AI 与深科技创始人的早期投资机构，官网与招聘页面描述其投资从 Day 0／pre-seed 延伸至 A 轮，并强调为创始人连接下一阶段客户。官网招聘页自述旗下四只基金管理资产超过 2.5 亿美元、投资 80 余家企业；其主页当前列出 63 家活跃投资和 16 个退出。上述统计均为机构自述，页面未给出一致的统计基准日。",
+      "facts": [
+        {
+          "field": "investment_thesis",
+          "label": "投资方向",
+          "value": "企业软件、AI 与深科技；官网强调技术型创始人及从 Day 0 到 A 轮的早期支持",
+          "source_id": "array_careers"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Pre-seed／Day 0 至 A 轮",
+          "source_id": "array_careers"
+        },
+        {
+          "field": "aum",
+          "label": "管理规模",
+          "value": "官网招聘页面自述四只基金合计 AUM 超过 2.5 亿美元；未标统计日期",
+          "source_id": "array_careers"
+        },
+        {
+          "field": "portfolio_size",
+          "label": "投资与退出统计",
+          "value": "招聘页自述投资 80 余家；主页当前展示 63 家活跃投资、16 个退出。页面口径与日期各异，不能据此相加为完整组合数",
+          "source_id": "array_home_counts"
+        },
+        {
+          "field": "founder_experience",
+          "label": "团队公开履历（Shruti Gandhi）",
+          "value": "官网个人简介称其有 100 余笔投资和 15 个退出；该数字为个人履历自述，不等同于 Array Ventures 基金业绩",
+          "source_id": "array_shruti_bio"
+        },
+        {
+          "field": "portfolio_support",
+          "label": "投后支持",
+          "value": "官网称其拥有 500 余名行业专家网络，可作为天使投资人、顾问或客户，并帮助组合公司建立客户关系",
+          "source_id": "array_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Runable · A轮 · 2026-08-26 · 本轮参投 · $21 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资披露：Runable 于 2026-08-26 宣布 2,100 万美元 A 轮，TechCrunch 报道称 Array VC 与 Together Fund 等既有投资方参投；该金额为整轮金额，不是 Array 的单笔支票金额。",
           "source_id": "FISRC-2d6054cc51934d57"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Array Ventures",
+          "url": "https://www.array.vc/",
+          "source_id": "array_home"
+        },
+        {
+          "kind": "email",
+          "label": "创业项目联系邮箱",
+          "value": "deals@array.vc",
+          "url": "https://www.array.vc/",
+          "source_id": "array_home"
+        },
+        {
+          "kind": "address",
+          "label": "办公室",
+          "value": "San Francisco, California",
+          "url": "https://www.array.vc/",
+          "source_id": "array_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "array_home",
+          "source_url": "https://www.array.vc/",
+          "source_title": "Array Ventures | Preseed & Early Stage VC for Enterprise Software",
+          "source_content_hash": "c263198ffbb26ff92ca78c183d2fe9a5f146fa44586d099ab859f2b5498f79e0",
+          "quote": "Our network includes 500+ industry experts who serve as angel investors, advisors, and customers. We have successfully brought customers to many of our portfolio companies through strategic introductions and partnerships. Email: deals@array.vc. Office: San Francisco, California.",
+          "quote_hash": "961364f50e50d05ac7b071bd9cece030be968aabf1781701a7a0f1d90e1f2c03"
+        },
+        {
+          "source_id": "array_careers",
+          "source_url": "https://www.array.vc/careers/ai-analyst",
+          "source_title": "AI Analyst | Array Ventures Careers",
+          "source_content_hash": "5be71ee5f67f7ae3f8af182665c0f8497f3a2d2adc8c1d36f4b4d8bdae843e07",
+          "quote": "With $250M+ AUM across 4 funds and 80+ investments",
+          "quote_hash": "767d042c99c195c2f88a611fc6cd9bd46c1229d88b0c16d7be722608bb2113bc"
+        },
         {
           "source_id": "FISRC-2d6054cc51934d57",
           "source_url": "https://techcrunch.com/2026/08/26/runable-hits-21m-to-bet-ai-agents-can-go-from-building-businesses-to-growing-them",
-          "source_title": "Runable 获 2100 万美元融资，押注 AI 智能体从帮企业建站走向帮企业增长",
+          "source_title": "Runable hits $21M to bet AI agents can go from building businesses to growing them | TechCrunch",
           "source_content_hash": "c050b0e757896e5c",
           "quote": "with existing investors Together Fund and Array VC also participating",
           "quote_hash": "03b68feed21c22339a50f810c91ab23ddebc6fd66a6ff00d76bff117c4332ef8"
+        },
+        {
+          "source_id": "array_home_counts",
+          "source_url": "https://www.array.vc/",
+          "source_title": "Array Ventures | Preseed & Early Stage VC for Enterprise Software",
+          "source_content_hash": "c263198ffbb26ff92ca78c183d2fe9a5f146fa44586d099ab859f2b5498f79e0",
+          "quote": "Active Investments (63)Exits (16)",
+          "quote_hash": "ca5037ea71ca5806be376b81a7229a9547130a642191fd00ee744de7dbd7e76b"
+        },
+        {
+          "source_id": "array_shruti_bio",
+          "source_url": "https://www.array.vc/",
+          "source_title": "Array Ventures | Preseed & Early Stage VC for Enterprise Software",
+          "source_content_hash": "c263198ffbb26ff92ca78c183d2fe9a5f146fa44586d099ab859f2b5498f79e0",
+          "quote": "Engineer turned founder and investor with over 100 investments and 15 exits to Apple, Amazon, Paypal, ServiceNow, Gartner, and JAMF.",
+          "quote_hash": "4bffbe11e6802214bfea77692d3db4201cb6d97c4e424380c6ff60e851809b39"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "战略、规模、组合数量、退出数量和团队履历均按 Array Ventures 官网自述呈现，且保留原页面不同口径；官网统计没有统一日期。融资案例只证明披露的参投关系，不代表机构完整组合或基金回报。"
     }
   }
 }
