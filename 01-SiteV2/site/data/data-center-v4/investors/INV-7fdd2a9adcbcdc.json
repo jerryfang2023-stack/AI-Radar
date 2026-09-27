@@ -129,21 +129,61 @@
       }
     ],
     "public_profile": {
-      "profile_type": "person",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Alexis Lê-Quôc 当前按“个人投资者”收录。最新融资披露记录日期为 2026-06-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Alexis Lê-Quôc 是 Datadog 联合创始人和首席技术官，长期从事云监控、系统运维和技术平台建设。Datadog官方介绍其曾在Wireless Generation负责运营、在IBM Research等机构任软件工程师，并获巴黎中央理工学院计算机科学硕士学位。",
+      "coverage_note": "Datadog官方人物页将其列为CTO和联合创始人。TechCrunch将他列为Niteshift种子轮天使投资人，但融资数据源将这一关联标注为historical_or_ambiguous；本档案保留该不确定性，不将Niteshift写成其已确认的常规投资组合。个人出资金额未披露。",
+      "current_roles": [
+        {
+          "title": "CTO and Co-founder",
+          "organization": "Datadog",
+          "source_id": "datadog_alexis_profile_2025"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Datadog",
+          "title": "CTO and Co-founder",
+          "period": "Founded in 2010; current official profile lists this role",
+          "description": "负责Datadog技术战略与产品工程，官方人物介绍将其列为CTO及联合创始人。",
+          "source_id": "datadog_alexis_profile_2025"
+        },
+        {
+          "organization": "Wireless Generation",
+          "title": "Director of Operations",
+          "period": "Before Datadog",
+          "description": "曾建设服务美国49州、400多万学生的运营团队和基础设施。",
+          "source_id": "datadog_alexis_profile_2025"
+        },
+        {
+          "organization": "IBM Research, Neomeo and Orange",
+          "title": "Software engineer",
+          "period": "Earlier career",
+          "description": "Datadog官方人物介绍列出的早期工程岗位。",
+          "source_id": "datadog_alexis_profile_2025"
+        }
+      ],
+      "education": [
+        {
+          "institution": "École Centrale Paris",
+          "qualification": "M.S. in Computer Science",
+          "source_id": "datadog_alexis_profile_2025"
+        }
+      ],
+      "experience_summary": "Alexis Lê-Quôc参与Datadog的联合创立，长期专注于云监控、系统性能和技术运营。Datadog官方人物介绍记载其在Wireless Generation建设运营团队和基础设施，并曾任软件工程师。",
       "track_record": [
         {
-          "description": "融资来源记录：Niteshift · 种子轮 · 2026-06-10 · 天使投资人 · $7 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "TechCrunch在Niteshift的700万美元种子融资报道中将其列为天使投资人；数据库将此项关联标记为历史/不确定，不能据此认定为确定的当前投资组合或直接本轮出资。",
           "source_id": "FISRC-01df70e43799a400"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "datadog_alexis_profile_2025",
+          "source_url": "https://dash.datadoghq.com/2025/speakers/alexis-le-quoc/",
+          "source_title": "Alexis Lê-Quôc | DASH by Datadog",
+          "source_content_hash": "a95b7eec26621d77df45583dc42f19e93f5f568beecf0df0163a3ca12e80d61d",
+          "quote": "Alexis Lê-Quôc is CTO & Co-Founder at Datadog. Prior to founding Datadog, he served as Director of Operations for Wireless Generation, and worked as a software engineer at IBM Research, Neomeo, and Orange. He holds an MS in Computer Science from Ecole Centrale Paris.",
+          "quote_hash": "2acc8c36a3c33e95412058c0e1932c86a8ed3b381cef1a550c7cc25399056116"
+        },
         {
           "source_id": "FISRC-01df70e43799a400",
           "source_url": "https://techcrunch.com/2026/06/10/datadog-veterans-launch-ai-coding-startup-niteshift-on-a-bet-against-big-ai-lock-in",
@@ -153,7 +193,13 @@
           "quote_hash": "0a97a78cb513a7c08f340a295557d456130ec12667680c5c6039f375d939cc8b"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-27",
+      "facts": [],
+      "milestones": [],
+      "contacts": []
     }
   }
 }
