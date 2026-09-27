@@ -140,14 +140,31 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "阿联酋Stone Venture(磊石资本) 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "融资来源和新石器官网均将“阿联酋 Stone Venture（磊石资本）”列为领投方，可以确认公开披露中的投资者名称；未能核验对应法律实体、基金管理人、团队、管理规模、完整组合或直接联系渠道。融资金额为被投公司的轮次总额，不代表 Stone Venture 的单笔出资额。",
+      "summary": "阿联酋 Stone Venture（磊石资本）以该名称出现在智身科技和新石器的融资披露中，并被列为两笔融资的领投方。公开材料尚未确认其法律实体、管理人、团队、基金规模或官方联系方式；被投公司披露的轮次融资总额不等同于 Stone Venture 的实际出资额。",
+      "facts": [
+        {
+          "field": "publicly_disclosed_name",
+          "label": "公开披露名称",
+          "value": "阿联酋 Stone Venture（磊石资本）；相关融资资料未披露其对应法律实体名称。",
+          "source_id": "stone_neolix_official"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2025-06-28",
+          "description": "新石器公告称，阿联酋磊石资本（Stone Venture）领投公司逾6亿美元D轮融资；该金额为新石器本轮融资总额。",
+          "source_id": "stone_neolix_official"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：智身科技（GENISOM AI） · B轮 · 2026-09-20 · 本轮领投 · 数亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "新石器于2025年公布逾6亿美元D轮融资，由阿联酋磊石资本（Stone Venture）领投。逾6亿美元是被投企业轮次总额，公告未披露 Stone Venture 单独出资额。",
+          "source_id": "stone_neolix_official"
+        },
+        {
+          "description": "融资来源称 Stone Venture（磊石资本）领投智身科技（GENISOM AI）2026年B轮融资；数亿元人民币是融资轮次总额，非该机构单独出资金额。",
           "source_id": "FISRC-5b2457392e3c9d0d"
         }
       ],
@@ -160,9 +177,17 @@
           "source_content_hash": "d409c07864c1f719",
           "quote": "本轮融资由 阿联酋Stone Venture（磊石资本）领投",
           "quote_hash": "25ff41ef116e59a08cbb2c106059845cab7ed0dbf4e5a6c46deebcc93ea37744"
+        },
+        {
+          "source_id": "stone_neolix_official",
+          "source_url": "https://www.neolix.ai/zh/news/d-round-funding/",
+          "source_title": "新石器D轮融资超6亿美元，创中国自动驾驶领域融资纪录 | Neolix",
+          "source_content_hash": "f6e8235a676ee74f41f6545325cdcf331bb2fcc56e8b58bdf2730bbfc256d46e",
+          "quote": "新石器公司(Neolix)今日宣布完成逾6亿美元D轮融资，本轮融资由阿联酋磊石资本（Stone Venture）领投",
+          "quote_hash": "b6692dee60919b073cda39262ae6ae16f8020f456fb101b7d618fc3d3ee72ae4"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }
