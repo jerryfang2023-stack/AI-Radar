@@ -139,19 +139,132 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Somerset Capital Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-28",
+      "coverage_note": "Somerset describes itself as a family-owned investment firm. The published investment-round totals below are company-wide figures; Somerset’s individual commitments were not disclosed. The cited transactions are selected public examples, not a complete portfolio or audited performance record.",
+      "summary": "Somerset Capital Partners is a family-owned investment firm investing in public and private companies. Its stated fields include real estate, the energy transition, internet, software and technology-enabled industries. It launched its public-equity business in 2008 and has invested in European private companies from Series A to pre-IPO since 2015.",
+      "facts": [
+        {
+          "field": "ownership",
+          "label": "Ownership",
+          "value": "Family-owned investment firm, according to Somerset.",
+          "source_id": "somerset_official_2026"
+        },
+        {
+          "field": "investment_scope",
+          "label": "Investment scope",
+          "value": "Public and private companies.",
+          "source_id": "somerset_official_2026"
+        },
+        {
+          "field": "sector_focus",
+          "label": "Stated focus areas",
+          "value": [
+            "Real estate",
+            "Energy transition",
+            "Internet",
+            "Software",
+            "Technology-enabled industries"
+          ],
+          "source_id": "somerset_official_2026"
+        },
+        {
+          "field": "public_equity_strategy",
+          "label": "Public-equity strategy",
+          "value": "Launched in 2008; Somerset describes its approach as fundamental and long-term.",
+          "source_id": "somerset_official_2026"
+        },
+        {
+          "field": "private_equity_strategy",
+          "label": "Private-equity strategy",
+          "value": "Since 2015, investments in European companies from Series A to pre-IPO.",
+          "source_id": "somerset_official_2026"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2008",
+          "description": "Somerset says its public-equity business was launched.",
+          "source_id": "somerset_official_2026"
+        },
+        {
+          "date": "2015",
+          "description": "Somerset says its private-equity business began investing in European companies.",
+          "source_id": "somerset_official_2026"
+        }
+      ],
       "track_record": [
+        {
+          "description": "EUCLYD Series A (15 September 2026): EUCLYD announced a company-wide round of more than €200 million, co-led by Somerset and three other investors. Somerset’s individual investment amount was not disclosed.",
+          "source_id": "euclyd_somerset_round_2026"
+        },
+        {
+          "description": "Somerset’s company announcement describes an investment supporting the growth of hotel operator Black Label Hospitality; the amount and investment return were not disclosed.",
+          "source_id": "somerset_black_label_case"
+        },
         {
           "description": "融资来源记录：Euclyd · A轮 · 2026-09-15 · 本轮联合领投 · 2亿欧元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6cbfc1ea08a48a66"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Official website",
+          "value": "Somerset Capital Partners",
+          "url": "https://www.somerset.eu/",
+          "source_id": "somerset_official_2026"
+        },
+        {
+          "kind": "email",
+          "label": "General contact",
+          "value": "capitalpartners@somerset.eu",
+          "source_id": "somerset_official_2026"
+        },
+        {
+          "kind": "email",
+          "label": "Media enquiries",
+          "value": "media.enquiries@somerset.eu",
+          "source_id": "somerset_official_2026"
+        },
+        {
+          "kind": "phone",
+          "label": "Main office phone",
+          "value": "+31 (0)13 523 1700",
+          "source_id": "somerset_official_2026"
+        },
+        {
+          "kind": "address",
+          "label": "Office",
+          "value": "SCP Management B.V., De Lind 39, 5061 HT Oisterwijk, The Netherlands",
+          "source_id": "somerset_official_2026"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "somerset_official_2026",
+          "source_url": "https://www.somerset.eu/",
+          "source_title": "Home - Somerset",
+          "source_content_hash": "07f6065efaaabfcd06131f2bfe247ca60155f2b70478fa0c6145068afa3f50c2",
+          "quote": "Somerset Capital Partners is a family-owned investment firm, focused on private and public companies, in the real estate, energy transition, internet, software and technology-enabled industries. Launched in 2008, our public equity business applies a fundamentally oriented, long-term investment approach. Since 2015, our private equity business has invested in companies across Europe, including investments ranging from Series A to pre-IPO. Media enquiries: media.enquiries@somerset.eu. SCP Management B.V., De Lind 39, 5061 HT Oisterwijk, The Netherlands. T. +31 (0)13 - 523 1700 E. capitalpartners@somerset.eu.",
+          "quote_hash": "4f6a18ed14ddef3f20434770c12fca5bb8befdb51c3fa389682e0952a86c21e2"
+        },
+        {
+          "source_id": "euclyd_somerset_round_2026",
+          "source_url": "https://www.euclyd.ai/press-release",
+          "source_title": "EUCLYD Raises Over €200 Million to Break the AI Efficiency Wall | Euclyd",
+          "source_content_hash": "29dfe4ae495f94bc02f788ebdee84beba5daee5f47f85932a99a009e3d46039a",
+          "quote": "EUCLYD has signed a Series A financing round of more than €200 million. The round is co-led by Samsung, Somerset Capital Partners, Scaleup Europe Fund, which is managed by EQT, and Innovation Industries.",
+          "quote_hash": "4f54046478b2d5410e74db5b41ee577cb38586ba375f33d53400f5ed9287c697"
+        },
+        {
+          "source_id": "somerset_black_label_case",
+          "source_url": "https://www.somerset.eu/somerset-capital-partners-invests-in-black-label-hospitality/",
+          "source_title": "Somerset Capital Partners invests in accelerated growth of hotel operator Black Label Hospitality - Somerset",
+          "source_content_hash": "e3c3ef7bef15763b18a12a06b873cbecc3f923c6e0fe10bdb8c777655795c6f8",
+          "quote": "We are very pleased to support a strong and fast growing company like BLH in its next growth phase, said Joes Daemen, founder of SCP.",
+          "quote_hash": "8ebb460b955710dcf3397eb04569d0ed33a08cf36379187d0258ae9c2a7b9ad7"
+        },
         {
           "source_id": "FISRC-6cbfc1ea08a48a66",
           "source_url": "https://www.cls.cn/detail/2484090",
@@ -160,8 +273,7 @@
           "quote": "三星、Somerset Capital Partners、EQT旗下Scaleup Europe Fund以及Innovation Industries共同领投",
           "quote_hash": "05040103b8eb124e57e50a7a08bd5189f9de6a169757e0c2708bfb3ebf04d7f2"
         }
-      ],
-      "last_verified_at": "2026-09-26"
+      ]
     }
   }
 }

@@ -141,29 +141,150 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Phoenix Court's Solar fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-28",
+      "coverage_note": "Phoenix Court’s current website describes a multi-stage platform and lists LocalGlobe, Latitude, Solar and Basecamp. Solar is its scale-up fund. The revenue and employment figures cited are Phoenix Court’s reported portfolio aggregates, not investment returns; disclosed company-round totals are not Solar’s individual contributions.",
+      "summary": "Phoenix Court is a multi-stage investment platform whose funds include LocalGlobe, Latitude, Solar and Basecamp. Solar backs scale-up companies. Phoenix Court’s 2026 public update reported 18 companies in the Solar pilot portfolio, with £5 billion in aggregate revenue and more than 8,500 jobs; these are firm-reported portfolio metrics, not fund returns.",
+      "facts": [
+        {
+          "field": "platform_structure",
+          "label": "Platform and funds",
+          "value": "Phoenix Court lists LocalGlobe, Latitude, Solar and Basecamp as funds on its current website.",
+          "source_id": "phoenix_home_2026"
+        },
+        {
+          "field": "solar_stage",
+          "label": "Solar investment stage",
+          "value": "Scale-up companies.",
+          "source_id": "phoenix_solar_2026"
+        },
+        {
+          "field": "solar_examples",
+          "label": "Selected Solar portfolio examples",
+          "value": [
+            "Monzo",
+            "Moove",
+            "Raspberry Pi",
+            "Fuse",
+            "Raisin",
+            "M-Kopa",
+            "Tide",
+            "Perk"
+          ],
+          "source_id": "phoenix_solar_2026"
+        },
+        {
+          "field": "solar_focus",
+          "label": "Solar context",
+          "value": "Phoenix Court positions Solar at the scale-up stage and says this is where domestic growth capital is scarce in its region.",
+          "source_id": "phoenix_solar_2026"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2005",
+          "description": "Phoenix Court’s timeline says LocalGlobe was founded by Robin and Saul Klein.",
+          "source_id": "phoenix_history_2026"
+        },
+        {
+          "date": "2019",
+          "description": "Phoenix Court’s timeline records the launch of Latitude.",
+          "source_id": "phoenix_history_2026"
+        },
+        {
+          "date": "2023",
+          "description": "Phoenix Court’s timeline records the launch of the Solar pilot fund.",
+          "source_id": "phoenix_history_2026"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Mistral AI · D轮 · 2026-09-08 · 本轮参投 · €3 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Solar pilot portfolio (reported 22 September 2026): Phoenix Court said it had backed 18 companies, with £5 billion in aggregate revenue, 14 companies above £100 million in annual revenue, and more than 8,500 jobs. These are portfolio aggregates reported by Phoenix Court, not fund returns.",
+          "source_id": "phoenix_solar_aggregate_2026"
+        },
+        {
+          "description": "Mistral AI Series D (8 September 2026): Mistral’s funding announcement listed Phoenix Court’s Solar fund as a participant in the company-wide €3 billion round. Solar’s individual contribution was not disclosed.",
           "source_id": "FISRC-4d11ed62a144a3f4"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Official website",
+          "value": "Phoenix Court",
+          "url": "https://www.phoenixcourt.vc/",
+          "source_id": "phoenix_home_2026"
+        },
+        {
+          "kind": "email",
+          "label": "General enquiries",
+          "value": "hello@phoenixcourt.co",
+          "source_id": "phoenix_contact_2026"
+        },
+        {
+          "kind": "address",
+          "label": "Office",
+          "value": "2 Brill Place, London NW1 1DX, United Kingdom",
+          "source_id": "phoenix_contact_2026"
+        },
+        {
+          "kind": "contact_form",
+          "label": "Contact page",
+          "value": "Phoenix Court contact page",
+          "url": "https://www.phoenixcourt.vc/contact",
+          "source_id": "phoenix_contact_2026"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "phoenix_home_2026",
+          "source_url": "https://www.phoenixcourt.vc/",
+          "source_title": "Phoenix Court",
+          "source_content_hash": "7dc93a806c588bdd3f1adb10b2646ef0b0b45aa4361ccf956ae79913f4b6e02c",
+          "quote": "Phoenix Court is a multi-stage investment company, home to LocalGlobe, Latitude, Solar and Basecamp.",
+          "quote_hash": "33a8378f7dd6f0e865b72a6931866e8fd72de5806e134a84fa152b11448b0e40"
+        },
+        {
+          "source_id": "phoenix_history_2026",
+          "source_url": "https://www.phoenixcourt.vc/about",
+          "source_title": "About Us | Phoenix Court",
+          "source_content_hash": "b72c381320c9f8e372626c0ac5e0c1d7418bb0a292459178cceb384a4e75c374",
+          "quote": "2005 LocalGlobe founded by Robin & Saul Klein. 2018 Phoenix Court opened in Somers Town. 2019 Latitude launched. 2023 Solar pilot fund launch.",
+          "quote_hash": "a8a15a33744317f1230ca98a6be22b1a459789ed9ab574e878843a6d645d5075"
+        },
+        {
+          "source_id": "phoenix_solar_2026",
+          "source_url": "https://www.phoenixcourt.vc/funds/solar",
+          "source_title": "Solar | Phoenix Court",
+          "source_content_hash": "6855e7422f065fd7631862121d4fc9226cd1f86dbdb1b3316e7fcda4597f2a89",
+          "quote": "For founders at the scaleup stage who believe that early is a state of mind, and that success doesn’t stop compounding. This is where domestic capital is scarcest in our region, and where too many companies are pushed overseas to find the funding they need to keep growing. Monzo, Moove, Raspberry Pi, Fuse, Raisin, M-Kopa, Tide and Perk are listed as companies backed at this stage.",
+          "quote_hash": "d61f7a79b4ae650c6c7913eb3e1822443e6beb0c8e4017e3c54955dc3b854cbf"
+        },
+        {
+          "source_id": "phoenix_solar_aggregate_2026",
+          "source_url": "https://www.phoenixcourt.vc/news/why-britain-needs-to-back-britain",
+          "source_title": "Why Britain needs to back Britain | Phoenix Court",
+          "source_content_hash": "9b14fac5cd9ff69c258bab7a97e8b771dbd6750243cff712a9bbc0d5bb84c820",
+          "quote": "Our Solar pilot fund has backed 18 companies. Together these 18 companies have an aggregate revenue of £5bn, with 14 of them generating over £100M in annual revenue. They’ve created more than 8,500 high value new jobs across the country.",
+          "quote_hash": "9e961816f7a76ef64a3cd5158de0752cc28980a4b95665a587b9a75de51ee667"
+        },
         {
           "source_id": "FISRC-4d11ed62a144a3f4",
           "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
-          "source_title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
+          "source_title": "Mistral raises €3B to make sovereign, open-weight AI the technology frontier",
           "source_content_hash": "714c413ab36c1848",
           "quote": "Existing investors a16z, ASML, Belfius, BNP Paribas CIB, Bpifrance, Carmignac, DST Global, Eurazeo, General Catalyst, Headline, Hillspire, Index Ventures, Korelya Capital, Lightspeed, NVIDIA, Phoenix Court's Solar fund (home to LocalGlobe, Latitude and Solar) and Salesforce Ventures participated in the round.",
           "quote_hash": "1aea8271fecd0d55fa862c63b4b216ab8bda36b37c1200c16dd0db73697dfc25"
+        },
+        {
+          "source_id": "phoenix_contact_2026",
+          "source_url": "https://www.phoenixcourt.vc/contact",
+          "source_title": "Contact | Phoenix Court",
+          "source_content_hash": "a0f49f2d5077d6a0c845b6cbca4532a4a64f73df3a76ef725b927ebffdffbab9",
+          "quote": "General enquiries: hello@phoenixcourt.co. Somers Town / King’s Cross, 2 Brill Place, London NW1 1DX.",
+          "quote_hash": "32e79d3156a25694ce977b782b58b1623c8e0014d1ae83eaf3186c95feeb3c17"
         }
-      ],
-      "last_verified_at": "2026-09-26"
+      ]
     }
   }
 }
