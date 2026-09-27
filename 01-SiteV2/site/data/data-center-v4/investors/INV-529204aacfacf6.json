@@ -131,19 +131,115 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "EQT Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "EQT Ventures III 的投资范围与基金规模仅适用于该支基金。Starcloud 记录与报道金额冲突，仍按历史/歧义处理，不列作已核实业绩。",
+      "summary": "EQT Ventures 是专注欧洲科技企业的早期投资机构，官网称已支持 140 多个创始团队，投资顾问位于斯德哥尔摩、巴黎、伦敦、纽约、柏林和阿姆斯特丹。EQT Ventures III 采取早期少数股权投资策略，单笔通常为 200 万至 5,000 万欧元，基金规模 11 亿欧元；这些数字仅适用于该基金。官方页面将 Sana Labs 列为 Ventures II 组合并标注 2025 年退出，但未披露收益倍数。Starcloud 的数据库金额与新闻报道不一致，暂不作为确认业绩。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期阶段；Ventures III 单笔通常为 €2M–€50M，此范围仅适用于该基金。",
+          "source_id": "eqt_fund_iii"
+        },
+        {
+          "field": "investment_geography",
+          "label": "重点地域",
+          "value": "以欧洲公司为重点，投资顾问位于斯德哥尔摩、巴黎、伦敦、纽约、柏林和阿姆斯特丹。",
+          "source_id": "eqt_overview"
+        },
+        {
+          "field": "investment_approach",
+          "label": "Ventures III 策略",
+          "value": "科技领域早期少数股权投资，并通过后续投资逐步建立持股。",
+          "source_id": "eqt_fund_iii"
+        },
+        {
+          "field": "fund_size",
+          "label": "EQT Ventures III 基金规模",
+          "value": "官网列示 €1.1B；这是单只基金规模，不代表 EQT Ventures 全部策略资产。",
+          "source_id": "eqt_fund_iii_metrics"
+        },
+        {
+          "field": "portfolio_scale",
+          "label": "官网披露支持的团队数",
+          "value": "140 多个创始团队；为官网团队数口径，不是回报指标。",
+          "source_id": "eqt_overview"
+        },
+        {
+          "field": "investment_focus",
+          "label": "Ventures III 投资行业",
+          "value": [
+            "气候科技",
+            "食品科技",
+            "创作者经济",
+            "能源",
+            "金融科技",
+            "软件",
+            "数据与 IT 基础设施",
+            "深科技"
+          ],
+          "source_id": "eqt_fund_iii"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2021",
+          "description": "EQT Ventures III 页面列示启动年份为 2021 年。",
+          "source_id": "eqt_fund_iii_metrics"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Starcloud · A轮扩展 · 2026-08-21 · 历史轮次领投 · $250 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "EQT Ventures II 官方基金页将 Sana Labs 列为组合企业，记载 2021 年进入、2025 年退出；页面未披露退出金额或回报倍数。",
+          "source_id": "eqt_fund_ii"
+        },
+        {
+          "description": "融资库保留 Starcloud A 轮扩展记录，金额为 2.5 亿美元且标记为历史/歧义；SpaceNews 标题报告 1.7 亿美元，并称该轮由 Benchmark 与 EQT Ventures 领投。轮次金额口径冲突，未核实前不计作已确认业绩。",
           "source_id": "FISRC-64c63dc926fc8a24"
         }
       ],
-      "contacts": [],
+      "current_roles": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "EQT Ventures",
+          "url": "https://eqtgroup.com/private-capital/eqt-ventures",
+          "source_id": "eqt_overview"
+        },
+        {
+          "kind": "phone",
+          "label": "EQT 总部联系电话（非 Ventures 专属投资电话）",
+          "value": "+46 8 506 553 00",
+          "url": "https://eqtgroup.com/about/current-portfolio/funds/eqt-ventures-iii",
+          "source_id": "eqt_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "eqt_overview",
+          "source_url": "https://eqtgroup.com/private-capital/eqt-ventures",
+          "source_title": "Striving to Be the Most Impactful Partner | EQT Ventures",
+          "source_content_hash": "460aabb20401d0e04f0d15188bbd61028673ce4ab6b5bb979db3d1dd5828e410",
+          "quote": "EQT Ventures is domiciled in Luxembourg, with investment advisors located in Stockholm, Paris, London, New York, Berlin and Amsterdam. Focused on European companies, we have backed over 140 founding teams to date.",
+          "quote_hash": "814c0e915fa0f25c757c43938dd6bdaa5ca7c2281a21cc36ab91362cf5874bef"
+        },
+        {
+          "source_id": "eqt_fund_iii",
+          "source_url": "https://eqtgroup.com/about/current-portfolio/funds/eqt-ventures-iii",
+          "source_title": "EQT Ventures III | EQT",
+          "source_content_hash": "0f2b16656281bd78b5739e9c655eb1c524d3894a6f743524bf40bc181ec88965",
+          "quote": "The EQT Ventures III fund primarily makes early-stage minority equity investments in tech companies within sectors such as climate tech, food tech, the creator economy, energy, fintech, software, data & IT infrastructure, deep tech, and more. The Fund’s investments will typically require an equity investment of between 2M EUR and 50M EUR, depending on the investment stage.",
+          "quote_hash": "420d989a18f992244b54d10132cf2c0d5aa2979e93df22645ce56ba3cf84badf"
+        },
+        {
+          "source_id": "eqt_fund_ii",
+          "source_url": "https://eqtgroup.com/about/current-portfolio/funds/eqt-ventures-ii",
+          "source_title": "EQT Ventures II | EQT",
+          "source_content_hash": "c9f852ff974435aea46ff42bbca14e39ae12b5391e840a536c27768a82a74b23",
+          "quote": "Sana Labs | EduTech | Sweden | 2021 | 2025",
+          "quote_hash": "dd6a558be572a0f1949b95b956199090af5a12a685a3f1b0621d9fb5217f4c4b"
+        },
         {
           "source_id": "FISRC-64c63dc926fc8a24",
           "source_url": "https://spacenews.com/starcloud-achieves-unicorn-status-with-170-million-raise-for-orbital-data-centers/",
@@ -151,9 +247,25 @@
           "source_content_hash": "10f88a25e3d2c819",
           "quote": "The Series A round was led by venture capital firm Benchmark and EQT Ventures",
           "quote_hash": "f6ca65424ceca7d257e5e8c2770717f0e6806f8814a06358b5b30019368e40ef"
+        },
+        {
+          "source_id": "eqt_fund_iii_metrics",
+          "source_url": "https://eqtgroup.com/about/current-portfolio/funds/eqt-ventures-iii",
+          "source_title": "EQT Ventures III | Fund facts",
+          "source_content_hash": "0f2b16656281bd78b5739e9c655eb1c524d3894a6f743524bf40bc181ec88965",
+          "quote": "Status Active. Launch 2021. Size 1.1B EUR.",
+          "quote_hash": "c31ac43d59c721e27f8c04ca9bb986de2de334fbd0b430cc339619f9b8af07c9"
+        },
+        {
+          "source_id": "eqt_contact",
+          "source_url": "https://eqtgroup.com/about/current-portfolio/funds/eqt-ventures-iii",
+          "source_title": "EQT Ventures III | Contact us",
+          "source_content_hash": "0f2b16656281bd78b5739e9c655eb1c524d3894a6f743524bf40bc181ec88965",
+          "quote": "+46850655300",
+          "quote_hash": "f22962bd56e2c22fab8ee101e3dd4f6e67e7ec9569c5b4dcf2acf3e5cb3cae84"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28"
     }
   }
 }

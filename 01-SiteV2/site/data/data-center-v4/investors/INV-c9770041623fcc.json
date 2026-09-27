@@ -131,19 +131,128 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Samsung Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2025-09-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构介绍、指标、投资方向和联系方式来自 Samsung Ventures 官方页面。官网自报数字未标明统计时点；Mistral AI 关联仅来自第三方名单来源，尚未证实。",
+      "summary": "Samsung Ventures 是三星旗下企业风险投资机构，成立于 1999 年。官方公司页显示管理资产 28 亿美元、投资过 1,188 家公司、设有 75 支基金（44 支活跃基金）；这些为官网自报数据，页面未注明统计时点。投资领域包括 AI、机器人、器件解决方案、生物与健康、能源、安全与隐私、企业 IT 及消费设备。数据库中的 Mistral AI 关联来自第三方组合名单，无法确认 Samsung Ventures 是否参与该轮融资。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "1999",
+          "source_id": "samsung_company"
+        },
+        {
+          "field": "organization_type",
+          "label": "机构性质",
+          "value": "三星旗下企业风险投资机构（CVC）",
+          "source_id": "samsung_company"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "官网显示管理资产",
+          "value": "28 亿美元；官网未标明统计时点。",
+          "source_id": "samsung_metrics"
+        },
+        {
+          "field": "portfolio_scale",
+          "label": "官网显示投资公司数",
+          "value": "1,188 家；官网未标明统计时点。",
+          "source_id": "samsung_metrics"
+        },
+        {
+          "field": "fund_count",
+          "label": "官网显示基金数",
+          "value": "75 支，其中 44 支活跃；官网未标明统计时点。",
+          "source_id": "samsung_metrics"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资领域",
+          "value": [
+            "人工智能",
+            "机器人",
+            "器件解决方案",
+            "生物与健康",
+            "能源",
+            "安全与隐私",
+            "企业 IT",
+            "消费与设备"
+          ],
+          "source_id": "samsung_company"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1999",
+          "description": "Samsung Ventures 官网记载机构成立。",
+          "source_id": "samsung_company"
+        },
+        {
+          "date": "2004",
+          "description": "官网记载开设硅谷办公室，作为机构首个海外办公室。",
+          "source_id": "samsung_company"
+        },
+        {
+          "date": "2025",
+          "description": "官网历史记录记载任命 Jonghyuk Lee 为 CEO；官网未提供之后的任职变化。",
+          "source_id": "samsung_company"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Mistral AI · C轮 · 2025-09-09 · 既有投资方 · 约17亿欧元（约20亿美元）。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资库保留 Notice.co 页面中 Samsung Ventures 与 Mistral AI 的关联线索，但第三方名单不足以确认其参与本轮融资，因此仍标记为历史/歧义待核，不计为已确认投资业绩。",
           "source_id": "FISRC-ff92324bbd437a73"
         }
       ],
-      "contacts": [],
+      "current_roles": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Samsung Ventures",
+          "url": "https://www.samsungventures.com/en/company.do",
+          "source_id": "samsung_company"
+        },
+        {
+          "kind": "phone",
+          "label": "首尔办公室电话",
+          "value": "+82-2-2255-0299",
+          "url": "https://www.samsungventures.com/en/company.do",
+          "source_id": "samsung_contact"
+        },
+        {
+          "kind": "address",
+          "label": "首尔办公室",
+          "value": "29th Floor, Samsung Electronics Building, 11 Seocho-daero 74-gil, Seocho-gu, Seoul 06620, Korea",
+          "url": "https://www.samsungventures.com/en/company.do",
+          "source_id": "samsung_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "samsung_company",
+          "source_url": "https://www.samsungventures.com/en/company.do",
+          "source_title": "SAMSUNG VENTURES | Company",
+          "source_content_hash": "682340bce62939679c73637f788a9d47dc43b1c3ecd8abdaabf79b7a5fa1ab42",
+          "quote": "Samsung Ventures is a corporate venture capital firm committed to driving growth and creating new value through technological innovation. Since its founding in 1999, the firm has leveraged its experience and expertise to actively invest in companies developing breakthrough technologies with the potential to transform industries.",
+          "quote_hash": "7a0cd54bc29b6fc4717b717042876f07413e4875865df89f0575b5779a419de7"
+        },
+        {
+          "source_id": "samsung_metrics",
+          "source_url": "https://www.samsungventures.com/en/company.do",
+          "source_title": "SAMSUNG VENTURES | Company metrics",
+          "source_content_hash": "682340bce62939679c73637f788a9d47dc43b1c3ecd8abdaabf79b7a5fa1ab42",
+          "quote": "2 . 8 AUM (Billion $) 1 , 188 Companies Invested 75 Number of funds 44 Active Funds",
+          "quote_hash": "acfe120b8e977d6b638e84d8d7b1fb04f3b11da2ce31d14a276d524081a25c84"
+        },
+        {
+          "source_id": "samsung_contact",
+          "source_url": "https://www.samsungventures.com/en/company.do",
+          "source_title": "SAMSUNG VENTURES | Company contact information",
+          "source_content_hash": "682340bce62939679c73637f788a9d47dc43b1c3ecd8abdaabf79b7a5fa1ab42",
+          "quote": "06620 29th Fl., Samsung Electronics Bldg., 11, Seocho-daero 74-gil, Seocho-gu, Seoul, Korea TEL. 02-2255-0299",
+          "quote_hash": "3290b9e2fabe5d39308e6c4d9db2ca16dce25e1174633ac0d7e31c4a22e3a1d2"
+        },
         {
           "source_id": "FISRC-ff92324bbd437a73",
           "source_url": "https://notice.co/c/mistral-ai",
@@ -153,7 +262,7 @@
           "quote_hash": "61feeac0ec72bc52da93f097c63c1fe43c40caee888e4c0ea30bec872f5b3567"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28"
     }
   }
 }
