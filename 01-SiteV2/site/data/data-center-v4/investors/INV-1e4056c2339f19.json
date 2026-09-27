@@ -137,21 +137,94 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "BoxGroup Ventures LLC 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "BoxGroup 是一家美国早期风险投资机构，官网称其通常在公司成立前后介入，从 pre-seed 至 Series A 均可投资，并为后续融资预留跟投资金。机构表示在纽约和旧金山建立创业网络，同时投资其他地区的公司；公开策略强调支持早期团队，而非限定单一行业。",
+      "facts": [
+        {
+          "field": "investment_stages",
+          "label": "投资阶段",
+          "value": [
+            "Pre-seed",
+            "Seed",
+            "Series A"
+          ],
+          "source_id": "boxgroup_about"
+        },
+        {
+          "field": "check_size_ceiling",
+          "label": "官网披露的单笔上限",
+          "value": "最高可投资 100 万美元；官网未披露平均支票或基金规模。",
+          "source_id": "boxgroup_about"
+        },
+        {
+          "field": "geography",
+          "label": "地理覆盖",
+          "value": "在纽约和旧金山建立网络，并面向全美投资。",
+          "source_id": "boxgroup_about"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资方式",
+          "value": "希望成为创业公司的首位机构承诺方；官网称会预留资金跟投。",
+          "source_id": "boxgroup_about"
+        },
+        {
+          "field": "team_roster",
+          "label": "官网现列投资团队",
+          "value": [
+            "David Tisch — Investor",
+            "Adam Rothenberg — Investor",
+            "Nimi Katragadda — Investor",
+            "Greg Rosen — Investor",
+            "Adina Davis — Investor",
+            "Claire Smilow — Investor",
+            "Disha Karale — Investor",
+            "Holley McShan — Investor",
+            "Ava Payman — Investor"
+          ],
+          "source_id": "boxgroup_team"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Aranya Inc. · 种子轮 · 2026-09-01 · 本轮参投 · $11M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Aranya · 2026-09-01 · BoxGroup Ventures LLC 参与一项包含 900 万美元 seed 和另行 200 万美元 pre-seed 的融资披露；BoxGroup 的具体出资额未披露。该条目是本库收录样本，不代表完整组合。",
           "source_id": "FISRC-89934e15127d3d0d"
         }
       ],
-      "contacts": [],
+      "experience_summary": "官网公布了投资团队成员姓名与职务，但没有在该名录中提供成员的完整履历；本资料仅记录网站明示的 Investor 职务，不据此补写个人经历。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站与投资策略",
+          "value": "BoxGroup",
+          "url": "https://www.boxgroup.com/about",
+          "source_id": "boxgroup_about"
+        },
+        {
+          "kind": "email",
+          "label": "一般联系邮箱（官网 Contact us）",
+          "value": "hello@boxgroup.com",
+          "url": "https://www.boxgroup.com/team",
+          "source_id": "boxgroup_team"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "boxgroup_about",
+          "source_url": "https://www.boxgroup.com/about",
+          "source_title": "About | BoxGroup",
+          "source_content_hash": "da3756fead9112227d5c36f8b02b75853fbd3261c2a3894110381ece3ded2b4c",
+          "quote": "We invest as early as the pre-seed round and as late as Series A. We reserve capital to follow-on as you scale.",
+          "quote_hash": "fde68f05a6a2d7aaada5950b7db3a66df9e1b0f8ff06dd45f5b23ad4c2e03fd0"
+        },
+        {
+          "source_id": "boxgroup_team",
+          "source_url": "https://www.boxgroup.com/team",
+          "source_title": "Team | BoxGroup",
+          "source_content_hash": "c425347fd451409e1007912fcd9bb68cda49bbf7b7513e9355827d7d6bf95a08",
+          "quote": "David Tisch Investor Adam Rothenberg Investor Nimi Katragadda Investor Greg Rosen Investor Adina Davis Investor Claire Smilow Investor Disha Karale Investor Holley McShan Investor Ava Payman Investor Brian Aledort Chief Financial Officer Corey Nadell Controller Anna Markowitz Operations Contact us: hello@boxgroup.com",
+          "quote_hash": "c1e8452cc8ca51f402d4da855b0d5a32ed216088b539b27bf1175ea0d9e9dc72"
+        },
         {
           "source_id": "FISRC-89934e15127d3d0d",
           "source_url": "https://siliconangle.com/2026/09/01/aranya-raises-11m-to-turn-bare-metal-servers-into-ai-clusters-in-less-than-48-hours/",
@@ -161,7 +234,11 @@
           "quote_hash": "311e56ff80aa1bddaf01f365e7a7fe50bfe7b2fc6c80c0cd3cd079537584f4cd"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "coverage_note": "机构策略、人员履历和联系渠道按公开官网资料整理；融资案例为本库收录的可追溯样本，不代表完整投资组合或机构回报。人物经历嵌入机构资料，仅记录官网披露且能确认角色的人员；未把轮次总额写成机构单笔出资。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched"
     }
   }
 }
