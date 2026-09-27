@@ -139,19 +139,220 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Keen Venture Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-28",
+      "coverage_note": "Keen’s current website describes its areas of interest, team and selected portfolio; it does not disclose a current fund size in the reviewed pages. The €6 million Cato amount is the company’s total seed round led by Keen, not Keen’s individual contribution. Cato’s official announcement says total funding since founding was €7.6 million. Listed office addresses and the pitch-submission form come from Keen’s public contact page.",
+      "summary": "Keen Venture Partners is a Europe-focused venture capital firm backing early-stage technology companies, with current themes in AI for small and medium-sized businesses and defence and security. The firm describes its approach as investing time and support alongside capital. In September 2026, it led Cato’s €6 million seed round for AI software serving public-sector sales.",
+      "facts": [
         {
-          "description": "融资来源记录：Cato · 种子轮 · 2026-09-07 · 本轮领投 · €6 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-495f39954954d0bc"
+          "field": "investment_geography",
+          "label": "Geography",
+          "value": "Backs technology founders across Europe.",
+          "source_id": "keen_focus_2026"
+        },
+        {
+          "field": "sector_focus",
+          "label": "Current areas of interest",
+          "value": "AI solutions for small and medium-sized businesses, and defence and security technologies.",
+          "source_id": "keen_focus_2026"
+        },
+        {
+          "field": "investment_stage",
+          "label": "Stage",
+          "value": "Focuses on fast-growing European technology companies at relatively early stages.",
+          "source_id": "keen_stage_2026"
+        },
+        {
+          "field": "investment_approach",
+          "label": "Founder support approach",
+          "value": "The firm says it invests time first and money later, building relationships and sharing its network and experience before an investment decision.",
+          "source_id": "keen_approach_2026"
+        },
+        {
+          "field": "team",
+          "label": "Current team shown on the firm website",
+          "value": "The public team roster includes General Partners Briehan Burke, Alexander Ribbink, Ben Verwaayen and Robert Verwaayen, alongside investment, operating and finance team members.",
+          "source_id": "keen_team_2026"
+        },
+        {
+          "field": "portfolio_examples",
+          "label": "Selected portfolio",
+          "value": "The firm’s current website highlights Cato, Kelluu and AirHub, among other active and exited investments.",
+          "source_id": "keen_home_2026"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2026-09-07",
+          "description": "Keen announced that it led Cato’s €6 million seed round for AI-enabled public-sector sales software.",
+          "source_id": "keen_cato_2026"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "Cato (September 2026): Keen Venture Partners led the company’s €6 million seed round. Cato’s announcement says the company had raised €7.6 million in total since it was founded; Keen’s individual contribution was not disclosed.",
+          "source_id": "FISRC-495f39954954d0bc"
+        },
+        {
+          "description": "Cato is listed by Keen as an active seed-stage portfolio company headquartered in Milan, with Briehan Burke and Stephanie Davis named as the firm’s contacts for the investment.",
+          "source_id": "keen_home_2026"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Official website",
+          "value": "keenventurepartners.com",
+          "url": "https://www.keenventurepartners.com/",
+          "source_id": "keen_home_2026"
+        },
+        {
+          "kind": "application",
+          "label": "Pitch submission",
+          "value": "Online pitch form on the official contact page",
+          "url": "https://www.keenventurepartners.com/contact",
+          "source_id": "keen_contact_2026"
+        },
+        {
+          "kind": "address",
+          "label": "Amsterdam office",
+          "value": "Passeerdersgracht 19A, 1016XG Amsterdam, The Netherlands",
+          "source_id": "keen_amsterdam_contact_2026"
+        },
+        {
+          "kind": "address",
+          "label": "London office",
+          "value": "Michelin House, Office 12181, Fulham Road, SW3 6RD London, United Kingdom",
+          "source_id": "keen_london_contact_2026"
+        },
+        {
+          "kind": "email",
+          "label": "General contact",
+          "value": "info@keenventurepartners.com",
+          "source_id": "keen_contact_2026"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "keen_home_2026",
+          "source_url": "https://www.keenventurepartners.com/",
+          "source_title": "Home | Keen",
+          "source_content_hash": "185c8864e225225f2a76b0bb00ebcffdc931f2de20c82ba3b71fa525d95bbf95",
+          "quote": "The radically human venture capital firm.",
+          "quote_hash": "5eea48977159942ea2129996c272163c604a5b4bfb4b27259d9cfa7ebe8e597a"
+        },
+        {
+          "source_id": "keen_focus_2026",
+          "source_url": "https://www.keenventurepartners.com/",
+          "source_title": "Home | Keen",
+          "source_content_hash": "185c8864e225225f2a76b0bb00ebcffdc931f2de20c82ba3b71fa525d95bbf95",
+          "quote": "Backing founders building AI solutions for SMEs across Europe.",
+          "quote_hash": "9aa5757513291ecf058a1b228e3e75af9b45f108f637e918367210445b419bc3"
+        },
+        {
+          "source_id": "keen_team_2026",
+          "source_url": "https://www.keenventurepartners.com/",
+          "source_title": "Home | Keen",
+          "source_content_hash": "185c8864e225225f2a76b0bb00ebcffdc931f2de20c82ba3b71fa525d95bbf95",
+          "quote": "Briehan Burke General Partner",
+          "quote_hash": "5ae8d75988b404ac0be5fe33fa0729e2cd2c2e84586203f810abd6abc99bd557"
+        },
+        {
+          "source_id": "keen_team_alexander_2026",
+          "source_url": "https://www.keenventurepartners.com/",
+          "source_title": "Home | Keen",
+          "source_content_hash": "185c8864e225225f2a76b0bb00ebcffdc931f2de20c82ba3b71fa525d95bbf95",
+          "quote": "Alexander Ribbink General Partner",
+          "quote_hash": "47fa5bb2fdb7ef195f16ad8f88dc20e54867ebef1182ba94070858312bfd600b"
+        },
+        {
+          "source_id": "keen_team_ben_2026",
+          "source_url": "https://www.keenventurepartners.com/",
+          "source_title": "Home | Keen",
+          "source_content_hash": "185c8864e225225f2a76b0bb00ebcffdc931f2de20c82ba3b71fa525d95bbf95",
+          "quote": "Ben Verwaayen General Partner",
+          "quote_hash": "cbd5c5c3bb2c3fc1b237958d213bdfb8fb48918460b20016b1d0bd21c126f45d"
+        },
+        {
+          "source_id": "keen_team_robert_2026",
+          "source_url": "https://www.keenventurepartners.com/",
+          "source_title": "Home | Keen",
+          "source_content_hash": "185c8864e225225f2a76b0bb00ebcffdc931f2de20c82ba3b71fa525d95bbf95",
+          "quote": "Robert Verwaayen General Partner",
+          "quote_hash": "9b1e427e7c3caf8b8e70243984d6ec2272e4bc60dbd24ab6e6c4046342e60e12"
+        },
+        {
+          "source_id": "keen_cato_partners_2026",
+          "source_url": "https://www.keenventurepartners.com/",
+          "source_title": "Home | Keen",
+          "source_content_hash": "185c8864e225225f2a76b0bb00ebcffdc931f2de20c82ba3b71fa525d95bbf95",
+          "quote": "Keen: Briehan and Stephanie",
+          "quote_hash": "15ab6d1f3cb582e653a669bc0d1bdc517d18178e1a20b8c437fd7bc7ea9633a5"
+        },
+        {
+          "source_id": "keen_approach_2026",
+          "source_url": "https://www.keenventurepartners.com/about-us",
+          "source_title": "About us | Keen",
+          "source_content_hash": "9c384c04e4f4d1aacedf7ae8ed2ae55c103b87ef469caf9d7173867a5c3dc583",
+          "quote": "We invest time first, money later.",
+          "quote_hash": "93f7168987f6a1b99bf02be625587a1b31c29995efe30806316776e8b2845427"
+        },
+        {
+          "source_id": "keen_stage_2026",
+          "source_url": "https://www.keenventurepartners.com/about-us",
+          "source_title": "About us | Keen",
+          "source_content_hash": "9c384c04e4f4d1aacedf7ae8ed2ae55c103b87ef469caf9d7173867a5c3dc583",
+          "quote": "You're at the (relatively) early stages of your journey.",
+          "quote_hash": "c50a6bb6c485a7f7aad878ed22a5898f9d88addfa4039e710cc94753022f620d"
+        },
+        {
+          "source_id": "keen_cato_2026",
+          "source_url": "https://www.keenventurepartners.com/posts/why-we-invested-in-cato",
+          "source_title": "Why we invested in Cato",
+          "source_content_hash": "226f49763d5ebd0f076fd6f9764947789aee030993362cf59bc6c616b7c76b54",
+          "quote": "the €6m seed round is led by Keen Venture Partners",
+          "quote_hash": "2dafae8e51876f5603b345e5391825aaf37f8f55fb89d88d5384ff5a05d14093"
+        },
+        {
+          "source_id": "keen_cato_total_2026",
+          "source_url": "https://www.keenventurepartners.com/posts/why-we-invested-in-cato",
+          "source_title": "Why we invested in Cato",
+          "source_content_hash": "226f49763d5ebd0f076fd6f9764947789aee030993362cf59bc6c616b7c76b54",
+          "quote": "Cato has raised €7.6m in funding since founding in late 2025",
+          "quote_hash": "2d9ef63f6dfc90fc344b34e2b9a01281db13558675778208f1ec6591889f3b60"
+        },
+        {
+          "source_id": "keen_contact_2026",
+          "source_url": "https://www.keenventurepartners.com/contact",
+          "source_title": "Contact | Keen",
+          "source_content_hash": "b2963249968a52a31b581f6147a41844d1f4b6dfbf50917e83cd0b4f58033974",
+          "quote": "Send us your pitch using the Typeform below:",
+          "quote_hash": "5e08ec854fc91ff58c9dc0927da75e31b789612b12f7acacdbd51595dc930128"
+        },
+        {
+          "source_id": "keen_email_contact_2026",
+          "source_url": "https://www.keenventurepartners.com/contact",
+          "source_title": "Contact | Keen",
+          "source_content_hash": "b2963249968a52a31b581f6147a41844d1f4b6dfbf50917e83cd0b4f58033974",
+          "quote": "info@keenventurepartners.com",
+          "quote_hash": "bedd367d71d87899bb8b405365af15ac8d78a9b43834c475c7b5775d7ac8a294"
+        },
+        {
+          "source_id": "keen_amsterdam_contact_2026",
+          "source_url": "https://www.keenventurepartners.com/contact",
+          "source_title": "Contact | Keen",
+          "source_content_hash": "b2963249968a52a31b581f6147a41844d1f4b6dfbf50917e83cd0b4f58033974",
+          "quote": "Passeerdersgracht 19A 1016XG Amsterdam The Netherlands",
+          "quote_hash": "4f2a1fd931a89100fb296f307b85260dae0bd74f1821f05f7efa9a3ad7f502b0"
+        },
+        {
+          "source_id": "keen_london_contact_2026",
+          "source_url": "https://www.keenventurepartners.com/contact",
+          "source_title": "Contact | Keen",
+          "source_content_hash": "b2963249968a52a31b581f6147a41844d1f4b6dfbf50917e83cd0b4f58033974",
+          "quote": "Michelin House, Office 12181 Fulham Road SW3 6RD London United Kingdom",
+          "quote_hash": "dc7798aba67f4231e02f3fa3ff7323a2165655683a537c1d79dda00a2f7c4b59"
+        },
         {
           "source_id": "FISRC-495f39954954d0bc",
           "source_url": "https://www.eu-startups.com/2026/09/milan-based-cato-raises-e6-million-to-help-companies-find-and-win-public-tenders-with-ai/",
@@ -160,8 +361,7 @@
           "quote": "has raised a €6 million Seed round led by Keen Venture Partners",
           "quote_hash": "88c6b41473369bdaa03ce5c07ceef3f15378635f3d5b101a02dd54e7eb3af2eb"
         }
-      ],
-      "last_verified_at": "2026-09-26"
+      ]
     }
   }
 }
