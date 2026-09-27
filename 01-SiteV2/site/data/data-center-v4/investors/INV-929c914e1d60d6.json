@@ -139,19 +139,48 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Smash Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：Higgsfield · B轮 · 2026-08-17 · 本轮参投 · 4 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b235ace767812393"
-        }
-      ],
-      "contacts": [],
+      "coverage_status": "researched",
       "sources": [
+        {
+          "source_id": "higgsfield_series_b_2026",
+          "source_url": "https://www.prnewswire.com/news-releases/higgsfield-raises-400-million-series-b-financing-at-5-4-billion-valuation-with-annualized-revenue-reaching-700-million-302852430.html",
+          "source_title": "Higgsfield Raises $400 Million Series B Financing at $5.4 Billion Valuation",
+          "source_content_hash": "6ca2492542cba497424d291c5b0b6295cadfc8c1ddb26044409ff4ea2161e85d",
+          "quote": "The round was led by DST Global, with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, and NTT DOCOMO Ventures.",
+          "quote_hash": "c788152a6003fac547e7c26d1e3dc8c5b81adbfcc7e3eb0db9282b13cb495a62"
+        },
+        {
+          "source_id": "smash_team",
+          "source_url": "https://smashcap.com/team/",
+          "source_title": "Smash Capital — team and partners",
+          "source_content_hash": "e93930259830af561a2732d38970de5a6f8845662ed40fba31c4ade46d4c6daa",
+          "quote": "Our partnership has previously invested over $4 billion in venture capital and over $100 billion in control transactions across decades of shared professional experience.",
+          "quote_hash": "0dfdb9ae9750c3138a00c5fda4b6066833c13c020082cc07cb4b010443c605d4"
+        },
+        {
+          "source_id": "smash_founders",
+          "source_url": "https://smashcap.com/team/",
+          "source_title": "Smash Capital — team and partners",
+          "source_content_hash": "e93930259830af561a2732d38970de5a6f8845662ed40fba31c4ade46d4c6daa",
+          "quote": "Eric Garland",
+          "quote_hash": "08cb89b545233473d38d559c352f057ad4694a83e3ffcc6896beefdfde6b75a8"
+        },
+        {
+          "source_id": "smash_investments",
+          "source_url": "https://smashcap.com/investments/",
+          "source_title": "Smash Capital — investments and attribution notes",
+          "source_content_hash": "b3f0b3c4de561e8bf164f552149ff7179b74a97bf1175d22bbf1118ee3dd7850",
+          "quote": "All other investments referenced above were made by Smash Capital Advisors LP and its current investment team.",
+          "quote_hash": "f8b0ddb2363eba3c9096bf575ad70f33878208d90df41e4aaf5cdecf87118073"
+        },
+        {
+          "source_id": "smash_contact",
+          "source_url": "https://smashcap.com/team/",
+          "source_title": "Smash Capital — team and partners",
+          "source_content_hash": "e93930259830af561a2732d38970de5a6f8845662ed40fba31c4ade46d4c6daa",
+          "quote": "info@smashcap.com",
+          "quote_hash": "7a1030fddeccd1466d6e105a375f41ff74cfa84a59549dd3cbeb4c829cc5f330"
+        },
         {
           "source_id": "FISRC-b235ace767812393",
           "source_url": "https://siliconangle.com/2026/08/17/higgsfield-raises-400m-at-5-4-billion-valuation-to-scale-video-and-image-generation-platform/",
@@ -159,9 +188,123 @@
           "source_content_hash": "06ecfd55822882e3",
           "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital and more than a half-dozen existing investors",
           "quote_hash": "802b4e0ce5c62a28a2fc893e6f1263efeb759174a6c6e4d57e7a3f8a1aa7de8c"
+        },
+        {
+          "source_id": "smash_kevin",
+          "source_url": "https://smashcap.com/team/",
+          "source_title": "Smash Capital — team and partners",
+          "source_content_hash": "e93930259830af561a2732d38970de5a6f8845662ed40fba31c4ade46d4c6daa",
+          "quote": "Kevin Mayer",
+          "quote_hash": "fabd875549a823335be89ffc0583255486c96c254fe5789a5df4dcc00263eead"
+        },
+        {
+          "source_id": "smash_evan",
+          "source_url": "https://smashcap.com/team/",
+          "source_title": "Smash Capital — team and partners",
+          "source_content_hash": "e93930259830af561a2732d38970de5a6f8845662ed40fba31c4ade46d4c6daa",
+          "quote": "Evan Richter",
+          "quote_hash": "f3a3556ebb36fa6f34efbbbb7cf0ace237b41f5917d6c751cd99b6819b3a3ef8"
+        },
+        {
+          "source_id": "smash_brad",
+          "source_url": "https://smashcap.com/team/",
+          "source_title": "Smash Capital — team and partners",
+          "source_content_hash": "e93930259830af561a2732d38970de5a6f8845662ed40fba31c4ade46d4c6daa",
+          "quote": "Brad Twohig",
+          "quote_hash": "70dd1f64a978986383a61181ea0b9a8e634cca2b8777ae58532f5ac32d2f3b45"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "summary": "Smash Capital 是由 Eric Garland、Kevin Mayer、Evan Richter 与 Brad Twohig 等创办的投资机构，官网展示其投资组合及纽约、洛杉矶联系地址。合伙人团队称其过往职业生涯累计参与超过 40 亿美元风险投资和超过 1,000 亿美元控股交易；这是合伙人过往经历，不是 Smash Capital 管理资产或业绩数据。",
+      "coverage_note": "团队名单、联系邮箱和合伙人过往经验来自 Smash Capital 官网自述。官网特别说明，部分投资发生在 Smash Capital 成立前，由关联投资顾问 Smash Ventures Management Company LP 完成；本档案不将这些交易归为当前 Smash Capital 团队业绩。Higgsfield 公告披露的是 4 亿美元整轮规模，未披露 Smash Capital 单笔金额。",
+      "facts": [
+        {
+          "field": "experience",
+          "label": "合伙人过往经验",
+          "value": "官网称合伙人过往共同参与超过 40 亿美元风险投资及超过 1,000 亿美元控股交易；这些是合伙人职业经历，不是公司管理资产或回报。",
+          "source_id": "smash_team"
+        },
+        {
+          "field": "portfolio_attribution",
+          "label": "组合归属口径",
+          "value": "官网说明其组合页部分早期案例来自 Smash Capital 成立前的关联投资顾问；其余展示投资由 Smash Capital Advisors LP 和现任团队完成。",
+          "source_id": "smash_investments"
+        },
+        {
+          "field": "founder",
+          "label": "创办合伙人",
+          "value": "官网将 Eric Garland 列为 Smash Capital 创办合伙人。",
+          "source_id": "smash_founders"
+        },
+        {
+          "field": "founder",
+          "label": "创办合伙人",
+          "value": "官网将 Kevin Mayer 列为 Smash Capital 创办合伙人。",
+          "source_id": "smash_kevin"
+        },
+        {
+          "field": "founder",
+          "label": "创办合伙人",
+          "value": "官网将 Evan Richter 列为 Smash Capital 创办合伙人。",
+          "source_id": "smash_evan"
+        },
+        {
+          "field": "founder",
+          "label": "创办合伙人",
+          "value": "官网将 Brad Twohig 列为 Smash Capital 创办合伙人。",
+          "source_id": "smash_brad"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "Founder and Partner",
+          "organization": "Smash Capital",
+          "source_id": "smash_founders"
+        },
+        {
+          "title": "Founder, Executive Chairman and Partner",
+          "organization": "Smash Capital",
+          "source_id": "smash_kevin"
+        },
+        {
+          "title": "Founder and Partner",
+          "organization": "Smash Capital",
+          "source_id": "smash_evan"
+        },
+        {
+          "title": "Founder and Partner",
+          "organization": "Smash Capital",
+          "source_id": "smash_brad"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "Higgsfield named this institution among participants in its $400 million Series B announced on 2026-08-17. The $400 million is the total round size; the institution's individual investment amount was not disclosed.",
+          "source_id": "FISRC-b235ace767812393"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Smash Capital official website",
+          "value": "Smash Capital",
+          "url": "https://smashcap.com/",
+          "source_id": "smash_team"
+        },
+        {
+          "kind": "email",
+          "label": "官网公开一般联系邮箱",
+          "value": "info@smashcap.com",
+          "source_id": "smash_contact"
+        },
+        {
+          "kind": "address",
+          "label": "官网列示办公城市",
+          "value": "New York and Los Angeles",
+          "source_id": "smash_team"
+        }
+      ],
+      "last_verified_at": "2026-09-27"
     }
   }
 }

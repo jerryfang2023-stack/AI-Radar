@@ -155586,19 +155586,40 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "AI Capital Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
-        "track_record": [
-          {
-            "description": "融资来源记录：Higgsfield · B轮 · 2026-08-17 · 本轮参投 · 4 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-7c15ac15bf3d0b1a"
-          }
-        ],
-        "contacts": [],
+        "coverage_status": "researched",
         "sources": [
+          {
+            "source_id": "higgsfield_series_b_2026",
+            "source_url": "https://www.prnewswire.com/news-releases/higgsfield-raises-400-million-series-b-financing-at-5-4-billion-valuation-with-annualized-revenue-reaching-700-million-302852430.html",
+            "source_title": "Higgsfield Raises $400 Million Series B Financing at $5.4 Billion Valuation",
+            "source_content_hash": "6ca2492542cba497424d291c5b0b6295cadfc8c1ddb26044409ff4ea2161e85d",
+            "quote": "Existing investors also participated in the Series B, including Accel, Menlo Ventures, AI Capital Partners (Alpha Intelligence Capital's US-based fund), GFT Ventures, Capra Ventures, BAM Corner Point and BroadLight Capital.",
+            "quote_hash": "f291fb1f0a98126831eca8a8e3df5bbfcbac05ebe94ec8dbcf69be8845829ba7"
+          },
+          {
+            "source_id": "aic_home",
+            "source_url": "https://aicapital.ai/",
+            "source_title": "Alpha Intelligence Capital — investment strategy",
+            "source_content_hash": "7d90fccc47135eeec773d8bea0d89f2ae1ac7efeaf5a194e5c6115aaddcd9847",
+            "quote": "We invest in Seed to Series B",
+            "quote_hash": "939bbc44d4a16c68a27ad52ca6c8c2d4c5ec2237eb6de3ad4b95f68526783913"
+          },
+          {
+            "source_id": "aic_team",
+            "source_url": "https://aicapital.ai/our-team/",
+            "source_title": "Alpha Intelligence Capital — team",
+            "source_content_hash": "15d511b76af960f60feca98bc09d04cc94e1abc3a656418e131fe0f3fbb4b51b",
+            "quote": "Antoine Blondeau Managing Partner",
+            "quote_hash": "7a7ea3dd59833f222484773ee6f21e6db1c16f8e1db0c40fe9d6d0f2f3dc3d97"
+          },
+          {
+            "source_id": "aic_contact",
+            "source_url": "https://aicapital.ai/contact-us/",
+            "source_title": "Alpha Intelligence Capital — contact and offices",
+            "source_content_hash": "526006be12eccb11825603eb6417b6c4a01efd93f851591bb303c55fa6a50090",
+            "quote": "info@aicapital.ai",
+            "quote_hash": "0ef24f27be3ed13c9ec80d780eca7ff96698b61bb118d2ce8f6e30a98ce16632"
+          },
           {
             "source_id": "FISRC-7c15ac15bf3d0b1a",
             "source_url": "https://www.finsmes.com/2026/08/higgsfield-raises-400m-in-series-b-funding.html",
@@ -155606,9 +155627,80 @@
             "source_content_hash": "66d04514886f3d3e",
             "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, NTT DOCOMO Ventures, Accel, Menlo Ventures, AI Capital Partners, GFT Ventures, Capra Ventures, BAM Corner Point, BroadLight Capital, and Natalia Vodianova Arnault",
             "quote_hash": "f2d170b06d7d95a66bb1a37e76577ee8c44898a0f37d8ec63f1900d3f15ba92a"
+          },
+          {
+            "source_id": "aic_thesis",
+            "source_url": "https://aicapital.ai/",
+            "source_title": "Alpha Intelligence Capital — investment strategy",
+            "source_content_hash": "7d90fccc47135eeec773d8bea0d89f2ae1ac7efeaf5a194e5c6115aaddcd9847",
+            "quote": "deep Artiﬁcial Intelligence/Machine Learning (AI/ML) technology-based companies",
+            "quote_hash": "c8bf12ba3286d8ecf04bdc1f933da6cb76cf1bdd531614d079ce83a3670f35d4"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "summary": "AI Capital Partners 是 Alpha Intelligence Capital 的美国基金。其母平台公开称由企业家主导、面向深度 AI/机器学习技术公司，投资阶段覆盖种子轮至 B 轮。Higgsfield 的融资公告将其列为既有投资方；公告未披露其本轮单笔金额。",
+        "coverage_note": "AI Capital Partners 与 Alpha Intelligence Capital 的关系依据 Higgsfield 公告中的明确说明；投资策略、团队与联系方式依据 AIC 官网。官网信息属于机构自述。Higgsfield 公告所称 4 亿美元为整轮融资规模，不代表 AI Capital Partners 的单笔投资额。",
+        "facts": [
+          {
+            "field": "parent_fund_platform",
+            "label": "基金平台关系",
+            "value": "Higgsfield 公告称 AI Capital Partners 是 Alpha Intelligence Capital 的美国基金。",
+            "source_id": "higgsfield_series_b_2026"
+          },
+          {
+            "field": "investment_stage",
+            "label": "投资阶段",
+            "value": "种子轮至 B 轮。",
+            "source_id": "aic_home"
+          },
+          {
+            "field": "investment_thesis",
+            "label": "投资方向",
+            "value": "深度 AI/机器学习技术公司，重视算法科学能力及解决实际业务问题的产品。",
+            "source_id": "aic_thesis"
+          },
+          {
+            "field": "leadership",
+            "label": "团队",
+            "value": "官网团队页列 Antoine Blondeau 为 Managing Partner；该职务信息不代表其负责 Higgsfield 交易。",
+            "source_id": "aic_team"
+          }
+        ],
+        "current_roles": [
+          {
+            "title": "Managing Partner",
+            "organization": "Alpha Intelligence Capital",
+            "source_id": "aic_team"
+          }
+        ],
+        "milestones": [],
+        "track_record": [
+          {
+            "description": "Higgsfield named this institution among participants in its $400 million Series B announced on 2026-08-17. The $400 million is the total round size; the institution's individual investment amount was not disclosed.",
+            "source_id": "FISRC-7c15ac15bf3d0b1a"
+          }
+        ],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "Alpha Intelligence Capital official website",
+            "value": "Alpha Intelligence Capital",
+            "url": "https://aicapital.ai/",
+            "source_id": "aic_home"
+          },
+          {
+            "kind": "email",
+            "label": "官网公开联系邮箱（机构面向专业客户）",
+            "value": "info@aicapital.ai",
+            "source_id": "aic_contact"
+          },
+          {
+            "kind": "address",
+            "label": "官网列示办公地址（San Francisco）",
+            "value": "1 Ferry Building, Suite 201, San Francisco, CA 94111",
+            "source_id": "aic_contact"
+          }
+        ],
+        "last_verified_at": "2026-09-27"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -155782,21 +155874,50 @@
         "series_b"
       ],
       "public_profile": {
-        "profile_type": "unverified",
-        "identity_status": "pending_verification",
-        "coverage_status": "identity_unverified",
-        "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "BAM Corner Point 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
-        "track_record": [
-          {
-            "description": "融资来源记录：Higgsfield · B轮 · 2026-08-17 · 本轮参投 · 4 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-7c15ac15bf3d0b1a"
-          }
-        ],
-        "contacts": [],
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched",
         "sources": [
+          {
+            "source_id": "higgsfield_series_b_2026",
+            "source_url": "https://www.prnewswire.com/news-releases/higgsfield-raises-400-million-series-b-financing-at-5-4-billion-valuation-with-annualized-revenue-reaching-700-million-302852430.html",
+            "source_title": "Higgsfield Raises $400 Million Series B Financing at $5.4 Billion Valuation",
+            "source_content_hash": "6ca2492542cba497424d291c5b0b6295cadfc8c1ddb26044409ff4ea2161e85d",
+            "quote": "Existing investors also participated in the Series B, including Accel, Menlo Ventures, AI Capital Partners (Alpha Intelligence Capital's US-based fund), GFT Ventures, Capra Ventures, BAM Corner Point and BroadLight Capital.",
+            "quote_hash": "f291fb1f0a98126831eca8a8e3df5bbfcbac05ebe94ec8dbcf69be8845829ba7"
+          },
+          {
+            "source_id": "bam_home",
+            "source_url": "https://www.bamcornerpoint.com/",
+            "source_title": "BAM Corner Point — firm, team and portfolio",
+            "source_content_hash": "57852c1f4158c0972936843bd17ce1f13ec905dc37a65024b1e02cc92a1963b6",
+            "quote": "BAM Corner Point is an early growth, enterprise technology focused venture capital firm built in partnership with Balyasny Asset Management. Our thesis-driven and growth focused mindset is underpinned by data science and AI paired with public equities expertise.",
+            "quote_hash": "9cc9e71006ed7368909b57ba463449bcf2bab7498eb1a95e513a7bb157e3b0f5"
+          },
+          {
+            "source_id": "bam_team",
+            "source_url": "https://www.bamcornerpoint.com/",
+            "source_title": "BAM Corner Point — firm, team and portfolio",
+            "source_content_hash": "57852c1f4158c0972936843bd17ce1f13ec905dc37a65024b1e02cc92a1963b6",
+            "quote": "Corner Point is co-led by Rashmi Gopinath and Kristin Baker Spohn, who have a combined 45 years of experience building and investing in enterprise and health technology.",
+            "quote_hash": "18c231a97f8c4578305ec06e37ef2163cce6571ee7b06f112c61bf489e365c39"
+          },
+          {
+            "source_id": "bam_portfolio",
+            "source_url": "https://www.bamcornerpoint.com/",
+            "source_title": "BAM Corner Point — firm, team and portfolio",
+            "source_content_hash": "57852c1f4158c0972936843bd17ce1f13ec905dc37a65024b1e02cc92a1963b6",
+            "quote": "Innovaccer Patlytics Poolside Videa AI Higgsfield",
+            "quote_hash": "5ca73f34d7f8344ab53322c90ada22403e163f8a72a8fb4471bad0b37dd82738"
+          },
+          {
+            "source_id": "bam_contact",
+            "source_url": "https://www.bamcornerpoint.com/",
+            "source_title": "BAM Corner Point — firm, team and portfolio",
+            "source_content_hash": "57852c1f4158c0972936843bd17ce1f13ec905dc37a65024b1e02cc92a1963b6",
+            "quote": "contact@bamcornerpoint.com",
+            "quote_hash": "c899dbc486644354516941b0d8758b08e18716d1f6957438628ae16aae255810"
+          },
           {
             "source_id": "FISRC-7c15ac15bf3d0b1a",
             "source_url": "https://www.finsmes.com/2026/08/higgsfield-raises-400m-in-series-b-funding.html",
@@ -155804,9 +155925,100 @@
             "source_content_hash": "66d04514886f3d3e",
             "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, NTT DOCOMO Ventures, Accel, Menlo Ventures, AI Capital Partners, GFT Ventures, Capra Ventures, BAM Corner Point, BroadLight Capital, and Natalia Vodianova Arnault",
             "quote_hash": "f2d170b06d7d95a66bb1a37e76577ee8c44898a0f37d8ec63f1900d3f15ba92a"
+          },
+          {
+            "source_id": "bam_rashmi_bio",
+            "source_url": "https://www.bamcornerpoint.com/",
+            "source_title": "BAM Corner Point — firm, team and portfolio",
+            "source_content_hash": "57852c1f4158c0972936843bd17ce1f13ec905dc37a65024b1e02cc92a1963b6",
+            "quote": "Rashmi Gopinath was most recently General Partner and Head of Enterprise Software at B Capital",
+            "quote_hash": "8443aa38ffdff25e735829bfd8dfee95e76242e0c25c8369d321bff97603905e"
+          },
+          {
+            "source_id": "bam_kristin_bio",
+            "source_url": "https://www.bamcornerpoint.com/",
+            "source_title": "BAM Corner Point — firm, team and portfolio",
+            "source_content_hash": "57852c1f4158c0972936843bd17ce1f13ec905dc37a65024b1e02cc92a1963b6",
+            "quote": "Kristin was previously General Partner at Charles River Ventures and Partner at Social Capital",
+            "quote_hash": "057ba87b6a8fb8293f734fc3eb9741dc7e009613720fb689aeae55a088ff9fa2"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "summary": "BAM Corner Point 是与 Balyasny Asset Management 合作成立的早期成长阶段企业科技投资机构，公开策略结合数据科学、人工智能与公开市场投资经验，重点覆盖 AI、数据基础设施、医疗科技、应用软件、安全、DevOps 与云基础设施。官网列示 Higgsfield 等组合公司。",
+        "coverage_note": "机构策略、团队履历、组合和联系邮箱均来自 BAM Corner Point 官网自述。官网称两位共同创办人合计有 45 年企业及医疗科技投资与经营经验，该数字为机构自述，不是投资回报指标。Higgsfield 的 4 亿美元为整轮融资规模，不代表 BAM Corner Point 单笔金额。",
+        "facts": [
+          {
+            "field": "investment_stage",
+            "label": "投资阶段",
+            "value": "早期成长阶段，主要为 B、C 轮。",
+            "source_id": "bam_home"
+          },
+          {
+            "field": "investment_thesis",
+            "label": "投资方向",
+            "value": "企业科技，覆盖 AI、数据基础设施、医疗科技、应用软件、网络安全、DevOps 与云基础设施。",
+            "source_id": "bam_home"
+          },
+          {
+            "field": "firm_background",
+            "label": "机构背景",
+            "value": "与 Balyasny Asset Management 合作建立，投资方法结合数据科学、AI 与公开市场经验。",
+            "source_id": "bam_home"
+          },
+          {
+            "field": "selected_portfolio",
+            "label": "官网列示组合案例",
+            "value": "Higgsfield、Poolside、Innovaccer、Patlytics 和 Videa AI；不代表完整投资组合。",
+            "source_id": "bam_portfolio"
+          },
+          {
+            "field": "leadership_background_rashmi",
+            "label": "Co-founder background: Rashmi Gopinath",
+            "value": "Previously General Partner and Head of Enterprise Software at B Capital; Managing Director and founding investor at Microsoft’s M12; and Investment Director at Intel Capital, according to the firm biography.",
+            "source_id": "bam_rashmi_bio"
+          },
+          {
+            "field": "leadership_background_kristin",
+            "label": "Co-founder background: Kristin Baker Spohn",
+            "value": "Previously a General Partner at Charles River Ventures and a Partner at Social Capital; she also held operating roles at Collective Health and Castlight Health, according to the firm biography.",
+            "source_id": "bam_kristin_bio"
+          },
+          {
+            "field": "leadership_experience",
+            "label": "Combined experience",
+            "value": "The firm says its two co-leads have 45 years of combined experience building and investing in enterprise and health technology.",
+            "source_id": "bam_team"
+          }
+        ],
+        "current_roles": [
+          {
+            "title": "Co-lead",
+            "organization": "BAM Corner Point",
+            "source_id": "bam_team"
+          }
+        ],
+        "milestones": [],
+        "track_record": [
+          {
+            "description": "Higgsfield named this institution among participants in its $400 million Series B announced on 2026-08-17. The $400 million is the total round size; the institution's individual investment amount was not disclosed.",
+            "source_id": "FISRC-7c15ac15bf3d0b1a"
+          }
+        ],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "BAM Corner Point official website",
+            "value": "BAM Corner Point",
+            "url": "https://www.bamcornerpoint.com/",
+            "source_id": "bam_home"
+          },
+          {
+            "kind": "email",
+            "label": "官网公开一般联系邮箱",
+            "value": "contact@bamcornerpoint.com",
+            "source_id": "bam_contact"
+          }
+        ],
+        "last_verified_at": "2026-09-27"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -156047,19 +156259,32 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Capra Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
-        "track_record": [
-          {
-            "description": "融资来源记录：Higgsfield · B轮 · 2026-08-17 · 本轮参投 · 4 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-7c15ac15bf3d0b1a"
-          }
-        ],
-        "contacts": [],
+        "coverage_status": "researched",
         "sources": [
+          {
+            "source_id": "higgsfield_series_b_2026",
+            "source_url": "https://www.prnewswire.com/news-releases/higgsfield-raises-400-million-series-b-financing-at-5-4-billion-valuation-with-annualized-revenue-reaching-700-million-302852430.html",
+            "source_title": "Higgsfield Raises $400 Million Series B Financing at $5.4 Billion Valuation",
+            "source_content_hash": "6ca2492542cba497424d291c5b0b6295cadfc8c1ddb26044409ff4ea2161e85d",
+            "quote": "Existing investors also participated in the Series B, including Accel, Menlo Ventures, AI Capital Partners (Alpha Intelligence Capital's US-based fund), GFT Ventures, Capra Ventures, BAM Corner Point and BroadLight Capital.",
+            "quote_hash": "f291fb1f0a98126831eca8a8e3df5bbfcbac05ebe94ec8dbcf69be8845829ba7"
+          },
+          {
+            "source_id": "capra_home",
+            "source_url": "https://capra.vc/",
+            "source_title": "Capra Ventures — official website",
+            "source_content_hash": "6cec2eccd28fcc210088fbfb5c8c6875f3a6e7d6b95e0753b0f1f678c2c4c827",
+            "quote": "Drop us a line!",
+            "quote_hash": "a03fc7f2ecba94c0c600f53bce3810347362ccbd328e81e90a7c90c918ab92c1"
+          },
+          {
+            "source_id": "capra_formd",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/2085522/000110465925091304/xslFormDX08/primary_doc.xml",
+            "source_title": "SEC Form D — Capra Ventures H1 LLC",
+            "source_content_hash": "bdd0c82932f3129eb1ae2576fc180bb9026f8f08d39a5d7579f9da4a2d3dc0e8",
+            "quote": "Manager and Management Company of the Issuer",
+            "quote_hash": "915b33e2baf08f3da32425e50772cc3269f32fa2586f70ac47d6c06032d55528"
+          },
           {
             "source_id": "FISRC-7c15ac15bf3d0b1a",
             "source_url": "https://www.finsmes.com/2026/08/higgsfield-raises-400m-in-series-b-funding.html",
@@ -156069,7 +156294,64 @@
             "quote_hash": "f2d170b06d7d95a66bb1a37e76577ee8c44898a0f37d8ec63f1900d3f15ba92a"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "summary": "Capra Ventures 被 Higgsfield 列为 B 轮既有投资方。公开资料较少：其官网提供联系表单；美国 SEC 的 2025 年 Form D 将 Capra Ventures Management, LLC 列为 Capra Ventures H1 LLC 的管理人及管理公司。现有来源不足以核实其投资策略、团队履历或完整组合。",
+        "coverage_note": "本档案严格限于发行方融资公告、Capra 官网和 SEC Form D 可确认的内容。Form D 的基金及管理公司关系不用于推断 Capra Ventures 的投资策略、业绩或完整投资组合。备案中的联系地址和电话为 2025 年申报信息，使用前应确认是否仍有效。",
+        "facts": [
+          {
+            "field": "regulatory_relationship",
+            "label": "监管备案关系",
+            "value": "SEC 2025 年 Form D 将 Capra Ventures Management, LLC 列为 Capra Ventures H1 LLC 的管理人及管理公司。",
+            "source_id": "capra_formd"
+          },
+          {
+            "field": "public_information_limit",
+            "label": "公开资料范围",
+            "value": "官网目前提供联系表单，但没有足以核验投资策略、现任团队或完整组合的详细介绍。",
+            "source_id": "capra_home"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2025",
+            "description": "SEC Form D 记录 Capra Ventures H1 LLC，并列明 Capra Ventures Management, LLC 为其管理人及管理公司。",
+            "source_id": "capra_formd"
+          }
+        ],
+        "track_record": [
+          {
+            "description": "Higgsfield named this institution among participants in its $400 million Series B announced on 2026-08-17. The $400 million is the total round size; the institution's individual investment amount was not disclosed.",
+            "source_id": "FISRC-7c15ac15bf3d0b1a"
+          }
+        ],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "Capra Ventures official website",
+            "value": "Capra Ventures",
+            "url": "https://capra.vc/",
+            "source_id": "capra_home"
+          },
+          {
+            "kind": "contact_form",
+            "label": "官网联系表单",
+            "value": "Capra Ventures contact form",
+            "url": "https://capra.vc/",
+            "source_id": "capra_home"
+          },
+          {
+            "kind": "phone",
+            "label": "2025 年 SEC Form D 所列电话（备案联系方式，非确认中的投资申报渠道）",
+            "value": "+1 415 690 6374",
+            "source_id": "capra_formd"
+          },
+          {
+            "kind": "address",
+            "label": "2025 年 SEC Form D 所列地址（备案地址，建议确认是否仍有效）",
+            "value": "L8, 595 Market Street, San Francisco, CA 94105",
+            "source_id": "capra_formd"
+          }
+        ],
+        "last_verified_at": "2026-09-27"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -156231,21 +156513,42 @@
         "series_b"
       ],
       "public_profile": {
-        "profile_type": "unverified",
-        "identity_status": "pending_verification",
-        "coverage_status": "identity_unverified",
-        "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Fifth Wall 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
-        "track_record": [
-          {
-            "description": "融资来源记录：Higgsfield · B轮 · 2026-08-17 · 本轮参投 · 4 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-b235ace767812393"
-          }
-        ],
-        "contacts": [],
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched",
         "sources": [
+          {
+            "source_id": "higgsfield_series_b_2026",
+            "source_url": "https://www.prnewswire.com/news-releases/higgsfield-raises-400-million-series-b-financing-at-5-4-billion-valuation-with-annualized-revenue-reaching-700-million-302852430.html",
+            "source_title": "Higgsfield Raises $400 Million Series B Financing at $5.4 Billion Valuation",
+            "source_content_hash": "6ca2492542cba497424d291c5b0b6295cadfc8c1ddb26044409ff4ea2161e85d",
+            "quote": "The round was led by DST Global, with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, and NTT DOCOMO Ventures.",
+            "quote_hash": "c788152a6003fac547e7c26d1e3dc8c5b81adbfcc7e3eb0db9282b13cb495a62"
+          },
+          {
+            "source_id": "fifthwall_about",
+            "source_url": "https://www.fifthwall.com/about",
+            "source_title": "Fifth Wall — about and investment focus",
+            "source_content_hash": "4a25917f42367d3c896dd795e38a8dc4ad477dcf16868559352c68981e6587ca",
+            "quote": "Founded in 2016, Fifth Wall set out to address the collision happening between real estate and technology helping to define PropTech as an investment category.",
+            "quote_hash": "a1a0c13fda2db010e0fac47570953ae6ad5c7cc7556cf2005a0be5594bd7990c"
+          },
+          {
+            "source_id": "fifthwall_scale",
+            "source_url": "https://www.fifthwall.com/about",
+            "source_title": "Fifth Wall — about and investment focus",
+            "source_content_hash": "4a25917f42367d3c896dd795e38a8dc4ad477dcf16868559352c68981e6587ca",
+            "quote": "The Firm is driving the growth of ~170 companies, backing category-defining PropTech leaders such as Opendoor, Procore, Blend, Hippo, and Bilt Rewards.",
+            "quote_hash": "d30caa4715f6d93690079da14049e1ee0c89089aacc27311c2710417fa21e295"
+          },
+          {
+            "source_id": "fifthwall_contact",
+            "source_url": "https://www.fifthwall.com/contact",
+            "source_title": "Fifth Wall — contact, pitch and investor-relations contacts",
+            "source_content_hash": "2f176193016e06681e530d00137b020458ff8585fc7ee012da1133c8e3afd345",
+            "quote": "Pitch Us: ideas@fifthwall.com Partner With Us: investorrelations@fifthwall.com",
+            "quote_hash": "22d00514741c96c8695014f9873b9c290f703236d6f4c552cf18d875ff900ea0"
+          },
           {
             "source_id": "FISRC-b235ace767812393",
             "source_url": "https://siliconangle.com/2026/08/17/higgsfield-raises-400m-at-5-4-billion-valuation-to-scale-video-and-image-generation-platform/",
@@ -156255,7 +156558,82 @@
             "quote_hash": "802b4e0ce5c62a28a2fc893e6f1263efeb759174a6c6e4d57e7a3f8a1aa7de8c"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "summary": "Fifth Wall 是聚焦建成环境技术的投资机构，2016 年成立，总部位于洛杉矶，另在旧金山和伦敦设办公室。其官网将投资重点描述为房地产与科技交汇处的 PropTech / Built World，并列示约 170 家组合公司；这些规模数字为机构自述。",
+        "coverage_note": "成立年份、投资方向、办公地点、组合规模和联系渠道来自 Fifth Wall 官网。组合数量与案例是官网自述且会随时间变化，不代表投资回报或完整投资组合。Higgsfield 公告披露本轮整轮融资 4 亿美元，未披露 Fifth Wall 单笔投资额。",
+        "facts": [
+          {
+            "field": "founded",
+            "label": "成立时间",
+            "value": "2016 年。",
+            "source_id": "fifthwall_about"
+          },
+          {
+            "field": "investment_thesis",
+            "label": "投资方向",
+            "value": "房地产与科技交汇处的建成环境技术，重点关注 PropTech / Built World。",
+            "source_id": "fifthwall_about"
+          },
+          {
+            "field": "firm_background",
+            "label": "机构背景",
+            "value": "总部位于洛杉矶，另有旧金山和伦敦办公室；官网将其定位为聚焦建成环境科技的投资机构。",
+            "source_id": "fifthwall_about"
+          },
+          {
+            "field": "selected_portfolio",
+            "label": "官网自述组合规模与案例",
+            "value": "官网称组合约 170 家公司，并列示 Opendoor、Procore、Blend、Hippo、Bilt Rewards 等；该数字和名单不代表完整组合或回报。",
+            "source_id": "fifthwall_scale"
+          },
+          {
+            "field": "leadership",
+            "label": "创办人",
+            "value": "官网称 Fifth Wall 由 Brendan Wallace 创立。",
+            "source_id": "fifthwall_about"
+          }
+        ],
+        "current_roles": [],
+        "milestones": [
+          {
+            "date": "2016",
+            "description": "Fifth Wall 官网称机构于 2016 年成立，聚焦房地产与科技交叉领域。",
+            "source_id": "fifthwall_about"
+          }
+        ],
+        "track_record": [
+          {
+            "description": "Higgsfield named this institution among participants in its $400 million Series B announced on 2026-08-17. The $400 million is the total round size; the institution's individual investment amount was not disclosed.",
+            "source_id": "FISRC-b235ace767812393"
+          }
+        ],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "Fifth Wall official website",
+            "value": "Fifth Wall",
+            "url": "https://www.fifthwall.com/about",
+            "source_id": "fifthwall_about"
+          },
+          {
+            "kind": "email",
+            "label": "官网公开投资项目提交邮箱",
+            "value": "ideas@fifthwall.com",
+            "source_id": "fifthwall_contact"
+          },
+          {
+            "kind": "email",
+            "label": "官网公开投资人关系邮箱",
+            "value": "investorrelations@fifthwall.com",
+            "source_id": "fifthwall_contact"
+          },
+          {
+            "kind": "address",
+            "label": "官网列示洛杉矶办公室",
+            "value": "301 N Canon Dr #325, Beverly Hills, CA 90210",
+            "source_id": "fifthwall_contact"
+          }
+        ],
+        "last_verified_at": "2026-09-27"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -156607,21 +156985,26 @@
         "series_b"
       ],
       "public_profile": {
-        "profile_type": "unverified",
-        "identity_status": "pending_verification",
-        "coverage_status": "identity_unverified",
-        "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Growth Equity at Goldman Sachs Alternatives 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
-        "track_record": [
-          {
-            "description": "融资来源记录：Higgsfield · B轮 · 2026-08-17 · 本轮参投 · 4 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-b235ace767812393"
-          }
-        ],
-        "contacts": [],
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched",
         "sources": [
+          {
+            "source_id": "higgsfield_series_b_2026",
+            "source_url": "https://www.prnewswire.com/news-releases/higgsfield-raises-400-million-series-b-financing-at-5-4-billion-valuation-with-annualized-revenue-reaching-700-million-302852430.html",
+            "source_title": "Higgsfield Raises $400 Million Series B Financing at $5.4 Billion Valuation",
+            "source_content_hash": "6ca2492542cba497424d291c5b0b6295cadfc8c1ddb26044409ff4ea2161e85d",
+            "quote": "The round was led by DST Global, with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, and NTT DOCOMO Ventures.",
+            "quote_hash": "c788152a6003fac547e7c26d1e3dc8c5b81adbfcc7e3eb0db9282b13cb495a62"
+          },
+          {
+            "source_id": "goldman_alternatives",
+            "source_url": "https://www.goldmansachs.com/what-we-do/our-businesses",
+            "source_title": "Goldman Sachs — asset management and alternatives",
+            "source_content_hash": "161c5c87c5c967489c2db7bb6b208b89d3f15d6369e3dd90dc4b8831232de6a3",
+            "quote": "Investing in the full spectrum of alternatives",
+            "quote_hash": "368f83d1063bb85093299efa8c8a2a7c52b9a9d1cb5650d88c232e212d968059"
+          },
           {
             "source_id": "FISRC-b235ace767812393",
             "source_url": "https://siliconangle.com/2026/08/17/higgsfield-raises-400m-at-5-4-billion-valuation-to-scale-video-and-image-generation-platform/",
@@ -156631,7 +157014,46 @@
             "quote_hash": "802b4e0ce5c62a28a2fc893e6f1263efeb759174a6c6e4d57e7a3f8a1aa7de8c"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "summary": "融资公告中的 “Growth Equity at Goldman Sachs Alternatives” 指 Goldman Sachs Alternatives 体系内的成长股权投资业务线；Goldman Sachs 官网将 growth equity 列为 Alternatives 的投资类别。本档案将其作为集团内投资业务单元描述，不视为单独注册机构。",
+        "coverage_note": "投资方名称及其参与 Higgsfield 融资由发行方公告支持；growth equity 属于 Goldman Sachs Alternatives 的业务分类由 Goldman Sachs 官网支持。此处的资产管理平台规模、业务描述均为集团层面信息，不等同于该投资团队单独的资产规模或业绩。整轮金额 4 亿美元不是该团队的单笔投资额。",
+        "facts": [
+          {
+            "field": "organization_relationship",
+            "label": "机构关系",
+            "value": "Growth Equity at Goldman Sachs Alternatives 是 Goldman Sachs Alternatives 体系内的成长股权投资业务，不作为独立法人描述。",
+            "source_id": "goldman_alternatives"
+          },
+          {
+            "field": "investment_scope",
+            "label": "投资类别",
+            "value": "Goldman Sachs 官网列示 Alternatives 覆盖私募股权、成长股权、私募信贷、房地产、基础设施及对冲基金。",
+            "source_id": "goldman_alternatives"
+          },
+          {
+            "field": "group_context",
+            "label": "集团业务背景",
+            "value": "该业务属于 Goldman Sachs Asset & Wealth Management 的另类投资平台；此为集团层级背景，不代表团队独立规模。",
+            "source_id": "goldman_alternatives"
+          }
+        ],
+        "current_roles": [],
+        "milestones": [],
+        "track_record": [
+          {
+            "description": "Higgsfield named this institution among participants in its $400 million Series B announced on 2026-08-17. The $400 million is the total round size; the institution's individual investment amount was not disclosed.",
+            "source_id": "FISRC-b235ace767812393"
+          }
+        ],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "Goldman Sachs Asset Management official website",
+            "value": "Goldman Sachs Asset Management",
+            "url": "https://am.gs.com/",
+            "source_id": "goldman_alternatives"
+          }
+        ],
+        "last_verified_at": "2026-09-27"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -156931,19 +157353,40 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Liberty Global Tech Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
-        "track_record": [
-          {
-            "description": "融资来源记录：Higgsfield · B轮 · 2026-08-17 · 本轮参投 · 4 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-7c15ac15bf3d0b1a"
-          }
-        ],
-        "contacts": [],
+        "coverage_status": "researched",
         "sources": [
+          {
+            "source_id": "higgsfield_series_b_2026",
+            "source_url": "https://www.prnewswire.com/news-releases/higgsfield-raises-400-million-series-b-financing-at-5-4-billion-valuation-with-annualized-revenue-reaching-700-million-302852430.html",
+            "source_title": "Higgsfield Raises $400 Million Series B Financing at $5.4 Billion Valuation",
+            "source_content_hash": "6ca2492542cba497424d291c5b0b6295cadfc8c1ddb26044409ff4ea2161e85d",
+            "quote": "The round was led by DST Global, with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, and NTT DOCOMO Ventures.",
+            "quote_hash": "c788152a6003fac547e7c26d1e3dc8c5b81adbfcc7e3eb0db9282b13cb495a62"
+          },
+          {
+            "source_id": "liberty_investment",
+            "source_url": "https://www.libertyglobal.com/liberty-global-tech-ventures-higgsfield/",
+            "source_title": "Liberty Global Tech Ventures Invests in Higgsfield",
+            "source_content_hash": "a410b6bbb17130b66d345f4bc6e6b65f760b2948ab245aace3942d32252d9297",
+            "quote": "Liberty Global Tech Ventures, the technology investment arm of Liberty Global, today announced an investment in Higgsfield, an AI video and image creation platform for creators, brands, agencies and studios.",
+            "quote_hash": "a396ab6cb3c9023484d9b3e6d29434ad099b270b665448a4dd01e77d896a1fe2"
+          },
+          {
+            "source_id": "liberty_strategy",
+            "source_url": "https://www.libertyglobal.com/liberty-global-tech-ventures-higgsfield/",
+            "source_title": "Liberty Global Tech Ventures Invests in Higgsfield",
+            "source_content_hash": "a410b6bbb17130b66d345f4bc6e6b65f760b2948ab245aace3942d32252d9297",
+            "quote": "Liberty Global Tech Ventures is part of Liberty Growth",
+            "quote_hash": "46b55769ca9cd3a29b6fe9051ea6ea4084ddf5ef0e3a9242eb7bbf3e52fd40dc"
+          },
+          {
+            "source_id": "liberty_contact",
+            "source_url": "https://www.libertyglobal.com/contact/",
+            "source_title": "Liberty Global — corporate and investor-relations contacts",
+            "source_content_hash": "82e98e621618a93d9edadda9f5ce4e50ad43df05bf6747eaa7a742d198e6dde0",
+            "quote": "ir@libertyglobal.com",
+            "quote_hash": "4ca933ff72ae79db997aa031f85b4169421607f1e2d76a0e1442b0d095d7df6b"
+          },
           {
             "source_id": "FISRC-7c15ac15bf3d0b1a",
             "source_url": "https://www.finsmes.com/2026/08/higgsfield-raises-400m-in-series-b-funding.html",
@@ -156951,9 +157394,82 @@
             "source_content_hash": "66d04514886f3d3e",
             "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, NTT DOCOMO Ventures, Accel, Menlo Ventures, AI Capital Partners, GFT Ventures, Capra Ventures, BAM Corner Point, BroadLight Capital, and Natalia Vodianova Arnault",
             "quote_hash": "f2d170b06d7d95a66bb1a37e76577ee8c44898a0f37d8ec63f1900d3f15ba92a"
+          },
+          {
+            "source_id": "liberty_partner",
+            "source_url": "https://www.libertyglobal.com/liberty-global-tech-ventures-higgsfield/",
+            "source_title": "Liberty Global Tech Ventures Invests in Higgsfield",
+            "source_content_hash": "a410b6bbb17130b66d345f4bc6e6b65f760b2948ab245aace3942d32252d9297",
+            "quote": "Ankur Prakash, Partner at Liberty Global Tech Ventures",
+            "quote_hash": "1c5a1ece2ef9f455e169bb002bd8a406d15c79076f2f0bffa43f339aa520981f"
+          },
+          {
+            "source_id": "liberty_investment_thesis",
+            "source_url": "https://www.libertyglobal.com/liberty-global-tech-ventures-higgsfield/",
+            "source_title": "Liberty Global Tech Ventures Invests in Higgsfield",
+            "source_content_hash": "a410b6bbb17130b66d345f4bc6e6b65f760b2948ab245aace3942d32252d9297",
+            "quote": "The Tech Ventures team invests in category-defining AI and technology businesses which operate in large markets",
+            "quote_hash": "07ea6dbe8b82f2f1fbc2f328ebfb7bfff1dd1f6db9ba01451ccdb5c84f7249b8"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "summary": "Liberty Global Tech Ventures 是 Liberty Global 的科技投资部门，隶属 Liberty Growth，关注可规模化的科技、媒体、体育、服务与基础设施业务。该部门通过自身公告确认投资 Higgsfield；公司未披露本机构在 4 亿美元整轮中的单笔出资额。",
+        "coverage_note": "部门归属、投资策略及 Higgsfield 投资来自 Liberty Global / Tech Ventures 官方公告；投资人关系联系方式来自母公司 Liberty Global 官网。联系方式为母公司投资者关系渠道，不应视作 Tech Ventures 的创业项目申报邮箱。",
+        "facts": [
+          {
+            "field": "organization_relationship",
+            "label": "机构背景",
+            "value": "Liberty Global 的科技投资部门，隶属 Liberty Growth 投资组合。",
+            "source_id": "liberty_strategy"
+          },
+          {
+            "field": "investment_thesis",
+            "label": "投资方向",
+            "value": "面向大型市场、具有规模化潜力的 AI 与科技公司，强调管理团队的产品推出和商业化能力。",
+            "source_id": "liberty_investment_thesis"
+          },
+          {
+            "field": "investment_activity",
+            "label": "已披露投资",
+            "value": "Liberty Global Tech Ventures 官方公告确认其投资 Higgsfield。",
+            "source_id": "liberty_investment"
+          },
+          {
+            "field": "leadership",
+            "label": "公开管理团队线索",
+            "value": "公告引述 Ankur Prakash，并标注其为 Liberty Global Tech Ventures 合伙人；不据此推断其单独负责该交易。",
+            "source_id": "liberty_partner"
+          }
+        ],
+        "current_roles": [
+          {
+            "title": "Partner",
+            "organization": "Liberty Global Tech Ventures",
+            "source_id": "liberty_partner"
+          }
+        ],
+        "milestones": [],
+        "track_record": [
+          {
+            "description": "Higgsfield named this institution among participants in its $400 million Series B announced on 2026-08-17. The $400 million is the total round size; the institution's individual investment amount was not disclosed.",
+            "source_id": "FISRC-7c15ac15bf3d0b1a"
+          }
+        ],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "Liberty Global Tech Ventures official website",
+            "value": "Liberty Global Tech Ventures",
+            "url": "https://www.libertyglobal.com/liberty-global-tech-ventures-higgsfield/",
+            "source_id": "liberty_investment"
+          },
+          {
+            "kind": "email",
+            "label": "母公司 Liberty Global 投资者关系邮箱（非 Tech Ventures 项目申报）",
+            "value": "ir@libertyglobal.com",
+            "source_id": "liberty_contact"
+          }
+        ],
+        "last_verified_at": "2026-09-27"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -157245,19 +157761,40 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Mirae Asset Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
-        "track_record": [
-          {
-            "description": "融资来源记录：Higgsfield · B轮 · 2026-08-17 · 本轮参投 · 4 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-7c15ac15bf3d0b1a"
-          }
-        ],
-        "contacts": [],
+        "coverage_status": "researched",
         "sources": [
+          {
+            "source_id": "higgsfield_series_b_2026",
+            "source_url": "https://www.prnewswire.com/news-releases/higgsfield-raises-400-million-series-b-financing-at-5-4-billion-valuation-with-annualized-revenue-reaching-700-million-302852430.html",
+            "source_title": "Higgsfield Raises $400 Million Series B Financing at $5.4 Billion Valuation",
+            "source_content_hash": "6ca2492542cba497424d291c5b0b6295cadfc8c1ddb26044409ff4ea2161e85d",
+            "quote": "The round was led by DST Global, with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, and NTT DOCOMO Ventures.",
+            "quote_hash": "c788152a6003fac547e7c26d1e3dc8c5b81adbfcc7e3eb0db9282b13cb495a62"
+          },
+          {
+            "source_id": "mirae_home",
+            "source_url": "https://vc.miraeassetcapital.com/",
+            "source_title": "Mirae Asset Capital — venture and new-growth investment",
+            "source_content_hash": "e7191f7809a8123b45eef90827208627c518d344c2b92639867fb6a83bfd7ea2",
+            "quote": "customized financing solutions",
+            "quote_hash": "476d82086a25ad591029690b85e0718329b73e39df1aab39dcd04c7685a3c92e"
+          },
+          {
+            "source_id": "mirae_venture",
+            "source_url": "https://vc.miraeassetcapital.com/",
+            "source_title": "Mirae Asset Capital — venture and new-growth investment",
+            "source_content_hash": "e7191f7809a8123b45eef90827208627c518d344c2b92639867fb6a83bfd7ea2",
+            "quote": "Investing in the next generation of disruptors",
+            "quote_hash": "bbf71d619975144d578acb27076666bd8007117c98d1013e0d6ac76075e28e31"
+          },
+          {
+            "source_id": "mirae_address",
+            "source_url": "https://vc.miraeassetcapital.com/",
+            "source_title": "Mirae Asset Capital — venture and new-growth investment",
+            "source_content_hash": "e7191f7809a8123b45eef90827208627c518d344c2b92639867fb6a83bfd7ea2",
+            "quote": "18F, Parnas Tower, 521, Teheran-ro, Gangnam-gu, Seoul, 06164",
+            "quote_hash": "d819e424378dcf2c9562f36ec005cde83bae6f8c659bcd6ac0d52655f46d307e"
+          },
           {
             "source_id": "FISRC-7c15ac15bf3d0b1a",
             "source_url": "https://www.finsmes.com/2026/08/higgsfield-raises-400m-in-series-b-funding.html",
@@ -157265,9 +157802,112 @@
             "source_content_hash": "66d04514886f3d3e",
             "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, NTT DOCOMO Ventures, Accel, Menlo Ventures, AI Capital Partners, GFT Ventures, Capra Ventures, BAM Corner Point, BroadLight Capital, and Natalia Vodianova Arnault",
             "quote_hash": "f2d170b06d7d95a66bb1a37e76577ee8c44898a0f37d8ec63f1900d3f15ba92a"
+          },
+          {
+            "source_id": "mirae_growth",
+            "source_url": "https://vc.miraeassetcapital.com/",
+            "source_title": "Mirae Asset Capital — venture and new-growth investment",
+            "source_content_hash": "e7191f7809a8123b45eef90827208627c518d344c2b92639867fb6a83bfd7ea2",
+            "quote": "while facilitating investment in new growth areas",
+            "quote_hash": "a80726347c8f7907e5302f3581e2288ed3e41aba19f749353f73360d8a667937"
+          },
+          {
+            "source_id": "mirae_tmt",
+            "source_url": "https://vc.miraeassetcapital.com/",
+            "source_title": "Mirae Asset Capital — portfolio categories",
+            "source_content_hash": "e7191f7809a8123b45eef90827208627c518d344c2b92639867fb6a83bfd7ea2",
+            "quote": "TMT Portfolio",
+            "quote_hash": "5983185d939c209e8b3d632da17dc8973576d409003b239b7eab49258fce3c8a"
+          },
+          {
+            "source_id": "mirae_blockchain",
+            "source_url": "https://vc.miraeassetcapital.com/",
+            "source_title": "Mirae Asset Capital — portfolio categories",
+            "source_content_hash": "e7191f7809a8123b45eef90827208627c518d344c2b92639867fb6a83bfd7ea2",
+            "quote": "Blockchain Portfolio",
+            "quote_hash": "eaed9dde93b1691cf5a6ae4f76978966f61e01065f6e1839e7a2d30fb1a22372"
+          },
+          {
+            "source_id": "mirae_emerging",
+            "source_url": "https://vc.miraeassetcapital.com/",
+            "source_title": "Mirae Asset Capital — portfolio categories",
+            "source_content_hash": "e7191f7809a8123b45eef90827208627c518d344c2b92639867fb6a83bfd7ea2",
+            "quote": "Emerging Business Portfolio",
+            "quote_hash": "03d7f971539297b81afaf7762ef298557f994afff899caa323af74dcf505b419"
+          },
+          {
+            "source_id": "mirae_healthcare",
+            "source_url": "https://vc.miraeassetcapital.com/",
+            "source_title": "Mirae Asset Capital — portfolio categories",
+            "source_content_hash": "e7191f7809a8123b45eef90827208627c518d344c2b92639867fb6a83bfd7ea2",
+            "quote": "Life Sciences/Healthcare Portfolio",
+            "quote_hash": "2594caacb9d6fe755ff0423613d34288c3e7558746f2bd288893d9843a2b527e"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "summary": "Mirae Asset Capital 官网将其定位为提供定制融资方案、同时投资新增长领域的机构；官网分列 Venture Investment 与 New Growth Investment，并展示 TMT、区块链、新兴业务及生命科学/医疗健康组合板块。官网列示办公地址在韩国首尔。",
+        "coverage_note": "机构描述、投资板块和办公地址来自 Mirae Asset Capital 官网。官网动态页面未提供可稳定核验的规模数据或公开投资团队履历，因此本档案不推测其管理规模、个人职责或 Higgsfield 单笔出资额。融资公告披露的 4 亿美元为整轮规模。",
+        "facts": [
+          {
+            "field": "business_profile",
+            "label": "机构介绍",
+            "value": "官网介绍其提供定制融资方案，并促进对新增长领域的投资。",
+            "source_id": "mirae_growth"
+          },
+          {
+            "field": "investment_platforms",
+            "label": "投资业务",
+            "value": "官网分别列出 Venture Investment 与 New Growth Investment。",
+            "source_id": "mirae_venture"
+          },
+          {
+            "field": "portfolio_sector",
+            "label": "Officially listed portfolio category",
+            "value": "The official website maintains a TMT portfolio category.",
+            "source_id": "mirae_tmt"
+          },
+          {
+            "field": "portfolio_sector",
+            "label": "Officially listed portfolio category",
+            "value": "The official website maintains a blockchain portfolio category.",
+            "source_id": "mirae_blockchain"
+          },
+          {
+            "field": "portfolio_sector",
+            "label": "Officially listed portfolio category",
+            "value": "The official website maintains a emerging businesses portfolio category.",
+            "source_id": "mirae_emerging"
+          },
+          {
+            "field": "portfolio_sector",
+            "label": "Officially listed portfolio category",
+            "value": "The official website maintains a life sciences and healthcare portfolio category.",
+            "source_id": "mirae_healthcare"
+          }
+        ],
+        "current_roles": [],
+        "milestones": [],
+        "track_record": [
+          {
+            "description": "Higgsfield named this institution among participants in its $400 million Series B announced on 2026-08-17. The $400 million is the total round size; the institution's individual investment amount was not disclosed.",
+            "source_id": "FISRC-7c15ac15bf3d0b1a"
+          }
+        ],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "Mirae Asset Capital official website",
+            "value": "Mirae Asset Capital",
+            "url": "https://vc.miraeassetcapital.com/",
+            "source_id": "mirae_home"
+          },
+          {
+            "kind": "address",
+            "label": "官网列示办公地址",
+            "value": "18F, Parnas Tower, 521 Teheran-ro, Gangnam-gu, Seoul 06164, South Korea",
+            "source_id": "mirae_address"
+          }
+        ],
+        "last_verified_at": "2026-09-27"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -157710,19 +158350,48 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "NTT DOCOMO Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
-        "track_record": [
-          {
-            "description": "融资来源记录：Higgsfield · B轮 · 2026-08-17 · 本轮参投 · 4 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-7c15ac15bf3d0b1a"
-          }
-        ],
-        "contacts": [],
+        "coverage_status": "researched",
         "sources": [
+          {
+            "source_id": "higgsfield_series_b_2026",
+            "source_url": "https://www.prnewswire.com/news-releases/higgsfield-raises-400-million-series-b-financing-at-5-4-billion-valuation-with-annualized-revenue-reaching-700-million-302852430.html",
+            "source_title": "Higgsfield Raises $400 Million Series B Financing at $5.4 Billion Valuation",
+            "source_content_hash": "6ca2492542cba497424d291c5b0b6295cadfc8c1ddb26044409ff4ea2161e85d",
+            "quote": "The round was led by DST Global, with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, and NTT DOCOMO Ventures.",
+            "quote_hash": "c788152a6003fac547e7c26d1e3dc8c5b81adbfcc7e3eb0db9282b13cb495a62"
+          },
+          {
+            "source_id": "ntt_company",
+            "source_url": "https://www.nttdocomo-v.com/en/company/",
+            "source_title": "NTT DOCOMO Ventures — company overview",
+            "source_content_hash": "cbd4885dad1915c999f17e97d6933f2fc8429d9585f49f9c7f05f728b4c1bae0",
+            "quote": "Operation of corporate venture fund investing promising startups around the world",
+            "quote_hash": "56398716be9d1819cea65296614355c546232165b7485bbd73e98f96c19f991c"
+          },
+          {
+            "source_id": "ntt_ownership",
+            "source_url": "https://www.nttdocomo-v.com/en/company/",
+            "source_title": "NTT DOCOMO Ventures — company overview",
+            "source_content_hash": "cbd4885dad1915c999f17e97d6933f2fc8429d9585f49f9c7f05f728b4c1bae0",
+            "quote": "NTT DOCOMO, INC. : 100%",
+            "quote_hash": "1cde193dd0c4f3c1d7251b2bb7926501485b70f78af85bed5845165cf1e321fd"
+          },
+          {
+            "source_id": "ntt_investment",
+            "source_url": "https://www.nttdocomo-v.com/en/news/d2enykqybc/",
+            "source_title": "NTT DOCOMO Ventures invests in Higgsfield",
+            "source_content_hash": "bca5447bd6cfacc3ec19c63ecb26143c5f1276c35bcca0fbb8e9794e2b47aed8",
+            "quote": "through a fund it manages, it has invested in Higgsfield, Inc.",
+            "quote_hash": "3be8a1ef5d313a5226d8653531e46a0ca0e2629b6dde6b7feb7cf3ded7c77b35"
+          },
+          {
+            "source_id": "ntt_contact",
+            "source_url": "https://www.nttdocomo-v.com/en/news/d2enykqybc/",
+            "source_title": "NTT DOCOMO Ventures invests in Higgsfield",
+            "source_content_hash": "bca5447bd6cfacc3ec19c63ecb26143c5f1276c35bcca0fbb8e9794e2b47aed8",
+            "quote": "kouhou-ml@nttdocomo-v.com",
+            "quote_hash": "014a288498954fa4629aa95529a5dded85ea04b05235d3ef90dbaa41b01c8d2b"
+          },
           {
             "source_id": "FISRC-7c15ac15bf3d0b1a",
             "source_url": "https://www.finsmes.com/2026/08/higgsfield-raises-400m-in-series-b-funding.html",
@@ -157730,9 +158399,147 @@
             "source_content_hash": "66d04514886f3d3e",
             "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, NTT DOCOMO Ventures, Accel, Menlo Ventures, AI Capital Partners, GFT Ventures, Capra Ventures, BAM Corner Point, BroadLight Capital, and Natalia Vodianova Arnault",
             "quote_hash": "f2d170b06d7d95a66bb1a37e76577ee8c44898a0f37d8ec63f1900d3f15ba92a"
+          },
+          {
+            "source_id": "ntt_leadership",
+            "source_url": "https://www.nttdocomo-v.com/en/company/",
+            "source_title": "NTT DOCOMO Ventures — company overview",
+            "source_content_hash": "cbd4885dad1915c999f17e97d6933f2fc8429d9585f49f9c7f05f728b4c1bae0",
+            "quote": "CEO・CCO : Yuko Sasahara COO : Jun Yasumoto",
+            "quote_hash": "2f51fe51d4836cbae1cc9d149afd334bc53cb97b975cf980fdb7fef28096d930"
+          },
+          {
+            "source_id": "ntt_fund_history",
+            "source_url": "https://www.nttdocomo-v.com/en/company/",
+            "source_title": "NTT DOCOMO Ventures — company overview",
+            "source_content_hash": "cbd4885dad1915c999f17e97d6933f2fc8429d9585f49f9c7f05f728b4c1bae0",
+            "quote": "January 2026 Established a JPY 15 billion new venture fund, DOCOMO Innovation Fund IV, L.P.",
+            "quote_hash": "7757d34212d83b564a3446294f4515c969130df6a096ded40aead265cb14fce8"
+          },
+          {
+            "source_id": "ntt_founded",
+            "source_url": "https://www.nttdocomo-v.com/en/company/",
+            "source_title": "NTT DOCOMO Ventures — company overview",
+            "source_content_hash": "cbd4885dad1915c999f17e97d6933f2fc8429d9585f49f9c7f05f728b4c1bae0",
+            "quote": "Established February 20, 2008",
+            "quote_hash": "a7d3eac6db37ac1d81f728dfb6b8050721fb41d84c214589ae674b3257f0212a"
+          },
+          {
+            "source_id": "ntt_silicon_valley",
+            "source_url": "https://www.nttdocomo-v.com/en/company/",
+            "source_title": "NTT DOCOMO Ventures — company overview",
+            "source_content_hash": "cbd4885dad1915c999f17e97d6933f2fc8429d9585f49f9c7f05f728b4c1bae0",
+            "quote": "Silicon Valley branch in the United States",
+            "quote_hash": "c8b94a87fd14279adfb695fbb462befd55c7ce267b8d42713a5a88102f90949b"
+          },
+          {
+            "source_id": "ntt_hq",
+            "source_url": "https://www.nttdocomo-v.com/en/company/",
+            "source_title": "NTT DOCOMO Ventures — company overview",
+            "source_content_hash": "cbd4885dad1915c999f17e97d6933f2fc8429d9585f49f9c7f05f728b4c1bae0",
+            "quote": "Azabudai Hills Mori JP Tower 23F, 3-1 Azabudai 1-Chome, Minato-ku, Tokyo 106-0041, Japan",
+            "quote_hash": "33fdebc8d0cf11fa677aef4b5ef6d4737d14d39c83074c7b6e4d49cd43f16001"
+          },
+          {
+            "source_id": "ntt_collaboration",
+            "source_url": "https://www.nttdocomo-v.com/en/company/",
+            "source_title": "NTT DOCOMO Ventures — company overview",
+            "source_content_hash": "cbd4885dad1915c999f17e97d6933f2fc8429d9585f49f9c7f05f728b4c1bae0",
+            "quote": "Operation of collaboration / Startup support",
+            "quote_hash": "87d23bf62ee221694c9f9152ea49aa7ca12dcdb82883cb32924cf2adef68ae57"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "summary": "NTT DOCOMO Ventures 是 NTT DOCOMO 全资持有的企业风险投资与创业协作平台，2008 年设立，在东京和硅谷开展业务。其官网披露运营多支企业创投基金、支持全球创业公司与 NTT 集团协同；公司于 2026 年公告通过其管理的基金投资 Higgsfield。",
+        "coverage_note": "公司沿革、所有权、管理层、基金运营和办公地址来自 NTT DOCOMO Ventures 官网；Higgsfield 投资来自其官方公告。公告中的 4 亿美元是 Higgsfield 整轮融资规模，NTT DOCOMO Ventures 单笔出资额未披露。新闻联系邮箱仅用于媒体咨询。",
+        "facts": [
+          {
+            "field": "founded",
+            "label": "成立时间",
+            "value": "2008 年 2 月 20 日。",
+            "source_id": "ntt_founded"
+          },
+          {
+            "field": "ownership",
+            "label": "股权关系",
+            "value": "NTT DOCOMO, Inc. 持股 100%。",
+            "source_id": "ntt_ownership"
+          },
+          {
+            "field": "business_model",
+            "label": "业务与策略",
+            "value": "运营企业风险投资基金投资全球有潜力的创业公司，并推动与 NTT 集团的协作和业务共创。",
+            "source_id": "ntt_collaboration"
+          },
+          {
+            "field": "leadership",
+            "label": "管理层",
+            "value": "公司页面列 Yuko Sasahara 为 CEO & CCO、Jun Yasumoto 为 COO。",
+            "source_id": "ntt_leadership"
+          },
+          {
+            "field": "fund_history",
+            "label": "基金成绩与发展",
+            "value": "官网列示 2026 年设立 150 亿日元 DOCOMO Innovation Fund IV；这是基金规模披露，不是投资回报。",
+            "source_id": "ntt_fund_history"
+          }
+        ],
+        "current_roles": [
+          {
+            "title": "CEO & CCO",
+            "organization": "NTT DOCOMO Ventures, Inc.",
+            "source_id": "ntt_leadership"
+          },
+          {
+            "title": "COO",
+            "organization": "NTT DOCOMO Ventures, Inc.",
+            "source_id": "ntt_leadership"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2008-02-20",
+            "description": "NTT Investment Partners, Inc. 成立并启动首支 100 亿日元企业创投基金。",
+            "source_id": "ntt_founded"
+          },
+          {
+            "date": "2017-01",
+            "description": "设立美国硅谷分支。",
+            "source_id": "ntt_silicon_valley"
+          },
+          {
+            "date": "2026-01",
+            "description": "设立 150 亿日元 DOCOMO Innovation Fund IV。",
+            "source_id": "ntt_fund_history"
+          }
+        ],
+        "track_record": [
+          {
+            "description": "Higgsfield named this institution among participants in its $400 million Series B announced on 2026-08-17. The $400 million is the total round size; the institution's individual investment amount was not disclosed.",
+            "source_id": "FISRC-7c15ac15bf3d0b1a"
+          }
+        ],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "NTT DOCOMO Ventures official website",
+            "value": "NTT DOCOMO Ventures",
+            "url": "https://www.nttdocomo-v.com/en/",
+            "source_id": "ntt_company"
+          },
+          {
+            "kind": "address",
+            "label": "东京总部",
+            "value": "Azabudai Hills Mori JP Tower 23F, 1-3-1 Azabudai, Minato-ku, Tokyo 106-0041, Japan",
+            "source_id": "ntt_hq"
+          },
+          {
+            "kind": "email",
+            "label": "官网公告所列媒体咨询邮箱（非投资申报渠道）",
+            "value": "kouhou-ml@nttdocomo-v.com",
+            "source_id": "ntt_contact"
+          }
+        ],
+        "last_verified_at": "2026-09-27"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -158149,19 +158956,48 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Smash Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
-        "track_record": [
-          {
-            "description": "融资来源记录：Higgsfield · B轮 · 2026-08-17 · 本轮参投 · 4 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-b235ace767812393"
-          }
-        ],
-        "contacts": [],
+        "coverage_status": "researched",
         "sources": [
+          {
+            "source_id": "higgsfield_series_b_2026",
+            "source_url": "https://www.prnewswire.com/news-releases/higgsfield-raises-400-million-series-b-financing-at-5-4-billion-valuation-with-annualized-revenue-reaching-700-million-302852430.html",
+            "source_title": "Higgsfield Raises $400 Million Series B Financing at $5.4 Billion Valuation",
+            "source_content_hash": "6ca2492542cba497424d291c5b0b6295cadfc8c1ddb26044409ff4ea2161e85d",
+            "quote": "The round was led by DST Global, with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, and NTT DOCOMO Ventures.",
+            "quote_hash": "c788152a6003fac547e7c26d1e3dc8c5b81adbfcc7e3eb0db9282b13cb495a62"
+          },
+          {
+            "source_id": "smash_team",
+            "source_url": "https://smashcap.com/team/",
+            "source_title": "Smash Capital — team and partners",
+            "source_content_hash": "e93930259830af561a2732d38970de5a6f8845662ed40fba31c4ade46d4c6daa",
+            "quote": "Our partnership has previously invested over $4 billion in venture capital and over $100 billion in control transactions across decades of shared professional experience.",
+            "quote_hash": "0dfdb9ae9750c3138a00c5fda4b6066833c13c020082cc07cb4b010443c605d4"
+          },
+          {
+            "source_id": "smash_founders",
+            "source_url": "https://smashcap.com/team/",
+            "source_title": "Smash Capital — team and partners",
+            "source_content_hash": "e93930259830af561a2732d38970de5a6f8845662ed40fba31c4ade46d4c6daa",
+            "quote": "Eric Garland",
+            "quote_hash": "08cb89b545233473d38d559c352f057ad4694a83e3ffcc6896beefdfde6b75a8"
+          },
+          {
+            "source_id": "smash_investments",
+            "source_url": "https://smashcap.com/investments/",
+            "source_title": "Smash Capital — investments and attribution notes",
+            "source_content_hash": "b3f0b3c4de561e8bf164f552149ff7179b74a97bf1175d22bbf1118ee3dd7850",
+            "quote": "All other investments referenced above were made by Smash Capital Advisors LP and its current investment team.",
+            "quote_hash": "f8b0ddb2363eba3c9096bf575ad70f33878208d90df41e4aaf5cdecf87118073"
+          },
+          {
+            "source_id": "smash_contact",
+            "source_url": "https://smashcap.com/team/",
+            "source_title": "Smash Capital — team and partners",
+            "source_content_hash": "e93930259830af561a2732d38970de5a6f8845662ed40fba31c4ade46d4c6daa",
+            "quote": "info@smashcap.com",
+            "quote_hash": "7a1030fddeccd1466d6e105a375f41ff74cfa84a59549dd3cbeb4c829cc5f330"
+          },
           {
             "source_id": "FISRC-b235ace767812393",
             "source_url": "https://siliconangle.com/2026/08/17/higgsfield-raises-400m-at-5-4-billion-valuation-to-scale-video-and-image-generation-platform/",
@@ -158169,9 +159005,123 @@
             "source_content_hash": "06ecfd55822882e3",
             "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital and more than a half-dozen existing investors",
             "quote_hash": "802b4e0ce5c62a28a2fc893e6f1263efeb759174a6c6e4d57e7a3f8a1aa7de8c"
+          },
+          {
+            "source_id": "smash_kevin",
+            "source_url": "https://smashcap.com/team/",
+            "source_title": "Smash Capital — team and partners",
+            "source_content_hash": "e93930259830af561a2732d38970de5a6f8845662ed40fba31c4ade46d4c6daa",
+            "quote": "Kevin Mayer",
+            "quote_hash": "fabd875549a823335be89ffc0583255486c96c254fe5789a5df4dcc00263eead"
+          },
+          {
+            "source_id": "smash_evan",
+            "source_url": "https://smashcap.com/team/",
+            "source_title": "Smash Capital — team and partners",
+            "source_content_hash": "e93930259830af561a2732d38970de5a6f8845662ed40fba31c4ade46d4c6daa",
+            "quote": "Evan Richter",
+            "quote_hash": "f3a3556ebb36fa6f34efbbbb7cf0ace237b41f5917d6c751cd99b6819b3a3ef8"
+          },
+          {
+            "source_id": "smash_brad",
+            "source_url": "https://smashcap.com/team/",
+            "source_title": "Smash Capital — team and partners",
+            "source_content_hash": "e93930259830af561a2732d38970de5a6f8845662ed40fba31c4ade46d4c6daa",
+            "quote": "Brad Twohig",
+            "quote_hash": "70dd1f64a978986383a61181ea0b9a8e634cca2b8777ae58532f5ac32d2f3b45"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "summary": "Smash Capital 是由 Eric Garland、Kevin Mayer、Evan Richter 与 Brad Twohig 等创办的投资机构，官网展示其投资组合及纽约、洛杉矶联系地址。合伙人团队称其过往职业生涯累计参与超过 40 亿美元风险投资和超过 1,000 亿美元控股交易；这是合伙人过往经历，不是 Smash Capital 管理资产或业绩数据。",
+        "coverage_note": "团队名单、联系邮箱和合伙人过往经验来自 Smash Capital 官网自述。官网特别说明，部分投资发生在 Smash Capital 成立前，由关联投资顾问 Smash Ventures Management Company LP 完成；本档案不将这些交易归为当前 Smash Capital 团队业绩。Higgsfield 公告披露的是 4 亿美元整轮规模，未披露 Smash Capital 单笔金额。",
+        "facts": [
+          {
+            "field": "experience",
+            "label": "合伙人过往经验",
+            "value": "官网称合伙人过往共同参与超过 40 亿美元风险投资及超过 1,000 亿美元控股交易；这些是合伙人职业经历，不是公司管理资产或回报。",
+            "source_id": "smash_team"
+          },
+          {
+            "field": "portfolio_attribution",
+            "label": "组合归属口径",
+            "value": "官网说明其组合页部分早期案例来自 Smash Capital 成立前的关联投资顾问；其余展示投资由 Smash Capital Advisors LP 和现任团队完成。",
+            "source_id": "smash_investments"
+          },
+          {
+            "field": "founder",
+            "label": "创办合伙人",
+            "value": "官网将 Eric Garland 列为 Smash Capital 创办合伙人。",
+            "source_id": "smash_founders"
+          },
+          {
+            "field": "founder",
+            "label": "创办合伙人",
+            "value": "官网将 Kevin Mayer 列为 Smash Capital 创办合伙人。",
+            "source_id": "smash_kevin"
+          },
+          {
+            "field": "founder",
+            "label": "创办合伙人",
+            "value": "官网将 Evan Richter 列为 Smash Capital 创办合伙人。",
+            "source_id": "smash_evan"
+          },
+          {
+            "field": "founder",
+            "label": "创办合伙人",
+            "value": "官网将 Brad Twohig 列为 Smash Capital 创办合伙人。",
+            "source_id": "smash_brad"
+          }
+        ],
+        "current_roles": [
+          {
+            "title": "Founder and Partner",
+            "organization": "Smash Capital",
+            "source_id": "smash_founders"
+          },
+          {
+            "title": "Founder, Executive Chairman and Partner",
+            "organization": "Smash Capital",
+            "source_id": "smash_kevin"
+          },
+          {
+            "title": "Founder and Partner",
+            "organization": "Smash Capital",
+            "source_id": "smash_evan"
+          },
+          {
+            "title": "Founder and Partner",
+            "organization": "Smash Capital",
+            "source_id": "smash_brad"
+          }
+        ],
+        "milestones": [],
+        "track_record": [
+          {
+            "description": "Higgsfield named this institution among participants in its $400 million Series B announced on 2026-08-17. The $400 million is the total round size; the institution's individual investment amount was not disclosed.",
+            "source_id": "FISRC-b235ace767812393"
+          }
+        ],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "Smash Capital official website",
+            "value": "Smash Capital",
+            "url": "https://smashcap.com/",
+            "source_id": "smash_team"
+          },
+          {
+            "kind": "email",
+            "label": "官网公开一般联系邮箱",
+            "value": "info@smashcap.com",
+            "source_id": "smash_contact"
+          },
+          {
+            "kind": "address",
+            "label": "官网列示办公城市",
+            "value": "New York and Los Angeles",
+            "source_id": "smash_team"
+          }
+        ],
+        "last_verified_at": "2026-09-27"
       },
       "activity_count": 1,
       "portfolio_companies": [
