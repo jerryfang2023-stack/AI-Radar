@@ -139,19 +139,151 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "F-Prime Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资领域、阶段、团队与机构指标来自 F-Prime 官方资料。AUM、IPO 和组合规模为机构自述，官方页面未说明统计时点；官网组合名单注明包含 Fidelity Ventures 与 Eight Roads 的投资。Fazeshift 的 1,700 万美元为整轮融资额，未披露 F-Prime 单家出资。",
+      "summary": "F-Prime Capital 是覆盖生命科学、科技、医疗科技服务与加密领域的投资机构，医疗投资包括治疗药物、医疗器械和健康科技服务；科技重点包括企业软件、金融科技和前沿科技。官网称其有 50 多年投资历史，偏好早期投资但也会支持其他阶段的优秀团队，并自报管理资产 53 亿美元、52 家 IPO 和 400 多家全球组合公司（其中 35 多家从零创立）。这些规模数据未标明统计时点，官网另说明组合公司名单包含 Fidelity Ventures 与 Eight Roads 的投资。F-Prime 科技基金由管理合伙人 David Jegen 负责。官方文章称 F-Prime 领投 Fazeshift 1,700 万美元 A 轮；该数额为整轮融资额，不是单家支票。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构性质",
+          "value": "多领域风险投资机构，覆盖生命科学、科技、医疗科技服务与加密领域",
+          "source_id": "fprime_about"
+        },
+        {
+          "field": "investment_focus",
+          "label": "医疗与科技投资方向",
+          "value": [
+            "治疗药物",
+            "医疗器械",
+            "健康科技与服务",
+            "企业软件",
+            "金融科技",
+            "前沿科技",
+            "加密领域"
+          ],
+          "source_id": "fprime_about"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "偏好早期投资；医疗团队采取跨阶段策略，并可在其他阶段投资优秀团队",
+          "source_id": "fprime_strategy"
+        },
+        {
+          "field": "firm_history",
+          "label": "机构历史",
+          "value": "官网称投资传统超过 50 年；未在该页面给出精确创立年份",
+          "source_id": "fprime_about"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "官网自报管理资产",
+          "value": "US$5.3B；官方页面未标注统计时点",
+          "source_id": "fprime_metrics"
+        },
+        {
+          "field": "portfolio_and_exits",
+          "label": "官网自报组合与退出数据",
+          "value": "52 家 IPO、400 多家全球组合公司，其中 35 多家由 F-Prime 从零创立；页面未注明统计时点或详细口径",
+          "source_id": "fprime_metrics"
+        },
+        {
+          "field": "portfolio_scope_note",
+          "label": "组合名单范围说明",
+          "value": "官网声明所列组合公司包括 Fidelity Ventures 和 Eight Roads 的投资记录。",
+          "source_id": "fprime_legacy_note"
+        },
+        {
+          "field": "current_leadership",
+          "label": "公开列示的机构负责人",
+          "value": "Stephen Knight — President & Senior Managing Partner",
+          "source_id": "fprime_stephen"
+        },
+        {
+          "field": "technology_leadership",
+          "label": "科技基金负责人",
+          "value": "David Jegen — Managing Partner, Tech Fund",
+          "source_id": "fprime_david"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Fazeshift · A轮 · 2026-05-07 · 本轮领投 · $17 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "F-Prime 官方文章宣布领投 Fazeshift 1,700 万美元 Series A，并称该轮后公司累计融资达到 2,200 万美元；1,700 万美元是融资轮总额，未披露 F-Prime 的单家出资额。",
+          "source_id": "fprime_fazeshift"
+        },
+        {
+          "description": "融资活动库也记录 F-Prime 领投 Fazeshift A 轮；此处金额指全轮融资，不能视为机构单家支票。",
           "source_id": "FISRC-37925b95fc58982a"
         }
       ],
-      "contacts": [],
+      "current_roles": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网、投资策略与团队",
+          "value": "F-Prime Capital",
+          "url": "https://www.fprimecapital.com/about/",
+          "source_id": "fprime_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "fprime_about",
+          "source_url": "https://www.fprimecapital.com/about/",
+          "source_title": "About | F-Prime Capital",
+          "source_content_hash": "a0184b2b1bf3169201ac1b52c741371a302575b58ea13ed2cfb2012406fafdfb",
+          "quote": "F-Prime enables companies to turn their boldest ambitions into world-changing breakthroughs in life sciences, technology, healthtech + services, and crypto.",
+          "quote_hash": "cd30179ca5fb9d34f9cf1a7fc9c01d515fbaac8239e8432a5d6a5cd07ec080ef"
+        },
+        {
+          "source_id": "fprime_strategy",
+          "source_url": "https://www.fprimecapital.com/about/",
+          "source_title": "Investment approach | F-Prime Capital",
+          "source_content_hash": "a0184b2b1bf3169201ac1b52c741371a302575b58ea13ed2cfb2012406fafdfb",
+          "quote": "While we’re early-stage investors by choice, we’ll back exceptional teams at any stage.",
+          "quote_hash": "724fa7fed573ecb3a09494e4c28c9ec7ca15fec007533130389ca18857414f6a"
+        },
+        {
+          "source_id": "fprime_metrics",
+          "source_url": "https://www.fprimecapital.com/about/",
+          "source_title": "Firm-reported history and portfolio metrics | F-Prime Capital",
+          "source_content_hash": "a0184b2b1bf3169201ac1b52c741371a302575b58ea13ed2cfb2012406fafdfb",
+          "quote": "$5.3 B+ Assets under management; 52 IPOs; 400+ Global portfolio companies—including over 35 that we started from scratch.",
+          "quote_hash": "a9f202227fb0eb89e9fc7974164a6ace3ea45efe3ac6cd08837dd42134d37dc1"
+        },
+        {
+          "source_id": "fprime_legacy_note",
+          "source_url": "https://www.fprimecapital.com/portfolio/",
+          "source_title": "Portfolio disclosure | F-Prime Capital",
+          "source_content_hash": "46a9cf8f35e8e2dadf07cf1524ab8befa070274842e50507ffb099e2a3d757c8",
+          "quote": "The list of portfolio companies includes investments made by Fidelity Ventures and Eight Roads.",
+          "quote_hash": "bbee5c2e1cc5e0b27632ea7add75b062347f05988a9a33ac8a4448b226484d86"
+        },
+        {
+          "source_id": "fprime_david",
+          "source_url": "https://www.fprimecapital.com/team-member/david-jegen/",
+          "source_title": "David Jegen | F-Prime Capital",
+          "source_content_hash": "a0eb0a137b534976cc3ac05a12222f30731705228766252bb8a5b619418fc2ae",
+          "quote": "David is Managing Partner of F-Prime’s Tech Fund. He invests at the intersection of fintech and enterprise software.",
+          "quote_hash": "76ef8b2d5e50f7c1bc45cfe2aa10d211fbb725e6c437b7ac22eda73cf0ebda1e"
+        },
+        {
+          "source_id": "fprime_stephen",
+          "source_url": "https://www.fprimecapital.com/team-member/stephen-knight/",
+          "source_title": "Stephen Knight, MD | F-Prime Capital",
+          "source_content_hash": "9338c31291b83caacd293b1afa1712e8d00284dcf4c9ac31b24aebc9eaecb36f",
+          "quote": "Stephen Knight joined F-Prime in 2003 where he serves as President and Senior Managing Partner.",
+          "quote_hash": "074b46070ee13e66bb870ed830cab95adab8dcb9a0ff27498caf4d91819a6294"
+        },
+        {
+          "source_id": "fprime_fazeshift",
+          "source_url": "https://fprimecapital.com/blog/fazeshift-transforming-accounts-receivable-for-an-autonomous-finance-future/",
+          "source_title": "Fazeshift: Transforming Accounts Receivable For An Autonomous Finance Future | F-Prime Capital",
+          "source_content_hash": "9779c5e3a3ed21c2b6aec7170a5ac0a5d9589dc988d57f2866a08a9008ae94e1",
+          "quote": "Today, we are thrilled to announce that we are leading Fazeshift’s $17M Series A, bringing total amount raised to $22M.",
+          "quote_hash": "18d30f110bea480f701091d863e7a051a6bbf80854d55b6ef71b34e61094480e"
+        },
         {
           "source_id": "FISRC-37925b95fc58982a",
           "source_url": "https://news.crunchbase.com/fintech/fazeshift-accounts-receivable-ai-finance-ops-startup-funding/",
@@ -161,7 +293,7 @@
           "quote_hash": "cc7e2367c2c9f1491737795ad8550088ac401bec459ad2b263aea7203fba5584"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28"
     }
   }
 }

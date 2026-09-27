@@ -139,19 +139,88 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Kima Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资策略、票面金额和官方组合页面来自 Kima Ventures。官网自述的每笔 150K 与年投资笔数未标注适用基金或时间；AMI Labs 关联仅见于 Toyota Ventures 社媒名单，未核实为 Kima 投资，不计为确认投资记录。官网未展示通用投资申请邮箱或电话，当前仅能提供官方网站与组合入口。",
+      "summary": "Kima Ventures 是自称高频投资初创企业的商业天使投资机构。官网称每笔采用约 150K（官网未注明币种）的一次性支票、每年约投 100 个新项目，并表示不限定阶段与行业；这些是官网自述，页面未说明基金范围和统计时点。官网公开大量组合企业，但不应将公开列表视为完整投资业绩。数据库中的 AMI Labs 关联来自 Toyota Ventures 的一条社媒名单，其中出现 Kima Ventures 名称；该名单不足以确认是否实际参投、角色或金额，因此仍作为待核实线索。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构性质",
+          "value": "商业天使与早期创业投资机构（按官网自我定位）",
+          "source_id": "kima_home"
+        },
+        {
+          "field": "typical_check_size",
+          "label": "官网自述单笔金额",
+          "value": "约 150K 一次性支票；官网未注明币种、适用基金、时间或承诺条件",
+          "source_id": "kima_home"
+        },
+        {
+          "field": "investment_volume",
+          "label": "官网自述投资频率",
+          "value": "每年约 100 笔新投资；此为官网自述数字，未注明统计时点",
+          "source_id": "kima_home"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网称任何阶段均可，未公布更细的阶段筛选规则",
+          "source_id": "kima_home"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资领域",
+          "value": "官网称不限行业；页面未给出地区限制或细分投资主题",
+          "source_id": "kima_home"
+        },
+        {
+          "field": "portfolio_disclosure",
+          "label": "公开组合",
+          "value": "官网提供组合浏览页；页面是公开展示列表，不据此推定完整投资组合或投资回报",
+          "source_id": "kima_portfolio"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Advanced Machine Intelligence Labs (AMI Labs) · 种子轮 · 2026-03-12 · 本轮参投 · 10.3亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "AMI Labs 的融资关联仅由 Toyota Ventures 的 LinkedIn 投资人名单线索支持，文本只出现 Kima Ventures 名称，未证明其实际参投、投资角色或出资额；10.3 亿美元是整轮融资额，本记录保持待核实，不计作确认业绩。",
           "source_id": "FISRC-115626db07e52373"
         }
       ],
-      "contacts": [],
+      "current_roles": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Kima Ventures",
+          "url": "https://www.kimaventures.com/",
+          "source_id": "kima_home"
+        },
+        {
+          "kind": "website",
+          "label": "公开组合",
+          "value": "Kima Ventures Portfolio",
+          "url": "https://www.kimaventures.com/portfolio.html",
+          "source_id": "kima_portfolio"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "kima_home",
+          "source_url": "https://www.kimaventures.com/",
+          "source_title": "Kima Ventures",
+          "source_content_hash": "71bd65ebbb1aa8b840b2daae5df5b4c4e04e123c1cc460d15306fac2fa23315a",
+          "quote": "We invest 150k one off tickets in 100 new deals per year. Any stage, deal size & sector.",
+          "quote_hash": "3ed7203643fcaa39840a32d3e4e9aaa1dd4b2148e77be1536a15a1615760b341"
+        },
+        {
+          "source_id": "kima_portfolio",
+          "source_url": "https://www.kimaventures.com/portfolio.html",
+          "source_title": "Our awesome family | Kima Ventures Portfolio",
+          "source_content_hash": "d4744f96257318ad2477363d4481ac211bb7639e27620dd6de489423baccfbce",
+          "quote": "OUR AWESOME FAMILY",
+          "quote_hash": "464ba169ea3e411321d377f4fdbba58d3c321e6e91b916c59fe11fc330f59772"
+        },
         {
           "source_id": "FISRC-115626db07e52373",
           "source_url": "https://www.linkedin.com/posts/toyota-ventures_ami-labs-activity-7437189879689629697-0_Rg",
@@ -161,7 +230,7 @@
           "quote_hash": "801134e2d2519318a537bf7a29d9431cfac26cb0dcf7497e1534d42ca677e93b"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28"
     }
   }
 }
