@@ -32921,14 +32921,60 @@
     "INV-8764117c3aca32": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "本坚基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "36氪机构档案将“本坚基金”对应至杭州本坚私募基金管理有限公司，公开交易文件可交叉验证该管理人名称及登记编号，上市公司年报记录其作为有限合伙企业普通合伙人的认缴出资。36氪属于机构信息目录；未核验到该机构的官方团队页、现行管理规模或公开联系渠道。融资金额及管理人认缴额均不代表投资回报。",
+      "summary": "本坚基金的公开机构档案对应杭州本坚私募基金管理有限公司。36氪资料记载该公司成立于2020年，法定代表人为金炳土、注册资本人民币2000万元；交易所披露文件列出私募基金管理人登记编号 P1072224。长川科技年报记录该管理人作为杭州封测前沿创业投资合伙企业（有限合伙）的普通合伙人认缴50万元。公开融资报道另将本坚基金列为息壤开物融资的跟投机构，未披露其单笔出资额。",
+      "facts": [
+        {
+          "field": "fund_manager_legal_name",
+          "label": "对应基金管理人",
+          "value": "杭州本坚私募基金管理有限公司（36氪机构档案对应名称）",
+          "source_id": "benjian_36kr_profile"
+        },
+        {
+          "field": "founded_date",
+          "label": "成立日期",
+          "value": "2020-11-04（36氪机构档案）",
+          "source_id": "benjian_36kr_profile"
+        },
+        {
+          "field": "legal_representative",
+          "label": "法定代表人",
+          "value": "金炳土（36氪机构档案）",
+          "source_id": "benjian_36kr_profile"
+        },
+        {
+          "field": "registered_capital",
+          "label": "注册资本",
+          "value": "人民币2000万元（36氪机构档案）",
+          "source_id": "benjian_36kr_profile"
+        },
+        {
+          "field": "fund_manager_registration",
+          "label": "基金管理人登记编号",
+          "value": "P1072224",
+          "source_id": "benjian_szse_manager"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2020-11-04",
+          "description": "36氪机构档案记载杭州本坚私募基金管理有限公司成立。",
+          "source_id": "benjian_36kr_profile"
+        },
+        {
+          "date": "2026-04",
+          "description": "长川科技年报披露，杭州本坚私募基金管理有限公司与长川科技、王艳华共同设立杭州封测前沿创业投资合伙企业（有限合伙），由本坚担任普通合伙人。",
+          "source_id": "benjian_cninfo_gp"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：息壤开物 · 多轮融资 · 2026-09-23 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "长川科技2025年年报披露，本坚作为杭州封测前沿创业投资合伙企业（有限合伙）的普通合伙人认缴50万元；这是合伙企业设立出资安排，不是基金投资收益或回报。",
+          "source_id": "benjian_cninfo_gp"
+        },
+        {
+          "description": "融资报道将本坚基金列为息壤开物种子轮及天使轮融资的跟投机构之一；报道未披露其单笔出资金额，融资轮次总额不等于本坚基金出资额。",
           "source_id": "FISRC-41f074703465b30a"
         }
       ],
@@ -32941,9 +32987,33 @@
           "source_content_hash": "5f3fdf302b68696b",
           "quote": "由 敦鸿资产领投，华控基金、三花控股、银杏谷资本、泽然资本、本坚基金、上海天使会、标朴投资等知名机构跟投",
           "quote_hash": "dd477a61ea1ba275edd33cd5c862253fc7e7e35e1a91cdb31079479ed163154e"
+        },
+        {
+          "source_id": "benjian_36kr_profile",
+          "source_url": "https://pitchhub.36kr.com/organization/1828830927922049",
+          "source_title": "本坚基金 | 投资机构信息-36氪",
+          "source_content_hash": "a98b7ac9b088dcc2c3818257d4699a400f8bcbaf9206c1f58d62f02cd6395c84",
+          "quote": "杭州本坚私募基金管理有限公司成立于2020-11-04，法定代表人为金炳土，注册资本为2000万元人民币。",
+          "quote_hash": "40d57578be7baaf665c7df6639d5bbc7ed1374906461bde90ff0b28b7d87d058"
+        },
+        {
+          "source_id": "benjian_cninfo_gp",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-04-25/1225193283.PDF",
+          "source_title": "杭州长川科技股份有限公司2025年年度报告",
+          "source_content_hash": "6f44ed973c56aef86207f250f7498b4d984c5752e651489f7d2aff5a5c9da4eb",
+          "quote": "杭州本坚私募基金管理有限公司作为普通合伙人认缴出资 50.00 万元。",
+          "quote_hash": "7d27cfbf324eae1ab6ffd82aad0bd179a3d6b293b74bef6b54d9d912b7cb839f"
+        },
+        {
+          "source_id": "benjian_szse_manager",
+          "source_url": "https://reportdocs.static.szse.cn/UpFiles/rasinfodisc1/202606/RAS_202606_101905DD21253821184EBC9BE8DE69D9801B43.pdf",
+          "source_title": "深圳证券交易所披露文件：基金管理人及登记编号",
+          "source_content_hash": "64100237b0dcdbff3e20033b3ed7ecfd2b7c0407d6050dad2fc7df4cd3a47423",
+          "quote": "基金管理人 杭州本坚私募基金管理有限公司 登记编号 P1072224",
+          "quote_hash": "080b61d58782ceef00f526fe3eeafb8472faa2bb224d2e8b25a101072379987c"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     },
     "INV-35d9dc3366103d": {
       "profile_type": "unverified",
@@ -33108,18 +33178,161 @@
     "INV-8101f69e2277ff": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "上海移远通信技术股份有限公司 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "移远通信属于上市物联网技术与产品企业，同时在披露融资中作为公司投资方出现；公司经营业绩和投资活动分别记录。管理团队及财务数字按公司官网、半年度报告口径呈现；2026年半年度报告未经审计。",
+      "summary": "上海移远通信技术股份有限公司（移远通信，603236）成立于2010年，提供蜂窝及短距离通信模组、天线和物联网解决方案，2019年在上交所主板上市。公司官网列示董事长兼CEO钱鹏鹤及多位管理团队成员；2026年上半年营业收入152.59亿元、归母净利润6.02亿元（半年度报告口径，未经审计）。移远通信也参与驰芯半导体A+轮融资，但未披露单笔投资金额。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2010年",
+          "source_id": "quectel_official_company"
+        },
+        {
+          "field": "business",
+          "label": "主营业务",
+          "value": "物联网整体解决方案供应商，产品与服务包括通信模组、天线及IoT服务与解决方案。",
+          "source_id": "quectel_official_company"
+        },
+        {
+          "field": "listing",
+          "label": "上市信息",
+          "value": "2019年7月16日在上海证券交易所主板上市，股票代码603236。",
+          "source_id": "quectel_official_company"
+        },
+        {
+          "field": "h1_2026_revenue",
+          "label": "2026年上半年营业收入",
+          "value": "152.59亿元，同比增长32.16%（公司半年度报告，未经审计）。",
+          "source_id": "quectel_h1_2026"
+        },
+        {
+          "field": "h1_2026_net_profit",
+          "label": "2026年上半年归母净利润",
+          "value": "6.02亿元，同比增长27.84%（公司半年度报告，未经审计）。",
+          "source_id": "quectel_h1_2026"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2010",
+          "description": "公司在上海成立。",
+          "source_id": "quectel_official_company"
+        },
+        {
+          "date": "2019-07-16",
+          "description": "在上海证券交易所主板上市，股票代码603236。",
+          "source_id": "quectel_official_company"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "董事长兼首席执行官",
+          "organization": "上海移远通信技术股份有限公司",
+          "source_id": "quectel_official_team"
+        },
+        {
+          "title": "首席运营官",
+          "organization": "上海移远通信技术股份有限公司",
+          "source_id": "quectel_official_team"
+        },
+        {
+          "title": "首席销售官",
+          "organization": "上海移远通信技术股份有限公司",
+          "source_id": "quectel_official_team"
+        },
+        {
+          "title": "高级副总裁",
+          "organization": "上海移远通信技术股份有限公司",
+          "source_id": "quectel_official_team"
+        },
+        {
+          "title": "中国区副总裁",
+          "organization": "上海移远通信技术股份有限公司",
+          "source_id": "quectel_official_team"
+        },
+        {
+          "title": "北美高级副总裁",
+          "organization": "上海移远通信技术股份有限公司",
+          "source_id": "quectel_official_team"
+        },
+        {
+          "title": "亚太区副总裁",
+          "organization": "上海移远通信技术股份有限公司",
+          "source_id": "quectel_official_team"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：驰芯半导体 · A+轮 · 2026-09-23 · 本轮参投 · 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "驰芯半导体2026年A+轮融资披露将移远通信列为联合参投方；未披露单家机构出资额，该轮融资总额不代表移远通信的投资金额或回报。",
           "source_id": "FISRC-adff65727174a119"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "移远通信",
+          "url": "https://www.quectel.com.cn/company",
+          "source_id": "quectel_official_company"
+        },
+        {
+          "kind": "address",
+          "label": "全球中心",
+          "value": "上海市松江区泗泾镇外婆泾路8号",
+          "url": "https://www.quectel.com.cn/contact",
+          "source_id": "quectel_official_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "全球中心电话",
+          "value": "021-5108 6236",
+          "url": "https://www.quectel.com.cn/contact",
+          "source_id": "quectel_official_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "全国热线",
+          "value": "400 960 7678",
+          "url": "https://www.quectel.com.cn/contact",
+          "source_id": "quectel_official_contact"
+        },
+        {
+          "kind": "email",
+          "label": "销售支持",
+          "value": "sales@quectel.com",
+          "url": "https://www.quectel.com.cn/contact",
+          "source_id": "quectel_official_contact"
+        },
+        {
+          "kind": "email",
+          "label": "技术支持",
+          "value": "support@quectel.com",
+          "url": "https://www.quectel.com.cn/contact",
+          "source_id": "quectel_official_contact"
+        },
+        {
+          "kind": "email",
+          "label": "媒体合作",
+          "value": "media@quectel.com",
+          "url": "https://www.quectel.com.cn/contact",
+          "source_id": "quectel_official_contact"
+        },
+        {
+          "kind": "email",
+          "label": "其他咨询",
+          "value": "info@quectel.com",
+          "url": "https://www.quectel.com.cn/contact",
+          "source_id": "quectel_official_contact"
+        },
+        {
+          "kind": "email",
+          "label": "投资者关系",
+          "value": "yiyuan@quectel.com",
+          "url": "https://www.quectel.com.cn/company/investor-relations",
+          "source_id": "quectel_investor_relations"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-adff65727174a119",
@@ -33128,9 +33341,49 @@
           "source_content_hash": "03e6bfdfc45c129c",
           "quote": "湖南金霞盛世股权投资基金合伙企业（有限合伙）（下称“金霞盛世”）、上海移远通信技术股份有限公司（下称“移远通信”）、长沙麓山投资控股集团有限公司（下称“麓山控股”）联合参投",
           "quote_hash": "11ca97fbe8513dc5e03a93bc6adb01108880c7cc8d01ab11f897958826f6b0b2"
+        },
+        {
+          "source_id": "quectel_official_company",
+          "source_url": "https://www.quectel.com.cn/company",
+          "source_title": "公司简介 - 移远通信",
+          "source_content_hash": "2bf38422a5958bcec6052ab13808bbcd2d8fe193d525d4b4dbd8e156dcaa6771",
+          "quote": "上海移远通信技术股份有限公司成立于 2010 年，是全球领先的物联网整体解决方案供应商。2019 年 7 月 16 日，移远通信在上海证券交易所主板上市，股票代码 603236。",
+          "quote_hash": "786c4835ce0e109fffccb08f7b8f99bfe0bafa8ecda974e70e8a8c98e04c76e6"
+        },
+        {
+          "source_id": "quectel_official_team",
+          "source_url": "https://www.quectel.com.cn/company",
+          "source_title": "管理团队 - 移远通信",
+          "source_content_hash": "2bf38422a5958bcec6052ab13808bbcd2d8fe193d525d4b4dbd8e156dcaa6771",
+          "quote": "钱鹏鹤 董事长兼首席执行官；张栋 首席运营官；徐大勇 首席销售官；杨中志 高级副总裁；徐杰 中国区副总裁；Peter Fowler 北美高级副总裁；Yasu Okada 亚太区副总裁。",
+          "quote_hash": "f65c4650d8647abea4727d412862f1c47c6d261521e4ee4c7d20381ebbf9f4d3"
+        },
+        {
+          "source_id": "quectel_investor_relations",
+          "source_url": "https://www.quectel.com.cn/company/investor-relations",
+          "source_title": "投资者关系 - 移远通信",
+          "source_content_hash": "503131770a0e9ffbb6cfca9b833d6f079a5b502bfd4638df9ae89ea02c42495e",
+          "quote": "2019 年 7 月 16 日，移远通信在上海证券交易所主板上市，股票代码 603236。投资者联系方式：yiyuan@quectel.com",
+          "quote_hash": "a7dd0b7b46748ff508c94601eb881edf5f209f3df43ec8fcb7d414185023ea11"
+        },
+        {
+          "source_id": "quectel_official_contact",
+          "source_url": "https://www.quectel.com.cn/contact",
+          "source_title": "联系我们 - 移远通信",
+          "source_content_hash": "cee43c51585a109821ffefde1a9f7ff955980bb28fd87e1d608652fdd9a21eed",
+          "quote": "全球中心地址：上海市松江区泗泾镇外婆泾路8号；电话：021-5108 6236；全国热线：400 960 7678；销售支持：sales@quectel.com；技术支持：support@quectel.com；媒体联系：media@quectel.com；其他咨询：info@quectel.com。",
+          "quote_hash": "93330e6af924976335a61bc8871bae1b11dd3a88a42e34d6058a644a5f144674"
+        },
+        {
+          "source_id": "quectel_h1_2026",
+          "source_url": "https://www.quectel.com.cn/wp-content/uploads/2024/03/%E4%B8%8A%E6%B5%B7%E7%A7%BB%E8%BF%9C%E9%80%9A%E4%BF%A1%E6%8A%80%E6%9C%AF%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B82026%E5%B9%B4%E5%8D%8A%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A.pdf",
+          "source_title": "上海移远通信技术股份有限公司2026年半年度报告",
+          "source_content_hash": "ec9e67c8f8126e5da79e72ed68248ace1c7f439a312ea084c9a23c2d50098948",
+          "quote": "本期实现营业收入152.59亿元，同比增长32.16%；本期归属于上市公司股东的净利润为6.02亿元，同比增长27.84%。",
+          "quote_hash": "1e36f2638068db021904f035e3022790e0670d5009c0d118a52c3dd93f258dd7"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     },
     "INV-36b0335bae55e1": {
       "profile_type": "unverified",
@@ -35316,14 +35569,31 @@
     "INV-008cd519099859": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "阿联酋Stone Venture(磊石资本) 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "融资来源和新石器官网均将“阿联酋 Stone Venture（磊石资本）”列为领投方，可以确认公开披露中的投资者名称；未能核验对应法律实体、基金管理人、团队、管理规模、完整组合或直接联系渠道。融资金额为被投公司的轮次总额，不代表 Stone Venture 的单笔出资额。",
+      "summary": "阿联酋 Stone Venture（磊石资本）以该名称出现在智身科技和新石器的融资披露中，并被列为两笔融资的领投方。公开材料尚未确认其法律实体、管理人、团队、基金规模或官方联系方式；被投公司披露的轮次融资总额不等同于 Stone Venture 的实际出资额。",
+      "facts": [
+        {
+          "field": "publicly_disclosed_name",
+          "label": "公开披露名称",
+          "value": "阿联酋 Stone Venture（磊石资本）；相关融资资料未披露其对应法律实体名称。",
+          "source_id": "stone_neolix_official"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2025-06-28",
+          "description": "新石器公告称，阿联酋磊石资本（Stone Venture）领投公司逾6亿美元D轮融资；该金额为新石器本轮融资总额。",
+          "source_id": "stone_neolix_official"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：智身科技（GENISOM AI） · B轮 · 2026-09-20 · 本轮领投 · 数亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "新石器于2025年公布逾6亿美元D轮融资，由阿联酋磊石资本（Stone Venture）领投。逾6亿美元是被投企业轮次总额，公告未披露 Stone Venture 单独出资额。",
+          "source_id": "stone_neolix_official"
+        },
+        {
+          "description": "融资来源称 Stone Venture（磊石资本）领投智身科技（GENISOM AI）2026年B轮融资；数亿元人民币是融资轮次总额，非该机构单独出资金额。",
           "source_id": "FISRC-5b2457392e3c9d0d"
         }
       ],
@@ -35336,9 +35606,17 @@
           "source_content_hash": "d409c07864c1f719",
           "quote": "本轮融资由 阿联酋Stone Venture（磊石资本）领投",
           "quote_hash": "25ff41ef116e59a08cbb2c106059845cab7ed0dbf4e5a6c46deebcc93ea37744"
+        },
+        {
+          "source_id": "stone_neolix_official",
+          "source_url": "https://www.neolix.ai/zh/news/d-round-funding/",
+          "source_title": "新石器D轮融资超6亿美元，创中国自动驾驶领域融资纪录 | Neolix",
+          "source_content_hash": "f6e8235a676ee74f41f6545325cdcf331bb2fcc56e8b58bdf2730bbfc256d46e",
+          "quote": "新石器公司(Neolix)今日宣布完成逾6亿美元D轮融资，本轮融资由阿联酋磊石资本（Stone Venture）领投",
+          "quote_hash": "b6692dee60919b073cda39262ae6ae16f8020f456fb101b7d618fc3d3ee72ae4"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     },
     "INV-aa43ec4082d694": {
       "summary": "东软集团（Neusoft Corporation，沪市代码600718）是成立于1991年的信息技术、产品与解决方案公司。官网称其是中国首家上市的软件公司，当前业务包括智能汽车互联、医疗健康、智慧城市、企业数字化转型和全球软件业务。融资披露将东软集团列作产业投资方，本档案介绍集团主体，不推定存在独立VC基金。",
