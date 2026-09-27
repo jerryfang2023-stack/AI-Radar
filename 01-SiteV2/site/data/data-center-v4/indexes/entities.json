@@ -251223,19 +251223,179 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Toyota Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "coverage_note": "机构策略、组合、领导团队和投资申请渠道来自 Toyota Ventures 官方资料。AMI Labs 融资额与参投信息来自第三方报道；金额为全轮总额，不代表 Toyota Ventures 单家出资。",
+        "summary": "Toyota Ventures 是 Toyota 旗下早期风险投资部门，关注深科技和气候科技，包括 AI、机器人、下一代计算、航空航天、移动出行、材料、能源、碳捕集和电池等领域。机构提供产品、业务拓展、融资、营销及高管辅导等组合支持。2024 年 Toyota 官方公告新增 Frontier Fund II 与 Climate Fund II，各 1.5 亿美元；当时机构总管理资产超过 8 亿美元。官网将 AMI Labs 列入组合；该公司 10.3 亿美元种子轮及 Toyota Ventures 参投信息来自第三方报道，轮次金额不等于机构单家出资额。",
+        "facts": [
+          {
+            "field": "organization_type",
+            "label": "机构性质",
+            "value": "Toyota 旗下早期风险投资部门",
+            "source_id": "toyota_main"
+          },
+          {
+            "field": "investment_stage",
+            "label": "投资阶段",
+            "value": "早期阶段",
+            "source_id": "toyota_main"
+          },
+          {
+            "field": "investment_focus",
+            "label": "投资领域",
+            "value": [
+              "深科技",
+              "气候科技",
+              "人工智能",
+              "机器人",
+              "下一代计算",
+              "航空航天",
+              "移动出行",
+              "材料",
+              "能源",
+              "碳捕集",
+              "电池与储能",
+              "可持续发展"
+            ],
+            "source_id": "toyota_main"
+          },
+          {
+            "field": "portfolio_support",
+            "label": "组合支持",
+            "value": "业务拓展、产品、融资、营销和高管辅导等战略与运营支持。",
+            "source_id": "toyota_support"
+          },
+          {
+            "field": "investment_objective",
+            "label": "投资目标",
+            "value": "兼顾财务回报与战略价值，官网强调财务回报优先。",
+            "source_id": "toyota_objective"
+          },
+          {
+            "field": "founder_and_general_partner",
+            "label": "创始人兼普通合伙人",
+            "value": "Jim Adler",
+            "source_id": "toyota_jim"
+          },
+          {
+            "field": "managing_partner_and_coo",
+            "label": "管理合伙人兼首席运营官",
+            "value": "Natalie Fonseca Licciardi",
+            "source_id": "toyota_natalie"
+          },
+          {
+            "field": "climate_fund_partner",
+            "label": "Climate Fund 合伙人",
+            "value": "Lisa Coca",
+            "source_id": "toyota_lisa"
+          },
+          {
+            "field": "frontier_fund_partner",
+            "label": "Frontier Fund 合伙人",
+            "value": "David Sokolic",
+            "source_id": "toyota_david"
+          },
+          {
+            "field": "investment_board_member",
+            "label": "投资委员会董事会成员",
+            "value": "Gill Pratt",
+            "source_id": "toyota_gill"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2017-07",
+            "description": "Toyota 官方公告记载 Toyota Ventures 于 2017 年 7 月成立。",
+            "source_id": "toyota_foundation"
+          },
+          {
+            "date": "2024-04-10",
+            "description": "宣布新设 Frontier Fund II 与 Climate Fund II，各 1.5 亿美元；Toyota 公告当时称机构总管理资产超过 8 亿美元。",
+            "source_id": "toyota_funds"
+          }
+        ],
         "track_record": [
           {
-            "description": "融资来源记录：Advanced Machine Intelligence Labs (AMI Labs) · 种子轮 · 2026-03-12 · 本轮参投 · 10.3亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "Toyota Ventures 官网当前将 AMI Labs 列为组合企业。",
+            "source_id": "toyota_main"
+          },
+          {
+            "description": "第三方报道称 Toyota Ventures 参与 AMI Labs 10.3 亿美元种子轮；此金额为全轮总额，未披露机构单家出资额，且并非机构官方交易公告。",
             "source_id": "FISRC-6c35525e379488bf"
           }
         ],
-        "contacts": [],
+        "current_roles": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "机构官网",
+            "value": "Toyota Ventures",
+            "url": "https://toyota.ventures/",
+            "source_id": "toyota_main"
+          },
+          {
+            "kind": "application",
+            "label": "早期项目投资申请",
+            "value": "通过官网在线 Pitch Form 提交",
+            "url": "https://toyota.ventures/submit-pitch.html",
+            "source_id": "toyota_pitch"
+          },
+          {
+            "kind": "address",
+            "label": "机构联系地址",
+            "value": "4440 El Camino Real, Los Altos, CA 94022, USA",
+            "url": "https://toyota.ventures/",
+            "source_id": "toyota_contact"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "toyota_main",
+            "source_url": "https://toyota.ventures/",
+            "source_title": "Toyota Ventures",
+            "source_content_hash": "4a0f3092b265251a120bf52b7a37fc80c207a683fd701fa2d1f0d5f2d983a758",
+            "quote": "As Toyota’s early-stage venture capital arm, Toyota Ventures invests in deep tech and climate tech solutions across a variety of areas, including AI, robotics, next-gen computing, aerospace, mobility, materials, energy, carbon capture, batteries and energy storage, and sustainability.",
+            "quote_hash": "7c57cba67d49293ca6d2dc8d29f130b3ffc8ce0147ae84ebc9897431e7ce3b06"
+          },
+          {
+            "source_id": "toyota_support",
+            "source_url": "https://toyota.ventures/",
+            "source_title": "Toyota Ventures | How We Work",
+            "source_content_hash": "4a0f3092b265251a120bf52b7a37fc80c207a683fd701fa2d1f0d5f2d983a758",
+            "quote": "Our team offers Toyota Ventures portfolio companies strategic support and operational guidance in business development, product, fundraising, marketing, executive coaching, and other areas.",
+            "quote_hash": "5229bd4cfb5b094a0e6e6060890bd5deb4563e3808f8cef516bd229cdafdacc7"
+          },
+          {
+            "source_id": "toyota_leadership",
+            "source_url": "https://toyota.ventures/",
+            "source_title": "Toyota Ventures | Team and Investment Board",
+            "source_content_hash": "4a0f3092b265251a120bf52b7a37fc80c207a683fd701fa2d1f0d5f2d983a758",
+            "quote": "Jim Adler is the founder and general partner of Toyota Ventures, responsible for setting the strategic direction and leading the firm’s investment activities.",
+            "quote_hash": "39fdb324f783e06cf8240a968ec521b00733c887f3bdb0437aa3a4e5624dc907"
+          },
+          {
+            "source_id": "toyota_contact",
+            "source_url": "https://toyota.ventures/",
+            "source_title": "Toyota Ventures | Contact us",
+            "source_content_hash": "4a0f3092b265251a120bf52b7a37fc80c207a683fd701fa2d1f0d5f2d983a758",
+            "quote": "Toyota Ventures, 4440 El Camino Real, Los Altos, CA 94022.",
+            "quote_hash": "2a66c58c334405f459e1be1535a9c9864f4cc10035918571c34919f13160d560"
+          },
+          {
+            "source_id": "toyota_pitch",
+            "source_url": "https://toyota.ventures/",
+            "source_title": "Submit a Pitch | Toyota Ventures",
+            "source_content_hash": "4a0f3092b265251a120bf52b7a37fc80c207a683fd701fa2d1f0d5f2d983a758",
+            "quote": "If you are the founder of an early-stage company developing solutions in areas we invest in and you’re looking for funding, you are invited to complete our online pitch form.",
+            "quote_hash": "44462bf1c21b83bb45117007394df1b19261e11b7f541e49e7f731457ebabd9a"
+          },
+          {
+            "source_id": "toyota_funds",
+            "source_url": "https://pressroom.toyota.com/toyota-ventures-raises-another-300-million-to-expand-early-stage-investments-in-frontier-technology-and-climate-solutions/",
+            "source_title": "Toyota Ventures Raises Another $300 Million | Toyota USA Newsroom",
+            "source_content_hash": "cfa6734a31320d40a03dae8545992de65c8053b4b36cc1a497447d63e765759a",
+            "quote": "Toyota Ventures, the early-stage venture capital arm of Toyota, announced two $150 million funds to expand its investments in startups developing disruptive technologies and business models at the forefront of innovation.",
+            "quote_hash": "845ce4fab8941218d9a85342c2e5b4429d80f3244b2fceb464bfca3479a63ea0"
+          },
           {
             "source_id": "FISRC-6c35525e379488bf",
             "source_url": "https://futurumgroup.com/insights/yann-lecuns-ami-raises-1bn-seed-round-is-the-world-model-era-finally-here",
@@ -251243,9 +251403,73 @@
             "source_content_hash": "adc0cc9ffe3c9dd0",
             "quote": "additional backing from NVIDIA, Temasek, Samsung, Toyota Ventures, Bpifrance",
             "quote_hash": "20b43e14b78ede902de6f83471ab12268aca45d526e2b5d016ab4996e017499a"
+          },
+          {
+            "source_id": "toyota_fund_metrics",
+            "source_url": "https://pressroom.toyota.com/toyota-ventures-raises-another-300-million-to-expand-early-stage-investments-in-frontier-technology-and-climate-solutions/",
+            "source_title": "Toyota Ventures 2024 fund announcement | assets under management",
+            "source_content_hash": "cfa6734a31320d40a03dae8545992de65c8053b4b36cc1a497447d63e765759a",
+            "quote": "The addition of the new funds, Toyota Ventures Frontier Fund II (TVFF II) and Toyota Ventures Climate Fund II (TVCF II), brings the firm’s total assets under management to over $800 million.",
+            "quote_hash": "ad5c08c7a8c763ceb944acb2c02e1f2e40ed6b27b2e0a42a7681ee15fff18fd7"
+          },
+          {
+            "source_id": "toyota_foundation",
+            "source_url": "https://pressroom.toyota.com/toyota-ventures-raises-another-300-million-to-expand-early-stage-investments-in-frontier-technology-and-climate-solutions/",
+            "source_title": "Toyota Ventures founding history",
+            "source_content_hash": "cfa6734a31320d40a03dae8545992de65c8053b4b36cc1a497447d63e765759a",
+            "quote": "Since its founding in July 2017, Toyota Ventures has furthered its mission of helping Toyota discover what’s next.",
+            "quote_hash": "ee4b184bc4c226b0026e131259e16db01a791353bec1280d1878f3f084ae83a6"
+          },
+          {
+            "source_id": "toyota_objective",
+            "source_url": "https://toyota.ventures/",
+            "source_title": "Toyota Ventures | Investment objectives",
+            "source_content_hash": "4a0f3092b265251a120bf52b7a37fc80c207a683fd701fa2d1f0d5f2d983a758",
+            "quote": "We look for both financial returns and strategic value, and firmly believe that financial returns must precede strategic value.",
+            "quote_hash": "3e3e6d43aa22c87a63ee78718181daeb14f1fb1c4429b48a3ec755df46ed202e"
+          },
+          {
+            "source_id": "toyota_jim",
+            "source_url": "https://toyota.ventures/",
+            "source_title": "Toyota Ventures | Jim Adler",
+            "source_content_hash": "4a0f3092b265251a120bf52b7a37fc80c207a683fd701fa2d1f0d5f2d983a758",
+            "quote": "Jim Adler is the founder and general partner of Toyota Ventures, responsible for setting the strategic direction and leading the firm’s investment activities.",
+            "quote_hash": "39fdb324f783e06cf8240a968ec521b00733c887f3bdb0437aa3a4e5624dc907"
+          },
+          {
+            "source_id": "toyota_natalie",
+            "source_url": "https://toyota.ventures/",
+            "source_title": "Toyota Ventures | Natalie Fonseca Licciardi",
+            "source_content_hash": "4a0f3092b265251a120bf52b7a37fc80c207a683fd701fa2d1f0d5f2d983a758",
+            "quote": "Natalie Fonseca Licciardi is managing partner and COO at Toyota Ventures, where she oversees the firm’s operations, including finance, portfolio support, diversity and inclusion initiatives, marketing and communications, and business management.",
+            "quote_hash": "245f47c395059be64ab4336d01a2d3eef0130df24a9c70056859dac68e23d6d3"
+          },
+          {
+            "source_id": "toyota_lisa",
+            "source_url": "https://toyota.ventures/",
+            "source_title": "Toyota Ventures | Lisa Coca",
+            "source_content_hash": "4a0f3092b265251a120bf52b7a37fc80c207a683fd701fa2d1f0d5f2d983a758",
+            "quote": "Lisa Coca is a partner for Toyota Ventures where she leads the firm’s Climate Fund.",
+            "quote_hash": "8a49f50b04151ee363c043ac415ef97bd451f16df2c9050e291bdf162f8fc0ea"
+          },
+          {
+            "source_id": "toyota_david",
+            "source_url": "https://toyota.ventures/",
+            "source_title": "Toyota Ventures | David Sokolic",
+            "source_content_hash": "4a0f3092b265251a120bf52b7a37fc80c207a683fd701fa2d1f0d5f2d983a758",
+            "quote": "David Sokolic is a partner at Toyota Ventures, responsible for leading investments for the Frontier Fund.",
+            "quote_hash": "2308d4a873d07f8d05705873a2bd7327e34fd192d80ab3be99cf8e657aac9fb9"
+          },
+          {
+            "source_id": "toyota_gill",
+            "source_url": "https://toyota.ventures/",
+            "source_title": "Toyota Ventures | Gill Pratt",
+            "source_content_hash": "4a0f3092b265251a120bf52b7a37fc80c207a683fd701fa2d1f0d5f2d983a758",
+            "quote": "Investment Board. Gill Pratt. Board Member.",
+            "quote_hash": "513c21f13c4ca6eecaa157898585585ab4125edaebc5e4452b273f009b8123bc"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-28"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -252293,19 +252517,123 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Databricks Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-11；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "coverage_note": "Databricks Ventures 的官方资料可核验；Replit 融资报道只写 Databricks，未明确投资实体，轮次总额不代表单家出资额。",
+        "summary": "Databricks Ventures 是 Databricks 的企业投资部门，投资数据、分析和 AI 相关企业，覆盖早期至成长期。官网说明其与领投机构共同参与少数股权投资，不担任领投方。官网将 Replit 列为组合企业；数据库中的 Replit D 轮报道只写 Databricks，不能确认由 Ventures 部门投资。报道所列 4 亿美元为全轮融资额，并非机构单家出资。",
+        "facts": [
+          {
+            "field": "organization_type",
+            "label": "机构性质",
+            "value": "Databricks 旗下企业风险投资部门",
+            "source_id": "dv_main"
+          },
+          {
+            "field": "investment_stage",
+            "label": "投资阶段",
+            "value": [
+              "早期阶段",
+              "成长期"
+            ],
+            "source_id": "dv_main"
+          },
+          {
+            "field": "investment_focus",
+            "label": "投资领域",
+            "value": [
+              "数据",
+              "分析",
+              "人工智能",
+              "Databricks Data + AI Platform 相关生态"
+            ],
+            "source_id": "dv_main"
+          },
+          {
+            "field": "investment_approach",
+            "label": "投资方式",
+            "value": "与领投机构共同参与少数股权投资；官网明确表示不担任领投方。",
+            "source_id": "dv_strategy"
+          },
+          {
+            "field": "portfolio_support",
+            "label": "组合支持",
+            "value": "产品路线图洞察、技术集成支持、Databricks 导师网络及全球市场拓展项目。",
+            "source_id": "dv_portfolio_support"
+          },
+          {
+            "field": "board_representation",
+            "label": "董事会席位",
+            "value": "官网表示不计划在组合公司担任董事席位。",
+            "source_id": "dv_board"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：Replit · D轮 · 2026-03-11 · 本轮参投（战略投资） · $400M。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "官网组合页面列有 Replit；这仅说明该公司被列为组合企业，不能确认数据库中的 D 轮参投记录由 Databricks Ventures 完成。",
+            "source_id": "dv_portfolio"
+          },
+          {
+            "description": "2026-03-11 的二手融资报道将 Databricks 列为 Replit D 轮战略投资方，但未说明是 Databricks Ventures；报道中的 4 亿美元是全轮融资额，未披露本机构单笔出资。",
             "source_id": "FISRC-00ed3d8fd701898b"
           }
         ],
-        "contacts": [],
+        "current_roles": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "机构官网",
+            "value": "Databricks Ventures",
+            "url": "https://www.databricks.com/databricks-ventures",
+            "source_id": "dv_main"
+          },
+          {
+            "kind": "address",
+            "label": "Databricks 公司地址（非专属投资联系地址）",
+            "value": "160 Spear Street, 15th Floor, San Francisco, CA 94105",
+            "url": "https://www.databricks.com/databricks-ventures",
+            "source_id": "dv_contact"
+          },
+          {
+            "kind": "phone",
+            "label": "Databricks 公司总机（非专属投资电话）",
+            "value": "1-866-330-0121",
+            "url": "https://www.databricks.com/databricks-ventures",
+            "source_id": "dv_contact"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "dv_main",
+            "source_url": "https://www.databricks.com/databricks-ventures",
+            "source_title": "Databricks Ventures | Databricks",
+            "source_content_hash": "790d35f445d5c05e86f6d8d8b039ef3f11add6d71e6d055d8f8317b9f6558554",
+            "quote": "Databricks Ventures invests in innovative companies that share our view of the future for data, analytics and AI. Our focus is on supporting early- and growth-stage companies that are empowering AI in innovative ways on top of or alongside the Databricks Data + AI Platform.",
+            "quote_hash": "3963fc98bb16e017b6ebe9e68762ea06d44ce482ab14dff3f17e91ad809f98d7"
+          },
+          {
+            "source_id": "dv_strategy",
+            "source_url": "https://www.databricks.com/databricks-ventures",
+            "source_title": "Databricks Ventures investment strategy and portfolio support",
+            "source_content_hash": "790d35f445d5c05e86f6d8d8b039ef3f11add6d71e6d055d8f8317b9f6558554",
+            "quote": "No, we do not lead rounds. Our strategy is to invest alongside a lead institutional investor.",
+            "quote_hash": "d08edef4e94b42c7c6c9741498ab93e9c9c5aca7067f2d63a432fff56038b87d"
+          },
+          {
+            "source_id": "dv_portfolio",
+            "source_url": "https://www.databricks.com/databricks-ventures",
+            "source_title": "Databricks Ventures portfolio",
+            "source_content_hash": "790d35f445d5c05e86f6d8d8b039ef3f11add6d71e6d055d8f8317b9f6558554",
+            "quote": "Our Portfolio. Replit lets you create software in plain English - with authentication, databases, security, testing, and deployment built directly into the platform.",
+            "quote_hash": "fa12bf5c45a1b5a23fe88a6509694005940e749a75e55a29cd6616a77d5aa21f"
+          },
+          {
+            "source_id": "dv_contact",
+            "source_url": "https://www.databricks.com/databricks-ventures",
+            "source_title": "Databricks Ventures | Databricks contact information",
+            "source_content_hash": "790d35f445d5c05e86f6d8d8b039ef3f11add6d71e6d055d8f8317b9f6558554",
+            "quote": "160 Spear Street, 15th Floor San Francisco, CA 94105 1-866-330-0121",
+            "quote_hash": "1d97522b9740d3be26774630eb24847baafaec405b0e944cba18c42b7ad499fd"
+          },
           {
             "source_id": "FISRC-00ed3d8fd701898b",
             "source_url": "https://techstartups.com/2026/03/11/replit-raises-400m-at-9b-valuation-as-ai-coding-platform-surges-to-over-40m-users/",
@@ -252313,9 +252641,25 @@
             "source_content_hash": "c906371275e7a3ca",
             "quote": "Strategic investments came from Accenture, Databricks, Okta, and Tether.",
             "quote_hash": "2a92d3648e85cfacdf3ad37c2766e637c846e12256cf248e68b79be36131c17a"
+          },
+          {
+            "source_id": "dv_board",
+            "source_url": "https://www.databricks.com/databricks-ventures",
+            "source_title": "Databricks Ventures | Board seats",
+            "source_content_hash": "790d35f445d5c05e86f6d8d8b039ef3f11add6d71e6d055d8f8317b9f6558554",
+            "quote": "No, Databricks does not plan to take board seats in portfolio companies.",
+            "quote_hash": "56860df421e7d262dc94cba0263070deb1a7d6383d3f5ea75f2b84668bff2446"
+          },
+          {
+            "source_id": "dv_portfolio_support",
+            "source_url": "https://www.databricks.com/databricks-ventures",
+            "source_title": "Databricks Ventures | Portfolio support",
+            "source_content_hash": "790d35f445d5c05e86f6d8d8b039ef3f11add6d71e6d055d8f8317b9f6558554",
+            "quote": "Depending on the size and stage of the investment, Databricks will provide unique access to product roadmap direction, technical integration support, and go-to-market support; access to Databricks mentors for guidance and best practices; and exposure in Databricks’ global go-to-market programs, including our Data + AI Summit series.",
+            "quote_hash": "e53f5328737a99f1efa7db5757b3b0f22d3d6f09af302635dcd7de2f34899800"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-28"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -289771,19 +290115,115 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "EQT Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "coverage_note": "EQT Ventures III 的投资范围与基金规模仅适用于该支基金。Starcloud 记录与报道金额冲突，仍按历史/歧义处理，不列作已核实业绩。",
+        "summary": "EQT Ventures 是专注欧洲科技企业的早期投资机构，官网称已支持 140 多个创始团队，投资顾问位于斯德哥尔摩、巴黎、伦敦、纽约、柏林和阿姆斯特丹。EQT Ventures III 采取早期少数股权投资策略，单笔通常为 200 万至 5,000 万欧元，基金规模 11 亿欧元；这些数字仅适用于该基金。官方页面将 Sana Labs 列为 Ventures II 组合并标注 2025 年退出，但未披露收益倍数。Starcloud 的数据库金额与新闻报道不一致，暂不作为确认业绩。",
+        "facts": [
+          {
+            "field": "investment_stage",
+            "label": "投资阶段",
+            "value": "早期阶段；Ventures III 单笔通常为 €2M–€50M，此范围仅适用于该基金。",
+            "source_id": "eqt_fund_iii"
+          },
+          {
+            "field": "investment_geography",
+            "label": "重点地域",
+            "value": "以欧洲公司为重点，投资顾问位于斯德哥尔摩、巴黎、伦敦、纽约、柏林和阿姆斯特丹。",
+            "source_id": "eqt_overview"
+          },
+          {
+            "field": "investment_approach",
+            "label": "Ventures III 策略",
+            "value": "科技领域早期少数股权投资，并通过后续投资逐步建立持股。",
+            "source_id": "eqt_fund_iii"
+          },
+          {
+            "field": "fund_size",
+            "label": "EQT Ventures III 基金规模",
+            "value": "官网列示 €1.1B；这是单只基金规模，不代表 EQT Ventures 全部策略资产。",
+            "source_id": "eqt_fund_iii_metrics"
+          },
+          {
+            "field": "portfolio_scale",
+            "label": "官网披露支持的团队数",
+            "value": "140 多个创始团队；为官网团队数口径，不是回报指标。",
+            "source_id": "eqt_overview"
+          },
+          {
+            "field": "investment_focus",
+            "label": "Ventures III 投资行业",
+            "value": [
+              "气候科技",
+              "食品科技",
+              "创作者经济",
+              "能源",
+              "金融科技",
+              "软件",
+              "数据与 IT 基础设施",
+              "深科技"
+            ],
+            "source_id": "eqt_fund_iii"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2021",
+            "description": "EQT Ventures III 页面列示启动年份为 2021 年。",
+            "source_id": "eqt_fund_iii_metrics"
+          }
+        ],
         "track_record": [
           {
-            "description": "融资来源记录：Starcloud · A轮扩展 · 2026-08-21 · 历史轮次领投 · $250 million。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "EQT Ventures II 官方基金页将 Sana Labs 列为组合企业，记载 2021 年进入、2025 年退出；页面未披露退出金额或回报倍数。",
+            "source_id": "eqt_fund_ii"
+          },
+          {
+            "description": "融资库保留 Starcloud A 轮扩展记录，金额为 2.5 亿美元且标记为历史/歧义；SpaceNews 标题报告 1.7 亿美元，并称该轮由 Benchmark 与 EQT Ventures 领投。轮次金额口径冲突，未核实前不计作已确认业绩。",
             "source_id": "FISRC-64c63dc926fc8a24"
           }
         ],
-        "contacts": [],
+        "current_roles": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "机构官网",
+            "value": "EQT Ventures",
+            "url": "https://eqtgroup.com/private-capital/eqt-ventures",
+            "source_id": "eqt_overview"
+          },
+          {
+            "kind": "phone",
+            "label": "EQT 总部联系电话（非 Ventures 专属投资电话）",
+            "value": "+46 8 506 553 00",
+            "url": "https://eqtgroup.com/about/current-portfolio/funds/eqt-ventures-iii",
+            "source_id": "eqt_contact"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "eqt_overview",
+            "source_url": "https://eqtgroup.com/private-capital/eqt-ventures",
+            "source_title": "Striving to Be the Most Impactful Partner | EQT Ventures",
+            "source_content_hash": "460aabb20401d0e04f0d15188bbd61028673ce4ab6b5bb979db3d1dd5828e410",
+            "quote": "EQT Ventures is domiciled in Luxembourg, with investment advisors located in Stockholm, Paris, London, New York, Berlin and Amsterdam. Focused on European companies, we have backed over 140 founding teams to date.",
+            "quote_hash": "814c0e915fa0f25c757c43938dd6bdaa5ca7c2281a21cc36ab91362cf5874bef"
+          },
+          {
+            "source_id": "eqt_fund_iii",
+            "source_url": "https://eqtgroup.com/about/current-portfolio/funds/eqt-ventures-iii",
+            "source_title": "EQT Ventures III | EQT",
+            "source_content_hash": "0f2b16656281bd78b5739e9c655eb1c524d3894a6f743524bf40bc181ec88965",
+            "quote": "The EQT Ventures III fund primarily makes early-stage minority equity investments in tech companies within sectors such as climate tech, food tech, the creator economy, energy, fintech, software, data & IT infrastructure, deep tech, and more. The Fund’s investments will typically require an equity investment of between 2M EUR and 50M EUR, depending on the investment stage.",
+            "quote_hash": "420d989a18f992244b54d10132cf2c0d5aa2979e93df22645ce56ba3cf84badf"
+          },
+          {
+            "source_id": "eqt_fund_ii",
+            "source_url": "https://eqtgroup.com/about/current-portfolio/funds/eqt-ventures-ii",
+            "source_title": "EQT Ventures II | EQT",
+            "source_content_hash": "c9f852ff974435aea46ff42bbca14e39ae12b5391e840a536c27768a82a74b23",
+            "quote": "Sana Labs | EduTech | Sweden | 2021 | 2025",
+            "quote_hash": "dd6a558be572a0f1949b95b956199090af5a12a685a3f1b0621d9fb5217f4c4b"
+          },
           {
             "source_id": "FISRC-64c63dc926fc8a24",
             "source_url": "https://spacenews.com/starcloud-achieves-unicorn-status-with-170-million-raise-for-orbital-data-centers/",
@@ -289791,9 +290231,25 @@
             "source_content_hash": "10f88a25e3d2c819",
             "quote": "The Series A round was led by venture capital firm Benchmark and EQT Ventures",
             "quote_hash": "f6ca65424ceca7d257e5e8c2770717f0e6806f8814a06358b5b30019368e40ef"
+          },
+          {
+            "source_id": "eqt_fund_iii_metrics",
+            "source_url": "https://eqtgroup.com/about/current-portfolio/funds/eqt-ventures-iii",
+            "source_title": "EQT Ventures III | Fund facts",
+            "source_content_hash": "0f2b16656281bd78b5739e9c655eb1c524d3894a6f743524bf40bc181ec88965",
+            "quote": "Status Active. Launch 2021. Size 1.1B EUR.",
+            "quote_hash": "c31ac43d59c721e27f8c04ca9bb986de2de334fbd0b430cc339619f9b8af07c9"
+          },
+          {
+            "source_id": "eqt_contact",
+            "source_url": "https://eqtgroup.com/about/current-portfolio/funds/eqt-ventures-iii",
+            "source_title": "EQT Ventures III | Contact us",
+            "source_content_hash": "0f2b16656281bd78b5739e9c655eb1c524d3894a6f743524bf40bc181ec88965",
+            "quote": "+46850655300",
+            "quote_hash": "f22962bd56e2c22fab8ee101e3dd4f6e67e7ec9569c5b4dcf2acf3e5cb3cae84"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-28"
       },
       "activity_count": 1,
       "portfolio_companies": [],
@@ -323174,19 +323630,128 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Samsung Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2025-09-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "coverage_note": "机构介绍、指标、投资方向和联系方式来自 Samsung Ventures 官方页面。官网自报数字未标明统计时点；Mistral AI 关联仅来自第三方名单来源，尚未证实。",
+        "summary": "Samsung Ventures 是三星旗下企业风险投资机构，成立于 1999 年。官方公司页显示管理资产 28 亿美元、投资过 1,188 家公司、设有 75 支基金（44 支活跃基金）；这些为官网自报数据，页面未注明统计时点。投资领域包括 AI、机器人、器件解决方案、生物与健康、能源、安全与隐私、企业 IT 及消费设备。数据库中的 Mistral AI 关联来自第三方组合名单，无法确认 Samsung Ventures 是否参与该轮融资。",
+        "facts": [
+          {
+            "field": "founded_year",
+            "label": "成立年份",
+            "value": "1999",
+            "source_id": "samsung_company"
+          },
+          {
+            "field": "organization_type",
+            "label": "机构性质",
+            "value": "三星旗下企业风险投资机构（CVC）",
+            "source_id": "samsung_company"
+          },
+          {
+            "field": "assets_under_management",
+            "label": "官网显示管理资产",
+            "value": "28 亿美元；官网未标明统计时点。",
+            "source_id": "samsung_metrics"
+          },
+          {
+            "field": "portfolio_scale",
+            "label": "官网显示投资公司数",
+            "value": "1,188 家；官网未标明统计时点。",
+            "source_id": "samsung_metrics"
+          },
+          {
+            "field": "fund_count",
+            "label": "官网显示基金数",
+            "value": "75 支，其中 44 支活跃；官网未标明统计时点。",
+            "source_id": "samsung_metrics"
+          },
+          {
+            "field": "investment_focus",
+            "label": "投资领域",
+            "value": [
+              "人工智能",
+              "机器人",
+              "器件解决方案",
+              "生物与健康",
+              "能源",
+              "安全与隐私",
+              "企业 IT",
+              "消费与设备"
+            ],
+            "source_id": "samsung_company"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "1999",
+            "description": "Samsung Ventures 官网记载机构成立。",
+            "source_id": "samsung_company"
+          },
+          {
+            "date": "2004",
+            "description": "官网记载开设硅谷办公室，作为机构首个海外办公室。",
+            "source_id": "samsung_company"
+          },
+          {
+            "date": "2025",
+            "description": "官网历史记录记载任命 Jonghyuk Lee 为 CEO；官网未提供之后的任职变化。",
+            "source_id": "samsung_company"
+          }
+        ],
         "track_record": [
           {
-            "description": "融资来源记录：Mistral AI · C轮 · 2025-09-09 · 既有投资方 · 约17亿欧元（约20亿美元）。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "融资库保留 Notice.co 页面中 Samsung Ventures 与 Mistral AI 的关联线索，但第三方名单不足以确认其参与本轮融资，因此仍标记为历史/歧义待核，不计为已确认投资业绩。",
             "source_id": "FISRC-ff92324bbd437a73"
           }
         ],
-        "contacts": [],
+        "current_roles": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "机构官网",
+            "value": "Samsung Ventures",
+            "url": "https://www.samsungventures.com/en/company.do",
+            "source_id": "samsung_company"
+          },
+          {
+            "kind": "phone",
+            "label": "首尔办公室电话",
+            "value": "+82-2-2255-0299",
+            "url": "https://www.samsungventures.com/en/company.do",
+            "source_id": "samsung_contact"
+          },
+          {
+            "kind": "address",
+            "label": "首尔办公室",
+            "value": "29th Floor, Samsung Electronics Building, 11 Seocho-daero 74-gil, Seocho-gu, Seoul 06620, Korea",
+            "url": "https://www.samsungventures.com/en/company.do",
+            "source_id": "samsung_contact"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "samsung_company",
+            "source_url": "https://www.samsungventures.com/en/company.do",
+            "source_title": "SAMSUNG VENTURES | Company",
+            "source_content_hash": "682340bce62939679c73637f788a9d47dc43b1c3ecd8abdaabf79b7a5fa1ab42",
+            "quote": "Samsung Ventures is a corporate venture capital firm committed to driving growth and creating new value through technological innovation. Since its founding in 1999, the firm has leveraged its experience and expertise to actively invest in companies developing breakthrough technologies with the potential to transform industries.",
+            "quote_hash": "7a0cd54bc29b6fc4717b717042876f07413e4875865df89f0575b5779a419de7"
+          },
+          {
+            "source_id": "samsung_metrics",
+            "source_url": "https://www.samsungventures.com/en/company.do",
+            "source_title": "SAMSUNG VENTURES | Company metrics",
+            "source_content_hash": "682340bce62939679c73637f788a9d47dc43b1c3ecd8abdaabf79b7a5fa1ab42",
+            "quote": "2 . 8 AUM (Billion $) 1 , 188 Companies Invested 75 Number of funds 44 Active Funds",
+            "quote_hash": "acfe120b8e977d6b638e84d8d7b1fb04f3b11da2ce31d14a276d524081a25c84"
+          },
+          {
+            "source_id": "samsung_contact",
+            "source_url": "https://www.samsungventures.com/en/company.do",
+            "source_title": "SAMSUNG VENTURES | Company contact information",
+            "source_content_hash": "682340bce62939679c73637f788a9d47dc43b1c3ecd8abdaabf79b7a5fa1ab42",
+            "quote": "06620 29th Fl., Samsung Electronics Bldg., 11, Seocho-daero 74-gil, Seocho-gu, Seoul, Korea TEL. 02-2255-0299",
+            "quote_hash": "3290b9e2fabe5d39308e6c4d9db2ca16dce25e1174633ac0d7e31c4a22e3a1d2"
+          },
           {
             "source_id": "FISRC-ff92324bbd437a73",
             "source_url": "https://notice.co/c/mistral-ai",
@@ -323196,7 +323761,7 @@
             "quote_hash": "61feeac0ec72bc52da93f097c63c1fe43c40caee888e4c0ea30bec872f5b3567"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-28"
       },
       "activity_count": 1,
       "portfolio_companies": [],
