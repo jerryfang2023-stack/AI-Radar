@@ -1528,6 +1528,12 @@ test("superseded roundups and secondary event sources remain outside canonical e
       "multi_event_roundup_not_single_event_source",
     ],
     [
+      { clean_text: "据腾讯科技从接近DeepSeek人士处获悉，本轮融资500亿人民币，已接近结束，但部分审核仍在进行。9月初已发TS，预计9月底结束。", raw_qc_decision: "pass" },
+      { source_url: "https://m.pedaily.cn/news/569619" },
+      "投资界AI周报| DeepSeek又融资500亿 AI 2026-09-24 17:06",
+      "multi_event_roundup_not_single_event_source",
+    ],
+    [
       { clean_text: "Entire launches.", raw_qc_decision: "pass" },
       { source_url: "https://the-agent-report.com/entire-launch" },
       "The Agent Report: Thomas Dohmke launches Entire",
