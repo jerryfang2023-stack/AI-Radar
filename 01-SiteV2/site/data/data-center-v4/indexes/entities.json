@@ -250705,21 +250705,170 @@
         "multi_round"
       ],
       "public_profile": {
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "元生创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "summary": "元生创投（官网主体名称：苏州工业园区元生创业投资管理有限公司）是一家立足苏州 bioBAY、专注早期和成长期医疗健康投资的机构。官网披露其方向覆盖新药、医疗器械、体外诊断与精准医疗、医疗服务，并自述已投资200余家生命健康企业，其中19家登陆港交所或科创板。",
+        "facts": [
+          {
+            "field": "legal_name",
+            "label": "官网主体名称",
+            "value": "苏州工业园区元生创业投资管理有限公司",
+            "source_id": "yuanbio_legal_name"
+          },
+          {
+            "field": "founded",
+            "label": "成立年份",
+            "value": "2013年",
+            "source_id": "yuanbio_founded"
+          },
+          {
+            "field": "investment_stage",
+            "label": "投资阶段",
+            "value": [
+              "早期",
+              "成长期"
+            ],
+            "source_id": "yuanbio_stage"
+          },
+          {
+            "field": "headquarters",
+            "label": "所在园区",
+            "value": "苏州 bioBAY",
+            "source_id": "yuanbio_location"
+          },
+          {
+            "field": "investment_sectors",
+            "label": "投资方向",
+            "value": [
+              "新药创制",
+              "医疗器械",
+              "体外诊断与精准医疗",
+              "医疗服务"
+            ],
+            "source_id": "yuanbio_sectors"
+          },
+          {
+            "field": "portfolio_company_count",
+            "label": "官网自述投资企业数",
+            "value": "200余家生命健康领域企业",
+            "source_id": "yuanbio_portfolio_count"
+          },
+          {
+            "field": "listed_portfolio_count",
+            "label": "官网自述上市企业数",
+            "value": "19家已登陆港交所、科创板等资本市场",
+            "source_id": "yuanbio_listed_count"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2013",
+            "description": "官网标注为机构成立年份。",
+            "source_id": "yuanbio_founded"
+          }
+        ],
         "track_record": [
+          {
+            "description": "官网自述已投资200余家生命健康企业，其中19家已登陆港交所、科创板等资本市场；这是机构官网披露口径，未作为独立审计数据。",
+            "source_id": "yuanbio_listed_count"
+          },
           {
             "description": "融资来源记录：灵初智能 · 多轮融资 · 2026-03-10 · 本轮参投 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
             "source_id": "FISRC-10c7fcf01fad4e2f"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "元生创投",
+            "url": "https://bioventure.com.cn/",
+            "source_id": "yuanbio_legal_name"
+          },
+          {
+            "kind": "phone",
+            "label": "公开电话",
+            "value": "+86 512 6288 6520",
+            "source_id": "yuanbio_phone"
+          },
+          {
+            "kind": "address",
+            "label": "公开地址",
+            "value": "苏州工业园区星湖街218号A3座4楼B06单元",
+            "source_id": "yuanbio_address"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "yuanbio_legal_name",
+            "source_url": "https://bioventure.com.cn/",
+            "source_title": "苏州工业园区元生创业投资管理有限公司",
+            "source_content_hash": "2ea551a898e5888a508e847d236d7a42a10ef4dd1e4da72424d62bb398e4771e",
+            "quote": "苏州工业园区元生创业投资管理有限公司",
+            "quote_hash": "fc9dbb72f59c0b4ea3ff900e5280fced4a3488ac685d4b6af60dc461d2173dc9"
+          },
+          {
+            "source_id": "yuanbio_founded",
+            "source_url": "https://bioventure.com.cn/",
+            "source_title": "苏州工业园区元生创业投资管理有限公司",
+            "source_content_hash": "2ea551a898e5888a508e847d236d7a42a10ef4dd1e4da72424d62bb398e4771e",
+            "quote": "2013",
+            "quote_hash": "7931aa2a1bed855457d1ddf6bc06ab4406a9fba0579045a4d6ff78f9c07c440f"
+          },
+          {
+            "source_id": "yuanbio_stage",
+            "source_url": "https://bioventure.com.cn/",
+            "source_title": "苏州工业园区元生创业投资管理有限公司",
+            "source_content_hash": "2ea551a898e5888a508e847d236d7a42a10ef4dd1e4da72424d62bb398e4771e",
+            "quote": "专注于早期和成长期医疗健康领域",
+            "quote_hash": "316c13bdd54702c4cc584e3f1e2b9a5da9af77de31bec344b47561e25d1d3fa2"
+          },
+          {
+            "source_id": "yuanbio_location",
+            "source_url": "https://bioventure.com.cn/",
+            "source_title": "苏州工业园区元生创业投资管理有限公司",
+            "source_content_hash": "2ea551a898e5888a508e847d236d7a42a10ef4dd1e4da72424d62bb398e4771e",
+            "quote": "立足苏州bioBAY",
+            "quote_hash": "825adf739e035d1d0fe189a2f473190b25582528568cc54a54e2f388ad301da0"
+          },
+          {
+            "source_id": "yuanbio_sectors",
+            "source_url": "https://bioventure.com.cn/",
+            "source_title": "苏州工业园区元生创业投资管理有限公司",
+            "source_content_hash": "2ea551a898e5888a508e847d236d7a42a10ef4dd1e4da72424d62bb398e4771e",
+            "quote": "新药创制、医疗器械、体外诊断和精准医疗，以及医疗服务四大方向",
+            "quote_hash": "240f4efc33aafd5a9d82cbd63cadf3ef21fbe08945b377694c33403c4cf0841e"
+          },
+          {
+            "source_id": "yuanbio_portfolio_count",
+            "source_url": "https://bioventure.com.cn/",
+            "source_title": "苏州工业园区元生创业投资管理有限公司",
+            "source_content_hash": "2ea551a898e5888a508e847d236d7a42a10ef4dd1e4da72424d62bb398e4771e",
+            "quote": "目前已经完成了200余家生命健康领域优秀企业的投资",
+            "quote_hash": "5749d661b3691ece475bd462875d0b030c9c73afd60ecd51b76a7f5c5e5f6184"
+          },
+          {
+            "source_id": "yuanbio_listed_count",
+            "source_url": "https://bioventure.com.cn/",
+            "source_title": "苏州工业园区元生创业投资管理有限公司",
+            "source_content_hash": "2ea551a898e5888a508e847d236d7a42a10ef4dd1e4da72424d62bb398e4771e",
+            "quote": "其中19家企业已经登陆港交所、科创板等资本市场。",
+            "quote_hash": "9078c6ec0ae0f55b5cc30501d8717296f972da1ffd1c3afc91981105aa76cf04"
+          },
+          {
+            "source_id": "yuanbio_phone",
+            "source_url": "https://bioventure.com.cn/",
+            "source_title": "苏州工业园区元生创业投资管理有限公司",
+            "source_content_hash": "2ea551a898e5888a508e847d236d7a42a10ef4dd1e4da72424d62bb398e4771e",
+            "quote": "固话：+86 512 6288 6520",
+            "quote_hash": "41a53795bcd331819fb6e45c58f46e43bed6d7a0ac8814cff933bc7cd9abae96"
+          },
+          {
+            "source_id": "yuanbio_address",
+            "source_url": "https://bioventure.com.cn/",
+            "source_title": "苏州工业园区元生创业投资管理有限公司",
+            "source_content_hash": "2ea551a898e5888a508e847d236d7a42a10ef4dd1e4da72424d62bb398e4771e",
+            "quote": "地址：苏州工业园区星湖街218号A3座4楼B06单元",
+            "quote_hash": "14a20d7daa4836b41e6dd8865679bd3042a9ca807ec181e9d6e0b9d8bceccf27"
+          },
           {
             "source_id": "FISRC-10c7fcf01fad4e2f",
             "source_url": "https://finance.sina.com.cn/cj/2026-03-10/doc-inhqnmhx6407658.shtml",
@@ -250729,7 +250878,11 @@
             "quote_hash": "b8fab44b0c0d4b539d3c01fb2e3ba601725d5487a4f3a6e99f4d4916f5cca200"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27",
+        "profile_type": "organization",
+        "coverage_status": "researched",
+        "coverage_note": "资料根据元生创投官网整理；被投企业数、上市企业数及方向均为机构官网披露口径。联系电话与地址为官网公开信息，未发现可确认的专属项目投递邮箱。",
+        "identity_status": "verified"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -306145,21 +306298,171 @@
       },
       "round_codes": [],
       "public_profile": {
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "小米集团 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "summary": "小米集团是以智能手机、智能硬件和 IoT 平台为核心的消费电子及智能制造公司，2010年成立并于2018年在香港联交所上市。官网披露其2025年全球手机出货量排名第三、AIoT平台接入设备10.79亿台，产品覆盖100多个国家和地区。融资来源回溯到一篇后续融资报道所述的小雨智造2023年种子轮，并列出“小米集团”；该材料不证明小米参与数据库记录的2026年B+轮，也不足以确认具体出资的集团部门、生态链公司或基金。",
+        "facts": [
+          {
+            "field": "business_scope",
+            "label": "主营业务",
+            "value": "以智能手机、智能硬件和 IoT 平台为核心的消费电子及智能制造",
+            "source_id": "xiaomi_business_scope"
+          },
+          {
+            "field": "founded",
+            "label": "成立时间",
+            "value": "2010年4月",
+            "source_id": "xiaomi_founding_listing"
+          },
+          {
+            "field": "listed",
+            "label": "上市信息",
+            "value": "2018年7月9日在香港联交所主板上市",
+            "source_id": "xiaomi_founding_listing"
+          },
+          {
+            "field": "smartphone_shipments",
+            "label": "手机出货表现",
+            "value": "按Omdia数据，2025年全球手机出货量排名第三（公司官网转述）",
+            "source_id": "xiaomi_shipments"
+          },
+          {
+            "field": "aiot_scale",
+            "label": "AIoT平台规模",
+            "value": "截至2025年12月31日连接IoT设备10.79亿台；不含手机、平板及笔记本电脑",
+            "source_id": "xiaomi_aiot_scale"
+          },
+          {
+            "field": "markets",
+            "label": "业务覆盖",
+            "value": "产品遍布全球100多个国家和地区",
+            "source_id": "xiaomi_markets"
+          },
+          {
+            "field": "fortune_global_500",
+            "label": "《财富》世界500强",
+            "value": "2026年连续第8年上榜",
+            "source_id": "xiaomi_fortune500"
+          },
+          {
+            "field": "ecosystem_structure",
+            "label": "生态链主体关系",
+            "value": "小米官方隐私政策称生态系统公司是由小米投资和运营的独立实体；本条融资记录未披露具体出资实体。",
+            "source_id": "xiaomi_ecosystem"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2010-04",
+            "description": "小米公司正式成立。",
+            "source_id": "xiaomi_founding_listing"
+          },
+          {
+            "date": "2018-07-09",
+            "description": "在香港联交所主板上市。",
+            "source_id": "xiaomi_founding_listing"
+          }
+        ],
         "track_record": [
           {
-            "description": "融资来源记录：小雨智造 · B+轮 · 2026-05-09 · 种子轮投资方 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "融资来源回溯披露：小米集团于2023年3月参与小雨智造种子轮。数据库另记录小雨智造于2026年披露B+轮，但该历史来源不证明小米参与后续轮次、具体投资金额或出资部门。",
             "source_id": "FISRC-5ddafcf5b1c1b90b"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "投资者关系网站",
+            "value": "Xiaomi Corporation IR",
+            "url": "https://ir.mi.com/zh-hans",
+            "source_id": "xiaomi_ir_email"
+          },
+          {
+            "kind": "email",
+            "label": "投资者关系邮箱（非项目融资投递渠道）",
+            "value": "ir@xiaomi.com",
+            "url": "https://ir.mi.com/zh-hans/investor-resources/ir-contacts",
+            "source_id": "xiaomi_ir_email"
+          },
+          {
+            "kind": "address",
+            "label": "投资者关系公开地址",
+            "value": "北京市海淀区安宁庄路小米科技园",
+            "url": "https://ir.mi.com/zh-hans/investor-resources/ir-contacts",
+            "source_id": "xiaomi_ir_address"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "xiaomi_founding_listing",
+            "source_url": "https://ir.mi.com/zh-hans/corporate-information/company-profile",
+            "source_title": "公司简介 | Xiaomi Corporation",
+            "source_content_hash": "f486cb0eb459c9ecdb3d09f4538cac876ee828451ed01ea75451b70a21db4161",
+            "quote": "小米公司正式成立于2010年4月, 并于2018年7月9日在香港联交所主板上市。",
+            "quote_hash": "60e446bacecb1633b725c5b86d1050d71e9abd38d64df46fda689eac7234c69e"
+          },
+          {
+            "source_id": "xiaomi_business_scope",
+            "source_url": "https://ir.mi.com/zh-hans/corporate-information/company-profile",
+            "source_title": "公司简介 | Xiaomi Corporation",
+            "source_content_hash": "f486cb0eb459c9ecdb3d09f4538cac876ee828451ed01ea75451b70a21db4161",
+            "quote": "小米公司是一家以智能手机、智能硬件和 IoT 平台为核心的消费电子及智能制造公司。",
+            "quote_hash": "3d884cff27b32fd8b51f83b3351d46f5334236f8c65ba03c83f06bf29d6bd5a9"
+          },
+          {
+            "source_id": "xiaomi_shipments",
+            "source_url": "https://ir.mi.com/zh-hans/corporate-information/company-profile",
+            "source_title": "公司简介 | Xiaomi Corporation",
+            "source_content_hash": "f486cb0eb459c9ecdb3d09f4538cac876ee828451ed01ea75451b70a21db4161",
+            "quote": "2025年在全球范围内手机出货量排名第三。",
+            "quote_hash": "4df04a8338b1385fd79ddeb55eddb5b9bbed9e56a8acfcff90d2a4c7f8376d0e"
+          },
+          {
+            "source_id": "xiaomi_aiot_scale",
+            "source_url": "https://ir.mi.com/zh-hans/corporate-information/company-profile",
+            "source_title": "公司简介 | Xiaomi Corporation",
+            "source_content_hash": "f486cb0eb459c9ecdb3d09f4538cac876ee828451ed01ea75451b70a21db4161",
+            "quote": "截至2025年12月31日，AIoT平台已连接的IoT设备数（不包括智能手机、平板及笔记本电脑）已达到10.79亿。",
+            "quote_hash": "5282cab07a816eda46823dca303e7f5b919cdaf00bf81bcef7ddfc3cdf1899b4"
+          },
+          {
+            "source_id": "xiaomi_markets",
+            "source_url": "https://ir.mi.com/zh-hans/corporate-information/company-profile",
+            "source_title": "公司简介 | Xiaomi Corporation",
+            "source_content_hash": "f486cb0eb459c9ecdb3d09f4538cac876ee828451ed01ea75451b70a21db4161",
+            "quote": "小米产品遍布全球100多个国家和地区。",
+            "quote_hash": "393cc0d23cef291f48d2b9ee67766838f605cffc9ec72c61527e8042eba4e464"
+          },
+          {
+            "source_id": "xiaomi_fortune500",
+            "source_url": "https://ir.mi.com/zh-hans/corporate-information/company-profile",
+            "source_title": "公司简介 | Xiaomi Corporation",
+            "source_content_hash": "f486cb0eb459c9ecdb3d09f4538cac876ee828451ed01ea75451b70a21db4161",
+            "quote": "2026年7月，小米连续8年上榜《财富》全球500强。",
+            "quote_hash": "b8daa8d33ac40f5575e612980283b1fa95fe0751eadf04c6f8f58219527f9b67"
+          },
+          {
+            "source_id": "xiaomi_ecosystem",
+            "source_url": "https://www.mi.com/about/privacy",
+            "source_title": "隐私政策 | 小米",
+            "source_content_hash": "fc0d5b8ae1ce8e9be2858ee6a0e7b7421cf13fa06a37aa641e25444dd0244181",
+            "quote": "小米生态系统公司是由小米投资和运营的独立实体。",
+            "quote_hash": "eea6a884dcd4dd7cb233fc2389eca1dae7500136420e3fa88b1db065fe303403"
+          },
+          {
+            "source_id": "xiaomi_ir_email",
+            "source_url": "https://ir.mi.com/zh-hans/investor-resources/ir-contacts",
+            "source_title": "联系投资者关系 | Xiaomi Corporation",
+            "source_content_hash": "516695de5ea70117041f58570a071a19da061bc6be4f82917c7b341ed4b735ba",
+            "quote": "邮箱: ir@xiaomi.com",
+            "quote_hash": "3f45ac53c35fc9271f490e9e1056394f89fe512858028ff57252470c7cd88cc4"
+          },
+          {
+            "source_id": "xiaomi_ir_address",
+            "source_url": "https://ir.mi.com/zh-hans/investor-resources/ir-contacts",
+            "source_title": "联系投资者关系 | Xiaomi Corporation",
+            "source_content_hash": "516695de5ea70117041f58570a071a19da061bc6be4f82917c7b341ed4b735ba",
+            "quote": "地址: 北京市海淀区安宁庄路小米科技园",
+            "quote_hash": "58e58b9b8b2a8ce0bc575c4c556b4f1d8dcfa784dbe0a55e7ca813052cae1347"
+          },
           {
             "source_id": "FISRC-5ddafcf5b1c1b90b",
             "source_url": "https://news.pedaily.cn/202507/552068.shtml",
@@ -306169,7 +306472,11 @@
             "quote_hash": "fa5c36a10ad946995593868a7b4cd46a246273129b14b7f3d97e5d4fc23639e2"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27",
+        "profile_type": "organization",
+        "coverage_status": "researched",
+        "coverage_note": "集团经营数据引用小米公司官方投资者关系页面；生态链公司关系引用小米官方隐私政策。融资披露仅以“小米集团”为投资方称谓，暂不能确认具体执行投资的集团部门、生态链实体或基金。公开邮箱和地址仅为投资者关系渠道，不代表融资项目联络方式。",
+        "identity_status": "verified"
       },
       "activity_count": 1,
       "portfolio_companies": [],
@@ -313928,21 +314235,306 @@
       },
       "round_codes": [],
       "public_profile": {
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "首发展创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-05；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "summary": "首发展创投是北京首都科技发展集团科技投资体系中的投资主体，公开募集说明书披露其开展直投，并以 LP 或 GP 身份参与子基金。集团披露的直投方向主要为医药健康、新一代信息技术和新材料；机构组合、退出项目和所管理基金均按募集说明书披露口径注明层级与截止日期。",
+        "facts": [
+          {
+            "field": "parent_group",
+            "label": "所属集团",
+            "value": "北京首都科技发展集团有限公司；募集说明书将首发展创投列为集团下属子公司",
+            "source_id": "shoufa_direct_model"
+          },
+          {
+            "field": "related_legal_entity",
+            "label": "集团站群列示主体",
+            "value": "北京首都科技发展集团投资管理有限公司（官网集团站群列示；与简称的工商映射未在本档案中另行核验）",
+            "source_id": "shoufa_group_station"
+          },
+          {
+            "field": "investment_models",
+            "label": "投资方式",
+            "value": [
+              "直接投资非公开发行公司股权",
+              "作为LP或GP投资私募股权子基金"
+            ],
+            "source_id": "shoufa_fund_model"
+          },
+          {
+            "field": "direct_investment_sectors",
+            "label": "直投重点领域",
+            "value": [
+              "医药健康",
+              "新一代信息技术",
+              "新材料"
+            ],
+            "source_id": "shoufa_direct_model"
+          },
+          {
+            "field": "subfund_focus",
+            "label": "子基金重点领域",
+            "value": [
+              "医药健康",
+              "新材料",
+              "新一代信息技术"
+            ],
+            "source_id": "shoufa_fund_model"
+          },
+          {
+            "field": "gp_funds",
+            "label": "截至2025年末作为GP管理的子基金",
+            "value": [
+              "首科开阳基金",
+              "天玑基金",
+              "天枢基金",
+              "华夏龙盈基金",
+              "天璇基金",
+              "开阳中新基金",
+              "玉衡基金",
+              "江岸基金",
+              "前孵化基金",
+              "衡翼衍至基金",
+              "长江经开基金",
+              "医工创谷基金"
+            ],
+            "source_id": "shoufa_gp_funds"
+          },
+          {
+            "field": "group_hardtech_activity",
+            "label": "集团官网展示的硬科技项目规模",
+            "value": "集团官网原文为“近3000+”，统计口径未说明",
+            "source_id": "shoufa_hardtech_scale"
+          },
+          {
+            "field": "group_hitech_companies",
+            "label": "集团官网展示的高新技术企业规模",
+            "value": "近1500家（集团口径）",
+            "source_id": "shoufa_hitech_scale"
+          },
+          {
+            "field": "group_little_giant_companies",
+            "label": "集团官网展示的专精特新“小巨人”数量",
+            "value": "273家（集团口径）",
+            "source_id": "shoufa_little_giant_scale"
+          },
+          {
+            "field": "direct_investment_projects",
+            "label": "直投项目数（截至2025年末）",
+            "value": "16个；3个全部退出，13个尚未退出（含2个部分退出）",
+            "source_id": "shoufa_project_count"
+          },
+          {
+            "field": "portfolio_companies",
+            "label": "募集说明书明确由首发展创投投资的企业",
+            "value": [
+              "北京大艾机器人科技有限公司",
+              "北京艺妙神州生物医药股份有限公司"
+            ],
+            "source_id": "shoufa_portfolio_attribution"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2014",
+            "description": "北京首都科技发展集团官网将2014标注为集团成立年份；不是首发展创投单体的设立日期。",
+            "source_id": "shoufa_group_founded"
+          }
+        ],
         "track_record": [
+          {
+            "description": "集团募集说明书披露，截至2025年末，直投项目中披露的退出项目合计投资成本5,499.73万元、退出金额10,511.55万元、增值5,011.82万元；属于集团项目披露口径，不代表基金整体回报或首发展创投单体业绩。",
+            "source_id": "shoufa_exit_metrics"
+          },
+          {
+            "description": "募集说明书标注，北京大艾机器人科技有限公司的投资主体为首发展创投；截至2025年末表列未退出部分投资金额1,200万元、持股10.40%。",
+            "source_id": "shoufa_daai_holding"
+          },
+          {
+            "description": "募集说明书标注，北京艺妙神州生物医药股份有限公司的投资主体为首发展创投；截至2025年末表列未退出部分投资成本292.27万元、持股1.67%。",
+            "source_id": "shoufa_yimiao_holding"
+          },
           {
             "description": "融资来源记录：极佳视界 · Pre-B轮 · 2026-03-05 · A2轮跟投方 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
             "source_id": "FISRC-fdfe58e2e68c7e9e"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "所属集团官方网站",
+            "value": "北京首都科技发展集团",
+            "url": "https://www.bstig.cn/",
+            "source_id": "shoufa_group_station"
+          },
+          {
+            "kind": "application",
+            "label": "集团官网商业计划书投递",
+            "value": "官网BP投递表单；需提交公司、行业、联系人信息及商业计划书",
+            "url": "https://www.bstig.cn/?about_17/=",
+            "source_id": "shoufa_bp_submission"
+          },
+          {
+            "kind": "phone",
+            "label": "集团公开电话",
+            "value": "010-64841342",
+            "source_id": "shoufa_contact_phone"
+          },
+          {
+            "kind": "email",
+            "label": "集团公开邮箱（非专属项目邮箱）",
+            "value": "Bstig@bstig.cn",
+            "source_id": "shoufa_contact_email"
+          },
+          {
+            "kind": "address",
+            "label": "集团公开地址",
+            "value": "北京市朝阳区安翔北里甲11号创业大厦B座",
+            "source_id": "shoufa_contact_address"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "shoufa_group_station",
+            "source_url": "https://www.bstig.cn/",
+            "source_title": "北京首都科技发展集团有限公司",
+            "source_content_hash": "5ef48ce856795e4fbd6aaa5626a36928255a76d7b93e317a1c827afd5be68c81",
+            "quote": "北京首都科技发展集团投资管理有限公司",
+            "quote_hash": "67b4222a683c132f7e65c788701cd349242af998a15e69da1da32cde1027557a"
+          },
+          {
+            "source_id": "shoufa_group_founded",
+            "source_url": "https://www.bstig.cn/",
+            "source_title": "北京首都科技发展集团有限公司",
+            "source_content_hash": "5ef48ce856795e4fbd6aaa5626a36928255a76d7b93e317a1c827afd5be68c81",
+            "quote": "2014 集团成立于",
+            "quote_hash": "fcae547520bb53379d3f0172efbf5baddd59ade4a49201be1b78f1f7c7e8f318"
+          },
+          {
+            "source_id": "shoufa_strategy",
+            "source_url": "https://www.bstig.cn/",
+            "source_title": "北京首都科技发展集团有限公司",
+            "source_content_hash": "5ef48ce856795e4fbd6aaa5626a36928255a76d7b93e317a1c827afd5be68c81",
+            "quote": "集团自成立以来，不断探索“前孵化”投资模式",
+            "quote_hash": "268eb5494cd636d8fe32d8f9ce96ea8c24a1a10485e79e0734a52f9be22781fd"
+          },
+          {
+            "source_id": "shoufa_hardtech_scale",
+            "source_url": "https://www.bstig.cn/",
+            "source_title": "北京首都科技发展集团有限公司",
+            "source_content_hash": "5ef48ce856795e4fbd6aaa5626a36928255a76d7b93e317a1c827afd5be68c81",
+            "quote": "近3000+ 硬科技项目",
+            "quote_hash": "2962d4082081b6b8c535c6658d842dc36e5c006c652629d57e5e934cd00364d8"
+          },
+          {
+            "source_id": "shoufa_hitech_scale",
+            "source_url": "https://www.bstig.cn/",
+            "source_title": "北京首都科技发展集团有限公司",
+            "source_content_hash": "5ef48ce856795e4fbd6aaa5626a36928255a76d7b93e317a1c827afd5be68c81",
+            "quote": "近1500 高新技术企业",
+            "quote_hash": "2e7f7b6c34f7605d642cb372b5dcaef0f01f3dea0179aa6fe0ed4186d2bf773c"
+          },
+          {
+            "source_id": "shoufa_little_giant_scale",
+            "source_url": "https://www.bstig.cn/",
+            "source_title": "北京首都科技发展集团有限公司",
+            "source_content_hash": "5ef48ce856795e4fbd6aaa5626a36928255a76d7b93e317a1c827afd5be68c81",
+            "quote": "273 专精特新小巨人",
+            "quote_hash": "7ca35a1d13f439a9c227421c8f2e0913b72ada7a44b820774efdc876a86b6f0d"
+          },
+          {
+            "source_id": "shoufa_direct_model",
+            "source_url": "https://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2026-09-08/246005_20260908_8OAX.pdf",
+            "source_title": "北京首都科技发展集团有限公司2026年面向专业投资者公开发行科技创新公司债券（第一期）募集说明书",
+            "source_content_hash": "aede3b77cc5c04357ea67b68395eae6a835a9e174f0dfaccb58012a9de1339fb",
+            "quote": "股权投资模式下，首发展集团及其下属子公司首发展创投对非公开发行公司直接进行股权投资，并直接获得被投资单位的股权份额。被投资企业行业主要以医药健康、新一代信息技术和新材料三大领域为主。",
+            "quote_hash": "fcec02fd96e9792057c2dd52bc00c55bb0174013f9a2720cc3797a737d20a7eb"
+          },
+          {
+            "source_id": "shoufa_fund_model",
+            "source_url": "https://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2026-09-08/246005_20260908_8OAX.pdf",
+            "source_title": "北京首都科技发展集团有限公司2026年面向专业投资者公开发行科技创新公司债券（第一期）募集说明书",
+            "source_content_hash": "aede3b77cc5c04357ea67b68395eae6a835a9e174f0dfaccb58012a9de1339fb",
+            "quote": "基金投资模式下，首发展集团及其下属子公司首发展创投以 LP 或者 GP 的身份，投资于有限合伙型私募股权投资基金，再由被投资基金进行股权投资。被投资子基金主要投资于医药健康、新材料、新一代信息技术等领域。",
+            "quote_hash": "abb9265d70113f3136cb4775564fb7b28c53768c5311a669475a1a5444d5ea44"
+          },
+          {
+            "source_id": "shoufa_project_count",
+            "source_url": "https://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2026-09-08/246005_20260908_8OAX.pdf",
+            "source_title": "北京首都科技发展集团有限公司2026年面向专业投资者公开发行科技创新公司债券（第一期）募集说明书",
+            "source_content_hash": "aede3b77cc5c04357ea67b68395eae6a835a9e174f0dfaccb58012a9de1339fb",
+            "quote": "首发展自成立以来，共参与股权投资项目 16 个，截至 2025 年末已有 3 个项目完全退出，13 个项目尚未退出（包括 2 个项目部分退出）。",
+            "quote_hash": "ae68d1141865fa819fb028da5b470409ab98145609650c18bd6073fe16cf0c38"
+          },
+          {
+            "source_id": "shoufa_exit_metrics",
+            "source_url": "https://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2026-09-08/246005_20260908_8OAX.pdf",
+            "source_title": "北京首都科技发展集团有限公司2026年面向专业投资者公开发行科技创新公司债券（第一期）募集说明书",
+            "source_content_hash": "aede3b77cc5c04357ea67b68395eae6a835a9e174f0dfaccb58012a9de1339fb",
+            "quote": "投资成本总计 5,499.73 万元，退出金额总计 10,511.55 万元，增值 5,011.82 万元。",
+            "quote_hash": "490c874824e62af3a51ad7a8a27e94e89b253c085a651aaadb477cc818ddf944"
+          },
+          {
+            "source_id": "shoufa_portfolio_attribution",
+            "source_url": "https://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2026-09-08/246005_20260908_8OAX.pdf",
+            "source_title": "北京首都科技发展集团有限公司2026年面向专业投资者公开发行科技创新公司债券（第一期）募集说明书",
+            "source_content_hash": "aede3b77cc5c04357ea67b68395eae6a835a9e174f0dfaccb58012a9de1339fb",
+            "quote": "除北京大艾机器人科技有限公司和北京艺妙神州生物医药股份有限公司的投资主体为首发展创投外，其他均为本部",
+            "quote_hash": "d8e25a1eb4b7eca4d997824fad0304c45720220e0ac5f0a04481f2f200263644"
+          },
+          {
+            "source_id": "shoufa_daai_holding",
+            "source_url": "https://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2026-09-08/246005_20260908_8OAX.pdf",
+            "source_title": "北京首都科技发展集团有限公司2026年面向专业投资者公开发行科技创新公司债券（第一期）募集说明书",
+            "source_content_hash": "aede3b77cc5c04357ea67b68395eae6a835a9e174f0dfaccb58012a9de1339fb",
+            "quote": "北京大艾机器人科技有限公司 生命健康 2016.04 1,200.00 10.40%",
+            "quote_hash": "4a36afa8d6f2db86c761d5b3f7d85d0e7550f8664b8bd19498e8a69c84b39244"
+          },
+          {
+            "source_id": "shoufa_yimiao_holding",
+            "source_url": "https://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2026-09-08/246005_20260908_8OAX.pdf",
+            "source_title": "北京首都科技发展集团有限公司2026年面向专业投资者公开发行科技创新公司债券（第一期）募集说明书",
+            "source_content_hash": "aede3b77cc5c04357ea67b68395eae6a835a9e174f0dfaccb58012a9de1339fb",
+            "quote": "北京艺妙神州生物医药股份有限公司 生命健康 2015.12 292.27 1.67%",
+            "quote_hash": "9a2cc093d7a331222275a3356708f923f754000d0266070eb9e186b791813aea"
+          },
+          {
+            "source_id": "shoufa_gp_funds",
+            "source_url": "https://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2026-09-08/246005_20260908_8OAX.pdf",
+            "source_title": "北京首都科技发展集团有限公司2026年面向专业投资者公开发行科技创新公司债券（第一期）募集说明书",
+            "source_content_hash": "aede3b77cc5c04357ea67b68395eae6a835a9e174f0dfaccb58012a9de1339fb",
+            "quote": "截至 2025 年 12 月 31 日，首发展创投除在首科开阳基金、天玑基金、天枢基金、华夏龙盈基金、天璇基金、开阳中新基金、玉衡基金、江岸基金、前孵化基金、衡翼衍至基金、长江经开基金、医工创谷基金中担任 GP 角色，并对基金进行管理并收取基金管理费之外，在其他子基金项目中未担任 GP 或 LP 角色。",
+            "quote_hash": "a325b0c8dba85c6b23fa542abbf4d24dbb92a70a2019e22202d5014ca8389f5a"
+          },
+          {
+            "source_id": "shoufa_bp_submission",
+            "source_url": "https://www.bstig.cn/?about_17/=",
+            "source_title": "BP投递-北京首都科技发展集团有限公司",
+            "source_content_hash": "a8ed932ba0d545762bb7811a91a52d7d3a849e46698b51b4dbde409e7a164a50",
+            "quote": "上传商业计划书",
+            "quote_hash": "9c199f0d857a994280de6b9c7d40fcfb9af4f56153bffd1fabf67a227f9e1e82"
+          },
+          {
+            "source_id": "shoufa_contact_phone",
+            "source_url": "https://www.bstig.cn/",
+            "source_title": "北京首都科技发展集团有限公司",
+            "source_content_hash": "5ef48ce856795e4fbd6aaa5626a36928255a76d7b93e317a1c827afd5be68c81",
+            "quote": "电话：010-64841342",
+            "quote_hash": "51cbeba309f5ca4e6c427100f6907d54c9377f5303edced73d208f19089d0b14"
+          },
+          {
+            "source_id": "shoufa_contact_email",
+            "source_url": "https://www.bstig.cn/",
+            "source_title": "北京首都科技发展集团有限公司",
+            "source_content_hash": "5ef48ce856795e4fbd6aaa5626a36928255a76d7b93e317a1c827afd5be68c81",
+            "quote": "联系我们：Bstig@bstig.cn",
+            "quote_hash": "3a55a427dc4af0da2127ccc5f6bb63ecfbf291c66b2cd80a66705349dbef6c53"
+          },
+          {
+            "source_id": "shoufa_contact_address",
+            "source_url": "https://www.bstig.cn/",
+            "source_title": "北京首都科技发展集团有限公司",
+            "source_content_hash": "5ef48ce856795e4fbd6aaa5626a36928255a76d7b93e317a1c827afd5be68c81",
+            "quote": "地址：安翔北里甲11号创业大厦B座",
+            "quote_hash": "8da836999acf0eeeb24d8b9abcaa4737c45a394005899b8949225635befe51b5"
+          },
           {
             "source_id": "FISRC-fdfe58e2e68c7e9e",
             "source_url": "https://news.pedaily.cn/202603/561389.shtml",
@@ -313952,7 +314544,11 @@
             "quote_hash": "53c9480b4646fcc1fd65da934701618dc003988b0ef3135b3c5adca43f6da522"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27",
+        "profile_type": "organization",
+        "coverage_status": "researched",
+        "coverage_note": "集团与投资管理主体的层级、名称和数据口径按官网及2026年债券募集说明书分别标注。项目投资数据截至2025年末，集团规模不等同于首发展创投单体业绩。公开电话、邮箱和BP表单均为集团渠道，未核实为首发展创投的专属项目联系人。",
+        "identity_status": "verified"
       },
       "activity_count": 1,
       "portfolio_companies": [],

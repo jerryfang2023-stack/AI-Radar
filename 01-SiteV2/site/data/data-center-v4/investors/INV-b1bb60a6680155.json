@@ -137,21 +137,170 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "元生创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "元生创投（官网主体名称：苏州工业园区元生创业投资管理有限公司）是一家立足苏州 bioBAY、专注早期和成长期医疗健康投资的机构。官网披露其方向覆盖新药、医疗器械、体外诊断与精准医疗、医疗服务，并自述已投资200余家生命健康企业，其中19家登陆港交所或科创板。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "官网主体名称",
+          "value": "苏州工业园区元生创业投资管理有限公司",
+          "source_id": "yuanbio_legal_name"
+        },
+        {
+          "field": "founded",
+          "label": "成立年份",
+          "value": "2013年",
+          "source_id": "yuanbio_founded"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": [
+            "早期",
+            "成长期"
+          ],
+          "source_id": "yuanbio_stage"
+        },
+        {
+          "field": "headquarters",
+          "label": "所在园区",
+          "value": "苏州 bioBAY",
+          "source_id": "yuanbio_location"
+        },
+        {
+          "field": "investment_sectors",
+          "label": "投资方向",
+          "value": [
+            "新药创制",
+            "医疗器械",
+            "体外诊断与精准医疗",
+            "医疗服务"
+          ],
+          "source_id": "yuanbio_sectors"
+        },
+        {
+          "field": "portfolio_company_count",
+          "label": "官网自述投资企业数",
+          "value": "200余家生命健康领域企业",
+          "source_id": "yuanbio_portfolio_count"
+        },
+        {
+          "field": "listed_portfolio_count",
+          "label": "官网自述上市企业数",
+          "value": "19家已登陆港交所、科创板等资本市场",
+          "source_id": "yuanbio_listed_count"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2013",
+          "description": "官网标注为机构成立年份。",
+          "source_id": "yuanbio_founded"
+        }
+      ],
       "track_record": [
+        {
+          "description": "官网自述已投资200余家生命健康企业，其中19家已登陆港交所、科创板等资本市场；这是机构官网披露口径，未作为独立审计数据。",
+          "source_id": "yuanbio_listed_count"
+        },
         {
           "description": "融资来源记录：灵初智能 · 多轮融资 · 2026-03-10 · 本轮参投 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-10c7fcf01fad4e2f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "元生创投",
+          "url": "https://bioventure.com.cn/",
+          "source_id": "yuanbio_legal_name"
+        },
+        {
+          "kind": "phone",
+          "label": "公开电话",
+          "value": "+86 512 6288 6520",
+          "source_id": "yuanbio_phone"
+        },
+        {
+          "kind": "address",
+          "label": "公开地址",
+          "value": "苏州工业园区星湖街218号A3座4楼B06单元",
+          "source_id": "yuanbio_address"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "yuanbio_legal_name",
+          "source_url": "https://bioventure.com.cn/",
+          "source_title": "苏州工业园区元生创业投资管理有限公司",
+          "source_content_hash": "2ea551a898e5888a508e847d236d7a42a10ef4dd1e4da72424d62bb398e4771e",
+          "quote": "苏州工业园区元生创业投资管理有限公司",
+          "quote_hash": "fc9dbb72f59c0b4ea3ff900e5280fced4a3488ac685d4b6af60dc461d2173dc9"
+        },
+        {
+          "source_id": "yuanbio_founded",
+          "source_url": "https://bioventure.com.cn/",
+          "source_title": "苏州工业园区元生创业投资管理有限公司",
+          "source_content_hash": "2ea551a898e5888a508e847d236d7a42a10ef4dd1e4da72424d62bb398e4771e",
+          "quote": "2013",
+          "quote_hash": "7931aa2a1bed855457d1ddf6bc06ab4406a9fba0579045a4d6ff78f9c07c440f"
+        },
+        {
+          "source_id": "yuanbio_stage",
+          "source_url": "https://bioventure.com.cn/",
+          "source_title": "苏州工业园区元生创业投资管理有限公司",
+          "source_content_hash": "2ea551a898e5888a508e847d236d7a42a10ef4dd1e4da72424d62bb398e4771e",
+          "quote": "专注于早期和成长期医疗健康领域",
+          "quote_hash": "316c13bdd54702c4cc584e3f1e2b9a5da9af77de31bec344b47561e25d1d3fa2"
+        },
+        {
+          "source_id": "yuanbio_location",
+          "source_url": "https://bioventure.com.cn/",
+          "source_title": "苏州工业园区元生创业投资管理有限公司",
+          "source_content_hash": "2ea551a898e5888a508e847d236d7a42a10ef4dd1e4da72424d62bb398e4771e",
+          "quote": "立足苏州bioBAY",
+          "quote_hash": "825adf739e035d1d0fe189a2f473190b25582528568cc54a54e2f388ad301da0"
+        },
+        {
+          "source_id": "yuanbio_sectors",
+          "source_url": "https://bioventure.com.cn/",
+          "source_title": "苏州工业园区元生创业投资管理有限公司",
+          "source_content_hash": "2ea551a898e5888a508e847d236d7a42a10ef4dd1e4da72424d62bb398e4771e",
+          "quote": "新药创制、医疗器械、体外诊断和精准医疗，以及医疗服务四大方向",
+          "quote_hash": "240f4efc33aafd5a9d82cbd63cadf3ef21fbe08945b377694c33403c4cf0841e"
+        },
+        {
+          "source_id": "yuanbio_portfolio_count",
+          "source_url": "https://bioventure.com.cn/",
+          "source_title": "苏州工业园区元生创业投资管理有限公司",
+          "source_content_hash": "2ea551a898e5888a508e847d236d7a42a10ef4dd1e4da72424d62bb398e4771e",
+          "quote": "目前已经完成了200余家生命健康领域优秀企业的投资",
+          "quote_hash": "5749d661b3691ece475bd462875d0b030c9c73afd60ecd51b76a7f5c5e5f6184"
+        },
+        {
+          "source_id": "yuanbio_listed_count",
+          "source_url": "https://bioventure.com.cn/",
+          "source_title": "苏州工业园区元生创业投资管理有限公司",
+          "source_content_hash": "2ea551a898e5888a508e847d236d7a42a10ef4dd1e4da72424d62bb398e4771e",
+          "quote": "其中19家企业已经登陆港交所、科创板等资本市场。",
+          "quote_hash": "9078c6ec0ae0f55b5cc30501d8717296f972da1ffd1c3afc91981105aa76cf04"
+        },
+        {
+          "source_id": "yuanbio_phone",
+          "source_url": "https://bioventure.com.cn/",
+          "source_title": "苏州工业园区元生创业投资管理有限公司",
+          "source_content_hash": "2ea551a898e5888a508e847d236d7a42a10ef4dd1e4da72424d62bb398e4771e",
+          "quote": "固话：+86 512 6288 6520",
+          "quote_hash": "41a53795bcd331819fb6e45c58f46e43bed6d7a0ac8814cff933bc7cd9abae96"
+        },
+        {
+          "source_id": "yuanbio_address",
+          "source_url": "https://bioventure.com.cn/",
+          "source_title": "苏州工业园区元生创业投资管理有限公司",
+          "source_content_hash": "2ea551a898e5888a508e847d236d7a42a10ef4dd1e4da72424d62bb398e4771e",
+          "quote": "地址：苏州工业园区星湖街218号A3座4楼B06单元",
+          "quote_hash": "14a20d7daa4836b41e6dd8865679bd3042a9ca807ec181e9d6e0b9d8bceccf27"
+        },
         {
           "source_id": "FISRC-10c7fcf01fad4e2f",
           "source_url": "https://finance.sina.com.cn/cj/2026-03-10/doc-inhqnmhx6407658.shtml",
@@ -161,7 +310,11 @@
           "quote_hash": "b8fab44b0c0d4b539d3c01fb2e3ba601725d5487a4f3a6e99f4d4916f5cca200"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "coverage_note": "资料根据元生创投官网整理；被投企业数、上市企业数及方向均为机构官网披露口径。联系电话与地址为官网公开信息，未发现可确认的专属项目投递邮箱。",
+      "identity_status": "verified"
     }
   }
 }
