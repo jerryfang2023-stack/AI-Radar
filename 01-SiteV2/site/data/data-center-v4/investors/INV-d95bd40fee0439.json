@@ -139,19 +139,86 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Wing VC 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "依据 Wing Venture Capital 官方介绍页、投资理念页及 Bespoke Labs 公司融资公告整理。超过 25 家十亿美元级结果为 Wing 对其参与建立的企业成果描述，不能视作 Wing 基金回报；Bespoke Labs 的 US$40M 为多轮融资总额，未披露 Wing 单家出资。",
+      "summary": "Wing VC（Wing Venture Capital）是一家由创业者和运营者组成的早期风险投资机构，2013 年成立，领投 Seed 与 Series A，当前官网强调投资 AI-first economy。机构称其团队通过招聘、客户引荐和市场拓展支持创业公司。Wing 表示其作为领投方、董事会成员或创始人参与的企业中，已出现 25 家以上十亿美元级成果；该说法是公司自述的企业成果统计，不是基金回报率。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2013",
+          "source_id": "wing_about_2026"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "领投 Seed 与 Series A",
+          "source_id": "wing_about_2026"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "AI-first economy；官网投资理念页描述人工智能相关平台转型",
+          "source_id": "wing_about_2026"
+        },
+        {
+          "field": "founder_support",
+          "label": "创业支持",
+          "value": "招聘、客户引荐与 go-to-market 策略支持",
+          "source_id": "wing_about_2026"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2013",
+          "description": "Wing Venture Partners 于 2013 年创立；当前官方介绍将投资阶段概括为 Seed 和 Series A。",
+          "source_id": "wing_about_2026"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Bespoke Labs · 多轮融资 · 2026-07-06 · Series A轮领投 · $40 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Wing 官网称其作为领投方、董事会成员或创始人参与的企业中，形成 25 家以上十亿美元级成果；这是机构自述的企业成果规模，不能等同于投资回报或独立审计数据。",
+          "source_id": "wing_thesis_2026"
+        },
+        {
+          "description": "Bespoke Labs 于 2026-07-06 披露 Seed 与 Series A 多轮融资合计 US$40M，公司公告称其中 Series A 由 Wing VC 领投；总额不代表 Wing 单家投资额。",
           "source_id": "FISRC-bcf489b2ae49f41b"
         }
       ],
-      "contacts": [],
+      "current_roles": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Wing Venture Capital",
+          "url": "https://www.wing.vc/about",
+          "source_id": "wing_about_2026"
+        },
+        {
+          "kind": "email",
+          "label": "机构联系邮箱",
+          "value": "hello@wing.vc",
+          "url": "https://www.wing.vc/about",
+          "source_id": "wing_about_2026"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "wing_about_2026",
+          "source_url": "https://www.wing.vc/about",
+          "source_title": "About Us | Wing Venture Capital",
+          "source_content_hash": "de2bab390535a2590289c4d7b28ff34d8e53e01061ee8420cb2cf929bb3f56a2",
+          "quote": "We lead Seed and Series A investments, backing founders who are building the AI-first economy.",
+          "quote_hash": "20e6a56b39e35d590feea0d9a0c5d892e282eae0d55beb645932c03a858a9625"
+        },
+        {
+          "source_id": "wing_thesis_2026",
+          "source_url": "https://www.wing.vc/thesis",
+          "source_title": "Thesis | Wing Venture Capital",
+          "source_content_hash": "882c16357779b402a9a3a5ff52f7e2ce2f7abef33fbc87a915a371296c70f3c2",
+          "quote": "more than 25 billion-dollar-plus outcomes",
+          "quote_hash": "57e9f401323fb44cc2ea1fa7b1d6d197965c2d43e72cae1300ab1fa6493d658b"
+        },
         {
           "source_id": "FISRC-bcf489b2ae49f41b",
           "source_url": "https://bespokelabs.ai/blog/bespoke-labs-raises-40m-to-build-environments-that-enable-reliable-agents",
@@ -161,7 +228,7 @@
           "quote_hash": "095f8d44d91fe80459a5047d3c78aba275b5619a9843e37c4be8f252bf68a42c"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28"
     },
     "translations": {
       "zh-CN": {
