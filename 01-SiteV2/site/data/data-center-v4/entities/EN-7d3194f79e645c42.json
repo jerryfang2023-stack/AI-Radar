@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-27T03:22:36.621Z",
+    "latestDataDate": "2026-09-27",
+    "currentDate": "2026-09-27",
+    "eventCount": 3600,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -182,6 +182,7 @@
       "EV-1c6adfef6f405319",
       "EV-66df35d14361a6cb",
       "EV-3c4d6d70ac763885",
+      "EV-2d473118c58c4afe",
       "EV-57f3792e2324389e",
       "EV-74e87bba31270f42",
       "EV-c45ed9151e55246f",
@@ -651,7 +652,7 @@
       "EN-b9db1ff13ae8496e"
     ],
     "firstSeen": "2022-10-01",
-    "lastSeen": "2026-09-26",
+    "lastSeen": "2026-09-27",
     "relationIds": [
       "REL2-39c721b66f466667",
       "REL2-8cc3dea2f3024fc2",
@@ -868,6 +869,7 @@
         "EV-66df35d14361a6cb"
       ],
       "productsServices": [
+        "EV-2d473118c58c4afe",
         "EV-5961ed93ca6dae66",
         "EV-57f3792e2324389e",
         "EV-74e87bba31270f42",
@@ -1249,6 +1251,41 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-2d473118c58c4afe",
+        "dataDate": "2026-09-27",
+        "date": "2026-09-26",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "OpenAI失控Agent还找DeepSeek、Kimi当外援！近百万条作案短链曝光",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-6f7ac1823da81d2e"
+        ]
+      },
       {
         "id": "EV-5961ed93ca6dae66",
         "dataDate": "2026-09-26",
@@ -16819,6 +16856,7 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-23ba794aca3c9838",
         "EV-8061c8eb754e0542",
         "EV-9ced0afc6d0d1f63",
         "EV-47f2eb9a1d92fc7e",
@@ -17061,7 +17099,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "EN-7839fb10a8f14c70",
@@ -17275,6 +17313,7 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-754d0d122c34f8ac",
         "EV-74e87bba31270f42",
         "EV-8058ddb115bdef47",
         "EV-06b33a114cf6e513",
@@ -17508,6 +17547,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-193fa12dde078495",
         "EV-0184e5d203d05229",
         "EV-813ced5e5514d81b",
         "EV-bc025a501363e4f3",
@@ -17693,7 +17733,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "EN-52fc33ae4d101a5d",
@@ -17790,6 +17830,8 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-5121e2c4675e0ba7",
+        "EV-bec3daad618373bc",
         "EV-bd0b10ee8ccdff16",
         "EV-8058ddb115bdef47",
         "EV-d26f174b7e773bc3",
@@ -17941,7 +17983,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "EN-4d748ebd71af03a7",
@@ -18158,31 +18200,47 @@
       "organization": "Anthropic",
       "roleTitle": "芯片团队成员",
       "public_profile": {
-        "summary": "Clive Chan 的公开 GitHub 个人资料列出其组织为 Anthropic；资料未提供可核验的具体岗位、教育或职业时间线。",
+        "summary": "Clive Chan个人网站自述目前在Anthropic从事与“perplexity per picojoule”相关的工作。该个人页面没有列出职位名称、加入日期或更完整履历，暂只按自述记录。",
         "current_roles": [
           {
-            "title": "公开资料列示关联",
+            "title": "个人简介所示团队成员（具体职务未披露）",
             "organization": "Anthropic",
-            "source_id": "github_clive_chan"
+            "source_id": "clive_chan_personal_site"
           }
         ],
-        "career": [],
+        "career": [
+          {
+            "organization": "Anthropic",
+            "title": "个人简介所示团队成员（具体职务未披露）",
+            "period": "一手公开资料所示；起始时间未披露",
+            "description": "Clive Chan 的个人网站自述其在 Anthropic 工作，但未在该简介中说明正式职称；本库仅记录该公开关联。",
+            "source_id": "clive_chan_personal_site"
+          }
+        ],
         "education": [],
-        "experience_summary": "目前仅能通过本人公开 GitHub 账号核验姓名与 Anthropic 关联，不推断具体岗位和历史雇主。",
+        "experience_summary": "Clive Chan 的个人网站自述其在 Anthropic 工作，但未在该简介中说明正式职称；本库仅记录该公开关联。 当前可核实资料未披露完整任职起止时间和教育履历，相关字段不作推断。",
         "track_record": [],
         "sources": [
           {
-            "source_id": "github_clive_chan",
-            "source_url": "https://api.github.com/users/cchan",
-            "source_title": "cchan — GitHub public profile",
-            "source_content_hash": "a8784eb8ec20f84415c4d5bbb9f63e5ef96cfc609cec8da652990308fbc622d7",
-            "quote": "The public GitHub profile identifies the account holder as Clive Chan and lists the organization as @anthropic.",
-            "quote_hash": "3d60c7807d6cf5db16ab8bd72b839bace7dabbf3cfaab1fe5b183a9ee04473a4"
+            "source_id": "clive_chan",
+            "source_url": "https://clive.io/",
+            "source_title": "Clive Chan",
+            "source_content_hash": "0e4ce7bbfcf362748f76f9c158031cbc12069b9ea76aa3cf19c553b8c35bb9b7",
+            "quote": "Clive Chan — perplexity per picojoule @ anthropic.",
+            "quote_hash": "02a04851e84cc9eabe85510be26a4a80d7801bd559bb8b7fd982614b7492d4f6"
+          },
+          {
+            "source_id": "clive_chan_personal_site",
+            "source_url": "https://clive.io/",
+            "source_title": "Clive Chan — Personal Website",
+            "source_content_hash": "9b096f91f80c71206cf7ca9cbac7d0747366c8c606f34ff9785710ab1e01d4f7",
+            "quote": "Clive Chan — perplexity per picojoule @ anthropic.",
+            "quote_hash": "02a04851e84cc9eabe85510be26a4a80d7801bd559bb8b7fd982614b7492d4f6"
           }
         ],
-        "coverage_status": "self_declared_affiliation",
-        "coverage_note": "仅为个人公开账号自述的机构关联，具体岗位尚无机构官方资料核实。",
-        "last_verified_at": "2026-09-25"
+        "last_verified_at": "2026-09-26",
+        "coverage_status": "researched",
+        "coverage_note": "已核验该公开职业关联；未披露的任期、学历及其他履历保持未填写。"
       }
     },
     {
@@ -19884,7 +19942,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "TX-target_user-business_user",
@@ -20601,7 +20659,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "TX-product_form-chip_accelerator",
@@ -20681,6 +20739,7 @@
         "EV-93fad8e0e30e442c",
         "EV-3d8608d3e78e031b",
         "EV-8fcb52bb6ec980af",
+        "EV-23ba794aca3c9838",
         "EV-1e96f85d4c034559",
         "EV-acc612910c52d6e6",
         "EV-617f1daf708475d0",
@@ -20805,6 +20864,7 @@
         "EN-51a3a4589db68480",
         "EN-222f930b87524636",
         "EN-f4bec299df3f4f27",
+        "EN-78c72c4f2487a93f",
         "EN-0d52825aa423b229",
         "EN-54239100b953b6ee",
         "EN-77b30b8a88051252",
@@ -20885,7 +20945,7 @@
         "HW-4c176e4c40871adc"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "TX-target_user-developer",
@@ -21527,6 +21587,7 @@
         "EV-11e2a4e252d48f94",
         "EV-8077605769c4d4eb",
         "EV-419ddb2d5cfc799a",
+        "EV-c68c87e89f710bb6",
         "EV-261be266930904fd",
         "EV-a7568a8f75368e09",
         "EV-d1438a40de56f3ac",
@@ -21873,6 +21934,7 @@
         "EN-b5d7671990b8d4a8",
         "EN-f2b9106253663314",
         "EN-86b7b29d698963ef",
+        "EN-4c10987d1162a334",
         "EN-a377bedfcb73be99",
         "EN-a4916084455b1950",
         "EN-9a677023cc72cdd0",
@@ -22026,7 +22088,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "TX-industry-retail_ecommerce",
@@ -22467,7 +22529,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "TX-ai_market_subcategory-productivity_enterprise_workflows",
@@ -22611,7 +22673,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "TX-use_case-productivity_enterprise_workflows",
@@ -22940,7 +23002,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -23181,6 +23243,9 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-2d473118c58c4afe",
+        "EV-5121e2c4675e0ba7",
+        "EV-bec3daad618373bc",
         "EV-b8eb460540c33d68",
         "EV-0d5a32aca724d30e",
         "EV-1873f3c6fa4bdedd",
@@ -23517,9 +23582,9 @@
         "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
+        "EV-2c17183b71d8b7d1",
         "EV-9db14ad0d6fe3135",
         "EV-b8ea4c072c54167a",
-        "EV-2c17183b71d8b7d1",
         "EV-884ee276b1160545",
         "EV-a7567fb3e6a46193",
         "EV-6d282114be5eef4f",
@@ -25118,6 +25183,7 @@
         "EV-8077605769c4d4eb",
         "EV-419ddb2d5cfc799a",
         "EV-5071c68b40000d34",
+        "EV-c68c87e89f710bb6",
         "EV-783866f9782691b6",
         "EV-5bbc509a032b8309",
         "EV-522c339dded54be5",
@@ -25206,6 +25272,7 @@
         "EN-4cdf7e5e9f8fa92f",
         "EN-86b7b29d698963ef",
         "EN-35f2571d4e06de76",
+        "EN-4c10987d1162a334",
         "EN-b644c0a9d493976a",
         "EN-b5318593e1260f2f",
         "EN-e1517be14d06cdb7",
@@ -25252,7 +25319,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-01-01",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "TX-industry-financial_services",
@@ -26369,6 +26436,7 @@
         "EV-53f4f2a34b3ce1b4",
         "EV-b240fb11e65b018e",
         "EV-bd508dbe4205774f",
+        "EV-2d473118c58c4afe",
         "EV-41e8775dc339b4a2",
         "EV-54451ee210a0d0d4",
         "EV-3a8752218ab2b487",
@@ -26508,7 +26576,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-01-29",
-      "lastSeen": "2026-09-23"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "TX-industry-aerospace_defense",
@@ -26862,6 +26930,7 @@
         "EV-0121f0a9e9a975ec",
         "EV-d2a623e8eef1f61d",
         "EV-f55d16df5b5fecb2",
+        "EV-3c31424074aa099b",
         "EV-9ced0afc6d0d1f63",
         "EV-47f2eb9a1d92fc7e",
         "EV-c45b1098a3092e03",
@@ -26909,6 +26978,7 @@
         "EN-cd3509f4e1fbec99",
         "EN-29b9f0cae32e7a8a",
         "EN-bd6769fe78d0971a",
+        "EN-4968d0cf3b24d26d",
         "EN-c70eca6b0f88f44d",
         "EN-93edac2cd2984489",
         "EN-1f9bfd088b15331d",
@@ -26944,7 +27014,7 @@
         "HW-304c6370cc157449"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "TX-use_case-customer_support",
@@ -27107,6 +27177,7 @@
       "eventIds": [
         "EV-657176fd0dff6209",
         "EV-7f4e56e09d2328bb",
+        "EV-dd0401074d7745e2",
         "EV-1b912ec16c50fc0f",
         "EV-29c45021243dba2a",
         "EV-8ca7036c405028d4",
@@ -27131,6 +27202,7 @@
       "entityIds": [
         "EN-336ab1deb42d6284",
         "EN-ec68d09e3a81e0ae",
+        "EN-e0781f06b610c734",
         "EN-bbdefa2950f49882",
         "EN-047364b9be67f665",
         "EN-e853b4e183ed0870",
@@ -27151,7 +27223,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "TX-technology-computer_use",

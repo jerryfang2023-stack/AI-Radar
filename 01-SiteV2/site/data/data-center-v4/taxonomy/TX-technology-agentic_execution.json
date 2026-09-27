@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-27T03:22:36.621Z",
+    "latestDataDate": "2026-09-27",
+    "currentDate": "2026-09-27",
+    "eventCount": 3600,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -291,6 +291,9 @@
       "EV-8fcb52bb6ec980af",
       "EV-c0a65877001ed413",
       "EV-05a87b578967c83e",
+      "EV-2d473118c58c4afe",
+      "EV-5121e2c4675e0ba7",
+      "EV-bec3daad618373bc",
       "EV-b8eb460540c33d68",
       "EV-0d5a32aca724d30e",
       "EV-1873f3c6fa4bdedd",
@@ -627,9 +630,9 @@
       "EV-8cb5b0ed18c7cdd8",
       "EV-6566d065f5500a85",
       "EV-34929bdd016dc8d6",
+      "EV-2c17183b71d8b7d1",
       "EV-9db14ad0d6fe3135",
       "EV-b8ea4c072c54167a",
-      "EV-2c17183b71d8b7d1",
       "EV-884ee276b1160545",
       "EV-a7567fb3e6a46193",
       "EV-6d282114be5eef4f",
@@ -51500,6 +51503,283 @@
       "publisher": "sierra.ai"
     },
     {
+      "id": "EV-2d473118c58c4afe",
+      "dataDate": "2026-09-27",
+      "date": "2026-09-26",
+      "updatedDate": "2026-09-27",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenAI失控Agent还找DeepSeek、Kimi当外援！近百万条作案短链曝光",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "OpenAI失控Agent还找DeepSeek、Kimi当外援！近百万条作案短链曝光",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-6f7ac1823da81d2e"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "DeepSeek"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://qbitai.com/2026/09/497382.html",
+      "publisher": "量子位"
+    },
+    {
+      "id": "EV-5121e2c4675e0ba7",
+      "dataDate": "2026-09-27",
+      "date": "2026-09-26",
+      "updatedDate": "2026-09-27",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "外媒称微软整合 Copilot 品牌加剧混乱，引发用户困惑",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "外媒称微软整合 Copilot 品牌加剧混乱，引发用户困惑",
+      "metrics": [
+        "6.1 万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-9fbf261b62c1d7c0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-9fbf261b62c1d7c0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-9fbf261b62c1d7c0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "entityNames": [
+        "Microsoft"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/1/007/314.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-bec3daad618373bc",
+      "dataDate": "2026-09-27",
+      "date": "2026-09-26",
+      "updatedDate": "2026-09-27",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "微软纳德拉称正将 Copilot 打造成全新工作操作系统",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "微软纳德拉称正将 Copilot 打造成全新工作操作系统",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-9fbf261b62c1d7c0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-9fbf261b62c1d7c0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-9fbf261b62c1d7c0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-9fbf261b62c1d7c0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "entityNames": [
+        "Microsoft"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/1/007/302.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-b8eb460540c33d68",
       "dataDate": "2026-09-26",
       "date": "2026-09-24",
@@ -52237,7 +52517,7 @@
           "name": "Claude Opus 5.5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Amazon"
           ]
         }
       ],
@@ -54331,9 +54611,7 @@
         {
           "name": "MarTech",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://martech.org/the-latest-ai-powered-martech-news-and-releases",
@@ -55672,7 +55950,9 @@
         {
           "name": "Project Opal",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/999/797.htm",
@@ -57546,9 +57826,7 @@
         {
           "name": "Claude Fable 5.1",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://theverge.com/ai-artificial-intelligence/987830/anthropic-claude-fable-mythos-5-1",
@@ -58426,9 +58704,7 @@
         {
           "name": "MHS",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/995/514.htm",
@@ -61481,21 +61757,21 @@
           "name": "Major Harness Upgrades",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         },
         {
           "name": "WRITER Makes Agentic AI",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         },
         {
           "name": "Economically Sustainable",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -67191,21 +67467,21 @@
           "name": "CPG Clients",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Microsoft"
           ]
         },
         {
           "name": "Agency Partner Program",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Microsoft"
           ]
         },
         {
           "name": "AI Agents for Agency",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Microsoft"
           ]
         }
       ],
@@ -67835,14 +68111,14 @@
           "name": "GitHub Copilot",
           "type": "产品/服务",
           "ownerNames": [
-            "xAI"
+            "Microsoft"
           ]
         },
         {
           "name": "Grok 4.5 AI",
           "type": "产品/服务",
           "ownerNames": [
-            "xAI"
+            "Microsoft"
           ]
         }
       ],
@@ -68260,7 +68536,9 @@
         {
           "name": "MAI-Cyber-1-Flash",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/07/28/microsoft-ai-releases-mai-cyber-1-flash-a-5b-active-parameter-cyber-model-that-pushes-mdash-to-95-95-on-cybergym",
@@ -69202,7 +69480,7 @@
           "name": "MAI-Cyber-1-Flash",
           "type": "模型",
           "ownerNames": [
-            "Anthropic"
+            "Microsoft"
           ]
         }
       ],
@@ -69293,9 +69571,7 @@
         {
           "name": "Cowork",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/982/277.htm",
@@ -69451,7 +69727,7 @@
           "name": "MAI-Cyber-1-Flash",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Microsoft"
           ]
         }
       ],
@@ -70699,14 +70975,14 @@
           "name": "Helios AI",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         },
         {
           "name": "Helios",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -75600,9 +75876,7 @@
         {
           "name": "Claude Code v2.1.212",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.212",
@@ -75855,7 +76129,7 @@
           "name": "Visual Studio Code 1.129",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Microsoft"
           ]
         }
       ],
@@ -81506,14 +81780,14 @@
           "name": "Cowork",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         },
         {
           "name": "Cowork on Monday",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -81632,7 +81906,7 @@
           "name": "AutoPilot",
           "type": "产品/服务",
           "ownerNames": [
-            "Intel"
+            "Microsoft"
           ]
         }
       ],
@@ -83048,9 +83322,7 @@
         {
           "name": "Claude Sonnet 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/anthropics-new-claude-sonnet-5-closes-the-gap-to-the-pricier-opus-model-series",
@@ -83232,7 +83504,7 @@
           "name": "Claude Sonnet 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Google"
           ]
         }
       ],
@@ -83585,21 +83857,21 @@
           "name": "Sapphire",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Amazon"
           ]
         },
         {
           "name": "News",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Amazon"
           ]
         },
         {
           "name": "Autonomous Enterprise",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Amazon"
           ]
         }
       ],
@@ -84682,16 +84954,12 @@
         {
           "name": "Claude Cowork",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "SaaS Workflows",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://perplexityaimagazine.com/expert-insights/ai-agents-replacing-saas-workflows",
@@ -86525,7 +86793,7 @@
           "name": "Claude Fable 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Thinking Machines Lab"
           ]
         }
       ],
@@ -87474,7 +87742,9 @@
         {
           "name": "Marketplace",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/artificial-intelligence-app-agent-publish-release",
@@ -87769,9 +88039,7 @@
         {
           "name": "Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/965/428.htm",
@@ -88339,7 +88607,7 @@
           "name": "Intelligent Terminal",
           "type": "产品/服务",
           "ownerNames": [
-            "Intel"
+            "Microsoft"
           ]
         }
       ],
@@ -88589,7 +88857,9 @@
         {
           "name": "Artemis",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "sourceUrl": "https://kore.ai/news/kore-ai-launches-artemis-the-new-generation-of-the-kore-ai-agent-platform-for-building-governing-and-optimizing-enterprise-ai",
@@ -90180,23 +90450,17 @@
         {
           "name": "Claude Fable 5",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude Mythos 5",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Mythos",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/06/10/anthropic-releases-claude-fable-5-and-claude-mythos-5-same-underlying-model-different-safeguards-new-mythos-class-tier",
@@ -91427,12 +91691,16 @@
         {
           "name": "Agent Governance Toolkit",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         },
         {
           "name": "Open Source",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "sourceUrl": "https://opensource.microsoft.com/blog/2026/04/02/introducing-the-agent-governance-toolkit-open-source-runtime-security-for-ai-agents",
@@ -94972,9 +95240,7 @@
         {
           "name": "MCP AI",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/2025/11/17/mcp-ai-agent-security-startup-runlayer-launches-with-8-unicorns-11m-from-khoslas-keith-rabois-and-felicis",
@@ -95283,6 +95549,131 @@
       "publisher": "supermicro.com"
     },
     {
+      "id": "EV-2c17183b71d8b7d1",
+      "dataDate": "2026-09-27",
+      "date": "2026-09-27",
+      "updatedDate": "2026-09-27",
+      "eventType": "research_result",
+      "eventTypeLabel": "研究结果",
+      "eventGroup": "研究结果",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "2026年企业级AI智能体部署",
+      "originalTitle": "Enterprise AI coding agent deployment in 2026 | Blog",
+      "subject": "Gartner",
+      "action": "research_result",
+      "object": "over 40% of agentic AI projects will be canceled by the end of 2027 due to escalating costs, unclear business value, or inadequate risk controls",
+      "metrics": [
+        "40%",
+        "10%",
+        "41%",
+        "33%",
+        "26%"
+      ],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-0616a267820d2c78"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-286a3c612017ad1d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-0616a267820d2c78"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-286a3c612017ad1d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-0616a267820d2c78"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-286a3c612017ad1d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-0616a267820d2c78",
+        "EN-286a3c612017ad1d",
+        "EN-a9d21499d1b41fff"
+      ],
+      "entityNames": [
+        "Gartner",
+        "McKinsey",
+        "Forrester"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://northflank.com/blog/enterprise-ai-coding-agent-deployment",
+      "publisher": "northflank.com"
+    },
+    {
       "id": "EV-9db14ad0d6fe3135",
       "dataDate": "2026-09-23",
       "date": "2026-09-23",
@@ -95552,131 +95943,6 @@
       ],
       "sourceUrl": "https://qbitai.com/2026/09/493231.html",
       "publisher": "量子位"
-    },
-    {
-      "id": "EV-2c17183b71d8b7d1",
-      "dataDate": "2026-09-20",
-      "date": "2026-09-20",
-      "updatedDate": "2026-09-20",
-      "eventType": "research_result",
-      "eventTypeLabel": "研究结果",
-      "eventGroup": "研究结果",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "2026年企业级AI智能体部署",
-      "originalTitle": "Enterprise AI coding agent deployment in 2026 | Blog",
-      "subject": "Gartner",
-      "action": "research_result",
-      "object": "over 40% of agentic AI projects will be canceled by the end of 2027 due to escalating costs, unclear business value, or inadequate risk controls",
-      "metrics": [
-        "40%",
-        "10%",
-        "41%",
-        "33%",
-        "26%"
-      ],
-      "locations": [],
-      "missingFields": [
-        "event_time"
-      ],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-0616a267820d2c78"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-286a3c612017ad1d"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-0616a267820d2c78"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-286a3c612017ad1d"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-0616a267820d2c78"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-286a3c612017ad1d"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-0616a267820d2c78",
-        "EN-286a3c612017ad1d",
-        "EN-a9d21499d1b41fff"
-      ],
-      "entityNames": [
-        "Gartner",
-        "McKinsey",
-        "Forrester"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://northflank.com/blog/enterprise-ai-coding-agent-deployment",
-      "publisher": "northflank.com"
     },
     {
       "id": "EV-884ee276b1160545",
@@ -96568,7 +96834,7 @@
           "name": "Cameron Berg",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Google DeepMind"
           ]
         }
       ],
@@ -102049,7 +102315,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-22",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "EN-eafe895eb8119e6e",
@@ -102725,6 +102991,8 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-5121e2c4675e0ba7",
+        "EV-bec3daad618373bc",
         "EV-bd0b10ee8ccdff16",
         "EV-8058ddb115bdef47",
         "EV-d26f174b7e773bc3",
@@ -102876,7 +103144,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "EN-29b9f0cae32e7a8a",
@@ -103170,7 +103438,7 @@
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-09-26",
+      "lastSeen": "2026-09-27",
       "organizationFamilyId": "EN-047364b9be67f665",
       "organizationRole": "group",
       "organizationFamilyEntityIds": [
@@ -103308,6 +103576,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-2d473118c58c4afe",
         "EV-57f3792e2324389e",
         "EV-74e87bba31270f42",
         "EV-c45ed9151e55246f",
@@ -103777,7 +104046,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "EN-df3b29befa02cd17",
@@ -104731,6 +105000,7 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-23ba794aca3c9838",
         "EV-8061c8eb754e0542",
         "EV-9ced0afc6d0d1f63",
         "EV-47f2eb9a1d92fc7e",
@@ -104973,7 +105243,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "EN-28d0bd981118a907",
@@ -105712,6 +105982,7 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-754d0d122c34f8ac",
         "EV-74e87bba31270f42",
         "EV-8058ddb115bdef47",
         "EV-06b33a114cf6e513",
@@ -105945,6 +106216,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-193fa12dde078495",
         "EV-0184e5d203d05229",
         "EV-813ced5e5514d81b",
         "EV-bc025a501363e4f3",
@@ -106130,7 +106402,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "EN-6fcba5d96a4fadfd",
@@ -106751,7 +107023,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "EN-69337578b2468a88",
@@ -107662,6 +107934,7 @@
         "EV-0121f0a9e9a975ec",
         "EV-eda9fcba2f9fe358",
         "EV-3664fd6826c319bb",
+        "EV-2d473118c58c4afe",
         "EV-0044c8acb4733273",
         "EV-c74cc1e3155a00c9",
         "EV-3d7fb729ebce66cb",
@@ -107722,7 +107995,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-08",
-      "lastSeen": "2026-09-15"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "EN-e78bdebae031095b",
@@ -108358,6 +108631,7 @@
         "EV-c6cf9fc654509585",
         "EV-371bc68f72326c02",
         "EV-cec68369662236fd",
+        "EV-c68c87e89f710bb6",
         "EV-bd81083dbb6eab3e",
         "EV-50853632f4b54972"
       ],
@@ -108370,7 +108644,7 @@
         "EN-8992f4a61a19a74b"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-09-12"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "EN-8d57f84bd1847b24",
@@ -110061,6 +110335,26 @@
           }
         ],
         "last_verified_at": "2026-09-25"
+      },
+      "translations": {
+        "zh-CN": {
+          "public_profile.career[0].description": {
+            "text": "与 Peter Ricci、Irene Kong 共同创立个人护理品牌。",
+            "source_hash": "b398ef02c6f7cc8bb48cb00c3df9090f48f0864eff2cbf9230f09d4e0442aafe",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-09-27T03:20:56.584Z",
+            "status": "translated"
+          },
+          "public_profile.track_record[0].description": {
+            "text": "MANTL 发布时宣布完成 100 万美元 pre-seed 融资，由 Airwing Ventures 领投，Revolution Rise of the Rest Seed Fund 及天使投资人参与。",
+            "source_hash": "7be0c7a16ba7401e39079108e2a7897945e1ee954f7dbc45b6b96f9d34c63cc7",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-09-27T03:20:56.584Z",
+            "status": "translated"
+          }
+        }
       }
     },
     {
@@ -110945,8 +111239,8 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-9db14ad0d6fe3135",
         "EV-2c17183b71d8b7d1",
+        "EV-9db14ad0d6fe3135",
         "EV-a7567fb3e6a46193",
         "EV-e272541b76d00306"
       ],
@@ -110956,7 +111250,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-09-13",
-      "lastSeen": "2026-09-23"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "EN-286a3c612017ad1d",
@@ -110969,8 +111263,8 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-9db14ad0d6fe3135",
         "EV-2c17183b71d8b7d1",
+        "EV-9db14ad0d6fe3135",
         "EV-a7567fb3e6a46193",
         "EV-e272541b76d00306"
       ],
@@ -110980,7 +111274,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-09-13",
-      "lastSeen": "2026-09-23"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "EN-d977520b7963d84e",

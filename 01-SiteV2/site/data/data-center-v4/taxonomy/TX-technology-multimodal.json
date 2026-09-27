@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-27T03:22:36.621Z",
+    "latestDataDate": "2026-09-27",
+    "currentDate": "2026-09-27",
+    "eventCount": 3600,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -89,6 +89,7 @@
       "EV-8077605769c4d4eb",
       "EV-419ddb2d5cfc799a",
       "EV-5071c68b40000d34",
+      "EV-c68c87e89f710bb6",
       "EV-783866f9782691b6",
       "EV-5bbc509a032b8309",
       "EV-522c339dded54be5",
@@ -177,6 +178,7 @@
       "EN-4cdf7e5e9f8fa92f",
       "EN-86b7b29d698963ef",
       "EN-35f2571d4e06de76",
+      "EN-4c10987d1162a334",
       "EN-b644c0a9d493976a",
       "EN-b5318593e1260f2f",
       "EN-e1517be14d06cdb7",
@@ -223,7 +225,7 @@
       "HW-ceb55d9bc637c1d3"
     ],
     "firstSeen": "2026-01-01",
-    "lastSeen": "2026-09-26"
+    "lastSeen": "2026-09-27"
   },
   "events": [
     {
@@ -9269,6 +9271,168 @@
       "products": [],
       "sourceUrl": "https://news.pedaily.cn/202601/559376.shtml",
       "publisher": "投资界"
+    },
+    {
+      "id": "EV-c68c87e89f710bb6",
+      "dataDate": "2026-09-27",
+      "date": "2026-09-26",
+      "updatedDate": "2026-09-27",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "美团上线 LongCat-2.5-Preview 模型：1.6T 参数，主打长程任务与多模态",
+      "originalTitle": "",
+      "subject": "美团",
+      "action": "上线",
+      "object": "LongCat-2.5-Preview 模型：1.6T 参数，主打长程任务与多模态",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [
+          "cn-ithome-rss"
+        ],
+        "claim_refs": [
+          "CL-5833c84352b54da8",
+          "CL-7903a739cfee21cd",
+          "CL-25a0386438525963",
+          "CL-0737fc3492b54844"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-4c10987d1162a334"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-4c10987d1162a334"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-4c10987d1162a334"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-4c10987d1162a334"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-4c10987d1162a334"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-4c10987d1162a334"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-4c10987d1162a334"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-4c10987d1162a334"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-db36e7bd45191ce4",
+        "EN-4c10987d1162a334"
+      ],
+      "entityNames": [
+        "Meituan",
+        "LongCat-2.5-Preview"
+      ],
+      "productName": "LongCat-2.5-Preview",
+      "products": [
+        {
+          "name": "LongCat-2.5-Preview",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Meituan"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/1/007/356.htm",
+      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-783866f9782691b6",
@@ -19825,6 +19989,28 @@
       "lastSeen": "2026-09-12"
     },
     {
+      "id": "EN-4c10987d1162a334",
+      "name": "LongCat-2.5-Preview",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-c68c87e89f710bb6"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-technology-multimodal"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-26",
+      "lastSeen": "2026-09-27"
+    },
+    {
       "id": "EN-b644c0a9d493976a",
       "name": "OpenCode",
       "entityType": "product_candidate",
@@ -20485,7 +20671,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "EN-fe074a5bc4bb5163",
@@ -20656,7 +20842,7 @@
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-09-26",
+      "lastSeen": "2026-09-27",
       "organizationFamilyId": "EN-047364b9be67f665",
       "organizationRole": "group",
       "organizationFamilyEntityIds": [
@@ -20688,6 +20874,7 @@
         "EV-0121f0a9e9a975ec",
         "EV-eda9fcba2f9fe358",
         "EV-3664fd6826c319bb",
+        "EV-2d473118c58c4afe",
         "EV-0044c8acb4733273",
         "EV-c74cc1e3155a00c9",
         "EV-3d7fb729ebce66cb",
@@ -20748,7 +20935,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-08",
-      "lastSeen": "2026-09-15"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "EN-a658fbc24f5e3832",
@@ -21415,6 +21602,7 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-23ba794aca3c9838",
         "EV-8061c8eb754e0542",
         "EV-9ced0afc6d0d1f63",
         "EV-47f2eb9a1d92fc7e",
@@ -21657,7 +21845,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "EN-7d3194f79e645c42",
@@ -21789,6 +21977,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-2d473118c58c4afe",
         "EV-57f3792e2324389e",
         "EV-74e87bba31270f42",
         "EV-c45ed9151e55246f",
@@ -22258,7 +22447,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "EN-2b6e51bec93e86c1",

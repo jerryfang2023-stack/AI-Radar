@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-27T03:22:36.621Z",
+    "latestDataDate": "2026-09-27",
+    "currentDate": "2026-09-27",
+    "eventCount": 3600,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -65,6 +65,7 @@
       "EV-0121f0a9e9a975ec",
       "EV-d2a623e8eef1f61d",
       "EV-f55d16df5b5fecb2",
+      "EV-3c31424074aa099b",
       "EV-9ced0afc6d0d1f63",
       "EV-47f2eb9a1d92fc7e",
       "EV-c45b1098a3092e03",
@@ -112,6 +113,7 @@
       "EN-cd3509f4e1fbec99",
       "EN-29b9f0cae32e7a8a",
       "EN-bd6769fe78d0971a",
+      "EN-4968d0cf3b24d26d",
       "EN-c70eca6b0f88f44d",
       "EN-93edac2cd2984489",
       "EN-1f9bfd088b15331d",
@@ -147,7 +149,7 @@
       "HW-304c6370cc157449"
     ],
     "firstSeen": "2026-05-23",
-    "lastSeen": "2026-09-24"
+    "lastSeen": "2026-09-27"
   },
   "events": [
     {
@@ -1515,6 +1517,161 @@
       "publisher": "The Verge AI"
     },
     {
+      "id": "EV-3c31424074aa099b",
+      "dataDate": "2026-09-27",
+      "date": "2026-09-26",
+      "updatedDate": "2026-09-27",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Exa 发布 Agent Ultra：面向穷尽式深度研究的子智能体集群 API",
+      "originalTitle": "",
+      "subject": "Exa",
+      "action": "发布",
+      "object": "Agent Ultra：面向穷尽式深度研究的子智能体集群 API",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-4968d0cf3b24d26d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "cloud",
+            "name": "云端",
+            "entityIds": [
+              "EN-4968d0cf3b24d26d"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "on_premise",
+            "name": "本地部署",
+            "entityIds": [
+              "EN-4968d0cf3b24d26d"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-4968d0cf3b24d26d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "cloud",
+          "name": "云端",
+          "entityIds": [
+            "EN-4968d0cf3b24d26d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "on_premise",
+          "name": "本地部署",
+          "entityIds": [
+            "EN-4968d0cf3b24d26d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重",
+          "entityIds": [
+            "EN-4968d0cf3b24d26d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "cloud",
+          "name": "云端",
+          "entityIds": [
+            "EN-4968d0cf3b24d26d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "on_premise",
+          "name": "本地部署",
+          "entityIds": [
+            "EN-4968d0cf3b24d26d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-4968d0cf3b24d26d",
+        "EN-3598ac999722dd23"
+      ],
+      "entityNames": [
+        "Exa",
+        "Agent Ultra"
+      ],
+      "productName": "Agent Ultra",
+      "products": [
+        {
+          "name": "Agent Ultra",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/09/26/exa-launches-agent-ultra-a-subagent-swarm-deep-research-api-built-for-exhaustive-list-building",
+      "publisher": "MarkTechPost（RSS）"
+    },
+    {
       "id": "EV-9ced0afc6d0d1f63",
       "dataDate": "2026-09-24",
       "date": "2026-09-24",
@@ -1851,7 +2008,7 @@
           "name": "Opus 5.5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         },
         {
@@ -4768,12 +4925,16 @@
         {
           "name": "Role",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         },
         {
           "name": "Open Source",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "sourceUrl": "https://mlflow.org/articles/the-role-of-open-source-in-enterprise-ai-in-2026",
@@ -5970,9 +6131,7 @@
         {
           "name": "CEO Dario Amodei",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/982/343.htm",
@@ -7915,6 +8074,7 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-23ba794aca3c9838",
         "EV-8061c8eb754e0542",
         "EV-9ced0afc6d0d1f63",
         "EV-47f2eb9a1d92fc7e",
@@ -8157,7 +8317,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "EN-cd3509f4e1fbec99",
@@ -8234,6 +8394,29 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-08-03",
       "lastSeen": "2026-08-09"
+    },
+    {
+      "id": "EN-4968d0cf3b24d26d",
+      "name": "Exa",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-3c31424074aa099b"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-open_weights",
+        "TX-deployment_model-cloud",
+        "TX-deployment_model-on_premise"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-26",
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "EN-c70eca6b0f88f44d",
@@ -8347,6 +8530,7 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-754d0d122c34f8ac",
         "EV-74e87bba31270f42",
         "EV-8058ddb115bdef47",
         "EV-06b33a114cf6e513",
@@ -8580,6 +8764,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-193fa12dde078495",
         "EV-0184e5d203d05229",
         "EV-813ced5e5514d81b",
         "EV-bc025a501363e4f3",
@@ -8765,7 +8950,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "EN-93edac2cd2984489",
@@ -9292,7 +9477,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "EN-ea3bd73e2b506e00",
@@ -9604,6 +9789,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-2d473118c58c4afe",
         "EV-57f3792e2324389e",
         "EV-74e87bba31270f42",
         "EV-c45ed9151e55246f",
@@ -10073,7 +10259,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "EN-1ea953e1dbed6788",
@@ -10384,7 +10570,7 @@
         "EN-10556ee2cee94c72"
       ],
       "firstSeen": "2026-07-07",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "EN-b3e3bce83d29e787",

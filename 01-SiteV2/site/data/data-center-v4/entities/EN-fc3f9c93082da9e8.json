@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-27T03:22:36.621Z",
+    "latestDataDate": "2026-09-27",
+    "currentDate": "2026-09-27",
+    "eventCount": 3600,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -620,6 +620,22 @@
           "provider": "deepseek",
           "model": "deepseek-v4-flash",
           "translated_at": "2026-08-15T04:37:45.898Z",
+          "status": "translated"
+        },
+        "public_profile.summary": {
+          "text": "Anthropic 官方资料以 Thariq Shihpar 署名，将其列为 Claude Code 团队成员；数据库中的“Thariq”与该官方署名对应。",
+          "source_hash": "33790278dfcc9cb125e5bd0a9011ce60e31f62f2d44af6c8e48e2ca04ae068a7",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:20:59.169Z",
+          "status": "translated"
+        },
+        "public_profile.career[0].description": {
+          "text": "Anthropic 官方活动页面将 Thariq Shihpar 列为 Claude Code 团队嘉宾。",
+          "source_hash": "41b25eaefc03404b3c14602abafe7707cd00a2cb6ac8b39a3f93c3511ef50567",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:20:59.169Z",
           "status": "translated"
         }
       }

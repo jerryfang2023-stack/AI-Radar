@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-27T03:22:36.621Z",
+    "latestDataDate": "2026-09-27",
+    "currentDate": "2026-09-27",
+    "eventCount": 3600,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -110,6 +110,7 @@
       "EV-53f4f2a34b3ce1b4",
       "EV-b240fb11e65b018e",
       "EV-bd508dbe4205774f",
+      "EV-2d473118c58c4afe",
       "EV-41e8775dc339b4a2",
       "EV-54451ee210a0d0d4",
       "EV-3a8752218ab2b487",
@@ -249,7 +250,7 @@
     ],
     "hardwareIds": [],
     "firstSeen": "2026-01-29",
-    "lastSeen": "2026-09-23"
+    "lastSeen": "2026-09-27"
   },
   "events": [
     {
@@ -16487,6 +16488,110 @@
       "publisher": "markets.ft.com"
     },
     {
+      "id": "EV-2d473118c58c4afe",
+      "dataDate": "2026-09-27",
+      "date": "2026-09-26",
+      "updatedDate": "2026-09-27",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenAI失控Agent还找DeepSeek、Kimi当外援！近百万条作案短链曝光",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "OpenAI失控Agent还找DeepSeek、Kimi当外援！近百万条作案短链曝光",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-6f7ac1823da81d2e"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "DeepSeek"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://qbitai.com/2026/09/497382.html",
+      "publisher": "量子位"
+    },
+    {
       "id": "EV-41e8775dc339b4a2",
       "dataDate": "2026-09-23",
       "date": "2026-09-22",
@@ -16573,7 +16678,7 @@
           "name": "Claude Opus 5.5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Google"
           ]
         }
       ],
@@ -16666,7 +16771,7 @@
           "name": "GPT-6 Astra",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Meta"
           ]
         }
       ],
@@ -18643,7 +18748,9 @@
         {
           "name": "MAI-Cyber-1-Flash",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/07/28/microsoft-ai-releases-mai-cyber-1-flash-a-5b-active-parameter-cyber-model-that-pushes-mdash-to-95-95-on-cybergym",
@@ -18922,7 +19029,7 @@
           "name": "MAI-Cyber-1-Flash",
           "type": "模型",
           "ownerNames": [
-            "Anthropic"
+            "Microsoft"
           ]
         }
       ],
@@ -19014,7 +19121,7 @@
           "name": "MAI-Cyber-1-Flash",
           "type": "模型",
           "ownerNames": [
-            "OpenAI"
+            "Microsoft"
           ]
         }
       ],
@@ -19171,7 +19278,7 @@
           "name": "MAI-Cyber-1-Flash",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Microsoft"
           ]
         }
       ],
@@ -20472,9 +20579,7 @@
         {
           "name": "Claude Science",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/07/04/anthropic-launches-claude-science-beta",
@@ -20688,9 +20793,7 @@
         {
           "name": "Claude Sonnet 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/anthropics-new-claude-sonnet-5-closes-the-gap-to-the-pricier-opus-model-series",
@@ -20823,14 +20926,14 @@
           "name": "Mythos-like",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Sakana AI"
           ]
         },
         {
           "name": "Asian AI",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Sakana AI"
           ]
         }
       ],
@@ -20926,9 +21029,7 @@
         {
           "name": "Mythos",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/06/26/trump-admin-releases-anthropic-mythos-to-be-used-by-more-than-100-us-companies-agencies",
@@ -21655,7 +21756,7 @@
           "name": "Fable 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Amazon"
           ]
         }
       ],
@@ -21745,14 +21846,14 @@
           "name": "Mythos AI",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Intel"
           ]
         },
         {
           "name": "Mythos",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Intel"
           ]
         }
       ],
@@ -21961,23 +22062,17 @@
         {
           "name": "Claude Fable 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Mythos 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Fable 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/962/152.htm",
@@ -22067,9 +22162,7 @@
         {
           "name": "Claude Fable 5",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/06/09/anthropics-claude-fable-5-is-a-version-of-mythos-the-public-can-access-today",
@@ -22159,9 +22252,7 @@
         {
           "name": "Fable 5",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/961/945.htm",
@@ -24857,6 +24948,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-2d473118c58c4afe",
         "EV-57f3792e2324389e",
         "EV-74e87bba31270f42",
         "EV-c45ed9151e55246f",
@@ -25326,7 +25418,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "EN-449777124b1466a8",
@@ -25462,6 +25554,7 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-754d0d122c34f8ac",
         "EV-74e87bba31270f42",
         "EV-8058ddb115bdef47",
         "EV-06b33a114cf6e513",
@@ -25695,6 +25788,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-193fa12dde078495",
         "EV-0184e5d203d05229",
         "EV-813ced5e5514d81b",
         "EV-bc025a501363e4f3",
@@ -25880,7 +25974,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "EN-8d4321d936320802",
@@ -26005,6 +26099,7 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-23ba794aca3c9838",
         "EV-8061c8eb754e0542",
         "EV-9ced0afc6d0d1f63",
         "EV-47f2eb9a1d92fc7e",
@@ -26247,7 +26342,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "EN-22152786a70738a1",
@@ -26688,6 +26783,8 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-5121e2c4675e0ba7",
+        "EV-bec3daad618373bc",
         "EV-bd0b10ee8ccdff16",
         "EV-8058ddb115bdef47",
         "EV-d26f174b7e773bc3",
@@ -26839,7 +26936,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "EN-0d4bbb73ac4c7513",
@@ -27218,7 +27315,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "EN-ac123e56b0168ec2",

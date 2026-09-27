@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-27T03:22:36.621Z",
+    "latestDataDate": "2026-09-27",
+    "currentDate": "2026-09-27",
+    "eventCount": 3600,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -231,6 +231,58 @@
       "last_verified_at": "2026-09-26",
       "identity_status": "verified",
       "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "John L. Hennessy 是计算机科学家与 Stanford University 荣休校长，长期从事计算机体系结构研究。他共同创立 MIPS Computer Systems，并于2000至2016年担任 Stanford 第十任校长。所列奖项与教育信息依据 Stanford 官方人物资料。",
+          "source_hash": "ee48c87eef66e04c2a22e7bdee717795b25ddfaa7e3b501bc2c9ff759ca7b069",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:22:02.821Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[0].description": {
+          "text": "担任 Stanford University 第十任校长。",
+          "source_hash": "36fc1b11e03cb77190d11070dca4835dc06f843c8f89b7f0f1936398d3778b58",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:22:02.821Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[1].description": {
+          "text": "共同创立 MIPS Computer Systems。",
+          "source_hash": "3b43a2a605ccf4abd9cd30f6adfe4aa596e644f0c1bb1256359bb4cf3e790bee",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:22:02.821Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Stanford 官方人物简介记录其获得 IEEE Medal of Honor、ACM Eckert–Mauchly Award 等计算机工程领域荣誉；未在此将学术荣誉解释为投资业绩。",
+          "source_hash": "2d108223e857b3dd5a11dc4bb3537a4ac4d6899f10c48abe595fe78e45395208",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:22:02.821Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "Stanford 官方人物档案",
+          "source_hash": "8cb8076f21d7a64bfc56e2c6fd2e51119af0a59f3f241dbdcafac0aaa6fa5589",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:22:02.821Z",
+          "status": "translated"
+        },
+        "public_profile.career[1].description": {
+          "text": "共同创立微处理器设计公司 MIPS Computer Systems。",
+          "source_hash": "befbc41c7474dc116e721184cddeff243bd41a6caa7b09ced3bf4f90838898ac",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:22:02.821Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-27T03:22:36.621Z",
+    "latestDataDate": "2026-09-27",
+    "currentDate": "2026-09-27",
+    "eventCount": 3600,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -141,7 +141,7 @@
       "identity_status": "verified",
       "coverage_status": "researched",
       "coverage_note": "Aglaé Ventures’ investment model and stage ranges are firm-published. Financing sources identify Aglaé as a participant in AMI Labs’ reported seed round but do not disclose an individual investment amount.",
-      "summary": "Aglaé Ventures is a global technology investment platform backed by Agache, Bernard Arnault’s principal investment vehicle. It describes a long-term, family-backed investment approach spanning early-stage rounds through pre-IPO and lists technology investments across Europe, the United States, and global markets.",
+      "summary": "Aglaé Ventures 是由 Agache 支持的全球技术投资平台，Agache 是 Bernard Arnault 的主要投资工具。它描述了一种长期、家族支持的投资方法，涵盖从早期轮次到 pre-IPO，并列出了欧洲、美国和全球市场的技术投资。",
       "facts": [
         {
           "field": "backing",
@@ -151,19 +151,19 @@
         },
         {
           "field": "early_stage",
-          "label": "Early-stage investment",
+          "label": "早期投资",
           "value": "Pre-seed, seed, and Series A; the firm lists $500,000–$10 million ranges for these rounds.",
           "source_id": "aglae_terms"
         },
         {
           "field": "growth_stage",
-          "label": "Growth investment",
+          "label": "成长投资",
           "value": "Series B through pre-IPO on a global basis, with stated ranges of $10 million–$100 million.",
           "source_id": "aglae_terms"
         },
         {
           "field": "strategy",
-          "label": "Investment strategy",
+          "label": "投资策略",
           "value": "The firm says it invests across stages with a long-term perspective and permanent-capital orientation.",
           "source_id": "aglae_platform"
         }
@@ -171,14 +171,14 @@
       "milestones": [],
       "track_record": [
         {
-          "description": "A Cathay Innovation post on AMI Labs’ 2026 seed financing lists Aglaé Ventures among the investors. The reported round total is not Aglaé’s individual contribution.",
+          "description": "Cathay Innovation 关于 AMI Labs 2026 年种子融资的帖子将 Aglaé Ventures 列为投资者之一。所报道的轮次总额并非 Aglaé 的单独出资。",
           "source_id": "FISRC-f7589987753ab2c6"
         }
       ],
       "contacts": [
         {
           "kind": "website",
-          "label": "Official website",
+          "label": "官方网站",
           "value": "Aglaé Ventures investment philosophy",
           "source_id": "aglae_platform",
           "url": "https://aglaeventures.com/philosophy"
@@ -211,6 +211,58 @@
         }
       ],
       "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Aglaé Ventures 是由 Agache 支持的全球技术投资平台，Agache 是 Bernard Arnault 的主要投资工具。它描述了一种长期、家族支持的投资方法，涵盖从早期轮次到 pre-IPO，并列出了欧洲、美国和全球市场的技术投资。",
+          "source_hash": "4234476d51b6e7b4f36f76edcc39719947c11539d424026a0118fe917e5a81d3",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:21:46.644Z",
+          "status": "translated"
+        },
+        "public_profile.facts[1].label": {
+          "text": "早期投资",
+          "source_hash": "5e08b687a659e76d4534e38b25ef41d549a1c72790a714809468ee7410da3099",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:21:50.237Z",
+          "status": "translated"
+        },
+        "public_profile.facts[2].label": {
+          "text": "成长投资",
+          "source_hash": "d0f96daae63aa97780ebbdf405c5ec7803a136a478f0bbf67e1ed5d54b942384",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:21:50.237Z",
+          "status": "translated"
+        },
+        "public_profile.facts[3].label": {
+          "text": "投资策略",
+          "source_hash": "6f679b75550ebf8759e46108a4df05cf121ddacbd50a2dfe7c87e09cf26cf964",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:21:50.237Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Cathay Innovation 关于 AMI Labs 2026 年种子融资的帖子将 Aglaé Ventures 列为投资者之一。所报道的轮次总额并非 Aglaé 的单独出资。",
+          "source_hash": "4f6dff53d5ee99d32b98d16e8b451a15537c7f16ba6629d6b16bee77e2501bd6",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:21:50.237Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "官方网站",
+          "source_hash": "b16446d4331ad20b13b3c92866fa00eb15a0df69d7efc5dfdf9eca066ccae501",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:21:23.689Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }
