@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-27T03:14:03.416Z",
+    "latestDataDate": "2026-09-27",
+    "currentDate": "2026-09-27",
+    "eventCount": 3592,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-f389faf9d7a68a79",
@@ -141,35 +141,35 @@
       "identity_status": "verified",
       "coverage_status": "researched",
       "coverage_note": "The fund stage, fund size, team biographies, and portfolio value statements are published by Basis Set and may be self-reported. Aggregate portfolio-company value and individual company financings are not fund-return multiples. Mem0’s USD 24 million Series A is the company round total, not Basis Set’s disclosed individual check.",
-      "summary": "Basis Set Ventures is an early-stage, AI-native venture firm founded in 2017 and based in San Francisco. It invests in founders working across artificial intelligence and software, and uses in-house engineering and AI tools to support recruiting, go-to-market work, and company building. Founder and partner Lan Xuezhao has a background in psychology research, entrepreneurship, McKinsey, and Dropbox corporate development.",
+      "summary": "Basis Set Ventures 是一家早期、AI 原生风险投资机构，成立于 2017 年，总部位于旧金山。它投资于人工智能和软件领域的创始人，并利用内部工程和 AI 工具支持招聘、市场推广和公司建设。创始人兼合伙人 Lan Xuezhao 拥有心理学研究、创业、McKinsey 和 Dropbox 企业发展背景。",
       "facts": [
         {
           "field": "firm_positioning",
-          "label": "Firm positioning",
+          "label": "机构定位",
           "value": "An AI-native early-stage venture fund founded in 2017.",
           "source_id": "basis_home"
         },
         {
           "field": "investment_stage",
-          "label": "Investment stage",
+          "label": "投资阶段",
           "value": "Early stage, as described in the firm FAQ.",
           "source_id": "basis_faq"
         },
         {
           "field": "founder_background",
-          "label": "Founder background",
+          "label": "创始人背景",
           "value": "Lan Xuezhao is an entrepreneur and investor with a PhD in psychology; her career included brain research, founding a company, McKinsey, and corporate development at Dropbox.",
           "source_id": "basis_faq"
         },
         {
           "field": "founder_support",
-          "label": "Founder support",
+          "label": "创始人支持",
           "value": "The firm describes an in-house engineering and AI stack and support with recruiting, go-to-market, sales, partnerships, expansion, and fundraising.",
           "source_id": "basis_faq"
         },
         {
           "field": "fund_iv",
-          "label": "Latest announced fund",
+          "label": "最新公布的基金",
           "value": "The website announces a USD 250 million Fund IV.",
           "source_id": "basis_home"
         }
@@ -177,18 +177,18 @@
       "milestones": [],
       "track_record": [
         {
-          "description": "Basis Set Ventures led Mem0’s USD 24 million Series A announced in October 2025. The amount is Mem0’s total round, not Basis Set’s individual commitment.",
+          "description": "Basis Set Ventures 领投了 Mem0 于 2025 年 10 月宣布的 2400 万美元 A 轮融资。该金额是 Mem0 的总融资额，而非 Basis Set 的单独投资额。",
           "source_id": "FISRC-f3e9aa548f7703f9"
         },
         {
-          "description": "The firm’s FAQ says companies in which Lan Xuezhao made early investments grew to a combined value exceeding USD 20 billion; this is a founder biography claim, not a fund-level return figure.",
+          "description": "该机构的 FAQ 称，Lan Xuezhao 早期投资的公司合计价值已超过 200 亿美元；这是创始人传记声明，而非基金层面的回报数据。",
           "source_id": "basis_faq"
         }
       ],
       "contacts": [
         {
           "kind": "website",
-          "label": "Official website",
+          "label": "官网",
           "value": "Basis Set Ventures",
           "source_id": "basis_home",
           "url": "https://www.basisset.com/"
@@ -229,6 +229,82 @@
         }
       ],
       "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Basis Set Ventures 是一家早期、AI 原生风险投资机构，成立于 2017 年，总部位于旧金山。它投资于人工智能和软件领域的创始人，并利用内部工程和 AI 工具支持招聘、市场推广和公司建设。创始人兼合伙人 Lan Xuezhao 拥有心理学研究、创业、McKinsey 和 Dropbox 企业发展背景。",
+          "source_hash": "c3ef760cdc2a4967eaf3888c13df07784d7d51e6131b13f40efedfe91cb5e6a1",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:29.465Z",
+          "status": "translated"
+        },
+        "public_profile.facts[0].label": {
+          "text": "机构定位",
+          "source_hash": "258742c6294315ac5bafd5a76c271df6725925db093fed8ba69052b0dd94b68b",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:06.189Z",
+          "status": "translated"
+        },
+        "public_profile.facts[1].label": {
+          "text": "投资阶段",
+          "source_hash": "82ef8e5156662bd9982e29926208b4193e1e4f83c7b3e0d8e4f0f77867ed09c5",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:12:59.672Z",
+          "status": "translated"
+        },
+        "public_profile.facts[2].label": {
+          "text": "创始人背景",
+          "source_hash": "9a8565acbe93a2aedf5d7b6d7698998bb80f550252d513e555a506e80bc466e2",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:29.465Z",
+          "status": "translated"
+        },
+        "public_profile.facts[3].label": {
+          "text": "创始人支持",
+          "source_hash": "e4f4c7da4cd902dd0ddc39c288c4d72cc10b5e5926be6006989254d431fc9463",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:12:59.672Z",
+          "status": "translated"
+        },
+        "public_profile.facts[4].label": {
+          "text": "最新公布的基金",
+          "source_hash": "3bdeb0cc904b175b9dbf5a5b18c5577ab082f589d89c71a71550d35b86b17f84",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:29.465Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Basis Set Ventures 领投了 Mem0 于 2025 年 10 月宣布的 2400 万美元 A 轮融资。该金额是 Mem0 的总融资额，而非 Basis Set 的单独投资额。",
+          "source_hash": "bdabce477cc8556eb537d99472f97b91346bf33c03f953551a94fcf0ab2f5061",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:29.465Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "该机构的 FAQ 称，Lan Xuezhao 早期投资的公司合计价值已超过 200 亿美元；这是创始人传记声明，而非基金层面的回报数据。",
+          "source_hash": "4154c2291ab460b7dc5d7b653a9025476e18deb7441b451f6da8fb9b4a2660a0",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:29.465Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "官网",
+          "source_hash": "b16446d4331ad20b13b3c92866fa00eb15a0df69d7efc5dfdf9eca066ccae501",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:12:59.672Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

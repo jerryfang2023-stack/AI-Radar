@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-27T03:14:03.416Z",
+    "latestDataDate": "2026-09-27",
+    "currentDate": "2026-09-27",
+    "eventCount": 3592,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-f389faf9d7a68a79",
@@ -203,10 +203,6 @@
         {
           "description": "Vertex Holdings披露Vertex Growth于2025年承诺向Dolphin Semiconductor投资1000万欧元；这是单笔扩张融资案例。官网另展示30余家组合公司及8家独角兽，但未给出统计日期。",
           "source_id": "vertex_growth_2025"
-        },
-        {
-          "description": "融资来源记录：地瓜机器人 · C轮 · 2026-09-17 · 本轮跟投（原有投资机构继续追加投资） · 4亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-517ef1b31eac6dd3"
         }
       ],
       "contacts": [
@@ -263,14 +259,6 @@
           "source_content_hash": "2816b57377b795c16fbc071eaa4cd1ab652dcaed516ee5a257454c84a53b11df",
           "quote": "Each Vertex fund operates independently, with separate local teams that raise and manage their respective funds.",
           "quote_hash": "455218b5280ca7e7d7f57edca0e7cff0fe95624bd193ac0a4cd9022f8f15fbc5"
-        },
-        {
-          "source_id": "FISRC-517ef1b31eac6dd3",
-          "source_url": "https://finance.sina.com.cn/roll/2026-09-17/doc-iniscekc4127167.shtml",
-          "source_title": "地瓜机器人完成4亿美元C轮融资 软硬一体基础设施支撑具身智能产业落地_新浪财经_新浪网",
-          "source_content_hash": "ffc4d665dce6209d",
-          "quote": "高瓴创投、五源资本、线性资本、淡马锡旗下Vertex Growth等多家原有投资机构继续追加投资。",
-          "quote_hash": "2e695e67eb318bb202681426003226fdafc284ca308890dae2f0111b03fe308e"
         }
       ],
       "profile_type": "organization",
@@ -278,6 +266,18 @@
       "identity_status": "verified",
       "coverage_note": "基金定位、网站展示数据与联系方式来自Vertex Growth官网；7.6亿美元、30余家和8家独角兽均未标注统计日期，按未注明基准日的官网自报指标展示。Temasek与Vertex Growth之间通过Vertex Holdings连接；未把集团AUM或整体退出业绩归给本基金。",
       "last_verified_at": "2026-09-26"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.milestones[1].description": {
+          "text": "Vertex Holdings公布Vertex Growth向Dolphin Semiconductor承诺投资1000万欧元，用于企业扩张。",
+          "source_hash": "7c774872e0c9d7b27e703c5647c7f29d7c0096846dc88df69e2d385076f66313",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:12:57.092Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

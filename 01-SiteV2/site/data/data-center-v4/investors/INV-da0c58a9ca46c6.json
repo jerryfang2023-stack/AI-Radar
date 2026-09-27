@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-27T03:14:03.416Z",
+    "latestDataDate": "2026-09-27",
+    "currentDate": "2026-09-27",
+    "eventCount": 3592,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-f389faf9d7a68a79",
@@ -201,14 +201,6 @@
         {
           "description": "作为 PyTorch 共同创建者之一参与该机器学习框架建设；此为软件与开源项目经历，不代表个人投资业绩。",
           "source_id": "soumith_pytorch_founder"
-        },
-        {
-          "description": "融资来源记录：Mowito · 预种子轮 · 2026-07-07 · 天使投资人 · $3M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-5667d54cc3421916"
-        },
-        {
-          "description": "融资来源记录：All Hands AI · 种子轮 · 2024-09-05 · 本轮天使投资人 · 500万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-9dd8630200082b4c"
         }
       ],
       "contacts": [
@@ -263,27 +255,37 @@
           "source_content_hash": "326bd87cf28dd1ed0fbb2c0b2aadefa6dfd8b4bfb9398802052c4eba942449ae",
           "quote": "Soumith Chintala, the founder of PyTorch, discussed advancements and integration between AMD and PyTorch.",
           "quote_hash": "a0b7ceb52626770f258a9e4513657eb9a803d53c40671ba8807149bbd3722227"
-        },
-        {
-          "source_id": "FISRC-5667d54cc3421916",
-          "source_url": "https://versionone.vc/announcing-our-investment-in-mowito-physical-ai-for-robot-arms-in-manufacturing/",
-          "source_title": "Version One Ventures 宣布投资 Mowito：面向制造业机械臂的 Physical AI",
-          "source_content_hash": "66a29d7fc8fabd22",
-          "quote": "alongside angels Soumith Chintala (Thinking Machines Labs), Adarsh Kulkarni (Foundry Robotics), and Ashish Kulkarni (Coformer AI).",
-          "quote_hash": "e4135e332d37b9d3537f7d0afd52be9eed631285c4a2a1e7fc8ef9d278fc8fd4"
-        },
-        {
-          "source_id": "FISRC-9dd8630200082b4c",
-          "source_url": "https://techcrunch.com/2024/09/05/all-hands-ai-raises-5m-to-build-open-source-agents-for-developers/",
-          "source_title": "All Hands AI 获 500 万美元融资，为开发者构建开源 AI 智能体",
-          "source_content_hash": "98fe8fb23998f253",
-          "quote": "PyTorch creator and Meta VP Soumith Chintala",
-          "quote_hash": "af96c9b1d07b0dc39776de5cc000d6a8869b670b5a7c266648edea3a5433670f"
         }
       ],
-      "last_verified_at": "2026-09-26",
-      "identity_status": "verified",
-      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
+      "last_verified_at": "2026-09-26"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.milestones[0].description": {
+          "text": "PyTorch 开发者公告称首席核心维护职责移交给 Alban Desmaison。",
+          "source_hash": "3757176fcc58fec01749d18799fd32719be636d29b57296dfe23a64796679ca6",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:09.415Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "PyTorch 官方项目资料",
+          "source_hash": "304e95314f9eb39a5ae6c4ac7689f966464a29110963455a347ab3b7e6acb83b",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:09.415Z",
+          "status": "translated"
+        },
+        "public_profile.career[0].description": {
+          "text": "PyTorch 官方文章署名说明其当时担任 Meta AI 工程总监和 PyTorch lead maintainer。",
+          "source_hash": "5231909066effacb4805871052ed7dc42db189307cae6f1f7c23507296dea677",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:09.415Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

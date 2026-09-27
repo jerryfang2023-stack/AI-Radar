@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-27T03:14:03.416Z",
+    "latestDataDate": "2026-09-27",
+    "currentDate": "2026-09-27",
+    "eventCount": 3592,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-f389faf9d7a68a79",
@@ -242,16 +242,7 @@
           "source_id": "openai_structure_official"
         }
       ],
-      "track_record": [
-        {
-          "description": "融资来源记录：Thrive Holdings · 轮次未披露 · 2026-08-12 · 本轮参投 · $2B。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-d07c57474d0d2a62"
-        },
-        {
-          "description": "融资来源记录：Poetic · A轮 · 2026-06-10 · 本轮参投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1da4b36f3c2caa81"
-        }
-      ],
+      "track_record": [],
       "contacts": [
         {
           "kind": "website",
@@ -269,22 +260,6 @@
           "source_content_hash": "edd84579b64b3147f06ecd94792d9a776dadf92d94dd7c10e12df379b07f7edc",
           "quote": "OpenAI was founded in 2015 as a nonprofit. The nonprofit is now the OpenAI Foundation. The for-profit is now a public benefit corporation, called OpenAI Group PBC.",
           "quote_hash": "06de9d06bbe9c83b91f06be4af99c9d8f3576138255d644ea5fbd393a0f2afd9"
-        },
-        {
-          "source_id": "FISRC-d07c57474d0d2a62",
-          "source_url": "https://ecmsource.com/thrive-holdings-2-billion-openai-softbank-august-2026/",
-          "source_title": "Thrive Holdings Raises $2B at $12B: AI-Native PE Model",
-          "source_content_hash": "8ce4af6115005665",
-          "quote": "OpenAI , SoftBank, D1 Capital Partners, and Altimeter Capital led the round.",
-          "quote_hash": "704112975d8feb3dc22e5b6374f5b3fab14c5b239be2cd89e95b15d56db87c07"
-        },
-        {
-          "source_id": "FISRC-1da4b36f3c2caa81",
-          "source_url": "https://www.bloomberg.com/news/articles/2026-06-10/openai-backs-ai-startup-fielding-compliance-underwriting-tasks",
-          "source_title": "OpenAI 投资 AI 初创公司 Poetic，布局合规与承保任务",
-          "source_content_hash": "43f94d17c593e7f7",
-          "quote": "with participation from OpenAI and Peter Thiel ’s Founders Fund",
-          "quote_hash": "4642a4cccc4e453f294929216377918a655227c89c89a3d454d915261fb06bc1"
         }
       ],
       "profile_type": "organization",
@@ -292,6 +267,18 @@
       "identity_status": "verified",
       "coverage_note": "组织架构与使命来自OpenAI官网。融资数据仅显示部分轮次来源将“OpenAI”列为投资者，公开记录没有在此处确认专属基金或投资团队，因此活动仍保留原始归属名称。",
       "last_verified_at": "2026-09-26"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.milestones[2].description": {
+          "text": "官网公布更新后的组织架构：OpenAI Foundation继续控制OpenAI Group PBC。",
+          "source_hash": "f889e9385cc42fe9fcb01020563b5a421aa788e453cf88d55d6a43478fc66ca9",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:12:51.237Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

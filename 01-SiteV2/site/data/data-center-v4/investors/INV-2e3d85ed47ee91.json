@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-27T03:14:03.416Z",
+    "latestDataDate": "2026-09-27",
+    "currentDate": "2026-09-27",
+    "eventCount": 3592,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-f389faf9d7a68a79",
@@ -220,10 +220,6 @@
         {
           "description": "官网团队页称Nicholas Chirls曾在betaworks从事种子投资并共同创立Notation Capital。",
           "source_id": "asylum_team"
-        },
-        {
-          "description": "融资来源记录：Aranya Inc. · 种子轮 · 2026-09-01 · 本轮参投 · $11M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-89934e15127d3d0d"
         }
       ],
       "contacts": [
@@ -259,21 +255,32 @@
           "source_content_hash": "621b06c7ee433ebd3a93029456c31c69b6660371692ea128b5b1ca95dc293f28",
           "quote": "Asylum公司组合页列出Ark Robotics的Seed II领投、The Clearing Company的Seed投资等案例；页面为选择性组合展示。",
           "quote_hash": "11882f045e50e7ba2132f11c0cb117ed06dda2fe4f9be2b635da3400a56cd66b"
-        },
-        {
-          "source_id": "FISRC-89934e15127d3d0d",
-          "source_url": "https://siliconangle.com/2026/09/01/aranya-raises-11m-to-turn-bare-metal-servers-into-ai-clusters-in-less-than-48-hours/",
-          "source_title": "Aranya融资1100万美元，将裸机服务器在48小时内转化为AI集群",
-          "source_content_hash": "38aef4d5d540ee15",
-          "quote": "The round includes a $9 million seed led by First Round Capital Holdings L.P. with participation from BoxGroup Ventures LLC, Vermilion Cliffs Ventures LLC and Asylum Ventures and a $2 million pre-seed round led by Asylum Ventures.",
-          "quote_hash": "311e56ff80aa1bddaf01f365e7a7fe50bfe7b2fc6c80c0cd3cd079537584f4cd"
         }
       ],
       "identity_status": "verified",
       "coverage_status": "researched",
       "coverage_note": "机构定位、团队、投资案例来自Asylum Ventures官网。页面未披露基金规模、单笔支票范围或完整组合，故不推断；投资案例仅作官网列示，不声称完整。",
-      "last_verified_at": "2026-09-26",
-      "profile_type": "organization"
+      "last_verified_at": "2026-09-26"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.track_record[0].description": {
+          "text": "官网列示对Ark Robotics的Seed II领投、The Clearing Company的Seed投资及其他早期项目；该选择性页面并非完整投资组合。",
+          "source_hash": "3b72f4a5c14c18002c5b1ab667d272ff793325e37f7e53f24b1b59342c53b656",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:12:57.092Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "官网团队页称Nicholas Chirls曾在betaworks从事种子投资并共同创立Notation Capital。",
+          "source_hash": "b5ce5204e5c6db83b69f7ad58b013950c04616dfecf0a83549ede261690a6834",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:12:57.092Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

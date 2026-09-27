@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-27T03:14:03.416Z",
+    "latestDataDate": "2026-09-27",
+    "currentDate": "2026-09-27",
+    "eventCount": 3592,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-f389faf9d7a68a79",
@@ -232,14 +232,6 @@
         {
           "description": "DTCP官网列示70余笔投资及25余笔退出；集团披露的历史案例包括Aircall、Arctic Wolf、Auth0、Cognigy、LeanIX、Pipedrive和Signavio。上述为机构平台汇总披露，不等于特定基金回报。",
           "source_id": "dtcp_home"
-        },
-        {
-          "description": "融资来源记录：Groq · A轮 · 2026-08-17 · 历史轮次投资方 · $350M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-28e142eb564f6762"
-        },
-        {
-          "description": "融资来源记录：Groq · 轮次未披露 · 2026-06-22 · 既有投资方 · 6.5 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-85e8550490e53490"
         }
       ],
       "contacts": [
@@ -267,28 +259,37 @@
           "source_content_hash": "517c0ae8f3e8b6cfac845ae62b59998834c551e5942ca269950ccb469fe514bb",
           "quote": "DTCP reports 70+ investments, 25+ exits and €5 billion in assets under management.",
           "quote_hash": "01b8e0863719275ab78b4c32ca3009c9fd0d25fa685b152f7512e37ba9a187db"
-        },
-        {
-          "source_id": "FISRC-28e142eb564f6762",
-          "source_url": "https://www.verdict.co.uk/groq-obtains-750m-in-funding-ai-inference-technology/",
-          "source_title": "Groq obtains $750m in funding for AI inference technology",
-          "source_content_hash": "b6f5ca4d5c31cfb3",
-          "quote": "Groq also secured notable investments from BlackRock, Neuberger Berman, Deutsche Telekom Capital Partners, and a major mutual fund manager based on the US West Coast.",
-          "quote_hash": "ed71500dc8a1a4e18d291568de425fbe6492106f824a8a3e558236c34540a2a0"
-        },
-        {
-          "source_id": "FISRC-85e8550490e53490",
-          "source_url": "https://test-news.aibase.com/news/21366",
-          "source_title": "Groq Raises $750 Million in Funding, Valuation Reaches $6.9 Billion",
-          "source_content_hash": "6efab5b69f3f9aa3",
-          "quote": "This round was led by the Texas-based investment firm Disruptive, and also received significant investments from Blackstone, Newport Capital, Deutsche Telekom Capital Partners, and a major U.S. West Coast fund manager.",
-          "quote_hash": "1ab9a3e89cdba5fc45b86870174a402aea545f82fdce6c59c536a1a228b3080a"
         }
       ],
-      "last_verified_at": "2026-09-26",
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
+      "last_verified_at": "2026-09-26"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Deutsche Telekom Capital Partners（DTCP）是 Deutsche Telekom 于2014年宣布设立的风险投资与创新投资团队；DTCP现行官网以 Digital Transformation Capital Partners 品牌运营，覆盖数字基础设施、成长型企业软件与防务投资策略。DTCP官网当前自报70余笔投资、25余笔退出及50亿欧元管理资产；这些是平台汇总口径，不代表单一基金业绩。",
+          "source_hash": "ee35358cc0c6c9e40db408b1054f7c23bf98b95cf3955815084542da1f2ab9b4",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:32.892Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[0].description": {
+          "text": "Deutsche Telekom宣布设立名为Deutsche Telekom Capital Partners（DTCP）的专业投资团队。",
+          "source_hash": "7c06ad828957cca339cf32fa947732e8dee4297a945d920f993ba245ce955fbc",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:32.892Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "DTCP官网列示70余笔投资及25余笔退出；集团披露的历史案例包括Aircall、Arctic Wolf、Auth0、Cognigy、LeanIX、Pipedrive和Signavio。上述为机构平台汇总披露，不等于特定基金回报。",
+          "source_hash": "5de851e8b0551f5d54096591c66532926720e3eaa3eb34f69ae232196b6b62cb",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:32.892Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

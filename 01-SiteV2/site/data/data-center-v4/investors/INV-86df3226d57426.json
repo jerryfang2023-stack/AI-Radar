@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-27T03:14:03.416Z",
+    "latestDataDate": "2026-09-27",
+    "currentDate": "2026-09-27",
+    "eventCount": 3592,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-f389faf9d7a68a79",
@@ -151,10 +151,6 @@
         {
           "description": "Stanford 官方人物简介记录其获得 IEEE Medal of Honor、ACM Eckert–Mauchly Award 等计算机工程领域荣誉；未在此将学术荣誉解释为投资业绩。",
           "source_id": "john_hennessy_stanford"
-        },
-        {
-          "description": "融资来源记录：Sycamore · 种子轮 · 2026-03-30 · 天使投资人 · $65 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-d354011359557f2f"
         }
       ],
       "contacts": [
@@ -218,19 +214,61 @@
           "source_content_hash": "f0875695ebd0c7412171d2901418be776f9985cc0b67824aa29f059387de35b4",
           "quote": "He earned his bachelor’s degree in electrical engineering from Villanova University and his master’s and doctoral degrees in computer science from the State University of New York at Stony Brook.",
           "quote_hash": "81845cfd59f03aedaaa457c43b104e5f8b27eed86c8f1cbfa371b4a2b87b25c2"
-        },
-        {
-          "source_id": "FISRC-d354011359557f2f",
-          "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
-          "source_title": "Sycamore融资6500万美元，为企业打造可信代理操作系统",
-          "source_content_hash": "7c851906b2d8f45f",
-          "quote": "John Nay (founder of Norm Ai)",
-          "quote_hash": "515038e634e89695755f43b8f84ec8758b5ffe916299c689ef100763f6da9f6c"
         }
       ],
-      "last_verified_at": "2026-09-26",
-      "identity_status": "verified",
-      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
+      "last_verified_at": "2026-09-26"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "John L. Hennessy 是计算机科学家与 Stanford University 荣休校长，长期从事计算机体系结构研究。他共同创立 MIPS Computer Systems，并于2000至2016年担任 Stanford 第十任校长。所列奖项与教育信息依据 Stanford 官方人物资料。",
+          "source_hash": "ee48c87eef66e04c2a22e7bdee717795b25ddfaa7e3b501bc2c9ff759ca7b069",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:38.566Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[0].description": {
+          "text": "担任 Stanford University 第十任校长。",
+          "source_hash": "36fc1b11e03cb77190d11070dca4835dc06f843c8f89b7f0f1936398d3778b58",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:38.566Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[1].description": {
+          "text": "共同创立 MIPS Computer Systems。",
+          "source_hash": "3b43a2a605ccf4abd9cd30f6adfe4aa596e644f0c1bb1256359bb4cf3e790bee",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:38.566Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Stanford 官方人物简介记录其获得 IEEE Medal of Honor、ACM Eckert–Mauchly Award 等计算机工程领域荣誉；未在此将学术荣誉解释为投资业绩。",
+          "source_hash": "2d108223e857b3dd5a11dc4bb3537a4ac4d6899f10c48abe595fe78e45395208",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:38.566Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "Stanford 官方人物档案",
+          "source_hash": "8cb8076f21d7a64bfc56e2c6fd2e51119af0a59f3f241dbdcafac0aaa6fa5589",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:38.566Z",
+          "status": "translated"
+        },
+        "public_profile.career[1].description": {
+          "text": "共同创立微处理器设计公司 MIPS Computer Systems。",
+          "source_hash": "befbc41c7474dc116e721184cddeff243bd41a6caa7b09ced3bf4f90838898ac",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:38.566Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-27T03:14:03.416Z",
+    "latestDataDate": "2026-09-27",
+    "currentDate": "2026-09-27",
+    "eventCount": 3592,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-f389faf9d7a68a79",
@@ -141,35 +141,35 @@
       "identity_status": "verified",
       "coverage_status": "researched",
       "coverage_note": "The firm’s seed-fund positioning and climate focus are self-descriptions on its website. Fund portfolios are selected company examples, not audited performance. Gritt’s $32.4 million financing total is not Active Impact’s individual contribution.",
-      "summary": "Active Impact Investments is a Canadian climate-tech seed investor. The firm says it backs capital-efficient, market-ready companies that address environmental challenges and supports founders with sales, talent, fundraising, and an operator network.",
+      "summary": "Active Impact Investments 是一家加拿大气候科技种子投资者。该公司表示，其支持资本高效、已具备市场条件、应对环境挑战的公司，并通过销售、人才、融资和运营者网络为创始人提供支持。",
       "facts": [
         {
           "field": "firm_positioning",
-          "label": "Firm positioning",
+          "label": "机构定位",
           "value": "Describes itself as Canada’s largest climate-tech seed fund.",
           "source_id": "active_impact_home"
         },
         {
           "field": "investment_focus",
-          "label": "Investment focus",
+          "label": "投资重点",
           "value": "Climate and sustainability solutions across clean energy and transportation, infrastructure and carbon, sustainable food and water, and circular and sharing economy.",
           "source_id": "active_impact_home"
         },
         {
           "field": "investment_approach",
-          "label": "Investment approach",
+          "label": "投资方法",
           "value": "Capital-efficient, market-ready products and services with an emphasis on customer value and environmental impact.",
           "source_id": "active_impact_home"
         },
         {
           "field": "founder_support",
-          "label": "Founder support",
+          "label": "创始人支持",
           "value": "The firm lists sales, talent, and fundraising support through its network of operators and investors.",
           "source_id": "active_impact_home"
         },
         {
           "field": "funds",
-          "label": "Fund series",
+          "label": "基金系列",
           "value": "The public portfolio is organized into Fund I, Fund II, and Fund III.",
           "source_id": "active_impact_portfolio"
         }
@@ -177,18 +177,18 @@
       "milestones": [],
       "track_record": [
         {
-          "description": "The firm’s public site organizes selected portfolio companies under Funds I–III; it does not present these company lists as audited performance.",
+          "description": "该公司的公开网站将部分投资组合公司归入 Funds I–III 之下；其并未将这些公司名单作为经审计业绩呈现。",
           "source_id": "active_impact_portfolio"
         },
         {
-          "description": "Gritt’s July 2026 announcement names Active Impact Investments among participants in a $32.4 million financing. The reported total is the company’s round, not the firm’s individual check.",
+          "description": "Gritt 于 2026 年 7 月的公告将 Active Impact Investments 列为 3240 万美元融资的参与方之一。所报道总额是该公司本轮融资，而非该机构的单笔投资。",
           "source_id": "FISRC-e5ce259c107507e9"
         }
       ],
       "contacts": [
         {
           "kind": "application",
-          "label": "Climate venture submissions",
+          "label": "气候风险项目提交",
           "value": "Submit a climate venture through the official entrepreneur page.",
           "source_id": "active_impact_entrepreneurs",
           "url": "https://www.activeimpactinvestments.com/entrepreneurs"
@@ -229,6 +229,82 @@
         }
       ],
       "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Active Impact Investments 是一家加拿大气候科技种子投资者。该公司表示，其支持资本高效、已具备市场条件、应对环境挑战的公司，并通过销售、人才、融资和运营者网络为创始人提供支持。",
+          "source_hash": "1a5ed4946cf2ab4fc56c3a294238c8147d0cc5794942371f8cf320d9f0f91f85",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:06.189Z",
+          "status": "translated"
+        },
+        "public_profile.facts[0].label": {
+          "text": "机构定位",
+          "source_hash": "258742c6294315ac5bafd5a76c271df6725925db093fed8ba69052b0dd94b68b",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:06.189Z",
+          "status": "translated"
+        },
+        "public_profile.facts[1].label": {
+          "text": "投资重点",
+          "source_hash": "63796d28455af159b2fd7937e8ba9bbcee96a13223afbec9e4a33ff9ba65b2d4",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:12:59.672Z",
+          "status": "translated"
+        },
+        "public_profile.facts[2].label": {
+          "text": "投资方法",
+          "source_hash": "3f41267b1933c14f39659eff70c6eef84065a52b97fed3857ba665355c261841",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:06.189Z",
+          "status": "translated"
+        },
+        "public_profile.facts[3].label": {
+          "text": "创始人支持",
+          "source_hash": "e4f4c7da4cd902dd0ddc39c288c4d72cc10b5e5926be6006989254d431fc9463",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:12:59.672Z",
+          "status": "translated"
+        },
+        "public_profile.facts[4].label": {
+          "text": "基金系列",
+          "source_hash": "424c9de14d489ae29f0e7ce83c59494406a0fddd6591b0982bc3a4b700bc4c43",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:06.189Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "该公司的公开网站将部分投资组合公司归入 Funds I–III 之下；其并未将这些公司名单作为经审计业绩呈现。",
+          "source_hash": "9b174ae54e1f981f5acee388a676d3196f5c54f55ed1c5ec0d23ff3cddb4a461",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:06.189Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "Gritt 于 2026 年 7 月的公告将 Active Impact Investments 列为 3240 万美元融资的参与方之一。所报道总额是该公司本轮融资，而非该机构的单笔投资。",
+          "source_hash": "7773c24344840c08bd30306549856918fca6d28417e7dbf9b8fc7aaf471a9f91",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:06.189Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "气候风险项目提交",
+          "source_hash": "b003f2d1f631b14587aa13fbbaa655aebebae74017aba0eb166f907c39736644",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:06.189Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

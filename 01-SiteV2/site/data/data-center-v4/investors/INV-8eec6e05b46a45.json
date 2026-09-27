@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-27T03:14:03.416Z",
+    "latestDataDate": "2026-09-27",
+    "currentDate": "2026-09-27",
+    "eventCount": 3592,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-f389faf9d7a68a79",
@@ -141,23 +141,23 @@
       "identity_status": "verified",
       "coverage_status": "researched",
       "coverage_note": "Investment thesis, stage, and portfolio examples are drawn from Act One Ventures’ current website. The logcat.ai financing source lists Act One Ventures among participants but does not disclose its individual check.",
-      "summary": "Act One Ventures is a San Francisco-based, AI-native venture firm investing at pre-seed and seed. Its current thesis focuses on founders rebuilding enterprise systems and AI-native services; the firm describes its portfolio as spanning foundational enterprise software and newer AI-native companies.",
+      "summary": "Act One Ventures 是一家位于旧金山、AI 原生的风险投资机构，投资于 pre-seed 和 seed 阶段。其当前投资主题聚焦于重建企业系统和 AI 原生服务的创始人；该公司称其投资组合涵盖基础企业软件和较新的 AI 原生公司。",
       "facts": [
         {
           "field": "investment_stage",
-          "label": "Investment stage",
+          "label": "投资阶段",
           "value": "Pre-seed and seed.",
           "source_id": "actone_home"
         },
         {
           "field": "focus",
-          "label": "Investment focus",
+          "label": "投资重点",
           "value": "AI-native enterprise companies, including agent infrastructure and operating systems or services that re-architect industries.",
           "source_id": "actone_home"
         },
         {
           "field": "portfolio_model",
-          "label": "Founder support",
+          "label": "创始人支持",
           "value": "The firm says it combines founding experience, AI-native operations, customer introductions, and hands-on support.",
           "source_id": "actone_home"
         }
@@ -165,18 +165,18 @@
       "milestones": [],
       "track_record": [
         {
-          "description": "The firm’s portfolio page highlights earlier investments and notes that several were acquired; it does not publish fund-level return figures on that page.",
+          "description": "该公司的投资组合页面重点展示了较早的投资，并指出其中若干家已被收购；该页面未公布基金层面的回报数据。",
           "source_id": "actone_portfolio"
         },
         {
-          "description": "A July 2026 company announcement lists Act One Ventures among participants in logcat.ai’s $2.55 million pre-seed round. The round total is not Act One’s individual check.",
+          "description": "2026 年 7 月的一份公司公告将 Act One Ventures 列为 logcat.ai 255 万美元 pre-seed 轮融资的参与方之一。该轮融资总额并非 Act One 的单笔投资。",
           "source_id": "FISRC-adb92a0723de45a1"
         }
       ],
       "contacts": [
         {
           "kind": "contact_form",
-          "label": "Founder pitch submissions",
+          "label": "创始人推介提交",
           "value": "Act One Ventures says it accepts pitches through this form.",
           "source_id": "actone_contact",
           "url": "https://www.actoneventures.com/contact"
@@ -217,6 +217,66 @@
         }
       ],
       "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Act One Ventures 是一家位于旧金山、AI 原生的风险投资机构，投资于 pre-seed 和 seed 阶段。其当前投资主题聚焦于重建企业系统和 AI 原生服务的创始人；该公司称其投资组合涵盖基础企业软件和较新的 AI 原生公司。",
+          "source_hash": "702be18dc2fdf2be67e70898c23bf41767372e245ca538700cf2a46f1aee339a",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:06.189Z",
+          "status": "translated"
+        },
+        "public_profile.facts[0].label": {
+          "text": "投资阶段",
+          "source_hash": "82ef8e5156662bd9982e29926208b4193e1e4f83c7b3e0d8e4f0f77867ed09c5",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:12:59.672Z",
+          "status": "translated"
+        },
+        "public_profile.facts[1].label": {
+          "text": "投资重点",
+          "source_hash": "63796d28455af159b2fd7937e8ba9bbcee96a13223afbec9e4a33ff9ba65b2d4",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:12:59.672Z",
+          "status": "translated"
+        },
+        "public_profile.facts[2].label": {
+          "text": "创始人支持",
+          "source_hash": "e4f4c7da4cd902dd0ddc39c288c4d72cc10b5e5926be6006989254d431fc9463",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:12:59.672Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "该公司的投资组合页面重点展示了较早的投资，并指出其中若干家已被收购；该页面未公布基金层面的回报数据。",
+          "source_hash": "179b1b2eb5456e4ee090dbe4ca47f1ab3026997fb2aec530bc68d2ea2ce1310c",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:06.189Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "2026 年 7 月的一份公司公告将 Act One Ventures 列为 logcat.ai 255 万美元 pre-seed 轮融资的参与方之一。该轮融资总额并非 Act One 的单笔投资。",
+          "source_hash": "d042090a326b41a69f0a02496764e2e81ef33c038151ae3776b10be0708eee97",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:06.189Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "创始人推介提交",
+          "source_hash": "26001d571278aaad796cff654f41fba517dfc288df2ab1d16b6fa17023e5e060",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:06.189Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

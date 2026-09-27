@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-27T03:14:03.416Z",
+    "latestDataDate": "2026-09-27",
+    "currentDate": "2026-09-27",
+    "eventCount": 3592,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-f389faf9d7a68a79",
@@ -256,14 +256,6 @@
         {
           "description": "集团公开历史披露包括1995年投资Yahoo!及2000年投资Alibaba等早期案例；这些为集团/基金的历史披露，不代表由单一基金完成。",
           "source_id": "softbank_who"
-        },
-        {
-          "description": "融资来源记录：Thrive Holdings · 轮次未披露 · 2026-08-12 · 本轮参投 · $2B。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-0afb458e7b0878f0"
-        },
-        {
-          "description": "融资来源记录：OpenAI · F轮 · 2026-03-31 · 本轮联合领投 · $1220亿。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1e2b3bad243bd066"
         }
       ],
       "contacts": [
@@ -313,36 +305,40 @@
           "source_content_hash": "43c517a54044567fcd32c180947389179f7ff3f84114db08393563b176576bce",
           "quote": "官网提供投资者、分析师及媒体就集团或集团公司提交咨询的在线表单。",
           "quote_hash": "f9269336da61e9f2d960f3acfd7c29bcf61491c2fe6a8dc826d24ce999aa9ec4"
-        },
-        {
-          "source_id": "FISRC-0afb458e7b0878f0",
-          "source_url": "https://techcrunch.com/2026/08/12/openai-backed-thrive-holdings-raises-2b-to-bring-ai-to-the-enterprise/",
-          "source_title": "OpenAI 支持的 Thrive Holdings 融资 20 亿美元，将 AI 引入企业",
-          "source_content_hash": "250a43fbc91f9ea0",
-          "quote": "Thrive Holdings has raised $2 billion in new funding at a $12 billion valuation from investors like SoftBank, D1 Capital Partners, and Altimeter Capital.",
-          "quote_hash": "a1f1ea1feea484049efc821f79057e1e10e6177b4bd58b27c192684f9562376c"
-        },
-        {
-          "source_id": "FISRC-1e2b3bad243bd066",
-          "source_url": "https://yespress.io/openais-122-b-megaround",
-          "source_title": "OpenAI's $122B Megaround — AI Funding Has Gone Nuclear | YesPress",
-          "source_content_hash": "494969b64dc816f3",
-          "quote": "SoftBank ($30 billion)",
-          "quote_hash": "0e0614f834ae6ffe9eed742267af7afecb0253156dbe578b98c351a6bc94b202"
-        },
-        {
-          "source_id": "FISRC-b86e0fbe62dfd3dc",
-          "source_url": "https://www.mexc.com/news/996087",
-          "source_title": "OpenAI Closes $122B Funding Round, Hits $852B Valuation as AI Infrastructure Race Intensifies | MEXC News",
-          "source_content_hash": "4e51c91e5fc7160c",
-          "quote": "SoftBank co-led alongside a16z, D. E. Shaw Ventures, MGX, TPG, and T. Rowe Price Associates.",
-          "quote_hash": "eb1a353f262c6b5f36cf042c55381d3642167f0b24ec4185728cb1f48dbe89f2"
         }
       ],
       "identity_status": "verified",
       "coverage_status": "researched",
       "coverage_note": "本档案描述SoftBank集团层级；具体交易应进一步区分集团直接投资与各Vision Fund实体。联系方式为官网表单，未发现公开项目投递邮箱。",
       "last_verified_at": "2026-09-26"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.milestones[0].description": {
+          "text": "Masayoshi Son创立SoftBank Japan。",
+          "source_hash": "8ff2717b0ff21e139753547e4dbc8aece3e1e46fde5bfc765180fdde2b64b173",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:12:51.237Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[1].description": {
+          "text": "推出SoftBank Vision Fund 1。",
+          "source_hash": "d4fed4f15ff2c5866c5e92eb1cabff39d6ea165e92f6e2972902ba4d1f0c83ce",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:12:51.237Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[2].label": {
+          "text": "Vision Funds官网",
+          "source_hash": "19dc31440873cf1412b0b06709dc73ac92bd27f3cb8350704ca1fa015e4862eb",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:12:51.237Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }
