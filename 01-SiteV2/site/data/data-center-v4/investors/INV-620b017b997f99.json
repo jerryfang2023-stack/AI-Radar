@@ -139,19 +139,129 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Armory Square Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资策略、组合融资规模和退出案例来自 Armory Square Ventures 官网自述，未披露统一统计时点或完整组合分母；不据此推导基金回报。Thoughtly 的 USD 5.5m 是融资总额，不是 Armory Square Ventures 单独出资额。团队和办公室信息按官网团队页当日公开内容记录。",
+      "summary": "Armory Square Ventures 是一家美国早期风险投资机构，官网称其主要领投美国新兴科技中心的 B2B SaaS 种子轮和 A 轮企业，并与创始人从首笔投资合作到品类成长。官网公开的组合数据包括超过 10 亿美元后续融资和多起退出；该机构在纽约州及 Indianapolis 等地列有办公室。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "种子轮与 A 轮，官网称通常担任领投方。",
+          "source_id": "armory_strategy"
+        },
+        {
+          "field": "sector_focus",
+          "label": "投资方向",
+          "value": "B2B SaaS。",
+          "source_id": "armory_strategy"
+        },
+        {
+          "field": "geography",
+          "label": "官网描述的投资地域",
+          "value": "美国新兴科技中心，特别是主要沿海科技中心以外的地区。",
+          "source_id": "armory_strategy"
+        },
+        {
+          "field": "founder_support",
+          "label": "创始人支持方式",
+          "value": "官网称其团队有公司建设经验，并支持企业从首笔投资成长为品类领导者。",
+          "source_id": "armory_strategy"
+        },
+        {
+          "field": "leadership",
+          "label": "官网列示的团队",
+          "value": [
+            "Somak Chattopadhyay — Managing Partner",
+            "Neenah Jain — Partner, CFO",
+            "Michael Kopelman — Venture Partner",
+            "Anthony Santaro — Vice President",
+            "Pia Sawhney — Founding Partner Emeritus",
+            "Prabhdeep Singh — Operating Partner"
+          ],
+          "source_id": "armory_team"
+        }
+      ],
       "milestones": [],
+      "experience_summary": "Armory Square Ventures 团队页列出 Somak Chattopadhyay 为管理合伙人、Neenah Jain 为合伙人兼 CFO，并有风险合伙人、运营合伙人和顾问团队。官网公开 Syracuse、Skaneateles、New York 与 Indianapolis 等办公室地址。",
       "track_record": [
         {
-          "description": "融资来源记录：Thoughtly · 种子轮 · 2026-04-22 · 本轮领投 · $5.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Armory Square Ventures 官网自述，其组合公司累计获得超过 USD 1bn 后续融资，并有多次退出案例（包括一家独角兽）；这是机构披露的组合指标，官网未在该页注明统计时点或口径。",
+          "source_id": "armory_record"
+        },
+        {
+          "description": "融资记录：Thoughtly · 种子轮 · 2026-04-22 · 领投；公开披露该轮融资总额为 USD 5.5m，未披露 Armory Square Ventures 单独出资额。此为本库收录案例，不代表完整投资组合。",
           "source_id": "FISRC-01d50cf4c52275e9"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Armory Square Ventures",
+          "url": "https://www.armorysv.com/",
+          "source_id": "armory_strategy"
+        },
+        {
+          "kind": "application",
+          "label": "创业项目提交入口",
+          "value": "Pitch us",
+          "url": "https://www.armorysv.com/pitch-us",
+          "source_id": "armory_team"
+        },
+        {
+          "kind": "address",
+          "label": "Syracuse office",
+          "value": "235 Harrison St., Syracuse, NY 13202",
+          "url": "https://www.armorysv.com/team",
+          "source_id": "armory_team"
+        },
+        {
+          "kind": "address",
+          "label": "Skaneateles office",
+          "value": "42 E. Genesee Street, Skaneateles, NY 13152",
+          "url": "https://www.armorysv.com/team",
+          "source_id": "armory_team"
+        },
+        {
+          "kind": "address",
+          "label": "New York office",
+          "value": "26 Broadway, New York, NY 10004",
+          "url": "https://www.armorysv.com/team",
+          "source_id": "armory_team"
+        },
+        {
+          "kind": "address",
+          "label": "Indianapolis office",
+          "value": "6151 Central Avenue, Indianapolis, IN 46220",
+          "url": "https://www.armorysv.com/team",
+          "source_id": "armory_team"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "armory_strategy",
+          "source_url": "https://www.armorysv.com/",
+          "source_title": "Armory Square Ventures",
+          "source_content_hash": "e276f6587d1b002972728ce1374940b443c85aa98c5ee9f12315f6cbe0049591",
+          "quote": "We lead Seed and Series A rounds for the most ambitious B2B SaaS founders building in America's emerging tech hubs.",
+          "quote_hash": "e632e314727d87a897b33b0182e9c766e35cbb30516abce275130afb15ab5ca0"
+        },
+        {
+          "source_id": "armory_record",
+          "source_url": "https://www.armorysv.com/companies",
+          "source_title": "Armory Square Ventures | Companies",
+          "source_content_hash": "f1a08d18f8789d63185c8911287067da3dca9808a575c13d54b5ee9793130354",
+          "quote": "Join our portfolio with $1B+ in follow-on funding and a number of exits, including a unicorn.",
+          "quote_hash": "28c8a622afc42ba6c12d16d32dbfb489efac14e88caed864d59729669fb38b4e"
+        },
+        {
+          "source_id": "armory_team",
+          "source_url": "https://www.armorysv.com/team",
+          "source_title": "Armory Square Ventures | Team",
+          "source_content_hash": "0cc6bb8545b0a4ea36966d95e7fdd047b1008fef1809a57aa00eab1147d72414",
+          "quote": "Somak Chattopadhyay Managing Partner",
+          "quote_hash": "42b3f9ae376bf9d1cbde80998814d61b7903d142da0b8c6268281af626a8a0d1"
+        },
         {
           "source_id": "FISRC-01d50cf4c52275e9",
           "source_url": "https://thoughtly.com/blog/thoughtly-raises-usd8m-to-build-omnichannel-agents-for-revenue-teams",
@@ -161,7 +271,7 @@
           "quote_hash": "bd4bffba46af04b5181ecb4a34874c3fa4ee6cada8617e7d01df39ba420b0bb7"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

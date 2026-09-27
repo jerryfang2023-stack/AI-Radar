@@ -139,19 +139,113 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Alstin Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资阶段、行业、地域与初始投资金额来自 Alstin Capital 官网，团队经历数字是机构官网自述的合并历史，未提供统计期间，不能视为单一基金回报或当前基金业绩。NeuralTrust 披露的 €17.2m 是整轮融资金额，不是 Alstin Capital 的单独出资额。",
+      "summary": "Alstin Capital 是一家专注欧洲 B2B 软件企业的风险投资机构，官网列出晚期种子轮和 A 轮阶段，初始投资通常为 200 万至 800 万欧元。其关注金融科技、保险科技、监管科技、网络安全和气候科技等领域。官网团队页列出 Carsten Maschmeyer、Dr. Andreas Schenk 与 Alexander Meyer-Scharenberg 等合伙人。",
+      "facts": [
+        {
+          "field": "sector_focus",
+          "label": "投资主题",
+          "value": "B2B 软件。",
+          "source_id": "alstin_strategy"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "晚期种子轮 / A 轮。",
+          "source_id": "alstin_strategy"
+        },
+        {
+          "field": "initial_investment",
+          "label": "官网披露的初始投资额",
+          "value": "EUR 2–8 million。",
+          "source_id": "alstin_strategy"
+        },
+        {
+          "field": "sector_focus",
+          "label": "官网列示领域",
+          "value": [
+            "金融科技",
+            "保险科技",
+            "监管科技",
+            "网络安全",
+            "气候科技及其他"
+          ],
+          "source_id": "alstin_strategy"
+        },
+        {
+          "field": "geography",
+          "label": "投资地域",
+          "value": "欧洲。",
+          "source_id": "alstin_strategy"
+        },
+        {
+          "field": "leadership",
+          "label": "官网当前团队",
+          "value": [
+            "Carsten Maschmeyer — Managing Partner",
+            "Dr. Andreas Schenk — Partner",
+            "Alexander Meyer-Scharenberg — Partner",
+            "Benjamin Kleinschnitz — Principal",
+            "Laura Keilhofer — Investment Manager",
+            "Nicolai Bastian — Senior Investment Manager"
+          ],
+          "source_id": "alstin_team"
+        }
+      ],
       "milestones": [],
+      "experience_summary": "Alstin 官网称团队累计交易履历超过 300 笔、后续融资超过 150 笔、退出 25 次，并具备 B2B 销售和 B2B 软件经验。该数字为团队合并历史，官网未在此处披露统计区间或基金回报口径。",
       "track_record": [
         {
-          "description": "融资来源记录：NeuralTrust · 种子轮 · 2026-06-17 · 本轮领投 · €17.2 million ($20 million)。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "官网自述：Alstin 团队合并历史包括超过 300 笔交易、超过 150 笔后续融资和 25 次退出；统计区间和各基金归属未注明，不等于单一基金回报。",
+          "source_id": "alstin_team"
+        },
+        {
+          "description": "融资记录：NeuralTrust · 种子轮 · 2026-06-17 · 领投；公开融资额为 €17.2 million（约 USD 20 million），未披露 Alstin Capital 单独出资额。此为本库收录案例，不代表完整投资组合。",
           "source_id": "FISRC-7a0d2741d3dddcef"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Alstin Capital",
+          "url": "https://alstin.capital/",
+          "source_id": "alstin_strategy"
+        },
+        {
+          "kind": "contact_form",
+          "label": "官网联系与项目提交页面",
+          "value": "Alstin Capital contact page",
+          "url": "https://alstin.capital/contact",
+          "source_id": "alstin_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "alstin_strategy",
+          "source_url": "https://alstin.capital/",
+          "source_title": "Alstin Capital - Alstin goes all-in.",
+          "source_content_hash": "41e7763256690394894619a7a07512a909945197dedde34543d87d548197bb44",
+          "quote": "B2B Software",
+          "quote_hash": "6c26897c00e92397ebc597d71a2ee62c441ed9cad537e9fefdf8097fcefffe83"
+        },
+        {
+          "source_id": "alstin_team",
+          "source_url": "https://alstin.capital/team",
+          "source_title": "Our Team – Alstin Capital",
+          "source_content_hash": "3aefd45f51032e97c51171b2a0feec534d42c35f62cbdd24829d3c86bd23f2c1",
+          "quote": "The Alstin team has a combined deal track record of >300 transactions, >150 follow-on financings and 25 exits.",
+          "quote_hash": "29fc970575aa24d8ba686c34262c320cc36e9305b913f5f74b7488a1d62ec5a9"
+        },
+        {
+          "source_id": "alstin_contact",
+          "source_url": "https://alstin.capital/contact",
+          "source_title": "Contact – Alstin Capital",
+          "source_content_hash": "3b298c7c4f0443542a73a617daada9dee63385bf29dcad384d724172b379fc30",
+          "quote": "Contact",
+          "quote_hash": "2b5c3d26721ae9c350cf3009318b626f0fc8a90b4a2ac0ca8099c05aa849282e"
+        },
         {
           "source_id": "FISRC-7a0d2741d3dddcef",
           "source_url": "https://www.eu-startups.com/2026/06/barcelona-based-neuraltrust-raises-e17-2-million-to-secure-and-govern-enterprise-ai-agents/",
@@ -161,7 +255,7 @@
           "quote_hash": "03382ccc1da206b412bc52ae73b589536674279bf9f3ccebc0a240532adb91d0"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }
