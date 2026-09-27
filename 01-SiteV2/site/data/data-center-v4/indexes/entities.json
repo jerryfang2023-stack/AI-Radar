@@ -131229,19 +131229,184 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Cipio Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
-        "track_record": [
+        "coverage_status": "researched",
+        "coverage_note": "官网将Cipio Partners描述为欧洲科技企业成长资本与少数股权收购投资管理机构。Fund VIII的€202 million是2022年基金承诺额，不是当前管理规模；Fund VII的退出数据为公司官网自述，未独立审计。FintechOS公告中的$28 million是股权与债务组合融资总额，未披露Cipio单独出资；Dawn Health的公告也未披露投资金额。Cipio官网页面列有媒体联络及慕尼黑、卢森堡办公室信息，未核实专门投资申请渠道。",
+        "summary": "Cipio Partners是一家成立于2003年的投资管理与顾问公司，专注欧洲成长阶段科技企业的成长资本和少数股权收购。官网介绍其目标企业年收入为€10–50 million，初始投资额为€5–15 million，并在慕尼黑和卢森堡设有办公室。公开披露的案例包括FintechOS、Dawn Health，以及Fund VII投资组合的Brightpearl退出。",
+        "facts": [
           {
-            "description": "融资来源记录：FintechOS · 债务融资 · 2026-09-21 · 本轮参投 · $28M。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-ebb4cfeb462f5780"
+            "field": "founded_year",
+            "label": "成立年份",
+            "value": "2003年。",
+            "source_id": "cipio_firm_profile_2022"
+          },
+          {
+            "field": "investment_strategy",
+            "label": "投资策略与阶段",
+            "value": "专注欧洲成长阶段科技企业，结合成长资本与少数股权收购；官网称目标企业年收入€10–50 million，初始投资€5–15 million。",
+            "source_id": "cipio_strategy_2022"
+          },
+          {
+            "field": "fund_viii_commitments",
+            "label": "Fund VIII募集承诺（2022年）",
+            "value": "Cipio Partners Fund VIII于2022年完成€202 million最终募集。该金额是该基金的承诺额，不代表公司当前管理规模。",
+            "source_id": "cipio_fund_viii_2022"
+          },
+          {
+            "field": "investment_examples",
+            "label": "Fund VIII早期投资案例",
+            "value": "Cipio在2022年公告称，该基金早期投资包括奥地利智能家居公司Nuki和慕尼黑的现实捕捉及数字孪生公司NavVis。",
+            "source_id": "cipio_early_portfolio_2022"
+          },
+          {
+            "field": "portfolio_exit",
+            "label": "Fund VII已披露退出案例",
+            "value": "公司称Fund VII投资组合曾将Brightpearl出售给Sage Group；该信息为管理人自述的基金案例。",
+            "source_id": "cipio_brightpearl_exit_2022"
           }
         ],
-        "contacts": [],
+        "milestones": [
+          {
+            "date": "2003",
+            "description": "Cipio Partners成立。",
+            "source_id": "cipio_firm_profile_2022"
+          },
+          {
+            "date": "2022-05-04",
+            "description": "Cipio Partners Fund VIII以€202 million承诺额完成最终募集。",
+            "source_id": "cipio_fund_viii_2022"
+          },
+          {
+            "date": "2026-02-10",
+            "description": "Cipio Partners公布对数字健康公司Dawn Health的成长投资。",
+            "source_id": "cipio_dawn_health_2026"
+          }
+        ],
+        "track_record": [
+          {
+            "description": "FintechOS于2026年披露获得$28 million股权与债务组合融资；公告将Cipio Partners列为现有股东之一，并另列Santander CIB高级债务融资。该$28 million是整体融资金额，不是Cipio单独出资额。",
+            "source_id": "FISRC-ebb4cfeb462f5780"
+          },
+          {
+            "description": "Dawn Health：Cipio Partners在2026年公告中披露对Dawn Health进行成长投资以支持下一阶段扩张；公告未披露Cipio的投资金额。",
+            "source_id": "cipio_dawn_health_2026"
+          },
+          {
+            "description": "Fund VII：公司公告称该基金的Brightpearl投资最终出售给Sage Group；这是官网列出的一个退出案例，不代表基金全部回报。",
+            "source_id": "cipio_brightpearl_exit_2022"
+          }
+        ],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "cipiopartners.com",
+            "url": "https://www.cipiopartners.com/",
+            "source_id": "cipio_firm_profile_2022"
+          },
+          {
+            "kind": "address",
+            "label": "卢森堡办公室地址（官网公告所列）",
+            "value": "6D, Route de Trèves, 2633 Senningerberg, Luxembourg",
+            "source_id": "cipio_luxembourg_contact"
+          },
+          {
+            "kind": "phone",
+            "label": "卢森堡办公室电话",
+            "value": "+352 26 20 10 54",
+            "source_id": "cipio_luxembourg_contact"
+          },
+          {
+            "kind": "address",
+            "label": "慕尼黑办公室地址（官网公告所列）",
+            "value": "Palais am Lenbachplatz, Ottostrasse 8, 80333 Munich, Germany",
+            "source_id": "cipio_munich_contact"
+          },
+          {
+            "kind": "phone",
+            "label": "慕尼黑办公室电话",
+            "value": "+49 89 55 06 96 0",
+            "source_id": "cipio_munich_contact"
+          },
+          {
+            "kind": "email",
+            "label": "媒体联络（不是投资申请渠道）",
+            "value": "media@cipiopartners.com",
+            "source_id": "cipio_media_contact"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "cipio_firm_profile_2022",
+            "source_url": "https://www.cipiopartners.com/news/2022-05-04-cipio-partners-holds-final-close-of-202-million-on-latest-fund",
+            "source_title": "Cipio Partners holds final close of €202 million on latest fund",
+            "source_content_hash": "03918ba292a798612e7977f2f36b316261f1d5df82c52281824ae9eff61c8768",
+            "quote": "Founded in 2003, Cipio Partners is a leading investment management and advisory firm for European growth capital & minority buyouts for technology companies.",
+            "quote_hash": "1cf60c9b7a6c9d4f4556dc6d6f42a7247402a13d3f788f14382e45aab8995416"
+          },
+          {
+            "source_id": "cipio_strategy_2022",
+            "source_url": "https://www.cipiopartners.com/news/2022-05-04-cipio-partners-holds-final-close-of-202-million-on-latest-fund",
+            "source_title": "Cipio Partners holds final close of €202 million on latest fund",
+            "source_content_hash": "03918ba292a798612e7977f2f36b316261f1d5df82c52281824ae9eff61c8768",
+            "quote": "targets European growth stage technology businesses with €10-50 million in revenue and makes initial investments ranging from €5-15 million.",
+            "quote_hash": "7a2f91ee2775f9f195f289dd2eff4c3c2ab80a010b604d8875b05956004bacdc"
+          },
+          {
+            "source_id": "cipio_fund_viii_2022",
+            "source_url": "https://www.cipiopartners.com/news/2022-05-04-cipio-partners-holds-final-close-of-202-million-on-latest-fund",
+            "source_title": "Cipio Partners holds final close of €202 million on latest fund",
+            "source_content_hash": "03918ba292a798612e7977f2f36b316261f1d5df82c52281824ae9eff61c8768",
+            "quote": "Cipio Partners, a leading investor in European growth stage technology firms, has closed its latest fund, Cipio Partners Fund VIII, with €202 million in commitments.",
+            "quote_hash": "318da8ebefc7df75e60678d492dd9a4c9ffdb004ee9db1d2050ab1a79a0477d5"
+          },
+          {
+            "source_id": "cipio_early_portfolio_2022",
+            "source_url": "https://www.cipiopartners.com/news/2022-05-04-cipio-partners-holds-final-close-of-202-million-on-latest-fund",
+            "source_title": "Cipio Partners holds final close of €202 million on latest fund",
+            "source_content_hash": "03918ba292a798612e7977f2f36b316261f1d5df82c52281824ae9eff61c8768",
+            "quote": "The new fund has already completed two investments in European growth companies: Nuki, the Austrian smart-home developer, and Navvis",
+            "quote_hash": "12b8c78ce5d7a40a5ee454a166a7b9826b6290743dfcf43f89dddcd6dd327daa"
+          },
+          {
+            "source_id": "cipio_brightpearl_exit_2022",
+            "source_url": "https://www.cipiopartners.com/news/2022-05-04-cipio-partners-holds-final-close-of-202-million-on-latest-fund",
+            "source_title": "Cipio Partners holds final close of €202 million on latest fund",
+            "source_content_hash": "03918ba292a798612e7977f2f36b316261f1d5df82c52281824ae9eff61c8768",
+            "quote": "CPF VII delivered substantial returns to its investors from multiple exits including the sale of Brightpearl to Sage Group",
+            "quote_hash": "85fbbaeb484d89c4f16cd5d8ed407299daedf446d4ffe59021d2ae9a6f2c1979"
+          },
+          {
+            "source_id": "cipio_dawn_health_2026",
+            "source_url": "https://www.cipiopartners.com/news/2026-02-10-cipio-partners-invests-in-dawn-health-to-fuel-the-next-phase-of-growth-for-ai-driven-commercial-and-clinical-companion-applications",
+            "source_title": "Cipio Partners invests in Dawn Health to fuel the next phase of growth for AI-driven commercial and clinical companion applications",
+            "source_content_hash": "c3069f466dd4a4386a62015786a1fe4d49206cf876b3f3e4ef24fc2ae495e784",
+            "quote": "Cipio Partners invests in Dawn Health",
+            "quote_hash": "7f8d9228d72fa30518f8b5589e5532c5b6939d21c9828a81f8e29d9d8fe335ba"
+          },
+          {
+            "source_id": "cipio_luxembourg_contact",
+            "source_url": "https://www.cipiopartners.com/news/2022-05-04-cipio-partners-holds-final-close-of-202-million-on-latest-fund",
+            "source_title": "Cipio Partners holds final close of €202 million on latest fund",
+            "source_content_hash": "03918ba292a798612e7977f2f36b316261f1d5df82c52281824ae9eff61c8768",
+            "quote": "+352 26 20 10 54\n6D, Route de Trèves\n2633 Senningerberg\nLuxembourg",
+            "quote_hash": "4dd8606f65b46cb6bd121f5825b7b0985496394db2143f23dc27abedc108808d"
+          },
+          {
+            "source_id": "cipio_munich_contact",
+            "source_url": "https://www.cipiopartners.com/news/2022-05-04-cipio-partners-holds-final-close-of-202-million-on-latest-fund",
+            "source_title": "Cipio Partners holds final close of €202 million on latest fund",
+            "source_content_hash": "03918ba292a798612e7977f2f36b316261f1d5df82c52281824ae9eff61c8768",
+            "quote": "+49 89 55 06 96 0\nPalais am Lenbachplatz\nOttostrasse 8\n80333 Munich\nGermany",
+            "quote_hash": "02c1caf2e95e9df1be4073cbfd7276289bcbdccf0c0cd2f8c47f87f317a4a49b"
+          },
+          {
+            "source_id": "cipio_media_contact",
+            "source_url": "https://www.cipiopartners.com/news/2022-05-04-cipio-partners-holds-final-close-of-202-million-on-latest-fund",
+            "source_title": "Cipio Partners holds final close of €202 million on latest fund",
+            "source_content_hash": "03918ba292a798612e7977f2f36b316261f1d5df82c52281824ae9eff61c8768",
+            "quote": "Sophie von Eberhardt: media@cipiopartners.com",
+            "quote_hash": "ae00015a0bce27cfb5433fce1da745605b4bc1467f3b91fa1e5fa024f4e995d6"
+          },
           {
             "source_id": "FISRC-ebb4cfeb462f5780",
             "source_url": "https://fintechos.com/in-the-news/fintechos-secures-28m-in-combined-equity-and-debt-financing/",
@@ -131251,7 +131416,7 @@
             "quote_hash": "dbe4affcdde93e87d3b166291082fcb242b3fe2b5d8d0e8c75bd211cb68787e6"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-28"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -134127,23 +134292,170 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Silversmith Capital Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "coverage_note": "成立年份、当前管理规模和业务方向来自Silversmith官网自述；超过$5 billion的管理规模来自2026年公告。$1.25 billion为Fund IV在2022年的LP承诺额，不能视为当前AUM；16笔部分或全部退出及$1.7 billion现金回款为公司截至2022年报告的累计数据，未独立审计。2026年Vantora公告披露该公司获得超过$100 million的成长投资，并列出加入董事会的Silversmith代表；该案例不构成完整投资组合。公开邮箱为一般联络渠道，未核实专门投资申请渠道。",
+        "summary": "Silversmith Capital Partners是一家成立于2015年、总部位于波士顿的成长股权投资机构，关注科技及医疗健康企业。其2026年公告自述管理规模超过$5 billion；2022年Fund IV以$1.25 billion LP承诺额完成募集，并将投资范围设定为SaaS与信息服务、医疗IT及服务企业。近期公开案例为对Vantora超过$100 million的成长投资。",
+        "facts": [
+          {
+            "field": "founded_year",
+            "label": "成立年份与总部",
+            "value": "2015年成立，总部位于美国波士顿。",
+            "source_id": "silversmith_profile_2026"
+          },
+          {
+            "field": "assets_under_management",
+            "label": "管理规模（2026年9月公告）",
+            "value": "Silversmith官网公告称公司管理规模超过$5 billion；该数值为公司自述。",
+            "source_id": "silversmith_profile_2026"
+          },
+          {
+            "field": "investment_strategy",
+            "label": "投资策略",
+            "value": "与科技及医疗健康领域成长型企业的创始人和企业家合作，支持企业长期增长。",
+            "source_id": "silversmith_profile_2026"
+          },
+          {
+            "field": "investment_range",
+            "label": "Fund IV投资范围（2022年）",
+            "value": "Fund IV披露的投资额范围为$20–125 million，面向SaaS与信息服务、医疗IT及服务领域，主要投资创始人主导、已盈利且此前未获机构投资的企业。",
+            "source_id": "silversmith_investment_range_2022"
+          },
+          {
+            "field": "fund_iv_commitments",
+            "label": "Fund IV募集承诺（2022年）",
+            "value": "2022年完成$1.25 billion的LP承诺额募集，管理团队另承诺投入$90 million；该数值是Fund IV的承诺，不等于当前管理规模。",
+            "source_id": "silversmith_fund_iv_2022"
+          },
+          {
+            "field": "realization_track_record_2022",
+            "label": "截至2022年披露的投资与退出",
+            "value": "公司报告已投资41家成长阶段企业，并完成16笔全部或部分退出，累计现金回款$1.7 billion；该数据为公司自述。",
+            "source_id": "silversmith_realizations_2022"
+          },
+          {
+            "field": "representative_portfolio",
+            "label": "代表性投资案例（公司列示）",
+            "value": "官网列举的代表性投资包括ActiveCampaign、Appfire、DistroKid、impact.com、Iodine Software、LifeStance Health和Webflow；该名单非完整投资组合。",
+            "source_id": "silversmith_fund_iv_2022"
+          },
+          {
+            "field": "vantora_board",
+            "label": "Vantora交易的董事会安排（2026年9月）",
+            "value": "投资公告称Todd MacLean、Danielle Waldman和Annie Cory将代表Silversmith加入Vantora董事会；这是单笔交易安排，不是机构完整管理团队名单。",
+            "source_id": "silversmith_vantora_board_2026"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2015",
+            "description": "Silversmith Capital Partners成立。",
+            "source_id": "silversmith_profile_2026"
+          },
+          {
+            "date": "2022-07-28",
+            "description": "Fund IV以$1.25 billion的LP承诺额完成募集，管理团队承诺额外投入$90 million。",
+            "source_id": "silversmith_fund_iv_2022"
+          },
+          {
+            "date": "2026-09-16",
+            "description": "Silversmith公告披露对Vantora进行超过$100 million的成长投资。",
+            "source_id": "silversmith_profile_2026"
+          }
+        ],
         "track_record": [
           {
-            "description": "融资来源记录：Vantora · 成长轮 · 2026-09-18 · 本轮领投 · $100 million。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "Vantora：媒体报道将一笔$100 million投资归于Silversmith Capital Partners；该报道提供一项公开交易线索，不代表完整投资组合。",
             "source_id": "FISRC-415291b734cbb8a6"
           },
           {
-            "description": "融资来源记录：Vantora · 成长轮 · 2026-09-18 · 本轮领投 · $100 million。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "Vantora：Silversmith官方公告称该公司获得超过$100 million成长投资，并披露三名Silversmith代表将加入Vantora董事会。",
             "source_id": "FISRC-03e0e6a10c8bd9e6"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "silversmith.com",
+            "url": "https://www.silversmith.com/",
+            "source_id": "silversmith_profile_2026"
+          },
+          {
+            "kind": "address",
+            "label": "总部地址（官网列示）",
+            "value": "116 Huntington Ave, 15th Floor, Boston, MA 02116, USA",
+            "source_id": "silversmith_contact_2026"
+          },
+          {
+            "kind": "phone",
+            "label": "总部电话",
+            "value": "+1 617-670-4300",
+            "source_id": "silversmith_contact_2026"
+          },
+          {
+            "kind": "email",
+            "label": "一般联络邮箱（非专属投资申请渠道）",
+            "value": "info@silversmithcapital.com",
+            "source_id": "silversmith_email_2026"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "silversmith_profile_2026",
+            "source_url": "https://www.silversmith.com/news/vantora-secures-more-than-100-million-from-silversmith-capital-partners",
+            "source_title": "Vantora Secures More Than $100 Million From Silversmith Capital Partners",
+            "source_content_hash": "6c4b6fb53a2affafa63fd45614329cb755ff9d090ced8fbb2d1cc8e1e27a9845",
+            "quote": "Founded in 2015, Silversmith Capital Partners is a Boston-based growth equity firm with over $5 billion in capital under management.",
+            "quote_hash": "ad05f634121396996995969baf17031950107216570528c5096aa1aa7c486f9d"
+          },
+          {
+            "source_id": "silversmith_vantora_board_2026",
+            "source_url": "https://www.silversmith.com/news/vantora-secures-more-than-100-million-from-silversmith-capital-partners",
+            "source_title": "Vantora Secures More Than $100 Million From Silversmith Capital Partners",
+            "source_content_hash": "6c4b6fb53a2affafa63fd45614329cb755ff9d090ced8fbb2d1cc8e1e27a9845",
+            "quote": "As part of the investment, Todd MacLean, Danielle Waldman and Annie Cory of Silversmith Capital Partners will join Vantora's Board of Directors.",
+            "quote_hash": "0f9ed0d9f5fc631652489331b75789c9ddb7ae64a577b032b75d26962f7f8a91"
+          },
+          {
+            "source_id": "silversmith_fund_iv_2022",
+            "source_url": "https://www.silversmith.com/news/silversmith-capital-partners-raises-1-25-billion-for-fourth-growth-equity-fund",
+            "source_title": "Silversmith Capital Partners Raises $1.25 Billion for Fourth Growth Equity Fund",
+            "source_content_hash": "48629c035d790738daf2bb389525c0116d560aa93e168f43925f0b72f6caf4d4",
+            "quote": "Launched in May 2022, Fund IV was significantly oversubscribed and closed at its target and hard cap of $1.25 billion.",
+            "quote_hash": "64e4e6a1c07c7cc22b69dc5a7bc505114b804e6d5d4c63092f12db5d8fdc98ca"
+          },
+          {
+            "source_id": "silversmith_investment_range_2022",
+            "source_url": "https://www.silversmith.com/news/silversmith-capital-partners-raises-1-25-billion-for-fourth-growth-equity-fund",
+            "source_title": "Silversmith Capital Partners Raises $1.25 Billion for Fourth Growth Equity Fund",
+            "source_content_hash": "48629c035d790738daf2bb389525c0116d560aa93e168f43925f0b72f6caf4d4",
+            "quote": "Fund IV will make minority and majority investments of $20 million to $125 million in SaaS & Information Services and Healthcare IT & Services companies",
+            "quote_hash": "92552c78015e99438ae03b5ea0fa4dd049546d591d52195c1608668ea7792c56"
+          },
+          {
+            "source_id": "silversmith_realizations_2022",
+            "source_url": "https://www.silversmith.com/news/silversmith-capital-partners-raises-1-25-billion-for-fourth-growth-equity-fund",
+            "source_title": "Silversmith Capital Partners Raises $1.25 Billion for Fourth Growth Equity Fund",
+            "source_content_hash": "48629c035d790738daf2bb389525c0116d560aa93e168f43925f0b72f6caf4d4",
+            "quote": "Since its founding, Silversmith has invested in 41 growth-stage companies, had 16 full or partial realizations representing $1.7 billion in cash proceeds",
+            "quote_hash": "7f135c8c185c23d2b602b66f053bd40fa3f874ea096c2ffc77cb64bc5dca19f5"
+          },
+          {
+            "source_id": "silversmith_contact_2026",
+            "source_url": "https://www.silversmith.com/news/vantora-secures-more-than-100-million-from-silversmith-capital-partners",
+            "source_title": "Vantora Secures More Than $100 Million From Silversmith Capital Partners",
+            "source_content_hash": "6c4b6fb53a2affafa63fd45614329cb755ff9d090ced8fbb2d1cc8e1e27a9845",
+            "quote": "116 Huntington Ave 15th Floor Boston, MA 02116 617-670-4300",
+            "quote_hash": "64c87dccd5a203f853817493c4d3b1a16bcd037d38c3523de7ccd9ea5199cb19"
+          },
+          {
+            "source_id": "silversmith_email_2026",
+            "source_url": "https://www.silversmith.com/legal",
+            "source_title": "Silversmith Capital Partners Legal and Privacy Information",
+            "source_content_hash": "2b0fc68074a1a1c56f19a9ad5c4e1a4c4e5034fdf1ace4306ad7b630f629d6b7",
+            "quote": "email us at info@silversmithcapital.com",
+            "quote_hash": "58b5717b8fcc53b20c7f288d58daaf4ca13033d0f642192b99ecc66cfbbbb25d"
+          },
           {
             "source_id": "FISRC-415291b734cbb8a6",
             "source_url": "https://techcrunch.com/2026/09/18/a-startup-that-builds-other-startups-raised-100m-and-is-all-in-on-physical-ai",
@@ -134161,7 +134473,7 @@
             "quote_hash": "e431380e268980496bfa89f9e9c33df3762fde5762668d9584bfed662e2c466e"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-28"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -275794,19 +276106,159 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Gapminder Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
-        "track_record": [
+        "coverage_status": "researched",
+        "coverage_note": "投资策略、基金规模和跟投率来自GapMinder官网自述；€130 million管理规模和85%跟投率未独立审计。2024年€80 million是Fund II目标规模，不能当作最终募集额。FintechOS各轮融资金额均为企业整体融资金额，未披露GapMinder单独出资额。融资库中的2021年报道仅支持历史参投线索，不证明GapMinder为后续轮次领投或仍持有股份。官网公布的Amsterdam地址和公共邮箱是一般联系信息，未确认专门投资申请渠道。",
+        "summary": "GapMinder Ventures是一家投资罗马尼亚及东南欧科技公司的风险投资管理机构，官网重点关注B2B AI、深科技和SaaS，并覆盖金融科技、网络安全、企业自动化和数据分析。公司披露Fund I规模为€50 million，2024年推出目标规模€80 million的Fund II；官网当前自述管理基金规模€130 million，且85%的被投公司曾完成后续融资。其公开投资案例包括FintechOS、Druid.AI、TypingDNA和Veridion。",
+        "facts": [
           {
-            "description": "融资来源记录：FintechOS · 债务融资 · 2026-09-21 · 历史轮次参投 · $28M。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-39755042b7f329d6"
+            "field": "investment_stage",
+            "label": "投资阶段与首轮投资",
+            "value": "官网称其主导Seed轮€0.5–5 million，并可继续跟投至€12 million或以上。",
+            "source_id": "gapminder_strategy_2026"
+          },
+          {
+            "field": "sector_focus",
+            "label": "行业方向",
+            "value": "重点关注B2B领域的AI、深科技和SaaS；Fund II进一步覆盖金融科技、网络安全、企业自动化及数据分析。",
+            "source_id": "gapminder_strategy_2026"
+          },
+          {
+            "field": "target_geography",
+            "label": "主要投资区域",
+            "value": "Fund II计划将大部分资金投入罗马尼亚、摩尔多瓦、塞尔维亚、克罗地亚、斯洛文尼亚和保加利亚的初创企业。",
+            "source_id": "gapminder_fund_ii_2024"
+          },
+          {
+            "field": "funds_under_management",
+            "label": "管理基金规模（官网自述，截至2026年9月）",
+            "value": "官网列示€130 million funds under management；该数值为管理人自述。",
+            "source_id": "gapminder_metrics_2026"
+          },
+          {
+            "field": "fund_i",
+            "label": "Fund I",
+            "value": "€50 million基金，官网资料称于2018年设立；投资组合包括FintechOS、Druid.AI、TypingDNA、Veridion、Siena.Cx、Cyscale和Deepstash等。",
+            "source_id": "gapminder_portfolio_2024"
+          },
+          {
+            "field": "fund_ii",
+            "label": "Fund II（2024年目标）",
+            "value": "Fund II于2024年开始运营，目标规模€80 million；该数字为目标规模，而非最终募集额。",
+            "source_id": "gapminder_fund_ii_2024"
+          },
+          {
+            "field": "follow_on_rate",
+            "label": "后续融资比例（官网自述）",
+            "value": "官网称85%的被投公司完成过后续融资；统计口径及样本未在该指标旁单独说明。",
+            "source_id": "gapminder_metrics_2026"
+          },
+          {
+            "field": "fund_ii_partners_2024",
+            "label": "Fund II管理合伙人（2024年公告）",
+            "value": "公告列出的Fund II管理合伙人为Dan Mihăescu、Sergiu Roșca、Cosmin Ochișor和Alexandru Ruff。该名单按2024年公告日期呈现，不代表当前职务状态。",
+            "source_id": "gapminder_fund_ii_2024"
           }
         ],
-        "contacts": [],
+        "milestones": [
+          {
+            "date": "2018",
+            "description": "GapMinder Fund I成立，规模€50 million。",
+            "source_id": "gapminder_portfolio_2024"
+          },
+          {
+            "date": "2024-02-22",
+            "description": "GapMinder Fund II首次关闭后开始运营，公告目标规模€80 million。",
+            "source_id": "gapminder_fund_ii_2024"
+          }
+        ],
+        "track_record": [
+          {
+            "description": "FintechOS：2021年行业报道将GapMinder Ventures列为既有投资人之一；此处仅记录该历史报道，不将其解释为后续轮次领投或当前持股。",
+            "source_id": "FISRC-39755042b7f329d6"
+          },
+          {
+            "description": "FintechOS Series B+（2024）：GapMinder的官方投资组合公告称，该公司完成$60 million融资，Molten Ventures、Cipio Partners和BlackRock领投，GapMinder与EarlyBird及OTB列为既有投资人；未披露GapMinder单独出资额。",
+            "source_id": "gapminder_fintechos_2024"
+          }
+        ],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "gapminder.vc",
+            "url": "https://gapminder.vc/",
+            "source_id": "gapminder_strategy_2026"
+          },
+          {
+            "kind": "email",
+            "label": "公共联系邮箱（非专属BP渠道）",
+            "value": "contact@gapminder.vc",
+            "source_id": "gapminder_email_2026"
+          },
+          {
+            "kind": "address",
+            "label": "官网列示联系地址",
+            "value": "De Lairessestraat 145A, Amsterdam 1075 HJ, Netherlands",
+            "source_id": "gapminder_contact_2026"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "gapminder_strategy_2026",
+            "source_url": "https://gapminder.vc/",
+            "source_title": "Home - Gap Minder",
+            "source_content_hash": "16be67bc6b5b610bc8ade4b49d6cee2242f2059c2190413659493832300a7fe3",
+            "quote": "We invest in what we know and love: AI / Deeptech and SaaS in B2B space.",
+            "quote_hash": "f6c39bc71f4ed5445269ae4e967833b89fa5b1b6db1c64b00f9605855cb0b58c"
+          },
+          {
+            "source_id": "gapminder_metrics_2026",
+            "source_url": "https://gapminder.vc/",
+            "source_title": "Home - Gap Minder",
+            "source_content_hash": "16be67bc6b5b610bc8ade4b49d6cee2242f2059c2190413659493832300a7fe3",
+            "quote": "€130m Funds under management; 85% Portfolio companies raised follow-on rounds.",
+            "quote_hash": "79fe1454a96606432b8b2d1a8f11de23127a5656199ae29a7fb4b88312760c46"
+          },
+          {
+            "source_id": "gapminder_contact_2026",
+            "source_url": "https://gapminder.vc/",
+            "source_title": "Home - Gap Minder",
+            "source_content_hash": "16be67bc6b5b610bc8ade4b49d6cee2242f2059c2190413659493832300a7fe3",
+            "quote": "De Lairessestraat 145A, Amsterdam 1075 HJ, Netherlands",
+            "quote_hash": "0fb0b1228b72571e035142f0bbccf76e7b144671908d9e216ebbee55a3087347"
+          },
+          {
+            "source_id": "gapminder_email_2026",
+            "source_url": "https://gapminder.vc/",
+            "source_title": "Home - Gap Minder",
+            "source_content_hash": "16be67bc6b5b610bc8ade4b49d6cee2242f2059c2190413659493832300a7fe3",
+            "quote": "contact@gapminder.vc",
+            "quote_hash": "342bdb566b00dbc32f4d7f25719d7d808ca2c8183aee4de3416ae37739b1c7bb"
+          },
+          {
+            "source_id": "gapminder_fund_ii_2024",
+            "source_url": "https://gapminder.vc/gapminder-unveils-e80m-target-venture-capital-fund-gapminder-fund-ii-the-fund-is-operational-and-announcing-its-first-investment-imminently/",
+            "source_title": "GapMinder unveils €80m target venture capital fund, GapMinder Fund II",
+            "source_content_hash": "8977fe0aae77ae60e391c22e7ae0b6a989683705b33a68ff7485e96027902e44",
+            "quote": "GapMinder Fund II, an investment vehicle with a target of €80 million, representing the largest VC with primary focus on the Romanian tech start-up market.",
+            "quote_hash": "18347d14f3af1cbe1d8cadc2cfc3e906bdefc3851fbef2d38a0943dd34352402"
+          },
+          {
+            "source_id": "gapminder_portfolio_2024",
+            "source_url": "https://gapminder.vc/gapminder-unveils-e80m-target-venture-capital-fund-gapminder-fund-ii-the-fund-is-operational-and-announcing-its-first-investment-imminently/",
+            "source_title": "GapMinder unveils €80m target venture capital fund, GapMinder Fund II",
+            "source_content_hash": "8977fe0aae77ae60e391c22e7ae0b6a989683705b33a68ff7485e96027902e44",
+            "quote": "Companies financed by GapMinder Fund I include Druid.AI, FintechOS, TypingDNA, Veridion, Siena.Cx, Cyscale, Deepstash",
+            "quote_hash": "ab16ba565614c6f1eb1649a1b567649f6b16edda5f53356b86eda9c0394c20e2"
+          },
+          {
+            "source_id": "gapminder_fintechos_2024",
+            "source_url": "https://gapminder.vc/fintechos-secures-60-million-in-series-b-to-simplify-core-systems-modernization-the-latest-funding-round-enables-fintechos-to-accelerate-global-expansion-making-core-modernization-more-accessible/",
+            "source_title": "FintechOS secures $60 million in Series B+ to simplify core systems modernization",
+            "source_content_hash": "e842b83799eb5fa885086c30e4a63ef3e5613efe844281136ae132d9d528a4c4",
+            "quote": "This round was led by Molten Ventures, Cipio Partners, and BlackRock, alongside existing investors EarlyBird VC, OTB VC, and Gapminder VC.",
+            "quote_hash": "19ccb5a204e9defb98479cf7785829bdc1c7b30b331f0f2e09f64104d7bcbb2e"
+          },
           {
             "source_id": "FISRC-39755042b7f329d6",
             "source_url": "https://fintech.global/2021/04/26/the-34-fintech-rounds-from-the-last-week-you-cant-afford-to-miss/",
@@ -275816,7 +276268,7 @@
             "quote_hash": "2ec5063fe68b5e7db534d2c70019f6756a6fac8bcefc74abbb6b119d713ef81d"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-28"
       },
       "activity_count": 1,
       "portfolio_companies": [],
