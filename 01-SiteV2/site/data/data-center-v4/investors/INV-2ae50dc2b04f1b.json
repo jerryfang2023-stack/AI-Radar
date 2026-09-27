@@ -130,21 +130,68 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "复琢创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-05；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "复琢创投在本库融资披露中以杭州复琢创业投资有限公司相关投资方名称出现。公开法律文件记录杭实产投于2023年受让复琢创投100%股权；投资资料将其关注方向描述为拥有自主知识产权的科技型企业及文化创意、传媒等领域。",
+      "coverage_note": "股权收购记录来自公开法律文件；本库融资披露把复琢列为极佳视界融资跟投方，但相关报道同时将该笔跟投描述为A2轮，不能仅凭Pre-B报道标题推定为该轮新增出资。公开材料未披露复琢单笔投资金额、最新基金规模或直达项目的联系人。",
+      "facts": [
+        {
+          "field": "legal_entity",
+          "label": "对应法律主体",
+          "value": "杭州复琢创业投资有限公司。",
+          "source_id": "fuzhuo_pedaily_profile_2026"
+        },
+        {
+          "field": "ownership",
+          "label": "公开股权变更记录",
+          "value": "公开法律文件记载杭实产投于2023年受让杭州复琢创业投资有限公司100%股权。",
+          "source_id": "fuzhuo_hangshi_legal_2026"
+        },
+        {
+          "field": "registration",
+          "label": "私募管理人登记",
+          "value": "公开法律文件记载杭州复琢创业投资有限公司于2017年8月14日在中国证券投资基金业协会完成基金管理人登记。",
+          "source_id": "fuzhuo_hangshi_legal_2026"
+        },
+        {
+          "field": "investment_focus",
+          "label": "公开资料所述投资方向",
+          "value": [
+            "具有自主知识产权的科技型高新技术企业",
+            "细分行业龙头",
+            "文化创意与传媒"
+          ],
+          "source_id": "fuzhuo_pedaily_profile_2026"
+        },
+        {
+          "field": "fund_structure",
+          "label": "公开资料所述基金布局",
+          "value": "投资机构资料提及其设立杭州复承母基金及杭州复林子基金；所引资料未提供经审计的最新规模与实际投出金额。",
+          "source_id": "fuzhuo_pedaily_profile_2026"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：极佳视界 · Pre-B轮 · 2026-03-05 · A2轮跟投方 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资报道列复琢创投参与极佳视界融资，并称其为A2轮跟投方；该报道的金额属于公司融资轮口径，复琢单笔出资额及在后续Pre-B中的准确参与方式未披露。",
           "source_id": "FISRC-fdfe58e2e68c7e9e"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "fuzhuo_hangshi_legal_2026",
+          "source_url": "https://www.bse.cn/disclosure/2026/2026-08-04/1785845780_344707.pdf",
+          "source_title": "公开法律文件：杭实产投受让复琢创投股权",
+          "source_content_hash": "76b88d6f26c2e6be2e9f979c5fb725323a622db0d844cc14156cac203e5c4e61",
+          "quote": "2023年6月28日，复琢创投召开股东会，同意股权转让事项，由杭实产投受让杭州天捷投资管理有限公司持有的复琢创投100%的股份。公开法律文件亦记载复琢创投于2017年8月14日在基金业协会完成管理人登记。",
+          "quote_hash": "cc82a0ae1c0259d05626a9adcf059a64c526c608eb5bbcbc5c045ec508a48d70"
+        },
+        {
+          "source_id": "fuzhuo_pedaily_profile_2026",
+          "source_url": "https://m.pedaily.cn/vc/vc/106624.html",
+          "source_title": "复琢投资｜投资界机构资料",
+          "source_content_hash": "aea0ab97ae1dd81c16819976dfbdadf22b69f307b202a9577918410999bde492",
+          "quote": "复琢投资立足杭州放眼全国，积极挖掘具有成长性的优质企业，关注细分行业龙头，重点投资具有自主知识产权的科技型高新技术企业、文化创意和传媒类企业。",
+          "quote_hash": "669e28b5953451ec5bb0cfaacba11049f6f321b22e430772a7376d25a1c9b309"
+        },
         {
           "source_id": "FISRC-fdfe58e2e68c7e9e",
           "source_url": "https://news.pedaily.cn/202603/561389.shtml",
@@ -154,7 +201,11 @@
           "quote_hash": "53c9480b4646fcc1fd65da934701618dc003988b0ef3135b3c5adca43f6da522"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-27",
+      "milestones": []
     }
   }
 }
