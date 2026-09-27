@@ -139,14 +139,50 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "六禾创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "六禾创投公开登记资料对应上海六禾创业投资有限公司。上市公司招股文件披露，该公司成立于2008年，注册资本约1588万元，并于2014年登记为私募基金管理人（编号P1000859）。融资报道将六禾创投列为量感智能天使轮跟投方；该记录没有披露六禾创投的单笔出资额。",
+      "coverage_note": "登记信息来自2020年上市公司招股文件，注册资本及注册地址均为文件披露时点数据，不代表当前管理规模或办公地址。融资披露金额指公司整轮融资规模，不是六禾创投的出资额。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "公开披露的法律主体",
+          "value": "上海六禾创业投资有限公司。",
+          "source_id": "liuhe_cninfo"
+        },
+        {
+          "field": "established",
+          "label": "成立时间",
+          "value": "2008年5月21日（招股文件披露）。",
+          "source_id": "liuhe_cninfo"
+        },
+        {
+          "field": "registered_capital",
+          "label": "注册资本",
+          "value": "人民币1588.2353万元（招股文件披露）。",
+          "source_id": "liuhe_cninfo"
+        },
+        {
+          "field": "manager_registration",
+          "label": "私募基金管理人登记编号",
+          "value": "P1000859；招股文件记载登记时间为2014年4月。",
+          "source_id": "liuhe_cninfo"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2008-05-21",
+          "description": "上海六禾创业投资有限公司成立。",
+          "source_id": "liuhe_cninfo"
+        },
+        {
+          "date": "2014-04",
+          "description": "上市公司文件记载其完成私募基金管理人登记，编号P1000859。",
+          "source_id": "liuhe_cninfo"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：量感智能 · 天使轮 · 2026-07-08 · 本轮参投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资披露记录：2026-07，六禾创投跟投量感智能天使轮；报道披露融资为数千万元，但未披露六禾创投的单笔出资额。",
           "source_id": "FISRC-7e1722986b555854"
         }
       ],
@@ -159,9 +195,17 @@
           "source_content_hash": "a20ef7889748de4f",
           "quote": "由孚腾资本（上海国投旗下）领投，六禾创投跟投。",
           "quote_hash": "96cc815d6716bc8936291316815e79de8814c1a05c0da9869bd610d1cdfa659e"
+        },
+        {
+          "source_id": "liuhe_cninfo",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2020-03-06/1207348459.PDF",
+          "source_title": "上市公司招股文件：上海六禾创业投资有限公司基本情况",
+          "source_content_hash": "66148a5dcde69fd0fb7ec368f7bc3ea2a6909e5ac2deeff9152a9abd6c5768c5",
+          "quote": "私募基金管理人登记编号：P1000859",
+          "quote_hash": "93dcb207fbb3d1def32dafe131eb2ec27190cc4a6d8f95832ee7dff502159e4a"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

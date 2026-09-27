@@ -131,18 +131,78 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "九颂山河基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "九颂山河基金对应的公开管理人资料显示，上海九颂山河股权投资基金管理有限公司成立于2016年，注册资本1500万元，私募基金管理人登记编号为P1063278。上市公司公告列示其关注医疗健康、智能制造、网络科技、新材料及碳中和等领域，并披露熊文辉、管金生、王翔为主要管理人员。",
+      "coverage_note": "管理人信息依据上市公司2021年基金认购公告，属于该公告披露时点；当前人员、办公地址和管理规模未另行核实。昆仑元AI融资报道发布于2025-12-29，而数据库记录日期为2026-06-08，金额与报道标题亦不一致，因此不将该日期或轮次金额视为已核实的基金出资额。",
+      "facts": [
+        {
+          "field": "manager_name",
+          "label": "公开披露的基金管理人",
+          "value": "上海九颂山河股权投资基金管理有限公司。",
+          "source_id": "jiusong_manager_filing"
+        },
+        {
+          "field": "established",
+          "label": "管理人成立时间",
+          "value": "2016年2月4日。",
+          "source_id": "jiusong_manager_filing"
+        },
+        {
+          "field": "registered_capital",
+          "label": "管理人注册资本",
+          "value": "人民币1500万元（上市公司公告披露时点）。",
+          "source_id": "jiusong_manager_filing"
+        },
+        {
+          "field": "manager_registration",
+          "label": "私募基金管理人登记编号",
+          "value": "P1063278。",
+          "source_id": "jiusong_manager_filing"
+        },
+        {
+          "field": "investment_sectors",
+          "label": "公告列示的重点领域",
+          "value": [
+            "医疗健康",
+            "智能制造",
+            "网络科技",
+            "化工新材料",
+            "碳中和"
+          ],
+          "source_id": "jiusong_manager_filing"
+        },
+        {
+          "field": "key_personnel",
+          "label": "上市公司公告列示的主要管理人员",
+          "value": [
+            "熊文辉",
+            "管金生",
+            "王翔"
+          ],
+          "source_id": "jiusong_manager_filing"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2016-02-04",
+          "description": "上海九颂山河股权投资基金管理有限公司成立。",
+          "source_id": "jiusong_manager_filing"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：昆仑元AI · 战略融资 · 2026-06-08 · 天使轮参投 · 5000万元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "媒体融资披露将九颂山河基金列为昆仑元AI天使轮参投方；该报道未披露该基金的单笔出资额，原始报道日期与数据库记录日期不一致。",
           "source_id": "FISRC-6ce5cbd8a0a8ae8b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "address",
+          "label": "上市公司公告披露的管理人注册地址（2021年公告口径）",
+          "value": "上海市黄浦区思南路113号1幢102室",
+          "source_id": "jiusong_manager_filing"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-6ce5cbd8a0a8ae8b",
@@ -151,9 +211,17 @@
           "source_content_hash": "d66fab44410e91df",
           "quote": "本轮融资由谊安医疗、中国中车，以及九颂山河基金等各方参与。",
           "quote_hash": "e6023b90fbeea193fe01e750ec2da8463226290de8488aa01988b87a4293d23a"
+        },
+        {
+          "source_id": "jiusong_manager_filing",
+          "source_url": "https://qxb-pdf-osscache.qixin.com/AnBaseinfo/cb2d36cca3ee79daae7f0e54f7a85764.pdf",
+          "source_title": "天创时尚关于全资子公司认购私募股权基金份额的公告",
+          "source_content_hash": "8a22295ab9427c6bf80cec6908bda177874a9f7e98de492b961da7439593fb88",
+          "quote": "基金管理人登记编号：P1063278",
+          "quote_hash": "5be21a25c4b4e26a012de2fd3409cd58f5f310a5481780bc65fc7387e548fcf7"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

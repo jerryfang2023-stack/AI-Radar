@@ -139,18 +139,82 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "赛意产业基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "赛意产业基金由上市公司广州赛意信息科技股份有限公司发起，官网将其描述为面向大中型企业管理软件和工业软件的早期投资平台。赛意信息公开介绍，基金重点关注企业级SaaS、工业互联网、智能制造、工业大数据及相关数字化领域。官网报道其曾领投强思数科A轮；融资数据库另记录其参与奕行智能新一轮融资。",
+      "coverage_note": "基金投资方向与历史案例来自赛意信息官网；赛意信息总部电话及地址是母公司联系方式，不是基金专属投资申请渠道。每笔融资总额不代表赛意产业基金的单笔出资额或整体回报。",
+      "facts": [
+        {
+          "field": "sponsor",
+          "label": "发起方",
+          "value": "广州赛意信息科技股份有限公司（深交所：300687）。",
+          "source_id": "saiyi_fund_overview"
+        },
+        {
+          "field": "focus",
+          "label": "公开投资方向",
+          "value": [
+            "企业级SaaS",
+            "工业互联网",
+            "智能制造",
+            "传感网络",
+            "工业大数据",
+            "人工智能",
+            "商业智能",
+            "供应链协同"
+          ],
+          "source_id": "saiyi_fund_overview"
+        },
+        {
+          "field": "strategy",
+          "label": "投资策略",
+          "value": "围绕企业信息化业务开展产业投资，并以产业资源和数字化经验支持被投企业。",
+          "source_id": "saiyi_fund_overview"
+        },
+        {
+          "field": "parent_profile",
+          "label": "母公司业务背景",
+          "value": "赛意信息官网称其提供企业数字化、智能制造与工业互联网解决方案；该信息描述母公司业务，不代表基金业绩。",
+          "source_id": "saiyi_parent_contact"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2018",
+          "description": "赛意信息官网回顾其赛意产业投资基金推出成立。",
+          "source_id": "saiyi_fund_overview"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：奕行智能 · 轮次未披露 · 2026-09-18 · 本轮参投 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "历史案例：赛意信息官网2022年报道，赛意产业基金领投强思数科数千万元人民币A轮融资。该报道未披露基金单笔出资额。",
+          "source_id": "saiyi_qiangsi_case"
+        },
+        {
+          "description": "融资数据库记录：2026-09-18参与奕行智能新一轮20亿元融资；20亿元为该轮披露总额，基金单笔出资额未披露。",
           "source_id": "FISRC-ed0092859381f876"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "发起方赛意信息官网（非基金专属网站）",
+          "value": "广州赛意信息科技股份有限公司",
+          "source_id": "saiyi_parent_contact",
+          "url": "https://www.chinasie.com/"
+        },
+        {
+          "kind": "phone",
+          "label": "发起方赛意信息人工服务热线（母公司总机，非基金专线）",
+          "value": "020-8569 9984",
+          "source_id": "saiyi_parent_contact"
+        },
+        {
+          "kind": "address",
+          "label": "发起方赛意信息全球总部（母公司地址）",
+          "value": "广州市天河区珠江西路17号广晟国际大厦45楼",
+          "source_id": "saiyi_parent_contact"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-ed0092859381f876",
@@ -159,9 +223,33 @@
           "source_content_hash": "299a9be6f63ac708",
           "quote": "汇聚了 华泰创新、钟鼎资本、中芯聚源、九安医疗、仁爱资本、通富微电子、赛意产业基金、和利资本、芯鑫租赁、恒旭资本、尚颀资本、建广湛卢、容亿资本 等超20家知名投资机构",
           "quote_hash": "b0ef77952d03ea1c5566ead5cfe16d66884042d81d7ffc1aad3f6f8c428adef1"
+        },
+        {
+          "source_id": "saiyi_fund_overview",
+          "source_url": "https://www.chinasie.com/aboutus/1232.html",
+          "source_title": "广州开发区“创享汇”——赛意产业基金专场活动成功举办",
+          "source_content_hash": "20304dbd867263c52daa9b3c53ad0410cd43303d6c7d43954c0671b1ee76dea4",
+          "quote": "赛意产业投资基金是由赛意信息于2018年推出成立",
+          "quote_hash": "af73092e37ed08003fd121fa89e5177564cb3983fd94ef19a692de28ad1f496b"
+        },
+        {
+          "source_id": "saiyi_qiangsi_case",
+          "source_url": "https://www.chinasie.com/aboutus/1049.html",
+          "source_title": "赛意Portfolio：强思数科完成数千万元A轮融资",
+          "source_content_hash": "241bcff981328f3934a412f376991641cf53789b280134f1dd1294f359a7f5cd",
+          "quote": "赛意产业基金由赛意信息发起成立，专注于大中型企业级软件的早期投资",
+          "quote_hash": "30ce64aeb91a5a69f27aecea996a2097910e8e6b6b3547990c1ccfa54e9b2ce8"
+        },
+        {
+          "source_id": "saiyi_parent_contact",
+          "source_url": "https://www.chinasie.com/",
+          "source_title": "赛意信息官方网站",
+          "source_content_hash": "cf7289e9bb6c9b1608e7eacdbfc8d5282bf8954804167e2f46a5038bfd51f5d2",
+          "quote": "人工服务热线：020-8569 9984",
+          "quote_hash": "e13f5203f849bd12fa39f259622f979d3ef3cbf70dd1697b90e99994a2be8b7b"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }
