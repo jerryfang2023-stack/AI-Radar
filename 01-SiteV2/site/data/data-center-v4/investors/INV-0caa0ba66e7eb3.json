@@ -137,21 +137,82 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "策源基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "融资披露将策源基金称为上海科创集团旗下基金。上海科创集团公开披露的投资方向为投早、投小、投长期、投硬科技；截至2026年2月，集团披露管理规模1080亿元。该规模和集团业绩属于母集团，不代表策源基金单只基金的规模、出资额或回报。",
+      "facts": [
+        {
+          "field": "group_relationship",
+          "label": "公开披露的集团关系",
+          "value": "融资来源称策源基金为上海科创集团旗下基金；尚未从公开材料核到该笔投资对应的具体基金载体。",
+          "source_id": "FISRC-e666934339b27e85"
+        },
+        {
+          "field": "parent_investment_focus",
+          "label": "母集团公开投资方向",
+          "value": "投早、投小、投长期、投硬科技。",
+          "source_id": "stvc_strategy_2026"
+        },
+        {
+          "field": "parent_group_scale",
+          "label": "母集团披露规模（截至2026年2月）",
+          "value": "上海科创集团披露总资产950亿元、管理规模1080亿元；该数据为集团口径。",
+          "source_id": "stvc_overview_2026"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：新智具身 · 天使轮 · 2026-05-27 · 本轮参投 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资披露显示策源基金参与新智具身天使轮；近亿元为该轮融资总额，披露未给出策源基金的单独出资金额。",
           "source_id": "FISRC-e666934339b27e85"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "母集团官网（非基金专属）",
+          "value": "上海科技创业投资（集团）有限公司",
+          "url": "https://www.shstvc.com.cn/",
+          "source_id": "stvc_contact_2026"
+        },
+        {
+          "kind": "phone",
+          "label": "母集团公开总机（非基金专线）",
+          "value": "021-22302800",
+          "url": "https://www.shstvc.com.cn/",
+          "source_id": "stvc_contact_2026"
+        },
+        {
+          "kind": "email",
+          "label": "母集团公开邮箱（非基金专属）",
+          "value": "info@shstvc.com.cn",
+          "url": "https://www.shstvc.com.cn/",
+          "source_id": "stvc_contact_2026"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "stvc_overview_2026",
+          "source_url": "https://www.shstvc.com.cn/",
+          "source_title": "上海科技创业投资（集团）有限公司｜官方主页",
+          "source_content_hash": "0334a21a049338a3368752d7ca7350b5dabed19ee348fd8bfa44cbe9b2264439",
+          "quote": "截至2026年2月，上海科创集团总资产950亿元，管理规模1080亿元，历史累计培育上市公司超过200家，其中科创板上市105家。",
+          "quote_hash": "0334a21a049338a3368752d7ca7350b5dabed19ee348fd8bfa44cbe9b2264439"
+        },
+        {
+          "source_id": "stvc_strategy_2026",
+          "source_url": "https://www.shstvc.com.cn/",
+          "source_title": "上海科技创业投资（集团）有限公司｜官方主页",
+          "source_content_hash": "165a657b03e9fa4e6e2a951f4f7ce88a08b84eb3dfe543401fb64fb3fb1e0921",
+          "quote": "秉持“投早投小投长期投硬科技”核心理念。",
+          "quote_hash": "165a657b03e9fa4e6e2a951f4f7ce88a08b84eb3dfe543401fb64fb3fb1e0921"
+        },
+        {
+          "source_id": "stvc_contact_2026",
+          "source_url": "https://www.shstvc.com.cn/",
+          "source_title": "上海科技创业投资（集团）有限公司｜官方主页",
+          "source_content_hash": "42091d9b6ac2137648961e6a34cbb5a39dcd0abe1573888619e17ae35791e7e1",
+          "quote": "地址：上海市静安区铜仁路269号；电话：021-22302800；邮箱：info@shstvc.com.cn。",
+          "quote_hash": "42091d9b6ac2137648961e6a34cbb5a39dcd0abe1573888619e17ae35791e7e1"
+        },
         {
           "source_id": "FISRC-e666934339b27e85",
           "source_url": "https://news.pedaily.cn/202605/564455.shtml",
@@ -161,7 +222,11 @@
           "quote_hash": "fd32646d691c32c4b456ffe2d688c77f78f12fabd156fb996c5137eabc1d0ce3"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "coverage_note": "集团官网的资产、管理规模和上市案例为上海科创集团整体口径，不能视作策源基金单只基金的数据。当前可核实的联系方式属于母集团。融资来源支持策源基金参与新智具身天使轮，但未披露该基金的具体出资额或对应基金载体。",
+      "last_verified_at": "2026-09-27",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched"
     }
   }
 }

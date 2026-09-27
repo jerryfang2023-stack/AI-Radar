@@ -137,21 +137,88 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "上海知识产权基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "融资库中的“上海知识产权基金”与上市公司公告披露的上海知识产权基金相对应；其由上海科创集团全资子公司持股30%并与社会资本共同设立。融资披露还列明其参与智推时代天使轮。母集团及管理体系数据不代表该单只基金规模，整轮融资总额不等于本基金出资额。",
+      "facts": [
+        {
+          "field": "official_identity",
+          "label": "公开披露名称",
+          "value": "上海知识产权基金；融资记录使用简称“上海科创旗下知识产权基金”。",
+          "source_id": "sh_ip_fund_filing"
+        },
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2016年",
+          "source_id": "sh_ip_fund_filing"
+        },
+        {
+          "field": "ownership",
+          "label": "设立关系",
+          "value": "上海科创集团全资子公司上海战新投资持股30%，并与社会民营资本共同设立。",
+          "source_id": "sh_ip_fund_filing"
+        },
+        {
+          "field": "manager_activity_2025",
+          "label": "管理体系2025年活动",
+          "value": "披露新设5支基金、总规模10.39亿元，累计投资14个项目；属管理体系披露，不是该单只基金的规模或收益。",
+          "source_id": "sh_ip_fund_filing"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：智推时代 · 天使轮 · 2026-07-07 · 本轮参投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "投资界2026年7月报道智推时代完成数千万元天使轮，上海知识产权基金为参与方之一；“数千万元”是整轮融资额，未披露本基金的单独出资金额。",
           "source_id": "FISRC-602fdc3dbd5462df"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "上海科创集团官网",
+          "value": "上海科技创业投资（集团）有限公司",
+          "url": "https://www.shstvc.com.cn/",
+          "source_id": "sh_stvc_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "母集团公开总机（非基金专线）",
+          "value": "021-22302800",
+          "url": "https://www.shstvc.com.cn/",
+          "source_id": "sh_stvc_contact"
+        },
+        {
+          "kind": "email",
+          "label": "母集团公开邮箱（非基金专属）",
+          "value": "info@shstvc.com.cn",
+          "url": "https://www.shstvc.com.cn/",
+          "source_id": "sh_stvc_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "sh_ip_fund_filing",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2025-12-31/1224910242.PDF",
+          "source_title": "上市公司公告：参与投资策源一期基金",
+          "source_content_hash": "aa3b07303f422fd3e2e792d7dfcc24ffc157f3a5d4d39a1b337ae7cb8d182709",
+          "quote": "上海知识产权基金成立于2016年，由上海科创集团全资子公司上海战新投资作为持股30%的国有股东与社会民营资本共同设立。",
+          "quote_hash": "aa3b07303f422fd3e2e792d7dfcc24ffc157f3a5d4d39a1b337ae7cb8d182709"
+        },
+        {
+          "source_id": "sh_stvc_history",
+          "source_url": "https://www.shstvc.com.cn/gywm/fzlc/",
+          "source_title": "上海科技创业投资集团｜发展历程",
+          "source_content_hash": "a04344058cea63e1ea9b77d9eeaf16b6f5d0602e19c7a47c506df0b59fba488b",
+          "quote": "2016年发起设立并管理上海知识产权扶持基金。",
+          "quote_hash": "a04344058cea63e1ea9b77d9eeaf16b6f5d0602e19c7a47c506df0b59fba488b"
+        },
+        {
+          "source_id": "sh_stvc_contact",
+          "source_url": "https://www.shstvc.com.cn/",
+          "source_title": "上海科技创业投资（集团）有限公司｜官方主页",
+          "source_content_hash": "42091d9b6ac2137648961e6a34cbb5a39dcd0abe1573888619e17ae35791e7e1",
+          "quote": "地址：上海市静安区铜仁路269号；电话：021-22302800；邮箱：info@shstvc.com.cn。",
+          "quote_hash": "42091d9b6ac2137648961e6a34cbb5a39dcd0abe1573888619e17ae35791e7e1"
+        },
         {
           "source_id": "FISRC-602fdc3dbd5462df",
           "source_url": "https://news.pedaily.cn/202607/565918.shtml",
@@ -161,7 +228,11 @@
           "quote_hash": "38a3453c6027233044d8f2e5fa4a5815ec37189fdb1c7083f4a6d3387a8a3ebf"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "该名称与上海科创集团公开历史及上市公司公告所称上海知识产权基金相符。管理体系的基金数量、规模或累计投资数据不等同于该单只基金数据。融资披露只确认其参与智推时代天使轮，未披露该基金具体出资额。"
     }
   }
 }
