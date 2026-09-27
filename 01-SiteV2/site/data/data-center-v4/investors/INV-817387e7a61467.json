@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-27T03:22:36.621Z",
+    "latestDataDate": "2026-09-27",
+    "currentDate": "2026-09-27",
+    "eventCount": 3600,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -314,6 +314,34 @@
       "coverage_status": "researched",
       "coverage_note": "区分Airbus集团2016年历史承诺和现行机构官网投资策略；公开邮箱限定为特定合规资料请求，不误标为BP邮箱。",
       "identity_status": "verified"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.facts[0].label": {
+          "text": "Airbus Group历史承诺",
+          "source_hash": "55ec196411b9fce8a7001a802d3b7dbae70eb838337b43d3c514606f95ced1ef",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:21:40.314Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "Airbus Ventures联系表单",
+          "source_hash": "f8c69ae7e57f6e673a8e4d83a1423875b22823149b6924968abb0f96deab10a3",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:21:40.314Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[1].label": {
+          "text": "Menlo Park办公室",
+          "source_hash": "43566d0bb8ba1b5c2f2ca3e80da1db0c513c921de48ee90434bbb745205943bb",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:21:23.689Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-27T03:22:36.621Z",
+    "latestDataDate": "2026-09-27",
+    "currentDate": "2026-09-27",
+    "eventCount": 3600,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -289,6 +289,34 @@
       "identity_status": "verified",
       "coverage_status": "researched",
       "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Deutsche Telekom Capital Partners（DTCP）是 Deutsche Telekom 于2014年宣布设立的风险投资与创新投资团队；DTCP现行官网以 Digital Transformation Capital Partners 品牌运营，覆盖数字基础设施、成长型企业软件与防务投资策略。DTCP官网当前自报70余笔投资、25余笔退出及50亿欧元管理资产；这些是平台汇总口径，不代表单一基金业绩。",
+          "source_hash": "ee35358cc0c6c9e40db408b1054f7c23bf98b95cf3955815084542da1f2ab9b4",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:21:57.393Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[0].description": {
+          "text": "Deutsche Telekom宣布设立名为Deutsche Telekom Capital Partners（DTCP）的专业投资团队。",
+          "source_hash": "7c06ad828957cca339cf32fa947732e8dee4297a945d920f993ba245ce955fbc",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:21:57.393Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "DTCP官网列示70余笔投资及25余笔退出；集团披露的历史案例包括Aircall、Arctic Wolf、Auth0、Cognigy、LeanIX、Pipedrive和Signavio。上述为机构平台汇总披露，不等于特定基金回报。",
+          "source_hash": "5de851e8b0551f5d54096591c66532926720e3eaa3eb34f69ae232196b6b62cb",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:21:57.393Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

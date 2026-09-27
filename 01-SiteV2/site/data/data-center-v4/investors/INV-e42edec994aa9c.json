@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-27T03:22:36.621Z",
+    "latestDataDate": "2026-09-27",
+    "currentDate": "2026-09-27",
+    "eventCount": 3600,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -336,6 +336,34 @@
       "coverage_status": "researched",
       "coverage_note": "Amazon 的公开投资职能不止一个；本档案只介绍官网可核验的 Alexa Fund，不将融资记录中的 Amazon 名称自动归于该基金。",
       "identity_status": "verified"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.facts[1].label": {
+          "text": "Alexa Fund 推出时间",
+          "source_hash": "80724221eb11baa3208161754792baec6f4ec09f2c58565c7bb61af3ca1cad26",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:21:17.479Z",
+          "status": "translated"
+        },
+        "public_profile.facts[2].label": {
+          "text": "Alexa Fund 官网披露领域",
+          "source_hash": "92a73e641a7bc5206277cc5bf643f9c832fea16dc32d3339e5968f921459b05d",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:21:17.479Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[0].description": {
+          "text": "Amazon 推出 Alexa Fund，以支持语音和智能设备创新。",
+          "source_hash": "1ea13d439f74b9de6019a77c27b106bcc22de392ce5f861efe7dbc36e7965e3d",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:21:17.479Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

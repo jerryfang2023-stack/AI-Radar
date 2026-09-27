@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-27T03:22:36.621Z",
+    "latestDataDate": "2026-09-27",
+    "currentDate": "2026-09-27",
+    "eventCount": 3600,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -61,6 +61,7 @@
     "eventIds": [
       "EV-657176fd0dff6209",
       "EV-7f4e56e09d2328bb",
+      "EV-dd0401074d7745e2",
       "EV-1b912ec16c50fc0f",
       "EV-29c45021243dba2a",
       "EV-8ca7036c405028d4",
@@ -85,6 +86,7 @@
     "entityIds": [
       "EN-336ab1deb42d6284",
       "EN-ec68d09e3a81e0ae",
+      "EN-e0781f06b610c734",
       "EN-bbdefa2950f49882",
       "EN-047364b9be67f665",
       "EN-e853b4e183ed0870",
@@ -105,7 +107,7 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-05-25",
-    "lastSeen": "2026-09-26"
+    "lastSeen": "2026-09-27"
   },
   "events": [
     {
@@ -681,10 +683,104 @@
       "publisher": "The Verge AI"
     },
     {
+      "id": "EV-dd0401074d7745e2",
+      "dataDate": "2026-09-27",
+      "date": "2026-09-27",
+      "updatedDate": "2026-09-27",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Sarvam AI 发布 Saaras V4：覆盖全部 22 种印度语言与全球英语的语音转文字模型",
+      "originalTitle": "",
+      "subject": "Sarvam AI",
+      "action": "发布 Saaras V4：覆盖全部 22 种印度语言与全球英语的语音转文字模型",
+      "object": "Sarvam AI 发布 Saaras V4：覆盖全部 22 种印度语言与全球英语的语音转文字模型",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-e0781f06b610c734"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-e0781f06b610c734"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "speech_audio",
+          "name": "语音与音频",
+          "entityIds": [
+            "EN-e0781f06b610c734"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-e0781f06b610c734",
+        "EN-ee1e31ffef7dbe64",
+        "EN-20dad34d13db6478"
+      ],
+      "entityNames": [
+        "Sarvam AI",
+        "Sarvam",
+        "Saaras V4"
+      ],
+      "productName": "Saaras V4",
+      "products": [
+        {
+          "name": "Saaras V4",
+          "type": "模型",
+          "ownerNames": [
+            "Sarvam"
+          ]
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/09/26/sarvam-ai-releases-saaras-v4-a-speech-to-text-model-for-all-22-indian-languages-and-global-english",
+      "publisher": "MarkTechPost（RSS）"
+    },
+    {
       "id": "EV-1b912ec16c50fc0f",
-      "dataDate": "2026-09-26",
+      "dataDate": "2026-09-27",
       "date": "2026-09-24",
-      "updatedDate": "2026-09-26",
+      "updatedDate": "2026-09-27",
       "eventType": "model_release",
       "eventTypeLabel": "模型发布",
       "eventGroup": "模型、产品与服务",
@@ -3234,6 +3330,27 @@
       "lastSeen": "2026-09-12"
     },
     {
+      "id": "EN-e0781f06b610c734",
+      "name": "Sarvam AI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-dd0401074d7745e2"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-27",
+      "lastSeen": "2026-09-27"
+    },
+    {
       "id": "EN-bbdefa2950f49882",
       "name": "Google",
       "entityType": "organization_candidate",
@@ -3585,7 +3702,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "EN-047364b9be67f665",
@@ -3735,7 +3852,7 @@
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-09-26",
+      "lastSeen": "2026-09-27",
       "organizationFamilyId": "EN-047364b9be67f665",
       "organizationRole": "group",
       "organizationFamilyEntityIds": [
@@ -3817,7 +3934,7 @@
         "EN-ddf9916b459b6d77"
       ],
       "firstSeen": "2026-01-01",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "EN-586937124e151c46",
@@ -4099,6 +4216,7 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-23ba794aca3c9838",
         "EV-8061c8eb754e0542",
         "EV-9ced0afc6d0d1f63",
         "EV-47f2eb9a1d92fc7e",
@@ -4341,7 +4459,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "EN-2b6e51bec93e86c1",
@@ -4605,6 +4723,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-2d473118c58c4afe",
         "EV-57f3792e2324389e",
         "EV-74e87bba31270f42",
         "EV-c45ed9151e55246f",
@@ -5074,7 +5193,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "EN-c8d65b5463695c98",

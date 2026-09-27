@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-27T03:22:36.621Z",
+    "latestDataDate": "2026-09-27",
+    "currentDate": "2026-09-27",
+    "eventCount": 3600,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -65,7 +65,8 @@
     "eventIds": [
       "EV-e3382d1c1d7db751",
       "EV-715eb0debea4180c",
-      "EV-b9a1cba0b59a5354"
+      "EV-b9a1cba0b59a5354",
+      "EV-dd0401074d7745e2"
     ],
     "viewpointIds": [],
     "classificationRefs": [
@@ -83,7 +84,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-15",
-    "lastSeen": "2026-08-13",
+    "lastSeen": "2026-09-27",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
@@ -94,12 +95,43 @@
         "EV-b9a1cba0b59a5354"
       ],
       "partnerships": [],
-      "productsServices": [],
+      "productsServices": [
+        "EV-dd0401074d7745e2"
+      ],
       "hardware": [],
       "organizationPeople": [],
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-dd0401074d7745e2",
+        "dataDate": "2026-09-27",
+        "date": "2026-09-27",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Sarvam AI 发布 Saaras V4：覆盖全部 22 种印度语言与全球英语的语音转文字模型",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "speech_audio",
+            "name": "语音与音频",
+            "entityIds": [
+              "EN-e0781f06b610c734"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-e0781f06b610c734",
+          "EN-ee1e31ffef7dbe64",
+          "EN-20dad34d13db6478"
+        ]
+      },
       {
         "id": "EV-715eb0debea4180c",
         "dataDate": "2026-08-13",
@@ -1037,7 +1069,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "TX-ai_market_category-infrastructure_compute",
@@ -2450,6 +2482,7 @@
         "EV-11e2a4e252d48f94",
         "EV-8077605769c4d4eb",
         "EV-419ddb2d5cfc799a",
+        "EV-c68c87e89f710bb6",
         "EV-261be266930904fd",
         "EV-a7568a8f75368e09",
         "EV-d1438a40de56f3ac",
@@ -2796,6 +2829,7 @@
         "EN-b5d7671990b8d4a8",
         "EN-f2b9106253663314",
         "EN-86b7b29d698963ef",
+        "EN-4c10987d1162a334",
         "EN-a377bedfcb73be99",
         "EN-a4916084455b1950",
         "EN-9a677023cc72cdd0",
@@ -2949,7 +2983,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "TX-use_case-data_analysis",
@@ -3592,7 +3626,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-01-05",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "TX-use_case-content_creation",

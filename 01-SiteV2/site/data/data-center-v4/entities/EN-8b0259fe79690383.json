@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-27T03:22:36.621Z",
+    "latestDataDate": "2026-09-27",
+    "currentDate": "2026-09-27",
+    "eventCount": 3600,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -184,6 +184,18 @@
       "coverage_status": "researched",
       "coverage_note": "研究所及UCAS主页用于学术履历、成果和联系方式；创始人身份来自公司融资报道。个人学术主页由本人维护，研究成果按团队口径表述。",
       "last_verified_at": "2026-09-26"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.track_record[0].description": {
+          "text": "公开学术主页列出其团队2025—2026年在CVPR、AAAI、ICCV、IEEE Transactions on Robotics等发表的成果；论文为团队研究，不归因于个人单独完成。",
+          "source_hash": "2aa9ec1f8195de0cca275f28a45ac9a23cdc5911898653cb42ab2c6235a4d046",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:20:50.244Z",
+          "status": "translated"
+        }
+      }
     }
   },
   "relatedEntities": [],
