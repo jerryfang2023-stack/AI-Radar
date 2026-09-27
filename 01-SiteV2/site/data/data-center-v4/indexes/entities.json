@@ -170847,31 +170847,134 @@
         "seed"
       ],
       "public_profile": {
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Harlem Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-31；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "summary": "Harlem Capital 是一家美国早期风险投资机构。官网称机构于 2015 年创立，当前 Fund III 关注 AI 信任与安全、AI 原生工作、数字基础设施和传统行业技术跃迁等方向，并继续在 Pre-Seed/Seed 阶段投资；官网披露 70 余项投资分布于 10 多座城市。",
+        "facts": [
+          {
+            "field": "founded_year",
+            "label": "成立年份",
+            "value": "2015",
+            "source_id": "harlem_origin"
+          },
+          {
+            "field": "investment_stages",
+            "label": "当前投资阶段",
+            "value": [
+              "Pre-Seed",
+              "Seed"
+            ],
+            "source_id": "harlem_stages"
+          },
+          {
+            "field": "investment_range",
+            "label": "官网披露的当前单笔投资区间",
+            "value": "100万至250万美元",
+            "source_id": "harlem_stages"
+          },
+          {
+            "field": "fund_iii_themes",
+            "label": "Fund III 主题",
+            "value": [
+              "AI信任与安全",
+              "AI原生工作",
+              "数字世界重建",
+              "传统行业技术跃迁"
+            ],
+            "source_id": "harlem_iii"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2015",
+            "description": "Harlem Capital 官网回顾机构于 2015 年创立。",
+            "source_id": "harlem_origin"
+          }
+        ],
         "track_record": [
           {
-            "description": "融资来源记录：Ellis AI · 种子轮 · 2026-07-31 · 本轮参投 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "官网称其投资组合超过 70 家/项并覆盖 10 多座城市；此为机构披露的组合规模，不是基金回报指标。",
+            "source_id": "harlem_portfolio"
+          },
+          {
+            "description": "官网 2026 年文章称其创业实习项目有 130 多位校友，其中 50 多位现于风险投资行业全职工作；为机构自述的生态建设数据。",
+            "source_id": "harlem_alumni"
+          },
+          {
+            "description": "融资披露案例：Ellis AI 于 2026-07-31 宣布 1000 万美元种子轮，Harlem Capital 为参投方；不代表完整组合或基金回报。",
             "source_id": "FISRC-a8e6dd6c34cd416a"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "Harlem Capital",
+            "url": "https://harlem.capital/",
+            "source_id": "harlem_home"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "harlem_home",
+            "source_url": "https://harlem.capital/",
+            "source_title": "Homepage - HCP",
+            "source_content_hash": "d34353bd577798ef6fe1da3808bf32de5d9b141793e04a785b731d513cf48744",
+            "quote": "Harlem Capital is a venture capital firm on a mission to back the next generation of winners.",
+            "quote_hash": "e5a90f5950f4827842250df0332d18ee6a842039d44dab4736573c5e86240e25"
+          },
+          {
+            "source_id": "harlem_portfolio",
+            "source_url": "https://harlem.capital/",
+            "source_title": "Homepage - HCP",
+            "source_content_hash": "d34353bd577798ef6fe1da3808bf32de5d9b141793e04a785b731d513cf48744",
+            "quote": "Our 70+ investments span across 10+ cities.",
+            "quote_hash": "d1c878b956fc7102087a160c9aa1653d6813572ab00b9a1f3b893d1a408f44b2"
+          },
+          {
+            "source_id": "harlem_origin",
+            "source_url": "https://harlem.capital/introducing-harlem-capitals-next-chapter-all-winners-welcome/",
+            "source_title": "Introducing Harlem Capital’s Next Chapter: All Winners Welcome - HCP",
+            "source_content_hash": "b15bd61354db78aee69635c24d70179cef904273d7c975493f96404b24254772",
+            "quote": "When we started Harlem Capital back in 2015, we didn’t set out to simply invest in startups.",
+            "quote_hash": "4c239306e40dbdb50baee47f15af9ce7c0928ef75bd53272dfd6fd2d0ebc642c"
+          },
+          {
+            "source_id": "harlem_stages",
+            "source_url": "https://harlem.capital/introducing-harlem-capitals-next-chapter-all-winners-welcome/",
+            "source_title": "Introducing Harlem Capital’s Next Chapter: All Winners Welcome - HCP",
+            "source_content_hash": "b15bd61354db78aee69635c24d70179cef904273d7c975493f96404b24254772",
+            "quote": "We are continuing to invest $1.0-2.5M at the Pre-Seed and Seed rounds.",
+            "quote_hash": "528202fe97ebacd0df141d1c195d29799cb543fa7ec1b0d0ac0a7e43fd10c0d4"
+          },
+          {
+            "source_id": "harlem_iii",
+            "source_url": "https://harlem.capital/introducing-harlem-capitals-next-chapter-all-winners-welcome/",
+            "source_title": "Introducing Harlem Capital’s Next Chapter: All Winners Welcome - HCP",
+            "source_content_hash": "b15bd61354db78aee69635c24d70179cef904273d7c975493f96404b24254772",
+            "quote": "With Fund III, we are focused on companies that will define the next decade of technology and rebuild the systems the world relies on.",
+            "quote_hash": "fa95f6ab63032e6fce50a9fe8b09cd12a6a5d129e5129a9e21d77d41c1bbf987"
+          },
+          {
+            "source_id": "harlem_alumni",
+            "source_url": "https://harlem.capital/introducing-harlem-capitals-next-chapter-all-winners-welcome/",
+            "source_title": "Introducing Harlem Capital’s Next Chapter: All Winners Welcome - HCP",
+            "source_content_hash": "b15bd61354db78aee69635c24d70179cef904273d7c975493f96404b24254772",
+            "quote": "more than 130 alumni from our internship program and over 50 now working full-time in venture capital.",
+            "quote_hash": "449f6a62d4d36b0a70df598d97f79882baae6abbc3510ca1ac352436bb7782a3"
+          },
           {
             "source_id": "FISRC-a8e6dd6c34cd416a",
             "source_url": "https://techcrunch.com/2026/07/31/repeat-founder-ryan-williams-raises-10m-seed-for-an-ai-startup-for-private-credit-managers/",
             "source_title": "连续创业者Ryan Williams为面向私募信贷经理的AI初创公司筹集1000万美元种子资金",
             "source_content_hash": "dd828ac38a132ac1",
-            "quote": "Ellis AI announced Thursday its emergence from stealth with $10 million in seed funding from investors including First Round Capital, 645 Ventures, Harlem Capital, Khosla Ventures, Thrive Capital, Slow Capital, Kearny Jackson, and Ariel Alternatives CEO Mellody Hobson.",
-            "quote_hash": "eab59ac0f81b233b7afca4c7418c7f27f758e3941c5b036a0a3aaacc91fd0d58"
+            "quote": "investors including First Round Capital, 645 Ventures, Harlem Capital, Khosla Ventures",
+            "quote_hash": "fe95045bcc3446237b6b485f53ec48e192751bfd3630c02d482d9b48ca7dae48"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-28",
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched",
+        "coverage_note": "背景、策略、人员及联系渠道按官网或官方公开页面整理；业绩数字标为机构自述，融资案例仅代表本库核验到的公开披露，不代表完整投资组合或基金回报。"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -178957,21 +179060,158 @@
         "series_a"
       ],
       "public_profile": {
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Elevation Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "summary": "Elevation Capital 是一家投资印度初创企业的风险投资机构，官网覆盖 Seed、Series A、Growth 与 Public 阶段，并列出消费科技、金融科技、医疗、消费品牌、企业 AI 与前沿科技等方向。官网团队页列 Ravi Adusumalli 与 Mukul Arora 为共同管理合伙人。",
+        "facts": [
+          {
+            "field": "investment_stages",
+            "label": "官网组合阶段",
+            "value": [
+              "Seed",
+              "Series A",
+              "Growth",
+              "Public"
+            ],
+            "source_id": "elevation_portfolio"
+          },
+          {
+            "field": "sectors",
+            "label": "官网列示投资领域",
+            "value": [
+              "消费科技",
+              "金融科技与金融服务",
+              "医疗健康",
+              "消费品牌",
+              "企业AI",
+              "前沿科技"
+            ],
+            "source_id": "elevation_home"
+          },
+          {
+            "field": "leadership",
+            "label": "共同管理合伙人",
+            "value": [
+              "Ravi Adusumalli",
+              "Mukul Arora"
+            ],
+            "source_id": "elevation_leadership"
+          },
+          {
+            "field": "experience",
+            "label": "团队经验",
+            "value": "官网称投资团队拥有超过20年的经验；其官网叙述属于机构自述。",
+            "source_id": "elevation_experience"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：Reo.Dev · A轮 · 2026-07-16 · 本轮领投 · 1130 万美元。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "Elevation 官网自报曾在 Seed/Series A 阶段与 13 家后来成为独角兽的企业合作；该数字为机构口径。",
+            "source_id": "elevation_track"
+          },
+          {
+            "description": "Elevation 官网自报组合企业创造 750 亿美元、约占印度科技市场总市值 25%；属于机构网站披露，非独立审计数据。",
+            "source_id": "elevation_track"
+          },
+          {
+            "description": "融资披露案例：Reo.Dev 于 2026-07-16 宣布 1130 万美元 A 轮，Elevation Capital 为领投方；不代表完整组合或基金回报。",
             "source_id": "FISRC-ca3d343739410c39"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "Elevation Capital",
+            "url": "https://www.elevationcapital.com/",
+            "source_id": "elevation_experience"
+          },
+          {
+            "kind": "email",
+            "label": "官网公开联系邮箱",
+            "value": "community@elevationcapital.com",
+            "url": "https://www.elevationcapital.com/team",
+            "source_id": "elevation_email"
+          },
+          {
+            "kind": "address",
+            "label": "Delhi-NCR 办公室",
+            "value": "Unit No. 101A, First Floor, One Horizon Centre, Golf Course Rd, DLF Phase 5, Sector 43, Gurugram, Haryana 122002",
+            "url": "https://www.elevationcapital.com/team",
+            "source_id": "elevation_delhi"
+          },
+          {
+            "kind": "address",
+            "label": "Bengaluru 办公室",
+            "value": "9th Floor, Unit No. 902 and 903, Campus 31, RMZ Ecoworld, Sarjapur-Marathahalli, Outer Ring Road, Bellandur, Bengaluru, 560103",
+            "url": "https://www.elevationcapital.com/team",
+            "source_id": "elevation_bengaluru"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "elevation_home",
+            "source_url": "https://www.elevationcapital.com/",
+            "source_title": "Elevation – Elevation Capital",
+            "source_content_hash": "6e82199a4a90dfc23df7a78d8c1354355d596822e71ef833826829aacf3a3970",
+            "quote": "Consumer Tech Fintech & Financial Services Healthcare Consumer Brands Enterprise AI Frontier Tech.",
+            "quote_hash": "96cf2f4f7030bb539e5087cf2564cb77170c7ef23367c600adeaaa62c521129a"
+          },
+          {
+            "source_id": "elevation_experience",
+            "source_url": "https://www.elevationcapital.com/",
+            "source_title": "Elevation – Elevation Capital",
+            "source_content_hash": "6e82199a4a90dfc23df7a78d8c1354355d596822e71ef833826829aacf3a3970",
+            "quote": "Our investment team, with over 20 years of expertise, inspires and shapes possibilities with you.",
+            "quote_hash": "5eaa59857ad205f4ca0cd28b11e8d2d084fcf9114ccf900ba78e0b4ac334041e"
+          },
+          {
+            "source_id": "elevation_leadership",
+            "source_url": "https://www.elevationcapital.com/team",
+            "source_title": "Team – Elevation Capital",
+            "source_content_hash": "0df989d7064299fdb101f52b4ca186e4708779f61781ffe64c78c5dfd73867c8",
+            "quote": "Ravi Adusumalli Co-Managing Partner; Mukul Arora Co-Managing Partner.",
+            "quote_hash": "44d9c1dbda6e5b4be4d6ca1a49d9e7d59d632825be5c0025ec0ccf302d6f06f1"
+          },
+          {
+            "source_id": "elevation_email",
+            "source_url": "https://www.elevationcapital.com/team",
+            "source_title": "Team – Elevation Capital",
+            "source_content_hash": "0df989d7064299fdb101f52b4ca186e4708779f61781ffe64c78c5dfd73867c8",
+            "quote": "community@elevationcapital.com",
+            "quote_hash": "1f70fa33d8205f78a4eeabf3c4ef659e4575333947005fd38bc55afb6c0bd075"
+          },
+          {
+            "source_id": "elevation_delhi",
+            "source_url": "https://www.elevationcapital.com/team",
+            "source_title": "Team – Elevation Capital",
+            "source_content_hash": "0df989d7064299fdb101f52b4ca186e4708779f61781ffe64c78c5dfd73867c8",
+            "quote": "Unit No. 101A, First Floor, One Horizon Centre, Golf Course Rd, DLF Phase 5, Sector 43, Gurugram, Haryana 122002.",
+            "quote_hash": "6fd1f646231a65c39ce9be62b0501bf121688d9899af132d3722faa154f1dc6f"
+          },
+          {
+            "source_id": "elevation_bengaluru",
+            "source_url": "https://www.elevationcapital.com/team",
+            "source_title": "Team – Elevation Capital",
+            "source_content_hash": "0df989d7064299fdb101f52b4ca186e4708779f61781ffe64c78c5dfd73867c8",
+            "quote": "9th Floor, Unit No. 902 and 903, Campus 31, RMZ Ecoworld, Sarjapur-Marathahalli, Outer Ring Road, Bellandur, Bengaluru, 560103.",
+            "quote_hash": "78856e687438f5babea22a64e7ddc5ebb9bf2cb016b2065159ce0e35aeeb3b9e"
+          },
+          {
+            "source_id": "elevation_portfolio",
+            "source_url": "https://www.elevationcapital.com/portfolio",
+            "source_title": "Portfolio – Elevation Capital",
+            "source_content_hash": "9f36ec6a6aa0cfd897c9fa3753f452d2f3f43c4bd620aab3d57b9a5e364b2df4",
+            "quote": "Stage Seed Series A Growth Public.",
+            "quote_hash": "f6532f8e82f28286402a97cf654757a8da1ff814704c3d42b67c5ddf78b2e6d1"
+          },
+          {
+            "source_id": "elevation_track",
+            "source_url": "https://www.elevationcapital.com/",
+            "source_title": "Elevation – Elevation Capital",
+            "source_content_hash": "6e82199a4a90dfc23df7a78d8c1354355d596822e71ef833826829aacf3a3970",
+            "quote": "We've partnered with 13 unicorns from Seed/Series A stage. Our portfolio companies have created $75B (25%) of India’s total tech market cap.",
+            "quote_hash": "494e6822483a1042a4055e708a31085b4017cc8a05f59ee291cbab2c2f5ced92"
+          },
           {
             "source_id": "FISRC-ca3d343739410c39",
             "source_url": "https://www.reo.dev/blog/reo-dev-series-a",
@@ -178981,7 +179221,11 @@
             "quote_hash": "1958df38fe8add9c7b791aaf8ee8bfcf03bb881487477007ba296cfe6eee47ca"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-28",
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched",
+        "coverage_note": "背景、策略、人员及联系渠道按官网或官方公开页面整理；业绩数字标为机构自述，融资案例仅代表本库核验到的公开披露，不代表完整投资组合或基金回报。"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -181003,21 +181247,122 @@
         "series_a"
       ],
       "public_profile": {
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Cadenza Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "summary": "Cadenza Ventures 是一家面向全球技术公司的投资机构。官网列出纽约与旧金山办公室，并披露由 Kumar Dandapani、Max Shapiro 担任管理合伙人；其公开履历显示两人均有 BitMEX Ventures 经历。当前融资库可核验到其参投 Rime 的 A 轮案例。",
+        "facts": [
+          {
+            "field": "investment_positioning",
+            "label": "官网投资定位",
+            "value": "全球投资者，支持下一代技术领军者；官网未在该介绍页明确列出排他行业或投资阶段。",
+            "source_id": "cadenza_about"
+          },
+          {
+            "field": "leadership",
+            "label": "管理合伙人",
+            "value": [
+              "Kumar Dandapani",
+              "Max Shapiro"
+            ],
+            "source_id": "cadenza_team"
+          },
+          {
+            "field": "partner_background",
+            "label": "管理合伙人经历",
+            "value": "官网介绍 Kumar Dandapani 曾创办 BitMEX Ventures，早前任职 Norwest Venture Partners 数据科学负责人。",
+            "source_id": "cadenza_kumar"
+          },
+          {
+            "field": "partner_background",
+            "label": "另一位管理合伙人经历",
+            "value": "Max Shapiro 曾任 BitMEX Ventures Investment Principal。",
+            "source_id": "cadenza_max"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：Rime · A轮 · 2026-07-15 · 本轮参投 · $24M。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "融资披露案例：Rime 于 2026-07-15 宣布 2400 万美元 A 轮，Cadenza Ventures 为参投方；这是单笔公开案例，不代表完整组合或投资业绩。",
             "source_id": "FISRC-3c23f338e9a9176f"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "Cadenza Ventures",
+            "url": "https://cadenza.vc/",
+            "source_id": "cadenza_about"
+          },
+          {
+            "kind": "email",
+            "label": "官网公开联系邮箱",
+            "value": "info@cadenza.vc",
+            "url": "https://cadenza.vc/",
+            "source_id": "cadenza_contact"
+          },
+          {
+            "kind": "address",
+            "label": "纽约办公室",
+            "value": "777 Third Avenue, New York, NY 10017",
+            "url": "https://cadenza.vc/",
+            "source_id": "cadenza_ny"
+          },
+          {
+            "kind": "address",
+            "label": "旧金山办公室",
+            "value": "601 California St, San Francisco, CA 94108",
+            "url": "https://cadenza.vc/",
+            "source_id": "cadenza_sf"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "cadenza_about",
+            "source_url": "https://cadenza.vc/",
+            "source_title": "Cadenza",
+            "source_content_hash": "c0dd1d4fd1a4dc66c43edc0ff269c43aa26d1be6aac743985444cf969b55e653",
+            "quote": "Global Investors in Transformative Technologies.",
+            "quote_hash": "ade0ff77f010a7205e7fc53df87df30d762b0ffe5c8d29882d9eceb92ef97c2d"
+          },
+          {
+            "source_id": "cadenza_contact",
+            "source_url": "https://cadenza.vc/",
+            "source_title": "Cadenza",
+            "source_content_hash": "c0dd1d4fd1a4dc66c43edc0ff269c43aa26d1be6aac743985444cf969b55e653",
+            "quote": "info@cadenza.vc",
+            "quote_hash": "2f715a4a465ee3183b5e60cee15bad62650cc11d488a11b6f784e8928cd6e21a"
+          },
+          {
+            "source_id": "cadenza_ny",
+            "source_url": "https://cadenza.vc/",
+            "source_title": "Cadenza",
+            "source_content_hash": "c0dd1d4fd1a4dc66c43edc0ff269c43aa26d1be6aac743985444cf969b55e653",
+            "quote": "777 Third Avenue, New York, NY 10017",
+            "quote_hash": "bdeb0dc5421391c53efde7ce52af9e9ab5826e4df5b1369c75f40488db2e5aa7"
+          },
+          {
+            "source_id": "cadenza_sf",
+            "source_url": "https://cadenza.vc/",
+            "source_title": "Cadenza",
+            "source_content_hash": "c0dd1d4fd1a4dc66c43edc0ff269c43aa26d1be6aac743985444cf969b55e653",
+            "quote": "601 California St, San Francisco, CA 94108",
+            "quote_hash": "f4d475ed925d5a0f0f2a5e15f5cdf8459bd89fef029006d64a5d7c9fb125aed5"
+          },
+          {
+            "source_id": "cadenza_team",
+            "source_url": "https://cadenza.vc/team",
+            "source_title": "Team | Cadenza",
+            "source_content_hash": "4bcec719ddfcf39315b8139875086701ca8cffd896cb8330661377e9cb56b834",
+            "quote": "Kumar Dandapani is a Managing Partner at Cadenza. Max Shapiro is a Managing Partner at Cadenza.",
+            "quote_hash": "9313ee88dd066588024c4b37f01028e814a128c6a8d7a7d76cae50585577150a"
+          },
+          {
+            "source_id": "cadenza_kumar",
+            "source_url": "https://cadenza.vc/team",
+            "source_title": "Team | Cadenza",
+            "source_content_hash": "4bcec719ddfcf39315b8139875086701ca8cffd896cb8330661377e9cb56b834",
+            "quote": "Prior to co-founding Cadenza, Kumar started BitMEX Ventures.",
+            "quote_hash": "e3a0ec08ab75ae014dcd76f3fa5e17b4ecac69864431873ff8a48a502e355404"
+          },
           {
             "source_id": "FISRC-3c23f338e9a9176f",
             "source_url": "https://www.rime.ai/resources/rime-series-a-announcement",
@@ -181025,9 +181370,21 @@
             "source_content_hash": "d609dc9c3caf2e30",
             "quote": "Our Series A was led by M13, with participation from Corazon Capital, Unusual Ventures, Cadenza Ventures, and Twilio Ventures.",
             "quote_hash": "b7d3bd934ffec15d42b249367ab0cb06a4dc51d2b3710529e28e60c2be2ffdeb"
+          },
+          {
+            "source_id": "cadenza_max",
+            "source_url": "https://cadenza.vc/team",
+            "source_title": "Team | Cadenza",
+            "source_content_hash": "4bcec719ddfcf39315b8139875086701ca8cffd896cb8330661377e9cb56b834",
+            "quote": "Prior to co-founding Cadenza, Max was an Investment Principal at BitMEX Ventures.",
+            "quote_hash": "4e38b3c521e86eb9dc91f43a15e42d162dd85b63458119cc81541dd7500451ff"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-28",
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched",
+        "coverage_note": "背景、策略、人员及联系渠道按官网或官方公开页面整理；业绩数字标为机构自述，融资案例仅代表本库核验到的公开披露，不代表完整投资组合或基金回报。"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -182345,16 +182702,69 @@
         "series_b"
       ],
       "public_profile": {
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Energize Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "summary": "Energize Capital 投资推动能源转型及关键产业数字化、脱碳的技术公司。机构 2017 年创立，现通过早期 Ventures 与私募股权 Endurance 两条策略投资；官网称其于 2026 年正式推出 Endurance 平台。",
+        "facts": [
+          {
+            "field": "founded_year",
+            "label": "成立年份",
+            "value": "2017",
+            "source_id": "energize_origin"
+          },
+          {
+            "field": "founding_relationship",
+            "label": "成立背景",
+            "value": "官网称其在 Invenergy 作为创始投资方和长期合作伙伴的支持下成立。",
+            "source_id": "energize_origin"
+          },
+          {
+            "field": "investment_thesis",
+            "label": "投资主题",
+            "value": "能源、气候与工业领域的轻资产技术，推动关键产业数字化与脱碳。",
+            "source_id": "energize_thesis"
+          },
+          {
+            "field": "strategies",
+            "label": "投资策略",
+            "value": [
+              "Ventures：早期数字化解决方案，Series A-C",
+              "Endurance：成熟且盈利的软件及服务企业控制权投资"
+            ],
+            "source_id": "energize_strategies"
+          },
+          {
+            "field": "leadership",
+            "label": "投资委员会 / 业务领导",
+            "value": [
+              "John Tough（联合创始人、管理合伙人）"
+            ],
+            "source_id": "energize_team"
+          },
+          {
+            "field": "operations_leadership",
+            "label": "运营负责人",
+            "value": "Katie McClain（合伙人、首席运营官）",
+            "source_id": "energize_katie"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2017",
+            "description": "官网记载 Energize Capital 于 2017 年成立。",
+            "source_id": "energize_origin"
+          },
+          {
+            "date": "2026",
+            "description": "官网时间线记载 Endurance 私募股权平台于 2026 年推出。",
+            "source_id": "energize_milestone"
+          }
+        ],
         "track_record": [
           {
-            "description": "融资来源记录：InstaLILY AI · B轮 · 2026-07-14 · 本轮领投 · $60 million。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "官网报告称，2025 年其企业网络促成 135 次组合公司与潜在客户对接；这是平台活动指标，并非投资回报。",
+            "source_id": "energize_2025"
+          },
+          {
+            "description": "融资披露案例：InstaLILY AI 于 2026-07-14 宣布 6000 万美元 B 轮，Energize Capital 为领投方；不代表完整组合或基金回报。",
             "source_id": "FISRC-b6c1fe80a4b09131"
           },
           {
@@ -182362,8 +182772,86 @@
             "source_id": "FISRC-c8150575e9fc83bc"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "Energize Capital",
+            "url": "https://energizecap.com/about-us",
+            "source_id": "energize_thesis"
+          },
+          {
+            "kind": "email",
+            "label": "官方招聘平台隐私政策公开邮箱（非投资申请入口）",
+            "value": "hello@energize.vc",
+            "url": "https://jobs.energizecap.com/privacy-policy",
+            "source_id": "energize_contact_email"
+          },
+          {
+            "kind": "address",
+            "label": "注册通讯地址",
+            "value": "1 South Wacker Drive, Suite 2350, Chicago, IL 60606",
+            "url": "https://jobs.energizecap.com/privacy-policy",
+            "source_id": "energize_contact_address"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "energize_origin",
+            "source_url": "https://energizecap.com/about-us",
+            "source_title": "About Us",
+            "source_content_hash": "8d806fa076fedf526c89f1276412ab72ed1efab2affed8cffd36d0806bc4b4bf",
+            "quote": "Established in 2017 with founding investor and long-term partner Invenergy.",
+            "quote_hash": "adf9f6005432f60a10b400482d264fb829d04c08f1ef91b98f0803f0c6f8c03a"
+          },
+          {
+            "source_id": "energize_thesis",
+            "source_url": "https://energizecap.com/about-us",
+            "source_title": "About Us",
+            "source_content_hash": "8d806fa076fedf526c89f1276412ab72ed1efab2affed8cffd36d0806bc4b4bf",
+            "quote": "Energize Capital is a multi-stage investor in asset-light technologies that advance energy, climate, and industrial sectors.",
+            "quote_hash": "6171058c3c8cdf538266d69038e94fd21ca40d6b70d365942a0dff7111eafb10"
+          },
+          {
+            "source_id": "energize_strategies",
+            "source_url": "https://energizecap.com/about-us",
+            "source_title": "About Us",
+            "source_content_hash": "8d806fa076fedf526c89f1276412ab72ed1efab2affed8cffd36d0806bc4b4bf",
+            "quote": "Ventures, our earlier-stage platform, and Endurance, our private equity platform.",
+            "quote_hash": "5002d0a85012f67a615778567e0ad92d22a9003d97728b33b6c2ff25b34f4f10"
+          },
+          {
+            "source_id": "energize_team",
+            "source_url": "https://energizecap.com/team?filter=edge",
+            "source_title": "Team",
+            "source_content_hash": "a1b4e75ce3fd24ebb1e390dedfad0fa503fd49e34e9b51458557612768ea58fd",
+            "quote": "John Tough Co-Founder & Managing Partner, Member of Investment Committee",
+            "quote_hash": "aac1d5f7a3301171f4a760295ac6e2f97603ea16b686013448c68d63280d8de8"
+          },
+          {
+            "source_id": "energize_2025",
+            "source_url": "https://energizecap.com/about-us",
+            "source_title": "About Us",
+            "source_content_hash": "8d806fa076fedf526c89f1276412ab72ed1efab2affed8cffd36d0806bc4b4bf",
+            "quote": "135+ introductions facilitated between our corporate network and portfolio companies in 2025.",
+            "quote_hash": "5c726aeb5419c58a045b5fb663a820955f171bdd1498af1d03de0acfe69f2d28"
+          },
+          {
+            "source_id": "energize_contact_email",
+            "source_url": "https://jobs.energizecap.com/privacy-policy",
+            "source_title": "Privacy policy | Energize Capital Job Board",
+            "source_content_hash": "191121aacc13277d7257d0d1d30a55ad7b6fde87d3499f4ef8c7ed320ad224d7",
+            "quote": "You can contact Energize Capital via email at hello@energize.vc.",
+            "quote_hash": "96674ff8eafcc9022eceef7ee2bf6f9f4f971ce8baceb1fa0e8ce4ff72c64e7f"
+          },
+          {
+            "source_id": "energize_contact_address",
+            "source_url": "https://jobs.energizecap.com/privacy-policy",
+            "source_title": "Privacy policy | Energize Capital Job Board",
+            "source_content_hash": "191121aacc13277d7257d0d1d30a55ad7b6fde87d3499f4ef8c7ed320ad224d7",
+            "quote": "Energize Capital’s registered address is 1 South Wacker Drive Suite 2350 Chicago, IL 60606.",
+            "quote_hash": "72f63c4cd7cc809ff0e7d06d06e97b656894e7203be816ae4180480853fd4d1d"
+          },
           {
             "source_id": "FISRC-b6c1fe80a4b09131",
             "source_url": "https://startupfortune.com/instalily-raises-60-million-to-put-ai-agents-inside-construction-and-logistics-firms/",
@@ -182371,6 +182859,22 @@
             "source_content_hash": "5cfacab2e15c6feb",
             "quote": "Energize Capital led a $60 million Series B",
             "quote_hash": "c292eb0dd7ee43fc3b58539002c20705b8a47e612de05100ae5c368987e15843"
+          },
+          {
+            "source_id": "energize_katie",
+            "source_url": "https://energizecap.com/team?filter=edge",
+            "source_title": "Team",
+            "source_content_hash": "a1b4e75ce3fd24ebb1e390dedfad0fa503fd49e34e9b51458557612768ea58fd",
+            "quote": "Katie McClain Partner & COO, Member of Investment Committee",
+            "quote_hash": "cb4a510891cd0e2b524c7ad46f30ac726119d58c813d45971e8d5de64322eaf9"
+          },
+          {
+            "source_id": "energize_milestone",
+            "source_url": "https://energizecap.com/about-us",
+            "source_title": "About Us",
+            "source_content_hash": "8d806fa076fedf526c89f1276412ab72ed1efab2affed8cffd36d0806bc4b4bf",
+            "quote": "2026 Launch of Endurance Platform Officially introduced private equity platform",
+            "quote_hash": "39a8be0b8f32702e70617510a620c4ae8be467fcc29d77021079c0f7b431777b"
           },
           {
             "source_id": "FISRC-c8150575e9fc83bc",
@@ -182381,7 +182885,11 @@
             "quote_hash": "4fa8bf459f9a88cb76bd11a042496012b67a5b7ba09f7e9016179743492e5de2"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-28",
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched",
+        "coverage_note": "背景、策略、人员及联系渠道按官网或官方公开页面整理；业绩数字标为机构自述，融资案例仅代表本库核验到的公开披露，不代表完整投资组合或基金回报。"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -234892,16 +235400,52 @@
         "pre_seed"
       ],
       "public_profile": {
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Heartcore Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "summary": "Heartcore Capital 是一家总部覆盖欧洲多地的早期风险投资机构，2007 年创立，投资从公司创立初期至 A 轮的欧洲创业团队。机构强调长期陪伴、后续融资与团队建设支持；官网披露的资产、退出与组合规模均为其自报口径。",
+        "facts": [
+          {
+            "field": "founded_year",
+            "label": "成立年份",
+            "value": "2007",
+            "source_id": "heartcore_origin"
+          },
+          {
+            "field": "investment_stages",
+            "label": "投资阶段",
+            "value": "从创立初期至 A 轮的欧洲早期企业。",
+            "source_id": "heartcore_strategy"
+          },
+          {
+            "field": "team_locations",
+            "label": "团队所在地",
+            "value": [
+              "哥本哈根",
+              "伦敦",
+              "巴黎",
+              "美国"
+            ],
+            "source_id": "heartcore_team"
+          },
+          {
+            "field": "assets_under_management",
+            "label": "官网披露管理规模",
+            "value": "超过7亿欧元；机构自报，截至2026-09-28核验。",
+            "source_id": "heartcore_aum"
+          },
+          {
+            "field": "capital_returned_to_lps",
+            "label": "官网披露 LP 返还",
+            "value": "超过4亿欧元；机构自报，截至2026-09-28核验。",
+            "source_id": "heartcore_aum"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：Davis · 预种子轮 · 2026-05-06 · 本轮领投 · $5.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "Heartcore 官网自报已投资 100 多家公司、当前有 65 家仍活跃，并称其所投公司创造超过 100 亿欧元企业价值；数据为机构披露口径。",
+            "source_id": "heartcore_track"
+          },
+          {
+            "description": "融资披露案例：Davis 于 2026-05-06 宣布 550 万美元 Pre-Seed，Heartcore Capital 与 Balderton 共同领投；不代表完整组合或基金回报。",
             "source_id": "FISRC-d5d5c858ca2bcd66"
           },
           {
@@ -234909,8 +235453,71 @@
             "source_id": "FISRC-6a88f57902f30c9d"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "Heartcore Capital",
+            "url": "https://www.heartcore.com/about",
+            "source_id": "heartcore_strategy"
+          },
+          {
+            "kind": "email",
+            "label": "官网公开联系邮箱",
+            "value": "team@heartcore.com",
+            "url": "https://www.heartcore.com/about",
+            "source_id": "heartcore_contact"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "heartcore_origin",
+            "source_url": "https://www.heartcore.com/about",
+            "source_title": "About us",
+            "source_content_hash": "e76180a4d8ec746efe161aedbaef30b6a4b96d94bc5549a557512f8376dc5d2a",
+            "quote": "Founded in 2007.",
+            "quote_hash": "acd1cef0789b81dc432f203eff339a99e503bb590d01d305c2219ba2dbea3a38"
+          },
+          {
+            "source_id": "heartcore_strategy",
+            "source_url": "https://www.heartcore.com/about",
+            "source_title": "About us",
+            "source_content_hash": "e76180a4d8ec746efe161aedbaef30b6a4b96d94bc5549a557512f8376dc5d2a",
+            "quote": "We are one of Europe’s longest-standing, pure early-stage investors.",
+            "quote_hash": "41278a2b9c5c42a652a98d1e50b5660c0279b310ce2ac788dc0352639efba4d8"
+          },
+          {
+            "source_id": "heartcore_team",
+            "source_url": "https://www.heartcore.com/team",
+            "source_title": "Team",
+            "source_content_hash": "e9437f4527babb8550dc8d1953385ecb6b74935ad29a87a83058e4ee7c0022e9",
+            "quote": "We are a remote-first team with partners in Copenhagen, London, Paris and the United States.",
+            "quote_hash": "0ea01aae69427e12113a12718b51b571efa4b2ee28453a2817113d577d8ca953"
+          },
+          {
+            "source_id": "heartcore_aum",
+            "source_url": "https://www.heartcore.com/about",
+            "source_title": "About us",
+            "source_content_hash": "e76180a4d8ec746efe161aedbaef30b6a4b96d94bc5549a557512f8376dc5d2a",
+            "quote": "we now manage over €700M in assets, with over €400M returned to LPs.",
+            "quote_hash": "f68ecdcc435c03faf0c018918c3a04b99b4ebdfc562225816dc9650298a9d1ee"
+          },
+          {
+            "source_id": "heartcore_track",
+            "source_url": "https://www.heartcore.com/about",
+            "source_title": "About us",
+            "source_content_hash": "e76180a4d8ec746efe161aedbaef30b6a4b96d94bc5549a557512f8376dc5d2a",
+            "quote": "We have backed more than 100 companies, with 65 companies currently active in the portfolio.",
+            "quote_hash": "e33091becdd782e341bb0cbac86b3fdba1018f8b009efd954c2cff90b37d747a"
+          },
+          {
+            "source_id": "heartcore_contact",
+            "source_url": "https://www.heartcore.com/about",
+            "source_title": "About us",
+            "source_content_hash": "e76180a4d8ec746efe161aedbaef30b6a4b96d94bc5549a557512f8376dc5d2a",
+            "quote": "Alternatively, you can also reach us at team@heartcore.com.",
+            "quote_hash": "ac1f46bc79777873a5ea97ebd0317b113d2a7011208407b02147d32fd2626cab"
+          },
           {
             "source_id": "FISRC-d5d5c858ca2bcd66",
             "source_url": "https://www.balderton.com/news/davis-raises-5-5-million-pre-seed-to-accelerate-early-stage-real-estate-development-from-months-to-days/",
@@ -234928,7 +235535,11 @@
             "quote_hash": "ca72b3fb65259fdd24ca6302900d504f46b9d80610badfd679ad53d00d748dc0"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-28",
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched",
+        "coverage_note": "背景、策略、人员及联系渠道按官网或官方公开页面整理；业绩数字标为机构自述，融资案例仅代表本库核验到的公开披露，不代表完整投资组合或基金回报。"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -237929,21 +238540,111 @@
         "seed"
       ],
       "public_profile": {
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Frontline Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "summary": "Frontline Ventures 专注于帮助有全球化目标的 B2B 科技公司跨越欧美市场扩张。机构通过 Frontline Seed 支持计划进入美国市场的欧洲 Pre-Seed/Seed 公司，并通过 Frontline Growth 支持准备进入欧洲的美国 Series B-D 公司；官网将投资与跨大西洋落地支持结合。",
+        "facts": [
+          {
+            "field": "investment_thesis",
+            "label": "投资策略",
+            "value": "支持欧美两地具有全球化雄心的 B2B 科技公司，重点协助跨大西洋扩张。",
+            "source_id": "frontline_about"
+          },
+          {
+            "field": "seed_strategy",
+            "label": "Frontline Seed",
+            "value": "面向计划进入美国市场的欧洲 Pre-Seed 与 Seed 初创公司。",
+            "source_id": "frontline_seed"
+          },
+          {
+            "field": "growth_strategy",
+            "label": "Frontline Growth",
+            "value": "面向计划进入欧洲市场的美国 Series B-D 公司。",
+            "source_id": "frontline_growth"
+          },
+          {
+            "field": "team_examples",
+            "label": "官网团队成员示例",
+            "value": [
+              "Brennan O’Donnell（Palo Alto）"
+            ],
+            "source_id": "frontline_team"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：Realm Technologies Oy · 种子轮 · 2026-04-22 · 本轮领投 · $4.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "官网将 Navan 列为创始人成功案例，并称其在欧洲 18 个月从 0 扩至 150 人，后于 2025 年在 Nasdaq IPO；该案例为机构官网自述。",
+            "source_id": "frontline_navan"
+          },
+          {
+            "description": "融资披露案例：Realm Technologies Oy 于 2026-04-22 宣布 450 万美元种子轮，Frontline Ventures 为领投方；不代表完整组合或基金回报。",
             "source_id": "FISRC-a7e59a61493f0ad8"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "Frontline Ventures",
+            "url": "https://frontline.vc/",
+            "source_id": "frontline_about"
+          },
+          {
+            "kind": "contact_form",
+            "label": "联系投资团队 / 通用咨询",
+            "value": "官方联系页面",
+            "url": "https://frontline.vc/contact-us/general-enquiry/",
+            "source_id": "frontline_contact"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "frontline_about",
+            "source_url": "https://frontline.vc/",
+            "source_title": "Home | Frontline",
+            "source_content_hash": "96b41ee483502705964babdff693246ac4ee694d223f94b55f95e414af34eba2",
+            "quote": "Frontline backs B2B tech companies in the US and Europe, and positions them to win the transatlantic market.",
+            "quote_hash": "04a89e9887624d3de513e8bb92bb7b546156ee61bbd737ade243c9955b31da63"
+          },
+          {
+            "source_id": "frontline_seed",
+            "source_url": "https://frontline.vc/",
+            "source_title": "Home | Frontline",
+            "source_content_hash": "96b41ee483502705964babdff693246ac4ee694d223f94b55f95e414af34eba2",
+            "quote": "Frontline Seed For early-stage European startups making the US their biggest market.",
+            "quote_hash": "2cfbb5bad8913d4710c9f70592b22303cb00deb9ff9b62164e416e830c60dd55"
+          },
+          {
+            "source_id": "frontline_growth",
+            "source_url": "https://frontline.vc/",
+            "source_title": "Home | Frontline",
+            "source_content_hash": "96b41ee483502705964babdff693246ac4ee694d223f94b55f95e414af34eba2",
+            "quote": "Frontline Growth For US companies ready to make Europe their next growth engine.",
+            "quote_hash": "65a83c56df92aceb1e06fb156b330495483bd2d450ec81181ded998ce0d8cb8e"
+          },
+          {
+            "source_id": "frontline_team",
+            "source_url": "https://frontline.vc/team/",
+            "source_title": "Team | Frontline",
+            "source_content_hash": "89e5f3fb0695f7d3e7e82cbae0338acd11bab2e7f8cdeb06a207759d1a19c0b4",
+            "quote": "Brennan O’Donnell Partner, Palo Alto",
+            "quote_hash": "d8a524161a06661e77bd16a32dbc021e871fca2743f70f1f2e66891304b40dda"
+          },
+          {
+            "source_id": "frontline_navan",
+            "source_url": "https://frontline.vc/",
+            "source_title": "Home | Frontline",
+            "source_content_hash": "96b41ee483502705964babdff693246ac4ee694d223f94b55f95e414af34eba2",
+            "quote": "Navan grew from 0 to 150 people in Europe in 18 months. IPO’d on the Nasdaq as $NAVN in 2025.",
+            "quote_hash": "2582612a414de9bd9a74264db6586c03b684ef01b6ae85710917e4a400f42f41"
+          },
+          {
+            "source_id": "frontline_contact",
+            "source_url": "https://frontline.vc/contact-us/general-enquiry/",
+            "source_title": "Contact Us - General Enquiry | Frontline",
+            "source_content_hash": "35adfc7127e7c81eabb6001641f1dfe980cc158ef3a83682faf658926c9f17d0",
+            "quote": "General Enquiries",
+            "quote_hash": "ebaf9fa713fb7373ada9131a5609f3bc974265cd006f105a28fa695a2a0f03cd"
+          },
           {
             "source_id": "FISRC-a7e59a61493f0ad8",
             "source_url": "https://www.prnewswire.com/news-releases/realm-raises-4-5m-to-bring-the-cursor-moment-to-enterprise-sales-302750020.html",
@@ -237953,7 +238654,11 @@
             "quote_hash": "909dfefa1a6a5441803aca1b318c3a6e999a94b92a513140467d892f67c2dc1e"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-28",
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched",
+        "coverage_note": "背景、策略、人员及联系渠道按官网或官方公开页面整理；业绩数字标为机构自述，融资案例仅代表本库核验到的公开披露，不代表完整投资组合或基金回报。"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -263044,21 +263749,121 @@
         "seed"
       ],
       "public_profile": {
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Flybridge Capital Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-01-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "summary": "Flybridge Capital Partners 是一家以美国东海岸为根基的早期投资机构，官网聚焦 AI 基础设施与开发者平台、智能体商业应用及原生 AI 产品。投资覆盖 Pre-Seed、Seed，并会为早期已投企业追加 Series A 后融资；官网公布不同阶段的典型支票区间。",
+        "facts": [
+          {
+            "field": "investment_focus",
+            "label": "官网重点方向",
+            "value": [
+              "AI基础设施与开发者平台",
+              "智能体商业应用",
+              "原生AI产品"
+            ],
+            "source_id": "flybridge_about"
+          },
+          {
+            "field": "investment_stages_and_check_sizes",
+            "label": "官网披露的阶段及典型支票规模",
+            "value": [
+              "Pre-Seed：最高25万美元",
+              "Seed：100万至300万美元",
+              "Series A 后追加投资：1000万美元以上"
+            ],
+            "source_id": "flybridge_stages"
+          },
+          {
+            "field": "geography",
+            "label": "团队据点",
+            "value": "官网称其扎根并连接纽约与波士顿。",
+            "source_id": "flybridge_about"
+          },
+          {
+            "field": "general_partner",
+            "label": "普通合伙人",
+            "value": "Chip Hazard",
+            "source_id": "flybridge_chip"
+          },
+          {
+            "field": "general_partner",
+            "label": "普通合伙人",
+            "value": "Jeff Bussgang",
+            "source_id": "flybridge_jeff"
+          },
+          {
+            "field": "general_partner",
+            "label": "普通合伙人",
+            "value": "Jesse Middleton",
+            "source_id": "flybridge_jesse"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：VoiceRun · 种子轮 · 2026-01-14 · 本轮领投 · $5.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "Flybridge 官网于 2025 年宣布第七支种子基金，并在公告中称基金规模为 1 亿美元；这是机构募资公告，不代表基金投资回报。",
+            "source_id": "flybridge_fund"
+          },
+          {
+            "description": "融资披露案例：VoiceRun 于 2026-01-14 宣布 550 万美元种子轮，Flybridge Capital Partners 为领投方；不代表完整组合或基金回报。",
             "source_id": "FISRC-4b3f6b59387f35f7"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "Flybridge Capital Partners",
+            "url": "https://www.flybridge.com/",
+            "source_id": "flybridge_about"
+          },
+          {
+            "kind": "email",
+            "label": "官网公布的联系邮箱",
+            "value": "hello@flybridge.com",
+            "url": "https://www.flybridge.com/ideas/the-bow/announcing-flybridge-2025",
+            "source_id": "flybridge_contact"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "flybridge_about",
+            "source_url": "https://www.flybridge.com/",
+            "source_title": "Flybridge - The East Coast Firm Backing Our AI-Powered Future",
+            "source_content_hash": "af329496ce11940e0c771da5535d12540ed8eb2d72d6a94a5058ce9b317520f9",
+            "quote": "Early-stage investors backing ambitious founders building our AI-powered future.",
+            "quote_hash": "28bd532be45809462a98d154efa67dc0dabbe63f7a2fa0b07c826c47732e0a80"
+          },
+          {
+            "source_id": "flybridge_stages",
+            "source_url": "https://www.flybridge.com/",
+            "source_title": "Flybridge - The East Coast Firm Backing Our AI-Powered Future",
+            "source_content_hash": "af329496ce11940e0c771da5535d12540ed8eb2d72d6a94a5058ce9b317520f9",
+            "quote": "Pre-Seed Up to $250K Check Size. Seed $1M to $3M Check Size. Post -Series A $10M+ Check Size.",
+            "quote_hash": "4453b82bbaf7b2f3379660d0882c6a27f0dab037978e83a5e62ad17a518e3505"
+          },
+          {
+            "source_id": "flybridge_team",
+            "source_url": "https://www.flybridge.com/team",
+            "source_title": "Investment Team — Flybridge - The East Coast Firm Backing Our AI-Powered Future",
+            "source_content_hash": "9b296ab9d5d4e995f8ea0957c7f6385f891a47777602e1e89c9a19741fd03dcf",
+            "quote": "Chip Hazard General Partner; Jeff Bussgang General Partner; Jesse Middleton General Partner.",
+            "quote_hash": "df4e75366f93b32f6db07bcf7b489e7671ae64280c38251963754c6b178572db"
+          },
+          {
+            "source_id": "flybridge_fund",
+            "source_url": "https://www.flybridge.com/ideas/the-bow/announcing-flybridge-2025",
+            "source_title": "Announcing Flybridge 2025 — Flybridge - The East Coast Firm Backing Our AI-Powered Future",
+            "source_content_hash": "6bdbf00be1838aa318bcb9bc921327c2be8e31662b8c43406b76b7e963adaad4",
+            "quote": "Today, we're announcing Flybridge 2025, our seventh seed fund.",
+            "quote_hash": "376ebdf7980e5a7d2d3b79220c15ca3f1b996d29bb8ddc1f4bb56099f56a17f6"
+          },
+          {
+            "source_id": "flybridge_contact",
+            "source_url": "https://www.flybridge.com/ideas/the-bow/announcing-flybridge-2025",
+            "source_title": "Announcing Flybridge 2025 — Flybridge - The East Coast Firm Backing Our AI-Powered Future",
+            "source_content_hash": "6bdbf00be1838aa318bcb9bc921327c2be8e31662b8c43406b76b7e963adaad4",
+            "quote": "Reach out at hello@flybridge.com or learn more about our investment focus at flybridge.com",
+            "quote_hash": "b1a8f31508f5ab45160e1dafbc3cc59e6fb0c0f106eabca937298e1e40fc3996"
+          },
           {
             "source_id": "FISRC-4b3f6b59387f35f7",
             "source_url": "https://siliconangle.com/2026/01/14/voicerun-gets-5-5m-seed-funding-give-enterprises-control-voice-ai-agents/",
@@ -263066,9 +263871,37 @@
             "source_content_hash": "3250994a6860b476",
             "quote": "Today’s round was led by Flybridge Capital Partners",
             "quote_hash": "0ee2817d397c87a67ac5abc44b769fc5eae3a10daf170b793632e08c1e7940fb"
+          },
+          {
+            "source_id": "flybridge_chip",
+            "source_url": "https://www.flybridge.com/team",
+            "source_title": "Investment Team — Flybridge - The East Coast Firm Backing Our AI-Powered Future",
+            "source_content_hash": "9b296ab9d5d4e995f8ea0957c7f6385f891a47777602e1e89c9a19741fd03dcf",
+            "quote": "Chip Hazard General Partner",
+            "quote_hash": "1300e543f08109949eb401af86a51b7fb791f3825546c6a9494d195b042b5d84"
+          },
+          {
+            "source_id": "flybridge_jeff",
+            "source_url": "https://www.flybridge.com/team",
+            "source_title": "Investment Team — Flybridge - The East Coast Firm Backing Our AI-Powered Future",
+            "source_content_hash": "9b296ab9d5d4e995f8ea0957c7f6385f891a47777602e1e89c9a19741fd03dcf",
+            "quote": "Jeff Bussgang General Partner",
+            "quote_hash": "29bcc589405f82719a0acb62729dc6ae069cd844ede13957090458868c3ae054"
+          },
+          {
+            "source_id": "flybridge_jesse",
+            "source_url": "https://www.flybridge.com/team",
+            "source_title": "Investment Team — Flybridge - The East Coast Firm Backing Our AI-Powered Future",
+            "source_content_hash": "9b296ab9d5d4e995f8ea0957c7f6385f891a47777602e1e89c9a19741fd03dcf",
+            "quote": "Jesse Middleton General Partner",
+            "quote_hash": "72f5ec6feaf8571ff7761e0d96851d1c22ac52a8a08e7411c82964b1284125af"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-28",
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched",
+        "coverage_note": "背景、策略、人员及联系渠道按官网或官方公开页面整理；业绩数字标为机构自述，融资案例仅代表本库核验到的公开披露，不代表完整投资组合或基金回报。"
       },
       "activity_count": 1,
       "portfolio_companies": [

@@ -137,21 +137,122 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Cadenza Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Cadenza Ventures 是一家面向全球技术公司的投资机构。官网列出纽约与旧金山办公室，并披露由 Kumar Dandapani、Max Shapiro 担任管理合伙人；其公开履历显示两人均有 BitMEX Ventures 经历。当前融资库可核验到其参投 Rime 的 A 轮案例。",
+      "facts": [
+        {
+          "field": "investment_positioning",
+          "label": "官网投资定位",
+          "value": "全球投资者，支持下一代技术领军者；官网未在该介绍页明确列出排他行业或投资阶段。",
+          "source_id": "cadenza_about"
+        },
+        {
+          "field": "leadership",
+          "label": "管理合伙人",
+          "value": [
+            "Kumar Dandapani",
+            "Max Shapiro"
+          ],
+          "source_id": "cadenza_team"
+        },
+        {
+          "field": "partner_background",
+          "label": "管理合伙人经历",
+          "value": "官网介绍 Kumar Dandapani 曾创办 BitMEX Ventures，早前任职 Norwest Venture Partners 数据科学负责人。",
+          "source_id": "cadenza_kumar"
+        },
+        {
+          "field": "partner_background",
+          "label": "另一位管理合伙人经历",
+          "value": "Max Shapiro 曾任 BitMEX Ventures Investment Principal。",
+          "source_id": "cadenza_max"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Rime · A轮 · 2026-07-15 · 本轮参投 · $24M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资披露案例：Rime 于 2026-07-15 宣布 2400 万美元 A 轮，Cadenza Ventures 为参投方；这是单笔公开案例，不代表完整组合或投资业绩。",
           "source_id": "FISRC-3c23f338e9a9176f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Cadenza Ventures",
+          "url": "https://cadenza.vc/",
+          "source_id": "cadenza_about"
+        },
+        {
+          "kind": "email",
+          "label": "官网公开联系邮箱",
+          "value": "info@cadenza.vc",
+          "url": "https://cadenza.vc/",
+          "source_id": "cadenza_contact"
+        },
+        {
+          "kind": "address",
+          "label": "纽约办公室",
+          "value": "777 Third Avenue, New York, NY 10017",
+          "url": "https://cadenza.vc/",
+          "source_id": "cadenza_ny"
+        },
+        {
+          "kind": "address",
+          "label": "旧金山办公室",
+          "value": "601 California St, San Francisco, CA 94108",
+          "url": "https://cadenza.vc/",
+          "source_id": "cadenza_sf"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "cadenza_about",
+          "source_url": "https://cadenza.vc/",
+          "source_title": "Cadenza",
+          "source_content_hash": "c0dd1d4fd1a4dc66c43edc0ff269c43aa26d1be6aac743985444cf969b55e653",
+          "quote": "Global Investors in Transformative Technologies.",
+          "quote_hash": "ade0ff77f010a7205e7fc53df87df30d762b0ffe5c8d29882d9eceb92ef97c2d"
+        },
+        {
+          "source_id": "cadenza_contact",
+          "source_url": "https://cadenza.vc/",
+          "source_title": "Cadenza",
+          "source_content_hash": "c0dd1d4fd1a4dc66c43edc0ff269c43aa26d1be6aac743985444cf969b55e653",
+          "quote": "info@cadenza.vc",
+          "quote_hash": "2f715a4a465ee3183b5e60cee15bad62650cc11d488a11b6f784e8928cd6e21a"
+        },
+        {
+          "source_id": "cadenza_ny",
+          "source_url": "https://cadenza.vc/",
+          "source_title": "Cadenza",
+          "source_content_hash": "c0dd1d4fd1a4dc66c43edc0ff269c43aa26d1be6aac743985444cf969b55e653",
+          "quote": "777 Third Avenue, New York, NY 10017",
+          "quote_hash": "bdeb0dc5421391c53efde7ce52af9e9ab5826e4df5b1369c75f40488db2e5aa7"
+        },
+        {
+          "source_id": "cadenza_sf",
+          "source_url": "https://cadenza.vc/",
+          "source_title": "Cadenza",
+          "source_content_hash": "c0dd1d4fd1a4dc66c43edc0ff269c43aa26d1be6aac743985444cf969b55e653",
+          "quote": "601 California St, San Francisco, CA 94108",
+          "quote_hash": "f4d475ed925d5a0f0f2a5e15f5cdf8459bd89fef029006d64a5d7c9fb125aed5"
+        },
+        {
+          "source_id": "cadenza_team",
+          "source_url": "https://cadenza.vc/team",
+          "source_title": "Team | Cadenza",
+          "source_content_hash": "4bcec719ddfcf39315b8139875086701ca8cffd896cb8330661377e9cb56b834",
+          "quote": "Kumar Dandapani is a Managing Partner at Cadenza. Max Shapiro is a Managing Partner at Cadenza.",
+          "quote_hash": "9313ee88dd066588024c4b37f01028e814a128c6a8d7a7d76cae50585577150a"
+        },
+        {
+          "source_id": "cadenza_kumar",
+          "source_url": "https://cadenza.vc/team",
+          "source_title": "Team | Cadenza",
+          "source_content_hash": "4bcec719ddfcf39315b8139875086701ca8cffd896cb8330661377e9cb56b834",
+          "quote": "Prior to co-founding Cadenza, Kumar started BitMEX Ventures.",
+          "quote_hash": "e3a0ec08ab75ae014dcd76f3fa5e17b4ecac69864431873ff8a48a502e355404"
+        },
         {
           "source_id": "FISRC-3c23f338e9a9176f",
           "source_url": "https://www.rime.ai/resources/rime-series-a-announcement",
@@ -159,9 +260,21 @@
           "source_content_hash": "d609dc9c3caf2e30",
           "quote": "Our Series A was led by M13, with participation from Corazon Capital, Unusual Ventures, Cadenza Ventures, and Twilio Ventures.",
           "quote_hash": "b7d3bd934ffec15d42b249367ab0cb06a4dc51d2b3710529e28e60c2be2ffdeb"
+        },
+        {
+          "source_id": "cadenza_max",
+          "source_url": "https://cadenza.vc/team",
+          "source_title": "Team | Cadenza",
+          "source_content_hash": "4bcec719ddfcf39315b8139875086701ca8cffd896cb8330661377e9cb56b834",
+          "quote": "Prior to co-founding Cadenza, Max was an Investment Principal at BitMEX Ventures.",
+          "quote_hash": "4e38b3c521e86eb9dc91f43a15e42d162dd85b63458119cc81541dd7500451ff"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "背景、策略、人员及联系渠道按官网或官方公开页面整理；业绩数字标为机构自述，融资案例仅代表本库核验到的公开披露，不代表完整投资组合或基金回报。"
     }
   }
 }

@@ -153,16 +153,69 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Energize Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Energize Capital 投资推动能源转型及关键产业数字化、脱碳的技术公司。机构 2017 年创立，现通过早期 Ventures 与私募股权 Endurance 两条策略投资；官网称其于 2026 年正式推出 Endurance 平台。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2017",
+          "source_id": "energize_origin"
+        },
+        {
+          "field": "founding_relationship",
+          "label": "成立背景",
+          "value": "官网称其在 Invenergy 作为创始投资方和长期合作伙伴的支持下成立。",
+          "source_id": "energize_origin"
+        },
+        {
+          "field": "investment_thesis",
+          "label": "投资主题",
+          "value": "能源、气候与工业领域的轻资产技术，推动关键产业数字化与脱碳。",
+          "source_id": "energize_thesis"
+        },
+        {
+          "field": "strategies",
+          "label": "投资策略",
+          "value": [
+            "Ventures：早期数字化解决方案，Series A-C",
+            "Endurance：成熟且盈利的软件及服务企业控制权投资"
+          ],
+          "source_id": "energize_strategies"
+        },
+        {
+          "field": "leadership",
+          "label": "投资委员会 / 业务领导",
+          "value": [
+            "John Tough（联合创始人、管理合伙人）"
+          ],
+          "source_id": "energize_team"
+        },
+        {
+          "field": "operations_leadership",
+          "label": "运营负责人",
+          "value": "Katie McClain（合伙人、首席运营官）",
+          "source_id": "energize_katie"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2017",
+          "description": "官网记载 Energize Capital 于 2017 年成立。",
+          "source_id": "energize_origin"
+        },
+        {
+          "date": "2026",
+          "description": "官网时间线记载 Endurance 私募股权平台于 2026 年推出。",
+          "source_id": "energize_milestone"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：InstaLILY AI · B轮 · 2026-07-14 · 本轮领投 · $60 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "官网报告称，2025 年其企业网络促成 135 次组合公司与潜在客户对接；这是平台活动指标，并非投资回报。",
+          "source_id": "energize_2025"
+        },
+        {
+          "description": "融资披露案例：InstaLILY AI 于 2026-07-14 宣布 6000 万美元 B 轮，Energize Capital 为领投方；不代表完整组合或基金回报。",
           "source_id": "FISRC-b6c1fe80a4b09131"
         },
         {
@@ -170,8 +223,86 @@
           "source_id": "FISRC-c8150575e9fc83bc"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Energize Capital",
+          "url": "https://energizecap.com/about-us",
+          "source_id": "energize_thesis"
+        },
+        {
+          "kind": "email",
+          "label": "官方招聘平台隐私政策公开邮箱（非投资申请入口）",
+          "value": "hello@energize.vc",
+          "url": "https://jobs.energizecap.com/privacy-policy",
+          "source_id": "energize_contact_email"
+        },
+        {
+          "kind": "address",
+          "label": "注册通讯地址",
+          "value": "1 South Wacker Drive, Suite 2350, Chicago, IL 60606",
+          "url": "https://jobs.energizecap.com/privacy-policy",
+          "source_id": "energize_contact_address"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "energize_origin",
+          "source_url": "https://energizecap.com/about-us",
+          "source_title": "About Us",
+          "source_content_hash": "8d806fa076fedf526c89f1276412ab72ed1efab2affed8cffd36d0806bc4b4bf",
+          "quote": "Established in 2017 with founding investor and long-term partner Invenergy.",
+          "quote_hash": "adf9f6005432f60a10b400482d264fb829d04c08f1ef91b98f0803f0c6f8c03a"
+        },
+        {
+          "source_id": "energize_thesis",
+          "source_url": "https://energizecap.com/about-us",
+          "source_title": "About Us",
+          "source_content_hash": "8d806fa076fedf526c89f1276412ab72ed1efab2affed8cffd36d0806bc4b4bf",
+          "quote": "Energize Capital is a multi-stage investor in asset-light technologies that advance energy, climate, and industrial sectors.",
+          "quote_hash": "6171058c3c8cdf538266d69038e94fd21ca40d6b70d365942a0dff7111eafb10"
+        },
+        {
+          "source_id": "energize_strategies",
+          "source_url": "https://energizecap.com/about-us",
+          "source_title": "About Us",
+          "source_content_hash": "8d806fa076fedf526c89f1276412ab72ed1efab2affed8cffd36d0806bc4b4bf",
+          "quote": "Ventures, our earlier-stage platform, and Endurance, our private equity platform.",
+          "quote_hash": "5002d0a85012f67a615778567e0ad92d22a9003d97728b33b6c2ff25b34f4f10"
+        },
+        {
+          "source_id": "energize_team",
+          "source_url": "https://energizecap.com/team?filter=edge",
+          "source_title": "Team",
+          "source_content_hash": "a1b4e75ce3fd24ebb1e390dedfad0fa503fd49e34e9b51458557612768ea58fd",
+          "quote": "John Tough Co-Founder & Managing Partner, Member of Investment Committee",
+          "quote_hash": "aac1d5f7a3301171f4a760295ac6e2f97603ea16b686013448c68d63280d8de8"
+        },
+        {
+          "source_id": "energize_2025",
+          "source_url": "https://energizecap.com/about-us",
+          "source_title": "About Us",
+          "source_content_hash": "8d806fa076fedf526c89f1276412ab72ed1efab2affed8cffd36d0806bc4b4bf",
+          "quote": "135+ introductions facilitated between our corporate network and portfolio companies in 2025.",
+          "quote_hash": "5c726aeb5419c58a045b5fb663a820955f171bdd1498af1d03de0acfe69f2d28"
+        },
+        {
+          "source_id": "energize_contact_email",
+          "source_url": "https://jobs.energizecap.com/privacy-policy",
+          "source_title": "Privacy policy | Energize Capital Job Board",
+          "source_content_hash": "191121aacc13277d7257d0d1d30a55ad7b6fde87d3499f4ef8c7ed320ad224d7",
+          "quote": "You can contact Energize Capital via email at hello@energize.vc.",
+          "quote_hash": "96674ff8eafcc9022eceef7ee2bf6f9f4f971ce8baceb1fa0e8ce4ff72c64e7f"
+        },
+        {
+          "source_id": "energize_contact_address",
+          "source_url": "https://jobs.energizecap.com/privacy-policy",
+          "source_title": "Privacy policy | Energize Capital Job Board",
+          "source_content_hash": "191121aacc13277d7257d0d1d30a55ad7b6fde87d3499f4ef8c7ed320ad224d7",
+          "quote": "Energize Capital’s registered address is 1 South Wacker Drive Suite 2350 Chicago, IL 60606.",
+          "quote_hash": "72f63c4cd7cc809ff0e7d06d06e97b656894e7203be816ae4180480853fd4d1d"
+        },
         {
           "source_id": "FISRC-b6c1fe80a4b09131",
           "source_url": "https://startupfortune.com/instalily-raises-60-million-to-put-ai-agents-inside-construction-and-logistics-firms/",
@@ -179,6 +310,22 @@
           "source_content_hash": "5cfacab2e15c6feb",
           "quote": "Energize Capital led a $60 million Series B",
           "quote_hash": "c292eb0dd7ee43fc3b58539002c20705b8a47e612de05100ae5c368987e15843"
+        },
+        {
+          "source_id": "energize_katie",
+          "source_url": "https://energizecap.com/team?filter=edge",
+          "source_title": "Team",
+          "source_content_hash": "a1b4e75ce3fd24ebb1e390dedfad0fa503fd49e34e9b51458557612768ea58fd",
+          "quote": "Katie McClain Partner & COO, Member of Investment Committee",
+          "quote_hash": "cb4a510891cd0e2b524c7ad46f30ac726119d58c813d45971e8d5de64322eaf9"
+        },
+        {
+          "source_id": "energize_milestone",
+          "source_url": "https://energizecap.com/about-us",
+          "source_title": "About Us",
+          "source_content_hash": "8d806fa076fedf526c89f1276412ab72ed1efab2affed8cffd36d0806bc4b4bf",
+          "quote": "2026 Launch of Endurance Platform Officially introduced private equity platform",
+          "quote_hash": "39a8be0b8f32702e70617510a620c4ae8be467fcc29d77021079c0f7b431777b"
         },
         {
           "source_id": "FISRC-c8150575e9fc83bc",
@@ -189,7 +336,11 @@
           "quote_hash": "4fa8bf459f9a88cb76bd11a042496012b67a5b7ba09f7e9016179743492e5de2"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "背景、策略、人员及联系渠道按官网或官方公开页面整理；业绩数字标为机构自述，融资案例仅代表本库核验到的公开披露，不代表完整投资组合或基金回报。"
     }
   }
 }

@@ -137,21 +137,111 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Frontline Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Frontline Ventures 专注于帮助有全球化目标的 B2B 科技公司跨越欧美市场扩张。机构通过 Frontline Seed 支持计划进入美国市场的欧洲 Pre-Seed/Seed 公司，并通过 Frontline Growth 支持准备进入欧洲的美国 Series B-D 公司；官网将投资与跨大西洋落地支持结合。",
+      "facts": [
+        {
+          "field": "investment_thesis",
+          "label": "投资策略",
+          "value": "支持欧美两地具有全球化雄心的 B2B 科技公司，重点协助跨大西洋扩张。",
+          "source_id": "frontline_about"
+        },
+        {
+          "field": "seed_strategy",
+          "label": "Frontline Seed",
+          "value": "面向计划进入美国市场的欧洲 Pre-Seed 与 Seed 初创公司。",
+          "source_id": "frontline_seed"
+        },
+        {
+          "field": "growth_strategy",
+          "label": "Frontline Growth",
+          "value": "面向计划进入欧洲市场的美国 Series B-D 公司。",
+          "source_id": "frontline_growth"
+        },
+        {
+          "field": "team_examples",
+          "label": "官网团队成员示例",
+          "value": [
+            "Brennan O’Donnell（Palo Alto）"
+          ],
+          "source_id": "frontline_team"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Realm Technologies Oy · 种子轮 · 2026-04-22 · 本轮领投 · $4.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "官网将 Navan 列为创始人成功案例，并称其在欧洲 18 个月从 0 扩至 150 人，后于 2025 年在 Nasdaq IPO；该案例为机构官网自述。",
+          "source_id": "frontline_navan"
+        },
+        {
+          "description": "融资披露案例：Realm Technologies Oy 于 2026-04-22 宣布 450 万美元种子轮，Frontline Ventures 为领投方；不代表完整组合或基金回报。",
           "source_id": "FISRC-a7e59a61493f0ad8"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Frontline Ventures",
+          "url": "https://frontline.vc/",
+          "source_id": "frontline_about"
+        },
+        {
+          "kind": "contact_form",
+          "label": "联系投资团队 / 通用咨询",
+          "value": "官方联系页面",
+          "url": "https://frontline.vc/contact-us/general-enquiry/",
+          "source_id": "frontline_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "frontline_about",
+          "source_url": "https://frontline.vc/",
+          "source_title": "Home | Frontline",
+          "source_content_hash": "96b41ee483502705964babdff693246ac4ee694d223f94b55f95e414af34eba2",
+          "quote": "Frontline backs B2B tech companies in the US and Europe, and positions them to win the transatlantic market.",
+          "quote_hash": "04a89e9887624d3de513e8bb92bb7b546156ee61bbd737ade243c9955b31da63"
+        },
+        {
+          "source_id": "frontline_seed",
+          "source_url": "https://frontline.vc/",
+          "source_title": "Home | Frontline",
+          "source_content_hash": "96b41ee483502705964babdff693246ac4ee694d223f94b55f95e414af34eba2",
+          "quote": "Frontline Seed For early-stage European startups making the US their biggest market.",
+          "quote_hash": "2cfbb5bad8913d4710c9f70592b22303cb00deb9ff9b62164e416e830c60dd55"
+        },
+        {
+          "source_id": "frontline_growth",
+          "source_url": "https://frontline.vc/",
+          "source_title": "Home | Frontline",
+          "source_content_hash": "96b41ee483502705964babdff693246ac4ee694d223f94b55f95e414af34eba2",
+          "quote": "Frontline Growth For US companies ready to make Europe their next growth engine.",
+          "quote_hash": "65a83c56df92aceb1e06fb156b330495483bd2d450ec81181ded998ce0d8cb8e"
+        },
+        {
+          "source_id": "frontline_team",
+          "source_url": "https://frontline.vc/team/",
+          "source_title": "Team | Frontline",
+          "source_content_hash": "89e5f3fb0695f7d3e7e82cbae0338acd11bab2e7f8cdeb06a207759d1a19c0b4",
+          "quote": "Brennan O’Donnell Partner, Palo Alto",
+          "quote_hash": "d8a524161a06661e77bd16a32dbc021e871fca2743f70f1f2e66891304b40dda"
+        },
+        {
+          "source_id": "frontline_navan",
+          "source_url": "https://frontline.vc/",
+          "source_title": "Home | Frontline",
+          "source_content_hash": "96b41ee483502705964babdff693246ac4ee694d223f94b55f95e414af34eba2",
+          "quote": "Navan grew from 0 to 150 people in Europe in 18 months. IPO’d on the Nasdaq as $NAVN in 2025.",
+          "quote_hash": "2582612a414de9bd9a74264db6586c03b684ef01b6ae85710917e4a400f42f41"
+        },
+        {
+          "source_id": "frontline_contact",
+          "source_url": "https://frontline.vc/contact-us/general-enquiry/",
+          "source_title": "Contact Us - General Enquiry | Frontline",
+          "source_content_hash": "35adfc7127e7c81eabb6001641f1dfe980cc158ef3a83682faf658926c9f17d0",
+          "quote": "General Enquiries",
+          "quote_hash": "ebaf9fa713fb7373ada9131a5609f3bc974265cd006f105a28fa695a2a0f03cd"
+        },
         {
           "source_id": "FISRC-a7e59a61493f0ad8",
           "source_url": "https://www.prnewswire.com/news-releases/realm-raises-4-5m-to-bring-the-cursor-moment-to-enterprise-sales-302750020.html",
@@ -161,7 +251,11 @@
           "quote_hash": "909dfefa1a6a5441803aca1b318c3a6e999a94b92a513140467d892f67c2dc1e"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "背景、策略、人员及联系渠道按官网或官方公开页面整理；业绩数字标为机构自述，融资案例仅代表本库核验到的公开披露，不代表完整投资组合或基金回报。"
     }
   }
 }
