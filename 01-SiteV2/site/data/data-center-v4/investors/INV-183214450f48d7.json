@@ -137,21 +137,121 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Flybridge Capital Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-01-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Flybridge Capital Partners 是一家以美国东海岸为根基的早期投资机构，官网聚焦 AI 基础设施与开发者平台、智能体商业应用及原生 AI 产品。投资覆盖 Pre-Seed、Seed，并会为早期已投企业追加 Series A 后融资；官网公布不同阶段的典型支票区间。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网重点方向",
+          "value": [
+            "AI基础设施与开发者平台",
+            "智能体商业应用",
+            "原生AI产品"
+          ],
+          "source_id": "flybridge_about"
+        },
+        {
+          "field": "investment_stages_and_check_sizes",
+          "label": "官网披露的阶段及典型支票规模",
+          "value": [
+            "Pre-Seed：最高25万美元",
+            "Seed：100万至300万美元",
+            "Series A 后追加投资：1000万美元以上"
+          ],
+          "source_id": "flybridge_stages"
+        },
+        {
+          "field": "geography",
+          "label": "团队据点",
+          "value": "官网称其扎根并连接纽约与波士顿。",
+          "source_id": "flybridge_about"
+        },
+        {
+          "field": "general_partner",
+          "label": "普通合伙人",
+          "value": "Chip Hazard",
+          "source_id": "flybridge_chip"
+        },
+        {
+          "field": "general_partner",
+          "label": "普通合伙人",
+          "value": "Jeff Bussgang",
+          "source_id": "flybridge_jeff"
+        },
+        {
+          "field": "general_partner",
+          "label": "普通合伙人",
+          "value": "Jesse Middleton",
+          "source_id": "flybridge_jesse"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：VoiceRun · 种子轮 · 2026-01-14 · 本轮领投 · $5.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Flybridge 官网于 2025 年宣布第七支种子基金，并在公告中称基金规模为 1 亿美元；这是机构募资公告，不代表基金投资回报。",
+          "source_id": "flybridge_fund"
+        },
+        {
+          "description": "融资披露案例：VoiceRun 于 2026-01-14 宣布 550 万美元种子轮，Flybridge Capital Partners 为领投方；不代表完整组合或基金回报。",
           "source_id": "FISRC-4b3f6b59387f35f7"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Flybridge Capital Partners",
+          "url": "https://www.flybridge.com/",
+          "source_id": "flybridge_about"
+        },
+        {
+          "kind": "email",
+          "label": "官网公布的联系邮箱",
+          "value": "hello@flybridge.com",
+          "url": "https://www.flybridge.com/ideas/the-bow/announcing-flybridge-2025",
+          "source_id": "flybridge_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "flybridge_about",
+          "source_url": "https://www.flybridge.com/",
+          "source_title": "Flybridge - The East Coast Firm Backing Our AI-Powered Future",
+          "source_content_hash": "af329496ce11940e0c771da5535d12540ed8eb2d72d6a94a5058ce9b317520f9",
+          "quote": "Early-stage investors backing ambitious founders building our AI-powered future.",
+          "quote_hash": "28bd532be45809462a98d154efa67dc0dabbe63f7a2fa0b07c826c47732e0a80"
+        },
+        {
+          "source_id": "flybridge_stages",
+          "source_url": "https://www.flybridge.com/",
+          "source_title": "Flybridge - The East Coast Firm Backing Our AI-Powered Future",
+          "source_content_hash": "af329496ce11940e0c771da5535d12540ed8eb2d72d6a94a5058ce9b317520f9",
+          "quote": "Pre-Seed Up to $250K Check Size. Seed $1M to $3M Check Size. Post -Series A $10M+ Check Size.",
+          "quote_hash": "4453b82bbaf7b2f3379660d0882c6a27f0dab037978e83a5e62ad17a518e3505"
+        },
+        {
+          "source_id": "flybridge_team",
+          "source_url": "https://www.flybridge.com/team",
+          "source_title": "Investment Team — Flybridge - The East Coast Firm Backing Our AI-Powered Future",
+          "source_content_hash": "9b296ab9d5d4e995f8ea0957c7f6385f891a47777602e1e89c9a19741fd03dcf",
+          "quote": "Chip Hazard General Partner; Jeff Bussgang General Partner; Jesse Middleton General Partner.",
+          "quote_hash": "df4e75366f93b32f6db07bcf7b489e7671ae64280c38251963754c6b178572db"
+        },
+        {
+          "source_id": "flybridge_fund",
+          "source_url": "https://www.flybridge.com/ideas/the-bow/announcing-flybridge-2025",
+          "source_title": "Announcing Flybridge 2025 — Flybridge - The East Coast Firm Backing Our AI-Powered Future",
+          "source_content_hash": "6bdbf00be1838aa318bcb9bc921327c2be8e31662b8c43406b76b7e963adaad4",
+          "quote": "Today, we're announcing Flybridge 2025, our seventh seed fund.",
+          "quote_hash": "376ebdf7980e5a7d2d3b79220c15ca3f1b996d29bb8ddc1f4bb56099f56a17f6"
+        },
+        {
+          "source_id": "flybridge_contact",
+          "source_url": "https://www.flybridge.com/ideas/the-bow/announcing-flybridge-2025",
+          "source_title": "Announcing Flybridge 2025 — Flybridge - The East Coast Firm Backing Our AI-Powered Future",
+          "source_content_hash": "6bdbf00be1838aa318bcb9bc921327c2be8e31662b8c43406b76b7e963adaad4",
+          "quote": "Reach out at hello@flybridge.com or learn more about our investment focus at flybridge.com",
+          "quote_hash": "b1a8f31508f5ab45160e1dafbc3cc59e6fb0c0f106eabca937298e1e40fc3996"
+        },
         {
           "source_id": "FISRC-4b3f6b59387f35f7",
           "source_url": "https://siliconangle.com/2026/01/14/voicerun-gets-5-5m-seed-funding-give-enterprises-control-voice-ai-agents/",
@@ -159,9 +259,37 @@
           "source_content_hash": "3250994a6860b476",
           "quote": "Today’s round was led by Flybridge Capital Partners",
           "quote_hash": "0ee2817d397c87a67ac5abc44b769fc5eae3a10daf170b793632e08c1e7940fb"
+        },
+        {
+          "source_id": "flybridge_chip",
+          "source_url": "https://www.flybridge.com/team",
+          "source_title": "Investment Team — Flybridge - The East Coast Firm Backing Our AI-Powered Future",
+          "source_content_hash": "9b296ab9d5d4e995f8ea0957c7f6385f891a47777602e1e89c9a19741fd03dcf",
+          "quote": "Chip Hazard General Partner",
+          "quote_hash": "1300e543f08109949eb401af86a51b7fb791f3825546c6a9494d195b042b5d84"
+        },
+        {
+          "source_id": "flybridge_jeff",
+          "source_url": "https://www.flybridge.com/team",
+          "source_title": "Investment Team — Flybridge - The East Coast Firm Backing Our AI-Powered Future",
+          "source_content_hash": "9b296ab9d5d4e995f8ea0957c7f6385f891a47777602e1e89c9a19741fd03dcf",
+          "quote": "Jeff Bussgang General Partner",
+          "quote_hash": "29bcc589405f82719a0acb62729dc6ae069cd844ede13957090458868c3ae054"
+        },
+        {
+          "source_id": "flybridge_jesse",
+          "source_url": "https://www.flybridge.com/team",
+          "source_title": "Investment Team — Flybridge - The East Coast Firm Backing Our AI-Powered Future",
+          "source_content_hash": "9b296ab9d5d4e995f8ea0957c7f6385f891a47777602e1e89c9a19741fd03dcf",
+          "quote": "Jesse Middleton General Partner",
+          "quote_hash": "72f5ec6feaf8571ff7761e0d96851d1c22ac52a8a08e7411c82964b1284125af"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "背景、策略、人员及联系渠道按官网或官方公开页面整理；业绩数字标为机构自述，融资案例仅代表本库核验到的公开披露，不代表完整投资组合或基金回报。"
     }
   }
 }
