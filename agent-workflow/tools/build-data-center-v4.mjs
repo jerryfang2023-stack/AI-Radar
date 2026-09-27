@@ -112,6 +112,7 @@ const PROPOSAL_ONLY = /\b(?:predicts?|proposes?|suggests?|calls? for)\b|预言|�
 const NEGATED_OR_SPECULATIVE_EVENT = /(?:合作|收购|并购|融资).{0,20}(?:可能性较低|可能性不大|尚无计划|不会|不太可能)|\b(?:unlikely|not expected|no plans?)\b.{0,50}\b(?:partner|acquir|merge|rais)/iu;
 const NON_AI_MERCHANDISE = /\b(?:merch(?:andise)?|basketball|t-?shirts?|hoodies?|apparel|swag)\b|官方周边|篮球|T\s*恤|卫衣/iu;
 const RUMOR = /\b(?:rumou?r|reportedly|leak(?:ed)?)\b|传闻|爆料|泄露|据称|消息称|据.{0,10}消息/iu;
+const PROPOSED_FINANCING_TITLE = /(?:计划|拟|准备|希望|寻求|考虑|开启|启动|洽谈|接触).{0,40}(?:新一轮|融资|募资)|(?:融资|募资|新一轮)(?:意向|计划|方案|洽谈|筹划)|\b(?:plans?|seeks?|seeking|aims?|targets?|prepares?|mulls?|considers?).{0,40}\b(?:raise|funding|financing|round)\b/iu;
 const DISPUTE = /\b(?:disputes?|disputed|denies?|denied|not (?:be )?final|could change)\b|否认|有争议|尚未最终确定|可能变化/iu;
 const IN_PROGRESS = /\b(?:in talks|in discussions|negotiating|seeking to)\b|洽谈|讨论中|正在谈判/iu;
 const PLANNED = /\b(?:plans? to|expected to|will|intends? to|proposed|set to be|to (?:launch|release|deploy|ship|introduce))\b|计划|预计|将|拟/iu;
@@ -260,6 +261,9 @@ function eventSourceEligibility(raw, artifact, title, dataDate = "", options = {
   if (titleIssue) return { accepted: false, reason: titleIssue };
   const reviewedRetainedSource = REVIEWED_RETAINED_SOURCE.test(cleanString(artifact.source_url));
   const sourceLead = cleanString(raw.clean_text || raw.full_text).slice(0, 1400);
+  if (options.eventType === "funding" && PROPOSED_FINANCING_TITLE.test(title)) {
+    return { accepted: false, reason: "proposed_financing_not_completed" };
+  }
   if (VERSIONED_DEVELOPER_PACKAGE_TITLE.test(title)
       && VERSIONED_DEVELOPER_PACKAGE_LEAD.test(sourceLead)) {
     return { accepted: false, reason: "versioned_developer_package_not_commercial_event" };

@@ -49,6 +49,18 @@ test("weekly market financing totals cannot become a single company financing ev
     true,
   );
 });
+test("prospective funding plans cannot enter completed-financing cards", () => {
+  const source = { published_at: "2026-09-24", acquisition_channel: "china-funding", raw_qc_decision: "pass" };
+  const artifact = { source_url: "https://www.qbitai.com/2026/07/450101.html" };
+  assert.equal(
+    eventSourceEligibility(source, artifact, "估值4800亿，DeepSeek火速开启新一轮融资！最快明年IPO", "2026-09-27", { eventType: "funding" }).reason,
+    "proposed_financing_not_completed",
+  );
+  assert.equal(
+    eventSourceEligibility(source, artifact, "DeepSeek宣布完成首轮外部融资", "2026-09-27", { eventType: "funding" }).accepted,
+    true,
+  );
+});
 test("accepted capture recovery restores date-scoped locators offline and fails closed", () => {
   const calls = [];
   restoreAcceptedChinaFundingEvidence("2026-09-14", (args) => calls.push(args));
@@ -140,6 +152,7 @@ test("domestic collection is an independent simultaneous job and only publicatio
   const parent = fs.readFileSync(".github/workflows/daily-persistent-assets-pr.yml", "utf8");
   const child = fs.readFileSync(".github/workflows/china-funding-pr.yml", "utf8");
   assert.match(parent, /jobs:\s+china-funding:/u);
+  assert.match(parent, /china-funding:\s+name:[^\n]+\s+if:\s+\$\{\{\s*inputs\.resume_run_id\s*==\s*''\s*\}\}/u);
   assert.match(parent, /gh workflow run china-funding-pr\.yml --ref main/u);
   assert.doesNotMatch(parent, /uses: \.\/\.github\/workflows\/china-funding-pr/u);
   assert.match(child, /--dir "\$RUNNER_TEMP\/china-funding-checkpoint"/u);
