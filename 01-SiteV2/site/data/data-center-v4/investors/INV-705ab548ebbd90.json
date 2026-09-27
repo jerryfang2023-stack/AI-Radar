@@ -131,18 +131,77 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "珠海科技集团 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "珠海科技集团即珠海科技产业集团有限公司，由华发集团与格力集团共同组建，2025年注册成立，注册资本500亿元。珠海高新区公开资料称其整合产业园区运营、科创投资、金融投资及产业链资源，重点布局半导体、人工智能、新能源和医疗健康。融资数据库记录其参与无问芯穹融资；披露的轮次金额不是该集团单笔出资额。",
+      "coverage_note": "组织背景来自珠海市中小企业服务中心转载的珠海高新区公开资料；联系方式来自该集团一则政府采购公告，只能作为公告中所列业务联系。公开材料未披露该笔融资由集团内哪一基金或投资主体执行，也未披露集团单笔出资额。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "机构全称",
+          "value": "珠海科技产业集团有限公司",
+          "source_id": "zhuhai_group_overview"
+        },
+        {
+          "field": "formation",
+          "label": "组建时间与注册资本",
+          "value": "2025年5月组建；注册资本人民币500亿元。",
+          "source_id": "zhuhai_group_overview"
+        },
+        {
+          "field": "ownership",
+          "label": "组建背景",
+          "value": "由华发集团与格力集团共同组建。",
+          "source_id": "zhuhai_group_overview"
+        },
+        {
+          "field": "business_model",
+          "label": "平台定位",
+          "value": "整合产业园区运营、科技投资、金融投资及产业链资源，建设技术研发、成果转化和产业投资平台。",
+          "source_id": "zhuhai_group_overview"
+        },
+        {
+          "field": "sectors",
+          "label": "公开重点产业",
+          "value": "新能源、半导体与集成电路、医疗健康、人工智能。",
+          "source_id": "zhuhai_group_focus"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2025-05",
+          "description": "珠海高新区资料披露集团正式注册成立，注册资本500亿元。",
+          "source_id": "zhuhai_group_overview"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：无问芯穹 · 基础设施融资 · 2026-05-07 · A+轮领投 · 7 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资披露记录：2026-05-07，作为无问芯穹基础设施融资的领投方之一；披露轮次总额约7亿元。该金额是融资总额，不是已披露的集团单笔投资额。",
           "source_id": "FISRC-f3ef8441c682402c"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "珠海市中小企业服务中心发布的集团资料",
+          "value": "珠海科技产业集团公开资料",
+          "source_id": "zhuhai_group_overview",
+          "url": "https://www.zhsme.org.cn/news/getNewsByNewsId?newsId=8f772d4e-0941-4054-980d-9946274d0b1d"
+        },
+        {
+          "kind": "phone",
+          "label": "集团政府采购公告所列业务联系电话（限该公告事项）",
+          "value": "0756-3666270",
+          "source_id": "zhuhai_public_contact",
+          "url": "https://www.zhaeec.com/prjs/qycg/detail/16342.html"
+        },
+        {
+          "kind": "address",
+          "label": "集团政府采购公告所列联系地址",
+          "value": "珠海市横琴新区华金街58号横琴国际金融中心35层",
+          "source_id": "zhuhai_public_contact",
+          "url": "https://www.zhaeec.com/prjs/qycg/detail/16342.html"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-f3ef8441c682402c",
@@ -151,9 +210,33 @@
           "source_content_hash": "1f9b8e650ca49434",
           "quote": "The financing was led by Zhuhai Technology Group and Fortune Capital's Yuanchuang Future Fund",
           "quote_hash": "7d45cc3039bba1037f5c4e7d4281a3409c6fb93dffca7047b036db0ca617207a"
+        },
+        {
+          "source_id": "zhuhai_group_overview",
+          "source_url": "https://www.zhsme.org.cn/news/getNewsByNewsId?newsId=8f772d4e-0941-4054-980d-9946274d0b1d",
+          "source_title": "注册资本500亿！珠海科技产业集团落户珠海高新区",
+          "source_content_hash": "9b1791211dbdaac8889cae945122f56936069668c5815076b3168bdf31e47666",
+          "quote": "珠海科技集团由华发集团与格力集团共同组建",
+          "quote_hash": "9c4c45601280d639356595675d5053df9651845086e43688f03c8090e5f09f2a"
+        },
+        {
+          "source_id": "zhuhai_group_focus",
+          "source_url": "https://www.zhsme.org.cn/news/getNewsByNewsId?newsId=8f772d4e-0941-4054-980d-9946274d0b1d",
+          "source_title": "注册资本500亿！珠海科技产业集团落户珠海高新区",
+          "source_content_hash": "9b1791211dbdaac8889cae945122f56936069668c5815076b3168bdf31e47666",
+          "quote": "重点布局新能源、半导体与集成电路、医疗健康、人工智能等领域",
+          "quote_hash": "fcd36a8a019873bc60f9824aa0592df14ade6340d5db66e3c79efa8c8e81c35d"
+        },
+        {
+          "source_id": "zhuhai_public_contact",
+          "source_url": "https://www.zhaeec.com/prjs/qycg/detail/16342.html",
+          "source_title": "珠海科技产业集团2025-2027年财务审计项目更正公告",
+          "source_content_hash": "ef6d4025018ae3947a5b7df820d4cd5cbc5ab0e0963b4309bc7063788e8f7e4e",
+          "quote": "联系电话：0756-3666270",
+          "quote_hash": "c4350c010b4d5130d18d7f12d7c1364c81cc92ec7ec90b68d8e2766c959c4aa0"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }
