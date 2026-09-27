@@ -31,6 +31,24 @@ test("financing commentary and multi-event headlines cannot become company finan
   assert.equal(eventSourceEligibility(source, artifact, "智谱约50亿美元融资落定Anthropic敲定纳斯达克上市计划南京最大国资平台揭牌", "2026-09-14", { eventType: "funding" }).reason, "multi_event_roundup_not_single_event_source");
   assert.equal(eventSourceEligibility(source, artifact, "智谱宣布完成约50亿美元融资，用于下一代GLM基础模型研发", "2026-09-14", { eventType: "funding" }).accepted, true);
 });
+test("weekly market financing totals cannot become a single company financing event", () => {
+  const source = { published_at: "2026-09-27", acquisition_channel: "china-funding", raw_qc_decision: "pass" };
+  const artifact = { source_url: "https://www.cls.cn/detail/2493327" };
+  for (const title of [
+    "财联社创投通：一级市场本周143起融资，深蓝航天完成近20亿元新融资",
+    "一级市场本周融资总额超230亿元，智平方50亿元融资领跑",
+  ]) {
+    assert.equal(
+      eventSourceEligibility(source, artifact, title, "2026-09-27", { eventType: "funding" }).reason,
+      "multi_event_roundup_not_single_event_source",
+      title,
+    );
+  }
+  assert.equal(
+    eventSourceEligibility(source, artifact, "深蓝航天完成近20亿元新融资", "2026-09-27", { eventType: "funding" }).accepted,
+    true,
+  );
+});
 test("accepted capture recovery restores date-scoped locators offline and fails closed", () => {
   const calls = [];
   restoreAcceptedChinaFundingEvidence("2026-09-14", (args) => calls.push(args));
