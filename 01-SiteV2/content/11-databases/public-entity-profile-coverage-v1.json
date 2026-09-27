@@ -72675,18 +72675,7 @@
     "INV-cf28dd74a00d81": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Capital 49 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：Avoca AI · 多轮融资 · 2026-04-27 · B轮参投 · 超过1.25亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3b2454278fe6d93e"
-        }
-      ],
-      "contacts": [],
+      "coverage_status": "researched",
       "sources": [
         {
           "source_id": "FISRC-3b2454278fe6d93e",
@@ -72695,9 +72684,105 @@
           "source_content_hash": "0eedb637d7c86cdc",
           "quote": "Capital 49 is backing Avoca in their Series B raise.",
           "quote_hash": "5b64093e0378fec94db7e6e3edb388a866bdd6e328088af13bc344fa73eb960c"
+        },
+        {
+          "source_id": "FISRC-2315f11e10b4df0e",
+          "source_url": "https://www.avoca.ai/blog/avoca-raises-125m-series-b-1b-valuation",
+          "source_title": "Why We Are Building — Avoca | Avoca AI",
+          "source_content_hash": "81473027d0be2429",
+          "quote": "more than $125 million across Seed, Series A, and Series B.",
+          "quote_hash": "14fb88040adfac91fe0b5959223e316fbef8845777b13a87c8df7ade5f08d297"
+        },
+        {
+          "source_id": "capital49_home",
+          "source_url": "https://www.capital49.com/",
+          "source_title": "Capital 49",
+          "source_content_hash": "be315b2c202dfdee00ff610f9b4fe2261597eb14f7071777df191fe6bde86360",
+          "quote": "A new venture fund backed by the founders of Airwallex",
+          "quote_hash": "6d56de2fb1406ad4d9bee24e7fa9b4cb502e7c707e7dd728668f3fd83e9e23c4"
+        },
+        {
+          "source_id": "capital49_team",
+          "source_url": "https://www.capital49.com/team",
+          "source_title": "Capital 49 Team",
+          "source_content_hash": "6b00a8db22bc374db8548eacd0b13b13af3044200a85c4827ff83f0925832a11",
+          "quote": "Chris leads Capital 49’s investment strategy.",
+          "quote_hash": "490485d4cd0102a84cf83319cce1c15cd4c907c1af402ccd014a9dbd1fe39f9c"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "summary": "Capital 49 is a venture fund backed by Airwallex’s founders. It says it invests in fintech, e-commerce, artificial intelligence, and B2B software, and draws on its team’s operating and investment experience.",
+      "coverage_note": "机构定位、投资方向、团队履历和联系邮箱来自 Capital 49 官网。该机构的合伙人 Christopher Cheng 在公开帖子中明确表示 Capital 49 支持 Avoca 的 Series B；Avoca 对外披露的超过 1.25 亿美元为 Seed 至 Series B 的累计融资，并非 Capital 49 的单笔金额。",
+      "facts": [
+        {
+          "field": "firm_background",
+          "label": "机构背景",
+          "value": "官网称 Capital 49 是由 Airwallex 创始人支持的新风险投资基金。",
+          "source_id": "capital49_home"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "金融科技、电子商务、人工智能与 B2B 软件。",
+          "source_id": "capital49_home"
+        },
+        {
+          "field": "team_experience",
+          "label": "团队经验",
+          "value": "官网团队履历覆盖创业运营、投资银行、私募股权、SoftBank Vision Fund、Obvious Ventures、468 Capital、Sapphire Ventures 与 Goldman Sachs。",
+          "source_id": "capital49_team"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "Founder — Jack Zhang",
+          "organization": "Capital 49",
+          "source_id": "capital49_team"
+        },
+        {
+          "title": "Partner — Christopher Cheng",
+          "organization": "Capital 49",
+          "source_id": "capital49_team"
+        },
+        {
+          "title": "Partner — Philipp Seifert",
+          "organization": "Capital 49",
+          "source_id": "capital49_team"
+        },
+        {
+          "title": "Partner — Kai Wu",
+          "organization": "Capital 49",
+          "source_id": "capital49_team"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "Christopher Cheng 在公开帖子中表示 Capital 49 支持 Avoca 的 Series B；帖子未披露 Capital 49 的单笔出资金额。",
+          "source_id": "FISRC-3b2454278fe6d93e"
+        },
+        {
+          "description": "Avoca 称其 Seed 至 Series B 累计融资超过 1.25 亿美元；该总额不代表 Capital 49 的单笔出资金额。",
+          "source_id": "FISRC-2315f11e10b4df0e"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Capital 49 官方网站",
+          "value": "Capital 49",
+          "url": "https://www.capital49.com/",
+          "source_id": "capital49_home"
+        },
+        {
+          "kind": "email",
+          "label": "官网公开联系邮箱",
+          "value": "info@capital49.com",
+          "source_id": "capital49_home"
+        }
+      ],
+      "last_verified_at": "2026-09-27"
     },
     "INV-d2859cc823accb": {
       "profile_type": "organization",
@@ -101139,18 +101224,7 @@
     "INV-c8187df3dc0126": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Alt Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：Avoca AI · 多轮融资 · 2026-04-27 · 既有投资方 · 超过1.25亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3b2454278fe6d93e"
-        }
-      ],
-      "contacts": [],
+      "coverage_status": "researched",
       "sources": [
         {
           "source_id": "FISRC-3b2454278fe6d93e",
@@ -101159,25 +101233,95 @@
           "source_content_hash": "0eedb637d7c86cdc",
           "quote": "Jack Altman from Alt Capital",
           "quote_hash": "1f13f0a69b692e3372352ab83e985e511cd3e001ca384a46f86604ee30ed95d0"
+        },
+        {
+          "source_id": "avoca_careers_2026",
+          "source_url": "https://www.avoca.ai/careers",
+          "source_title": "Careers | Avoca AI",
+          "source_content_hash": "7b110d8fdf71e4d29db58661bbcf94a6943d85750e80ea7fd07704663f0d0058",
+          "quote": "Alt Capital",
+          "quote_hash": "478651b20834f440ef94bf29cd43fa41348b5c4d5fd3f00481c4c06bd9bad62c"
+        },
+        {
+          "source_id": "altcap_home",
+          "source_url": "https://www.altcap.com/",
+          "source_title": "Alt Capital",
+          "source_content_hash": "ebcd03a9bc3265abfa00b63be5665d682a1ba75b4b0869288d6a1dd7526b261e",
+          "quote": "Alt Capital",
+          "quote_hash": "478651b20834f440ef94bf29cd43fa41348b5c4d5fd3f00481c4c06bd9bad62c"
+        },
+        {
+          "source_id": "altcap_sec_form_d_2024",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2008825/000200882524000001/xslFormDX01/primary_doc.xml",
+          "source_title": "SEC Form D — Alt Capital I, L.P.",
+          "source_content_hash": "042278cb42cb668134b913f70217acfb9f74b05bcbf73aa67c2e3c44f27fae3d",
+          "quote": "Managing Director of the General Partner of the Issuer",
+          "quote_hash": "35ca996e0425ef00fc040b37f553f5515e4e3646b23d3ff8beabe5a25d7f123f"
         }
       ],
-      "last_verified_at": "2026-09-26"
-    },
-    "INV-f6606623879570": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Audacious Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "SEC Form D records Alt Capital I, L.P. and names Jack Altman as managing director of its general partner. Avoca’s careers page also displays Alt Capital in its investor group. Public sources reviewed here do not disclose Alt Capital’s individual investment amount in Avoca.",
+      "coverage_note": "本档案依据 SEC Form D 与 Avoca 官网可见信息建立。申报可确认 Alt Capital I, L.P. 这一基金载体及 Jack Altman 在其普通合伙人中的申报职务；Avoca 招聘页将 Alt Capital 列入投资方标识。公开材料未披露该基金在 Avoca 的单笔金额，也未提供可核验的完整投资组合或业绩。Alt Capital 官网当前可读文字有限。",
+      "facts": [
+        {
+          "field": "fund_vehicle",
+          "label": "基金载体",
+          "value": "SEC 于 2024 年备案 Alt Capital I, L.P.，并列 Jack Altman 为该载体普通合伙人的 Managing Director。",
+          "source_id": "altcap_sec_form_d_2024"
+        },
+        {
+          "field": "public_site",
+          "label": "官方主页",
+          "value": "机构官网使用 Alt Capital 名称；公开主页未提供可核验的投资策略或业绩说明。",
+          "source_id": "altcap_home"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "milestones": [
+        {
+          "date": "2024-02-07",
+          "description": "SEC Form D 记录 Alt Capital I, L.P. 的豁免发行备案。",
+          "source_id": "altcap_sec_form_d_2024"
+        }
+      ],
       "track_record": [
+        {
+          "description": "Avoca 的招聘页面将 Alt Capital 列在投资方标识中；页面未披露对应轮次的单笔投资金额。",
+          "source_id": "avoca_careers_2026"
+        },
         {
           "description": "融资来源记录：Avoca AI · 多轮融资 · 2026-04-27 · 既有投资方 · 超过1.25亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3b2454278fe6d93e"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Alt Capital 官方网站",
+          "value": "Alt Capital",
+          "url": "https://www.altcap.com/",
+          "source_id": "altcap_home"
+        },
+        {
+          "kind": "address",
+          "label": "2024 年 Alt Capital I, L.P. SEC 备案营业地址（非确认中的最新地址）",
+          "value": "660 York Street, San Francisco, CA 94110",
+          "source_id": "altcap_sec_form_d_2024"
+        },
+        {
+          "kind": "phone",
+          "label": "2024 年 Alt Capital I, L.P. SEC 备案电话（未核实是否仍有效）",
+          "value": "+1 314 497 4264",
+          "source_id": "altcap_sec_form_d_2024"
+        }
+      ],
+      "last_verified_at": "2026-09-27"
+    },
+    "INV-f6606623879570": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
       "sources": [
         {
           "source_id": "FISRC-3b2454278fe6d93e",
@@ -101186,25 +101330,71 @@
           "source_content_hash": "0eedb637d7c86cdc",
           "quote": "Nakul Mandan ( Audacious Ventures )",
           "quote_hash": "f6c1a9b70f1cf1a94a2b90e3b669e5099467dd2f337479640ccf3cc7d062fb02"
+        },
+        {
+          "source_id": "audacious_home",
+          "source_url": "https://www.audacious.co/",
+          "source_title": "Audacious Ventures — investment approach",
+          "source_content_hash": "579f95afe69d9eb373b316497ad0c1930fb1fe317b3ee73bdaa9c06f8a6e8db5",
+          "quote": "The most important decisions we make are the founders we choose to back.",
+          "quote_hash": "76d48e07c1742f66c664c63404e622383cf1116a518b9946858ce3aac737da03"
+        },
+        {
+          "source_id": "audacious_team",
+          "source_url": "https://www.audacious.co/team",
+          "source_title": "Audacious Ventures — team",
+          "source_content_hash": "d5cea8dac5564de4dff138df4c70770aa1364adcfadc4408526934e822914c89",
+          "quote": "Nakul Mandan Founder & Partner",
+          "quote_hash": "7556b20666d0aafe9199079f3bce9cde78de5b65be455af238d49c5a0b818598"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "summary": "Audacious Ventures describes its work as backing founders pursuing unusually ambitious outcomes and helping them build teams, scale go-to-market, and remove capital constraints. Its team page lists Nakul Mandan as Founder & Partner.",
+      "coverage_note": "策略与团队职务均来自机构官网自述。Avoca 相关融资来源将 Nakul Mandan 与 Audacious Ventures 一同列入更广泛的投资人/支持者名单，但未披露该基金是否直接出资、具体轮次或金额；本档案不将其表述为已核实的单笔交易。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "投资理念",
+          "value": "官网强调优秀团队与大市场的结合，并将创始人选择视为核心投资决策。",
+          "source_id": "audacious_home"
+        },
+        {
+          "field": "founder_support",
+          "label": "创始人支持",
+          "value": "官网列出的支持方向包括招募团队、把创始人主导销售转为可复制的增长流程，以及减少资本约束。",
+          "source_id": "audacious_home"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "Founder & Partner",
+          "organization": "Audacious Ventures",
+          "source_id": "audacious_team"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "Capital 49 合伙人的公开融资说明将 Nakul Mandan 与 Audacious Ventures 列入 Avoca 更广泛的投资人/支持者名单；未披露该机构的单笔金额或是否通过基金出资。",
+          "source_id": "FISRC-3b2454278fe6d93e"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Audacious Ventures 官方网站与创始人入口",
+          "value": "Audacious Ventures",
+          "url": "https://www.audacious.co/",
+          "source_id": "audacious_home"
+        }
+      ],
+      "last_verified_at": "2026-09-27"
     },
     "INV-76716a618201d0": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Formus Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：Avoca AI · 多轮融资 · 2026-04-27 · 既有投资方 · 超过1.25亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3b2454278fe6d93e"
-        }
-      ],
-      "contacts": [],
+      "coverage_status": "researched",
       "sources": [
         {
           "source_id": "FISRC-3b2454278fe6d93e",
@@ -101213,9 +101403,64 @@
           "source_content_hash": "0eedb637d7c86cdc",
           "quote": "Cem Garih and Burak Karahasan ( Formus Capital )",
           "quote_hash": "b0f3413fde7c13e1f9221552b0818c9fd578ad47a78fb38433f4ae8f632816b5"
+        },
+        {
+          "source_id": "formus_home",
+          "source_url": "https://formuscap.com/",
+          "source_title": "Formus Capital",
+          "source_content_hash": "9c636de96e9d5da39849a45ed722b61218e75659e37457e73027a5c61469fbcb",
+          "quote": "Formus Capital is a venture capital firm investing in early-stage technology companies shaping the future.",
+          "quote_hash": "8406431046f2925ce467beee7391bf05a5c917548c259a90a4c6458f1b46e222"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "summary": "Formus Capital describes itself as a family-office-backed global technology investment firm and an early-stage venture investor. Its stated focus includes U.S. B2B companies in AI, software, and data infrastructure.",
+      "coverage_note": "机构定位、投资方向和 contact@formuscap.com 均来自 Formus Capital 官网自述。Avoca 的投资人来源将 Cem Garih 与 Burak Karahasan 和 Formus Capital 联系起来，但没有说明二人是否代表基金对 Avoca 出资，也没有披露单笔金额。官网对部分“过往投资”另有个人投资及旧基金免责声明，本档案不据此推算完整投资组合或回报。",
+      "facts": [
+        {
+          "field": "firm_background",
+          "label": "机构背景",
+          "value": "官网称其为由多领域家族办公室网络支持的全球科技投资机构。",
+          "source_id": "formus_home"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期科技企业。",
+          "source_id": "formus_home"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "AI、软件与数据基础设施；官网称其侧重美国市场及 B2B。",
+          "source_id": "formus_home"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "Capital 49 合伙人的公开帖子将 Cem Garih 与 Burak Karahasan 和 Formus Capital 一同列在 Avoca 的投资人/支持者语境中；未披露基金级出资金额或投资轮次。",
+          "source_id": "FISRC-3b2454278fe6d93e"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Formus Capital 官方网站",
+          "value": "Formus Capital",
+          "url": "https://formuscap.com/",
+          "source_id": "formus_home"
+        },
+        {
+          "kind": "email",
+          "label": "官网公开联系邮箱",
+          "value": "contact@formuscap.com",
+          "source_id": "formus_home"
+        }
+      ],
+      "last_verified_at": "2026-09-27"
     },
     "INV-12215fe701083d": {
       "profile_type": "unverified",
@@ -101247,18 +101492,7 @@
     "INV-b4c1474297ba52": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Latitude Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：Avoca AI · 多轮融资 · 2026-04-27 · 既有投资方 · 超过1.25亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3b2454278fe6d93e"
-        }
-      ],
-      "contacts": [],
+      "coverage_status": "researched",
       "sources": [
         {
           "source_id": "FISRC-3b2454278fe6d93e",
@@ -101267,25 +101501,71 @@
           "source_content_hash": "0eedb637d7c86cdc",
           "quote": "Ansaf Kareem ( Latitude Capital )",
           "quote_hash": "be68f9e93753a4be5c0203dcca35dbfc3d92c295bed273f7ac415bd023ac8cab"
+        },
+        {
+          "source_id": "latitude_about",
+          "source_url": "https://www.latitudecp.com/about",
+          "source_title": "Latitude Capital — About",
+          "source_content_hash": "a53c22e214e7fd1fa56034cb5898c7b32853bb31c6c595478d3110292a75fae9",
+          "quote": "Latitude is a venture capital firm focused on being the first call and partner to founders scaling from 0 to 1.",
+          "quote_hash": "5b8029151ed7e49a6baea6664734270d0300e0d789c23e0102441b1d99bb639f"
+        },
+        {
+          "source_id": "latitude_contact",
+          "source_url": "https://www.latitudecp.com/contact",
+          "source_title": "Latitude Capital — Contact",
+          "source_content_hash": "bd08d014e9e1169830e8049a9a54b151408d5fd1c6f949861570d6c3f2b58747",
+          "quote": "Contact Latitude",
+          "quote_hash": "928275a1d88145845ecad58c129c938308386a3b1d8ed2cd81360e741fc3c5ef"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "summary": "Latitude Capital describes itself as a venture firm partnering with founders from ideation through product-market fit, with a stated focus on AI and software reshaping workflows in core sectors.",
+      "coverage_note": "策略和公开联系入口来自 Latitude Capital 的官方网站。Capital 49 合伙人的 Avoca 帖子将 Ansaf Kareem 与 Latitude Capital 一同列入投资人/支持者名单；来源没有说明机构层面的出资结构、轮次金额或 Ansaf Kareem 是否代表基金出资。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网称其在创意形成到产品市场契合阶段与创始人合作。",
+          "source_id": "latitude_about"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "主要关注 AI 与软件如何重塑核心行业工作流。",
+          "source_id": "latitude_about"
+        },
+        {
+          "field": "founder_support",
+          "label": "创始人支持",
+          "value": "官网将自身定位为创始人从 0 到 1 阶段的优先合作伙伴。",
+          "source_id": "latitude_about"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "Capital 49 合伙人的公开帖子将 Ansaf Kareem 与 Latitude Capital 列在 Avoca 更广泛的投资人/支持者名单中；未披露该机构的单笔金额。",
+          "source_id": "FISRC-3b2454278fe6d93e"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "contact_form",
+          "label": "Latitude Capital 官网联系入口",
+          "value": "Contact Latitude",
+          "url": "https://www.latitudecp.com/contact",
+          "source_id": "latitude_contact"
+        }
+      ],
+      "last_verified_at": "2026-09-27"
     },
     "INV-6fc55e8449f3eb": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Pathlight Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：Avoca AI · 多轮融资 · 2026-04-27 · 既有投资方 · 超过1.25亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3b2454278fe6d93e"
-        }
-      ],
-      "contacts": [],
+      "coverage_status": "researched",
       "sources": [
         {
           "source_id": "FISRC-3b2454278fe6d93e",
@@ -101294,25 +101574,67 @@
           "source_content_hash": "0eedb637d7c86cdc",
           "quote": "Charley Ma (Pathlight Ventures)",
           "quote_hash": "dcac59e0ad23f5b094ef125a979c5e162a790b8b22a9bf5e20d91290f97c82b9"
+        },
+        {
+          "source_id": "pathlight_home",
+          "source_url": "https://pathlight.vc/",
+          "source_title": "Pathlight — Early-Stage Venture Fund",
+          "source_content_hash": "24fef3cbd7ebaa6a16807926685e630bbcd076df84936d05d354c02489ae6795",
+          "quote": "We are low volume, high conviction, early-stage investors.",
+          "quote_hash": "b69de9e060445ed6bc5903577c26697698db70e00dd7651b0c617cf5281825f8"
         }
       ],
-      "last_verified_at": "2026-09-26"
-    },
-    "INV-65aa6ff382dfb7": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "REMUS Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Pathlight is an early-stage venture fund that describes its approach as low-volume and high-conviction. It lists Avoca in its physical-world portfolio and says it helps founders with early customers, hiring, introductions, and tactical advice.",
+      "coverage_note": "投资阶段、策略、公开组合与创始人支持方式来自 Pathlight 官网；Avoca 被列在 Physical World 组合板块。Capital 49 合伙人的投资人帖子也将 Charley Ma 与 Pathlight Ventures 一同列出，但不披露该基金对 Avoca 的单笔金额。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期风险投资。",
+          "source_id": "pathlight_home"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资方式",
+          "value": "官网自述为低数量、高信念投资，并采取主题与客户驱动的市场选择方式。",
+          "source_id": "pathlight_home"
+        },
+        {
+          "field": "founder_support",
+          "label": "创始人支持",
+          "value": "官网列出早期客户引荐、首批招聘、投资人介绍与战术建议等支持。",
+          "source_id": "pathlight_home"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Pathlight 官网在 Physical World 组合中列出 Avoca；Capital 49 合伙人的帖子另将 Charley Ma 与 Pathlight Ventures 联系起来，但未披露单笔投资金额。",
+          "source_id": "pathlight_home"
+        },
         {
           "description": "融资来源记录：Avoca AI · 多轮融资 · 2026-04-27 · 既有投资方 · 超过1.25亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3b2454278fe6d93e"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Pathlight Ventures 官方网站及创业者联系入口",
+          "value": "Pathlight",
+          "url": "https://pathlight.vc/",
+          "source_id": "pathlight_home"
+        }
+      ],
+      "last_verified_at": "2026-09-27"
+    },
+    "INV-65aa6ff382dfb7": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
       "sources": [
         {
           "source_id": "FISRC-3b2454278fe6d93e",
@@ -101321,25 +101643,71 @@
           "source_content_hash": "0eedb637d7c86cdc",
           "quote": "Krishna K. Gupta ( REMUS Capital )",
           "quote_hash": "737769c5043514e34ea37fbabf08d2d5ae7ddfcff97bc03985b70cf500e1c6e2"
+        },
+        {
+          "source_id": "remus_sec_proxy_2026",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1427570/000121390026032407/ea0282811-pre14a_vyome.htm",
+          "source_title": "Vyome Holdings — Preliminary Proxy Statement (2026)",
+          "source_content_hash": "1b463bbc85d8572e0607c9cc70a1edd0bac25f9f917e5ea0829de89dcee30512",
+          "quote": "He is the founder and CEO of REMUS Capital, a technology-focused venture capital firm he initially founded in 2008.",
+          "quote_hash": "f33a24edfd20497788c003a9469dda9b7b6de043880ebec0268bf4a849ed417a"
         }
       ],
-      "last_verified_at": "2026-09-26"
-    },
-    "INV-5a3ac74b220594": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "TCP Venture Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "A 2026 SEC proxy filing describes Krishna K. Gupta as founder and CEO of REMUS Capital, a technology-focused venture capital firm founded in 2008. The filing also lists public-company and private-company board associations; it does not report fund returns or allocate each company connection to a specific Remus fund.",
+      "coverage_note": "机构成立年份、类型与 Krishna K. Gupta 的职务依据 SEC 申报。REMUS Capital 官网某页面当前混入与机构无关的博彩 SEO 文本，本档案不引用该页面或其联系方式；所列公司关联按 SEC 文件表述，不视为该基金完整投资组合或业绩。Avoca 融资来源将 Krishna K. Gupta 与 REMUS Capital 放在投资人/支持者语境中，但未披露基金级别的单笔金额。",
+      "facts": [
+        {
+          "field": "firm_background",
+          "label": "机构背景",
+          "value": "SEC 文件将 REMUS Capital 描述为专注科技的风险投资机构。",
+          "source_id": "remus_sec_proxy_2026"
+        },
+        {
+          "field": "founding_year",
+          "label": "成立年份",
+          "value": "SEC 文件称 Krishna K. Gupta 于 2008 年创立该机构。",
+          "source_id": "remus_sec_proxy_2026"
+        },
+        {
+          "field": "public_company_associations",
+          "label": "公开公司关联",
+          "value": "SEC 文件列出 Krishna K. Gupta 与 Ceres AI、Spotta、ZeroCater、Presto 等公司的董事或创始人关联；文件未将每项关联逐一归属为 REMUS Capital 基金投资。",
+          "source_id": "remus_sec_proxy_2026"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "Founder and CEO",
+          "organization": "REMUS Capital",
+          "source_id": "remus_sec_proxy_2026"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "milestones": [
+        {
+          "date": "2008",
+          "description": "SEC 文件称 Krishna K. Gupta 于 2008 年创立 REMUS Capital。",
+          "source_id": "remus_sec_proxy_2026"
+        }
+      ],
       "track_record": [
+        {
+          "description": "SEC 文件记录 Krishna K. Gupta 与多家科技公司的公开治理或创业关联；这些关联不构成基金回报、完整组合或单笔出资额证明。",
+          "source_id": "remus_sec_proxy_2026"
+        },
         {
           "description": "融资来源记录：Avoca AI · 多轮融资 · 2026-04-27 · 既有投资方 · 超过1.25亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3b2454278fe6d93e"
         }
       ],
       "contacts": [],
+      "last_verified_at": "2026-09-27"
+    },
+    "INV-5a3ac74b220594": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "activity_only",
       "sources": [
         {
           "source_id": "FISRC-3b2454278fe6d93e",
@@ -101348,16 +101716,18 @@
           "source_content_hash": "0eedb637d7c86cdc",
           "quote": "Ian Feeney and Andy Linder ( TCP Venture Capital )",
           "quote_hash": "c2f9a7919228c737dc53c5f5a9eeaec651a224ea2d638fa089a02518b9e2d69b"
+        },
+        {
+          "source_id": "tcp_vc_home",
+          "source_url": "https://tcp.vc/",
+          "source_title": "TCP Venture Capital",
+          "source_content_hash": "be8f42441d531ac13d9dc89146a763255938fb47295b67c3c8a826884d46afbc",
+          "quote": "TCP Venture Capital is a Baltimore, Maryland-based early-stage technology focused venture capital firm.",
+          "quote_hash": "4dcd3b655467b980a82840a33e79dfdab18b1375b3da06154a00295af3891ec7"
         }
       ],
-      "last_verified_at": "2026-09-26"
-    },
-    "INV-66d4b0e74f983c": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Vicus Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "The Avoca-related financing source names Ian Feeney and Andy Linder alongside “TCP Venture Capital.” The official TCP Venture Capital site reviewed here describes a Baltimore-based early-stage technology investor, but does not list those individuals or establish that it is the same entity named in the Avoca source.",
+      "coverage_note": "同名主体尚未完成核验。公开融资来源将 Ian Feeney、Andy Linder 与 TCP Venture Capital 放在 Avoca 的投资人/支持者语境中；tcp.vc 官网则描述一家以巴尔的摩为投资地域条件的科技基金，未列出这两人。未确认二者为同一主体前，不将该官网的团队、投资方向、业绩或联系方式写入本档案。",
       "facts": [],
       "milestones": [],
       "track_record": [
@@ -101367,6 +101737,12 @@
         }
       ],
       "contacts": [],
+      "last_verified_at": "2026-09-27"
+    },
+    "INV-66d4b0e74f983c": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
       "sources": [
         {
           "source_id": "FISRC-3b2454278fe6d93e",
@@ -101375,9 +101751,78 @@
           "source_content_hash": "0eedb637d7c86cdc",
           "quote": "Manraj Singh Sandhu ( Vicus Ventures )",
           "quote_hash": "689746bfb7528e3b1f6c993d47424a40b72a2c40adf425253511eaeaa8148a0e"
+        },
+        {
+          "source_id": "vicus_home",
+          "source_url": "https://www.vicusventures.com/",
+          "source_title": "Vicus Ventures",
+          "source_content_hash": "f80b0217430085fb0861cbe28a74af0ea7ad898c3972246e6b3f2f24600fdc96",
+          "quote": "BUILT ON TRUST",
+          "quote_hash": "c3ce599aa4c9aba68bf0c1af6b9646fa55d55c88286f07a802f2d5b6b89f503d"
+        },
+        {
+          "source_id": "vicus_sec_form_d_2024",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2023812/000202381224000001/0002023812-24-000001-index.htm",
+          "source_title": "SEC EDGAR — Vicus Ventures Fund 1 LP Form D filing",
+          "source_content_hash": "9bf5ee9c6a8fc0553fa069d33a6bae02b272537eb8323c768bad8613c8ebac06",
+          "quote": "Vicus Ventures Fund 1 LP",
+          "quote_hash": "3af66c8dfa1bfe4966d4bb3b4e9bc17537e6485634b1409770a29c2e48513a7f"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "summary": "Vicus Ventures’ public site states “Built on trust, driven by excellence.” A 2024 SEC Form D filing separately records an issuer named Vicus Ventures Fund 1 LP; the filing does not disclose a fund size or investment performance in the record used here.",
+      "coverage_note": "官网提供的机构背景文字有限。SEC 于 2024 年接受的 Form D 记录了 Vicus Ventures Fund 1 LP 的备案名称、营业地址和电话；该备案单独证明基金载体信息，不足以推算管理规模、组合业绩或其对 Avoca 的单笔投资。Capital 49 合伙人的帖子将 Manraj Singh Sandhu 与 Vicus Ventures 一同列在投资人/支持者名单中。",
+      "facts": [
+        {
+          "field": "public_description",
+          "label": "官网自述",
+          "value": "Vicus 官网以“Built on trust, driven by excellence”描述其投资理念。",
+          "source_id": "vicus_home"
+        },
+        {
+          "field": "fund_vehicle",
+          "label": "基金载体",
+          "value": "SEC 2024 年备案列出 Vicus Ventures Fund 1 LP；备案本身未给出本档案可用的基金规模或业绩数据。",
+          "source_id": "vicus_sec_form_d_2024"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "milestones": [
+        {
+          "date": "2024-05-21",
+          "description": "SEC EDGAR 记录并接受 Vicus Ventures Fund 1 LP 的 Form D 备案。",
+          "source_id": "vicus_sec_form_d_2024"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "Capital 49 合伙人的公开帖子将 Manraj Singh Sandhu 与 Vicus Ventures 列在 Avoca 更广泛的投资人/支持者名单中；没有披露 Vicus Ventures Fund 1 LP 对 Avoca 的单笔投资或金额。",
+          "source_id": "FISRC-3b2454278fe6d93e"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Vicus Ventures 官方网站",
+          "value": "Vicus Ventures",
+          "url": "https://www.vicusventures.com/",
+          "source_id": "vicus_home"
+        },
+        {
+          "kind": "address",
+          "label": "2024 年 SEC 备案中的 Vicus Ventures Fund 1 LP 营业地址（不确认是否仍有效）",
+          "value": "606 W 57th Street, New York, NY 10019",
+          "source_id": "vicus_sec_form_d_2024"
+        },
+        {
+          "kind": "phone",
+          "label": "2024 年 SEC 备案中的 Vicus Ventures Fund 1 LP 电话（不确认是否仍有效）",
+          "value": "+1 252 292 9209",
+          "source_id": "vicus_sec_form_d_2024"
+        }
+      ],
+      "last_verified_at": "2026-09-27"
     },
     "INV-3deabeadc6f375": {
       "profile_type": "unverified",

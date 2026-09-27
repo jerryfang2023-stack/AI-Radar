@@ -131,18 +131,7 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Formus Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：Avoca AI · 多轮融资 · 2026-04-27 · 既有投资方 · 超过1.25亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3b2454278fe6d93e"
-        }
-      ],
-      "contacts": [],
+      "coverage_status": "researched",
       "sources": [
         {
           "source_id": "FISRC-3b2454278fe6d93e",
@@ -151,9 +140,64 @@
           "source_content_hash": "0eedb637d7c86cdc",
           "quote": "Cem Garih and Burak Karahasan ( Formus Capital )",
           "quote_hash": "b0f3413fde7c13e1f9221552b0818c9fd578ad47a78fb38433f4ae8f632816b5"
+        },
+        {
+          "source_id": "formus_home",
+          "source_url": "https://formuscap.com/",
+          "source_title": "Formus Capital",
+          "source_content_hash": "9c636de96e9d5da39849a45ed722b61218e75659e37457e73027a5c61469fbcb",
+          "quote": "Formus Capital is a venture capital firm investing in early-stage technology companies shaping the future.",
+          "quote_hash": "8406431046f2925ce467beee7391bf05a5c917548c259a90a4c6458f1b46e222"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "summary": "Formus Capital describes itself as a family-office-backed global technology investment firm and an early-stage venture investor. Its stated focus includes U.S. B2B companies in AI, software, and data infrastructure.",
+      "coverage_note": "机构定位、投资方向和 contact@formuscap.com 均来自 Formus Capital 官网自述。Avoca 的投资人来源将 Cem Garih 与 Burak Karahasan 和 Formus Capital 联系起来，但没有说明二人是否代表基金对 Avoca 出资，也没有披露单笔金额。官网对部分“过往投资”另有个人投资及旧基金免责声明，本档案不据此推算完整投资组合或回报。",
+      "facts": [
+        {
+          "field": "firm_background",
+          "label": "机构背景",
+          "value": "官网称其为由多领域家族办公室网络支持的全球科技投资机构。",
+          "source_id": "formus_home"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期科技企业。",
+          "source_id": "formus_home"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "AI、软件与数据基础设施；官网称其侧重美国市场及 B2B。",
+          "source_id": "formus_home"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "Capital 49 合伙人的公开帖子将 Cem Garih 与 Burak Karahasan 和 Formus Capital 一同列在 Avoca 的投资人/支持者语境中；未披露基金级出资金额或投资轮次。",
+          "source_id": "FISRC-3b2454278fe6d93e"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Formus Capital 官方网站",
+          "value": "Formus Capital",
+          "url": "https://formuscap.com/",
+          "source_id": "formus_home"
+        },
+        {
+          "kind": "email",
+          "label": "官网公开联系邮箱",
+          "value": "contact@formuscap.com",
+          "source_id": "formus_home"
+        }
+      ],
+      "last_verified_at": "2026-09-27"
     }
   }
 }
