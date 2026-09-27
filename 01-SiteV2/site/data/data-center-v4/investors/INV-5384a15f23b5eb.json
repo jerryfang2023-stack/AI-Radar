@@ -137,12 +137,33 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "上海科创旗下知识产权基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-04；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "融资披露中的“上海科创旗下知识产权基金”可对应公开披露的上海知识产权基金。上市公司公告称，该基金成立于2016年，由上海科创集团全资子公司上海战新投资作为持股30%的国有股东与社会资本共同设立，是上海科创集团“1+3”基金体系的一部分。公告还披露管理体系2025年新设5支基金、总规模10.39亿元并累计投资14个项目；这些是管理体系层面的数据，不应误读为单只基金规模或回报。",
+      "facts": [
+        {
+          "field": "official_identity",
+          "label": "公开披露名称",
+          "value": "上海知识产权基金；融资记录使用简称“上海科创旗下知识产权基金”。",
+          "source_id": "sh_ip_fund_filing"
+        },
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2016年",
+          "source_id": "sh_ip_fund_filing"
+        },
+        {
+          "field": "ownership",
+          "label": "设立关系",
+          "value": "上海科创集团全资子公司上海战新投资持股30%，并与社会民营资本共同设立。",
+          "source_id": "sh_ip_fund_filing"
+        },
+        {
+          "field": "manager_activity_2025",
+          "label": "管理体系2025年活动",
+          "value": "披露新设5支基金、总规模10.39亿元，累计投资14个项目；属管理体系披露，不是该单只基金的规模或收益。",
+          "source_id": "sh_ip_fund_filing"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +171,54 @@
           "source_id": "FISRC-a65ce425f6a14bd6"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "上海科创集团官网",
+          "value": "上海科技创业投资（集团）有限公司",
+          "url": "https://www.shstvc.com.cn/",
+          "source_id": "sh_stvc_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "母集团公开总机（非基金专线）",
+          "value": "021-22302800",
+          "url": "https://www.shstvc.com.cn/",
+          "source_id": "sh_stvc_contact"
+        },
+        {
+          "kind": "email",
+          "label": "母集团公开邮箱（非基金专属）",
+          "value": "info@shstvc.com.cn",
+          "url": "https://www.shstvc.com.cn/",
+          "source_id": "sh_stvc_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "sh_ip_fund_filing",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2025-12-31/1224910242.PDF",
+          "source_title": "上市公司公告：参与投资策源一期基金",
+          "source_content_hash": "aa3b07303f422fd3e2e792d7dfcc24ffc157f3a5d4d39a1b337ae7cb8d182709",
+          "quote": "上海知识产权基金成立于2016年，由上海科创集团全资子公司上海战新投资作为持股30%的国有股东与社会民营资本共同设立。",
+          "quote_hash": "aa3b07303f422fd3e2e792d7dfcc24ffc157f3a5d4d39a1b337ae7cb8d182709"
+        },
+        {
+          "source_id": "sh_stvc_history",
+          "source_url": "https://www.shstvc.com.cn/gywm/fzlc/",
+          "source_title": "上海科技创业投资集团｜发展历程",
+          "source_content_hash": "a04344058cea63e1ea9b77d9eeaf16b6f5d0602e19c7a47c506df0b59fba488b",
+          "quote": "2016年发起设立并管理上海知识产权扶持基金。",
+          "quote_hash": "a04344058cea63e1ea9b77d9eeaf16b6f5d0602e19c7a47c506df0b59fba488b"
+        },
+        {
+          "source_id": "sh_stvc_contact",
+          "source_url": "https://www.shstvc.com.cn/",
+          "source_title": "上海科技创业投资（集团）有限公司｜官方主页",
+          "source_content_hash": "42091d9b6ac2137648961e6a34cbb5a39dcd0abe1573888619e17ae35791e7e1",
+          "quote": "地址：上海市静安区铜仁路269号；电话：021-22302800；邮箱：info@shstvc.com.cn。",
+          "quote_hash": "42091d9b6ac2137648961e6a34cbb5a39dcd0abe1573888619e17ae35791e7e1"
+        },
         {
           "source_id": "FISRC-a65ce425f6a14bd6",
           "source_url": "https://news.pedaily.cn/202609/568532.shtml",
@@ -161,7 +228,11 @@
           "quote_hash": "63cc64e026257c66ef879cdc3ec4b8d1d9c592b120f4c191292f6ba20fa7b625"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "融资库简称与上市公司公告中的“上海知识产权基金”相符。2025年新设基金及累计投资数据描述的是管理体系披露，不等于这只基金的规模、单笔出资额或收益。公开可查的联系方式属于上海科创集团总机，不是该基金的专属业务联系人。"
     }
   }
 }

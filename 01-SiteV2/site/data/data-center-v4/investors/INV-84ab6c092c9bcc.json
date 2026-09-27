@@ -129,12 +129,38 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "厦门思明科创基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-19；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "厦门思明科创基金是由思明区财政专项拨付、按市场化方式运作并实行专业化管理的政策性基金。思明区的2023年管理办法征求意见稿列明战略性新兴产业、高新技术、科技服务和数字科技等方向；2025年正式政策将基金规模扩充至1亿元，并新增数字营销领域。对单家数字营销企业不超过2000万元的规定，仅适用于该政策方向，不代表一般项目额度。",
+      "facts": [
+        {
+          "field": "fund_type",
+          "label": "基金性质",
+          "value": "思明区财政专项拨付、市场化运作、专业化管理的政策性基金。",
+          "source_id": "siming_rules_2023"
+        },
+        {
+          "field": "investment_focus",
+          "label": "公开列示方向",
+          "value": [
+            "战略性新兴产业",
+            "高新技术产业",
+            "科技服务业",
+            "数字科技产业"
+          ],
+          "source_id": "siming_rules_2023"
+        },
+        {
+          "field": "reported_scale",
+          "label": "政策披露规模",
+          "value": "2025年政策称基金规模扩充至人民币1亿元。",
+          "source_id": "siming_policy_2025"
+        },
+        {
+          "field": "2025_policy",
+          "label": "数字营销项目支持",
+          "value": "政策新增数字营销领域；对该类企业的股权投资金额不超过2000万元。此额度仅对应该政策适用范围。",
+          "source_id": "siming_policy_2025"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -142,8 +168,39 @@
           "source_id": "FISRC-72156fa3f46ebcb1"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "厦门市投资促进公共信息入口",
+          "value": "厦门投资促进中心",
+          "url": "https://www.investxiamen.org.cn/",
+          "source_id": "siming_rules_2023"
+        },
+        {
+          "kind": "email",
+          "label": "2023年草案公开征求意见邮箱（非现行投资申请邮箱）",
+          "value": "smq_kxj@xm.gov.cn",
+          "url": "https://www.investxiamen.org.cn/detail/7524.html",
+          "source_id": "siming_rules_2023"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "siming_rules_2023",
+          "source_url": "https://www.investxiamen.org.cn/detail/7524.html",
+          "source_title": "厦门投资促进中心：思明区科技创新创业基金管理办法征求意见",
+          "source_content_hash": "09d95783c3a3fadc768e223de1404658b1e91af7b2133134f899774189c22ef4",
+          "quote": "思明科创基金由思明区财政局专项拨付，按照市场化方式运作、专业化管理。",
+          "quote_hash": "09d95783c3a3fadc768e223de1404658b1e91af7b2133134f899774189c22ef4"
+        },
+        {
+          "source_id": "siming_policy_2025",
+          "source_url": "https://www.investxiamen.org.cn/show/1039.html",
+          "source_title": "思明区促进数字营销产业发展若干措施（2025）",
+          "source_content_hash": "57734453f3a0e3cfe809304d6b26be7113a1244ef38e13dd224d4b568e9caa89",
+          "quote": "升级思明科技创新创业基金，规模扩充至1亿元，投资范围增设数字营销领域。",
+          "quote_hash": "57734453f3a0e3cfe809304d6b26be7113a1244ef38e13dd224d4b568e9caa89"
+        },
         {
           "source_id": "FISRC-72156fa3f46ebcb1",
           "source_url": "https://www.163.com/dy/article/KNTCC29Q0519QIKK.html",
@@ -153,7 +210,11 @@
           "quote_hash": "0e4edf9ff030ca4f49744d0501f6a772f8fd92bc0a55c58e2863097a7494f403"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "2023年页面为管理办法征求意见稿，结构和支持比例按草案处理；2025年政策明确将基金规模扩充至1亿元，并为数字营销企业设置特定额度上限。2026年融资披露列其为灵御智能天使+轮投资机构，但未披露基金的具体出资额。"
     }
   }
 }

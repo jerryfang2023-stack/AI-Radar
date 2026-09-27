@@ -137,12 +137,39 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "京津冀创业投资引导基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "京津冀创业投资引导基金于2026年完成备案，公开规模500亿元，由中金资本运营有限公司担任管理人，多个国家级、金融机构及京津冀区域主体共同出资。基金采用子基金与直投相结合的方式，支持早期、硬科技及战略性新兴产业。2026年3月的政府公开报道披露，基金已签约投资4只子基金和1个直投项目并完成首笔出资。",
+      "facts": [
+        {
+          "field": "formal_name",
+          "label": "公开披露名称",
+          "value": "京津冀创业投资引导基金合伙企业（有限合伙）",
+          "source_id": "jjj_fund_bj_gov"
+        },
+        {
+          "field": "reported_scale",
+          "label": "基金规模",
+          "value": "人民币500亿元，首批资金已实缴并完成基金备案。",
+          "source_id": "jjj_fund_bj_gov"
+        },
+        {
+          "field": "manager",
+          "label": "基金管理人",
+          "value": "中金公司全资子公司中金资本运营有限公司",
+          "source_id": "jjj_fund_bj_gov"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资方式与阶段",
+          "value": "通过子基金及直投项目投资种子期、初创期企业，强调投早、投小、投长期、投硬科技。",
+          "source_id": "jjj_fund_bj_gov"
+        },
+        {
+          "field": "early_deployment",
+          "label": "截至2026年3月的公开进展",
+          "value": "签约投资4只子基金及1个直投项目，并完成首笔出资。",
+          "source_id": "jjj_fund_bj_gov"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +177,32 @@
           "source_id": "FISRC-13a43855ea188967"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "政府公开基金信息",
+          "value": "首都之窗",
+          "url": "https://www.beijing.gov.cn/ywdt/zwzt/jjjyth/zljj/202604/t20260420_4595856.html",
+          "source_id": "jjj_fund_bj_gov"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "jjj_fund_bj_gov",
+          "source_url": "https://www.beijing.gov.cn/ywdt/zwzt/jjjyth/zljj/202604/t20260420_4595856.html",
+          "source_title": "首都之窗：京津冀创业投资引导基金首批投资项目落地",
+          "source_content_hash": "075fa1e4c22bf5e0a1be959f03bc0086260272880e304e5d7c78b94a5453944c",
+          "quote": "京津冀创业投资引导基金规模500亿元，由中金资本运营有限公司担任管理人。",
+          "quote_hash": "075fa1e4c22bf5e0a1be959f03bc0086260272880e304e5d7c78b94a5453944c"
+        },
+        {
+          "source_id": "jjj_fund_progress",
+          "source_url": "https://www.beijing.gov.cn/ywdt/zwzt/jjjyth/zljj/202604/t20260420_4595856.html",
+          "source_title": "首都之窗：基金早期投资进展",
+          "source_content_hash": "a76707c0b094e73e8b86d19d026515c21607fa7e24a67080739d0f1859228f65",
+          "quote": "截至2026年3月，基金已签约投资4只子基金及1个直投项目，并完成首笔出资。",
+          "quote_hash": "a76707c0b094e73e8b86d19d026515c21607fa7e24a67080739d0f1859228f65"
+        },
         {
           "source_id": "FISRC-13a43855ea188967",
           "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-13/doc-inhuitqy5628851.shtml",
@@ -161,7 +212,11 @@
           "quote_hash": "dcaa6fc9894fc1596ce5cf55490408d66b627ce08b0f5c7ed18ea4ad0792ae41"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "500亿元为基金总体规模，不代表已实缴总额或对单个企业的投资额。进展数据截至2026年3月的公开报道时点；融资库列示的华毅瀛飞轮次没有披露该基金的具体出资金额。"
     }
   }
 }

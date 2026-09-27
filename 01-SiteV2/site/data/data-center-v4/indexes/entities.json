@@ -128922,12 +128922,37 @@
         "pre_series_b"
       ],
       "public_profile": {
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "上海半导体装备材料产业投资基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "summary": "上海半导体装备材料产业投资基金面向全国并开展境内外投资，聚焦半导体装备、材料及核心零部件。基金网页称管理公司由浦科投资牵头组建；相关管理公司介绍其专注半导体全产业链投资。该基金不同公开页面披露的规模口径不一致，因此不采用单一规模数字。",
+        "facts": [
+          {
+            "field": "investment_focus",
+            "label": "投资方向",
+            "value": [
+              "半导体装备",
+              "材料",
+              "核心零部件"
+            ],
+            "source_id": "pdsti_fund_profile"
+          },
+          {
+            "field": "fund_manager",
+            "label": "管理关系",
+            "value": "基金网页称管理公司由浦科投资牵头组建；上海半导体装备材料产业投资管理有限公司介绍其管理该基金及项目制基金。",
+            "source_id": "pdsti_fund_profile"
+          },
+          {
+            "field": "manager_portfolio",
+            "label": "管理公司披露的投资覆盖",
+            "value": "管理公司披露管理规模超过80亿元、累计投资半导体项目50余个，覆盖装备、材料、零部件、EDA、设计、制造及封测；该口径属于管理公司，不等于本基金单独业绩。",
+            "source_id": "pdsti_manager_profile"
+          },
+          {
+            "field": "reported_fund_scale",
+            "label": "公开规模口径",
+            "value": "基金介绍页披露总规模200亿元、首期50亿元；浦科投资公司主页曾披露总规模100亿元、首期50亿元。公开页面口径不一致，暂不采纳单一规模。",
+            "source_id": "pdsti_fund_profile"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
@@ -128935,8 +128960,69 @@
             "source_id": "FISRC-ec1ffe5861471f6a"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "基金官方网站",
+            "value": "上海半导体装备材料产业投资基金",
+            "url": "https://www.pdsti.com/Pc/ssemc/index.html",
+            "source_id": "pdsti_fund_profile"
+          },
+          {
+            "kind": "phone",
+            "label": "官网公布的联系号码",
+            "value": "+86-21 5027 6328",
+            "url": "https://www.pdsti.com/Pc/ssemc/contactUs.html",
+            "source_id": "pdsti_contact"
+          },
+          {
+            "kind": "email",
+            "label": "商业计划书联系邮箱",
+            "value": "bp@pdsti.com",
+            "url": "https://www.pdsti.com/Pc/ssemc/contactUs.html",
+            "source_id": "pdsti_contact"
+          },
+          {
+            "kind": "address",
+            "label": "官网公布的管理公司办公地址",
+            "value": "上海浦东新区杨高南路729号世纪金融广场1号楼46楼",
+            "url": "https://www.pdsti.com/Pc/ssemc/contactUs.html",
+            "source_id": "pdsti_contact"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "pdsti_fund_profile",
+            "source_url": "https://www.pdsti.com/Pc/ssemc/index.html",
+            "source_title": "上海半导体装备材料产业投资基金｜基金介绍",
+            "source_content_hash": "d2d76591bcfccd76a5df36febfd6c5a46c523e95c4150e005e79c3b4657c34f0",
+            "quote": "聚焦半导体装备材料及核心零部件等领域，开展境内外投资与资源整合。",
+            "quote_hash": "d2d76591bcfccd76a5df36febfd6c5a46c523e95c4150e005e79c3b4657c34f0"
+          },
+          {
+            "source_id": "pdsti_manager_profile",
+            "source_url": "https://www.pdsti.com/ssemc/",
+            "source_title": "上海半导体装备材料产业投资管理有限公司｜关于我们",
+            "source_content_hash": "c440151b9dbb13bb889b4c67fa44387eff0258d987fab9b7304b96a007c89ee3",
+            "quote": "管理规模超80亿元，累计投资半导体项目50余个，覆盖装备、材料、零部件、EDA、设计、制造、封测等全产业链。",
+            "quote_hash": "c440151b9dbb13bb889b4c67fa44387eff0258d987fab9b7304b96a007c89ee3"
+          },
+          {
+            "source_id": "pdsti_parent_scale",
+            "source_url": "https://www.pdsti.com/Pc/index.html",
+            "source_title": "上海浦东科技投资有限公司｜主页",
+            "source_content_hash": "3a70dcad2e063cbc9033cd85c2e1b99f98c598fbb85fa86a4c473895fde4a5ec",
+            "quote": "上海半导体装备材料产业投资基金总规模100亿元，首期规模50亿元。",
+            "quote_hash": "3a70dcad2e063cbc9033cd85c2e1b99f98c598fbb85fa86a4c473895fde4a5ec"
+          },
+          {
+            "source_id": "pdsti_contact",
+            "source_url": "https://www.pdsti.com/Pc/ssemc/contactUs.html",
+            "source_title": "上海半导体装备材料产业投资基金｜联系我们",
+            "source_content_hash": "181c934913ff532eba1e837346705b63b48a6499989ab7a58ffbe1d89bb80c48",
+            "quote": "公司地址 上海浦东新区杨高南路729号世纪金融广场1号楼46楼；联系方式 电话：+86-21 5027 6328；商业计划书 bp@pdsti.com",
+            "quote_hash": "181c934913ff532eba1e837346705b63b48a6499989ab7a58ffbe1d89bb80c48"
+          },
           {
             "source_id": "FISRC-ec1ffe5861471f6a",
             "source_url": "https://news.pedaily.cn/202609/569399.shtml",
@@ -128946,7 +129032,11 @@
             "quote_hash": "bafda0d30f65da43aa0231d42fc2c6ac648ff251e649dd62868ddd721f58027b"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27",
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched",
+        "coverage_note": "基金官网介绍页披露总规模200亿元、首期50亿元，浦科投资公司主页曾披露总规模100亿元、首期50亿元。两种公开口径未能核实是否对应同一基金阶段；管理公司披露的管理规模与50余个投资项目也不是本基金单独的已投规模或回报。联系方式为官网公布的管理/商业计划联系渠道。"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -145107,12 +145197,33 @@
         "pre_series_a_plus"
       ],
       "public_profile": {
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "上海科创旗下知识产权基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-04；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "summary": "融资披露中的“上海科创旗下知识产权基金”可对应公开披露的上海知识产权基金。上市公司公告称，该基金成立于2016年，由上海科创集团全资子公司上海战新投资作为持股30%的国有股东与社会资本共同设立，是上海科创集团“1+3”基金体系的一部分。公告还披露管理体系2025年新设5支基金、总规模10.39亿元并累计投资14个项目；这些是管理体系层面的数据，不应误读为单只基金规模或回报。",
+        "facts": [
+          {
+            "field": "official_identity",
+            "label": "公开披露名称",
+            "value": "上海知识产权基金；融资记录使用简称“上海科创旗下知识产权基金”。",
+            "source_id": "sh_ip_fund_filing"
+          },
+          {
+            "field": "founded",
+            "label": "成立时间",
+            "value": "2016年",
+            "source_id": "sh_ip_fund_filing"
+          },
+          {
+            "field": "ownership",
+            "label": "设立关系",
+            "value": "上海科创集团全资子公司上海战新投资持股30%，并与社会民营资本共同设立。",
+            "source_id": "sh_ip_fund_filing"
+          },
+          {
+            "field": "manager_activity_2025",
+            "label": "管理体系2025年活动",
+            "value": "披露新设5支基金、总规模10.39亿元，累计投资14个项目；属管理体系披露，不是该单只基金的规模或收益。",
+            "source_id": "sh_ip_fund_filing"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
@@ -145120,8 +145231,54 @@
             "source_id": "FISRC-a65ce425f6a14bd6"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "上海科创集团官网",
+            "value": "上海科技创业投资（集团）有限公司",
+            "url": "https://www.shstvc.com.cn/",
+            "source_id": "sh_stvc_contact"
+          },
+          {
+            "kind": "phone",
+            "label": "母集团公开总机（非基金专线）",
+            "value": "021-22302800",
+            "url": "https://www.shstvc.com.cn/",
+            "source_id": "sh_stvc_contact"
+          },
+          {
+            "kind": "email",
+            "label": "母集团公开邮箱（非基金专属）",
+            "value": "info@shstvc.com.cn",
+            "url": "https://www.shstvc.com.cn/",
+            "source_id": "sh_stvc_contact"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "sh_ip_fund_filing",
+            "source_url": "https://static.cninfo.com.cn/finalpage/2025-12-31/1224910242.PDF",
+            "source_title": "上市公司公告：参与投资策源一期基金",
+            "source_content_hash": "aa3b07303f422fd3e2e792d7dfcc24ffc157f3a5d4d39a1b337ae7cb8d182709",
+            "quote": "上海知识产权基金成立于2016年，由上海科创集团全资子公司上海战新投资作为持股30%的国有股东与社会民营资本共同设立。",
+            "quote_hash": "aa3b07303f422fd3e2e792d7dfcc24ffc157f3a5d4d39a1b337ae7cb8d182709"
+          },
+          {
+            "source_id": "sh_stvc_history",
+            "source_url": "https://www.shstvc.com.cn/gywm/fzlc/",
+            "source_title": "上海科技创业投资集团｜发展历程",
+            "source_content_hash": "a04344058cea63e1ea9b77d9eeaf16b6f5d0602e19c7a47c506df0b59fba488b",
+            "quote": "2016年发起设立并管理上海知识产权扶持基金。",
+            "quote_hash": "a04344058cea63e1ea9b77d9eeaf16b6f5d0602e19c7a47c506df0b59fba488b"
+          },
+          {
+            "source_id": "sh_stvc_contact",
+            "source_url": "https://www.shstvc.com.cn/",
+            "source_title": "上海科技创业投资（集团）有限公司｜官方主页",
+            "source_content_hash": "42091d9b6ac2137648961e6a34cbb5a39dcd0abe1573888619e17ae35791e7e1",
+            "quote": "地址：上海市静安区铜仁路269号；电话：021-22302800；邮箱：info@shstvc.com.cn。",
+            "quote_hash": "42091d9b6ac2137648961e6a34cbb5a39dcd0abe1573888619e17ae35791e7e1"
+          },
           {
             "source_id": "FISRC-a65ce425f6a14bd6",
             "source_url": "https://news.pedaily.cn/202609/568532.shtml",
@@ -145131,7 +145288,11 @@
             "quote_hash": "63cc64e026257c66ef879cdc3ec4b8d1d9c592b120f4c191292f6ba20fa7b625"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27",
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched",
+        "coverage_note": "融资库简称与上市公司公告中的“上海知识产权基金”相符。2025年新设基金及累计投资数据描述的是管理体系披露，不等于这只基金的规模、单笔出资额或收益。公开可查的联系方式属于上海科创集团总机，不是该基金的专属业务联系人。"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -192847,12 +193008,40 @@
         "infrastructure"
       ],
       "public_profile": {
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "四川发展科创基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "summary": "融资库中的“四川发展科创基金”对应四川发展科创股权投资基金及其管理体系。公开遴选信息显示，基金总规模为101.174亿元，管理人为四川发展科技创新投资私募基金管理有限公司，重点布局航空航天、生物医药、先进材料、电子信息、高端装备制造和特色军工等战略性新兴产业。融资报道列出的融资轮次是案例记录，不代表该基金在该轮的具体出资额。",
+        "facts": [
+          {
+            "field": "formal_name",
+            "label": "公开披露名称",
+            "value": "四川发展科创股权投资基金合伙企业（有限合伙）",
+            "source_id": "scfd_fund_notice"
+          },
+          {
+            "field": "reported_scale",
+            "label": "公开披露规模",
+            "value": "人民币101.174亿元；该数为基金总规模，不是单笔项目投资额。",
+            "source_id": "scfd_fund_notice"
+          },
+          {
+            "field": "manager",
+            "label": "基金管理人",
+            "value": "四川发展科技创新投资私募基金管理有限公司",
+            "source_id": "scfd_fund_notice"
+          },
+          {
+            "field": "sectors",
+            "label": "公开披露重点方向",
+            "value": [
+              "航空航天",
+              "生物医药",
+              "先进材料",
+              "电子信息",
+              "高端装备制造",
+              "特色军工"
+            ],
+            "source_id": "scfd_fund_notice"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
@@ -192860,8 +193049,47 @@
             "source_id": "FISRC-8787a3d3602feb17"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "基金管理体系公开信息",
+            "value": "四川省科技创新投资集团公司新闻",
+            "url": "https://scfzfund.sdholding.com/news/company/index_2.html",
+            "source_id": "scfd_manager_site"
+          },
+          {
+            "kind": "website",
+            "label": "出资平台官方网站",
+            "value": "四川发展（控股）有限责任公司",
+            "url": "https://www.sdholding.com/",
+            "source_id": "scfd_parent_site"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "scfd_fund_notice",
+            "source_url": "https://news.pedaily.cn/202606/565149.shtml",
+            "source_title": "四川发展科创基金子基金管理机构遴选公告｜投资界转述",
+            "source_content_hash": "2dc176ef19fb6990a724dcdcd9952090a7b4d4a5745f8baa24f14d3d60a124d5",
+            "quote": "四川发展科创股权投资基金总规模为101.174亿元，重点投向航空航天、生物医药、先进材料、电子信息、高端装备制造、特色军工等战略性新兴产业。",
+            "quote_hash": "2dc176ef19fb6990a724dcdcd9952090a7b4d4a5745f8baa24f14d3d60a124d5"
+          },
+          {
+            "source_id": "scfd_manager_site",
+            "source_url": "https://scfzfund.sdholding.com/news/company/index_2.html",
+            "source_title": "四川省科技创新投资集团｜公司新闻",
+            "source_content_hash": "a1c07fce0033a1550ee42d96074ab8f3c64675ec6204dbc875a844e6c6d95d85",
+            "quote": "四川发展科创基金子基金管理机构遴选公告。",
+            "quote_hash": "a1c07fce0033a1550ee42d96074ab8f3c64675ec6204dbc875a844e6c6d95d85"
+          },
+          {
+            "source_id": "scfd_parent_site",
+            "source_url": "https://www.sdholding.com/",
+            "source_title": "四川发展（控股）有限责任公司｜官方网站",
+            "source_content_hash": "167a791d8f269c01df5f3c9a600ba429b3f35c686ad27f1a7f22f6db072e65b1",
+            "quote": "四川发展（控股）有限责任公司成立于2008年，是四川省级综合投融资平台。",
+            "quote_hash": "167a791d8f269c01df5f3c9a600ba429b3f35c686ad27f1a7f22f6db072e65b1"
+          },
           {
             "source_id": "FISRC-8787a3d3602feb17",
             "source_url": "https://www.ncsti.gov.cn/kjdt/scyq/zgckxc/zgcdt/202607/t20260701_250581.html",
@@ -192871,7 +193099,11 @@
             "quote_hash": "b3723f9de6e9a09c248d641d2d6e47081bc5fd4c0a25f31ae4b59238ea741e82"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27",
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched",
+        "coverage_note": "基金规模、管理人及投向按公开遴选公告转述记录；管理公司与基金是不同主体。单轮融资总额不代表本基金出资额，且未披露本基金单笔认缴金额。"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -231560,12 +231792,39 @@
         "pre_series_a"
       ],
       "public_profile": {
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "京津冀创业投资引导基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "summary": "京津冀创业投资引导基金于2026年完成备案，公开规模500亿元，由中金资本运营有限公司担任管理人，多个国家级、金融机构及京津冀区域主体共同出资。基金采用子基金与直投相结合的方式，支持早期、硬科技及战略性新兴产业。2026年3月的政府公开报道披露，基金已签约投资4只子基金和1个直投项目并完成首笔出资。",
+        "facts": [
+          {
+            "field": "formal_name",
+            "label": "公开披露名称",
+            "value": "京津冀创业投资引导基金合伙企业（有限合伙）",
+            "source_id": "jjj_fund_bj_gov"
+          },
+          {
+            "field": "reported_scale",
+            "label": "基金规模",
+            "value": "人民币500亿元，首批资金已实缴并完成基金备案。",
+            "source_id": "jjj_fund_bj_gov"
+          },
+          {
+            "field": "manager",
+            "label": "基金管理人",
+            "value": "中金公司全资子公司中金资本运营有限公司",
+            "source_id": "jjj_fund_bj_gov"
+          },
+          {
+            "field": "investment_approach",
+            "label": "投资方式与阶段",
+            "value": "通过子基金及直投项目投资种子期、初创期企业，强调投早、投小、投长期、投硬科技。",
+            "source_id": "jjj_fund_bj_gov"
+          },
+          {
+            "field": "early_deployment",
+            "label": "截至2026年3月的公开进展",
+            "value": "签约投资4只子基金及1个直投项目，并完成首笔出资。",
+            "source_id": "jjj_fund_bj_gov"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
@@ -231573,8 +231832,32 @@
             "source_id": "FISRC-13a43855ea188967"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "政府公开基金信息",
+            "value": "首都之窗",
+            "url": "https://www.beijing.gov.cn/ywdt/zwzt/jjjyth/zljj/202604/t20260420_4595856.html",
+            "source_id": "jjj_fund_bj_gov"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "jjj_fund_bj_gov",
+            "source_url": "https://www.beijing.gov.cn/ywdt/zwzt/jjjyth/zljj/202604/t20260420_4595856.html",
+            "source_title": "首都之窗：京津冀创业投资引导基金首批投资项目落地",
+            "source_content_hash": "075fa1e4c22bf5e0a1be959f03bc0086260272880e304e5d7c78b94a5453944c",
+            "quote": "京津冀创业投资引导基金规模500亿元，由中金资本运营有限公司担任管理人。",
+            "quote_hash": "075fa1e4c22bf5e0a1be959f03bc0086260272880e304e5d7c78b94a5453944c"
+          },
+          {
+            "source_id": "jjj_fund_progress",
+            "source_url": "https://www.beijing.gov.cn/ywdt/zwzt/jjjyth/zljj/202604/t20260420_4595856.html",
+            "source_title": "首都之窗：基金早期投资进展",
+            "source_content_hash": "a76707c0b094e73e8b86d19d026515c21607fa7e24a67080739d0f1859228f65",
+            "quote": "截至2026年3月，基金已签约投资4只子基金及1个直投项目，并完成首笔出资。",
+            "quote_hash": "a76707c0b094e73e8b86d19d026515c21607fa7e24a67080739d0f1859228f65"
+          },
           {
             "source_id": "FISRC-13a43855ea188967",
             "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-13/doc-inhuitqy5628851.shtml",
@@ -231584,7 +231867,11 @@
             "quote_hash": "dcaa6fc9894fc1596ce5cf55490408d66b627ce08b0f5c7ed18ea4ad0792ae41"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27",
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched",
+        "coverage_note": "500亿元为基金总体规模，不代表已实缴总额或对单个企业的投资额。进展数据截至2026年3月的公开报道时点；融资库列示的华毅瀛飞轮次没有披露该基金的具体出资金额。"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -232025,12 +232312,33 @@
         "pre_series_a"
       ],
       "public_profile": {
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "亦庄科创二期基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "summary": "亦庄科创二期基金的官方名称表述为北京科创亦庄直投基金，是北京科创基金的直接投资工具之一。北京科创基金公开项目页将新石器列为该基金首批投资项目之一。北京科创基金官网定位为服务北京国际科技创新中心、聚焦硬科技投资；融资库记录的华毅瀛飞融资属于另一项参投披露，具体出资额没有公开。",
+        "facts": [
+          {
+            "field": "public_name",
+            "label": "公开名称",
+            "value": "亦庄科创二期基金（北京科创亦庄直投基金）",
+            "source_id": "bjstif_yizhuang"
+          },
+          {
+            "field": "manager_platform",
+            "label": "所属投资平台",
+            "value": "北京科创基金；官网介绍其采取政府引导与市场运作相结合、专业团队投资运营管理。",
+            "source_id": "bjstif_home"
+          },
+          {
+            "field": "investment_focus",
+            "label": "平台投资方向",
+            "value": "硬科技投资，服务北京国际科技创新中心建设。",
+            "source_id": "bjstif_home"
+          },
+          {
+            "field": "portfolio_example",
+            "label": "公开首批项目案例",
+            "value": "北京科创基金披露新石器是亦庄科创二期基金（北京科创亦庄直投基金）的首批投资项目之一。",
+            "source_id": "bjstif_yizhuang"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
@@ -232038,8 +232346,54 @@
             "source_id": "FISRC-13a43855ea188967"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "基金管理平台官网",
+            "value": "北京科创基金",
+            "url": "https://bjstif.cn/",
+            "source_id": "bjstif_home"
+          },
+          {
+            "kind": "phone",
+            "label": "北京科创基金公开电话（平台总机）",
+            "value": "010-82362001",
+            "url": "https://bjstif.cn/",
+            "source_id": "bjstif_contact"
+          },
+          {
+            "kind": "address",
+            "label": "北京科创基金公开地址（平台办公地址）",
+            "value": "北京市海淀区中关村街道63号北京卫星制造厂科技园2号厂房二层",
+            "url": "https://bjstif.cn/",
+            "source_id": "bjstif_contact"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "bjstif_yizhuang",
+            "source_url": "https://bjstif.cn/news/index_2.html",
+            "source_title": "北京科创基金：亦庄科创二期基金投资新石器",
+            "source_content_hash": "5ba4699fb747a06c1ddd8a84ecaba94c65981478546b5afcb3a737f1b11f09b2",
+            "quote": "新石器项目是亦庄科创二期基金（北京科创亦庄直投基金）的首批投资项目。",
+            "quote_hash": "5ba4699fb747a06c1ddd8a84ecaba94c65981478546b5afcb3a737f1b11f09b2"
+          },
+          {
+            "source_id": "bjstif_home",
+            "source_url": "https://bjstif.cn/",
+            "source_title": "北京科创基金｜官方网站",
+            "source_content_hash": "c09eb410cfcebca7b95d6223f8c56a0a6ad30036ca10bb7dd6781998e0c5530f",
+            "quote": "服务北京国际科技创新中心建设；政府引导与市场运作相结合；专业化团队投资运营管理。",
+            "quote_hash": "c09eb410cfcebca7b95d6223f8c56a0a6ad30036ca10bb7dd6781998e0c5530f"
+          },
+          {
+            "source_id": "bjstif_contact",
+            "source_url": "https://bjstif.cn/",
+            "source_title": "北京科创基金｜公开联系方式",
+            "source_content_hash": "956c886675d8755b9684e4f23c1ecb6847ce52ba87bfb4bdfb7e06e6235bc4ad",
+            "quote": "北京市海淀区中关村街道63号北京卫星制造厂科技园2号厂房二层；010-82362001。",
+            "quote_hash": "956c886675d8755b9684e4f23c1ecb6847ce52ba87bfb4bdfb7e06e6235bc4ad"
+          },
           {
             "source_id": "FISRC-13a43855ea188967",
             "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-13/doc-inhuitqy5628851.shtml",
@@ -232049,7 +232403,11 @@
             "quote_hash": "dcaa6fc9894fc1596ce5cf55490408d66b627ce08b0f5c7ed18ea4ad0792ae41"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27",
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched",
+        "coverage_note": "亦庄科创二期基金与北京科创基金平台相关，但本档案不将平台整体组合全部归入该单只基金。北京科创基金公开案例列新石器为该基金首批项目；该公司整轮融资额不代表该基金出资额。"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -233641,12 +233999,36 @@
         "series_b_plus"
       ],
       "public_profile": {
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "航发基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "summary": "融资披露中的“航发基金”可对应中国航发集团旗下的航发基金管理有限公司。政府国资信息将其描述为专业股权投资基金管理公司，重点关注航空发动机及军民融合领域；上市公司公告则显示其担任北京国发航空发动机产业投资基金中心的执行事务合伙人。融资报道只列出“航发基金”作为星海图B+轮投资方，未披露该管理人所代表的具体基金或出资额。",
+        "facts": [
+          {
+            "field": "manager_identity",
+            "label": "机构全称",
+            "value": "航发基金管理有限公司",
+            "source_id": "hangfa_sjz_gov"
+          },
+          {
+            "field": "parent",
+            "label": "集团关系",
+            "value": "中国航空发动机集团有限公司旗下专业股权投资基金管理公司。",
+            "source_id": "hangfa_sjz_gov"
+          },
+          {
+            "field": "investment_focus",
+            "label": "公开披露方向",
+            "value": [
+              "航空发动机",
+              "军民融合"
+            ],
+            "source_id": "hangfa_sjz_gov"
+          },
+          {
+            "field": "fund_role",
+            "label": "已披露基金角色",
+            "value": "航发基金管理有限公司担任北京国发航空发动机产业投资基金中心（有限合伙）的执行事务合伙人。",
+            "source_id": "hangfa_fund_filing"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
@@ -233654,8 +234036,55 @@
             "source_id": "FISRC-7a614400d44a7041"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "集团官方网站",
+            "value": "中国航空发动机集团",
+            "url": "https://www.aecc.cn/",
+            "source_id": "aecc_about"
+          },
+          {
+            "kind": "phone",
+            "label": "集团官网公开总机（非基金专线）",
+            "value": "010-68201080",
+            "url": "https://www.aecc.cn/",
+            "source_id": "aecc_contact"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "hangfa_sjz_gov",
+            "source_url": "https://gzw.sjz.gov.cn/columns/48261501-d0de-4a23-a6b8-6bd64df971b9/202504/27/c5e778e2-2ff9-4e95-9010-1f2aacdab72b.html",
+            "source_title": "石家庄市国资委：航发基金公司业务交流",
+            "source_content_hash": "62f543b907601e3b759d4e663f749d089c4256408cac1e2e47aea0aeed16bcd4",
+            "quote": "航发基金公司是中国航发集团旗下专业的股权投资基金管理公司，专注于航空发动机、军民融合等专业领域。",
+            "quote_hash": "62f543b907601e3b759d4e663f749d089c4256408cac1e2e47aea0aeed16bcd4"
+          },
+          {
+            "source_id": "hangfa_fund_filing",
+            "source_url": "https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=6822252&stockid=000738",
+            "source_title": "上市公司关联交易公告：北京国发航空发动机产业投资基金",
+            "source_content_hash": "f4840ac7be966eaa783f228a9c3e93449cd884fe4574b579c300037368b85a75",
+            "quote": "北京国发航空发动机产业投资基金中心的执行事务合伙人为航发基金管理有限公司。",
+            "quote_hash": "f4840ac7be966eaa783f228a9c3e93449cd884fe4574b579c300037368b85a75"
+          },
+          {
+            "source_id": "aecc_about",
+            "source_url": "https://www.aecc.cn/",
+            "source_title": "中国航空发动机集团｜官方网站",
+            "source_content_hash": "a148fb3c7f85d3358d7544fcb026314ebfa8ec2bed28d95ef5b89c0788c9ee27",
+            "quote": "中国航发主要从事航空发动机、辅助动力、燃气轮机及传动系统的研制、生产、维修和服务。",
+            "quote_hash": "a148fb3c7f85d3358d7544fcb026314ebfa8ec2bed28d95ef5b89c0788c9ee27"
+          },
+          {
+            "source_id": "aecc_contact",
+            "source_url": "https://www.aecc.cn/",
+            "source_title": "中国航空发动机集团｜联系信息",
+            "source_content_hash": "29f5397bc27f427fab2afa35225d569e2169bfba1428ab6a6ce5249cd4121aac",
+            "quote": "通讯地址：北京市海淀区蓝靛厂南路5号；电话：(010)68201080。",
+            "quote_hash": "29f5397bc27f427fab2afa35225d569e2169bfba1428ab6a6ce5249cd4121aac"
+          },
           {
             "source_id": "FISRC-7a614400d44a7041",
             "source_url": "https://news.pedaily.cn/202604/562366.shtml",
@@ -233665,7 +234094,11 @@
             "quote_hash": "5611fad94b66d75a05e003f36abef550d470513a780c07574174634457687201"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27",
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched",
+        "coverage_note": "“航发基金”作为融资报道标签，不能单独确认具体出资产品。公开披露确认航发基金管理有限公司的集团关系与其管理的北京国发航空发动机产业投资基金；不据此将所有以“航发基金”出现的融资自动归入同一只基金。联系方式为集团官网公开电话，不是基金管理公司的专线。"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -251840,12 +252273,38 @@
         "series_b_plus"
       ],
       "public_profile": {
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "上国投先导基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-01-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "summary": "融资披露中的“上国投先导基金”指向上海国投先导投资体系。其官网披露，上海国投先导私募基金管理有限公司于2024年5月成立，是上海国有资本投资有限公司全资子公司，管理集成电路、生物医药和人工智能三大先导产业母基金。官网称基金体系以投早投小、支持原始创新与成果转化为方向。融资标签未披露对应的具体母基金，故不把该笔融资归到三只基金中的某一只。",
+        "facts": [
+          {
+            "field": "manager",
+            "label": "管理公司",
+            "value": "上海国投先导私募基金管理有限公司，成立于2024年5月，为上海国有资本投资有限公司全资子公司。",
+            "source_id": "shguotou_about"
+          },
+          {
+            "field": "fund_structure",
+            "label": "基金体系",
+            "value": "管理集成电路、生物医药、人工智能三大先导产业母基金。",
+            "source_id": "shguotou_home"
+          },
+          {
+            "field": "strategy",
+            "label": "公开投资方向",
+            "value": [
+              "投早投小",
+              "原始创新",
+              "科技成果转化",
+              "产业并购整合"
+            ],
+            "source_id": "shguotou_about"
+          },
+          {
+            "field": "ecosystem_progress",
+            "label": "公开进展",
+            "value": "上海市政府2025年报道披露，首批9只市场化子基金以36.5亿元母基金出资撬动172亿元社会资本。",
+            "source_id": "shguotou_progress"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
@@ -251853,8 +252312,69 @@
             "source_id": "FISRC-de3bb93d57d25bdf"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "基金管理公司官方网站",
+            "value": "上海国投先导",
+            "url": "https://www.ssci-leadingfund.com/",
+            "source_id": "shguotou_home"
+          },
+          {
+            "kind": "phone",
+            "label": "官网公开电话",
+            "value": "021-63212188",
+            "url": "https://www.ssci-leadingfund.com/",
+            "source_id": "shguotou_contact"
+          },
+          {
+            "kind": "email",
+            "label": "官网公开邮箱",
+            "value": "contact@sscilf.com",
+            "url": "https://www.ssci-leadingfund.com/",
+            "source_id": "shguotou_contact"
+          },
+          {
+            "kind": "address",
+            "label": "官网公开地址",
+            "value": "上海市黄浦区外马路688号7楼",
+            "url": "https://www.ssci-leadingfund.com/",
+            "source_id": "shguotou_contact"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "shguotou_about",
+            "source_url": "https://www.ssci-leadingfund.com/about/",
+            "source_title": "上海国投先导｜关于我们",
+            "source_content_hash": "ca823d4b887106952b4bfdd6ab1f4f9979682266443b9c4b25bff89a33273990",
+            "quote": "上海国投先导私募基金管理有限公司于2024年5月成立，是上海国有资本投资有限公司全资子公司。",
+            "quote_hash": "ca823d4b887106952b4bfdd6ab1f4f9979682266443b9c4b25bff89a33273990"
+          },
+          {
+            "source_id": "shguotou_home",
+            "source_url": "https://www.ssci-leadingfund.com/",
+            "source_title": "上海国投先导｜官方网站",
+            "source_content_hash": "693e44472ddc4a440de657c32609a25a14830183d13da3c55d3838489dca0e8f",
+            "quote": "管理集成电路、生物医药、人工智能三大先导产业母基金。",
+            "quote_hash": "693e44472ddc4a440de657c32609a25a14830183d13da3c55d3838489dca0e8f"
+          },
+          {
+            "source_id": "shguotou_progress",
+            "source_url": "https://www.shanghai.gov.cn/nw4411/20250411/244d09ae7c1b438d8d96640dca61ca06.html?siteId=1",
+            "source_title": "上海市政府：三大先导产业母基金进展",
+            "source_content_hash": "e8f107c9748493aa6326e68f1d4b525f77ab118d21ae0e179cad53b5401e2c52",
+            "quote": "首批9只市场化子基金以36.5亿元母基金出资撬动172亿元社会资本。",
+            "quote_hash": "e8f107c9748493aa6326e68f1d4b525f77ab118d21ae0e179cad53b5401e2c52"
+          },
+          {
+            "source_id": "shguotou_contact",
+            "source_url": "https://www.ssci-leadingfund.com/",
+            "source_title": "上海国投先导｜公开联系信息",
+            "source_content_hash": "c86aa19a1d391a932ff94a19cbe12e439ad23275007df04eaefd7a0001c8b850",
+            "quote": "电话：021-63212188；上海市黄浦区外马路688号7楼；contact@sscilf.com。",
+            "quote_hash": "c86aa19a1d391a932ff94a19cbe12e439ad23275007df04eaefd7a0001c8b850"
+          },
           {
             "source_id": "FISRC-de3bb93d57d25bdf",
             "source_url": "https://www.cyzone.cn/article/822685.html",
@@ -251864,7 +252384,11 @@
             "quote_hash": "f7ef53522aea45928eba53deb0ba7cdf5dcbe8cc3badeae684c82ba9683bc546"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27",
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched",
+        "coverage_note": "融资报道使用的“上国投先导基金”没有指出具体母基金或基金产品；本档案介绍管理平台和三大母基金体系，不将该融资活动擅自归入集成电路、生物医药或人工智能中的某一只基金。官网披露的社会资本撬动情况为子基金体系数据，不代表基金投资回报。"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -295446,21 +295970,75 @@
       },
       "round_codes": [],
       "public_profile": {
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "华大松禾天使基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "summary": "“华大松禾天使基金”与华大基因及松禾资本相关，公开的深圳市政府材料记录盐田区城投集团与华大松禾私募股权投资基金签订出资协议，并称该区引导基金由此参投天使基金。政府材料将其置于生命健康产业培育背景下。公开资料未提供该基金的独立规模、完整管理团队或可核验的基金回报；融资库所关联的墨芯人工智能资料指向较早的A+轮，不能据此描述为后续C轮出资。",
+        "facts": [
+          {
+            "field": "public_identity",
+            "label": "公开披露名称",
+            "value": "华大松禾天使基金；政府材料亦称“华大松禾私募股权投资基金”。",
+            "source_id": "huada_songhe_yantian"
+          },
+          {
+            "field": "public_role",
+            "label": "公开披露关系",
+            "value": "2023年盐田区城投集团与华大松禾私募股权投资基金签订出资协议，盐田区政府引导基金参投天使类基金。",
+            "source_id": "huada_songhe_yantian"
+          },
+          {
+            "field": "ecosystem",
+            "label": "公开披露产业背景",
+            "value": "盐田区政府材料将合作与合成生物、脑科学、细胞与基因等生命健康方向的产业培育联系起来。",
+            "source_id": "huada_songhe_yantian"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：墨芯人工智能 · C轮 · 2026-05-29 · A+轮参投 · 近10亿人民币。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "融资库所关联的公开报道将华大松禾天使基金列为墨芯人工智能较早A+轮融资的战略跟投方。该报道不是后续C轮出资证明，且没有披露该基金的具体出资额。",
             "source_id": "FISRC-fd6d552d3eca98a8"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "政府公开政策与基金信息入口",
+            "value": "深圳市财政局",
+            "url": "https://szfb.sz.gov.cn/",
+            "source_id": "huada_songhe_yantian"
+          },
+          {
+            "kind": "website",
+            "label": "深圳市金融发展服务平台报道",
+            "value": "中共深圳市委金融委员会办公室",
+            "url": "https://jr.sz.gov.cn/sjrb/ztzl/szctr/hdzx/content/post_10897240.html",
+            "source_id": "huada_songhe_szfi"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "huada_songhe_yantian",
+            "source_url": "https://szfb.sz.gov.cn/gkmlpt/content/10/10714/post_10714433.html",
+            "source_title": "深圳市财政局：盐田区引导基金探索尝试天使类投资",
+            "source_content_hash": "207a5d559a2f6296ff70cf4f5a59c28378981620545a83283165d20838ec7a1e",
+            "quote": "2023年7月8日，盐田区城投集团与华大松禾私募股权投资基金签订出资协议，这是区引导基金首次投资天使类基金。",
+            "quote_hash": "207a5d559a2f6296ff70cf4f5a59c28378981620545a83283165d20838ec7a1e"
+          },
+          {
+            "source_id": "huada_songhe_szfi",
+            "source_url": "https://jr.sz.gov.cn/sjrb/ztzl/szctr/hdzx/content/post_10897240.html",
+            "source_title": "深圳市委金融委员会办公室：深圳创投日走进盐田",
+            "source_content_hash": "17a12a0c9ddade287322baef440a8644f87f4889e06fba60d99d452c2d0cbbf6",
+            "quote": "区城投集团与华大松禾天使基金签订出资协议，支持种子期、初创期生命健康企业。",
+            "quote_hash": "17a12a0c9ddade287322baef440a8644f87f4889e06fba60d99d452c2d0cbbf6"
+          },
+          {
+            "source_id": "huada_songhe_history",
+            "source_url": "https://news.qq.com/rain/a/20240410A04MKL00",
+            "source_title": "墨芯人工智能早期融资报道",
+            "source_content_hash": "37a57e197b6ddad5be65d8b57fea3be4820a81deaa4d08c39839c173ec75e24d",
+            "quote": "华大松禾天使基金、岩山科技战略跟投。",
+            "quote_hash": "37a57e197b6ddad5be65d8b57fea3be4820a81deaa4d08c39839c173ec75e24d"
+          },
           {
             "source_id": "FISRC-fd6d552d3eca98a8",
             "source_url": "https://news.qq.com/rain/a/20240410A04MKL00",
@@ -295470,7 +296048,11 @@
             "quote_hash": "6aaaecbe924b70a34dba5b426483818227e6c2b2c09dcafa3c4f599be7014f98"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27",
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched",
+        "coverage_note": "政府来源确认其参与天使基金，但未披露基金规模、管理人或当前募资渠道。融资库关联的腾讯新闻来源记录的是墨芯人工智能较早的A+轮参投，不是后续C轮；本档案不把该轮公司融资总额记作基金出资额。"
       },
       "activity_count": 1,
       "portfolio_companies": [],
@@ -295700,21 +296282,76 @@
       },
       "round_codes": [],
       "public_profile": {
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "金浦投资上海金融科技基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "summary": "上海金融科技基金由上海国际集团战略发起、金浦投资管理，2021年完成首轮关账，封闭规模20亿元。集团披露其方向包括数字经济基础设施、金融机构转型和实体产业数字化。融资库关联的墨芯人工智能报道说明该基金参与的是较早A+轮融资，不是后续C轮，亦未披露该基金的具体出资金额。",
+        "facts": [
+          {
+            "field": "fund_manager",
+            "label": "管理关系",
+            "value": "由上海国际集团战略发起，金浦投资担任管理人。",
+            "source_id": "sig_fintech_history"
+          },
+          {
+            "field": "first_close",
+            "label": "首轮关账",
+            "value": "2021年9月完成首轮关账，封闭规模人民币20亿元。",
+            "source_id": "sig_fintech_history"
+          },
+          {
+            "field": "investment_focus",
+            "label": "投资方向",
+            "value": [
+              "数字经济基础设施",
+              "科技赋能传统金融机构转型",
+              "实体产业数字化"
+            ],
+            "source_id": "sig_fintech_history"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：墨芯人工智能 · C轮 · 2026-05-29 · A+轮领投 · 近10亿人民币。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "评级材料列示的截至2022年末上海金融科技基金项目包括迅策科技、金仕达、山源科技、鼎茂科技、华天软件、竹间智能和斑马智行；这是披露样本，不是完整组合或业绩回报。",
+            "source_id": "sig_fintech_rating"
+          },
+          {
+            "description": "融资库关联的公开报道把金浦投资上海金融科技基金列为墨芯人工智能较早A+轮融资的领投方；不据此认定其参与后续C轮，也不推断具体出资额。",
             "source_id": "FISRC-fd6d552d3eca98a8"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "发起方官方网站",
+            "value": "上海国际集团",
+            "url": "https://www.sigchina.com/",
+            "source_id": "sig_contact"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "sig_fintech_history",
+            "source_url": "https://www.sigchina.com/site/history",
+            "source_title": "上海国际集团｜发展历程",
+            "source_content_hash": "f9a048d29e795663cebb632bd5f747a56ac055038723c0045f15a05745379123",
+            "quote": "上海国际集团战略发起、金浦投资管理的上海金融科技股权投资基金于2021年9月完成首轮关账，封闭规模20亿元。",
+            "quote_hash": "f9a048d29e795663cebb632bd5f747a56ac055038723c0045f15a05745379123"
+          },
+          {
+            "source_id": "sig_fintech_rating",
+            "source_url": "https://www.sse.com.cn/disclosure/bond/announcement/company/c/new/2023-06-21/175804_20230621_59WL.pdf",
+            "source_title": "新世纪评级：上海国际集团及基金业务概况",
+            "source_content_hash": "b8f38c194ac408bbabb49b9440bfd763ec896204eb53327114d0880baa4878c4",
+            "quote": "截至2022年末，上海金融科技基金主要投资项目包括迅策科技、金仕达、山源科技、鼎茂科技、华天软件、竹间智能、斑马智行等。",
+            "quote_hash": "b8f38c194ac408bbabb49b9440bfd763ec896204eb53327114d0880baa4878c4"
+          },
+          {
+            "source_id": "sig_contact",
+            "source_url": "https://www.sigchina.com/",
+            "source_title": "上海国际集团｜官方网站",
+            "source_content_hash": "ac47fd25e7ad0528f12f67a35f90c5c21dfb2cbfa8eacae55f2e2417047bb603",
+            "quote": "上海国际集团官网提供集团概况、产业基金、股权投资和联系信息。",
+            "quote_hash": "ac47fd25e7ad0528f12f67a35f90c5c21dfb2cbfa8eacae55f2e2417047bb603"
+          },
           {
             "source_id": "FISRC-fd6d552d3eca98a8",
             "source_url": "https://news.qq.com/rain/a/20240410A04MKL00",
@@ -295724,7 +296361,11 @@
             "quote_hash": "c91b5a60b925476a864273c8a7b4696ee09d77d8a29684992d2d94af69ea5350"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27",
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched",
+        "coverage_note": "20亿元是2021年首轮关账的封闭规模，不代表当前剩余可投资金额。被投项目名单来自评级材料截至2022年末的披露。融资库关联来源指向墨芯人工智能较早的A+轮；并不证明基金参与了后续C轮。"
       },
       "activity_count": 1,
       "portfolio_companies": [],
@@ -297623,12 +298264,38 @@
       },
       "round_codes": [],
       "public_profile": {
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "厦门思明科创基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-19；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "summary": "厦门思明科创基金是由思明区财政专项拨付、按市场化方式运作并实行专业化管理的政策性基金。思明区的2023年管理办法征求意见稿列明战略性新兴产业、高新技术、科技服务和数字科技等方向；2025年正式政策将基金规模扩充至1亿元，并新增数字营销领域。对单家数字营销企业不超过2000万元的规定，仅适用于该政策方向，不代表一般项目额度。",
+        "facts": [
+          {
+            "field": "fund_type",
+            "label": "基金性质",
+            "value": "思明区财政专项拨付、市场化运作、专业化管理的政策性基金。",
+            "source_id": "siming_rules_2023"
+          },
+          {
+            "field": "investment_focus",
+            "label": "公开列示方向",
+            "value": [
+              "战略性新兴产业",
+              "高新技术产业",
+              "科技服务业",
+              "数字科技产业"
+            ],
+            "source_id": "siming_rules_2023"
+          },
+          {
+            "field": "reported_scale",
+            "label": "政策披露规模",
+            "value": "2025年政策称基金规模扩充至人民币1亿元。",
+            "source_id": "siming_policy_2025"
+          },
+          {
+            "field": "2025_policy",
+            "label": "数字营销项目支持",
+            "value": "政策新增数字营销领域；对该类企业的股权投资金额不超过2000万元。此额度仅对应该政策适用范围。",
+            "source_id": "siming_policy_2025"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
@@ -297636,8 +298303,39 @@
             "source_id": "FISRC-72156fa3f46ebcb1"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "厦门市投资促进公共信息入口",
+            "value": "厦门投资促进中心",
+            "url": "https://www.investxiamen.org.cn/",
+            "source_id": "siming_rules_2023"
+          },
+          {
+            "kind": "email",
+            "label": "2023年草案公开征求意见邮箱（非现行投资申请邮箱）",
+            "value": "smq_kxj@xm.gov.cn",
+            "url": "https://www.investxiamen.org.cn/detail/7524.html",
+            "source_id": "siming_rules_2023"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "siming_rules_2023",
+            "source_url": "https://www.investxiamen.org.cn/detail/7524.html",
+            "source_title": "厦门投资促进中心：思明区科技创新创业基金管理办法征求意见",
+            "source_content_hash": "09d95783c3a3fadc768e223de1404658b1e91af7b2133134f899774189c22ef4",
+            "quote": "思明科创基金由思明区财政局专项拨付，按照市场化方式运作、专业化管理。",
+            "quote_hash": "09d95783c3a3fadc768e223de1404658b1e91af7b2133134f899774189c22ef4"
+          },
+          {
+            "source_id": "siming_policy_2025",
+            "source_url": "https://www.investxiamen.org.cn/show/1039.html",
+            "source_title": "思明区促进数字营销产业发展若干措施（2025）",
+            "source_content_hash": "57734453f3a0e3cfe809304d6b26be7113a1244ef38e13dd224d4b568e9caa89",
+            "quote": "升级思明科技创新创业基金，规模扩充至1亿元，投资范围增设数字营销领域。",
+            "quote_hash": "57734453f3a0e3cfe809304d6b26be7113a1244ef38e13dd224d4b568e9caa89"
+          },
           {
             "source_id": "FISRC-72156fa3f46ebcb1",
             "source_url": "https://www.163.com/dy/article/KNTCC29Q0519QIKK.html",
@@ -297647,7 +298345,11 @@
             "quote_hash": "0e4edf9ff030ca4f49744d0501f6a772f8fd92bc0a55c58e2863097a7494f403"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-27",
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched",
+        "coverage_note": "2023年页面为管理办法征求意见稿，结构和支持比例按草案处理；2025年政策明确将基金规模扩充至1亿元，并为数字营销企业设置特定额度上限。2026年融资披露列其为灵御智能天使+轮投资机构，但未披露基金的具体出资额。"
       },
       "activity_count": 1,
       "portfolio_companies": [],
