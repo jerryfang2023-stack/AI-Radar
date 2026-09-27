@@ -137,12 +137,33 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "亦庄科创二期基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "亦庄科创二期基金的官方名称表述为北京科创亦庄直投基金，是北京科创基金的直接投资工具之一。北京科创基金公开项目页将新石器列为该基金首批投资项目之一。北京科创基金官网定位为服务北京国际科技创新中心、聚焦硬科技投资；融资库记录的华毅瀛飞融资属于另一项参投披露，具体出资额没有公开。",
+      "facts": [
+        {
+          "field": "public_name",
+          "label": "公开名称",
+          "value": "亦庄科创二期基金（北京科创亦庄直投基金）",
+          "source_id": "bjstif_yizhuang"
+        },
+        {
+          "field": "manager_platform",
+          "label": "所属投资平台",
+          "value": "北京科创基金；官网介绍其采取政府引导与市场运作相结合、专业团队投资运营管理。",
+          "source_id": "bjstif_home"
+        },
+        {
+          "field": "investment_focus",
+          "label": "平台投资方向",
+          "value": "硬科技投资，服务北京国际科技创新中心建设。",
+          "source_id": "bjstif_home"
+        },
+        {
+          "field": "portfolio_example",
+          "label": "公开首批项目案例",
+          "value": "北京科创基金披露新石器是亦庄科创二期基金（北京科创亦庄直投基金）的首批投资项目之一。",
+          "source_id": "bjstif_yizhuang"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +171,54 @@
           "source_id": "FISRC-13a43855ea188967"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "基金管理平台官网",
+          "value": "北京科创基金",
+          "url": "https://bjstif.cn/",
+          "source_id": "bjstif_home"
+        },
+        {
+          "kind": "phone",
+          "label": "北京科创基金公开电话（平台总机）",
+          "value": "010-82362001",
+          "url": "https://bjstif.cn/",
+          "source_id": "bjstif_contact"
+        },
+        {
+          "kind": "address",
+          "label": "北京科创基金公开地址（平台办公地址）",
+          "value": "北京市海淀区中关村街道63号北京卫星制造厂科技园2号厂房二层",
+          "url": "https://bjstif.cn/",
+          "source_id": "bjstif_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "bjstif_yizhuang",
+          "source_url": "https://bjstif.cn/news/index_2.html",
+          "source_title": "北京科创基金：亦庄科创二期基金投资新石器",
+          "source_content_hash": "5ba4699fb747a06c1ddd8a84ecaba94c65981478546b5afcb3a737f1b11f09b2",
+          "quote": "新石器项目是亦庄科创二期基金（北京科创亦庄直投基金）的首批投资项目。",
+          "quote_hash": "5ba4699fb747a06c1ddd8a84ecaba94c65981478546b5afcb3a737f1b11f09b2"
+        },
+        {
+          "source_id": "bjstif_home",
+          "source_url": "https://bjstif.cn/",
+          "source_title": "北京科创基金｜官方网站",
+          "source_content_hash": "c09eb410cfcebca7b95d6223f8c56a0a6ad30036ca10bb7dd6781998e0c5530f",
+          "quote": "服务北京国际科技创新中心建设；政府引导与市场运作相结合；专业化团队投资运营管理。",
+          "quote_hash": "c09eb410cfcebca7b95d6223f8c56a0a6ad30036ca10bb7dd6781998e0c5530f"
+        },
+        {
+          "source_id": "bjstif_contact",
+          "source_url": "https://bjstif.cn/",
+          "source_title": "北京科创基金｜公开联系方式",
+          "source_content_hash": "956c886675d8755b9684e4f23c1ecb6847ce52ba87bfb4bdfb7e06e6235bc4ad",
+          "quote": "北京市海淀区中关村街道63号北京卫星制造厂科技园2号厂房二层；010-82362001。",
+          "quote_hash": "956c886675d8755b9684e4f23c1ecb6847ce52ba87bfb4bdfb7e06e6235bc4ad"
+        },
         {
           "source_id": "FISRC-13a43855ea188967",
           "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-13/doc-inhuitqy5628851.shtml",
@@ -161,7 +228,11 @@
           "quote_hash": "dcaa6fc9894fc1596ce5cf55490408d66b627ce08b0f5c7ed18ea4ad0792ae41"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "亦庄科创二期基金与北京科创基金平台相关，但本档案不将平台整体组合全部归入该单只基金。北京科创基金公开案例列新石器为该基金首批项目；该公司整轮融资额不代表该基金出资额。"
     }
   }
 }

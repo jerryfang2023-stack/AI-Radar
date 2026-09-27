@@ -137,12 +137,40 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "四川发展科创基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "融资库中的“四川发展科创基金”对应四川发展科创股权投资基金及其管理体系。公开遴选信息显示，基金总规模为101.174亿元，管理人为四川发展科技创新投资私募基金管理有限公司，重点布局航空航天、生物医药、先进材料、电子信息、高端装备制造和特色军工等战略性新兴产业。融资报道列出的融资轮次是案例记录，不代表该基金在该轮的具体出资额。",
+      "facts": [
+        {
+          "field": "formal_name",
+          "label": "公开披露名称",
+          "value": "四川发展科创股权投资基金合伙企业（有限合伙）",
+          "source_id": "scfd_fund_notice"
+        },
+        {
+          "field": "reported_scale",
+          "label": "公开披露规模",
+          "value": "人民币101.174亿元；该数为基金总规模，不是单笔项目投资额。",
+          "source_id": "scfd_fund_notice"
+        },
+        {
+          "field": "manager",
+          "label": "基金管理人",
+          "value": "四川发展科技创新投资私募基金管理有限公司",
+          "source_id": "scfd_fund_notice"
+        },
+        {
+          "field": "sectors",
+          "label": "公开披露重点方向",
+          "value": [
+            "航空航天",
+            "生物医药",
+            "先进材料",
+            "电子信息",
+            "高端装备制造",
+            "特色军工"
+          ],
+          "source_id": "scfd_fund_notice"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +178,47 @@
           "source_id": "FISRC-8787a3d3602feb17"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "基金管理体系公开信息",
+          "value": "四川省科技创新投资集团公司新闻",
+          "url": "https://scfzfund.sdholding.com/news/company/index_2.html",
+          "source_id": "scfd_manager_site"
+        },
+        {
+          "kind": "website",
+          "label": "出资平台官方网站",
+          "value": "四川发展（控股）有限责任公司",
+          "url": "https://www.sdholding.com/",
+          "source_id": "scfd_parent_site"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "scfd_fund_notice",
+          "source_url": "https://news.pedaily.cn/202606/565149.shtml",
+          "source_title": "四川发展科创基金子基金管理机构遴选公告｜投资界转述",
+          "source_content_hash": "2dc176ef19fb6990a724dcdcd9952090a7b4d4a5745f8baa24f14d3d60a124d5",
+          "quote": "四川发展科创股权投资基金总规模为101.174亿元，重点投向航空航天、生物医药、先进材料、电子信息、高端装备制造、特色军工等战略性新兴产业。",
+          "quote_hash": "2dc176ef19fb6990a724dcdcd9952090a7b4d4a5745f8baa24f14d3d60a124d5"
+        },
+        {
+          "source_id": "scfd_manager_site",
+          "source_url": "https://scfzfund.sdholding.com/news/company/index_2.html",
+          "source_title": "四川省科技创新投资集团｜公司新闻",
+          "source_content_hash": "a1c07fce0033a1550ee42d96074ab8f3c64675ec6204dbc875a844e6c6d95d85",
+          "quote": "四川发展科创基金子基金管理机构遴选公告。",
+          "quote_hash": "a1c07fce0033a1550ee42d96074ab8f3c64675ec6204dbc875a844e6c6d95d85"
+        },
+        {
+          "source_id": "scfd_parent_site",
+          "source_url": "https://www.sdholding.com/",
+          "source_title": "四川发展（控股）有限责任公司｜官方网站",
+          "source_content_hash": "167a791d8f269c01df5f3c9a600ba429b3f35c686ad27f1a7f22f6db072e65b1",
+          "quote": "四川发展（控股）有限责任公司成立于2008年，是四川省级综合投融资平台。",
+          "quote_hash": "167a791d8f269c01df5f3c9a600ba429b3f35c686ad27f1a7f22f6db072e65b1"
+        },
         {
           "source_id": "FISRC-8787a3d3602feb17",
           "source_url": "https://www.ncsti.gov.cn/kjdt/scyq/zgckxc/zgcdt/202607/t20260701_250581.html",
@@ -161,7 +228,11 @@
           "quote_hash": "b3723f9de6e9a09c248d641d2d6e47081bc5fd4c0a25f31ae4b59238ea741e82"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "基金规模、管理人及投向按公开遴选公告转述记录；管理公司与基金是不同主体。单轮融资总额不代表本基金出资额，且未披露本基金单笔认缴金额。"
     }
   }
 }
