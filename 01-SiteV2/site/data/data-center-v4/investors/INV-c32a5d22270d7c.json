@@ -137,21 +137,150 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Norwest Venture Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Norwest Venture Partners（NVP）是 Norwest 的风险投资业务，覆盖早期至后期、多个行业，并在北美、印度和以色列开展投资。机构为创始人提供投资资金及人才、销售、市场和运营等组合支持。",
+      "facts": [
+        {
+          "field": "investment_stages",
+          "label": "投资阶段",
+          "value": [
+            "Early stage",
+            "Growth",
+            "Late stage"
+          ],
+          "source_id": "norwest_venture"
+        },
+        {
+          "field": "investment_check_size",
+          "label": "官网披露的股权投资范围",
+          "value": "官网称投资金额从 100 万至 3000 万美元，具体取决于阶段与轮次。",
+          "source_id": "norwest_venture"
+        },
+        {
+          "field": "geography",
+          "label": "投资地域",
+          "value": [
+            "北美",
+            "印度",
+            "以色列"
+          ],
+          "source_id": "norwest_venture"
+        },
+        {
+          "field": "sector_focus",
+          "label": "官网列出的行业",
+          "value": [
+            "Technology",
+            "Information Services",
+            "Business Services",
+            "Financial Services",
+            "Consumer Products and Services",
+            "Healthcare",
+            "Life Sciences",
+            "Biotech"
+          ],
+          "source_id": "norwest_venture"
+        },
+        {
+          "field": "firm_scale",
+          "label": "机构规模（官网自报）",
+          "value": "官网页面披露管理资产 155 亿美元、当前基金规模 30 亿美元、累计投资 700 多家公司，其中约 200 家仍在运营；访问官网日期为 2026-09-27。",
+          "source_id": "norwest_venture"
+        },
+        {
+          "field": "team_roster",
+          "label": "官网列示的风险投资团队成员",
+          "value": [
+            "Jeff Crowe — Senior Managing Partner",
+            "Tiba Aynechi, Ph.D. — General Partner",
+            "Dror Nahumi — General Partner",
+            "Assaf Harel — Partner",
+            "Lisa Wu — Partner",
+            "Promod Haque — Venture Partner"
+          ],
+          "source_id": "norwest_venture"
+        },
+        {
+          "field": "portfolio_examples",
+          "label": "官网展示的组合公司",
+          "value": [
+            "LlamaIndex",
+            "Gong",
+            "Ritual",
+            "Rain"
+          ],
+          "source_id": "norwest_venture"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Oro Labs · C轮 · 2026-03-12 · 既有投资方，本轮参投 · $100 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Oro Labs · Series C · 2026-03-12 · 报道称既有投资人 Norwest Venture Partners 参与其 1 亿美元融资；1 亿美元是轮次总额，不是 Norwest 的单笔出资。",
           "source_id": "FISRC-1347e63f3abd5d34"
+        },
+        {
+          "description": "官网称 Norwest 曾投资 700 多家公司，并列出 LlamaIndex、Gong、Ritual 与 Rain 等案例；这些数据是机构自报的组合概况，不代表投资回报。",
+          "source_id": "norwest_venture"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "管理规模、当前基金规模、投资公司数与支票区间均为 Norwest 官网访问时披露的机构自报数据，可能随时间变化。Oro Labs 的 1 亿美元为 2026 年 Series C 总额；Norwest 是既有投资人之一，单笔金额未披露。",
+      "experience_summary": "官网将投资团队描述为由有创业、经营和投资经验的合伙人组成，并提供人才、销售市场、产品技术及企业发展支持服务；这里只收录官网公开的职务与组合服务。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站与投资策略",
+          "value": "Norwest Venture Partners",
+          "url": "https://www.norwest.com/venture/",
+          "source_id": "norwest_venture"
+        },
+        {
+          "kind": "address",
+          "label": "Menlo Park 办公室",
+          "value": "1300 El Camino Real, Suite 200, Menlo Park, CA 94025",
+          "url": "https://www.norwest.com/contact/",
+          "source_id": "norwest_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "Menlo Park 电话",
+          "value": "+1 650 321 8000",
+          "url": "https://www.norwest.com/contact/",
+          "source_id": "norwest_contact"
+        },
+        {
+          "kind": "address",
+          "label": "San Francisco 办公室",
+          "value": "2 South Park Street, 3rd Floor, San Francisco, CA 94107",
+          "url": "https://www.norwest.com/contact/",
+          "source_id": "norwest_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "San Francisco 电话",
+          "value": "+1 415 918 5010",
+          "url": "https://www.norwest.com/contact/",
+          "source_id": "norwest_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "norwest_venture",
+          "source_url": "https://www.norwest.com/venture/",
+          "source_title": "Norwest Venture Capital | Early-Stage to Growth",
+          "source_content_hash": "001d5d628ac641562f67db6c46f0fd567f242b52e81a77942b600f5af52a7f10",
+          "quote": "Norwest’s Venture Capital (NVP) team invests in early- to late-stage companies across industries, providing $1M–$30M equity checks and hands-on support to help founders scale.",
+          "quote_hash": "65af50bc6cf3e045e35553351d84b1cbe576850c43f232230dac8f8a62d90b94"
+        },
+        {
+          "source_id": "norwest_contact",
+          "source_url": "https://www.norwest.com/contact/",
+          "source_title": "Contact Norwest | Venture Capital & Growth Equity",
+          "source_content_hash": "e77e0c4a09e54e01243a6acd2e1439940daac404d56a29f99ed634ec53eaa184",
+          "quote": "1300 El Camino Real, Suite 200 Menlo Park, CA 94025 +1.650.321.8000",
+          "quote_hash": "44c7d5134eaf1d4556758ee32f1e47e2d285dbbb5caa19339fdca8dd3f71bb69"
+        },
         {
           "source_id": "FISRC-1347e63f3abd5d34",
           "source_url": "https://fortune.com/2026/03/12/oro-labs-corporate-procurement-ai-efficiency/",
@@ -161,7 +290,7 @@
           "quote_hash": "2758854e444ab6df3eb9d32daef6307353e57d69fcf49c16a5361ca212a26c43"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

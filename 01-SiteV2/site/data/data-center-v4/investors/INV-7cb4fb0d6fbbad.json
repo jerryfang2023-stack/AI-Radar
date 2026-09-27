@@ -137,21 +137,131 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Notion Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Notion Capital 是一家聚焦欧洲企业软件和 B2B SaaS 的早期投资机构。其团队由创业者与经营者组成，强调长期陪伴和帮助企业从早期收入阶段成长；组合支持包括运营平台、人才网络、培训和 go-to-market 资源。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资领域",
+          "value": "欧洲企业软件与 B2B 软件公司。",
+          "source_id": "notion_home"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网定位为欧洲早期企业软件投资机构，重点陪伴创始团队成长。",
+          "source_id": "notion_home"
+        },
+        {
+          "field": "founder_support",
+          "label": "组合支持",
+          "value": "提供面向创始团队的学习培训、人才与专家连接、领导力项目及运营支持。",
+          "source_id": "notion_home"
+        },
+        {
+          "field": "leadership_team",
+          "label": "管理与投资团队",
+          "value": [
+            "Stephen Chandler — Managing Partner；共同创办 Notion，曾任 MessageLabs CFO。",
+            "Jos White — General Partner；共同创办 MessageLabs。",
+            "Chris Tottman — General Partner。",
+            "Patrick Norris — General Partner。",
+            "Itxaso del Palacio — General Partner。",
+            "Kamil Mieczakowski — General Partner。"
+          ],
+          "source_id": "notion_team"
+        },
+        {
+          "field": "founder_track_record",
+          "label": "创始团队经营经历",
+          "value": "Stephen Chandler 的官网简介称，他作为 MessageLabs CFO 参与公司经营，MessageLabs 后以约 7 亿美元出售给 Symantec；这是团队创办机构前的企业经历。",
+          "source_id": "notion_team"
+        },
+        {
+          "field": "portfolio_examples",
+          "label": "官网选列的组合公司",
+          "value": [
+            "Mews",
+            "GoCardless",
+            "YuLife",
+            "Paddle",
+            "Currencycloud",
+            "Quantum Systems",
+            "Upvest"
+          ],
+          "source_id": "notion_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Pivot · B轮 · 2026-05-21 · 本轮领投 · $40m。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Pivot · Series B · 2026-05-21 · Forestay Capital 与 Notion Capital 共同领投其 4000 万美元融资；该数字为轮次总额，Notion 的单笔出资未披露。",
           "source_id": "FISRC-58b2708f2adcb70e"
+        },
+        {
+          "description": "官网组合页面列出的代表性公司包括 Mews、GoCardless、Paddle、Currencycloud 与 Quantum Systems；这是选择性展示，不是完整投资清单或回报数据。",
+          "source_id": "notion_home"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "投资方向、团队简介、组合公司与联系方式来自 Notion Capital 官网。Pivot 于 2026 年披露的 4000 万美元为 B 轮融资总额，Forestay Capital 与 Notion Capital 共同领投；Notion 的单笔出资未披露。",
+      "experience_summary": "团队官网自述成员多为创业者与运营者。Stephen Chandler 与 Jos White 的公开履历包含 MessageLabs 创业与经营经历，Notion 的平台团队提供组合公司的运营支持。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站与投资方向",
+          "value": "Notion Capital",
+          "url": "https://www.notioncapital.com/",
+          "source_id": "notion_home"
+        },
+        {
+          "kind": "application",
+          "label": "投资申请入口",
+          "value": "Looking for investment? 在线申请",
+          "url": "https://www.notioncapital.com/connect",
+          "source_id": "notion_connect"
+        },
+        {
+          "kind": "email",
+          "label": "公开联系邮箱",
+          "value": "info@notion.vc",
+          "url": "https://www.notioncapital.com/connect",
+          "source_id": "notion_connect"
+        },
+        {
+          "kind": "address",
+          "label": "注册及伦敦办公地址",
+          "value": "91 Wimpole Street, London, W1G 0EF",
+          "url": "https://www.notioncapital.com/connect",
+          "source_id": "notion_connect"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "notion_home",
+          "source_url": "https://www.notioncapital.com/",
+          "source_title": "Notion Capital - Europe’s Leading Early-Stage Business Software Investor",
+          "source_content_hash": "497d1ef3b0626e3f00ef24a29b33e877cf0c73aae16d2f170c28195914f8c7b2",
+          "quote": "We invest in what we know and love: European business software companies.",
+          "quote_hash": "6edc83878a5c0bc29e0b268bad6e3b16fb9d548bec6a53ad306bbf1111f7c7b5"
+        },
+        {
+          "source_id": "notion_team",
+          "source_url": "https://www.notioncapital.com/team",
+          "source_title": "The Notion Capital Team | The B2B Software VC, Built by Operators",
+          "source_content_hash": "933d04d283ce94157e0e3c5475134fbb7effe2ce45b4e7f150933d9db9552405",
+          "quote": "Stephen Chandler is Managing Partner at Notion Capital. He co-founded the firm after leading MessageLabs’ $700m Symantec exit as CFO.",
+          "quote_hash": "7b29c44753699c91d0c8485e9b833becc36024c9f6f82e62e33f7edc6954c148"
+        },
+        {
+          "source_id": "notion_connect",
+          "source_url": "https://www.notioncapital.com/connect",
+          "source_title": "Connect | Notion",
+          "source_content_hash": "03090be3d67b2de1cd2df9f3e5ef57a43d8cd1b61151ed09d8fe653980b4e1fb",
+          "quote": "Notion Capital Managers LLP (OC364955) is Authorised and Regulated by the Financial Conduct Authority.",
+          "quote_hash": "308d683e82f1349e80bcc88c38b41579d800800b27325476b2a5976e72e536d5"
+        },
         {
           "source_id": "FISRC-58b2708f2adcb70e",
           "source_url": "https://thenextweb.com/news/pivot-40m-series-b-agentic-ai-procurement-operating-system",
@@ -161,7 +271,7 @@
           "quote_hash": "17b6e623e7eae5e5597b6fbff227feabc152ea69596a740e7b1bfd850e684029"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

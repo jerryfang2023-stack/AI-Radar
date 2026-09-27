@@ -129,21 +129,108 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "O'Shaughnessy Ventures LLC 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "O’Shaughnessy Ventures（OSV）是 Jim O’Shaughnessy 创立的家族办公室投资与控股公司，也经营面向创作者的出版、影视、媒体和奖助项目。官网称其会早期支持尚未广为人知的公司与创作者；其公开投资案例覆盖 AI、企业软件、教育和神经科技等。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构性质",
+          "value": "官网将 OSV 描述为家族办公室投资与控股公司，同时运营创作者支持项目。",
+          "source_id": "osv_home"
+        },
+        {
+          "field": "investment_strategy",
+          "label": "投资策略",
+          "value": "官网表示会尽早支持有大胆构想的创业者及创作者；没有在该页面公布基金阶段或支票区间。",
+          "source_id": "osv_home"
+        },
+        {
+          "field": "business_lines",
+          "label": "业务板块",
+          "value": [
+            "早期公司投资",
+            "图书出版",
+            "电影制作",
+            "播客与通讯媒体",
+            "奖助与 Fellowships"
+          ],
+          "source_id": "osv_home"
+        },
+        {
+          "field": "team_and_background",
+          "label": "核心团队与履历",
+          "value": [
+            "Jim O’Shaughnessy — 创始人兼 CEO；此前创立并担任 O’Shaughnessy Asset Management CEO，著有多本投资与商业书籍。",
+            "Chris Denny-Brown — 战略项目董事总经理；负责评估投资机会并为组合公司提供运营与财务支持。",
+            "Nick Tawil — 董事总经理，关注早期公司与媒体投资；此前从事科技和媒体投资银行业务、风险投资，并曾服役于美国海军。",
+            "Michael Breitenbach — 董事总经理，关注风险投资、区块链与生成式 AI。",
+            "Jean-Marc Daecius — Chief of Staff，负责在 OSV 各业务板块推动 AI 运营。"
+          ],
+          "source_id": "osv_home"
+        },
+        {
+          "field": "portfolio_examples",
+          "label": "官网选列的公司投资案例",
+          "value": [
+            "Stability AI",
+            "Prefect",
+            "Synthesis School",
+            "Hegel AI",
+            "Prophetic",
+            "Furno Materials",
+            "Affinity"
+          ],
+          "source_id": "osv_adventures"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Stability AI · B轮 · 2026-08-25 · 2022 年 1.01 亿美元融资领投方 · $76 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Stability AI · 2022-10 · 官方融资公告称，公司完成 1.01 亿美元融资，Coatue、Lightspeed Venture Partners 与 O’Shaughnessy Ventures LLC 共同领投；该金额是融资总额，不是 OSV 的单笔出资。",
           "source_id": "FISRC-2a3c20bc832bd7ef"
+        },
+        {
+          "description": "OSV 官网列出的精选公司案例包括 Stability AI、Prefect、Synthesis School 与 Hegel AI；这是部分展示名单，不是完整组合或回报清单。",
+          "source_id": "osv_adventures"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "OSV 将自身描述为家族办公室投资与控股公司，业务范围宽于传统风险基金。团队履历、投资方向及组合案例来自 OSV 官网；Stability AI 2022 年 1.01 亿美元为该融资总额，OSV 的单笔投资额未披露。",
+      "experience_summary": "OSV 核心团队背景涵盖投资管理、科技与媒体投行、海军服役、AI/软件工程、出版与创作者项目；公开页面没有披露完整投资组合与基金回报数据。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站与业务入口",
+          "value": "O’Shaughnessy Ventures",
+          "url": "https://www.osv.llc/",
+          "source_id": "osv_home"
+        },
+        {
+          "kind": "website",
+          "label": "公司投资与组合案例",
+          "value": "Infinite Adventures",
+          "url": "https://www.osv.llc/adventures",
+          "source_id": "osv_adventures"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "osv_home",
+          "source_url": "https://www.osv.llc/",
+          "source_title": "Unleash Your Infinite Potential | O’Shaughnessy Ventures",
+          "source_content_hash": "8a5ea44af286fd09fc7670c1485337c60b2fb10fc316df3423b6bbe4c6fee661",
+          "quote": "Leads OSV, a family office investment and holding company.",
+          "quote_hash": "863e45754fa42048998171a8611e500d2c4a982433c73f16ed337ac65dc761e7"
+        },
+        {
+          "source_id": "osv_adventures",
+          "source_url": "https://www.osv.llc/adventures",
+          "source_title": "Infinite Adventures | O’Shaughnessy Ventures",
+          "source_content_hash": "ed24da2c2ef621aaab5c934648d1a83cdc62fed471264671e92f53f27c85ec14",
+          "quote": "Select Portfolio Investments Affinity is a compliance training platform built for regulated industries.",
+          "quote_hash": "557385dd110496ed5e916f3a7e63255c112b6f507936e5544883c0e10a76fc2f"
+        },
         {
           "source_id": "FISRC-2a3c20bc832bd7ef",
           "source_url": "https://stability.ai/news-updates/stability-ai-announces-101-million-in-funding-for-open-source-artificial-intelligence",
@@ -153,7 +240,7 @@
           "quote_hash": "6341bc5bddb560309366a4d1adcc2ab034d9c2a252631e555b4517d61bddd331"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }
