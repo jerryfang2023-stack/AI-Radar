@@ -125,7 +125,7 @@ const GENERIC_NON_EVENT_TITLE = /^(?:top\s+\d+|\d+\s+best\b|best\b|hire\b)|^\d{4
 const REVIEWED_RETAINED_SOURCE = /^https?:\/\/(?:www\.)?aifundingtracker\.com\/top-50-ai-startups\/?$/iu;
 const QUESTION_HEADLINE = /^(?:(?:can|could|will|would|is|are|do|does|did|should|has|have)\b|.*\bwhat(?:'s| is)\s+left\s+of\b|.{0,40}(?:能否|是否|会不会|可否)|.*还剩什么).*[?？]$/iu;
 const GENERIC_INDEX_TITLE = /^(?:newsroom|enterprise ai news)(?:\s*(?:[\\|｜:—-])\s*.*)?$|^funding breaking news and press releases(?:\s+from\s+.*)?$|^(?:新闻室(?:\s*[\\|｜:—-]\s*.*)?|企业\s*AI\s*新闻|商业新闻融资快讯与新闻稿)$/iu;
-const GENERIC_ROUNDUP_TITLE = /投?融资(?:周报|月报|日报|盘点)|^硬科技投向标[|｜]|^(?:AI\s+giants?|AI\s+companies?|AI\s+startups?)\b.{0,100}\b(?:billions?|millions?|funding|investment|deployment)\b|^AI\s*(?:巨头|公司|初创企业).{0,80}(?:数十亿|数百万|融资|投资|部署)|^latest\s+open\s+(?:models?|artifacts?)\s*(?:\(#?\d+\)|#\d+)?\s*[:：]|^最新(?:开源)?(?:模型|产品|模型与产品)?(?:盘点|汇总)\s*(?:[（(]#?\d+[）)])?\s*[:：]|\b(?:daily|weekly)\s+(?:AI\s+)?(?:roundup|digest)\b|(?:每日|每周|本周).{0,20}(?:汇总|速览|快讯)/iu;
+const GENERIC_ROUNDUP_TITLE = /投?融资(?:周报|月报|日报|盘点)|(?:一级市场|创投通).{0,28}本周.{0,24}(?:(?:\d+|[一二三四五六七八九十百余]+)\s*起融资|融资(?:总额|额))|^硬科技投向标[|｜]|^(?:AI\s+giants?|AI\s+companies?|AI\s+startups?)\b.{0,100}\b(?:billions?|millions?|funding|investment|deployment)\b|^AI\s*(?:巨头|公司|初创企业).{0,80}(?:数十亿|数百万|融资|投资|部署)|^latest\s+open\s+(?:models?|artifacts?)\s*(?:\(#?\d+\)|#\d+)?\s*[:：]|^最新(?:开源)?(?:模型|产品|模型与产品)?(?:盘点|汇总)\s*(?:[（(]#?\d+[）)])?\s*[:：]|\b(?:daily|weekly)\s+(?:AI\s+)?(?:roundup|digest)\b|(?:每日|每周|本周).{0,20}(?:汇总|速览|快讯)/iu;
 
 export function fundingClaimGroupingProblem(claims) {
   const subjects = new Set(claims.map((claim) => cleanString(claim.subject).toLocaleLowerCase()).filter(Boolean));
