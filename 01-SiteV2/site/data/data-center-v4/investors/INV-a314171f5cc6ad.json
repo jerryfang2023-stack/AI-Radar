@@ -155,23 +155,170 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Silversmith Capital Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "成立年份、当前管理规模和业务方向来自Silversmith官网自述；超过$5 billion的管理规模来自2026年公告。$1.25 billion为Fund IV在2022年的LP承诺额，不能视为当前AUM；16笔部分或全部退出及$1.7 billion现金回款为公司截至2022年报告的累计数据，未独立审计。2026年Vantora公告披露该公司获得超过$100 million的成长投资，并列出加入董事会的Silversmith代表；该案例不构成完整投资组合。公开邮箱为一般联络渠道，未核实专门投资申请渠道。",
+      "summary": "Silversmith Capital Partners是一家成立于2015年、总部位于波士顿的成长股权投资机构，关注科技及医疗健康企业。其2026年公告自述管理规模超过$5 billion；2022年Fund IV以$1.25 billion LP承诺额完成募集，并将投资范围设定为SaaS与信息服务、医疗IT及服务企业。近期公开案例为对Vantora超过$100 million的成长投资。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份与总部",
+          "value": "2015年成立，总部位于美国波士顿。",
+          "source_id": "silversmith_profile_2026"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "管理规模（2026年9月公告）",
+          "value": "Silversmith官网公告称公司管理规模超过$5 billion；该数值为公司自述。",
+          "source_id": "silversmith_profile_2026"
+        },
+        {
+          "field": "investment_strategy",
+          "label": "投资策略",
+          "value": "与科技及医疗健康领域成长型企业的创始人和企业家合作，支持企业长期增长。",
+          "source_id": "silversmith_profile_2026"
+        },
+        {
+          "field": "investment_range",
+          "label": "Fund IV投资范围（2022年）",
+          "value": "Fund IV披露的投资额范围为$20–125 million，面向SaaS与信息服务、医疗IT及服务领域，主要投资创始人主导、已盈利且此前未获机构投资的企业。",
+          "source_id": "silversmith_investment_range_2022"
+        },
+        {
+          "field": "fund_iv_commitments",
+          "label": "Fund IV募集承诺（2022年）",
+          "value": "2022年完成$1.25 billion的LP承诺额募集，管理团队另承诺投入$90 million；该数值是Fund IV的承诺，不等于当前管理规模。",
+          "source_id": "silversmith_fund_iv_2022"
+        },
+        {
+          "field": "realization_track_record_2022",
+          "label": "截至2022年披露的投资与退出",
+          "value": "公司报告已投资41家成长阶段企业，并完成16笔全部或部分退出，累计现金回款$1.7 billion；该数据为公司自述。",
+          "source_id": "silversmith_realizations_2022"
+        },
+        {
+          "field": "representative_portfolio",
+          "label": "代表性投资案例（公司列示）",
+          "value": "官网列举的代表性投资包括ActiveCampaign、Appfire、DistroKid、impact.com、Iodine Software、LifeStance Health和Webflow；该名单非完整投资组合。",
+          "source_id": "silversmith_fund_iv_2022"
+        },
+        {
+          "field": "vantora_board",
+          "label": "Vantora交易的董事会安排（2026年9月）",
+          "value": "投资公告称Todd MacLean、Danielle Waldman和Annie Cory将代表Silversmith加入Vantora董事会；这是单笔交易安排，不是机构完整管理团队名单。",
+          "source_id": "silversmith_vantora_board_2026"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2015",
+          "description": "Silversmith Capital Partners成立。",
+          "source_id": "silversmith_profile_2026"
+        },
+        {
+          "date": "2022-07-28",
+          "description": "Fund IV以$1.25 billion的LP承诺额完成募集，管理团队承诺额外投入$90 million。",
+          "source_id": "silversmith_fund_iv_2022"
+        },
+        {
+          "date": "2026-09-16",
+          "description": "Silversmith公告披露对Vantora进行超过$100 million的成长投资。",
+          "source_id": "silversmith_profile_2026"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Vantora · 成长轮 · 2026-09-18 · 本轮领投 · $100 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Vantora：媒体报道将一笔$100 million投资归于Silversmith Capital Partners；该报道提供一项公开交易线索，不代表完整投资组合。",
           "source_id": "FISRC-415291b734cbb8a6"
         },
         {
-          "description": "融资来源记录：Vantora · 成长轮 · 2026-09-18 · 本轮领投 · $100 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Vantora：Silversmith官方公告称该公司获得超过$100 million成长投资，并披露三名Silversmith代表将加入Vantora董事会。",
           "source_id": "FISRC-03e0e6a10c8bd9e6"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "silversmith.com",
+          "url": "https://www.silversmith.com/",
+          "source_id": "silversmith_profile_2026"
+        },
+        {
+          "kind": "address",
+          "label": "总部地址（官网列示）",
+          "value": "116 Huntington Ave, 15th Floor, Boston, MA 02116, USA",
+          "source_id": "silversmith_contact_2026"
+        },
+        {
+          "kind": "phone",
+          "label": "总部电话",
+          "value": "+1 617-670-4300",
+          "source_id": "silversmith_contact_2026"
+        },
+        {
+          "kind": "email",
+          "label": "一般联络邮箱（非专属投资申请渠道）",
+          "value": "info@silversmithcapital.com",
+          "source_id": "silversmith_email_2026"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "silversmith_profile_2026",
+          "source_url": "https://www.silversmith.com/news/vantora-secures-more-than-100-million-from-silversmith-capital-partners",
+          "source_title": "Vantora Secures More Than $100 Million From Silversmith Capital Partners",
+          "source_content_hash": "6c4b6fb53a2affafa63fd45614329cb755ff9d090ced8fbb2d1cc8e1e27a9845",
+          "quote": "Founded in 2015, Silversmith Capital Partners is a Boston-based growth equity firm with over $5 billion in capital under management.",
+          "quote_hash": "ad05f634121396996995969baf17031950107216570528c5096aa1aa7c486f9d"
+        },
+        {
+          "source_id": "silversmith_vantora_board_2026",
+          "source_url": "https://www.silversmith.com/news/vantora-secures-more-than-100-million-from-silversmith-capital-partners",
+          "source_title": "Vantora Secures More Than $100 Million From Silversmith Capital Partners",
+          "source_content_hash": "6c4b6fb53a2affafa63fd45614329cb755ff9d090ced8fbb2d1cc8e1e27a9845",
+          "quote": "As part of the investment, Todd MacLean, Danielle Waldman and Annie Cory of Silversmith Capital Partners will join Vantora's Board of Directors.",
+          "quote_hash": "0f9ed0d9f5fc631652489331b75789c9ddb7ae64a577b032b75d26962f7f8a91"
+        },
+        {
+          "source_id": "silversmith_fund_iv_2022",
+          "source_url": "https://www.silversmith.com/news/silversmith-capital-partners-raises-1-25-billion-for-fourth-growth-equity-fund",
+          "source_title": "Silversmith Capital Partners Raises $1.25 Billion for Fourth Growth Equity Fund",
+          "source_content_hash": "48629c035d790738daf2bb389525c0116d560aa93e168f43925f0b72f6caf4d4",
+          "quote": "Launched in May 2022, Fund IV was significantly oversubscribed and closed at its target and hard cap of $1.25 billion.",
+          "quote_hash": "64e4e6a1c07c7cc22b69dc5a7bc505114b804e6d5d4c63092f12db5d8fdc98ca"
+        },
+        {
+          "source_id": "silversmith_investment_range_2022",
+          "source_url": "https://www.silversmith.com/news/silversmith-capital-partners-raises-1-25-billion-for-fourth-growth-equity-fund",
+          "source_title": "Silversmith Capital Partners Raises $1.25 Billion for Fourth Growth Equity Fund",
+          "source_content_hash": "48629c035d790738daf2bb389525c0116d560aa93e168f43925f0b72f6caf4d4",
+          "quote": "Fund IV will make minority and majority investments of $20 million to $125 million in SaaS & Information Services and Healthcare IT & Services companies",
+          "quote_hash": "92552c78015e99438ae03b5ea0fa4dd049546d591d52195c1608668ea7792c56"
+        },
+        {
+          "source_id": "silversmith_realizations_2022",
+          "source_url": "https://www.silversmith.com/news/silversmith-capital-partners-raises-1-25-billion-for-fourth-growth-equity-fund",
+          "source_title": "Silversmith Capital Partners Raises $1.25 Billion for Fourth Growth Equity Fund",
+          "source_content_hash": "48629c035d790738daf2bb389525c0116d560aa93e168f43925f0b72f6caf4d4",
+          "quote": "Since its founding, Silversmith has invested in 41 growth-stage companies, had 16 full or partial realizations representing $1.7 billion in cash proceeds",
+          "quote_hash": "7f135c8c185c23d2b602b66f053bd40fa3f874ea096c2ffc77cb64bc5dca19f5"
+        },
+        {
+          "source_id": "silversmith_contact_2026",
+          "source_url": "https://www.silversmith.com/news/vantora-secures-more-than-100-million-from-silversmith-capital-partners",
+          "source_title": "Vantora Secures More Than $100 Million From Silversmith Capital Partners",
+          "source_content_hash": "6c4b6fb53a2affafa63fd45614329cb755ff9d090ced8fbb2d1cc8e1e27a9845",
+          "quote": "116 Huntington Ave 15th Floor Boston, MA 02116 617-670-4300",
+          "quote_hash": "64c87dccd5a203f853817493c4d3b1a16bcd037d38c3523de7ccd9ea5199cb19"
+        },
+        {
+          "source_id": "silversmith_email_2026",
+          "source_url": "https://www.silversmith.com/legal",
+          "source_title": "Silversmith Capital Partners Legal and Privacy Information",
+          "source_content_hash": "2b0fc68074a1a1c56f19a9ad5c4e1a4c4e5034fdf1ace4306ad7b630f629d6b7",
+          "quote": "email us at info@silversmithcapital.com",
+          "quote_hash": "58b5717b8fcc53b20c7f288d58daaf4ca13033d0f642192b99ecc66cfbbbb25d"
+        },
         {
           "source_id": "FISRC-415291b734cbb8a6",
           "source_url": "https://techcrunch.com/2026/09/18/a-startup-that-builds-other-startups-raised-100m-and-is-all-in-on-physical-ai",
@@ -189,7 +336,7 @@
           "quote_hash": "e431380e268980496bfa89f9e9c33df3762fde5762668d9584bfed662e2c466e"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28"
     }
   }
 }
