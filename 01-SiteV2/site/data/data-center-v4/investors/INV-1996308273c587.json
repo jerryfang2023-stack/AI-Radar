@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-27T03:14:03.416Z",
+    "latestDataDate": "2026-09-27",
+    "currentDate": "2026-09-27",
+    "eventCount": 3592,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-f389faf9d7a68a79",
@@ -345,18 +345,6 @@
         {
           "description": "2026年融资报道将 Benchmark 列为 Instinct 融资轮联合领投方。",
           "source_id": "benchmark_instinct"
-        },
-        {
-          "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮参投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-61aa8db010b34dfa"
-        },
-        {
-          "description": "融资来源记录：Instinct · B轮 · 2026-08-26 · 本轮联合领投 · $350 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-6050aa46cf9e60a2"
-        },
-        {
-          "description": "融资来源记录：Spear Street Technology · B轮 · 2026-08-26 · 本轮联合领投 · $350M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-745d673f45eb476d"
         }
       ],
       "contacts": [
@@ -406,37 +394,40 @@
           "source_content_hash": "28377be7f767ea42403462607928add95907a070fab77b20440999d53d22da65",
           "quote": "TechCrunch 报道，Instinct 2026年B轮由 Index Ventures 与 Benchmark 联合领投。",
           "quote_hash": "670df8237bdcca7f69e9383728e8fb609db69e4dc603334230596f80fba3706c"
-        },
-        {
-          "source_id": "FISRC-61aa8db010b34dfa",
-          "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
-          "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
-          "source_content_hash": "274ba4a54870c633",
-          "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
-          "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
-        },
-        {
-          "source_id": "FISRC-6050aa46cf9e60a2",
-          "source_url": "https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation",
-          "source_title": "爆火AI初创公司Instinct以25亿美元估值融资3.5亿美元",
-          "source_content_hash": "12db016e60d4c1b4",
-          "quote": "That new funding round was co-led by Index Ventures and Benchmark, the Journal reported.",
-          "quote_hash": "46643d92ebdeb1c973ce2321599e5ea69f52c9ecff4626d3f7cc700daf6937f0"
-        },
-        {
-          "source_id": "FISRC-745d673f45eb476d",
-          "source_url": "https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation/",
-          "source_title": "病毒式AI初创公司Instinct已筹集3.5亿美元，估值达25亿美元",
-          "source_content_hash": "10e082ab90bd39e5",
-          "quote": "That new funding round was co-led by Index Ventures and Benchmark, the Journal reported.",
-          "quote_hash": "46643d92ebdeb1c973ce2321599e5ea69f52c9ecff4626d3f7cc700daf6937f0"
         }
       ],
       "last_verified_at": "2026-09-26",
       "profile_type": "organization",
       "coverage_status": "researched",
-      "coverage_note": "规模和投资结果取自媒体报道，官网公开页仅核验办公地点；未据单笔回报推算机构整体回报率。",
-      "identity_status": "verified"
+      "coverage_note": "规模和投资结果取自媒体报道，官网公开页仅核验办公地点；未据单笔回报推算机构整体回报率。"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.track_record[0].description": {
+          "text": "TechCrunch报道列举 Benchmark 对 eBay、Snap、Uber、Twitter 的早期投资。",
+          "source_hash": "448b35a89f4720aa59850c61f085da233cb2981693d002d30752a59398ba7205",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:12:43.094Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[2].description": {
+          "text": "2026年融资报道将 Benchmark 列为 Instinct 融资轮联合领投方。",
+          "source_hash": "e1650d5a9a1316521e6844db134a4e4f2952c0f611616f071c9ae18c1bbd1a47",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:12:43.094Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[2].label": {
+          "text": "Woodside办公室",
+          "source_hash": "d67a89b466608ef741744ab4f2d9618e26f3c69a1747a0f62e1b4f34f7f256c0",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:12:43.094Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

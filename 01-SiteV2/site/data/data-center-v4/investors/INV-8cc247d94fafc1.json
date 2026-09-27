@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-27T03:14:03.416Z",
+    "latestDataDate": "2026-09-27",
+    "currentDate": "2026-09-27",
+    "eventCount": 3592,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-f389faf9d7a68a79",
@@ -141,35 +141,35 @@
       "identity_status": "verified",
       "coverage_status": "researched",
       "coverage_note": "Fund size, check range, stage and approach are current statements on Afore’s own website. They are firm-level disclosures; the Thoughtly round amount is not Afore’s individual check.",
-      "summary": "Afore Capital is a venture firm focused on pre-seed companies, including teams that are pre-traction and still developing their initial product. Its website reports a $500 million fund and typical investments of $500,000 to $2 million or more, alongside hands-on product and company-building support.",
+      "summary": "Afore Capital 是一家专注于 pre-seed 公司的风险投资公司，包括尚未获得市场验证、仍在开发初始产品的团队。其网站报告了 5 亿美元的基金，以及通常 50 万至 200 万美元或更多的投资，同时提供实操产品和公司建设支持。",
       "facts": [
         {
           "field": "investment_stage",
-          "label": "Investment stage",
+          "label": "投资阶段",
           "value": "Pre-seed, including pre-traction companies.",
           "source_id": "afore_home"
         },
         {
           "field": "reported_fund_size",
-          "label": "Reported fund size",
+          "label": "报告基金规模",
           "value": "$500 million; the page does not provide a vintage breakdown or as-of date.",
           "source_id": "afore_home"
         },
         {
           "field": "check_size",
-          "label": "Stated investment range",
+          "label": "所述投资范围",
           "value": "$500,000 to $2 million or more, as stated by the firm.",
           "source_id": "afore_home"
         },
         {
           "field": "approach",
-          "label": "Investment approach",
+          "label": "投资方法",
           "value": "High-conviction early investment with product and investment expertise for founders from Day 0.",
           "source_id": "afore_home"
         },
         {
           "field": "team",
-          "label": "Managing partners",
+          "label": "管理合伙人",
           "value": "Gaurav Jain and Anamitra Banerji are listed as co-founders and managing partners.",
           "source_id": "afore_home"
         }
@@ -177,14 +177,14 @@
       "milestones": [],
       "track_record": [
         {
-          "description": "Thoughtly’s April 2026 financing announcement named Afore Capital among returning investors. Its individual contribution was not disclosed.",
+          "description": "Thoughtly 于 2026 年 4 月的融资公告将 Afore Capital 列为回归投资者。其个别出资额未披露。",
           "source_id": "FISRC-01d50cf4c52275e9"
         }
       ],
       "contacts": [
         {
           "kind": "website",
-          "label": "Official website and founder resources",
+          "label": "官方网站和创始人资源",
           "value": "Afore Capital",
           "source_id": "afore_home",
           "url": "https://www.afore.vc/"
@@ -209,6 +209,74 @@
         }
       ],
       "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Afore Capital 是一家专注于 pre-seed 公司的风险投资公司，包括尚未获得市场验证、仍在开发初始产品的团队。其网站报告了 5 亿美元的基金，以及通常 50 万至 200 万美元或更多的投资，同时提供实操产品和公司建设支持。",
+          "source_hash": "a50aa04732389a13d6be5053951c95513e01734110a41b4f5b03efee73ed189f",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:19.332Z",
+          "status": "translated"
+        },
+        "public_profile.facts[0].label": {
+          "text": "投资阶段",
+          "source_hash": "82ef8e5156662bd9982e29926208b4193e1e4f83c7b3e0d8e4f0f77867ed09c5",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:12:59.672Z",
+          "status": "translated"
+        },
+        "public_profile.facts[1].label": {
+          "text": "报告基金规模",
+          "source_hash": "ac57cb4ee650f18de4d0661d60dd9cc8d6b9d73c862460115291d16af4a765c4",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:22.571Z",
+          "status": "translated"
+        },
+        "public_profile.facts[2].label": {
+          "text": "所述投资范围",
+          "source_hash": "938ee96be7ed690c5ff6e7a8dffdd93ffe9fdbcf7ed95b860c38a7085ee37c3e",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:22.571Z",
+          "status": "translated"
+        },
+        "public_profile.facts[3].label": {
+          "text": "投资方法",
+          "source_hash": "3f41267b1933c14f39659eff70c6eef84065a52b97fed3857ba665355c261841",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:06.189Z",
+          "status": "translated"
+        },
+        "public_profile.facts[4].label": {
+          "text": "管理合伙人",
+          "source_hash": "ac48d79d2c59ea99aeb25998584e09c30942f9473eac2e549e963bbd1529dc87",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:22.571Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Thoughtly 于 2026 年 4 月的融资公告将 Afore Capital 列为回归投资者。其个别出资额未披露。",
+          "source_hash": "853e372b9cd47f868d2f979e3c0b02b824776b4dbeaf33e870015bde46cc04ea",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:22.571Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "官方网站和创始人资源",
+          "source_hash": "cb3771c46f74163305a92a02594fc2917ef9d4c7f26325d5a85642d62f4e5101",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:22.571Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

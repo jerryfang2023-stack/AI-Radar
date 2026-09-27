@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-27T03:14:03.416Z",
+    "latestDataDate": "2026-09-27",
+    "currentDate": "2026-09-27",
+    "eventCount": 3592,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-f389faf9d7a68a79",
@@ -63,6 +63,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-f01ed5ae8bd115bc",
       "EV-d4b0dd4de320089a"
     ],
     "viewpointIds": [],
@@ -79,10 +80,11 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-09",
-    "lastSeen": "2026-09-26",
+    "lastSeen": "2026-09-27",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-f01ed5ae8bd115bc",
         "EV-d4b0dd4de320089a"
       ],
       "deployments": [],
@@ -93,6 +95,21 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-f01ed5ae8bd115bc",
+        "dataDate": "2026-09-27",
+        "date": "2026-09-09",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "影目科技完成近10亿C轮融资，专注于‌AI+AR智能眼镜‌研发",
+        "displayTags": [],
+        "entityIds": [
+          "EN-461be9b4c2e89d0f"
+        ]
+      },
       {
         "id": "EV-d4b0dd4de320089a",
         "dataDate": "2026-09-26",
@@ -938,7 +955,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-27"
     },
     {
       "id": "TX-ai_market_category-enterprise_applications",

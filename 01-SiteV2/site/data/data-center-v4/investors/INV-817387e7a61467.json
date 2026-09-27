@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-27T03:14:03.416Z",
+    "latestDataDate": "2026-09-27",
+    "currentDate": "2026-09-27",
+    "eventCount": 3592,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-f389faf9d7a68a79",
@@ -240,12 +240,7 @@
           "source_id": "airbus_ventures_history_201601"
         }
       ],
-      "track_record": [
-        {
-          "description": "融资来源记录：Featherless.ai · A轮 · 2026-04-30 · 本轮联合领投，种子轮投资方 · $20 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-f5176e2201593c8e"
-        }
-      ],
+      "track_record": [],
       "contacts": [
         {
           "kind": "contact_form",
@@ -299,21 +294,40 @@
           "source_content_hash": "c06781ab5ff5099781ad68bc1c8eb2197a47ea11d6ee3d660334160c298c5130",
           "quote": "Airbus Ventures官网公布联系表单与Menlo Park办公地址；页面邮箱office@airbusventures.vc仅针对日本投资人Article 63文件请求，不是一般项目申请邮箱。",
           "quote_hash": "6779117681d804d03582825b9e3325bcf103402ec84a7c85c581ed9cbd098639"
-        },
-        {
-          "source_id": "FISRC-f5176e2201593c8e",
-          "source_url": "https://techfundingnews.com/featherless-ai-20m-series-a-amd-airbus-open-source-ai-infrastructure/",
-          "source_title": "AMD 与空客支持 Featherless.ai 的 2000 万美元 A 轮融资，助力开源 AI 基础设施",
-          "source_content_hash": "415a2b10b75139c0",
-          "quote": "has secured $20 million in Series A funding co-led by AMD Ventures and Airbus Ventures",
-          "quote_hash": "61042ef1b031096ded1062a4e4013c5d79cc58a7c7c2e785b6f73637995ba297"
         }
       ],
       "last_verified_at": "2026-09-26",
       "profile_type": "organization",
       "coverage_status": "researched",
-      "coverage_note": "区分Airbus集团2016年历史承诺和现行机构官网投资策略；公开邮箱限定为特定合规资料请求，不误标为BP邮箱。",
-      "identity_status": "verified"
+      "coverage_note": "区分Airbus集团2016年历史承诺和现行机构官网投资策略；公开邮箱限定为特定合规资料请求，不误标为BP邮箱。"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.facts[0].label": {
+          "text": "Airbus Group历史承诺",
+          "source_hash": "55ec196411b9fce8a7001a802d3b7dbae70eb838337b43d3c514606f95ced1ef",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:16.019Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "Airbus Ventures联系表单",
+          "source_hash": "f8c69ae7e57f6e673a8e4d83a1423875b22823149b6924968abb0f96deab10a3",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:16.019Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[1].label": {
+          "text": "Menlo Park办公室",
+          "source_hash": "43566d0bb8ba1b5c2f2ca3e80da1db0c513c921de48ee90434bbb745205943bb",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:12:59.672Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

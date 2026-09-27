@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-27T03:14:03.416Z",
+    "latestDataDate": "2026-09-27",
+    "currentDate": "2026-09-27",
+    "eventCount": 3592,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-f389faf9d7a68a79",
@@ -224,14 +224,6 @@
         {
           "description": "官网展示Slice、Teachmint、Varaha、SolarSquare、Yulu、Rupeek等组合案例，并将其按企业估值区间分类；估值和组合表现为官网展示口径，未独立核验。",
           "source_id": "better_home"
-        },
-        {
-          "description": "融资来源记录：Smallest.ai · A轮 · 2026-08-01 · 本轮参投 · 1300万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-6b1944359351ee14"
-        },
-        {
-          "description": "融资来源记录：Smallest.ai · A轮 · 2026-08-01 · 种子轮参投 · 1300万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-30eaf94a55c202d8"
         }
       ],
       "contacts": [
@@ -251,29 +243,24 @@
           "source_content_hash": "01db3e90cd4ee8e3a1232c7e708593a9739099521ab6335c8d247bea9a0457b4",
           "quote": "Better Capital官网称其为面向创立初期创新者的全球风险投资机构，自述支持200多家公司和700多位创始人，并展示AI与软件、金融服务、气候、消费及深科技等组合领域。",
           "quote_hash": "3ce3e92a48478e77046f2240841b62e197ca8e780e31c8ee6f5f835cac96823f"
-        },
-        {
-          "source_id": "FISRC-6b1944359351ee14",
-          "source_url": "https://www.cmswire.com/customer-experience/smallestai-lands-13m-series-a-for-voice-ai/",
-          "source_title": "Smallest.ai Raises $13M For Real-Time Enterprise Voice AI",
-          "source_content_hash": "1c3c95f48ad6c543",
-          "quote": "Additional backers included Better Capital, Upsparks Capital, Schema Ventures, Tiny VC, DeVC and Mission Street Capital",
-          "quote_hash": "d3116772e7bd1a31da8517573b2bf881df9a8e9995cb9da8be8b45d450a584c4"
-        },
-        {
-          "source_id": "FISRC-30eaf94a55c202d8",
-          "source_url": "https://www.youtube.com/watch?v=rDCdmFfxvVk&vl=en-US",
-          "source_title": "Smallest.AI Announces $8 million Fund Raise in Seed Funding ...",
-          "source_content_hash": "d024bfd1efaf6d3e",
-          "quote": "with 3one4 Capital and Better Capital participating",
-          "quote_hash": "5d5aad7fcded66830bdae4cc4f0a666f9603e5e98df892d7aa2435e00d256abe"
         }
       ],
       "identity_status": "verified",
       "coverage_status": "researched",
       "coverage_note": "机构定位、组合规模和行业分类来自Better Capital官网自述；公司数、创始人数及其估值分类未独立核验。",
-      "last_verified_at": "2026-09-26",
-      "profile_type": "organization"
+      "last_verified_at": "2026-09-26"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.track_record[0].description": {
+          "text": "官网展示Slice、Teachmint、Varaha、SolarSquare、Yulu、Rupeek等组合案例，并将其按企业估值区间分类；估值和组合表现为官网展示口径，未独立核验。",
+          "source_hash": "a2f8f4badc41e1c63c64f96b94136ccb1f3fab96050065efc88cb5bb0c312a81",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:03.157Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-27T03:14:03.416Z",
+    "latestDataDate": "2026-09-27",
+    "currentDate": "2026-09-27",
+    "eventCount": 3592,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-f389faf9d7a68a79",
@@ -184,10 +184,6 @@
         {
           "description": "M13官网自述其在种子轮或A轮阶段支持了18家独角兽；统计口径和时点未披露。",
           "source_id": "m13_carter_profile"
-        },
-        {
-          "description": "融资来源记录：Rime · A轮 · 2026-07-15 · 本轮领投 · $24M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-7814afd7c39e886d"
         }
       ],
       "current_roles": [
@@ -284,17 +280,29 @@
           "source_content_hash": "dccb13e8904a6cb4247b1a56bd8076bce2521959a803bd8596ed962cc46ee406",
           "quote": "M13 has since backed 18 unicorns at seed or Series A.",
           "quote_hash": "638b785c1a0b1dbd8e767b9e46132973a8791c3d0af3d61b4f837ff49ada7762"
-        },
-        {
-          "source_id": "FISRC-7814afd7c39e886d",
-          "source_url": "https://techcrunch.com/2026/07/15/rime-picks-up-24m-series-a-to-help-enterprises-field-customer-calls",
-          "source_title": "Rime 获 2400 万美元 A 轮融资，用自建录音棚数据训练企业语音 AI",
-          "source_content_hash": "bf887bd5437c51a7",
-          "quote": "raised $24 million in a Series A funding round that was led by M13 Ventures",
-          "quote_hash": "6c08951613eb8664268a1b1597f5f45ad119e874c74e70179a613c5f9777409e"
         }
       ],
       "last_verified_at": "2026-09-26"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.milestones[0].description": {
+          "text": "Carter Reum与Courtney Reum共同创立M13。",
+          "source_hash": "e042f2d0d6dfe03881c84ea524793a99470104602bc4dd2993665788347f3057",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:06.189Z",
+          "status": "translated"
+        },
+        "public_profile.career[0].description": {
+          "text": "M13本人简介称，他与兄弟Courtney在建立并出售VEEV Spirits后共同创立M13，并曾在Goldman Sachs任职。",
+          "source_hash": "82bb1eecdb7b6b220fb25f1f6e6926dd6e86e2548886aeb4945597587e4f9357",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-27T03:13:06.189Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }
