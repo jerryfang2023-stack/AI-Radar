@@ -1,6 +1,6 @@
 {
   "schema_version": "PUBLIC-ENTITY-PROFILES-V1.0",
-  "as_of": "2026-09-26",
+  "as_of": "2026-09-28",
   "institutions": {
     "INV-c73d9854fb920b": {
       "summary": "NVIDIA 是一家设有企业投资职能并运营 NVentures 风险投资部门的科技公司。NVentures 官网介绍其面向 AI 基础设施、机器人、数字生物学、应用 AI 和前沿计算等领域投资。融资活动库中的“Nvidia”名称未必能单独确认交易由 NVentures 还是其他 NVIDIA 投资职能完成。",
@@ -59426,6 +59426,470 @@
           "quote_hash": "39d680d9b18dde1807f51da419d33c20173b63edb4c0d78af437d95804864cd1"
         }
       ]
+    },
+    "INV-eaa38210f554a9": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据 Vertex Ventures Southeast Asia & India 官网、公开联系/投资申请页及公司融资公告整理。AUM、组合规模与独角兽数量为机构自报口径；融资总额不代表该机构单独出资额。",
+      "summary": "Vertex Ventures Southeast Asia & India（VVSEAI）是 Vertex 全球基金网络中面向东南亚和印度的早期风险投资机构。官网将其描述为行业不限的投资者，重点关注区域数字经济，并披露管理资产约 15 亿美元、组合企业超过 90 家及 6 家独角兽（均为机构自报指标）。本库可核验的活动包括领投 FORMAS.AI 398 万美元预种子轮；该数字是公司本轮融资额，未披露 Vertex 单家出资额。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期阶段，官网列示种子轮、A 轮及 B 轮",
+          "source_id": "vvseai_home_2026"
+        },
+        {
+          "field": "investment_geography",
+          "label": "重点区域",
+          "value": [
+            "东南亚",
+            "印度"
+          ],
+          "source_id": "vvseai_home_2026"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资策略",
+          "value": "行业不限；官网称重点围绕东南亚与印度数字经济投资",
+          "source_id": "vvseai_home_2026"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "管理资产",
+          "value": "官网自报约 US$1.5B；口径和页面未标注统计日期",
+          "source_id": "vvseai_home_2026"
+        },
+        {
+          "field": "portfolio_scale",
+          "label": "组合规模",
+          "value": "官网自报投资超过 90 家初创公司、6 家独角兽；非完整业绩或回报披露",
+          "source_id": "vvseai_home_2026"
+        },
+        {
+          "field": "global_network",
+          "label": "机构关系",
+          "value": "隶属 Vertex 全球关联基金网络；该网络另覆盖中国、以色列、日本和美国",
+          "source_id": "vvseai_contact_2026"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "官网自报其组合包括 6 家独角兽；未在该页面列明统计时点、定义或基金回报，不能据此推断投资收益。",
+          "source_id": "vvseai_home_2026"
+        },
+        {
+          "description": "FORMAS.AI 于 2026-04-29 公布 398 万美元超额认购预种子轮，官方公告称由 Vertex Ventures Southeast Asia & India 领投；此金额是本轮公司融资额，未披露机构单家出资。",
+          "source_id": "FISRC-dc1378b0805f976c"
+        }
+      ],
+      "current_roles": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Vertex Ventures Southeast Asia & India",
+          "url": "https://www.vertexventures.sg/",
+          "source_id": "vvseai_home_2026"
+        },
+        {
+          "kind": "application",
+          "label": "投资项目申请",
+          "value": "通过官网 Pitch to Us 表单提交投资申请",
+          "url": "https://www.vertexventures.sg/apply/",
+          "source_id": "vvseai_contact_2026"
+        },
+        {
+          "kind": "phone",
+          "label": "新加坡办公室电话",
+          "value": "+65 6828 8088",
+          "url": "https://www.vertexventures.sg/contact/",
+          "source_id": "vvseai_contact_2026"
+        },
+        {
+          "kind": "address",
+          "label": "新加坡办公室",
+          "value": "250 North Bridge Road, #11-01, Raffles City Tower, Singapore 179101",
+          "url": "https://www.vertexventures.sg/contact/",
+          "source_id": "vvseai_contact_2026"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "vvseai_home_2026",
+          "source_url": "https://www.vertexventures.sg/",
+          "source_title": "Vertex Ventures Southeast Asia & India | Leading VC firm",
+          "source_content_hash": "f7c8f21d2b39e96ba69474fd0e54695ac2e38334eab01c7b3f52cdb81e652668",
+          "quote": "$1.5b under management; 90+ companies; 6 unicorns",
+          "quote_hash": "aa81222d2613b9281d76f37475e530794d52e66b533b7e182ac692bee35a1cde"
+        },
+        {
+          "source_id": "vvseai_contact_2026",
+          "source_url": "https://www.vertexventures.sg/contact/",
+          "source_title": "Contact Us | Vertex Ventures SEA",
+          "source_content_hash": "5af3bc206f7bc3f9299ab92b3c107a6dd02242a848c8aaaf91dcd7193b291e96",
+          "quote": "For application for Investment from VVSEAI Please click on Pitch to Us button above and fill in the form.",
+          "quote_hash": "c5c6cbbdf0fe56114d091db4b8802c8b1fd60d46a63e07a475c1cf8001037ebe"
+        },
+        {
+          "source_id": "FISRC-dc1378b0805f976c",
+          "source_url": "https://www.vertexventures.sg/news/formas-ai-raises-us-3-98-million-in-oversubscribed-pre-seed-round-to-build-the-ai-native-design-workspace-for-architecture/",
+          "source_title": "FORMAS.AI 完成398万美元超额认购预种子轮融资，打造面向建筑行业的AI原生设计工作空间",
+          "source_content_hash": "13b618d131a8d1bb",
+          "quote": "led by Vertex Ventures Southeast Asia & India",
+          "quote_hash": "69f8e713391b1d26d48b33dd8227cef58247fced37b2fe76dbafda5fd409253e"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    },
+    "INV-18c5241f8f7258": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据 Village Global 官网的投资组合、团队、Velocity 投资项目页面及联系页整理。网络规模和组合后续融资金额为机构自报；数据库中的 General Compute 记录仅表明参与，未披露 Village Global 单家出资。",
+      "summary": "Village Global 是一家面向全球早期创业公司的风险投资机构，官网称其支持不同地域和行业的早期创始人，并通过创始人、运营者天使投资人及知名有限合伙人网络提供客户引荐、招募和后续融资支持。其 Velocity 项目面向 Pre-seed 创业者；官网列示典型支票规模为 25 万至 150 万美元。组合企业后续融资总额等数字为机构公开口径，不等同于基金回报。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期阶段，覆盖 Pre-seed 与 Seed；官网表示可在全球范围投资",
+          "source_id": "village_velocity_2026"
+        },
+        {
+          "field": "investment_geography",
+          "label": "投资区域",
+          "value": "全球",
+          "source_id": "village_velocity_2026"
+        },
+        {
+          "field": "typical_check_size",
+          "label": "典型投资额",
+          "value": "官网列示 Pre-seed/Seed 典型支票规模为 US$250,000–US$1.5M；实际金额视项目而定",
+          "source_id": "village_velocity_2026"
+        },
+        {
+          "field": "founder_network",
+          "label": "创始人网络",
+          "value": "官网称网络由 400 多位创始人、运营者天使投资人及知名 LP 组成",
+          "source_id": "village_home_2026"
+        },
+        {
+          "field": "founder_support",
+          "label": "创始人支持",
+          "value": "客户引荐、寻找联合创始人及募资支持",
+          "source_id": "village_team_2026"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "Village Global 官网称其组合创始人累计获得超过 100 亿美元后续融资；这是组合企业融资合计的机构自报数据，不代表基金回报。",
+          "source_id": "village_portfolio_2026"
+        },
+        {
+          "description": "General Compute 于 2026-05-28 公布 1,500 万美元 Seed 轮融资，媒体报道 Village Global 参与；该融资额属于公司本轮总额，未披露 Village Global 单家出资金额。",
+          "source_id": "FISRC-7f85c191231c7c71"
+        }
+      ],
+      "current_roles": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Village Global",
+          "url": "https://www.villageglobal.com/",
+          "source_id": "village_home_2026"
+        },
+        {
+          "kind": "email",
+          "label": "投资项目推介邮箱",
+          "value": "hello@villageglobal.com",
+          "url": "https://www.villageglobal.com/contact-us",
+          "source_id": "village_contact_2026"
+        },
+        {
+          "kind": "application",
+          "label": "Velocity 创业项目申请",
+          "value": "Village Global Velocity 项目申请入口",
+          "url": "https://www.villageglobal.com/velocity",
+          "source_id": "village_velocity_2026"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "village_home_2026",
+          "source_url": "https://www.villageglobal.com/",
+          "source_title": "Village Global VC | Early-Stage Venture Capital with Top Entrepreneurs",
+          "source_content_hash": "5cb4ebe2a13fa1fe43b7a0dd5fc0c132767f55e9a4f886efadcd8dbb83a4feb3",
+          "quote": "Join a network of 400+ founders, operator angels, and luminary LPs.",
+          "quote_hash": "e787be0efd6a077ddb9ae128b468569fca11f8b02201d245b6f849cbe9767259"
+        },
+        {
+          "source_id": "village_portfolio_2026",
+          "source_url": "https://www.villageglobal.com/portfolio",
+          "source_title": "Portfolio | Village Global",
+          "source_content_hash": "843793fe094e4fafa27a7078caf1140b9be9b2af816e8ecff1c5127038d6ba05",
+          "quote": "We back audacious early-stage founders across geographies and industries. Our founders have raised $10B+ in follow-on funding.",
+          "quote_hash": "cc7aa41381a90004c3f452bb40a249b1c734a2c32e5f8767502565f99be4c412"
+        },
+        {
+          "source_id": "village_velocity_2026",
+          "source_url": "https://www.villageglobal.com/velocity",
+          "source_title": "Velocity | Village Global",
+          "source_content_hash": "055c97210c3675b228b852e8b12a361fc797937ec434bfbf56cbbb53de12066d",
+          "quote": "Our typical check size ranges from $250k - $1.5M in pre-seed and seed rounds.",
+          "quote_hash": "1488e070f52d857d4439c6e3f65589b0b1f4913aadaadbe0d0c8686105f2e153"
+        },
+        {
+          "source_id": "village_team_2026",
+          "source_url": "https://www.villageglobal.com/team",
+          "source_title": "Team | Village Global",
+          "source_content_hash": "a39949f5677ff8362087409a7c04273023be92da88d03685a29187a66a4d2217",
+          "quote": "Reid Hoffman Chairman; Anne Dwane General Partner & Co-founder; Ben Casnocha General Partner & Co-founder.",
+          "quote_hash": "90bab47fc9a0dc55e9db6ff801a6baeab3bdd163dc7a63affda96c12541ea67e"
+        },
+        {
+          "source_id": "village_contact_2026",
+          "source_url": "https://www.villageglobal.com/contact-us",
+          "source_title": "Contact Us | Village Global",
+          "source_content_hash": "eaf9fc187aa0788320cc5b1bf9cccc2be27a44609ccef0d9db702407d1e1c03e",
+          "quote": "Send your deck or memo to hello@villageglobal.com.",
+          "quote_hash": "25d3a374c0238226724ef908b80dc7623a0a3c335a76dbddfa7276bf822cc428"
+        },
+        {
+          "source_id": "FISRC-7f85c191231c7c71",
+          "source_url": "https://techcrunch.com/2026/05/28/has-the-hunt-for-ai-compute-uncovered-the-next-cerebras/",
+          "source_title": "AI 算力争夺战是否催生了下一个 Cerebras？",
+          "source_content_hash": "e665c69377d47ba3",
+          "quote": "with participation from Carya Venture Partners and Village Global Ventures",
+          "quote_hash": "4065ddd1bac0cc008baab2ea0cfbf12c017120cfee5ea4b2323c2d25b6dcbec9"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    },
+    "INV-3b849e5dfd5379": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按 Wavemaker Ventures 早期基金自身口径整理，并与 Wavemaker Partners 母机构区分。投资组合数量、管理资产规模、影响力比例和退出案例均为官网公开口径；Featherless.ai 融资金额是公司本轮总额且报道未披露该基金单家出资。",
+      "summary": "Wavemaker Ventures 是 Wavemaker Partners 旗下的早期投资基金，聚焦东南亚 Enterprise、Deep Tech 和 Sustainability 项目，并在南亚、澳大利亚和新西兰扩展投资。官网自报自 2012 年以来投资 200 多家公司，主页列示管理资产约 5 亿美元、94% 的活跃组合企业对联合国可持续发展目标有所贡献。组合退出案例包括 TradeGecko 被 Intuit 收购、Luxola 被 LVMH 收购；这些为精选案例，不构成完整投资组合或基金回报披露。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期阶段",
+          "source_id": "wavemaker_home_2026"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": [
+            "Enterprise",
+            "Deep Tech",
+            "Sustainability"
+          ],
+          "source_id": "wavemaker_home_2026"
+        },
+        {
+          "field": "investment_geography",
+          "label": "主要投资区域",
+          "value": "东南亚，并扩展至南亚、澳大利亚和新西兰",
+          "source_id": "wavemaker_home_2026"
+        },
+        {
+          "field": "portfolio_scale",
+          "label": "投资组合规模",
+          "value": "官网自报自 2012 年以来投资 200 多家公司",
+          "source_id": "wavemaker_home_2026"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "管理资产",
+          "value": "官网主页自报约 US$500M；同站历史新闻曾采用 committed capital/基金数量等其他口径，数值不可直接等同",
+          "source_id": "wavemaker_home_2026"
+        },
+        {
+          "field": "fund_relationship",
+          "label": "基金关系",
+          "value": "Wavemaker Ventures 是 Wavemaker Partners 旗下的早期基金；本档案仅记录该基金公开口径",
+          "source_id": "wavemaker_home_2026"
+        },
+        {
+          "field": "impact_metric",
+          "label": "组合影响力指标",
+          "value": "官网主页自报 94% 的活跃组合企业贡献于至少一项联合国可持续发展目标",
+          "source_id": "wavemaker_home_2026"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "官网列举 TradeGecko 于 2020 年被 Intuit 收购，并称交易金额为 US$80M；属于机构公开的精选退出案例。",
+          "source_id": "wavemaker_home_2026"
+        },
+        {
+          "description": "官网列举 Luxola 于 2015 年被 LVMH 收购；属于机构公开的精选退出案例。",
+          "source_id": "wavemaker_home_2026"
+        },
+        {
+          "description": "融资情报库记录 Wavemaker Ventures 参与 Featherless.ai 2026-04-30 的 US$20M Series A；该总额为公司本轮融资额，来源未披露 Wavemaker Ventures 单家出资金额。",
+          "source_id": "FISRC-2abdb8003508dda6"
+        }
+      ],
+      "current_roles": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Wavemaker Ventures",
+          "url": "https://wavemaker.vc/",
+          "source_id": "wavemaker_home_2026"
+        },
+        {
+          "kind": "email",
+          "label": "投资项目推介邮箱",
+          "value": "pitchsea@wavemaker.vc",
+          "url": "https://wavemaker.vc/contact-us/",
+          "source_id": "wavemaker_contact_2026"
+        },
+        {
+          "kind": "contact_form",
+          "label": "机构联系表单",
+          "value": "通过官网联系表单提交商务/专业咨询；官网建议投资项目优先通过共同联系人引荐",
+          "url": "https://wavemaker.vc/contact-us/",
+          "source_id": "wavemaker_contact_2026"
+        },
+        {
+          "kind": "address",
+          "label": "新加坡办公室",
+          "value": "182 Cecil Street, #17-01, Frasers Tower, Singapore 069547",
+          "url": "https://wavemaker.vc/contact-us/",
+          "source_id": "wavemaker_contact_2026"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "wavemaker_home_2026",
+          "source_url": "https://wavemaker.vc/",
+          "source_title": "Wavemaker Ventures",
+          "source_content_hash": "560d703b142c97eb6444397dbb8d2d2d93e36f444569de5c7a1c1d792e2792c7",
+          "quote": "We are Southeast Asia’s leading Early-Stage VC, backing Enterprise, Deep Tech, and Sustainability startups.",
+          "quote_hash": "0712626d32b9c291547fdba9380f37e3acb625004478476aedd2b0c53276670d"
+        },
+        {
+          "source_id": "wavemaker_contact_2026",
+          "source_url": "https://wavemaker.vc/contact-us/",
+          "source_title": "Contact Us - Wavemaker Ventures",
+          "source_content_hash": "f7ad236a60234b054953cce61351c55f64b61c80652839dbf1f08362db19779d",
+          "quote": "send us an email at: pitchsea@wavemaker.vc",
+          "quote_hash": "a9d4628f0c0aa0b5209b274b98d20950204352bc9bc1a7be0771947dee1c1f0f"
+        },
+        {
+          "source_id": "FISRC-2abdb8003508dda6",
+          "source_url": "https://tech.eu/2026/04/30/featherlessai-secures-20m-to-expand-serverless-platform-for-open-source-ai/",
+          "source_title": "Featherless.ai 获 2000 万美元融资，扩展开源 AI 无服务器平台",
+          "source_content_hash": "7b38f6d68d7f8881",
+          "quote": "with participation from BMW i Ventures, Kickstart Ventures, Panache Ventures, and Wavemaker Ventures",
+          "quote_hash": "67475342fca91e990ca60a5eb148915b5c54fe115e0c9d854fc7f35de22212e8"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    },
+    "INV-d95bd40fee0439": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据 Wing Venture Capital 官方介绍页、投资理念页及 Bespoke Labs 公司融资公告整理。超过 25 家十亿美元级结果为 Wing 对其参与建立的企业成果描述，不能视作 Wing 基金回报；Bespoke Labs 的 US$40M 为多轮融资总额，未披露 Wing 单家出资。",
+      "summary": "Wing VC（Wing Venture Capital）是一家由创业者和运营者组成的早期风险投资机构，2013 年成立，领投 Seed 与 Series A，当前官网强调投资 AI-first economy。机构称其团队通过招聘、客户引荐和市场拓展支持创业公司。Wing 表示其作为领投方、董事会成员或创始人参与的企业中，已出现 25 家以上十亿美元级成果；该说法是公司自述的企业成果统计，不是基金回报率。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2013",
+          "source_id": "wing_about_2026"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "领投 Seed 与 Series A",
+          "source_id": "wing_about_2026"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "AI-first economy；官网投资理念页描述人工智能相关平台转型",
+          "source_id": "wing_about_2026"
+        },
+        {
+          "field": "founder_support",
+          "label": "创业支持",
+          "value": "招聘、客户引荐与 go-to-market 策略支持",
+          "source_id": "wing_about_2026"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2013",
+          "description": "Wing Venture Partners 于 2013 年创立；当前官方介绍将投资阶段概括为 Seed 和 Series A。",
+          "source_id": "wing_about_2026"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "Wing 官网称其作为领投方、董事会成员或创始人参与的企业中，形成 25 家以上十亿美元级成果；这是机构自述的企业成果规模，不能等同于投资回报或独立审计数据。",
+          "source_id": "wing_thesis_2026"
+        },
+        {
+          "description": "Bespoke Labs 于 2026-07-06 披露 Seed 与 Series A 多轮融资合计 US$40M，公司公告称其中 Series A 由 Wing VC 领投；总额不代表 Wing 单家投资额。",
+          "source_id": "FISRC-bcf489b2ae49f41b"
+        }
+      ],
+      "current_roles": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Wing Venture Capital",
+          "url": "https://www.wing.vc/about",
+          "source_id": "wing_about_2026"
+        },
+        {
+          "kind": "email",
+          "label": "机构联系邮箱",
+          "value": "hello@wing.vc",
+          "url": "https://www.wing.vc/about",
+          "source_id": "wing_about_2026"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "wing_about_2026",
+          "source_url": "https://www.wing.vc/about",
+          "source_title": "About Us | Wing Venture Capital",
+          "source_content_hash": "de2bab390535a2590289c4d7b28ff34d8e53e01061ee8420cb2cf929bb3f56a2",
+          "quote": "We lead Seed and Series A investments, backing founders who are building the AI-first economy.",
+          "quote_hash": "20e6a56b39e35d590feea0d9a0c5d892e282eae0d55beb645932c03a858a9625"
+        },
+        {
+          "source_id": "wing_thesis_2026",
+          "source_url": "https://www.wing.vc/thesis",
+          "source_title": "Thesis | Wing Venture Capital",
+          "source_content_hash": "882c16357779b402a9a3a5ff52f7e2ce2f7abef33fbc87a915a371296c70f3c2",
+          "quote": "more than 25 billion-dollar-plus outcomes",
+          "quote_hash": "57e9f401323fb44cc2ea1fa7b1d6d197965c2d43e72cae1300ab1fa6493d658b"
+        },
+        {
+          "source_id": "FISRC-bcf489b2ae49f41b",
+          "source_url": "https://bespokelabs.ai/blog/bespoke-labs-raises-40m-to-build-environments-that-enable-reliable-agents",
+          "source_title": "Bespoke Labs 融资 4000 万美元，打造支持可靠 AI 智能体的环境",
+          "source_content_hash": "0eae2122fce5a05c",
+          "quote": "Our Series A round was led by Wing VC",
+          "quote_hash": "095f8d44d91fe80459a5047d3c78aba275b5619a9843e37c4be8f252bf68a42c"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
     }
   },
   "people": {
