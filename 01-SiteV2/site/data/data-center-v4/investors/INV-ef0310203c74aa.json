@@ -137,31 +137,121 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Behind Genius Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Behind Genius Ventures 是一家由 Paige Finn Doherty 创立并管理的早期风险投资机构。官网介绍其投资故事与创始人写作、WorkOS 早期任职经历有关，并在首页宣布 1,500 万美元 Fund 2；目前官网披露的投资地域为美国和加拿大。官网组合页列出 Hostie 等公司，近期公开内容涉及应用 AI 与 AI-native services。",
+      "facts": [
+        {
+          "field": "funding_vehicle",
+          "label": "基金信息",
+          "value": "官网首页宣布 1,500 万美元 Fund 2；页面标题未单独说明最终募集完成情况",
+          "source_id": "behind_home"
+        },
+        {
+          "field": "geographic_focus",
+          "label": "投资地域",
+          "value": "当前仅投资总部位于美国和加拿大的公司（官网联系页面口径）",
+          "source_id": "behind_contact"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资与运营特点",
+          "value": "官网近期内容聚焦技术型创始人、应用 AI 与 AI-native services；这些内容反映公开主题，不等同于完整投资政策",
+          "source_id": "behind_ai_content"
+        },
+        {
+          "field": "founder_background",
+          "label": "创始人背景（Paige Finn Doherty）",
+          "value": "官网称其曾在 WorkOS 早期任职，并通过撰写风险投资主题儿童读物进入投资领域",
+          "source_id": "behind_paige_bio"
+        },
+        {
+          "field": "core_team",
+          "label": "官网列示团队",
+          "value": [
+            "Paige Finn Doherty — Founding Partner",
+            "Andy Sran — Investment Associate",
+            "Chinwuba Eze-Sike — Investment Analyst"
+          ],
+          "source_id": "behind_team"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Hostie · A轮 · 2026-07-08 · 本轮参投 · $12 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资披露：Hostie 于 2026-07-08 宣布 1,200 万美元 A 轮，PR Newswire 报道列出 Behind Genius Ventures 为参投方。该金额为整轮融资额，未披露其单笔投资金额。",
           "source_id": "FISRC-d81171d6c6910b85"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Behind Genius Ventures",
+          "url": "https://www.behindgeniusventures.com/",
+          "source_id": "behind_home"
+        },
+        {
+          "kind": "application",
+          "label": "创始人融资申请",
+          "value": "官网 founder investment form；当前只接受美国与加拿大公司",
+          "url": "https://www.behindgeniusventures.com/contact",
+          "source_id": "behind_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "behind_home",
+          "source_url": "https://www.behindgeniusventures.com/",
+          "source_title": "Behind Genius Ventures | Home",
+          "source_content_hash": "a52a48fed1659634e0e0fba62210df92bf2161194edd2dd4ca7346f516cfdcb2",
+          "quote": "Announcing our $15M Fund 2",
+          "quote_hash": "a6648eb4fe572401715e271f0f0afbcb159c29be2619d9bae99dbd8e4c423f12"
+        },
+        {
+          "source_id": "behind_team",
+          "source_url": "https://www.behindgeniusventures.com/about",
+          "source_title": "About | Behind Genius Ventures",
+          "source_content_hash": "7356638a3cde3fe88a130af6c6b0c8040d8e6634f1d990cd5d87d703153c3e4f",
+          "quote": "Paige Finn Doherty Founding Partner Andy Sran Investment Associate Chinwuba Eze-Sike Investment Analyst",
+          "quote_hash": "e9094ac0acb992e35ab09377297f561f967c673b920f1ef08a80792d56492443"
+        },
+        {
+          "source_id": "behind_contact",
+          "source_url": "https://www.behindgeniusventures.com/contact",
+          "source_title": "Contact | Behind Genius Ventures",
+          "source_content_hash": "ead1ae9dfdef7749eac5c49ab8ae3fe3b17ee46edebb70a8c8fc943d094d0110",
+          "quote": "Please note we are only investing in US & Canada-based companies at the moment.",
+          "quote_hash": "6c5d744568053870ef88fcea2d9f75855908007702800a396479d25a9553f15c"
+        },
         {
           "source_id": "FISRC-d81171d6c6910b85",
           "source_url": "https://www.prnewswire.com/news-releases/hostie-raises-12m-series-a-to-power-the-future-of-restaurant-hospitality-302820521.html",
-          "source_title": "Hostie 完成1200万美元A轮融资，助力餐饮服务业未来",
+          "source_title": "Hostie Raises $12M Series A to Power the Future of Restaurant Hospitality | PRNewswire",
           "source_content_hash": "d7c2bb0b4010c680",
           "quote": "with participation from Gradient, Scribble Ventures, Burst Capital, and Behind Genius Ventures",
           "quote_hash": "8b99c57ea941638ff9932a3b0a80a037314fb5f9d4a578561dbd7e1312b0e84e"
+        },
+        {
+          "source_id": "behind_ai_content",
+          "source_url": "https://www.behindgeniusventures.com/",
+          "source_title": "Behind Genius Ventures | Home",
+          "source_content_hash": "a52a48fed1659634e0e0fba62210df92bf2161194edd2dd4ca7346f516cfdcb2",
+          "quote": "A Primer on AI Roll-ups vs AI-Native Services",
+          "quote_hash": "6f162819978d8872b425bffc418c111cc7eb4312aedc9f4f086eaee673353079"
+        },
+        {
+          "source_id": "behind_paige_bio",
+          "source_url": "https://www.behindgeniusventures.com/",
+          "source_title": "Behind Genius Ventures | Home",
+          "source_content_hash": "a52a48fed1659634e0e0fba62210df92bf2161194edd2dd4ca7346f516cfdcb2",
+          "quote": "An engineer and writer, Paige Finn Doherty got into investing by writing a children's book about venture while an early employee at WorkOS.",
+          "quote_hash": "39ef8932c43caaf1c91c2f62227121d4184f71a52a8ef4c749d8f064582a9489"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "团队、基金宣传、申请地域与投资案例根据机构官网和融资公告整理。$15M 是官网首页对 Fund 2 的宣传标题，不推断为已完成募集金额；融资报道的轮次总额不是机构出资额。"
     }
   }
 }

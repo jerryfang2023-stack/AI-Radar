@@ -137,31 +137,94 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Aurum Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Aurum Partners LLC 是与旧金山 49ers 所有者相关联的多家族办公室投资基金。49ers 官方管理层简介称其共同创始人及管理合伙人 Brano Perkovich 负责体育、科技及相邻消费领域的战略投资机会；该简介记录其此前在 Menlo Park 和伦敦从事科技投资银行业务，累计完成交易金额超过 150 亿美元，并曾在 Boston Consulting Group 工作。后者是个人职业经历，不是 Aurum 的基金业绩。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "多家族办公室投资基金，与旧金山 49ers 所有者相关联",
+          "source_id": "aurum_bio"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资领域",
+          "value": "体育、科技及战略相邻的消费市场；关注组合公司借助 49ers 和 Aurum 网络推动产品采用与增长",
+          "source_id": "aurum_strategy"
+        },
+        {
+          "field": "leadership",
+          "label": "共同创始人及管理合伙人",
+          "value": "Brano Perkovich；该职位由 49ers 官方管理层简介披露",
+          "source_id": "aurum_bio"
+        },
+        {
+          "field": "leader_experience",
+          "label": "管理合伙人过往交易经验",
+          "value": "Brano Perkovich 过往科技投行交易累计超过 150 亿美元；此为其个人任职经历，不代表 Aurum 业绩",
+          "source_id": "aurum_leader_experience"
+        },
+        {
+          "field": "leader_education",
+          "label": "管理合伙人教育背景",
+          "value": "加州大学伯克利分校电气工程与计算机科学学士；斯坦福商学院 MBA",
+          "source_id": "aurum_leader_education"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Graphon AI · 种子轮 · 2026-05-14 · 本轮参投 · $8.3 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资披露：Graphon AI 于 2026-05-14 公布 830 万美元种子轮，新闻稿列出 Aurum Partners 为参投方。该金额为整轮总额；目前未找到可确认 Aurum 单笔出资额或基金回报的一手披露。",
           "source_id": "FISRC-4c5668270b4cb456"
         }
       ],
       "contacts": [],
       "sources": [
         {
+          "source_id": "aurum_bio",
+          "source_url": "https://www.49ers.com/team/front-office-roster/brano-perkovich",
+          "source_title": "Brano Perkovich | San Francisco 49ers",
+          "source_content_hash": "84d76825ac809229417c8b3515330f2cd4a05d5f9e6a9559ccfc25d6f1f25b4c",
+          "quote": "Perkovich also serves as a co-founder and managing partner at Aurum Partners LLC, the multi-family office investment fund affiliated with the owners of the San Francisco 49ers.",
+          "quote_hash": "0513f116335faf44ef21b8f0795bd5c1e33bd352054b959a0f997dd13a10394e"
+        },
+        {
           "source_id": "FISRC-4c5668270b4cb456",
           "source_url": "https://www.morningstar.com/news/business-wire/20260514783447/former-amazon-meta-scientists-unveil-graphon-ai-the-first-pre-model-intelligence-layer-with-83m-in-seed-funding",
-          "source_title": "Former Amazon, Meta Scientists Unveil Graphon AI, the First Pre-Model Intelligence Layer, with $8.3M in Seed Funding | Morningstar",
+          "source_title": "Former Amazon, Meta Scientists Unveil Graphon AI with $8.3M in Seed Funding | Morningstar",
           "source_content_hash": "d4c067cbdae72c67",
-          "quote": "with participation from Perplexity Fund, Samsung Next, GS Futures, Hitachi Ventures, Gaia Ventures, B37 Ventures, and Aurum Partners (the investment fund affiliated with the owners of the San Francisco 49ers and other strategic LPs)",
-          "quote_hash": "cee16d1293faa5baa2088f36afef472295f580e202994a6dbc9d7fd4beffcb63"
+          "quote": "with participation from Perplexity Fund, Samsung Next, GS Futures, Hitachi Ventures, Gaia Ventures, B37 Ventures, and Aurum Partners",
+          "quote_hash": "4776f530dc2b58ec2e3e8e4ea8b2e0fcafc9e2b62c79a44db8bd79ad1666a651"
+        },
+        {
+          "source_id": "aurum_strategy",
+          "source_url": "https://www.49ers.com/team/front-office-roster/brano-perkovich",
+          "source_title": "Brano Perkovich | San Francisco 49ers",
+          "source_content_hash": "84d76825ac809229417c8b3515330f2cd4a05d5f9e6a9559ccfc25d6f1f25b4c",
+          "quote": "Perkovich focuses on new strategic business initiatives and early stage/growth equity investment opportunities in sports, technology, and strategically adjacent consumer markets where the portfolio companies can leverage the 49ers and Aurum Partners access and network to help drive product adoption and accelerate growth.",
+          "quote_hash": "ddb5e23eb476092b98fa023c379933bc4e5c96011408bfd51aef4953128c918d"
+        },
+        {
+          "source_id": "aurum_leader_experience",
+          "source_url": "https://www.49ers.com/team/front-office-roster/brano-perkovich",
+          "source_title": "Brano Perkovich | San Francisco 49ers",
+          "source_content_hash": "84d76825ac809229417c8b3515330f2cd4a05d5f9e6a9559ccfc25d6f1f25b4c",
+          "quote": "He completed numerous M&A, private and public equity, and debt transactions with $15-plus billion in aggregate value.",
+          "quote_hash": "7783ac2519244c4191da060895a1cb6468090e0fce783d72eea60a3d5337b85e"
+        },
+        {
+          "source_id": "aurum_leader_education",
+          "source_url": "https://www.49ers.com/team/front-office-roster/brano-perkovich",
+          "source_title": "Brano Perkovich | San Francisco 49ers",
+          "source_content_hash": "84d76825ac809229417c8b3515330f2cd4a05d5f9e6a9559ccfc25d6f1f25b4c",
+          "quote": "Perkovich holds a B.S. in electrical engineering and computer science from the University of California at Berkeley and an MBA from Stanford Business School.",
+          "quote_hash": "35b9cef0da32c715e39a29fa23592400e828b8d2e1df9b3fa9f72c666cfe45a6"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "Aurum 缺少可访问的机构官网资料，本档案依据 49ers 官方高管履历核验机构关系、策略与管理合伙人经历，并以融资披露核验单笔参投。未找到官方联系方式；个人过往交易金额不作为 Aurum 投资业绩。"
     }
   }
 }
