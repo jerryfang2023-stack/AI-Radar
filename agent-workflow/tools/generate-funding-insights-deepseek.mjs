@@ -689,6 +689,7 @@ export function promptFor(event, company, sources, directions) {
     "当规范事件来源使用“投资者包括”“参与投资的机构包括”等措辞列出具体名称时，这些名称属于本轮投资方，必须逐一写入financing.investors并引用该完整原句；不得误放到other_round_investors或遗漏。机构名或个人姓名必须是明确专名；“某集团创始人”等只有职务、未披露自然人姓名的描述不得作为investors.name或投资关系实体，只保留在原文证据引文中，不得推测姓名。",
     "comparisons是应用层比较集合，不代表事实关系。只收录来源明确支持具体产品或方案、应用场景、目标客户、融资信息或商业路径的竞品；如果来源只说“同类公司”或“起点不同”，不要输出该条。product写具体产品或方案，scenario写具体工作流，缺失融资金额时funding_summary留空；core_difference必须逐字段比较已经证实的差异，不得写“起点不同”“各有优势”等机械句式。",
     "analysis.investment_rationale只收录本轮投资机构或其投资人的公开原话。institution必须与financing.investors中的机构名一致；speaker和speaker_role写公开归属；rationale用中文概括机构为何投资；quote逐字复制机构或投资人原文。没有机构原话时返回空数组，不得用公司创始人、媒体或模型判断冒充。",
+    "金额和承诺主体必须精确归属：客户的基础设施投资计划、采购预算或建设投入，不得改写为被提及供应商的合同金额、收入、订单或保底现金流；只有来源明确披露交易双方及已签合同/收入时才可这样描述。媒体推断必须标成媒体分析，不得写作投资方或公司公开陈述。",
     "analysis.capital_judgment必须回答资本押注的核心变量、当前估值或融资所依赖的已验证信号，以及判断的证据边界；不得使用“知名机构参与表明看好”“商业化前景广阔”等空泛模板。validated_signals只写来源已验证的业务信号。risks至少一项，用于约束资本判断，不单独扩展成问题清单。",
     "analysis.product_form_id必须选择公司主要面向客户或用户提供的一种核心产品形态。先判断客户实际购买或用户直接使用什么，再判断交付界面；不得因为产品采用某种模型、芯片、机器人或安全技术，或者计划进入某个行业，就把底层技术或未来场景当成主分类。允许值：model、model_api_service、developer_tool、end_user_application、enterprise_software_platform、ai_infrastructure_software、security_software、ai_device、robotic_system、chip_accelerator、ai_compute_system、compute_cloud_service。",
     "若具身智能公司的当前核心交付是VLA模型、软件栈或工具链，而不是完整机器人本体，product_form_id应使用model或ai_infrastructure_software，market_category_id应使用infrastructure_compute；只有交付完整机器人、车辆或自主机器系统时才使用robotic_system与physical_ai。",

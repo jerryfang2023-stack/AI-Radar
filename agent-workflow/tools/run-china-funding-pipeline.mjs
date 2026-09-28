@@ -45,7 +45,10 @@ export function restoreAcceptedChinaFundingEvidence(date, command) {
   command(["agent-workflow/tools/assert-private-evidence-backup.mjs", `--date=${date}`]);
 }
 
-export function chinaFundingPlan(date, sourceDir, { rawLimit = 168, researchSeeds = false } = {}) {
+export function chinaFundingPlan(date, sourceDir, { rawLimit = 168, researchSeeds = false, researchSeedEventIds = [] } = {}) {
+  const seededEventIds = [...new Set(researchSeedEventIds.map((value) => String(value || "").trim()).filter(Boolean))].sort();
+  if (researchSeeds && !seededEventIds.length) throw new Error("research_seed_event_ids_required");
+  if (seededEventIds.some((value) => !/^EV-[a-z0-9]+$/u.test(value))) throw new Error("invalid_research_seed_event_id");
   const tool = (name, ...args) => [`agent-workflow/tools/${name}.mjs`, ...args];
   const site = (name) => [`01-SiteV2/site/scripts/${name}.mjs`];
   const plan = [
@@ -56,7 +59,11 @@ export function chinaFundingPlan(date, sourceDir, { rawLimit = 168, researchSeed
   for (const command of plan.flatMap((stage) => stage.commands)) {
     if (command[0].endsWith("/generate-funding-insights-deepseek.mjs")) {
       command.push(`--checkpoint-dir=${sourceDir}/card-checkpoints`);
-      if (researchSeeds) command.push(`--research-seeds=${sourceDir}/funding-research-seeds.json`);
+      if (researchSeeds) command.push(
+        `--research-seeds=${sourceDir}/funding-research-seeds.json`,
+        `--event-ids=${seededEventIds.join(",")}`,
+        "--force=true",
+      );
     }
   }
   return plan;
@@ -79,7 +86,10 @@ function main() {
   const read = (file, fallback = null) => fs.existsSync(path.resolve(root, file)) ? JSON.parse(fs.readFileSync(path.resolve(root, file), "utf8")) : fallback;
   const write = (file, payload) => { const target = path.resolve(root, file); fs.mkdirSync(path.dirname(target), { recursive: true }); fs.writeFileSync(target, `${JSON.stringify(payload, null, 2)}\n`); };
   const researchSeeds = fs.existsSync(path.resolve(root, sourceDir, "funding-research-seeds.json"));
-  const plan = chinaFundingPlan(date, sourceDir, { rawLimit: historyFrom ? 1260 : 168, researchSeeds });
+  const researchSeedEventIds = researchSeeds
+    ? (read(`${sourceDir}/funding-research-seeds.json`, {}).events || []).map((entry) => entry.event_id)
+    : [];
+  const plan = chinaFundingPlan(date, sourceDir, { rawLimit: historyFrom ? 1260 : 168, researchSeeds, researchSeedEventIds });
   if (historyFrom) for (const stage of plan) for (const command of stage.commands) {
     if (command[0].endsWith("/generate-data-center-model-assist.mjs")) command.splice(0, command.length, "agent-workflow/tools/extract-china-funding-history.mjs", `--date=${date}`);
     if (command[0].endsWith("/generate-funding-insights-deepseek.mjs")) command.push("--market-region=CN", `--checkpoint-dir=${laneDir}/card-checkpoints`);

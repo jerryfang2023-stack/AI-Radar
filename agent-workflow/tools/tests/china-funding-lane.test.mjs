@@ -20,14 +20,19 @@ test("daily financing preserves individual card results inside the restored lane
 });
 test("domestic pipeline can use reviewed multi-method research seeds when search quotas are unavailable", () => {
   const sourceDir = "agent-workflow/reports/china-funding/2026-09-28";
-  const generator = chinaFundingPlan("2026-09-28", sourceDir, { researchSeeds: true })
+  const eventId = "EV-79d08b14ff147531";
+  const generator = chinaFundingPlan("2026-09-28", sourceDir, { researchSeeds: true, researchSeedEventIds: [eventId] })
     .flatMap((stage) => stage.commands)
     .find((args) => args[0].endsWith("/generate-funding-insights-deepseek.mjs"));
   assert.ok(generator.includes(`--research-seeds=${sourceDir}/funding-research-seeds.json`));
+  assert.ok(generator.includes("--force=true"));
+  assert.ok(generator.includes(`--event-ids=${eventId}`));
   const normalGenerator = chinaFundingPlan("2026-09-28", sourceDir)
     .flatMap((stage) => stage.commands)
     .find((args) => args[0].endsWith("/generate-funding-insights-deepseek.mjs"));
   assert.ok(!normalGenerator.some((arg) => arg.startsWith("--research-seeds=")));
+  assert.ok(!normalGenerator.includes("--force=true"));
+  assert.throws(() => chinaFundingPlan("2026-09-28", sourceDir, { researchSeeds: true }), /research_seed_event_ids_required/u);
 });
 test("financing commentary and multi-event headlines cannot become company financing facts", () => {
   const source = { published_at: "2026-09-14", acquisition_channel: "china-funding" };

@@ -6,7 +6,7 @@ import { isWithdrawnFundingTitle, isPendingFundingTitle } from "./lib/funding-tr
 
 export const FUNDING_INSIGHT_VERSION = "FUNDING-INSIGHT-V1.3";
 export const FUNDING_INSIGHT_FRONTSTAGE_VERSION = "FUNDING-INSIGHT-FRONTSTAGE-V1.5";
-export const FUNDING_INSIGHT_PROMPT_VERSION = "FUNDING-INSIGHT-DEEPSEEK-V1.7";
+export const FUNDING_INSIGHT_PROMPT_VERSION = "FUNDING-INSIGHT-DEEPSEEK-V1.8";
 export const FUNDING_INSIGHT_GATE_VERSION = "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1";
 export const INVESTORS_MISSING_RISK = "本轮具体投资方未披露，投资人结构与背书强度无法核验。";
 export const FUNDING_PRODUCT_FORM_IDS = new Set([
@@ -94,6 +94,16 @@ function marketHierarchyProblems(analysis = {}) {
 
 export function clean(value = "") {
   return String(value || "").replace(/\s+/gu, " ").trim();
+}
+
+function hasAttributedInvestorQuote(item, sourceById) {
+  const speaker = clean(item?.speaker).toLocaleLowerCase();
+  const quote = clean(item?.quote).toLocaleLowerCase();
+  if (!speaker || !quote) return false;
+  return (item?.evidence_refs || []).some((evidence) => {
+    const body = clean(sourceById.get(evidence?.source_id)?.body_clean).toLocaleLowerCase();
+    return body.includes(speaker) && body.includes(quote);
+  });
 }
 
 export function normalizeFounderRole(value = "") {
@@ -1798,9 +1808,12 @@ export function sanitizeResearchPayload(payload = {}, sources = []) {
       .map((item) => ({ ...item, evidence_refs: cleanRefs(item.evidence_refs) }))
       .filter((item) => (
         investorNames.has(clean(item.institution).toLowerCase())
+        && clean(item.speaker)
+        && clean(item.speaker_role)
         && clean(item.rationale)
         && clean(item.quote)
         && item.evidence_refs.some((evidence) => clean(evidence.quote).includes(clean(item.quote)))
+        && hasAttributedInvestorQuote(item, sourceById)
       ));
   }
   return sanitized;
@@ -1950,6 +1963,11 @@ export function researchPayloadProblems(payload = {}, sources = [], directionIds
       if (!clean(item?.quote)) problems.push(`investment_rationale_${index + 1}_quote_missing`);
       else if (!(item.evidence_refs || []).some((evidence) => clean(evidence.quote).includes(clean(item.quote)))) {
         problems.push(`investment_rationale_${index + 1}_quote_not_cited`);
+      }
+      if (!clean(item?.speaker)) problems.push(`investment_rationale_${index + 1}_speaker_missing`);
+      if (!clean(item?.speaker_role)) problems.push(`investment_rationale_${index + 1}_speaker_role_missing`);
+      if (clean(item?.speaker) && clean(item?.quote) && !hasAttributedInvestorQuote(item, sourceById)) {
+        problems.push(`investment_rationale_${index + 1}_speaker_not_attributed`);
       }
       problems.push(...evidenceProblems(item?.evidence_refs, sourceById, `investment_rationale_${index + 1}_evidence`));
     }
