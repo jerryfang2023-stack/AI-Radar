@@ -1344,6 +1344,14 @@ function quoteClauses(value = "") {
 
 function clauseHasEventFundingAmount(clause, claim, event) {
   if (/(?:\b(?:not|never|did not|has not|had not|hasn't|didn't)\s+(?:raise|raised|secure|secured|complete|completed|close|closed)\b|(?:未|没有|并未|不曾|否认).{0,24}(?:融资|募资|筹集|获投|完成融资))/iu.test(clause)) return false;
+  const exactUnqualifiedMagnitude = (value) => {
+    const compact = clean(value).normalize("NFKC").replace(/[\s,，]/gu, "");
+    if (/(?:美元|美金|人民币|元|USD|CNY|RMB|EUR|GBP|JPY|[$€£¥￥])/iu.test(compact)) return null;
+    const match = compact.match(/^(\d+(?:\.\d+)?)(万亿|千万|亿|万)$/u);
+    return match ? Number(match[1]) * amountMultiplier(match[2]) : null;
+  };
+  const canonicalEventAmount = canonicalFundingEventAmount(event, [claim]);
+  const unqualifiedEventMagnitude = exactUnqualifiedMagnitude(canonicalEventAmount);
   const expected = [
     event.object,
     claim.object,
@@ -1352,7 +1360,17 @@ function clauseHasEventFundingAmount(clause, claim, event) {
     .filter((mention) => !mention.valuation && !mention.cumulative);
   const actual = fundingAmountMentions(clause)
     .filter((mention) => !mention.valuation && !mention.cumulative);
-  return expected.some((left) => actual.some((right) => fundingAmountsEquivalent(left.raw, right.raw)));
+  if (expected.some((left) => actual.some((right) => fundingAmountsEquivalent(left.raw, right.raw)))) return true;
+  if (!Number.isFinite(unqualifiedEventMagnitude)) return false;
+  // Extraction may retain a proceeds metric such as “15亿” while omitting
+  // its currency. Recover that recipient only from a round-proceeds amount
+  // with the exact same magnitude in the same clause, and only when the
+  // clause does not present that magnitude in multiple currencies.
+  const exactRoundAmounts = actual
+    .filter((right) => right.round && normalizeFundingAmount(right.raw).value === unqualifiedEventMagnitude);
+  const currencies = new Set(exactRoundAmounts
+    .map((mention) => normalizeFundingAmount(mention.raw).currency).filter(Boolean));
+  return exactRoundAmounts.length > 0 && currencies.size === 1;
 }
 
 function linkedCompanyAnchoredInFundingQuote(event, entities, claims) {
