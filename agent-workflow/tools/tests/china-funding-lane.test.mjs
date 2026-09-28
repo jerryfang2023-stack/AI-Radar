@@ -89,6 +89,16 @@ test("accepted capture recovery restores date-scoped locators offline and fails 
   const pipeline = fs.readFileSync("agent-workflow/tools/run-china-funding-pipeline.mjs", "utf8");
   assert.match(pipeline, /restoreAcceptedChinaFundingEvidence\(date, command\);\s+const capturePassed/u);
 });
+test("resuming an accepted checkpoint preserves the current reviewed search-seed manifest", () => {
+  const workflow = fs.readFileSync(".github/workflows/china-funding-pr.yml", "utf8");
+  const restoreStep = workflow.match(/- name: Restore failed run checkpoint without recollection[\s\S]*?\n      - name: Collect each domestic publisher independently/u)?.[0] || "";
+  const snapshot = restoreStep.indexOf('cp "$current_seeds" "$seed_snapshot"');
+  const checkpointRestore = restoreStep.indexOf('cp -a "$RUNNER_TEMP/china-funding-checkpoint/." "$lane/"');
+  const currentSeedRestore = restoreStep.indexOf('cp "$seed_snapshot" "$current_seeds"');
+  assert.ok(snapshot >= 0 && snapshot < checkpointRestore);
+  assert.ok(checkpointRestore < currentSeedRestore);
+  assert.match(restoreStep, /rm -f "\$current_seeds"/u);
+});
 test("domestic dates come from explicit original publication stamps, never capture time", () => {
   const source = { acquisition_channel: "china-funding" };
   assert.equal(chinaFundingSourceDate({ ...source, full_text: "导航\n2026/09 11\n11:17\n超维动力完成融资" }), "2026-09-11T11:17:00+08:00");
