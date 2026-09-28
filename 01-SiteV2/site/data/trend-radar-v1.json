@@ -7,8 +7,8 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:33:17.959Z",
-    "latestDataDate": "2026-09-26",
+    "generatedAt": "2026-09-28T03:59:04.175Z",
+    "latestDataDate": "2026-09-28",
     "timezone": "Asia/Shanghai",
     "dateBasis": "dataDate",
     "boundary": "accepted-canonical-events-only; no viewpoints, community, scores or recommendations",
@@ -37,12 +37,41 @@
       "hardware": "AI 硬件"
     },
     "sourceCounts": {
-      "events": 3410,
+      "events": 3425,
       "entities": 969,
-      "relationships": 392
+      "relationships": 393
     }
   },
   "events": {
+    "EV-bd05f8cee4043426": {
+      "id": "EV-bd05f8cee4043426",
+      "dataDate": "2026-09-28",
+      "occurrenceDate": "2026-09-28",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "publicationStatus": "verified",
+      "category": "financing",
+      "title": "2026 年 LLM 进展（截至目前）",
+      "entityIds": [
+        "EN-ea3bd73e2b506e00"
+      ],
+      "entityNames": [
+        "Facebook/Meta",
+        "Meta"
+      ],
+      "productNames": [],
+      "classifications": [],
+      "claimIds": [
+        "CL-803b3056078de7b6"
+      ],
+      "sourceIds": [
+        "SA-1e314ab31fba7a75"
+      ],
+      "sourceUrl": "https://simonwillison.net/2026/Sep/27/2026-in-llms-so-far",
+      "publisher": "Simon Willison's Blog",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-bd05f8cee4043426"
+    },
     "EV-95ba9cc4f4d52ea4": {
       "id": "EV-95ba9cc4f4d52ea4",
       "dataDate": "2026-09-26",
@@ -13068,7 +13097,7 @@
     },
     "EV-81bbaaec2965864a": {
       "id": "EV-81bbaaec2965864a",
-      "dataDate": "2026-09-26",
+      "dataDate": "2026-09-28",
       "occurrenceDate": "2026-09-02",
       "eventType": "funding",
       "eventTypeLabel": "融资",
@@ -13155,10 +13184,10 @@
         }
       ],
       "claimIds": [
-        "CL-4a51944f673ad28e",
-        "CL-2c30e1990b83c465",
-        "CL-bac5cfbf874777b4",
-        "CL-f15d9cda4ecd1d24"
+        "CL-95c5c3416fe8620c",
+        "CL-a7b5f584c897aaaa",
+        "CL-6a69ae4e556db641",
+        "CL-146922a077cde477"
       ],
       "sourceIds": [
         "SA-c180cf343d4fb526"
@@ -81146,9 +81175,7 @@
         {
           "name": "限时免费额度重置",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -81195,7 +81222,7 @@
     },
     "EV-7d186033b26431e7": {
       "id": "EV-7d186033b26431e7",
-      "dataDate": "2026-09-26",
+      "dataDate": "2026-09-28",
       "occurrenceDate": "2026-09-25",
       "eventType": "procurement_contract",
       "eventTypeLabel": "采购合同",
@@ -81211,10 +81238,10 @@
       "productNames": [],
       "classifications": [],
       "claimIds": [
-        "CL-686fe1738773061a"
+        "CL-761c1db12e0e1626"
       ],
       "sourceIds": [
-        "SA-59eeb18c793ed52c"
+        "SA-a56759031dd01474"
       ],
       "sourceUrl": "https://techcrunch.com/2026/09/25/crusoe-abandons-1-25b-plan-to-use-boom-turbines-at-ai-data-centers",
       "publisher": "TechCrunch AI",
@@ -82521,16 +82548,12 @@
         {
           "name": "构建 AI 原生营收组织",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude across a sales organization",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -94904,6 +94927,41 @@
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-cab03fca079f62e6"
     },
+    "EV-defd9eb250a2b925": {
+      "id": "EV-defd9eb250a2b925",
+      "dataDate": "2026-09-28",
+      "occurrenceDate": "2026-09-28",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "publicationStatus": "partial",
+      "category": "partnership",
+      "title": "派早报：OpenAI 称与苹果合作效果不佳",
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-3a7bd3e2360a3d29",
+        "EN-968e2d5b08687bf4",
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "entityNames": [
+        "派早报",
+        "OpenAI",
+        "Apple",
+        "Samsung",
+        "Microsoft"
+      ],
+      "productNames": [],
+      "classifications": [],
+      "claimIds": [
+        "CL-f39ed204c2fef275"
+      ],
+      "sourceIds": [
+        "SA-e6afad8c32a04071"
+      ],
+      "sourceUrl": "https://sspai.com/post/115079",
+      "publisher": "少数派",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-defd9eb250a2b925"
+    },
     "EV-ceae771867a66bb5": {
       "id": "EV-ceae771867a66bb5",
       "dataDate": "2026-09-21",
@@ -102657,8 +102715,8 @@
     },
     "EV-03992c9b7f8fef10": {
       "id": "EV-03992c9b7f8fef10",
-      "dataDate": "2026-09-26",
-      "occurrenceDate": "2026-09-26",
+      "dataDate": "2026-09-28",
+      "occurrenceDate": "2026-09-28",
       "eventType": "product_release",
       "eventTypeLabel": "产品发布",
       "publicationStatus": "verified",
@@ -102678,7 +102736,7 @@
       ],
       "classifications": [],
       "claimIds": [
-        "CL-0dfa941883b9912e"
+        "CL-c974e6826c2bcef3"
       ],
       "sourceIds": [
         "SA-3c3d66efa916f19b"
@@ -102688,10 +102746,65 @@
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-03992c9b7f8fef10"
     },
+    "EV-06c2f2803729eae2": {
+      "id": "EV-06c2f2803729eae2",
+      "dataDate": "2026-09-28",
+      "occurrenceDate": "2026-09-28",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "publicationStatus": "verified",
+      "category": "product",
+      "title": "前苹果 Siri 工程师推出 AI 智能体 szn，可在 iMessage 中与用户互动",
+      "entityIds": [
+        "EN-3a7bd3e2360a3d29"
+      ],
+      "entityNames": [
+        "前苹果 Siri 工程师",
+        "Apple"
+      ],
+      "productNames": [],
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-5e668f42eb6cf15d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "EN-5e668f42eb6cf15d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "claimIds": [
+        "CL-2cb96bc7743bf5da",
+        "CL-a65b3d13a3bbed1b",
+        "CL-4c93b579453a0fef",
+        "CL-9dd3ad396ac41e9f"
+      ],
+      "sourceIds": [
+        "SA-e68d89e83379fb44"
+      ],
+      "sourceUrl": "https://ithome.com/1/007/634.htm",
+      "publisher": "IT之家",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-06c2f2803729eae2"
+    },
     "EV-8061c8eb754e0542": {
       "id": "EV-8061c8eb754e0542",
-      "dataDate": "2026-09-26",
-      "occurrenceDate": "2026-09-26",
+      "dataDate": "2026-09-28",
+      "occurrenceDate": "2026-09-28",
       "eventType": "product_release",
       "eventTypeLabel": "产品发布",
       "publicationStatus": "verified",
@@ -102716,7 +102829,7 @@
       ],
       "classifications": [],
       "claimIds": [
-        "CL-0788b27b0ff3f6e5"
+        "CL-5cc9b1efe673b1c6"
       ],
       "sourceIds": [
         "SA-27684dbbb34cfe9c"
@@ -102725,6 +102838,253 @@
       "publisher": "cloudera.com",
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-8061c8eb754e0542"
+    },
+    "EV-857d7186b873e0ed": {
+      "id": "EV-857d7186b873e0ed",
+      "dataDate": "2026-09-28",
+      "occurrenceDate": "2026-09-27",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "publicationStatus": "verified",
+      "category": "product",
+      "title": "Nvidia 发布免费 100M 参数模型，可实时识别最多八位说话人",
+      "entityIds": [
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "NVIDIA",
+        "Nemotron 3 Diarization"
+      ],
+      "productNames": [
+        {
+          "name": "Nemotron 3 Diarization",
+          "type": "模型",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        }
+      ],
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "claimIds": [
+        "CL-8be43d526e5c1e83"
+      ],
+      "sourceIds": [
+        "SA-c26b1237296492cb"
+      ],
+      "sourceUrl": "https://the-decoder.com/nvidia-drops-a-free-100m-parameter-model-that-identifies-up-to-eight-speakers-in-real-time",
+      "publisher": "The Decoder AI News",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-857d7186b873e0ed"
+    },
+    "EV-9d69b6d61dab2b9c": {
+      "id": "EV-9d69b6d61dab2b9c",
+      "dataDate": "2026-09-28",
+      "occurrenceDate": "2026-09-27",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "publicationStatus": "verified",
+      "category": "product",
+      "title": "MiniMax 最新文本模型 M3.1-Flash-Preview 上线 MiniMax Code 平台，额度重置卡同步发出",
+      "entityIds": [
+        "EN-e1517be14d06cdb7"
+      ],
+      "entityNames": [
+        "MiniMax",
+        "M3.1-Flash-Preview"
+      ],
+      "productNames": [
+        {
+          "name": "M3.1-Flash-Preview",
+          "type": "产品/服务",
+          "ownerNames": [
+            "MiniMax"
+          ]
+        }
+      ],
+      "classifications": [],
+      "marketScopes": [
+        "actor_origin"
+      ],
+      "claimIds": [
+        "CL-c4cb58fb2b03d5ad",
+        "CL-e7ce10f44f8c9a0f",
+        "CL-fda44203c7fa96e6",
+        "CL-58d900b2b7edffc9"
+      ],
+      "sourceIds": [
+        "SA-31da48c72a08f106"
+      ],
+      "sourceUrl": "https://ithome.com/1/007/530.htm",
+      "publisher": "IT之家（RSS）",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-9d69b6d61dab2b9c"
+    },
+    "EV-ca32d5e2f28622ef": {
+      "id": "EV-ca32d5e2f28622ef",
+      "dataDate": "2026-09-28",
+      "occurrenceDate": "2026-09-27",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "publicationStatus": "verified",
+      "category": "product",
+      "title": "小米 18 Pro 系列「传奇一瞬」功能详解：端到端影像大模型，原片可云端无损处理",
+      "entityIds": [
+        "EN-c608c4787821de1b"
+      ],
+      "entityNames": [
+        "Xiaomi"
+      ],
+      "productNames": [],
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-c608c4787821de1b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "claimIds": [
+        "CL-e5915da351fd1a72",
+        "CL-23aeb56fcac258d6",
+        "CL-8eb27c00f3f80c15"
+      ],
+      "sourceIds": [
+        "SA-3c3500fb2aca77ba"
+      ],
+      "sourceUrl": "https://ithome.com/1/007/474.htm",
+      "publisher": "IT之家（RSS）",
+      "metricDisclosed": true,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-ca32d5e2f28622ef"
+    },
+    "EV-f66ca8648085ba70": {
+      "id": "EV-f66ca8648085ba70",
+      "dataDate": "2026-09-28",
+      "occurrenceDate": "2026-09-27",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "publicationStatus": "verified",
+      "category": "product",
+      "title": "Engram 是一款采样器，可将破碎的 AI 幻觉转化为音乐",
+      "entityIds": [],
+      "entityNames": [
+        "Thoughtful Things",
+        "Kickstarter campaign"
+      ],
+      "productNames": [
+        {
+          "name": "Kickstarter campaign",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "classifications": [],
+      "claimIds": [
+        "CL-cde590c3b507d0c3"
+      ],
+      "sourceIds": [
+        "SA-369ebd64af34ddc8"
+      ],
+      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/1001193/engram-sampler-ai-hallucinations-music",
+      "publisher": "The Verge AI",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-f66ca8648085ba70"
+    },
+    "EV-2522985610878859": {
+      "id": "EV-2522985610878859",
+      "dataDate": "2026-09-28",
+      "occurrenceDate": "2026-09-26",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "publicationStatus": "verified",
+      "category": "product",
+      "title": "AI开始研究Physical AI：FSD级团队亮出首版模型Simate-beta，空降RoboDojo",
+      "entityIds": [],
+      "entityNames": [
+        "Simate",
+        "Simate-beta",
+        "Physical AI"
+      ],
+      "productNames": [
+        {
+          "name": "Simate-beta",
+          "type": "模型",
+          "ownerNames": []
+        },
+        {
+          "name": "Physical AI",
+          "type": "模型",
+          "ownerNames": []
+        }
+      ],
+      "classifications": [],
+      "claimIds": [
+        "CL-98dbc44420a3dba5"
+      ],
+      "sourceIds": [
+        "SA-f8fa58f084a06fac"
+      ],
+      "sourceUrl": "https://qbitai.com/2026/09/498271.html",
+      "publisher": "量子位",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-2522985610878859"
+    },
+    "EV-74fa59bc868027b1": {
+      "id": "EV-74fa59bc868027b1",
+      "dataDate": "2026-09-28",
+      "occurrenceDate": "2026-09-26",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "publicationStatus": "verified",
+      "category": "product",
+      "title": "索辰科技加码世界模型，与战略投资企业美梦空间联合发布具身模型与物理测评标准",
+      "entityIds": [],
+      "entityNames": [
+        "战略投资企业美梦空间联合"
+      ],
+      "productNames": [],
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-f8ab0a6e49ab20ba"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "claimIds": [
+        "CL-c2ea068d5c4fbd78",
+        "CL-51a3594f7f1c37a0",
+        "CL-068603587c9f1e7b",
+        "CL-c289f81d25c9a8d6"
+      ],
+      "sourceIds": [
+        "SA-667ab48ce949763a"
+      ],
+      "sourceUrl": "https://qbitai.com/2026/09/498478.html",
+      "publisher": "量子位",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-74fa59bc868027b1"
     },
     "EV-d675907ad59a707e": {
       "id": "EV-d675907ad59a707e",
@@ -102860,7 +103220,7 @@
     },
     "EV-1b912ec16c50fc0f": {
       "id": "EV-1b912ec16c50fc0f",
-      "dataDate": "2026-09-26",
+      "dataDate": "2026-09-28",
       "occurrenceDate": "2026-09-24",
       "eventType": "model_release",
       "eventTypeLabel": "模型发布",
@@ -102905,10 +103265,10 @@
         }
       ],
       "claimIds": [
-        "CL-fbc7f79e25d82725"
+        "CL-ca0797e90132371a"
       ],
       "sourceIds": [
-        "SA-6a5f83855e02c755"
+        "SA-d049b94c264e1c37"
       ],
       "sourceUrl": "https://simonwillison.net/2026/Sep/23/gemini-tts-playground",
       "publisher": "Simon Willison's Blog",
@@ -103375,6 +103735,54 @@
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-f8d9fa15111c7f61"
     },
+    "EV-0d5a32aca724d30e": {
+      "id": "EV-0d5a32aca724d30e",
+      "dataDate": "2026-09-28",
+      "occurrenceDate": "2026-09-23",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "publicationStatus": "verified",
+      "category": "product",
+      "title": "Fireworks Research 发布 Ember-1：以少 40% 的 token 达到 Kimi K3 同等质量",
+      "entityIds": [],
+      "entityNames": [
+        "Fireworks Research",
+        "Ember-1"
+      ],
+      "productNames": [
+        {
+          "name": "Ember-1",
+          "type": "模型",
+          "ownerNames": []
+        }
+      ],
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-f9768e4769ec9d14"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "claimIds": [
+        "CL-ad38d8992531ea83",
+        "CL-ae5adee57436b052",
+        "CL-60861cb336b4100c",
+        "CL-21069c0aca2c7859"
+      ],
+      "sourceIds": [
+        "SA-7a1e3aac2009d680"
+      ],
+      "sourceUrl": "https://fireworks.ai/blog/ember-1",
+      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "metricDisclosed": true,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-0d5a32aca724d30e"
+    },
     "EV-09898d5522f0db28": {
       "id": "EV-09898d5522f0db28",
       "dataDate": "2026-09-24",
@@ -103427,54 +103835,6 @@
       "publisher": "The Decoder AI News",
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-09898d5522f0db28"
-    },
-    "EV-0d5a32aca724d30e": {
-      "id": "EV-0d5a32aca724d30e",
-      "dataDate": "2026-09-24",
-      "occurrenceDate": "2026-09-23",
-      "eventType": "model_release",
-      "eventTypeLabel": "模型发布",
-      "publicationStatus": "verified",
-      "category": "product",
-      "title": "Fireworks Research 发布 Ember-1，以更少推理 token 保持 Kimi K3 质量",
-      "entityIds": [],
-      "entityNames": [
-        "Fireworks Research",
-        "Ember-1"
-      ],
-      "productNames": [
-        {
-          "name": "Ember-1",
-          "type": "模型",
-          "ownerNames": []
-        }
-      ],
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-f9768e4769ec9d14"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "claimIds": [
-        "CL-72a66c501ca541e4",
-        "CL-5da1e6bc66a3da35",
-        "CL-bc6c7807ee89fe52",
-        "CL-330aeff5cb5a4a3a"
-      ],
-      "sourceIds": [
-        "SA-788025116bd3082a"
-      ],
-      "sourceUrl": "https://fireworks.ai/blog/ember-1",
-      "publisher": "Fireworks AI（网页）",
-      "metricDisclosed": true,
-      "detailUrl": "data-center.html?view=events&detail=event&id=EV-0d5a32aca724d30e"
     },
     "EV-1873f3c6fa4bdedd": {
       "id": "EV-1873f3c6fa4bdedd",
@@ -103770,7 +104130,7 @@
           "name": "Claude Opus 5.5",
           "type": "模型",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -103814,7 +104174,7 @@
           "name": "Claude Marketplace",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Google"
           ]
         }
       ],
@@ -104057,7 +104417,9 @@
         {
           "name": "Win11 Clipchamp",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "classifications": [],
@@ -104140,9 +104502,7 @@
         {
           "name": "Claude Opus 5.5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -104235,7 +104595,7 @@
           "name": "Claude Opus 5.5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Amazon"
           ]
         }
       ],
@@ -104366,7 +104726,7 @@
           "name": "Opus 5.5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         },
         {
@@ -104483,23 +104843,17 @@
         {
           "name": "Claude Opus 5.5",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Adaptive Reasoning",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Artificial Analysis",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -104676,7 +105030,7 @@
           "name": "Claude Opus 5.5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Google"
           ]
         }
       ],
@@ -104828,9 +105182,7 @@
         {
           "name": "Claude Opus 5.5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -107441,9 +107793,7 @@
         {
           "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -107856,9 +108206,7 @@
         {
           "name": "Claude Chat",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -107894,9 +108242,7 @@
         {
           "name": "Claude Docs",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -107935,14 +108281,14 @@
           "name": "GitHub Copilot",
           "type": "模型",
           "ownerNames": [
-            "Anthropic"
+            "Microsoft"
           ]
         },
         {
           "name": "GitHub Changelog",
           "type": "模型",
           "ownerNames": [
-            "Anthropic"
+            "Microsoft"
           ]
         }
       ],
@@ -108559,9 +108905,7 @@
         {
           "name": "MarTech",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [
@@ -109510,16 +109854,12 @@
         {
           "name": "Claude for Financial Advisors",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -110290,9 +110630,7 @@
         {
           "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -112365,9 +112703,7 @@
         {
           "name": "Claude",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -112441,7 +112777,9 @@
         {
           "name": "Project Opal",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "classifications": [
@@ -113320,7 +113658,7 @@
           "name": "GPT-6 Astra",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Meta"
           ]
         }
       ],
@@ -113638,12 +113976,16 @@
         {
           "name": "WinUI",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         },
         {
           "name": "WinUI 3",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "classifications": [],
@@ -113818,7 +114160,9 @@
         {
           "name": "MAI-Image-2.6-Flash",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "classifications": [
@@ -113921,7 +114265,9 @@
         {
           "name": "Copilot Canvas AI",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "classifications": [],
@@ -114265,7 +114611,9 @@
         {
           "name": "Win11 Pro",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "classifications": [],
@@ -114377,7 +114725,9 @@
         {
           "name": "Project Zenith",
           "type": "AI 硬件",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "classifications": [],
@@ -114760,7 +115110,9 @@
         {
           "name": "Project Zenith",
           "type": "AI 硬件",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "classifications": [],
@@ -114795,9 +115147,7 @@
         {
           "name": "Claude Commerce",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [
@@ -115768,9 +116118,7 @@
         {
           "name": "Claude",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -116136,9 +116484,7 @@
         {
           "name": "Claude",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [
@@ -116235,9 +116581,7 @@
         {
           "name": "Claude AI",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -116495,9 +116839,7 @@
         {
           "name": "Enterprise Frontier Safeguards",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [
@@ -116723,9 +117065,7 @@
         {
           "name": "Claude Fable 5.1",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [
@@ -116776,16 +117116,12 @@
         {
           "name": "Claude Fable 5.1",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Mythos 5.1",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -117053,9 +117389,7 @@
         {
           "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -117161,16 +117495,12 @@
         {
           "name": "Claude Fable 5.1",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Mythos 5.1",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -117205,9 +117535,7 @@
         {
           "name": "Enterprise Frontier Safeguards",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -117247,12 +117575,16 @@
         {
           "name": "AI Connections",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         },
         {
           "name": "Procurement Gets New AI",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "classifications": [],
@@ -118051,9 +118383,7 @@
         {
           "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -118860,9 +119190,7 @@
         {
           "name": "MHS",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [
@@ -121995,9 +122323,7 @@
         {
           "name": "Fable 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [
@@ -123101,16 +123427,12 @@
         {
           "name": "Claude Opus 4.6",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Opus 4.6",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -123207,16 +123529,12 @@
         {
           "name": "Claude Mythos 5",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude Security",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -125372,9 +125690,7 @@
         {
           "name": "Model 2",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -125695,16 +126011,12 @@
         {
           "name": "Tag",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "CI",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -126289,7 +126601,9 @@
         {
           "name": "Copilot Notebooks",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "classifications": [],
@@ -126423,23 +126737,17 @@
         {
           "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "GitLab MR",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "GitLab merge request URL support",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -126601,21 +126909,21 @@
           "name": "Major Harness Upgrades",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         },
         {
           "name": "WRITER Makes Agentic AI",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         },
         {
           "name": "Economically Sustainable",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -127281,7 +127589,9 @@
         {
           "name": "Clippy-like Mico",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "classifications": [],
@@ -127923,7 +128233,7 @@
           "name": "Claude Cowork",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Google"
           ]
         }
       ],
@@ -128216,14 +128526,14 @@
           "name": "MAI Code 1.1",
           "type": "模型",
           "ownerNames": [
-            "DeepSeek"
+            "Microsoft"
           ]
         },
         {
           "name": "MAI Code 1.1 Flash",
           "type": "模型",
           "ownerNames": [
-            "DeepSeek"
+            "Microsoft"
           ]
         }
       ],
@@ -128267,7 +128577,7 @@
           "name": "Claude Code",
           "type": "产品/服务",
           "ownerNames": [
-            "European Union"
+            "Microsoft"
           ]
         }
       ],
@@ -130927,12 +131237,16 @@
         {
           "name": "Role",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         },
         {
           "name": "Open Source",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "classifications": [
@@ -131338,9 +131652,7 @@
         {
           "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -131487,12 +131799,16 @@
         {
           "name": "Windows 10",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         },
         {
           "name": "Windows 11",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "classifications": [],
@@ -132200,9 +132516,7 @@
         {
           "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [
@@ -134124,12 +134438,16 @@
         {
           "name": "InfoQ",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         },
         {
           "name": "Agent Framework Harness",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "classifications": [],
@@ -134978,21 +135296,21 @@
           "name": "CPG Clients",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Microsoft"
           ]
         },
         {
           "name": "Agency Partner Program",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Microsoft"
           ]
         },
         {
           "name": "AI Agents for Agency",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Microsoft"
           ]
         }
       ],
@@ -136575,14 +136893,14 @@
           "name": "GitHub Copilot",
           "type": "产品/服务",
           "ownerNames": [
-            "xAI"
+            "Microsoft"
           ]
         },
         {
           "name": "Grok 4.5 AI",
           "type": "产品/服务",
           "ownerNames": [
-            "xAI"
+            "Microsoft"
           ]
         }
       ],
@@ -136992,7 +137310,9 @@
         {
           "name": "MAI-Cyber-1-Flash",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "classifications": [
@@ -137497,7 +137817,7 @@
           "name": "MAI-Cyber-1-Flash",
           "type": "模型",
           "ownerNames": [
-            "Anthropic"
+            "Microsoft"
           ]
         }
       ],
@@ -137570,9 +137890,7 @@
         {
           "name": "Cowork",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [
@@ -137622,9 +137940,7 @@
         {
           "name": "CEO Dario Amodei",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [
@@ -137677,7 +137993,7 @@
           "name": "MAI-Cyber-1-Flash",
           "type": "模型",
           "ownerNames": [
-            "OpenAI"
+            "Microsoft"
           ]
         }
       ],
@@ -137952,7 +138268,7 @@
           "name": "MAI-Cyber-1-Flash",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Microsoft"
           ]
         }
       ],
@@ -139151,16 +139467,12 @@
         {
           "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude Opus 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [
@@ -139249,9 +139561,7 @@
         {
           "name": "Opus 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -139295,14 +139605,14 @@
           "name": "Opus 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         },
         {
           "name": "Fable 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -139606,9 +139916,7 @@
         {
           "name": "Opus 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -139969,12 +140277,16 @@
         {
           "name": "Venice-X",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         },
         {
           "name": "EPYC Venice-X",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "classifications": [],
@@ -140091,12 +140403,16 @@
         {
           "name": "MAI-Image-2.5-Pro",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         },
         {
           "name": "MAI-Voice-2-Flash",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "classifications": [
@@ -140348,14 +140664,14 @@
           "name": "Helios AI",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         },
         {
           "name": "Helios",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -141282,23 +141598,17 @@
         {
           "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude Security",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude Security plugin",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -141882,9 +142192,7 @@
         {
           "name": "Economic Index",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -142384,12 +142692,16 @@
         {
           "name": "Win11 RP",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         },
         {
           "name": "Copilot",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "classifications": [],
@@ -143634,23 +143946,17 @@
         {
           "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude Tag",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Fireside Chat",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -144212,7 +144518,9 @@
         {
           "name": "Copilot AI",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "classifications": [],
@@ -146109,7 +146417,7 @@
           "name": "Fable 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -147199,16 +147507,12 @@
         {
           "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "EndConversation",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -147995,9 +148299,7 @@
         {
           "name": "Claude Code v2.1.212",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [
@@ -148712,7 +149014,7 @@
           "name": "Visual Studio Code 1.129",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Microsoft"
           ]
         }
       ],
@@ -149403,9 +149705,7 @@
         {
           "name": "Ode",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [
@@ -150495,16 +150795,12 @@
         {
           "name": "Claude for Teachers",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [
@@ -150877,16 +151173,12 @@
         {
           "name": "Claude for Teachers",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [
@@ -151531,9 +151823,7 @@
         {
           "name": "Claude Code v2.1.208",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -153201,9 +153491,7 @@
         {
           "name": "Claude Fable 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -153338,7 +153626,9 @@
         {
           "name": "Marketplace",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "classifications": [
@@ -155379,7 +155669,7 @@
           "name": "Foundry",
           "type": "模型",
           "ownerNames": [
-            "Anthropic"
+            "Microsoft"
           ]
         }
       ],
@@ -156035,9 +156325,7 @@
         {
           "name": "Claude Cowork",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [
@@ -156516,7 +156804,9 @@
         {
           "name": "Maia 200",
           "type": "AI 硬件",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "classifications": [],
@@ -156583,9 +156873,7 @@
         {
           "name": "Claude Code v2.1.202",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -156718,16 +157006,12 @@
         {
           "name": "OpenScience",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "AI workbench",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -157116,9 +157400,7 @@
         {
           "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -157157,9 +157439,7 @@
         {
           "name": "Claude Science",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [
@@ -157606,14 +157886,14 @@
           "name": "Cowork",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         },
         {
           "name": "Cowork on Monday",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -157670,7 +157950,7 @@
           "name": "AutoPilot",
           "type": "产品/服务",
           "ownerNames": [
-            "Intel"
+            "Microsoft"
           ]
         }
       ],
@@ -157810,9 +158090,7 @@
         {
           "name": "Claude Fable 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -158394,9 +158672,7 @@
         {
           "name": "Claude Science",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -158515,9 +158791,7 @@
         {
           "name": "Fable 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [
@@ -158604,9 +158878,7 @@
         {
           "name": "Claude Fable 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -158697,9 +158969,7 @@
         {
           "name": "Claude Managed",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -159166,23 +159436,17 @@
         {
           "name": "MCP Connector",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "MCP Connector for",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -159244,9 +159508,7 @@
         {
           "name": "Claude Code v2.1.198",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -159417,9 +159679,7 @@
         {
           "name": "Claude Sonnet 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -159619,9 +159879,7 @@
         {
           "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [
@@ -159778,9 +160036,7 @@
         {
           "name": "Claude Science",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [
@@ -159832,16 +160088,12 @@
         {
           "name": "Claude Science",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude Science on Tuesday",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [
@@ -159892,9 +160144,7 @@
         {
           "name": "Claude Science",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -159997,9 +160247,7 @@
         {
           "name": "Claude Sonnet 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [
@@ -160341,7 +160589,7 @@
           "name": "Claude Sonnet 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Google"
           ]
         }
       ],
@@ -160571,9 +160819,7 @@
         {
           "name": "Claude Sonnet 5",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -160788,7 +161034,7 @@
           "name": "Claude",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "NVIDIA"
           ]
         }
       ],
@@ -160938,21 +161184,21 @@
           "name": "Sapphire",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Amazon"
           ]
         },
         {
           "name": "News",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Amazon"
           ]
         },
         {
           "name": "Autonomous Enterprise",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Amazon"
           ]
         }
       ],
@@ -161079,12 +161325,16 @@
         {
           "name": "Learn",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         },
         {
           "name": "Visual Studio 2026",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "classifications": [],
@@ -161374,14 +161624,14 @@
           "name": "Mythos-like",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Sakana AI"
           ]
         },
         {
           "name": "Asian AI",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Sakana AI"
           ]
         }
       ],
@@ -161480,9 +161730,7 @@
         {
           "name": "Mythos",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [
@@ -161960,7 +162208,7 @@
           "name": "Akrites",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -162033,14 +162281,14 @@
           "name": "Claude Code v2.1.193",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Shell"
           ]
         },
         {
           "name": "autoMode.classifyAllShell setting",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Shell"
           ]
         }
       ],
@@ -162381,16 +162629,12 @@
         {
           "name": "Claude Cowork",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "SaaS Workflows",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [
@@ -162438,9 +162682,7 @@
         {
           "name": "Claude Tag",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -163083,7 +163325,7 @@
           "name": "Claude Tag",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Intel"
           ]
         }
       ],
@@ -163225,9 +163467,7 @@
         {
           "name": "Claude Tag",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -163429,9 +163669,7 @@
         {
           "name": "Claude Tag",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -163509,9 +163747,7 @@
         {
           "name": "Claude Code v2.1.187",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -164211,7 +164447,7 @@
           "name": "Foundry",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Microsoft"
           ]
         }
       ],
@@ -164291,9 +164527,7 @@
         {
           "name": "Claude Code v2.1.186",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -166108,7 +166342,7 @@
           "name": "Fable 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Amazon"
           ]
         }
       ],
@@ -166210,9 +166444,7 @@
         {
           "name": "GLM-5.2",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [
@@ -166356,7 +166588,7 @@
           "name": "Claude Fable 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Thinking Machines Lab"
           ]
         }
       ],
@@ -166433,7 +166665,7 @@
           "name": "Fable",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -167199,7 +167431,7 @@
           "name": "Claude Code v2.1.181",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Apple"
           ]
         }
       ],
@@ -167315,7 +167547,9 @@
         {
           "name": "Marketplace",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "classifications": [
@@ -167493,9 +167727,7 @@
         {
           "name": "Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [
@@ -167774,16 +168006,12 @@
         {
           "name": "Claude for Small Business",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Wednesday the launch of Claude",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [
@@ -168420,14 +168648,14 @@
           "name": "Claude Fable 5",
           "type": "模型",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         },
         {
           "name": "Fusion API",
           "type": "模型",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -168677,14 +168905,14 @@
           "name": "Mythos AI",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Intel"
           ]
         },
         {
           "name": "Mythos",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Intel"
           ]
         }
       ],
@@ -168839,7 +169067,7 @@
           "name": "Intelligent Terminal",
           "type": "产品/服务",
           "ownerNames": [
-            "Intel"
+            "Microsoft"
           ]
         }
       ],
@@ -169209,7 +169437,9 @@
         {
           "name": "Artemis",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "classifications": [
@@ -169994,16 +170224,12 @@
         {
           "name": "Claude Code v2.1.176",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "footerLinksRegexes setting",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -170317,16 +170543,12 @@
         {
           "name": "Claude Code v2.1.174",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "wheelScrollAccelerationEnabled setting",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [
@@ -170445,7 +170667,7 @@
           "name": "Chrome",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Microsoft"
           ]
         }
       ],
@@ -171562,9 +171784,7 @@
         {
           "name": "ClaudeFable 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -171738,23 +171958,17 @@
         {
           "name": "Claude Fable 5",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude Mythos 5",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Mythos",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [
@@ -171805,9 +172019,7 @@
         {
           "name": "Claude Fable 5",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -172100,9 +172312,7 @@
         {
           "name": "Claude Code v2.1.170",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -172235,23 +172445,17 @@
         {
           "name": "Claude Fable 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Mythos 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Fable 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [
@@ -172313,9 +172517,7 @@
         {
           "name": "Claude Managed",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -172355,23 +172557,17 @@
         {
           "name": "Claude Fable 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Mythos 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude Fable 5 and Mythos 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [
@@ -172433,9 +172629,7 @@
         {
           "name": "Claude Fable 5",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [
@@ -172491,14 +172685,14 @@
           "name": "Claude Fable 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Xiaomi"
           ]
         },
         {
           "name": "Mythos 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Xiaomi"
           ]
         }
       ],
@@ -172705,9 +172899,7 @@
         {
           "name": "Fable 5",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [
@@ -173687,7 +173879,9 @@
         {
           "name": "MAI-Transcribe-1.5",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "classifications": [],
@@ -175083,12 +175277,16 @@
         {
           "name": "Agent Governance Toolkit",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         },
         {
           "name": "Open Source",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "classifications": [
@@ -175284,9 +175482,7 @@
         {
           "name": "Introducing Claude Opus 4.8",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -175866,7 +176062,7 @@
           "name": "MAI-Thinking-1",
           "type": "模型",
           "ownerNames": [
-            "Intel"
+            "Microsoft"
           ]
         }
       ],
@@ -175915,9 +176111,7 @@
         {
           "name": "Claude Code v2.1.161",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [
@@ -176311,7 +176505,7 @@
           "name": "Claude Code v2.1.160",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Shell"
           ]
         }
       ],
@@ -177218,7 +177412,9 @@
         {
           "name": "Webwright",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "classifications": [],
@@ -178259,16 +178455,12 @@
         {
           "name": "Claude Managed",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude Blog",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -178907,9 +179099,7 @@
         {
           "name": "MCP AI",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [
@@ -179276,6 +179466,157 @@
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-00834dd71037c7cc"
     },
+    "EV-2a5803953f698f4c": {
+      "id": "EV-2a5803953f698f4c",
+      "dataDate": "2026-09-28",
+      "occurrenceDate": "2026-09-28",
+      "eventType": "security_incident",
+      "eventTypeLabel": "安全事件",
+      "publicationStatus": "verified",
+      "category": "other",
+      "title": "黑客暗网兜售 Anthropic、谷歌、OpenAI 等 AI 模型访问权限，最低价仅为正版 3%",
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-bbdefa2950f49882",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "黑客",
+        "Anthropic",
+        "Google",
+        "OpenAI"
+      ],
+      "productNames": [],
+      "classifications": [],
+      "claimIds": [
+        "CL-639a387385ad0b03",
+        "CL-a1c88165fec43f36",
+        "CL-12ea1dc2415ae879"
+      ],
+      "sourceIds": [
+        "SA-80a2f73cbdbaa344"
+      ],
+      "sourceUrl": "https://ithome.com/1/007/619.htm",
+      "publisher": "IT之家（RSS）",
+      "metricDisclosed": true,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-2a5803953f698f4c"
+    },
+    "EV-0eea367f43810ec7": {
+      "id": "EV-0eea367f43810ec7",
+      "dataDate": "2026-09-28",
+      "occurrenceDate": "2026-09-27",
+      "eventType": "organization_restructuring",
+      "eventTypeLabel": "组织重组",
+      "publicationStatus": "verified",
+      "category": "other",
+      "title": "Anthropic 部分资深员工考虑在偏远地区购置土地，以防\"AI 失控\"",
+      "entityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Anthropic 部分早期",
+        "Anthropic"
+      ],
+      "productNames": [],
+      "classifications": [],
+      "claimIds": [
+        "CL-d5a93312fb0a14ac"
+      ],
+      "sourceIds": [
+        "SA-1a510b0e59872824"
+      ],
+      "sourceUrl": "https://ithome.com/1/007/603.htm",
+      "publisher": "IT之家（RSS）",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-0eea367f43810ec7"
+    },
+    "EV-9ebb69d4965d1f23": {
+      "id": "EV-9ebb69d4965d1f23",
+      "dataDate": "2026-09-28",
+      "occurrenceDate": "2026-09-27",
+      "eventType": "organization_people",
+      "eventTypeLabel": "组织与人员",
+      "publicationStatus": "partial",
+      "category": "other",
+      "title": "Anthropic CEO Dario Amodei 将与特朗普在白宫共进晚餐",
+      "entityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Anthropic"
+      ],
+      "productNames": [],
+      "classifications": [],
+      "claimIds": [
+        "CL-b71ad8807afcf6e9"
+      ],
+      "sourceIds": [
+        "SA-098447a8372a1fb1"
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/09/27/anthropics-ceo-is-about-to-have-dinner-with-president-trump",
+      "publisher": "TechCrunch：AI（RSS）",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-9ebb69d4965d1f23"
+    },
+    "EV-f5e78fddf0371fca": {
+      "id": "EV-f5e78fddf0371fca",
+      "dataDate": "2026-09-28",
+      "occurrenceDate": "2026-09-27",
+      "eventType": "research_result",
+      "eventTypeLabel": "研究结果",
+      "publicationStatus": "verified",
+      "category": "other",
+      "title": "arXiv 论文发现 chat template 像开关一样切换 LLM 的自我指涉语气",
+      "entityIds": [],
+      "entityNames": [
+        "chat template",
+        "instruct models"
+      ],
+      "productNames": [],
+      "classifications": [],
+      "claimIds": [
+        "CL-12c852676df4d4d0",
+        "CL-f09923102121663a",
+        "CL-4093cc97457a6d4d"
+      ],
+      "sourceIds": [
+        "SA-0cbfff57c97a5a11"
+      ],
+      "sourceUrl": "https://arxiv.org/abs/2609.25021",
+      "publisher": "Hacker News：AI 热帖",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-f5e78fddf0371fca"
+    },
+    "EV-4a963531f57c551a": {
+      "id": "EV-4a963531f57c551a",
+      "dataDate": "2026-09-28",
+      "occurrenceDate": "2026-09-26",
+      "eventType": "policy_regulation",
+      "eventTypeLabel": "政策监管",
+      "publicationStatus": "verified",
+      "category": "other",
+      "title": "法院裁定五角大楼可因Anthropic拒绝启用Claude功能而将其列入黑名单",
+      "entityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Anthropic"
+      ],
+      "productNames": [],
+      "classifications": [],
+      "claimIds": [
+        "CL-ce95237824d34afc",
+        "CL-2d1f16c2ad85655c",
+        "CL-0f2925659eda1b7a"
+      ],
+      "sourceIds": [
+        "SA-561148ce2fd95373"
+      ],
+      "sourceUrl": "https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features",
+      "publisher": "Ars Technica AI",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-4a963531f57c551a"
+    },
     "EV-5961ed93ca6dae66": {
       "id": "EV-5961ed93ca6dae66",
       "dataDate": "2026-09-26",
@@ -179482,9 +179823,7 @@
         {
           "name": "CRISPR-like",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [],
@@ -179768,6 +180107,34 @@
       "publisher": "404 Media（RSS）",
       "metricDisclosed": false,
       "detailUrl": "data-center.html?view=events&detail=event&id=EV-aed61f7e2ca28c38"
+    },
+    "EV-9e5e72473b5025b4": {
+      "id": "EV-9e5e72473b5025b4",
+      "dataDate": "2026-09-28",
+      "occurrenceDate": "2026-09-21",
+      "eventType": "security_incident",
+      "eventTypeLabel": "安全事件",
+      "publicationStatus": "verified",
+      "category": "other",
+      "title": "Authors Guild v. OpenAI 新文件披露高管早已知道大规模盗版书籍训练违法",
+      "entityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI"
+      ],
+      "productNames": [],
+      "classifications": [],
+      "claimIds": [
+        "CL-44e635e1d55776d0"
+      ],
+      "sourceIds": [
+        "SA-7500ce65a195e750"
+      ],
+      "sourceUrl": "https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal",
+      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "metricDisclosed": false,
+      "detailUrl": "data-center.html?view=events&detail=event&id=EV-9e5e72473b5025b4"
     },
     "EV-d3500d1978e62d1f": {
       "id": "EV-d3500d1978e62d1f",
@@ -183952,7 +184319,7 @@
           "name": "Cameron Berg",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Google DeepMind"
           ]
         }
       ],
@@ -188159,9 +188526,7 @@
         {
           "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "classifications": [
@@ -204292,8 +204657,9 @@
   },
   "periods": {
     "day": {
-      "defaultKey": "2026-09-26",
+      "defaultKey": "2026-09-28",
       "options": [
+        "2026-09-28",
         "2026-09-26",
         "2026-09-24",
         "2026-09-23",
@@ -204421,21 +204787,49 @@
         "2026-05-18"
       ],
       "records": {
-        "2026-09-26": {
-          "key": "2026-09-26",
+        "2026-09-28": {
+          "key": "2026-09-28",
           "counts": {
-            "financing": 14,
-            "deployment": 2,
+            "financing": 2,
+            "deployment": 0,
             "partnership": 2,
-            "product": 10,
-            "hardware": 1
+            "product": 11,
+            "hardware": 0
           },
           "eventIds": [
             "EV-03992c9b7f8fef10",
+            "EV-06c2f2803729eae2",
+            "EV-0d5a32aca724d30e",
+            "EV-1b912ec16c50fc0f",
+            "EV-2522985610878859",
+            "EV-74fa59bc868027b1",
+            "EV-7d186033b26431e7",
+            "EV-8061c8eb754e0542",
+            "EV-81bbaaec2965864a",
+            "EV-857d7186b873e0ed",
+            "EV-9d69b6d61dab2b9c",
+            "EV-bd05f8cee4043426",
+            "EV-ca32d5e2f28622ef",
+            "EV-defd9eb250a2b925",
+            "EV-f66ca8648085ba70"
+          ],
+          "otherCount": 6,
+          "totalAccepted": 21,
+          "coverage": "数据中心于 2026-09-28 接受的事件；事件发生日期可能不同。"
+        },
+        "2026-09-26": {
+          "key": "2026-09-26",
+          "counts": {
+            "financing": 13,
+            "deployment": 2,
+            "partnership": 1,
+            "product": 7,
+            "hardware": 1
+          },
+          "eventIds": [
             "EV-06d2ebc330c7fc37",
             "EV-09b8a8e4ed03dd7f",
             "EV-0e424af71cfe12f8",
-            "EV-1b912ec16c50fc0f",
             "EV-293d6feac5b8efab",
             "EV-419ddb2d5cfc799a",
             "EV-41e71ae12a730f23",
@@ -204444,9 +204838,6 @@
             "EV-545bef6ff60cf3b2",
             "EV-60366423eaa67216",
             "EV-78758ccb5d45f4f9",
-            "EV-7d186033b26431e7",
-            "EV-8061c8eb754e0542",
-            "EV-81bbaaec2965864a",
             "EV-86838cc774b85116",
             "EV-95ba9cc4f4d52ea4",
             "EV-a171d2ec6b5982e9",
@@ -204462,7 +204853,7 @@
             "EV-ffe9a66690dc8b19"
           ],
           "otherCount": 2,
-          "totalAccepted": 31,
+          "totalAccepted": 26,
           "coverage": "数据中心于 2026-09-26 接受的事件；事件发生日期可能不同。"
         },
         "2026-09-24": {
@@ -204471,13 +204862,12 @@
             "financing": 13,
             "deployment": 5,
             "partnership": 1,
-            "product": 23,
+            "product": 22,
             "hardware": 0
           },
           "eventIds": [
             "EV-09898d5522f0db28",
             "EV-0d0b83c319d971b0",
-            "EV-0d5a32aca724d30e",
             "EV-0d841753e8afa8f4",
             "EV-0e8877060ca89517",
             "EV-0f2e50fbc9af587a",
@@ -204519,7 +204909,7 @@
             "EV-faa25b0b9ffbaa30"
           ],
           "otherCount": 6,
-          "totalAccepted": 48,
+          "totalAccepted": 47,
           "coverage": "数据中心于 2026-09-24 接受的事件；事件发生日期可能不同。"
         },
         "2026-09-23": {
@@ -209304,8 +209694,9 @@
       }
     },
     "week": {
-      "defaultKey": "2026-09-21",
+      "defaultKey": "2026-09-28",
       "options": [
+        "2026-09-28",
         "2026-09-21",
         "2026-09-14",
         "2026-09-07",
@@ -209327,6 +209718,38 @@
         "2026-05-18"
       ],
       "records": {
+        "2026-09-28": {
+          "key": "2026-09-28",
+          "start": "2026-09-28",
+          "end": "2026-10-04",
+          "observedDataDays": [
+            "2026-09-28"
+          ],
+          "counts": {
+            "financing": 2,
+            "deployment": 0,
+            "partnership": 2,
+            "product": 11,
+            "hardware": 0
+          },
+          "totalAccepted": 21,
+          "trackedCount": 15,
+          "otherCount": 6,
+          "activeEntities": [
+            {
+              "entityId": "EN-3a7bd3e2360a3d29",
+              "eventIds": [
+                "EV-06c2f2803729eae2",
+                "EV-defd9eb250a2b925"
+              ],
+              "categoryCount": 2
+            }
+          ],
+          "deploymentEventIds": [],
+          "productsEnteringUse": [],
+          "newClassifications": [],
+          "coverage": "按数据中心接受日期汇总；仅观测到的批次日期计入覆盖天数。"
+        },
         "2026-09-21": {
           "key": "2026-09-21",
           "start": "2026-09-21",
@@ -209339,14 +209762,14 @@
             "2026-09-26"
           ],
           "counts": {
-            "financing": 57,
+            "financing": 56,
             "deployment": 12,
-            "partnership": 5,
-            "product": 72,
+            "partnership": 4,
+            "product": 68,
             "hardware": 3
           },
-          "totalAccepted": 174,
-          "trackedCount": 149,
+          "totalAccepted": 168,
+          "trackedCount": 143,
           "otherCount": 25,
           "activeEntities": [
             {
@@ -209394,7 +209817,6 @@
               "entityId": "EN-bbdefa2950f49882",
               "eventIds": [
                 "EV-0e424af71cfe12f8",
-                "EV-1b912ec16c50fc0f",
                 "EV-09898d5522f0db28",
                 "EV-29c45021243dba2a",
                 "EV-8058ddb115bdef47",
@@ -209411,7 +209833,6 @@
             {
               "entityId": "EN-8d4321d936320802",
               "eventIds": [
-                "EV-8061c8eb754e0542",
                 "EV-4087ac533a9a3b3d",
                 "EV-47f2eb9a1d92fc7e",
                 "EV-9ced0afc6d0d1f63",
@@ -247748,7 +248169,7 @@
         "2026-09": {
           "key": "2026-09",
           "start": "2026-09-01",
-          "end": "2026-09-26",
+          "end": "2026-09-28",
           "observedDataDays": [
             "2026-09-01",
             "2026-09-02",
@@ -247774,19 +248195,20 @@
             "2026-09-22",
             "2026-09-23",
             "2026-09-24",
-            "2026-09-26"
+            "2026-09-26",
+            "2026-09-28"
           ],
           "counts": {
-            "financing": 471,
+            "financing": 472,
             "deployment": 45,
-            "partnership": 47,
-            "product": 312,
+            "partnership": 48,
+            "product": 319,
             "hardware": 29
           },
           "previousMonth": "2026-08",
           "comparisonAvailable": true,
           "comparisonWindow": {
-            "currentEndDay": 26,
+            "currentEndDay": 28,
             "previousObservedDataDays": [
               "2026-08-01",
               "2026-08-02",
@@ -247813,26 +248235,28 @@
               "2026-08-23",
               "2026-08-24",
               "2026-08-25",
-              "2026-08-26"
+              "2026-08-26",
+              "2026-08-27",
+              "2026-08-28"
             ]
           },
           "previousCounts": {
-            "financing": 116,
-            "deployment": 31,
-            "partnership": 55,
-            "product": 290,
-            "hardware": 29
+            "financing": 125,
+            "deployment": 33,
+            "partnership": 57,
+            "product": 320,
+            "hardware": 36
           },
           "deltas": {
-            "financing": 355,
-            "deployment": 14,
-            "partnership": -8,
-            "product": 22,
-            "hardware": 0
+            "financing": 347,
+            "deployment": 12,
+            "partnership": -9,
+            "product": -1,
+            "hardware": -7
           },
-          "totalAccepted": 1032,
-          "trackedCount": 904,
-          "otherCount": 128,
+          "totalAccepted": 1047,
+          "trackedCount": 913,
+          "otherCount": 134,
           "newCompanies": [
             {
               "entityId": "EN-8abe43a7f9a7bd94",
@@ -248902,6 +249326,8 @@
           ],
           "financing": {
             "eventIds": [
+              "EV-81bbaaec2965864a",
+              "EV-bd05f8cee4043426",
               "EV-06d2ebc330c7fc37",
               "EV-09b8a8e4ed03dd7f",
               "EV-419ddb2d5cfc799a",
@@ -248910,7 +249336,6 @@
               "EV-52bafa1f7edd3231",
               "EV-545bef6ff60cf3b2",
               "EV-60366423eaa67216",
-              "EV-81bbaaec2965864a",
               "EV-86838cc774b85116",
               "EV-95ba9cc4f4d52ea4",
               "EV-d4b0dd4de320089a",
@@ -249594,12 +250019,12 @@
                 "id": "enterprise_applications",
                 "name": "企业级应用",
                 "eventIds": [
+                  "EV-81bbaaec2965864a",
                   "EV-06d2ebc330c7fc37",
                   "EV-419ddb2d5cfc799a",
                   "EV-52bafa1f7edd3231",
                   "EV-545bef6ff60cf3b2",
                   "EV-60366423eaa67216",
-                  "EV-81bbaaec2965864a",
                   "EV-d4b0dd4de320089a",
                   "EV-e2a94eb223c11a66",
                   "EV-4a045d3f9026286c",
@@ -249723,12 +250148,12 @@
                 "id": "productivity_enterprise_workflows",
                 "name": "生产力与企业工作流",
                 "eventIds": [
+                  "EV-81bbaaec2965864a",
                   "EV-06d2ebc330c7fc37",
                   "EV-419ddb2d5cfc799a",
                   "EV-52bafa1f7edd3231",
                   "EV-545bef6ff60cf3b2",
                   "EV-60366423eaa67216",
-                  "EV-81bbaaec2965864a",
                   "EV-d4b0dd4de320089a",
                   "EV-e2a94eb223c11a66",
                   "EV-4a045d3f9026286c",
@@ -250067,6 +250492,8 @@
                 "id": "model",
                 "name": "模型",
                 "eventIds": [
+                  "EV-857d7186b873e0ed",
+                  "EV-ca32d5e2f28622ef",
                   "EV-293d6feac5b8efab",
                   "EV-419ddb2d5cfc799a",
                   "EV-86838cc774b85116",
@@ -250175,7 +250602,7 @@
                   "EV-8ea4e403a1024ad2",
                   "EV-e4552a80d406645e"
                 ],
-                "count": 107
+                "count": 109
               },
               {
                 "id": "robotic_system",
@@ -250509,9 +250936,10 @@
                 "id": "agentic_execution",
                 "name": "智能体",
                 "eventIds": [
+                  "EV-06c2f2803729eae2",
+                  "EV-0d5a32aca724d30e",
                   "EV-b8eb460540c33d68",
                   "EV-d4b0dd4de320089a",
-                  "EV-0d5a32aca724d30e",
                   "EV-1873f3c6fa4bdedd",
                   "EV-3bf02572d01ed324",
                   "EV-4a045d3f9026286c",
@@ -250594,12 +251022,13 @@
                   "EV-8ea4e403a1024ad2",
                   "EV-f98b84fe16d57b72"
                 ],
-                "count": 84
+                "count": 85
               },
               {
                 "id": "embodied_ai",
                 "name": "具身智能",
                 "eventIds": [
+                  "EV-74fa59bc868027b1",
                   "EV-41e71ae12a730f23",
                   "EV-1e3f8cd7c5b09d97",
                   "EV-2de77a62435cc041",
@@ -250667,7 +251096,7 @@
                   "EV-d32e50951ff7f9a1",
                   "EV-85ba013c379a9d3d"
                 ],
-                "count": 66
+                "count": 67
               },
               {
                 "id": "multimodal",
@@ -251020,12 +251449,12 @@
                 "id": "productivity_enterprise_workflows",
                 "name": "生产力与企业工作流",
                 "eventIds": [
+                  "EV-81bbaaec2965864a",
                   "EV-06d2ebc330c7fc37",
                   "EV-419ddb2d5cfc799a",
                   "EV-52bafa1f7edd3231",
                   "EV-545bef6ff60cf3b2",
                   "EV-60366423eaa67216",
-                  "EV-81bbaaec2965864a",
                   "EV-d4b0dd4de320089a",
                   "EV-4a045d3f9026286c",
                   "EV-33df10f232e26f29",
@@ -251233,9 +251662,9 @@
                 "id": "knowledge_search",
                 "name": "知识与搜索",
                 "eventIds": [
+                  "EV-81bbaaec2965864a",
                   "EV-419ddb2d5cfc799a",
                   "EV-52bafa1f7edd3231",
-                  "EV-81bbaaec2965864a",
                   "EV-d4b0dd4de320089a",
                   "EV-04bcb24d608a931c",
                   "EV-f077c91cb2fd9179",
@@ -251633,6 +252062,7 @@
                 "id": "retail_ecommerce",
                 "name": "零售与电商",
                 "eventIds": [
+                  "EV-06c2f2803729eae2",
                   "EV-06d2ebc330c7fc37",
                   "EV-419ddb2d5cfc799a",
                   "EV-51d8aec94225e9c6",
@@ -251666,7 +252096,7 @@
                   "EV-d8707197c20b118e",
                   "EV-53957f94b3924ad3"
                 ],
-                "count": 32
+                "count": 33
               },
               {
                 "id": "financial_services",
@@ -251940,9 +252370,9 @@
                 "id": "business_user",
                 "name": "企业用户",
                 "eventIds": [
+                  "EV-81bbaaec2965864a",
                   "EV-419ddb2d5cfc799a",
                   "EV-52bafa1f7edd3231",
-                  "EV-81bbaaec2965864a",
                   "EV-b8eb460540c33d68",
                   "EV-d4b0dd4de320089a",
                   "EV-0d0b83c319d971b0",

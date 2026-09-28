@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-28T00:56:21.876Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-28T03:59:01.250Z",
+    "latestDataDate": "2026-09-28",
+    "currentDate": "2026-09-28",
+    "eventCount": 3602,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -143,6 +143,7 @@
       "EV-acb2087779a8ea3c",
       "EV-6415a58637893b34",
       "EV-4faa2bcf2e42e60c",
+      "EV-74fa59bc868027b1",
       "EV-5a90068e9e762f94",
       "EV-d32e50951ff7f9a1",
       "EV-85ba013c379a9d3d",
@@ -245,6 +246,7 @@
       "EN-0ad1a6d446cfd5e2",
       "EN-85f0c155e340fb63",
       "EN-240389f4b730bad4",
+      "EN-f8ab0a6e49ab20ba",
       "EN-69abd664ab1011d3",
       "EN-1a6d6ea981e8688c",
       "EN-39ba5f9dcab4e98a",
@@ -287,7 +289,7 @@
       "HW-1450585d9cd5879f"
     ],
     "firstSeen": "2026-01-12",
-    "lastSeen": "2026-09-26"
+    "lastSeen": "2026-09-28"
   },
   "events": [
     {
@@ -20822,6 +20824,108 @@
       "publisher": "NVIDIA AI Blog"
     },
     {
+      "id": "EV-74fa59bc868027b1",
+      "dataDate": "2026-09-28",
+      "date": "2026-09-26",
+      "updatedDate": "2026-09-28",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "索辰科技加码世界模型，与战略投资企业美梦空间联合发布具身模型与物理测评标准",
+      "originalTitle": "",
+      "subject": "索辰科技加码世界模型，与战略投资企业美梦空间联合",
+      "action": "发布具身模型",
+      "object": "与物理测评标准",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-f8ab0a6e49ab20ba"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-f8ab0a6e49ab20ba"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-f8ab0a6e49ab20ba"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-f8ab0a6e49ab20ba"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-f8ab0a6e49ab20ba"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-f8ab0a6e49ab20ba"
+      ],
+      "entityNames": [
+        "战略投资企业美梦空间联合"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://qbitai.com/2026/09/498478.html",
+      "publisher": "量子位"
+    },
+    {
       "id": "EV-5a90068e9e762f94",
       "dataDate": "2026-09-15",
       "date": "2026-09-14",
@@ -21351,9 +21455,7 @@
         {
           "name": "MHS",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/995/514.htm",
@@ -26850,6 +26952,7 @@
         "EV-a4f052325d0ef230",
         "EV-cb3cb11ff13f6069",
         "EV-8115dd18f2812a29",
+        "EV-2a5803953f698f4c",
         "EV-5b593a87f47334f9",
         "EV-36defc1d19f0ce5d",
         "EV-808c496734dae101",
@@ -26949,7 +27052,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-28"
     },
     {
       "id": "EN-998255d915da8953",
@@ -27627,6 +27730,7 @@
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
         "EV-8061c8eb754e0542",
+        "EV-857d7186b873e0ed",
         "EV-9ced0afc6d0d1f63",
         "EV-47f2eb9a1d92fc7e",
         "EV-01eaadc83f55095a",
@@ -27868,7 +27972,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-28"
     },
     {
       "id": "EN-0ad1a6d446cfd5e2",
@@ -27985,6 +28089,27 @@
       ],
       "firstSeen": "2026-05-23",
       "lastSeen": "2026-09-12"
+    },
+    {
+      "id": "EN-f8ab0a6e49ab20ba",
+      "name": "战略投资企业美梦空间联合",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-74fa59bc868027b1"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-embodied_ai"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-26",
+      "lastSeen": "2026-09-28"
     },
     {
       "id": "EN-69abd664ab1011d3",
@@ -28409,6 +28534,10 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-2a5803953f698f4c",
+        "EV-0eea367f43810ec7",
+        "EV-9ebb69d4965d1f23",
+        "EV-4a963531f57c551a",
         "EV-0184e5d203d05229",
         "EV-813ced5e5514d81b",
         "EV-bc025a501363e4f3",
@@ -28594,7 +28723,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-28"
     },
     {
       "id": "EN-e3ce9cc5efa9354c",
