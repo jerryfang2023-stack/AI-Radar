@@ -137,21 +137,214 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "CPE(中信产业基金) 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "本库融资记录中的投方简称为“CPE（中信产业基金）”，关联官网使用“CPE源峰”品牌名。官网将其介绍为具有国际视野的资产管理机构，布局AI全产业、先进制造、消费、医疗和基础设施等主题。CPE源峰自述核心团队十余年投资超过300家企业、在管基金获得200多家机构投资者支持，累计资产管理规模超过1500亿元；页面未提供这些数据的基准日。",
+      "facts": [
+        {
+          "field": "brand_name",
+          "label": "官网品牌名称",
+          "value": "CPE源峰（官网英文品牌为CPE）",
+          "source_id": "cpe_firm"
+        },
+        {
+          "field": "business_type",
+          "label": "机构类型",
+          "value": "以私募股权投资为核心的资产管理机构",
+          "source_id": "cpe_approach"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资理念",
+          "value": "长期与价值投资；以行业和宏观研究为基础，为重点行业龙头企业提供投资方案。",
+          "source_id": "cpe_approach"
+        },
+        {
+          "field": "investment_focus",
+          "label": "重点投资主题",
+          "value": [
+            "AI全产业",
+            "先进制造",
+            "消费",
+            "医疗",
+            "基础设施"
+          ],
+          "source_id": "cpe_firm"
+        },
+        {
+          "field": "investor_base",
+          "label": "机构投资者基础",
+          "value": "官网称在管基金获得海内外200多家机构投资者支持；页面未注明统计时点。",
+          "source_id": "cpe_firm"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "资产管理规模",
+          "value": "官网称累计资产管理规模超过1500亿元；页面未注明基准日。",
+          "source_id": "cpe_firm"
+        },
+        {
+          "field": "office_locations",
+          "label": "官网列示办公地点",
+          "value": [
+            "北京",
+            "上海",
+            "香港",
+            "纽约",
+            "伦敦",
+            "东京",
+            "阿布扎比"
+          ],
+          "source_id": "cpe_firm"
+        },
+        {
+          "field": "team_capability",
+          "label": "投后赋能",
+          "value": "官网称投后管理覆盖公司战略与治理、人力资源、供应链、品牌营销、企业数字化等八个领域。",
+          "source_id": "cpe_team"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2021-08",
+          "description": "官网披露CPE源峰于2021年8月签署联合国支持的责任投资原则（UN PRI）。",
+          "source_id": "cpe_unpri"
+        },
+        {
+          "date": "2026",
+          "description": "官网荣誉页列载2026年中国最佳私募股权投资机构TOP 5。",
+          "source_id": "cpe_award_2026"
+        },
+        {
+          "date": "2026",
+          "description": "官网荣誉页列载2026年PEI300全球私募股权投资机构亚洲第5名。",
+          "source_id": "cpe_award_pei_2026"
+        }
+      ],
       "track_record": [
+        {
+          "description": "CPE源峰官网称核心团队在过去十余年投资超过300家企业；该数值为机构自述，页面未标明截止日期，不能据此推断投资回报或退出率。",
+          "source_id": "cpe_firm"
+        },
+        {
+          "description": "CPE源峰官网列载其获2026年“中国最佳私募股权投资机构TOP 5”；荣誉榜由机构官网发布，未将排名等同基金回报。",
+          "source_id": "cpe_award_2026"
+        },
+        {
+          "description": "CPE源峰官网荣誉页列载其2026年位列PEI300全球私募股权投资机构亚洲第5名；此为榜单排名，不是基金收益率。",
+          "source_id": "cpe_award_pei_2026"
+        },
+        {
+          "description": "官网荣誉页列载2025年“中国最佳回报私募股权投资机构TOP 10”；这是榜单荣誉，不是对具体基金收益率的披露。",
+          "source_id": "cpe_award_return_2025"
+        },
         {
           "description": "融资来源记录：Moonshot AI · 轮次未披露 · 2026-05-07 · 本轮参投 · 约20亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c268e82669700804"
         }
       ],
-      "contacts": [],
+      "experience_summary": "官网强调其跨境资产管理经验、行业研究和专业投后管理；投后团队为被投企业提供治理、人力、供应链、营销、数字化等运营支持。当前可检索到的官方团队页以团队职能和服务范围为主，未以可读文本列出具名投资决策人员，故本档案不推测管理层姓名。",
+      "contacts": [
+        {
+          "kind": "email",
+          "label": "官网公开一般联系邮箱（未标注项目递交用途）",
+          "value": "info@citicpe.com.hk",
+          "url": "https://www.cpe-fund.com/department.html",
+          "source_id": "cpe_email"
+        },
+        {
+          "kind": "phone",
+          "label": "北京办公室公开总机",
+          "value": "+86 10 8507 9000",
+          "url": "https://www.cpe-fund.com/contactus.html",
+          "source_id": "cpe_contact"
+        },
+        {
+          "kind": "address",
+          "label": "北京办公室",
+          "value": "中国北京市东城区金宝街89号金宝大厦15层，邮编100005",
+          "url": "https://www.cpe-fund.com/contactus.html",
+          "source_id": "cpe_contact"
+        },
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "CPE源峰",
+          "url": "https://www.cpe-fund.com/",
+          "source_id": "cpe_firm"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "cpe_firm",
+          "source_url": "https://www.cpe-fund.com/abt_firm.html",
+          "source_title": "公司 - CPE源峰官网",
+          "source_content_hash": "33caf0ec2bb766fe6a5db5c0f50bedfdc1fc0db1b50fbe24d69e5708da96ba40",
+          "quote": "CPE源峰是一家具有国际视野和丰富中国经验的资产管理机构，旨在运用长远眼光和价值投资策略，系统性布局AI全产业、先进制造、消费、医疗、基础设施等领域的多元化投资主题与赛道，专注于为重点行业的龙头企业提供创新性的投资方案。目前，CPE源峰在管基金已获得海内外200多家机构投资者的信任与支持。公司核心团队在过去十余年投资超过300家企业，积累了深刻的行业洞察和广泛的资源网络。通过完善的投研体系和专业的投后管理能力，CPE源峰致力与被投企业建立长期合作伙伴关系，助力被投企业的可持续发展，在为投资人获取可观回报的同时，推动被投企业所处行业的整体发展，创造积极的社会影响。目前，CPE源峰在北京、上海、香港、纽约、伦敦、东京及阿布扎比等地设立办公室，累计资产管理规模超过1500亿元。",
+          "quote_hash": "9474fa80362afdcb1877a8911d67abe7deada5c19fbc131d5a56a5b1b839cb44"
+        },
+        {
+          "source_id": "cpe_approach",
+          "source_url": "https://www.cpe-fund.com/approachs.html",
+          "source_title": "投资理念 - CPE源峰官网",
+          "source_content_hash": "109c83486d6ea488004dd84f7aadc362e52d124ae8679746a1bc554bc247885b",
+          "quote": "十余年来，CPE源峰一直是中国领先的专注于私募股权投资的资产管理公司。随着中国国民经济的发展及资本、消费和人才的跨国流动，我们也在持续地进行国内和国际扩张。我们以对所投行业及宏观环境的深入研究和专业洞察作为投资的基础。",
+          "quote_hash": "b55fb8c33fd16d16b0b584d7f7ce9bb1ab940a4a563db8475950c3f2c5baf9ab"
+        },
+        {
+          "source_id": "cpe_team",
+          "source_url": "https://www.cpe-fund.com/department.html",
+          "source_title": "我们的团队 - CPE源峰官网",
+          "source_content_hash": "5a9ad8cf0d999a54beb9fc5a5dfdfc479039f31669995888bba67ece298f46ca",
+          "quote": "投资管理团队坚持“与被投企业携手共赢”的理念，为被投企业在公司战略及治理、人力资源、供应链管理、品牌营销和企业数字化等八大领域提供优质的运营管理提升的增值服务，并协调促进被投企业间发挥协同效应，助力被投企业的持续价值增长。",
+          "quote_hash": "6622a6c6af6882dc5b0615ded63416c977309dd548bd4a7c1c29c05e82811b06"
+        },
+        {
+          "source_id": "cpe_contact",
+          "source_url": "https://www.cpe-fund.com/contactus.html",
+          "source_title": "地点 - CPE源峰官网",
+          "source_content_hash": "5de8d79a95bdf755e8f088b728f4e5587bee943b419a0da80927facab0d8a37b",
+          "quote": "北京 中国北京东城区金宝街89号 金宝大厦15层 邮政编码100005 电话 +86 10 8507 9000",
+          "quote_hash": "6f014710075a581c608a60ab12815752e13cb4a13da599bf4e367fc472ecbb72"
+        },
+        {
+          "source_id": "cpe_award_2026",
+          "source_url": "https://www.cpe-fund.com/honornawards.html",
+          "source_title": "荣誉 - CPE源峰官网",
+          "source_content_hash": "b9167ea5d007c76c7a9fcbf245c35472e1a8d25795db978f12f432caa845f78f",
+          "quote": "2026 中国最佳私募股权投资机构TOP 5",
+          "quote_hash": "2d5c1124769b652d6bd4a5acd728e6dfd6678b43924243d092e004284511507e"
+        },
+        {
+          "source_id": "cpe_award_pei_2026",
+          "source_url": "https://www.cpe-fund.com/honornawards.html",
+          "source_title": "荣誉 - CPE源峰官网",
+          "source_content_hash": "b9167ea5d007c76c7a9fcbf245c35472e1a8d25795db978f12f432caa845f78f",
+          "quote": "2026 PEI300全球私募股权投资机构亚洲第5名",
+          "quote_hash": "ca6cc0916f673aeb4aadc52cc0af85fb7b142f5383f61783d2d20917bcae035b"
+        },
+        {
+          "source_id": "cpe_award_return_2025",
+          "source_url": "https://www.cpe-fund.com/honornawards.html",
+          "source_title": "荣誉 - CPE源峰官网",
+          "source_content_hash": "b9167ea5d007c76c7a9fcbf245c35472e1a8d25795db978f12f432caa845f78f",
+          "quote": "2025 中国最佳回报私募股权投资机构TOP 10",
+          "quote_hash": "a64026bb2996517bb97419157afdb4a9862ce13337e0fda14fda49e26ea1f0d8"
+        },
+        {
+          "source_id": "cpe_unpri",
+          "source_url": "https://www.cpe-fund.com/investor.html",
+          "source_title": "我们是负责任的投资者 - CPE源峰官网",
+          "source_content_hash": "40b42a69203d04f2468610287c41768f2d943eabe8dfc2159c09c15f4fb7fc81",
+          "quote": "2021年8月，CPE源峰正式签署联合国支持的“责任投资原则”（The UN-supported Principles for Responsible Investment，简称“UNPRI”），成为该组织中的资产管理机构成员。",
+          "quote_hash": "a7a31c7fcb3ac1aa51223d097d5776df5f94ced155902a67f4550e3e5d3ff1f4"
+        },
+        {
+          "source_id": "cpe_email",
+          "source_url": "https://www.cpe-fund.com/department.html",
+          "source_title": "我们的团队 - CPE源峰官网",
+          "source_content_hash": "5a9ad8cf0d999a54beb9fc5a5dfdfc479039f31669995888bba67ece298f46ca",
+          "quote": "关注我们 info@citicpe.com.hk",
+          "quote_hash": "3b95cba35b2d8e09f44e3e9a151687f31d33b7ec52d0f1b07e860d3e56f4ddbd"
+        },
         {
           "source_id": "FISRC-c268e82669700804",
           "source_url": "https://www.nbd.com.cn/articles/2026-05-07/4381686.html",
@@ -161,7 +354,11 @@
           "quote_hash": "c6adb2619bd02d40f0c0d511a0c184b7dee0d9e883a01905faea644191911821"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "官方站点使用CPE源峰品牌并自述机构背景、规模、投资领域和办公室信息；数据库名称为CPE（中信产业基金）。本档案按品牌与活动标签建立对应，不据此推断法定主体、股权结构或与中信集团的当前控制关系。规模和投资家数未标基准日；奖项按机构官网所列记录并与实际基金收益区分。具名团队成员在文本页面中不可核验，未补写未经确认的人物履历。"
     }
   }
 }

@@ -137,21 +137,160 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Fusion Fund 当前按“投资组织”收录。最新融资披露记录日期为 2024-01-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Fusion Fund是一家专注早期阶段的风险投资机构，官网称其投资利用技术或数据优势构建产品的创业公司，重点关注医疗健康、企业AI和工业科技，投资Pre-Seed、Seed及A轮项目，地域为美国和加拿大。创始管理合伙人Lu Zhang曾从事创业和材料科学研究，并拥有斯坦福大学材料科学与工程硕士学位。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2015年，由Lu Zhang创立。",
+          "source_id": "fusion_lu"
+        },
+        {
+          "field": "investment_thesis",
+          "label": "投资理念",
+          "value": "支持依托技术或数据优势、面向行业变革的早期创业公司。",
+          "source_id": "fusion_home"
+        },
+        {
+          "field": "investment_stages",
+          "label": "投资阶段",
+          "value": [
+            "Pre-Seed",
+            "Seed",
+            "Series A"
+          ],
+          "source_id": "fusion_home"
+        },
+        {
+          "field": "investment_focus",
+          "label": "重点领域",
+          "value": [
+            "医疗健康",
+            "企业AI",
+            "工业科技"
+          ],
+          "source_id": "fusion_home"
+        },
+        {
+          "field": "investment_regions",
+          "label": "投资地域",
+          "value": [
+            "美国",
+            "加拿大"
+          ],
+          "source_id": "fusion_home"
+        },
+        {
+          "field": "team_structure",
+          "label": "官网列示管理与投资团队",
+          "value": [
+            "Lu Zhang（Founder & Managing Partner）",
+            "David Gerster（Investment Partner）",
+            "Ivneet Bhullar（Investment Partner）",
+            "Shane Wall（Partner & President of CXO Network）"
+          ],
+          "source_id": "fusion_team"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Fusion Fund官网称You.com与Vectara是其Fund III投资组合公司，并记录两家公司入选CB Insights 2023 Generative AI 50；这是所选组合案例，不代表完整投资组合或基金回报。",
+          "source_id": "fusion_track"
+        },
         {
           "description": "融资来源记录：Inference.ai · 种子轮 · 2024-01-30 · 本轮参投 · $4 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-177fc20098275686"
         }
       ],
-      "contacts": [],
+      "current_roles": [
+        {
+          "title": "Founder & Managing Partner",
+          "organization": "Fusion Fund",
+          "source_id": "fusion_lu"
+        },
+        {
+          "title": "David Gerster — Investment Partner",
+          "organization": "Fusion Fund",
+          "source_id": "fusion_team"
+        },
+        {
+          "title": "Ivneet Bhullar — Investment Partner",
+          "organization": "Fusion Fund",
+          "source_id": "fusion_team"
+        },
+        {
+          "title": "Shane Wall — Partner & President of CXO Network",
+          "organization": "Fusion Fund",
+          "source_id": "fusion_team"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Fusion Fund",
+          "title": "Lu Zhang：创始人兼管理合伙人",
+          "period": "2015年至官网页面核验日；具体任职起止未逐年披露",
+          "description": "官方简介称她此前从事创业及材料科学研究，创立Fusion Fund后聚焦医疗AI、企业AI/网络、边缘计算及数据隐私。",
+          "source_id": "fusion_lu"
+        }
+      ],
+      "education": [
+        {
+          "institution": "斯坦福大学",
+          "qualification": "Lu Zhang：材料科学与工程理学硕士",
+          "source_id": "fusion_lu"
+        }
+      ],
+      "experience_summary": "Lu Zhang的官网履历概述其创业、材料科学研究和科技商业化经历，并列出医疗AI、企业AI/网络、边缘计算及数据隐私等专长领域；未列出她此前创业公司的名称。官网团队页列出投资合伙人和运营网络负责人。",
+      "contacts": [
+        {
+          "kind": "address",
+          "label": "官网团队页列示办公室地址",
+          "value": "550 Lytton Ave, Palo Alto, CA 94301, United States",
+          "url": "https://www.fusionfund.com/team",
+          "source_id": "fusion_team"
+        },
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Fusion Fund",
+          "url": "https://www.fusionfund.com/",
+          "source_id": "fusion_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "fusion_home",
+          "source_url": "https://www.fusionfund.com/",
+          "source_title": "Fusion Fund",
+          "source_content_hash": "49e4027ee94bd4e6489670c91307c674a6c676e1e3839e77ddb19e496dbdd3ba",
+          "quote": "We back early-stage startups that leverage technical or data advantages. We partner with founders who have experience and expertise in healthcare, enterprise AI, and industrial technology spaces and are building the next industry game changer. We invest in Pre-Seed, Seed, and Series A companies anywhere in the United States and Canada.",
+          "quote_hash": "889dafb4c40d92c788947e5fb72e088f7849a53e7d7053fbe33b40b12d7f8bb1"
+        },
+        {
+          "source_id": "fusion_team",
+          "source_url": "https://www.fusionfund.com/team",
+          "source_title": "Team — Fusion Fund",
+          "source_content_hash": "df6818d1c695045c0856b1c6d61f5e9f324fb6d9a0af7542441c059022c6c0a5",
+          "quote": "Lu Zhang Founder and Managing Partner Shane Wall Partner & President of CXO Network David Gerster Investment Partner Ivneet Bhullar Investment Partner",
+          "quote_hash": "75a4f12c0643ddbcf4df963449e6d96c765f05dd1d93c2e00e32aa9046aeb5bb"
+        },
+        {
+          "source_id": "fusion_lu",
+          "source_url": "https://www.fusionfund.com/team/lu-zhang",
+          "source_title": "Lu Zhang — Fusion Fund",
+          "source_content_hash": "45cd4b7b4252e9c95de91de677767b7c674b65372eb31df053d3687bbccc42fb",
+          "quote": "Lu Zhang, Founder and Managing Partner of Fusion Fund, is a renowned Silicon Valley-based investor, a serial entrepreneur, and a Stanford Engineering alumna. With a strong technical background, Lu has extensive experience bringing a broad range of technologies to commercialization and deep domain expertise in AI in healthcare, Enterprise AI/Networks, Edge Computing, and Data Privacy. Prior to starting Fusion Fund, Lu was a serial entrepreneur and materials science researcher, which eventually led her to create Fusion Fund in 2015. She holds an M.S. in Materials Science and Engineering from Stanford University.",
+          "quote_hash": "36756c20da4acb834ab0362bf186fb2d3517f3589c5f2067f2f1409ef5c8fde1"
+        },
+        {
+          "source_id": "fusion_track",
+          "source_url": "https://www.fusionfund.com/",
+          "source_title": "Fusion Fund",
+          "source_content_hash": "49e4027ee94bd4e6489670c91307c674a6c676e1e3839e77ddb19e496dbdd3ba",
+          "quote": "Two Fusion Fund portfolio companies from Fund III, You.com and Vectara, were highlighted in CB Insights' Generative Al 50.",
+          "quote_hash": "b9dcd44ff4967d2c27e876e58d48c80e72ce8e0ac4e0cdaa86b00361228ecf38"
+        },
         {
           "source_id": "FISRC-177fc20098275686",
           "source_url": "https://techcrunch.com/2024/01/30/inference-ai-matches-ai-workloads-with-cloud-gpu-compute/",
@@ -161,7 +300,11 @@
           "quote_hash": "18fad78b8a29f968ad4cba21dcd780cde05d2eb49d7e2aa06f955c1d307a2dce"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构策略、阶段、地域、管理团队和Lu Zhang履历来自Fusion Fund官网。主页没有披露可核实的基金规模或投资回报；官网展示的You.com和Vectara案例仅作为有限样例。团队页面只按其公开职务录入，不推断未披露的投资决策权限。"
     }
   }
 }
