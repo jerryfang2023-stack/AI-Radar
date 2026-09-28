@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
+    "generatedAt": "2026-09-28T00:56:21.876Z",
     "latestDataDate": "2026-09-26",
     "currentDate": "2026-09-26",
     "eventCount": 3587,
@@ -279,14 +279,14 @@
       "milestones": [],
       "track_record": [
         {
-          "description": "Higgsfield named this institution among participants in its $400 million Series B announced on 2026-08-17. The $400 million is the total round size; the institution's individual investment amount was not disclosed.",
+          "description": "Higgsfield 在 2026-08-17 宣布的 4 亿美元 B 轮融资中将该机构列为参投方。4 亿美元为整轮金额；该机构的单独投资金额未披露。",
           "source_id": "FISRC-b235ace767812393"
         }
       ],
       "contacts": [
         {
           "kind": "website",
-          "label": "Smash Capital official website",
+          "label": "Smash Capital 官网",
           "value": "Smash Capital",
           "url": "https://smashcap.com/",
           "source_id": "smash_team"
@@ -305,6 +305,26 @@
         }
       ],
       "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.track_record[0].description": {
+          "text": "Higgsfield 在 2026-08-17 宣布的 4 亿美元 B 轮融资中将该机构列为参投方。4 亿美元为整轮金额；该机构的单独投资金额未披露。",
+          "source_hash": "ceece27789efe5b6e98e59d9a3baa4b2e0d7f74339fc5536e331aa38ff510777",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:05.186Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "Smash Capital 官网",
+          "source_hash": "b3c229677703d788d90aa2c7a9e89dbdf94f642514ad1ac663290403cdf52e7c",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:07.446Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

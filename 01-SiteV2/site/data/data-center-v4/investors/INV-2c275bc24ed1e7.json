@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
+    "generatedAt": "2026-09-28T00:56:21.876Z",
     "latestDataDate": "2026-09-26",
     "currentDate": "2026-09-26",
     "eventCount": 3587,
@@ -303,14 +303,14 @@
       ],
       "track_record": [
         {
-          "description": "Higgsfield named this institution among participants in its $400 million Series B announced on 2026-08-17. The $400 million is the total round size; the institution's individual investment amount was not disclosed.",
+          "description": "Higgsfield 在 2026-08-17 宣布的 4 亿美元 B 轮融资中将该机构列为参投方。4 亿美元为整轮金额；该机构的单独投资金额未披露。",
           "source_id": "FISRC-7c15ac15bf3d0b1a"
         }
       ],
       "contacts": [
         {
           "kind": "website",
-          "label": "NTT DOCOMO Ventures official website",
+          "label": "NTT DOCOMO Ventures 官网",
           "value": "NTT DOCOMO Ventures",
           "url": "https://www.nttdocomo-v.com/en/",
           "source_id": "ntt_company"
@@ -329,6 +329,42 @@
         }
       ],
       "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.milestones[0].description": {
+          "text": "NTT Investment Partners, Inc. 成立并启动首支 100 亿日元企业创投基金。",
+          "source_hash": "45b1a1051b76c377d27f242823bccde47970cf3b19d1f6983c9edad91b8b9bc2",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:07.446Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[2].description": {
+          "text": "设立 150 亿日元 DOCOMO Innovation Fund IV。",
+          "source_hash": "5cc31e3d68bd6e024be12b863b704249bf555d378e572835bc724deefacae2c6",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:07.446Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Higgsfield 在 2026-08-17 宣布的 4 亿美元 B 轮融资中将该机构列为参投方。4 亿美元为整轮金额；该机构的单独投资金额未披露。",
+          "source_hash": "ceece27789efe5b6e98e59d9a3baa4b2e0d7f74339fc5536e331aa38ff510777",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:05.186Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "NTT DOCOMO Ventures 官网",
+          "source_hash": "b34e29b06ea8c6c3a10a4c69982bbb84038501a135c3947eb795b889b2995ecd",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:07.446Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

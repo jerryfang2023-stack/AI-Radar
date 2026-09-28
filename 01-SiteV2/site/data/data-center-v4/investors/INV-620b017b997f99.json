@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
+    "generatedAt": "2026-09-28T00:56:21.876Z",
     "latestDataDate": "2026-09-26",
     "currentDate": "2026-09-26",
     "eventCount": 3587,
@@ -210,28 +210,28 @@
         },
         {
           "kind": "address",
-          "label": "Syracuse office",
+          "label": "Syracuse 办公室",
           "value": "235 Harrison St., Syracuse, NY 13202",
           "url": "https://www.armorysv.com/team",
           "source_id": "armory_team"
         },
         {
           "kind": "address",
-          "label": "Skaneateles office",
+          "label": "Skaneateles 办公室",
           "value": "42 E. Genesee Street, Skaneateles, NY 13152",
           "url": "https://www.armorysv.com/team",
           "source_id": "armory_team"
         },
         {
           "kind": "address",
-          "label": "New York office",
+          "label": "纽约办公室",
           "value": "26 Broadway, New York, NY 10004",
           "url": "https://www.armorysv.com/team",
           "source_id": "armory_team"
         },
         {
           "kind": "address",
-          "label": "Indianapolis office",
+          "label": "Indianapolis 办公室",
           "value": "6151 Central Avenue, Indianapolis, IN 46220",
           "url": "https://www.armorysv.com/team",
           "source_id": "armory_team"
@@ -272,6 +272,42 @@
         }
       ],
       "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.contacts[2].label": {
+          "text": "Syracuse 办公室",
+          "source_hash": "5bb77a47d6e1d2e6679ce35aa54400140f2e2353dae5f44ad3b0d1d67269e253",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:35.948Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[3].label": {
+          "text": "Skaneateles 办公室",
+          "source_hash": "6d8bca3d216ea98495d7e2b55ae087b23d4c0a102d63fdc205d90e2d9b3b81e3",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:35.948Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[4].label": {
+          "text": "纽约办公室",
+          "source_hash": "cb6260491c8307e140e296e3b3f33727740feb8ab5259751c2f5a746042c4071",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:35.948Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[5].label": {
+          "text": "Indianapolis 办公室",
+          "source_hash": "b11d7d4f45d6fa81970e36910a55de9495dd9f400fd65951afe4a1c510e2970d",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:35.948Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

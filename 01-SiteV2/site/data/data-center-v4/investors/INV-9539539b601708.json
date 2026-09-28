@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
+    "generatedAt": "2026-09-28T00:56:21.876Z",
     "latestDataDate": "2026-09-26",
     "currentDate": "2026-09-26",
     "eventCount": 3587,
@@ -239,25 +239,25 @@
         },
         {
           "field": "portfolio_sector",
-          "label": "Officially listed portfolio category",
+          "label": "官方列出的投资组合类别",
           "value": "The official website maintains a TMT portfolio category.",
           "source_id": "mirae_tmt"
         },
         {
           "field": "portfolio_sector",
-          "label": "Officially listed portfolio category",
+          "label": "官方列出的投资组合类别",
           "value": "The official website maintains a blockchain portfolio category.",
           "source_id": "mirae_blockchain"
         },
         {
           "field": "portfolio_sector",
-          "label": "Officially listed portfolio category",
+          "label": "官方列出的投资组合类别",
           "value": "The official website maintains a emerging businesses portfolio category.",
           "source_id": "mirae_emerging"
         },
         {
           "field": "portfolio_sector",
-          "label": "Officially listed portfolio category",
+          "label": "官方列出的投资组合类别",
           "value": "The official website maintains a life sciences and healthcare portfolio category.",
           "source_id": "mirae_healthcare"
         }
@@ -266,14 +266,14 @@
       "milestones": [],
       "track_record": [
         {
-          "description": "Higgsfield named this institution among participants in its $400 million Series B announced on 2026-08-17. The $400 million is the total round size; the institution's individual investment amount was not disclosed.",
+          "description": "Higgsfield 在 2026-08-17 宣布的 4 亿美元 B 轮融资中将该机构列为参投方。4 亿美元为整轮金额；该机构的单独投资金额未披露。",
           "source_id": "FISRC-7c15ac15bf3d0b1a"
         }
       ],
       "contacts": [
         {
           "kind": "website",
-          "label": "Mirae Asset Capital official website",
+          "label": "Mirae Asset Capital 官网",
           "value": "Mirae Asset Capital",
           "url": "https://vc.miraeassetcapital.com/",
           "source_id": "mirae_home"
@@ -286,6 +286,58 @@
         }
       ],
       "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.facts[2].label": {
+          "text": "官方列出的投资组合类别",
+          "source_hash": "41e258dacb2bc2317dae722855909d6dcc6615f93c117dc6e252e05a111207b6",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:07.446Z",
+          "status": "translated"
+        },
+        "public_profile.facts[3].label": {
+          "text": "官方列出的投资组合类别",
+          "source_hash": "41e258dacb2bc2317dae722855909d6dcc6615f93c117dc6e252e05a111207b6",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:07.446Z",
+          "status": "translated"
+        },
+        "public_profile.facts[4].label": {
+          "text": "官方列出的投资组合类别",
+          "source_hash": "41e258dacb2bc2317dae722855909d6dcc6615f93c117dc6e252e05a111207b6",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:07.446Z",
+          "status": "translated"
+        },
+        "public_profile.facts[5].label": {
+          "text": "官方列出的投资组合类别",
+          "source_hash": "41e258dacb2bc2317dae722855909d6dcc6615f93c117dc6e252e05a111207b6",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:07.446Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Higgsfield 在 2026-08-17 宣布的 4 亿美元 B 轮融资中将该机构列为参投方。4 亿美元为整轮金额；该机构的单独投资金额未披露。",
+          "source_hash": "ceece27789efe5b6e98e59d9a3baa4b2e0d7f74339fc5536e331aa38ff510777",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:05.186Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "Mirae Asset Capital 官网",
+          "source_hash": "ef094e5d3b33a0adc511380a8f24ad552b08ad2a21cd6b6bb25b6dafb986c475",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:07.446Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

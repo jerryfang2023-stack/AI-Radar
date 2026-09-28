@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
+    "generatedAt": "2026-09-28T00:56:21.876Z",
     "latestDataDate": "2026-09-26",
     "currentDate": "2026-09-26",
     "eventCount": 3587,
@@ -141,29 +141,29 @@
       "identity_status": "verified",
       "coverage_status": "researched",
       "coverage_note": "Accenture reports fund size and active investment count on its innovation page. The Replit financing source names Accenture but does not identify the internal investment unit or disclose an individual check.",
-      "summary": "Accenture Ventures is Accenture’s startup investment and engagement program, connecting emerging technology companies with Accenture expertise and enterprise clients. Accenture currently reports a $250 million fund and more than 70 active venture investments; those figures are company-reported, not returns.",
+      "summary": "Accenture Ventures 是 Accenture 的初创企业投资与对接项目，将新兴技术公司与 Accenture 的专业能力及企业客户连接起来。Accenture 目前报告一只 2.5 亿美元基金和 70 多项活跃风险投资；这些数字为公司报告数据，而非回报。",
       "facts": [
         {
           "field": "program",
-          "label": "Program",
+          "label": "项目",
           "value": "Startup investment and engagement program focused on technology companies addressing enterprise innovation needs.",
           "source_id": "accenture_innovation"
         },
         {
           "field": "reported_fund_size",
-          "label": "Reported fund size",
+          "label": "报告基金规模",
           "value": "$250 million, as reported by Accenture.",
           "source_id": "accenture_innovation"
         },
         {
           "field": "active_investments",
-          "label": "Reported active venture investments",
+          "label": "已报告活跃风险投资",
           "value": "More than 70, as reported by Accenture.",
           "source_id": "accenture_innovation"
         },
         {
           "field": "engagement_model",
-          "label": "Engagement model",
+          "label": "合作模式",
           "value": "Project Spotlight connects startups with Accenture expertise and enterprise client problems.",
           "source_id": "accenture_innovation"
         }
@@ -171,14 +171,14 @@
       "milestones": [],
       "track_record": [
         {
-          "description": "A report listed Accenture among strategic investors in Replit’s Series D. It does not identify the internal investment unit or disclose an individual amount.",
+          "description": "一份报告将 Accenture 列为 Replit D 轮融资的战略投资者之一。该报告未指明内部投资部门，也未披露具体金额。",
           "source_id": "FISRC-00ed3d8fd701898b"
         }
       ],
       "contacts": [
         {
           "kind": "website",
-          "label": "Official information",
+          "label": "官方信息",
           "value": "Accenture Ventures and innovation program",
           "source_id": "accenture_innovation",
           "url": "https://www.accenture.com/en/about/accenture-innovation"
@@ -203,6 +203,66 @@
         }
       ],
       "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Accenture Ventures 是 Accenture 的初创企业投资与对接项目，将新兴技术公司与 Accenture 的专业能力及企业客户连接起来。Accenture 目前报告一只 2.5 亿美元基金和 70 多项活跃风险投资；这些数字为公司报告数据，而非回报。",
+          "source_hash": "d55b27ac4b48ba4c6a9a4445e6e1e336764b062b2c40e9b5ac4828f7bc1b9a24",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:42.500Z",
+          "status": "translated"
+        },
+        "public_profile.facts[0].label": {
+          "text": "项目",
+          "source_hash": "90920d93e2c7e6323a947c6edb0e31a9702002e329af32a67fea53f221983cb0",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:42.500Z",
+          "status": "translated"
+        },
+        "public_profile.facts[1].label": {
+          "text": "报告基金规模",
+          "source_hash": "ac57cb4ee650f18de4d0661d60dd9cc8d6b9d73c862460115291d16af4a765c4",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:35.948Z",
+          "status": "translated"
+        },
+        "public_profile.facts[2].label": {
+          "text": "已报告活跃风险投资",
+          "source_hash": "15d41a728b0bdae41a51cdcab50fe9067e0d69eccd87b5a7d5b56b90366c1380",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:45.852Z",
+          "status": "translated"
+        },
+        "public_profile.facts[3].label": {
+          "text": "合作模式",
+          "source_hash": "7e7e6fb26caf7c20c8c8d90a1c2d542841fae8533070874d899df6d9593312c4",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:45.852Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "一份报告将 Accenture 列为 Replit D 轮融资的战略投资者之一。该报告未指明内部投资部门，也未披露具体金额。",
+          "source_hash": "82f66ef62e3c87392918350ac39bea65872d09dd4a6a83d837d5e665c32a6f9c",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:45.852Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "官方信息",
+          "source_hash": "86257af9e370f6ee696aea7d2b870fb1d4306c20fc6b2af2853ab7db9d7d545e",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:45.852Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

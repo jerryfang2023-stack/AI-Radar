@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
+    "generatedAt": "2026-09-28T00:56:21.876Z",
     "latestDataDate": "2026-09-26",
     "currentDate": "2026-09-26",
     "eventCount": 3587,
@@ -159,6 +159,34 @@
       "coverage_status": "researched",
       "coverage_note": "职务和文章列表来自 Replit 官方作者页；AI Agent Code Execution API 的合著关系与技术范围来自 Replit 原文。教育背景、其他雇主及任职起止时间未由这些官方来源披露。",
       "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Faris Masad 是 Replit 的 founding engineer / Member of Technical Staff。Replit 官方作者页收录其自 2016 年起的工程文章；他还与 Luis Héctor Chávez 合著了 AI Agent Code Execution API 文章，介绍供 AI agent 调用的沙箱代码执行方案。官方页面未披露其学历或其他雇主。",
+          "source_hash": "5340902fb53c46c45b6c58ce8575eba9a55dbe381da63149731a494de663941d",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:15.999Z",
+          "status": "translated"
+        },
+        "public_profile.career[0].description": {
+          "text": "参与 Replit 开发工具、开发者平台及 AI agent 代码执行能力的工程工作；其中 AI Agent Code Execution API 文章为与 Luis Héctor Chávez 合著。",
+          "source_hash": "7c0ffa4ecfd9e7c26eaf809c287123f7b1cbcd78ae6278ff4ef59697bcd9e499",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:15.999Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "与 Luis Héctor Chávez 合著 Replit 的 AI Agent Code Execution API 文章，说明如何在沙箱中执行模型生成的代码，并以 Python 数学求值 API 为例。",
+          "source_hash": "9441d303ef1cf55efa8449a7d8fe57c7751f3642a00fca5d99cbccfbbe6ec0a1",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:15.999Z",
+          "status": "translated"
+        }
+      }
     }
   },
   "relatedEntities": [],

@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
+    "generatedAt": "2026-09-28T00:56:21.876Z",
     "latestDataDate": "2026-09-26",
     "currentDate": "2026-09-26",
     "eventCount": 3587,
@@ -141,29 +141,29 @@
       "identity_status": "verified",
       "coverage_status": "researched",
       "coverage_note": "Firm strategy, team, and portfolio examples come from Adverb’s official pages. Acquisition examples are selected portfolio outcomes, not fund-return data. The Foundational Industries report does not disclose Adverb’s individual commitment.",
-      "summary": "Adverb Ventures is an early-stage venture firm co-founded by April Underwood and Jessica Verrilli. It says typical investments range from $500,000 to $5 million and that it works with founders from a company’s earliest stages.",
+      "summary": "Adverb Ventures 是由 April Underwood 和 Jessica Verrilli 共同创立的早期创投机构。其称典型投资范围为 50 万至 500 万美元，并从公司最早阶段起与创始人合作。",
       "facts": [
         {
           "field": "founders",
-          "label": "Co-founders",
+          "label": "联合创始人",
           "value": "April Underwood and Jessica Verrilli are listed as co-founders and managing directors.",
           "source_id": "adverb_team"
         },
         {
           "field": "investment_stage",
-          "label": "Investment stage",
+          "label": "投资阶段",
           "value": "The firm invests at the earliest stages of company building.",
           "source_id": "adverb_portfolio"
         },
         {
           "field": "check_size",
-          "label": "Typical investment range",
+          "label": "典型投资范围",
           "value": "$500,000–$5 million, according to the firm.",
           "source_id": "adverb_portfolio"
         },
         {
           "field": "approach",
-          "label": "Founder support",
+          "label": "创始人支持",
           "value": "Adverb says it invests in and advises founders with distinctive insight into their market, audience, or problem.",
           "source_id": "adverb_portfolio"
         }
@@ -171,18 +171,18 @@
       "milestones": [],
       "track_record": [
         {
-          "description": "Adverb’s portfolio page marks Cove as acquired by Microsoft AI; this is a selected company outcome, not a disclosed fund return.",
+          "description": "Adverb 的组合页面标注 Cove 被 Microsoft AI 收购；这是选列公司的结果，不是披露的基金回报。",
           "source_id": "adverb_exits"
         },
         {
-          "description": "An August 2026 report lists Adverb Ventures among participants in Foundational Industries’ $25 million seed round. The amount is the company’s round total, not Adverb’s individual check.",
+          "description": "一份 2026 年 8 月的报告将 Adverb Ventures 列为 Foundational Industries 2500 万美元种子轮的参与方之一。该金额是公司本轮融资总额，不是 Adverb 的单独投资额。",
           "source_id": "FISRC-e6ee0cd472bfb792"
         }
       ],
       "contacts": [
         {
           "kind": "website",
-          "label": "Official website",
+          "label": "官方网站",
           "value": "Adverb Ventures",
           "source_id": "adverb_portfolio",
           "url": "https://www.adverb.vc/"
@@ -223,6 +223,74 @@
         }
       ],
       "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Adverb Ventures 是由 April Underwood 和 Jessica Verrilli 共同创立的早期创投机构。其称典型投资范围为 50 万至 500 万美元，并从公司最早阶段起与创始人合作。",
+          "source_hash": "461f85344ca2142eb7bd474c955a7badf22d34f869795a7d4b76db8c23115b1f",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:10.890Z",
+          "status": "translated"
+        },
+        "public_profile.facts[0].label": {
+          "text": "联合创始人",
+          "source_hash": "b794f6053de74e3978e8abda725854cc147bc86ee659db38c6174a697894f230",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:10.890Z",
+          "status": "translated"
+        },
+        "public_profile.facts[1].label": {
+          "text": "投资阶段",
+          "source_hash": "82ef8e5156662bd9982e29926208b4193e1e4f83c7b3e0d8e4f0f77867ed09c5",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:10.890Z",
+          "status": "translated"
+        },
+        "public_profile.facts[2].label": {
+          "text": "典型投资范围",
+          "source_hash": "47499a3b03d82c538d44aab30af2f38dbe4538cbd9328c9057a1e47e27cf513f",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:10.890Z",
+          "status": "translated"
+        },
+        "public_profile.facts[3].label": {
+          "text": "创始人支持",
+          "source_hash": "e4f4c7da4cd902dd0ddc39c288c4d72cc10b5e5926be6006989254d431fc9463",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:10.890Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Adverb 的组合页面标注 Cove 被 Microsoft AI 收购；这是选列公司的结果，不是披露的基金回报。",
+          "source_hash": "f14f1f0b7511a9612d4ded88fdae534f1e3c92d733331d0b4562021afc033963",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:10.890Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "一份 2026 年 8 月的报告将 Adverb Ventures 列为 Foundational Industries 2500 万美元种子轮的参与方之一。该金额是公司本轮融资总额，不是 Adverb 的单独投资额。",
+          "source_hash": "5bfb6b8ba6f4197cd86ebdfd7d8d64bdcda599b089dda0f6f3cb2258cbb4aea1",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:10.890Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "官方网站",
+          "source_hash": "b16446d4331ad20b13b3c92866fa00eb15a0df69d7efc5dfdf9eca066ccae501",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

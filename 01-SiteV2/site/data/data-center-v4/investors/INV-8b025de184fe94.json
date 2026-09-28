@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
+    "generatedAt": "2026-09-28T00:56:21.876Z",
     "latestDataDate": "2026-09-26",
     "currentDate": "2026-09-26",
     "eventCount": 3587,
@@ -235,19 +235,19 @@
         },
         {
           "field": "leadership_background_rashmi",
-          "label": "Co-founder background: Rashmi Gopinath",
+          "label": "联合创始人背景：Rashmi Gopinath",
           "value": "Previously General Partner and Head of Enterprise Software at B Capital; Managing Director and founding investor at Microsoft’s M12; and Investment Director at Intel Capital, according to the firm biography.",
           "source_id": "bam_rashmi_bio"
         },
         {
           "field": "leadership_background_kristin",
-          "label": "Co-founder background: Kristin Baker Spohn",
+          "label": "联合创始人背景：Kristin Baker Spohn",
           "value": "Previously a General Partner at Charles River Ventures and a Partner at Social Capital; she also held operating roles at Collective Health and Castlight Health, according to the firm biography.",
           "source_id": "bam_kristin_bio"
         },
         {
           "field": "leadership_experience",
-          "label": "Combined experience",
+          "label": "合计经验",
           "value": "The firm says its two co-leads have 45 years of combined experience building and investing in enterprise and health technology.",
           "source_id": "bam_team"
         }
@@ -262,14 +262,14 @@
       "milestones": [],
       "track_record": [
         {
-          "description": "Higgsfield named this institution among participants in its $400 million Series B announced on 2026-08-17. The $400 million is the total round size; the institution's individual investment amount was not disclosed.",
+          "description": "Higgsfield 在 2026-08-17 宣布的 4 亿美元 B 轮融资中将该机构列为参投方。4 亿美元为整轮金额；该机构的单独投资金额未披露。",
           "source_id": "FISRC-7c15ac15bf3d0b1a"
         }
       ],
       "contacts": [
         {
           "kind": "website",
-          "label": "BAM Corner Point official website",
+          "label": "BAM Corner Point 官网",
           "value": "BAM Corner Point",
           "url": "https://www.bamcornerpoint.com/",
           "source_id": "bam_home"
@@ -282,6 +282,50 @@
         }
       ],
       "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.facts[4].label": {
+          "text": "联合创始人背景：Rashmi Gopinath",
+          "source_hash": "7056944662ad184fdd8a2ea97375ed9d791dd13349bf823b524265d0934cec58",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:05.186Z",
+          "status": "translated"
+        },
+        "public_profile.facts[5].label": {
+          "text": "联合创始人背景：Kristin Baker Spohn",
+          "source_hash": "501e5c0021db4bd9ffbb594eaf45744a46b83fd0940297092eac2374b00440d5",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:05.186Z",
+          "status": "translated"
+        },
+        "public_profile.facts[6].label": {
+          "text": "合计经验",
+          "source_hash": "4d7e7fdc01517bed72c98f74b8c405fa1d5f5deb73f1edbad039afb416ca1809",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:05.187Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Higgsfield 在 2026-08-17 宣布的 4 亿美元 B 轮融资中将该机构列为参投方。4 亿美元为整轮金额；该机构的单独投资金额未披露。",
+          "source_hash": "ceece27789efe5b6e98e59d9a3baa4b2e0d7f74339fc5536e331aa38ff510777",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:05.186Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "BAM Corner Point 官网",
+          "source_hash": "77cf1358ae15e88d1f49da8288755784e7aa7b132cf1d978b2fee6a60a3fa22b",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:05.187Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }
