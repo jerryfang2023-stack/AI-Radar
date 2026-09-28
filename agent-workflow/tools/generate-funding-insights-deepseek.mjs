@@ -343,11 +343,10 @@ export function canonicalSources(bundle, event) {
 
 export function canonicalSourceQuoteBodies(bundle, event, acceptedIntakeDocuments = []) {
   const claimById = new Map((bundle.claims || []).map((claim) => [claim.claim_id, claim]));
-  const acceptedRawIds = new Set((event.claim_refs || [])
+  const acceptedFundingClaims = (event.claim_refs || [])
     .map((claimId) => claimById.get(claimId))
     .filter((claim) => claim?.claim_type === "funding" && claim?.verification_status === "accepted")
-    .map((claim) => claim.raw_id)
-    .filter(Boolean));
+  const acceptedRawIds = new Set(acceptedFundingClaims.map((claim) => claim.raw_id).filter(Boolean));
   const eventSourceUrls = new Set((bundle.sourceArtifacts || [])
     .filter((artifact) => (event.source_refs || []).includes(artifact.source_artifact_id))
     .map((artifact) => normalizedUrlKey(artifact.source_url || artifact.canonical_url))
@@ -355,10 +354,23 @@ export function canonicalSourceQuoteBodies(bundle, event, acceptedIntakeDocument
   const sourceDocuments = [...(bundle.rawDocuments || []), ...acceptedIntakeDocuments];
   const claimBoundRaw = sourceDocuments.filter((raw) => acceptedRawIds.has(raw.raw_id)
     || eventSourceUrls.has(normalizedUrlKey(raw.source_url || raw.canonical_url)));
+  const normalizedTitleKey = (value) => clean(value).normalize("NFKC").toLowerCase().replace(/[^\p{L}\p{N}]+/gu, "");
+  const titleBoundAcceptedDocuments = acceptedFundingClaims.flatMap((claim) => {
+    const claimTitle = normalizedTitleKey(claim.source_quote);
+    if (claimTitle.length < 24) return [];
+    const titleMatches = acceptedIntakeDocuments.filter((raw) => {
+      const documentTitle = normalizedTitleKey(raw.title_original || raw.title_zh);
+      return documentTitle.includes(claimTitle);
+    });
+    return titleMatches.length === 1 ? titleMatches : [];
+  });
+  claimBoundRaw.push(...titleBoundAcceptedDocuments);
   // The accepted Claim's raw_id is a second canonical path to its source body.
   // During same-day China intake, the accepted article may still live in the
   // intake checkpoint while the V4 RawDocument/source_refs projection is being
-  // assembled. Join that excerpt only by the event's exact canonical source URL.
+  // assembled. Join that excerpt by the event's exact source URL, or by a unique
+  // accepted-intake article whose normalized title contains the accepted Claim's
+  // full headline quote.
   const rawQuotes = claimBoundRaw.flatMap((raw) => [
     raw.body_clean,
     ...(raw.intake_diagnostics?.key_excerpts || []).map((excerpt) => excerpt.text),
