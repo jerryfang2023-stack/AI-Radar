@@ -1,3 +1,4 @@
+const { refreshObservations } = require("../../utils/featured-observations.js");
 const { selectFeatured, chinaDate } = require("../../utils/funding-featured.js");
 const { filterCards, sortCards } = require("../../utils/funding.js");
 const { getWatchIds, toggleWatch, getCompareIds } = require("../../utils/storage.js");
@@ -62,11 +63,22 @@ Page({
 
   onShow() {
     syncTabBar(this, 0);
+    this.refreshFeaturedObservations();
     const currentIndex = getFundingData().index;
     if (currentIndex.meta.generatedAt !== this.data.meta.generatedAt) this.applyFundingData(currentIndex);
     else this.updateMetrics(currentIndex);
     const selectedIds = getCompareIds();
     this.setData({ selectedIds }, () => this.renderSlice(Math.max(this.data.visibleCount, this.pageSize)));
+  },
+
+  onUnload() { this.featuredDisposed = true; },
+
+  refreshFeaturedObservations() {
+    return refreshObservations().then(observations => {
+      if (this.featuredDisposed) return;
+      this.featuredObservations = observations;
+      this.updateMetrics({ cards: this.allCards || [], meta: this.data.meta });
+    });
   },
 
   applyFundingData(index) {
@@ -88,7 +100,7 @@ Page({
       const current = new Date(`${card.date}T00:00:00`);
       return Number.isFinite(current.getTime()) && latest.getTime() - current.getTime() <= 6 * 86400000;
     }).length;
-    const featured = selectFeatured(index.cards, this.data.selectedMarketRegion);
+    const featured = selectFeatured(index.cards, this.data.selectedMarketRegion, chinaDate(), this.featuredObservations || {});
     this.setData({
       featuredCards: featured.cards,
       featuredCurrent: 0,

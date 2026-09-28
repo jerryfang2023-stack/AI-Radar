@@ -17,7 +17,7 @@ test('dated fallback is bounded, deduplicated, and clears for empty index',()=>{
 });
 test('missing facts stay explicit, observation uses supplied facts and day uses China time',()=>{
  const result=selectFeatured([card('a',{products:[],subcategory:'数据',leadInvestor:'投资方未披露'})],'global','2026-09-28').cards[0];
- assert.equal(result.product,'');assert.equal(result.amount,'金额未披露');assert.equal(result.round,'轮次未披露');assert.equal(result.observation,'本笔融资投向数据领域。');assert.equal(chinaDate(new Date('2026-09-27T16:01:00Z')),'2026-09-28');
+ assert.equal(result.product,'');assert.equal(result.amount,'金额未披露');assert.equal(result.round,'轮次未披露');assert.equal(result.observation,'');assert.equal(chinaDate(new Date('2026-09-27T16:01:00Z')),'2026-09-28');
 });
 test('empty refresh clears featured and taps use encoded existing detail route',()=>{
  let page,url;
