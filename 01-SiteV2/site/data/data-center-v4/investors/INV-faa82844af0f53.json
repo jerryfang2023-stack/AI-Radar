@@ -139,19 +139,76 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Dragoneer Investment Group 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Dragoneer 官网只提供有限的机构介绍与联系方式，没有公开团队履历、投资策略、基金规模或完整组合清单。本档案仅记录官网可核实的法律名称、办公联系资料，以及融资来源披露的参投活动；不从活动推断基金表现。",
+      "summary": "Dragoneer Investment Group 的官网标示法律名称为 Dragoneer Investment Group, LLC，办公联系地在旧金山。官网发布一般联系和媒体联系邮箱，并明确声明不会通过互联网募集、提供或出售证券。官网没有提供可核实的团队履历、基金规模或详细投资策略，因此本档案不补入未经一手资料支持的此类信息。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "官网标示法律名称",
+          "value": "Dragoneer Investment Group, LLC。",
+          "source_id": "drag_home"
+        },
+        {
+          "field": "website_disclosure",
+          "label": "官网证券募集声明",
+          "value": "官网声明不会通过互联网招揽、要约或出售证券，并提示其他网站上的相关说法不代表 Dragoneer 背书。",
+          "source_id": "drag_home"
+        },
+        {
+          "field": "office",
+          "label": "官网联系地址",
+          "value": "1 Letterman Drive, Building D, Suite M-500, San Francisco, CA 94129, USA。该地址按官网联系方式记录，不额外推断其为注册地。",
+          "source_id": "drag_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Anthropic · G轮 · 2026-08-10 · 本轮联合领投 · $30 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "公开融资报道将 Dragoneer 列为 Anthropic 一轮总额 300 亿美元融资的联合领投方。300 亿美元为公司融资轮总额，不是 Dragoneer 的单笔出资额。",
           "source_id": "FISRC-077b1124fc8e9581"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Dragoneer Investment Group",
+          "url": "https://www.dragoneer.com/",
+          "source_id": "drag_home"
+        },
+        {
+          "kind": "email",
+          "label": "一般联系",
+          "value": "information@dragoneer.com",
+          "url": "https://www.dragoneer.com/contact",
+          "source_id": "drag_contact"
+        },
+        {
+          "kind": "email",
+          "label": "媒体联系",
+          "value": "press@dragoneer.com",
+          "url": "https://www.dragoneer.com/contact",
+          "source_id": "drag_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "drag_home",
+          "source_url": "https://www.dragoneer.com/",
+          "source_title": "Dragoneer Investment Group",
+          "source_content_hash": "2b7ec6a151ae1bcd9385183864ffc121fedd34cd5ea891f5e00573462646a47f",
+          "quote": "Dragoneer Investment Group, LLC",
+          "quote_hash": "798d04f674984028a7a1d64367839cc12f76c26d0050a6c9dfe6e28309d35670"
+        },
+        {
+          "source_id": "drag_contact",
+          "source_url": "https://www.dragoneer.com/contact",
+          "source_title": "Contact | Dragoneer Investment Group",
+          "source_content_hash": "9a2bd9446bd7394f5a8c23c6fa1bf09268227b019f19a4a8d0ed61a6b08bcddd",
+          "quote": "information@dragoneer.com",
+          "quote_hash": "4cc4e73d0838099e6f058522216cb014b4a65f4b18c0a76d17cb9f5c76e0ff07"
+        },
         {
           "source_id": "FISRC-077b1124fc8e9581",
           "source_url": "https://sg.finance.yahoo.com/news/gic-backed-openai-rival-anthropic-202159553.html",
@@ -161,7 +218,7 @@
           "quote_hash": "bdfd56c7328c8886cb48b941b4f330aff7ca9c83b05f0664f43e60381537841f"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28"
     }
   }
 }

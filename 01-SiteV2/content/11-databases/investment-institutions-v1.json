@@ -170922,19 +170922,76 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Dragoneer Investment Group 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "coverage_note": "Dragoneer 官网只提供有限的机构介绍与联系方式，没有公开团队履历、投资策略、基金规模或完整组合清单。本档案仅记录官网可核实的法律名称、办公联系资料，以及融资来源披露的参投活动；不从活动推断基金表现。",
+        "summary": "Dragoneer Investment Group 的官网标示法律名称为 Dragoneer Investment Group, LLC，办公联系地在旧金山。官网发布一般联系和媒体联系邮箱，并明确声明不会通过互联网募集、提供或出售证券。官网没有提供可核实的团队履历、基金规模或详细投资策略，因此本档案不补入未经一手资料支持的此类信息。",
+        "facts": [
+          {
+            "field": "legal_name",
+            "label": "官网标示法律名称",
+            "value": "Dragoneer Investment Group, LLC。",
+            "source_id": "drag_home"
+          },
+          {
+            "field": "website_disclosure",
+            "label": "官网证券募集声明",
+            "value": "官网声明不会通过互联网招揽、要约或出售证券，并提示其他网站上的相关说法不代表 Dragoneer 背书。",
+            "source_id": "drag_home"
+          },
+          {
+            "field": "office",
+            "label": "官网联系地址",
+            "value": "1 Letterman Drive, Building D, Suite M-500, San Francisco, CA 94129, USA。该地址按官网联系方式记录，不额外推断其为注册地。",
+            "source_id": "drag_home"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：Anthropic · G轮 · 2026-08-10 · 本轮联合领投 · $30 billion。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "公开融资报道将 Dragoneer 列为 Anthropic 一轮总额 300 亿美元融资的联合领投方。300 亿美元为公司融资轮总额，不是 Dragoneer 的单笔出资额。",
             "source_id": "FISRC-077b1124fc8e9581"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "机构官网",
+            "value": "Dragoneer Investment Group",
+            "url": "https://www.dragoneer.com/",
+            "source_id": "drag_home"
+          },
+          {
+            "kind": "email",
+            "label": "一般联系",
+            "value": "information@dragoneer.com",
+            "url": "https://www.dragoneer.com/contact",
+            "source_id": "drag_contact"
+          },
+          {
+            "kind": "email",
+            "label": "媒体联系",
+            "value": "press@dragoneer.com",
+            "url": "https://www.dragoneer.com/contact",
+            "source_id": "drag_contact"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "drag_home",
+            "source_url": "https://www.dragoneer.com/",
+            "source_title": "Dragoneer Investment Group",
+            "source_content_hash": "2b7ec6a151ae1bcd9385183864ffc121fedd34cd5ea891f5e00573462646a47f",
+            "quote": "Dragoneer Investment Group, LLC",
+            "quote_hash": "798d04f674984028a7a1d64367839cc12f76c26d0050a6c9dfe6e28309d35670"
+          },
+          {
+            "source_id": "drag_contact",
+            "source_url": "https://www.dragoneer.com/contact",
+            "source_title": "Contact | Dragoneer Investment Group",
+            "source_content_hash": "9a2bd9446bd7394f5a8c23c6fa1bf09268227b019f19a4a8d0ed61a6b08bcddd",
+            "quote": "information@dragoneer.com",
+            "quote_hash": "4cc4e73d0838099e6f058522216cb014b4a65f4b18c0a76d17cb9f5c76e0ff07"
+          },
           {
             "source_id": "FISRC-077b1124fc8e9581",
             "source_url": "https://sg.finance.yahoo.com/news/gic-backed-openai-rival-anthropic-202159553.html",
@@ -170944,7 +171001,7 @@
             "quote_hash": "bdfd56c7328c8886cb48b941b4f330aff7ca9c83b05f0664f43e60381537841f"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-28"
       }
     },
     {
@@ -221296,14 +221353,105 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Galaxy Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "coverage_note": "Galaxy Ventures 官网及 Galaxy Digital 投资者关系发布材料用于核实投资策略、基金规模、团队背景和公开组合信息。2025 年 Fund I 的 1.75 亿美元以上为基金募集承诺，不等于管理资产或投资回报；Ornn 的 3300 万美元为公司本轮总额，不是 Galaxy Ventures 单笔出资。",
+        "summary": "Galaxy Ventures 是 Galaxy 的加密资产风险投资团队，2018 年起曾以 Galaxy 资产负债表开展投资，2024 年启动首只外部风险投资基金 GVF I。该基金于 2025 年完成超过 1.75 亿美元募集承诺，主要投资链上经济相关的早期基础设施、区块链协议、金融化应用和软件基础设施。团队提供覆盖公司建设、设计、传播、人才与业务拓展的投后平台支持。",
+        "facts": [
+          {
+            "field": "organization_background",
+            "label": "机构背景",
+            "value": "Galaxy Ventures 隶属 Galaxy 体系；官网称 Galaxy Asset Management 是 Galaxy Digital Inc. 的关联公司，并由其宣布 GVF I 募集完成。",
+            "source_id": "galaxy_fund"
+          },
+          {
+            "field": "investment_activity_since",
+            "label": "投资活动起始年份",
+            "value": "Galaxy 称 Ventures 团队于 2018 年开始使用 Galaxy 资产负债表投资早期链上经济企业。",
+            "source_id": "galaxy_fund"
+          },
+          {
+            "field": "investment_stages",
+            "label": "投资阶段",
+            "value": "早期投资；官网组合页称支持被投公司从早期到后续成长阶段。",
+            "source_id": "galaxy_portfolio"
+          },
+          {
+            "field": "sectors",
+            "label": "投资领域",
+            "value": [
+              "区块链协议",
+              "金融化应用",
+              "软件基础设施",
+              "支付与稳定币",
+              "代币化",
+              "链上消费应用"
+            ],
+            "source_id": "galaxy_fund"
+          },
+          {
+            "field": "fundraising",
+            "label": "Galaxy Ventures Fund I 募集",
+            "value": "GVF I 于 2025-06-26 完成募集，资本承诺超过 1.75 亿美元，高于 1.5 亿美元目标；这是基金募集额，不是投资回报或基金资产净值。",
+            "source_id": "galaxy_fund"
+          },
+          {
+            "field": "portfolio_scale",
+            "label": "累计投资案例（截至 2025 年披露）",
+            "value": "Galaxy 称自 2018 年起合并历史资产负债表投资与 GVF I 组合，累计支持 120 多家公司；此为机构披露的累计公司数，不代表完整现有组合。",
+            "source_id": "galaxy_fund"
+          },
+          {
+            "field": "leadership",
+            "label": "投资团队负责人",
+            "value": "William（Will）Nuelle 与 Mike Giampapa 为普通合伙人。Nuelle 关注协议基础设施、DeFi 和软件，曾在 Galaxy Research 开发交易量化风险软件；拥有 Stanford 数学与建筑学理学学士学位。",
+            "source_id": "galaxy_team"
+          },
+          {
+            "field": "team_background",
+            "label": "Mike Giampapa 履历",
+            "value": "加入 Galaxy 前曾在 Bessemer Venture Partners 参与加密及金融科技投资，并在 Institutional Venture Partners 参与 Coinbase 领投项目；此前任职 JPMorgan、Circle。拥有 Harvard Business School MBA 及 Johns Hopkins 经济学学士学位。",
+            "source_id": "galaxy_team"
+          },
+          {
+            "field": "value_add",
+            "label": "投后平台支持",
+            "value": "Galaxy Ventures 表示其平台团队为组合企业提供公司建设、传播、设计、人才招聘和业务拓展支持，并连接 Galaxy 的全球业务资源。",
+            "source_id": "galaxy_fund"
+          },
+          {
+            "field": "portfolio_examples",
+            "label": "官网列示组合案例",
+            "value": [
+              "1Money",
+              "Arch Lending",
+              "Ethena",
+              "M^0",
+              "Monad",
+              "Plume",
+              "Rail",
+              "Rain",
+              "RedotPay",
+              "Ubyx",
+              "Yellow Card"
+            ],
+            "source_id": "galaxy_fund"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2018",
+            "description": "Galaxy Ventures 开始从 Galaxy 资产负债表开展早期链上经济投资。",
+            "source_id": "galaxy_fund"
+          },
+          {
+            "date": "2025-06-26",
+            "description": "Galaxy Ventures Fund I 完成超过 1.75 亿美元资本承诺的募集，超过 1.5 亿美元目标。",
+            "source_id": "galaxy_fund"
+          }
+        ],
         "track_record": [
           {
-            "description": "融资来源记录：Ornn AI Inc. · 种子轮 · 2026-06-24 · 本轮联合领投 · $33M。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "Galaxy Ventures 官网于 2026-06-24 宣布参与 Ornn 的种子轮投资，并说明 Ornn 是 Galaxy Ventures 组合公司。公司公告金额 3300 万美元为融资轮总额，未披露 Galaxy Ventures 的单笔出资额。",
             "source_id": "FISRC-44c6debf2c528a2a"
           },
           {
@@ -221311,8 +221459,78 @@
             "source_id": "FISRC-9b94bacc61eb2e07"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "机构官网",
+            "value": "Galaxy Ventures",
+            "url": "https://ventures.galaxy.com/",
+            "source_id": "galaxy_home"
+          },
+          {
+            "kind": "application",
+            "label": "项目推介入口",
+            "value": "Galaxy Ventures 联系页提供 Project Pitch 按钮。",
+            "url": "https://ventures.galaxy.com/contact",
+            "source_id": "galaxy_contact"
+          },
+          {
+            "kind": "contact_form",
+            "label": "基金 LP 联系入口",
+            "value": "Galaxy Ventures 联系页提供 Fund LPs 按钮。",
+            "url": "https://ventures.galaxy.com/contact",
+            "source_id": "galaxy_contact"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "galaxy_home",
+            "source_url": "https://ventures.galaxy.com/",
+            "source_title": "Galaxy Ventures — Capital For Crypto’s Cutting Edge",
+            "source_content_hash": "cc0574366f4ad4b6ea68db4af96a65c11416f9ec4517647c1177952793ad198b",
+            "quote": "Capital For Crypto’s Cutting Edge",
+            "quote_hash": "a001a7b9ba698c4407c6376aacc2c88c17fd8ba66bc67ede3563f51e84aa214e"
+          },
+          {
+            "source_id": "galaxy_team",
+            "source_url": "https://ventures.galaxy.com/team",
+            "source_title": "Team | Galaxy Ventures",
+            "source_content_hash": "4d76d31f365615cd88e23c87efa62f9d040950e8d6e8255af4b1a7656c137eef",
+            "quote": "Will Nuelle is General Partner of Galaxy Ventures, focusing on early-stage investments",
+            "quote_hash": "141890f10898ccbbc146ff8393382530f7fef160209daa57135f2eba08a9f4b2"
+          },
+          {
+            "source_id": "galaxy_portfolio",
+            "source_url": "https://ventures.galaxy.com/portfolio",
+            "source_title": "Portfolio | Galaxy Ventures",
+            "source_content_hash": "f723eec638c7ff7de0a2ec17c039dc1ef44bc739f4489d132662b199e6913599",
+            "quote": "Galaxy Ventures invests in crypto’s cutting edge founders, technologies, and business models",
+            "quote_hash": "bf886564d6528ce533ceb9cb072174204ca1abe1667256525d47ee0fca3dc2d2"
+          },
+          {
+            "source_id": "galaxy_contact",
+            "source_url": "https://ventures.galaxy.com/contact",
+            "source_title": "Contact | Galaxy Ventures",
+            "source_content_hash": "0b8cf53ead6c5cf0e4026ceb17f3d24734cbda813e1619c337f701e329aba0bf",
+            "quote": "Fund LPs",
+            "quote_hash": "9c8f3d45b31d089462cb7f432b856a2084e9d6c5d8438795f214d93ea0c3c4c1"
+          },
+          {
+            "source_id": "galaxy_fund",
+            "source_url": "https://investor.galaxy.com/news-releases/news-release-details/galaxy-announces-final-close-oversubscribed-galaxy-ventures-fund",
+            "source_title": "Galaxy Announces Final Close of Oversubscribed Galaxy Ventures Fund I at Over $175M",
+            "source_content_hash": "2e06a314bfce8dc18cf4106978bada6dda77183861b93a35a9c1d17fc15761eb",
+            "quote": "The Fund closed with over $175 million in capital commitments, exceeding its target of $150 million.",
+            "quote_hash": "0b1a3b6a08e3d12377e6e85caf96b1c0178fefd90e46cfe509cb5a5cd0a25abf"
+          },
+          {
+            "source_id": "galaxy_ornn",
+            "source_url": "https://www.galaxy.com/insights/perspectives/backing-ornn-the-financial-layer-for-compute",
+            "source_title": "Backing Ornn: The Financial Layer for Compute | Galaxy",
+            "source_content_hash": "7cd3d68a71d770185da25dd4e23abc0cae19d87a3d56b3993331c40afd5d194f",
+            "quote": "Galaxy is proud to participate in the $33M Seed investment round for Ornn",
+            "quote_hash": "15645638c90f5a27c7cb351ecf15619622ed0dbe91e80bdc5b82e56de99e193e"
+          },
           {
             "source_id": "FISRC-44c6debf2c528a2a",
             "source_url": "https://siliconangle.com/2026/06/24/ornn-raises-33m-help-companies-buy-sell-ai-compute-commodity-like-oil/",
@@ -221330,7 +221548,7 @@
             "quote_hash": "f779f3ab25405d0a5fd376731b4108ca5569b60b2972a8a3fead85fd9c9273ff"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-28"
       }
     },
     {
@@ -278132,19 +278350,182 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Hiro Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "coverage_note": "HIRO Capital 官网和法务页用于核实策略、组合、团队背景及联系方式。官网披露的历史规模和团队经历为机构自述，不代表基金业绩；AMI Labs 的 10.3 亿美元为融资轮总额，未披露 HIRO Capital 的单笔投资金额。法务页同时出现 Hiro Capital 1 LLP 与 Hiro Capital I LLP 名称，本档案不将两者合并为同一法律主体。",
+        "summary": "HIRO Capital 是一家创始人主导的欧洲风险投资机构，投资 AI、空间计算、自主系统、机器人、长寿科技、增强技术、游戏、仿真、太空与国防领域，重点面向广义 Europe+ 市场。官网披露其投资阶段从 A 轮延伸至 C 轮和规模化阶段，并采用主动参与型投后方式。团队成员来自科技创业、游戏产业、咨询、金融和风险投资。",
+        "facts": [
+          {
+            "field": "investment_thesis",
+            "label": "投资方向",
+            "value": [
+              "AI",
+              "空间计算",
+              "自主系统",
+              "机器人",
+              "长寿科技",
+              "增强技术",
+              "游戏",
+              "仿真",
+              "太空与国防"
+            ],
+            "source_id": "hiro_thesis"
+          },
+          {
+            "field": "geographies",
+            "label": "重点地域",
+            "value": "广义 Europe+：欧盟、英国、挪威、瑞士、乌克兰、土耳其和以色列。",
+            "source_id": "hiro_thesis"
+          },
+          {
+            "field": "investment_stages",
+            "label": "投资阶段",
+            "value": "Series A 至 Series C 及规模化阶段。",
+            "source_id": "hiro_thesis"
+          },
+          {
+            "field": "investment_model",
+            "label": "投后方式",
+            "value": "官网称其采用主动参与型工作方式，与创始团队保持定期沟通并提供经验、网络和运营支持。",
+            "source_id": "hiro_thesis"
+          },
+          {
+            "field": "leadership",
+            "label": "创始及普通合伙人",
+            "value": "Luke Alvarez（创始人兼管理普通合伙人）；Cherry Freeman（创始人兼普通合伙人）；Sir Ian Livingstone（创始人兼普通合伙人）；Sir Nick Clegg（普通合伙人）。",
+            "source_id": "hiro_team"
+          },
+          {
+            "field": "team_background",
+            "label": "Luke Alvarez 履历",
+            "value": "官网称其有 33 年科技行业经验，曾共同创立在 Nasdaq 上市的 Inspired Entertainment 和英国公共 Wi-Fi 运营商 The Cloud，曾任 Boston Consulting Group 顾问；为剑桥大学毕业生及 Fulbright 学者，负责公司战略并参与 AI、长寿、体育和深科技投资。",
+            "source_id": "hiro_team"
+          },
+          {
+            "field": "team_background",
+            "label": "Sir Nick Clegg 履历",
+            "value": "官网将其列为普通合伙人；曾任英国副首相（2010–2015）、Meta 全球事务总裁（2018–2025），此前在欧洲议会及欧盟机构任职约十年。",
+            "source_id": "hiro_team"
+          },
+          {
+            "field": "team_background",
+            "label": "Cherry Freeman 履历",
+            "value": "共同创立手工艺品电商 LoveCrafts，该公司后被美国战略买家收购；曾任 Boston Consulting Group 顾问及 Computacenter 集团战略总监，负责扩展软件业务；为剑桥大学毕业生。",
+            "source_id": "hiro_team"
+          },
+          {
+            "field": "team_background",
+            "label": "Sir Ian Livingstone 履历",
+            "value": "游戏产业创业者，曾共同创立 Games Workshop 与 Eidos（《古墓丽影》）；获 CBE、2022 年骑士爵位及 BAFTA 终身成就奖。",
+            "source_id": "hiro_team"
+          },
+          {
+            "field": "team_background",
+            "label": "其他投资团队成员",
+            "value": "Spike Laurie 负责太空、国防与游戏投资，曾在 ESL 任领导职务；Beth Li 负责亚洲业务，拥有 22 年咨询、战略及跨境科技市场经验，曾任职 JP Morgan 并创立 BML Consulting。",
+            "source_id": "hiro_team"
+          },
+          {
+            "field": "legal_identity",
+            "label": "官网法律主体披露",
+            "value": "官网法务页称网站由在伦敦注册的 Hiro Capital 1 LLP 发布，注册号 OC425586；同页免责声明另将 Hiro Capital I LLP 描述为 Laven Advisors LLP 的 appointed representative。该页出现的两个主体名称在此分别记录，不推断二者法律关系。",
+            "source_id": "hiro_legal"
+          },
+          {
+            "field": "portfolio_examples",
+            "label": "官网列示组合案例",
+            "value": [
+              "AMI Labs",
+              "Islo AI",
+              "Sidero Labs",
+              "Incredibuild",
+              "Frameplay",
+              "FitXR",
+              "Team Liquid",
+              "PlayerData",
+              "Skybound Games"
+            ],
+            "source_id": "hiro_companies"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：Advanced Machine Intelligence Labs (AMI Labs) · 种子轮 · 2026-03-12 · 本轮联合领投 · 10.3亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "HIRO Capital 官网组合页将 AMI Labs 列为 2026 年组合公司。另有融资报道将 HIRO Capital 列为 AMI Labs 种子轮联合领投方；10.3 亿美元是本轮融资总额，未披露该机构单笔出资额。",
             "source_id": "FISRC-6c35525e379488bf"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "机构官网",
+            "value": "HIRO Capital",
+            "url": "https://hiro.capital/",
+            "source_id": "hiro_home"
+          },
+          {
+            "kind": "website",
+            "label": "创始人联系页面",
+            "value": "官网联系页邀请符合投资方向的创始人联系 HIRO；页面未公开电子邮箱。",
+            "url": "https://hiro.capital/contact",
+            "source_id": "hiro_contact"
+          },
+          {
+            "kind": "address",
+            "label": "官网法务页登记地址（秘书服务机构）",
+            "value": "Sheffield Secretarial CMS, 78 Cannon Street, London, UK, EC4N 6AF。官网称 Hiro Capital 在该处登记；不视为运营办公室地址。",
+            "url": "https://hiro.capital/legal",
+            "source_id": "hiro_legal"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "hiro_home",
+            "source_url": "https://hiro.capital/",
+            "source_title": "HIRO Capital — Investors in the Future",
+            "source_content_hash": "25f4bced68f3ded1e8eee495765cbf091910a7ca0fdd4e75041fc1590372d25a",
+            "quote": "HIRO Capital is a founder-led VC firm",
+            "quote_hash": "95c748813ede8ad26acee91a41085356e8d108c50f79b92f4a458efc9b2fe8b3"
+          },
+          {
+            "source_id": "hiro_team",
+            "source_url": "https://hiro.capital/team",
+            "source_title": "Team | HIRO Capital",
+            "source_content_hash": "323007be161652bbbf6bf7077db9eb5da9dfa6e051525efa0e10377246920534",
+            "quote": "33 years in technology from the earliest days of the internet.",
+            "quote_hash": "aaa1594c09826eec650319ade75c21e7af85f37594e4e03d86bf0f6a8edce1a2"
+          },
+          {
+            "source_id": "hiro_companies",
+            "source_url": "https://hiro.capital/companies",
+            "source_title": "Companies | HIRO Capital",
+            "source_content_hash": "b36eba4e3be845623cc26c4f6d18183cc3acef3c99f02120529e26e3e589a343",
+            "quote": "AMI Labs AI 2026",
+            "quote_hash": "34a6b1b8ce5378292db45994ed423c1af79ab3ae2377110fbb439ed840667561"
+          },
+          {
+            "source_id": "hiro_thesis",
+            "source_url": "https://hiro.capital/working-with-hiro",
+            "source_title": "Working with HIRO | HIRO Capital",
+            "source_content_hash": "d4d297f2ed94f4c6948fb2c39d55334beec132bb54239f7af5a5587ea4360bb2",
+            "quote": "HIRO Capital invests in AI, Spatial Computing, Autonomy, Robotics, Longevity, Augmentation, Games, Simulation and Space & Defense technologies",
+            "quote_hash": "fd4ee4d63c85403457d2432d618ff93c7000a5df1f0302cb9c84e514e656c25d"
+          },
+          {
+            "source_id": "hiro_legal",
+            "source_url": "https://hiro.capital/legal",
+            "source_title": "Legal | HIRO Capital",
+            "source_content_hash": "6a74c65fe71f2c2bb20b6b4eac719a859cdb00d7122d6e8a305ec37f89a07e13",
+            "quote": "Hiro Capital 1 LLP, a company registered in London, UK, with company registration number OC425586.",
+            "quote_hash": "5c50caf7b0ef142ad63095fbbe36bb07f6ad500f22105fb8645d6f02d03dc042"
+          },
+          {
+            "source_id": "hiro_contact",
+            "source_url": "https://hiro.capital/contact",
+            "source_title": "Contact | HIRO Capital",
+            "source_content_hash": "b8cc44066c810923836d5d18ce44b6ce3850dbf2b02e23d93302b57e327b8aef",
+            "quote": "We back exceptional founders building transformative companies.",
+            "quote_hash": "a48c311876c83cece33d7712446558c2be0748b19bb0d2c797d978aa79ee747a"
+          },
           {
             "source_id": "FISRC-6c35525e379488bf",
             "source_url": "https://futurumgroup.com/insights/yann-lecuns-ami-raises-1bn-seed-round-is-the-world-model-era-finally-here",
@@ -278154,7 +278535,7 @@
             "quote_hash": "6a9f71b006329253881732e65a1aab8292cb41280260354b36196bdebd59dc54"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-28"
       }
     },
     {
