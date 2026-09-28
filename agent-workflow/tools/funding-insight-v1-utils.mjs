@@ -1347,6 +1347,7 @@ function clauseHasEventFundingAmount(clause, claim, event) {
   const expected = [
     event.object,
     claim.object,
+    ...(event.metrics || []),
   ].flatMap(fundingAmountMentions)
     .filter((mention) => !mention.valuation && !mention.cumulative);
   const actual = fundingAmountMentions(clause)
