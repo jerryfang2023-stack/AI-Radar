@@ -2070,6 +2070,49 @@ test("accepted intake article excerpts bind to a headline-only funding claim whe
   const quotes = canonicalSourceQuoteBodies({ claims: [claim], sourceArtifacts: [], rawDocuments: [] }, event, [acceptedIntakeDocument]);
   assert.ok(quotes.includes(sourceQuote));
   assert.equal(subjectCompanyForEvent(event, entities, {}, [claim], quotes)?.canonical_name, "Fluidstack");
+
+  const ambiguousQuotes = canonicalSourceQuoteBodies({ claims: [claim], sourceArtifacts: [], rawDocuments: [] }, event, [
+    acceptedIntakeDocument,
+    { ...acceptedIntakeDocument, raw_id: "RAW-SECOND-ACCEPTED-ARTICLE", canonical_url: "https://example.com/second" },
+  ]);
+  assert.ok(!ambiguousQuotes.includes(sourceQuote));
+});
+
+test("accepted intake article can bind through a full event headline when the funding Claim quote is short", () => {
+  const entities = [
+    { entity_id: "EN-BAOYANG-HEADLINE", entity_type: "organization_candidate", canonical_name: "包养式" },
+  ];
+  const claim = {
+    claim_id: "CL-FLUIDSTACK-SHORT-QUOTE",
+    claim_type: "funding",
+    verification_status: "accepted",
+    raw_id: "RAW-V4-CLAIM-WITHOUT-INTAKE-LINK",
+    subject: "包养式",
+    object: "15亿美元融资",
+    source_quote: "包养式融资，估值1200亿。",
+  };
+  const event = {
+    event_id: "EV-FLUIDSTACK-SHORT-QUOTE",
+    display_title_zh: "“包养式融资”，估值1200亿 60天内，这家公司的估值翻了2.4倍。",
+    action: "完成融资",
+    object: "15亿美元融资",
+    metrics: ["15亿美元"],
+    entities: entities.map((entity) => entity.entity_id),
+    claim_refs: [claim.claim_id],
+    source_refs: [],
+  };
+  const sourceQuote = "近日，外媒爆出AI基础设施公司Fluidstack完成15亿美元融资，投后估值180亿美元（约1200亿人民币），领投方是Jane Street。";
+  const acceptedIntakeDocument = {
+    raw_id: "RAW-ACCEPTED-INTAKE-ARTICLE",
+    source_artifact_id: "SA-ACCEPTED-INTAKE-ARTICLE",
+    canonical_url: "https://chinaventure.com.cn/news/80-20260927-393454.html",
+    title_original: "“包养式融资”，估值1200亿 60天内，这家公司的估值翻了2.4倍。 投中网 · 12小时前",
+    intake_diagnostics: { key_excerpts: [{ type: "funding", text: sourceQuote }] },
+  };
+
+  const quotes = canonicalSourceQuoteBodies({ claims: [claim], sourceArtifacts: [], rawDocuments: [] }, event, [acceptedIntakeDocument]);
+  assert.ok(quotes.includes(sourceQuote));
+  assert.equal(subjectCompanyForEvent(event, entities, {}, [claim], quotes)?.canonical_name, "Fluidstack");
 });
 
 test("a descriptive founder headline resolves only a uniquely named accepted recipient", () => {
