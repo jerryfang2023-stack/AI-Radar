@@ -69,8 +69,8 @@
     ],
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
-    "first_disclosed_at": "2026-02-24",
-    "latest_disclosed_at": "2026-06-03",
+    "first_disclosed_at": "2026-02",
+    "latest_disclosed_at": "2026-02-24",
     "role_counts": {
       "historical_or_ambiguous": 1,
       "participant": 1
@@ -87,47 +87,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-9970af94c278f627",
-        "funding_insight_id": "FI-db7372c6419b5ac0",
-        "event_ids": [
-          "EV-784c98f1fde32c73"
-        ],
-        "company_entity_id": "EN-1032f7a4df33f629",
-        "company_canonical_entity_id": "EN-1032f7a4df33f629",
-        "company_name": "千寻智能",
-        "round": "A+轮",
-        "round_code": "series_a_plus",
-        "round_original": "A+轮",
-        "amount_original": "15亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 1500000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "15 亿元"
-        },
-        "announced_at": "2026-06-03",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "partially_disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "2026年2月轮次投资方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-b8b7d456eceee943",
-            "source_url": "https://news.pedaily.cn/202606/564786.shtml",
-            "source_title": "首发| 3个月近50亿，千寻打破具身融资纪录 - 投资界",
-            "source_content_hash": "23a4c9a3f74c9f59",
-            "quote": "360基金、厚雪资本等战投机构",
-            "quote_hash": "f72c72daa66942bcf90fe60e94fb66cd8203e297a87194aab070ee1da5c5cfb4"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-0c3c66742ba83f3b",
+        "activity_id": "IA-0f4bb61febfda856",
         "funding_insight_id": "FI-846562dfba15b6a0",
         "event_ids": [
           "EV-61f07716fd7cb7ee"
@@ -165,17 +125,41 @@
             "quote_hash": "901c6f049e9794230dd170d94fc92bdca35f78f6e44770df8258ad29fdd5e196"
           }
         ]
+      },
+      {
+        "activity_id": "IA-4b0398c60ade7091",
+        "funding_insight_id": "FI-db7372c6419b5ac0",
+        "event_ids": [
+          "EV-784c98f1fde32c73"
+        ],
+        "company_entity_id": "EN-1032f7a4df33f629",
+        "company_canonical_entity_id": "EN-1032f7a4df33f629",
+        "company_name": "千寻智能",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "2026-02",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "2026年2月轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b8b7d456eceee943",
+            "source_url": "https://news.pedaily.cn/202606/564786.shtml",
+            "source_title": "首发| 3个月近50亿，千寻打破具身融资纪录 - 投资界",
+            "source_content_hash": "23a4c9a3f74c9f59",
+            "quote": "360基金、厚雪资本等战投机构",
+            "quote_hash": "f72c72daa66942bcf90fe60e94fb66cd8203e297a87194aab070ee1da5c5cfb4"
+          }
+        ]
       }
     ],
     "evidence": [
-      {
-        "source_id": "FISRC-b8b7d456eceee943",
-        "source_url": "https://news.pedaily.cn/202606/564786.shtml",
-        "source_title": "首发| 3个月近50亿，千寻打破具身融资纪录 - 投资界",
-        "source_content_hash": "23a4c9a3f74c9f59",
-        "quote": "360基金、厚雪资本等战投机构",
-        "quote_hash": "f72c72daa66942bcf90fe60e94fb66cd8203e297a87194aab070ee1da5c5cfb4"
-      },
       {
         "source_id": "FISRC-ee3064edf7c871f4",
         "source_url": "https://www.qbitai.com/2026/02/381766.html",
@@ -183,6 +167,14 @@
         "source_content_hash": "0ad2701645471c8d",
         "quote": "360基金、厚雪资本 等战投机构共同参与",
         "quote_hash": "901c6f049e9794230dd170d94fc92bdca35f78f6e44770df8258ad29fdd5e196"
+      },
+      {
+        "source_id": "FISRC-b8b7d456eceee943",
+        "source_url": "https://news.pedaily.cn/202606/564786.shtml",
+        "source_title": "首发| 3个月近50亿，千寻打破具身融资纪录 - 投资界",
+        "source_content_hash": "23a4c9a3f74c9f59",
+        "quote": "360基金、厚雪资本等战投机构",
+        "quote_hash": "f72c72daa66942bcf90fe60e94fb66cd8203e297a87194aab070ee1da5c5cfb4"
       }
     ],
     "public_profile": {
@@ -195,12 +187,12 @@
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：千寻智能 · A+轮 · 2026-06-03 · 2026年2月轮次投资方 · 15亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b8b7d456eceee943"
-        },
-        {
           "description": "融资来源记录：千寻智能 · 其他融资 · 2026-02-24 · 本轮参投 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ee3064edf7c871f4"
+        },
+        {
+          "description": "融资来源记录：千寻智能 · 历史轮次未披露 · 2026-02 · 2026年2月轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b8b7d456eceee943"
         }
       ],
       "contacts": [],

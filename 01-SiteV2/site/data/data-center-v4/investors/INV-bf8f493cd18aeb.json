@@ -70,7 +70,7 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-09-02",
-    "latest_disclosed_at": "2026-09-17",
+    "latest_disclosed_at": "2026-03-31",
     "role_counts": {
       "historical_or_ambiguous": 1,
       "lead": 1,
@@ -93,48 +93,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-27831cc08718f890",
-        "funding_insight_id": "FI-72df07926e3369ef",
-        "event_ids": [
-          "EV-26a5749d8604455a",
-          "EV-40d4ce6d936d4d49"
-        ],
-        "company_entity_id": "EN-d41ebd9f02722fc8",
-        "company_canonical_entity_id": "EN-d41ebd9f02722fc8",
-        "company_name": "Crusoe",
-        "round": "F轮",
-        "round_code": "series_f",
-        "round_original": "Series F",
-        "amount_original": "$3.9B",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 3900000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "39 亿美元"
-        },
-        "announced_at": "2026-09-17",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "历史轮次投资方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-4afc17abd0ce2781",
-            "source_url": "https://sacra.com/c/crusoe/",
-            "source_title": "Crusoe revenue, valuation & funding | Sacra",
-            "source_content_hash": "031d223859c249dd",
-            "quote": "Notable investors beyond the Series D participants include Fidelity, Mubadala, Ribbit Capital, and Long Journey Ventures.",
-            "quote_hash": "253edf90d0e9e4ee8916dbb3a27d6bdf86519572600a3a3ef41bdba815507644"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-e1200bc59fec92fc",
+        "activity_id": "IA-b5eec4c5bd209f75",
         "funding_insight_id": "FI-b76fffbf5d0d91bd",
         "event_ids": [
           "EV-d4e44892226be468"
@@ -174,7 +133,7 @@
         ]
       },
       {
-        "activity_id": "IA-3a1a1e2ae1602ba0",
+        "activity_id": "IA-afa18b3c974976a1",
         "funding_insight_id": "FI-0312b291d6672487",
         "event_ids": [
           "EV-201b25d4f3cf696a"
@@ -212,17 +171,42 @@
             "quote_hash": "dce639bc69cadea033e718af0a0afa1978ea9dbfacc2ce9e42b084fc7970c741"
           }
         ]
+      },
+      {
+        "activity_id": "IA-5a518cc7f678572c",
+        "funding_insight_id": "FI-72df07926e3369ef",
+        "event_ids": [
+          "EV-26a5749d8604455a",
+          "EV-40d4ce6d936d4d49"
+        ],
+        "company_entity_id": "EN-d41ebd9f02722fc8",
+        "company_canonical_entity_id": "EN-d41ebd9f02722fc8",
+        "company_name": "Crusoe",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-4afc17abd0ce2781",
+            "source_url": "https://sacra.com/c/crusoe/",
+            "source_title": "Crusoe revenue, valuation & funding | Sacra",
+            "source_content_hash": "031d223859c249dd",
+            "quote": "Notable investors beyond the Series D participants include Fidelity, Mubadala, Ribbit Capital, and Long Journey Ventures.",
+            "quote_hash": "253edf90d0e9e4ee8916dbb3a27d6bdf86519572600a3a3ef41bdba815507644"
+          }
+        ]
       }
     ],
     "evidence": [
-      {
-        "source_id": "FISRC-4afc17abd0ce2781",
-        "source_url": "https://sacra.com/c/crusoe/",
-        "source_title": "Crusoe revenue, valuation & funding | Sacra",
-        "source_content_hash": "031d223859c249dd",
-        "quote": "Notable investors beyond the Series D participants include Fidelity, Mubadala, Ribbit Capital, and Long Journey Ventures.",
-        "quote_hash": "253edf90d0e9e4ee8916dbb3a27d6bdf86519572600a3a3ef41bdba815507644"
-      },
       {
         "source_id": "FISRC-1e2b3bad243bd066",
         "source_url": "https://yespress.io/openais-122-b-megaround",
@@ -238,6 +222,14 @@
         "source_content_hash": "e918313869a22b8d",
         "quote": "Anthropic announced a $13 billion Series F round on September 2 that valued the company at $183 billion. The round was led by Iconiq, Fidelity, and Lightspeed.",
         "quote_hash": "dce639bc69cadea033e718af0a0afa1978ea9dbfacc2ce9e42b084fc7970c741"
+      },
+      {
+        "source_id": "FISRC-4afc17abd0ce2781",
+        "source_url": "https://sacra.com/c/crusoe/",
+        "source_title": "Crusoe revenue, valuation & funding | Sacra",
+        "source_content_hash": "031d223859c249dd",
+        "quote": "Notable investors beyond the Series D participants include Fidelity, Mubadala, Ribbit Capital, and Long Journey Ventures.",
+        "quote_hash": "253edf90d0e9e4ee8916dbb3a27d6bdf86519572600a3a3ef41bdba815507644"
       }
     ],
     "public_profile": {
@@ -245,14 +237,10 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Fidelity 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Fidelity 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-03-31；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
-        {
-          "description": "融资来源记录：Crusoe · F轮 · 2026-09-17 · 历史轮次投资方 · $3.9B。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-4afc17abd0ce2781"
-        },
         {
           "description": "融资来源记录：OpenAI · F轮 · 2026-03-31 · 本轮参投 · $1220亿。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1e2b3bad243bd066"
@@ -260,18 +248,14 @@
         {
           "description": "融资来源记录：Anthropic · F轮 · 2025-09-02 · 本轮领投 · $13 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c5289e6345684ca4"
+        },
+        {
+          "description": "融资来源记录：Crusoe · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-4afc17abd0ce2781"
         }
       ],
       "contacts": [],
       "sources": [
-        {
-          "source_id": "FISRC-4afc17abd0ce2781",
-          "source_url": "https://sacra.com/c/crusoe/",
-          "source_title": "Crusoe revenue, valuation & funding | Sacra",
-          "source_content_hash": "031d223859c249dd",
-          "quote": "Notable investors beyond the Series D participants include Fidelity, Mubadala, Ribbit Capital, and Long Journey Ventures.",
-          "quote_hash": "253edf90d0e9e4ee8916dbb3a27d6bdf86519572600a3a3ef41bdba815507644"
-        },
         {
           "source_id": "FISRC-1e2b3bad243bd066",
           "source_url": "https://yespress.io/openais-122-b-megaround",
@@ -287,6 +271,14 @@
           "source_content_hash": "e918313869a22b8d",
           "quote": "Anthropic announced a $13 billion Series F round on September 2 that valued the company at $183 billion. The round was led by Iconiq, Fidelity, and Lightspeed.",
           "quote_hash": "dce639bc69cadea033e718af0a0afa1978ea9dbfacc2ce9e42b084fc7970c741"
+        },
+        {
+          "source_id": "FISRC-4afc17abd0ce2781",
+          "source_url": "https://sacra.com/c/crusoe/",
+          "source_title": "Crusoe revenue, valuation & funding | Sacra",
+          "source_content_hash": "031d223859c249dd",
+          "quote": "Notable investors beyond the Series D participants include Fidelity, Mubadala, Ribbit Capital, and Long Journey Ventures.",
+          "quote_hash": "253edf90d0e9e4ee8916dbb3a27d6bdf86519572600a3a3ef41bdba815507644"
         }
       ],
       "last_verified_at": "2026-09-26"

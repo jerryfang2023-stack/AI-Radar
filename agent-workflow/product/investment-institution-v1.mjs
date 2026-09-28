@@ -78,6 +78,16 @@ function roleCode(role = "", scope = "current_round") {
   return "other_current_round";
 }
 
+function historicalAnnouncementDate(item = {}) {
+  const raw = item.announced_at || item.round_context?.announced_at || item.round_context?.date || item.role || "";
+  const match = String(raw).match(/(?:^|[^\d])((?:19|20)\d{2})[-/.年](0?[1-9]|1[0-2])(?:[-/.月](0?[1-9]|[12]\d|3[01])日?)?/u);
+  if (!match) return "";
+  const month = match[2].padStart(2, "0");
+  return match[3]
+    ? `${match[1]}-${month}-${match[3].padStart(2, "0")}`
+    : `${match[1]}-${month}`;
+}
+
 function investorKind(rows = [], entityIndex = {}, identity = {}) {
   const peopleIds = new Set((entityIndex.people || []).map((entity) => entity.id));
   const items = rows.map((row) => row.item);
@@ -124,7 +134,8 @@ function compactActivity(activity) {
 }
 
 function activityId(card, item, scope, name) {
-  const amount = card.financing?.amount_normalized || {};
+  const currentRound = scope === "current_round";
+  const amount = currentRound ? card.financing?.amount_normalized || {} : {};
   const evidenceKey = (item.evidence_refs || [])
     .map((evidence) => evidence.quote_hash || clean(evidence.quote))
     .filter(Boolean)
@@ -134,7 +145,8 @@ function activityId(card, item, scope, name) {
     normalizedName(name),
     scope,
     roleCode(item.role, scope),
-    card.financing?.round_code || "",
+    currentRound ? card.financing?.round_code || "" : item.round_context?.code || "",
+    currentRound ? "" : historicalAnnouncementDate(item),
     amount.currency || "",
     amount.value ?? amount.min_value ?? "",
     amount.max_value ?? "",
@@ -216,15 +228,15 @@ export function buildInvestmentInstitutionRegistry(cards = [], entityIndex = {},
       company_entity_id: card.company?.application_entity_id || card.company?.entity_id || "",
       company_canonical_entity_id: card.company?.canonical_entity_consistent ? card.company?.entity_id || "" : "",
       company_name: card.company?.name || "",
-      round: card.financing?.round || "",
-      round_code: card.financing?.round_code || "",
-      round_original: card.financing?.round_original || "",
-      amount_original: card.financing?.amount_original || card.financing?.amount || "",
-      amount_normalized: card.financing?.amount_normalized || null,
-      announced_at: card.financing?.announced_at || "",
+      round: scope === "current_round" ? card.financing?.round || "" : item.round_context?.label || "历史轮次未披露",
+      round_code: scope === "current_round" ? card.financing?.round_code || "" : item.round_context?.code || "undisclosed",
+      round_original: scope === "current_round" ? card.financing?.round_original || "" : item.round_context?.original || "",
+      amount_original: scope === "current_round" ? card.financing?.amount_original || card.financing?.amount || "" : "",
+      amount_normalized: scope === "current_round" ? card.financing?.amount_normalized || null : null,
+      announced_at: scope === "current_round" ? card.financing?.announced_at || "" : historicalAnnouncementDate(item),
       market_region: card.market_scope?.market_region || "GLOBAL",
       china_market_match: card.market_scope?.market_region === "CN",
-      disclosure_status: card.financing?.disclosure_status || "unknown",
+      disclosure_status: scope === "current_round" ? card.financing?.disclosure_status || "unknown" : "unknown",
       scope,
       role: item.role || "",
       role_code: roleCode(item.role, scope),

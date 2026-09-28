@@ -69,8 +69,8 @@
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-07-02",
-    "latest_disclosed_at": "2026-09-15",
+    "first_disclosed_at": "",
+    "latest_disclosed_at": "",
     "role_counts": {
       "historical_or_ambiguous": 2
     },
@@ -78,47 +78,7 @@
     "portfolio_companies": [],
     "activities": [
       {
-        "activity_id": "IA-93a1ef510cb09131",
-        "funding_insight_id": "FI-54e748b1e6abf463",
-        "event_ids": [
-          "EV-d98c10d4cba51686"
-        ],
-        "company_entity_id": "EN-2777b5a794959a7d",
-        "company_canonical_entity_id": "",
-        "company_name": "上海宇道生物技术有限公司",
-        "round": "C1轮",
-        "round_code": "series_c1",
-        "round_original": "C1轮",
-        "amount_original": "数千万美元",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": null,
-          "min_value": 20000000,
-          "max_value": 90000000,
-          "unit": "base",
-          "status": "range",
-          "display_zh": "数千万美元"
-        },
-        "announced_at": "2026-09-15",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "A+轮领投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-163d5b5325339f27",
-            "source_url": "https://www.vbdata.cn/54325",
-            "source_title": "【首发】宇道生物宣布完成4000万美金A+轮融资，全面推进基于蛋白构象调节的药物研发平台及创新管线-动脉网",
-            "source_content_hash": "cd3cadd497747101",
-            "quote": "本次融资由元生资本领投，恒旭资本联合领投",
-            "quote_hash": "108c49894d6894d18fd21e5eeedef2fa9356c08e018d82520ac6d3fefa966987"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-67ffaecf2e2beab7",
+        "activity_id": "IA-302ce8e69e5ea165",
         "funding_insight_id": "FI-b1494fe383b9e92d",
         "event_ids": [
           "EV-e8f381baf505ac32"
@@ -126,23 +86,15 @@
         "company_entity_id": "EN-60d2cc785c19e818",
         "company_canonical_entity_id": "EN-60d2cc785c19e818",
         "company_name": "三启万物",
-        "round": "战略融资",
-        "round_code": "strategic",
-        "round_original": "战略融资",
-        "amount_original": "10亿人民币",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 1000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "10 亿元"
-        },
-        "announced_at": "2026-07-02",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "CN",
         "china_market_match": true,
-        "disclosure_status": "disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "老股东持续追投",
         "role_code": "historical_or_ambiguous",
@@ -156,17 +108,41 @@
             "quote_hash": "08ef92f098bf62a5aa936148c107ee1fa09fdbc1ff090e097b919bdd522b3dec"
           }
         ]
+      },
+      {
+        "activity_id": "IA-e93ab7da9514e16f",
+        "funding_insight_id": "FI-54e748b1e6abf463",
+        "event_ids": [
+          "EV-d98c10d4cba51686"
+        ],
+        "company_entity_id": "EN-2777b5a794959a7d",
+        "company_canonical_entity_id": "",
+        "company_name": "上海宇道生物技术有限公司",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "A+轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-163d5b5325339f27",
+            "source_url": "https://www.vbdata.cn/54325",
+            "source_title": "【首发】宇道生物宣布完成4000万美金A+轮融资，全面推进基于蛋白构象调节的药物研发平台及创新管线-动脉网",
+            "source_content_hash": "cd3cadd497747101",
+            "quote": "本次融资由元生资本领投，恒旭资本联合领投",
+            "quote_hash": "108c49894d6894d18fd21e5eeedef2fa9356c08e018d82520ac6d3fefa966987"
+          }
+        ]
       }
     ],
     "evidence": [
-      {
-        "source_id": "FISRC-163d5b5325339f27",
-        "source_url": "https://www.vbdata.cn/54325",
-        "source_title": "【首发】宇道生物宣布完成4000万美金A+轮融资，全面推进基于蛋白构象调节的药物研发平台及创新管线-动脉网",
-        "source_content_hash": "cd3cadd497747101",
-        "quote": "本次融资由元生资本领投，恒旭资本联合领投",
-        "quote_hash": "108c49894d6894d18fd21e5eeedef2fa9356c08e018d82520ac6d3fefa966987"
-      },
       {
         "source_id": "FISRC-a4dbd49c64cb5834",
         "source_url": "https://news.pedaily.cn/202607/565779.shtml",
@@ -174,6 +150,14 @@
         "source_content_hash": "3e7e05417d6a96b1",
         "quote": "老股东 渶策资本、元生资本 持续追投。",
         "quote_hash": "08ef92f098bf62a5aa936148c107ee1fa09fdbc1ff090e097b919bdd522b3dec"
+      },
+      {
+        "source_id": "FISRC-163d5b5325339f27",
+        "source_url": "https://www.vbdata.cn/54325",
+        "source_title": "【首发】宇道生物宣布完成4000万美金A+轮融资，全面推进基于蛋白构象调节的药物研发平台及创新管线-动脉网",
+        "source_content_hash": "cd3cadd497747101",
+        "quote": "本次融资由元生资本领投，恒旭资本联合领投",
+        "quote_hash": "108c49894d6894d18fd21e5eeedef2fa9356c08e018d82520ac6d3fefa966987"
       }
     ],
     "public_profile": {
@@ -181,29 +165,21 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "元生资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "元生资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：上海宇道生物技术有限公司 · C1轮 · 2026-09-15 · A+轮领投 · 数千万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-163d5b5325339f27"
+          "description": "融资来源记录：三启万物 · 历史轮次未披露 · 老股东持续追投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-a4dbd49c64cb5834"
         },
         {
-          "description": "融资来源记录：三启万物 · 战略融资 · 2026-07-02 · 老股东持续追投 · 10亿人民币。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-a4dbd49c64cb5834"
+          "description": "融资来源记录：上海宇道生物技术有限公司 · 历史轮次未披露 · A+轮领投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-163d5b5325339f27"
         }
       ],
       "contacts": [],
       "sources": [
-        {
-          "source_id": "FISRC-163d5b5325339f27",
-          "source_url": "https://www.vbdata.cn/54325",
-          "source_title": "【首发】宇道生物宣布完成4000万美金A+轮融资，全面推进基于蛋白构象调节的药物研发平台及创新管线-动脉网",
-          "source_content_hash": "cd3cadd497747101",
-          "quote": "本次融资由元生资本领投，恒旭资本联合领投",
-          "quote_hash": "108c49894d6894d18fd21e5eeedef2fa9356c08e018d82520ac6d3fefa966987"
-        },
         {
           "source_id": "FISRC-a4dbd49c64cb5834",
           "source_url": "https://news.pedaily.cn/202607/565779.shtml",
@@ -211,6 +187,14 @@
           "source_content_hash": "3e7e05417d6a96b1",
           "quote": "老股东 渶策资本、元生资本 持续追投。",
           "quote_hash": "08ef92f098bf62a5aa936148c107ee1fa09fdbc1ff090e097b919bdd522b3dec"
+        },
+        {
+          "source_id": "FISRC-163d5b5325339f27",
+          "source_url": "https://www.vbdata.cn/54325",
+          "source_title": "【首发】宇道生物宣布完成4000万美金A+轮融资，全面推进基于蛋白构象调节的药物研发平台及创新管线-动脉网",
+          "source_content_hash": "cd3cadd497747101",
+          "quote": "本次融资由元生资本领投，恒旭资本联合领投",
+          "quote_hash": "108c49894d6894d18fd21e5eeedef2fa9356c08e018d82520ac6d3fefa966987"
         }
       ],
       "last_verified_at": "2026-09-26"

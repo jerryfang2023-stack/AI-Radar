@@ -70,7 +70,7 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-20",
-    "latest_disclosed_at": "2026-07-23",
+    "latest_disclosed_at": "2026-06-17",
     "role_counts": {
       "historical_or_ambiguous": 1,
       "other_current_round": 2
@@ -93,48 +93,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-0f58fcf41811bc58",
-        "funding_insight_id": "FI-cb627f50984e7151",
-        "event_ids": [
-          "EV-136b2edc9b9f3be8",
-          "EV-3fb827f44ea109de"
-        ],
-        "company_entity_id": "EN-382635c9325bf327",
-        "company_canonical_entity_id": "",
-        "company_name": "Paper",
-        "round": "A轮",
-        "round_code": "series_a",
-        "round_original": "Series A",
-        "amount_original": "$34 million",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 34000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "3400 万美元"
-        },
-        "announced_at": "2026-07-23",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "既有投资方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-23493910baa1c861",
-            "source_url": "https://paper.design/blog/series-a",
-            "source_title": "Paper raises $34M to build the next great design platform",
-            "source_content_hash": "6bc97de07bc79d43",
-            "quote": "renewed support from Basecase , David Hoang , and Guillermo Rauch",
-            "quote_hash": "1baed8cd191b5a894d6d20133e4b48def378dd66b46ca8e4318e83e5d532187e"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-47b30db90de31ee8",
+        "activity_id": "IA-50a6ba92c2508266",
         "funding_insight_id": "FI-479f9d5c1123dba2",
         "event_ids": [
           "EV-a00763037a94d512"
@@ -174,7 +133,7 @@
         ]
       },
       {
-        "activity_id": "IA-5b9935a493fe2f5f",
+        "activity_id": "IA-7a3d505d250e6954",
         "funding_insight_id": "FI-664cc90f57688153",
         "event_ids": [
           "EV-44a4e92c03a31ab1"
@@ -212,17 +171,42 @@
             "quote_hash": "6b965a8613678fcfe409fce17923820138ced0bd91dcf84eb0de87c55a4df31c"
           }
         ]
+      },
+      {
+        "activity_id": "IA-d50ced700258ea1e",
+        "funding_insight_id": "FI-cb627f50984e7151",
+        "event_ids": [
+          "EV-136b2edc9b9f3be8",
+          "EV-3fb827f44ea109de"
+        ],
+        "company_entity_id": "EN-382635c9325bf327",
+        "company_canonical_entity_id": "",
+        "company_name": "Paper",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "既有投资方",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-23493910baa1c861",
+            "source_url": "https://paper.design/blog/series-a",
+            "source_title": "Paper raises $34M to build the next great design platform",
+            "source_content_hash": "6bc97de07bc79d43",
+            "quote": "renewed support from Basecase , David Hoang , and Guillermo Rauch",
+            "quote_hash": "1baed8cd191b5a894d6d20133e4b48def378dd66b46ca8e4318e83e5d532187e"
+          }
+        ]
       }
     ],
     "evidence": [
-      {
-        "source_id": "FISRC-23493910baa1c861",
-        "source_url": "https://paper.design/blog/series-a",
-        "source_title": "Paper raises $34M to build the next great design platform",
-        "source_content_hash": "6bc97de07bc79d43",
-        "quote": "renewed support from Basecase , David Hoang , and Guillermo Rauch",
-        "quote_hash": "1baed8cd191b5a894d6d20133e4b48def378dd66b46ca8e4318e83e5d532187e"
-      },
       {
         "source_id": "FISRC-e94365d0212a78f3",
         "source_url": "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names",
@@ -238,6 +222,14 @@
         "source_content_hash": "bc6dd70ea1b6ac85",
         "quote": "Guillermo Rauch, founder and CEO of Vercel",
         "quote_hash": "6b965a8613678fcfe409fce17923820138ced0bd91dcf84eb0de87c55a4df31c"
+      },
+      {
+        "source_id": "FISRC-23493910baa1c861",
+        "source_url": "https://paper.design/blog/series-a",
+        "source_title": "Paper raises $34M to build the next great design platform",
+        "source_content_hash": "6bc97de07bc79d43",
+        "quote": "renewed support from Basecase , David Hoang , and Guillermo Rauch",
+        "quote_hash": "1baed8cd191b5a894d6d20133e4b48def378dd66b46ca8e4318e83e5d532187e"
       }
     ],
     "public_profile": {
@@ -283,16 +275,16 @@
           "source_id": "rauch_about"
         },
         {
-          "description": "融资来源记录：Paper · A轮 · 2026-07-23 · 既有投资方 · $34 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-23493910baa1c861"
-        },
-        {
           "description": "融资来源记录：Odyssey ML · B轮 · 2026-06-17 · 本轮天使投资人 · 3.1亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e94365d0212a78f3"
         },
         {
           "description": "融资来源记录：Viktor · A轮 · 2026-05-20 · 本轮天使投资人 · €64.7 million ($75 million)。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ce83b857608dabeb"
+        },
+        {
+          "description": "融资来源记录：Paper · 轮次未披露 · 既有投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-23493910baa1c861"
         }
       ],
       "contacts": [],
@@ -304,14 +296,6 @@
           "source_content_hash": "7e6f396830e994163179edc11be9ace14209bb7a2097d5a36a72dea4193332b7",
           "quote": "I’m a software engineer and CEO of Vercel. I started my first company Cloudup in SF which was later acquired by Automattic. After being involved in creating numerous influential open source projects like Socket.IO and Mongoose, I saw the opportunity in creating tooling and cloud infrastructure to make the Web faster. Next.js and Vercel were born.",
           "quote_hash": "174fffc4e94c3f180dc30793d1400423e831df0724b3ef3b96544f416160cbd5"
-        },
-        {
-          "source_id": "FISRC-23493910baa1c861",
-          "source_url": "https://paper.design/blog/series-a",
-          "source_title": "Paper raises $34M to build the next great design platform",
-          "source_content_hash": "6bc97de07bc79d43",
-          "quote": "renewed support from Basecase , David Hoang , and Guillermo Rauch",
-          "quote_hash": "1baed8cd191b5a894d6d20133e4b48def378dd66b46ca8e4318e83e5d532187e"
         },
         {
           "source_id": "FISRC-e94365d0212a78f3",
@@ -328,6 +312,14 @@
           "source_content_hash": "bc6dd70ea1b6ac85",
           "quote": "Guillermo Rauch, founder and CEO of Vercel",
           "quote_hash": "6b965a8613678fcfe409fce17923820138ced0bd91dcf84eb0de87c55a4df31c"
+        },
+        {
+          "source_id": "FISRC-23493910baa1c861",
+          "source_url": "https://paper.design/blog/series-a",
+          "source_title": "Paper raises $34M to build the next great design platform",
+          "source_content_hash": "6bc97de07bc79d43",
+          "quote": "renewed support from Basecase , David Hoang , and Guillermo Rauch",
+          "quote_hash": "1baed8cd191b5a894d6d20133e4b48def378dd66b46ca8e4318e83e5d532187e"
         }
       ],
       "last_verified_at": "2026-09-25",
