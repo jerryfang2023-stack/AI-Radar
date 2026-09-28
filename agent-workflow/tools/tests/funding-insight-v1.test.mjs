@@ -2111,6 +2111,44 @@ test("short event headline binds one accepted intake article without a shared so
   assert.notEqual(subjectCompanyForEvent(event, entities, {}, [claim], ambiguousQuotes)?.canonical_name, "Fluidstack");
 });
 
+test("an exact event source artifact reference binds its accepted intake article", () => {
+  const entities = [
+    { entity_id: "EN-HEADLINE", entity_type: "organization_candidate", canonical_name: "标题片段" },
+    { entity_id: "EN-FLUIDSTACK", entity_type: "organization_candidate", canonical_name: "Fluidstack" },
+    { entity_id: "EN-JANE-STREET", entity_type: "organization_candidate", canonical_name: "Jane Street" },
+  ];
+  const claim = {
+    claim_id: "CL-FLUIDSTACK-ARTIFACT-REF",
+    claim_type: "funding",
+    verification_status: "accepted",
+    raw_id: "RAW-V4-CLAIM-WITHOUT-INTAKE-LINK",
+    subject: "标题片段",
+    object: "融资事件",
+    source_quote: "融资消息",
+  };
+  const event = {
+    event_id: "EV-FLUIDSTACK-ARTIFACT-REF",
+    display_title_zh: "行业动态",
+    action: "完成融资",
+    object: "估值180亿美元",
+    metrics: ["15亿美元", "180亿美元"],
+    entities: entities.map((entity) => entity.entity_id),
+    claim_refs: [claim.claim_id],
+    source_refs: ["SA-FLUIDSTACK-ARTICLE"],
+  };
+  const fundingExcerpt = "近日，外媒爆出AI基础设施公司Fluidstack完成15亿美元融资，投后估值180亿美元，领投方是Jane Street。";
+  const intakeDocument = {
+    raw_id: "RAW-19462904768975cb",
+    source_artifact_id: "SA-FLUIDSTACK-ARTICLE",
+    title_original: "行业融资盘点",
+    intake_diagnostics: { key_excerpts: [{ type: "funding", text: fundingExcerpt }] },
+  };
+  const quotes = canonicalSourceQuoteBodies({ claims: [claim], sourceArtifacts: [], rawDocuments: [] }, event, [intakeDocument]);
+
+  assert.ok(quotes.includes(fundingExcerpt));
+  assert.equal(subjectCompanyForEvent(event, entities, {}, [claim], quotes)?.canonical_name, "Fluidstack");
+});
+
 test("event proceeds metric anchors a recipient when objects only carry valuation or a generic label", () => {
   const entities = [
     { entity_id: "EN-BAOYANG-HEADLINE", entity_type: "organization_candidate", canonical_name: "包养式" },
