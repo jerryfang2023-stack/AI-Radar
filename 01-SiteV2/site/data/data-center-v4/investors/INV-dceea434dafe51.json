@@ -137,21 +137,106 @@
       }
     ],
     "public_profile": {
+      "summary": "Cerulean Ventures 是关注 AI 与气候、自然系统的全球早期风险投资机构，官网将其定位为 pre-seed 投资者。首期基金投资涉及开源软件、SaaS、AI/ML，以及制药、电网和食品系统。Matthew Stotts 与 Jahed Momand 为共同创始人和合伙人。",
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Cerulean Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2025-07-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "Cerulean 自有帖文称曾在上一年支持 LGND AI 的种子前轮，但不能证明其参与后来公布的 900 万美元 Seed 轮；Seed 总额不是其投资额。",
+      "facts": [
+        {
+          "field": "stage",
+          "label": "投资阶段",
+          "value": "种子前轮、种子轮",
+          "source_id": "cerulean_stage"
+        },
+        {
+          "field": "geography",
+          "label": "投资地域",
+          "value": "全球，重点关注欧盟、美国和非洲",
+          "source_id": "cerulean_geography"
+        },
+        {
+          "field": "focus",
+          "label": "关注领域",
+          "value": "使用 AI 和数字技术推动气候与自然系统变化，关注制造、供应链、海洋、农业食品和能源",
+          "source_id": "cerulean_home"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "联合创始人、合伙人",
+          "organization": "Cerulean Ventures · Matthew Stotts",
+          "source_id": "cerulean_matthew"
+        },
+        {
+          "title": "联合创始人、合伙人",
+          "organization": "Cerulean Ventures · Jahed Momand",
+          "source_id": "cerulean_jahed"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：LGND AI, Inc. · 种子轮 · 2025-07-10 · 种子前轮领投 · $9M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Cerulean 自述其在 LGND AI 前一年的种子前轮就开始支持该公司；同帖提及之后公布 900 万美元 Seed 轮，但没有说明 Cerulean 参与 Seed 轮，也没有披露此前投资额。",
           "source_id": "FISRC-11a5fc221a4f667a"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Cerulean Ventures 官网",
+          "value": "Cerulean Ventures",
+          "url": "https://cerulean.vc/",
+          "source_id": "cerulean_home"
+        },
+        {
+          "kind": "application",
+          "label": "创始团队项目提交",
+          "value": "官网项目申请表",
+          "url": "https://cerulean.vc/founders",
+          "source_id": "cerulean_stage"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "cerulean_home",
+          "source_url": "https://cerulean.vc/",
+          "source_title": "Cerulean Ventures",
+          "source_content_hash": "91b8e2b9e8bbdee571910513c87961ef51f58bbac3a0cea87d3e299571eff3c2",
+          "quote": "Cerulean is a pre-seed venture capital firm backing founders globally who are applying AI to drive systemic change for people and planet.",
+          "quote_hash": "c7df544178b606348900aa5069d8c14e6d12239606e3b8143f107851db9a4abe"
+        },
+        {
+          "source_id": "cerulean_matthew",
+          "source_url": "https://cerulean.vc/team",
+          "source_title": "Cerulean VC - Team",
+          "source_content_hash": "c9cb46689766924dba9e1a3981adc7d2baa0e96ebc4e5c59216482206a0295d1",
+          "quote": "Matthew Stotts Co-founder and Partner",
+          "quote_hash": "78635711636d15a6d531f9b68840f40b855dbce335687f2041b789e7e4e54407"
+        },
+        {
+          "source_id": "cerulean_jahed",
+          "source_url": "https://cerulean.vc/team",
+          "source_title": "Cerulean VC - Team",
+          "source_content_hash": "c9cb46689766924dba9e1a3981adc7d2baa0e96ebc4e5c59216482206a0295d1",
+          "quote": "Jahed Momand Co-founder and Partner",
+          "quote_hash": "e084ca738788bd9140bac019a1df3e7e68126d744f26aff8ac89ac26c0b37ea8"
+        },
+        {
+          "source_id": "cerulean_stage",
+          "source_url": "https://cerulean.vc/founders",
+          "source_title": "Founder Intake | Cerulean Ventures",
+          "source_content_hash": "caffe470d6ba60082e4ea29fdedb2c6de72d5c9d8724bf8226cda83925222bee",
+          "quote": "We focus on pre-seed and seed stage companies.",
+          "quote_hash": "5e68449564334d6c8c3062fd2afad9822fc69018d7127ba22a892989658707ed"
+        },
+        {
+          "source_id": "cerulean_geography",
+          "source_url": "https://cerulean.vc/founders",
+          "source_title": "Founder Intake | Cerulean Ventures",
+          "source_content_hash": "caffe470d6ba60082e4ea29fdedb2c6de72d5c9d8724bf8226cda83925222bee",
+          "quote": "We invest globally, with a focus on the EU, US, and African continent.",
+          "quote_hash": "bae869f6250aa5f788a0b30f85a51c77eacead3f3ae1d9871cdb5fb02d58fd32"
+        },
         {
           "source_id": "FISRC-11a5fc221a4f667a",
           "source_url": "https://www.linkedin.com/posts/cerulean-ventures_lgnd-geoai-artificialintelligence-activity-7349093179654049792-Yt-1",
@@ -161,7 +246,8 @@
           "quote_hash": "7e93bb27189a5a9078e0eb546d0826262bd5e136ff03534bd41a078692039a00"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28",
+      "milestones": []
     }
   }
 }

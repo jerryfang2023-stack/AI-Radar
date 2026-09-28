@@ -137,21 +137,155 @@
       }
     ],
     "public_profile": {
+      "summary": "Clocktower Ventures 是 Clocktower Group 旗下的金融科技投资业务，关注以技术改造金融服务，覆盖消费和企业金融创新。官网称其重点在美国和拉丁美洲，投资阶段从种子期到成长阶段；并自述组合超过 250 家公司、旗舰工具承诺资本超过 3.5 亿美元。",
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Clocktower Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2025-07-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "250 多家组合公司和 3.5 亿美元承诺资本为机构官网自述，未披露统计口径。LGND AI 融资帖文将 Clocktower Ventures 列为参投方，未披露单家金额。",
+      "facts": [
+        {
+          "field": "focus",
+          "label": "投资方向",
+          "value": "利用技术改造金融服务，覆盖消费和企业金融创新",
+          "source_id": "clocktower"
+        },
+        {
+          "field": "stage_geography",
+          "label": "投资阶段和地域",
+          "value": "种子期至成长阶段；重点关注美国和拉丁美洲",
+          "source_id": "clocktower_stage_geography"
+        },
+        {
+          "field": "portfolio",
+          "label": "官网自述组合",
+          "value": "超过 250 家，包括 Chime、Melio 和 Mercury",
+          "source_id": "clocktower_metrics"
+        },
+        {
+          "field": "capital",
+          "label": "官网自述承诺资本",
+          "value": "超过 3.5 亿美元；本次于 2026-09-28 核验",
+          "source_id": "clocktower_capital"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "管理董事",
+          "organization": "Clocktower Ventures · Ned Daoro",
+          "source_id": "clocktower"
+        },
+        {
+          "title": "合伙人",
+          "organization": "Clocktower Group · Steve Drobny",
+          "source_id": "clocktower"
+        },
+        {
+          "title": "合伙人；负责 Clocktower Technology Ventures",
+          "organization": "Clocktower Group · Ben Savage",
+          "source_id": "clocktower"
+        },
+        {
+          "title": "合伙人",
+          "organization": "Clocktower Ventures · Adriana Saman",
+          "source_id": "clocktower"
+        },
+        {
+          "title": "风险合伙人",
+          "organization": "Clocktower Ventures · David Lofthouse",
+          "source_id": "clocktower"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Ned Daoro · MUFG Union Bank",
+          "title": "企业发展",
+          "period": "加入 Clocktower 前；日期未披露",
+          "description": "负责并购、剥离及企业战略项目。",
+          "source_id": "clocktower"
+        },
+        {
+          "organization": "Ben Savage · Bridgewater Associates / Artivest",
+          "title": "投资项目负责人 / 联合创始人",
+          "period": "任职日期未披露",
+          "description": "曾负责投资助理项目，并共同创办金融科技平台 Artivest。",
+          "source_id": "clocktower"
+        },
+        {
+          "organization": "David Lofthouse · Prologue Capital / JPMorgan / Goldman Sachs",
+          "title": "联合创始人、首席投资官 / 交易相关职务",
+          "period": "任职日期未披露",
+          "description": "具备宏观固定收益基金和全球交易经历。",
+          "source_id": "clocktower"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：LGND AI, Inc. · 种子轮 · 2025-07-10 · 本轮参投 · $9M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Climate Capital 关于 LGND AI 900 万美元 Seed 融资的公开帖文将 Clocktower Ventures 列为参投方；900 万美元是整轮金额。",
           "source_id": "FISRC-295efcf234fa6b4b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Clocktower Ventures 官网及联系表",
+          "value": "Clocktower Ventures",
+          "url": "https://www.clocktowerventures.com/",
+          "source_id": "clocktower_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "公开电话",
+          "value": "+1 310 458 2003",
+          "source_id": "clocktower_contact"
+        },
+        {
+          "kind": "address",
+          "label": "Santa Monica 办公地址",
+          "value": "225 Santa Monica Blvd, Floor 10, Santa Monica, CA 90401, USA",
+          "source_id": "clocktower_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "clocktower",
+          "source_url": "https://www.clocktowerventures.com/",
+          "source_title": "Clocktower Ventures",
+          "source_content_hash": "0ecc7362e2a41e7e1ad6474f5cc66247a1859e8e179cd93a7b486c718b7632ef",
+          "quote": "Clocktower Ventures backs technology companies transforming the future of financial services.",
+          "quote_hash": "28bbe3591d51855a7a77eaca807514775a7ce69cc3aa8d2788b9951505806078"
+        },
+        {
+          "source_id": "clocktower_metrics",
+          "source_url": "https://www.clocktowerventures.com/",
+          "source_title": "Clocktower Ventures",
+          "source_content_hash": "0ecc7362e2a41e7e1ad6474f5cc66247a1859e8e179cd93a7b486c718b7632ef",
+          "quote": "We have partnered with more than 250 portfolio companies including iconic businesses like Chime, Melio, and Mercury.",
+          "quote_hash": "a08d90a7a667ece7f345f026ac127c7771ab89d6fd671ff6620731a7ae90cfac"
+        },
+        {
+          "source_id": "clocktower_stage_geography",
+          "source_url": "https://www.clocktowerventures.com/",
+          "source_title": "Clocktower Ventures",
+          "source_content_hash": "0ecc7362e2a41e7e1ad6474f5cc66247a1859e8e179cd93a7b486c718b7632ef",
+          "quote": "We invest opportunistically from seed stage through growth, with a focus on the US and Latin America.",
+          "quote_hash": "2d48fb7b2668d08a600ac77697d41ee16d4eae0d8869f1787bb2b53808e43a99"
+        },
+        {
+          "source_id": "clocktower_capital",
+          "source_url": "https://www.clocktowerventures.com/",
+          "source_title": "Clocktower Ventures",
+          "source_content_hash": "0ecc7362e2a41e7e1ad6474f5cc66247a1859e8e179cd93a7b486c718b7632ef",
+          "quote": "We are currently deploying from our third flagship vehicle and manage more than $350m of committed capital.",
+          "quote_hash": "a950fd4fd914fced62a4006af14a0d6ec8ee5c9db72d9daf70b98ed7dcaa9cb2"
+        },
+        {
+          "source_id": "clocktower_contact",
+          "source_url": "https://www.clocktowerventures.com/",
+          "source_title": "Clocktower Ventures",
+          "source_content_hash": "0ecc7362e2a41e7e1ad6474f5cc66247a1859e8e179cd93a7b486c718b7632ef",
+          "quote": "+1 310 458 2003 225 Santa Monica Blvd, Floor 10 Santa Monica, CA 90401",
+          "quote_hash": "dd2744b063009b31050b3a33a2c0e971db421274435ce44efd3ff2a0b2cdef28"
+        },
         {
           "source_id": "FISRC-295efcf234fa6b4b",
           "source_url": "https://www.linkedin.com/posts/climatecap_exclusive-lgnd-wants-to-make-chatgpt-for-activity-7349146378834501632-ku4h",
@@ -161,7 +295,8 @@
           "quote_hash": "6257e14391e6665ff8acd43d3c69a92164739a995b423d1476f4ffa4f75c628c"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28",
+      "milestones": []
     }
   }
 }

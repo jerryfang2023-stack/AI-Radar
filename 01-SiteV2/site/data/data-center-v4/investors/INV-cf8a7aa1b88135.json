@@ -137,21 +137,76 @@
       }
     ],
     "public_profile": {
+      "summary": "Burst Capital 是由创业者和前运营高管组成的投资机构，2017 年由 Geoff Donaker 创立。官方团队将 Yelp 作为共同运营经历：团队称曾参与将 Yelp 从零增长至 10 亿美元收入并完成 IPO。其他合伙人有 Yelp 运营、企业财务、创业以及 Canvas Ventures、Social Capital、Summit Partners 等投资经验。",
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Burst Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "Yelp 增长和 IPO 为 Burst 团队自述的运营经历，不代表 Burst 基金收益。Hostie 1200 万美元 A 轮是整轮融资额，未披露 Burst 的单家出资金额。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2017 年，由 Geoff Donaker 创立",
+          "source_id": "burst_team"
+        },
+        {
+          "field": "team_experience",
+          "label": "合伙人背景",
+          "value": [
+            "Geoff Donaker：曾任 Yelp COO 十年。",
+            "Mike Ghaffary：曾任 Yelp 业务拓展高级副总裁、Eat24 CEO、Stitcher 与 BarMax 联合创始人；曾在 Canvas Ventures、Social Capital、Summit Partners 投资。",
+            "Wendy Lim：曾领导 Yelp 营收运营、客户支持、投资者关系和新市场职能。",
+            "Rob Krolik：曾任 Yelp CFO，并参与公司上市。"
+          ],
+          "source_id": "burst_team"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "普通合伙人",
+          "organization": "Burst Capital · Geoff Donaker",
+          "source_id": "burst_team"
+        },
+        {
+          "title": "普通合伙人",
+          "organization": "Burst Capital · Mike Ghaffary",
+          "source_id": "burst_team"
+        },
+        {
+          "title": "普通合伙人",
+          "organization": "Burst Capital · Wendy Lim",
+          "source_id": "burst_team"
+        },
+        {
+          "title": "普通合伙人兼 CFO",
+          "organization": "Burst Capital · Rob Krolik",
+          "source_id": "burst_team"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Hostie · A轮 · 2026-07-08 · 本轮参投 · $12 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Hostie 官方新闻稿称 Burst Capital 参与其 1200 万美元 A 轮；公开资料未披露 Burst 的单家投资额。",
           "source_id": "FISRC-d81171d6c6910b85"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Burst Capital 官网",
+          "value": "Burst Capital",
+          "url": "https://burst.vc/",
+          "source_id": "burst_team"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "burst_team",
+          "source_url": "https://burst.vc/team",
+          "source_title": "Burst Capital - Geoff Donaker, Mike Ghaffary, Wendy Lim, Rob Krolik",
+          "source_content_hash": "9ee9dab063094a82d7136c21e32608ae121d31c992663f38a21e73a18a643a40",
+          "quote": "Geoff founded Burst Capital in 2017, before which he was Yelp COO for a decade. Mike previously invested at Canvas Ventures, Social Capital, and Summit Partners.",
+          "quote_hash": "768ce33c1b597eba6103bfd165ccf5df55ce90ba137fe44688f0cada226b8897"
+        },
         {
           "source_id": "FISRC-d81171d6c6910b85",
           "source_url": "https://www.prnewswire.com/news-releases/hostie-raises-12m-series-a-to-power-the-future-of-restaurant-hospitality-302820521.html",
@@ -161,7 +216,8 @@
           "quote_hash": "8b99c57ea941638ff9932a3b0a80a037314fb5f9d4a578561dbd7e1312b0e84e"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28",
+      "milestones": []
     }
   }
 }
