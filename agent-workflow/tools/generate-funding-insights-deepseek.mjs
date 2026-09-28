@@ -102,6 +102,10 @@ export function selectFundingEventsForGeneration(events = [], {
   }, { pending: [], reused: [], deduplicated: [] });
 }
 
+export function checkpointCardMatchesSelection(eventId, selectedEventIds = new Set()) {
+  return selectedEventIds.size === 0 || selectedEventIds.has(eventId);
+}
+
 export function sameFundingDisclosureForReuse(event, card, claims = []) {
   const amount = normalizeFundingAmount(canonicalFundingEventAmount(event, claims));
   const previous = normalizeFundingAmount(card.financing?.amount_original || card.financing?.amount);
@@ -1169,7 +1173,9 @@ async function main() {
     const result = readJson(path.join(checkpointDir, file), {});
     const card = result.card;
     const event = eventById.get(result.event_id);
-    if (!card || !event || card.triggered_by_event_id !== event.event_id || existingByEvent.has(event.event_id)) continue;
+    if (!card || !event || card.triggered_by_event_id !== event.event_id
+      || !checkpointCardMatchesSelection(event.event_id, eventIds)
+      || existingByEvent.has(event.event_id)) continue;
     const normalized = normalizeFundingInsightCard(card, entityIndex, entityDecisions, companyIdentityReview);
     if (!fundingInsightProblems(normalized).length && !fundingEventCardConsistencyProblems(normalized, event, bundle.claims, bundle.entities).length) existingByEvent.set(event.event_id, normalized);
   }

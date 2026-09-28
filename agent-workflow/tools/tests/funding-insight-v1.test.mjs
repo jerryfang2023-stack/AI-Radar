@@ -37,11 +37,19 @@ import {
 } from "../funding-insight-v1-utils.mjs";
 import {
   canonicalSourceQuoteBodies,
+  checkpointCardMatchesSelection,
   canonicalSources,
   fundingHistory,
   recoveryCardsFromGit,
   fundingResearchNameMatches,
 } from "../generate-funding-insights-deepseek.mjs";
+
+test("targeted funding research does not restore unrelated event cards from stale checkpoints", () => {
+  const selected = new Set(["EV-current-a", "EV-current-b"]);
+  assert.equal(checkpointCardMatchesSelection("EV-current-a", selected), true);
+  assert.equal(checkpointCardMatchesSelection("EV-stale", selected), false);
+  assert.equal(checkpointCardMatchesSelection("EV-any", new Set()), true);
+});
 
 test("accepted financing round takes precedence over infrastructure product descriptions", () => {
   const event = { claim_refs: ["CL-C"], object: "软硬一体基础设施支撑具身智能产业落地", display_title_zh: "地瓜机器人完成4亿美元C轮融资" };

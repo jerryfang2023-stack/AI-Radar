@@ -20,19 +20,27 @@ test("daily financing preserves individual card results inside the restored lane
 });
 test("domestic pipeline can use reviewed multi-method research seeds when search quotas are unavailable", () => {
   const sourceDir = "agent-workflow/reports/china-funding/2026-09-28";
-  const eventId = "EV-79d08b14ff147531";
-  const generator = chinaFundingPlan("2026-09-28", sourceDir, { researchSeeds: true, researchSeedEventIds: [eventId] })
+  const eventIds = ["EV-aaaaaaaaaaaaaaaa", "EV-bbbbbbbbbbbbbbbb"];
+  const generator = chinaFundingPlan("2026-09-28", sourceDir, { researchSeeds: true, researchSeedEventIds: eventIds })
     .flatMap((stage) => stage.commands)
     .find((args) => args[0].endsWith("/generate-funding-insights-deepseek.mjs"));
   assert.ok(generator.includes(`--research-seeds=${sourceDir}/funding-research-seeds.json`));
   assert.ok(generator.includes("--force=true"));
-  assert.ok(generator.includes(`--event-ids=${eventId}`));
+  assert.ok(generator.includes(`--event-ids=${eventIds.join(",")}`));
   const normalGenerator = chinaFundingPlan("2026-09-28", sourceDir)
     .flatMap((stage) => stage.commands)
     .find((args) => args[0].endsWith("/generate-funding-insights-deepseek.mjs"));
   assert.ok(!normalGenerator.some((arg) => arg.startsWith("--research-seeds=")));
   assert.ok(!normalGenerator.includes("--force=true"));
   assert.throws(() => chinaFundingPlan("2026-09-28", sourceDir, { researchSeeds: true }), /research_seed_event_ids_required/u);
+});
+test("resuming after seed or code changes discards only stale per-event card checkpoints", () => {
+  const workflow = fs.readFileSync(path.join(root, ".github/workflows/china-funding-pr.yml"), "utf8");
+  const restore = workflow.split("- name: Restore failed run checkpoint without recollection")[1].split("- name: Collect each domestic publisher independently")[0];
+  assert.match(restore, /gh run view "\$RESUME_RUN" --json headSha --jq \.headSha/u);
+  assert.match(restore, /sha256sum "\$checkpoint_seeds"/u);
+  assert.match(restore, /\[ "\$checkpoint_seed_hash" != "\$current_seed_hash" \] \|\| \[ "\$source_head" != "\$current_head" \]/u);
+  assert.match(restore, /find "\$lane\/card-checkpoints" -maxdepth 1 -type f -name 'EV-\*\.json' -delete/u);
 });
 test("financing commentary and multi-event headlines cannot become company financing facts", () => {
   const source = { published_at: "2026-09-14", acquisition_channel: "china-funding" };
