@@ -49,7 +49,7 @@ window.WaveSightOpsConsole = {
           "key": "MINIPROGRAM",
           "label": "微信小程序",
           "category": "融资产品",
-          "value": "1.1.4",
+          "value": "1.1.6",
           "source": "02-Miniprogram/package.json",
           "status": "源码版本 · 微信线上待核验",
           "kind": "source",
@@ -315,7 +315,7 @@ window.WaveSightOpsConsole = {
         "key": "MINIPROGRAM",
         "label": "微信小程序",
         "category": "融资产品",
-        "value": "1.1.4",
+        "value": "1.1.6",
         "source": "02-Miniprogram/package.json",
         "status": "源码版本 · 微信线上待核验",
         "kind": "source",
@@ -519,7 +519,7 @@ window.WaveSightOpsConsole = {
   },
   "meta": {
     "version": "OPS-V3.8.0-engineering-integration",
-    "generatedAt": "2026-09-28T06:14:53.913Z",
+    "generatedAt": "2026-09-28T13:23:44.058Z",
     "date": "2026-09-28",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
@@ -1574,7 +1574,7 @@ window.WaveSightOpsConsole = {
       }
     ],
     "sourceQuality": {
-      "updatedAt": "2026-09-28T06:14:53.904Z",
+      "updatedAt": "2026-09-28T13:23:44.051Z",
       "sampleNote": "按最新 V4 RawDocument 的 acquisition_channel 聚合；样本量为已落盘 Raw 文档数。",
       "metricNote": "诊断分由可用率、全文率、高质提取率、可读性和事实命中率组成，仅用于运营观察，不参与来源准入、排序或事实门禁。",
       "rows": [
@@ -1639,7 +1639,7 @@ window.WaveSightOpsConsole = {
     "chinaFunding": {
       "schema_version": "CHINA-FUNDING-HEALTH-V1.0",
       "date": "2026-09-28",
-      "generated_at": "2026-09-28T06:14:48.114Z",
+      "generated_at": "2026-09-28T13:23:35.285Z",
       "status": "failed",
       "last_collection_at": "2026-09-28T00:15:39.011Z",
       "failed_stage": "projections",
@@ -1647,23 +1647,26 @@ window.WaveSightOpsConsole = {
         {
           "id": "capture",
           "status": "passed",
-          "started_at": "2026-09-28T06:12:18.869Z",
+          "started_at": "2026-09-28T13:21:25.770Z",
           "reused": true,
-          "reused_accepted_capture": true,
-          "finished_at": "2026-09-28T06:12:25.219Z"
+          "source_stage_reason": "explicit_user_secondary_search_sources_only",
+          "secondary_search_candidate_count": 3,
+          "reused_source_count": 105,
+          "new_candidate_count": 3,
+          "finished_at": "2026-09-28T13:21:42.123Z"
         },
         {
           "id": "facts",
           "status": "passed",
-          "started_at": "2026-09-28T06:12:25.219Z",
-          "finished_at": "2026-09-28T06:14:23.239Z"
+          "started_at": "2026-09-28T13:21:42.124Z",
+          "finished_at": "2026-09-28T13:23:15.166Z"
         },
         {
           "id": "projections",
           "status": "failed",
-          "started_at": "2026-09-28T06:14:23.239Z",
+          "started_at": "2026-09-28T13:23:15.166Z",
           "error": "Command failed: agent-workflow/tools/assert-funding-insights-v1.mjs (1)",
-          "finished_at": "2026-09-28T06:14:47.977Z"
+          "finished_at": "2026-09-28T13:23:35.153Z"
         }
       ],
       "sources": [
@@ -1834,8 +1837,8 @@ window.WaveSightOpsConsole = {
           "status": "collected",
           "response_ms": 21909,
           "completed_at": "2026-09-28T00:13:31.667Z",
-          "raw_count": 13,
-          "readable_count": 13,
+          "raw_count": 14,
+          "readable_count": 14,
           "accepted_claims": 7,
           "verified_event_ids": [
             "EV-79d08b14ff147531",
@@ -1849,7 +1852,7 @@ window.WaveSightOpsConsole = {
           "card_ids": [
             "FI-85004d0ca806b8ac"
           ],
-          "latest_disclosure": "2026-09-27T11:16:00.000Z"
+          "latest_disclosure": "2026-09-28T03:30:00.000Z"
         },
         {
           "source_id": "36kr",
@@ -1922,18 +1925,20 @@ window.WaveSightOpsConsole = {
           "status": "partial",
           "response_ms": 34849,
           "completed_at": "2026-09-28T00:14:06.516Z",
-          "raw_count": 12,
-          "readable_count": 12,
-          "accepted_claims": 1,
+          "raw_count": 13,
+          "readable_count": 13,
+          "accepted_claims": 2,
           "verified_event_ids": [
-            "EV-87d382f1816746c4"
+            "EV-87d382f1816746c4",
+            "EV-acb54f84cd8e9d94"
           ],
           "funding_event_ids": [
-            "EV-87d382f1816746c4"
+            "EV-87d382f1816746c4",
+            "EV-acb54f84cd8e9d94"
           ],
           "china_funding_event_ids": [],
           "card_ids": [],
-          "latest_disclosure": "2026-09-28T00:59:10.000Z"
+          "latest_disclosure": "2026-09-28T13:21:29.000Z"
         },
         {
           "source_id": "cyzone",
@@ -2084,8 +2089,8 @@ window.WaveSightOpsConsole = {
           "status": "collected",
           "response_ms": 21782,
           "completed_at": "2026-09-28T00:14:51.708Z",
-          "raw_count": 21,
-          "readable_count": 21,
+          "raw_count": 22,
+          "readable_count": 22,
           "accepted_claims": 0,
           "verified_event_ids": [],
           "funding_event_ids": [],
@@ -2259,13 +2264,13 @@ window.WaveSightOpsConsole = {
       "totals": {
         "sources_attempted": 7,
         "sources_failed": 0,
-        "candidates": 107,
-        "readable_documents": 105,
-        "accepted_claims": 16,
-        "verified_events": 9,
-        "funding_events": 9,
+        "candidates": 110,
+        "readable_documents": 108,
+        "accepted_claims": 17,
+        "verified_events": 10,
+        "funding_events": 10,
         "china_funding_events": 1,
-        "linked_organizations": 15,
+        "linked_organizations": 16,
         "linked_products": 0,
         "published_card_matches": 5
       },
@@ -23562,7 +23567,7 @@ window.WaveSightOpsConsole = {
         "key": "MINIPROGRAM",
         "label": "微信小程序",
         "category": "融资产品",
-        "value": "1.1.4",
+        "value": "1.1.6",
         "source": "02-Miniprogram/package.json",
         "status": "源码版本 · 微信线上待核验",
         "kind": "source",
@@ -23758,7 +23763,7 @@ window.WaveSightOpsConsole = {
         "name": "follow-builders",
         "sourceKind": "project",
         "sourcePath": "agent-workflow/skills/follow-builders",
-        "sourceDigest": "d097bc07af6d0789dfd21e22eeabf1fc56da22c190e966e9dd3ca649f2f86da8",
+        "sourceDigest": "b24aa32aa7aa8374959e758c9258842e2a94ba63470235f6fe96f12356716fd7",
         "platformIds": [
           "data-center"
         ],
@@ -23786,7 +23791,7 @@ window.WaveSightOpsConsole = {
         "name": "guanlan-china-funding-monitor",
         "sourceKind": "project",
         "sourcePath": "agent-workflow/skills/guanlan-china-funding-monitor",
-        "sourceDigest": "139bc630dd25359ff7c81c5017d71a8c49d6fac44a93731e869cb3f19829e7ad",
+        "sourceDigest": "6eeedb3b8e0e23df05b1926bd0a6d4a52b81c53d120479c38b1160f77624c951",
         "platformIds": [
           "shared"
         ],
@@ -23814,7 +23819,7 @@ window.WaveSightOpsConsole = {
         "name": "guanlan-community-intelligence-monitor",
         "sourceKind": "project",
         "sourcePath": "agent-workflow/skills/guanlan-community-intelligence-monitor",
-        "sourceDigest": "902216adeda4c926331b16b01609fb6c2bb350f7a91ef19538fab8c27fa6ba14",
+        "sourceDigest": "40a2627b5b12b78eeb13eb24c1d78faed6abb3d18f013d215b5c8d4e0e602136",
         "platformIds": [
           "data-center"
         ],
@@ -23912,7 +23917,7 @@ window.WaveSightOpsConsole = {
         "name": "guanlan-first-line-viewpoints-monitor",
         "sourceKind": "project",
         "sourcePath": "agent-workflow/skills/guanlan-first-line-viewpoints-monitor",
-        "sourceDigest": "e892aa8088f8117803640e205359b0849e3b1072a723fcac042fdf154e39c6b9",
+        "sourceDigest": "877f3a084d0d5aa059b5df0b03934197430b59f212f9d1dc1dbc0e934ecea353",
         "platformIds": [
           "data-center"
         ],
@@ -28057,7 +28062,7 @@ window.WaveSightOpsConsole = {
         "key": "MINIPROGRAM",
         "label": "微信小程序",
         "category": "融资产品",
-        "value": "1.1.4",
+        "value": "1.1.6",
         "source": "02-Miniprogram/package.json",
         "status": "源码版本 · 微信线上待核验",
         "kind": "source",
@@ -28177,6 +28182,6 @@ window.WaveSightOpsConsole = {
       }
     ],
     "catalogGeneratedAt": "2026-09-13 16:21:58",
-    "snapshotGeneratedAt": "2026-09-28T06:14:53.913Z"
+    "snapshotGeneratedAt": "2026-09-28T13:23:44.058Z"
   }
 };

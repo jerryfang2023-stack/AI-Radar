@@ -4,23 +4,26 @@
     {
       "id": "capture",
       "status": "passed",
-      "started_at": "2026-09-28T06:12:18.869Z",
+      "started_at": "2026-09-28T13:21:25.770Z",
       "reused": true,
-      "reused_accepted_capture": true,
-      "finished_at": "2026-09-28T06:12:25.219Z"
+      "source_stage_reason": "explicit_user_secondary_search_sources_only",
+      "secondary_search_candidate_count": 3,
+      "reused_source_count": 105,
+      "new_candidate_count": 3,
+      "finished_at": "2026-09-28T13:21:42.123Z"
     },
     {
       "id": "facts",
       "status": "passed",
-      "started_at": "2026-09-28T06:12:25.219Z",
-      "finished_at": "2026-09-28T06:14:23.239Z"
+      "started_at": "2026-09-28T13:21:42.124Z",
+      "finished_at": "2026-09-28T13:23:15.166Z"
     },
     {
       "id": "projections",
       "status": "failed",
-      "started_at": "2026-09-28T06:14:23.239Z",
+      "started_at": "2026-09-28T13:23:15.166Z",
       "error": "Command failed: agent-workflow/tools/assert-funding-insights-v1.mjs (1)",
-      "finished_at": "2026-09-28T06:14:47.977Z"
+      "finished_at": "2026-09-28T13:23:35.153Z"
     }
   ]
 }
