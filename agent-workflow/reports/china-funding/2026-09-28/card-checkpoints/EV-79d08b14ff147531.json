@@ -1,64 +1,860 @@
 {
   "event_id": "EV-79d08b14ff147531",
-  "company_name": "包养式",
-  "status": "blocked",
-  "problems": [
-    "research_sources_insufficient"
-  ],
+  "company_name": "Fluidstack",
+  "status": "auto_published",
+  "card": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "funding_insight_id": "FI-e325afc8b0b09a05",
+    "triggered_by_event_id": "EV-79d08b14ff147531",
+    "as_of_date": "2026-09-28",
+    "company": {
+      "entity_id": "FICO-c10ef8fac87cdf0c",
+      "name": "Fluidstack",
+      "full_name": "Fluidstack",
+      "website": "https://fluidstack.io",
+      "summary": "Fluidstack是一家AI基础设施公司，提供大规模GPU与数据中心基础设施，面向前沿AI实验室的算力需求。公司不生产GPU、没有大模型和To C产品，核心能力是快速部署裸金属GPU集群，并通过Atlas OS平台实现算力撮合与交付。",
+      "headquarters": "纽约",
+      "founders": [
+        {
+          "name": "Gary WuF（吴嘉里）",
+          "role": "联合创始人",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1e11b12a9acdbe8b",
+              "quote": "Fluidstack两位创始人Gary WuF（吴嘉里，英籍华裔）与Jamie Cox在牛津读书时相识。",
+              "source_content_hash": "0530c0da44632add",
+              "quote_hash": "58e2e244ba189e0e0ac10229223c9a9a425470601117da7c3373a64d6d285d21"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Jamie Cox",
+          "role": "联合创始人",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1e11b12a9acdbe8b",
+              "quote": "Fluidstack两位创始人Gary WuF（吴嘉里，英籍华裔）与Jamie Cox在牛津读书时相识。",
+              "source_content_hash": "0530c0da44632add",
+              "quote_hash": "58e2e244ba189e0e0ac10229223c9a9a425470601117da7c3373a64d6d285d21"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "César Maklary",
+          "role": "联合创始人",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1e11b12a9acdbe8b",
+              "quote": "转折发生在2020年，这一年第三位联合创始人César Maklary加入了进来",
+              "source_content_hash": "0530c0da44632add",
+              "quote_hash": "d4f73f1116fcb3b4b94ccfb56411478b1692dbb7968d4f4f475387b2791ba452"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "team_size": {
+        "value": "",
+        "observed_at": "",
+        "evidence_refs": []
+      },
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-1e11b12a9acdbe8b",
+          "quote": "AI基础设施公司Fluidstack完成15亿美元融资，投后估值180亿美元（约1200亿人民币），领投方是今年频登媒体头条的量化交易巨头Jane Street。",
+          "source_content_hash": "0530c0da44632add",
+          "quote_hash": "4275a4dcde7f6a05bb81475651e28df80751b8dc829a34ce3124a06164c933e2"
+        },
+        {
+          "source_id": "FISRC-08efd4aaadc0c5f4",
+          "quote": "New York-based Fluidstack raised $1.5 billion in a private equity round led by Jane Street Capital",
+          "source_content_hash": "02e46421dba79ac9",
+          "quote_hash": "3ed04486ccc1ab0b88fba41e5aa4cbfd9e56ff5bd94ab8b5f31ba46c31ce1096"
+        }
+      ],
+      "application_entity_id": "FICO-c10ef8fac87cdf0c",
+      "canonical_entity_consistent": false
+    },
+    "financing": {
+      "round": "基础设施融资",
+      "amount": "15亿美元",
+      "total_raised": "约26亿美元",
+      "announced_at": "2026-09-27",
+      "investor_disclosure_status": "disclosed",
+      "investors": [
+        {
+          "name": "Jane Street",
+          "role": "本轮领投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1e11b12a9acdbe8b",
+              "quote": "AI基础设施公司Fluidstack完成15亿美元融资，投后估值180亿美元（约1200亿人民币），领投方是今年频登媒体头条的量化交易巨头Jane Street。",
+              "source_content_hash": "0530c0da44632add",
+              "quote_hash": "4275a4dcde7f6a05bb81475651e28df80751b8dc829a34ce3124a06164c933e2"
+            },
+            {
+              "source_id": "FISRC-08efd4aaadc0c5f4",
+              "quote": "New York-based Fluidstack raised $1.5 billion in a private equity round led by Jane Street Capital",
+              "source_content_hash": "02e46421dba79ac9",
+              "quote_hash": "3ed04486ccc1ab0b88fba41e5aa4cbfd9e56ff5bd94ab8b5f31ba46c31ce1096"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "other_round_investors": [
+        {
+          "name": "Seedcamp",
+          "role": "2019年种子轮投资方",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1e11b12a9acdbe8b",
+              "quote": "Fluidstack完成300万美元的种子轮融资，投资方包括Seedcamp、Mercuri和7 Global Capital等",
+              "source_content_hash": "0530c0da44632add",
+              "quote_hash": "2e5782ae73692f4ce10dcac4bfb01072db2121c0eae337b8f2fbef84b6d7656c"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Mercuri",
+          "role": "2019年种子轮投资方",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1e11b12a9acdbe8b",
+              "quote": "Fluidstack完成300万美元的种子轮融资，投资方包括Seedcamp、Mercuri和7 Global Capital等",
+              "source_content_hash": "0530c0da44632add",
+              "quote_hash": "2e5782ae73692f4ce10dcac4bfb01072db2121c0eae337b8f2fbef84b6d7656c"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "7 Global Capital",
+          "role": "2019年种子轮投资方",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1e11b12a9acdbe8b",
+              "quote": "Fluidstack完成300万美元的种子轮融资，投资方包括Seedcamp、Mercuri和7 Global Capital等",
+              "source_content_hash": "0530c0da44632add",
+              "quote_hash": "2e5782ae73692f4ce10dcac4bfb01072db2121c0eae337b8f2fbef84b6d7656c"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Cacti",
+          "role": "2025年2月A轮领投方",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1e11b12a9acdbe8b",
+              "quote": "2025年2月，它曾拿下了由私募股权公司Cacti领投的2亿美元的A轮融资",
+              "source_content_hash": "0530c0da44632add",
+              "quote_hash": "6b3581db14ee8ad29aad67d36cc46b69d7c2e1e0dd14d13e3cc5a0928dd16212"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Situational Awareness",
+          "role": "2026年A+轮领投方",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1e11b12a9acdbe8b",
+              "quote": "由前OpenAI研究员Leopold Aschenbrenner旗下的Situational Awareness基金领投的4.5亿美元的A+轮融资",
+              "source_content_hash": "0530c0da44632add",
+              "quote_hash": "fb3e36d7262aaa3c5929f01d6222664f79e7c00ae22e3d5f68cca274fd3272ad"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "BlackRock",
+          "role": "2026年7月A+轮增资参与方",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1e11b12a9acdbe8b",
+              "quote": "7月，这轮融资金额又增加到了8.3亿美元，领投方和估值不变，只不过，增加了BlackRock、Google、Jane Street等投资者。",
+              "source_content_hash": "0530c0da44632add",
+              "quote_hash": "7669d946bb7f868ce52758cc6df71855d543358b4fa9b1917befa77344d79064"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Google",
+          "role": "2026年7月A+轮增资参与方",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1e11b12a9acdbe8b",
+              "quote": "7月，这轮融资金额又增加到了8.3亿美元，领投方和估值不变，只不过，增加了BlackRock、Google、Jane Street等投资者。",
+              "source_content_hash": "0530c0da44632add",
+              "quote_hash": "7669d946bb7f868ce52758cc6df71855d543358b4fa9b1917befa77344d79064"
+            }
+          ],
+          "entity_id": "EN-bbdefa2950f49882"
+        },
+        {
+          "name": "Jane Street",
+          "role": "2026年7月A+轮增资参与方",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1e11b12a9acdbe8b",
+              "quote": "7月，这轮融资金额又增加到了8.3亿美元，领投方和估值不变，只不过，增加了BlackRock、Google、Jane Street等投资者。",
+              "source_content_hash": "0530c0da44632add",
+              "quote_hash": "7669d946bb7f868ce52758cc6df71855d543358b4fa9b1917befa77344d79064"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-1e11b12a9acdbe8b",
+          "quote": "近日，外媒爆出AI基础设施公司Fluidstack完成15亿美元融资，投后估值180亿美元（约1200亿人民币），领投方是今年频登媒体头条的量化交易巨头Jane Street。",
+          "source_content_hash": "0530c0da44632add",
+          "quote_hash": "cd1b42c5ffe70789a4731f010971a575a3acdf6aa1081768cd4efacea5f850fa"
+        },
+        {
+          "source_id": "FISRC-1e11b12a9acdbe8b",
+          "quote": "AI基础设施公司Fluidstack完成15亿美元融资，投后估值180亿美元（约1200亿人民币），领投方是今年频登媒体头条的量化交易巨头Jane Street。",
+          "source_content_hash": "0530c0da44632add",
+          "quote_hash": "4275a4dcde7f6a05bb81475651e28df80751b8dc829a34ce3124a06164c933e2"
+        }
+      ],
+      "round_code": "infrastructure",
+      "round_original": "基础设施融资",
+      "amount_original": "15亿美元",
+      "amount_normalized": {
+        "currency": "USD",
+        "value": 1500000000,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "exact",
+        "display_zh": "15 亿美元"
+      },
+      "total_raised_original": "约26亿美元",
+      "total_raised_normalized": {
+        "currency": "USD",
+        "value": 2600000000,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "approximate",
+        "display_zh": "约 26 亿美元"
+      },
+      "risk_markers": [],
+      "disclosures": [
+        {
+          "event_id": "EV-79d08b14ff147531",
+          "round_original": "基础设施融资",
+          "amount": "15亿美元",
+          "announced_at": "2026-09-27",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1e11b12a9acdbe8b",
+              "quote": "近日，外媒爆出AI基础设施公司Fluidstack完成15亿美元融资，投后估值180亿美元（约1200亿人民币），领投方是今年频登媒体头条的量化交易巨头Jane Street。",
+              "source_content_hash": "0530c0da44632add",
+              "quote_hash": "cd1b42c5ffe70789a4731f010971a575a3acdf6aa1081768cd4efacea5f850fa"
+            },
+            {
+              "source_id": "FISRC-1e11b12a9acdbe8b",
+              "quote": "AI基础设施公司Fluidstack完成15亿美元融资，投后估值180亿美元（约1200亿人民币），领投方是今年频登媒体头条的量化交易巨头Jane Street。",
+              "source_content_hash": "0530c0da44632add",
+              "quote_hash": "4275a4dcde7f6a05bb81475651e28df80751b8dc829a34ce3124a06164c933e2"
+            }
+          ]
+        }
+      ],
+      "disclosure_status": "disclosed"
+    },
+    "products": [
+      {
+        "name": "Atlas OS",
+        "description": "自研裸金属调度系统，用于统一管理与运营GPU集群，可在数天内自动化上线裸金属GPU集群。",
+        "target_customers": "前沿AI实验室和AI公司",
+        "features": [
+          "48小时内部署数千卡集群",
+          "模块化建设的机房约6个月通电",
+          "自动化上线裸金属GPU集群"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1e11b12a9acdbe8b",
+            "quote": "同时团队开发自研裸金属调度系统Atlas OS，用来统一管理与运营",
+            "source_content_hash": "0530c0da44632add",
+            "quote_hash": "383ee2cfbec8ae13fbe6a7d1f28d8634de23aa20d49d9beeaa60476a2c50c289"
+          },
+          {
+            "source_id": "FISRC-1e11b12a9acdbe8b",
+            "quote": "别人需要数月交付的数千卡集群，Fluidstack可以48 小时内部署上线",
+            "source_content_hash": "0530c0da44632add",
+            "quote_hash": "398e4a3a9e0352f51c4eaccd6117fb9092ac7fd7aedd1fb2c40a127b70d7d828"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Fluidstack AI云平台",
+        "description": "面向顶级AI实验室的AI云平台，提供托管Kubernetes和托管Slurm服务，支持前沿模型训练与推理。",
+        "target_customers": "顶级AI实验室",
+        "features": [
+          "托管Kubernetes",
+          "托管Slurm",
+          "拓扑感知调度",
+          "主动与被动健康检查"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b58e050c62fcd210",
+            "quote": "Fluidstack is an AI cloud platform designed from the ground up to meet the security, reliability, and scale requirements of top AI labs.",
+            "source_content_hash": "407c42572d74b9ac",
+            "quote_hash": "b54ea999b64600238dea7861b64f6dcaf04dcc7cdea4a2c224053d89aacc7853"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "customers": [
+      {
+        "name": "Anthropic",
+        "industry": "AI",
+        "use_case": "定制数据中心建设与运营，部署至多100万颗谷歌TPU",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1e11b12a9acdbe8b",
+            "quote": "Anthropic宣布500亿美元美国算力投资计划，Fluidstack被选为定制数据中心的建设与运营方，还深度参与了Anthropic部署至多100万颗谷歌TPU的计划",
+            "source_content_hash": "0530c0da44632add",
+            "quote_hash": "34059fde5bb1297a4eb98487b101d45d2d8f581fdc1c8390d286cc0fae184ccc"
+          }
+        ],
+        "entity_id": "EN-c70eca6b0f88f44d"
+      },
+      {
+        "name": "Poolside",
+        "industry": "AI",
+        "use_case": "一次性部署2500块GPU",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1e11b12a9acdbe8b",
+            "quote": "最知名案例是给Poolside一次性部署了2500块GPU",
+            "source_content_hash": "0530c0da44632add",
+            "quote_hash": "71cd49a0fc47fa9722b60b0bdad13da163e113ce4dda970c85e4ab886572167b"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Mistral AI",
+        "industry": "AI",
+        "use_case": "GPU算力租用",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1e11b12a9acdbe8b",
+            "quote": "客户名单也在快速扩容，Mistral AI、Character.ai、Poolside、Black Forest Labs等前沿AI初创公司陆续签约。",
+            "source_content_hash": "0530c0da44632add",
+            "quote_hash": "07c158bd8af3ecd5b43ed3028dc30579a35c405e6492c34f23fb2d65086a2f10"
+          }
+        ],
+        "entity_id": "EN-c04bd5ebd10ab696"
+      },
+      {
+        "name": "Character.ai",
+        "industry": "AI",
+        "use_case": "GPU算力租用",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1e11b12a9acdbe8b",
+            "quote": "客户名单也在快速扩容，Mistral AI、Character.ai、Poolside、Black Forest Labs等前沿AI初创公司陆续签约。",
+            "source_content_hash": "0530c0da44632add",
+            "quote_hash": "07c158bd8af3ecd5b43ed3028dc30579a35c405e6492c34f23fb2d65086a2f10"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Black Forest Labs",
+        "industry": "AI",
+        "use_case": "GPU算力租用",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1e11b12a9acdbe8b",
+            "quote": "客户名单也在快速扩容，Mistral AI、Character.ai、Poolside、Black Forest Labs等前沿AI初创公司陆续签约。",
+            "source_content_hash": "0530c0da44632add",
+            "quote_hash": "07c158bd8af3ecd5b43ed3028dc30579a35c405e6492c34f23fb2d65086a2f10"
+          }
+        ],
+        "entity_id": "EN-febedfcafee9d610"
+      }
+    ],
+    "comparisons": [
+      {
+        "name": "CoreWeave",
+        "product": "AI云平台",
+        "scenario": "AI算力云服务",
+        "target_customer": "AI公司",
+        "funding_summary": "",
+        "core_difference": "CoreWeave被英伟达包养，Fluidstack被Anthropic包养；Fluidstack不生产GPU，CoreWeave与英伟达深度绑定。",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1e11b12a9acdbe8b",
+            "quote": "就像市场调侃Coreweave被英伟达“包养”一样，Fluidstack实际上一家被Anthropic“包养”的公司。",
+            "source_content_hash": "0530c0da44632add",
+            "quote_hash": "52c8981075afe5804000fe9332f43f2c41da1534929f84c63195bced4a70592d"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Crusoe",
+        "product": "AI数据中心与云服务",
+        "scenario": "AI基础设施",
+        "target_customer": "OpenAI、Microsoft、Meta等",
+        "funding_summary": "本周完成30亿美元F轮融资，估值300亿美元",
+        "core_difference": "Crusoe从废弃天然气挖矿转型为AI云与数据中心提供商，Fluidstack从闲置GPU租赁转型为算力撮合与交付平台。",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-08efd4aaadc0c5f4",
+            "quote": "Originally founded to use stranded natural gas to power cryptocurrency mining, Crusoe has transformed into a major AI cloud and data center provider serving customers including OpenAI , Microsoft and Meta .",
+            "source_content_hash": "02e46421dba79ac9",
+            "quote_hash": "22e2efd97839cd7c5dc979ff0225407ea41d6a3260abe6124a77b5e2e4c35185"
+          },
+          {
+            "source_id": "FISRC-1e11b12a9acdbe8b",
+            "quote": "从倒卖闲置显卡，到估值1200亿",
+            "source_content_hash": "0530c0da44632add",
+            "quote_hash": "37729c2f615bfe98f1d4fce37e4ccffdfd93dbc87518df56077cb4ab9554c8ce"
+          }
+        ],
+        "entity_id": "EN-d41ebd9f02722fc8"
+      }
+    ],
+    "metrics": [
+      {
+        "label": "本轮融资金额",
+        "value": "15亿美元",
+        "observed_at": "2026-09-27",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1e11b12a9acdbe8b",
+            "quote": "AI基础设施公司Fluidstack完成15亿美元融资",
+            "source_content_hash": "0530c0da44632add",
+            "quote_hash": "2047b95752511638612008662e080d6c617b0865c61c92b5e5e3f64094f29d94"
+          }
+        ]
+      },
+      {
+        "label": "本轮投后估值",
+        "value": "180亿美元",
+        "observed_at": "2026-09-27",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1e11b12a9acdbe8b",
+            "quote": "投后估值180亿美元（约1200亿人民币）",
+            "source_content_hash": "0530c0da44632add",
+            "quote_hash": "c6afa21a96b7c74a4c75960383ec8a4d0547069f1ee9dacd5019d06f9d2510ec"
+          }
+        ]
+      },
+      {
+        "label": "累计股权融资",
+        "value": "约26亿美元",
+        "observed_at": "2026-09-27",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1e11b12a9acdbe8b",
+            "quote": "累计股权融资约26亿美元",
+            "source_content_hash": "0530c0da44632add",
+            "quote_hash": "7547f00c692b131e7558a2e42ac6ea802f536f86573ce7405f85962a39d753c8"
+          }
+        ]
+      },
+      {
+        "label": "2024年收入",
+        "value": "6620万美元",
+        "observed_at": "2024-12-31",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1e11b12a9acdbe8b",
+            "quote": "2024年，英国公司注册的审计报表达6620万美元。",
+            "source_content_hash": "0530c0da44632add",
+            "quote_hash": "3cd7eb0227ac601be189003102608e76f10e060c89842419a84b2b96589aab58"
+          }
+        ]
+      },
+      {
+        "label": "2026年预计收入",
+        "value": "6.6亿美元",
+        "observed_at": "2026-09-27",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1e11b12a9acdbe8b",
+            "quote": "2026年Fluidstack将在10多个站点运营1.3吉瓦算力，收入6.6亿美元",
+            "source_content_hash": "0530c0da44632add",
+            "quote_hash": "d306113430d9dfd25bc3489c07bc4a1b22eada1278a31470a7101a464057e340"
+          }
+        ]
+      },
+      {
+        "label": "2026年预计运营算力",
+        "value": "1.3吉瓦",
+        "observed_at": "2026-09-27",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1e11b12a9acdbe8b",
+            "quote": "2026年Fluidstack将在10多个站点运营1.3吉瓦算力",
+            "source_content_hash": "0530c0da44632add",
+            "quote_hash": "fa4539b3459fa5870838db3c691914427486218dd188228db41824abc56bea66"
+          }
+        ]
+      },
+      {
+        "label": "两个月前估值",
+        "value": "75亿美元",
+        "observed_at": "2026-07-20",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1e11b12a9acdbe8b",
+            "quote": "两个月前，Fluidstack刚完成7.5亿美元融资，投后估值为75亿美元",
+            "source_content_hash": "0530c0da44632add",
+            "quote_hash": "8e742e1e623ae8a936f3fd961a0f506e01d8e333c6a0b12ab99d8762d9f928b5"
+          }
+        ]
+      },
+      {
+        "label": "Anthropic美国算力投资计划",
+        "value": "500亿美元",
+        "observed_at": "2025-11-01",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1e11b12a9acdbe8b",
+            "quote": "Anthropic宣布500亿美元美国算力投资计划，Fluidstack被选为定制数据中心的建设与运营方",
+            "source_content_hash": "0530c0da44632add",
+            "quote_hash": "fd6cf3e4ae3cb2c46e3f2ed781b0ac969ab2af2ab49140cf83bc3f764fa1948c"
+          }
+        ]
+      }
+    ],
+    "quotes": [
+      {
+        "speaker": "投中网",
+        "quote": "Jane Street买的不是Fluidstack的执行力，甚至不是AI的未来，它买的是一份被Anthropic资产负债表担保的现金流凭证，两个月翻2.4倍的估值，标的不是一家公司，是一张合约。",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1e11b12a9acdbe8b",
+            "quote": "Jane Street买的不是Fluidstack的执行力，甚至不是AI的未来，它买的是一份被Anthropic资产负债表担保的现金流凭证，两个月翻2.4倍的估值，标的不是一家公司，是一张合约。",
+            "source_content_hash": "0530c0da44632add",
+            "quote_hash": "d1505b4f57ea7985ca7e64abae6e5da8bf3a1c7f6af75d88efc50b0c38cdb437"
+          }
+        ]
+      }
+    ],
+    "analysis": {
+      "investment_rationale": [],
+      "capital_judgment": "资本押注的核心变量不是Fluidstack的收入增长，而是其与Anthropic绑定的多年期巨额合同所代表的确定性现金流。180亿美元估值对应2026年预计6.6亿美元收入约27倍市销率，在传统框架下激进，但Jane Street的定价逻辑是给合同定价而非给收入定价。已验证信号包括：Anthropic 500亿美元美国算力投资计划中Fluidstack被选为定制数据中心建设与运营方，以及深度参与至多100万颗谷歌TPU部署。证据边界在于：来源未披露本轮投资机构Jane Street的公开投资原话，资本判断基于投中网对Jane Street投资逻辑的媒体分析，而非机构直接陈述。",
+      "validated_signals": [
+        "与Anthropic签订多年期巨额合同，被选为定制数据中心建设与运营方",
+        "深度参与Anthropic部署至多100万颗谷歌TPU的计划",
+        "2024年审计收入6620万美元，2026年预计收入6.6亿美元",
+        "60天内估值从75亿美元升至180亿美元"
+      ],
+      "risks": [
+        "单一客户集中度风险：Fluidstack被描述为被Anthropic包养的公司，收入高度依赖单一客户合同",
+        "建设与电力审批风险：数据中心建设周期和电力审批存在不确定性",
+        "循环融资风险：出钱的人同时是收钱的人的客户、担保人或上游供应商，体系内资金循环可能掩盖真实终端需求"
+      ],
+      "related_direction_id": "",
+      "taxonomy_version": "TAG-V4.1",
+      "product_form_id": "ai_infrastructure_software",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "hardware_computing",
+      "market_application_id": "computing_infrastructure",
+      "use_case_ids": [
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer"
+      ],
+      "sector": "AI基础设施",
+      "investment_thesis": {
+        "statement": "资本押注的核心变量不是Fluidstack的收入增长，而是其与Anthropic绑定的多年期巨额合同所代表的确定性现金流。180亿美元估值对应2026年预计6.6亿美元收入约27倍市销率，在传统框架下激进，但Jane Street的定价逻辑是给合同定价而非给收入定价。已验证信号包括：Anthropic 500亿美元美国算力投资计划中Fluidstack被选为定制数据中心建设与运营方，以及深度参与至多100万颗谷歌TPU部署。证据边界在于：来源未披露本轮投资机构Jane Street的公开投资原话，资本判断基于投中网对Jane Street投资逻辑的媒体分析，而非机构直接陈述。",
+        "evidence_signals": [
+          "与Anthropic签订多年期巨额合同，被选为定制数据中心建设与运营方",
+          "深度参与Anthropic部署至多100万颗谷歌TPU的计划",
+          "2024年审计收入6620万美元，2026年预计收入6.6亿美元",
+          "60天内估值从75亿美元升至180亿美元"
+        ],
+        "risks": [
+          "单一客户集中度风险：Fluidstack被描述为被Anthropic包养的公司，收入高度依赖单一客户合同",
+          "建设与电力审批风险：数据中心建设周期和电力审批存在不确定性",
+          "循环融资风险：出钱的人同时是收钱的人的客户、担保人或上游供应商，体系内资金循环可能掩盖真实终端需求"
+        ],
+        "institutional_rationale_status": "not_disclosed"
+      }
+    },
+    "entity_links": [
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "Atlas OS",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "Fluidstack AI云平台",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "Gary WuF（吴嘉里）",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "Jamie Cox",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "César Maklary",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Jane Street",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "Seedcamp",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "Mercuri",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "7 Global Capital",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "Cacti",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "Situational Awareness",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "BlackRock",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "Google",
+        "canonical_entity_id": "EN-bbdefa2950f49882",
+        "canonical_name": "Google"
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "Jane Street",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Anthropic",
+        "canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "canonical_name": "Anthropic"
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Poolside",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Mistral AI",
+        "canonical_entity_id": "EN-c04bd5ebd10ab696",
+        "canonical_name": "Mistral AI"
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Character.ai",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Black Forest Labs",
+        "canonical_entity_id": "EN-febedfcafee9d610",
+        "canonical_name": "Black Forest Labs"
+      },
+      {
+        "relation_type": "compared_with",
+        "target_kind": "organization",
+        "research_name": "CoreWeave",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "compared_with",
+        "target_kind": "organization",
+        "research_name": "Crusoe",
+        "canonical_entity_id": "EN-d41ebd9f02722fc8",
+        "canonical_name": "Crusoe"
+      }
+    ],
+    "funding_history": [],
+    "research_sources": [
+      {
+        "source_id": "FISRC-1e11b12a9acdbe8b",
+        "source_url": "https://www.chinaventure.com.cn/news/80-20260927-393454.html",
+        "title": "“包养式融资”，估值1200亿 60天内，这家公司的估值翻了2.4倍。 投中网 · 12小时前",
+        "publisher": "投中网",
+        "source_class": "canonical_event_source",
+        "capture_method": "data_center_v4_source_artifact",
+        "captured_at": "2026-09-28T00:59:31.134Z",
+        "content_hash": "0530c0da44632add",
+        "source_artifact_id": "SA-ddb0bfc98b482cb8",
+        "raw_id": "RAW-19462904768975cb"
+      },
+      {
+        "source_id": "FISRC-08efd4aaadc0c5f4",
+        "source_url": "https://news.crunchbase.com/venture/biggest-funding-rounds-crusoe-fluidstack-multibillion-dollar-ai-infrastructure/",
+        "title": "The Week’s 10 Biggest Funding Rounds: Crusoe And Fluidstack Lead Multibillion-Dollar AI Infrastructure Haul",
+        "publisher": "news.crunchbase.com",
+        "source_class": "secondary",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-09-28T11:16:47.361Z",
+        "content_hash": "02e46421dba79ac9",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-b58e050c62fcd210",
+        "source_url": "https://docs.fluidstack.io/",
+        "title": "Fluidstack | Fluidstack",
+        "publisher": "docs.fluidstack.io",
+        "source_class": "official_candidate",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-09-28T10:19:10.461Z",
+        "content_hash": "407c42572d74b9ac",
+        "source_artifact_id": null,
+        "raw_id": null
+      }
+    ],
+    "model_provenance": {
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "attempts": 1,
+      "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+      "generated_at": "2026-09-28T11:17:21.031Z"
+    },
+    "auto_publish_gate": {
+      "passed": true,
+      "problems": [],
+      "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+    },
+    "publication_status": "auto_published",
+    "published_at": "2026-09-28T11:17:21.031Z",
+    "customer_research": {
+      "status": "verified_customers_found",
+      "verified_customer_count": 5,
+      "searched_source_count": 3
+    },
+    "entity_link_coverage": {
+      "products": {
+        "linked": 0,
+        "total": 2,
+        "unresolved_names": [
+          "Atlas OS",
+          "Fluidstack AI云平台"
+        ]
+      },
+      "founders": {
+        "linked": 0,
+        "total": 3,
+        "unresolved_names": [
+          "César Maklary",
+          "Gary WuF（吴嘉里）",
+          "Jamie Cox"
+        ]
+      }
+    },
+    "source_event_ids": [
+      "EV-79d08b14ff147531"
+    ],
+    "aggregation": {
+      "key": "FICO-c10ef8fac87cdf0c|infrastructure",
+      "event_count": 1,
+      "strategy": "company_and_normalized_round"
+    }
+  },
   "queries": [
-    "\"包养式\" 2026 融资 轮次 金额 投资方",
-    "\"包养式\" \"15亿美元\" 本轮融资 领投 跟投",
-    "\"包养式\" 产品 服务 创始人 总部",
-    "\"包养式\" 投资机构 投资原因 融资用途"
+    "Fluidstack 1.5 billion Jane Street September 2026 financing Crunchbase News; site:news.crunchbase.com Fluidstack Jane Street 1.5B 18B valuation; site:fluidstack.io/news Fluidstack Jane Street 1.5B funding; Fluidstack Jane Street 1.5 billion 18 billion valuation independent reporting; site:fluidstack.io/news Fluidstack AI cloud Series A financing; site:docs.fluidstack.io AI cloud platform managed Kubernetes Slurm; site:fluidstack.io/news Fluidstack AI cloud infrastructure official"
   ],
   "attempts": [
     {
-      "provider": "tavily",
-      "query": "\"包养式\" 2026 融资 轮次 金额 投资方",
+      "provider": "multi-method web search and direct publisher/site discovery",
+      "query": "Fluidstack 1.5 billion Jane Street September 2026 financing Crunchbase News; site:news.crunchbase.com Fluidstack Jane Street 1.5B 18B valuation; site:fluidstack.io/news Fluidstack Jane Street 1.5B funding; Fluidstack Jane Street 1.5 billion 18 billion valuation independent reporting; site:fluidstack.io/news Fluidstack AI cloud Series A financing; site:docs.fluidstack.io AI cloud platform managed Kubernetes Slurm; site:fluidstack.io/news Fluidstack AI cloud infrastructure official",
+      "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-crusoe-fluidstack-multibillion-dollar-ai-infrastructure/",
       "status": "completed",
       "error": ""
     },
     {
-      "provider": "exa",
-      "query": "\"包养式\" 2026 融资 轮次 金额 投资方",
-      "status": "failed",
-      "error": "exa_402"
-    },
-    {
-      "provider": "tavily",
-      "query": "\"包养式\" \"15亿美元\" 本轮融资 领投 跟投",
+      "provider": "multi-method web search and direct publisher/site discovery",
+      "query": "Fluidstack 1.5 billion Jane Street September 2026 financing Crunchbase News; site:news.crunchbase.com Fluidstack Jane Street 1.5B 18B valuation; site:fluidstack.io/news Fluidstack Jane Street 1.5B funding; Fluidstack Jane Street 1.5 billion 18 billion valuation independent reporting; site:fluidstack.io/news Fluidstack AI cloud Series A financing; site:docs.fluidstack.io AI cloud platform managed Kubernetes Slurm; site:fluidstack.io/news Fluidstack AI cloud infrastructure official",
+      "url": "https://docs.fluidstack.io/",
       "status": "completed",
       "error": ""
     },
     {
-      "provider": "exa",
-      "query": "\"包养式\" \"15亿美元\" 本轮融资 领投 跟投",
-      "status": "failed",
-      "error": "exa_402"
-    },
-    {
-      "provider": "tavily",
-      "query": "\"包养式\" 产品 服务 创始人 总部",
+      "provider": "multi-method web search and direct publisher/site discovery",
+      "query": "Fluidstack 1.5 billion Jane Street September 2026 financing Crunchbase News; site:news.crunchbase.com Fluidstack Jane Street 1.5B 18B valuation; site:fluidstack.io/news Fluidstack Jane Street 1.5B funding; Fluidstack Jane Street 1.5 billion 18 billion valuation independent reporting; site:fluidstack.io/news Fluidstack AI cloud Series A financing; site:docs.fluidstack.io AI cloud platform managed Kubernetes Slurm; site:fluidstack.io/news Fluidstack AI cloud infrastructure official",
+      "url": "https://fluidstack.io/news/series-a-announcement",
       "status": "completed",
       "error": ""
-    },
-    {
-      "provider": "exa",
-      "query": "\"包养式\" 产品 服务 创始人 总部",
-      "status": "failed",
-      "error": "exa_402"
-    },
-    {
-      "provider": "tavily",
-      "query": "\"包养式\" 投资机构 投资原因 融资用途",
-      "status": "completed",
-      "error": ""
-    },
-    {
-      "provider": "exa",
-      "query": "\"包养式\" 投资机构 投资原因 融资用途",
-      "status": "failed",
-      "error": "exa_402"
     }
   ]
 }
