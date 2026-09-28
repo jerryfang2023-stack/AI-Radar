@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
+    "generatedAt": "2026-09-28T00:56:21.876Z",
     "latestDataDate": "2026-09-26",
     "currentDate": "2026-09-26",
     "eventCount": 3587,
@@ -188,7 +188,7 @@
       "milestones": [
         {
           "date": "2017",
-          "description": "OTB Ventures 官网记载机构于 2017 年成立。",
+          "description": "OTB Ventures官网记载机构于2017年成立。",
           "source_id": "otb_about"
         }
       ],
@@ -312,6 +312,66 @@
         }
       ],
       "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.milestones[0].description": {
+          "text": "OTB Ventures官网记载机构于2017年成立。",
+          "source_hash": "5860256abc125d5e50f63d3caba8711888373ce7fc6503932af79bf79e3ce46b",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:48.820Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "官网组合案例包括 ICEYE、Hydrosat、FintechOS、Apheris 与 Synthara；页面所列案例是部分组合，不是完整清单。",
+          "source_hash": "1c96257b176188de95783e938bb93787886ab5b4b7008c94ad3c1b430c4ad348",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:52.268Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "联合创始人 Marcin Hejka 的官网简介列出 Minit 与 BabbleLabs 为已退出组合公司；OTB 新闻与简介记录 Minit 被 Microsoft 收购、BabbleLabs 被 Cisco 收购。",
+          "source_hash": "de5a64db0129cd14a52372314508e87adfabea9dc36ef96e40c66ddb42e242ba",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:52.268Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[2].description": {
+          "text": "FintechOS · 2021 年 Series B · FinTech Global 2021-04-26 的融资综述称，FintechOS 完成由 Draper Esprit 领投的 6000 万美元 Series B，既有投资人中包括 OTB Ventures；6000 万美元是融资总额，不是 OTB 的单笔出资。",
+          "source_hash": "f9cb4b4a564c018088160d9c9a9d779bce9bf6850cc4a41164e099605076037a",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:52.268Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[3].description": {
+          "text": "FintechOS · 2026-09-21 · 公司官方公告称其完成 2800 万美元股权与债务融资，公告列出的股东投资方为 Bek Ventures、IFC、Cipio Partners 和 Molten Ventures，债务方为 Santander CIB，未列出 OTB Ventures；这与 OTB 参与的 2021 年历史轮次不同。",
+          "source_hash": "e4dec7daedb02295dc34ea1e5f08df0b0b640bbeab508bbb4cabfc420681a0dc",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:52.268Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[2].label": {
+          "text": "Amsterdam 办公室",
+          "source_hash": "43062a67be02038c791d97e4d896802f1fde204dd520e09fc7dffe70041fde02",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:52.268Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[3].label": {
+          "text": "Warsaw 办公室",
+          "source_hash": "cc73300b1b0a89d1e316c77a7635a17a3d9f18399c5e6710e0d5070689ad69a6",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:52.268Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
+    "generatedAt": "2026-09-28T00:56:21.876Z",
     "latestDataDate": "2026-09-26",
     "currentDate": "2026-09-26",
     "eventCount": 3587,
@@ -141,23 +141,23 @@
       "identity_status": "verified",
       "coverage_status": "researched",
       "coverage_note": "The firm’s official website describes its data and cloud investment focus and lists portfolio examples. The page footer is dated 2017, so portfolio and team details may be incomplete or dated. Actualyze AI’s $7 million seed amount is the company’s total round, not AME Cloud’s individual check.",
-      "summary": "AME Cloud Ventures is a venture fund led by Yahoo! co-founder Jerry Yang. Its website describes investments from seed to later stages in companies building around data infrastructure, cloud, hardware, and applications. The public portfolio list is selected and may not be current.",
+      "summary": "AME Cloud Ventures 是由 Yahoo! 联合创始人 Jerry Yang 领导的创投基金。其官网描述投资于围绕数据基础设施、云、硬件和应用构建的公司，覆盖种子轮到后期阶段。公开组合名单为选列，可能不是最新。",
       "facts": [
         {
           "field": "investment_focus",
-          "label": "Investment focus",
+          "label": "投资重点",
           "value": "Data-oriented companies building infrastructure and value chains across the data stack.",
           "source_id": "ame_home"
         },
         {
           "field": "stage",
-          "label": "Investment stage",
+          "label": "投资阶段",
           "value": "Seed through later stages, as described by the firm.",
           "source_id": "ame_home"
         },
         {
           "field": "portfolio_examples",
-          "label": "Selected portfolio examples",
+          "label": "选列组合案例",
           "value": "The firm lists Nervana Systems, Freenome, Elementum, Synthego, and Rigetti Quantum Computing.",
           "source_id": "ame_portfolio"
         }
@@ -165,18 +165,18 @@
       "milestones": [],
       "track_record": [
         {
-          "description": "AME Cloud Ventures’ public portfolio page lists selected companies including Nervana Systems, Freenome, Synthego, and Rigetti; this is not a complete portfolio or returns record.",
+          "description": "AME Cloud Ventures 的公开组合页面列出选列公司，包括 Nervana Systems、Freenome、Synthego 和 Rigetti；这不是完整组合或回报记录。",
           "source_id": "ame_portfolio"
         },
         {
-          "description": "A PR Newswire release says Actualyze AI launched with $7 million in seed funding backed by AME Cloud Ventures and other investors. The total is the company’s round, not AME’s individual commitment.",
+          "description": "一份 PR Newswire 新闻稿称，Actualyze AI 以 700 万美元种子轮融资启动，由 AME Cloud Ventures 及其他投资者支持。该总额是公司本轮融资，不是 AME 的单独投资额。",
           "source_id": "FISRC-7d5911b83ac40a4d"
         }
       ],
       "contacts": [
         {
           "kind": "website",
-          "label": "Official website",
+          "label": "官方网站",
           "value": "AME Cloud Ventures",
           "source_id": "ame_home",
           "url": "https://www.amecloudventures.com/"
@@ -209,6 +209,66 @@
         }
       ],
       "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "AME Cloud Ventures 是由 Yahoo! 联合创始人 Jerry Yang 领导的创投基金。其官网描述投资于围绕数据基础设施、云、硬件和应用构建的公司，覆盖种子轮到后期阶段。公开组合名单为选列，可能不是最新。",
+          "source_hash": "b3851e06431b214f01ca2f8f8bf3043ff9a81fecac24bac805f78ae9ac74bfad",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:10.890Z",
+          "status": "translated"
+        },
+        "public_profile.facts[0].label": {
+          "text": "投资重点",
+          "source_hash": "63796d28455af159b2fd7937e8ba9bbcee96a13223afbec9e4a33ff9ba65b2d4",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:10.890Z",
+          "status": "translated"
+        },
+        "public_profile.facts[1].label": {
+          "text": "投资阶段",
+          "source_hash": "82ef8e5156662bd9982e29926208b4193e1e4f83c7b3e0d8e4f0f77867ed09c5",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:10.890Z",
+          "status": "translated"
+        },
+        "public_profile.facts[2].label": {
+          "text": "选列组合案例",
+          "source_hash": "2ea804ca4cf945deac9b89d6b4cefb0fd72568637ce7bf7a43dd79c7889661c6",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:10.890Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "AME Cloud Ventures 的公开组合页面列出选列公司，包括 Nervana Systems、Freenome、Synthego 和 Rigetti；这不是完整组合或回报记录。",
+          "source_hash": "7835ff9465b371498fbf2bca18899600d8920ccdd2f8da1f6f4d74d36278896b",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:10.890Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "一份 PR Newswire 新闻稿称，Actualyze AI 以 700 万美元种子轮融资启动，由 AME Cloud Ventures 及其他投资者支持。该总额是公司本轮融资，不是 AME 的单独投资额。",
+          "source_hash": "4b9fa8f2a2e2fb2e697a37e684c1ad26fe584a73fb3232da04d75d52bb636eb0",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:10.890Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "官方网站",
+          "source_hash": "b16446d4331ad20b13b3c92866fa00eb15a0df69d7efc5dfdf9eca066ccae501",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

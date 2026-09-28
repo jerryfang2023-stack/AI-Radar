@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
+    "generatedAt": "2026-09-28T00:56:21.876Z",
     "latestDataDate": "2026-09-26",
     "currentDate": "2026-09-26",
     "eventCount": 3587,
@@ -117,26 +117,6 @@
     },
     "timeline": [],
     "viewpoints": [],
-    "translations": {
-      "zh-CN": {
-        "roleTitle": {
-          "text": "联合创始人兼首席科学官",
-          "source_hash": "919e010aedca135d480c6093442c074831ee71b7be2db8ad44a41ac378610ece",
-          "provider": "deepseek",
-          "model": "deepseek-v4-flash",
-          "translated_at": "2026-08-14T07:52:37.636Z",
-          "status": "translated"
-        },
-        "founderCompanies[0].role": {
-          "text": "联合创始人兼首席科学官",
-          "source_hash": "919e010aedca135d480c6093442c074831ee71b7be2db8ad44a41ac378610ece",
-          "provider": "deepseek",
-          "model": "deepseek-v4-flash",
-          "translated_at": "2026-08-14T07:17:24.870Z",
-          "status": "translated"
-        }
-      }
-    },
     "public_profile": {
       "coverage_status": "researched",
       "summary": "Alex Dimakis 在 Bespoke Labs 官网列为首席科学官；公司官网称其为教授。德克萨斯大学奥斯汀分校的院系页面另列其为电气与计算机工程兼职教授，并记载其在 UC Berkeley 与雅典国立理工大学的学位。两处对其教授任职机构的表述不一致，暂不将存在冲突的校级现职判断合并。",
@@ -193,8 +173,35 @@
           "quote_hash": "c1a2b2d77741a906bc5a554f493b3ec8055970039b6534c94a3b11946d5ddfc9"
         }
       ],
-      "last_verified_at": "2026-09-26",
-      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
+      "last_verified_at": "2026-09-26"
+    },
+    "translations": {
+      "zh-CN": {
+        "roleTitle": {
+          "text": "联合创始人兼首席科学官",
+          "source_hash": "919e010aedca135d480c6093442c074831ee71b7be2db8ad44a41ac378610ece",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-08-14T07:52:37.636Z",
+          "status": "translated"
+        },
+        "founderCompanies[0].role": {
+          "text": "联合创始人兼首席科学官",
+          "source_hash": "919e010aedca135d480c6093442c074831ee71b7be2db8ad44a41ac378610ece",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-08-14T07:17:24.870Z",
+          "status": "translated"
+        },
+        "public_profile.career[0].description": {
+          "text": "Bespoke Labs 官网将 Alex Dimakis 列为 CSO。该页面同时将其教授头衔标为 UC Berkeley；UT Austin 院系页面另列兼职教授，教授任职存在口径差异。",
+          "source_hash": "8372a3ad5b3835f381b9fae5f4412d32d44bf92003e655867e8f3dfad1465046",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:15.999Z",
+          "status": "translated"
+        }
+      }
     }
   },
   "relatedEntities": [],

@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
+    "generatedAt": "2026-09-28T00:56:21.876Z",
     "latestDataDate": "2026-09-26",
     "currentDate": "2026-09-26",
     "eventCount": 3587,
@@ -157,35 +157,35 @@
       "identity_status": "verified",
       "coverage_status": "researched",
       "coverage_note": "AUM and team-size figures are stated on Anzu Partners’ website and may change. Portfolio listings are selected company examples rather than audited fund performance. EnCharge AI’s USD 21.7 million Series A is the company financing total, not Anzu’s disclosed individual check.",
-      "summary": "Anzu Partners is an investment firm focused on breakthrough clean-tech, industrial, and life-sciences technologies. It operates venture, private-credit, and public-market strategies and reports about USD 1 billion in assets under management. The firm says its 50-plus investors, operators, consultants, scientists, and engineers provide hands-on company-building support.",
+      "summary": "Anzu Partners是一家投资机构，专注于突破性清洁技术、工业与生命科学技术。其运营风险投资、私人信贷与公开市场策略，并报告管理资产约10亿美元。该机构表示，其50多位投资者、运营者、顾问、科学家与工程师提供实操型公司建设支持。",
       "facts": [
         {
           "field": "reported_aum",
-          "label": "Reported assets under management",
+          "label": "已报告管理资产规模",
           "value": "About USD 1 billion, as stated on the firm website; no as-of date is given.",
           "source_id": "anzu_home"
         },
         {
           "field": "investment_focus",
-          "label": "Investment focus",
+          "label": "投资重点",
           "value": "Clean technology, industrial technology, and life-sciences technology.",
           "source_id": "anzu_home"
         },
         {
           "field": "investment_structures",
-          "label": "Investment structures",
+          "label": "投资结构",
           "value": "Venture, private credit, and public-market strategies.",
           "source_id": "anzu_home"
         },
         {
           "field": "portfolio_support",
-          "label": "Portfolio support",
+          "label": "投资组合支持",
           "value": "A team of 50+ experts supports business development, market positioning, global connectivity, operations, and commercialization.",
           "source_id": "anzu_home"
         },
         {
           "field": "leadership",
-          "label": "Firm leadership",
+          "label": "机构领导层",
           "value": "Managing partners listed by the firm include David Michael, David Seldin, and Whitney Haring-Smith.",
           "source_id": "anzu_team"
         }
@@ -193,11 +193,11 @@
       "milestones": [],
       "track_record": [
         {
-          "description": "The firm’s portfolio page lists active, exited, and IPO companies; examples span industrial materials, clean technology, and life sciences. The list is not a fund-return report.",
+          "description": "该机构的投资组合页面列出活跃、已退出与IPO公司；示例涵盖工业材料、清洁技术与生命科学。该列表不是基金回报报告。",
           "source_id": "anzu_portfolio"
         },
         {
-          "description": "Anzu Partners led EnCharge AI’s USD 21.7 million Series A announced in December 2022. The amount is the company’s round total; the firm’s individual check was not disclosed.",
+          "description": "Anzu Partners领投了EnCharge AI于2022年12月宣布的2170万美元A轮融资。该金额是公司的轮次总额；该机构的单笔出资未披露。",
           "source_id": "FISRC-81024928039bb6c1"
         },
         {
@@ -208,19 +208,19 @@
       "contacts": [
         {
           "kind": "phone",
-          "label": "Main office phone",
+          "label": "主办公室电话",
           "value": "+1 202-742-5870",
           "source_id": "anzu_contact"
         },
         {
           "kind": "address",
-          "label": "Boston-area office",
+          "label": "波士顿地区办公室",
           "value": "44 Manning Road, Billerica, MA 01821, USA",
           "source_id": "anzu_contact"
         },
         {
           "kind": "website",
-          "label": "Official website",
+          "label": "官方网站",
           "value": "Anzu Partners",
           "source_id": "anzu_home",
           "url": "https://www.anzupartners.com/"
@@ -277,6 +277,98 @@
         }
       ],
       "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Anzu Partners是一家投资机构，专注于突破性清洁技术、工业与生命科学技术。其运营风险投资、私人信贷与公开市场策略，并报告管理资产约10亿美元。该机构表示，其50多位投资者、运营者、顾问、科学家与工程师提供实操型公司建设支持。",
+          "source_hash": "7b25f499644770146db11b0d5c84b2c9e4f822d517368a71a3222f51457762b4",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:48.820Z",
+          "status": "translated"
+        },
+        "public_profile.facts[0].label": {
+          "text": "已报告管理资产规模",
+          "source_hash": "fcf38bc4da9be81e9b4196ecd5991dde47e0ddf69badb9057b7adf23fafa5e62",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:45.852Z",
+          "status": "translated"
+        },
+        "public_profile.facts[1].label": {
+          "text": "投资重点",
+          "source_hash": "63796d28455af159b2fd7937e8ba9bbcee96a13223afbec9e4a33ff9ba65b2d4",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:10.890Z",
+          "status": "translated"
+        },
+        "public_profile.facts[2].label": {
+          "text": "投资结构",
+          "source_hash": "5cf5dfb1422a85a42a46cf8740ade50359bbad290f55e93968d3d71a7149cb83",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:48.820Z",
+          "status": "translated"
+        },
+        "public_profile.facts[3].label": {
+          "text": "投资组合支持",
+          "source_hash": "32330cd071a297abc0d17d3302c5e35dc44304fdf8876d3255a79537d1604fee",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:48.820Z",
+          "status": "translated"
+        },
+        "public_profile.facts[4].label": {
+          "text": "机构领导层",
+          "source_hash": "491e9911c2fe31d31a74033dfd1ce5842f6453fb2b5a61ea4a8de01871f4ecb1",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:48.820Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "该机构的投资组合页面列出活跃、已退出与IPO公司；示例涵盖工业材料、清洁技术与生命科学。该列表不是基金回报报告。",
+          "source_hash": "298fa293650ea02633de3e70522d4457641a81755b6343d5a70619f4f5fbe6a4",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:48.820Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "Anzu Partners领投了EnCharge AI于2022年12月宣布的2170万美元A轮融资。该金额是公司的轮次总额；该机构的单笔出资未披露。",
+          "source_hash": "437e5e20a3b2b58ee35b4a48187e7f4dbfe57d0ea4949ca4738af0399a565487",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:48.820Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "主办公室电话",
+          "source_hash": "e54a04629e2812fc04e7a9e745ef3ca339ec6a9cfdadd035ad9362cb764a6729",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[1].label": {
+          "text": "波士顿地区办公室",
+          "source_hash": "2ca1cd8dee82569fabb76319a1f70b826d62977a11fc353ba379239f0b790f8c",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:48.820Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[2].label": {
+          "text": "官方网站",
+          "source_hash": "b16446d4331ad20b13b3c92866fa00eb15a0df69d7efc5dfdf9eca066ccae501",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

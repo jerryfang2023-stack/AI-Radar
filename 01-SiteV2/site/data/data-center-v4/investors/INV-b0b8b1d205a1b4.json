@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
+    "generatedAt": "2026-09-28T00:56:21.876Z",
     "latestDataDate": "2026-09-26",
     "currentDate": "2026-09-26",
     "eventCount": 3587,
@@ -141,29 +141,29 @@
       "identity_status": "verified",
       "coverage_status": "researched",
       "coverage_note": "Base10’s focus and team history are firm statements. Its June 2026 press page links to third-party reports about fundraising and AUM; those figures are reported by media, not audited fund performance. JustAI’s USD 17 million Series A is the company round total, not Base10’s check.",
-      "summary": "Base10 Partners is a venture firm investing in mission-aligned founders building technology for large, often under-served sectors of the real economy. Its team combines founders, investors, and researchers. Co-founder Adeyemi Ajao previously built and sold technology companies and led Workday Ventures; the firm says it applies research and operational support to portfolio companies.",
+      "summary": "Base10 Partners 是一家风险投资机构，投资于使命一致的创始人，他们为实体经济中规模庞大且往往服务不足的行业构建技术。其团队由创始人、投资者和研究人员组成。联合创始人 Adeyemi Ajao 此前创建并出售了科技公司，并领导过 Workday Ventures；该机构表示其将研究和运营支持应用于投资组合公司。",
       "facts": [
         {
           "field": "investment_focus",
-          "label": "Investment focus",
+          "label": "投资重点",
           "value": "Companies applying technology to large sectors of the real economy and solving problems for the “99%.”",
           "source_id": "base10_purpose"
         },
         {
           "field": "leadership",
-          "label": "Co-founder and managing partner",
+          "label": "联合创始人兼管理合伙人",
           "value": "Adeyemi “Ade” Ajao co-founded Base10. His prior operating roles included co-founding Tuenti and Identified and leading Workday Ventures.",
           "source_id": "base10_team"
         },
         {
           "field": "team_model",
-          "label": "Team model",
+          "label": "团队模式",
           "value": "The firm describes its team as founders, investors, and researchers; it reports more than USD 3 billion in realized investor returns, a self-reported firm figure rather than an audited fund-level metric.",
           "source_id": "base10_team"
         },
         {
           "field": "reported_fundraising",
-          "label": "Reported 2026 fundraising",
+          "label": "2026 年融资报道",
           "value": "Base10’s press page points to June 2026 media reports of two funds totaling USD 850 million and USD 2.6 billion in reported AUM.",
           "source_id": "base10_press"
         }
@@ -171,30 +171,30 @@
       "milestones": [],
       "track_record": [
         {
-          "description": "Base10 Partners led JustAI’s USD 17 million Series A in June 2026, according to a financing report. The amount is JustAI’s round total, not Base10’s individual check.",
+          "description": "据一份融资报道，Base10 Partners 领投了 JustAI 于 2026 年 6 月完成的 1700 万美元 A 轮融资。该金额是 JustAI 的轮次总额，而非 Base10 的单独投资额。",
           "source_id": "FISRC-058518ce11dc5f00"
         },
         {
-          "description": "The firm’s team biography says co-founder Adeyemi Ajao previously co-founded Tuenti, acquired by Telefónica, and Identified, acquired by Workday; these are founder operating outcomes, not Base10 fund returns.",
+          "description": "该机构的团队简介称，联合创始人 Adeyemi Ajao 此前联合创立了被 Telefónica 收购的 Tuenti 和被 Workday 收购的 Identified；这些是创始人的运营成果，而非 Base10 的基金回报。",
           "source_id": "base10_team"
         }
       ],
       "contacts": [
         {
           "kind": "email",
-          "label": "General and partnership inquiries",
+          "label": "一般及合作咨询",
           "value": "partners@base10.vc",
           "source_id": "base10_team"
         },
         {
           "kind": "address",
-          "label": "San Francisco office",
+          "label": "旧金山办公室",
           "value": "101 Mission Street, Suite 1115, San Francisco, CA 94105, USA",
           "source_id": "base10_team"
         },
         {
           "kind": "website",
-          "label": "Official website",
+          "label": "官方网站",
           "value": "Base10 Partners",
           "source_id": "base10_purpose",
           "url": "https://base10.vc/"
@@ -243,6 +243,90 @@
         }
       ],
       "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Base10 Partners 是一家风险投资机构，投资于使命一致的创始人，他们为实体经济中规模庞大且往往服务不足的行业构建技术。其团队由创始人、投资者和研究人员组成。联合创始人 Adeyemi Ajao 此前创建并出售了科技公司，并领导过 Workday Ventures；该机构表示其将研究和运营支持应用于投资组合公司。",
+          "source_hash": "0a52bafc4ec0cd7c6b86589207100055aab22be8eb5c71df969dd281e92f298d",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:26.483Z",
+          "status": "translated"
+        },
+        "public_profile.facts[0].label": {
+          "text": "投资重点",
+          "source_hash": "63796d28455af159b2fd7937e8ba9bbcee96a13223afbec9e4a33ff9ba65b2d4",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:10.890Z",
+          "status": "translated"
+        },
+        "public_profile.facts[1].label": {
+          "text": "联合创始人兼管理合伙人",
+          "source_hash": "fd40923b36f0907b14bc09df72786045f77e63b8367557a9906d7c5b328ec91b",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:26.483Z",
+          "status": "translated"
+        },
+        "public_profile.facts[2].label": {
+          "text": "团队模式",
+          "source_hash": "d2b8a629f765631279638df9ae3971e47716418e9c245bb9deb2a9cfc760324b",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:26.483Z",
+          "status": "translated"
+        },
+        "public_profile.facts[3].label": {
+          "text": "2026 年融资报道",
+          "source_hash": "01d5f32d9e40c7f3a32d11d0672e7305654eca99dc470d32b383cc729c82a944",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:26.483Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "据一份融资报道，Base10 Partners 领投了 JustAI 于 2026 年 6 月完成的 1700 万美元 A 轮融资。该金额是 JustAI 的轮次总额，而非 Base10 的单独投资额。",
+          "source_hash": "f5ba59b606a01e01cf6d52b76cf520de87a4c5337f528a161b1c6451a1a72489",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:26.483Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "该机构的团队简介称，联合创始人 Adeyemi Ajao 此前联合创立了被 Telefónica 收购的 Tuenti 和被 Workday 收购的 Identified；这些是创始人的运营成果，而非 Base10 的基金回报。",
+          "source_hash": "cf16714167f5b153735f1ce921e12a0cc7b3c8875a07d4ef25e4fb4ee00c5237",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:26.483Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "一般及合作咨询",
+          "source_hash": "a13f1e091b6076eabe080b2de7269113c0535ec880ba08434e24c3491bf22488",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:26.483Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[1].label": {
+          "text": "旧金山办公室",
+          "source_hash": "7a57a540cc046958866a60e0f5886eef97a1ab5313f338b3b46c18ce4b73f07b",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:26.483Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[2].label": {
+          "text": "官方网站",
+          "source_hash": "b16446d4331ad20b13b3c92866fa00eb15a0df69d7efc5dfdf9eca066ccae501",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

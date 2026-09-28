@@ -5,7 +5,7 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
+    "generatedAt": "2026-09-28T00:56:21.876Z",
     "latestDataDate": "2026-09-26",
     "currentDate": "2026-09-26",
     "eventCount": 3587,
@@ -141,35 +141,35 @@
       "identity_status": "verified",
       "coverage_status": "researched",
       "coverage_note": "Bonfire’s check range, exit-value figure, and investment activity are firm statements and do not constitute audited fund-level returns. Katalyze AI’s USD 10.5 million seed round is the company total, not Bonfire’s individual investment.",
-      "summary": "Bonfire Ventures is a seed-stage investor focused exclusively on B2B software, increasingly including AI-native products. It says it leads about 95% of rounds, typically invests USD 2–6 million at seed, backs 10–12 companies a year, and continues working with founders through Series A and beyond. The firm describes its team as experienced B2B software operators and investors.",
+      "summary": "Bonfire Ventures 是一家种子阶段投资者，专注于 B2B 软件，并越来越多地涵盖 AI 原生产品。该公司表示其领投约 95% 的轮次，通常在种子阶段投资 200 万至 600 万美元，每年支持 10 至 12 家公司，并在 Series A 及之后继续与创始人合作。该公司将其团队描述为经验丰富的 B2B 软件运营者和投资者。",
       "facts": [
         {
           "field": "investment_focus",
-          "label": "Investment focus",
+          "label": "投资重点",
           "value": "B2B software, including AI-native companies.",
           "source_id": "bonfire_home"
         },
         {
           "field": "typical_check_size",
-          "label": "Typical seed check",
+          "label": "典型种子轮支票",
           "value": "USD 2–6 million, according to the firm.",
           "source_id": "bonfire_home"
         },
         {
           "field": "investment_model",
-          "label": "Investment model",
+          "label": "投资模式",
           "value": "The firm says it leads about 95% of its rounds, often with a board seat, and backs 10–12 companies per year.",
           "source_id": "bonfire_home"
         },
         {
           "field": "leadership",
-          "label": "Co-founders",
+          "label": "联合创始人",
           "value": "Mark Mullen and Jim Andelman are co-founders; the team includes operators and investors with early-stage B2B software experience.",
           "source_id": "bonfire_team"
         },
         {
           "field": "reported_exit_value",
-          "label": "Reported portfolio exit value",
+          "label": "已报告的投资组合退出价值",
           "value": "Bonfire says founders it backed have built more than USD 18 billion in exit value; this is not a fund-level return figure.",
           "source_id": "bonfire_home"
         }
@@ -177,29 +177,29 @@
       "milestones": [],
       "track_record": [
         {
-          "description": "Bonfire Ventures led Katalyze AI’s USD 10.5 million seed round announced in July 2026. The figure is the company’s round total, not Bonfire’s disclosed individual check.",
+          "description": "Bonfire Ventures 领投了 Katalyze AI 于 2026 年 7 月宣布的 1,050 万美元种子轮。该数字为公司该轮融资总额，而非 Bonfire 披露的单笔投资额。",
           "source_id": "FISRC-d887dae741d872b9"
         },
         {
-          "description": "Bonfire cites selected exits including The Trade Desk, TaxJar, MNTN, and Scopely; these examples do not state fund-level performance.",
+          "description": "Bonfire 列举了部分退出案例，包括 The Trade Desk、TaxJar、MNTN 和 Scopely；这些案例并未说明基金层面的业绩表现。",
           "source_id": "bonfire_home"
         },
         {
-          "description": "The firm announced Bonfire IV, a USD 245 million fund for B2B software investing.",
+          "description": "该公司宣布了 Bonfire IV，一只规模 2.45 亿美元、用于 B2B 软件投资的基金。",
           "source_id": "bonfire_fund4"
         }
       ],
       "contacts": [
         {
           "kind": "application",
-          "label": "Founder pitch submissions",
+          "label": "创始人推介提交",
           "value": "Use the firm’s Pitch Us link to submit a company.",
           "source_id": "bonfire_team",
           "url": "https://bonfireventure.com/team"
         },
         {
           "kind": "address",
-          "label": "Los Angeles office",
+          "label": "洛杉矶办公室",
           "value": "11611 San Vicente Blvd. #650, Los Angeles, CA 90049, USA",
           "source_id": "bonfire_team"
         }
@@ -247,6 +247,98 @@
         }
       ],
       "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Bonfire Ventures 是一家种子阶段投资者，专注于 B2B 软件，并越来越多地涵盖 AI 原生产品。该公司表示其领投约 95% 的轮次，通常在种子阶段投资 200 万至 600 万美元，每年支持 10 至 12 家公司，并在 Series A 及之后继续与创始人合作。该公司将其团队描述为经验丰富的 B2B 软件运营者和投资者。",
+          "source_hash": "b9db69168a8276cdb972a03d79130aef551f90928c20ef13c747270488cb2806",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:20.122Z",
+          "status": "translated"
+        },
+        "public_profile.facts[0].label": {
+          "text": "投资重点",
+          "source_hash": "63796d28455af159b2fd7937e8ba9bbcee96a13223afbec9e4a33ff9ba65b2d4",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:10.890Z",
+          "status": "translated"
+        },
+        "public_profile.facts[1].label": {
+          "text": "典型种子轮支票",
+          "source_hash": "b35c6c2acbed38b41fdb9357314da507b3e45fff734268167816aa97b1be0608",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:20.122Z",
+          "status": "translated"
+        },
+        "public_profile.facts[2].label": {
+          "text": "投资模式",
+          "source_hash": "8c0be2eef3fd84062dcedb5d957d2973f3ec2bfc09361e1f698d8452e9479bf8",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:23.221Z",
+          "status": "translated"
+        },
+        "public_profile.facts[3].label": {
+          "text": "联合创始人",
+          "source_hash": "b794f6053de74e3978e8abda725854cc147bc86ee659db38c6174a697894f230",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:10.890Z",
+          "status": "translated"
+        },
+        "public_profile.facts[4].label": {
+          "text": "已报告的投资组合退出价值",
+          "source_hash": "56714b75fae0b7025d7fb6d887a68bdd173865508ad925b3bb662bf5e83095a7",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:23.221Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Bonfire Ventures 领投了 Katalyze AI 于 2026 年 7 月宣布的 1,050 万美元种子轮。该数字为公司该轮融资总额，而非 Bonfire 披露的单笔投资额。",
+          "source_hash": "fe8bfc93c6597392abe9478e025ca1240a8a16c06f238336c9b595aff3a19f82",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:23.221Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "Bonfire 列举了部分退出案例，包括 The Trade Desk、TaxJar、MNTN 和 Scopely；这些案例并未说明基金层面的业绩表现。",
+          "source_hash": "1013609a897b8bba59903a2bc660d62caa0d135789de7877009b70ce2017f8fd",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:23.221Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[2].description": {
+          "text": "该公司宣布了 Bonfire IV，一只规模 2.45 亿美元、用于 B2B 软件投资的基金。",
+          "source_hash": "3479bf52ca04b01f0257833e7e4c72705ac2240d88f8106d2323648fab18299d",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:23.221Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "创始人推介提交",
+          "source_hash": "26001d571278aaad796cff654f41fba517dfc288df2ab1d16b6fa17023e5e060",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:16.720Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[1].label": {
+          "text": "洛杉矶办公室",
+          "source_hash": "c928362e3a541db2c50136ec58e701195bbbf0d56d29d8100b8ac9780423798e",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:23.221Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }
