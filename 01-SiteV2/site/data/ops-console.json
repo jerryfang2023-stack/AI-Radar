@@ -519,7 +519,7 @@
   },
   "meta": {
     "version": "OPS-V3.8.0-engineering-integration",
-    "generatedAt": "2026-09-28T04:25:41.819Z",
+    "generatedAt": "2026-09-28T05:18:12.732Z",
     "date": "2026-09-28",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
@@ -1574,7 +1574,7 @@
       }
     ],
     "sourceQuality": {
-      "updatedAt": "2026-09-28T04:25:41.810Z",
+      "updatedAt": "2026-09-28T05:18:12.724Z",
       "sampleNote": "按最新 V4 RawDocument 的 acquisition_channel 聚合；样本量为已落盘 Raw 文档数。",
       "metricNote": "诊断分由可用率、全文率、高质提取率、可读性和事实命中率组成，仅用于运营观察，不参与来源准入、排序或事实门禁。",
       "rows": [
@@ -1639,7 +1639,7 @@
     "chinaFunding": {
       "schema_version": "CHINA-FUNDING-HEALTH-V1.0",
       "date": "2026-09-28",
-      "generated_at": "2026-09-28T04:25:33.766Z",
+      "generated_at": "2026-09-28T05:18:07.511Z",
       "status": "failed",
       "last_collection_at": "2026-09-28T00:15:39.011Z",
       "failed_stage": "projections",
@@ -1647,23 +1647,23 @@
         {
           "id": "capture",
           "status": "passed",
-          "started_at": "2026-09-28T04:23:12.337Z",
+          "started_at": "2026-09-28T05:15:59.303Z",
           "reused": true,
           "reused_accepted_capture": true,
-          "finished_at": "2026-09-28T04:23:19.343Z"
+          "finished_at": "2026-09-28T05:16:05.398Z"
         },
         {
           "id": "facts",
           "status": "passed",
-          "started_at": "2026-09-28T04:23:19.343Z",
-          "finished_at": "2026-09-28T04:25:09.988Z"
+          "started_at": "2026-09-28T05:16:05.398Z",
+          "finished_at": "2026-09-28T05:17:44.098Z"
         },
         {
           "id": "projections",
           "status": "failed",
-          "started_at": "2026-09-28T04:25:09.989Z",
+          "started_at": "2026-09-28T05:17:44.099Z",
           "error": "Command failed: agent-workflow/tools/assert-funding-insights-v1.mjs (1)",
-          "finished_at": "2026-09-28T04:25:33.615Z"
+          "finished_at": "2026-09-28T05:18:07.378Z"
         }
       ],
       "sources": [
@@ -28177,6 +28177,6 @@
       }
     ],
     "catalogGeneratedAt": "2026-09-13 16:21:58",
-    "snapshotGeneratedAt": "2026-09-28T04:25:41.819Z"
+    "snapshotGeneratedAt": "2026-09-28T05:18:12.732Z"
   }
 }
