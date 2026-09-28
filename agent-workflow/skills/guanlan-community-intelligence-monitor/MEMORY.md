@@ -2,15 +2,14 @@
 
 Keep this file short. Add only durable lane-level lessons from repeated production failures.
 
-## Current schedule override · 2026-09-13
+## Current schedule override · 2026-09-28
 
 Timing in the dated incidents below describes historical configurations. Current
-scheduling is defined in `context/08-automation.md`: four production tasks;
-08:10 includes domestic/overseas financing plus independent Builder RSS, 08:30
-collects Community, 16:10 publishes afternoon viewpoints, and 16:45 performs final
-sync. The old Codex RSS automation and 09:15/09:50/10:20 timers are retired.
-Observation thresholds remain diagnostic windows, not additional scheduled tasks.
-Daily inspection and repair are operator-owned.
+scheduling is defined in `context/08-automation.md`: Community collection runs
+weekly Monday at 08:30 and First-Line / Builders runs in its own weekly lane.
+Daily financing no longer checks or dispatches Community. The old 09:15/09:50/
+10:20 timers remain retired; observation thresholds are not extra scheduled
+tasks. Daily inspection and repair are operator-owned.
 
 ## 2026-06-21 Supervision Classification
 

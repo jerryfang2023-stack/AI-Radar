@@ -1,6 +1,8 @@
 name: WaveSight First-Line Viewpoints PR
 
 on:
+  schedule:
+    - cron: '0 1 * * 1'
   workflow_dispatch:
     inputs:
       date:

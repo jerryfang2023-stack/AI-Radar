@@ -23,10 +23,10 @@ priority: current
 | AI financing site / weekly and monthly reports | `REPORTS-V1.3.0-funding-portal` |
 | Operations telemetry and health | [Current Operations backend version](version-ledger.md#current-version) |
 | 08:10 domestic/overseas financing discovery | Morning controller -> Business Signals workflow -> independent China Funding workflow; original-source capture and separate lane acceptance |
-| First-Line Viewpoints | independent `O` lane; conditional 08:10 Builder RSS and separate 16:10 afternoon publisher |
+| First-Line Viewpoints / Builders | independent weekly `O` lane; Monday 09:00 RSS workflow and Monday 16:10 afternoon publisher; not in daily financing dispatch |
 | 16:45 application synchronization | Final Closure; accepted financing output -> Funding Portal/Mini Program, OPS and external Vault |
 | Daily inspection and repair | operator-owned; four Windows production timers only; see `context/08-automation.md` |
-| Community Intelligence | independent `C` lane |
+| Community Intelligence | independent weekly `C` lane; Monday 08:30 local collection; not in daily financing dispatch |
 
 ## Retired archive
 

@@ -33,9 +33,10 @@ Run these pass/fail checks when supervising, repairing, or updating the Communit
    - Pass when missing local Chrome collector output is routed to local / Codex repair, not hidden behind repeated publish retries.
    - Fail when a GitHub run is described as fresh community collection, or when missing local Chrome collector output is hidden behind repeated publish retries.
 
-10. `pre_window_false_positive_guard`
-   - Pass when stale Community Intelligence data before 08:45 Asia/Shanghai is treated as yesterday's completed state unless there is an explicit same-day local collector failure log.
-   - Fail when a 03:00-08:44 supervision run creates a same-date missing-data failure only because the 08:30 local task has not run yet.
+10. `weekly_pre_window_and_off_day_guard`
+   - Pass when stale Community Intelligence data before Monday 08:45 Asia/Shanghai is treated as the prior weekly completed state unless there is an explicit same-day local collector failure log.
+   - Pass when Tuesday-Sunday supervision does not create a missing-data failure or try to launch local collection.
+   - Fail when an early Monday supervision run creates a same-date missing-data failure only because the 08:30 weekly local task has not run yet.
 
 11. `failure_stage_router`
    - Pass when failures are classified as pre-window stale data, local collection missing, local gate failed, publish workflow failed before gate, publish workflow shell / PR failure, or published but not deployed.
@@ -60,7 +61,7 @@ Run these pass/fail checks when supervising, repairing, or updating the Communit
 15. `local_publish_closure_exit_code`
    - Pass when the local publisher returns success after the same-date PR is merged and Pages publication can proceed, even if local checkout / fast-forward sync is skipped because the workspace is dirty.
    - Pass when local checkout / pull failures after successful remote publication are recorded as warnings in the local publish report.
-   - Fail when a post-publication local sync warning makes `WaveSight Community Intelligence Daily` return a failed task result after the Community Intelligence PR has already reached `main`.
+   - Fail when a post-publication local sync warning makes `WaveSight Community Intelligence Weekly` return a failed task result after the Community Intelligence PR has already reached `main`.
 
 16. `published_remote_precedes_stale_dirty_checkout`
    - Pass when supervision uses same-date `origin/main` Community Intelligence data and gate evidence after a validated local publish merged, while reporting the stale dirty checkout as a local-sync warning.

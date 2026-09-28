@@ -13,6 +13,29 @@ if ($RepoPath) {
 & (Join-Path $PSScriptRoot "install-daily-automation-controller-tasks.ps1") -RepoPath $repo
 & (Join-Path $PSScriptRoot "install-community-intelligence-task.ps1") -RepoPath $repo -At "08:30"
 & (Join-Path $PSScriptRoot "install-follow-builders-skill-task.ps1") -RepoPath $repo -At "16:10"
+
+$weeklyTaskNames = @(
+  "WaveSight Community Intelligence Weekly",
+  "WaveSight Follow-Builders Skill Weekly"
+)
+foreach ($name in $weeklyTaskNames) {
+  $task = Get-ScheduledTask -TaskName $name -ErrorAction SilentlyContinue
+  if (-not $task -or $task.Triggers[0].CimClass.CimClassName -ne "MSFT_TaskWeeklyTrigger" -or [int]$task.Triggers[0].DaysOfWeek -ne 2) {
+    throw "Weekly Monday task was not installed correctly: $name"
+  }
+}
+
+$retiredDailyTasks = @(
+  "WaveSight Community Intelligence Daily",
+  "WaveSight Follow-Builders Skill Daily"
+)
+foreach ($name in $retiredDailyTasks) {
+  if (Get-ScheduledTask -TaskName $name -ErrorAction SilentlyContinue) {
+    Unregister-ScheduledTask -TaskName $name -Confirm:$false
+    Write-Host "Replaced retired daily task with its weekly lane: $name"
+  }
+}
+
 # Daily inspection and repair are operator-owned; do not recreate the watchdog.
 & (Join-Path $PSScriptRoot "install-periodic-automation-tasks.ps1") -RepoPath $repo
 
