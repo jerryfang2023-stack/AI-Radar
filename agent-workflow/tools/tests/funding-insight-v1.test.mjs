@@ -1928,13 +1928,14 @@ test("accepted funding subject must be anchored in its source quote", () => {
   const entities = [
     { entity_id: "EN-BAOYANG-HEADLINE", entity_type: "organization_candidate", canonical_name: "包养式" },
     { entity_id: "EN-FLUIDSTACK", entity_type: "organization_candidate", canonical_name: "Fluidstack", verification_status: "verified" },
+    { entity_id: "EN-JANE-STREET", entity_type: "organization_candidate", canonical_name: "Jane Street", verification_status: "verified" },
   ];
   const claim = {
     claim_id: "CL-FLUIDSTACK-20260928",
     claim_type: "funding",
     verification_status: "accepted",
     subject: "包养式",
-    source_quote: "近日，外媒爆出AI基础设施公司Fluidstack完成15亿美元融资，投后估值180亿美元，领投方是Jane Street。",
+    source_quote: "“包养式融资”，估值1200亿 60天内，这家公司的估值翻了2.4倍。近日，外媒爆出AI基础设施公司Fluidstack完成15亿美元融资，投后估值180亿美元（约1200亿人民币），领投方是今年频登媒体头条的量化交易巨头Jane Street。",
   };
   const event = {
     display_title_zh: "“包养式融资”，估值1200亿 60天内，这家公司的估值翻了2.4倍",
