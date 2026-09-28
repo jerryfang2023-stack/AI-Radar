@@ -153,25 +153,83 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Home Depot Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Home Depot Ventures 是 The Home Depot 于 2022 年设立的 1.5 亿美元企业风险投资基金，投资早期公司以推动零售和家居改善技术创新。官方公告聚焦互联购物体验、专业客户运营、员工工具与运营效率；公告未披露独立团队、当前基金投资组合清单或项目专属联系方式。",
+      "facts": [
+        {
+          "field": "parent_company",
+          "label": "所属公司",
+          "value": "The Home Depot",
+          "source_id": "hdv"
+        },
+        {
+          "field": "launched_at",
+          "label": "成立时间",
+          "value": "2022-05-03",
+          "source_id": "hdv"
+        },
+        {
+          "field": "fund_size",
+          "label": "公告披露基金规模",
+          "value": "1.5 亿美元",
+          "source_id": "hdv"
+        },
+        {
+          "field": "investment_stages",
+          "label": "投资阶段",
+          "value": "早期公司",
+          "source_id": "hdv_focus"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": [
+            "互联购物体验",
+            "专业客户业务工具",
+            "员工协作与安全",
+            "零售运营效率"
+          ],
+          "source_id": "hdv_focus"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2022-05-03",
+          "description": "The Home Depot 宣布设立 1.5 亿美元 Home Depot Ventures，用于投资并协作早期科技公司。",
+          "source_id": "hdv"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：InstaLILY AI · B轮 · 2026-07-14 · 本轮参投（战略投资方） · $60 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b6c1fe80a4b09131"
-        },
-        {
-          "description": "融资来源记录：InstaLILY AI · B轮 · 2026-07-14 · 本轮参投（战略投资方） · $60 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c8150575e9fc83bc"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "基金官方公告",
+          "value": "Home Depot Ventures",
+          "url": "https://ir.homedepot.com/news-releases/2022/05-03-2022-130203656",
+          "source_id": "hdv"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "hdv",
+          "source_url": "https://ir.homedepot.com/news-releases/2022/05-03-2022-130203656",
+          "source_title": "The Home Depot Announces $150 Million Venture Capital Fund to Fuel Innovation in Retail and Home Improvement | The Home Depot",
+          "source_content_hash": "f4673e23f65ba44f408848c1f5bad227a97168de0058425809181e096aed7179",
+          "quote": "May 03, 2022 The Home Depot Announces $150 Million Venture Capital Fund to Fuel Innovation in Retail and Home Improvement",
+          "quote_hash": "8dea59383e383a5a0dec87691a5aa1e5a2502bc90f8005ef86a1511a9cc98086"
+        },
+        {
+          "source_id": "hdv_focus",
+          "source_url": "https://ir.homedepot.com/news-releases/2022/05-03-2022-130203656",
+          "source_title": "The Home Depot Announces $150 Million Venture Capital Fund to Fuel Innovation in Retail and Home Improvement | The Home Depot",
+          "source_content_hash": "f4673e23f65ba44f408848c1f5bad227a97168de0058425809181e096aed7179",
+          "quote": "The $150 million fund aims to invest in companies that advance The Home Depot's ability to provide a seamless interconnected shopping experience, develop new and differentiated capabilities, and extend its low-cost provider position",
+          "quote_hash": "a49e2fb2ce36ec63004ca796a893dcce996b020bd4876164717ce4743931bce3"
+        },
         {
           "source_id": "FISRC-b6c1fe80a4b09131",
           "source_url": "https://startupfortune.com/instalily-raises-60-million-to-put-ai-agents-inside-construction-and-logistics-firms/",
@@ -189,7 +247,11 @@
           "quote_hash": "2c80518acf1a3c8a823f5b9cff448d1897f05cd2f571173328c9136733a80d98"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "目前依据母公司 2022 年官方设立公告整理。公告没有列出独立团队、后续投资组合或 Home Depot Ventures 专属邮箱；未将母公司的通用客服或投资者关系联系方式冒充为基金联系方式。"
     }
   }
 }

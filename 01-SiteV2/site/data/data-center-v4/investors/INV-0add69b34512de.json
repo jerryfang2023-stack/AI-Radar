@@ -129,21 +129,232 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Hummingbird Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Hummingbird Ventures 是一家面向全球创业者的综合型风险投资机构，强调支持早期及非线性成长路径的创始人，并通过分布于北美、欧洲和亚洲的团队开展投资。官网展示其投资横跨种子、早期与成长阶段；机构自述自 2010 年以来多支基金取得超过 10 倍净回报，该表现尚未由独立来源核验。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "官网所述投资起始年份",
+          "value": "2010",
+          "source_id": "hummingbird_returns"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资理念",
+          "value": [
+            "全球综合型投资",
+            "非线性创业者",
+            "不局限于特定行业或地域"
+          ],
+          "source_id": "hummingbird"
+        },
+        {
+          "field": "investment_stages",
+          "label": "公开投资阶段",
+          "value": [
+            "Pre-seed / Seed",
+            "Early",
+            "Growth"
+          ],
+          "source_id": "hummingbird_stages"
+        },
+        {
+          "field": "team_geography",
+          "label": "团队布局",
+          "value": [
+            "北美",
+            "欧洲",
+            "亚洲"
+          ],
+          "source_id": "hummingbird_team"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官网展示 Kraken、Deliveroo、Revolut、BillionToOne、Etched、Enveda 等组合公司，并称另有 70 多家公司；属机构公开组合选例。",
+          "source_id": "hummingbird"
+        },
+        {
+          "description": "Hummingbird 的招聘项目页面自述，多支基金净回报超过 10 倍并向投资人分配实际资金。该数字为机构自述，页面未列基金名称、测算时间或审计数据，不能视为独立业绩核验。",
+          "source_id": "hummingbird_returns"
+        },
         {
           "description": "融资来源记录：Olix Computing Ltd. · B轮 · 2026-08-03 · 历史轮次领投方，本轮追加投资 · $312 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-88b7fd63299c3c59"
         }
       ],
-      "contacts": [],
+      "current_roles": [
+        {
+          "title": "Firat Ileri — Managing Partner",
+          "organization": "Hummingbird Ventures",
+          "source_id": "hummingbird_team"
+        },
+        {
+          "title": "Barend Van den Brande — Founding Partner",
+          "organization": "Hummingbird Ventures",
+          "source_id": "hummingbird_barend"
+        },
+        {
+          "title": "Mario Gabriele — Partner",
+          "organization": "Hummingbird Ventures",
+          "source_id": "hummingbird_mario"
+        },
+        {
+          "title": "Lukas Decoster — Partner",
+          "organization": "Hummingbird Ventures",
+          "source_id": "hummingbird_lukas"
+        }
+      ],
+      "career": [
+        {
+          "organization": "J.P. Morgan",
+          "title": "Firat Ileri — 新兴市场结构与解决方案团队",
+          "period": "加入 Hummingbird 前；具体年月未披露",
+          "description": "此前在 Emerging Markets Structuring and Solutions group 工作；2012 年加入 Hummingbird。",
+          "source_id": "hummingbird_team"
+        },
+        {
+          "organization": "Nomads / Magnificent Grants / Hummingbird Ventures",
+          "title": "Barend Van den Brande — 创办人及风险投资人",
+          "period": "逾 20 年风险投资经历；具体任期未披露",
+          "description": "创办 Nomads 与 Magnificent Grants；官网称其参与 Kraken，并曾支持 Deliveroo、Showpad 和 Frontier Car Group。",
+          "source_id": "hummingbird_barend"
+        },
+        {
+          "organization": "The Generalist",
+          "title": "Mario Gabriele — 创办人",
+          "period": "创办时间未披露",
+          "description": "创办关注创新和创业的媒体公司 The Generalist；此前做过风险投资与创业公司运营。",
+          "source_id": "hummingbird_mario"
+        },
+        {
+          "organization": "多家风险投资机构与创业公司",
+          "title": "Lukas Decoster — 公司并购律师",
+          "period": "加入 Hummingbird 前；具体年月未披露",
+          "description": "曾为多家 VC 与初创企业提供公司、并购、基金设立及治理法律服务。",
+          "source_id": "hummingbird_lukas"
+        }
+      ],
+      "education": [
+        {
+          "institution": "Massachusetts Institute of Technology",
+          "qualification": "Firat Ileri：电气工程与计算机科学、管理科学学士；电气工程与计算机科学硕士",
+          "source_id": "hummingbird_team"
+        },
+        {
+          "institution": "University of Louvain",
+          "qualification": "Barend Van den Brande：经济学理学硕士",
+          "source_id": "hummingbird_barend_edu"
+        },
+        {
+          "institution": "Fordham Gabelli School of Business",
+          "qualification": "Lukas Decoster：工商管理硕士",
+          "source_id": "hummingbird_lukas_edu"
+        },
+        {
+          "institution": "Ghent University",
+          "qualification": "Lukas Decoster：法律理学硕士（JD）",
+          "source_id": "hummingbird_lukas_edu"
+        }
+      ],
+      "experience_summary": "投资团队包含多位长期风险投资人、创业者与早期运营者。Firat Ileri 曾在 J.P. Morgan 新兴市场团队任职；Barend Van den Brande 有逾 20 年 VC 经历；Mario Gabriele 创办 The Generalist；Lukas Decoster 有 VC/PE 基金及并购法律背景。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Hummingbird Ventures",
+          "url": "https://www.hummingbird.vc/",
+          "source_id": "hummingbird"
+        },
+        {
+          "kind": "email",
+          "label": "一般联系邮箱",
+          "value": "hello@hummingbird.vc",
+          "url": "https://www.hummingbird.vc/contact",
+          "source_id": "hummingbird_email"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "hummingbird",
+          "source_url": "https://www.hummingbird.vc/",
+          "source_title": "Hummingbird VC",
+          "source_content_hash": "805c180912de560b4d6a6730b5fd3d9d40d1d6e77f4aa4b958baf83e2fc51bf1",
+          "quote": "We are global investors, looking for outlier founders. We believe groundbreaking companies are built by a rare breed of entrepreneur.",
+          "quote_hash": "b8fe955a7761b878cfad63ecd1d4cb32b43db32be348d29c98ef3241881b56a4"
+        },
+        {
+          "source_id": "hummingbird_stages",
+          "source_url": "https://www.hummingbird.vc/",
+          "source_title": "Hummingbird VC",
+          "source_content_hash": "805c180912de560b4d6a6730b5fd3d9d40d1d6e77f4aa4b958baf83e2fc51bf1",
+          "quote": "We partner with outlier entrepreneurs at every stage of their journey, from inception to IPO.",
+          "quote_hash": "21b90c421cc042e02189cc4bd2e2f122d6bcde7c8c529703d2cae63993cf3c8f"
+        },
+        {
+          "source_id": "hummingbird_team",
+          "source_url": "https://www.hummingbird.vc/team",
+          "source_title": "Hummingbird VC | Team",
+          "source_content_hash": "0b97b96077bfbb8a7a5f46ae609a7d93f4abcd837f5882d6afb10a303529b612",
+          "quote": "Firat is the Managing Partner at Hummingbird Ventures, and started at the firm in 2012. Firat initially worked at J.P. Morgan at the Emerging Markets Structuring and Solutions group. He received B.S. degrees in Electrical Engineering and Computer Science and Management Science and a Master of Engineering degree in Electrical Engineering and Computer Science from MIT.",
+          "quote_hash": "c5e2581cbc1c67ca170ae3ee86ebf203b3a1d06e420bfba5f49f5cfee23c87d1"
+        },
+        {
+          "source_id": "hummingbird_barend",
+          "source_url": "https://www.hummingbird.vc/team",
+          "source_title": "Hummingbird VC | Team",
+          "source_content_hash": "0b97b96077bfbb8a7a5f46ae609a7d93f4abcd837f5882d6afb10a303529b612",
+          "quote": "Barend is the founder of Hummingbird Ventures, Nomads, and Magnificent Grants, with over two decades of venture capital experience.",
+          "quote_hash": "87bad7dfd8ec6f18ba2cd3aa298085234290e73d53a819062035c893d16c349d"
+        },
+        {
+          "source_id": "hummingbird_barend_edu",
+          "source_url": "https://www.hummingbird.vc/team",
+          "source_title": "Hummingbird VC | Team",
+          "source_content_hash": "0b97b96077bfbb8a7a5f46ae609a7d93f4abcd837f5882d6afb10a303529b612",
+          "quote": "Barend started his career in the US as a financial analyst for SG Cowen in Boston, Massachusetts, focusing on internet and data-networking companies. He holds a Master of Science degree in Economics from the University of Louvain, Belgium.",
+          "quote_hash": "bcc912623e1e66afd19ad49881d7faf161f67ca9ed346123941b526bc0bdc9cd"
+        },
+        {
+          "source_id": "hummingbird_mario",
+          "source_url": "https://www.hummingbird.vc/team",
+          "source_title": "Hummingbird VC | Team",
+          "source_content_hash": "0b97b96077bfbb8a7a5f46ae609a7d93f4abcd837f5882d6afb10a303529b612",
+          "quote": "Mario is a Partner at Hummingbird, and the founder of The Generalist, a modern media company focused on innovation and entrepreneurship.",
+          "quote_hash": "7ffa5ad7841d82eac18614b60fe1c577260f0542fc9bdf0c6ec05dd01d74cac5"
+        },
+        {
+          "source_id": "hummingbird_lukas",
+          "source_url": "https://www.hummingbird.vc/team",
+          "source_title": "Hummingbird VC | Team",
+          "source_content_hash": "0b97b96077bfbb8a7a5f46ae609a7d93f4abcd837f5882d6afb10a303529b612",
+          "quote": "Lukas is a Partner at Hummingbird, involved a.o. with Automata and Basecamp Research. Joining in 2016, Lukas structured Hummingbird's operations including fund management, portfolio investments, investor relations and continues to lead the operations team.",
+          "quote_hash": "895fafcc4d9bb15cfef1ff455ad662b777e44013fa11df185ce0c240b8a1431b"
+        },
+        {
+          "source_id": "hummingbird_lukas_edu",
+          "source_url": "https://www.hummingbird.vc/team",
+          "source_title": "Hummingbird VC | Team",
+          "source_content_hash": "0b97b96077bfbb8a7a5f46ae609a7d93f4abcd837f5882d6afb10a303529b612",
+          "quote": "Lukas holds a Master’s in Business Administration from New York’s Fordham Gabelli School of Business, as well as a Master of Science in Law (JD) from Ghent University, Belgium.",
+          "quote_hash": "54b351a22c5a9b4eaed7cebce5a5ad1caa3333fd67fde4a4f3bce5fede1c5d7c"
+        },
+        {
+          "source_id": "hummingbird_returns",
+          "source_url": "https://www.hummingbird.vc/analyst-program",
+          "source_title": "Analyst Program",
+          "source_content_hash": "979f9c004e1170ef1c0c937a0592eb170f2908af6af59da4fdeda8dd7e6fabec",
+          "quote": "Since 2010, this philosophy has made Hummingbird one of the best-performing venture firms worldwide, with multiple funds exceeding 10x net returns and distributing real capital back to investors.",
+          "quote_hash": "922bfe90b15c65884918bc58591a03161ed67ad836e010057003fd5fe39b0c78"
+        },
+        {
+          "source_id": "hummingbird_email",
+          "source_url": "https://www.hummingbird.vc/contact",
+          "source_title": "Hummingbird VC | Contact",
+          "source_content_hash": "9ecb5df7fca3fdbc01189513442e03062d6dd3794924e3260d7ed6835adba98f",
+          "quote": "hello@hummingbird.vc",
+          "quote_hash": "c3c8ed603038f4c7505382dac7511c75a9276f234bab3279730cb97803c96f7f"
+        },
         {
           "source_id": "FISRC-88b7fd63299c3c59",
           "source_url": "https://siliconangle.com/2026/02/11/photonic-ai-chip-startup-olix-nabs-220m-investment",
@@ -153,7 +364,11 @@
           "quote_hash": "631a5a22eca6176d2436f5cd36c7f4dc65443e6ad211fb7071bb603f0997e84f"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "基于机构官网或机构本人公开资料核验；机构自述业绩和规模已注明口径。"
     }
   }
 }

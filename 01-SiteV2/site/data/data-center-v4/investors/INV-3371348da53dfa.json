@@ -137,21 +137,238 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Energy Impact Partners 当前按“投资组织”收录。最新融资披露记录日期为 2023-04-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Energy Impact Partners（EIP）是一家聚焦能源转型技术的全球投资机构，2015年成立。官网称其在美国和欧洲开展风险投资、成长投资与信贷投资，并将产业合作作为投资模式的一部分。创始管理合伙人 Hans Kobler 和联合创始人 Lindsay Luger 均有长期能源技术投资经历。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2015",
+          "source_id": "eip_launch"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": [
+            "能源转型技术",
+            "能源未来技术"
+          ],
+          "source_id": "eip"
+        },
+        {
+          "field": "investment_stages",
+          "label": "投资策略",
+          "value": [
+            "Venture",
+            "Growth",
+            "Credit"
+          ],
+          "source_id": "eip"
+        },
+        {
+          "field": "market_regions",
+          "label": "主要市场",
+          "value": [
+            "美国",
+            "欧洲"
+          ],
+          "source_id": "eip"
+        },
+        {
+          "field": "reported_aum",
+          "label": "官网披露管理资产",
+          "value": "超过 45 亿美元（机构自述；页面未列统计基准日）",
+          "source_id": "eip"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2015",
+          "description": "Hans Kobler 创立 EIP，提出以产业协作推动气候创新。",
+          "source_id": "eip_launch"
+        }
+      ],
       "track_record": [
+        {
+          "description": "Sameer Reddy 的官方简介列出其在 EIP 主导或参与 Arcadia、Dragos、ERock、ThinkLabs、Infravision、Urbint、Opus One、Attivo、Quilt 等投资；其中部分后续被收购，属机构自述的选例，不等于完整组合或回报统计。",
+          "source_id": "eip_sameer"
+        },
         {
           "description": "融资来源记录：Robust.AI · A1轮 · 2023-04-20 · 本轮参投 · $20M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-344b2fbfbe7b7c56"
         }
       ],
-      "contacts": [],
+      "current_roles": [
+        {
+          "title": "Hans Kobler — 创始人兼管理合伙人",
+          "organization": "Energy Impact Partners",
+          "source_id": "eip"
+        },
+        {
+          "title": "Lindsay Luger — 联合创始人、合伙人",
+          "organization": "Energy Impact Partners",
+          "source_id": "eip_lindsay"
+        },
+        {
+          "title": "Sameer Reddy — Flagship 管理合伙人",
+          "organization": "Energy Impact Partners",
+          "source_id": "eip_sameer"
+        },
+        {
+          "title": "Matthias Dill — 欧洲 CEO 兼管理合伙人",
+          "organization": "Energy Impact Partners",
+          "source_id": "eip"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Bain & Company / GE Equity",
+          "title": "Hans Kobler — 管理咨询顾问；能源技术投资负责人",
+          "period": "任期未披露",
+          "description": "先在 Bain 从事管理咨询，随后负责 GE Equity 的能源技术投资组。",
+          "source_id": "eip_hans"
+        },
+        {
+          "organization": "Digital Power Capital / ICx Technologies",
+          "title": "Hans Kobler — 创始人、CEO",
+          "period": "任期未披露；ICx 于 2007 年在 Nasdaq 上市",
+          "description": "创建先进电力技术风险基金，并创办、领导面向安全、交通和能源领域的传感器技术公司 ICx。",
+          "source_id": "eip_hans"
+        },
+        {
+          "organization": "Digital Power Capital",
+          "title": "Lindsay Luger — 副总裁",
+          "period": "2012–2015",
+          "description": "负责科技投资相关工作。",
+          "source_id": "eip_lindsay_career"
+        },
+        {
+          "organization": "Wexford Capital",
+          "title": "Lindsay Luger — 副总裁",
+          "period": "2007–2012",
+          "description": "积累科技投资、尽调、交易结构和组合管理经验。",
+          "source_id": "eip_lindsay_career"
+        },
+        {
+          "organization": "Evercore / GE Capital",
+          "title": "Sameer Reddy — 能源与可再生能源并购顾问；能源投资人",
+          "period": "加入 EIP 前；具体年月未披露",
+          "description": "在 Evercore Power and Renewable Energy Group 工作五年，之后在 GE Capital 能源风险投资组工作三年。",
+          "source_id": "eip_sameer_career"
+        }
+      ],
+      "education": [
+        {
+          "institution": "Technical University of Munich / University of Texas at Austin",
+          "qualification": "Hans Kobler：航空航天工程硕士；工商管理硕士",
+          "source_id": "eip_hans"
+        },
+        {
+          "institution": "Columbia University",
+          "qualification": "Lindsay Luger：心理学文学学士",
+          "source_id": "eip_lindsay"
+        },
+        {
+          "institution": "University of Florida",
+          "qualification": "Sameer Reddy：金融与经济学双学位",
+          "source_id": "eip_sameer_career"
+        }
+      ],
+      "experience_summary": "核心团队公开履历覆盖能源技术投资、气候科技、并购咨询、产业风投和企业建设；Hans Kobler 曾领导 ICx Technologies 上市，Sameer Reddy 的机构简介列出多项能源与气候科技投资。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Energy Impact Partners",
+          "url": "https://www.energyimpactpartners.com/",
+          "source_id": "eip"
+        },
+        {
+          "kind": "contact_form",
+          "label": "官方联系表单",
+          "value": "Get in touch",
+          "url": "https://www.energyimpactpartners.com/how-to-reach-us/",
+          "source_id": "eip_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "纽约办公室电话",
+          "value": "+1 212 899 9700",
+          "url": "https://www.energyimpactpartners.com/how-to-reach-us/",
+          "source_id": "eip_contact"
+        },
+        {
+          "kind": "address",
+          "label": "纽约办公室",
+          "value": "600 3rd Avenue, 38th Floor, New York, NY 10016",
+          "url": "https://www.energyimpactpartners.com/how-to-reach-us/",
+          "source_id": "eip_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "eip",
+          "source_url": "https://www.energyimpactpartners.com/team/",
+          "source_title": "team -",
+          "source_content_hash": "08168cdea481e654fe304e8ba8dd6553d4300374128d883077559b794d128e90",
+          "quote": "Hans Kobler is the Founder and Managing Partner of Energy Impact Partners (EIP), a $4.5+ billion global investment firm specialized to invest in the technologies powering the future of energy.",
+          "quote_hash": "210778483ca367d67a4dcbb337234ad3575a95da006c3bdf49e0d6235292d510"
+        },
+        {
+          "source_id": "eip_launch",
+          "source_url": "https://www.energyimpactpartners.com/team/",
+          "source_title": "team -",
+          "source_content_hash": "08168cdea481e654fe304e8ba8dd6553d4300374128d883077559b794d128e90",
+          "quote": "He launched EIP in 2015 on the premise of advancing climate innovation through collaboration.",
+          "quote_hash": "42b83edde111520e2e1bb11d230196dc1bc88265874f67e7e74efd7d73025d15"
+        },
+        {
+          "source_id": "eip_hans",
+          "source_url": "https://www.energyimpactpartners.com/team/",
+          "source_title": "team -",
+          "source_content_hash": "08168cdea481e654fe304e8ba8dd6553d4300374128d883077559b794d128e90",
+          "quote": "He started his career as a management consultant at Bain & Company before leading the energy technology group at GE Equity, General Electric’s venture capital arm. Hans went on to found and serve as CEO of Digital Power Capital, a venture capital fund focused on advanced power technologies. His entrepreneurial spirit then led him to build and lead ICx Technologies, a leading sensor technology company targeting security, transportation, and energy, which he took public on Nasdaq in 2007.",
+          "quote_hash": "15c0052bf34ed2644ad52d9c77d49dc226788c6836b06cea1a1575d8bdd44f69"
+        },
+        {
+          "source_id": "eip_lindsay",
+          "source_url": "https://www.energyimpactpartners.com/team/",
+          "source_title": "team -",
+          "source_content_hash": "08168cdea481e654fe304e8ba8dd6553d4300374128d883077559b794d128e90",
+          "quote": "Lindsay Luger is a Co-Founder of EIP, a global investment firm focused on energy transition technologies and our Sponsor, where she has served as Partner since October 2015. Ms. Luger has over a decade of experience investing in energy technology companies.",
+          "quote_hash": "5bfee8d559ff487c4af5d47dd750dee916275fa98e07fbd37bbe7c6f0d030338"
+        },
+        {
+          "source_id": "eip_lindsay_career",
+          "source_url": "https://www.energyimpactpartners.com/team/",
+          "source_title": "team -",
+          "source_content_hash": "08168cdea481e654fe304e8ba8dd6553d4300374128d883077559b794d128e90",
+          "quote": "Prior to joining EIP, Ms. Luger served as Vice President of Digital Power Capital from 2012 to 2015 and Vice President of Wexford Capital from 2007 to 2012.",
+          "quote_hash": "ccc6d9ccc20845301211656dcb92c68c4fee0fe147c466d8b91c088d96c1eee7"
+        },
+        {
+          "source_id": "eip_sameer",
+          "source_url": "https://www.energyimpactpartners.com/team/",
+          "source_title": "team -",
+          "source_content_hash": "08168cdea481e654fe304e8ba8dd6553d4300374128d883077559b794d128e90",
+          "quote": "While at EIP, he has led investments in Arcadia, Dragos, ERock (NYSE: EROC), ThinkLabs, Infravision, Urbint (acquired by Itron), Opus One (acquired by GE), Attivo (acquired by SentinelOne), Quilt, among others.",
+          "quote_hash": "bbb8be052e1032a236c7441c3c7f59ea9e5294b95bc5b531882fd04649286947"
+        },
+        {
+          "source_id": "eip_sameer_career",
+          "source_url": "https://www.energyimpactpartners.com/team/",
+          "source_title": "team -",
+          "source_content_hash": "08168cdea481e654fe304e8ba8dd6553d4300374128d883077559b794d128e90",
+          "quote": "Prior to EIP, Sameer spent five years at Evercore in its Power and Renewable Energy Group where he advised clients on over $15 billion of M&A transactions. Prior to Evercore, he spent three years at GE Capital’s energy venture capital group focusing on industrial and clean tech investing.",
+          "quote_hash": "b6b8a27a92400499ad100ded8f763b4c7b07cbb0db80c8f20e8def7fa24a584d"
+        },
+        {
+          "source_id": "eip_contact",
+          "source_url": "https://www.energyimpactpartners.com/how-to-reach-us/",
+          "source_title": "contact us -",
+          "source_content_hash": "a6058518303077f3a936af7da47392914c61674e01e207435e74292747fa8387",
+          "quote": "New York 600 3rd Avenue, 38th Floor New York, NY 10016 (212) 899-9700",
+          "quote_hash": "8cb6e055a85c876d90fee69d9da233c0665128eb19041cf67694f9068ec65b38"
+        },
         {
           "source_id": "FISRC-344b2fbfbe7b7c56",
           "source_url": "https://techcrunch.com/2023/04/20/robust-ai-raises-20m-as-it-scales-robot-deliveries-for-pilot-customers/",
@@ -161,7 +378,11 @@
           "quote_hash": "d026554b11923a5ab39299095707c7cb7db32d7f23f5e9fcaca2b71d8790f982"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "基于机构官网或机构本人公开资料核验；自述数据已注明口径，未公开的信息留空。"
     }
   }
 }

@@ -153,25 +153,226 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Pantera Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Pantera Capital 是专注区块链和数字资产的投资管理机构。创始人 Dan Morehead 于 2003 年创立公司；2013 年 Pantera 推出美国首批加密货币基金之一。官网披露其通过风险股权、早期代币、流动代币等策略投资该领域，并称截至 2026 年 3 月 31 日管理资产约 35 亿美元。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2003",
+          "source_id": "pantera_firm"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": [
+            "区块链",
+            "数字资产"
+          ],
+          "source_id": "pantera"
+        },
+        {
+          "field": "investment_stages",
+          "label": "投资策略",
+          "value": [
+            "风险股权",
+            "早期代币",
+            "流动代币",
+            "区块链资产"
+          ],
+          "source_id": "pantera"
+        },
+        {
+          "field": "reported_aum",
+          "label": "官网披露管理资产",
+          "value": "约 35 亿美元；估算且未经审计，截至 2026-03-31",
+          "source_id": "pantera_aum"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2003",
+          "description": "Dan Morehead 创立 Pantera Capital。",
+          "source_id": "pantera_firm"
+        },
+        {
+          "date": "2013",
+          "description": "推出首批美国区块链对冲与风险投资基金。",
+          "source_id": "pantera_firm"
+        },
+        {
+          "date": "2017",
+          "description": "推出美国首支早期代币基金。",
+          "source_id": "pantera_2017"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Orthogonal · 种子轮 · 2026-06-23 · 本轮领投 · $4.3M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2536493387c26797"
+          "description": "Pantera 官网披露，其风险投资基金在 40 家公司上以 1.37 亿美元投资成本实现 5.47 亿美元回收；该结果为机构自述，页面未提供独立审计材料。",
+          "source_id": "pantera_performance"
+        },
+        {
+          "description": "官网称 Pantera 自 2013 年以来参与约 210 项投资，并主导其中约一半；Paul Veradittakit 个人简介列举 Circle、Alchemy、Amber、Arbitrum、Ondo、Wintermute、M^0 和 TON 等投资案例。",
+          "source_id": "pantera_examples"
         },
         {
           "description": "融资来源记录：Orthogonal · 种子轮 · 2026-06-23 · 本轮领投 · $4.3M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-92a39db011d9c07b"
+          "source_id": "FISRC-2536493387c26797"
         }
       ],
-      "contacts": [],
+      "current_roles": [
+        {
+          "title": "Dan Morehead — Founder & Managing Partner",
+          "organization": "Pantera Capital",
+          "source_id": "pantera_dan"
+        },
+        {
+          "title": "Paul Veradittakit — Managing Partner",
+          "organization": "Pantera Capital",
+          "source_id": "pantera_paul"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Tiger Management",
+          "title": "Dan Morehead — 宏观交易负责人、首席财务官",
+          "period": "此前；具体年月未披露",
+          "description": "曾在 Julian Robertson 领导的 Tiger Management 担任宏观交易负责人和 CFO。",
+          "source_id": "pantera_dan"
+        },
+        {
+          "organization": "Goldman Sachs",
+          "title": "Dan Morehead — 资产支持证券交易员",
+          "period": "职业生涯早期；具体年月未披露",
+          "description": "官网称其为公司首位资产支持证券交易员。",
+          "source_id": "pantera_dan"
+        }
+      ],
+      "education": [
+        {
+          "institution": "Princeton University",
+          "qualification": "Dan Morehead：土木工程理学学士，优等毕业",
+          "source_id": "pantera_dan"
+        }
+      ],
+      "experience_summary": "Dan Morehead 的履历横跨传统宏观交易、证券化产品和数字资产投资；Paul Veradittakit 自 2014 年起参与 Pantera 投资团队，官网称其已支持 200 多项区块链生态投资。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Pantera Capital",
+          "url": "https://panteracapital.com/",
+          "source_id": "pantera"
+        },
+        {
+          "kind": "phone",
+          "label": "机构电话",
+          "value": "+1 650 854 7000",
+          "url": "https://panteracapital.com/contact/",
+          "source_id": "pantera_contact"
+        },
+        {
+          "kind": "email",
+          "label": "投资者关系",
+          "value": "ir@panteracapital.com",
+          "url": "https://panteracapital.com/contact/",
+          "source_id": "pantera_contact"
+        },
+        {
+          "kind": "email",
+          "label": "投资机会与项目推介",
+          "value": "pitch@panteracapital.com",
+          "url": "https://panteracapital.com/contact/",
+          "source_id": "pantera_contact"
+        },
+        {
+          "kind": "email",
+          "label": "资本募集与投资咨询",
+          "value": "invest@panteracapital.com",
+          "url": "https://panteracapital.com/contact/",
+          "source_id": "pantera_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "pantera",
+          "source_url": "https://panteracapital.com/",
+          "source_title": "Home | Pantera",
+          "source_content_hash": "7435b2a6ba2c7889e9fb8fefd053c6920be6e6b8f4b446d899315a8bd1a75366",
+          "quote": "First U.S. institutional asset manager focused exclusively on blockchain technology.",
+          "quote_hash": "f9bbc620d886e3b54dfb91a1728e49aafc6d1e6de5ad68736f447b4f8322ed33"
+        },
+        {
+          "source_id": "pantera_aum",
+          "source_url": "https://panteracapital.com/",
+          "source_title": "Home | Pantera",
+          "source_content_hash": "7435b2a6ba2c7889e9fb8fefd053c6920be6e6b8f4b446d899315a8bd1a75366",
+          "quote": "Figures are estimated and unaudited as of March 31, 2026",
+          "quote_hash": "a10678f135cfa096f6e26e6d4805e29bf1ba4080e88cb57bc9e80f610caeb9a7"
+        },
+        {
+          "source_id": "pantera_dan",
+          "source_url": "https://panteracapital.com/team/",
+          "source_title": "The Team | Pantera",
+          "source_content_hash": "ea01e3da51163bc287174d48214d7ce7c827663d93df39ff55e24262dfc3ace1",
+          "quote": "Dan founded Pantera Capital Management in 2003, managing over $1 billion of institutional investor assets in its global macro strategy. He previously served as Head of Macro Trading and CFO at Tiger Management with Julian Robertson. Dan began his career at Goldman Sachs as their first Asset-Backed Securities trader.",
+          "quote_hash": "060c9ac6596274ad0386f6672bfaec3c0033d81d17c321bafe8bfd60b477e0d7"
+        },
+        {
+          "source_id": "pantera_paul",
+          "source_url": "https://panteracapital.com/team/",
+          "source_title": "The Team | Pantera",
+          "source_content_hash": "ea01e3da51163bc287174d48214d7ce7c827663d93df39ff55e24262dfc3ace1",
+          "quote": "Paul Veradittakit is the Managing Partner at Pantera Capital, the first US institutional asset manager focused exclusively on blockchain technology. As the founding member of Pantera Capital’s investment team, he has backed more than 200 strategic investments and facilitated some of the largest acquisitions across the blockchain ecosystem since 2014.",
+          "quote_hash": "8c4e3b209f47f7985d819966f3ca18a5e2626f9efc42ba14cc04b86b8cf06378"
+        },
+        {
+          "source_id": "pantera_examples",
+          "source_url": "https://panteracapital.com/team/",
+          "source_title": "The Team | Pantera",
+          "source_content_hash": "ea01e3da51163bc287174d48214d7ce7c827663d93df39ff55e24262dfc3ace1",
+          "quote": "Many of these investments have become some of the most successful and industry-defining companies such as Circle, Alchemy, Amber, Arbitrum, Ondo, Wintermute, M^0, TON.",
+          "quote_hash": "ace068e1d634ff8f954cc3ceade67e6d2609c4667c223b0829b0b9b049602975"
+        },
+        {
+          "source_id": "pantera_firm",
+          "source_url": "https://panteracapital.com/firm/",
+          "source_title": "The Firm | Pantera",
+          "source_content_hash": "1f2cc4b217253a4c89ad9fc06f284e200e9e87725acd6af6aa4e54ee81cb1c74",
+          "quote": "Pantera Capital was founded by former Tiger Management Head of Macro Trading and CFO Dan Morehead. In 2013, Pantera created the first blockchain hedge and venture funds in the United States.",
+          "quote_hash": "9b5afa84c649803e14067620166f0d45bf8d012212de70f1bf557ae5cfc5ded9"
+        },
+        {
+          "source_id": "pantera_2017",
+          "source_url": "https://panteracapital.com/firm/",
+          "source_title": "The Firm | Pantera",
+          "source_content_hash": "1f2cc4b217253a4c89ad9fc06f284e200e9e87725acd6af6aa4e54ee81cb1c74",
+          "quote": "2017 Pantera Early-Stage Token Fund — First early-stage token fund in U.S.",
+          "quote_hash": "a613d52c6876b0683c47beac5939f74901112ab710c65f35a24c009735de6522"
+        },
+        {
+          "source_id": "pantera_performance",
+          "source_url": "https://panteracapital.com/firm/",
+          "source_title": "The Firm | Pantera",
+          "source_content_hash": "1f2cc4b217253a4c89ad9fc06f284e200e9e87725acd6af6aa4e54ee81cb1c74",
+          "quote": "Pantera Venture Funds have realized $547 million on $137 million of invested capital across 40 companies.",
+          "quote_hash": "4adfc3b38f46a8dbe5106b758238ec5fe5f4fb58165d50f22553d8fb6a722629"
+        },
+        {
+          "source_id": "pantera_210",
+          "source_url": "https://panteracapital.com/firm/",
+          "source_title": "The Firm | Pantera",
+          "source_content_hash": "1f2cc4b217253a4c89ad9fc06f284e200e9e87725acd6af6aa4e54ee81cb1c74",
+          "quote": "Pantera has led about half of 210 investments since 2013.",
+          "quote_hash": "52d6e50de865d9483104c2f5986af856849ba97a46b10aeb6f87e6097408ad35"
+        },
+        {
+          "source_id": "pantera_contact",
+          "source_url": "https://panteracapital.com/contact/",
+          "source_title": "Contact Us | Pantera",
+          "source_content_hash": "e5b663a2b887e36cb692715f6df35306eb369336f2329462240e60ae127d14d1",
+          "quote": "FUNDING INQUIRIES Send us your white papers & investment opportunities at: pitch@panteracapital.com",
+          "quote_hash": "71179a4ccffc84c512e6249191335f12c70e19c8a3b8111e641c4865ad68838f"
+        },
         {
           "source_id": "FISRC-2536493387c26797",
           "source_url": "https://svpost.com/articles/orthogonal-4-3m-seed/",
@@ -189,7 +390,11 @@
           "quote_hash": "06eca5cf4b07a5b3c9bab5fbbf029d4710e85253d7ab4c3a6154c879a69277f8"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "基于机构官网或机构本人公开资料核验；机构自述业绩和规模已注明口径。"
     }
   }
 }
