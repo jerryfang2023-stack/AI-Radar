@@ -130,20 +130,45 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "BlackRock Private Equity Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "BlackRock Private Equity Partners 是融资记录中使用的投资者名称。BlackRock 官方私募股权页面披露的是 BlackRock 私募股权团队整体的投资能力，并不能据此确认该数字只属于这一名称对应的单一基金或法律载体。现有 Groq 条目引用的是历史 Series D 报道，不能证明 2026 年发生了新一轮融资或确认该记录的具体出资载体。",
+      "facts": [
+        {
+          "field": "platform_capacity",
+          "label": "BlackRock 私募股权团队披露规模",
+          "value": "官网页面称其团队管理 552 亿美元资本承诺，覆盖直接投资、一级、二级及联合投资；这是更广泛的团队口径，不等同于单一 PEP 载体规模。",
+          "source_id": "blackrock_pe"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Groq · 轮次未披露 · 2026-06-22 · D轮参投 · 6.5 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Economic Times 主题页引用 Groq 曾在前一年 8 月完成 6.4 亿美元 Series D，BlackRock Private Equity Partners 为参投方之一。该材料属于历史融资报道，不能验证登记表中的 2026 年 6 月 6.5 亿美元描述、具体基金载体或单笔金额。",
           "source_id": "FISRC-6ef693ebacbad168"
+        },
+        {
+          "description": "BlackRock 官方私募股权页面披露团队整体管理资本承诺，但页面数据不单独对应 BlackRock Private Equity Partners 这一投资者名称。",
+          "source_id": "blackrock_pe"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "BlackRock 私募股权业务介绍",
+          "value": "Private Equity | BlackRock",
+          "url": "https://www.blackrock.com/institutions/en-us/investment-capabilities/strategies/private-equity",
+          "source_id": "blackrock_pe"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "blackrock_pe",
+          "source_url": "https://www.blackrock.com/institutions/en-us/investment-capabilities/strategies/private-equity",
+          "source_title": "Private Equity | BlackRock",
+          "source_content_hash": "56ea0586212b7b32315d24cb293008a16a43b751ee16dcb389f1c25d603ac101",
+          "quote": "BlackRock’s Private Equity teams manage $55.2 billion in capital commitments across direct, primary, secondary and co-investments.",
+          "quote_hash": "eef9219a50ca15edc8dfa90871c6880dc97ef01526b0bd698b18c18251cf567d"
+        },
         {
           "source_id": "FISRC-6ef693ebacbad168",
           "source_url": "https://economictimes.indiatimes.com/topic/investment-in-groq",
@@ -153,7 +178,9 @@
           "quote_hash": "4176996439738f8e3f1f9bb2ded34c557750df899e0a00fcca208a70bcb8785f"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "coverage_note": "融资活动被标记为 historical_or_ambiguous；此档案不将历史 Groq 参投报道写作 2026 年业绩，也不将 BlackRock 整体私募股权团队指标归因于单一载体。",
+      "last_verified_at": "2026-09-28",
+      "identity_status": "verified"
     }
   }
 }

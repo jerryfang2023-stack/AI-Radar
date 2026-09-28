@@ -183140,20 +183140,81 @@
       ],
       "public_profile": {
         "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Designer Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "summary": "Designer Fund 是一家专注早期阶段的风险投资机构，官网称其主要投资 Pre-seed 至 Series A 企业，并以设计能力支持创业团队，关注健康、可持续发展与繁荣等议题。其官网列举 Stripe、Gusto、Notion、Framer、Commure 等组合案例；融资记录显示其参与 Paper 的 2026 年 A 轮，但公开资料没有披露其单笔出资额。",
+        "facts": [
+          {
+            "field": "investment_stage",
+            "label": "投资阶段",
+            "value": "Pre-seed 至 Series A",
+            "source_id": "designer_about"
+          },
+          {
+            "field": "investment_themes",
+            "label": "投资主题",
+            "value": [
+              "健康",
+              "可持续发展",
+              "繁荣"
+            ],
+            "source_id": "designer_about"
+          },
+          {
+            "field": "value_add",
+            "label": "投后支持",
+            "value": "以设计能力和设计合作支持创业团队。",
+            "source_id": "designer_about"
+          },
+          {
+            "field": "selected_portfolio",
+            "label": "官网列举的组合案例",
+            "value": [
+              "Stripe",
+              "Gusto",
+              "Notion",
+              "Framer",
+              "Commure"
+            ],
+            "source_id": "designer_about"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：Paper · A轮 · 2026-07-23 · 本轮参投 · $34 million。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "官网列举 Stripe、Gusto、Notion、Framer、Commure 等组合企业，属于机构自选案例，并非完整投资组合。",
+            "source_id": "designer_about"
+          },
+          {
+            "description": "融资记录称 Designer Fund 参与 Paper 于 2026-07-23 宣布的 3400 万美元 A 轮；该金额为本轮融资总额，未披露 Designer Fund 的单笔出资额。",
             "source_id": "FISRC-6be00539e7d0e25e"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "Designer Fund",
+            "url": "https://designerfund.com/about",
+            "source_id": "designer_about"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "designer_about",
+            "source_url": "https://designerfund.com/about",
+            "source_title": "About Designer Fund – Designer Fund",
+            "source_content_hash": "cf4c67be374eb0fa33d816cbf73883647ca24b5bf99ced45f2ad19695d03b582",
+            "quote": "We focus on companies at Pre-seed through Series A stages.",
+            "quote_hash": "4d04690d6785409e7229d112f160f40a9acd91132920ca24d5be3bbe2402794d"
+          },
+          {
+            "source_id": "designer_team",
+            "source_url": "https://designerfund.com/team",
+            "source_title": "Our Team – Designer Fund",
+            "source_content_hash": "5b4e6e3b57d962f88c3e5e89c8acbe55e4e21f830f61e02f7f595cc3e10ec8db",
+            "quote": "Ben Blumenrose is the Co-founder and Managing Partner at Designer Fund.",
+            "quote_hash": "1ebf004a3c674106b7e81bb3e0ed95e44a5c07411e8b717bbae64ef1ed80240e"
+          },
           {
             "source_id": "FISRC-6be00539e7d0e25e",
             "source_url": "https://startupfortune.com/paper-raised-34m-on-the-exact-thesis-that-wiped-out-half-of-figmas-market-cap/",
@@ -183163,7 +183224,9 @@
             "quote_hash": "872db1abd958652e90b9cbf22eecb40679d5d7d04961209b9cd782d331057563"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "coverage_note": "团队信息可进一步按管理合伙人扩充；组合案例按官网自选披露记录，不视为完整业绩。",
+        "last_verified_at": "2026-09-28",
+        "identity_status": "verified"
       }
     },
     {
@@ -201256,24 +201319,78 @@
       ],
       "public_profile": {
         "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Nvidia Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "summary": "Nvidia Ventures 是融资记录使用的投资者名称，NVIDIA 官方将其风险投资部门称为 NVentures，关注 AI 基础设施、机器人、数字生物学、应用 AI 和前沿计算。Prime Intellect 融资的媒体报道对投资主体表述不完全一致；官方资料确认 NVentures 部门存在，但尚不能独立确认该笔交易的法律投资载体。",
+        "facts": [
+          {
+            "field": "venture_arm",
+            "label": "风险投资部门",
+            "value": "NVentures",
+            "source_id": "nventures"
+          },
+          {
+            "field": "investment_themes",
+            "label": "投资领域",
+            "value": [
+              "AI 基础设施",
+              "机器人",
+              "数字生物学",
+              "应用 AI",
+              "前沿计算"
+            ],
+            "source_id": "nventures"
+          },
+          {
+            "field": "strategic_support",
+            "label": "生态支持",
+            "value": "NVIDIA 官方介绍称 NVentures 可与 NVIDIA 技术团队和平台资源协作。",
+            "source_id": "nventures"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：Prime Intellect · A轮 · 2026-07-08 · 本轮参投 · $130 million。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "一则 Prime Intellect 2026 年 A 轮报道提到 NVIDIA 以战略投资者身份加入；该来源没有给出其单笔出资额，也未证明具体使用 NVentures 法律载体。",
             "source_id": "FISRC-8d68719d4ab934b9"
           },
           {
-            "description": "融资来源记录：Prime Intellect · A轮 · 2026-07-08 · 本轮参投 · $130 million。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "另一则同轮报道将 NVentures 列为参投方。两份媒体材料的主体称呼存在差异，因此暂以待核实的公开活动记录呈现，不据此确认法定主体或出资额。",
             "source_id": "FISRC-fbda7a24ef3d8ef8"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "NVentures 官方介绍",
+            "value": "NVentures — NVIDIA’s Venture Capital Arm",
+            "url": "https://www.nvidia.com/en-us/startups/nventures/",
+            "source_id": "nventures"
+          },
+          {
+            "kind": "email",
+            "label": "NVIDIA 媒体联系（非投资申请渠道）",
+            "value": "press@nvidia.com",
+            "url": "https://nvidianews.nvidia.com/contacts",
+            "source_id": "nvidia_press"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "nventures",
+            "source_url": "https://www.nvidia.com/en-us/startups/nventures/",
+            "source_title": "NVentures — NVIDIA’s Venture Capital Arm | NVIDIA",
+            "source_content_hash": "3271076a394f6b2223cd7dd794ea8c6e0f5da94cece8219e56b73f19f246e130",
+            "quote": "NVentures is NVIDIA’s venture capital arm. It focuses on AI infrastructure, robotics, digital biology, applied AI, and frontier compute.",
+            "quote_hash": "76a883d3cc2e85af162b76448500782412f39d28a282bb5e328113af0724ca27"
+          },
+          {
+            "source_id": "nvidia_press",
+            "source_url": "https://nvidianews.nvidia.com/contacts",
+            "source_title": "Press Contacts | NVIDIA Newsroom",
+            "source_content_hash": "e7685ee0e6b289b1f981e5ff98191c6dde923e9bdf7296e6fb71600a162d45dc",
+            "quote": "Corporate Communications: press@nvidia.com.",
+            "quote_hash": "ee1e54cd9f847ba4c9a860b598e9dfd0b8bd5688c398c80253a8a4aa8f1ef820"
+          },
           {
             "source_id": "FISRC-8d68719d4ab934b9",
             "source_url": "https://www.tbpndigest.com/story/2026-07-08/prime-intellect-raises-130m-at-1b-valuation-to-build-open-sovereign-ai-stack",
@@ -201291,7 +201408,9 @@
             "quote_hash": "24bdc3b7a36b729c317ee6fed8d24a6aab20830cfcd7d9956ef47fab33d60d6b"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "coverage_note": "公开的 Prime Intellect 融资来源对 NVIDIA/NVentures 名称的表述不同；融资总额不是该投资者的单笔出资额。官网媒体联系邮箱不是投资申请渠道。",
+        "last_verified_at": "2026-09-28",
+        "identity_status": "verified"
       }
     },
     {
@@ -217412,20 +217531,88 @@
       ],
       "public_profile": {
         "profile_type": "person",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "John Hennessy 当前按“个人投资者”收录。最新融资披露记录日期为 2026-06-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "summary": "John L. Hennessy 是计算机科学家、学者和科技企业家，曾任斯坦福大学校长，现任 Alphabet 董事长，并参与 Knight-Hennessy Scholars。斯坦福资料记载他共同创办 MIPS 与 Atheros，获得 2017 年图灵奖和 2022 年 Draper 奖。融资报道称他是 Sail Research 的天使投资人，但未披露个人出资额。",
+        "current_roles": [
+          {
+            "title": "董事长",
+            "organization": "Alphabet",
+            "source_id": "hennessy_bio"
+          },
+          {
+            "title": "联合创办人、董事",
+            "organization": "Knight-Hennessy Scholars",
+            "source_id": "hennessy_bio"
+          },
+          {
+            "title": "荣休教授、荣休校长",
+            "organization": "Stanford University",
+            "source_id": "hennessy_engineering"
+          }
+        ],
+        "career": [
+          {
+            "organization": "Stanford University",
+            "title": "校长",
+            "period": "2000–2016",
+            "description": "斯坦福官方资料记载其于 2000 至 2016 年担任校长；其在斯坦福任教始于 1977 年。",
+            "source_id": "hennessy_bio"
+          },
+          {
+            "organization": "MIPS Computer Systems",
+            "title": "共同创办人",
+            "period": "具体任期未披露",
+            "description": "斯坦福官方人物简介将其列为 MIPS 共同创办人。",
+            "source_id": "hennessy_bio"
+          },
+          {
+            "organization": "Atheros Communications",
+            "title": "共同创办人",
+            "period": "具体任期未披露",
+            "description": "斯坦福官方人物简介将其列为 Atheros 共同创办人。",
+            "source_id": "hennessy_bio"
+          }
+        ],
+        "education": [
+          {
+            "institution": "Stony Brook University",
+            "qualification": "计算机科学博士，1977 年；计算机科学硕士，1975 年。",
+            "source_id": "hennessy_engineering"
+          },
+          {
+            "institution": "Villanova University",
+            "qualification": "电气工程学士，1973 年。",
+            "source_id": "hennessy_engineering"
+          }
+        ],
+        "experience_summary": "其公开经历横跨计算机体系结构研究、大学管理和科技创业。教育与学术职务按斯坦福官方页面记载。",
         "track_record": [
           {
-            "description": "融资来源记录：Sail Research · 多轮融资 · 2026-06-25 · 天使投资人 · $80 million。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "获 2017 年图灵奖及 2022 年 Draper 奖，奖项年份来自斯坦福官方人物简介。",
+            "source_id": "hennessy_bio"
+          },
+          {
+            "description": "PR Newswire 报道称 John Hennessy 是 Sail Research Seed and Series A 融资的天使投资人；报道中的 8000 万美元为两轮融资合计，未披露其个人出资额。",
             "source_id": "FISRC-11ff205cb2054931"
           }
         ],
-        "contacts": [],
         "sources": [
+          {
+            "source_id": "hennessy_bio",
+            "source_url": "https://hennessy.stanford.edu/biography",
+            "source_title": "Biography | John L. Hennessy",
+            "source_content_hash": "a327d461d946d7b427fa108f4ae79540fd4931d750438f79e951e8a16046c0cc",
+            "quote": "John L. Hennessy is co-founder and director of Knight-Hennessy Scholars.",
+            "quote_hash": "fef9c0b4600b9aa313aaf3d49c1f44580f9b73cfb1e863de246f34177f596c9c"
+          },
+          {
+            "source_id": "hennessy_engineering",
+            "source_url": "https://engineering.stanford.edu/people/john-hennessy",
+            "source_title": "John Hennessy | Stanford University School of Engineering",
+            "source_content_hash": "8340cb701364ecbacd9502fc814f075713f528b7e2cafaa00d8dd1d139a9c9b2",
+            "quote": "B.E., Villanova University, Electrical Engineering (1973)",
+            "quote_hash": "0c60d7d0c1398c675b7fda00ece423024ef591a4c466669507f4856f16320eb3"
+          },
           {
             "source_id": "FISRC-11ff205cb2054931",
             "source_url": "https://www.prnewswire.com/news-releases/sail-research-raises-80-million-to-build-max-efficiency-infrastructure-for-ai-agents-302810497.html",
@@ -217435,7 +217622,12 @@
             "quote_hash": "7db526e6d196b96a5cba79a2bb112fd464b4279bde416b16c07c0fdef81e41ca"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "coverage_note": "Sail Research 报道支持其天使投资人身份，不披露个人支票金额；80 million 美元是所报道两轮融资的总规模。",
+        "last_verified_at": "2026-09-28",
+        "facts": [],
+        "milestones": [],
+        "contacts": [],
+        "identity_status": "verified"
       }
     },
     {
@@ -246427,20 +246619,94 @@
       ],
       "public_profile": {
         "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "星海图 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-19；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "summary": "星海图（北京）人工智能科技股份有限公司成立于 2023 年 9 月，专注具身智能基础模型与机器人，并以“机器人本体 + 智能”的整体方案开展业务。融资数据库所列星海图领投鲸跃动力种子轮，是独立于星海图自身融资历史的对外投资活动；公开报道未披露星海图的单笔出资额。",
+        "facts": [
+          {
+            "field": "legal_name",
+            "label": "公司名称",
+            "value": "星海图（北京）人工智能科技股份有限公司",
+            "source_id": "starsea_about"
+          },
+          {
+            "field": "founded",
+            "label": "成立时间",
+            "value": "2023 年 9 月",
+            "source_id": "starsea_about"
+          },
+          {
+            "field": "business_focus",
+            "label": "业务方向",
+            "value": "具身智能基础模型与机器人",
+            "source_id": "starsea_about"
+          },
+          {
+            "field": "product_strategy",
+            "label": "产品战略",
+            "value": "“机器人本体 + 智能”的整体方案",
+            "source_id": "starsea_about"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2023-09",
+            "description": "公司官网列示成立于 2023 年 9 月。",
+            "source_id": "starsea_about"
+          }
+        ],
         "track_record": [
           {
-            "description": "融资来源记录：鲸跃动力 · 种子轮 · 2026-05-19 · 本轮领投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "投资界报道鲸跃动力于 2026-05-19 完成数千万元种子轮，星海图独家领投；数千万元是该轮融资总额，不是星海图单独出资金额。",
             "source_id": "FISRC-a613b9328225b67f"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "星海图",
+            "url": "https://galaxea-ai.com/cn/about",
+            "source_id": "starsea_about"
+          },
+          {
+            "kind": "phone",
+            "label": "咨询热线",
+            "value": "4008-780-980",
+            "url": "https://galaxea-ai.com/cn/contact",
+            "source_id": "starsea_contact"
+          },
+          {
+            "kind": "email",
+            "label": "商业合作邮箱",
+            "value": "partners@galaxea-ai.com",
+            "url": "https://galaxea-ai.com/cn/contact",
+            "source_id": "starsea_contact"
+          },
+          {
+            "kind": "contact_form",
+            "label": "官方联系表单",
+            "value": "星海图官方联系页面",
+            "url": "https://galaxea-ai.com/cn/contact",
+            "source_id": "starsea_contact"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "starsea_about",
+            "source_url": "https://galaxea-ai.com/cn/about",
+            "source_title": "星海图（北京）人工智能科技股份有限公司",
+            "source_content_hash": "fa9393f5e89e1b437e0d6489e43903a642ae549cea37f1699ddf479c88438f7e",
+            "quote": "星海图（北京）人工智能科技股份有限公司",
+            "quote_hash": "0cdec361f65765c8b8115d193015f8afb7e8865e40f44afdc781794ef7e8e6db"
+          },
+          {
+            "source_id": "starsea_contact",
+            "source_url": "https://galaxea-ai.com/cn/contact",
+            "source_title": "星海图（北京）人工智能科技股份有限公司",
+            "source_content_hash": "d31eadfc410ad8b9f2fb4b212822a35cd9ae2767d397b8061062b128abc7c252",
+            "quote": "咨询热线：4008-780-980；商业合作：partners@galaxea-ai.com",
+            "quote_hash": "0bff3e3ba94c25ac440109cfb24e6a2634fa49ee79072b313166aab13fc27677"
+          },
           {
             "source_id": "FISRC-a613b9328225b67f",
             "source_url": "https://news.pedaily.cn/202605/564081.shtml",
@@ -246450,7 +246716,9 @@
             "quote_hash": "e67e7a75917feabdda2cee76dba500c9554c57ec5e5c05613b1c4ed9ffc56483"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "coverage_note": "该投资者标签对应星海图公司本身；目前未发现官方资料确认存在独立命名的 CVC 基金或投资部门。联系方式用于咨询/商业合作，不应表述为投资申请渠道。",
+        "last_verified_at": "2026-09-28",
+        "identity_status": "verified"
       }
     },
     {
@@ -274819,20 +275087,82 @@
       ],
       "public_profile": {
         "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "MaC Venture Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "summary": "MaC Venture Capital 是一家总部位于洛杉矶的早期风险投资机构，官网称其成立于 2019 年，主要参与种子阶段融资，关注前沿技术、金融创新、企业服务和消费领域。官网还披露其投资组合规模超过 120 家；该数字为机构自述。",
+        "facts": [
+          {
+            "field": "founded",
+            "label": "成立年份",
+            "value": "2019 年；官网称总部位于洛杉矶。",
+            "source_id": "mac_about"
+          },
+          {
+            "field": "investment_stage",
+            "label": "主要投资阶段",
+            "value": "种子阶段",
+            "source_id": "mac_about"
+          },
+          {
+            "field": "investment_themes",
+            "label": "投资主题",
+            "value": [
+              "前沿技术",
+              "金融创新",
+              "企业服务",
+              "消费"
+            ],
+            "source_id": "mac_about"
+          },
+          {
+            "field": "portfolio_scale",
+            "label": "官网披露的组合规模",
+            "value": "超过 120 家公司（机构自述）",
+            "source_id": "mac_about"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2019",
+            "description": "官网称 MaC Venture Capital 于 2019 年成立。",
+            "source_id": "mac_about"
+          }
+        ],
         "track_record": [
           {
-            "description": "融资来源记录：Taya · 种子轮 · 2026-03-12 · 本轮领投 · $5 million。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "官网披露其投资组合超过 120 家公司；该统计口径为机构自述，页面未提供逐项完整组合清单。",
+            "source_id": "mac_about"
+          },
+          {
+            "description": "Taya 于 2026-03-12 宣布完成 500 万美元种子轮，由 MaC Venture Capital 与 Female Founders Fund 共同领投，a16z speedrun 参投；500 万美元为本轮总额，未披露 MaC 的单笔出资额。",
             "source_id": "FISRC-4ec4178291982ae4"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "MaC Venture Capital",
+            "url": "https://macventurecapital.com/about/",
+            "source_id": "mac_about"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "mac_about",
+            "source_url": "https://macventurecapital.com/about/",
+            "source_title": "About - MaC VC",
+            "source_content_hash": "5b03263cc1cd55e863c547c5504e7e0930dc025d05c4768aeb7d6031a8e8615f",
+            "quote": "Founded in 2019 in Los Angeles, MaC VC invests in early-stage companies.",
+            "quote_hash": "e322bd5cd3e691e85cad9e30f61d5b3cbacb993e1f10ffcf00a60f3458d5f7bc"
+          },
+          {
+            "source_id": "mac_marlon",
+            "source_url": "https://macventurecapital.com/team/marlon-nichols/",
+            "source_title": "Marlon Nichols - MaC VC",
+            "source_content_hash": "15885b37bdf8ebec1da8304ab6168e063563d8b67dacdec1606fd5d00786ed93",
+            "quote": "Marlon Nichols is the co-founder and managing general partner of MaC Venture Capital.",
+            "quote_hash": "d5ffc14880033cf4494553d3bae9162872e4314e4bf6995f22515cca9485e036"
+          },
           {
             "source_id": "FISRC-4ec4178291982ae4",
             "source_url": "https://www.prnewswire.com/news-releases/taya-raises-5m-for-ai-jewelry-designed-to-capture-your-thoughts-not-the-room-302711918.html",
@@ -274842,7 +275172,9 @@
             "quote_hash": "0a632c56cfbb4e44872d10b4c4d7118a5c285d0446981e4b38379a2f3f43ced6"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "coverage_note": "管理合伙人 Marlon Nichols 的公开履历已列为来源；资产管理规模在官网不同页面存在口径差异，本档案暂不汇总为单一数字。",
+        "last_verified_at": "2026-09-28",
+        "identity_status": "verified"
       }
     },
     {
@@ -274931,20 +275263,61 @@
       ],
       "public_profile": {
         "profile_type": "person",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Mark Cuban 当前按“个人投资者”收录。最新融资披露记录日期为 2026-03-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "summary": "Mark Cuban 是美国企业家和投资人。ABC 官方人物资料记载其创办 MicroSolutions、共同创办 Audionet，并共同创办线上药房 Cost Plus Drugs；该人物资料还将其描述为持续活跃的创业者和投资人。融资报道将他列为 AMI Labs 种子轮个人投资者之一，未披露个人出资额。",
+        "current_roles": [
+          {
+            "title": "企业家、投资人",
+            "organization": "独立投资与创业活动",
+            "source_id": "mark_abc"
+          }
+        ],
+        "career": [
+          {
+            "organization": "MicroSolutions",
+            "title": "创办者",
+            "period": "具体任期未披露",
+            "description": "ABC 官方人物资料记载其创办 MicroSolutions；引用页面未列出任职起止年份。",
+            "source_id": "mark_abc"
+          },
+          {
+            "organization": "Audionet.com",
+            "title": "共同创办者",
+            "period": "具体任期未披露",
+            "description": "ABC 官方人物资料记载其共同创办 Audionet.com。",
+            "source_id": "mark_abc"
+          },
+          {
+            "organization": "Cost Plus Drugs",
+            "title": "共同创办者",
+            "period": "2019 年创办；2022 年 1 月上线",
+            "description": "ABC 官方人物资料记载其于 2019 年共同创办 Cost Plus Drugs，并于 2022 年 1 月上线。",
+            "source_id": "mark_abc"
+          }
+        ],
+        "education": [
+          {
+            "institution": "Indiana University",
+            "qualification": "毕业；官方人物资料未在所引内容中列出学位或专业。",
+            "source_id": "mark_abc"
+          }
+        ],
+        "experience_summary": "公开履历覆盖科技创业、互联网业务和医药零售；本档案按 ABC 官方人物资料记录，不推断具体未公开任期。",
         "track_record": [
           {
-            "description": "融资来源记录：Advanced Machine Intelligence Labs (AMI Labs) · 种子轮 · 2026-03-12 · 本轮个人投资者 · 10.3亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "Futurum 报道将 Mark Cuban 列为 AMI Labs 10.3 亿美元种子轮的个人投资者之一；该数额是整轮融资总额，未披露 Cuban 的个人出资额。",
             "source_id": "FISRC-6c35525e379488bf"
           }
         ],
-        "contacts": [],
         "sources": [
+          {
+            "source_id": "mark_abc",
+            "source_url": "https://www.detpress.com/abc/bios/mark-cuban/",
+            "source_title": "MARK CUBAN – ABC Press",
+            "source_content_hash": "e69e8f0b2fd089e938b1b78a271c591354828f6fc6c6331141ef44a296ab01b2",
+            "quote": "Cuban has continued to be an active entrepreneur and investor.",
+            "quote_hash": "8df6e781669618ff41188fadd3008bf2ebbab4b4d6d794b795dac90f105e45d8"
+          },
           {
             "source_id": "FISRC-6c35525e379488bf",
             "source_url": "https://futurumgroup.com/insights/yann-lecuns-ami-raises-1bn-seed-round-is-the-world-model-era-finally-here",
@@ -274954,7 +275327,12 @@
             "quote_hash": "60f42c380f06d6bfad4ffb0b92dfbc7d978e62e09c5c80452af8d9b4d7fea76a"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "coverage_note": "AMI Labs 报道仅能支持其被列为个人投资者之一，不代表已核验投资协议、具体出资或与融资金额相同的个人投资规模。",
+        "last_verified_at": "2026-09-28",
+        "facts": [],
+        "milestones": [],
+        "contacts": [],
+        "identity_status": "verified"
       }
     },
     {
@@ -275508,20 +275886,63 @@
       ],
       "public_profile": {
         "profile_type": "person",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Tim Berners-Lee 当前按“个人投资者”收录。最新融资披露记录日期为 2026-03-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "summary": "Sir Tim Berners-Lee 是万维网的发明者。W3C 资料记载他于 1989 年在 CERN 发明万维网，并共同创办 Inrupt、担任该公司 CTO；MIT CSAIL 页面将其列为荣休教授并介绍其 W3C 工作。AMI Labs 融资报道将他列为个人投资者之一，但未披露个人出资额。",
+        "current_roles": [
+          {
+            "title": "联合创办人、首席技术官",
+            "organization": "Inrupt",
+            "source_id": "tim_w3c"
+          },
+          {
+            "title": "荣休教授",
+            "organization": "MIT CSAIL",
+            "source_id": "tim_mit"
+          },
+          {
+            "title": "主任",
+            "organization": "World Wide Web Consortium (W3C)",
+            "source_id": "tim_mit"
+          }
+        ],
+        "career": [
+          {
+            "organization": "CERN",
+            "title": "计算机科学家；万维网发明工作",
+            "period": "1989 年",
+            "description": "W3C 官方人物页面记载他于 1989 年在 CERN 发明万维网。",
+            "source_id": "tim_w3c"
+          }
+        ],
+        "education": [],
+        "experience_summary": "其公开履历以互联网基础技术、开放网络标准和去中心化数据平台为主；现有引用资料未用于补写未经核实的学历信息。",
         "track_record": [
           {
-            "description": "融资来源记录：Advanced Machine Intelligence Labs (AMI Labs) · 种子轮 · 2026-03-12 · 本轮个人投资者 · 10.3亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "1989 年在 CERN 发明万维网；这是 W3C 官方人物简介记录的核心技术成果。",
+            "source_id": "tim_w3c"
+          },
+          {
+            "description": "Futurum 报道将 Tim Berners-Lee 列为 AMI Labs 10.3 亿美元种子轮的个人投资者之一；该金额为整轮融资总额，未披露其个人出资额。",
             "source_id": "FISRC-6c35525e379488bf"
           }
         ],
-        "contacts": [],
         "sources": [
+          {
+            "source_id": "tim_w3c",
+            "source_url": "https://www.w3.org/People/Berners-Lee/",
+            "source_title": "Tim Berners-Lee",
+            "source_content_hash": "de9b61fc69aa9357ecafd46634b779e30750b29bdb91263d1b627b97b1e33bba",
+            "quote": "Sir Tim Berners-Lee invented the World Wide Web while at CERN in 1989.",
+            "quote_hash": "d71a4e56cfc02396b1828828db2c327548ebc69785a2821eae50e7afc9a5bbb7"
+          },
+          {
+            "source_id": "tim_mit",
+            "source_url": "https://www.csail.mit.edu/person/tim-berners-lee",
+            "source_title": "Tim Berners-Lee | MIT CSAIL",
+            "source_content_hash": "56d1924876a45ddf717c281b7e1e4c27c14df2fd6033c65e4b443fdc0411c36e",
+            "quote": "Professor Emeritus",
+            "quote_hash": "dcc0440ca9fb04dce9afb0dddde71bd0be8eaec6efbc5b244da1426195d9251e"
+          },
           {
             "source_id": "FISRC-6c35525e379488bf",
             "source_url": "https://futurumgroup.com/insights/yann-lecuns-ami-raises-1bn-seed-round-is-the-world-model-era-finally-here",
@@ -275531,7 +275952,12 @@
             "quote_hash": "60f42c380f06d6bfad4ffb0b92dfbc7d978e62e09c5c80452af8d9b4d7fea76a"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "coverage_note": "公开资料支持其发明万维网及当前公开职务；AMi Labs 投资者报道未披露个人出资额，所引来源也未用于推断学历。",
+        "last_verified_at": "2026-09-28",
+        "facts": [],
+        "milestones": [],
+        "contacts": [],
+        "identity_status": "verified"
       }
     },
     {
@@ -285091,20 +285517,54 @@
       ],
       "public_profile": {
         "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "D. E. Shaw Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-02-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "summary": "D. E. Shaw Ventures 是 D. E. Shaw 旗下风险投资平台，官网称其与创业团队合作的阶段从 post-seed 延伸至成长期及之后。官网公开的投资组合页面覆盖 2023 年 10 月以来的部分投资，并提示披露受被投公司同意等因素影响，因此公开列表不应视为完整组合。",
+        "facts": [
+          {
+            "field": "investment_stage",
+            "label": "投资阶段",
+            "value": "Post-seed 至成长期及之后",
+            "source_id": "deshaw_ventures"
+          },
+          {
+            "field": "portfolio_disclosure",
+            "label": "公开投资组合口径",
+            "value": "官网页面披露 2023 年 10 月以来的投资；公开案例可能不完整，受被投公司披露同意等因素影响。",
+            "source_id": "deshaw_ventures"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：Anthropic · G轮 · 2026-02-12 · 本轮联合领投 · $30 billion。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "Anthropic 于 2026-02-12 宣布完成 300 亿美元 G 轮，D. E. Shaw Ventures 为多家联合领投方之一；300 亿美元为融资总额，不代表该机构单独出资额。",
             "source_id": "FISRC-b58bb99dfec2e318"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "D. E. Shaw Ventures 官方网站",
+            "value": "D. E. Shaw Ventures",
+            "url": "https://ventures.deshaw.com/",
+            "source_id": "deshaw_ventures"
+          },
+          {
+            "kind": "email",
+            "label": "Ventures 联系邮箱",
+            "value": "ventures@deshaw.com",
+            "url": "https://ventures.deshaw.com/",
+            "source_id": "deshaw_ventures"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "deshaw_ventures",
+            "source_url": "https://ventures.deshaw.com/",
+            "source_title": "D. E. Shaw Ventures",
+            "source_content_hash": "d376c1c288c536549a1ee1b2d941169a4a348caac9e8d9a9ba66fdce4cb53f31",
+            "quote": "we partner with founding teams post-seed through growth and beyond",
+            "quote_hash": "b1d2ed491165dfb55ccafcc8c4bf6417f5c3e3b0452ec1c7f2092ad3cccd77a0"
+          },
           {
             "source_id": "FISRC-b58bb99dfec2e318",
             "source_url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
@@ -285114,7 +285574,9 @@
             "quote_hash": "6019b747ab0685aaf7a1a94e528c3bf9e16d73fee9f4b55ee910413ab94d63a7"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "coverage_note": "公开投资组合以官网实际披露为准，不据此推断机构成立日期或完整投资业绩。",
+        "last_verified_at": "2026-09-28",
+        "identity_status": "verified"
       }
     },
     {
@@ -285315,20 +285777,107 @@
       ],
       "public_profile": {
         "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Global Founders Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-02-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "summary": "Global Founders Capital（GFC）是 Rocket Internet 的全球风险投资平台，官网称其由 Oliver Samwer 创立，并以全球化投资平台形式开展早期至成长阶段投资。法律页列示其运营实体为 GFC Global Founders Capital GmbH，注册地在柏林。",
+        "facts": [
+          {
+            "field": "platform_relationship",
+            "label": "平台关系",
+            "value": "Rocket Internet 的全球风险投资平台",
+            "source_id": "gfc_home"
+          },
+          {
+            "field": "founder",
+            "label": "官网列示创立者",
+            "value": "Oliver Samwer",
+            "source_id": "gfc_home"
+          },
+          {
+            "field": "leadership",
+            "label": "官网列示管理团队",
+            "value": [
+              "Cedric Asselman",
+              "David Sainteff",
+              "Fabricio Pettena"
+            ],
+            "source_id": "gfc_home"
+          },
+          {
+            "field": "legal_entity",
+            "label": "法律实体",
+            "value": "GFC Global Founders Capital GmbH；注册地柏林。",
+            "source_id": "gfc_imprint"
+          },
+          {
+            "field": "registration",
+            "label": "注册信息",
+            "value": "Amtsgericht Charlottenburg，注册编号 HRB 186074 B。",
+            "source_id": "gfc_imprint"
+          },
+          {
+            "field": "managing_directors",
+            "label": "法律页列示管理董事",
+            "value": [
+              "Raphael Lueger",
+              "Dr. Arnd Lodowicks"
+            ],
+            "source_id": "gfc_imprint"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：Entire Inc. · 种子轮 · 2026-02-10 · 本轮参投 · 6000万美元。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "Entire 于 2026-02-10 宣布完成 6000 万美元种子轮，Global Founders Capital 为参投方之一；金额为整轮融资总额，未披露 GFC 的单笔出资。",
             "source_id": "FISRC-62dc6d17f09030c0"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "Global Founders Capital",
+            "url": "https://www.globalfounderscapital.com/",
+            "source_id": "gfc_home"
+          },
+          {
+            "kind": "email",
+            "label": "公开联系邮箱",
+            "value": "contact@globalfounderscapital.com",
+            "url": "https://www.globalfounderscapital.com/imprint",
+            "source_id": "gfc_imprint"
+          },
+          {
+            "kind": "phone",
+            "label": "公开电话",
+            "value": "+49 30 300 1318 00",
+            "url": "https://www.globalfounderscapital.com/imprint",
+            "source_id": "gfc_imprint"
+          },
+          {
+            "kind": "address",
+            "label": "注册地址",
+            "value": "Charlottenstraße 4, 10969 Berlin, Germany",
+            "url": "https://www.globalfounderscapital.com/imprint",
+            "source_id": "gfc_imprint"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "gfc_home",
+            "source_url": "https://www.globalfounderscapital.com/",
+            "source_title": "Global Founders Capital | Global Seed & Growth Investor",
+            "source_content_hash": "0ed94e6597564eb2ec9106c9cb642e90a2a6ec28e2ae9ac5a9144f33a1523115",
+            "quote": "Global Founders Capital is the global venture capital platform of Rocket Internet.",
+            "quote_hash": "95c1fc260f4f776d092b63d342bef85b1f40ea694c471cce508d764052bd02f5"
+          },
+          {
+            "source_id": "gfc_imprint",
+            "source_url": "https://www.globalfounderscapital.com/imprint",
+            "source_title": "Imprint",
+            "source_content_hash": "beb1c64cfdb9b415f1f8798ac29fbd7e76c22f7fecb976c231daa59d6f94cfc1",
+            "quote": "Managing Directors: Raphael Lueger, Dr. Arnd Lodowicks",
+            "quote_hash": "85dccddb08cf0fdba3bf11235b8ef14f6aa7cebfbd0a7ae137761c9b0f0ef108"
+          },
           {
             "source_id": "FISRC-62dc6d17f09030c0",
             "source_url": "https://entire.io/news/former-github-ceo-thomas-dohmke-raises-60-million-seed-round",
@@ -285338,7 +285887,10 @@
             "quote_hash": "ac5b6d3b2d19e95d2e607c7dcef25640a6b13e17d7fa7a5d151d7a5c622797d2"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "coverage_note": "GFC 首页列示管理团队姓名但未在所引用摘录中逐一明确职位，因此不将姓名映射为具体合伙人职衔。法律联系信息来自官方 Imprint 页面。",
+        "last_verified_at": "2026-09-28",
+        "current_roles": [],
+        "identity_status": "verified"
       }
     },
     {
@@ -337219,20 +337771,45 @@
       ],
       "public_profile": {
         "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "BlackRock Private Equity Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "summary": "BlackRock Private Equity Partners 是融资记录中使用的投资者名称。BlackRock 官方私募股权页面披露的是 BlackRock 私募股权团队整体的投资能力，并不能据此确认该数字只属于这一名称对应的单一基金或法律载体。现有 Groq 条目引用的是历史 Series D 报道，不能证明 2026 年发生了新一轮融资或确认该记录的具体出资载体。",
+        "facts": [
+          {
+            "field": "platform_capacity",
+            "label": "BlackRock 私募股权团队披露规模",
+            "value": "官网页面称其团队管理 552 亿美元资本承诺，覆盖直接投资、一级、二级及联合投资；这是更广泛的团队口径，不等同于单一 PEP 载体规模。",
+            "source_id": "blackrock_pe"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：Groq · 轮次未披露 · 2026-06-22 · D轮参投 · 6.5 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "Economic Times 主题页引用 Groq 曾在前一年 8 月完成 6.4 亿美元 Series D，BlackRock Private Equity Partners 为参投方之一。该材料属于历史融资报道，不能验证登记表中的 2026 年 6 月 6.5 亿美元描述、具体基金载体或单笔金额。",
             "source_id": "FISRC-6ef693ebacbad168"
+          },
+          {
+            "description": "BlackRock 官方私募股权页面披露团队整体管理资本承诺，但页面数据不单独对应 BlackRock Private Equity Partners 这一投资者名称。",
+            "source_id": "blackrock_pe"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "BlackRock 私募股权业务介绍",
+            "value": "Private Equity | BlackRock",
+            "url": "https://www.blackrock.com/institutions/en-us/investment-capabilities/strategies/private-equity",
+            "source_id": "blackrock_pe"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "blackrock_pe",
+            "source_url": "https://www.blackrock.com/institutions/en-us/investment-capabilities/strategies/private-equity",
+            "source_title": "Private Equity | BlackRock",
+            "source_content_hash": "56ea0586212b7b32315d24cb293008a16a43b751ee16dcb389f1c25d603ac101",
+            "quote": "BlackRock’s Private Equity teams manage $55.2 billion in capital commitments across direct, primary, secondary and co-investments.",
+            "quote_hash": "eef9219a50ca15edc8dfa90871c6880dc97ef01526b0bd698b18c18251cf567d"
+          },
           {
             "source_id": "FISRC-6ef693ebacbad168",
             "source_url": "https://economictimes.indiatimes.com/topic/investment-in-groq",
@@ -337242,7 +337819,9 @@
             "quote_hash": "4176996439738f8e3f1f9bb2ded34c557750df899e0a00fcca208a70bcb8785f"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "coverage_note": "融资活动被标记为 historical_or_ambiguous；此档案不将历史 Groq 参投报道写作 2026 年业绩，也不将 BlackRock 整体私募股权团队指标归因于单一载体。",
+        "last_verified_at": "2026-09-28",
+        "identity_status": "verified"
       }
     },
     {

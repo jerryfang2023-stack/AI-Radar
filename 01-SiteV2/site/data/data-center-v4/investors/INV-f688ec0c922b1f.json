@@ -138,20 +138,107 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Global Founders Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-02-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Global Founders Capital（GFC）是 Rocket Internet 的全球风险投资平台，官网称其由 Oliver Samwer 创立，并以全球化投资平台形式开展早期至成长阶段投资。法律页列示其运营实体为 GFC Global Founders Capital GmbH，注册地在柏林。",
+      "facts": [
+        {
+          "field": "platform_relationship",
+          "label": "平台关系",
+          "value": "Rocket Internet 的全球风险投资平台",
+          "source_id": "gfc_home"
+        },
+        {
+          "field": "founder",
+          "label": "官网列示创立者",
+          "value": "Oliver Samwer",
+          "source_id": "gfc_home"
+        },
+        {
+          "field": "leadership",
+          "label": "官网列示管理团队",
+          "value": [
+            "Cedric Asselman",
+            "David Sainteff",
+            "Fabricio Pettena"
+          ],
+          "source_id": "gfc_home"
+        },
+        {
+          "field": "legal_entity",
+          "label": "法律实体",
+          "value": "GFC Global Founders Capital GmbH；注册地柏林。",
+          "source_id": "gfc_imprint"
+        },
+        {
+          "field": "registration",
+          "label": "注册信息",
+          "value": "Amtsgericht Charlottenburg，注册编号 HRB 186074 B。",
+          "source_id": "gfc_imprint"
+        },
+        {
+          "field": "managing_directors",
+          "label": "法律页列示管理董事",
+          "value": [
+            "Raphael Lueger",
+            "Dr. Arnd Lodowicks"
+          ],
+          "source_id": "gfc_imprint"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Entire Inc. · 种子轮 · 2026-02-10 · 本轮参投 · 6000万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Entire 于 2026-02-10 宣布完成 6000 万美元种子轮，Global Founders Capital 为参投方之一；金额为整轮融资总额，未披露 GFC 的单笔出资。",
           "source_id": "FISRC-62dc6d17f09030c0"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Global Founders Capital",
+          "url": "https://www.globalfounderscapital.com/",
+          "source_id": "gfc_home"
+        },
+        {
+          "kind": "email",
+          "label": "公开联系邮箱",
+          "value": "contact@globalfounderscapital.com",
+          "url": "https://www.globalfounderscapital.com/imprint",
+          "source_id": "gfc_imprint"
+        },
+        {
+          "kind": "phone",
+          "label": "公开电话",
+          "value": "+49 30 300 1318 00",
+          "url": "https://www.globalfounderscapital.com/imprint",
+          "source_id": "gfc_imprint"
+        },
+        {
+          "kind": "address",
+          "label": "注册地址",
+          "value": "Charlottenstraße 4, 10969 Berlin, Germany",
+          "url": "https://www.globalfounderscapital.com/imprint",
+          "source_id": "gfc_imprint"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "gfc_home",
+          "source_url": "https://www.globalfounderscapital.com/",
+          "source_title": "Global Founders Capital | Global Seed & Growth Investor",
+          "source_content_hash": "0ed94e6597564eb2ec9106c9cb642e90a2a6ec28e2ae9ac5a9144f33a1523115",
+          "quote": "Global Founders Capital is the global venture capital platform of Rocket Internet.",
+          "quote_hash": "95c1fc260f4f776d092b63d342bef85b1f40ea694c471cce508d764052bd02f5"
+        },
+        {
+          "source_id": "gfc_imprint",
+          "source_url": "https://www.globalfounderscapital.com/imprint",
+          "source_title": "Imprint",
+          "source_content_hash": "beb1c64cfdb9b415f1f8798ac29fbd7e76c22f7fecb976c231daa59d6f94cfc1",
+          "quote": "Managing Directors: Raphael Lueger, Dr. Arnd Lodowicks",
+          "quote_hash": "85dccddb08cf0fdba3bf11235b8ef14f6aa7cebfbd0a7ae137761c9b0f0ef108"
+        },
         {
           "source_id": "FISRC-62dc6d17f09030c0",
           "source_url": "https://entire.io/news/former-github-ceo-thomas-dohmke-raises-60-million-seed-round",
@@ -161,7 +248,10 @@
           "quote_hash": "ac5b6d3b2d19e95d2e607c7dcef25640a6b13e17d7fa7a5d151d7a5c622797d2"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "coverage_note": "GFC 首页列示管理团队姓名但未在所引用摘录中逐一明确职位，因此不将姓名映射为具体合伙人职衔。法律联系信息来自官方 Imprint 页面。",
+      "last_verified_at": "2026-09-28",
+      "current_roles": [],
+      "identity_status": "verified"
     }
   }
 }
