@@ -129,21 +129,217 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "腾业创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "腾业创投是北京腾业创业投资管理有限公司的机构品牌，官网将其定位为面向高科技创新企业的早期投资机构，重点关注信息与通信、生物医药与医疗健康及先进技术。官网2026年3月介绍称其管理7支基金、已投资近40家企业；管理团队履历和投资案例均为机构公开披露，未见基金级回报或当前管理规模的独立核验数据。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "官网披露的公司全称",
+          "value": "北京腾业创业投资管理有限公司",
+          "source_id": "tye_home"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": [
+            "早期",
+            "天使",
+            "初创期"
+          ],
+          "source_id": "tye_profile_2026"
+        },
+        {
+          "field": "sectors",
+          "label": "官网披露的投资领域",
+          "value": [
+            "信息与通信（含信息技术、互联网与移动互联网、集成电路、人工智能、大数据）",
+            "生物医药与医疗健康（含医疗器械、创新药、体外诊断、医疗服务、生物技术）",
+            "先进技术（含新能源、新材料、节能环保、先进制造与高端装备）"
+          ],
+          "source_id": "tye_profile_2026"
+        },
+        {
+          "field": "investment_approach",
+          "label": "官网披露的投资方法",
+          "value": "在新兴行业寻找具备核心技术和产品积累的优秀团队，侧重科技创新企业早期投资。",
+          "source_id": "tye_profile_2026"
+        },
+        {
+          "field": "disclosed_funds_and_portfolio",
+          "label": "机构公开披露（2026年3月）",
+          "value": "官网称旗下管理7支基金、已投资近40家企业；此为机构披露口径，不代表基金级回报或经核验的当前管理规模。",
+          "source_id": "tye_profile_2026"
+        },
+        {
+          "field": "team_roster",
+          "label": "官网团队页列示成员与职务",
+          "value": [
+            "丁大立（创始合伙人）",
+            "孙敬伟（管理合伙人）",
+            "高巍、黄云松、杨耀伟（合伙人）",
+            "何华（高级副总裁）",
+            "丁蕾（业务经理）",
+            "张欣宁（高级业务经理）"
+          ],
+          "source_id": "tye_team"
+        },
+        {
+          "field": "founding_partner_background",
+          "label": "丁大立｜官网履历摘要",
+          "value": "官网称其专注TMT、医疗健康及节能环保，自1999年开始从事投资；创立腾业创投前曾创办腾业控股、腾业资本和鼎萨投资。",
+          "source_id": "tye_ding"
+        },
+        {
+          "field": "managing_partner_background",
+          "label": "孙敬伟｜官网履历摘要",
+          "value": "官网称其有跨国公司管理及创业经历，曾任启迪天使投资合伙人兼董事总经理；公开教育背景为北京理工大学计算机学士和中科院计算所计算机硕士。",
+          "source_id": "tye_sun"
+        },
+        {
+          "field": "partner_background",
+          "label": "高巍｜官网履历摘要",
+          "value": "官网称其曾在S*BIO、密歇根大学医学院、CHIRON及诺华从事抗肿瘤药研发十余年，之后任中关村发展集团高级投资经理、亚盛医药商务拓展总监；公开教育背景包括北京大学双学士、新加坡国立大学硕士及加州大学伯克利分校MBA。",
+          "source_id": "tye_gao"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "投资界报道清科2025年中国早期投资机构30强名单，腾业创投列第7位。该项为行业榜单排名，不代表基金收益率。",
+          "source_id": "tye_qingke_rank"
+        },
+        {
+          "description": "腾业官网2025年文章回溯称其在2012年前后成为海博思创的天使投资人，并于A轮和C轮继续追加投资；同文记录海博思创于2025年1月27日在科创板上市（688411）。腾业未公开该项目投资金额或基金级退出回报。",
+          "source_id": "tye_haibo"
+        },
+        {
+          "description": "腾业官网2026年3月列示按信息与通信、生物医药与医疗健康、先进技术划分的投资案例，包含兆易创新、甘李药业、宇道生物、赛桥生物、海博思创、卫蓝新能源、微焓科技等。此为机构公布的代表案例清单，不表示每个项目均由同一基金投资。",
+          "source_id": "tye_portfolio_2026"
+        },
         {
           "description": "融资来源记录：上海宇道生物技术有限公司 · C1轮 · 2026-09-15 · Pre-A轮跟投 · 数千万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ad78c308ef4022ae"
         }
       ],
-      "contacts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构身份依据官网公司全称、团队页和联系方式核验。官网简介、人物履历与组合案例属于机构自述。官网首页仍展示“管理5支基金、规模超10亿元”，而2026年3月机构介绍称管理7支基金、已投资近40家企业，公开口径不一致，因此本档案不提供当前管理规模或基金回报结论。人物过往任职按官网履历摘要记录，不据此自动建立人物与相关机构的关系边。当前投资活动库中宇道生物记录标注为2026年Pre-A轮跟投，但其引用报道发表于2021年且报道内容为2000万美元A轮融资；本档案不将该记录作为2026年新交易的证据。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "北京腾业创业投资管理有限公司",
+          "url": "https://tengye-vc.com/",
+          "source_id": "tye_home"
+        },
+        {
+          "kind": "application",
+          "label": "商业计划书提交邮箱",
+          "value": "bp@tengye-vc.com",
+          "url": "https://tengye-vc.com/index.php/contact.html",
+          "source_id": "tye_contact"
+        },
+        {
+          "kind": "email",
+          "label": "一般事务邮箱",
+          "value": "tengye@tengye-vc.com",
+          "url": "https://tengye-vc.com/index.php/contact.html",
+          "source_id": "tye_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "联系电话",
+          "value": "010-84080919",
+          "url": "https://tengye-vc.com/index.php/contact.html",
+          "source_id": "tye_contact"
+        },
+        {
+          "kind": "address",
+          "label": "办公地址",
+          "value": "北京市朝阳区建国门外大街2号北京银泰中心B座1901室，邮编100022",
+          "url": "https://tengye-vc.com/index.php/contact.html",
+          "source_id": "tye_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "tye_home",
+          "source_url": "https://tengye-vc.com/",
+          "source_title": "首页-北京腾业创业投资管理有限公司",
+          "source_content_hash": "77053b8954610011ba1a1a0b9bd420cdc6ec3f9fc2a124a198502ef1829dd834",
+          "quote": "累计管理5支基金，规模超10亿元",
+          "quote_hash": "905f04ef0de91b1dc080188b85f3e3b4bba1ade677544c95670bc5cac4601c0c"
+        },
+        {
+          "source_id": "tye_profile_2026",
+          "source_url": "https://tengye-vc.com/index.php/news/details.html?c=25&d=210",
+          "source_title": "腾业创投2026年2月被投企业动态",
+          "source_content_hash": "97ae65cc741b08daa44746d2991ff336ab2eb640f9f95e3d9cd94972d509f72c",
+          "quote": "旗下管理7支基金，已投资近40家企业。",
+          "quote_hash": "a9a467268af29295968e015df9e4f0c5831b368ba443a93c24d5ba74ce415b10"
+        },
+        {
+          "source_id": "tye_portfolio_2026",
+          "source_url": "https://tengye-vc.com/index.php/news/details.html?c=25&d=210",
+          "source_title": "腾业创投2026年2月被投企业动态",
+          "source_content_hash": "97ae65cc741b08daa44746d2991ff336ab2eb640f9f95e3d9cd94972d509f72c",
+          "quote": "先进技术领域投资案例：海博思创（688411.SH）、卫蓝新能源",
+          "quote_hash": "7370ce5447b79cd78d662460c00d3733990ce7d509071bcac5ee5fbe227cadce"
+        },
+        {
+          "source_id": "tye_team",
+          "source_url": "https://tengye-vc.com/index.php/team.html",
+          "source_title": "团队成员-北京腾业创业投资管理有限公司",
+          "source_content_hash": "b6725b49e9357923a67e7622a4670230e9ea25393901703b1e00a74c6e18dc25",
+          "quote": "丁大立 创始合伙人 丁蕾 业务经理 高巍 合伙人",
+          "quote_hash": "c4f018ba0368212215fc75eb1978d02f6de54eaabdcd0eb5f4aa366e70d46139"
+        },
+        {
+          "source_id": "tye_ding",
+          "source_url": "https://tengye-vc.com/index.php/team/details.html?id=41",
+          "source_title": "团队成员-北京腾业创业投资管理有限公司｜丁大立",
+          "source_content_hash": "af9194615140c13e0c9a061b170ee0c9113af95fa9190363e3914b43e0cae471",
+          "quote": "从1999年开始从事投资",
+          "quote_hash": "48dcb8848c86514994af0cb984619b8ea867768f49db2b57e0fe177f85d10bac"
+        },
+        {
+          "source_id": "tye_sun",
+          "source_url": "https://tengye-vc.com/index.php/team/details.html?id=44",
+          "source_title": "团队成员-北京腾业创业投资管理有限公司｜孙敬伟",
+          "source_content_hash": "106ff73fbbd9d8d1d7d6fefa94627d2921f54649afe82c1f81d69773cf8bb021",
+          "quote": "曾任启迪天使投资合伙人兼董事总经理",
+          "quote_hash": "2968198a932c7eadddf0733d784675aa5db4031d2659427d99e634e75e94f978"
+        },
+        {
+          "source_id": "tye_gao",
+          "source_url": "https://tengye-vc.com/index.php/team/details.html?id=42",
+          "source_title": "团队成员-北京腾业创业投资管理有限公司｜高巍",
+          "source_content_hash": "ebbd63681739f3f484a78735ef23575519f0bd6a966c872d2c14bdb8355a79aa",
+          "quote": "曾先后就职于新加坡S*BIO公司、美国密歇根大学医学院、美国CHIRON公司、美国诺华公司等",
+          "quote_hash": "fcefed975ce5bbffd11a4e666bacdb59de2eac4b566ff2013d8f82daeb74740f"
+        },
+        {
+          "source_id": "tye_contact",
+          "source_url": "https://tengye-vc.com/index.php/contact.html",
+          "source_title": "联系我们-北京腾业创业投资管理有限公司",
+          "source_content_hash": "d356c28338663bc1077d72b1db7a2bede83c0684d383c97df5c0a49825ca9a38",
+          "quote": "BP提交邮箱 bp@tengye-vc.com",
+          "quote_hash": "1f26416cf650d40972dde97e2b81af54c4762fb9efda8ed2a04e41d4839eebe7"
+        },
+        {
+          "source_id": "tye_haibo",
+          "source_url": "https://tengye-vc.com/index.php/news/details.html?c=25&d=180",
+          "source_title": "祝贺海博思创科创板上市｜北京腾业创业投资管理有限公司",
+          "source_content_hash": "08ce7652dee648b15ff12c38e66ab3557cf2bd5230df58efcacb5dd5b25d6826",
+          "quote": "腾业创投有幸成为了海博思创的天使投资人",
+          "quote_hash": "aeb09523ff776ee7e2385f432835b25c840ab09be5480d1881ee431a34c856fc"
+        },
+        {
+          "source_id": "tye_qingke_rank",
+          "source_url": "https://news.pedaily.cn/202512/559271.shtml",
+          "source_title": "清科2025年中国早期投资机构30强｜投资界",
+          "source_content_hash": "0d8e36b4a9bd9d698b014fade89f24d20a2c0252a13b666341803dc9ae16f6ff",
+          "quote": "7 北京腾业创业投资管理有限公司 腾业创投",
+          "quote_hash": "cdde38dfd84ee8b4b6a63078f05e6f46f2fd872b518fb37bfdc205bfafd0d224"
+        },
         {
           "source_id": "FISRC-ad78c308ef4022ae",
           "source_url": "https://news.pedaily.cn/202106/472864.shtml",
@@ -153,7 +349,9 @@
           "quote_hash": "c8fec8864638cfc00138048d18774c6eaf37760908782699e6675dd672130ee2"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified"
     },
     "translations": {
       "zh-CN": {
