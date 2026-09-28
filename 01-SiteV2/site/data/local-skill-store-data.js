@@ -2438,7 +2438,7 @@ window.WaveSightLocalSkillStore = {
       "sourceLabel": "WaveSight",
       "sourcePath": "agent-workflow/skills/guanlan-china-funding-monitor",
       "sourceVersion": "",
-      "sourceDigest": "139bc630dd25359ff7c81c5017d71a8c49d6fac44a93731e869cb3f19829e7ad",
+      "sourceDigest": "6eeedb3b8e0e23df05b1926bd0a6d4a52b81c53d120479c38b1160f77624c951",
       "platformIds": [
         "shared"
       ],
