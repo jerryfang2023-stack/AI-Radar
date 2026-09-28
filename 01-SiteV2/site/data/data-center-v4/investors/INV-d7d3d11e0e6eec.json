@@ -130,21 +130,457 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Hong Kong Investment Corporation 当前按“投资组织”收录。最新融资披露记录日期为 2026-01-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Hong Kong Investment Corporation Limited（HKIC，香港投资管理有限公司）是香港特区政府全资持有的耐心资本投资机构，采用“投资+”方式，兼顾中长期合理财务回报与香港经济和产业竞争力。官网披露初始部署资本为620亿港元，管理四个投资组合，并聚焦硬科技、生物科技、健康科技、新能源与绿色科技。",
+      "facts": [
+        {
+          "field": "established_year",
+          "label": "成立年份",
+          "value": "2022",
+          "source_id": "hkic_annual_established"
+        },
+        {
+          "field": "ownership",
+          "label": "所有权",
+          "value": "香港特别行政区政府全资持有",
+          "source_id": "hkic_home_ownership"
+        },
+        {
+          "field": "institution_type",
+          "label": "机构定位",
+          "value": "政府全资持有的耐心资本投资机构；官网称采用“投资+”方式",
+          "source_id": "hkic_home_mandate"
+        },
+        {
+          "field": "mandate",
+          "label": "投资使命",
+          "value": "寻求中长期合理财务回报，同时增强香港长期竞争力与经济活力",
+          "source_id": "hkic_home_mandate"
+        },
+        {
+          "field": "initial_deployment_capital",
+          "label": "初始部署资本",
+          "value": "620亿港元（官网披露的初始部署资本口径）",
+          "source_id": "hkic_home_capital"
+        },
+        {
+          "field": "managed_portfolios",
+          "label": "管理的投资组合",
+          "value": [
+            "香港增长组合（Hong Kong Growth Portfolio）",
+            "大湾区投资基金（Greater Bay Area Investment Fund）",
+            "策略性创科基金（Strategic Tech Fund）",
+            "共同投资基金（Co-Investment Fund）"
+          ],
+          "source_id": "hkic_annual_portfolios"
+        },
+        {
+          "field": "investment_themes",
+          "label": "重点投资主题",
+          "value": [
+            "硬科技与核心技术",
+            "生物科技与健康科技",
+            "新能源与绿色科技",
+            "相关领域及应用"
+          ],
+          "source_id": "hkic_home_themes"
+        },
+        {
+          "field": "geographic_scope",
+          "label": "项目地域范围",
+          "value": "包括在香港起源或设立的项目，也覆盖香港以外项目；均须符合其双重使命",
+          "source_id": "hkic_home_geography"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资方式",
+          "value": "先广泛布局，再深入具体项目；兼顾投资机会、区域及国际参与和风险管理",
+          "source_id": "hkic_annual_approach"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2020-2021",
+          "description": "特区政府财政司司长在2020-21年度预算案中宣布设立香港增长组合，支持具香港关联的策略性投资；该组合后来纳入HKIC管理。",
+          "source_id": "hkic_about_hgp"
+        },
+        {
+          "date": "2022-2023",
+          "description": "政府在2022-23年度预算案宣布为香港增长组合增加100亿港元，其中50亿港元用于策略性创科基金、50亿港元用于大湾区投资基金。",
+          "source_id": "hkic_about_funds"
+        },
+        {
+          "date": "2022",
+          "description": "HKIC成立；同年《施政报告》宣布设立300亿港元共同投资基金。",
+          "source_id": "hkic_annual_established"
+        },
+        {
+          "date": "2023-10-09",
+          "description": "陈家齐出任HKIC首任行政总裁，委任期为三年。",
+          "source_id": "hkic_ceo_appointment"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：StepFun · B+轮 · 2026-01-26 · B轮投资方 · 50 亿人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "截至2025年10月底，HKIC官网披露已投资超过150个项目；这是该日期的机构统计口径。",
+          "source_id": "hkic_annual_projects"
+        },
+        {
+          "description": "截至2025年10月底的披露中，已有两家被投公司在香港上市，另有十多家当年已递交或计划递交香港上市申请；计划申请不等同已完成上市。",
+          "source_id": "hkic_annual_listings"
+        },
+        {
+          "description": "HKIC称截至2025年10月底，每投入1港元吸引超过6港元长期市场资本；该比例为机构所述资本撬动口径，不是基金回报率。",
+          "source_id": "hkic_annual_catalytic"
+        },
+        {
+          "description": "截至2024年底，HKIC称已投资资本不到初始资本规模的五分之一，并产生超过23亿港元投资收入；这是机构披露的阶段性累计口径，不代表年化基金收益率。",
+          "source_id": "hkic_annual_income"
+        },
+        {
+          "description": "Investors included Shanghai State-owned Capital Investment and affiliated funds, Hong Kong Investment Corporation, Tencent, and returning shareholders.",
           "source_id": "FISRC-e424026c5a172d4b"
         }
       ],
-      "contacts": [],
+      "current_roles": [
+        {
+          "title": "董事会主席：陈茂波（Paul Chan）",
+          "organization": "Hong Kong Investment Corporation Limited",
+          "source_id": "hkic_board_paul"
+        },
+        {
+          "title": "财政司司长",
+          "organization": "Government of the Hong Kong Special Administrative Region",
+          "source_id": "hkic_board_paul"
+        },
+        {
+          "title": "行政总裁：陈家齐（Clara Chan）",
+          "organization": "Hong Kong Investment Corporation Limited",
+          "source_id": "hkic_board_clara"
+        }
+      ],
+      "career": [
+        {
+          "organization": "香港特别行政区政府",
+          "title": "行政主任",
+          "period": "2004–2010",
+          "description": "陈家齐曾任行政主任，工作涉及民政、运输及财经事务。",
+          "source_id": "hkic_clara_bio_government"
+        },
+        {
+          "organization": "香港金融管理局（储备管理部）",
+          "title": "经理；高级经理；部门主管",
+          "period": "2010–2018",
+          "description": "2010年加入金管局，2012年晋升高级经理，2015年任部门主管。",
+          "source_id": "hkic_clara_bio_hkma"
+        },
+        {
+          "organization": "外汇基金投资办公室",
+          "title": "首席投资官（私募市场）",
+          "period": "2018–2020",
+          "description": "陈家齐于2018年获任该职。",
+          "source_id": "hkic_clara_bio_investment"
+        },
+        {
+          "organization": "香港金融管理局",
+          "title": "Executive Director (Monetary Management)",
+          "period": "2020–2023",
+          "description": "HKIC官方履历记载她于2020年出任该职。",
+          "source_id": "hkic_clara_bio_investment"
+        },
+        {
+          "organization": "香港特别行政区政府",
+          "title": "发展局局长",
+          "period": "2012-07–2017-01",
+          "description": "Paul Chan曾任发展局局长；官方简介称其自2017年起担任财政司司长。",
+          "source_id": "hkic_paul_career"
+        },
+        {
+          "organization": "香港会计师公会",
+          "title": "会长",
+          "period": "曾任；官方简介未列明任期",
+          "description": "官方简介称Paul Chan为注册会计师及该会前会长。",
+          "source_id": "hkic_paul_bio"
+        },
+        {
+          "organization": "香港特别行政区立法会；法律援助服务局",
+          "title": "议员；主席",
+          "period": "曾任；官方简介未列明任期",
+          "description": "香港特区政府简介列载其曾任立法会议员和法律援助服务局主席。",
+          "source_id": "hkic_paul_public_service"
+        }
+      ],
+      "education": [],
+      "experience_summary": "HKIC董事会主席Paul Chan是注册会计师，曾任香港会计师公会会长、发展局局长及立法会议员，2017年起任财政司司长。行政总裁Clara Chan是获香港高等法院认可的大律师，履历覆盖特区政府行政主任、金管局储备管理与货币管理职务、外汇基金私募市场投资管理；HKIC官方页面未披露其学历，本档案不推断教育背景。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Hong Kong Investment Corporation Limited（HKIC）",
+          "url": "https://www.hkic.org.hk/",
+          "source_id": "hkic_home_ownership"
+        },
+        {
+          "kind": "email",
+          "label": "一般查询邮箱",
+          "value": "enquiry@hkic.org.hk",
+          "url": "https://www.hkic.org.hk/contact-us",
+          "source_id": "hkic_contact_general"
+        },
+        {
+          "kind": "phone",
+          "label": "一般查询电话",
+          "value": "+852 2328 2625",
+          "url": "https://www.hkic.org.hk/contact-us",
+          "source_id": "hkic_contact_general"
+        },
+        {
+          "kind": "application",
+          "label": "投资或策略合作项目递交邮箱",
+          "value": "submission@hkic.org.hk",
+          "url": "https://www.hkic.org.hk/contact-us",
+          "source_id": "hkic_contact_proposal"
+        },
+        {
+          "kind": "email",
+          "label": "媒体查询邮箱",
+          "value": "corpcomm@hkic.org.hk",
+          "url": "https://www.hkic.org.hk/contact-us",
+          "source_id": "hkic_contact_media"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "hkic_home_ownership",
+          "source_url": "https://www.hkic.org.hk/",
+          "source_title": "Hong Kong Investment Corporation Limited | HKIC",
+          "source_content_hash": "b1682bf9f1f5fafbb648842033071f018ac972253d07fd639f223c3591746ea7",
+          "quote": "The Hong Kong Investment Corporation Limited (HKIC) is wholly owned by the Government of the Hong Kong Special Administrative Region.",
+          "quote_hash": "fd5991bc6b01b5b5e74ea17277de8333dacfa5aaf2a866f4119ed8e8c58b1e1e"
+        },
+        {
+          "source_id": "hkic_home_mandate",
+          "source_url": "https://www.hkic.org.hk/",
+          "source_title": "Hong Kong Investment Corporation Limited | HKIC",
+          "source_content_hash": "b1682bf9f1f5fafbb648842033071f018ac972253d07fd639f223c3591746ea7",
+          "quote": "As Patient Capital, we carry a dual mandate - seeking reasonable financial return over the medium to long term, and enhancing the long-term competitiveness and economic vitality of Hong Kong.",
+          "quote_hash": "0c60819619f7a8ed16a6b1f7b1ec39e9d35a0ff95ac2f358a264f03af2c5a718"
+        },
+        {
+          "source_id": "hkic_home_capital",
+          "source_url": "https://www.hkic.org.hk/",
+          "source_title": "Hong Kong Investment Corporation Limited | HKIC",
+          "source_content_hash": "b1682bf9f1f5fafbb648842033071f018ac972253d07fd639f223c3591746ea7",
+          "quote": "Size of our initial capital for deployment is HK$62 billion.",
+          "quote_hash": "6c24752be7b543824330cb5edddcd0a14b7172e2e6ae89246ab471611d7db48d"
+        },
+        {
+          "source_id": "hkic_home_portfolios",
+          "source_url": "https://www.hkic.org.hk/",
+          "source_title": "Hong Kong Investment Corporation Limited | HKIC",
+          "source_content_hash": "b1682bf9f1f5fafbb648842033071f018ac972253d07fd639f223c3591746ea7",
+          "quote": "Hong Kong Growth Portfolio, Greater Bay Area Investment Fund, Strategic Tech Fund, and Co-Investment Fund.",
+          "quote_hash": "bef8734dad31659af421c47f4c1b68d5ff0fd550289e70c6a922ecdec6475fd4"
+        },
+        {
+          "source_id": "hkic_home_themes",
+          "source_url": "https://www.hkic.org.hk/",
+          "source_title": "Hong Kong Investment Corporation Limited | HKIC",
+          "source_content_hash": "b1682bf9f1f5fafbb648842033071f018ac972253d07fd639f223c3591746ea7",
+          "quote": "Key investment themes are Hard and Core Technology, Biotechnology and Health Technology, New Energy and Green Technology, and Relevant Sectors and Applications.",
+          "quote_hash": "05e5765076d8a5fa679bebf8bd3021e6f6ac811aeac619cc815bb5a4b09e99d3"
+        },
+        {
+          "source_id": "hkic_home_geography",
+          "source_url": "https://www.hkic.org.hk/",
+          "source_title": "Hong Kong Investment Corporation Limited | HKIC",
+          "source_content_hash": "b1682bf9f1f5fafbb648842033071f018ac972253d07fd639f223c3591746ea7",
+          "quote": "Our partners and projects cover those originated and based in Hong Kong, and also those that go beyond Hong Kong.",
+          "quote_hash": "938d469624fe6beb73a945b7597e77ceec5916c1dbc700525a82a6651c3c9014"
+        },
+        {
+          "source_id": "hkic_about_hgp",
+          "source_url": "https://www.hkic.org.hk/about-us",
+          "source_title": "About Us - HKIC",
+          "source_content_hash": "8d1545c0143c44ce314a6774e4eb7fc64452652ab5a9e87214b30692aec182e1",
+          "quote": "In the 2020-21 Budget Speech, the Financial Secretary announced the establishment of the Hong Kong Growth Portfolio to make strategic investments in projects with a Hong Kong angle.",
+          "quote_hash": "55d7af53784bfbb7f8d61f555e61b6bffc61d6ad355a24e0c8364152effb0727"
+        },
+        {
+          "source_id": "hkic_about_funds",
+          "source_url": "https://www.hkic.org.hk/about-us",
+          "source_title": "About Us - HKIC",
+          "source_content_hash": "8d1545c0143c44ce314a6774e4eb7fc64452652ab5a9e87214b30692aec182e1",
+          "quote": "The existing target size of the HK$22 billion Hong Kong Growth Portfolio was increased by HK$10 billion; HK$5 billion established the Strategic Tech Fund and HK$5 billion the Greater Bay Area Investment Fund.",
+          "quote_hash": "7e5d4ea2d149f9eede507e3aad5da44f5e4c8a0ee772f2c48c9266204d40cdfb"
+        },
+        {
+          "source_id": "hkic_about_coinvest",
+          "source_url": "https://www.hkic.org.hk/about-us",
+          "source_title": "About Us - HKIC",
+          "source_content_hash": "8d1545c0143c44ce314a6774e4eb7fc64452652ab5a9e87214b30692aec182e1",
+          "quote": "In the 2022 Policy Address, the Chief Executive announced the establishment of the HK$30 billion Co-Investment Fund.",
+          "quote_hash": "30f17bae954e624ce02818765a69c1ab75068acd7718b2b94cce69e2c5a530dd"
+        },
+        {
+          "source_id": "hkic_annual_established",
+          "source_url": "https://www.hkic.org.hk/latest-updates/annual_report_2024",
+          "source_title": "Hong Kong Investment Corporation Limited Publishes Annual Report 2024 (December 2025)",
+          "source_content_hash": "99df9f05125fa39558bdaa6044b1e9de9f5dd5b03264eb86f4fca4b9b9ae9fd9",
+          "quote": "The HKIC was established in 2022 as the Patient Capital institution wholly owned by and representing the HKSAR Government.",
+          "quote_hash": "1769aeb821fd7ddd6e9cecc666126b72af232da70e517d72612a94f205140cf8"
+        },
+        {
+          "source_id": "hkic_annual_portfolios",
+          "source_url": "https://www.hkic.org.hk/latest-updates/annual_report_2024",
+          "source_title": "Hong Kong Investment Corporation Limited Publishes Annual Report 2024 (December 2025)",
+          "source_content_hash": "99df9f05125fa39558bdaa6044b1e9de9f5dd5b03264eb86f4fca4b9b9ae9fd9",
+          "quote": "The HKIC currently manages the Hong Kong Growth Portfolio, Greater Bay Area Investment Fund, Strategic Tech Fund, and Co-Investment Fund.",
+          "quote_hash": "fb47500db21c7dcefcaa5fb2a02e02f6e0db693359d09e78ecaa933621cba10f"
+        },
+        {
+          "source_id": "hkic_annual_projects",
+          "source_url": "https://www.hkic.org.hk/latest-updates/annual_report_2024",
+          "source_title": "Hong Kong Investment Corporation Limited Publishes Annual Report 2024 (December 2025)",
+          "source_content_hash": "99df9f05125fa39558bdaa6044b1e9de9f5dd5b03264eb86f4fca4b9b9ae9fd9",
+          "quote": "As of end October 2025, the HKIC has invested in over 150 projects across three key sectors.",
+          "quote_hash": "f3e6fff348026ad8d3c7332257c24278530225772505e2d42cfbd2b144bd3fdb"
+        },
+        {
+          "source_id": "hkic_annual_listings",
+          "source_url": "https://www.hkic.org.hk/latest-updates/annual_report_2024",
+          "source_title": "Hong Kong Investment Corporation Limited Publishes Annual Report 2024 (December 2025)",
+          "source_content_hash": "99df9f05125fa39558bdaa6044b1e9de9f5dd5b03264eb86f4fca4b9b9ae9fd9",
+          "quote": "Two companies have already listed in Hong Kong, and over ten companies have either filed or planned to file their listing applications in Hong Kong this year.",
+          "quote_hash": "fb13a3513cd6c9c9e37eedd30b218a677429183600fa9f4166b2632e6f1a9142"
+        },
+        {
+          "source_id": "hkic_annual_catalytic",
+          "source_url": "https://www.hkic.org.hk/latest-updates/annual_report_2024",
+          "source_title": "Hong Kong Investment Corporation Limited Publishes Annual Report 2024 (December 2025)",
+          "source_content_hash": "99df9f05125fa39558bdaa6044b1e9de9f5dd5b03264eb86f4fca4b9b9ae9fd9",
+          "quote": "Every Hong Kong dollar invested by the HKIC has attracted over 6 Hong Kong dollars from long-term market capital.",
+          "quote_hash": "7d857be17b9906d79d3ad36ec734d12e8a4373121f7c4e6c9e35648abdd4a38a"
+        },
+        {
+          "source_id": "hkic_annual_income",
+          "source_url": "https://www.hkic.org.hk/latest-updates/annual_report_2024",
+          "source_title": "Hong Kong Investment Corporation Limited Publishes Annual Report 2024 (December 2025)",
+          "source_content_hash": "99df9f05125fa39558bdaa6044b1e9de9f5dd5b03264eb86f4fca4b9b9ae9fd9",
+          "quote": "As of end 2024, the capital invested by the HKIC accounted for less than one-fifth of our initial capital size, while generating more than HK$2.3 billion in investment income.",
+          "quote_hash": "016efea1104f5055d3fc7292786712ef5bfcddd1108d9aaaf8c039aa54fde360"
+        },
+        {
+          "source_id": "hkic_annual_approach",
+          "source_url": "https://www.hkic.org.hk/latest-updates/annual_report_2024",
+          "source_title": "Hong Kong Investment Corporation Limited Publishes Annual Report 2024 (December 2025)",
+          "source_content_hash": "99df9f05125fa39558bdaa6044b1e9de9f5dd5b03264eb86f4fca4b9b9ae9fd9",
+          "quote": "Our investment strategy is progressive, aiming to cast the net wide enough before going deep into individual projects.",
+          "quote_hash": "f06908e2e38b7beab7abe31f4ba4edc24a98ce94c36be4ca17c7dcbe9f92ea7b"
+        },
+        {
+          "source_id": "hkic_board_paul",
+          "source_url": "https://www.hkic.org.hk/structure/board-of-directors",
+          "source_title": "Governance And Structure - HKIC",
+          "source_content_hash": "82f8cc0254de906729f95cd6915ffd8b2d72fd63c3dfa01de85716ea2769164a",
+          "quote": "The Honourable Paul Chan is Chairman of the Board and Financial Secretary.",
+          "quote_hash": "168ed80bb23f95b2d73b270b75d19865defb69284259643e32a0ace57a6dd3a9"
+        },
+        {
+          "source_id": "hkic_board_clara",
+          "source_url": "https://www.hkic.org.hk/structure/board-of-directors",
+          "source_title": "Governance And Structure - HKIC",
+          "source_content_hash": "82f8cc0254de906729f95cd6915ffd8b2d72fd63c3dfa01de85716ea2769164a",
+          "quote": "Ms Clara Chan is Chief Executive Officer, Hong Kong Investment Corporation Limited.",
+          "quote_hash": "678ddb4f6aea9c77316824d35c3ea714ee669ffc83cae60dd4a0307a75c89aa4"
+        },
+        {
+          "source_id": "hkic_contact_general",
+          "source_url": "https://www.hkic.org.hk/contact-us",
+          "source_title": "Contact Us - HKIC",
+          "source_content_hash": "287695f195550ee171b1e9916a36b848519fe1e5a66ec7ec42cfb17a1ca20f5c",
+          "quote": "General enquiry email: enquiry@hkic.org.hk. Telephone: (+852)2328 2625.",
+          "quote_hash": "612e596b0474c170ad6c1b67973f84d31c90b2ff50bc6ca24531bba87a877ffc"
+        },
+        {
+          "source_id": "hkic_contact_proposal",
+          "source_url": "https://www.hkic.org.hk/contact-us",
+          "source_title": "Contact Us - HKIC",
+          "source_content_hash": "287695f195550ee171b1e9916a36b848519fe1e5a66ec7ec42cfb17a1ca20f5c",
+          "quote": "Investment or strategic partnership proposal submission email: submission@hkic.org.hk.",
+          "quote_hash": "c23374c8ad05c071da07809a79e7758fa36c7dd41d34847544a34f0dbab7035d"
+        },
+        {
+          "source_id": "hkic_contact_media",
+          "source_url": "https://www.hkic.org.hk/contact-us",
+          "source_title": "Contact Us - HKIC",
+          "source_content_hash": "287695f195550ee171b1e9916a36b848519fe1e5a66ec7ec42cfb17a1ca20f5c",
+          "quote": "Media enquiry email: corpcomm@hkic.org.hk.",
+          "quote_hash": "03b61e2c2cab001eb8577634d7b6c2c8c8d344cfdf2069521e792f4655dcf0c2"
+        },
+        {
+          "source_id": "hkic_ceo_appointment",
+          "source_url": "https://www.hkic.org.hk/latest-updates/corporate_news",
+          "source_title": "Appointment of Chief Executive Officer of the Hong Kong Investment Corporation Limited (October 2023)",
+          "source_content_hash": "b429d62ebe9c4350edb3ef75aa815b1da17dc5762c1b47c91b7b0fd83e7605db",
+          "quote": "Ms Clara Chan Ka Chai was appointed inaugural CEO for a term of three years and assumed office on 9 October 2023.",
+          "quote_hash": "58b5ce6a02f81b8c18aa3fa5594983067319e8404ad57a16726b6a6c1c3136dc"
+        },
+        {
+          "source_id": "hkic_clara_bio_legal",
+          "source_url": "https://www.hkic.org.hk/latest-updates/corporate_news",
+          "source_title": "Appointment of Chief Executive Officer of the Hong Kong Investment Corporation Limited (October 2023)",
+          "source_content_hash": "b429d62ebe9c4350edb3ef75aa815b1da17dc5762c1b47c91b7b0fd83e7605db",
+          "quote": "Ms Chan is a barrister admitted by the High Court of Hong Kong.",
+          "quote_hash": "6c737baf0cb86c90334e03d2de5832bc0be16b3d00c43a397eb2f7386ce4939b"
+        },
+        {
+          "source_id": "hkic_clara_bio_hkma",
+          "source_url": "https://www.hkic.org.hk/latest-updates/corporate_news",
+          "source_title": "Appointment of Chief Executive Officer of the Hong Kong Investment Corporation Limited (October 2023)",
+          "source_content_hash": "b429d62ebe9c4350edb3ef75aa815b1da17dc5762c1b47c91b7b0fd83e7605db",
+          "quote": "She joined the HKMA in 2010 as a Manager in the Reserves Management Department, and was promoted as Senior Manager in 2012 and as Division Head in 2015.",
+          "quote_hash": "4326c7a125334d81f8457e899e7f0d52727f4af85c900ec8c6d2d6dbb1af7f43"
+        },
+        {
+          "source_id": "hkic_clara_bio_investment",
+          "source_url": "https://www.hkic.org.hk/latest-updates/corporate_news",
+          "source_title": "Appointment of Chief Executive Officer of the Hong Kong Investment Corporation Limited (October 2023)",
+          "source_content_hash": "b429d62ebe9c4350edb3ef75aa815b1da17dc5762c1b47c91b7b0fd83e7605db",
+          "quote": "Ms Chan was appointed Chief Investment Officer (Private Markets) in the Exchange Fund Investment Office in 2018, and Executive Director (Monetary Management) in 2020.",
+          "quote_hash": "049ef8fe3e3e80e338c8bcf0c24aafb230b183f8752b984f3626fdea1cbffe51"
+        },
+        {
+          "source_id": "hkic_clara_bio_government",
+          "source_url": "https://www.hkic.org.hk/latest-updates/corporate_news",
+          "source_title": "Appointment of Chief Executive Officer of the Hong Kong Investment Corporation Limited (October 2023)",
+          "source_content_hash": "b429d62ebe9c4350edb3ef75aa815b1da17dc5762c1b47c91b7b0fd83e7605db",
+          "quote": "She was an Administrative Officer in the Hong Kong SAR Government from 2004 to 2010, covering home affairs, transport and financial services.",
+          "quote_hash": "e3e684df4edbe337a9f3be8b268df49346d8c72884c1feabbf470d4bccd22f2a"
+        },
+        {
+          "source_id": "hkic_paul_bio",
+          "source_url": "https://www.ceo.gov.hk/exco/eng/fs.html",
+          "source_title": "Executive Council - Membership of Executive Council - Financial Secretary, Mr Paul Chan",
+          "source_content_hash": "0be81e5ff80bd419bce4ab9af8b918b97ac750d125769f0a54f56db63ee52d6a",
+          "quote": "Mr Chan is a Certified Public Accountant and former President of the Hong Kong Institute of Certified Public Accountants.",
+          "quote_hash": "4acfba7076a9876d83f259a917a9cdf646d771facd922a9ae74354edc3cb3e6a"
+        },
+        {
+          "source_id": "hkic_paul_career",
+          "source_url": "https://www.ceo.gov.hk/exco/eng/fs.html",
+          "source_title": "Executive Council - Membership of Executive Council - Financial Secretary, Mr Paul Chan",
+          "source_content_hash": "0be81e5ff80bd419bce4ab9af8b918b97ac750d125769f0a54f56db63ee52d6a",
+          "quote": "Mr Chan served as Secretary for Development from July 2012 to January 2017. He has been Financial Secretary since 2017.",
+          "quote_hash": "d48e43c40cada5bfc068d2fc5ea0e1c98cac5a4c6bd83a4690405543d087ec24"
+        },
+        {
+          "source_id": "hkic_paul_public_service",
+          "source_url": "https://www.ceo.gov.hk/exco/eng/fs.html",
+          "source_title": "Executive Council - Membership of Executive Council - Financial Secretary, Mr Paul Chan",
+          "source_content_hash": "0be81e5ff80bd419bce4ab9af8b918b97ac750d125769f0a54f56db63ee52d6a",
+          "quote": "Before joining the Government, Mr Chan held public service positions including member of the Legislative Council and Chairman of the Legal Aid Services Council.",
+          "quote_hash": "83c7d6029e4e420bc52f400f22fbd4e12e7d41b92c163f9b56c14008eb29eb20"
+        },
         {
           "source_id": "FISRC-e424026c5a172d4b",
           "source_url": "https://kr-asia.com/as-ai-consolidates-what-makes-stepfun-worth-a-rmb-5-billion-raise",
@@ -154,7 +590,11 @@
           "quote_hash": "445fdeeca39f08c8f2f991b4cfb79b002bd33e062a19187d0eb70b498ca5e3ea"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构身份、治理和联系方式由HKIC及香港特区政府官网确认。融资记录中另有StepFun参投披露，仅作为已收录活动案例，不代表完整组合。项目数量、上市进展、撬动资本和投资收入均保留各自统计时点；资本撬动比例及投资收入不应解读为基金回报率。管理层履历来自官方简介，官网未披露Clara Chan学历。"
     }
   }
 }
