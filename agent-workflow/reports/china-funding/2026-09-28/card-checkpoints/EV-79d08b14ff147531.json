@@ -1,0 +1,64 @@
+{
+  "event_id": "EV-79d08b14ff147531",
+  "company_name": "包养式",
+  "status": "blocked",
+  "problems": [
+    "research_sources_insufficient"
+  ],
+  "queries": [
+    "\"包养式\" 2026 融资 轮次 金额 投资方",
+    "\"包养式\" \"15亿美元\" 本轮融资 领投 跟投",
+    "\"包养式\" 产品 服务 创始人 总部",
+    "\"包养式\" 投资机构 投资原因 融资用途"
+  ],
+  "attempts": [
+    {
+      "provider": "tavily",
+      "query": "\"包养式\" 2026 融资 轮次 金额 投资方",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "provider": "exa",
+      "query": "\"包养式\" 2026 融资 轮次 金额 投资方",
+      "status": "failed",
+      "error": "exa_402"
+    },
+    {
+      "provider": "tavily",
+      "query": "\"包养式\" \"15亿美元\" 本轮融资 领投 跟投",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "provider": "exa",
+      "query": "\"包养式\" \"15亿美元\" 本轮融资 领投 跟投",
+      "status": "failed",
+      "error": "exa_402"
+    },
+    {
+      "provider": "tavily",
+      "query": "\"包养式\" 产品 服务 创始人 总部",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "provider": "exa",
+      "query": "\"包养式\" 产品 服务 创始人 总部",
+      "status": "failed",
+      "error": "exa_402"
+    },
+    {
+      "provider": "tavily",
+      "query": "\"包养式\" 投资机构 投资原因 融资用途",
+      "status": "completed",
+      "error": ""
+    },
+    {
+      "provider": "exa",
+      "query": "\"包养式\" 投资机构 投资原因 融资用途",
+      "status": "failed",
+      "error": "exa_402"
+    }
+  ]
+}
