@@ -635,6 +635,8 @@ test("funding research prompt enumerates every governed taxonomy list ID", () =>
   for (const id of [...FUNDING_USE_CASE_IDS, ...FUNDING_INDUSTRY_IDS, ...FUNDING_TARGET_USER_IDS]) {
     assert.match(prompt, new RegExp(`\\b${id}\\b`, "u"));
   }
+  assert.match(prompt, /采购预算或建设投入，不得改写为被提及供应商的合同金额、收入、订单或保底现金流/u);
+  assert.match(prompt, /媒体推断必须标成媒体分析/u);
 });
 
 test("Articul8 valuation-only disclosure is withdrawn from funding, not from canonical evidence", () => {
@@ -2692,6 +2694,34 @@ test("机构投资理由必须来自本轮投资方并保留原文证据", () =>
   payload.analysis.investment_rationale[0].institution = "Unknown Fund";
   assert.ok(researchPayloadProblems(payload, [source, productSource], ["DIR-1"])
     .includes("investment_rationale_1_institution_not_in_round"));
+});
+
+test("机构投资理由缺少可核验的公开发言人归属时不得保留或通过", () => {
+  const source = {
+    source_id: "SRC-1",
+    body_clean: "A media analyst said: The team has turned a difficult workflow into measurable customer outcomes.",
+  };
+  const payload = {
+    financing: {
+      investors: [{ name: "Northstar Ventures", role: "本轮领投", evidence_refs: evidence("SRC-1", source.body_clean) }],
+    },
+    analysis: {
+      investment_rationale: [{
+        institution: "Northstar Ventures",
+        speaker: "",
+        speaker_role: "",
+        rationale: "团队已把复杂工作流转化为可量化客户结果。",
+        quote: "The team has turned a difficult workflow into measurable customer outcomes.",
+        evidence_refs: evidence("SRC-1", source.body_clean),
+      }],
+    },
+  };
+  assert.deepEqual(sanitizeResearchPayload(payload, [source]).analysis.investment_rationale, []);
+  assert.ok(researchPayloadProblems(payload, [source], []).includes("investment_rationale_1_speaker_missing"));
+  assert.ok(researchPayloadProblems(payload, [source], []).includes("investment_rationale_1_speaker_role_missing"));
+  payload.analysis.investment_rationale[0].speaker = "Jane Street";
+  payload.analysis.investment_rationale[0].speaker_role = "投资机构";
+  assert.ok(researchPayloadProblems(payload, [source], []).includes("investment_rationale_1_speaker_not_attributed"));
 });
 
 test("可选研究数组中的不完整条目在硬门禁前被删除", () => {
