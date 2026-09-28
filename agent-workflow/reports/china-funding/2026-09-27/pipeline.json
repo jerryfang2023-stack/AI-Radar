@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-27",
+  "stages": [
+    {
+      "id": "capture",
+      "status": "passed",
+      "started_at": "2026-09-27T02:47:45.537Z",
+      "reused": true,
+      "reused_accepted_capture": true,
+      "finished_at": "2026-09-27T02:47:51.337Z"
+    },
+    {
+      "id": "facts",
+      "status": "passed",
+      "started_at": "2026-09-27T02:47:51.337Z",
+      "finished_at": "2026-09-27T02:49:18.215Z"
+    },
+    {
+      "id": "projections",
+      "status": "failed",
+      "started_at": "2026-09-27T02:49:18.216Z",
+      "error": "Command failed: agent-workflow/tools/assert-funding-insights-v1.mjs (1)",
+      "finished_at": "2026-09-27T02:49:37.874Z"
+    }
+  ]
+}
