@@ -1344,7 +1344,10 @@ function quoteClauses(value = "") {
 
 function clauseHasEventFundingAmount(clause, claim, event) {
   if (/(?:\b(?:not|never|did not|has not|had not|hasn't|didn't)\s+(?:raise|raised|secure|secured|complete|completed|close|closed)\b|(?:未|没有|并未|不曾|否认).{0,24}(?:融资|募资|筹集|获投|完成融资))/iu.test(clause)) return false;
-  const expected = fundingAmountMentions(event.object || claim.object)
+  const expected = [
+    event.object,
+    claim.object,
+  ].flatMap(fundingAmountMentions)
     .filter((mention) => !mention.valuation && !mention.cumulative);
   const actual = fundingAmountMentions(clause)
     .filter((mention) => !mention.valuation && !mention.cumulative);
