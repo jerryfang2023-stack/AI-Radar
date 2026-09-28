@@ -137,31 +137,219 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Goodwater Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-02-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Goodwater Capital 是一家专注于消费级与专业消费者（prosumer）科技的风险投资机构，官网称覆盖所有投资阶段，并以数据驱动研究和创始人优先的方法支持创业团队。官网展示 Zepto、Toss、Monzo、Weee!、Spotify、Coupang 等组合案例。2023 年官方宣布新设 10 亿美元基金，并在当时披露旗下 9 只基金的累计承诺资本为 33 亿美元；该历史口径不是当前 AUM。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资领域",
+          "value": [
+            "消费级科技",
+            "专业消费者（prosumer）科技"
+          ],
+          "source_id": "gw_home_focus"
+        },
+        {
+          "field": "investment_stages",
+          "label": "投资阶段",
+          "value": "官网称覆盖所有阶段。",
+          "source_id": "gw_home_focus"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资方法",
+          "value": "官网称采用数据驱动研究与创始人优先的判断支持投资。",
+          "source_id": "gw_home_focus"
+        },
+        {
+          "field": "founding_partners",
+          "label": "联合创始人及职务（官网团队页）",
+          "value": [
+            "Chi-Hua Chien：联合创始人、管理合伙人",
+            "Eric Kim：联合创始人、管理合伙人"
+          ],
+          "source_id": "gw_team_founders"
+        },
+        {
+          "field": "partners",
+          "label": "官网列示合伙人",
+          "value": [
+            "Erin Kitchell：合伙人",
+            "Vivek Subramanian：合伙人"
+          ],
+          "source_id": "gw_team_partners"
+        },
+        {
+          "field": "selected_portfolio",
+          "label": "官网展示的部分组合公司",
+          "value": [
+            "Zepto",
+            "Toss",
+            "Monzo",
+            "Weee!",
+            "Scopely",
+            "Musical.ly / TikTok",
+            "Facebook",
+            "Spotify",
+            "Twitter (X)",
+            "Coupang",
+            "Kakao",
+            "Fever",
+            "Slash",
+            "Midi Health"
+          ],
+          "source_id": "gw_portfolio"
+        },
+        {
+          "field": "fundraising_history",
+          "label": "2023 年基金募集披露（历史口径）",
+          "value": "2023-07-25 官方宣布新设基金合计 10 亿美元；同一公告称当时旗下 9 只基金合计承诺资本 33 亿美元。承诺资本不等于当前管理规模、实缴额或已投资金额。",
+          "source_id": "gw_fund_v_2023"
+        },
+        {
+          "field": "early_growth_portfolio_scale",
+          "label": "早期与成长阶段组合规模（2023 年自报）",
+          "value": "2023 年公告称其早期及成长阶段组合有 79 家公司，分布于 4 大洲、19 个国家；这是机构当时披露的组合统计。",
+          "source_id": "gw_scale_2023"
+        },
+        {
+          "field": "genesis_seed_portfolio_scale",
+          "label": "Genesis 种子组合规模（2023 年自报）",
+          "value": "2023 年公告称 Genesis 种子组合超过 600 家公司，覆盖 6 大洲、50 多个国家；这是机构当时披露的历史统计。",
+          "source_id": "gw_genesis_2023"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2023-07-25",
+          "description": "Goodwater 宣布新设 10 亿美元基金，并披露当时旗下 9 只基金累计承诺资本为 33 亿美元。",
+          "source_id": "gw_fund_v_2023"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Trace · 种子轮 · 2026-02-26 · 本轮参投 · $3 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "2026 年 Goodwater 官方表示投资 Wispr Flow 的 2.8 亿美元 Series B。2.8 亿美元是整轮融资总额，官方没有披露 Goodwater 的单笔出资额。",
+          "source_id": "gw_wispr_2026"
+        },
+        {
+          "description": "2025 年 Goodwater 官方表示参与 Seekho 的 2800 万美元 Series B；该金额为整轮融资总额，来源未披露 Goodwater 的单笔出资额。",
+          "source_id": "gw_seekho_2025"
+        },
+        {
+          "description": "TechCrunch 报道称 Goodwater Capital 参与 Trace 的 300 万美元种子轮。300 万美元是融资总额，报道没有披露该机构的单笔出资额。",
           "source_id": "FISRC-ea2a22594e77fd6a"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构身份、投资主题、团队和案例由 Goodwater 官网及其官方文章确认；公司页为机构自选展示组合，不能据此视为完整投资组合。2023 年基金和组合数量均保留为当时自报口径。Goodwater 官网对自动化直接请求返回限流响应，本档案所用官网资料来自当前官方索引页面文本；本地内容哈希对应保留的页面摘录记录。未发现可准确映射到本库现有人物实体 ID 的团队成员，因此不建立未经核实的人物关联。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Goodwater Capital",
+          "url": "https://www.goodwatercap.com/",
+          "source_id": "gw_home_focus"
+        },
+        {
+          "kind": "email",
+          "label": "官网公开的一般联系邮箱",
+          "value": "info@goodwatercap.com",
+          "url": "https://www.goodwatercap.com/team",
+          "source_id": "gw_contact_email"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "gw_home_focus",
+          "source_url": "https://www.goodwatercap.com/",
+          "source_title": "Goodwater Capital | Official website",
+          "source_content_hash": "b793c7e281d002bafa0f34b23179457db6cd12752b8693b1d1143cd7b917bd35",
+          "quote": "Goodwater Capital invests in consumer and prosumer technology companies at every stage. We combine deep data-driven research with founder-first conviction.",
+          "quote_hash": "c3f35a9ce3123e9cdf4ba22384953ad6d1df0a13bb6a7f8250b70e68e00b9a8d"
+        },
+        {
+          "source_id": "gw_team_founders",
+          "source_url": "https://www.goodwatercap.com/team",
+          "source_title": "Meet Our Team | Goodwater Capital",
+          "source_content_hash": "785e67ad4e63dd4b82fa1fb11e545e45fb28a3c566183adcedff0b9e8a967800",
+          "quote": "Chi-Hua Chien Co-Founder & Managing Partner; Eric Kim Co-Founder & Managing Partner.",
+          "quote_hash": "4005db6d6be2048c0e59c301c342c717a449f1ad9908fbf7b92af07ebb8e2101"
+        },
+        {
+          "source_id": "gw_team_partners",
+          "source_url": "https://www.goodwatercap.com/team",
+          "source_title": "Meet Our Team | Goodwater Capital",
+          "source_content_hash": "3bc3efd4abbb6a86f4e2be9bdbbdb4f18e7bfe64cc16545b1ab5def8dc5fa39a",
+          "quote": "Erin Kitchell Partner; Vivek Subramanian Partner.",
+          "quote_hash": "a9201b8b6810198807ee6cbc0d77b0241056312ed17ab4eab49ba5eca16670f7"
+        },
+        {
+          "source_id": "gw_portfolio",
+          "source_url": "https://www.goodwatercap.com/companies",
+          "source_title": "Our Companies | Goodwater Capital",
+          "source_content_hash": "4a1412e4414d4e418a70925b0f545cff2512695f27dea61f8fdfda3d90458ea6",
+          "quote": "Zepto; Toss; Monzo; Weee!; Scopely; Musical.ly / TikTok; Facebook; Spotify; Twitter (X); Coupang; Kakao; Fever; Slash; Midi Health.",
+          "quote_hash": "522962612bdf1d2262962253bca7621ba89e08c66eca378feec3a959019d543e"
+        },
+        {
+          "source_id": "gw_fund_v_2023",
+          "source_url": "https://www.goodwatercap.com/perspectives/fund-v-announcement",
+          "source_title": "$1 Billion to Fund Radically Better Solutions to Humanity’s Most Pressing Needs | Goodwater Capital",
+          "source_content_hash": "bc0ea746945cb87f123a780a6d20270906ec38e54fff10cc8d57c45a1121dedd",
+          "quote": "Announcing $1 billion in new funds.",
+          "quote_hash": "58a7bbb12e7b3da3591fed10a3c48a663c6e1f3acf47d15300e927fa07cdcbb9"
+        },
+        {
+          "source_id": "gw_scale_2023",
+          "source_url": "https://www.goodwatercap.com/perspectives/fund-v-announcement",
+          "source_title": "$1 Billion to Fund Radically Better Solutions to Humanity’s Most Pressing Needs | Goodwater Capital",
+          "source_content_hash": "090d78b4b0aaa55a9a8084d4a897d4fe9d1ff17e6baa3af2da12cb418beb8757",
+          "quote": "79 companies across 4 continents and 19 countries.",
+          "quote_hash": "45d684f4fb95f1fe114b6e826c5f5d86c6c35393a65391898197739cbd4b61f4"
+        },
+        {
+          "source_id": "gw_genesis_2023",
+          "source_url": "https://www.goodwatercap.com/perspectives/fund-v-announcement",
+          "source_title": "$1 Billion to Fund Radically Better Solutions to Humanity’s Most Pressing Needs | Goodwater Capital",
+          "source_content_hash": "8d5368e237167956c822a2eba28db22ad7dacf3ba26fb5f5f948ed07f6756c5b",
+          "quote": "600+ company seed portfolio, Genesis.",
+          "quote_hash": "2c50e8e5f5c52ebc20f721c3f61862549cb71ac68961d8274ff9dc6dbd4a3fb7"
+        },
+        {
+          "source_id": "gw_seekho_2025",
+          "source_url": "https://www.goodwatercap.com/perspectives/goodwater-joins-28m-series-b-round-in-seekho-indias-3-minute-learning-engine",
+          "source_title": "Goodwater Joins $28M Series B Round in Seekho | Goodwater Capital",
+          "source_content_hash": "930375138cba5b9c4d2275e30392e387dc1a0e920a5ffabb674aaf014d270fd6",
+          "quote": "We’re proud to join this $28 million Series B round led by Bessemer Venture Partners, alongside Lightspeed Venture Partners and Elevation Capital.",
+          "quote_hash": "b3ba671fbd75e408c0ccdb3c13f2d80907099883b537040d0139499fc224d735"
+        },
+        {
+          "source_id": "gw_wispr_2026",
+          "source_url": "https://www.goodwatercap.com/perspectives/goodwater-invests-in-wispr-flows-280m-series-b",
+          "source_title": "Goodwater Invests in Wispr Flow’s $280M Series B | Goodwater Capital",
+          "source_content_hash": "f7a883e174cf82859eaff44e921a05f1f22a887611813e0c883a7b7af9c9e2cb",
+          "quote": "Goodwater is proud to invest in Wispr Flow’s $280 million Series B.",
+          "quote_hash": "bd3e4bbaa80bf9d1e83b97f2a167bd461750434a564afc0ba66cea292aabdc7d"
+        },
         {
           "source_id": "FISRC-ea2a22594e77fd6a",
           "source_url": "https://techcrunch.com/2026/02/26/trace-raises-3-million-to-solve-the-agent-adoption-problem/",
-          "source_title": "Trace 融资 300 万美元，解决企业 AI 智能体采用难题",
+          "source_title": "Trace raises $3 million to solve the agent adoption problem | TechCrunch",
           "source_content_hash": "601ebbbabea8fa71",
           "quote": "it had raised $3 million in seed funding from Y Combinator, Zeno Ventures, Transpose Platform Management, Goodwater Capital, Formosa Capital, and WeFunder",
           "quote_hash": "0ced4359dfcdc0e820178707640abbac3d1d212857810ea67c3616cb06ffb902"
+        },
+        {
+          "source_id": "gw_contact_email",
+          "source_url": "https://www.goodwatercap.com/team",
+          "source_title": "Meet Our Team | Goodwater Capital",
+          "source_content_hash": "4b675db9fde6f25a67860fea56becad0c853ff347e8bc799e0a7d2f07bab1832",
+          "quote": "info@goodwatercap.com",
+          "quote_hash": "f7df97e802097ba74d82d8c5e7a9bca2d261cc9b5e05886b71ab225472092d53"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28"
     }
   }
 }

@@ -154,29 +154,340 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Kickstart Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Kickstart Ventures, Inc. 是菲律宾的企业风险投资机构，官网称其为 Globe Telecom 全资子公司，并披露全球投资组合和创始人数量。官网的投资焦点页面分别介绍 Fund One、Fund Two 与 Ayala Corporation Technology Innovation Venture Fund（ACTIVE Fund）的投资规模、阶段和地域。各基金披露金额是对应基金的规模或历史出资口径，不代表 Kickstart Ventures 的当前 AUM 或其对单个项目的出资额。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "机构名称",
+          "value": "Kickstart Ventures Inc.（官网页脚使用名称）",
+          "source_id": "ks_legal_name"
+        },
+        {
+          "field": "ownership",
+          "label": "股东关系",
+          "value": "官网称 Kickstart Ventures 是 Globe Telecom 的全资子公司。",
+          "source_id": "ks_home_identity"
+        },
+        {
+          "field": "institution_type_and_focus",
+          "label": "机构类型与投资定位",
+          "value": "官网将其定位为菲律宾企业风险投资机构，投资以可持续、包容创新解决现实问题的科技初创公司；该为机构自述。",
+          "source_id": "ks_home_position"
+        },
+        {
+          "field": "portfolio_scale",
+          "label": "官网披露的组合规模",
+          "value": "官网当前称其全球有 70 项投资、涉及 130 多位创始人；该为机构自报总量，页面没有提供统计日期或完整组合清单。",
+          "source_id": "ks_portfolio_scale"
+        },
+        {
+          "field": "core_team",
+          "label": "官网列示的核心投资及组合团队",
+          "value": [
+            "Minette Navarrete：总裁兼管理合伙人",
+            "Dan Siazon：创始人兼管理合伙人",
+            "Joan Yao：普通合伙人",
+            "Mike Maté：普通合伙人",
+            "Bit Santos：组合运营合伙人"
+          ],
+          "source_id": "ks_team_core"
+        },
+        {
+          "field": "fund_one_profile",
+          "label": "Fund One：规模与启动时间",
+          "value": "官网称 Fund One 于 2012 年启动，为 1200 万美元 evergreen fund。",
+          "source_id": "ks_fund_one_launch"
+        },
+        {
+          "field": "fund_one_stages",
+          "label": "Fund One：投资阶段",
+          "value": "种子轮至 Series A。",
+          "source_id": "ks_fund_one_stage"
+        },
+        {
+          "field": "fund_one_geographies",
+          "label": "Fund One：地域范围",
+          "value": [
+            "菲律宾",
+            "马来西亚",
+            "新加坡",
+            "美国"
+          ],
+          "source_id": "ks_fund_one_regions"
+        },
+        {
+          "field": "fund_one_sectors",
+          "label": "Fund One：公开列示的行业",
+          "value": [
+            "电子商务",
+            "保险科技",
+            "生活方式",
+            "媒体",
+            "企业服务",
+            "健康科技",
+            "教育科技",
+            "金融科技",
+            "数字地产"
+          ],
+          "source_id": "ks_fund_one_sectors"
+        },
+        {
+          "field": "fund_two_profile",
+          "label": "Fund Two：规模、出资方与状态",
+          "value": "官网称 Fund Two 于 2015 年设立，由 Globe Telecom 出资 5000 万美元；目前已全部承诺。该为基金层级的历史规模口径。",
+          "source_id": "ks_fund_two_launch"
+        },
+        {
+          "field": "fund_two_stages",
+          "label": "Fund Two：投资阶段",
+          "value": "Seed A 至 Series C。",
+          "source_id": "ks_fund_two_stage"
+        },
+        {
+          "field": "fund_two_geographies",
+          "label": "Fund Two：地域范围",
+          "value": [
+            "菲律宾",
+            "新加坡",
+            "印度尼西亚",
+            "美国",
+            "以色列"
+          ],
+          "source_id": "ks_fund_two_regions"
+        },
+        {
+          "field": "fund_two_sectors",
+          "label": "Fund Two：公开列示的行业",
+          "value": [
+            "企业服务",
+            "电子商务",
+            "生活方式",
+            "金融科技",
+            "媒体"
+          ],
+          "source_id": "ks_fund_two_sectors"
+        },
+        {
+          "field": "active_fund_profile",
+          "label": "ACTIVE Fund：成立时间、规模及支持方",
+          "value": "Kickstart 官网单列的 ACTIVE Fund 页面称，该 Ayala Corporation Technology Innovation Venture Fund 于 2020 年设立，规模为 1.8 亿美元，由 Ayala Corporation 及其子公司支持；该金额是基金口径，不代表 Kickstart 的自有资产或其持有份额。",
+          "source_id": "ks_active_fund_size"
+        },
+        {
+          "field": "active_fund_backers",
+          "label": "ACTIVE Fund：公开列示的支持方",
+          "value": [
+            "Ayala Corporation",
+            "Globe Telecom",
+            "BPI",
+            "AC Energy",
+            "AC Industrials",
+            "AC Ventures"
+          ],
+          "source_id": "ks_active_fund_backers"
+        },
+        {
+          "field": "portfolio_support",
+          "label": "组合支持方式",
+          "value": "官网称通过产业专家提供专业经验，并利用与 Globe、Ayala、Singtel 集团的关联提供市场接入；这是其公开描述的支持方式。",
+          "source_id": "ks_value_creation"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2012",
+          "description": "Fund One 启动，官网描述为 1200 万美元 evergreen fund。",
+          "source_id": "ks_fund_one_launch"
+        },
+        {
+          "date": "2015",
+          "description": "Fund Two 设立，官网称由 Globe Telecom 出资 5000 万美元。",
+          "source_id": "ks_fund_two_launch"
+        },
+        {
+          "date": "2020",
+          "description": "ACTIVE Fund 设立；官网披露基金规模 1.8 亿美元及其支持方。",
+          "source_id": "ks_active_fund_launch"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Featherless.ai · A轮 · 2026-04-30 · 本轮参投；种子轮投资方 · $20 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Tech.eu 报道称 Kickstart Ventures 参与 Featherless.ai 的 2000 万美元 Series A。2000 万美元为融资总额，报道没有披露 Kickstart 的单笔出资额。",
           "source_id": "FISRC-2abdb8003508dda6"
         },
         {
-          "description": "融资来源记录：Featherless.ai · A轮 · 2026-04-30 · 本轮参投；种子轮投资方 · $20 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "TNGlobal 引述 Kickstart 普通合伙人 Joan Yao 称，该机构曾在种子轮投资 Featherless.ai，并提到其推理技术优势；报道未披露种子轮出资金额。",
           "source_id": "FISRC-1afbc2de05f08056"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "公司主体、Globe Telecom 全资子公司关系、现任团队、基金策略与联系方式由 Kickstart 官方页面确认；融资案例由融资报道补充。基金 One、Fund Two、ACTIVE 分别记录，基金规模与机构 AUM、实缴或项目单笔投资额严格区分。官网所称 70 项投资不是完整组合披露；本批未找到全部投资明细、基金回报率或退出收益。官网当前团队页没有为所有团队成员提供完整履历，且其姓名未映射到本库现有人物实体 ID，因此没有新建未经核实的人物记录。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Kickstart Ventures",
+          "url": "https://kickstart.ph/home",
+          "source_id": "ks_home_identity"
+        },
+        {
+          "kind": "email",
+          "label": "创业项目融资提交",
+          "value": "pitches@kickstart.ph",
+          "url": "https://kickstart.ph/contact-us",
+          "source_id": "ks_contact_pitch"
+        },
+        {
+          "kind": "email",
+          "label": "一般咨询及合作机会",
+          "value": "info@kickstart.ph",
+          "url": "https://kickstart.ph/contact-us",
+          "source_id": "ks_contact_general"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "ks_home_identity",
+          "source_url": "https://kickstart.ph/home",
+          "source_title": "Kickstart Ventures | Official website",
+          "source_content_hash": "f1469f88ef9dbffcf85cc264e62962592732f586b7a736bb35fa99175cfad088",
+          "quote": "A wholly-owned subsidiary of Globe Telecom.",
+          "quote_hash": "bec7604c0e25b8ac24360c5d6d5f29735aa4a7f49833a48e164f5b3b82fa9b85"
+        },
+        {
+          "source_id": "ks_home_position",
+          "source_url": "https://kickstart.ph/home",
+          "source_title": "Kickstart Ventures | Official website",
+          "source_content_hash": "f1469f88ef9dbffcf85cc264e62962592732f586b7a736bb35fa99175cfad088",
+          "quote": "Philippines’ largest corporate venture capital firm.",
+          "quote_hash": "8007c4f0cdf66fe659a768b2ffded7fa24e5f8bdae9acf0441121de1ee7e8833"
+        },
+        {
+          "source_id": "ks_team_core",
+          "source_url": "https://kickstart.ph/team",
+          "source_title": "Our Team | Kickstart Ventures",
+          "source_content_hash": "0243cd32ca70583696e6098dfb71ebf4e6bd4e60f73bf1704923922d65491bf2",
+          "quote": "Minette Navarrete President & Managing Partner; Dan Siazon Founder & Managing Partner; Joan Yao General Partner; Mike Maté General Partner; Bit Santos Partner, Portfolio Operations.",
+          "quote_hash": "b34176d94c3a657977a7ae2774c31608456318f529ea7e4f69af3a4b660e4c25"
+        },
+        {
+          "source_id": "ks_legal_name",
+          "source_url": "https://kickstart.ph/home",
+          "source_title": "Kickstart Ventures | Official website",
+          "source_content_hash": "f1469f88ef9dbffcf85cc264e62962592732f586b7a736bb35fa99175cfad088",
+          "quote": "Kickstart Ventures Inc.",
+          "quote_hash": "a792915f9453ed6899e4fca4ffc09a86a90bdc613e96bb215228124bb2e89576"
+        },
+        {
+          "source_id": "ks_fund_one_launch",
+          "source_url": "https://kickstart.ph/investment-focus/fund-one",
+          "source_title": "Fund One | Kickstart Ventures",
+          "source_content_hash": "572b189385cb1934cbda8c624ad67f793e257be1c0705c23076a338bf3b7477d",
+          "quote": "Launched in 2012 ... with $12 million.",
+          "quote_hash": "c140661a704076f59b1ad4d89ae37887293bc3e4b95c80756a80c029560acdf5"
+        },
+        {
+          "source_id": "ks_fund_one_stage",
+          "source_url": "https://kickstart.ph/investment-focus/fund-one",
+          "source_title": "Fund One | Kickstart Ventures",
+          "source_content_hash": "572b189385cb1934cbda8c624ad67f793e257be1c0705c23076a338bf3b7477d",
+          "quote": "Seed to Series A.",
+          "quote_hash": "8ad18a1dd6193e3cbecc45863ea10700e2a87a0c3c4c95ce5a0ca3d5c54ad704"
+        },
+        {
+          "source_id": "ks_fund_one_regions",
+          "source_url": "https://kickstart.ph/investment-focus/fund-one",
+          "source_title": "Fund One | Kickstart Ventures",
+          "source_content_hash": "572b189385cb1934cbda8c624ad67f793e257be1c0705c23076a338bf3b7477d",
+          "quote": "Philippines, Malaysia, Singapore, and the United States of America.",
+          "quote_hash": "9d0392bca0f0f0a6a9d88df54580d8f537831d7dc8a09368a95bf2c34fe6e94a"
+        },
+        {
+          "source_id": "ks_fund_one_sectors",
+          "source_url": "https://kickstart.ph/investment-focus/fund-one",
+          "source_title": "Fund One | Kickstart Ventures",
+          "source_content_hash": "572b189385cb1934cbda8c624ad67f793e257be1c0705c23076a338bf3b7477d",
+          "quote": "eCommerce, Insurtech, Lifestyle...",
+          "quote_hash": "e8f9b9996f8c8410269fb5f2bb73842d8bd0995076588c9c72be8ed6f6767316"
+        },
+        {
+          "source_id": "ks_fund_two_launch",
+          "source_url": "https://kickstart.ph/investment-focus/fund-two",
+          "source_title": "Fund Two | Kickstart Ventures",
+          "source_content_hash": "0566dc914142ac14065e67d661d8dc8818591811522158e4654cf767e2c7f732",
+          "quote": "Established in 2015 with $50 million from Globe Telecom.",
+          "quote_hash": "ed26fff4194f41de63e3253d9f0be9e9f76e3e916f459b1966c7ceff462d75de"
+        },
+        {
+          "source_id": "ks_fund_two_stage",
+          "source_url": "https://kickstart.ph/investment-focus/fund-two",
+          "source_title": "Fund Two | Kickstart Ventures",
+          "source_content_hash": "0566dc914142ac14065e67d661d8dc8818591811522158e4654cf767e2c7f732",
+          "quote": "Seed A to Series C.",
+          "quote_hash": "29ef0f13ce273e6efe7b9b77d27b292c39a914a843ae61fca8809c5cf1c518d9"
+        },
+        {
+          "source_id": "ks_fund_two_regions",
+          "source_url": "https://kickstart.ph/investment-focus/fund-two",
+          "source_title": "Fund Two | Kickstart Ventures",
+          "source_content_hash": "0566dc914142ac14065e67d661d8dc8818591811522158e4654cf767e2c7f732",
+          "quote": "Philippines, Singapore, Indonesia, United States, Israel.",
+          "quote_hash": "226618a6095388d109276f14eec115c4a473675d951fe9fd0bb50495279ffa96"
+        },
+        {
+          "source_id": "ks_fund_two_sectors",
+          "source_url": "https://kickstart.ph/investment-focus/fund-two",
+          "source_title": "Fund Two | Kickstart Ventures",
+          "source_content_hash": "0566dc914142ac14065e67d661d8dc8818591811522158e4654cf767e2c7f732",
+          "quote": "Enterprise, eCommerce, Lifestyle, FinTech, and Media.",
+          "quote_hash": "2971f5e90dccab3b48c000475cfa714fb9b5532f2e9d44b9165afa4d91eac64b"
+        },
+        {
+          "source_id": "ks_active_fund_launch",
+          "source_url": "https://kickstart.ph/investment-focus/active-fund",
+          "source_title": "ACTIVE Fund | Kickstart Ventures",
+          "source_content_hash": "4ca78087716dbf036a28b125dd607acacfed534964e45856254f5919f9c293a0",
+          "quote": "Established in 2020.",
+          "quote_hash": "c8131c3bf338898a8bafb0201e0d2038cb0baced51238e36eb476ed0106a8def"
+        },
+        {
+          "source_id": "ks_active_fund_backers",
+          "source_url": "https://kickstart.ph/investment-focus/active-fund",
+          "source_title": "ACTIVE Fund | Kickstart Ventures",
+          "source_content_hash": "4ca78087716dbf036a28b125dd607acacfed534964e45856254f5919f9c293a0",
+          "quote": "Backed by Ayala Corporation and its leading subsidiaries.",
+          "quote_hash": "ecc9ef6714f16e45f9e90a6dea34836da7e6c71c914ce5fec3cc4894ca38e270"
+        },
+        {
+          "source_id": "ks_value_creation",
+          "source_url": "https://kickstart.ph/value-creation",
+          "source_title": "Value Creation | Kickstart Ventures",
+          "source_content_hash": "2100e6c4295a7c6d2390a6c3c4002ce9e2a7fadbeafea14ec82f7ce7ac8b485e",
+          "quote": "Access to expertise ... access to market through our affiliation with Globe, Ayala, and Singtel groups.",
+          "quote_hash": "f5f0ec2d4b7c51296d2987e33a85276a9cf264a498aa540cb2f2b0b109b03ba7"
+        },
+        {
+          "source_id": "ks_contact_pitch",
+          "source_url": "https://kickstart.ph/contact-us",
+          "source_title": "Contact Us | Kickstart Ventures",
+          "source_content_hash": "bad1c4e541d2fcfce0999685bd96b7a17b110d40c55582c9c451542675daec94",
+          "quote": "Pitch to us at pitches@kickstart.ph.",
+          "quote_hash": "d6f364f0546b8f132d5a2d8b17f7ce21489926144dd97af0985692ef8aa832e8"
+        },
+        {
+          "source_id": "ks_contact_general",
+          "source_url": "https://kickstart.ph/contact-us",
+          "source_title": "Contact Us | Kickstart Ventures",
+          "source_content_hash": "bad1c4e541d2fcfce0999685bd96b7a17b110d40c55582c9c451542675daec94",
+          "quote": "Connect with us via info@kickstart.ph.",
+          "quote_hash": "3ac4edee4ae77dbebf37a5effd18feb8c5a850cbefb25113551a5bb6627f84bd"
+        },
         {
           "source_id": "FISRC-2abdb8003508dda6",
           "source_url": "https://tech.eu/2026/04/30/featherlessai-secures-20m-to-expand-serverless-platform-for-open-source-ai/",
-          "source_title": "Featherless.ai 获 2000 万美元融资，扩展开源 AI 无服务器平台",
+          "source_title": "Featherless.ai secures $20M to expand serverless platform for open-source AI | Tech.eu",
           "source_content_hash": "7b38f6d68d7f8881",
           "quote": "with participation from BMW i Ventures, Kickstart Ventures, Panache Ventures, and Wavemaker Ventures",
           "quote_hash": "67475342fca91e990ca60a5eb148915b5c54fe115e0c9d854fc7f35de22212e8"
@@ -184,13 +495,29 @@
         {
           "source_id": "FISRC-1afbc2de05f08056",
           "source_url": "https://technode.global/2026/05/01/singapore-co-founded-ai-firm-featherless-ai-raises-20m-series-a-funding/",
-          "source_title": "Singapore co-founded AI firm Featherless.ai raises $20M funding co-led by AMD Ventures, Airbus Ventures - TNGlobal",
+          "source_title": "Singapore co-founded AI firm Featherless.ai raises $20M funding | TNGlobal",
           "source_content_hash": "84d2adfa2c1db4c4",
           "quote": "Joan Yao, General Partner at Kickstart Ventures, also said the firm backed Featherless.ai at seed because of their technical edge in inference",
           "quote_hash": "4328b7e7f0b278cac1585876deed8168aa494544d7f523c44d12c43e0e742802"
+        },
+        {
+          "source_id": "ks_portfolio_scale",
+          "source_url": "https://kickstart.ph/home",
+          "source_title": "Kickstart Ventures | Official website",
+          "source_content_hash": "f1469f88ef9dbffcf85cc264e62962592732f586b7a736bb35fa99175cfad088",
+          "quote": "70 investments globally, led by more than 130 founders.",
+          "quote_hash": "64e0f17b8c8a0acde6e74358d61830dd039919ecfe20c2dfd528a43f645d1df1"
+        },
+        {
+          "source_id": "ks_active_fund_size",
+          "source_url": "https://kickstart.ph/investment-focus/active-fund",
+          "source_title": "ACTIVE Fund | Kickstart Ventures",
+          "source_content_hash": "4ca78087716dbf036a28b125dd607acacfed534964e45856254f5919f9c293a0",
+          "quote": "$180M Ayala Corporation Technology Innovation Venture Fund (ACTIVE Fund).",
+          "quote_hash": "3c04508e9a2759684a4d13dc9f0f846f9af558bd175ce68662fa51869cd1222b"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28"
     }
   }
 }
