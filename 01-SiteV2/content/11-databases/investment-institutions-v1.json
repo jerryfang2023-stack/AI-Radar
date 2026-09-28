@@ -190968,21 +190968,202 @@
         }
       ],
       "public_profile": {
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Twilio Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "summary": "Twilio Ventures是Twilio Inc.旗下的企业风险投资项目，支持开发者工具、客户互动和相关AI公司。官网当前披露的投资承诺为5000万美元，通常参与A、B轮，单笔投资通常为100万至500万美元；也会个案考虑种子轮或后期轮次。其项目支持包括开发者生态接入、导师辅导和潜在商业合作。",
+        "facts": [
+          {
+            "field": "parent_company",
+            "label": "所属公司",
+            "value": "Twilio Inc.；官网称该投资项目由Twilio专项承诺资本支持",
+            "source_id": "twilio_current_commitment"
+          },
+          {
+            "field": "founded_date",
+            "label": "启动时间",
+            "value": "2021年12月8日宣布设立",
+            "source_id": "twilio_launch"
+          },
+          {
+            "field": "current_commitment",
+            "label": "官网披露投资承诺",
+            "value": "5000万美元（Twilio Ventures专属承诺；不等于当前未投资余额）",
+            "source_id": "twilio_current_commitment"
+          },
+          {
+            "field": "investment_focus",
+            "label": "投资主题",
+            "value": [
+              "人工智能",
+              "开发者工具",
+              "客户互动",
+              "Twilio生态系统及相邻创新领域"
+            ],
+            "source_id": "twilio_current_focus"
+          },
+          {
+            "field": "investment_stages",
+            "label": "官网披露的投资阶段",
+            "value": "通常参与A轮和B轮；种子轮或更后期轮次按个案考虑",
+            "source_id": "twilio_current_criteria"
+          },
+          {
+            "field": "typical_check_size",
+            "label": "官网披露的常见单笔投资额",
+            "value": "100万至500万美元",
+            "source_id": "twilio_current_check"
+          },
+          {
+            "field": "investment_role",
+            "label": "参投方式",
+            "value": "当前重点参与由专业财务投资人领投的融资轮次",
+            "source_id": "twilio_current_role"
+          },
+          {
+            "field": "portfolio_support",
+            "label": "组合企业支持",
+            "value": "导师辅导、开发者生态接入、潜在产品或商业合作，以及连接Twilio合作伙伴与客户",
+            "source_id": "twilio_current_support"
+          },
+          {
+            "field": "governance_terms",
+            "label": "官网披露的董事席位惯例",
+            "value": "通常不要求董事席位或董事观察员席位",
+            "source_id": "twilio_current_terms"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2021-12-08",
+            "description": "Twilio宣布成立Twilio Ventures并为其承诺5000万美元，定位为支持开发者生态和客户互动领域创业公司的企业风险投资项目。",
+            "source_id": "twilio_launch"
+          }
+        ],
         "track_record": [
           {
-            "description": "融资来源记录：Rime · A轮 · 2026-07-15 · 本轮参投 · $24M。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "Twilio于2021年宣布的已投案例包括Algolia、Mux、Hyro、Calixa、Well Health和Terazo，并列出Community、Courier和Krisp等此前投资；这是公告所列选例，不代表完整组合或收益统计。",
+            "source_id": "twilio_launch_portfolio"
+          },
+          {
+            "description": "Twilio Ventures, Corazon Capital, Unusual Ventures, and other existing investors also participated",
             "source_id": "FISRC-7814afd7c39e886d"
           }
         ],
-        "contacts": [],
+        "current_roles": [],
+        "career": [],
+        "education": [],
+        "experience_summary": "Twilio Ventures可调用母公司的通信平台、开发者生态和客户关系，为被投公司提供商业化连接。当前官方项目页没有以文本公开具名投资管理团队；本档案不推测成员姓名。",
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方项目介绍、投资策略与申报信息",
+            "value": "Twilio Ventures",
+            "url": "https://www.twilio.com/en-us/ventures",
+            "source_id": "twilio_current_strategy"
+          },
+          {
+            "kind": "application",
+            "label": "官网公布的Twilio Ventures联系邮箱",
+            "value": "ventures@twilio.com",
+            "url": "https://www.twilio.com/en-us/ventures",
+            "source_id": "twilio_contact"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "twilio_current_strategy",
+            "source_url": "https://www.twilio.com/en-us/ventures",
+            "source_title": "Ventures | Twilio",
+            "source_content_hash": "1757c509db92d1c21fbe1cc501ea9cc9ae4a33a0e3ca95391a684a7c679e0442",
+            "quote": "Twilio Ventures invests in companies building tomorrow’s solutions for developers and the customer engagement ecosystem.",
+            "quote_hash": "916068b1a811a31e5d07aa00cfb56704b355d2bcd1e76ed5b95b8f3f99e3e352"
+          },
+          {
+            "source_id": "twilio_current_focus",
+            "source_url": "https://www.twilio.com/en-us/ventures",
+            "source_title": "Ventures | Twilio",
+            "source_content_hash": "1757c509db92d1c21fbe1cc501ea9cc9ae4a33a0e3ca95391a684a7c679e0442",
+            "quote": "Our sweet-spot is supporting innovative and emerging platforms that are focused on the future of AI, developer tools and customer engagement solutions.",
+            "quote_hash": "3026415e154df7317c803649c005f06b0e8df57d88f0aa4755589b5f472e9cc0"
+          },
+          {
+            "source_id": "twilio_current_criteria",
+            "source_url": "https://www.twilio.com/en-us/ventures",
+            "source_title": "Ventures | Twilio",
+            "source_content_hash": "1757c509db92d1c21fbe1cc501ea9cc9ae4a33a0e3ca95391a684a7c679e0442",
+            "quote": "We typically look to participate in Series A and B funding rounds, though we do consider seed or later stage investments on an ad hoc basis.",
+            "quote_hash": "5bc1dcb3e77955424ffdb5ac762a3d165b7bc36887014a0aa55d6e18b8c21e95"
+          },
+          {
+            "source_id": "twilio_current_role",
+            "source_url": "https://www.twilio.com/en-us/ventures",
+            "source_title": "Ventures | Twilio",
+            "source_content_hash": "1757c509db92d1c21fbe1cc501ea9cc9ae4a33a0e3ca95391a684a7c679e0442",
+            "quote": "At this stage, Twilio Ventures is focused on participating in funding rounds led by leading financial investors.",
+            "quote_hash": "b612a76e576d9a42a49e6edc09d30ce0ee31f8e889f09b2cabc5aeab759a24aa"
+          },
+          {
+            "source_id": "twilio_current_check",
+            "source_url": "https://www.twilio.com/en-us/ventures",
+            "source_title": "Ventures | Twilio",
+            "source_content_hash": "1757c509db92d1c21fbe1cc501ea9cc9ae4a33a0e3ca95391a684a7c679e0442",
+            "quote": "Typically we invest between $1M and $5M.",
+            "quote_hash": "7d4c8d863100c1c5209295fb1d6d83ebaec52522597708cc49f4bc186ce6f1f6"
+          },
+          {
+            "source_id": "twilio_current_commitment",
+            "source_url": "https://www.twilio.com/en-us/ventures",
+            "source_title": "Ventures | Twilio",
+            "source_content_hash": "1757c509db92d1c21fbe1cc501ea9cc9ae4a33a0e3ca95391a684a7c679e0442",
+            "quote": "We are currently investing from a $50M commitment from Twilio dedicated to Twilio Ventures.",
+            "quote_hash": "220b9bb36bfd1999e016aada530deec4dd4f242a9a97b4c2daa48f3af8895edc"
+          },
+          {
+            "source_id": "twilio_current_support",
+            "source_url": "https://www.twilio.com/en-us/ventures",
+            "source_title": "Ventures | Twilio",
+            "source_content_hash": "1757c509db92d1c21fbe1cc501ea9cc9ae4a33a0e3ca95391a684a7c679e0442",
+            "quote": "Ongoing support and mentorship, access to our developer ecosystem, potential product or commercial partnerships, and exposure to Twilio’s partners and customers.",
+            "quote_hash": "049a26e6527d61e2ba426e7f8d8a4a5d32cd55c5d9ec6944986516aad5d10fe4"
+          },
+          {
+            "source_id": "twilio_current_terms",
+            "source_url": "https://www.twilio.com/en-us/ventures",
+            "source_title": "Ventures | Twilio",
+            "source_content_hash": "1757c509db92d1c21fbe1cc501ea9cc9ae4a33a0e3ca95391a684a7c679e0442",
+            "quote": "We typically will not request a Board seat nor a Board Observer seat.",
+            "quote_hash": "2409b7e56a6d1255ed4ebfbecb034ade6cb2b114c8e3a37fe97e2d5375ad24d1"
+          },
+          {
+            "source_id": "twilio_contact",
+            "source_url": "https://www.twilio.com/en-us/ventures",
+            "source_title": "Ventures | Twilio",
+            "source_content_hash": "1757c509db92d1c21fbe1cc501ea9cc9ae4a33a0e3ca95391a684a7c679e0442",
+            "quote": "Contact Twilio Ventures! (ventures@twilio.com).",
+            "quote_hash": "b09442bab1001c33f4f0e8e6fe7266889061001a2585da7b07e439ed370aa655"
+          },
+          {
+            "source_id": "twilio_launch",
+            "source_url": "https://www.twilio.com/en-us/press/releases/twilio-launches-twilio-ventures-a-50-million-fund-to-unlock-the-imagination-of-builders-fueling-the-future-of-customer-engagement",
+            "source_title": "Twilio Launches Twilio Ventures, a $50 Million Fund (Dec 8, 2021)",
+            "source_content_hash": "1723475b6cf5f04cda11948474ed6fd5ea1f6e39c52785874337e522a298cf7c",
+            "quote": "Twilio announced Twilio Ventures and its new $50 million fund on December 8, 2021.",
+            "quote_hash": "57a931f3614f644d395fb432d837b5589d095ccb2096a6fc113357001889a4fa"
+          },
+          {
+            "source_id": "twilio_launch_approach",
+            "source_url": "https://www.twilio.com/en-us/press/releases/twilio-launches-twilio-ventures-a-50-million-fund-to-unlock-the-imagination-of-builders-fueling-the-future-of-customer-engagement",
+            "source_title": "Twilio Launches Twilio Ventures, a $50 Million Fund (Dec 8, 2021)",
+            "source_content_hash": "1723475b6cf5f04cda11948474ed6fd5ea1f6e39c52785874337e522a298cf7c",
+            "quote": "Twilio Ventures will primarily invest in early-stage companies with opportunistic investments in late-stage companies at the intersection of customer engagement and developers.",
+            "quote_hash": "1f0aa4126ae6be4e9bd6b135b3f06e7276d9f139a45e76eeb1a652acc78410b8"
+          },
+          {
+            "source_id": "twilio_launch_portfolio",
+            "source_url": "https://www.twilio.com/en-us/press/releases/twilio-launches-twilio-ventures-a-50-million-fund-to-unlock-the-imagination-of-builders-fueling-the-future-of-customer-engagement",
+            "source_title": "Twilio Launches Twilio Ventures, a $50 Million Fund (Dec 8, 2021)",
+            "source_content_hash": "1723475b6cf5f04cda11948474ed6fd5ea1f6e39c52785874337e522a298cf7c",
+            "quote": "Recent investments included Algolia, Mux, Hyro, Calixa, Well Health Inc. and Terazo; other previous investments included Community, Courier and Krisp.",
+            "quote_hash": "00c4005cf5c56ad62d64d9f551d53a20b232fdb33963e04af382425978bc5c25"
+          },
           {
             "source_id": "FISRC-7814afd7c39e886d",
             "source_url": "https://techcrunch.com/2026/07/15/rime-picks-up-24m-series-a-to-help-enterprises-field-customer-calls",
@@ -190992,7 +191173,11 @@
             "quote_hash": "723438dd8ba285c4ad5d4760fa84b935056b86105e0560a3d247df35c2737655"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-28",
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched",
+        "coverage_note": "Twilio官方项目页和公司新闻稿确认其为Twilio旗下企业投资项目。官网当前称其正使用Twilio专项承诺的5000万美元，属于承诺规模而非未投资余额。A/B轮偏好、单笔金额和不要求董事席位均保留为官网当前惯例描述；2021年组合案例为当时公告列举的选例。数据库另有Rime 2026年融资参投记录，来源为既有TechCrunch证据，并不构成完整组合。"
       }
     },
     {
@@ -298268,21 +298453,489 @@
         }
       ],
       "public_profile": {
-        "profile_type": "organization",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Thomson Reuters Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2025-04-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "summary": "Thomson Reuters Ventures是获得Thomson Reuters全面支持的企业风险投资基金，聚焦专业工作相关的企业科技。Thomson Reuters于2025年宣布第二支1.5亿美元基金，首支1亿美元基金于2021年启动；重点覆盖法律科技、税务与会计、金融科技、风险与合规、新闻媒体等领域，以A轮为主并可灵活参与更早或更晚轮次。",
+        "facts": [
+          {
+            "field": "parent_company",
+            "label": "所属公司",
+            "value": "Thomson Reuters；官方称基金由母公司提供完整支持",
+            "source_id": "tr_about_identity"
+          },
+          {
+            "field": "fund_history",
+            "label": "基金规模与历史",
+            "value": [
+              "第一支基金：1亿美元，2021年推出",
+              "第二支基金：1.5亿美元，2025年宣布"
+            ],
+            "source_id": "tr_fund2"
+          },
+          {
+            "field": "investment_sectors",
+            "label": "重点领域",
+            "value": [
+              "法律科技",
+              "税务与会计科技",
+              "欺诈、风险与合规",
+              "新闻与媒体",
+              "金融科技",
+              "保险科技"
+            ],
+            "source_id": "tr_thesis_sectors"
+          },
+          {
+            "field": "investment_stages",
+            "label": "投资阶段",
+            "value": "以A轮为重点，可视机会参与更早期或更后期项目",
+            "source_id": "tr_fund2_stage"
+          },
+          {
+            "field": "investment_approach",
+            "label": "投资方式",
+            "value": "兼顾财务纪律与对母公司战略的相关性；支持专业工作场景中的企业科技",
+            "source_id": "tr_thesis_stage"
+          },
+          {
+            "field": "portfolio_support",
+            "label": "组合企业支持",
+            "value": "连接客户与市场、专业知识支持、产品与数据资源接入、概念验证和潜在商业合作",
+            "source_id": "tr_about_support"
+          },
+          {
+            "field": "fund2_focus",
+            "label": "第二支基金主题",
+            "value": "围绕法律、税务与会计、金融科技、风险欺诈与合规、新闻与媒体市场的早期科技公司",
+            "source_id": "tr_fund2_focus"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2021",
+            "description": "Thomson Reuters宣布推出首支1亿美元的企业风险投资基金，并以Thomson Reuters Ventures名义运营。",
+            "source_id": "tr_fund2"
+          },
+          {
+            "date": "2025-02-10",
+            "description": "Thomson Reuters宣布第二支1.5亿美元企业风险投资基金，继续以Thomson Reuters Ventures名义运营。",
+            "source_id": "tr_fund2"
+          }
+        ],
         "track_record": [
           {
-            "description": "融资来源记录：Solve Intelligence · A轮 · 2025-04-09 · 本轮参投 · $12M。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "Thomson Reuters于2025年披露，第一支基金已完成23笔投资；组合公司Materia后来被Thomson Reuters收购，用于增强税务、审计和会计专业人士的AI能力。投资笔数与收购案例不是基金回报率披露。",
+            "source_id": "tr_fund1_track"
+          },
+          {
+            "description": "Thomson Reuters Ventures官方组合页列出Solve Intelligence；数据库另有其参与Solve Intelligence 2025年A轮的融资来源记录。",
+            "source_id": "tr_portfolio_solve"
+          },
+          {
+            "description": "Thomson Reuters Ventures and Y Combinator also participated in the round.",
             "source_id": "FISRC-37166b7fc62df887"
           }
         ],
-        "contacts": [],
+        "current_roles": [
+          {
+            "title": "Managing Director：Tamara Steffens",
+            "organization": "Thomson Reuters Ventures",
+            "source_id": "tr_tamara_role"
+          },
+          {
+            "title": "Partner：Joe Dormani",
+            "organization": "Thomson Reuters Ventures",
+            "source_id": "tr_joe_role"
+          },
+          {
+            "title": "Principal：Josef Najm",
+            "organization": "Thomson Reuters Ventures",
+            "source_id": "tr_josef_role"
+          },
+          {
+            "title": "Principal：Jack Benedict",
+            "organization": "Thomson Reuters Ventures",
+            "source_id": "tr_jack_role"
+          },
+          {
+            "title": "Investor：Alex Carvalho",
+            "organization": "Thomson Reuters Ventures",
+            "source_id": "tr_alex_role"
+          },
+          {
+            "title": "Investor：Karen Lopez",
+            "organization": "Thomson Reuters Ventures",
+            "source_id": "tr_karen_role"
+          }
+        ],
+        "career": [
+          {
+            "organization": "M12（Microsoft风险投资基金）",
+            "title": "负责北美与印度投资及风险投资合作",
+            "period": "曾任；具体日期未披露",
+            "description": "Tamara Steffens此前负责M12在北美和印度的投资及VC合作。",
+            "source_id": "tr_tamara_career"
+          },
+          {
+            "organization": "Microsoft / Office 365",
+            "title": "业务拓展；Outlook移动战略",
+            "period": "加入M12前；具体日期未披露",
+            "description": "Tamara Steffens负责Office 365业务拓展，并参与制定Outlook移动端战略。",
+            "source_id": "tr_tamara_prior"
+          },
+          {
+            "organization": "Acompli",
+            "title": "高级副总裁，业务拓展",
+            "period": "被Microsoft收购前；具体日期未披露",
+            "description": "Tamara Steffens曾任Acompli业务拓展高级副总裁，并参与谈判促成Microsoft收购。",
+            "source_id": "tr_tamara_prior"
+          },
+          {
+            "organization": "Thomson Reuters Legal Tech",
+            "title": "企业战略负责人",
+            "period": "曾任；具体日期未披露",
+            "description": "Joe Dormani曾负责Thomson Reuters Legal Tech业务的企业战略。",
+            "source_id": "tr_joe_career"
+          },
+          {
+            "organization": "Reuters",
+            "title": "商业团队",
+            "period": "超过5.5年；页面未注明起止年月",
+            "description": "Josef Najm曾在Reuters商业团队工作，之后加入Thomson Reuters Ventures。",
+            "source_id": "tr_josef_career"
+          },
+          {
+            "organization": "MediaMath；L’Oréal；Diageo；美国参议院及华盛顿特区咨询机构",
+            "title": "媒体、广告与公共事务相关职位",
+            "period": "曾任；各任期未披露",
+            "description": "Josef Najm官方团队简介列出上述经历，但未逐项说明职位和任期。",
+            "source_id": "tr_josef_career"
+          },
+          {
+            "organization": "AlphaSights；JMI Equity；Citi Ventures",
+            "title": "投资与企业软件相关职务",
+            "period": "曾任；具体日期未披露",
+            "description": "Jack Benedict先后在AlphaSights、JMI Equity和Citi Ventures工作；官网称其在Citi Ventures期间18个月内领投六笔投资。",
+            "source_id": "tr_jack_career"
+          },
+          {
+            "organization": "Deutsche Bank",
+            "title": "投资银行家",
+            "period": "曾任；具体日期未披露",
+            "description": "Alex Carvalho从事投资银行工作后进入风险投资。",
+            "source_id": "tr_alex_career"
+          },
+          {
+            "organization": "管理咨询；Lazard；Angeles Investors",
+            "title": "顾问、企业战略副总裁及种子期创业者支持",
+            "period": "曾任；具体日期未披露",
+            "description": "Karen Lopez的官方简介列出管理咨询、Lazard企业战略副总裁和Angeles Investors种子期支持经历。",
+            "source_id": "tr_karen_career"
+          }
+        ],
+        "education": [
+          {
+            "institution": "Michigan State University",
+            "qualification": "金融学理学学士",
+            "source_id": "tr_tamara_education"
+          },
+          {
+            "institution": "Siena College",
+            "qualification": "政治学文学学士",
+            "source_id": "tr_joe_education"
+          },
+          {
+            "institution": "Fordham Gabelli School of Business",
+            "qualification": "金融与管理工商管理硕士",
+            "source_id": "tr_joe_education"
+          },
+          {
+            "institution": "The Catholic University of America",
+            "qualification": "政治学学位（官网未注明具体学位层级）",
+            "source_id": "tr_josef_education"
+          },
+          {
+            "institution": "Syracuse University, Martin J. Whitman School of Management",
+            "qualification": "金融学学士，辅修心理学",
+            "source_id": "tr_jack_education"
+          },
+          {
+            "institution": "Columbia University",
+            "qualification": "工业工程理学学士，官网简介注明机器学习方向",
+            "source_id": "tr_alex_education"
+          },
+          {
+            "institution": "Claremont McKenna College",
+            "qualification": "经济学文学学士",
+            "source_id": "tr_alex_education"
+          },
+          {
+            "institution": "Columbia University",
+            "qualification": "经济学文学学士",
+            "source_id": "tr_karen_education"
+          },
+          {
+            "institution": "The Wharton School",
+            "qualification": "工商管理硕士",
+            "source_id": "tr_karen_education"
+          }
+        ],
+        "experience_summary": "管理团队具备企业战略、产品与业务拓展、早期投资、投资银行及专业软件经验。Managing Director Tamara Steffens曾负责M12区域投资与Microsoft产品拓展；团队其余具名成员的公开履历覆盖Legal Tech、Reuters商业团队、Citi Ventures、Deutsche Bank及Lazard等。官网团队页含有部分占位文字，本档案只摘录具有明确姓名、职务和可核验正文的人员信息。",
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "Thomson Reuters Ventures",
+            "url": "https://www.trventures.com/about",
+            "source_id": "tr_about_identity"
+          },
+          {
+            "kind": "contact_form",
+            "label": "官网联系表（未单独标明项目申报用途）",
+            "value": "Thomson Reuters Ventures Contact Us",
+            "url": "https://www.trventures.com/contact-us",
+            "source_id": "tr_contact"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "tr_about_identity",
+            "source_url": "https://www.trventures.com/about",
+            "source_title": "About Thomson Reuters Ventures",
+            "source_content_hash": "c7036e12a6ccd0277a9ab95f9825764d1cffdaf2c485a4e7287d57945d7a7aa1",
+            "quote": "Thomson Reuters Ventures is an enterprise technology venture capital fund with the full backing and resources of Thomson Reuters.",
+            "quote_hash": "6965f5c9c97781558104c958fc761f97b0e13ee7484827ac92c8bc2ed301e760"
+          },
+          {
+            "source_id": "tr_about_support",
+            "source_url": "https://www.trventures.com/about",
+            "source_title": "About Thomson Reuters Ventures",
+            "source_content_hash": "c7036e12a6ccd0277a9ab95f9825764d1cffdaf2c485a4e7287d57945d7a7aa1",
+            "quote": "We take an active approach to investing, working alongside founders through connections, proof-of-concepts, and partnership opportunities within the firm.",
+            "quote_hash": "12f006ca844722fef51ab62fdcdd09873ebb2705f7d3b90cb14bc5eb4f2770e6"
+          },
+          {
+            "source_id": "tr_thesis_sectors",
+            "source_url": "https://www.trventures.com/thesis",
+            "source_title": "Our Investment Thesis | Thomson Reuters Ventures",
+            "source_content_hash": "243b146f8f41e205eebb961175faeabde05d74213b234dbd1a6488a8c7769400",
+            "quote": "Sectors of interest: tax tech, legal tech, fraud, risk and compliance tech, news and media, fintech, and insurtech.",
+            "quote_hash": "31e0d47471136977f5bb51500260547ef7e86fd9014dd203c9de01467a2fca53"
+          },
+          {
+            "source_id": "tr_thesis_stage",
+            "source_url": "https://www.trventures.com/thesis",
+            "source_title": "Our Investment Thesis | Thomson Reuters Ventures",
+            "source_content_hash": "243b146f8f41e205eebb961175faeabde05d74213b234dbd1a6488a8c7769400",
+            "quote": "Thomson Reuters Ventures is a financially driven, Series-A-focused fund with an emphasis on strategic alignment with its parent company, Thomson Reuters.",
+            "quote_hash": "865dda7cd4600b988c72aa2681887ac02c7cfd6b6cafeda5c490e6deaa3bfd94"
+          },
+          {
+            "source_id": "tr_thesis_process",
+            "source_url": "https://www.trventures.com/thesis",
+            "source_title": "Our Investment Thesis | Thomson Reuters Ventures",
+            "source_content_hash": "243b146f8f41e205eebb961175faeabde05d74213b234dbd1a6488a8c7769400",
+            "quote": "We are long-term investors who support the creation of disruptive and durable companies and work alongside founders as a growth partner.",
+            "quote_hash": "6b84b349d7007a8fc8a079cae1a291f3da88b6cf47274495e3c7c118f3bcc3e1"
+          },
+          {
+            "source_id": "tr_fund2",
+            "source_url": "https://www.thomsonreuters.com/en/press-releases/2025/february/thomson-reuters-announces-new-150-million-dollar-corporate-venture-capital-fund",
+            "source_title": "Thomson Reuters Announces New $150M Corporate Venture Capital Fund (Feb 10, 2025)",
+            "source_content_hash": "91be5b394a42ee8be1f7b366ab8ba5c773f1c644bb97a1ffcaefbd886d4d63cf",
+            "quote": "Thomson Reuters announced its second Corporate Venture Capital Fund, valued at $150 million, following its first $100 million fund launched in 2021.",
+            "quote_hash": "0c3865d3af3d478123e61c3e2386a1639e962993acad18a89dfff344a6ab4a32"
+          },
+          {
+            "source_id": "tr_fund2_stage",
+            "source_url": "https://www.thomsonreuters.com/en/press-releases/2025/february/thomson-reuters-announces-new-150-million-dollar-corporate-venture-capital-fund",
+            "source_title": "Thomson Reuters Announces New $150M Corporate Venture Capital Fund (Feb 10, 2025)",
+            "source_content_hash": "91be5b394a42ee8be1f7b366ab8ba5c773f1c644bb97a1ffcaefbd886d4d63cf",
+            "quote": "Fund 2 will target Series A investments, with flexibility to explore earlier- and later-stage opportunities.",
+            "quote_hash": "ae4d70443d110d2123033b3400e5c65736f12a18cfcb60e7468d3fb3c1be861a"
+          },
+          {
+            "source_id": "tr_fund1_track",
+            "source_url": "https://www.thomsonreuters.com/en/press-releases/2025/february/thomson-reuters-announces-new-150-million-dollar-corporate-venture-capital-fund",
+            "source_title": "Thomson Reuters Announces New $150M Corporate Venture Capital Fund (Feb 10, 2025)",
+            "source_content_hash": "91be5b394a42ee8be1f7b366ab8ba5c773f1c644bb97a1ffcaefbd886d4d63cf",
+            "quote": "Thomson Reuters Ventures has made 23 investments through its first fund. Materia, an agentic AI company, was later acquired by Thomson Reuters.",
+            "quote_hash": "50d4e7dc2a16a4c7a42afcd113f5faf0305d63cb343431a5d3fff10bd1d0168a"
+          },
+          {
+            "source_id": "tr_fund2_focus",
+            "source_url": "https://www.thomsonreuters.com/en/press-releases/2025/february/thomson-reuters-announces-new-150-million-dollar-corporate-venture-capital-fund",
+            "source_title": "Thomson Reuters Announces New $150M Corporate Venture Capital Fund (Feb 10, 2025)",
+            "source_content_hash": "91be5b394a42ee8be1f7b366ab8ba5c773f1c644bb97a1ffcaefbd886d4d63cf",
+            "quote": "Fund 2 focuses on early-stage technology companies across Legal Technology, Tax & Accounting, Fintech, Risk Fraud & Compliance, and News & Media.",
+            "quote_hash": "985987b01766afeaaa8a7961843e244951da91ed780375591bba82a8d8deed12"
+          },
+          {
+            "source_id": "tr_portfolio_solve",
+            "source_url": "https://www.trventures.com/portfolio",
+            "source_title": "Our Portfolio | Thomson Reuters Ventures",
+            "source_content_hash": "59a7895136644b742127f761f1cb2c8040547097ab543386870275a7acb76a6c",
+            "quote": "Solve Intelligence appears in the Thomson Reuters Ventures portfolio, with its official portfolio page describing its AI tools for patent drafting and prosecution.",
+            "quote_hash": "c85c46d42653522d68242c695a4f0c6ebd0d420ebbf23b4111fb8e297343ef66"
+          },
+          {
+            "source_id": "tr_contact",
+            "source_url": "https://www.trventures.com/contact-us",
+            "source_title": "Contact Us | Thomson Reuters Ventures",
+            "source_content_hash": "2a91a8b8f82d1777d210d8d0c79ac003a0af055a2c24db402974987a17d2865d",
+            "quote": "The Thomson Reuters Ventures contact form requests a name, email, company, website, subject, and message.",
+            "quote_hash": "c36c2589b68d646fa06d8af9edad5b14327d54e94ba9719b04774809be0f35ed"
+          },
+          {
+            "source_id": "tr_tamara_role",
+            "source_url": "https://www.trventures.com/teams",
+            "source_title": "Meet the Team | Thomson Reuters Ventures",
+            "source_content_hash": "7a149aa898e1224ac00aea7c836c5e2175b7cc7aca839ce4643286923f46801d",
+            "quote": "Tamara Steffens — Managing Director.",
+            "quote_hash": "165a061e763ad0f90c2dca7819a163941bc40514241252b1ed08649d7e1b10fd"
+          },
+          {
+            "source_id": "tr_tamara_career",
+            "source_url": "https://www.trventures.com/teams",
+            "source_title": "Meet the Team | Thomson Reuters Ventures",
+            "source_content_hash": "7a149aa898e1224ac00aea7c836c5e2175b7cc7aca839ce4643286923f46801d",
+            "quote": "Tamara leads the global investment team at Thomson Reuters Ventures; she previously led investing and venture capital partnerships for M12, Microsoft’s venture fund.",
+            "quote_hash": "25ae80417c447e8967ba8becd7c2126bf82297ffb88d481de0c787c7daa157e7"
+          },
+          {
+            "source_id": "tr_tamara_prior",
+            "source_url": "https://www.trventures.com/teams",
+            "source_title": "Meet the Team | Thomson Reuters Ventures",
+            "source_content_hash": "7a149aa898e1224ac00aea7c836c5e2175b7cc7aca839ce4643286923f46801d",
+            "quote": "Before joining M12, Tamara led business development for Office 365 and helped build Microsoft Outlook’s mobile strategy; she joined Microsoft through its acquisition of Acompli, where she was Senior Vice President of Business Development.",
+            "quote_hash": "8e315816d271f22a2bb1aa5511a1244228cc4945dd5f90c003c359e537b000ae"
+          },
+          {
+            "source_id": "tr_tamara_education",
+            "source_url": "https://www.trventures.com/teams",
+            "source_title": "Meet the Team | Thomson Reuters Ventures",
+            "source_content_hash": "7a149aa898e1224ac00aea7c836c5e2175b7cc7aca839ce4643286923f46801d",
+            "quote": "Tamara has a B.S. in Finance from Michigan State University.",
+            "quote_hash": "1ef27ecc90f55d4994ff302e443790529477dc94c00c7f04c0479ae13b80867b"
+          },
+          {
+            "source_id": "tr_joe_role",
+            "source_url": "https://www.trventures.com/teams",
+            "source_title": "Meet the Team | Thomson Reuters Ventures",
+            "source_content_hash": "7a149aa898e1224ac00aea7c836c5e2175b7cc7aca839ce4643286923f46801d",
+            "quote": "Joe Dormani — Partner.",
+            "quote_hash": "309bb0a874d7073e04d44ebdf3e57cd1e787681549204958360536ca37989acb"
+          },
+          {
+            "source_id": "tr_joe_career",
+            "source_url": "https://www.trventures.com/teams",
+            "source_title": "Meet the Team | Thomson Reuters Ventures",
+            "source_content_hash": "7a149aa898e1224ac00aea7c836c5e2175b7cc7aca839ce4643286923f46801d",
+            "quote": "Joe has held strategy, finance, and product roles over a 15-year career and previously led corporate strategy for Thomson Reuters Legal Tech.",
+            "quote_hash": "e4cc8b95977dd8848203dd82d01cadb102ebac14c221df12aecc59584f2c1674"
+          },
+          {
+            "source_id": "tr_joe_education",
+            "source_url": "https://www.trventures.com/teams",
+            "source_title": "Meet the Team | Thomson Reuters Ventures",
+            "source_content_hash": "7a149aa898e1224ac00aea7c836c5e2175b7cc7aca839ce4643286923f46801d",
+            "quote": "Joe has a B.A. in Political Science from Siena College and an MBA in Finance and Management from Fordham Gabelli School of Business.",
+            "quote_hash": "67d4fe2f0167ac229c4ca32b673b4319fb6cdfb8d877a9d9bb1d32ea223a5b87"
+          },
+          {
+            "source_id": "tr_josef_role",
+            "source_url": "https://www.trventures.com/teams",
+            "source_title": "Meet the Team | Thomson Reuters Ventures",
+            "source_content_hash": "7a149aa898e1224ac00aea7c836c5e2175b7cc7aca839ce4643286923f46801d",
+            "quote": "Josef Najm — Principal.",
+            "quote_hash": "55e1a0de10181a012156cd5e766f070639c8528d5109fa401e5c77c4a44b587d"
+          },
+          {
+            "source_id": "tr_josef_career",
+            "source_url": "https://www.trventures.com/teams",
+            "source_title": "Meet the Team | Thomson Reuters Ventures",
+            "source_content_hash": "7a149aa898e1224ac00aea7c836c5e2175b7cc7aca839ce4643286923f46801d",
+            "quote": "Josef worked at Reuters for over 5.5 years and previously held positions at MediaMath, L’Oréal, Diageo, the U.S. Senate, and D.C. consulting firms.",
+            "quote_hash": "bb75c28a8a64408dd3bbfb6cf47eaa5babe2facbe394da7f22989d25c209567b"
+          },
+          {
+            "source_id": "tr_josef_education",
+            "source_url": "https://www.trventures.com/teams",
+            "source_title": "Meet the Team | Thomson Reuters Ventures",
+            "source_content_hash": "7a149aa898e1224ac00aea7c836c5e2175b7cc7aca839ce4643286923f46801d",
+            "quote": "Josef holds a degree in Political Science from The Catholic University of America.",
+            "quote_hash": "68d94063dfdfb2c4b972ac730eb68e1aa4b47d1c7c5bcc4c5dd2a697d58d2d59"
+          },
+          {
+            "source_id": "tr_jack_role",
+            "source_url": "https://www.trventures.com/teams",
+            "source_title": "Meet the Team | Thomson Reuters Ventures",
+            "source_content_hash": "7a149aa898e1224ac00aea7c836c5e2175b7cc7aca839ce4643286923f46801d",
+            "quote": "Jack Benedict — Principal.",
+            "quote_hash": "508d8387fd0092ecf285b080789f1265b12ea7d4cb63f6e3273ebd3140a40dc3"
+          },
+          {
+            "source_id": "tr_jack_career",
+            "source_url": "https://www.trventures.com/teams",
+            "source_title": "Meet the Team | Thomson Reuters Ventures",
+            "source_content_hash": "7a149aa898e1224ac00aea7c836c5e2175b7cc7aca839ce4643286923f46801d",
+            "quote": "Jack began at AlphaSights, moved to JMI Equity, and most recently was a venture capital investor at Citi Ventures, where he led six investments in under 18 months.",
+            "quote_hash": "fbbc40f55628ae8c41ed43047ebcd0021a8a65baff93347bc052a9bf6f844177"
+          },
+          {
+            "source_id": "tr_jack_education",
+            "source_url": "https://www.trventures.com/teams",
+            "source_title": "Meet the Team | Thomson Reuters Ventures",
+            "source_content_hash": "7a149aa898e1224ac00aea7c836c5e2175b7cc7aca839ce4643286923f46801d",
+            "quote": "Jack received a bachelor’s degree in finance with a minor in psychology from Syracuse University.",
+            "quote_hash": "095d79a24288c772e32b025c6bc7ad1eeef66d6121c6d97374684ad24da7b23e"
+          },
+          {
+            "source_id": "tr_alex_role",
+            "source_url": "https://www.trventures.com/teams",
+            "source_title": "Meet the Team | Thomson Reuters Ventures",
+            "source_content_hash": "7a149aa898e1224ac00aea7c836c5e2175b7cc7aca839ce4643286923f46801d",
+            "quote": "Alex Carvalho — Investor.",
+            "quote_hash": "83e8a90b01738560ad39771fd9522f3f4d75bfd0f8a685d6db41002b6814f122"
+          },
+          {
+            "source_id": "tr_alex_career",
+            "source_url": "https://www.trventures.com/teams",
+            "source_title": "Meet the Team | Thomson Reuters Ventures",
+            "source_content_hash": "7a149aa898e1224ac00aea7c836c5e2175b7cc7aca839ce4643286923f46801d",
+            "quote": "Alex has executed and led 10+ investments across AI, Enterprise SaaS and Fintech; before investing, he was an investment banker at Deutsche Bank.",
+            "quote_hash": "748787ae313c186f8995769601766ff2de52ed5711821d7f290435d5e97897fd"
+          },
+          {
+            "source_id": "tr_alex_education",
+            "source_url": "https://www.trventures.com/teams",
+            "source_title": "Meet the Team | Thomson Reuters Ventures",
+            "source_content_hash": "7a149aa898e1224ac00aea7c836c5e2175b7cc7aca839ce4643286923f46801d",
+            "quote": "Alex holds a B.S. in Industrial Engineering from Columbia University and a B.A. in Economics from Claremont McKenna College.",
+            "quote_hash": "4cdd50e8099538e74bfcb54630960f59afb9cbd6984f985812badca3276d279d"
+          },
+          {
+            "source_id": "tr_karen_role",
+            "source_url": "https://www.trventures.com/teams",
+            "source_title": "Meet the Team | Thomson Reuters Ventures",
+            "source_content_hash": "7a149aa898e1224ac00aea7c836c5e2175b7cc7aca839ce4643286923f46801d",
+            "quote": "Karen Lopez — Investor.",
+            "quote_hash": "f35dfff3eb91f787e555b839287b906cd55809c2aab109aa9b8411ba748ed3fb"
+          },
+          {
+            "source_id": "tr_karen_career",
+            "source_url": "https://www.trventures.com/teams",
+            "source_title": "Meet the Team | Thomson Reuters Ventures",
+            "source_content_hash": "7a149aa898e1224ac00aea7c836c5e2175b7cc7aca839ce4643286923f46801d",
+            "quote": "Karen worked in management consulting, served as Vice President of Corporate Strategy at Lazard, and worked with seed-stage founders through Angeles Investors.",
+            "quote_hash": "1ce7f817638ac6a7f788fecbb56c460c8ff43634ce2b48f96f4e28c9bc27545b"
+          },
+          {
+            "source_id": "tr_karen_education",
+            "source_url": "https://www.trventures.com/teams",
+            "source_title": "Meet the Team | Thomson Reuters Ventures",
+            "source_content_hash": "7a149aa898e1224ac00aea7c836c5e2175b7cc7aca839ce4643286923f46801d",
+            "quote": "Karen received a B.A. in Economics from Columbia University and an MBA from The Wharton School.",
+            "quote_hash": "6b334db9498c56d79817fd9884f82bb5fbdcfc383576ca9ea1a88a6418df4569"
+          },
           {
             "source_id": "FISRC-37166b7fc62df887",
             "source_url": "https://techcrunch.com/2025/04/09/microsoft-backs-solve-intelligence-in-12m-series-a-funding/",
@@ -298292,7 +298945,11 @@
             "quote_hash": "b5c29c7f4d0e14139982a071bf1b9070ca9ce1e81ac68a875a16648be52443c9"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-28",
+        "profile_type": "organization",
+        "identity_status": "verified",
+        "coverage_status": "researched",
+        "coverage_note": "机构身份和资金信息以Thomson Reuters官方新闻稿为准：第一支基金于2021年推出，第二支基金于2025年公布；不将两笔资金合并解释为未投资余额。管理层、职业经历和学历取自Thomson Reuters Ventures官方团队页；页面部分成员卡片仍显示占位文字，本档案只收录有明确角色和正文支持的人员。网站联系表未明确标为融资申报通道。官方组合页可确认Solve Intelligence在组合中；数据库保留既有TechCrunch轮次来源。"
       }
     },
     {
