@@ -140,19 +140,124 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "武汉江豚基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "武商集团备案公告和年报核实了武汉江豚股权投资合伙企业（有限合伙）的法律名称、备案及武商持股；武汉商务局和武商集团公开说明其投资方向。融资活动库中的简称“武汉江豚基金”未附法律全称，相关活动保留原始来源，但不单独作为该基金已确认组合或业绩。",
+      "summary": "武汉江豚股权投资合伙企业（有限合伙）是武商集团与专业投资机构于2024年设立并完成私募备案的股权投资基金，备案代码SANM27，基金规模3亿元，管理人为万银资产管理有限公司。武商集团公开材料显示，该平台关注商业零售上下游的科技、新业态和消费创新，并报告称已完成科技、新零售等项目的投资决策；公开资料未披露完整项目清单、基金实缴部署金额或回报率。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "法律主体名称",
+          "value": "武汉江豚股权投资合伙企业（有限合伙）",
+          "source_id": "wushang_jiangtun_fund_filing"
+        },
+        {
+          "field": "fund_size",
+          "label": "基金规模（设立披露）",
+          "value": "人民币3亿元",
+          "source_id": "wushang_jiangtun_fund_filing"
+        },
+        {
+          "field": "registration_code",
+          "label": "中国证券投资基金业协会备案编码",
+          "value": "SANM27",
+          "source_id": "wushang_jiangtun_fund_filing"
+        },
+        {
+          "field": "registered_at",
+          "label": "私募基金备案日期",
+          "value": "2024年10月14日",
+          "source_id": "wushang_jiangtun_fund_filing"
+        },
+        {
+          "field": "manager",
+          "label": "管理人",
+          "value": "万银资产管理有限公司",
+          "source_id": "wushang_jiangtun_fund_filing"
+        },
+        {
+          "field": "custodian",
+          "label": "托管人",
+          "value": "中信银行股份有限公司",
+          "source_id": "wushang_jiangtun_fund_filing"
+        },
+        {
+          "field": "wushang_subscribed_contribution",
+          "label": "武商集团认缴出资（非实缴口径）",
+          "value": "人民币28,950万元，占基金规模96.5%",
+          "source_id": "wushang_jiangtun_fund_filing"
+        },
+        {
+          "field": "investment_focus",
+          "label": "公开披露的投资方向",
+          "value": [
+            "商业零售上下游新技术",
+            "数字化与商业科技",
+            "智慧物流",
+            "新型消费",
+            "人工智能",
+            "数字经济",
+            "文化IP"
+          ],
+          "source_id": "wuhan_biz_bureau_jiangtun_fund_2026"
+        },
+        {
+          "field": "wushang_group_holding",
+          "label": "武商集团年报披露持有比例",
+          "value": "96.5%（2024年度报告口径）",
+          "source_id": "wushang_jiangtun_fund_annual_report_2024"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2024-10-14",
+          "description": "完成中国证券投资基金业协会私募投资基金备案，备案编码SANM27。",
+          "source_id": "wushang_jiangtun_fund_filing"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：西湖心辰 · B+轮 · 2026-08-03 · 本轮参投 · 数亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "截至2026年1月，武汉商务局披露该基金已完成科技、新零售等板块项目的投资决策；来源未列项目名称、金额或回报数据。",
+          "source_id": "wuhan_biz_bureau_jiangtun_fund_2026"
+        },
+        {
+          "description": "融资活动库将简称“武汉江豚基金”列为西湖心辰2026年B+轮参投方；该报道未列法律全称，故保留为来源记录，尚不作为本档案基金已核实的组合投资。",
           "source_id": "FISRC-312cccaedbeb2478"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "wushang_jiangtun_fund_filing",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2024-10-16/1221395168.PDF",
+          "source_title": "武商集团关于与专业投资机构共同设立投资基金完成私募投资基金备案的公告",
+          "source_content_hash": "c0eedbbff61e9d1885c82ab656cae63a5f61ab4c684727cb71432d92cb58aa25",
+          "quote": "武商集团股份有限公司与万银资产管理有限公司、深圳市赛富动势股权投资基金管理企业（有限合伙）共同投资设立武汉江豚股权投资合伙企业（有限合伙）。基金规模3亿元人民币，其中，公司作为有限合伙人，认缴出资28,950万元，认缴比例96.5%。备案编码：SANM27。管理人名称：万银资产管理有限公司。托管人名称：中信银行股份有限公司。备案日期：2024年10月14日。",
+          "quote_hash": "3e3bedeaef284371c15e24bd33d0fb6150603f0651b5f262a8821d845f8de5fd"
+        },
+        {
+          "source_id": "wushang_jiangtun_fund_annual_report_2024",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2025-03-29/1222948771.PDF",
+          "source_title": "武商集团股份有限公司2024年年度报告全文",
+          "source_content_hash": "e9938b16f9a76668df278074c25180aaae113821235a9d7cbc843a938012854f",
+          "quote": "公司持有武汉江豚股权投资合伙企业（有限合伙）股份比例96.50%。",
+          "quote_hash": "3dad9180d239a102698a20e9fdeac9dda54a259b6b57f7045a1f14b468aa6b86"
+        },
+        {
+          "source_id": "wuhan_biz_bureau_jiangtun_fund_2026",
+          "source_url": "https://sw.wuhan.gov.cn/xwdt/gzdt/202601/t20260113_2710221.shtml",
+          "source_title": "武商集团多维布局助力武汉国际消费中心城市建设",
+          "source_content_hash": "22f59bef2153cbf38f17b7c1398a43caab7c610e515811aee03035f280fd6520",
+          "quote": "2024年10月，武商集团与专业投资机构共同设立武商江豚基金，资金规模3个亿，聚焦“投早、投小，投科技、投未来”，围绕商业领域上下游的新技术、新产业、新业态、新模式，推动公司传统业务与数字化、商业科技、智慧物流、新型消费等融合发展，现已完成科技、新零售等板块项目的投资决策。",
+          "quote_hash": "7541ac78340fe6e5b78bad16f25a911475c777e4d7bf21066e73a12a6fd600a4"
+        },
+        {
+          "source_id": "wushang_jiangtun_fund_ir_2026",
+          "source_url": "https://irm.cninfo.com.cn/interview/interview/activityInfo?activityId=1417236884449980416",
+          "source_title": "武商集团2025年度业绩说明会互动记录",
+          "source_content_hash": "279b2103dfc68a5787d072290556f2f4b53629f16253eb92be3d954ba5f3ab8c",
+          "quote": "公司也通过市场化投资平台——武商江豚基金，围绕人工智能、数字经济、文化IP等前沿领域开展产业投资，积极探索新赛道机会，为中长期发展培育新动能。",
+          "quote_hash": "5952da9395a3a642b1d0e915620fb338eaaf324f95b97acb17e1bdaa2b875253"
+        },
         {
           "source_id": "FISRC-312cccaedbeb2478",
           "source_url": "https://news.pedaily.cn/202608/567151.shtml",
@@ -162,7 +267,7 @@
           "quote_hash": "17ba19f965e577d2806b3596f71f9cdb2027edf1a97eca6e3322fd2145858f65"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28"
     }
   }
 }

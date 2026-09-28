@@ -50605,19 +50605,124 @@
     "INV-80cd659a36249f": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "武汉江豚基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "武商集团备案公告和年报核实了武汉江豚股权投资合伙企业（有限合伙）的法律名称、备案及武商持股；武汉商务局和武商集团公开说明其投资方向。融资活动库中的简称“武汉江豚基金”未附法律全称，相关活动保留原始来源，但不单独作为该基金已确认组合或业绩。",
+      "summary": "武汉江豚股权投资合伙企业（有限合伙）是武商集团与专业投资机构于2024年设立并完成私募备案的股权投资基金，备案代码SANM27，基金规模3亿元，管理人为万银资产管理有限公司。武商集团公开材料显示，该平台关注商业零售上下游的科技、新业态和消费创新，并报告称已完成科技、新零售等项目的投资决策；公开资料未披露完整项目清单、基金实缴部署金额或回报率。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "法律主体名称",
+          "value": "武汉江豚股权投资合伙企业（有限合伙）",
+          "source_id": "wushang_jiangtun_fund_filing"
+        },
+        {
+          "field": "fund_size",
+          "label": "基金规模（设立披露）",
+          "value": "人民币3亿元",
+          "source_id": "wushang_jiangtun_fund_filing"
+        },
+        {
+          "field": "registration_code",
+          "label": "中国证券投资基金业协会备案编码",
+          "value": "SANM27",
+          "source_id": "wushang_jiangtun_fund_filing"
+        },
+        {
+          "field": "registered_at",
+          "label": "私募基金备案日期",
+          "value": "2024年10月14日",
+          "source_id": "wushang_jiangtun_fund_filing"
+        },
+        {
+          "field": "manager",
+          "label": "管理人",
+          "value": "万银资产管理有限公司",
+          "source_id": "wushang_jiangtun_fund_filing"
+        },
+        {
+          "field": "custodian",
+          "label": "托管人",
+          "value": "中信银行股份有限公司",
+          "source_id": "wushang_jiangtun_fund_filing"
+        },
+        {
+          "field": "wushang_subscribed_contribution",
+          "label": "武商集团认缴出资（非实缴口径）",
+          "value": "人民币28,950万元，占基金规模96.5%",
+          "source_id": "wushang_jiangtun_fund_filing"
+        },
+        {
+          "field": "investment_focus",
+          "label": "公开披露的投资方向",
+          "value": [
+            "商业零售上下游新技术",
+            "数字化与商业科技",
+            "智慧物流",
+            "新型消费",
+            "人工智能",
+            "数字经济",
+            "文化IP"
+          ],
+          "source_id": "wuhan_biz_bureau_jiangtun_fund_2026"
+        },
+        {
+          "field": "wushang_group_holding",
+          "label": "武商集团年报披露持有比例",
+          "value": "96.5%（2024年度报告口径）",
+          "source_id": "wushang_jiangtun_fund_annual_report_2024"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2024-10-14",
+          "description": "完成中国证券投资基金业协会私募投资基金备案，备案编码SANM27。",
+          "source_id": "wushang_jiangtun_fund_filing"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：西湖心辰 · B+轮 · 2026-08-03 · 本轮参投 · 数亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "截至2026年1月，武汉商务局披露该基金已完成科技、新零售等板块项目的投资决策；来源未列项目名称、金额或回报数据。",
+          "source_id": "wuhan_biz_bureau_jiangtun_fund_2026"
+        },
+        {
+          "description": "融资活动库将简称“武汉江豚基金”列为西湖心辰2026年B+轮参投方；该报道未列法律全称，故保留为来源记录，尚不作为本档案基金已核实的组合投资。",
           "source_id": "FISRC-312cccaedbeb2478"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "wushang_jiangtun_fund_filing",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2024-10-16/1221395168.PDF",
+          "source_title": "武商集团关于与专业投资机构共同设立投资基金完成私募投资基金备案的公告",
+          "source_content_hash": "c0eedbbff61e9d1885c82ab656cae63a5f61ab4c684727cb71432d92cb58aa25",
+          "quote": "武商集团股份有限公司与万银资产管理有限公司、深圳市赛富动势股权投资基金管理企业（有限合伙）共同投资设立武汉江豚股权投资合伙企业（有限合伙）。基金规模3亿元人民币，其中，公司作为有限合伙人，认缴出资28,950万元，认缴比例96.5%。备案编码：SANM27。管理人名称：万银资产管理有限公司。托管人名称：中信银行股份有限公司。备案日期：2024年10月14日。",
+          "quote_hash": "3e3bedeaef284371c15e24bd33d0fb6150603f0651b5f262a8821d845f8de5fd"
+        },
+        {
+          "source_id": "wushang_jiangtun_fund_annual_report_2024",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2025-03-29/1222948771.PDF",
+          "source_title": "武商集团股份有限公司2024年年度报告全文",
+          "source_content_hash": "e9938b16f9a76668df278074c25180aaae113821235a9d7cbc843a938012854f",
+          "quote": "公司持有武汉江豚股权投资合伙企业（有限合伙）股份比例96.50%。",
+          "quote_hash": "3dad9180d239a102698a20e9fdeac9dda54a259b6b57f7045a1f14b468aa6b86"
+        },
+        {
+          "source_id": "wuhan_biz_bureau_jiangtun_fund_2026",
+          "source_url": "https://sw.wuhan.gov.cn/xwdt/gzdt/202601/t20260113_2710221.shtml",
+          "source_title": "武商集团多维布局助力武汉国际消费中心城市建设",
+          "source_content_hash": "22f59bef2153cbf38f17b7c1398a43caab7c610e515811aee03035f280fd6520",
+          "quote": "2024年10月，武商集团与专业投资机构共同设立武商江豚基金，资金规模3个亿，聚焦“投早、投小，投科技、投未来”，围绕商业领域上下游的新技术、新产业、新业态、新模式，推动公司传统业务与数字化、商业科技、智慧物流、新型消费等融合发展，现已完成科技、新零售等板块项目的投资决策。",
+          "quote_hash": "7541ac78340fe6e5b78bad16f25a911475c777e4d7bf21066e73a12a6fd600a4"
+        },
+        {
+          "source_id": "wushang_jiangtun_fund_ir_2026",
+          "source_url": "https://irm.cninfo.com.cn/interview/interview/activityInfo?activityId=1417236884449980416",
+          "source_title": "武商集团2025年度业绩说明会互动记录",
+          "source_content_hash": "279b2103dfc68a5787d072290556f2f4b53629f16253eb92be3d954ba5f3ab8c",
+          "quote": "公司也通过市场化投资平台——武商江豚基金，围绕人工智能、数字经济、文化IP等前沿领域开展产业投资，积极探索新赛道机会，为中长期发展培育新动能。",
+          "quote_hash": "5952da9395a3a642b1d0e915620fb338eaaf324f95b97acb17e1bdaa2b875253"
+        },
         {
           "source_id": "FISRC-312cccaedbeb2478",
           "source_url": "https://news.pedaily.cn/202608/567151.shtml",
@@ -50627,7 +50732,7 @@
           "quote_hash": "17ba19f965e577d2806b3596f71f9cdb2027edf1a97eca6e3322fd2145858f65"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28"
     },
     "INV-1e07966e44e9cb": {
       "profile_type": "unverified",
@@ -58880,19 +58985,123 @@
     "INV-0ae8622188a12b": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "宁波甬元兴仑君金创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "基金法律名称、统一社会信用代码、设立日期、注册资本、合伙人结构和业务范围来自君实生物向香港联交所披露的正式文件。天鹜科技官网公开确认其A++轮投资人身份。君实生物相关增资事项已由股东会审议通过；目前引用材料仍不足以证明付款和工商变更均已完成。",
+      "summary": "宁波甬元兴仑君金创业投资合伙企业（有限合伙）成立于2025年12月，注册资本5亿元，经营范围为创业投资（限投资未上市企业）。君实生物披露其为公司控股子公司，合伙人包括宁波市甬元投资基金有限公司、宁波兴仑股权投资合伙企业和上海君实生物医药科技股份有限公司。天鹜科技官网将其列为2026年A++轮跟投方；基金自身的具体出资额未公开。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "法律主体名称",
+          "value": "宁波甬元兴仑君金创业投资合伙企业（有限合伙）",
+          "source_id": "junshi_2026_investor_disclosure"
+        },
+        {
+          "field": "registered_capital",
+          "label": "注册资本",
+          "value": "人民币5亿元",
+          "source_id": "junshi_2026_investor_disclosure"
+        },
+        {
+          "field": "established_date",
+          "label": "成立日期",
+          "value": "2025年12月23日",
+          "source_id": "junshi_2026_investor_disclosure"
+        },
+        {
+          "field": "unified_social_credit_code",
+          "label": "统一社会信用代码",
+          "value": "91330206MAK53B856N",
+          "source_id": "junshi_2026_investor_disclosure"
+        },
+        {
+          "field": "general_partner",
+          "label": "执行事务合伙人",
+          "value": "宁波君乾时金企业管理合伙企业（有限合伙）",
+          "source_id": "junshi_2026_investor_disclosure"
+        },
+        {
+          "field": "partners",
+          "label": "披露的合伙人及比例",
+          "value": [
+            "上海君实生物医药科技股份有限公司 49%",
+            "宁波市甬元投资基金有限公司 25%",
+            "宁波兴仑股权投资合伙企业（有限合伙）25%",
+            "宁波君乾时金企业管理合伙企业（有限合伙）1%"
+          ],
+          "source_id": "junshi_2026_investor_disclosure"
+        },
+        {
+          "field": "registered_address",
+          "label": "注册地址",
+          "value": "浙江省宁波市北仑区新碶街道大港二路69号一层114-69",
+          "source_id": "junshi_2026_investor_disclosure"
+        },
+        {
+          "field": "business_scope",
+          "label": "披露的经营范围",
+          "value": "创业投资（限投资未上市企业）",
+          "source_id": "junshi_2026_investor_disclosure"
+        },
+        {
+          "field": "portfolio_evidence",
+          "label": "公司官网披露的参投案例",
+          "value": "天鹜科技2026年A++轮；官网未披露本机构具体出资金额。",
+          "source_id": "matwings_2026_a2plus_funding"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2025-12-23",
+          "description": "君实生物正式披露的主体资料记载该合伙企业于此日成立。",
+          "source_id": "junshi_2026_investor_disclosure"
+        },
+        {
+          "date": "2026-06-05",
+          "description": "君实生物董事会审议通过由该基金拟以现金人民币1亿元认购宁波君研弘实生物医药科技有限公司新增注册资本的方案；公告载明当时仍需股东会审议。",
+          "source_id": "junshi_2026_investor_disclosure"
+        },
+        {
+          "date": "2026-06-26",
+          "description": "君实生物半年度报告摘要披露股东会审议通过上述事项；现有材料未确认资金支付或最终工商变更完成。",
+          "source_id": "junshi_2026_shareholder_approval"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：天鹜科技 · A++轮 · 2026-07-13 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资活动库记录其参与天鹜科技2026年7月A++轮融资；天鹜科技官网亦将该主体列为跟投方。轮次融资总额为公司层面披露，非该机构单独出资额。",
           "source_id": "FISRC-899fa4d253299e85"
+        },
+        {
+          "description": "君实生物披露该基金拟向君研弘实现金增资1亿元，拟取得增资后9.09%股权；2026年6月26日股东会通过议案，但引用资料未确认实缴或登记完成。",
+          "source_id": "junshi_2026_investor_disclosure"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "junshi_2026_investor_disclosure",
+          "source_url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0605/2026060502192_c.pdf",
+          "source_title": "上海君实生物医药科技股份有限公司海外监管公告及股东会文件",
+          "source_content_hash": "ca31accd1afee2b82c695e8018540a34d3efb2044efedf6011b3443233050c27",
+          "quote": "宁波甬元兴仑君金创业投资合伙企业（有限合伙），注册资本50,000万元，成立日期2025年12月23日，执行事务合伙人为宁波君乾时金企业管理合伙企业（有限合伙），统一社会信用代码91330206MAK53B856N，注册地址为浙江省宁波市北仑区新碶街道大港二路69号一层114-69，经营范围为创业投资（限投资未上市企业）。",
+          "quote_hash": "b7028ed150e0f01e11eebc378c8b6e5b52b93114fdc07c5c2dc3b0bdd17abd1f"
+        },
+        {
+          "source_id": "matwings_2026_a2plus_funding",
+          "source_url": "https://www.matwings.com/site/news-detail/%E5%A4%A9%E9%B9%9C%E7%A7%91%E6%8A%80%E5%AE%8C%E6%88%90%E6%95%B0%E4%BA%BF%E5%85%83A%2B%2B%E8%BD%AE%E8%9E%8D%E8%B5%84",
+          "source_title": "天鹜科技完成数亿元A++轮融资 | 企业新闻 | 资源中心 | 天鹜科技",
+          "source_content_hash": "866c89bd1de6b9c9440e1fea60a924567a1f1de0c7437002f96b432e91f217c1",
+          "quote": "7月13日，AI驱动的蛋白质研发平台企业上海天鹜科技有限公司宣布完成数亿元A++轮融资。本轮融资由上海国投先导、国投创新联合领投，聚杰微纤、宁波甬元兴仑君金创投、金景资本、孚腾资本、财鑫资本跟投。",
+          "quote_hash": "4a56cff550b26bc4cf2c670c4ccea57b0055ffbec685701d937fb44fa3a2616f"
+        },
+        {
+          "source_id": "junshi_2026_shareholder_approval",
+          "source_url": "https://paper.cnstock.com/html/2026-08/27/content_2260528.htm",
+          "source_title": "上海君实生物医药科技股份有限公司2026年半年度报告摘要",
+          "source_content_hash": "34f991f111614705e495ca4eb5ca3f1a4c18e32778c701f10240941a174cbd97",
+          "quote": "2026年6月26日，公司召开2025年年度股东会，审议通过了本事项。",
+          "quote_hash": "eb908942c57a5b5ce0af281c6fd98c76caa58563d93236e69d3273cddd0f7a60"
+        },
         {
           "source_id": "FISRC-899fa4d253299e85",
           "source_url": "https://finance.sina.com.cn/wm/2026-07-13/doc-inihtewm4131588.shtml",
@@ -58902,7 +59111,7 @@
           "quote_hash": "e901a790fb32e469e8ebc69fb789058dddb4b37870a75a7bd4d4ee892c2fa99a"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28"
     },
     "INV-570f36454a200e": {
       "profile_type": "unverified",
