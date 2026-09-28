@@ -145876,19 +145876,99 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Bond Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "coverage_note": "对应关系由 Cognition 官方融资公告中“Bond Capital”投资者名称和 BOND 官方合伙人简介交叉核实。官网品牌为 BOND；记录保留原融资报道中的 Bond Capital 写法，未推断其法律基金或具体出资实体。",
+        "summary": "Bond Capital 是融资披露使用的投资方名称；相关机构官网使用 BOND 品牌。官方合伙人简介称，BOND 于 2019 年由 Kleiner Perkins Digital Growth 投资团队发展而来，Mary Meeker 为普通合伙人，关注高增长科技公司。Mary Meeker 的官网简介称，她共同管理的三只 Digital Growth Funds 合计承诺资本为 28 亿美元。Cognition 2026 年官方 Series E 融资公告直接将 Bond Capital 列为投资方，支持本库名称与 BOND 品牌的对应关系；公告未披露具体由哪只基金投资。",
+        "facts": [
+          {
+            "field": "current_brand_and_origin",
+            "label": "当前品牌及机构沿革",
+            "value": "官网品牌为 BOND。合伙人 Noah Knauf 的官网简介称，其共同领导的 Kleiner Perkins Digital Growth Fund 团队于 2019 年发展为 BOND；本库“Bond Capital”名称与 BOND 品牌的对应由 Cognition 官方公告中的投资者列名交叉支持。",
+            "source_id": "bond_noah"
+          },
+          {
+            "field": "investment_focus",
+            "label": "投资方向",
+            "value": "官网将 Mary Meeker 的投资方向描述为高增长科技公司，并以 Digital Growth Funds 表述相关投资策略；未据此推断某个单独基金或行业专属投资要求。",
+            "source_id": "bond_mary"
+          },
+          {
+            "field": "committed_capital",
+            "label": "官网合伙人简介所列基金承诺资本",
+            "value": "Mary Meeker 个人官网简介称，她共同管理的三只 Digital Growth Funds 合计承诺资本为 $2.8bn。该数字采用官网简介口径，页面未标注统计基准日；不等同于 BOND 单只基金规模或已投资金额。",
+            "source_id": "bond_mary"
+          },
+          {
+            "field": "key_partner_mary_meeker",
+            "label": "核心合伙人：Mary Meeker",
+            "value": "官网列 Mary Meeker 为 General Partner。其履历包括 Kleiner Perkins 合伙人及 Morgan Stanley 董事总经理、全球科技研究负责人；官网还列出她所支持的 BOND 投资案例，如 Applied Intuition、Canva、Checkr、CLEAR、Hipcamp、Ironclad、Multiverse 与 Seso。案例为所列示的部分公司，不是完整组合。",
+            "source_id": "bond_mary"
+          },
+          {
+            "field": "portfolio_board_affiliations",
+            "label": "合伙人公开董事会任职",
+            "value": "BOND 官网的 Mary Meeker 简介列示其在 Block、Genies 和 OpenEvidence 的董事会任职；这些为个人任职信息，不代表 BOND 对这些公司的当前持股比例。",
+            "source_id": "bond_mary"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2019",
+            "description": "BOND 官网合伙人简介将其起源关联到 Kleiner Perkins Digital Growth Fund 团队于 2019 年转为 BOND。",
+            "source_id": "bond_noah"
+          }
+        ],
         "track_record": [
+          {
+            "description": "Cognition 团队于 2026-09-08 发布的 Series E 公告称公司融资超过 $2bn、估值为 $48bn，并将 Bond Capital 列入投资方。公告未披露本轮各机构的出资额或具体基金载体。",
+            "source_id": "bond_cognition_series_e"
+          },
           {
             "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮参投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
             "source_id": "FISRC-61aa8db010b34dfa"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "机构官网",
+            "value": "BOND",
+            "url": "https://www.bondcap.com/",
+            "source_id": "bond_mary"
+          },
+          {
+            "kind": "website",
+            "label": "Mary Meeker 合伙人简介",
+            "value": "BOND Partner profile: Mary Meeker",
+            "url": "https://www.bondcap.com/partners/mary-meeker/",
+            "source_id": "bond_mary"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "bond_mary",
+            "source_url": "https://www.bondcap.com/partners/mary-meeker/",
+            "source_title": "Mary Meeker | BOND",
+            "source_content_hash": "a9b9d1bbbf550c660905b531d501b9b0f49fe30d8e6eff4572e5526d11d9fafc",
+            "quote": "Mary Meeker is a general partner at BOND and focuses on investments in high-growth technology companies.",
+            "quote_hash": "3c04687c0f8ed1a9b0cd39e5df25f865874ee9ee4a62d0d37dbb76339d8c703d"
+          },
+          {
+            "source_id": "bond_noah",
+            "source_url": "https://www.bondcap.com/partners/noah-knauf/",
+            "source_title": "Noah Knauf | BOND",
+            "source_content_hash": "3f5d12a15b5e81cb6bac085105b040ea67ca3b80fbfe7de22bee311e25d80d6c",
+            "quote": "Noah co-led Kleiner Perkins’ Digital Growth Fund team, which became BOND in 2019.",
+            "quote_hash": "40aa76c296f188338a88cdb9f946b5f72f6f4676814135f8d99c037674ff3bbf"
+          },
+          {
+            "source_id": "bond_cognition_series_e",
+            "source_url": "https://cognition.com/blog/series-e",
+            "source_title": "Do it all with Devin: Announcing our Series E | Cognition",
+            "source_content_hash": "1c8dc24b6d4541bf3791d48ad667376604637048beff0eaabb2925c1f544a33d",
+            "quote": "Other investors in the round include Benchmark, Bessemer, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, Atreides, Valor",
+            "quote_hash": "9040ad5f745eede1cc1a1486458ae0afe3320a87ee4286fb4581ab9727a1f476"
+          },
           {
             "source_id": "FISRC-61aa8db010b34dfa",
             "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
@@ -145898,7 +145978,7 @@
             "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-28"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -179741,19 +179821,106 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Blume Founders Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "coverage_note": "Blume Ventures 官方资料将 BFF 描述为与核心投资计划区分的创办人网络投资项目，而非单独披露的法律基金。投资条款仅按 2023 年官网文章所述并标注时间；创办人联系方式以官方联系指引为准。",
+        "summary": "Blume Founders Fund（BFF）是印度早期投资机构 Blume Ventures 发起的创办人网络投资项目，官方称其与核心投资计划区分运作，重点支持与 Blume 有既有关系的创办人。2023 年官网文章称，Fund IV 拨出 2%–3% 资金用于 BFF，投资额为 5 万至 25 万美元，面向 Pre-Seed、Seed 和 Pre-Series A 项目；文中也称 BFF 不做后续轮投资。官网将该项目归于 Network Investment Programs，由 Sarita Raichura 负责。该页面是 2023 年披露，不能据此推断当前条款未变化。",
+        "facts": [
+          {
+            "field": "program_structure",
+            "label": "项目性质",
+            "value": "Blume Ventures 的创办人网络投资项目；官网明确表示其区别于 Blume 核心投资计划。应将本库的 BFF 记录理解为项目/投资计划身份，不据此推断其为独立法律基金。",
+            "source_id": "bff_program"
+          },
+          {
+            "field": "investment_terms_2023",
+            "label": "官网 2023 年披露的项目条款",
+            "value": "2023 年官网文章称，Blume Fund IV（该文披露规模为 $292m）拨出 2%–3% 给 BFF；单笔投资约 $50k–$250k，面向 Pre-Seed、Seed 与 Pre-Series A；文章称项目不提供后续轮投资。此为 2023 年披露，条款可能已变化。",
+            "source_id": "bff_program"
+          },
+          {
+            "field": "founder_relationship_criteria",
+            "label": "官网披露的创办人关系基础",
+            "value": "官网称 BFF 面向与 Blume 有较强联系的创办人，例如 Blume 校友、组合公司 CXO、接受过 Blume 创办人辅导者，或与机构长期建立联系者。",
+            "source_id": "bff_program"
+          },
+          {
+            "field": "program_management",
+            "label": "项目负责人",
+            "value": "Blume 官网将 Sarita Raichura 列为 Network Investment Programs Director，并称她负责 BFF。她曾任 Indian Angel Network 区域负责人、在 Intel Technologies 全球市场规模与预测团队工作，拥有 Thunderbird School of Global Management 国际管理硕士学位；官网还称她在印度创业生态有 8 年以上经验。以上为本人机构官网简介。",
+            "source_id": "blume_sarita"
+          },
+          {
+            "field": "founder_support",
+            "label": "BFF 投后支持",
+            "value": "官网称 BFF 组合公司可使用 Blume 创办人网络、内部资源手册、学习发展活动、法律/财务/税务及招聘合作伙伴，并获得 Blume 团队指导。",
+            "source_id": "bff_program"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2023-07",
+            "description": "Blume 官网发布 BFF 项目更新：披露 Fund III 时支持 30 家公司，并介绍 Fund IV 阶段的 BFF 资金比例与单笔投资区间。",
+            "source_id": "bff_program"
+          }
+        ],
         "track_record": [
+          {
+            "description": "Blume 2023 年官网文章称，BFF 在 Fund III 阶段支持了 30 家公司；这是机构自报的项目覆盖数量，不是已实现投资回报。",
+            "source_id": "bff_program"
+          },
           {
             "description": "融资来源记录：Aina · 种子轮 · 2026-07-16 · 本轮参投 · 550万美元。这是本库收录的披露案例，不代表完整投资组合。",
             "source_id": "FISRC-9e755507b523ddb2"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "Blume Ventures 官网与 BFF 项目资料",
+            "value": "Blume Ventures / Blume Founders Fund",
+            "url": "https://blume.vc/",
+            "source_id": "blume_contact"
+          },
+          {
+            "kind": "application",
+            "label": "创办人联系指引",
+            "value": "Blume 联系页建议创办人先阅读官网 FAQ，并通过页面所述的可信共同联系人等途径联系；页面特别提醒不要把融资 pitch 发到其他用途的邮箱。",
+            "url": "https://blume.vc/contact-us",
+            "source_id": "blume_contact"
+          },
+          {
+            "kind": "address",
+            "label": "Blume Venture Investment Manager LLP 注册办公室（非 BFF 独立法律地址）",
+            "value": "Unit No. 4, Jetha Compound, Opp. Nirmal Park, Byculla East, Mumbai - 400027, India",
+            "url": "https://blume.vc/contact-us",
+            "source_id": "blume_contact"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "bff_program",
+            "source_url": "https://blume.vc/commentaries/a-fillip-to-friendship-why-we-created-blume-founders-fund",
+            "source_title": "A Fillip To Friendship: Why We Created Blume Founders Fund | Blume",
+            "source_content_hash": "efd8340c95895a42d2e46b4b1ca1aedabe7cdbc9bb0db241b0aa82fee8a7b3fa",
+            "quote": "BFF aims to forge long-term relationships with exceptional founders",
+            "quote_hash": "0240d3e552697b93949384cf0901b0ac470ceadc31bfe825858f4a56af2ddf62"
+          },
+          {
+            "source_id": "blume_sarita",
+            "source_url": "https://blume.vc/team/sarita-raichura",
+            "source_title": "Sarita Raichura | Blume",
+            "source_content_hash": "12975bea245e9a9de793eefa4442c013c43837902f327c3760812850e15bc651",
+            "quote": "She manages the Blume Founders Fund (#BFF), preserving Blume’s pre-seed/seed fund DNA",
+            "quote_hash": "d7242b95e1ed713dece182d572bad42e860d01454c25bcde818394089d514e1a"
+          },
+          {
+            "source_id": "blume_contact",
+            "source_url": "https://blume.vc/contact-us",
+            "source_title": "Contact Us | Blume",
+            "source_content_hash": "6e1aa6e26ef1ff08568bfb305ec62c7a504578dce342ac3b6b9c9348cc4bf8b4",
+            "quote": "Do locate your requirement from the below contexts, and follow the contact instructions mentioned.",
+            "quote_hash": "1a22edcde092adc8b86f0a06a54b4842d8fc8f6cec80dcbda32a39e625d058a1"
+          },
           {
             "source_id": "FISRC-9e755507b523ddb2",
             "source_url": "https://inc42.com/buzz/aina-raises-5-5-mn-from-info-edge-ventures-360-one-asset-to-build-ai-native-interfaces/",
@@ -179763,7 +179930,7 @@
             "quote_hash": "1723e7191739c658bc0aaa08f60bda7e3a13e67588e1a44e623cfc25b67d7238"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-28"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -271442,19 +271609,140 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Blu Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2025-11-05；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "coverage_note": "依据 Blu Ventures 官网历史、基金结构、投资主题、团队简介与公开融资披露整理。Fund target 与组合指标按机构自报，未将目标规模写成已募集金额。",
+        "summary": "Blu Ventures（官网亦使用 Blu Venture Investors 名称）是美国早期网络运营者社群发展而来的风险投资机构，官网称其于 2010 年由一群企业运营者创立，后转为专门基金模式。其核心领域是网络安全与企业技术，投资范围从早期到成长阶段，主要面向美国公司。官网称机构管理多只网络安全基金，包括 2021 年推出的 2,500 万美元早期基金，以及目标规模 5,000 万美元的下一代基金策略；后者是目标而非已确认募资额。",
+        "facts": [
+          {
+            "field": "founded_and_history",
+            "label": "成立与机构演进",
+            "value": "官网称 Blu 于 2010 年由曾任企业运营者创立，起初是早期创业者社群/天使组织，后来发展为以专门基金管理外部投资者资本的风险投资机构。",
+            "source_id": "blu_about"
+          },
+          {
+            "field": "investment_thesis",
+            "label": "投资主题",
+            "value": "网络安全为核心，官网聚焦威胁检测、身份安全、基础设施防护及以 AI 应对新型威胁；历史专长也涵盖企业技术。",
+            "source_id": "blu_home"
+          },
+          {
+            "field": "investment_stage_and_geography",
+            "label": "阶段与地域",
+            "value": "官网称其支持从公司创立到规模化阶段的网络安全创新企业，总部位于华盛顿特区都会区，投资美国各地的创办团队。",
+            "source_id": "blu_home"
+          },
+          {
+            "field": "fund_structure",
+            "label": "基金结构（官网披露）",
+            "value": "官网介绍有多只垂直领域微型基金、2021 年推出的 $25m 早期网络安全基金，以及目标规模 $50m 的下一代基金策略。$50m 是目标值，官网该页未确认实际募集完成。",
+            "source_id": "blu_about"
+          },
+          {
+            "field": "team_bob_struble",
+            "label": "团队经历：Bob Struble",
+            "value": "Blu 官网将 Bob Struble 列为合伙人及 Cyber Fund 投资委员会成员。官网简介称他曾任 Directed 首席执行官，并于 1996–2015 年联合创立及领导 iBiquity Digital；后者将 HD Radio 技术商业化并被 DTS 收购。该履历和成果为个人官网简介自述。",
+            "source_id": "blu_bob_struble"
+          },
+          {
+            "field": "team_josh_miller",
+            "label": "团队经历：Josh Miller",
+            "value": "Blu 官网列其为 Senior Vice President、Cyber Fund 2026 Investment Committee 成员，2020 年加入；此前曾在 Brookings Institution 担任研究经理，并在美国国会工作数年，拥有 Georgetown MBA。",
+            "source_id": "blu_josh_miller"
+          },
+          {
+            "field": "team_mike_kostoff",
+            "label": "团队经历：Mike Kostoff",
+            "value": "Blu 官网将其列为 Operating Partner 与 Cyber Seed Fund Investment Committee 成员；其公开简介还列出 WISE Gateway 合伙人、The Kostoff Group 创办人，以及曾在美国陆军担任军事情报官九年的经历。",
+            "source_id": "blu_mike_kostoff"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2010",
+            "description": "官网称 Blu Ventures 起源于一群企业运营者组成的早期投资社群。",
+            "source_id": "blu_about"
+          },
+          {
+            "date": "2021",
+            "description": "官网称其推出一只 $25m 早期网络安全基金。",
+            "source_id": "blu_about"
+          }
+        ],
         "track_record": [
+          {
+            "description": "官网主页展示 Huntress、ID.me 等投资组合案例；这些是机构展示的案例，不构成完整组合或基金回报。",
+            "source_id": "blu_home"
+          },
           {
             "description": "融资来源记录：Procurement Sciences · B轮 · 2025-11-05 · 既有投资方，本轮参投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
             "source_id": "FISRC-fa41049d7cbdf303"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "机构官网",
+            "value": "Blu Ventures / Blu Venture Investors",
+            "url": "https://www.bluventureinvestors.com/",
+            "source_id": "blu_home"
+          },
+          {
+            "kind": "application",
+            "label": "提交融资项目",
+            "value": "官网提供 Submit a Pitch 融资项目入口。",
+            "url": "https://n8fvvmkspiz.typeform.com/to/YOZyVCAU",
+            "source_id": "blu_people"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "blu_home",
+            "source_url": "https://www.bluventureinvestors.com/",
+            "source_title": "Blu Ventures",
+            "source_content_hash": "67c06c2e742889380b97e544b58a2209bdbd539df6d7b2381f740eda5076ebff",
+            "quote": "Blu Ventures is a trusted, premier cybersecurity investor, managing capital to back market-defining founders.",
+            "quote_hash": "3838918141f3af0eabb2054783ab9c8f346f227f218f213f432a1d9743dd2b1a"
+          },
+          {
+            "source_id": "blu_about",
+            "source_url": "https://www.bluventureinvestors.com/about",
+            "source_title": "About Us | Blu Ventures",
+            "source_content_hash": "1128e66f986d4010270442ab443bca6a78d3b3fbb5c897c57047490f73d6e201",
+            "quote": "Blu Ventures began in 2010 as a group of former operators",
+            "quote_hash": "df678cc086f3fee78783011aa2bb20efaa905445e22c0eb4fa0b46473cfd2a51"
+          },
+          {
+            "source_id": "blu_people",
+            "source_url": "https://www.bluventureinvestors.com/people",
+            "source_title": "People | Blu Ventures",
+            "source_content_hash": "d9099a2a4ed8c31ab5055e9d17fc6c1b74321f42602125ce09a1c9a324ec4883",
+            "quote": "Our team blends operator experience, sector expertise, and disciplined investing to help founders grow from formation through scale.",
+            "quote_hash": "594eb8c46ba57cb8aa9d3dea9deaef87291731901b71a8a6f4e3052b23ab6130"
+          },
+          {
+            "source_id": "blu_bob_struble",
+            "source_url": "https://www.bluventureinvestors.com/bob-struble",
+            "source_title": "Bob Struble | Blu Ventures",
+            "source_content_hash": "8bab38512e517ca60c1494a117a35da2ece9fdd74d6140932cd1d8cd7a1ba990",
+            "quote": "From 1996 to 2015, Bob served as the co-founder and CEO of iBiquity Digital",
+            "quote_hash": "ae1755997d80fb2c96de9eb8e357459681d6683b59b6170e97cb6666b48dea00"
+          },
+          {
+            "source_id": "blu_josh_miller",
+            "source_url": "https://www.bluventureinvestors.com/josh-miller",
+            "source_title": "Josh Miller | Blu Ventures",
+            "source_content_hash": "b20a7373163f0fa09f8b12a9577c9bb1bbd82814d5955990ba82919a9cb1c664",
+            "quote": "Before Blu Ventures, he was a research manager at the Brookings Institution and previously served several years on Capitol Hill",
+            "quote_hash": "479a82e0d9dbf007339d123e76ecb0a0b453ead6496ff19fba82e94d5c9609f5"
+          },
+          {
+            "source_id": "blu_mike_kostoff",
+            "source_url": "https://www.bluventureinvestors.com/mike-kostoff",
+            "source_title": "Mike Kostoff | Blu Ventures",
+            "source_content_hash": "de65b3379825f97375cade4e33821ff0574abb71aa7f004317dd877d758b638e",
+            "quote": "Mike is a partner at Blu Venture Investors, a co-founder and partner of WISE Gateway LLC",
+            "quote_hash": "462b68dff48a7ef1f1812dca20757df5d029afcc724d5ce115403b061680c5d1"
+          },
           {
             "source_id": "FISRC-fa41049d7cbdf303",
             "source_url": "https://finance.yahoo.com/news/procurement-sciences-closes-30-million-130000493.html",
@@ -271464,7 +271752,7 @@
             "quote_hash": "8a3fe96ddb485842efdf9669e0bce45e77d6e1a311449ec23211c7ce9ace7da2"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-28"
       },
       "activity_count": 1,
       "portfolio_companies": [
