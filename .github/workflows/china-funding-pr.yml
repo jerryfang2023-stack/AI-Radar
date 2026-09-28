@@ -65,18 +65,35 @@ jobs:
           lane="agent-workflow/reports/china-funding/$RUN_DATE"
           current_seeds="$lane/funding-research-seeds.json"
           seed_snapshot="$RUNNER_TEMP/current-funding-research-seeds.json"
+          checkpoint_seeds="$RUNNER_TEMP/china-funding-checkpoint/funding-research-seeds.json"
+          source_head="$(gh run view "$RESUME_RUN" --json headSha --jq .headSha)"
+          current_head="$(git rev-parse HEAD)"
           seed_exists=false
           if [ -f "$current_seeds" ]; then
             cp "$current_seeds" "$seed_snapshot"
             seed_exists=true
           fi
           gh run download "$RESUME_RUN" --name "china-funding-checkpoint-$RUN_DATE" --dir "$RUNNER_TEMP/china-funding-checkpoint"
+          checkpoint_seed_hash=""
+          current_seed_hash=""
+          if [ -f "$checkpoint_seeds" ]; then
+            checkpoint_seed_hash="$(sha256sum "$checkpoint_seeds" | cut -d ' ' -f1)"
+          fi
+          if [ "$seed_exists" = true ]; then
+            current_seed_hash="$(sha256sum "$seed_snapshot" | cut -d ' ' -f1)"
+          fi
           mkdir -p "$lane"
           cp -a "$RUNNER_TEMP/china-funding-checkpoint/." "$lane/"
           if [ "$seed_exists" = true ]; then
             cp "$seed_snapshot" "$current_seeds"
           else
             rm -f "$current_seeds"
+          fi
+          if [ "$checkpoint_seed_hash" != "$current_seed_hash" ] || [ "$source_head" != "$current_head" ]; then
+            if [ -d "$lane/card-checkpoints" ]; then
+              find "$lane/card-checkpoints" -maxdepth 1 -type f -name 'EV-*.json' -delete
+            fi
+            echo "Discarded event-card checkpoints because the source revision or reviewed search seeds changed."
           fi
       - name: Collect each domestic publisher independently
         run: |
