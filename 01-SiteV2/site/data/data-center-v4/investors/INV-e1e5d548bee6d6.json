@@ -130,15 +130,42 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "未来启创基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "未来启创基金由36氪机构资料记载为2019年成立，主要关注新一代信息技术和生命医药；未来论坛官网记录其曾承办“未来产业MEET UP”科技项目对接活动。融资披露显示其作为亿格云老股东参与B轮追加投资。团队、基金规模、正式法律管理人资料及公开联系方式尚未通过一手机构资料核实。",
+      "coverage_note": "机构概况来自36氪机构目录，应视为目录记录而非管理人官方声明；未来论坛官网仅用于核实其承办活动。融资案例按来源记录，不据此推断其完整投资组合或单笔投资金额。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "目录记载成立年份",
+          "value": "2019年（36氪机构资料）",
+          "source_id": "future_qichuang_36kr"
+        },
+        {
+          "field": "investment_focus",
+          "label": "目录记载投资领域",
+          "value": [
+            "新一代信息技术",
+            "生命医药"
+          ],
+          "source_id": "future_qichuang_36kr"
+        },
+        {
+          "field": "reported_capital_sources",
+          "label": "目录所述出资人来源",
+          "value": "未来论坛理事、科学家、投资机构及北京市、朝阳区科创母基金等；属36氪机构资料描述，未逐项核实出资关系。",
+          "source_id": "future_qichuang_36kr"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2021-09-14",
+          "description": "未来论坛官网报道未来启创基金承办“未来产业MEET UP”科技项目对接活动。",
+          "source_id": "future_forum_meetup"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：亿格云 · 基础设施融资 · 2026-09-14 · B轮跟投 · 近亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "瑞财经融资报道将未来启创基金列为亿格云老股东，并称其在B轮加码跟投；来源未披露其单笔出资额。",
           "source_id": "FISRC-33042e04db869f01"
         }
       ],
@@ -151,9 +178,26 @@
           "source_content_hash": "8b079bf51a12bbe4",
           "quote": "本轮融资由新股东Monolith砺思资本领投，老股东未来启创基金加码跟投",
           "quote_hash": "b8664bd0cfc127a7b5826081d3588730829c008a51926180457fcfeedb316e9d"
+        },
+        {
+          "source_id": "future_qichuang_36kr",
+          "source_url": "https://pitchhub.36kr.com/organization/1703536179188739",
+          "source_title": "未来启创基金 | 投资机构信息-36氪",
+          "source_content_hash": "29c25481c60337c944976e84e1a694e137e5ee67e149c7b3211ff2c81cc56590",
+          "quote": "未来启创基金成立于2019年，投资主要聚焦于新一代信息技术和生命医药领域",
+          "quote_hash": "ecd2e39eea077f92b72039d2b4f4b3139ef1417798ed05e3755298787f9f59a5"
+        },
+        {
+          "source_id": "future_forum_meetup",
+          "source_url": "https://www.futureforum.org.cn/cn/nav/detail/591.html",
+          "source_title": "科创粉丝高呼“再来一场”！“未来产业MEET UP”在国际创投集聚区首秀成功",
+          "source_content_hash": "b128654e11ec01697d728305e81a32569c6dc487b8c7936ecd837c099816d6b5",
+          "quote": "近日，由未来论坛主办、未来启创基金承办的“未来产业MEET UP”接洽会",
+          "quote_hash": "933e22fe9f4cf8b99b202fa0aaecdb1e4da73d1f6b068c202e401d7acb4530a4"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28",
+      "identity_status": "verified"
     }
   }
 }

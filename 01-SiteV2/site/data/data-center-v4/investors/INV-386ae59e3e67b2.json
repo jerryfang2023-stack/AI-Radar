@@ -139,19 +139,83 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "社保基金四川振兴科创基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "“社保基金四川振兴科创基金”是融资披露使用的名称。四川在线报道披露，四川振兴科创股权投资基金合伙企业（有限合伙）为四川社保科创基金子基金，规模50.55亿元，由四川聚信致远等共同设立、四川聚信致远担任管理人。智象未来C轮披露也将该名称列为联合领投方，但未说明该轮投资的具体法律载体或单笔金额。",
+      "coverage_note": "基金设立、管理人与规模依据四川在线对四川振兴集团信息的报道；管理人整体管理规模不等于本基金规模。智象未来融资报道使用“社保基金四川振兴科创基金”简称，公开材料未明确验证该次投资的具体合伙企业载体，也未披露本基金单笔出资。",
+      "facts": [
+        {
+          "field": "fund_vehicle",
+          "label": "公开披露的基金法律名称",
+          "value": "四川振兴科创股权投资基金合伙企业（有限合伙）",
+          "source_id": "sichuan_fund_setup"
+        },
+        {
+          "field": "fund_scale",
+          "label": "公开披露基金规模",
+          "value": "50.55亿元；为基金规模，不是智象未来单笔融资金额。",
+          "source_id": "sichuan_fund_setup"
+        },
+        {
+          "field": "parent_fund",
+          "label": "母基金关系",
+          "value": "四川社保科创基金子基金。",
+          "source_id": "sichuan_fund_setup"
+        },
+        {
+          "field": "fund_manager",
+          "label": "基金管理人",
+          "value": "四川聚信致远私募基金管理有限公司。",
+          "source_id": "sichuan_fund_setup"
+        },
+        {
+          "field": "investment_focus",
+          "label": "报道披露的投资方向",
+          "value": [
+            "新能源",
+            "新材料",
+            "生物医药",
+            "人工智能",
+            "机器人",
+            "集成电路",
+            "数字经济"
+          ],
+          "source_id": "sichuan_fund_setup"
+        },
+        {
+          "field": "manager_group_scale",
+          "label": "管理人整体口径（非本基金业绩）",
+          "value": "管理人官网称其在管基金20余支、管理规模超过200亿元、投资规模超过100亿元；均为管理人整体数据。",
+          "source_id": "sichuan_manager"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026-03-29",
+          "description": "四川在线报道该基金已完成工商注册并取得营业执照，作为四川社保科创基金子基金开始运营。",
+          "source_id": "sichuan_fund_setup"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：智象未来 · C轮 · 2026-07-23 · 本轮联合领投 · 15亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "智象未来C轮融资披露将“社保基金四川振兴科创基金”列为联合领投方；15亿元是智象未来该轮融资总额，来源未披露该基金单笔出资或明确法律投资载体。",
           "source_id": "FISRC-9d4811d701a7c9af"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "基金管理人官网",
+          "value": "四川聚信致远私募基金管理有限公司",
+          "url": "https://www.sccyzxjj.com/jx/",
+          "source_id": "sichuan_manager"
+        },
+        {
+          "kind": "phone",
+          "label": "四川产业振兴基金集团公开联系电话（集团总机，非基金项目专线）",
+          "value": "028-85323161",
+          "source_id": "sichuan_manager"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-9d4811d701a7c9af",
@@ -160,9 +224,34 @@
           "source_content_hash": "e624d91e5d6eb536",
           "quote": "本轮融资由 社保基金四川振兴科创基金、工银资本、弘颐资管、敦鸿资本联合领投",
           "quote_hash": "56637fee176d6c0bc3f3573109381a586aa060b91963e3f378aad9595319bc5a"
+        },
+        {
+          "source_id": "sichuan_fund_setup",
+          "source_url": "https://finance.sina.com.cn/jjxw/2026-03-29/doc-inhsruxz0582687.shtml",
+          "source_title": "总规模达50.55亿元，四川振兴科创基金落地|四川省_新浪财经_新浪网",
+          "source_content_hash": "79be3bd41a2ef5449cfe68a2d1d8505604dd437d193a6def7796a151ce909cf3",
+          "quote": "总规模达50.55亿元的四川振兴科创股权投资基金合伙企业（有限合伙）已完成工商注册，并顺利取得营业执照。该基金作为四川社保科创基金的子基金",
+          "quote_hash": "ce9f6ae1c9400f0d35386a636ef2a1742e4ef762e83a750b99d1353941070182"
+        },
+        {
+          "source_id": "sichuan_manager",
+          "source_url": "https://www.sccyzxjj.com/jx/",
+          "source_title": "四川聚信致远私募基金管理有限公司",
+          "source_content_hash": "3b432d1f6041a60fcaade8655bbe9bb38f1f9102c28c51b8ebb9f7acf3eccbbb",
+          "quote": "目前，公司在管四川省绿色低碳产业基金等政府引导基金、四川振兴科创基金等市场化产业基金共20余支，管理规模超过200亿元，投资规模超过100亿元",
+          "quote_hash": "3cd0509e477ce849b590bb53f72b54cc222b924cb7976d66294caa2e18bfa708"
+        },
+        {
+          "source_id": "sichuan_manager_phone",
+          "source_url": "https://www.sccyzxjj.com/jx/",
+          "source_title": "四川聚信致远私募基金管理有限公司",
+          "source_content_hash": "3b432d1f6041a60fcaade8655bbe9bb38f1f9102c28c51b8ebb9f7acf3eccbbb",
+          "quote": "联系电话：028-85323161",
+          "quote_hash": "d0851d53e70765d4e2847e1e1b9435826e16f38ef1ad6bd16ee62f80cd5bde67"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28",
+      "identity_status": "verified"
     }
   }
 }

@@ -131,19 +131,45 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "西湖教育基金会可持续发展平台 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "融资披露中的“西湖教育基金会可持续发展平台”曾作为西湖心辰Pre-A轮跟投方出现。西湖教育基金会官网介绍其西湖大学发展基金和基金会通用联系方式；公开资料尚不能证明这两个“平台/基金”就是同一投资主体，因此本档案只记录经来源支持的关联背景与融资案例。",
+      "coverage_note": "36氪融资来源能证明该名称参与西湖心辰Pre-A轮。西湖教育基金会官网介绍的是西湖大学发展基金，未将其与“可持续发展平台”明确等同；基金会联系方式为通用联系方式，并非该平台专线。未找到可核实的独立基金管理人、投资业绩口径或团队资料。",
+      "facts": [
+        {
+          "field": "related_foundation_program",
+          "label": "基金会官网公开项目（身份关系未证实）",
+          "value": "西湖教育基金会设立西湖大学发展基金募集捐赠，支持西湖大学及浙江西湖高等研究院发展；官方页面未说明该项目与融资来源中的“可持续发展平台”为同一主体。",
+          "source_id": "westlake_foundation"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：西湖心辰 · B+轮 · 2026-08-03 · Pre-A轮跟投方 · 数亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "西湖心辰Pre-A轮融资披露将西湖教育基金会可持续发展平台列为跟投方；该轮后续公开为B+轮记录，不代表本平台在B+轮再次投资，且报道未披露其单笔出资额。",
           "source_id": "FISRC-c0671e3e70d8ae56"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "西湖教育基金会官网（关联背景来源）",
+          "value": "杭州市西湖教育基金会",
+          "url": "https://www.wefoundation.org.cn/content/172",
+          "source_id": "westlake_foundation"
+        },
+        {
+          "kind": "phone",
+          "label": "西湖教育基金会公开电话（非该平台专线）",
+          "value": "0571-85092901；18506816876",
+          "source_id": "westlake_foundation"
+        },
+        {
+          "kind": "email",
+          "label": "西湖教育基金会公开邮箱（非该平台专线）",
+          "value": "wef@wefoundation.org.cn",
+          "source_id": "westlake_foundation"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-c0671e3e70d8ae56",
@@ -152,9 +178,26 @@
           "source_content_hash": "1562678e3cf5d266",
           "quote": "老股东凯泰资本和西湖教育基金会可持续发展平台跟投",
           "quote_hash": "9e2faf87506724208baa5563a20e6f1ec5283a695af61ea14779927444b0346d"
+        },
+        {
+          "source_id": "westlake_foundation",
+          "source_url": "https://www.wefoundation.org.cn/content/172",
+          "source_title": "杭州市西湖教育基金会",
+          "source_content_hash": "d1cf0c8ebc9f40fa1cc833f48c25a9c8f86b658323b6d183753d9ca9411bc16d",
+          "quote": "西湖教育基金会通过设立西湖大学发展基金面向社会人士、团体、机构募集资金",
+          "quote_hash": "bfcab22cbe8e67cb1dfca92cc60a1af8d0fbbd587bcc76df1c91f186026eb60f"
+        },
+        {
+          "source_id": "westlake_foundation_contact",
+          "source_url": "https://www.wefoundation.org.cn/content/172",
+          "source_title": "杭州市西湖教育基金会",
+          "source_content_hash": "d1cf0c8ebc9f40fa1cc833f48c25a9c8f86b658323b6d183753d9ca9411bc16d",
+          "quote": "电话：0571- 85092901, 18506816876 Email：wef@wefoundation.org.cn",
+          "quote_hash": "52e614d264a1afd129c1afe5438391e227d7b9b517e799b0a8741e9681a108c3"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28",
+      "identity_status": "verified"
     }
   }
 }

@@ -130,15 +130,33 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "红鸟基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "数巅智能的2025年Pre-A轮披露将广州红鸟启航基金列为跟投方，基金创始合伙人钟潜凯称其聚焦粤港澳大湾区高科技创新与产业化及新一代人工智能产业链。2026年同一被投企业融资报道使用简称“红鸟基金”，与前述机构高度相关，但该简称本身没有披露法律载体，故此对应关系保留为基于同一企业投资记录的审慎匹配。",
+      "coverage_note": "机构策略与广州红鸟启航基金名称由投中网对数巅Pre-A轮融资的报道及基金创始合伙人引述支持。中国日报后续报道在同一被投企业的多轮融资投资方列表中使用简称“红鸟基金”；未披露基金管理人、法律载体、单笔金额或专属联系方式，不能据简称锁定具体投资载体。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "创始合伙人公开表述的方向",
+          "value": "聚焦粤港澳大湾区高科技创新与产业化，布局新一代人工智能产业链上下游投资机会。",
+          "source_id": "redbird_strategy"
+        },
+        {
+          "field": "name_match",
+          "label": "融资名称对应说明",
+          "value": "数巅2025年融资披露使用“广州红鸟启航基金”，2026年报道对同一企业的历史轮次投资方使用“红鸟基金”；属于同一被投企业交叉证据下的谨慎匹配，不是法律主体证明。",
+          "source_id": "redbird_pre_a"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2025-10-28",
+          "description": "投中网报道广州红鸟启航基金跟投数巅Pre-A轮；报道引述其创始合伙人钟潜凯介绍投资方向。",
+          "source_id": "redbird_pre_a"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：数巅智能 · 多轮融资 · 2026-09-21 · 历史轮次投资方 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "中国日报在数巅多轮融资投资方名单中列出“红鸟基金”；该公司2025年Pre-A轮报道使用更完整名称“广州红鸟启航基金”，两次投资关系作谨慎对应，来源均未披露其单笔出资额。",
           "source_id": "FISRC-b081386a3d09c943"
         }
       ],
@@ -151,9 +169,26 @@
           "source_content_hash": "2db46bde0cf654b8",
           "quote": "数巅智能已完成数亿元多轮融资，投资方涵盖君联资本、赛富基金、中国中车、中石油昆仑资本、耀途资本、济和创投、红鸟基金、中关村科学城、北京市信息产业发展投资基金等知名机构。",
           "quote_hash": "e3549fb86c70ab59e7bba116769dd020a96e66db5bb6d6308113bffcc4df1b63"
+        },
+        {
+          "source_id": "redbird_pre_a",
+          "source_url": "https://www.chinaventure.com.cn/news/108-20251028-388591.html",
+          "source_title": "数巅完成数亿元pre-A轮融资，领跑企业级AI Agent赛道 | 投中网",
+          "source_content_hash": "e1daf770cca6acc14eb267c1b86f685fcb23a9d3452d3afc92220d518fdddb1e",
+          "quote": "由济和创投和赛富基金联合领投，北京市信息产业发展投资基金、广州红鸟启航基金、上海领屹投资等机构跟投",
+          "quote_hash": "5c64d48e159761727bfd2b0d32b7acab106d338b84fc7d4b9195b8ad833f081c"
+        },
+        {
+          "source_id": "redbird_strategy",
+          "source_url": "https://www.chinaventure.com.cn/news/108-20251028-388591.html",
+          "source_title": "数巅完成数亿元pre-A轮融资，领跑企业级AI Agent赛道 | 投中网",
+          "source_content_hash": "e1daf770cca6acc14eb267c1b86f685fcb23a9d3452d3afc92220d518fdddb1e",
+          "quote": "广州红鸟启航基金专注粤港澳大湾区高科技创新与产业化，布局新一代人工智能产业链的上下游投资机会",
+          "quote_hash": "8b57769e007e7055b88f081772c25a170fe69893db5da9f67a2ae4f9231f3cf9"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28",
+      "identity_status": "verified"
     }
   }
 }
