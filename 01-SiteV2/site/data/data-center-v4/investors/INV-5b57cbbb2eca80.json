@@ -131,29 +131,90 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Ankur Goyal 当前按“个人投资者”收录。最新融资披露记录日期为 2026-06-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "coverage_note": "现任职务与教育、职业履历来自 Ankur Goyal 的公开人物资料；Braintrust 本人署名文章用于交叉核验其创办经历及在 SingleStore、Impira、Figma 的工作背景。个人资料中的任职描述未披露具体年月，故不推断任期。",
+      "summary": "Ankur Goyal 是 Braintrust 创办人兼 CEO，拥有 Carnegie Mellon University 计算机科学学习背景。其公开履历包括在 SingleStore 负责工程、创立 Impira 并将其出售给 Figma，之后在 Figma 领导机器学习平台；Braintrust 的创办与产品方向延续了他在 AI 产品评估方面的经验。融资记录将其列为 Niteshift 2026 年种子轮天使投资人。",
       "facts": [],
       "milestones": [],
+      "current_roles": [
+        {
+          "title": "创办人兼 CEO",
+          "organization": "Braintrust",
+          "source_id": "ankur_delphi"
+        }
+      ],
+      "career": [
+        {
+          "organization": "SingleStore",
+          "title": "工程副总裁",
+          "period": "曾任；公开资料未列具体年月",
+          "description": "负责工程工作，并参与扩展分布式数据库系统。",
+          "source_id": "ankur_delphi"
+        },
+        {
+          "organization": "Impira",
+          "title": "创办人",
+          "period": "曾任；公开资料未列具体年月",
+          "description": "创立机器学习文档处理初创公司 Impira，后出售给 Figma。",
+          "source_id": "ankur_delphi"
+        },
+        {
+          "organization": "Figma",
+          "title": "机器学习平台负责人",
+          "period": "曾任；公开资料未列具体年月",
+          "description": "Impira 并入 Figma 后负责机器学习平台；Braintrust 创办文章回顾了他在 Impira 与 Figma 构建 AI 产品的经历。",
+          "source_id": "ankur_braintrust"
+        },
+        {
+          "organization": "Braintrust",
+          "title": "创办人兼 CEO",
+          "period": "2023 年创办；2026 年仍以公司创办人署名发布文章",
+          "description": "创建面向 AI 产品开发的评估与观测平台，以其在 Impira 和 Figma 构建 AI 产品的经历为问题起点。",
+          "source_id": "ankur_braintrust"
+        }
+      ],
+      "education": [
+        {
+          "institution": "Carnegie Mellon University",
+          "qualification": "计算机科学学习经历；公开资料未说明学位或毕业年份",
+          "source_id": "ankur_delphi"
+        }
+      ],
+      "experience_summary": "具备数据库工程、技术团队管理、机器学习产品建设和创业经验：先后参与 SingleStore、Impira、Figma 的工程与 AI 产品工作，再创立 Braintrust，为 AI 应用提供评估和生产观测工具。",
       "track_record": [
         {
-          "description": "融资来源记录：Niteshift · 种子轮 · 2026-06-10 · 天使投资人 · $7 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资记录将其列为 Niteshift 2026 年种子轮天使投资人；这是本库可追溯的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-01df70e43799a400"
         }
       ],
       "contacts": [],
       "sources": [
         {
+          "source_id": "ankur_delphi",
+          "source_url": "https://www.delphi.ai/ankur-goyal",
+          "source_title": "Ankur Goyal | Founder & CEO, Braintrust | Delphi",
+          "source_content_hash": "f7446d3793ff1cea825cc2bce21e57a47436090a2c50830690839f67d24f513b",
+          "quote": "I studied CS at Carnegie Mellon. Before becoming VP Engineering at SingleStore scaling distributed databases.",
+          "quote_hash": "3cbebd8f0e5e055069ff37c40aa43b44eca75c239a2e45719aa02e25be207d54"
+        },
+        {
+          "source_id": "ankur_braintrust",
+          "source_url": "https://www.braintrust.dev/blog/reliable-ai",
+          "source_title": "It's time to build reliable AI | Braintrust",
+          "source_content_hash": "fce9c0e3119edae70e1f12e37b1e5d07775bd2fd8e64f82f04a7608ba4035909",
+          "quote": "Going from idea to production can be challenging (something I experienced first-hand building AI products at Impira and Figma).",
+          "quote_hash": "2449190078b112d1f315d704c348f73c3135d26b6d96b12470316dbe3526249c"
+        },
+        {
           "source_id": "FISRC-01df70e43799a400",
           "source_url": "https://techcrunch.com/2026/06/10/datadog-veterans-launch-ai-coding-startup-niteshift-on-a-bet-against-big-ai-lock-in",
           "source_title": "Datadog 资深人士创立 AI 编码初创公司 Niteshift，押注企业对抗大模型锁定",
           "source_content_hash": "21b15182c071a779",
-          "quote": "the startup, founded by two former early Datadog engineers, has attracted some big-name angels like Reid Hoffman, Datadog’s Olivier Pomel and Alexis Lê-Quôc, Ankur Goyal of Braintrust, and Misha Laskin of Reflection AI.",
-          "quote_hash": "40f67c01bdbbbce26ad3c095c1b1c5454b2a2b4a9b9c2140446f895388ef9fd4"
+          "quote": "has attracted some big-name angels like Reid Hoffman, Datadog’s Olivier Pomel and Alexis Lê-Quôc, Ankur Goyal of Braintrust",
+          "quote_hash": "4af9e125764ac663518bb2813c0064cf4a1b5f4b3404e5052c436b80dc84d91d"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28"
     }
   }
 }
