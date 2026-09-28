@@ -1,7 +1,7 @@
 {
   "schema_version": "CHINA-FUNDING-HEALTH-V1.0",
   "date": "2026-09-28",
-  "generated_at": "2026-09-28T06:14:48.114Z",
+  "generated_at": "2026-09-28T12:11:21.912Z",
   "status": "failed",
   "last_collection_at": "2026-09-28T00:15:39.011Z",
   "failed_stage": "projections",
@@ -9,23 +9,23 @@
     {
       "id": "capture",
       "status": "passed",
-      "started_at": "2026-09-28T06:12:18.869Z",
+      "started_at": "2026-09-28T12:08:56.943Z",
       "reused": true,
       "reused_accepted_capture": true,
-      "finished_at": "2026-09-28T06:12:25.219Z"
+      "finished_at": "2026-09-28T12:09:03.314Z"
     },
     {
       "id": "facts",
       "status": "passed",
-      "started_at": "2026-09-28T06:12:25.219Z",
-      "finished_at": "2026-09-28T06:14:23.239Z"
+      "started_at": "2026-09-28T12:09:03.314Z",
+      "finished_at": "2026-09-28T12:10:59.681Z"
     },
     {
       "id": "projections",
       "status": "failed",
-      "started_at": "2026-09-28T06:14:23.239Z",
-      "error": "Command failed: agent-workflow/tools/assert-funding-insights-v1.mjs (1)",
-      "finished_at": "2026-09-28T06:14:47.977Z"
+      "started_at": "2026-09-28T12:10:59.682Z",
+      "error": "Command failed: agent-workflow/tools/generate-funding-insights-deepseek.mjs (1)",
+      "finished_at": "2026-09-28T12:11:21.775Z"
     }
   ],
   "sources": [
