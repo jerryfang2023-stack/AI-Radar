@@ -129,21 +129,194 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "真知创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "真知创投以创业制片人和联合创始人的方式参与创业，从需求验证、产品与战略打磨到早期孵化。官网列出其联合创办的多屏未来、萌友智能、趋境科技、光联芯科，以及孵化投资的 Viture、百图生科、深度原理等。官网同时披露五位创业合伙人的跨行业经历；这些人是运营与创业合伙人，不等同于基金投资决策团队。",
+      "facts": [
+        {
+          "field": "investment_thesis",
+          "label": "投资与创业模式",
+          "value": "以联合创始人身份参与，从零到一共同创建企业，围绕有社会价值的问题打磨产品、战略与需求验证。",
+          "source_id": "verity_mission"
+        },
+        {
+          "field": "portfolio_examples",
+          "label": "官网披露的联创及孵化项目",
+          "value": [
+            "多屏未来（INAIR）",
+            "萌友智能（ROPET）",
+            "趋境科技",
+            "光联芯科",
+            "Viture",
+            "百图生科",
+            "深度原理"
+          ],
+          "source_id": "verity_portfolio"
+        },
+        {
+          "field": "team_structure",
+          "label": "运营合伙人团队",
+          "value": "官网列出吴凯、刘叙、曹芳宁、徐继业、郑云生等创业合伙人，深度参与旗下联创企业早期孵化。",
+          "source_id": "verity_mission"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官网列出的联创企业包括多屏未来（INAIR）、萌友智能（ROPET）、趋境科技和光联芯科；另列有孵化投资案例 Viture、百图生科、深度原理。此为官网选例，不代表完整投资组合或退出业绩。",
+          "source_id": "verity_portfolio"
+        },
         {
           "description": "融资来源记录：趋境科技 · Pre-A轮 · 2026-05-20 · 天使轮追投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-53ef187e17deac50"
         }
       ],
-      "contacts": [],
+      "current_roles": [
+        {
+          "title": "吴凯 — 创业合伙人 / Operating Partner",
+          "organization": "真知创投",
+          "source_id": "verity_wu"
+        },
+        {
+          "title": "刘叙 — 创业合伙人 / Operating Partner",
+          "organization": "真知创投",
+          "source_id": "verity_liu"
+        },
+        {
+          "title": "曹芳宁 — 创业合伙人 / Operating Partner",
+          "organization": "真知创投",
+          "source_id": "verity_cao"
+        },
+        {
+          "title": "徐继业 — 创业合伙人 / Operating Partner",
+          "organization": "真知创投",
+          "source_id": "verity_xu"
+        },
+        {
+          "title": "郑云生 — 创业合伙人 / Operating Partner",
+          "organization": "真知创投",
+          "source_id": "verity_zheng"
+        }
+      ],
+      "career": [
+        {
+          "organization": "微软、百度、阿里巴巴、奇虎360、字节跳动",
+          "title": "吴凯：搜索产品研发与业务管理",
+          "period": "官网未披露具体任职年月",
+          "description": "官网列出的过往任职机构；页面具体点名其曾任360搜索副总经理及字节跳动搜索业务总经理。",
+          "source_id": "verity_wu"
+        },
+        {
+          "organization": "阿里巴巴、奇虎360、海致科技、智齿科技、云启资本",
+          "title": "刘叙：人力资源与组织战略",
+          "period": "官网未披露具体任职年月",
+          "description": "官网称其有20年人力与组织战略经验，曾任核心HR岗位、HRVP及云启资本投后HRVP。",
+          "source_id": "verity_liu"
+        },
+        {
+          "organization": "罗兰贝格、多维资本",
+          "title": "曹芳宁：全球管理咨询与科技企业融资服务",
+          "period": "2016年创立多维资本；其余任职日期未披露",
+          "description": "真知官网称其曾任罗兰贝格全球管理合伙人，并创立多维资本。官网所述融资并购金额为机构自述。",
+          "source_id": "verity_cao"
+        },
+        {
+          "organization": "《21世纪经济报道》、百度、平安好医生、一亩田、极越汽车",
+          "title": "徐继业：媒体、互联网、实业与管理",
+          "period": "官网未披露具体任职年月",
+          "description": "官网列出其曾任媒体核心职务、企业高管、自主创业及极越汽车CEO顾问经历。",
+          "source_id": "verity_xu"
+        },
+        {
+          "organization": "德豪利安达、蓝色之星、聚美优品",
+          "title": "郑云生：审计尽调与财务管理",
+          "period": "官网未披露具体任职年月；蓝色之星及聚美优品上市分别标为2007年和2014年",
+          "description": "真知官网称其早期从事审计与尽调，后以CFO身份带队推动两家公司分别于2007年和2014年上市。",
+          "source_id": "verity_zheng"
+        }
+      ],
+      "education": [
+        {
+          "institution": "清华大学",
+          "qualification": "吴凯：电子系本科及硕士",
+          "source_id": "verity_wu"
+        },
+        {
+          "institution": "北京大学、新加坡国立大学",
+          "qualification": "徐继业：毕业；具体学位和专业未披露",
+          "source_id": "verity_xu"
+        },
+        {
+          "institution": "斯坦福商学院",
+          "qualification": "郑云生：管理学硕士；官网同时称其持有注册会计师及金融分析师资格",
+          "source_id": "verity_zheng"
+        }
+      ],
+      "experience_summary": "真知官网将其定位为“创业制片人”，并公开五位运营创业合伙人的经历，覆盖搜索产品、人力组织、战略咨询、资本运作、媒体互联网及财务上市。上述履历来自机构官网自述；页面未披露基金规模、完整投资决策团队、退出回报或直接项目申请渠道。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "真知创投",
+          "url": "https://www.verityventures.com/mission-concept",
+          "source_id": "verity_mission"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "verity_mission",
+          "source_url": "https://www.verityventures.com/mission-concept",
+          "source_title": "使命理念 - 真知创投",
+          "source_content_hash": "0e6605340fd5c30eb9b41f2a658fcde0743bb0d04eb3db439a370c4d3bf878ef",
+          "quote": "真知专注于以联合创始人的角色，围绕有社会价值的重大问题，洞察消费趋势和用户需求，筛选改变未来的大机会，与创业者共同打磨产品、制定战略与验证需求，一起从零到一创办伟大企业。",
+          "quote_hash": "a0b4c382d2824b1bdccfeaea85ef964f2e0d4f8657e4e358a448384ab6d9b0e2"
+        },
+        {
+          "source_id": "verity_portfolio",
+          "source_url": "https://www.verityventures.com/mission-concept",
+          "source_title": "使命理念 - 真知创投",
+          "source_content_hash": "0e6605340fd5c30eb9b41f2a658fcde0743bb0d04eb3db439a370c4d3bf878ef",
+          "quote": "成立至今，真知已经联合创办多屏未来（INAIR）、萌友智能（ROPET）、趋境科技、光联芯科等，并孵化投资 Viture、百图生科、深度原理等。",
+          "quote_hash": "6302e540fefc1e64ba4a1075e292c985cd232ba46996cd7e241c7388698cf022"
+        },
+        {
+          "source_id": "verity_wu",
+          "source_url": "https://www.verityventures.com/partners",
+          "source_title": "创业合伙人 - 真知创投",
+          "source_content_hash": "4040ffcfc97f5dc0fa9f42fdc13d4cfab182ebdb81f568c8ae2eb9d28a04920d",
+          "quote": "吴凯 清华电子系本硕，曾就职于微软、百度、阿里、360、字节跳动等公司，从事搜索引擎产品研发工作多年。前 360 搜索副总经理，前字节跳动搜索业务总经理。",
+          "quote_hash": "8e90642e17e277103b9ed8b62c060050afd1b47dad12a0e880dd4ee5890e9218"
+        },
+        {
+          "source_id": "verity_liu",
+          "source_url": "https://www.verityventures.com/partners",
+          "source_title": "创业合伙人 - 真知创投",
+          "source_content_hash": "4040ffcfc97f5dc0fa9f42fdc13d4cfab182ebdb81f568c8ae2eb9d28a04920d",
+          "quote": "刘叙 20年人力与组织战略实战经验。历任阿里巴巴、奇虎360核心HR岗位，曾作为HRVP主导海致科技、智齿科技的组织变革与规模化扩张；曾任云启资本投后HRVP，赋能近百家被投企业，擅长为高速发展企业构建战略落地的人才组织体系。",
+          "quote_hash": "92dc4e7c2be15fb9f44a826a7c5587d4e4f47faa87c391f998c55f4e99fec0c5"
+        },
+        {
+          "source_id": "verity_cao",
+          "source_url": "https://www.verityventures.com/partners",
+          "source_title": "创业合伙人 - 真知创投",
+          "source_content_hash": "4040ffcfc97f5dc0fa9f42fdc13d4cfab182ebdb81f568c8ae2eb9d28a04920d",
+          "quote": "曹芳宁 曾任职于罗兰贝格管理咨询公司担任全球管理合伙人职务，负责汽车消费电子等领域的全球科技企业的战略规划和资本运营。2016 年创立一级市场知名投资银行多维资本协助数百家中国科技企业完成了近500 亿美元的融资及并购交易，擅长全阶段科技企业的资本架构设计，融资服务及各类资本市场IPO规划设计。",
+          "quote_hash": "9f64eccde396d12d114a188132d4f55ee0698aec2d19810c92f3aeb8b327cb73"
+        },
+        {
+          "source_id": "verity_xu",
+          "source_url": "https://www.verityventures.com/partners",
+          "source_title": "创业合伙人 - 真知创投",
+          "source_content_hash": "4040ffcfc97f5dc0fa9f42fdc13d4cfab182ebdb81f568c8ae2eb9d28a04920d",
+          "quote": "徐继业 毕业于北京大学和新加坡国立大学，拥有横跨媒体、互联网与实业的丰富经验。他曾任《21世纪经济报道》及《21世纪商业评论》核心职务，后历任百度、平安好医生、一亩田等公司高管，亦曾自主创业，并在极越汽车担任CEO顾问。其能力覆盖战略整合、品牌公关、内容运营与产业深耕，是兼具深度洞察与执行力的跨界管理者。",
+          "quote_hash": "c3b65dd2489786244e69b4df019e7e1b7cf7428d8dfc1edaac751adfddd75c10"
+        },
+        {
+          "source_id": "verity_zheng",
+          "source_url": "https://www.verityventures.com/partners",
+          "source_title": "创业合伙人 - 真知创投",
+          "source_content_hash": "4040ffcfc97f5dc0fa9f42fdc13d4cfab182ebdb81f568c8ae2eb9d28a04920d",
+          "quote": "郑云生 斯坦福商学院管理硕士，拥有注册会计师及金融分析师资格。作为CFO曾带领蓝色之星（2007年）和聚美优品（2014年）分别于伦敦和纽约上市，早期在德豪利安达从事审计与尽调，专长于海外上市、内控及审计业务。",
+          "quote_hash": "04476687cecf16f5f91e54be8542b78b13bca6def3c353e7959778f8586494a1"
+        },
         {
           "source_id": "FISRC-53ef187e17deac50",
           "source_url": "https://unifuncs.com/s/lVd0EmYJ",
@@ -153,7 +326,11 @@
           "quote_hash": "1f6ec18f0ef23f2f8a0c02f654ea9a97edaf9ebf8045621021f1a3e02e5d3ebb"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构背景、创业模式、联创项目和创业合伙人履历均来自真知创投官网自述。官网团队页当前未提供投资团队名单；未将运营合伙人写成基金管理团队，也未推测基金规模、回报或投资联系方式。"
     }
   }
 }
