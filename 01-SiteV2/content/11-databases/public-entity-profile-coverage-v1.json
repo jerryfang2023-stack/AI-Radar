@@ -39362,12 +39362,47 @@
     "INV-ae852efa8015f4": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "中生锡创鼎祺基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "锡创投官方报道确认“中生锡创鼎祺基金”于2026年设立；证券时报转引企查查的信息将相关工商主体列为“无锡中生锡创鼎祺股权投资合伙企业（有限合伙）”，并报告其出资额为5亿元。工商主体及出资信息目前依据二手报道，未以基金备案或工商登记原件独立核验；出资额不等同于实缴额或实际可投资金。融资报道列出其参与宇道生物C1轮，但未披露基金单笔投资金额。未找到可确认的基金官网、管理人、执行事务合伙人或对外联系方式。",
+      "summary": "中生锡创鼎祺基金是锡创投2026年公开报道中列出的新设生物医药基金。证券时报转引企查查的信息称，其工商主体为无锡中生锡创鼎祺股权投资合伙企业（有限合伙），出资额5亿元，正大天晴药业集团和无锡市创新投资集团等共同持有；上述工商信息尚未用登记原件独立核验。2026年9月的宇道生物C1轮报道将该基金列为联合参投方，未披露其单笔金额。",
+      "facts": [
+        {
+          "field": "legal_entity_name_reported",
+          "label": "媒体转引的工商主体名称（待登记原件核验）",
+          "value": "无锡中生锡创鼎祺股权投资合伙企业（有限合伙）；证券时报报道转引企查查信息。",
+          "source_id": "sct_registry"
+        },
+        {
+          "field": "reported_contribution",
+          "label": "媒体报道的出资额（非实缴金额）",
+          "value": "人民币5亿元；该数值来自证券时报转引企查查的报道，未核实实缴情况或基金实际可投资金。",
+          "source_id": "sct_registry"
+        },
+        {
+          "field": "reported_partners",
+          "label": "媒体报道的共同持有人（非完整名单）",
+          "value": "证券时报转引企查查称，正大天晴药业集团股份有限公司、无锡市创新投资集团有限公司等共同持有该合伙企业；未披露全体合伙人、持份比例或普通合伙人信息。",
+          "source_id": "sct_registry_partners"
+        },
+        {
+          "field": "sector_context",
+          "label": "锡创投官方披露的设立语境（不等同于基金完整投资策略）",
+          "value": "锡创投将该基金的设立列入其2026年生物医药领域布局；目前未找到该基金自身公布的完整赛道、阶段或投资策略。",
+          "source_id": "wuxi_fund_setup"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026年3月（媒体报道）",
+          "description": "证券时报于2026年3月报道该工商主体于近日成立，文章转引企查查信息。",
+          "source_id": "sct_registry"
+        }
+      ],
       "track_record": [
+        {
+          "description": "2026年9月，宇道生物C1轮融资报道将中生锡创鼎祺基金列为联合参投方。该轮总融资额为数千万美元，报道未披露本基金具体出资金额；现有案例不代表基金完整投资组合。",
+          "source_id": "chinastar_ucdom"
+        },
         {
           "description": "融资来源记录：上海宇道生物技术有限公司 · C1轮 · 2026-09-15 · 本轮参投 · 数千万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e5567e9a53d1316c"
@@ -39375,6 +39410,38 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "wuxi_fund_setup",
+          "source_url": "https://www.wuxicapital.com.cn/news_59/560.html",
+          "source_title": "2026太湖湾生命健康未来大会启幕 | 锡创投参与承办生物医药企业基金对接会",
+          "source_content_hash": "dd3a7b61ce7788f82ebbbb2e3afce6a213e898317a4796e7ef635b70a76079a0",
+          "quote": "中生锡创鼎祺基金设立",
+          "quote_hash": "1ba060355044b8e3e6e7dfb8cd1c27c96e07d81ed27cf904293b23700216724c"
+        },
+        {
+          "source_id": "sct_registry",
+          "source_url": "https://finance.sina.com.cn/jjxw/2026-03-19/doc-inhrnzrq0900198.shtml?froms=ggmp",
+          "source_title": "正大天晴等在无锡成立股权投资合伙企业 | 证券时报",
+          "source_content_hash": "79b77806bd252f3078c5bc2f06357c0ecec163465afacd94f71896c5812ec427",
+          "quote": "无锡中生锡创鼎祺股权投资合伙企业（有限合伙）成立，出资额5亿元",
+          "quote_hash": "d8954c655f788df76e70153d7fcb4beefca57988b4aeb0af38937a8524c3c3ee"
+        },
+        {
+          "source_id": "sct_registry_partners",
+          "source_url": "https://finance.sina.com.cn/jjxw/2026-03-19/doc-inhrnzrq0900198.shtml?froms=ggmp",
+          "source_title": "正大天晴等在无锡成立股权投资合伙企业 | 证券时报",
+          "source_content_hash": "79b77806bd252f3078c5bc2f06357c0ecec163465afacd94f71896c5812ec427",
+          "quote": "正大天晴药业集团股份有限公司、无锡市创新投资集团有限公司等共同持股",
+          "quote_hash": "5e2c10c032c7d67b8ec0ed02d03f18a4b307bca75ebb62d2cf102de10fb18bf7"
+        },
+        {
+          "source_id": "chinastar_ucdom",
+          "source_url": "https://www.chinastarmarket.cn/detail/2483909",
+          "source_title": "宇道生物完成C1轮数千万美元融资 信宸资本与德诚资本联合领投 | 科创板日报",
+          "source_content_hash": "4f8b09bac3a855577b400887e574fe69f0029d418ba4ad5588c54c8be61f705e",
+          "quote": "达晨财智及中生锡创鼎祺基金联合参投",
+          "quote_hash": "de32bd721101ccb216fb8788696aeab25492735627e96843949670bc546c17d9"
+        },
         {
           "source_id": "FISRC-e5567e9a53d1316c",
           "source_url": "https://news.pedaily.cn/202609/569003.shtml",
@@ -39384,7 +39451,7 @@
           "quote_hash": "abbb9361e2f91297caf9e4ea15542106144556c8a9afa3b5873d1f6bdcf610d1"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28"
     },
     "INV-9f7235951c15de": {
       "profile_type": "organization",
@@ -69223,12 +69290,41 @@
     "INV-877783949c5a53": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "上海创之智科技有限公司 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "融资记录中的名称为“上海创之智科技有限公司”。穹彻智能官网将其称为上海创智学院全资子公司，锡创投同期投资公告也列明其参与该轮融资。现有公开来源仅支持所属关系及这笔活动，未披露该公司自身的投资策略、基金产品、管理团队或该笔投资金额；学院整体创业支持机制不能直接视为公司的投资政策。",
+      "summary": "上海创之智科技有限公司在穹彻智能官网披露中被称为上海创智学院全资子公司。穹彻智能2026年6月宣布完成数亿元融资，官网将创之智列为投资方；锡创投同期公告也确认其参与。公开披露未说明创之智的具体投资金额，也未提供该公司的独立投资策略、团队或联系方式。",
+      "facts": [
+        {
+          "field": "parent_organization",
+          "label": "被投企业披露的所属关系",
+          "value": "穹彻智能官网在2026年6月融资介绍中称，上海创之智科技有限公司是上海创智学院全资子公司。",
+          "source_id": "noematrix_about"
+        },
+        {
+          "field": "investment_activity",
+          "label": "公开披露的融资参与",
+          "value": "穹彻智能2026年6月融资披露及锡创投同期公告均列上海创之智科技有限公司为参与投资方；未披露其单独投资金额。",
+          "source_id": "wuxi_noematrix"
+        },
+        {
+          "field": "parent_ecosystem_context",
+          "label": "母体学院的成果转化支持机制（不代表本公司的独立策略）",
+          "value": "上海创智学院官网称，学院组织投资机构和孵化机构遴选学生创业项目，并通过创投基金支持成果转化；这说明母体学院存在相关生态安排，不足以证明创之智科技的独立投资政策。",
+          "source_id": "sii_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026-06-18",
+          "description": "锡创投公告列上海创之智科技有限公司为穹彻智能新一轮数亿元融资的参与方；穹彻智能官网亦将其列入投资方。",
+          "source_id": "wuxi_noematrix"
+        }
+      ],
       "track_record": [
+        {
+          "description": "穹彻智能披露其2026年6月完成数亿元融资，并将上海创之智科技有限公司列为投资方；锡创投公告交叉确认其参与。数亿元为本轮总融资额，创之智的单笔金额未披露；此案例不代表完整投资组合。",
+          "source_id": "noematrix_about"
+        },
         {
           "description": "融资来源记录：穹彻智能 · 轮次未披露 · 2026-06-18 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e3b51be471b79167"
@@ -69236,6 +69332,30 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "noematrix_about",
+          "source_url": "https://www.noematrix.ai/about",
+          "source_title": "关于公司 | 穹彻智能",
+          "source_content_hash": "3c88a1dbb2c3f75ee7abc366783fd229aba53ce3a9d44e52836ee78fc9b8e046",
+          "quote": "上海创之智科技有限公司（上海创智学院全资子公司）",
+          "quote_hash": "68b535a1b060efb43eaa2be0af001462ddffe33cae16145bd38bdfeba6722fc5"
+        },
+        {
+          "source_id": "wuxi_noematrix",
+          "source_url": "https://www.wuxicapital.com.cn/news_59/575.html",
+          "source_title": "锡创动态 | 穹彻智能完成新一轮融资，锡创投加码人工智能“大脑”赛道-锡创投-无锡市创新投资集团有限公司",
+          "source_content_hash": "9e0afb612f4b5858869ee4cc69948b949ceabdcba4de54709d983263182577d6",
+          "quote": "上海创之智科技有限公司参与投资",
+          "quote_hash": "46ab0322726b760ed10df39e984317137b2ac733e6591e32203cf64f6f57e971"
+        },
+        {
+          "source_id": "sii_about",
+          "source_url": "https://www.sii.edu.cn/xygk/list.htm",
+          "source_title": "学院概况 | 上海创智学院",
+          "source_content_hash": "4ce6cd5e8dea36185ba578b97bb6dd5a035775621e99adc5e7e53376dc3b91f6",
+          "quote": "学院组织投资机构和孵化机构进行遴选，通过创投基金进行支持",
+          "quote_hash": "11c8a4a3a3474ad958987ffafa8b9c6aa1140377314e054be427369e062bbab6"
+        },
         {
           "source_id": "FISRC-e3b51be471b79167",
           "source_url": "https://www.wuxicapital.com.cn/news_59/575.html",
@@ -69245,7 +69365,7 @@
           "quote_hash": "9a56d47990c9b47b90dd3b1b9aa7578bbbecb53cd57d2bce6b90d2cd9b0972cf"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28"
     },
     "INV-d59e358c542939": {
       "summary": "上海交大AI未来基金由上海交通大学人工智能学院发起、校友支持，围绕“科研+科创”双轮驱动青年AI人才与成果转化。官方资料称基金包含科研支持计划及面向创业师生的天使投资计划；公开来源未披露基金规模或单项目投资额。",
