@@ -2023,6 +2023,51 @@ test("headline-only Claims resolve through their event's full canonical source b
   assert.equal(subjectCompanyForEvent(intakeEvent, entities, {}, [claim], intakeQuotes)?.canonical_name, "Fluidstack");
 });
 
+test("accepted intake excerpts bind a uniquely cited teaser claim to its funding article", () => {
+  const entities = [
+    { entity_id: "EN-BAOYANG-HEADLINE", entity_type: "organization_candidate", canonical_name: "包养式" },
+    { entity_id: "EN-JANE-STREET", entity_type: "organization_candidate", canonical_name: "Jane Street", verification_status: "verified" },
+  ];
+  const claim = {
+    claim_id: "CL-FLUIDSTACK-TEASER",
+    claim_type: "funding",
+    verification_status: "accepted",
+    raw_id: "RAW-V4-CLAIM",
+    subject: "包养式",
+    object: "15亿美元融资",
+    source_quote: "一则低调的融资消息让AI行业炸开了锅。",
+  };
+  const event = {
+    event_id: "EV-FLUIDSTACK-TEASER",
+    display_title_zh: claim.source_quote,
+    action: "完成融资",
+    object: "15亿美元融资",
+    metrics: ["15亿美元"],
+    entities: entities.map((entity) => entity.entity_id),
+    claim_refs: [claim.claim_id],
+    source_refs: [],
+  };
+  const fundingExcerpt = "近日，外媒爆出AI基础设施公司Fluidstack完成15亿美元融资，投后估值180亿美元（约1200亿人民币），领投方是Jane Street。";
+  const intakeDocument = {
+    raw_id: "RAW-ACCEPTED-ARTICLE",
+    title_original: "“包养式融资”，估值1200亿 60天内，这家公司的估值翻了2.4倍。 投中网 · 12小时前",
+    intake_diagnostics: { key_excerpts: [
+      { type: "funding", text: claim.source_quote },
+      { type: "funding", text: fundingExcerpt },
+    ] },
+  };
+  const quotes = canonicalSourceQuoteBodies({ claims: [claim], sourceArtifacts: [], rawDocuments: [] }, event, [intakeDocument]);
+
+  assert.ok(quotes.includes(fundingExcerpt));
+  assert.equal(subjectCompanyForEvent(event, entities, {}, [claim], quotes)?.canonical_name, "Fluidstack");
+
+  const ambiguousQuotes = canonicalSourceQuoteBodies({ claims: [claim], sourceArtifacts: [], rawDocuments: [] }, event, [
+    intakeDocument,
+    { ...intakeDocument, raw_id: "RAW-SECOND-ARTICLE", title_original: "另一篇报道", source_url: "https://example.com/second" },
+  ]);
+  assert.notEqual(subjectCompanyForEvent(event, entities, {}, [claim], ambiguousQuotes)?.canonical_name, "Fluidstack");
+});
+
 test("normalization restores previously unsupported plus rounds from stored original evidence", () => {
   const card = validCard();
   card.financing.round = "其他融资";

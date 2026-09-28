@@ -369,13 +369,27 @@ export function canonicalSourceQuoteBodies(bundle, event, acceptedIntakeDocument
     const raw = titleMatches[0];
     titleBoundAcceptedDocuments.set(raw.raw_id || normalizedUrlKey(raw.source_url || raw.canonical_url), raw);
   }
+  const acceptedQuoteAnchors = acceptedFundingClaims
+    .map((claim) => normalizedTitleKey(claim.source_quote))
+    .filter((quote) => quote.length >= 12);
+  for (const quoteAnchor of acceptedQuoteAnchors) {
+    const quoteMatches = acceptedIntakeDocuments.filter((raw) => {
+      const excerpts = (raw.intake_diagnostics?.key_excerpts || []).map((excerpt) => excerpt.text);
+      return [raw.body_clean, ...excerpts]
+        .map(normalizedTitleKey)
+        .some((sourceText) => sourceText.includes(quoteAnchor));
+    });
+    if (quoteMatches.length !== 1) continue;
+    const raw = quoteMatches[0];
+    titleBoundAcceptedDocuments.set(raw.raw_id || normalizedUrlKey(raw.source_url || raw.canonical_url), raw);
+  }
   claimBoundRaw.push(...titleBoundAcceptedDocuments.values());
   // The accepted Claim's raw_id is a second canonical path to its source body.
   // During same-day China intake, the accepted article may still live in the
   // intake checkpoint while the V4 RawDocument/source_refs projection is being
   // assembled. Join that excerpt by the event's exact source URL, or by a unique
-  // accepted-intake article whose normalized title contains the accepted Claim's
-  // or CanonicalEvent's full headline quote.
+  // accepted-intake article whose title contains a full headline or whose
+  // excerpt uniquely contains an accepted Claim quote.
   const rawQuotes = claimBoundRaw.flatMap((raw) => [
     raw.body_clean,
     ...(raw.intake_diagnostics?.key_excerpts || []).map((excerpt) => excerpt.text),
