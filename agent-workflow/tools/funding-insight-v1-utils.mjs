@@ -1345,6 +1345,32 @@ export function subjectCompanyForEvent(event, entities, entityIndex = {}, claims
   const acceptedFundingClaims = eventClaims
     .filter((claim) => claim?.claim_type === "funding" && claim?.verification_status === "accepted");
   const acceptedFundingSubjects = acceptedFundingClaims
+    .filter((claim) => {
+      const subject = clean(claim.subject);
+      const normalizedSubject = normalizedName(subject);
+      if (!normalizedSubject) return false;
+      const quotedText = normalizedName(claim.source_quote);
+      const quotedCompanyTail = descriptiveCompanyTail(subject)
+        || subject.match(/(?:公司|企业|平台|品牌)[“"'‘]?([\p{Script=Han}A-Za-z0-9·&.-]{2,40})[”"'’]?$/u)?.[1];
+      if (quotedText.includes(normalizedSubject)
+        || (quotedCompanyTail && quotedText.includes(normalizedName(quotedCompanyTail)))) return true;
+
+      // Some accepted claims inherit a descriptive headline as their subject.
+      // Keep those only when the source independently names the recipient and
+      // confirms the same non-valuation funding amount.
+      const quoteCompany = fundedStartupNameFromClaims([claim]);
+      const subjectAmounts = [subject, claim.object, event.object]
+        .flatMap(fundingAmountMentions)
+        .filter((mention) => !mention.valuation && !mention.cumulative);
+      const quoteAmounts = fundingAmountMentions(claim.source_quote)
+        .filter((mention) => !mention.valuation && !mention.cumulative);
+      const sourceBackedAmount = subjectAmounts.some((subjectAmount) => quoteAmounts.some(
+        (quoteAmount) => fundingAmountsEquivalent(subjectAmount.raw, quoteAmount.raw),
+      ));
+      const descriptiveGroupSubject = /(?:\b(?:employees?|founders?|team|researchers?|scientists?|professors?|engineers?)\b|前.{0,20}(?:员工|工程师|教授|博士)|(?:团队|研究员|科学家|教授|工程师|创始人|创业者|博士))/iu.test(subject);
+      return Boolean(quoteCompany) && sourceBackedAmount
+        && (fundingAmountMentions(subject).length > 0 || descriptiveGroupSubject);
+    })
     .map((claim) => normalizedName(claim.subject))
     .filter(Boolean);
   // Founder-led headlines can omit the recipient's name. A long appositive
