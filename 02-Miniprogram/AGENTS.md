@@ -1,5 +1,7 @@
 # Guanlan Funding Mini Program
 
+Current source: 1.1.5 replaces only the financing overview with compact reviewed-data featured cards. Keep market partition, dated recent fallback and existing detail access controls. See `docs/REVIEW-1.1.5.md`.
+
 Current source: 1.1.2 makes both profile and registration avatar rows open one shared picker. Native avatar selections persist before application; bundled system avatars complete the same flow without requesting additional permissions. Failed/cancelled saves keep the previous avatar and nickname draft. See `docs/REVIEW-1.1.2.md`.
 
 Previous source: 1.1.1 removes the bounty page, share route and bundled workflow. Registered-session renewal requires both a signed previous token and fresh WeChat proof for the same resolved account. Membership expiry routes to the membership center; session recovery never opens registration automatically. See `docs/REVIEW-1.1.1.md`. Upload is not review submission or publication.

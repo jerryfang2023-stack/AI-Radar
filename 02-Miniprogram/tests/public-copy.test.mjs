@@ -61,9 +61,8 @@ test("uses the confirmed financing column and public-facing copy", () => {
   assert.equal(appConfig.tabBar.list[0].text, "融资");
   assert.equal(appConfig.tabBar.list[1].text, "生态");
   assert.match(terminalSource, /<app-header title="融资情报"/u);
-  assert.match(terminalSource, /class="funding-metrics-head"[\s\S]*融资动态全景[\s\S]*全球 · 中国/u);
-  assert.match(terminalSource, /<strong class="funding-metrics-value serif">\{\{scopeCardCount\}\}<\/strong><text>融资<\/text>/u);
-  assert.match(terminalSource, /class="funding-date"><strong class="funding-metrics-value serif">\{\{meta\.latestDate\}\}<\/strong><text>更新<\/text>/u);
+  assert.match(terminalSource, /今日融资精选/u);
+  assert.match(terminalSource, /bindtap="openFeatured"/u);
   assert.match(marketSource, /<app-header title="生态"/u);
   assert.match(marketSource, />生态图谱<[\s\S]*>生态名录</u);
   assert.doesNotMatch(marketSource, /数据更新至|本期信号/u);
