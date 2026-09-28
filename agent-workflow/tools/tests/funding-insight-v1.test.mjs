@@ -3395,8 +3395,10 @@ test("official corporate venture arm is classified as a corporate investor", () 
 test("reviewed discovery is identity-bound URL metadata and never imports snippets as evidence", async () => {
   const { reviewedResearchSeeds } = await import("../generate-funding-insights-deepseek.mjs");
   const event = {event_id:"EV-test"}, company={canonical_name:"FoloToy"};
-  const manifest={schema_version:"FUNDING-RESEARCH-SEEDS-V1",events:[{event_id:event.event_id,company_name:"FoloToy",discovery_provider:"web",queries:["FoloToy funding"],sources:[{url:"https://example.com/original",title:"FoloToy funding",provider_body:"untrusted snippet"}]}]};
+  const manifest={schema_version:"FUNDING-RESEARCH-SEEDS-V1",events:[{event_id:event.event_id,company_name:"FoloToy",discovery_provider:"web",queries:["FoloToy funding"],sources:[{url:"https://example.com/original",title:"FoloToy funding",provider_body:"untrusted snippet"},{url:"https://docs.folotoy.com/",title:"FoloToy product docs"}]}]};
   assert.equal(reviewedResearchSeeds(manifest,event,company)[0].provider_body, "");
+  assert.equal(reviewedResearchSeeds(manifest,event,company)[0].source_class, "independent");
+  assert.equal(reviewedResearchSeeds(manifest,event,company)[1].source_class, "official_candidate");
   assert.throws(()=>reviewedResearchSeeds(manifest,event,{canonical_name:"Other company"}),/identity_mismatch/);
   manifest.events[0].sources[0].url="http://localhost/private";
   assert.throws(()=>reviewedResearchSeeds(manifest,event,company),/invalid_research_seed_url/);

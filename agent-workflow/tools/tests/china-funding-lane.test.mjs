@@ -18,6 +18,17 @@ test("daily financing preserves individual card results inside the restored lane
   assert.ok(generator.includes(`--checkpoint-dir=${sourceDir}/card-checkpoints`));
   assert.ok(commands.some((args) => args[0].endsWith("/assert-funding-insights-v1.mjs")));
 });
+test("domestic pipeline can use reviewed multi-method research seeds when search quotas are unavailable", () => {
+  const sourceDir = "agent-workflow/reports/china-funding/2026-09-28";
+  const generator = chinaFundingPlan("2026-09-28", sourceDir, { researchSeeds: true })
+    .flatMap((stage) => stage.commands)
+    .find((args) => args[0].endsWith("/generate-funding-insights-deepseek.mjs"));
+  assert.ok(generator.includes(`--research-seeds=${sourceDir}/funding-research-seeds.json`));
+  const normalGenerator = chinaFundingPlan("2026-09-28", sourceDir)
+    .flatMap((stage) => stage.commands)
+    .find((args) => args[0].endsWith("/generate-funding-insights-deepseek.mjs"));
+  assert.ok(!normalGenerator.some((arg) => arg.startsWith("--research-seeds=")));
+});
 test("financing commentary and multi-event headlines cannot become company financing facts", () => {
   const source = { published_at: "2026-09-14", acquisition_channel: "china-funding" };
   const artifact = { source_url: "https://www.chinaventure.com.cn/news/2026/123456.html" };

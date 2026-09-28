@@ -70,7 +70,7 @@ export function reviewedResearchSeeds(manifest, event, company) {
   return (entry.sources || []).map((source) => {
     const url = new URL(source.url);
     if (url.protocol !== "https:" || url.username || url.password || /^(?:localhost|127\.|10\.|192\.168\.|169\.254\.|\[)/u.test(url.hostname)) throw new Error("invalid_research_seed_url");
-    return { url: url.href, title: clean(source.title), provider: entry.discovery_provider, provider_body: "", source_class: "independent", intent: "funding", query: entry.queries.join("; ") };
+    return { url: url.href, title: clean(source.title), provider: entry.discovery_provider, provider_body: "", source_class: sourceClass(url.href, company.canonical_name), intent: "funding", query: entry.queries.join("; ") };
   }).filter((source) => !seen.has(source.url) && seen.add(source.url));
 }
 
