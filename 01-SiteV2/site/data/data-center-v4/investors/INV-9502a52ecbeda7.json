@@ -129,21 +129,239 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Goodyear Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Goodyear Ventures 是 The Goodyear Tire & Rubber Company 旗下的企业风险投资基金，2020 年宣布启动，最初公布十年内向新出行解决方案投入 1 亿美元的目标。母公司资料称其投资种子至成长期的新出行科技；Goodyear Ventures 当前官网继续支持现有组合，并将关注点进一步转向可持续材料科学。官方公开案例包括参与 Gatik 融资及与其合作、参与 Nova Labs Series D，并列出 AmpUp、Helm.ai、Starship Technologies 等组合公司。1 亿美元为 2020 年公布的十年投资目标，不是当前 AUM 或单笔出资；公开资料未披露基金级回报。",
+      "facts": [
+        {
+          "field": "parent_company",
+          "label": "所属企业",
+          "value": "The Goodyear Tire & Rubber Company；母公司将 Goodyear Ventures 称为其风险投资基金。",
+          "source_id": "gy_corporate_collaborations"
+        },
+        {
+          "field": "launch_year",
+          "label": "基金启动年份",
+          "value": "2020 年。",
+          "source_id": "gy_launch_2020"
+        },
+        {
+          "field": "initial_commitment",
+          "label": "启动时公布的投资目标",
+          "value": "2020 年宣布的未来出行投资计划为 10 年内投入 1 亿美元；这是初始投资目标，并非现时管理规模、基金余额或实际单笔支票金额。",
+          "source_id": "gy_launch_2020"
+        },
+        {
+          "field": "investment_stages",
+          "label": "母公司披露的投资阶段",
+          "value": "种子期至成长期初创企业。",
+          "source_id": "gy_corporate_collaborations"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资主题与当前重点",
+          "value": [
+            "出行科技：便利、可及、可持续、高效和安全的移动体验",
+            "可持续材料科学：先进材料、产品性能提升和降低环境影响"
+          ],
+          "source_id": "gy_home_materials"
+        },
+        {
+          "field": "strategic_support",
+          "label": "母公司协同支持",
+          "value": "官网称 Goodyear 可提供财务投资以外的核心资源与技术专长；母公司介绍也称基金依托全球资源支持被投创业公司。",
+          "source_id": "gy_home_support"
+        },
+        {
+          "field": "current_team",
+          "label": "官网团队页列示成员与职务",
+          "value": [
+            "Aleda Schaffer（Goodyear Ventures 董事总经理）",
+            "Chitti Raju（企业风险投资高级投资经理）",
+            "Chris Varley（Goodyear Ventures Principal）",
+            "Werner Happenhofer（Goodyear Tire Intelligence & Solutions 副总裁）",
+            "Michael Kerns（材料科学高级总监）"
+          ],
+          "source_id": "gy_team"
+        },
+        {
+          "field": "public_portfolio",
+          "label": "官网组合页列示公司（非穷尽）",
+          "value": [
+            "AmpUp",
+            "Autofleet",
+            "CorrActions",
+            "Envoy",
+            "Formant",
+            "Gatik",
+            "Helm.ai",
+            "H Quest",
+            "Nova Labs",
+            "Ottometric",
+            "Pretred",
+            "Recurrent",
+            "Revel",
+            "Spiffy",
+            "Starship Technologies",
+            "Tactile Mobility",
+            "Zypp Electric"
+          ],
+          "source_id": "gy_portfolio"
+        },
+        {
+          "field": "innovation_centers",
+          "label": "团队页列出的 Goodyear 创新中心与实验室地点",
+          "value": [
+            "Akron, Ohio, USA",
+            "San Francisco, California, USA",
+            "Colmar-Berg, Luxembourg",
+            "Shanghai, China"
+          ],
+          "source_id": "gy_innovation_centers"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2020-01-07",
+          "description": "The Goodyear Tire & Rubber Company 宣布设立 Goodyear Ventures，初始目标为未来十年向未来出行解决方案投入 1 亿美元。该数值为公告中的计划目标，不能视作当前 AUM。",
+          "source_id": "gy_launch_2020"
+        },
+        {
+          "date": "2021-09-28",
+          "description": "Goodyear 官方公告称 Goodyear Ventures 参与 Gatik 的 Series B，并与 Gatik 开展中型自动驾驶货运车辆轮胎智能技术合作。公告没有披露基金的实际出资金额。",
+          "source_id": "gy_gatik_2021"
+        },
+        {
+          "date": "2022-03-30",
+          "description": "Goodyear 宣布将 Nova Labs 纳入组合，并称 Goodyear Ventures 参与该公司的 Series D 融资。公告没有披露机构具体出资额。",
+          "source_id": "gy_nova_2022"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Gatik · D轮 · 2026-08-26 · 参投C轮 · $200M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "母公司公告记录 Goodyear Ventures 参与 Gatik 的 Series B 并合作测试 Goodyear 轮胎智能技术；这体现财务投资与母公司产业协同，但公告未披露 Goodyear Ventures 的支票金额或投资回报。",
+          "source_id": "gy_gatik_2021"
+        },
+        {
+          "description": "母公司公告称 Goodyear Ventures 参与 Nova Labs 的 Series D，并将其加入组合；未披露机构的出资额或基金回报。",
+          "source_id": "gy_nova_2022"
+        },
+        {
+          "description": "当前官网组合页列有 AmpUp、Autofleet、Gatik、Helm.ai、Nova Labs、Starship Technologies 等案例。该清单属于机构披露的组合展示，不表示已退出或产生特定回报。",
+          "source_id": "gy_portfolio"
+        },
+        {
+          "description": "融资库关联的一篇二手来源将 Goodyear Ventures 列入 Gatik 的 $85M Series C 投资方名单；$85M 是 Gatik 的该轮融资总额，不是 Goodyear Ventures 的出资额。该来源与本库将历史参投关联到 Gatik 后续 $200M D 轮记录，也不能证明 Goodyear 参与了 D 轮。Goodyear 自身官方公告另确认其参与 Gatik Series B。",
           "source_id": "FISRC-7dc8a65571f189f0"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "Goodyear Ventures 被母公司官网和新闻稿作为其风险投资基金/基金品牌确认；现有公开来源没有表明它是与母公司分离的独立法律实体。2020 年公布的 1 亿美元是为新出行项目设定的十年投资目标，不是现时 AUM；没有查到基金级回报、退出回款或实际单笔出资金额披露。母公司官方新闻稿确认 Goodyear Ventures 参与 Gatik Series B；融资库关联的二手报道称其在 Series C 投资者名单中，并将历史参投关系关联到 Gatik 后续 D 轮记录，D 轮 $200M 是融资事件金额，不是 Goodyear Ventures 的投资额，也不能单凭该历史引用确认参与 D 轮。团队页列出的创新中心为 Goodyear Innovation Centers and Labs，不将其误称为 Goodyear Ventures 的注册办公室。官网提供联系表单，未核实到 Ventures 专用电话或邮箱。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Goodyear Ventures",
+          "url": "https://www.goodyearventures.com/",
+          "source_id": "gy_home_mobility"
+        },
+        {
+          "kind": "contact_form",
+          "label": "官方项目联系表单",
+          "value": "Goodyear Ventures 官网 Contact Us 表单",
+          "url": "https://www.goodyearventures.com/",
+          "source_id": "gy_home_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "gy_launch_2020",
+          "source_url": "https://news.goodyear.com/goodyear-to-advance-future-mobility-with-launch-of-new-venture-capital-fund",
+          "source_title": "Goodyear to Advance Future Mobility with Launch of New Venture Capital Fund | Goodyear Newsroom",
+          "source_content_hash": "c032ad190cef3e7b34ffc8b08dc6fb321bc2517b93025d6201ecac5c4247352d",
+          "quote": "Goodyear Ventures, with $100 million targeted for new investments in future mobility solutions over the next 10 years.",
+          "quote_hash": "703a603f3985716a1ce5ac601cd8f831a2e12ab35350c93385bfb7d271432e39"
+        },
+        {
+          "source_id": "gy_home_mobility",
+          "source_url": "https://www.goodyearventures.com/",
+          "source_title": "Goodyear Ventures | Official website",
+          "source_content_hash": "12cb29e6f2045df299fbfc371cd1384aedde0a22205be3572cd893339d5877de",
+          "quote": "Since 2020, Goodyear Ventures has invested in the future of mobility, with investments in companies that make mobility more convenient, accessible, sustainable, efficient and safe.",
+          "quote_hash": "88d0e4bbaa08b50900435194af6d44ad5d9e22ad3fb6ec6d3ab02e8ff39a15ed"
+        },
+        {
+          "source_id": "gy_home_materials",
+          "source_url": "https://www.goodyearventures.com/",
+          "source_title": "Goodyear Ventures | Official website",
+          "source_content_hash": "12cb29e6f2045df299fbfc371cd1384aedde0a22205be3572cd893339d5877de",
+          "quote": "We want to work with startups developing breakthrough solutions in material science.",
+          "quote_hash": "f3849043842993e8af5f2740a3c89de1c033e408e4f2a6da2301b9fe07c106ef"
+        },
+        {
+          "source_id": "gy_home_support",
+          "source_url": "https://www.goodyearventures.com/",
+          "source_title": "Goodyear Ventures | Official website",
+          "source_content_hash": "12cb29e6f2045df299fbfc371cd1384aedde0a22205be3572cd893339d5877de",
+          "quote": "we strive to leverage our core assets to support startups beyond a financial investment.",
+          "quote_hash": "51faebd846c5880a94f79e00d104dc532a77ed4e073aa7d376c8c9db52705702"
+        },
+        {
+          "source_id": "gy_home_contact",
+          "source_url": "https://www.goodyearventures.com/",
+          "source_title": "Goodyear Ventures | Official website",
+          "source_content_hash": "12cb29e6f2045df299fbfc371cd1384aedde0a22205be3572cd893339d5877de",
+          "quote": "We want to know what you’re up to, let’s talk!",
+          "quote_hash": "0579fb3a7ce31a578825029632f5bc56d559df62e448d92dd4cbd364fa84c9fc"
+        },
+        {
+          "source_id": "gy_corporate_collaborations",
+          "source_url": "https://corporate.goodyear.com/us/en/products-and-innovations/collaborations.html",
+          "source_title": "Collaborations | Goodyear Corporate",
+          "source_content_hash": "845c83e2094e65124bf6d80e3ba0ec717dc68b8bbbf895efae943dc304b02be6",
+          "quote": "Goodyear Ventures, our venture capital fund, is fueling this future by partnering and investing in seed-to-growth-stage startups in emerging mobility technology.",
+          "quote_hash": "7eba777ca1c1acdbfe993892cbcb4e7955b1fd354da0739ed6c129d3378dcab4"
+        },
+        {
+          "source_id": "gy_team",
+          "source_url": "https://www.goodyearventures.com/team",
+          "source_title": "Our Team | Goodyear Ventures",
+          "source_content_hash": "1b9749b1a056d17de06557da65f8be3ed21f9a174749f20690e79b9f13b17b00",
+          "quote": "Aleda Schaffer Managing Director, Goodyear Ventures\nChitti Raju Senior Corporate Venture Capital Associate\nChris Varley Principal, Goodyear Ventures\nWerner Happenhofer Vice President, Goodyear Tire Intelligence & Solutions\nMichael Kerns Senior Director, Material Science",
+          "quote_hash": "e9abd807f32601cfa292364b004d18780af991a027a8a7c53be43199185efce1"
+        },
+        {
+          "source_id": "gy_innovation_centers",
+          "source_url": "https://www.goodyearventures.com/team",
+          "source_title": "Our Team | Goodyear Ventures",
+          "source_content_hash": "1b9749b1a056d17de06557da65f8be3ed21f9a174749f20690e79b9f13b17b00",
+          "quote": "Goodyear Innovation Centers and Labs\nAkron, OH, USA\nSan Francisco, CA, USA\nColmar-Berg, Luxembourg\nShanghai, China",
+          "quote_hash": "37046591e846b197cd80a65473356989ef2cb7c839a724ffdb5a71a589dd15c7"
+        },
+        {
+          "source_id": "gy_portfolio",
+          "source_url": "https://www.goodyearventures.com/portfolio",
+          "source_title": "Our Portfolio | Goodyear Ventures",
+          "source_content_hash": "871c9c7f69d41fdcd8344ba92df959b4e49b530684f618ecb97b42846f8479ae",
+          "quote": "Goodyear Ventures Investment Portfolio\nAmpUp\nAutofleet\nCorrActions\nEnvoy\nFormant\nGatik\nHelm.ai\nH Quest\nNova Labs\nOttometric\nPretred\nRecurrent\nRevel\nSpiffy\nStarship Technologies\nTactile Mobility\nZypp Electric",
+          "quote_hash": "f5a359b81507aff9e273ff7bf64ad758cf8acad68aa62e06a6bc409e1b5829f5"
+        },
+        {
+          "source_id": "gy_gatik_2021",
+          "source_url": "https://news.goodyear.com/goodyear-invests-in-autonomous-trucking-company-gatik-and-collaborates-to-enhance-safety-and-efficiency-for-autonomous-middle-mile-logistics",
+          "source_title": "Goodyear Invests in Autonomous Trucking Company Gatik | Goodyear Newsroom",
+          "source_content_hash": "9526e1f3705d26ee748120532a93de0be640130431aa8df7dfc52d54a6b85914",
+          "quote": "Goodyear’s venture capital fund, Goodyear Ventures, participated in Gatik’s recently announced Series B funding.",
+          "quote_hash": "f0808f5d7d75bfd7cd90c19bdba3079ebb6d7620600862e8114c8b1ac1ddc8d9"
+        },
+        {
+          "source_id": "gy_nova_2022",
+          "source_url": "https://news.goodyear.com/goodyear-ventures-expands-portfolio-with-nova-labs-investment-to-advance-connected-mobility-on-the-helium-network",
+          "source_title": "Goodyear Ventures Expands Portfolio with Nova Labs Investment | Goodyear Newsroom",
+          "source_content_hash": "dc0a41f5c95011b94b179dddc78cb0cbeaceceaee29b0c20cbcdb93d4b10bae3",
+          "quote": "Goodyear Ventures recently participated in Nova Labs’ Series D financing round.",
+          "quote_hash": "9ef6c74b2acc5282fdfe0e7f6b2865d95d330b5dce4d30152c749184f4995939"
+        },
         {
           "source_id": "FISRC-7dc8a65571f189f0",
           "source_url": "https://salestools.io/en/report/gatik-raises-85m-series-c",
@@ -153,7 +371,7 @@
           "quote_hash": "ce8efb3244d703ecf37a83cb264f23bbd4fa29c81a61e76e114a7cb7701c26ae"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28"
     }
   }
 }
