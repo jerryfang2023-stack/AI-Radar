@@ -351,8 +351,10 @@ export function canonicalSourceQuoteBodies(bundle, event, acceptedIntakeDocument
     .filter((artifact) => (event.source_refs || []).includes(artifact.source_artifact_id))
     .map((artifact) => normalizedUrlKey(artifact.source_url || artifact.canonical_url))
     .filter(Boolean));
+  const eventSourceArtifactIds = new Set(event.source_refs || []);
   const sourceDocuments = [...(bundle.rawDocuments || []), ...acceptedIntakeDocuments];
   const claimBoundRaw = sourceDocuments.filter((raw) => acceptedRawIds.has(raw.raw_id)
+    || eventSourceArtifactIds.has(raw.source_artifact_id)
     || eventSourceUrls.has(normalizedUrlKey(raw.source_url || raw.canonical_url)));
   const normalizedTitleKey = (value) => clean(value).normalize("NFKC").toLowerCase().replace(/[^\p{L}\p{N}]+/gu, "");
   const titleAnchors = [
@@ -393,8 +395,8 @@ export function canonicalSourceQuoteBodies(bundle, event, acceptedIntakeDocument
   // The accepted Claim's raw_id is a second canonical path to its source body.
   // During same-day China intake, the accepted article may still live in the
   // intake checkpoint while the V4 RawDocument/source_refs projection is being
-  // assembled. Join that excerpt by the event's exact source URL, or by a unique
-  // accepted-intake article whose title contains a full headline or whose
+  // assembled. Join that excerpt by its raw/artifact ID or exact source URL, or
+  // by a unique accepted-intake article whose title contains a full headline or whose
   // excerpt uniquely contains an accepted Claim quote. A short event title is
   // also sufficient only when it binds to exactly one accepted intake article.
   const rawQuotes = claimBoundRaw.flatMap((raw) => [
@@ -938,7 +940,60 @@ async function processEvent(bundle, event, entityIndex, entityDecisions, company
   );
   const eventSourceQuotes = canonicalSourceQuoteBodies(bundle, event, acceptedIntake.raw_documents || []);
   const company = subjectCompanyForEvent(event, bundle.entities, entityIndex, bundle.claims, eventSourceQuotes);
-  if (!company) return { event_id: event.event_id, status: "blocked", problems: ["subject_company_unresolved"] };
+  const sourceResolutionDiagnostics = () => {
+    const claimById = new Map((bundle.claims || []).map((claim) => [claim.claim_id, claim]));
+    const eventClaims = (event.claim_refs || []).map((claimId) => claimById.get(claimId)).filter(Boolean);
+    const acceptedClaimRawIds = new Set(eventClaims
+      .filter((claim) => claim.claim_type === "funding" && claim.verification_status === "accepted")
+      .map((claim) => claim.raw_id).filter(Boolean));
+    const eventSourceRefs = new Set(event.source_refs || []);
+    const normalizeText = (value) => clean(value).normalize("NFKC").toLowerCase().replace(/[^\p{L}\p{N}]+/gu, "");
+    const eventTitle = normalizeText(event.display_title_zh);
+    return {
+      event_title: clean(event.display_title_zh),
+      event_source_refs: [...eventSourceRefs],
+      event_claim_refs: [...(event.claim_refs || [])],
+      event_entities: (event.entities || []).map((entityId) => {
+        const entity = (bundle.entities || []).find((candidate) => candidate.entity_id === entityId);
+        return { entity_id: entityId, canonical_name: entity?.canonical_name || "" };
+      }),
+      event_metrics: event.metrics || [],
+      accepted_funding_claims: eventClaims
+        .filter((claim) => claim.claim_type === "funding" && claim.verification_status === "accepted")
+        .map((claim) => ({
+          claim_id: claim.claim_id,
+          raw_id: claim.raw_id || "",
+          subject: claim.subject || "",
+          object: claim.object || "",
+          source_quote_length: normalizeText(claim.source_quote).length,
+        })),
+      intake_documents: (acceptedIntake.raw_documents || []).map((raw) => {
+        const title = normalizeText(raw.title_original || raw.title_zh);
+        const excerpts = (raw.intake_diagnostics?.key_excerpts || []).map((excerpt) => normalizeText(excerpt.text));
+        const quoteAnchors = eventClaims
+          .filter((claim) => claim.claim_type === "funding" && claim.verification_status === "accepted")
+          .map((claim) => normalizeText(claim.source_quote)).filter((quote) => quote.length >= 12);
+        return {
+          raw_id: raw.raw_id || "",
+          source_artifact_id: raw.source_artifact_id || "",
+          title: clean(raw.title_original || raw.title_zh).slice(0, 180),
+          matched_by_claim_raw_id: acceptedClaimRawIds.has(raw.raw_id),
+          matched_by_event_source_ref: eventSourceRefs.has(raw.source_artifact_id),
+          matched_by_event_title: eventTitle.length >= 5 && title.includes(eventTitle),
+          matched_by_claim_quote: quoteAnchors.some((anchor) => [raw.body_clean, ...excerpts]
+            .map(normalizeText).some((sourceText) => sourceText.includes(anchor))),
+        };
+      }),
+      source_quote_count: eventSourceQuotes.length,
+      resolved_company: company?.canonical_name || "",
+    };
+  };
+  if (!company) return {
+    event_id: event.event_id,
+    status: "blocked",
+    problems: ["subject_company_unresolved"],
+    source_resolution: sourceResolutionDiagnostics(),
+  };
   const research = await researchSources(bundle, event, company);
   if (research.sources.length < 2) {
     return {
@@ -946,6 +1001,7 @@ async function processEvent(bundle, event, entityIndex, entityDecisions, company
       company_name: company.canonical_name,
       status: "blocked",
       problems: ["research_sources_insufficient"],
+      source_resolution: sourceResolutionDiagnostics(),
       queries: research.queries,
       attempts: research.attempts,
     };
