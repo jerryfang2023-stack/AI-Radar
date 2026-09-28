@@ -219020,19 +219020,186 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Enza Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-04；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "coverage_note": "机构策略、团队履历、组合案例及招聘联系均来自官网；投资规模和跟投数据是机构自述，组合退出案例不等同于基金回报。AethexAI 的 300 万美元是公司本轮总额，未披露 Enza Capital 单笔金额。",
+        "summary": "Enza Capital 是一家投资非洲科技企业的多阶段风险投资机构，官网披露其首笔投资覆盖 Pre-seed 至 Series B，关注金融科技、AI、物流、人力资本、教育、气候与能源、网络安全及医疗健康。机构由 David Cohen、John Lazar 与 Mike Mompi 创立，并由 Nzwisisa Chidembo 担任驻场技术负责人；团队横跨全球投资、软件公司经营、非洲早期投资和创业公司规模化经验。",
+        "facts": [
+          {
+            "field": "investment_thesis",
+            "label": "投资方向",
+            "value": "支持运用技术解决非洲重大问题、推动行业数字化的创业团队。",
+            "source_id": "enza_home"
+          },
+          {
+            "field": "investment_stages",
+            "label": "首笔投资阶段",
+            "value": [
+              "Pre-seed",
+              "Seed",
+              "Series A",
+              "Series B"
+            ],
+            "source_id": "enza_home"
+          },
+          {
+            "field": "sectors",
+            "label": "官网列示赛道",
+            "value": [
+              "金融科技",
+              "人工智能",
+              "物流",
+              "人力资本",
+              "教育",
+              "能源与气候",
+              "网络安全",
+              "医疗健康"
+            ],
+            "source_id": "enza_home"
+          },
+          {
+            "field": "geographies",
+            "label": "官网列示市场",
+            "value": [
+              "科特迪瓦",
+              "埃及",
+              "加纳",
+              "肯尼亚",
+              "乌干达",
+              "摩洛哥",
+              "尼日利亚",
+              "卢旺达",
+              "塞内加尔",
+              "南非"
+            ],
+            "source_id": "enza_home"
+          },
+          {
+            "field": "offices",
+            "label": "官网列示办公室城市",
+            "value": [
+              "内罗毕",
+              "开罗",
+              "约翰内斯堡",
+              "伦敦",
+              "纽约"
+            ],
+            "source_id": "enza_home"
+          },
+          {
+            "field": "first_check_size",
+            "label": "首笔投资范围（机构自述）",
+            "value": "25 万至 500 万美元；典型区间为 50 万至 200 万美元。",
+            "source_id": "enza_home"
+          },
+          {
+            "field": "growth_vehicle",
+            "label": "Enza Growth Capital",
+            "value": "官网称其为常青型成长投资工具，可在较传统风投更长的持有周期内向单家公司投资最多 2000 万美元；用于现有组合中的高成长公司。",
+            "source_id": "enza_home"
+          },
+          {
+            "field": "follow_on_activity",
+            "label": "Fund I 跟投披露",
+            "value": "机构称 Fund I 支持的 23 家公司中，至少 12 家获得过一次跟投；这是跟投覆盖情况，并非基金回报指标。",
+            "source_id": "enza_home"
+          },
+          {
+            "field": "investment_model",
+            "label": "投资方式",
+            "value": "官网表示偏好领投或联合领投，也会与其他投资方共同投资。",
+            "source_id": "enza_home"
+          },
+          {
+            "field": "leadership",
+            "label": "创始及管理团队",
+            "value": "David Cohen（创始人、有限合伙人及投资委员会成员）；John Lazar（创始人、普通合伙人）；Mike Mompi（创始人、管理合伙人）；Nzwisisa Chidembo（驻场技术负责人）。",
+            "source_id": "enza_team"
+          },
+          {
+            "field": "team_background",
+            "label": "David Cohen 履历",
+            "value": "官网介绍其为私人投资人和慈善家，曾共同创立 Noonday Asset Management、任 Farallon Capital 合伙人，此前任职 Goldman Sachs；为牛津大学罗德学者，获发展经济学硕士。",
+            "source_id": "enza_team"
+          },
+          {
+            "field": "team_background",
+            "label": "John Lazar 履历",
+            "value": "官网介绍其曾任 Metaswitch Networks 首席执行官及董事长，该公司于 2020 年出售给 Microsoft；他是英国皇家工程院院士，并担任 Raspberry Pi Foundation 与 What3Words 董事长。",
+            "source_id": "enza_team"
+          },
+          {
+            "field": "team_background",
+            "label": "Mike Mompi 履历",
+            "value": "创立 Enza 前曾在 Global Innovation Fund 投资非洲科技企业，搭建并运营 ClearlySo 的早期投资业务，并共同创立 Accra Angel Network；拥有加州大学戴维斯分校经济学与传播学学位。",
+            "source_id": "enza_team"
+          },
+          {
+            "field": "team_background",
+            "label": "Nzwisisa Chidembo 履历",
+            "value": "官网称其创办并担任 Riskbloq CEO，曾在非洲规模化 40 多家技术型初创企业，拥有超过 18 年跨行业经验；这些数据为机构团队页面自述。",
+            "source_id": "enza_team"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：AethexAI · 预种子轮 · 2026-06-04 · 本轮参投 · $3 million。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "Enza 官网组合页将 Quro Medical、Orda Africa 与 YeboFresh 标为已退出；页面未披露退出日期或金额，属选列案例，不代表完整组合或基金回报。",
+            "source_id": "enza_portfolio"
+          },
+          {
+            "description": "AethexAI 于 2026-06-04 公布 300 万美元 Pre-seed 融资，来源称 Enza Capital 参与。300 万美元为公司本轮总融资额，Enza Capital 的具体出资额未披露。",
             "source_id": "FISRC-aa1f19ff48642176"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "机构官网",
+            "value": "Enza Capital",
+            "url": "https://www.enza.capital/",
+            "source_id": "enza_home"
+          },
+          {
+            "kind": "email",
+            "label": "招聘问题联系（非融资申请渠道）",
+            "value": "talent@enza.capital",
+            "url": "https://enza.capital/careers",
+            "source_id": "enza_careers"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "enza_home",
+            "source_url": "https://www.enza.capital/",
+            "source_title": "Homepage | Enza Capital",
+            "source_content_hash": "08ccabbb976dffde35dde6a5a5e62a32f0d6eac002f5c8f1fef96a308b980b0f",
+            "quote": "Our first check ranges from $250k to $5m USD",
+            "quote_hash": "c1480d0d8597544f0cff291db2399244f9b4dbe395b8ddf9849661dc5401f45e"
+          },
+          {
+            "source_id": "enza_team",
+            "source_url": "https://www.enza.capital/team",
+            "source_title": "Team | Enza Capital",
+            "source_content_hash": "2b753ed12ccc0b4f4ff017ca3b2129230bc56e4c345c013a70f9963797b3dd55",
+            "quote": "Founder & Limited Partner",
+            "quote_hash": "fcb3e3ba49ffdcbc7940698069ef17e0788d2951aa6561203bc4dc8c8c16229a"
+          },
+          {
+            "source_id": "enza_portfolio",
+            "source_url": "https://enza.capital/portfolio",
+            "source_title": "Portfolio | Enza Capital",
+            "source_content_hash": "3763e07fab19088f490f175b1949b80b45ba956b477ed80afb850a4656006bd1",
+            "quote": "Exited",
+            "quote_hash": "85fc46c17cd71d1d17d606fb4fcad90475ed151e989d75008f1cce429288e8d2"
+          },
+          {
+            "source_id": "enza_careers",
+            "source_url": "https://enza.capital/careers",
+            "source_title": "Careers | Enza Capital",
+            "source_content_hash": "eef573e4cb1c4418ebd904b81dfd2fb7bb39a55521129fd16dbc943cfff62742",
+            "quote": "Any questions, please write to talent@enza.capital.",
+            "quote_hash": "60c960a8f8b9c772c4203a05d5aa3f3da7024ad2bb83a4c3f2255a42598fb5af"
+          },
           {
             "source_id": "FISRC-aa1f19ff48642176",
             "source_url": "https://techafricanews.com/2026/06/04/aethexai-launches-with-3m-pre-seed-to-scale-enterprise-voice-ai-across-africa-and-the-middle-east/",
@@ -219042,7 +219209,7 @@
             "quote_hash": "fa7749e8716b23423c912dd2c3b130f86aea9217d1417361a140ddb067a2f215"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-28"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -243366,19 +243533,147 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Future Back Ventures by Bain & Company 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "coverage_note": "Future Back Ventures 官网将其描述为 Bain & Company 内部的风险投资基金，同时页脚说明该名称是 Bain & Company 的服务商标；不据此推断独立法律实体。Bain 校友企业的总体数据不等于该基金的组合或业绩。",
+        "summary": "Future Back Ventures 是 Bain & Company 内部的风险投资基金，主要投资由 Bain 校友创立或领导的早期公司，也会在个别情况下考虑非校友团队。基金采取跨行业、全球化策略，首笔投资通常覆盖 Pre-seed 至 Series B，通常与其他领投方共同投资，并结合 Bain 的顾问、行业、人才及校友网络资源支持企业。",
+        "facts": [
+          {
+            "field": "organization_background",
+            "label": "机构背景",
+            "value": "官网称 Future Back Ventures 是 Bain & Company 内部的风险投资基金；官网页脚称其为 Bain & Company, Inc. 的服务商标。",
+            "source_id": "fbv_about"
+          },
+          {
+            "field": "investment_thesis",
+            "label": "投资对象",
+            "value": "主要支持由 Bain & Company 校友创立或领导的早期创业公司；官网称在特定情况下也会考虑非校友团队。",
+            "source_id": "fbv_about"
+          },
+          {
+            "field": "investment_stages",
+            "label": "投资阶段",
+            "value": "首笔投资通常从 Pre-seed 到 Series B，之后可能在较后续轮次跟投。",
+            "source_id": "fbv_home"
+          },
+          {
+            "field": "sectors",
+            "label": "行业范围",
+            "value": "综合型基金，跨行业投资；官网列举科技、金融服务、消费品和工业等领域。",
+            "source_id": "fbv_home"
+          },
+          {
+            "field": "geographies",
+            "label": "投资地域",
+            "value": "官网称其跨地域寻找投资机会，服务全球创业者。",
+            "source_id": "fbv_about"
+          },
+          {
+            "field": "investment_model",
+            "label": "投资方式",
+            "value": "官网称通常不领投，而是与其他风险投资基金合作、作为共同投资方参与。",
+            "source_id": "fbv_home"
+          },
+          {
+            "field": "value_add",
+            "label": "投后支持",
+            "value": "通过 Bain 顾问支持、行业洞察、全球网络、人脉介绍、人才资源及 Bain 知识产权等支持组合公司。",
+            "source_id": "fbv_home"
+          },
+          {
+            "field": "leadership",
+            "label": "基金管理团队",
+            "value": "Ann Scott-Plante（基金负责人）；Cameron Ramsay（负责人）；Miles Cook（投资委员会主席）。",
+            "source_id": "fbv_about"
+          },
+          {
+            "field": "team_background",
+            "label": "Ann Scott-Plante 履历",
+            "value": "曾在创业生态工作 15 年，联合创立健身科技公司 Wello 并任联合 CEO，负责工程、产品与运营；Wello 被 Weight Watchers 收购后，她在该公司负责数字产品及旧金山办公室四年。曾为 Fitbit、Samsung Next 等企业提供咨询，并任天使投资人、导师和顾问；毕业于 Dartmouth College 和 Stanford Graduate School of Business。",
+            "source_id": "fbv_ann"
+          },
+          {
+            "field": "team_background",
+            "label": "Cameron Ramsay 履历",
+            "value": "曾在 Bain 从事咨询工作，之后参与 Bain 新业务孵化，创立并扩展 Results Talent Network，并担任 Caliber by Bain 创始人及负责人；曾在约翰内斯堡、洛杉矶和伦敦 Bain 办公室工作。拥有开普敦大学金融学本、硕士阶段学习经历。",
+            "source_id": "fbv_cameron"
+          },
+          {
+            "field": "team_background",
+            "label": "Miles Cook 履历",
+            "value": "Bain 高级合伙人，曾参与启动其私募股权业务、亚特兰大办公室、供应链业务及 Bain Advisor Network；亦为天使投资人和创业公司顾问，曾任多家后来成功退出公司的董事。",
+            "source_id": "fbv_miles"
+          },
+          {
+            "field": "ecosystem_metrics",
+            "label": "Bain 校友创业生态数据（非基金业绩）",
+            "value": "Future Back 官网称 Bain 校友创立的企业中有 40 多家估值超过 10 亿美元，且这些企业累计获得超过 250 亿美元融资；此为校友创业生态统计，不是 Future Back Ventures 组合或基金回报数据。",
+            "source_id": "fbv_home"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：Zenskar · A轮 · 2026-04-17 · 本轮参投 · $15 million。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "Zenskar 于 2026-04-17 公布 1500 万美元 A 轮融资，来源列明 Future Back Ventures by Bain & Company 参与。本轮金额为公司总融资额，未披露该机构的单笔投资金额。",
             "source_id": "FISRC-d87b08783c0a062f"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "机构官网",
+            "value": "Future Back Ventures by Bain & Company",
+            "url": "https://www.futureback.vc/",
+            "source_id": "fbv_home"
+          },
+          {
+            "kind": "application",
+            "label": "创始人推荐与项目联系",
+            "value": "官网邀请提交公司名称、网站或 LinkedIn 主页以推荐创始人。",
+            "url": "https://www.futureback.vc/about",
+            "source_id": "fbv_about"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "fbv_home",
+            "source_url": "https://www.futureback.vc/",
+            "source_title": "Future Back Ventures by Bain & Company",
+            "source_content_hash": "5a3795c33f69e9418cbf0cbe5f715d03eaf447b33250a24226588a5f9432c24c",
+            "quote": "40+ Alumni-founded companies valued at over $1B",
+            "quote_hash": "b6c9027f97432b0ea632fe40aabe0bd741a951a3232da72e4c3c10fe58a34468"
+          },
+          {
+            "source_id": "fbv_about",
+            "source_url": "https://www.futureback.vc/about",
+            "source_title": "About | Future Back Ventures",
+            "source_content_hash": "0e9b305b826341de2868cffda29bf6e6b95fdfb696730a3204b9848ba70cdd9d",
+            "quote": "We are a venture fund within Bain & Company that invests in early-stage, promising start-ups founded or led by Bain alumni.",
+            "quote_hash": "4fc65fbc61360f14a0e2eccb577fd9a85910ecbe1e4c4d1f24ffb3e71de4c42e"
+          },
+          {
+            "source_id": "fbv_ann",
+            "source_url": "https://www.futureback.vc/ann-scott-plante",
+            "source_title": "Ann Scott-Plante | Future Back Ventures",
+            "source_content_hash": "50705b4e858b772fafe5bf624f646cbe5cc510a7be1cf235ef5e9c3be3e91ead",
+            "quote": "Ann co-founded and launched Wello, a first of its kind fitness technology company.",
+            "quote_hash": "eaf730a13329aa8c3d486d4ce46943bbfdff0e4bc356b93f8db2ebd55680ce18"
+          },
+          {
+            "source_id": "fbv_cameron",
+            "source_url": "https://www.futureback.vc/cameron-ramsay",
+            "source_title": "Cameron Ramsay | Future Back Ventures",
+            "source_content_hash": "0d38f81172584c4a5f4075ff429a01a1a840e7d79e715f28d119c4a782789222",
+            "quote": "During his time with Engine 2, Cameron launched and scaled Results Talent Network (RTN), a freelance marketplace",
+            "quote_hash": "4bf10c8a59f212675af18e9603b6d666a02a435551473a148b29c63f9fdda580"
+          },
+          {
+            "source_id": "fbv_miles",
+            "source_url": "https://www.futureback.vc/miles-cook",
+            "source_title": "Miles Cook | Future Back Ventures",
+            "source_content_hash": "aaad98c60b1769ea467bdb2d035914d9ee326365e0de5f71864bf2dc50e9c982",
+            "quote": "Miles has a long history starting new endeavors inside Bain",
+            "quote_hash": "fd4eeb58d7e597611536bad0530eff5f78cc64f7ec2f4a65f320c7611706a59c"
+          },
           {
             "source_id": "FISRC-d87b08783c0a062f",
             "source_url": "https://www.businesswire.com/news/home/20260416872552/en/Zenskar-Raises-%2415-Million-Series-A-to-Expand-Agentic-Capabilities-for-B2B-Revenue-Automation",
@@ -243388,7 +243683,7 @@
             "quote_hash": "90631e3bd2a5b5b513357f91a31d0c99a6ea4f92c480c0e5921baebdded90a2e"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-28"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -249688,19 +249983,145 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Fellows Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "coverage_note": "机构方向、团队身份、组合名单及联系信息来自 Fellows Fund 官网；其组合页明确说明列出的公司并不代表全部投资。Fellows Community 是专家网络，不等同于雇员或投资团队。",
+        "summary": "Fellows Fund 是一家专注前沿技术的风险投资机构，官网称自 2021 年起投资创业者，并展示超过 50 家组合公司。其合伙团队由 AI 研究者、创业者及企业管理者组成；另设约 40 位 AI 研究、企业和创业领域从业者构成的 Fellows Community。官网公开三位普通合伙人的项目联系邮箱。",
+        "facts": [
+          {
+            "field": "investment_focus",
+            "label": "投资方向",
+            "value": "关注前沿技术及 AI、机器人等领域；团队介绍将其描述为投资 AI 研究、创业和企业技术建设者。",
+            "source_id": "fellows_team"
+          },
+          {
+            "field": "investment_activity_since",
+            "label": "投资活动起始年份",
+            "value": "官网称自 2021 年起开始投资；不据此推断其法律实体成立日期。",
+            "source_id": "fellows_home"
+          },
+          {
+            "field": "leadership",
+            "label": "普通合伙人",
+            "value": "Alex Ren（创始合伙人）；JC Mao（普通合伙人）；Lucas Sheiner（普通合伙人）。",
+            "source_id": "fellows_team"
+          },
+          {
+            "field": "venture_partners",
+            "label": "风险合伙人",
+            "value": "Charles Elkan、Nick Chong。",
+            "source_id": "fellows_team"
+          },
+          {
+            "field": "community",
+            "label": "Fellows Community 专家网络",
+            "value": "官网称该网络有 40 位 AI 研究、企业和公司建设领域从业者；成员示例包括 Replit 的 Michele Catasta、Periodic Labs 联合创始人 Liam Fedus、Abridge 联合创始人兼 CTO Zachary Lipton、UC Berkeley 教授 Dawn Song、Waymo 研究副总裁 Dragomir Anguelov 和 Zoom CTO Xuedong Huang。此网络成员不代表基金雇员。",
+            "source_id": "fellows_team"
+          },
+          {
+            "field": "portfolio_scale",
+            "label": "公开组合规模",
+            "value": "组合页列有 50 多家公司，并明确说明所列公司不代表 Fellows Fund 的全部投资。",
+            "source_id": "fellows_portfolio"
+          },
+          {
+            "field": "portfolio_examples",
+            "label": "官网展示的组合案例",
+            "value": [
+              "Generalist",
+              "Periodic Labs",
+              "Corgi",
+              "Harmonic",
+              "Abridge",
+              "Replit",
+              "Gamma",
+              "Higgsfield",
+              "Dyna Robotics"
+            ],
+            "source_id": "fellows_portfolio"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：Sycamore · 种子轮 · 2026-03-30 · 本轮参投 · $65 million。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "Fellows Fund 于 2026-06-07 在官网发布对 Generalist 的投资说明，介绍其投资逻辑与对该机器人基础模型公司的支持；公告未披露 Fellows Fund 的投资金额。",
+            "source_id": "fellows_generalist"
+          },
+          {
+            "description": "Sycamore 于 2026-03-30 宣布 6500 万美元种子轮融资，列明 Fellows Fund 参投。6500 万美元为公司本轮总额，未披露 Fellows Fund 的单笔投资金额。",
             "source_id": "FISRC-d354011359557f2f"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "机构官网",
+            "value": "Fellows Fund",
+            "url": "https://fellowsfundvc.com/",
+            "source_id": "fellows_home"
+          },
+          {
+            "kind": "email",
+            "label": "Alex Ren｜创始合伙人联系",
+            "value": "alex@fellows.fund",
+            "url": "https://fellowsfundvc.com/contact",
+            "source_id": "fellows_contact"
+          },
+          {
+            "kind": "email",
+            "label": "JC Mao｜普通合伙人联系",
+            "value": "jc@fellows.fund",
+            "url": "https://fellowsfundvc.com/contact",
+            "source_id": "fellows_contact"
+          },
+          {
+            "kind": "email",
+            "label": "Lucas Sheiner｜普通合伙人联系",
+            "value": "lucas@fellows.fund",
+            "url": "https://fellowsfundvc.com/contact",
+            "source_id": "fellows_contact"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "fellows_home",
+            "source_url": "https://fellowsfundvc.com/",
+            "source_title": "Fellows Fund",
+            "source_content_hash": "ad86a7f274fc7155d6a61d574415be2baef16a7a4f6a714df8ac7490784b3f41",
+            "quote": "Since 2021, we've invested in the next generation of exceptional founders, helping them build, hire, and scale.",
+            "quote_hash": "81a059ac410248a489bd86369ebdfcca3bcf04f5010201af8b0b4ec035abb277"
+          },
+          {
+            "source_id": "fellows_team",
+            "source_url": "https://fellowsfundvc.com/team",
+            "source_title": "Team | Fellows Fund",
+            "source_content_hash": "28c3b7d2774b253b1ffb3ca50f667b74e88bbeee87e26e7ead5d05ef44593b27",
+            "quote": "A partnership of AI researchers, founders, and enterprise executives with decades of collective experience building and scaling frontier technology.",
+            "quote_hash": "e749744d6a52bbb2f44ed051e0d71252a3215a7a48a689674db62f1547522632"
+          },
+          {
+            "source_id": "fellows_portfolio",
+            "source_url": "https://fellowsfundvc.com/portfolio",
+            "source_title": "Portfolio | Fellows Fund",
+            "source_content_hash": "20e7218acbeff116c68fa135c604d352fbe18523adcc1137a54c9c18deecb5c9",
+            "quote": "Portfolio companies identified herein do not represent all investments made by Fellows Fund.",
+            "quote_hash": "a0066ff62fd0ec1b87465785431d967d75903c26cde71c4c1886ca3cf3b17e6c"
+          },
+          {
+            "source_id": "fellows_contact",
+            "source_url": "https://fellowsfundvc.com/contact",
+            "source_title": "Contact | Fellows Fund",
+            "source_content_hash": "2e84f8364cc306ce052be9879f5b5bb941d5c5c85185868dec086e66673664ff",
+            "quote": "Reach out to any of our partners directly.",
+            "quote_hash": "a15bc78ccc841c60ac85a8df289729798ed24b961a4026344f4249e658810b53"
+          },
+          {
+            "source_id": "fellows_generalist",
+            "source_url": "https://fellowsfundvc.com/blog/our-investment-in-generalist-foundation-model-for-the-physical-world",
+            "source_title": "Our Investment in Generalist: Foundation Model for the Physical World | Fellows Fund",
+            "source_content_hash": "d292900d162b5f974fe8f5826c6d411b0af2438b7a8c0acda3e235d2b65ca7a5",
+            "quote": "Generalist joins a set of Fellows Fund investments in leading research labs across verticals",
+            "quote_hash": "dc1f81c4cfbb656dfdce1f42c242ae62d4f8eeeff55e3faad6ba479d27f9a745"
+          },
           {
             "source_id": "FISRC-d354011359557f2f",
             "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
@@ -249710,7 +250131,7 @@
             "quote_hash": "e443cbfb7f795d800b13ba7a1cba8c2f429b60d8881136f8543d2e9968332aca"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-28"
       },
       "activity_count": 1,
       "portfolio_companies": [

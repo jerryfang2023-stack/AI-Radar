@@ -139,19 +139,147 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Future Back Ventures by Bain & Company 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Future Back Ventures 官网将其描述为 Bain & Company 内部的风险投资基金，同时页脚说明该名称是 Bain & Company 的服务商标；不据此推断独立法律实体。Bain 校友企业的总体数据不等于该基金的组合或业绩。",
+      "summary": "Future Back Ventures 是 Bain & Company 内部的风险投资基金，主要投资由 Bain 校友创立或领导的早期公司，也会在个别情况下考虑非校友团队。基金采取跨行业、全球化策略，首笔投资通常覆盖 Pre-seed 至 Series B，通常与其他领投方共同投资，并结合 Bain 的顾问、行业、人才及校友网络资源支持企业。",
+      "facts": [
+        {
+          "field": "organization_background",
+          "label": "机构背景",
+          "value": "官网称 Future Back Ventures 是 Bain & Company 内部的风险投资基金；官网页脚称其为 Bain & Company, Inc. 的服务商标。",
+          "source_id": "fbv_about"
+        },
+        {
+          "field": "investment_thesis",
+          "label": "投资对象",
+          "value": "主要支持由 Bain & Company 校友创立或领导的早期创业公司；官网称在特定情况下也会考虑非校友团队。",
+          "source_id": "fbv_about"
+        },
+        {
+          "field": "investment_stages",
+          "label": "投资阶段",
+          "value": "首笔投资通常从 Pre-seed 到 Series B，之后可能在较后续轮次跟投。",
+          "source_id": "fbv_home"
+        },
+        {
+          "field": "sectors",
+          "label": "行业范围",
+          "value": "综合型基金，跨行业投资；官网列举科技、金融服务、消费品和工业等领域。",
+          "source_id": "fbv_home"
+        },
+        {
+          "field": "geographies",
+          "label": "投资地域",
+          "value": "官网称其跨地域寻找投资机会，服务全球创业者。",
+          "source_id": "fbv_about"
+        },
+        {
+          "field": "investment_model",
+          "label": "投资方式",
+          "value": "官网称通常不领投，而是与其他风险投资基金合作、作为共同投资方参与。",
+          "source_id": "fbv_home"
+        },
+        {
+          "field": "value_add",
+          "label": "投后支持",
+          "value": "通过 Bain 顾问支持、行业洞察、全球网络、人脉介绍、人才资源及 Bain 知识产权等支持组合公司。",
+          "source_id": "fbv_home"
+        },
+        {
+          "field": "leadership",
+          "label": "基金管理团队",
+          "value": "Ann Scott-Plante（基金负责人）；Cameron Ramsay（负责人）；Miles Cook（投资委员会主席）。",
+          "source_id": "fbv_about"
+        },
+        {
+          "field": "team_background",
+          "label": "Ann Scott-Plante 履历",
+          "value": "曾在创业生态工作 15 年，联合创立健身科技公司 Wello 并任联合 CEO，负责工程、产品与运营；Wello 被 Weight Watchers 收购后，她在该公司负责数字产品及旧金山办公室四年。曾为 Fitbit、Samsung Next 等企业提供咨询，并任天使投资人、导师和顾问；毕业于 Dartmouth College 和 Stanford Graduate School of Business。",
+          "source_id": "fbv_ann"
+        },
+        {
+          "field": "team_background",
+          "label": "Cameron Ramsay 履历",
+          "value": "曾在 Bain 从事咨询工作，之后参与 Bain 新业务孵化，创立并扩展 Results Talent Network，并担任 Caliber by Bain 创始人及负责人；曾在约翰内斯堡、洛杉矶和伦敦 Bain 办公室工作。拥有开普敦大学金融学本、硕士阶段学习经历。",
+          "source_id": "fbv_cameron"
+        },
+        {
+          "field": "team_background",
+          "label": "Miles Cook 履历",
+          "value": "Bain 高级合伙人，曾参与启动其私募股权业务、亚特兰大办公室、供应链业务及 Bain Advisor Network；亦为天使投资人和创业公司顾问，曾任多家后来成功退出公司的董事。",
+          "source_id": "fbv_miles"
+        },
+        {
+          "field": "ecosystem_metrics",
+          "label": "Bain 校友创业生态数据（非基金业绩）",
+          "value": "Future Back 官网称 Bain 校友创立的企业中有 40 多家估值超过 10 亿美元，且这些企业累计获得超过 250 亿美元融资；此为校友创业生态统计，不是 Future Back Ventures 组合或基金回报数据。",
+          "source_id": "fbv_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Zenskar · A轮 · 2026-04-17 · 本轮参投 · $15 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Zenskar 于 2026-04-17 公布 1500 万美元 A 轮融资，来源列明 Future Back Ventures by Bain & Company 参与。本轮金额为公司总融资额，未披露该机构的单笔投资金额。",
           "source_id": "FISRC-d87b08783c0a062f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Future Back Ventures by Bain & Company",
+          "url": "https://www.futureback.vc/",
+          "source_id": "fbv_home"
+        },
+        {
+          "kind": "application",
+          "label": "创始人推荐与项目联系",
+          "value": "官网邀请提交公司名称、网站或 LinkedIn 主页以推荐创始人。",
+          "url": "https://www.futureback.vc/about",
+          "source_id": "fbv_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "fbv_home",
+          "source_url": "https://www.futureback.vc/",
+          "source_title": "Future Back Ventures by Bain & Company",
+          "source_content_hash": "5a3795c33f69e9418cbf0cbe5f715d03eaf447b33250a24226588a5f9432c24c",
+          "quote": "40+ Alumni-founded companies valued at over $1B",
+          "quote_hash": "b6c9027f97432b0ea632fe40aabe0bd741a951a3232da72e4c3c10fe58a34468"
+        },
+        {
+          "source_id": "fbv_about",
+          "source_url": "https://www.futureback.vc/about",
+          "source_title": "About | Future Back Ventures",
+          "source_content_hash": "0e9b305b826341de2868cffda29bf6e6b95fdfb696730a3204b9848ba70cdd9d",
+          "quote": "We are a venture fund within Bain & Company that invests in early-stage, promising start-ups founded or led by Bain alumni.",
+          "quote_hash": "4fc65fbc61360f14a0e2eccb577fd9a85910ecbe1e4c4d1f24ffb3e71de4c42e"
+        },
+        {
+          "source_id": "fbv_ann",
+          "source_url": "https://www.futureback.vc/ann-scott-plante",
+          "source_title": "Ann Scott-Plante | Future Back Ventures",
+          "source_content_hash": "50705b4e858b772fafe5bf624f646cbe5cc510a7be1cf235ef5e9c3be3e91ead",
+          "quote": "Ann co-founded and launched Wello, a first of its kind fitness technology company.",
+          "quote_hash": "eaf730a13329aa8c3d486d4ce46943bbfdff0e4bc356b93f8db2ebd55680ce18"
+        },
+        {
+          "source_id": "fbv_cameron",
+          "source_url": "https://www.futureback.vc/cameron-ramsay",
+          "source_title": "Cameron Ramsay | Future Back Ventures",
+          "source_content_hash": "0d38f81172584c4a5f4075ff429a01a1a840e7d79e715f28d119c4a782789222",
+          "quote": "During his time with Engine 2, Cameron launched and scaled Results Talent Network (RTN), a freelance marketplace",
+          "quote_hash": "4bf10c8a59f212675af18e9603b6d666a02a435551473a148b29c63f9fdda580"
+        },
+        {
+          "source_id": "fbv_miles",
+          "source_url": "https://www.futureback.vc/miles-cook",
+          "source_title": "Miles Cook | Future Back Ventures",
+          "source_content_hash": "aaad98c60b1769ea467bdb2d035914d9ee326365e0de5f71864bf2dc50e9c982",
+          "quote": "Miles has a long history starting new endeavors inside Bain",
+          "quote_hash": "fd4eeb58d7e597611536bad0530eff5f78cc64f7ec2f4a65f320c7611706a59c"
+        },
         {
           "source_id": "FISRC-d87b08783c0a062f",
           "source_url": "https://www.businesswire.com/news/home/20260416872552/en/Zenskar-Raises-%2415-Million-Series-A-to-Expand-Agentic-Capabilities-for-B2B-Revenue-Automation",
@@ -161,7 +289,7 @@
           "quote_hash": "90631e3bd2a5b5b513357f91a31d0c99a6ea4f92c480c0e5921baebdded90a2e"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28"
     }
   }
 }

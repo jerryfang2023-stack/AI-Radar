@@ -141,19 +141,145 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Fellows Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构方向、团队身份、组合名单及联系信息来自 Fellows Fund 官网；其组合页明确说明列出的公司并不代表全部投资。Fellows Community 是专家网络，不等同于雇员或投资团队。",
+      "summary": "Fellows Fund 是一家专注前沿技术的风险投资机构，官网称自 2021 年起投资创业者，并展示超过 50 家组合公司。其合伙团队由 AI 研究者、创业者及企业管理者组成；另设约 40 位 AI 研究、企业和创业领域从业者构成的 Fellows Community。官网公开三位普通合伙人的项目联系邮箱。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "关注前沿技术及 AI、机器人等领域；团队介绍将其描述为投资 AI 研究、创业和企业技术建设者。",
+          "source_id": "fellows_team"
+        },
+        {
+          "field": "investment_activity_since",
+          "label": "投资活动起始年份",
+          "value": "官网称自 2021 年起开始投资；不据此推断其法律实体成立日期。",
+          "source_id": "fellows_home"
+        },
+        {
+          "field": "leadership",
+          "label": "普通合伙人",
+          "value": "Alex Ren（创始合伙人）；JC Mao（普通合伙人）；Lucas Sheiner（普通合伙人）。",
+          "source_id": "fellows_team"
+        },
+        {
+          "field": "venture_partners",
+          "label": "风险合伙人",
+          "value": "Charles Elkan、Nick Chong。",
+          "source_id": "fellows_team"
+        },
+        {
+          "field": "community",
+          "label": "Fellows Community 专家网络",
+          "value": "官网称该网络有 40 位 AI 研究、企业和公司建设领域从业者；成员示例包括 Replit 的 Michele Catasta、Periodic Labs 联合创始人 Liam Fedus、Abridge 联合创始人兼 CTO Zachary Lipton、UC Berkeley 教授 Dawn Song、Waymo 研究副总裁 Dragomir Anguelov 和 Zoom CTO Xuedong Huang。此网络成员不代表基金雇员。",
+          "source_id": "fellows_team"
+        },
+        {
+          "field": "portfolio_scale",
+          "label": "公开组合规模",
+          "value": "组合页列有 50 多家公司，并明确说明所列公司不代表 Fellows Fund 的全部投资。",
+          "source_id": "fellows_portfolio"
+        },
+        {
+          "field": "portfolio_examples",
+          "label": "官网展示的组合案例",
+          "value": [
+            "Generalist",
+            "Periodic Labs",
+            "Corgi",
+            "Harmonic",
+            "Abridge",
+            "Replit",
+            "Gamma",
+            "Higgsfield",
+            "Dyna Robotics"
+          ],
+          "source_id": "fellows_portfolio"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Sycamore · 种子轮 · 2026-03-30 · 本轮参投 · $65 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Fellows Fund 于 2026-06-07 在官网发布对 Generalist 的投资说明，介绍其投资逻辑与对该机器人基础模型公司的支持；公告未披露 Fellows Fund 的投资金额。",
+          "source_id": "fellows_generalist"
+        },
+        {
+          "description": "Sycamore 于 2026-03-30 宣布 6500 万美元种子轮融资，列明 Fellows Fund 参投。6500 万美元为公司本轮总额，未披露 Fellows Fund 的单笔投资金额。",
           "source_id": "FISRC-d354011359557f2f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Fellows Fund",
+          "url": "https://fellowsfundvc.com/",
+          "source_id": "fellows_home"
+        },
+        {
+          "kind": "email",
+          "label": "Alex Ren｜创始合伙人联系",
+          "value": "alex@fellows.fund",
+          "url": "https://fellowsfundvc.com/contact",
+          "source_id": "fellows_contact"
+        },
+        {
+          "kind": "email",
+          "label": "JC Mao｜普通合伙人联系",
+          "value": "jc@fellows.fund",
+          "url": "https://fellowsfundvc.com/contact",
+          "source_id": "fellows_contact"
+        },
+        {
+          "kind": "email",
+          "label": "Lucas Sheiner｜普通合伙人联系",
+          "value": "lucas@fellows.fund",
+          "url": "https://fellowsfundvc.com/contact",
+          "source_id": "fellows_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "fellows_home",
+          "source_url": "https://fellowsfundvc.com/",
+          "source_title": "Fellows Fund",
+          "source_content_hash": "ad86a7f274fc7155d6a61d574415be2baef16a7a4f6a714df8ac7490784b3f41",
+          "quote": "Since 2021, we've invested in the next generation of exceptional founders, helping them build, hire, and scale.",
+          "quote_hash": "81a059ac410248a489bd86369ebdfcca3bcf04f5010201af8b0b4ec035abb277"
+        },
+        {
+          "source_id": "fellows_team",
+          "source_url": "https://fellowsfundvc.com/team",
+          "source_title": "Team | Fellows Fund",
+          "source_content_hash": "28c3b7d2774b253b1ffb3ca50f667b74e88bbeee87e26e7ead5d05ef44593b27",
+          "quote": "A partnership of AI researchers, founders, and enterprise executives with decades of collective experience building and scaling frontier technology.",
+          "quote_hash": "e749744d6a52bbb2f44ed051e0d71252a3215a7a48a689674db62f1547522632"
+        },
+        {
+          "source_id": "fellows_portfolio",
+          "source_url": "https://fellowsfundvc.com/portfolio",
+          "source_title": "Portfolio | Fellows Fund",
+          "source_content_hash": "20e7218acbeff116c68fa135c604d352fbe18523adcc1137a54c9c18deecb5c9",
+          "quote": "Portfolio companies identified herein do not represent all investments made by Fellows Fund.",
+          "quote_hash": "a0066ff62fd0ec1b87465785431d967d75903c26cde71c4c1886ca3cf3b17e6c"
+        },
+        {
+          "source_id": "fellows_contact",
+          "source_url": "https://fellowsfundvc.com/contact",
+          "source_title": "Contact | Fellows Fund",
+          "source_content_hash": "2e84f8364cc306ce052be9879f5b5bb941d5c5c85185868dec086e66673664ff",
+          "quote": "Reach out to any of our partners directly.",
+          "quote_hash": "a15bc78ccc841c60ac85a8df289729798ed24b961a4026344f4249e658810b53"
+        },
+        {
+          "source_id": "fellows_generalist",
+          "source_url": "https://fellowsfundvc.com/blog/our-investment-in-generalist-foundation-model-for-the-physical-world",
+          "source_title": "Our Investment in Generalist: Foundation Model for the Physical World | Fellows Fund",
+          "source_content_hash": "d292900d162b5f974fe8f5826c6d411b0af2438b7a8c0acda3e235d2b65ca7a5",
+          "quote": "Generalist joins a set of Fellows Fund investments in leading research labs across verticals",
+          "quote_hash": "dc1f81c4cfbb656dfdce1f42c242ae62d4f8eeeff55e3faad6ba479d27f9a745"
+        },
         {
           "source_id": "FISRC-d354011359557f2f",
           "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
@@ -163,7 +289,7 @@
           "quote_hash": "e443cbfb7f795d800b13ba7a1cba8c2f429b60d8881136f8543d2e9968332aca"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28"
     }
   }
 }
