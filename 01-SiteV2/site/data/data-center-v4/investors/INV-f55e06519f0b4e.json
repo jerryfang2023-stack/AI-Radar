@@ -139,19 +139,128 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "浙江九纬私募基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案的机构背景对应官网主体“浙江九纬私募基金管理有限公司”；融资报道使用简称“浙江九纬私募基金”，未披露所涉基金产品或该管理公司的法定全称，因此该融资记录按原文保留，不据此断言由管理公司本体直接出资。官网所列管理规模、基金/项目数量和团队简介均为机构自述，相关页面未标注统计或更新日期，不应视为2026年最新业绩或现任团队的独立核验结果。",
+      "summary": "浙江九纬私募基金管理有限公司官网自述其成立于2017年，是私募股权投资管理机构，页面标注管理人登记编号P1064271。官网所述投资方向包括医疗、科技、进口替代和先进制造，重点关注Pre-IPO及高成长性新三板企业；官网还自述已发行8支基金、累计投资20多个项目、管理规模约5亿元，但这些未注明统计日期的数字不代表截至2026年的当前规模或投资回报。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "官网主体名称",
+          "value": "浙江九纬私募基金管理有限公司",
+          "source_id": "jiuwei_about"
+        },
+        {
+          "field": "founded_year",
+          "label": "成立年份（官网自述）",
+          "value": "2017年",
+          "source_id": "jiuwei_about"
+        },
+        {
+          "field": "manager_registration_code",
+          "label": "官网标注的私募基金管理人登记编号",
+          "value": "P1064271；官网称已取得中国证券投资基金业协会备案的私募基金管理人资格。此处记录官网表述，不代表本次独立核验其当前登记状态。",
+          "source_id": "jiuwei_about"
+        },
+        {
+          "field": "sectors",
+          "label": "官网列示的投资方向",
+          "value": [
+            "医疗",
+            "科技",
+            "进口替代",
+            "先进制造"
+          ],
+          "source_id": "jiuwei_about"
+        },
+        {
+          "field": "investment_stages",
+          "label": "官网列示的关注企业阶段",
+          "value": "Pre-IPO及高成长性新三板企业",
+          "source_id": "jiuwei_about"
+        },
+        {
+          "field": "team_as_listed",
+          "label": "官网团队页面列示的职务",
+          "value": [
+            "沈志滨：董事长",
+            "王松良：副总经理",
+            "丁洪波、高峥峰、杨文瀚：投资总监",
+            "唐东起、吴俊剑、陈彪：外部专家咨询委员"
+          ],
+          "source_id": "jiuwei_team"
+        },
+        {
+          "field": "team_experience_as_reported",
+          "label": "官网团队履历摘要（机构自述）",
+          "value": "官网个人简介分别记载沈志滨近30年金融从业经历、王松良的半导体教育及贸易/制造业经历、丁洪波20多年投资经历、高峥峰金融与私募机构经历、杨文瀚金融投资经历，以及外部专家的学术和产业经历。页面未标注更新日期；履历中提到的个人项目不自动归作九纬基金投资案例。",
+          "source_id": "jiuwei_team"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2017年",
+          "description": "官网自述公司成立于2017年；页面未披露具体成立日期。",
+          "source_id": "jiuwei_about"
+        }
+      ],
       "track_record": [
+        {
+          "description": "机构官网自述已发行8支基金、累计投资20多个项目、管理规模约人民币5亿元。页面没有注明统计时点；该信息是机构自述，不代表2026年当前管理规模、完整投资组合或基金回报率。",
+          "source_id": "jiuwei_about"
+        },
         {
           "description": "融资来源记录：红熊AI · A+轮 · 2026-07-20 · 本轮联合领投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a7098b299e393009"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "浙江九纬私募基金管理有限公司",
+          "url": "https://www.zjjwasset.com/",
+          "source_id": "jiuwei_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "官网公开电话（用途未注明）",
+          "value": "15958307209",
+          "url": "https://www.zjjwasset.com/",
+          "source_id": "jiuwei_contact"
+        },
+        {
+          "kind": "address",
+          "label": "官网公开联系地址",
+          "value": "浙江省杭州市西湖区金色西溪商务中心1号楼1305室",
+          "url": "https://www.zjjwasset.com/",
+          "source_id": "jiuwei_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "jiuwei_about",
+          "source_url": "https://zjjwasset.com/zjzw.html",
+          "source_title": "走进公司｜浙江九纬私募基金管理有限公司",
+          "source_content_hash": "ca4066af05978de3fab9795eda3565738c92dc7d1040ea9085abaae7c31a44db",
+          "quote": "浙江九纬私募基金管理有限公司成立于2017年，是一家专业的私募股权投资管理机构，已取得中国证券投资基金业协会备案的私募投资基金管理人资格（备案号：P1064271），公司专注医疗、科技、进口替代、先进制造的实业投资，管理团队已成功发行并管理规模约5亿元的投资基金。公司拥有一支专业、守信勤业、经验丰富的投资管理团队，项目和资源广泛，擅长企业间资源整合，资本运作，专注于投资Pre-IPO及高成长性新三板企业，现已发行8支基金，基金累计投资20多个项目。",
+          "quote_hash": "8e48c7754217aa5d11da800063ba47acb035499d32c4f570a2a50ed50d2d4813"
+        },
+        {
+          "source_id": "jiuwei_team",
+          "source_url": "https://www.zjjwasset.com/team.html",
+          "source_title": "团队介绍｜浙江九纬私募基金管理有限公司",
+          "source_content_hash": "83888ede467caa2b599d235e72e2c254fab199969823b37c3814ef55d3fde659",
+          "quote": "沈志滨 董事长 西北大学工商管理硕士。首批注册金融分析师。近30年金融从业经历，历任知名股份制银行支行行长，外资银行杭州分行副行长，知名创投公司副总经理等职务，熟悉各类金融产品和企业资本运作，具备扎实的金融理论功底和丰富的实务操作经验，多个主导投资的项目已实现北交所、创业板和主板上市。",
+          "quote_hash": "96ab6055bf0f51caaf16182d47497afafcc7b41a0a70e53f553f9940b8bb35c0"
+        },
+        {
+          "source_id": "jiuwei_contact",
+          "source_url": "https://www.zjjwasset.com/",
+          "source_title": "浙江九纬私募基金管理有限公司官网",
+          "source_content_hash": "ef8c112abf7b4d93229dc5c42cb07c0cf284da9101aa055139421067eae3bcf0",
+          "quote": "地址：浙江省杭州市西湖区金色西溪商务中心1号楼1305室 电话：15958307209 浙江九纬私募基金管理有限公司",
+          "quote_hash": "3998fa0c612e3749b043c34bbc4ce8f7e585469a35134c34f55d681782dcfe65"
+        },
         {
           "source_id": "FISRC-a7098b299e393009",
           "source_url": "https://news.pedaily.cn/202607/566589.shtml",
@@ -161,7 +270,7 @@
           "quote_hash": "5fc26397ddea0a0f427809edb17089a4a096acff792cac116f19f7b642709181"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28"
     }
   }
 }
