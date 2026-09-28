@@ -1949,6 +1949,37 @@ test("accepted funding subject must be anchored in its source quote", () => {
   assert.equal(subjectCompanyForEvent(event, entities, {}, [claim])?.entity_id, "EN-FLUIDSTACK");
 });
 
+test("headline-only Claims resolve through their event's full canonical source body", () => {
+  const entities = [
+    { entity_id: "EN-BAOYANG-HEADLINE", entity_type: "organization_candidate", canonical_name: "包养式" },
+    { entity_id: "EN-JANE-STREET", entity_type: "organization_candidate", canonical_name: "Jane Street", verification_status: "verified" },
+  ];
+  const claim = {
+    claim_id: "CL-FLUIDSTACK-TITLE-ONLY",
+    claim_type: "funding",
+    verification_status: "accepted",
+    subject: "包养式",
+    object: "15亿美元融资",
+    source_quote: "“包养式融资”，估值1200亿 60天内，这家公司的估值翻了2.4倍。",
+  };
+  const event = {
+    event_id: "EV-FLUIDSTACK-TITLE-ONLY",
+    display_title_zh: claim.source_quote,
+    action: "完成融资",
+    object: "15亿美元融资",
+    metrics: ["15亿美元"],
+    entities: entities.map((entity) => entity.entity_id),
+    claim_refs: [claim.claim_id],
+  };
+  const company = subjectCompanyForEvent(event, entities, {}, [claim], [
+    "近日，外媒爆出AI基础设施公司Fluidstack完成15亿美元融资，投后估值180亿美元（约1200亿人民币），领投方是今年频登媒体头条的量化交易巨头Jane Street。",
+  ]);
+
+  assert.equal(company?.canonical_name, "Fluidstack");
+  assert.notEqual(company?.entity_id, "EN-BAOYANG-HEADLINE");
+  assert.notEqual(company?.entity_id, "EN-JANE-STREET");
+});
+
 test("normalization restores previously unsupported plus rounds from stored original evidence", () => {
   const card = validCard();
   card.financing.round = "其他融资";

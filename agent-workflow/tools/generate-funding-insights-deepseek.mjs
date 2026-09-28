@@ -866,7 +866,8 @@ function buildCard(event, company, payload, sources, result, resolver, entityInd
 }
 
 async function processEvent(bundle, event, entityIndex, entityDecisions, companyIdentityReview) {
-  const company = subjectCompanyForEvent(event, bundle.entities, entityIndex, bundle.claims);
+  const eventSourceQuotes = canonicalSources(bundle, event).map((source) => source.body_clean);
+  const company = subjectCompanyForEvent(event, bundle.entities, entityIndex, bundle.claims, eventSourceQuotes);
   if (!company) return { event_id: event.event_id, status: "blocked", problems: ["subject_company_unresolved"] };
   const research = await researchSources(bundle, event, company);
   if (research.sources.length < 2) {
