@@ -1380,14 +1380,56 @@ function linkedCompanyAnchoredInFundingQuote(event, entities, claims) {
   return matches.size === 1 ? [...matches.values()][0] : null;
 }
 
-export function subjectCompanyForEvent(event, entities, entityIndex = {}, claims = []) {
+function canonicalSourceRecipient(event, entities, entityIndex, claims, sourceQuotes) {
+  const acceptedClaims = claims.filter((claim) => claim?.claim_type === "funding"
+    && claim?.verification_status === "accepted");
+  if (!acceptedClaims.length) return null;
+  const names = new Set();
+  for (const quote of sourceQuotes.map(clean).filter(Boolean)) {
+    for (const clause of quoteClauses(quote)) {
+      if (!/(?:融资|募资|筹集|完成|获得|获|raised|funding|financing|round)/iu.test(clause)
+        || !acceptedClaims.some((claim) => clauseHasEventFundingAmount(clause, claim, event))) continue;
+      // Some sources expose the recipient only in the full article body, e.g.
+      // “AI基础设施公司Fluidstack完成15亿美元融资”. Bind the proper name to
+      // the same amount-bearing clause and action; do not infer from an investor
+      // mention elsewhere in the article or from a headline fragment.
+      const pattern = /公司\s*([A-Z][A-Za-z0-9.&'-]*(?:[ \t]+[A-Z][A-Za-z0-9.&'-]*){0,3})\s*(?:已|宣布)?(?:完成|获得|获|筹集|募得|融资)/gu;
+      for (const match of clause.matchAll(pattern)) names.add(clean(match[1]));
+    }
+  }
+  if (names.size !== 1) return null;
+  const [name] = names;
+  const normalized = normalizedName(name);
+  const indexed = (entityIndex.companies || []).map((entity) => ({
+    entity_id: entity.id,
+    entity_type: entity.sourceType || "organization_candidate",
+    canonical_name: entity.name,
+    aliases: entity.aliases || [],
+  }));
+  const matches = [...new Map([...entities, ...indexed]
+    .filter((entity) => entity?.entity_type === "organization_candidate")
+    .filter((entity) => [entity.canonical_name, ...(entity.aliases || [])]
+      .some((alias) => normalizedName(alias) === normalized))
+    .map((entity) => [entity.entity_id, entity])).values()];
+  if (matches.length > 1) return null;
+  return matches[0] || {
+    entity_id: stableId("FICO", normalized),
+    entity_type: "organization_candidate",
+    canonical_name: name,
+    aliases: [],
+  };
+}
+
+export function subjectCompanyForEvent(event, entities, entityIndex = {}, claims = [], sourceQuotes = []) {
   const byId = new Map(entities.map((entity) => [entity.entity_id, entity]));
   const claimById = new Map(claims.map((claim) => [claim.claim_id, claim]));
   const eventClaims = (event.claim_refs || []).map((id) => claimById.get(id)).filter(Boolean);
   const acceptedFundingClaims = eventClaims
     .filter((claim) => claim?.claim_type === "funding" && claim?.verification_status === "accepted");
   // Prefer a uniquely linked company co-mentioned with this round's amount over a headline-only Claim subject.
-  const quoteAnchoredCompany = linkedCompanyAnchoredInFundingQuote(event, entities, acceptedFundingClaims);
+  const quoteAnchoredCompany = canonicalSourceRecipient(
+    event, entities, entityIndex, acceptedFundingClaims, sourceQuotes,
+  ) || linkedCompanyAnchoredInFundingQuote(event, entities, acceptedFundingClaims);
   const acceptedFundingSubjects = acceptedFundingClaims
     .filter((claim) => {
       const subject = clean(claim.subject);
