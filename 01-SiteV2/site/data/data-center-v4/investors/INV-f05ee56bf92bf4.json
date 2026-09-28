@@ -139,18 +139,83 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "DeVC by Matrix Partners 当前按“投资组织”收录。最新融资披露记录日期为 2024-08-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "依据 DeVC 官网投资主题、当前团队、AIF 法律信息、官网自报指标及可追溯融资披露整理。官网统计未标明审计口径；数据库融资记录未确认具体投资载体。",
+      "summary": "DeVC 是面向早期创业者的风险投资平台，官网称以资本、经验与人脉支持 AI、消费、开发者工具与基础设施、金融科技、硬件及深科技等领域。团队页列有印度团队和美国 AI 投资团队，并披露 AIF 法律名称为 Matrix Partners India DeVC I AIF、管理人为 DeVC India I Manager LLP。数据库中的“DeVC by Matrix Partners”参投记录未披露具体基金或法律投资载体，不能据此认定由该 AIF 出资。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "投资与创业支持方式",
+          "value": "官网将其描述为以资本、经验和人脉支持早期创业者。",
+          "source_id": "devc_home"
+        },
+        {
+          "field": "investment_sectors",
+          "label": "官网列示投资领域",
+          "value": [
+            "AI",
+            "消费",
+            "开发者工具与基础设施",
+            "金融科技",
+            "硬件与深科技",
+            "游戏",
+            "Web3",
+            "工业与制造"
+          ],
+          "source_id": "devc_home"
+        },
+        {
+          "field": "reported_metrics",
+          "label": "官网自报规模指标（未标注审计口径）",
+          "value": "官网列示 100+ 项投资、$500m+ invested、50+ collective members；属于机构自报统计，页面未在该区块标明统计基准日或定义。",
+          "source_id": "devc_home"
+        },
+        {
+          "field": "aif_legal_name",
+          "label": "官网披露的 AIF 名称",
+          "value": "Matrix Partners India DeVC I AIF。此为官网所列法律基金名称，不代表所有以 DeVC 名义披露的投资均由该基金完成。",
+          "source_id": "devc_team"
+        },
+        {
+          "field": "aif_manager",
+          "label": "官网披露的 AIF 管理人",
+          "value": "DeVC India I Manager LLP。",
+          "source_id": "devc_team"
+        },
+        {
+          "field": "team_and_expertise",
+          "label": "官网团队及覆盖领域",
+          "value": "官网团队页列示 Aakash Kumar（Deeptech、AI、Fintech；曾任 Hotstar 增长高级副总裁，官网称其扩展订阅用户至 4000 万并建设广告技术业务）、Krish Bajaj（AI；曾参与创立后被收购的 Verak Insurance，并在 Deutsche Bank 风险办公室任职）、Rahul Mathur（Fintech、AI、DeepTech、Consumer；Verak Insurance 创办人，后任 InsuranceDekho 商业保险业务负责人，University of Warwick 统计学硕士）、Rajat Agarwal（Fintech、Consumer；曾在 McKinsey 任顾问，毕业于 ISB 与 IIT Delhi）、Sanchie Shroff（AI；美国团队投资负责人，曾任职 Long Arc Capital、SoftBank、WestBridge 和 McKinsey，持 Harvard MBA）、Trinika Kaushik（Consumer；曾在 JP Morgan 工作，毕业于 BITS Pilani）及 Yashasvi Madhogaria（Deeptech、Manufacturing；曾任 Kepler Cannon 顾问，毕业于 Shri Ram College of Commerce）。经历、数字及任职均为官网个人简介所述，不代表集体成员均为雇员。",
+          "source_id": "devc_team"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官网展示的组合案例包括 Ambak、CodeAnt AI 与 Confido Health；这是官网选列的案例，不构成完整组合清单，也不代表基金回报。",
+          "source_id": "devc_home"
+        },
         {
           "description": "融资来源记录：Quash · 预种子轮 · 2024-08-20 · 本轮参投 · $635,000。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-70b20379e494fa2f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "DeVC",
+          "url": "https://devc.capital/",
+          "source_id": "devc_home"
+        },
+        {
+          "kind": "email",
+          "label": "美国团队 AI 投资联系（官网所列）",
+          "value": "sanchie@devc.capital",
+          "url": "https://devc.capital/team",
+          "source_id": "devc_team"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-70b20379e494fa2f",
@@ -159,9 +224,25 @@
           "source_content_hash": "1d7bff75e7129429",
           "quote": "Java Capital, PeerCheque, DeVC by Matrix Partners, and Abhishek Goyal, a co-founder of Tracxn, have also contributed.",
           "quote_hash": "ae7745b4f0a7a1897fc71656c3393b61a2f21aa032a63360425876c54e7bb68d"
+        },
+        {
+          "source_id": "devc_home",
+          "source_url": "https://devc.capital/",
+          "source_title": "Your Idea to Infinity Partners | DeVC",
+          "source_content_hash": "990f2cec430848ee41134d976ef669db46d8e504bdee7d5bed49df3b81cde6f9",
+          "quote": "We back relentlessly resourceful founders with capital, wisdom, and networks to accelerate growth.",
+          "quote_hash": "f066a6583662bcada88368534df8d123b3c459dd22d5fde55c573e15ee2943e7"
+        },
+        {
+          "source_id": "devc_team",
+          "source_url": "https://devc.capital/team",
+          "source_title": "Meet the DeVC Team | DeVC",
+          "source_content_hash": "e07f53502e4af79a25c8960c4c56618216e4bce37d71c3f81c45c42386293b21",
+          "quote": "AIF’s name - Matrix Partners India DeVC I AIFManager - DeVC India I Manager LLP",
+          "quote_hash": "7545e6bb1d01c1379491dbe17b19e608b002863c89b4e26c62a858971b0f800e"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28"
     }
   }
 }

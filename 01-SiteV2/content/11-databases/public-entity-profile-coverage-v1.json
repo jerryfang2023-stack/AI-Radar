@@ -58217,18 +58217,104 @@
     "INV-c66f19f6a4d591": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "iGlobe Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "依据 iGlobe 官网公司历史、投资领域、团队、组合案例和联系页核实。资金规模、独角兽数量等均标记为公司自报；未将其视为审计业绩。",
+      "summary": "iGlobe Partners 是一家总部位于新加坡的全球风险投资机构。官网称 Soo Boon Koh 于 1999 年在硅谷创立该机构，并于 2009 年将总部迁至新加坡；当前团队页将她列为创始人兼管理合伙人。官网投资主题涵盖光子与半导体、AI 应用、量子计算、生物科技与健康科技，并展示多家投资组合公司及其收购案例。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份与创办人",
+          "value": "1999 年由 Soo Boon Koh 在硅谷创立；为机构官网所述历史。",
+          "source_id": "iglobe_about"
+        },
+        {
+          "field": "headquarters",
+          "label": "总部所在地",
+          "value": "新加坡；官网称于 2009 年将总部设于新加坡。",
+          "source_id": "iglobe_about"
+        },
+        {
+          "field": "founder_background",
+          "label": "创办人经历（官网自述）",
+          "value": "iGlobe 官网称 Soo Boon Koh 曾受新加坡政府委托，在美国和欧洲设立并管理企业风险投资业务超过十年；之后于 2009 年将 iGlobe 总部迁至新加坡。具体任期与相关企业名称未在该页面说明。",
+          "source_id": "iglobe_about"
+        },
+        {
+          "field": "investment_sectors",
+          "label": "官网列示投资主题",
+          "value": [
+            "光子与半导体",
+            "AI 与应用",
+            "量子计算",
+            "生物科技与健康科技"
+          ],
+          "source_id": "iglobe_about"
+        },
+        {
+          "field": "leadership_team",
+          "label": "官网列示的核心团队",
+          "value": "团队页列 Soo Boon Koh 为 Founder & Managing Partner、Philip Yeo 为 Chairman、Joyce Ng 为 General Partner，并列有 Edmond Wong、Jeff Lin 等投资与运营团队成员。职务以官网当前页面为准。",
+          "source_id": "iglobe_team"
+        },
+        {
+          "field": "reported_firm_metrics",
+          "label": "官网自报机构指标（未标注审计口径）",
+          "value": "官网展示 5 只基金、US$400M raised and raising、100+ investments、7 unicorns 及全球组合覆盖；均为官网自报，页面未提供统一统计基准或审计口径。",
+          "source_id": "iglobe_home"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1999",
+          "description": "官网称 iGlobe Partners 由 Soo Boon Koh 在硅谷创立。",
+          "source_id": "iglobe_about"
+        },
+        {
+          "date": "2009",
+          "description": "官网称创办人将机构总部迁至新加坡。",
+          "source_id": "iglobe_about"
+        }
+      ],
       "track_record": [
+        {
+          "description": "官网组合页列示的收购案例包括 3PAR 被 Hewlett Packard Enterprise 收购、Celestry 被 Cadence Design Systems 收购，以及 Aviva Links 被 NXP Semiconductors 收购。此为官网选列案例，不代表完整组合或基金回报。",
+          "source_id": "iglobe_home"
+        },
         {
           "description": "融资来源记录：爱诗科技 · C轮 · 2026-07-14 · 本轮参投 · 29.8亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9476e3eff9c1e8fe"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "iGlobe Partners",
+          "url": "https://www.iglobepartners.com/",
+          "source_id": "iglobe_home"
+        },
+        {
+          "kind": "application",
+          "label": "创始人融资与一般联系入口",
+          "value": "官网联系页提供 Get Fundings 联系入口及联系表单。",
+          "url": "https://www.iglobepartners.com/contact/",
+          "source_id": "iglobe_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "新加坡办公室电话",
+          "value": "+65 6478 9716",
+          "url": "https://www.iglobepartners.com/contact/",
+          "source_id": "iglobe_contact"
+        },
+        {
+          "kind": "address",
+          "label": "新加坡办公室地址",
+          "value": "11 Biopolis Way, #09-03 Helios, Singapore 138667",
+          "url": "https://www.iglobepartners.com/contact/",
+          "source_id": "iglobe_contact"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-9476e3eff9c1e8fe",
@@ -58237,9 +58323,41 @@
           "source_content_hash": "31557c2904ef4cb8",
           "quote": "Lollapalooza Capital（王慧文家办）、常春藤资本、惠远资本、钟鼎资本、韩国未来资产、OCBC 生态下 Lion X 基金、蓝色光标、CloudAlpha、iGlobe Partners 等 十余家国内外机构参与投资",
           "quote_hash": "9515d24c1ea60f07dd7e026f73095de5c8e568b800de1022cbbb69433d560b5c"
+        },
+        {
+          "source_id": "iglobe_home",
+          "source_url": "https://www.iglobepartners.com/",
+          "source_title": "iGlobe Partners | Venture Capital Singapore",
+          "source_content_hash": "046b1a168859455976a0d8abae45b5834a7bb093ba1d1080bf3bc5a5592bc6b9",
+          "quote": "In the game since 1999",
+          "quote_hash": "d4b27bee9d2c9267d2979d70c29bbc06b66cd697f3e2d71ce4f66dfdb4e8738c"
+        },
+        {
+          "source_id": "iglobe_about",
+          "source_url": "https://www.iglobepartners.com/about/",
+          "source_title": "About - iGlobe Partners",
+          "source_content_hash": "f770ba564c80fe3408a7cd5b899e07523d51f8bf2422bf7004cf6d30cadb3a73",
+          "quote": "Established in 1999, iGlobe Partners was founded by Soo Boon Koh in Silicon Valley",
+          "quote_hash": "d13e123d1ee0d283b6bc98c6f9d78f1ddf42639f9e6385e0ab45322575e500a3"
+        },
+        {
+          "source_id": "iglobe_team",
+          "source_url": "https://www.iglobepartners.com/team/",
+          "source_title": "Team - iGlobe Partners",
+          "source_content_hash": "92238815306677203ce12f2d04fca540e5876697bc930a8e40c36fc13eb1fa58",
+          "quote": "Soo Boon KOH Founder & Managing Partner",
+          "quote_hash": "c3834c3f01616cb10f84430bc0e731e1f4a8df2b3bb12d219cbbb28aea4d5056"
+        },
+        {
+          "source_id": "iglobe_contact",
+          "source_url": "https://www.iglobepartners.com/contact/",
+          "source_title": "Contact - iGlobe Partners",
+          "source_content_hash": "1a2b4a1a6dde0c3e4bf79e10cc0d716c83dc45eb1153c6c98d359a5a54254145",
+          "quote": "11 Biopolis Way #09-03 Helios Singapore 138667 +65 6478 9716 (Office)",
+          "quote_hash": "fafc874e3fa3906d979acc445ec9b92d1afc2c0edfbb3bbcabd758a761a5ea1d"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28"
     },
     "INV-8ef7c94dbe04aa": {
       "profile_type": "person",
@@ -77892,18 +78010,131 @@
     "INV-37a7d811c7d603": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Inovo VC 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "依据 Inovo 官网投资策略、团队、基金资料、支持服务及办公室信息核实。基金规模与创业者支持指标为官网自报，不代表审计业绩。",
+      "summary": "Inovo VC 是专注中东欧创办人及其全球创业项目的种子期风险投资机构，主要投资 Pre-Seed 与 Seed，也会参与部分 Series A。官网披露首笔投资通常为 €0.5m–€4m，Fund III 为 2022 vintage、规模 €107m；团队跨开发者工具、AI、数据科学、医疗、B2B SaaS 等领域。官网还列出华沙、阿姆斯特丹与卢森堡办公室，并提供团队 LinkedIn 联系途径。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "以 Seed 为主，偶尔投 Pre-Seed 或后续轮；官网称其可领投 Pre-Seed/Seed，并参与 Series A。",
+          "source_id": "inovo_home"
+        },
+        {
+          "field": "initial_ticket_size",
+          "label": "首笔投资金额",
+          "value": "通常 €0.5m–€4m；特殊情况下可提供 €100k–€250k discovery ticket；官网称后续投资可达单家公司 €10m。",
+          "source_id": "inovo_home"
+        },
+        {
+          "field": "geographic_focus",
+          "label": "地域范围",
+          "value": "中东欧（CEE）及该地区创办、在全球任意地点建设公司的 diaspora 创业者；官网列举波兰、立陶宛、克罗地亚、塞尔维亚、乌克兰、拉脱维亚、爱沙尼亚、罗马尼亚、保加利亚、斯洛文尼亚、捷克、匈牙利、斯洛伐克、北马其顿、波黑、科索沃、阿尔巴尼亚及黑山。",
+          "source_id": "inovo_home"
+        },
+        {
+          "field": "sector_focus",
+          "label": "官网列示的行业专长",
+          "value": [
+            "Developer Tools",
+            "AI / Machine Learning",
+            "Data Science",
+            "Healthcare",
+            "SaaS-enabled marketplaces",
+            "B2C 与 B2B2C",
+            "B2B Enterprise"
+          ],
+          "source_id": "inovo_home"
+        },
+        {
+          "field": "fund_iii",
+          "label": "当前投资基金 III",
+          "value": "官网列示 Fund III vintage 为 2022 年，基金规模 €107m，目标组合 25–30 家公司。该数据为机构官网披露。",
+          "source_id": "inovo_home"
+        },
+        {
+          "field": "fund_history",
+          "label": "官网列示的基金序列",
+          "value": "首只基金：2014 vintage、€8m、15 家公司；Fund II：2018 vintage、€54m、20 家投资组合公司及 5 家 scouting；Fund III：2022 vintage、€107m、目标 25–30 家。",
+          "source_id": "inovo_home"
+        },
+        {
+          "field": "investment_team",
+          "label": "官网列示的投资团队与领域",
+          "value": "Partners：Tomasz Swieboda（B2B、美国市场、二次创业者）、Michał Rokosz（B2B2C、SME、Healthcare）、Maciej Małysz（Developer Tools、DevOps、Deeptech、B2B Enterprise、Infrastructure）、Karol Lasota（Data Science、Deeptech、AI）；Principal Dawid Sugier（B2B SaaS、Marketplaces、Consumer、Baltics）；Analyst Zuzanna Kompowska（AI、Healthcare、Consumer）。职务与领域按官网团队页整理。",
+          "source_id": "inovo_team"
+        },
+        {
+          "field": "founder_support_metrics",
+          "label": "官网自报投后支持指标（非基金回报）",
+          "value": "官网自报其引荐与招聘参与促成 100+ 人入职，协助处理 200+ 次后续融资引荐，并称其组合累计有 70+ 家国际共同投资者、可引荐 30+ 家科技独角兽客户、20+ 位顾问，以及基于引荐形成超过 US$2m ARR 的合同；这些为机构自述的服务指标，不是独立审计数据或基金投资回报。",
+          "source_id": "inovo_support"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2014 vintage",
+          "description": "官网列示首只基金规模 €8m，组合目标/数量为 15 家公司。",
+          "source_id": "inovo_home"
+        },
+        {
+          "date": "2018 vintage",
+          "description": "官网列示第二只基金规模 €54m，组合记录为 20 家公司及 5 家 scouting。",
+          "source_id": "inovo_home"
+        },
+        {
+          "date": "2022 vintage",
+          "description": "官网列示 Fund III 规模 €107m，目标组合 25–30 家公司。",
+          "source_id": "inovo_home"
+        }
+      ],
       "track_record": [
+        {
+          "description": "官网称 Inovo 的招聘引荐促成 100+ 人入职，并披露后续融资、国际共同投资者、客户引荐及顾问网络等投后支持指标；均为机构自报的支持活动，不应解读为基金投资回报。",
+          "source_id": "inovo_support"
+        },
         {
           "description": "融资来源记录：Viktor · A轮 · 2026-05-20 · 本轮参投 · €64.7 million ($75 million)。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ce83b857608dabeb"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网与创始人联系入口",
+          "value": "Inovo VC；官网提供创始人融资联系入口。",
+          "url": "https://inovo.vc/",
+          "source_id": "inovo_home"
+        },
+        {
+          "kind": "application",
+          "label": "联系匹配领域的投资人",
+          "value": "官网建议创始人联系与项目领域匹配的团队成员，或通过 warm introduction 联系；团队页链接至各成员 LinkedIn。",
+          "url": "https://inovo.vc/team",
+          "source_id": "inovo_home"
+        },
+        {
+          "kind": "address",
+          "label": "华沙办公室",
+          "value": "ul. Wspólna 35 lok. 23 (PH1), 00-519 Warsaw, Poland",
+          "url": "https://inovo.vc/",
+          "source_id": "inovo_home"
+        },
+        {
+          "kind": "address",
+          "label": "阿姆斯特丹办公室",
+          "value": "De Lairessestraat 145 A, 1075HJ Amsterdam, the Netherlands",
+          "url": "https://inovo.vc/",
+          "source_id": "inovo_home"
+        },
+        {
+          "kind": "address",
+          "label": "卢森堡办公室",
+          "value": "2 Place de Strasbourg, 2652 Luxembourg",
+          "url": "https://inovo.vc/",
+          "source_id": "inovo_home"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-ce83b857608dabeb",
@@ -77912,9 +78143,33 @@
           "source_content_hash": "bc6dd70ea1b6ac85",
           "quote": "with participation from Bek Ventures, Kaya VC, Inovo VC",
           "quote_hash": "f5de779db2cc2c3ad24812238d84b075789ac7c2f2a275ee8a8252dba74f6fa8"
+        },
+        {
+          "source_id": "inovo_home",
+          "source_url": "https://inovo.vc/",
+          "source_title": "Inovo VC",
+          "source_content_hash": "392e6af4d1336ec497cafd08ddd88edca9dd0a8a2ecb6f25b5b14f8470847ff1",
+          "quote": "We’re Inovo, a seed-stage VC focused on CEE founders.",
+          "quote_hash": "a4acd163baa4c32f4c75fe8ff383b117a450436b5c5f1a96550b8c6ce3ec4e59"
+        },
+        {
+          "source_id": "inovo_team",
+          "source_url": "https://inovo.vc/team",
+          "source_title": "Our Team | Inovo VC",
+          "source_content_hash": "d706666c3348d6c41af9e2cbe02bb03130dc9f51609a2e641315780ada8d32a3",
+          "quote": "Maciej Małysz Partner Developer Tools DevOps Deeptech B2B Enterprise",
+          "quote_hash": "0dbc43efe2af47e44d24ab87d80ba683213868b86f62e57caf9e5affccb7dbd1"
+        },
+        {
+          "source_id": "inovo_support",
+          "source_url": "https://inovo.vc/support",
+          "source_title": "Our Support Overview | Inovo VC",
+          "source_content_hash": "f2072bab3bae176380c4ee91a69689821e414d32297f59755b1a4f454933cfbf",
+          "quote": "Over 100 candidates have been hired thanks to our introductions and engagement in recruitment processes.",
+          "quote_hash": "0a43b612c149bf9340d947ca9411a7057da92996d4767b60f7f670bb8b87f33c"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28"
     },
     "INV-ee0ccf577258b0": {
       "profile_type": "person",
@@ -98339,18 +98594,83 @@
     "INV-f05ee56bf92bf4": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "DeVC by Matrix Partners 当前按“投资组织”收录。最新融资披露记录日期为 2024-08-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "依据 DeVC 官网投资主题、当前团队、AIF 法律信息、官网自报指标及可追溯融资披露整理。官网统计未标明审计口径；数据库融资记录未确认具体投资载体。",
+      "summary": "DeVC 是面向早期创业者的风险投资平台，官网称以资本、经验与人脉支持 AI、消费、开发者工具与基础设施、金融科技、硬件及深科技等领域。团队页列有印度团队和美国 AI 投资团队，并披露 AIF 法律名称为 Matrix Partners India DeVC I AIF、管理人为 DeVC India I Manager LLP。数据库中的“DeVC by Matrix Partners”参投记录未披露具体基金或法律投资载体，不能据此认定由该 AIF 出资。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "投资与创业支持方式",
+          "value": "官网将其描述为以资本、经验和人脉支持早期创业者。",
+          "source_id": "devc_home"
+        },
+        {
+          "field": "investment_sectors",
+          "label": "官网列示投资领域",
+          "value": [
+            "AI",
+            "消费",
+            "开发者工具与基础设施",
+            "金融科技",
+            "硬件与深科技",
+            "游戏",
+            "Web3",
+            "工业与制造"
+          ],
+          "source_id": "devc_home"
+        },
+        {
+          "field": "reported_metrics",
+          "label": "官网自报规模指标（未标注审计口径）",
+          "value": "官网列示 100+ 项投资、$500m+ invested、50+ collective members；属于机构自报统计，页面未在该区块标明统计基准日或定义。",
+          "source_id": "devc_home"
+        },
+        {
+          "field": "aif_legal_name",
+          "label": "官网披露的 AIF 名称",
+          "value": "Matrix Partners India DeVC I AIF。此为官网所列法律基金名称，不代表所有以 DeVC 名义披露的投资均由该基金完成。",
+          "source_id": "devc_team"
+        },
+        {
+          "field": "aif_manager",
+          "label": "官网披露的 AIF 管理人",
+          "value": "DeVC India I Manager LLP。",
+          "source_id": "devc_team"
+        },
+        {
+          "field": "team_and_expertise",
+          "label": "官网团队及覆盖领域",
+          "value": "官网团队页列示 Aakash Kumar（Deeptech、AI、Fintech；曾任 Hotstar 增长高级副总裁，官网称其扩展订阅用户至 4000 万并建设广告技术业务）、Krish Bajaj（AI；曾参与创立后被收购的 Verak Insurance，并在 Deutsche Bank 风险办公室任职）、Rahul Mathur（Fintech、AI、DeepTech、Consumer；Verak Insurance 创办人，后任 InsuranceDekho 商业保险业务负责人，University of Warwick 统计学硕士）、Rajat Agarwal（Fintech、Consumer；曾在 McKinsey 任顾问，毕业于 ISB 与 IIT Delhi）、Sanchie Shroff（AI；美国团队投资负责人，曾任职 Long Arc Capital、SoftBank、WestBridge 和 McKinsey，持 Harvard MBA）、Trinika Kaushik（Consumer；曾在 JP Morgan 工作，毕业于 BITS Pilani）及 Yashasvi Madhogaria（Deeptech、Manufacturing；曾任 Kepler Cannon 顾问，毕业于 Shri Ram College of Commerce）。经历、数字及任职均为官网个人简介所述，不代表集体成员均为雇员。",
+          "source_id": "devc_team"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官网展示的组合案例包括 Ambak、CodeAnt AI 与 Confido Health；这是官网选列的案例，不构成完整组合清单，也不代表基金回报。",
+          "source_id": "devc_home"
+        },
         {
           "description": "融资来源记录：Quash · 预种子轮 · 2024-08-20 · 本轮参投 · $635,000。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-70b20379e494fa2f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "DeVC",
+          "url": "https://devc.capital/",
+          "source_id": "devc_home"
+        },
+        {
+          "kind": "email",
+          "label": "美国团队 AI 投资联系（官网所列）",
+          "value": "sanchie@devc.capital",
+          "url": "https://devc.capital/team",
+          "source_id": "devc_team"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-70b20379e494fa2f",
@@ -98359,9 +98679,25 @@
           "source_content_hash": "1d7bff75e7129429",
           "quote": "Java Capital, PeerCheque, DeVC by Matrix Partners, and Abhishek Goyal, a co-founder of Tracxn, have also contributed.",
           "quote_hash": "ae7745b4f0a7a1897fc71656c3393b61a2f21aa032a63360425876c54e7bb68d"
+        },
+        {
+          "source_id": "devc_home",
+          "source_url": "https://devc.capital/",
+          "source_title": "Your Idea to Infinity Partners | DeVC",
+          "source_content_hash": "990f2cec430848ee41134d976ef669db46d8e504bdee7d5bed49df3b81cde6f9",
+          "quote": "We back relentlessly resourceful founders with capital, wisdom, and networks to accelerate growth.",
+          "quote_hash": "f066a6583662bcada88368534df8d123b3c459dd22d5fde55c573e15ee2943e7"
+        },
+        {
+          "source_id": "devc_team",
+          "source_url": "https://devc.capital/team",
+          "source_title": "Meet the DeVC Team | DeVC",
+          "source_content_hash": "e07f53502e4af79a25c8960c4c56618216e4bce37d71c3f81c45c42386293b21",
+          "quote": "AIF’s name - Matrix Partners India DeVC I AIFManager - DeVC India I Manager LLP",
+          "quote_hash": "7545e6bb1d01c1379491dbe17b19e608b002863c89b4e26c62a858971b0f800e"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28"
     },
     "INV-7addbb02eb292d": {
       "profile_type": "organization",

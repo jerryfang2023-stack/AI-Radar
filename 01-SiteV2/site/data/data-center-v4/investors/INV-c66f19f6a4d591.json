@@ -139,18 +139,104 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "iGlobe Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "依据 iGlobe 官网公司历史、投资领域、团队、组合案例和联系页核实。资金规模、独角兽数量等均标记为公司自报；未将其视为审计业绩。",
+      "summary": "iGlobe Partners 是一家总部位于新加坡的全球风险投资机构。官网称 Soo Boon Koh 于 1999 年在硅谷创立该机构，并于 2009 年将总部迁至新加坡；当前团队页将她列为创始人兼管理合伙人。官网投资主题涵盖光子与半导体、AI 应用、量子计算、生物科技与健康科技，并展示多家投资组合公司及其收购案例。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份与创办人",
+          "value": "1999 年由 Soo Boon Koh 在硅谷创立；为机构官网所述历史。",
+          "source_id": "iglobe_about"
+        },
+        {
+          "field": "headquarters",
+          "label": "总部所在地",
+          "value": "新加坡；官网称于 2009 年将总部设于新加坡。",
+          "source_id": "iglobe_about"
+        },
+        {
+          "field": "founder_background",
+          "label": "创办人经历（官网自述）",
+          "value": "iGlobe 官网称 Soo Boon Koh 曾受新加坡政府委托，在美国和欧洲设立并管理企业风险投资业务超过十年；之后于 2009 年将 iGlobe 总部迁至新加坡。具体任期与相关企业名称未在该页面说明。",
+          "source_id": "iglobe_about"
+        },
+        {
+          "field": "investment_sectors",
+          "label": "官网列示投资主题",
+          "value": [
+            "光子与半导体",
+            "AI 与应用",
+            "量子计算",
+            "生物科技与健康科技"
+          ],
+          "source_id": "iglobe_about"
+        },
+        {
+          "field": "leadership_team",
+          "label": "官网列示的核心团队",
+          "value": "团队页列 Soo Boon Koh 为 Founder & Managing Partner、Philip Yeo 为 Chairman、Joyce Ng 为 General Partner，并列有 Edmond Wong、Jeff Lin 等投资与运营团队成员。职务以官网当前页面为准。",
+          "source_id": "iglobe_team"
+        },
+        {
+          "field": "reported_firm_metrics",
+          "label": "官网自报机构指标（未标注审计口径）",
+          "value": "官网展示 5 只基金、US$400M raised and raising、100+ investments、7 unicorns 及全球组合覆盖；均为官网自报，页面未提供统一统计基准或审计口径。",
+          "source_id": "iglobe_home"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1999",
+          "description": "官网称 iGlobe Partners 由 Soo Boon Koh 在硅谷创立。",
+          "source_id": "iglobe_about"
+        },
+        {
+          "date": "2009",
+          "description": "官网称创办人将机构总部迁至新加坡。",
+          "source_id": "iglobe_about"
+        }
+      ],
       "track_record": [
+        {
+          "description": "官网组合页列示的收购案例包括 3PAR 被 Hewlett Packard Enterprise 收购、Celestry 被 Cadence Design Systems 收购，以及 Aviva Links 被 NXP Semiconductors 收购。此为官网选列案例，不代表完整组合或基金回报。",
+          "source_id": "iglobe_home"
+        },
         {
           "description": "融资来源记录：爱诗科技 · C轮 · 2026-07-14 · 本轮参投 · 29.8亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9476e3eff9c1e8fe"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "iGlobe Partners",
+          "url": "https://www.iglobepartners.com/",
+          "source_id": "iglobe_home"
+        },
+        {
+          "kind": "application",
+          "label": "创始人融资与一般联系入口",
+          "value": "官网联系页提供 Get Fundings 联系入口及联系表单。",
+          "url": "https://www.iglobepartners.com/contact/",
+          "source_id": "iglobe_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "新加坡办公室电话",
+          "value": "+65 6478 9716",
+          "url": "https://www.iglobepartners.com/contact/",
+          "source_id": "iglobe_contact"
+        },
+        {
+          "kind": "address",
+          "label": "新加坡办公室地址",
+          "value": "11 Biopolis Way, #09-03 Helios, Singapore 138667",
+          "url": "https://www.iglobepartners.com/contact/",
+          "source_id": "iglobe_contact"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-9476e3eff9c1e8fe",
@@ -159,9 +245,41 @@
           "source_content_hash": "31557c2904ef4cb8",
           "quote": "Lollapalooza Capital（王慧文家办）、常春藤资本、惠远资本、钟鼎资本、韩国未来资产、OCBC 生态下 Lion X 基金、蓝色光标、CloudAlpha、iGlobe Partners 等 十余家国内外机构参与投资",
           "quote_hash": "9515d24c1ea60f07dd7e026f73095de5c8e568b800de1022cbbb69433d560b5c"
+        },
+        {
+          "source_id": "iglobe_home",
+          "source_url": "https://www.iglobepartners.com/",
+          "source_title": "iGlobe Partners | Venture Capital Singapore",
+          "source_content_hash": "046b1a168859455976a0d8abae45b5834a7bb093ba1d1080bf3bc5a5592bc6b9",
+          "quote": "In the game since 1999",
+          "quote_hash": "d4b27bee9d2c9267d2979d70c29bbc06b66cd697f3e2d71ce4f66dfdb4e8738c"
+        },
+        {
+          "source_id": "iglobe_about",
+          "source_url": "https://www.iglobepartners.com/about/",
+          "source_title": "About - iGlobe Partners",
+          "source_content_hash": "f770ba564c80fe3408a7cd5b899e07523d51f8bf2422bf7004cf6d30cadb3a73",
+          "quote": "Established in 1999, iGlobe Partners was founded by Soo Boon Koh in Silicon Valley",
+          "quote_hash": "d13e123d1ee0d283b6bc98c6f9d78f1ddf42639f9e6385e0ab45322575e500a3"
+        },
+        {
+          "source_id": "iglobe_team",
+          "source_url": "https://www.iglobepartners.com/team/",
+          "source_title": "Team - iGlobe Partners",
+          "source_content_hash": "92238815306677203ce12f2d04fca540e5876697bc930a8e40c36fc13eb1fa58",
+          "quote": "Soo Boon KOH Founder & Managing Partner",
+          "quote_hash": "c3834c3f01616cb10f84430bc0e731e1f4a8df2b3bb12d219cbbb28aea4d5056"
+        },
+        {
+          "source_id": "iglobe_contact",
+          "source_url": "https://www.iglobepartners.com/contact/",
+          "source_title": "Contact - iGlobe Partners",
+          "source_content_hash": "1a2b4a1a6dde0c3e4bf79e10cc0d716c83dc45eb1153c6c98d359a5a54254145",
+          "quote": "11 Biopolis Way #09-03 Helios Singapore 138667 +65 6478 9716 (Office)",
+          "quote_hash": "fafc874e3fa3906d979acc445ec9b92d1afc2c0edfbb3bbcabd758a761a5ea1d"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28"
     }
   }
 }
