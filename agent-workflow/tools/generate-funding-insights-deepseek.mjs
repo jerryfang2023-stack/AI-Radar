@@ -359,6 +359,12 @@ export function canonicalSourceQuoteBodies(bundle, event, acceptedIntakeDocument
     ...acceptedFundingClaims.map((claim) => claim.source_quote),
     event.display_title_zh,
   ].map(normalizedTitleKey).filter((title) => title.length >= 24);
+  // V4 events can expose only a short editorial headline while the accepted
+  // intake checkpoint retains the full publisher title. Use that short title
+  // only when it uniquely identifies one accepted article; ambiguity stays
+  // fail-closed below.
+  const shortEventTitle = normalizedTitleKey(event.display_title_zh);
+  if (shortEventTitle.length >= 5 && shortEventTitle.length < 24) titleAnchors.push(shortEventTitle);
   const titleBoundAcceptedDocuments = new Map();
   for (const titleAnchor of titleAnchors) {
     const titleMatches = acceptedIntakeDocuments.filter((raw) => {
@@ -389,7 +395,8 @@ export function canonicalSourceQuoteBodies(bundle, event, acceptedIntakeDocument
   // intake checkpoint while the V4 RawDocument/source_refs projection is being
   // assembled. Join that excerpt by the event's exact source URL, or by a unique
   // accepted-intake article whose title contains a full headline or whose
-  // excerpt uniquely contains an accepted Claim quote.
+  // excerpt uniquely contains an accepted Claim quote. A short event title is
+  // also sufficient only when it binds to exactly one accepted intake article.
   const rawQuotes = claimBoundRaw.flatMap((raw) => [
     raw.body_clean,
     ...(raw.intake_diagnostics?.key_excerpts || []).map((excerpt) => excerpt.text),
