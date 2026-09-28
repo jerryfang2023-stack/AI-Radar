@@ -2068,7 +2068,7 @@ test("accepted intake excerpts bind a uniquely cited teaser claim to its funding
   assert.notEqual(subjectCompanyForEvent(event, entities, {}, [claim], ambiguousQuotes)?.canonical_name, "Fluidstack");
 });
 
-test("accepted round amount anchors a recipient when the event object only carries valuation", () => {
+test("event proceeds metric anchors a recipient when objects only carry valuation or a generic label", () => {
   const entities = [
     { entity_id: "EN-BAOYANG-HEADLINE", entity_type: "organization_candidate", canonical_name: "包养式" },
     { entity_id: "EN-FLUIDSTACK", entity_type: "organization_candidate", canonical_name: "Fluidstack" },
@@ -2079,7 +2079,7 @@ test("accepted round amount anchors a recipient when the event object only carri
     claim_type: "funding",
     verification_status: "accepted",
     subject: "包养式",
-    object: "15亿美元融资",
+    object: "融资事件",
     source_quote: "一则低调的融资消息让AI行业炸开了锅。",
   };
   const event = {
