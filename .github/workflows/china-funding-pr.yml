@@ -60,10 +60,24 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           RESUME_RUN: ${{ inputs.resume_run_id }}
         run: |
+          set -euo pipefail
           [[ "$RESUME_RUN" =~ ^[0-9]+$ ]]
+          lane="agent-workflow/reports/china-funding/$RUN_DATE"
+          current_seeds="$lane/funding-research-seeds.json"
+          seed_snapshot="$RUNNER_TEMP/current-funding-research-seeds.json"
+          seed_exists=false
+          if [ -f "$current_seeds" ]; then
+            cp "$current_seeds" "$seed_snapshot"
+            seed_exists=true
+          fi
           gh run download "$RESUME_RUN" --name "china-funding-checkpoint-$RUN_DATE" --dir "$RUNNER_TEMP/china-funding-checkpoint"
-          mkdir -p "agent-workflow/reports/china-funding/$RUN_DATE"
-          cp -a "$RUNNER_TEMP/china-funding-checkpoint/." "agent-workflow/reports/china-funding/$RUN_DATE/"
+          mkdir -p "$lane"
+          cp -a "$RUNNER_TEMP/china-funding-checkpoint/." "$lane/"
+          if [ "$seed_exists" = true ]; then
+            cp "$seed_snapshot" "$current_seeds"
+          else
+            rm -f "$current_seeds"
+          fi
       - name: Collect each domestic publisher independently
         run: |
           lane="agent-workflow/reports/china-funding/$RUN_DATE"
