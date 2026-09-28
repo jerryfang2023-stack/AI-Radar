@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-28T03:59:01.250Z",
+    "generatedAt": "2026-09-28T10:50:06.596Z",
     "latestDataDate": "2026-09-28",
     "currentDate": "2026-09-28",
-    "eventCount": 3602,
+    "eventCount": 3609,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -63,6 +63,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-f01ed5ae8bd115bc",
       "EV-d4b0dd4de320089a"
     ],
     "viewpointIds": [],
@@ -79,10 +80,11 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-09",
-    "lastSeen": "2026-09-26",
+    "lastSeen": "2026-09-28",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-f01ed5ae8bd115bc",
         "EV-d4b0dd4de320089a"
       ],
       "deployments": [],
@@ -93,6 +95,21 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-f01ed5ae8bd115bc",
+        "dataDate": "2026-09-28",
+        "date": "2026-09-09",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "影目科技完成近10亿C轮融资，专注于‌AI+AR智能眼镜‌研发",
+        "displayTags": [],
+        "entityIds": [
+          "EN-461be9b4c2e89d0f"
+        ]
+      },
       {
         "id": "EV-d4b0dd4de320089a",
         "dataDate": "2026-09-26",
@@ -230,8 +247,8 @@
       "typeLabel": "目标用户",
       "valueId": "business_user",
       "eventIds": [
-        "EV-0d0b83c319d971b0",
         "EV-3ca24f79062a359e",
+        "EV-0d0b83c319d971b0",
         "EV-4a045d3f9026286c",
         "EV-33df10f232e26f29",
         "EV-fbb4b961191efa55",
@@ -617,8 +634,8 @@
         "EV-caf5d85e980c86fd"
       ],
       "entityIds": [
-        "EN-ef5cac7907b28194",
         "EN-73c2f5aa8e632c19",
+        "EN-ef5cac7907b28194",
         "EN-8c15a763882d4862",
         "EN-2cee85064ca8de3f",
         "EN-e7d56af70143fcd7",
